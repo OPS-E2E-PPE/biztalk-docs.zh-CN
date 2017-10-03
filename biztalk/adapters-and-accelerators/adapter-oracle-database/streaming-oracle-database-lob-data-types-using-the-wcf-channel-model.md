@@ -1,0 +1,366 @@
+---
+title: "流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- streaming, Oracle LOB data types
+- WCF channel model, streaming Oracle LOB data types
+ms.assetid: 513a7cb8-495d-4019-bce1-b5babca3629f
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: bf0ee2f8d1c90f69a206a3006398d52e67f819e5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端流式处理的某些操作的 LOB 数据。 本主题中的各节描述了如何实现流式处理 LOB 数据时使用 WCF 通道模型。  
+  
+ 有关如何的适配器支持流式处理 LOB 数据类型的背景信息，请参阅[流式处理 Oracle 数据库适配器中的大型对象数据类型](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。 您应该阅读然后再继续本主题。  
+  
+ 演示 LOB 数据进行流式处理的示例位于附带的 SDK 示例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 有关详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
+  
+## <a name="streaming-outbound-messages-to-the-adapter"></a>到适配器出站消息的流处理  
+ 适配器支持 UpdateLOB 操作的请求消息流式处理的端到端 LOB 数据。  
+  
+ 若要支持端到端流式处理 UpdateLOB 操作以 WCF 通道模型，你必须：  
+  
+1.  设置**UseAmbientTransaction**绑定属性为 true。  
+  
+2.  实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。  
+  
+3.  执行 UpdateLOB 操作在事务范围内。  
+  
+4.  创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用适当的重载**Message.Create**方法。  
+  
+### <a name="setting-the-useambienttransaction-binding-property"></a>设置绑定属性 UseAmbientTransaction  
+ 下面的示例演示如何创建的绑定[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并设置**UseAmbientTransaction**绑定属性。  
+  
+```  
+// Create binding  
+OracleDBBinding odbBinding = new OracleDBBinding();  
+  
+//set the binding property  
+binding.UseAmbientTransaction = true;  
+  
+```  
+  
+### <a name="implementing-a-bodywriter"></a>实现 BodyWriter  
+ 下面的示例演示如何实现**BodyWriter**执行节点值流式处理。  
+  
+```  
+/// <summary>  
+/// This class overrides the OnWriteBodyContents function to do node-value streaming  
+/// </summary>  
+class StreamingBodyWriter : BodyWriter, IDisposable  
+{  
+    XmlReader m_reader = null;  
+  
+    int m_chunkSize;  
+    /// <summary>  
+    /// Initializes the body writer  
+    /// </summary>  
+    /// <param name="reader">Reader for input</param>  
+    /// <param name="chunkSize">The chunksize in which the data is passed to adapter</param>  
+    public StreamingBodyWriter(XmlReader reader, int chunkSize)  
+        : base(false)  
+    {  
+        m_reader = reader;  
+        if (chunkSize \<= 0)  
+            throw new ApplicationException("ChunkSize should be a positive value");  
+        m_chunkSize = chunkSize;  
+    }  
+  
+    protected override void OnWriteBodyContents(XmlDictionaryWriter writer)  
+    {  
+        if (m_reader == null)  
+            throw new ApplicationException("Reader cannot be null");  
+  
+        while (m_reader.Read())  
+        {  
+            switch (m_reader.NodeType)  
+            {  
+                case XmlNodeType.Element:  
+                    writer.WriteStartElement(m_reader.LocalName, m_reader.NamespaceURI);  
+                    break;  
+                case XmlNodeType.Text:  
+                    #region Streaming Code  
+                    char[] tempBuffer = new char[m_chunkSize];  
+                    int length = 0;  
+                    while ((length = m_reader.ReadValueChunk(tempBuffer, 0, m_chunkSize)) > 0)  
+                    {  
+                        writer.WriteString(new String(tempBuffer, 0, length));  
+                    }  
+                    #endregion  
+                    break;  
+                case XmlNodeType.EndElement:  
+                    writer.WriteEndElement();  
+                    break;  
+            }  
+        }  
+  
+    }  
+  
+    #region IDisposable Members  
+  
+    public void Dispose()  
+    {  
+        if (m_reader != null)  
+        {  
+            m_reader.Close();  
+            m_reader = null;  
+        }  
+    }  
+  
+    #endregion  
+}  
+```  
+  
+### <a name="perform-the-operations-within-a-transaction-scope"></a>执行在事务范围内的操作  
+ 下面的示例演示如何执行事务范围内的操作。  
+  
+```  
+// Create a transaction scope  
+using(TransactionScope tx = new TransactionScope())  
+{  
+  // perform operations within the transaction  
+  // ...  
+  // ...  
+  
+  //Complete the transaction  
+  tx.Complete()  
+}  
+  
+```  
+  
+### <a name="creating-a-message-by-using-a-bodywriter"></a>使用 BodyWriter 创建消息  
+ 下面的示例演示如何创建 UpdateLOB 请求消息使用**BodyWriter**在前面的示例。 从文件中读取消息数据。  
+  
+```  
+// Create a transaction scope  
+using(TransactionScope tx = new TransactionScope())  
+{  
+    XmlReader readerIn = XmlReader.Create ("updatelob.xml");  
+    // StreamingBodyWrtier class is responsible for streaming  
+    StreamingBodyWriter stBW = new StreamingBodyWriter(readerIn, chunkSize);  
+  
+    Message InputMsg = Message.CreateMessage(MessageVersion.Default,  
+    "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/UpdateLOB",   
+    stBW);  
+  
+    //Send the request message and get the output message  
+    OutputMsg = channel.Request(InputMsg);  
+  
+    tx.Complete();  
+}  
+  
+```  
+  
+## <a name="streaming-inbound-messages-from-the-adapter"></a>从适配器入站的消息的流处理  
+ 适配器支持以下入站消息流式处理的端到端 LOB 数据：  
+  
+-   针对具有扩展的函数的响应消息或包含 LOB 数据的 IN OUT 参数。 请注意，记录类型参数可以包含 LOB 数据列。  
+  
+-   针对包含 LOB 数据具有出 REF CURSOR 参数 （或返回值） 的函数的响应消息。 这包括 IN 出 REF CURSOR 参数的输出端。  
+  
+-   在使用过程的响应消息或包含 LOB 数据的 IN OUT 参数。 请注意，记录类型参数可以包含 LOB 数据列。  
+  
+-   带出 REF CURSOR 参数包含 LOB 数据的过程的响应消息。 这包括输出一端 IN 出 REF CURSOR 参数  
+  
+-   返回包含 LOB 数据的结果集的 SQLEXECUTE 操作的响应消息。  
+  
+-   对于结果中返回 LOB 数据的表或视图选择操作的响应消息设置。  
+  
+-   （入站） 的 POLLINGSTMT 操作的请求消息  
+  
+ 若要支持端到端流式处理入站消息中的 WCF 通道模型，你必须：  
+  
+1.  实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。  
+  
+2.  使用**消息**通过调用**WriteBodyContents**方法与此**XmlDictionaryWriter**。  
+  
+### <a name="implementing-an-xmldictionarywriter"></a>实现 XmlDictionaryWriter  
+ 下面的示例演示如何实现**XmlDictionaryWriter**执行节点值流式处理。  
+  
+```  
+using System;  
+using System.Xml;  
+using System.Text;  
+  
+class FileXmlWriter : XmlDictionaryWriter  
+{  
+    XmlTextWriter xts;  
+  
+    public FileXmlWriter(string file)  
+    {  
+        xts = new XmlTextWriter(file, Encoding.UTF8);  
+    }  
+  
+    public override void WriteBase64(byte[] buffer, int index, int count)  
+    {  
+        xts.WriteBase64(buffer, index, count);  
+    }  
+  
+    public override void WriteCData(string text)  
+    {  
+        xts.WriteCData(text);  
+    }  
+  
+    public override void WriteCharEntity(char ch)  
+    {  
+        xts.WriteCharEntity(ch);  
+    }  
+  
+    public override void WriteChars(char[] buffer, int index, int count)  
+    {  
+        xts.WriteChars(buffer, index, count);  
+    }  
+  
+    public override void WriteComment(string text)  
+    {  
+        xts.WriteComment(text);  
+    }  
+  
+    public override void WriteDocType(string name, string pubid, string sysid, string subset)  
+    {  
+        xts.WriteDocType(name, pubid, sysid, subset);  
+    }  
+  
+    public override void WriteEndAttribute()  
+    {  
+        xts.WriteEndAttribute();  
+    }  
+  
+    public override void WriteEndDocument()  
+    {  
+        xts.WriteEndDocument();  
+    }  
+  
+    public override void WriteEndElement()  
+    {  
+        xts.WriteEndElement();  
+    }  
+  
+    public override void WriteEntityRef(string name)  
+    {  
+        xts.WriteEntityRef(name);  
+    }  
+  
+    public override void WriteFullEndElement()  
+    {  
+        xts.WriteFullEndElement();  
+    }  
+  
+    public override void WriteProcessingInstruction(string name, string text)  
+    {  
+        xts.WriteProcessingInstruction(name, text);  
+    }  
+  
+    public override void WriteRaw(string data)  
+    {  
+        xts.WriteRaw(data);  
+    }  
+  
+    public override void WriteRaw(char[] buffer, int index, int count)  
+    {  
+        xts.WriteRaw(buffer, index, count);  
+    }  
+  
+    public override void WriteStartAttribute(string prefix, string localName, string ns)  
+    {  
+        xts.WriteStartAttribute(prefix, localName, ns);  
+    }  
+  
+    public override void WriteStartDocument(bool standalone)  
+    {  
+        xts.WriteStartDocument(standalone);  
+    }  
+  
+    public override void WriteStartDocument()  
+    {  
+        xts.WriteStartDocument();  
+    }  
+  
+    public override void WriteStartElement(string prefix, string localName, string ns)  
+    {  
+        xts.WriteStartElement(localName);  
+    }  
+  
+    public override void WriteString(string text)  
+    {  
+        xts.WriteString(text);  
+    }  
+  
+    public override void WriteSurrogateCharEntity(char lowChar, char highChar)  
+    {  
+        xts.WriteSurrogateCharEntity(lowChar, highChar);  
+    }  
+  
+    public override void WriteWhitespace(string ws)  
+    {  
+        xts.WriteWhitespace(ws);  
+    }  
+  
+    public override void Close()  
+    {  
+        xts.Close();  
+    }  
+  
+    public override void Flush()  
+    {  
+        xts.Flush();  
+    }  
+  
+    public override string LookupPrefix(string ns)  
+    {  
+        return xts.LookupPrefix(ns);  
+    }  
+  
+    public override WriteState WriteState  
+    {  
+        get { return xts.WriteState; }  
+    }  
+  
+}  
+```  
+  
+### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a>通过使用 XmlDictionaryWriter 来使用一条消息  
+ 下面的示例演示如何使用表选择响应消息使用**FileXmlWriter**实现在前面的示例。 ( **FileWriter**类由子类分类**XmlDictionaryWriter**。)该示例使用**IRequestChannel**通道以调用选择操作。 省略了创建频道的详细信息。 从文件读取选择的请求消息和选择响应消息写入到文件。  
+  
+```  
+// Read Select message body from a file  
+XmlReader readerIn = XmlReader.Create("select.xml");  
+Message InputMsg = Message.CreateMessage(MessageVersion.Default,  
+    "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/Select", readerIn);  
+  
+Message OutputMsg = channel.Request(InputMsg);  
+  
+// Streaming response message to select_output.xml using the custom XmlDictionaryWriter;  
+FileXmlWriter fileXmlWriter = new FileXmlWriter("select_output.xml");  
+OutputMsg.WriteBodyContents(fileXmlWriter);  
+fileXmlWriter.Flush();  
+fileXmlWriter.Close();  
+  
+// Streaming complete close output message;  
+OutputMsg.Close();  
+```  
+  
+ 下面的 XML 演示选择操作的请求消息 （select.xml 文件的内容）。 CUSTOMER 表包含一个名为照片的 BLOB 列。  
+  
+```  
+<Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
+  <COLUMN_NAMES>*</COLUMN_NAMES>  
+  <FILTER>NAME='Kim Ralls'</FILTER>  
+</Select>  
+```  
+  
+## <a name="see-also"></a>另请参阅  
+ [开发 Oracle 数据库应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)

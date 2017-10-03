@@ -1,0 +1,1 @@
+添加适配器服务参考 Visual Studio 加载项

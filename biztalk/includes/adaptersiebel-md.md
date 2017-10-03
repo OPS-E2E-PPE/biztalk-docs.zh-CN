@@ -1,0 +1,1 @@
+用于 Siebel eBusiness 应用程序的 Microsoft BizTalk 适配器
