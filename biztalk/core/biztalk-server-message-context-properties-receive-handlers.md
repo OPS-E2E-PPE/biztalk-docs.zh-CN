@@ -1,0 +1,41 @@
+---
+title: "BizTalk Server 消息上下文属性 （接收处理程序） |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- message context properties
+- receive handlers, message context properties
+ms.assetid: 7f47e2a0-6ac8-404a-bc0a-c7739911af74
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 8a60896a8e1cace909a160c1dc942e63e9258d85
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="biztalk-server-message-context-properties-receive-handlers"></a>BizTalk Server 消息上下文属性 （接收处理程序）
+除了消息负载之外，构成消息的补充信息必须可以在运行时从 BizTalk Server 业务流程访问。  
+  
+## <a name="tibco-rv-message-information-promoted-as-message-context-properties"></a>TIBCO RV 消息信息升级为消息上下文属性  
+ 下表列出了此补充信息：  
+  
+|数据标识|类型|可路由|接收位置|  
+|-------------------------|----------|--------------|----------------------|  
+|发送主题 [空]|string|是|告诉业务流程此消息发送到哪个主题。|  
+|答复主题 [空]|string|是|告诉业务流程发件人希望将此回复发送到的位置（如果有）。|  
+|字段计数 [只读]|unsigned int|是|上级消息中的字段数。 一个由 TIBCO RV 提供的属性。|  
+|CM 发件人姓名 [只读]|string|是|发件人的 CM 通信名称。|  
+|CM 序号 [只读]|long|是|通过发送 TIBCO 传输对象分配的序列号。|  
+|CM 时间限制 [只读]|double|是|时间限制，在这段时间之后发送程序就不再要求其 CM 传输证实消息是否递送。|  
+  
+## <a name="see-also"></a>另请参阅  
+ [TIBCO 集合中的消息映射](../core/message-mapping-in-tibco-rendezvous.md)   
+ [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
