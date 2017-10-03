@@ -1,0 +1,1 @@
+Microsoft Windows Communication Foundation (WCF) 行业 (LOB) 适配器 SDK
