@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="preparing-to-use-the-tutorialhl7main"></a>准备使用 Tutorial_hl7_main
-你需要执行本节中的任务，然后使用本教程。  
+# <a name="preparing-to-use-the-tutorialhl7main"></a><span data-ttu-id="02480-102">准备使用 Tutorial_hl7_main</span><span class="sxs-lookup"><span data-stu-id="02480-102">Preparing to Use the Tutorial_hl7_main</span></span>
+<span data-ttu-id="02480-103">你需要执行本节中的任务，然后使用本教程。</span><span class="sxs-lookup"><span data-stu-id="02480-103">You need to perform the tasks in this section before you use the tutorial.</span></span>  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="in-this-section"></a><span data-ttu-id="02480-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="02480-104">In This Section</span></span>  
   
--   [创建教程文件夹](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
+-   [<span data-ttu-id="02480-105">创建教程文件夹</span><span class="sxs-lookup"><span data-stu-id="02480-105">Create the Tutorial Folder</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
   
--   [创建 QRY^Q01.txt 文件](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
+-   [<span data-ttu-id="02480-106">创建 QRY^Q01.txt 文件</span><span class="sxs-lookup"><span data-stu-id="02480-106">Create the QRY^Q01.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
   
--   [创建 DSR.txt 文件](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)
+-   [<span data-ttu-id="02480-107">创建 DSR.txt 文件</span><span class="sxs-lookup"><span data-stu-id="02480-107">Create the DSR.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)

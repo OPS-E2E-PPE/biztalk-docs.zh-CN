@@ -21,17 +21,17 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="message-processing"></a>消息处理
-本部分提供有关信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 引擎运行时组件。 消息处理包括 HL7 消息的处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 平面文件) 的 XML 消息进行处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML)，批处理，并确认处理。  
+# <a name="message-processing"></a><span data-ttu-id="34da6-102">消息处理</span><span class="sxs-lookup"><span data-stu-id="34da6-102">Message Processing</span></span>
+<span data-ttu-id="34da6-103">本部分提供有关信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 引擎运行时组件。</span><span class="sxs-lookup"><span data-stu-id="34da6-103">This section provides information about the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) engine run-time components.</span></span> <span data-ttu-id="34da6-104">消息处理包括 HL7 消息的处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 平面文件) 的 XML 消息进行处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML)，批处理，并确认处理。</span><span class="sxs-lookup"><span data-stu-id="34da6-104">Message processing includes processing of HL7 messages ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2X flat files), processing of XML messages ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML), batch processing, and acknowledgment processing.</span></span>  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="in-this-section"></a><span data-ttu-id="34da6-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="34da6-105">In This Section</span></span>  
   
--   [HL7 2.X 和 2.XML 架构](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-and-2-xml-schemas.md)  
+-   [<span data-ttu-id="34da6-106">HL7 2.X 和 2.XML 架构</span><span class="sxs-lookup"><span data-stu-id="34da6-106">HL7 2.X and 2.XML Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-and-2-xml-schemas.md)  
   
--   [BTAHL72X 平面文件处理](../../adapters-and-accelerators/accelerator-hl7/btahl72x-flat-file-processing.md)  
+-   [<span data-ttu-id="34da6-107">BTAHL72X 平面文件处理</span><span class="sxs-lookup"><span data-stu-id="34da6-107">BTAHL72X Flat File Processing</span></span>](../../adapters-and-accelerators/accelerator-hl7/btahl72x-flat-file-processing.md)  
   
--   [BTAHL72XML 处理](../../adapters-and-accelerators/accelerator-hl7/btahl72xml-processing.md)  
+-   [<span data-ttu-id="34da6-108">BTAHL72XML 处理</span><span class="sxs-lookup"><span data-stu-id="34da6-108">BTAHL72XML Processing</span></span>](../../adapters-and-accelerators/accelerator-hl7/btahl72xml-processing.md)  
   
--   [批处理消息处理](../../adapters-and-accelerators/accelerator-hl7/batch-message-processing.md)  
+-   [<span data-ttu-id="34da6-109">批处理消息处理</span><span class="sxs-lookup"><span data-stu-id="34da6-109">Batch Message Processing</span></span>](../../adapters-and-accelerators/accelerator-hl7/batch-message-processing.md)  
   
--   [处理的确认](../../adapters-and-accelerators/accelerator-hl7/acknowledgments-processing.md)
+-   [<span data-ttu-id="34da6-110">处理的确认</span><span class="sxs-lookup"><span data-stu-id="34da6-110">Acknowledgments Processing</span></span>](../../adapters-and-accelerators/accelerator-hl7/acknowledgments-processing.md)
