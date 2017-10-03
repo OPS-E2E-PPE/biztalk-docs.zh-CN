@@ -1,0 +1,63 @@
+---
+title: "入站消息身份验证 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- messages, authenticating
+- processing, inbound messages
+- messages, inbound
+- processing, security
+- security, messages
+- inbound messages
+ms.assetid: 34c06283-667d-4498-8544-dea6e87f276f
+caps.latest.revision: "12"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 49ada514c771f4e6dbf0abad3f23cab54721299d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="inbound-message-authentication"></a><span data-ttu-id="597f0-102">入站的消息身份验证</span><span class="sxs-lookup"><span data-stu-id="597f0-102">Inbound Message Authentication</span></span>
+<span data-ttu-id="597f0-103">为了验证消息发件人的身份，BizTalk Server 可以使用证书信息或 Windows 集成安全性对消息的发件人进行验证。</span><span class="sxs-lookup"><span data-stu-id="597f0-103">BizTalk Server can authenticate the sender of a message (either by using the certificate information or Windows integrated security) in order to validate the identity of the sender of the message.</span></span> <span data-ttu-id="597f0-104">下图显示了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中可用于验证入站消息的安全功能。</span><span class="sxs-lookup"><span data-stu-id="597f0-104">The following figure shows the security features in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] that you can use to authenticate inbound messages.</span></span>  
+  
+ <span data-ttu-id="597f0-105">![安全功能进行身份验证的入站的消息](../core/media/ebiz-plan-secoverview-auth-inbound.gif "ebiz_plan_secoverview_auth_inbound")</span><span class="sxs-lookup"><span data-stu-id="597f0-105">![Security features authenticating inbound messages](../core/media/ebiz-plan-secoverview-auth-inbound.gif "ebiz_plan_secoverview_auth_inbound")</span></span>  
+<span data-ttu-id="597f0-106">BizTalk Server 用于验证入站消息的安全功能。</span><span class="sxs-lookup"><span data-stu-id="597f0-106">Security features BizTalk Server uses to authenticate inbound messages.</span></span>  
+  
+ <span data-ttu-id="597f0-107">BizTalk Server 收到加密的签名消息时，它会执行以下步骤以确保识别出发送消息的参与方。</span><span class="sxs-lookup"><span data-stu-id="597f0-107">When BizTalk Server receives an encrypted and signed message, it takes the following steps to ensure that the sending party is recognized.</span></span>  
+  
+1.  <span data-ttu-id="597f0-108">当消息到达 BizTalk Server 接收位置时，接收处理程序会试图获取来自发送流程的发件人 Windows 安全 ID (SSID)。</span><span class="sxs-lookup"><span data-stu-id="597f0-108">When a message arrives at a BizTalk Server receive location, the receive handler attempts to obtain the sender's Windows security ID (SSID) from the sending process.</span></span> <span data-ttu-id="597f0-109">签名消息通过监听程序的验证后，接收位置会将该 SSID 往下游传递。</span><span class="sxs-lookup"><span data-stu-id="597f0-109">The receive location passes the SSID downstream to support cases where the listener has already authenticated a signed message.</span></span> <span data-ttu-id="597f0-110">如果通过 BizTalk 消息队列或 HTTP 适配器等可获取客户端证书信息，则 BizTalk Server 接收位置可获取该证书信息，然后沿着接收管道传递该证书消息以用于参与方解析。</span><span class="sxs-lookup"><span data-stu-id="597f0-110">If client-side certificate information can be obtained (for example by the BizTalk Message Queuing or HTTP adapter), the BizTalk Server receive location can obtain that certificate information and pass it along for party resolution later on in the receive pipeline.</span></span> <span data-ttu-id="597f0-111">如果接收处理程序无法获取 SSID，则此字段留空。</span><span class="sxs-lookup"><span data-stu-id="597f0-111">If the receive handler cannot obtain the SSID, this field is left blank.</span></span>  
+  
+     <span data-ttu-id="597f0-112">接收处理程序将消息发送到接收管道，在接收管道中将会解密消息、验证数字签名，如果该接收管道含有参与方解析组件，还会进行参与方解析。</span><span class="sxs-lookup"><span data-stu-id="597f0-112">The receive handler sends the message to the receive pipeline, where the message is decrypted, the digital signature is verified, and the party resolution takes place if the pipeline has a party resolution component.</span></span> <span data-ttu-id="597f0-113">如果发件人对传入消息使用了签名证书，则 MIME/SMIME 解码器组件会覆盖从适配器获取的任何证书信息。</span><span class="sxs-lookup"><span data-stu-id="597f0-113">If the sender used a signing certificate on the incoming message, then the MIME/SMIME decoder component overwrites any certificate information obtained from the adapter.</span></span>  
+  
+2.  <span data-ttu-id="597f0-114">如果发件人对消息进行了加密，则 MIME/SMIME 解码器会从主机实例服务帐户的个人证书存储中检索解密证书，然后使用私钥对消息进行解密。</span><span class="sxs-lookup"><span data-stu-id="597f0-114">If the sender encrypted the message, the MIME/SMIME decoder retrieves the decryption certificate from the personal certificate store for the host instance service account and uses the private key to decrypt the message.</span></span>  
+  
+     <span data-ttu-id="597f0-115">如果发件人对消息进行了签名，则 MIME/SMIME 解码器会验证该数字签名，它先验证负载哈希以确定签名是否被篡改，然后从证书存储中检索证书来验证该签名。</span><span class="sxs-lookup"><span data-stu-id="597f0-115">If the sender signed the message, the MIME/SMIME decoder authenticates the digital signature by verifying the payload hash for signs of tampering, and then retrieving the certificate from the certificate store to verify the signature.</span></span> <span data-ttu-id="597f0-116">如果消息本身就包含签名人的公钥，则 MIME/SMIME 解码器不会从证书存储中检索证书，而使用消息中提供的公钥。</span><span class="sxs-lookup"><span data-stu-id="597f0-116">If the public key of the signer is on the message itself, the MIME/SMIME decoder does not retrieve the certificate from the certificate store, but uses the public key that came with the message.</span></span>  
+  
+3.  <span data-ttu-id="597f0-117">通常管道中的最后一个处理步骤是参与方解析。</span><span class="sxs-lookup"><span data-stu-id="597f0-117">Usually, the final processing step in the pipeline is party resolution.</span></span> <span data-ttu-id="597f0-118">使用 BizTalk 浏览器或 BizTalk Server 管理控制台，可以创建参与方、将参与方映射到签名证书或创建参与方别名。</span><span class="sxs-lookup"><span data-stu-id="597f0-118">Using BizTalk Explorer or BizTalk Server Administration console, you can create parties, map the party to a signing certificate, or create party aliases.</span></span> <span data-ttu-id="597f0-119">在 BizTalk 浏览器中定义的所有参与方都有一个唯一的参与方标识符 (PID)。</span><span class="sxs-lookup"><span data-stu-id="597f0-119">All parties you define in BizTalk Explorer have a unique party identifier (PID).</span></span> <span data-ttu-id="597f0-120">BizTalk Server 获取该 PID，然后将它放在消息上下文中。</span><span class="sxs-lookup"><span data-stu-id="597f0-120">BizTalk Server obtains the PID and places it in the message context.</span></span> <span data-ttu-id="597f0-121">BizTalk 使用以下方法之一获取 PID：</span><span class="sxs-lookup"><span data-stu-id="597f0-121">BizTalk obtains the PID by one of the following methods:</span></span>  
+  
+    1.  <span data-ttu-id="597f0-122">当发件人对消息进行了签名或者接收处理程序无法获取客户端证书，并且您选择了使用证书来解析参与方的选项时，BizTalk 会使用相应的签名或客户端证书来查找 PID。</span><span class="sxs-lookup"><span data-stu-id="597f0-122">If the sender signed the message or if the receive handler was able to obtain a client-side certificate, and you selected the option to resolve the party by using the certificate, then BizTalk uses the corresponding signature or client-side certificate to lookup the PID.</span></span> <span data-ttu-id="597f0-123">开始接收参与方的消息之前，必须在属性中配置参与方及其证书。</span><span class="sxs-lookup"><span data-stu-id="597f0-123">You must configure the party with the certificate as a property before you start receiving its messages.</span></span> <span data-ttu-id="597f0-124">有关详细信息如何配置当事方，请参阅[使用证书的参与方解析](../core/using-certificates-for-party-resolution.md)。</span><span class="sxs-lookup"><span data-stu-id="597f0-124">For more information how to configure the party, see [Using Certificates for Party Resolution](../core/using-certificates-for-party-resolution.md).</span></span>  
+  
+    2.  <span data-ttu-id="597f0-125">当发件人没有对消息使用签名证书，并且您选择了使用发件人的安全 ID (SSID) 来解析参与方的选项时，参与方解析组件会使用 SSID 来查找 PID。</span><span class="sxs-lookup"><span data-stu-id="597f0-125">If the sender did not use a signing certificate on the message, and you have selected the option to resolve the party by using the Sender's Security ID (SSID), the party resolution component uses the SSID to look up the PID.</span></span> <span data-ttu-id="597f0-126">开始接收参与方的消息之前，必须将参与方配置为使用 SSID 作为别名。</span><span class="sxs-lookup"><span data-stu-id="597f0-126">You must configure the party to use the SSID as an alias before you start receiving its messages.</span></span> <span data-ttu-id="597f0-127">有关方解析组件的详细信息，请参阅[方解析管道组件](../core/party-resolution-pipeline-component.md)。</span><span class="sxs-lookup"><span data-stu-id="597f0-127">For more information about the party resolution component, see [Party Resolution Pipeline Component](../core/party-resolution-pipeline-component.md).</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="597f0-128">BizTalk Server 定义参与方的别名时，使用的是帐户名而不是实际的 Windows SID。</span><span class="sxs-lookup"><span data-stu-id="597f0-128">BizTalk Server uses the account name rather than the actual Windows SID when defining aliases for parties.</span></span>  
+  
+    3.  <span data-ttu-id="597f0-129">如果无法解析参与方，则管道会将 PID 设为“来宾”。</span><span class="sxs-lookup"><span data-stu-id="597f0-129">If the party cannot be resolved, the pipeline sets the PID to Guest.</span></span>  
+  
+4.  <span data-ttu-id="597f0-130">当接收端口标记为“要求验证”，并且 BizTalk Server 获取了有效 PID 并将其解析为已知参与方时，消息会被排入 MessageBox 数据库的队列。</span><span class="sxs-lookup"><span data-stu-id="597f0-130">If you marked the receive port as Authentication Required, and BizTalk Server obtained a valid PID and resolved it to a known party, the message is then queued to the MessageBox database.</span></span> <span data-ttu-id="597f0-131">当 SSID 为空或者 PID 是来宾 ID 时，BizTalk Server 将丢弃消息或者将消息发送到挂起的队列中（具体情况取决于“要求验证”属性的配置）。</span><span class="sxs-lookup"><span data-stu-id="597f0-131">If the SSID is blank or the PID is a guest ID, BizTalk Server either discards the message or sends it to the suspended queue (depending on your configuration of the Authentication Required property).</span></span> <span data-ttu-id="597f0-132">使用“要求验证”属性可以尽量减小从未知参与方接收大量消息的负面影响。</span><span class="sxs-lookup"><span data-stu-id="597f0-132">You can use the Authentication Required property as a way of minimizing the negative effect of receiving a large quantity of messages from an unknown party.</span></span> <span data-ttu-id="597f0-133">接收端口的身份验证选项有关的详细信息，请参阅[如何将身份验证选项配置为接收端口](../core/how-to-configure-authentication-options-for-a-receive-port.md)。</span><span class="sxs-lookup"><span data-stu-id="597f0-133">For more information about the authentication options for receive ports, see [How to Configure Authentication Options for a Receive Port](../core/how-to-configure-authentication-options-for-a-receive-port.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="597f0-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="597f0-134">See Also</span></span>  
+ <span data-ttu-id="597f0-135">[进程之间的消息的身份验证](../core/authentication-of-messages-between-processes.md) </span><span class="sxs-lookup"><span data-stu-id="597f0-135">[Authentication of Messages Between Processes](../core/authentication-of-messages-between-processes.md) </span></span>  
+ <span data-ttu-id="597f0-136">[出站消息保护](../core/outbound-message-protection.md) </span><span class="sxs-lookup"><span data-stu-id="597f0-136">[Outbound Message Protection](../core/outbound-message-protection.md) </span></span>  
+ <span data-ttu-id="597f0-137">[对一条消息的发送方进行身份验证](../core/authenticating-the-sender-of-a-message.md) </span><span class="sxs-lookup"><span data-stu-id="597f0-137">[Authenticating the Sender of a Message](../core/authenticating-the-sender-of-a-message.md) </span></span>  
+ <span data-ttu-id="597f0-138">[授权一条消息的接收方](../core/authorizing-the-receiver-of-a-message.md) </span><span class="sxs-lookup"><span data-stu-id="597f0-138">[Authorizing the Receiver of a Message](../core/authorizing-the-receiver-of-a-message.md) </span></span>  
+ <span data-ttu-id="597f0-139">[如何将 BizTalk Server 配置为接收注册消息](../core/how-to-configure-biztalk-server-for-receiving-signed-messages.md) </span><span class="sxs-lookup"><span data-stu-id="597f0-139">[How to Configure BizTalk Server for Receiving Signed Messages](../core/how-to-configure-biztalk-server-for-receiving-signed-messages.md) </span></span>  
+ [<span data-ttu-id="597f0-140">BizTalk Server 用于签名的消息的证书</span><span class="sxs-lookup"><span data-stu-id="597f0-140">Certificates that BizTalk Server Uses for Signed Messages</span></span>](../core/certificates-that-biztalk-server-uses-for-signed-messages.md)

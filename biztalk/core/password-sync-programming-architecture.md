@@ -1,0 +1,38 @@
+---
+title: "密码同步编程体系结构 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 679edbf1-fb08-4472-b366-3e1d361b20e7
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ebb68af3624b19a5a5385902d6a0131cfe28acb8
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="password-sync-programming-architecture"></a><span data-ttu-id="52173-102">密码同步编程体系结构</span><span class="sxs-lookup"><span data-stu-id="52173-102">Password Sync Programming Architecture</span></span>
+<span data-ttu-id="52173-103">密码同步适配器用于请求模型与企业单一登录系统的其余部分进行交互： 也就是说，该适配器主动接收密码更改从企业单一登录 (ENTSSO) 服务以及非 Windows 系统中。</span><span class="sxs-lookup"><span data-stu-id="52173-103">A password sync adapter uses a pull model for interacting with the rest of the Enterprise Single Sign-On system: that is, the adapter actively receives password changes from the Enterprise Single Sign-On (ENTSSO) service and also from the non-Windows system.</span></span> <span data-ttu-id="52173-104">同样，适配器会将从一个系统收到的密码更改推送至另一个系统。</span><span class="sxs-lookup"><span data-stu-id="52173-104">Similarly, the adapter pushes password changes received from one system to the other.</span></span> <span data-ttu-id="52173-105">与此模型中，你的适配器与三个体系结构组件进行交互： ENTSSO 体系结构、 密码同步 (PS) 帮助程序组件和指定的非 Windows 系统。</span><span class="sxs-lookup"><span data-stu-id="52173-105">With this model, your adapter interacts with three architectural components: the ENTSSO architecture, the Password Sync (PS) Helper component, and a specified non-Windows system.</span></span>  
+  
+## <a name="enterprise-single-sign-on-architecture"></a><span data-ttu-id="52173-106">企业单一登录结构</span><span class="sxs-lookup"><span data-stu-id="52173-106">Enterprise Single Sign-On Architecture</span></span>  
+ <span data-ttu-id="52173-107">ENTSSO 是实现企业单一登录技术的服务，以本地服务的形式运行于适配器所在的同一系统上。</span><span class="sxs-lookup"><span data-stu-id="52173-107">ENTSSO is the service that implements the Enterprise Single Sign-On technology, and runs as a local service on the same system as your adapter.</span></span> <span data-ttu-id="52173-108">因此，适配器与 ENTSSO 之间的通信始终为本地通信。</span><span class="sxs-lookup"><span data-stu-id="52173-108">Therefore, communication between the adapter and ENTSSO is always local.</span></span> <span data-ttu-id="52173-109">但是，密码同步适配器与 ENTSSO 服务分别运行于不同的进程中。</span><span class="sxs-lookup"><span data-stu-id="52173-109">However, a password sync adapter runs in a separate process from the ENTSSO service.</span></span>  
+  
+ <span data-ttu-id="52173-110">ENTSSO 使用配置存储来存储适配器的配置信息。</span><span class="sxs-lookup"><span data-stu-id="52173-110">ENTSSO uses the configuration store to store configuration information for an adapter.</span></span> <span data-ttu-id="52173-111">配置存储应用程序的 Application Users 帐户与访问帐户相对应。</span><span class="sxs-lookup"><span data-stu-id="52173-111">The Application Users account of a configuration store application corresponds to the access account.</span></span> <span data-ttu-id="52173-112">在适配器调用 ENTSSO 时，ENTSSO 将检查运行该适配器的帐户是否是为其配置的访问帐户。</span><span class="sxs-lookup"><span data-stu-id="52173-112">When an adapter calls into ENTSSO, ENTSSO checks that the adapter is within the configured access account for that adapter.</span></span> <span data-ttu-id="52173-113">该访问帐户必须为（本地或域）组帐户。</span><span class="sxs-lookup"><span data-stu-id="52173-113">The access account must be a (local or domain) group account.</span></span>  
+  
+ <span data-ttu-id="52173-114">由于 ENTSSO 存储有适配器的相关信息，因此适配器可以通过自己的名称向 ENTSSO 标识自身。</span><span class="sxs-lookup"><span data-stu-id="52173-114">Because ENTSSO stores information about an adapter, the adapter can identify itself to ENTSSO by its adapter name.</span></span> <span data-ttu-id="52173-115">适配器名称与用于存储适配器属性的配置存储应用程序名称和配置存储标识符相对应。</span><span class="sxs-lookup"><span data-stu-id="52173-115">The adapter name corresponds to the configuration store application name and the configuration store identifier used to store the adapter properties.</span></span> <span data-ttu-id="52173-116">因此，适配器只需知道自己的适配器名称，就可在运行时访问配置信息并向 ENTSSO 系统正确地标识自身。</span><span class="sxs-lookup"><span data-stu-id="52173-116">Therefore, adapters must know only their adapter name to access configuration information and to correctly identify themselves to the ENTSSO system at run time.</span></span>  
+  
+## <a name="password-sync-helper"></a><span data-ttu-id="52173-117">密码同步助手</span><span class="sxs-lookup"><span data-stu-id="52173-117">Password Sync Helper</span></span>  
+ <span data-ttu-id="52173-118">密码同步 (PS) 助手是 ENTSSO 提供的一个 COM 组件。</span><span class="sxs-lookup"><span data-stu-id="52173-118">Password Sync (PS) Helper is a COM component provided by ENTSSO.</span></span> <span data-ttu-id="52173-119">PS 助手与密码同步适配器运行于进程内，并公开 ISSOPSWrapper。</span><span class="sxs-lookup"><span data-stu-id="52173-119">PS Helper runs in-process with the password sync adapter, and exposes ISSOPSWrapper.</span></span> <span data-ttu-id="52173-120">该适配器可以调用任一接口以与 ENTSSO 服务进行通信。</span><span class="sxs-lookup"><span data-stu-id="52173-120">Your adapter can call either interface to communicate with the ENTSSO service.</span></span> <span data-ttu-id="52173-121">PS 助手与 ENTSSO 之间使用加密的（数据包保密性）轻量远程过程调用 (LRPC) 传递通信。</span><span class="sxs-lookup"><span data-stu-id="52173-121">The PS Helper passes communications to and from ENTSSO using encrypted (packet privacy) lightweight remote procedure call (LRPC).</span></span> <span data-ttu-id="52173-122">尽管此类通信主要用于密码更新，但您也可以使用接口在适配器与 ENTSSO 之间传递其他类型的通知。</span><span class="sxs-lookup"><span data-stu-id="52173-122">Although the communications are mainly for password updates, you can also use the interfaces to pass other types of notifications between the adapter and ENTSSO.</span></span> <span data-ttu-id="52173-123">由于 PS 助手在每个进程中以单一值的形式运行，多个适配器可以从同一适配器进程内调用同一 PS 助手。</span><span class="sxs-lookup"><span data-stu-id="52173-123">Because PS Helper runs as a singleton value per process, it is possible for multiple adapters to call the same PS Helper object from within the same adapter process.</span></span> <span data-ttu-id="52173-124">有关以编程方式使用 PS 帮助器的详细信息，请参阅[同步密码](../core/synchronizing-passwords.md)。</span><span class="sxs-lookup"><span data-stu-id="52173-124">For more information about using PS Helper programmatically, see [Synchronizing Passwords](../core/synchronizing-passwords.md).</span></span>  
+  
+## <a name="non-windows-system"></a><span data-ttu-id="52173-125">非 Windows 系统</span><span class="sxs-lookup"><span data-stu-id="52173-125">Non-Windows System</span></span>  
+ <span data-ttu-id="52173-126">非 Windows 系统是适配器与之进行交互的远程计算机系统。</span><span class="sxs-lookup"><span data-stu-id="52173-126">The non-Windows system is the remote computer your adapter interacts with.</span></span> <span data-ttu-id="52173-127">与非 Windows 系统进行交互的方式取决于您。</span><span class="sxs-lookup"><span data-stu-id="52173-127">How you interact with the non-Windows system is up to you.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="52173-128">另请参阅</span><span class="sxs-lookup"><span data-stu-id="52173-128">See Also</span></span>  
+ [<span data-ttu-id="52173-129">密码同步适配器</span><span class="sxs-lookup"><span data-stu-id="52173-129">Password Sync Adapters</span></span>](../core/password-sync-adapters.md)

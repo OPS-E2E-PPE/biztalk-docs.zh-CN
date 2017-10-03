@@ -1,0 +1,186 @@
+---
+title: "于 MSMQ 的大消息 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSMQ adapters, examples
+- examples, MSMQ adapters
+ms.assetid: 1fb87b46-5656-42c0-be99-8ab66e51bb4d
+caps.latest.revision: "35"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 6e6a3fda3082260338bd387dfe84fe48c7aed565
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="large-message-to-msmq"></a><span data-ttu-id="82fec-102">于 MSMQ 的大型消息</span><span class="sxs-lookup"><span data-stu-id="82fec-102">Large Message to MSMQ</span></span>
+<span data-ttu-id="82fec-103">大型消息到 MSMQ 示例演示如何.xml 文档大于 4 兆字节 (MB) 将从发送消息队列 (也称为 MSMQ) 到 BizTalk MSMQ 适配器使用**MQSendLargeMessage** API 实现通过MQRTLarge.dll。</span><span class="sxs-lookup"><span data-stu-id="82fec-103">The Large Message to MSMQ sample demonstrates how to send an .xml document larger than 4 megabytes (MB) from Message Queuing (also known as MSMQ) to the BizTalk MSMQ adapter by using the **MQSendLargeMessage** API implemented by MQRTLarge.dll.</span></span>  
+  
+## <a name="what-this-sample-does"></a><span data-ttu-id="82fec-104">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="82fec-104">What This Sample Does</span></span>  
+ <span data-ttu-id="82fec-105">本示例的工作原理如下所示：</span><span class="sxs-lookup"><span data-stu-id="82fec-105">The sample works as follows:</span></span>  
+  
+1.  <span data-ttu-id="82fec-106">用户使用 SendLargeMessage.exe 将大型 .xml 文件发送到本地计算机中的队列。</span><span class="sxs-lookup"><span data-stu-id="82fec-106">A user uses SendLargeMessage.exe to send a large .xml file to a queue on a local computer.</span></span>  
+  
+2.  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]<span data-ttu-id="82fec-107"> 从该队列接收大型 .xml 文件，并将其复制到本地目录。</span><span class="sxs-lookup"><span data-stu-id="82fec-107"> receives the large .xml file from the queue and copies it to a local directory.</span></span>  
+  
+ <span data-ttu-id="82fec-108">消息队列中的许多操作都是异步进行的。</span><span class="sxs-lookup"><span data-stu-id="82fec-108">Many operations in Message Queuing are asynchronous.</span></span> <span data-ttu-id="82fec-109">也就是说，许多 MSMQ API 调用 (例如， **MQSendLargeMessage**) 返回到调用方完全完成请求的操作之前。</span><span class="sxs-lookup"><span data-stu-id="82fec-109">That is, many MSMQ API calls (for example, **MQSendLargeMessage**) return to the caller before the requested operation has fully completed.</span></span>  
+  
+ <span data-ttu-id="82fec-110">MSMQ 提供了一种在操作完成之后将反馈传送到应用程序的机制。</span><span class="sxs-lookup"><span data-stu-id="82fec-110">MSMQ provides a mechanism to deliver feedback to the application after the operation has completed.</span></span> <span data-ttu-id="82fec-111">此机制涉及“管理队列”的使用。</span><span class="sxs-lookup"><span data-stu-id="82fec-111">This mechanism involves the use of an "Admin Queue."</span></span> <span data-ttu-id="82fec-112">MSMQ 将反馈以管理队列中的消息的形式返回。</span><span class="sxs-lookup"><span data-stu-id="82fec-112">MSMQ returns feedback in the form of a message in the Admin Queue.</span></span> <span data-ttu-id="82fec-113">MSMQ 将向其返回反馈的管理队列是在进行原始 MSMQ API 调用时指定的。</span><span class="sxs-lookup"><span data-stu-id="82fec-113">The Admin Queue to which MSMQ will return feedback is specified when the original MSMQ API call is made.</span></span> <span data-ttu-id="82fec-114">因此，举例来说，当发送消息使用**MQSendLargeMessage** API，应用程序可以指定管理队列的名称，通过使用**PROPID_M_ADMIN_QUEUE**消息对消息的属性对的调用中传递**MQSendLargeMessage**。</span><span class="sxs-lookup"><span data-stu-id="82fec-114">So, for example, when sending a message using the **MQSendLargeMessage** API, the application can specify the name of an Admin Queue by using the **PROPID_M_ADMIN_QUEUE** message property on the message passed in the call to **MQSendLargeMessage**.</span></span> <span data-ttu-id="82fec-115">即使应用程序可能会成功的返回代码在**MQSendLargeMessage**调用时，如果该消息的发送操作随后失败，MSMQ 将消息针对此效果写入指定的管理队列。</span><span class="sxs-lookup"><span data-stu-id="82fec-115">Even though the application may get a successful return code on the **MQSendLargeMessage** call, if the message send operation subsequently fails, MSMQ writes a message to that effect to the specified Admin Queue.</span></span>  
+  
+ <span data-ttu-id="82fec-116">如果应用程序未指定管理队列，则发送失败会导致消息丢失并且捕获不到任何诊断信息，实际上，就是消息会不留任何痕迹地消失。</span><span class="sxs-lookup"><span data-stu-id="82fec-116">If the application does not specify an Admin Queue, a send failure results in the message being lost and no diagnostics captured — in effect, the message disappears without any evidence.</span></span> <span data-ttu-id="82fec-117">MSMQ 中的许多错误情形都可以导致这种情况发生，例如，向事务性队列执行非事务性发送。</span><span class="sxs-lookup"><span data-stu-id="82fec-117">A number of error situations in MSMQ can cause this to happen, for example, doing a non-transactional send to a transactional queue.</span></span>  
+  
+ <span data-ttu-id="82fec-118">在此示例的上下文，很重要这段代码的调用中指定的事务类型**MQSendLargeMessage**是为队列消息发送到指定的事务支持使用一致。</span><span class="sxs-lookup"><span data-stu-id="82fec-118">In the context of this sample, it is important that the code specify a transaction type in the call to **MQSendLargeMessage** that is consistent with the transaction support specified for the queue to which the message is sent.</span></span> <span data-ttu-id="82fec-119">如果未完成此和未管理员指定队列 （就是在此示例中这种情况），如果 MSMQ 放弃时，它还执行该操作没有指示发送的消息 （即，没有错误代码返回给应用程序事件日志中写入任何诊断依此类推)。</span><span class="sxs-lookup"><span data-stu-id="82fec-119">If this is not done and if no Admin Queue is specified (as is the case in this sample), then MSMQ discards the sent message with no indication that it has done so (that is, no error code returned to the application, no diagnostics written to the event log, and so on).</span></span>  
+  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="82fec-120">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="82fec-120">Where to Find This Sample</span></span>  
+ <span data-ttu-id="82fec-121">\<示例路径 > \AdaptersUsage\MSMQLarge</span><span class="sxs-lookup"><span data-stu-id="82fec-121">\<Samples Path>\AdaptersUsage\MSMQLarge</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="82fec-122">如果使用 Windows 的 64 位版本和[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，该示例将安装在**C:\Program Files (x86) \Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge**文件夹。</span><span class="sxs-lookup"><span data-stu-id="82fec-122">If using a 64-bit version of Windows and [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], the sample will be installed in the **C:\Program Files (x86)\Microsoft BizTalk Server \<version>\SDK\Samples\AdaptersUsage\MSMQLarge** folder.</span></span>  <span data-ttu-id="82fec-123">请注意有关在此文档中使用的任何其他说明此更改**C:\Program Files**文件夹。</span><span class="sxs-lookup"><span data-stu-id="82fec-123">Note this change for any other instructions in this document using the **C:\Program Files** folder.</span></span>  
+  
+ <span data-ttu-id="82fec-124">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="82fec-124">The following table shows the files in this sample and describes their purpose.</span></span>  
+  
+|<span data-ttu-id="82fec-125">**文件**</span><span class="sxs-lookup"><span data-stu-id="82fec-125">**File**</span></span>|<span data-ttu-id="82fec-126">**Description**</span><span class="sxs-lookup"><span data-stu-id="82fec-126">**Description**</span></span>|  
+|--------------|---------------------|  
+|<span data-ttu-id="82fec-127">**MQRTLarge.dll**</span><span class="sxs-lookup"><span data-stu-id="82fec-127">**MQRTLarge.dll**</span></span>|<span data-ttu-id="82fec-128">为本地消息队列提供加载项。</span><span class="sxs-lookup"><span data-stu-id="82fec-128">Provides an add-on for native message queuing.</span></span> <span data-ttu-id="82fec-129">公开**MQSendLargeMessage**和**MQReceiveLargeMessage** Api。</span><span class="sxs-lookup"><span data-stu-id="82fec-129">Exposes the **MQSendLargeMessage** and **MQReceiveLargeMessage** APIs.</span></span><br /><br /> <span data-ttu-id="82fec-130">必须将 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装到 64 位版本的 Windows 上才能访问 64 位版本的 Mqrtlarge.dll。</span><span class="sxs-lookup"><span data-stu-id="82fec-130">You must install [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] on a 64-bit version of Windows in order to access the 64-bit version of MQRTLarge.dll.</span></span><br /><br /> <span data-ttu-id="82fec-131">对于 MSMQ 解决方案，即使没有 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，MQRTLarge.dll 仍能正常工作。</span><span class="sxs-lookup"><span data-stu-id="82fec-131">For an MSMQ solution without [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], the MQRTLarge.dll may still function correctly.</span></span> <span data-ttu-id="82fec-132">但是，Microsoft 不推荐使用这种配置，如果在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 环境外使用，可能会发生意外结果。</span><span class="sxs-lookup"><span data-stu-id="82fec-132">However, this is not a recommended configuration that Microsoft supports, and unexpected results may occur if used outside of the [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] environment.</span></span>|  
+|||  
+|<span data-ttu-id="82fec-133">**LargeMessages.sln**</span><span class="sxs-lookup"><span data-stu-id="82fec-133">**LargeMessages.sln**</span></span>|<span data-ttu-id="82fec-134">提供 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 解决方案，以创建在本示例中使用的 SendLargeMessage 可执行文件。</span><span class="sxs-lookup"><span data-stu-id="82fec-134">Provides a [!INCLUDE[vs2010](../includes/vs2010-md.md)] solution to create the SendLargeMessage executable used in the sample.</span></span>|  
+|<span data-ttu-id="82fec-135">**XMLCreator.sln**</span><span class="sxs-lookup"><span data-stu-id="82fec-135">**XMLCreator.sln**</span></span>|<span data-ttu-id="82fec-136">提供 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 解决方案，以创建为 SDK 示例生成 .xml 测试文件的 XMLCreator 可执行文件。</span><span class="sxs-lookup"><span data-stu-id="82fec-136">Provides a [!INCLUDE[vs2010](../includes/vs2010-md.md)] solution to create the XMLCreator executable to generate a test .xml file for the SDK sample.</span></span>|  
+  
+## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a><span data-ttu-id="82fec-137">配置 BizTalk Server 和创建 MSMQ 队列</span><span class="sxs-lookup"><span data-stu-id="82fec-137">Configuring BizTalk Server and Creating the MSMQ Queue</span></span>  
+ <span data-ttu-id="82fec-138">请确保你已安装 [!INCLUDE[vs2010](../includes/vs2010-md.md)]、Microsoft 消息队列和 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="82fec-138">Ensure that you have [!INCLUDE[vs2010](../includes/vs2010-md.md)], Microsoft Message Queuing, and [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] installed.</span></span>  
+  
+#### <a name="to-configure-biztalk-server"></a><span data-ttu-id="82fec-139">若要配置 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="82fec-139">To configure BizTalk Server</span></span>  
+  
+1.  <span data-ttu-id="82fec-140">在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="82fec-140">In [!INCLUDE[vs2010](../includes/vs2010-md.md)], open the **C:\Program Files\Microsoft BizTalk Server \<version>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln** solution file.</span></span>  <span data-ttu-id="82fec-141">生成示例。</span><span class="sxs-lookup"><span data-stu-id="82fec-141">Build the sample.</span></span>  
+  
+2.  <span data-ttu-id="82fec-142">创建**C:\Demo**目录其中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]将放置在 MSMQ 的消息。</span><span class="sxs-lookup"><span data-stu-id="82fec-142">Create a **C:\Demo** directory where [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] will place the messages from MSMQ.</span></span>  
+  
+3.  <span data-ttu-id="82fec-143">打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="82fec-143">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+4.  <span data-ttu-id="82fec-144">为本示例创建发送端口，以写入消息。</span><span class="sxs-lookup"><span data-stu-id="82fec-144">Create a send port for the sample to write the message.</span></span>  
+  
+    -   <span data-ttu-id="82fec-145">展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，右键单击**发送端口**，单击**新建**，然后单击**静态单向发送端口**。</span><span class="sxs-lookup"><span data-stu-id="82fec-145">Expand **BizTalk Group**, expand **Applications**, expand **BizTalk Application 1**, right-click **Send Ports**, click **New**, and then click **Static One-Way Send Port**.</span></span>  
+  
+5.  <span data-ttu-id="82fec-146">在**静态单向发送端口属性**对话框框中，设置到端口的名称的**MySendPort**。</span><span class="sxs-lookup"><span data-stu-id="82fec-146">In the **Static One-Way Send Port Properties** dialog box, set the name of the port to **MySendPort**.</span></span>  
+  
+6.  <span data-ttu-id="82fec-147">将传输类型设置为**文件**。</span><span class="sxs-lookup"><span data-stu-id="82fec-147">Set the transport type to **File**.</span></span>  
+  
+7.  <span data-ttu-id="82fec-148">单击**配置**按钮以打开**文件传输属性**窗体。</span><span class="sxs-lookup"><span data-stu-id="82fec-148">Click the **Configure** button to open the **File Transport Properties** form.</span></span> <span data-ttu-id="82fec-149">输入**C:\Demo**中**目标文件夹**。</span><span class="sxs-lookup"><span data-stu-id="82fec-149">Enter **C:\Demo** in **Destination Folder**.</span></span> <span data-ttu-id="82fec-150">确保主机实例标识具有对 C:\Demo 文件夹的访问权限。</span><span class="sxs-lookup"><span data-stu-id="82fec-150">Ensure that the host instance identity has access to the C:\Demo folder.</span></span>  
+  
+8.  <span data-ttu-id="82fec-151">确保**文件名**设置为**%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="82fec-151">Ensure that **File Name** is set to **%MessageID%.xml**.</span></span> <span data-ttu-id="82fec-152">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="82fec-152">Click **OK**.</span></span>  
+  
+9. <span data-ttu-id="82fec-153">单击 **“筛选器”**。</span><span class="sxs-lookup"><span data-stu-id="82fec-153">Click **Filters**.</span></span>  
+  
+    1.  <span data-ttu-id="82fec-154">设置**属性**到**BTS。ReceivePortName**。</span><span class="sxs-lookup"><span data-stu-id="82fec-154">Set **Property** to **BTS.ReceivePortName**.</span></span>  
+  
+    2.  <span data-ttu-id="82fec-155">设置**运算符**到 **=** 。</span><span class="sxs-lookup"><span data-stu-id="82fec-155">Set **Operator** to **=**.</span></span>  
+  
+    3.  <span data-ttu-id="82fec-156">设置**值**到**MyReceivePort**。</span><span class="sxs-lookup"><span data-stu-id="82fec-156">Set **Value** to **MyReceivePort**.</span></span>  
+  
+    4.  <span data-ttu-id="82fec-157">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="82fec-157">Click **OK**.</span></span>  
+  
+10. <span data-ttu-id="82fec-158">创建接收端口，以接受来自 MSMQ 的消息。</span><span class="sxs-lookup"><span data-stu-id="82fec-158">Create a receive port to accept the message from MSMQ.</span></span>  
+  
+    1.  <span data-ttu-id="82fec-159">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**接收端口**。</span><span class="sxs-lookup"><span data-stu-id="82fec-159">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click **Receive Ports**.</span></span>  
+  
+    2.  <span data-ttu-id="82fec-160">单击**新建**，然后单击**单向接收端口**。</span><span class="sxs-lookup"><span data-stu-id="82fec-160">Click **New**, and then click **One-way Receive Port**.</span></span>  
+  
+11. <span data-ttu-id="82fec-161">在**接收端口属性**对话框框中，设置到端口的名称的**MyReceivePort**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="82fec-161">In the **Receive Port Properties** dialog box, set the name of the port to **MyReceivePort**, and then click **OK**.</span></span>  
+  
+12. <span data-ttu-id="82fec-162">为本示例创建接收端口后，必须创建接收位置。</span><span class="sxs-lookup"><span data-stu-id="82fec-162">After creating a receive port for the sample, you must create a receive location.</span></span>  
+  
+    1.  <span data-ttu-id="82fec-163">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**接收位置**。</span><span class="sxs-lookup"><span data-stu-id="82fec-163">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, right-click **Receive Locations**.</span></span>  
+  
+    2.  <span data-ttu-id="82fec-164">单击**新建**，然后单击**单向接收位置**。</span><span class="sxs-lookup"><span data-stu-id="82fec-164">Click **New**, and then click **One-way Receive Location**.</span></span>  
+  
+    3.  <span data-ttu-id="82fec-165">设置到的接收位置的名称**MSMQReceiveLocation**。</span><span class="sxs-lookup"><span data-stu-id="82fec-165">Set the name of the receive location to **MSMQReceiveLocation**.</span></span>  
+  
+    4.  <span data-ttu-id="82fec-166">在**选择接收端口**对话框中，选择**MyReceivePort**。</span><span class="sxs-lookup"><span data-stu-id="82fec-166">In the **Select a Receive Port** dialog box, select **MyReceivePort**.</span></span>  
+  
+    5.  <span data-ttu-id="82fec-167">在**接收位置属性**对话框中，设置**传输类型**到**MSMQ**。</span><span class="sxs-lookup"><span data-stu-id="82fec-167">In the **Receive Location Properties** dialog box, set **Transport Type** to **MSMQ**.</span></span>  
+  
+    6.  <span data-ttu-id="82fec-168">在**地址 (URI)**部分中，单击**配置**以打开**MSMQ 传输属性**窗体。</span><span class="sxs-lookup"><span data-stu-id="82fec-168">In the **Address (URI)** section, click **Configure** to open the **MSMQ Transport Properties** form.</span></span> <span data-ttu-id="82fec-169">设置**队列**到**localhost\private$ \test**。</span><span class="sxs-lookup"><span data-stu-id="82fec-169">Set **Queue** to **localhost\private$\test**.</span></span>  
+  
+    7.  <span data-ttu-id="82fec-170">设置**事务**到`True`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="82fec-170">Set **Transactional** to `True`, and then click **OK**.</span></span>  
+  
+13. <span data-ttu-id="82fec-171">你必须通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台使端口和接收位置可用。</span><span class="sxs-lookup"><span data-stu-id="82fec-171">You must make the ports and receive locations available for use through the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+    1.  <span data-ttu-id="82fec-172">右键单击**MySendPort**，然后单击**Enlist**。</span><span class="sxs-lookup"><span data-stu-id="82fec-172">Right-click **MySendPort**, and then click **Enlist**.</span></span>  
+  
+    2.  <span data-ttu-id="82fec-173">右键单击**MySendPort**，然后单击**启动**。</span><span class="sxs-lookup"><span data-stu-id="82fec-173">Right-click **MySendPort**, and then click **Start**.</span></span>  
+  
+    3.  <span data-ttu-id="82fec-174">右键单击**MSMQReceiveLocation**，然后单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="82fec-174">Right-click **MSMQReceiveLocation**, and then click **Enable**.</span></span>  
+  
+#### <a name="to-create-the-msmq-queue-in-windows-server-2008-r2-or-windows-server-2008-sp2"></a><span data-ttu-id="82fec-175">在 Windows Server 2008 R2 或 Windows Server 2008 SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="82fec-175">To create the MSMQ queue in Windows Server 2008 R2 or Windows Server 2008 SP2</span></span>  
+  
+1.  <span data-ttu-id="82fec-176">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="82fec-176">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
+  
+2.  <span data-ttu-id="82fec-177">展开**功能**节点。</span><span class="sxs-lookup"><span data-stu-id="82fec-177">Expand the **Features** node.</span></span>  
+  
+3.  <span data-ttu-id="82fec-178">展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="82fec-178">Expand the **Message Queuing** node.</span></span>  
+  
+4.  <span data-ttu-id="82fec-179">右键单击**专用队列**节点，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="82fec-179">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
+  
+5.  <span data-ttu-id="82fec-180">下**队列名称**，输入**测试**。</span><span class="sxs-lookup"><span data-stu-id="82fec-180">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="82fec-181">确保**事务**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="82fec-181">Ensure that the **Transactional** check box is selected.</span></span>  
+  
+6.  <span data-ttu-id="82fec-182">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="82fec-182">Click **OK**.</span></span>  
+  
+#### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a><span data-ttu-id="82fec-183">在 Windows 7 或 Windows Vista SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="82fec-183">To create the MSMQ queue in Windows 7 or Windows Vista SP2</span></span>  
+  
+1.  <span data-ttu-id="82fec-184">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="82fec-184">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
+  
+2.  <span data-ttu-id="82fec-185">展开**服务和应用程序**，然后展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="82fec-185">Expand **Services and Applications**, and then expand the **Message Queuing** node.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="82fec-186">如果**消息队列**未安装在计算机上，转到**控制面板 > 程序 > 程序和功能**，然后选择**打开或关闭 Windows 功能**。</span><span class="sxs-lookup"><span data-stu-id="82fec-186">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="82fec-187">检查下的所有功能**Microsoft Message Queue (MSMQ) 服务器**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="82fec-187">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
+  
+3.  <span data-ttu-id="82fec-188">右键单击**专用队列**节点，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="82fec-188">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
+  
+4.  <span data-ttu-id="82fec-189">下**队列名称**，输入**测试**。</span><span class="sxs-lookup"><span data-stu-id="82fec-189">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="82fec-190">确保**事务**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="82fec-190">Ensure that the **Transactional** check box is selected.</span></span>  
+  
+5.  <span data-ttu-id="82fec-191">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="82fec-191">Click **OK**.</span></span>  
+  
+## <a name="creating-a-test-file-and-running-the-sample"></a><span data-ttu-id="82fec-192">创建测试文件并运行该示例</span><span class="sxs-lookup"><span data-stu-id="82fec-192">Creating a Test File and Running the Sample</span></span>  
+  
+#### <a name="to-create-a-large-test-file"></a><span data-ttu-id="82fec-193">创建大型测试文件</span><span class="sxs-lookup"><span data-stu-id="82fec-193">To create a large test file</span></span>  
+  
+1.  <span data-ttu-id="82fec-194">在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开解决方案**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**。</span><span class="sxs-lookup"><span data-stu-id="82fec-194">In [!INCLUDE[vs2010](../includes/vs2010-md.md)], open the solution **C:\Program Files\Microsoft BizTalk Server \<version>\SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**.</span></span>  
+  
+2.  <span data-ttu-id="82fec-195">生成并运行该项目。</span><span class="sxs-lookup"><span data-stu-id="82fec-195">Build and run the project.</span></span>  
+  
+3.  <span data-ttu-id="82fec-196">下**XML 正文**，类型**这是测试消息**。</span><span class="sxs-lookup"><span data-stu-id="82fec-196">Under **XML Body**, type **This is a test message**.</span></span>  
+  
+4.  <span data-ttu-id="82fec-197">下**数次以复制 XML 正文**，类型`250000`。</span><span class="sxs-lookup"><span data-stu-id="82fec-197">Under **# of times to copy XML body**, type `250000`.</span></span>  
+  
+5.  <span data-ttu-id="82fec-198">下**XML 文件位置**，类型`C:\Program Files\Microsoft BizTalk Server <version>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeFile.xml`。</span><span class="sxs-lookup"><span data-stu-id="82fec-198">Under **XML File Location**, type `C:\Program Files\Microsoft BizTalk Server <version>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeFile.xml`.</span></span>  
+  
+6.  <span data-ttu-id="82fec-199">单击**创建 XML**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="82fec-199">Click **Create XML**, and then click **OK**.</span></span>  
+  
+#### <a name="to-run-the-sample"></a><span data-ttu-id="82fec-200">运行示例</span><span class="sxs-lookup"><span data-stu-id="82fec-200">To run the sample</span></span>  
+  
+1.  <span data-ttu-id="82fec-201">打开命令提示符，并将目录更改为**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**。</span><span class="sxs-lookup"><span data-stu-id="82fec-201">Open a command prompt and change directory to **C:\Program Files\Microsoft BizTalk Server \<version>\SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**.</span></span>  
+  
+2.  <span data-ttu-id="82fec-202">在命令提示符处，运行**SendLargeMessage.exe**。</span><span class="sxs-lookup"><span data-stu-id="82fec-202">At the command prompt, run **SendLargeMessage.exe**.</span></span> <span data-ttu-id="82fec-203">SendLargeMessage 可执行文件接受两个变量，第一个是 MSMQ 队列的位置，第二个是要发送的 .xml 文件的位置：</span><span class="sxs-lookup"><span data-stu-id="82fec-203">The SendLargeMessage executable accepts two variables — the first is the location of the MSMQ queue, and the second is the location of the .xml file to send:</span></span>  
+  
+    ```  
+    DIRECT=OS:localhost\private$\Test  "C:\Program Files\Microsoft BizTalk Server <version>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeFile.xml"  
+    ```  
+  
+3.  <span data-ttu-id="82fec-204">验证是否相同大小的文件已在创建[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]中的计算机**C:\Demo**目录。</span><span class="sxs-lookup"><span data-stu-id="82fec-204">Verify that a file of the same size was created on the [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] computer in the **C:\Demo** directory.</span></span> <span data-ttu-id="82fec-205">此目录即为在 MySendPort 发送端口中标识的目录。</span><span class="sxs-lookup"><span data-stu-id="82fec-205">This is the directory you identified in the MySendPort send port.</span></span>  
+  
+## <a name="comments"></a><span data-ttu-id="82fec-206">注释</span><span class="sxs-lookup"><span data-stu-id="82fec-206">Comments</span></span>  
+ <span data-ttu-id="82fec-207">SendLargeMessage.exe 引用**LargeMessages** API，后者反过来又引用 BizTalk 消息队列大型消息扩展 (MQRTLarge.dll) API。</span><span class="sxs-lookup"><span data-stu-id="82fec-207">SendLargeMessage.exe references the **LargeMessages** API, which in turn references the BizTalk Message Queuing Large Message Extension (MQRTLarge.dll) API.</span></span> <span data-ttu-id="82fec-208">消息队列大消息扩展 API 是本地消息队列的加载项，利用它便能处理大于本地消息队列 4 MB 限制的消息。</span><span class="sxs-lookup"><span data-stu-id="82fec-208">The Message Queuing Large Message Extension API is an add-on for native message queuing that enables the processing of messages larger than the 4 MB limit of native message queuing.</span></span>  
+  
+ <span data-ttu-id="82fec-209">此示例使用**MQSendLargeMessage** API 并公开 API 的.NET framework 通过**LargeMessages** API。</span><span class="sxs-lookup"><span data-stu-id="82fec-209">This sample uses the **MQSendLargeMessage** API and exposes the API to the .NET Framework by using the **LargeMessages** API.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="82fec-210">另请参阅</span><span class="sxs-lookup"><span data-stu-id="82fec-210">See Also</span></span>  
+ <span data-ttu-id="82fec-211">[BizTalk 消息队列大型消息扩展](../core/biztalk-message-queuing-large-message-extension.md) </span><span class="sxs-lookup"><span data-stu-id="82fec-211">[BizTalk Message Queuing Large Message Extension](../core/biztalk-message-queuing-large-message-extension.md) </span></span>  
+ [<span data-ttu-id="82fec-212">适配器示例-使用情况</span><span class="sxs-lookup"><span data-stu-id="82fec-212">Adapter Samples - Usage</span></span>](../core/adapter-samples-usage.md)

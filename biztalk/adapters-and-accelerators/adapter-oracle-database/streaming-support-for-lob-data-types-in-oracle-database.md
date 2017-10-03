@@ -1,0 +1,46 @@
+---
+title: "流式处理 Oracle 数据库中的 LOB 数据类型支持 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- streaming, node-value
+- streaming
+- LOB data
+- streaming, node
+ms.assetid: a4943cdf-8336-48ac-b592-52ec514e7300
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: f3f052b5051e511179ed0a3b371a619b315a16af
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="streaming-support-for-lob-data-types-in-oracle-database"></a><span data-ttu-id="37d0c-102">Oracle 数据库中的 LOB 数据类型的流式处理支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-102">Streaming Support for LOB Data Types in Oracle Database</span></span>
+<span data-ttu-id="37d0c-103">Oracle 数据库支持流式处理大型对象 (LOB) 数据类型。</span><span class="sxs-lookup"><span data-stu-id="37d0c-103">The Oracle database supports streaming on large object (LOB) data types.</span></span> <span data-ttu-id="37d0c-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持消息流式处理，这样就可以进行流式处理 LOB 数据端到端 Oracle 数据库和适配器客户端之间。</span><span class="sxs-lookup"><span data-stu-id="37d0c-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]supports message streaming, which makes it possible to stream LOB data end-to-end between the Oracle database and an adapter client.</span></span> <span data-ttu-id="37d0c-105">但是，流式处理不支持相同的方式跨所有的编程模型时使用适配器。</span><span class="sxs-lookup"><span data-stu-id="37d0c-105">However, streaming is not supported in the same manner across all programming models when you use the adapter.</span></span>  
+  
+ <span data-ttu-id="37d0c-106">跨不同的编程模型，适配器支持如下所示方式端到端流式处理的 LOB 数据类型。</span><span class="sxs-lookup"><span data-stu-id="37d0c-106">The following shows how end-to-end streaming of LOB data types is supported by the adapter across different programming models.</span></span>  
+  
+|<span data-ttu-id="37d0c-107">运算</span><span class="sxs-lookup"><span data-stu-id="37d0c-107">Operation</span></span>|<span data-ttu-id="37d0c-108">WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="37d0c-108">WCF Channel Model</span></span>|<span data-ttu-id="37d0c-109">WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="37d0c-109">WCF Service Model</span></span>|<span data-ttu-id="37d0c-110">BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="37d0c-110">BizTalk Server</span></span>|  
+|---------------|-----------------------|-----------------------|--------------------|  
+|<span data-ttu-id="37d0c-111">表/视图插入操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-111">Table/View Insert operation</span></span>|<span data-ttu-id="37d0c-112">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-112">Not supported</span></span>|<span data-ttu-id="37d0c-113">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-113">Not supported</span></span>|<span data-ttu-id="37d0c-114">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-114">Not supported</span></span>|  
+|<span data-ttu-id="37d0c-115">表/视图选择操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-115">Table/View Select operation</span></span>|<span data-ttu-id="37d0c-116">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-116">Supported</span></span>|<span data-ttu-id="37d0c-117">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-117">Not supported</span></span>|<span data-ttu-id="37d0c-118">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-118">Supported</span></span>|  
+|<span data-ttu-id="37d0c-119">表/视图更新操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-119">Table/View Update operation</span></span>|<span data-ttu-id="37d0c-120">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-120">Not supported</span></span>|<span data-ttu-id="37d0c-121">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-121">Not supported</span></span>|<span data-ttu-id="37d0c-122">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-122">Not supported</span></span>|  
+|<span data-ttu-id="37d0c-123">表/视图删除操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-123">Table/View Delete operation</span></span>|<span data-ttu-id="37d0c-124">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-124">Not supported</span></span>|<span data-ttu-id="37d0c-125">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-125">Not supported</span></span>|<span data-ttu-id="37d0c-126">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-126">Not supported</span></span>|  
+|<span data-ttu-id="37d0c-127">表/视图 ReadLOB 操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-127">Table/View ReadLOB operation</span></span>|<span data-ttu-id="37d0c-128">支持;但是，主要是为了支持流式处理 WCF 服务模型中可以找出 ReadLOB 操作，建议不要在 WCF 通道模型中使用。</span><span class="sxs-lookup"><span data-stu-id="37d0c-128">Supported; however, the ReadLOB operations is surfaced primarily to support streaming in the WCF service model, it is not recommended for use in the WCF channel model.</span></span> <span data-ttu-id="37d0c-129">改为使用选择的操作或 SQLEXECUTE 操作。</span><span class="sxs-lookup"><span data-stu-id="37d0c-129">Use a Select operation or the SQLEXECUTE operation instead.</span></span>|<span data-ttu-id="37d0c-130">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-130">Supported</span></span>|<span data-ttu-id="37d0c-131">ReadLOB 操作不可用于 BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="37d0c-131">The ReadLOB operation is not supported for BizTalk Server.</span></span> <span data-ttu-id="37d0c-132">请改用选择操作。</span><span class="sxs-lookup"><span data-stu-id="37d0c-132">Use a Select operation instead.</span></span>|  
+|<span data-ttu-id="37d0c-133">表/视图 UpdateLOB 操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-133">Table/View UpdateLOB operation</span></span>|<span data-ttu-id="37d0c-134">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-134">Supported</span></span>|<span data-ttu-id="37d0c-135">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-135">Not Supported</span></span>|<span data-ttu-id="37d0c-136">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-136">Supported</span></span>|  
+|<span data-ttu-id="37d0c-137">SQLEXECUTE 操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-137">SQLEXECUTE operation</span></span>|<span data-ttu-id="37d0c-138">在响应中受支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-138">Supported in the response</span></span>|<span data-ttu-id="37d0c-139">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-139">Not Supported</span></span>|<span data-ttu-id="37d0c-140">在响应中受支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-140">Supported in the response</span></span>|  
+|<span data-ttu-id="37d0c-141">存储的过程和函数的操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-141">Stored procedure and function operation</span></span>|<span data-ttu-id="37d0c-142">在响应中受支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-142">Supported in the response</span></span>|<span data-ttu-id="37d0c-143">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-143">Not Supported</span></span>|<span data-ttu-id="37d0c-144">在响应中受支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-144">Supported in the response</span></span>|  
+|<span data-ttu-id="37d0c-145">POLLINGSTMT 操作</span><span class="sxs-lookup"><span data-stu-id="37d0c-145">POLLINGSTMT operation</span></span>|<span data-ttu-id="37d0c-146">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-146">Supported</span></span>|<span data-ttu-id="37d0c-147">不支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-147">Not Supported</span></span>|<span data-ttu-id="37d0c-148">是否支持</span><span class="sxs-lookup"><span data-stu-id="37d0c-148">Supported</span></span>|  
+  
+ <span data-ttu-id="37d0c-149">有关如何对 LOB 数据类型进行流式处理适配器所支持的和如何支持它时随适配器一起使用各种编程模型的更全面信息，请参阅[流式处理大型对象数据类型](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="37d0c-149">For more comprehensive information about how streaming of LOB data types is supported by the adapter and how it is supported when you use various programming models with the adapter, see [Streaming large object data types](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="37d0c-150">另请参阅</span><span class="sxs-lookup"><span data-stu-id="37d0c-150">See Also</span></span>  
+ [<span data-ttu-id="37d0c-151">用于 Oracle 数据库的 BizTalk Adapter 的概述</span><span class="sxs-lookup"><span data-stu-id="37d0c-151">Overview of BizTalk Adapter for Oracle Database</span></span>](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md)
