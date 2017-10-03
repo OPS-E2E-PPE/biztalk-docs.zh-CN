@@ -1,0 +1,1 @@
+<span data-ttu-id="ad3aa-101">虚拟机</span><span class="sxs-lookup"><span data-stu-id="ad3aa-101">virtual machine</span></span>

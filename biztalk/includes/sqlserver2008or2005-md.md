@@ -1,0 +1,1 @@
+<span data-ttu-id="fa5de-101">SQL Server 2014 或 SQL Server 2012 SP1</span><span class="sxs-lookup"><span data-stu-id="fa5de-101">SQL Server 2014 or SQL Server 2012 SP1</span></span>

@@ -1,0 +1,1 @@
+<span data-ttu-id="1b1f3-101">WCF LOB 适配器服务开发向导</span><span class="sxs-lookup"><span data-stu-id="1b1f3-101">WCF LOB Adapter Service Development Wizard</span></span>
