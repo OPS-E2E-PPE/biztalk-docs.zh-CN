@@ -1,0 +1,53 @@
+---
+title: "EDI 和 AS2 的配置状态报告 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0c7fa76d-0d03-4b74-9a3a-60f4bd0534ff
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 051a03b735f3714910b415d5418ff84089c57940
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuration-of-edi-and-as2-status-reporting"></a><span data-ttu-id="7d140-102">配置 EDI 和 AS2 状态报告功能</span><span class="sxs-lookup"><span data-stu-id="7d140-102">Configuration of EDI and AS2 Status Reporting</span></span>
+<span data-ttu-id="7d140-103">本主题说明启用 EDI 和 AS2 状态报告功能和配置状态报告筛选器，并显示 EDI、批处理和 AS2 状态报告的列。</span><span class="sxs-lookup"><span data-stu-id="7d140-103">This topic describes the enabling of EDI and AS2 status reporting, and the configuration of status report filters and display columns for EDI, batching, and AS2 status reports.</span></span>  
+  
+## <a name="enabling-status-reporting"></a><span data-ttu-id="7d140-104">启用状态报告</span><span class="sxs-lookup"><span data-stu-id="7d140-104">Enabling Status Reporting</span></span>  
+ <span data-ttu-id="7d140-105">EDI 状态报告功能只能在安装了带有 EDI 和 BAM 子系统的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的服务器上可用。</span><span class="sxs-lookup"><span data-stu-id="7d140-105">EDI status reporting will only be available on a server if [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] with the EDI and BAM subsystems is installed on that server.</span></span> <span data-ttu-id="7d140-106">如果未安装 BAM 基础结构，则无法启用 EDI/AS2 状态报告功能。</span><span class="sxs-lookup"><span data-stu-id="7d140-106">EDI/AS2 status reporting cannot be enabled if the BAM infrastructure is not installed.</span></span> <span data-ttu-id="7d140-107">该服务器还必须是 EDI 处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组的成员，这样才能访问 EDI 状态报告数据存储区。</span><span class="sxs-lookup"><span data-stu-id="7d140-107">The server must also be a member of the EDI Processing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group so that it has access to the EDI status report data store.</span></span>  
+  
+ <span data-ttu-id="7d140-108">将为状态报表 UI 中的参与方的交换输入 EDI 消息条目，如果**打开 reporting**中选择属性**常规属性**页**常规**选项卡中**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="7d140-108">EDI message entries will be entered for a party's interchanges in the status report UI if the **Turn ON reporting** property is selected in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="7d140-109">仅当，如果发送方或正在发送不确定的交换，将为这些交换中输入 EDI 消息条目**激活 EDI 报告**回退 X12 和 EDIFACT 协议中选择属性。</span><span class="sxs-lookup"><span data-stu-id="7d140-109">If the party sending or being sent interchanges is not determined, EDI message entries will be entered for those interchanges only if the **Activate EDI reporting** property is selected in the fallback agreement for both X12 and EDIFACT.</span></span> <span data-ttu-id="7d140-110">这适用于“EDI 交换和相关 ACK 状态”报告。</span><span class="sxs-lookup"><span data-stu-id="7d140-110">This applies to the EDI Interchange and Correlated ACK Status report.</span></span> <span data-ttu-id="7d140-111">仅当协议已确定时，才会启用批处理状态报表和**打开 reporting**中选择属性**常规属性**页**常规**选项卡中**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="7d140-111">The Batch Status report is enabled only if an agreement has been determined and the **Turn ON reporting** property is selected in **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span>  
+  
+ <span data-ttu-id="7d140-112">将跟踪数据库中存储的事务集，如果**用于报告的应用商店消息负载**中选择属性**常规属性**页**常规**选项卡中**协议属性**对话框或**存储事务的一组负载，可用于报告**回退协议属性中设置属性。</span><span class="sxs-lookup"><span data-stu-id="7d140-112">Transaction sets will be stored in the tracking database if the **Store message payload for reporting** property is selected in **General Properties** page of the **General** tab in the **Agreement Properties** dialog box or **Store transaction set/payload for reporting** property is set in the fallback agreement properties.</span></span> <span data-ttu-id="7d140-113">仅当选择了此属性时，才能使用“事务集详细信息”和“消息内容”状态报告。</span><span class="sxs-lookup"><span data-stu-id="7d140-113">The Transaction Set Details and Message Content status reports will only be available if this property is selected.</span></span>  
+  
+ <span data-ttu-id="7d140-114">将在状态报表 UI 中输入 AS2 消息条目，如果**打开 reporting**中选择属性**常规属性**页**常规**中的选项卡**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="7d140-114">AS2 message entries will be entered in the status report UI if the **Turn ON reporting** property is selected in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="7d140-115">若要将 AS2 消息或 Mdn 存储在不可否认性数据库中，你必须选择中的相应属性**发件人不可否认性**或**接收方不可否认性**单向的 AS2 协议页选项卡中**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="7d140-115">To store AS2 message or MDNs in the non-repudiation database, you must select the appropriate property in the **Sender Non-repudiation** or **Receiver non-repudiation** pages of the one-way AS2 agreement tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="7d140-116">这些属性将启用“AS2 消息和相关 MDN 状态”报告。</span><span class="sxs-lookup"><span data-stu-id="7d140-116">These properties enable the AS2 Message and Correlated MDN Status report.</span></span>  
+  
+ <span data-ttu-id="7d140-117">将可用的可靠消息传送状态报告如果**重新发送 AS2 消息如果未收到 MDN**上启用属性**发件人 MDN 设置**的单向AS2协议选项卡页**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="7d140-117">The Reliable Messaging Status report will be available if the **Resend AS2 message if MDN not received** property is enabled on **Sender MDN Settings** page of the one-way AS2 agreement tab of the **Agreement Properties** dialog box.</span></span>  
+  
+ <span data-ttu-id="7d140-118">有关启用状态报告的详细信息，请参阅[启用 EDI 和 AS2 状态报告](../core/enabling-edi-and-as2-status-reports.md)。</span><span class="sxs-lookup"><span data-stu-id="7d140-118">For more information about enabling status reporting, see [Enabling EDI and AS2 Status Reports](../core/enabling-edi-and-as2-status-reports.md).</span></span>  
+  
+## <a name="status-report-filters-and-display-columns"></a><span data-ttu-id="7d140-119">状态报告筛选器和显示列</span><span class="sxs-lookup"><span data-stu-id="7d140-119">Status Report Filters and Display Columns</span></span>  
+ <span data-ttu-id="7d140-120">使用 EDI 和 AS2 状态报告功能，可以自定义为状态报告保存的数据范围。</span><span class="sxs-lookup"><span data-stu-id="7d140-120">EDI and AS2 status reporting enables you to customize the range of the data that is saved for the status report.</span></span> <span data-ttu-id="7d140-121">因此在执行**组中心数据库**页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="7d140-121">You do so in the **Group Hub** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="7d140-122">显示出任何状态报告的状态报告窗格后，就可以选择要在报告中查看的数据范围。</span><span class="sxs-lookup"><span data-stu-id="7d140-122">Once you have displayed the status report pane for any of the status reports, you can select the range of data that you want to see in the report.</span></span> <span data-ttu-id="7d140-123">您可通过选择包括在状态报告查询表达式中的筛选器值来执行此操作。</span><span class="sxs-lookup"><span data-stu-id="7d140-123">You do so by selecting the filter values to include in the status report query expression.</span></span>  
+  
+ <span data-ttu-id="7d140-124">您还可以自定义状态报告中显示的数据类型。</span><span class="sxs-lookup"><span data-stu-id="7d140-124">You can also customize the type of data that is displayed in the status report.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="7d140-125">如果启用了状态报告，则所有状态都将保存在存储区中。</span><span class="sxs-lookup"><span data-stu-id="7d140-125">Whenever status reporting is enabled, all status will be saved in storage.</span></span> <span data-ttu-id="7d140-126">通过自定义查询表达式或状态列，可以定义要显示的保存数据。</span><span class="sxs-lookup"><span data-stu-id="7d140-126">By customizing the query expression or status columns, you are defining which saved data is displayed.</span></span>  
+  
+ <span data-ttu-id="7d140-127">有关详细信息，请参阅[配置 EDI 和 AS2 状态报表](../core/configuring-an-edi-and-as2-status-report.md)。</span><span class="sxs-lookup"><span data-stu-id="7d140-127">For more information, see [Configuring an EDI and AS2 Status Report](../core/configuring-an-edi-and-as2-status-report.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7d140-128">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7d140-128">See Also</span></span>  
+ <span data-ttu-id="7d140-129">[EDI 和 AS2 状态报告](../core/edi-and-as2-status-reporting.md) </span><span class="sxs-lookup"><span data-stu-id="7d140-129">[EDI and AS2 Status Reporting](../core/edi-and-as2-status-reporting.md) </span></span>  
+ <span data-ttu-id="7d140-130">[EDI 交换和关联的 ACK 状态报表](../core/edi-interchange-and-correlated-ack-status-report.md) </span><span class="sxs-lookup"><span data-stu-id="7d140-130">[EDI Interchange and Correlated ACK Status Report](../core/edi-interchange-and-correlated-ack-status-report.md) </span></span>  
+ <span data-ttu-id="7d140-131">[Batch 状态报表](../core/batch-status-report.md) </span><span class="sxs-lookup"><span data-stu-id="7d140-131">[Batch Status Report](../core/batch-status-report.md) </span></span>  
+ <span data-ttu-id="7d140-132">[交换聚合报表](../core/interchange-aggregation-report.md) </span><span class="sxs-lookup"><span data-stu-id="7d140-132">[Interchange Aggregation Report](../core/interchange-aggregation-report.md) </span></span>  
+ <span data-ttu-id="7d140-133">[事务集聚合报表](../core/transaction-set-aggregation-report.md) </span><span class="sxs-lookup"><span data-stu-id="7d140-133">[Transaction Set Aggregation Report](../core/transaction-set-aggregation-report.md) </span></span>  
+ [<span data-ttu-id="7d140-134">AS2 消息和相关的 MDN 状态报表</span><span class="sxs-lookup"><span data-stu-id="7d140-134">AS2 Message and Correlated MDN Status Report</span></span>](../core/as2-message-and-correlated-mdn-status-report.md)

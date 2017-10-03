@@ -1,0 +1,37 @@
+---
+title: "工具和功能的 BizTalk Server 和 BTARN |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- BTARN, tools
+- tools, BizTalk Server
+- BizTalk Server, tools
+- tools, BTARN
+ms.assetid: d0998b74-81ab-4dc8-8e15-f805beebbe34
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a3c7573da08443fa7e2c0c33be1ab3df6b4e8488
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="tools-and-features-of-biztalk-server-and-btarn"></a><span data-ttu-id="6256c-102">工具和功能的 BizTalk Server 和 BTARN</span><span class="sxs-lookup"><span data-stu-id="6256c-102">Tools and Features of BizTalk Server and BTARN</span></span>
+<span data-ttu-id="6256c-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 的用户可以访问 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server 中基于角色的功能和工具，以及针对高科技制造业定制的特定于 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的工具和功能。</span><span class="sxs-lookup"><span data-stu-id="6256c-103">Users of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] have access to the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server role-based features and tools, as well as [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]-specific tools and features customized to the high-technology manufacturing industry.</span></span> <span data-ttu-id="6256c-104">本节将对这些功能和工具进行描述。</span><span class="sxs-lookup"><span data-stu-id="6256c-104">This section describes those features and tools.</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="6256c-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="6256c-105">In This Section</span></span>  
+  
+-   [<span data-ttu-id="6256c-106">基于角色的产品</span><span class="sxs-lookup"><span data-stu-id="6256c-106">A Role-Based Product</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)  
+  
+-   [<span data-ttu-id="6256c-107">BizTalk 设计时工具</span><span class="sxs-lookup"><span data-stu-id="6256c-107">BizTalk Design-Time Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)  
+  
+-   [<span data-ttu-id="6256c-108">管理和运行时工具</span><span class="sxs-lookup"><span data-stu-id="6256c-108">Administration and Run-Time Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/administration-and-run-time-tools.md)  
+  
+-   [<span data-ttu-id="6256c-109">分析工具</span><span class="sxs-lookup"><span data-stu-id="6256c-109">Analysis Tools</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/analysis-tools1.md)

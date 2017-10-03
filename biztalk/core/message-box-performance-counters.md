@@ -1,0 +1,69 @@
+---
+title: "消息框性能计数器 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 5eafbd7b-f5fc-4942-a975-18154e6a7ee2
+caps.latest.revision: "19"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 0b51b98d1d9172b40b36cfd496e8bb9c511e5c19
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="message-box-performance-counters"></a><span data-ttu-id="50fa0-102">消息框性能计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-102">Message Box Performance Counters</span></span>
+<span data-ttu-id="50fa0-103">使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。</span><span class="sxs-lookup"><span data-stu-id="50fa0-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="50fa0-104">性能计数器能够帮助您标识和解决有关服务器性能的问题。</span><span class="sxs-lookup"><span data-stu-id="50fa0-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  
+  
+ <span data-ttu-id="50fa0-105">以下性能计数器进行访问每个主机实例下**BizTalk:Message Box: General 计数器**和**BizTalk:Message 框： 主机计数器**性能对象类别:</span><span class="sxs-lookup"><span data-stu-id="50fa0-105">The following performance counters are accessible for each host instance under the **BizTalk:Message Box:General Counters** and the **BizTalk:Message Box:Host Counters** performance object categories:</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="50fa0-106">若要启用引用 SQL 代理作业的计数器，必须在用于运行 BizTalk 主机/NT 服务的服务帐户中包含角色 SQLAgentUserRole。</span><span class="sxs-lookup"><span data-stu-id="50fa0-106">To enable counters that refer to the SQL Agent job, you must include the role SQLAgentUserRole to the service account used to run the BizTalk host/NT Service.</span></span> <span data-ttu-id="50fa0-107">或者，通过使用其他角色或授予显式权限，来授予读取 MSDB 数据库的权限。</span><span class="sxs-lookup"><span data-stu-id="50fa0-107">Alternatively, you can grant permission using other roles or by granting explicit permission to read the MSDB database.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="50fa0-108">如果已向你的 BizTalk Server 组来添加一个新的 MessageBox，下面列出的计数器将不能为新的 MessageBox 之前配置**缓存刷新**BizTalk Server 组的间隔已过去 （默认值为 60秒为单位）。</span><span class="sxs-lookup"><span data-stu-id="50fa0-108">If you have added a new MessageBox to your BizTalk Server group, the counters listed below will not be available for the new MessageBox until the configured **Cache Refresh** interval for the BizTalk Server group has elapsed (default of 60 seconds).</span></span>  
+  
+|<span data-ttu-id="50fa0-109">类别</span><span class="sxs-lookup"><span data-stu-id="50fa0-109">Category</span></span>|<span data-ttu-id="50fa0-110">计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-110">Counter</span></span>|<span data-ttu-id="50fa0-111">Description</span><span class="sxs-lookup"><span data-stu-id="50fa0-111">Description</span></span>|  
+|--------------|-------------|-----------------|  
+|<span data-ttu-id="50fa0-112">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-112">General Counters</span></span>|<span data-ttu-id="50fa0-113">Instances-Total Number</span><span class="sxs-lookup"><span data-stu-id="50fa0-113">Instances-Total Number</span></span>|<span data-ttu-id="50fa0-114">跟踪每个主机的所有实例总数，这些实例存在于特定 MessageBox 内。</span><span class="sxs-lookup"><span data-stu-id="50fa0-114">Tracks the sum of all the instances of each host, which exist within a particular Message Box.</span></span>|  
+|<span data-ttu-id="50fa0-115">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-115">General Counters</span></span>|<span data-ttu-id="50fa0-116">MsgBox Dead Processes Cleanup (Purge Jobs)</span><span class="sxs-lookup"><span data-stu-id="50fa0-116">MsgBox Dead Processes Cleanup (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-117">最近运行 SQL 代理作业的时间（以秒计），该作业用于释放与死 BizTalk 进程关联的数据库行。</span><span class="sxs-lookup"><span data-stu-id="50fa0-117">Time in seconds for most recent run of SQL agent job which releases database rows associated with dead BizTalk processes.</span></span>|  
+|<span data-ttu-id="50fa0-118">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-118">General Counters</span></span>|<span data-ttu-id="50fa0-119">MsgBox Msg Cleanup (Purge Jobs)</span><span class="sxs-lookup"><span data-stu-id="50fa0-119">MsgBox Msg Cleanup (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-120">最近运行 SQL 代理作业的时间（以秒计），该作业用于清除与已删除消息关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="50fa0-120">Time in seconds for most recent run of SQL agent job which cleans up message box tables associated with removed messages.</span></span>|  
+|<span data-ttu-id="50fa0-121">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-121">General Counters</span></span>|<span data-ttu-id="50fa0-122">MsgBox Parts Cleanup (Purge Jobs)</span><span class="sxs-lookup"><span data-stu-id="50fa0-122">MsgBox Parts Cleanup (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-123">最近运行 SQL 代理作业的时间（以秒计），该作业用于清除与已删除消息部分关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="50fa0-123">Time in seconds for most recent run of SQL agent job which clean up message box tables associated with removed message parts.</span></span>|  
+|<span data-ttu-id="50fa0-124">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-124">General Counters</span></span>|<span data-ttu-id="50fa0-125">MsgBox 清除订阅作业 （清除作业）</span><span class="sxs-lookup"><span data-stu-id="50fa0-125">MsgBox Purge Subscriptions Job (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-126">以秒为单位的清除订阅不再使用的 SQL 代理作业的最新运行的时间。</span><span class="sxs-lookup"><span data-stu-id="50fa0-126">Time in seconds for most recent run of SQL agent job which purges subscriptions which are no longer in use.</span></span>|  
+|<span data-ttu-id="50fa0-127">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-127">General Counters</span></span>|<span data-ttu-id="50fa0-128">假脱机大小</span><span class="sxs-lookup"><span data-stu-id="50fa0-128">Spool Size</span></span>|<span data-ttu-id="50fa0-129">在特定服务器上的特定消息框上跟踪假脱机的大小。</span><span class="sxs-lookup"><span data-stu-id="50fa0-129">Tracks the size of the spool on a particular message box on a particular server.</span></span>|  
+|<span data-ttu-id="50fa0-130">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-130">General Counters</span></span>|<span data-ttu-id="50fa0-131">跟踪消息数副本 （清除作业）</span><span class="sxs-lookup"><span data-stu-id="50fa0-131">Tracked Msgs Copy (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-132">时间 （秒） 的 SQL 代理作业的复制所跟踪的消息正文的最新运行跟踪的消息。</span><span class="sxs-lookup"><span data-stu-id="50fa0-132">Time in seconds for most recent run of SQL agent job which copies tracked message bodies for tracked messages.</span></span>|  
+|<span data-ttu-id="50fa0-133">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-133">General Counters</span></span>|<span data-ttu-id="50fa0-134">跟踪数据的大小</span><span class="sxs-lookup"><span data-stu-id="50fa0-134">Tracking data size</span></span>|<span data-ttu-id="50fa0-135">跟踪数据的大小表的特定消息框上的特定服务器的跟踪。</span><span class="sxs-lookup"><span data-stu-id="50fa0-135">Tracks the size of the tracking data table on a particular message box on a particular server.</span></span>|  
+|<span data-ttu-id="50fa0-136">General Counters</span><span class="sxs-lookup"><span data-stu-id="50fa0-136">General Counters</span></span>|<span data-ttu-id="50fa0-137">跟踪假脱机清理 （清除作业）</span><span class="sxs-lookup"><span data-stu-id="50fa0-137">Tracking Spool Cleanup (Purge Jobs)</span></span>|<span data-ttu-id="50fa0-138">时间 （秒） 清除非活动状态的 SQL 代理作业的最新运行跟踪假脱机表。</span><span class="sxs-lookup"><span data-stu-id="50fa0-138">Time in seconds for the most recent run of the SQL agent job which purges the inactive tracking spool tables.</span></span>|  
+|<span data-ttu-id="50fa0-139">主机计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-139">Host Counters</span></span>|<span data-ttu-id="50fa0-140">主机的实例状态消息 Refs 的队列长度</span><span class="sxs-lookup"><span data-stu-id="50fa0-140">Host Queue - Instance State Msg Refs - Length</span></span>|<span data-ttu-id="50fa0-141">为该特定主机的跟踪的消息的实例状态队列中的引用的数目。</span><span class="sxs-lookup"><span data-stu-id="50fa0-141">Tracks the number of message references in the instance state queue for this particular host.</span></span>|  
+|<span data-ttu-id="50fa0-142">主机计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-142">Host Counters</span></span>|<span data-ttu-id="50fa0-143">Host Queue - Length</span><span class="sxs-lookup"><span data-stu-id="50fa0-143">Host Queue - Length</span></span>|<span data-ttu-id="50fa0-144">跟踪特定主机队列中的邮件总数。</span><span class="sxs-lookup"><span data-stu-id="50fa0-144">Tracks the total number of messages in the particular host queue.</span></span>|  
+|<span data-ttu-id="50fa0-145">主机计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-145">Host Counters</span></span>|<span data-ttu-id="50fa0-146">主机队列的实例数</span><span class="sxs-lookup"><span data-stu-id="50fa0-146">Host Queue - Number of Instances</span></span>|<span data-ttu-id="50fa0-147">跟踪此特定主机的实例数。</span><span class="sxs-lookup"><span data-stu-id="50fa0-147">Tracks the number of instances of this particular host.</span></span>|  
+|<span data-ttu-id="50fa0-148">主机计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-148">Host Counters</span></span>|<span data-ttu-id="50fa0-149">主机-挂起的消息的队列长度</span><span class="sxs-lookup"><span data-stu-id="50fa0-149">Host Queue - Suspended Msgs - Length</span></span>|<span data-ttu-id="50fa0-150">跟踪特定主机的挂起的消息总数。</span><span class="sxs-lookup"><span data-stu-id="50fa0-150">Tracks the total number of suspended messages for the particular host.</span></span>|  
+  
+## <a name="to-access-performance-counters"></a><span data-ttu-id="50fa0-151">访问性能计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-151">To access performance counters</span></span>  
+ <span data-ttu-id="50fa0-152">依照下述步骤访问性能计数器。</span><span class="sxs-lookup"><span data-stu-id="50fa0-152">Use the following steps to access the performance counters.</span></span>  
+  
+#### <a name="if-you-are-using-windows-2008"></a><span data-ttu-id="50fa0-153">如果您使用的是 Windows 2008</span><span class="sxs-lookup"><span data-stu-id="50fa0-153">If you are using Windows 2008</span></span>  
+  
+1.  <span data-ttu-id="50fa0-154">单击**启动**，指向**管理工具**，然后单击**性能监视器**。</span><span class="sxs-lookup"><span data-stu-id="50fa0-154">Click **Start**, point to **Administrative Tools**, and then click **Performance Monitor**.</span></span>  
+  
+2.  <span data-ttu-id="50fa0-155">在**性能监视器**对话框框中，展开**监视工具**，选择**性能监视器**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="50fa0-155">In the **Performance Monitor** dialog box, expand **Monitoring Tools**, select **Performance Monitor**, and then click **Add**.</span></span>  
+  
+3.  <span data-ttu-id="50fa0-156">在**添加计数器**对话框中，从**可用计数器**列表中，选择**BizTalk:Message Box: General 计数器**或**BizTalk:Message 框： 承载计数器**。</span><span class="sxs-lookup"><span data-stu-id="50fa0-156">In the **Add Counters** dialog box, from the **Available Counters** list, select either **BizTalk:Message Box:General Counters** or  **BizTalk:Message box:Host Counters**.</span></span> <span data-ttu-id="50fa0-157">展开所选性能计数器对象，然后选择要监视的计数器</span><span class="sxs-lookup"><span data-stu-id="50fa0-157">Expand the selected performance counter object and select the counters to be monitored</span></span>  
+  
+4.  <span data-ttu-id="50fa0-158">在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。</span><span class="sxs-lookup"><span data-stu-id="50fa0-158">In the **Instances of Selected object** list, select the specific instances to be monitored for the selected counters and then click **Add**.</span></span>  <span data-ttu-id="50fa0-159">若要选择的所有可用的计数器实例，选择\<**所有实例**>。</span><span class="sxs-lookup"><span data-stu-id="50fa0-159">To select all available counter instances, select \<**All instances**>.</span></span>  
+  
+5.  <span data-ttu-id="50fa0-160">添加计数器后, 单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="50fa0-160">After adding the counters, click **OK**.</span></span>  
+  
+     <span data-ttu-id="50fa0-161">所选的性能计数器显示在**性能监视器**屏幕。</span><span class="sxs-lookup"><span data-stu-id="50fa0-161">The selected performance counters appear on the **Performance Monitor** screen.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="50fa0-162">另请参阅</span><span class="sxs-lookup"><span data-stu-id="50fa0-162">See Also</span></span>  
+ <span data-ttu-id="50fa0-163">[性能提示和技巧](../core/performance-tips-and-tricks.md) </span><span class="sxs-lookup"><span data-stu-id="50fa0-163">[Performance Tips and Tricks](../core/performance-tips-and-tricks.md) </span></span>  
+ <span data-ttu-id="50fa0-164">[测量的最大可持续引擎吞吐量](../core/measuring-maximum-sustainable-engine-throughput.md) </span><span class="sxs-lookup"><span data-stu-id="50fa0-164">[Measuring Maximum Sustainable Engine Throughput](../core/measuring-maximum-sustainable-engine-throughput.md) </span></span>  
+ <span data-ttu-id="50fa0-165">[测量的最大可持续跟踪吞吐量](../core/measuring-maximum-sustainable-tracking-throughput.md) </span><span class="sxs-lookup"><span data-stu-id="50fa0-165">[Measuring Maximum Sustainable Tracking Throughput](../core/measuring-maximum-sustainable-tracking-throughput.md) </span></span>  
+ [<span data-ttu-id="50fa0-166">通过主机限制的优化资源使用情况</span><span class="sxs-lookup"><span data-stu-id="50fa0-166">Optimizing Resource Usage Through Host Throttling</span></span>](../core/optimizing-resource-usage-through-host-throttling.md)
