@@ -1,0 +1,1 @@
+BizTalk FileAct 和交互适配器

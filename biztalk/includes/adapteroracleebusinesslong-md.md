@@ -1,0 +1,1 @@
+用于 Oracle E-Business Suite 的 Microsoft BizTalk 适配器

@@ -1,0 +1,1 @@
+用于 mySAP Business Suite 的 Microsoft BizTalk 适配器
