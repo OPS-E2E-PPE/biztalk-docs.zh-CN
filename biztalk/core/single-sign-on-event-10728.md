@@ -1,0 +1,44 @@
+---
+title: "单一登录： 事件 10728 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: f579189c-c9a5-4d2c-a3d5-f0ba03c5a3ef
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5052d03713808754abf04e8c2ba1590800e6cf9d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="single-sign-on-event-10728"></a><span data-ttu-id="27818-102">单一登录： 事件 10728</span><span class="sxs-lookup"><span data-stu-id="27818-102">Single Sign-On: Event 10728</span></span>
+## <a name="details"></a><span data-ttu-id="27818-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="27818-103">Details</span></span>  
+  
+|||  
+|-|-|  
+|<span data-ttu-id="27818-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="27818-104">Product Name</span></span>|<span data-ttu-id="27818-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="27818-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="27818-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="27818-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="27818-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="27818-107">Event ID</span></span>|<span data-ttu-id="27818-108">10728</span><span class="sxs-lookup"><span data-stu-id="27818-108">10728</span></span>|  
+|<span data-ttu-id="27818-109">事件源</span><span class="sxs-lookup"><span data-stu-id="27818-109">Event Source</span></span>|<span data-ttu-id="27818-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="27818-110">ENTSSO</span></span>|  
+|<span data-ttu-id="27818-111">组件</span><span class="sxs-lookup"><span data-stu-id="27818-111">Component</span></span>|<span data-ttu-id="27818-112">N\A</span><span class="sxs-lookup"><span data-stu-id="27818-112">N\A</span></span>|  
+|<span data-ttu-id="27818-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="27818-113">Symbolic Name</span></span>|<span data-ttu-id="27818-114">SSO_ERROR_VERSION</span><span class="sxs-lookup"><span data-stu-id="27818-114">SSO_ERROR_VERSION</span></span>|  
+|<span data-ttu-id="27818-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="27818-115">Message Text</span></span>|<span data-ttu-id="27818-116">此版本的 SSO 服务器与 SSO 数据库不兼容。</span><span class="sxs-lookup"><span data-stu-id="27818-116">This version of the SSO server is not compatible with the SSO database.</span></span> <span data-ttu-id="27818-117">请升级您的主密钥服务器。%r</span><span class="sxs-lookup"><span data-stu-id="27818-117">Please upgrade your master secret server.%r</span></span><br /><br /> <span data-ttu-id="27818-118">SQL Server 名称: %1 %r</span><span class="sxs-lookup"><span data-stu-id="27818-118">SQL Server Name: %1%r</span></span><br /><br /> <span data-ttu-id="27818-119">SSO 数据库名称: %2 %r</span><span class="sxs-lookup"><span data-stu-id="27818-119">SSO Database Name: %2%r</span></span><br /><br /> <span data-ttu-id="27818-120">SSO 数据库版本: %3 %r</span><span class="sxs-lookup"><span data-stu-id="27818-120">SSO Database Version: %3%r</span></span><br /><br /> <span data-ttu-id="27818-121">所需版本： %4</span><span class="sxs-lookup"><span data-stu-id="27818-121">Required Version: %4</span></span>|  
+  
+## <a name="explanation"></a><span data-ttu-id="27818-122">解释</span><span class="sxs-lookup"><span data-stu-id="27818-122">Explanation</span></span>  
+ <span data-ttu-id="27818-123">此错误事件表示，SSO 服务器版本比（最初创建的版本）SSO 数据库更新。</span><span class="sxs-lookup"><span data-stu-id="27818-123">This Error event indicates that the SSO server version is more recent than (the version that originally created) the SSO database.</span></span>  
+  
+## <a name="user-action"></a><span data-ttu-id="27818-124">用户操作</span><span class="sxs-lookup"><span data-stu-id="27818-124">User Action</span></span>  
+ <span data-ttu-id="27818-125">若要解决此错误，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="27818-125">To resolve this error, do the following:</span></span>  
+  
+-   <span data-ttu-id="27818-126">升级 SSO 主密钥服务器以匹配此 SSO 服务器的当前版本。</span><span class="sxs-lookup"><span data-stu-id="27818-126">Upgrade the SSO master secret server to match the current version of this SSO server.</span></span> <span data-ttu-id="27818-127">此操作会将 SSO 数据库升级到当前版本。</span><span class="sxs-lookup"><span data-stu-id="27818-127">This will upgrade the SSO database to the current version.</span></span>  
+  
+ <span data-ttu-id="27818-128">有关详细信息，请参阅下列资源：</span><span class="sxs-lookup"><span data-stu-id="27818-128">For more information, see the following resources:</span></span>  
+  
+-   [<span data-ttu-id="27818-129">管理主密钥</span><span class="sxs-lookup"><span data-stu-id="27818-129">Managing the Master Secret</span></span>](../core/managing-the-master-secret.md)
