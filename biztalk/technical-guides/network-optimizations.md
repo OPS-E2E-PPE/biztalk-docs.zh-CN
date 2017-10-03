@@ -1,0 +1,184 @@
+---
+title: "网络优化 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 9ff0392f-37ae-4ca6-8cc6-d53065de64c5
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: bbf4b0e8df9d8baa81a91576dc37fd89413714f9
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="network-optimizations"></a><span data-ttu-id="a29f5-102">网络优化</span><span class="sxs-lookup"><span data-stu-id="a29f5-102">Network Optimizations</span></span>
+<span data-ttu-id="a29f5-103">在 BizTalk Server 环境中的 BizTalk Server 计算机都独立于 SQL Server 计算机，BizTalk 服务器处理的每个消息无需通过网络通信。</span><span class="sxs-lookup"><span data-stu-id="a29f5-103">In a BizTalk Server environment where the BizTalk Server computer(s) are separate from the SQL Server computer(s), each and every message processed by BizTalk Server requires communication over the network.</span></span> <span data-ttu-id="a29f5-104">这种通信包括相当大的 BizTalk Server 计算机和 BizTalk 消息框数据库、 BizTalk 管理数据库、 BAM 数据库和其他数据库之间的流量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-104">This communication includes considerable traffic between the BizTalk Server computers and the BizTalk Message Box database(s), the BizTalk Management database(s), the BAM databases, and other databases.</span></span> <span data-ttu-id="a29f5-105">在高负载情况下，此通信可能会导致大量网络流量，尤其是在网络设置未经过优化，没有足够的网络接口卡已安装，或足够的网络带宽可能成为瓶颈，可用。</span><span class="sxs-lookup"><span data-stu-id="a29f5-105">In high-load scenarios, this communication can result in considerable network traffic and can become a bottleneck, especially when network settings have not been optimized, not enough network interface cards are installed, or insufficient network bandwidth is available.</span></span>  
+  
+ <span data-ttu-id="a29f5-106">本主题提供用于提高在同一个 HYPER-V 主机计算机上运行的 HYPER-V 虚拟机之间的网络性能的步骤，并提供了提高网络性能的一些常规建议。</span><span class="sxs-lookup"><span data-stu-id="a29f5-106">This topic provides steps for improving networking performance between Hyper-V virtual machines running on the same Hyper-V host computer and provides some general recommendations for improving network performance.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="a29f5-107">最常见的指示器网络 IO 是瓶颈是计数器"SQL Server： 等待 Statistics\Network IO 等待。"</span><span class="sxs-lookup"><span data-stu-id="a29f5-107">The most common indicator that Network IO is a bottleneck is the counter “SQL Server:Wait Statistics\Network IO waits.”</span></span> <span data-ttu-id="a29f5-108">时的值**平均等待时间**此计数器中为大于零上的一个或多个 SQL Server 计算机，则网络 IO 是瓶颈。</span><span class="sxs-lookup"><span data-stu-id="a29f5-108">When the value for **Avg Wait Time** in this counter is greater than zero on one or more of your SQL Server computers, then Network IO is a bottleneck.</span></span>  
+  
+## <a name="improving-network-performance-of-biztalk-server-on-hyper-v"></a><span data-ttu-id="a29f5-109">HYPER-V 上提高网络性能的 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="a29f5-109">Improving Network Performance of BizTalk Server on Hyper-V</span></span>  
+  
+### <a name="configure-hyper-v-virtual-machines-that-are-running-on-the-same-hyper-v-host-computer-to-use-a-private-virtual-network"></a><span data-ttu-id="a29f5-110">配置在同一个 HYPER-V 主机计算机用于专用虚拟网络运行的 HYPER-V 虚拟机</span><span class="sxs-lookup"><span data-stu-id="a29f5-110">Configure Hyper-V Virtual Machines that are Running on the same Hyper-V host computer to use a Private Virtual Network</span></span>  
+ <span data-ttu-id="a29f5-111">若要提高运行的 HYPER-V 虚拟机之间的网络性能同一个 HYPER-V 主机计算机，创建私有虚拟网络和路由网络流量通过私有虚拟网络的虚拟机之间。</span><span class="sxs-lookup"><span data-stu-id="a29f5-111">To improve networking performance between Hyper-V virtual machines that are running on the same Hyper-V host computer, create a private virtual network and route network traffic between virtual machines through the private virtual network.</span></span>  
+  
+##### <a name="create-a-private-virtual-network"></a><span data-ttu-id="a29f5-112">创建专用的虚拟网络</span><span class="sxs-lookup"><span data-stu-id="a29f5-112">Create a Private Virtual Network</span></span>  
+  
+1.  <span data-ttu-id="a29f5-113">单击**启动**，单击**所有程序**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-113">Click **Start**, click **All Programs**.</span></span> <span data-ttu-id="a29f5-114">单击**管理工具**，然后单击**Hyper-v 管理器**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-114">Click **Administrative Tools**, and then click **Hyper-V Manager**.</span></span>  
+  
+2.  <span data-ttu-id="a29f5-115">在 HYPER-V 管理器的左侧窗格中，右键单击**Hyper-v 管理器**，然后单击**连接到服务器**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-115">In the left-hand pane of the Hyper-V Manager, right-click **Hyper-V Manager**, and then click **Connect to Server**.</span></span>  
+  
+3.  <span data-ttu-id="a29f5-116">在**选择计算机**对话框中，输入 HYPER-V 主机计算机的名称，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-116">In the **Select Computer** dialog box, enter the name of the Hyper-V host computer, and then click **OK**.</span></span>  
+  
+4.  <span data-ttu-id="a29f5-117">在 HYPER-V 管理器的左侧窗格中，右键单击 HYPER-V 主机，并依次**虚拟网络管理器**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-117">In the left-hand pane of the Hyper-V Manager, right-click the Hyper-V host, and then click **Virtual Network Manager**.</span></span>  
+  
+5.  <span data-ttu-id="a29f5-118">虚拟网络管理器中，在**你想要创建哪种类型的虚拟网络？**，单击**私有**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-118">In the Virtual Network Manager, under **What type of virtual network do you want to create?**, click **Private**, and then click **Add**.</span></span>  
+  
+6.  <span data-ttu-id="a29f5-119">输入新的虚拟网络的名称，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-119">Enter a name for the new virtual network, and then click **OK**.</span></span> <span data-ttu-id="a29f5-120">虚拟网络现可供此 HYPER-V 主机运行每个 HYPER-V 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="a29f5-120">The virtual network is now available to each Hyper-V virtual machine that is run on this Hyper-V host.</span></span>  
+  
+##### <a name="add-the-private-virtual-network-to-hyper-v-virtual-machines-running-on-the-hyper-v-host"></a><span data-ttu-id="a29f5-121">添加到 HYPER-V 虚拟机在 HYPER-V 主机上运行的专用虚拟网络</span><span class="sxs-lookup"><span data-stu-id="a29f5-121">Add the Private Virtual Network to Hyper-V Virtual Machines running on the Hyper-V Host</span></span>  
+  
+1.  <span data-ttu-id="a29f5-122">单击**启动**，单击**所有程序**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-122">Click **Start**, click **All Programs**.</span></span> <span data-ttu-id="a29f5-123">单击**管理工具**，然后单击**Hyper-v 管理器**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-123">Click **Administrative Tools**, and then click **Hyper-V Manager**.</span></span>  
+  
+2.  <span data-ttu-id="a29f5-124">在 HYPER-V 管理器的左侧窗格中，右键单击**Hyper-v 管理器**，然后单击**连接到服务器**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-124">In the left-hand pane of the Hyper-V Manager, right-click **Hyper-V Manager**, and then click **Connect to Server**.</span></span>  
+  
+3.  <span data-ttu-id="a29f5-125">在**选择计算机**对话框中，输入 HYPER-V 主机计算机的名称，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-125">In the **Select Computer** dialog box, enter the name of the Hyper-V host computer, and then click **OK**.</span></span>  
+  
+4.  <span data-ttu-id="a29f5-126">关闭任何正在运行的虚拟机，要通过虚拟机中，右键单击，然后单击添加专用虚拟网络**关闭**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-126">Shut down any running virtual machines for which you would like to add the private virtual network by right-clicking on the virtual machine, and then clicking **Shut down**.</span></span>  
+  
+5.  <span data-ttu-id="a29f5-127">之后关闭虚拟机，右键单击虚拟机，然后依次**设置**若要更改虚拟机的设置。</span><span class="sxs-lookup"><span data-stu-id="a29f5-127">After shutting down the virtual machines, right-click a virtual machine, and then click **Settings** to change the settings for a virtual machine.</span></span>  
+  
+6.  <span data-ttu-id="a29f5-128">在**< machine_name > 设置**对话框中，在**添加硬件**，单击以选择**网络适配器**，然后单击**添加**.</span><span class="sxs-lookup"><span data-stu-id="a29f5-128">In the **Settings for <machine_name>** dialog box, under **Add Hardware**, click to select **Network Adapter**, and then click **Add**.</span></span>  
+  
+7.  <span data-ttu-id="a29f5-129">上**网络适配器**配置页上，在**网络：**，选择你以前创建的专用虚拟网络，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-129">On the **Network Adapter** configuration page, under **Network:**, select the private virtual network that you created earlier, and then click **OK**.</span></span> <span data-ttu-id="a29f5-130">你现在已专用虚拟网络提供到 HYPER-V 虚拟机将可访问下次启动虚拟机。</span><span class="sxs-lookup"><span data-stu-id="a29f5-130">You have now made the private virtual network available to the Hyper-V virtual machine which will be accessible the next time that the virtual machine is started.</span></span>  
+  
+8.  <span data-ttu-id="a29f5-131">为你想要通过专用虚拟网络的网络流量路由每个虚拟机重复上述步骤。</span><span class="sxs-lookup"><span data-stu-id="a29f5-131">Repeat the steps above for each virtual machine for which you want to route network traffic through the private virtual network.</span></span>  
+  
+9. <span data-ttu-id="a29f5-132">启动已添加到专用虚拟网络的虚拟机。</span><span class="sxs-lookup"><span data-stu-id="a29f5-132">Start the virtual machines that you have added the private virtual network to.</span></span> <span data-ttu-id="a29f5-133">右键单击每个虚拟机，然后单击**启动**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-133">Right click each virtual machine and click **Start**.</span></span>  
+  
+##### <a name="configure-each-virtual-machine-to-use-the-private-virtual-network"></a><span data-ttu-id="a29f5-134">配置每个虚拟机使用专用虚拟网络</span><span class="sxs-lookup"><span data-stu-id="a29f5-134">Configure each Virtual Machine to use the Private Virtual Network</span></span>  
+  
+1.  <span data-ttu-id="a29f5-135">启动每个虚拟机后，是可以为网络连接到虚拟机可以访问的专用虚拟网络。</span><span class="sxs-lookup"><span data-stu-id="a29f5-135">Once each virtual machine has been started, the private virtual network is accessible to the virtual machine as a network connection.</span></span> <span data-ttu-id="a29f5-136">在使用 TCP/IPv4，每个虚拟机上配置的网络连接，并指定 TCP/IPv4 协议的设置。</span><span class="sxs-lookup"><span data-stu-id="a29f5-136">Configure the network connection on each virtual machine to use TCP/IPv4, and specify settings for the TCP/IPv4 protocol.</span></span>  
+  
+    1.  <span data-ttu-id="a29f5-137">访问网络连接属性页中，选择**Internet 协议版本 4(TCP/IPv4)**，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-137">Access the network connection properties page, select **Internet Protocol Version 4(TCP/IPv4)**, and then click **Properties**.</span></span>  
+  
+    2.  <span data-ttu-id="a29f5-138">单击此单选按钮旁边**使用下面的 IP 地址**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-138">Click the radio button next to **Use the following IP address**.</span></span>  
+  
+2.  <span data-ttu-id="a29f5-139">输入一个值**IP 地址**的专用 IP 范围中的字段在地址中标识"RFC 1918 地址分配的专用 IP 地址" [http://go.microsoft.com/fwlink/?LinkID=31904](http://go.microsoft.com/fwlink/?LinkID=31904)。</span><span class="sxs-lookup"><span data-stu-id="a29f5-139">Enter a value for the **IP address** field from the range of private IP addresses identified in “RFC 1918, Address Allocation for Private IP Addresses” at [http://go.microsoft.com/fwlink/?LinkID=31904](http://go.microsoft.com/fwlink/?LinkID=31904).</span></span>  
+  
+3.  <span data-ttu-id="a29f5-140">记下指定; 的 IP 地址你将需要将此值与更高版本的主机文件条目中的此计算机的 NetBIOS 名称相关联。</span><span class="sxs-lookup"><span data-stu-id="a29f5-140">Make a note of the IP address that you specified; you will need to associate this value with the NetBIOS name of this computer in a HOSTS file entry later.</span></span>  
+  
+4.  <span data-ttu-id="a29f5-141">输入适当的值**子网掩码**字段。</span><span class="sxs-lookup"><span data-stu-id="a29f5-141">Enter an appropriate value for the **Subnet mask** field.</span></span>  
+  
+    > [!NOTE]  
+    >  <span data-ttu-id="a29f5-142">Windows 应填充**子网掩码**具有适当的值字段根据输入到的值**IP 地址**字段。</span><span class="sxs-lookup"><span data-stu-id="a29f5-142">Windows should populate the **Subnet mask** field with an appropriate value based upon the value that you entered into the **IP address** field.</span></span>  
+  
+5.  <span data-ttu-id="a29f5-143">保留**默认网关**字段保留为空，单击**确定**，然后单击**关闭**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-143">Leave the **Default gateway** field blank, click **OK**, and then click **Close**.</span></span>  
+  
+6.  <span data-ttu-id="a29f5-144">在配置每个虚拟机后使用唯一的专用 IP 地址，使用的 IP 地址和其他运行的虚拟机在 HYPER-V 主机计算机上的 NetBIOS 名称中更新每个虚拟机上的 HOSTS 文件。</span><span class="sxs-lookup"><span data-stu-id="a29f5-144">After configuring each virtual machine with a unique private IP address, update the HOSTS file on each virtual machine with the IP address and NetBIOS name of the other virtual machines running on the Hyper-V host computer.</span></span> <span data-ttu-id="a29f5-145">更新的主机文件应保存到的 %systemroot%\drivers\etc\ 文件夹中，每个虚拟机上。</span><span class="sxs-lookup"><span data-stu-id="a29f5-145">The updated HOSTS file should be saved to the %systemroot%\drivers\etc\ folder on each virtual machine.</span></span>  
+  
+    > [!NOTE]  
+    >  <span data-ttu-id="a29f5-146">默认情况下 Windows 检查本地的主机文件，首先来通过与其他虚拟机，唯一的专用 IP 地址更新每个虚拟机上的 HOSTS 文件解析 NetBIOS 名称，因为在这些计算机之间的网络流量，现在将通过路由专用的虚拟网络。</span><span class="sxs-lookup"><span data-stu-id="a29f5-146">Because by default Windows checks the local HOSTS file first to resolve NetBIOS names, by updating the HOSTS file on each virtual machine with the unique private IP addresses of the other virtual machines, network traffic between these machine will now be routed over the private virtual network.</span></span>  
+  
+### <a name="disable-tcp-offloading-for-the-virtual-machine-network-cards"></a><span data-ttu-id="a29f5-147">禁用 TCP 卸载虚拟机网卡</span><span class="sxs-lookup"><span data-stu-id="a29f5-147">Disable TCP Offloading for the Virtual Machine Network Cards</span></span>  
+ <span data-ttu-id="a29f5-148">在 MSDN 主题"使用用于启用和禁用任务 Offloading (NDIS 5.1) 的注册表值"中所述编辑注册表[http://go.microsoft.com/fwlink/?LinkId=147619](http://go.microsoft.com/fwlink/?LinkId=147619)禁用 TCP 卸载用于每个虚拟机上的网络卡。</span><span class="sxs-lookup"><span data-stu-id="a29f5-148">Edit the registry as described in the MSDN topic “Using Registry Values to Enable and Disable Task Offloading (NDIS 5.1)” at [http://go.microsoft.com/fwlink/?LinkId=147619](http://go.microsoft.com/fwlink/?LinkId=147619) to disable TCP offloading for the network cards on each virtual machine.</span></span>  
+  
+> [!IMPORTANT]  
+>  <span data-ttu-id="a29f5-149">对注册表编辑器的不当使用可能会引起问题，而必须重新安装操作系统。</span><span class="sxs-lookup"><span data-stu-id="a29f5-149">Incorrect use of Registry Editor may cause problems requiring you to reinstall your operating system.</span></span> <span data-ttu-id="a29f5-150">请慎用注册表编辑器，风险自负。</span><span class="sxs-lookup"><span data-stu-id="a29f5-150">Use Registry Editor at your own risk.</span></span> <span data-ttu-id="a29f5-151">有关如何备份、 还原和修改注册表的详细信息，请参阅 Microsoft 知识库文章"Microsoft Windows 注册表说明"在[http://go.microsoft.com/fwlink/?LinkId=62729](http://go.microsoft.com/fwlink/?LinkId=62729)。</span><span class="sxs-lookup"><span data-stu-id="a29f5-151">For more information about how to back up, restore, and modify the registry, see the Microsoft Knowledge Base article "Description of the Microsoft Windows registry" at [http://go.microsoft.com/fwlink/?LinkId=62729](http://go.microsoft.com/fwlink/?LinkId=62729).</span></span>  
+  
+## <a name="general-guidelines-for-improving-network-performance"></a><span data-ttu-id="a29f5-152">提高网络性能的一般准则</span><span class="sxs-lookup"><span data-stu-id="a29f5-152">General guidelines for improving network performance</span></span>  
+ <span data-ttu-id="a29f5-153">以下建议可用于提高网络性能：</span><span class="sxs-lookup"><span data-stu-id="a29f5-153">The following recommendations can be used to increase network performance:</span></span>  
+  
+### <a name="add-additional-network-cards-to-computers-in-the-biztalk-server-environment"></a><span data-ttu-id="a29f5-154">将附加网络接口卡添加到 BizTalk Server 环境中的计算机</span><span class="sxs-lookup"><span data-stu-id="a29f5-154">Add additional network cards to computers in the BizTalk Server environment</span></span>  
+ <span data-ttu-id="a29f5-155">只需添加其他的硬盘驱动器可以提高磁盘性能、 添加附加网络接口卡可以提高网络性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-155">Just as adding additional hard drives can improve disk performance, adding additional network cards can improve network performance.</span></span> <span data-ttu-id="a29f5-156">如果在 BizTalk Server 环境中的计算机上的网络卡饱和并且卡是瓶颈，请考虑添加一个或多个附加网络接口卡以提高性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-156">If the network cards on the computers in your BizTalk Server environment are saturated and the card is a bottleneck, consider adding one or more additional network cards to improve performance.</span></span>  
+  
+### <a name="implement-network-segmentation"></a><span data-ttu-id="a29f5-157">实现网络分段</span><span class="sxs-lookup"><span data-stu-id="a29f5-157">Implement network segmentation</span></span>  
+ <span data-ttu-id="a29f5-158">请按照中的建议**子网**部分的"BizTalk Server 数据库优化"白皮书，网址[http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)。</span><span class="sxs-lookup"><span data-stu-id="a29f5-158">Follow the recommendations in the **Subnets** section of the "BizTalk Server Database Optimization" whitepaper at [http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578).</span></span>  
+  
+### <a name="where-possible-replace-hubs-with-switches"></a><span data-ttu-id="a29f5-159">如果可能，替换交换机的中心</span><span class="sxs-lookup"><span data-stu-id="a29f5-159">Where possible, replace hubs with switches</span></span>  
+ <span data-ttu-id="a29f5-160">交换机包含用于在源和目标之间的流量而中心使用广播的模型路由流量直接路由逻辑。</span><span class="sxs-lookup"><span data-stu-id="a29f5-160">Switches contain logic to directly route traffic between the source and destination whereas hubs use a broadcast model to route traffic.</span></span> <span data-ttu-id="a29f5-161">因此交换机更高效，并提高了性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-161">Therefore switches are more efficient and offer improved performance.</span></span>  
+  
+### <a name="remove-unnecessary-network-protocols"></a><span data-ttu-id="a29f5-162">删除不必要的网络协议</span><span class="sxs-lookup"><span data-stu-id="a29f5-162">Remove unnecessary network protocols</span></span>  
+ <span data-ttu-id="a29f5-163">Windows Server 计算机有时具有多个网络服务和安装比实际需要的协议。</span><span class="sxs-lookup"><span data-stu-id="a29f5-163">Windows Server computers sometimes have more network services and protocols installed than are actually required.</span></span> <span data-ttu-id="a29f5-164">每个额外的网络客户端、 服务或协议将放置其他开销在系统资源。</span><span class="sxs-lookup"><span data-stu-id="a29f5-164">Each additional network client, service or protocol places additional overhead on system resources.</span></span>  
+  
+ <span data-ttu-id="a29f5-165">此外，每个已安装的协议生成网络流量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-165">In addition, each installed protocol generates network traffic.</span></span> <span data-ttu-id="a29f5-166">通过删除不必要的网络客户端、 服务和协议，系统资源均可供其他进程、 避免过多的网络流量和必须进行协商的网络绑定数减少到最少。</span><span class="sxs-lookup"><span data-stu-id="a29f5-166">By removing unnecessary network clients, services and protocols, system resources are made available for other processes, excess network traffic is avoided and the number of network bindings that must be negotiated is reduced to a minimum.</span></span>  
+  
+ <span data-ttu-id="a29f5-167">若要查看当前安装的网络客户端，协议和服务，请按照下列步骤：</span><span class="sxs-lookup"><span data-stu-id="a29f5-167">To see the currently installed network clients, protocols and services, follow these steps:</span></span>  
+  
+1.  <span data-ttu-id="a29f5-168">单击**启动**，指向**设置**，然后单击**控制面板**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-168">Click **Start**, point to **Settings**, and then click **Control Panel**.</span></span>  
+  
+2.  <span data-ttu-id="a29f5-169">双击**网络连接**以在计算机上显示的网络连接。</span><span class="sxs-lookup"><span data-stu-id="a29f5-169">Double-click **Network Connections** to display the network connections on the computer.</span></span>  
+  
+3.  <span data-ttu-id="a29f5-170">右键单击**本地区域连接**（或你的网络连接的条目），然后单击**属性**要显示的网络连接的属性对话框。</span><span class="sxs-lookup"><span data-stu-id="a29f5-170">Right-click **Local Area Connection** (or the entry for your network connection), and then click **Properties** to display the properties dialog box for the network connection.</span></span>  
+  
+4.  <span data-ttu-id="a29f5-171">若要删除不必要的项，请选择它，然后单击**卸载**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-171">To remove an unnecessary item, select it and click **Uninstall**.</span></span> <span data-ttu-id="a29f5-172">若要禁用某个项，只需清除与项关联的复选框。</span><span class="sxs-lookup"><span data-stu-id="a29f5-172">To disable an item, simply clear the checkbox associated with the item.</span></span>  
+  
+ <span data-ttu-id="a29f5-173">如果你不确定的卸载某个项的连接的效果，然后禁用项，而不是卸载它。</span><span class="sxs-lookup"><span data-stu-id="a29f5-173">If you are unsure about the effects of uninstalling an item for the connection, then disable the item rather than uninstalling it.</span></span> <span data-ttu-id="a29f5-174">禁用项，可确定哪些服务、 协议和客户端实际需要的系统上。</span><span class="sxs-lookup"><span data-stu-id="a29f5-174">Disabling items allows you to determine which services, protocols and clients are actually required on a system.</span></span> <span data-ttu-id="a29f5-175">在确定，禁用一项在服务器上有没有负面影响，然后可以卸载项。</span><span class="sxs-lookup"><span data-stu-id="a29f5-175">When it has been determined that disabling an item has no adverse affect on the server, the item can then be uninstalled.</span></span>  
+  
+ <span data-ttu-id="a29f5-176">在许多情况下，只有以下三个组件是标准的基于 TCP/IP 网络上的操作所必需的：</span><span class="sxs-lookup"><span data-stu-id="a29f5-176">In many cases, only the following three components are required for operation on a standard TCP/IP based network:</span></span>  
+  
+-   <span data-ttu-id="a29f5-177">Microsoft 网络客户端</span><span class="sxs-lookup"><span data-stu-id="a29f5-177">Client for Microsoft Networks</span></span>  
+  
+-   <span data-ttu-id="a29f5-178">文件和打印机共享 Microsoft 网络的</span><span class="sxs-lookup"><span data-stu-id="a29f5-178">File and Printer Sharing for Microsoft Networks</span></span>  
+  
+-   <span data-ttu-id="a29f5-179">Internet 协议 (TCP/IP)</span><span class="sxs-lookup"><span data-stu-id="a29f5-179">Internet Protocol (TCP/IP)</span></span>  
+  
+### <a name="network-adapter-drivers-on-all-computers-in-the-biztalk-server-environment-should-be-tuned-for-performance"></a><span data-ttu-id="a29f5-180">BizTalk Server 环境中的所有计算机上的网络适配器驱动程序应针对性能优化</span><span class="sxs-lookup"><span data-stu-id="a29f5-180">Network adapter drivers on all computers in the BizTalk Server environment should be tuned for performance</span></span>  
+  
+> [!IMPORTANT]  
+>  <span data-ttu-id="a29f5-181">在之前应用到网络适配器驱动程序优化，始终安装的最新的网络适配器设备驱动程序的网络卡在环境中。</span><span class="sxs-lookup"><span data-stu-id="a29f5-181">Before applying tuning to network adapter drivers, always install the latest network adapter device drivers for the network cards in the environment.</span></span>  
+  
+ <span data-ttu-id="a29f5-182">调整网络适配器设备驱动程序，以最大化传入和传出数据包缓冲，可用的内存量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-182">Adjust the network adapter device drivers to maximize the amount of memory available for packet buffering, both incoming and outgoing.</span></span> <span data-ttu-id="a29f5-183">也最大化缓冲区计数，尤其是传输缓冲区和合并缓冲区。</span><span class="sxs-lookup"><span data-stu-id="a29f5-183">Also maximize buffer counts, especially transmit buffers and coalesce buffers.</span></span> <span data-ttu-id="a29f5-184">默认值为这些参数，并是否即使提供，制造商和驱动程序版本之间的不同。</span><span class="sxs-lookup"><span data-stu-id="a29f5-184">The default values for these parameters, and whether they are even provided, vary between manufacturers and driver versions.</span></span> <span data-ttu-id="a29f5-185">目标是以最大化网络适配器硬件，通过完成的工作并允许网络操作，以减少网络流量高峰和关联的拥塞的最大可能会发生缓冲区空间。</span><span class="sxs-lookup"><span data-stu-id="a29f5-185">The goal is to maximize the work done by the network adapter hardware, and to allow the greatest possible buffer space for network operations to mitigate network traffic bursts and associated congestion.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="a29f5-186">若要优化网络适配器驱动程序的步骤因制造商而异。</span><span class="sxs-lookup"><span data-stu-id="a29f5-186">Steps to tune network adapter drivers vary by manufacturer.</span></span>  
+  
+ <span data-ttu-id="a29f5-187">请按照下列步骤，若要访问中的网络适配器设置[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]:</span><span class="sxs-lookup"><span data-stu-id="a29f5-187">Follow these steps to access settings for network adapters in[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]:</span></span>  
+  
+1.  <span data-ttu-id="a29f5-188">单击**启动**、 然后单击**控制面板**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-188">Click **Start**, , and then click **Control Panel**.</span></span>  
+  
+2.  <span data-ttu-id="a29f5-189">单击**网络和 Internet**，然后单击**网络和共享中心**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-189">Click **Network and Internet**, and then click **Network and Sharing Center**.</span></span>  
+  
+3.  <span data-ttu-id="a29f5-190">单击**更改适配器设置**，右键单击**本地区域连接**（或你的网络连接的名称），然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-190">Click **Change adapter settings**, Right-click **Local Area Connection** (or the name of your network connection), and then click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="a29f5-191">上**常规**选项卡上，单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-191">On the **General** tab, click **Configure**.</span></span>  
+  
+5.  <span data-ttu-id="a29f5-192">单击**高级**到可以为网络适配器配置的访问属性的选项卡。</span><span class="sxs-lookup"><span data-stu-id="a29f5-192">Click the **Advanced** tab to access properties that can be configured for the network adapter.</span></span>  
+  
+ <span data-ttu-id="a29f5-193">应为每个网络适配器在 BizTalk Server 环境中配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="a29f5-193">The following properties should be configured for each network adapter in the BizTalk Server environment:</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="a29f5-194">您应用这些设置对于每个物理网络适配器，包括单个网络适配器集中的聚合、 负载平衡，或容错配置的网络适配器成组。</span><span class="sxs-lookup"><span data-stu-id="a29f5-194">You apply these settings for each physical network adapter, including the individual network adapters within a teamed set of network adapters that are configured for aggregation, load balancing, or fault tolerance.</span></span> <span data-ttu-id="a29f5-195">某些组合软件，你可能需要也适用于团队的这些设置。</span><span class="sxs-lookup"><span data-stu-id="a29f5-195">With some teaming software, you might need to apply these settings to the team also.</span></span> <span data-ttu-id="a29f5-196">请注意，某些网络适配器是自我调整可能不会提供该选项来手动配置参数。</span><span class="sxs-lookup"><span data-stu-id="a29f5-196">Note that some network adapters are self-tuning and may not offer the option to configure parameters manually.</span></span>  
+  
+-   <span data-ttu-id="a29f5-197">**电源选项**– 配置网络适配器驱动程序，以防止电源管理功能关闭以节约电源的网络适配器。</span><span class="sxs-lookup"><span data-stu-id="a29f5-197">**Power Option** – Configure the network adapter driver to prevent power management functionality from turning off the network adapter to save power.</span></span> <span data-ttu-id="a29f5-198">此功能可用于客户端计算机但很少，如果曾应，BizTalk Server 或 SQL Server 的计算机上使用。</span><span class="sxs-lookup"><span data-stu-id="a29f5-198">This functionality may be useful for client computers but should seldom, if ever, be used on a BizTalk Server or SQL Server computer.</span></span>  
+  
+-   <span data-ttu-id="a29f5-199">**固定速度/双工 （请不要使用 AUTO）** -它是非常重要的网络速度、 双工、 和流控制参数设置为在交换机上的设置与对应它们连接到。</span><span class="sxs-lookup"><span data-stu-id="a29f5-199">**Fixed Speed/Duplex (do not use AUTO)** - It is very important that the network speed, duplex, and flow control parameters are set to correspond to the settings on the switch to which they are connected.</span></span> <span data-ttu-id="a29f5-200">这将减轻定期"自动同步"这可能暂时需要连接离线的匹配项。</span><span class="sxs-lookup"><span data-stu-id="a29f5-200">This will mitigate the occurrence of periodic “auto-synchronization” which may temporarily take connections off-line.</span></span>  
+  
+-   <span data-ttu-id="a29f5-201">**最大值将合并缓冲区**-映射寄存器是用于将物理地址转换为支持总线控制的网络适配器的虚拟地址的系统资源。</span><span class="sxs-lookup"><span data-stu-id="a29f5-201">**Max Coalesce Buffers** - Map registers are system resources used to convert physical addresses to virtual addresses for network adapters that support bus mastering.</span></span> <span data-ttu-id="a29f5-202">将合并缓冲区来供网络驱动程序，如果驱动程序用完了映射寄存器。</span><span class="sxs-lookup"><span data-stu-id="a29f5-202">Coalesce buffers are available to the network driver if the driver runs out of map registers.</span></span> <span data-ttu-id="a29f5-203">设置此值最高可达可能以获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-203">Set this value as high as possible for maximum performance.</span></span> <span data-ttu-id="a29f5-204">在服务器上具有有限的物理内存，这可能产生一个负数影响如合并缓冲区使用的系统内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-204">On servers with limited physical memory, this may have a negative impact as coalesce buffers consume system memory.</span></span> <span data-ttu-id="a29f5-205">大多数系统上但是，最大值设置可以应用而不会显著降低可用内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-205">On most systems however, the maximum setting can be applied without significantly reducing available memory.</span></span>  
+  
+-   <span data-ttu-id="a29f5-206">**最大传输/发送描述符和发送缓冲区**-此设置指定多少传输控制缓冲区驱动程序分配内存以供网络接口。</span><span class="sxs-lookup"><span data-stu-id="a29f5-206">**Max Transmit/Send Descriptors and Send Buffers** - This setting specifies how many transmit control buffers the driver allocates for use by the network interface.</span></span> <span data-ttu-id="a29f5-207">这直接反映出该驱动程序可以有其"发送"队列中的未完成数据包数。</span><span class="sxs-lookup"><span data-stu-id="a29f5-207">This directly reflects the number of outstanding packets the driver can have in its “send” queue.</span></span> <span data-ttu-id="a29f5-208">设置此值最高可达可能以获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-208">Set this value as high as possible for maximum performance.</span></span> <span data-ttu-id="a29f5-209">在服务器上具有有限的物理内存，这可能产生负面影响，作为发送缓冲区使用的系统内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-209">On servers with limited physical memory, this may have a negative impact as send buffers consume system memory.</span></span> <span data-ttu-id="a29f5-210">大多数系统上但是，最大值设置可以应用而不会显著降低可用内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-210">On most systems however, the maximum setting can be applied without significantly reducing available memory.</span></span>  
+  
+-   <span data-ttu-id="a29f5-211">**最大接收缓冲区**-此设置指定的网络接口驱动程序时将数据复制到的协议内存所使用的内存缓冲区量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-211">**Max Receive Buffers** - This setting specifies the amount of memory buffer used by the network interface driver when copying data to the protocol memory.</span></span> <span data-ttu-id="a29f5-212">它通常由为相对较低的值的默认设置。</span><span class="sxs-lookup"><span data-stu-id="a29f5-212">It is normally set by default to a relatively low value.</span></span> <span data-ttu-id="a29f5-213">设置此值最高可达可能以获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-213">Set this value as high as possible for maximum performance.</span></span> <span data-ttu-id="a29f5-214">在服务器上具有有限的物理内存，这可能产生一个负数影响作为接收缓冲区使用的系统内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-214">On servers with limited physical memory, this may have a negative impact as receive buffers consume system memory.</span></span> <span data-ttu-id="a29f5-215">大多数系统上但是，最大值设置可以应用而不会显著降低可用内存。</span><span class="sxs-lookup"><span data-stu-id="a29f5-215">On most systems however, the maximum setting can be applied without significantly reducing available memory.</span></span>  
+  
+-   <span data-ttu-id="a29f5-216">**所有上卸载选项**-在几乎所有情况下，当启用网络接口卸载功能时，会提高性能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-216">**All offload options ON** - In almost all cases performance is improved when enabling network interface offload features.</span></span> <span data-ttu-id="a29f5-217">某些网络适配器提供单独的参数来启用或禁用卸载用于发送和接收流量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-217">Some network adapters provide separate parameters to enable or disable offloading for send and receive traffic.</span></span> <span data-ttu-id="a29f5-218">卸载任务从 CPU 卸载到网络适配器可以帮助较低的 CPU 使用率，从而提高总体系统性能的服务器上。</span><span class="sxs-lookup"><span data-stu-id="a29f5-218">Offloading tasks from the CPU to the network adapter can help lower CPU usage on the server which will improve overall system performance.</span></span> <span data-ttu-id="a29f5-219">Microsoft TCP/IP 传输可以卸载一个或多个具有相应的功能的网络适配器的以下任务：</span><span class="sxs-lookup"><span data-stu-id="a29f5-219">The Microsoft TCP/IP transport can offload one or more of the following tasks to a network adapter that has the appropriate capabilities:</span></span>  
+  
+    -   <span data-ttu-id="a29f5-220">**校验和任务**-TCP/IP 传输可以卸载计算并验证 IP 和 TCP 校验和以发送和接收到的网络适配器，如果网络适配器驱动程序提供了此功能，请启用此选项。</span><span class="sxs-lookup"><span data-stu-id="a29f5-220">**Checksum tasks** - The TCP/IP transport can offload the calculation and validation of IP and TCP checksums for sends and receives to the network adapter, enable this option if the network adapter driver provides this capability.</span></span>  
+  
+    -   <span data-ttu-id="a29f5-221">**IP 安全任务**-计算和验证的加密的校验和，有关身份验证标头 (AH) 和封装安全负载 (ESP) 到网络适配器，可以卸载 TCP/IP 传输。</span><span class="sxs-lookup"><span data-stu-id="a29f5-221">**IP security tasks** - The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH) and encapsulating security payloads (ESP) to the network adapter.</span></span> <span data-ttu-id="a29f5-222">加密和解密的 ESP 到网络适配器的负载，也可以卸载 TCP/IP 传输。</span><span class="sxs-lookup"><span data-stu-id="a29f5-222">The TCP/IP transport can also offload the encryption and decryption of ESP payloads to the network adapter.</span></span> <span data-ttu-id="a29f5-223">如果网络适配器驱动程序提供了此功能，请启用这些选项。</span><span class="sxs-lookup"><span data-stu-id="a29f5-223">Enable these options if the network adapter driver provides this capability.</span></span>  
+  
+    -   <span data-ttu-id="a29f5-224">**分段的大型的 TCP 数据包**-TCP/IP 传输支持大量发送卸载 (LSO)。</span><span class="sxs-lookup"><span data-stu-id="a29f5-224">**Segmentation of large TCP packets** - The TCP/IP transport supports large send offload (LSO).</span></span> <span data-ttu-id="a29f5-225">LSO，使用 TCP/IP 传输可以卸载大型的 TCP 数据包的分段。</span><span class="sxs-lookup"><span data-stu-id="a29f5-225">With LSO, the TCP/IP transport can offload the segmentation of large TCP packets.</span></span>  
+  
+    -   <span data-ttu-id="a29f5-226">**堆栈卸载**– 整个网络堆栈可以卸载到具有相应的功能的网络适配器。</span><span class="sxs-lookup"><span data-stu-id="a29f5-226">**Stack Offload** – The entire network stack can be offloaded to a network adapter that has the appropriate capabilities.</span></span> <span data-ttu-id="a29f5-227">如果网络适配器驱动程序提供了此功能，请启用此选项。</span><span class="sxs-lookup"><span data-stu-id="a29f5-227">Enable this option if the network adapter driver provides this capability.</span></span>  
+  
+-   <span data-ttu-id="a29f5-228">**LAN 唤醒禁用 （除非使用时）** – 配置网络适配器驱动程序，以禁用唤醒 on lan 功能。</span><span class="sxs-lookup"><span data-stu-id="a29f5-228">**Wake On LAN disabled (unless being used)** – Configure the network adapter driver to disable wake-on lan functionality.</span></span> <span data-ttu-id="a29f5-229">此功能可能很有用的客户端计算机，但很少是否应在 BizTalk Server 或 SQL Server 的计算机上。</span><span class="sxs-lookup"><span data-stu-id="a29f5-229">This functionality may be useful for client computers but should seldom if ever be used on a BizTalk Server or SQL Server computer.</span></span>  
+  
+ <span data-ttu-id="a29f5-230">有关优化性能的网络适配器的详细信息，请参阅**网络设备设置**部分的"BizTalk Server 数据库优化"白皮书，网址[http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)。</span><span class="sxs-lookup"><span data-stu-id="a29f5-230">For more information about tuning network adapters for performance, see the **Network Device Settings** section of the "BizTalk Server Database Optimization" whitepaper at [http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578).</span></span>

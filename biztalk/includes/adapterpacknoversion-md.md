@@ -1,0 +1,1 @@
+<span data-ttu-id="3077c-101">BizTalk 适配器包</span><span class="sxs-lookup"><span data-stu-id="3077c-101">BizTalk Adapter Pack</span></span>

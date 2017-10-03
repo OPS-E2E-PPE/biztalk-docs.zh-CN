@@ -1,0 +1,32 @@
+---
+title: "ESB 冲突解决程序和适配器提供程序框架 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: c82c2247-1f0a-48bd-98c2-9c816f4d68d7
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 0cd96da053bad370d635c804df41badf10a7c154
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="esb-resolver-and-adapter-provider-framework"></a><span data-ttu-id="c1242-102">ESB 冲突解决程序和适配器提供程序框架</span><span class="sxs-lookup"><span data-stu-id="c1242-102">ESB Resolver and Adapter Provider Framework</span></span>
+<span data-ttu-id="c1242-103">冲突解决程序和适配器提供程序框架提供了全面的、 可插入体系结构动态解析终结点信息和[!INCLUDE[prague](../includes/prague-md.md)]映射类型。</span><span class="sxs-lookup"><span data-stu-id="c1242-103">The Resolver and Adapter Provider Framework provides a comprehensive, pluggable architecture for dynamically resolving endpoint information and [!INCLUDE[prague](../includes/prague-md.md)] map types.</span></span> <span data-ttu-id="c1242-104">它使用可扩展的组件，允许开发人员更改行为，以便根据其自己的需求和扩展以支持备选解决方案和路由方法的机制。</span><span class="sxs-lookup"><span data-stu-id="c1242-104">It uses extensible components, which allow developers to change the behavior to suit their own requirements and extend the mechanism to support alternative resolution and routing methods.</span></span>  
+  
+ <span data-ttu-id="c1242-105">冲突解决程序和适配器提供程序框架提供的支持通用的说明，发现和集成 (UDDI)、 业务规则引擎 (BRE) 和 XML 路径语言 (XPath)。</span><span class="sxs-lookup"><span data-stu-id="c1242-105">The Resolver and Adapter Provider Framework provides support Universal Description, Discovery, and Integration (UDDI), Business Rule Engine (BRE), and XML Path Language (XPath).</span></span> <span data-ttu-id="c1242-106">它还使开发人员接口 (**IResolveProvider**和**IAdapterProvider**) 以允许创建自定义冲突解决程序和适配器组件。</span><span class="sxs-lookup"><span data-stu-id="c1242-106">It also exposes developer interfaces (**IResolveProvider** and **IAdapterProvider**) to allow creation of custom resolver and adapter components.</span></span> <span data-ttu-id="c1242-107">冲突解决程序和适配器提供程序框架的三个主要组件如下：</span><span class="sxs-lookup"><span data-stu-id="c1242-107">The following are the three main components of the Resolver and Adapter Provider Framework:</span></span>  
+  
+-   <span data-ttu-id="c1242-108">**冲突解决程序。**</span><span class="sxs-lookup"><span data-stu-id="c1242-108">**Resolvers.**</span></span> <span data-ttu-id="c1242-109">这些定义同一个架构，连接字符串，并通过实现**IResolveProvider** .NET Framework 程序集中的接口。</span><span class="sxs-lookup"><span data-stu-id="c1242-109">These are defined by a schema, connection string, and through the implementation of the **IResolveProvider** interface in a .NET Framework assembly.</span></span> <span data-ttu-id="c1242-110">这些加载和缓存在运行时并支持一系列的解决方法类型和连接字符串。</span><span class="sxs-lookup"><span data-stu-id="c1242-110">These are loaded and cached at run time and support a range of resolution types and connection strings.</span></span>  
+  
+-   <span data-ttu-id="c1242-111">**适配器提供程序。**</span><span class="sxs-lookup"><span data-stu-id="c1242-111">**Adapter providers.**</span></span> <span data-ttu-id="c1242-112">这些定义的实现通过**IAdapterProvider** .NET Framework 程序集内的接口。</span><span class="sxs-lookup"><span data-stu-id="c1242-112">These are defined through the implementation of the **IAdapterProvider** interface within a .NET Framework assembly.</span></span> <span data-ttu-id="c1242-113">这些注册由其 BizTalk Server 传输类型，它设置相应的 BizTalk Server 适配器上的冲突解决程序提供的终结点信息。</span><span class="sxs-lookup"><span data-stu-id="c1242-113">These are registered by their BizTalk Server transport type, which set the endpoint information provided by a resolver on the appropriate BizTalk Server adapter.</span></span>  
+  
+-   <span data-ttu-id="c1242-114">**路线管道组件。**</span><span class="sxs-lookup"><span data-stu-id="c1242-114">**Itinerary pipeline components.**</span></span> <span data-ttu-id="c1242-115">这些分析解决方案说明从连接字符串或 ESB 路线 SOAP 标头，并提供终结点解析或转换执行功能使用解析程序和适配器提供程序框架。</span><span class="sxs-lookup"><span data-stu-id="c1242-115">These parse resolution instructions from connection strings or from the ESB Itinerary SOAP headers, and they provide endpoint resolution or transformation execution capabilities using the Resolver and Adapter Provider Framework.</span></span> <span data-ttu-id="c1242-116">组件可以动态设置终结点属性的 BizTalk Server 或执行基于从连接字符串或 ESB 路线 SOAP 标头的解决方案说明 BizTalk Server 映射表转换。</span><span class="sxs-lookup"><span data-stu-id="c1242-116">The components can dynamically set the BizTalk Server endpoint properties or execute a BizTalk Server map transformation based on resolution instructions from the connection string or from the ESB Itinerary SOAP headers.</span></span> <span data-ttu-id="c1242-117">这些组件负责管理、 更新和跨进程和服务边界保留路线。</span><span class="sxs-lookup"><span data-stu-id="c1242-117">These components are responsible for managing, updating, and persisting the itinerary across process and service boundaries.</span></span> <span data-ttu-id="c1242-118">可选的反汇编程序组件提供的消息和实现的本地 BizTalk Server 解析[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]的路由到多个终结点，而无需业务流程服务的功能。</span><span class="sxs-lookup"><span data-stu-id="c1242-118">The optional Disassembler component provides native BizTalk Server parsing of the message and implements the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] feature of routing to multiple endpoints without the need for an orchestration service.</span></span>  
+  
+ <span data-ttu-id="c1242-119">有关动态解析和动态路由的详细信息，请参阅[使用动态解析和路由](../esb-toolkit/using-dynamic-resolution-and-routing.md)和[使用动态转换](../esb-toolkit/using-dynamic-transformation.md)。</span><span class="sxs-lookup"><span data-stu-id="c1242-119">For more information about dynamic resolution and dynamic routing, see [Using Dynamic Resolution and Routing](../esb-toolkit/using-dynamic-resolution-and-routing.md) and [Using Dynamic Transformation](../esb-toolkit/using-dynamic-transformation.md).</span></span> <span data-ttu-id="c1242-120">有关解析和适配器提供程序框架的信息，请参阅[修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)。</span><span class="sxs-lookup"><span data-stu-id="c1242-120">For information about the Resolution and Adapter Provider Framework, see [Modifying and Extending the BizTalk ESB Toolkit](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md).</span></span>

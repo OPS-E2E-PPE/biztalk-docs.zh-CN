@@ -1,0 +1,73 @@
+---
+title: "SAP 系统和适配器之间的安全性 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Secure Network Communications
+- SNC
+- security, user name password credentials
+- security, for inbound scenarios
+- security considerations, between SAP system and adapter
+- user name password credentials
+ms.assetid: fa21df0b-a364-4a52-8c38-49c5ee6267cc
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a1c0e37662b9c554d05b73ecf234da4b2ee547fb
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="security-between-the-sap-system-and-the-adapter"></a><span data-ttu-id="ee32c-102">SAP 系统和适配器之间的安全性</span><span class="sxs-lookup"><span data-stu-id="ee32c-102">Security between the SAP system and the adapter</span></span>
+<span data-ttu-id="ee32c-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持以帮助与 SAP 服务器之间的安全通信的 SAP 安全网络通信 (SNC) 或用户名称密码凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports either SAP Secure Network Communications (SNC) or user name password credentials to help secure communication between it and the SAP server.</span></span> <span data-ttu-id="ee32c-104">用户名密码凭据仅提供用于连接到 SAP 系统中; 的授权它们不提供任何安全交换通过连接的数据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-104">User name password credentials only provide authorization for the connection to the SAP system; they do not provide any security on the data exchanged over the connection.</span></span> <span data-ttu-id="ee32c-105">不能同时使用 SNC 和用户名称密码凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-105">You cannot use both SNC and user name password credentials simultaneously.</span></span>  
+  
+## <a name="sap-secure-network-communications"></a><span data-ttu-id="ee32c-106">SAP 安全网络通信</span><span class="sxs-lookup"><span data-stu-id="ee32c-106">SAP Secure Network Communications</span></span>  
+ <span data-ttu-id="ee32c-107">安全网络通信 (SNC) 是可以帮助提供有关 SAP 客户端和 SAP 应用程序服务器之间交换的数据的应用程序级安全的 SAP 系统体系结构中的软件层。</span><span class="sxs-lookup"><span data-stu-id="ee32c-107">Secure Network Communications (SNC) is a software layer in the SAP system architecture that can help provide application-level security on data exchanged between the SAP client and a SAP application server.</span></span>  
+  
+ <span data-ttu-id="ee32c-108">SNC 提供以下优点：</span><span class="sxs-lookup"><span data-stu-id="ee32c-108">SNC provides the following advantages:</span></span>  
+  
+-   <span data-ttu-id="ee32c-109">SNC 面向应用程序级别、 端到端安全。</span><span class="sxs-lookup"><span data-stu-id="ee32c-109">SNC targets application-level, end-to-end security.</span></span> <span data-ttu-id="ee32c-110">SNC 可帮助保护 （例如，之间 SAPgui 和 SAP 系统应用程序服务器） 的两个 SNC 保护组件之间的所有通信。</span><span class="sxs-lookup"><span data-stu-id="ee32c-110">SNC helps secure all communications between two SNC-protected components (for example, between the SAPgui and an SAP System application server).</span></span>  
+  
+-   <span data-ttu-id="ee32c-111">你可以实现 SAP 系统不直接提供 （如上单一登录或将智能卡用于身份验证） 的更多安全功能。</span><span class="sxs-lookup"><span data-stu-id="ee32c-111">You can implement additional security features that the SAP System does not directly provide (for example, Single Sign-On or the use of smart cards for authentication).</span></span>  
+  
+-   <span data-ttu-id="ee32c-112">你可以自定义 SNC 实现。</span><span class="sxs-lookup"><span data-stu-id="ee32c-112">You can customize your SNC implementation.</span></span> <span data-ttu-id="ee32c-113">你可以使用所选的安全产品并选择你想要使用的算法。</span><span class="sxs-lookup"><span data-stu-id="ee32c-113">You can use the security product of your choice and choose the algorithms you want to use.</span></span>  
+  
+-   <span data-ttu-id="ee32c-114">你可以随时更改安全产品，而不会影响 SAP 系统业务应用程序。</span><span class="sxs-lookup"><span data-stu-id="ee32c-114">You can change the security product at any time without affecting SAP System business applications.</span></span>  
+  
+ <span data-ttu-id="ee32c-115">若要使用 SNC，必须配置 SAP 服务器和运行的客户端[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ee32c-115">To use SNC, you must configure both the SAP server and the client running the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+  
+-   <span data-ttu-id="ee32c-116">SAP 服务器上配置安全网络通信 (SNC)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-116">Configure Secure Network Communications (SNC) on the SAP server.</span></span> <span data-ttu-id="ee32c-117">请参阅 SAP 文档获取指导。</span><span class="sxs-lookup"><span data-stu-id="ee32c-117">Refer to the SAP documentation for guidance.</span></span>  
+  
+-   <span data-ttu-id="ee32c-118">上的计算机具有 SAP 客户端 Dll 和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]安装，你还必须拥有 SNC 相关 Dll 的。</span><span class="sxs-lookup"><span data-stu-id="ee32c-118">On the computer having the SAP client DLLs and [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] installed, you must also have the SNC related DLLs.</span></span> <span data-ttu-id="ee32c-119">有关这些 Dll 的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)][软件必备项](../../adapters-and-accelerators/software-prerequisites-for-biztalk-adapter-pack-2016.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-119">For more information about these DLLs, see the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] [software prerequisites](../../adapters-and-accelerators/software-prerequisites-for-biztalk-adapter-pack-2016.md).</span></span>  
+  
+-   <span data-ttu-id="ee32c-120">若要配置适配器后，以使用 SNC，必须在 SAP 连接 URI 中设置 UseSnc 参数。</span><span class="sxs-lookup"><span data-stu-id="ee32c-120">To configure the adapter to use SNC, you must set the UseSnc parameter in the SAP connection URI.</span></span> <span data-ttu-id="ee32c-121">有关 SAP 连接 URI 的详细信息，请参阅[配置 SAP 适配器的连接 URI](../../adapters-and-accelerators/adapter-sap/configure-the-connection-uri-for-the-sap-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-121">For more information about the SAP connection URI, see [Configure the connection URI for the SAP adapter](../../adapters-and-accelerators/adapter-sap/configure-the-connection-uri-for-the-sap-adapter.md).</span></span> <span data-ttu-id="ee32c-122">此外，你必须设置**SncLibrary**和**SncPartnerName**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="ee32c-122">Also, you must set the **SncLibrary** and the **SncPartnerName** binding properties.</span></span> <span data-ttu-id="ee32c-123">有关详细信息[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]绑定属性，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-123">For more information about the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] binding properties, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
+  
+## <a name="user-name-password-credentials"></a><span data-ttu-id="ee32c-124">用户名密码凭据</span><span class="sxs-lookup"><span data-stu-id="ee32c-124">User Name Password Credentials</span></span>  
+ <span data-ttu-id="ee32c-125">你可以提供用户名凭据密码到中连接 URI 的适配器。</span><span class="sxs-lookup"><span data-stu-id="ee32c-125">You can supply user name password credentials to the adapter in the connection URI.</span></span> <span data-ttu-id="ee32c-126">适配器使用这些凭据时将打开的连接，SAP 系统上的用户进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="ee32c-126">The adapter uses these credentials to authenticate the user on the SAP system when it opens the connection.</span></span> <span data-ttu-id="ee32c-127">这些凭据提供的用于连接到 SAP 系统，则为授权级别但是，它们不提供消息级或传输级身份验证 （或授权） 的数据通过网络传输。</span><span class="sxs-lookup"><span data-stu-id="ee32c-127">These credentials provide a level of authorization for the connection to the SAP system; however, they do not provide message-level or transport-level authentication (or authorization) for data traveling across the network.</span></span>  
+  
+ <span data-ttu-id="ee32c-128">为此，你必须提供一种安全机制，以帮助确保适当的授权、 身份验证、 保护数据隐私和数据适配器和 SAP 系统之间的交换的数据完整性级别。</span><span class="sxs-lookup"><span data-stu-id="ee32c-128">For this reason, you must provide a security mechanism to help ensure appropriate levels of authorization, authentication, data privacy, and data integrity for data exchanges between the adapter and the SAP system.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="ee32c-129">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]曲面**AcceptCredentialsInUri**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="ee32c-129">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces the **AcceptCredentialsInUri** binding property.</span></span> <span data-ttu-id="ee32c-130">此属性确定是否允许连接 URI 中使用 SAP 系统凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-130">This property determines whether SAP system credentials are permitted in the connection URI.</span></span> <span data-ttu-id="ee32c-131">默认情况下， **AcceptCredentialsInUri**为 false 和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]URI 中包括凭据时引发异常。</span><span class="sxs-lookup"><span data-stu-id="ee32c-131">By default, **AcceptCredentialsInUri** is false and the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] throws an exception if credentials are included in the URI.</span></span> <span data-ttu-id="ee32c-132">有关详细信息，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-132">For more information, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
+  
+ <span data-ttu-id="ee32c-133">帮助提供更高的安全性跨网络的一个可能的机制是 Internet 协议安全性 (IPsec)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-133">One possible mechanism for helping to provide more security across the network is Internet Protocol Security (IPsec).</span></span> <span data-ttu-id="ee32c-134">IPsec 是一种开放标准的保护通过 Internet 协议 (IP) 网络的通信框架。</span><span class="sxs-lookup"><span data-stu-id="ee32c-134">IPsec is a framework of open standards for protecting communications over Internet Protocol (IP) networks.</span></span>  
+  
+ <span data-ttu-id="ee32c-135">用户名和密码以明文形式连接 URI 中指定。</span><span class="sxs-lookup"><span data-stu-id="ee32c-135">The user name and password are specified as clear text in the connection URI.</span></span> <span data-ttu-id="ee32c-136">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]提供多种方法，通过它你可以更安全地提供这些凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-136">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] provides a number of methods through which you can more securely supply these credentials.</span></span>  
+  
+-   <span data-ttu-id="ee32c-137">有关如何更安全地提供 BizTalk 解决方案中的 SAP 系统凭据的信息，请参阅[安全性与 SAP 适配器和 BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-137">For information about how to more securely provide SAP system credentials in BizTalk solutions, see [Security with the SAP adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span></span>  
+  
+-   <span data-ttu-id="ee32c-138">有关如何更安全地提供编程解决方案中的 SAP 系统凭据的信息，请参阅[SAP 适配器使用的安全编程](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="ee32c-138">For information about how to more securely provide SAP system credentials in programming solutions, see [Secure programming with the SAP adapter](../../adapters-and-accelerators/adapter-sap/secure-programming-with-the-sap-adapter.md).</span></span>  
+  
+## <a name="security-concerns-for-inbound-scenarios"></a><span data-ttu-id="ee32c-139">入站方案的安全问题</span><span class="sxs-lookup"><span data-stu-id="ee32c-139">Security Concerns for Inbound Scenarios</span></span>  
+ <span data-ttu-id="ee32c-140">有权访问 SAP 程序 ID 的任何侦听器可能接收所有 SAP 项目 （Rfc、 Idoc 和 tRFCs） 发送到该程序 id。</span><span class="sxs-lookup"><span data-stu-id="ee32c-140">Any listener that has access to a SAP program ID can potentially receive all SAP artifacts (RFCs, IDOCs, and tRFCs) sent to that program ID.</span></span> <span data-ttu-id="ee32c-141">如果多个侦听器已注册到的程序 ID，SAP 将随机分配到一个侦听器到达该程序 ID 的项目。</span><span class="sxs-lookup"><span data-stu-id="ee32c-141">If more than one listener is registered to the program ID, SAP will randomly assign artifacts that arrive at that program ID to one of the listeners.</span></span> <span data-ttu-id="ee32c-142">因此，应，确保你想要通过使用特定的程序 ID 接收消息的侦听器有权访问该程序 id。</span><span class="sxs-lookup"><span data-stu-id="ee32c-142">You should, therefore, guarantee that only listeners that you want to receive messages by using a specific program ID have access to that program ID.</span></span> <span data-ttu-id="ee32c-143">此外，由于 SAP 随机向附加到程序 ID 的侦听器发送项目，它是一种最佳做法，需将程序 Id 专用于一个侦听器。</span><span class="sxs-lookup"><span data-stu-id="ee32c-143">Furthermore, because SAP randomly sends artifacts to listeners attached to a program ID, it is a best practice to dedicate program IDs to a single listener.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="ee32c-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ee32c-144">See Also</span></span>  
+[<span data-ttu-id="ee32c-145">最佳做法来保护 SAP 适配器</span><span class="sxs-lookup"><span data-stu-id="ee32c-145">Best practices to secure the SAP adapter</span></span>](../../adapters-and-accelerators/adapter-sap/best-practices-to-secure-the-sap-adapter.md)  
+[<span data-ttu-id="ee32c-146">保护你的 SAP 应用程序</span><span class="sxs-lookup"><span data-stu-id="ee32c-146">Secure your SAP applications</span></span>](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)
