@@ -1,0 +1,1 @@
+<span data-ttu-id="24c88-101">**BizTalk Accelerator for RosettaNet**</span><span class="sxs-lookup"><span data-stu-id="24c88-101">**BizTalk Accelerator for RosettaNet**</span></span>
