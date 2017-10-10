@@ -1,7 +1,8 @@
 ---
 title: "使用 WCF 服务模型从 SQL Server 接收强类型基于轮询的数据更改消息 |Microsoft 文档"
+description: "使用.NET 应用程序配置类型化的轮询或使用 BizTalk Server 中的 WCF SQL 适配器通过 WCF 服务的强类型轮询"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/09/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a56ed382f6fa9c106b091b62406feba2dffe704
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c616d2a9f10aae5dbf822676174a0de0d4816c19
+ms.sourcegitcommit: f9c6ea3c9cfb8a43f765c0d3b8b07dacaa21fc51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-wcf-service-model"></a>使用 WCF 服务模型从 SQL Server 接收强类型基于轮询的数据更改消息
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 接收强类型的轮询消息。 你可以指定适配器执行轮询数据库轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回的结果集。 在方案中必须使用强类型轮询你想要接收的强类型化结果集。 有关如何的适配器支持强类型轮询的详细信息，请参阅[支持为入站调用使用轮询](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)。  
@@ -68,7 +69,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
  有关这些属性的更完整说明，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。 有关如何使用的完整说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]若要轮询 SQL Server，进一步阅读。  
   
-## <a name="configuring-strongly-typed-polling-in-the-wcf-service-model"></a>配置 WCF 服务模型中的强类型轮询  
+## <a name="configure-strongly-typed-polling-in-the-wcf-service-model"></a>配置 WCF 服务模型中的强类型轮询  
  若要接收**轮询**操作使用 WCF 服务模型时，你必须：  
   
 1.  为生成的 WCF 服务协定 （接口） **TypedPolling**从适配器公开的元数据的操作。 若要执行此操作，你无法使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 在生成 WCF 服务协定，对于此示例，请确保：  
@@ -148,10 +149,8 @@ namespace SqlAdapterBindingNamespace {
 }  
 ```  
   
-## <a name="receiving-strongly-typed-inbound-messages-for-polling-operation"></a>轮询操作接收强类型化入站的消息  
+## <a name="receive-strongly-typed-inbound-messages-for-polling-operation"></a>轮询操作接收强类型的入站的消息  
  此部分提供有关如何编写.NET 应用程序以接收使用强类型的入站的轮询消息说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
-  
-#### <a name="to-receive-polling-messages-from-the-sql-adapter"></a>从 SQL 适配器接收轮询消息  
   
 1.  使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]以生成 WCF 服务协定 （接口） 和用于帮助器类**TypedPolling**操作。 请确保你指定生成此示例中的 WCF 服务协定时以下：  
   
@@ -268,7 +267,7 @@ namespace SqlAdapterBindingNamespace {
   
     ```  
     // Add service endpoint: be sure to specify TypedPolling_Employee as the contract  
-    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Empliyee");  
+    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Employee");  
     serviceHost.AddServiceEndpoint("TypedPolling_Employee", binding, ConnectionUri);  
     ```  
   
