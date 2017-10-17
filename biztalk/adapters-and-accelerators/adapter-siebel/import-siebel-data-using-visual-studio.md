@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SSIS
-- Data Provider for Siebel, importing Siebel data by using Visual Studio
 ms.assetid: 33701361-eca2-4795-a5e0-78162a98e9ba
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0671459b39462422768e42e18bf16336a469f43
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4479fbbfd704cea30b8981866d3b7a354ca7269f
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="import-siebel-data-using-visual-studio"></a>使用 Visual Studio 的 Siebel 数据导入
 本部分提供有关如何使用 Microsoft 的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]从 Siebel 系统到 SQL Server 数据库导入数据。 它还提供有关如何创建和执行 SSIS 包导入此数据的说明。  
@@ -29,13 +26,10 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]计算机上安装。  
   
--   Microsoft[!INCLUDE[vs2010](../../includes/vs2010-md.md)]计算机上安装。  
+-   在计算机上安装 Microsoft Visual Studio。  
   
-## <a name="importing-data-by-using-visual-studio"></a>使用 Visual Studio 中导入数据  
- 执行以下步骤以使用导入数据[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
-  
-#### <a name="to-import-data-by-using-visual-studio"></a>若要通过使用 Visual Studio 导入数据  
-  
+## <a name="import-in-visual-studio"></a>Visual Studio 中的导入  
+ 
 1.  启动[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]并创建一个集成服务项目。  
   
 2.  从**项目**菜单上，选择**SSIS 导入和导出向导**。 这将启动 SQL Server 导入和导出向导。  
@@ -92,18 +86,16 @@ ms.lasthandoff: 09/20/2017
   
 16. 向导将 SSIS 包添加到你的集成服务项目。 保存集成服务项目。  
   
-## <a name="running-the-ssis-package"></a>运行 SSIS 包  
+## <a name="run-the-ssis-package"></a>运行 SSIS 包  
  在集成服务项目内创建包后，你可以执行它从 Siebel 系统到 SQL Server 数据库导入数据。 执行以下步骤 Siebel 数据导入通过执行包。  
-  
-#### <a name="to-run-the-package-from-visual-studio"></a>若要从 Visual Studio 运行包  
   
 1.  导航到解决方案资源管理器中的 SSIS 包。  
   
 2.  右键单击包名称，然后选择**执行包**。  
   
- 有关正在运行的包的详细信息，请参阅"正在运行的包"网址[http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)。 有关任何 SSIS 包，与相关的其他信息时，请参阅"包操作指南主题 (SSIS)" [http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)。  
+[运行 Integration Services (SSIS) 包](https://docs.microsoft.com/sql/integration-services/packages/run-integration-services-ssis-packages)提供了详细的信息。 
   
-## <a name="verifying-the-results"></a>验证结果  
+## <a name="verify-the-results"></a>验证结果  
  后执行包，你必须通过登录到 SQL Server 并导航到 Siebel 数据导入到的数据库验证结果。 执行包应已创建表目标数据库中。 应使用 Siebel 表中的值填充此表。  
   
 ## <a name="see-also"></a>另请参阅  

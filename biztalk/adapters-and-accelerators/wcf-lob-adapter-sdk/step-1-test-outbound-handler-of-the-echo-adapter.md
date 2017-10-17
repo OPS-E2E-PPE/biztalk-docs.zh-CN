@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bf419a8ae3e6611f3d071cc94d274a5f2b0e00f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>步骤 1： 测试 Echo 适配器的出站处理的程序
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **完成时间：** 15 分钟  
   
- 在此步骤中，你将测试由 Echo 适配器提供的三个出站操作。 你将使用执行此类情况的操作[!INCLUDE[vs2010](../../includes/vs2010-md.md)]，添加适配器服务引用 Visual Studio 插件和自定义代码。  
+ 在此步骤中，你将测试由 Echo 适配器提供的三个出站操作。 你将执行此操作使用 Visual Studio 中，添加适配器服务引用 Visual Studio 插件和自定义代码。  
   
 ## <a name="prerequisites"></a>先决条件  
  若要完成此步骤，你必须已完成[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。  
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在 EchoCustomGreetingsFromFile 测试代码中，请确保自定义问候语使用你在前一过程中创建的文件。 更改代码以反映你的文件的位置。  
   
-8.  在[!INCLUDE[vs2010](../../includes/vs2010-md.md)]上**文件**菜单上，单击**保存所有**。  
+8.  在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。  
   
 9. 运行该应用程序。 你应看到类似于下面的输出：  
   

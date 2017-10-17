@@ -13,11 +13,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d3febbda1799c1f002ed352caecc5d9d838db00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82bfb1782c6bccdafe4f69326cddff0f49974386
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a>使用 SQL 适配器进行故障排除操作问题：
 本部分讨论如何使用故障排除方法来解决操作使用时可能遇到的错误[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。  
@@ -203,7 +203,7 @@ System.Data.SqlClient.SqlException: Invalid object name '<temp_table_name>'.
 ###  <a name="BKMK_SQLVS2008"></a>使用 Visual Studio 中的适配器时出现的无效的绑定警告  
  **问题**  
   
- 当你使用该适配器创建的应用程序在[!INCLUDE[vs2010](../../includes/vs2010-md.md)]并打开生成的适配器的配置文件 (app.config)，你看到类似于以下警告：  
+ 当你使用该适配器在 Visual Studio 中创建应用程序并打开生成的适配器的配置文件 (app.config) 时，你将看到类似于以下警告：  
   
 ```  
 The element 'bindings' has invalid child element 'sqlBinding'. List of possible elements expected: 'basicHttpBinding, customBinding, ...  

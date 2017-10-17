@@ -12,29 +12,29 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ae2233e1d98ff3fde5e27f54e8877fb4b73a96b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 101124b5992ba2fb6948ca2722700bb01bdc2a95
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="executing-a-peoplesoft-enterprise-sample-get"></a>执行 PeopleSoft 企业示例 Get
-使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。 此适配器是 Microsoft 提供的与 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 配合使用的一组八个业务线 (LOB) 适配器之一。  
+# <a name="execute-a-peoplesoft-enterprise-sample-get"></a>执行 PeopleSoft 企业示例 Get
+使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
   
  这是 PeopleSoft 实验室工作的第二部分。 在第一部分（实验室 1）中，您在未使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 协助或其他 Microsoft 技术的情况下，手动访问并修改了 PeopleSoft 系统上的数据。 在本部分（实验室 2）中，你将创建一个 BizTalk 业务流程作为 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目的一部分。 您需要针对此业务流程配置端口，以便使用 PeopleSoft 适配器获取 PeopleSoft 系统中的数据。  
   
 ## <a name="prerequisites"></a>先决条件  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
 -   Microsoft BizTalk Adapters for Enterprise Applications  
   
--   Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Microsoft Visual Studio  
   
 -   Sun Systems Java Development Kit (JDK) 版本 1.4 或更高版本  
   
 > [!NOTE]
->  有关安装和配置企业应用程序的 Microsoft BizTalk 适配器的信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)。 本文档包含 JD Edwards、PeopleSoft、Oracle、Tibco 和 Siebel LOB 适配器的重要配置信息。  
+>  请参阅[安装和配置企业应用程序的适配器](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)博士 Edwards、 PeopleSoft 和 TIBCO 适配器的密钥配置信息。  
   
 ## <a name="lab-2---executing-a-peoplesoft-sample-get"></a>实验室 2 - 执行 PeopleSoft Get 示例  
  在此实验室中，您将针对 PeopleSoft 系统执行 **Get** 操作。 具体将执行以下任务：  
@@ -58,29 +58,23 @@ ms.lasthandoff: 09/20/2017
   
  **C:\Program Files\Microsoft BizTalk 适配器 Enterprise Applications\PeopleSoft Enterprise(r) \Config**  
   
- 有关如何将 GET_CI_INFO 组件接口安装到 PeopleSoft 中的一般说明，请参阅随适配器附带的《安装指南》或查阅以下网址： [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)。 这些说明面向经验丰富的 PeopleSoft 管理员。  
+ 中提供了有关安装到 PeopleSoft GET_CI_INFO 组件接口的一般说明[安装和配置企业应用程序的适配器](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)。 这些说明面向经验丰富的 PeopleSoft 管理员。  
   
-### <a name="verifying-the-peoplesoft-prerequisites"></a>验证 PeopleSoft 必备组件  
+## <a name="step-1-confirm-the-peoplesoft-rerequisites"></a>步骤 1： 确认 PeopleSoft rerequisites  
  开始创建与 PeopleSoft 适配器配合使用的 BizTalk 项目之前，需要确保为访问 PeopleSoft 正确安装了所有必备组件。  
   
-##### <a name="to-verify-the-peoplesoft-prerequisites"></a>若要验证 PeopleSoft 必备组件，请执行以下步骤：  
+1.  确认 PSJOA。JAR 文件位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]C:\psjars\ver841 文件夹中的计算机。 （此文件可能位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的其他位置。 在以下给定的配置中，假设该文件位于此位置。）  
   
-1.  确保 PSJOA.JAR 文件位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机的 C:\psjars\ver841 文件夹中。 （此文件可能位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的其他位置。 在以下给定的配置中，假设该文件位于此位置。）  
+2.  确认 get_ci_info.pc 文件位于 Enterprise Applications\PeopleSoft Enterprise(r) \Config 文件夹 C:\Program Files\Microsoft BizTalk 适配器。  
   
-2.  确保 get_ci_info.pc 文件位于 C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Config 文件夹中。  
+3.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。 确保安装了 PeopleSoft 适配器，且该适配器位于列表中。  
   
-3.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
+     如果未安装 PeopleSoft 适配器，请安装企业应用程序的 BizTalk 适配器（请参阅前面的“必备组件”部分）。 安装适配器之后，右键单击“适配器”  ，然后单击“新建 - 适配器”  以安装 PeopleSoft 适配器。 重新启动主机实例，这才会生效。  
   
-4.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。 确保安装了 PeopleSoft 适配器，且该适配器位于列表中。  
-  
-     如果未安装 PeopleSoft 适配器，请安装企业应用程序的 BizTalk 适配器（请参阅前面的“必备组件”部分）。 安装适配器之后，右键单击“适配器”  ，然后单击“新建 - 适配器”  以安装 PeopleSoft 适配器。 你必须重新启动主机实例才能使此操作生效。  
-  
-### <a name="creating-a-send-port-for-peoplesoft"></a>创建 PeopleSoft 的发送端口  
+## <a name="step-2-create-a-send-port-for-peoplesoft"></a>步骤 2： 为 PeopleSoft 创建发送端口  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要具有发送端口以便用于与 PeopleSoft 系统通信。 此发送端口将最终绑定到业务流程的逻辑端口。  
   
-##### <a name="to-create-the-peoplesoft-send-port"></a>创建 PeopleSoft 发送端口  
-  
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**应用程序**，然后展开**BizTalk.EnterpriseApplication。**  
+1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，然后展开**BizTalk.EnterpriseApplication。**  
   
 2.  右键单击“发送端口” ，单击“新建” ，然后选择“静态要求响应发送端口” 。 在“发送端口属性”  对话框中，输入以下属性值：  
   
@@ -114,10 +108,8 @@ ms.lasthandoff: 09/20/2017
   
 4.  单击“确定”  两次以关闭对话框。  
   
-### <a name="creating-a-biztalk-orchestration-project"></a>创建 BizTalk 业务流程项目  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3： 创建 BizTalk 业务流程项目  
  现在，您将在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建 BizTalk 项目，并配置该项目中的业务流程，以处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与 PeopleSoft 系统之间的通信。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
-  
-##### <a name="to-create-the-biztalk-orchestration-project-in-visual-studio"></a>在 Visual Studio 中创建 BizTalk 业务流程项目  
   
 1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`PS_Test`作为唯一项目名称，然后单击**确定**。  
   
@@ -148,7 +140,7 @@ ms.lasthandoff: 09/20/2017
   
  要完成业务流程，你需要创建并配置用于接收和发送 XML 文件的端口。 首先，设置一个新的接收端口，以便接受包含 **Get** 方法的初始 XML 输入文件以启动业务流程。  
   
-##### <a name="to-configure-a-receive-port"></a>配置接收端口  
+#### <a name="configure-a-receive-port"></a>配置接收端口  
   
 1.  在上一步中打开的 BizTalk Orchestration.odx 文件中，右键单击左侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
@@ -172,7 +164,7 @@ ms.lasthandoff: 09/20/2017
   
  接下来，创建一个发送端口，以接受包含位置结果（从调用 PeopleSoft **Get** 方法获得）的 XML 文件。 业务流程使用文件适配器通过此发送端口将该 XML 文件写入磁盘。  
   
-##### <a name="to-configure-a-send-port"></a>配置发送端口  
+#### <a name="configure-a-send-port"></a>配置发送端口  
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击右侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”页上，单击“下一步”。    
   
@@ -196,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
  最后，创建一个发送/接收端口，以将包含 **Get** 方法的初始 XML 输入文件发送到 PeopleSoft 系统。 此端口还将接收 XML 文件，该文件包含从 PeopleSoft 系统上调用 **Get** 方法获得的位置信息。  
   
-##### <a name="to-configure-a-sendreceive-port"></a>配置发送/接收端口  
+#### <a name="configure-a-sendreceive-port"></a>配置发送/接收端口  
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击右侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
@@ -218,7 +210,7 @@ ms.lasthandoff: 09/20/2017
   
  现在，将两个“发送”  形状和两个“接收”  形状插入业务流程，以链接到您刚才创建的端口。  
   
-##### <a name="to-add-send-and-receive-shapes"></a>添加“发送”和“接收”形状  
+#### <a name="add-send-and-receive-shapes"></a>添加发送和接收形状  
   
 1.  将工具箱中的“接收”  组件拖放到业务流程的起点（绿色圆圈）下。 单击**接收**形状，然后在属性窗口中，输入`FromDisk`为**名称**，并设置**激活**到`true`。 执行此操作后，此接收端口上收到传入文档时将激活业务流程。  
   
@@ -232,7 +224,7 @@ ms.lasthandoff: 09/20/2017
   
  在此业务流程中，您仅使用 **Get-Request** 和 **Get-Response** 消息。 如果业务流程正在更新数据（假设使用 **UpdateEx** 方法），则需要其他请求/响应消息。  
   
-##### <a name="to-define-and-assign-messages-to-ports"></a>定义并将消息分配到端口  
+#### <a name="define-and-assign-messages-to-ports"></a>定义并将消息分配到端口  
   
 1.  在左侧的端口图面上，  单击 **“FileIn”** 端口上的“请求”。 在“属性”窗口中，依次展开“消息类型” 和“多部分消息” ，然后单击“PS_Test.Get” 。  
   
@@ -260,12 +252,10 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
-### <a name="building-and-deploying-the-project"></a>生成并部署项目  
+## <a name="step-4-build-and-deploy-the-project"></a>步骤 4： 生成并部署项目  
  现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中。  
   
-##### <a name="to-build-and-deploy-the-project"></a>生成并部署项目  
-  
-1.  单击**启动**，指向**所有程序**，指向**Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]** ，指向**Visual Studio Tools**，然后单击 **[!INCLUDE[vs2010](../includes/vs2010-md.md)]命令提示符**。  
+1.  在 Visual Studio 中，依次指向**Visual Studio Tools**，然后选择 Visual Studio 命令提示符 * *。  
   
 2.  要生成项目，您需要强名称密钥文件。在命令提示符下，输入以下内容以创建强名称密钥文件：  
   
@@ -287,10 +277,10 @@ ms.lasthandoff: 09/20/2017
   
 10. 成功生成该项目后，右键单击“PS_Test”  项目，然后单击“部署” 。  
   
-### <a name="testing-the-application-and-viewing-the-xml-output"></a>测试应用程序并查看 XML 输出  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>步骤 5： 测试应用程序和查看 XML 输出  
  现在，你将测试你所创建和部署的应用程序。 你将创建用于启动业务流程进程的 XML 文件，然后将文件夹配置为接收和发送应用程序中的 XML 文件。 配置应用程序之后，将运行该应用程序并查看业务流程返回的 XML 文件。  
   
-##### <a name="to-generate-the-xml-file-for-the-query"></a>生成 XML 文件以便查询  
+#### <a name="generate-the-xml-file-for-the-query"></a>生成查询的 XML 文件  
   
 1.  在解决方案资源管理器中，双击“LOCATIONService_LOCATION_x5d.xsd”  以打开该文件。  
   
@@ -304,11 +294,11 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/ef65a96c-2daa-44db-ab95-d18b1fda934e.gif "ef65a96c-2daa-44db-ab95-d18b1fda934e")  
   
-##### <a name="to-configure-and-start-the-biztalk-application"></a>配置和启动 BizTalk 应用程序  
+#### <a name="configure-and-start-the-biztalk-application"></a>配置和启动 BizTalk 应用程序  
   
 1.  配置用于接收传入文件和发送传出文件的文件夹。 转到**C:\LABS\PS_TEST**并创建两个新的子文件夹名为`FileIn`和`FileOut`。  
   
-2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**应用程序**，右键单击**PS_Test** ，然后单击**配置**。  
+2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**，展开**BizTalk 组**，展开**应用程序**，右键单击**PS_Test** ，然后单击**配置**。  
   
      ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
@@ -386,7 +376,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/7bf30707-c7c6-409f-af18-9c9dfeb0de58.gif "7bf30707-c7c6-409f-af18-9c9dfeb0de58")  
   
-##### <a name="to-test-the-orchestration"></a>测试业务流程  
+#### <a name="test-the-orchestration"></a>测试业务流程  
   
 1.  在 **“C:\Labs\PS_Test”** 目录中，将 **Samplequery.xml** 文件更改为以下内容：  
   

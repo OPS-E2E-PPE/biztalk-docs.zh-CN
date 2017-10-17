@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 929a83ae28ed85da3c06c1e03b98677e0fca7f82
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>步骤 1： 发布 Siebel 业务组件操作作为 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
  有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
-### <a name="to-publish-the-siebel-business-components-as-a-wcf-service"></a>作为 WCF 服务发布 Siebel 业务组件  
+## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>作为 WCF 服务发布 Siebel 业务组件  
   
 1.  启动[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后创建一个项目。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
      或者，从**项目类型**窗格中，展开**Visual C#**，然后选择**Web**。 从**模板**窗格中，选择**WCF 适配器服务**。  
   
     > [!NOTE]
-    >  如果你安装[!INCLUDE[vs2010](../../includes/vs2010-md.md)]Web 开发组件后， **WCF 适配器服务**模板也会提供**新的网站**选项。  
+    >  如果与 Web 开发组件，安装 Visual Studio **WCF 适配器服务**模板也会提供**新的网站**选项。  
   
 3.  指定的名称和位置的解决方案，然后单击**确定**。 WCF 适配器服务开发向导将启动。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
         |X509FindType|要执行的 X.509 搜索的类型。<br /><br /> **注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
   
         > [!NOTE]
-        >  有关证书和关联的属性的详细信息，请参阅"X509ClientCertificateCredentialsElement 属性"在[http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771)。  
+        >  有关证书和关联的属性的详细信息，请参阅[X509ClientCertificateCredentialsElement 属性](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)。
   
     2.  在**终结点行为配置**框中，指定以下设置的值：  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 09/20/2017
   
     |属性|指定的值|  
     |----------------------|-----------------------|  
-    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮**（...）**来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅"BasicHttpBindingElement 成员"网址[http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)。|  
+    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮**（...）**来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅[BasicHttpBindingElement 类](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)。|  
     |端点名称|指定协定的终结点名称。|  
   
      根据你在前面的页面中指定的值自动填充此页上的其他字段。  
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 16. WCF 服务发布。  
   
-    1.  请确保 Internet 信息服务 (IIS) 启用 SSL。 有关如何为 IIS 启用 SSL 的说明，请参阅[http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)。  
+    1.  请确保 Internet 信息服务 (IIS) 启用 SSL。 请参阅[如何设置 SSL](https://docs.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis)。
   
     2.  右键单击解决方案资源管理器中的项目，然后单击**发布**。  
   

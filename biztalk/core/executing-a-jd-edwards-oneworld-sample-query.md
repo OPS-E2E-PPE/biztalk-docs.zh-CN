@@ -12,22 +12,22 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35d05dfe719a9b199d7422f99ef80e888126f01f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58e06eb1b606217aea6fe5e40ac645a2eaf623c2
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="executing-a-jd-edwards-oneworld-sample-query"></a>执行 JD Edwards OneWorld 示例查询
-可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。 此适配器是 Microsoft 提供的与 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 配合使用的一组八个业务线 (LOB) 适配器之一。  
+# <a name="execute-a-jd-edwards-oneworld-sample-query"></a>执行博士 Edwards OneWorld 示例查询
+可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
   
  这是 JD Edwards OneWorld 实验室工作的第二部分。 第一部分（实验室 1）中，你在没有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 协助或其他 Microsoft 技术的情况下，手动访问 JD Edwards OneWorld 系统上的数据。 在本部分（实验室 2）中，你将创建一个 BizTalk 业务流程作为 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目的一部分。 你将在此业务流程中配置端口，以使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统中获取数据。  
   
 ## <a name="prerequisites"></a>先决条件  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
--   Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 
   
 -   JD Edwards OneWorld 客户端软件  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 -   Microsoft BizTalk Adapters for Enterprise Applications  
   
 > [!NOTE]
->  有关安装和配置 Microsoft BizTalk 适配器为企业应用程序的信息，请参阅[超链接"http://go.microsoft.com/fwlink/?LinkId=196039"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039)。 本文档包含 JD Edwards、PeopleSoft、JD Edwards OneWorld、TIBCO 和 Siebel LOB 适配器的重要配置信息。  
+>  请参阅[安装和配置企业应用程序的适配器](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)博士 Edwards、 PeopleSoft 和 TIBCO 适配器的密钥配置信息。  
   
 ## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>实验室 2 - 执行 JD Edwards OneWorld 示例查询  
  在本实验中，将执行**获取**针对博士 Edwards OneWorld 系统操作。 具体将执行以下任务：  
@@ -57,43 +57,31 @@ ms.lasthandoff: 09/20/2017
   
  在运行服务请求之前，必须为特定的 JD Edwards OneWorld 对象创建服务请求和响应架构。 通过直接询问 JD Edwards OneWorld 中支持的元数据对象，添加生成的项/添加适配器向导可以创建这些架构。 此实验室说明创建架构所需的步骤**地址簿图： MBF**方法并处理查询。  
   
-## <a name="procedures-for-lab-2--executing-a-jd-edwards-oneworld-sample-query"></a>实验室 2 的过程 - 执行 JD Edwards OneWorld 示例查询  
+## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>步骤 1： 验证博士 Edwards OneWorld 先决条件  
+ 在开始创建 BizTalk 项目以便使用 JD Edwards OneWorld 适配器之前，你需要确保访问 JD Edwards OneWorld 系统所需的文件和适配器设置正确。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上，JD Edwards OneWorld 适配器通过 Java 接口与 JD Edwards OneWorld 系统进行通信。    
+
+1. 四个文件所需的适当的接口访问使用博士 Edwards OneWorld 适配器博士 Edwards OneWorld 系统： Connector.jar、 Kernel.jar、 BTSLIBinterop.jar 和 JDEJAccess.jar。  
   
-### <a name="verifying-the-jd-edwards-oneworld-prerequisites"></a>验证 JD Edwards OneWorld 先决条件  
- 在开始创建 BizTalk 项目以便使用 JD Edwards OneWorld 适配器之前，你需要确保访问 JD Edwards OneWorld 系统所需的文件和适配器设置正确。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上，JD Edwards OneWorld 适配器通过 Java 接口与 JD Edwards OneWorld 系统进行通信。  
+    -   Connector.jar 和 Kernel.jar 文件随附了 JD Edwards OneWorld 系统，可以从 JD Edwards OneWorld 管理员获取。 这些文件在 C:\JDEOWJars 文件夹中。  
   
- 四个文件所需的适当的接口访问使用博士 Edwards OneWorld 适配器博士 Edwards OneWorld 系统： Connector.jar、 Kernel.jar、 BTSLIBinterop.jar 和 JDEJAccess.jar。  
+    -   遵循适配器安装指南中附带的这些说明，BTSLIBinterop.jar 文件可由 JD Edwards OneWorld 系统生成。 此文件在 C:\JDEOWJars 文件夹中。  
   
--   Connector.jar 和 Kernel.jar 文件随附了 JD Edwards OneWorld 系统，可以从 JD Edwards OneWorld 管理员获取。 这些文件在 C:\JDEOWJars 文件夹中。  
+    -   JDEJAccess.jar 文件是 JDEOW 适配器的一部分，包含在该适配器的安装中。 默认情况下，它位于 C:\Program Files\Microsoft BizTalk 适配器对于企业 Applications\J.D。 Edwards OneWorld® \Classes 文件夹。  
   
--   遵循适配器安装指南中附带的这些说明，BTSLIBinterop.jar 文件可由 JD Edwards OneWorld 系统生成。 此文件在 C:\JDEOWJars 文件夹中。  
+2. 确认 Connector.jar，Kernel.jar，并且 BTSLIBinterop.jar 文件位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]C:\JDEOWJars 文件夹中的计算机。  
   
--   JDEJAccess.jar 文件是 JDEOW 适配器的一部分，包含在该适配器的安装中。 默认情况下，它位于 C:\Program Files\Microsoft BizTalk 适配器对于企业 Applications\J.D。 Edwards OneWorld® \Classes 文件夹。  
+3. 确认 JDEJAccess.jar 文件上是否存在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]企业 Applications\J.D 的 C:\Program Files\Microsoft BizTalk 适配器中的计算机。 Edwards OneWorld\Classes 文件夹。  
   
-##### <a name="to-verify-the-jd-edwards-oneworld-prerequisites"></a>验证 JD Edwards OneWorld 先决条件的步骤  
+## <a name="step-2-configure-biztalk-send-ports"></a>步骤 2： 配置 BizTalk 发送端口  
+接下来，验证博士 Edwards OneWorld 适配器已安装，并且创建发送端口。  
+
+1.  打开**BizTalk Server 管理**，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
   
-1.  请确保 Connector.jar、Kernel.jar 和 BTSLIBinterop.jar 文件在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机的 C:\JDEOWJars 文件夹中。  
+    确认**JDE_OneWorld**列出适配器。 如果没有安装 JD Edwards OneWorld 适配器，请安装企业应用程序的 BizTalk 适配器（请参阅前面的“先决条件”部分）。 安装适配器后，右键单击**适配器**，然后单击**新建-适配器**安装博士 Edwards OneWorld 适配器。 重新启动主机实例，这才会生效。  
   
-2.  请确保 JDEJAccess.jar 文件上存在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]企业 Applications\J.D 的 C:\Program Files\Microsoft BizTalk 适配器中的计算机。 Edwards OneWorld® \Classes 文件夹。  
+2. 展开**应用程序**，然后展开**BizTalk 应用程序 1**。  
   
-3.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
-  
-### <a name="configuring-biztalk-send-ports"></a>配置 BizTalk 发送端口  
- 现在，你将验证是否安装了 JD Edwards OneWorld 适配器并创建 JD Edwards OneWorld 发送端口。  
-  
-##### <a name="to-verify-that-the-jd-edwards-oneworld-adapter-is-installed-in-includepragueincludesprague-mdmd"></a>验证 JD Edwards OneWorld 适配器是否安装在 [!INCLUDE[prague](../includes/prague-md.md)] 中的步骤  
-  
-1.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
-  
-2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
-  
-     确保**JDE_OneWorld**安装适配器和列表。 如果没有安装 JD Edwards OneWorld 适配器，请安装企业应用程序的 BizTalk 适配器（请参阅前面的“先决条件”部分）。 安装适配器后，右键单击**适配器**，然后单击**新建-适配器**安装博士 Edwards OneWorld 适配器。 你必须重新启动主机实例才能使此操作生效。  
-  
-##### <a name="to-create-the-jd-edwards-oneworld-send-port"></a>创建 JD Edwards OneWorld 发送端口的步骤  
-  
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，然后展开**BizTalk 应用程序 1**。  
-  
-2.  右键单击**发送端口**，单击**新建**，然后单击**静态请求-响应发送端口**。为这些字段中输入以下值：  
+3.  右键单击**发送端口**，单击**新建**，然后单击**静态请求-响应发送端口**。为这些字段中输入以下值：  
   
     1.  **名称：**  `JDE_OneWorldPort`  
   
@@ -105,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  **接收管道：**  `XMLReceive`  
   
-3.  单击“配置” ，然后输入以下属性值：  
+4.  单击“配置” ，然后输入以下属性值：  
   
     1.  **主机：** \<输入你 JDEOW 的主机名 >  
   
@@ -125,14 +113,13 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/jdeow-transportproperties-configurebutton.gif "JDEOW_TransportProperties_ConfigureButton")  
   
-4.  单击**确定**两次以关闭**发送端口属性**对话框。  
+5.  选择**确定**关闭**发送端口属性**。  
   
-### <a name="creating-a-biztalk-orchestration-project"></a>创建 BizTalk 业务流程项目  
- 现在，你将在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建 BizTalk 项目，并配置该项目中的业务流程，以处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与 JD Edwards OneWorld 系统之间的通信。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3： 创建 BizTalk 业务流程项目  
+接下来，创建中的 BizTalk 项目[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，和项目中，以处理之间的通信配置业务流程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和博士 Edwards OneWorld 系统。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
+
   
-##### <a name="to-create-the-biztalk-orchestration-project-in-visual-studio"></a>在 Visual Studio 中创建 BizTalk 业务流程项目  
-  
-1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`JDE_OW_Test`作为唯一项目名称，然后单击**确定**。  
+1.  打开[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，并在 C:\LABS 文件夹中创建一个新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`JDE_OW_Test`作为唯一项目名称，然后单击**确定**。  
   
 2.  在解决方案资源管理器中，右键单击该项目，单击“添加” ，然后单击“添加生成的项” 。 在类别窗格中，选择**添加适配器元数据**，在模板窗格中，选择**添加适配器元数据**，然后单击**添加**。  
   
@@ -154,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
  要完成业务流程，你需要创建并配置用于接收和发送 XML 文件的端口。 首先，配置文件适配器所用的接收端口，以便从磁盘将包含查询的 XML 输入到业务流程。  
   
-##### <a name="to-configure-a-receive-port-to-accept-the-input-xml-file"></a>配置接收端口以接受 XML 输入文件的步骤  
+#### <a name="configure-a-receive-port-to-accept-the-input-xml-file"></a>配置要接受输入的 XML 文件的接收端口  
   
 1.  双击“BizTalk Orchestration.odx”文件以打开业务流程。   
   
@@ -180,7 +167,7 @@ ms.lasthandoff: 09/20/2017
   
  接下来，创建一个发送/接收端口，将包含查询的初始 XML 输入文件发送到 JD Edwards OneWorld 系统。 此端口还接收 XML 输出文件，该文件包含来自对 JD Edwards OneWorld 系统调用的查询结果。  
   
-##### <a name="to-configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>配置发送/接收端口以连接 JD Edwards OneWorld 的步骤  
+#### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>使用博士 Edwards OneWorld 配置到接口发送/接收端口  
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击右侧端口图面，然后单击**新配置端口**。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
@@ -198,7 +185,7 @@ ms.lasthandoff: 09/20/2017
   
  最后，配置文件适配器要使用的发送端口，从而将包含查询结果的 XML 输出到磁盘。  
   
-##### <a name="to-configure-a-send-port-to-output-the-xml-file-to-disk"></a>配置发送端口将 XML 文件输出到磁盘的步骤  
+#### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a>配置要输出到磁盘的 XML 文件的发送端口  
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击左的端口图面，然后单击**新配置端口**。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
@@ -224,7 +211,7 @@ ms.lasthandoff: 09/20/2017
   
  **JDE_File_In**和**JDE_File_Out**你刚刚创建需要的端口相关联的消息类型。  
   
-##### <a name="to-assign-message-types-to-the-ports"></a>为端口分配消息类型  
+#### <a name="assign-message-types-to-the-ports"></a>将消息类型分配到的端口  
   
 1.  在左的端口面上**JDE_File_In**端口，请单击**请求**。 在属性窗口中，展开**消息类型**，展开**多部分消息**，然后单击**JDE_OW_TestAddressBookMasterMBF**。  
   
@@ -232,7 +219,7 @@ ms.lasthandoff: 09/20/2017
   
  插入两个**发送**形状和第二个**接收**用于链接到的端口到业务流程形状。  
   
-##### <a name="to-add-send-and-receive-shapes"></a>添加“发送”和“接收”形状  
+#### <a name="add-send-and-receive-shapes"></a>添加发送和接收形状  
   
 1.  将工具箱中的“接收”  组件拖放到业务流程的起点（绿色圆圈）下。 单击**接收**形状，然后在属性窗口中，输入`Get_File`为**名称**，并设置**激活**到`true`。 执行此操作后，此接收端口上收到传入文档时将激活业务流程。  
   
@@ -260,10 +247,8 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/jdeow-portsurface-connectcomponentstoports.gif "JDEOW_PortSurface_ConnectComponentsToPorts")  
   
-### <a name="building-and-deploying-the-project"></a>生成并部署项目  
+## <a name="step-4-build-and-deploy-the-project"></a>步骤 4： 生成并部署项目  
  现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中。  
-  
-##### <a name="to-build-and-deploy-the-project"></a>生成并部署项目  
   
 1.  启动**Visual Studio 命令提示**。  
   
@@ -291,10 +276,10 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")  
   
-### <a name="testing-the-application-and-viewing-the-xml-output"></a>测试应用程序并查看 XML 输出  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>步骤 5： 测试应用程序和查看 XML 输出  
  现在，你将测试你所创建和部署的应用程序。 你将创建用于启动业务流程进程的 XML 文件，然后将文件夹配置为接收和发送应用程序中的 XML 文件。 配置应用程序之后，将运行该应用程序并查看业务流程返回的 XML 文件。  
   
-##### <a name="to-generate-the-xml-file-for-the-query"></a>生成 XML 文件以便查询  
+#### <a name="generate-the-xml-file-for-the-query"></a>生成查询的 XML 文件  
   
 1.  在解决方案资源管理器中，双击**N0100041Service_N0100041.xsd**打开文件。  
   
@@ -308,7 +293,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  右键单击**N0100041Service_N0100041.xsd** ，然后单击**生成实例**。 这将生成**Sample.xml**文件。 此文件将放入接收位置，作为适配器启动业务流程进程的输入。  
   
-##### <a name="to-configure-and-start-the-biztalk-application"></a>配置和启动 BizTalk 应用程序  
+#### <a name="configure-and-start-the-biztalk-application"></a>配置和启动 BizTalk 应用程序  
   
 1.  配置用于接收传入文件和发送传出文件的文件夹。 转到**C:\LABS\JDE_OW_Test**并创建两个新的子文件夹名为`FileIn`和`FileOut`。  
   
@@ -396,7 +381,7 @@ ms.lasthandoff: 09/20/2017
   
 17. 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**JDE_OW_Test**应用程序，，然后单击**启动**。  
   
-##### <a name="to-test-the-orchestration"></a>测试业务流程  
+#### <a name="test-the-orchestration"></a>测试业务流程  
   
 1.  在**C:\Labs\JDE_OW_Test**目录**Sample.xml**文件将显示为：  
   

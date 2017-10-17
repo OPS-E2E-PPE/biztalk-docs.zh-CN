@@ -12,11 +12,11 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7c80859e83d915d835aa99b0456ca763ed267f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38530cfdbde78e96fb41093c79b6a5d1bb8fd132
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>演练： 使用 WCF NetMsmq 适配器的 WCF 服务发布
   
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
  在完成本演练后，你将了解如何执行以下任务：  
   
--   在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，使用**部署**命令将 BizTalk 程序集部署到的本地实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建一个用这些程序集填充的 BizTalk 应用程序。 BizTalk 程序集将包含各种资源信息，例如要在 BizTalk 解决方案中使用的业务流程、管道、架构和映射。  
+-   在 Visual Studio 中使用**部署**命令将 BizTalk 程序集部署到的本地实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建一个用这些程序集填充的 BizTalk 应用程序。 BizTalk 程序集将包含各种资源信息，例如要在 BizTalk 解决方案中使用的业务流程、管道、架构和映射。  
   
 -   在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，配置 WCF-NetMsmq 接收位置以承载已发布的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
   
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  若要执行本示例中的步骤，请确保你的环境中安装了以下必备软件：  
   
--   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   这两个的程序集将生成并运行部署过程中，并运行此示例中的计算机的计算机需要 Microsoft Windows Server、.NET Framework 和 BizTalk Server。  
   
--   用于构建程序集和运行部署过程的计算机需要安装 Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+-   用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
   
 -   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装过程中安装的选件。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  提取到 WCFNetMsmqAdapterPublishing.exe **C:\WCFNetMsmqAdapterPublishing**。  
   
-2.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开**WCFNetMsmqAdapterPublishing.sln**文件。  
+2.  在 Visual Studio 中，打开**WCFNetMsmqAdapterPublishing.sln**文件。  
   
 3.  在解决方案资源管理器，展开**BizTalkApp**，然后打开**OrderProcess.odx**查看。 示例业务流程接收订单请求消息，但只返回订单响应消息。  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  在 IIS 管理器中，在中心窗格中，单击**内容视图**以显示应用程序的文件。  
   
-    6.  右键单击**Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc**服务文件**BizTalk WCF 服务发布向导**创建，并依次**浏览**。 这将打开 Internet Explorer 显示**BizTalkServerInstance 服务**指示的页的实例[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务正在运行。 此页会显示一个完整的 WSDL 地址，您可以通过复制该地址并将其用于服务元数据工具 (svcutil.exe)，或从 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中来检索可用于创建该服务客户端应用程序的代理代码和配置文件。  
+    6.  右键单击**Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc**服务文件**BizTalk WCF 服务发布向导**创建，并依次**浏览**。 这将打开 Internet Explorer 显示**BizTalkServerInstance 服务**指示的页的实例[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务正在运行。 页会显示完整的 WSDL 地址，你可以复制和使用的服务元数据工具 (svcutil.exe)，或从 Visual Studio 中，检索代理代码和配置文件可以用于创建服务的客户端应用程序。  
   
     7.  在命令行从完整的 WSDL 地址复制到剪贴板**BizTalkServerInstance 服务**Internet 资源管理器显示上一步中的页。  
   
@@ -205,11 +205,11 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="build-the-client-application"></a>生成客户端应用程序  
   
-1.  打开[!INCLUDE[vs2010](../includes/vs2010-md.md)]作为管理员，然后转到命令提示符**C:\WCFNetMsmqAdapterPublishing\WCFClient**文件夹。 这是放置代理类和应用程序配置文件的位置。  
+1.  打开 Visual Studio 命令提示符以管理员身份并转到**C:\WCFNetMsmqAdapterPublishing\WCFClient**文件夹。 这是放置代理类和应用程序配置文件的位置。  
   
 2.  粘贴包含您在上一过程中复制的整个 WSDL 地址的完整 svcutil.exe 命令行，然后按 Enter。 这将创建代理类中， **BizTalkServiceInstance.cs**，和应用程序配置文件， **output.config**。保持命令提示符窗口打开以供最后一部分使用。  
   
-3.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，右键单击**WCFClient**，指向**添加**，然后单击**现有项**。  
+3.  在 Visual Studio 中，在解决方案资源管理器，右键单击**WCFClient**，指向**添加**，然后单击**现有项**。  
   
 4.  在**添加现有项**对话框中，浏览到**WCFClient**文件夹，选择**所有文件 (\*。\*)**中**类型的文件**下拉列表中，选择**BizTalkServiceInstance.cs**和**output.config**文件，并依次**添加**。  
   
@@ -219,7 +219,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  展开**引用**，那么请确保和**WCFClient**项目具有**System.ServiceModel.dll**引用。  
   
-8.  右键单击**WCFClient**项目，然后选择**生成**。 保持 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 打开，并转到下一部分。  
+8.  右键单击**WCFClient**项目，然后选择**生成**。 保持 Visual Studio 的打开状态并转到下一节。  
   
 ## <a name="test-the-sample-solution-with-the-wcf-netmsmq-adapter"></a>测试与 WCF NetMsmq 适配器的示例解决方案  
   
@@ -227,7 +227,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**平台设置**，展开**主机实例**，右键单击**BizTalkServerApplication**或另一个适当的主机实例，然后单击**重新启动**。 尽管本步骤中并未要求，但确保本示例到此处仍能正常运行不失为一个好的方法。  
   
-3.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]上**调试**菜单上，单击**启动但不调试**运行 WCFClient 应用程序。 这会向 WCF-NetMsmq 接收位置发送示例消息。 您将看到以下输出消息，说明消息已发送。  
+3.  在 Visual Studio 中，在**调试**菜单上，单击**启动但不调试**运行 WCFClient 应用程序。 这会向 WCF-NetMsmq 接收位置发送示例消息。 您将看到以下输出消息，说明消息已发送。  
   
      **调用 WCF NetMsmq 提交操作接收位置**  
   
@@ -235,7 +235,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  按任意键以关闭 WCFClient 应用程序。  
   
-5.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]命令提示符下，请转到**C:\WCFNetMsmqAdapterPublishing\Out**文件夹，然后确保响应消息发回 WCFClient 应用程序存在。  
+5.  在 Visual Studio 命令提示符下，请转到**C:\WCFNetMsmqAdapterPublishing\Out**文件夹，然后确保响应消息发回 WCFClient 应用程序存在。  
   
 6.  双击要打开 Internet Explorer 和视图中的 {GUID}.xml 文件**OrderID**服务处理的值。  
   

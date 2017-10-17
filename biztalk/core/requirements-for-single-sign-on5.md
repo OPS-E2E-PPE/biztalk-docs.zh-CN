@@ -1,5 +1,5 @@
 ---
-title: "单一登录 On5 要求 |Microsoft 文档"
+title: "单一登录要求 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +7,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, requirements [JD Edwards OneWorld adapters]
-- adapters [JD Edwards OneWorld adapters], Single Sign-On
-- SSO, requirements [JD Edwards OneWorld adapters]
-- Single Sign-On, enabling [JD Edwards OneWorld adapters]
 ms.assetid: 318b9977-ce24-48d6-971b-49a059a1bdbc
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b186eca2c24ef9c2731b66194a0543aba14e8bf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2abd36879428c9d775251e20dd63f8778aa7b63
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 若要使用单一登录 (SSO)，需具备以下各项：  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft BizTalk Server 
   
--   [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Visual Studio  
   
 -   企业单一登录  
   
@@ -36,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  隔离的主机应配置为受信任的身份验证。  
   
-### <a name="to-enable-sso"></a>启用 SSO 的步骤  
+## <a name="enable-sso"></a>启用 SSO  
   
 1.  在**传输属性**窗口中，选择**是**为**使用 SSO**。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c0cc9a3cbae11fd18cbe9a91249cf5d3cf42925
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f3b2888b21c2c59b01ddaf920d55ccadb79e326
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>如何通过 Oracle E-business Suite 中使用自定义 web 部件
 本部分提供有关使用 Microsoft Office SharePoint Server 的自定义 Web 部件的信息。 若要使用自定义 Web 部件，您必须执行以下操作：  
@@ -35,9 +35,8 @@ ms.lasthandoff: 09/20/2017
 -   创建在 Microsoft Office SharePoint Server 中使用业务数据目录的 Oracle E-business Suite 项目的应用程序定义文件。 有关详细信息，请参阅[步骤 2： 创建应用程序定义文件的 Oracle E-business Suite 项目](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)中[教程： 呈现数据的 SharePoint 站点上的 Oracle E-business Suite](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)。  
   
 ##  <a name="Create_a_Custom_Web_Part"></a>步骤 1： 创建自定义 Web 部件  
- 若要创建自定义 Web 部件使用 Visual Studio，请执行以下操作：  
   
-1.  启动[!INCLUDE[vs2010](../../includes/vs2010-md.md)]，然后创建一个项目。  
+1.  启动 Visual Studio，然后创建一个项目。  
   
 2.  在**新项目**对话框中，从**项目类型**窗格中，选择**Visual C#**。 从**模板**窗格中，选择**类库**。  
   

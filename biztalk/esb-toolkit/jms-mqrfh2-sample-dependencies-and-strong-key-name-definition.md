@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1933fb0b15d7b948229edf537ec4b0b80071014b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f71915866e807bea8cbd9fdcbf0b1b7ac38a505
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="jms-mqrfh2-sample-dependencies-and-strong-key-name-definition"></a>JMS MQRFH2 示例依赖关系和强密钥名称定义
-[!INCLUDE[vs2010](../includes/vs2010-md.md)]项目 ESB。JMS。PipelineComponents 取决于以下文件夹：  
+Visual Studio 项目 ESB 中。JMS。PipelineComponents 取决于以下文件夹：  
   
 -   \<BizTalk Server 安装目录 >。 此文件夹提供了对以下命名空间的访问：  
   

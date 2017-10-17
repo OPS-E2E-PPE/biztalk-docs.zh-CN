@@ -1,5 +1,5 @@
 ---
-title: "如何安装内联和服务的适配器版本面向解决方案 |Microsoft 文档"
+title: "安装内联和服务的适配器版本面向解决方案 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,81 +7,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- certificate services
-- service solution tutorial, affiliat applications [SSO]
-- service solution tutorial, adapter version
-- service solution tutorial, Web services
-- service solution tutorial, definition files [BAM]
-- service solution tutorial, COM+ applications
-- service solution tutorial, virtual directories
-- service solution tutorial, testing connectivity
-- TI components
-- MQSeries queues, creating
-- service solution tutorial, deploying
-- service solution tutorial, MQSeries adapters
-- service solution tutorial, mainframe CICS applications
-- service solution tutorial, certificate services
-- service solution tutorial, back-end systems
-- service solution tutorial, MQSeries queues
-- service solution tutorial, remote environments
-- certificates, creating requests
-- service solution tutorial, starting service
-- service solution tutorial, TI components
-- service solution tutorial, inline version
-- CICS application
-- service solution tutorial, installing
-- service solution tutorial, deleting stub version
-- service solution tutorial, certificates
 ms.assetid: 6050cfe9-4e94-4a55-8b24-fbcc74d9e8f4
 caps.latest.revision: "97"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb7de8939037f9e7647c62c1164e3c3de3ab378c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbf374b4efb219f1221275819713787565a325b0
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>如何安装面向服务的解决方案的内联版本和适配器版本
 以下步骤将说明如何准备计算机以安装面向服务的解决方案的内联版本和适配器版本，以及如何在此计算机上安装该解决方案：  
   
--   [准备计算机以安装服务面向解决方案的适配器和内联版本](#step1)  
-  
--   [删除服务面向解决方案的存根 （stub） 版本](#step3)  
-  
--   [准备服务面向解决方案访问的后端系统](#step5)  
-  
--   [配置安全套接字层 (SSL) 的 Web 服务器](#step7)  
-  
--   [创建后端系统的 Web 服务](#step9)  
-  
--   [为服务面向解决方案创建 TI 组件](#step11)  
-  
--   [创建 Web 服务的业务流程的虚拟目录](#step13)  
-  
--   [生成面向服务的解决方案](#step15)  
-  
--   [创建 SSO 关联应用程序](#step17)  
-  
--   [为服务面向解决方案部署的 BAM 定义文件](#step19)  
-  
--   [部署面向服务的解决方案](#step21)  
-  
--   [配置存根 （stub） 挂起的事务 Web 服务主机不可用时](#step23)  
-  
--   [启动服务面向解决方案](#step25)  
-  
 > [!NOTE]
->  面向的解决方案位于文件夹中的服务\< *BizTalk Server 安装文件夹*> \SDK\Scenarios\SO。  
-  
-> [!NOTE]
->  如果没有大型机可用于该解决方案，则可以修改端口绑定以使用存根 Web Services 来模拟挂起事务。 该 Web Services 将在本地生成事务以模拟大型机事务。  
+>  - 面向的解决方案位于文件夹中的服务\< *BizTalk Server 安装文件夹*> \SDK\Scenarios\SO。  
+>  - 如果没有大型机可用于该解决方案，则可以修改端口绑定以使用存根 Web Services 来模拟挂起事务。 该 Web Services 将在本地生成事务以模拟大型机事务。  
   
 ##  <a name="step1"></a>准备计算机以安装服务面向解决方案的适配器和内联版本  
-  
-#### <a name="to-prepare-the-computer-for-installing-the-adapter-and-inline-versions-of-the-service-oriented-solution"></a>若要准备计算机以安装服务面向解决方案的适配器和内联版本  
   
 1.  如果你安装 Windows SharePoint Services，(root) 的默认网站从排除 Windows SharePoint Services 管理路径，如下所示： 单击**启动**，指向**所有程序**，指向**管理工具**，然后单击**SharePoint 管理中心**。  
   
@@ -110,8 +54,6 @@ ms.lasthandoff: 09/20/2017
         >  有关 SETX 命令的详细信息，请参阅 Microsoft TechNet 网站，网址[http://go.microsoft.com/fwlink/?LinkId=67831](http://go.microsoft.com/fwlink/?LinkId=67831)。  
   
 ##  <a name="step3"></a>删除服务面向解决方案的存根 （stub） 版本  
-  
-#### <a name="to-remove-the-stub-version-of-the-service-oriented-solution"></a>删除面向服务的解决方案的存根版本  
   
 1.  打开**BizTalk Server 管理控制台**，如下所示： 单击**启动**，指向**所有程序**，指向[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -175,9 +117,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step5"></a>准备服务面向解决方案访问的后端系统  
   
-#### <a name="to-install-the-required-applications-for-the-back-end-systems-for-the-service-oriented-solution-to-access"></a>为面向服务的解决方案要访问的后端系统安装必需的应用程序  
-  
-1.  在本地计算机上安装 IBM WebSphere MQ for Windows Version 5.3 Server。  
+1.  在本地计算机上安装 Windows Server IBM WebSphere MQ。  
   
     1.  保留所有默认设置。 设置**默认配置**末尾**准备 WebSphere MQ 向导**。 队列管理器命名为 QM_\<*您的计算机名称*>。  
   
@@ -207,7 +147,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  如果具有要访问的大型机 ， 则安装并配置 Microsoft Host Integration Server 2004 。 保留所有默认设置。  
   
-#### <a name="to-create-the-mqseries-queues"></a>创建 MQSeries 队列  
+#### <a name="create-the-mqseries-queues"></a>创建 MQSeries 队列  
   
 1.  打开 WebSphere MQ 资源管理器中，展开**队列管理器**，然后展开你要在其中创建队列的队列管理器。 通常情况下，队列管理器命名为 QM_\<*您的计算机名称*>。  
   
@@ -235,7 +175,7 @@ ms.lasthandoff: 09/20/2017
   
     -   LastPaymentsOutputQueue  
   
-#### <a name="to-complete-configuration-of-the-mqseries-adapter"></a>完成对 MQSeries 适配器的配置  
+#### <a name="complete-configuration-of-the-mqseries-adapter"></a>要完成的 MQSeries 适配器配置  
   
 1.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk MQSeries 代理配置向导**。  
   
@@ -249,7 +189,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  上**创建 MQSAgent COM + 应用程序**页上，单击**下一步**，然后单击**完成**上**完成**页。  
   
-#### <a name="to-configure-the-mainframe-cics-application"></a>配置大型机 CICS 应用程序  
+#### <a name="configure-the-mainframe-cics-application"></a>配置大型机 CICS 应用程序  
   
 1.  使用记事本，打开位于 %BTSSolutionsPath%\SO\MFAccess\HISTIComponent 文件夹中的 bizcbl.txt 及其“副件”(MainFrameProgramVTCS2Description.txt)，然后检查这两个文件的内容。  
   
@@ -258,7 +198,7 @@ ms.lasthandoff: 09/20/2017
     -   MainFrameProgramVTCS2Descriptoin.txt 包含用于说明输入和输出数据信息的 COMMAREA。 COMMAREA 是用于在被调用的程序和调用方程序之间来回传递数据的连续内存块。  
   
     > [!NOTE]
-    >  印书籍还可用来生成事务系统集成商 (TI) 元数据文件使用[!INCLUDE[vs2010](../includes/vs2010-md.md)]与 TI 设计器插件。  
+    >  印书籍还可用于生成与插件 TI 设计器中使用 Visual Studio 的事务系统集成商 (TI) 元数据文件。  
   
     > [!NOTE]
     >  尽管以下步骤对于成功部署是至关紧要的，但 BizTalk Server 开发人员通常不执行这些步骤。 必须依赖大型机人员才可正确配置大型机环境。 大多数的大型机环境中通常都安装了此演练所需的软件。 有关最小大型机操作系统环境的详细信息，请参阅 Host Integration Server 文档。  
@@ -321,7 +261,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step7"></a>配置安全套接字层 (SSL) 的 Web 服务器  
   
-#### <a name="to-install-certificate-services"></a>安装证书服务  
+#### <a name="install-certificate-services"></a>安装证书服务  
   
 1.  单击**启动**，指向**控制面板**，然后单击**添加或删除程序**。  
   
@@ -329,7 +269,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**Windows 组件向导**，选择**证书服务**，单击**下一步**，然后按照屏幕说明完成安装。  
   
-#### <a name="to-create-a-certificate-request"></a>创建证书请求  
+#### <a name="create-a-certificate-request"></a>创建一个证书请求  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，单击**属性**单击**目录安全性**选项卡上，并依次**服务器证书**。  
   
@@ -351,7 +291,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 上**请求文件摘要**页上，单击**下一步**，然后单击**完成**上**完成**页。  
   
-#### <a name="to-submit-the-certificate-request-to-the-certification-authority"></a>将证书请求提交给证书颁发机构  
+#### <a name="submit-the-certificate-request-to-the-certification-authority"></a>提交到证书颁发机构证书请求  
   
 1.  在 Internet Explorer，在地址框中，键入`http://localhost/certsrvt`，然后按 ENTER。  
   
@@ -361,7 +301,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  从"若要创建证书请求"，将其粘贴到过程中创建 c:\certreq.txt 复制的所有文本**保存请求**框**提交证书申请或续订申请**页，，然后单击**提交**。  
   
-#### <a name="to-issue-a-certificate-using-certification-authority-management-tool"></a>使用证书颁发机构管理工具颁发证书  
+#### <a name="issue-a-certificate-using-certification-authority-management-tool"></a>颁发证书使用证书颁发机构管理工具  
   
 1.  单击**启动**，指向**管理工具**，然后单击**证书颁发机构**。  
   
@@ -369,7 +309,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  关闭**证书颁发机构**控制台。  
   
-#### <a name="to-download-the-certificate-to-the-web-server"></a>将证书下载到 Web 服务器  
+#### <a name="download-the-certificate-to-the-web-server"></a>下载与 Web 服务器的证书  
   
 1.  在 Internet Explorer，在地址框中，键入`http://localhost/certsrvt`，然后按 ENTER。  
   
@@ -381,7 +321,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  上**安全警告**对话框中，单击**保存**，然后将证书保存为 c:\certnew.cer。  
   
-#### <a name="to-install-the-certificate-to-the-web-server"></a>将证书安装到 Web 服务器  
+#### <a name="install-the-certificate-to-the-web-server"></a>将证书安装到 Web 服务器  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**为其创建证书请求，然后单击**属性**。  
   
@@ -400,8 +340,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step9"></a>创建后端系统的 Web 服务  
   
-#### <a name="to-create-a-new-iis-application-pool-for-the-pending-transaction-web-services"></a>为挂起事务 Web Services 创建新的 IIS 应用程序池  
-  
 1.  在**Internet Information Services (IIS) Manager**，右键单击**应用程序池**，选择**新建**，然后选择**应用程序池**.  
   
     > [!NOTE]
@@ -413,7 +351,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  上**属性**页上，单击**标识**选项卡上，选择**可配置**，输入**用户名**和**密码**，然后单击**确定**。 对于此演练，请使用 BizTalk 服务所使用的同一用户帐户。  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-runtime"></a>为运行时创建 PendingTransactions Web Services  
+#### <a name="create-the-pendingtransactions-web-service-for-runtime"></a>创建运行时的 PendingTransactions Web 服务  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，指向**新建**，和然后单击**虚拟目录**运行**虚拟目录创建向导**。  
   
@@ -433,7 +371,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  在**虚拟目录**选项卡上，设置**应用程序池**到你在"创建新的 IIS 应用程序池的挂起的事务 Web 服务"的过程中创建的应用程序池。  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-development-environment"></a>为开发环境创建 PendingTransactions Web Services  
+#### <a name="create-the-pendingtransactions-web-service-for-development-environment"></a>创建开发环境 PendingTransactions Web 服务  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，指向**新建**，和然后单击**虚拟目录**运行**虚拟目录创建向导**。  
   
@@ -454,7 +392,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  在**虚拟目录**选项卡上，设置**应用程序池**到你在"创建新的 IIS 应用程序池的挂起的事务 Web 服务"的过程中创建的应用程序池。  
   
-#### <a name="to-create-the-stub-sap-web-service"></a>创建存根 SAP Web Services  
+#### <a name="create-the-stub-sap-web-service"></a>创建存根 （stub) SAP Web 服务  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，指向**新建**，和然后单击**虚拟目录**运行**虚拟目录创建向导**。  
   
@@ -474,7 +412,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step11"></a>为服务面向解决方案创建 TI 组件  
   
-#### <a name="to-create-a-com-application-for-the-ti-component"></a>为 TI 组件创建 COM+ 应用程序  
+#### <a name="create-a-com-application-for-the-ti-component"></a>创建用于 TI 组件的 COM + 应用程序  
   
 1.  在命令提示符下，运行 %systemroot%\system32\com\comexp.msc。  
   
@@ -497,7 +435,7 @@ ms.lasthandoff: 09/20/2017
   
     7.  上**完成**页上，单击**完成**。  
   
-#### <a name="to-create-a-remote-environment-to-access-the-mainframe"></a>创建远程环境以访问大型机  
+#### <a name="create-a-remote-environment-to-access-the-mainframe"></a>创建一个远程的环境，以访问主机  
   
 1.  单击**启动**，指向**所有程序**，指向**Microsoft 主机集成 Server 2004**，然后单击**TI Manager**。  
   
@@ -513,7 +451,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  上**完成**页上，单击**完成**。  
   
-#### <a name="to-create-the-ti-component-for-the-service-oriented-solution"></a>为面向服务的解决方案创建 TI 组件  
+#### <a name="create-the-ti-component-for-the-service-oriented-solution"></a>为面向服务的解决方案创建 TI 组件  
   
 1.  单击**启动**，指向**所有程序**，指向**Microsoft 主机集成 Server 2004**，然后单击**TI Manager**。  
   
@@ -529,7 +467,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  上**WIP 对象创建**页上，单击**下一步**，然后单击**完成**上**完成**页。  
   
-#### <a name="to-test-the-connectivity-to-the-mainframe"></a>测试与大型机的连接  
+#### <a name="test-the-connectivity-to-the-mainframe"></a>测试到大型机连接  
   
 1.  在 Windows 资源管理器中，浏览至 %BTSSolutionsPath%\SO\MFAccess\HISTISimpleTester 文件夹，然后双击 Interop.SOHISTIUsingCOM.dll.reg 文件。 这将添加 HISTISimpleTester 应用程序的注册表值，以便通过运行库可调用包装 (RCW) 来调用 TI 组件。  
   
@@ -540,8 +478,6 @@ ms.lasthandoff: 09/20/2017
     -   在 HISTISimpleTester 应用程序中，单击**调用大型机程序-使用 COM**。 这样将从运行在大型机上的 COBOL 应用程序返回五条记录。  
   
 ##  <a name="step13"></a>创建 Web 服务的业务流程的虚拟目录  
-  
-#### <a name="to-create-the-virtual-directories-for-the-orchestration-web-services"></a>若要创建 Web 服务的业务流程的虚拟目录  
   
 1.  在**Internet Information Services (IIS) Manager**，右键单击**应用程序池**，选择**新建**，然后选择**应用程序池**.  
   
@@ -588,8 +524,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step15"></a>生成面向服务的解决方案  
   
-#### <a name="to-build-the-service-oriented-solution"></a>若要生成面向服务的解决方案  
-  
 -   在命令提示符下，将目录更改为 %btssolutionspath%\so\btssoln，类型`SetupBTSSoln.bat`，然后按 ENTER。 SetupBTSSoln.bat 将执行以下任务：  
   
     -   创建唯一的强名称密钥 (SNK) 进行签名等解决方案的程序集。  
@@ -601,8 +535,6 @@ ms.lasthandoff: 09/20/2017
     -   在 %BTSSolutionsPath%\Common 文件夹中生成 SSOApplicationConfig。  
   
 ##  <a name="step17"></a>创建 SSO 关联应用程序  
-  
-#### <a name="to-create-the-sso-affiliate-applications"></a>若要创建 SSO 关联应用程序  
   
 1.  打开命令提示符，然后将目录更改为 %BTSSolutionsPath%\SO\BTSSoln\Scripts 文件夹。  
   
@@ -726,8 +658,6 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step19"></a>为服务面向解决方案部署的 BAM 定义文件  
   
-#### <a name="to-deploy-the-bam-definition-file-for-the-service-oriented-solution"></a>要为服务面向解决方案部署的 BAM 定义文件  
-  
 1.  打开命令提示符，键入以下命令，然后按 Enter 以设置用于查找 BAM 实用工具的路径：  
   
     -   SET PATH=%PATH%;[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking"  
@@ -738,7 +668,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step21"></a>部署面向服务的解决方案  
   
-#### <a name="to-edit-the-binding-files-for-the-service-oriented-solution"></a>编辑面向服务的解决方案的绑定文件  
+#### <a name="update-the-binding-files-for-the-service-oriented-solution"></a>更新服务面向解决方案绑定文件  
   
 1.  在命令提示符下，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln\Scripts 文件夹，使用记事本打开 Deployallbinding.xml，然后进行以下编辑：  
   
@@ -771,7 +701,7 @@ ms.lasthandoff: 09/20/2017
   
     -   替换所有出现的 __MQ_QMANAGER_NAME\_ \_具有 MQSeries 队列管理器名称。  
   
-#### <a name="to-deploy-the-service-oriented-solution"></a>若要部署面向服务的解决方案  
+#### <a name="deploy-the-service-oriented-solution"></a>部署面向服务的解决方案  
   
 -   在命令提示符下，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln\Scripts 文件夹，键入以下命令，然后按 Enter：  
   
@@ -782,7 +712,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="step23"></a>配置存根 （stub） 挂起的事务 Web 服务主机不可用时  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>配置存根挂起事务 Web Services，以便在没有大型机的情况下使用适配器版本  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>配置存根 （stub） 挂起的事务 Web 服务 （适用于使用而无需大型机的适配器版本）  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，指向**新建**，和然后单击**虚拟目录**运行**虚拟目录创建向导**。  
   
@@ -808,7 +738,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  关闭所有对话框。  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>配置存根挂起事务 Web Services，以便在没有大型机的情况下使用内联版本  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>配置存根 （stub） 挂起的事务 Web 服务 （适用于使用而无需大型机的内联版本）  
   
 1.  在**Internet Information Services (IIS) Manager**，展开**网站**，右键单击**Default Web Site**，指向**新建**，和然后单击**虚拟目录**运行**虚拟目录创建向导**。  
   
@@ -835,8 +765,6 @@ ms.lasthandoff: 09/20/2017
 5.  在命令提示符下，键入 `SetConfigValuesInSSO.cmd`，然后按 Enter。  
   
 ##  <a name="step25"></a>启动服务面向解决方案  
-  
-#### <a name="to-start-the-service-oriented-solution"></a>启动面向服务的解决方案  
   
 1.  打开命令提示符，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln\Scripts 文件夹，键入以下命令，然后按 Enter 以启动内联版本和适配器版本的所有业务流程：  
   

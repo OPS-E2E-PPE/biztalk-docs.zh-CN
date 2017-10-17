@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87da295129a4cb90ecf643cd06eb18ac3e6aa18e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9e9297e5539fd95f316ebbf6239a5d017ec4ecf
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="operational-readiness-checklists"></a>操作的准备工作核对清单
 操作的准备情况清单包含应考虑的建议和在 BizTalk 解决方案部署到生产环境之前应执行的任务。 这些清单包括用于配置必备软件，提高可用性，信息监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，并用于测试的步骤。  
@@ -28,47 +28,36 @@ ms.lasthandoff: 09/20/2017
   
 -   Windows 操作系统  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]SP1 或[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]  
+-   SQL Server 
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
--   [!INCLUDE[vs2010](../includes/vs2010-md.md)]（出于开发目的，不在运行时）  
+-   Visual Studio （出于开发目的，不在运行时）  
   
 ## <a name="additional-components"></a>其他组件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序平台可能还需要多个以下的软件组件：  
   
 -   Internet 信息服务 (IIS)  
   
--   Windows SharePoint® Services 2010  
+-   SharePoint
   
--   SharePoint Foundation 2010  
-  
--   Microsoft Office SharePoint Server 2007 Service Pack 1 (SP1) (MOSS)  
-  
--   SP1 或 SP2 的 Windows SharePoint Services 3.0  
-  
--   Microsoft Office Excel 2010 或 2007  
+-   Microsoft Office Excel 
   
     > [!NOTE]  
-    >  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]支持 Microsoft Office 2010 的 32 位版本。  
+    >  BizTalk Server 支持 Microsoft Office 的 32 位版本。  
   
--   SQL Server 2005 Notification Services  
+-   SQL Server
   
--   带有 Service Pack 1 的 SQLXML 4.0  
+-   SQLXML 
   
--   .NET framework 1.0  
-  
--   .NET Framework 2.0  
-  
--   .NET framework 3.0  
-  
--   Microsoft.NET Framework 4 和.Net Framework 3.5 Service Pack 1 (SP1)  
+-   .NET Framework 
   
 -   非 Microsoft 组件，以便为某些功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器。  
   
- 有关依赖软件所需的各种 Windows 操作系统版本的 BizTalk 应用程序平台的特定功能的详细信息，请参阅中的"功能依赖关系矩阵"一节[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装和升级为特定的 Windows 操作系统版本的指南。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装和升级指南位于[http://go.microsoft.com/fwlink/?LinkID=152913](http://go.microsoft.com/fwlink/?LinkID=152913)。  
+ 有关依赖软件所需的各种 Windows 操作系统版本的 BizTalk 应用程序平台的特定功能的详细信息，请参阅[什么是新建、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
+- 
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="next-steps"></a>后续步骤
   
 -   [清单： BizTalk Server 入门](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)  
   

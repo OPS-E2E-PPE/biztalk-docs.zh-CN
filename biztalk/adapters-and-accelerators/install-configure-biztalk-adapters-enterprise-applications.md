@@ -11,8 +11,8 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0016d689340d5c75cdd50095779148dc9cfbceb7
-ms.sourcegitcommit: 28bf5fc184cf8cba620741421c919d52b8383997
+ms.openlocfilehash: 8fa1a09f3d9fa531cee51ecd0e94b99ab972ba13
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
@@ -565,7 +565,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 **组件接口测试人员**窗口随即打开。 不应列出任何键。 如果你 GET_CI_INFO 包含键，或者如果没有选择的另一种方法，返回到应用程序设计器中，并消除 GET_CI_INFO 中的所有项。  
   
-## <a name="install-the-adapters"></a>安装适配器
+## <a name="install-steps"></a>安装步骤
  在安装之前，请确保 BizTalk 服务器并为适配器的所有软件必备组件都安装。 建议你运行安装程序之前关闭所有应用程序。  
   
 1.  运行 BizTalk Server **Setup.exe**，选择**安装 Microsoft BizTalk 适配器**，然后选择**企业应用程序中安装 Microsoft BizTalk 适配器**。  
@@ -601,9 +601,9 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
 >  2. 类型： `net user "CREATOR OWNER" /add`。 这将创建一个名为创建者所有者的新用户。
 >  3. 类型： `net localgroup Users /add`。 这将创建名为用户的新组。
   
-若要将适配器添加到 BizTalk Server，请参阅本主题中的"添加适配器 BizTalk 管理员控制台"。
+若要将适配器添加到 BizTalk Server，请参阅"添加适配器给 BizTalk 管理员"本主题中。
 
-## <a name="add-the-adapters-biztalk-admin-console"></a>添加适配器 BizTalk 管理员控制台
+## <a name="add-adapters-to-biztalk-admin"></a>将适配器添加到 BizTalk 管理员
   
 > [!NOTE]
 >  如果在多计算机环境 （仅限运行时的一台计算机上的安装和另一台计算机上的管理工具仅安装） 中安装 BizTalk，你应在这两台计算机上为企业应用程序安装 BizTalk 适配器。  
@@ -616,7 +616,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 4.  选择从输入的名称**适配器**列表，然后选择**确定**。  
    
-## <a name="post-install-overview---jd-edwards-oneworld"></a>安装后概述-博士 Edwards OneWorld  
+## <a name="post-install---jd-edwards-oneworld"></a>安装后的博士 Edwards OneWorld  
  Microsoft BizTalk Adapter for 博士 Edwards OneWorld 包含接口支持的数据库和给 Microsoft BizTalk Server 的服务器系统的传输适配器。 通过传输适配器，你可以从 BizTalk 服务器调用服务器系统。 传输适配器（BizTalk 服务器管理发送处理程序）配置指定 SQL 数据库的位置。  
   
  有关如何使用用于 JD Edwards OneWorld 的 BizTalk 适配器以及在它的模型和 BizTalk 服务器模型之间进行映射的详细信息，请参阅适配器文档。  
@@ -653,7 +653,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll    
     -   jdecba.dll  
   
-## <a name="post-install-overview---jd-edwards-enterpriseone"></a>安装后概述-博士 Edwards EnterpriseOne  
+## <a name="post-install---jd-edwards-enterpriseone"></a>安装后的博士 Edwards EnterpriseOne  
  Microsoft BizTalk Adapter for 博士 Edwards EnterpriseOne 包含可以与支持的数据库和给 BizTalk Server 的服务器系统的接口的传输适配器。 传输适配器允许你从 BizTalk 服务器调用服务系统。  
   
  用于博士 Edwards EnterpriseOne 的 BizTalk Adapter 提供支持的企业单一登录 (SSO)。 如果你选择使用的 SSO**传输属性**页上，凭据用于 SSO 凭据数据库中的关联应用程序。 关联应用程序表示一个应用程序 - 一个需要凭据的后端。  
@@ -683,7 +683,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
     -   Sdk  
   
  
-## <a name="post-install-overview---peoplesoft-enterprise"></a>安装后概述-PeopleSoft 企业  
+## <a name="post-install---peoplesoft-enterprise"></a>安装后的 PeopleSoft 企业  
  用于 PeopleSoft Enterprise 的 Microsof BizTalk 适配器包括一个传输适配器，该适配器将支持的数据库和服务器系统与 BizTalk 服务器相连接。 传输适配器允许你从 BizTalk 服务器调用服务系统。 传输适配器（BizTalk 服务器管理发送处理程序）配置指定 SQL 数据库的位置。  
   
  用于 PeopleSoft 企业的 BizTalk Adapter 提供支持的企业单一登录 (SSO)。 如果你选择使用的 SSO**传输属性**页上，凭据用于 SSO 凭据数据库中的关联应用程序。 关联应用程序表示一个应用程序 - 一个需要凭据的后端。  
@@ -776,7 +776,7 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
  TIBCO.Rendezvous.dl 现在显示 GAC 列表。 若要查看列表中，在控制面板中，打开**管理员工具**，打开**Microsoft.NET Framework 配置**，然后打开**程序集缓存**。  
   
-## <a name="post-install-overview---tibco-enterprise-message-service"></a>安装后概述-TIBCO 企业消息服务  
+## <a name="post-install---tibco-enterprise-message-service"></a>安装后的 TIBCO 企业消息服务  
  Microsoft BizTalk 适配器 TIBCO 企业消息服务 (EMS) 包含接收和发送给 BizTalk Server 的服务器系统支持的数据库与接口的功能。  
   
 -   接收端侦听来从服务器系统出站的调用。  

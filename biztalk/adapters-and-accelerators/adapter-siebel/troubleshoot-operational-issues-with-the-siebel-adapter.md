@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62d1ffae1318f4d04f7bd61ef27dd24fd1d5a2b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a7fd507b301d20d84680cb626953d21b8a6e201
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>与 Siebel 适配器排除操作问题
 本部分提供有关操作问题的信息使用时可能遇到的一个集中的位置[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
@@ -287,7 +287,7 @@ The current .NET type name of this root node is invalid (it is a reserved BizTal
 ###  <a name="BKMK_SiebelVS2008"></a>使用 Visual Studio 中的适配器时出现的无效的绑定警告  
  **问题**  
   
- 当你使用该适配器创建的应用程序在[!INCLUDE[vs2010](../../includes/vs2010-md.md)]并打开生成的适配器的配置文件 (app.config)，你看到类似于以下警告：  
+ 当你使用该适配器在 Visual Studio 中创建应用程序并打开生成的适配器的配置文件 (app.config) 时，你将看到类似于以下警告：  
   
 ```  
 The element 'bindings' has invalid child element 'siebelBinding'. List of possible elements expected: 'basicHttpBinding, customBinding, ...  
