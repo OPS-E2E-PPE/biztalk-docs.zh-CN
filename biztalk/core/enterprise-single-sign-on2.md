@@ -1,7 +1,8 @@
 ---
-title: "企业单一登录 On2 |Microsoft 文档"
+title: "企业单一登录概述 |Microsoft 文档"
+description: "了解在 BizTalk Server 中使用 SSO 票证与处理消息和 adminster SSO 的 affilicate 应用程序"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/11/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,18 +13,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cf73307cc3b22beec8a3b8c10b232506fc674e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f242e11e31de957fee0c6cbf228094f7e40010d
+ms.sourcegitcommit: 5e6ef63416e8885a5ee91bd65618a842b3a0cc54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/12/2017
 ---
-# <a name="enterprise-single-sign-on"></a>企业单一登录
+# <a name="enterprise-single-sign-on-overview"></a>企业单一登录概述
 依赖于多个不同应用程序的业务流程可能要涉及多个不同的安全域。 访问 Microsoft Windows 系统中的应用程序可能需要一组安全凭据，而访问 IBM 大型机中的应用程序则可能需要不同的凭据，例如 RACF 用户名和密码。 处理如此多的凭据对于用户而言并非易事，而对于自动化流程来说，这会更加困难。 为解决此问题，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包括了企业单一登录。  
   
  请不要混淆，企业单一登录不是指供用户一次登录所有应用程序的机制。 实际上，使用企业单一登录可将 Windows 用户 ID 映射到非 Windows 用户凭据。 这不能解决组织中所有的企业登录问题，但对于使用不同系统的应用程序的业务流程，此服务可简化这些问题。  
   
-## <a name="creating-affiliate-application-for-non-windows-systems"></a>创建非 Windows 系统的关联应用程序  
+## <a name="create-affiliate-application-for-non-windows-systems"></a>创建非 Windows 系统的关联应用程序  
  若要使用企业单一登录，管理员需要定义关联应用程序，每个关联应用程序均代表一个非 Windows 系统或应用程序。 例如，关联应用程序可能是在 IBM 大型机上运行的 CICS 应用程序、在 Unix 上运行的 SAP ERP 系统或任何其他类型的软件。 以上每种应用程序都拥有自己的验证机制，因此它们也都需要自己的唯一凭据。  
   
  企业单一登录将用户的 Windows 用户 ID 与该用户的一个或多个关联应用程序的凭据之间的加密映射存储在 SSO 数据库中。 当该用户需要访问某关联应用程序时，单一登录 (SSO) 服务器将在 SSO 数据库中查找此应用程序的凭证。 下图显示了具体过程：  

@@ -1,50 +1,45 @@
 ---
-title: "如何配置 DTA 清除和存档作业 |Microsoft 文档"
+title: "配置 DTA 清除和存档作业 |Microsoft 文档"
+description: "在 SQL Server 代理来维护 BizTalk Server 中的跟踪数据库中设置 DTA 清除和存档作业参数"
 ms.custom: 
-ms.date: 2015-11-09
+ms.date: 10/11/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- purging, configuring
-- DTA Purge and Archive job, configuring
-- archiving [Tracking database], DTA Purge and Archive job
-- archiving [Tracking database], configuring
-- purging, DTA Purge and Archive job
 ms.assetid: 156ccf9b-284f-4b96-a395-92936e8cebcf
 caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f4985e657f26945aa2fdc168b273dbfdb159efc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 149719b7eea50ce53c14298597c94729162d43b0
+ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/11/2017
 ---
-# <a name="how-to-configure-the-dta-purge-and-archive-job"></a>如何配置 DTA 清除和存档作业
+# <a name="configure-the-dta-purge-and-archive-job"></a>配置 DTA 清除和存档作业
 在对 BizTalk 跟踪 (BizTalkDTADb) 数据库中的数据进行存档或清除之前，必须首先配置 DTA 清除和存档 (BizTalkDTADb) 作业。 此作业被配置为调用 dtasp_BackupAndPurgeTrackingDatabase 存储过程中，使用六个参数必须配置。  
   
 ## <a name="prerequisites"></a>先决条件  
- 你必须是 SQL Server sysadmin 固定服务器角色的成员才能执行这些步骤的帐户登录。  
+ 使用 SQL Server sysadmin 固定服务器角色的成员的帐户登录。  
   
-### <a name="to-configure-the-dta-purge-and-archive-job"></a>配置 DTA 清除和存档作业  
+## <a name="configure-the-dta-purge-and-archive-job"></a>配置 DTA 清除和存档作业  
   
 1.  在承载 BizTalk 跟踪 (BizTalkDTADb) 数据库的 SQL 服务器，打开**SQL Server Management Studio**。  
   
 2.  在**连接到服务器**，输入 SQL 服务器的名称跟踪 (BizTalkDTADb) BizTalk 数据库所在的位置，输入身份验证类型，然后选择**连接**以连接到 SQL server。  
   
-3.  在**Microsoft SQL Server Management Studio**，双击**SQL Server 代理**，然后单击**作业**。  
+3. 双击**SQL Server 代理**，然后选择**作业**。  
   
-4.  在**对象资源管理器详细信息**窗格中，右键单击**DTA 清除和存档 (BizTalkDTADb)**，然后单击**属性**。  
+4.  在**对象资源管理器详细信息**，右键单击**DTA 清除和存档 (BizTalkDTADb)**，然后选择**属性**。  
   
-5.  在**作业属性-DTA 清除和存档 (BizTalkDTADb)**对话框中，在**选择页**，单击**步骤**。  
+5.  在**作业属性-DTA 清除和存档 (BizTalkDTADb)**下**选择页**，选择**步骤**。  
   
-6.  在**作业步骤列表**，单击**存档和清除**，然后单击**编辑**。  
+6.  在**作业步骤列表**，选择**存档和清除**，然后选择**编辑**。  
   
-7.  上**常规**页上，在**命令**框中，编辑以下参数视情况而定，然后单击**确定**。  
+7.  在**常规**中**命令**框中，更新的以下参数，然后选择**确定**。  
   
     -   @nLiveHourstinyint-任何完成实例早于 （实时小时数） + （实时天） 将被删除以及所有关联的数据。 这是没有默认值的必需的参数。  
   
@@ -61,13 +56,18 @@ ms.lasthandoff: 09/20/2017
   
     -   @fForceBackupint-默认值为 0。 这被保留供将来使用。  
   
-     编辑的命令应如下所示。 在下面的示例中，没有 1 小时的实时窗口和 1 天硬清除：  
+    -   @fHardDeleteRunningInstancesint-默认值为 0。 设置为 1 时，删除所有正在运行的服务实例早于@nHardDeleteDays值。 
+    
+        > [!NOTE]
+        > @fHardDeleteRunningInstances属性是从开始提供[BizTalk Server 2016 的累积更新 1年](https://support.microsoft.com/help/3208238/cumulative-update-1-for-microsoft-biztalk-server-2016)， [BizTalk Server 2013 R2 的累积更新 6年](https://support.microsoft.com/en-us/help/4020020/cumulative-update-package-6-for-biztalk-server-2013-r2)，和[BizTalk Server 2013 的累积更新 5](https://support.microsoft.com/help/3194301/cumulative-update-5-for-biztalk-server-2013)。  
+  
+    编辑的命令应类似于以下。 在以下示例中，没有 1 小时的实时窗口、 1 天和删除的硬清除所有正在运行服务实例超过 1 天：  
   
     ```  
-    exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0  
+    exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0, 1  
     ```  
   
-8.  上**作业属性-DTA 清除和存档 (BizTalkDTADb)**对话框中，在**选择页**，单击**常规**，选择**已启用**复选框，并依次**确定**。  
+8.  上**作业属性-DTA 清除和存档 (BizTalkDTADb)**对话框中，在**选择页**，选择**常规**，选择**已启用**复选框，，然后选择**确定**。  
   
 ## <a name="see-also"></a>另请参阅  
  [存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)
