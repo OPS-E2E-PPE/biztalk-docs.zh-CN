@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cf5be42a008cadba648739037797160386a42fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a5866344e666c9e9cb49af6c6d99211774a2758
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a>将用于 SharePoint 的 Oracle 数据库适配器
 WCF 适配器服务开发向导[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]为 Oracle 数据库和 Oracle E-business Suite Microsoft BizTalk 适配器将直接使用作为 Microsoft SharePoint 中的外部数据源启用 Microsoft BizTalk 适配器。 添加服务开发支持此功能启动向导时与**WCF 适配器服务**用于创建新 Visual C# Web 中的站点模板[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]。 此模板是附带[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]。 你还必须安装 Microsoft Windows Communication Foundation (WCF) 的业务线 (LOB) 适配器 SDK。  
@@ -39,8 +39,8 @@ WCF 适配器服务开发向导[!INCLUDE[btsVStudioNoVersion_md](../../includes/
  在使用 Microsoft BizTalk 适配器 Oracle 数据库作为的示例生成以下服务协定。 适配器已配置为提供对 EMP 表的访问  
   
 ```  
-[System.ServiceModel.ServiceContractAttribute()]  
-public interface ISCOTT_EMP {  
+    [System.ServiceModel.ServiceContractAttribute()]  
+    public interface ISCOTT_EMP {  
   
     [System.ServiceModel.OperationContractAttribute()]  
     SCOTT_EMP_Record[] ReadList(System.Nullable<int> Limit);  
@@ -62,7 +62,7 @@ public interface ISCOTT_EMP {
 }  
 ```  
   
-## <a name="creating-a-new-web-site-to-host-the-microsoft-biztalk-adapter-for-oracle-database-in-iis"></a>创建新的 Web 站点，以便为在 IIS 中的 Oracle 数据库承载 Microsoft BizTalk 适配器  
+## <a name="create-a-new-web-site-to-host-the-oracle-database-in-iis"></a>创建新网站以承载在 IIS 中的 Oracle 数据库  
  这些步骤提供了一个示例使用 WCF 适配器服务的开发向导中，若要创建新的 WCF web 服务的 Oracle 数据库承载 Microsoft BizTalk 适配器。 服务协定将包含操作与 Sharepoint 直接兼容。 以便可以直接使用它作为外部数据源。 适配器已配置为使用 Oracle 数据库使用进行身份验证**SCOTT**帐户。 如果**SCOTT**锁定帐户，你可以通过以 sysdba 身份登录到 SQL Plus 解锁帐户。  
   
 ```  
@@ -75,11 +75,11 @@ public interface ISCOTT_EMP {
 SQL> ALTER USER scott ACCOUNT UNLOCK;  
 ```  
   
-#### <a name="creating-the-new-web-site-project"></a>创建新的网站项目  
+#### <a name="create-the-new-web-site-project"></a>创建新的网站项目  
   
-1.  启动**Microsoft [!INCLUDE[vs2012](../../includes/vs2012-md.md)]** 。  
+1.  打开 Visual Studio。   
   
-2.  在[!INCLUDE[vs2010](../../includes/vs2010-md.md)]上**文件**菜单上，选择**新建**，然后单击**项目**。  
+2.  在 Visual Studio 中，在**文件**菜单上，选择**新建**，然后单击**项目**。  
   
 3.  在**新项目**对话框框中，展开**其他语言**单击**Visual C#**。 查找**WCF 适配器服务**在模板列表，然后单击以选中它。  
   
@@ -120,10 +120,10 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 20. 单击**生成**菜单选项，然后单击**生成解决方案**。 验证项目生成成功并且没有错误。  
   
-## <a name="publishing-the-new-service-to-iis"></a>新的服务发布到 IIS  
+## <a name="publish-the-new-service-to-iis"></a>将新的服务发布到 IIS  
  对于此示例在将发布到本地 IIS web 服务器的适配器主机服务。  
   
-1.  在解决方案资源管理器[!INCLUDE[vs2010](../../includes/vs2010-md.md)]，右键单击**ScottEmp**项目，然后单击**属性**。 将显示项目设计器选项卡。  
+1.  在 Visual Studio 的解决方案资源管理器，右键单击**ScottEmp**项目，然后单击**属性**。 将显示项目设计器选项卡。  
   
 2.  单击**Web**选项卡，然后单击**使用本地 IIS Web 服务器**选项。  
   
@@ -131,10 +131,9 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 4.  打开 web 浏览器到服务地址**http://localhost/ScottEmp/ISCOTT_EMP.svc**。 你应该会收到一条消息"你已创建的服务"，该值指示适配器承载于 IIS 中。  
   
-## <a name="adding-the-external-data-source-to-a-sharepoint-site-using-sharepoint-designer"></a>将外部数据源添加到 SharePoint 站点使用 SharePoint Designer  
+## <a name="add-the-external-data-source-to-a-sharepoint-site-using-sharepoint-designer"></a>将外部数据源添加到 SharePoint 站点使用 SharePoint Designer  
  本部分介绍如何将 WCF 服务作为外部数据源添加到新的网站使用 SharePoint Designer。  
   
-#### <a name="adding-the-external-data-source"></a>添加外部数据源  
   
 1.  打开 SharePoint Designer 并创建新网站。  
   
@@ -166,7 +165,7 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 15. 通过键入保存新的外部数据源**Ctrl + s**。  
   
-#### <a name="testing-the-external-data-source-connection"></a>测试外部数据源连接  
+#### <a name="test-the-external-data-source-connection"></a>测试外部数据源连接  
   
 1.  在新的网站上，单击**创建列出和窗体**按钮。 创建列表和窗体 OracleEMP 对话框将出现。  
   
@@ -178,6 +177,6 @@ SQL> ALTER USER scott ACCOUNT UNLOCK;
   
 5.  单击**在浏览器中的预览**若要测试的适配器 ReadList 操作菜单上的按钮。  
   
-## <a name="troubleshooting"></a>故障排除  
+## <a name="troubleshoot"></a>故障排除
   
--   在 64 位计算机上，你必须确保还安装了 32 位 Oracle 客户端组件。 这是因为[!INCLUDE[vs2010](../../includes/vs2010-md.md)]和将作为在开发过程中需要访问 32 位组件的 32 位进程中运行它的向导。
+-   在 64 位计算机上，你必须确保还安装了 32 位 Oracle 客户端组件。 这是因为将作为在开发过程中需要访问 32 位组件的 32 位进程运行 Visual Studio 和它的向导。
