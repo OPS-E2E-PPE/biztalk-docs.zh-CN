@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]与 SQL Server Reporting Services (SSRS)。|现在可以使用客户端程序[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]从 SAP 后端的数据导入 SSRS 项目并生成带数据的报表。 有关详细信息如何使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]与 SSRS，请参阅[数据提供程序用于与 SSRS SAP](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)。 有关 SSRS 的详细信息，请参阅[SQL Server Reporting Services](https://msdn.microsoft.com/library/ms159106.aspx)。|  
 |用于调用查询在 SAP 系统中定义的支持|[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]公开某一操作，EXECQUERY，可用来执行在 SAP 系统中定义的查询。 有关如何使用 EXECQUERY 功能的详细信息，请参阅 [执行 SAP 查询支持
 
-] (https://msdn.microsoft.com/library/dd788118.aspx)。 |  
+](https://msdn.microsoft.com/library/dd788118.aspx).|  
 |支持使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 Microsoft Office SharePoint Server (MOSS) |适配器可用于显示从 SAP 系统到 MOSS 门户上的数据。 有关详细信息，请参阅[SAP 适配器将用于 SharePoint](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)。 |  
   
 ### <a name="metadata-related-features"></a>元数据相关的功能  

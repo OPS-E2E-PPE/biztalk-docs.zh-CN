@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
      \\\TransportType=;  
   
-     TransportLocation = /*[本地名称 （) = OrderDoc 和 namespace-uri() = http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[本地名称 （) = 'ID' 和 namespace-uri() = http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
+     TransportLocation=/*[本地名称()=OrderDoc 和 namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[本地名称()='ID'和namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
   
      操作 =;  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
      MessageExchangePattern =;  
   
-     TargetNamespace = /*[本地名称 （) = OrderDoc 和 namespace-uri() = http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[本地名称 （) = customerName 和命名空间 uri （） = http: / /globalbank.esb.dynamicresolution.com/northamericanservices/];  
+     TargetNamespace=/*[本地名称()=OrderDoc和namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[本地名称()=customerName和命名空间uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
   
      TransformType =;  
   
