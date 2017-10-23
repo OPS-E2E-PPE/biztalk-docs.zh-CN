@@ -17,11 +17,11 @@ ms.devlang: na
 ms.topic: article
 ms.date: 06/19/2017
 ms.author: mandia
-ms.openlocfilehash: 2d38766b338cfe8578f97059fb28dfc32a0c9f2b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8e2f3113234ccd8f55a8b4a316348f015144069
+ms.sourcegitcommit: 28bf5fc184cf8cba620741421c919d52b8383997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_config-tools.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/en-us/media/common/i_config-tools.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_whats-new.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/en-us/media/common/i_whats-new.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_learn-about.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/en-us/media/common/i_learn-about.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-whats-new.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-whats-new.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -120,7 +120,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-get-started.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -139,7 +139,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-scenarios.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-scenarios.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -158,7 +158,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-b2b.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-b2b.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-accelerators.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-accelerators.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -201,7 +201,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-stated-adapters-built-in-adapters.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-stated-adapters-built-in-adapters.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -220,7 +220,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-adapter-pack.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-adapter-pack.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -239,7 +239,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-file-act.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-file-act.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -258,7 +258,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-hl7.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-hl7.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -277,7 +277,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-rosetta.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-rosetta.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -296,13 +296,32 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-adapters-swift.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-adapters-swift.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>SWIFT</h3>
                                                     <p>对于核心金融服务应用程序基础结构和业务流程的集成解决方案，客户、合作伙伴和系统集成者可通过 A4SWIFT 来精简对其的开发、部署和支持。
                                                     </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/biztalk/dev-center/his-biztalk-adapters">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztallk-get-started-adapters-host-system.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>适用于主机系统的 BizTalk 适配器</h3>
+                                                    <p>Host Integration Server (HIS) 包括连接到主机应用程序、主机文件、DB2 和 WebSphere MQ 的适配器。 这些适配器是内置的，可在 BizTalk 应用程序内使用。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -321,7 +340,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-announcements-integrate-2017.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-announcements-integrate-2017.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -340,7 +359,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-get-started-announcements-flipboard.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-get-started-announcements-flipboard.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -363,7 +382,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -382,7 +401,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -401,7 +420,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -420,7 +439,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -439,7 +458,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -458,7 +477,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -477,7 +496,7 @@ ms.lasthandoff: 09/20/2017
                                                 <div class="card" style="min-height:100px;">
                                                     <div class="cardImageOuter" style="width:auto !important;">
                                                         <div class="cardImage">
-                                                            <img alt="" src="/media/common/i_twitter.svg" />
+                                                            <img alt="" src="https://docs.microsoft.com/en-us/media/common/i_twitter.svg" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -512,6 +531,49 @@ ms.lasthandoff: 09/20/2017
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#partnertraining">合作伙伴培训</a>
+                        <ul id="partnertraining" class="cardsC">
+                            <li>
+                                <a href="https://www.pluralsight.com/search?q=biztalk">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-partner-training-pluralsight.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Pluralsight</h3>
+                                                    <p>访问 Pluralsight.com，了解 functoid、ESB 和更多信息</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.quicklearn.com/biztalk-training.aspx">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-partner-training-quick-learn.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>QuickLearn</h3>
+                                                    <p>访问 QuickLearn.com，接受针对各种技能级别的 BizTalk Server 管理员和开发人员的讲师指导培训。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -527,7 +589,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-developer-documentation-1.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-developer-documentation-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -546,7 +608,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-developer-code-samples.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-developer-code-samples.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -565,7 +627,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-developer-codeplex.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-developer-codeplex.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -585,7 +647,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-developer-5-day-course.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-developer-5-day-course.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -614,7 +676,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-whats-new.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-whats-new.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -633,7 +695,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-install-configure.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-install-configure.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -652,7 +714,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-core-documentation.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-core-documentation.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -671,7 +733,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-ole-db-provider.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-ole-db-provider.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -690,7 +752,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-update-center.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-update-center.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -709,7 +771,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-host-integration-popular-downloads.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-host-integration-popular-downloads.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -739,7 +801,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-watch-ignite-videos.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-watch-ignite-videos.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -758,7 +820,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-watch-integrate-london.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-watch-integrate-london.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -777,7 +839,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-watch-azure-logic-apps.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-watch-azure-logic-apps.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -797,7 +859,7 @@ ms.lasthandoff: 09/20/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/biztalk/biztalk-watch-channel9.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/biztalk/biztalk-watch-channel9.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
