@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
  若要执行 Siebel 系统的操作，适配器客户端必须有权公开的 Siebel 系统的业务服务。 Siebel 应用程序将数据公开为业务组件和业务对象。 Siebel*在业务组件*是将一个或多个表中的列到单个结构相关联的逻辑实体。 Siebel*业务对象*通过将在一起的一组相关的业务组件中实现的业务模型。 与[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]，适配器客户端可以外围 Siebel 业务对象和业务组件。  
   
- [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]还包括[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel 系统为 ADO 接口提供通过扩展 ADO.NET 接口。  
+ [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]还包括[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel 系统为 ADO 接口提供通过扩展 ADO.NET 接口。  
   
  本部分讨论的功能[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]。  
   

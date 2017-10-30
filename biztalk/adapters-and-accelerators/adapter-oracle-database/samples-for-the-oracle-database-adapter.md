@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
 |示例目录名称|Description|  
 |---------------------------|-----------------|  
-|Oracle_Migration|演示如何使用创建 BizTalk ODBC 适配器用于 Oracle 数据库的 BizTalk 项目 (随[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]) 并使其适用于基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)](随[!INCLUDE[adapterpack20](../../includes/adapterpack20-md.md)])。|  
+|Oracle_Migration|演示如何使用创建 BizTalk ODBC 适配器用于 Oracle 数据库的 BizTalk 项目 (随[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]) 并使其适用于基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] (随[!INCLUDE[adapterpack20](../../includes/adapterpack20-md.md)])。|  
   
 ## <a name="see-also"></a>另请参阅  
 [开发 Oracle 数据库应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)

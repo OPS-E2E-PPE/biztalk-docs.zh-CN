@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 |功能|注释|  
 |-------------|-------------|  
-|Windows Communication Foundation (WCF) 的使用|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]之上生成[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]([!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)])。 反过来，[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]基于 WCF。 适配器将公开为适配器客户端的 WCF 通道。 这使连接、 元数据交换和与外部系统的业务数据交换。|  
+|Windows Communication Foundation (WCF) 的使用|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]之上生成[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] ([!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)])。 反过来，[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]基于 WCF。 适配器将公开为适配器客户端的 WCF 通道。 这使连接、 元数据交换和与外部系统的业务数据交换。|  
 |对 WCF 通道模型和 WCF 服务模型的支持|在 WCF 通道模型中，适配器客户端可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]通过直接发送和接收 XML 消息。 在 WCF 服务模型中，适配器客户端可以生成的.NET 代理类从 Web 服务描述语言 (WSDL) 使用获取[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。|  
 |支持 64 位平台|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]现已可供 64 位平台。|  
   

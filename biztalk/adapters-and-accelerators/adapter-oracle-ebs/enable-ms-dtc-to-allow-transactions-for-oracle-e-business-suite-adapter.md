@@ -21,7 +21,7 @@ ms.lasthandoff: 09/20/2017
 # <a name="enable-ms-distributed-transaction-coordinator-to-allow-transactions-for-oracle-e-business-suite"></a>启用 MS 分布式事务处理协调器，以允许 Oracle E-business Suite 的事务
 在开始创建应用程序使用之前配置 MSDTC [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
   
-Oracle E-business Suite 使用执行的操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)](通过[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，WCF 服务模型或 WCF 通道模型) 可以在事务范围内执行。 如果客户端程序具有多个事务的资源在同一事务的一部分，获取提升为 MSDTC 事务的事务。 若要启用的适配器执行 MSDTC 事务的范围内的操作，在运行的计算机上配置 MSDTC [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，和上 Oracle E-business Suite。 此外，添加 MSDTC 到例外列表中你的防火墙，这可能会内置的 Windows 防火墙。 
+Oracle E-business Suite 使用执行的操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] (通过[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，WCF 服务模型或 WCF 通道模型) 可以在事务范围内执行。 如果客户端程序具有多个事务的资源在同一事务的一部分，获取提升为 MSDTC 事务的事务。 若要启用的适配器执行 MSDTC 事务的范围内的操作，在运行的计算机上配置 MSDTC [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，和上 Oracle E-business Suite。 此外，添加 MSDTC 到例外列表中你的防火墙，这可能会内置的 Windows 防火墙。 
   
 > [!NOTE]
 >  配置 MSDTC 的步骤因个不同的操作系统而异。 本主题中列出的步骤适用于 Windows 客户端和 Windows Server 操作系统。  

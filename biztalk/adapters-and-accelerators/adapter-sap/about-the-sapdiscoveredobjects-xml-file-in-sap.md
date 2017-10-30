@@ -24,7 +24,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>有关 SAP 中 SAPDiscoveredObjects.xml 文件
-如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将 SAPDiscoveredObjects.xml 文件通常情况下的复制\<安装驱动器 >: \program Files\MicrosoftShared\Adapters\SAP。 后的全新安装文件的内容[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，如下所示。  
+如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将 SAPDiscoveredObjects.xml 文件通常情况下的复制\<安装驱动器 >: \program Files\MicrosoftShared\Adapters\SAP。 后的全新安装文件的内容[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，如下所示。  
   
 ```  
 <DiscoveredObjects>  
