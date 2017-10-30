@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   
-2.  在 IIS 管理器中，展开** *\<服务器名称 >* （本地计算机）**节点，**应用程序池**节点和**网站**节点。 在网站节点下展开**Default Web Site**节点。  
+2.  在 IIS 管理器中，展开 ***\<服务器名称 >* （本地计算机）**节点，**应用程序池**节点和**网站**节点。 在网站节点下展开**Default Web Site**节点。  
   
 3.  在 Default Web Site 节点中，右键单击**A4SWIFT_MRSR**，然后单击**属性**。  
   
