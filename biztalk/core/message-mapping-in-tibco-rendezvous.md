@@ -1,5 +1,6 @@
 ---
 title: "消息映射中 TIBCO 会合 |Microsoft 文档"
+description: "消息字段和 TIBCO 会合到 BizTalk 适配器中的 XML 消息映射"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, mapping
-- message mapping
-- message field elements
 ms.assetid: 62793bec-f076-425c-b25e-c4be5bd93cc8
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc5b3559067dbb998240a3fc814d890701e2591c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb80ea4f908aa50dc32755c333aa3ccf2ea4db91
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="message-mapping-in-tibco-rendezvous"></a>TIBCO Rendezvous 中消息映射
 TIBCO Rendezvous 消息由标头信息和一组消息字段组成。 标头信息直接映射到消息上下文属性。  
@@ -53,4 +50,4 @@ TIBCO Rendezvous 消息由标头信息和一组消息字段组成。 标头信�
   
 ## <a name="see-also"></a>另请参阅  
  [TIBCO 会合概念](../core/tibco-rendezvous-concepts.md)   
- [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

@@ -1,29 +1,50 @@
 ---
 title: "PeopleSoft Enterprise 适配器 |Microsoft 文档"
+description: "安装、 单步执行教程，了解体系结构、 使用 SSO 安全性，创建你的应用程序、 导入绑定文件中，和 PeopleSoft 企业 BizTalk Server 中使用 BizTalk 适配器时添加异常处理"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/19/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: BizTalk Adapter for PeopleSoft Enterprise
 ms.assetid: 6c3dd7fd-3566-4063-a2fd-2acbe64d2885
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41b40c57ad3defcc7fa390e76303ec2b4e6bd291
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a3bedda77a7bc45153cda79bd8c011b8628c26b
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="peoplesoft-enterprise-adapter"></a>PeopleSoft Enterprise 适配器
-通过用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器，您可以使用 PeopleSoft 对象。 本文档介绍如何设置该适配器来访问特定于 PeopleSoft 的信息。  
+Microsoft BizTalk Adapter for PeopleSoft 企业可以使用 PeopleSoft BizTalk Server 应用程序中的对象。 以下各节讨论设置该适配器访问 PeopleSoft 特定信息。  
   
- 下表提供了到关键主题的链接。  
-  
-|||  
-|-|-|  
-|[入门](../core/getting-started-with-biztalk-adapter-for-peoplesoft-enterprise.md)<br /><br /> [规划和体系结构](../core/planning-and-architecture13.md)<br /><br /> [BizTalk 适配器 PeopleSoft 企业中的安全](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)<br /><br /> [开发应用程序](../core/developing-applications4.md)<br /><br /> [为 PeopleSoft 企业部署的 BizTalk Adapter](../core/deploying-biztalk-adapter-for-peoplesoft-enterprise.md)<br /><br /> [管理 BizTalk 适配器用于 PeopleSoft 企业](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md)<br /><br /> [故障排除 PeopleSoft](../core/troubleshooting-peoplesoft.md)<br /><br /> [PeopleSoft 企业的技术参考](../core/technical-reference-for-peoplesoft-enterprise.md)|[附录 a： 组件接口方法](../core/appendix-a-component-interface-methods.md)<br /><br /> [附录 b： 使用 PeopleSoft 应用程序](../core/appendix-b-using-the-peoplesoft-application.md)<br /><br /> [附录 c： 使用组件接口](../core/appendix-c-using-component-interfaces.md)<br /><br /> [用于 PeopleSoft 企业的 BizTalk Adapter 的用户界面参考](../core/ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise.md)|
+## <a name="get-started"></a>要开始
+[要开始](../core/getting-started-with-biztalk-adapter-for-peoplesoft-enterprise.md)列出要安装适配器，并单步某些教程的步骤。
+
+## <a name="architecture"></a>体系结构
+[体系结构](../core/architecture-of-biztalk-adapter-for-peoplesoft-enterprise.md)描述的接口方法和验证与此适配器。
+
+## <a name="security"></a>安全性
+[安全](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)内 BizTalk Serer 来保护你的应用程序使用此适配器，需使用企业单一登录 (SSO)。
+
+## <a name="create-the-artifacts"></a>创建项目
+[创建应用程序项目](../core/developing-applications4.md)演示如何将项目添加在 BizTalk 管理，并将架构添加到 Visual Studio。
+
+## <a name="import-apps"></a>导入应用
+[导入绑定文件](../core/deploying-biztalk-adapter-for-peoplesoft-enterprise.md)讨论如何将应用程序绑定文件导入 BizTalk 管理，并都要通过任何限制。 
+
+## <a name="exception-handling"></a>异常处理
+[使用异常处理，](../core/using-biztalk-server-exception-handling2.md)提供有关将不同的形状添加到您的业务流程来处理异常的指导。
+
+## <a name="troubleshooting"></a>故障排除
+[故障排除](../core/troubleshooting-peoplesoft.md)介绍一些常见的错误和情况下，并讨论了 Windows 事件跟踪。
+
+## <a name="component-interfaces"></a>组件接口
+[引用](../core/technical-reference-for-peoplesoft-enterprise.md)的方法，提供详细信息和生成的 XML，以测试你的业务流程。
+
+## <a name="ui-guidance"></a>用户界面指南
+[用户界面参考](../core/ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise.md)提供有关显示的对话框和向导使用此适配器的详细信息。 

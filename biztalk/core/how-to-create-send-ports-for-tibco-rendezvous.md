@@ -1,26 +1,12 @@
 ---
-title: "如何为 TIBCO 会合创建发送端口 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- creating send ports
-- ports, send
-- send ports, creating
-ms.assetid: 0c8d9fdc-b273-4876-9f93-b5a85539a3c1
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7d0b6e7dbb1a3b32979c94ec1af9483bd9fcb7cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 44da7839f0bee96db332dada214bdbc503067f56
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-send-ports-for-tibco-rendezvous"></a>如何创建 TIBCO Rendezvous 的发送端口
 请按照以下步骤，使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建一个发送端口。  
@@ -39,9 +25,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  从**发送处理程序**下拉列表中，选择 URI。  
   
-    4.  从发送管道下拉列表中选择**Microsoft.BizTalk.DefaultPipelines.XMLTransmit**。  
-  
-    5.  从**接收管道**下拉列表中，选择**Microsoft.BizTalk.DefaultPiplelines.XMLReceive**。  
+    4.  从**发送管道**下拉列表中，选择**Microsoft.BizTalk.DefaultPipelines.XMLTransmit**。 从**接收管道**下拉列表中，选择**Microsoft.BizTalk.DefaultPiplelines.XMLReceive**。  
   
     6.  单击**配置**配置发送端口。  
   
@@ -60,4 +44,4 @@ ms.lasthandoff: 09/20/2017
 5.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>另请参阅  
- [创建 TIBCO 会合发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)
+ [创建 TIBCO Rendezvous 发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)

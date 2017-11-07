@@ -1,25 +1,12 @@
 ---
-title: "如何创建在 TIBCO 企业消息服务接收端口 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive ports, creating
-- creating receive ports
-ms.assetid: ca623c81-3dd3-4824-a586-28055d01fe9f
-caps.latest.revision: "7"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: a85fad9dc0936baa0c3f584581d5483a30fedf6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: e31246cf90f42206de6a22fcc32338fcb2936db3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-receive-ports-in-tibco-enterprise-message-service"></a>如何创建 在 TIBCO Enterprise Message Service 中创建接收端口
 请遵循以下步骤创建一个接收端口。  
@@ -60,5 +47,3 @@ ms.lasthandoff: 09/20/2017
   
 7.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
- [设置 TIBCO 企业消息服务传输属性接收端口](../core/set-tibco-enterprise-message-service-transport-properties-for-the-receive-port.md)

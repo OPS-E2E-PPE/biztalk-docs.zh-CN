@@ -1,5 +1,5 @@
 ---
-title: "单一登录要求 |Microsoft 文档"
+title: "SSO 要求 TIBCO Rendevous 适配器 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,13 +12,15 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61932b44364670515f02f89a1441a5d54030bc94
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 40cf27a3b96534239fa871bd04b90febee9beafe
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
+
+## <a name="prerequisites"></a>先决条件
 若要使用单一登录 (SSO)，必须安装以下软件：  
   
 -   Microsoft BizTalk Server
@@ -43,4 +45,4 @@ ms.lasthandoff: 10/17/2017
 >  后执行的操作使用 SSO，请记得重置到任何 Web 共享文件夹**不共享**。 使用该文件夹的应用程序将不更新，或如果共享文件夹，因为它被视为可在使用正常卸载。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on5.md)
+[安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5199b20a75b82e12ad76b96903538487a3128668
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 06000a734856c7b9f22e78a2d5a78c4585021a21
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a>步骤 2：创建库存请求架构
 ![步骤 2 5](../core/media/step-2of5.gif "Step_2of5")  
@@ -76,13 +76,15 @@ ms.lasthandoff: 09/20/2017
   
 7.  类型`ReqID`作为以及该元素，然后按 enter 键的新名称。  
   
-8.  重复步骤 6 和 7，以创建第二个子字段元素**标头**节点，并将其命名`OrderDate`。  
+8.  重复步骤 6 和 7，以创建第二个子字段元素**标头**节点，并将其命名`OrderDate`。
+
+9.  重复步骤 6 和 7，以创建第三个子字段元素**标头**节点，并将其命名`GrandTotal`。
   
-9. 在架构树中，右键单击**项**节点，指向**插入架构节点**，然后单击**子记录**。  
+10. 在架构树中，右键单击**项**节点，指向**插入架构节点**，然后单击**子记录**。  
   
-10. 类型`Item`作为子记录，然后按 enter 键的新名称。  
+11. 类型`Item`作为子记录，然后按 enter 键的新名称。  
   
-11. 在架构树中，右键单击**项**节点，并添加以下子字段元素：  
+12. 在架构树中，右键单击**项**节点，并添加以下子字段元素：  
   
     -   `Description`  
   
@@ -135,4 +137,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 4： 创建代码图](../core/step-4-create-the-map.md)   
  [步骤 5： 生成 EAISchemas 项目](../core/step-5-build-the-eaischemas-project.md)   
  [创建使用 BizTalk 编辑器的架构](../core/creating-schemas-using-biztalk-editor.md)   
- [有关 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)
+ [关于 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)

@@ -1,29 +1,14 @@
 ---
-title: "优化配置 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- optimizing, configuration
-- configuring, optimizing
-- messages, overload protection
-ms.assetid: df0ae17b-fcfa-4e00-893c-63f4972d3822
-caps.latest.revision: "10"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 72b185d7738ac48d9a1dc3631c7c9faec9ac4b60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2b0a1aa81971e3e086881e23bcfd6d7ba5d5799d
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="optimizing-configuration"></a>优化配置
+# <a name="optimize-configuration"></a>优化配置
 本部分介绍如何优化适用于 PeopleSoft Enterprise 的 BizTalk 适配器的配置，并且包括了用于设置适配器的参数说明。  
   
 ## <a name="message-overload-protection"></a>消息重载保护  
@@ -31,7 +16,7 @@ ms.lasthandoff: 09/20/2017
   
  当 BizTalk Server 将消息提交到传输适配器时，它首先接收来自适配器的一个批并对批调用 `TransmitMessage()` 以传输每个消息。 完成上述操作后，BizTalk Server 对批调用 `Done()`，然后适配器开始将消息传输到后端。 如果 BizTalk Server 在调用 `Done` 之前获得了多个批，`Done` 命令可能永远不会发生。 通过设置批中的最大消息数量，可以控制传输到后端的消息。 对此参数的更改会在一分钟后生效。 BizTalk Server 必须检索保存在 SQL 数据库中的适配器配置的更改。  
   
-#### <a name="to-change-the-max-concurrent-calls-parameter"></a>若要更改最大并发呼叫参数  
+## <a name="change-the-max-concurrent-calls-parameter"></a>更改最大并发调用参数  
   
 1.  在**发送端口传输属性**对话框框中，输入**连接**值。  
   
@@ -54,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 4.  选择**是**为**使用 SSO**用于单一登录。  
   
     > [!NOTE]
-    >  有关详细信息，请参阅[使用单一登录](../core/using-single-sign-on2.md)。  
+    >  有关详细信息，请参阅[安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)。 
   
 5.  在列表中选择一个关联应用程序。  
   

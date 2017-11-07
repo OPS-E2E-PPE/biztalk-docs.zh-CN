@@ -1,5 +1,5 @@
 ---
-title: "TIBCO 企业消息服务消息描述符属性 |Microsoft 文档"
+title: "TIBCO EMS 消息描述符属性 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,19 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: message descriptor properties
 ms.assetid: fc164c12-6dc3-4b74-9aa9-024e18faf80a
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80c75875c44c4d082089fc9394fef390a0f91571
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1a2a7d6529cffba6afa3969964d1ea436d7fcda
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tibco-enterprise-message-service-message-descriptor-properties"></a>TIBCO Enterprise Message Service 消息描述符属性
+
+## <a name="descriptor-properties-and-values"></a>描述符属性和值
 下表显示了可用的消息描述符（TibcoEMSMD 结构）属性的完整集以及其对应的类型和值：  
   
 |Name|类型|值|说明|  
@@ -61,4 +62,4 @@ ms.lasthandoff: 09/20/2017
  确保使用目标命名空间；仅将使用该命名空间的属性复制到 BizTalk Server 消息或复制到 EMS 消息。 有关消息上下文属性的详细信息，请参阅 BizTalk Server 文档。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息上下文属性](../core/message-context-properties2.md)
+[TIBCO EMS 消息上下文属性](../core/message-context-properties-in-biztalk-server.md)

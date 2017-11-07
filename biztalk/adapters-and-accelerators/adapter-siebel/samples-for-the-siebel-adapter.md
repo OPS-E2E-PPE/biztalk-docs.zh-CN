@@ -1,30 +1,23 @@
 ---
-title: "为 Siebel 适配器的示例 |Microsoft 文档"
+title: "Siebel 适配器示例 |Microsoft 文档"
+description: "可与 BizTalk Server、 WCF 服务模型和数据提供程序用于 Siebel 的 Siebel WCF 适配器示例"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Data Provider for Siebel, samples
-- BizTalk Server, samples
-- samples, WCF service model
-- WCF service model, samples
-- samples, BizTalk Server
-- samples, Data Provider for Siebel
-- samples
 ms.assetid: 069d676e-211e-474c-9cf5-c660fdd22014
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8331cad2f05e53e5eecde5975f686c2b767b414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aefe831b03da4f0199bacd775adc6948094cfa1b
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-siebel-adapter"></a>Siebel 适配器的的示例
 示例[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]分为：  
@@ -34,12 +27,14 @@ ms.lasthandoff: 09/20/2017
 -   WCF 服务模型示例  
   
 -   [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] 示例  
+ 
   
--   迁移示例  
+这些示例位于[BizTalk 适配器包 2010年: Siebel 适配器示例](https://www.microsoft.com/download/details.aspx?id=6492)。 
+
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
   
- 这些示例位于[http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854)。  
-  
- 以下列表包含的名称和描述的示例[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
+以下列表介绍这些示例。
   
 ## <a name="biztalk-server-samples"></a>BizTalk Server 示例  
   
@@ -51,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 |SiebelAdapterIntegrationObjects|演示如何调用 Siebel 配合使用的集成对象中的业务服务[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。|  
 |SiebelPicklist|演示如何将插入 Siebel 业务组件使用的选择列表类型的值的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。|  
   
-## <a name="wcf-service-model-samples"></a>WCF 服务模型示例  
+## <a name="wcf-service-model-samples"></a>WCF 服务模型示例 
   
 |示例目录名称|Description|  
 |---------------------------|-----------------|  
@@ -65,11 +60,6 @@ ms.lasthandoff: 09/20/2017
 |---------------------------|-----------------|  
 |siebel ado|演示如何使用[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。|  
   
-## <a name="migration-sample"></a>迁移示例  
-  
-|示例目录名称|Description|  
-|---------------------------|-----------------|  
-|Siebel_Buss_Comp|演示如何使用创建使用 Siebel 适配器的以前版本的 BizTalk 项目并使其适用于基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。|  
-  
+ 
 ## <a name="see-also"></a>另请参阅  
 [开发 Siebel 应用程序](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)

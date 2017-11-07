@@ -12,13 +12,13 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74b7cbe23a6fc818428478859ea021d4fbf38546
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 337883ce2ca3b7f28def19898930d872928a8ce4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="planning-the-biztalk-solution"></a>规划 BizTalk 解决方案
+# <a name="plan-for-your-biztalk-solution"></a>规划你的 BizTalk 解决方案
 主要设计目标之一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是尽可能容纳尽可能多的处理方案提供最大的灵活性。 由于此极大的灵活性，面对的 BizTalk 解决方案的开发人员的主要挑战之一是确定如何在中提供的功能的最佳使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为了最好地满足其业务需求。 规划[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以分解到不同的阶段下面概括了这些阶段。  
   
 ## <a name="scoping-the-solution"></a>作用域解决方案  
@@ -186,7 +186,7 @@ ms.lasthandoff: 09/20/2017
 -   如果它们会不同于默认值所使用的所有软件和操作系统功能的配置值  
   
 ## <a name="building-out-the-environment-for-the-solution"></a>构建解决方案的环境  
- 有关安装详细说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和下载的 BizTalk Server 安装指南中找不到必需的依赖关系软件[BizTalk Server 2010 文档](http://go.microsoft.com/fwlink/?LinkId=183138)(http://go.microsoft.com/fwlink/？LinkId = 183138)。  
+ 有关安装详细说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和软件要求处于[BizTalk Server 安装指南](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。
   
 ## <a name="see-also"></a>另请参阅  
- [规划 BizTalk 服务器层](../technical-guides/planning-the-biztalk-server-tier.md)
+ [规划 BizTalk Server 层](../technical-guides/planning-the-biztalk-server-tier.md)

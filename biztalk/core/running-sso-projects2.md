@@ -1,5 +1,5 @@
 ---
-title: "运行 SSO Projects2 |Microsoft 文档"
+title: "使用 TIBCO EMS 运行 SSO 项目 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- running SSO projects
-- Single Sign-On, samples
-- SSO, samples
-- sample applications, SSO project
 ms.assetid: a44a96e8-c83d-42a7-ad25-e2fa48804712
 caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f117990c4374b57b9219e34ece0549901123461
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac5d08a22ceac96a9ca34a3527d5c68ea5120ca2
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-sso-projects"></a>运行 SSO 项目
 您可以从 Internet Explorer 运行示例单一登录 (SSO) 项目。  
   
-## <a name="running-a-sample-from-internet-explorer"></a>从 Internet 资源管理器中运行示例  
-  
-#### <a name="to-run-the-sample-from-the-internet-explorer"></a>从 Internet Explorer 运行示例  
+## <a name="run-a-sample-from-a-web-browser"></a>从 web 浏览器中运行示例
   
 1.  打开浏览器。  
   

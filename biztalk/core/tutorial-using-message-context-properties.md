@@ -1,5 +1,6 @@
 ---
-title: "教程： 使用消息上下文属性 |Microsoft 文档"
+title: "教程： 使用 TIBCO EMS 消息上下文属性 |Microsoft 文档"
+description: "分步指南，以用于 BizTalk Server 业务流程中的 TIBCO 企业消息服务消息描述符字段"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, changing priority
-- message context properties, tutorial
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f122215baa5660294e159e4f1d6967a2df5ba9b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f17b45afb28a497c0443f788a44d05307103c547
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="tutorial-using-message-context-properties"></a>教程： 使用消息上下文属性
+# <a name="tutorial-use-tibco-ems-message-descriptors"></a>教程： 使用 TIBCO EMS 消息描述符
+
+## <a name="overview"></a>概述
 本教程演示了如何使用 BizTalk Server 上下文属性在业务流程中设置 TIBCO Enterprise Message Service (EMS) 消息描述符字段。 该教程假定您已具备一个可执行如下操作的业务流程：从接收端口接收消息并将该消息发送到与用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器绑定的发送端口。  
   
  下面的过程演示了如何通过更改 TibcoEMS.Priority 上下文属性的值来更改 TIBCO EMS 消息的优先级。 在 BizTalk Server 中，消息是不可改变的。 因此，若要更改属性值，必须创建和修改新的消息。 通过在接收形状和发送形状之间插入消息赋值形状可以创建和修改新消息。 但是，必须首先引用架构 DLL 才能访问 TIBCO EMS 属性。  
   
-### <a name="to-reference-the-schema-dll"></a>若要引用 DLL 的架构  
+## <a name="reference-the-schema-dll"></a>引用 DLL 的架构  
   
-1.  打开**解决方案资源管理器**Visual Studio 中。  
+1.  在 Visual Studio 中，打开你的 BizTalk 服务器项目，并打开**解决方案资源管理器**。  
   
 2.  右键单击**引用**，然后选择**添加引用**。  
   
@@ -90,4 +90,4 @@ ms.lasthandoff: 09/20/2017
 21. 选择**绑定**， **Enlist**，和**启动**BizTalk 资源管理器来测试您的业务流程。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息上下文属性](../core/message-context-properties2.md)
+[TIBCO EMS 消息上下文属性](../core/message-context-properties-in-biztalk-server.md)

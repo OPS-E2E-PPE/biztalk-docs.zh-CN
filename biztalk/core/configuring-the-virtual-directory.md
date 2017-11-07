@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a879fe776956c290fb895c7f0feb39b6088e268
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5e74e297eba5dcc92d2008bcca90fdc7b325814
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="configuring-the-virtual-directory"></a>配置虚拟目录
 本主题演示了为用户配置虚拟目录并验证应用程序的过程。  
@@ -60,4 +60,4 @@ ms.lasthandoff: 09/20/2017
 4.  单击**标识**和更改此 COM + 应用程序是 BizTalk Server 组的成员的用户在其下运行的标识。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on3.md)
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a9d3d102c3ab79ea719587fdb3632612e75faa7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3b0fbe7aa671d543a0fd6cd7da78e05d18c63c3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>有关博士企业 OneWorld 单一登录和 BizTalk 适配器
 单一登录 (SSO) 凭据是从数据库中获取 SSO 凭据;因此，不需要输入中的服务器系统的登录凭据**传输属性**窗口。  
@@ -35,4 +35,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [创建关联应用程序](../core/creating-affiliate-applications3.md)   
- [使用单一登录](../core/using-single-sign-on3.md)
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

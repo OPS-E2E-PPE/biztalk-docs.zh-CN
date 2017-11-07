@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b830e955b54ae8e3ba7fc05f21f22acd97f290a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a462ab04aad857bf87b189cafce14bb9c3747e8
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="known-issues-with-schema-generation-and-validation"></a>架构生成和验证已知的问题
 本主题提供架构生成和验证的已知问题的相关信息。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
  您的架构可以包含无限循环，当它包含循环引用到的节点**最小出现次数**属性值大于或等于一个，实质上阻止的终止条件。 实例消息的生成将人为终止，以便生成操作可以完成，但生成的实例消息因此将不符合生成该消息所基于的架构。 此类架构通常是可疑的。  
   
 ## <a name="validation-of-xml-instance-fails-for-document-schema-which-has-the-target-namespacehttpwwww3orgxml1998namespace"></a>目标命名空间为“http://www.w3.org/XML/1998/namespace”的文档架构的 XML 实例验证失败  
- "超链接"http://www.w3.org/XML/1998/namespace"http://www.w3.org/XML/1998/namespace"是保留的命名空间的前缀应为"XML"。 你可以手动编辑的前缀为"XML"。
+ 超链接"http://www.w3.org/XML/1998/namespace"是保留的命名空间的前缀应为"XML"。 你可以手动编辑的前缀为"XML"。
 
 ## <a name="see-also"></a>另请参阅
 这些属性的更多详细信息[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。

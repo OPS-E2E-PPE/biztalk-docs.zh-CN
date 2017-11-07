@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 437bc9d744e20b14e21d0e9d2ebe33e7b2e8a62a
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 43e54da709384611bffd1e05da6a79decc778e57
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 若要使用单一登录 (SSO)，您必须安装下列软件：  
@@ -43,4 +43,4 @@ ms.lasthandoff: 10/17/2017
 >  后执行的操作使用 SSO，请记得重置到任何 Web 共享文件夹**不共享**。 如果相应文件夹仍为共享模式，则使用该文件夹的应用程序将不会正确更新或卸载，因为该文件夹会被视为在使用中。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on1.md)
+ [用于 JD Edwards EnterpriseOne 的 BizTalk 适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

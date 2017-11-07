@@ -1,26 +1,12 @@
 ---
-title: "将适配器添加到 BizTalk Server |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- adapters [JD Edwards OneWorld adapters], installing
-- installing, JD Edwards OneWorld adapters
-- JD Edwards OneWorld adapters, installing
-ms.assetid: e2018856-1943-48e9-b43f-7d527880e4bd
-caps.latest.revision: "12"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 63de8824112c9891c6d67eee424a84dd4968976c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a>将适配器添加到 BizTalk Server
 适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器包含“接收处理程序”文件夹和“发送处理程序”文件夹。 “发送处理程序”文件夹包含 BizTalkServerApplication。 适用于 JD Edwards OneWorld 的 BizTalk 适配器是可以创建的，它在与 BizTalk 服务器相关的进程中运行，而不在隔离的主机进程中运行。  
@@ -61,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [规划和体系结构](../core/planning-and-architecture17.md)   
  [用于博士 Edwards OneWorld 的 BizTalk Adapter 中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)   
- [为博士 Edwards OneWorld 添加 BizTalk 适配器](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)
+ [添加用于 JD Edwards OneWorld 的 BizTalk 适配器](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)

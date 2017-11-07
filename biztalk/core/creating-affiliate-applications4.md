@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82ee1a01fafad93fe324e6c6a940944ceeb4bbfb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87aa9be716e437e80c0e85bd9e462713e48090ad
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤介绍如何使用 SSO 开始使用关联应用程序。  
@@ -118,4 +118,4 @@ ms.lasthandoff: 09/20/2017
      关联应用程序中的 BizTalk Adapter 显示个博士 Edwards EnterpriseOne**传输属性**对话框。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on1.md)
+ [用于 JD Edwards EnterpriseOne 的 BizTalk 适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

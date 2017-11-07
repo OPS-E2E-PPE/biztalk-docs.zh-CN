@@ -1,7 +1,8 @@
 ---
-title: "为 Oracle EBS 适配器示例 |Microsoft 文档"
+title: "Oracle EBS 适配器示例 |Microsoft 文档"
+description: "可以用于 BizTalk Server、 WCF 服务模型和 WCF 通道模型的 oracle 企业业务套件 WCF 适配器示例"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05f4bd3d251872dc480c939ec864db9d61f14bd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4069b7f5916291544ce76534e04b20af5680d69
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-oracle-ebs-adapter"></a>Oracle EBS 适配器的的示例
 示例[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]分为：  
@@ -29,9 +30,12 @@ ms.lasthandoff: 09/20/2017
   
 -   Microsoft Office SharePoint Server 示例  
   
- 这些示例位于[http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854)。 SQL 脚本创建接口表、 并发程序、 表和也将提供的示例以及在这些示例中使用的程序包[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
+ 这些示例位于[BizTalk 适配器包 2010年: Oracle E-business Suite 适配器示例](https://www.microsoft.com/download/details.aspx?id=6464)。 用于创建接口表、 并发程序、 表和示例中使用的包的 SQL 脚本是包含。 
   
- 下表包含的名称和描述的示例[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
+  
+ 以下列表介绍这些示例。 
   
 ## <a name="biztalk-server-samples"></a>BizTalk Server 示例  
   
@@ -46,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |PollingUsingSelectStatement|演示如何配置一个轮询查询使用 SELECT 语句和接收使用对结果[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。|  
 |PollingUsingStoredProc|演示如何配置一个轮询查询使用存储的过程和接收使用对结果[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。|  
   
-## <a name="wcf-service-model-samples"></a>WCF 服务模型示例  
+## <a name="wcf-service-model-sasamplesmples"></a>WCF 服务模型 Sasamplesmples  
   
 |示例目录名称|Description|  
 |---------------------------|-----------------|  

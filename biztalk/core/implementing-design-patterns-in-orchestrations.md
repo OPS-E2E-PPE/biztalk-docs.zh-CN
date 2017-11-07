@@ -1,5 +1,6 @@
 ---
-title: "在业务流程中实现设计模式 |Microsoft 文档"
+title: "在业务流程中实现的设计模式 |Microsoft 文档"
+description: "聚合器，基于内容的路由、 动态路由器、 错误处理、 消息代理和 BizTalk Server 中的多个设计模式"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,39 +8,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Aggregator pattern, orchestrations
-- Error Handling pattern [orchestrations]
-- patterns, orchestrations
-- designing, orchestrations
-- orchestrations, designing
-- Exception Handling and Compensation pattern [orchestrations]
-- Parallel Convoy pattern [orchestrations]
-- Dynamic Router pattern [orchestrations]
-- orchestrations, patterns
-- patterns
-- Composed Message Processor pattern [orchestrations]
-- Suspend with Retry pattern, orchestrations
-- Calling Pipelines from Orchestration pattern [orchestrations]
-- Message Filter pattern [orchestrations]
-- Message Broker pattern [orchestrations]
-- Content-Based Router pattern [orchestrations]
-- Sequential Convoy pattern [orchestrations]
-- Scatter and Gather pattern [orchestrations]
-- Splitter pattern, orchestrations
-- Message Translator pattern [orchestrations]
 ms.assetid: f62ba955-018a-40e7-b303-497acc906019
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a4837ddf1199425a76a6fa82bbfd6e44615b6c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 290b31e8d5494c7a00eb02517e910fc877da9124
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="implementing-design-patterns-in-orchestrations"></a>在业务流程中的实现设计模式
+# <a name="implement-design-patterns-in-orchestrations"></a>在业务流程中的实现设计模式
 本部分讨论 BizTalk Server 编程的通用模式以及企业集成模式。 您可以利用单一模式或组合多个模式来设计您的业务流程，然后使用 BizTalk 业务流程设计器中的形状实现该设计。  
   
 ## <a name="design-patterns"></a>设计模式  
@@ -83,13 +63,13 @@ throw(excp);
  消息转换器模式可以将消息从一种形式转换为另一种形式。 你可以使用与 BizTalk 映射来实现此模式**转换**形状中业务流程。 有关此模式的示例，请参阅中的 HelloOrchestration.odx [HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)。  
   
 ### <a name="parallel-convoy"></a>并行的队列  
- 并行保护模式可以使多个单一项连接在一起来得出所需的结果，而这一结果是无法通过单个项本身来完成的。 一组相关项可以按任意顺序到达，但 BizTalk Server 必须在收到所有项之后才能启动流程。 有关此模式的示例，请参阅[http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035)。  
+ 并行保护模式可以使多个单一项连接在一起来得出所需的结果，而这一结果是无法通过单个项本身来完成的。 一组相关项可以按任意顺序到达，但 BizTalk Server 必须在收到所有项之后才能启动流程。 
   
 ### <a name="scatter-and-gather"></a>分散与收集  
- 分散与收集模式可以将消息发送至多个收件人，然后接收来自每个收件人的消息。 您可以通过使用拆分器模式和聚合器模式来实现此模式。 你使用聚合器模式来汇集使用拆分器模式中的结果并将其下放**并行操作**形状。 拆分模式的示例，请参阅 SDK 示例命名实现散点图和收集模式时[http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)。  
+ 分散与收集模式可以将消息发送至多个收件人，然后接收来自每个收件人的消息。 您可以通过使用拆分器模式和聚合器模式来实现此模式。 你使用聚合器模式来汇集使用拆分器模式中的结果并将其下放**并行操作**形状。 
   
 ### <a name="sequential-convoy"></a>顺序保护  
- 顺序保护模式可以使多个单一项连接在一起来得出所需的结果，而这一结果是无法通过单个项本身来完成的。 顺序保护是一组具有预定义顺序的相关项。 虽然这些项不必完全相同，但 BizTalk Server 必须按一定顺序接收它们。 有关此模式的示例，请参阅[http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035)。  
+ 顺序保护模式可以使多个单一项连接在一起来得出所需的结果，而这一结果是无法通过单个项本身来完成的。 顺序保护是一组具有预定义顺序的相关项。 虽然这些项不必完全相同，但 BizTalk Server 必须按一定顺序接收它们。 
   
 ### <a name="splitter"></a>拆分器  
  拆分器模式获取单个消息并将其拆分为多个消息。  

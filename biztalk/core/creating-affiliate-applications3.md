@@ -18,11 +18,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd1d7cf18d35825b9291cf85546f3a9dc157fe1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 下列步骤介绍了如何开始使用关联应用程序和单一登录 (SSO)。  
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
 5.  此关联应用程序显示在“JD Edwards OneWorld 传输属性”对话框的 BizTalk 适配器的下拉列表中。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on3.md)
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

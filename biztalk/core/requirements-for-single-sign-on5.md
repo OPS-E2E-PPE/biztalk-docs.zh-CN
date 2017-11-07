@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2abd36879428c9d775251e20dd63f8778aa7b63
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: fd2a1fb342911c904044c8099901c5056f17ac9f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 若要使用单一登录 (SSO)，需具备以下各项：  
@@ -43,4 +43,4 @@ ms.lasthandoff: 10/17/2017
     >  后执行的操作使用 SSO，请记得重置任何**Web 共享**文件夹**不共享**。 如果相应文件夹仍为共享模式，则使用该文件夹的应用程序将不会正确更新或卸载，因为该文件夹会被视为在使用中。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on3.md)
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

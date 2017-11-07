@@ -1,29 +1,23 @@
 ---
-title: "SAP 适配器的示例 |Microsoft 文档"
+title: "SAP 适配器示例 |Microsoft 文档"
+description: "为 SAP 使用 BizTalk Server、 WCF 服务模型，WCF 通道模型和数据提供程序使用的 mySAP WCF 适配器示例"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- samples, Data Provider for SAP
-- samples, migration
-- samples, BizTalk
-- samples, WCF service model
-- samples, WCF channel model
-- samples
 ms.assetid: 4654c458-83be-417f-ae54-5c3a8f6ab81f
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0374aada037282a68e7575136b8671bba5ca181d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d163c573003f40b2049f7e921e5edc4997b4e115
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-sap-adapter"></a>SAP 适配器的示例
 示例[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]分为：  
@@ -35,12 +29,14 @@ ms.lasthandoff: 09/20/2017
 -   WCF 通道模型示例  
   
 -   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] 示例  
+
   
--   迁移示例  
+ 这些示例位于[BizTalk 适配器包 2010年: SAP 适配器示例](https://www.microsoft.com/download/details.aspx?id=1314)。 
+
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
   
- 这些示例位于[http://go.microsoft.com/fwlink/?LinkID=196854](http://go.microsoft.com/fwlink/?LinkID=196854)。  
-  
- 以下列表包含的名称和描述的示例[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
+ 以下列表介绍这些示例。
   
 ## <a name="biztalk-server-samples"></a>BizTalk Server 示例  
   
@@ -53,7 +49,7 @@ ms.lasthandoff: 09/20/2017
 |SAPTransaction|演示如何在 SAP 系统使用中执行事务。|  
 |tRFCClient|演示如何在 SAP 系统上进行 tRFC 客户端调用。|  
   
-## <a name="wcf-service-model-samples"></a>WCF 服务模型示例  
+## <a name="wcf-service-model-samples"></a>WCF 服务模型示例   
   
 |示例目录名称|Description|  
 |---------------------------|-----------------|  
@@ -75,13 +71,6 @@ ms.lasthandoff: 09/20/2017
 |---------------------------|-----------------|  
 |sap ado|演示如何使用[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。|  
   
-## <a name="migration-samples"></a>迁移示例  
-  
-|示例目录名称|Description|  
-|---------------------------|-----------------|  
-|SAP_RFC_Migration|演示如何使用使用以前版本的 SAP 适配器创建的 BizTalk 项目并使其适用于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 BizTalk 项目包含要调用 SD_RFC_CUSTOMER_GET RFC 业务流程。|  
-|SendIDOC_Migration|演示如何使用使用以前版本的 SAP 适配器创建的 BizTalk 项目并使其适用于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 BizTalk 项目包含业务流程以将 IDOC 发送到 SAP 系统。|  
-|ReceiveIDOC_Migration|演示如何使用使用以前版本的 SAP 适配器创建的 BizTalk 项目并使其适用于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 BizTalk 项目包含要调用接收从 SAP 系统的 IDOC 的业务流程。|  
-  
+ 
 ## <a name="see-also"></a>另请参阅  
-[开发您的 SAP 应用程序](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)
+[开发 SAP 应用程序](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)
