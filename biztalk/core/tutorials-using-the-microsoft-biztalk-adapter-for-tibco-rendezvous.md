@@ -1,7 +1,8 @@
 ---
 title: "教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合 |Microsoft 文档"
+description: "从 TIBCO Rendevous 接收数据，并将数据发送到 BizTalk Server 中使用该适配器 TIBCO Rendevous 的分步指南"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/23/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,19 +13,21 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83eb6a98e87bf730c1d3343441c2d1fb12051c0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff11194c31ef9df3b4f80c6b8a6a0e3f2bdd0bc6
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="fa577-102">教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合</span><span class="sxs-lookup"><span data-stu-id="fa577-102">Tutorials: Using the Microsoft BizTalk Adapter for TIBCO Rendezvous</span></span>
-<span data-ttu-id="fa577-103">用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器是业务线流程管理和自动化的开发和运行时环境。</span><span class="sxs-lookup"><span data-stu-id="fa577-103">Microsoft BizTalk Adapter for TIBCO Rendezvous is a development and run-time environment for line-of-business process management and automation.</span></span> <span data-ttu-id="fa577-104">本部分介绍两个设置和部署适配器，以便你可以快速入门中存在一个端到端过程的 SDK 示例。</span><span class="sxs-lookup"><span data-stu-id="fa577-104">This section describes two SDK samples that present an end-to-end exercise in setting up and deploying the adapter so that you can get a quick start.</span></span>  
+# <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="f3546-103">教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合</span><span class="sxs-lookup"><span data-stu-id="f3546-103">Tutorials: Using the Microsoft BizTalk Adapter for TIBCO Rendezvous</span></span>
+
+## <a name="overview"></a><span data-ttu-id="f3546-104">概述</span><span class="sxs-lookup"><span data-stu-id="f3546-104">Overview</span></span>
+<span data-ttu-id="f3546-105">用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器是业务线流程管理和自动化的开发和运行时环境。</span><span class="sxs-lookup"><span data-stu-id="f3546-105">Microsoft BizTalk Adapter for TIBCO Rendezvous is a development and run-time environment for line-of-business process management and automation.</span></span> <span data-ttu-id="f3546-106">本部分介绍两个设置和部署适配器，以便你可以快速入门中存在一个端到端过程的 SDK 示例。</span><span class="sxs-lookup"><span data-stu-id="f3546-106">This section describes two SDK samples that present an end-to-end exercise in setting up and deploying the adapter so that you can get a quick start.</span></span>  
   
- <span data-ttu-id="fa577-105">这些教程包括有关将适配器添加到 BizTalk Server 的详细分步信息，创建相应发送和接收端口，生成和部署这些示例中，以及处理示例的测试数据。</span><span class="sxs-lookup"><span data-stu-id="fa577-105">These tutorials include detailed step-by-step information about adding an adapter to BizTalk Server, creating the appropriate send and receive ports, building and deploying the samples, and processing test data with the samples.</span></span>  
+ <span data-ttu-id="f3546-107">这些教程包括有关将适配器添加到 BizTalk Server 的详细分步信息，创建相应发送和接收端口，生成和部署这些示例中，以及处理示例的测试数据。</span><span class="sxs-lookup"><span data-stu-id="f3546-107">These tutorials include detailed step-by-step information about adding an adapter to BizTalk Server, creating the appropriate send and receive ports, building and deploying the samples, and processing test data with the samples.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="fa577-106">本节内容</span><span class="sxs-lookup"><span data-stu-id="fa577-106">In This Section</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="f3546-108">后续步骤</span><span class="sxs-lookup"><span data-stu-id="f3546-108">Next steps</span></span>
   
--   [<span data-ttu-id="fa577-107">教程： 使用 TIBCO 会合的 BizTalk 适配器将数据发送</span><span class="sxs-lookup"><span data-stu-id="fa577-107">Tutorial: Using the BizTalk Adapter for TIBCO Rendezvous to Send Data</span></span>](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data.md)  
+-   [<span data-ttu-id="f3546-109">教程： 使用发送数据到 TIBCO 会合适配器</span><span class="sxs-lookup"><span data-stu-id="f3546-109">Tutorial: Use the TIBCO Rendezvous adatper to Send Data</span></span>](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data.md)  
   
--   [<span data-ttu-id="fa577-108">教程： 使用 TIBCO 会合的 BizTalk 适配器接收数据</span><span class="sxs-lookup"><span data-stu-id="fa577-108">Tutorial: Using the BizTalk Adapter for TIBCO Rendezvous to Receive Data</span></span>](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data.md)
+-   [<span data-ttu-id="f3546-110">教程： 使用 TIBCO 会合适配器接收数据</span><span class="sxs-lookup"><span data-stu-id="f3546-110">Tutorial: Use the TIBCO Rendezvous adatper to Receive Data</span></span>](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data.md)
