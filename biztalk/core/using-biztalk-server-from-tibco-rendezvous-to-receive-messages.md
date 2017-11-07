@@ -1,26 +1,12 @@
 ---
-title: "使用从 TIBCO 会合的 BizTalk Server 接收消息 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- messages, receiving
-- receiving messages
-- memory use
-ms.assetid: 4eee9c3a-2966-4d5f-ba49-201bb488458c
-caps.latest.revision: "4"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 4ac81f269e19526f5466e8c12115d617b8171da3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/using-tibco-rendezvous-receive-ports-from-biztalk-server/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: b1738a0933b5f570edfd882778e50ebf7e2ca730
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>使用来自 TIBCO Rendezvous 的 BizTalk Server 以接收消息
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器从队列中调度多个线程上的事件。 BizTalk Server 接收位置与一个 TIBCO Rendezvous 事件队列及其调度程序线程池关联。  
@@ -32,4 +18,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [TIBCO 会合概念](../core/tibco-rendezvous-concepts.md)   
- [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

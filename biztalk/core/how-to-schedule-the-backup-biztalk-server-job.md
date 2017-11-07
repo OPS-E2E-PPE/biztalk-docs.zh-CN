@@ -1,69 +1,83 @@
 ---
-title: "如何安排备份 BizTalk Server 作业 |Microsoft 文档"
+title: "计划备份的 BizTalk Server 作业 |Microsoft 文档"
+description: "配置备份 BizTalk Server 作业参数，并将计划设置为运行每月、 每周、 每日或每小时"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/02/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- backing up, scheduling
-- backing up, backup jobs
-- scheduling, backup jobs
 ms.assetid: 6e89fff4-da87-4cdc-acc4-46f03c3269fc
 caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d6b40ae933874e1c25cb3a93dbbeab514ef5dfe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f09ca97f65605ac3bf427d1c1fcc322a14feb53
+ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="how-to-schedule-the-backup-biztalk-server-job"></a>如何安排备份 BizTalk Server 作业
+# <a name="schedule-the-backup-biztalk-server-job"></a>计划备份的 BizTalk Server 作业
 备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作为 SQL Server 代理服务计划的作业运行。 如果要修改备份频率，可使用 SQL Server Management Studio 来更改备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业的计划。  
   
 ## <a name="prerequisites"></a>先决条件  
- 若要执行此过程，必须以 SQL Server sysadmin 固定服务器角色成员的帐户登录。  
+使用 SQL Server sysadmin 固定服务器角色的成员的帐户登录。  
   
-### <a name="to-schedule-the-backup-biztalk-server-job-sql-server-2008"></a>若要计划备份 BizTalk Server 作业 (SQL Server 2008)  
+## <a name="schedule-the-backup-biztalk-server-job"></a>计划备份 BizTalk Server 作业
   
-1.  在包含 BizTalk 管理数据库的计算机，单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 R2**，然后单击**Microsoft SQL Server Management Studio**。  
+1.  在承载 BizTalk 管理数据库的 SQL 服务器，打开**SQL Server Management Studio**。
+
+2.  在**连接到服务器**，输入 SQL Server 数据库所驻留，BizTalk 服务器在其中选择身份验证类型的名称，然后**连接**。  
   
-2.  在**连接到服务器**对话框中，指定其中 BizTalk Server 数据库的 SQL server 名称驻留和键入，，然后单击适当的身份验证**连接**。  
+3.  在对象资源管理器中，双击**SQL Server 代理**，然后选择**作业**。  
   
-3.  在对象资源管理器中，双击**SQL Server 代理**，然后单击**作业**。  
+4.  在细节窗格中，右键单击**备份 BizTalk Server (BizTalkMgmtDb)**，然后选择**属性**。  
   
-4.  在细节窗格中，右键单击**备份 BizTalk Server (BizTalkMgmtDb)**，然后单击**属性**。  
+5.  在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**下**选择页**，选择**步骤**。  
   
-5.  在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**对话框中，在**选择页**，单击**步骤**。  
+6.  在**作业步骤列表**，选择**BackupFull**，然后选择**编辑**。  
   
-6.  在**作业步骤列表**，单击**BackupFull**，然后单击**编辑**。  
-  
-7.  在**作业步骤属性-BackupFull**对话框中，在**命令**框中，编辑该命令，通过更改为所需的间隔，在其中执行完整备份的频率： **'h'**（每小时），**具有**（每天）、 **w** （每周一次），**我**（按月） **y** （每年），然后单击**确定**.  
+7.  在**作业步骤属性-BackupFull**中**命令**框中，通过更改运行完整备份的频率更新命令： **'h'** （每小时），**具有** （每天）、 **w** （每周一次），**我**（按月） **y** （每年）。 选择“确定”。  
   
     > [!NOTE]
-    >  当备份 BizTalk Server 作业在新周期内第一次运行时，就会执行一次完整备份。  
+    >  首次备份的 BizTalk Server 作业运行时，它将完成的完整备份。  
+    
+8.  配置其他 **@frequency** 参数：  
   
-8.  在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**对话框中，在**选择页**，单击**计划**。  
+    - **@ForceFullBackupAfterPartialSetFailure**： 默认值是**false**。 当**false**，如果下一个周期进行完整备份是将等待，则完整备份将失败，系统。  
+    
+        > [!NOTE]
+        >  如果你 **@frequency** 设置长时间 （如每周、 每月、 每年），然后将设置此参数为**false**会非常危险。 在此方案中，它可能是最好将此标志设置为**true**。 当**true**，每次失败，则系统强制本身创建完整备份。 存在可能会很小的性能影响，但它是 safter 具有可恢复的系统。
   
-9. 在**计划列表**，单击**MarkAndBackupLogSched**，然后单击**编辑**。  
+    - **@BackupHour**： 默认值为 NULL。 此参数直接相关 **@Frequency** 。 当将频率设置为**h** （每小时），设置你想要运行的完整备份的日期的小时。 你可以选择介于 0 （午夜） 到 23 （晚上 11 点） 之间的值。 如果留空，每小时都会运行完整备份。  
+    
+       > [!NOTE]
+        >  如果超出了 0 到 23 范围 （例如，100 或-1） 数量设置此参数，系统会将其强制为 0。
   
-10. 在**作业计划属性-MarkAndBackupLogSched**对话框中，在计划类型，选择**重复执行**从下拉列表框中 （如果尚未选择）。  
+    - **@UseLocalTime**： 状态为使用本地时间了额外的参数。 默认情况下，作业适用于 UTC 时间。 因此如果你的居住在澳大利亚 （这是 UTC + 10 小时），你的备份将在上午 10，而不是午夜运行。 作为最佳做法，建议将其设置为**1** (true)。  
+  
+9.  在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**下**选择页**，单击**计划**。  
+  
+10. 在**计划列表**，单击**MarkAndBackupLogSched**，然后单击**编辑**。  
+  
+11. 在**作业计划属性-MarkAndBackupLogSched**，在计划类型中，选择**重复执行**从下拉列表。  
   
      默认情况下，作业每 15 分钟运行一次。  
+     
+    > [!NOTE]
+    >  你可以更改此值根据要求，但在非生产环境中的第一个测试。 设置此值过低导致频繁地备份，并将添加到您的 SQL 环境中的后台负载。 设置此值过高可能会增加事务日志的大小，影响性能。 在某些情况下，建议保留默认值。    
   
-11. 更新根据需要，计划，然后单击**确定**。  
+12. 更新的计划，如果需要，，然后选择**确定**。  
   
     > [!NOTE]
-    >  有关计划 SQL Server 代理作业的详细信息，请参阅"[计划作业](http://go.microsoft.com/fwlink/?LinkId=195887)。"  
+    >  [计划作业](https://docs.microsoft.com/sql/ssms/agent/schedule-a-job)提供更多详细信息。
   
-12. 在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**对话框中，单击**确定**。  
+13. 在**作业属性-备份 BizTalk Server (BizTalkMgmtDb)**，单击**确定**。  
   
-## <a name="see-also"></a>另请参阅  
- [如何配置备份 BizTalk Server 作业](../core/how-to-configure-the-backup-biztalk-server-job.md)   
- [如何为日志传送配置的目标系统](../core/how-to-configure-the-destination-system-for-log-shipping.md)   
- [如何还原数据库](../core/how-to-restore-your-databases.md)   
- [有关备份和还原的高级的信息](../core/advanced-information-about-backup-and-restore1.md)
+## <a name="more-good-stuff"></a>更多有用内容  
+ [配置备份 BizTalk Server 作业](../core/how-to-configure-the-backup-biztalk-server-job.md)   
+ [为日志传送配置的目标系统](../core/how-to-configure-the-destination-system-for-log-shipping.md)   
+ [还原数据库](../core/how-to-restore-your-databases.md)   
+ [有关备份和还原的高级信息](../core/advanced-information-about-backup-and-restore1.md)

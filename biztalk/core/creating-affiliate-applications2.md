@@ -1,5 +1,5 @@
 ---
-title: "创建 Affiliate Applications2 |Microsoft 文档"
+title: "创建 PeopleSoft 企业的关联应用程序 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Single Sign-On, creating tickets
-- creating affiliate applications
-- tickets, SSO
-- affiliate applications, enabling XML
-- affiliate applications, creating
-- SSO tickets
 ms.assetid: 95151163-5aaf-4683-afb7-02949ccda3e1
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f39fbbfb62a9081937891b98e2b01a5e7f046e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4a77926fa9d98606770ad2fe7715a3b0ff66ea5c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 下列步骤显示如何开始使用关联应用程序和单一登录 (SSO)。  
@@ -31,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  如果收到 SSO 错误，请确认您在配置 BizTalk Server 时使用的是域帐户，因为它会影响企业 SSO 服务的功能。 SSO 仅在域帐户下起作用。  
   
-### <a name="to-create-an-affiliate-application"></a>若要创建关联应用程序  
+## <a name="create-an-affiliate-application"></a>创建关联应用程序  
   
 1.  在 Control Panel 中，打开**服务**，并验证企业单一登录服务正在运行。  
   
@@ -74,9 +67,7 @@ ms.lasthandoff: 09/20/2017
     </SSO>  
     ```  
   
-## <a name="creating-single-sign-on-tickets"></a>创建单一登录票证  
-  
-#### <a name="to-create-sso-tickets"></a>创建 SSO 票证  
+## <a name="create-single-sign-on-tickets"></a>创建单一登录票证  
   
 1.  键入以下命令以便控制 SSO 票证行为：  
   
@@ -90,9 +81,7 @@ ms.lasthandoff: 09/20/2017
   
      **使用此计算机上的 SSO 服务器。已成功完成该操作。**  
   
-## <a name="enabling-the-affiliate-application-xml"></a>启用关联应用程序 XML  
-  
-#### <a name="to-enable-affiliate-application-xml"></a>启用关联应用程序 XML  
+## <a name="enable-the-affiliate-application-xml"></a>启用关联应用程序 XML  
   
 1.  键入下列命令：  
   
@@ -123,4 +112,4 @@ ms.lasthandoff: 09/20/2017
 5.  关联应用程序将显示在用于 PeopleSoft Enterprise 的 BizTalk 适配器的“传输属性”对话框中。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on2.md)
+ [安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

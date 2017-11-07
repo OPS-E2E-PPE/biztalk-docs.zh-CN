@@ -1,26 +1,12 @@
 ---
-title: "如何清洗目标 Computer1 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive locations, removing
-- send ports, removing
-- cleaning target computer
-ms.assetid: 78986a33-3c77-48dc-88c4-b78f52911c22
-caps.latest.revision: "10"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7adf1761b6eb31ce158232c22af457b9c716a812
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 4ceaef21127ec010450082228b765dcbb8e76005
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-clean-the-target-computer"></a>如何清洗目标计算机
 部署将覆盖接收位置配置。 当你部署的目标计算机上，发送端口的绑定文件 （和程序集） 和接收位置已替换为 XML 绑定文件中导入时。  
@@ -39,5 +25,3 @@ ms.lasthandoff: 09/20/2017
   
          **cscript RemoveSendPort.vbs\<发送端口名称 >**  
   
-## <a name="see-also"></a>另请参阅  
- [部署端口和程序集](../core/deploying-ports-and-assemblies1.md)

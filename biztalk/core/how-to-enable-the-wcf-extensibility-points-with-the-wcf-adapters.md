@@ -1,5 +1,6 @@
 ---
-title: "如何启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档"
+title: "启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档"
+description: "安装程序集、 配置 machine.config，将扩展添加到 BizTalk 管理员、 创建接收位置来启用 BizTalk Server 中的 WCF 适配器的 WCF 扩展性点"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,31 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ports, WCF adapters
-- WCF adapters, extensibility ports
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e481521ba651fe8c1e66ea4f730d05375451f111
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be2980f3235552f263efbd4fce92c0042216b88c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>如何启用 WCF 适配器的 WCF 扩展点
-本主题说明如何对 WCF-Custom 和 WCF-CustomIsolated 适配器启用三种 WCF 扩展点：行为扩展、绑定元素扩展和绑定扩展。 若要执行此操作，首先应将用于实现 WCF 扩展点的程序集安装到全局程序集缓存 (GAC) 中，然后修改计算机上的 machine.config 文件，最后再使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置 WCF-Custom 或 WCF-CustomIsolated 适配器。  
+启用三个 WCF 扩展性点-行为扩展、 绑定元素扩展和绑定扩展-与的 WCF 自定义和 WCF CustomIsolated 适配器。 若要执行此操作，首先应将用于实现 WCF 扩展点的程序集安装到全局程序集缓存 (GAC) 中，然后修改计算机上的 machine.config 文件，最后再使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置 WCF-Custom 或 WCF-CustomIsolated 适配器。  
   
- 有关 WCF 扩展性点的详细信息，请参阅"扩展 WCF"网址[http://go.microsoft.com/fwlink/?LinkId=86380](http://go.microsoft.com/fwlink/?LinkId=86380)。  
+请参阅[扩展 WCF](https://docs.microsoft.com/dotnet/framework/wcf/extending/extending-wcf)有关 WCF 扩展点的详细信息。
   
- 有关如何启用 WCF 扩展点的详细信息，请参阅"SDK 示例:: 使用自定义绑定扩展使用的 WCF 自定义适配器"网址[http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185)。  
-  
+ 
 ## <a name="prerequisites"></a>先决条件  
- 若要执行本主题中的过程，你必须登录使用的成员帐户[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员组。 有关更多详细有关权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+使用是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员组。 [用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)提供了详细的信息。  
   
-### <a name="to-install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>将实现 WCF 扩展点的程序集安装到 GAC  
+## <a name="install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>安装程序集在 GAC 中实现的 WCF 扩展性点  
   
 1.  将实现 WCF 扩展点的程序集复制到本地计算机上的某一文件夹中。  
   
@@ -52,7 +49,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  若要启用 WCF 适配器的 WCF 扩展点，运行该适配器的 BizTalk 主机实例必须能够在运行时加载在其中实现 WCF 扩展点的程序集。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>为 WCF 绑定扩展配置 machine.config 文件  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>配置 WCF 绑定扩展的 machine.config 文件  
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
@@ -69,10 +66,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
-  
-    > [!NOTE]
-    >  有关详细信息 **<bindingExtensions>** 元素，请参阅"<bindingExtensions>"在[http://go.microsoft.com/fwlink/?LinkID=86180](http://go.microsoft.com/fwlink/?LinkID=86180)。  
+    >  - 你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
+    >  - 请参阅[bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions)针对此元素。
   
 3.  在记事本中，保存 machine.config 文件。  
   
@@ -81,9 +76,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  你必须在所有计算机上对 WCF 基础结构重复这些步骤，才能处理 BizTalk 主机实例和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台的 WCF 扩展点。  
   
-### <a name="to-configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>使用 BizTalk 管理控制台配置 WCF 绑定扩展  
+## <a name="configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>使用 BizTalk 管理控制台来配置 WCF 绑定扩展  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
+1.  打开 **“BizTalk Server 管理”**。  
   
     > [!NOTE]
     >  如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台已经打开，则重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台。  
@@ -104,7 +99,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，通过单击关闭所有打开的对话框**确定**按钮，并确保不出现任何错误消息和错误事件日志。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>为 WCF 绑定元素扩展配置 machine.config 文件  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>配置 WCF 绑定元素扩展的 machine.config 文件  
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
@@ -121,10 +116,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
-  
-    > [!NOTE]
-    >  有关详细信息 **<bindingElementExtensions>** 元素，请参阅"<bindingElementExtensions>"在[http://go.microsoft.com/fwlink/?LinkId=86381](http://go.microsoft.com/fwlink/?LinkId=86381)。  
+    > - 你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
+    > - 请参阅[bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions)针对此元素。
   
 3.  在记事本中，保存 machine.config 文件。  
   
@@ -133,9 +126,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  你必须在所有计算机上对 WCF 基础结构重复这些步骤，才能处理 BizTalk 主机实例和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台的 WCF 扩展点。  
   
-### <a name="to-configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>使用 BizTalk 管理控制台配置 WCF 绑定元素扩展  
+## <a name="configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>通过使用 BizTalk 管理控制台中配置 WCF 绑定元素扩展  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
+1.  打开 **“BizTalk Server 管理”**。  
   
     > [!NOTE]
     >  如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台已经打开，则重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台。  
@@ -163,13 +156,13 @@ ms.lasthandoff: 09/20/2017
     -   在**绑定**列表，绑定元素扩展，请右键单击，然后单击**移扩展**或**下移扩展**。 中的最低绑定元素扩展**绑定**列表对应于通道堆栈的底部组件。 中的最高的绑定元素**绑定**列表对应的通信堆栈的顶部组件。  
   
         > [!NOTE]
-        >  有关自定义绑定的绑定元素的特定顺序的详细信息，请参阅"自定义绑定"网址[http://go.microsoft.com/fwlink/?LinkId=86383](http://go.microsoft.com/fwlink/?LinkId=86383)。  
+        >  请参阅[自定义绑定](https://docs.microsoft.com/dotnet/framework/wcf/extending/custom-bindings)有关自定义绑定的绑定元素的特定顺序的详细信息。
   
 10. 在“传输属性”对话框中，为传输配置其余设置。  
   
 11. 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，通过单击关闭所有打开的对话框**确定**按钮，并确保不出现任何错误消息和错误事件日志。  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>为 WCF 行为扩展配置 machine.config 文件  
+## <a name="configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>配置 WCF 行为扩展的 machine.config 文件  
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
@@ -186,10 +179,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
-  
-    > [!NOTE]
-    >  有关详细信息 **<behaviorExtensions>** 元素，请参阅"<behaviorExtensions>"在[http://go.microsoft.com/fwlink/?LinkId=86382](http://go.microsoft.com/fwlink/?LinkId=86382)。  
+    >  - 你可以找到通过使用的命令，来注册的程序集信息**gacutil /lr** *< 程序集 _ 名称 >*。  
+    >  - 请参阅[behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions)针对此元素。
   
 3.  在记事本中，保存 machine.config 文件。  
   
@@ -198,9 +189,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  你必须在所有计算机上对 WCF 基础结构重复这些步骤，才能处理 BizTalk 主机实例和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台的 WCF 扩展点。  
   
-### <a name="to-configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>使用 BizTalk 管理控制台配置 WCF 行为扩展  
+## <a name="configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>使用 BizTalk 管理控制台来配置 WCF 行为扩展  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk Server 管理**。  
+1.  打开 **“BizTalk Server 管理”**。  
   
     > [!NOTE]
     >  如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台已经打开，则重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台。  
@@ -223,6 +214,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，通过单击关闭所有打开的对话框**确定**按钮，并确保不出现任何错误消息和错误事件日志。  
   
-### <a name="to-configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>配置带有 SSL 证书的 WCF-Custom 接收位置  
+## <a name="configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>配置 WCF 自定义接收位置使用的 SSL 证书  
   
--   如果 WCF 自定义接收位置碰巧使用 HTTP 内核模式驱动程序 (HTTP.sys)，如**httpsTransport**绑定元素，用于安全套接字层 (SSL) 进行通信，接收位置必须具有证书注册为每个套接字 （IP 地址/端口组合）。 使用 HttpCfg.exe 工具可将 SSL 证书绑定到计算机上的端口。 有关详细信息，请参阅"如何为:: 配置端口使用 SSL 证书" [http://go.microsoft.com/fwlink/?LinkId=86384](http://go.microsoft.com/fwlink/?LinkId=86384)。
+-   如果 WCF 自定义接收位置碰巧使用 HTTP 内核模式驱动程序 (HTTP.sys)，如**httpsTransport**绑定元素，用于安全套接字层 (SSL) 进行通信，接收位置必须具有证书注册为每个套接字 （IP 地址/端口组合）。 使用 HttpCfg.exe 工具可将 SSL 证书绑定到计算机上的端口。 有关详细信息，请参阅[How To： 使用 SSL 证书配置端口](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)。

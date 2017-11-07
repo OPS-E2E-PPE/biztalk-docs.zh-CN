@@ -23,11 +23,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 217a1d79dc4079c8f092985e00a1cd5636788e7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da4b117ca2d032ef1dc10731128acca903a51790
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-send-and-receive-ports"></a>创建发送和接收端口
 使用以下过程为用于 JD Edwards OneWorld 的 BizTalk 适配器创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送和接收端口。  
@@ -91,6 +91,6 @@ ms.lasthandoff: 09/20/2017
 7.  有关**接收管道**，选择**Microsoft.BizTalk.DefaultPiplelines.XMLReceive**，然后单击**确定**。  
   
 ## <a name="see-also"></a>另请参阅  
- [创建博士 Edwards OneWorld 发送处理程序](../core/creating-jd-edwards-oneworld-send-handlers.md)   
- [如何设置博士 Edwards OneWorld 传输属性](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
- [使用单一登录](../core/using-single-sign-on3.md)
+ [将项目添加到 BizTalk 管理](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [将项目添加到 BizTalk 管理](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

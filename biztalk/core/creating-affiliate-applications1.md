@@ -1,5 +1,5 @@
 ---
-title: "创建 Affiliate Applications1 |Microsoft 文档"
+title: "创建 Affiliate TIBCO 会合的应用程序 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- applications, affiliate
-- Single Sign-On, tickets
-- affiliate applications
-- tickets, SSO
-- affiliate applications, enabling XML
-- SSO tickets
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52c59caf451a2e0b55c775bf70a36a9a05ae9c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤描述如何开始使用项目应用程序和单一登录 (SSO)。 有关如何使用企业单一登录的详细信息，请参阅 Microsoft 文档。  
@@ -31,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  如果你收到 SSO 错误，请验证使用域帐户时配置 BizTalk Server 中，因为这会影响企业 SSO 服务的功能。 SSO 仅在域帐户下起作用。  
   
-### <a name="to-create-an-affiliate-application"></a>若要创建关联应用程序  
+## <a name="create-an-affiliate-application"></a>创建关联应用程序  
   
 1.  在 Control Panel 中，打开**服务**，并验证企业单一登录服务正在运行。  
   
@@ -72,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     </SSO>  
     ```  
   
-### <a name="to-create-single-sign-on-tickets"></a>创建单一登录票证  
+## <a name="create-single-sign-on-tickets"></a>创建单一登录票证  
   
 1.  键入以下命令以便控制 SSO 票证行为：  
   
@@ -86,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
      **使用此计算机上的 SSO 服务器。已成功完成该操作。**  
   
-### <a name="to-enable-affiliate-application-xml"></a>启用关联应用程序 XML  
+## <a name="enable-affiliate-application-xml"></a>启用关联应用程序 XML  
   
 1.  键入下列命令：  
   
@@ -119,5 +112,4 @@ ms.lasthandoff: 09/20/2017
 6.  关联应用程序中的 BizTalk Adapter 显示个 TIBCO 会合**传输属性**对话框。  
   
 ## <a name="see-also"></a>另请参阅  
- [用于 TIBCO 会合的 BizTalk Adapter 中的安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   
- [使用单一登录](../core/using-single-sign-on5.md)
+ [用于 TIBCO Rendezvous 的 BizTalk 适配器的安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   

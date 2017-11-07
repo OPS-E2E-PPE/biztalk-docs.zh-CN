@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdb7ff7d93b754285e9ed0eb627ca24b113bd2a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d109e102ada04e673fa5eddc3010201b266a150
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-ports"></a>创建端口
 使用以下过程可创建单一登录的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送和接收端口。  
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
 7.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on2.md)
+ [安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

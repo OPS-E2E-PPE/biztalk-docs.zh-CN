@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d697028eb76cf922cf4bf5e5db85c561c67d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f93396fc71c9e765104ac67835e006e57ca0ade
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a>安装和运行动态解析示例
 此动态解析示例演示 ESB 调度程序和 ESB 调度程序反汇编程序管道组件的典型使用方案。 它演示如何使用组件来动态解析终结点的位置、 设置路由的属性，并解决，并执行在消息级别的 Microsoft BizTalk 映射，而无需使用业务流程。 它还演示了单向和双向消息模式。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
  所有单向消息传送 （除了使用 XPATH 解析程序的一个） 的方案使用文件 NAOrderDoc.xml，位于 \Source\Samples\DynamicResolution\Test\Data 文件夹中，作为输入接收位置名为 DynamicResolution_FILE。 有七个单向消息传送示例，由唯一绑定表示所有文件，则必须导入才能执行每个示例。  
   
 ## <a name="two-way-messaging-scenarios"></a>双向消息处理方案  
- 所有的双向消息传递方案使用示例 ESB。NorthAmericanServices Web 位于 http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 以将请求消息发布到 BizTalk 服务。 你可以执行此 Web 服务使用 Microsoft InfoPath 或通过从可用 Storm 之类的实用工具[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409) ([http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409))。  
+ 所有的双向消息传递方案使用示例 ESB。NorthAmericanServices Web 位于 http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 以将请求消息发布到 BizTalk 服务。 你可以执行此 Web 服务使用 Microsoft InfoPath 或通过从可用 Storm 之类的实用工具[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)。  
   
  每个示例动态解析要提交到示例 ESB 消息的终结点 URL。位于 http://localhost/ESB.CanadianServices/SubmitPOService.asmx CanadianServices Web 服务。 该示例将执行**将订单**操作或**submitPurchase**操作，具体取决于解析过程的结果。 接收位置为双向消息传递方案是 DynamicResolutionReqResp_SOAP。 有 10 双向消息传送示例，由唯一绑定表示所有文件，则必须导入才能执行每个示例。  
   

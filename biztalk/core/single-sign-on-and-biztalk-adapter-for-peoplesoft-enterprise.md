@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3335d2c41e8c8dad4eabcb9f7a63253bd30e7185
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2bb898906bfd3087ef909e59990a16ce16c2822c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-peoplesoft-enterprise"></a>PeopleSoft Enterprise 的单一登录和 BizTalk 适配器
 当使用单一登录 (SSO) 与 Microsoft BizTalk 适配器 PeopleSoft 企业时，适配器从 SSO 凭据数据库; 获取凭据因此，你无需输入服务器系统中的登录凭据**传输属性**对话框。  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [创建关联应用程序](../core/creating-affiliate-applications2.md)   
- [使用单一登录](../core/using-single-sign-on2.md)
+ [安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

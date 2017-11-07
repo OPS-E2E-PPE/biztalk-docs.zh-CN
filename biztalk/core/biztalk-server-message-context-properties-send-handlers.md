@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- message context properties, BizTalk Server
-- reply subjects
-- send handlers, BizTalk Server message context properties
-- replies
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c8e5ddb1feb02a015fdebd62d183d1b8442fe5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f0504e13115229f1325938e8ca48acc17fa5bc1d
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server 消息上下文属性 （发送处理程序）
 除了消息负载之外，消息包含的补充信息必须在运行时从 BizTalk Server 业务流程访问。  
@@ -46,7 +41,12 @@ ms.lasthandoff: 09/20/2017
     OutgoingMsg(Rendezvous.SendSubject) = IncomingMsg  
     (Rendezvous.ReplySubject);  
     ```  
+## <a name="management-assembly"></a>管理程序集
+TIBCO Rendezvous 未提供元数据储存库，并且用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器管理程序集未提供浏览功能或架构生成。 因此，您必须向 BizTalk Server 提供架构。 有关详细信息，请参阅[安装、 架构和限制](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)。
+  
+ 用于 TIBCO Rendezvous 的 BizTalk 适配器包括具有预定义类型的架构。 为某些特定数据类型（数组）生成消息时，该适配器将使用这些类型。
+
   
 ## <a name="see-also"></a>另请参阅  
  [TIBCO 集合中的发送处理程序的数据类型映射](../core/data-type-mapping-for-send-handlers-in-tibco-rendezvous.md)   
- [创建 TIBCO 会合发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)
+ [创建 TIBCO Rendezvous 发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)

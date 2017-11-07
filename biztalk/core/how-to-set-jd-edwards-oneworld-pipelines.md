@@ -1,27 +1,12 @@
 ---
-title: "如何设置博士 Edwards OneWorld 管道 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive pipelines
-- send pipelines
-- setting pipelines
-- pipelines, setting
-ms.assetid: 821d4081-a2d4-4957-abc0-d6370e719ba8
-caps.latest.revision: "9"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: e45ec6f6eb3be74e150e77de9ef6dbbe461a361a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: d3460b45507c7cb73bb4025a8412a1fcc6cb0e59
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-jd-edwards-oneworld-pipelines"></a>如何设置 D Edwards OneWorld 管道
 用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器要求你选择 XMLTransmit 和 XMLReceive 分别用于发送和接收管道。  
@@ -42,5 +27,3 @@ ms.lasthandoff: 09/20/2017
   
 5.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
- [创建博士 Edwards OneWorld 发送处理程序](../core/creating-jd-edwards-oneworld-send-handlers.md)

@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- XML schemas, mapping to Redevous types
-- message mapping, examples
-- XML schemas, schema types
-- data type mapping, send handlers
-- examples, message mapping
-- send handlers, data type mapping
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6c54cb7ae684aa2f617ca615ed55703e331de46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bda336d149d373477b26efeb2e4b05de4aac7554
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous 中用于发送处理程序的数据类型映射
 仅当 TIBCO 集合提供类型信息 (xsi:type=) 时，从 XML 架构类型到 TIBCO 集合类型的映射才有可能。 如果可能，会将任何不受支持的类型映射到字符串。 如果映射不可能，或者该选项已在端口配置中被禁用，则会生成错误。  
@@ -111,4 +104,4 @@ xmlns:ns="some namespace for this message [value not important, unless the schem
  将以前的消息生成为结构化的 TIBCO 集合消息之后，该消息将成为具有六个字段的顶级 TibcoMsg 实例。 最后字段是子消息，由两个数组类型的字段组成（“item”元素未映射到 TIBCO 集合消息字段，而是映射到类型为 `array` 的一个消息字段中的元素）。 未指定类型的 MarketCap 字段将作为字符串消息字段发送。  
   
 ## <a name="see-also"></a>另请参阅  
- [创建 TIBCO 会合发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)
+ [创建 TIBCO Rendezvous 发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)

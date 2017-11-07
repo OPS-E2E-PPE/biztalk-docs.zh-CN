@@ -14,11 +14,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dd6f1be076a8d5bc02942e55dc5e5fa88640ae6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 625479ef124aad6d7c0b10cde34b45a142ff9f90
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a>“JD Edwards OneWorld 传输属性”对话框
 使用 JD Edwards OneWorld 的“传输属性”对话框设置适配器所需的属性。  
@@ -39,6 +39,6 @@ ms.lasthandoff: 09/20/2017
 |使用 SSO|选择**是**如果你使用 SSO; 密码不需要在这种情况下。|  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on3.md)   
+ [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)   
  [创建关联应用程序](../core/creating-affiliate-applications3.md)   
- [用于 JDE OneWorld 的 BizTalk Adapter 的用户界面参考](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)
+ [用于 JDE OneWorld 的 BizTalk 适配器用户界面参考](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)

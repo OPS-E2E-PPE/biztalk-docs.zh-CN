@@ -1,29 +1,27 @@
 ---
-title: "用于 TIBCO 会合的 BizTalk Adapter 的体系结构 |Microsoft 文档"
+title: "TIBCO 会合适配器体系结构 |Microsoft 文档"
+description: "了解有关 TIBCO 会合工作原理，包括在 BizTalk Server 中传递消息，BizTalk 适配器"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/23/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- passing messages
-- architecture
-- message passing
-- messages, passing
 ms.assetid: 174d6ceb-8e1d-4c93-827d-8155cfe47836
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 801f92453ffc85d83d57c1caa5c89ec618b96ed0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3bfee2b51df8781091ea30e512810bae21a5f2a
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="architecture-of-biztalk-adapter-for-tibco-rendezvous"></a>TIBCO Rendezvous 的 BizTalk 适配器体系结构
+# <a name="architecture-of-the-tibco-rendezvous-adapter"></a>TIBCO 会合适配器的体系结构
+
+## <a name="overview"></a>概述
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器提供 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与 TIBCO Rendezvous 之间的双向连接。 此适配器同时使用 TIBCO Rendezvous API 和 BizTalk 适配器框架 API 来提供紧密集成。  
   
  TIBCO Rendezvous 是一种为企业应用程序集成 (EAI) 提供消息库的软件产品。 TIBCO 提供 C、C++、Java、Visual Basic 和 Microsoft .NET Framework 中的消息传递 API 来接收 Microsoft Office Excel 工作表和所选的其他应用程序中的数据源。  
@@ -40,5 +38,4 @@ ms.lasthandoff: 09/20/2017
  ![](../core/media/tibcorend-arch.gif "TibcoRend_Arch")  
   
 ## <a name="see-also"></a>另请参阅  
- [入门](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)   
- [规划和体系结构](../core/planning-and-architecture15.md)
+ [入门](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)  

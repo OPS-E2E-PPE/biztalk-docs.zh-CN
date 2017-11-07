@@ -1,5 +1,5 @@
 ---
-title: "BizTalk Server 消息上下文属性 （接收处理程序） |Microsoft 文档"
+title: "接收消息上下文属性的 TIBCO 会合 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- message context properties
-- receive handlers, message context properties
 ms.assetid: 7f47e2a0-6ac8-404a-bc0a-c7739911af74
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a60896a8e1cace909a160c1dc942e63e9258d85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36f4de92dbe7c4c235a1c9ebd092b28b3a198c92
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="biztalk-server-message-context-properties-receive-handlers"></a>BizTalk Server 消息上下文属性 （接收处理程序）
 除了消息负载之外，构成消息的补充信息必须可以在运行时从 BizTalk Server 业务流程访问。  
@@ -38,4 +35,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [TIBCO 集合中的消息映射](../core/message-mapping-in-tibco-rendezvous.md)   
- [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

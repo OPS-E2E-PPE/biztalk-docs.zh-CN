@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: domain groups
 ms.assetid: 9adc090e-e18c-46b6-b985-49b200d42966
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52fc5cc05718aa6d9e0ca89bc48467052fb916a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42833e24ee4b0ad8f78a8f60139d66ceb41a5f8f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="domain-groups"></a>域组
-BizTalk Server 在单计算机配置和多计算机配置中都支持域组和域用户帐户。 对于多计算机配置，必须满足本部分以及安装指南的“多服务器环境注意事项”中提出的要求。 有关详细信息，请参阅[BizTalk Server 2013 和 2013 R2 的安装概述](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)。  
+# <a name="domain-groups-in-biztalk"></a>在 BIzTalk 域组
+BizTalk Server 在单计算机配置和多计算机配置中都支持域组和域用户帐户。 对于多计算机配置，必须满足本部分以及安装指南的“多服务器环境注意事项”中提出的要求。 有关详细信息，请参阅[安装概述](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。  
   
+## <a name="before-you-begin"></a>开始之前
 -   如果你的 BizTalk Server 配置使用域组，则在配置 BizTalk Server 前必须先手动创建这些组。 配置管理器无法创建域组。  
   
 -   在创建域组和/或用户帐户后, 将用户帐户添加到适当的组中组隶属关系根据[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。  
@@ -37,5 +37,5 @@ BizTalk Server 在单计算机配置和多计算机配置中都支持域组和�
   
 ## <a name="see-also"></a>另请参阅  
  [本地组](../core/local-groups.md)   
- [BizTalk Server 2013 和 2013 R2 安装概述](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)   
+ [安装概述](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)   
  [BizTalk Server 中的 Windows 组和用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)

@@ -1,5 +1,6 @@
 ---
-title: "消息在 BizTalk Server 中的上下文属性 |Microsoft 文档"
+title: "使用 TIBCO EMS 消息上下文属性 |Microsoft 文档"
+description: "使用 BizTalk Server 业务流程中的 TIBCO 企业消息系统消息描述符字段"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,24 +8,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- message context properties, accessing
-- message context properties, BizTalk Server
 ms.assetid: 163ac2cf-0e2d-4780-b398-baa825f92b00
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75e92e458ec6927ab8e1bc6082cd9a71ee3e4387
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ef4f0d8c606724cec9c85551251cb003aa8a7e34
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="message-context-properties-in-biztalk-server"></a>BizTalk Server 中的消息上下文属性
+# <a name="message-context-properties-in-tibco-ems"></a>在 TIBCO EMS 消息上下文属性
+
+## <a name="tibcoemspropertiesdll"></a>TibcoEMSProperties.dll
 若要从 BizTalk Server 业务流程访问 TIBCO 企业消息系统消息描述符字段，必须添加对引用**Microsoft.BizTalk.Adapters.TibcoEMSProperties.dll**到你的项目。 此程序集位于 **\<TIBCO EMS_Adapter_installation_directory > \bin**。 在引用此 TIBCO EMS 属性架构之后，将可以使用各种 BizTalk Server 开发工具访问其他上下文属性（例如，业务流程设计器中的消息赋值形状）。  
   
-## <a name="accessing-context-properties"></a>访问上下文属性  
+## <a name="access-context-properties"></a>访问上下文属性  
  若要访问上下文属性，需要在 TIBCO EMS 命名空间中指定一个可用上下文属性。 若要读取从绑定到 TIBCO EMS 的 BizTalk 适配器的端口接收的消息的上下文属性，可在表达式中使用下列语法：  
   
 ```  
@@ -41,5 +41,7 @@ Message(TibcoEMS.Property)
 Message(TibcoEMS.Property) = value;  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [消息上下文属性](../core/message-context-properties2.md)
+## <a name="next-steps"></a>后续步骤
+-   [TIBCO EMS 消息描述符属性和值](../core/tibco-enterprise-message-service-message-descriptor-properties.md)  
+  
+-   [教程：使用消息上下文属性](../core/tutorial-using-message-context-properties.md)

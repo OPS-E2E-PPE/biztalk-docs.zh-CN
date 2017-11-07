@@ -1,27 +1,16 @@
 ---
-title: "如何设置博士 Edwards OneWorld 传输属性 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: 6d38088b-a496-414e-aae6-d28c5d6398b6
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7abac3b468b8c76b8214e400366144b39f1e2741
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5290f424bbeb5cf54e78c903c50a6c2d945bc8cc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-jd-edwards-oneworld-transport-properties"></a>如何设置博士 Edwards OneWorld 传输属性
+
+## <a name="overview"></a>概述
 JD Edwards OneWorld 传输属性系统定义用于设计和运行时登录。 在设计时，将这些凭据设置为浏览 JD Edwards OneWorld 业务函数，并在运行时进行调用。  
   
  在建立与 JD Edwards OneWorld 的连接后，将参数传递给连接对象（用户、密码、环境）。 它将返回 JD Edwards OneWorld 应用程序业务函数的一个实例。 通过企业/应用程序服务器名称及服务侦听到的已定义的 TCP/IP 端口可进一步定义这些凭据。  
@@ -31,12 +20,8 @@ JD Edwards OneWorld 传输属性系统定义用于设计和运行时登录。 �
 > [!NOTE]
 >  所有条目都要区分大小写。  
   
-## <a name="setting-properties"></a>设置属性  
+## <a name="set-the-transport-properties"></a>设置传输属性  
  在**传输属性**对话框中，你可以设置特定于服务器系统和你尝试访问的对象的连接和凭据参数。  
-  
- 此过程中的步骤如下所示：  
-  
-#### <a name="to-set-transport-properties"></a>设置传输属性  
   
 1.  提供凭据。  
   
@@ -48,7 +33,7 @@ JD Edwards OneWorld 传输属性系统定义用于设计和运行时登录。 �
   
 2.  若要使用单一登录 (SSO)，选择**是**中**使用 SSO**。  
   
-     有关如何设置 SSO 的详细信息，请参阅[使用单一登录](../core/using-single-sign-on3.md)。  
+     有关如何设置 SSO 的详细信息，请参阅[适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
 3.  在列表中选择一个关联应用程序。  
   
@@ -81,7 +66,7 @@ JD Edwards OneWorld 传输属性系统定义用于设计和运行时登录。 �
   
      您必须为用于 JD Edwards OneWorld 的 BizTalk 适配器设置连接参数才能访问 JD Edwards OneWorld。  
   
-### <a name="adapter-required-properties"></a>适配器所需的属性  
+## <a name="adapter-required-properties"></a>所需的适配器属性  
  如果没有在控制面板中设置全局环境变量，则可以在此部分中执行这项工作。  
   
 |参数|Description|  
@@ -94,5 +79,3 @@ JD Edwards OneWorld 传输属性系统定义用于设计和运行时登录。 �
 |端口|键入将交换数据的端口号 (例如， `6009`)。|  
 |用户名|键入将用于登录 JD Edwards OneWorld 系统的 JD Edwards OneWorld 用户名。|  
   
-## <a name="see-also"></a>另请参阅  
- [创建博士 Edwards OneWorld 发送处理程序](../core/creating-jd-edwards-oneworld-send-handlers.md)

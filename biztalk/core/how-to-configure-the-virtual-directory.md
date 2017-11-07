@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b1461ac2ea0ef9cfee71965fc2cc800d617d1d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97af99271a4d63046d2a95a47caed7f145eaef24
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-configure-the-virtual-directory"></a>如何配置虚拟目录
 本主题介绍配置虚拟目录和验证用户的应用程序的过程。  
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 9. 在**添加应用程序**对话框中，单击**确定**。 该文件夹将转换为应用程序（您可以看到图标的变化 – 从文件夹图标变为网站图标）。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on2.md)
+ [安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

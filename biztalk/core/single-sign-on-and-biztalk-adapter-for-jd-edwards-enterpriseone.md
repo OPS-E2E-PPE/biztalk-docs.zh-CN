@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 182e73ed45a1473286a301cf859e619cc5d21287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8daa94a49be4d120180fca9fb82c07b3603cf95
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne 的单一登录和 BizTalk 适配器
 当您对用于 JD Edwards EnterpriseOne 的 Microsoft 适配器使用单一登录 (SSO) 时,适配器从 SSO 凭据数据库获取凭据。 因此，不需要输入中的服务器系统的登录凭据**传输属性**对话框。  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [创建关联应用程序](../core/creating-affiliate-applications4.md)   
- [使用单一登录](../core/using-single-sign-on1.md)
+ [用于 JD Edwards EnterpriseOne 的 BizTalk 适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

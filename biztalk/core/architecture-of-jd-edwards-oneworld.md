@@ -1,5 +1,6 @@
 ---
 title: "博士 Edwards OneWorld 的体系结构 |Microsoft 文档"
+description: "在设计时和在 BizTalk 博士 Edwards OneWorld 适配器中的运行的时在设计时和运行的时和出站事件描述的入站的服务"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: architecture
 ms.assetid: 9200a090-a587-4b60-9447-d281580f2078
 caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1daee7d44152817da1ac536dd98cbaf898e2ac7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f866e5d72e392136d19c155785aaf6b71db2ce3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a>JD Edwards OneWorld 的体系结构
-用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供了对 JD Edwards OneWorld 业务功能的访问。 JD Edwards OneWorld 使用名为 JDENet 的专用消息体系结构在客户端和服务器计算机之间进行通信。 JDENet 由 Connector.jar 和 Kernel.jar JAR 文件中找到的博士 Edwards OneWorld 连接器类实现。 使用 TCP/IP 作为传输协议，使用默认端口的 6009 或 6010 实现通信。 此值设置有关位置的说明，请参阅[如何设置博士 Edwards OneWorld 传输属性](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)。  
+用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供了对 JD Edwards OneWorld 业务功能的访问。 JD Edwards OneWorld 使用名为 JDENet 的专用消息体系结构在客户端和服务器计算机之间进行通信。 JDENet 由 Connector.jar 和 Kernel.jar JAR 文件中找到的博士 Edwards OneWorld 连接器类实现。 使用 TCP/IP 作为传输协议，使用默认端口的 6009 或 6010 实现通信。 此值设置有关位置的说明，请参阅[将项目添加到 BizTalk 管理](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)。  
   
  **用于博士 Edwards OneWorld 的 BizTalk Adapter 的体系结构**  
   
@@ -83,5 +83,5 @@ ms.lasthandoff: 09/20/2017
 -   接收端口将 XML 文档提交到 BizTalk Server。  
   
 ## <a name="see-also"></a>另请参阅  
- [如何设置博士 Edwards OneWorld 传输属性](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
+ [将项目添加到 BizTalk 管理](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
  [规划和体系结构](../core/planning-and-architecture17.md)

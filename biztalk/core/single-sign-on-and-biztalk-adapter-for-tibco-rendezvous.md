@@ -7,22 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SSO, using with the adapter
-- Single Sign-On, using with the adapter
-- HTTP requests, processing
 ms.assetid: 52e698bb-38ba-4a12-b15a-d1581061d62f
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54529d8eefb351471ea1c2bd7278c744737b66f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 310a3448acd8bd70e617a9a5af650b55a12c9007
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-tibco-rendezvous"></a>TIBCO Rendezvous 的单一登录和 BizTalk 适配器
+
+## <a name="overview"></a>概述
 当你在为 TIBCO 会合使用 Microsoft BizTalk 适配器使用单一登录 (SSO) 时，适配器从 SSO 凭据数据库; 获取凭据因此，你无需输入服务器系统中的登录凭据**传输属性**窗口。  
   
  在设计时，适配器将会在启动 BizTalk Server 项目的用户的上下文中，为指定的关联应用程序获取用于系统的凭据。 此用户应为应用程序用户。 运行时，将 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP 接收适配器用作使用 SSO 时的简单直通方案中的接收位置。  
@@ -37,4 +35,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [创建关联应用程序](../core/creating-affiliate-applications1.md)   
- [使用单一登录](../core/using-single-sign-on5.md)
+[安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

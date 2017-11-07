@@ -1,33 +1,19 @@
 ---
-title: "设置为发送端口的 TIBCO 企业消息服务传输属性 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- send ports, setting transport properties
-- transport properties, setting for send port
-- setting transport properties, send port
-ms.assetid: 156fa3d1-6c47-442b-9c5d-5bcd838115f8
-caps.latest.revision: "14"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: eba9a07a6b5991d832a0815a4eb63706c3bbbd3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 24e73be3b953cbd7f597a34a06f09d364ec0f4f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="setting-tibco-enterprise-message-service-transport-properties-for-the-send-port"></a>设置发送端口的 TIBCO Enterprise Message Service 传输属性
+# <a name="set-send-port-transport-properties-for-the-send-port-for-tibco-enterprise-message-service"></a>为 TIBCO 企业消息服务设置发送端口发送端口的传输属性
 TIBCO Enterprise Message Service 传输属性在设计时配置，在运行时使用。 在**传输属性**对话框中，你设置的连接和凭据参数特定于服务器系统和你尝试访问的对象。  
   
  ![](../core/media/tib-tibcoemssendtransportpropertiess.gif "TIB_TIBCOEMSSendTransportPropertiess")  
   
-### <a name="to-specify-transport-properties"></a>若要指定传输属性  
+## <a name="enter-transport-properties"></a>输入传输属性  
   
 1.  在**传输属性**对话框框中，展开**系统定义**，然后输入 TIBCO EMS 服务器连接的所有必要的信息。  
   
@@ -75,5 +61,5 @@ TIBCO Enterprise Message Service 传输属性在设计时配置，在运行时�
 7.  单击**应用**，然后单击**确定**。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on4.md)   
- [创建 TIBCO 企业消息服务发送处理程序](../core/creating-tibco-enterprise-message-service-send-handlers.md)
+ [安全适配器](../core/security-in-biztalk-adapter-for-tibco-ems.md)  
+ [创建发送项目](../core/creating-tibco-enterprise-message-service-send-handlers.md)

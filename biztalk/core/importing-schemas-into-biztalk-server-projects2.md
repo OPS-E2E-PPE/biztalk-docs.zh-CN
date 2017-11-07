@@ -1,5 +1,5 @@
 ---
-title: "将架构导入到 BizTalk Server Projects2 |Microsoft 文档"
+title: "导入 Visual Studio 博士 Edwards EnterpriseOne 架构 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- importing schemas
-- schemas, importing into BizTalk Server projects
 ms.assetid: 640d5884-953a-46b6-b9dc-b931392a3059
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ebb0a39850029adec06986da5ddad1fc44c33ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: acd61cc8ab63d6859a8e10afb76f93c2f8cb2150
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>将架构导入到 BizTalk Server 项目
 本部分讨论浏览 JD Edwards EnterpriseOne 服务器和将架构导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中。  
@@ -32,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
  在创建 JD Edwards EnterpriseOne 端口后，可以通过从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中启动 Microsoft 适配器向导来浏览 JD Edwards EnterpriseOne。  
   
-### <a name="to-import-schemas-into-a-biztalk-server-project"></a>将架构导入 BizTalk Server 项目中  
+## <a name="import-schemas-into-visual-studio"></a>将架构导入 Visual Studio
   
 1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
@@ -70,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  如果您在生成架构后更改了 jdearglist.txt，则必须重新生成架构以刷新其包含的数据。 Jdearglist.txt 的详细信息，请参阅[处理字符串值](../core/handling-string-values2.md)。  
   
-### <a name="to-select-the-schemas"></a>若要选择的架构  
+## <a name="select-the-schemas"></a>选择的架构  
   
 1.  在**选择服务添加到导入**页上，展开的顶级节点**业务对象**节点或**业务服务**节点。  
   
@@ -89,5 +86,5 @@ ms.lasthandoff: 09/20/2017
   
 -   I 代表查询  
   
-## <a name="see-also"></a>另请参阅  
- [创建博士 Edwards EnterpriseOne 发送处理程序](../core/creating-jd-edwards-enterpriseone-send-handlers.md)
+## <a name="next-step"></a>下一步
+[使用消息上下文属性](../core/using-message-context-properties1.md)

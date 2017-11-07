@@ -1,30 +1,17 @@
 ---
-title: "如何设置 TIBCO 会合传输属性 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: db8e8a57-a942-44d7-a651-623aa614c6be
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 9c9ff40d5319daa0a71d67aa3fd132c3d115923e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: b4fabb9146b4f559dd1a41b6e3b7da5ce9489d1f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-tibco-rendezvous-transport-properties"></a>如何设置 TIBCO Rendezvous 传输属性
 TIBCO Rendezvous 传输属性用于运行时。 在**传输属性**屏幕上，你设置标识你想要将生成的消息发布 TIBCO 会合域的连接参数。  
   
-### <a name="to-specify-tibco-rendezvous-transport-properties"></a>指定 TIBCO Rendezvous 传输属性  
+## <a name="enter-tibco-rendezvous-transport-properties"></a>输入 TIBCO 会合传输属性  
   
 1.  上**TIBCO 会合传输属性**屏幕中，展开**认证发件人属性**并输入以下信息。  
   
@@ -71,7 +58,7 @@ TIBCO Rendezvous 传输属性用于运行时。 在**传输属性**屏幕上，�
     1.  选择**是**中**使用 SSO**用于单一登录。  
   
         > [!NOTE]
-        >  请参阅[使用单一登录](../core/using-single-sign-on5.md)有关如何设置 SSO 信息。  
+        >  请参阅[安全](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)有关如何设置 SSO 信息。  
   
     2.  从列表中选择一个关联应用程序。  
   
@@ -85,4 +72,4 @@ TIBCO Rendezvous 传输属性用于运行时。 在**传输属性**屏幕上，�
      你必须设置为 TIBCO 会合访问 TIBCO 会合的 BizTalk 适配器的连接参数。  
   
 ## <a name="see-also"></a>另请参阅  
- [创建 TIBCO 会合发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)
+ [创建 TIBCO Rendezvous 发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)

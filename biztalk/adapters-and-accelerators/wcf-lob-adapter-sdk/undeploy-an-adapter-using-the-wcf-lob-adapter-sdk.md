@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a8da6ff335460cbd957a33ac5074f65205dfb77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90208dd99a6b4ccdc8f3f55d2ad019baabe635ad
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>取消部署使用 WCF LOB 适配器 SDK 的适配器
 若要取消部署从计算机的适配器，用户需要执行以下两个任务：  
@@ -86,5 +86,4 @@ ms.lasthandoff: 09/20/2017
 4.  关闭服务配置编辑器。  
   
 ## <a name="see-also"></a>另请参阅  
- [部署限制](../../core/deployment-limitations1.md)   
  [部署使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)

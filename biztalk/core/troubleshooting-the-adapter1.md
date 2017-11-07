@@ -1,5 +1,5 @@
 ---
-title: "故障排除 Adapter1 |Microsoft 文档"
+title: "解决博士 Edwards EnterpriseOne 适配器 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JD Edwards EnterpriseOne adapters, wildcard characters
-- adapters [JD Edwards EnterpriseOne adapters], wildcard characters
-- wildcard characters, JD Edwards EnterpriseOne adapters
 ms.assetid: f5a55e52-039a-4aea-8251-b697fd061ddc
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b77b42854a58d7fe8ffafd177e91f327a7f5e7e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eac716a7567930509ebfd310cdaf9874286b349c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="troubleshooting-the-adapter"></a>故障排除适配器
 本主题包含可帮助您标识和解决使用用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器时可能遇到的问题的信息。  
@@ -72,5 +68,5 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 ## <a name="see-also"></a>另请参阅  
- [如何为博士 Edwards EnterpriseOne 创建发送端口](../core/how-to-create-send-ports-for-jd-edwards-enterpriseone.md)   
+ [添加适配器，并创建项目](../core/adding-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
  [故障排除博士 Edwards EnterpriseOne](../core/troubleshooting-jd-edwards-enterpriseone.md)

@@ -1,28 +1,12 @@
 ---
-title: "设置博士 Edwards EnterpriseOne 传输属性 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- JD Edwards EnterpriseOne adapters, transport properties
-- transport properties, configuring [JD Edwards EnterpriseOne adapters]
-- adapters [JD Edwards EnterpriseOne adapters], transport properties
-- Bootstrap Data Source properties
-ms.assetid: 7d258ee6-1cb3-4b88-ac41-49e639833574
-caps.latest.revision: "17"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 4ed3118230f2e4ae48676b297ac444da9c392221
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a>设置 JD Edwards EnterpriseOne 传输属性
 JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属性**对话框中，你设置的连接和凭据参数特定于服务器系统和你尝试访问的对象。  
@@ -34,7 +18,7 @@ JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属�
 > [!NOTE]
 >  企业服务器名称和端口的默认值在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中配置。 它们将从名为 jdeinterop.ini 的文件进行读取。 如果你收到登录错误，请仔细检查凭据和值。  
   
-### <a name="to-specify-transport-properties"></a>若要指定传输属性  
+## <a name="enter-transport-properties"></a>输入传输属性  
   
 1.  在 BizTalk Server 管理控制台中，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，然后展开所需应用程序。  
   
@@ -124,7 +108,7 @@ JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属�
 ### <a name="single-sign-on"></a>单一登录  
  有两种方法可用于访问 JD Edwards EnterpriseOne 系统。 您可以使用登录凭据（传输属性登录参数）或单一登录 (SSO)。 选择**是**中**使用 SSO**字段用于单一登录。  
   
- 有关详细信息和基本说明向上上单一登录设置，请参阅[使用单一登录](../core/using-single-sign-on1.md)。  
+ 有关详细信息和基本说明向上上单一登录设置，请参阅[博士 Edwards EnterpriseOne 的 BizTalk Adapter 中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)。
   
  您还必须在下拉列表中选择关联应用程序。 企业单一登录工具创建的关联应用程序代表诸如 JD Edwards EnterpriseOne 之类的应用程序。 用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 使用应用程序用户的凭据。  
   
@@ -133,5 +117,4 @@ JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属�
  有关如何创建关联应用程序的详细信息请参阅[创建关联应用程序](../core/creating-affiliate-applications4.md)。 您也可以参阅 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 联机帮助。  
   
 ## <a name="see-also"></a>另请参阅  
- [有关博士 Edwards EnterpriseOne 单一登录和 BizTalk 适配器](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
- [创建博士 Edwards EnterpriseOne 发送处理程序](../core/creating-jd-edwards-enterpriseone-send-handlers.md)
+ [用于 JD Edwards EnterpriseOne 的单一登录和 BizTalk 适配器](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   

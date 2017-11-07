@@ -1,5 +1,5 @@
 ---
-title: "数据类型映射中 TIBCO 会合接收处理程序 |Microsoft 文档"
+title: "数据类型映射，以接收来自 TIBCO 会合 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- data type mapping
-- array types
-- receive handlers, data type mapping
 ms.assetid: 36908a94-3c0d-466e-aa49-f674ba4a26af
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8729a94fdcfc43ca17e498b10784cc163307badc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dcb17ceac0c323bba7a6f25cff0d07473b6d7fa3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="data-type-mapping-for-receive-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous 中用于接收处理程序的数据类型映射
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器将 TIBCO RV 类型映射到 XML 架构类型，如下表中指定。  
@@ -111,4 +107,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [TIBCO 集合中的消息映射](../core/message-mapping-in-tibco-rendezvous.md)   
- [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

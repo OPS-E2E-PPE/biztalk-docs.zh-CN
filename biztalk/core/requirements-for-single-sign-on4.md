@@ -1,5 +1,5 @@
 ---
-title: "单一登录要求 |Microsoft 文档"
+title: "SSO 要求 TIBCO EMS 适配器 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,13 +12,15 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98d5164fa194f9a02314b897b267d9873879a9c0
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 805d14e056da665f8828ce0244f28ed9adc40ff4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
+
+## <a name="overview"></a>概述
 用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序表示诸如 TIBCO EMS 等服务器系统。  
   
  若要使用单一登录，需具备以下各项：  
@@ -31,7 +33,7 @@ ms.lasthandoff: 10/17/2017
   
 -   支持 SSO 某个服务器系统  
   
- 独立主机应配置为受信任验证  
+ 隔离的主机应配置为受信任的身份验证。
   
 ## <a name="enable-sso"></a>启用 SSO  
   
@@ -45,4 +47,4 @@ ms.lasthandoff: 10/17/2017
     >  后执行的操作使用 SSO，请记得重置到任何 Web 共享文件夹**不共享**。 使用该文件夹的应用程序将不更新，或如果共享文件夹，因为它被视为可在使用正常卸载。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用单一登录](../core/using-single-sign-on4.md)
+[安全适配器](../core/security-in-biztalk-adapter-for-tibco-ems.md)

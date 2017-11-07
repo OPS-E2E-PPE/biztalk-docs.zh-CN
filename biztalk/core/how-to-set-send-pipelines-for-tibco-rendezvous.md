@@ -1,25 +1,12 @@
 ---
-title: "如何设置发送管道的 TIBCO 会合 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- send pipelines
-- pipelines, send
-ms.assetid: a28a02c1-6f30-4749-b819-c1e707757680
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 48d3a72c2282e335f2d3e020ec0e77a8b7afbd35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 72cdd3553289df39442b71730a61e3271db381e7
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-send-pipelines-for-tibco-rendezvous"></a>如何设置 TIBCO Rendezvous 的发送管道
 Microsoft BizTalk Adapter for TIBCO Rendezvous 要求您分别选择用于发送和接收管道的 XMLTransmit 和 XMLReceive。  
@@ -46,4 +33,4 @@ Microsoft BizTalk Adapter for TIBCO Rendezvous 要求您分别选择用于发送
   
 ## <a name="see-also"></a>另请参阅  
  [创建 TIBCO 会合发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)   
- [创建 TIBCO 会合接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

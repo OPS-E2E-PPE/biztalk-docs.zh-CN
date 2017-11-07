@@ -1,5 +1,6 @@
 ---
-title: "教程： 使用 TIBCO 会合的 BizTalk 适配器接收数据 |Microsoft 文档"
+title: "教程： 使用 TIBCO 会合适配器接收 |Microsoft 文档"
+description: "分步指南，以便用 TIBCO 会合 BizTalk Server 中的 BizTalk Adapter 来从 TIBCO 系统接收数据"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,49 +13,40 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de436413f10cf4882b5c4e4b21af7bac6a3234c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75aaba0cc2e455676e78381c04934dda30741a85
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data"></a>教程：使用适用于 TIBCO Rendezvous 的 BizTalk 适配器来接收数据
 您可以使用用于 TIBCO Rendezvous 的 BizTalk 适配器接收来自 TIBCO 系统的数据。 本演练描述了对此进行说明的一个 SDK 示例。  
   
 ## <a name="prerequisites"></a>先决条件  
   
--   为了生成并部署该示例，请在运行此适配器的 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 上安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+为了生成并部署该示例，请在运行此适配器的 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 上安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例使用用于 TIBCO Rendezvous 的 BizTalk 适配器接收来自 TIBCO 系统的数据。 业务流程处理消息并使用文件适配器将数据编写为指定文件夹中的 XML 文件。  
+## <a name="about-the-sample"></a>有关该示例 
+- 本示例使用用于 TIBCO Rendezvous 的 BizTalk 适配器接收来自 TIBCO 系统的数据。 业务流程处理消息并使用文件适配器将数据编写为指定文件夹中的 XML 文件。  
   
-## <a name="how-this-sample-is-designed-and-why"></a>本示例旨在如何以及为何  
- 本示例在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中设计，它使用用于 TIBCO Enterprise Message Service 的 BizTalk 适配器以及 BizTalk 业务流程来说明基本功能。  
+- 本示例在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中设计，它使用用于 TIBCO Enterprise Message Service 的 BizTalk 适配器以及 BizTalk 业务流程来说明基本功能。  
   
-> [!NOTE]
->  本示例假定您知道如何发送来自 TIBCO 的消息以供应用程序处理。  
+    > [!NOTE]
+    >  本示例假定您知道如何发送来自 TIBCO 的消息以供应用程序处理。  
   
-## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 本示例的默认位置为  
+- 此示例的默认位置是`C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\TIBCO(r) Rendezvous(r)\Sdk\OneWayReceive`，并包括以下文件： 
   
- C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\TIBCO(r) Rendezvous(r)\Sdk\OneWayReceive  
+    |**运行时项目文件名**|**运行时项目文件说明**|  
+    |---|---|  
+    |OneWayReceive.btproj,<br /><br /> OneWayReceive.sln|应用程序的项目和解决方案文件。|  
+    |PureMessage.xsd，|应用程序的架构文件。|  
+    |TIBCORvOWR.odx|应用程序使用的业务流程。|  
+    |TIBCORv.snk|强命名密钥文件。|  
   
- 下表显示了本示例中的文件及其用途说明：  
   
-|**运行时项目文件名**|**运行时项目文件说明**|  
-|----------------------------------|------------------------------------------|  
-|OneWayReceive.btproj,<br /><br /> OneWayReceive.sln|应用程序的项目和解决方案文件。|  
-|PureMessage.xsd，|应用程序的架构文件。|  
-|TIBCORvOWR.odx|应用程序使用的业务流程。|  
-|TIBCORv.snk|强命名密钥文件。|  
+## <a name="step-1-add-the-adapter-to-biztalk-administration"></a>步骤 1： 将适配器添加到 BizTalk 管理
   
-## <a name="how-to-use-this-sample"></a>如何使用本示例  
-  
-#### <a name="create-a-new-instance-of-the-biztalk-adapter-for-tibco-rendezvous"></a>创建用于 TIBCO Rendezvous 的 BizTalk 适配器的新实例  
-  
-1.  启动[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 单击**启动**，**所有程序**， [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]， [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]。  
-  
-2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，展开**平台设置**，然后单击**适配器**。  
+1.  在**BizTalk Server 管理**，展开**BizTalk 组**，展开**平台设置**，然后单击**适配器**。  
   
 3.  右键单击**适配器**和指向**新建**，**适配器...** 若要显示**适配器属性**对话框。  
   
@@ -62,19 +54,19 @@ ms.lasthandoff: 09/20/2017
   
 5.  选择**TIBCO(r) Rendezvous(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
   
-#### <a name="create-a-biztalk-receive-port"></a>创建 BizTalk 接收端口  
+## <a name="step-2-create-a-receive-port"></a>步骤 2： 创建接收端口  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，然后单击**接收端口**。  
+1.  在**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，然后单击**接收端口**。  
   
 2.  右键单击接收端口文件夹，然后单击**新建**，**单向接收端口...**以显示**接收端口属性**对话框。  
   
 3.  输入一个值**名称**字段，例如**TIBCORvOneWayRP**，然后单击**确定**。  
   
-#### <a name="create-a-biztalk-receive-location"></a>创建 BizTalk 接收位置  
+## <a name="step-3-create-a-receive-location"></a>步骤 3： 创建接收位置  
   
 1.  右键单击新的接收端口，然后单击**新建**，**接收位置...** 若要显示**接收位置属性**对话框。  
   
-2.  输入一个值**名称**字段，例如**TIBCORvOneWayRL**。  
+2.  输入一个值**名称**字段。 例如，输入**TIBCORvOneWayRL**。  
   
 3.  从中的可用适配器的列表中选择 TIBCO 会合适配器**类型**下拉列表框中，单击**配置**按钮以显示适配器**传输属性**对话框。  
   
@@ -105,7 +97,7 @@ ms.lasthandoff: 09/20/2017
     |Network|Rendezvous 传输网络参数。|  
     |服务|Rendezvous 传输服务参数。|  
   
-     有关属性的详细信息，请参阅[设置 TIBCO 会合接收传输属性](../core/setting-tibco-rendezvous-receive-transport-properties.md)。  
+     有关属性的详细信息，请参阅[创建接收项目](../core/creating-tibco-rendezvous-receive-handlers.md)。  
   
 8.  单击 **“确定”**。  
   
@@ -113,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 右键单击接收位置，然后单击**启用**。  
   
-#### <a name="create-a-one-way-file-send-port"></a>创建单向文件发送端口  
+## <a name="step-4-create-a-one-way-send-port"></a>步骤 4： 创建单向发送端口  
   
 1.  创建发送端口要使用的目标文件夹，例如 C:\FilesOut。  
   
@@ -131,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  右键单击发送端口，然后单击**启动**登记和启动发送端口。  
   
-#### <a name="build-and-deploy-the-project"></a>生成并部署项目  
+## <a name="step-5-build-and-deploy-the-project"></a>步骤 5： 生成并部署项目  
   
 1.  右键单击解决方案资源管理器中的 OneWayReceive 项目，然后单击**属性**以启动项目设计器中为该项目。  
   
@@ -141,7 +133,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  右键单击解决方案资源管理器中的 OneWayReceive 项目，然后单击**部署**以生成项目并将其部署到的程序集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置数据库。  
   
-#### <a name="bind-and-enlist-the-orchestration"></a>绑定并登记业务流程  
+## <a name="step-6-bind-enlist-and-start-the-orchestration"></a>步骤 6： 将绑定，登记，并启动业务流程  
   
 1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，然后单击**业务流程**。  
   
@@ -161,13 +153,11 @@ ms.lasthandoff: 09/20/2017
   
 6.  单击 **“确定”**。  
   
-#### <a name="start-the-orchestration"></a>启动业务流程  
+7. 右键单击业务流程，然后单击**启动**登记和启动业务流程。  
   
--   在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击业务流程，然后单击**启动**登记和启动业务流程。  
+## <a name="step-7-confirm-the-application-receives-a-message"></a>步骤 7： 确认应用程序收到一条消息  
   
-#### <a name="verify-that-the-application-receives-a-message"></a>验证应用程序是否收到消息  
-  
--   打开将文件发送端口配置为发送到的目标文件夹，并验证是否已生成输出文档。  
+-   打开文件发送端口配置为发送到计算机并验证已生成的输出文档的文件夹。  
   
  成功处理文档实例后，会发生以下事件序列：  
   

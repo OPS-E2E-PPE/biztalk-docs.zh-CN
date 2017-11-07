@@ -1,5 +1,6 @@
 ---
-title: "不应更改的 SQL Server 设置 |Microsoft 文档"
+title: "SQL Server 设置不能更改 |Microsoft 文档"
+description: "最大并行度，自动创建统计信息自动更新统计信息和重新生成 BizTalk Server 中的索引"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2fb6e2553c005d3ba8651c860ff844e8cc74106
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32186bc9487dc71900c98467a45bc3e67e915f35
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a>不应更改的 SQL Server 设置
 设置时[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]期间的操作的准备情况过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你不应更改为下列设置。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存储的过程提供正确的连接和锁定提示，只要有可能为了尝试以防止执行极大的工作和更改计划的查询优化器。 这些存储的过程通过构造查询，以便查询优化器清除出图尽可能多地提供一致的查询执行。  
   
- 有关详细信息，请参阅 Microsoft 知识库文章 899000， ["的实例的 SQL Server 配置 BizTalk Server 时的并行度设置"](http://go.microsoft.com/fwlink/?LinkId=153432) (http://go.microsoft.com/fwlink/?LinkId=153432)。  
+ 有关详细信息，请参阅[KB 899000: BizTalk Server 使用的 SQL Server 实例的并行度设置](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)。  
   
 ## <a name="sql-server-statistics-on-the-messagebox-database"></a>在 MessageBox 数据库上的 SQL Server 统计信息  
  以下选项处于关闭状态在默认情况下[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MessageBox 数据库创建时：  
@@ -43,26 +44,20 @@ ms.lasthandoff: 09/20/2017
   
  有关详细信息，请参阅以下 Microsoft 知识库文章：  
   
--   **912262**-["自动更新统计信息选项的自动创建统计信息选项和并行度设置处于关闭状态中承载 BizTalk Server BizTalkMsgBoxDB 数据库的 SQL Server 数据库实例"](http://go.microsoft.com/fwlink/?LinkId=153430)(http://go.microsoft.com/fwlink/?LinkId=153430)。  
+-   **912262**-["自动更新统计信息选项的自动创建统计信息选项和并行度设置处于关闭状态中承载 BizTalk Server BizTalkMsgBoxDB 数据库的 SQL Server 数据库实例"](https://support.microsoft.com/help/912262/the-auto-update-statistics-option-the-auto-create-statistics-option-an).  
   
--   **917845**-["你遇到阻止，死锁条件或其他 SQL Server 问题，当你尝试连接到 BizTalk Server 中的 BizTalkMsgBoxDb 数据库时"](http://go.microsoft.com/fwlink/?LinkId=153429) (http://go.microsoft.com/fwlink/?LinkId=153429)。  
+-   **917845**-["你遇到阻止，死锁条件或其他 SQL Server 问题，当你尝试连接到 BizTalk Server 中的 BizTalkMsgBoxDb 数据库时"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)。  
   
 ## <a name="changes-to-the-messagebox-database"></a>对 MessageBox 数据库的更改  
- MessageBox 数据库应被视为非 Microsoft 应用程序源代码。 也就是说，你应不"调整"MessageBox 数据库通过对表、 索引、 存储的过程和大多数 SQL Server 数据库设置的更改。 有关详细信息，请在 BizTalk 核心引擎日志，请参阅输入["什么可以并不能执行与 MessageBox 数据库服务器"](http://go.microsoft.com/fwlink/?LinkId=101577) (http://go.microsoft.com/fwlink/?LinkId=101577)。  
+ MessageBox 数据库应被视为非 Microsoft 应用程序源代码。 也就是说，你应不"调整"MessageBox 数据库通过对表、 索引、 存储的过程和大多数 SQL Server 数据库设置的更改。 有关详细信息，请在 BizTalk 核心引擎日志，请参阅[和无法执行与 MessageBox 数据库服务器](http://go.microsoft.com/fwlink/p/?LinkId=101577)。  
   
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>数据库索引重新生成和碎片整理的默认设置  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不支持磁盘碎片整理的索引。 "DBCC INDEXDEFRAG"和"ALTER INDEX... 重新组织..." 因为它们使用的页锁定，可能会导致阻塞和死锁与不支持[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行支持数据库重新生成索引后 （"DBCC DBREINDEX"和"ALTER INDEX... 重新生成..."），但它们应该仅可以在维护时段时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]未处理数据。 索引重新生成时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在处理不支持数据。  
   
- 有关详细信息，请参阅 Microsoft 知识库文章 917845 ["你遇到阻止，死锁条件或其他 SQL Server 问题，当你尝试连接到 BizTalk Server 中的 BizTalkMsgBoxDb 数据库时"](http://go.microsoft.com/fwlink/?LinkId=153429) (http://go.microsoft.com/fwlink/？LinkId = 153429)。  
+ 有关详细信息，请参阅[KB 917845： 体验阻止，死锁条件或其他 SQL Server 问题，当你尝试连接到 BizTalk Server 中的 BizTalkMsgBoxDb 数据库时"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)。  
   
  索引碎片不是尽可能多的性能问题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]因为它处于 DSS 系统或执行索引扫描的 OLTP 系统。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行非常选择性的查询和更新和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存储的过程不应导致表扫描或索引扫描。  
   
- 有关索引碎片和工作负荷类型的详细信息，请参阅["Microsoft SQL Server 2000 索引碎片整理最佳实践"](http://go.microsoft.com/fwlink/?LinkId=101580) (http://go.microsoft.com/fwlink/?LinkId=101580)。 文章引号：  
-  
- "中图 1 所示，存在很少之间区别是之前和之后对进行碎片整理的存储过程的性能。 通过这些存储过程发出的基础查询处理的数据非常选择性部分，因为工作负荷性能已不产生负面影响碎片的索引。"  
-  
-> [!NOTE]  
->  文章的内容也适用于[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]和[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]。  
-  
+ 
 ## <a name="see-also"></a>另请参阅  
- [清单： 配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)
+ [清单：配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)
