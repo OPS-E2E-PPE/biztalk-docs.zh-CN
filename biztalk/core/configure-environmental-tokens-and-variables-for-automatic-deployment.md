@@ -1,7 +1,8 @@
 ---
-title: "配置环境的令牌和自动部署变量 |Microsoft 文档"
+title: "创建环境的令牌和变量 |Microsoft 文档\""
+description: "更新绑定文件以使用环境标记，并在 VSTS 中自动执行部署的 BizTalk Server 应用程序中创建变量"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/08/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -10,13 +11,13 @@ ms.topic: article
 ms.assetid: 28bb2d4a-f45c-466d-ba65-0ca8cad0bffd
 caps.latest.revision: "4"
 author: tordgladnordahl
-ms.author: tonordah
+ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d148f79fceb68b24feb45882ab89767369ed7e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d84fa393410e3084c87e762140530a45b0b78b5
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-environmental-tokens-and-variables-for-automatic-deployment"></a>配置环境的令牌和自动部署的变量
 使用 Visual Studio Team Services (VSTS) 变量中的你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]绑定文件。
@@ -28,42 +29,38 @@ ms.lasthandoff: 09/20/2017
 
 这些变量特定于你的 VSTS 环境，并且可以用于部署到多个相同的应用程序[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]环境。 
 
-在本主题中，我们演示如何添加 VSTS 变量在绑定文件中，以及如何创建 VSTS 中的变量。 
+我们向您展示如何将 VSTS 变量添加在绑定文件中，以及如何创建 VSTS 中的变量。 
 
-## <a name="configure-the-variables-in-your-biztalk-binding-file"></a>在 BizTalk 绑定文件中配置的变量
-
-下面的示例摘自[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]绑定文件，并演示如何应用令牌。
+## <a name="add-variables-to-the-binding-file"></a>将变量添加到绑定文件
 
 1. 打开应用程序绑定文件：
 
-    ![BizTalk 功能包 1 绑定 1](../core/media/biztalk-feature-pack-1-binding-1.png)
+    ![打开绑定文件](../core/media/biztalk-feature-pack-1-binding-1.png)
 
 2. 查找你想要更改的元素：
 
-    ![BizTalk 功能包 1 绑定 2](../core/media/biztalk-feature-pack-1-binding-2.png)
+    ![选择的元素](../core/media/biztalk-feature-pack-1-binding-2.png)
     
 3. 删除的填充的值，并将其与你变量： `$(YourValue)`。 例如，输入`$(SendPort1)`: 
 
-    ![BizTalk 功能包 1 绑定 3](../core/media/biztalk-feature-pack-1-binding-3.png)
+    ![绑定文件](../core/media/biztalk-feature-pack-1-binding-3.png)
 
+4. 完成后，保存该绑定文件，并将其添加到 JSON 生成模板 (中的步骤[步骤 1： 添加应用程序项目 （&） 更新.json 模板](feature-pack-add-application-project.md))。
 
-4. 完成后，保存该绑定文件，并将其应用到 JSON 生成模板。
-5. 登录到 Visual Studio 团队服务解决方案，然后选择**生成和发布**。
-6. 转到**版本**。 选择你**释放定义**，或创建一个新。
-7. 下**环境**，选择**添加新环境**，或将更改为现有环境： 
+## <a name="create-the-variables-in-vsts"></a>在 VSTS 中创建变量
 
-    ![添加新的环境](../core/media/add-a-new-environment.png)
+1. 在你的 VSTS 帐户，选择**生成和发布**，然后选择**版本**。
 
-8. 单击省略号，然后选择**配置变量**:
+2. 选择你**释放定义**，然后选择**变量**:  
 
-    ![配置变量](../core/media/configure-variables.png)
+    ![绑定文件](../core/media/vsts-release-variables.png)
 
-9. 通过添加每个环境中使用绑定文件中创建的标记名称的变量中，你可以部署您的应用程序使用不同的值的多个环境：
+3. 选择**添加**，并创建的变量的名称和值：   
 
-    ![环境特定变量](../core/media/environment-specific-variables.png)
-    
-10. 选择**确定**以保存新变量。
-11. 生成开始后，会将值添加从绑定文件。
+    ![配置变量](../core/media/environment-specific-variables.png)
 
-## <a name="next-step"></a>下一步
-[添加到 VSTS BizTalk 应用程序](../core/add-a-biztalk-server-application-to-visual-studio-team-services.md)
+4. **保存**所做的更改。 当启动部署时，会将值添加从绑定文件。
+
+## <a name="see-also"></a>另请参阅
+[使用 Visual Studio Team Services 中配置自动部署](configure-automatic-deployment-with-visual-studio-team-services-in-biztalk.md)  
+[配置功能包](configure-the-feature-pack.md)

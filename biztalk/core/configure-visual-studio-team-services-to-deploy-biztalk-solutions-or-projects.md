@@ -1,4 +1,7 @@
 ---
+redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
+redirect_document_id: True
+ROBOTS: NOINDEX
 title: "配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
@@ -12,16 +15,16 @@ caps.latest.revision: "6"
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 6368300c714811d5b3c42e07ebb804d26362bf85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d8e9fc274793471335fc03bc38c82c1b3e3469
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目
 将 VSTS 设置为自动部署[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]项目。 
 
-**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)] **，你可以自动生成你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]使用 Visual Studio Team Services (VSTS) 的解决方案。 
+**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** ，你可以自动生成你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]使用 Visual Studio Team Services (VSTS) 的解决方案。 
 
 本主题演示如何设置和配置 Visual Studio 团队服务 (VSTS) 用于自动部署 BizTalk。 
 
@@ -130,6 +133,3 @@ ms.lasthandoff: 09/20/2017
 
 12. 命名新**定义**，并设置正确的路径。 
 13. 定义在保存后，选择**对新生成进行排队**。 然后，选择**队列代理**，并将注释添加到提交。
-
-## <a name="next-step"></a>下一步
-[配置自动部署的 JSON 模板](../core/configure-the-json-template-for-automatic-deployment.md)

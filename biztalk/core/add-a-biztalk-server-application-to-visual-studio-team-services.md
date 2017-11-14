@@ -1,4 +1,7 @@
 ---
+redirect_url: /biztalk/core/feature-pack-add-application-project/
+redirect_document_id: True
+ROBOTS: NOINDEX
 title: "添加到 Visual Studio Team Services BizTalk Server 应用程序 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
@@ -12,11 +15,11 @@ caps.latest.revision: "4"
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: d3fc8c0253c8e2517f78c2d60fdc7c74a983bdbd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a6b7ba32c0077b3df107b00525bb34ef011e483
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-a-biztalk-server-application-to-visual-studio-team-services"></a>添加到 Visual Studio Team Services BizTalk Server 应用程序
 添加[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]VSTS 来自动部署使用持续集成到项目。  
@@ -27,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 
 ## <a name="prerequisites"></a>先决条件
 * 安装[功能包 1](https://www.microsoft.com/download/details.aspx?id=55100)上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* [为自动部署配置 VSTS](../core/configure-visual-studio-team-services-to-deploy-biztalk-solutions-or-projects.md)
+* [步骤 3： 创建构建并发布定义](../core/feature-pack-add-build-release-definitions.md)
 * 知识和体验使用 Git 和 Visual Studio 中的存储库。 如果你是新手存储库和版本控制，这些可能是很好的资源： 
 
     [了解 Git](https://www.visualstudio.com/learn-git/)  

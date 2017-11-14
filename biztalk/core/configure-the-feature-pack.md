@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3d8cadb82cd6233c84566aa6a0bea55d90b08c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10ce63081fa3b392df3f900fb6a08ecfc7de4cae
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-the-feature-pack"></a>配置功能包
 ## <a name="overview"></a>概述
@@ -25,11 +25,12 @@ ms.lasthandoff: 09/20/2017
 
 > [!NOTE]
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]使用企业版和开发人员版本的可用[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]时： 
-> * 用于软件保障 (SA)  
 > 
->     或
+> - 用于软件保障 (SA)  
 > 
-> * 运行[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]使用企业协议在 Azure 中
+>  或
+> 
+> - 运行[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]使用企业协议在 Azure 中
 > 
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]不可用于任何其他[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]edition 或任何其他[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]版本。 
 
