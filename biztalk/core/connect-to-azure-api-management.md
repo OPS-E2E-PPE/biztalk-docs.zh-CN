@@ -1,8 +1,8 @@
 ---
-title: "连接到 Azure API 管理使用 BizTalk Server |Microsoft 文档"
-description: "使用 BizTalk 功能包 1 BizTalk Server 中连接到 API 管理"
+title: "发布 SOAP 终结点 API 管理 |Microsoft 文档"
+description: "使用功能包 1 和功能包 2，以公开 BizTalk WCF Basic HTTP 接收 SOAP 终结点在 API 管理中的位置。 你可以使用 BizTalk 管理控制台中，执行此操作，或在 Azure 门户中粘贴你直接在 API 管理中的终结点。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/21/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -10,43 +10,89 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: a87bfb40-7e6f-46aa-8ac7-db6d13ce7eb2
 caps.latest.revision: "2"
-author: tordgladnordahl
-ms.author: tonordah
+author: MandiOhlinger
+ms.author: valrobb
 manager: anneta
-ms.openlocfilehash: d0c5e4cd2a0ebbd7108845ea15de468d0e0a5a34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ac1e824ad11ef18eac6deb1252101bbd1ec187a
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="connect-to-azure-api-management"></a><span data-ttu-id="9881a-103">连接到 Azure API 管理</span><span class="sxs-lookup"><span data-stu-id="9881a-103">Connect to Azure API Management</span></span>
-<span data-ttu-id="9881a-104">现在，你可以轻松地公开你通过从 BizTalk 的 API 管理的 SOAP 终结点。</span><span class="sxs-lookup"><span data-stu-id="9881a-104">You can now easily expose your SOAP endpoint through API Management from BizTalk.</span></span>
+# <a name="publish-biztalk-soap-endpoints-in-api-management"></a><span data-ttu-id="a6e71-104">在 API 管理中发布 BizTalk SOAP 终结点</span><span class="sxs-lookup"><span data-stu-id="a6e71-104">Publish BizTalk SOAP endpoints in API Management</span></span>
 
-## <a name="what-is-azure-api-management"></a><span data-ttu-id="9881a-105">Azure API Management 是什么</span><span class="sxs-lookup"><span data-stu-id="9881a-105">What is Azure API Management</span></span>
-<span data-ttu-id="9881a-106">Azure API 管理用于将 Api 发布到外部和内部客户用作的成套解决方案中。</span><span class="sxs-lookup"><span data-stu-id="9881a-106">Use Azure API Management as a turnkey solution for publishing APIs to external and internal customers.</span></span> <span data-ttu-id="9881a-107">快速创建一致和现代 API 网关，用于任何位置，托管的现有后端服务安全和保护它们免受滥用行为和过度使用，并获取深入了解使用情况和运行状况。</span><span class="sxs-lookup"><span data-stu-id="9881a-107">Quickly create consistent and modern API gateways for existing back-end services hosted anywhere, secure and protect them from abuse and overuse, and get insights into usage and health.</span></span> <span data-ttu-id="9881a-108">此外，自动化和扩展开发人员载入有助于使 API 程序，启动和运行。</span><span class="sxs-lookup"><span data-stu-id="9881a-108">Plus, automate and scale developer onboarding to help get your API program up and running.</span></span> 
+<span data-ttu-id="a6e71-105">将 BizTalk SOAP 终结点公开为 Azure API 管理中的服务。</span><span class="sxs-lookup"><span data-stu-id="a6e71-105">Expose your BizTalk SOAP endpoints as services within Azure API Management.</span></span> 
 
-<span data-ttu-id="9881a-109">请参阅[API 管理](https://azure.microsoft.com/en-us/services/api-management/)若要了解有关 API 管理的详细信息。</span><span class="sxs-lookup"><span data-stu-id="9881a-109">See [API Management](https://azure.microsoft.com/en-us/services/api-management/) to learn more about API Management.</span></span>
+<span data-ttu-id="a6e71-106">**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 1**，可以公开 SOAP 终结点通过从 BizTalk 的 API 管理。</span><span class="sxs-lookup"><span data-stu-id="a6e71-106">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 1**, you can expose a SOAP endpoint through API Management from BizTalk.</span></span> <span data-ttu-id="a6e71-107">你可以执行此操作在 Azure 门户中使用 API 管理。</span><span class="sxs-lookup"><span data-stu-id="a6e71-107">You can do this using  API Management in the Azure portal.</span></span> 
 
-## <a name="prerequisites"></a><span data-ttu-id="9881a-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="9881a-110">Prerequisites</span></span>
-* <span data-ttu-id="9881a-111">配置并设置[Azure API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)</span><span class="sxs-lookup"><span data-stu-id="9881a-111">Configure and set up [Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)</span></span>
-* <span data-ttu-id="9881a-112">创建[虚拟网络](https://docs.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet)BizTalk 机和 API 管理实例之间</span><span class="sxs-lookup"><span data-stu-id="9881a-112">Create a [virtual network](https://docs.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet) between your BizTalk Machine and the API Managemenet instance</span></span>
+<span data-ttu-id="a6e71-108">**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2**，您可以公开 WCF BasicHTTP 接收为终结点，使用 BizTalk 管理 Azure API 管理中的位置。</span><span class="sxs-lookup"><span data-stu-id="a6e71-108">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**, you can expose a WCF-BasicHTTP receive location as an endpoint within Azure API Management using BizTalk Administration.</span></span> 
 
+> [!TIP]
+> <span data-ttu-id="a6e71-109">[什么是 API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)是一个很好的资源，若要了解，并了解有关此 Azure 服务的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a6e71-109">[What is API Management?](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts) is a great resource to understand and learn more about this Azure service.</span></span>
 
-1. <span data-ttu-id="9881a-113">在 Azure 门户中，打开你的 API 管理，然后选择**Api**从菜单：</span><span class="sxs-lookup"><span data-stu-id="9881a-113">In the Azure portal, open up your API management, and select **APIs** from the menu:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a6e71-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="a6e71-110">Prerequisites</span></span>
+* <span data-ttu-id="a6e71-111">配置并设置[Azure API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)</span><span class="sxs-lookup"><span data-stu-id="a6e71-111">Configure and set up [Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)</span></span>
+* <span data-ttu-id="a6e71-112">创建[虚拟网络](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet)BizTalk 计算机和 API 管理实例之间</span><span class="sxs-lookup"><span data-stu-id="a6e71-112">Create a [virtual network](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet) between your BizTalk computer and the API Management instance</span></span>
+* <span data-ttu-id="a6e71-113">安装[功能包 2](https://aka.ms/bts2016fp2) BizTalk 服务器上</span><span class="sxs-lookup"><span data-stu-id="a6e71-113">Install [Feature Pack 2](https://aka.ms/bts2016fp2) on the BizTalk Server</span></span>
+
+## <a name="create-using-api-management-in-azure-portal"></a><span data-ttu-id="a6e71-114">创建在 Azure 门户中使用 API 管理</span><span class="sxs-lookup"><span data-stu-id="a6e71-114">Create using API Management in Azure portal</span></span> 
+1. <span data-ttu-id="a6e71-115">在[Azure 门户](https://portal.azure.com)，打开你的 API 管理，然后选择**Api**:</span><span class="sxs-lookup"><span data-stu-id="a6e71-115">In the [Azure portal](https://portal.azure.com), open up your API management, and select **APIs**:</span></span>
 
     ![选择 BizTalk API](../core/media/select-api-for-biztalk.png)
     
-2. <span data-ttu-id="9881a-115">选择的选项**WSDL**新的 API 部分中：</span><span class="sxs-lookup"><span data-stu-id="9881a-115">Select the option for **WSDL** in the New API section:</span></span>
+2. <span data-ttu-id="a6e71-117">选择**WSDL**:</span><span class="sxs-lookup"><span data-stu-id="a6e71-117">Select **WSDL**:</span></span>
 
     ![选择 wsdl biztalk api](../core/media/select-wsdl-biztalk-api.png)
     
-3. <span data-ttu-id="9881a-117">若要连接到 API 管理应用于 BizTalk WSDL，请将 URL 复制到计算机 BizTalk SOAP 终结点的完整 URI。</span><span class="sxs-lookup"><span data-stu-id="9881a-117">To connect to API Management to your BizTalk WSDL, copy the URL to your BizTalk computer with the full URI to your SOAP endpoint.</span></span> <span data-ttu-id="9881a-118">例如，复制`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`:</span><span class="sxs-lookup"><span data-stu-id="9881a-118">For example, copy `http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`:</span></span>
+3. <span data-ttu-id="a6e71-119">配置 WSDL 属性：</span><span class="sxs-lookup"><span data-stu-id="a6e71-119">Configure your WSDL properties:</span></span> 
+
+    1. <span data-ttu-id="a6e71-120">**WSDL 规范**： 输入你的 BizTalk SOAP 终结点的完整 URI。</span><span class="sxs-lookup"><span data-stu-id="a6e71-120">**WSDL specification** : Enter the full URI to your BizTalk SOAP endpoint.</span></span> <span data-ttu-id="a6e71-121">例如，输入类似`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`或`http://biztalkfp1.westus.cloudapp.azure.com/RestEndPoint/OrderIncome.svc?wsdl`。</span><span class="sxs-lookup"><span data-stu-id="a6e71-121">For example, enter something like `http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl` or `http://biztalkfp1.westus.cloudapp.azure.com/RestEndPoint/OrderIncome.svc?wsdl`.</span></span>  
+
+    2. <span data-ttu-id="a6e71-122">**SOAP 传递**或**到 REST SOAP** ： 选择您的首选项：</span><span class="sxs-lookup"><span data-stu-id="a6e71-122">**SOAP pass-through** or **SOAP to REST** : Select your preference:</span></span> 
+        * <span data-ttu-id="a6e71-123">**对其余部分的 SOAP**： 从现有的基于 SOAP 的 web 服务创建 REST 基于 HTTP Api</span><span class="sxs-lookup"><span data-stu-id="a6e71-123">**SOAP to REST**: Create REST-based HTTP APIs from an existing SOAP-based web service</span></span>
+        * <span data-ttu-id="a6e71-124">**SOAP 传递**： 充当 SOAP API 的代理</span><span class="sxs-lookup"><span data-stu-id="a6e71-124">**SOAP pass-through**: Acts as a proxy for the SOAP API</span></span> 
+
+    3. <span data-ttu-id="a6e71-125">输入你首选**显示名称**，**名称**，**说明**， **API Url 后缀**，**产品**，和**版本**。</span><span class="sxs-lookup"><span data-stu-id="a6e71-125">Enter your preferred **Display Name**, **Name**, **Description**, **API Url suffix**, **Products**, and **Version**.</span></span>
+
+    <span data-ttu-id="a6e71-126">完成后，你 WSDL 配置看起来类似于以下内容：</span><span class="sxs-lookup"><span data-stu-id="a6e71-126">When finished, your WSDL configuration looks something like the following:</span></span> 
 
     ![从 WSDL BizTalk 创建 API](../core/media/create-api-from-wsdl-biztalk.png)
 
-4. <span data-ttu-id="9881a-120">如果你想要使用选择**SOAP 传递**，或设置**到 REST SOAP**服务。</span><span class="sxs-lookup"><span data-stu-id="9881a-120">Select if you want to use a **SOAP pass-through**, or set up a **SOAP to REST** service.</span></span>
-5. <span data-ttu-id="9881a-121">输入**名称**你的 api，**说明**，和**API Url 后缀**为你的服务。</span><span class="sxs-lookup"><span data-stu-id="9881a-121">Enter the **name** of your API, the **Description**, and the **API Url suffix** for your service.</span></span>
-6. <span data-ttu-id="9881a-122">选择**创建**创建到后端 SOAP 终结点的通信。</span><span class="sxs-lookup"><span data-stu-id="9881a-122">Select **Create** to create the communication to your backend SOAP endpoint.</span></span>
+4. <span data-ttu-id="a6e71-128">选择“创建”。</span><span class="sxs-lookup"><span data-stu-id="a6e71-128">Select **Create**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9881a-123">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9881a-123">See also</span></span>
-[<span data-ttu-id="9881a-124">配置功能包</span><span class="sxs-lookup"><span data-stu-id="9881a-124">Configure the feature pack</span></span>](configure-the-feature-pack.md)
+## <a name="create-using-the-biztalk-administration"></a><span data-ttu-id="a6e71-129">创建使用 BizTalk 管理</span><span class="sxs-lookup"><span data-stu-id="a6e71-129">Create using the BizTalk Administration</span></span>
+
+> [!NOTE] 
+> <span data-ttu-id="a6e71-130">此功能支持与 WCF BasicHTTP 接收位置。</span><span class="sxs-lookup"><span data-stu-id="a6e71-130">This feature is supported with WCF-BasicHTTP receive locations.</span></span> 
+
+1. <span data-ttu-id="a6e71-131">在 BizTalk 管理控制台中，右击你 WCF BasicHTTP 接收位置，然后选择**发布到 API 管理**:</span><span class="sxs-lookup"><span data-stu-id="a6e71-131">In the BizTalk Administration Console, right-click your WCF-BasicHTTP receive location, and select **Publish to API Management**:</span></span>  
+
+    ![发布菜单选项](../core/media/publish-to-api-management-option.png)
+ 
+2. <span data-ttu-id="a6e71-133">配置你的 API 管理属性：</span><span class="sxs-lookup"><span data-stu-id="a6e71-133">Configure your API management properties:</span></span> 
+
+    1. <span data-ttu-id="a6e71-134">**在登录**到 Azure 订阅，选择**订阅**和**资源组**具有你的 API 管理服务，，然后选择你的服务。</span><span class="sxs-lookup"><span data-stu-id="a6e71-134">**Sign-in** to your Azure subscription, select the **Subscription** and **Resource Group** that has your API management service, and then select your service.</span></span>
+
+    2. <span data-ttu-id="a6e71-135">**WSDL 规范链接**自动填充为 WSDL 文件。</span><span class="sxs-lookup"><span data-stu-id="a6e71-135">The **WSDL specification link** is automatically populated with your WSDL file.</span></span> <span data-ttu-id="a6e71-136">替换**localhost**具有 DNS 名称或 IP 地址的 BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="a6e71-136">Replace **localhost** with the DNS name or IP address of the BizTalk Server.</span></span> 
+
+    3. <span data-ttu-id="a6e71-137">选择**SOAP 传递**或**到 REST SOAP**:</span><span class="sxs-lookup"><span data-stu-id="a6e71-137">Select **SOAP pass-through** or **SOAP to REST**:</span></span>  
+        * <span data-ttu-id="a6e71-138">**对其余部分的 SOAP**： 从现有的基于 SOAP 的 web 服务创建 REST 基于 HTTP Api</span><span class="sxs-lookup"><span data-stu-id="a6e71-138">**SOAP to REST**: Create REST-based HTTP APIs from an existing SOAP-based web services</span></span>
+        * <span data-ttu-id="a6e71-139">**SOAP 传递**： 充当 SOAP API 的代理</span><span class="sxs-lookup"><span data-stu-id="a6e71-139">**SOAP pass-through**: Acts as a proxy for the SOAP API</span></span> 
+
+        <span data-ttu-id="a6e71-140">API 可以通过更改发布这两种方式**API URL 后缀**，然后再将发布再次使用不同的 API 类型。</span><span class="sxs-lookup"><span data-stu-id="a6e71-140">The API can be published both ways by changing the **API URL suffix**, and then publishing again using a different API type.</span></span>
+
+    4. <span data-ttu-id="a6e71-141">**API 名称**接收位置名称自动填充。</span><span class="sxs-lookup"><span data-stu-id="a6e71-141">The **API name** is automatically populated with the receive location name.</span></span>
+
+    5. <span data-ttu-id="a6e71-142">选择**API URL 后缀**那就是由使用者的 api。</span><span class="sxs-lookup"><span data-stu-id="a6e71-142">Select an **API URL suffix** that is to be used by consumers of the API.</span></span> 
+
+    <span data-ttu-id="a6e71-143">完成后，你的属性类似于以下：</span><span class="sxs-lookup"><span data-stu-id="a6e71-143">When finished, your properties look similar to the following:</span></span>  
+    ![将发布到 API 窗口](../core/media/api-management-publish-window.png)
+
+
+3. <span data-ttu-id="a6e71-145">选择**发布**。</span><span class="sxs-lookup"><span data-stu-id="a6e71-145">Select **Publish**.</span></span> <span data-ttu-id="a6e71-146">接收位置成功后，将显示为中的 API 管理服务[Azure 门户](https://portal.azure.com)。</span><span class="sxs-lookup"><span data-stu-id="a6e71-146">When successful, the receive location is displayed as a service in API Management in the [Azure portal](https://portal.azure.com).</span></span> 
+
+## <a name="do-more"></a><span data-ttu-id="a6e71-147">执行更多操作</span><span class="sxs-lookup"><span data-stu-id="a6e71-147">Do more</span></span>
+<span data-ttu-id="a6e71-148">Azure API 管理是功能强大的服务所使用的 Azure 服务，包括 Logic Apps 很多。</span><span class="sxs-lookup"><span data-stu-id="a6e71-148">Azure API Management is a powerful service that is used by a lot of Azure services, including Logic Apps.</span></span> <span data-ttu-id="a6e71-149">API 管理包括许多功能，包括速率限制和配额，有权访问您的 Api、 缓存、 和的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a6e71-149">API Management includes many features, including rate limits and quotas, who has access to your APIs, caching, and more.</span></span> <span data-ttu-id="a6e71-150">请参阅[API Management 是什么？](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)吧。</span><span class="sxs-lookup"><span data-stu-id="a6e71-150">See [What is API Management?](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts) to get started.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="a6e71-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a6e71-151">See also</span></span>
+[<span data-ttu-id="a6e71-152">配置功能包</span><span class="sxs-lookup"><span data-stu-id="a6e71-152">Configure the feature pack</span></span>](configure-the-feature-pack.md)
