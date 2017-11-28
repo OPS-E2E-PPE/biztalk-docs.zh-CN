@@ -1,8 +1,8 @@
 ---
-title: "连接到 Azure API 管理使用 BizTalk Server |Microsoft 文档"
-description: "使用 BizTalk 功能包 1 BizTalk Server 中连接到 API 管理"
+title: "发布 SOAP 终结点 API 管理 |Microsoft 文档"
+description: "使用功能包 1 和功能包 2，以公开 BizTalk WCF Basic HTTP 接收 SOAP 终结点在 API 管理中的位置。 你可以使用 BizTalk 管理控制台中，执行此操作，或在 Azure 门户中粘贴你直接在 API 管理中的终结点。"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/21/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -10,43 +10,89 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: a87bfb40-7e6f-46aa-8ac7-db6d13ce7eb2
 caps.latest.revision: "2"
-author: tordgladnordahl
-ms.author: tonordah
+author: MandiOhlinger
+ms.author: valrobb
 manager: anneta
-ms.openlocfilehash: d0c5e4cd2a0ebbd7108845ea15de468d0e0a5a34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ac1e824ad11ef18eac6deb1252101bbd1ec187a
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="connect-to-azure-api-management"></a>连接到 Azure API 管理
-现在，你可以轻松地公开你通过从 BizTalk 的 API 管理的 SOAP 终结点。
+# <a name="publish-biztalk-soap-endpoints-in-api-management"></a>在 API 管理中发布 BizTalk SOAP 终结点
 
-## <a name="what-is-azure-api-management"></a>Azure API Management 是什么
-Azure API 管理用于将 Api 发布到外部和内部客户用作的成套解决方案中。 快速创建一致和现代 API 网关，用于任何位置，托管的现有后端服务安全和保护它们免受滥用行为和过度使用，并获取深入了解使用情况和运行状况。 此外，自动化和扩展开发人员载入有助于使 API 程序，启动和运行。 
+将 BizTalk SOAP 终结点公开为 Azure API 管理中的服务。 
 
-请参阅[API 管理](https://azure.microsoft.com/en-us/services/api-management/)若要了解有关 API 管理的详细信息。
+**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 1**，可以公开 SOAP 终结点通过从 BizTalk 的 API 管理。 你可以执行此操作在 Azure 门户中使用 API 管理。 
+
+**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2**，您可以公开 WCF BasicHTTP 接收为终结点，使用 BizTalk 管理 Azure API 管理中的位置。 
+
+> [!TIP]
+> [什么是 API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)是一个很好的资源，若要了解，并了解有关此 Azure 服务的详细信息。
 
 ## <a name="prerequisites"></a>先决条件
 * 配置并设置[Azure API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)
-* 创建[虚拟网络](https://docs.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet)BizTalk 机和 API 管理实例之间
+* 创建[虚拟网络](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet)BizTalk 计算机和 API 管理实例之间
+* 安装[功能包 2](https://aka.ms/bts2016fp2) BizTalk 服务器上
 
-
-1. 在 Azure 门户中，打开你的 API 管理，然后选择**Api**从菜单：
+## <a name="create-using-api-management-in-azure-portal"></a>创建在 Azure 门户中使用 API 管理 
+1. 在[Azure 门户](https://portal.azure.com)，打开你的 API 管理，然后选择**Api**:
 
     ![选择 BizTalk API](../core/media/select-api-for-biztalk.png)
     
-2. 选择的选项**WSDL**新的 API 部分中：
+2. 选择**WSDL**:
 
     ![选择 wsdl biztalk api](../core/media/select-wsdl-biztalk-api.png)
     
-3. 若要连接到 API 管理应用于 BizTalk WSDL，请将 URL 复制到计算机 BizTalk SOAP 终结点的完整 URI。 例如，复制`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`:
+3. 配置 WSDL 属性： 
+
+    1. **WSDL 规范**： 输入你的 BizTalk SOAP 终结点的完整 URI。 例如，输入类似`http://10.0.31.22/RestEndPoint/OrderIncome.svc?wsdl`或`http://biztalkfp1.westus.cloudapp.azure.com/RestEndPoint/OrderIncome.svc?wsdl`。  
+
+    2. **SOAP 传递**或**到 REST SOAP** ： 选择您的首选项： 
+        * **对其余部分的 SOAP**： 从现有的基于 SOAP 的 web 服务创建 REST 基于 HTTP Api
+        * **SOAP 传递**： 充当 SOAP API 的代理 
+
+    3. 输入你首选**显示名称**，**名称**，**说明**， **API Url 后缀**，**产品**，和**版本**。
+
+    完成后，你 WSDL 配置看起来类似于以下内容： 
 
     ![从 WSDL BizTalk 创建 API](../core/media/create-api-from-wsdl-biztalk.png)
 
-4. 如果你想要使用选择**SOAP 传递**，或设置**到 REST SOAP**服务。
-5. 输入**名称**你的 api，**说明**，和**API Url 后缀**为你的服务。
-6. 选择**创建**创建到后端 SOAP 终结点的通信。
+4. 选择“创建”。
+
+## <a name="create-using-the-biztalk-administration"></a>创建使用 BizTalk 管理
+
+> [!NOTE] 
+> 此功能支持与 WCF BasicHTTP 接收位置。 
+
+1. 在 BizTalk 管理控制台中，右击你 WCF BasicHTTP 接收位置，然后选择**发布到 API 管理**:  
+
+    ![发布菜单选项](../core/media/publish-to-api-management-option.png)
+ 
+2. 配置你的 API 管理属性： 
+
+    1. **在登录**到 Azure 订阅，选择**订阅**和**资源组**具有你的 API 管理服务，，然后选择你的服务。
+
+    2. **WSDL 规范链接**自动填充为 WSDL 文件。 替换**localhost**具有 DNS 名称或 IP 地址的 BizTalk Server。 
+
+    3. 选择**SOAP 传递**或**到 REST SOAP**:  
+        * **对其余部分的 SOAP**： 从现有的基于 SOAP 的 web 服务创建 REST 基于 HTTP Api
+        * **SOAP 传递**： 充当 SOAP API 的代理 
+
+        API 可以通过更改发布这两种方式**API URL 后缀**，然后再将发布再次使用不同的 API 类型。
+
+    4. **API 名称**接收位置名称自动填充。
+
+    5. 选择**API URL 后缀**那就是由使用者的 api。 
+
+    完成后，你的属性类似于以下：  
+    ![将发布到 API 窗口](../core/media/api-management-publish-window.png)
+
+
+3. 选择**发布**。 接收位置成功后，将显示为中的 API 管理服务[Azure 门户](https://portal.azure.com)。 
+
+## <a name="do-more"></a>执行更多操作
+Azure API 管理是功能强大的服务所使用的 Azure 服务，包括 Logic Apps 很多。 API 管理包括许多功能，包括速率限制和配额，有权访问您的 Api、 缓存、 和的详细信息。 请参阅[API Management 是什么？](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)吧。
 
 ## <a name="see-also"></a>另请参阅
 [配置功能包](configure-the-feature-pack.md)

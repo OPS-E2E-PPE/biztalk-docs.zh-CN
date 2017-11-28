@@ -2,7 +2,7 @@
 title: "第 3 步-创建的生成和发布定义 |Microsoft 文档"
 description: "在 VSTS，创建要生成你的 git 或 TFS 存储库中的项目，然后创建要部署 BizTalk Server 应用程序的版本定义的生成定义"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,15 +11,18 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de86d35fd615d8c0f1eee1127804645067c4bf6e
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>步骤 3： 创建构建并发布定义
 
 生成和发布定义 Visual Studio Team Services 任务，并且可能通过 VSTS 管理员联系。生成定义将生成在 git 存储库时，项目和版本定义将将其部署到您的 BizTalk Server 环境。 
+
+## <a name="before-you-begin"></a>开始之前
+完成[步骤 2-创建 VSTS 令牌并安装代理](feature-pack-create-vsts-token.md)。
 
 ## <a name="add-the-build-tasks"></a>添加生成任务
 1. 在项目中，选择**生成和发布**。 生成选项卡将打开。 创建**新建**定义：
@@ -88,7 +91,11 @@ ms.lasthandoff: 11/09/2017
 
 7. 选择**部署**任务，并输入值： 
 
-    **操作名称**： 选择**创建新的 BizTalk 应用程序**。 此选项将部署新的应用程序。 如果应用程序已存在，它会卸载当前的应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动将重新部署应用程序更新存储库中时。 **更新现有的 BizTalk 应用程序**将更改，如架构，追加到已运行的应用程序。 它不需要应用程序完全重新部署。
+    **操作名称**： 你的选项: ***创建新的 BizTalk 应用程序**： 部署一个新的应用程序。 如果应用程序已存在，它会卸载当前的应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动将重新部署应用程序更新存储库中时。 
+        * **更新现有的 BizTalk 应用程序**： 将更改，如架构，追加到已运行的应用程序。 它不需要应用程序完全重新部署。
+        * **安装 BizTalk Server 应用程序**:[安装应用程序](../core/how-to-install-a-biztalk-application.md)，然后输入的 BizTalk 管理计算机的名称和部署包路径。
+
+        ![Deploy operations](../core/media/vsts-deploy-operations.png)
 
     **应用程序名称**： 您输入的文本将是在 BizTalk 管理的应用程序名称。 执行**不**输入 BizTalk 应用程序 1。
 

@@ -13,11 +13,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7afe600ae96e624db0acb2f87f6ba131b3e101bd
-ms.sourcegitcommit: 2330f1eaa6a7bb09975c9e07e56c6595229fd423
+ms.openlocfilehash: 88b036aaeb50c2997e1c6b49ae1788a488be1b1a
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a>配置 Power BI 操作数据馈送 BizTalk Server 中
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="prerequisites"></a>先决条件
 * 下载并安装[Power BI Desktop](https://powerbi.microsoft.com/desktop/)具有对网络访问的任何计算机上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* 安装[功能包 1](https://www.microsoft.com/download/details.aspx?id=55100)上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* 安装[功能包 2](https://aka.ms/bts2016fp2)上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * 在上安装 IIS [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]。 在大多数[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]环境中，IIS 已安装。 请参阅[的硬件和软件要求 BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)。 确认通过打开安装了 IIS **Internet Information Services Manager**。 
 * 可选。 安装和配置[Power BI 网关](https://powerbi.microsoft.com/gateway/)连接[PowerBI.com](http://powerbi.microsoft.com)与你的本地 BizTalk Server。 如果你不使用本地 BizTalk Server，则不需要网关。
 

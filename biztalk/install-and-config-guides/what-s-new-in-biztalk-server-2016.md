@@ -1,8 +1,9 @@
 ---
-title: "什么 &#39; s BizTalk Server 2016 中的新增功能 |Microsoft 文档"
+title: "BizTalk Server 2016 的新增功能 |Microsoft 文档"
+description: "更改和改进，包括功能包、 适配器、 安全、 跟踪、 性能和 BizTalk Server 2016 中的详细信息"
 ms.custom: 
 ms.prod: biztalk-server
-ms.date: 06/08/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -12,22 +13,23 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f4b4b9d7f06bb74e0270d8d1bb232067c37ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8e28b3c54afd130176e9bb19b2e0b1a59415d0
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="what39s-new-in-biztalk-server-2016"></a>什么 &#39; s BizTalk Server 2016 中的新增功能
+# <a name="whats-new-in-biztalk-server-2016"></a>BizTalk Server 2016 的新增功能
 了解 [!INCLUDE[bts2016](../includes/bts2016-md.md)] 中的新增功能。 
   
-## <a name="whats-new-in-biztalk-server-2016"></a>BizTalk Server 2016 的新增功能  
+## <a name="new-in-biztalk-server-2016"></a>BizTalk Server 2016 中的新增功能  
   
 |功能|说明|  
 |-------------|-----------------|  
 |对较新平台的支持|[!INCLUDE[bts2016](../includes/bts2016-md.md)] 添加了对以下 Microsoft 平台的支持：<br /><br /> -   Visual Studio 2015<br />-   Windows Server 2016<br />-   [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]<br />-   Office 2016<br/><br/>[BizTalk Server 2016 的硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)|  
+| 功能包 2 | 改进包括使用 API 管理的集成更紧密，Azure 事件中心适配器、 备份到 Azure blob 存储帐户、 对服务总线分区的支持和的详细信息。 <br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅什么包含的并配置它的功能](../core/configure-the-feature-pack.md) |
 | 功能包 1 | 包括支持使用 VSTS 自动部署、将跟踪数据发送到 Azure Application Insights 和 Power BI 以及有关接收位置的高级计划选项等等。<br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅什么包含的并配置它的功能](../core/configure-the-feature-pack.md) |
-|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性组|支持包括：<br /><br /> -   在本地和 [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 虚拟机内使用<br />-   用于生产工作负荷<br />-   在 [!INCLUDE[winazure](../includes/winazure-md.md)] 中提供高度可用 (HA) 的解决方案 <br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> 有关 SQL 特定的要求和功能，请参阅 [Always On AG 的分布式事务](https://msdn.microsoft.com/library/ms366279.aspx)（位于 SQL Server 文档中）。|  
+|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性组|支持包括：<br /><br /> -   在本地和 [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 虚拟机内使用<br />-   用于生产工作负荷<br />-   在 [!INCLUDE[winazure](../includes/winazure-md.md)] 中提供高度可用 (HA) 的解决方案 <br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> 请参阅[分布式事务用于始终在 AG](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)任何特定于 SQL 的要求和功能。|  
 |生产中的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Azure VM|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Azure 虚拟机现在完全支持用于生产环境。 使用 [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn，高度可用的解决方案现已成为可能。<br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)|  
 |逻辑应用适配器|连接到 Azure 中托管的逻辑应用，获取对所有连接器的访问权限，其中包括：Salesforce、SharePoint、CRM Online 等。 例如，可以在 BizTalk Server 中接收指令，连接到逻辑应用，然后更新 Salesforce。<br/><br/>[逻辑应用适配器](../core/logic-app-adapter.md)|  
 | 文件适配器 | 连接到 Azure 存储文件共享。 可以接收来自 Azure 文件共享的文件，并将消息发送到 Azure 文件共享。 <br/><br/>[配置文件适配器](../core/configure-the-file-adapter.md)|
@@ -44,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk 管理|除了更现代的外观和使用体验外，一些其他更改包括：<br /><br /> -   可同时配置多个主机/主机实例的设置。 例如，可以同时设置多个主机实例的 .NET CLR 设置。<br />-   使用新的“搜索”功能在应用程序中筛选和查找项目，如架构、资源等。<br />-   当对挂起的消息进行故障排除时，可同时将挂起的消息保存到一个文件中。<br /><br />[使用 BizTalk Server 管理控制台](../core/using-the-biztalk-server-administration-console.md)|  
 |其他更新|<ul><li>[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../includes/hl7-currentversion-firstref-md.md)] 启动到业务线服务器 (LOB) 的连接，并通过该连接推送消息。 LOB 等待连接，然后发送消息。 <br/><br/>在之前的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 版本中，HL7 MLLP 接收适配器等待 LOB 服务器连接到 HL7，然后再发送消息。 LOB 连接到 HL7，然后发送消息。 </li><br/><li>现可在安装中选择 Office Web 组件 (OWC)，它在“程序”中单独列出</li><br/><li>业务流程实例 ID 被添加到 XLANG FireEvent 跟踪输出</li></ul>|   
   
-### <a name="deprecated--removed-list"></a>已弃用和已删除的列表  
+## <a name="deprecated--removed-list"></a>已弃用和已删除的列表  
   
 |Program|状态|替代功能|  
 |-------------|------------|-----------------|  
@@ -58,5 +60,10 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  较新版本的 BizTalk 中可能包含其中一些已弃用的功能。 在这些情况下，请考虑以下方面：  
 >   
->  -   该功能可能会在 BizTalk 中内部使用，但并不表示供客户解决方案使用。 它在客户解决方案中不受支持。  
-> -   接口可能已被 Microsoft 修改，并且可能未公开。
+> -   此功能可能 BizTalk，在内部使用，并不是由客户解决方案。 它在客户解决方案中不受支持。  
+> -   接口可能已由 Microsoft、 修改和可能不能公开。
+
+## <a name="next-steps"></a>后续步骤
+[硬件和软件要求](hardware-and-software-requirements-for-biztalk-server-2016.md)  
+[安装程序和安装必备组件](set-up-and-install-prerequisites-for-biztalk-server-2016.md)  
+[安装 BizTalk](install-biztalk-server-2016.md)

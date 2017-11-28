@@ -2,7 +2,7 @@
 title: "步骤 1-添加应用程序项目和更新 json |Microsoft 文档"
 description: "将 BizTalk Server 应用程序项目添加在 Visual Studio 中，并使用的 Dll，绑定文件和应用程序的 Visual Studio Team Services 的部署序列更新 BizTalkServerInventory.json 文件"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46cb8a2072280e62cd8c3438521531f8cf3b55aa
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: a8d4b9773c9c7b23715b5ddae29c3c97f381da5e
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a>步骤 1： 在 Visual Studio 中添加 BizTalk Server 应用程序项目
 
@@ -29,7 +29,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 * 到 XML 绑定文件到你的 BizTalk 项目准备具有路径。 
 * 知道你的 VSTS 帐户、 你的集合和你团队项目的详细信息。
 * 熟悉 git 概念，包括克隆和使用存储库。 
-* 请确保[功能包 1](https://www.microsoft.com/download/details.aspx?id=55100)安装
+* 请确保[功能包 2](https://aka.ms/bts2016fp2)安装。
 
 ## <a name="add-the-application-project"></a>添加应用程序项目
 
@@ -52,6 +52,9 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 
     ![绑定文件属性](../core/media/xml-binding-file-properties.png)
 
+8. 可选。 右键单击新添加的应用程序项目中，然后选择**属性**。 自定义**应用程序名称**要显示在 BizTalk 管理中：  
+
+    ![应用程序名称](../core/media/application-project-name.png)
 
 ## <a name="configure-the-json-template"></a>配置的 JSON 模板
 
@@ -159,7 +162,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 
 ## <a name="what-you-did"></a>您进行的操作
 
-在 BizTalk 项目中，添加了 BizTalk 应用程序项目 (.btaproj)。 此项目使用自动完成部署使用 VSTS 你 BizTalk Server 项目。 创建应用程序项目后，你将添加到你的 BizTalk 应用程序项目的引用。 然后，您将更新一个 JSON 文件，告知在自动的部署，若要部署，若要使用，哪些绑定文件哪些 Dll 和部署应用程序的顺序。 
+在 BizTalk 项目中，添加了 BizTalk 应用程序项目 (.btaproj)。 此项目使用自动完成部署使用 VSTS 你 BizTalk Server 项目。 创建应用程序项目后，你将添加到你的 BizTalk 项目的引用。 然后，您将更新一个 JSON 文件，告知在自动的部署，若要部署，若要使用，哪些绑定文件哪些 Dll 和部署应用程序的顺序。 
 
 ## <a name="next-steps"></a>后续步骤
 [步骤 2： 创建 VSTS 令牌](feature-pack-create-vsts-token.md)  

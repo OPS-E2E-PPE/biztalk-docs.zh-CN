@@ -2,7 +2,7 @@
 title: "步骤 2-创建 VSTS 令牌并安装代理 |Microsoft 文档"
 description: "到 Visual Studio 中，创建 VSTS 安全访问令牌，克隆 VSTS 项目并安装用于自动执行部署你的 BizTalk Server 项目的生成代理"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46047f0bb6a536642d503d68bb4f9161ecdf7fc5
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 77296d9f2325bebaba4f4fa1ce7c55034ef1ead6
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-2-create-the-token--install-the-agent"></a>第 2 步： 创建令牌与安装代理
 
@@ -24,6 +24,9 @@ ms.lasthandoff: 11/09/2017
 详细信息在 PAT [VSTS 和 TFS 的身份验证使用个人访问令牌访问](https://docs.microsoft.com/vsts/accounts/use-personal-access-tokens-to-authenticate)。 
 
 创建令牌后，你安装的生成代理，并将其配置为使用此令牌。 
+
+## <a name="before-you-begin"></a>开始之前
+完成[步骤 1-添加应用程序项目，并更新 json](feature-pack-add-application-project.md)。
 
 ## <a name="sign-into-vsts-and-create-the-token"></a>登录到 VSTS，并创建令牌
 1. 转到[https://app.vsaex.visualstudio.com/go/profile](https://app.vsaex.visualstudio.com/go/profile)，和使用工作或学校帐户登录。 登录后，被列出你的 VSTS 帐户。 在下面的示例中，该帐户是**mandiaprojects.visualstudio.com**。  
@@ -61,7 +64,7 @@ ms.lasthandoff: 11/09/2017
 
 ## <a name="install-the-build-agent"></a>安装生成代理
 
-在 BizTalk 开发计算机上安装生成代理。 
+在 BizTalk 开发计算机上安装生成代理。 如果使用部署组，是你想要部署到的所有 BizTalk 服务器上安装的生成代理。 以下步骤显示如何在一台计算机上安装的生成代理。 有关使用部署组的详细信息，请参阅[部署组](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)。
 
 1. 打开你的 VSTS 帐户和项目中，这一点喜欢*https://YourAccountName.visualstudio.com/MyFirstProject*。 选择设置图标，并选择**代理队列**:  
 
