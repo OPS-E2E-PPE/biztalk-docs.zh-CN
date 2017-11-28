@@ -1,0 +1,217 @@
+---
+title: "步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: d31fc6c1-e4b5-4529-ba3e-2a8cfb8ece1c
+caps.latest.revision: "19"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: f93b4efeb65092c4ca61ab1fc2ef58a0ac53ae4a
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a><span data-ttu-id="c4ec1-102">步骤 4： 为 Echo 适配器实现元数据浏览的处理程序</span><span class="sxs-lookup"><span data-stu-id="c4ec1-102">Step 4: Implement the Metadata Browse Handler for the Echo Adapter</span></span>
+<span data-ttu-id="c4ec1-103">![9 的第 4 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span><span class="sxs-lookup"><span data-stu-id="c4ec1-103">![Step 4 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span></span>  
+  
+ <span data-ttu-id="c4ec1-104">**完成时间：** 45 分钟</span><span class="sxs-lookup"><span data-stu-id="c4ec1-104">**Time to complete:** 45 minutes</span></span>  
+  
+ <span data-ttu-id="c4ec1-105">在此步骤中，你可以实现 Echo 适配器的浏览功能。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-105">In this step, you implement the browse capability of the Echo adapter.</span></span> <span data-ttu-id="c4ec1-106">此功能允许您执行基于连接的浏览，获取元数据从目标系统的适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-106">This capability allows your adapter to perform a connection-based browse to obtain metadata from the target system.</span></span> <span data-ttu-id="c4ec1-107">无论你适配器的功能，你的适配器必须支持浏览功能。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-107">Regardless of your adapter's capabilities, your adapter must support the browse capability.</span></span>  
+  
+ <span data-ttu-id="c4ec1-108">根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，若要支持浏览功能，则必须实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-108">According to the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], to support browse capability, you must implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface.</span></span> <span data-ttu-id="c4ec1-109">为 Echo 适配器[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成调用 EchoAdapterMetadataBrowseHandler 派生的类。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-109">For the Echo adapter, the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataBrowseHandler.</span></span>  
+  
+ <span data-ttu-id="c4ec1-110">在以下步骤中，更新此类，以更好地理解如何实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法，如何设置的各种属性`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，并在的操作和适配器支持的类别节点的显示方式[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-110">In the following steps, you update this class to get a better understanding of how to implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method, how to set various properties of the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object, and how the operation and category nodes supported by the adapter appear in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="c4ec1-111">先决条件</span><span class="sxs-lookup"><span data-stu-id="c4ec1-111">Prerequisites</span></span>  
+ <span data-ttu-id="c4ec1-112">在开始此步骤之前，你必须已成功完成[步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-112">Before you begin this step, you must have successfully completed [Step 3: Implement the Connection for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md).</span></span> <span data-ttu-id="c4ec1-113">您还必须了解以下类：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-113">You must also understand the following classes:</span></span>  
+  
+-   `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`  
+  
+-   `Microsoft.ServiceModel.Channels.MetadataRetrievalNodeDirections`  
+  
+-   `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`  
+  
+## <a name="the-imetadatabrowsehandler-interface"></a><span data-ttu-id="c4ec1-114">IMetadataBrowseHandler 接口</span><span class="sxs-lookup"><span data-stu-id="c4ec1-114">The IMetadataBrowseHandler Interface</span></span>  
+ <span data-ttu-id="c4ec1-115">`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口如下定义：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-115">The `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface is defined as:</span></span>  
+  
+```  
+public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable  
+{  
+    MetadataRetrievalNode[] Browse(string nodeId, int childStartIndex, int maxChildNodes, TimeSpan timeout);  
+}  
+```  
+  
+ <span data-ttu-id="c4ec1-116">`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象基于方法的参数。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-116">The `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method returns an array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects based on the method parameters.</span></span> <span data-ttu-id="c4ec1-117">参数定义`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法以下表所述。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-117">The parameter definitions for the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method are described in the following table.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="c4ec1-118">Echo 适配器实现使用仅的节点 ID，并忽略其他三个参数，因为 Echo 适配器支持仅在几个节点。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-118">The Echo adapter implementation uses only the node ID and ignores the other three parameters, since the Echo adapter supports only a few nodes.</span></span>  
+  
+|<span data-ttu-id="c4ec1-119">**参数**</span><span class="sxs-lookup"><span data-stu-id="c4ec1-119">**Parameter**</span></span>|<span data-ttu-id="c4ec1-120">**定义**</span><span class="sxs-lookup"><span data-stu-id="c4ec1-120">**Definition**</span></span>|  
+|-------------------|--------------------|  
+|<span data-ttu-id="c4ec1-121">nodeId</span><span class="sxs-lookup"><span data-stu-id="c4ec1-121">nodeId</span></span>|<span data-ttu-id="c4ec1-122">层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和</span><span class="sxs-lookup"><span data-stu-id="c4ec1-122">Each item in the hierarchy of the metadata explorer (the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and</span></span><br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]<span data-ttu-id="c4ec1-123">) 具有 nodeId。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-123">) has a nodeId.</span></span> <span data-ttu-id="c4ec1-124">每个节点 ID 必须唯一，并且可以是一个类别或运算。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-124">Each node ID must be unique and can be a category or an operation.</span></span> <span data-ttu-id="c4ec1-125">类别具有子类别。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-125">The category can have subcategories.</span></span> <span data-ttu-id="c4ec1-126">**注意：**如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-126">**Note:**  If null or an empty string (""), operations are retrieved from the root node ("/") by default.</span></span>|  
+|<span data-ttu-id="c4ec1-127">childStartIndex</span><span class="sxs-lookup"><span data-stu-id="c4ec1-127">childStartIndex</span></span>|<span data-ttu-id="c4ec1-128">若要返回的第一个子级的索引。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-128">The index of the first child to return.</span></span><br /><br /> <span data-ttu-id="c4ec1-129">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-129">Not supported by the Echo adapter.</span></span>|  
+|<span data-ttu-id="c4ec1-130">maxChildNodes</span><span class="sxs-lookup"><span data-stu-id="c4ec1-130">maxChildNodes</span></span>|<span data-ttu-id="c4ec1-131">要返回的结果节点最大数量。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-131">The maximum number of result nodes to return.</span></span> <span data-ttu-id="c4ec1-132">使用 Int32.Max 检索结果的所有节点。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-132">Use Int32.Max to retrieve all result nodes.</span></span><br /><br /> <span data-ttu-id="c4ec1-133">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-133">Not supported by the Echo adapter.</span></span>|  
+|<span data-ttu-id="c4ec1-134">timeout</span><span class="sxs-lookup"><span data-stu-id="c4ec1-134">timeout</span></span>|<span data-ttu-id="c4ec1-135">允许此操作完成的最大时间。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-135">The maximum time allowed for the operation to complete.</span></span><br /><br /> <span data-ttu-id="c4ec1-136">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-136">Not supported by the Echo adapter.</span></span>|  
+  
+ <span data-ttu-id="c4ec1-137">在实现时`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法，必须将每个类别和操作的节点添加到的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-137">When implementing the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method, you must add every category and operation node to the array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects.</span></span> <span data-ttu-id="c4ec1-138">若要指定的节点作为类别，设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`false`。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-138">To specify a node as category, set the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A` to `false`.</span></span> <span data-ttu-id="c4ec1-139">若要指定作为操作的节点，将设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`true`。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-139">To specify a node as operation, set the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A` to `true`.</span></span>  
+  
+## <a name="echo-adapter-metadata-browse"></a><span data-ttu-id="c4ec1-140">Echo 适配器元数据浏览</span><span class="sxs-lookup"><span data-stu-id="c4ec1-140">Echo Adapter Metadata Browse</span></span>  
+ <span data-ttu-id="c4ec1-141">根据目标系统的类别和操作中，有许多方法来生成的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-141">Depending on your target system's categories and operations, there are many ways to build an array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects.</span></span> <span data-ttu-id="c4ec1-142">操作和你选择的类别应表示你想要公开的操作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-142">The operations and categories you choose should represent the operations you want to expose.</span></span> <span data-ttu-id="c4ec1-143">但对于 Echo 适配器，它只需创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象具有节点 ID 的以下节点的每个列出：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-143">But for the Echo adapter, it simply creates a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for each of the following nodes with node ID listed:</span></span>  
+  
+```  
+EchoMainCategory  (node under the root node)  
+        Echo/EchoStrings   (outbound operation)  
+        Echo/EchoGreetings(outbound operation)  
+        Echo/EchoCustomGreetingFromFile(outbound operation)  
+        Echo/OnReceiveEcho (inbound operation)  
+```  
+  
+ <span data-ttu-id="c4ec1-144">EchoMainCategory 是根节点 （"/"） 下的类别节点。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-144">The EchoMainCategory is the category node under the root node ("/").</span></span> <span data-ttu-id="c4ec1-145">此节点还作为类别用于入站和出站操作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-145">This node is also used as the category for both inbound and outbound operations.</span></span> <span data-ttu-id="c4ec1-146">因此，在创建时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象该类别中，你可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-146">Hence, when creating the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for that category, you can do the following:</span></span>  
+  
+```  
+MetadataRetrievalNode node = new MetadataRetrievalNode("EchoMainCategory");  
+node.IsOperation = false; //category  
+node.Direction = MetadataRetrievalNodeDirections.Inbound | MetadataRetrievalNodeDirections.Outbound  //for both inbound and outbound  
+```  
+  
+ <span data-ttu-id="c4ec1-147">对于如属于 EchoMainCategory/Echo EchoString 出站操作，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-147">For an outbound operation such as Echo/EchoString that belongs to the EchoMainCategory, you can do the following:</span></span>  
+  
+```  
+if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory  
+      {  
+          // Outbound operations  
+          MetadataRetrievalNode outOpNode1 = new MetadataRetrievalNode("Echo/EchoStrings");  
+          outOpNode1.DisplayName = "EchoStrings";  
+          outOpNode1.Description = "This operation echoes the incoming string COUNT number of times in a string array.";  
+          outOpNode1.Direction = MetadataRetrievalNodeDirections.Outbound;  
+          outOpNode1.IsOperation = true;  
+```  
+  
+ <span data-ttu-id="c4ec1-148">对于入站回显/OnReceiveEcho 属于 EchoMainCategory 如操作，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-148">For an inbound operation such as Echo/OnReceiveEcho that belongs to the EchoMainCategory, you can do the following:</span></span>  
+  
+```  
+  if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory  
+        {             
+// Inbound operations  
+            MetadataRetrievalNode inOpNode1 = new MetadataRetrievalNode("Echo/OnReceiveEcho");  
+            inOpNode1.DisplayName = "OnReceiveEcho";  
+            inOpNode1.Description = "This operation echoes the location and length of a file dropped in the specified file system.";  
+            inOpNode1.Direction = MetadataRetrievalNodeDirections.Inbound;  
+            inOpNode1.IsOperation = true;  
+```  
+  
+ <span data-ttu-id="c4ec1-149">当[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]工具浏览 Echo 适配器元数据，默认情况下，它将启动从根节点 （"/"）。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-149">When the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] tools explore the Echo adapter metadata, by default, it starts from the root node ("/").</span></span>  
+  
+ <span data-ttu-id="c4ec1-150">下图显示 EchoMainCategory 节点显示在根节点 （"/"）：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-150">The following figure shows that the EchoMainCategory node appears under the root node ("/"):</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
+  
+ <span data-ttu-id="c4ec1-151">浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）**选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-151">To browse the three outbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Client (Outbound operations)** option.</span></span> <span data-ttu-id="c4ec1-152">请参阅中的这些操作**可用类别和操作**列表框中，如下所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-152">You see those operations in the **Available categories and operations** list box, as shown below:</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
+  
+ <span data-ttu-id="c4ec1-153">在上图中，注意`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`值出现在**名称**列**可用类别和操作**列表框。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-153">In the previous figure, notice that the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A` value appears in the **Name** column of the **Available categories and operations** list box.</span></span> <span data-ttu-id="c4ec1-154">参数传递到`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`构造函数将出现在**节点 ID**列**可用类别和操作**列表框中，与`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`值会显示为工具提示包含说明中，右键单击时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-154">The parameter passed into the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` constructor appears in the **Node ID** column of the **Available categories and operations** list box, and the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A` value appears as the tool tip that contains the description, when you right-click the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`.</span></span>  
+  
+ <span data-ttu-id="c4ec1-155">若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）**选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-155">To see the inbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Service (Inbound operations)** option.</span></span> <span data-ttu-id="c4ec1-156">请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-156">You see the inbound OnReceiveEcho operation in the **Available categories and operations** list box, as shown in the following figure:</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
+  
+## <a name="implementing-the-imetadatabrowsehandler"></a><span data-ttu-id="c4ec1-157">实现 IMetadataBrowseHandler</span><span class="sxs-lookup"><span data-stu-id="c4ec1-157">Implementing the IMetadataBrowseHandler</span></span>  
+ <span data-ttu-id="c4ec1-158">在此步骤中，更新 EchoAdapterMetadataBrowseHandler 类，它是实现 Echo 适配器的元数据浏览，以实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-158">In this step, you update the EchoAdapterMetadataBrowseHandler class to implement the Echo adapter's metadata browse, that is, to implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method of the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface.</span></span> <span data-ttu-id="c4ec1-159">具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`每个类别和操作对象，设置适当的值为该对象，然后返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`类别和操作的对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-159">Specifically, you create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for each category and operation, set appropriate values for that object, and then return the array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects for category and operations.</span></span> <span data-ttu-id="c4ec1-160">请记住，当你创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，你需要传入的节点 ID，而不是显示名称。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-160">Keep in mind that when you create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object, you need to pass in the node ID, not the display name.</span></span>  
+  
+#### <a name="to-update-the-echoadaptermetadatabrowsehandler-class"></a><span data-ttu-id="c4ec1-161">若要更新 EchoAdapterMetadataBrowseHandler 类</span><span class="sxs-lookup"><span data-stu-id="c4ec1-161">To update the EchoAdapterMetadataBrowseHandler class</span></span>  
+  
+1.  <span data-ttu-id="c4ec1-162">在解决方案资源管理器中，双击**EchoAdapterMetadataBrowseHandler.cs**文件。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-162">In Solution Explorer, double-click the **EchoAdapterMetadataBrowseHandler.cs** file.</span></span>  
+  
+2.  <span data-ttu-id="c4ec1-163">在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-163">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
+  
+3.  <span data-ttu-id="c4ec1-164">在 Visual Studio 编辑器中，内部**浏览**方法，将替换为以下创建的现有逻辑`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`EchoMainCategory 的对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-164">In the Visual Studio editor, inside the **Browse** method, replace the existing logic with the following to create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for EchoMainCategory.</span></span>  
+  
+    ```csharp  
+    if (MetadataRetrievalNode.Root.NodeId.Equals(nodeId))  
+    {  
+        MetadataRetrievalNode node = new MetadataRetrievalNode("EchoMainCategory");  
+        node.DisplayName = "Main Category";  
+        node.IsOperation = false;  
+        node.Description = "This category contains inbound and outbound categories.";  
+        node.Direction = MetadataRetrievalNodeDirections.Inbound | MetadataRetrievalNodeDirections.Outbound;  
+        return new MetadataRetrievalNode[] { node };  
+    }  
+    ```  
+  
+4.  <span data-ttu-id="c4ec1-165">继续添加以下逻辑创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`Echo/OnReceiveEcho 的对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-165">Continue adding the following logic to create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for Echo/OnReceiveEcho.</span></span>  
+  
+    ```csharp  
+    if( "EchoMainCategory".CompareTo(nodeId) == 0 )  
+    {  
+        // Inbound operations  
+        MetadataRetrievalNode inOpNode1 = new MetadataRetrievalNode("Echo/OnReceiveEcho");  
+        inOpNode1.DisplayName = "OnReceiveEcho";  
+        inOpNode1.Description = "This operation echos the location and length of a file dropped in the specified file system.";  
+        inOpNode1.Direction = MetadataRetrievalNodeDirections.Inbound;  
+        inOpNode1.IsOperation = true;  
+    ```  
+  
+5.  <span data-ttu-id="c4ec1-166">继续添加以下逻辑创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`Echo/EchoStrings 的对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-166">Continue adding the following logic to create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for Echo/EchoStrings.</span></span>  
+  
+    ```csharp  
+    // Outbound operations  
+    MetadataRetrievalNode outOpNode1 = new MetadataRetrievalNode("Echo/EchoStrings");  
+    outOpNode1.DisplayName = "EchoStrings";  
+    outOpNode1.Description = "This operation echoes the incoming string COUNT number of times in a string array.";  
+    outOpNode1.Direction = MetadataRetrievalNodeDirections.Outbound;  
+    outOpNode1.IsOperation = true;  
+    ```  
+  
+6.  <span data-ttu-id="c4ec1-167">继续添加以下代码以创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`Echo/EchoGreetings 的对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-167">Continue adding the following code to create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for Echo/EchoGreetings.</span></span>  
+  
+    ```csharp  
+    MetadataRetrievalNode outOpNode2 = new MetadataRetrievalNode("Echo/EchoGreetings");  
+    outOpNode2.DisplayName = "EchoGreetings";  
+    outOpNode2.Description = "This operation echoes the incoming Greeting object COUNT number of times in an array of type Greeting.";  
+    outOpNode2.Direction = MetadataRetrievalNodeDirections.Outbound;  
+    outOpNode2.IsOperation = true;  
+    ```  
+  
+7.  <span data-ttu-id="c4ec1-168">继续添加以下代码以创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`回显的对象 / EchoGreetingFromFile。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-168">Continue adding the following code to create a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for Echo/ EchoGreetingFromFile.</span></span>  
+  
+    ```csharp  
+    MetadataRetrievalNode outOpNode3 = new MetadataRetrievalNode("Echo/EchoCustomGreetingFromFile");  
+    outOpNode3.DisplayName = "EchoCustomGreetingFromFile";  
+    outOpNode3.Description = "This operation echoes the greeting object by reading its instance from a file. The Greeting object's metadata is obtained from a predefined XSD file.";  
+    outOpNode3.Direction = MetadataRetrievalNodeDirections.Outbound;  
+    outOpNode3.IsOperation = true;  
+    ```  
+  
+8.  <span data-ttu-id="c4ec1-169">继续添加下面的代码返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象或 null 如果不匹配。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-169">Continue adding the following code to return an array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects or null if not matched.</span></span>  
+  
+    ```  
+        return new MetadataRetrievalNode[] { inOpNode1, outOpNode1, outOpNode2, outOpNode3 };  
+    }  
+    return null;  
+    ```  
+  
+9. <span data-ttu-id="c4ec1-170">在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-170">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
+  
+10. <span data-ttu-id="c4ec1-171">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-171">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="c4ec1-172">你应已成功生成项目。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-172">You should successfully build the project.</span></span> <span data-ttu-id="c4ec1-173">如果没有，请确保您已按照上述每个步骤。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-173">If not, ensure that you have followed every step above.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="c4ec1-174">保存所做的工作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-174">You saved your work.</span></span> <span data-ttu-id="c4ec1-175">你可以安全地在此时关闭 Visual Studio 或转到下一步，[步骤 5： 为 Echo 适配器实现的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-175">You can safely close Visual Studio at this time or go to the next step, [Step 5: Implement the Metadata Search Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md).</span></span>  
+  
+## <a name="what-did-i-just-do"></a><span data-ttu-id="c4ec1-176">未我只需做什么？</span><span class="sxs-lookup"><span data-stu-id="c4ec1-176">What Did I Just Do?</span></span>  
+ <span data-ttu-id="c4ec1-177">只需实现通过实现浏览 Echo 适配器，适配器的功能的元数据`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-177">You just implemented the metadata browsing capability of the Echo adapter, by implementing the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method of the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface.</span></span> <span data-ttu-id="c4ec1-178">具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`针对类别中，对象，然后将它返回数组的形式`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-178">Specifically, you created a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object for the category, and then returned it as an array of the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects.</span></span> <span data-ttu-id="c4ec1-179">您为每个操作，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，以及然后在一个数组中返回所有这些对象`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-179">For each operation, you created a `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object, and then returned all those objects in an array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`.</span></span>  
+  
+## <a name="next-steps"></a><span data-ttu-id="c4ec1-180">后续步骤</span><span class="sxs-lookup"><span data-stu-id="c4ec1-180">Next Steps</span></span>  
+ <span data-ttu-id="c4ec1-181">你可实现元数据搜索和解析功能和出站消息交换。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-181">You implement metadata searching and resolving capabilities, and the outbound message exchange.</span></span> <span data-ttu-id="c4ec1-182">最后，生成并部署 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-182">Finally, you build and deploy the Echo adapter.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="c4ec1-183">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c4ec1-183">See Also</span></span>  
+ <span data-ttu-id="c4ec1-184">[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="c4ec1-184">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) </span></span>  
+ <span data-ttu-id="c4ec1-185">[步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="c4ec1-185">[Step 3: Implement the Connection for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md) </span></span>  
+ [<span data-ttu-id="c4ec1-186">步骤 5： 为 Echo 适配器实现的元数据搜索处理程序</span><span class="sxs-lookup"><span data-stu-id="c4ec1-186">Step 5: Implement the Metadata Search Handler for the Echo Adapter</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)

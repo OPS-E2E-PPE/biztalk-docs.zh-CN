@@ -1,0 +1,84 @@
+---
+title: "管道阶段 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- pipelines, properties
+- CATID_AssemblingSerializer component category
+- CATID_Encoder component category
+- pipelines, stages
+- CATID_DisassemblingParser component category
+- CATID_Validate component category
+- ComponentCategory class attribute
+- CATID_Decoder component category
+- CATID_Any component category
+- CATID_PartyResolver component category
+- Execution Mode property
+ms.assetid: ac50c48c-6ed5-4322-95cc-af55df6bcd1c
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: aeb675f39cb39ade4230e6e39f798e95115aaf78
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="pipeline-stages"></a><span data-ttu-id="36041-102">管道阶段</span><span class="sxs-lookup"><span data-stu-id="36041-102">Pipeline Stages</span></span>
+<span data-ttu-id="36041-103">本主题讨论**执行模式**属性和阶段相关性。</span><span class="sxs-lookup"><span data-stu-id="36041-103">This topic discusses the **Execution Mode** property and stage affinity.</span></span>  
+  
+## <a name="execution-mode-property"></a><span data-ttu-id="36041-104">“执行模式”属性</span><span class="sxs-lookup"><span data-stu-id="36041-104">Execution Mode property</span></span>  
+ <span data-ttu-id="36041-105">在管道的执行期间，管道阶段只能运行第一个识别消息格式的组件或所有组件。</span><span class="sxs-lookup"><span data-stu-id="36041-105">During the execution of a pipeline, the pipeline stages can run only the first component that recognizes the message format, or all components.</span></span> <span data-ttu-id="36041-106">属性，用于确定执行模式是**执行模式**。</span><span class="sxs-lookup"><span data-stu-id="36041-106">The property that determines the execution pattern is **Execution Mode**.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="36041-107">此属性在管道模板包括的阶段中是只读的，但了解其工作原理非常重要。</span><span class="sxs-lookup"><span data-stu-id="36041-107">This property is read-only on the stages included in the pipeline templates, but understanding how it works is an important concept.</span></span>  
+  
+ <span data-ttu-id="36041-108">当**执行模式**属性设置为**所有**，阶段内的所有组件都运行配置的序列中。</span><span class="sxs-lookup"><span data-stu-id="36041-108">When the **Execution Mode** property is set to **All**, all the components within the stage are run in the configured sequence.</span></span> <span data-ttu-id="36041-109">此模式运行多个组件来完成一项逻辑任务。</span><span class="sxs-lookup"><span data-stu-id="36041-109">This mode runs several components to complete a logical task.</span></span> <span data-ttu-id="36041-110">在这种情况下，如果任何组件在此管道阶段处理消息过程中遇到错误，都会导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="36041-110">In this case, a run-time error results if any component encounters an error while processing a message during this pipeline stage.</span></span>  
+  
+ <span data-ttu-id="36041-111">当管道用于接收消息的几种格式，则**执行模式**属性设置为**匹配**。</span><span class="sxs-lookup"><span data-stu-id="36041-111">When a pipeline is used to receive messages in several formats, then the **Execution Mode** property is set to **FirstMatch**.</span></span> <span data-ttu-id="36041-112">在此模式下，只运行第一个识别消息的组件。</span><span class="sxs-lookup"><span data-stu-id="36041-112">In this mode, only the first component that recognizes the message is run.</span></span> <span data-ttu-id="36041-113">如果阶段中没有组件可识别消息，则会导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="36041-113">If no components in the stage recognize the message, a run-time error results.</span></span>  
+  
+ <span data-ttu-id="36041-114">请注意，每个阶段都有其自己**执行模式**在管道中的设置，因此不同阶段可具有不同的执行模式。</span><span class="sxs-lookup"><span data-stu-id="36041-114">Note that each stage can have its own **Execution Mode** setting, so different stages within a pipeline can have different execution modes.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="36041-115">在此版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 管道中发送的所有阶段和拆卸除外的所有阶段，接收都管道中都具有的值**执行模式**属性设置为**所有**。</span><span class="sxs-lookup"><span data-stu-id="36041-115">In this release of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], all the stages in a send pipeline and all stages except Disassemble in a receive pipeline have the value of the **Execution Mode** property set to **All**.</span></span> <span data-ttu-id="36041-116">值**执行模式**拆装阶段中的属性设置为**匹配**。</span><span class="sxs-lookup"><span data-stu-id="36041-116">The value of the **Execution Mode** property in the Disassemble stage is set to **FirstMatch**.</span></span> <span data-ttu-id="36041-117">无法更改**执行模式**阶段的属性。</span><span class="sxs-lookup"><span data-stu-id="36041-117">You cannot change the **Execution Mode** property of a stage.</span></span>  
+  
+#### <a name="to-read-pipeline-stage-properties"></a><span data-ttu-id="36041-118">查看管道阶段属性</span><span class="sxs-lookup"><span data-stu-id="36041-118">To read pipeline stage properties</span></span>  
+  
+1.  <span data-ttu-id="36041-119">在管道设计器中，单击相应的阶段形状。</span><span class="sxs-lookup"><span data-stu-id="36041-119">In Pipeline Designer, click a stage shape.</span></span>  
+  
+2.  <span data-ttu-id="36041-120">在属性窗口中，在**常规**部分中，读取的以下属性：</span><span class="sxs-lookup"><span data-stu-id="36041-120">In the Properties window, in the **General** section, read the following properties:</span></span>  
+  
+    |<span data-ttu-id="36041-121">使用此选项</span><span class="sxs-lookup"><span data-stu-id="36041-121">Use this</span></span>|<span data-ttu-id="36041-122">执行的操作</span><span class="sxs-lookup"><span data-stu-id="36041-122">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="36041-123">**名称**</span><span class="sxs-lookup"><span data-stu-id="36041-123">**Name**</span></span>|<span data-ttu-id="36041-124">指示阶段的名称。</span><span class="sxs-lookup"><span data-stu-id="36041-124">Indicates the name of the stage.</span></span>|  
+    |<span data-ttu-id="36041-125">**执行模式**</span><span class="sxs-lookup"><span data-stu-id="36041-125">**Execution Mode**</span></span>|<span data-ttu-id="36041-126">指示阶段的执行模式。</span><span class="sxs-lookup"><span data-stu-id="36041-126">Indicates the execution pattern of the stage.</span></span><br /><br /> <span data-ttu-id="36041-127">有效值：**所有**或**匹配**</span><span class="sxs-lookup"><span data-stu-id="36041-127">Valid values: **All** or **FirstMatch**</span></span>|  
+    |<span data-ttu-id="36041-128">**组件的最小数目**</span><span class="sxs-lookup"><span data-stu-id="36041-128">**Minimum Number of Components**</span></span>|<span data-ttu-id="36041-129">指示可向阶段添加的最小管道组件数。</span><span class="sxs-lookup"><span data-stu-id="36041-129">Indicates the minimum number of pipeline components that can be added to the stage.</span></span>|  
+    |<span data-ttu-id="36041-130">**组件的最大数目**</span><span class="sxs-lookup"><span data-stu-id="36041-130">**Maximum Number of Components**</span></span>|<span data-ttu-id="36041-131">指示可向阶段添加的最大管道组件数。</span><span class="sxs-lookup"><span data-stu-id="36041-131">Indicates the maximum number of pipeline components that can be added to the stage.</span></span>|  
+    |<span data-ttu-id="36041-132">**StageID**</span><span class="sxs-lookup"><span data-stu-id="36041-132">**StageID**</span></span>|<span data-ttu-id="36041-133">指示阶段的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="36041-133">Indicates the unique identifier for the stage.</span></span>|  
+  
+## <a name="stage-affinity"></a><span data-ttu-id="36041-134">阶段关联</span><span class="sxs-lookup"><span data-stu-id="36041-134">Stage affinity</span></span>  
+ <span data-ttu-id="36041-135">管道组件有阶段关联，这意味着管道组件是为在管道中特定的一个或多个阶段中使用而创建的。</span><span class="sxs-lookup"><span data-stu-id="36041-135">Pipeline components have stage affinity, meaning that they are created for use within a particular stage or stages in a pipeline.</span></span>  
+  
+ <span data-ttu-id="36041-136">基于 COM 的管道组件通过注册本身作为实现类别中，使用阶段 ID express 其阶段相关性时。基于网络的管道组件通过指定其阶段相关性**ComponentCategory**类特性。</span><span class="sxs-lookup"><span data-stu-id="36041-136">COM-based pipeline components express their stage affinity by registering themselves using the stage ID as the implementation category, while .NET-based pipeline components specify their stage affinity by using the **ComponentCategory** class attribute.</span></span> <span data-ttu-id="36041-137">请注意，可能要将其自身与多个阶段相关联的组件，组件可以具有多个实现类别或**ComponentCategory**属性。</span><span class="sxs-lookup"><span data-stu-id="36041-137">Note that it is possible for a component to associate itself with more than one stage—components can have more than one implementation category or **ComponentCategory** attribute.</span></span>  
+  
+ <span data-ttu-id="36041-138">下表显示了可用的组件类别及其关联阶段：</span><span class="sxs-lookup"><span data-stu-id="36041-138">The following table shows the available component categories and their associated stages.</span></span>  
+  
+|<span data-ttu-id="36041-139">组件类别</span><span class="sxs-lookup"><span data-stu-id="36041-139">Component category</span></span>|<span data-ttu-id="36041-140">可放置组件的阶段</span><span class="sxs-lookup"><span data-stu-id="36041-140">Stage where component can be placed</span></span>|<span data-ttu-id="36041-141">Description</span><span class="sxs-lookup"><span data-stu-id="36041-141">Description</span></span>|  
+|------------------------|-----------------------------------------|-----------------|  
+|<span data-ttu-id="36041-142">CATID_Decoder {9d0e4103-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-142">CATID_Decoder {9d0e4103-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-143">解码</span><span class="sxs-lookup"><span data-stu-id="36041-143">Decode</span></span>|<span data-ttu-id="36041-144">所有解码组件都应实现此类别。</span><span class="sxs-lookup"><span data-stu-id="36041-144">All decoding components should implement this category.</span></span>|  
+|<span data-ttu-id="36041-145">CATID_DisassemblingParser {9d0e4105-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-145">CATID_DisassemblingParser {9d0e4105-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-146">拆装</span><span class="sxs-lookup"><span data-stu-id="36041-146">Disassemble</span></span>|<span data-ttu-id="36041-147">所有拆装组件和解析组件都应实现此类别。</span><span class="sxs-lookup"><span data-stu-id="36041-147">All disassembling and parsing components should implement this category.</span></span>|  
+|<span data-ttu-id="36041-148">CATID_Validate {9d0e410d-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-148">CATID_Validate {9d0e410d-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-149">验证</span><span class="sxs-lookup"><span data-stu-id="36041-149">Validate</span></span>|<span data-ttu-id="36041-150">验证组件应实现此类别。</span><span class="sxs-lookup"><span data-stu-id="36041-150">Validation components should implement this category.</span></span>|  
+|<span data-ttu-id="36041-151">CATID_PartyResolver {9d0e410e-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-151">CATID_PartyResolver {9d0e410e-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-152">解析参与方</span><span class="sxs-lookup"><span data-stu-id="36041-152">ResolveParty</span></span>|<span data-ttu-id="36041-153">用于参与方解析组件的阶段。</span><span class="sxs-lookup"><span data-stu-id="36041-153">Stage used for Party Resolution component.</span></span>|  
+|<span data-ttu-id="36041-154">CATID_Encoder {9d0e4108-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-154">CATID_Encoder {9d0e4108-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-155">编码</span><span class="sxs-lookup"><span data-stu-id="36041-155">Encode</span></span>|<span data-ttu-id="36041-156">所有编码组件都应实现此类别。</span><span class="sxs-lookup"><span data-stu-id="36041-156">All encoding components should implement this category.</span></span>|  
+|<span data-ttu-id="36041-157">CATID_AssemblingSerializer {9d0e4107-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-157">CATID_AssemblingSerializer {9d0e4107-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-158">序列化</span><span class="sxs-lookup"><span data-stu-id="36041-158">Serialize</span></span>|<span data-ttu-id="36041-159">所有序列化组件和组装组件都应实现此类别。</span><span class="sxs-lookup"><span data-stu-id="36041-159">All serializing and assembling components should implement this category.</span></span>|  
+|<span data-ttu-id="36041-160">CATID_Any {9d0e4101-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="36041-160">CATID_Any {9d0e4101-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="36041-161">这些阶段中的任意阶段</span><span class="sxs-lookup"><span data-stu-id="36041-161">Any of these stages</span></span>|<span data-ttu-id="36041-162">如果某管道组件实现了此类别，则意味着该组件可以放置在管道的任意阶段中。</span><span class="sxs-lookup"><span data-stu-id="36041-162">If a pipeline component implements this category, it means that the component can be placed into any stage of a pipeline.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="36041-163">另请参阅</span><span class="sxs-lookup"><span data-stu-id="36041-163">See Also</span></span>  
+ <span data-ttu-id="36041-164">[创建管道使用管道设计器](../core/creating-pipelines-using-pipeline-designer.md) </span><span class="sxs-lookup"><span data-stu-id="36041-164">[Creating Pipelines Using Pipeline Designer](../core/creating-pipelines-using-pipeline-designer.md) </span></span>  
+ [<span data-ttu-id="36041-165">有关管道、 阶段和组件</span><span class="sxs-lookup"><span data-stu-id="36041-165">About Pipelines, Stages, and Components</span></span>](../core/about-pipelines-stages-and-components.md)

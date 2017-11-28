@@ -1,0 +1,43 @@
+---
+title: "如何使用 ThrowDetailedError 交换机 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Web services, security
+- Web services, debugging
+ms.assetid: 8a8af3c0-a9a2-42fe-b0be-a5a106403747
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 194306da3b021e7460b88a3d8e76801a2eeaebba
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-use-the-throwdetailederror-switch"></a><span data-ttu-id="48e53-102">如何使用 ThrowDetailedError 开关</span><span class="sxs-lookup"><span data-stu-id="48e53-102">How to Use the ThrowDetailedError Switch</span></span>
+<span data-ttu-id="48e53-103">如果发生错误，Web 客户端接收泛型**SoapException**。</span><span class="sxs-lookup"><span data-stu-id="48e53-103">If an error occurs, the Web client receives a generic **SoapException**.</span></span>  
+  
+ <span data-ttu-id="48e53-104">若要调试已发布的 Web Services，您可以向 Web.config 文件添加一个开关来控制由已发布 Web Services 返回的异常详细信息的级别。</span><span class="sxs-lookup"><span data-stu-id="48e53-104">To debug your published Web service, you can add a switch to the Web.config file to control the level of the exception details returned from the published Web service.</span></span>  
+  
+ <span data-ttu-id="48e53-105">Web.config 文件包含应用程序设置交换机， **ThrowDetailedError**。</span><span class="sxs-lookup"><span data-stu-id="48e53-105">The Web.config file contains an application setting switch, **ThrowDetailedError**.</span></span> <span data-ttu-id="48e53-106">**False**是默认设置**ThrowDetailedError**。</span><span class="sxs-lookup"><span data-stu-id="48e53-106">**False** is the default setting for **ThrowDetailedError**.</span></span> <span data-ttu-id="48e53-107">如果你将设置更改为**True**，服务器代理将内部异常信息返回给使你能够调试已发布的 Web 服务的 Web 客户端。</span><span class="sxs-lookup"><span data-stu-id="48e53-107">If you change the setting to **True**, the server proxy returns inner exception information to the Web client enabling you to debug the published Web service.</span></span>  
+  
+ <span data-ttu-id="48e53-108">下面的 XML 代码演示**ThrowDetailedError**下 Web.config 文件中出现的交换机\<appSettings > 节点：</span><span class="sxs-lookup"><span data-stu-id="48e53-108">The following XML code shows the **ThrowDetailedError** switch that appears in the Web.config file under the \<appSettings> node:</span></span>  
+  
+```  
+<appSettings>  
+  <add key="ThrowDetailedError" value="False" />  
+<appSettings/>  
+```  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="48e53-109">默认情况下 BizTalk Server 不会将内部异常信息返回至 Web 客户端，因为该信息可能包含诸如应用程序调用堆栈之类的敏感信息。</span><span class="sxs-lookup"><span data-stu-id="48e53-109">BizTalk Server does not return inner exception information to the Web client by default since it may contain sensitive information, such as application call stacks.</span></span> <span data-ttu-id="48e53-110">调试后，应设置**ThrowDetailedError**将设置为**False**。</span><span class="sxs-lookup"><span data-stu-id="48e53-110">After debugging, you should set the **ThrowDetailedError** setting to **False**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="48e53-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="48e53-111">See Also</span></span>  
+ [<span data-ttu-id="48e53-112">调试已发布的 Web 服务</span><span class="sxs-lookup"><span data-stu-id="48e53-112">Debugging Published Web Services</span></span>](../core/debugging-published-web-services.md)

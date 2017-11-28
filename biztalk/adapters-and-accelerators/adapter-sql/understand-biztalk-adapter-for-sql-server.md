@@ -1,0 +1,45 @@
+---
+title: "理解 SQL Server 的 BizTalk Adapter |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 302a7f20-ffa2-49f1-a4c4-dd713adc23e1
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ce5fdb7f3bcc6f0ef87a021db4375a90ce3be16d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="understand-biztalk-adapter-for-sql-server"></a><span data-ttu-id="04e32-102">理解 SQL Server 的 BizTalk Adapter</span><span class="sxs-lookup"><span data-stu-id="04e32-102">Understand BizTalk Adapter for SQL Server</span></span>
+<span data-ttu-id="04e32-103">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]实现使其可能与外部系统交互的面向服务的编程访问。</span><span class="sxs-lookup"><span data-stu-id="04e32-103">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] enables service-oriented programmatic access making it possible to interact with an external system.</span></span> <span data-ttu-id="04e32-104">适配器向客户端提供以下优势：</span><span class="sxs-lookup"><span data-stu-id="04e32-104">The adapters provide the following advantages to clients:</span></span>  
+  
+-   <span data-ttu-id="04e32-105">**一致的设计时体验**。</span><span class="sxs-lookup"><span data-stu-id="04e32-105">**Consistent design-time experience**.</span></span> <span data-ttu-id="04e32-106">适配器提供用于浏览、 搜索和检索元数据的 LOB 项目的设计时体验常见和用户友好。</span><span class="sxs-lookup"><span data-stu-id="04e32-106">The adapters provide a common and user-friendly design-time experience for browsing, searching, and retrieving metadata of LOB artifacts.</span></span>  
+  
+-   <span data-ttu-id="04e32-107">**各种编程选项**。</span><span class="sxs-lookup"><span data-stu-id="04e32-107">**Varied programming options**.</span></span> <span data-ttu-id="04e32-108">适配器均提供一种编程模型，包括 Windows Communication Foundation (WCF) 通道模型，WCF 服务模型中，ADO.NET 中，Web 服务，或 BizTalk 支持模型。</span><span class="sxs-lookup"><span data-stu-id="04e32-108">The adapters provide a choice of programming model including the Windows Communication Foundation (WCF) channel model, WCF service model, ADO.NET, Web services, or BizTalk supported models.</span></span>  
+  
+-   <span data-ttu-id="04e32-109">**跨 Lob 的统一体验**。</span><span class="sxs-lookup"><span data-stu-id="04e32-109">**Uniform experience across LOBs**.</span></span> <span data-ttu-id="04e32-110">适配器标准化上使用 WCF 和[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]，并因此提供统一的体验的获得对任何 LOB 系统的访问。</span><span class="sxs-lookup"><span data-stu-id="04e32-110">The adapters standardize on using WCF and the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)], and hence provide a uniform experience of gaining access to any LOB system.</span></span>  
+  
+ <span data-ttu-id="04e32-111">如前文所述，适配器均构建在之上[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="04e32-111">As mentioned, the adapters are built on top of the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="04e32-112">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]为生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器提供了常见的基础。</span><span class="sxs-lookup"><span data-stu-id="04e32-112">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] provides a common basis for building integration adapters that a variety of client applications such as BizTalk Server and Microsoft Office can consume.</span></span> <span data-ttu-id="04e32-113">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开集成适配器作为 Windows Communication Foundation (WCF) 通道结合适配器策略与 Microsoft 服务策略。</span><span class="sxs-lookup"><span data-stu-id="04e32-113">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] aligns the adapter strategy with the Microsoft Services strategy by exposing integration adapters as Windows Communication Foundation (WCF) channels.</span></span> <span data-ttu-id="04e32-114">有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。</span><span class="sxs-lookup"><span data-stu-id="04e32-114">For more information about the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], see the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation.</span></span> <span data-ttu-id="04e32-115">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<安装驱动器 >: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。</span><span class="sxs-lookup"><span data-stu-id="04e32-115">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation is installed along with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], typically under \<installation drive>:\Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents.</span></span>  
+  
+ <span data-ttu-id="04e32-116">若要执行 SQL Server 数据库上的操作，适配器客户端必须有权访问相关的表、 过程、 视图、 标量函数和表值的函数。</span><span class="sxs-lookup"><span data-stu-id="04e32-116">To perform operations on a SQL Server database, adapter clients must have access to relevant tables, procedures, views, scalar functions, and table valued functions.</span></span> <span data-ttu-id="04e32-117">数据库表是 SQL Server 数据库中存储的基本单元。</span><span class="sxs-lookup"><span data-stu-id="04e32-117">Database tables are the basic unit of storage in the SQL Server database.</span></span> <span data-ttu-id="04e32-118">外部应用程序可以选择、 插入、 删除和使用 SQL 语句更新表中的数据。</span><span class="sxs-lookup"><span data-stu-id="04e32-118">External applications can select, insert, delete, and update data from a table by using SQL statements.</span></span> <span data-ttu-id="04e32-119">应用程序还可以通过使用过程、 视图、 标量函数和表值函数访问表中的数据。</span><span class="sxs-lookup"><span data-stu-id="04e32-119">Applications can also access data in the tables by using procedures, views, scalar functions, and table valued functions.</span></span> <span data-ttu-id="04e32-120">与[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，适配器客户端可以浏览如表、 过程、 视图和其他此类项 SQL Server 数据库中的项目。</span><span class="sxs-lookup"><span data-stu-id="04e32-120">With [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)], adapter clients can browse artifacts such as tables, procedures, views, and other such items in a SQL Server database.</span></span> <span data-ttu-id="04e32-121">适配器客户端可以选择其解决方案，它们需要的项目，并检索这些项目的元数据。</span><span class="sxs-lookup"><span data-stu-id="04e32-121">Adapter clients can select the artifacts they require for their solution, and retrieve metadata for those artifacts.</span></span> <span data-ttu-id="04e32-122">这使用户可以访问和 SQL Server 数据库中执行的操作的项目。</span><span class="sxs-lookup"><span data-stu-id="04e32-122">This enables users to access and execute the operations on the artifacts in the SQL Server database.</span></span>  
+  
+ <span data-ttu-id="04e32-123">本部分列出的功能[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="04e32-123">This section lists the features of the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="04e32-124">本节内容</span><span class="sxs-lookup"><span data-stu-id="04e32-124">In This Section</span></span>  
+  
+-   [<span data-ttu-id="04e32-125">用于 SQL Server 的 BizTalk Adapter 的概述</span><span class="sxs-lookup"><span data-stu-id="04e32-125">Overview of BizTalk Adapter for SQL Server</span></span>](../../adapters-and-accelerators/adapter-sql/overview-of-biztalk-adapter-for-sql-server.md)  
+  
+-   [<span data-ttu-id="04e32-126">用于 SQL Server 的 BizTalk Adapter 中的主要功能</span><span class="sxs-lookup"><span data-stu-id="04e32-126">Key features in BizTalk Adapter for SQL Server</span></span>](../../adapters-and-accelerators/adapter-sql/key-features-in-biztalk-adapter-for-sql-server.md) 
+  
+-   [<span data-ttu-id="04e32-127">BizTalk Adapter for SQL Server 的限制</span><span class="sxs-lookup"><span data-stu-id="04e32-127">Limitations of BizTalk Adapter for SQL Server</span></span>](../../adapters-and-accelerators/adapter-sql/limitations-of-biztalk-adapter-for-sql-server.md)  
+  
+## <a name="see-also"></a><span data-ttu-id="04e32-128">另请参阅</span><span class="sxs-lookup"><span data-stu-id="04e32-128">See Also</span></span>  
+[<span data-ttu-id="04e32-129">开始使用 BizTalk adapter for SQL</span><span class="sxs-lookup"><span data-stu-id="04e32-129">Get started with the BizTalk adapter for SQL</span></span>](../../adapters-and-accelerators/adapter-sql/get-started-with-the-biztalk-adapter-for-sql.md)

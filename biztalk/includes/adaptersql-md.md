@@ -1,0 +1,1 @@
+<span data-ttu-id="0bad5-101">用于 SQL Server 的 Microsoft BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="0bad5-101">Microsoft BizTalk Adapter for SQL Server</span></span>

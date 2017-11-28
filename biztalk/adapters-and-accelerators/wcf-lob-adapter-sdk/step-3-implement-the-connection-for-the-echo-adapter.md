@@ -1,0 +1,337 @@
+---
+title: "步骤 3： 实现 Echo 适配器的连接 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
+caps.latest.revision: "22"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 0a735654fd03f5efb39fe73eb845f4db3632d283
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="step-3-implement-the-connection-for-the-echo-adapter"></a><span data-ttu-id="931de-102">步骤 3： 实现 Echo 适配器的连接</span><span class="sxs-lookup"><span data-stu-id="931de-102">Step 3: Implement the Connection for the Echo Adapter</span></span>
+<span data-ttu-id="931de-103">![步骤 3 中 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span><span class="sxs-lookup"><span data-stu-id="931de-103">![Step 3 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span></span>  
+  
+ <span data-ttu-id="931de-104">**完成时间：** 45 分钟</span><span class="sxs-lookup"><span data-stu-id="931de-104">**Time to complete:** 45 minutes</span></span>  
+  
+ <span data-ttu-id="931de-105">在此步骤中，你可以实现 Echo 适配器的连接功能。</span><span class="sxs-lookup"><span data-stu-id="931de-105">In this step, you implement the connection capability of the Echo adapter.</span></span> <span data-ttu-id="931de-106">根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，连接到目标系统时，则必须实现以下的抽象类和接口。</span><span class="sxs-lookup"><span data-stu-id="931de-106">According to the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], you must implement the following abstract class and interfaces when connecting to the target system.</span></span>  
+  
+-   `Microsoft.ServiceModel.Channels.Common.ConnectionUri`  
+  
+-   `Microsoft.ServiceModel.Channels.Common.IConnection`  
+  
+-   `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`  
+  
+ <span data-ttu-id="931de-107">而不是派生自上述抽象类和接口，[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成三个派生的类、 EchoAdapterConnection、 EchoAdapterConnectionUri 和 EchoAdapterConnectionFactory。</span><span class="sxs-lookup"><span data-stu-id="931de-107">Instead of deriving from the above abstract class and interfaces, the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the three derived classes, EchoAdapterConnection, EchoAdapterConnectionUri, and EchoAdapterConnectionFactory.</span></span> <span data-ttu-id="931de-108">除了创建类，每个已引发特定异常的默认方法`System.NotImplementedException`。</span><span class="sxs-lookup"><span data-stu-id="931de-108">In addition to creating the classes, each has a default method that throws a specific exception, `System.NotImplementedException`.</span></span>  <span data-ttu-id="931de-109">此语句提醒开发人员实现每个类。</span><span class="sxs-lookup"><span data-stu-id="931de-109">This statement reminds the developer to implement each class.</span></span>  <span data-ttu-id="931de-110">实现类时，必须删除此异常引发的语句。</span><span class="sxs-lookup"><span data-stu-id="931de-110">When the class is implemented, this exception-throwing statement must be removed.</span></span>  
+  
+ <span data-ttu-id="931de-111">在以下部分中，你将更新这些 3 个类来更好地理解如何处理连接、 URI 结构是什么，以及如何以编程方式检索各种 URI 元素，然后使用这些元素置于该适配器。</span><span class="sxs-lookup"><span data-stu-id="931de-111">In the following section, you update those three classes to get a better understanding of how to handle a connection, what the URI structure is, and how to programmatically retrieve various URI elements and then use those elements within the adapter.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="931de-112">先决条件</span><span class="sxs-lookup"><span data-stu-id="931de-112">Prerequisites</span></span>  
+ <span data-ttu-id="931de-113">在开始此步骤之前，你必须已成功完成[步骤 2： 对适配器和连接属性进行分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="931de-113">Before you begin this step, you must have successfully completed [Step 2: Categorize the Adapter and Connection Properties](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md).</span></span> <span data-ttu-id="931de-114">并且你应拥有清楚地了解`Microsoft.ServiceModel.Channels.Common.IConnection`， `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`，和`Microsoft.ServiceModel.Channels.Common.ConnectionUri`类。</span><span class="sxs-lookup"><span data-stu-id="931de-114">And you should have a clear understanding of the `Microsoft.ServiceModel.Channels.Common.IConnection`, `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`, and `Microsoft.ServiceModel.Channels.Common.ConnectionUri` classes.</span></span>  
+  
+## <a name="connection-related-classes"></a><span data-ttu-id="931de-115">连接相关的类</span><span class="sxs-lookup"><span data-stu-id="931de-115">Connection-Related Classes</span></span>  
+ <span data-ttu-id="931de-116">[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]生成三个派生的类、 EchoAdapterConnection、 EchoAdapterConnectionUri 和 EchoAdapterConnectionFactory。</span><span class="sxs-lookup"><span data-stu-id="931de-116">The [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] generates three derived classes, EchoAdapterConnection, EchoAdapterConnectionUri, and EchoAdapterConnectionFactory.</span></span> <span data-ttu-id="931de-117">下面提供与每个关联方法的简要概述。</span><span class="sxs-lookup"><span data-stu-id="931de-117">The following provides a brief overview of methods associated with each.</span></span>  
+  
+### <a name="echoadapterconnection"></a><span data-ttu-id="931de-118">EchoAdapterConnection</span><span class="sxs-lookup"><span data-stu-id="931de-118">EchoAdapterConnection</span></span>  
+ <span data-ttu-id="931de-119">根据你适配器复杂性，你可能需要实施所有以下五个方法。</span><span class="sxs-lookup"><span data-stu-id="931de-119">Depending on your adapter complexity, you might need to implement all of the following five methods.</span></span> <span data-ttu-id="931de-120">对于 Echo 适配器，大多数不支持，因为 Echo 适配器示例不涉及任何目标系统。</span><span class="sxs-lookup"><span data-stu-id="931de-120">For Echo adapter, most are not supported, because the Echo adapter sample does not involve any target system.</span></span>  
+  
+|<span data-ttu-id="931de-121">**方法**</span><span class="sxs-lookup"><span data-stu-id="931de-121">**Method**</span></span>|<span data-ttu-id="931de-122">**Description**</span><span class="sxs-lookup"><span data-stu-id="931de-122">**Description**</span></span>|  
+|----------------|---------------------|  
+|<span data-ttu-id="931de-123">公共 void 关闭 （TimeSpan 超时）</span><span class="sxs-lookup"><span data-stu-id="931de-123">public void Close(TimeSpan timeout)</span></span>|<span data-ttu-id="931de-124">关闭到目标系统的连接。</span><span class="sxs-lookup"><span data-stu-id="931de-124">Closes the connection to the target system.</span></span> <span data-ttu-id="931de-125">Echo 适配器使用此方法仅将跟踪事件添加到跟踪侦听器。</span><span class="sxs-lookup"><span data-stu-id="931de-125">The Echo adapter uses this method to only add trace events to the trace listener.</span></span>|  
+|<span data-ttu-id="931de-126">公共 bool IsValid （TimeSpan 超时）</span><span class="sxs-lookup"><span data-stu-id="931de-126">public bool IsValid(TimeSpan timeout)</span></span>|<span data-ttu-id="931de-127">返回一个值，该值指示连接是否仍有效。</span><span class="sxs-lookup"><span data-stu-id="931de-127">Returns a value indicating whether the connection is still valid.</span></span><br /><br /> <span data-ttu-id="931de-128">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="931de-128">Not supported by the Echo adapter.</span></span>|  
+|<span data-ttu-id="931de-129">公共 void 打开 （TimeSpan 超时）</span><span class="sxs-lookup"><span data-stu-id="931de-129">public void Open(TimeSpan timeout)</span></span>|<span data-ttu-id="931de-130">打开连接到目标系统。</span><span class="sxs-lookup"><span data-stu-id="931de-130">Opens the connection to the target system.</span></span><br /><br /> <span data-ttu-id="931de-131">Echo 适配器的不适用。</span><span class="sxs-lookup"><span data-stu-id="931de-131">N/A for the Echo adapter.</span></span> <span data-ttu-id="931de-132">但是，该示例显示您如何使用 URI 元素调用 enableAuthentication 来要求用户提供的用户名。</span><span class="sxs-lookup"><span data-stu-id="931de-132">However, the example shows you how to use a URI element called enableAuthentication to require users to provide a user name.</span></span>|  
+|<span data-ttu-id="931de-133">公共 void ClearContext()</span><span class="sxs-lookup"><span data-stu-id="931de-133">public void ClearContext()</span></span>|<span data-ttu-id="931de-134">清除连接的上下文。</span><span class="sxs-lookup"><span data-stu-id="931de-134">Clears the context of the connection.</span></span> <span data-ttu-id="931de-135">返回到连接池设置的连接时，调用此方法。</span><span class="sxs-lookup"><span data-stu-id="931de-135">This method is called when the connection is set back to the connection pool.</span></span><br /><br /> <span data-ttu-id="931de-136">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="931de-136">Not supported by the Echo adapter.</span></span>|  
+|<span data-ttu-id="931de-137">公共 void abort （)</span><span class="sxs-lookup"><span data-stu-id="931de-137">public void Abort()</span></span>|<span data-ttu-id="931de-138">中止连接到目标系统。</span><span class="sxs-lookup"><span data-stu-id="931de-138">Aborts the connection to the target system.</span></span><br /><br /> <span data-ttu-id="931de-139">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="931de-139">Not supported by the Echo adapter.</span></span>|  
+  
+### <a name="echoadapterconnectionfactory"></a><span data-ttu-id="931de-140">EchoAdapterConnectionFactory</span><span class="sxs-lookup"><span data-stu-id="931de-140">EchoAdapterConnectionFactory</span></span>  
+ <span data-ttu-id="931de-141">连接工厂负责创建连接。</span><span class="sxs-lookup"><span data-stu-id="931de-141">The connection factory is responsible for creating the connection.</span></span> <span data-ttu-id="931de-142">仅在连接到目标系统时，默认情况下，你必须修改此类。</span><span class="sxs-lookup"><span data-stu-id="931de-142">By default, you must modify this class only when connecting to a target system.</span></span> <span data-ttu-id="931de-143">尽管 Echo 适配器不涉及任何目标系统，它演示如何使用自定义 URI 元素调用 enableAuthentication，如果你的连接需要用户身份验证。</span><span class="sxs-lookup"><span data-stu-id="931de-143">Although the Echo adapter does not involve any target system, it shows you how to use a custom URI element called enableAuthentication if your connection requires user authentication.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="931de-144">EnableAuthentication 不是一个关键字，它是只是变量的名称。</span><span class="sxs-lookup"><span data-stu-id="931de-144">The enableAuthentication is not a keyword, it is just a variable name.</span></span> <span data-ttu-id="931de-145">因此，您可以选择为其任何名称。</span><span class="sxs-lookup"><span data-stu-id="931de-145">Hence, you can choose any name for it.</span></span>  
+  
+### <a name="echoadapterconnectionuri"></a><span data-ttu-id="931de-146">EchoAdapterConnectionUri</span><span class="sxs-lookup"><span data-stu-id="931de-146">EchoAdapterConnectionUri</span></span>  
+ <span data-ttu-id="931de-147">这表示到目标系统的连接字符串。</span><span class="sxs-lookup"><span data-stu-id="931de-147">This represents a connection string to the target system.</span></span>  
+  
+|<span data-ttu-id="931de-148">**方法**</span><span class="sxs-lookup"><span data-stu-id="931de-148">**Method**</span></span>|<span data-ttu-id="931de-149">**Description**</span><span class="sxs-lookup"><span data-stu-id="931de-149">**Description**</span></span>|  
+|----------------|---------------------|  
+|<span data-ttu-id="931de-150">公共重写 Uri Uri</span><span class="sxs-lookup"><span data-stu-id="931de-150">public override Uri Uri</span></span>|<span data-ttu-id="931de-151">获取和设置的 Uri。</span><span class="sxs-lookup"><span data-stu-id="931de-151">Gets and sets the Uri.</span></span> <span data-ttu-id="931de-152">获取生成的 Uri 字符串和设置要分析的 Uri 字符串。</span><span class="sxs-lookup"><span data-stu-id="931de-152">Gets to build the Uri string and sets to parse the Uri string.</span></span>|  
+|<span data-ttu-id="931de-153">公共 EchoAdapterConnectionUri()</span><span class="sxs-lookup"><span data-stu-id="931de-153">public EchoAdapterConnectionUri()</span></span>|<span data-ttu-id="931de-154">初始化 ConnectionUri 类的新实例。</span><span class="sxs-lookup"><span data-stu-id="931de-154">Initializes a new instance of the ConnectionUri class.</span></span>|  
+|<span data-ttu-id="931de-155">公共重写字符串 SampleUriString</span><span class="sxs-lookup"><span data-stu-id="931de-155">public override string SampleUriString</span></span>|<span data-ttu-id="931de-156">返回 EchoAdapter.SCHEME +": //{hostname}/{application}?enableAuthentication={True &#124;False}"。</span><span class="sxs-lookup"><span data-stu-id="931de-156">Returns EchoAdapter.SCHEME + "://{hostname}/{application}?enableAuthentication={True&#124;False}".</span></span><br /><br /> <span data-ttu-id="931de-157">此返回的字符串将显示为**示例**中[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，如下图中所示。</span><span class="sxs-lookup"><span data-stu-id="931de-157">This return string displays as the **Example** in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, as shown in the following figure.</span></span>|  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
+  
+## <a name="echo-adapter-connection-uri"></a><span data-ttu-id="931de-158">Echo 适配器连接 URI</span><span class="sxs-lookup"><span data-stu-id="931de-158">Echo Adapter Connection URI</span></span>  
+ <span data-ttu-id="931de-159">示例 Echo 适配器连接 URI 被描述为： EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true &#124; 否则为 false}</span><span class="sxs-lookup"><span data-stu-id="931de-159">The sample Echo adapter connection URI is described as: EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}</span></span>  
+  
+ <span data-ttu-id="931de-160">由于 EchoAapter.SCHEME 是 echov2，连接 URI 为着：</span><span class="sxs-lookup"><span data-stu-id="931de-160">Since the EchoAapter.SCHEME is echov2, the connection URI is:</span></span>  
+  
+ <span data-ttu-id="931de-161">echo2: / lobhostname/lobapplication？ enableAuthentication = {true &#124; 否则为 false}</span><span class="sxs-lookup"><span data-stu-id="931de-161">echo2://lobhostname/lobapplication?enableAuthentication={true&#124;false}</span></span>  
+  
+ <span data-ttu-id="931de-162">你可以阅读前一连接 URI 时 enableAuthentication = false，如下所示：</span><span class="sxs-lookup"><span data-stu-id="931de-162">You can read the previous connection URI when enableAuthentication=false as follows:</span></span>  
+  
+ <span data-ttu-id="931de-163">使用 echov2 传输架构，转到名为 lobhostname 的计算机名为不需要任何身份验证的 lobapplication 应用程序正在等待你的连接。</span><span class="sxs-lookup"><span data-stu-id="931de-163">Using the echov2 transport schema, go to a computer named lobhostname, where an application named lobapplication that does not require any authentication is waiting for your connection.</span></span>  
+  
+ <span data-ttu-id="931de-164">或者，当 enableAuthentication = true，读取连接，如下所示：</span><span class="sxs-lookup"><span data-stu-id="931de-164">Or, when enableAuthentication=true, read the connection as follows:</span></span>  
+  
+ <span data-ttu-id="931de-165">使用 echov2 传输架构，转到名为 lobhostname 的计算机名为 lobapplication 应用程序需要身份验证正在等待你的连接。</span><span class="sxs-lookup"><span data-stu-id="931de-165">Using the echov2 transport schema, go to a computer named lobhostname, where an application named lobapplication expects that authentication is waiting for your connection.</span></span> <span data-ttu-id="931de-166">对于 Echo 适配器中，仅包含用户名称是必需的。</span><span class="sxs-lookup"><span data-stu-id="931de-166">For the Echo adapter, only a user name is required.</span></span>  
+  
+ <span data-ttu-id="931de-167">具有定义的 URI，可以以编程方式使用和分析的连接和配置。</span><span class="sxs-lookup"><span data-stu-id="931de-167">With a defined URI, you can programmatically consume and parse it for connectivity and configuration.</span></span> <span data-ttu-id="931de-168">如果连接需要用户名和密码等敏感数据，不包含 URI 中的此类信息。</span><span class="sxs-lookup"><span data-stu-id="931de-168">If the connection requires sensitive data such as a user name and password, do not contain such information in the URI.</span></span> <span data-ttu-id="931de-169">相反，请添加中的此类信息`System.ServiceModel.Description.ClientCredentials`对象。</span><span class="sxs-lookup"><span data-stu-id="931de-169">Instead, add such information in the `System.ServiceModel.Description.ClientCredentials` object.</span></span> <span data-ttu-id="931de-170">你添加的代码示例演示如何执行此操作。</span><span class="sxs-lookup"><span data-stu-id="931de-170">The code example that you add shows you how to do so.</span></span>  
+  
+ <span data-ttu-id="931de-171">在下面的代码中，Echo 适配器构造以两种方式显示该适配器可以如何使用各种 URI 元素来修改适配器功能的 URI。</span><span class="sxs-lookup"><span data-stu-id="931de-171">In the following code, the Echo adapter constructs the URI in two ways to show you how the adapter can use various URI elements to modify the adapter feature.</span></span>  
+  
+ <span data-ttu-id="931de-172">echo2: / lobhostname/lobapplication？ enableAuthentication = [true &#124; 否则为 false]</span><span class="sxs-lookup"><span data-stu-id="931de-172">echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]</span></span>  
+  
+ <span data-ttu-id="931de-173">echo2: / lobhostname/lobapplication？ enableAuthentication = [true &#124; 否则为 false] & echoInUpperCase = true</span><span class="sxs-lookup"><span data-stu-id="931de-173">echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]&echoInUpperCase=true</span></span>  
+  
+### <a name="retrieving-the-uri-element"></a><span data-ttu-id="931de-174">在检索 URI 元素</span><span class="sxs-lookup"><span data-stu-id="931de-174">Retrieving the URI Element</span></span>  
+ <span data-ttu-id="931de-175">你可以分析每个 URI 元素中的 Echo 适配器 URI echo2: / lobhostname/lobapplication？ enableAuthentication = false echoInUpperCase = false。</span><span class="sxs-lookup"><span data-stu-id="931de-175">You can parse each URI element in the Echo adapter URI echo2://lobhostname/lobapplication?enableAuthentication=false&echoInUpperCase=false.</span></span>  <span data-ttu-id="931de-176">下表中列出了 URI 的元素值和关联的方法：</span><span class="sxs-lookup"><span data-stu-id="931de-176">The URI element values and associated methods are listed in the following table:</span></span>  
+  
+|<span data-ttu-id="931de-177">**URI 元素值**</span><span class="sxs-lookup"><span data-stu-id="931de-177">**URI Element Value**</span></span>|<span data-ttu-id="931de-178">**方法**</span><span class="sxs-lookup"><span data-stu-id="931de-178">**Method**</span></span>|  
+|---------------------------|----------------|  
+|<span data-ttu-id="931de-179">lobhostname</span><span class="sxs-lookup"><span data-stu-id="931de-179">lobhostname</span></span>|<span data-ttu-id="931de-180">`System.Uri.Host%2A`若要检索的主机名</span><span class="sxs-lookup"><span data-stu-id="931de-180">`System.Uri.Host%2A` to retrieve the host name</span></span>|  
+|<span data-ttu-id="931de-181">Lobapplication</span><span class="sxs-lookup"><span data-stu-id="931de-181">Lobapplication</span></span>|<span data-ttu-id="931de-182">`System.Uri.AbsolutePath%2A`若要检索的目标应用程序名称</span><span class="sxs-lookup"><span data-stu-id="931de-182">`System.Uri.AbsolutePath%2A` to retrieve the target application name</span></span>|  
+|<span data-ttu-id="931de-183">enableAuthentation = false</span><span class="sxs-lookup"><span data-stu-id="931de-183">enableAuthentation=false</span></span>|<span data-ttu-id="931de-184">GetQueryStringValue("enableAuthentication")</span><span class="sxs-lookup"><span data-stu-id="931de-184">GetQueryStringValue("enableAuthentication")</span></span><br /><br /> <span data-ttu-id="931de-185">使用此 URI 元素来验证用户凭据**注意：** GetQueryStringValue 是中定义的静态方法`Microsoft.ServiceModel.Channels.Common.ConnectionUri`</span><span class="sxs-lookup"><span data-stu-id="931de-185">Use this URI element to validate user credentials **Note:**  GetQueryStringValue is a static method defined in the `Microsoft.ServiceModel.Channels.Common.ConnectionUri`</span></span>|  
+|<span data-ttu-id="931de-186">echoInUpperValue = false</span><span class="sxs-lookup"><span data-stu-id="931de-186">echoInUpperValue=false</span></span>|<span data-ttu-id="931de-187">GetQueryStringValue("echoInUpperValue")</span><span class="sxs-lookup"><span data-stu-id="931de-187">GetQueryStringValue("echoInUpperValue")</span></span><br /><br /> <span data-ttu-id="931de-188">使用此 URI 元素将传入的字符串转换为大写形式。</span><span class="sxs-lookup"><span data-stu-id="931de-188">Use this URI element to convert the incoming string to upper case.</span></span>|  
+  
+### <a name="enableauthentication-uri-element"></a><span data-ttu-id="931de-189">EnableAuthentication URI 元素</span><span class="sxs-lookup"><span data-stu-id="931de-189">EnableAuthentication URI Element</span></span>  
+ <span data-ttu-id="931de-190">目标系统通常要求你提供用于建立到目标系统的连接的客户端凭据。</span><span class="sxs-lookup"><span data-stu-id="931de-190">Your target system often requires you to provide client credentials to establish a connection to the target system.</span></span> <span data-ttu-id="931de-191">如前文所述，Echo 适配器不涉及任何目标系统。</span><span class="sxs-lookup"><span data-stu-id="931de-191">As mentioned, the Echo adapter does not involve any target system.</span></span> <span data-ttu-id="931de-192">作为示例，但它演示如何使用自定义 URI 元素调用 enableAuthentication 提供的凭据。</span><span class="sxs-lookup"><span data-stu-id="931de-192">Though as a sample, it shows how to use a custom URI element called enableAuthentication to provide the credentials.</span></span>  
+  
+```  
+ public class EchoAdapterConnection : IConnection   
+{  
+….  
+   public void Open(TimeSpan timeout)  
+  {  
+    // only validate the credentials if EnableAuthentication  
+    // connection property value is true  
+    if (this.ConnectionFactory.ConnectionUri.EnableAuthentication)  
+    {  
+        // this adapter expects a value in username  
+        if (this.connectionFactory.ClientCredentials != null &&  
+            string.IsNullOrEmpty(this.connectionFactory.ClientCredentials.UserName.UserName))  
+        {  
+            throw new CredentialsException("Username is expected.");  
+        }  
+  }  
+}  
+```  
+  
+ <span data-ttu-id="931de-193">代码将检查是否 enableAuthentication 是 true，如果未提供的用户名;如果未提供的用户名称，它将引发异常，由捕获[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，如下所示：</span><span class="sxs-lookup"><span data-stu-id="931de-193">The code checks to see if enableAuthentication is true and if a user name is not provided; if a user name is not provided, it throws an exception, which is caught by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, as shown below:</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/901095c7-c70d-491a-a1ae-8f37f22a61a7.gif "901095c7-c70d-491a-a1ae-8f37f22a61a7")  
+  
+ <span data-ttu-id="931de-194">若要提供的用户名，则可以输入它在配置适配器对话框中[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，如下图中所示：</span><span class="sxs-lookup"><span data-stu-id="931de-194">To provide the user name, you can enter it in the Configure Adapter dialog box in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, as shown in the following figure:</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4069a7d-1403-4195-b0b5-21ad97dbc3ce.gif "e4069a7d-1403-4195-b0b5-21ad97dbc3ce")  
+  
+### <a name="echoinuppercase-uri-element"></a><span data-ttu-id="931de-195">EchoInUpperCase URI 元素</span><span class="sxs-lookup"><span data-stu-id="931de-195">EchoInUpperCase URI Element</span></span>  
+ <span data-ttu-id="931de-196">可以像一个布尔型标志一样引用 EchoInUpperCase URI 元素。</span><span class="sxs-lookup"><span data-stu-id="931de-196">The EchoInUpperCase URI element can be referenced like a Boolean flag.</span></span> <span data-ttu-id="931de-197">如果标志为 true，该适配器将 EchoStrings 操作的输入的字符串转换为大写形式中。</span><span class="sxs-lookup"><span data-stu-id="931de-197">If the flag is true, then the adapter converts the input string of the EchoStrings operation to uppercase.</span></span>  
+  
+ <span data-ttu-id="931de-198">若要更改 echoInUpperCase URI 元素的默认值，使用中的配置适配器的 URI 属性选项卡[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，如下所示。</span><span class="sxs-lookup"><span data-stu-id="931de-198">To change the default value of the echoInUpperCase URI element, use the URI Properties tab of the Configure Adapter in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], as shown below.</span></span>  
+  
+ ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/f22511b2-3fca-4875-ac65-8e61f4367e94.gif "f22511b2-3fca-4875-ac65-8e61f4367e94")  
+  
+## <a name="updating-echoadapterconnection"></a><span data-ttu-id="931de-199">更新 EchoAdapterConnection</span><span class="sxs-lookup"><span data-stu-id="931de-199">Updating EchoAdapterConnection</span></span>  
+ <span data-ttu-id="931de-200">实现 EchoAdapterConnection 类的 IsValid、 打开和关闭方法。</span><span class="sxs-lookup"><span data-stu-id="931de-200">You implement the IsValid, Open, and Close method of the EchoAdapterConnection class.</span></span>  
+  
+#### <a name="to-update-the-echoadapterconnection-class"></a><span data-ttu-id="931de-201">若要更新 EchoAdapterConnection 类</span><span class="sxs-lookup"><span data-stu-id="931de-201">To update the EchoAdapterConnection class</span></span>  
+  
+1.  <span data-ttu-id="931de-202">在**解决方案资源管理器**，双击**EchoAdapterConnection.cs**文件。</span><span class="sxs-lookup"><span data-stu-id="931de-202">In **Solution Explorer**, double-click the **EchoAdapterConnection.cs** file.</span></span>  
+  
+2.  <span data-ttu-id="931de-203">在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。</span><span class="sxs-lookup"><span data-stu-id="931de-203">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
+  
+3.  <span data-ttu-id="931de-204">在 Visual Studio 编辑器中，查找**IsValid**方法。</span><span class="sxs-lookup"><span data-stu-id="931de-204">In the Visual Studio editor, find the **IsValid** method.</span></span> <span data-ttu-id="931de-205">内部**IsValid**方法，将现有实现替换所示：</span><span class="sxs-lookup"><span data-stu-id="931de-205">Inside the **IsValid** method, replace the existing implementation with the one below:</span></span>  
+  
+    ```csharp  
+    return true;  
+    ```  
+  
+4.  <span data-ttu-id="931de-206">在 Visual Studio 编辑器中，查找**打开**方法。</span><span class="sxs-lookup"><span data-stu-id="931de-206">In the Visual Studio editor, find the **Open** method.</span></span> <span data-ttu-id="931de-207">内部**打开**方法，将现有实现替换为以下实现。</span><span class="sxs-lookup"><span data-stu-id="931de-207">Inside the **Open** method, replace the existing implementation with the following implementation.</span></span> <span data-ttu-id="931de-208">这将向你展示如何使用 URI enableAuthentication 元素以确保提供的用户名：</span><span class="sxs-lookup"><span data-stu-id="931de-208">This shows you how to use the URI enableAuthentication element to ensure user  name is provided:</span></span>  
+  
+    ```csharp  
+    // only validate the credentials if EnableAuthentication  
+    // connection property value is true  
+    if (this.ConnectionFactory.ConnectionUri.EnableAuthentication)  
+    {  
+        // this adapter expects a value in username  
+        // it just logs the credentials in the trace file  
+        if (this.connectionFactory.ClientCredentials != null &&  
+            string.IsNullOrEmpty(this.connectionFactory.ClientCredentials.UserName.UserName))  
+        {  
+            throw new CredentialsException("Username is expected.");  
+        }  
+        // got the username, log it in trace file  
+        EchoAdapterUtilities.Trace.Trace(System.Diagnostics.TraceEventType.Information, "EchoAdapterConnection::Open", "Username is " + this.connectionFactory.ClientCredentials.UserName.UserName);  
+    }  
+    EchoAdapterUtilities.Trace.Trace(System.Diagnostics.TraceEventType.Information, "EchoAdapterConnection::Open", "Connection successfully established!");  
+    ```  
+  
+5.  <span data-ttu-id="931de-209">在 Visual Studio 编辑器中，查找**关闭**方法。</span><span class="sxs-lookup"><span data-stu-id="931de-209">In the Visual Studio editor, find the **Close** method.</span></span> <span data-ttu-id="931de-210">内部**关闭**方法，添加下面的单个语句：</span><span class="sxs-lookup"><span data-stu-id="931de-210">Inside the **Close** method, add the following single statement:</span></span>  
+  
+    ```csharp  
+    EchoAdapterUtilities.Trace.Trace(System.Diagnostics.TraceEventType.Information, "EchoAdapterConnection::Close", "Connection successfully closed!");  
+    ```  
+  
+## <a name="updating-the-echoadapterconnectionfactory"></a><span data-ttu-id="931de-211">更新 EchoAdapterConnectionFactory</span><span class="sxs-lookup"><span data-stu-id="931de-211">Updating the EchoAdapterConnectionFactory</span></span>  
+ <span data-ttu-id="931de-212">实现 EchoAdapterConnectionFactory 构造函数，并添加称为 ClientCredentials 和 ConnectionUri 的两个属性。</span><span class="sxs-lookup"><span data-stu-id="931de-212">You implement EchoAdapterConnectionFactory constructor, and add two properties called ClientCredentials and ConnectionUri.</span></span>  
+  
+#### <a name="to-update-the-echoadapterconnectionfactory-class"></a><span data-ttu-id="931de-213">若要更新 EchoAdapterConnectionFactory 类</span><span class="sxs-lookup"><span data-stu-id="931de-213">To update the EchoAdapterConnectionFactory class</span></span>  
+  
+1.  <span data-ttu-id="931de-214">在**解决方案资源管理器**，双击**EchoAdapterConnectionFactory.cs**文件。</span><span class="sxs-lookup"><span data-stu-id="931de-214">In **Solution Explorer**, double-click the **EchoAdapterConnectionFactory.cs** file.</span></span>  
+  
+2.  <span data-ttu-id="931de-215">在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。</span><span class="sxs-lookup"><span data-stu-id="931de-215">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
+  
+3.  <span data-ttu-id="931de-216">在 Visual Studio 编辑器中，查找**私有字段**区域。</span><span class="sxs-lookup"><span data-stu-id="931de-216">In the Visual Studio editor, find the **Private Fields** region.</span></span> <span data-ttu-id="931de-217">添加下面的单个语句：</span><span class="sxs-lookup"><span data-stu-id="931de-217">Add the following single statement:</span></span>  
+  
+    ```csharp  
+    private EchoAdapterConnectionUri connectionUri;  
+    ```  
+  
+     <span data-ttu-id="931de-218">你的私有字段的列表应该匹配以下项：</span><span class="sxs-lookup"><span data-stu-id="931de-218">Your list of private fields should match the following:</span></span>  
+  
+    ```csharp  
+    // Stores the client credentials  
+    private ClientCredentials clientCredentials;  
+    // Stores the adapter class  
+    private EchoAdapter adapter;  
+    private EchoAdapterConnectionUri connectionUri;  
+    ```  
+  
+4.  <span data-ttu-id="931de-219">在 Visual Studio 编辑器中，查找**EchoAdapterConnectionFactory**方法。</span><span class="sxs-lookup"><span data-stu-id="931de-219">In the Visual Studio editor, find the **EchoAdapterConnectionFactory** method.</span></span> <span data-ttu-id="931de-220">内部**EchoAdapterConnectionFactory**构造函数方法之前"}"，添加下面的单个语句作为最后一条语句。</span><span class="sxs-lookup"><span data-stu-id="931de-220">Inside the **EchoAdapterConnectionFactory** constructor method, before "}", add the following single statement as the last statement.</span></span>  
+  
+    ```csharp  
+    this.connectionUri = connectionUri as EchoAdapterConnectionUri;  
+    ```  
+  
+     <span data-ttu-id="931de-221">实现**EchoAdapterConnectionFactory**方法应匹配以下内容：</span><span class="sxs-lookup"><span data-stu-id="931de-221">The implementation of the **EchoAdapterConnectionFactory** method should match the following:</span></span>  
+  
+    ```csharp  
+    /// <summary>  
+    /// Initializes a new instance of the EchoAdapterConnectionFactory class  
+    /// </summary>  
+    public EchoAdapterConnectionFactory(ConnectionUri connectionUri  
+        , ClientCredentials clientCredentials  
+        , EchoAdapter adapter)  
+    {  
+        this.clientCredentials = clientCredentials;  
+        this.adapter = adapter;  
+        //added  
+        this.connectionUri = connectionUri as EchoAdapterConnectionUri;  
+    }  
+    ```  
+  
+5.  <span data-ttu-id="931de-222">在 Visual Studio 编辑器中，查找**公共属性**区域。</span><span class="sxs-lookup"><span data-stu-id="931de-222">In the Visual Studio editor, find the **Public Properties** region.</span></span> <span data-ttu-id="931de-223">添加以下代码：</span><span class="sxs-lookup"><span data-stu-id="931de-223">Add the following code:</span></span>  
+  
+    ```csharp  
+    /// <summary>  
+    /// Returns the client credentials  
+    /// </summary>  
+    public ClientCredentials ClientCredentials  
+    {  
+        get  
+        {  
+            return this.clientCredentials;  
+        }  
+    }  
+  
+    /// <summary>  
+    /// Returns the Connection Uri for this adapter  
+    /// </summary>  
+    public EchoAdapterConnectionUri ConnectionUri  
+    {  
+        get  
+        {  
+            return this.connectionUri;  
+        }  
+    }  
+    ```  
+  
+## <a name="updating-the-echoadapterconnectionuri"></a><span data-ttu-id="931de-224">更新 EchoAdapterConnectionUri</span><span class="sxs-lookup"><span data-stu-id="931de-224">Updating the EchoAdapterConnectionUri</span></span>  
+ <span data-ttu-id="931de-225">实现 EchoAdapterConnectionUri 默认构造函数、 EchoAdapterConnectionUri(Uri uri) 重载构造函数和公共重写 Uri Uri 属性。</span><span class="sxs-lookup"><span data-stu-id="931de-225">You implement the EchoAdapterConnectionUri default constructor, EchoAdapterConnectionUri(Uri uri) overloaded constructor, and the public override Uri Uri property.</span></span>  
+  
+#### <a name="to-update-the-echoadapterconnectionuri-class"></a><span data-ttu-id="931de-226">若要更新 EchoAdapterConnectionUri 类</span><span class="sxs-lookup"><span data-stu-id="931de-226">To update the EchoAdapterConnectionUri class</span></span>  
+  
+1.  <span data-ttu-id="931de-227">在**解决方案资源管理器**，双击**EchoAdapterConnectionUri.cs**文件。</span><span class="sxs-lookup"><span data-stu-id="931de-227">In **Solution Explorer**, double-click the **EchoAdapterConnectionUri.cs** file.</span></span>  
+  
+2.  <span data-ttu-id="931de-228">在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。</span><span class="sxs-lookup"><span data-stu-id="931de-228">In the Visual Studio editor, right-click anywhere within the editor, in the context menu, point to **Outlining**, and then click **Stop Outlining**.</span></span>  
+  
+3.  <span data-ttu-id="931de-229">在 Visual Studio 编辑器中，查找**构造函数**区域。</span><span class="sxs-lookup"><span data-stu-id="931de-229">In the Visual Studio editor, find the **Constructors** region.</span></span> <span data-ttu-id="931de-230">内部**EchoAdapterConnectionUri()**默认构造函数中，添加以下语句：</span><span class="sxs-lookup"><span data-stu-id="931de-230">Inside the **EchoAdapterConnectionUri()** default constructor, add the following statement:</span></span>  
+  
+    ```csharp  
+    Uri = new Uri("echov2://lobhostname/lobapplication?enableauthentication=False");  
+    ```  
+  
+4.  <span data-ttu-id="931de-231">在 Visual Studio 编辑器中，内部**EchoAdapterConnectionUri (Uri uri)**重载构造函数，并添加以下语句：</span><span class="sxs-lookup"><span data-stu-id="931de-231">In the Visual Studio editor, inside the **EchoAdapterConnectionUri(Uri uri)** overloaded constructor, and add the following statement:</span></span>  
+  
+    ```csharp  
+    Uri = uri;  
+    ```  
+  
+     <span data-ttu-id="931de-232">EchoAdapterConnectionUri(Uri uri) 方法的实现应匹配以下项：</span><span class="sxs-lookup"><span data-stu-id="931de-232">Your implementation of the EchoAdapterConnectionUri(Uri uri) method should match the following:</span></span>  
+  
+    ```csharp  
+    public EchoAdapterConnectionUri(Uri uri)  
+        : base()  
+    {  
+        Uri = uri;  
+    }  
+    ```  
+  
+5.  <span data-ttu-id="931de-233">在 Visual Studio 编辑器中，内部**公共重写 Uri Uri**方法，将现有具有以下逻辑。</span><span class="sxs-lookup"><span data-stu-id="931de-233">In the Visual Studio editor, inside the **public override Uri Uri** method, replace the existing with the following logic.</span></span> <span data-ttu-id="931de-234">Get 生成 echoInUpperCase 带有或不带它的 Uri。</span><span class="sxs-lookup"><span data-stu-id="931de-234">The get builds the Uri with echoInUpperCase or without it.</span></span> <span data-ttu-id="931de-235">集分析的 URI 来检索主机名、 数据库名称和查询值。</span><span class="sxs-lookup"><span data-stu-id="931de-235">The set parses the URI to retrieve host name, database name, and query values.</span></span>  
+  
+    ```csharp  
+    get  
+    {  
+        // Build the uri  
+        if (String.IsNullOrEmpty(this.hostname)) throw new InvalidUriException("Invalid target system host name.");  
+        if (String.IsNullOrEmpty(this.application)) throw new InvalidUriException("Invalid target system data source name.");  
+        if (EchoInUpperCase)  
+        {  
+            // build the uri with echoInUpperCase= query string  
+            return new Uri(EchoAdapter.SCHEME + "://" + Hostname + "/" + Application + "?" + "enableAuthentication=" + EnableAuthentication + "&" + "echoInUpperCase=" + echoInUpperCase);  
+        }  
+        else  
+        {  
+            // build the uri without echoInUpperCase= query string  
+            return new Uri(EchoAdapter.SCHEME + "://" + Hostname + "/" + Application + "?" + "enableAuthentication=" + EnableAuthentication);  
+        }  
+    }  
+    set  
+    {  
+        // Parse the uri  
+        String[] enableAuthValue = GetQueryStringValue(value, "enableAuthentication");  
+        if (enableAuthValue.Length > 0) this.enableAuthentication = Boolean.Parse(enableAuthValue[0]);  
+        String[] echoInUpperValue = GetQueryStringValue(value, "echoInUpperCase");  
+        if (echoInUpperValue.Length > 0) this.echoInUpperCase = Boolean.Parse(echoInUpperValue[0]);  
+  
+        this.hostname = value.Host;  
+        String[] applicationValue = value.AbsolutePath.Split('/');  
+        if (applicationValue.Length > 1) this.Application = applicationValue[1];  
+    }  
+    ```  
+  
+6.  <span data-ttu-id="931de-236">在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。</span><span class="sxs-lookup"><span data-stu-id="931de-236">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
+  
+7.  <span data-ttu-id="931de-237">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="931de-237">On the **Build** menu, click **Build Solution**.</span></span> <span data-ttu-id="931de-238">你应已成功编译该项目。</span><span class="sxs-lookup"><span data-stu-id="931de-238">You should successfully compile the project.</span></span> <span data-ttu-id="931de-239">如果没有，请确保您已按照上述每个步骤。</span><span class="sxs-lookup"><span data-stu-id="931de-239">If not, ensure that you have followed every step above.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="931de-240">保存所做的工作。</span><span class="sxs-lookup"><span data-stu-id="931de-240">You saved your work.</span></span> <span data-ttu-id="931de-241">你可以安全地在此时关闭 Visual Studio 或转到下一步，[步骤 4： 为 Echo 适配器实现的元数据浏览处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="931de-241">You can safely close Visual Studio at this time or go to the next step, [Step 4: Implement the Metadata Browse Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md).</span></span>  
+  
+## <a name="what-did-i-just-do"></a><span data-ttu-id="931de-242">未我只需做什么？</span><span class="sxs-lookup"><span data-stu-id="931de-242">What Did I Just Do?</span></span>  
+ <span data-ttu-id="931de-243">实现 Echo 适配器的连接。</span><span class="sxs-lookup"><span data-stu-id="931de-243">You implemented the connection for the Echo adapter.</span></span> <span data-ttu-id="931de-244">你已了解的连接组件[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、 连接 URI 的基本结构、 如何以编程方式分析 URI 元素中，以及如何使用 URI 元素更改适配器功能。</span><span class="sxs-lookup"><span data-stu-id="931de-244">You learned the connection components of the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], the basic structure of the connection URI, how to programmatically parse the URI elements, and how you can use the URI element to change the adapter feature.</span></span>  
+  
+## <a name="next-steps"></a><span data-ttu-id="931de-245">后续步骤</span><span class="sxs-lookup"><span data-stu-id="931de-245">Next Steps</span></span>  
+ <span data-ttu-id="931de-246">你实现元数据浏览、 搜索和解析功能和出站消息交换。</span><span class="sxs-lookup"><span data-stu-id="931de-246">You implement metadata browsing, searching, and resolving capabilities, and the outbound message exchange.</span></span> <span data-ttu-id="931de-247">最后，生成并部署该适配器。</span><span class="sxs-lookup"><span data-stu-id="931de-247">Finally, you build and deploy the adapter.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="931de-248">另请参阅</span><span class="sxs-lookup"><span data-stu-id="931de-248">See Also</span></span>  
+ <span data-ttu-id="931de-249">[步骤 4： 为 Echo 适配器实现元数据浏览的处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="931de-249">[Step 4: Implement the Metadata Browse Handler for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md) </span></span>  
+ [<span data-ttu-id="931de-250">教程 1： 开发 Echo 适配器</span><span class="sxs-lookup"><span data-stu-id="931de-250">Tutorial 1: Develop the Echo Adapter</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

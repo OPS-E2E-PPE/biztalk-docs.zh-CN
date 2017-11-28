@@ -1,0 +1,41 @@
+---
+title: "字段填充 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 47017036-7d64-4222-b574-d2913bf69358
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 56aa8490bd9e72677c9c8eefa73e7f6bd8438dfd
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="field-padding"></a><span data-ttu-id="5695c-102">字段填充</span><span class="sxs-lookup"><span data-stu-id="5695c-102">Field Padding</span></span>
+
+## <a name="overview"></a><span data-ttu-id="5695c-103">概述</span><span class="sxs-lookup"><span data-stu-id="5695c-103">Overview</span></span>
+
+<span data-ttu-id="5695c-104">分隔记录和位置记录中字段包含的数据小于为该字段保留的字符或字节数时，这些字段将使用填充字符。</span><span class="sxs-lookup"><span data-stu-id="5695c-104">Pad characters are used in fields within both delimited and positional records when the data contained within the field smaller than the number of characters or bytes reserved for the field.</span></span> <span data-ttu-id="5695c-105">这些字符将占用数据不需要的字段部分（如果有的话）。</span><span class="sxs-lookup"><span data-stu-id="5695c-105">These characters occupy the portion of the field not required by the data, if any.</span></span> <span data-ttu-id="5695c-106">按字段基础使用指定的填充字符**填充字符**和**填充字符类型**的相应属性**Field 元素**和**字段特性**节点。</span><span class="sxs-lookup"><span data-stu-id="5695c-106">Pad characters are specified on a field-by-field basis using the  **Pad Character** and **Pad Character Type** properties of the corresponding **Field Element** and **Field Attribute** nodes.</span></span> <span data-ttu-id="5695c-107">如果没有为特定字段指定填充字符，该字段将使用默认填充字符：空格 (" ")。</span><span class="sxs-lookup"><span data-stu-id="5695c-107">If no pad character is specified for a particular field, the default pad character, space (" "), is used for that field.</span></span>  
+  
+## <a name="inbound-instances"></a><span data-ttu-id="5695c-108">入站的实例</span><span class="sxs-lookup"><span data-stu-id="5695c-108">Inbound instances</span></span>
+ <span data-ttu-id="5695c-109">对于入站实例消息，不管特定记录是位置记录还是分隔记录，在实例消息翻译成其等效 XML 形式时，平面文件拆装器都会丢弃特定字段的指定或默认填充字符的前导或尾部实例。</span><span class="sxs-lookup"><span data-stu-id="5695c-109">For inbound instance messages, regardless of whether a particular record is positional or delimited, the flat file disassembler discards leading or trailing instances for the specified or default pad character for a particular field as the instance message is translated into its equivalent XML form.</span></span> <span data-ttu-id="5695c-110">是否它是前导空格或尾随的相关的填充字符将被丢弃的实例取决于是否**理由**相应属性**Field 元素**和**字段属性**节点设置为**右**或**左**分别。</span><span class="sxs-lookup"><span data-stu-id="5695c-110">Whether it is leading or trailing instances of the relevant pad character that are discarded depends on whether the **Justification** property of corresponding **Field Element** and **Field Attribute** node is set to **Right** or **Left**, respectively.</span></span>  
+
+## <a name="outbound-instances"></a><span data-ttu-id="5695c-111">出站实例</span><span class="sxs-lookup"><span data-stu-id="5695c-111">Outbound instances</span></span>  
+ <span data-ttu-id="5695c-112">对于出站实例消息，平面文件组装器将适当数量的指定或默认填充字符插入到字段中，以使字段的长度正确。</span><span class="sxs-lookup"><span data-stu-id="5695c-112">For outbound instance messages, the flat file assembler will insert the appropriate number of the specified or default pad character into fields so that the length of the field is correct.</span></span> <span data-ttu-id="5695c-113">将插入填充字符，之前或之后的数据字符基于是否**理由**的相应属性**Field 元素**和**字段特性**节点设置为**右**或**左**分别。</span><span class="sxs-lookup"><span data-stu-id="5695c-113">The pad characters will be inserted before or after the data characters based on whether the **Justification** property of the corresponding **Field Element** and **Field Attribute** node is set to **Right** or **Left**, respectively.</span></span>  
+  
+ <span data-ttu-id="5695c-114">当要填充的出站实例消息中的字段包含在一个位置的记录，**位置偏移量**和**位置长度**的相应属性**字段元素**或**字段特性**节点，加上数据的字符数的字段必须包含，确定是否任何填充字符是必需的如果是，多少。</span><span class="sxs-lookup"><span data-stu-id="5695c-114">When the field to be padded in an outbound instance message is contained within a positional record, the **Positional Offset** and **Positional Length** properties of the corresponding **Field Element** or **Field Attribute** node, combined with the number of data characters that the field must contain, determine whether any pad characters are required, and if so, how many.</span></span> <span data-ttu-id="5695c-115">要填充的出站实例消息中的字段包含在分隔记录，填充字符时仅插入时的值**填充字符的最小长度**的相应属性**字段元素**或**字段特性**节点超过数据字符数。</span><span class="sxs-lookup"><span data-stu-id="5695c-115">When the field to be padded in an outbound instance message is contained within a delimited record, pad characters are only inserted when the value of the **Minimum Length with Pad Character** property of the corresponding **Field Element** or **Field Attribute** node exceeds the number of data characters.</span></span>  
+
+## 
+<span data-ttu-id="5695c-116">这些属性的更多详细信息[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="5695c-116">More details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="5695c-117">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5695c-117">See Also</span></span>  
+ <span data-ttu-id="5695c-118">[字段注意事项](../core/field-considerations.md) </span><span class="sxs-lookup"><span data-stu-id="5695c-118">[Field Considerations](../core/field-considerations.md) </span></span>  
+ <span data-ttu-id="5695c-119">[字段理由](../core/field-justification.md) </span><span class="sxs-lookup"><span data-stu-id="5695c-119">[Field Justification](../core/field-justification.md) </span></span>  
+ [<span data-ttu-id="5695c-120">位置记录中的字段位置的规范</span><span class="sxs-lookup"><span data-stu-id="5695c-120">Specification of Field Positions within Positional Records</span></span>](../core/specification-of-field-positions-within-positional-records.md)  

@@ -1,0 +1,1 @@
+<span data-ttu-id="a20b9-101">**Microsoft BizTalk Server 20xx**</span><span class="sxs-lookup"><span data-stu-id="a20b9-101">**Microsoft BizTalk Server 20xx**</span></span>

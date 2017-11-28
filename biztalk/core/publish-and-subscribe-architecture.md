@@ -1,0 +1,111 @@
+---
+title: "发布和订阅体系结构 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- publish/subscribe architecture, publishers
+- architecture, publish/subscribe
+- publishing, publish/subscribe architecture
+- publish/subscribe architecture, about publish/subscribe architecture
+- creating, subscriptions
+- publish/subscribe architecture, Messaging Engine
+- routing, publishing
+- Messaging Engine, publishing
+- publish/subscribe architecture, subscribers
+- publish/subscribe architecture
+- subscriptions, publish/subscribe architecture
+- publish/subscribe architecture, creating subscriptions
+- subscriptions, creating
+- Messaging Engine, subscribing
+- publishing, routing
+- Messaging Engine, publish/subscribe architecture
+- publish/subscribe architecture, events
+ms.assetid: 5ed36c1f-077d-468f-a99e-60f97377cef6
+caps.latest.revision: "11"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 24ab84990a83345ea2fd5e78ca84755f2bb67b28
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="publish-and-subscribe-architecture"></a><span data-ttu-id="b3311-102">发布和订阅体系结构</span><span class="sxs-lookup"><span data-stu-id="b3311-102">Publish and Subscribe Architecture</span></span>
+<span data-ttu-id="b3311-103">在发布/订阅设计中，您可以使用以下三个组件：</span><span class="sxs-lookup"><span data-stu-id="b3311-103">In a publish/subscribe design, you have three components:</span></span>  
+  
+-   <span data-ttu-id="b3311-104">发布服务器</span><span class="sxs-lookup"><span data-stu-id="b3311-104">Publishers</span></span>  
+  
+-   <span data-ttu-id="b3311-105">订阅服务器</span><span class="sxs-lookup"><span data-stu-id="b3311-105">Subscribers</span></span>  
+  
+-   <span data-ttu-id="b3311-106">事件</span><span class="sxs-lookup"><span data-stu-id="b3311-106">Events</span></span>  
+  
+ <span data-ttu-id="b3311-107">发布服务器包括接收发布中到达的消息的端口其接收位置，将消息发布发送消息或以异步方式启动另一个业务流程和请求/响应发送端口发布时的业务流程在从目标应用程序或传输收到响应时的消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-107">Publishers include receive ports that publish messages that arrive in their receive locations, orchestrations that publish messages when sending messages or starting another orchestration asynchronously, and solicit/response send ports that publish messages when they receive a response from the target application or transport.</span></span>  
+  
+ <span data-ttu-id="b3311-108">在 BizTalk Server 中，有两种主要类型的订阅： 激活和实例。</span><span class="sxs-lookup"><span data-stu-id="b3311-108">In BizTalk Server, there are two main types of subscriptions: activation and instance.</span></span> <span data-ttu-id="b3311-109">*激活订阅*一个指定的满足订阅的消息应激活，或者创建，订阅服务器时收到的新实例。</span><span class="sxs-lookup"><span data-stu-id="b3311-109">An *activation subscription* is one specifying that a message that fulfills the subscription should activate, or create, a new instance of the subscriber when it is received.</span></span> <span data-ttu-id="b3311-110">创建激活订阅的示例包括具有筛选器的发送端口或绑定到业务流程的发送端口，以及将其“激活”属性设置为 True 的业务流程接收形状。</span><span class="sxs-lookup"><span data-stu-id="b3311-110">Examples of things that create activation subscriptions include send ports with filters or send ports that are bound to orchestrations, and orchestration receive shapes that have their Activate property set to true.</span></span> <span data-ttu-id="b3311-111">*实例订阅*指示应将满足订阅的消息路由到的订阅服务器已在运行的实例。</span><span class="sxs-lookup"><span data-stu-id="b3311-111">An *instance subscription* indicates that messages that fulfill the subscription should be routed to an already-running instance of the subscriber.</span></span> <span data-ttu-id="b3311-112">创建实例订阅的示例包括具有相关接收的业务流程和等待来自 BizTalk Server 的响应的请求/响应样式的接收端口。</span><span class="sxs-lookup"><span data-stu-id="b3311-112">Examples of things that create instance subscriptions are orchestrations with correlated receives and request/response-style receive ports waiting for a response from BizTalk Server.</span></span>  
+  
+ <span data-ttu-id="b3311-113">这两种类型的订阅在信息级别上的区别在于：实例订阅包括存储于主 MessageBox 数据库的订阅表中的唯一实例 ID。</span><span class="sxs-lookup"><span data-stu-id="b3311-113">The difference between the two types of subscription at the information level is that an instance subscription includes the unique instance ID, stored in the subscription table in the master MessageBox database.</span></span> <span data-ttu-id="b3311-114">在业务流程实例或接收端口完成处理之后，只要登记了业务流程或发送端口，就会从 MessageBox 中删除实例订阅，而激活订阅仍保持活动状态。</span><span class="sxs-lookup"><span data-stu-id="b3311-114">When an orchestration instance or receive port completes processing, instance subscriptions are removed from the MessageBox while activation subscriptions remain active as long as the orchestration or send port is enlisted.</span></span>  
+  
+## <a name="creating-subscriptions"></a><span data-ttu-id="b3311-115">创建订阅</span><span class="sxs-lookup"><span data-stu-id="b3311-115">Creating Subscriptions</span></span>  
+ <span data-ttu-id="b3311-116">订阅是由 BizTalk Server 中的服务类别创建的，而这些类别在 BizTalk Server 管理数据库的 adm_ServiceClass 表中列出。</span><span class="sxs-lookup"><span data-stu-id="b3311-116">Subscriptions are created by service classes in BizTalk Server, which are listed in the adm_ServiceClass table in the BizTalk Server Management database.</span></span> <span data-ttu-id="b3311-117">这些服务包括缓存服务；终结点管理器宿主的正在处理的和已隔离的消息，以及 XLANG 子服务宿主的业务流程/XLANG。</span><span class="sxs-lookup"><span data-stu-id="b3311-117">These services include the caching service; in-process and isolated messaging, hosted by the Endpoint Manager; and orchestrations/XLANG hosted by the XLANG subservice.</span></span> <span data-ttu-id="b3311-118">其中每个服务类可以创建订阅并接收已发布的消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-118">Each of these service classes can create subscriptions and receive published messages.</span></span>  
+  
+ <span data-ttu-id="b3311-119">订阅为多个比较语句的集合，称作谓词，它涉及消息上下文属性和专用于订阅的值。</span><span class="sxs-lookup"><span data-stu-id="b3311-119">A subscription is a collection of comparison statements, known as predicates, involving message context properties and the values specific to the subscription.</span></span> <span data-ttu-id="b3311-120">例如，“消息类型”为消息的上下文属性，而且许多订阅均可在其自己的订阅中指定消息类型。</span><span class="sxs-lookup"><span data-stu-id="b3311-120">For example, Message Type is a context property of messages and many subscriptions specify the message type in their subscription.</span></span> <span data-ttu-id="b3311-121">有关订阅的常规信息可由消息代理插入到订阅表中，而特定的谓词则进入以下任一谓词表中，具体取决于为订阅指定的操作类型：</span><span class="sxs-lookup"><span data-stu-id="b3311-121">General information about the subscription is inserted into the subscriptions table by the Message Agent while the specific predicates go into one of the following predicate tables, depending on the type of operation specified for the subscription:</span></span>  
+  
+-   <span data-ttu-id="b3311-122">BitwiseANDPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-122">BitwiseANDPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-123">EqualsPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-123">EqualsPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-124">EqualsPredicates2ndPass</span><span class="sxs-lookup"><span data-stu-id="b3311-124">EqualsPredicates2ndPass</span></span>  
+  
+-   <span data-ttu-id="b3311-125">ExistsPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-125">ExistsPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-126">FirstPassPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-126">FirstPassPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-127">GreaterThanOrEqualsPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-127">GreaterThanOrEqualsPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-128">GreaterThanPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-128">GreaterThanPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-129">LessThenOrEqualsPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-129">LessThenOrEqualsPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-130">LessThenPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-130">LessThenPredicates</span></span>  
+  
+-   <span data-ttu-id="b3311-131">NotEqualsPredicates</span><span class="sxs-lookup"><span data-stu-id="b3311-131">NotEqualsPredicates</span></span>  
+  
+ <span data-ttu-id="b3311-132">上述所有操作均可以通过调用 Bts_CreateSubscription_\<应用程序名称 > 和 Bts_InsertPredicate_\<应用程序名称 > MessageBox 中的存储的过程数据库 where\<应用程序名称 >是创建订阅的 BizTalk 主机的名称。</span><span class="sxs-lookup"><span data-stu-id="b3311-132">All of this is accomplished by calling the Bts_CreateSubscription_\<application name> and Bts_InsertPredicate_\<application name> stored procedures in the MessageBox database where \<application name> is the name of the BizTalk host that is creating the subscription.</span></span>  
+  
+ <span data-ttu-id="b3311-133">在登记发送端口时，端口应使用上下文中该发送端口的传输 ID 为每个消息至少创建一个订阅。</span><span class="sxs-lookup"><span data-stu-id="b3311-133">When a send port is enlisted, the port creates, at a minimum, a subscription for any message with that send port's transport ID in the context.</span></span> <span data-ttu-id="b3311-134">这允许发送端口始终接收专门发送到该端口的消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-134">This allows the send port to always receive messages intended specifically for it.</span></span> <span data-ttu-id="b3311-135">在业务流程端口绑定到特定的发送端口后，该绑定的相关信息将存储在 BizTalk 管理数据库中。</span><span class="sxs-lookup"><span data-stu-id="b3311-135">When an orchestration port is bound to a particular send port, the information about that binding is stored in the BizTalk Management database.</span></span> <span data-ttu-id="b3311-136">在从业务流程通过绑定到物理发送端口的端口发送消息时，传输 ID 将包括在上下文中，以便该消息能够路由到正确的发送端口。</span><span class="sxs-lookup"><span data-stu-id="b3311-136">When messages are sent from the orchestration through the port bound to the physical send port, the Transport ID is included in the context so that the message gets routed to that send port.</span></span> <span data-ttu-id="b3311-137">但是，请注意，此发送端口并不是可以接收发自该业务流程的消息的唯一发送端口。</span><span class="sxs-lookup"><span data-stu-id="b3311-137">However, it is important to note that this send port is not the only send port that can receive messages sent from the orchestration.</span></span> <span data-ttu-id="b3311-138">在业务流程发送消息时，该消息及其所有相关的升级属性都将发布到 MessageBox 中。</span><span class="sxs-lookup"><span data-stu-id="b3311-138">When an orchestration sends a message, that message is published to the MessageBox with all of the relevant promoted properties.</span></span> <span data-ttu-id="b3311-139">由于消息的传输 ID 位于上下文中，所以可确保绑定的发送端口接收该消息的副本，虽然任何其他发送端口或业务流程也具有与该消息属性相匹配的订阅。</span><span class="sxs-lookup"><span data-stu-id="b3311-139">The bound send port is guaranteed to receive a copy of the message because the transport ID is in the context, but any other send port, or orchestration, can have a subscription that also matches the message properties.</span></span> <span data-ttu-id="b3311-140">此外，请务必了解在将消息直接发布到 MessageBox 的任何时候，所有具有匹配的订阅的订阅服务器都将接收该消息副本。</span><span class="sxs-lookup"><span data-stu-id="b3311-140">It is very important to understand that any time a message is published directly to the MessageBox, all subscribers with matching subscriptions will receive a copy of the message.</span></span>  
+  
+## <a name="publishing-and-routing"></a><span data-ttu-id="b3311-141">发布和路由</span><span class="sxs-lookup"><span data-stu-id="b3311-141">Publishing and Routing</span></span>  
+ <span data-ttu-id="b3311-142">在创建和启用订阅后，在处理消息前必须先发布该消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-142">After a subscription is created and enabled, a message must be published before any processing takes place.</span></span> <span data-ttu-id="b3311-143">在从上述的服务之一中将消息接收到 BizTalk Server 中后，发布这些消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-143">Messages are published when they are received into BizTalk Server from one of the services mentioned previously.</span></span> <span data-ttu-id="b3311-144">对于此路由的相关讨论，我们将侧重于通过适配器接收到 BizTalk Server 中的消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-144">For this discussion of routing, we will focus on messages received into BizTalk Server through an adapter.</span></span>  
+  
+ <span data-ttu-id="b3311-145">在消息经过接收管道处理后，其属性将升级到消息上下文中。</span><span class="sxs-lookup"><span data-stu-id="b3311-145">When messages go through the receive pipeline processing, properties are promoted into the message context.</span></span> <span data-ttu-id="b3311-146">经过接收适配器和管道处理过的消息，在准备发布到 MessageBox 时，消息代理会首先将消息上下文中的升级属性的属性值和谓词值插入到主 MessageBox SQL Server 数据库中。</span><span class="sxs-lookup"><span data-stu-id="b3311-146">After a message is ready to be published into the MessageBox after being processed by the receive adapter and pipeline, the first thing that happens is the Message Agent inserts the property values for the promoted properties and predicate values from the message context into the master MessageBox SQL Server database.</span></span> <span data-ttu-id="b3311-147">如果将这些值插入数据库中，则消息代理可进行路由选择。</span><span class="sxs-lookup"><span data-stu-id="b3311-147">Having these values in the database enables the Message Agent to make routing decisions.</span></span>  
+  
+ <span data-ttu-id="b3311-148">下一步是消息代理请求主 MessageBox 数据库查找当前要发布的消息批的订阅。</span><span class="sxs-lookup"><span data-stu-id="b3311-148">The next step is for the Message Agent to ask the master MessageBox database to find subscriptions for the current batch of messages being published.</span></span> <span data-ttu-id="b3311-149">但是请注意，此时，这些消息尚未写入数据库，只有上下文中的属性写入了数据库。</span><span class="sxs-lookup"><span data-stu-id="b3311-149">Keep in mind that the messages have not yet been written to the database, only the properties from the context.</span></span> <span data-ttu-id="b3311-150">MessageBox 中的 bts_FindSubscriptions 存储过程可对上面提及的订阅和谓词表进行查询，并将这些表链接到为当前消息批存储的消息属性。</span><span class="sxs-lookup"><span data-stu-id="b3311-150">The bts_FindSubscriptions stored procedure in the MessageBox queries the subscription and predicate tables identified above, linking them to the message properties stored for the current batch of messages.</span></span>  
+  
+ <span data-ttu-id="b3311-151">利用这些信息，消息代理通过调用 bts_InsertMessage 存储过程将消息一次性插入到每个具有订阅的 MessageBox 数据库中。</span><span class="sxs-lookup"><span data-stu-id="b3311-151">With this information, the Message Agent inserts the message once into each MessageBox database that has a subscription by calling the bts_InsertMessage stored procedure.</span></span> <span data-ttu-id="b3311-152">Bts_InsertMessage 存储过程首次调用替换为订阅 id。</span><span class="sxs-lookup"><span data-stu-id="b3311-152">The bts_InsertMessage stored procedure is first called with a subscription ID.</span></span> <span data-ttu-id="b3311-153">在此第一个阶段中，存储的过程调用 int_EvaluateSubscriptions 存储过程负责查找订阅详细信息，验证消息通过检查，可满足的应用程序的安全要求谓词对于主机，和在应用程序特定队列或根据的状态的应用程序的特定挂起的队列中插入消息的引用匹配应用程序属性的消息。</span><span class="sxs-lookup"><span data-stu-id="b3311-153">On this first pass, the stored procedure calls the int_EvaluateSubscriptions stored procedure which is responsible for looking up the subscription detail information, verifying that the message meets security requirements for the application by checking that message predicates match application properties for the host, and inserting a reference to the message in the application specific queue or application specific suspended queue depending on the state.</span></span> <span data-ttu-id="b3311-154">消息 ID、订阅 ID、服务 ID 和其他订阅信息都将插入到为此应用程序找到的每个订阅的特定于应用程序的队列表中。</span><span class="sxs-lookup"><span data-stu-id="b3311-154">The message ID, subscription ID, service ID, and other subscription information are inserted into the application specific queue table for each subscription that was found for this application.</span></span> <span data-ttu-id="b3311-155">在插入这些消息后，将清除消息属性和消息谓词表中与批相关的值。</span><span class="sxs-lookup"><span data-stu-id="b3311-155">After the messages are inserted, the message properties and message predicates tables are cleared of the batch related values.</span></span>  
+  
+ <span data-ttu-id="b3311-156">随后，为消息中的每个部分调用 bts_InsertMessage 存储过程。</span><span class="sxs-lookup"><span data-stu-id="b3311-156">The bts_InsertMessage stored procedure is called subsequently for each part in the message.</span></span> <span data-ttu-id="b3311-157">在首次调用中，消息上下文传递，然后会插入到如数部件、 正文部分组成的名称和 id。 消息有关的元数据一起假脱机表</span><span class="sxs-lookup"><span data-stu-id="b3311-157">On the first call, the message context is passed and is then inserted into the SPOOL table along with metadata about the message such as the number of parts, the body part name and ID.</span></span> <span data-ttu-id="b3311-158">此外消息正文部分插入到部件表使用 int_InsertPart 存储过程。</span><span class="sxs-lookup"><span data-stu-id="b3311-158">In addition the message body part is inserted into the PARTS table using the int_InsertPart stored procedure.</span></span> <span data-ttu-id="b3311-159">随后，为每个剩余的消息部分调用 bts_InsertMessage 存储过程，其中，这些消息部分只传递到要在 PARTS 表中保留的 int_InsertPart 存储过程。</span><span class="sxs-lookup"><span data-stu-id="b3311-159">The bts_InsertMessage stored procedure is then called for each of the remaining message parts where they are simply passed to the int_InsertPart stored procedure to be persisted in the PARTS table.</span></span>  
+  
+ <span data-ttu-id="b3311-160">在路由消息后，通过将记录插入到下表中为每个接收特定消息实例以及消息的各个部分的服务添加引用：</span><span class="sxs-lookup"><span data-stu-id="b3311-160">When messages are routed, references are added for each service that receives the specific instance of the message and its parts by inserting records into the following tables:</span></span>  
+  
+-   <span data-ttu-id="b3311-161">MessageRefCountLog1</span><span class="sxs-lookup"><span data-stu-id="b3311-161">MessageRefCountLog1</span></span>  
+  
+-   <span data-ttu-id="b3311-162">MessageRefCountLog2</span><span class="sxs-lookup"><span data-stu-id="b3311-162">MessageRefCountLog2</span></span>  
+  
+-   <span data-ttu-id="b3311-163">PartRefCountLog1</span><span class="sxs-lookup"><span data-stu-id="b3311-163">PartRefCountLog1</span></span>  
+  
+-   <span data-ttu-id="b3311-164">PartRefCountLog2</span><span class="sxs-lookup"><span data-stu-id="b3311-164">PartRefCountLog2</span></span>  
+  
+ <span data-ttu-id="b3311-165">这些引用将保护消息以及消息的各个部分不被清除作业删除，该清除作业将定期运行以防系统中无用消息的消息数据添满 MessageBox。</span><span class="sxs-lookup"><span data-stu-id="b3311-165">These references keep the messages and parts from being deleted by cleanup jobs that run periodically to keep the MessageBox from getting full with message data for messages that are no longer in the system.</span></span> <span data-ttu-id="b3311-166">使用两个表可减少争用和锁定问题。</span><span class="sxs-lookup"><span data-stu-id="b3311-166">Two tables are used to reduce contention and locking issues.</span></span>  
+  
+ <span data-ttu-id="b3311-167">既然消息已路由到相应的队列、已存储在 SPOOL 和 PARTS 表中、并在特定于应用程序的队列中已引用该消息，则必须通过应用程序实例将这些消息从队列中提取出来。</span><span class="sxs-lookup"><span data-stu-id="b3311-167">Now that the message has been routed to the right queue, stored in the Spool and Parts tables, and referenced in the application specific queues, the messages must be pulled off the queues by the application instances.</span></span> <span data-ttu-id="b3311-168">每个主机实例都具有多个出列线程，这些出列线程将按照在 BizTalk 管理数据库的 adm_ServiceClass 表中配置的时间间隔连续轮询数据库。</span><span class="sxs-lookup"><span data-stu-id="b3311-168">Each host instance has a number of dequeuing threads that continuously poll the database on an interval that is configured in the adm_ServiceClass table in the BizTalk Management database.</span></span> <span data-ttu-id="b3311-169">此相同的表中有一列指明了要使用的出列线程的数目。</span><span class="sxs-lookup"><span data-stu-id="b3311-169">This same table has a column to indicate the number of dequeuing threads to be used.</span></span> <span data-ttu-id="b3311-170">每个线程调用到 MessageBox 数据库，并调用 bts_DequeueMessages_\<应用程序名称 > 存储过程适用于在运行主机应用程序。</span><span class="sxs-lookup"><span data-stu-id="b3311-170">Each thread calls into the MessageBox database and calls the bts_DequeueMessages_\<application name> stored procedure appropriate for the host application it is running in.</span></span> <span data-ttu-id="b3311-171">此存储的过程使用锁定语义来确保只有一个实例，一个取消排队线程能够在给定时间在队列中的邮件上运行。</span><span class="sxs-lookup"><span data-stu-id="b3311-171">This stored procedure uses locking semantics to make sure that only one instance and one dequeuing thread are able to operate on a message in the queue at a given time.</span></span> <span data-ttu-id="b3311-172">取得锁定的主机实例将获取消息，并负责将该消息传送到所需的子服务。</span><span class="sxs-lookup"><span data-stu-id="b3311-172">The host instance that gets the lock gets the message, and is then responsible for handing the message to the subservice for which it is intended.</span></span>  
+  
+ <span data-ttu-id="b3311-173">如果接收消息的服务为终结点管理器，则将调用发送端口（或请求/响应接收端口的响应部分），如果此服务是 XLANG/s 子服务，则可创建业务流程，或查找业务流程以为订阅提供服务，具体取决于订阅中是否存在实例 ID。</span><span class="sxs-lookup"><span data-stu-id="b3311-173">If the service receiving the message is the Endpoint Manager, then the send port is invoked (or the response portion of a request/response receive port) and if it is the XLANG/s subservice, an orchestration is either created, or located to service the subscription depending on whether there is an instance ID in the subscription.</span></span> <span data-ttu-id="b3311-174">然后，此服务将释放对消息及其各个部分的引用，如果没有其他服务引用该消息，则可删除其数据。</span><span class="sxs-lookup"><span data-stu-id="b3311-174">The service then releases the reference to the message and its part so that if no other services have references, the message data can be deleted.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="b3311-175">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b3311-175">See Also</span></span>  
+ [<span data-ttu-id="b3311-176">消息传送的引擎</span><span class="sxs-lookup"><span data-stu-id="b3311-176">The Messaging Engine </span></span>](../core/the-messaging-engine.md)

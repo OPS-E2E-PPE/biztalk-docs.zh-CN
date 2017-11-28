@@ -1,0 +1,75 @@
+---
+title: "为 Oracle EBS 适配器示例 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 12f19f13-3b01-40d6-b12c-811f99841040
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 05f4bd3d251872dc480c939ec864db9d61f14bd7
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="samples-for-the-oracle-ebs-adapter"></a><span data-ttu-id="3f7c4-102">Oracle EBS 适配器的的示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-102">Samples for the Oracle EBS adapter</span></span>
+<span data-ttu-id="3f7c4-103">示例[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]分为：</span><span class="sxs-lookup"><span data-stu-id="3f7c4-103">Samples for [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] are categorized into:</span></span>  
+  
+-   [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="3f7c4-104"> 示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-104"> samples</span></span>  
+  
+-   <span data-ttu-id="3f7c4-105">WCF 服务模型示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-105">WCF service model samples</span></span>  
+  
+-   <span data-ttu-id="3f7c4-106">WCF 通道模型示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-106">WCF channel model samples</span></span>  
+  
+-   <span data-ttu-id="3f7c4-107">Microsoft Office SharePoint Server 示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-107">Microsoft Office SharePoint Server samples</span></span>  
+  
+ <span data-ttu-id="3f7c4-108">这些示例位于[http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854)。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-108">The samples are available at [http://go.microsoft.com/fwlink/p/?LinkID=196854](http://go.microsoft.com/fwlink/p/?LinkID=196854).</span></span> <span data-ttu-id="3f7c4-109">SQL 脚本创建接口表、 并发程序、 表和也将提供的示例以及在这些示例中使用的程序包[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-109">The SQL scripts for creating the interface tables, concurrent programs, tables, and packages used in the samples are also available along with the samples for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
+  
+ <span data-ttu-id="3f7c4-110">下表包含的名称和描述的示例[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-110">The following tables contain the names and descriptions of the samples for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
+  
+## <a name="biztalk-server-samples"></a><span data-ttu-id="3f7c4-111">BizTalk Server 示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-111">BizTalk Server Samples</span></span>  
+  
+|<span data-ttu-id="3f7c4-112">示例目录名称</span><span class="sxs-lookup"><span data-stu-id="3f7c4-112">Sample Directory Name</span></span>|<span data-ttu-id="3f7c4-113">Description</span><span class="sxs-lookup"><span data-stu-id="3f7c4-113">Description</span></span>|  
+|---------------------------|-----------------|  
+|<span data-ttu-id="3f7c4-114">InterfaceTableInsert</span><span class="sxs-lookup"><span data-stu-id="3f7c4-114">InterfaceTableInsert</span></span>|<span data-ttu-id="3f7c4-115">演示如何在 Oracle E-business Suite 中使用接口表中插入记录[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-115">Demonstrates how to insert records into an interface table in Oracle E-Business Suite using [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-116">ConcurrentProgram</span><span class="sxs-lookup"><span data-stu-id="3f7c4-116">ConcurrentProgram</span></span>|<span data-ttu-id="3f7c4-117">演示如何以调用在 Oracle E-business Suite 中使用的并发程序[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-117">Demonstrates how to invoke a concurrent program in Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-118">RequestSet</span><span class="sxs-lookup"><span data-stu-id="3f7c4-118">RequestSet</span></span>|<span data-ttu-id="3f7c4-119">演示如何以调用在 Oracle E-business Suite 中设置的请求[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-119">Demonstrates how to invoke a request set in Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-120">MsgContextProperty</span><span class="sxs-lookup"><span data-stu-id="3f7c4-120">MsgContextProperty</span></span>|<span data-ttu-id="3f7c4-121">演示如何使用公开的消息上下文属性[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]设置应用程序上下文上执行操作项目中使用 Oracle E-business Suite [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-121">Demonstrates how to use the message context properties exposed by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to set application context to perform operations on artifacts in Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-122">OracleEBS_CompositeOperation</span><span class="sxs-lookup"><span data-stu-id="3f7c4-122">OracleEBS_CompositeOperation</span></span>|<span data-ttu-id="3f7c4-123">演示如何在 Oracle E-business Suite 使用执行复合操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-123">Demonstrates how to perform composite operations in Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-124">OracleNotifyIncremental</span><span class="sxs-lookup"><span data-stu-id="3f7c4-124">OracleNotifyIncremental</span></span>|<span data-ttu-id="3f7c4-125">演示如何从 Oracle 使用接收"增量"查询通知消息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-125">Demonstrates how to receive “incremental” query notification messages from Oracle using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-126">PollingUsingSelectStatement</span><span class="sxs-lookup"><span data-stu-id="3f7c4-126">PollingUsingSelectStatement</span></span>|<span data-ttu-id="3f7c4-127">演示如何配置一个轮询查询使用 SELECT 语句和接收使用对结果[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-127">Demonstrates how to configure a polling query using a SELECT statement and receive the results using the   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+|<span data-ttu-id="3f7c4-128">PollingUsingStoredProc</span><span class="sxs-lookup"><span data-stu-id="3f7c4-128">PollingUsingStoredProc</span></span>|<span data-ttu-id="3f7c4-129">演示如何配置一个轮询查询使用存储的过程和接收使用对结果[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-129">Demonstrates how to configure a polling query using a stored procedure and receive the results using the   [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>|  
+  
+## <a name="wcf-service-model-samples"></a><span data-ttu-id="3f7c4-130">WCF 服务模型示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-130">WCF Service Model Samples</span></span>  
+  
+|<span data-ttu-id="3f7c4-131">示例目录名称</span><span class="sxs-lookup"><span data-stu-id="3f7c4-131">Sample Directory Name</span></span>|<span data-ttu-id="3f7c4-132">Description</span><span class="sxs-lookup"><span data-stu-id="3f7c4-132">Description</span></span>|  
+|---------------------------|-----------------|  
+|<span data-ttu-id="3f7c4-133">ConcProgram_ServiceModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-133">ConcProgram_ServiceModel</span></span>|<span data-ttu-id="3f7c4-134">演示如何调用中使用该适配器的 Oracle E-business Suite 的并发程序。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-134">Demonstrates how to invoke concurrent programs in Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-135">ExecuteReader</span><span class="sxs-lookup"><span data-stu-id="3f7c4-135">ExecuteReader</span></span>|<span data-ttu-id="3f7c4-136">演示如何调用上使用该适配器的 Oracle E-business Suite ExecuteReader 操作。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-136">Demonstrates how to invoke an ExecuteReader operation on Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-137">Interface_Table_Ops</span><span class="sxs-lookup"><span data-stu-id="3f7c4-137">Interface_Table_Ops</span></span>|<span data-ttu-id="3f7c4-138">演示如何对表执行操作接口中使用该适配器的 Oracle E-business Suite。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-138">Demonstrates how to perform operations on interface tables in Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-139">LargeDataTypes_ServiceModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-139">LargeDataTypes_ServiceModel</span></span>|<span data-ttu-id="3f7c4-140">演示如何使用适配器 Oracle E-business Suite 中执行具有较大的数据类型的列的表操作。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-140">Demonstrates how to perform operations on tables with columns of large data types in Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-141">Notification_ServiceModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-141">Notification_ServiceModel</span></span>|<span data-ttu-id="3f7c4-142">演示如何使用适配器 Oracle E-business Suite 后面的数据库从接收通知。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-142">Demonstrates how to receive notifications from databases behind Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-143">SelectPolling_ServiceModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-143">SelectPolling_ServiceModel</span></span>|<span data-ttu-id="3f7c4-144">演示如何使用 SELECT 语句来轮询 Oracle E-business Suite 使用适配器中的接口表。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-144">Demonstrates how to use a SELECT statement to poll an interface table in Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-145">StoredProcPolling_ServiceModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-145">StoredProcPolling_ServiceModel</span></span>|<span data-ttu-id="3f7c4-146">演示如何使用存储的过程来轮询 Oracle E-business Suite 使用适配器中的表。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-146">Demonstrates how to use a stored procedure to poll tables in Oracle E-Business Suite using the adapter.</span></span>|  
+  
+## <a name="wcf-channel-model-samples"></a><span data-ttu-id="3f7c4-147">WCF 通道模型示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-147">WCF Channel Model Samples</span></span>  
+  
+|<span data-ttu-id="3f7c4-148">示例目录名称</span><span class="sxs-lookup"><span data-stu-id="3f7c4-148">Sample Directory Name</span></span>|<span data-ttu-id="3f7c4-149">Description</span><span class="sxs-lookup"><span data-stu-id="3f7c4-149">Description</span></span>|  
+|---------------------------|-----------------|  
+|<span data-ttu-id="3f7c4-150">InsertOperation</span><span class="sxs-lookup"><span data-stu-id="3f7c4-150">InsertOperation</span></span>|<span data-ttu-id="3f7c4-151">演示如何在使用该适配器的 Oracle E-business Suite 中执行对接口表的插入操作。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-151">Demonstrates how to perform an Insert operation on an interface table in Oracle E-Business Suite using the adapter.</span></span>|  
+|<span data-ttu-id="3f7c4-152">SelectPolling_ChannelModel</span><span class="sxs-lookup"><span data-stu-id="3f7c4-152">SelectPolling_ChannelModel</span></span>|<span data-ttu-id="3f7c4-153">演示如何使用 SELECT 语句来轮询 Oracle E-business Suite 使用适配器中的接口表。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-153">Demonstrates how to use a SELECT statement to poll an interface table in Oracle E-Business Suite using the adapter.</span></span>|  
+  
+## <a name="microsoft-office-sharepoint-server-samples"></a><span data-ttu-id="3f7c4-154">Microsoft Office SharePoint Server 示例</span><span class="sxs-lookup"><span data-stu-id="3f7c4-154">Microsoft Office SharePoint Server Samples</span></span>  
+  
+|<span data-ttu-id="3f7c4-155">示例目录名称</span><span class="sxs-lookup"><span data-stu-id="3f7c4-155">Sample Directory Name</span></span>|<span data-ttu-id="3f7c4-156">Description</span><span class="sxs-lookup"><span data-stu-id="3f7c4-156">Description</span></span>|  
+|---------------------------|-----------------|  
+|<span data-ttu-id="3f7c4-157">MOSS_Sample</span><span class="sxs-lookup"><span data-stu-id="3f7c4-157">MOSS_Sample</span></span>|<span data-ttu-id="3f7c4-158">演示如何使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle E-business Suite 项目，创建 Windows Communication Foundation (WCF) 服务，然后使用 WCF 服务在 Microsoft Office SharePoint Server 使用业务数据列表 Web 部件中显示数据。</span><span class="sxs-lookup"><span data-stu-id="3f7c4-158">Demonstrates how to use the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to create a Windows Communication Foundation (WCF) service from Oracle E-Business Suite artifacts, and then use the WCF service to display data in Microsoft Office SharePoint Server using a Business Data List Web Part.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="3f7c4-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3f7c4-159">See Also</span></span>  
+[<span data-ttu-id="3f7c4-160">开发 Oracle E-business Suite 应用程序</span><span class="sxs-lookup"><span data-stu-id="3f7c4-160">Develop your Oracle E-Business Suite applications</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/develop-your-oracle-e-business-suite-applications.md)

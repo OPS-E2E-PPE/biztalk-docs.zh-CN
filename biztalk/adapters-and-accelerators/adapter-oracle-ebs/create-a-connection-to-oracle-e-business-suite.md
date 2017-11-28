@@ -1,0 +1,55 @@
+---
+title: "创建与 Oracle E-business Suite 的连接 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: eeeab604-155e-4806-b77a-45319a3f8cc0
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5ffdfdc8810024e331598211529f3a594e0169f5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="create-a-connection-to-oracle-e-business-suite"></a><span data-ttu-id="98b8a-102">创建与 Oracle E-business Suite 的连接</span><span class="sxs-lookup"><span data-stu-id="98b8a-102">Create a connection to Oracle E-Business Suite</span></span>
+<span data-ttu-id="98b8a-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。</span><span class="sxs-lookup"><span data-stu-id="98b8a-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding.</span></span> <span data-ttu-id="98b8a-104">在这种情况下，它使到 Oracle E-business Suite 通过 WCF 终结点地址的通信。</span><span class="sxs-lookup"><span data-stu-id="98b8a-104">As such, it enables communication to Oracle E-Business Suite through a WCF endpoint address.</span></span> <span data-ttu-id="98b8a-105">在 WCF 中的终结点地址标识服务的网络位置，并通常表示为统一资源标识符 (URI)。</span><span class="sxs-lookup"><span data-stu-id="98b8a-105">In WCF the endpoint address identifies the network location of a service and is typically expressed as a Uniform Resource Identifier (URI).</span></span> <span data-ttu-id="98b8a-106">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]表示此位置作为连接 URI，其中包含属性的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]用于建立与 Oracle E-business Suite 的连接。</span><span class="sxs-lookup"><span data-stu-id="98b8a-106">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expresses this location as a connection URI, which contains properties that the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses to establish a connection to Oracle E-Business Suite.</span></span> <span data-ttu-id="98b8a-107">必须指定连接 URI 时你：</span><span class="sxs-lookup"><span data-stu-id="98b8a-107">You must specify a connection URI when you:</span></span>  
+  
+-   <span data-ttu-id="98b8a-108">创建通道工厂或通道侦听器使用 WCF 通道模型或当你创建使用 WCF 服务模型的 WCF 客户端或服务主机。</span><span class="sxs-lookup"><span data-stu-id="98b8a-108">Create a channel factory or a channel listener using the WCF channel model or when you create a WCF client or service host using the WCF service model.</span></span>  
+  
+-   <span data-ttu-id="98b8a-109">创建中的物理端口绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]解决方案。</span><span class="sxs-lookup"><span data-stu-id="98b8a-109">Create a physical port binding in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  
+  
+-   <span data-ttu-id="98b8a-110">使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或 WCF 服务模型解决方案的 WCF 服务接口。</span><span class="sxs-lookup"><span data-stu-id="98b8a-110">Use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class or WCF service interface for a WCF service model solution.</span></span>  
+  
+-   <span data-ttu-id="98b8a-111">使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]检索消息架构从[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]BizTalk Server 解决方案。</span><span class="sxs-lookup"><span data-stu-id="98b8a-111">Use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to retrieve message schemas from the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] for a BizTalk Server solution.</span></span>  
+  
+-   <span data-ttu-id="98b8a-112">使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或 WCF 服务模型解决方案的 WCF 服务接口。</span><span class="sxs-lookup"><span data-stu-id="98b8a-112">Use the ServiceModel Metadata Utility tool (svcutil.exe) to generate a WCF client class or WCF service interface for a WCF service model solution.</span></span>  
+
+## <a name="ways-to-connect-to-oracle"></a><span data-ttu-id="98b8a-113">如何连接到 Oracle</span><span class="sxs-lookup"><span data-stu-id="98b8a-113">Ways to connect to Oracle</span></span>  
+ <span data-ttu-id="98b8a-114">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]支持两种方法来建立与基础的 Oracle 数据库的连接：</span><span class="sxs-lookup"><span data-stu-id="98b8a-114">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] supports two ways of establishing a connection to the underlying Oracle database:</span></span>  
+  
+-   <span data-ttu-id="98b8a-115">**使用 tnsnames.ora**。</span><span class="sxs-lookup"><span data-stu-id="98b8a-115">**Using tnsnames.ora**.</span></span> <span data-ttu-id="98b8a-116">在此方法中，连接由适配器客户端提供的 URI 包含仅输入 tnsnames.ora 文件中的 net 服务名称。</span><span class="sxs-lookup"><span data-stu-id="98b8a-116">In this approach, the connection URI provided by the adapter client contains only the net service name entered in the tnsnames.ora file.</span></span> <span data-ttu-id="98b8a-117">适配器从文件中的 net 服务名称条目中提取的连接参数，如服务器名称、 服务名称、 端口号等。</span><span class="sxs-lookup"><span data-stu-id="98b8a-117">The adapter extracts the connection parameters, such as server name, service name, port number, and so on, from the net service name entry in the file.</span></span> <span data-ttu-id="98b8a-118">若要使用此方法，必须配置运行 Oracle 客户端的计算机为 tnsnames.ora 文件中包括 Oracle 数据库的 net 服务名称。</span><span class="sxs-lookup"><span data-stu-id="98b8a-118">To use this approach, the computer running the Oracle client must be configured to include the net service name for the Oracle database in the tnsnames.ora file.</span></span>  
+  
+    > [!IMPORTANT]
+    >  <span data-ttu-id="98b8a-119">由于 Oracle 客户端存在的限制， **DataSourceName**中的参数 （net 服务名称）[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)不能包含超过 39 个字符，如果你是在事务中执行操作。</span><span class="sxs-lookup"><span data-stu-id="98b8a-119">Due to an Oracle Client limitation, the **DataSourceName** parameter (net service name) in the [Create the Oracle E-Business Suite connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md) cannot contain more than 39 characters if you are performing operations in a transaction.</span></span> <span data-ttu-id="98b8a-120">因此，如果你在事务中执行操作，请确保**DataSourceName**参数的值是否小于或等于 39 个字符。</span><span class="sxs-lookup"><span data-stu-id="98b8a-120">Therefore, if you are performing operations in a transaction, make sure that the **DataSourceName** parameter value is less than or equal to 39 characters.</span></span>  
+  
+-   <span data-ttu-id="98b8a-121">**而无需使用 tnsnames.ora**。</span><span class="sxs-lookup"><span data-stu-id="98b8a-121">**Without using tnsnames.ora**.</span></span> <span data-ttu-id="98b8a-122">在此方法中，适配器客户端输入直接在连接 URI 中的连接参数。</span><span class="sxs-lookup"><span data-stu-id="98b8a-122">In this approach, the adapter clients enter the connection parameters directly in the connection URI.</span></span> <span data-ttu-id="98b8a-123">这不需要的 net 服务名称必须包含在客户端计算机上的 tnsnames.ora 文件中。</span><span class="sxs-lookup"><span data-stu-id="98b8a-123">This does not require the net service name to be present in the tnsnames.ora file on the client computer.</span></span> <span data-ttu-id="98b8a-124">此方法甚至不需要在客户端计算机上显示的 tnsnames.ora 文件。</span><span class="sxs-lookup"><span data-stu-id="98b8a-124">This approach does not even require the tnsnames.ora file to be present on the client computer.</span></span>  
+  
+    > [!IMPORTANT]
+    >  <span data-ttu-id="98b8a-125">如果你在事务中执行操作，则不支持这种模式的连接。</span><span class="sxs-lookup"><span data-stu-id="98b8a-125">This mode of connectivity is not supported if you are performing operations in a transaction.</span></span> <span data-ttu-id="98b8a-126">这是因为 Oracle 客户端的限制。</span><span class="sxs-lookup"><span data-stu-id="98b8a-126">This is due to a limitation of Oracle Client.</span></span>  
+
+## <a name="in-this-section"></a><span data-ttu-id="98b8a-127">在本节中</span><span class="sxs-lookup"><span data-stu-id="98b8a-127">In this section</span></span>    
+ <span data-ttu-id="98b8a-128">以下主题介绍如何之间建立连接[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]和 Oracle E-business Suite:</span><span class="sxs-lookup"><span data-stu-id="98b8a-128">The following topics describe how to establish a connection between the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] and Oracle E-Business Suite:</span></span>  
+  
+-   <span data-ttu-id="98b8a-129">[配置 Oracle 客户端为 E-business Suite 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md)： 有关使用 tnsnames.ora 到 cconfiguring Oracle 客户端 （仅在使用 tnsnames.ora 以建立连接时，才需要） 的信息</span><span class="sxs-lookup"><span data-stu-id="98b8a-129">[Configure the Oracle client for the E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md): Information about using tnsnames.ora to cconfiguring the Oracle client (required only if using the tnsnames.ora to establish the connection)</span></span>  
+  
+-   <span data-ttu-id="98b8a-130">[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)： 有关连接属性和 Oracle E-business Suite 连接 URI 的结构信息</span><span class="sxs-lookup"><span data-stu-id="98b8a-130">[Create the Oracle E-Business Suite connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md): Information about the connection properties and the structure of the Oracle E-Business Suite connection URI</span></span>
+  
+-   <span data-ttu-id="98b8a-131">[将连接到使用 Windows 身份验证的 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md)： 有关连接到 Oracle 使用 Windows 身份验证信息</span><span class="sxs-lookup"><span data-stu-id="98b8a-131">[Connect to Oracle E-Business Suite using Windows Authentication](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md): Information about connecting to Oracle using Windows Authentication</span></span>
+  

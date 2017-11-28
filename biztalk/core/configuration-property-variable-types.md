@@ -1,0 +1,54 @@
+---
+title: "配置属性变量类型 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- adapters, properties
+- binding files, properties
+- binding files, data types
+- adapters, data types
+ms.assetid: 703219ce-e275-4a07-a2ad-28010d8363e6
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 05b861100fb7843a95b250c233084c13924c28dc
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuration-property-variable-types"></a><span data-ttu-id="e5887-102">配置属性变量类型</span><span class="sxs-lookup"><span data-stu-id="e5887-102">Configuration Property Variable Types</span></span>
+<span data-ttu-id="e5887-103">绑定文件的 TransportTypeData\CustomProps 节点中的适配器配置属性遵从 .NET Framework VarEnum 枚举中可用的数据类型。</span><span class="sxs-lookup"><span data-stu-id="e5887-103">The adapter configuration properties in a TransportTypeData\CustomProps node of a binding file adhere to the data types available in the .NET Framework VarEnum enumeration.</span></span> <span data-ttu-id="e5887-104">在下表中列出了相关的数据类型：</span><span class="sxs-lookup"><span data-stu-id="e5887-104">Relevant data types are listed in the table below:</span></span>  
+  
+|<span data-ttu-id="e5887-105">成员名称</span><span class="sxs-lookup"><span data-stu-id="e5887-105">Member Name</span></span>|<span data-ttu-id="e5887-106">Description</span><span class="sxs-lookup"><span data-stu-id="e5887-106">Description</span></span>|<span data-ttu-id="e5887-107">“值”</span><span class="sxs-lookup"><span data-stu-id="e5887-107">Value</span></span>|  
+|-----------------|-----------------|-----------|  
+|<span data-ttu-id="e5887-108">VT_EMPTY</span><span class="sxs-lookup"><span data-stu-id="e5887-108">VT_EMPTY</span></span>|<span data-ttu-id="e5887-109">指示未指定值。</span><span class="sxs-lookup"><span data-stu-id="e5887-109">Indicates that a value was not specified.</span></span>|<span data-ttu-id="e5887-110">0</span><span class="sxs-lookup"><span data-stu-id="e5887-110">0</span></span>|  
+|<span data-ttu-id="e5887-111">VT_NULL</span><span class="sxs-lookup"><span data-stu-id="e5887-111">VT_NULL</span></span>|<span data-ttu-id="e5887-112">指示空值（类似于 SQL 中的空值）。</span><span class="sxs-lookup"><span data-stu-id="e5887-112">Indicates a null value, similar to a null value in SQL.</span></span>|<span data-ttu-id="e5887-113">1</span><span class="sxs-lookup"><span data-stu-id="e5887-113">1</span></span>|  
+|<span data-ttu-id="e5887-114">VT_I2</span><span class="sxs-lookup"><span data-stu-id="e5887-114">VT_I2</span></span>|<span data-ttu-id="e5887-115">指示短整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-115">Indicates a short integer.</span></span>|<span data-ttu-id="e5887-116">2</span><span class="sxs-lookup"><span data-stu-id="e5887-116">2</span></span>|  
+|<span data-ttu-id="e5887-117">VT_I4</span><span class="sxs-lookup"><span data-stu-id="e5887-117">VT_I4</span></span>|<span data-ttu-id="e5887-118">指示长整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-118">Indicates a long integer.</span></span>|<span data-ttu-id="e5887-119">3</span><span class="sxs-lookup"><span data-stu-id="e5887-119">3</span></span>|  
+|<span data-ttu-id="e5887-120">VT_R4</span><span class="sxs-lookup"><span data-stu-id="e5887-120">VT_R4</span></span>|<span data-ttu-id="e5887-121">指示浮点值。</span><span class="sxs-lookup"><span data-stu-id="e5887-121">Indicates a float value.</span></span>|<span data-ttu-id="e5887-122">4</span><span class="sxs-lookup"><span data-stu-id="e5887-122">4</span></span>|  
+|<span data-ttu-id="e5887-123">VT_R8</span><span class="sxs-lookup"><span data-stu-id="e5887-123">VT_R8</span></span>|<span data-ttu-id="e5887-124">指示双精度值。</span><span class="sxs-lookup"><span data-stu-id="e5887-124">Indicates a double value.</span></span>|<span data-ttu-id="e5887-125">5</span><span class="sxs-lookup"><span data-stu-id="e5887-125">5</span></span>|  
+|<span data-ttu-id="e5887-126">VT_CY</span><span class="sxs-lookup"><span data-stu-id="e5887-126">VT_CY</span></span>|<span data-ttu-id="e5887-127">指示货币值。</span><span class="sxs-lookup"><span data-stu-id="e5887-127">Indicates a currency value.</span></span>|<span data-ttu-id="e5887-128">6</span><span class="sxs-lookup"><span data-stu-id="e5887-128">6</span></span>|  
+|<span data-ttu-id="e5887-129">VT_DATE</span><span class="sxs-lookup"><span data-stu-id="e5887-129">VT_DATE</span></span>|<span data-ttu-id="e5887-130">指示 DATE 值。</span><span class="sxs-lookup"><span data-stu-id="e5887-130">Indicates a DATE value.</span></span>|<span data-ttu-id="e5887-131">7</span><span class="sxs-lookup"><span data-stu-id="e5887-131">7</span></span>|  
+|<span data-ttu-id="e5887-132">VT_BSTR</span><span class="sxs-lookup"><span data-stu-id="e5887-132">VT_BSTR</span></span>|<span data-ttu-id="e5887-133">指示 BSTR 字符串。</span><span class="sxs-lookup"><span data-stu-id="e5887-133">Indicates a BSTR string.</span></span>|<span data-ttu-id="e5887-134">8</span><span class="sxs-lookup"><span data-stu-id="e5887-134">8</span></span>|  
+|<span data-ttu-id="e5887-135">VT_DISPATCH</span><span class="sxs-lookup"><span data-stu-id="e5887-135">VT_DISPATCH</span></span>|<span data-ttu-id="e5887-136">指示 IDispatch 指针。</span><span class="sxs-lookup"><span data-stu-id="e5887-136">Indicates an IDispatch pointer.</span></span>|<span data-ttu-id="e5887-137">9</span><span class="sxs-lookup"><span data-stu-id="e5887-137">9</span></span>|  
+|<span data-ttu-id="e5887-138">VT_ERROR</span><span class="sxs-lookup"><span data-stu-id="e5887-138">VT_ERROR</span></span>|<span data-ttu-id="e5887-139">指示 SCODE。</span><span class="sxs-lookup"><span data-stu-id="e5887-139">Indicates an SCODE.</span></span>|<span data-ttu-id="e5887-140">10</span><span class="sxs-lookup"><span data-stu-id="e5887-140">10</span></span>|  
+|<span data-ttu-id="e5887-141">VT_BOOL</span><span class="sxs-lookup"><span data-stu-id="e5887-141">VT_BOOL</span></span>|<span data-ttu-id="e5887-142">指示一个布尔值。</span><span class="sxs-lookup"><span data-stu-id="e5887-142">Indicates a Boolean value.</span></span>|<span data-ttu-id="e5887-143">11</span><span class="sxs-lookup"><span data-stu-id="e5887-143">11</span></span>|  
+|<span data-ttu-id="e5887-144">VT_VARIANT</span><span class="sxs-lookup"><span data-stu-id="e5887-144">VT_VARIANT</span></span>|<span data-ttu-id="e5887-145">指示 VARIANT 指针。</span><span class="sxs-lookup"><span data-stu-id="e5887-145">Indicates a VARIANT far pointer.</span></span>|<span data-ttu-id="e5887-146">12</span><span class="sxs-lookup"><span data-stu-id="e5887-146">12</span></span>|  
+|<span data-ttu-id="e5887-147">VT_UNKNOWN</span><span class="sxs-lookup"><span data-stu-id="e5887-147">VT_UNKNOWN</span></span>|<span data-ttu-id="e5887-148">指示 IUnknown 指针。</span><span class="sxs-lookup"><span data-stu-id="e5887-148">Indicates an IUnknown pointer.</span></span>|<span data-ttu-id="e5887-149">13</span><span class="sxs-lookup"><span data-stu-id="e5887-149">13</span></span>|  
+|<span data-ttu-id="e5887-150">VT_DECIMAL</span><span class="sxs-lookup"><span data-stu-id="e5887-150">VT_DECIMAL</span></span>|<span data-ttu-id="e5887-151">指示小数值。</span><span class="sxs-lookup"><span data-stu-id="e5887-151">Indicates a decimal value.</span></span>|<span data-ttu-id="e5887-152">14</span><span class="sxs-lookup"><span data-stu-id="e5887-152">14</span></span>|  
+|<span data-ttu-id="e5887-153">VT_I1</span><span class="sxs-lookup"><span data-stu-id="e5887-153">VT_I1</span></span>|<span data-ttu-id="e5887-154">指示 char 值。</span><span class="sxs-lookup"><span data-stu-id="e5887-154">Indicates a char value.</span></span>|<span data-ttu-id="e5887-155">16</span><span class="sxs-lookup"><span data-stu-id="e5887-155">16</span></span>|  
+|<span data-ttu-id="e5887-156">VT_UI1</span><span class="sxs-lookup"><span data-stu-id="e5887-156">VT_UI1</span></span>|<span data-ttu-id="e5887-157">指示字节。</span><span class="sxs-lookup"><span data-stu-id="e5887-157">Indicates a byte.</span></span>|<span data-ttu-id="e5887-158">17</span><span class="sxs-lookup"><span data-stu-id="e5887-158">17</span></span>|  
+|<span data-ttu-id="e5887-159">VT_UI2</span><span class="sxs-lookup"><span data-stu-id="e5887-159">VT_UI2</span></span>|<span data-ttu-id="e5887-160">指示无符号短整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-160">Indicates an unsigned short.</span></span>|<span data-ttu-id="e5887-161">18</span><span class="sxs-lookup"><span data-stu-id="e5887-161">18</span></span>|  
+|<span data-ttu-id="e5887-162">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="e5887-162">VT_UI4</span></span>|<span data-ttu-id="e5887-163">指示无符号长整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-163">Indicates an unsigned long.</span></span>|<span data-ttu-id="e5887-164">19</span><span class="sxs-lookup"><span data-stu-id="e5887-164">19</span></span>|  
+|<span data-ttu-id="e5887-165">VT_I8</span><span class="sxs-lookup"><span data-stu-id="e5887-165">VT_I8</span></span>|<span data-ttu-id="e5887-166">指示 64 位整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-166">Indicates a 64-bit integer.</span></span>|<span data-ttu-id="e5887-167">20</span><span class="sxs-lookup"><span data-stu-id="e5887-167">20</span></span>|  
+|<span data-ttu-id="e5887-168">VT_UI8</span><span class="sxs-lookup"><span data-stu-id="e5887-168">VT_UI8</span></span>|<span data-ttu-id="e5887-169">指示 64 位无符号整数。</span><span class="sxs-lookup"><span data-stu-id="e5887-169">Indicates an 64-bit unsigned integer.</span></span>|<span data-ttu-id="e5887-170">21</span><span class="sxs-lookup"><span data-stu-id="e5887-170">21</span></span>|  
+|<span data-ttu-id="e5887-171">VT_CLSID</span><span class="sxs-lookup"><span data-stu-id="e5887-171">VT_CLSID</span></span>|<span data-ttu-id="e5887-172">指示类 ID。</span><span class="sxs-lookup"><span data-stu-id="e5887-172">Indicates a class ID.</span></span>|<span data-ttu-id="e5887-173">72</span><span class="sxs-lookup"><span data-stu-id="e5887-173">72</span></span>|  
+|<span data-ttu-id="e5887-174">VT_ARRAY</span><span class="sxs-lookup"><span data-stu-id="e5887-174">VT_ARRAY</span></span>|<span data-ttu-id="e5887-175">指示 SAFEARRAY 指针。</span><span class="sxs-lookup"><span data-stu-id="e5887-175">Indicates a SAFEARRAY pointer.</span></span>|<span data-ttu-id="e5887-176">8192</span><span class="sxs-lookup"><span data-stu-id="e5887-176">8192</span></span>|  
+|<span data-ttu-id="e5887-177">VT_BYREF</span><span class="sxs-lookup"><span data-stu-id="e5887-177">VT_BYREF</span></span>|<span data-ttu-id="e5887-178">指示值为引用。</span><span class="sxs-lookup"><span data-stu-id="e5887-178">Indicates that a value is a reference.</span></span>|<span data-ttu-id="e5887-179">16384</span><span class="sxs-lookup"><span data-stu-id="e5887-179">16384</span></span>|

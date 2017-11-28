@@ -1,0 +1,59 @@
+---
+title: "在 SMTP 标头中使用宏的限制 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- configuring [SMTP adapters], restrictions
+- macros, SMTP headers [SMTP adapters]
+- SMTP adapters, macros
+- SMTP adapters, restrictions
+- configuring [SMTP adapters], SMTP headers
+- SMTP adapters, SMTP headers
+- configuring [SMTP adapters], macros
+- SMTP headers
+ms.assetid: ceab0917-cb3c-423b-a15f-63747ab1d8da
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a5bf13f97d3cee4bf5930c448c3444aead898624
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="restrictions-on-using-macros-in-smtp-headers"></a><span data-ttu-id="93f79-102">在 SMTP 标头中使用宏的限制</span><span class="sxs-lookup"><span data-stu-id="93f79-102">Restrictions on Using Macros in SMTP Headers</span></span>
+<span data-ttu-id="93f79-103">您可以使用预定义的宏集合动态地在 SMTP 消息标头上构成“主题” 、“收件人” 、“发件人” 和“抄送”  属性。</span><span class="sxs-lookup"><span data-stu-id="93f79-103">You can form the **Subject**, **To**, **From**, and **CC** properties on an SMTP message header dynamically by using a predefined set of macros.</span></span> <span data-ttu-id="93f79-104">在发送消息前，SMTP 发送处理程序使用宏的值替代标头中的所有宏。</span><span class="sxs-lookup"><span data-stu-id="93f79-104">Before sending a message, the SMTP send handler substitutes all the macros in headers with their values.</span></span> <span data-ttu-id="93f79-105">当形成一个标头时，您可以使用多个不同的宏。</span><span class="sxs-lookup"><span data-stu-id="93f79-105">You can use several different macros when forming one header.</span></span>  
+  
+ <span data-ttu-id="93f79-106">如果以下项之一为 Ture，则 SMTP 发送处理程序不会替代“收件人” 、“发件人” 或“抄送”  标头中的宏：</span><span class="sxs-lookup"><span data-stu-id="93f79-106">The SMTP send handler does not substitute macros in the **To**, **From**, or **CC** header if any of the following are true:</span></span>  
+  
+-   <span data-ttu-id="93f79-107">未设置相应的系统属性。</span><span class="sxs-lookup"><span data-stu-id="93f79-107">The corresponding system property is not set.</span></span>  
+  
+-   <span data-ttu-id="93f79-108">宏拼写错误。</span><span class="sxs-lookup"><span data-stu-id="93f79-108">The macro is misspelled.</span></span>  
+  
+-   <span data-ttu-id="93f79-109">宏的值所包含的符号对于 SMTP 标头无效。</span><span class="sxs-lookup"><span data-stu-id="93f79-109">The value for the macro contains symbols that are not valid for the SMTP headers.</span></span>  
+  
+ <span data-ttu-id="93f79-110">如果满足这些条件，SMTP 发送处理程序使宏不变，例如， **%sourceparty%@somedomain.com** 或**消息从 %sourceparty%**。</span><span class="sxs-lookup"><span data-stu-id="93f79-110">If any of these conditions are met, the SMTP send handler leaves the macros as they are, for example, **%SourceParty%@somedomain.com** or **Message from %SourceParty%**.</span></span>  
+  
+ <span data-ttu-id="93f79-111">下表列出了可用于生成“收件人” 、“抄送” 和“主题”  标头的宏：</span><span class="sxs-lookup"><span data-stu-id="93f79-111">The following table lists the macros you can use to build the **To**, **CC**, and **Subject** headers.</span></span>  
+  
+|<span data-ttu-id="93f79-112">宏</span><span class="sxs-lookup"><span data-stu-id="93f79-112">Macro</span></span>|<span data-ttu-id="93f79-113">说明</span><span class="sxs-lookup"><span data-stu-id="93f79-113">Description</span></span>|<span data-ttu-id="93f79-114">用于与“收件人”一起使用</span><span class="sxs-lookup"><span data-stu-id="93f79-114">For use with To</span></span>|<span data-ttu-id="93f79-115">用于与“抄送”一起使用</span><span class="sxs-lookup"><span data-stu-id="93f79-115">For use with CC</span></span>|<span data-ttu-id="93f79-116">用于与“主题”一起使用</span><span class="sxs-lookup"><span data-stu-id="93f79-116">For use with Subject</span></span>|  
+|-----------|-----------------|---------------------|---------------------|--------------------------|  
+|<span data-ttu-id="93f79-117">%MessageID%</span><span class="sxs-lookup"><span data-stu-id="93f79-117">%MessageID%</span></span>|<span data-ttu-id="93f79-118">BizTalk Server 中消息的全局唯一标识符 (GUID)。</span><span class="sxs-lookup"><span data-stu-id="93f79-118">Globally unique identifier (GUID) of the message in BizTalk Server.</span></span> <span data-ttu-id="93f79-119">该值来自消息上下文属性 **BTS.MessageID**。</span><span class="sxs-lookup"><span data-stu-id="93f79-119">The value comes from the message context property **BTS.MessageID**.</span></span>|<span data-ttu-id="93f79-120">否</span><span class="sxs-lookup"><span data-stu-id="93f79-120">No</span></span>|<span data-ttu-id="93f79-121">是</span><span class="sxs-lookup"><span data-stu-id="93f79-121">No</span></span>|<span data-ttu-id="93f79-122">是</span><span class="sxs-lookup"><span data-stu-id="93f79-122">Yes</span></span>|  
+|<span data-ttu-id="93f79-123">%datetime_bts2000%</span><span class="sxs-lookup"><span data-stu-id="93f79-123">%datetime_bts2000%</span></span>|<span data-ttu-id="93f79-124">YYYYMMDDhhmmsss 格式的 UTC 日期时间，其中，sss 表示秒和毫秒（例如，199707121035234 表示 1997/07/12 10:35:23 和 400 毫秒）。</span><span class="sxs-lookup"><span data-stu-id="93f79-124">UTC date time in the format YYYYMMDDhhmmsss, where sss means seconds and milliseconds (for example, 199707121035234 means 1997/07/12, 10:35:23 and 400 milliseconds).</span></span>|<span data-ttu-id="93f79-125">否</span><span class="sxs-lookup"><span data-stu-id="93f79-125">No</span></span>|<span data-ttu-id="93f79-126">是</span><span class="sxs-lookup"><span data-stu-id="93f79-126">No</span></span>|<span data-ttu-id="93f79-127">是</span><span class="sxs-lookup"><span data-stu-id="93f79-127">Yes</span></span>|  
+|<span data-ttu-id="93f79-128">%datetime%</span><span class="sxs-lookup"><span data-stu-id="93f79-128">%datetime%</span></span>|<span data-ttu-id="93f79-129">YYYY-MM-DDThhmmss 格式的 UTC 日期时间（例如 1997-07-12T103508）。</span><span class="sxs-lookup"><span data-stu-id="93f79-129">UTC date time in the format YYYY-MM-DDThhmmss (for example, 1997-07-12T103508).</span></span>|<span data-ttu-id="93f79-130">否</span><span class="sxs-lookup"><span data-stu-id="93f79-130">No</span></span>|<span data-ttu-id="93f79-131">是</span><span class="sxs-lookup"><span data-stu-id="93f79-131">No</span></span>|<span data-ttu-id="93f79-132">是</span><span class="sxs-lookup"><span data-stu-id="93f79-132">Yes</span></span>|  
+|<span data-ttu-id="93f79-133">%datetime.tz%</span><span class="sxs-lookup"><span data-stu-id="93f79-133">%datetime.tz%</span></span>|<span data-ttu-id="93f79-134">本地日期时间加上 GMT 时区，格式为 YYYY-MM-DDThhmmssTZD（例如 1997-07-12T103508+800）。</span><span class="sxs-lookup"><span data-stu-id="93f79-134">Local date time plus time zone from GMT in the format YYYY-MM-DDThhmmssTZD, (for example, 1997-07-12T103508+800).</span></span>|<span data-ttu-id="93f79-135">否</span><span class="sxs-lookup"><span data-stu-id="93f79-135">No</span></span>|<span data-ttu-id="93f79-136">是</span><span class="sxs-lookup"><span data-stu-id="93f79-136">No</span></span>|<span data-ttu-id="93f79-137">是</span><span class="sxs-lookup"><span data-stu-id="93f79-137">Yes</span></span>|  
+|<span data-ttu-id="93f79-138">%time%</span><span class="sxs-lookup"><span data-stu-id="93f79-138">%time%</span></span>|<span data-ttu-id="93f79-139">hhmmss 格式的 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="93f79-139">UTC time in the format hhmmss.</span></span>|<span data-ttu-id="93f79-140">否</span><span class="sxs-lookup"><span data-stu-id="93f79-140">No</span></span>|<span data-ttu-id="93f79-141">是</span><span class="sxs-lookup"><span data-stu-id="93f79-141">No</span></span>|<span data-ttu-id="93f79-142">是</span><span class="sxs-lookup"><span data-stu-id="93f79-142">Yes</span></span>|  
+|<span data-ttu-id="93f79-143">%time.tz%</span><span class="sxs-lookup"><span data-stu-id="93f79-143">%time.tz%</span></span>|<span data-ttu-id="93f79-144">本地时间加上 GMT 时区，格式为 hhmmssTZD（例如 124525+530）。</span><span class="sxs-lookup"><span data-stu-id="93f79-144">Local time plus time zone from GMT in the format hhmmssTZD (for example, 124525+530).</span></span>|<span data-ttu-id="93f79-145">否</span><span class="sxs-lookup"><span data-stu-id="93f79-145">No</span></span>|<span data-ttu-id="93f79-146">是</span><span class="sxs-lookup"><span data-stu-id="93f79-146">No</span></span>|<span data-ttu-id="93f79-147">是</span><span class="sxs-lookup"><span data-stu-id="93f79-147">Yes</span></span>|  
+|<span data-ttu-id="93f79-148">%SourceParty%</span><span class="sxs-lookup"><span data-stu-id="93f79-148">%SourceParty%</span></span>|<span data-ttu-id="93f79-149">文件适配器从其接收消息的源参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="93f79-149">Name of the source party from which the File adapter received the message.</span></span>|<span data-ttu-id="93f79-150">否</span><span class="sxs-lookup"><span data-stu-id="93f79-150">No</span></span>|<span data-ttu-id="93f79-151">是</span><span class="sxs-lookup"><span data-stu-id="93f79-151">No</span></span>|<span data-ttu-id="93f79-152">是</span><span class="sxs-lookup"><span data-stu-id="93f79-152">Yes</span></span>|  
+|<span data-ttu-id="93f79-153">%SourcePartyQualifier%</span><span class="sxs-lookup"><span data-stu-id="93f79-153">%SourcePartyQualifier%</span></span>|<span data-ttu-id="93f79-154">文件适配器从其接收消息的源参与方的限定符。</span><span class="sxs-lookup"><span data-stu-id="93f79-154">Qualifier of the source party from which the File adapter received the message.</span></span>|<span data-ttu-id="93f79-155">否</span><span class="sxs-lookup"><span data-stu-id="93f79-155">No</span></span>|<span data-ttu-id="93f79-156">是</span><span class="sxs-lookup"><span data-stu-id="93f79-156">No</span></span>|<span data-ttu-id="93f79-157">是</span><span class="sxs-lookup"><span data-stu-id="93f79-157">Yes</span></span>|  
+|<span data-ttu-id="93f79-158">%DestinationParty%</span><span class="sxs-lookup"><span data-stu-id="93f79-158">%DestinationParty%</span></span>|<span data-ttu-id="93f79-159">目标参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="93f79-159">Name of the destination party.</span></span> <span data-ttu-id="93f79-160">该值来自消息上下文属性 **BTS.DestinationParty**。</span><span class="sxs-lookup"><span data-stu-id="93f79-160">The value comes from the message context property **BTS.DestinationParty**.</span></span>|<span data-ttu-id="93f79-161">是</span><span class="sxs-lookup"><span data-stu-id="93f79-161">Yes</span></span>|<span data-ttu-id="93f79-162">是</span><span class="sxs-lookup"><span data-stu-id="93f79-162">Yes</span></span>|<span data-ttu-id="93f79-163">是</span><span class="sxs-lookup"><span data-stu-id="93f79-163">Yes</span></span>|  
+|<span data-ttu-id="93f79-164">%DestinationPartyQualifier%</span><span class="sxs-lookup"><span data-stu-id="93f79-164">%DestinationPartyQualifier%</span></span>|<span data-ttu-id="93f79-165">目标参与方的限定符。</span><span class="sxs-lookup"><span data-stu-id="93f79-165">Qualifier of the destination party.</span></span> <span data-ttu-id="93f79-166">该值来自消息上下文属性 **BTS.DestinationPartyQualifier**。</span><span class="sxs-lookup"><span data-stu-id="93f79-166">The value comes from the message context property **BTS.DestinationPartyQualifier**.</span></span>|<span data-ttu-id="93f79-167">否</span><span class="sxs-lookup"><span data-stu-id="93f79-167">No</span></span>|<span data-ttu-id="93f79-168">是</span><span class="sxs-lookup"><span data-stu-id="93f79-168">No</span></span>|<span data-ttu-id="93f79-169">是</span><span class="sxs-lookup"><span data-stu-id="93f79-169">Yes</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="93f79-170">另请参阅</span><span class="sxs-lookup"><span data-stu-id="93f79-170">See Also</span></span>  
+ [<span data-ttu-id="93f79-171">配置 SMTP 适配器时的限制</span><span class="sxs-lookup"><span data-stu-id="93f79-171">Restrictions When Configuring the SMTP Adapter</span></span>](../core/restrictions-when-configuring-the-smtp-adapter.md)

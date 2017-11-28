@@ -1,0 +1,1 @@
+<span data-ttu-id="299ae-101">适配器服务开发向导</span><span class="sxs-lookup"><span data-stu-id="299ae-101">Adapter Service Development Wizard</span></span>

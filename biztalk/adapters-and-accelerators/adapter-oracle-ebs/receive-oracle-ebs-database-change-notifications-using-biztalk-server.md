@@ -1,0 +1,62 @@
+---
+title: "接收使用 BizTalk Server Oracle E-business Suite 数据库更改通知 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: e92520cf-c552-4225-abba-8e03f73ecf70
+caps.latest.revision: "16"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 24ac132f599256c2051763ed849e4e5329563201
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="receive-oracle-e-business-suite-database-change-notifications-using-biztalk-server"></a><span data-ttu-id="823ff-102">接收使用 BizTalk Server Oracle E-business Suite 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="823ff-102">Receive Oracle E-Business Suite database change notifications using BizTalk Server</span></span>
+<span data-ttu-id="823ff-103">你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle E-business Suite 接收数据库更改通知消息。</span><span class="sxs-lookup"><span data-stu-id="823ff-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive database change notification messages from Oracle E-Business Suite.</span></span> <span data-ttu-id="823ff-104">你可以指定适配器用于 Oracle E-business Suite 通知注册的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="823ff-104">You can specify a SELECT statement that the adapter uses to register for notifications with Oracle E-Business Suite.</span></span> <span data-ttu-id="823ff-105">适配器将结果集中为 SELECT 语句中，为通知注册更改时接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="823ff-105">The adapter receives a notification message when the result set for the SELECT statement, registered for notification, changes.</span></span> <span data-ttu-id="823ff-106">有关如何适配器支持通知的详细信息，请参阅[接收使用 Oracle E-business Suite 适配器数据库更改通知时的注意事项](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="823ff-106">For more information about how the adapter supports notification, see [Considerations for Receiving Database Change Notifications using the Oracle E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md).</span></span>  
+  
+ <span data-ttu-id="823ff-107">以下是某些情况下，你可以在其中配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]从 Oracle E-business Suite 接收通知：</span><span class="sxs-lookup"><span data-stu-id="823ff-107">Following are some scenarios in which you can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to receive notifications from Oracle E-Business Suite:</span></span>  
+  
+-   <span data-ttu-id="823ff-108">适配器客户端获取仅"增量"通知，例如，仅为已对数据库表从上次通知这些更改。</span><span class="sxs-lookup"><span data-stu-id="823ff-108">Adapter clients get only “incremental” notification, for example, only for those changes that were made to a database table since the last notification.</span></span>  
+  
+-   <span data-ttu-id="823ff-109">如果大量的行插入到数据库表中，适配器客户端可以配置多个接收到的负载平衡接收通知的位置。</span><span class="sxs-lookup"><span data-stu-id="823ff-109">If a large number of rows are inserted into a database table, the adapter clients can configure multiple receive locations to load-balance receiving notifications.</span></span>  
+  
+ <span data-ttu-id="823ff-110">适配器客户端收到的通知消息后，他们能够执行特定任务根据收到的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="823ff-110">After the adapter clients receive a notification message, they can perform specific tasks based on the kind of notification received.</span></span> <span data-ttu-id="823ff-111">例如，它执行的任务，如果收到插入通知的一组和另一组任务的如果收到更新通知的方式可以设计 BizTalk 业务流程。</span><span class="sxs-lookup"><span data-stu-id="823ff-111">For example, a BizTalk orchestration can be designed in such a way that it performs one set of tasks if an insert notification is received and another set of tasks if an update notification is received.</span></span>  
+  
+> [!CAUTION]
+>  <span data-ttu-id="823ff-112">如果没有在 Oracle 数据库和适配器客户端之间的网络中断，通知将不发送到适配器客户端的网络中断期间对 Oracle 数据库进行的更改并且之后。</span><span class="sxs-lookup"><span data-stu-id="823ff-112">If there is a network outage between the Oracle database and the adapter client, the notifications will not be sent to the adapter clients for the changes done on the Oracle database during the period of network outage, and thereafter.</span></span> <span data-ttu-id="823ff-113">因此，你必须使用轮询操作而不是关键方案的通知操作。</span><span class="sxs-lookup"><span data-stu-id="823ff-113">Therefore, you must use the Polling operation instead of the Notification operation for critical scenarios.</span></span>  
+  
+ <span data-ttu-id="823ff-114">此部分中的主题提供有关如何配置每种方案的适配器的信息。</span><span class="sxs-lookup"><span data-stu-id="823ff-114">The topics in this section provide information on how to configure the adapter for each of these scenarios.</span></span> <span data-ttu-id="823ff-115">若要开始从 Oracle E-business Suite 使用获取通知[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，你必须指定特定的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="823ff-115">To start getting notifications from Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], you must specify certain binding properties.</span></span> <span data-ttu-id="823ff-116">有关与通知相关的绑定属性的详细信息，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="823ff-116">For more information about the binding properties related to notifications, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span> <span data-ttu-id="823ff-117">有关通知消息结构的详细信息，请参阅[通知操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-notification-operation2.md)。</span><span class="sxs-lookup"><span data-stu-id="823ff-117">For more information about structure of notification messages, see [Message Schemas for the Notification Operation](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-notification-operation2.md).</span></span>  
+  
+ <span data-ttu-id="823ff-118">用于 Oracle E-business Suite 从接收通知，请确保：</span><span class="sxs-lookup"><span data-stu-id="823ff-118">For receiving notifications from Oracle E-Business Suite, make sure:</span></span>  
+  
+-   <span data-ttu-id="823ff-119">你可以使用该适配器连接到受支持的 Oracle 数据库版本。</span><span class="sxs-lookup"><span data-stu-id="823ff-119">You use the adapter to connect to a supported Oracle database version.</span></span> <span data-ttu-id="823ff-120">10.2 之前的 oracle 数据库版本不支持通知。</span><span class="sxs-lookup"><span data-stu-id="823ff-120">Oracle database versions prior to 10.2 do not support notifications.</span></span>  
+  
+-   <span data-ttu-id="823ff-121">**更改通知**权限，才能使用数据库更改通知的接收。</span><span class="sxs-lookup"><span data-stu-id="823ff-121">The **change notification** privilege is required for receiving database change notifications.</span></span>  <span data-ttu-id="823ff-122">若要配置此特权，连接到 Oracle 数据库使用管理权限，然后在 SQL 提示符处键入以下命令。</span><span class="sxs-lookup"><span data-stu-id="823ff-122">To configure this privilege, connect to Oracle database using administrative privileges and then type the following command on the SQL prompt.</span></span>  
+  
+    ```  
+    grant change notification to <user name>  
+    ```  
+  
+-   <span data-ttu-id="823ff-123">决定在 TCP 端口上要 ODP.NET 用于接收从 Oracle 数据库的数据库更改通知。</span><span class="sxs-lookup"><span data-stu-id="823ff-123">Decide on a TCP port you want ODP.NET to use for receiving database change notifications from Oracle database.</span></span> <span data-ttu-id="823ff-124">将该端口添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="823ff-124">Add that port to Windows Firewall exceptions list.</span></span> <span data-ttu-id="823ff-125">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。</span><span class="sxs-lookup"><span data-stu-id="823ff-125">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span> <span data-ttu-id="823ff-126">必须提供相同的端口号为**NotificationPort**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="823ff-126">You must provide the same port number for the **NotificationPort** binding property.</span></span> <span data-ttu-id="823ff-127">有关绑定属性的详细信息，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="823ff-127">For more information about the binding property, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="823ff-128">本节内容</span><span class="sxs-lookup"><span data-stu-id="823ff-128">In This Section</span></span>  
+  
+-   [<span data-ttu-id="823ff-129">接收使用 Oracle E-business Suite 适配器数据库更改通知时的注意事项</span><span class="sxs-lookup"><span data-stu-id="823ff-129">Considerations for Receiving Database Change Notifications using the Oracle E-Business Suite adapter</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)  
+  
+-   [<span data-ttu-id="823ff-130">处理通知邮件完成 Oracle E-business Suite 中的特定任务</span><span class="sxs-lookup"><span data-stu-id="823ff-130">Process Notification Messages to Complete Specific Tasks in Oracle E-Business Suite</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)  
+  
+-   [<span data-ttu-id="823ff-131">接收 Oracle E-business Suite 更改通知以增量方式使用 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="823ff-131">Receive Oracle E-Business Suite Change Notifications Incrementally Using BizTalk Server</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/receive-oracle-ebs-change-notifications-incrementally-using-biztalk-server.md)  
+  
+-   [<span data-ttu-id="823ff-132">接收 Oracle E-business Suite 数据库更改通知上多个接收位置</span><span class="sxs-lookup"><span data-stu-id="823ff-132">Receive Oracle E-Business Suite database Change Notifications On Multiple Receive Locations</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/receive-oracle-ebs-database-change-notifications-on-multiple-receive-locations.md)  
+  
+-   [<span data-ttu-id="823ff-133">接收 Oracle E-business Suite 数据库更改通知后的接收位置细分</span><span class="sxs-lookup"><span data-stu-id="823ff-133">Receive Oracle E-Business Suite Database Change Notifications After a Receive Location Breakdown</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/receive-oracle-ebs-database-change-notifications-after-a-receive-location-stops.md)  
+  
+## <a name="see-also"></a><span data-ttu-id="823ff-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="823ff-134">See Also</span></span>  
+[<span data-ttu-id="823ff-135">开发使用 Oracle E-business Suite 适配器的 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="823ff-135">Develop BizTalk applications using the Oracle E-Business Suite adapter</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/develop-biztalk-applications-using-the-oracle-e-business-suite-adapter.md)

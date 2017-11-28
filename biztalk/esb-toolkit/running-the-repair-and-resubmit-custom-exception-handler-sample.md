@@ -1,0 +1,79 @@
+---
+title: "运行修复并重新提交自定义异常处理程序示例 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 7363c440-44aa-4d08-8290-72787d17ac60
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b8b33765cbe3ca1c8c0c7c3e7679e543678325af
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a><span data-ttu-id="a2dc3-102">运行修复并重新提交自定义异常处理程序示例</span><span class="sxs-lookup"><span data-stu-id="a2dc3-102">Running the Repair and Resubmit Custom Exception Handler Sample</span></span>
+<span data-ttu-id="a2dc3-103">此修复和重新提交自定义异常处理程序的示例演示一种用于将人工干预集成到 ESB 和 Microsoft 基于 BizTalk 应用程序处理并实现一种有用的设计模式的极其有效方法。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-103">The Repair and Resubmit Custom Exception Handler sample demonstrates an extremely effective technique for integrating human intervention into ESB and Microsoft BizTalk–based application processes and implements a useful design pattern.</span></span> <span data-ttu-id="a2dc3-104">示例代码可无缝集成到 ESB 异常管理系统。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-104">The sample code integrates seamlessly into the ESB exception management system.</span></span>  
+  
+ <span data-ttu-id="a2dc3-105">此示例演示如何在业务流程中使用自定义异常处理程序。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-105">The sample shows how you can use a custom exception handler in an orchestration.</span></span> <span data-ttu-id="a2dc3-106">当业务流程 (EAIProcess.odx) 中的进程遇到错误时，异常处理程序生成并发布 ESB 错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-106">When a process in the orchestration (EAIProcess.odx) encounters an error, the exception handler generates and publishes an ESB fault message.</span></span> <span data-ttu-id="a2dc3-107">此错误消息包括其有效负载中的消息 （包括其 BizTalk 相关上下文属性）"中航班"时出现异常和由 BizTalk 业务流程引擎捕获当前 System.Exception 实例。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-107">This fault message includes in its payload the messages (including their BizTalk-related context properties) that were "in flight" when the exception occurred and the current System.Exception instance caught by the BizTalk Orchestration engine.</span></span> <span data-ttu-id="a2dc3-108">发生这种情况，"拒绝"消息和"已批准"消息将通过错误消息中持久化。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-108">When this occurs, a "Denied" message and an "Approved" message are persisted with the fault message.</span></span>  
+  
+ <span data-ttu-id="a2dc3-109">名为 EAIProcessHandler.odx，部署方式分离并作为一个自定义异常处理程序，这第二个业务流程订阅生成 EAIProcess.odx 业务流程中的特定错误代码，并使用该错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-109">A second orchestration named EAIProcessHandler.odx, which is deployed in a decoupled manner and acts as a custom exception handler, subscribes to the specific fault code generated in the EAIProcess.odx orchestration and consumes the fault message.</span></span> <span data-ttu-id="a2dc3-110">此异常处理程序中提取原始消息 （作为类型化的文档），且 System.Exception 实例最初保留在错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-110">This exception handler extracts the original messages (as typed documents) and the System.Exception instances originally persisted in the fault message.</span></span>  
+  
+ <span data-ttu-id="a2dc3-111">原始消息现在变得可用于处理与所有原始上下文属性。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-111">The original messages now become available for processing with all their original context properties.</span></span> <span data-ttu-id="a2dc3-112">自定义异常处理程序 (EAIProcessHandler.odx) 然后将"拒绝"和"已批准"消息写入文件系统在以下位置：</span><span class="sxs-lookup"><span data-stu-id="a2dc3-112">The custom exception handler (EAIProcessHandler.odx) then writes both the "Denied" and the "Approved" messages to the file system in the following locations:</span></span>  
+  
+-   <span data-ttu-id="a2dc3-113">已批准的消息：</span><span class="sxs-lookup"><span data-stu-id="a2dc3-113">Approved message:</span></span>  
+  
+    -   <span data-ttu-id="a2dc3-114">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcess.PostApproval</span><span class="sxs-lookup"><span data-stu-id="a2dc3-114">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcess.PostApproval</span></span>  
+  
+-   <span data-ttu-id="a2dc3-115">修复，重新提交的被拒绝的消息：</span><span class="sxs-lookup"><span data-stu-id="a2dc3-115">Denied message for repair and resubmit:</span></span>  
+  
+    -   <span data-ttu-id="a2dc3-116">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcessHandler.RepairSubmit</span><span class="sxs-lookup"><span data-stu-id="a2dc3-116">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcessHandler.RepairSubmit</span></span>  
+  
+-   <span data-ttu-id="a2dc3-117">被拒绝的消息：</span><span class="sxs-lookup"><span data-stu-id="a2dc3-117">Denied message:</span></span>  
+  
+    -   <span data-ttu-id="a2dc3-118">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcessHandler.PostDecline</span><span class="sxs-lookup"><span data-stu-id="a2dc3-118">\Source\Samples\Exception Handling\Test\Filedrop\EAIProcessHandler.PostDecline</span></span>  
+  
+ <span data-ttu-id="a2dc3-119">异常处理程序修复，重新提交序列化到使用 Microsoft InfoPath 处理指令的文件系统的"拒绝"消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-119">The exception handler serializes the "Denied" message for Repair and Resubmit to the file system using a Microsoft InfoPath processing instruction.</span></span> <span data-ttu-id="a2dc3-120">InfoPath 模板允许用户编辑该表单，然后重新提交结果 （参见图 1），以启动验证消息 EAIProcess.odx 业务流程。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-120">An InfoPath template allows the user to edit the form and resubmit the result (see Figure 1), which starts the EAIProcess.odx orchestration that validates the message.</span></span>  
+  
+ <span data-ttu-id="a2dc3-121">![修复重新提交](../esb-toolkit/media/ch6-repairresubmit.gif "Ch6 RepairResubmit")</span><span class="sxs-lookup"><span data-stu-id="a2dc3-121">![Repair Resubmit](../esb-toolkit/media/ch6-repairresubmit.gif "Ch6-RepairResubmit")</span></span>  
+  
+ <span data-ttu-id="a2dc3-122">**图 1**</span><span class="sxs-lookup"><span data-stu-id="a2dc3-122">**Figure 1**</span></span>  
+  
+ <span data-ttu-id="a2dc3-123">**InfoPath 修复和重新提交模板生成的测试消息**</span><span class="sxs-lookup"><span data-stu-id="a2dc3-123">**A test message generated by the InfoPath Repair and Resubmit template**</span></span>  
+  
+ <span data-ttu-id="a2dc3-124">此外，没有名为所有泛型发送端口。配置为使用 GlobalFaultProcessor 管道的 Exceptions_FILE。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-124">Additionally, there is a generic send port named ALL.Exceptions_FILE that is configured to use the GlobalFaultProcessor pipeline.</span></span> <span data-ttu-id="a2dc3-125">此端口在系统中订阅的所有异常，这两个 BizTalk 失败消息将消息路由和 ESB 错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-125">This port subscribes to all exceptions in the system, both BizTalk failed message routing messages and ESB fault messages.</span></span> <span data-ttu-id="a2dc3-126">异常管理框架对它们进行规范化所有成单一格式，并序列化这些使用到文件夹 \Source\Samples\Exception Handling\Test\Filedrop\All_Exceptions InfoPath 处理指令。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-126">The Exception Management Framework normalizes them all to a single format and serializes them using an InfoPath processing instruction to the folder \Source\Samples\Exception Handling\Test\Filedrop\All_Exceptions.</span></span>  
+  
+## <a name="installation"></a><span data-ttu-id="a2dc3-127">安装</span><span class="sxs-lookup"><span data-stu-id="a2dc3-127">Installation</span></span>  
+ <span data-ttu-id="a2dc3-128">所有异常管理示例都使用的相同的一套核心服务以及 BizTalk 应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-128">All the exception management samples use the same set of core services and BizTalk application artifacts.</span></span> <span data-ttu-id="a2dc3-129">因此，你必须安装异常管理示例项目仅一次能够运行管理示例的所有异常。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-129">Therefore, you have to install the exception management sample artifacts only once to be able to run all the exception management samples.</span></span> <span data-ttu-id="a2dc3-130">有关如何安装异常管理示例的信息，请参阅[安装异常管理示例](../esb-toolkit/installing-the-exception-management-samples.md)。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-130">For information about how to install the exception management samples, see [Installing the Exception Management Samples](../esb-toolkit/installing-the-exception-management-samples.md).</span></span>  
+  
+## <a name="running-the-sample-application"></a><span data-ttu-id="a2dc3-131">运行示例应用程序</span><span class="sxs-lookup"><span data-stu-id="a2dc3-131">Running the Sample Application</span></span>  
+ <span data-ttu-id="a2dc3-132">**若要运行修复和重新提交自定义异常处理程序示例**</span><span class="sxs-lookup"><span data-stu-id="a2dc3-132">**To run the Repair and Resubmit Custom Exception Handler sample**</span></span>  
+  
+1.  <span data-ttu-id="a2dc3-133">首次运行此示例之前，请确保接收位置和发送端口 Url 指向 \Source\Samples\Exception Handling\Test\Filedrop 文件夹中的相应目录。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-133">Before you run this sample for the first time, make sure that the receive location and send port URLs point to the appropriate directories in the \Source\Samples\Exception Handling\Test\Filedrop folder.</span></span> <span data-ttu-id="a2dc3-134">接收位置应指定文件夹 EAIProcess.RequestPort，而发送端口 Url 应指定 EAIProcess.PostApproval 和 EAIProcessHandler.PostDecline 的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-134">The receive location should specify the folder EAIProcess.RequestPort, and the send port URLs should specify the folders EAIProcess.PostApproval and EAIProcessHandler.PostDecline.</span></span>  
+  
+2.  <span data-ttu-id="a2dc3-135">如果 GlobalBank.ESB 应用程序尚未运行，使用 BizTalk 管理控制台来启动它。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-135">If the GlobalBank.ESB application is not already running, use the BizTalk Administration Console to start it.</span></span>  
+  
+3.  <span data-ttu-id="a2dc3-136">将名为 Request_EAIProcessHandler.xml，在 \Source\Samples\Exception Handling\Test\Data 文件夹中，为 EAIProcess.RequestPort_FILE 接收位置指定的文件夹位于该示例文件复制启动示例： \Source\Samples\异常 Handling\Test\Filedrop\EAIProcess.RequestPort。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-136">Start the sample by copying the sample file named Request_EAIProcessHandler.xml, located in the \Source\Samples\Exception Handling\Test\Data folder, to the folder specified for the EAIProcess.RequestPort_FILE receive location: \Source\Samples\Exception Handling\Test\Filedrop\EAIProcess.RequestPort.</span></span>  
+  
+4.  <span data-ttu-id="a2dc3-137">打开名为 EAIProcessHandler.PostDecline （在 \Source\Samples\Exception Handling\Test\Filedrop 文件夹中） 的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-137">Open the folder named EAIProcessHandler.PostDecline (in the \Source\Samples\Exception Handling\Test\Filedrop folder).</span></span> <span data-ttu-id="a2dc3-138">你将看到"已拒绝 *"消息生成的异常处理业务流程。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-138">You will see the "Declined*" message generated by the exception handling orchestration.</span></span>  
+  
+5.  <span data-ttu-id="a2dc3-139">打开名为 EAIProcessHandler.RepairSubmit （在 \Source\Samples\Exception Handling\Test\Filedrop 文件夹中） 的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-139">Open the folder named EAIProcessHandler.RepairSubmit (in the \Source\Samples\Exception Handling\Test\Filedrop folder).</span></span> <span data-ttu-id="a2dc3-140">你将看到生成的异常处理业务流程的"RepairSubmit"消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-140">You will see a "RepairSubmit" message generated by the exception handling orchestration.</span></span>  
+  
+6.  <span data-ttu-id="a2dc3-141">双击 RepairSubmit 文件以在适当的 InfoPath 模板中打开它。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-141">Double-click the RepairSubmit file to open it in the appropriate InfoPath template.</span></span> <span data-ttu-id="a2dc3-142">你将看到准备好进行编辑并重新提交消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-142">You will see the message ready for edit and resubmission.</span></span>  
+  
+7.  <span data-ttu-id="a2dc3-143">更改的值**单价**字段从**0**到**2**，然后单击**提交**按钮位于工具栏上的 InfoPath要提交编辑的文档，返回到以进行处理的 BizTalk 窗体。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-143">Change the value of the **Unit Price** field from **0** to **2**, and then click the **Submit** button located on the toolbar of the InfoPath form to submit the edited document back to BizTalk for processing.</span></span> <span data-ttu-id="a2dc3-144">提交过程使用 BizTalk 配置 HTTP 接收位置。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-144">The submit process uses a BizTalk-configured HTTP receive location.</span></span>  
+  
+8.  <span data-ttu-id="a2dc3-145">导航到 EAIProcess.PostApproval 文件夹 （在 \Source\Samples\Exception Handling\Test\Filedrop 文件夹中）。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-145">Navigate to the EAIProcess.PostApproval folder (in the \Source\Samples\Exception Handling\Test\Filedrop folder).</span></span> <span data-ttu-id="a2dc3-146">现在，你将看到"批准 *"文档包含的单位价格的更新的值。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-146">You will now see the "Approval*" document containing the updated value for the unit price.</span></span>  
+  
+## <a name="how-the-sample-works"></a><span data-ttu-id="a2dc3-147">此示例的工作原理</span><span class="sxs-lookup"><span data-stu-id="a2dc3-147">How the Sample Works</span></span>  
+ <span data-ttu-id="a2dc3-148">提交消息激活 eai 进程业务流程。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-148">The message you submit activates the EAIProcess orchestration.</span></span> <span data-ttu-id="a2dc3-149">当 eai 进程业务流程处理消息时，它尝试 1 除以单位价格。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-149">When the EAIProcess orchestration processes the message, it attempts to divide 1 by the unit price.</span></span> <span data-ttu-id="a2dc3-150">因为单位价格为零，则会发生被零除异常。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-150">Because the unit price is zero, a divide-by-zero exception occurs.</span></span> <span data-ttu-id="a2dc3-151">业务流程的事件处理程序中的代码会捕获此异常，并创建错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-151">Code in the event handler of the orchestration catches this exception and creates a fault message.</span></span> <span data-ttu-id="a2dc3-152">消息中的订单数量是大于 10，因此业务逻辑指示此异常有**FaultCode**字段的值**1000年**。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-152">The order quantity in the message is greater than 10, so the business logic dictates that this exception has a **FaultCode** field value of **1000**.</span></span>  
+  
+ <span data-ttu-id="a2dc3-153">Eai 进程业务流程然后发布到 BizTalk 消息框通过直接绑定的端口，错误消息和业务流程结束。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-153">The EAIProcess orchestration then publishes the fault message to the BizTalk Message Box through a direct-bound port, and the orchestration ends.</span></span>  
+  
+ <span data-ttu-id="a2dc3-154">名为 EAIProcessHandler，订阅具有消息的自定义错误处理程序业务流程**FaultCode**字段的值**1000年**，选取新的错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-154">A custom fault handler orchestration named EAIProcessHandler, which subscribes to messages with a **FaultCode** field value of **1000**, picks up the new fault message.</span></span> <span data-ttu-id="a2dc3-155">业务流程中的代码创建"拒绝"消息和 InfoPath 文件，并将它放置这到 EAIProcessHandler.PostDecline 和 EAIProcessHandler.RepairSubmit 文件夹准备好进行人工干预。</span><span class="sxs-lookup"><span data-stu-id="a2dc3-155">The code in the orchestration creates the "Denied" message and the InfoPath file, and then it places this into the EAIProcessHandler.PostDecline and EAIProcessHandler.RepairSubmit folders ready for human intervention.</span></span>

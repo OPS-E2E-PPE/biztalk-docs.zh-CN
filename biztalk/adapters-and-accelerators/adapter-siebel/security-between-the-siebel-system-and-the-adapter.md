@@ -1,0 +1,39 @@
+---
+title: "Siebel 系统和适配器之间的安全性 |Microsoft 文档"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- security, IPsec
+- connection URI
+- security considerations, between the Siebel system and the adapter
+ms.assetid: 40b03d4e-f489-4dce-ba7b-6b6f394275ac
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: cb9ced17c00432039ff3b85ac85d56e1b6031049
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/20/2017
+---
+# <a name="security-between-the-siebel-system-and-the-adapter"></a><span data-ttu-id="aa214-102">Siebel 系统和适配器之间的安全性</span><span class="sxs-lookup"><span data-stu-id="aa214-102">Security between the Siebel system and the adapter</span></span>
+## <a name="encryption-and-authentication"></a><span data-ttu-id="aa214-103">加密和身份验证</span><span class="sxs-lookup"><span data-stu-id="aa214-103">Encryption and authentication</span></span>
+<span data-ttu-id="aa214-104">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]可以支持 rsa 或 mscrypto 加密与 Siebel 系统交换的数据。</span><span class="sxs-lookup"><span data-stu-id="aa214-104">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] can support rsa or mscrypto encryption on the data that it exchanges with the Siebel system.</span></span> <span data-ttu-id="aa214-105">配置连接 URI 中的通过的查询字符串参数加密模式。</span><span class="sxs-lookup"><span data-stu-id="aa214-105">You configure the encryption mode through a query string parameter in the connection URI.</span></span> <span data-ttu-id="aa214-106">有关 Siebel 连接 URI 的详细信息，请参阅[创建的 Siebel 系统连接 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="aa214-106">For more information about the Siebel connection URI, see [Create The Siebel System Connection URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md).</span></span> <span data-ttu-id="aa214-107">有关通过 Siebel rsa 和 mscrypto 加密支持的详细信息，请参阅 Siebel 文档。</span><span class="sxs-lookup"><span data-stu-id="aa214-107">For more information about rsa and mscrypto encryption support by Siebel, see the Siebel documentation.</span></span>  
+  
+ <span data-ttu-id="aa214-108">指定加密模式可以帮助确保的适配器和 Siebel 系统之间交换的数据隐私但是，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]不提供此类交换支持授权、 身份验证或数据完整性的机制。</span><span class="sxs-lookup"><span data-stu-id="aa214-108">Specifying an encryption mode can help to ensure privacy of data exchanged between the adapter and the Siebel system; however, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] does not provide mechanisms that support authorization, authentication or data integrity on such exchanges.</span></span> <span data-ttu-id="aa214-109">如果你的环境中的关注这些问题，必须提供一种安全机制来帮助缓解的方式。</span><span class="sxs-lookup"><span data-stu-id="aa214-109">If these issues are a concern in your environment, you must provide a security mechanism to help mitigate them.</span></span>  
+  
+ <span data-ttu-id="aa214-110">帮助提供更高的安全性跨网络的一个可能的机制是 Internet 协议安全性 (IPsec)。</span><span class="sxs-lookup"><span data-stu-id="aa214-110">One possible mechanism for helping to provide more security across the network is Internet Protocol Security (IPsec).</span></span> <span data-ttu-id="aa214-111">IPsec 是一种开放标准的保护通过 Internet 协议 (IP) 网络的通信框架。</span><span class="sxs-lookup"><span data-stu-id="aa214-111">IPsec is a framework of open standards for protecting communications over Internet Protocol (IP) networks.</span></span> <span data-ttu-id="aa214-112">有关 IPsec 以及与 Microsoft 产品使用 IPsec 的详细信息，请参阅 Microsoft TechNet 文章"IPsec"在[http://go.microsoft.com/fwlink/?LinkID=196851](http://go.microsoft.com/fwlink/?LinkID=196851)。</span><span class="sxs-lookup"><span data-stu-id="aa214-112">For more information about IPsec and about using IPsec with Microsoft products, see the Microsoft TechNet article "IPsec" at [http://go.microsoft.com/fwlink/?LinkID=196851](http://go.microsoft.com/fwlink/?LinkID=196851).</span></span>  
+  
+ <span data-ttu-id="aa214-113">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持它与你提供的用户名称密码凭据通过 Siebel 系统建立的连接上的授权和身份验证。</span><span class="sxs-lookup"><span data-stu-id="aa214-113">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] supports authorization and authentication on the connections that it establishes with the Siebel system through user name password credentials that you supply.</span></span> <span data-ttu-id="aa214-114">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]使用这些凭据进行身份验证 Siebel 系统上的用户，在打开连接时。</span><span class="sxs-lookup"><span data-stu-id="aa214-114">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] uses these credentials to authenticate the user on the Siebel system when it opens a connection.</span></span> <span data-ttu-id="aa214-115">这些凭据连接上 Siebel 系统提供的授权级别。</span><span class="sxs-lookup"><span data-stu-id="aa214-115">These credentials provide a level of authorization on the Siebel system for the connection.</span></span> <span data-ttu-id="aa214-116">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]提供多种方法可以通过其提供这些凭据。</span><span class="sxs-lookup"><span data-stu-id="aa214-116">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] provides a number of methods through which you can supply these credentials.</span></span> <span data-ttu-id="aa214-117">有关如何更安全地提供 Siebel 凭据 BizTalk 解决方案中的信息，请参阅[Siebel 适配器和 BizTalk Server 使用的安全](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="aa214-117">For information about how to more securely provide Siebel credentials in BizTalk solutions, see [Security with Siebel adapter and BizTalk Server](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md).</span></span> <span data-ttu-id="aa214-118">有关如何更安全地提供 Siebel 系统凭据编程解决方案中的信息，请参阅[Siebel 适配器使用的安全编程](../../adapters-and-accelerators/adapter-siebel/secure-programming-with-the-siebel-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="aa214-118">For information about how to more securely provide Siebel system credentials in programming solutions, see [Secure programming with the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/secure-programming-with-the-siebel-adapter.md).</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="aa214-119">使用的凭据[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]来建立连接到 Siebel 系统不提供消息级别或传输级别的身份验证或授权进行数据在网络传输。</span><span class="sxs-lookup"><span data-stu-id="aa214-119">The credentials used by the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to establish a connection to the Siebel system do not provide message-level or transport-level authentication or authorization for data traveling across the network.</span></span> <span data-ttu-id="aa214-120">它们仅用于打开连接并进行身份验证 Siebel 系统上的用户。</span><span class="sxs-lookup"><span data-stu-id="aa214-120">They are only used to open a connection and authenticate the user on the Siebel system.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="aa214-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="aa214-121">See Also</span></span>  
+[<span data-ttu-id="aa214-122">保护 Siebel 应用程序</span><span class="sxs-lookup"><span data-stu-id="aa214-122">Secure your Siebel applications</span></span>](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md)
