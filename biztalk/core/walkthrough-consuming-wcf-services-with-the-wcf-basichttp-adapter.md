@@ -12,11 +12,11 @@ caps.latest.revision: "49"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c54646d106abe1824ce39de5a550f5f591bae882
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3c85d550e7a1429e18035629517017c90b44c9e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>演练： 使用 WCF 服务与 WCF BasicHttp 适配器
   
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
   
  在完成本演练后，你将了解如何执行以下任务：  
   
--   在[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[vs2010](../includes/vs2010-md.md)]，使用**部署**命令以部署包含的程序集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案和[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务的本地实例来[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建一个用这些程序集填充的 BizTalk 应用程序。  
+-   在[!INCLUDE[btsCoName](../includes/btsconame-md.md)]Visual Studio 中，使用**部署**命令以部署包含的程序集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案和[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务的本地实例来[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建一个用这些程序集填充的 BizTalk 应用程序。  
   
--   在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，使用**BizTalk WCF 服务使用向导**生成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]架构和类型使用所需[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 将生成空业务流程，您可以使用并将其绑定至逻辑端口。 此业务流程与架构和类型一同进行编译和部署。 但是，业务流程工作流处理在此处为空，并不在此示例中使用，因为此示例仅是一个纯 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息传送方案。  
+-   在 Visual Studio 中使用**BizTalk WCF 服务使用向导**生成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]架构和类型使用所需[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 将生成空业务流程，您可以使用并将其绑定至逻辑端口。 此业务流程与架构和类型一同进行编译和部署。 但是，业务流程工作流处理在此处为空，并不在此示例中使用，因为此示例仅是一个纯 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息传送方案。  
   
 -   在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，通过使用 WCF-BasicHttp 发送端口来配置基于内容的路由。 你将配置**SOAPAction**标头的目标[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务期望接收。  
   
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  若要执行本示例中的步骤，请确保你的环境中安装了以下必备软件：  
   
--   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft BizTalk Server。  
   
--   用于构建程序集和运行部署过程的计算机需要安装 Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+-   用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
   
--   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装过程中安装的选件。  
+-   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是用于安装 Microsoft BizTalk 服务器安装过程的选项。  
   
 -   在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  运行自解压**WCFBasicHttpSendAdapter.exe**文件并将文件提取到**C:\WCFBasicHttpSendAdapter**文件夹。  
   
-2.  打开**C:\WCFBasicHttpSendAdapter\WCFBasicHttpSendAdapter.sln**中[!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+2.  打开**C:\WCFBasicHttpSendAdapter\WCFBasicHttpSendAdapter.sln** Visual Studio 中。  
   
 3.  在解决方案资源管理器，展开**BasicHttpWCFServiceConsuming**项目。 此项目为将由发送端口调用的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 它将承载于使用 Internet 信息服务 (IIS) 的托管主机环境中。 在 IIS 中承载将使用基于消息的激活来管理服务的激活和生存期。 展开**App_Code**，然后打开**OrderProcess.cs**查看。 这[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务接收订单请求消息通过**OrderRequest**方法。 OrderProcess.cs 文件包含 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务的接口定义和实现。 只需返回响应消息通过顺序**OrderResponse**方法。  
   
@@ -72,13 +72,13 @@ ms.lasthandoff: 09/20/2017
     <%@ServiceHost language=c# Debug="true" Service="Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming.OrderProcessServiceType" %>  
     ```  
   
-5.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，打开**Web.config**查看。 承载于 IIS 中时，[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务使用 Web.config 文件进行配置，而不是像承载于控制台应用程序中时使用 app.config 文件。  
+5.  在 Visual Studio 中，在解决方案资源管理器，打开**Web.config**查看。 承载于 IIS 中时，[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务使用 Web.config 文件进行配置，而不是像承载于控制台应用程序中时使用 app.config 文件。  
   
-    -   请确保**httpGetEnabled**属性\< **serviceMetaData**> 元素设置为`true`以便**BizTalk WCF 服务使用向导**可以使用服务的元数据。  
+    -   请确保**httpGetEnabled**属性\< **serviceMetaData** \>元素设置为`true`以便**BizTalk WCF 服务使用向导**可以使用服务的元数据。  
   
-    -   请确保**模式**属性\<**安全**> 元素设置为**无**。 由于本演练使用**无**安全模式下，Web 应用程序承载此服务必须配置为允许匿名访问。  
+    -   请确保**模式**属性\<**安全**\>元素设置为**无**。 由于本演练使用**无**安全模式下，Web 应用程序承载此服务必须配置为允许匿名访问。  
   
-6.  因为**Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming**程序集必须安装到 GAC 中，它将需要一个强名称密钥文件，以完成部署过程。 右键单击**BasicHttpWcfServiceConsuming**项目，，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建 >**，并输入`keyfile.snk`中**密钥文件名称**文本框中.  取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
+6.  因为**Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming**程序集必须安装到 GAC 中，它将需要一个强名称密钥文件，以完成部署过程。 右键单击**BasicHttpWcfServiceConsuming**项目，，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>**，并输入`keyfile.snk`中**密钥文件名称**文本框。  取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
   
 7.  在解决方案资源管理器，右键单击**BasicHttpWcfServiceConsuming**，然后单击**重新生成**。  
   
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="add-the-schemas-and-types-for-the-wcf-basichttp-adapter-to-the-sample-biztalk-application"></a>将架构和类型为 WCF BasicHttp 适配器添加到示例 BizTalk 应用程序  
   
-1.  由于此适配器将调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务，因此它需要架构和类型中有关如何使用元数据对该服务进行此调用的信息。 **BizTalkApp**提供的项目使用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，右键单击**BizTalkApp**，单击**添加**，然后单击**添加生成的项**。  
+1.  由于此适配器将调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务，因此它需要架构和类型中有关如何使用元数据对该服务进行此调用的信息。 **BizTalkApp**提供的项目使用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 在 Visual Studio 中，在解决方案资源管理器，右键单击**BizTalkApp**，单击**添加**，然后单击**添加生成的项**。  
   
 2.  在**添加生成的项**对话框中，在**模板**部分中，选择**使用 WCF 服务**，然后单击**添加**。  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  上**完成 BizTalk WCF 服务使用向导**页上，单击**完成**。  
   
-8.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器， **BizTalk WCF 服务使用向导**生成以下文件：  
+8.  在 Visual Studio 中，在解决方案资源管理器， **BizTalk WCF 服务使用向导**生成以下文件：  
   
     -   业务流程文件**OrderProcessServiceType.odx**。 在此业务流程中没有工作流阶段。 但是，您可以向其中添加并将其绑定至逻辑端口以使用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 它包含重要的 BizTalk 类型（例如端口类型和多部分消息类型），在此示例中将会使用这些类型。 若要查看此信息，请双击**OrderProcessServiceType.odx**业务流程。 单击**视图**，单击**其他窗口**，然后单击**业务流程视图**。 展开**类型**，展开**端口类型**，然后展开**IOrderProcess**。 你将看到**提交**方法。 展开该方法，你将看到**OrderRequest**和**OrderResponse**端口类型。 单击每个端口类型并查看其**说明**属性浏览器并查看不同的 WSDL 中的字段输入和输出消息。 单击**多部分消息类型**并查看**OrderRequest**和**OrderResponse**多个部分消息类型。 单击其**说明**字段和视图 WDSL 消息每种消息类型的名称。  
   
@@ -142,13 +142,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  部署[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序，如下所示：  
   
-    1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**属性**。  
+    1.  在 Visual Studio 中，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**属性**。  
   
     2.  在**项目设计器**窗口中，单击**部署**选项卡上，然后更改**服务器**属性，如果你使用不同的数据库的服务器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理数据库。 请确保应用程序名称**WCFBasicHttpSendAdapter**。  
   
-    3.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**重新生成**。  
+    3.  在 Visual Studio 中，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**重新生成**。  
   
-    4.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**部署**。  这将 Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp 程序集部署到 GAC 中和项目到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]名为应用程序**WCFBasicHttpSendAdapter**。  
+    4.  在 Visual Studio 中，在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**部署**。  这将 Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BizTalkApp 程序集部署到 GAC 中和项目到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]名为应用程序**WCFBasicHttpSendAdapter**。  
   
 2.  在 BizTalk 应用程序中配置 WCF-BasicHttp 发送端口，如下所示：  
   
@@ -247,9 +247,9 @@ ms.lasthandoff: 09/20/2017
   
 7.  在命令提示符下， **C:\WCFBasicHttpSendAdapter\TestData\WCFBasicSendAdapter.OrderRequest.Invalid.xml**到**C:\WCFBasicHttpSendAdapter\OrderRequestIn**文件夹。 此消息包含无效的命名空间，以便[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务返回的错误消息。  
   
-8.  检查**C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut**包含来自的错误消息的 XML 文件的文件夹[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 查看\< **faultstring**> 字段显示为一个无效的消息正文，其中的错误消息的原因。  
+8.  检查**C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut**包含来自的错误消息的 XML 文件的文件夹[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 查看\< **faultstring** \>字段显示为一个无效的消息正文，其中的错误消息的原因。  
   
 ## <a name="see-also"></a>另请参阅  
  [演练： 使用 WCF BasicHttp 适配器的 WCF 服务发布](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
  [如何通过 BizTalk WCF 服务使用向导来使用 WCF 服务](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)   
- [为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)
+ [指定 WCF 适配器的消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)

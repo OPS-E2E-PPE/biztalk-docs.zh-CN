@@ -1,7 +1,8 @@
 ---
 title: "监视 SQL Server |Microsoft 文档"
+description: "使用 SQL Server 管理包来检查性能、 可用空间，数据库配置、 阻塞的进程、 连接、 失败 SQL 代理作业、 复制和 BizTalk Server 中的详细信息"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/29/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,20 +13,22 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac37905574090fb346aeee198ea8e92a0f436f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1d0e3ea9ecb9d9d910549790568d5891b72d06de
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-sql-servers"></a>监视 SQL Server
-Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包提供主动式和反应式监视的[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]和[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]企业环境中。 可用性和配置监视，为企业级监视生成性能数据收集以及默认阈值。 检查帮助确保数据库可用性的本地和远程连接。  
+
+## <a name="use-sql-management-pack"></a>使用 SQL 管理包
+Microsoft SQL Server 管理包提供主动式和反应式监视 SQL Server 在企业环境中。 可用性和配置监视，为企业级监视生成性能数据收集以及默认阈值。 检查帮助确保数据库可用性的本地和远程连接。  
   
- 与嵌入的专业技能[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包，你可以主动管理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]，并趋于严重之前先行确定问题。 此管理包增加了安全性、 可用性和性能的你[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]基础结构。  
+ 通过 SQL Server 管理包中嵌入的专业技能，你可以主动管理 SQL Server，并变得严重之前先行确定问题。 此管理包增加了安全性、 可用性和性能的 SQL Server 基础结构。  
   
- Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]附带了包的管理包指南描述管理包的内容并描述如何将其部署。 管理包的功能包括：  
+ 附带了包的 Microsoft SQL Server 管理包指南描述管理包的内容，并描述如何将其部署。 管理包的功能包括：  
   
--   监视包含服务的状态，如[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]，报表服务器的 SQL 代理通知服务  
+-   监视如 SQL Server、 SQL 代理、 报表服务器、 Notification Services 包含的服务的状态  
   
 -   监视数据库的状态  
   
@@ -33,7 +36,7 @@ Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.m
   
 -   确保数据库已正确配置  
   
--   确保客户端可以连接到[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]  
+-   确保客户端可以连接到 SQL Server  
   
 -   监视阻塞的进程  
   
@@ -43,10 +46,10 @@ Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.m
   
 -   监视数据库镜像的状态  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="next-steps"></a>后续步骤
   
 -   [监视 SQL Server 代理作业和数据库](../technical-guides/monitoring-sql-server-agent-jobs-and-databases.md)  
   
--   [如何将 BizTalk Server 数据库标记为自定义监视](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
+-   [如何为自定义监视标记 BizTalk Server 数据库](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
   
 -   [监视 BizTalk Server 数据库](../technical-guides/monitor-the-biztalk-server-databases.md)

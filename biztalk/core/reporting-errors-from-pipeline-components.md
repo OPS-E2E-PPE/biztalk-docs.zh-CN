@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d181f557d64152ff79f70b09986c05727076121
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c111a0c10f4316e7b29e873adf53a8e6b9a9acd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="reporting-errors-from-pipeline-components"></a>从管道组件的报告错误
 管道组件用两种方式报告错误：  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  The Messaging Engine 使用**消息**和**源**属性**异常**对象以报告的错误。 下面的消息将写入事件日志：  
   
- "出现故障执行 [接收 &#124; 发送] 管道：\<管道名称 > 源：\<源 > [接收位置 &#124;发送端口:]\<位置 &#124; 端口名称 > 原因：\<消息 >。"  
+ "出现故障执行 [接收 &#124; 发送] 管道：\<管道名称\>源：\<源\>[接收位置 &#124;发送端口:]\<位置 &#124; 端口名称\>原因：\<消息\>。"  
   
 ## <a name="reporting-errors-from-com-pipeline-components"></a>报告来自 COM 管道组件的错误  
  若要报告某一错误，基于 COM 的管道组件快执行以下操作：  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
  The Messaging Engine 使用**GetSource**和**GetDescription**属性**IErrorInfo**对象以报告的错误。 如果未设置源，则使用该组件的名称。 如果描述不是组或整个**ErrorInfo**未设置对象，而不是说明报告返回的 HRESULT。 下面的消息将写入事件日志：  
   
- "出现故障执行 [接收 &#124; 发送] 管道：\<管道名称 > 源： \<GetSource > [接收位置 &#124;发送端口:]\<位置 &#124; 端口名称 > 原因： \<GetDescription 或 HRESULT >。"  
+ "出现故障执行 [接收 &#124; 发送] 管道：\<管道名称\>源： \<GetSource\> [接收位置 &#124;发送端口:]\<位置 &#124; 端口名称\>原因： \<GetDescription 或 HRESULT\>。"  
   
 ## <a name="see-also"></a>另请参阅  
  [开发自定义管道组件](../core/developing-custom-pipeline-components.md)

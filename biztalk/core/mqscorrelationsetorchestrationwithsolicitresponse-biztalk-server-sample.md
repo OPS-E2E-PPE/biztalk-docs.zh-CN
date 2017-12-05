@@ -19,11 +19,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2665967e27cf708fcdbbddf61a7b66c619757223
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79d92ca7a65262d18a08cab700710284accfbf78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a>MQSCorrelationSetOrchestrationWithSolicitResponse（BizTalk Server 示例）
 MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQSeries Server 而非 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的相关标识符。  
@@ -35,7 +35,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQ
 >  如果来自 MQSeries Server 的消息在相关标识符之前到达，则使用此方法的业务流程可能出现问题。 确保将您的业务流程设计为允许 MQSeries Server 具有足够的时间返回相关标识符。 此示例未考虑可能出现争用情况。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
+ *\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
   
  下表显示了本示例中的文件及其用途说明：  
   

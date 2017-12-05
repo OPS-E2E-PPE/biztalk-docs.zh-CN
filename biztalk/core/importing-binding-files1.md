@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8a2b78ee2e8ec75c6ce83a8b78d1e779f012f324
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 907c21377a6affd5a99576137a5babaa1626c135
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="import-binding-files"></a>导入绑定文件
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 11/07/2017
   
 如果没有在目标计算机上安装 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，则可通过运行下面的脚本删除端口：  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove 发送 Port\VBScript\RemoveSendPort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 发送 Port\VBScript\RemoveSendPort.vbs**  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove 接收 Port\VBScript\RemoveReceivePort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 接收 Port\VBScript\RemoveReceivePort.vbs**  
   
 例如，在命令提示符下运行：  
   
-**cscript RemoveSendPort.vbs\<发送端口名称 >**  
+**cscript RemoveSendPort.vbs\<发送端口名称\>**  
   

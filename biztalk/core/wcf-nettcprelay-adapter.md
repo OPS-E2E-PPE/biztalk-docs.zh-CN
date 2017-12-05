@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ba664facca73dc95093ee52c1026967191a58c2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c8ca33c5568d7a36777e8ed08adea70f476a80f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-nettcprelay-adapter"></a>WCF-NetTcpRelay 适配器
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用**WCF NetTcpRelay**适配器接收和发送通过 WCF 服务请求[NetTcpRelayBinding 类](https://msdn.microsoft.com/library/azure/microsoft.servicebus.nettcprelaybinding.aspx)。  
@@ -70,21 +70,21 @@ Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernovers
     |**服务证书的指纹**|为此接收位置指定 X.509 证书的指纹，客户端利用该指纹验证服务。 使用“浏览”  按钮，导航到“当前用户”  位置中“我的”  存储，然后即可选择指纹。<br /><br /> **注意：**必须安装到的服务证书**当前用户**承载此接收位置接收处理程序的用户帐户的位置。<br /><br /> 最小长度：0<br /><br /> 最大长度：40<br /><br /> 默认值为空字符串。|  
     |**中继客户端身份验证类型**|指定对 Service Bus 中继终结点（可通过其接收消息）进行身份验证的选项。 有效值包括：<br /><br /> -                          **无**： 无身份验证是必需的。<br /><br /> -                          **RelayAccessToken**： 指定此选项可使用的安全令牌以授权与 Service Bus 中继终结点。<br /><br /> 默认值为“RelayAccessToken” 。|  
     |**启用服务发现**|选中此复选框可指定是否在服务注册表中发布服务的行为。<br /><br /> -                          **显示名称**– 指定与该服务发布到服务注册表的名称。<br /><br /> - **发现模式**– 设置在服务注册表中发布的服务的发现模式。 有关发现模式的详细信息，请参阅[https://msdn.microsoft.com/library/microsoft.servicebus.discoverytype.aspx](https://msdn.microsoft.com/library/microsoft.servicebus.discoverytype.aspx)。|  
-    |**访问控制服务**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]2013年。<br/><br/>如果将“中继客户端身份验证类型”  设置为“RelayAccessToken” ，请单击“编辑”  按钮，然后指定以下详细信息：<br /><br /> - **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间 > 是你的服务总线命名空间。<br /><br /> - **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br /><br /> - **颁发者密钥**– 指定的颁发者密钥。<br /><br /> |  
+    |**访问控制服务**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]2013年。<br/><br/>如果将“中继客户端身份验证类型”  设置为“RelayAccessToken” ，请单击“编辑”  按钮，然后指定以下详细信息：<br /><br /> - **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间\>是服务总线命名空间。<br /><br /> - **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br /><br /> - **颁发者密钥**– 指定的颁发者密钥。<br /><br /> |  
         |**服务总线连接信息** | 新开头[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。<br/><br/>选择使用共享访问签名 (SAS) 或 Service Bus 命名空间的访问控制服务 (ACS)。 <br/><br/>选择一个选项，然后选择**编辑**输入的密钥信息：<br/><br/> - **共享访问签名**： 输入访问密钥名称和访问密钥。 这两个值中列出[Azure 门户](https://portal.azure.com)。<br/> - **访问控制服务**： 输入 STS URI (`https://<yourNamespace>-sb.accesscontrol.windows.net/`)，颁发者名称和颁发者密钥。 使用 Windows PowerShell 检索这些值中所述[SB 消息适配器](../core/sb-messaging-adapter.md)。 |
   
 8.  在“WCF-NetTcpRelay 传输属性”  对话框中的“消息”  选项卡上，为 SOAP **Body** 元素指定数据选择。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**信封--完整\<soap： 信封 >**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。<br /><br /> 默认值为清除此复选框。|  
-    |**正文--内容\<soap： 正文 > 元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br /><br /> 这是默认设置。|  
+    |**信封--完整\<soap 信封：\>**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。<br /><br /> 默认值为清除此复选框。|  
+    |**正文--内容\<soap： 正文\>元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br /><br /> 这是默认设置。|  
     |**路径--由正文路径定位的内容**|使用“正文路径表达式”  文本框中的正文路径表达式创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。<br /><br /> 默认值为清除此复选框。|  
     |**正文路径表达式**|键入正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算此正文路径表达式。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|  
     |**节点编码**|指定 WCF-NetTcpRelay 接收适配器为“正文路径表达式”  文本框中正文路径表达式标识的节点进行解码所采用的编码类型。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 有效值包括：<br /><br /> - **Base64**: Base64 编码。<br /><br /> - **十六进制**： 十六进制编码。<br /><br /> -                          **字符串**： 文本编码的 utf-8<br /><br /> -                          **XML**: WCF 适配器使用由正文路径表达式中所选节点的外部 XML 创建 BizTalk 消息正文**正文路径表达式**文本框。<br /><br /> 默认值为“XML” 。|  
     |**正文--BizTalk 响应消息正文**|使用 BizTalk 消息正文部分创建传出响应消息的 SOAP **Body** 元素的内容。 此属性仅对请求响应接收位置有效。<br /><br /> 这是默认设置。|  
     |**指定模板的模板--内容**|使用在“XML”  文本框中提供的模板创建传出消息的 SOAP **Body** 元素的内容。 此属性仅对请求响应接收位置有效。<br /><br /> 默认值为清除此复选框。|  
-    |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。 此属性仅对请求响应接收位置有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 **\<bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="xml"/ >**。|
+    |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。 此属性仅对请求响应接收位置有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 **\<bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="xml"\>**。|
     |**挂起失败的请求消息**|指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。<br /><br /> 默认值为清除此复选框。|  
     |**错误中包括异常详细信息**|指定发生错误时是否返回 SOAP 错误以方便进行调试。<br /><br /> 默认值为清除此复选框。|  
   
@@ -125,7 +125,7 @@ Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernovers
     |**算法套件**|指定消息加密和密钥包装算法。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。 可能的值有：<br /><br /> - **Basic128**： 使用 Aes128 加密，对消息摘要的 Sha1，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> - **Basic128Rsa15**： 对消息加密使用 Aes128，对消息摘要的 Sha1，对密钥包装使用 Rsa15。<br /><br /> -                          **Basic128Sha256**： 对消息加密使用 Aes256，对消息摘要的 Sha256，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> -                          **Basic128Sha256Rsa15**： 对消息加密使用 Aes128，对消息摘要的 Sha256，对密钥包装使用 Rsa15。<br /><br /> - **Basic192**： 使用 Aes192 加密，对消息摘要的 Sha1，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> -                          **Basic192Rsa15**： 对消息加密使用 Aes192，对消息摘要的 Sha1，对密钥包装使用 Rsa15。<br /><br /> - **Basic192Sha256**： 对消息加密使用 Aes192，对消息摘要的 Sha256，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> -                          **Basic192Sha256Rsa15**： 对消息加密使用 Aes192，对消息摘要的 Sha256，对密钥包装使用 Rsa15。<br /><br /> -                          **Basic256**： 使用 Aes256 加密，对消息摘要的 Sha1，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> - **Basic256Rsa15**： 对消息加密使用 Aes256，对消息摘要的 Sha1，对密钥包装使用 Rsa15。<br /><br /> - **Basic256Sha256**： 对消息加密使用 Aes256，对消息摘要的 Sha256，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> - **Basic256Sha256Rsa15**： 对消息加密使用 Aes256，对消息摘要的 Sha256，对密钥包装使用 Rsa15。<br /><br /> -                          **TripleDes**： 使用 TripleDes 加密，对消息摘要，Rsa oaep-mgf1p 对密钥包装 Sha1。<br /><br /> - **TripleDesRsa15**： 使用 TripleDes 加密，对消息摘要的 Sha1，对密钥包装使用 Rsa15。<br /><br /> - **TripleDesSha256**： 对消息加密使用 TripleDes，对消息摘要的 Sha256，对密钥包装的 Rsa-oaep-mgf1p。<br /><br /> -                          **TripleDesSha256Rsa15**： 对消息加密使用 TripleDes，对消息摘要的 Sha256，对密钥包装使用 Rsa15。<br /><br /> 默认值为“Basic256” 。|  
     |**客户端证书的指纹**|指定向服务验证此发送端口时使用的 X.509 证书的指纹。 使用“浏览”  按钮，导航到“当前用户”  位置中“我的”  存储，然后即可选择指纹。<br /><br /> **注意：**必须安装到客户端证书**当前用户**承载该发送处理程序的用户帐户的位置发送端口。<br /><br /> 最小长度：0<br /><br /> 最大长度：40<br /><br /> 默认值为空字符串。|  
     |**用户名凭据**|指定用于发送消息时使用的凭据**用户名**为**消息客户端凭据类型**属性。 你可以通过单击指定属性**编辑凭据**按钮。<br /><br /> 默认值是**不使用单一登录**。|  
-    |**使用 ACS 服务标识**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]2013年。<br/><br/>选择此复选框，然后单击**编辑**并提供以下值，以使用 Service Bus 进行身份验证。<br /><br /> - **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间 > 是你的服务总线命名空间。<br /><br /> - **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br /><br /> - **颁发者密钥**– 指定的颁发者密钥。|  
+    |**使用 ACS 服务标识**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]2013年。<br/><br/>选择此复选框，然后单击**编辑**并提供以下值，以使用 Service Bus 进行身份验证。<br /><br /> - **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间\>是服务总线命名空间。<br /><br /> - **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br /><br /> - **颁发者密钥**– 指定的颁发者密钥。|  
     |**服务总线连接信息** | 新开头[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。<br/><br/>选择使用共享访问签名 (SAS) 或 Service Bus 命名空间的访问控制服务 (ACS)。 <br/><br/>选择一个选项，然后选择**编辑**输入的密钥信息：<br/><br/> - **共享访问签名**： 输入访问密钥名称和访问密钥。 这两个值中列出[Azure 门户](https://portal.azure.com)。<br/> - **访问控制服务**： 输入 STS URI (`https://<yourNamespace>-sb.accesscontrol.windows.net/`)，颁发者名称和颁发者密钥。 使用 Windows PowerShell 检索这些值中所述[SB 消息适配器](../core/sb-messaging-adapter.md)。 |
   
 6.  在“WCF-NetTcpRelay 传输属性”  对话框中的“消息”  选项卡上，为 SOAP **Body** 元素指定数据选择。  
@@ -135,8 +135,8 @@ Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernovers
     |**正文--BizTalk 请求消息正文**|使用 BizTalk 消息正文部分创建的 SOAP 内容**正文**传出消息的元素。<br /><br /> 这是默认设置。|  
     |**指定模板的模板--内容**|使用在“XML”  文本框中提供的模板创建传出消息的 SOAP **Body** 元素的内容。<br /><br /> 默认值为清除此复选框。|  
     |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 < bts 消息正文<br /><br /> xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/>|  
-    |**信封--完整\<soap： 信封 >**|从整个 SOAP 创建 BizTalk 消息正文部分**信封**的传入。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
-    |**正文--内容\<soap： 正文 > 元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 这是默认设置。|  
+    |**信封--完整\<soap 信封：\>**|从整个 SOAP 创建 BizTalk 消息正文部分**信封**的传入。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
+    |**正文--内容\<soap： 正文\>元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 这是默认设置。|  
     |**路径--由正文路径定位的内容**|使用“正文路径表达式”  文本框中的正文路径表达式创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
     |**正文路径表达式**|键入正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 此正文路径表达式针对 SOAP 的即时子元素进行评估**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 此属性仅对要求-响应端口有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|  
     |**节点编码**|指定 WCF NetTcpRelay 发送适配器用于解码识别由正文路径表达式中的节点的编码类型**正文路径表达式**文本框。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 此属性仅对要求-响应端口有效。 有效值包括：<br /><br /> -                          **Base64**: Base64 编码。<br /><br /> - **十六进制**： 十六进制编码。<br /><br /> - **字符串**： 文本编码的 utf-8<br /><br /> -                          **XML**: WCF 适配器使用由正文路径表达式中所选节点的外部 XML 创建 BizTalk 消息正文**正文路径表达式**文本框。<br /><br /> 默认值为“XML” 。|  

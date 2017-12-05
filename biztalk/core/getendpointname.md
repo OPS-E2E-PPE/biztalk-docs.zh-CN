@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1567f0b4bceb756381c4033f3243ac7a58fda366
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7e7a310c222cead89efd23e3f8202ade9eb47ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="getendpointname"></a>GetEndpointName
 将当前侦听终结点的名称推送到堆栈上。  
@@ -39,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
  对于客户端应用程序，GetEndPointName 操作检索到的终结点名称是后跟下划线和约定名称的绑定名称。  
   
- 例如，如果未设置 ServiceEndpoint 上的名称属性，但设置绑定，该名称将设置\<*绑定*> _\<*协定*>。  
+ 例如，如果未设置 ServiceEndpoint 上的名称属性，但设置绑定，该名称将设置\<*绑定*\>_\<*协定*\>.  
   
- 如果未设置的名称和绑定，将名称属性设置为\<*协定*>。  
+ 如果未设置的名称和绑定，将名称属性设置为\<*协定*\>。  
   
  对于服务而言，检索到的名称是在 App.config 文件中指定的终结点名称。  
   

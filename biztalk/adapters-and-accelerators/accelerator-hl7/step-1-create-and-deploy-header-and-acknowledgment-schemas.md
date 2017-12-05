@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bfab230d919c2cb7f8c05d58b87cdeea6033423
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9ffa8ab8d80a8b2da172378349eb9761a728fb7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>步骤 1： 创建和部署标头和确认架构
 使用标头架构来验证消息实例的标头 （MSH 段）。 确认架构用于生成消息实例确认。 此过程能够在之间通用的所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  启动**Visual Studio 2012 的命令提示符**。  
   
-2.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]命令提示符处，浏览到\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > Accelerator for HL7 \SDK\End-to-End 教程文件夹。  
+2.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]命令提示符处，浏览到\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>Accelerator for HL7 \SDK\端到端教程文件夹。  
   
 3.  在命令提示符处，键入**sn-k key.snk**，然后按 ENTER。 确保以下成功消息显示在输出窗口，然后关闭命令窗口。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  在右窗格中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 (**...**) 按钮。  
   
-7.  在程序集密钥文件对话框中，浏览到\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端教程中，选择**key.snk**，然后单击**打开**。  
+7.  在程序集密钥文件对话框中，浏览到\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>HL7\SDK\End 端到端的快捷键教程，选择**key.snk**，然后单击**打开**。  
   
 8.  在 BTAHL7V2XCommon 项目属性页上，单击**确定**以保存所做的更改。  
   

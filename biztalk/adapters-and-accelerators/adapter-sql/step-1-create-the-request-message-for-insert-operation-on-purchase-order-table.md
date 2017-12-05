@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63d27a186cffc86a79f0a40f73cc6a0c1791c3b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 71021bb0a9bbb71f17f0899e625ac184f9087429
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  在**签名**选项卡上，选择**对程序集签名**复选框。  
   
-    4.  从**选择强名称密钥文件**列表中，单击**\<浏览 >**。  
+    4.  从**选择强名称密钥文件**列表中，单击**\<浏览\>**。  
   
     5.  导航到您在其中创建强名称密钥文件的文件夹，然后单击**打开**。  
   
@@ -125,4 +125,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息](../../adapters-and-accelerators/adapter-sql/step-2-map-update_employee-response-to-insert-operation-request.md)   
- [第 4 课： 执行插入操作上采购订单表](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)
+ [第 4 课：在采购订单表中执行插入操作](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

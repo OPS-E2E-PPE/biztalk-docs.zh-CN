@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a9451d1f156bf98b3e8fd7da177937cd4492b0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02412b86b8649b73cadb4715793f085682a1de74
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xlang-s-to-bpel4ws-type-conversions"></a>XLANG-s 的 BPEL4WS 类型转换
 下表详细说明了各种 XLANG/s 构造和 BPEL4WS 构造之间的转换。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 |一元：-|XPath unary -|  
 |Unary !|XPath not() 函数|  
 |二进制 & &、 &#124; &#124;|XPath 'and'、'or' 运算符|  
-|二进制 = =、 ！ =、 < =、 \<，> =、 >|XPath '='、'! ='，' < = '，'\<'，' > =，> 运算符|  
+|二进制 = =、 ！ =、 < =、 <>、 =、 >|XPath '='、'! =，< ='，' <'，' > =，> 运算符|  
 |使用两个整数操作数的 Binary +、-、*、%|XPath '+'、'-'、'*'、'mod' 运算符|  
   
 ## <a name="xlangs-constructs-that-are-disallowed-in-bpel4ws"></a>BPEL4WS 中不允许的 XLANG/s 构造  
@@ -84,11 +84,11 @@ ms.lasthandoff: 09/20/2017
   
 -   Binary +、-、*、%，使用非整数操作数  
   
--   二进制 < =、 \<，> =、 > 与非字符串操作数  
+-   二进制 < =、 <>、 =、 > 与非字符串操作数  
   
 -   按位运算符 &、 ^，&#124;  
   
--   移位运算符 <\<，>>  
+-   移位运算符 <<>>，  
   
 -   已检查表达式  
   

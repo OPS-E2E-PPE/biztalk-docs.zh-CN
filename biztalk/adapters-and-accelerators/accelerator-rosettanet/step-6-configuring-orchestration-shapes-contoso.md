@@ -15,14 +15,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4185ea50d86b30df4bb61161bf6927845aff5c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>步骤 6： 配置业务流程形状 (Contoso)
-在此步骤中，你将配置添加到 PrivateResponder 业务流程中创建的业务流程形状[步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置之间的通信[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]和 Contoso 企业资源规划 (ERP) 系统。  
+在此步骤中，你将配置添加到 PrivateResponder 业务流程中创建的业务流程形状[步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置之间的通信[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 和 Contoso 的企业资源规划 (ERP) 系统。  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>配置 ConstructMessagePIP3A2RequestMessage 形状  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换的配置对话框。  
   
-5.  在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择 >**从下拉列表以打开选择项目类型对话框。  
+5.  在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择\>**从下拉列表以打开选择项目类型对话框。  
   
 6.  在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集在左窗格中，选择**PIP3A2RequestToContosoPriceRequest**映射在右窗格中，并依次**确定**。  
   
@@ -177,4 +177,4 @@ ms.lasthandoff: 09/20/2017
 4.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 7： 创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)
+ [步骤 7：创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

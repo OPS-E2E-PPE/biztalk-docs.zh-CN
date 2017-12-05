@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9210e8ecc251cee06dafda3aeb3111074521be1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e159734c7d6028eb7f54354140c40757cb212b3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-batch-schemas"></a>批处理的 EDI 架构
 BizTalk Server 处理保留交换时，至少使用三个架构：  
@@ -37,7 +37,7 @@ BizTalk Server 处理保留交换时，至少使用三个架构：
 |X12_BatchSchema|X12InterchangeXML|http://schemas.microsoft.com/Edi/X12_BatchSchema|  
 |Edifact_BatchSchema|EdifactInterchangeXML|http://schemas.microsoft.com/Edi/Edifact|  
   
- 在由接收管道生成的 XML 实例上的文档类型将是一个常量 (\<编码 > _BatchSchema.xml) 并将引用此规范的架构。 可以在业务流程的映射中使用该实例，但是，在进行此操作前，必须更改其文档类型和命名空间以映射到所需的实际架构。  
+ 在由接收管道生成的 XML 实例上的文档类型将是一个常量 (\<编码\>_BatchSchema.xml) 并将引用此规范的架构。 可以在业务流程的映射中使用该实例，但是，在进行此操作前，必须更改其文档类型和命名空间以映射到所需的实际架构。  
   
  在设计项目时不必指定批处理架构，因为该架构部署在 BaseArtifacts.dll 中。  
   
@@ -46,4 +46,4 @@ BizTalk Server 处理保留交换时，至少使用三个架构：
   
 ## <a name="see-also"></a>另请参阅  
  [EDI 架构](../core/edi-schemas.md)   
- [处理传入的批次](../core/processing-incoming-batches.md)
+ [处理传入批](../core/processing-incoming-batches.md)

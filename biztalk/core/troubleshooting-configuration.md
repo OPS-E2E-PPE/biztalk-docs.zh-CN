@@ -12,11 +12,11 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c16e2ee6d09afa3479a0540838086cb92270132
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e523c5c992ea422e6fe81f3c0d948db7007bcdb1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-configuration"></a>配置疑难解答
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置程序将运行的一个或多个计算机上创建数据库[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、 填充了表，角色的数据库和存储过程使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将部署到运行时期间使用的.NET 程序集BizTalk 管理数据库中。  
@@ -151,7 +151,7 @@ echo %TEMP%
   
  无法连接到存储库。  
   
- 分析服务器：\<计算机名称 >  
+ 分析服务器：\<计算机名称\>  
   
  Error:  
   
@@ -175,7 +175,7 @@ echo %TEMP%
   
 4.  在**编辑储存库连接字符串**对话框中，验证此字符串中的服务器名称，为新的计算机名称进行更新，如果不正确。  
   
-5.  导航到以下位置： \<*安装目录*> files\microsoft Analysis Services\Bin。  
+5.  导航到以下位置： \<*安装目录*\>files\microsoft Analysis Services\Bin。  
   
 6.  右键单击**Bin**文件夹，，然后单击**共享和安全**。 **Bin 属性**对话框随即出现。  
   

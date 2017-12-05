@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8c9a99c0efaacac233c339d9279c837744892fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 76b3d26e9f1dd14463d153c89316b3cf3da0338d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>步骤 3： 创建负载测试，以同时执行多个单元测试
 负载测试运行多个实例的一个或多个单元测试，以便可以测量应用程序的性能和能够处理负载。 Visual Studio 2010 负载测试的主要组件包括：  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
 12. 单击**完成**以关闭新建负载测试向导。  
   
-13. 单击**文件**菜单，然后选择**保存\<负载测试名称 > 作为.loadtest**。  
+13. 单击**文件**菜单，然后选择**保存\<负载测试名称\>作为.loadtest**。  
   
     > [!NOTE]  
     >  在此示例中，<Load Test Name>将是由 Visual Studio 2010 中，通常 loadtestx.loadtest，分配给负载测试文件的名称，除非已手动更改该文件的名称。  
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     |性能类别|性能计数器|  
     |--------------------------|-------------------------|  
     |处理器|%Processor Time 的 _Total 计数器实例。|  
-    |BizTalk:Message 框： 常规计数器|假脱机的大小 *\<BizTalk MessageBox 数据库名称 >*:*\<SQL Server 实例名称 >*计数器实例。 **注意：***\<BizTalk MessageBox 数据库名称 >*和 *\<SQL Server 实例名称 >* BizTalk 的实际名称只是占位符MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例。   这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。|  
+    |BizTalk:Message 框： 常规计数器|假脱机的大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>*计数器实例。 **注意：***\<BizTalk MessageBox 数据库名称\>*和 *\<SQL Server 实例名称\>*的只是占位符BizTalk MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。   这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。|  
     |BizTalk:Messaging|文档接收每秒接收主机计数器实例。<br /><br /> 文档处理每秒传输主机计数器实例。|  
     |BizTalk：消息代理|文档的消息传送传入速率接收主机。|  
     |BizTalk：消息代理|为文档传输主机发布传出速率的消息。|  

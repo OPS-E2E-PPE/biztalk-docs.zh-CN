@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b3606d53f692ff52779eeac3505fd8062bed28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: edb3102fabc84818cb42fcdcba6a034d085bdcc4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-jms-mqrfh2-sample-using-the-install-scripts"></a>安装使用安装脚本 JMS MQRFH2 示例
 本部分介绍如何安装使用提供的安装脚本 JMS MQRFH2 示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**运行**对话框中，键入**cmd**，然后按 ENTER。  
   
-5.  运行以下命令，替换*\<路径 >*参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\JMS\Install\Scripts\\):  
+5.  运行以下命令，替换*\<路径\>*参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\JMS\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

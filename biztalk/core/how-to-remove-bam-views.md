@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d8930fb4e3f2014945b743b15da4dbdfff3451
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc49038c30cc6016c79f8e0d309f93217994327f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-views"></a>如何删除 BAM 视图
 管理员使用**删除视图**命令从 BAM 主导入数据库中删除视图。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到的跟踪文件夹中，通过键入**C:\Program Files\Microsoft BizTalk Server 2009\Tracking**在命令提示符。 按 **Enter**。  
   
-3.  类型**bm 删除视图的名称：\<视图名称 >**。  
+3.  类型**bm 删除视图的名称：\<视图名称\>**。  
   
 4.  按 **Enter**。  
   

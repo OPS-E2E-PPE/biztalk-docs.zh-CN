@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d556994196af2412dc2719a2d576535b4ea113
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6988155f70bf197f9c468b3ee7eb48c8f2f5f53d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-receive-adapter-uri"></a>SWIFT 接收适配器 URI
-URI 构造接收适配器根据炫终结点信息 (SWIFT: / /\<SwTuxSrv >) 方法是 SWIFTNet 链接 (SNL)，以及消息合作伙伴 (SWIFT: / /\<SagMessagePartner >) 的信息SWIFTAlliance 网关接收适配器 (压降 RA) 部署。  
+URI 构造接收适配器根据炫终结点信息 (SWIFT: / /\<SwTuxSrv\>) 方法是 SWIFTNet 链接 (SNL)，以及消息合作伙伴 (SWIFT: / /\<SagMessagePartner\>)为 SWIFTAlliance 网关的信息接收适配器 (压降 RA) 部署。  
   
  这表示为**应用程序名称**接收适配器属性页上的属性。  
   

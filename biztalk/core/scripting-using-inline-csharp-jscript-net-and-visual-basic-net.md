@@ -18,11 +18,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fe19b4616e23066603995b6403654fa3960789
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe2002bd92342a953406a21e076b801d3e90b938
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scripting-using-inline-c-jscript-net-and-visual-basic-net"></a>使用内联 C#、JScript .NET 和 Visual Basic .NET 编写脚本
 对于在应用程序中其他地方不太可能使用的自定义代码，使用内联脚本非常方便。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 |System.Xml.Xpath|XPath 类。|  
 |Microsoft.VisualBasic|Visual Basic 脚本类。|  
   
- 有关命名空间和数据类型的详细信息，搜索"XSLT 样式表脚本使用\<msxsl: script >"和"System.Xml.Xsl.XslCompiledTransform".NET Framework 集合中。  
+ 有关命名空间和数据类型的详细信息，搜索"XSLT 样式表脚本使用\<msxsl: script\>"和"System.Xml.Xsl.XslCompiledTransform".NET Framework 集合中。  
   
 > [!CAUTION]
 >  应避免多次使用同一个方法签名。 如果多个“脚本”functoid 具有相同的方法签名，则 BizTalk 会选择实现的第一个方法签名，而忽略其他签名。  

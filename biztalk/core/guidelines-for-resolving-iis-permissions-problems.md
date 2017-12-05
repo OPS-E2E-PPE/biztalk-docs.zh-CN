@@ -13,11 +13,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdae0c97d0441ccb57320ec24908cca522ae2088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb91509ec3ad1c329190c848c25a60434f93499e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a>以解决 IIS 权限问题的指导原则
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将 Microsoft Internet 信息服务 (IIS) 广泛应用于 Web Services 支持，并与 HTTP、SOAP 和 Windows SharePoint Services 适配器一起使用。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，然后**所有程序**，然后单击**Internet Information Services (IIS) 7 Manager**。  
   
-2.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称 >***（用户帐户）**单击**应用程序池**。  
+2.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>***（用户帐户）**单击**应用程序池**。  
   
 3.  右键单击应用程序池，单击**查看应用程序**若要查看与应用程序池关联的应用程序。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a>设置 IIS 7.0 中虚拟目录的用户访问权限  
   
-1.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称 >*，**站点**，和**Default Web Site**中**连接**窗格。  
+1.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>*，**站点**，和**Default Web Site**中**连接**窗格。  
   
 2.  单击此项可选择的虚拟目录，然后单击**功能视图**底部的工作区窗格中列出的虚拟目录的可配置功能。  
   

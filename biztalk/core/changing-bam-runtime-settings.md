@@ -15,20 +15,20 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d8b9f443c01496b4f435a8e69d53ad3afc9abd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bc90f401a562ed34e51035ddb8b86d8e9021b4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changing-bam-runtime-settings"></a>更改 BAM 运行时设置
-一般情况下，配置 BAM 运行时组件，当你安装 Microsoft® [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 如果要扩展系统或者使用了密码到期策略，则可能需要更改 BAM 运行时设置。  
+一般情况下，安装 Microsoft () BizTalk Server 时配置的 BAM 运行时组件。 如果要纵向扩展系统或者使用了密码到期策略，则可能需要更改 BAM 运行时设置。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [BAM 配置架构](../core/bam-configuration-schema.md)  
   
--   [定义时间窗口中，然后时间切片属性](../core/defining-the-time-window-and-time-slice-properties.md)  
+-   [定义“时间窗口”和“时间切片”属性](../core/defining-the-time-window-and-time-slice-properties.md)  
   
 -   [修改 BAM 配置架构](../core/modifying-the-bam-configuration-schema.md)  
   

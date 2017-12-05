@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d9653f1ec72e56b225142d2d6c9fdff24198e7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c26765b19c868dbb78d3924069b60161827312c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a>步骤 2： 创建公共和私有证书
 在此步骤中，你使用证书颁发机构中创建[步骤 1： 创建证书颁发机构 （&） #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)生成 Contoso 和 Fabrikam 公司使用的公钥和私钥证书。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 15. 上**文件导出**页上，单击**浏览**。  
   
-16. 在**另存为**对话框中，使用的文件路径的证书保存*\<驱动器 >*: \Certs\Fabrikam 私有 Encryption.pfx。  
+16. 在**另存为**对话框中，使用的文件路径的证书保存*\<驱动器\>*: \Certs\Fabrikam 私有 Encryption.pfx。  
   
 17. 上**导出的文件**页上，单击**下一步**。  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  上**文件导出**页上，单击**浏览**。  
   
-7.  在另存为对话框中，输入**\<驱动器 >: \Certs**为**将保存在**， **Fabrikam 公共 Encryption.cer**作为**文件名**，和 **\*.cer**为**另存为类型**，然后单击**保存**。  
+7.  在另存为对话框中，输入**\<驱动器\>: \Certs**为**将保存在**， **Fabrikam 公共 Encryption.cer**作为**文件名称**，和 **\*.cer**为**另存为类型**，然后单击**保存**。  
   
 8.  上**导出的文件**页上，单击**下一步**。  
   
@@ -162,4 +162,4 @@ ms.lasthandoff: 09/20/2017
 12. 对于“Contoso 签名”证书和“Contoso 加密”证书，请分别重复步骤 1 到步骤 9，并分别使用 Contoso Public Signature.cer 和 Contoso Public Encryption.cer 文件名。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 3： 导入公共和私有证书](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)
+ [步骤 3：导入公共和私有证书](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)

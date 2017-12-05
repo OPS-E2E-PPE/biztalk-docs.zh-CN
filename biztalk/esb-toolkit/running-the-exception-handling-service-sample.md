@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84a224c985591801bc9622000c35587b7137f933
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8dd7c87e84cf7e6e107fc110c611369d0407e003
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-exception-handling-service-sample"></a>运行的异常处理服务示例
 异常处理服务示例演示如何使用异常处理 Web 服务以便提交到 ESB 异常处理框架从外部应用程序的错误。 运行此示例的以下过程需要[安装异常管理示例](../esb-toolkit/installing-the-exception-management-samples.md)。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 Windows 资源管理器中打开文件夹 \Source\Samples\ExceptionHandlingService，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为 ExceptionHandlingService.sln 的 Visual Studio 解决方案文件。  
   
-2.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，单击**启动调试**工具栏上。  
+2.  在 Visual Studio 中，单击**启动调试**工具栏上。  
   
 3.  在加载表单中，单击**生成异常**按钮。  
   

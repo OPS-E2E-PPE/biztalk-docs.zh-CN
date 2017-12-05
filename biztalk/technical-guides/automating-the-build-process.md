@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0e09e298694a3affd979eacc35ec43a1f92fab5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d62380146f0bfba188843ed0e022340d88fcaceb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automating-the-build-process"></a>自动执行生成过程
 自动的生成过程编译，部署并按常规、 预先确定的时间间隔对项目的最新源代码然后运行生成验证测试 (Bvt)。 然后"生成报告，"详细信息是成功还是失败的生成过程，这是向项目利益干系人传送至。 生成报告分析以确定项目的方面需要注意和如果项目应将其回滚到以前的版本/生成。  
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
  请务必将每个功能的测试所需的开发工作量降至最低。 通常更昂贵很来生成内容 （在方面开发时间），你很可能最终会得到更少测试用例。 这意味着你将通过你的代码具有较低级别的测试覆盖率。 通过使用测试框架，你可以开发又快又简单的测试用例和，因此，使其更轻松地获得完整的代码覆盖率。 大多数很好的测试框架使用一种用于测试定义的声明性方式。 （即，为测试的配置存储在配置文件中，这通常是 XML 文件。）使用很好的测试框架使你能够开发完整功能 agile 和可靠的方式测试套件并可避免让"从头"反复，提升。  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>BizTalk Server 项目的 MSBUILD 支持  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]支持的 Microsoft 生成引擎 (MSBUILD) 平台，其中可容纳在不安装 Visual Studio 的生成实验室环境中的托管项目的生成。 MSBUILD 还包含从命令行和高级的功能，包括日志记录和批处理的 MSBUILD 生成项目。 有关 MSBUILD 的详细信息，请参阅[MSBuild 概述](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)。  
+ BizTalk Server 提供对 Microsoft 生成引擎 (MSBUILD) 平台，其中可容纳在不安装 Visual Studio 的生成实验室环境中的托管项目的生成的支持。 MSBUILD 还包含从命令行和高级的功能，包括日志记录和批处理的 MSBUILD 生成项目。 有关 MSBUILD 的详细信息，请参阅[MSBuild 概述](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)。  
   
 ## <a name="see-also"></a>另请参阅  
  [实现自动测试](../technical-guides/implementing-automated-testing.md)

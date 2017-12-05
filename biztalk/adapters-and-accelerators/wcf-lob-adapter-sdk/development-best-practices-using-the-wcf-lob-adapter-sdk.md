@@ -12,11 +12,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9786896a4a5983a438dd855dcc858ba4485cbc1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4693d3ae4a443138c078e0da415fb72205dbd528
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="development-best-practices-using-the-wcf-lob-adapter-sdk"></a>使用 WCF LOB 适配器 SDK 开发最佳做法
 可以使用本主题中的最佳做法以提高应用程序和适配器。  
@@ -103,7 +103,7 @@ public interface ICalculator
 |------------|-----------------|  
 |设计时|使用时[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，你可以指定的适配器支持的客户端凭据类型。|  
 |运行的时|使用时生成的.NET CLR 代理，你可以以编程方式设置客户端凭据。<br /><br /> `static void Main(string[] args) {    EchoServiceClient client = new EchoServiceClient();    client.ClientCredentials.UserName.UserName = "TestUser";    client.ClientCredentials.UserName.Password = "TestPassword";    string response=client.EchoString("Test String"); }`<br /><br /> 或者，如果你需要直接与通道进行交互，你可以使用 WCF 通道模型在创建通道工厂时指定的客户端凭据。<br /><br /> `EchoAdapterBinding binding = new EchoAdapterBinding(); binding.Count = 3; ClientCredentials clientCredentials = new ClientCredentials(); clientCredentials.UserName.UserName = "TestUser"; clientCredentials.UserName.Password = "TestPassword"; BindingParameterCollection bindingParms = new BindingParameterCollection(); bindingParms.Add(clientCredentials); EndpointAddress address = new EndpointAddress("echo://"); IChannelFactory<IRequestChannel> requestChannelFactory = binding.BuildChannelFactory<IRequestChannel>(bindingParms); requestChannelFactory.Open();`|  
-|WCF 配置|在客户端配置文件中，添加\<endpointBehaviors > 包含元素\<c a t e >。<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
+|WCF 配置|在客户端配置文件中，添加\<endpointBehaviors\>包含元素\<clientCredentials\>。<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
 |使用 BizTalk|当使用 WCF 适配器以使用你的适配器，您可以添加**clientCredentials**上的行为扩展**行为**选项卡。这添加程序后，你可以设置所需的客户端凭据中的终结点行为。|  
   
 ## <a name="do-not-return-both-strongdatasettype-and-weakdatasettype"></a>不返回同时 StrongDataSetType 和 WeakDataSetType  
@@ -137,16 +137,16 @@ internal static QualifiedType GetDataSetQualifiedType(MyAdapterBindingProperties
  例如，如果`DefaultXsdFileNamePrefix`设置为"MyAdapter"和`fileNameHint`批注设置为"流"，则 XSD 架构创建名为 MyAdapterStream.xsd。  
   
 ```  
-\<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
-\<xs:annotation>  
-\<xs:appinfo>  
-\<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
-\</xs:appinfo>  
-\</xs:annotation>  
-\<xs:simpleType name='StreamBody'>  
-\<xs:restriction base='xs:base64Binary' />  
-\</xs:simpleType>  
-\</xs:schema>  
+<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
+<xs:annotation>  
+<xs:appinfo>  
+<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
+</xs:appinfo>  
+</xs:annotation>  
+<xs:simpleType name='StreamBody'>  
+<xs:restriction base='xs:base64Binary' />  
+</xs:simpleType>  
+</xs:schema>  
   
 ```  
   

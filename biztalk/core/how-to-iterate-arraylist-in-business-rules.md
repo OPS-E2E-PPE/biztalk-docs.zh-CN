@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95896b63e5bb982a4778b05970900c989ebc66b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9010907cfe9fb6d79a8d9fcead533376b014640e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-iterate-arraylist-in-business-rules"></a>如何循环访问业务规则中的 ArrayList
 本部分提供了循环访问的成员的一个示例**ArrayList**业务规则中。  
@@ -46,6 +46,6 @@ ms.lasthandoff: 09/20/2017
 ## <a name="rule-c"></a>规则 C  
  IF MyClass.MyProperty==2  
   
- 然后\<做些什么...>  
+ 然后\<执行某些操作...\>  
   
  当对象的属性值与条件中所列值匹配时，此规则将执行操作。

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb8cd252c9aa5557ea3845e7b6665dc749486f01
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1030e0a743a9b06d856bc593198f4afebc1ffa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 SAP 系统上调用操作
 在调用操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用**IRequestChannel**或**IOutputChannel**通道形状将消息发送到适配器。 基本模式是通过使用绑定创建必需的通道形状的通道工厂 (**SAPBinding**) 和从一个连接 URI 创建的终结点。 然后，你创建**消息**表示目标操作的消息架构符合的 SOAP 消息的实例。 然后可以将此发送**消息**到[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]通过从通道工厂创建通道。 如果你使用**IRequestChannel**，你收到的响应。 如果执行 SAP 系统上的操作问题[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>如何通过使用 IRequestChannel 的实例调用操作  
   
-1.  生成通道工厂 (**ChannelFactory\<IRequestChannel >**)。 若要执行此操作，必须指定一个绑定 (**SAPBinding**) 和终结点地址。 在你的代码以强制方式或配置中以声明方式，可以指定的绑定和终结点地址。 应设置属性执行操作所需打开工厂之前将发送任何绑定。 有关如何在配置中指定的绑定和终结点地址的详细信息，请参阅[创建一个通道，使用 SAP](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)。  
+1.  生成通道工厂 (**ChannelFactory\<IRequestChannel\>**)。 若要执行此操作，必须指定一个绑定 (**SAPBinding**) 和终结点地址。 在你的代码以强制方式或配置中以声明方式，可以指定的绑定和终结点地址。 应设置属性执行操作所需打开工厂之前将发送任何绑定。 有关如何在配置中指定的绑定和终结点地址的详细信息，请参阅[创建一个通道，使用 SAP](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)。  
   
     ```  
     // Create a binding  
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
 5.  创建**消息**目标操作的实例。 请确保指定目标操作的消息操作。 在此示例中，消息正文传递通过创建**XmlReader**通过一个字符串。 目标操作调用 SAP 系统上 SD_RFC_CUSTOMER_GET RFC。  
   
     ```  
-    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
     //create an XML reader from the input XML  
     XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
  请按照相同的步骤来发送邮件时使用**IOutputChannel**调整除外：  
   
--   你创建**ChannelFactory\<IOutputChannel >**步骤 1 中。  
+-   你创建**ChannelFactory\<IOutputChannel\>** 步骤 1 中。  
   
 -   你调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);`。  
   
@@ -178,7 +178,7 @@ namespace SapRfcClientCM
             //create an XML message to send to the SAP system  
             //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
             //The XML below specifies that we want to search for customers with names starting with "AB"  
-            string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+            string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
             //create an XML reader from the input XML  
             XmlReader readerOut = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  

@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc8d369eb24d1a239f1c305ab74230eab0f32d67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 808d5395452733d43337e0883b306b7757a7da08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>如何将帐户添加到视图
 管理员使用**添加帐户**命令以将用户与 BAM 视图关联，以防止未经授权的访问的 BAM Excel 电子表格视图。 当用户保存 BAM 视图时，视图将引用隐藏工作簿中的 SQL 连接字符串。 工作簿受到保护，但你必须确保已保护文档。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
   
-3.  类型**bm 添加帐户 AccountName:\<帐户名称 >-视图：\<视图名称 >**。  
+3.  类型**bm 添加帐户 AccountName:\<帐户名称\>的视图：\<视图名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

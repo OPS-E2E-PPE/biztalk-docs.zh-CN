@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f95ed755dcc709084d52c6fb8b207e9bbd9e866d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 852b85e0de23e01e39891adba56053683d18a9b8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="batching-outgoing-edi-messages"></a>对传出 EDI 消息进行批处理
 如果已为协议（与将接收它的业务合作伙伴相关联）启用了批处理，则 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将对 EDI 事务集进行批处理。 使用协议的 EDI 属性可以执行以下操作：  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   设置批处理激活条件。  
   
- Microsoft [!INCLUDE[prague](../includes/prague-md.md)] EDI 和 AS2 启用 EDI 交换以下处理：  
+ Microsoft BizTalk Server EDI 和 AS2 启用 EDI 交换的以下处理：  
   
 -   EDI 交换可以包含事务集和/或确认。  
   
@@ -45,8 +45,8 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [配置传出批处理](../core/configuring-an-outgoing-batch.md)  
+-   [配置传出批](../core/configuring-an-outgoing-batch.md)  
   
--   [组合批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)  
+-   [汇编批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)  
   
--   [发送保留的批处理交换](../core/sending-a-preserved-batch-interchange.md)
+-   [发送保留的批交换](../core/sending-a-preserved-batch-interchange.md)

@@ -22,11 +22,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e887811b4aef771a33a1f4e4d8852d5815036a74
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 64be28927a49a1fc751870785ff3fc3f55a36cb1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>导入证书使用 CertWizard 实用工具
 本主题介绍如何使用 CertWizard 实用程序，分步的命令行实用程序中提供导入证书[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 本主题说明如何导入私钥、公钥和根钥， 还说明了用于配置证书的开关。  
@@ -39,20 +39,20 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本 > RosettaNet\SDK快捷键** .  
+2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK** 。  
   
     > [!NOTE]
     >  使用 CertWizard 实用程序的帮助，请键入**CertWizard /？** 在命令提示符。  
   
-3.  在命令提示符处，键入**CertWizard /Privatekey\<文件名 >.pfx**，其中\< *filename*>.pfx 包含的私有证书。 若要为文件提供密码，请将追加**/Filepassword \<filepassword >**到该命令。  
+3.  在命令提示符处，键入**CertWizard /Privatekey \<filename\>.pfx**，其中\< *filename*\>.pfx 包含的私有证书。 若要为文件提供密码，请将追加**/Filepassword \<filepassword\>** 到该命令。  
   
-4.  如果你想要将证书导入 BizTalk 主机所使用的特定帐户中，追加**/Useridentity\<用户身份 > /Password\<密码 >**到该命令。  
+4.  如果你想要将证书导入 BizTalk 主机所使用的特定帐户中，追加**/Useridentity\<用户身份\>/Password\<密码\>**到该命令。  
   
-5.  如果你想要指定特定的指纹，以防.pfx 文件包含多个证书，并追加**/Thumbprint\<指纹 >**到该命令。  
+5.  如果你想要指定特定的指纹，以防.pfx 文件包含多个证书，并追加**/Thumbprint\<指纹\>**到该命令。  
   
 6.  如果你想要配置的证书的使用情况，追加**/Usage**到命令，然后追加以下值之一：  
   
-    -   追加**登录**要为 BizTalk 组添加为签名证书的证书的指纹。 对话框中设置 microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] （本地） 的 BizTalk 管理控制台中。  
+    -   追加**登录**要为 BizTalk 组添加为签名证书的证书的指纹。 在 BizTalk 管理控制台中的 Microsoft BizTalk server （本地） 对话框中设置。  
   
     -   追加**解密**要添加证书的指纹解密证书对于 BizTalk 主机中，为 BizTalk 管理控制台中每个主机组的属性页的证书选项卡上。  
   
@@ -74,11 +74,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键**.  
+2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK**。  
   
-3.  在命令提示符处，键入**CertWizard /Publickey\<文件名 >.cer**，其中\< *filename*>.cer 包含的公用证书。  
+3.  在命令提示符处，键入**CertWizard /Publickey \<filename\>.cer**，其中\< *filename*\>.cer 包含的公用证书。  
   
-4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹 >**到该命令。  
+4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹\>**到该命令。  
   
      该工具将证书导入“证书（本地计算机）”\“其他人”\“证书”存储区，然后设置其配置。  
   
@@ -86,11 +86,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键**.  
+2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK**。  
   
-3.  在命令提示符处，键入**CertWizard /Rootkey\<文件名 >.cer**，其中\< *filename*>.cer 包含的根证书。  
+3.  在命令提示符处，键入**CertWizard /Rootkey \<filename\>.cer**，其中\< *filename*\>.cer 包含的根证书。  
   
-4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹 >**到该命令。  
+4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹\>**到该命令。  
   
      该工具将证书导入“证书（本地计算机）”\“受信任根证书授权机构”\“证书”存储区，然后设置其配置。  
   

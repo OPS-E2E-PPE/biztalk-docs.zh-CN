@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fa0f77fb6b0eee870adb70efdcc155a34f03599
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b613efe730c51bdac6354f819e544a30f38d8bb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-message-enrichment-sample"></a>程序集和项目安装消息扩充示例
 下表列出的程序集和消息扩充示例安装其他项目。  
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
 |全局程序集缓存|程序集|MessageEnrichment.Transforms 版本 1.0.0.0|  
 |||MessageEnrichment.Orchestrations 版本 1.0.0.0|  
 |||MessageEnrichment.Schema 版本 1.0.0.0|  
-|%Program 文件 %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline 组件|管道组件||
+|%Program 文件 %\\BizTalk Server\Pipeline 组件|管道组件||

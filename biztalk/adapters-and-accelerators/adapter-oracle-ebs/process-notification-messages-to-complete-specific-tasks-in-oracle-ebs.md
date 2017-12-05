@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97b3cf9f99a4a7a2151b9b4f07d076ffb4bc1ec9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dcd2b531dd3486967f28df733d1e5dbbc510f924
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a>处理通知邮件完成 Oracle E-business Suite 中的特定任务
 你可以使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接收对 Oracle 数据库表的更改的通知。 但是，该适配器仅向你发送通知某些记录已插入、 更新或删除某些数据库表中。 这些记录的任何后续处理必须由客户端应用程序本身进行处理。 本主题提供有关如何处理表根据从 Oracle 数据库接收的通知的类型中记录的基于方案的说明。  
@@ -156,7 +156,7 @@ ms.lasthandoff: 09/20/2017
  包括表达式形状中业务流程的用途是具有要提取的收到的通知消息的种类的 xpath 查询。 在创建之前 xpath 查询，让我们看一下通知消息的格式。 典型的通知消息如下所示：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
   <Details>  
     <NotificationDetails>  
@@ -180,7 +180,7 @@ ms.lasthandoff: 09/20/2017
   
      本主题中，将命名为变量**NotificationType**。  
   
--   创建要提取的值的 xpath 查询\<信息 > 标记。 Xpath 查询将如下所示：  
+-   创建要提取的值的 xpath 查询\<信息\>标记。 Xpath 查询将如下所示：  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -279,7 +279,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   因为**NotifyOnListenerStart**绑定属性设置为**True**，收到以下消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>OracleEBSBinding</Source>   
@@ -292,7 +292,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   ACCOUNTACTIVITY 表中插入一条记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -315,7 +315,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   更新 ACCOUNTACTIVITY 表中的记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -338,7 +338,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   从 ACCOUNTACTIVITY 表中删除一条记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  

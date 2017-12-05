@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6df8145fac74761fee4aabd34ff01d708b646c12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9990facf6a23f4abea37ee9ce9758a7333eaca61
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a>使用 WCF LOB 适配器 SDK 时选择的 URI 方案和寻址的格式
 统一资源标识符 (URI) 唯一标识资源与 Web 服务类似，或者如果使用的开发适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，要连接到系统，以及要执行的操作。 本部分提供有关如何构造用于唯一地描述了终结点地址和适配器的操作的 URI 的建议。  
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="connecting-to-the-target-system"></a>连接到目标系统  
  连接字符串具有以下语法：  
   
- **\<方案 >: //[userinfo"@"]\<LOB 连接字符串 >**  
+ **\<方案\>: //[userinfo"@"]\<LOB 连接字符串\>**  
   
  例如，你无法连接到 contoso 目录排序系统 （示例业务线应用程序） 使用以下：  
   
- **northwind.contoso.v1.0://\<服务器名称 >？目录 = Contoso 集成的安全性 = True**  
+ **northwind.contoso.v1.0://\<servername\>？目录 = Contoso 集成的安全性 = True**  
   
  你还可以提供可选的颁发机构信息中包括用户名和密码以及其他重要的凭据的 URI。 但是，这可以存在安全风险。  
   

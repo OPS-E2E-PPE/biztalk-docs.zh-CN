@@ -19,11 +19,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1af0d60eab23a3cbfff67a8b4b11dc73fb49afe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e677a4fb68ad4f6991585c191c8065a60b3fc337
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>演练： 创建使用 POP3 适配器 BizTalk 应用程序
 本部分将指导您创建一个使用 POP3 适配器的简单 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**程序**，指向**管理工具**，然后单击**POP3 服务**。  
   
-2.  展开 *\<servername >* ，单击想要创建邮箱的域。  
+2.  展开 *\<servername\>*  ，单击想要创建邮箱的域。  
   
 3.  在**POP3 服务**对话框中，在右窗格中，单击**添加邮箱**选项。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="create-the-receive-location"></a>创建接收位置  
  请遵循以下步骤创建接收位置：  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台双击的默认数据库 **\<**  *machine_name***>。BizTalkMgmtDb.dbo**，其中*machine_name*是你的计算机的名称。 单击**应用程序**，然后单击**BizTalk.Application.1**。  
+1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台双击的默认数据库 **\<**  *machine_name***\>。BizTalkMgmtDb.dbo**，其中*machine_name*是你的计算机的名称。 单击**应用程序**，然后单击**BizTalk.Application.1**。  
   
 2.  右键单击**接收端口**，单击**新建**，单击**单向接收端口**。  
   
@@ -161,4 +161,4 @@ ms.lasthandoff: 09/20/2017
 2.  双击该文件夹中的文档，以便用记事本查看该文档的内容。  
   
 ## <a name="see-also"></a>另请参阅  
- [POP3 适配器是什么？](../core/what-is-the-pop3-adapter.md)
+ [POP3 适配器概述](../core/what-is-the-pop3-adapter.md)

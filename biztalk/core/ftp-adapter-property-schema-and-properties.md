@@ -30,11 +30,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16c300229163805dcb750590414851eb6013c7a6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cf72847fccd84a1435e436a4bf2b59d36e26179
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>FTP 适配器属性架构和属性
 下表包含 FTP 适配器属性架构中的属性。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
 |**ReceivedFileName**|xs:string|指定 FTP 适配器从中读取消息的文件的全名。|  
 |**MaxConnections**|xs:unsignedInt|指定服务器允许并行打开的最大 FTP 连接数。 0 表示无限制。|  
 |**CommandLogFileName**|xs:string|指定日志文件副本的保存位置，在通过 FTP 发送或接收文件时，可以使用该副本来诊断错误情况。|  
-|**AllocateStorage**|xs:boolean|在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中不赞成使用此选项，建议不要使用此属性。|  
+|**AllocateStorage**|xs:boolean|此选项在 BizTalk Server 中已弃用并建议不要使用此属性。|  
 |**PassiveMode**|xs:boolean|指定适配器用来连接 FTP 服务器的模式。<br /><br /> 在主动模式中，FTP 服务器连接到由 FTP 适配器打开的端口。 在被动模式中，FTP 适配器连接到由 FTP 服务器打开的端口。<br /><br /> 如果**PassiveMode**为 false，则适配器用来连接到 FTP 服务器使用主动模式。 此属性的默认值为 False。|  
 |**SpoolingFolder**|xs:string|指定 FTP 服务器上临时文件夹的位置。 此位置用于确保在传输失败后可以进行恢复。|  
 |**UseSsl**|xs:boolean|指定 FTP 适配器是否必须使用 SSL 与 FTPS 服务器进行通信。|  
@@ -63,6 +63,6 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [配置 FTP 适配器](../core/configuring-the-ftp-adapter.md)
  
- [最佳做法和建议为 FTP 适配器](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
+ [有关 FTP 适配器的最佳做法和建议](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
  
  [FTP 适配器](../core/ftp-adapter.md)

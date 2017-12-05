@@ -18,11 +18,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d42be28233162b158e463f2d3781a52807c4523
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>通过 WCF 接收适配器发布 WCF 服务时的注意事项
 本主题提供在通过 WCF 接收适配器发布 WCF 服务时应当注意的信息。  如果使用 WCF 适配器发布服务，会允许该服务由 WCF 客户端调用，就像该服务是一个典型的 WCF 服务一样。  
@@ -116,15 +116,15 @@ ms.lasthandoff: 09/20/2017
   
 |XML 架构元素|使用通过 BizTalk WCF 服务发布向导发布的 WCF 服务|使用由 .NET 应用程序承载的 WCF 服务|  
 |------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------|  
-|\<导入 >|BizTalk WCF 服务使用向导和 Svcutil.exe 均支持|BizTalk WCF 服务使用向导和 Svcutil.exe 均支持|  
-|\<包括 >|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|  
-|\<重新定义 >|支持与使用向导的 BizTalk WCF 服务<br />-有限的支持由 Svcutil.exe**注意：** Svcutil.exe 具有的相同限制**重新定义**作为 XSD.exe 的元素。|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|  
+|\<导入\>|BizTalk WCF 服务使用向导和 Svcutil.exe 均支持|BizTalk WCF 服务使用向导和 Svcutil.exe 均支持|  
+|\<包括\>|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|  
+|\<重新定义\>|支持与使用向导的 BizTalk WCF 服务<br />-有限的支持由 Svcutil.exe**注意：** Svcutil.exe 具有的相同限制**重新定义**作为 XSD.exe 的元素。|BizTalk WCF 服务使用向导和 Svcutil.exe 支持**注意：**创建代理类时，Svcutil.exe 可能会引发一条警告消息。|  
   
 > [!NOTE]
 >  使用使用的架构创建针对发布的 BizTalk WCF 服务的代理类时，Svcutil.exe 可能会引发一条警告消息**包括**和**重新定义**元素。 例如，“The global element has already been declared.”（此全局元素已声明。）  
   
 ## <a name="ensure-that-an-in-process-wcf-receive-location-is-not-disabled-after-you-change-the-computer-name-part-in-its-service-endpoint-address"></a>在更改了服务终结点地址中的计算机名部分之后，请确保相应的进程内 WCF 接收位置未被禁用。  
- 如果更改中的计算机名称部分**地址 (URI)**文本框中的运行中进程 WCF 接收位置，我们建议，使用 BizTalk 管理控制台来检查是否仍在运行接收位置。 例如，如果你更改使用 WCF NetTcp 的服务终结点地址将接收适配器， **net.tcp://\<***您的计算机名称***> / samplepath**，到**net.tcp://localhost/samplepath**，接收位置可能与禁用**Service.InvalidOperationException**。 如果只更改服务终结点地址中的计算机名部分，而不修改路径部分，则请确保接收位置未被禁用，如有必要请启用它。  
+ 如果更改中的计算机名称部分**地址 (URI)**文本框中的运行中进程 WCF 接收位置，我们建议，使用 BizTalk 管理控制台来检查是否仍在运行接收位置。 例如，如果你更改使用 WCF NetTcp 的服务终结点地址将接收适配器， **net.tcp://\<***您的计算机名称***\>/samplepath**到**net.tcp://localhost/samplepath**，接收位置可能与禁用**Service.InvalidOperationException**。 如果只更改服务终结点地址中的计算机名部分，而不修改路径部分，则请确保接收位置未被禁用，如有必要请启用它。  
   
 ## <a name="set-the-appropriate-msdtc-security-configuration-options-on-client-computers-communicating-with-remote-wcf-receive-locations-through-a-transaction-protocol"></a>在通过事务协议与远程 WCF 接收位置进行通信的客户端计算机上设置相应的 MSDTC 安全配置选项  
  WCF NetTcp、 WCF WSHttp 和 WCF NetNamedPipe 接收适配器可以参与到使用 WCF 客户端管理的事务协调流程**Ws-atomictransaction**和**OleTransaction**事务协议。 可以在事务性上下文中使用事务协议将消息传输到目标接收位置并将其从 MessageBox 数据库中删除。  

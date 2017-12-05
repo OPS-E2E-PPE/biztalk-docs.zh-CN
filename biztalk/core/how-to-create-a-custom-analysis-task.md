@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f910dd6bbe95579e0c2be8f3957333d6e78d7938
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3566e40deaa05886ead701e1871634cf6fb94e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-a-custom-analysis-task"></a>如何创建自定义分析任务
 创建自定义的 DTS 任务来处理 BAM 数据的最简单方法是从 BAM 由自动生成的包启动，并将所有实际的数据处理。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  创建需要的 OLAP 多维数据集的 BAM 定义。 例如使用 Excel 向导中，并将作为非 RTA 视图的一个 PivotTable® 报表。  
   
-2.  打开 BAM 创建的多维数据集处理的 DTS 包。 BAM 创建一个此类包中的每个视图中，称为 BAM_AN_\<*视图名称*>。  
+2.  打开 BAM 创建的多维数据集处理的 DTS 包。 BAM 创建一个此类包中的每个视图中，称为 BAM_AN_\<*视图名称*\>。  
   
 3.  在 DTS 设计器中打开该包并删除除前两个步骤和最后一步以外的所有步骤。 你可能还想要保留到主导入数据库的连接。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef78c47c3da88945573a70e85580c90e05b1d225
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3b19d14a35d42c4a46bf9527a97f5bf749b875f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-sso-tickets"></a>如何配置 SSO 票证
 可使用 MMC 管理单元或命令行对整个单一登录系统的票证行为进行控制，包括是否允许使用票证、系统是否必须验证票证。  
@@ -57,9 +57,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-票证\<允许是/否 > *\<验证是/否 >***，其中*\<允许是/否 >*指示或不是，是否将允许票证和*\<验证是/否 >*指示票证是否将需要进行验证后它们兑换。  
+3.  类型**ssomanage-票证\<允许是/否\> *\<验证是/否\>***，其中*\<允许是/否\>* 指示或不是，是否将允许票证和*\<验证是/否\>*指示票证是否将需要进行验证后它们兑换.  
   
     > [!NOTE]
     >  可使用 Yes、No、On 或 Off 指示是否允许使用和/或验证票证。 这些词不区分大小写，必须在任何语言设置下都能使用。  

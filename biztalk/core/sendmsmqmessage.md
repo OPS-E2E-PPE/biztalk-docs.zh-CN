@@ -15,11 +15,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39fd92c3d017e9ee88fe60f14c8baf9cb0ff941d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a48cbb333a724d2f60141f0f67ef3feccb1d3954
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendmsmqmessage"></a>SendMSMQMessage
 SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口发送消息。 它还提供有关如何配置 Microsoft 说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为了使用 MSMQ 接收位置。  
@@ -29,7 +29,7 @@ SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口�
  在此示例的上下文，很重要这段代码的调用中指定的事务类型**System.Messaging.MessageQueue.Send**是一致与为队列消息是指定的事务支持发送。 如果未完成此和未管理员指定队列 （就是在此示例中这种情况），如果 MSMQ 放弃时，它还执行该操作没有指示发送的消息 （即，没有错误代码返回给应用程序事件日志中写入任何诊断依此类推)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<示例路径 > \AdaptersUsage\SendMSMQMessage\  
+ \<示例路径\>\AdaptersUsage\SendMSMQMessage\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -128,7 +128,7 @@ SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口�
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<示例路径 > \AdaptersUsage\SendMSMQMessage\bin\Debug  
+     \<示例路径\>\AdaptersUsage\SendMSMQMessage\bin\Debug  
   
 2.  运行文件 SendMSMQMessage.exe，这将启动提供本示例的用户界面的图形应用程序。  
   
@@ -163,4 +163,4 @@ SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口�
      如果操作失败，则将在按钮上方紧挨的框中显示一条错误消息。  
   
 ## <a name="see-also"></a>另请参阅  
- [适配器示例-使用情况](../core/adapter-samples-usage.md)
+ [适配器示例 - 用法](../core/adapter-samples-usage.md)

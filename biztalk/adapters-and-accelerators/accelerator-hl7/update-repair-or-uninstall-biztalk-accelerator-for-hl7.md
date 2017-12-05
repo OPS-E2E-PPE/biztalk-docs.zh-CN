@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb49cdff18e880c91034aaf7d2ab81500c40dbab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e5b4fa1dba322e830114a76a0ca69134edbb1d06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、 修复或卸载 BizTalk Accelerator for HL7
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  当你修改你的安装[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]，端到端教程不会自动运行。 
 > 
-> 若要运行本教程并验证是否正确执行修改的安装，运行手动从教程***\<驱动器 >*** **files\microsoft BizTalk\<版本 >快捷键 HL7\SDK\End 端到端教程**文件夹。
+> 若要运行本教程并验证是否正确执行修改的安装，运行手动从教程***\<驱动器\>*** **files\microsoft BizTalk \<版本\>Accelerator for HL7\SDK\End 端到端教程**文件夹。
   
 1. 运行[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe**以管理员身份 
   

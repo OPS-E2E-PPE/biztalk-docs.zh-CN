@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 923bc73e6ee778cbf960300902c7f631dc5d9f5b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e95e61fa4152cdd7485175240b6481f3d28cfc7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a>作为功能确认的 EDIFACT CONTRL 消息
 如果已在业务配置文件设置或贸易合作伙伴协议（或者两个业务配置文件间未定义任何协议，则为后备协议）中选择生成功能确认，或者如果消息中的 UNB9 字段设置为“1”，将会生成 CONTRL 消息作为功能确认 (ACK)。 此确认会报告交换的语法检查结果。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 >  CONTRL 消息包含几个必需的数据元素，这些元素将从收到的交换进行复制。 如果交换中的数据元素丢失或在语法上无效，则无法生成在语法上有效的 CONTRL 消息。 因此，错误必须通过除 CONTRL 消息以外的其他方法进行报告。  
   
 > [!NOTE]
->  在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中，将发送一条 CONTRL 消息（确认回执、接受或拒绝）来响应仅包含一个或多个 CONTRL 消息的已接收交换。 在 [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] 中，将不会发送任何 CONTRL 消息（确认回执、接受或拒绝）来响应仅包含一个或多个 CONTRL 消息的已接收交换。 已接收 CONTRL 消息中的错误必须通过除 CONTRL 消息之外的其他方法进行报告。 如果包含数据消息的交换中包含一个或多个 CONTRL 消息，将会生成 CONTRL 消息作为对该交换的响应，就如同已接收的交换中未包含任何 CONTRL 消息一样。  
+>  在 BizTalk Server 中，对收到的交换包含仅一个或多个 CONTRL 消息响应中发送一条 CONTRL 消息 （接收确认，接受或拒绝）。 在 [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)] 中，将不会发送任何 CONTRL 消息（确认回执、接受或拒绝）来响应仅包含一个或多个 CONTRL 消息的已接收交换。 已接收 CONTRL 消息中的错误必须通过除 CONTRL 消息之外的其他方法进行报告。 如果包含数据消息的交换中包含一个或多个 CONTRL 消息，将会生成 CONTRL 消息作为对该交换的响应，就如同已接收的交换中未包含任何 CONTRL 消息一样。  
   
  **SG 循环**  
   

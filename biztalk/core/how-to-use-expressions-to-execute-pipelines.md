@@ -31,11 +31,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5a6090e0d7322a0e5b10d13016c073b73074392
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08f5933d3592d391087196f31185e279c40c4836
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a>如何使用表达式来执行管道
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 能够从业务流程中同步调用管道。 这使业务流程能够对数据正文利用封装在管道（发送或接收）内的消息处理，而不必通过消息传递基础结构来发送这些数据。  
@@ -152,9 +152,9 @@ ms.lasthandoff: 09/20/2017
   
  **消息**属性**XLANGPipelineManagerException**类包含在管道的执行错误的详细信息。 该详细信息的格式如下：  
   
--   出现故障执行管道\<管道类型 >。  错误详细信息\<格式的错误消息 >。  
+-   出现故障执行管道\<管道类型\>。  错误详细信息\<格式的错误消息\>。  
   
- 此消息中，\<管道类型 > 是管道类的名称和\<格式的错误消息 > 是管道执行过程中出现的特定故障的说明。  
+ 此消息中，\<管道类型\>是管道类的名称和\<格式的错误消息\>是管道执行过程中出现的特定故障的说明。  
   
  例如，如果业务流程调用接收管道和该管道的执行失败，因为没有任何管道的组件识别消息的值**XLANGPipelineManagerException**的属性将是：  
   
@@ -167,5 +167,5 @@ ms.lasthandoff: 09/20/2017
   
 |XLANGPipelineManagerException 属性|值|  
 |--------------------------------------------|-----------|  
-|消息|执行发送管道“MyPipelines.SendPipeline”时失败。  错误详细信息:"未能验证文档:"\<元素名称 > 元素是无效的值\<元素值 > 为不符合其数据类型 'String'-模式约束失败。""|  
+|消息|执行发送管道“MyPipelines.SendPipeline”时失败。  错误详细信息:"未能验证文档:"\<元素名称\>元素是无效的值\<元素值\>根据其数据类型 'String'-失败的模式约束无效。""|  
 |组件|“Microsoft.BizTalk.Component.XmlValidator”|

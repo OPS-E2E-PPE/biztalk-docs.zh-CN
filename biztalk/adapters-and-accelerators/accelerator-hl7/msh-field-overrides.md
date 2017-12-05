@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82603ded113fa25c839661fb7874d97f8b3bb074
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7303de4a8054cfe9f7140bd6eb548c228248777c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msh-field-overrides"></a>MSH 字段将覆盖
 每个 HL7 消息具有一个消息头。 使用[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]，你可以重写基于你的业务需求的任何消息标头值。 你使用[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器**MSH 映射**选项卡以手动覆盖消息标头值而不使用任何映射或业务流程。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-open-btahl7-configuration-explorer"></a>若要打开 BTAHL7 配置资源管理器  
   
--   单击**启动**，单击**程序**，单击**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+-   单击**启动**，单击**程序**，单击**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 #### <a name="to-configure-msh-field-overrides"></a>若要配置 MSH 字段重写  
   
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [日志记录配置](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   
  [消息批处理](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
-[操作日志记录、 消息批处理、 验证和 asknowledgment 设置](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)
+[运行日志记录、消息批处理、验证和确认设置](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)

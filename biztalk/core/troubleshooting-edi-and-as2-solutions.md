@@ -12,29 +12,29 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 073a52a4e8d4746980c15d42ce52bb226efda9a0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d9b2862464da17a541733d1e5cff4a3ba29e36
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-edi-and-as2-solutions"></a>EDI 和 AS2 解决方案的疑难解答
-本部分中的主题介绍 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中 EDI 和 AS2 解决方案的已知问题，还介绍常见的疑难解答步骤，可用于确定和解决 EDI 和 AS2 解决方案中可能出现的问题。  
+本部分中的主题介绍在 BizTalk Server 中的 EDI 和 AS2 解决方案的已知的问题，并且描述了可用于确定和解决可能发生的 EDI 和 AS2 解决方案中的问题的常见故障排除步骤。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [EDI 安全的已知的问题](../core/known-issues-with-edi-security.md)  
+-   [EDI 安全的已知问题](../core/known-issues-with-edi-security.md)  
   
--   [AS2 安全的已知的问题](../core/known-issues-with-as2-security.md)  
+-   [AS2 安全的已知问题](../core/known-issues-with-as2-security.md)  
   
--   [安装、 配置和部署的 EDI 和 AS2 解决方案的已知的问题](../core/known-issues-with-install-configuration-deployment-of-edi-and-as2-solutions.md)  
+-   [EDI 和 AS2 解决方案已知的安装、配置和部署问题](../core/known-issues-with-install-configuration-deployment-of-edi-and-as2-solutions.md)  
   
--   [EDI 处理的已知的问题](../core/known-issues-with-edi-processing.md)  
+-   [EDI 处理的已知问题](../core/known-issues-with-edi-processing.md)  
   
--   [AS2 处理的已知的问题](../core/known-issues-with-as2-processing.md)  
+-   [AS2 处理的已知问题](../core/known-issues-with-as2-processing.md)  
   
--   [已知问题 EDI 和 AS2 状态报告](../core/known-issues-with-edi-and-as2-status-reporting.md)  
+-   [EDI 和 AS2 状态报告的已知问题](../core/known-issues-with-edi-and-as2-status-reporting.md)  
   
--   [EDI 迁移的已知的问题](../core/known-issues-with-edi-migration.md)  
+-   [EDI 迁移的已知问题](../core/known-issues-with-edi-migration.md)  
   
--   [EDI 和 AS2 性能已知的问题](../core/known-issues-with-edi-and-as2-performance.md)
+-   [EDI 和 AS2 性能的已知问题](../core/known-issues-with-edi-and-as2-performance.md)

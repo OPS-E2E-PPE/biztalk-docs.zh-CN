@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f7e220ae4b3fbc12c81ee08280330245e57525f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f38b7ea3c811912e40a5ed3dc0b47df5b8aa884f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="support-for-oracle-user-defined-types"></a>对 Oracle 用户定义类型的支持
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]包含 Oracle User-Defined 类型 (Udt) 的支持 Oracle E-business Suite 和基础数据库中执行对项目的操作。 Udt 可出现在以下项目：  
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
  **BizTalk Server 中**  
   
--   手动添加在步骤 4 中在"设计时"到全局程序集缓存 (GAC) 中您的计算机上创建的 Oracle UDT 程序集。 或者，你可以手动复制 BizTalk Server 安装位置下的 Oracle UDT 程序集。 有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，这通常是\<安装驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。  
+-   手动添加在步骤 4 中在"设计时"到全局程序集缓存 (GAC) 中您的计算机上创建的 Oracle UDT 程序集。 或者，你可以手动复制 BizTalk Server 安装位置下的 Oracle UDT 程序集。 对于 BizTalk Server 中，通常这是\<安装驱动器\>: files\microsoft BizTalk Server。  
   
 -   配置时[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]WCF 自定义或 WCF OracleEBS 端口，在**绑定**选项卡上，指定 Oracle UDT 程序集的位置为**UserAssembliesLoadPath**绑定属性。 有关此绑定属性的信息，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。  
   

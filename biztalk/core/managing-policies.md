@@ -13,11 +13,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d49f0343c324900bf10c2efcce46cd57682ed04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6dd482c2f7a226a15fe730d2b75b470a54ff27e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-policies"></a>管理策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="import-publish-deploy-and-remove-policies"></a>导入、 发布、 部署和删除策略
  解决方案开发人员可以创建和使用业务规则编辑器中，查看策略中所述[创建业务规则使用业务规则编辑器](../core/creating-business-rules-using-the-business-rule-composer.md)。 然后，开发人员和 IT 管理员可以执行以下任务（如本部分的各主题中所述），以便在某个 BizTalk 组和应用程序中部署并管理策略：  
   
--   **将策略导入到 BizTalk 组。** 执行此操作时，该策略添加到组的规则引擎数据库，并在中的 BizTalk Server 管理控制台中显示\<所有项目 > BizTalk 组的节点。 导入操作不会使该策略针对任何特定应用程序生效。 您必须先发布策略，将其添加到应用程序中，然后进行部署，如本部分其他主题中所述。 规则引擎数据库是包含某个 BizTalk 组中的所有策略的数据库。  
+-   **将策略导入到 BizTalk 组。** 执行此操作时，该策略添加到组的规则引擎数据库，并在中的 BizTalk Server 管理控制台中显示\<所有项目\>BizTalk 组的节点。 导入操作不会使该策略针对任何特定应用程序生效。 您必须先发布策略，将其添加到应用程序中，然后进行部署，如本部分其他主题中所述。 规则引擎数据库是包含某个 BizTalk 组中的所有策略的数据库。  
   
 -   **发布策略。** 这将使它可以在 BizTalk 应用程序中使用。  
   
@@ -54,11 +54,11 @@ ms.lasthandoff: 09/20/2017
   
 -   [发布策略](../core/how-to-publish-a-policy.md)  
   
--   [将策略添加到应用程序](../core/how-to-add-a-policy-to-an-application.md)  
+-   [向应用程序添加策略](../core/how-to-add-a-policy-to-an-application.md)  
   
 -   [部署或取消部署策略](../core/how-to-deploy-or-undeploy-a-policy.md)  
   
--   [配置策略的跟踪](../core/how-to-configure-tracking-for-a-policy.md)  
+-   [为策略配置跟踪](../core/how-to-configure-tracking-for-a-policy.md)  
   
 -   [从应用程序和 BizTalk 组中删除策略](../core/how-to-remove-a-policy-from-an-application-and-the-biztalk-group.md)  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 730998918beb464b00b871f8ab04060a7cd59af6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a58396a9dd6627f2913da8e3845a99b17cf7698
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>管理 A4SWIFT 数据库中的 Bicplus 表
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]使用 BIC 条目的表来执行 BIC 验证。 此表可以是中的 Bicplus 表[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库或自定义数据库表。  
@@ -67,11 +67,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="importing-sql-views-from-the-a4swift-database-into-a-custom-database"></a>将 SQL 视图从 A4SWIFT 数据库导入自定义数据库  
  [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]安装程序将安装中的两个 SQL 视图[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库。 其中一个视图是为 8 个字符 BICs 和另一个是 11 个字符 BICs 有关。  
   
- 如果使用自定义数据库，而不是[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库，你必须将这些 SQL 视图导入自定义的数据库。 通过在查询分析器执行 CreateBICViews.sql 脚本执行此操作。 此脚本位于\<*驱动器*>: files\microsoft BizTalk Accelerator for SWIFT/脚本。  
+ 如果使用自定义数据库，而不是[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库，你必须将这些 SQL 视图导入自定义的数据库。 通过在查询分析器执行 CreateBICViews.sql 脚本执行此操作。 此脚本位于\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT/脚本。  
   
 #### <a name="to-import-sql-views-from-the-a4swift-database-into-a-custom-database"></a>若要将 SQL 视图从 A4SWIFT 数据库导入自定义数据库  
   
-1.  在 Windows 资源管理器，移动到\<*驱动器*>: files\microsoft BizTalk Accelerator for SWIFT\Scripts。 双击**CreateBICViews.sql**。  
+1.  在 Windows 资源管理器，移动到\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\Scripts。 双击**CreateBICViews.sql**。  
   
 2.  在连接到服务器对话框中，单击**连接**。  
   
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
 6.  单击 **“执行”**。  
   
 ## <a name="see-also"></a>另请参阅  
- [启用的 Bank 标识符代码的验证](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)
+ [启用银行标识代码验证](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)

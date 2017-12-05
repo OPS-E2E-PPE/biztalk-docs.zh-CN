@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2216116e00e587d8da0d69cea8cd1c364e5786b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 688c4a192a77dbc01de438c20be709dc4b3c378c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>插入、 更新、 删除或选择 BizTalk Server 使用的 SQL 适配器的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现一组的 SQL Server 数据库表和视图上的标准操作。 这些行为称为数据操作语言 (DML) 操作。 通过使用 DML 操作，可以执行简单的 Insert、 Update、 选择和删除表和视图上的操作。 有关如何适配器支持这些操作的详细信息，请参阅[插入、 更新、 删除和选择操作对表和视图与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[插入、 更新、 删除和选择表和视图上的操作的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。  
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
  业务流程使用该消息，并将其发送到 SQL Server 数据库。 从 SQL Server 数据库响应保存在定义为业务流程的一部分的其他文件位置中。 例如，来自 SQL Server 数据库中的前面的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SelectResponse xmlns="mssql://Microsoft.LobServices.Sql/2008/01/TVOp/dbo/Employee">  
   <SelectResult>  
     <Employee xmlns="mssql://Microsoft.LobServices.Sql/2008/01/Types/Tables/dbo">  
@@ -193,4 +193,4 @@ ms.lasthandoff: 09/20/2017
 -   如果你要插入的更新，或删除大量数据使确保您正确的超时值为 WCF 适配器和设置 MSDTC 事务。 有关详细信息，请参阅"适配器无法插入、 更新或删除单个操作使用 BizTalk Server 中的数据的大型卷"中的问题[解决与 SQL 适配器的操作问题](../../adapters-and-accelerators/adapter-sql/troubleshoot-operational-issues-with-the-sql-adapter.md)。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发使用 SQL 适配器的 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[使用 SQL 适配器开发 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

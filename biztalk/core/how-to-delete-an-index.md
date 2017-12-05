@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0ab00dc2640bbede95881280b73962c33442e46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9934c333699b853a3e10a0e5ecf212acf17fa6c6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-delete-an-index"></a>如何删除索引
 管理员使用**删除索引**命令以删除指定的检查点在指定的活动的索引。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
   
-3.  类型**bm 删除索引 IndexName:\<索引名称 >-活动：\<活动名称 >**。  
+3.  类型**bm 删除索引 IndexName:\<索引名称\>的活动：\<活动名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

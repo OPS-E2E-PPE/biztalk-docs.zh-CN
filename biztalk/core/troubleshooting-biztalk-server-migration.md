@@ -12,21 +12,21 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dcdb53c7123b4ffaa2294db080e1efc4fb4eb65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ddb6d9780a86183de5a09791de44adda5d57dab
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-biztalk-server-migration"></a>BizTalk Server 迁移疑难解答
-本部分集中提供了有关将 BizTalk 应用程序从 [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] 或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 迁移到 [!INCLUDE[prague](../includes/prague-md.md)] 时遇到的常见问题的相关信息。  
+本部分提供有关从迁移 BizTalk 应用程序时遇到的常见问题的信息的一个集中的位置[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]给 BizTalk Server 2009。  
   
 ## <a name="known-issues"></a>已知问题  
   
 #### <a name="custom-applications-might-not-work-while-upgrading"></a>自定义应用程序可能无法升级时  
   
 ##### <a name="problem"></a>问题  
- 从 [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] 或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009 升级到 [!INCLUDE[prague](../includes/prague-md.md)] 时，某些自定义应用程序可能无法工作。  
+ 从升级时[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]给 BizTalk Server 2009 某些自定义应用程序可能无法工作。  
   
 ##### <a name="cause"></a>原因  
  所有 BizTalk 都托管在 CLR 4.0 上运行的代码组件。 由于这些组件是针对 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 而编译的，所以它们需要有 config 文件才能在 CLR 4.0 上运行。  

@@ -15,17 +15,17 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beb792fe66e5806a186b0ffb946aa99f86a6a10c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14245a185adcccdfb1f2ea2ed9382820fb84177e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT 架构的命名约定
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括用于互联网协会用于使用 BizTalk 编辑器创建的全球 Interbank 财务电信 (SWIFT) FIN 消息的架构。 这些架构符合在整个以下约定：  
   
 > [!NOTE]
->  所有架构都是版本控制的。 若要查看版本，请打开[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后右键单击解决方案资源管理器中的架构。 与\<架构 > BizTalk 编辑器中，选定属性窗格中向下滚动到标准版本属性中的节点。  
+>  所有架构都是版本控制的。 若要查看版本，请打开[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后右键单击解决方案资源管理器中的架构。 与\<架构\>BizTalk 编辑器中，选定属性窗格中向下滚动到标准版本属性中的节点。  
   
 -   每个交换架构文件的名称是 **MT*xxx*.xsd * *，其中*xxx*是 FIN 消息类型。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   标签编号 SWIFT 字段包括序列中 （如果存在） 后, 跟一个描述性标题跟的数字代码和可选字母格式 (例如， **Reference_A_20C**)。  
   
--   选择的多个字段的格式，节点的标签是  **\<*选择*> * *，，然后每个选项的已编号的字段 (例如， **Date_A_98A**和**DateTime_A_98C**)。  
+-   选择的多个字段的格式，节点的标签是  **\<*选择*\>* *，，然后每个选项的已编号的字段 (例如， **Date_A_98A**和**DateTime_A_98C**)。  
   
 -   最低级别的元素定义的子字段的名称包含跟子字段的名称**类型**(例如， **accountType**帐户)。  
   
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
  每个消息架构直接引用的基类型和通用数据类型的架构。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用架构](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+ [处理架构](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

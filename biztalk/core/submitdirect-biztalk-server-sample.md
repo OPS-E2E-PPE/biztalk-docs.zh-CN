@@ -16,11 +16,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1e355f752241135d781c3425e05f017b0d86d93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4941cb95e180b7075b7e113fb89f7734a9abd82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="submitdirect-biztalk-server-sample"></a>SubmitDirect （BizTalk Server 示例）
 SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息向 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从。基于网络的应用程序。 示例演示了适用于适配器的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] API 的用法。 此外，它还提供了一个名为 Submit 的接收适配器，可使用该适配器将消息提交给 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -46,7 +46,7 @@ SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息
 -   **提交的请求/响应消息。** 控制台应用程序 SubmitRequest.exe 采用其命令行上指定的.xml 文件，并将其到提交[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 该 .xml 文件的架构定义的元素包含两个整数型字段。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]选择的.xml 文件，并与业务流程 （与一个请求/响应端口） 对其进行处理。 它使用映射来生成 XML 响应消息，该消息返回的是一个整数，该整数是请求中的两个整数的乘积。 当控制台应用程序收到该响应后，它将显示结果。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \AdaptersDevelopment\SubmitDirect\  
+ \<*示例路径*\>\AdaptersDevelopment\SubmitDirect\  
   
  下表列出了本示例中的文件及其用途说明。  
   
@@ -69,13 +69,13 @@ SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersDevelopment\SubmitDirect  
+     \<*示例路径*\>\AdaptersDevelopment\SubmitDirect  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   创建此示例的批次提交部分的以下输出文件夹。  
   
-         \<*示例路径*> \AdaptersDevelopment\SubmitDirect\Out  
+         \<*示例路径*\>\AdaptersDevelopment\SubmitDirect\Out  
   
     -   编译本示例的各个 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目。  
   
@@ -110,7 +110,7 @@ SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
+     \<*示例路径*\>\AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
   
 2.  运行文件 SubmitMessages.exe，命令行上传递多个字符串。  
   
@@ -122,7 +122,7 @@ SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
+     \<*示例路径*\>\AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
   
 2.  运行文件 SubmitRequest.exe，将相应的.xml 文件名称传递命令行上。  
   
@@ -158,4 +158,4 @@ SubmitDirect 示例演示如何以编程方式提交单向和请求/响应消息
   
 ## <a name="see-also"></a>另请参阅  
  [适配器样本-开发](../core/adapter-samples-development.md)   
- [注册的适配器](../core/registering-an-adapter.md)
+ [注册适配器](../core/registering-an-adapter.md)

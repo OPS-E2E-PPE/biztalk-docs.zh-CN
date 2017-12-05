@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a42fb3ca8381faedbd2283b9f4d297738bbb040d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01e445ef19a1d65cc97a3603492a1ad9ba0442e9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-updating-applications-and-artifacts"></a>更新应用程序和项目的已知的问题
 ## <a name="updating-an-application"></a>更新应用程序  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  **不支持.NET 策略文件**  
   
- 中不支持的.NET 策略文件使用[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 原因在于策略文件可能不会以预期方式工作。 策略文件将.NET 重定向到指定的程序集版本在 GAC 中，但[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常从缓存或 BizTalk 管理数据库中访问程序集和项目数据。 策略文件可能不会执行预期操作，具体情况视项目类型、缓存情况和主机实例是否重新启动而定。  
+ BizTalk Server 中不支持的.NET 策略文件使用。 原因在于策略文件可能不会以预期方式工作。 策略文件将.NET 重定向到指定的程序集版本在 GAC 中，但[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常从缓存或 BizTalk 管理数据库中访问程序集和项目数据。 策略文件可能不会执行预期操作，具体情况视项目类型、缓存情况和主机实例是否重新启动而定。  
   
 ## <a name="updating-an-assembly"></a>更新程序集  
  **程序集的更改可能会生效，如果主机未停止**  

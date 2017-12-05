@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99923c3029b72dae660bee4b4089336e90e2e4e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd2df85f051285e999660dc3765855d22c708939
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enable-receive-location-biztalk-server-sample"></a>启用接收位置 （BizTalk Server 示例）
 启用接收位置示例演示如何启用接收位置和 （可选） 设置对该接收位置的入站传输 URL。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\WMI\Enable 接收位置 \  
+ \<*示例路径*\>\Admin\WMI\Enable 接收位置 \  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -59,18 +59,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Enable 接收 Location\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Enable 接收 Location\VBScript\  
   
 2.  运行该文件使用 cscript 程序传递以下命令行自变量，而第三个是可选的 EnableRecLoc.vbs:  
   
-    -   **\<**   
-         ***ReceivePortName* >。** 包含要启用的接收位置的接收端口的名称。 如果接收端口名称包含空格，请将名称括在引号中。  
+    -   **\<** ***ReceivePortName* \>。** 包含要启用的接收位置的接收端口的名称。 如果接收端口名称包含空格，请将名称括在引号中。  
   
-    -   **\<**   
-         ***ReceiveLocationName* >。** 位于要启用的指定接收端口中的接收位置的名称。 如果接收位置名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***ReceiveLocationName* \>。** 位于要启用的指定接收端口中的接收位置的名称。 如果接收位置名称包含空格，则将该名称置于引号中。  
   
-    -   **\<**   
-         ***InboundTransportURI* >。** 接收适配器 URI，相对于产品安装位置的主传输地址，通过指定该参数，您可以更改此地址。 如果入站的适配器 URI 包含空格，括起来的 URI。  
+    -   **\<** ***InboundTransportURI* \>。** 接收适配器 URI，相对于产品安装位置的主传输地址，通过指定该参数，您可以更改此地址。 如果入站的适配器 URI 包含空格，括起来的 URI。  
   
          例如：  
   
@@ -92,4 +89,4 @@ ms.lasthandoff: 09/20/2017
  有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

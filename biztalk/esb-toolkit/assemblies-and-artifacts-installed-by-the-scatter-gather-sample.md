@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daf1fce43d967f28dab0d323afbda6b612f5cbef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e62dd1701284fec27084bbdaf5aab19d6dca64a4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-scatter-gather-sample"></a>程序集和项目安装散播-聚集示例
 下表列出的程序集和 ESB 散播-聚集示例安装其他项目。  
@@ -39,4 +39,4 @@ ms.lasthandoff: 09/20/2017
 |BizTalk 应用程序 GlobalBank.ESB|地图||  
 |全局程序集缓存|程序集|GlobalBank.ESB.ScatterGather.Processes 版本 2.0.0.0|  
 |||GlobalBank.ESB.ScatterGather.Schemas 版本 2.0.0.0|  
-|%Program 文件 %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline 组件|管道组件||
+|%Program 文件 %\\BizTalk Server\Pipeline 组件|管道组件||

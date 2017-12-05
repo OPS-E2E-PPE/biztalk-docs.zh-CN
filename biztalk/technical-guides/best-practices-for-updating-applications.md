@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17fd3ce03ab4c974bff1b5198d27385d311ed70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01cf54454866eadbd70de7ef30439a0e7068cb1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-updating-applications"></a>更新应用程序的最佳做法
 本主题介绍你应考虑使用更新 BizTalk 应用程序和项目时的最佳做法。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **BizTalk 程序集检查器和远程 GAC 工具**(BTSAssemblyChecker.exe) 检查部署到 BizTalk 管理数据库中的程序集的版本，并验证它们是否正确注册所有 BizTalk 上的 GAC 中服务器的计算机。 此工具可用于验证包含某些 BizTalk 应用程序的项目的所有程序集安装在所有 BizTalk 节点。 该工具是结合稳定版本控制策略以验证一组程序集的正确版本上安装了每个 BizTalk 机，尤其是使用通过并行部署方法时特别有用。  
   
--   该工具，同时提供[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装介质上 Support\Tools\x86\BTSAssemblyChecker.exe。  
+-   该工具时使用的 BizTalk Server 安装媒体上 Support\Tools\x86\BTSAssemblyChecker.exe。  
   
  **使用版本控制产品**  
   
@@ -95,4 +95,4 @@ ms.lasthandoff: 09/20/2017
 -   尽管无需停止应用程序，以便更新项目，或安装应用程序，但是我们建议你始终停止应用程序，当你更新项目。  
   
 ## <a name="see-also"></a>另请参阅  
- [如何导出绑定到绑定文件](../technical-guides/how-to-export-bindings-to-a-binding-file.md)
+ [如何将绑定导出到绑定文件](../technical-guides/how-to-export-bindings-to-a-binding-file.md)

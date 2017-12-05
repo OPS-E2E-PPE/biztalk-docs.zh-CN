@@ -15,24 +15,24 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f02ec8a33fdb050462860efc6c6a0cd5f8fa5650
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b71c3adbcbe5aaaea4d9fa4bf25b2aa4191c580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-real-time-aggregated-data"></a>查询实时的聚合的数据
 实时聚合 (RTA) 数据可在主导入数据库中动态创建的 SQL 视图内进行查询。  
   
  此视图的名称是  
   
- **bam_\<**  *ViewName* **> _\<**  *RTAName* **> _RTAView**  
+ **bam_\<**  *ViewName*  **\>_\<**  *RTAName*  **\>_RTAView**  
   
  位置  
   
- **\<***ViewName*  **>** 为 BAM 定义 XML 中的视图元素的名称属性即相同在相关的 Microsoft Excel 向导中输入视图名称。  
+ **\<***ViewName*  **\>** 为 BAM 定义 XML 中的视图元素的名称属性即相同在相关的 Microsoft Excel 向导中输入视图名称。  
   
- **\<***RTAName*  **>** 在 BAM 定义 XML 中，BAM 生成是唯一的 RealTimeAggregation 元素的名称属性基于的视图名称。  
+ **\<***RTAName*  **\>** 在 BAM 定义 XML 中，BAM 生成是唯一的 RealTimeAggregation 元素的名称属性基于的视图名称。  
   
  在查询实时聚合数据时，请一定要注意下列情况：  
   

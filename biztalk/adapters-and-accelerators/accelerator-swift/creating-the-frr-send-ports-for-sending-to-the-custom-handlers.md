@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7da5d51407bed1cca257e14cc4f548e8c991cf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4a6326ae6e82e819d3cdf76ecc4d81e2a377ea65
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>创建 FRR 发送端口将发送到自定义处理程序
 若要执行 FIN 响应对帐，你需要创建一系列发送端口，其中每个发送一条消息 （原始消息或响应） 从[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到处理相关的消息的自定义处理程序。  
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**。|  
     |**运算符**|选择 **==** 。|  
     |**值**|类型**A4SWIFT_FrrService**。|  
-    |**分组**|**和**|  
+    |**分组**|**And**|  
     |**属性**|选择**BTS。操作**。|  
     |**运算符**|选择 **==** 。|  
     |**值**|BTS 之一的类型。下表中的操作值。|  
@@ -102,18 +102,18 @@ ms.lasthandoff: 09/20/2017
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**。|  
     |**运算符**|选择 **==** 。|  
     |**值**|类型**A4SWIFT_FrrService**。|  
-    |**分组**|**和**|  
+    |**分组**|**And**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**。|  
     |**运算符**|选择 **==** 。|  
     |**值**|类型**True**。|  
-    |**分组**|**和**|  
+    |**分组**|**And**|  
     |**属性**|选择**BTS。操作**。|  
     |**运算符**|选择 **==** 。|  
     |**值**|类型**A4SWIFT_FrrSendMTMsg**。|  
-    |**分组**|**和**|  
+    |**分组**|**And**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
     |**运算符**|选择 **==** 。|  
-    |**值**|类型 *\<NAKErrorCode >*，如"Y01"。|  
+    |**值**|类型 *\<NAKErrorCode\>*，如"Y01"。|  
     |**分组**|**Or**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
     |**运算符**|选择 **==** 。|  

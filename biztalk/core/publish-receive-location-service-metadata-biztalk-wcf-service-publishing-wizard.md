@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93f739620b16514df26c836d645af41b8be0e8eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2dce9a66465285dc16f8de804c7a6e99fa7e62a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a>如何使用 BizTalk WCF 服务发布向导为已绑定到业务流程端口的 WCF 接收位置发布服务元数据
 您可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为已绑定到业务流程端口的现有 WCF 接收位置发布服务元数据。  
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
      ![WCF 服务属性页](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-9. 上**WCF 服务位置**页上，在**位置**文本框中，键入中生成的 WCF 服务的 Web 目录名称。 你可以接受默认位置 (http://localhost/\<*BizTalk 程序集名称*>)，键入用于中的 WCF 服务的位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+9. 上**WCF 服务位置**页上，在**位置**文本框中，键入中生成的 WCF 服务的 Web 目录名称。 你可以接受默认位置 (http://localhost/ <*BizTalk 程序集名称*>)，键入用于中的 WCF 服务的位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
   
     -   **覆盖现有项目。** 此选项是 Web 目录已存在时才可用。 仅当选择了此选项时，您才能够发布到同一位置。 否则，必须输入不同的项目位置。  
   
@@ -83,10 +83,10 @@ ms.lasthandoff: 09/20/2017
      ![WCF 服务位置页](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到不同的服务器，键入项目名称为 http://\<*servername*>/\<*WCF 服务位置*>。  
+    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到不同的服务器，键入项目名称，作为 http://&lt*servername*>/<*WCF 服务位置*>。  
   
     > [!NOTE]
-    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://\<*servername*>: 8080 /\<*WCF 服务位置*>。  
+    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://&lt*servername*>: 8080 / <*WCF 服务位置*>。  
   
     > [!NOTE]
     >  向导将创建 Web 应用程序的 App_DataTemp 文件夹中的 BindingInfo.xml 文件管道中使用的默认值。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.XMLReceive**管道，而默认值为发送管道**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**管道。  
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  打开命令提示符，请转到 BizTalk WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹\\，然后打开 Web.config 文件使用记事本。  
   
-3.  在记事本中，添加以下代码行内的 **\<.w e b >**元素：  
+3.  在记事本中，添加以下代码行内的 **\<system.web\>** 元素：  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -127,7 +127,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  在记事本中，打开 BizTalk WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹中的 Web.config\\。  
   
-    2.  在记事本中，设置**httpGetEnabled**属性中 **\<serviceMetadata >**元素为 false，如下所示的以下行：  
+    2.  在记事本中，设置**httpGetEnabled**属性中 **\<serviceMetadata\>** 元素为 false，如下所示的以下行：  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  
@@ -135,4 +135,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置用于基于内容的路由发布服务元数据](../core/publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing.md)   
- [演练： 使用 WCF NetMsmq 适配器的 WCF 服务发布](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+ [演练：通过 WCF-NetMsmq 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

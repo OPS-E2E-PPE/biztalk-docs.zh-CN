@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a4ad59760d6efddcfe946c0ee13c26ee0f8ca1d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a295bacf263e3ecad9a9aa081fb0d5d3be2f635
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-save-rename-and-close-schemas"></a>如何保存，重命名，并关闭架构
 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，架构是具有 .xsd 扩展名的 XML 架构定义 (XSD) 语言文件并驻留在文件系统中。 在使用 BizTalk 编辑器开发架构时，会经常需要保存和关闭架构文件，有时还可能需要重命名这些文件。 本主题将介绍执行这些基本操作所需的步骤。  
@@ -25,12 +25,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  如果需要，可以通过单击 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中主编辑窗口顶部相应的选项卡，为要保存的架构激活 BizTalk 编辑器。  
   
-2.  上**文件**菜单上，单击**保存*\<架构名称 >***。  
+2.  上**文件**菜单上，单击**保存*\<名称的架构\>***。  
   
      如尚未保存对架构所做的更改，则显示在主编辑窗口顶部的选项卡上的该架构的名称将不再以星号 (*) 结尾，这表示更改未保存。  
   
 > [!NOTE]
->  你可以通过单击保存以新名称的架构**保存*\<架构名称 >*作为**上**文件**菜单。  
+>  你可以通过单击保存以新名称的架构**保存*\<名称的架构\>*作为**上**文件**菜单。  
   
 > [!NOTE]
 >  你可以将架构保存作为一部分保存在项目中的所有更改的项，通过单击**保存所有**上**文件**菜单。  
@@ -59,4 +59,4 @@ ms.lasthandoff: 09/20/2017
      对于已关闭的架构，相应的 BizTalk 编辑器也将关闭。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理架构在项目中](../core/managing-schemas-within-projects.md)
+ [管理项目中的架构](../core/managing-schemas-within-projects.md)

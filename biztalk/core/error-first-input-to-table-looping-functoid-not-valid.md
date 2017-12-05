@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2cfa89175d566ed152caa852dfc7aef2b435447
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb9ebecbd92b43dd25e6ff3dde04d942b936f40d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-table-looping-functoid-not-valid"></a>错误-第一个输入到循环 Functoid 不是有效的表
 **错误代码**  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 确保的输入的参数**表循环**functoid，如通过访问**输入参数**属性和**配置\<Functoid > Functoid**对话框中，是下表中所示。  
+ 确保的输入的参数**表循环**functoid，如通过访问**输入参数**属性和**配置\<Functoid\>Functoid**对话框中，是下表中所示。  
   
 |“表循环”functoid 输入参数编号|Description|  
 |---------------------------------------------------|-----------------|  

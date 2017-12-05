@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: deae453be1a89049f223e2da9813e449d68eeb07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ad3628f61fec11f135bf2235f5e0d25f52992d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-register-and-remove-the-biztalk-assembly-viewer"></a>如何注册和删除 BizTalk 程序集查看器
 BizTalk 程序集查看器在 BizTalk Server 安装期间不自动注册。 若要注册或删除 BizTalk 程序集查看器，请执行以下步骤。  
@@ -27,7 +27,7 @@ BizTalk 程序集查看器在 BizTalk Server 安装期间不自动注册。 若�
   
 2.  在运行对话框中，键入**cmd**。  
   
-3.  从命令行中，导航到\< *BizTalk Server 安装文件夹*> \Developer Tools\ BTSAsmExt.dll 所在的位置。  
+3.  从命令行中，导航到\< *BizTalk Server 安装文件夹*\>\Developer Tools\ BTSAsmExt.dll 所在的位置。  
   
 4.  在命令行提示符处键入以下命令：  
   
@@ -41,7 +41,7 @@ BizTalk 程序集查看器在 BizTalk Server 安装期间不自动注册。 若�
   
 2.  在**运行**对话框中，键入**cmd**。  
   
-3.  从命令行中，导航到\< *BizTalk Server 安装文件夹*> \Developer Tools\ BTSAsmExt.dll 所在的位置。  
+3.  从命令行中，导航到\< *BizTalk Server 安装文件夹*\>\Developer Tools\ BTSAsmExt.dll 所在的位置。  
   
 4.  在命令行提示符处键入以下命令：  
   
@@ -50,4 +50,4 @@ BizTalk 程序集查看器在 BizTalk Server 安装期间不自动注册。 若�
 5.  若要完成删除，先注销，然后再登录该计算机。  
   
 ## <a name="see-also"></a>另请参阅  
- [查看具有 BizTalk 程序集查看器的程序集](../core/viewing-assemblies-with-the-biztalk-assembly-viewer.md)
+ [使用 BizTalk 程序集查看器查看程序集](../core/viewing-assemblies-with-the-biztalk-assembly-viewer.md)

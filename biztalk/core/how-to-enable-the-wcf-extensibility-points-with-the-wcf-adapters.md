@@ -13,11 +13,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be2980f3235552f263efbd4fce92c0042216b88c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2881ddd83ebeb31a9f5ff3da6ed858f158751d64
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>如何启用 WCF 适配器的 WCF 扩展点
 启用三个 WCF 扩展性点-行为扩展、 绑定元素扩展和绑定扩展-与的 WCF 自定义和 WCF CustomIsolated 适配器。 若要执行此操作，首先应将用于实现 WCF 扩展点的程序集安装到全局程序集缓存 (GAC) 中，然后修改计算机上的 machine.config 文件，最后再使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置 WCF-Custom 或 WCF-CustomIsolated 适配器。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  键入下列命令：  
   
-     **gacutil.exe /if"\<**  *的程序集.dll 文件的路径* **>"**  
+     **gacutil.exe /if"\<**  *的程序集.dll 文件的路径*  **\>"**  
   
 5.  此命令将程序集安装到 GAC，覆盖任何具有相同程序集名称的现有程序集。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel >\\< 扩展\>**元素，将这些元素内的添加 **\<配置 >**元素的 machine.config 文件，，然后添加 **\<bindingExtensions >**内的 WCF 绑定扩展元素 **\<system.serverModel >\\< 扩展\>**元素。 例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置 >** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingExtensions\>** 内的 WCF 绑定扩展元素 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  
@@ -87,11 +87,11 @@ ms.lasthandoff: 11/07/2017
   
 3.  如果使用 WCF-CustomIsolated 适配器，则在 IIS 管理控制台中重新启动与 WCF 接收位置相关联的应用程序池。  
   
-4.  如果你想要配置接收位置以便使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*展开**接收位置**，，然后在右窗格中，双击*\<接收位置 >*。  
+4.  如果你想要配置接收位置以便使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**接收位置**，，然后在右窗格中，双击*\<接收位置\>*。  
   
     -   在**接收位置属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**或**WCF CustomIsolated**具体取决于你想要使用，并依次 WCF 适配器**配置**。  
   
-5.  如果你想要配置发送端口以使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口 >*。  
+5.  如果你想要配置发送端口以使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口\>*。  
   
     -   在**发送端口属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**，然后单击**配置**。  
   
@@ -103,7 +103,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel >\\< 扩展\>**元素，将这些元素内的添加 **\<配置 >**元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions >**元素内的 WCF 绑定元素扩展 **\<system.serverModel >\\< 扩展\>**元素。 例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置 >** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions\>**  WCF 绑定元素的元素内部扩展 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  
@@ -137,11 +137,11 @@ ms.lasthandoff: 11/07/2017
   
 3.  如果使用 WCF-CustomIsolated 适配器，则在 IIS 管理控制台中重新启动与 WCF 接收位置相关联的应用程序池。  
   
-4.  如果你想要配置接收位置以便使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*展开**接收位置**，，然后在右窗格中，双击*\<接收位置 >*。  
+4.  如果你想要配置接收位置以便使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**接收位置**，，然后在右窗格中，双击*\<接收位置\>*。  
   
     -   在**接收位置属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**或**WCF CustomIsolated**具体取决于你想要使用，并依次 WCF 适配器**配置**。  
   
-5.  如果你想要配置发送端口以使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口 >*。  
+5.  如果你想要配置发送端口以使用中的 WCF 扩展性点，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口\>*。  
   
     -   在**发送端口属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**，然后单击**配置**。  
   
@@ -166,7 +166,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel >\\< 扩展\>**元素，将这些元素内的添加 **\<配置 >**元素的 machine.config 文件，，然后添加 **\<behaviorExtensions >**内的 WCF 行为扩展元素 **\<system.serverModel >\\< 扩展\>**元素。 例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置 >** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<behaviorExtensions\>** 的 WCF 行为扩展元素内部 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  
@@ -200,11 +200,11 @@ ms.lasthandoff: 11/07/2017
   
 3.  如果使用 WCF-CustomIsolated 适配器，则在 IIS 管理控制台中重新启动与 WCF 接收位置相关联的应用程序池。  
   
-4.  如果你想要配置接收位置以便使用 WCF 扩展性点时，在 BizTalk 管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*，展开**接收位置**，，然后在右窗格中，双击*\<接收位置 >*。  
+4.  如果你想要配置接收位置以便使用 WCF 扩展性点时，在 BizTalk 管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**接收位置**，，然后在右窗格中，双击*\<接收位置\>*。  
   
     -   在**接收位置属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**或**WCF CustomIsolated**具体取决于你想要使用，并依次 WCF 适配器**配置**。  
   
-5.  如果你想要配置发送端口以使用 WCF 扩展性点时，在 BizTalk 管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序 >*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口 >*。  
+5.  如果你想要配置发送端口以使用 WCF 扩展性点时，在 BizTalk 管理控制台中，展开**BizTalk 组**，展开 *\<BizTalk 应用程序\>*，展开**发送端口**，，然后在右窗格中，双击*\<发送端口\>*。  
   
     -   在**发送端口属性**对话框中，在**类型**下拉列表中，选择**WCF 自定义**，然后单击**配置**。  
   

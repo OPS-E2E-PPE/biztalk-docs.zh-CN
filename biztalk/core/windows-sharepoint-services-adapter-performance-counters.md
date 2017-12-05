@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80340fd8479b8bf1a0e431e90778f7501763fe4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1af70299f5e308d1fc40fa6206f0ebfabff22a06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-sharepoint-services-adapter-performance-counters"></a>Windows SharePoint Services 适配器性能计数器
 使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。 性能计数器能够帮助您标识和解决有关服务器性能的问题。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加计数器**对话框中，从**可用计数器**列表中，展开**biztalk: Windows Sharepoint Services Adapter**性能计数器对象，并选择要监视的计数器  
   
-4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**>。  
+4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**\>。  
   
 5.  添加计数器后, 单击**确定**。  
   

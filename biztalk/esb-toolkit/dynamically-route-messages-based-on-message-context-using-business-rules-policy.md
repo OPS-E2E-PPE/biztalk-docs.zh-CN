@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717e0180ba92d49751342e00a4d0367832084135
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0d36df10b271d83b1e77f4d7f57d357f4b22033
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>如何： 动态路由基于消息上下文使用业务规则策略在一条消息
 ## <a name="goal"></a>目的  
- 本部分演示如何创建确定消息终结点，根据消息上下文属性，使用一条路线[!INCLUDE[prague](../includes/prague-md.md)]业务规则引擎 (BRE) 策略，然后路由消息使用[!INCLUDE[prague](../includes/prague-md.md)]文件适配器。  
+ 本部分演示如何创建一条路线，并将确定消息终结点，根据消息上下文属性，使用 BizTalk Server 业务规则引擎 (BRE) 策略，然后将路由使用 BizTalk Server 文件适配器的消息。  
   
  在本操作方法主题中，你将完成以下步骤：  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="steps"></a>步骤  
  **若要创建使用消息上下文属性将消息路由 BRE 策略**  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**业务规则编辑器**。  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**业务规则编辑器**。  
   
 2.  在策略资源管理器中，右键单击**策略**，然后单击**添加新策略**。 命名策略时**RouteBasedOnMessageType**。  
   
@@ -55,11 +55,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  在事实数据资源管理器中，展开**ESB。EndPointInfo**词汇，展开**版本 1.0**，然后拖动**设置终结点出站传输位置**定义与**操作**。  
   
-6.  单击**\<空字符串 >**，然后键入**C:\HowTos\Out\NorthAmerica%MessageID%.xml**  
+6.  单击**\<空字符串\>**，然后键入**C:\HowTos\Out\NorthAmerica%MessageID%.xml**  
   
 7.  从事实数据资源管理器拖动**设置终结点出站传输类型**定义与**操作**。  
   
-8.  在事实数据资源管理器中，展开**ESB。TansportTypes**词汇，展开**版本 1.0**，然后拖动**适配器提供程序**定义与**\<空字符串 >**。  
+8.  在事实数据资源管理器中，展开**ESB。TansportTypes**词汇，展开**版本 1.0**，然后拖动**适配器提供程序**定义与**\<空字符串\>**.  
   
 9. 在操作窗格中，展开**适配器提供程序**下拉列表，然后单击**文件**。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
  **若要创建 ESB 路线域特定语言 (DSL) 模型**  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。  
   
@@ -179,11 +179,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [如何： 转换一条消息，并将生成的消息路由到使用路线的路由滑动某个文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [如何：转换消息并使用路线传送名单将生成的消息路由至文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+-   [如何：使用已知消息类型的业务规则策略实现基于内容的路由](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

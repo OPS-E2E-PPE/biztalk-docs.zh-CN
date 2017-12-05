@@ -1,5 +1,5 @@
 ---
-title: "针对 Databases2 优化文件组 |Microsoft 文档"
+title: "优化文件组的数据库 |Microsoft 文档"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2f3ffab64795f8000af37cdc07c3754bb1fb5bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9333a88817e96b52ffe186f0a6a598b225ef5202
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>数据库优化文件组
 文件输入/输出 (I/O) 争用经常是限制因素或在生产 BizTalk Server 环境中的形成瓶颈。 BizTalk Server 是一个非常数据库密集型应用程序和 BizTalk Server 使用的 SQL Server 数据库又是非常文件 I/O 密集型。 本主题介绍如何更好地利用的文件和文件组功能的 SQL Server，以最少的匹配项的文件 I/O 争用并提高 BizTalk Server 解决方案的整体性能。  
@@ -24,13 +24,13 @@ ms.lasthandoff: 09/20/2017
 ## <a name="overview"></a>概述  
  每个 BizTalk Server 解决方案将最终会遇到文件 I/O 争用，随着提高吞吐量。 I/O 子系统或存储引擎是任何关系数据库的一个关键组件。 成功的数据库实现通常要求在项目的初期阶段进行仔细的规划。 此规划应考虑下列事项：  
   
--   使用哪种类型的磁盘硬件，如 RAID（独立磁盘冗余阵列）设备。 有关使用 RAID 硬件解决方案的详细信息，请参阅[基于有关硬件的解决方案](http://go.microsoft.com/fwlink/?LinkID=113944)(http://go.microsoft.com/fwlink/?LinkID=113944) 中 SQL Server 联机丛书。  
+-   使用哪种类型的磁盘硬件，如 RAID（独立磁盘冗余阵列）设备。 
   
--   如何在使用文件和文件组的磁盘上的数据分配。 有关在 SQL Server 2008 R2 中使用文件和文件组的详细信息，请参阅[使用文件和文件组](http://go.microsoft.com/fwlink/?LinkID=69369)(http://go.microsoft.com/fwlink/?LinkID = 69369) 和[了解文件和文件组](http://go.microsoft.com/fwlink/?LinkID=96447)(http://go.microsoft.com/fwlink/?LinkID = 96447) SQL Server 联机丛书中。  
+-   如何在使用文件和文件组的磁盘上的数据分配。 有关使用 SQL Server 中的文件和文件组的详细信息，请参阅[Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)。
   
--   实现在访问数据时提高性能的最佳索引设计。 有关设计索引的详细信息，请参阅[设计索引](http://go.microsoft.com/fwlink/?LinkID=96457)(http://go.microsoft.com/fwlink/?LinkID=96457) 中 SQL Server 联机丛书。  
+-   实现在访问数据时提高性能的最佳索引设计。 有关设计索引的详细信息，请参阅[设计索引](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)。
   
--   如何设置 SQL Server 配置参数，以获得最佳性能。 为 SQL Server 设置最佳的配置参数的详细信息，请参阅[优化服务器性能](http://go.microsoft.com/fwlink/?LinkID=71418)(http://go.microsoft.com/fwlink/?LinkID=71418) 中 SQL Server 联机丛书。  
+-   如何设置 SQL Server 配置参数，以获得最佳性能。 为 SQL Server 设置最佳的配置参数的详细信息，请参阅[服务器配置选项](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)。
   
  BizTalk Server 的主要设计目标之一是确保消息的**永远不会**丢失。 为了缓解消息丢失的可能性，消息频繁写入到 MessageBox 数据库中，处理消息。 时由业务流程处理消息，则会将消息写入到 MessageBox 数据库在业务流程中每个持久性点。 这些持久性点导致 MessageBox 写入物理磁盘的消息和相关的状态。 在更高的吞吐量，此持久性可能导致大量的磁盘争用，且可能成为瓶颈。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
  此外，文件和文件组中启用数据放置，因为可以在特定的文件组中创建表。 这提高了性能，因为对于给定的表的所有文件 i/o 操作可以都定向到特定的磁盘。 例如，常用的表可以放置中的文件组，位于一个磁盘上的文件和其他不太常访问的表，在数据库可以位于另一个文件，位于第二个磁盘上的组中的不同文件。  
   
- 主题中的大量详细地讨论了文件 I/O 瓶颈[数据库层中的瓶颈](../technical-guides/bottlenecks-in-the-database-tier.md)。 文件 I/O （磁盘 I/O） 是瓶颈的最常见指示器是"物理磁盘： 平均磁盘队列长度"计数器的值。 在"物理磁盘： 平均磁盘队列长度"计数器的值大于大约 3 上的任何运行 SQL Server 计算机的任何给定磁盘，然后文件 I/O 可能是瓶颈。  
+ 中的大量详细地讨论了文件 I/O 瓶颈[数据库层中的瓶颈](../technical-guides/bottlenecks-in-the-database-tier.md)。 文件 I/O （磁盘 I/O） 是瓶颈的最常见指示器是"物理磁盘： 平均磁盘队列长度"计数器的值。 在"物理磁盘： 平均磁盘队列长度"计数器的值大于大约 3 上的任何运行 SQL Server 计算机的任何给定磁盘，然后文件 I/O 可能是瓶颈。  
   
  如果应用文件组优化不能解决文件 I/O 瓶颈问题，可能需要通过添加其他物理计算机或 SAN 驱动器增加磁盘子系统的吞吐量。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 >  本主题还介绍如何创建多个文件和 BizTalk MessageBox 数据库文件组。 建议的文件和 BizTalk Server 数据库的所有文件组的穷举列表，请参阅"附录 B"的[BizTalk Server 数据库优化](http://go.microsoft.com/fwlink/?LinkID=101578)白皮书 (http://go.microsoft.com/fwlink/?LinkID=101578)。  
   
 > [!NOTE]  
->  即使[BizTalk Server 数据库优化](http://go.microsoft.com/fwlink/?LinkID=101578)白皮书 (http://go.microsoft.com/fwlink/?LinkID=101578) 与读者是[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]记住情况下，同一原则适用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+>  即使[BizTalk Server 数据库优化](http://go.microsoft.com/fwlink/?LinkID=101578)白皮书 (http://go.microsoft.com/fwlink/?LinkID=101578) 与读者是[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]记住情况下，同一原则适用于 BizTalk Server。  
   
 ## <a name="databases-created-with-a-default-biztalk-server-configuration"></a>使用 BizTalk Server 配置的默认创建的数据库  
  具体取决于时多达 13 不同数据库中配置 BizTalk Server 中，可能在 SQL Server 中创建的所有这些数据库在默认文件组中创建启用功能。 SQL Server 的默认文件组是主文件组，除非使用 ALTER DATABASE 命令更改默认文件组。 下表列出了如果配置 BizTalk Server 时启用所有功能在 SQL Server 中创建的数据库。  
@@ -90,14 +90,13 @@ ms.lasthandoff: 09/20/2017
  在大多数 BizTalk Server 解决方案中，由于磁盘 I/O 争用或数据库争用的主要来源是争用的 BizTalk Server MessageBox 数据库。 这是在单个和多 MessageBox 方案 true。 它是合理的假定，80%的值的分发 BizTalk 数据库将派生自优化的 MessageBox 数据文件和日志文件。 详细描述下面的示例方案侧重于优化 MessageBox 数据库的数据文件。 根据需要然后可以为其他数据库遵循这些步骤。 例如，如果解决方案需要广泛的跟踪，也可优化跟踪数据库。  
   
 ## <a name="manually-adding-files-to-the-messagebox-database-step-by-step"></a>手动将文件添加到 MessageBox 数据库，分步  
- 本主题的此部分介绍可后接手动将文件添加到 MessageBox 数据库的步骤。 在此示例中添加三个文件组，并随后将文件添加到每个文件组，以针对 MessageBox 中将文件分发在多个磁盘。 在此示例中，在执行这些步骤[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]。  
+ 本主题的此部分介绍可后接手动将文件添加到 MessageBox 数据库的步骤。 在此示例中添加三个文件组，并随后将文件添加到每个文件组，以针对 MessageBox 中将文件分发在多个磁盘。
   
-### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server-2008-r2"></a>手动将文件添加到 SQL Server 2008 R2 上的 MessageBox 数据库  
- **请按照下列步骤手动将文件添加到 SQL Server 2008 R2 上的 MessageBox 数据库：**  
+### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server"></a>手动将文件添加到 SQL Server 上的 MessageBox 数据库
+   
+1.  打开**SQL Server Management Studio**以显示**连接到服务器**对话框。  
   
-1.  单击**启动**，指向**程序**，指向 **[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]** ，然后单击**SQL Server Management Studio**以显示**连接到服务器**对话框。  
-  
-     ![SQL Server 2008 R2 &#45;登录屏幕](../technical-guides/media/sqlserver2008r2-loginscreen.gif "SQLServer2008R2 登录画面")  
+     ![SQL Server 登录名屏幕](../technical-guides/media/sqlserver2008r2-loginscreen.gif "SQLServer2008R2 登录画面")  
   
 2.  在**服务器名称**编辑框**连接到服务器**对话框框中，输入保存 BizTalk Server MessageBox 数据库的 SQL Server 实例的名称，单击**连接**以显示 SQL Server Management Studio。 在**对象资源管理器**窗格中的 SQL Server Management Studio，展开**数据库**若要查看数据库的 SQL Server 的此实例。  
   
@@ -127,7 +126,7 @@ ms.lasthandoff: 09/20/2017
   
  若要运行此脚本，请按照下列步骤：  
   
-1.  单击**启动**，指向**程序**，指向 **[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]** ，然后单击**SQL Server Management Studio**以显示**连接到服务器**对话框。  
+1.  打开**SQL Server Management Studio**以显示**连接到服务器**对话框。  
   
 2.  在**服务器名称**编辑框**连接到服务器**对话框框中，输入保存 BizTalk Server MessageBox 数据库的 SQL Server 实例的名称，单击**连接**可显示 SQL Server Management Studio 对话框。  
   

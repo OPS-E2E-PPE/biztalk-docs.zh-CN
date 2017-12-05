@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef1d583389189e09a0b9e0e5157ce5466004c03a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57fb0073437c32c8a8f064a4c77f267ee6806858
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-resolver"></a>创建自定义冲突解决程序
 中的冲突解决程序和适配器提供程序框架实现[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用一个名为调度程序的管道组件和名为 ItineraryReceive 和 ItinerarySend 的管道。  
@@ -172,7 +172,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 1.  与实现的类创建一个程序集**IResolveProvider**接口并包含**解决**实例的形式返回冲突解决程序事实的方法**字典**类。  
   
-2.  通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序 >**包含根名字对象作为元素**名称**属性和完全限定程序集名称作为**类型**属性。  
+2.  通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>**包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。  
   
 3.  （可选）创建架构，用于定义根名字对象和查询参数，然后将其保存在 ESB。Schemas.Resolvers 文件夹。 该名称应遵循现有 ESB 命名约定;这意味着它应使用的名称后追加"_Resolution.xsd"的根名字对象。  
   

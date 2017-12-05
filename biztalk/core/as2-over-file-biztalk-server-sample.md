@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84e497579b2f3b8465f7a30677dae6920e2750c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 over File （BizTalk Server 示例）
 AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 这样，便可使用 FILE 适配器接收 AS2 消息，而不是通常使用的 HTTP 适配器。 若要完成该操作，此解决方案会按照 AS2 解码器的要求，将 AS2 消息中的 HTTP 标头写入 InboundHTTPHeaders 上下文属性。  
@@ -139,11 +139,11 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
   
 2.  验证是否已将输出 XML 消息放入 \AS2 Over File\Out 输出文件夹中。  
   
-3.  在文本编辑器中，打开输入的消息 SampleMessage.txt 并打开输出消息\<GUID > 在文本编辑器中的.xml。 验证 SampleMessage.txt 输入消息是否具有 HTTP（和 AS2）标头以及输出消息是否不具有 HTTP 标头。  
+3.  在文本编辑器中，打开输入的消息 SampleMessage.txt 并打开输出消息\<GUID\>在文本编辑器中的.xml。 验证 SampleMessage.txt 输入消息是否具有 HTTP（和 AS2）标头以及输出消息是否不具有 HTTP 标头。  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>本示例中使用的类或方法  
  无  
   
 ## <a name="see-also"></a>另请参阅  
  [EDI 和 AS2 （BizTalk Server 的示例文件夹）](../core/edi-and-as2-biztalk-server-samples-folder.md)   
- [通过文件发送端口发送 AS2 消息](../core/sending-an-as2-message-over-a-file-send-port.md)
+ [通过 FILE 发送端口发送 AS2 消息](../core/sending-an-as2-message-over-a-file-send-port.md)

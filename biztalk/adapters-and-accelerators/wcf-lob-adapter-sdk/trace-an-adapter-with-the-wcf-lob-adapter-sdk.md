@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57471341bfe2179e977687de024c0e6f8ee6f90a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ca4b68f23f791de3ecd68bc69b85c2908b6d7a0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="trace-an-adapter-with-the-wcf-lob-adapter-sdk"></a>跟踪使用 WCF LOB 适配器 SDK 的适配器
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]跟踪是 Systems.Diagnostics 基础生成的。 使用 Microsoft.ServiceModel.Channels 跟踪源[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]运行时。  使用 Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse 跟踪源[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 WCF 跟踪将写入到名为 System.ServiceModel 的源。  
@@ -55,7 +55,7 @@ public class EchoAdapterUtilities
  你可以启用中提供的跟踪[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过在使用该适配器的应用程序的 app.config 文件中添加以下部分。  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
   <sources>  
     <source name="Microsoft.Adapters.Samples.Echo.EchoAdapter" switchValue="Verbose">  
       <listeners>  
@@ -74,7 +74,7 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
  可以使用 add 元素来指定名称和你想要使用的跟踪侦听器的类型。 在示例配置中，我们将侦听器命名为"xmlTrace"，并为我们想要使用的类型添加标准的.NET Framework 跟踪侦听器 (System.Diagnostics.XmlWriterTraceListener)。 你可以添加任意数量的每个源的跟踪侦听器。 例如，在以下示例中，我们还添加名为"textTrace"使用.NET Framework 跟踪侦听器 System.Diagnostics.TextWriterTraceListener 的另一个侦听器。 如果跟踪侦听器发出的跟踪文件，你必须在配置文件中指定的输出文件的位置和名称。 这可通过该侦听器将 initializeData 设置为文件的名称。  
@@ -83,7 +83,7 @@ public class EchoAdapterUtilities
  你可以启用跟踪，对于此插件通过在 devenv.exe.config 文件中添加以下部分位于`\Program Files (x86)\Microsoft Visual Studio\Common7\IDE`。
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
    <sources>  
     <source name="Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse" switchValue="Verbose, ActivityTracing">  
       <listeners>  
@@ -100,14 +100,14 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" indentsize="4" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
 ## <a name="enable-tracing-for-the-consume-adapter-service-add-in"></a>启用对跟踪使用适配器服务外接程序  
  可以启用跟踪时为此外接程序通过在位于 BTSNTSVC.exe.config 文件中添加以下部分`\Program Files (x86)\Microsoft BizTalk Server`。  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
    <sources>  
     <source name="Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse" switchValue="Verbose, ActivityTracing">  
       <listeners>  
@@ -124,7 +124,7 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" indentsize="4" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
 ## <a name="see-also"></a>另请参阅  

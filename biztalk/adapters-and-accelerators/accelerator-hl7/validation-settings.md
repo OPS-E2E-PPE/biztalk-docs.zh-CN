@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108f13dfbdc7b42027f57e70d913202b4d4e3100
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 574e4a27342680ef4a37f6b12059cbf97bd9584a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validation-settings"></a>验证设置
 使用[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]，你可以验证你对 HL7 标准的消息。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]确保将发送或接收的消息具有符合 HL7 标准消息结构和正文段。 您还可以验证 HL7 支持自定义数据类型，并允许尾随分隔符。 你使用[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器**验证**选项卡以配置验证。  
@@ -44,7 +44,7 @@ BTAHL7 配置资源管理器验证选项卡
   
 #### <a name="to-open-btahl7-configuration-explorer"></a>若要打开 BTAHL7 配置资源管理器  
   
--   单击**启动**，单击**程序**，单击**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+-   单击**启动**，单击**程序**，单击**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 #### <a name="to-configure-validation-settings"></a>配置验证设置  
   
@@ -62,4 +62,4 @@ BTAHL7 配置资源管理器验证选项卡
 ## <a name="see-also"></a>另请参阅  
  [日志记录配置](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   
  [确认设置](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-settings.md)   
-[操作日志记录、 消息批处理、 验证和 asknowledgment 设置](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)
+[运行日志记录、消息批处理、验证和确认设置](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)

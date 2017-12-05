@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b5b77ca46be2e6a3fb4c882947eb47829f591ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3bdbd4845ddc1dff698274492f33ec69d659188
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="approving-a-message"></a>批准一条消息
 本部分描述如何批准已修复且已验证的消息。  
@@ -30,9 +30,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*> _Approver * *。  
+3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>_Approver * *。  
   
-4.  在\<部门名称 > _Approver 窗口中，单击**收件箱**。  
+4.  在\<部门名称\>_Approver 窗口中，单击**收件箱**。  
   
 5.  在收件箱窗口中，指向此消息的标题，单击消息标题中，右侧的箭头，然后单击**在 Microsoft Office InfoPath 中编辑**。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92855ecc4e4e5ad2f7932327de7da8e19a80d490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9122b74ecc82e32230d09e2d0e01b553aaa2bd06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-subscribers-from-an-alert"></a>如何从警报删除订户
 管理员使用**删除订阅**命令从警报作为订阅服务器中删除指定的用户。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  类型**bm 删除订阅的视图：\<视图名称 >-警报：\<警报名称 >-AccountName:\<帐户名称 >**。  
+3.  类型**bm 删除订阅的视图：\<视图名称\>-警报：\<警报名称\>-AccountName:\<帐户名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

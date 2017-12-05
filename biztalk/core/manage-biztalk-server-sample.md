@@ -17,11 +17,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15a94bf916550d9a2eada9b8f354432b4c154ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4234614cc9f00809f8922999ae96e6f254989c6a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 （BizTalk Server 示例）
 管理单一登录 (SSO) 示例演示如何构造能用于 ssomanage.exe 命令行实用工具的 .xml 文件以执行以下类型的管理操作：  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
  本示例为上述操作类型中的每一种类型都提供了一对 XSD 和示例 .xml 文件。 示例 .xml 文件中的值是无效的。 必须更改这些值，使其与您的特定需求相适应。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\SSO\Manage\  
+ *\<示例路径\>*\SSO\Manage\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -95,4 +95,4 @@ ms.lasthandoff: 09/20/2017
  在修改了本示例提供的示例 .xml 文件之后，特别是在此类更改涉及到在这些文件中添加敏感信息的情况下，请确保这些文件在文件系统中能得到很好的保护。 例如，应确保没有将这些文件误放到某个共享文件夹中。  
   
 ## <a name="see-also"></a>另请参阅  
- [SSO （BizTalk Server 示例文件夹中）](../core/sso-biztalk-server-samples-folder.md)
+ [SSO（BizTalk Server 示例文件夹）](../core/sso-biztalk-server-samples-folder.md)

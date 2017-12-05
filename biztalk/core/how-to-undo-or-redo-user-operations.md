@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6f47071ee003a896b66120c0fd81a121ab73230
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8358fc1624346b90d98fd1f1707dd2bfb02446dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-undo-or-redo-user-operations"></a>如何撤消或重做用户操作
 撤消/重做的支持，而另一个可用性帮助提供通过 BizTalk 映射程序。 如果您对所做的更改不满意或者执行了误操作，可以使用撤消功能来返回到之前的“未处理”状态，并从此处继续。 重做，可重新应用已撤消的编辑操作。 本主题提供有关操作的您可以撤消/重做的信息。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  有关详细信息，请参阅[如何创建链接](../core/how-to-create-links.md)。  
   
--   执行中的多个修改**配置\<Functoid > Functoid**对话框中，将被视为单个操作。  
+-   执行中的多个修改**配置\<Functoid\> Functoid**对话框中，将被视为单个操作。  
   
 -   拖动 functoid(s) 和/或映射器网格中的链接。  
   

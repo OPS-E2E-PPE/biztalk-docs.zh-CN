@@ -21,11 +21,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6e5cf3c013f0a9bedf8c412206aebe1ce2e3f16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e25e4fad2eb9e32c87f8a395bd924fc4a1f2eb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-delimiters"></a>消息分隔符
 由 HL7 标准定义的消息事件采用以下形式：  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 |分隔符|值|用法|  
 |---------------|-----------|-----------|  
-|段终止符|\<cr >|返回一个回车符终止段记录。 无法更改此值。|  
+|段终止符|\<cr\>|返回一个回车符终止段记录。 无法更改此值。|  
 |字段分隔符|&#124;|管道字符用于分隔段内的两个相邻的数据字段。 此字符，还会分隔分段 ID 从每个段中的第一个数据字段。|  
 |复合元素分隔符|^|Hat 字符分隔相邻组成部分数据字段在允许的 HL7 标准。|  
 |子组件分隔符|&|& 号字符分隔的数据的相邻子组件字段在允许的 HL7 标准。 如果有不需要子组件，则可以省略此字符。|  

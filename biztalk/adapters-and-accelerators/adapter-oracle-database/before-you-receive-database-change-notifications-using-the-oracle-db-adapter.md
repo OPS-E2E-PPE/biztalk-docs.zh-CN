@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01894ab7011324d0f5a3eab84a4cea72e8186c14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9b0d6c99de2a24975faef3a10059f4bbb10d28a4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-database-adapter"></a>接收更改通知使用数据库的 Oracle 数据库适配器的注意事项
 本主题提供一些注意事项和最佳做法，你必须使用时应牢记[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以接收从 Oracle 数据库的数据库通知。  
@@ -28,10 +28,10 @@ ms.lasthandoff: 09/20/2017
   
 -   该操作所影响的记录数不影响操作的通知消息。 例如，而不考虑在 Oracle 数据库表中插入的记录数，适配器客户端收到一个通知消息。  
   
--   我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。 适配器客户端应用程序可以做到这一点提取中的信息**\<信息 >**收到的通知消息元素。 下面是收到有关插入操作的通知消息的示例。  
+-   我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。 适配器客户端应用程序可以做到这一点提取中的信息**\<信息\>**收到的通知消息元素。 下面是收到有关插入操作的通知消息的示例。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
     ```  
   
-     请注意内的值**\<信息 >**元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息 >**元素，然后根据值，执行后续的任务。 主题[处理通知消息来完成 Oracle 数据库中的特定任务](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何提取的值在**\<信息 >**元素。  
+     请注意内的值**\<信息\>**元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息\>**元素，然后根据值，执行后续的任务。 主题[处理通知消息来完成 Oracle 数据库中的特定任务](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何提取的值在**\<信息\>**元素。  
   
 -   理想情况下，客户端应用程序接收的通知后，它应更新为其已收到通知，以便后续通知不是针对同一条记录的记录。 例如，考虑**ACCOUNTACTIVITY**表具有**处理**列。 为所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。 例如，在插入操作中的记录之后**ACCOUNTACTIVITY**表将如下所示：  
   

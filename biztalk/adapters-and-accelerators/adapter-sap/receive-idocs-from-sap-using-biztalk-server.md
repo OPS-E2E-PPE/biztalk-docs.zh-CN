@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45dc38a939e71a8f4eb3d3afe87736fc548f8570
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb03368a9d046eacf31f8b7bbed5c0a7f090c3d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>从 SAP 使用 BizTalk Server 接收到的 Idoc
 接收 IDOC 涉及[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]充当了 RFC 服务器以接收来自 SAP 的特殊 RFC 呼叫。 SAP 适配器可以接收到的 Idoc 充当 RFC 服务器或 tRFC 服务器。 有关与 tRFC 服务器正常运行的适配器接收 IDOC 的详细信息，请参阅[接收从通过使用 BizTalk Server 事务上下文中的 SAP 的 Idoc](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)。  
@@ -29,13 +29,13 @@ ms.lasthandoff: 09/20/2017
   
 -   **接收**操作允许适配器接收到的 Idoc 具有强类型的架构。  
   
--   **ReceiveIdoc**操作允许适配器接收到的 Idoc 具有弱类型的架构。 此操作作为字符串下一条 XML 消息中接收到的 Idoc \<idocData > 标记。  
+-   **ReceiveIdoc**操作允许适配器接收到的 Idoc 具有弱类型的架构。 此操作作为字符串下一条 XML 消息中接收到的 Idoc \<idocData\>标记。  
   
  在适配器端中，你可以为指定值**ReceiveIDocFormat**绑定属性指定的适配器将会收到的 IDOC 的格式。  
   
 -   **类型化**指定适配器将接收到的 Idoc 具有强类型的架构。 这会生成 XML IDOC。  
   
--   **字符串**指定适配器将接收到的 Idoc 与弱类型的架构。 这将生成的 XML 消息\<idocData > 标记。  
+-   **字符串**指定适配器将接收到的 Idoc 与弱类型的架构。 这将生成的 XML 消息\<idocData\>标记。  
   
 -   **Rfc**指定适配器将接收到的 Idoc 的任何格式。  
   
@@ -50,8 +50,8 @@ ms.lasthandoff: 09/20/2017
 |-------------------------------|------------------------|------------|  
 |（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**接收**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />3.设置绑定属性 ReceiveIdocFormat 到**类型化**。<br /><br /> **业务流程设计时**<br /><br /> 1.接收 XML IDOC。<br />2.使用平面文件汇编器将 XML IDOC 转换为平面文件。|平面文件 IDOC|  
 |（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**接收**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />3.设置绑定属性 ReceiveIdocFormat 到**类型化**。<br /><br /> **业务流程的设计时**<br /><br /> 接收 XML IDOC。|XML IDOC|  
-|（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**接收**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />3.设置绑定属性 ReceiveIdocFormat 到**字符串**。<br /><br /> **业务流程设计时**<br /><br /> 1.接收平面文件中的 IDOC 具有的 XML 消息\<idocData > 标记。<br />2.使用中的接收端口配置 WCF 适配器的 XPath 支持从 XML 消息中提取平面文件 IDoc。 例如：<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.平面文件反汇编程序用于将平面文件 IDOC 转换为 XML IDOC。<br /><br /> **重要**这种方法可以用于接收到的 Idoc 使用新的基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]并直接将其应用在现有 BizTalk 项目中编写从现有的 BizTalk SAP 适配器接收到的 Idoc。 这也是版本号小于发行版号 (SYSREL) 接收到的 Idoc 的建议的方法。|XML IDOC|  
-|（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.生成的架构**ReceiveIdoc**操作从 IDOC 节点使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />2.设置绑定属性 ReceiveIdocFormat 到**字符串**。<br /><br /> **业务流程设计时**<br /><br /> -收到的 IDOC 表示中的字符串为 XML 消息\<idocData > 标记。|XML 消息中的平面文件 IDOC|  
+|（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**接收**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />3.设置绑定属性 ReceiveIdocFormat 到**字符串**。<br /><br /> **业务流程设计时**<br /><br /> 1.接收平面文件中的 IDOC 具有的 XML 消息\<idocData\>标记。<br />2.使用中的接收端口配置 WCF 适配器的 XPath 支持从 XML 消息中提取平面文件 IDoc。 例如：<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.平面文件反汇编程序用于将平面文件 IDOC 转换为 XML IDOC。<br /><br /> **重要**这种方法可以用于接收到的 Idoc 使用新的基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]并直接将其应用在现有 BizTalk 项目中编写从现有的 BizTalk SAP 适配器接收到的 Idoc。 这也是版本号小于发行版号 (SYSREL) 接收到的 Idoc 的建议的方法。|XML IDOC|  
+|（通过 tRFC 接口） 的 IDOC|**元数据设计时**<br /><br /> 1.生成的架构**ReceiveIdoc**操作从 IDOC 节点使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br />2.设置绑定属性 ReceiveIdocFormat 到**字符串**。<br /><br /> **业务流程设计时**<br /><br /> -收到的 IDOC 表示中的字符串为 XML 消息\<idocData\>标记。|XML 消息中的平面文件 IDOC|  
   
 ## <a name="how-to-receive-an-idoc-from-an-sap-system"></a>如何从某个 SAP 系统接收 IDOC？  
  执行对 SAP 系统使用的操作[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]涉及过程中所述的任务[创建 SAP 应用程序的构建基块](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md)。 若要从某个 SAP 系统接收 IDOC，这些任务包括：  
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="generating-schema"></a>生成架构  
  必须生成架构*接收*操作*ORDERS03。V3.620*下的 IDOC */IDOC/ORDERS/ORDERS03*节点。 请参阅[浏览，搜索和获取元数据中 SAP IDOC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-idoc-operations-in-sap.md)有关如何为特定的 IDOC 生成架构的说明。 生成时的架构，你可能想要设置以下属性：  
   
--   *GenerateFlatFileCompatibleIDoc* – 生成\<appinfo > 标记，以便可以在 BizTalk 方案中使用 BizTalk 平面文件分析器来支持平面文件 Idoc。  
+-   *GenerateFlatFileCompatibleIDoc* – 生成\<appinfo\>标记，以便可以在 BizTalk 方案中使用 BizTalk 平面文件分析器来支持平面文件 Idoc。  
   
--   *FlatFileSegmentIndicator* – 指示如果 IDOC 架构\<appinfo > 标记应包含段定义名称或段类型名称。 这是使用希望发送/接收平面文件 IDOC 向/从 SAP 时适用。 如果*GenerateFlatFileCompatibleIDoc*设置为 false，则*FlatFileSegmentIndicator*绑定属性将被忽略。  
+-   *FlatFileSegmentIndicator* – 指示如果 IDOC 架构\<appinfo\>标记应包含段定义名称或段类型名称。 这是使用希望发送/接收平面文件 IDOC 向/从 SAP 时适用。 如果*GenerateFlatFileCompatibleIDoc*设置为 false，则*FlatFileSegmentIndicator*绑定属性将被忽略。  
   
 > [!IMPORTANT]
 >  因为您正在生成的入站 IDOC 调用的架构，请确保选择**服务 （入站操作）**从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。  

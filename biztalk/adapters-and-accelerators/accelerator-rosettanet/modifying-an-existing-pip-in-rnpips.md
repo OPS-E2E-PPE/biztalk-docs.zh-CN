@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7aa00b1a029092247d3c4ce935edfd88f4344a95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce7f87d9af24e6388199e76e9cbf0eba076ceacf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>修改在 RNPIPs 现有 PIP
 本主题介绍如何更改和重新部署安装的合作伙伴接口过程 (PIP) 架构之一[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序。 该架构部署为 RNPIP 程序集的组成部分。  
@@ -30,18 +30,18 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  找到\<*驱动器*> files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\Utilities\Schema 生成器文件夹。  
+2.  找到\<*驱动器*\>files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Utilities\Schema 生成器文件夹。  
   
 3.  在命令提示符处，键入**CScript InstallDTD.vbs**，然后按 ENTER。  
   
     > [!NOTE]
-    >  只需执行步骤 1 和 2 一次安装之后[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。  
+    >  只需执行步骤 1 和 2 一次后安装 BizTalk Server。  
   
 4.  启动**Microsoft Visual Studio 2012**。  
   
 5.  在**文件**菜单上，指向**打开**，然后单击**项目**。  
   
-6.  在**打开项目**对话框中，移动到\<*驱动器*> files\microsoft BizTalk\<版本 > 作为 RosettaNet\SDK\Schemas，然后选择的快捷键**RNPIPs.btproj**。  
+6.  在**打开项目**对话框中，移动到\<*驱动器*\>files\microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键架构，，然后选择**RNPIPs.btproj**。  
   
 7.  在**视图**菜单上，单击**BizTalk 资源管理器**。 展开**程序集**，然后右键单击**Microsoft.Solutions.BTARN.Schemas.RNPIPs(3.3.0.0)**。 单击**取消部署**。  
   
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [编程指南](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)   
- [合并新的合作伙伴接口进程](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)
+ [并入新的合作伙伴接口流程](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)

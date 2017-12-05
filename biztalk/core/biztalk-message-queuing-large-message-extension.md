@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb07d262b61bb823202b964ee3dd6e53a92d3a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 399c8e02d59a931dbf30bfa31ca28980dfa312be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a>BizTalk 消息队列大型消息扩展
 本机消息队列无法处理的消息其正文大于 4megabytes (MB)。 但是，Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含的本地消息队列的加载项可处理大于 4 MB 的消息。 此外接程序传递为 Mqrtlarge.dll 文件中，并公开**MQSendLargeMessage**和**MQReceiveLargeMessage**应用程序的编程接口 (Api) 和类似的 COM 模型。 这些函数的实现是作为标准的消息队列 Api， **MQSendMessage**和**MQReceiveMessage**分别。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
  **SDK 中的位置**  
   
- \<*安装路径*> \SDK\ Mqrtlarge.dll  
+ \<*安装路径*\>\SDK\ Mqrtlarge.dll  
   
  **文件清单**  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 |文件|Description|  
 |---------------|-----------------|  
-|Mqrtlarge.dll|公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。<br /><br /> 标头文件位于*\<安装路径 >*\SDK\Include 目录。 **注意：**必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。|  
+|Mqrtlarge.dll|公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。<br /><br /> 标头文件位于*\<安装路径\>*\SDK\Include 目录。 **注意：**必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。|  
   
  **使用此实用工具**  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="to-use-the-mqrtlargedll-file"></a>使用 Mqrtlarge.dll 文件  
   
 1.  > [!NOTE]
-    >  对于 MSMQ 解决方案，即使没有 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，MQRTLarge.dll 仍能正常工作。 但是，Microsoft 不推荐使用这种配置，如果在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 环境外使用，可能会发生意外结果。  
+    >  对于不带 BizTalk Server MSMQ 解决方案，MQRTLarge.dll 可能仍正常工作。 但是，这不是建议的配置，Microsoft 支持，并且如果在 BizTalk Server 环境之外使用，可能会出现意外的结果。  
   
      将文件 Mqrtlarge.dll 添加到未安装 BizTalk Server 的计算机中。 消息队列使用 Mqrtlarge.dll 向 BizTalk Server 发送消息，或从 BizTalk Server 接收消息。  
   
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
  决定使用**PROPID_M_EXTENSION**具有一个附加的含义。 Microsoft Host Integration Server MSMQ-MQSeries Bridge 使用此属性传递一个结构，该结构包含那些在 MQSeries 和消息队列消息之间不直接映射的属性。 将消息发送到 MQSeries，或从 MQSeries 发送消息的应用程序显式或隐式使用此结构。 当接收应用程序从队列接收到消息时，消息队列能够生成确认信息。 确认信息被发送到由发送应用程序指定的队列中。 对于大消息，仅为大消息的最后部分发送此确认信息。  
   
 ## <a name="see-also"></a>另请参阅  
- [SDK 中的实用程序](../core/utilities-in-the-sdk.md)
+ [SDK 中的实用工具](../core/utilities-in-the-sdk.md)

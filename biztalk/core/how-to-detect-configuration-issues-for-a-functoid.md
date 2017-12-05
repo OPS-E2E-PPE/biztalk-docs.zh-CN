@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 322a97aba4ec5e02cf754106df30b0c9f0088e1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8561156091c992e9329ef7d9627589eff9e0ed6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-detect-configuration-issues-for-a-functoid"></a>如何检测 Functoid 的配置问题
 使用映射时，您可能会遇到 functoid 和/或链接的配置问题。 BizTalk 映射器使用可视化效果机制来帮助快速识别与 functoid 配置相关的问题。 此视觉指示将呈现为 functoid 图标的警告批注 (有关例如![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense")) 的关系视图中。 本主题提供有关如何检测 functoid 配置问题的信息。  
@@ -38,11 +38,11 @@ ms.lasthandoff: 09/20/2017
   
          ![Functoid 配置中的错误检测](../core/media/errordetectionfunctoid.gif "ErrorDetectionFunctoid")  
   
-    -   双击该 functoid。 **配置\<Functoid > Functoid**对话框中显示针对输入参数的警告图标。 这表明所选 functoid 未配置输入参数。  
+    -   双击该 functoid。 **配置\<Functoid\> Functoid**对话框中显示针对输入参数的警告图标。 这表明所选 functoid 未配置输入参数。  
   
          下图显示了有关“加法”functoid 输入参数的错误信息。  
   
          ![未配置 functoid 时显示的警告](../core/media/configure-input-parameters-warningicon.gif "Configure_input_parameters_WarningIcon")  
   
 ## <a name="see-also"></a>另请参阅  
- [在 BizTalk 映射程序中使用增强的功能](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [使用 BizTalk 映射器中的增强功能](../core/using-enhanced-features-in-biztalk-mapper.md)

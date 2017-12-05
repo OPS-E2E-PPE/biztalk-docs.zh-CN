@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f69fbeb86cf63485591f048ef75cdcfd3d5056d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22a0d6e48d1a33e4d7c0aec8a1231346a671c1ef
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-sap"></a>创建一个通道，使用 SAP
 在 WCF 通道模型中，调用 SAP 系统上的操作或从 SAP 系统接收消息，通过交换使用 SOAP 消息[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过 WCF 通道。  
@@ -99,9 +99,9 @@ channel.Open();
  下面的代码演示使用前面示例的配置设置。 客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IRequestChannel"根据你想要创建的通道形状的种类。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <sapBinding>  
                 <binding name="SAPBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -119,7 +119,7 @@ channel.Open();
                 binding="sapBinding" bindingConfiguration="SAPBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -134,7 +134,7 @@ channel.Open();
   
 3.  创建**BindingParameterCollection**并添加**InboundActionCollection** ，其中包含你想要接收的操作的操作。 到 SAP 系统的所有其他操作，该适配器将返回一个异常。 此步骤为可选步骤。 有关详细信息，请参阅[接收从使用 WCF 通道模型 SAP 系统的入站操作](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)。  
   
-4.  创建通道侦听器，通过调用**BuildChannelListener\<IReplyChannel >**方法**SAPBinding**。 作为此方法的参数之一指定 SAP 连接 URI。 连接 URI 必须包含 SAP 系统上 RFC 目标的参数。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。 如果你创建**BindingParameterCollection**在步骤 3 中，还这可以指定当创建通道侦听器。  
+4.  创建通道侦听器，通过调用**BuildChannelListener\<IReplyChannel\>** 方法**SAPBinding**。 作为此方法的参数之一指定 SAP 连接 URI。 连接 URI 必须包含 SAP 系统上 RFC 目标的参数。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。 如果你创建**BindingParameterCollection**在步骤 3 中，还这可以指定当创建通道侦听器。  
   
 5.  打开侦听器。  
   

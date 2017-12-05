@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e4e833b05609d3889c30eac39a9285b09c63b68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df5f6e797e59e79ed275fb94217d94425e456e85
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-synonyms"></a>对同义词的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]允许你执行对同义词的操作。 同义词是一个别名或数据库对象 （如表、 视图、 存储的过程、 函数和包） 的友好名称。 有关 Oracle 中的同义词的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
  这些项目的每个同义词公开与中的相应基础项目一起[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 例如，**表**节点下的**基于架构的视图**将在架构中，显示的以及数据库表的表的所有同义词**视图**下的节点**基于架构的视图**将在架构中，显示的数据库视图以及视图的所有同义词，依此类推。  
   
--   在表和视图上创建的同义词，相同的操作公开与基础表和视图分别。 例如，如果基础表和视图包含 LOB 列，这些表和视图的同义词将还公开 Read_\<LOBColName > 和 Update_\<LOBColName > 操作对表同义词和 Read_\<LOBColName > 视图同义词的操作。  
+-   在表和视图上创建的同义词，相同的操作公开与基础表和视图分别。 例如，如果基础表和视图包含 LOB 列，这些表和视图的同义词将还公开 Read_\<LOBColName\>和 Update_\<LOBColName\>表同义词的操作和 Read_\<LOBColName\>视图同义词的操作。  
   
 -   创建存储的过程、 函数和包上的同义词，同义词作为以及各自的基础存储的过程、 函数和架构中的包的操作公开。  
   

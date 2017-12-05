@@ -15,17 +15,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4f443bf0b60f0bb90a914824b3922110ee1b300
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f09615b8038170bfdc0f9d63492e40dc1b2a0eba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP 适配器 （BizTalk Server 示例）
 HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应通信范例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\AdaptersDevelopment\HttpAdapter\  
+ *\<示例路径\>*\AdaptersDevelopment\HttpAdapter\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -49,7 +49,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应�
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersDevelopment\HttpAdapter  
+     \<*示例路径*\>\AdaptersDevelopment\HttpAdapter  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -63,7 +63,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应�
   
 -   IIS_WPG 组。  
   
--   在 IIS 7.0 上，你必须迁移应用程序以使用.NET 集成模式。 你可以迁移应用程序配置，包括文件夹的内容\<httpHandlers > 配置节，通过从命令行窗口 （窗口中必须以管理员身份运行） 使用以下：  
+-   在 IIS 7.0 上，你必须迁移应用程序以使用.NET 集成模式。 你可以迁移应用程序配置，包括文件夹的内容\<httpHandlers\>配置部分中的，通过从命令行窗口 （窗口中必须以管理员身份运行） 使用以下：  
   
     ```  
     %systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/HttpReceive"  
@@ -84,7 +84,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应�
   
 #### <a name="to-register-the-http-adapter-sample"></a>注册 HTTP 适配器示例  
   
-1.  在 Windows 资源管理器，导航到安装驱动器以[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，然后导航到\<示例路径 > \AdaptersDevelopment\HTTPAdapter。  
+1.  在 Windows 资源管理器，导航到安装驱动器以[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，然后导航到\<示例路径\>\AdaptersDevelopment\HTTPAdapter。  
   
 2.  若要将示例适配器添加到注册表中，双击**HTTP.NET.reg**。  
   
@@ -137,7 +137,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应�
  现在，HTTP.NET 适配器已经准备就绪，可供您的应用程序使用了。 配置的适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。  
   
 ## <a name="comments"></a>注释  
- 中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径 >*\AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类可以加快适配器的开发速度。 请参考 BaseAdapter 代码注释了解所提供的类的详细信息。  
+ 中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径\>*\AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类可以加快适配器的开发速度。 请参考 BaseAdapter 代码注释了解所提供的类的详细信息。  
   
 ## <a name="see-also"></a>另请参阅  
  [注册的适配器](../core/registering-an-adapter.md)   

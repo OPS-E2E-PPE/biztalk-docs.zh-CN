@@ -19,11 +19,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4913dbfa6f3d027d5540234b5af9370eb69f67a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d6e7f9f70e6f1f0f09ae1d006172fdc00dc1bc0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a>如何部署或取消部署策略
 本主题介绍如何使用 BizTalk Server 管理控制台来部署或手动取消部署策略。 此外，自动启动应用程序部署包含，任何策略，并自动停止应用程序取消部署其策略。 部署策略可将其放到中使用它的应用程序的效果。 取消部署策略使它处于非活动状态，以便它不再函数中使用 BizTalk 组中任何应用程序。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开**BizTalk Server 管理**，展开包含你想要部署或取消部署，然后展开该策略的 BizTalk 组**\<所有项目 >**。  
+2.  在控制台树中，展开**BizTalk Server 管理**，展开包含你想要部署或取消部署，然后展开该策略的 BizTalk 组**\<所有项目\>**.  
   
 3.  单击**策略**，右键单击的策略，然后单击**部署**或**取消部署后再次**。  
   

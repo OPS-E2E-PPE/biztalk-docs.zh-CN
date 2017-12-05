@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 090c53b91ad30f522bc5522fbeb457d7de868456
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d718450dfd4db1fd6d695c1a3ecc21f9f1fd8deb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="known-issues-with-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的已知的问题
 本主题介绍与关联的已知的问题[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 它还提供某些这些问题的解决方法。  
@@ -80,7 +80,7 @@ echoAdapterProxy.Open();
  **解析**： 选择而不是选择整个类别的各个操作。  
   
 ### <a name="error-with-add-adapter-service-reference-visual-studio-plug-in"></a>与错误将添加适配器服务引用 Visual Studio 插件  
- **问题**： 在 Visual Studio 中，如果已通过使用生成代理在 BizTalk 项目[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，从同一适配器生成另一个代理将生成此错误:"命名空间\<全局命名空间 >已包含 {协定 name} 的定义时编译项目。"  
+ **问题**： 在 Visual Studio 中，如果已通过使用生成代理在 BizTalk 项目[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，从同一适配器生成另一个代理将生成此错误:"命名空间\<全局命名空间\>已包含 {协定 name} 的定义时编译项目。"  
   
  此版本不允许编辑的代理。  
   
@@ -92,7 +92,7 @@ echoAdapterProxy.Open();
  **解析**: BizTalk 项目中删除多余的 XML 架构文件，使用适配器服务引用用于搜索或浏览所需的元数据，并重新生成新的 XML 架构文件。  
   
 ### <a name="error-with-rootnode-typename-in-biztalk-projects"></a>与 RootNode TypeName BizTalk 项目中的错误  
- **问题**： 在 Visual Studio 中，如果从架构生成在 BizTalk 项目[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]包含无效字符或保留的字**RootNode TypeName**属性，在将出现以下错误编译时间:"节点\<节点引用 >-指定此根节点的有效.NET 类型名称。  此根节点的当前的.NET 类型名称无效 （它是保留的 BizTalk 关键字，或为无效的 C# 标识符）。  
+ **问题**： 在 Visual Studio 中，如果从架构生成在 BizTalk 项目[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]包含无效字符或保留的字**RootNode TypeName**属性，在将出现以下错误编译时间:"节点\<节点引用\>-指定此根节点的有效.NET 类型名称。  此根节点的当前的.NET 类型名称无效 （它是保留的 BizTalk 关键字，或为无效的 C# 标识符）。  
   
  **解析**： 选择此错误中引用的根节点，并在属性中，删除任何非法字符或保留的字从**RootNode TypeName**属性。  
   

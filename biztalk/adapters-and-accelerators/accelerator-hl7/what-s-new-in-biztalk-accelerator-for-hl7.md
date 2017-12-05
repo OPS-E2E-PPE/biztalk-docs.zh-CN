@@ -13,11 +13,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 507f2c3561747d9abb3ad3f1bfbd86c4738fbefd
-ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
+ms.openlocfilehash: d3cdb992f749633bd517d6cad7f1acce926157c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="whats-new-in-biztalk-accelerator-for-hl7"></a>什么是 BizTalk Accelerator for HL7 中的新增功能
 更改和更新与[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。 
@@ -38,8 +38,8 @@ ms.lasthandoff: 11/23/2017
 |**"FreeText"支持**|如果字段或线段定义为"FreeText"，未能将分析字段/段中的字符数据。 请参阅[编码字符使用普通](../../adapters-and-accelerators/accelerator-hl7/encoding-characters-using-free-text.md)。|  
 |**ACK 或 NACK 发送具有无效的 MSH 消息**|使用**ReturnErrorForInvalidMSH3**注册表项，将否定确认 (NACK) 发送到方如果将发生以下情况：<br /><br /> -无效 MSH3 （方不定义在 HL7 配置资源管理器） <br />    **AND**<br />-消息中的 MSH15 和 MSH16 值为 null 或为空<br /><br /> 若要发送 NACK，将以下注册表项设置为 1，然后重新启动主机实例：<br /><br /> 32 位主机：`HKLM\SOFTWARE\Microsoft\BizTalk Accelerator for HL7`<br /><br /> 64 位主机：`HKLM\ SOFTWARE\Wow6432Node\Microsoft\BizTalk Accelerator for HL7` <br/><br/>**提示：**端口可以订阅失败消息： <ul><li>使用**BTAHL7Schemas.ParseError = True**筛选条件。</li><li>使用**传递**管道。</li></ul>|  
 |**ACK 消息实例保持活动**|如果有上游系统连接失败，确认 (ACK) 发送到上游系统仍然处于活动状态。<br /><br /> 新行为： 如果有上游系统连接失败，则挂起 ACK 消息。|  
-|**不会发送\<SB >**|此属性添加到接收适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果以开始数据适配器发送消息\<SB >。 例如，发送以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，该适配器将消息发送的数据是否丢失\<SB > 开始。 例如，发送以下消息：<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式发送端口是否**不发送\<SB >**设置为 True，则它不会发送 SB 并显示消息到下游的系统。 同时，它可与下游系统中缺少 SB 接收确认。|  
-|**接受缺少\<SB >**|此属性添加到发送适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果数据丢失了适配器返回错误\<SB > 开始。 例如，以下消息将返回错误：<br /> `DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，适配器可以接收消息，如果数据丢失了\<SB > 开始。 例如，收到以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式接收端口是否**接受缺少\<SB >**设置为 True，则它将接受来自上游系统的消息中缺少 SB。 在同一时间它不会发送 SB 到上游系统。|  
+|**不会发送\<SB\>**|此属性添加到接收适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果以开始数据适配器发送消息\<SB\>。 例如，发送以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，该适配器将消息发送的数据是否丢失\<SB\>开始。 例如，发送以下消息：<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式发送端口是否**不发送\<SB\>** 设置为 True，则它不会发送 SB 并显示消息到下游的系统。 同时，它可与下游系统中缺少 SB 接收确认。|  
+|**接受缺少\<SB\>**|此属性添加到发送适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果数据丢失了适配器返回错误\<SB\>开始。 例如，以下消息将返回错误：<br /> `DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，适配器可以接收消息，如果数据丢失了\<SB\>开始。 例如，收到以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式接收端口是否**接受缺少\<SB\>** 设置为 True，则它将接受来自上游系统的消息中缺少 SB。 在同一时间它不会发送 SB 到上游系统。|  
   
 ## <a name="biztalk-server-2013"></a>BizTalk Server 2013  
   

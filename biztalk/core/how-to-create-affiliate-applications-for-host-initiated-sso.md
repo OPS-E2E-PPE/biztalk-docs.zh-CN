@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23525d3b2f72d59e2b0f44257c707f22e6bc2bab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce8a5cf43cd1d6e455492a74985edb91f2cb0a94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-affiliate-applications-for-host-initiated-sso"></a>如何创建关联应用程序为主机启动的 SSO
 可以定义两种类型的应用程序：  
@@ -45,9 +45,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-createapps \<AffApp.xml >**，其中 AffApp.xml 是 xml 文件的名称。  
+4.  类型**ssomanage-createapps \<AffApp.xml\>**，其中 AffApp.xml 是 xml 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-createapps \<AffApp.xml >**，其中 AffApp.xml 是 xml 文件的名称。  
+4.  类型**ssomanage-createapps \<AffApp.xml\>**，其中 AffApp.xml 是 xml 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -107,9 +107,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-createapps \<AffApp.xml >**，其中 AffApp.xml 是 xml 文件的名称。  
+4.  类型**ssomanage-createapps \<AffApp.xml\>**，其中 AffApp.xml 是 xml 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

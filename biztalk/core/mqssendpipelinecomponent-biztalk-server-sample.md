@@ -17,11 +17,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 256731dbb6194aa1962d62ec9fdbe58a0fd60e03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd5f7bb392a6fbd4e1b4d64139fc38cc5a71aa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent（BizTalk Server 示例）
 本示例演示如何写入从 XML 文件读取一组 MQSeries 属性值并将其应用到消息的管道组件。  
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
   
--   *\<SamplesPath >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
   
--   *\<SamplesPath >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令提示符。  
   
-    2.  将目录更改为\<SamplesPath > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent。  
+    2.  将目录更改为\<SamplesPath\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent。  
   
     3.  键入以下命令：  
   
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  单击下拉列表**选择强名称密钥文件**选项，然后单击**浏览**。  
   
-    4.  浏览到\<SamplesPath > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk，单击**打开**。  
+    4.  浏览到\<SamplesPath\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk，单击**打开**。  
   
 4.  先前创建的管道组件已添加到**预组建**此管道项目的阶段。 如果尚未添加此组件，则需要完成以下步骤来添加它：  
   
@@ -148,7 +148,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  打开 BizTalk 管理控制台。  
   
-    2.  单击以展开**BizTalk 组 [\<servername >:\<管理数据库 >]**，然后单击以展开**程序集**文件夹。  
+    2.  单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，然后单击以展开**程序集**文件夹。  
   
          已部署的管道程序集应下可见**程序集**文件夹。  
   
@@ -186,7 +186,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ 资源管理器**。  
   
-2.  双击**队列管理器**，然后双击默认队列管理器。 默认的队列管理器通常命名为**QM_**\<*machine_name*> 其中*machine_name*是你的计算机的名称。  
+2.  双击**队列管理器**，然后双击默认队列管理器。 默认的队列管理器通常命名为**QM_**\<*machine_name* \>其中*machine_name*是你的计算机的名称。  
   
 3.  右键单击**队列**，指向**新建**，然后单击**本地队列**。  
   

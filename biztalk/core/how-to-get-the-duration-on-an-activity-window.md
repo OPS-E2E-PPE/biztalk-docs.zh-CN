@@ -16,11 +16,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0dbef138603421a46edd4b2d17a5123116cece6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37c5bb2c60133d19887e157f8e06633527e0fa11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-get-the-duration-on-an-activity-window"></a>如何获取活动时段的持续时间
 管理员使用**get activitywindow**命令来获取指定的活动的持续时间。 该命令返回持续时间的长度和度量单位。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  键入 bm get activitywindow 的活动：\<活动名称 >。  
+3.  键入 bm get activitywindow 的活动：\<活动名称\>。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -18,11 +18,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d5e7782dd2e98822d6fc9e51ca08dac2d31f166
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98e3798e42442e1a6533e4f286d194c8e2474be6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-groups"></a>主机组
 主机组是用于对进程内 BizTalk 主机（BizTalk Server 中的主机进程）具有访问权限的帐户的 Windows 组（默认情况下名为 BizTalk Application Users 组）。 建议对环境中的每个进程内主机分别使用一个主机组。  
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
     -   BAM 主导入  
   
--   它必须属于 BTS_\<进程内主机名 > （_u） SQL Server 数据库角色的 MessageBox  
+-   它必须属于 BTS_\<进程内主机名\>（_u） SQL Server 数据库角色的 MessageBox  
   
 -   它必须是 BAM 主导入数据库中的 BAM_EVENT_WRITER SQL Server 角色的成员。  
   

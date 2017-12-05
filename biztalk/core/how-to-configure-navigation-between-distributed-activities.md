@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88c0a1cf8d82ee5cd4e48e176b5b7f633101d8c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ab210f5ab728134b406b5c4bdaf25a1ec6db1c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-navigation-between-distributed-activities"></a>如何配置分布式活动之间的导航
 利用分布式导航，用户可以查看远程 BAM 部署中的活动。 当启用分布式的导航时，一台计算机上 BAM 门户的用户将能够查看活动上的另一个部署的 BAM 门户中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -35,9 +35,9 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="how-to-set-up-distributed-navigation-for-remote-activities"></a>如何为远程活动设置分布式导航  
   
-1.  计算机 1 的管理员授予对计算机 1 上的 myBusinessView 视图的业务用户访问权限。 按以下方式使用 bm.exe 命令，：**添加帐户 AccountName:\<帐户名称 >-视图：** myBusinessView  
+1.  计算机 1 的管理员授予对计算机 1 上的 myBusinessView 视图的业务用户访问权限。 按以下方式使用 bm.exe 命令，：**添加帐户 AccountName:\<帐户名称\>的视图：** myBusinessView  
   
-2.  计算机 1 上的管理员，如下所示运行启用引用命令中，通过启用分布式的导航： **bm.exe 启用引用 TargetServer:** computer2 **-TargetDatabase:\<目标数据库 >**  
+2.  计算机 1 上的管理员，如下所示运行启用引用命令中，通过启用分布式的导航： **bm.exe 启用引用 TargetServer:** computer2 **-TargetDatabase:\<目标数据库\>**  
   
     > [!NOTE]
     >  通常，部门间用于访问 BAM Web Services 的帐户在不同计算机上是不同的。 因此，在此方案中的计算机 1 管理员必须将添加计算机 1 的 Web 服务模拟帐户到 BAM_ManagementWS 角色计算机 2 的 BAM 主导入数据库。 有关详细信息，请参阅"查看和修改角色成员身份" [http://go.microsoft.com/fwlink/?LinkId=66990](http://go.microsoft.com/fwlink/?LinkId=66990)。  

@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb659182a16af541728cb45f7b2427f6e306cd2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79a11d3be19ca27bd27146ef728ce168c3285884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>调用业务服务方法使用 BizTalk Server 和 Siebel 适配器
 Siebel 业务服务是可以在 Siebel 中直接调用的业务方法的集合。 有关详细信息，如何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持业务服务调用在 Siebel 系统中，请参阅[对业务服务中 Siebel 操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)。 对于执行业务服务操作的消息的 SOAP 结构的详细信息，请参阅[业务服务操作的消息架构](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)。  
@@ -165,7 +165,7 @@ Siebel 业务服务是可以在 Siebel 中直接调用的业务方法的集合�
  业务流程使用请求消息，并将其传递到 Siebel 系统。 Siebel 系统的响应保存在文件发送位置中。 以上的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <ExecuteResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp/Operation">  
   <ExecuteResult>  
     <Time xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp">2007-11-25T20:42:11.0000000</Time>  

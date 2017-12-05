@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9343cf9bd33f5880c564e2ec0dce72ece520ff01
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8cee3564b90b730334d2d891edd2e9abc221a367
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-up-the-bam-databases-using-the-bam-management-utility"></a>如何使用 BAM 管理实用工具 BAM 数据库设置
 通常，管理员使用 BizTalk Server 配置实用程序来设置 BAM 数据库。 您可以使用 BAM 管理实用程序 (bm.exe) 作为设置数据库的备选方法。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm 安装程序数据库 ConfigFile:\<配置文件 >**，其中\<*配置文件*> 替换为的名称BAM 配置文件。 按 **Enter**。  
+3.  在命令行提示符下键入以下内容： **bm 安装程序数据库 ConfigFile:\<配置文件\>**，其中\<*配置文件*\>替换为你 BAM 配置文件的名称。 按 **Enter**。  
   
 ## <a name="see-also"></a>另请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

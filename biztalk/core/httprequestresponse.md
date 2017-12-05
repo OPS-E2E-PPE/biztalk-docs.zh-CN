@@ -15,11 +15,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fad45e80cac2a398507b4288c9ac6f35c887e71b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 549f343818464a8316246f8b6996755ce5fef136
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet 服务器应用程序编程接口 (ISAPI) 筛选器允许 ASP.NET 应用程序与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程通信。  
@@ -36,7 +36,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
  ASP.NET 应用程序接收此 XML PO 回执响应，并使用从此响应中提取的状态信息刷新 Web 窗体。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\AdaptersUsage\HTTPRequestResponse\  
+ *\<示例路径\>*\AdaptersUsage\HTTPRequestResponse\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -57,7 +57,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersUsage\HTTPRequestResponse  
+     \<*示例路径*\>\AdaptersUsage\HTTPRequestResponse  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -77,7 +77,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
         > [!IMPORTANT]
         >  必须更改实现 Web 应用程序 (Default.aspx.cs) 的示例代码，使其反映您的环境：  
         >   
-        >  http://\<*服务器名称*>/\<*虚拟 dir*> /BTSHTTPReceive.dll 其中`<servername>`是您要发布到，Web 服务器和的名称`<`*虚拟 dir* `>`是此文件所在的虚拟目录。  
+        >  http://\<*服务器名称*\>/\<*虚拟 dir*\>/BTSHTTPReceive.dll 其中`<servername>`是网站的名称要发布到的服务器和`<`*虚拟 dir* `>`是此文件所在的虚拟目录。  
   
         > [!NOTE]
         >  在尝试运行本示例之前，应确认在生成和初始化过程中 BizTalk 未报告任何错误。  

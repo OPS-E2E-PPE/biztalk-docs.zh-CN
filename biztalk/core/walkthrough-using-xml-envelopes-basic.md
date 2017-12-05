@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1555abddd218d28c360ee5364fa30fabaed47aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9090c4ee7d576bb7ab610cd81637680d837b2cae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a>演练： 使用 XML 信封 (Basic)
 本示例通过实现部分虚构的错误跟踪系统来演示基本的 XML 信封拆装。 该示例要满足以下条件：  
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  将根节点的名称从“Root”改为“Envelope”。  
   
-4.  现在，将该架构标记为信封架构。 单击**\<架构 >**节点。 在属性窗格中，将架构引用属性设置**信封**到`OK`。  
+4.  现在，将该架构标记为信封架构。 单击**\<架构\>**节点。 在属性窗格中，将架构引用属性设置**信封**到`OK`。  
   
 5.  设置**正文 XPath**属性。 若要执行此操作，请单击**信封**节点。 在属性窗口中，单击省略号 (**...**) 按钮**正文 XPath**属性中，选择**信封**，然后单击**确定**。  
   
@@ -305,4 +305,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [可恢复的交换处理](../core/recoverable-interchange-processing.md)   
  [提升属性](../core/promoting-properties.md)   
- [CBRSample （BizTalk Server 示例）](../core/cbrsample-biztalk-server-sample.md)
+ [CBRSample（BizTalk Server 示例）](../core/cbrsample-biztalk-server-sample.md)

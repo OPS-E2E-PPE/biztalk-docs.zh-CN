@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2eaf57c08157ffb9785f591016793c4c416704bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32314638b3352dccb2c30eb0b99a4d328d22b092
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>步骤 3： 测试迁移使用的应用程序的 SQL 适配器
 ![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 3.  业务流程使用请求消息，并将其发送到 SQL Server 数据库。 在与基于 WCF 的架构一致的架构中接收从 SQL Server 数据库响应[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 使用入站的映射，WCF 自定义发送端口将这 vPrev 的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 从 SQL Server 数据库响应保存到定义为业务流程的一部分的其他文件位置。 前面的请求消息的响应是：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://SQLInsert">  
       <Success>  
         <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   

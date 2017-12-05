@@ -32,11 +32,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f89959b1900ce03717f2bb28efda7651c5008e7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a78dabdaefc430fe88e0a5e39d533ee34f0d3db1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-an-infopath-form-to-repair-a-message-or-submit-a-new-message"></a>使用 InfoPath 窗体来修复消息或提交新消息
 若要修复、 验证、 批准，或创建一条消息，在工作[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]内打开的窗体[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MRSR Web 站点。 MRSR 站点包含[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中的为每种消息类型和[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]未分析的消息的窗体。 消息修复和新的提交将需要修复、 验证或审批的消息发送到相应的 MRSR 文档库，你可以打开它。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
  若要执行 MRSR 站点上一条消息的操作，你必须部署该消息类型的 InfoPath 窗体。 这将加载到模板文档库中消息所需的 InfoPath 窗体。  
   
 ## <a name="verifying-a-message"></a>验证消息  
- 修复工作流可以包括验证阶段。 在此阶段，repairer 已修复了一条消息后, 一个验证程序验证消息中的修复正确。 若要执行此操作，你可以打开中的消息[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]从窗体\<部门名称 > _RekeyVerify 文档库中你 MRSR 的站点，并验证到消息所做的修复是否正确。 你必须还重新生成密钥数据到需要重新生成密钥的某些字段。 所有的验证阶段需要重新生成密钥，尽管你可以自定义的字段 （如果有的话） 都需要将重新生成。 有关重新生成密钥验证的详细信息，请参阅[消息修复和新的提交中的特殊处理](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md)。  
+ 修复工作流可以包括验证阶段。 在此阶段，repairer 已修复了一条消息后, 一个验证程序验证消息中的修复正确。 若要执行此操作，你可以打开中的消息[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]从窗体\<部门名称\>_RekeyVerify 文档库中你 MRSR 的站点，并验证到消息所做的修复是否正确。 你必须还重新生成密钥数据到需要重新生成密钥的某些字段。 所有的验证阶段需要重新生成密钥，尽管你可以自定义的字段 （如果有的话） 都需要将重新生成。 有关重新生成密钥验证的详细信息，请参阅[消息修复和新的提交中的特殊处理](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md)。  
   
  包含所有可能的阶段的工作流包括一个或多个验证阶段。 但是，工作流不必包括验证阶段。  
   

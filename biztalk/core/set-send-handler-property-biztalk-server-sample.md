@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0e14f58cbdd07a8c13dec6cd44fbc95584f2ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f783f465feff207ae1759ea358b0b848ccc0f4c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="set-send-handler-property-biztalk-server-sample"></a>设置发送处理程序属性 （BizTalk Server 示例）
 “设置发送处理程序属性”示例演示如何为简单邮件传输协议 (SMTP) 发送处理程序设置 XML 配置信息。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例文件位于以下 SDK 位置：  
   
- \<*示例路径*> \Admin\WMI\Set 发送处理程序 Property\  
+ \<*示例路径*\>\Admin\WMI\Set 发送处理程序 Property\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -57,15 +57,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Set 发送处理程序 Property\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Set 发送处理程序 Property\VBScript\  
   
 2.  使用 cscript 程序运行文件 ConfigureSMTP.vbs，并传递以下命令行参数：  
   
-    -   **\<**   
-         ***SMTPServerName* >。** 将用于发送邮件的 SMTP 服务器的名称。  
+    -   **\<** ***SMTPServerName* \>。** 将用于发送邮件的 SMTP 服务器的名称。  
   
-    -   **\<**   
-         ***FromEmailAddress* >。** 将用作发件人地址的电子邮件地址。  
+    -   **\<** ***FromEmailAddress* \>。** 将用作发件人地址的电子邮件地址。  
   
          例如：  
   
@@ -79,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  ConfigureSMTP.vbs 脚本文件包含详细注释，对其执行的操作做了进一步说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

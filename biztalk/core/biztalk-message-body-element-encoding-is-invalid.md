@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbf134b390af1904d74f1652aac00f6ea4b33ad2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b1835371e5c042d3ddc46558cbf97970f6bfc6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk 消息正文元素编码无效
 ## <a name="details"></a>详细信息  
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 8.  在**WCF [***传输类型***] 传输属性**对话框中，单击**消息**选项卡。  
   
 9. 在**出站 WCF 消息正文**部分中，单击**模板-指定通过模板内容**单选按钮。 在**XML**文本框中，BizTalk 正文的格式应为   
-    \<**bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="[xml &#124; base64 &#124; 十六进制 &#124; 字符串]"/**> （有效值，这些值区分大小写，来进行编码 xml &#124; base64 &#124; 十六进制&#124; 字符串)
+    \<**bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="[xml &#124; base64 &#124; 十六进制 &#124; 字符串]"/** \> （有效值，这些值区分大小写，来进行编码 xml &#124; base64 &#124; 十六进制 &#124; 字符串）

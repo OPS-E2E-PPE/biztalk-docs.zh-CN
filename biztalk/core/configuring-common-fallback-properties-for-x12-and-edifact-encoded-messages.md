@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5bd66c9ce3bb104cfb471e725778faab2c4e9528
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b99d6e60a2a5955a9f0873156dbc5f822b3d519
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a>为 X12 和 EDIFACT 编码的消息配置通用后备属性
 后备属性同时适用于 X12（包括 HIPAA）和 EDIFACT 编码的交换。 和所有后备协议属性一样，仅当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 尚未确定解析传入或传出消息所用的协议时，这些属性才适用。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
         > [!IMPORTANT]
         >  如果未选中该选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将不使用后备协议中的属性集。  
   
-    2.  单击**激活 EDI 报告**激活报告的所有 EDI 消息。 这可确保消息均显示在状态报告功能，通过单击底部的链接可显示的屏幕**组中心数据库**窗格[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理控制台。  
+    2.  单击**激活 EDI 报告**激活报告的所有 EDI 消息。 这可确保消息均显示在状态报告功能，通过单击底部的链接可显示的屏幕**组中心数据库**BizTalk Server 管理控制台窗格。  
   
     3.  如果你单击**激活 EDI 报告**，单击**存储事务的一组负载，可用于报告**存储事务设置中的跟踪 (BizTalkDTADb) 数据库的 EDI 表。  
   

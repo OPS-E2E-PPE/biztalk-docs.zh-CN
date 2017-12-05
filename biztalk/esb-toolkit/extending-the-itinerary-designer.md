@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb44c851258cc623cf991a0b2be5c18d58e59770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78490c7b6447ddb097c0ca61154aab20c44086c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="extending-the-itinerary-designer"></a>扩展路线设计器
 路线设计器将 visual 的域特定语言 (DSL) 为 Microsoft Visual Studio，允许以用于路线图形建模[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 设计器显示为其开发人员可以编写自定义扩展以启用新功能和/或新的配置选项的各个扩展点。  
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
  下面是适配器提供程序清单文件; 的引用实例同样应结构化自定义清单文件。  
   
 ```xml  
-\<?xml version="1.0" encoding="utf-8" ?>  
+<?xml version="1.0" encoding="utf-8" ?>  
 <adapterPropertyManifest adapterName="FTP">  
      <aliases>  
           <alias name="globalPropertySchemas" value="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />  
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/20/2017
  **ValidationEngine**类执行模型元素验证使用 Enterprise Library 验证应用程序块，并将验证错误记录到 Microsoft Visual Studio IDE 中的错误列表窗口。 企业库配置文件中定义所应为每种类型的模型中的元素执行的验证。 该文件被命名为 Ruleset.config，并且位于路线设计器的所有二进制文件所在的二进制文件夹。 下面的示例配置文件的片段，并且包括 （名为验证程序） 的两个验证规则**UddiResolver**扩展程序、 一个用于**ServerUrl**属性，一个用于**ServiceKey**属性。  
   
 ```  
-\<!--   
+<!--   
 UddiResolver  
 -->  
 <type assemblyName="Microsoft.Practices.Services.Extenders.Resolvers.UDDI"  

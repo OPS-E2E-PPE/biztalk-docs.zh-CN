@@ -20,11 +20,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f7f15d01759704af6b6b3134c9d36f0e64f8e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 339f4eb5fa11b23602d05f8cd75c30ca3aa16279
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter"></a>为公共进程业务流程和 HTTP 适配器设置超时值
 在同步方案中，如果将公用业务流程与 HTTP 适配器一起使用，则必须为它们设置相应的超时值。 业务流程的超时设置（执行时间）必须小于 HTTP 适配器的超时设置（请求超时值）。 这是因为如果 HTTP 适配器的设置较小，则适配器可能会在业务流程执行完之前发生超时。 这使适配器可以控制流程。 业务流程必须在流程的控制之下；因此，业务流程的超时设置必须较小。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-set-the-time-out-setting-for-the-public-process-orchestration"></a>设置公用业务流程的超时设置  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本 > Accelerator for RosettaNet**，然后单击**BizTalk Accelerator for RosettaNet 管理控制台**。  
+1.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**BizTalk Accelerator for RosettaNet 管理控制台**。  
   
 2.  展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，然后单击**过程配置设置**。  
   

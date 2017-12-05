@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e47235978960ac89f4ea276c4c4a60c8ddf16e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be099923fea9d5dbb22559203b297fadf5dd1fdc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-message-context-properties"></a>如何： 实现基于内容的路由使用消息上下文属性
 ## <a name="goal"></a>目的  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>若要创建 ESB 路线 DSL 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**，指向**添加**，然后单击**新路线**。  
   
@@ -264,9 +264,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [如何： 动态路由基于消息上下文使用业务规则策略在一条消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [如何：使用业务规则策略动态路由基于消息上下文的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

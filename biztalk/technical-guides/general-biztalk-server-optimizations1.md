@@ -12,11 +12,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee8447bb77fee160c34cc86d30a0b7ac981c53aa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e9e799822c63cb78eda1b989cb157c71fd357d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 可以使用以下建议以提高 BizTalk Server 性能。 安装并配置 BizTalk Server 之后，将应用本主题中列出的优化。  
@@ -98,9 +98,9 @@ ms.lasthandoff: 09/20/2017
   
  设置 maxconnection 属性时，可以指定 HTTP、 HTTPS、 web 站点 IP 地址和端口号。 其他示例包括：  
   
- **\<添加地址 ="https://www.contoso.com"maxconnection ="24"/ >**   
-**\<添加地址 ="http://www.contoso.com:8080"maxconnection ="24"/ >**   
-**\<添加地址 ="http://*IPAddress*"maxconnection ="24"/ > * * 有关优化 IIS 和 ASP.NET Web 服务的设置的详细信息，请参阅"ASP.NET 设置，可能会影响 HTTP 适配器性能"部分的[适配器性能影响的配置参数](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200) 在 BizTalk Server 2010 帮助中。  
+ **\<添加地址 ="https://www.contoso.com"maxconnection ="24"/\>**   
+**\<添加地址 ="http://www.contoso.com:8080"maxconnection ="24"/\>**   
+**\<添加地址 ="http://*IPAddress*"maxconnection ="24"/\>* * 有关优化 IIS 和 ASP.NET Web 服务的设置的详细信息，请参阅"ASP.NET 设置，可能会影响 HTTP 适配器性能"部分[适配器性能影响的配置参数](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200) 在 BizTalk Server 2010 帮助中。  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>管理 ASP.NET 线程使用情况或并发执行的请求的 Web 应用程序可以承载独立接收到的位置后, 端 Web 服务和 WCF 服务  
  辅助和 I/O 线程 （IIS 7.5 和 IIS 7.0 在经典模式下） 或的同时执行的请求 （IIS 7.5 和 7.0 集成模式下） ASP.NET Web 应用程序主机隔离接收到的位置后, 端 Web 服务和 WCF 服务数目的数量应在以下情况下修改：  
@@ -189,7 +189,7 @@ ms.lasthandoff: 09/20/2017
  有关在 IIS 7.0 上配置 ASP.NET 线程使用情况的详细信息，请参阅[ASP.NET 在 IIS 7.0 上的线程使用情况的 Thomas Marquardt 博客](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)。  
   
 ### <a name="manage-the-number-of-concurrently-executing-requests-for-aspnet-4web-applications-that-can-host-isolated-received-locations-back-end-web-services-and-wcf-services-on-iis-75-and-70-running-in-integrated-mode"></a>管理同时执行的 ASP.NET 4Web 托管应用程序可以独立接收到的位置、 后端 Web 服务和在 IIS 7.5 和 7.0 在集成模式下运行的 WCF 服务的请求的数  
- .NET Framework 4，maxconcurrentrequestspercpu 配置的默认设置是 5000，这是一个非常大的数字，因此将留出足够的并发执行的异步请求。 有关详细信息，请参阅[ \<applicationPool > 元素 （Web 设置）](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
+ .NET Framework 4，maxconcurrentrequestspercpu 配置的默认设置是 5000，这是一个非常大的数字，因此将留出足够的并发执行的异步请求。 有关详细信息，请参阅[ \<applicationPool\>元素 （Web 设置）](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
   
  对于 IIS 7.5 和 IIS 7.0 集成模式，名为内 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 maxconcurrentrequestspercpu 配置一个 dword 值确定每个 CPU 的并发请求数。 默认情况下，注册表项不存在并且每 CPU 的请求数限制为 5000。  
   

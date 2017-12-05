@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decf27009eea6aff0ff5ed9088ae49ef2014b1cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5780c8fcc893126997b37f687f010c5eb62e74c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-primary-import-database"></a>如何确定 BAM 主导入数据库中的瓶颈
 若要确定业务活动监视 (BAM) 数据库中的瓶颈，执行以下步骤：  
@@ -25,9 +25,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  确保 SQL 代理服务正在运行。  
   
-3.  如果配置 OLAP 分析，确保 BAM_AN_\<activityname > 应按定期间隔运行作业。  
+3.  如果配置 OLAP 分析，确保 BAM_AN_\<activityname\>应按定期间隔运行作业。  
   
-4.  确保该 BAM_DM_\<activityname > （数据维护） 作业计划以定期间隔运行。  
+4.  确保该 BAM_DM_\<activityname\> （数据维护） 作业计划以定期间隔运行。  
   
     > [!NOTE]  
     >  在高使用率方案 BAM 数据库活动可能会影响其他 BizTalk Server 数据库，这将影响整体 BizTalk Server 性能的性能。 在这种情况下，请考虑采取以下措施：  
@@ -44,4 +44,4 @@ ms.lasthandoff: 09/20/2017
 8.  检查磁盘响应能力 （读/写性能计数器每次磁盘） 上承载 BizTalk 跟踪数据库的磁盘。  
   
 ## <a name="see-also"></a>另请参阅  
- [数据库层中的瓶颈](../technical-guides/bottlenecks-in-the-database-tier.md)
+ [数据库层的瓶颈](../technical-guides/bottlenecks-in-the-database-tier.md)

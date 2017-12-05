@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0f6f5cb6403c752b18cbfb1c4370cbe3ca95e65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ff7b45e560278053cec99208fd06917d079d6b8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>准则用于实现在多服务器 BizTalk 安装上的 Active Directory 权限
 本主题介绍用于创建 Active Directory 组织单位的准则，Active Directory 组织单位由在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装中使用的用户帐户和组构成。  
@@ -238,7 +238,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk Server Administrators|全局或通用|-BTUserAdmin<br />-BTUserInstall<br />-BizTalk 开发用户<br />-BizTalk 部署用户|  
 |BizTalk 支持用户|全局或通用|BTUserSupport（支持用户的本地域帐户）|  
 |SSO Administrators|全局或通用|-SSOService<br />-BTUserInstall<br />本地管理员|  
-|SSO Affiliate Administrators|全局或通用|-BizTalk 开发用户<br />-BizTalk 部署用户<br />-BTServiceHostIso<br />-   \<控制台用户 >|  
+|SSO Affiliate Administrators|全局或通用|-BizTalk 开发用户<br />-BizTalk 部署用户<br />-BTServiceHostIso<br />-   \<控制台用户\>|  
 |Windows SharePoint Services 管理员|全局或通用|-SPAdmin<br />-BTUserInstall<br />-BTUserDeploy<br />-BizTalk 开发用户<br />-BizTalk 部署用户|  
   
  有关域组的建议和说明：  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
   
 -   域组可以为全局组或通用组。  
   
--   使用 *\<DomainName >\\< 用户名\>*在配置向导中指定的域帐户信息时。  
+-   使用 *\<DomainName\>\\< 用户名\>*在配置向导中指定的域帐户信息时。  
   
 -   组和用户/服务帐户必须属于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机所属于的域（配置向导将对此进行检查并且将不会显示包含来自其他域的帐户的帐户或组）。  
   
@@ -337,7 +337,7 @@ ms.lasthandoff: 09/20/2017
 >  这些建议只针对开发和共享环境，不建议或不鼓励用于公司密码策略。 有关密码要求，请向您的网络管理员咨询。  
   
 > [!NOTE]
->  如果公司密码策略包括生成的密码，您需要注意的是，某些符号和符号组合是对于 XML 有特殊用途的字符。 不恰当地使用这些字符将导致配置 XML 文件在配置过程中无法打开。 这些符号包括"&"、"\<"，">"，和双-单引号，并且可能包括其他人。 请在执行基于文件的配置前测试配置 XML 文件。 您可以通过在 Internet Explorer（或某一 XML 编辑器）中打开嵌入了生成的密码的文档，测试文件是否可靠地用于适当的 XML 格式。  
+>  如果公司密码策略包括生成的密码，您需要注意的是，某些符号和符号组合是对于 XML 有特殊用途的字符。 不恰当地使用这些字符将导致配置 XML 文件在配置过程中无法打开。 这些符号包括"&"、"\<"，"\>"、 和双-单引号，并且可能包括其他人。 请在执行基于文件的配置前测试配置 XML 文件。 您可以通过在 Internet Explorer（或某一 XML 编辑器）中打开嵌入了生成的密码的文档，测试文件是否可靠地用于适当的 XML 格式。  
   
  有关部署的最多行环境中保证密码安全的详细信息 (包括要测试的方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置文件)，请参阅[BizTalk Server 2013 和 2013 R2 配置概述](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)。  
   

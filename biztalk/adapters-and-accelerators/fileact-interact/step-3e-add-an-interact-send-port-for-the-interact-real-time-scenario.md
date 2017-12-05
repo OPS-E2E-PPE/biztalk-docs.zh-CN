@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcb78fd556e72e4ca19e1d5172826a813f23eb24
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec380c088f27fe09f518c385990e3801b5c019dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a>步骤 3E： 添加的交互发送端口交互实时方案
 完成[步骤 3D： 将文件发送端口交互实时方案捕获 Sw:HandleResponse 消息添加](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)在开始此步骤之前。
@@ -42,11 +42,11 @@ ms.lasthandoff: 09/20/2017
     |**适配器模式**|从下拉列表中选择**实时**。|  
     |**消息格式**|**InteractMessage**。|  
     |**不可否认性指示器**|**FALSE**。|  
-    |**请求类型**|键入相应\<RequestType > 基于 SWIFT 你设置的字符串。|  
+    |**请求类型**|键入相应\<RequestType\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|**FALSE**。|  
-    |**请求者**|将其设置为相应\<请求者 > 基于 SWIFT 你设置的字符串。|  
-    |**响应方**|将其设置为相应\<响应方 > 基于 SWIFT 你设置的字符串。|  
-    |**服务名称**|将其设置为相应\<服务名称 >，将根据 SWIFT 你预配。|  
+    |**请求者**|将其设置为相应\<请求者\>基于 SWIFT 你设置的字符串。|  
+    |**响应方**|将其设置为相应\<响应方\>基于 SWIFT 你设置的字符串。|  
+    |**服务名称**|将其设置为相应\<服务名称\>，具体取决 SWIFT 你预配。|  
     |**传递通知**|从下拉列表中选择**FALSE**。|  
     |**通知队列**|键入相应的队列名称，基于 SWIFT 你预配。|  
   
@@ -79,4 +79,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 3A： 添加一个文件接收位置交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [步骤 3B： 添加交互接收位置交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
  [步骤 3c： 添加要捕获的 Sw:HandleRequest 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
- [步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)
+ [步骤 3D：为 InterAct 实时方案添加 FILE 发送端口以捕获 Sw:HandleResponse 消息](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)

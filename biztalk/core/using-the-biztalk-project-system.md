@@ -17,16 +17,16 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e55e1280f4054c431f53aa21fa16123f11509f7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5b8c3a83d75219b9e52fd2ab13124480d772832
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-project-system"></a>使用 BizTalk 项目系统
 使用 BizTalk 项目系统可以在 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 环境下创建、组织和配置 BizTalk 解决方案。 主题和此部分中的过程介绍如何使用 BizTalk 项目系统执行各种任务。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 项目系统使用的项目管理原则和步骤与 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中其他 Microsoft Build Engine (MSBuild) 项目相同。 本部分详细介绍了在创建运行于 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的应用程序时可能使用的通用步骤。  
+ BizTalk Server 项目系统使用的相同项目管理原则和与其他 Microsoft Build Engine (MSBuild) 项目中使用的过程[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 本部分详细介绍了在创建运行于 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的应用程序时可能使用的通用步骤。  
   
  有关 MSBuild 的详细信息，请参阅中的 MSBuild 参考部分[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]结合使用集合中位置[http://go.microsoft.com/fwlink/?LinkId=193567](http://go.microsoft.com/fwlink/?LinkId=193567)。  
   

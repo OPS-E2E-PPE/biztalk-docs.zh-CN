@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea84c244d0219043a2b68c1e08fbd647a5002009
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f46ae3000577d747fbebd9c09dead9ecebf72169
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="module-1-creating-a-swift-solution"></a>模块 1： 创建 SWIFT 解决方案
 在此模块中，你将创建一个空白的 BizTalk 解决方案。 通过使用在第一课中，创建新的解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 你还可以创建包含你的 BizTalk 解决方案组件例如架构、 地图、 业务流程和管道组件的各个项目。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-a-blank-biztalk-solution"></a>若要创建空白的 BizTalk 解决方案  
   
-1.  启动 **[!INCLUDE[vs2012](../../includes/vs2012-md.md)]** 。  
+1.  启动**Visual Studio**。  
   
 2.  在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。  
   
@@ -36,10 +36,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**名称**框中，键入**SWIFTProject**作为解决方案名称。  
   
-5.  在**位置**框中，键入  **\<*驱动器*>: \labs**。  
+5.  在**位置**框中，键入  **\<*驱动器*\>: \labs**。  
   
 6.  单击**确定**打开新项目。  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]在解决方案资源管理器和在新的空白解决方案中创建空解决方案\<*驱动器*: > \labs 文件夹。  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]在解决方案资源管理器和在新的空白解决方案中创建空解决方案\<*驱动器*:\>\labs 文件夹。  
   
  继续执行[模块 2： 添加新的架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)。

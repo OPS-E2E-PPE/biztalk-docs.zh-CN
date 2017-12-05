@@ -19,11 +19,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab82aa317b205d62b8bd05aff513e80d406b658b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e135b98c04531aa6200f3b79c5b6d5153bf299a7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mllp-receive-and-send-components"></a>MLLP 接收和发送组件
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持所有[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]本机适配器类型，包括文件、 HTTP、 SQL 和 FTP。 对于 HL7 编码接收和发送的消息，但是，你通常使用 MLLP 适配器。 此适配器是使用最小的较低层协议 (MLLP) 的 TCP/IP 套接字适配器。 此协议提供的双向消息支持和端到端卫生保健的应用程序集成。  
@@ -32,13 +32,13 @@ ms.lasthandoff: 09/20/2017
   
  消息[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]接收或发送 MLLP 适配器上的需要以下包装：  
   
--   \<SB > 启动块字符  
+-   \<SB\>启动块字符  
   
--   \<EB > 结束块字符  
+-   \<EB\>结束块字符  
   
--   \<CR > 回车符返回字节 （可选）  
+-   \<CR\>回车符返回字节 （可选）  
   
- MLLP 适配器提供错误处理缺少\<SB > 或\<EB > 包装器、 删除的连接或超时。 使用 MLLP 适配器，你可以配置上的连接数的限制。 装有 MLLP 适配器，可以使用多种类型的确认。  
+ MLLP 适配器提供错误处理缺少\<SB\>或\<EB\>包装器、 删除的连接或超时。 使用 MLLP 适配器，你可以配置上的连接数的限制。 装有 MLLP 适配器，可以使用多种类型的确认。  
   
 ## <a name="see-also"></a>另请参阅  
  [处理 MLLP 编码消息](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   

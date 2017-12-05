@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 343dc2e9c7965ffb27a806d18944da99777dd3ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b08fc197c16f04f3eb738468421db340060b9613
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a>演练： 将规则添加到策略
 本演练提供了分步过程添加一个名为规则**DeniedRule**到**ProcessPurchaseOrder**策略。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 拖动**请求状态**到然后窗格。  
   
-11. 单击**\<空字符串 >**然后键入**拒绝**。  
+11. 单击**\<空字符串\>**然后键入**拒绝**。  
   
 12. 右键单击**（不保存） 1.2 版**，然后单击**保存**。  
   
@@ -119,4 +119,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [条件计算和操作执行](../core/condition-evaluation-and-action-execution.md)   
- [安排和优先级](../core/agenda-and-priority.md)
+ [议程和优先级](../core/agenda-and-priority.md)

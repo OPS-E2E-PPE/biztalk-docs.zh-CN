@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca76426ab461ce12844cde42f4050d3de885d7ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41d02fe0b7be1f53edaac4c18cfd7717a25c3a71
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a>WCF 适配器常见问题解答：使用 WCF 服务
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a>BizTalk Server 如何使用其 WCF 适配器访问 WCF 服务？  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
  BizTalk WCF 自定义适配器不仅允许你从绑定元素生成一个新的绑定，而且还可以在配置新的绑定直接。 它还允许你配置标准绑定上的行为。 这是特别有用，因为编写自定义行为是比写入新的绑定元素对象容易得多。  
   
- 生成 BindingElement 是一项涉及的开发任务，并为其的引用的最佳来源是在超链接"http://go.microsoft.com/fwlink/?LinkId=142449"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=142449 WCF 示例。 若要创建自定义 BindingElement 你创建自 BindingElement 派生的类。 新 BindingElement 将一定要处于新的程序集。 此程序集必须安装到全局程序集缓存 (GAC) 的管理计算机 BizTalk 主机中，发送端口，并且接收位置的配置。 若要将自定义绑定与特定发送端口相关联或接收位置时，首先需要将其添加到\<bindingElementExtensions > 部分中的同一台计算机上的 machine.config 文件。  
+ 生成 BindingElement 是一项涉及的开发任务，并为其的引用的最佳来源是在超链接"http://go.microsoft.com/fwlink/?LinkId=142449"\t"_blank"http://go.microsoft.com/fwlink/?LinkId=142449 WCF 示例。 若要创建自定义 BindingElement 你创建自 BindingElement 派生的类。 新 BindingElement 将一定要处于新的程序集。 此程序集必须安装到全局程序集缓存 (GAC) 的管理计算机 BizTalk 主机中，发送端口，并且接收位置的配置。 若要将自定义绑定与特定发送端口相关联或接收位置时，首先需要将其添加到\<bindingElementExtensions\>的同一台计算机上的 machine.config 文件的部分。  
   
  建立你然后可以显示所做的更改后**传输属性配置**对话框中，将绑定配置。  
   

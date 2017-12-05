@@ -13,11 +13,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7e611996e58291cdf6ed5d6b38b2b2fe5c299d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23f326a6fe028c5b7ea5edf60216c1933eccbdb6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="before-installing-the-service-oriented-solution"></a>在安装面向服务的解决方案之前
 若要在单台计算机上安装面向服务的解决方案的存根版本，必须具备以下必备组件：  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 -   安装在本地计算机上的 MQSeries 服务器，或具有对运行 MQSeries 服务器的计算机的访问权限。 对于内联版本，在运行解决方案的业务流程的 BizTalk 服务器上，MQSeries 客户端 API 必须可用。  
   
     > [!NOTE]
-    >  MQSeries 服务器的版本必须与所需的版本[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]MQSeries 适配器。 这可以包括带有 Fix Pack 10 (CSD10) 或更高版本的 IBM WebSphere MQ Windows 版本 5.3。  
+    >  MQSeries 服务器的版本必须与 BizTalk Server MQSeries 适配器所需的版本。 这可以包括带有 Fix Pack 10 (CSD10) 或更高版本的 IBM WebSphere MQ Windows 版本 5.3。  
   
     > [!NOTE]
     >  当使用诸如 MQSeries 这样对服务器调用分布式组件对象模型 (DCOM) 的功能时，请确保未启用基于网络地址转换 (NAT) 的防火墙。 客户端必须能够通过其实际 IP 地址访问该服务器，并且基于 NAT 的防火墙将此地址翻译为客户端不能识别的地址。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
 -   必须具备 Host Integration Server 才能连接到大型机。  
   
     > [!NOTE]
-    >  Host Integration Server 作为 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的一部分包含在其中。  
+    >  Host Integration Server 是 BizTalk Server 的一部分包括。  
   
 -   配置有 HTTPS 连接证书的 Web 服务器。  
   
@@ -66,4 +66,4 @@ ms.lasthandoff: 09/20/2017
  [如何安装服务的存根 （stub） 版本面向解决方案](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
  [如何安装内联和服务的适配器版本面向解决方案](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
  [如何运行服务面向解决方案](../core/how-to-run-the-service-oriented-solution.md)   
- [服务开发人员计算机设置面向解决方案](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [面向服务的解决方案的开发人员计算机设置](../core/developer-machine-setup-for-the-service-oriented-solution.md)

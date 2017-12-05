@@ -12,18 +12,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baaca02ac076c79be004ed7b3d2c0f4fffce6ff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddbc35fecd2412632f0c4a81750a3662e6e7bf11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edifact-contrl-acknowledgment"></a>EDIFACT CONTRL 确认
 CONTRL 确认 (ACK) 用作 EDIFACT 编码消息的技术确认和功能确认。 作为技术确认，CONTRL 消息用于指示交换的接收。 作为功能确认，CONTRL 消息用错误或不支持功能的列表指示接收到的交换、组或消息是已接受还是拒绝。  
   
  完整 CONTRL 消息用作功能确认。 功能确认的某些部分可再次用于技术确认。 如果你选择了技术和功能确认中参与方属性为发送方或全局属性中，BizTalk 服务器将生成两条 CONTRL 消息： 技术的 CONTRL 确认和功能 CONTRL 确认使用  
   
- CONTRL 确认符合 EFACT_\<版本号 > _CONTRL.xsd 架构。  
+ CONTRL 确认符合 EFACT_\<版本号\>_CONTRL.xsd 架构。  
   
 ## <a name="technical-acknowledgement"></a>技术确认  
  技术确认指示交换的收件人：  
@@ -59,7 +59,7 @@ CONTRL 确认 (ACK) 用作 EDIFACT 编码消息的技术确认和功能确认。
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [为技术确认 EDIFACT CONTRL 消息](../core/edifact-contrl-message-as-technical-acknowledgment.md)  
+-   [作为技术确认的 EDIFACT CONTRL 消息](../core/edifact-contrl-message-as-technical-acknowledgment.md)  
   
 -   [作为功能确认的 EDIFACT CONTRL 消息](../core/edifact-contrl-message-as-functional-acknowledgment.md)  
   

@@ -17,16 +17,16 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eaa81067f5a413c689a4a51ac6b102d80782e2b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a91910fd1955858260466d987bede1647f0be90c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="monitoring-the-progress-of-your-biztalk-application-deployment"></a>监视 BizTalk 应用程序部署的进度
 您可以用两种方式 BizTalk 应用程序部署的进度：  
   
--   **BizTalk 安装日志**： 安装，请查阅的日志[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]生成。 安装日志位于 %SystemDrive%\Documents 和设置\\<*当前用户*> \Application Data\Microsoft\\[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]\Deployment。  
+-   **BizTalk 安装日志**： 安装，请查阅的日志[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]生成。 安装日志位于 %SystemDrive%\Documents 和设置\\<*当前用户*\>\Application Data\Microsoft\\[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]\Deployment。  
   
 -   **本地事件日志**： 你可以跟踪在本地事件日志中安装的进度。 因此，您可以在每个服务器基础上跟踪自定义安装操作。  
   

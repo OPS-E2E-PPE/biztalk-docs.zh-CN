@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3478997abd4e5bb15bfeb977e05ca3edc7348e0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fef0f6e951798dd2453aa387d8dcde9853968f3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a>步骤 3： 为价格和可用性项目使用 BizTalk 映射程序创建 Contoso LOB 应用程序映射
 在此步骤中，将创建两个映射，它们可以用于定义在两个贸易合作伙伴之间成功交换消息所需的转换。 在此方案中，Contoso ERP 系统已对价格与可用性请求的消息格式进行标准化。 这两个映射分别将来自贸易合作伙伴 Fabrikam 的请求和响应消息映射为内部定义的 Contoso 消息，或将内部定义的 Contoso 消息映射为发往贸易合作伙伴 Fabrikam 的请求和响应消息。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在添加引用对话框中，单击**浏览**。  
   
-3.  移动到文件夹*\<驱动器 >*: files\microsoft BizTalk\<版本 > 作为 RosettaNet\Bin，然后选择快捷键**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**程序集。  
+3.  移动到文件夹*\<驱动器\>*: files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\Bin，，然后选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**程序集。  
   
 4.  单击**添加**，然后单击**确定**。  
   
@@ -58,9 +58,9 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>在 PIP3A2RequestToContosoPriceRequest 映射中链接架构字段  
   
-1.  在目标架构窗格中，右键单击**\<架构 >**节点，，然后单击**展开树节点**。  
+1.  在目标架构窗格中，右键单击**\<架构\>**节点，，然后单击**展开树节点**。  
   
-2.  在源架构窗格中，右键单击**\<架构 >**节点，，然后单击**展开树节点**。  
+2.  在源架构窗格中，右键单击**\<架构\>**节点，，然后单击**展开树节点**。  
   
 3.  拖动**GlobalProductIdentifier**字段**ProductID**字段在目标架构窗格中。  
   
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
 4.  上**文件**菜单上，单击**保存所有**以保存所做的更改。  
   
 ## <a name="see-also"></a>另请参阅  
- [创建和为 Contoso 配置 BizTalk 端口](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)
+ [创建和配置 Contoso 的 BizTalk 端口](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)

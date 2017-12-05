@@ -18,16 +18,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec579716f9ab02389ce9f2d5ae5ec02ef0b30730
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f84cd2de6d5f79062592dbf71947587b6d7a6ff0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>自定义以使用特定 PIP 私有过程
 你可以创建特定的筛选器表达式，使响应方专用业务流程处理或不处理特定合作伙伴接口流程 (PIP) 的实例。 这样你就可以灵活地创建自定义专用流程来接收和处理某些 PIP 实例，而使用默认的专用流程来处理所有其他 PIP 实例。  
   
- 若要创建自定义专用流程以处理一个或多个特定 PIP，可为专用业务流程的接收形状创建筛选器表达式。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中提供了一个示例：PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*>: \Program Files\BizTalk\<版本 > RosettaNet\SDK\PIP3A4Process 使用业务 Rules\PIP3A4PrivateResponder 快捷键。  
+ 若要创建自定义专用流程以处理一个或多个特定 PIP，可为专用业务流程的接收形状创建筛选器表达式。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中提供了一个示例：PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*\>: \Program Files\BizTalk\<版本\>RosettaNet\SDK\PIP3A4Process 使用业务 Rules\PIP3A4PrivateResponder 快捷键。  
   
  除创建只处理特定 PIP 实例的专用流程外，还必须自定义默认的 BTARN 专用流程，使其不处理该 PIP 的实例。  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 1.  在 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 中，创建处理特定 PIP 的自定义响应方专用业务流程。 可以基于默认的 BTARN 响应方专用业务流程来创建该业务流程。  
   
     > [!NOTE]
-    >  你可以在 BTARN SDK 中查找默认的响应方专用业务流程，其名称为 PrivateResponder.odx。 它位于*\<驱动器 >*: \Program Files\BizTalk\<版本 > RosettaNet\SDK\PrivateResponder 快捷键。  
+    >  你可以在 BTARN SDK 中查找默认的响应方专用业务流程，其名称为 PrivateResponder.odx。 它位于*\<驱动器\>*: \Program Files\BizTalk\<版本\>RosettaNet\SDK\PrivateResponder 快捷键。  
   
 2.  将该自定义业务流程添加到 BizTalk 项目中。 确保该项目中具有对 Microsoft.Solutions.BTARN.GlobalSchemas.dll 文件的引用。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 14. 上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
-15. 将移动到\<*驱动器*>: \Program Files\BizTalk\<版本 > Accelerator for RosettaNet\SDK\PrivateResponder，选择**PrivateResponder.odx**，然后单击**确定**。  
+15. 将移动到\<*驱动器*\>: \Program Files\BizTalk\<版本\>Accelerator for RosettaNet\SDK\PrivateResponder，选择**PrivateResponder.odx**，然后单击**确定**。  
   
 16. 在解决方案资源管理器中，右键单击该项目，再单击“生成”。  
   

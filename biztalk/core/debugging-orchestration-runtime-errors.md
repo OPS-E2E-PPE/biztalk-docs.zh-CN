@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36e881f8449e7aaac7aeade12c36c3c6d942ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87a47c5b2ee432059365c6f9046a75bb5775fc02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>调试业务流程运行时错误
 本部分包含可帮助您解决业务流程运行时问题的一系列问题与解答。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="multipart-mime-message-part-cannot-be-found"></a>找不到多部分 MIME 消息部分  
   
 ### <a name="problem"></a>问题  
- 尝试检索 MIME 消息的索引值大于 0 的结果引发错误类似于 BizTalk Server 运行时中的一部分"找不到具有索引的多个部分消息 =\<值 >"。  
+ 尝试检索 MIME 消息的索引值大于 0 的结果引发错误类似于 BizTalk Server 运行时中的一部分"找不到具有索引的多个部分消息 =\<值\>"。  
   
 ### <a name="cause"></a>原因  
  导致此错误的最常见原因是：  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>使用动态发送端口进行发送时，收到“文件发送适配器无法打开文件进行写入”错误  
   
 ### <a name="problem"></a>问题  
- 你收到"FILE 发送适配器无法打开文件*\<文件名 >*为写入"错误在 BizTalk Server 事件日志时发送使用动态发送端口。  
+ 你收到"FILE 发送适配器无法打开文件 *\<filename\>* 为写入"错误在 BizTalk Server 事件日志时发送使用动态发送端口。  
   
  出现此问题时**BTS。OutBoundTransportLocation** orchestration 表达式中定义属性并指定文件传输，例如，以下表达式将导致在运行时此错误：  
   
@@ -87,7 +87,7 @@ Message2(BTS.OutboundTransportLocation) = "file:///c:/test/out";
 MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLocation);  
 ```  
   
- \-或者-  
+ \- 或 -  
   
 ```  
 Message2=Message1;  

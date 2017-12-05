@@ -13,11 +13,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1de0198d26f804ee8d1974d5dd542387408ea53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ac926a378224e09dce36a52b52c171fb27911b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-database-adapter"></a>排除与 Oracle 数据库适配器的操作问题
 故障排除技术解决你可能会遇到使用的操作错误[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  
@@ -103,9 +103,9 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
  示例 app.config 类似如下所示。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="NewBehavior">  
@@ -117,7 +117,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
       <endpoint   behaviorConfiguration="NewBehavior" binding="oracleDBBinding"  
        contract="IOutboundContract" name="oracle_ICalculator" />  
     </client>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -126,7 +126,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
  适配器执行针对使用 Oracle 数据库的任何操作时将报告以下错误[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  
   
--   **有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -147,7 +147,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
 ```  
 Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argument:  
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<operation_name>" Action="<action>" />  
 </BtsActionMapping>  
 ```  
@@ -221,35 +221,35 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 1.  WSDL 包含 StreamBody 节点如下所示。  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-        \<xs:annotation>  
-          \<xs:documentation>  
-            \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
-          \</xs:documentation>  
-        \</xs:annotation>  
-        \<xs:complexType>  
-          \<xs:sequence>  
-            \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
-          \</xs:sequence>  
-        \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+        <xs:annotation>  
+          <xs:documentation>  
+            <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
+          </xs:documentation>  
+        </xs:annotation>  
+        <xs:complexType>  
+          <xs:sequence>  
+            <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
+          </xs:sequence>  
+        </xs:complexType>  
+      </xs:element>  
     ```  
   
      将替换为以下前面。  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-     \<xs:annotation>  
-     \<xs:documentation>  
-      \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
-      \</xs:documentation>  
-      \</xs:annotation>  
-     \<xs:complexType>  
-     \<xs:sequence>  
-      \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
-      \</xs:sequence>  
-      \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+     <xs:annotation>  
+     <xs:documentation>  
+      <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
+      </xs:documentation>  
+      </xs:annotation>  
+     <xs:complexType>  
+     <xs:sequence>  
+      <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
+      </xs:sequence>  
+      </xs:complexType>  
+      </xs:element>  
     ```  
   
      在此步骤中，删除类型引用 ="ns3:StreamBody"原始 XSD 中的并替换类型 ="xs:base64Binary"。 此外，你可以从原始 XSD 删除 nillable ="true"值。  
@@ -257,18 +257,18 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 2.  从 WSDL 删除以下。  
   
     ```  
-    \<xs:complexType name="StreamBody">  
-        \<xs:sequence>  
-          \<xs:element minOccurs="1" maxOccurs="1" name="Stream">  
-            \<xs:simpleType>  
-              \<xs:restriction base="xs:base64Binary">  
-                \<xs:minLength value="0" />  
-              \</xs:restriction>  
-            \</xs:simpleType>  
-          \</xs:element>  
-        \</xs:sequence>  
-      \</xs:complexType>  
-      \<xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
+    <xs:complexType name="StreamBody">  
+        <xs:sequence>  
+          <xs:element minOccurs="1" maxOccurs="1" name="Stream">  
+            <xs:simpleType>  
+              <xs:restriction base="xs:base64Binary">  
+                <xs:minLength value="0" />  
+              </xs:restriction>  
+            </xs:simpleType>  
+          </xs:element>  
+        </xs:sequence>  
+      </xs:complexType>  
+      <xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
     ```  
   
     > [!NOTE]
@@ -290,7 +290,7 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 ###  <a name="BKMK_OraDBUnreasonConv"></a>不合理 conversion 请求错误时执行作为参数的存储过程带有记录类型  
  **可能的原因**  
   
- 假设 Oracle 存储过程采用一种记录类型作为参数。 假定记录类型声明为\<表名 > %rowtype，其中表具有长整型数据类型的列。 当[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]遇到的长数据类型，它设置数据类型的大小等于指定的值**LongDatatypeColumnSize**绑定属性。 但是，Oracle 数据库未定义 LONG 数据类型的大小。 因此，当适配器调用存储的过程时，它会导致不合理 conversion 请求错误。  
+ 假设 Oracle 存储过程采用一种记录类型作为参数。 假定记录类型声明为\<表名\>%rowtype，其中表具有长整型数据类型的列。 当[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]遇到的长数据类型，它设置数据类型的大小等于指定的值**LongDatatypeColumnSize**绑定属性。 但是，Oracle 数据库未定义 LONG 数据类型的大小。 因此，当适配器调用存储的过程时，它会导致不合理 conversion 请求错误。  
   
  **解决方法**  
   
@@ -303,7 +303,7 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<op_name>" Action="<action>" />  
 </BtsActionMapping>. Correct the specified Action, or refer to the documentation on the allowed formats for the Actions.  
 ```  

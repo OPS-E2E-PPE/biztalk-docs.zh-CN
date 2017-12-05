@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19a4f5b5252691ca772e234b2f9a75c4059aa128
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>数据提供程序用于与插件 DDEX SAP
 如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将安装[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]DDEX 插件。 你可以使用此插件浏览 SAP 对象使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 本部分提供有关使用 DDEX 插件的信息。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**服务器资源管理器**，右键单击**数据连接**，然后选择**添加连接**。  
   
-4.  在**更改数据源**对话框中，从**数据源**框中，选择**\<其他 >**。  
+4.  在**更改数据源**对话框中，从**数据源**框中，选择**\<其他\>**。  
   
 5.  从**数据提供程序**下拉列表中，选择**mySAP Business Suite 的.NET Framework 数据提供程序**单击**确定**。 **添加连接**对话框随即打开。  
   
@@ -113,4 +113,4 @@ ms.lasthandoff: 09/20/2017
 8.  展开**导入**节点列出函数模块的导入参数。 同样，展开**导出**和**表**节点以查看导出和表函数模块的参数的列表。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [使用 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

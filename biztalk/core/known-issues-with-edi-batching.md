@@ -12,11 +12,11 @@ caps.latest.revision: "38"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e550a80cf8a7bbd6ae5e2b214c57d15427f919f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 537a0591ba45a209fd3f22c0a993a99baac58d7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-batching"></a>EDI 批处理的已知问题
 本主题介绍了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中批处理的已知问题。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
  如果在 64 位计算机上的 WOW 下运行 BatchControlMessageRecvLoc 接收位置，则应在其他主机中运行批处理业务流程。 如果运行批处理业务流程的主机与运行接收位置的主机相同，则该批处理业务流程也将在 WOW 下运行，这样您将失去在 64 位计算机上运行所具有的优势。  
   
 ## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>意外发送端口可以提取批处理  
- 当批处理业务流程发布时将交换时，这样还有助于提升两个属性： ToBeBatched = False 和 DestinationPartyName = \< *PartyName*>。 订阅以上任意一个或两个属性的发送端口都可以提取这些批处理交换。 请确保配置发送端口的筛选器，使该发送端口仅提取应提取的批处理交换。  
+ 当批处理业务流程发布时将交换时，这样还有助于提升两个属性： ToBeBatched = False 和 DestinationPartyName = \< *PartyName*\>。 订阅以上任意一个或两个属性的发送端口都可以提取这些批处理交换。 请确保配置发送端口的筛选器，使该发送端口仅提取应提取的批处理交换。  
   
 ## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>批元素计数大于批处理所需的事务集数目时可能不会提示批处理的发布  
  如果批处理的发布条件基于每组或每个交换的事务集数目，即使批元素计数大于发布批处理所需的事务集数目，也可能不会发布此批处理。 当启用确认并将批处理筛选条件设置为向批处理添加此确认时，则可能出现此问题。 在这种情况下，组（或交换）中的批元素数目将大于每组（或交换）的事务集数目。 在上述情况中，如果每组（或每个交换）的事务集数目小于发布批处理所需的数目，则不会发布批处理；但同时，批元素数目可能大于发布批处理所需的事务集数目。  
@@ -113,7 +113,7 @@ ms.lasthandoff: 09/20/2017
   
  在以前版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时应处理一条消息，则会将 EDI 设置通过多个批处理配置。DestinationParties 属性设置为一个空格分隔的当事方 Id 的列表。 路由业务流程订阅具有 EDI.ToBeBatched = True 和 EDI.DestinationParties 属性的消息，会使用包含在 EDI.DestinationParties 属性中的参与方 ID 列表为每个 ID 创建消息，然后将消息传递到批处理业务流程。  通过使用方确定批处理因为每个方配置可能只有一个批配置，已使用 ID。  
   
- 在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，每一方可以有多个批处理配置，因此不再不足以仅显示 pary ID 用于确定要使用的批处理配置。  若要指示多个批处理配置必须处理一条消息，消息必须 EDI。BatchIDs 属性设置为一个空格分隔的批处理消息应发送到的 Id 的列表。  
+ 在 BizTalk Server 中的各方可以具有多批配置，因此不再不足以仅显示 pary ID 用于确定要使用的批处理配置。  若要指示多个批处理配置必须处理一条消息，消息必须 EDI。BatchIDs 属性设置为一个空格分隔的批处理消息应发送到的 Id 的列表。  
   
 > [!NOTE]
 >  处理标记且只有一个的邮件时方使用 EDI 的 ID。DestinationPartyId 属性升级批处理业务流程将处理该消息。 有关详细信息，请参阅[组合批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)。  
@@ -163,4 +163,4 @@ ms.lasthandoff: 09/20/2017
  [配置 EDI 确认](../core/configuring-edi-acknowledgments.md)   
  [处理传入的批次](../core/processing-incoming-batches.md)   
  [对传出的 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)   
- [配置 EDI 批处理](../core/configuring-edi-batches.md)
+ [配置 EDI 批](../core/configuring-edi-batches.md)

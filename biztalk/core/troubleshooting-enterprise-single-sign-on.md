@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 952db36f794d36bd98af6e5bc31eee78adcc8a35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 450b2df7ec043dfd4bc775cfec7acdec0fb3ca1f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a>企业单一登录故障排除
 本主题提供有关使用企业单一登录 (SSO) 时所遇到的常见问题的信息。  
@@ -32,8 +32,8 @@ ms.lasthandoff: 09/20/2017
 |SSO 管理员帐户是什么？|使用命令行 **ssomanage –displaydb**。 有关此命令的详细信息，请参阅[如何显示 SSO 数据库信息](../core/how-to-display-the-sso-database-information.md)。|  
 |是否所有项都正确启用？|使用命令行 **ssomanage –displaydb**。 有关此命令的详细信息，请参阅[如何显示 SSO 数据库信息](../core/how-to-display-the-sso-database-information.md)。|  
 |关联应用程序是否存在？|使用命令行 **ssomanage –listapps all**。 有关此命令的详细信息，请参阅[列表 Affiliate 应用程序如何](../core/how-to-list-affiliate-applications.md)。|  
-|从外观上看，特定关联应用程序是否正确？<br /><br /> 哪些帐户在使用此关联应用程序？|使用命令行**ssomanage-displayapp***\<应用程序名称 >*。 有关此命令的详细信息，请参阅[如何列出 Affiliate 应用程序属性](../core/how-to-list-the-properties-of-an-affiliate-application.md)。|  
-|此关联应用程序是否有任何映射？|使用命令行**ssomanage-listmappings***\<应用程序名称 >*。 有关此命令的详细信息，请参阅[如何列表用户映射](../core/how-to-list-user-mappings.md)。|  
+|从外观上看，特定关联应用程序是否正确？<br /><br /> 哪些帐户在使用此关联应用程序？|使用命令行**ssomanage-displayapp***\<应用程序名称\>*。 有关此命令的详细信息，请参阅[如何列出 Affiliate 应用程序属性](../core/how-to-list-the-properties-of-an-affiliate-application.md)。|  
+|此关联应用程序是否有任何映射？|使用命令行**ssomanage-listmappings***\<应用程序名称\>*。 有关此命令的详细信息，请参阅[如何列表用户映射](../core/how-to-list-user-mappings.md)。|  
 |哪些帐户是 SSO 组的成员？|验证所有 SSO 组和帐户的组成员关系。|  
 |SSO 服务器的 COM+ 应用程序是否按预期运行？|验证 SSO 服务器的 COM+ 应用程序。 **注意：**还可以检查事件日志的详细信息，如事件和警告消息。|  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>连接到客户端计算机时发生 RPC 错误  
   
 ##### <a name="problem"></a>问题  
- 当用户运行命令，如**ssomanage-displayapp***\<applicationname >*，其中计算机尝试连接到远程的 SSO 服务器以检索信息，它们接收以下错误： 错误： 0x800706BA: RPC 服务器不可用。  
+ 当用户运行命令，如**ssomanage-displayapp***\<applicationname\>*，其中计算机尝试连接到远程的 SSO 服务器以检索信息，它们收到以下错误： 错误： 0x800706BA: RPC 服务器不可用。  
   
 ##### <a name="cause"></a>原因  
  当用户指定了错误的服务器信息时，或者当 SSO 服务在远程服务器上不可用时，会发生此错误。  

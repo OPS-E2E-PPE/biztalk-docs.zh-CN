@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a88b7596772e951a835ffc13874ade7fefab5137
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d1ffc367e4b87d29e372bc434c0eda18da4363a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-the-sending-and-receiving-of-edi-acknowledgments"></a>配置 EDI 确认的发送和接收
 若要配置 EDI 确认的发送以响应接收交换，您需要执行以下操作：  
@@ -54,9 +54,9 @@ ms.lasthandoff: 09/20/2017
   
     2.  在**确认**页上，选择属性定义的发件人方需要的确认类型：  
   
-         对于 X12 确认，选择**预期的 TA1**和/或**997 预期**应根据哪些确认。 对于每个确认类型中，选择**执行批量\<ACK 类型 >**如果想确认为以单独的交换形式发送的每个实例。  
+         对于 X12 确认，选择**预期的 TA1**和/或**997 预期**应根据哪些确认。 对于每个确认类型中，选择**执行批量\<ACK 类型\>**如果想确认为以单独的交换形式发送的每个实例。  
   
-         对于 EDIFACT 确认选择**收到预期消息 (CONTRL)**和/或**确认 (CONTRL) 预期**应根据哪些确认。 对于每个确认类型中，选择**执行批量\<ACK 类型 >**如果想确认为以单独的交换形式发送的每个实例。  
+         对于 EDIFACT 确认选择**收到预期消息 (CONTRL)**和/或**确认 (CONTRL) 预期**应根据哪些确认。 对于每个确认类型中，选择**执行批量\<ACK 类型\>**如果想确认为以单独的交换形式发送的每个实例。  
   
     3.  在**本地主机设置**下页上**交换设置**部分中，清除**路由 ACK 发送管道请求-响应接收端口**返回以异步方式通过单向发送端口的确认。 保持选中此属性可通过双向接收端口同步返回确认。  
   

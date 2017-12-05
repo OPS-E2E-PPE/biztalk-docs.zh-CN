@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea8de4f60907e465f37502b5b0227e31ddcd92b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75ac63fe0fee593f927e854ce425ff7f631f9475
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a>MQSCorrelationSetOrchestration（BizTalk Server 示例）
 MQSCorrelationSetOrchestration 示例演示如何使用 MQSeries 相关标识符将发送至 MQSeries 队列的消息重新与正在运行的业务流程关联。 业务流程设置 MQSeries 相关标识符和消息使用的标识符值**MQMD_CorrelId**和**MQMD_MsgID**属性。 MQSeries 队列管理器将 MessageID 值复制到消息的 CorrelationID 属性。  
@@ -38,7 +38,7 @@ MQSCorrelationSetOrchestration 示例演示如何使用 MQSeries 相关标识符
  本示例将演示一个方案，在该方案中可以将业务流程正在处理的文档发送至 MQSeries 队列（可能用于其他处理），然后返回正在运行的业务流程。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
+ *\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -240,7 +240,7 @@ MQSCorrelationSetOrchestration 示例演示如何使用 MQSeries 相关标识符
   
 4.  指定要在项目属性对程序集签名的强名称密钥文件**签名**页上，然后生成项目。  
   
-5.  使用全局程序集缓存工具 (gacutil.exe) 编译的程序集加载到 GAC (gacutil /i \<*编译的 dll 文件的名称*>)。  
+5.  使用全局程序集缓存工具 (gacutil.exe) 编译的程序集加载到 GAC (gacutil /i \<*编译的 dll 文件的名称*\>)。  
   
 6.  对于本示例，在 BizTalk 项目中添加对 GetId 程序集的引用。  
   

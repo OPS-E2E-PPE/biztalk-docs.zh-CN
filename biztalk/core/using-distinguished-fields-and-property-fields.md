@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa0f969be7dfdd7cca991be134c9a25329f559a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18b5d5ee3b29c068b3a37d248b9fb20f07bdfbb2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-distinguished-fields-and-property-fields"></a>使用可分辨的字段和属性字段
 可分辨字段是具有特殊作用的消息数据，主要用于决策或处理业务流程中的数据。  
@@ -50,7 +50,7 @@ MyMessage(Invoice.PropertySchema.InvoiceID)
 ```  
   
 > [!NOTE]
->  当保留的关键字用作在架构中，字段的名称，并将该字段提升通过选择快速升级时，该字段的属性名称将更改为 __\<保留关键字 >。 （双下划线添加到属性名称之前。）但是，如果您在业务流程表达式中使用此属性名称，则在生成业务流程时将会收到一个编译器错误。  若要更正这一错误，需要在双下划线前手动添加 @。 例如：  
+>  当保留的关键字用作在架构中，字段的名称，并将该字段提升通过选择快速升级时，该字段的属性名称将更改为 __\<保留关键字\>。 （双下划线添加到属性名称之前。）但是，如果您在业务流程表达式中使用此属性名称，则在生成业务流程时将会收到一个编译器错误。  若要更正这一错误，需要在双下划线前手动添加 @。 例如：  
 >   
 >  `MyMessage(Invoice.PropertySchema.@__Name) = "Product Name";`  
   
@@ -67,4 +67,4 @@ MyMessage2(*)=MyMessage1(*);
  [提升属性](../core/promoting-properties.md)   
  [使用接收消息形状使用筛选器](../core/using-filters-with-the-receive-message-shape.md)   
  [在业务流程中使用消息](../core/using-messages-in-orchestrations.md)   
- [有关 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)
+ [关于 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)

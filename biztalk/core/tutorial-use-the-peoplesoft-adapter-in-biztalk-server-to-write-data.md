@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9c4c0714c28f426ccfaa2799bd16463124e6e52
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b38c1f5a0bd442404e832274d13ace2b0660c2e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>教程：使用 BizTalk 适配器，以便让 PeopleSoft Enterprise 将数据写入 PeopleSoft Enterprise
 PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系统中，与从贸易合作伙伴或内部应用程序接收到的信息。 本演练介绍了可演示此功能的 SDK 示例。  
@@ -143,7 +143,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
 1.  双击**LOCATIONService_1.xsd**在解决方案资源管理器，以在架构编辑器中打开该文件。  
   
-2.  右键单击**\<架构 >**节点在架构编辑器中，单击**属性**以显示节点的属性。  
+2.  右键单击**\<架构\>**节点在架构编辑器中，单击**属性**以显示节点的属性。  
   
 3.  选择**CreateEx**从列表中的可用节点**根引用**下拉框。 这应这样做为了在你生成的示例文档实例时它将从生成**CreateEx**节点的架构。  
   
@@ -160,7 +160,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
 8.  右击 LOCATIONService_1.xsd 在解决方案资源管理器中的，单击**生成实例**在指定的位置生成文档实例。  
   
-9. 右键单击**\<架构 >**节点在架构编辑器中，单击**属性**以显示节点的属性。  
+9. 右键单击**\<架构\>**节点在架构编辑器中，单击**属性**以显示节点的属性。  
   
 10. 选择 (**默认)**从列表中的可用节点**根引用**下拉框。  
   
@@ -249,4 +249,4 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
 6.  适用于 PeopleSoft Enterprise 的 izTalk 适配器调用 CreateEx 方法，以使用 XML 文件中的数据创建记录。  
   
 ## <a name="see-also"></a>另请参阅  
- [教程： 使用 BizTalk 适配器 PeopleSoft 企业](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

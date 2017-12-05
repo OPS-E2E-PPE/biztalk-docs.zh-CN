@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 101124b5992ba2fb6948ca2722700bb01bdc2a95
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 29cf6bba03e6a43bb3fdedf0742741e48ac22dd6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>执行 PeopleSoft 企业示例 Get
 使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -98,11 +98,11 @@ ms.lasthandoff: 10/17/2017
   
          此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 Java SDK 安装。  
   
-    3.  **密码**:\<输入 PeopleSoft 密码 >  
+    3.  **密码**:\<输入 PeopleSoft 密码\>  
   
     4.  **PeopleSoft 8.x JAR 文件**： **C:\PSJARS\VER841\PSJOA.JAR**  
   
-    5.  **用户名：** \<输入 PeopleSoft UserID >  
+    5.  **用户名：** \<输入 PeopleSoft 用户 Id\>  
   
      ![](../core/media/7bf30707-c7c6-409f-af18-9c9dfeb0de58.gif "7bf30707-c7c6-409f-af18-9c9dfeb0de58")  
   
@@ -288,7 +288,7 @@ ms.lasthandoff: 10/17/2017
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  单击“确定” **。** 在属性窗口中，选择**\<架构 >**并设置**根引用： 获取**。  
+3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>**并设置**根引用： 获取**。  
   
 4.  右键单击“LOCATIONService_LOCATION_x5d.xsd”  ，然后单击“生成实例” 。 这将生成 **SampleQuery.xml** 文件。 此文件将放入接收位置，作为适配器启动业务流程进程的输入。  
   
@@ -304,7 +304,7 @@ ms.lasthandoff: 10/17/2017
   
 3.  选择“Orchestration_1”  ，然后单击“主机”  下拉框。 选择“BizTalkServerApplication” 。  
   
-4.  下**接收端口**，单击**\<无 >**。 在下拉列表中，选择“新建接收端口” 。  
+4.  下**接收端口**，单击**\<无\>**。 在下拉列表中，选择“新建接收端口” 。  
   
 5.  有关**名称**，类型`FileInPort`，然后单击**确定**。 将出现一个消息框，表明你需要指定接收位置。 单击“确定”，然后单击“新建”。    
   
@@ -326,7 +326,7 @@ ms.lasthandoff: 10/17/2017
   
      ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8.  单击**\<无 >**为**PeopleSoft_Port**下拉列表中。  
+8.  单击**\<无\>**为**PeopleSoft_Port**下拉列表中。  
   
 9. 选择“新建发送端口”  ，然后选择或键入以下属性值。  
   
@@ -348,15 +348,15 @@ ms.lasthandoff: 10/17/2017
   
          此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 Java SDK 安装。  
   
-    3.  **密码**:\<输入 PeopleSoft 密码 >  
+    3.  **密码**:\<输入 PeopleSoft 密码\>  
   
     4.  **PeopleSoft 8.x JAR 文件**： **C:\PSJARS\VER841\PSJOA.JAR**  
   
-     **用户名：** \<输入 PeopleSoft UserID >  
+     **用户名：** \<输入 PeopleSoft 用户 Id\>  
   
 11. 单击“确定”  两次以关闭对话框。  
   
-12. 在配置 Applicationwindow 中，单击**\<无 >**为**FileOut**下拉列表中。  
+12. 在配置 Applicationwindow 中，单击**\<无\>**为**FileOut**下拉列表中。  
   
 13. 选择“新建发送端口”  ，然后键入或选择以下属性值：  
   
@@ -397,7 +397,7 @@ ms.lasthandoff: 10/17/2017
   
      ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")  
   
-     这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。 通过比较的值在中获取实验室 1 专门**地址 1**和**Address2**对中所示此处线**\<位置： 地址 1 >**和**\<位置： ADDRESS2 >**字段，你可以验证**获取**方法正常运行。  
+     这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。 通过比较的值在中获取实验室 1 专门**地址 1**和**Address2**对中所示此处线**\<位置： 地址 1\>**和**\<位置： ADDRESS2\>** 字段，你可以验证**获取**方法正常运行。  
   
 ## <a name="summary"></a>摘要  
  在本实验室中，您首先验证了必备组件的设置对于访问 PeopleSoft 系统是否正确。 然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。 对 BizTalk 业务流程进行了配置，以使用 PeopleSoft 适配器获取来自 PeopleSoft 系统的数据。 为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。 将这些端口绑定到 PeopleSoft 适配器，并将消息分配给相应的端口。  

@@ -12,14 +12,14 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b5edfa2eccfeac9a4d4192b2189877081ddf25a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e8351420ed8d7815944c3ae619420137a8a61df
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-support-in-biztalk-server"></a>BizTalk Server 中的 EDI 支持
-本主题从整体上简要介绍了 EDI 以及 [!INCLUDE[prague](../includes/prague-md.md)] 如何支持 EDI。  
+本主题提供 EDI 和 BizTalk Server 如何支持 EDI 常规简要概述。  
   
 ## <a name="introduction-to-edi"></a>EDI 介绍  
  电子数据交换 (EDI) 是商业贸易伙伴以电子方式交换数据所最常用的一种手段。 EDI 很大程度上是面向消息的。 文档被实现为可包含批事务集的平面文件。 批交换可以包含多个组，每个组又可以包含多个事务集或消息。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 >  EDI 消息的传输方式多种多样。 EDI 标准没有对消息传输加以规定，因此可以通过各种不同的手段发送 EDI 消息。  
   
 ## <a name="how-edi-is-implemented-in-biztalk-server"></a>BizTalk Server 中 EDI 的实现方式  
- [!INCLUDE[prague](../includes/prague-md.md)] 包括了可提供 EDI 支持的本机功能。 EDI 内置于产品中。它不是外接程序，例如适配器或快捷键。  
+ BizTalk Server 包括提供对 EDI 的支持的本机功能。 EDI 内置于产品中。它不是外接程序，例如适配器或快捷键。  
   
  **交换处理**  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可提供特定于 EDI 的状态报告。 这些状态报告提供了 EDI 文档交换事务的全面状态，包括与交换有关的确认状态。  
   
 ## <a name="edi-components-in-biztalk-server"></a>BizTalk Server 中的 EDI 组件  
- 用于 EDI 处理的 Microsoft [!INCLUDE[prague](../includes/prague-md.md)] 组件包括如下：  
+ Microsoft BizTalk Server 用于 EDI 处理的组件包括：  
   
 -   BizTalk EDI 应用程序，包含处理 EDI 文档所需的项目（包括管道、业务流程和架构）。  
   
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
 -   架构存储库，包括 X12、EDIFACT、HIPAA X12N 4010A XSD、EANCOM 以及控制架构。 有关详细信息，请参阅[EDI 文档架构支持](../core/edi-document-schema-support.md)。  
   
--   通过迁移工具（参与方迁移工具），可以将 EDI 参与方数据从 BizTalk Server 2006 R2 或 BizTalk Server 2009 迁移到 [!INCLUDE[prague](../includes/prague-md.md)]。 有关详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
+-   迁移工具 （方迁移工具） 允许你将从 BizTalk Server 2006 R2 或 BizTalk Server 2009 EDI 方数据迁移到 BizTalk Server。 有关详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
   
 ## <a name="see-also"></a>另请参阅  
  [BizTalk Server 中的 EDI 处理](../core/edi-processing-in-biztalk-server.md)   

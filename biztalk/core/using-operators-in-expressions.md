@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 155aad11ecddd021b8e16892b5a5294087fedd4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5aec9ed6ebecb0b151dbfe9d5c09707b954fdf45
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-operators-in-expressions"></a>在表达式中使用运算符
 以下 XLANG/s 运算符可用于业务流程表达式。 这些运算符与 C# 中相应运算符的功能基本一致。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |unchecked()|忽略算术溢出|未选中状态 (x = y * 1000年)|  
 |新|创建类的实例|myObject = 新 MyClass;|  
 |typeof|类型检索|myMapType = typeof(myMap)|  
-|succeeded()|测试事务作用域或业务流程是否已经成功完成|成功 (\<子事务的当前作用域或服务的事务 ID >)|  
+|succeeded()|测试事务作用域或业务流程是否已经成功完成|成功 (\<子事务的当前作用域或服务的事务 ID\>)|  
 |存在|测试是否存在某个消息上下文属性|BTS。RetryCount 存在 Message_In|  
 |+|一元加|+(int x)|  
 |-|一元减|-(int x)|  
@@ -42,11 +42,11 @@ ms.lasthandoff: 09/20/2017
 |/|除以|x / y|  
 |+|加|x + y|  
 |-|减号|x-y|  
-|<<|左移|x <\< 2|  
+|<<|左移|x << 2|  
 |>>|右移|x >> 2|  
-|<|小于|如果 (MyMsg.numOrders \< 10)...|  
+|<|小于|如果 (MyMsg.numOrders < 10)...|  
 |>|大于|如果 (MyMsg.numOrders > 10)...|  
-|<=|小于或等于|如果 (MyMsg.numOrders \<= 10)...|  
+|<=|小于或等于|如果 (MyMsg.numOrders < = 10)...|  
 |>=|大于或等于|如果 (MyMsg.numOrders > = 10)...|  
 |==|等于|如果 (MyMsg.numOrders = = 10)...|  
 |!=|不等于|如果 (MyMsg.numOrders ！ = 10)...|  
@@ -54,11 +54,11 @@ ms.lasthandoff: 09/20/2017
 |^|异或|If (myByte ^ 1)...|  
 |&#124;|或|如果 (myByte &#124; 1)...|  
 |&&|条件与|如果 (MyMsg.numOrders > 10) （& a) （& a) (MyMsg.numOrders < 100)|  
-|&#124;&#124;|条件或|如果 (MyMsg.numOrders \< 10) &#124; &#124;(MyMsg.numOrders > 100)|  
+|&#124;&#124;|条件或|如果 (MyMsg.numOrders < 10) &#124; &#124;(MyMsg.numOrders > 100)|  
 |//|注释|//This is the comment|  
   
 > [!NOTE]
 >  常规表达式和一起使用的筛选器表达式之间有所不同，规则**接收**形状。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用接收消息形状使用筛选器](../core/using-filters-with-the-receive-message-shape.md)
+ [使用带接收消息形状的筛选器](../core/using-filters-with-the-receive-message-shape.md)

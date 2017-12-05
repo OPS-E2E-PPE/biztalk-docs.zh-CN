@@ -19,11 +19,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c027d5ab993c2110dbcbd6d992859d0d1d4ac7d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe578337d7137f3c9973ec4d57f195ead94ad908
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-adapter-configuration-properties"></a>文件适配器配置属性
 下表列出可以为文件适配器设置的配置属性接收位置：  
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 |属性名称|类型|Description|限制|注释|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|用户名|VT_BSTR|如果文件适配器的主机实例不具有所需的权限到网络共享，请指定替代凭据。|无|指定的用户名格式\<域 > \username。|  
+|用户名|VT_BSTR|如果文件适配器的主机实例不具有所需的权限到网络共享，请指定替代凭据。|无|指定的用户名格式\<域\>\username。|  
 |UseTempFileOnWrite|VT_BOOL|指定要写入到目标文件夹时使用的临时文件。 完成文件后将其写入已重命名为 Filename 属性指定的值。|如果 CopyMode 属性设置为值为 2 （新建），则仅可以为-1 (true) 设置此属性。<br /><br /> 有效值为<br /><br /> --1 (true)<br />-0 (false)|默认值为 0 (false)。|  
 |CopyMode|VT_UI4|定义要在一条消息写入到文件时使用的复制模式|有效值为<br /><br /> -0 （追加）<br />-1 （覆盖）<br />-2 （新建）|默认值为 2 （新建）。|  
 |FileName|VT_BSTR|指定文件发送处理程序将消息写入其中的文件的名称。|此属性限制信息，请参阅[对文件掩码和文件名称属性的限制](http://msdn.microsoft.com/library/d8f5afd0-a61f-4c9b-8a57-4792e3054769)。|默认值为 %messageid%.xml。|  

@@ -13,18 +13,18 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5181c501543c1dc1518665a55f4429ae12b4cf06
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 5780e90260f591696e494411deff97a4cdc246f3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="samples-in-the-sdk"></a>SDK 中的示例
 
 ## <a name="folder-paths"></a>文件夹路径
 本部分介绍在 Microsoft 所含的 30 多个示例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]软件开发工具包 (SDK)。 本部分提供了有关每个示例的详细信息，其中包括有关如何生成和运行示例的说明以及可以期望出现的结果。  
   
- 示例文档使用路径缩写\<*示例路径*> 来表示你的安装中的示例的路径。 默认路径会因安装时的相应设置而异。 下表提供了常见安装方案的默认路径。  
+ 示例文档使用路径缩写\<*示例路径*\>来表示你的安装中的示例的路径。 默认路径会因安装时的相应设置而异。 下表提供了常见安装方案的默认路径。  
   
 |Description|路径|  
 |-----------------|----------|  

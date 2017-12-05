@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ede5ad9dd3affba3ce132ab4c4415e8dba4f3cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ef1c8d5860b6e9bd3683551096c947de8c7a42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operating-system-optimizations"></a>操作系统优化
 本主题提供有关优化性能的建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在生产中使用计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 这些优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。  
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
  NTFS 针对 FAT 和 FAT32 文件系统中有很大的性能优点，并应在 Windows 服务器上以独占方式使用。 此外，NTFS 通过 FAT 和 FAT32 提供许多安全性、 可伸缩性、 稳定性和可恢复性的好处。  
   
- 在以前版本的 Windows，FAT 和 FAT32 上通常实现较小的卷 (说\<500 MB)，因为其正通常在这种情况下更快。 相对成本较低今天的磁盘存储和操作系统和应用程序将驱动器容量推送到最多，它不太小的卷，此类将使用。 FAT32 伸缩性比 FAT 更好，较大卷上，但仍不适当的文件系统的 Windows 服务器。  
+ 在以前版本的 Windows，FAT 和 FAT32 上通常实现较小的卷 (例如 < 500 MB)，因为其正通常在这种情况下更快。 相对成本较低今天的磁盘存储和操作系统和应用程序将驱动器容量推送到最多，它不太小的卷，此类将使用。 FAT32 伸缩性比 FAT 更好，较大卷上，但仍不适当的文件系统的 Windows 服务器。  
   
  FAT 和 FAT32 通常实现了在过去如它们已被视为更轻松地可恢复和可使用与卷问题的情况下的本机 DOS 工具来管理。 现在，使用各种 NTFS 可恢复性工具生成同时本机到操作系统，但可用作第三方实用程序可用，应不再有未使用 NTFS 文件系统的有效参数。  
   

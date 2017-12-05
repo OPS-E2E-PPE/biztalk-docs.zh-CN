@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14ff75bff7d5b22efdafb7aa3327683fbe805514
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b882c44e69489114a2dd8084df71d6414df0cb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="common-errors"></a>常见错误
 本主题列出来在使用 BizTalk 映射器创建映射时可能遇到的常见错误消息。  
@@ -99,9 +99,9 @@ ms.lasthandoff: 09/20/2017
 ### <a name="problem"></a>问题  
  生成 BizTalk 项目时，BizTalk 映射器会生成一条类似以下任一内容的错误：  
   
--   "文件\<文件名 > 有重复的命名空间和类型名属性的值。"  
+-   "文件\<filename\>有重复的命名空间和类型名属性的值。"  
   
--   "命名空间\<名称 > 已经包含 _ 的定义。"  
+-   "命名空间\<名称\>已经包含 _ 的定义。"  
   
 ### <a name="cause"></a>原因  
  在 BizTalk 项目中，检查是否存在以下情况：  

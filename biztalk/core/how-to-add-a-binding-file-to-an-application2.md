@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4e569352c5813272b483cc69b8c93a7f1b84d40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a1c7f0a73f811a6b339428e62a93916d9301edf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-binding-file-to-an-application"></a>如何向应用程序添加绑定文件
 本主题描述如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加绑定文件。 你可能想要执行此操作可使应用程序集的部署中所述更容易，[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”，然后展开包含要添加绑定文件的应用程序的 BizTalk 组。  
+2.  在控制台树中，展开 BizTalk Server 管理和 BizTalk 组包含你想要将绑定文件添加该应用的程序。  
   
 3.  展开“应用程序”，右键单击您要向其添加绑定文件的应用程序。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/20/2017
     |**/ 类型**|**System.BizTalk:BizTalkBinding** （此值不区分大小写。）|  
     |**/ 覆盖**|更新现有绑定文件的选项。 如果没有指定，且有约束力的文件中的应用程序与正在添加的文件具有相同的文件名称已存在，则 AddResource 操作将失败。|  
     |**/ 源**|绑定文件的完整路径，包含文件名。 如果路径包含空格，必须将它括在双引号 （"）。|  
-    |**/Property:TargetEnvironment =**|指定目标部署环境的字符串。 您可以使用任何字符串，如 Production。 示例： **/Property:TargetEnvironment ="Production"**<br /><br /> 如果未指定，值为\<默认 > 自动应用。 该值区分大小写。 如果该值包含空格，则必须将其括在双引号 (") 中。 环境值的最大长度为 128 个字符。|  
+    |**/Property:TargetEnvironment =**|指定目标部署环境的字符串。 您可以使用任何字符串，如 Production。 示例： **/Property:TargetEnvironment ="Production"**<br /><br /> 如果未指定，值为\<默认\>自动应用。 该值区分大小写。 如果该值包含空格，则必须将其括在双引号 (") 中。 环境值的最大长度为 128 个字符。|  
     |**/ 服务器**|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
     |**/ 数据库**|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
   

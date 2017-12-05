@@ -19,11 +19,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 359bbc9d25465cf5c293d24a12ffeb698b11ab02
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5d04c435208e316c343ac7b307943e0f91b8af7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="understand-biztalk-adapter-for-mysap-business-suite"></a>为 mySAP Business Suite 了解 BizTalk 适配器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **跨 Lob 的统一体验**。 适配器上使用的是 WCF 标准化和[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]，并因此提供获得对任何 LOB 系统的访问的统一体验。  
   
- 如前文所述，适配器均构建在之上[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]为生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器提供了常见的基础。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开集成适配器作为 Windows Communication Foundation (WCF) 通道结合适配器策略与 Microsoft 服务策略。 有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。 文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<安装驱动器 >: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。  
+ 如前文所述，适配器均构建在之上[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]为生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器提供了常见的基础。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开集成适配器作为 Windows Communication Foundation (WCF) 通道结合适配器策略与 Microsoft 服务策略。 有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。 文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<安装驱动器\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。  
   
  若要对某个 SAP 系统执行操作，适配器客户端必须有权相关远程函数调用 (文档 Rfc)、 业务应用程序编程接口 (BAPIs) 和 Idoc （或中间的文档）。 SAP / 3 系统公开的业务集成 Rfc、 BAPIs 和 Idoc。 Rfc 是实现特定的业务逻辑的远程函数模块。 从 BizTalk Server 之类的外部应用程序或.NET 应用程序可以调用此逻辑。 BAPIs 都是与通过标准 RFC 接口反过来公开的 SAP 业务对象的方法接口。 Idoc 是一种机制，抽象 SAP 和非 SAP 系统之间的通信的电子数据交换 (EDI) 通信层。 与[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]，你可以访问 Rfc BAPIs，以及 Idoc 公开的 SAP 系统。  
   
@@ -48,9 +48,9 @@ ms.lasthandoff: 09/20/2017
   
 -   [SAP 适配器中的主要功能](../../adapters-and-accelerators/adapter-sap/key-features-in-the-sap-adapter.md)  
   
--   [为 mySAP Business Suite 的 BizTalk Adapter 限制](../../adapters-and-accelerators/adapter-sap/limitations-of-biztalk-adapter-for-mysap-business-suite.md)  
+-   [用于 mySAP Business Suite 的 BizTalk 适配器限制](../../adapters-and-accelerators/adapter-sap/limitations-of-biztalk-adapter-for-mysap-business-suite.md)  
   
--   [有关.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)  
+-   [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)  
   
 ## <a name="see-also"></a>另请参阅  
 [要开始使用用于 mySAP Business Suite 的 BizTalk Adapter](../../adapters-and-accelerators/adapter-sap/get-started-with-the-biztalk-adapter-for-mysap-business-suite.md)

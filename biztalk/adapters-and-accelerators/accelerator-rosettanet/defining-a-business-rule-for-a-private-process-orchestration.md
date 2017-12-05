@@ -41,11 +41,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c668b3123483de1d53afa8ca74cf9d7d2376ecea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8dd0ebb22bcf6253604e4e8bf7fd858deb776b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a>为私有进程业务流程中定义的业务规则
 你可以定义确认专用流程中使用的业务规则。 这使你可以动态修改业务规则，而无须停止专用业务流程。 此过程使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 业务规则引擎， 它包括以下步骤：  
@@ -56,11 +56,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  从专用业务流程中调用该业务规则。 这涉及到添加**调用规则**形状上的与业务流程。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包括一个示例，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]业务策略、 samplebtarnpolicy.xml，在\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\ 快捷键SDK\PipAutomation\3A4。 有关详细信息，请参阅[示例 BTARN 业务策略](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包括一个示例，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]业务策略、 samplebtarnpolicy.xml，在\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\PipAutomation\3A4 快捷键。 有关详细信息，请参阅[示例 BTARN 业务策略](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)。  
   
  PIP3A4PrivateResponder.odx 业务流程是一个示例专用业务流程，该业务流程演示如何实现合并了业务规则的特定于合作伙伴接口流程 (PIP) 的响应方专用流程。 有关此示例的详细信息，请参阅[3A4 私有响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
   
- 有关词汇和策略的详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 中的“使用业务规则进行开发”主题。  
+ 有关的词汇和策略的详细信息，请参阅 BizTalk Server 中的"开发与业务规则"主题。  
   
 ### <a name="to-add-a-new-vocabulary"></a>添加新词汇  
   
@@ -170,11 +170,11 @@ ms.lasthandoff: 09/20/2017
 11. 在业务流程设计窗口中，输入所需的业务策略，包括添加与关联的处理的所有其他形状**决策**下调整**调用规则**形状。  
   
     > [!NOTE]
-    >  有关如何使用的示例**调用规则**形状中业务流程，请参阅 BTARN SDK 中包含 PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\SDK\PipAutomation\3A4\PR 快捷键。 有关详细信息，请参阅[3A4 私有响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
+    >  有关如何使用的示例**调用规则**形状中业务流程，请参阅 BTARN SDK 中包含 PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\PipAutomation\3A4\PR 快捷键。 有关详细信息，请参阅[3A4 私有响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
   
 12. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>另请参阅  
  [编程指南](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)   
  [示例 BTARN 业务策略](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)   
- [使用业务规则 3A4 私有响应方业务流程](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)
+ [使用业务规则的 3A4 专用响应方业务流程](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)

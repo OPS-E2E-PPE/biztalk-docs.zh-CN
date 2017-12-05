@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: befed0c7e7f5754cdf901e91698ed7269621d4b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c87ba83961b9daac07028a994d7c01add0c11a73
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-custom-header-schemas-for-dynamic-message-type-discovery"></a>为动态的消息类型发现创建自定义标头架构
 在大多数情况下，应为 SWIFT 反汇编程序 SWIFT 标头架构配置属性来指定默认 SWIFT 标头架构 (Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.HeaderSchema)。 SWIFT 反汇编程序使用默认 SWIFT 标头架构来分析消息标头符合 SWIFT 标准规范，并具有所需的提升到的属性促进动态架构解析 （和"双 type"的子类型解析SWIFT 消息，如 MT574_IRSLST 和 MT574_W8BENO）。 有关默认 SWIFT 标头架构并了解如何 SWIFT 反汇编程序执行架构解析的详细信息，请参阅[动态消息类型发现和架构解决](../../adapters-and-accelerators/accelerator-swift/dynamic-message-type-discovery-and-schema-resolution.md)。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  设置为自定义标头架构 SWIFT 反汇编程序 （在你接收的管道项目） 的 SWIFT 标头架构配置属性。  
   
- 有关这些及其他提升的属性的详细信息，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。 有关使用 BizTalk 编辑器来创建和编辑架构、 升级属性使用属性架构，并生成和部署架构项目的详细信息，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关这些及其他提升的属性的详细信息，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。 有关使用 BizTalk 编辑器来创建和编辑架构、 升级属性使用属性架构，并生成和部署架构项目的详细信息，请参阅 BizTalk Server 帮助。  
   
 ## <a name="see-also"></a>另请参阅  
  [使用 SWIFT 反汇编程序和汇编程序](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)

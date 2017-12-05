@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d4777545d7522a1f8ca61e9209669b489ebcb30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 622844e282b9b0206f92979827406a324cd2f86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 以下建议可用于增加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能。 本主题中列出的优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]  
 >  尽管为创建额外的主机实例带来的好处，还有潜在缺点如果创建过多的主机实例。 每个主机实例是一个 Windows 服务 (BTSNTSvc.exe)，它生成额外的负载，针对 MessageBox 数据库，并会占用计算机资源 （如 CPU、 内存、 线程）。  
   
- 有关修改 BizTalk Server 主机属性的详细信息，请参阅"如何为修改主机属性"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在帮助[http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588)。  
+ 有关修改 BizTalk Server 主机属性的详细信息，请参阅"如何为修改主机属性"中的 BizTalk Server 帮助在[http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588)。  
   
 ## <a name="configure-a-dedicated-tracking-host"></a>配置专用的跟踪主机  
  BizTalk Server 进行了优化吞吐量，因此主要业务流程和消息传送引擎不实际移动消息直接到 BizTalk 跟踪或 BAM 数据库，因为这将会从其主作业的执行业务流程这些引擎将转换。 相反，BizTalk Server 使 MessageBox 数据库中的消息，并将其标记为需要迁移到 BizTalk 跟踪数据库。 后台进程 （跟踪主机），然后移动消息到 BizTalk 跟踪和 BAM 数据库。 跟踪是资源密集型操作，因为单独的主机应创建专用于跟踪，从而将跟踪已与消息处理专用的主机上的影响降至最低。  
@@ -48,13 +48,13 @@ ms.lasthandoff: 09/20/2017
   
 -   因为不移动数据时，它不能从 Messagebox 数据库中删除。  
   
--   当停止跟踪数据解码服务时，跟踪拦截器仍将激发并将跟踪数据写入到 Messagebox 数据库。 如果不移动数据时，这将导致 Messagebox 数据库变得臃肿，这将影响随时间推移的性能。 即使自定义属性不会跟踪或 BAM 配置文件未设置，默认情况下的某些数据跟踪 （如管道接收 / 发送事件和业务流程事件）。 如果您不想要运行的跟踪数据解码的服务，请关闭所有跟踪，以便不拦截器将数据保存到数据库。 若要禁用全局跟踪，请参阅"如何启用关闭全局跟踪"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在帮助[http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589)。 使用 BizTalk Server 管理控制台有选择性地禁用跟踪事件。  
+-   当停止跟踪数据解码服务时，跟踪拦截器仍将激发并将跟踪数据写入到 Messagebox 数据库。 如果不移动数据时，这将导致 Messagebox 数据库变得臃肿，这将影响随时间推移的性能。 即使自定义属性不会跟踪或 BAM 配置文件未设置，默认情况下的某些数据跟踪 （如管道接收 / 发送事件和业务流程事件）。 如果您不想要运行的跟踪数据解码的服务，请关闭所有跟踪，以便不拦截器将数据保存到数据库。 若要禁用全局跟踪，请参阅"如何启用关闭全局跟踪"BizTalk Server 中在帮助[http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589)。 使用 BizTalk Server 管理控制台有选择性地禁用跟踪事件。  
   
  跟踪主机应运行 BizTalk Server （适用于在其中一个发生故障的情况下的冗余） 的在至少两台计算机上运行。 为了获得最佳性能，应具有至少一个跟踪每个 Messagebox 数据库的主机实例。 跟踪主机实例的实际数应 （N + 1），其中 N = Messagebox 数据库的数目。 "+ 1"是以实现冗余，一台计算机承载跟踪失败的情况下。  
   
  跟踪主机实例移动特定的 Messagebox 数据库的跟踪数据，但将永远不会有多个跟踪主机实例特定的 Messagebox 数据库的数据移动。 例如，如果你有三个 Messagebox 数据库，并只有两个跟踪主机实例，然后其中一个主机实例需要 Messagebox 数据库中的两个移动数据。 添加第三个跟踪主机实例将分发跟踪主机到另一台计算机运行 BizTalk Server 的工作。 在此方案中，程序将添加第四个跟踪主机实例将不会将任何详细的跟踪主机的分发工作，但将提供一个额外跟踪容错能力的主机实例。  
   
- 有关 BAM 事件总线服务的详细信息，请参阅中的以下主题[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助：  
+ 有关 BAM 事件总线服务的详细信息，请参阅 BizTalk Server 帮助中的下列主题：  
   
 -   在的"管理 BAM 事件总线服务" [http://go.microsoft.com/fwlink/?LinkId=101590](http://go.microsoft.com/fwlink/?LinkId=101590)。  
   
@@ -187,12 +187,12 @@ ms.lasthandoff: 09/20/2017
 6.  重新启动 BizTalk 主机实例。  
   
 ## <a name="disable-tracking-for-orchestrations-send-ports-receive-ports-and-pipelines-when-tracking-is-not-required"></a>禁用业务流程的跟踪、 发送端口时，将收到端口和管道跟踪不是必需的  
- 跟踪可能会产生开销在 BizTalk Server 中的性能，因为数据具有要写入到 MessageBox 数据库，然后以异步方式移动到 BizTalk 跟踪数据库。 如果跟踪不是一项业务要求，然后禁用跟踪，以降低开销和提高性能。 有关配置跟踪的详细信息，请参阅"配置跟踪使用的 BizTalk Server 管理控制台"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在帮助[http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742)。  
+ 跟踪可能会产生开销在 BizTalk Server 中的性能，因为数据具有要写入到 MessageBox 数据库，然后以异步方式移动到 BizTalk 跟踪数据库。 如果跟踪不是一项业务要求，然后禁用跟踪，以降低开销和提高性能。 有关配置跟踪的详细信息，请参阅"配置跟踪使用的 BizTalk Server 管理控制台"BizTalk Server 中在帮助[http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742)。  
   
 ## <a name="decrease-the-purging-period-for-the-dta-purge-and-archive-job-from-7-days-to-2-days-in-high-throughput-scenarios"></a>清除周期越短 DTA 清除和从 7 天到高吞吐量方案中的 2 天的存档作业  
  默认情况下，跟踪 BizTalk Server 中的数据的清除间隔设置为 7 天。 在高吞吐量方案中，这可能导致在跟踪数据库中，最终影响 MessageBox 和反过来产生负面影响消息处理吞吐量的性能数据上的过多生成。  
   
- 在高吞吐量的情况下，减少硬件和软件为 2 天清除从默认值 7 天的间隔。 有关配置清除间隔的详细信息，请参阅"如何为配置 DTA 清除和存档作业"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在帮助[http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908)。  
+ 在高吞吐量的情况下，减少硬件和软件为 2 天清除从默认值 7 天的间隔。 有关配置清除间隔的详细信息，请参阅"如何为配置 DTA 清除和存档作业"BizTalk Server 中在帮助[http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908)。  
   
 ## <a name="install-the-latest-service-packs"></a>安装最新的 service pack  
  应安装 BizTalk Server 和.NET Framework 的最新服务包，因为这些文件组包含的修补程序可以更正你可能会遇到性能问题。  

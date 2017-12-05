@@ -20,18 +20,18 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72f9769a571eb9b04cee21e42f5e75afbbadfafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5fac30a9b884bc769752623003d16e7089b140d4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="migrating-functoids"></a>迁移 Functoid
-将映射从以前版本的 BizTalk Server 迁移到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 时，映射中包含的所有 functoid 也会随同迁移。 如果不包括迁移 functoid**脚本**functoid，没有其他迁移所需的任务。 但是如果你的代码图包括**脚本**functoid 或者自定义 functoid，你可能必须执行其他步骤。  
+当你从以前版本的 BizTalk Server 中迁移地图给 BizTalk Server 时，包括在映射任何 functoid 也会被迁移。 如果不包括迁移 functoid**脚本**functoid，没有其他迁移所需的任务。 但是如果你的代码图包括**脚本**functoid 或者自定义 functoid，你可能必须执行其他步骤。  
   
  在以前版本的 BizTalk Server 中，所有自定义脚本附带**脚本**functoid 已以内联方式编写。 也就是说，在创建该 functoid 后，该 functoid 在运行时调用的所有脚本都与该 functoid 一起存储。 如果你想要使用不同 functoid 的同一个脚本，你可以复制并粘贴它从一个**脚本**functoid 到另一个字符串，或者让你重写从零开始的脚本。  
   
- 在迁移映射时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将复制随所包含 functoid 一起提供的现有内联脚本。 但是，并非所有脚本可能正常工作。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]使用 Visual Basic.NET 和 JScript.NET 而非 VBScript 和 JScript 以前版本中使用。 这些语言的 .NET 版本在语法上有一些更改。  
+ 在迁移映射时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将复制随所包含 functoid 一起提供的现有内联脚本。 但是，并非所有脚本可能正常工作。 BizTalk Server 使用 Visual Basic.NET 和 JScript.NET，而不是 VBScript 和 JScript 以前版本中使用。 这些语言的 .NET 版本在语法上有一些更改。  
   
 > [!NOTE]
 >  请务必测试你**脚本**functoid 迁移后的。  
@@ -61,4 +61,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [编辑 Functoid 属性和输入的参数](../core/editing-functoid-properties-and-input-parameters.md)   
- [脚本 Functoid](../core/scripting-functoid.md)
+ [“脚本编写”Functoid](../core/scripting-functoid.md)

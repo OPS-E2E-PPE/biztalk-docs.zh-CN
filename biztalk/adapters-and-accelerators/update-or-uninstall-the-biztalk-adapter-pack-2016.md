@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c30fa3b107113991a8b4893fa2626a53d67159
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb0dd0b9d778f878df9a06efdfc0f41754403690
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>更新或卸载 BizTalk 适配器包 2016
 如何更改或卸载[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="uninstall-or-remove-the-biztalk-adapter-pack"></a>卸载或删除 BizTalk 适配器包  
   
 > [!IMPORTANT]
->  如果你在要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，你必须手动卸载之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装副本`SapAdapter-DbScript-Uninstall.sql`文件通常在*\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* 。 运行此文件，以删除你创建的表。  
+>  如果你在要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，你必须手动卸载之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装副本`SapAdapter-DbScript-Uninstall.sql`文件通常在*\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* 。 运行此文件，以删除你创建的表。  
   
 完成以下步骤以删除[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]从您的计算机。 请确保你具有[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]安装之前您运行安装向导。  
   
@@ -137,7 +137,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="remove-the-bindings"></a>删除绑定  
  完成这些步骤*仅*如果安装向导无法从 machine.config 文件中删除适配器绑定或.NET Framework 数据提供程序注册。  
   
-1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下*\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
+1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下*\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
   
 2.  打开使用文本编辑器的文件。  
   

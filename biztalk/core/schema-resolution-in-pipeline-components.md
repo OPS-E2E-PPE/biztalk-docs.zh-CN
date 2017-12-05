@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec002d19064032dcc663cf4da06b916eeda64d23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 897c25ecb64a3038a6992b9c4caf927ba3e2d805
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-resolution-in-pipeline-components"></a>管道组件中的架构解析
 管道拆装器和组装器组件使用 XSD 架构来处理消息。 该架构包含升级属性、可分辨字段、平面文件消息批注和 XML 信封批注的列表等信息。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 </ns0:MyDocument>  
 ```  
   
- 如果架构不具有为其定义的命名空间，该消息类型是"\<**rootNode**>"。 例如，如果前面的示例 XML 没有命名空间，则消息类型将为“MyDocument”。  
+ 如果架构不具有为其定义的命名空间，该消息类型是"\<**rootNode**\>"。 例如，如果前面的示例 XML 没有命名空间，则消息类型将为“MyDocument”。  
   
  标准管道组件使用此消息类型从数据库中检索相应的架构。 默认 XML 接收和发送管道始终使用在运行时从消息 XML 内容中动态发现的消息类型来确定要加载的架构（除非管道组件设置为允许无法识别的消息）。 XML 拆装器可以通过使用此机制来删除消息信封；但是，如果不知道要使用的信封架构，XML 拆装器无法为传出消息创建信封。  
   

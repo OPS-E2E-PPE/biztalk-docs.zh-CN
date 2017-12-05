@@ -18,14 +18,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af660403bb45b25a3ceb31163ecc8a442f0ce7de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad5f8d9c9436f9d32f6adbb30de9ac0efc9948f8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="administration-and-run-time-tools"></a>管理和运行时工具
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供一套工具，用于执行管理和运行时任务，如部署、 配置管理、 管理、 业务规则管理和监视。 有关详细信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]工具，请参阅[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供一套工具，用于执行管理和运行时任务，如部署、 配置管理、 管理、 业务规则管理和监视。 有关详细信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]工具，请参阅[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 帮助。  
   
 ## <a name="biztalk-explorer"></a>BizTalk 浏览器  
  您可以使用 BizTalk 浏览器来配置和管理项目、参与方和业务流程。 BizTalk 浏览器显示配置数据库的内容，例如显示程序集、端口和参与方等项目。  
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 支持使用 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] 性能监视器来监视连接状态和吞吐量。  
   
 ## <a name="see-also"></a>另请参阅  
- [工具和功能的 BizTalk Server 和 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)
+ [BizTalk Server 和 BTARN 的工具和功能](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)

@@ -20,11 +20,11 @@ caps.latest.revision: "72"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8915c298160f53ea21c62bc6f44d51aec36cdf94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca976d2e965d781de352a010bd4ef8c16e712ffb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter"></a>演练： 使用 WCF BasicHttp 适配器的 WCF 服务发布
 ## <a name="introduction"></a>简介  
@@ -46,11 +46,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  若要执行本示例中的步骤，请确保你的环境中安装了以下必备软件：  
   
--   生成程序集并运行在部署过程的计算机和运行此示例中的计算机需要 Microsoft Windows Server 2008 SP2 和/或 Windows Server 2008 R2、 Microsoft.NET Framework 4 和 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   这两个的程序集将生成并运行部署过程中，并运行此示例中的计算机的计算机需要 Microsoft Windows Server 2008 SP2 和/或 Windows Server 2008 R2、 Microsoft.NET Framework 4 和 Microsoft BizTalk Server。  
   
 -   用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
   
--   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装过程中安装的选件。  
+-   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是用于安装 Microsoft BizTalk 服务器安装过程的选项。  
   
 -   在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在 Microsoft Visual Studio 中，打开**C:\WCFBasicHttpReceiveAdapter\WCFBasicHttpReceiveAdapter.sln**文件。  
   
-3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**程序集包含[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程、 地图中和两个架构。 必须安装到 GAC 中和将需要为此文件的强名称密钥。 右键单击**BizTalkApp**项目，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建 >**，并输入`keyfile.snk`中**密钥文件名称**文本框中. 取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
+3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**程序集包含[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程、 地图中和两个架构。 必须安装到 GAC 中和将需要为此文件的强名称密钥。 右键单击**BizTalkApp**项目，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>**，并输入`keyfile.snk`中**密钥文件名称**文本框。 取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
   
 4.  在解决方案资源管理器，右键单击**BizTalkApp**项目，，然后单击**重新生成**。  
   
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  选择**服务终结点**选项，状态将发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务中，从中程序集的业务流程。 选择**WCF BasicHttp**从**适配器名称 （传输类型）**下拉列表。  
   
-    2.  选择**启用元数据终结点**复选框可使[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]接收由 IIS 承载的位置发布其[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务元数据。 选择此复选框设置**httpGetEnabled**属性\< **serviceMetadata**> 元素`true`在 Web.Config 中。在 HTTP/GET 请求要求此元数据时将检索此元数据。 稍后将使用 SvcUtil.exe 工具获取此数据以生成代理类，客户端代码将使用此代理类调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
+    2.  选择**启用元数据终结点**复选框可使[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]接收由 IIS 承载的位置发布其[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务元数据。 选择此复选框设置**httpGetEnabled**属性\< **serviceMetadata** \>元素`true`在 Web.Config 中。在 HTTP/GET 请求要求此元数据时将检索此元数据。 稍后将使用 SvcUtil.exe 工具获取此数据以生成代理类，客户端代码将使用此代理类调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
   
     3.  选择**以下应用程序中的创建 BizTalk 接收位置**选项来创建接收端口和对应于 WCF BasicHttp 适配器每个生成的.svc 文件的位置。 选择 BizTalk 应用程序名称、 **WCFBasicHttpReceiveAdapter**，其中接收端口和位置将生成，然后单击**下一步**。  
   

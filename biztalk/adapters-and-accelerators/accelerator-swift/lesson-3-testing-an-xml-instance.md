@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff7fb7efbe41711213103224bdbcda11eeda6281
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 948ea484b5cc3138a73a67b384705ed73d9478b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-3-testing-an-xml-instance"></a>第 3 课： 测试 XML 实例
 在本课程中，你可以提交到该文件的 XML 格式的消息接收端口在前面的课程中创建有效 MT103。 此操作测试你在前一模块中创建的发送管道。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]以平面文件输出写入为前一模块中的发送端口选择的输出文件夹中。  
@@ -28,15 +28,15 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-test-an-xml-instance"></a>若要测试 XML 实例  
   
-1.  在 Windows 资源管理器，打开\<*驱动器*>: \Labs\Outbound。 验证此文件夹包含发送到此文件夹中的 {GUID}.xml 文件[第 1 课： 提交示例平面文件](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)此模块。  
+1.  在 Windows 资源管理器，打开\<*驱动器*\>: \Labs\Outbound。 验证此文件夹包含发送到此文件夹中的 {GUID}.xml 文件[第 1 课： 提交示例平面文件](../../adapters-and-accelerators/accelerator-swift/lesson-1-submitting-a-sample-flat-file.md)此模块。  
   
-2.  复制 XML 文件中，并将其粘贴到\<*驱动器*>: \Labs\Inbound\XMLFile。 请注意粘贴此文件的时间。  
+2.  复制 XML 文件中，并将其粘贴到\<*驱动器*\>: \Labs\Inbound\XMLFile。 请注意粘贴此文件的时间。  
   
-3.  将移动到\<*驱动器*>: \Labs\Outbound。 验证是否存在此文件夹中名为 {GUID}.txt 的文件，以及此文件修改日期列中的时间对应于粘贴到文件的时间\<*驱动器*>: \Labs\Inbound\XMLFile。  
+3.  将移动到\<*驱动器*\>: \Labs\Outbound。 验证是否存在此文件夹中名为 {GUID}.txt 的文件，以及此文件修改日期列中的时间对应于粘贴到文件的时间\<*驱动器*\>: \Labs\Inbound\XMLFile。  
   
-4.  在记事本中，打开在 MT103_Sample.txt \<*驱动器*>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial。  
+4.  在记事本中，打开在 MT103_Sample.txt \<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial。  
   
-5.  在记事本的另一个实例中，打开中的 {GUID}.txt \<*驱动器*>: \Labs\Inbound\XMLFile。  
+5.  在记事本的另一个实例中，打开中的 {GUID}.txt \<*驱动器*\>: \Labs\Inbound\XMLFile。  
   
 6.  请验证两个文件在记事本中的包含相同的内容。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c18265712fa2f0dd1bb2d83d756cc9a9bd1505
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec36491dd7368e0e2fdbcd8fb5abab9d840c6b1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-bam-alerts"></a>如何恢复 BAM 警报
 作为恢复的一部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，如果要使用业务活动监视 (BAM)，你必须恢复 BAM 警报。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在命令提示符下，键入：  
   
-     **nscontrol register-name BamAlerts-服务器***\<ServerName >***-服务-serviceusername"**  *\<ServiceUserName >***"-servicepassword"**  *\<ServicePassword >* **"**   
+     **nscontrol register-name BamAlerts-服务器***\<ServerName\>***-服务-serviceusername"**  *\<ServiceUserName\>*  **"-servicepassword"**  *\<ServicePassword\>*  **"**   
   
      这使通知服务登录到正确的数据库 （此信息将保留在服务计算机的注册表中通过 nscontrol）。  
   

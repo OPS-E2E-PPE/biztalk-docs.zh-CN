@@ -12,14 +12,14 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88edef073bdab21213d9f1f52ec7e4424ff4e4b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23b8222369503f616f2d994f9292091f8e6c1f0d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-xml-tools-used-with-edi-solutions"></a>XML 工具与 EDI 解决方案一起使用时的已知问题
-本主题介绍 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中 XML 工具的已知问题。  
+本主题介绍与 BizTalk Server 中的 XML 工具的已知的问题。  
   
 ## <a name="validation-of-test-map-input-and-output-file-still-occurs-when-the-validate-property-is-set-to-false"></a>当验证属性设置为“False”时仍对测试映射输入和输出文件进行验证  
  如果测试映射测试映射输入属性设置为**本机**和验证测试映射输入和验证测试映射输出属性设置为**False**，仍将执行验证。 这是因为本机格式输入文件将被转换为 XML 格式，并且 BizTalk Server 将根据架构验证 XML。 如果输入文件不存在验证问题，此验证机制将发布错误，即使的验证测试映射输入和验证测试映射输出属性设置为**False**。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
  当从某一架构生成一个实例，且该架构中的数据元素的枚举值不符合长度要求时，则生成的实例中可能会存在因不满足长度要求而导致 XSD 验证失败的数据元素。 架构验证将不检查生成的实例中从架构的枚举列表中提取的值是否符合最小/最大长度要求。  
   
 ## <a name="validate-schema-may-not-detect-an-invalid-transaction-set-id-code"></a>验证架构可能检测不到无效的事务集 ID 代码  
- 当验证具有的解决方案资源管理器窗口中的验证架构命令的架构[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，根节点的检查可能不检测无效的事务在根引用节点的最后部分中设置 ID 代码 (格式 X12_\<VersionRelease > _TSID)。 如果架构的根引用节点中的 TSID 是无效的，但与架构中 ST01 元素的枚举节点中的 TSID 相同，则验证架构操作将检测不出该 TSID 是无效的。  
+ 当验证具有的解决方案资源管理器窗口中的验证架构命令的架构[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，根节点的检查可能不检测无效的事务在根引用节点的最后部分中设置 ID 代码 (格式 X12_\<VersionRelease\>_TSID)。 如果架构的根引用节点中的 TSID 是无效的，但与架构中 ST01 元素的枚举节点中的 TSID 相同，则验证架构操作将检测不出该 TSID 是无效的。  
   
 ## <a name="visual-studio-must-be-restarted-to-make-an-enum-change-in-a-schema-effective-for-instance-validation"></a>必须重新启动 Visual Studio 才能使架构中的枚举更改对实例验证生效  
  如果您更改了架构中的枚举列表，保存该架构然后运行实例验证，BizTalk Server 将基于架构的上一版本而不是最新版本执行验证。 BizTalk Server 在您重新启动 Visual Studio 后才会使用架构的最新版本。  

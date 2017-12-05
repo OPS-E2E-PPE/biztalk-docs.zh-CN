@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bad04c72e4c3f0caf1af8e223d3f17e4687b736
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9383dd3751f9ccdd7790b0215e596eba95dc4a45
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>如何打开、 保存、 关闭，以及重命名映射
 在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，映射在文件系统中以扩展名为 .btm 的文件形式存在。 不过，它是得更加常见，若要使用映射作为 BizTalk 项目，你在其中执行操作，如打开、 保存和关闭地图中的项。  
@@ -36,13 +36,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在解决方案资源管理器，选择你想要保存的映射。  
   
-2.  上**文件**菜单上，单击**保存*\<映射名称 >***。  
+2.  上**文件**菜单上，单击**保存*\<名称的映射\>***。  
   
 ### <a name="to-save-a-map-to-a-new-location"></a>若要保存到一个新位置的地图  
   
 1.  在解决方案资源管理器，选择你想要将保存到新位置的映射。  
   
-2.  上**文件**菜单上，单击**保存*\<映射名称 >*作为**。  
+2.  上**文件**菜单上，单击**保存*\<名称的映射\>*作为**。  
   
 3.  在**文件另存为**对话框中，浏览到你想要保存代码图的文件夹位置。  
   

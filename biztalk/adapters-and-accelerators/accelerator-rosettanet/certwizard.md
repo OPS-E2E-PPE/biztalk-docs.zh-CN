@@ -16,17 +16,17 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8d9daf4ea1ea996680088c7a7a1333e9d26906b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea106299a734f79506823ca4a6951a3dad367553
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="certwizard"></a>CertWizard
 CertWizard 实用程序用于从.pfx 或.cer 文件的证书导入到的与一起使用的私有或公用存储区[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > RosettaNet\SDK\ 快捷键  
+ \<*驱动器*\>\Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\ 快捷键  
   
 ## <a name="running-certwizard"></a>运行 CertWizard  
   
@@ -34,7 +34,7 @@ CertWizard 实用程序用于从.pfx 或.cer 文件的证书导入到的与一�
   
 1.  打开命令提示符。  
   
-2.  将移动到\<*驱动器*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > Accelerator for RosettaNet\SDK\\。  
+2.  将移动到\<*驱动器*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 3.  在命令提示符处，键入**CertWizard**，键入必选和相应的交换机，然后按 enter 键。  
   
@@ -82,4 +82,4 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
   
 ## <a name="see-also"></a>另请参阅  
  [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   
- [导入证书使用 CertWizard 实用工具](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)
+ [使用 CertWizard 实用程序导入证书](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)

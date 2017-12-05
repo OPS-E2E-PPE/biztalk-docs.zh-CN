@@ -12,11 +12,11 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3afe5ac97ba8b794e2c13f552f00cd3ba2b38572
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a7123d908f25e6575eaaba4f9a92608f17c88be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>演练： 自定义消息处理与 WCF NetTcp 适配器
 在本演练中，[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 客户端将使用 WCF-NetTcp 适配器将包含嵌入的二进制 JPEG 图像数据的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息提交到 BizTalk 接收位置。 通过使用 XPath 语句 （带编码功能 Base64 节点） 获取提取二进制编码的 JPEG 图像**入站消息正文**适配器的配置中设置。 XPath 处理方法与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用于处理传入消息的默认方法不同。 在默认方法中，适配器获取的全部内容**正文**元素[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息，然后再将其提交到 BizTalk MessageBox 数据库。 XPath 消息处理提取传入 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息的特定部分以创建自定义 BizTalk 消息。 在此示例中 XPath 处理查找名为的 XML 元素**SendPicture**中传入[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息 （这是以 XML 格式）。 找到该元素之后，XPath 会提取该元素的值作为二进制 Base64 编码对象，并将该二进制值放在 BizTalk 消息中。 该消息会被发布到 MessageBox 数据库，然后借助发送端口筛选器订阅输出到 FILE 发送端口。 本示例中未使用任何业务流程，并且所有的处理都使用 XPath 通过 BizTalk 消息完成。  
@@ -35,11 +35,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  要执行此示例中的步骤，请确保您的环境安装了以下必备组件；  
   
--   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft BizTalk Server。  
   
--   用于构建程序集和运行部署过程的计算机需要安装 Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+-   用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
   
--   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装过程中安装的选件。  
+-   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是用于安装 Microsoft BizTalk 服务器安装过程的选项。  
   
 -   在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  上**安全**选项卡上，设置**安全模式**到**None。**  
   
-    5.  上**消息**选项卡上，选择**路径**选项**入站 BizTalk 消息正文**，并输入`/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]`正文路径表达式。 选择**Base64**作为**节点编码**。 **路径**选项设置为值，因为的正文[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收采用以下格式：   **\<SendPicture xmlns ="http://tempuri.org/">\<流 >*实际 base 64 编码二进制图像数据*\</流式处理 >\</SendPicture > * *  
+    5.  上**消息**选项卡上，选择**路径**选项**入站 BizTalk 消息正文**，并输入`/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]`正文路径表达式。 选择**Base64**作为**节点编码**。 **路径**选项设置为值，因为的正文[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收采用以下格式：   **\<SendPicture xmlns ="http://tempuri.org/"\>\<流\>*实际 base 64 编码二进制图像数据*\</流式处理\>\</SendPicture\>**  
   
     6.  在**接收位置属性**对话框中，单击**确定**。  
   

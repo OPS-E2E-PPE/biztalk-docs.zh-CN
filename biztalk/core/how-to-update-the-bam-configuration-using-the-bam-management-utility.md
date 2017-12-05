@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee5958120e364cc0c2661ead6100bd2ba5502226
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b08209d3b3a1555bbc674e469ea9f8a4b1f81a9d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-bam-configuration-using-the-bam-management-utility"></a>如何使用 BAM 管理实用程序更新 BAM 配置
 管理员可以使用 BAM 管理实用程序更新安装的现有 BAM。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm 更新-config FileName:\<配置文件 >**，其中\<*配置文件*> 替换为你 BAM 的名称配置文件。 按 **Enter**。  
+3.  在命令行提示符下键入以下内容： **bm 更新-config FileName:\<配置文件\>**，其中\<*配置文件*\>是替换为 BAM 配置文件的名称。 按 **Enter**。  
   
 ## <a name="see-also"></a>另请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

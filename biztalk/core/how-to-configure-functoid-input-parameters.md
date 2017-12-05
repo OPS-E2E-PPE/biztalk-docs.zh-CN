@@ -13,28 +13,28 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cd9843c46967c7d70a59b4917034e6a3795bb6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab04111835e7732aa8384e1d701a15ae8d268378
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-functoid-input-parameters"></a>如何配置 Functoid 输入参数
 正确配置映射中 functoid 的输入参数是使用 functoid 最重要的一个方面，也是最可能出错的一个环节。 可以配置 functoid 输入的参数，如下所示：  
   
 -   创建可见的输入的链接，通过连接架构节点和相应 functoid （拖放到 functoid 从架构节点鼠标）。  
   
--   直接编辑的使用的输入参数的列表**配置\<Functoid > Functoid**对话框。  
+-   直接编辑的使用的输入参数的列表**配置\<Functoid\> Functoid**对话框。  
   
  本主题提供了使用这些方法配置 functoid 的输入参数的分步说明。  
   
- 用拖放方法建立 functoid 输入参数可以很方便地指定在源架构中使用 XPath 规范所涉及的输入参数。 有关创建节点和 functoid 的输入的参数的架构的信息，请参阅[如何向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)。 但是，**配置\<Functoid > Functoid**对话框是用于查看所有 functoid 的输入的参数、 创建和修改任何常量参数，以及用于重新排列的权威机制在必要时输入的参数的顺序。  
+ 用拖放方法建立 functoid 输入参数可以很方便地指定在源架构中使用 XPath 规范所涉及的输入参数。 有关创建节点和 functoid 的输入的参数的架构的信息，请参阅[如何向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)。 但是，**配置\<Functoid\> Functoid**对话框是用于查看所有 functoid 的输入的参数、 创建和修改任何常量参数，和的权威机制重新排列在必要时输入参数的顺序。  
   
  当您直接在网格页上为 functoid 配置输入参数时（通过使用鼠标从源 schema 节点执行拖放操作并将该节点链接到 functoid 来绘制线条），如果输入数量达到最大值，则光标将更改为 NO 状态。 此外，状态栏将显示原因。 下图显示仅接受一个输入链接的 functoid。  
   
  ![用于配置 functoid 输入的参数没有状态](../core/media/configure-input-parameters-no-state.gif "Configure_input_parameters_NO_state")  
   
- 你可以配置使用的脚本和表循环 functoid**配置\<Functoid > Functoid**对话框。 有关如何配置 functoid 的信息，请参阅[如何配置脚本 Functoid](../core/how-to-configure-the-scripting-functoid.md)和[如何配置表循环和表提取程序 Functoid](../core/how-to-configure-the-table-looping-and-table-extractor-functoids.md)。  
+ 你可以配置使用的脚本和表循环 functoid**配置\<Functoid\> Functoid**对话框。 有关如何配置 functoid 的信息，请参阅[如何配置脚本 Functoid](../core/how-to-configure-the-scripting-functoid.md)和[如何配置表循环和表提取程序 Functoid](../core/how-to-configure-the-table-looping-and-table-extractor-functoids.md)。  
   
 ## <a name="prerequisites"></a>先决条件  
  这些说明需要 BizTalk 映射器处于运行状态。  
@@ -55,8 +55,8 @@ ms.lasthandoff: 09/20/2017
   
  ![向 functoid 显示输入的参数](../core/media/identifying-input-parameters.gif "Identifying_input_parameters")  
   
-## <a name="to-open-the-configure-functoid-functoid-dialog-box"></a>若要打开配置\<Functoid > Functoid 对话框  
- 你可以打开**配置\<Functoid > Functoid**对话框中，通过以下方式之一：  
+## <a name="to-open-the-configure-functoid-functoid-dialog-box"></a>若要打开配置\<Functoid\> Functoid 对话框  
+ 你可以打开**配置\<Functoid\> Functoid**对话框中，通过以下方式之一：  
   
 -   在相关的网格页中，右键单击提取 functoid，，然后单击**配置 Functoid 输入**。  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-insert-constant-input-parameters"></a>插入常数输入参数  
   
-1.  在**配置\<Functoid > Functoid**对话框中，选择**Functoid 输入**选项卡。  
+1.  在**配置\<Functoid\> Functoid**对话框中，选择**Functoid 输入**选项卡。  
   
     > [!NOTE]
     >  **Functoid 输入**选项卡在默认情况下处于选中状态。  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-edit-existing-constant-input-parameters"></a>编辑现有常数输入参数  
   
-1.  在**配置\<Functoid > Functoid**对话框中，单击现有常量输入你想要编辑的参数。 当前值已被选中。  
+1.  在**配置\<Functoid\> Functoid**对话框中，单击现有常量输入你想要编辑的参数。 当前值已被选中。  
   
     > [!IMPORTANT]
     >  只能编辑常数输入的参数。 不能编辑所有其他类型的输入参数。 只能重新排列或删除这些参数。  
@@ -107,7 +107,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-the-order-of-existing-input-parameters"></a>更改现有输入参数的顺序  
   
-1.  在**配置\<Functoid > Functoid**对话框中，单击现有输入你想要将移动到的有序列表中的输入参数的不同位置的参数。  
+1.  在**配置\<Functoid\> Functoid**对话框中，单击现有输入你想要将移动到的有序列表中的输入参数的不同位置的参数。  
   
 2.  单击![在列表中向上移动](../core/media/move-up-button.gif "Move_up_button")按钮在参数列表中向上移动参数。 根据需要重复此步骤，直到所选输入参数位于期望位置。 或者，你可以按向上箭头键从键盘。 映射器键盘快捷方式的列表，请参阅[BizTalk 映射器键盘快捷键](../core/biztalk-mapper-keyboard-shortcuts.md)。  
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 09/20/2017
      单击![列表中向下移动](../core/media/move-down-button.gif "Move_down_button")按钮以在参数列表中向下移动参数。 根据需要重复此步骤，直到所选输入参数位于期望位置。 此外，还可以按键盘上的向下键。 映射器键盘快捷方式的列表，请参阅[BizTalk 映射器键盘快捷键](../core/biztalk-mapper-keyboard-shortcuts.md)。  
   
     > [!IMPORTANT]
-    >  你可以重新排列的只能从输入序列**配置\<Functoid > Functoid**对话框。 如果你选择最顶层或最底部的行，![在列表中向上移动](../core/media/move-up-button.gif "Move_up_button")或![列表中向下移动](../core/media/move-down-button.gif "Move_down_button")按钮将处于禁用状态，分别。  
+    >  你可以重新排列的只能从输入序列**配置\<Functoid\> Functoid**对话框。 如果你选择最顶层或最底部的行，![在列表中向上移动](../core/media/move-up-button.gif "Move_up_button")或![列表中向下移动](../core/media/move-down-button.gif "Move_down_button")按钮将处于禁用状态，分别。  
   
 ### <a name="to-delete-an-input-parameter-by-deleting-the-input-link"></a>通过删除输入链接来删除输入参数  
   
@@ -130,9 +130,9 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  将自行删除输入链接。 如果不确定，可以始终撤消删除。 有关撤消/重做操作的详细信息，请参阅[如何撤消或重做用户操作](../core/how-to-undo-or-redo-user-operations.md)。  
   
-### <a name="to-delete-existing-input-parameters-within-the-configure-functoid-functoid-dialog-box"></a>若要删除现有输入的参数中配置\<Functoid > Functoid 对话框  
+### <a name="to-delete-existing-input-parameters-within-the-configure-functoid-functoid-dialog-box"></a>若要删除现有输入的参数中配置\<Functoid\> Functoid 对话框  
   
-1.  在**配置\<Functoid > Functoid**对话框中，单击现有输入你想要删除的参数。  
+1.  在**配置\<Functoid\> Functoid**对话框中，单击现有输入你想要删除的参数。  
   
     > [!NOTE]
     >  您可以使用此方法删除任何输入参数，甚至是与输入链接相对应的输入参数。  
@@ -148,9 +148,9 @@ ms.lasthandoff: 09/20/2017
     >  如果参数列表中没有输入参数，则不启用删除按钮。  
   
 ## <a name="to-set-labels-and-comments-for-functoids"></a>为 functoid 设置标签和注释  
- 你可以设置标签和注释 functoid 使用**配置\<Functoid > Functoid**对话框。  
+ 你可以设置标签和注释 functoid 使用**配置\<Functoid\> Functoid**对话框。  
   
-1.  在**配置\<Functoid > Functoid**对话框中，单击**标签和注释**选项卡。  
+1.  在**配置\<Functoid\> Functoid**对话框中，单击**标签和注释**选项卡。  
   
 2.  类型**标签**和**注释**，然后单击**确定**。  
   
@@ -158,4 +158,4 @@ ms.lasthandoff: 09/20/2017
     >  有关如何对标签和注释 functoid 和/或链接的详细信息，请参阅[如何标记链接](../core/how-to-label-a-link.md)和[如何标记和注释 Functoid](../core/how-to-label-and-comment-a-functoid.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [编辑 Functoid 属性和输入的参数](../core/editing-functoid-properties-and-input-parameters.md)
+ [编辑 Functoid 属性和输入参数](../core/editing-functoid-properties-and-input-parameters.md)

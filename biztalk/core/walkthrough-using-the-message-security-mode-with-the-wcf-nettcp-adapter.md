@@ -12,11 +12,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fc5e0a90fdfcaa6c3b6e5f6ae280d320be5647
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 850d0ee715984c7465063addd778828c727e0233
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>演练： 使用 WCF NetTcp 适配器使用消息安全模式
   
@@ -40,11 +40,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  要执行此示例中的步骤，请确保您的环境安装了以下必备组件；  
   
--   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   生成程序集并运行在部署过程的计算机和运行此示例中，计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，和 Microsoft BizTalk Server。  
   
--   用于构建程序集和运行部署过程的计算机需要安装 Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+-   用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
   
--   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装过程中安装的选件。  
+-   运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是用于安装 Microsoft BizTalk 服务器安装过程的选项。  
   
 -   在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     3.  上**高级证书申请**页上，键入`contoso`中**名称**文本框中，选择**客户端身份验证证书**从**需要的证书类型**下拉列表，然后单击**提交**。  
   
     > [!NOTE]
-    >  如果正在使用的客户端身份验证证书[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]计算机域控制器以外的计算机上。 这将在适配器的属性对话框中进行配置。  
+    >  如果你正在计算机域控制器以外的计算机上运行 BizTalk Server，则使用客户端身份验证证书。 这将在适配器的属性对话框中进行配置。  
   
 4.  使用证书颁发机构管理控制台颁发证书，如下所示：  
   

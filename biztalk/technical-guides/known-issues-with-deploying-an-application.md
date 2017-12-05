@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09970e43bd53306a6394eeffc4c2e642a8333dbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fa139469ea8718c3d4430235ffb576195e67a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-deploying-an-application"></a>部署应用程序的已知的问题
 ## <a name="deploying-a-biztalk-application"></a>部署 BizTalk 应用程序  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="exporting-a-biztalk-application"></a>导出 BizTalk 应用程序  
  **安装 Windows Vista 上的.msi 文件时，可以显示不正确错误**  
   
- 当安装.msi 程序包导出使用[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]上[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Windows Vista® 上运行，你可能会收到以下不正确的错误，"安装程序遇到意外的错误安装此包。 这可能表示此程序包有问题。 错误代码为 2869。” 若要更正此错误，首次导入包使用[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]和重新导出和安装该程序包。  
+ 当安装.msi 程序包导出使用[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]在 BizTalk Server 中在 Windows Vista® 上运行，你可能会收到以下不正确的错误，"安装程序遇到意外的错误安装此包。 这可能表示此程序包有问题。 错误代码为 2869。” 若要更正此错误，首次导入包使用 BizTalk Server 和重新导出和安装包。  
   
 ## <a name="importing-a-biztalk-application"></a>导入 BizTalk 应用程序  
  **密码不会从绑定添加到应用程序的文件**  

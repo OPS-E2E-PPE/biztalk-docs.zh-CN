@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04db816f1209b7cd503b9a162cdd2a030ba86292
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31814f9bd38bd07a75be0d4a2cc3e9d8b838720e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="attribute-group-nodes"></a>属性组节点
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 在 BizTalk 编辑器中，你可以添加**属性组**节点**记录**节点或其他**属性组**节点以包含你希望使用更多的属性组个**记录**节点。 添加**属性组**到另一个节点**属性组**节点来实现的属性组嵌套。 这允许你在一个位置，可在多个定义一组属性**记录**或**属性组**节点。 对属性组的后续修改将传播到该属性组所关联的所有节点。 不论在何种节点上下文中进行修改都是如此。  
   
 > [!NOTE]
->  在 BizTalk 编辑器中， **AttributeGroup**节点表示默认情况下，使用字符串\<AttribGroup:attribGroup*N*> 在架构树视图中，其中*N*是单调递增的数字。 你可以更改 attribGroup*N*通过键入新的唯一名称，在其名称一部分其**组引用**属性。  
+>  在 BizTalk 编辑器中， **AttributeGroup**节点表示默认情况下，使用字符串\<AttribGroup:attribGroup*N* \>在架构树视图中，其中*N*是单调递增的数字。 你可以更改 attribGroup*N*通过键入新的唯一名称，在其名称一部分其**组引用**属性。  
   
  最初创建时**属性组**节点，你只需将其插入到之一**记录**或**属性组**节点，它将使用，并选择性地更改其名称在其**组引用**属性。 有两种方法要在另一个中使用相同的属性组**记录**或**属性组**节点：  
   
@@ -62,9 +62,9 @@ ms.lasthandoff: 09/20/2017
 >  会自动提供的默认属性组名称都具有窗体 attrGroup*N*，其中*N*是单调递增的数字。 可以通过提供新的、 唯一的名称，在属性组重命名其**组引用**属性。 不能在架构树中对属性组进行重命名。  
   
 ## <a name="see-also"></a>另请参阅  
--  [BizTalk 表示形式架构](../core/biztalk-representation-of-schemas.md)   
+-  [架构的 BizTalk 表示形式](../core/biztalk-representation-of-schemas.md)   
 -  [节点属性](../core/node-properties.md)   
 -  **序列组节点属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
 -  [如何设置节点属性](../core/how-to-set-node-properties.md)   
--  [字段属性节点](../core/field-attribute-nodes.md)   
--  [任何属性节点](../core/any-attribute-nodes.md)
+-  [“字段属性”节点](../core/field-attribute-nodes.md)   
+-  [“任何属性”节点](../core/any-attribute-nodes.md)

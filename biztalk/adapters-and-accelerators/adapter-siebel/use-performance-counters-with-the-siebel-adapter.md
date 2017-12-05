@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2540801af6c30632250602b45c21e7b57cd2bc22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bebbd605df52e023c78112b78ad51db13d896cc7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-siebel-adapter"></a>用于 Siebel 适配器的性能计数器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建性能计数器类别"[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]"以及适配器包安装。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 <process id>:<app domain id>:<endpoint id>:<action id>  
 ```  
   
- 情况下[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，终结点 id 是 Siebel 服务器，作为连接 URI 中指定的名称。 操作 id 可能是由执行任何操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]登录、 注销、 元数据，如\<业务组件名称 >。\<操作 >，\<业务服务名称 >。\<业务服务方法 >。 如果前面的命名约定将导致超过 127 个字符的名称仅显示操作 ID 将显示在以下格式：  
+ 情况下[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，终结点 id 是 Siebel 服务器，作为连接 URI 中指定的名称。 操作 id 可能是由执行任何操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]登录、 注销、 元数据，如\<业务组件名称\>。\<操作\>，\<业务服务名称\>。\<业务服务方法\>。 如果前面的命名约定将导致超过 127 个字符的名称仅显示操作 ID 将显示在以下格式：  
   
 ```  
 :::<action id>  

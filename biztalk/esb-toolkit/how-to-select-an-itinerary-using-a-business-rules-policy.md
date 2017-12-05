@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d06bdea233c88fb740c728a414472d01a8fdc34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 521b3768251cfcd31defe271a21d4b2d0bc771e6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>如何： 选择使用业务规则策略路线
 ## <a name="goal"></a>目的  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-a-business-rules-engine-bre-policy-to-select-an-itinerary-using-custom-message-properties"></a>若要创建业务规则引擎 (BRE) 策略来选择使用自定义消息属性路线  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**业务规则编辑器**。  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**业务规则编辑器**。  
   
 2.  在策略资源管理器中，右键单击**策略**，然后单击**添加新策略**。 命名策略时**ResolveItineraryBasedOnCustomer**。  
   
@@ -99,7 +99,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 在事实数据资源管理器，单击**词汇**选项卡。展开**ESB。路线**词汇，展开**版本 1.1**，然后拖动**设置路线名称**定义与**操作**。  
   
-10. 单击**\<空字符串 >**，然后键入**GlobalBankWestItinerary**。  
+10. 单击**\<空字符串\>**，然后键入**GlobalBankWestItinerary**。  
   
     > [!NOTE]
     >  更高版本在本操作方法主题中，你将创建处理这些消息的此路线，从 GlobalBank 西部。  
@@ -120,7 +120,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。  
   
-8.  单击**\<空字符串 >**然后键入**GlobalBankEastItinerary**。  
+8.  单击**\<空字符串\>**然后键入**GlobalBankEastItinerary**。  
   
     > [!NOTE]
     >  更高版本中的操作方法主题，你将从 GlobalBank 东处理这些消息创建此路线。  
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-domain-specific-language-dsl-model-for-globalbank-west-messages"></a>若要创建 GlobalBank 西部消息 ESB 路线域特定语言 (DSL) 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。  
   
@@ -211,7 +211,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-east-message"></a>若要创建 GlobalBank 东部消息 ESB 路线 DSL 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。  
   
@@ -289,9 +289,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>若要创建和配置 ESB 入口  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**BizTalk Server 管理**.  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**BizTalk Server 管理**。  
   
-2.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。  
+2.  在 BizTalk Server 管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。  
   
 3.  右键单击**接收位置**，指向**新建**，然后单击**单向接收位置**。  
   
@@ -317,7 +317,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击**确定**关闭**接收位置属性**对话框。  
   
-4.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**启用**。  
+4.  在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**启用**。  
   
 #### <a name="to-test-the-itinerary-selector-and-business-rules"></a>若要测试的路线的选择器和业务规则  
   
@@ -330,14 +330,14 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  尽管除外客户元素的值相同，消息已处理使用不同路线，根据路线选择器管道组件的分辨率。  
   
-4.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**禁用**。  
+4.  在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**禁用**。  
   
 5.  后**OnRamp.Itinerary.HowTo**接收位置处于禁用状态，右键单击它，，然后单击**删除**。 在**确认删除接收位置**对话框中，单击**是**。  
   
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 拆分将交换，并将生成的消息路由到多个使用不同路线的文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+-   [如何：拆分交换并使用不同的路线将生成的消息路由至多个文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

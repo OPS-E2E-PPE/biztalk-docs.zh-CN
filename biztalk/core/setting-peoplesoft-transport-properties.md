@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 90a9df3f95628b8072217c5b3756b619ff528147
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1772a30ce5496a3a14866da168a56958bc3bc78c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-peoplesoft-transport-properties"></a>设置 PeopleSoft 传输属性
 PeopleSoft 传输属性用于运行时和设计时。 在**传输属性**对话框中，你设置的连接和凭据参数特定于服务器系统和你尝试访问的对象。  
@@ -21,7 +21,7 @@ PeopleSoft 传输属性用于运行时和设计时。 在**传输属性**对话�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |`Application Server Path`|此字符串代表 PeopleSoft 应用程序服务器运行的计算机和侦听的端口。 PeopleSoft 8 应用程序的 URL 路径的语法是 / / < 计算机名 >:\<端口 >。 向你 PeopleSoft 管理员请求\<端口 > 值。 \<端口 > 值是震动协议侦听器端口，不是应用程序服务器端口。 默认 JOLT 端口为 9000。|  
+    |`Application Server Path`|此字符串代表 PeopleSoft 应用程序服务器运行的计算机和侦听的端口。 PeopleSoft 8 应用程序的 URL 路径的语法是 / / < 计算机名 >:\<端口\>。 向你 PeopleSoft 管理员请求\<端口\>值。 \<端口\>值是震动协议侦听器端口，不是应用程序服务器端口。 默认 JOLT 端口为 9000。|  
     |`JAVA_HOME`|设置 JAVA_HOME 变量以指向你 JDK 的安装，例如： **C:\j2sdk1.4.2_08**。|  
     |`Password`|如果你未选择**使用 SSO**，必须设置为 BizTalk 适配器 PeopleSoft 企业访问服务器系统的凭据参数。<br /><br /> 表示用户密码的字符串，用于登录到 PeopleSoft 系统。 不会显示密码中的字符，而是以星号 (*) 表示这些字符。|  
     |`PeopleSoft 8.x Jar Files`|若要使用组件接口（仅限 PeopleSoft 8），则必须更新 CLASSPATH 以包含 PeopleSoft 组件接口 jar 文件。 例如： **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**。|  

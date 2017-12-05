@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c717d23886860363ca9c94d1eec79195f873fff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9357c172ff538bce73d3618739f3db4f98141814
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-store-and-forward-scenario"></a>步骤 3B： 添加 FILEACT 接收位置 FileAct 应用商店应用和转发方案
 在开始此步骤之前，必须完成[步骤 3A： 添加文件接收位置 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)。  
@@ -41,13 +41,13 @@ ms.lasthandoff: 09/20/2017
     |------------------|--------------------|  
     |**密码**|键入用于连接到压降的密码。 有关详细信息，请参阅压降帮助。|  
     |**用户名**|键入用于连接到压降的用户名称。|  
-    |**应用程序名称**|键入的服务器\<应用程序接口名称 > 压降框中路由组。|  
+    |**应用程序名称**|键入的服务器\<应用程序接口名称\>压降框中路由组。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**FACrypto 模式**|从下拉列表中选择**高级**。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**MemberRef**|从下拉列表中选择**ResponsePayload**。|  
     |**不可否认性指示器**|从下拉列表中选择**FALSE**。|  
-    |**响应方**|键入相应\<响应方 > 基于 SWIFT 你设置的字符串。|  
+    |**响应方**|键入相应\<响应方\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|从下拉列表中选择**FALSE**。|  
     |**确认指示器**|从下拉列表中选择**ResponsePayload**。|  
     |**FileCompression**|从下拉列表中，选择无。|  
@@ -80,4 +80,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 3： 创建发送端口和接收端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
  [步骤 3A： 添加一个文件接收位置 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)   
  [步骤 3c： 添加要捕获的 Sw:HandleFileRequest 和 Sw:HandleSnFRequest 消息的 FileAct 应用商店和向前情况下的文件发送端口](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)   
- [步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)
+ [步骤 3D：为 FileAct 存储和转发方案添加 FILEACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)

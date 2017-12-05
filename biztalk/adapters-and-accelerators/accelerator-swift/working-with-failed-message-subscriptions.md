@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17a29c6e00ee56c6869b9d9326d045a2ad8fb5fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6540259fd6983fd418e57ff700de3f1b550016ec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-failed-message-subscriptions"></a>使用失败的邮件订阅
 当[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]反汇编程序进程 （分析和验证） 一条消息，这样还有助于提升该消息的属性。 如果 A4SWIFT 作为入站批处理的一部分接收消息，这些提升的属性提供信息的正确性和有效性的消息，以及与批处理相关的信息。 有关这些属性的完整列表，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
 >  如果订阅重叠，A4SWIFT 将完成所有订阅。 即，如果多个服务 （发送端口或业务流程） 具有满足特定的消息的筛选器表达式，所有此类服务将收到同一消息。 例如，如果发送端口订阅的所有失败消息和业务流程订阅到唯一的消息，但分析失败，A4SWIFT 遇到分析错误时处理消息时将能满足这两个订阅。 请务必在服务之间消除不需要的重叠的订阅中。  
   
 > [!NOTE]
->  A4SWIFT 如果 A4SWIFT 接收和处理消息，并将该消息发布到 MessageBox 数据库，但消息不满足任何订阅，将会挂起的消息的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]错误，指示缺乏订阅服务器。 例如，如果您具有订阅的所有消息的服务"A4SWIFT_Failed = = false"，但没有任何服务订阅消息其中"A4SWIFT_Failed = = true"，然后分析失败的消息或验证确实将挂起由于缺乏订阅服务器。 实际上，这种情况下，可模拟传统挂起失败的消息。 请确保订阅不希望具有挂起的所有消息。 请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助 MessageBox 数据库订阅有关的其他详细信息，发送端口，业务流程，并筛选表达式。  
+>  A4SWIFT 如果 A4SWIFT 接收和处理消息，并将该消息发布到 MessageBox 数据库，但消息不满足任何订阅，将会挂起的消息的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]错误，指示缺乏订阅服务器。 例如，如果您具有订阅的所有消息的服务"A4SWIFT_Failed = = false"，但没有任何服务订阅消息其中"A4SWIFT_Failed = = true"，然后分析失败的消息或验证确实将挂起由于缺乏订阅服务器。 实际上，这种情况下，可模拟传统挂起失败的消息。 请确保订阅不希望具有挂起的所有消息。 请参阅 BizTalk Server 帮助以 MessageBox 数据库订阅有关的其他详细信息、 发送端口，业务流程，和筛选表达式。  
   
  本部分包含：  
   

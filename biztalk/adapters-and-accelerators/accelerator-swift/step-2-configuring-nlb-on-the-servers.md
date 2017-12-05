@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f10a05f23012990a1a0cc3dd50e0ca3db4282c84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6d174ba336a94d44aaffdb2605542035304d9ff
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-configuring-nlb-on-the-servers"></a>步骤 2： 在服务器上配置 NLB
 安装的基础平台并使用正确的网络设置配置服务器后 (请参阅[步骤 1： 安装基础平台](../../adapters-and-accelerators/accelerator-swift/step-1-installing-the-base-platform.md))，你可能需要启用 BizTalk HTTP 前端服务器和 BizTalk 上的负载平衡消息服务器。 仅当你有一个或多个 BizTalk HTTP 前端服务器从一个或多个 BizTalk 消息传送服务器的单独计算机上安装，则需要此步骤。  
@@ -31,4 +31,4 @@ ms.lasthandoff: 09/20/2017
   
  在消息传递的服务器中，假设有两台服务器配置上的负载平衡**私有**网络适配器。  
   
- 有关详细信息，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]部署指南。
+ 有关详细信息，请参阅 BizTalk Server 部署指南。

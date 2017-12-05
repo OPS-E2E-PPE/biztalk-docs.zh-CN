@@ -20,14 +20,14 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e537ca4bc2dd85722ddf3afd4eaba443aab7a25b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9c48791d26842b7224bb950334d6b184452a54d6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="solution-build-configurations"></a>解决方案生成配置
-就像在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中生成的其他项目一样，您可以使用配置管理器来指定解决方案生成配置。 解决方案生成配置使你可以确定要在中包含的项目版本解决方案，并且如果将部署它们。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]同时支持**调试**和**版本**生成配置。  
+就像在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中生成的其他项目一样，您可以使用配置管理器来指定解决方案生成配置。 解决方案生成配置使你可以确定要在中包含的项目版本解决方案，并且如果将部署它们。 BizTalk Server 同时支持**调试**和**版本**生成配置。  
   
  解决方案生成配置中的复选标记**生成**列使您能够构建一个解决方案，并在完成时生成的程序集。 如果还中存在一个复选标记，则**部署**列，然后再应用程序将部署基于项目设计器中的部署设置。  
   

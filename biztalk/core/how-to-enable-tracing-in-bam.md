@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9cf7cddd25f3f01b6203c050a4391e16cedc989
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>如何在 BAM 中启用跟踪
 您可以在 BAM 中启用跟踪，以便帮助解决在以下 5 个 BAM 组件中出现的问题：  
@@ -93,28 +93,28 @@ ms.lasthandoff: 09/20/2017
   
 1.  编辑 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BTSNTSvc.exe.config 文件。  
   
-2.  找到\<system.diagnostics > 和\</system.diagnostics > 标记。 如果在该文件中不存在这两个标记，则复制上述代码并将代码粘贴到该配置文件中。  
+2.  找到\<system.diagnostics\>和\</system.diagnostics\>标记。 如果在该文件中不存在这两个标记，则复制上述代码并将代码粘贴到该配置文件中。  
   
-3.  取消注释取消注释系统诊断部分通过移动结束注释分隔符 (-->) 之后来自\</system.diagnostics > 标记添加到之前\<system.diagnostics > 标记。  
+3.  取消注释取消注释系统诊断部分通过移动结束注释分隔符 (-->) 之后来自\</system.diagnostics\>标记添加到之前\<system.diagnostics\>标记。  
   
 4.  保存该文件。  
   
 ## <a name="enabling-tracing-for-the-bam-portal"></a>为 BAM 门户启用跟踪  
  为 BAM 门户启用跟踪允许您排除连接问题。  
   
- BAM 门户是一种 ASP.NET 应用程序，它采用标准协议进行跟踪。 在[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件没有名为一节\<跟踪 >，可实现。  
+ BAM 门户是一种 ASP.NET 应用程序，它采用标准协议进行跟踪。 在[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件没有名为一节\<跟踪\>，可实现。  
   
 #### <a name="to-enable-tracing-for-the-bam-portal"></a>为 BAM 门户启用跟踪  
   
 1.  编辑 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件。  
   
-2.  找到\<system.diagnostics > 和\</system.diagnostics > 标记。  
+2.  找到\<system.diagnostics\>和\</system.diagnostics\>标记。  
   
-3.  取消的系统诊断部分注释有移动结束注释分隔符 (-->) 之后来自\</system.diagnostics > 标记添加到之前\<system.diagnostics > 标记。  
+3.  取消的系统诊断部分注释有移动结束注释分隔符 (-->) 之后来自\</system.diagnostics\>标记添加到之前\<system.diagnostics\>标记。  
   
 4.  修改 initializeData 属性以便指定将跟踪日志写入的位置。  
   
-5.  找到\<.w e b > 标记。  
+5.  找到\<system.web\>标记。  
   
 6.  System.web 部分中找到的跟踪标记，并取消跟踪命令注释通过移动分隔符 (-->) 从后到前跟踪标记。  
   

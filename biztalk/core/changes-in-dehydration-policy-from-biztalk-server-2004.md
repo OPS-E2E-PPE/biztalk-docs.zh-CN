@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9daf93fd6c925e5412aef3f4e985dd966f576eee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 167c53d953369d7b35138995b4f38ad8994c18cb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a>自 BizTalk Server 2004 后在冻结策略中的变化
-BizTalk Server 冻结策略已更改，不再[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 之间的差异的介绍[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]和[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]可以按以下的布尔值，确定在冻结汇总[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)](true = 冻结)  
+BizTalk Server 冻结策略已更改，不再[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]给 BizTalk Server。 之间的差异的介绍[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]和 BizTalk Server 可以按以下的布尔值，确定在冻结汇总[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)](true = 冻结)  
   
 ```  
 Dehydrate = (WaitingHistory == -1 OR WaitingHistory > TestThreshold)  
 ```  
   
- 冻结策略[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]这样次要中已更改。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]如果没有等待时间超过 2 始终 dehydrates 接收/延迟/侦听 ***MaxThreshold**。
+ BizTalk Server 的冻结策略已更改此次要的方式。 BizTalk Server 始终 dehydrates 接收/延迟/侦听是否存在等待时间超过 2 ***MaxThreshold**。

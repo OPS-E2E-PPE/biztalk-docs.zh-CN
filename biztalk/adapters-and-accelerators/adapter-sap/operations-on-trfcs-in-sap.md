@@ -26,11 +26,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e60465716931161e9b9949e16c4630d85c2cfe2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eac8dab219e46dc569b604a63e195f4613eb344
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-trfcs-in-sap"></a>对 tRFCs SAP 中的操作
 事务 Rfc (tRFCs) 是工作的调用 (LUW) 逻辑单元的一部分的 Rfc。 在 SAP 系统上，LUW 包含所有完成的业务或编程任务所需的步骤。 TRFC 表示一种调用 RFC;它不是一个唯一的 SAP 项目。  
@@ -114,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 -   适配器必须注册上的 SAP 网关的 RFC 目标。 注册基于逻辑名称称为程序 id。 提供连接 URI 指定的程序 ID 中的参数 SAP 网关和此注册的 SAP 服务器。  
   
--   必须在 SQL Server 中创建 TID 数据库。 若要执行此操作，必须运行安装程序安装的 SQL 脚本。 SQL 脚本通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[安装 BizTalk 适配器包](http://msdn.microsoft.com/library/2ae27db5-b11b-42c3-a568-e2331badf80e)。  
+-   必须在 SQL Server 中创建 TID 数据库。 若要执行此操作，必须运行安装程序安装的 SQL 脚本。 SQL 脚本通常安装在\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[安装 BizTalk 适配器包](http://msdn.microsoft.com/library/2ae27db5-b11b-42c3-a568-e2331badf80e)。  
   
 -   **TidDatabaseConnectionString**绑定属性必须设置为 TID 数据库的 SQL 数据库连接字符串。 有关详细信息**TidDatabaseConnectionString**绑定属性，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   

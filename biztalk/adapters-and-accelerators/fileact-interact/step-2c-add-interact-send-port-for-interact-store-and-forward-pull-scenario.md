@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2fe383d80c467376852067026a7c5a4fe4640ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb46943b20676dbe98f79db8760043bb51606c56
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2c-add-an-interact-send-port-for-the-interact-store-and-forward-pull-scenario"></a>步骤 2c： 交互应用商店应用和进 （请求） 方案中添加交互发送端口
 在开始此步骤之前，必须完成[步骤 2B： 发送端口添加文件，以捕获 Sw:HandleRequest 消息交互，应用商店应用和向前 （请求） 方案](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)。  
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**用户名**|根据压降连接需要设置的用户名。|  
     |**消息格式**|**InteractMessage**|  
     |**不可否认性指示器**|**FALSE**|  
-    |**请求类型**|键入相应\<RequestType > 基于 SWIFT 你设置的字符串。|  
+    |**请求类型**|键入相应\<RequestType\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|**FALSE**|  
-    |**请求者**|键入相应\<RequestorDN > 基于 SWIFT 你设置的字符串。|  
-    |**响应方**|键入相应\<ResponderDN > 基于 SWIFT 你设置的字符串。|  
-    |**服务名称**|键入相应\<服务名称 >，将根据 SWIFT 你预配。|  
+    |**请求者**|键入相应\<RequestorDN\>基于 SWIFT 你设置的字符串。|  
+    |**响应方**|键入相应\<ResponderDN\>基于 SWIFT 你设置的字符串。|  
+    |**服务名称**|键入相应\<服务名称\>，具体取决 SWIFT 你预配。|  
     |**传递通知**|从下拉列表中选择**FALSE**。|  
     |**通知队列**|键入相应的队列名称，基于 SWIFT 你预配。|  
   
@@ -75,4 +75,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [步骤 2A： 添加文件接收交互应用商店应用和进 （请求） 方案的位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   
- [步骤 2B： 添加要捕获 Sw:HandleRequest 消息交互，应用商店应用和进 （请求） 方案的文件发送端口](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)
+ [步骤 2B：为 InterAct 存储和转发（拉取）方案添加 FILE 发送端口以捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)

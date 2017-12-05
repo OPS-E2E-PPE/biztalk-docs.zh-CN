@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 339d0bba76c26186fe8356145207462e7ce25ed7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb6c787219855ca219808fc1e95c0caefbf12a9d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-assemblies"></a>BizTalk 程序集
 Microsoft BizTalk Server 和 .NET Framework 最重要的一个方面是：所有 BizTalk Server 项目（映射、架构、业务流程和管道）都已编译到 .NET 程序集中。 此设计的两个最重要含义是：这些程序集必须具有强名称，为此它们还需遵守 .NET 版本控制规则。 其主要含义是：根据特定版本的其他 .NET 项目或程序集（包括 BizTalk 项目）生成 BizTalk 项目后，该 BizTalk 项目将继续使用该版本，直到根据更高的版本重新生成该 BizTalk 项目。  
@@ -34,7 +34,7 @@ Microsoft BizTalk Server 和 .NET Framework 最重要的一个方面是：所有
   
  要部署到全局程序集缓存并因此要具有强名称的 BizTalk Server 项目的另一个重要含义是：强名称程序集不能调用还未具有强名称的程序集。 这意味着开发人员创建且由这些 BizTalk Server 程序集使用的任何程序集也必须具有强名称。 同样，如果部署到 GAC 的程序集不使用特定路径加载其他程序集，则必须从 GAC 加载这些程序集。  
   
- 管道组件将被添加到开发人员的工具箱中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]以使它们可用拖动到管道设计器上。 将 BizTalk Server 管道编译为 .NET 程序集时，有关该管道各个阶段中的所有组件的信息将被编译到该程序集中。 此管道部署到 BizTalk Server，组件，包括各自的文件名称，有关的信息插入到 BizTalk 管理数据库和管道程序集部署到 GAC。 取决于 BizTalk 管道组件的任何其他程序集必须还将部署到 GAC 以便在运行时找到。 此外必须将管道组件程序集复制到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\Pipeline 组件的目录，可以在运行时的 BizTalk 管道访问。 执行该管道时，将加载这些组件，并根据需要调用它们实现的接口。  
+ 管道组件将被添加到开发人员的工具箱中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]以使它们可用拖动到管道设计器上。 将 BizTalk Server 管道编译为 .NET 程序集时，有关该管道各个阶段中的所有组件的信息将被编译到该程序集中。 此管道部署到 BizTalk Server，组件，包括各自的文件名称，有关的信息插入到 BizTalk 管理数据库和管道程序集部署到 GAC。 取决于 BizTalk 管道组件的任何其他程序集必须还将部署到 GAC 以便在运行时找到。 通过在运行时的 BizTalk 管道之前，还必须将管道组件程序集复制到 BizTalk Server\Pipeline 组件目录才能访问。 执行该管道时，将加载这些组件，并根据需要调用它们实现的接口。  
   
 ## <a name="see-also"></a>另请参阅  
  [运行时体系结构](../core/runtime-architecture.md)

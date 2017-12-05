@@ -15,18 +15,18 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ecc01ef4bc9d8bf2e82ca3dfe23b13ea0b67be2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3a6a3f93e600a8e68581f09af8fcdbc77ed57af
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-password-synchronization"></a>如何安装密码同步
 因为在默认的密码同步未安装单一登录与其他功能一起，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装，并且必须专门选择在安装过程。  
   
 ### <a name="to-install-password-synchronization"></a>安装密码同步  
   
-1.  在 BizTalk Server 光盘，浏览到 **\<CDRoot > \Platforms\SSO**文件夹。  
+1.  在 BizTalk Server 光盘，浏览到 **\<CDRoot\>\Platforms\SSO**文件夹。  
   
 2.  运行**setup.exe**并按照向导中的说明。  
   

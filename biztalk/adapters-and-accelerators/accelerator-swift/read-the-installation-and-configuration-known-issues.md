@@ -12,16 +12,16 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a09ff5969cc0c47da6a9e885118e227cc27c4ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83bbeec3430f479d28502e818b9ead402278f9b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a>读取的安装和配置的已知问题
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>通过终端服务器安装的其他文件夹中创建日志文件  
- A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器 >*: \Documents and 设置\\* \<用户名 >*\Local 设置文件夹。 通常情况下，安装程序将创建这些文件置于*\<驱动器 >*: \Documents and 设置\\*\<用户名 >*\Local Settings\temp 文件夹。 你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。  
+ A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\Local 设置文件夹。 通常情况下，安装程序将创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\LocalSettings\temp 文件夹。 你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。  
   
 ## <a name="silent-installation-is-not-recommended"></a>不建议无提示安装  
  无提示安装 A4SWIFT 安装程序支持，但不是建议由于所需的其他配置步骤的复杂性。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
  A4SWIFT 数据库将显示在**用于消息修复和新提交的 Web 组件**窗格 A4SWIFT 配置对话框中，即使该数据库不存在。 警告将显示为 A4SWIFT 数据中的数据库存储窗格中，但，警告不会从继续阻止配置过程。  
   
 ## <a name="upgrade-process-does-not-create-a-new-root-folder"></a>升级过程不创建新的根文件夹  
- 升级过程更新中现有的 A4SWIFT 文件*\<驱动器 >*: files\microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 文件夹。 它不创建新的文件夹以升级的文件，也不会改变到现有文件夹的名称*\<驱动器 >*: files\microsoft BizTalk Accelerator for SWIFT。  
+ 升级过程更新中现有的 A4SWIFT 文件*\<驱动器\>*: files\microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 文件夹。 它不创建新的文件夹以升级的文件，也不会改变到现有文件夹的名称*\<驱动器\>*: files\microsoft BizTalk Accelerator for SWIFT。  
   
 ## <a name="canceling-setup-during-an-upgrade-for-a4swift-may-leave-your-system-in-an-unknown-state"></a>在升级过程的 A4SWIFT 取消安装程序可能使系统处于未知状态  
  在某些情况下，单击**取消**按钮在升级期间可能会降低文件、 程序集、 BizTalk Server 项目和注册表项保持不变后安装程序已完成其回滚。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
  您可以手动删除所有项目，不会产生任何问题。  
   
 ## <a name="download-the-a4swift-setup-exe-file-from-the-web-into-a-temp-folder"></a>到临时文件夹从 Web 下载 A4SWIFT 安装程序 exe 文件  
- 如果想要从从 Web 下载的自解压可执行文件安装 A4SWIFT，请务必将该文件下载到临时文件夹。 到 BizTalk Server 根文件夹不下载文件 (files\microsoft BizTalk Server \<*你版本*>)。  
+ 如果想要从从 Web 下载的自解压可执行文件安装 A4SWIFT，请务必将该文件下载到临时文件夹。 到 BizTalk Server 根文件夹不下载文件 (files\microsoft BizTalk Server \<*你版本*\>)。  
   
  如果从 BizTalk Server 根文件夹中运行 exe 文件，它会将 BizTalk Server 运行安装向导中，不 A4SWIFT 安装向导。  
   

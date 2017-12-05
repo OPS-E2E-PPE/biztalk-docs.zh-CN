@@ -15,24 +15,24 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 762ad9dd241f65db700e452a2ac181442c863607
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e43310756cf12c0c2a48eb6716221afc5395ecb0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-instance-data"></a>查询实例数据
 关于各个活动实例的数据可在 BAM 主导入数据库中动态创建的 SQL 视图内进行查询。  
   
  此视图的名称是  
   
- **bam_\<**  *ViewName* **> _\<**  *ActivityName* **> 查看 （_v)**  
+ **bam_\<**  *ViewName*  **\>_\<**  *ActivityName* **\>查看 （_v)**  
   
  位置  
   
- **\<***ViewName*  **>** 为在 BAM 定义 XML 中，视图元素的名称属性即相同在相关的 Microsoft Excel 向导中输入视图名称。  
+ **\<***ViewName*  **\>** 为在 BAM 定义 XML 中，视图元素的名称属性即相同在相关的 Microsoft Excel 向导中输入视图名称。  
   
- **\<***ActivityName*  **>** 为在 BAM 定义 XML 中，活动元素的名称属性即相同当在 Excel 向导中输入的活动名称。  
+ **\<***ActivityName*  **\>** 为在 BAM 定义 XML 中，活动元素的名称属性即相同当在 Excel 向导中输入的活动名称。  
   
  在查询实例数据时，请一定要注意下列情况：  
   

@@ -12,17 +12,17 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 876cdb5f3740e5f06d00a536e1459c64ac886d89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 488a87539228a90ac427339e260653a141eb7121
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="clustering-receiving-hosts"></a>群集接收主机
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]提供功能，您可以将 BizTalk 主机配置中的群集资源为[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]群集组。 若要支持集成 BizTalk 的高可用性收到适配器不应运行在多个主机实例同时，如 FTP 接收处理程序，或者，在某些情况下，POP3 接收处理程序提供了主机群集支持。 另外，在需要群集 MSMQ 服务的方案中，主机群集支持还可确保 MSMQ 适配器发送或接收的消息的事务一致性。  
+BizTalk Server 提供功能，您可以将 BizTalk 主机配置中的群集资源为[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]群集组。 若要支持集成 BizTalk 的高可用性收到适配器不应运行在多个主机实例同时，如 FTP 接收处理程序，或者，在某些情况下，POP3 接收处理程序提供了主机群集支持。 另外，在需要群集 MSMQ 服务的方案中，主机群集支持还可确保 MSMQ 适配器发送或接收的消息的事务一致性。  
   
 > [!NOTE]  
->  主机群集所用语言为[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Enterprise Edition。  
+>  主机群集时仅使用 BizTalk Server Enterprise Edition。  
   
 > [!NOTE]  
 >  您可以进行群集 BizTalk 主机之前，必须配置为至少两个[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk 组中的成员的计算机[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]群集。 有关配置的详细信息[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]群集，请参阅[Windows Server 2008 群集文档、 白皮书、 网络广播、 组](http://go.microsoft.com/fwlink/?LinkId=156818)(http://go.microsoft.com/fwlink/?LinkId=156818)。  
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [向外扩展接收主机](../technical-guides/scaling-out-receiving-hosts.md)   
  [向外扩展处理主机](../technical-guides/scaling-out-processing-hosts.md)   
- [向外扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)
+ [横向扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)

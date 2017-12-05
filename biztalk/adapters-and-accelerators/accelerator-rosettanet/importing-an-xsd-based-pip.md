@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf0ced3dbb9404cd1c4b9c81e566f47b09c7d0b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d8865d7a75bdb06895b963b8269ed457cd5804f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="importing-an-xsd-based-pip"></a>导入基于 XSD 的 PIP
 虽然 RosettaNet.org 所提供的大部分 PIP 是基于 DTD 的，但较新的 PIP 是基于 XSD 的。 以下过程描述如何导入基于 XSD 的 PIP。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
     The type or namespace name 'SerializableAttribute' does not exist in the class or namespace 'PIP7C7.System'.  
     ```  
   
-5.  查看所有.xsd 文件，以确保\<架构 > e，根节点类型名称不相同。 例如，对于 PIP7C7 PIP PartnerIdentification.xsd 通用文件夹中的具有 PartnerIdentification 的类型名称为\<架构 > （当 PartnerIdentification.xsd 在解决方案资源管理器中选择） 以及PartnerIdentification 根节点。 若要更正此错误，请在解决方案资源管理器中选择 PartnerIdentification.xsd，然后在属性页中更改类型名属性，以使其类型名与 PartnerIdentification 根结点不同。 例如，可将类型名更改为“_PartnerIdentification”。 如果不执行此步骤，则在尝试生成项目时将会收到以下错误：  
+5.  查看所有.xsd 文件，以确保\<架构\>e，根节点类型名称不相同。 例如，对于 PIP7C7 PIP PartnerIdentification.xsd 通用文件夹中的具有 PartnerIdentification 的类型名称为\<架构\>（时 PartnerIdentification.xsd 在解决方案资源管理器中选择） 以及PartnerIdentification 根节点。 若要更正此错误，请在解决方案资源管理器中选择 PartnerIdentification.xsd，然后在属性页中更改类型名属性，以使其类型名与 PartnerIdentification 根结点不同。 例如，可将类型名更改为“_PartnerIdentification”。 如果不执行此步骤，则在尝试生成项目时将会收到以下错误：  
   
     ```  
     Node "<Schema>" - This schema file has a TypeName that collides with the RootNode TypeName of one of its root Nodes. Make sure that they are different.  

@@ -13,11 +13,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3d933b494e967184c8248d6f71ad9df113fb9b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02c5f239300140022b1d26f35664add744b630c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>在 SQL Server 使用 BizTalk Server 中执行存储的过程使用单个 XML 参数
 执行具有一个参数的存储的过程是类似于执行任何其他存储的过程中所述[中使用 BizTalk Server 的 SQL Server 执行存储过程](execute-stored-procedures-in-sql-server-using-biztalk-server.md)。 但是，对于上述链接中所述的方法，你需要在设计时生成的存储过程的元数据并创建业务流程以在运行时调用过程。  
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
         ```  
         <ADD_LAST_EMP_XML_INFO xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
         <xml_info>  
-        \<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
+        <bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
         </xml_info>  
         </ADD_LAST_EMP_XML_INFO>  
         ```  
@@ -146,4 +146,4 @@ ms.lasthandoff: 09/20/2017
  启动所有三个端口。 将 XML 文件映射到文件的文件夹复制接收位置。 查找映射到文件的文件夹中的响应发送端口。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发使用 SQL 适配器的 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[使用 SQL 适配器开发 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

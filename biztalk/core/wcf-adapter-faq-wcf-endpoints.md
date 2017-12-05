@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d09bb2fd72d9b1882b4e0a9eb329da7e080e6fe5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90c59c586f0d7f1d02ad406baec694cf4e22ff24
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-wcf-endpoints"></a>WCF 适配器常见问题： WCF 终结点
 ## <a name="what-are-two-endpoints-options-can-be-created-by-the-biztalk-wcf-service-publishing-wizard"></a>BizTalk WCF 服务发布向导可以创建的两个终结点选项是什么？  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  WCF 终结点由地址、绑定和约定组成。 向导创建仅元数据终结点后，将从现有接收位置获得地址和绑定详细信息。 约定信息由 BizTalk 业务流程中存在的架构定义，或者您可以使用向导进行手动创建。 如果你选择**作为 WCF 服务发布 BizTalk 业务流程**，仅包含元数据终结点将使用从业务流程的程序集中的消息和端口类型定义的协定。  
   
- 如果你选择**将架构作为 WCF 服务发布**，该向导允许你通过使用现有的输入和输出架构中指定服务和操作名称来定义服务定义。 向导将创建一个 .svc 文件和一个 IIS 虚拟目录，以便发布元数据之后可对其进行浏览。 BizTalk WCF 服务发布向导还会创建 web.config 文件的与其 httpGetEnabled 属性\<serviceMetadata > 元素设置为 true。 这样可以发布元数据以供浏览。 如果你选择 BizTalk 接收位置发布服务元数据，该数据可以通过 GET 请求通过 HTTP 使用`?wsdl`服务的 URL 的末尾。  
+ 如果你选择**将架构作为 WCF 服务发布**，该向导允许你通过使用现有的输入和输出架构中指定服务和操作名称来定义服务定义。 向导将创建一个 .svc 文件和一个 IIS 虚拟目录，以便发布元数据之后可对其进行浏览。 BizTalk WCF 服务发布向导还会创建 web.config 文件的与其 httpGetEnabled 属性\<serviceMetadata\>元素设置为 true。 这样可以发布元数据以供浏览。 如果你选择 BizTalk 接收位置发布服务元数据，该数据可以通过 GET 请求通过 HTTP 使用`?wsdl`服务的 URL 的末尾。  
   
 ## <a name="are-service-endpoints-hosted-in-iis-and-why"></a>服务终结点是否承载于 IIS 中，为什么？  
  是的，服务终结点通过以下三个独立适配器的其中之一承载于 IIS 中：  

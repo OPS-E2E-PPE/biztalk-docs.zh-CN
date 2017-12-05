@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c29657226c993a68b8cd557a39a7837717e2c66
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09537a9fda34ee1148e3e4d880f17f35f83f761c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ack-message-schema-types"></a>ACK 消息架构类型
 确认消息架构有两种形式：  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
     |MSA|消息确认|2|  
     |[错误]|错误|2|  
   
- 确认的消息具有 MSH9 字段设置为**ACK ^\<***触发器事件***> ^ ACK**或**MCF ^\<** *触发器事件***> ^ ACK**。 因此，MSH9 的第一个组件是不足以确定 ACK 架构。 文档名称[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 管道使用始终包含 HL7 作为命名空间。 类型名称是 MSH9_1 字段，它是 ACK 或 MCF 的内容。 因此，如上例中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]管道查找具有名称 HL7 的架构。ACK 或 HL7。MCF，具体取决于 MSH9_1 字段的值。 消息正文的架构是相同的 2.X 版本的所有消息。  
+ 确认的消息具有 MSH9 字段设置为**ACK ^\<***触发器事件***\>^ ACK**或**MCF ^\<** *触发器事件***\>^ ACK**。 因此，MSH9 的第一个组件是不足以确定 ACK 架构。 文档名称[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 管道使用始终包含 HL7 作为命名空间。 类型名称是 MSH9_1 字段，它是 ACK 或 MCF 的内容。 因此，如上例中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]管道查找具有名称 HL7 的架构。ACK 或 HL7。MCF，具体取决于 MSH9_1 字段的值。 消息正文的架构是相同的 2.X 版本的所有消息。  
   
 > [!NOTE]
 >  在批处理中 / 批处理出 ACK 方案中，确认标头的内容，如下所示：  
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
  [创建和处理确认](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [消息确认段](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
  [设置发送端口用于接收确认](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)   
- [确认错误条件](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)
+ [错误条件确认](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

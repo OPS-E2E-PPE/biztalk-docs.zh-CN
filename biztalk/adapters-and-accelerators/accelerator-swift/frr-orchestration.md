@@ -32,11 +32,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43dd7d6245546f8d35760bfe2ed2224482d9d4bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f56b16f59b967ccd9e57d03d38f86e64795da477
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="frr-orchestration"></a>FRR 业务流程
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]实现 FRR 通过 FRR 业务流程。 业务流程确定的 FIN 响应的令牌相关的匹配原始消息的消息 ID。 与执行向 SAA，发送消息的发送端口的发送功能和执行从 SAA 接收消息的接收位置接收函数，它将处理并行中的消息。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]下面的值，如果此响应否认于 _FRRFailedReason:  
   
-    -   *\<ErrorCode >* （从 MTS21_FIN_ACKNAK 负确认消息的 405 字段）  
+    -   *\<ErrorCode\>*  （从 MTS21_FIN_ACKNAK 负确认消息的 405 字段）  
   
     -   TransportError （从 MQ 系列平移/NAN 消息）  
   

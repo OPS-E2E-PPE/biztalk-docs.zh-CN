@@ -21,11 +21,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d05d9d0d98a82c2ded297a6cd8bee9d7bcc9a6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1621973fed0c7a87538e3ed18161f05c4c9cf9e6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sso-affiliate-applications"></a>SSO 关联应用程序
 企业单一登录 (SSO) 关联应用程序是用于表示使用 SSO 连接到的诸如主机、后端系统或业务应用程序之类的系统或子系统的逻辑实体。 关联应用程序可以表示诸如大型机或 UNIX 计算机之类的后端系统。 它还可以表示应用程序（如 SAP）或系统分支（如“福利待遇”子系统或“付款存根”子系统）。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
   
 |应用程序字段|Description|Description|  
 |------------------------|-----------------|-----------------|  
-|字段 [0]|\<*凭据*>： 屏蔽/Unmasked|确定要连接到关联应用程序最终用户所必须提供的凭据的类型（用户 ID、密码和智能卡），以及是否屏蔽此凭据（即是否在屏幕中显示用户键入的字符）。<br /><br /> 可以输入与关联应用程序凭据数相同数量的字段，但第一个字段必须为用户 ID。<br /><br /> 在创建应用程序后不能更改此属性。|  
+|字段 [0]|\<*凭据*\>： 屏蔽/Unmasked|确定要连接到关联应用程序最终用户所必须提供的凭据的类型（用户 ID、密码和智能卡），以及是否屏蔽此凭据（即是否在屏幕中显示用户键入的字符）。<br /><br /> 可以输入与关联应用程序凭据数相同数量的字段，但第一个字段必须为用户 ID。<br /><br /> 在创建应用程序后不能更改此属性。|  
   
 ## <a name="see-also"></a>另请参阅  
  [管理关联应用程序](../core/managing-affiliate-applications.md)   

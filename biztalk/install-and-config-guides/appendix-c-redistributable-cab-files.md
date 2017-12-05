@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6049ac62e8a8b55ff6bbfe241f716c2ea9570d34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1a1f2b6866a2841abaa248479430a7584db3a0b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="appendix-c-redistributable-cab-files"></a>附录 C：可再发行的 CAB 文件
 BizTalk Server 安装程序使用这些 CAB 文件。
@@ -40,7 +40,7 @@ BizTalk Server 安装程序使用这些 CAB 文件。
 
 - SQL XML 可能有其自己的软件要求（如 `.NET Framework 3.5` 和 `.NET Framework 2.0`），这不包括在 CAB 文件中。 如果 BizTalk Server 可访问 Internet，则可能会自动安装 SQL XML 软件要求。 如果 BizTalk Server 不可访问 Internet，请手动安装 SQL XML 软件要求。
 
-- CAB 文件安装路径也会在安装文件夹 ([!INCLUDE[btsBizTalkServerPathx64_md](../includes/btsbiztalkserverpathx64-md.md)]\<your version>) 中的 **Setup.xml** 文件中列出。
+- CAB 文件安装路径也会列在**Setup.xml**安装文件夹中的文件 ([!INCLUDE[btsBizTalkServerPathx64_md](../includes/btsbiztalkserverpathx64-md.md)]\<你版本\>)。
   
 -   运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装程序时，应在你的计算机上安装一些 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 所需的软件。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75cc2fa6a7e4f6318818534f6b3f99323f1d8ddf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb8bf8d87f7868367c252cdc75842b234cb06ff9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>如何从 BizTalk 跟踪数据库手动清除数据
 由于 DTA 存档和清除 SQL Server 代理作业不断清除 BizTalk 跟踪 (BizTalkDTADb) 数据库并对存储的跟踪数据进行压缩，因此可减少从该数据库中手动清除数据的需要。 但是，如果 BizTalk 跟踪 (BizTalkDTADb) 数据库迅速增长，从而导致性能持续下降以及 DTA 存档和清除作业无法跟上数据库的增长速度，则可能需要手动清除数据。  
@@ -103,9 +103,9 @@ ms.lasthandoff: 09/20/2017
   
 21. 在命令提示符下，请重新启动每个 IIS 服务停止在步骤 4 中。 类型：  
   
-     **net 开始**  *\<IISserviceName >*  
+     **net 开始**  *\<IISserviceName\>*  
   
-     其中 *\<IISserviceName >*是你想要重新启动 IIS 服务的名称。 您必须对每个 IIS 服务重复执行此命令。  
+     其中 *\<IISserviceName\>* 是你想要重新启动 IIS 服务的名称。 您必须对每个 IIS 服务重复执行此命令。  
   
 ## <a name="see-also"></a>另请参阅  
  [存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)   

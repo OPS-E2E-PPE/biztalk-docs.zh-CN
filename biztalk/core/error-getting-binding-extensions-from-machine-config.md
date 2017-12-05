@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8dfdedb58e4372caed38c7c272cbaaf65fefbcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbe53def02f42c59cf5e40380c898f47695c19da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>从 machine.config 获取绑定扩展时出错。
 ## <a name="details"></a>详细信息  
@@ -58,6 +58,6 @@ ms.lasthandoff: 09/20/2017
         ```  
   
 > [!NOTE]
->  此外可以将上面的代码添加到 WCF 扩展选项卡。如果扩展需要在接收端，请参阅**\<主机名 > 属性对话框中，WCF 扩展**选项卡 （WCF 自定义或 WCF CustomIsolated 适配器接收处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 如果扩展需要在发送端，请参阅**\<主机名 > 属性对话框中，WCF 扩展**选项卡 （WCF 自定义适配器发送处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+>  此外可以将上面的代码添加到 WCF 扩展选项卡。如果扩展需要在接收端，请参阅**\<主机名\>属性对话框中，WCF 扩展**选项卡 （WCF 自定义或 WCF CustomIsolated 适配器接收处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 如果扩展需要在发送端，请参阅**\<主机名\>属性对话框中，WCF 扩展**选项卡 （WCF 自定义适配器发送处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
   
  3. 关闭并重新打开管理控制台。 您应该能够在 WCF-Custom 适配器中查看您的自定义行为，并且当您启用时端口应保持启用状态。

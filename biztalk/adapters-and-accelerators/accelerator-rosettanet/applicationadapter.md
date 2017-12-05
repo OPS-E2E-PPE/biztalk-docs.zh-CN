@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc2808f8cdc2d24a2f7c13864a153361984d0981
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee9d04f98da5e9b8aa1faba81f32fe5ec37d23b9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="applicationadapter"></a>ApplicationAdapter
 ApplicationAdapter 示例演示如何在接收消息时从响应方或发起方的公用流程和专用流程发送通知。 你可以自定义该示例，使其具有任何你需要的其他功能。  
@@ -27,7 +27,7 @@ ApplicationAdapter 示例演示如何在接收消息时从响应方或发起方�
   
  如果更改了 ApplicationAdapter 示例或者 ApplicationAdapter 示例依赖的任何外部环境变量，请重新启动 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 公用流程的宿主 BizTalk 主机服务。  
   
- ApplicationAdapter 示例代码位于\<*驱动器*>: \program BizTalk\<版本 > Accelerator for RosettaNet\SDK\ApplicationAdapter\\。  
+ ApplicationAdapter 示例代码位于\<*驱动器*\>: files\ BizTalk\<版本\>Accelerator for RosettaNet\SDK\ApplicationAdapter\\.  
   
 ## <a name="demonstrates"></a>演示  
  ApplicationAdapter 示例演示如何通知响应方专用流程公用流程已收到消息。 通知指明消息类别、源参与方名称、目标参与方名称、PIP 代码、PIP 版本以及 PIP 实例 ID。 可以为操作或响应消息发送此通知。  
@@ -57,7 +57,7 @@ ApplicationAdapter 示例演示如何在接收消息时从响应方或发起方�
   
 #### <a name="to-add-the-application-adapter-to-an-agreement"></a>向协议添加应用程序适配器  
   
-1.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] **BizTalk\<版本 > Accelerator for RosettaNet**，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**。  
+1.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] **BizTalk\<版本\>Accelerator for RosettaNet**，，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**。  
   
 2.  在[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，然后单击**协议**。  
   

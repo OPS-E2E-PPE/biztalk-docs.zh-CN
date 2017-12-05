@@ -20,11 +20,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28d11e5e174808ca7718d5fef98b3ad079cffc18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09bad0bf41f5b509f9a64e9484cac84f66a84e4b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="correlation-sets"></a>关联集
 您可以通过定义相关集，实现消息与业务流程实例的此类相关。 相关集是一组属性*具有特定值*。 相关集不同于相关类型，后者只是属性的列表。 如果某一传入消息不具有所有这些属性（每个属性都有匹配的值），则相关将失败，并且业务流程实例将不会收到该消息。  
@@ -35,17 +35,17 @@ ms.lasthandoff: 09/20/2017
   
 |相关类型属性|可能的 XML 表示形式|  
 |-------------------------------|---------------------------------|  
-|社会保障号|\<SSN >\</SSN >|  
-|出生日期|\<DOB >\</DOB >|  
-|性别|\<性别 > \< /性别 >|  
+|社会保障号|\<SSN\>\</SSN\>|  
+|出生日期|\<DOB\>\</DOB\>|  
+|性别|\<性别\> \< /性别\>|  
   
  在从该相关类型派生的相关集可由以下属性和值构成时：  
   
 |相关集属性/值|可能的 XML 表示形式|  
 |-------------------------------------|---------------------------------|  
-|社会保障号 = 222112222|\<SSN > 222112222\</SSN >|  
-|出生日期 = “1/1/1995”|\<DOB >"1/1/1995"\</DOB >|  
-|性别 = Male|\<性别 > M \< /性别 >|  
+|社会保障号 = 222112222|\<SSN\>222112222\</SSN\>|  
+|出生日期 = “1/1/1995”|\<DOB\>"1/1/1995"\</DOB\>|  
+|性别 = Male|\<性别\>M \< /性别\>|  
   
 > [!NOTE]
 >  每个相关集都支持最多三个字符。  

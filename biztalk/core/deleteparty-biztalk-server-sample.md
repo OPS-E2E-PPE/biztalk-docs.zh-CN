@@ -19,11 +19,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d07793400f0217ef2f3ddcc637265f186647a00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68016285a53a2655c56810028925a91c1f8d66b0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deleteparty-biztalk-server-sample"></a>DeleteParty （BizTalk Server 示例）
 DeleteParty 示例演示如何删除指定参与方。  
@@ -52,7 +52,7 @@ DeleteParty 示例演示如何删除指定参与方。
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  此示例位于以下 SDK 的位置：  
   
- \<*示例路径*> \Admin\ExplorerOM\DeleteParty\  
+ \<*示例路径*\>\Admin\ExplorerOM\DeleteParty\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -70,12 +70,11 @@ DeleteParty 示例演示如何删除指定参与方。
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\DeleteParty\bin\Debug\  
+     \<*示例路径*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
   
 2.  运行 DeleteParty.exe 文件，并传递下面两个命令行参数之一：  
   
-    -   **\<**   
-         ***PartyName* >。** 要删除的参与方的名称。 如果参与方名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***PartyName* \>。** 要删除的参与方的名称。 如果参与方名称包含空格，则将该名称置于引号中。  
   
     -   **/?.** 显示帮助。  
   
@@ -166,4 +165,4 @@ Name : Party2
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

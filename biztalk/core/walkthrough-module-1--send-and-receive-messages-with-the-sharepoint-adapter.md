@@ -23,11 +23,11 @@ caps.latest.revision: "41"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c66a54a50479a168715ccc66c116372f68f21698
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e8e83297233c4f8ac51ad90f488437a6c259691a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a>演练： 模块 1-发送和接收消息与 Windows SharePoint Services Adapter
 本演练介绍如何配置 Windows SharePoint Services 和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，以便可以使用 Windows SharePoint Services 适配器和基于内容的路由 (CBR) 来发送和接收消息。 基于内容的路由消除了订阅明确绑定到特定端口的消息的必要。 同时为那些需要根据信封属性或仅根据接收端口配置属性路由消息的用户提供了更多的灵活性。 Windows SharePoint Services 适配器的简介，请参阅[什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>先决条件  
  以下为执行本主题中步骤的前提条件：  
   
--   你必须具有的完整安装的单一服务器部署[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]上运行[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]。  
+-   你必须具有 BizTalk Server 上运行的完整安装的单一服务器部署[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]。  
   
  有关在多服务器部署中使用的 Windows SharePoint Services 适配器的信息，请参阅[设置和部署 Windows SharePoint Services Adapter](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)。  
   

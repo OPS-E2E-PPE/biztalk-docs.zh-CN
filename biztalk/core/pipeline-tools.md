@@ -28,11 +28,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c64b61c1c96b0ad6f9185ccd511d00f6dae2251
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c567ea50f151f0ee36505bd6d8a71af059eb67d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="pipeline-tools"></a>管道工具
 使用随 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 软件开发工具包 (SDK) 提供的管道工具可以验证管道在正常工作，而不必配置 BizTalk Server 环境，如发送/接收端口。 管道工具还具有以下用途：  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
 -   单独对管道（而不是整个消息传送子系统）进行精细的性能测量。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*安装路径*> \SDK\Utilities\PipelineTools  
+ \<*安装路径*\>\SDK\Utilities\PipelineTools  
   
  将管道工具用于执行、调试和分析管道和管道组件（即平面文件和 XML 组装器/拆装器组件）。  
   
@@ -198,7 +198,7 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd:MyProject.My
   
 ```  
   
- \-或者-  
+ \- 或 -  
   
 ```  
 Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyProject.btproj -c  
@@ -292,4 +292,4 @@ XmlDasm.exe file_in.txt –ds myDocumentSchema.xsd –es myEnvelopeSchema1.xsd �
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [SDK 中的实用程序](../core/utilities-in-the-sdk.md)
+ [SDK 中的实用工具](../core/utilities-in-the-sdk.md)

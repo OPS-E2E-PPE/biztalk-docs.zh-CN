@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 495e4cfe4c9c9b9d7ae16ee58f7831ad5447d37b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38c08be5cd58ed6c80af351715ff6257f533c6af
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="filetransport-sample"></a>FileTransport 示例
 FileTransport 示例演示如何配置[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]用于文件端口，而不是 SQL 端口。 FileTransport 示例使用文件传输协议 (FTP) 发送和接收消息，而不是使用 HTTP。  
@@ -28,7 +28,7 @@ FileTransport 示例演示如何配置[!INCLUDE[btsCoName](../../includes/btscon
 >  此示例不支持消息附件。  
   
 ## <a name="filetransport-binding-files"></a>FileTransport 绑定文件  
- FileTransport 示例包含两个绑定文件。 你可以使用这些绑定文件中的任何一个来设置用于 BTARN 业务流程的文件端口。 这些绑定文件位于*\<驱动器 >*: files\microsoft BizTalk\<版本 > RosettaNet \SDK\FileTransport 快捷键。 在编辑器（如记事本）中打开每个绑定文件，可查看业务流程、发送端口、接收端口和接收位置的设置，如下所示：  
+ FileTransport 示例包含两个绑定文件。 你可以使用这些绑定文件中的任何一个来设置用于 BTARN 业务流程的文件端口。 这些绑定文件位于*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet \SDK\FileTransport 快捷键。 在编辑器（如记事本）中打开每个绑定文件，可查看业务流程、发送端口、接收端口和接收位置的设置，如下所示：  
   
 -   PrivateInitiatorusingFileDrops.xml  
   
@@ -50,7 +50,7 @@ FileTransport 示例演示如何配置[!INCLUDE[btsCoName](../../includes/btscon
   
     -   接收位置：File_To_PrivateResponder  
   
- 以下过程介绍如何使用 BTSTask 命令从绑定文件导入绑定。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“ImportBindings 命令”主题。  
+ 以下过程介绍如何使用 BTSTask 命令从绑定文件导入绑定。 有关详细信息，请参阅 BizTalk Server 帮助中的"ImportBindings 命令"主题。  
   
 ## <a name="procedure"></a>过程  
   
@@ -66,7 +66,7 @@ FileTransport 示例演示如何配置[!INCLUDE[btsCoName](../../includes/btscon
   
 5.  取消登记 Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatatorProcess。  
   
-6.  创建 \FileDrops 文件夹 C:\Program Files\Microsoft BizTalk BTARN 文件夹下的\<版本 > Accelerator for RosettaNet，然后创建 \FileDrops 下的以下文件夹结构：  
+6.  创建 \FileDrops 文件夹 C:\Program Files\Microsoft BizTalk BTARN 文件夹下的\<版本\>Accelerator for RosettaNet，然后创建 \FileDrops 下的以下文件夹结构：  
   
     -   \PrivateInitiator  
   

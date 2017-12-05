@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20f9707b8606e64773d42c480735d3f876f1c3ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 491c71a446829ddddfc4d7c55053b94dcf7fc9d1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V 上的系统资源成本
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>与 HYPER-V 上运行来宾操作系统的系统资源成本  
@@ -39,12 +39,12 @@ ms.lasthandoff: 09/20/2017
  本部分的其余部分提供有关 BizTalk Server 磁盘性能的背景信息、 介绍的测试配置参数使用，并提供获得的测试结果的摘要。  
   
 #### <a name="disk-performance-when-running-a-biztalk-server-solution-on-hyper-v"></a>在 HYPER-V 上运行 BizTalk Server 解决方案时的磁盘性能  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]是的极数据库密集型应用程序可能需要最多 13 SQL Server 数据库的创建。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]仍然数据存储到磁盘存在很好的频率，此外，MSDTC 事务的上下文中执行此。 因此，数据库性能至关重要的 BizTalk Server 中的任何解决方案的总体性能。 HYPER-V 提供了合成 SCSI 控制器，这两者都提供显著的性能改进了对使用模拟的 IDE 设备如 IDE 筛选器驱动程序提供使用 Virtual Server 2005。  
+ BizTalk Server 是极数据库密集型应用程序可能需要最多 13 SQL Server 数据库的创建。 BizTalk Server 仍然数据存储到磁盘存在很好的频率和此外，MSDTC 事务的上下文中执行此。 因此，数据库性能至关重要的 BizTalk Server 中的任何解决方案的总体性能。 HYPER-V 提供了合成 SCSI 控制器，这两者都提供显著的性能改进了对使用模拟的 IDE 设备如 IDE 筛选器驱动程序提供使用 Virtual Server 2005。  
   
  配置为使用 SCSI 控制器的数据卷的磁盘。 这可以保证因为而模拟的 IDE 控制器可用的而无需安装 HYPER-V 集成服务已安装 HYPER-V 集成服务情况下，才会安装 SCSI 控制器，安装了集成服务。 使用 SCSI 控制器或使用 integration services 提供的 IDE 筛选器驱动程序执行的磁盘 I/O 是明显优于磁盘输入/输出性能提供与模拟的 IDE 控制器。 因此，若要确保最佳磁盘的 HYPER-V 虚拟化环境中的数据文件的 I/O 性能，在主机和来宾操作系统上安装集成服务，并且使用合成 SCSI 控制器配置数据卷的磁盘。 对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，应将每个 VHD 附加到更好的总体性能的单独合成 SCSI 控制器。 此外，每个 VHD 应存储在单独的物理磁盘或 Lun 上。  
   
 #### <a name="measuring-passthrough-disk-performance"></a>测量的传递磁盘性能  
- 在任何合并练习很重要，若要最大利用可用资源。 如前文所述，存储 I/O 在 SQL 数据卷上的所扮演的重要部分中的整体性能[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]解决方案。 因此作为本指南的一部分进行了测试对性能的 HYPER-V 中的传递磁盘的物理磁盘的相对性能。 MessageBox 数据的相对性能中 Physical_SQL01 的驱动器和 Virtual_SQL01 测量使用开放源代码工具最初由 Intel Corporation 开发和现在维护 IOMeter 通过开放源开发实验室 (OSDL)。 有关 IOMeter 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)。  
+ 在任何合并练习很重要，若要最大利用可用资源。 如前文所述，SQL 数据卷上的存储 I/O 在 BizTalk Server 解决方案的总体性能中扮演的重要部分。 因此作为本指南的一部分进行了测试对性能的 HYPER-V 中的传递磁盘的物理磁盘的相对性能。 MessageBox 数据的相对性能中 Physical_SQL01 的驱动器和 Virtual_SQL01 测量使用开放源代码工具最初由 Intel Corporation 开发和现在维护 IOMeter 通过开放源开发实验室 (OSDL)。 有关 IOMeter 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412)。  
   
  下表描述了在测试环境、 已使用的 IOMeter 配置选项、 已运行的测试的说明和结果的摘要中使用的物理和虚拟硬件配置。  
   
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="results"></a>结果  
  传递磁盘时能够获得超过 90%的直接连接到 Physical_SQL01 的 SAN LUN 的吞吐量。  总，读取和写入相同的每秒传输的总 MB，每秒 I/o 已都处于 10%。  正常的磁盘的响应时间应介于 1-15 毫秒的时间让读取和写入。 平均 I/O 响应时间是小于 4 毫秒，这两个磁盘上。 随机读取响应时间为 5.4 ms 在物理上和传递磁盘上的 5.7 ms。 写入响应时间是小于 0.5 毫秒上物理和虚拟环境。  
   
- 结果指示使用启用的 SCSI 控制器的传递磁盘，可以提供超过 90%的直接连接的物理磁盘的性能。 I/O 子系统性能至关重要的高效[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]操作，通过提供极好的吞吐量和响应时间 HYPER-V 的最佳候选项是合并[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]环境。 下表提供了到物理磁盘的传递磁盘的性能进行比较时，观察到的磁盘测试结果摘要：  
+ 结果指示使用启用的 SCSI 控制器的传递磁盘，可以提供超过 90%的直接连接的物理磁盘的性能。 I/O 子系统性能至关重要高效 BizTalk Server 操作，通过提供极好的吞吐量和响应时间 HYPER-V 适用的最佳候选项整合 BizTalk Server 环境。 下表提供了到物理磁盘的传递磁盘的性能进行比较时，观察到的磁盘测试结果摘要：  
   
 |度量|Physical_SQL01 （物理磁盘）|Virtual_SQL01 （传递）|传递磁盘的物理磁盘的相对性能|  
 |-----------------|---------------------------------------|------------------------------------|-----------------------------------------------------------------|  

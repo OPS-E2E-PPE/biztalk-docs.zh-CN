@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8c9bf8691701aa9fba8060865fcd3cb5abfba06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 089942c8b531575c157c0037777e85fe6d8608a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="design-of-the-esb-exception-management-framework"></a>ESB 异常管理框架的设计
 用于管理异常的一致且可重用的模式是任何开发项目; 一个核心考虑因素它们可帮助最大化可维护性并使其更轻松地支持后部署的应用程序。  
@@ -50,24 +50,24 @@ ms.lasthandoff: 09/20/2017
   
 -   独立检测发生了异常。  
   
--   手动保存到磁盘使用在失败的消息[!INCLUDE[prague](../includes/prague-md.md)]管理控制台。  
+-   手动将保存到磁盘使用 BizTalk Server 管理控制台在失败的消息。  
   
 -   手动编辑和更正消息并重新将其提交至系统。 在某些情况下，此过程都有可能会丢失重要的上下文信息。  
   
- 若要解决这些问题，[!INCLUDE[prague](../includes/prague-md.md)]提供的失败消息路由的机制。 开发人员和管理员可以用于创建业务流程或配置为订阅消息传送的子系统中发生的任何异常的消息发送端口。 这将提供自动的错误检测和路由机制，可以保留原始消息状态并解决了检测异常的问题。  
+ 若要解决这些问题，BizTalk Server 提供的失败消息路由的机制。 开发人员和管理员可以用于创建业务流程或配置为订阅消息传送的子系统中发生的任何异常的消息发送端口。 这将提供自动的错误检测和路由机制，可以保留原始消息状态并解决了检测异常的问题。  
   
  为业务流程不提供自动失败的邮件路由，因为开发人员必须考虑错误通过将异常处理程序块添加到业务流程作用域形状。 通过此解决方案，每个业务流程可以有其自己的异常处理，但没有任何机制可重复使用异常处理跨多个业务流程的功能。  
   
  这意味着，现在有两个非常不同的方式处理和管理在 BizTalk Server 系统中，消息传送异常和异常处理的业务流程中的第三个方法。 因此，开发人员必须自定义异常处理机制根据其自己的需求，如果他们想要实现匹配在本部分前面所述的要求的系统。  
   
 ## <a name="biztalk-server-administration-console"></a>BizTalk Server 管理控制台  
- [!INCLUDE[prague](../includes/prague-md.md)]管理控制台提供了一套称为 BizTalk 组中心数据库的组概述页。 使用这些页面，管理员可以查询有关挂起的消息和按应用程序、 服务名称、 错误代码或 URI，分组的异常中图 1 所示。  
+ BizTalk Server 管理控制台提供了一套称为 BizTalk 组中心数据库的组概述页。 使用这些页面，管理员可以查询有关挂起的消息和按应用程序、 服务名称、 错误代码或 URI，分组的异常中图 1 所示。  
   
  ![管理员控制台](../esb-toolkit/media/ch4-adminconsole.gif "第四章第 4 AdminConsole")  
   
  **图 1**  
   
- **[!INCLUDE[prague](../includes/prague-md.md)]管理控制台组概述页面**  
+ **BizTalk Server 管理控制台组概述页面**  
   
  虽然组概述功能提供了用于查看异常的常见用户界面，但仅限于"实时"服务实例视图。 检查状态可以是繁琐的任务，因为向下钻取的管理员必须通过为每个项的树。 此外，若干其他因素将 BizTalk Server 管理控制台功能限制是为了用作应用程序异常报告工具：  
   
@@ -79,6 +79,6 @@ ms.lasthandoff: 09/20/2017
   
 -   控制台显示仅未经处理的异常 （挂起的服务实例）。 如果开发人员处理业务流程中的异常，允许以正常方式完成的业务流程的异常信息将永远不会显示在管理控制台。  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]通过 ESB 失败业务流程异常路由机制解决这些限制。 这非常相似的失败消息路由机制[!INCLUDE[prague](../includes/prague-md.md)]。 此外，[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括订阅 ESB 失败业务流程异常路由机制和失败消息路由机制生成的消息的发送端口中的管道组件并对它们进行规范化。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]通过 ESB 失败业务流程异常路由机制解决这些限制。 这十分类似于 BizTalk Server 的失败消息路由机制。 此外，[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括订阅 ESB 失败业务流程异常路由机制和失败消息路由机制生成的消息的发送端口中的管道组件并对它们进行规范化。  
   
  ESB 异常 Management Framework 利用其他功能中的 BizTalk Server 中，如订阅模型和基于事件的业务活动监视 (BAM)。 也就是说 ESB 异常管理框架，可以跟踪与 BAM，异常数据点，然后将其发布到 BizTalk BAM 门户，以便监视。

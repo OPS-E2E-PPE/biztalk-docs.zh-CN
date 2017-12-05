@@ -19,25 +19,25 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed2dc02911ad8ce78e3657c78ad1150d96b4f4f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af11e69c90c9d211e36e706710c1d1de44a72399
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lobapplication"></a>LOBApplication
 使用 LOBApplication 实用工具可以将操作或响应消息提交给贸易合作伙伴，并模拟实际的业务线 (LOB) 桌面程序。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供中的示例消息\<*驱动器*> files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances 文件夹。  
+ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供中的示例消息\<*驱动器*\>files\microsoft BizTalk\<版本\>RosettaNet\SDK\LOBApplication\ 快捷键SampleInstances 文件夹。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> files\microsoft BizTalk\<版本 > RosettaNet\SDK\LOBApplication 快捷键  
+ \<*驱动器*\>files\microsoft BizTalk\<版本\>RosettaNet\SDK\LOBApplication 快捷键  
   
 ## <a name="running-lobapplication"></a>运行 LOBApplication  
   
 #### <a name="to-run-lobapplication"></a>若要运行 LOBApplication  
   
-1.  在 Windows 资源管理器，移动到\<*驱动器*> files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\\。  
+1.  在 Windows 资源管理器，移动到\<*驱动器*\>files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 2.  双击**LOBApplication.exe**，然后按 ENTER。  
   

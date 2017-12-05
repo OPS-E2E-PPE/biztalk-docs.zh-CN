@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ce151a83389fe5f0b3884446b5b793d1b58c618
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b00fc7d49024cec6f9c300444646da82069e16cc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-project-references"></a>第 2 课： 添加项目引用
 你添加项目引用，以便你管道可以访问位于 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll 文件中的默认运行时架构。 此程序集文件包含与消息类型解析所需的提升属性的标头架构。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在添加引用对话框中，单击**浏览**选项卡。  
   
-3.  浏览到  **\<*驱动器*>: files\microsoft BizTalk Accelerator for SWIFT\Assemblies * *。  
+3.  浏览到  **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\Assemblies * *。  
   
 4.  选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**文件。  
   

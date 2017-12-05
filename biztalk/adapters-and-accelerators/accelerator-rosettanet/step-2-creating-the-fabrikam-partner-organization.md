@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3133f5e2ae7b3a234bef276af67afda391c1f7cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de00977edecb97420742a6510c3290cfe3c76ea5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-the-fabrikam-partner-organization"></a>步骤 2： 创建 Fabrikam 伙伴组织
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建新的贸易合作伙伴。 此教程中的贸易合作伙伴为 Fabrikam 组织。  
   
 ### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
   
--   Contoso 计算机上，单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本 > Accelerator for RosettaNet**，，然后单击 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
+-   Contoso 计算机上，单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
   
 ### <a name="to-create-fabrikam-as-a-trading-partner"></a>创建 Fabrikam 作为贸易合作伙伴  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 4.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 3： 创建 Contoso 0 C 2 贸易合作伙伴协议](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)
+ [步骤 3：创建 Contoso 0C2 贸易合作伙伴协议](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)

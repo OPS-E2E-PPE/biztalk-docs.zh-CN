@@ -12,18 +12,18 @@ caps.latest.revision: "39"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07810f513c3530b214eb1405462db1e6ac96ed84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fc232edf6d99e31b5679932eb19873481fa579b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-deploy-a-biztalk-assembly-from-visual-studio"></a>如何从 Visual Studio 部署 BizTalk 程序集
 本主题说明了使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案资源管理器或[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，部署将 BizTalk 的程序集[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]到 BizTalk 应用程序。 尽管可以从项目级部署单个程序集（如右键单击项目，然后单击“部署”），也可以从解决方案级一次部署解决方案中的所有程序集（如右键单击解决方案，然后单击“部署”），但我们强烈建议你从解决方案级一次部署所有程序集。  
   
  对于早期版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，如果你需要部署解决方案中的多个程序集，并且解决方案中的任一程序集依赖于其他程序集中的任何一个，则必须按照其依赖关系的相反顺序分别部署程序集。 例如，如果 Assembly1 依赖于 Assembly2，则必须先部署 Assembly2，然后才能部署 Assembly1。  
   
- 从项目级部署程序集时也是这样。 但是，对于 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，如果你是从解决方案级部署程序集，而不是从项目级部署，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 会自动处理好所有的部署步骤，包括按正确的顺序部署程序集。 因此，为了简化部署，如果另一个程序集依赖于你要部署的程序集，则应该在解决方案级部署程序集。  
+ 从项目级部署程序集时也是这样。 与 BizTalk Server 中，但是，当你部署的解决方案级别而不是项目级别中的程序集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]会自动负责所有的部署步骤，包括部署中正确的顺序的程序集。 因此，为了简化部署，如果另一个程序集依赖于你要部署的程序集，则应该在解决方案级部署程序集。  
   
  当你选择了从 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 部署项目或解决方案的选项后，会生成一个或多个程序集，并部署到本地 BizTalk 组中的指定 BizTalk 应用程序中。 如果该应用程序在组中不存在，则部署操作也会创建该应用程序。 程序集及其包含的项目将被注册，并且其数据存储在 BizTalk 组的 BizTalk 管理（配置）数据库中。 此外，如果在项目的部署属性中指定此选项，程序集将被添加到全局程序集缓存 (GAC)。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  键入以下命令，替换为适当的值下, 表中所述：  
   
-     **devenv / 部署***SolnConfigName* *SolutionName* [**/项目** *ProjName*] [**/projectconfig** *ProjConfigName*]    
+     **devenv / 部署***SolnConfigName* *SolutionName* [**/项目** *ProjName*] [**/projectconfig** *ProjConfigName*]  
   
      例如：  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
      第一次部署包含业务流程的程序集时，可能收到通知你绑定文件中不包含该业务流程的警告消息。 这是因为在部署后业务流程没有自动绑定到主机。 你必须手动执行此步骤。  
   
 ## <a name="see-also"></a>另请参阅  
- [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

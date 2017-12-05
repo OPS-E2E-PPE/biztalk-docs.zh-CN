@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f13e4539fca9a14e7827afcb092af76e03f8acc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00000896eb4cb97e44ed51602675fc65495552be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>反射 BizTalk 程序集时发生异常，未找到某个文件
 ## <a name="details"></a>详细信息  
@@ -37,8 +37,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>用户操作  
  除了错误消息中指定的操作之外，将引用程序集移到全局程序集缓存，或将其复制到与 BizTalk 程序集相同的位置。  
   
-1.  单击**启动**，指向**所有程序**，指向 **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** ，然后单击 **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** 。  
+1.  单击**启动**，指向**所有程序**，指向**Visual Studio**，然后单击**Visual Studio**。  
   
 2.  打开命令提示符。  
   
-3.  浏览到的程序集的位置并输入**gacutil /I /\<***程序集名称***>.dll**
+3.  浏览到的程序集的位置并输入**gacutil /I /\<***程序集名称***\>.dll**

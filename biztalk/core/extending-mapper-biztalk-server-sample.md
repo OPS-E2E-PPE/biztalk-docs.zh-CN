@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f24f7f55e752e25ed06ec68c8eca40d2e7509683
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b2b4538d8bff60330de24f00b6565ed43a9c079
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="extending-mapper-biztalk-server-sample"></a>扩展映射器 （BizTalk Server 示例）
 扩展映射器示例对如何使用和扩展 BizTalk 映射器进行演示。 本示例包含多个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 映射文件 (.btm)，其中的每个文件均阐释了 BizTalk 映射器的一个功能。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
  扩展映射器示例使用基于内容的路由 (CBR)，不使用业务流程。 通过在示例发送端口上指定筛选器，扩展映射器示例可直接连接到示例接收端口。 会在发送端口上指定一个要应用到已处理文档的映射。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\XmlTools\ExtendingMapper  
+ *\<示例路径\>*\XmlTools\ExtendingMapper  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，将目录更改 (**cd**) 的以下文件夹：  
   
-     *\<示例路径 >*\XmlTools\ExtendingMapper  
+     *\<示例路径\>*\XmlTools\ExtendingMapper  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -97,13 +97,13 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  如果要使用 Scriptor_InlineXsltCallingExternalAssembly.btm，则必须编辑 ExternalAssembly.xml 文件。 BizTalk 使用 ExternalAssembly.xml 将映射器扩展对象已注册的命名空间映射到 .NET 程序集。 由于将按照完全限定的名称（包括其自动生成的公钥标记）对依赖程序集进行引用，因此必须更新此值。 如果不想使用 Scriptor_InlineXsltCallingExternalAssembly.btm，则不必完成 a 到 e 的全部步骤。  
   
-4.  在 Windows 资源管理器，导航到\<Windows 文件夹 > \assembly\\。  
+4.  在 Windows 资源管理器，导航到\<Windows 文件夹\>\assembly\\。  
   
     1.  右键单击**Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary**和选择**属性**。  
   
     2.  复制公钥标记值。  
   
-    3.  在文本编辑器中，打开*\<示例路径 >*\XML Tools\ExtendingMapper\ExternalAssembly.xml。  
+    3.  在文本编辑器中，打开*\<示例路径\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml。  
   
     4.  选择**AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary，Version = 1.0.0.0，Culture = neutral，PublicKeyToken = 68496d20c737d84b"**特性，并替换**PublicKeyToken**值时，使用公钥标记值中复制步骤 c。  
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，选择**所有程序**，选择**Microsoft BizTalk Server**，然后选择**BizTalk Server 管理**。  
   
-2.  在 BizTalk Server 管理控制台中，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername >:\<管理数据库 >]**，并单击以展开**应用程序**。  
+2.  在 BizTalk Server 管理控制台中，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，并单击以展开**应用程序**。  
   
 3.  单击以展开**ExtendingMapperApplication**，然后单击**发送端口**。  
   
@@ -141,9 +141,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
   
-1.  复制输入到输入文件夹在文件 ExtendingMapper.xml *\<示例路径 >*\XmlTools\ExtendingMapper\In。  
+1.  复制输入到输入文件夹在文件 ExtendingMapper.xml *\<示例路径\>*\XmlTools\ExtendingMapper\In。  
   
-2.  请注意如何转换以及路由到该文件是*\<示例路径 >*\XmlTools\ExtendingMapper\Out 文件夹。 发生的转换由应用的映射确定。  
+2.  请注意如何转换以及路由到该文件是*\<示例路径\>*\XmlTools\ExtendingMapper\Out 文件夹。 发生的转换由应用的映射确定。  
   
 ## <a name="see-also"></a>另请参阅  
- [XML 工具 （BizTalk Server 示例文件夹中）](../core/xml-tools-biztalk-server-samples-folder.md)
+ [XML 工具（BizTalk Server 示例文件夹）](../core/xml-tools-biztalk-server-samples-folder.md)

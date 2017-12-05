@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7231fd0d2aba7298127534eb43f1bf3c8c453b61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebe9f04fc8dac06676d7f29bf5dd2ecd01e7a06c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a>业务规则 Hello World1 （BizTalk Server 示例）
 “Business Rules Hello World1”示例演示如何创建一个 BizTalk 规则集，将它保存到文件 (SampleRuleSet.xml)、加载它并基于示例事实集运行它。 本示例规则集包含一个简单规则，该规则使用 XML 元素和基于 .NET 的对象（属性和成员）作为规则定义中的条件。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 7.  通过删除规则集文件进行清除，以便为后续的示例运行做好准备。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Business Rules\Business 规则 Hello World1\  
+ \<*示例路径*\>\Business Rules\Business 规则 Hello World1\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Business Rules\Business 规则 Hello World1\  
+     \<*示例路径*\>\Business Rules\Business 规则 Hello World1\  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Business Rules\Business 规则 Hello World1\bin\Debug\  
+     \<*示例路径*\>\Business Rules\Business 规则 Hello World1\bin\Debug\  
   
 2.  在命令窗口中，键入本示例的可执行文件名 (BusinessRulesHelloWorld2.exe)，然后按 Enter。  
   
@@ -144,4 +144,4 @@ Press any key to finish ...
  您可根据类和架构定义规则，但在执行过程中，必须使用相关类的对象实例和相关架构的文档实例。 您将针对这些运行时实例（称为事实）来评估规则。 在此示例中，事实数据的多个实例**MySampleBusinessObject**构造使用不同值的对象，其**MyValue**属性，并定义的架构的单个 XML 实例包含的值， **ID**元素。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务规则 （BizTalk Server 示例文件夹中）](../core/business-rules-biztalk-server-samples-folder.md)
+ [业务规则（BizTalk Server 示例文件夹）](../core/business-rules-biztalk-server-samples-folder.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3ac08628931ec4111eb1b5a9ad86991344c22d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc0bd397e49dcad670bb73e9dff9c164b9d0997a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-agreement-properties-from-an-xml-file"></a>从 XML 文件导入协议属性
 本部分介绍如何从 XML 模板文件中导入协议属性。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-import-agreement-properties-from-an-xml-file"></a>从 XML 文件导入协议属性  
   
-1.  在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理控制台中，单击**方**节点下的**BizTalk Server 管理**和**BizTalk 组**节点。 在**方和业务配置文件**页上，创建了协议中所述[配置常规设置 (X12)](../core/configuring-general-settings-x12.md)。  
+1.  在 BizTalk Server 管理控制台中，单击**方**节点下的**BizTalk Server 管理**和**BizTalk 组**节点。 在**方和业务配置文件**页上，创建了协议中所述[配置常规设置 (X12)](../core/configuring-general-settings-x12.md)。  
   
 2.  在**协议属性**对话框中，单击**负载从模板**。  
   
@@ -43,4 +43,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [重复使用来自另一个协议的属性](../core/reusing-properties-from-another-agreement.md)   
- [导出到 XML 文件的协议属性](../core/exporting-agreement-properties-to-an-xml-file.md)
+ [将协议属性导出为 XML 文件](../core/exporting-agreement-properties-to-an-xml-file.md)

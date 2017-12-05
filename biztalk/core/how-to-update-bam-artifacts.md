@@ -17,11 +17,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e377a455089127c9dc219846ec3f66e3322924cc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f80499881c075c805bc5949942644dcece5075fb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-bam-artifacts"></a>如何更新 BAM 项目
 管理员使用**更新所有**命令以更新在 BAM 主导入数据库中部署的项目。 提供的 BAM 定义是包含有关要更新项目的信息的 XML 文件或 Excel 工作簿。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  类型**bm 更新所有-DefinitionFile:\<def 文件 >**。  
+3.  类型**bm 更新所有-DefinitionFile:\<def 文件\>**。  
   
 4.  按 **Enter**。  
   

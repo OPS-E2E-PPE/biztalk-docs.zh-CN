@@ -18,18 +18,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 926a13d443e7002a71e2b9f6509c3a377f0af0be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6e63590c8cc84a6c6c1a7e957900aa44cdcd61c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>步骤 5： 创建发送端口将确认传递到使用文件适配器的 ADT 系统
 在此步骤中，你可以创建发送端口以生成使用了文件适配器的确认。  
   
 ### <a name="to-create-the-tutorialsendackadt-send-port"></a>若要创建 Tutorial_sendAck_ADT 发送端口  
   
-1.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，创建\<*驱动器*: > files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端 Tutorial\Tutorial_sendAck_ADT 文件夹。  
+1.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，创建\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键sendAck_ADT 文件夹。  
   
 2.  在 BizTalk Server 管理控制台中，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**目标文件夹**|浏览到 **\<** *驱动器***: > files\microsoft BizTalk\<版本 > HL7\SDK\End 端到端 Tutorial\Tutorial_sendAck_ADT 快捷键**.|  
+    |**目标文件夹**|浏览到 **\<** *驱动器***:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端的快捷键Tutorial\Tutorial_sendAck_ADT**。|  
     |**文件名**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
   
 5.  在发送端口属性对话框中，为**发送管道**，选择**BTAHL72XPipelines.BTAHL72XSendPipeline**。  
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
     |**值**|类型**Tutorial_ADTSystem**。|  
   
     > [!NOTE]
-    >  发送端口 Tutorial_sendAck_ADT，BTAHL7 删除确认在文件放置位置\<*驱动器*>： 程序 FilesMicrosoft BizTalk <version> HL7SDKEnd 端到端 TutorialTutorial 快捷键_sendAck_ADT。  
+    >  发送端口 Tutorial_sendAck_ADT，BTAHL7 删除确认在文件放置位置\<*驱动器*\>： 程序 FilesMicrosoft BizTalk <version> HL7SDKEnd 端到端的快捷键TutorialTutorial_sendAck_ADT。  
   
 7.  单击**应用**，然后单击**确定。**  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1fa12862600cd1d1d5661e278b87c82cc45697b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 342ffbd77434a470e3afdd10ae1c708c8734e85c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="understand-biztalk-adapter-for-oracle-e-business-suite"></a>了解有关 Oracle E-business Suite 的 BizTalk Adapter
 ## <a name="biztalk-adapter-pack-features"></a>BizTalk 适配器包功能
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **跨 Lob 的统一体验**。 适配器标准化上使用 WCF 和[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]，并因此提供统一的体验的获得对任何 LOB 系统的访问。  
   
- 如前文所述，适配器均构建在之上[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 此 SDK 提供用于生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器的通用基础。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开作为 WCF 通道的集成适配器结合适配器策略与 Microsoft 服务策略。 有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<*安装驱动器*>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。  
+ 如前文所述，适配器均构建在之上[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 此 SDK 提供用于生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器的通用基础。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开作为 WCF 通道的集成适配器结合适配器策略与 Microsoft 服务策略。 有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<*安装驱动器*\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。  
 
 ## <a name="overview-of-the-oracle-ebs-adapter"></a>Oracle EBS 适配器的概述
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开 Oracle E-business Suite 作为 WCF 服务。 适配器客户端可以通过交换 SOAP 消息与适配器执行对 Oracle E-business Suite 操作。 适配器使用 SOAP 消息，并且相应 ODP.NET 调用来执行该操作。 适配器回客户端的 SOAP 消息的形式返回从 Oracle E-business Suite 的响应。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="more-good-stuff"></a>更多有用内容  
   
--    [将连接到 Oracle E-business Suite 使用适配器](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
+-    [使用适配器连接到 Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
 
 - [浏览，搜索，并获得 Oracle E-business Suite 元数据](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-oracle-e-business-suite-metadata.md)
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
 
 - [处理与 Oracle 数据库适配器的事务](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md) 
 
-- [适用于 Oracle EBS 适配器客户端的功能](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
+- [Oracle EBS 适配器客户端的功能](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
 
 -   [用于 Oracle E-business Suite 的 BizTalk Adapter 中的主要功能](../../adapters-and-accelerators/adapter-oracle-ebs/key-features-in-biztalk-adapter-for-oracle-e-business-suite.md)  
   

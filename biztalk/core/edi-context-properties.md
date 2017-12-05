@@ -12,14 +12,14 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc98b010edfbc92a07af5625af16a3af77674247
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36e2f9fcc839625cc0b1ac01ec6e70b53eb2a6e2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-context-properties"></a>EDI 上下文属性
-EDI 全局属性架构中的消息上下文属性是公开的，因此可以在消息路由等操作中使用这些属性。 这些上下文属性在 Microsoft.BizTalk.Edi.BaseArtifacts 程序集的 PropertySchema.xsd 中定义。 这些属性的命名空间是 `http://schemas.microsoft.com/ Edi/PropertySchema`。 如果它们已被提升，则这些消息上下文属性都可用作 Edi。\<*属性名称*> 中**筛选器**页**发送端口属性对话框中** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+EDI 全局属性架构中的消息上下文属性是公开的，因此可以在消息路由等操作中使用这些属性。 这些上下文属性在 Microsoft.BizTalk.Edi.BaseArtifacts 程序集的 PropertySchema.xsd 中定义。 这些属性的命名空间是 `http://schemas.microsoft.com/ Edi/PropertySchema`。 如果它们已被提升，则这些消息上下文属性都可用作 Edi。\<*属性名称*\>中**筛选器**页**发送端口属性对话框中** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
 
 ## <a name="context-properties-list"></a>上下文属性列表  
@@ -42,8 +42,8 @@ EDI 全局属性架构中的消息上下文属性是公开的，因此可以在�
 |BatchName|字符串|处理此文档时使用的批处理配置的名称。|  
 |CodePage|string|用于验证交换的代码页。|  
 |CONTRL_UCI4|string|CONTRL 确认的“操作代码”字段，指示已接受交换（值为“8”）还是因 UNA 或 UNB 段中存在错误而拒绝交换（值为“4”）（仅适用于 EDIFACT CONTRL 确认）。|  
-|DestinationPartyID（[!INCLUDE[prague](../includes/prague-md.md)] 中已弃用）|int|应接收消息的目标参与方的 ID。|  
-|DestinationPartyName（[!INCLUDE[prague](../includes/prague-md.md)] 中已弃用）|string|应接收消息的目标参与方的名称。|  
+|DestinationPartyID （BizTalk Server 中已弃用）|int|应接收消息的目标参与方的 ID。|  
+|DestinationPartyName （BizTalk Server 中已弃用）|string|应接收消息的目标参与方的名称。|  
 |DestinationPartyReceiver<br />Identifier|string|应接收消息的目标参与方的标识符。 可以在自定义组件中升级该属性，以便在发送管道中启用参与方解析。|  
 |DestinationPartyReceiver<br />Qualifier|string|应接收消息的目标参与方的限定符。 可以在自定义组件中升级该属性，以便在发送管道中启用参与方解析。|  
 |DestinationPartySender<br />Identifier|string|将消息发送到目标参与方的参与方的标识符。 可以在自定义组件中升级该属性，以便在发送管道中启用参与方解析。|  
@@ -95,7 +95,7 @@ EDI 全局属性架构中的消息上下文属性是公开的，因此可以在�
   
  如果需要将一个段的单独字段（ISA、GS、UNB、UNG 或 UNA）写入到消息上下文，但此单独字段不会默认写入到消息上下文，那么您需要编写一个自定义组件，以便将此字段写入到消息上下文。 该自定义组件需要解析段字段，并将单独的字段写入到消息上下文。  
   
- 消息收集示例显示如何使用解析程序从段中提取单独的字段，并将其写入到上下文。 此示例包含在\<驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\EDI\MessageEnrichment。 有关详细信息，请参阅[消息扩充示例 （BizTalk Server 示例）](../core/message-enrichment-sample-biztalk-server-sample.md)。  
+ 消息收集示例显示如何使用解析程序从段中提取单独的字段，并将其写入到上下文。 此示例包含在\<驱动器\>: files\microsoft BizTalk Server\SDK\Samples\EDI\MessageEnrichment。 有关详细信息，请参阅[消息扩充示例 （BizTalk Server 示例）](../core/message-enrichment-sample-biztalk-server-sample.md)。  
   
 ## <a name="see-also"></a>另请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

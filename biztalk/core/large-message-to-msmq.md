@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41994da40d6471688193f7aca915535fcd52bfbe
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 008e6c2d775fc5d46977ca4672b6d3376349b3f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="large-message-to-msmq"></a>于 MSMQ 的大型消息
 大型消息到 MSMQ 示例演示如何.xml 文档大于 4 兆字节 (MB) 将从发送消息队列 (也称为 MSMQ) 到 BizTalk MSMQ 适配器使用**MQSendLargeMessage** API 实现通过MQRTLarge.dll。  
@@ -37,10 +37,10 @@ ms.lasthandoff: 10/17/2017
  在此示例的上下文，很重要这段代码的调用中指定的事务类型**MQSendLargeMessage**是为队列消息发送到指定的事务支持使用一致。 如果未完成此和未管理员指定队列 （就是在此示例中这种情况），如果 MSMQ 放弃时，它还执行该操作没有指示发送的消息 （即，没有错误代码返回给应用程序事件日志中写入任何诊断依此类推)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<示例路径 > \AdaptersUsage\MSMQLarge  
+ \<示例路径\>\AdaptersUsage\MSMQLarge  
   
 > [!NOTE]
->  如果使用的 Windows 和 BizTalk Server 的 64 位版本，将以安装示例**C:\Program Files (x86) \Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge**文件夹。  请注意有关在此文档中使用的任何其他说明此更改**C:\Program Files**文件夹。  
+>  如果使用的 Windows 和 BizTalk Server 的 64 位版本，将以安装示例**C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\SDK\Samples\AdaptersUsage\MSMQLarge**文件夹。  请注意有关在此文档中使用的任何其他说明此更改**C:\Program Files**文件夹。  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 10/17/2017
   
 #### <a name="to-configure-biztalk-server"></a>若要配置 BizTalk Server  
   
-1.  在 Visual Studio 中，打开**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**解决方案文件。  生成示例。  
+1.  在 Visual Studio 中，打开**C:\Program Files\Microsoft BizTalk Server\<版本\>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln**解决方案文件。  生成示例。  
   
 2.  创建**C:\Demo** BizTalk Server 将放置在 MSMQ 消息目录。  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 10/17/2017
   
 #### <a name="to-create-a-large-test-file"></a>创建大型测试文件  
   
-1.  在 Visual Studio 中，打开解决方案**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**。  
+1.  在 Visual Studio 中，打开解决方案**C:\Program Files\Microsoft BizTalk Server\<版本\>\SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**。  
   
 2.  生成并运行该项目。  
   
@@ -163,7 +163,7 @@ ms.lasthandoff: 10/17/2017
   
 #### <a name="to-run-the-sample"></a>运行示例  
   
-1.  打开命令提示符，并将目录更改为**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**。  
+1.  打开命令提示符，并将目录更改为**C:\Program Files\Microsoft BizTalk Server\<版本\>\SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**。  
   
 2.  在命令提示符处，运行**SendLargeMessage.exe**。 SendLargeMessage 可执行文件接受两个变量，第一个是 MSMQ 队列的位置，第二个是要发送的 .xml 文件的位置：  
   
@@ -180,4 +180,4 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="see-also"></a>另请参阅  
  [BizTalk 消息队列大型消息扩展](../core/biztalk-message-queuing-large-message-extension.md)   
- [适配器示例-使用情况](../core/adapter-samples-usage.md)
+ [适配器示例 - 用法](../core/adapter-samples-usage.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7aa71ce6ba1d2a910626446ed45439b8c7132e75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26147924950a73b0f654531e9e0eff8e5ac82541
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-swift-disassembler"></a>配置 SWIFT 反汇编程序
 SWIFT 反汇编程序 (DASM) 将执行下列任务，在调用中时[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接收管道：  
@@ -51,7 +51,7 @@ SWIFT 反汇编程序 (DASM) 将执行下列任务，在调用中时[!INCLUDE[bt
 > [!NOTE]
 >  配置、 编译和部署自定义管道后，在配置中的更改需要重新编译和重新部署自定义的管道。  
   
- 有关创建的信息，生成和部署自定义管道，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关创建、 构建和部署自定义管道的信息，请参阅 BizTalk Server 帮助。  
   
  本部分包含：  
   

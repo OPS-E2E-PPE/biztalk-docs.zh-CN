@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c38a58e376bbc8908ff0fe578aa54cbb009c58d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d8489c484bdb88a292b998d31e7c6de90e0937c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a>步骤 3d： 启用 BizTalk 服务器发送和接收来自 Salesforce 的消息
 使用 REST 接口发送消息时，我们必须向 Salesforce 进行身份验证。 Salesforce 支持的 REST 调用的身份验证方法并不是 WCF-WebHttp 适配器现成提供的，我们将使用该适配器来调用 Salesforce 的 REST 接口。 因此，我们将创建自定义 WCF 终结点行为，然后将其附加到我们配置用于调用 Salesforce REST 接口的 WCF-WebHttp 发送适配器。  
@@ -231,7 +231,7 @@ ms.lasthandoff: 09/20/2017
   
     -   创建一个从 `BehaviorExtensionElement` 派生的类  
   
-    -   注册在你 BehavaiorExtensionElement\<扩展 >\\< behaviorExtensions\>使用的是元素名称 machine.config 中的元素。  
+    -   注册在你 BehavaiorExtensionElement\<扩展\>\\< behaviorExtensions\>使用的是元素名称 machine.config 中的元素。  
   
      我们还会向此类添加配置属性，以便可以从 WCF-WebHttp 适配器配置 UI 获取这些属性。  
   
@@ -320,4 +320,4 @@ ms.lasthandoff: 09/20/2017
  在本主题中，添加了自定义行为以向 Salesforce 进行身份验证，并添加了自定义管道以向 Salesforce 响应添加命名空间。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中配置物理端口时，我们将使用这些自定义组件。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 3： 在 Visual Studio 中创建 BizTalk 服务器解决方案](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)
+ [步骤 3：在 Visual Studio 中创建 BizTalk Server 解决方案](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)

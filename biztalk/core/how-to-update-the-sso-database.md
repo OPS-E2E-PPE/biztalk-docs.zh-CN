@@ -19,11 +19,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1381ee4e5c2b90a96c52b59d125ec3121af02a4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb7ea650a2845d8ebdcdcc2204f8346c5737c43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-sso-database"></a>如何更新 SSO 数据库
 可以使用 MMC 管理单元或命令行来更改 SSO 数据库中诸如主密钥服务器标识、帐户名、数据库中的审核、票证超时和凭据缓存超时之类的全局信息。  
@@ -79,9 +79,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-updatedb\<更新文件 >**，其中**\<更新文件 >**是路径和文件的名称。  
+3.  类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>**是路径和文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

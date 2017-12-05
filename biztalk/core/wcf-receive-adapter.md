@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb8ea12087b5884370edce13f3ddc6fd6853c7d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdd4d6335723d068333403b4c9d811d96db058e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-receive-adapter"></a>WCF 接收适配器
 WCF 接收适配器允许您接收 WCF 服务请求。  
@@ -68,9 +68,9 @@ WCF 接收适配器允许您接收 WCF 服务请求。
 |Sequence/Identifier|SequenceId|是|  
 |Sequence/MessageNumber|SequenceNumber|是|  
 |Sequence/LastMessage|SequenceLastMessage|是|  
-|\<soap： 标头 >|InboundHeaders|是|  
+|\<soap： 标头\>|InboundHeaders|是|  
   
 ## <a name="see-also"></a>另请参阅  
  [为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)   
  [WCF 发送适配器](../core/wcf-send-adapter.md)   
- [WCF 适配器有哪些？](../core/what-are-the-wcf-adapters.md)
+ [WCF 适配器概述](../core/what-are-the-wcf-adapters.md)

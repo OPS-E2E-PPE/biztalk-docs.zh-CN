@@ -18,11 +18,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c6731183fd4be4655d0365c1ce6277dd4052b6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89e46b8610114149e8618811361090d8644f82aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-biztalk-assembly-from-an-application"></a>如何从应用程序中删除 BizTalk 程序集
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序删除 BizTalk 程序集。 执行此操作时，程序集和其中包含的项目（如业务流程、架构和管道）都将从应用程序和 BizTalk 管理数据库中删除。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”，然后展开包含要删除的 BizTalk 程序集的 BizTalk 组，接着展开包含该 BizTalk 程序集的应用程序。  
+2.  在控制台树中，展开 BizTalk Server 管理，展开包含要删除的 BizTalk 程序集的 BizTalk 组，然后展开包含 BizTalk 程序集的应用程序。  
   
 3.  单击**资源**文件夹中，右键单击 BizTalk 程序集，并依次**删除**。  
   

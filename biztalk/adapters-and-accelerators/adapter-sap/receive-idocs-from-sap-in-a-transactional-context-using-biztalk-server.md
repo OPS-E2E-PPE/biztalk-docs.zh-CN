@@ -15,14 +15,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fd886cfb0e8ba175c22b5d55f12a4866a68921e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8903b6010555b3c7c6aba9a07e12c9204bcf19c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server"></a>从 SAP 使用 BizTalk Server 的事务上下文中接收到的 Idoc
-在事务上下文中接收 IDOC 是类似于在事务上下文中接收 tRFCs。 在这种情况下，SAP 系统从收到的 IDOC 所包含的作为的一部分的 TID  *\<TransactionalRfcOperationIdentifier >*元素。 适配器的情况下，此 TID 保留在 SQL 数据库。 如果将 IDOC 发送的 SAP 系统的 ABAP 代码具有"提交的工作"语句，TID 从数据库中删除 SQL 后响应发送回 SAP 系统。  
+在事务上下文中接收 IDOC 是类似于在事务上下文中接收 tRFCs。 在这种情况下，SAP 系统从收到的 IDOC 所包含的作为的一部分的 TID  *\<TransactionalRfcOperationIdentifier\>* 元素。 适配器的情况下，此 TID 保留在 SQL 数据库。 如果将 IDOC 发送的 SAP 系统的 ABAP 代码具有"提交的工作"语句，TID 从数据库中删除 SQL 后响应发送回 SAP 系统。  
   
  类似不管是否收到了 IDOC 事务上下文中或不需要接收 IDOC 业务流程。 请参阅[使用 BizTalk Server 从 SAP 接收到的 Idoc](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-using-biztalk-server.md)。 但是，你需要执行某些其他任务以确保在事务上下文中接收到的 Idoc。  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
      有关绑定属性以及如何将其设置的详细信息，请参阅[阅读有关 BizTalk 适配器用于 mySAP Business Suite 绑定属性](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   
     > [!IMPORTANT]
-    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导安装 SQL 脚本，SapAdapter-DbScript-Install.sql，它必须运行的 SQL Server 管理员联系以在 SQL Server 中创建数据库和数据库对象。 该脚本通常安装在*\<安装驱动器 >*： 程序 FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
+    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导安装 SQL 脚本，SapAdapter-DbScript-Install.sql，它必须运行的 SQL Server 管理员联系以在 SQL Server 中创建数据库和数据库对象。 该脚本通常安装在*\<安装驱动器\>*： 程序 FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
     >   
     >  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]用这些对象来持久保存 Tid。 因此，SQL Server 管理员必须确保用户名称提供连接字符串的一部分具有足够的特权执行存储的过程。 你也可以选择 Windows 身份验证提供的 Windows 用户具有足够的权限才能在数据库中执行存储的过程。  
   

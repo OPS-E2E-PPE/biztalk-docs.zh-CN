@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a28af058ac4750426f66dc6e290bc6a02bf2efd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 927afa60dc65fb014f0d44305db5e7f6e78b803b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interceptor-configuration-expressions"></a>侦听器配置表达式
 BAM 侦听器配置文件使用筛选器表达式来标识活动，并使用数据表达式构造用于存储的数据元素，作为相关 ID、继续标记或类似用途使用。 拦截器配置文件中不考虑目的，标识单个表达式`expression`元素和包含一个或多个操作使用反向波兰语表示法，也称为后缀表示法。  
@@ -115,7 +115,7 @@ BAM 侦听器配置文件使用筛选器表达式来标识活动，并使用数�
 ### <a name="data-expressions"></a>数据表达式  
  数据表达式用于定义单个字符串数据值。 数据表达式是不包括任何表达式`Filter`元素。 通过使用数据表达式`OnEvent`元素`CorrelationID`， `ContinuationToken`， `Reference`，和`Update`。  
   
- 通常要求使用已标记的时间戳来更新 BAM 活动数据库。 例如，你可能想要捕获事件格式化为字符串开头的时间"启动： \<EventTime >"。 为此，需要使用类似以下格式的表达式（其中 + 表示连接）：  
+ 通常要求使用已标记的时间戳来更新 BAM 活动数据库。 例如，你可能想要捕获事件格式化为字符串开头的时间"启动： \<EventTime\>"。 为此，需要使用类似以下格式的表达式（其中 + 表示连接）：  
   
  `"Start: " + GetContextProperty(EventTime)`  
   
@@ -153,7 +153,7 @@ BAM 侦听器配置文件使用筛选器表达式来标识活动，并使用数�
 >  不要在数据表达式中使用比较运算符“And”或“Equals”。 如果使用这两种运算符，则部署侦听器配置文件时将收到一个错误。  
   
 ## <a name="in-this-section"></a>本节内容  
- [拦截器操作](../core/interceptor-operations.md)  
+ [侦听器运算](../core/interceptor-operations.md)  
   
 ## <a name="see-also"></a>另请参阅  
- [拦截器配置文件的结构](../core/structure-of-an-interceptor-configuration-file.md)
+ [侦听器配置文件的结构](../core/structure-of-an-interceptor-configuration-file.md)

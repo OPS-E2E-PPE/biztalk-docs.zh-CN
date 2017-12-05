@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717e7919b3f822ba582ea3c1e50f251eea18a06b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>冲突解决程序和适配器提供程序框架
-冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态解析终结点，并设置出站适配器属性。 后一个冲突解决程序组件解析终结点 （例如，使用通用、 描述、 发现和集成 [UDDI] 看起来出站 Web 服务终结点），适配器提供程序组件集的特定属性注册[!INCLUDE[prague](../includes/prague-md.md)]适配器。 例如，WCF BasicHttp 适配器提供程序负责设置 BizTalk 特定消息终结点将使用特定的 BizTalk adapter; 的 URI 的上下文属性FTP 适配器提供程序负责属性特定于设置 FTP 适配器。  
+冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态解析终结点，并设置出站适配器属性。 后一个冲突解决程序组件解析终结点 （例如，使用通用、 描述、 发现和集成 [UDDI] 看起来出站 Web 服务终结点），适配器提供程序组件设置的已注册 BizTalk Server 特定属性适配器。 例如，WCF BasicHttp 适配器提供程序负责设置 BizTalk 特定消息终结点将使用特定的 BizTalk adapter; 的 URI 的上下文属性FTP 适配器提供程序负责属性特定于设置 FTP 适配器。  
   
  冲突解决程序和适配器提供程序框架的目标之一是支持解析和路由在任一消息级别，而无需使用 BizTalk 业务流程或业务流程级别。 在这两种情况下，可插入 framework 会提供更轻松的开发、 部署和新解析程序和适配器提供程序的注册。 所有冲突解决程序和适配器提供程序实现定义完善的接口，且需加载在运行时通过在配置文件中的注册。  
   

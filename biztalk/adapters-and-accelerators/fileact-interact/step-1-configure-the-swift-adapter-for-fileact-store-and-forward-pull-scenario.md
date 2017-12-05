@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9103caf451bb74a6ba23a7a6cf30ebe17896dfa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41e57df0f77718e3e36b5d0d68896def6a768be7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario"></a>步骤 1： 配置 SWIFT 适配器 FileAct 应用商店应用和转发的请求方案
 完成[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)在开始此步骤之前。
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降 >**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**FACryptoMode**|从下拉列表中选择**高级**。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降 >**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**LogMessageBody**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。 **注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
@@ -80,4 +80,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [步骤 2： 创建发送端口和接收 FileAct 应用商店应用和进 （请求） 方案的端口](../../adapters-and-accelerators/fileact-interact/step-2-create-send-and-receive-ports-for-fileact-store-and-forward-scenario.md)   
  [步骤 3： 创建和绑定与文件 Act 存储和转发 （请求） 方案的动态发送端口业务流程](../../adapters-and-accelerators/fileact-interact/step-3-create-and-bind-an-orchestration-with-dynamic-send-port-for-file-act.md)   
- [步骤 4： 测试 FileAct 存储区和进 （请求） 端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)
+ [步骤 4：测试 FileAct 存储和转发（拉取）端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)

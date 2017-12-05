@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e8d4e3be39d27d30ca8fa6062bb452a8ce32a12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df444b8169d75408fe6e412135029ae2b051a6d2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-replace-schemas"></a>如何替换架构
 有时候您可能希望替换现有映射中的源架构或目标架构，例如从贸易合作伙伴接收到更新后的架构时。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
       
      如果只有单个根存在在替换模式中，或已建立了根节点进行替换架构使用**根引用**属性**架构**节点，替换架构打开在相关的窗格中，并且你将不需要执行步骤 3。  
   
-3.  如果在目标架构中，存在多个根节点，并且没有根节点建立目标架构使用**根引用**属性**架构**节点，请在**的根节点\<*源/目标*> 架构 * * 对话框中，选择适当的根节点，然后选择**确定**。  
+3.  如果在目标架构中，存在多个根节点，并且没有根节点建立目标架构使用**根引用**属性**架构**节点，请在**的根节点\<*源/目标*\>架构 * * 对话框中，选择适当的根节点，然后选择**确定**。  
   
      此时，该替换架构将在相关窗格中打开。  
   

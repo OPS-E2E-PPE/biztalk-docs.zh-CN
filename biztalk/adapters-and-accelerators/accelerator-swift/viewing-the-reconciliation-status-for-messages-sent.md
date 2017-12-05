@@ -12,16 +12,16 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0009e8eede7cb490f77bad8d30251b73a9431b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0fbcdbbec66c16cdf2592ac7eacfd6d69fdc2b6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="viewing-the-reconciliation-status-for-messages-sent"></a>发送的消息中查看的对帐状态
 若要查看发送的消息的对帐状态：  
   
-1.  在程序中，单击**Microsoft BizTalk Server\<版本 >**，然后单击**BAM 门户网站**。  
+1.  在程序中，单击**Microsoft BizTalk Server\<版本\>**，然后单击**BAM 门户网站**。  
   
 2.  BAM 门户网站中，我的 View\XMLV2View\Activity 搜索下面选择**消息发送活动**。  
   

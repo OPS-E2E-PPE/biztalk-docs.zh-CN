@@ -17,11 +17,11 @@ caps.latest.revision: "56"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a73bd610f94e5b56dc5af5d27f90ec8bb4eb1d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffc3d1d6d8fdbfcc168446883e2b65a7d8ed0351
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-a-biztalk-application"></a>如何安装 BizTalk 应用程序
 本主题介绍如何通过在 Windows 界面中双击应用程序的 Windows Installer (.msi) 文件或从命令行运行 msiexec 来在本地计算机上安装应用程序。 你也可以启动安装向导导入向导的最后一步骤中所述[如何导入 BizTalk 应用程序](../core/how-to-import-a-biztalk-application.md)。  
@@ -91,13 +91,13 @@ ms.lasthandoff: 09/20/2017
   
      在目标计算机上创建虚拟目录时它将指向以下物理目录之一：  
   
-     \<*安装驱动器*> files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*安装驱动器*\>files\microsoft BizTalk Server\HttpReceive  
   
      \-**或**–  
   
-     \<*安装驱动器*> \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*安装驱动器*\>\Program 文件 (x86) \Microsoft BizTalk Server\HttpReceive  
   
-     如果 BizTalk HTTP 接收 ISAPI 扩展 BTSHTTPReceive.dll 不位于指定目录中，或者目标计算机正在运行 64 位操作系统，则您必须更改虚拟目录的“本地路径：目标”，以便指向包含该 BizTalk HTTP 接收 ISAPI 扩展文件的物理目录。 例如，如果目标计算机运行 64 位版本的 Windows Vista 中，然后本地路径为： 指定的虚拟目录的内容应更改为\<安装驱动器 > \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive64.  
+     如果 BizTalk HTTP 接收 ISAPI 扩展 BTSHTTPReceive.dll 不位于指定目录中，或者目标计算机正在运行 64 位操作系统，则您必须更改虚拟目录的“本地路径：目标”，以便指向包含该 BizTalk HTTP 接收 ISAPI 扩展文件的物理目录。 例如，如果目标计算机运行 64 位版本的 Windows Vista 中，然后本地路径为： 指定的虚拟目录的内容应更改为\<安装驱动器\>\Program 文件 (x86) \Microsoft BizTalk Server\HttpReceive64。  
   
 ## <a name="to-install-a-biztalk-application"></a>安装 BizTalk 应用程序  
   

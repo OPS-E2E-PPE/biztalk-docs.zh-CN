@@ -15,16 +15,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1c12936f2883bfdbcdcd80d300d2ab5a9ff58d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 404beaeb617f7a6c0c5e3fc4ddc40126e6b97990
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-schemas"></a>使用架构
 中提供的架构[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]XSD 表示形式的全球 Interbank 财务电信 (SWIFT) FIN 消息互联网协会。 每个消息类型都有其自己的架构，包括 SWIFT 标头和 SWIFT 预告片 （交换格式）。 此架构并有效地发送或接收 SWIFT 消息。 这些架构是分隔和位置的记录，提供详细的 XML 表示形式的平面文件 FIN 结构的唯一组合。  
   
- 大多数 SWIFT 客户使用 SWIFT FIN 消息的一个相对较小子集。 若要为这些客户实现解决方案，你可以创建 BizTalk 架构项目 (如所示[模块 2： 添加新的架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)的 A4SWIFT 教程)。 将相关消息架构添加 (MT*xxx*.xsd) 从\\\ 程序 Files\Microsoft BizTalk Accelerator for SWIFT\<版本 > MessagePack\SWIFT Messages\A4SWIFT SRG\<版本 > \类别 x\MT xyy 目录，其中 x 是 FIN 消息类型和 xyy 的第一个数字是消息的三个数字消息类型。  
+ 大多数 SWIFT 客户使用 SWIFT FIN 消息的一个相对较小子集。 若要为这些客户实现解决方案，你可以创建 BizTalk 架构项目 (如所示[模块 2： 添加新的架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)的 A4SWIFT 教程)。 将相关消息架构添加 (MT*xxx*.xsd) 从\\\ 程序 Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category x\MT xyy 目录，其中 x 是 FIN 消息类型的第一个数字，xyy 是消息的三个数字消息类型。  
   
  你可以将多个架构添加到同一个项目。 若要维护可管理性，则不应添加 20 个以上的消息架构，每个项目。 你还需要将这些基类和常见架构添加到项目。 如果你已部署的基类和常用的架构，你需要使其程序集的引用，而不是将它们部署。 本部分介绍这些架构。 消息架构已准备好使用，因为是到 SWIFT 网络发送的消息和从 SWIFT 接收的消息。  
   
@@ -62,8 +62,8 @@ ms.lasthandoff: 09/20/2017
   
  本部分包含：  
   
--   [基类型和通用架构](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
+-   [基础架构和通用架构](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
   
--   [SWIFT 标头和预告片架构](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
+-   [SWIFT 标头和尾部架构](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
   
--   [SWIFT 架构的命名约定](../../adapters-and-accelerators/accelerator-swift/swift-schema-naming-conventions.md)
+-   [SWIFT 架构命名约定](../../adapters-and-accelerators/accelerator-swift/swift-schema-naming-conventions.md)

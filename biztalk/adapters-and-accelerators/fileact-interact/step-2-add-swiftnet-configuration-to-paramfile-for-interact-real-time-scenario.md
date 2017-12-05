@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 249bfb8120a7b7d44ee0f73e7b5e5cef34126670
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e33203279e045b28d2098ca78c55403c7070b64
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-real-time-scenario"></a>步骤 2： 将 SWIFTNet 配置添加到为 Paramfile 交互实时方案
 在压降中创建的服务器消息合作伙伴必须指定在 SWIFTNet paramfile 以便接收方可以使用这些值进行初始化。 在开始该过程之前，必须完成中的说明[步骤 1： 为交互的实时方案配置 SWIFT 适配器](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
      subsystem_start:  
   
-     **spawn"snlreceiver-SagMessagePartner\<交互 RT 的服务器 MessagePartnerName >-AdapterMode 交互"**  
+     **spawn"snlreceiver-SagMessagePartner\<交互 RT 的服务器 MessagePartnerName \> -AdapterMode 交互"**  
   
      * 结束  
   
@@ -89,4 +89,4 @@ ms.lasthandoff: 09/20/2017
  [交互实时方案](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)   
  [步骤 1： 配置的 SWIFT 适配器交互实时方案](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
  [步骤 3： 创建发送和接收端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [步骤 4： 测试交互实时的端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+ [步骤 4：测试 InterAct 实时端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

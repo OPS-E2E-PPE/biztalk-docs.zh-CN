@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc154ed37569238b4a41940df0310ec9066e975f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad124e7ce9fdf8c3dac6a1ac0ffda122127becb9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sql-adapter"></a>与 SQL 适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，你的代码充当 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。  
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
   
  如任何 WCF 绑定，[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使用工厂模式提供到应用程序代码的通道。 你使用**Microsoft.Adapters.SQLBinding**对象创建的实例：  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** 提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** 提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >**提供**IInputChannel**通道可用于收到入站操作的消息，例如**轮询**或**通知**，从适配器。  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>** 提供**IInputChannel**通道可用于收到入站操作的消息，例如**轮询**或**通知**，从适配器。  
   
 ### <a name="creating-messages-for-the-sql-server-database-adapter-in-the-wcf-channel-model"></a>为 SQL Server 数据库适配器 WCF 通道模型中创建消息  
  在 WCF 中**System.ServiceModel.Channels.Message**类提供内存中的 SOAP 消息的表示形式。 你创建**消息**实例通过调用静态**Message.Create**方法。  
@@ -82,4 +82,4 @@ Message messageIn = Message.CreateMessage(MessageVersion.Default,
 >  必须提供中的消息操作你**消息**实例。 这通常完成时**消息**创建实例。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[使用 WCF 通道模型开发应用程序](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

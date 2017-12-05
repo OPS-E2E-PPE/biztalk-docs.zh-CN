@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b34d546de0bbb2a79300c4f672bdfcecdab5958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 955c526c39a1cbb376a0d83848554bdeb6cc15c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a>从 Visual Studio 工具箱添加和删除自定义 Functoid
 本主题将介绍如何向 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 工具箱添加以及从中删除自定义 functoid。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  用 Windows 资源管理器找到实现自定义 functoid 的程序集。  
   
-    2.  将复制到的程序集\< *BizTalk Server 安装文件夹*>**\Developer Tools\Mapper 扩展**目录。 这是 BizTalk 映射器查找自定义 functoid 的位置。  
+    2.  将复制到的程序集\< *BizTalk Server 安装文件夹*\>**\Developer Tools\Mapper 扩展**目录。 这是 BizTalk 映射器查找自定义 functoid 的位置。  
   
     3.  从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk 项目，在**工具**菜单上，单击**选择工具箱项**。  
   

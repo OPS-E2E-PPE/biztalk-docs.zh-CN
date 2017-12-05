@@ -12,14 +12,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44cbfaff87727d69aa37ae005cff4240098f08da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee41a04bbef8a5651acedf1df85fc5d93349e9ea
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-receiving-of-edi-acknowledgments"></a>配置 EDI 确认的接收
-在 [!INCLUDE[prague](../includes/prague-md.md)] 中引入了双向协议之后，您可以在为发送确认配置的同一协议中设置接收确认。 通过在不同的单向协议选项卡中指定属性可完成此操作。 有关如何配置的确认消息的接收的信息，请参阅[配置发送和接收的 EDI 确认](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)。  
+在 BizTalk Server 中，通过引入双向协议，你可以设置为发送确认配置相同协议中接收的确认。 通过在不同的单向协议选项卡中指定属性可完成此操作。 有关如何配置的确认消息的接收的信息，请参阅[配置发送和接收的 EDI 确认](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)。  
   
 ## <a name="see-also"></a>另请参阅  
  [配置 EDI 确认](../core/configuring-edi-acknowledgments.md)

@@ -12,22 +12,22 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c259b3f46105afc0cf164ec0781c2c0d8f1f226b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10a037349cb967fab3d9c0d79bdf47c2f0f8a194
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-edi-functionality"></a>BizTalk Server EDI 功能
-[!INCLUDE[prague](../includes/prague-md.md)] 使用组合使用核心 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能和特定于 EDI [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能处理 EDI 消息。 这使得 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 既可以执行 EDI 消息传送独有的处理，同时又可以利用其核心消息传送功能。  
+BizTalk Server 处理 EDI 消息使用的核心组合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]功能和 EDI 特定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]功能。 这使得 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 既可以执行 EDI 消息传送独有的处理，同时又可以利用其核心消息传送功能。  
   
  本部分介绍基本 EDI 消息工作原理以及 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何执行。 还介绍 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的贸易合作伙协议定义如何用于 EDI 消息、接收端 EDI 处理和发送端 EDI 处理。  
   
- 有关如何将 EDI 处理支持中的说明[!INCLUDE[prague](../includes/prague-md.md)]和其他版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，和 EDI 标准支持和 EDI 文档架构支持的说明，请参阅[EDI 支持问题](../core/edi-support-issues.md)。  
+ 有关如何在 BizTalk Server 和其他版本的支持 EDI 处理的说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，和 EDI 标准支持和 EDI 文档架构支持的说明，请参阅[EDI 支持问题](../core/edi-support-issues.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [在 BizTalk Server EDI 支持](../core/edi-support-in-biztalk-server1.md)  
+-   [BizTalk Server 中的 EDI 支持](../core/edi-support-in-biztalk-server1.md)  
   
 -   [BizTalk Server 中的 HIPAA 支持](../core/hipaa-support-in-biztalk-server.md)  
   

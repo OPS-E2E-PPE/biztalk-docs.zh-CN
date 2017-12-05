@@ -23,11 +23,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 678977b23f377425718e483d87725ba191bbda86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04c7e6e28cc0deb83eaa7868c6c4ee17da8bc563
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>Windows 帐户，可以一种安全的分布式 BizTalk Server 部署
 有关 BizTalk Server 部署的系统体系结构的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。  
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/20/2017
 |安装|用户|SSO Administrators（只用于配置主密钥服务器）<br /><br /> 本地管理员<br /><br /> sysadmin SQL Server 角色<br /><br /> OLAP Administrator|  
 |BAM Application pool|服务|IIS_WPG|  
 |BAM Management|服务|IIS_WPG|  
-|BAM Notification|服务|SQLServer2005NotificationServicesUser$\<**ComputerName**>|  
+|BAM Notification|服务|SQLServer2005NotificationServicesUser$\<**ComputerName**\>|  
   
  下表列出了建议域管理员在公司域的域控制器中创建的帐户：  
   

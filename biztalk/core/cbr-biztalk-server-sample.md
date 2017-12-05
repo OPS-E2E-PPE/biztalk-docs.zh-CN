@@ -12,18 +12,18 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8694e0525eae82c6df4e6187d6182fbfae3f43e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30811b4f0dba463d518bdd9cd8f6d227e0e79aac
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cbr-biztalk-server-sample"></a>CBR（BizTalk Server 示例）
 CBR 示例演示如何使用**ExplorerOM**要添加和配置新的管理对象发送用于基于内容的路由的 BizTalk 消息的端口。  
   
 ## <a name="prerequisites"></a>先决条件  
   
--   此示例要求通过运行 setup.bat 位于来部署 CBRSample \<*示例路径*> \Messaging\CBRSample 目录。  
+-   此示例要求通过运行 setup.bat 位于来部署 CBRSample \<*示例路径*\>\Messaging\CBRSample 目录。  
   
 -   您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
   
@@ -47,7 +47,7 @@ CBR 示例演示如何使用**ExplorerOM**要添加和配置新的管理对象�
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\CBR  
+ \<*示例路径*\>\Admin\ExplorerOM\CBR  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -74,7 +74,7 @@ CBR 示例演示如何使用**ExplorerOM**要添加和配置新的管理对象�
   
 3.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\CBR\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\CBR\bin\Debug  
   
 4.  运行文件 CBR.exe。  
   
@@ -198,4 +198,4 @@ Transform : CBRSample.CBRInput2CANMap,CBRSample, Version=1.0.0.0, Culture=neutra
   
 ## <a name="see-also"></a>另请参阅  
  [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)   
- [CBRSample （BizTalk Server 示例）](../core/cbrsample-biztalk-server-sample.md)
+ [CBRSample（BizTalk Server 示例）](../core/cbrsample-biztalk-server-sample.md)

@@ -20,14 +20,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bcdeb4966da4a4b54fea826590f867e4125d2ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2cbf8cd4c21009190fc459312467656410dc663a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adding-web-references"></a>添加 Web 引用
-在添加 Web 端口之前，需要向 BizTalk 项目添加 Web 引用。 Web 引用是对可用于你的项目的 Web Services 的说明。 BizTalk 项目添加到你的项目的 Web 引用时，创建业务流程 Web 端口类型，Web 消息类型，（映射文件） Reference.map、 Reference.odx （orchestration 文件）、 \< *WebService*>.disco (发现文件），和\< *WebService*> 到你的项目的.wsdl （Web 服务描述语言文件）。 如果 Web Services 描述语言 (WSDL) 文件包含架构 Web 消息类型，则 BizTalk 项目会向你的项目添加 Reference.xsd。  
+在添加 Web 端口之前，需要向 BizTalk 项目添加 Web 引用。 Web 引用是对可用于你的项目的 Web Services 的说明。 BizTalk 项目添加到你的项目的 Web 引用时，创建业务流程 Web 端口类型，Web 消息类型，（映射文件） Reference.map、 Reference.odx （orchestration 文件）、 \< *WebService*\>。disco （发现文件） 和\< *WebService*\>.wsdl （Web 服务描述语言文件） 到你的项目。 如果 Web Services 描述语言 (WSDL) 文件包含架构 Web 消息类型，则 BizTalk 项目会向你的项目添加 Reference.xsd。  
   
  Web 引用包括：  
   

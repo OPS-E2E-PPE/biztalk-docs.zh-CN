@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e876892b3eef9e5dd47c51c64997d84a0f0dc98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5cff46f95062eff856653b6114f76f89ac17efd1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="custom-adapter-configuration-designer"></a>自定义适配器配置设计器
 您需要在 .NET 类库中生成自定义设计器。 您既可将它们合并到适配器的 DLL，也可生成单独的 DLL。 生成设计器程序集后，您必须通过修饰来引用该程序集，如同引用说明或类别一样。 该引用包括一个程序集规范和一个要使用的完全限定类名。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  您既可将该程序集拖入全局程序集缓存，也可使用 GACUTIL 将其添加到全局程序集缓存。  
   
- 若要使用此设计器，请指定完全限定类名、逗号和全局程序集缓存程序集项（程序集名称、版本、区域性和公钥标记）作为修饰的值。 使用\<编辑器 > 修饰**UITypeEditor**实现和\<转换器 > 修饰**TypeConverter**实现。  
+ 若要使用此设计器，请指定完全限定类名、逗号和全局程序集缓存程序集项（程序集名称、版本、区域性和公钥标记）作为修饰的值。 使用\<编辑器\>修饰**UITypeEditor**实现和\<转换器\>修饰**TypeConverter**实现.  
   
  下面的代码演示如何在 XSD 文件中初始化自定义设计器：  
   
@@ -75,4 +75,4 @@ ms.lasthandoff: 09/20/2017
  [适配器配置的的自定义下拉列表编辑器](../core/custom-drop-down-editor-for-adapter-configuration.md)   
  [适配器配置的的自定义模式对话框编辑器](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
  [适配器配置的的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md)   
- [适配器的高级的配置组件](../core/advanced-configuration-components-for-adapters.md)
+ [适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)

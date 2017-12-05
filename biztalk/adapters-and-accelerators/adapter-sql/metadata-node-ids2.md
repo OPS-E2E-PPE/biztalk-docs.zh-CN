@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab096378820e27c640af3262b0ae39d2fa1c5810
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6e603643ba1d969534e9954733572dc92acd04a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="node-types-and-ids-for-the-sql-server-adapter"></a>节点类型和 SQL Server 适配器 Id
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 |项目|元数据特征|  
 |--------------|------------------------------|  
-|表或视图|<ul><li>表名。</li><li>表字段名称。</li><li>表的字段数据类型映射到简单或复杂 WSDL 类型。</li><li>表字段长度映射到方面 maxLength。</li><li>表字段主键约束映射到方面 minOccurs = 1。</li><li>表字段为空的约束映射到方面 isNillable = true。</li><li>表操作<br /><br /> <ul><li>Insert</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>设置\<列名称 ></li></ul></li></ul>|  
+|表或视图|<ul><li>表名。</li><li>表字段名称。</li><li>表的字段数据类型映射到简单或复杂 WSDL 类型。</li><li>表字段长度映射到方面 maxLength。</li><li>表字段主键约束映射到方面 minOccurs = 1。</li><li>表字段为空的约束映射到方面 isNillable = true。</li><li>表操作<br /><br /> <ul><li>Insert</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>设置\<列名称\></li></ul></li></ul>|  
 |过程或函数|的为操作名称将映射过程或函数名称。<br />-过程或函数的参数名称。<br />-过程或函数的参数数据类型映射到 WSDL 类型。<br />-过程或函数的参数方向映射到 WSDL 参数方向。<br />过程参数或函数参数数据类型长度映射到方面 maxLength。<br />-过程或函数的参数顺序映射到元素序列。<br />函数返回数据类型映射到 WSDL 类型。<br />函数返回数据类型长度映射到方面 maxLength。|  
   
  有关格式的元数据的详细信息，[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开特定项目和操作上的 SQL Server 数据库，请参阅[消息和消息架构用于 SQL Server 的 BizTalk Adapter](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)。  

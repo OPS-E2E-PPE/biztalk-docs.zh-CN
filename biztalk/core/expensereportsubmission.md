@@ -15,11 +15,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 993d1874a95da2501636f941f1436fec894e87f6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c450e2e39f2498722f9eb8d09430294927cb05f8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Excel）向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程提交文档。  
@@ -41,7 +41,7 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
 4.  在实际使用中，另一个应用程序（如企业资源规划 (ERP) 系统）随后会检索该电子表格文件以进一步处理，但这已经超出了本示例的范围。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \AdaptersUsage\ExpenseReportSubmission\  
+ \<*示例路径*\>\AdaptersUsage\ExpenseReportSubmission\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -60,7 +60,7 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersUsage\ExpenseReportSubmission  
+     \<*示例路径*\>\AdaptersUsage\ExpenseReportSubmission  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -126,7 +126,7 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
   
     4.  单击**添加**以显示**Add file**对话框。  
   
-    5.  单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹 >*\HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。  
+    5.  单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹\>*\HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。  
   
     6.  启用到选项**设置扩展状态为允许**单击**确定**。  
   
@@ -175,4 +175,4 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
 |503 服务不可用，以及大多数介于 400 和 500 之间的其他 HTTP 代码|确保主机运行，并将服务部署、绑定到正确的端口并启动。|  
   
 ## <a name="see-also"></a>另请参阅  
- [适配器示例-使用情况](../core/adapter-samples-usage.md)
+ [适配器示例 - 用法](../core/adapter-samples-usage.md)

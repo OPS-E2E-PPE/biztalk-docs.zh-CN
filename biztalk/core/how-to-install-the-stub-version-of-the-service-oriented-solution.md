@@ -28,11 +28,11 @@ caps.latest.revision: "53"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c000c733097bffa58f652801b459c429df149e56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adaf5cb0117e0d571e0be0ddd42350ce3af2ba80
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a>如何安装面向服务的解决方案的存根版本
 以下步骤介绍了如何准备计算机以安装面向服务的解决方案的存根版本，以及如何在计算机上安装该解决方案：  
@@ -109,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  将用于 .NET 程序集的 WebSphere MQ 类添加到全局程序集缓存 (GAC) 中。  
   
-    1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，导航到目录\<IBM MQSeries 安装目录 > \bin。  
+    1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，导航到目录\<IBM MQSeries 安装目录\>\bin。  
   
     2.  运行以下命令（请确保 gacutil.exe 位于该路径环境下）：  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 09/20/2017
   
          别名 = Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub  
   
-         路径 = \<BizTalk 安装目录 > \SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
+         路径 = \<BizTalk 安装目录\>\SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
   
          访问权限 = 读取，运行脚本  
   
@@ -154,7 +154,7 @@ ms.lasthandoff: 09/20/2017
   
          别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP  
   
-         路径 = \<BizTalk 安装目录 > \SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
+         路径 = \<BizTalk 安装目录\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
   
          访问权限 = 读取，运行脚本  
   
@@ -162,7 +162,7 @@ ms.lasthandoff: 09/20/2017
   
          别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions  
   
-         路径 = \<BizTalk 安装目录 > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
+         路径 = \<BizTalk 安装目录\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
   
          访问权限 = 读取，运行脚本  
   
@@ -170,7 +170,7 @@ ms.lasthandoff: 09/20/2017
   
          别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker  
   
-         路径 = \<BizTalk 安装目录 > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
+         路径 = \<BizTalk 安装目录\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
   
          访问权限 = 读取，运行脚本  
   
@@ -255,7 +255,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令提示符下，键入以下命令，然后按 Enter。 此命令将设置用于查找 BAM 实用工具的路径：  
   
-    -   SET PATH=%PATH%;%programfiles%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\Tracking  
+    -   集 PATH=%PATH%;%programfiles%\Microsoft BizTalk Server\Tracking  
   
 2.  在命令提示符下，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln\BAM 文件夹，键入以下命令，然后按 Enter：  
   
@@ -286,4 +286,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [在安装之前面向服务解决方案](../core/before-installing-the-service-oriented-solution.md)   
  [如何安装内联和服务的适配器版本面向解决方案](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
- [服务开发人员计算机设置面向解决方案](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [面向服务的解决方案的开发人员计算机设置](../core/developer-machine-setup-for-the-service-oriented-solution.md)

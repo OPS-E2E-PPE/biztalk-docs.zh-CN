@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843e20e76f7320555a0cfab5af5103ce3fd597d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f0a58d7dfa022c3921abb5b426dacdf387095c2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scaling-out-receiving-hosts"></a>向外扩展接收主机
-若要使接收主机高度可用，必须具有两个或多[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在运行的每个接收的主机实例的计算机。 可以通过向外扩展接收主机提高可用性[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]占用消息传送的部署。 尽管这些部署可能很少处理业务流程，但仍可快速和可靠地路由许多不同类型的消息。  
+若要使接收主机高度可用，必须具有两个或多[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在运行的每个接收的主机实例的计算机。 通过向外扩展接收主机可以增加的消息传送密集型 BizTalk Server 部署的可用性。 尽管这些部署可能很少处理业务流程，但仍可快速和可靠地路由许多不同类型的消息。  
   
  通过将接收主机与处理业务流程和发送消息的主机分隔开来，您可增强您的环境的安全性和可伸缩性，因为可以独立于其他主机来保护和扩展每个主机。 例如，您可以将两台计算机（主机实例）添加到接收主机，而无需向处理主机或发送主机添加任何计算机。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
  在接收端口配置中，（可选） 指定映射。 在接收位置配置中，你必须指定用于文档预处理的管道。 指定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]进程处理接收到预处理到映射文档的文档的文档的所有内容。 这是相同的进程内主机实例和独立的主机实例。  
   
 ## <a name="scaling-out-in-process-receiving-hosts"></a>向外扩展进程内接收承载  
- 下图显示[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]接收具有两个主机的主机实例分别位于另一台计算机提供高可用性的部署。 请注意，在此图中处理和发送主机不是高可用，因为只有一个处理的 BizTalk 项分配给主机的主机实例。  
+ 下图显示通过其他计算机上有两个主机实例每个接收的主机提供高可用性的 BizTalk Server 部署。 请注意，在此图中处理和发送主机不是高可用，因为只有一个处理的 BizTalk 项分配给主机的主机实例。  
   
  ![用于接收消息的多个主机](../core/media/tdi-ha-scalereceive.gif "TDI_HA_ScaleReceive")  
   
@@ -52,15 +52,15 @@ ms.lasthandoff: 09/20/2017
  为确保此配置的高可用性，每台计算机都运行三个主机实例：三家公司中的每一个家都对应一个实例。 每家公司的主机实例都包含用来与该公司进行通信的接收位置和管道。 在典型操作期间，只要执行了必要的工作，以向外扩展前面的接收适配器中，消息传递负载分布于三个宿主实例对于每个主机。 如果一台计算机上的主机实例失败，则在其他两台计算机上运行的主机实例将提供冗余，以保持服务可用。  
   
 ## <a name="scaling-out-isolated-receiving-hosts"></a>缩放缩小隔离接收主机  
- 除了主机实例，缩放和为接收主机提供高可用性的过程又依赖于在你部署中实施的特定适配器。 每个适配器都具有与协议有关的特性，所以在协议不同的情况下规划和部署也会有所不同。 但是，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]使你能够应用所有适配器的支持，主要通过其他计算机和主机实例相同的高可用性解决方案。  
+ 除了主机实例，缩放和为接收主机提供高可用性的过程又依赖于在你部署中实施的特定适配器。 每个适配器都具有与协议有关的特性，所以在协议不同的情况下规划和部署也会有所不同。 但是，BizTalk Server 可让你将应用所有适配器的支持，主要通过其他计算机和主机实例相同的高可用性解决方案。  
   
- 根据所用的具体协议，某些接收适配器需要采用在多台主机计算机中分布传入消息的附加机制，才能确保高可用性。 例如，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]使用 HTTP 或 SOAP 适配器 （也称为 Web 服务适配器） 的解决方案需要负载平衡器如网络负载平衡 (NLB) 分配接收工作负荷下, 图中所示。  
+ 根据所用的具体协议，某些接收适配器需要采用在多台主机计算机中分布传入消息的附加机制，才能确保高可用性。 例如，使用 HTTP 或 SOAP 适配器 （也称为 Web 服务适配器） 的 BizTalk Server 解决方案需要负载平衡器如网络负载平衡 (NLB) 分配接收工作负荷下, 图中所示。  
   
  ![向外扩展独立接收主机](../technical-guides/media/cb38ec25-bfb0-4a55-8464-b7918b6fc746.gif "cb38ec25-bfb0-4a55-8464-b7918b6fc746")  
   
- 有关中的最常见适配器的高可用性准则的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅中的"缩放 BizTalk Server 接收适配器"部分[Scaled-Out 接收主机](http://go.microsoft.com/fwlink/?LinkId=151283)(http://go.microsoft.com/fwlink /？LinkId = 151283) 中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关中的最常见适配器的高可用性准则的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅中的"缩放 BizTalk Server 接收适配器"部分[Scaled-Out 接收主机](http://go.microsoft.com/fwlink/?LinkId=151283)(http://go.microsoft.com/fwlink /？LinkId = 151283) 在 BizTalk Server 帮助中。  
   
 ## <a name="see-also"></a>另请参阅  
  [群集接收主机](../technical-guides/clustering-receiving-hosts.md)   
  [向外扩展处理主机](../technical-guides/scaling-out-processing-hosts.md)   
- [向外扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)
+ [横向扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)

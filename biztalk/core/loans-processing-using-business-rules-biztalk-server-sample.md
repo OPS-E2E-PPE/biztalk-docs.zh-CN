@@ -15,22 +15,22 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c51f0ff13b06bd57ccdd52ec6e35fdd7e0acf839
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82476c440f1bae482eff5308f1a5238f8bd85d92
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a>贷款处理使用业务规则 （BizTalk Server 示例）
 使用业务规则的贷款处理示例说明如何使用在业务流程中管理的规则集，以及如何使用输入组合（称为事实）来计算正在处理的文档中某些字段的设置。 事实可以是调用基于 .NET 的程序集的结果、从 XML 格式的消息中检索的值或从数据库检索的数据。 本示例还说明如何随时更改规则以便影响随后的计算，而无需重新部署。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例将在简化的贷款处理方案的上下文中说明这些功能。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程提取并处理 XML 消息格式的贷款申请（也称为贷款案例）。 此业务流程将使用业务规则引擎根据规则评估传入消息，并利用规则申请结果修改消息，然后将消息以文件的形式写入输出文件夹。  
+ 本示例将在简化的贷款处理方案的上下文中说明这些功能。 BizTalk Server 业务流程提取并处理 XML 消息格式的贷款申请（也称为贷款案例）。 此业务流程将使用业务规则引擎根据规则评估传入消息，并利用规则申请结果修改消息，然后将消息以文件的形式写入输出文件夹。  
   
  基于事实从多个源，包括消息处理，此示例会将设置**IncomeStatus**， **CommitmentsStatus**， **EmploymentStatus**，和**ResidencyStatus**正在处理的消息的元素。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Business Rules\Loans 处理使用业务 Rules\  
+ \<*示例路径*\>\Business Rules\Loans 处理使用业务 Rules\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -54,11 +54,11 @@ ms.lasthandoff: 09/20/2017
 1.  确保您的计算机上具有 Northwind 数据库。  
   
     > [!IMPORTANT]
-    >  为了运行本示例，您必须拥有名为 Northwind 的数据库。 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] 和 [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] 不提供 Northwind 示例数据库。 若要创建 Northwind 数据库，下载安装文件从[http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020)，并按照说明操作。  
+    >  若要运行此示例，你必须有 Northwind SQL Server 示例数据库。 [下载](https://www.microsoft.com/download/details.aspx?id=23654)，并安装。 
   
 2.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Business Rules\Loans 处理使用业务规则  
+     \<*示例路径*\>\Business Rules\Loans 处理使用业务规则  
   
 3.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -177,4 +177,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [业务规则 （BizTalk Server 示例文件夹中）](../core/business-rules-biztalk-server-samples-folder.md)
+ [业务规则（BizTalk Server 示例文件夹）](../core/business-rules-biztalk-server-samples-folder.md)

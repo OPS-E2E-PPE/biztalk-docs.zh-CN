@@ -16,16 +16,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3027971059d99a921bd743ff28aca1617c5d628d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88167cbeb5c8c6bb0a62030e64f4ed3d91a9d1aa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-select-artifact-type-dialog-box"></a>如何使用选择项目类型对话框
 *项*用于在业务流程设计器中配置的业务流程的元素。 项的例子包括架构、映射、管道、端口类型和多部分消息类型。 开发业务流程及其构成部分（例如，端口形状、转换形状和消息）时，您可能需要引用某些项，这些项不位于当前业务流程，而是位于当前项目或者已编译到 BizTalk Server 程序集的其他项目中。 你使用**选择项目类型**对话框中，以查找并配置业务流程中的某个元素时，然后指定项。  
   
- **选择项目类型**从 Orchestration 设计器中的多个位置对话框才可用。 你可以选择\<选择从引用的程序集 > 下拉列表中显示配置选项; 单击此文本将打开**选择项目类型**对话框。  
+ **选择项目类型**从 Orchestration 设计器中的多个位置对话框才可用。 你可以选择\<从引用的程序集选择\>下拉列表中显示配置选项; 单击此文本将打开**选择项目类型**对话框。  
   
  必须先选择要配置的元素，然后才可以选择项。  
   

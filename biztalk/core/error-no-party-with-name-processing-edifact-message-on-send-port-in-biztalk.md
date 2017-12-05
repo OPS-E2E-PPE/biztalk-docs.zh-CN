@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8acf93c1d1ec23e0c695bf2bfcf1ad105f9e10d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6becad3fefaa8167c9cf1af051731aa08be0d80a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-party-with-name"></a>处理在发送端口上的 Edifact 消息时出现故障： 同名否方
 ## <a name="details"></a>详细信息  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|事件源|BizTalk Server EDI|  
 |组件|EDI 引擎|  
 |符号名称|-|  
 |消息正文|在发送端口 {0} 上处理 Edifact 消息时发生故障。 任何一方不存在名称 {1}。|  

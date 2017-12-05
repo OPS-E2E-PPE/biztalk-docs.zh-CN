@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3953baf4a60e2863f986ec54fe9c12663b2b587d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 207c50c8f2dc61c0e7e86f865fec470dae4d2e84
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-resolve-a-service-endpoint-using-a-uddi-category-search"></a>如何： 解决使用 UDDI 类别搜索的服务终结点
 ## <a name="goal"></a>目的  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-itinerary-model"></a>若要创建路线模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。  
   
@@ -169,7 +169,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 解决使用绑定密钥搜索 UDDI 服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [如何：使用 UDDI 绑定密钥搜索解析服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

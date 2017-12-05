@@ -22,11 +22,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 512dc85fb1599bdaa77fe2550390ec2ce6954643
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52eb574f9f6b55b784357ff03c05ccb23774fecb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-in-orchestration-designer"></a>使用业务流程设计器
 在您开始了某一 BizTalk 项目后，可以创建新的业务流程和向该项目添加现有业务流程。 请参阅下面的过程来创建和保存业务流程、将现有业务流程添加到某一项目或从项目中删除现有业务流程、更改业务流程的名称以及设置业务流程属性。  
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-an-orchestration"></a>保存业务流程  
   
--   上**文件**菜单上，单击**保存\<orchestration 名称 >**。  
+-   上**文件**菜单上，单击**保存\<orchestration 名称\>**。  
   
     > [!NOTE]
     >  业务流程文件保存为 utf-8。  架构、 映射和管道将保存为 utf-16。  

@@ -18,11 +18,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0654bcf011648bcc40c092cb45e529b89cec1924
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0139e76512eb9ca60089cb3c5f1e71b4f5524690
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="activity-data-storage"></a>活动数据存储
 本主题介绍以下内容：关于活动数据存储的内容，由于活动表随着时间而不断增加所导致的性能问题，以及 BAM 如何通过对正进行的活动和已完成的活动使用不同的表来解决这些性能问题。 本主题还将介绍用于查询数据的联机时段，以及在 BAM 中如何使用分区来提高性能。  
@@ -37,14 +37,14 @@ ms.lasthandoff: 09/20/2017
 |124|上午 8:30|Seattle|234|8:45 am|下午 1:20|  
 |125|上午 8:35|Redmond|87|上午 9:05|2:30 pm|  
 |126|8:45 am|Seattle|450|上午 9:20|3:10 pm|  
-|127|上午 8:55|Redmond|200|上午 9:30|\<NULL >|  
+|127|上午 8:55|Redmond|200|上午 9:30|\<NULL\>|  
 |128|8:57 am|Seattle|340|上午 9:20|3:05 pm|  
-|129|上午 9:12|Seattle|120|上午 9:45|\<NULL >|  
-|130|上午 9:30|Redmond|25|10:15 am|\<NULL >|  
-|131|9:45|Seattle|250|上午 10:35|\<NULL >|  
-|132|上午 10:00|Redmond|100|\<NULL >|\<NULL >|  
-|133|10:15 am|Seattle|230|\<NULL >|\<NULL >|  
-|134|上午 10:25|Redmond|45|\<NULL >|\<NULL >|  
+|129|上午 9:12|Seattle|120|上午 9:45|\<NULL\>|  
+|130|上午 9:30|Redmond|25|10:15 am|\<NULL\>|  
+|131|9:45|Seattle|250|上午 10:35|\<NULL\>|  
+|132|上午 10:00|Redmond|100|\<NULL\>|\<NULL\>|  
+|133|10:15 am|Seattle|230|\<NULL\>|\<NULL\>|  
+|134|上午 10:25|Redmond|45|\<NULL\>|\<NULL\>|  
   
  在此表中，当 BAM 接收到新采购订单时，它将插入一个新行，并且将某些列（例如，RecvTime、城市、数量等）设置为非空值。 随后，当审批此采购订单并发货时，BAM 会将 ShipTime 设置为非空值。 最后，当接收和确认货物时，BAM 会将 DeliveryTime 设置为非空值。  
   
@@ -88,11 +88,11 @@ UNION ALL
   
  关于 BAM 分区，请注意以下几点：  
   
--   分区视图的名称是**bam_\<ActivityName > _AllInstances**。 此视图不适用于直接查询，但在对 BAM 规范进行疑难解答时可能非常有用。 查询数据时，应该从您在此视图顶部为业务用户的每个类别创建的特定视图中查询数据。 有关详细信息，请参阅[查询实例数据](../core/querying-instance-data.md)。  
+-   分区视图的名称是**bam_\<ActivityName\>_AllInstances**。 此视图不适用于直接查询，但在对 BAM 规范进行疑难解答时可能非常有用。 查询数据时，应该从您在此视图顶部为业务用户的每个类别创建的特定视图中查询数据。 有关详细信息，请参阅[查询实例数据](../core/querying-instance-data.md)。  
   
 -   通过修改的值设置联机窗口**OnlineWindowTimeUnit**和**OnlineWindowLength**表中的当前活动的记录中**bam_Metadata_Activities**主导入数据库中。  
   
--   DTS 包， **BAM_DM_\<ActivityName >**、 执行分区和存档/清除。 每次此程序包运行时，它将截断其他分区，并对处于联机时段之外的所有分区进行存档/删除。  
+-   DTS 包， **BAM_DM_\<ActivityName\>**、 执行分区和存档/清除。 每次此程序包运行时，它将截断其他分区，并对处于联机时段之外的所有分区进行存档/删除。  
   
 -   如果没有配置存档数据库，则 BAM 将直接删除旧的活动数据而不进行存档。  
   

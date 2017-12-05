@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e2bd45c54bfc312a52d199a2f117a108207cdf5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c8bd8248a916d1e98571551a8561119b6377329
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成和发布 SharePoint 站点上的 MT/MX 窗体
 **若要生成和发布 SharePoint 站点上的 MT/MX 窗体：**  
@@ -27,13 +27,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  在命令提示符下，访问已编译可执行文件 (FormGenerator.exe) 的文件夹。 例如，如果已生成实用工具在调试模式下，访问**...\bin\debug**文件夹。  
   
-4.  键入 FormGenerator.exe [-b] [-\<否。 模板文件夹路径 >]  
+4.  键入 FormGenerator.exe [-b] [-\<否。 模板文件夹路径\>]  
   
      `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`。 将参数替换为新创建的文件夹名称。  
   
 5.  上述命令还将生成所需的 MX 消息修复信封架构。  
   
-6.  转到输出文件夹\<DestinationFolderPath >。 在\<DestinationFolderPath >，打开你想要生成的窗体的 InfoPath 窗体模板的文件夹。 例如，如果你想要生成 MT103 InfoPath 窗体，然后打开在 DestinationFolderPath MT103 文件夹并打开 TemplateDS.sln。  
+6.  转到输出文件夹\<DestinationFolderPath\>。 在\<DestinationFolderPath\>，打开你想要生成的窗体的 InfoPath 窗体模板的文件夹。 例如，如果你想要生成 MT103 InfoPath 窗体，然后打开在 DestinationFolderPath MT103 文件夹并打开 TemplateDS.sln。  
   
 7.  在解决方案资源管理器中，双击**manifest.xsf**。 它将打开将需要一些时间来获取打开的 InfoPath 窗体的设计文件。  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 12. 在发布向导窗口中，选择**到网络位置**单击**下一步**。  
   
-13. 在窗体模板路径和文件名称文本框中，键入**http://localhost/sites/BASSite/Templates/\<MessageType >.xsn**和类型 **\<MessageType >**窗体中模板名称文本框中，然后单击**下一步**。  
+13. 在窗体模板路径和文件名称文本框中，键入**http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn**和类型 **\<MessageType\>**窗体模板中将文本框中，然后单击**下一步**。  
   
 14. 单击 **“下一步”**。  
   
@@ -58,13 +58,13 @@ ms.lasthandoff: 09/20/2017
   
 16. 在 Internet Explorer 中，打开你的 SharePoint 站点**http://localhost/sites/bassite/templates**。  
   
-17. 指向 **\<MessageType >**，单击它，旁边的向下箭头，然后单击**编辑属性**。  
+17. 指向 **\<MessageType\>**，单击它，旁边的向下箭头，然后单击**编辑属性**。  
   
-18. 在模板中：\< MessageType > 窗口中的，在 Namespace 框中：  
+18. 在模板中：\< MessageType\>窗口中的，在 Namespace 框中：  
   
     -   如果要生成 MT InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   如果要生成 MX InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName >**  
+    -   如果要生成 MX InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName\>**  
   
          这将有助于标识与相应的模板消息实例。  
   

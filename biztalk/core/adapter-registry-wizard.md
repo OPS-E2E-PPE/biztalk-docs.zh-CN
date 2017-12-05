@@ -15,17 +15,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f07ef6adc96a4f5819cd5438b4a5d24ce6fc0770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b721294acb07d4c69c5b2ae7b58b0e135625eee8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-registry-wizard"></a>适配器注册表向导
 适配器注册表向导用于创建配置和注册的自定义适配器所需的注册表文件。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- *\<安装路径 >*\SDK\Utilities\AdapterRegistryWizard\  
+ *\<安装路径\>*\SDK\Utilities\AdapterRegistryWizard\  
   
 ## <a name="to-run-this-utility"></a>运行本实用工具  
  通过运行 AdapterRegistryWizard.exe 可执行程序启动该向导。 向导中的页面将提示您与适配器及其支持的属性有关的信息。 在后面的部分中将介绍各适配器注册向导页。  
@@ -76,4 +76,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [SDK 中的实用程序](../core/utilities-in-the-sdk.md)   
- [注册的适配器](../core/registering-an-adapter.md)
+ [注册适配器](../core/registering-an-adapter.md)

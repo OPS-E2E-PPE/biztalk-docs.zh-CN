@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1898162b27956e4e527013ff765edf6aea440e9f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32dc7b0f73955c080f875eada2705300800df452
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="exporting-certificates"></a>导出证书
 本主题说明如何使用证书导出向导导出证书。 使用此向导可导出公用证书或私用证书。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-export-the-home-organization-certificate"></a>导出本组织证书  
   
-1.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务 > mmc**，其中\< *hostservice*> 是你在安装时，在与主机服务关联的服务名称[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，然后单击**确定**运行[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]管理控制台 (MMC) 的上下文中主机服务。  
+1.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务\>mmc**，其中\< *hostservice* \>是你在安装时，在与主机服务关联的服务名称[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，然后单击**确定**运行[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]管理控制台 (MMC) 的主机服务的上下文中。  
   
     > [!NOTE]
     >  你运行**runas**命令假定访问主页组织证书所需的主机服务的标识。  

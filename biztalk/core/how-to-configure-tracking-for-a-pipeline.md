@@ -24,11 +24,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e933e9b50c99e11013ceaedf65c4f253ad1620c2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f34abe4d9d8b97b1c61bfc6201c3d36b977d0697
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-tracking-for-a-pipeline"></a>如何配置跟踪为管道
 本主题将介绍如何使用 BizTalk Server 管理为管道配置跟踪。 您可能会希望配置跟踪以进行故障排除和审核。 您可以查看消息属性、端口事件和消息事件。 您还可以跟踪消息事件和消息的端口事件。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  执行以下操作之一：  
   
-    -   若要配置 BizTalk 管道跟踪的默认值之一，展开\<所有项目 >。  
+    -   若要配置 BizTalk 管道跟踪的默认值之一，展开\<所有项目\>。  
   
     -   若要为已部署到 BizTalk 应用程序中的自定义管道配置跟踪，请展开包含该管道的应用程序。  
   

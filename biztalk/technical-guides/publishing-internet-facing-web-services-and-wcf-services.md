@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38ee916aaa5e158160f2096b0ba9b2678dd6b8d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e466c4fc2a5f83f5a8445601235b53f44404a912
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-internet-facing-web-services-and-wcf-services"></a>发布的面向 Internet 的 Web 服务和 WCF 服务
 可将多个方法用于发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务添加到 Internet:  
@@ -25,12 +25,12 @@ ms.lasthandoff: 09/20/2017
   
 -   将运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，发布到外围网络域的 Web 服务或 WCF 服务。  
   
--   使用[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]云启用程序功能，以将 Web 服务或 WCF 服务发布为 Azure AppFabric Service Bus 中继终结点。  
+-   使用 BizTalk Server 云启用程序功能来为 Azure AppFabric Service Bus 中继终结点发布的 Web 服务或 WCF 服务。  
   
 ## <a name="using-a-reverse-proxy"></a>使用反向代理  
  这已发布的传统方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务。 外围网络中使用反向代理规则了需要具有位于外围网络中的 BizTalk server。 反向代理规则只需 HTTP 和 SOAP 请求转发从外围网络到运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]intranet 域中。  
   
- 有关使用反向代理的详细信息，请参阅中的以下主题[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助：  
+ 有关使用反向代理的详细信息，请参阅 BizTalk Server 帮助中的以下主题：  
   
 -   ["示例体系结构： HTTP 和 SOAP 适配器"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)。  
   

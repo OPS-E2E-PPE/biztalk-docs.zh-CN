@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e16020afb17d17c8add8e973ade0cd0c5cfcbbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 040fee5fab56a1e54b777fc7548b8ff28e5b07ec
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>从 PIP 创建格式正确的消息实例
 本主题介绍如何生成格式正确的消息实例。 你可以根据合作伙伴接口流程 (PIP) 为消息实例生成模板。 执行此操作后，必须先修改该模板，以确保该模板的格式正确，然后才能添加数据。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
-3.  找到\<*驱动器*> files\microsoft BizTalk\<版本 > Accelerator for RosettaNetSDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。  
+3.  找到\<*驱动器*\>files\microsoft BizTalk\<版本\>Accelerator for RosettaNetSDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。  
   
 4.  在解决方案资源管理器，展开**RNPIPs**，然后右键单击你想要创建实例 PIP。  
   

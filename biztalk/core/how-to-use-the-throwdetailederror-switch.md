@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 194306da3b021e7460b88a3d8e76801a2eeaebba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90929015e2d1d0567af0ccc5c51c6aae450d49c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-throwdetailederror-switch"></a>如何使用 ThrowDetailedError 开关
 如果发生错误，Web 客户端接收泛型**SoapException**。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
  Web.config 文件包含应用程序设置交换机， **ThrowDetailedError**。 **False**是默认设置**ThrowDetailedError**。 如果你将设置更改为**True**，服务器代理将内部异常信息返回给使你能够调试已发布的 Web 服务的 Web 客户端。  
   
- 下面的 XML 代码演示**ThrowDetailedError**下 Web.config 文件中出现的交换机\<appSettings > 节点：  
+ 下面的 XML 代码演示**ThrowDetailedError**下 Web.config 文件中出现的交换机\<appSettings\>节点：  
   
 ```  
 <appSettings>  

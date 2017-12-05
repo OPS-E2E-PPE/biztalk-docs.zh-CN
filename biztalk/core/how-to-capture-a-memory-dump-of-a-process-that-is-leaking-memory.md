@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2999ce9a188b2d9b94df11328485e8b7440ecec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e1e57a3c4d3c035069c550cdc540de1c88e8880
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>如何捕获泄露内存的进程内存转储
 如果 BizTalk 进程 BTSNTSvc.exe 无法释放不再需要的内存，因此会随着时间减少可用内存量，则定义为内存泄漏。 可以查看下的值来确定进程的内存使用率**内存使用**列**进程**选项卡中可找到**任务管理器**。 如果进程继续随时间消耗内存而不释放内存，系统的整体性能将受到不良影响。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**规则完成**对话框中，单击**完成**以接受默认值的**立即激活规则**。  
   
-8.  默认情况下，进程的内存转储将保存到 \Program Files\IIS Resources\DebugDiag\Logs\\<*崩溃规则的名称*> 目录中指定的时间段后的本地计算机**配置跟踪的持续时间**对话框已过。  
+8.  默认情况下，进程的内存转储将保存到 \Program Files\IIS Resources\DebugDiag\Logs\\<*崩溃规则的名称*\>目录的时间段后的本地计算机指定在**配置跟踪的持续时间**对话框已过。  
   
 ### <a name="to-manually-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>手动捕获泄漏内存的进程的内存转储  
   

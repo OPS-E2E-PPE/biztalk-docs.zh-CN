@@ -13,11 +13,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f1baca3a561702546ca2fae10b1c567042cd387
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f20b35aca2c4fb35419153ccfb149aa34501b21a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-tracking-policy-execution"></a>演练： 跟踪策略执行
 启用跟踪的分步过程**ProcessPurchaseOrder**策略，以及执行策略后，请查看跟踪信息。  
@@ -102,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
 -   当你测试策略时，策略跟踪信息非常类似于你在业务规则编辑器中看到的跟踪信息。  
   
--   尽管业务流程名称是 RuleTest.odx，但你看到的业务流程名称却是 Orchestration_1，因为尽管“名称”改变，业务流程的“类型名”仍设置为 Orchestration_1。 跟踪显示你的业务流程名称格式\<Namespace >。\<键入名称 >。  
+-   尽管业务流程名称是 RuleTest.odx，但你看到的业务流程名称却是 Orchestration_1，因为尽管“名称”改变，业务流程的“类型名”仍设置为 Orchestration_1。 跟踪显示你的业务流程名称格式\<Namespace\>。\<键入名称\>。  
   
 -   如果使用 BizTalk Server 管理控制台从 BizTalk 应用程序中删除某个策略，则工具不仅将从应用程序中删除策略，而且还将从规则引擎数据库中删除策略。 你将无法在业务规则编辑器中看到策略（按 F5 刷新）。 因此，在将策略从应用程序中删除时务必小心。  
   

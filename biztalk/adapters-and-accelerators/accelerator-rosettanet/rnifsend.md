@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1762c30d6524a777a862492701ff0b8a8731a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73cf8a832e495944ce7c891421645ae2566e3575
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="rnifsend"></a>RNIFSend
 此示例提供可实际应用的 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx 文件，该文件准备供 RNIF 处理的消息，并将该消息发送到响应方的 RNIFReceive.aspx 页。 你可以通过自定义 ASPX 页来执行以下操作：  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 -   向该页添加验证功能  
   
- 此示例位于*\<驱动器 >*: files\microsoft BizTalk\<版本 > RosettaNet\SDK\WebApplication\RNIFSender 快捷键。  
+ 此示例位于*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\SDK\WebApplication\RNIFSender 快捷键。  
   
 ## <a name="demonstrates"></a>演示  
  此示例演示如何准备供 RNIF 处理的传出消息，包括以下内容：  

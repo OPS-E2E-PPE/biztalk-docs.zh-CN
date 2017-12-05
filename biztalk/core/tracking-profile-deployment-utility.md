@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c4d261069b83741413e255a3f8bacd6dd9260d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 672879df2c1c5217d8a9710dad000609dd95d0c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tracking-profile-deployment-utility"></a>跟踪配置文件部署实用工具
 开发人员使用 bttdeploy 实用程序可以将跟踪配置文件应用于 BAM 基础结构，也可以用它从 BAM 基础结构中删除跟踪配置文件。 使用 bttdeploy 实用程序在功能上与单击跟踪配置文件编辑器 (TPE) 中的“应用跟踪配置文件”菜单选项一样。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |选项|Description|  
 |------------|-----------------|  
 |/h 或 /?|可选：显示 bttdeploy 的语法摘要。|  
-|/mgdb\<服务器名称 [，端口] >\\< 数据库名称\>|可选：指定要将配置文件应用到的管理服务器、端口和数据库名称。 **注意：**端口使用此参数时，是可选的。|  
+|/mgdb\<服务器名称 [，端口]\>\\< 数据库名称\>|可选：指定要将配置文件应用到的管理服务器、端口和数据库名称。 **注意：**端口使用此参数时，是可选的。|  
 |/remove|可选：指定将从 BAM 数据库中删除跟踪配置文件。|  
 |filename|要应用或删除的跟踪配置文件的名称。|  
   

@@ -12,16 +12,16 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8547175461732e41248e1e94bf961f95e655890f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f6a3de45744b40335999c1471165ff851ec60664
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="x12-ta1-acknowledgment"></a>X12 TA1 确认
 X12 TA1 技术确认通过地址接收方报告交换标头和尾部的处理状态。 无论其他内容的状态如何，当 X12 编码消息的 ISA 和 IEA 有效时，将会发送肯定的 TA1 确认。 否则，将发送带有错误代码的 TA1 确认。  
   
- X12 TA1 确认符合 X12_\<版本号 > _TA1.xsd 架构。 TA1 确认是在 ISA/IEA 信封内部发送的。 ISA 和 IEA 与其他任何交换没有任何区别。  
+ X12 TA1 确认符合 X12_\<版本号\>_TA1.xsd 架构。 TA1 确认是在 ISA/IEA 信封内部发送的。 ISA 和 IEA 与其他任何交换没有任何区别。  
   
  下表显示了 TA1 确认交换内部的分段。  
   

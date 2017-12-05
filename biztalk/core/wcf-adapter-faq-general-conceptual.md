@@ -12,17 +12,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f5acc3cb968ab35436fe684edd0eb41088b48a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a33e6ba26f0ba97cb10aa2f9ee728683719dd66
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="wcf-adapter-faq-general-conceptual"></a>WCF 适配器常见问题解答：一般概念
 下面是一些常见的有关 Windows® Communication Foundation (WCF) 适配器的一般和概念性问题。  
   
 ## <a name="what-is-a-wcf-adapter"></a>WCF 适配器是什么？  
- BizTalk 适配器是 Microsoft® BizTalk® Server 与外界通信方式的关键部分。 WCF 适配器是一个组件，它管理 BizTalk 应用程序与其需求之间的通信过程，以便将消息发送到 WCF 终结点和从 WCF 终结点接收消息。 与[!INCLUDE[prague](../includes/prague-md.md)]，WCF 适配器公开为 WCF 绑定。 这意味着任何可使用 WCF 绑定的 WCF 应用程序都可以直接与 WCF 适配器通信，无需 BizTalk Server 进行干预。 但是，通过 BizTalk Server 使用 WCF 适配器可让您享受 BizTalk Server 提供的许多应用程序基础结构优势。 这些常见问题解答的焦点主要是在 BizTalk Server 环境中使用 WCF 适配器。  
+ BizTalk 适配器是 Microsoft® BizTalk® Server 与外界通信方式的关键部分。 WCF 适配器是一个组件，它管理 BizTalk 应用程序与其需求之间的通信过程，以便将消息发送到 WCF 终结点和从 WCF 终结点接收消息。 与 BizTalk Server 中，WCF 适配器显示为 WCF 绑定。 这意味着任何可使用 WCF 绑定的 WCF 应用程序都可以直接与 WCF 适配器通信，无需 BizTalk Server 进行干预。 但是，通过 BizTalk Server 使用 WCF 适配器可让您享受 BizTalk Server 提供的许多应用程序基础结构优势。 这些常见问题解答的焦点主要是在 BizTalk Server 环境中使用 WCF 适配器。  
   
  WCF 适配器允许 BizTalk Server 使用 WCF 绑定来发送和接收 WCF 消息。 WCF 客户端应用程序可以将 WCF 消息发送到 BizTalk 接收位置，WCF 接收适配器在此处接收消息。 该适配器接收 WCF 消息并将其转换为 BizTalk 消息。 如何发生转换将取决于某些适配器配置设置（使用 BizTalk Server管理控制台配置这些设置）。 适配器将 BizTalk 消息提交到内部 BizTalk MessageBox 数据库。 相应地，使用 WCF 适配器的 BizTalk 发送端口可以订阅此消息类型，获取 BizTalk 消息，将其转换为 WCF 消息，以及使用支持的一种 WCF 协议将 WCF 消息传输到 WCF 服务终结点。  
   
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **自定义绑定：**实现更高绑定灵活性，存在特殊的自定义绑定。 这包括需要与标准绑定存在偏差的通信情况。 WCF-Custom 和 WCF CustomIsolated 适配器允许开发大量的绑定自定义。 通过允许将现有绑定元素（BindingElement 类）和行为应用程序（Behavior 类）组合来实现此操作。  
   
--   **标准绑定：** Microsoft 的目标是开发适配器侧重于最常见的通信方案。 使用标准绑定，将通过隐藏通信协议的许多细节来简化开发人员的体验。 [!INCLUDE[prague](../includes/prague-md.md)] 中的 WCF 适配器集反映了 .NET Framework 4.0 WCF 库中可用的绑定集。 将标准绑定引入到 .NET WCF 库，是为了使典型绑定模式更易于使用。 它们涉及最常用的通信方案，包括：  
+-   **标准绑定：** Microsoft 的目标是开发适配器侧重于最常见的通信方案。 使用标准绑定，将通过隐藏通信协议的许多细节来简化开发人员的体验。 BizTalk Server 中的 WCF 适配器集反映的一套.NET Framework 4.0 WCF 库中可用的绑定。 将标准绑定引入到 .NET WCF 库，是为了使典型绑定模式更易于使用。 它们涉及最常用的通信方案，包括：  
   
     -   WCF-WsHttp  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 09/20/2017
          不管是使用任何高级 HTTP 功能 (WCF-WsHttp) 还是只使用基本功能 (WCF-BasicHttp)，都将指示哪个基于 HTTP 的适配器是最佳的使用选择。  
   
 ## <a name="when-do-you-use-one-of-the-two-custom-wcf-adapters"></a>何时使用两个自定义 WCF 适配器之一？  
- [!INCLUDE[prague](../includes/prague-md.md)] 附带了两个自定义 WCF 适配器。 存在两个自定义适配器的原因是因为，BizTalk Server 要求托管某个特定适配器类型需要是其系统注册的一部分。 虽然在 WCF Framework 中仅有一种 CustomBinding 类型，但是在 BizTalk Server 中有两个自定义适配器，以在已存在的 BizTalk 适配器模型中适应这种限制。 在现实中，这些适配器将真正是您一直需要的仅有的适配器，因为它们允许对 WCF 通道堆栈配置实现完全控制。  
+ 有两个自定义 WCF 适配器附带 BizTalk Server。 存在两个自定义适配器的原因是因为，BizTalk Server 要求托管某个特定适配器类型需要是其系统注册的一部分。 虽然在 WCF Framework 中仅有一种 CustomBinding 类型，但是在 BizTalk Server 中有两个自定义适配器，以在已存在的 BizTalk 适配器模型中适应这种限制。 在现实中，这些适配器将真正是您一直需要的仅有的适配器，因为它们允许对 WCF 通道堆栈配置实现完全控制。  
   
  自定义适配器的唯一缺点是，它们还需要您对 WCF 配置和各种扩展性技术非常地了解。  简化配置是 Microsoft 为标准 WCF 绑定提供适配器的原因。 预定义标准绑定是为了覆盖大多数常用的案例，并使通过 BizTalk Server 发送和接收消息尽可能地简单。 使用这些自定义适配器的需求通常仅发生在标准绑定无法完整或精确地满足您的发送端口或接收位置要求。 例如，可能存在一个为其消息使用专有压缩方案的应用程序。 为了对此进行支持，必须编写一个自定义绑定元素。 使用两个标准自定义适配器之一，可配置此自定义绑定，以解决传送要求。 因此，自定义适配器允许对通过通道堆栈的通信进程的绑定配置进行更高级别的控制。  
   

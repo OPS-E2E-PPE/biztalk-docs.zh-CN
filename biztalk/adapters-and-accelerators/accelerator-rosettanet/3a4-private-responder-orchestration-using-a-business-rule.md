@@ -12,22 +12,22 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 716ce7b5ac97ef424c815080a61877725db63443
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 130349d707c8e4382c50cd7b65d01d346bf0a7fc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="3a4-private-responder-orchestration-using-a-business-rule"></a>使用业务规则 3A4 私有响应方业务流程
 PIP3A4PrivateResponder.odx 示例是一个专用业务流程，该业务流程演示如何实现合并了业务规则的特定于合作伙伴接口流程 (PIP) 的响应方专用流程。 有关此过程的详细信息，请参阅[为私有的进程业务流程定义业务规则](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)。  
   
- 默认情况下， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序将安装中的示例\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\SDK\PipAutomation 快捷键\3A4。  
+ 默认情况下， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序将安装中的示例\<*驱动器*\>: files\microsoft BizTalk\<版本\>快捷键RosettaNet\SDK\PipAutomation\3A4。  
   
 ## <a name="procedures"></a>过程  
   
 #### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
   
-1.  在命令提示符处，找到*\<驱动器 >*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本 > \SDK\PIPAutomation\3A4 文件夹。  
+1.  在命令提示符处，找到*\<驱动器\>*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹。  
   
 2.  运行文件 Setup.bat，该文件使用 Binding.xml 绑定文件来执行以下操作：  
   
@@ -47,19 +47,19 @@ PIP3A4PrivateResponder.odx 示例是一个专用业务流程，该业务流程�
     >  必须使用 BizTalk 浏览器完成 PIP3A4PrivateResponderProcess 业务流程的端口绑定配置。  
   
     > [!NOTE]
-    >  若要撤消 setup.bat 所做的更改，请手动取消登记 PIP3A4PrivateResponder.odx 业务流程，取消部署 Helper 和 PIP3A4PrivateResponder 程序集，然后取消部署并删除 samplebtarnpolicy 规则策略。 不能使用中的 Cleanup.bat *\<驱动器 >*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本 > 要撤销 setup.bat 所做更改的 \SDK\PIPAutomation\3A4 文件夹。  
+    >  若要撤消 setup.bat 所做的更改，请手动取消登记 PIP3A4PrivateResponder.odx 业务流程，取消部署 Helper 和 PIP3A4PrivateResponder 程序集，然后取消部署并删除 samplebtarnpolicy 规则策略。 不能使用中的 Cleanup.bat *\<驱动器\>*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹，若要撤消更改所做的 setup.bat。  
   
 ## <a name="demonstrates"></a>演示  
  此示例订阅 3A4 请求操作消息和信号消息。 该示例在 3A4 同步流程和异步流程中都可执行。 所有其他 PIP 消息仍通过通用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 专用流程路由。 此示例调用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 业务规则引擎，并将传入 3A4 请求消息传递给规则引擎。  
   
 > [!NOTE]
->  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]提供了名为 samplebtarnpolicy.xml 中的示例业务规则策略\<*驱动器*>: \program Microsoft BizTalk Accelerator for RosettaNet\<版本 > \SDK\PipAutomation\3A4。 有关详细信息，请参阅[示例 BTARN 业务策略](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)。  
+>  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]提供了名为 samplebtarnpolicy.xml 中的示例业务规则策略\<*驱动器*\>: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PipAutomation\3A4。 有关详细信息，请参阅[示例 BTARN 业务策略](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)。  
   
  要使用此示例，请设置业务规则。 如果消息满足业务规则的要求，则流程会将传入操作消息保存在 MessagesToLOB 表中，并将“传递状态”设置为 2。 “已传递”列值必须非零，以便业务线应用程序知道不必生成此请求的确认消息。 然后，流程将 3A4 请求消息映射为 3A4 确认消息，并使用 `SubmitRNIF` 方法将响应提交给 MessageStorageIn 表。  
   
  如果消息不满足业务规则，则流程会将传入操作消息保存在 MessageStorageOut 表中，并将“传递状态”设置为 0。  
   
- 此示例包含一个绑定文件 (Binding.xml)，可用于设置发送端口 (PrivateResponder_To_LOB)、接收端口 (LOB_To_PrivateResponder) 和接收位置 (LOB_To_PrivateResponder)，以便将它们用于 PIP3A4PrivateResponder.odx 业务流程。 使用 BTSTask 命令可以导入 Binding.xml 文件中的绑定。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“ImportBindings 命令”主题。  
+ 此示例包含一个绑定文件 (Binding.xml)，可用于设置发送端口 (PrivateResponder_To_LOB)、接收端口 (LOB_To_PrivateResponder) 和接收位置 (LOB_To_PrivateResponder)，以便将它们用于 PIP3A4PrivateResponder.odx 业务流程。 使用 BTSTask 命令可以导入 Binding.xml 文件中的绑定。 有关详细信息，请参阅 BizTalk Server 帮助中的"ImportBindings 命令"主题。  
   
 ## <a name="see-also"></a>另请参阅  
  [Double 操作 PIPAutomation 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)   

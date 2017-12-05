@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4566a810489a9f6c46424a525908aa5a2fbb6bee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9bc96c3b591baf81806182b6c3e988a46dd208ba
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-scripts-to-deploy-applications"></a>使用脚本来部署应用程序
 您应使用脚本来部署 BizTalk 应用程序，在可能的情况。 脚本在部署过程中减少人为错误的风险。 你应记录中深度你部署过程。 你应该记录你不具有非常详细步骤编写脚本的任何内容。 这包括记录对外部系统和非 Microsoft 组件部署任何更改。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 -   [了解 BizTalk Server 应用程序部署](http://go.microsoft.com/fwlink/?LinkId=101599)(http://go.microsoft.com/fwlink/?LinkId=101599)  
   
     > [!NOTE]  
-    >  后一种本文也适用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+    >  后一种本文也适用于 BizTalk Server。  
   
 ## <a name="see-also"></a>另请参阅  
- [清单： 配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

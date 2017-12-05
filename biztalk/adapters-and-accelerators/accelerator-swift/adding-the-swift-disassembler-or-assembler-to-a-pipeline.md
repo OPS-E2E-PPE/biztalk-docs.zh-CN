@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a6a8e45d8f11e6dad977e42c6e9272e9b594e83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0648e6c51d83a95fb24b36d872e06e157480c5fb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="adding-the-swift-disassembler-or-assembler-to-a-pipeline"></a>管道添加 SWIFT 反汇编程序或汇编程序
-可以使用与 BizTalk 管道设计[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建自定义 BizTalk 接收和发送管道。 SWIFT 反汇编程序可用于在自定义接收管道中的"反汇编"阶段。 同样，你可以在自定义发送管道中的"汇编"阶段使用 SWIFT 汇编程序。 若要调用的 SWIFT 反汇编程序或从管道设计器工具箱的汇编程序，您将拆装器或汇编程序拖到相应的管道阶段管道设计器画布上。 有关调用反汇编程序集的分步说明，请参阅[模块 3： 添加的管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 有关使用管道项目或有关管道设计器的详细信息，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+可以使用与 BizTalk 管道设计[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建自定义 BizTalk 接收和发送管道。 SWIFT 反汇编程序可用于在自定义接收管道中的"反汇编"阶段。 同样，你可以在自定义发送管道中的"汇编"阶段使用 SWIFT 汇编程序。 若要调用的 SWIFT 反汇编程序或从管道设计器工具箱的汇编程序，您将拆装器或汇编程序拖到相应的管道阶段管道设计器画布上。 有关调用反汇编程序集的分步说明，请参阅[模块 3： 添加的管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 有关使用管道项目或有关管道设计器的详细信息，请参阅 BizTalk Server 帮助。  
   
  按照设计，SWIFT 反汇编程序需要"反汇编"阶段，以将*最终*调用接收管道的阶段。 使用任何后续阶段将导致意外行为 （反汇编不调用后续阶段的程序或删除上下文属性，它具有之前填充，并在发布到 MessageBox 消息之前提升反汇编程序数据库）。 同样，SWIFT 汇编程序需要"汇编"阶段，以将*第一个*发送管道的阶段。 使用任何前面阶段可能会影响由 SWIFT 汇编程序动态消息类型发现。  
   

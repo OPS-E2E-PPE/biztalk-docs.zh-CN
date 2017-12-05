@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d88607133c4ffde7baeb9742755c9393bd73196c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 958746634776e9b01c32ff2425122312bc7a841c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>步骤 6： 为确认批处理创建发送端口
 在此步骤中，你可以创建将你创建的确认批处理传送到源方发送端口。 这是文件适配器类型的静态单向端口。 其中指定的源 (\Tutorial_BatchACKDrop) 的文件文件夹[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将删除确认批处理文件。 你定义筛选器，该值指示端口将发送的确认批处理哪种类型的端口。 筛选器指定 Tutorial_BatchSource 和 OutboundBatch 的消息类型的源。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**目标文件夹**|浏览到  **\<*驱动器*: > files\microsoft BizTalk\<版本 > HL7\SDK\End 端到端 Tutorial\Tutorial_BatchACKDrop * * 的快捷键。 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含确认批处理的文件。|  
+    |**目标文件夹**|浏览到  **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键BatchACKDrop * *。 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含确认批处理的文件。|  
     |**文件名**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
     |**副本模式**|选择**创建新**。|  
   

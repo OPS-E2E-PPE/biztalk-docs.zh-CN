@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e10a4b54688c59991f25bb69a3251bee2f4607b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1dff8e981b65b6b91c744ce26648a5f4e06adea
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-bring-selected-map-items-in-view"></a>如何在视图中移动所选的映射项
-使用早期版本的 BizTalk 映射器时，如果映射包含大型架构，则必须手动滚动源架构窗格、网格页和目标架构窗格，以便将全部的相关映射项目引入单个视图中。 使用具有 [!INCLUDE[prague](../includes/prague-md.md)] 的映射器，可以通过自动滚动网格页，将选定 functoid/链接的全部相关映射项目引入单个视图中。 本主题提供有关如何执行此操作的信息。  
+使用早期版本的 BizTalk 映射器时，如果映射包含大型架构，则必须手动滚动源架构窗格、网格页和目标架构窗格，以便将全部的相关映射项目引入单个视图中。 与 BizTalk Server BizTalk 映射程序，可将所选 functoid/链接的所有相关映射项引入的单一视图自动滚动的网格页。 本主题提供有关如何执行此操作的信息。  
   
  根据您的选择（源架构节点、关系视图中的元素或目标架构节点），BizTalk 映射器以同步方式自动滚动架构视图和关系视图，并显示选定项目的全部关系视图。  
   
@@ -54,4 +54,4 @@ ms.lasthandoff: 09/20/2017
     >  此外，还可以在键盘上按 Ctrl+M、Ctrl+U。 映射器的键盘快捷方式的列表，请参阅[BizTalk 映射器键盘快捷键](../core/biztalk-mapper-keyboard-shortcuts.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [在 BizTalk 映射程序中使用增强的功能](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [使用 BizTalk 映射器中的增强功能](../core/using-enhanced-features-in-biztalk-mapper.md)

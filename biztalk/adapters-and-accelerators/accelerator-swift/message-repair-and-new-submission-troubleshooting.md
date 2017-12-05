@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dab8140c33b5518ec01f28128b5ef15bab0fab6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d341a7f03c70e1ddcd242d7804b162338798e94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>消息修复和新提交疑难解答
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>无法提交修复后的消息，如果未部署信封架构  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
  未部署信封架构。 这适用于任何 MT*xxx*消息或分析失败的任何消息。  
   
 ### <a name="solution"></a>解决方案  
- 部署使用每个消息架构信封架构 (\<驱动器 >: files\microsoft BizTalk Accelerator for SWIFT\<版本 > 消息包 \SWIFT Messages\ A4SWIFT SRG\<版本 > \类别 n\MTxxx.xsd) 和未分析的信封架构 (\<驱动器 >: files\microsoft BizTalk Accelerator for SWIFT\<版本 > 消息包 \SWIFT Messages\ A4SWIFT SRG\<版本 > \ UnparsedMessage\EnvelopeUnparsedMessage.xsd)。 有关详细信息，请参阅[部署 A4SWIFT 架构](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)。  
+ 部署使用每个消息架构信封架构 (\<驱动器\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>消息包 \SWIFT Messages\ A4SWIFT SRG\<版本\>\Category n\MTxxx.xsd) 和未分析的信封架构 (\<驱动器\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>消息包 \SWIFT Messages\ A4SWIFT SRG\<版本\>\ 未分析 Message\EnvelopeUnparsedMessage.xsd)。 有关详细信息，请参阅[部署 A4SWIFT 架构](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)。  
   
 ## <a name="you-cannot-submit-a-fixed-unparsed-message-from-a-mrsr-site-library-named-other-than-unparsed"></a>无法提交一个名为"Unparsed"以外的 MRSR 站点库中的固定未分析的消息  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   
-2.  在 IIS 管理器中，展开 ***\<服务器名称 >* （本地计算机）**节点，**应用程序池**节点和**网站**节点。 在网站节点下展开**Default Web Site**节点。  
+2.  在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）**节点，**应用程序池**节点和**Web站点**节点。 在网站节点下展开**Default Web Site**节点。  
   
 3.  在 Default Web Site 节点中，右键单击**A4SWIFT_MRSR**，然后单击**属性**。  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  在 IIS 管理器对话框中的下的应用程序池节点中，右键单击 A4SWIFT_MRSR，应用程序池，然后单击**属性**。  
   
-6.  在\<应用程序池名称 > 属性对话框中，单击**标识**注意。 如果**预定义**单击和**网络服务**是处于选中状态，单击**可配置**，输入你的本地或域帐户，然后输入你的密码。 单击 **“确定”**。  
+6.  在\<应用程序池名称\>属性对话框中，单击**标识**注意。 如果**预定义**单击和**网络服务**是处于选中状态，单击**可配置**，输入你的本地或域帐户，然后输入你的密码。 单击 **“确定”**。  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a>在本地化的计算机上的 MRSR 站点中创建的消息不处理  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
  "执行 BicMasterPolicy 时发生错误。 检查有效值的策略。"  
   
 ### <a name="possible-cause"></a>可能的原因  
- SQL Server 名称、 BIC 数据库名称和 BIC_Master_Policy.xml 文件中的集成的安全性值*\<驱动器 >*: files\ Microsoft BizTalk Accelerator for SWIFT\<版本 > 消息Pack\SWIFT Messages\A4SWIFT SRG\<版本 > \Base 策略包含用双引号括起来。 若要启用 BIC 验证，则输入这些字符串默认 BIC_Master_Policy.xml 文件中所述[启用验证 Bank 标识符代码的](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)。  
+ SQL Server 名称、 BIC 数据库名称和 BIC_Master_Policy.xml 文件中的集成的安全性值*\<驱动器\>*: files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 策略包含用双引号括起来。 若要启用 BIC 验证，则输入这些字符串默认 BIC_Master_Policy.xml 文件中所述[启用验证 Bank 标识符代码的](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)。  
   
 ### <a name="solution"></a>解决方案  
  若要修复 BIC 主策略，请继续执行，如下所示：  
@@ -138,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  业务规则编辑器，在取消部署的 BIC_Master_Policy，版本 1.0，然后再删除 BIC_Master_Policy。  
   
-2.  在文本编辑器中，（如记事本） 打开中的 BIC_Master_Policy.xml *\<驱动器 >*: files\ Microsoft BizTalk Accelerator for SWIFT\<版本 > 消息 Pack\SWIFT Messages\A4SWIFT-SRG\<版本 > \Base 策略。 删除 SQL Server 名称两边添加双引号，BIC 数据库名称，并集成安全值。  
+2.  在文本编辑器中，（如记事本） 打开中的 BIC_Master_Policy.xml *\<驱动器\>*: files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFTMessages\A4SWIFT SRG\<版本\>\Base 策略。 删除 SQL Server 名称两边添加双引号，BIC 数据库名称，并集成安全值。  
   
 3.  在业务规则引擎的部署向导中，导入 BIC_Master_Policy.xml，，然后部署 BIC_Master_Policy.xml。  
   
@@ -220,4 +220,4 @@ ms.lasthandoff: 09/20/2017
  运行**BTSharePointAdapterWSAppPool**和**DefaultAppPoolApplication** -> 和在 Internet 信息 Services(IIS) 池 administrator 帐户下。  
   
 ## <a name="see-also"></a>另请参阅  
- [疑难解答： 问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [疑难解答：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

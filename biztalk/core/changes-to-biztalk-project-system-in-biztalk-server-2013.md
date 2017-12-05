@@ -12,14 +12,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dff1f35955229306bc2f39e0af670f939dec82da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 836ffa11e3b15b379b8f4a07def2269f0f29a453
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changes-to-biztalk-project-system-in-biztalk-server-2013"></a>BizTalk Server 2013 中 BizTalk 项目系统的更改
-本主题为你提供了对 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中 BizTalk 项目系统的更改的高级概述。  
+本主题为你的更改的高级概述到 BizTalk Server 中的 BizTalk 项目系统。  
   
 ## <a name="project-properties-are-displayed-in-project-designer-window"></a>项目属性将显示在项目设计器窗口中  
  BizTalk Server 项目的属性现在显示在 Visual Studio 的项目设计器中，而不是“属性”对话框中。 项目设计器提供了一个集中的位置，用于管理项目属性、设置和资源。 项目设计器在 Visual Studio IDE 中显示为单个窗口，这一点与其他设计器（如窗体或类设计器）大致相同，并且包含许多可通过左侧标签访问的页面。 有关详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=190417](http://go.microsoft.com/fwlink/?LinkId=190417)。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
  **调试映射功能**。 你可以通过在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中使用内联 XSLT 调试程序调试映射 (XSLT)。 有关详细信息，请参阅[如何调试地图](../core/how-to-debug-maps.md)。  
   
 ## <a name="migrating-biztalk-server-projects"></a>迁移 BizTalk Server 项目  
- 可以使用 Visual Studio 转换向导，将为早期版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 开发的 Visual Studio 项目迁移到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 环境。 有关详细信息，请参阅[迁移 BizTalk 服务器项目](../core/migrating-a-biztalk-server-project.md)。  
+ 针对早期版本的 visual Studio 项目开发[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用 Visual Studio 转换向导迁移到 BizTalk Server 环境。 有关详细信息，请参阅[迁移 BizTalk 服务器项目](../core/migrating-a-biztalk-server-project.md)。  
   
 ## <a name="release-and-debug-build-types"></a>发布和调试版本类型  
  BizTalk 项目现在有两个生成类型：**版本**和**调试**，哪些替换**开发**和**部署**的更早版本版本。 但是，你仍然可以看到**开发**和**部署**从迁移的项目配置[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]。  
@@ -70,10 +70,10 @@ ms.lasthandoff: 09/20/2017
 >  Visual Studio 转换向导可以自动将前面提及的设置迁移到新环境中。  
   
 ## <a name="user-access-control"></a>用户访问控制  
- Visual Studio 不会让你在启了用户访问控制 (UAC) 功能的计算机上部署 BizTalk 项目，除非你使用管理权限运行 Visual Studio。 若要使用管理权限运行 Visual Studio，请单击**启动**，指向**所有程序**，指向**Microsoft Visual Studio**，右键单击**Microsoft Visual Studio\<版本 >**，然后单击**以管理员身份运行**。  
+ Visual Studio 不会让你在启了用户访问控制 (UAC) 功能的计算机上部署 BizTalk 项目，除非你使用管理权限运行 Visual Studio。 若要使用管理权限运行 Visual Studio，请单击**启动**，指向**所有程序**，指向**Microsoft Visual Studio**，右键单击**Microsoft Visual Studio\<版本\>**，然后单击**以管理员身份运行**。  
   
 ## <a name="c-files-in-a-biztalk-project"></a>BizTalk 项目中的 C# 文件  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]允许你与仅灵活打包需求的 BizTalk 项目组合的帮助器类。  但是，不能直接通过使用添加一个新的 C# 文件**添加新项**或**添加新类**菜单选项。  
+ BizTalk Server，可将与 BizTalk 项目仅灵活打包需求的组合的帮助器类。  但是，不能直接通过使用添加一个新的 C# 文件**添加新项**或**添加新类**菜单选项。  
   
 ## <a name="generatecsfiles-registry-key-is-obsolete"></a>GenerateCSFiles 注册表项已过时  
  **GenerateCSFiles**注册表项现在已废弃不用。 所有生成的 .cs 文件都显示在解决方案资源管理器窗口中。 你可能需要单击**显示所有文件**解决方案资源管理器窗口以查看与某些 BizTalk 项目关联的.cs 文件中的工具栏项。

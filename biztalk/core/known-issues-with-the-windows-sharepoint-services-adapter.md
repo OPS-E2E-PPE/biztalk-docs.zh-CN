@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09369108d5e122bb8243ac94d2748db7bc1e06f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ed4f0961bc80a3fe858caaca1d4aa51644912be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="known-issues-with-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services 适配器的已知问题
 本部分包含可帮助你避免出现错误的信息。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="known-issues"></a>已知问题  
   
 #### <a name="wss-adapter-fails-to-start-a-workflow-attached-to-a-doc-librarysharepoint-list"></a>WSS 适配器无法启动附加到“文档库/Sharepoint 列表”的工作流  
- 从 BizTalk 使用 WSS 适配器将文档或列表项目提交到“文档库/Sharepoint 列表”时，无法启动附加到该列表的工作流。 解决方法是将以下 XML 代码复制到 \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config 文件中。  以下 XML 代码必须插入内\<配置 > 元素。  
+ 从 BizTalk 使用 WSS 适配器将文档或列表项目提交到“文档库/Sharepoint 列表”时，无法启动附加到该列表的工作流。 解决方法是将以下 XML 代码复制到 \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config 文件中。  以下 XML 代码必须插入内\<配置\>元素。  
   
 ```  
 <configSections>  

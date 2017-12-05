@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0389f2fdb3f9ccb07bcc8ec9e4cdb1ec510927a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53ceb305dcd30164e385022f66140fcaa626b133
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-extractor-sample-class"></a>错误提取程序示例类
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]反汇编程序序列化将错误记录到 XML 对象，并将 XML 对象附加到多部分消息的错误部分。 反汇编程序随后会在失败的消息发布到 MessageBox 数据库就像将有效的消息。 因此，到 MessageBox 数据库失败消息包含错误详细信息。 可以使用错误提取程序示例类从失败的消息，提取错误详细信息，并生成一个文件具有错误详细信息，并具有原始消息的另一个文件。  
@@ -50,7 +50,7 @@ SWIFTErrorExtractor.ErrorExtractor.GetErrorPartAsString(XLANGMessage xm);
 SWIFTErrorExtractor.ErrorExtractor.WriteToFile(string filePath, string message);  
 ```  
   
- A4SWIFT 安装程序安装错误提取程序示例类 (SWIFTErrorExtractor.dll) 作为中 A4SWIFT SDK 的一部分\<*驱动器*>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor。 此文件夹还包括示例类 (ErrorExtractor.cs) 的源代码。  
+ A4SWIFT 安装程序安装错误提取程序示例类 (SWIFTErrorExtractor.dll) 作为中 A4SWIFT SDK 的一部分\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor。 此文件夹还包括示例类 (ErrorExtractor.cs) 的源代码。  
   
  若要从业务流程调用 SWIFTErrorExtractor.dll，必须将.dll 文件发布到全局程序集缓存中。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e58b11cff00d4b235a5c14e75663fdf7e581f782
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58909b0d0cb0a126dd84e21809ca8e8f3941d758
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-message-flow-and-mapping"></a>WCF 适配器常见问题： 消息流和映射
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a>WCF 和 BizTalk 系统中的消息流是什么？  
@@ -86,9 +86,9 @@ ms.lasthandoff: 09/20/2017
   
  在将 SOAP 标头值写入或升级到 BizTalk 消息上下文时，WCF 适配器需要获取 WCF 消息中的以下消息属性：  
   
--   若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表 <KeyValuePair\<XmlQualifiedName，对象 >>**。 使用此对，WCF 适配器采取命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级的标头值。  
+-   若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表 <KeyValuePair\<XmlQualifiedName，对象\>>**。 使用此对，WCF 适配器采取命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级的标头值。  
   
--   若要编写，但不是能提升到 BizTalk 消息上下文中的 SOAP 标头值 WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表 < KeyValuePair\<XmlQualifiedName，对象 >>。** WCF 适配器使用此对将这些值写入消息上下文。  
+-   若要编写，但不是能提升到 BizTalk 消息上下文中的 SOAP 标头值 WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表 < KeyValuePair\<XmlQualifiedName，对象\>>。** WCF 适配器使用此对将这些值写入消息上下文。  
   
 > [!NOTE]
 >  还必须在 BizTalk 属性架构中指定升级的属性，以便被 BizTalk 运行时接受。  

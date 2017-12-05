@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8a7636734501be742f492a0fc4d42ebcac16540
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c7aff0b2421a19f5fe84ee914c4f9d2bd7ef04e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interact-adapter-store-and-forward"></a>交互适配器存储和转发
 存储区中和进 (SnF) 模式下，消息在发送时，传递到队列并从由目标队列检索。 当使用 SnF，响应来自 SWIFTNet SnF 本身，并且不包含从响应方的任何反馈。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="sessions"></a>会话  
  获取队列时, 启动会话。 Sw:SnFSessionId 返回每个消息，则由 SWIFTNet SnF 传送中。 Sw:SnFSessionId 包含队列名称、 会话模式： 推送和会话数。 所会话数将增加为每个会话中。 是一个示例：  
   
- **\<Sw:SnFSessionId > bankwxyz_applicq1:p:000458\</Sw:SnFSessionId >**  
+ **\<Sw:SnFSessionId\>bankwxyz_applicq1:p:000458\</Sw:SnFSessionId\>**  
   
  "P"指示推送会话。 会话可以也被视为队列的保留由授权者。 后续的消息具有相同授权者的确认。  
   
@@ -72,4 +72,4 @@ ms.lasthandoff: 09/20/2017
  [交互适配器安全体系结构](../../adapters-and-accelerators/fileact-interact/interact-adapter-security-architecture.md)   
  [交互适配器端到端可靠传递](../../adapters-and-accelerators/fileact-interact/interact-adapter-end-to-end-reliable-delivery.md)   
  [交互适配器状态监视](../../adapters-and-accelerators/fileact-interact/interact-adapter-status-monitoring.md)   
- [交互适配器不可否认性](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)
+ [InterAct 适配器不可否认性](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)

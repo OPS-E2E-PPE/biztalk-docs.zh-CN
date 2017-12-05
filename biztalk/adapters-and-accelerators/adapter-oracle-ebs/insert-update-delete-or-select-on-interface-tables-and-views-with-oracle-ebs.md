@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef4765909b181a9074ffa6e52c81cdab01c1e522
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adc837fb72c0e18370d28450bf40f162f9849230
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-on-interface-tables-and-interface-views-with-oracle-e-business-suite"></a>插入、 更新、 删除或选择上的接口表以及与 Oracle E-business Suite 的界面视图
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]一组标准如 Insert 操作的图面，接口上的更新、 删除、 选择表和视图。 本主题将说明了如何使用适配器执行这些操作。 有关如何适配器支持这些操作的详细信息，请参阅[接口表和接口视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[插入、 更新、 删除和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
  业务流程使用该消息，并将其发送到 Oracle E-business Suite。 来自 Oracle E-business Suite 的响应保存在定义为业务流程的一部分的其他文件位置中。 例如，来自 Oracle E-business Suite 前面的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/AR/AR/AR_ARCHIVE_PURGE_INTERIM">  
   <InsertResult>1</InsertResult>   
 </InsertResponse>  

@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8083f7dc691010f4128b3ddb99729b0b2b1ebd1f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51b5469681f7acce2ebb0b55fe63e285d25192e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a>与 SAP 适配器的 WCF 通道模型概述
 若要在 SAP 系统中，调用 Rfc、 tRFCs 或 BAPIs 或将 IDOC 发送到 SAP 系统，你的代码将充当 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。  
@@ -44,11 +44,11 @@ ms.lasthandoff: 09/20/2017
   
  如任何 WCF 绑定，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用工厂模式提供到应用程序代码的通道。 你使用**Microsoft.Adapters.SAPBinding**对象创建的实例：  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** 提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** 提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
   
--   **System.ServiceModel.IChannelListener\<IReplyChannel >**提供**IReplyChannel**通道可用于从适配器接收请求-响应操作。  
+-   **System.ServiceModel.IChannelListener\<IReplyChannel\>** 提供**IReplyChannel**通道可用于从适配器接收请求-响应操作。  
   
 ## <a name="creating-messages-for-the-sap-adapter-in-the-wcf-channel-model"></a>正在创建的 WCF 通道模型中的 SAP 适配器消息  
  在 WCF 中**System.ServiceModel.Channels.Message**类提供内存中的 SOAP 消息的表示形式。 你创建**消息**实例通过调用静态**Message.Create**方法。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 //create an XML message to send to the SAP system  
 //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
 //The XML below specifies that we want to search for customers with names starting with "AB"  
-string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
 //create an XML reader from the input XML  
 XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -96,7 +96,7 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
 -   使用入站的消息使用**XmlReader**。 通过调用获取读取器**GetReaderAtBodyContents**方法在入站**消息**。  
   
 ### <a name="node-value-streaming"></a>节点值流式处理  
- 因为 SendIdoc 和 ReceiveIdoc 操作包含在单个 XML 节点的字符串中的 IDOC 数据 (\<idocData >) 的适配器支持节点的值流式处理这些操作。  
+ 因为 SendIdoc 和 ReceiveIdoc 操作包含在单个 XML 节点的字符串中的 IDOC 数据 (\<idocData\>) 的适配器支持节点的值流式处理这些操作。  
   
  若要执行这些操作流式处理节点的值，你可以：  
   

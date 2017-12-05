@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c12b6f1693fe475a1b123a6163a11b35fd96932
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e13ce12e8514eaa2b5843ba81eff4f505e65d9e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>与 FTP 适配器的已知的问题
 本部分包含可帮助你避免出现错误的信息。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP 适配器不支持对服务器证书执行吊销检查。  
   
 ##### <a name="problem"></a>问题  
- 为了支持使用 SSL/TLS 安全地向 FTPS 服务器传输文件或从中传出文件，对 [!INCLUDE[prague](../includes/prague-md.md)] 中的 FTP 适配器进行了功能增强。 证书吊销列表 (CRL) 包含已吊销的及不再有效的证书列表。 FTP 适配器不能查阅 CRL 来对服务器证书进行身份验证。  
+ BizTalk Server 中的 FTP 适配器可以增强，以支持安全文件传输到和从 FTPS 服务器使用 SSL/TLS。 证书吊销列表 (CRL) 包含已吊销的及不再有效的证书列表。 FTP 适配器不能查阅 CRL 来对服务器证书进行身份验证。  
   
 ##### <a name="cause"></a>原因  
  按照设计，FTP 适配器不参考 CRL 再接受服务器证书。  

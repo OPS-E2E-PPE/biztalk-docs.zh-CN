@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db79e5e4421719a936f68c409c166f9eac38605c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b96089f7f76af1183f457202bb2e22b5be7f146
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-document-schemas"></a>EDI 文档架构
 文档架构用于定义 EDI 事务文档类型的正文。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 -   对于 EDIFACT – `http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006`  
   
 ## <a name="schema-naming-convention"></a>架构命名约定  
- X12 和 EDIFACT 编码类型的命名约定是\<编码 > _\<版本 >\<版本 >\_\<Doctype >。 例如，X12_00401_864.xsd 架构代表 X12 864 文档类型（版本为 004、发行版为 01），EDIFACT_D01C_AUTHOR.xsd 架构代表 EDIFACT AUTHOR 文档类型（版本为 D01、发行版为 C）。  
+ X12 和 EDIFACT 编码类型的命名约定是\<编码\>_\<版本\>\<版本\>\_\<Doctype\>。 例如，X12_00401_864.xsd 架构代表 X12 864 文档类型（版本为 004、发行版为 01），EDIFACT_D01C_AUTHOR.xsd 架构代表 EDIFACT AUTHOR 文档类型（版本为 D01、发行版为 C）。  
   
 > [!NOTE]
 >  EDIFACT 架构的架构名区分大小写。 例如，EFACT_D98B_ORDERS 与 EFACT_d98B_Orders 将是两个不同的架构。  

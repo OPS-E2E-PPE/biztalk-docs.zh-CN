@@ -18,11 +18,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bfd309f332726efe2a13231ee1a337b428e3cff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 386e9729ac32cb08863e2ac3e0699ecda7890dbc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-handling-biztalk-server-samples-folder"></a>错误处理（BizTalk Server 示例文件夹）
 本示例的目的是为基于内容的路由 (CBR) 应用程序生成错误处理功能。  
@@ -169,7 +169,7 @@ ms.lasthandoff: 09/20/2017
   
      复制并粘贴到此文件**ExpenseReportIn**文件夹。  
   
-3.  你应看到名的新文件**ErrorReport_\<***日期*_*时间***>.xml**中放入**ExpenseReportOut**文件夹。  
+3.  你应看到名的新文件**ErrorReport_\<***日期*_*时间***\>.xml**中放入**ExpenseReportOut**文件夹。  
   
      打开此文件，然后会观察到这是在前面步骤中提交的费用报告，但在开头添加了错误信息。  
   
@@ -183,4 +183,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [使用失败的邮件路由](../core/using-failed-message-routing.md)   
- [消息传递 （BizTalk Server 示例文件夹）](../core/messaging-biztalk-server-samples-folder.md)
+ [消息传送（BizTalk Server 示例文件夹）](../core/messaging-biztalk-server-samples-folder.md)

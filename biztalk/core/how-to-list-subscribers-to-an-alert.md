@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d62f962847cf0e48929e11040bf1de226d567b6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 909854abd251d94fa71ce963c3714f6d664153c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-subscribers-to-an-alert"></a>如何列出警报的订户
 管理员使用**get 订阅**命令来列出所有订户的指定的警报。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  类型**bm get 订阅的视图：\<视图名称 >-警报：\<警报名称 >**。  
+3.  类型**bm get 订阅的视图：\<视图名称\>-警报：\<警报名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

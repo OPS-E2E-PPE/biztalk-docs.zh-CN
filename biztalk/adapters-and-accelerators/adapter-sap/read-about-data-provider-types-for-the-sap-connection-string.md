@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1a27fa8b09addc7874e6056f0b467c7f874a41e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e77219fb74b7af377953a3761c4d9f241b3a8bd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a>有关数据提供程序类型读取 SAP 连接字符串
 若要建立到 SAP 系统的连接，ADO.NET 客户端必须在连接字符串的形式指定 SAP 连接属性。 SAP ADO 连接字符串的格式如下所示：  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
 |系统编号 (SYSNR)|仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，|SAP 系统编号|  
 |应用程序服务器组名称 （组）|B|SAP 服务器组的名称。 这是在负载平衡连接的应用程序服务器的可选组。|  
 |消息服务器主机 (MSHOST)|B|SAP 消息服务器主机的名称|  
-|消息服务器服务 (MSSERV)|B|名称中指定的 SAP 消息服务器服务的\<系统驱动器 >: \WINDOWS\system32\drivers\etc\services 文件。 如果不指定一个值，[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]假定此项为"任意\</ 3 系统名称 >"。 例如，如果 / 3 系统名称是 DV1，则适配器会假定要"sapmsDV1"的消息服务器服务名称。<br /><br /> 但是，如果服务文件中的项不同，你必须指定该值。|  
+|消息服务器服务 (MSSERV)|B|名称中指定的 SAP 消息服务器服务的\<系统驱动器\>: \WINDOWS\system32\drivers\etc\services 文件。 如果不指定一个值，[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]假定此项为"任意\</ 3 系统名称\>"。 例如，如果 / 3 系统名称是 DV1，则适配器会假定要"sapmsDV1"的消息服务器服务名称。<br /><br /> 但是，如果服务文件中的项不同，你必须指定该值。|  
 |/ 3 系统名称 (R3NAME)|B|SAP / 3 名称中。|  
 |目标 （目标）|D|从 saprfc.ini 文件中选取的连接参数。|  
 |客户端 （客户端）|A、 B、 D|SAP 客户端数|  
@@ -110,4 +110,4 @@ ASHOST=SAPSERVER; SYSNR=00; CLIENT=800; LANG=EN; USER=YourUserName; PASSWD=",@/:
 >  你必须为只能有一个连接类型 A、 B 或 d。 指定的连接参数例如，如果连接字符串中指定应用程序服务器主机，你必须指定消息服务器主机名或 R3NAME。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [使用 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

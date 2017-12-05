@@ -12,20 +12,20 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 313bfb773a94914ed9bebd3930dfd0033ecf4ac3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fbe03b1a8df67581ce73db31cd5ed4b80b7a109c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-from-the-biztalk-server-administration-console"></a>从 BizTalk Server 管理控制台发布
-如果你想要管理通过终结点发布[!INCLUDE[prague](../includes/prague-md.md)]而不是 ESB 管理门户管理控制台中，你可以做到这一点在的说明字段中输入一个通用、 描述、 发现和集成 (UDDI) 的名字对象若要将发布到 UDDI 的终结点。 下面是示例标记。  
+如果你想要管理 BizTalk Server 管理控制台，而不是 ESB 管理门户通过发布的终结点，你可以做到这一点的终结点的说明字段中输入通用、 描述、 发现和集成 (UDDI) 名字对象若要将发布到 UDDI。 下面是示例标记。  
   
 ```  
 uddi://TransportType=other;Status=Published.  
 ```  
   
- 你可以设置以下 UDDI 属性使用**说明**字段[!INCLUDE[prague](../includes/prague-md.md)]管理控制台：  
+ 你可以设置以下 UDDI 属性使用**说明**字段在 BizTalk Server 管理控制台：  
   
 -   **ModifiedBy**。 此可选属性包含的用户的修改终结点，该帐户名例如，MyDomainName\MyUserName。  
   

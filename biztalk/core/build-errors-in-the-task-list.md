@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1bfd5b9f7b974b00d63831484ecbaa44e2568fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3aeef8ac3defc17f4c9bf0fbddedf6d389a1263e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="build-errors-in-the-task-list"></a>生成任务列表中的错误
 在生成项目或解决方案时，其结果将显示在“输出”窗口中，而各个错误和警告将显示在任务列表中。  
@@ -89,7 +89,7 @@ POAckMsg = XMLDOM;
 ## <a name="you-receive-a-use-of-unconstructed-message-error-when-building-your-project"></a>在生成项目时，收到错误“使用未构造的消息”  
   
 ### <a name="problem"></a>问题  
- 编译你的 BizTalk 项目时，你将收到错误"使用未构造的消息\<消息 >'"。  
+ 编译你的 BizTalk 项目时，你将收到错误"使用未构造的消息\<消息\>'"。  
   
 ### <a name="cause"></a>原因  
  在使用非的消息时发生此错误**发送**形状。  
@@ -121,10 +121,10 @@ POAckMsg = XMLDOM;
 ### <a name="resolution"></a>解决方法  
  如果您的业务流程不由另一个业务流程调用，则必须配置之一**接收**形状要激活的接收。 有关配置的详细信息**接收**形状，包括指向相关，请参阅[如何配置接收形状](../core/how-to-configure-the-receive-shape.md)。  
   
-## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>你将收到错误"程序集生成失败--引用的程序集\<程序集 > 不具有强名称"生成解决方案时  
+## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>你将收到错误"程序集生成失败--引用的程序集\<程序集\>不具有强名称"生成解决方案时  
   
 ### <a name="problem"></a>问题  
- 你将收到错误"程序集生成失败--引用的程序集\<程序集 > 不具有强名称"当生成你的解决方案具有一个业务流程。  
+ 你将收到错误"程序集生成失败--引用的程序集\<程序集\>不具有强名称"当生成你的解决方案具有一个业务流程。  
   
 ### <a name="cause"></a>原因  
  当在业务流程中使用未签名的引用程序集中的类型时，将出现此问题。  

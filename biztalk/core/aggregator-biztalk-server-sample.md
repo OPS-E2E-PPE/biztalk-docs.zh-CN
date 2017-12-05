@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c200e6c7cf28b0f0e42976f203aaa16aef2871f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="aggregator-biztalk-server-sample"></a>聚合器（BizTalk Server 示例）
 本示例的目的在于使用业务流程和管道建立消息聚合功能。 具体而言，我们将生成一个执行以下操作的业务流程：  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 3.  每分钟生成一个 XML 交换消息，或者在有足够的消息可供聚合时生成一个 XML 交换消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Pipelines\Aggregator  
+ *\<示例路径\>*\Pipelines\Aggregator  
   
  下表列出了本示例的文件。  
   
@@ -62,13 +62,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<示例路径 > \Pipelines\Aggregator  
+     \<示例路径\>\Pipelines\Aggregator  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在以下文件夹中，为本示例创建输入 (In) 和输出 (Out) 文件夹：  
   
-         \<示例路径 > \Pipelines\Aggregator  
+         \<示例路径\>\Pipelines\Aggregator  
   
     -   为本示例编译 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目。  
   
@@ -111,4 +111,4 @@ ms.lasthandoff: 09/20/2017
     >  在保护方案中的高负载情况下，示例的实现方式可能会导致“已送达，消息未使用”或“已完成，有消息被放弃”。 在将消息路由至正处于结束过程中的业务流程时，或者在有预料之外的消息到达业务流程时，都会出现此情况。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e2a5513d9df725ca1f67cec728dffad552047f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 531a4b4a5446b51e01800caf582e40ce13bc288f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-6-creating-the-contoso-3a4-trading-partner-agreement"></a>步骤 6： 创建 Contoso 3A4 贸易合作伙伴协议
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Contoso 和 Fabrikam 之间的贸易合作伙伴协议， 并为 3A4 合作伙伴接口流程 (PIP) 创建新的贸易合作伙伴协议。  
   
 ### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
   
--   单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本 > Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
+-   单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
   
 ### <a name="to-create-the-3a4-trading-partner-agreement"></a>创建 3A4 贸易合作伙伴协议  
   
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
 5.  右键单击**Fabrikam_To_Contoso_3A4**协议，然后单击**激活**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 7： 构建和部署 DoubleAction SDK 示例](../../adapters-and-accelerators/accelerator-rosettanet/step-7-building-and-deploying-the-doubleaction-sdk-sample.md)
+ [步骤 7：生成和部署 DoubleAction SDK 示例](../../adapters-and-accelerators/accelerator-rosettanet/step-7-building-and-deploying-the-doubleaction-sdk-sample.md)

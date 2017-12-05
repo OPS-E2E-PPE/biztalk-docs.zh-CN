@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e648a40b11d94ce97b5c327f392585e313de06f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1eaef5e736ad01a9b49a3b46188b85b85a97e06
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a>错误 Ack 生成具有失败的 X12 全局事务的最大限制
 ## <a name="details"></a>详细信息  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|事件源|BizTalk Server EDI|  
 |组件|EDI 引擎|  
 |符号名称|-|  
 |消息正文|无法生成确认，因为“来宾”设置已达到可接受的 X12 事务集控制编号的最大限制。 导航到合作伙伴协议管理器的全局配置发送方角色屏幕中的字段 ST 2 可重置计数器|  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  事务集控制编号的最大值取决于用于控制编号的位数。 所有三个字段的最大长度是 9；前缀和后缀字段的最大长度是 8。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请将“GS 和 ST 段定义”页的事务集控制编号 (ST2) 的控制编号字段 (ST2.2) 重置为低于最大限制的值。 在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理控制台的“EDI 全局属性”对话框中设置此属性。
+ 若要解决此错误，请将“GS 和 ST 段定义”页的事务集控制编号 (ST2) 的控制编号字段 (ST2.2) 重置为低于最大限制的值。 在 BizTalk Server 管理控制台中的 EDI 全局属性对话框中设置此属性。

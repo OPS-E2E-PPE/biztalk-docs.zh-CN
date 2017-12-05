@@ -19,11 +19,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2826d714060730217789b3aab585b519909ec78e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6b27dd6d169c9ea7e5012be3e03329e6888522
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="diagnostic-tracing-and-message-logging-for-the-siebel-adapter"></a>诊断跟踪和消息日志记录为 Siebel 适配器
 适配器客户端可以启用诊断跟踪，以有效地诊断时使用适配器遇到的问题。 适配器客户端可以激活三个不同级别的跟踪：  
@@ -39,18 +39,18 @@ ms.lasthandoff: 09/20/2017
 ## <a name="tracing-between-the-adapter-client-and-the-adapter"></a>适配器客户端和适配器之间的跟踪  
  适配器客户端可以启用 WCF 跟踪适配器客户端和适配器之间的跟踪问题。 WCF 跟踪可用于跟踪输入的 Xml 来自适配器客户端使用 WCF 服务模型，并在诊断序列化问题非常有用。 WCF 跟踪不用于 WCF 通道模型或从适配器到适配器客户端的输出消息。 可以通过将一段摘录添加到各自的配置文件来激活对 BizTalk 应用程序和 WCF 服务模型应用程序的 WCF 跟踪。 此外，您可以启用跟踪，同时在设计时和运行时。  
   
--   **在设计时跟踪**。 对于设计时体验，你可能使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]。 所有这些工具可以从使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 因此，若要启用跟踪的设计时体验，你必须添加摘录 devenv.exe.config 文件位于*\<安装驱动器 >*: files\microsoft Visual Studio  *\<版本 >*\Common7\IDE。  
+-   **在设计时跟踪**。 对于设计时体验，你可能使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]。 所有这些工具可以从使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 因此，若要启用跟踪的设计时体验，你必须添加摘录 devenv.exe.config 文件位于*\<安装驱动器\>*: files\microsoft Visual Studio *\<版本\>*\Common7\IDE。  
   
 -   **在运行时跟踪**。 对于运行时跟踪，必须添加具体取决于你使用的应用程序的摘要。  
   
-    -   有关[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序，你必须添加到 BizTalk 配置文件，通常 BTSNTSvc.exe.config 摘录。有关[!INCLUDE[prague](../../includes/prague-md.md)]，此文件位于通常下\<安装驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。  
+    -   有关[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序，你必须添加到 BizTalk 配置文件，通常 BTSNTSvc.exe.config 摘录。BizTalk Server 中，为此文件位于通常下\<安装驱动器\>: files\microsoft BizTalk Server。  
   
     -   WCF 服务模型.NET 应用程序，必须将摘录内容添加到你的项目的 app.config 文件。  
   
  若要启用 WCF 跟踪，必须添加以下摘录内容中的`<configuration>`标记：
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
     <sources>  
       <source name ="System.ServiceModel" switchValue="Verbose">  
         <listeners>  
@@ -75,8 +75,8 @@ ms.lasthandoff: 09/20/2017
            initializeData="C:\log\WCFTrace.svclog" />  
    </sharedListeners>  
    <trace autoflush="true" />  
-  \</system.diagnostics>  
-  \<system.serviceModel>  
+  </system.diagnostics>  
+  <system.serviceModel>  
     <diagnostics>  
       <messageLogging   
            logEntireMessage="true"   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
            logMessagesAtServiceLevel="true"   
            logMessagesAtTransportLevel="false"/>  
     </diagnostics>      
-  \</system.serviceModel>  
+  </system.serviceModel>  
 ```  
   
  这将 WCF 跟踪保存到 C:\log\WCFTrace.svclog。 [WCF 跟踪](https://msdn.microsoft.com/library/ms730342.aspx)提供了详细的信息。
@@ -95,18 +95,18 @@ ms.lasthandoff: 09/20/2017
 ## <a name="tracing-within-the-adapter"></a>跟踪中的适配器  
  BizTalk 适配器包中的适配器记录到跟踪文件，如错误、 警告和信息的不同类别的有用信息。 此类信息可用于了解在适配器中的处理流程和与适配器诊断问题。 你可以激活[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]和适配器跟踪，BizTalk 应用程序和 WCF 服务模型应用程序通过将一段摘录添加到各自的配置文件。 此外，您可以启用跟踪，同时在设计时和运行时。  
   
--   **在设计时跟踪**。 对于设计时体验，你可能使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]。 所有这些工具可以从使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 因此，若要启用跟踪的设计时体验，你必须添加摘录 devenv.exe.config 文件位于*\<安装驱动器 >*: files\microsoft Visual Studio  *\<版本 >*\Common7\IDE。  
+-   **在设计时跟踪**。 对于设计时体验，你可能使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]。 所有这些工具可以从使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 因此，若要启用跟踪的设计时体验，你必须添加摘录 devenv.exe.config 文件位于*\<安装驱动器\>*: files\microsoft Visual Studio *\<版本\>*\Common7\IDE。  
   
 -   **在运行时跟踪**。 对于运行时跟踪，必须添加具体取决于你使用的应用程序的摘要。  
   
-    -   有关[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序，你必须添加到 BizTalk 配置文件，通常 BTSNTSvc.exe.config 摘录。有关[!INCLUDE[prague](../../includes/prague-md.md)]，此文件位于通常下\<安装驱动器 >: files\microsoft [!INCLUDE[prague](../../includes/prague-md.md)]。  
+    -   有关[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序，你必须添加到 BizTalk 配置文件，通常 BTSNTSvc.exe.config 摘录。BizTalk Server 中，为此文件位于通常下\<安装驱动器\>: files\microsoft BizTalk Server。  
   
     -   WCF 服务模型.NET 应用程序，必须将摘录内容添加到你的项目的 app.config 文件。  
   
  若要启用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]和适配器跟踪，必须添加以下摘录内容中的`<configuration>`标记：  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
     <sources>  
       <source name="Microsoft.ServiceModel.Channels" switchValue="Error">  
         <listeners>  
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
           initializeData="C:\log\AdapterTrace.svclog" />  
     </sharedListeners>  
     <trace autoflush="true" />  
-  \</system.diagnostics>  
+  </system.diagnostics>  
 ```  
   
  这会将 WCF 跟踪保存到 C:\log\AdapterTrace.svclog。  

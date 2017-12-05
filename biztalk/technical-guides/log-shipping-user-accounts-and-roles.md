@@ -12,18 +12,18 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b19a7d7c87289e07c7ac7a26bacd0c96f9090c9e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a7dbec7cfa23c8a1e07e32cdf0c3ce7b044651ec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="log-shipping-user-accounts-and-roles"></a>日志传送用户帐户和角色
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送由 SQL Server 代理作业驱动，以自动执行还原的备份和日志的过程。 不正确的权限可能会导致执行还原操作[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送失败。 配置以将数据库还原的用户帐户必须有权承载 BizTalk 管理数据库的生产数据库实例。 在大多数情况下这意味着，服务帐户用于 SQL Server 代理作业驱动[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]上灾难恢复日志传送作业[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例需要一个登录名和承载对生产数据库实例的权限[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理数据库。 这会假定作为作业所有者已配置 SQL Server 代理服务帐户。  
+BizTalk Server 日志传送都由 SQL Server 代理作业来自动执行还原的备份和日志的过程。 不正确的权限可能会导致执行 BizTalk Server 日志传送失败还原操作。 配置以将数据库还原的用户帐户必须有权承载 BizTalk 管理数据库的生产数据库实例。 在大多数情况下这意味着，服务帐户为灾难恢复驱动的 BizTalk Server 日志传送作业的 SQL Server 代理作业[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例需要一个登录名和承载对生产数据库实例的权限[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理数据库。 这会假定作为作业所有者已配置 SQL Server 代理服务帐户。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]包括名为 BTS_BACKUP_USERS，以便配置以将数据库还原的用户帐户不需要 SQL Server 系统管理员权限的 SQL Server 角色。  
+ BizTalk Server 包括一个名为 BTS_BACKUP_USERS，以便配置以将数据库还原的用户帐户不需要 SQL Server 系统管理员权限的 SQL Server 角色。  
   
- 配置将作为的一部分执行数据库还原操作的用户帐户时[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送，请验证以下：  
+ 在配置时将作为 BizTalk Server 日志传送的一部分执行数据库还原操作的用户帐户，请验证以下方面：  
   
 -   配置 SQL Server 代理服务以使用映射的用户在中配置的域帐户下运行[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Management Studio (在**安全**，**登录名**) 上每个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例主机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]还原的数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]日志传送作业。  
   

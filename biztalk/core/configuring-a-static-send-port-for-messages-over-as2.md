@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15f491077d6c6d09958fb5aa5f1af8f432537514
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 068b7d8295710157af7a8a7358768e85e006beb8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-static-send-port-for-messages-over-as2"></a>通过 AS2 消息配置静态发送端口
 本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过静态发送端口发送 AS2 消息。 该配置包括创建静态发送端口和配置协议。 如果需要，还将设置要由发送端口使用的加密证书。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 |**发送端口属性： 常规**|发送管道|-AS2EdiSend （对于 EDI 编码消息）<br /><br /> -AS2Send （对于非 EDI 消息）|  
 |**发送端口属性： 常规**|接收处理程序<br /><br /> (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)|BizTalkServerApplication|  
 |**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)|AS2Receive|  
-|**HTTP 传输属性**|目标 URL|\<目标 URL 字符串 >|  
+|**HTTP 传输属性**|目标 URL|\<目标 URL 字符串\>|  
 |**HTTP 传输属性**|启用 Chunked 编码|已清除|  
 |**发送端口属性： 筛选器**|属性|BTS.MessageType<br /><br /> 注意：<br /><br /> 可以使用各种筛选器表达式，包括使用 BTS.ReceivePortName。<br /><br /> 注意：<br /><br /> 对于非 EDI 消息，必须对不同属性进行筛选。|  
 |**发送端口属性： 筛选器**|运算符|==|  
@@ -79,4 +79,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [为 AS2 解决方案配置端口](../core/configuring-ports-for-an-as2-solution.md)   
  [生成传出的 AS2 消息](../core/generating-an-outgoing-as2-message.md)   
- [处理传入的 MDN](../core/processing-an-incoming-mdn.md)
+ [处理传入 MDN](../core/processing-an-incoming-mdn.md)

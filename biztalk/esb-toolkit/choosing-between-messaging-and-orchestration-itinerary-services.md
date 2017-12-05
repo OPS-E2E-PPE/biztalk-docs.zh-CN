@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 735d8411f2587e8e241773c4ebb8f98d29f3abed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f98f48cc93e973b7170c854590359029a60ebf57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="choosing-between-messaging-and-orchestration-itinerary-services"></a>选择消息传送和业务流程路线服务
-可以配置路线服务的消息传递子系统或的业务流程子系统中出现[!INCLUDE[prague](../includes/prague-md.md)]。 这些 ESB 路线的消息传递服务配置为处理该消息，并且可能在 BizTalk Server 管道中使用 （入口或出口） 执行。 此选项允许开发人员定义完全在其中在管道中的服务将执行。 当然，配置为在业务流程子系统处理服务将执行 BizTalk 业务流程中。  
+可以配置路线服务的消息传递子系统或 BizTalk Server 业务流程子系统中出现。 这些 ESB 路线的消息传递服务配置为处理该消息，并且可能在 BizTalk Server 管道中使用 （入口或出口） 执行。 此选项允许开发人员定义完全在其中在管道中的服务将执行。 当然，配置为在业务流程子系统处理服务将执行 BizTalk 业务流程中。  
   
 ## <a name="esb-itinerary-messaging-services"></a>ESB 路线的消息传递服务  
  在 BizTalk Server 管道中正在处理一条消息，当使用 ESB 路线的消息传递服务减少了消息延迟。 通过在管道中使用单个实现连续服务，它是可以转换多个时间的一条消息并将消息路由到其终结点，与仅单个暂留到消息框数据库。 此外，基于消息的处理消除处理业务流程的其他资源成本。 通常情况下，基于消息的处理资源消耗小，并提供比基于业务流程的处理的处理速度。 在管道，ESB 调度程序和 ESB 调度程序反汇编管道提供的组件[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]充当消息拦截器并执行基于消息的路线服务、 是否是路由、 转换或自定义服务。 有关配置这些组件的详细信息，请参阅[ESB 调度程序组件](../esb-toolkit/the-esb-dispatcher-component.md)和[ESB 调度程序反汇编组件](../esb-toolkit/the-esb-dispatcher-disassemble-component.md)。  

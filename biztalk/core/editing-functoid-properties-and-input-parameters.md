@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f7839807244ecebadeb93640703886c12ce646a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3d87396713b7fa8f7874b921e6ee9097399d1c6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>编辑 Functoid 属性和输入参数
 Functoid 属性可按如下所述分类：  
   
--   **标签**和**输入参数**。 这两个属性是可读/写的，对所有 functoid 可用。 **标签**属性提供一种机制，用于提供 functoid，这可以帮助维护地图中的特定实例的描述性名称。 **输入参数**属性提供访问权限**配置\<Functoid > Functoid**对话框中，在 functoid 配置中扮演着重要作用。  
+-   **标签**和**输入参数**。 这两个属性是可读/写的，对所有 functoid 可用。 **标签**属性提供一种机制，用于提供 functoid，这可以帮助维护地图中的特定实例的描述性名称。 **输入参数**属性提供访问权限**配置\<Functoid\> Functoid**对话框中，在 functoid 配置中扮演着重要作用。  
   
 -   **脚本**和**表循环网格**。 这两个属性提供访问是只适用于的对话框**脚本**和**表循环**functoid，分别。 这些对话框**配置脚本 Functoid**对话框中和**配置表循环 Functoid**对话框。  
   

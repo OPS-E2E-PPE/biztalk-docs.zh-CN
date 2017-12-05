@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94c1c3c6430b049d98444349394eff05eeb21561
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ef22467c18580219e8587d63017d8bf146090d4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="international-considerations-for-designing-biztalk-applications"></a>有关设计 BizTalk 应用程序的国际注意事项
 强烈建议你查看以下已知问题，当你开发国际时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 支持用于 XML 和平面文件文档的许多不同编码，如 UTF-16、UTF-8、简体中文 GBK、简体中文 GB18030 等。  
   
- 对于入站文档，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以识别 XML 文档中的编码声明如"\<？ xml 版本 ="1.0"encoding ="GB2312"？ >"。 平面文件架构具有**代码页**属性以指示传入的平面文件文档的编码。  
+ 对于入站文档，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以识别 XML 文档中的编码声明如"\<？ xml 版本 ="1.0"encoding ="GB2312"？\>"。 平面文件架构具有**代码页**属性以指示传入的平面文件文档的编码。  
   
  对于出站文档、 XML 和平面文件汇编程序使用**目标 charset**属性。 如果指定了此属性，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 会将出站文档转换为指定的字符集，而不管原始文档如何。 如果没有**目标 charset**设置属性、 XML 使用 utf-8 协议和平面文件使用在平面文件架构中指定的代码页。  
   

@@ -17,16 +17,16 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b452ef2f29eb5019eb126181e0cd47b66f82f7b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 942093faa4a556f31d090de97b3feff4eb7a9a45
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-connect-to-an-existing-group"></a>如何连接到现有组
 只要企业中的一个或多个 BizTalk Server 组位于同一域或可信域中的计算机上，你就可以在企业中任何计算机上使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台远程管理这些组。  
   
- BizTalk Server 管理控制台中的“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”节点是所有 BizTalk 组的最高级别的节点，并且是在向 BizTalk Server 管理控制台添加现有 BizTalk Server 组时使用的级别。 在添加组时，必须指定要连接到的现有服务器和 BizTalk 管理数据库。  
+ BizTalk Server 管理控制台中的 BizTalk Server 管理节点是所有的 BizTalk 组的最高级别的节点，将现有的 BizTalk Server 组添加到 BizTalk Server 管理控制台时，你使用的级别。 在添加组时，必须指定要连接到的现有服务器和 BizTalk 管理数据库。  
   
 ## <a name="prerequisites"></a>先决条件  
  若要执行此步骤，则必须以 BizTalk Server Operators 组成员或 BizTalk Server Administrators 组成员的身份登录。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  如果 BizTalk Server 管理数据库存储在 SQL Server 群集上，且该群集正在进行故障转移，则在尝试连接到管理数据库时，可能会出现类似下面的错误：  
     >   
-    >  无法加载组 [\<servername >:\<管理数据库 >] 数据提供程序。  
+    >  无法加载组 [\<servername\>:\<管理数据库\>] 数据提供程序。  
     >   
     >  And  
     >   

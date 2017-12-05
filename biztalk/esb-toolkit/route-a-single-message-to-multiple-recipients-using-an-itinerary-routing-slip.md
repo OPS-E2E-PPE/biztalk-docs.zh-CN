@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fa96603bc93c9d5d19ef102695a1189a50d00ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c493b33081e540a4e18d6d20e4813cdddad894a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip"></a>如何： 将一条消息路由到多个收件人使用路线路由的滑动
 ## <a name="goal"></a>目的  
- 本部分演示如何使用设计器域特定语言 (DSL) 来创建一条路线，将消息路由到使用静态冲突解决程序的三个不同收件人和[!INCLUDE[prague](../includes/prague-md.md)]文件适配器。  
+ 本部分演示如何使用设计器域特定语言 (DSL) 来创建一条路线，将消息路由到使用静态的解析程序和 BizTalk Server 文件适配器的三个不同的收件人。  
   
  在本操作方法主题中，你将完成以下步骤：  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>若要创建 ESB 路线 DSL 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**，指向**添加**，然后单击**新路线**。  
   

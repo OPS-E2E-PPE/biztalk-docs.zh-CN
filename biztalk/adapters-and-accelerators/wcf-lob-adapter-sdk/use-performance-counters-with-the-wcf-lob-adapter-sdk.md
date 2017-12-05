@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ead07059cac11f251d35fae18f0e228c4488c07a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6bfff208920b25ee1a22aa2c3c74feeba42f4b43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-wcf-lob-adapter-sdk"></a>使用具有 WCF LOB 适配器 SDK 的性能计数器
 你可以使用性能工具自动从正在运行的本地或远程计算机中收集性能数据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 你可以定义开始和停止自动日志生成时间、 从单个控制台窗口中，管理多个日志记录会话和上启用要发送的消息的计算机或要满足你的条件时启动的日志设置警报。 本主题讨论的性能计数器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="performance-objects-and-counters"></a>性能对象和计数器  
  当你安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，安装名为"ServiceModel 适配器"的单个性能对象。 性能对象包含多个不同的性能计数器。 性能对象测量给定的资源，应用程序或服务的活动。 性能对象和计数器从其获取性能数据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、 功能，和服务计算机上的使用。 此性能数据通常名为组件生成数据。 性能计数器用于收集特定信息或指定的性能对象的数据。  
   
- 当从 ServiceModel 适配器性能对象中选择计数器，你可以选择仅通过从选择实例列表中选择的实例监视信息特定的适配器实例。 中的格式将列出每个适配器实例\<ProcessId > @\<ConnectionString >。 例如， 115@echo:&#124; &#124; 主机 &#124; temp？ echoprefix = pre 指示 echo 适配器实例 115 的进程中运行。  
+ 当从 ServiceModel 适配器性能对象中选择计数器，你可以选择仅通过从选择实例列表中选择的实例监视信息特定的适配器实例。 中的格式将列出每个适配器实例\<ProcessId\>@\<ConnectionString\>。 例如， 115@echo:&#124; &#124; 主机 &#124; temp？ echoprefix = pre 指示 echo 适配器实例 115 的进程中运行。  
   
  有关在 WCF 中的性能计数器的信息，请参阅[WCF 性能计数器](https://msdn.microsoft.com/library/ms735098.aspx)。
   

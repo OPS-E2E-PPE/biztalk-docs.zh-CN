@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d01ae0a8d94b38583745ba706524c1b02c295b71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f6c4d4e4118bfe5f5cab7a9c44e770dd12656c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-affiliate-applications"></a>如何列出关联应用程序
 使用此命令可列出所有关联应用程序。 如果用户为 Application Administrators 帐户成员，则此命令将只显示用户是其管理员的应用程序。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssomanage listapps [全部]**其中**所有**是也将显示使用的配置存储功能的应用程序的可选参数。 如果运行此命令的用户为应用程序管理员，将只列出用户是其管理员的应用程序。 如果运行此命令的用户是关联管理员或 SSO 管理员，则将列出所有关联应用程序。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssoclient – listapps**列出关联应用程序。 这样，将只列出执行此任务的用户所属的关联应用程序，即这些用户必须属于该关联应用程序的应用程序用户组帐户。  
   

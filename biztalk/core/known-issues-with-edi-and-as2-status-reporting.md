@@ -12,14 +12,14 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6a78b90a3cebb2b812ef68b21c8ea2f99eb0981
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 691a10671c4c8ff5f2ff77065455c100784ddd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-and-as2-status-reporting"></a>已知问题 EDI 和 AS2 状态报告
-本主题介绍 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中 EDI 状态报告存在的已知问题。  
+本主题介绍与 EDI 状态报告在 BizTalk Server 中的已知的问题。  
   
 ## <a name="batch-status-reporting-data-may-not-be-updated-if-the-batch-orchestration-is-stopped-outside-of-the-partner-agreement-manager"></a>在合作伙伴协议管理器之外停止批处理业务流程可能无法更新批处理状态报告数据  
  通过参与方“EDI 属性”对话框的“批处理”页可停用批处理业务流程实例。 如果以此方式停用批处理业务流程，BizTalk Server 将更新该批处理的状态报告数据。 但是，如果以其他方式停止批处理业务流程（例如，从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台“组概述”页中的其中一个查询页停止业务流程），则可能无法更新状态报告数据，并且批处理状态报告可能过期。 例如，即使已停用批处理业务流程实例，状态报告也可能指示批处理仍处于活动状态。  
@@ -63,9 +63,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="status-reporting-will-not-work-after-an-upgrade-if-the-bam-tools-are-not-configured"></a>升级后，如果未配置 BAM 工具，状态报告功能将不工作  
  要使 EDI 和 AS2 状态报告功能工作，必须配置 BAM 工具。 如果您将 [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 的安装升级到后续版本，并且在升级过程中未配置 BAM 工具，则已升级的安装上的 EDI/AS2 状态报告功能将无法正确地发挥作用。  
   
- 如果您希望在升级到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 后使用状态报告功能，请确保在执行升级之前配置 BAM 工具。  
+ 如果你想要使用状态报告在升级到 BizTalk Server 之后，，请确保在执行升级之前，配置了 BAM 工具。  
   
- 如果在执行升级后状态报告功能不工作，请在升级日志中确定在升级之前是否配置了 BAM 工具。 如果没有，你可以配置 BAM 工具，并随后部署内的 EdiStatusReportingActivityDefs.xml 文件中包含的 BusinessMessageJournal BAM 活动*\<驱动器 >*: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+ 如果在执行升级后状态报告功能不工作，请在升级日志中确定在升级之前是否配置了 BAM 工具。 如果没有，你可以配置 BAM 工具，并随后部署内的 EdiStatusReportingActivityDefs.xml 文件中包含的 BusinessMessageJournal BAM 活动*\<驱动器\>*: files\microsoftBizTalk Server。  
   
 ## <a name="disabling-transaction-set-storage-affects-an-activated-batch-but-enabling-storage-does-not"></a>禁用事务集存储会影响激活的批处理，但启用存储则不会产生任何影响  
  如果在批处理业务流程处于激活状态时禁用事务集存储，更改将立即生效。 BizTalk Server 将在启用存储的情况下存储批处理的事务集，但不会在禁用存储后存储事务集。 您可以禁用事务集存储，方法是：在“EDI 属性”对话框的“常规”窗格中清除“存储事务集/负载以用于报告”属性。  
@@ -89,12 +89,12 @@ ms.lasthandoff: 09/20/2017
  此问题的解决办法是清除“将编码后的出站 AS2 消息存储在不可否认数据库中”属性或“端口处理后请求消息”属性。 建议您禁用“端口处理后请求消息”，以使 AS2 跟踪捕获正文信息以及 AS2 状态报告中的其他信息。  
   
 ## <a name="edi-and-as2-message-context-properties-are-not-available-after-upgrading-to-biztalk-2009"></a>EDI 和 AS2 消息上下文属性在升级到 BizTalk 2009 后不可用  
- 升级到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 之后，升级前接收的任何 EDI 或 AS2 消息的状态报告中，不会显示任何上下文属性。  升级后收到的消息将正确显示上下文属性。  
+ 升级到 BizTalk Server 后，没有上下文属性显示在状态报告的任何收到升级发生之前的 EDI 或 AS2 消息。  升级后收到的消息将正确显示上下文属性。  
   
- EDI 和 AS2 上下文属性集合没有作为消息的一部分存储在之前版本的 BizTalk Server 中，并且在升级后不可用。 在升级到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 后，AS2 上下文属性会作为消息的一部分存储，但是 EDI 上下文属性不会存储。  
+ EDI 和 AS2 上下文属性集合没有作为消息的一部分存储在之前版本的 BizTalk Server 中，并且在升级后不可用。 升级到 BizTalk Server 中，上下文属性将存储为消息的一部分的 AS2 之后但是 EDI 上下文属性不是。  
   
 ## <a name="interchange-date-for-received-documents-may-display-the-wrong-year-in-status-reports"></a>已接收文档的交换日期可能在状态报告中显示错误的年份  
- 如果已接收文档指定了 YYMMDD 格式的日期，则 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 使用以下逻辑来确定年份的值：  
+ 如果接收到的文档中 YYMMDD 格式指定日期，BizTalk Server 将使用以下逻辑来确定的年份值：  
   
 -   如果 YY 大于或等于 75，则年份将显示为 19YY。  
   

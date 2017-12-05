@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d18481b206b1be7e0062762c1844305fc36e10f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4db9ca810860ea64ffa474725dc485fecfaa5e78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-exec-statement-in-siebel"></a>Siebel 中 EXEC 语句的的语法
 使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端还可以在执行运算 EXEC [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 EXEC 语句的语法是：  
@@ -27,13 +27,13 @@ ms.lasthandoff: 09/20/2017
 ```  
 EXEC  
 <Business Service name>.<Business Service method>  
-\<value 1..n>,  
+<value 1..n>,  
 @parameter 1..n [OUTPUT],  
 @parameter 1..n = <value>  
   
 ```  
   
- 在前面的语法中，`\<value 1..n>`表示一组未命名参数。 这些是硬编码值。 它们通常表示参数中。  它们还可以表示 INOUT 参数。 但是，如果硬编码的值用于 INOUT 参数，执行 EXEC 语句后无法检索到该参数与关联的输出值。  
+ 在前面的语法中，`\<value 1..n\>`表示一组未命名参数。 这些是硬编码值。 它们通常表示参数中。  它们还可以表示 INOUT 参数。 但是，如果硬编码的值用于 INOUT 参数，执行 EXEC 语句后无法检索到该参数与关联的输出值。  
   
  `@parameter 1..n`语法表示一组命名的参数，可以为 IN、 INOUT 或 OUT 参数。 输出参数的后面必须跟**输出**关键字。  
   
@@ -61,4 +61,4 @@ EXEC ExtractDataService.Echo 'InputValue', @Out OUTPUT, @InOut='InputValue'
 >  每个参数的名称 (如`@In`在前面的示例) Siebel 业务服务方法中的相应自变量名称必须匹配。  
   
 ## <a name="see-also"></a>另请参阅  
- [.NET Framework 数据提供程序用于 Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)
+ [使用用于 Siebel eBusiness 应用程序的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)

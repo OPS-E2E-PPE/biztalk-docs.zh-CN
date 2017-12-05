@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d21b558f75824340718f7bd6efa3f10ae9926ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27d2e0ed3c8298287471b60d87b199fcfc800e61
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>执行测试和优化的瓶颈
 应完成性能测试来确定在系统中的瓶颈和相应地调整系统。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="testing-the-end-to-end-system"></a>测试端到端系统  
  中前面部分所述测试的输入和输出速率是一种有效来隔离性能的应用程序子系统，尽管它未介绍端到端性能。 你还应该测试端到端性能，因为无法识别某些瓶颈，直至多个资源开始争用同一共享资源 （例如，MessageBox 数据库）。  
   
- 若要生成针对负载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，请考虑使用 Microsoft BizTalk LoadGen 2007 工具。 有关 LoadGen 2007 工具的详细信息请参阅[Microsoft BizTalk LoadGen 2007](http://go.microsoft.com/fwlink/?LinkID=59841) (http://go.microsoft.com/fwlink/?LinkID=59841)。  
+ 若要生成针对负载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，请考虑使用 Microsoft BizTalk LoadGen 2007 工具。 下载[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)。  
   
  若要生成和分析的性能报表[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，请考虑使用性能分析的日志 (PAL) 工具。 有关 PAL 工具的详细信息，请参阅[使用性能分析的日志 (PAL) 工具](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)。  
   

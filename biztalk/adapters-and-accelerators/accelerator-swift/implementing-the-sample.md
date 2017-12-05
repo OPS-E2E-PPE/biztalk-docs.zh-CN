@@ -12,24 +12,24 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2e07078f630852fc14bf8081a4bd1453a0dc7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6622d201c6f7b7d94694a77198d0eb562482489
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="implementing-the-sample"></a>实现示例
 若要实现此示例，请继续执行，如下所示：  
   
-1.  为 SWIFT 架构创建一个新文件夹 (\<DocumentSchemaLocation > 实用工具语法中)。 要为其创建/修改 InfoPath 窗体的所有架构必须都位于此文件夹时执行的实用程序。  
+1.  为 SWIFT 架构创建一个新文件夹 (\<DocumentSchemaLocation\>实用工具语法中)。 要为其创建/修改 InfoPath 窗体的所有架构必须都位于此文件夹时执行的实用程序。  
   
-2.  如果你正在生成 MT 消息的 InfoPath 窗体，则复制**SWIFT 基 Types.xsd**和**SWIFT 常见数据 Types.xsd**从**\<驱动器： > files\microsoftBizTalk Accelerator for SWIFT\<消息包版本 > 消息 Pack\SWIFT Messages\A4SWIFT SRG\<消息包版本 > \Base 架构**到对于 SWIFT 架构创建的文件夹。  
+2.  如果你正在生成 MT 消息的 InfoPath 窗体，则复制**SWIFT 基 Types.xsd**和**SWIFT 常见数据 Types.xsd**从**\<驱动器：\> files\Microsoft BizTalk Accelerator for SWIFT\<消息包版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<消息包版本\>\Base 架构**到文件夹你为 SWIFT 架构创建。  
   
 3.  将复制所有要为其创建为对于 SWIFT 架构在步骤 1 中创建的文件夹的 InfoPath 窗体的架构。  
   
-4.  创建或指定一个文件夹来保存创建的 InfoPath 窗体模板解决方案文件 (\<DestinationFolderPath > 实用工具语法中)。 如果不创建输出文件夹，该实用工具将使用路径和命令行传递的名称来创建相同。  
+4.  创建或指定一个文件夹来保存创建的 InfoPath 窗体模板解决方案文件 (\<DestinationFolderPath\>实用工具语法中)。 如果不创建输出文件夹，该实用工具将使用路径和命令行传递的名称来创建相同。  
   
-5.  [可选]-创建一个文本文件\<NameOfFileContainingSchemaList >，它列出为生成 InfoPath 窗体的消息的消息类型。 例如消息类型可以是 MT103，MT102 等。命令行而不是创建此文本文件可以直接传递消息名称。  
+5.  [可选]-创建一个文本文件\<NameOfFileContainingSchemaList\> ，它列出为生成 InfoPath 窗体的消息的消息类型。 例如消息类型可以是 MT103，MT102 等。命令行而不是创建此文本文件可以直接传递消息名称。  
   
 ## <a name="syntax-of-command-usage-for-formgeneratorexe"></a>FormGenerator.exe 的命令用法的语法  
   

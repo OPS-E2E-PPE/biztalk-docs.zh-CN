@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32539b1c352ac1fd2b60d2acd4c5ee975e2c3d18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ba84bd9a0ab8c6f7d5ccd24b27e90ef9c441b93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-create-and-configure-a-source-party"></a>步骤 7： 创建并配置源方
 在此步骤中，你将创建并配置源方，并分配发送端口以便允许传出消息的消息标头转换。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  单击 **“确定”**。  
   
-6.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+6.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 7.  在 BTAHL7 配置资源管理器，在**方**选项卡上，单击**Tutorial_BatchSource**。  
   

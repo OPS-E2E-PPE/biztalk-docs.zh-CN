@@ -15,17 +15,17 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be2392f7a74b12ddd0c030922b166bb9a701ae88
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>文件适配器 （BizTalk Server 示例）
-在 Microsoft Visual C#.NET 地与 Microsoft 合作编写文件适配器示例[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 它提供了建立动态或静态适配器的代码。  不过，以下过程仅简要介绍静态适配器。 静态适配器是具有静态架构集合且没有自定义用户接口的适配器。 动态适配器具有自定义用户接口，并可能具有动态架构集合。 静态适配器和动态适配器均使用添加适配器向导向 BizTalk 项目中添加其架构。  
+Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配器示例。 它提供了建立动态或静态适配器的代码。  不过，以下过程仅简要介绍静态适配器。 静态适配器是具有静态架构集合且没有自定义用户接口的适配器。 动态适配器具有自定义用户接口，并可能具有动态架构集合。 静态适配器和动态适配器均使用添加适配器向导向 BizTalk 项目中添加其架构。  
   
 > [!NOTE]
->  文件适配器示例与 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 随附的本机 FILE 适配器不同。 因此，在使用本示例时如果要选择传输类型，请选择“静态”，而不是 FILE。  
+>  文件适配器示例不附带 BizTalk Server 的本机文件适配器相同。 因此，在使用本示例时如果要选择传输类型，请选择“静态”，而不是 FILE。  
   
  具有自定义用户接口并可能具有动态架构集合的动态适配器在适配器管理方面需要编写额外的代码。 若要更好地了解使用架构动态组，请参阅[动态设计时适配器配置](../core/dynamic-design-time-adapter-configuration.md)。  
   
@@ -35,10 +35,10 @@ ms.lasthandoff: 09/20/2017
  可以将该示例文件适配器用作创建其他自定义适配器的模板。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*>**\AdaptersDevelopment\File 适配器**  
+ \<*示例路径*\>**\AdaptersDevelopment\File 适配器**  
   
 > [!NOTE]
->  默认位置\<*示例路径*> 是*%programfiles%*\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples 时[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]运行 32 位版本的计算机上安装Windows。 默认位置\<*示例路径*> 是*%programfiles （x86） %*\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples 时[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]运行 64 位计算机上安装Windows 版本。 若要确定与关联的值*%programfiles%*或*%programfiles （x86） %*环境变量类型**echo %programfiles%**或**echo %Programfiles （x86） %**在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用**%programfiles%**到**%programfiles （x86） %**之前运行的.reg 文件。  
+>  默认位置\<*示例路径*\>是*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 时运行 32 位计算机上安装 BizTalk ServerWindows 版本。 默认位置\<*示例路径*\>是*%programfiles （x86） %*\Microsoft BizTalk Server\SDK\Samples 运行 64 的计算机上安装 BizTalk Server 时位版本的 Windows。 若要确定与关联的值*%programfiles%*或*%programfiles （x86） %*环境变量类型**echo %programfiles%**或**echo %Programfiles （x86） %**在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用**%programfiles%**到**%programfiles （x86） %**之前运行的.reg 文件。  
   
  下表显示了本示例中的文件并说明了其用途。  
   
@@ -92,11 +92,11 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  以管理员身份运行命令提示符。  
   
-2.  将当前目录更改为\<*示例路径*>**\AdaptersDevelopment\BaseAdapter\v1.0.2**目录。  
+2.  将当前目录更改为\<*示例路径*\>**\AdaptersDevelopment\BaseAdapter\v1.0.2**目录。  
   
 3.  在命令提示符处，键入**sn-k BaseAdapter.snk**然后按 ENTER。 如果以前运行过其他示例，则此 .snk 文件可能已经存在。 如果确实如此，则可以跳过此步骤直接转到步骤 4。  
   
-4.  将当前目录更改为\<*示例路径*>\\**AdaptersDevelopment\File Adapter\Runtime**目录。  
+4.  将当前目录更改为\<*示例路径*\>\\**AdaptersDevelopment\File Adapter\Runtime**目录。  
   
 5.  在命令提示符处，键入**sn-k DotNetFileAdapter.snk**然后按 ENTER。  
   
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
   
-2.  导航到\<*示例路径*>**"\AdaptersDevelopment\File Adapter\Runtime"**目录中，，然后双击**DotNetFile.sln**.  
+2.  导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Runtime"**目录中，，然后双击**DotNetFile.sln**.  
   
 3.  若要重新生成适配器接收方运行时项目，在解决方案资源管理器，右键单击**DotNetFile**，然后单击**重新生成**。  
   
@@ -114,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-build-the-adapter-design-time-project"></a>生成适配器设计时项目  
   
-1.  在 Windows 资源管理器，导航到\<*示例路径*>**"\AdaptersDevelopment\File Adapter\Design Time\Adapter 管理"**目录中，，然后双击**AdapterManagement.sln**。  
+1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Design Time\Adapter 管理"**目录中，，然后双击**AdapterManagement.sln**。  
   
 2.  在解决方案资源管理器，右键单击**AdapterManagement**，然后单击**重新生成**。  
   
@@ -122,12 +122,12 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-register-the-sample-static-adapter"></a>注册示例静态适配器  
   
-1.  在 Windows 资源管理器，导航到\<*示例路径*>**"\AdaptersDevelopment\File 适配器"**目录。  
+1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File 适配器"**目录。  
   
 2.  若要将示例适配器添加到注册表中，双击**StaticAdapterManagement.reg**。  
   
     > [!NOTE]
-    >  StaticAdapterManagement.reg 包括硬编码路径 C:\Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] \\。 如果未将 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装到 %ProgramFiles%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\ 目录中，或是从 BizTalk Server 2009 或 BizTalk Server 2006 R2 升级 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装，亦或将 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装在运行 64 位版本 Windows 的计算机上，则必须使用相应的路径修改 StaticAdapterManagement.reg 文件。 默认情况下，在运行 64 位版本 Windows 的计算机上，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装在 %ProgramFiles(x86)%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\ 目录中。 更新与“InboundAssemblyPath”、“OutboundAssemblyPath”和“AdapterMgmtAssemblyPath”值相关联的路径，使之指向指定文件的正确位置。  
+    >  StaticAdapterManagement.reg 包括硬编码路径 C:\Program Files\Microsoft BizTalk Server\\。 如果你未安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 %ProgramFiles%\Microsoft BizTalk Server\ 目录中，如果从 BizTalk Server 2009 或 BizTalk Server 2006 R2，升级你的 BizTalk Server 安装，或者如果正在运行的计算机上安装 BizTalk Server64 位版本的 Windows，你必须修改文件 StaticAdapterManagement.reg 与相应的路径。 默认情况下，BizTalk Server 安装到 %programfiles(x86) %\Microsoft 运行 Windows 的 64 位版本的计算机上的 BizTalk Server\ 目录。 更新与“InboundAssemblyPath”、“OutboundAssemblyPath”和“AdapterMgmtAssemblyPath”值相关联的路径，使之指向指定文件的正确位置。  
   
     > [!IMPORTANT]
     >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **StaticAdapterManagement.reg**注册表文件。  
@@ -170,13 +170,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
   
-2.  上创建以下文件夹[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装驱动器：  
+2.  BizTalk Server 安装驱动器上创建以下文件夹：  
   
-    -   *\<驱动器 >*:**\Temp**  
+    -   *\<驱动器\>*:**\Temp**  
   
-    -   *\<驱动器 >*:**\Temp\Send**  
+    -   *\<驱动器\>*:**\Temp\Send**  
   
-    -   *\<驱动器 >*:**\Temp\Receive**  
+    -   *\<驱动器\>*:**\Temp\Receive**  
   
 3.  若要关闭 Windows 资源管理器，在**文件**菜单上，单击**关闭**。  
   
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**AdapterSend**。|  
-    |**传输类型**|选择**静态**从该下拉列表并单击**配置**。<br /><br /> -在**目录**框中，键入 ***\<驱动器 >*: \Temp\Send**。<br />-在**文件模式**框中，选择**创建新**。<br />-在**文件名**框中，键入**%MessageID%.xml**。<br />-单击**确定**。<br />- **URI**字段应显示 ***\<驱动器 >*: \Temp\Send\\%MessageID%.xml**。|  
+    |**传输类型**|选择**静态**从该下拉列表并单击**配置**。<br /><br /> -在**目录**框中，键入 ***\<驱动器\>*: \Temp\Send**。<br />-在**文件模式**框中，选择**创建新**。<br />-在**文件名**框中，键入**%MessageID%.xml**。<br />-单击**确定**。<br />- **URI**字段应显示 ***\<驱动器\>*: \Temp\Send\\%MessageID%.xml**。|  
     |**发送管道**|选择**PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**，然后单击**确定**。|  
   
 11. 下**BizTalk 应用程序 1**节点单击**接收端口**，然后选择**新 / 单向接收端口**。  
@@ -224,7 +224,7 @@ ms.lasthandoff: 09/20/2017
     |--------------|----------------|  
     |**名称**|类型**AdapterReceiveLocation**|  
     |**传输类型**|选择**静态**从下拉列表和命中**配置**以访问这些剩余属性。|  
-    |**URI**|-单击省略号按钮 (**...**).<br />-在**数量的文件在批处理**框中，键入**20**。<br />-在**目录**框中，键入 ***\<驱动器 >*: \Temp\Receive**。<br />-确保**文件掩码**属性设置为 **\*.xml**。<br />-在**轮询间隔**框中，键入**5**，然后单击**确定**。<br />-确保**URI**标签包含 ***\<驱动器 >*: \Temp\Receive\\\*.xml**。|  
+    |**URI**|-单击省略号按钮 (**...**).<br />-在**数量的文件在批处理**框中，键入**20**。<br />-在**目录**框中，键入 ***\<驱动器\>*: \Temp\Receive**。<br />-确保**文件掩码**属性设置为 **\*.xml**。<br />-在**轮询间隔**框中，键入**5**，然后单击**确定**。<br />-确保**URI**标签包含 ***\<驱动器\>*: \Temp\Receive\\\*.xml**。|  
     |**接收处理程序**|选择**BizTalkServerApplication**从下拉列表。|  
     |**接收管道**|选择**XMLReceive**从下拉列表。|  
   
@@ -239,7 +239,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  启动**Visual Studio 命令提示**。  
   
-2.  在命令提示符下，将当前目录更改为\<*示例路径*>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter 套**目录。  
+2.  在命令提示符下，将当前目录更改为\<*示例路径*\>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter 套**目录。  
   
 3.  在命令提示符处，键入**sn-k AdapterHarness.snk**，然后 pressENTER。  
   
@@ -310,11 +310,11 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-test-the-sample-static-adapter-runtime"></a>测试示例静态适配器运行时  
   
-1.  在 Windows 资源管理器，导航到\<*示例路径*>**\AdaptersDevelopment\File 适配器**目录，并将复制到剪贴板的 InstanceXML.xml 文件。  
+1.  在 Windows 资源管理器，导航到\<*示例路径*\>**\AdaptersDevelopment\File 适配器**目录，并将复制到剪贴板的 InstanceXML.xml 文件。  
   
-2.  导航到*\<驱动器 >*:**\Temp\Receive**并将 Instance.xml 文件粘贴到该文件夹。  
+2.  导航到*\<驱动器\>*:**\Temp\Receive**并将 Instance.xml 文件粘贴到该文件夹。  
   
-     如果传输和接收正在适配器，该文件应移动从*\<驱动器 >*:**\Temp\Receive**文件夹*\<驱动器 >*:**\Temp\Send**文件夹。  
+     如果传输和接收正在适配器，该文件应移动从*\<驱动器\>*:**\Temp\Receive**文件夹*\<驱动器\>* :**\Temp\Send**文件夹。  
   
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a>测试示例静态适配器的示例添加适配器向导功能  
   
@@ -348,4 +348,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [适配器示例-使用情况](../core/adapter-samples-usage.md)   
- [注册的适配器](../core/registering-an-adapter.md)
+ [注册适配器](../core/registering-an-adapter.md)

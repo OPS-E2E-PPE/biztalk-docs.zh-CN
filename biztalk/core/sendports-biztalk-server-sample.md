@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f6bc29589f0546dda3841221fcce3ab91d704ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0bd7c03e4cfa586a0dddd2579931bd5f30d293fa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendports-biztalk-server-sample"></a>SendPorts（BizTalk Server 示例）
 发送端口示例演示如何枚举使用和管理发送端口**Microsoft.BizTalk.ExplorerOM**管理类。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\SendPorts  
+ \<*示例路径*\>\Admin\ExplorerOM\SendPorts  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\SendPorts\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
   
 2.  运行文件 SendPorts.exe。  
   
@@ -339,4 +339,4 @@ DeleteSendPorts() completed.
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

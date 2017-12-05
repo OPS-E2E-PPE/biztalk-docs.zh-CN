@@ -16,14 +16,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7492ac6e1f8e43559fa921f9ddd3b60d644fe5f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e8248ec62e75a058566eefef1942e1f82061dbb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-orchestrations"></a>在与业务流程的 WCF 消息中使用 SOAP 标头
-若要在业务流程中发送传出的 WCF 消息的自定义 SOAP 标头，你可以使用上下文属性**WCF。OutboundCustomHeaders**。 WCF 适配器将自定义 SOAP 标头与 WCF 基础结构用于 Web 服务标准（如 WS-Addressing、WS-Security 和 WS-AtomicTransaction）的标准 SOAP 标头合并在一起进行发送。 当你使用**OutboundCustomHeaders**属性，该属性必须具有\<**标头**> 元素作为根元素。 所有自定义 SOAP 标头必须放置在\<**标头**> 元素。 如果自定义 SOAP 标头的值为空字符串，则必须分配\<**标头**>\</**标头**> 或\< **标头**/ > 到**OutboundCustomHeaders**属性。  
+若要在业务流程中发送传出的 WCF 消息的自定义 SOAP 标头，你可以使用上下文属性**WCF。OutboundCustomHeaders**。 WCF 适配器将自定义 SOAP 标头与 WCF 基础结构用于 Web 服务标准（如 WS-Addressing、WS-Security 和 WS-AtomicTransaction）的标准 SOAP 标头合并在一起进行发送。 当你使用**OutboundCustomHeaders**属性，该属性必须具有\<**标头**\>作为根元素的元素。 所有自定义 SOAP 标头必须放置在\<**标头**\>元素。 如果自定义 SOAP 标头的值为空字符串，则必须分配\<**标头**\>\</**标头**\>或\<**标头**/ \>到**OutboundCustomHeaders**属性。  
   
  对于业务流程，SOAP 标头上下文属性均设置为包含 XML 数据的字符串。 使用 BizTalk 表达式编辑器中设置这些字符串**消息分配**或**表达式**形状。 有关如何使用 WCF 适配器使用 SOAP 标头的详细信息，请参阅 SDK 示例中，使用自定义 SOAP 标头与 WCF 适配器中，从[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)。  
   
@@ -53,4 +53,4 @@ RequestMessageInstance(WCF.OutboundCustomHeaders) = xmlDoc.OuterXml;
 ## <a name="see-also"></a>另请参阅  
  [WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)   
  [与使用的 WCF 服务的 SOAP 标头](../core/soap-headers-with-consumed-wcf-services.md)   
- [与已发布的 WCF 服务的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)
+ [SOAP 标头与已发布的 WCF 服务](../core/soap-headers-with-published-wcf-services.md)

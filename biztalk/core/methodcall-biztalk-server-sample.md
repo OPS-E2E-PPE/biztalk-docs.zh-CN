@@ -16,11 +16,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3973a5137075732d3c648bb8b0e575dd0d49c57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 16b97b7c81b36774bcf2eaff53a1a4ff91b6f9e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="methodcall-biztalk-server-sample"></a>MethodCall （BizTalk Server 示例）
 MethodCall 示例演示如何从 BizTalk Server 业务流程调用基于 .NET 的方法。  
@@ -63,7 +63,7 @@ MethodCall 示例演示如何从 BizTalk Server 业务流程调用基于 .NET �
     ```  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Orchestrations\MethodCall\  
+ \<*示例路径*\>\Orchestrations\MethodCall\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -84,7 +84,7 @@ MethodCall 示例演示如何从 BizTalk Server 业务流程调用基于 .NET �
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Orchestrations\MethodCall  
+     \<*示例路径*\>\Orchestrations\MethodCall  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -105,7 +105,7 @@ MethodCall 示例演示如何从 BizTalk Server 业务流程调用基于 .NET �
   
 1.  将文件 Input.xml 的副本粘贴到 In 文件夹。  
   
-2.  查看在 Out 文件夹中创建的 .xml 文件。 此文件包含请求的加法或减法的计算结果。 此文件的名称的格式是\< *MessageID*>.xml，其中 *\<MessageID >* GUID 生成以唯一标识消息。  
+2.  查看在 Out 文件夹中创建的 .xml 文件。 此文件包含请求的加法或减法的计算结果。 此文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息.  
   
 3.  您可以修改输入文件以请求不同的加法或减法计算。  
   
@@ -113,9 +113,9 @@ MethodCall 示例演示如何从 BizTalk Server 业务流程调用基于 .NET �
   
 #### <a name="to-uninstall-the-methodcall-sample"></a>卸载 MethodCall 示例  
   
-1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 到\<*示例路径*> \Orchestrations\MethodCall\\。  
+1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 到\<*示例路径*\>\Orchestrations\MethodCall\\。  
   
 2.  运行 Cleanup.bat。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务流程 （BizTalk Server 示例文件夹中）](../core/orchestrations-biztalk-server-samples-folder.md)
+ [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

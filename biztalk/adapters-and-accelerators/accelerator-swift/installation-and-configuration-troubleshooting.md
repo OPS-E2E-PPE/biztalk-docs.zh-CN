@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc0f805011921fe259a0483fa2bcd50ab45d043b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>安装和配置故障排除
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>安装程序无法部署 RuntimeSchemas 程序集  
@@ -95,12 +95,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  右键单击服务文件夹，单击**属性**，然后单击**安全**选项卡。  
   
-2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称 >*\A4SWIFT 管理员**，然后单击**确定**。  
+2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称\>*\A4SWIFT 管理员**，然后单击**确定**。  
   
     > [!NOTE]
-    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名 >*\A4SWIFT 管理员**。  
+    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名\>*\A4SWIFT 管理员**。  
   
-3.  重复步骤 2  ***\<服务器名称 >*\A4SWIFT 用户**，或  **\<*域名*> \A4SWIFT用户 * * 如果 A4SWIFT 用户组是域组。  
+3.  重复步骤 2  ***\<服务器名称\>*\A4SWIFT 用户**，或  **\<*域名*\>\A4SWIFT 用户 * * 如果 A4SWIFT 用户组是域组。  
   
 4.  在组或用户名称窗格中，选择**A4SWIFT 管理员**。 在权限窗格中，选择**允许**为**完全控制**。  
   
@@ -207,7 +207,7 @@ ms.lasthandoff: 09/20/2017
   
     -   类型：**进程内**  
   
-    -   Windows 组：   **\<*域*> \BizTalk 应用程序用户 * * （或设置在 BizTalk Server 配置为在进程内 BizTalk 应用程序内运行的帐户）  
+    -   Windows 组：   **\<*域*\>\BizTalk 应用程序用户 * * （或设置在 BizTalk Server BizTalk 在进程内运行的配置过程的帐户应用程序）  
   
     -   在选项部分中，选择这两个**允许主机跟踪**和**使此组中的默认主机**。  
   
@@ -225,10 +225,10 @@ ms.lasthandoff: 09/20/2017
  BRE 部署实用工具无法正常工作时你它在 64 位计算机上或在非默认的目录 （而不是 C:\Program Files\Microsoft BizTalk Accelerator for SWIFT) 的计算机上运行 32 位。  
   
 ### <a name="possible-cause"></a>可能的原因  
- BRE 部署实用工具将无法正常工作之前更改位于 BREDeployment.exe.config 文件中的路径\<驱动器 >: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tools 文件夹。  
+ BRE 部署实用工具将无法正常工作之前更改位于 BREDeployment.exe.config 文件中的路径\<驱动器\>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tools 文件夹。  
   
 ### <a name="solution"></a>解决方案  
  在记事本中，打开 BREDeployment.exe.config 并更改基策略、 架构和词汇目录的文件夹中更新该实用程序的配置。  
   
 ## <a name="see-also"></a>另请参阅  
- [疑难解答： 问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [疑难解答：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

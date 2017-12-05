@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5970c0bfa23cc7da33b2c041cc326987ec278e09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e674ad6777ebff53fefe053e1b6af46ebc54ef3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---second-input-for-table-extractor-functoid-not-valid"></a>错误-为第二个输入表提取程序 Functoid 不有效
 **错误代码**  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 确保相关的输入的参数**表提取程序**functoid，如通过访问其**输入参数**属性和**配置\<Functoid >Functoid**对话框中，是下表中所示。  
+ 确保相关的输入的参数**表提取程序**functoid，如通过访问其**输入参数**属性和**配置\<Functoid\>Functoid**对话框中，是下表中所示。  
   
 |表提取程序 functoid 输入的参数数|Description|  
 |-----------------------------------------------------|-----------------|  

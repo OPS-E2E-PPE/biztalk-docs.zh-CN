@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a74fafbac364469b1afdba5365c2af87cc4fa2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78229d903461fe2b84033b036ef02b2838832fc0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="sample-business-scenario"></a>示例业务方案
 卫生保健进程通常很复杂且涉及许多系统。 一个示例是一个患者进入医院时发生的过程并医生发送实验室测试将患者。 在此过程中涉及是五个方：  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
     3.  接口引擎将出一封电子邮件发送到 doctor，接收其无线 PDA 上的实验室结果。  
   
 ## <a name="the-btahl7-solution"></a>BTAHL7 解决方案  
- 上述示例业务方案是卫生保健系统集成所需的一个示例。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]与[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 为此应用场景，具有以下功能提供了解决方案：  
+ 上述示例业务方案是卫生保健系统集成所需的一个示例。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]与 BizTalk Server [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 为此应用场景，具有以下功能提供了解决方案：  
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]集成所有中心辐射型结构中所涉及的系统。 每个系统直接与通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它们无需直接相互通信。  
   
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
 7.  你可以验证所有消息在引擎和针对[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 架构发布的 HL7 组织。  
   
 ## <a name="see-also"></a>另请参阅  
- [BizTalk Server 如何解决的业务需要](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)
+ [BizTalk Server 如何满足业务需求](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)

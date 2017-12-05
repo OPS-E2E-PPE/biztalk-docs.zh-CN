@@ -23,11 +23,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b56264155ed9f739669da1cb6f646adac0f9db55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23efa3df9c59732c8459018a886f7f499d268eff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>如何更新对 BAM 主导入数据库名称和连接字符串的引用
 如果备份了 BAMPrimaryImport 数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机上，然后重命名该备份。  
@@ -61,31 +61,31 @@ ms.lasthandoff: 09/20/2017
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamManagementService\Web.Config。  
   
-         替换 *\<ServerName >*字符串替换为新的服务器名称和 *\<DatabaseName >*使用新的数据库名称。 更新的以下连接字符串：  
+         替换 *\<ServerName\>* 字符串替换为新的服务器名称和 *\<DatabaseName\>* 使用新的数据库名称。 更新的以下连接字符串：  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < 添加 key ="BamServer"value ="*\<ServerName >*"/\>  
+         < 添加 key ="BamServer"value ="*\<ServerName\>*"/\>  
   
-         < 添加 key ="BamDatabase"value ="*\<DatabaseName >*"/\>  
+         < 添加 key ="BamDatabase"value ="*\<DatabaseName\>*"/\>  
   
-         \<添加项 ="MaxResultRows"value ="2000"/ >  
+         \<添加项 ="MaxResultRows"value ="2000"/\>  
   
-         \</appSettings >  
+         \</appSettings\>  
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamQueryService\Web.Config。  
   
-         替换 *\<ServerName >*字符串替换为新的服务器名称和 *\<DatabaseName >*使用新的数据库名称。 更新的以下连接字符串：  
+         替换 *\<ServerName\>* 字符串替换为新的服务器名称和 *\<DatabaseName\>* 使用新的数据库名称。 更新的以下连接字符串：  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < 添加 key ="BamServer"value ="*\<ServerName >*"/\>  
+         \<添加项 ="BamServer"value ="*\<ServerName\>*"/\>  
   
-         <add key="BamDatabase" value="*<DatabaseName>*" />  
+         \<添加项 ="BamDatabase"value ="*\<DatabaseName\>*"/\>  
   
-         <add key="MaxResultRows" value="2000" />  
+         \<添加项 ="MaxResultRows"value ="2000"/\>  
   
-         </appSettings>  
+         \</appSettings\>  
   
 5.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   

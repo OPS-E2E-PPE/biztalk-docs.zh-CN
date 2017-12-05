@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a63953b0928915a8fea5b357722cd4e34f1b900c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1144b7e6827882b37f6f9991a7315cdc3cdbb88d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>步骤 1： 使用适配器服务开发向导来创建 Web 项目
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -68,12 +68,12 @@ ms.lasthandoff: 09/20/2017
     |**EchoInUpperCase**|False|  
   
     > [!NOTE]
-    >  在此处选择的 URI 属性将用于创建\<**客户端**>\<**终结点**> web.config 文件中的元素。  
+    >  在此处选择的 URI 属性将用于创建\<**客户端**\>\<**终结点**\> web.config 文件中的元素。  
   
 4.  单击**绑定属性**选项卡。请注意默认值，并依次**确定**。  
   
     > [!NOTE]
-    >  绑定值将用于生成\<**绑定**>\<**echoAdapterBindingV2**> web.config 文件中的元素。  
+    >  绑定值将用于生成\<**绑定**\>\<**echoAdapterBindingV2** \> web.config 文件中的元素。  
   
 ### <a name="to-select-the-contract-and-operations"></a>若要选择的协定和操作  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
     |**名称**|customServiceBehavior|  
     |**UseServiceCertificate**|False|  
   
-     使用这些值来填充\< **serviceBehaviors**>。  
+     使用这些值来填充\< **serviceBehaviors**\>。  
   
 2.  输入以下值**终结点行为配置**:  
   
@@ -135,4 +135,4 @@ ms.lasthandoff: 09/20/2017
  若要生成和部署 Web 项目时，继续执行到[步骤 2： 部署 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
   
 ## <a name="see-also"></a>另请参阅  
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [教程 1：开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

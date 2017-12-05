@@ -12,18 +12,18 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d2cb07bd0a05ddd1e79f4048bfe30e51e8d866
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 875a087fa3afe7515aee2c406cbc47551bea1f4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="addresource-command"></a>AddResource 命令
 本部分中主题提供关于 AddResource 命令的参数的参考信息。 使用此命令使用的参数因你想要添加的项目的类型。 若要获取的项目类型的完整列表，请使用**默认应用**命令时中, 所述[默认应用命令](../core/listtypes-command.md)。  
   
  若要获得添加特定项目类型的帮助，请键入以下命令：  
   
- **BTSTask AddResource /Type:**\<*类型名称*> **/？**  
+ **BTSTask AddResource /Type:**\<*类型名称*\> **/？**  
   
 > [!NOTE]
 >  如果要添加的项目具有很长的路径名（包括文件名），则将项目添加到应用程序的操作可能失败。 路径名不能超过 260 个字符。  
@@ -32,24 +32,24 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [AddResource 命令： BizTalk 程序集](../core/addresource-command-biztalk-assembly.md)  
+-   [AddResource 命令：BizTalk 程序集](../core/addresource-command-biztalk-assembly.md)  
   
--   [AddResource 命令： BizTalk 绑定](../core/addresource-command-biztalk-binding.md)  
+-   [AddResource 命令：BizTalk 绑定](../core/addresource-command-biztalk-binding.md)  
   
 -   [AddResource 命令：.NET 程序集](../core/addresource-command-net-assembly.md)  
   
--   [AddResource 命令： BAM 项目](../core/addresource-command-bam-artifact.md)  
+-   [AddResource 命令：BAM 项目](../core/addresource-command-bam-artifact.md)  
   
--   [AddResource 命令： 证书](../core/addresource-command-certificate.md)  
+-   [AddResource 命令：证书](../core/addresource-command-certificate.md)  
   
--   [AddResource 命令： COM 组件](../core/addresource-command-com-component.md)  
+-   [AddResource 命令：COM 组件](../core/addresource-command-com-component.md)  
   
--   [AddResource 命令： 文件](../core/addresource-command-file.md)  
+-   [AddResource 命令：文件](../core/addresource-command-file.md)  
   
--   [AddResource 命令： 预处理脚本](../core/addresource-command-preprocessing-script.md)  
+-   [AddResource 命令：预处理脚本](../core/addresource-command-preprocessing-script.md)  
   
--   [AddResource 命令： 后处理脚本](../core/addresource-command-postprocessing-script.md)  
+-   [AddResource 命令：后期处理脚本](../core/addresource-command-postprocessing-script.md)  
   
--   [AddResource 命令： 策略](../core/addresource-command-policy.md)  
+-   [AddResource 命令：策略](../core/addresource-command-policy.md)  
   
--   [AddResource 命令： 虚拟目录](../core/addresource-command-virtual-directory.md)
+-   [AddResource 命令：虚拟目录](../core/addresource-command-virtual-directory.md)

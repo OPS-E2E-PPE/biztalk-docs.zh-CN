@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20bb7019a993e47137ec2e4f71334c5b6b3f663c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02d7aa9eadc5e639e56cc526bfd5763abc432a4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>使用 SQL 适配器接收查询通知的注意事项
 本主题提供一些注意事项和最佳实践，在使用时需要牢记[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 -   该操作所影响的记录数不影响操作的通知消息。 例如，无论包含几个记录插入、 更新或删除的 SQL Server 数据库表中，适配器客户端接收只有一个通知消息。  
   
--   我们建议适配器客户端应用程序包含的逻辑来解释收到来自 SQL Server 的通知的类型。 可以通过提取的信息，确定通知类型**\<信息 >**收到的通知消息元素。 下面是收到有关插入操作的通知消息示例：  
+-   我们建议适配器客户端应用程序包含的逻辑来解释收到来自 SQL Server 的通知的类型。 可以通过提取的信息，确定通知类型**\<信息\>**收到的通知消息元素。 下面是收到有关插入操作的通知消息示例：  
   
     ```  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     </Notification>  
     ```  
   
-     请注意内的值**\<信息 >**元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息 >**元素，然后根据值，执行后续的任务。 主题[过程通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何提取的值在**\<信息 >**元素。 执行类似任务的详细的教程也是在[教程 2： 员工-采购订单过程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
+     请注意内的值**\<信息\>**元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息\>**元素，然后根据值，执行后续的任务。 主题[过程通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何提取的值在**\<信息\>**元素. 执行类似任务的详细的教程也是在[教程 2： 员工-采购订单过程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
   
 -   理想情况下，客户端应用程序收到特定记录的通知后，该记录应更新，以便不会收到其他通知。 例如，考虑**员工**表具有**状态**列。 为所有新记录插入到**员工**表中的值**状态**列始终是"0"因此表看起来类似于以下：  
   

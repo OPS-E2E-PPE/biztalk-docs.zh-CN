@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65bcb2681cceb450995b18b7dc00d3d8f5a44d30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59bff4a6b5962410b758f73895105eac280fa6c8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>程序集和项目安装异常管理示例
 下表列出的程序集和 ESB 异常管理示例安装其他项目。  
@@ -48,4 +48,4 @@ ms.lasthandoff: 09/20/2017
 |||GlobalBank.ESB.ExceptionHandling.Processes 版本 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas 版本 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Pipelines 版本 2.0.0.0|  
-|%Program 文件 %\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline 组件|管道组件||
+|%Program 文件 %\\BizTalk Server\Pipeline 组件|管道组件||

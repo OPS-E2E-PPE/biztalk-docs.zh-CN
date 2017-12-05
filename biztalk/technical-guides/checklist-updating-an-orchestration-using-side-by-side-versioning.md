@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110eb0df6373d8679fed0431c91d10a6633e0610
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8e9ed9f260b7b7b8b269e6a4b5e22411ce05b5c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-updating-an-orchestration-using-side-by-side-versioning"></a>清单： 更新业务流程使用的并行版本控制
 对业务流程更改可以将更多地涉及不是更改为其他项目，比如地图。 如果你有生存期较短的业务流程，简单的更新可能足够。 但是，如果你有长时间运行业务流程，或者无法终止现有实例，则的并行版本控制将唯一的选项。  
@@ -25,12 +25,12 @@ ms.lasthandoff: 09/20/2017
   
 |步骤|参考|  
 |-----------|---------------|  
-|对业务流程进行必要的更改后, 递增程序集版本号。|[如何更新的程序集](../technical-guides/how-to-update-an-assembly.md)|  
+|对业务流程进行必要的更改后, 递增程序集版本号。|[如何更新程序集](../technical-guides/how-to-update-an-assembly.md)|  
 |部署到 BizTalk 应用程序，从 Visual Studio 程序集，然后测试程序集。 **注意：**确保你选择要将程序集安装在 GAC 中的部署选项。|[部署到 BizTalk 应用程序程序集从 Visual Studio BizTalk](http://go.microsoft.com/fwlink/?LinkID=154719) (http://go.microsoft.com/fwlink/?LinkID=154719)。|  
-|从测试环境到.msi 文件中的应用程序导出程序集。|[如何导出为.msi 文件的应用程序](../technical-guides/how-to-export-an-application-to-an-msi-file.md)|  
-|.Msi 文件导入生产环境中包含你想要更新的业务流程的 BizTalk 应用程序。 **注意：**可以为测试程序集，以及将其部署到生产环境中使用以下步骤。|[如何从.msi 文件导入应用程序](../technical-guides/how-to-import-an-application-from-an-msi-file.md)|  
+|从测试环境到.msi 文件中的应用程序导出程序集。|[如何将应用程序导出到 .msi 文件](../technical-guides/how-to-export-an-application-to-an-msi-file.md)|  
+|.Msi 文件导入生产环境中包含你想要更新的业务流程的 BizTalk 应用程序。 **注意：**可以为测试程序集，以及将其部署到生产环境中使用以下步骤。|[如何从 .msi 文件导入应用程序](../technical-guides/how-to-import-an-application-from-an-msi-file.md)|  
 |绑定更新业务流程作为原始业务流程中使用相同的绑定。|[如何配置适用于业务流程的绑定](http://go.microsoft.com/fwlink/?LinkId=154850)(http://go.microsoft.com/fwlink/?LinkId=154850)。|  
-|取消登记原始业务流程，然后启动已更新的业务流程。 **注意：**以避免任何已删除的消息，你应执行此操作以编程方式。|有关以编程方式部署业务流程的详细信息，请参阅[部署和启动新版本的业务流程以编程方式](http://go.microsoft.com/fwlink/?LinkId=154851)(http://go.microsoft.com/fwlink/?LinkId=154851)。<br /><br /> 有关手动部署业务流程的详细信息，请参阅中的以下[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助：<br /><br /> -   [如何取消登记业务流程](http://go.microsoft.com/fwlink/?LinkId=154852)(http://go.microsoft.com/fwlink/?LinkId=154852)。<br />-   [如何登记业务流程](http://go.microsoft.com/fwlink/?LinkId=154853)(http://go.microsoft.com/fwlink/?LinkId=154853)。<br />-   [如何启动 Orchestration](http://go.microsoft.com/fwlink/?LinkId=154854) (http://go.microsoft.com/fwlink/?LinkId=154854)。|  
+|取消登记原始业务流程，然后启动已更新的业务流程。 **注意：**以避免任何已删除的消息，你应执行此操作以编程方式。|有关以编程方式部署业务流程的详细信息，请参阅[部署和启动新版本的业务流程以编程方式](http://go.microsoft.com/fwlink/?LinkId=154851)(http://go.microsoft.com/fwlink/?LinkId=154851)。<br /><br /> 有关手动部署业务流程的详细信息，请参阅以下 BizTalk Server 帮助中：<br /><br /> -   [如何取消登记业务流程](http://go.microsoft.com/fwlink/?LinkId=154852)(http://go.microsoft.com/fwlink/?LinkId=154852)。<br />-   [如何登记业务流程](http://go.microsoft.com/fwlink/?LinkId=154853)(http://go.microsoft.com/fwlink/?LinkId=154853)。<br />-   [如何启动 Orchestration](http://go.microsoft.com/fwlink/?LinkId=154854) (http://go.microsoft.com/fwlink/?LinkId=154854)。|  
 |监视的系统的使用组中心数据库的原始 orchestration 版本实例页上的查询视图。|[如何查看为业务流程的实例信息](http://go.microsoft.com/fwlink/?LinkId=154855)(http://go.microsoft.com/fwlink/?LinkId=154855)。|  
 |完成所有活动、 已冻结，和挂起实例后，取消部署应用程序从原始的业务流程。|[如何从应用程序删除业务流程](http://go.microsoft.com/fwlink/?LinkId=154856)(http://go.microsoft.com/fwlink/?LinkId=154856)。|  
 |（可选） 从运行应用程序的每台计算机上的 GAC 中卸载原始程序集版本。|[如何从 GAC 中卸载程序集](http://go.microsoft.com/fwlink/?LinkId=154857)(http://go.microsoft.com/fwlink/?LinkId=154857)。|  

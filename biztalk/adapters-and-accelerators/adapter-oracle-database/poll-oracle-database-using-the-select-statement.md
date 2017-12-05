@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26e840148b4a5cfb8b390d5e89ee0e8edc677aad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2987d58e17ea7ddbd0db5b0a4d242f9ff42afec5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a>使用 SELECT 语句的轮询 Oracle 数据库
 你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收定期的数据更改消息通过使用 SELECT 语句持续轮询的表和 Oracle 的 Oracle 数据库中的视图。 你可以指定为适配器执行定期轮询 Oracle 数据库的轮询语句的 SELECT 语句。 （可选） 还可以指定适配器执行中数据的更改是否后轮询 PL/SQL 代码块。 若要更新目标中的查询记录上的字段或将查询的记录移到另一个表或视图，通常使用此块。  
@@ -126,7 +126,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |Identifier|类型**接收**。|  
-    |消息类型|从下拉列表中，展开**架构**，然后选择*TablePolling.OracleDBBinding*，其中*TablePolling*是 BizTalk 项目的名称。 *OracleDBBindingSchema*是为生成的响应架构**POLLINGSTMT** ACCOUNTACTIVITY 表操作。<br /><br /> **重要**因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleDBBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleDBBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"POLLINGSTMT"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename >。\<rootnodename >。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleDBBindingSchema。|  
+    |消息类型|从下拉列表中，展开**架构**，然后选择*TablePolling.OracleDBBinding*，其中*TablePolling*是 BizTalk 项目的名称。 *OracleDBBindingSchema*是为生成的响应架构**POLLINGSTMT** ACCOUNTACTIVITY 表操作。<br /><br /> **重要**因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleDBBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleDBBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"POLLINGSTMT"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleDBBindingSchema。|  
   
 ## <a name="setting-up-the-orchestration"></a>设置业务流程  
  你必须创建要使用 BizTalk 业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]用于从 Oracle 接收基于轮询的数据更改消息。 在此业务流程，适配器将通过执行 SELECT 语句为指定接收响应**PollingStatement**绑定属性。 SELECT 语句的响应消息保存到文件位置。 将包含轮询 Oracle 数据库典型业务流程：  
@@ -216,7 +216,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 -   适配器执行的 SELECT 语句**PollingStatement** ACCOUNTACTIVITY 表中的绑定属性，并返回所有行。 从 Oracle 数据库响应如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <POLLINGSTMT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT">  
       <POLLINGSTMTRECORD>  
         <POLLINGSTMTRECORD>  

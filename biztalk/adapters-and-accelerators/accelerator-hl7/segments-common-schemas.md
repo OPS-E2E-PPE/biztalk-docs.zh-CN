@@ -16,21 +16,21 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff61c73b51eb08d1e6f845980686b49b3440d88c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 50bdcacfe1459ba4a236c3701b786d97217db8ef
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="segments-common-schemas"></a>段通用架构
- **Segments_\<*版本*>.xsd * * 文件包括 datatypes_\<*版本*>.xsd 和包含的所有定义与 HL7 版本相关的段。 每个消息架构使用 segments_\<*版本*>.xsd。 HL7 消息定义的每个子文件夹下，包括 segments_\<*版本*>.xsd。 SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。 架构文件名称格式为：  
+ **Segments_\<*版本*\>.xsd * * 文件包括 datatypes_\<*版本*\>.xsd 和包含与 HL7 版本相关的所有线段的定义。 每个消息架构使用 segments_\<*版本*\>.xsd。 HL7 消息定义的每个子文件夹下，包括 segments_\<*版本*\>.xsd。 SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*\>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。 架构文件名称格式为：  
   
 ```  
   
 <xxx>_<nnn>_<vaa>_GLO_DEF.xsd  
 ```  
   
- 其中*xxx*是消息类型，  *nnn* 是触发器事件， *vaa*是版本号，GLO 指示全球化，并 DEF 指示默认值。 架构文件 *\<xxx >*_*\<nnn>*\_*\<vaa >* \_ *\<glo >*\_*\<def >*.xsdis 从 EventMessageTypeSegments 和 SegmentDataElements 访问数据库生成表并包括指向的指针段\_\<*版本*>.xsd 架构文件。  
+ 其中*xxx*是消息类型，  *nnn* 是触发器事件， *vaa*是版本号，GLO 指示全球化，并 DEF 指示默认值。 架构文件 *\<xxx\>*_*\<nnn\>*\_*\<vaa\>*  \_  *\<glo\>*\_*\<def\>*.xsdis 从生成EventMessageTypeSegments 和 SegmentDataElements 访问数据库表，并包含指向段的\_\<*版本*\>.xsd 架构文件。  
   
 ## <a name="see-also"></a>另请参阅  
  [HL7 2.X 公共架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md)   

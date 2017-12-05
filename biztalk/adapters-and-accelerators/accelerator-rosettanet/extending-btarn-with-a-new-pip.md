@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbf18261b1b6b30ab43816f4052022c652cec687
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2b1fca61cd40b932e53b2908603a225d3980fa1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="extending-btarn-with-a-new-pip"></a>扩展与新 PIP BTARN
 本主题介绍如何扩展[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]与新的合作伙伴接口过程 (PIP) 架构。 这使你能够在 RosettaNet PIP 不与 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装程序所安装的任何架构相关联时，基于该 PIP 添加架构。  
@@ -31,14 +31,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk 2013 Accelerator for RosettaNet\SDK\Utilities\Schema 生成器。  
+2.  在命令提示符下，将移到\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk 2013 Accelerator for RosettaNet\SDK\Utilities\Schema 生成器。  
   
 3.  在命令提示符处，键入**CScript InstallDTD.vbs**，然后按**Enter**。  
   
     > [!NOTE]
-    >  在安装 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 后，你将只需要执行步骤 1 至 3。  
+    >  你将仅需要在安装 BizTalk Server 之后一次执行步骤 1 到 3。  
   
-4.  启动 [!INCLUDE[vs2012](../../includes/vs2012-md.md)]。  
+4.  启动 Visual Studio。  
   
 5.  在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。  
   
@@ -48,9 +48,9 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**名称**框中，键入项目名称，如**MyCustomPIP**，然后单击**确定**。  
   
-9. 启动[!INCLUDE[vs2012](../../includes/vs2012-md.md)]命令提示符。  
+9. 启动 Visual Studio 命令提示符。  
   
-10. 在命令提示符下，移动到在步骤 7，类型中输入的位置**sn-k\<项目 name.snk >**，然后按**Enter**。  
+10. 在命令提示符下，移动到在步骤 7，类型中输入的位置**sn-k\<项目 name.snk\>**，然后按**Enter**。  
   
 11. 在解决方案资源管理器中，右键单击项目名称，然后单击**属性**。  
   
@@ -62,13 +62,13 @@ ms.lasthandoff: 09/20/2017
   
 15. 在解决方案资源管理器，右键单击项目名称，指向**添加**，然后单击**现有项**。  
   
-16. 在**添加现有项**对话框中，移动到\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk 2013 Accelerator for RosettaNet\SDK\Schemas，选择**xml.xsd**，然后单击**添加**。  
+16. 在**添加现有项**对话框中，移动到\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk 2013 Accelerator for RosettaNet\SDK\Schemas，选择**xml.xsd**，然后单击**添加**。  
   
 17. 下载将用 RosettaNet.org 扩展 RNPIP 的 PIP。有关详细信息，请参阅[合并新的合作伙伴接口进程](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)。  
   
 18. 在解决方案资源管理器，展开项目名称，右键单击**引用**，然后单击**添加引用**。  
   
-19. 在**添加引用**对话框中，单击**浏览**，并将移至\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk 2013作为 RosettaNet\Bin，然后选择快捷键**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**。 单击**打开**，然后单击**确定**。  
+19. 在**添加引用**对话框中，单击**浏览**，并将移至\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk 2013 Accelerator for RosettaNet\Bin，，然后选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**。 单击**打开**，然后单击**确定**。  
   
 20. 在解决方案资源管理器，右键单击项目名称，指向**添加**，然后单击**添加生成的项**。  
   
@@ -85,13 +85,13 @@ ms.lasthandoff: 09/20/2017
   
 24. 在解决方案资源管理器中，双击刚导入的 .xsd 文件。  
   
-25. 在 BizTalk 编辑器中，选择\<*架构*> 节点。  
+25. 在 BizTalk 编辑器中，选择\<*架构*\>节点。  
   
-26. 在属性窗口中，向下滚动到**文档类型**。 在**文档类型**框中， **PIP**\<*三位数代码*>，例如， **PIP3A2**。 在**文档版本**框中，键入**v**\<*xx.xx*> 或**R**\<*xx.xx*>，例如， **R01.02**。 此版本应与 RosettaNet PIP 规范中指定的版本相同。  
+26. 在属性窗口中，向下滚动到**文档类型**。 在**文档类型**框中， **PIP**\<*三位数代码*\>，例如， **PIP3A2**。 在**文档版本**框中，键入**v**\<*xx.xx* \>或**R** \< *xx.xx*\>，例如， **R01.02**。 此版本应与 RosettaNet PIP 规范中指定的版本相同。  
   
 27. 在属性窗口中，向下滚动到**根引用**。 单击**根引用**，然后从下拉列表中，选择的架构，例如，选择的根节点**Pip3C5BillingStatementNotification**。  
   
-28. 在属性窗口中，向下滚动达**目标 Namespace**。 有关**目标 Namespace**，类型**http://schemas.microsoft.com/biztalk/btarn/2004/\<DTD 文件名称 >.dtd**，其中的 DTD 文件名称是，例如， **3C5_MS_R01_00_BillingStatementNotification.dtd**。  
+28. 在属性窗口中，向下滚动达**目标 Namespace**。 有关**目标 Namespace**，类型**http://schemas.microsoft.com/biztalk/btarn/2004/\<DTD 文件名\>.dtd**，其中的 DTD 文件名称是，例如， **3C5_MS_R01_00_BillingStatementNotification.dtd**。  
   
     > [!NOTE]
     >  对于 BTARN，要求目标命名空间采用这种命名约定。 如果你使用另一个命名空间约定，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将不会处理架构验证的 PIP 文档。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
   
 29. 在属性窗口中，向下滚动达**导入**。 单击旁边的省略号按钮 （...）**导入**，然后单击**添加**。  
   
-30. 在**BizTalk 类型选取器**对话框框中，展开\<*项目名称*>，展开**引用**，展开**Microsoft.Solutions.BTARN.Schemas.RNPIPs**，展开**架构**，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**，单击**确定**，然后单击**确定**试。  
+30. 在**BizTalk 类型选取器**对话框框中，展开\<*项目名称*\>，展开**引用**，展开**Microsoft.Solutions.BTARN.Schemas.RNPIPs**，展开**架构**，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.BaseDataTypes**，单击**确定**，然后单击**确定**试。  
   
 31. 右键单击项目名称，并依次**部署**。  
   
@@ -117,4 +117,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [合并新的合作伙伴接口进程](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)   
  [使用 Pip](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)   
- [修改在 RNPIPs 现有 PIP](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)
+ [修改 RNPIP 中的现有 PIP](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)

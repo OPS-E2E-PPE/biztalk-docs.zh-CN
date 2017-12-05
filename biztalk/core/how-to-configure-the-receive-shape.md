@@ -18,11 +18,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3868384641e4c5fa03c82c7ec4ba18e3ee9fb1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e74220ab71c0efcc09e1736511e8388de71f387
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-receive-shape"></a>如何配置接收形状
 ![](../core/media/ebiz-orch-receive.gif "ebiz_orch_receive")  
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     |<|小于|  
     |\<=|小于或等于|  
     |>|大于|  
-    |>=|大于或等于|  
+    |\>=|大于或等于|  
     |Exists|Exists|  
   
 -   **值。** 中的单元格**值**列所能容纳中键入任何常量： 字符串文本、 整数文字，则为 null。  
@@ -137,4 +137,4 @@ ms.lasthandoff: 09/20/2017
  此只读文本框将随着您生成表达式而显示该表达式。  
   
 ## <a name="in-this-section"></a>本节内容  
- [使用接收消息形状使用筛选器](../core/using-filters-with-the-receive-message-shape.md)
+ [使用带接收消息形状的筛选器](../core/using-filters-with-the-receive-message-shape.md)

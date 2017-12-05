@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b97c3b6fe5e743e6bf19c979b994cc7eb5a942de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d15442da8afd4829245b742bdd45af8f7d1f832
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="remove-receive-port-biztalk-server-sample"></a>删除接收端口 （BizTalk Server 示例）
 删除接收端口示例演示了如何删除一个或多个接收端口。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  这些示例位于以下 SDK 的位置：  
   
- \<*示例路径*> \Admin\WMI\Remove 接收 Port\  
+ \<*示例路径*\>\Admin\WMI\Remove 接收 Port\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -61,12 +61,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Remove 接收 Port\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Remove 接收 Port\VBScript\  
   
 2.  运行文件 RemoveReceivePort.vbs 使用 cscript 程序中，将以下命令行自变量传递：  
   
-     **\<**   
-     ***ReceivePortName* >**。 接收端口，若要删除的名称。 如果接收端口名称包含空格，请将名称括在引号中。  
+     **\<** ***ReceivePortName* \>** 。 接收端口，若要删除的名称。 如果接收端口名称包含空格，请将名称括在引号中。  
   
      例如：  
   
@@ -80,4 +79,4 @@ ms.lasthandoff: 09/20/2017
  脚本文件 RemoveReceivePort.vbs 包含详细的注释，使用更多有关它执行的操作的说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

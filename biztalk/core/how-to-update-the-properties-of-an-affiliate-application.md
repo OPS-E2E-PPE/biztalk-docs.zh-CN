@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 577ded3a225acd8b3f95372075103ab37dfba854
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0ef4a2fb99d423f7c7ccb08cec58c3c49928e1ed
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a>如何更新关联应用程序的属性
 您可以使用 MMC 管理单元或此命令根据 XML 文件指定的内容更新一个或多个应用程序属性。 只有关联管理员才能执行此任务。 下面是一个示例 XML 文件，其中列出了可更新的字段：  
@@ -71,9 +71,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-updateapps\<应用程序文件名称 >**，其中应用程序文件名称是 XML 文件。  
+3.  类型**ssomanage-updateapps\<应用程序文件名称\>**，其中应用程序文件名称是 XML 文件。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f346feea5f3c651d466f40fc7c67507292f585a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be7580ae6551fca18ee0a3b9b14b194006efd62e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msmq-adapter-performance-counters"></a>MSMQ 适配器性能计数器
 使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。 性能计数器能够帮助您标识和解决有关服务器性能的问题。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加计数器**对话框中，从**可用计数器**列表中，展开**BizTalk:MSMQ**性能计数器对象，然后选择要监视的计数器  
   
-4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**>。  
+4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**\>。  
   
 5.  添加计数器后, 单击**确定**。  
   
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [使用 MSMQ LoadGen 2007](../core/using-loadgen-2007-with-msmq.md)   
- [优化性能的 MSMQ 适配器](../core/optimizing-performance-of-the-msmq-adapter.md)
+ [优化 MSMQ 适配器的性能](../core/optimizing-performance-of-the-msmq-adapter.md)

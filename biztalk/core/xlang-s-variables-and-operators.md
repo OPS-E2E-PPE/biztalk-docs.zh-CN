@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1affe6ebdebac515782ec9ecb82b0c6085341bfe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c1773b7af3ec029026ee884e6c1161e27a3c330
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xlang-s-variables-and-operators"></a>XLANG-s 变量和运算符
 本部分讨论的变量和 XLANG/s 语言中使用的运算符。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
 |unchecked|将忽略算术溢出|未选中状态 (x = y * 1000年)|  
 |新|创建类的实例|myObject = 新 MyClass;|  
 |typeof|检索类型|myMapType = typeof(myMap)|  
-|succeeded|测试成功完成事务的作用域或业务流程|成功 (\<子事务的当前作用域或服务的事务 ID >)|  
+|succeeded|测试成功完成事务的作用域或业务流程|成功 (\<子事务的当前作用域或服务的事务 ID\>)|  
 |存在|测试存在消息上下文属性|BTS。RetryCount 存在 Message_In|  
 |+|一元加|+(int x)|  
 |-|一元负|-(int x)|  
@@ -60,11 +60,11 @@ ms.lasthandoff: 09/20/2017
 |/|除以|x / y|  
 |+|加号|x + y|  
 |-|减号|x-y|  
-|<<|右侧左移|x <\< 2|  
+|<<|右侧左移|x << 2|  
 |>>|右移|x >> 2|  
-|<|小于|如果 (MyMsg.numOrders \< 10)...|  
+|<|小于|如果 (MyMsg.numOrders < 10)...|  
 |>|大于|如果 (MyMsg.numOrders > 10)...|  
-|<=|小于或等于|如果 (MyMsg.numOrders \<= 10)...|  
+|<=|小于或等于|如果 (MyMsg.numOrders < = 10)...|  
 |>=|大于或等于|如果 (MyMsg.numOrders > = 10)...|  
 |==|等于|如果 (MyMsg.numOrders = = 10)...|  
 |!=|不等于|如果 (MyMsg.numOrders ！ = 10)...|  
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
  [XLANG-s 语句](../core/xlang-s-statements.md)   
  [XLANG-s 表达式](../core/xlang-s-expressions.md)   
  [XLANG-s 保留字](../core/xlang-s-reserved-words.md)   
- [XLANG-s 的 BPEL4WS 类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [XLANG-s 到 BPEL4WS 的类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)

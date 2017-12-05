@@ -16,11 +16,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f308c950d56569c06403df1394580302089a453e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 33d27914dd5d7ae59b0823c2e6009ab307c41b9b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-a-send-port-group"></a>如何创建发送端口组
 本主题介绍如何使用 BizTalk Server 管理控制台在 BizTalk 应用程序中创建发送端口组，然后向其中添加发送端口。 仅向发送端口组，可以添加静态单向发送端口。 若要路由消息，发送端口组必须至少包含一个发送端口。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**名称**框中，键入发送端口组的名称。  
   
-5.  在**发送端口**，单击下的下拉列表**名称**，然后单击发送端口将添加到发送端口组。 对每个要添加到该组的发送端口重复此步骤。 若要创建新的发送端口并将其添加，请单击**\<新建发送端口..>** ，然后按照中的说明[如何创建发送端口](../core/how-to-create-a-send-port2.md)。  
+5.  在**发送端口**，单击下的下拉列表**名称**，然后单击发送端口将添加到发送端口组。 对每个要添加到该组的发送端口重复此步骤。 若要创建新的发送端口并将其添加，请单击**\<新发送端口...\>**  ，然后按照中的说明[如何创建发送端口](../core/how-to-create-a-send-port2.md)。  
   
 6.  完成后将发送端口添加到发送端口组，单击**确定**。  
   

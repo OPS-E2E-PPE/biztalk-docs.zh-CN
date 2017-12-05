@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5572ab96215d07570a39f53009eae3038792db8
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: c52fc2ae61d4e261a729de702a2fbffbde3fd1bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>规划开发、 测试、 过渡和生产环境
 本主题讨论在发布管理过程中用于 BizTalk 解决方案的环境。 与任何企业软件解决方案，在开发和发布 BizTalk 解决方案时应遵循它成熟的软件版本管理准则。 此过程中应包括以下不同阶段：  
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/17/2017
 >  有关使用建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在虚拟环境中，请参阅[BizTalk Server 2009 HYPER-V 指南](http://go.microsoft.com/fwlink/?LinkId=151834)(http://go.microsoft.com/fwlink/?LinkId=151834)。  
   
 > [!NOTE]  
->  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]完全支持上受支持的操作系统的任何 Microsoft 知识库文章 842301 中列出的虚拟化软件上运行[Microsoft BizTalk Server 可支持性的虚拟机上](https://support.microsoft.com/kb/842301)。 但是，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]按预期如果安装在受支持的操作系统中除了知识库文章中所述的虚拟化软件的运行方式可能无法执行。  
+>  BizTalk Server 完全支持上受支持的操作系统的任何 Microsoft 知识库文章 842301 中列出的虚拟化软件上运行[的虚拟机上的MicrosoftBizTalkServer可支持性](https://support.microsoft.com/kb/842301). 但是，BizTalk Server 可能不会按预期如果安装在受支持的操作系统中除了知识库文章中所述的虚拟化软件的运行方式执行。  
   
 ## <a name="development-environment"></a>开发环境  
  在开发环境中创建用于 BizTalk 解决方案 BizTalk 项目。 应在使用中的计算机上安装以下软件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发环境：  
@@ -103,4 +103,4 @@ ms.lasthandoff: 10/17/2017
 |4|2|4|1|11|  
   
 ## <a name="see-also"></a>另请参阅  
- [BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)
+ [为 BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)

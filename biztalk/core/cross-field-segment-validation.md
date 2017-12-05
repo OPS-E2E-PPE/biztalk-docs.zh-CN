@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafa1831d6f99ef925a79ab7276caea005c2380f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: efd3a0b5f68ded39fbf5cc88a4ba8aac6725602e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cross-field-segment-validation"></a>交叉字段段验证
 EDI 接收管道和 EDI 发送管道可对 X12 编码消息中的事务集数据元素执行跨字段/段验证。 在 X12 中这种验证称为关系条件。 跨字段验证通过批注表示，因此它与 EDI 验证有关。  
@@ -32,7 +32,7 @@ EDI 接收管道和 EDI 发送管道可对 X12 编码消息中的事务集数据
  X12 的可选性包括必需 (M)、可选 (O) 和关系 (R)（跨字段验证）。 如果可选性为必需，则必须至少对复合类型中的一个组件数据元素赋值。  
   
 ## <a name="x12-optionality"></a>X12 可选性  
- 在 X12 中，针对关系可选性的跨字段/段验证包括架构的规则中列出的一系列检查。 每个规则由以下元素中\<xs:annotation > 元素：  
+ 在 X12 中，针对关系可选性的跨字段/段验证包括架构的规则中列出的一系列检查。 每个规则由以下元素中\<xs:annotation\>元素：  
   
 ```  
 <b:Rule subjects="X12ConditionDesignatorX_<relational_condition>"…>  

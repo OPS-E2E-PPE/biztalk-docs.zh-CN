@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0646f1c447cfc4949edafe94d634a6c651083307
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72147ffe0f29fbb8456e4d652877b66e7ce0543c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>使用存储的过程、 函数或打包的过程和函数的轮询 Oracle 数据库
 你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收定期的数据更改消息通过使用存储的过程、 函数或打包的过程和函数以定期轮询 Oracle 数据库。 你可以指定存储的过程、 函数或打包的过程和函数与适配器执行定期轮询 Oracle 数据库的轮询语句。  
@@ -111,7 +111,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |Identifier|类型**接收**。|  
-    |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要说明：**因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"轮询"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename >。\<rootnodename >。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleEBSBindingSchema。|  
+    |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要说明：**因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"轮询"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleEBSBindingSchema。|  
   
      [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] GET_ACTIVITYS 的入站和出站操作存储过程生成架构。 入站操作，必须使用架构：  
   
@@ -210,7 +210,7 @@ ms.lasthandoff: 09/20/2017
 -   适配器执行为指定的存储的 GET_ACTIVITYS 过程**PollingStatement** ACCOUNTACTIVITY 表中的绑定属性，并返回所有行。 从 Oracle 数据库响应如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <GET_ACTIVITYS xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/PollingPackage/ACCOUNT_PKG">  
       <OUTRECS>  
         <OUTRECSRecord xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/ReferencedRecordTypes/SCOTT/ACCOUNT_PKG/GET_ACTIVITYS/SCOTT/GET_ACTIVITYS">  

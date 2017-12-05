@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d06cf551d033614cb75456845e059c6ec4ec8fa8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d4d4d67df9d7463a699b1ec9448feeea0a9c57a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-application-based-view"></a>浏览基于应用程序的视图下的 Oracle E-business Suite 操作
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要浏览的出站和入站操作，可以对 Oracle E-business Suite 执行使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 本主题提供有关如何浏览基于应用程序的视图下的出站和入站操作的信息。  
@@ -55,16 +55,16 @@ ms.lasthandoff: 09/20/2017
      ![浏览接口 Oracle （&#45;） 中的表Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/fcfbe41c-14e0-43b5-aada-c4c686aecff4.gif "fcfbe41c-14e0-43b5-aada-c4c686aecff4")  
   
     > [!NOTE]
-    >  如果接口表包含 BLOB 类型的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName >。 例如，如果接口表有一列，FILE_DATA 的类型 BLOB，该适配器将公开**Read_FILE_DATA**操作。 如果某个接口表具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个数 Read_\<LOBColName > 操作。  
+    >  如果接口表包含 BLOB 类型的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName\>。 例如，如果接口表有一列，FILE_DATA 的类型 BLOB，该适配器将公开**Read_FILE_DATA**操作。 如果某个接口表具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个数 Read_\<LOBColName\>操作。  
     >   
-    >  同样，如果接口表包含 BLOB 类型的列，CLOB、 或 NCLOB 适配器还公开特定操作来更新到此类列的数据。 此类操作的名称是否 Update_\<LOBColName >。 例如，如果接口表有一列，FILE_DATA 的类型 BLOB，该适配器将公开**Update_FILE_DATA**操作。 如果某个接口表具有多个列类型 BLOB，CLOB、 和 NCLOB 适配器将公开任意多个数 Update_\<LOBColName > 操作。 请注意，对类型 BFILE 的列不支持更新操作。  
+    >  同样，如果接口表包含 BLOB 类型的列，CLOB、 或 NCLOB 适配器还公开特定操作来更新到此类列的数据。 此类操作的名称是否 Update_\<LOBColName\>。 例如，如果接口表有一列，FILE_DATA 的类型 BLOB，该适配器将公开**Update_FILE_DATA**操作。 如果某个接口表具有多个列类型 BLOB，CLOB、 和 NCLOB 适配器将公开任意多个数 Update_\<LOBColName\>操作。 请注意，对类型 BFILE 的列不支持更新操作。  
   
 6.  展开**界面视图**节点可查看的 Oracle 应用程序的接口视图。 单击接口视图以查看可用的操作列表中的视图为**可用类别和操作**框。  
   
      ![浏览 Oracle （&#45;） 中的接口视图Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b.gif "f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b")  
   
     > [!NOTE]
-    >  如果接口视图包含类型 BLOB 的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName >。 例如，如果接口视图有一列，FILE_CONTENT 的类型 BLOB，该适配器将公开**Read_FILE_CONTENT**操作。 如果接口视图具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个系列 Read_\<LOBColName > 操作。 请注意该 Update_\<LOBColName > 视图不支持操作。  
+    >  如果接口视图包含类型 BLOB 的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName\>。 例如，如果接口视图有一列，FILE_CONTENT 的类型 BLOB，该适配器将公开**Read_FILE_CONTENT**操作。 如果接口视图具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个系列 Read_\<LOBColName\>操作。 请注意该 Update_\<LOBColName\>视图不支持操作。  
   
 7.  单击**并发程序**节点以查看有关中的应用程序的并发程序**可用类别和操作**框。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346bbc3d4d136ad7116a68b3c57a47566f258a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e111a271654b40a01032805bbfdb8eb54bc31ead
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enabling-adapter-framework-configuration-extensions"></a>使适配器 Framework 配置扩展
 BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若要使用这些扩展，导入的框架的架构，BiztalkAdapterFramework.xsd。 导入架构使你能够访问修饰和专用的类型，以及在适配器的配置架构中使用它们，如下所述。 下面的代码演示如何导入该架构：  
@@ -33,9 +33,9 @@ BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若�
 ```  
   
 ## <a name="importing-the-biztalk-adapter-framework-extensions-schema-xsd"></a>导入 BizTalk 适配器框架扩展架构 XSD  
- 通过导入适配器框架扩展架构 XSD，你可以使用修饰如\<baf:FileName > 作为元素的类型，它显示的文件名称弹出编辑元素时。  
+ 通过导入适配器框架扩展架构 XSD，你可以使用修饰如\<baf:FileName\>作为元素的类型，它显示的文件名称弹出编辑元素时。  
   
- 其他修饰控制属性在界面中的显示方式。 \<Baf:description > 修饰，例如，将帮助文本添加到元素。 \<Baf:description > 修饰的属性页的底部显示的文本。 \<Baf： 可浏览 > 修饰隐藏接口中的元素。 下面的代码显示如何在配置架构中使用这些元素：  
+ 其他修饰控制属性在界面中的显示方式。 \<Baf:description\>修饰，例如，将帮助文本添加到元素。 \<Baf:description\>修饰的属性页的底部显示的文本。 \<Baf： 可浏览\>修饰隐藏接口中的元素。 下面的代码显示如何在配置架构中使用这些元素：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   
@@ -93,4 +93,4 @@ BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若�
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)
+ [适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)

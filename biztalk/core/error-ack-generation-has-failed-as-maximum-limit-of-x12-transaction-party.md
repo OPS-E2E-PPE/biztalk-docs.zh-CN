@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5b82a8251504e1f9ff7b62c4e1cc813d4740a83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e845960a85ebe2ebf90b8549634a0097676c80c5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-party"></a>错误 Ack 生成已失败，因为最大限制为 X12 事务方
 ## <a name="details"></a>详细信息  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|事件源|BizTalk Server EDI|  
 |组件|EDI 引擎|  
 |符号名称|-|  
 |消息正文|无法生成确认，因为参与方 {0} 已达到可接受的 X12 事务集控制编号的最大限制。 导航到发送方角色屏幕中的“参与方”、合作伙伴协议管理器中的字段 ST 2 可重置计数器|  

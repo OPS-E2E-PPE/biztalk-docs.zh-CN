@@ -17,16 +17,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3efc51b35b6ac522574c7adb66e27e56ab5f5bb3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bfd1dd4e09071c3d7bcccf28878f19e13acad8a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a>使用业务流程访问 WCF 消息中的 SOAP 标头
 若要访问在业务流程中的传入 WCF 消息的 SOAP 标头值，你可以使用上下文属性**WCF。InboundHeaders**。 WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到入站消息中**WCF。InboundHeaders**属性。 WCF 适配器还允许你选择你想要升级或以编程方式编写的上下文属性的属性。 请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)有关详细信息。  
   
- 上下文属性中包含的值是一个包含与 XML 数据字符串\<**标头**> 作为子元素的复制根元素，并传入的 SOAP 标头\<**标头**> 元素。 访问此数据的最简单方法是使用中的 BizTalk 表达式编辑器**消息分配**或**表达式**形状，加载中的字符串**XmlDocument**，并使用若要访问特定字段的 XPath 查询。 有关创建 BizTalk 表达式编辑器中的 XML 文档的详细信息，请参阅[XLANG-s 语言](../core/xlang-s-language.md)。  
+ 上下文属性中包含的值是一个包含与 XML 数据字符串\<**标头**\>根元素和传入的 SOAP 标头将复制作为子元素的\< **标头**\>元素。 访问此数据的最简单方法是使用中的 BizTalk 表达式编辑器**消息分配**或**表达式**形状，加载中的字符串**XmlDocument**，并使用若要访问特定字段的 XPath 查询。 有关创建 BizTalk 表达式编辑器中的 XML 文档的详细信息，请参阅[XLANG-s 语言](../core/xlang-s-language.md)。  
   
  下面的代码示例获取请求的 SOAP 标头中**消息分配**或**表达式**形状**WCF。InboundHeaders**属性：  
   
@@ -47,4 +47,4 @@ outboundMessageInstance(WCF.OutbounCustomHeaders) = "<headers><Origination xmlns
 ## <a name="see-also"></a>另请参阅  
  [访问在与管道组件的 WCF 消息的 SOAP 标头](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)   
  [WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)   
- [与使用的 WCF 服务的 SOAP 标头](../core/soap-headers-with-consumed-wcf-services.md)
+ [SOAP 标头与使用的 WCF 服务](../core/soap-headers-with-consumed-wcf-services.md)

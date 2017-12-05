@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa84ee4a4c1964db090cc48b7229558c9ee86114
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6891f300a89684481184bf255f3cdd54d25845
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-composite-operations-on-sql-server-using-biztalk-server"></a>运行 SQL Server 使用 BizTalk Server 上的复合操作
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]允许适配器客户端执行 SQL Server 数据库上的复合操作。 复合操作可以包括：  
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
      若要添加的引用：  
   
-    1.  右键单击根**\<架构 >** CompositeSchema.xsd，然后单击的节点**属性**。  
+    1.  右键单击根**\<架构\>** CompositeSchema.xsd，然后单击的节点**属性**。  
   
     2.  在**属性**框中，单击省略号按钮**（...）**针对**导入**属性。  
   
@@ -101,9 +101,9 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  默认情况下，**根**还将节点添加到新的架构文件。 你可以重命名**根**节点**请求**。 若要重命名节点，右键单击节点名称，然后单击**重命名**。  
   
-     若要添加一个节点下的**\<架构 >**节点：  
+     若要添加一个节点下的**\<架构\>**节点：  
   
-    1.  右键单击**\<架构 >**节点，指向**插入架构节点**，然后单击**子记录**。  
+    1.  右键单击**\<架构\>**节点，指向**插入架构节点**，然后单击**子记录**。  
   
     2.  重命名为新节点**请求响应**。  
   
@@ -289,7 +289,7 @@ ms.lasthandoff: 09/20/2017
  业务流程使用该消息，并将其发送到的 SQL Server 数据库。 从 SQL Server 数据库响应保存在定义为业务流程的一部分的其他文件位置中。 例如，从前面的请求消息的 SQL Server 数据库响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <RequestResponse xmlns="http://CompositeTest.CompositeSchema">  
   <InsertResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
     <InsertResult>  
@@ -299,30 +299,30 @@ ms.lasthandoff: 09/20/2017
   <GET_LAST_EMP_DATAResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
     <GET_LAST_EMP_DATAResult>  
       <DataSet xmlns="http://schemas.datacontract.org/2004/07/System.Data">  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
-                      \<xs:element minOccurs="0" name="Name" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
-                      \<xs:element minOccurs="0" name="Designation" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
-                      \<xs:element minOccurs="0" name="Rating" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
+                      <xs:element minOccurs="0" name="Name" type="xs:string" />   
+                      <xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
+                      <xs:element minOccurs="0" name="Designation" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
+                      <xs:element minOccurs="0" name="Rating" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
           <NewDataSet xmlns="">  
             <NewTable>  
               <Employee_ID>10080</Employee_ID>   
@@ -332,7 +332,7 @@ ms.lasthandoff: 09/20/2017
               <Last_Modified>AAAAAAAAF40=</Last_Modified>   
             </NewTable>  
           </NewDataSet>  
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </DataSet>  
     </GET_LAST_EMP_DATAResult>  
     <ReturnValue>0</ReturnValue>   
@@ -349,4 +349,4 @@ ms.lasthandoff: 09/20/2017
  已部署并配置 BizTalk 项目之后，你可以将配置设置导出到 XML 文件称为绑定文件。 后生成绑定文件，你可以导入的配置设置文件，以便不需要创建诸如发送端口和接收相同的业务流程的端口。 有关绑定文件的详细信息，请参阅[重用适配器绑定](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)。
   
 ## <a name="see-also"></a>另请参阅  
-[开发使用 SQL 适配器的 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[使用 SQL 适配器开发 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

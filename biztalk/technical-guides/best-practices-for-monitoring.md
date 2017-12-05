@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d520026b9037f10f2ed20f52a366b1ff9d3183a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51b3d4761c32123db53ea35daf91d0f13d9a2488
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-monitoring"></a>用于监视的最佳做法
-本主题提供有关监视你的 Microsoft 最佳实践[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境和应用程序。  
+本主题提供有关监视你的 Microsoft BizTalk Server 环境和应用程序的最佳实践。  
   
  **创建和实现你的 BizTalk 应用程序和基础结构的监视计划**  
   
@@ -35,11 +35,11 @@ ms.lasthandoff: 09/20/2017
   
     -   所有自定义服务、 自定义的事件日志和监视的自定义数据库？  
   
-    -   SQL Server 计算机和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]监视 SQL 代理作业？  
+    -   是否在 SQL Server 计算机和 BizTalk Server SQL 代理作业监视？  
   
  **如果可能，请安装监视应用程序，如[!INCLUDE[opsmgr_short](../includes/opsmgr-short-md.md)]为了自动执行 BizTalk Server 应用程序和基础结构监视**  
   
--   使用 Microsoft System Center Operations Manager 是首选的方法，用于自动监视，因为 BizTalk Server 管理包提供数百个内置规则，用于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+-   使用 Microsoft System Center Operations Manager 是自动监视，因为 BizTalk Server 管理包提供数百个内置的规则的 BizTalk Server 的首选的方法。  
   
      有关详细信息，请参阅下列资源：  
   
@@ -47,17 +47,17 @@ ms.lasthandoff: 09/20/2017
   
     -   [如何导入 Operations Manager 2007 中的管理包](http://go.microsoft.com/fwlink/?LinkID=98348)(http://go.microsoft.com/fwlink/?LinkID=98348)  
   
-    -   [如何将 BizTalk Server 数据库标记为自定义监视](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
+    -   [如何为自定义监视标记 BizTalk Server 数据库](../technical-guides/how-to-mark-biztalk-server-databases-for-customized-monitoring.md)  
   
  **运行 BizTalk Server 最佳做法分析器**  
   
--   BizTalk Server 最佳做法分析器检查[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]部署，并生成与最佳做法标准相关的问题的列表。 该工具执行配置级别验证从不同的信息源，例如 Windows Management Instrumentation (WMI) 类、 SQL Server 数据库和注册表项收集数据。 数据然后用于评估部署配置。 该工具读取和仅限报告并不会修改任何系统设置，并不是自我调整工具。  
+-   BizTalk Server 最佳做法分析器检查 BizTalk Server 部署，并生成与最佳做法标准相关的问题的列表。 该工具执行配置级别验证从不同的信息源，例如 Windows Management Instrumentation (WMI) 类、 SQL Server 数据库和注册表项收集数据。 数据然后用于评估部署配置。 该工具读取和仅限报告并不会修改任何系统设置，并不是自我调整工具。  
   
      你可以下载 BizTalk Server 最佳做法分析器在[http://go.microsoft.com/fwlink/?LinkId=83317](http://go.microsoft.com/fwlink/?LinkId=83317) (http://go.microsoft.com/fwlink/?LinkId=83317)。  
   
  **运行日志的性能分析工具 (PAL)**  
   
--   PAL 是可用作在免费下载[http://go.microsoft.com/fwlink/LinkID=98098](http://go.microsoft.com/fwlink/?LinkID=98098)。 重要的安装信息，请参阅[使用性能分析的日志 (PAL) 工具](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)。  
+-   PAL 是可用作在免费下载[https://github.com/clinthuffman/PAL](https://github.com/clinthuffman/PAL)。 重要的安装信息，请参阅[使用性能分析的日志 (PAL) 工具](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)。  
   
  **运行日志分析器**  
   
@@ -74,6 +74,6 @@ ms.lasthandoff: 09/20/2017
   
  **请监视优先级**  
   
--   一致的监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序和基础结构是至关重要维护一个正常的环境。  
+-   BizTalk Server 应用程序和基础结构的一致监视是必要的维护一个正常的环境。  
   
--   定期评估并调整监视工具，随着时间的推移和作为你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序和基础结构更改。
+-   定期评估并调整监视工具，随着时间的推移和根据你的 BizTalk Server 应用程序和基础结构变化。

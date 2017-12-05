@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83a06aa7ca1ee4e37c29083ac38f5285565b7325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6396d4607e93298961e6691ded2ca8d4566d819c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a>如何为 XML 消息创建架构
 有多种方法用于创建 BizTalk 消息架构。 本主题提供这些方法的某些的分步说明。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
-3.  在**添加新项- \<* BizTalk ProjectName*> * * 对话框中，在**模板**部分中，单击**架构**。  
+3.  在**添加新项- \<* BizTalk ProjectName*\>* * 对话框中，在**模板**部分中，单击**架构**.  
   
 4.  在**名称**框中，为架构中，键入一个名称，然后单击**添加**。  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在**解决方案资源管理器**，右键单击 BizTalk 项目，指向**添加**，然后单击**添加生成的项**。  
   
-2.  在**添加生成的项的\<* BizTalk ProjectName*> * * 对话框中，在**模板**部分中，单击**生成架构**，然后单击**添加**。  
+2.  在**添加生成的项的\<* BizTalk ProjectName*\>* * 对话框中，在**模板**部分中，单击**生成架构**，然后单击**添加**。  
   
 3.  在**生成架构**对话框中，在**文档类型**下拉列表中，选择**XDR 架构**， **DTD 架构**，或**格式正确的 XML**。  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
      从指定的文件，使用相同的名称作为扩展名为.xsd，该文件，并在 BizTalk 编辑器中打开生成新的架构。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理架构在项目中](../core/managing-schemas-within-projects.md)
+ [管理项目中的架构](../core/managing-schemas-within-projects.md)

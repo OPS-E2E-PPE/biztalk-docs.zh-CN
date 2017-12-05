@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2465ad10e6598a4b9e1afa88190de4c1711c1f86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b92c2165a84e5d539eac434ab140389c145b24b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sequence-group-nodes"></a>“顺序组”节点
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 在 BizTalk 编辑器中，你可以插入**序列组**节点包含必须出现在与中出现的顺序相同实例消息中其他节点**序列组**节点。 包含的节点必须是与 XML 元素对应的节点，但不能是与 XML 属性对应的节点。  
   
 > [!NOTE]
->  在 BizTalk 编辑器中，**序列组**节点表示默认情况下，使用字符串\<序列 > 架构树视图中。 如果引用设置为**序列组**节点，如 x，则它会表示为\<组： x > 架构树视图中。  
+>  在 BizTalk 编辑器中，**序列组**节点表示默认情况下，使用字符串\<序列\>架构树视图中。 如果引用设置为**序列组**节点，如 x，则它会表示为\<组： x\>架构树视图中。  
   
  你可能想要添加**序列组**若要声明全局元素组。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 ## <a name="see-also"></a>另请参阅  
--  [BizTalk 表示形式架构](../core/biztalk-representation-of-schemas.md)   
+-  [架构的 BizTalk 表示形式](../core/biztalk-representation-of-schemas.md)   
 -  [节点属性](../core/node-properties.md)   
 -  **序列组节点属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
 -  [如何设置节点属性](../core/how-to-set-node-properties.md)

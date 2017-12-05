@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6efa79822f6a5406db29c69b5ba0892a63bcc5f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc9afef7bdcfad84f105abda158c5ed5c6461619
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-a-bam-primary-import-database-reference"></a>如何禁用 BAM 主导入数据库引用
 管理员使用**禁用引用**命令以禁用对指定的 BAM 主导入数据库的引用。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm 禁用引用 TargetServer:\<目标服务器 >-TargetDatabase:\<目标数据库 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**，其中 **\<** *目标服务器* **>** 替换为在其上的 SQL server 名称指定的目标 BAM 主导入数据库\<*目标数据库*> 驻留。 按 **Enter**。  
+3.  在命令行提示符下键入以下内容： **bm 禁用引用 TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>[-Server:\<服务器\> ][-数据库：\<数据库\>]**，其中 **\<** *目标服务器* **\>** 由在其上通过将指定的目标 BAM 主导入数据库的 SQL server 的名称替换\<*目标数据库*\>驻留。 按 **Enter**。  
   
 ## <a name="see-also"></a>另请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

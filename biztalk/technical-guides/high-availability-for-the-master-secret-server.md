@@ -12,21 +12,21 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c8c18f394b800ffeee9994294b2d2dbf0cb3a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f366eb2827859f8d720c74e670808aebfb0665b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-the-master-secret-server"></a>主密钥服务器的高可用性
-即使你不使用的企业单一登录 (SSO) 功能用于将凭据和单一登录映射，SSO 是整体 Microsoft 的关键部分[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]基础结构，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 SSO 来帮助为端口的安全信息配置。 端口配置数据加密，并存储在 SSO 数据库中。 每个 BizTalk server 提供用于加密和解密的端口配置数据使用了 SSO 服务服务 (ENTSSO.exe)。  
+即使你不使用的企业单一登录 (SSO) 功能用于将凭据和单一登录映射，SSO 是整体 Microsoft BizTalk Server 基础结构，一个重要组成部分，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 SSO 来帮助为端口的安全信息配置。 端口配置数据加密，并存储在 SSO 数据库中。 每个 BizTalk server 提供用于加密和解密的端口配置数据使用了 SSO 服务服务 (ENTSSO.exe)。  
   
  当 SSO 服务启动时，它从主密钥服务器检索加密密钥。 此加密密钥称为主密钥。 主密钥服务器是另一个具有附加的子服务维护并分发主密钥的 SSO 服务。 检索主密钥后，SSO 服务将其缓存。 每隔 60 秒，SSO 服务主密钥将与同步主密钥服务器。  
   
  如果主密钥服务器失败，并且 SSO 服务将其刷新间隔之一检测故障，SSO 服务和服务器失败，包括凭据，解密之前运行的所有运行时操作将继续成功。 但是，您不能加密新凭据或端口配置数据。 因此，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境具有依赖关系的主密钥服务器的可用性。  
   
 ## <a name="making-the-master-secret-server-available"></a>确保主密钥服务器可用  
- SSO 系统的可用性，因此的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，很重要只要它在生成备份主密钥。 如果您丢失主密钥，则会丢失 SSO 系统使用该主密钥加密的数据。 有关备份主密钥的详细信息，请参阅[如何返回向上主密钥](http://go.microsoft.com/fwlink/?LinkID=151934)(http://go.microsoft.com/fwlink/?LinkID=151934) 中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ SSO 系统的可用性，因此的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，很重要只要它在生成备份主密钥。 如果您丢失主密钥，则会丢失 SSO 系统使用该主密钥加密的数据。 有关备份主密钥的详细信息，请参阅[如何返回向上主密钥](http://go.microsoft.com/fwlink/?LinkID=151934)(http://go.microsoft.com/fwlink/?LinkID=151934) BizTalk Server 帮助中。  
   
  主密钥服务器有两种可用方式：  
   
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      ![高度可用主密钥服务器](../core/media/tdi-highava-msscluster.gif "TDI_HighAva_MSSCluster")  
   
-     尽管此配置具备高可用性，但它仍需要其他硬件资源。 有关为 SSO 的高可用性安装选项的详细信息，请参阅[高可用性 SSO 安装选项](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) 中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+     尽管此配置具备高可用性，但它仍需要其他硬件资源。 有关为 SSO 的高可用性安装选项的详细信息，请参阅[高可用性 SSO 安装选项](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) BizTalk Server 帮助中。  
   
      本部分包括有关在上配置为高度可用的群集资源的 SSO 主密钥服务器的详细的信息[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]群集。  
   
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [群集主密钥服务器](../technical-guides/clustering-the-master-secret-server.md)  
+-   [聚类分析主密钥服务器](../technical-guides/clustering-the-master-secret-server.md)  
   
 -   [手动指定新主密钥服务器](../technical-guides/designating-a-new-master-secret-server-manually.md)  
   

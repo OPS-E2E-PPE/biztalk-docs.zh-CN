@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd19ff62c4597cfa75762a1a89ae8e60409096f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ee9994861772be8fabe04a04e9bb30111cc1bc4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-receive-data"></a>教程：使用 TIBCO Enterprise Message Service 的 BizTalk 适配器以接收数据
 您可以使用适用于 TIBCO Enterprise Message Service (EMS) 的 BizTalk 适配器从 TIBCO 系统接收数据。 本演练描述了对此进行说明的一个 SDK 示例。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
  本示例从文件夹提取 XML 文件，将该文件发送到业务流程，然后使用适用于 TIBCO Enterprise Message Service 的 BizTalk 适配器从 TIBCO 系统检索数据。 结果将写入一个 XML 文件。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>本示例旨在如何以及为何  
- 本示例在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中设计，它使用用于 TIBCO Enterprise Message Service 的 BizTalk 适配器以及 BizTalk 业务流程来说明基本功能。  
+ 此示例中，在 Visual Studio 中设计演示 BizTalk 适配器用于 TIBCO 企业消息服务与 BizTalk 业务流程的基本功能。  
   
 > [!NOTE]
 >  本示例假定您知道如何发送来自 TIBCO 的消息以供应用程序处理。  

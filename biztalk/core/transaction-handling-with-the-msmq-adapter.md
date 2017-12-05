@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eed4a3b38e4dd328fbbb6099b1bec2c1515b3e5d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1bea79413042ec99cfd1cbc5bc6dee500aef4ac4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transaction-handling-with-the-msmq-adapter"></a>使用 MSMQ 适配器处理的事务
 本部分将介绍事务在接收和发送时的工作方式。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
  使用 MSMQ 适配器，可以对发送和接收使用事务性功能。 在事务性发送中，适配器将累积消息，直到具有完整的一批消息。 然后，适配器将该批消息作为单个事务提交给本地消息队列服务。 如果提交失败，则适配器将尝试重新提交该批消息。 如果重新提交失败，则适配器将转至次要传输。  
   
 > [!NOTE]
->  适配器仅支持使用 Message Queuing 4.0 或更高版本对远程队列进行事务性读取。 在此方案中，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 和远程消息队列服务器必须运行 Message Queuing 4.0 或更高版本。  
+>  适配器仅支持使用 Message Queuing 4.0 或更高版本对远程队列进行事务性读取。 在此方案中 BizTalk Server 和远程消息队列服务器必须运行消息队列 4.0 或更高版本。  
   
  在事务性接收中，适配器将挂起失败消息，以便不丢失任何一个消息。 在事务性接收过程中，适配器会将消息添加到一批中，直至该批消息完整， 然后提交该批消息：  
   
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/20/2017
  如果在群集的 BizTalk 主机实例中运行 MSMQ 适配器接收处理程序，则应在同一个群集组中对 MSMQ 服务进行群集以支持本地事务性读取，因为 MSMQ 不支持远程事务性读取。 在 BizTalk 主机的群集实例中运行 MSMQ 适配器处理程序的详细信息，请参阅[在群集主机内运行适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用 MSMQ 适配器可靠消息传递](../core/reliable-messaging-with-the-msmq-adapter.md)
+ [使用 MSMQ 适配器实现可靠消息传送](../core/reliable-messaging-with-the-msmq-adapter.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e352eb3ffb5418d7d109b5c0f574689c67f969f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 374fc67f0a4b750aa1f797d57778f68347383736
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="applicationmanager-biztalk-server-sample"></a>ApplicationManager（BizTalk Server 示例）
 ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk 应用程序。  
@@ -39,7 +39,7 @@ ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk �
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\ApplicationManager  
+ \<*示例路径*\>\Admin\ExplorerOM\ApplicationManager  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -60,13 +60,13 @@ ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk �
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\ApplicationManager\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\ApplicationManager\bin\Debug  
   
 2.  运行文件 ApplicationManager.exe 提供以下两个有序命令行参数：  
   
-    -   **\<开始 &#124; 停止 >**第一个参数是要部署的应用程序执行的操作。  
+    -   **\<开始 &#124; 停止\>**第一个参数是要部署的应用程序执行的操作。  
   
-    -   **\<应用程序名称 >**第二个参数是部署的应用程序的名称。  
+    -   **\<ApplicationName\>** 第二个参数是部署的应用程序的名称。  
   
      例如：  
   
@@ -136,4 +136,4 @@ Issuing start command to MyBizTalkApp ...
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

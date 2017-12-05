@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 167d18f0eba624d62b03b3b0a5386fcac04e5b18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38320cc6877815ccbf7b078190a3c2be1c6f74b0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>运行预定义的路线上负载增加示例
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括预定义的 20 路线用例可以执行。 有关这些列表用例，请参阅[示例路线方案](../esb-toolkit/the-sample-itinerary-scenarios.md)。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
     position="0" serviceInstanceId="" />  
 ```  
   
- 在此业务流程服务**\<服务 >**元素指定直接绑定业务流程具有图 2 所示的筛选器属性。 请注意业务流程订阅仅对具有值的消息**Microsoft.Practices.ESB.Services.Transform**为**ServiceName**上下文属性、 值**挂起**为**ServiceState**上下文属性和值业务流程的**ServiceType**上下文属性。  
+ 在此业务流程服务**\<服务\>**元素指定直接绑定业务流程具有图 2 所示的筛选器属性。 请注意业务流程订阅仅对具有值的消息**Microsoft.Practices.ESB.Services.Transform**为**ServiceName**上下文属性、 值**挂起**为**ServiceState**上下文属性和值业务流程的**ServiceType**上下文属性。  
   
  ![筛选器表达式](../esb-toolkit/media/ch6-filterexpression.gif "Ch6 FilterExpression")  
   

@@ -12,17 +12,17 @@ caps.latest.revision: "40"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64899c184f8cbe405684387b8f1c2a6230204624
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61ce04c572c95a1a4e2433d6b046028468eca805
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-as2-processing"></a>AS2 处理的已知问题
-本部分包含的主题介绍 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] AS2 解决方案的已知问题。  
+本部分包含主题描述了与 BizTalk Server AS2 解决方案的已知的问题。  
   
 ## <a name="as2-processing-not-supported-on-64-bit-computers"></a>64 位计算机上不支持 AS2 处理。  
- 64 位计算机上不支持使用 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] AS2 解决方案。 AS2 处理只能在 32 位计算机上运行，或者在 64 位计算机上的 WOW64 仿真程序下运行。  
+ BizTalk Server AS2 解决方案不支持在 64 位计算机上。 AS2 处理只能在 32 位计算机上运行，或者在 64 位计算机上的 WOW64 仿真程序下运行。  
   
 ## <a name="the-as2-receive-pipelines-require-the-account-that-the-biztalk-isolated-host-instance-process-is-running-under-to-be-part-of-the-biztalk-application-users-group"></a>AS2 接收管道要求用于运行 BizTalk 独立主机实例进程的帐户应是 BizTalk Application Users 组的成员。  
  如果使用 AS2EdiReceive 或 AS2Receive 管道，则必须将运行 BizTalk 独立主机实例进程的用户帐户添加到 BizTalk Application Users 组中。 AS2EdiReceive 和 AS2Receive 管道在 BizTalk 独立主机实例进程中执行。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="use-of-unfolded-and-folded-http-line-headers"></a>使用展开和折叠的 HTTP 行标头  
  为了实现最大的互操作性，您应当为 AS2 消息使用展开的 HTTP 行标头。 信息服务 (IIS) 7.0 仅支持展开的 HTTP 标头。 IIS 6.0 支持折叠和展开的标头。 然而，并非所有系统都支持每行超过 80 个字符的标头，因此对于此类系统，应使用折叠行。  
   
- 在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中，AS2 的默认值为展开的 HTTP 行标头。  
+ BizTalk Server 中的 AS2 的默认值为展开的 HTTP 行标头。  
   
 ## <a name="party-resolution-can-be-affected-by-a-localized-name"></a>参与方解析可能会受到本地化名称的影响  
  在 BizTalk Server 对出站 AS2 消息执行参与方解析时，参与方解析可能会受到消息标头中本地化值的影响。 如果“AS2 属性”对话框的“作为 AS2 消息接收方的参与方”页中的 AS2-To 参与方属性默认设置为英文参与方名称，而 AS2 消息的 AS2-To 标头中的相应值设置为非英文名称，那么将找不到匹配项。  

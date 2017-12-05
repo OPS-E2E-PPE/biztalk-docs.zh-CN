@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2563c7f26d2beb0eba33173507989cc85aaabda1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6030c721207e5b7f2c9958a50758c0ed98097c8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-configuration"></a>表驱动循环配置
 按照以下步骤配置映射中的表驱动循环：  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **将一个多个表提取程序 functoid 添加到显示的网格页。** 添加任意多个**表提取程序**functoid 作为你需要为每个**表循环**functoid。 数**表提取程序**functoid 取决于目标架构中的字段数。 例如，如果你只有**AddressCode**在你源架构和 CompanyName、 地址、 市/县、 状态、 邮政编码和 AttentionName 目标架构中的，你需要添加六个**表提取程序**显示的网格逐页 functoid。  
   
--   **使用适当的输入配置表循环 functoid。** 首先，链接**表循环**functoid 到输入的实例记录或元素。 同时，还要将其链接到输出实例消息中的结构。 接下来，通过配置输入**配置\<Functoid > Functoid**对话框。 有关如何配置此属性的详细信息，请参阅[编辑 Functoid 属性和输入参数](../core/editing-functoid-properties-and-input-parameters.md)。 你输入的输入列表必须是全面且完整，因为这是将用于配置的数据**表 Functoid 网格**属性。 输入参数必须按以下方式定义：  
+-   **使用适当的输入配置表循环 functoid。** 首先，链接**表循环**functoid 到输入的实例记录或元素。 同时，还要将其链接到输出实例消息中的结构。 接下来，通过配置输入**配置\<Functoid\> Functoid**对话框。 有关如何配置此属性的详细信息，请参阅[编辑 Functoid 属性和输入参数](../core/editing-functoid-properties-and-input-parameters.md)。 你输入的输入列表必须是全面且完整，因为这是将用于配置的数据**表 Functoid 网格**属性。 输入参数必须按以下方式定义：  
   
     -   **第一个输入。** 第一个输入参数是指向输入实例消息记录或字段的链接。 **表循环**functoid 循环一次的记录或字段的每个实例。  
   
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
  [索引 Functoid](../core/index-functoid.md)   
  [迭代 Functoid](../core/iteration-functoid.md)   
  [循环 Functoid](../core/looping-functoid.md)   
- [记录计数 Functoid](../core/record-count-functoid.md)
+ [“记录计数”Functoid](../core/record-count-functoid.md)

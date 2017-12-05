@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efed30f3e65c4f58a060f67539672c95b3d6df59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36d3c923593fe9a9402a14012e93fccb274ecdb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a>若要完成 SQL 使用 BizTalk Server 中的特定任务的进程通知消息
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接收对 SQL Server 数据库表的更改的通知。 但是，该适配器仅向你发送通知某些记录已插入、 更新或删除某些数据库表中。 这些记录的任何后续处理必须由客户端应用程序本身进行处理。 本主题提供有关如何处理表根据从 SQL Server 数据库接收的通知的类型中记录的基于方案的说明。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 |绑定属性|Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|指定你想要执行的入站的操作。 若要接收通知消息，请将此设置为**通知**。|  
-|**NotificationStatement**|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程 >) 用于注册查询通知。 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|  
+|**NotificationStatement**|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程\>) 用于注册查询通知。 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|  
 |**NotifyOnListenerStart**|指定启动侦听器时，适配器是否发送到适配器客户端通知。|  
   
  有关这些属性的更完整说明，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。 有关如何使用的完整说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]若要从 SQL Server 接收通知，请阅读更多。  
@@ -166,7 +166,7 @@ ms.lasthandoff: 09/20/2017
   
      本主题中，将命名为变量**NotificationType**。  
   
--   创建要提取的值的 xpath 查询\<信息 > 标记。 Xpath 查询将如下所示：  
+-   创建要提取的值的 xpath 查询\<信息\>标记。 Xpath 查询将如下所示：  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -261,7 +261,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   因为**NotifyOnListenerStart**绑定属性设置为**True**，收到以下消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>SqlBinding</Source>   
@@ -274,7 +274,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   在员工表中插入一条记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -287,7 +287,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   更新员工表中的记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -300,7 +300,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   从员工表中删除一条记录。 你将收到类似于以下通知消息：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Delete</Info>   
       <Source>Data</Source>   

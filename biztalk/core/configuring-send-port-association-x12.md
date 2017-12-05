@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346a01cee16c2d6a2888f981b6573fc1a0d135b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d81eee157c84677470e542c5d4ee5f9bf2cb5df5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-send-port-association-x12"></a>配置发送端口关联（X12）
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用发送端口关联来解析传出 EDI 交换的协议。 通过匹配订阅该消息的发送端口与协议关联的发送端口，将 EDI 交换解析为协议。 本主题提供有关如何将发送端口与协议相关联的说明。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 >  如果同一发送端口与多个协议关联，BizTalk Server 将生成错误。  
   
 > [!IMPORTANT]
->  在 [!INCLUDE[prague](../includes/prague-md.md)]，该信息端口关联仅在协议级别完成。 但是，在 BizTalk Server 2009 中，发送端口与参与方级别关联。 为了向后兼容，**发送端口**都还可以使用页面的参与方属性一部分 (请参阅[配置常规参与方属性](../core/configuring-general-party-properties.md))。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。  
+>  在 BizTalk Server 中，仅在协议级别完成发送端口关联。 但是，在 BizTalk Server 2009 中，发送端口与参与方级别关联。 为了向后兼容，**发送端口**都还可以使用页面的参与方属性一部分 (请参阅[配置常规参与方属性](../core/configuring-general-party-properties.md))。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。  
   
 > [!NOTE]
 >  此处所述的设置同样适用于 HIPAA 交换。  

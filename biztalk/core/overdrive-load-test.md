@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- overdrive load test
-- LoadGen tool, overdrive load test
 ms.assetid: 0d16d0a8-4255-4f5a-86a2-26cc11bb9a70
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54ea40d17bdb59fa3fcdc2db31a18b3286b70659
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cff4592c58dd165a85d63666958721231cfcbd4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="overdrive-load-test"></a>Overdrive 负载测试
 本主题中的信息是指中所述的测试[测试方案的引擎测量 MST](../core/test-scenarios-for-measuring-mst-of-the-engine.md)。  
@@ -27,7 +24,7 @@ ms.lasthandoff: 09/20/2017
  使用负载生成工具 Loadgen 2007，你可以模拟 BizTalk Server 系统过载时的情况。  
   
 > [!NOTE]
->  LoadGen 2007 工具是可在下载[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841)。 此工具的以前版本，BizTalk Server 2004 负载生成工具是可在下载[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)。  
+>  下载[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)。 此工具的以前版本，BizTalk Server 2004 负载生成工具是可在下载[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)。  
   
  为了模拟连续的过载系统，将 LoadGen 2007 配置为每秒大约发送 410 条消息，比测量的最大可承受吞吐量每秒多出 120 条消息。  
   
@@ -48,4 +45,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [用于测量引擎 MST 测试方案](../core/test-scenarios-for-measuring-mst-of-the-engine.md)   
  [设置仪表板用于 BizTalk Server 性能优化](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)   
- [可持续的负载测试](../core/sustainable-load-test.md)
+ [可承受负载测试](../core/sustainable-load-test.md)

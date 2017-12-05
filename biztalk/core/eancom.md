@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f54f432ab1cf4638dfaccc58e90f6a74ad8b5216
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1155762a509a5754f6697dc6d25289e92903f6a3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="eancom"></a>EANCOM
-本主题列出了 [!INCLUDE[prague](../includes/prague-md.md)] 支持的 EANCOM 文档和版本。  
+本主题列出 EANCOM 文档和 BizTalk Server 支持的版本。  
   
 ## <a name="eancom"></a>EANCOM  
   
@@ -81,4 +81,4 @@ ms.lasthandoff: 09/20/2017
  [X12 事务集 504-999](../core/x12-transaction-sets-504-999.md)   
  [HIPAA 事务集](../core/hipaa-transaction-sets.md)   
  [EDIFACT 事务集应用错误确认 IFTRIN](../core/edifact-transaction-sets-aperak-iftrin.md)   
- [EDIFACT 事务集 IFTSAI WKGRRE](../core/edifact-transaction-sets-iftsai-wkgrre.md)
+ [EDIFACT 事务集 IFTSAI-WKGRRE](../core/edifact-transaction-sets-iftsai-wkgrre.md)

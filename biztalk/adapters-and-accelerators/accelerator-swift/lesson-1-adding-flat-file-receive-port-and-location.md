@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fcd41cd38074377fa179e3a414b278521c31f26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9856e0da6e8a4bc958b5fe08e0e1b5e87494531b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>第 1 课： 添加平面文件接收端口和位置
 接收端口始终具有添加接收端口时，必须配置关联的接收位置。 接收位置定义传入的消息并使用来处理该消息的管道的特定地址。  
@@ -46,9 +46,9 @@ ms.lasthandoff: 09/20/2017
   
 9. 在文件传输属性对话框中，单击**浏览**。  
   
-10. 在浏览文件夹对话框中，移动到**\<驱动器 >: \Labs\Inbound**文件夹，，然后单击**新建文件夹**。  
+10. 在浏览文件夹对话框中，移动到**\<驱动器\>: \Labs\Inbound**文件夹，，然后单击**新建文件夹**。  
   
-11. 创建**FlatFile**文件夹中的**\<驱动器 >: \Labs\Inbound**，然后单击**确定**。  
+11. 创建**FlatFile**文件夹中的**\<驱动器\>: \Labs\Inbound**，然后单击**确定**。  
   
 12. 在**文件掩码**框中，键入 **\*.txt**，然后单击**确定**。  
   

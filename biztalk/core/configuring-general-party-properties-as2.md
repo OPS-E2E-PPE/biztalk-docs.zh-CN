@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: deba3ae710b916552095ce66d53813797d8da8da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62d947baa1a3f9ea867f1b3a85a8b60129d31ee3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-general-party-properties-as2"></a>配置常规参与方属性（AS2）
 参与方或贸易合作伙伴表示业务关系中的一个参与组织。 参与方属性包含下列信息：  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 3.  上**发送端口**页**参与方属性**对话框框中，执行以下操作：  
   
     > [!NOTE]
-    >  在 [!INCLUDE[prague](../includes/prague-md.md)] 中，发送端口关联在协议级别执行。 **发送端口**作为一部分的参与方属性是只是为了向后兼容，会出现页面。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。 有关如何将发送端口与协议关联的详细信息，请参阅此处。  
+    >  在 BizTalk Server 中，在协议级别完成发送端口关联。 **发送端口**作为一部分的参与方属性是只是为了向后兼容，会出现页面。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。 有关如何将发送端口与协议关联的详细信息，请参阅此处。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  

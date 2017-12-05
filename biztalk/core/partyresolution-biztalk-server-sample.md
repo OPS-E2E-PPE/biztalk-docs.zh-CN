@@ -23,11 +23,11 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abf8944c3f55422189c0866608a3fd412dafe21d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be8d7e33cefd2272490bd2f01243ff03b0e7009a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution （BizTalk Server 示例）
 PartyResolution 示例演示了如何配合使用 BizTalk 业务流程与参与方解析以将消息路由到两个可能的收件人中的某一个。  
@@ -125,7 +125,7 @@ PartyResolution 示例演示了如何配合使用 BizTalk 业务流程与参与�
 -   生成 Shipper1Process.odx 和 Shipper2Process.odx 以从 SupplierProcess.odx 接收发货订单和发货通知，并将响应发送回 SupplierProcess.odx。 在这两个发运方业务流程中都将使用相关，且相关类型基于已升级的属性 PONo。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Orchestrations\PartyResolution\  
+ *\<示例路径\>*\Orchestrations\PartyResolution\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -311,4 +311,4 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
  [参与方解析管道组件](../core/party-resolution-pipeline-component.md)   
  [如何配置 MIME SMIME 编码器管道组件](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)   
  [如何配置 MIME SMIME 解码器管道组件](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)   
- [业务流程 （BizTalk Server 示例文件夹中）](../core/orchestrations-biztalk-server-samples-folder.md)
+ [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

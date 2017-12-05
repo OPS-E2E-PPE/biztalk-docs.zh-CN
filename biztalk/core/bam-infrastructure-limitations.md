@@ -7,25 +7,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BAM, limitations
-- infrastructure, BAM
-- BAM, objects
-- BAM, infrastructure
-- BAM, naming conventions
 ms.assetid: e33d2f6c-8d26-4a76-810e-85d810cfdbee
 caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bfb8751e42918a64f13d35685d7d73b4f2406ff8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e42b2a6af04c2ff5d76d8ffb9489dfc2b92b6689
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-infrastructure-limitations"></a>BAM 基础结构限制
-BAM 基础结构具有以下的设计限制，对于此版本的[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]:  
+BAM 基础结构具有以下设计此版本的 BizTalk Server 的限制：  
   
 -   实时聚合 (RTA) 不支持 MIN 函数和 MAX 函数。  
   
@@ -50,7 +44,7 @@ BAM 基础结构具有以下的设计限制，对于此版本的[!INCLUDE[btsBiz
 |OLAP 中的维度级别|64|OLAP 限制，并且每个多维数据集最多包含 256 个级别。|  
 |RTA 视图中的维度级别|14 个维度级别|BAM 为所有维度级别创建一个索引，并且 SQL Server 索引最多只能针对 16 个列创建，而 BAM 保留两个列作为系统列。|  
 |RTA 视图中的度量值、隐藏度量值（默认计数、AVG 的隐藏 SUM 度量值）和维度级别|1,024|在 SQL 表/视图中列数最多为 1,024。|  
-|活动视图|63|配置警报后，[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] 下的活动视图将限制为 63 个。|  
+|活动视图|63|当您配置一个警报时，你被限制为 63 个下 SQL Server。|  
   
 ## <a name="bam-object-names"></a>BAM 对象名称  
  下表列出 BAM 定义架构和 Microsoft Excel 电子表格中对象名称的限制。  

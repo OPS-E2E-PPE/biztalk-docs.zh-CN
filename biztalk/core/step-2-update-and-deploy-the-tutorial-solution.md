@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca9f035eb97190c5a8999f73138d371e7dfddf98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67fd3d34f25dd409121a3a21c9eb419b4aadce6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-update-and-deploy-the-tutorial-solution"></a>步骤 2： 更新和部署教程解决方案
 ![步骤 2 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-2of9.gif "Step_2of9")  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在控制台树中的**Inbound_EDI 属性页**对话框中，选择**部署**并在**服务器**字段确保输入你的计算机名。  
   
-5.  在控制台树中，单击**签名**，然后选择**对程序集签名**。 有关**选择强密钥名称文件**，选择\<**新建...**>，然后输入**keyfile.snk**作为**密钥文件名称**。 清除**保护我使用密码的密钥文件**，然后单击**确定**。  
+5.  在控制台树中，单击**签名**，然后选择**对程序集签名**。 有关**选择强密钥名称文件**，选择\<**新建...** \>并输入**keyfile.snk**作为**密钥文件名称**。 清除**保护我使用密码的密钥文件**，然后单击**确定**。  
   
 6.  关闭**Inbound_EDI 属性页**对话框。  
   
@@ -59,10 +59,10 @@ ms.lasthandoff: 09/20/2017
   
 4.  在解决方案资源管理器，右键单击**Inbound_EDI**项目，然后选择**部署**部署项目。  
   
-5.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk Server 管理**， **BizTalk 组**，**应用程序**， \< **所有项目**>，然后选择**资源**。 验证**Inbound_EDI**列出的程序集。  
+5.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**BizTalk Server 管理**， **BizTalk 组**，**应用程序**， \< **所有项目**\> ，然后选择**资源**。 验证**Inbound_EDI**列出的程序集。  
   
 ## <a name="next-steps"></a>后续步骤  
  为你的组织配置方和业务配置文件 (**OrderSystem**) 中所述，[步骤 3： 为你的组织配置方和业务配置文件](../core/step-3-configure-a-party-and-business-profile-for-your-organization1.md)  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 1： 准备 EDI 接口开发人员教程](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)
+ [步骤 1：EDI 接口开发人员教程的准备工作](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)

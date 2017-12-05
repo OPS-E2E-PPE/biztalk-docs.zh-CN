@@ -15,18 +15,18 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1686932099baa98f36af9ef8a2ca384f7f27a0ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4862e347fd74c1431f253a1cccedbd844c97c63c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-modify-btswebsvcwizexeconfig"></a>如何修改 BTSWebSvcWiz.exe.config
-你可以启用跟踪来调试 BizTalk Web 服务发布向导通过对取消注释\<添加 > BTSWebSvcWiz.exe.config 文件中的节点。 如果跟踪侦听器节点是取消注释和*initializeData*参数不变，BizTalk Server 到当前目录中写入输出的跟踪文件。 或者，设置跟踪级别的**ApplicationTraceSwitch**并设置跟踪文件的路径名称。  
+你可以启用跟踪来调试 BizTalk Web 服务发布向导通过对取消注释\<添加\>BTSWebSvcWiz.exe.config 文件中的节点。 如果跟踪侦听器节点是取消注释和*initializeData*参数不变，BizTalk Server 到当前目录中写入输出的跟踪文件。 或者，设置跟踪级别的**ApplicationTraceSwitch**并设置跟踪文件的路径名称。  
   
  BTSWebSvcWiz.exe.config 位于与 BTSWebSvcWiz.exe 文件所在相同的目录中，通常是 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
   
- 以下是一种取消注释的\<添加 > BTSWebSvcWiz.exe.config 文件中的节点：  
+ 以下是一种取消注释\<添加\>BTSWebSvcWiz.exe.config 文件中的节点：  
   
 ```  
 <system.diagnostics>  

@@ -12,16 +12,16 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 068eddfdd2138fbc92ad4821b2eaf9491ad39000
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c6a85e8e98e7ea2874935656553b18abac7ca88a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包的体系结构
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持和实现松散耦合的消息传递环境，它使更轻松地生成基于消息的企业应用程序的组件进行互操作的一系列组成。 服务和组件自然地划分为以下的七种类别：  
   
--   **Web 服务。** 这些公开内部服务，如路线处理、 异常管理、 解析终结点以及地图，[!INCLUDE[prague](../includes/prague-md.md)]操作、 通用、 描述、 发现和集成 (UDDI) 互操作和转换消息内容。  
+-   **Web 服务。** 这些公开内部服务，例如路线处理、 异常管理解析终结点和地图，BizTalk 服务器操作、 通用、 描述、 发现和集成 (UDDI) 进行互操作，以及消息内容的转换.  
   
 -   **路线服务。** 其中包括用于执行转换和路由消息的基于业务流程的和基于消息的服务。 你可以在路线处理过程中创建参与的自定义服务。 其中包括用于执行转换和路由消息的基于业务流程的和基于消息的服务。 你可以在路线处理过程中创建参与的自定义服务。  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **ESB 管理门户。** 此示例应用程序提供注册表设置、 异常中介，警报通知和分析。  
   
- 这些组件和服务的许多依赖于由实现的功能[!INCLUDE[prague](../includes/prague-md.md)]，如业务流程、 转换和业务规则引擎和消息框数据库。 图 1 显示的类别、 组件和服务中每个类别，通常发生的示意图和核心 BizTalk Server 系统组件由[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
+ 这些组件和服务的许多依赖于由 BizTalk Server 中，如业务流程、 转换和业务规则引擎和消息框数据库实现的功能。 图 1 显示的类别、 组件和服务中每个类别，通常发生的示意图和核心 BizTalk Server 系统组件由[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
   
  ![ESB 体系结构](../esb-toolkit/media/esbarchitecture.gif "ESBArchitecture")  
   

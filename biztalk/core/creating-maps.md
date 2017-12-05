@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8831e0d76c2bb4483bc1012ed7345c760b87bdf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00121334b076ed4c705e7b440c75c1347e4208c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-maps"></a>创建映射
 在选项卡上显示 BizTalk 映射程序的主要用户界面[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编辑窗口。 此显示分成三个窗格。 左窗格以树视图的形式显示源架构。 右窗格以树视图的形式显示目标架构。 中间窗格以多个页面的形式显示网格。 为了指示要如何将数据从源架构映射到目标架构，需在要映射的记录和字段之间绘制线条。 这些行被称为*链接*，并且它们是指定的数据的映射的最基本方法。 有关链接记录和字段的详细信息，请参阅[Maps 中的链接](../core/links-in-maps.md)。  
@@ -51,10 +51,10 @@ ms.lasthandoff: 09/20/2017
   
 -   [管理项目中的映射](../core/managing-maps-within-projects.md)  
   
--   [使用链接以指定记录和字段映射](../core/using-links-to-specify-record-and-field-mappings.md)  
+-   [使用链接指定记录和字段映射](../core/using-links-to-specify-record-and-field-mappings.md)  
   
 -   [使用 Functoid 创建更复杂的映射](../core/using-functoids-to-create-more-complex-mappings.md)  
   
 -   [如何创建没有映射图](../core/how-to-create-a-map-without-maps.md)  
   
--   [管理默认映射器行为使用\<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md)
+-   [管理默认映射器行为使用\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)

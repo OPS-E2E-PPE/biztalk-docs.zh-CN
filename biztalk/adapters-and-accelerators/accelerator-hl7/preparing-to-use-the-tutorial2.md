@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a957bd18fd6defad40d6b04e91bc3028802da1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8688e84f7913dbc32a0629d21f29ed2578c43b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="preparing-to-use-the-tutorial"></a>准备使用本教程
 在使用本教程之前，你需要创建一个 ADT^A03.txt 文件。  
@@ -42,6 +42,6 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  应该有五个中行的.txt 文件中，有一个"MSH"、"EVN"、"PID"、"PD1"和"PV1"开头。 你将需要删除"PID"行和"PD1"中的空格。 如有必要，请关闭记事本中的自动换行。  
   
-2.  将文件另存**ADT^A03.txt**中\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > HL7\SDK\End 端到端的快捷键教程文件夹，然后关闭记事本。  
+2.  将文件另存**ADT^A03.txt**中\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>为 HL7\SDK\End 端到端教程文件夹，然后关闭记事本的快捷键。  
   
  继续执行[步骤 1： 创建和部署标头和确认架构](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)。

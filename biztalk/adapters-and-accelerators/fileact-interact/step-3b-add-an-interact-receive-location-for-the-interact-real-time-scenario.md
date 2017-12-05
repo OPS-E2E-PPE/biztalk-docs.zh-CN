@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9912e47f56dcf9c8ccc42af944616858ec9b93fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa1a98f97cba9f46b43b92128a6585ad18afb894
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario"></a>步骤 3B： 添加交互接收位置交互实时方案
 完成[步骤 3A： 对于交互的实时方案中添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)在开始此步骤之前。
@@ -41,14 +41,14 @@ ms.lasthandoff: 09/20/2017
     |------------------|--------------------|  
     |**密码**|键入用于连接到压降的密码。 有关详细信息，请参阅压降帮助。|  
     |**用户名**|键入用于连接到压降的用户名称。|  
-    |**应用程序名称**|键入的服务器\<*应用程序接口名称*> 压降框中路由组。|  
+    |**应用程序名称**|键入的服务器\<*应用程序接口名称*\>压降框中路由组。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**LogMessageBody**|从下拉列表中选择**FALSE**。 **注意：**如果设置为 TRUE 时，它将保留跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**消息格式**|从下拉列表中选择**InterActMessage**。|  
     |**MemberRef**|从下拉列表中选择**ResponseHeader**。|  
     |**不可否认性指示器**|从下拉列表中选择**FALSE**。|  
-    |**响应方**|键入相应\< *ResponderDN*> 基于 SWIFT 你设置的字符串。|  
+    |**响应方**|键入相应\< *ResponderDN* \>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|从下拉列表中选择**FALSE**。|  
     |**超时**|应发生类型适当数量的连接超时前的秒数。|  
     |**获取队列**|将此属性的默认值。 此属性用于存储转发方案。|  
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 3A： 添加一个文件接收位置交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [步骤 3c： 添加要捕获的 Sw:HandleRequest 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
  [步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)   
- [步骤 3E： 添加的交互发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)
+ [步骤 3E：为 InterAct 实时方案添加 INTERACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)

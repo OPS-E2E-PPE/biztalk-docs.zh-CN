@@ -16,11 +16,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ae5007816e606f15a74c54669be10c53fe530da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4448182792cd6f6f5f7e611cd9a9bd54c75a0d05
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-an-http-receive-location"></a>如何配置 HTTP 接收位置
 您可以通过编程方式或使用 BizTalk Server 管理控制台来设置 HTTP 接收位置适配器变量。 如果未设置接收位置的属性，则使用 BizTalk Server 管理控制台中设置的默认接收处理程序值。  
@@ -77,10 +77,10 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**虚拟目录以及 ISAPI 扩展**|指定虚拟目录的名称，在该目录中，可发布 HTTP/HTTPS 接收位置所接收的消息。 虚拟目录包含接收位置 DLL 的名称和可选查询字符串。 虚拟目录名称的示例如下：<br /><br /> /\<虚拟目录 > /BTSHTTPReceive.dll<br /><br /> /\<虚拟目录 > / BTSHTTPReceive.dll？购买 %20order<br /><br /> 此位置不能包含多个 BTSHTTPReceive.dll ISAPI 扩展（包括所有子文件夹）。<br /><br /> **类型：**字符串<br /><br /> **最大长度：** 256**注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
+    |**虚拟目录以及 ISAPI 扩展**|指定虚拟目录的名称，在该目录中，可发布 HTTP/HTTPS 接收位置所接收的消息。 虚拟目录包含接收位置 DLL 的名称和可选查询字符串。 虚拟目录名称的示例如下：<br /><br /> /\<虚拟目录\>/BTSHTTPReceive.dll<br /><br /> /\<虚拟目录\>/BTSHTTPReceive.dll？购买 %20order<br /><br /> 此位置不能包含多个 BTSHTTPReceive.dll ISAPI 扩展（包括所有子文件夹）。<br /><br /> **类型：**字符串<br /><br /> **最大长度：** 256**注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
     |**公共地址**|指定此接收位置的完全限定 URI。 此属性的值是服务器名和虚拟目录的组合。 BizTalk 消息引擎将向外部合作伙伴公开此地址。 指定的 URI 应指定在向 BizTalk Server 发送消息时贸易合作伙伴要连接到的公共网站 URL。<br /><br /> 此信息是可选的，BizTalk Server 并不使用。 管理员可使用此参数记录与接收位置相关联的公共 URL。<br /><br /> **类型：**字符串<br /><br /> **最小长度：** 0<br /><br /> **最大长度：** 256|  
     |**返回内容的类型**|指定接收位置发回客户端的 HTTP 响应消息的内容类型。 此属性仅对请求响应接收位置有效。<br /><br /> **默认值：**文本/xml<br /><br /> **类型：**字符串<br /><br /> **最小长度：** 0<br /><br /> **最大长度：** 256|  
-    |**环回**|定义此位置上接收的请求消息是路由到发送端口，还是路由回此接收位置以作为响应发送。 此属性仅对请求响应接收位置有效。<br /><br /> **默认值：** False<br /><br /> **类型：**布尔|  
+    |**Loopback**|定义此位置上接收的请求消息是路由到发送端口，还是路由回此接收位置以作为响应发送。 此属性仅对请求响应接收位置有效。<br /><br /> **默认值：** False<br /><br /> **类型：**布尔|  
     |**成功 （仅一种方法的端口） 返回的相关句柄**|定义在操作成功时，接收位置将向客户端发送已提交消息在 HTTP 响应上的相关标记。 此属性仅对单向接收位置有效。<br /><br /> **默认值：** True<br /><br /> **类型：**布尔|  
     |**在使用单一登录**|表示使用企业单一登录。<br /><br /> **默认值：** False<br /><br /> **类型：**布尔**注意：**如果启用此选项，则还必须启用该选项以**允许票证**在**SSO 系统**级别。 **允许票证**选项是可在配置**选项**选项卡**SSO 系统属性**对话框中提供**SSO 管理**MMC 接口。 如果启用此选项与**允许票证**选项**SSO 系统**级别未启用，则此接收任何消息接收位置将被挂起。|  
     |**挂起失败的请求**|指示是否挂起入站处理失败的 HTTP 请求。<br /><br /> 值为 False 表示将放弃失败的请求并向客户端发送错误状态代码（401 或 500）。<br /><br /> 值为 True 指示挂起失败的请求并将"已接受"状态代码 (200) 发送到的客户端单向接收端口或"错误"状态代码 (500) 的客户端到双向接收端口。<br /><br /> **默认值：** False<br /><br /> **类型：**布尔|  

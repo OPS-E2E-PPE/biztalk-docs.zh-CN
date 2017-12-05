@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3b84bf68e89478d4f3d82dfdaf47e38c0aef90b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9395cb3895675e586576088f3d257dbf4115948f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="data-stored-for-edi-status-reports"></a>为 EDI 状态报告存储的数据
 在 EDI 状态报告提供了两个级别的报告： 首先如果**打开 ON Reporting**属性选择一个协议，并且第二个如果**存储事务集/负载 reporting**属性为协议选择。 这些属性位于**常规属性**页**常规**选项卡中**协议属性**对话框。  
@@ -65,8 +65,8 @@ ms.lasthandoff: 09/20/2017
 |||  
 |-|-|  
 |信息|字段或值|  
-|ApplicationSender|(GS02 或\<UNG2.1(UNG2.2) >|  
-|ApplicationReceiver|GS03 或\<UNG3.1(UNG3.2) >|  
+|ApplicationSender|(GS02 或\<UNG2.1(UNG2.2)\>|  
+|ApplicationReceiver|GS03 或\<UNG3.1(UNG3.2)\>|  
 |GroupDate|GS04 或 UNG2.4|  
 |GroupTime|GS05 或 UNG2.5|  
 |TransactionSetId|ST01 或 UNH2.1 （字符串）|  
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [对于 EDI 和 AS2 状态报表存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md)   
  [为批处理状态报表存储的数据](../core/data-stored-for-batching-status-reports.md)   
- [AS2 状态报告为存储的数据](../core/data-stored-for-as2-status-reports.md)
+ [为 AS2 状态报告存储的数据](../core/data-stored-for-as2-status-reports.md)

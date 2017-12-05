@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ea715e92f7bfaa2f9d3baf3e82223f95328e3da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性和 Microsoft Operations Framework
 将 Microsoft Operations Framework (MOF) 流程模型应用于计划和实施高度可用的 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案，可帮助您确保在版本生命周期的不同阶段具有适当的流程。 通过查看在所有生命周期阶段其中高可用性的表面，你可以安装、 维护和故障排除的更方便您环境中的可用性问题。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 -   确定与你的合作伙伴或客户的服务级别协议是否需要特定级别的可用性、 运行时间、 和负载处理功能。  
   
--   如果要从升级[!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)]或[!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)]到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，你必须确定你现有的硬件是否将满足的最低硬件要求[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]和服务级别协议的需求。  
+-   如果要从升级[!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)]或[!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)]到 BizTalk Server 中，你必须确定是否将满足你现有的硬件，BizTalk Server 的最低硬件要求和服务级别协议的需求。  
   
 -   确定你的业务需求的 BizTalk Server 数据库的最佳群集配置。 运行时进程写入到 BizTalk 管理数据库、 MessageBox 数据库、 跟踪 Analysis Services 数据库、 BAM 分析数据库、 BAM 星型架构数据库、 BAM 主导入数据库和 BAM 存档数据库。 因此，这些数据库是特别重要，如果灾难发生，并且确定群集的数据库时，必须具有更高的优先级。 仅用户或工具写入其他数据库。 对于 MessageBox 数据库中，你可以考虑尽量减少所需的硬件的主动/主动/主动/被动四台服务器群集。  
   
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
  在服务连续性函数期间必须检查哪些高可用性配置以实现，若要确保你继续为客户提供他们期望甚至计划或非计划停机时间时的服务。 非计划停机时间的示例包括硬件故障或自然灾害。  
   
 ## <a name="see-also"></a>另请参阅  
- [示例 BizTalk Server 高可用性方案](../core/sample-biztalk-server-high-availability-scenarios.md)
+ [BizTalk Server 高可用性示例方案](../core/sample-biztalk-server-high-availability-scenarios.md)

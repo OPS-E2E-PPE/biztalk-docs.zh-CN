@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92737ca115e95c5cd66fdf0e03cf05296ef16088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af6365c640cbc51053d02822141915cbd4cad828
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="programmatically-create-the-file-receive-location-or-send-port"></a>以编程方式创建文件接收位置或发送端口
 如何创建一个文件接收端口，并以编程方式发送端口。 若要使用[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，请转到[配置文件适配器](../core/configure-the-file-adapter.md)。
@@ -50,8 +50,8 @@ BizTalk 资源管理器对象模型公开了**IReceiveLocation**包含的配置�
    <FileMask vt="8">*.xml</FileMask>  
    <FileNetFailRetryCount vt="19">5</FileNetFailRetryCount>  
    <FileNetFailRetryInterval vt="19">5</FileNetFailRetryInterval>  
-   \<Username vt=”8”>MyDomain\MyUsername</Username>  
-   \<Password vt=”8”>PASSWORD</Password>  
+   <Username vt=”8”>MyDomain\MyUsername</Username>  
+   <Password vt=”8”>PASSWORD</Password>  
 </CustomProps>  
   
 ```  

@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50b4aaa0187c10038dde907fa8b5fa8c595d2847
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66ef0c7200c69cd69a72a5743ca8f14a8950b17d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a>如何设置活动时段的持续时间
 管理员使用**集 activitywindow**命令以设置指定的活动的持续时间。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
   
-3.  类型**bm 集 activitywindow 的活动：\<活动名称 >-TimeLength:\<整数 >-时间单位： 月 &#124; 天 &#124;小时 &#124;分钟**。  
+3.  类型**bm 集 activitywindow 的活动：\<活动名称\>-TimeLength:\<整数\>-时间单位： 月 &#124; 天 &#124;小时 &#124;分钟**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

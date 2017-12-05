@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79cfe3ec0a2fa1fdd8f6241d1be9326a396b95cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 193b47e5c4f918bacbf1b573d6aaed5326d7cfdc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="admin-operationsom-biztalk-server-samples-folder"></a>管理员-OperationsOM （BizTalk Server 示例文件夹中）
-Microsoft[!INCLUDE[prague](../includes/prague-md.md)]包括在其软件开发工具包 (SDK) 的 Admin\OperationsOM 文件夹中的示例。 本部分详细介绍了每个 BizTalk 操作对象模型管理示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  
+Microsoft BizTalk Server 包括在其软件开发工具包 (SDK) 的 Admin\OperationsOM 文件夹中的示例。 本部分详细介绍了每个 BizTalk 操作对象模型管理示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  
   
 > [!WARNING]
 >  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  

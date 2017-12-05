@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b823326a0cc486dcf3f95dc70a6249d4d719d133
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ca80f44b9f1244a340e9a9892593ae42ba4b4e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-throttling-performance-counters"></a>主机阻止性能计数器
 本部分将介绍用于测量影响主机阻止的系统参数的性能监视器计数器。 以下性能计数器进行访问每个主机实例下**BizTalk:Message 代理**性能对象类别：  
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加计数器**对话框中，从**可用计数器**列表中，展开**BizTalk:Message 代理**性能计数器对象，然后选择要将的计数器监视。  
   
-4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**>。  
+4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**\>。  
   
 5.  添加计数器后, 单击**确定**。  
   
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [限制的设计建议](../core/throttling-design-recommendations.md)   
  [BizTalk Server 如何实施限制的主机](../core/how-biztalk-server-implements-host-throttling.md)   
- [设置仪表板用于 BizTalk Server 性能优化](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)
+ [使用设置仪表板进行 BizTalk Server 性能调整](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

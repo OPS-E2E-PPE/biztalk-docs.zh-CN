@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20b0f8db3f1b7549f6189b348b7353d6dac159a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ba487bcd5d6d245c979dec903613465ae54f8d9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-performance-issues-with-the-oracle-database-adapter"></a>解决与 Oracle 数据库适配器的性能问题
 本部分讨论如何使用故障排除方法来解决在使用时可能遇到的性能问题[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
  **解决方法**  
   
- 安装.NET \<*版本*> (x64) 64 位计算机上的。  
+ 安装.NET \<*版本*\> (x64) 64 位计算机上的。  
   
 ## <a name="see-also"></a>另请参阅  
 [解决 Oracle 数据库 adapter.md](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)

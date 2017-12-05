@@ -21,11 +21,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2939fd0594c878e3a5f1416d0b1e871b78ba3858
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ce76f2ca16cca44af1658983c49d11f6931e931
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manage-password-synchronization"></a>如何管理密码同步
 使用 MMC 管理单元或 SSOMANAGE 命令行实用工具可以启用或禁用 SSO 功能，并显示当前 SSO 数据库设置。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage-启用**，然后按 enter 键。  
   
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage-禁用**，然后按 enter 键。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage displaydb** ，然后按 enter 键。  
   

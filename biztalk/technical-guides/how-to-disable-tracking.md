@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31476c3a538427a8c582533fbb0d7ad0418e3a0f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ae1e7ad95aa8be661e283f5671d3443615c7033a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-tracking"></a>如何禁用跟踪
 本主题介绍如何禁用跟踪使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 你可以在业务流程的运行时，配置各种跟踪选项、 发送端口、 接收端口和管道使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 您随时可以在不中断业务流程的情况下更改某项的跟踪选项。  
@@ -138,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  执行以下操作之一：  
   
-    -   若要禁用跟踪的默认值之一 BizTalk 管道，展开\<所有项目 >。  
+    -   若要禁用跟踪的默认值之一 BizTalk 管道，展开\<所有项目\>。  
   
     -   若要禁用跟踪已部署到 BizTalk 应用程序的自定义管道，展开包含管道的应用程序。  
   
@@ -157,4 +157,4 @@ ms.lasthandoff: 09/20/2017
     |**在管道处理后的消息**|清除此复选框可禁用保存和跟踪通过管道发送的消息正文，其中包含元数据，例如 Url 和升级的属性。 如果是接收管道，则消息正文部分是提交给 MessageBox 数据库的已处理消息（它可以是 XML，这取决于相应的应用程序）。 使用时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]映射，如果这是发送管道，跟踪发生之前处理的出站映射。<br /><br /> 此复选框才可用才**消息发送和接收事件**选择。|  
   
 ## <a name="see-also"></a>另请参阅  
- [保持性能](../technical-guides/maintaining-performance.md)
+ [维护性能](../technical-guides/maintaining-performance.md)

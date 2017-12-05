@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4071fd04b89681f9f7d6948798dd665b96a0c1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4489e463257f811fe2c71efea49880940751c66a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="repairing-a-message"></a>修复消息
 本部分介绍如何修复未通过验证的消息。  
@@ -28,9 +28,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击* * \<*部门名称*>**_**Repairer * *。  
+3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>**_**Repairer * *。  
   
-4.  在\<*部门名称*> _Repair 窗口中，单击**收件箱**。  
+4.  在\<*部门名称*\>_Repair 窗口中，单击**收件箱**。  
   
 5.  在收件箱窗口中，指向此消息的标题，单击消息标题中，右侧的箭头，然后单击**在 Microsoft Office InfoPath 中编辑**。  
   
@@ -74,4 +74,4 @@ ms.lasthandoff: 09/20/2017
   
 16. 关闭[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗口。  
   
-17. 在 MRSR 站点中，单击**文档**。 如果你单击**接受**若要接受步骤 11 中的更改，请确认*\<部门名称 >*_ReKeyVerify 文档库包含仅修复的消息。 如果你单击**拒绝**若要拒绝步骤 11 中的更改，请验证 A4SWIFT_Outbox 文档库包含刚刚修改的消息。
+17. 在 MRSR 站点中，单击**文档**。 如果你单击**接受**若要接受步骤 11 中的更改，请确认*\<部门名称\>*_ReKeyVerify 文档库包含仅修复的消息。 如果你单击**拒绝**若要拒绝步骤 11 中的更改，请验证 A4SWIFT_Outbox 文档库包含刚刚修改的消息。

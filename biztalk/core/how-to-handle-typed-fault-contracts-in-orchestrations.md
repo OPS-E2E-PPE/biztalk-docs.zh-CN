@@ -17,14 +17,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89de313960324ea39ffc8e4eaa4905849dc38b8a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a7643c4a39785018368572d721eed3ef6545c6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>如何在业务流程中处理类型化错误协定
-本主题介绍从业务流程内部使用 WCF 服务时应如何处理类型化错误协定。 若要处理在业务流程中的类型化的错误异常，你使用的 WCF 服务必须具有**FaultContractAttribute**应用于服务操作; 因此，可以通过使用引发错误**FaultException**\<T > T 可在其中的任何有效的数据协定或通过 WCF 服务的可序列化类型。  
+本主题介绍从业务流程内部使用 WCF 服务时应如何处理类型化错误协定。 若要处理在业务流程中的类型化的错误异常，你使用的 WCF 服务必须具有**FaultContractAttribute**应用于服务操作; 因此，可以通过使用引发错误**FaultException**\<T\>其中 T 可以是任何有效的数据协定或通过 WCF 服务的可序列化类型。  
   
 ## <a name="procedures"></a>过程  
   
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在你的 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目，请在解决方案资源管理器，右键单击你的项目，单击**添加**，然后单击**添加生成的项**。  
   
-2.  在**添加生成的项的\<** *项目名称* **>** 对话框中，在**模板**部分中，选择**使用 WCF 服务**，然后单击**添加**。  
+2.  在**添加生成的项的\<** *项目名称* **\>** 对话框中，在**模板**部分中，选择**使用 WCF 服务**，然后单击**添加**。  
   
 3.  上**欢迎 BizTalk WCF 服务使用向导**页上，单击**下一步**。  
   

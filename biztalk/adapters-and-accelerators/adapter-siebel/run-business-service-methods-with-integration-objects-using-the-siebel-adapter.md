@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a9edb9a169d35a3f4709a8896ef3adfe404e775
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 132c269d347f67cbad3038bcbbb8e62d29112b6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a>调用具有集成对象使用 Siebel 适配器的业务服务方法
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]使适配器客户端调用使用集成的对象的业务服务方法。 这些业务服务通常有 IN、 输出、 或的"层次结构"数据 IN OUT 参数键入发送或接收集成对象数据。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 -   **创建一个与集成对象的架构一致的 XML 消息**。 为示例帐户集成对象生成的示例 XML 消息如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="UTF-16"?>  
+    <?xml version="1.0" encoding="UTF-16"?>  
     <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
       <ListOfSampleAccount>  
         <Account>  
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
       <InsertRequestRecord />   
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  
@@ -97,7 +97,7 @@ ms.lasthandoff: 09/20/2017
      Siebel 上面的请求消息的响应如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter/Operation">  
       <InsertResult>  
         <ErrorCode xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">0x0</ErrorCode>   
@@ -110,7 +110,7 @@ ms.lasthandoff: 09/20/2017
       </InsertResult>  
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  

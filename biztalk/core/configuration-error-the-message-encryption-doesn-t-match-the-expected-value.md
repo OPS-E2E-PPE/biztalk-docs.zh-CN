@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b17460c4dcd6f9d2a8c18e5e7284cd36940d6820
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4920a4c26cb60c3215f58297445dc49551b1befe
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuration-error-the-message-encryption-doesn39t-match-the-expected-value"></a>配置错误。 消息加密不 &#39; t 匹配预期值
 ## <a name="details"></a>详细信息  
@@ -37,6 +37,6 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请验证是否已对传入的 AS2 消息进行加密（如果在参与方设置中指定了加密），或者验证是否未对传入的 AS2 消息进行加密（如果在参与方设置中指定了不启用加密）。 执行以下操作之一：  
   
-1.  如果**替代选择入站的消息属性属性**中作为 AS2 属性对话框中的 AS2 消息发送方页方[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，**应对消息进行加密**选择属性，但未加密消息，发送消息的组织联系并要求他们来加密消息，并重新发送它。 也可以清除**应对消息进行加密**属性，或**重写入站的消息属性**属性。  
+1.  如果**替代选择入站的消息属性属性**中为在 BizTalk Server 管理控制台中，AS2 属性对话框中的 AS2 消息发送方页面方**应对消息进行加密**选择属性，但未加密消息，发送消息的组织联系并要求他们来加密消息，并重新发送它。 也可以清除**应对消息进行加密**属性，或**重写入站的消息属性**属性。  
   
 2.  如果**重写入站的消息属性**选定属性，则**应对消息进行加密**属性处于未选中状态，但对消息加密，请联系发送消息的当事方，并请求无法加密消息，并重新发送它。 也可以选择**应对消息进行加密**属性。

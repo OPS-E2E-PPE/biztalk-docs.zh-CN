@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3e32e05fbc7ba9f08a7bbbd5fd546033806c3ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc2fe522d024059ce672124d48e458c869de9406
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-com-component-to-an-application"></a>如何将 COM 组件添加到应用程序
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加 COM 组件：  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，依次展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”、“BizTalk 组”、“应用程序”和要向其中添加 COM 组件的应用程序。  
+2.  在控制台树中，展开 BizTalk Server 管理、 BizTalk 组、 应用程序，然后展开你想要添加的 COM 组件的应用程序。  
   
 3.  右键单击**资源**文件夹，指向**添加**，然后单击**资源**。  
   

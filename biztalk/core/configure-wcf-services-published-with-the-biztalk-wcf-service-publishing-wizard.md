@@ -17,11 +17,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca265c240f0e20534c5140d0810479152ad90914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>如何配置使用 BizTalk WCF 服务发布向导发布的 WCF 服务
 使用 BizTalk WCF 服务发布向导发布 WCF 服务之后，必须对其进行正确配置。 本主题介绍如何配置发布的 WCF 服务。  
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/20/2017
   
 12. 打开命令提示符，请转到 BizTalk Server WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹\\，然后打开 Web.config 文件使用记事本。  
   
-13. 在记事本中，添加以下代码行内的 **\<.w e b >**元素：  
+13. 在记事本中，添加以下代码行内的 **\<system.web\>** 元素：  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  在记事本中，打开 BizTalk Server WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹中的 Web.config\\。  
   
-    2.  在记事本中，设置**httpGetEnabled**属性中 **\<serviceMetadata >**元素为 false 为以下行：  
+    2.  在记事本中，设置**httpGetEnabled**属性中 **\<serviceMetadata\>** 元素为 false 为以下行：  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d01593fb50fd1b6faf851652319628b3d0cae58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a1116947450fb1d900ea38be0254fb3d0f7f7c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>运行与 Oracle 数据库中的大型对象数据类型对表的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]提供对 Oracle 大型对象 (LOB) 数据类型的支持：  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
     -   定义物理 WCF 自定义或 WCF OracleDB 发送端口将消息发送到 Oracle 数据库。 你必须在发送端口中指定的操作。 有关如何创建 WCF 自定义或 WCF OracleDB 端口的信息，请参阅[手动配置到 Oracle 数据库适配器的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)。 由于 WCF 自定义或 WCF OracleDB 发送端口发送和接收符合到多个架构的消息并执行两个操作，必须设置为这两种操作的动态操作。 有关操作的详细信息，请参阅[配置 Oracle 数据库的 SOAP 操作](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)。 适用于此业务流程，应将操作设置，如下所示：  
   
         ```  
-        \<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+        <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
           <Operation Name="ReadLOB" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/ReadLOB" />  
           <Operation Name="UpdateLOB" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER/UpdateLOB" />  
         </BtsActionMapping>  
@@ -244,12 +244,12 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  筛选器字符串必须始终提取一个匹配行否则 XmlReaderParsingException Oracle 数据库适配器引发。 值为\<流 > 元素必须为 base64Binary 类型。  
+>  筛选器字符串必须始终提取一个匹配行否则 XmlReaderParsingException Oracle 数据库适配器引发。 值为\<流\>元素必须为 base64Binary 类型。  
   
  UpdateLOB 操作的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <UpdateLOBResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER"></UpdateLOBResponse>  
 ```  
   
@@ -268,7 +268,7 @@ ms.lasthandoff: 09/20/2017
  ReadLOB 操作的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <ReadLOBResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
   <ReadLOBResult>YWJjZA==</ReadLOBResult>  
 </ReadLOBResponse>  

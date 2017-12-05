@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb14221ba11fe514ab076dd6bad8cc0aeb5b929e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e34fcb08776d6be2c98e7c0e71d754caf9bdbb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receiveports-biztalk-server-sample"></a>ReceivePorts（BizTalk Server 示例）
 接收端口示例演示如何创建一个新使用接收端口**ExplorerOM**管理类。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\ReceivePorts  
+ \<*示例路径*\>\Admin\ExplorerOM\ReceivePorts  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\ReceivePorts\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
   
 2.  运行文件 ReceivePorts.exe。 新接收端口应创建并在端口枚举中所示。 枚举之后，接收端口立即被删除。  
   
@@ -223,4 +223,4 @@ RP_Receive_ShipmentAgency_Ack
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

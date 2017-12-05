@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa99f6ec1bbc5ff817fecae67c9ad558face581f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3fc90d0798e3fca420e567d1a50c58607db4ae3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-business-components-using-biztalk-server-and-the-siebel-adapter"></a>在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]面在业务组件上，可以调用的操作。 可以属于业务组件上的操作：  
@@ -190,7 +190,7 @@ ms.lasthandoff: 09/20/2017
  业务流程使用请求消息，并将其传递到 Siebel 系统。 Siebel 系统的响应保存在定义为业务流程的一部分的其他文件位置中。 例如，来自以上的请求消息的 Siebel 系统的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation">  
   <InsertResult>  
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">1-8ANYV</string>  

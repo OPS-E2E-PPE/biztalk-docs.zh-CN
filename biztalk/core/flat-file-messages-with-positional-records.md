@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26c9e4551abcbd0fba32b21fb8e4205bece6e82f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42ad36873c5b252afb185f5e341de923942dea73
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="flat-file-messages-with-positional-records"></a>带有位置记录的平面文件消息
 平面文件实例消息中的位置记录包含的各个字段（数据项）都具有预定义长度。 根据这些长度对字段进行解析。 例如，考虑平面文件实例消息中的以下位置记录，该记录包含发货地址（第一行显示了为每个字段保留的字符数）。  
@@ -65,7 +65,7 @@ US        Alice Smith         123 Maple Street    Mill Valley    CA 90952
   
 -   其字段长度指定为特定的字节数而非特定的字符数的位置记录。 有关详细信息，请参阅[位置以字节为单位计数](../core/position-counting-in-bytes.md)。  
   
- 若要帮助你更好地了解如何使用位置的平面文件，请参阅位于 files\microsoft 的 FlatFileReceive 和 FlatFileSend 文件夹中的示例[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\Pipelines\AssemblerDisassembler\\。  
+ 若要帮助你更好地了解如何使用位置的平面文件，请参阅位于 files\microsoft BizTalk Server\SDK\Samples\Pipelines\AssemblerDisassembler 的 FlatFileReceive 和 FlatFileSend 文件夹中的示例\\。  
   
 > [!NOTE]
 >  如果你平面文件包含分隔和定位记录，则必须设置**结构**的根节点的属性**带分隔符**和**结构**属性从属记录节点为**带分隔符**或**位置**根据。  

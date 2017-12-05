@@ -13,29 +13,29 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4616c097a04bbf84ce2a51808e98479ca1cd0604
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30d036313a69025e7fcf0e37116fc729623ac782
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>调用重载函数和 Oracle 数据库使用 BizTalk Server 中的过程
 存储的过程和函数可以进行重载 Oracle 数据库中。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持重载函数和过程的更改操作的目标命名空间。 例如，两个重载过程的消息结构如下所示：  
   
 ```  
 Stored Procedure Overload 1:  
-\<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload1">    
-  \<[PRM1_NAME]>value1\</[PRM1_NAME]>  
-  \<[PRM2_NAME]>value1\</[PRM2_NAME]>  
+<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload1">    
+  <[PRM1_NAME]>value1</[PRM1_NAME]>  
+  <[PRM2_NAME]>value1</[PRM2_NAME]>  
   …  
-\</[SP_NAME]>  
+</[SP_NAME]>  
   
 Stored Procedure Overload 2:  
-\<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload2">    
-  \<[PRM1_NAME]>value1\</I_[PRM1_NAME]>  
-  \<[PRM2_NAME]>value1\</I_[PRM2_NAME]>  
+<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/overload2">    
+  <[PRM1_NAME]>value1</I_[PRM1_NAME]>  
+  <[PRM2_NAME]>value1</I_[PRM2_NAME]>  
   …  
-\</[SP_NAME]>  
+</[SP_NAME]>  
 ```  
   
  调用重载的函数时所需要的 SOAP 消息结构和 SOAP 操作或过程是类似于调用的函数和过程，在所述[函数和过程的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md)。  
@@ -265,7 +265,7 @@ Stored Procedure Overload 2:
  业务流程使用请求消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置中。 例如，调用第一个重载的过程的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <GET_ACCOUNTResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload1">  
  <ACCT>  
   <ACCTID>100001</ACCTID>  

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32e29f945d9d20cd2ea998e0fa05eda6b52174ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7a9d88e0a3c765e3bd143b966bf699eb7730d8f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts（BizTalk Server 示例）
 BrowsingArtifacts 示例演示如何枚举 BizTalk 项目和属性。  
@@ -33,7 +33,7 @@ BrowsingArtifacts 示例演示如何枚举 BizTalk 项目和属性。
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\BrowsingArtifacts  
+ \<*示例路径*\>\Admin\ExplorerOM\BrowsingArtifacts  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -54,7 +54,7 @@ BrowsingArtifacts 示例演示如何枚举 BizTalk 项目和属性。
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
   
 2.  运行文件 BrowsingArtifacts.exe。  
   
@@ -301,4 +301,4 @@ BTSWhitespaceTest.Map1 :
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

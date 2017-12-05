@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ce311461f4273b057c65913d3024f8092f87d1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd2eddf6cc88737375998237db97ca699a676170
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bottlenecks-in-the-biztalk-server-tier"></a>BizTalk Server 层中的瓶颈
 BizTalk 层可分为以下功能区域：  
@@ -121,7 +121,7 @@ BizTalk 层可分为以下功能区域：
 ### <a name="other-system-resource-contention"></a>其他系统资源争用  
  根据传输的类型，可能需要配置系统资源，如为 HTTP （例如，MaxIOThreads，MaxWorkerThreads） 的 IIS。  
   
- 使用 ASP.NET 2.0 和 ASP.Net 4 中， \<processModel autoConfig ="true"/ > machine.config 文件中的设置将自动配置为获得最佳性能的以下设置：  
+ 使用 ASP.NET 2.0 和 ASP.Net 4 中， \<processModel autoConfig ="true"\> machine.config 文件中的设置将自动配置为获得最佳性能的以下设置：  
   
 -   最大工作线程  
   
@@ -131,7 +131,7 @@ BizTalk 层可分为以下功能区域：
   
 -   httpRuntime 元素 minLocalRequestFreeThreads 特性  
   
--   maxConnection 属性\<connectionManagement > 元素 （网络设置）  
+-   maxConnection 属性\<connectionManagement\>元素 （网络设置）  
   
  有关配置会影响适配器性能的参数的详细信息，请参阅[ASP.NET processModel 元素的配置设置](http://go.microsoft.com/fwlink/?LinkId=158080)(http://go.microsoft.com/fwlink/?LinkId=158080)。  
   

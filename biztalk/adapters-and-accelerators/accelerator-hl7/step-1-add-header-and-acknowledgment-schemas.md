@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b5fb871bed9f6a4f54261db7e54587c65244344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f79778801b1ca70d4e8356a24886c792fe447e33
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-1-add-header-and-acknowledgment-schemas"></a>步骤 1： 添加标头和确认架构
 在此步骤中，你可以创建基于 BTAHL72XCommon 项目模板的新项目。 此模板包含有关消息标头 (MSH_25_GLO_DEF.xsd) 和确认 (ACK_24_GLO_DEF.xsd) 的三个公共架构和 (ACK_25_GLO_DEF.xsd)。 你必须包括这些架构在项目中因此 HL7 该 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 生成和/或正确验证的消息标头和确认。 此过程能够在之间通用的所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**名称**框中，键入**BTAHL7V2XCommon**作为项目名称。  
   
-5.  在**位置**框中，浏览到 **\<** *驱动器***: > \Batching 教程**。  
+5.  在**位置**框中，浏览到 **\<** *驱动器***:\>\Batching 教程**。  
   
 6.  单击 **“确定”**。  
   
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-assign-a-strong-key-to-the-assembly-and-deploy"></a>向程序集分配强密钥和部署  
   
-1.  打开**[!INCLUDE[vs2012](../../includes/vs2012-md.md)]命令提示符**。  
+1.  打开**Visual Studio 命令提示**。  
   
-2.  上[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]命令提示符处，浏览到 **\<** *驱动器***>: \Batching 教程**文件夹。  
+2.  上[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]命令提示符处，浏览到 **\<** *驱动器***\>: \Batching 教程**文件夹。  
   
 3.  在命令提示符处，键入**sn-k key.snk**，然后按 ENTER。 确保在输出窗口中显示一条成功消息。  
   
@@ -57,9 +57,9 @@ ms.lasthandoff: 09/20/2017
   
 6.  检查**对程序集签名**复选框。  
   
-7.  在**选择强名称**密钥文件下拉列表中，选择**\<浏览 … >**。  
+7.  在**选择强名称**密钥文件下拉列表中，选择**\<浏览...\>**.  
   
-8.  浏览到\<*驱动器*>: \Batching 教程中，选择**key.snk**，然后单击**打开**。  
+8.  浏览到\<*驱动器*\>: \Batching 教程中，选择**key.snk**，然后单击**打开**。  
   
 9. 在 BTAHL7V2XCommon 项目属性页窗口中，单击**确定**以保存所做的更改。  
   

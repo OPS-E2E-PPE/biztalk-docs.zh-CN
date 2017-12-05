@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 278ab244ab48d2e11a84e99f0af2e02948ff961a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f98d5113c63e29f3f4b85834b7ca1aa0836d0a5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-data-is-stored-for-outbound-edi-messages"></a>出站 EDI 消息数据的存储方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行以下操作来生成状态报表项的出站交换：  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 -   交换控件 ID = （所需的相关） 的更新数据  
   
--   交换 ACK 状态 = 生成或不适用\<引用注意 0 >-更新数据  
+-   交换 ACK 状态 = 生成或不适用\<注意 0，请参阅\>-更新数据  
   
 -   交换 ACK 控件 ID = 不值 – 将发送端的应用  
   
@@ -77,9 +77,9 @@ ms.lasthandoff: 09/20/2017
   
 -   交换 ACK 时间 = 不值 – 将发送端的应用  
   
--   确认/操作代码 = 更新数据\<，请参阅备注 1 > （来自 X12 TA104 或 EDIFACT UCI4） *  
+-   确认/操作代码 = 更新数据\<，请参阅备注 1\> （来自 X12 TA104 或 EDIFACT UCI4） *  
   
--   ACK 注意代码 = 更新数据\<，请参阅备注 2 > （从 X12-TA105，不适用于 EDIFACT) *  
+-   ACK 注意代码 = 更新数据\<，请参阅备注 2\> （从 X12-TA105，不适用于 EDIFACT) *  
   
  使用以下确认/操作代码：  
   
@@ -163,9 +163,9 @@ ms.lasthandoff: 09/20/2017
   
 -   交换 ACK 时间 = 更新数据  
   
--   确认/操作代码 = 更新数据 （来自 X12 TA104 或 EDIFACT UCI4） * \<，请参阅备注 1 >  
+-   确认/操作代码 = 更新数据 （来自 X12 TA104 或 EDIFACT UCI4） * \<，请参阅备注 1\>  
   
--   ACK 注意代码 2 = 更新数据 (从 X12 TA105 和不值对于 EDIFACT) * \<，请参阅备注 2 >  
+-   ACK 注意代码 2 = 更新数据 (从 X12 TA105 和不值对于 EDIFACT) * \<，请参阅备注 2\>  
   
  ACK X12 中的数据： TA1 104 或 EDIFACT UCI4 是，如下所示映射：  
   
@@ -222,7 +222,7 @@ ms.lasthandoff: 09/20/2017
   
 -   功能 ACK 方向 = 发送  
   
--   正常的 ACK 状态 = \<Generated 或不适用，请参阅备注 1 >  
+-   正常的 ACK 状态 = \<Generated 或不适用，请参阅备注 1\>  
   
 -   交换接收器 = （所需的相关） 的更新数据  
   
@@ -248,7 +248,7 @@ ms.lasthandoff: 09/20/2017
   
 -   计数的事务集接受 = 更新数据 (X12 AK904 和计算由引擎 EDIFACT 引擎)  
   
--   确认/操作代码 = 更新数据\<，请参阅备注 2 > （来自 X12 AK901 或 EDIFACT UCI4） *  
+-   确认/操作代码 = 更新数据\<，请参阅备注 2\> （来自 X12 AK901 或 EDIFACT UCI4） *  
   
 -   错误/语法错误代码 = 更新数据 (X12 AK905，EDIFACT UCI5) 请注意 3  
   
@@ -465,4 +465,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [如何将数据存储用于 EDI 和 AS2 状态报表](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [数据存储的入站的 EDI 消息的方式](../core/how-data-is-stored-for-inbound-edi-messages.md)
+ [如何为入站 EDI 消息存储数据](../core/how-data-is-stored-for-inbound-edi-messages.md)

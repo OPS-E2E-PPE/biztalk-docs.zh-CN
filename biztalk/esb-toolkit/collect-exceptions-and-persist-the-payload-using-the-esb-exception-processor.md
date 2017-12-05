@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec3ca7a33b5a38b625894e391c5bf014eb824414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9dd0ec42ab60636202a8ff99fa8fab8d96a95a19
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>收集异常和保持使用 ESB 异常处理器负载
-在使用此种情况下，为业务流程的异常处理发布到 ESB 错误消息[!INCLUDE[prague](../includes/prague-md.md)]消息框或 BizTalk 失败消息路由机制将生成错误消息。 发送端口，预先配置为使用 ESB 异常编码器管道组件，订阅这两个类型的错误消息。 它处理的错误消息，并将保持它们为磁盘文件，你可以查看使用 InfoPath，如图 1 中所示。  
+在使用此种情况下，异常处理程序为业务流程将 ESB 错误消息发布到 BizTalk Server 消息框，或者 BizTalk 失败消息路由机制将生成错误消息。 发送端口，预先配置为使用 ESB 异常编码器管道组件，订阅这两个类型的错误消息。 它处理的错误消息，并将保持它们为磁盘文件，你可以查看使用 InfoPath，如图 1 中所示。  
   
  ![收集异常负载](../esb-toolkit/media/ch3-collectingexceptionspayload.gif "Ch3 CollectingExceptionsPayload")  
   

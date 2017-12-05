@@ -31,11 +31,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9f8a004c1883a05c3fcf60324f428144591cff4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20b14539edc6b9b1026ca048feb881ce0d8a6d1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-requirements-for-host-initiated-sso"></a>如何配置主机启动的 SSO 的要求
 尽管企业 SSO 和主机启动的 SSO 在某些方面有相同之处，但对于主机启动的 SSO，某些平台和 Active Directory 要求是其所独有的。 本主题将介绍这些要求，并列出在系统中检查或创建这些要求所需的步骤。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-4.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+4.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 5.  类型**setpsn-a hipsvc\computername.domain.com domain\hissvc**  
   

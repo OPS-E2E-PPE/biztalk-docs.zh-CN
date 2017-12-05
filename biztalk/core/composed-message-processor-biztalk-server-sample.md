@@ -17,11 +17,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3853a5b903215b6f716a13c33727e60c67107b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3097ef6a0da695c3b07cf68182a374eabed11b5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="composed-message-processor-biztalk-server-sample"></a>组合消息处理器（BizTalk Server 示例）
 此示例的目的是构建的撰写的邮件处理器应用程序处理聚合的消息的消息的各个行项。  
@@ -286,13 +286,13 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<示例路径 > \Pipelines\ComposedMessageProcessor  
+     \<示例路径\>\Pipelines\ComposedMessageProcessor  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在以下文件夹中，为本示例创建输入 (In) 和输出 (Out) 文件夹：  
   
-         \<示例路径 > \Pipelines\ComposedMessageProcessor  
+         \<示例路径\>\Pipelines\ComposedMessageProcessor  
   
     -   编译此示例的 Visual Studio 项目。  
   
@@ -328,4 +328,4 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
     2.  将所有映射消息组装到一起并将其转换为平面文件格式。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

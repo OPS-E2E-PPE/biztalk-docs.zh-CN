@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc22c7e3eafffb035c791b258064e2149f31636b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dec1cde2206f055cbcf97c94a7e2f042aa391f51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="party-aliases-tab"></a>当事方别名选项卡
 你使用**方别名**选项卡以查看有关所选的当事方信息。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  BizTalk 资源管理器用于创建参与方。  
   
- 有关创建参与方的详细信息，请参阅"管理方使用 BizTalk 资源管理器"中[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关创建参与方的详细信息，请参阅"管理方使用 BizTalk 资源管理器"BizTalk Server 帮助中。  
   
  在**BTAHL7 配置资源管理器**对话框中，在**方别名**选项卡上，执行以下操作：  
   

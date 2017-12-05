@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36902e2c5e90ce1b02f40f6994f150fa4c421c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4a8ef2def05e0b77d272463d7a79f937623b1a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-biztalk-esb-toolkit-utilities"></a>使用 BizTalk ESB 工具包实用程序
 本部分介绍各种实用程序作为的一部分包括[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
@@ -33,17 +33,17 @@ ms.lasthandoff: 09/20/2017
   
  它可以接受的各种参数如下所示：  
   
- /？:\<显示帮助的参数 >  
+ /？:\<显示帮助的参数\>  
   
- /f:\<路线 xml 文件路径 >  
+ /f:\<路线 xml 文件路径\>  
   
- 无\<发布 &#124; 部署 >  
+ 无\<发布 &#124; 部署\>  
   
- /n:\<默认路线名称 >  
+ /n:\<默认路线名称\>  
   
- /v:\<默认路线版本 （格式 major.minor） >  
+ /v:\<默认路线版本 （格式 major.minor）\>  
   
- /o:\<静默覆盖 >  
+ /o:\<静默覆盖\>  
   
  以下是如何使用此实用工具的示例。  
   

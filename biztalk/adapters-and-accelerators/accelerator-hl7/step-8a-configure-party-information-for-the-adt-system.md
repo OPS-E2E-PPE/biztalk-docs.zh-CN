@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd720f30232a981a1b9c963c93c2288572a6a391
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42b92e3b55cd4de181103e28526abf3ecde29412
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8a-configure-party-information-for-the-adt-system"></a>步骤 8A： 配置 ADT 系统的当事方信息
 在此步骤中，你可以配置 ADT 系统的方信息。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在发送端口窗格中，单击中的空白字段**名称**列中，选择**Tutorial_sendAck_ADT**，然后单击**确定**。  
   
-5.  单击**启动**，指向**程序**，指向**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+5.  单击**启动**，指向**程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 6.  在 BTAHL7 配置资源管理器中，选择**确认**选项卡。有关**确认类型**，选择**EnhancedMode**。  
   

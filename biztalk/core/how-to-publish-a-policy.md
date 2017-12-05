@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a64c4764459eecd0d1a4fceedf7a7e8e61159503
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d5e9604e950710911d4324d5b329173d184617b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-publish-a-policy"></a>如何发布策略
 本主题介绍如何使用 BizTalk Server 管理控制台在 BizTalk 组中发布策略。 发布策略使它可将添加到 BizTalk 应用程序，如中所述[如何向应用程序添加策略](../core/how-to-add-a-policy-to-an-application.md)。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开包含策略的 BizTalk 组将发布，则展开**应用程序**，然后展开**\<所有项目 >**。  
+2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开包含策略的 BizTalk 组将发布，则展开**应用程序**，然后展开**\<所有项目\>**。  
   
 3.  单击**策略**，右键单击的策略，然后单击**发布**。  
   

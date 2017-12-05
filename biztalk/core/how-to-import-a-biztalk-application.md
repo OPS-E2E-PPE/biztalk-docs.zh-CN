@@ -20,11 +20,11 @@ caps.latest.revision: "70"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e640a11c709b25336b2a1625c42ce40b49926982
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65a2e29be82cb55b0c8509eb3adb346f48d5b794
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-a-biztalk-application"></a>如何导入 BizTalk 应用程序
 本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或命令行，将 BizTalk 应用程序导入到 BizTalk 组。 导入 BizTalk 应用程序时将在 BizTalk 管理数据库中注册项目，并将这些项目的数据写入相应的 BizTalk 数据库。 有关详细信息，请参阅[什么发生时项目导入](../core/what-happens-when-artifacts-are-imported.md)。 在导入某个应用程序时，将不会安装该应用程序。 必须先安装包含基于文件的项目的应用程序，该应用程序才能运行。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="considerations-for-importing-applications"></a>导入应用程序的注意事项  
  在导入应用程序时，应注意以下事项：  
   
--   **从以前版本的 BizTalk Server 导入应用程序**。 如果要从 BizTalk Server 2006 R2 或 BizTalk Server 2009 导入应用程序，并且应用程序中包含 EDI/AS2 参与方数据，则应用程序导入可能将失败，因为贸易合作伙伴管理模型已在 [!INCLUDE[prague](../includes/prague-md.md)] 中进行了大量的更改。 您必须改用参与方迁移工具才能从早期的 BizTalk Server 版本迁移参与方数据。 有关工具的详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
+-   **从以前版本的 BizTalk Server 导入应用程序**。 如果要从 BizTalk Server 2006 R2 或 BizTalk Server 2009 导入应用程序和应用程序包含 EDI/AS2 方数据，应用程序导入可能会失败，因为中 BizTalk Server 贸易合作伙伴管理模型已显著更改。 您必须改用参与方迁移工具才能从早期的 BizTalk Server 版本迁移参与方数据。 有关工具的详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
   
 -   **导入的绑定，始终会覆盖现有绑定。** 将包含绑定的 .msi 文件导入到现有应用程序时，现有绑定将被同名的导入绑定覆盖。 即使您没有选择在导入 .msi 文件时覆盖现有项目的选项，现有绑定也将被同名导入绑定覆盖。 如果您不希望用导出的应用程序中的绑定覆盖导入 .msi 文件的应用程序中的绑定，请不要在导出操作中选择将该绑定文件作为资源导出。 有关详细信息，请参阅[how to Export BizTalk 应用程序如何](../core/how-to-export-a-biztalk-application.md)。  
   
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  如果不选择此选项，并且 .msi 文件中包含的项目已存在于应用程序中，则导入操作将失败并回滚。 BizTalk 应用程序或 BizTalk 组中某些项目类型必须是唯一的。 如果要添加 BizTalk 组中已存在但当前应用程序中不存在的项目，则即使指定了覆盖选项，导入操作也将失败。 有关哪些项目必须唯一，并且在何种方式它们必须是唯一的详细信息，请参阅[项目，必须是唯一的应用程序或组](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)。  
   
-7.  在应用程序目标环境设置页上，在**目标过渡环境**下拉列表中，选择目标环境中的为此应用程序，然后单击**下一步**。 此列表包含已为添加到此应用程序的所有绑定文件指定的所有环境。 选择\<默认 > 如果你想要应用应用程序除外指定的目标环境中的所有绑定。 如果.msi 文件不包含你想要显式应用的绑定文件，则可以保留\<默认 > 所选。  
+7.  在应用程序目标环境设置页上，在**目标过渡环境**下拉列表中，选择目标环境中的为此应用程序，然后单击**下一步**。 此列表包含已为添加到此应用程序的所有绑定文件指定的所有环境。 选择\<默认\>如果你想要应用应用程序除外指定的目标环境中的所有绑定。 如果.msi 文件不包含你想要显式应用的绑定文件，则可以保留\<默认\>选。  
   
     > [!NOTE]
     >  在将绑定文件添加到应用程序时，为这些绑定指定目标环境。 有关背景信息，请参阅[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。 有关添加绑定文件的说明，请参阅[如何将绑定文件添加到应用程序](../core/how-to-add-a-binding-file-to-an-application2.md)。  

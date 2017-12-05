@@ -12,17 +12,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: caa006e8c8e22b10d0bdc58a781de30a0623bb79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9c7905fc7114feeca8b53589e1aa32a09495ca1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>使用适用于 SAP 的数据提供程序来创建报表服务器项目
 你必须创建报表服务器项目，使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，若要为 SAP 系统中可用的数据生成报表。 本主题将说明了如何创建报表服务器项目。  
   
 ## <a name="prerequisites"></a>先决条件  
- 执行本主题中提供过程之前，请确保你安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]安装时[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为的一部分[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装。 有关详细信息[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，请参阅安装指南在\<*安装驱动器*>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
+ 执行本主题中提供过程之前，请确保你安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]安装时[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为的一部分[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装。 有关详细信息[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，请参阅安装指南在\<*安装驱动器*\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
 ### <a name="to-create-a-report-server-project"></a>若要创建报表服务器项目  
   
@@ -91,4 +91,4 @@ ms.lasthandoff: 09/20/2017
      你现在可以查看报表。 有关如何查看报表的说明，请参阅[查看适用于 SAP 的报表](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [适用于 SAP 的 SSRS 使用的数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)
+ [使用包含 SSRS 的 SAP 数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)

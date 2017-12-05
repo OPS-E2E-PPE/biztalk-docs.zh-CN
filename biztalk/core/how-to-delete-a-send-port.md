@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f55b4e08fa03380c3361a44b7989301b606732d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63355f742f12fbbaf57ccde7a1406dbb694ee073
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-delete-a-send-port"></a>如何删除发送端口
 本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序删除发送端口。 执行此操作时，发送端口也将删除从组 BizTalk 管理数据库。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理，展开 BizTalk 组，展开应用程序，然后展开包含你想要删除的发送端口的应用程序  
+2.  在控制台树中，展开 BizTalk Server 管理、 展开的 BizTalk 组，展开应用程序，，然后展开包含你想要删除的发送端口的应用程序  
   
 3.  单击**发送端口**，发送端口中，右键单击，然后单击**删除**。  
   

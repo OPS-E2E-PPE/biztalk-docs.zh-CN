@@ -13,14 +13,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71e3141e436bc50a629f495d8372b05d15e90b90
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 441bb90c8fa0f2edb271af384e2540a741150137
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>步骤 2： 为价格和可用性项目使用 BizTalk 编辑器创建 Contoso LOB 应用程序架构
-在此步骤中，将生成用于查询 Contoso ERP 系统中特定产品的价格与可用性的架构。 使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® SQL Adapter for [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 可生成此架构。  
+在此步骤中，将生成用于查询 Contoso ERP 系统中特定产品的价格与可用性的架构。 通过使用生成此架构[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 的 SQL 适配器。  
   
 ### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>更新 SQL 存储过程以生成架构  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 上**语句类型信息**页上，选择**存储过程**，然后单击**下一步**。  
   
-11. 上**语句信息**页上，为**\<选择存储的过程 >**，选择**SP_GetInventoryForProductID**从下拉列表。 单击**生成**，然后单击**下一步**。  
+11. 上**语句信息**页上，为**\<选择存储的过程\>**，选择**SP_GetInventoryForProductID**从下拉列表。 单击**生成**，然后单击**下一步**。  
   
 12. 上**完成 SQL 传输架构生成向导**页上，单击**完成**向 ContosoPriceAndAvailability BizTalk 项目导入架构。  
   
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
 16. 在 Microsoft SQL Server Management Studio 中，删除`xmldata`谓词以及从逗号`SP_GetInventoryForProductID`存储在上一步骤中，添加的过程，然后单击**执行**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 3： 为价格和可用性项目使用 BizTalk 映射程序创建 Contoso LOB 应用程序映射](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+ [步骤 3：使用 BizTalk 映射器为价格和可用性项目创建 Contoso LOB 应用程序映射](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

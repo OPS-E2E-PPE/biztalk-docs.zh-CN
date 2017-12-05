@@ -17,11 +17,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5af783a5f2315aa39fc3ab49f727583b1bbf7d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65eb19845bf4e103b4abe2466e58fb09a96c23c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>调用使用 WCF 通道模型对 Oracle 数据库的操作
 你可以在调用操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用**IRequestChannel**或**IOutputChannel**形状以将消息发送到适配器。 基本模式是通过使用绑定创建必需的通道形状的通道工厂 (**OracleDBBinding**) 和从一个连接 URI 创建的终结点。 然后，你创建**消息**表示目标操作的消息架构符合的 SOAP 消息的实例。 然后可以将此发送**消息**到[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]通过从通道工厂创建通道。 如果你使用**IRequestChannel**，你收到的响应。 如果执行对 Oracle 数据库的操作问题[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>如何通过使用 IRequestChannel 的实例调用操作  
   
-1.  生成通道工厂 (**ChannelFactory\<IRequestChannel >**)。 若要执行此操作，必须指定一个绑定 (**OracleDBBinding**) 和终结点地址。 在你的代码以强制方式或配置中以声明方式，可以指定的绑定和终结点地址。 有关如何在配置中指定的绑定和终结点地址的详细信息，请参阅[创建一个通道，使用 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)。  
+1.  生成通道工厂 (**ChannelFactory\<IRequestChannel\>**)。 若要执行此操作，必须指定一个绑定 (**OracleDBBinding**) 和终结点地址。 在你的代码以强制方式或配置中以声明方式，可以指定的绑定和终结点地址。 有关如何在配置中指定的绑定和终结点地址的详细信息，请参阅[创建一个通道，使用 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)。  
   
     ```  
     // Create a binding  
@@ -147,7 +147,7 @@ ms.lasthandoff: 09/20/2017
   
  请按照相同的步骤来发送邮件时使用**IOutputChannel**调整除外：  
   
--   你创建**ChannelFactory\<IOutputChannel >**步骤 1 中。  
+-   你创建**ChannelFactory\<IOutputChannel\>** 步骤 1 中。  
   
 -   你调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);`。  
   
@@ -177,7 +177,7 @@ namespace RequestChanneSample
         {  
             // The Select operation request message  
             const string selectRequestString =  
-                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\">" +  
+                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\"\>" +  
                     "<COLUMN_NAMES>*</COLUMN_NAMES>" +  
                     "<FILTER>ACCOUNT = 100002</FILTER>" +  
                 "</Select>";  

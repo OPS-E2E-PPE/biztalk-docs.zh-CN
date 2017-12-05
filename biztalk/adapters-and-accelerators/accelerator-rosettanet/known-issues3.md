@@ -13,11 +13,11 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
-ms.openlocfilehash: 59c6aabd6adf584bb27f5487ca31f852a0d11384
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb7ddc2028383f8ac346e7876459f322d2dd96b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>已知问题
 本节介绍的有用信息有助于在使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 时避免错误。 已知问题归为以下几个方面：  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 支持向 BizTalk Application Users 组或 BizTalk Server Administrators 组中添加组。 但是，属于 BizTalk Application Users 组或 BizTalk Server Administrators 组的各个用户帐户和组必须在同一个域中。  
   
 ### <a name="uninstallation-of-btarn-fails-if-biztalk-server-is-removed-first"></a>如果先删除 BizTalk Server，BTARN 的卸载将失败  
- 如果先删除 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，然后再删除 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，则 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的删除过程将失败，而且不报错。 若要解决此问题，请重新安装 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，并对其进行配置，然后再删除 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
+ 如果在删除之前删除 BizTalk Server [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]删除过程将错误会失败。 若要解决此问题，重新安装和重新配置 BizTalk Server，然后删除[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
   
 ### <a name="distributed-deployment-requires-a-domain-controller"></a>分布式部署需要域控制器  
  在多服务器环境中部署 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 需要域控制器，例如，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装在一台服务器上，而用于配置的 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] 数据库安装在另一台服务器上。  
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]接收并处理具有 utf-16 字符集的消息。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将使用 utf-8 的字符集的消息发送。  
   
 ### <a name="namespaces-must-be-stripped-from-response-messages-mapped-from-request-messages"></a>从请求消息映射的响应消息中必须去掉命名空间  
- 如果在双操作方案的专用流程中使用 BizTalk 映射器，则 BizTalk 映射器将向从请求消息映射的响应消息实例中的一些元素标记添加命名空间。 这些命名空间会导致在发送管道中发生故障。 必须删除这些命名空间。 使用 HeaderHelper 示例可实现这一目的。 有关详细信息，请参阅[Double 操作 PIPAutomation 业务流程和 #91;RN3 & #93;](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)和[步骤 4： 创建 HeaderHelper 项目 & #91;RN3 & #93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md).  
+ 如果在双操作方案的专用流程中使用 BizTalk 映射器，则 BizTalk 映射器将向从请求消息映射的响应消息实例中的一些元素标记添加命名空间。 这些命名空间会导致在发送管道中发生故障。 必须删除这些命名空间。 使用 HeaderHelper 示例可实现这一目的。 有关详细信息，请参阅[Double 操作 PIPAutomation 业务流程和 #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)和[步骤 4： 创建 HeaderHelper 项目 &#91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md).  
   
 ### <a name="changing-uri-settings-requires-iisreset"></a>更改 URI 设置需要 IISRESET  
  运行安装程序时，需要设置接收和发送 .aspx 页使用的 URI 设置以及接收和发送适配器使用的 URI 设置。 如果你更改了安装了 .aspx 页或适配器的计算机的名称，则必须更改这些设置。 可以通过重新运行配置进程更改这些设置，但这需要重置所有配置设置。 可通过更改相关的注册表项（`AsyncReceivePortURI`、`RNIFSenderURI` 和 `SyncReceivePortURI`）来更改 URI 设置。 更改这些注册表设置中的任一项后，必须运行 IISRESET 才能使更改生效。 这是因为 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 仅缓存这些设置供自己使用。 运行 IISRESET 后，还必须重新启动 BizTalk 服务。  
@@ -110,7 +110,7 @@ ms.lasthandoff: 09/20/2017
  创建流程配置的配置文件并接着创建协议时，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将执行跨字段验证，以确保协议和配置文件的属性是兼容的。 例如，它会对“标准”属性设为“CIDX”的配置文件进行检查，将协议的 0A1 协议属性设为“非 0A1”。 但是，如果你在创建协议之后更改流程配置的配置文件，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将不执行跨字段验证。 如果你将“标准”属性的值从“RosettaNet”更改为“CIDX”，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将不检验协议的 0A1 协议属性是否设为“非 0A1”。  
   
 ### <a name="errors-will-result-if-all-orchestrations-are-not-started"></a>如果所有业务流程均未启动，将出现错误  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装程序共安装 9 个业务流程。 有关[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]若要成功处理消息，必须将绑定、 登记，并在启动处理之前启动的这些业务流程的所有包含 9 个。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“BizTalk 浏览器中的业务流程管理”或“管理业务流程”主题。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装程序共安装 9 个业务流程。 有关[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]若要成功处理消息，必须将绑定、 登记，并在启动处理之前启动的这些业务流程的所有包含 9 个。 有关详细信息，请参阅 BizTalk Server 帮助中的"业务流程管理在 BizTalk 资源管理器"管理业务流程"主题。  
   
 ### <a name="rnifreceiveaspx-does-not-remove-the-mime-bottom-boundary-from-a-message"></a>RNIFReceive.aspx 不删除消息中的 MIME 下边界  
  RNIFReceive.aspx 页收到来自合作伙伴的 RNIFSend.aspx 页的消息时，该消息包含了 MIME 头以及 MIME 上边界和下边界（用 Base64 数字表示）。 RNIFSend.aspx 将头和边界添加到消息中以便进行 RNIF 传输。 将消息提交到公用流程之前，RNIFReceive.aspx 应将 MIME 头和边界从消息中删除。 RNIFReceive.aspx 删除 MIME 头和上边界，但不删除下边界。 下边界的存在不会影响公用流程中消息的处理。  
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
  如果公用流程业务流程在处理其最终消息时出现传输错误，事件日志和 HAT 将显示该错误，但 BAM 不显示该错误。 BAM 之所以不能显示该消息，是因为业务流程已停止。  
   
 ### <a name="the-pipelineexe-tool-cannot-be-used-to-debug-a-btarn-receive-pipeline"></a>pipeline.exe 工具不能用于调试 BTARN 接收管道  
- 如果要调试接收管道，必须创建承载该管道的端口。 你无法调试使用 pipeline.exe 工具，[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]提供。  
+ 如果要调试接收管道，必须创建承载该管道的端口。 你无法调试使用 BizTalk Server 提供的 pipeline.exe 工具。  
   
 ### <a name="an-error-may-be-generated-for-a-retried-message-that-is-successfully-processed-after-the-orchestration-finishes"></a>在业务流程完成后，如果重试已经成功处理过的消息，则可能会产生错误  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 使用业务流程来表示流程。 在重试一些已经重试过的消息时，业务流程可能在重试消息到达 BizTalk MessageBox 之前已成功完成。 如果出现这种行为，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 将生成一个相应的“已完成但被删除”错误消息。 此时应查看业务线 (LOB) 应用程序，确定该流程是否已完成。 如果 LOB 应用程序指出已成功完成，则可以忽略“已完成但被删除”消息。  

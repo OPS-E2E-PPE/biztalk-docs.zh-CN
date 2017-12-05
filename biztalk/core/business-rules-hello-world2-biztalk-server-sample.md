@@ -15,11 +15,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48d92d3de6b4ef6b4d541d7f64e0d483feb9c30f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eed1c0c83432417b53debcf523eeec91f85e5c2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>业务规则 Hello World2 （BizTalk Server 示例）
 业务规则 Hello World2 示例扩展业务规则 Hello World1 示例，演示如何为版本，发布和部署 XML 规则设置为共享的 SQL 规则存储，以及如何运行策略使用**策略**对象框架提供的业务规则。 该示例还演示了操作中的动态策略更新。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
 >  有关在此 SDK 中的所有示例的重要信息，请参阅[示例](../core/samples-in-the-sdk.md)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Business Rules\Business 规则 Hello World2\  
+ *\<示例路径\>*\Business Rules\Business 规则 Hello World2\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径 >*\Business Rules\Business 规则 Hello World2\  
+     *\<示例路径\>*\Business Rules\Business 规则 Hello World2\  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径 >*\Business Rules\Business 规则 Hello World2\bin\Debug\  
+     *\<示例路径\>*\Business Rules\Business 规则 Hello World2\bin\Debug\  
   
 2.  在命令窗口中，键入此示例的文件的名称 (**BusinessRulesHelloWorld2.exe**)，然后按 ENTER。  
   
@@ -158,4 +158,4 @@ Press ENTER to continue after updating the policy...
 -   策略的次要版本号现在为 1。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务规则 （BizTalk Server 示例文件夹中）](../core/business-rules-biztalk-server-samples-folder.md)
+ [业务规则（BizTalk Server 示例文件夹）](../core/business-rules-biztalk-server-samples-folder.md)

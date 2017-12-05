@@ -13,11 +13,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31889aa0c4f13826758547fb5e8e7acdf061239b
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2bc559f4e3c25560540a171b3f47ff25e6f34e89
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-peoplesoft-send-artifacts"></a>创建 PeopleSoft 发送项目
 适用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器用于访问 PeopleSoft，以及浏览可用组件或处理 SOAP 请求。 本主题演示如何在 BizTalk Server 管理来使用 PeopleSoft 适配器中创建的发送项目。
@@ -68,7 +68,7 @@ PeopleSoft 传输属性用于运行时和设计时。 在**传输属性**对话�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |`Application Server Path`|此字符串代表 PeopleSoft 应用程序服务器运行的计算机和侦听的端口。 PeopleSoft 8 应用程序的 URL 路径的语法是 / / < 计算机名 >:\<端口 >。 向你 PeopleSoft 管理员请求\<端口 > 值。 \<端口 > 值是震动协议侦听器端口，不是应用程序服务器端口。 默认 JOLT 端口为 9000。|  
+    |`Application Server Path`|此字符串代表 PeopleSoft 应用程序服务器运行的计算机和侦听的端口。 PeopleSoft 8 应用程序的 URL 路径的语法是 / / < 计算机名 >:\<端口\>。 向你 PeopleSoft 管理员请求\<端口\>值。 \<端口\>值是震动协议侦听器端口，不是应用程序服务器端口。 默认 JOLT 端口为 9000。|  
     |`JAVA_HOME`|设置 JAVA_HOME 变量以指向你 JDK 的安装，例如： **C:\j2sdk1.4.2_08**。|  
     |`Password`|如果你未选择**使用 SSO**，必须设置为 BizTalk 适配器 PeopleSoft 企业访问服务器系统的凭据参数。<br /><br /> 表示用户密码的字符串，用于登录到 PeopleSoft 系统。 不会显示密码中的字符，而是以星号 (*) 表示这些字符。|  
     |`PeopleSoft 8.x Jar Files`|若要使用组件接口（仅限 PeopleSoft 8），则必须更新 CLASSPATH 以包含 PeopleSoft 组件接口 jar 文件。 例如： **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**。|  
@@ -130,4 +130,4 @@ PeopleSoft 传输属性用于运行时和设计时。 在**传输属性**对话�
 ## <a name="next"></a>Next
   
 [将 PeopleSoft 架构导入到 BizTalk Server 项目](../core/importing-peoplesoft-schemas-into-biztalk-server-projects.md)  
-[接收来自 PeopleSoft](../core/receiving-from-peoplesoft.md)
+[从 PeopleSoft 接收](../core/receiving-from-peoplesoft.md)

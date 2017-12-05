@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63a6a79a12949148f77363d7e4cffd2b2c321d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e14fd3f433609da7748197a8b67112d815da153
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>如何： 验证使用 ESB 入口的消息
 ## <a name="goal"></a>目的  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在记事本中，打开 Invalid.xml。  
   
-4.  更改 **\<ns0:requestType > 10\</ns0:requestType > 到\<ns0:requestType > 10 个\</ns0:requestType >**。  
+4.  更改 **\<ns0:requestType\>10\</ns0:requestType\>到\<ns0:requestType\>十个\</ns0:requestType\>** .  
   
 5.  将 Invalid.xml 另存为 utf-8，，然后关闭记事本。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>若要创建 ESB 路线 DSL 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**，指向**添加**，然后单击**新路线**。  
   
@@ -145,9 +145,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>若要创建和配置 ESB 入口  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**BizTalk Server 管理**.  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**BizTalk Server 管理**。  
   
-2.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。  
+2.  在 BizTalk Server 管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。  
   
 3.  右键单击**接收位置**，指向**新建**，然后单击**单向接收位置**。  
   
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  单击**确定**关闭**接收位置属性**对话框。  
   
-3.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**启用**。  
+3.  在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**启用**。  
   
 #### <a name="to-test-the-message-validation-and-itinerary-selection"></a>若要测试的消息验证和路线选择  
   
@@ -216,19 +216,19 @@ ms.lasthandoff: 09/20/2017
   
 9. 在事件查看器中，展开**Windows 日志**，然后单击**应用程序**。  
   
-10. 找到的最新事件其中**源**是 **[!INCLUDE[prague](../includes/prague-md.md)]** ，和**事件 ID**是**5719**。  
+10. 找到的最新事件其中**源**是**BizTalk Server**，和**事件 ID**是**5719**。  
   
     > [!NOTE]
     >  提交和失败的无效消息应用程序事件日志导致的异常条目。  
   
-11. 在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**禁用**。  
+11. 在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**禁用**。  
   
 12. 后**OnRamp.Itinerary.HowTo**接收位置处于禁用状态，右键单击它，，然后单击**删除**。 在**确认删除接收位置**对话框中，单击**是**。  
   
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

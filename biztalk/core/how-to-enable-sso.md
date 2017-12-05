@@ -21,11 +21,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51b07bc34779643124efd5b249373301f7e47b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a843c0f6cdea32ba5218140069163058fcd42442
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-sso"></a>如何启用 SSO
 可以通过使用 MMC 管理单元中或命令行启用整个企业单一登录 (SSO) 系统。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssomanage-enablesso**。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-3.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+3.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage enablesso**启用企业单一登录服务。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  作为 SSO affiliate 管理员登录。  
   
-6.  类型**ssomanage createapps *\<应用程序文件 >*** 创建关联应用程序，其中\<应用程序文件 > 是包含定义的 XML 文件关联应用程序。  
+6.  类型**ssomanage createapps *\<应用程序文件\>*** 创建关联应用程序，其中\<应用程序文件\>是 XML 文件包含关联应用程序的定义。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

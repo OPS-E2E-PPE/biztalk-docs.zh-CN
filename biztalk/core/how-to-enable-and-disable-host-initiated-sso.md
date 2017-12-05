@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6e7440742c5bb8efb8d867ecc96447390336b84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1e5783893bbc9091d0a5f1fb3f116b17413bc5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a>如何启用和禁用主机启动的 SSO
 默认情况下，单一登录系统中不启用主机启动的单一登录，而必须由 SSO 管理员启用。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage-启用 hisso**。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssomanage-禁用 hisso**根据。  
   

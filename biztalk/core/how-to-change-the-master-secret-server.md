@@ -19,11 +19,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4676db07025b4395d58df7c24252769ba65ecfb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a1e30f1703f554792ce5243414a95965da93670
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-change-the-master-secret-server"></a>如何更改主密钥服务器
 在设置主密钥服务器并配置 SSO 数据库后，如果原始的主密钥服务器发生故障并且无法恢复，则可以更改主密钥服务器。 若要更改主密钥服务器，则需要将 SSO 服务器升级为主密钥服务器。  
@@ -43,11 +43,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-6.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+6.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
 7.  重新启动新的主密钥服务器。  
   
-8.  类型**ssoconfig-restoreSecret\<还原文件 >**，其中**\<还原文件 >**是路径和主密钥的存储位置的文件的名称。  
+8.  类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。  
   
      主密钥存储在注册表中，位置为：  
   
@@ -73,16 +73,16 @@ ms.lasthandoff: 09/20/2017
   
 2.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-3.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+3.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-updatedb** \<**更新文件**>，其中\<**更新文件**> 是你在步骤 1 中创建的 XML 文件的名称。  
+4.  类型**ssomanage-updatedb** \<**更新文件**\>，其中\<**更新文件**\>是 XML 文件的名称你在步骤 1 中创建。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 5.  重新启动主密钥服务器。  
   
-6.  类型**ssoconfig-restoresecret\<还原文件 >**，其中**\<还原文件 >**是路径和主密钥的存储位置的文件的名称。  
+6.  类型**ssoconfig-restoresecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。  
   
      主密钥存储在注册表中，位置为：  
   

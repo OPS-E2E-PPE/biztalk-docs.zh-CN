@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dd9b981791b12c0cf94be1b2a2c590f84617566
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c810b8507a98b91c0b906131e127f189f0a4fd0f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-edi-pipeline-properties"></a>配置 EDI 管道属性
 当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定传入或传出交换解析为的协议时，将在处理传入或传出 EDI 交换的过程中可使用管道属性。 在有些情况下，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用管道属性来处理交换；而在其他情况下，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用后备协议。 有关详细信息，请参阅[如何验证 EDI 交换是配置的](../core/how-validation-of-an-edi-interchange-is-configured.md)。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 |DetectMID|允许 EDI 拆装器在一个消息中解析多个交换。|True（默认值）<br /><br /> False|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装|  
 |EdiDataValidation|启用对传出 EDI 交换的 EDI 类型（数据元素）验证，除了 EDI 数据元素验证之外，还验证字段长度、可选性和重复计数。|True（默认值）<br /><br /> False|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装<br /><br /> EdiSend - 组装<br /><br /> AS2EdiSend - 组装|  
 |EfactDelimiters|指示处理传入交换时使用的分隔符。 如果传入交换没有 UNA 段，则使用此属性。<br /><br /> 分隔符包括：<br /><br /> -UNA1 （组件数据元素分隔符）<br />-UNA2 （数据元素分隔符）<br />-UNA3 （小数符号）<br />-UNA4 （转义指示器）<br />-UNA5 （重复分隔符）<br />-UNA6 （段终止符）**注意：**此属性用于 EDIFACT 只能，处理不能为 X12。|0x3A、0x2B、0x2C、0x3F、0x20、0x27（默认值）|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装|  
-IgnoreMessageEncoding|指定 BatchMarker 组件不会设置 EDI。EncodingType 上下文属性\<X12 > 或\<EDIFACT >。 这适用于处理非 EDI 消息时的自定义管道。|False（默认值）<br /><br /> True|EdiReceive - 解析参与方<br /><br /> AS2EdiReceive - 解析参与方|  
+IgnoreMessageEncoding|指定 BatchMarker 组件不会设置 EDI。EncodingType 上下文属性\<X12\>或\<EDIFACT\>。 这适用于处理非 EDI 消息时的自定义管道。|False（默认值）<br /><br /> True|EdiReceive - 解析参与方<br /><br /> AS2EdiReceive - 解析参与方|  
 |MaskSecurityInformation|屏蔽传入 EDI 交换上下文属性中的授权/密码安全信息，以防止信息泄露。 对于 X12 交换，适用于 ISA1、ISA2、ISA3 和 ISA4 字段；对于 EDIFACT 交换，适用于 UNB6 字段。|True（默认值）<br /><br /> False|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装|  
 |PreserveInterchange|指定接收的批将作为一个整体处理。|False（默认值）<br /><br /> True|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装|  
 |RouteAckOn2WayPort|经由打开的双向请求-响应接收端口连接返回 EDI 确认。|True（默认值）<br /><br /> False|EdiReceive - 拆装<br /><br /> AS2EdiReceive - 拆装|  
@@ -60,4 +60,4 @@ IgnoreMessageEncoding|指定 BatchMarker 组件不会设置 EDI。EncodingType �
 3.  在**配置管道**对话框中，为属性输入值，然后单击**确定**。  
   
 ## <a name="see-also"></a>另请参阅  
- [如何配置 EDI 交换的验证](../core/how-validation-of-an-edi-interchange-is-configured.md)
+ [如何配置对 EDI 交换的验证](../core/how-validation-of-an-edi-interchange-is-configured.md)

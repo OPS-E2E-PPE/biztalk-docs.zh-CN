@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa3542c2703dfba986d158b40e54982f92b8543c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82490a114149e3d4f71e3598900be5599c8a36e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="any-attribute-nodes"></a>“任何属性”节点
 在 BizTalk 编辑器中，你可以使用**任何属性**节点以指示可能出现零个或多个未知的属性实例消息中 （已知） 元素。 这适用于以下情况：您知道某特定元素将存在于实例消息中的特定位置，但您不十分确定该元素可能包含哪些属性。 如果你将放置**任何属性**中的节点**记录**的相关元素与关联的节点，BizTalk 可以处理该元素，与正在任何关联的属性，唯一的要求语法更正 (attributeName ="attributeValue")。  
   
 > [!NOTE]
->  在 BizTalk 编辑器中，**任何属性**节点表示以字符串\<AnyAttribute > 架构树视图中。  
+>  在 BizTalk 编辑器中，**任何属性**节点表示以字符串\<AnyAttribute\>架构树视图中。  
   
 > [!NOTE]
 >  你可以控制到未知消息部分进行验证格式正确的 XML 使用程度**过程内容**属性。 在许多情况下，你可能需要设置**过程内容**属性**跳过**实例消息的位置处的内容**任何属性**要处理的节点. 保留的默认值**Strict**为**过程内容**属性将阻止从传递的实例消息验证。  
@@ -51,4 +51,4 @@ ms.lasthandoff: 09/20/2017
  [BizTalk 表示形式架构](../core/biztalk-representation-of-schemas.md)   
  [节点属性](../core/node-properties.md)   
  [如何设置节点属性](../core/how-to-set-node-properties.md)   
- [任何元素节点](../core/any-element-nodes.md)
+ [“任何元素”节点](../core/any-element-nodes.md)

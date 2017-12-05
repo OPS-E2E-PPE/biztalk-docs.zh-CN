@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2436d33033163b32c4ead0fdab807b7db0b0158f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff36b6181b167d70340a65913e1e85e7acfeeaf4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-submitting-a-3a4-request"></a>步骤 4： 提交 3A4 请求
 在此步骤中，你将使用“3A4 - 请求采购订单”的合作伙伴接口流程 (PIP) 准备并提交请求。 此 PIP 可使买方组织向供应商提交采购订单请求。 一般情况下，在运行使用“3A2 - 请求价格和可用性”PIP 的产品可用性查询之后请求“3A4 - 请求采购订单”。 3A4 PIP 是一个发送确认回执的异步 PIP。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip 实例 ID**|类型**3A4_Test**。 **重要说明：**若要避免重复的消息 ID 错误，你必须确保**Pip 实例 ID**对于你提交每条消息是唯一的。 如果以后运行 3A4 测试，则必须更改本字段。|  
     |**消息类别**|类型**操作**。|  
   
-3.  使用记事本或其他文本编辑器中打开该 3A4_Request.xml 文件\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\SDK\LOBApplication\ 快捷键SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**LOBWebApplication 字段。  
+3.  使用记事本或其他文本编辑器中打开该 3A4_Request.xml 文件\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键LOBApplication\SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**LOBWebApplication 字段。  
   
 4.  单击**提交**以提交到 Contoso 计算机 3A4 请求。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在 Microsoft SQL Server Management Studio 中，单击**新查询**。  
   
-4.  在\<表 > 文本框对话框中，选择**BTARNDATA**从列表中。  
+4.  在\<表\>文本对话框中，选择**BTARNDATA**从列表中。  
   
 5.  在“SQL”窗口中，键入以下 SQL 语句：  
   

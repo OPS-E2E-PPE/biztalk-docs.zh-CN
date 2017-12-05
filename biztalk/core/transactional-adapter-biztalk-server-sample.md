@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfad3a99d313a8007962cf56f403243c72f6a377
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f934857103952a035159cc08678c8ce8c8e51a56
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>事务适配器 （BizTalk Server 示例）
 事务性适配器示例演示如何在处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息期间，根据数据库创建并使用显式 Microsoft 分布式事务处理协调器 (MSDTC) 事务。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Samples\AdaptersDevelopment\TransactionalAdapter。 管理配置项目位于 \Admin 文件夹中，而运行时项目位于 \Runtime 文件夹中。  
+ \<*示例路径*\>\Samples\AdaptersDevelopment\TransactionalAdapter。 管理配置项目位于 \Admin 文件夹中，而运行时项目位于 \Runtime 文件夹中。  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
 2.  若要将事务适配器数据添加到注册表中，双击**TransactionalAdmin.reg**。  
   
     > [!NOTE]
-    >  **TransactionalAdmin.reg**包括硬编码路径 C:\Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] \\。 如果你的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的安装位置不是默认位置或者是从以前版本升级到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装，则必须使用相应的路径修改 TransactionalAdmin.reg 文件。 更新与揑“InboundAssemblyPath”、揙“OutboundAssemblyPath”和揂“AdapterMgmtAssemblyPath”值相关联的路径，以指向指定文件的正确位置。  
+    >  **TransactionalAdmin.reg**包括硬编码路径 C:\Program Files\Microsoft BizTalk Server\\。 如果你的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的安装位置不是默认位置或者是从以前版本升级到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装，则必须使用相应的路径修改 TransactionalAdmin.reg 文件。 更新与揑“InboundAssemblyPath”、揙“OutboundAssemblyPath”和揂“AdapterMgmtAssemblyPath”值相关联的路径，以指向指定文件的正确位置。  
   
     > [!IMPORTANT]
     >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **TransactionalAdmin.reg**注册表文件。  
@@ -234,4 +234,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [适配器样本-开发](../core/adapter-samples-development.md)   
- [注册的适配器](../core/registering-an-adapter.md)
+ [注册适配器](../core/registering-an-adapter.md)

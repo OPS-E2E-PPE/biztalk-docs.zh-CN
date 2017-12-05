@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db734237a874ef73b88ddb2e59fe51f34daa3fcd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b2e493f5b99c9b100a9683ffb90584a9cfd92b3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="send-idocs-to-sap-using-biztalk-server"></a>将 Idoc 发送到 SAP 使用 BizTalk Server
 向 SAP 的所有 IDOC 调用内部都视为 tRFC 调用其中充当 tRFC 客户端和 SAP 发送 IDOC 中调用 RFC 该适配器的影响。 本部分提供有关将 Idoc 发送到 SAP，通过使用信息[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现两个不同的操作将发送到的 Idoc:  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 |输入 BizTalk|BizTalk 处理|输出到适配器|  
 |----------------------|------------------------|-----------------------|  
 |平面文件 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**发送**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br /><br /> **业务流程设计时**<br /><br /> 1.接收平面文件 IDOC<br />2.平面文件反汇编程序用于将平面文件 IDOC 转换为使用刚生成的架构的 XML IDOC。<br />3.将操作设置为**发送**操作。|发送消息|  
-|平面文件 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**SendIdoc**操作从 IDOC 节点使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br /><br /> **业务流程设计时**<br /><br /> 1.接收平面文件 IDOC<br />2.平面文件反汇编程序用于将平面文件 IDOC 转换为 XML (在这种情况下，XML 消息包含\<idocData > 节点，其中包含整个平面文件 Idoc 消息) 使用刚生成的架构。<br />3.将操作设置为**SendIdoc**操作。|SendIdoc 消息|  
+|平面文件 IDOC|**元数据设计时**<br /><br /> 1.设置绑定属性 GenerateFlatFileCompatibleIdocSchema 到**True**。<br />2.生成的架构**SendIdoc**操作从 IDOC 节点使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br /><br /> **业务流程设计时**<br /><br /> 1.接收平面文件 IDOC<br />2.平面文件反汇编程序用于将平面文件 IDOC 转换为 XML (在这种情况下，XML 消息包含\<idocData\>包含整个平面文件 Idoc 消息的节点) 使用刚生成的架构。<br />3.将操作设置为**SendIdoc**操作。|SendIdoc 消息|  
 |XML IDOC|**元数据设计时**<br /><br /> 生成的架构**发送**操作特定的 IDOC 使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br /><br /> **业务流程设计时**<br /><br /> 1.接收 XML IDOC。<br />2.将操作设置为**发送**操作。|发送消息|  
 |XML 消息中的平面文件 IDOC|**元数据设计时**<br /><br /> 生成的架构**SendIdoc**操作从 IDOC 节点使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。<br /><br /> **业务流程设计时**<br /><br /> 1.接收 XML 消息。<br />2.将操作设置为**SendIdoc**操作。|SendIdoc 消息|  
   
@@ -211,7 +211,7 @@ ms.lasthandoff: 09/20/2017
  在这两种情况下，来自 SAP 系统的响应消息包含一个 GUID。 例如，对 ORDERS05 idoc 发送操作的响应消息是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <SendResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send">  
   <guid>a5afe162-d5cc-47b0-bf6f-3b0bfe06a97e</guid>  
 </SendResponse>  

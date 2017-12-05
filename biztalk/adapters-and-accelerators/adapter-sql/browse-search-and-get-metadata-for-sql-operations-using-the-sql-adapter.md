@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a8d82a69b342c278e7cb17de8759d4986a71cd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fab8d26f7f4da3c60587bd7d2863941080c69953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter"></a>浏览、 搜索和使用 SQL 适配器的 SQL 操作中获取元数据
 本部分提供有关如何使用信息[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 通过使用这些[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]组件，你可以：  
@@ -215,7 +215,7 @@ ms.lasthandoff: 09/20/2017
 6.  单击 **“确定”**。 架构文件保存带.xsd 扩展名为 BizTalk 项目所在的位置。  
   
     > [!NOTE]
-    >  如果你使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]使用特定的命名约定创建的文件的默认情况下生成 SQL Server 项目的元数据。 生成的 WSDL 将包含**fileNameHint**批注标记包含应分配到 XSD 文件的名称。 例如，表操作的架构文件的文件名称提示遵循的约定 TableOperation。\<架构 >。\<tablename >。 如果你想要自定义生成的 XSD 文件的名称，你可以提供前缀的**文件名前缀**框。 最后，XSD 文件的名称后到达为文件名前缀 + fileNameHint + 唯一整数 （如果需要，确保文件名是唯一的）。  
+    >  如果你使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]使用特定的命名约定创建的文件的默认情况下生成 SQL Server 项目的元数据。 生成的 WSDL 将包含**fileNameHint**批注标记包含应分配到 XSD 文件的名称。 例如，表操作的架构文件的文件名称提示遵循的约定 TableOperation。\<架构\>。\<tablename\>。 如果你想要自定义生成的 XSD 文件的名称，你可以提供前缀的**文件名前缀**框。 最后，XSD 文件的名称后到达为文件名前缀 + fileNameHint + 唯一整数 （如果需要，确保文件名是唯一的）。  
   
     > [!NOTE]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会创建包含时指定的绑定属性的绑定文件 （XML 文件） 生成某一操作和要调用的操作的 SOAP 操作的架构。 你可以导入中的此绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来创建 WCF 自定义端口或 BizTalk SQL 适配器与连接 URI 的端口、 绑定属性和的 SOAP 操作设置。 有关详细信息，请参阅[配置使用的端口绑定文件以使用 SQL 适配器的物理端口绑定](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)。

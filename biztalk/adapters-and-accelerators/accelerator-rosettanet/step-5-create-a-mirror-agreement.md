@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0ddb7c7dcad8bb278b318cdc599640b479baafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00697f159e2363611248000616610cacd03b9f4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-create-a-mirror-agreement"></a>步骤 5： 创建镜像协议
 在此步骤中，将使用 Loopback 实用工具在你配置了本组织的计算机上创建模拟贸易合作伙伴的镜像协议。 Loopback 实用工具是一个命令行工具。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键。 键入以下命令，然后按**Enter**:  
+2.  在命令提示符下，将移到\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键。 键入以下命令，然后按**Enter**:  
   
     ```  
     Loopback /enable HOME  
@@ -47,4 +47,4 @@ ms.lasthandoff: 09/20/2017
 >  在每次更新原始贸易协议时，都必须重新反映贸易协议。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 6： 启动业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)
+ [步骤 6：启动业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)

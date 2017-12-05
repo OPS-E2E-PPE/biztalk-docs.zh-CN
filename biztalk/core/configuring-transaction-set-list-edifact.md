@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f6b4d9a5aae6c8758d3a6d4f46d18f9a820fabd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a95feac48f7cb5137e95a34bf46c38811bb75c51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-transaction-set-list-edifact"></a>配置事务集列表 (EDIFACT)
-[!INCLUDE[prague](../includes/prague-md.md)] 使您可以定义在处理 EDI 交换时必须始终包括或排除的事务集列表。 本部分提供了有关如何创建事务集列表的说明。  
+BizTalk Server，可定义的事务集必须始终包含或排除在处理的 EDI 交换时的列表。 本部分提供了有关如何创建事务集列表的说明。  
   
 > [!IMPORTANT]
 >  没有属性禁用此页上，即使你清除**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**时正在创建你为其创建参与方的复选框协议。  

@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108424cf9ef8670340e51a1c9747f42eec9cc4cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38d7b19c751f2bd380dad29ffc31a2be5f79245e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-character-sets"></a>EDI 字符集
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用字符集来验证整个 EDI 交换。 用于 X12 编码的消息与 EDIFACT 或 KEDIFACT 编码的消息的字符集采用不同的方式确定。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
  基本字符集包括以下大写字母、 数字、 空间和特殊字符： A 到 Z、 0 到 9，！ “ & ’ ( ) * + , - . / : ; ? = （空格）。  
   
- 扩展字符集包括在基本字符组和小写字母、 选择的语言字符和其他特殊字符的字符： a 到 z %@ [] _ {} \ &#124;\< > ~ #、 $。  
+ 扩展字符集包括在基本字符组和小写字母、 选择的语言字符和其他特殊字符的字符： a 到 z %@ [] _ {} \ &#124;\< \> ~ # $.  
   
 ## <a name="see-also"></a>另请参阅  
  [EDI 消息传递](../core/edi-messaging.md)   

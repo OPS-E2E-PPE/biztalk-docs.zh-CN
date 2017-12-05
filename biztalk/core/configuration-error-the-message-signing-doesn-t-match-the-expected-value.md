@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa0bacd605908abae984247b3d7ed775ea8f5de4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7aaba3aa00b15b3e015cbc010901c6d50818c42
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuration-error-the-message-signing-doesn39t-match-the-expected-value"></a>配置错误。 消息签名没有 &#39; t 与预期值的匹配。
 ## <a name="details"></a>详细信息  
@@ -37,6 +37,6 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>用户操作  
  要解决此错误，请验证中的方设置未启用消息进行签名，如果签名方设置中指定或如果签名未签名为传入 AS2 消息指定为传入 AS2。 执行以下操作之一：  
   
-1.  如果**重写入站的消息属性**方中为 AS2 消息发送方页中的 AS2 属性对话框中选择属性[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，**消息应为签名的**选择属性，但未签名消息、 发送消息的组织联系并要求他们对消息进行签名并重新发送它。 也可以清除**应对消息进行签名**属性，或**重写入站的消息属性**属性。  
+1.  如果**重写入站的消息属性**方中为 AS2 消息发送方页面在 BizTalk Server 管理控制台中，AS2 属性对话框中选择属性**消息应为签名的**选择属性，但未签名消息、 发送消息的组织联系并要求他们对消息进行签名并重新发送它。 也可以清除**应对消息进行签名**属性，或**重写入站的消息属性**属性。  
   
 2.  如果**重写入站的消息属性**选定属性，则**应对消息进行签名**属性处于未选中状态，但消息已签名，请联系发送消息的当事方并不适用于请求对消息进行签名并重新发送它。 也可以选择**应对消息进行签名**属性。

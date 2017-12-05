@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42c93a10fd4751f32aadf2cbfa0a0bbbafc6c7bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a222ee518cf0555de60094411df73bf5a5d486a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>步骤 5： 修改 Contoso 私有进程业务流程
 在此步骤中，将修改专用业务流程以将其集成到 Contoso 的企业资源计划 (ERP) 系统中。 Contoso 的 ERP 系统将内部定义的架构用于产品价格与可用性。 通过自定义 3A2 - 价格与可用性合作伙伴接口流程 (PIP) 的专用流程，你将能够使用架构映射信息与 ERP 系统集成。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  通过在解决方案资源管理器中显示 Contoso 解决方案，右键单击**PrivateResponder**项目，，然后单击**添加引用**。  
   
-2.  在添加引用对话框中，单击**浏览**。 将移动到*\<驱动器 >*: files\microsoft BizTalk\<版本 > 作为 RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键**:**  
+2.  在添加引用对话框中，单击**浏览**。 将移动到*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键**:**  
   
     -   Microsoft.Solutions.BTARN.CommonTypes.dll  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在属性窗口中，在**标识符**框中，键入**PIP3A2RequestMessage**。  
   
-5.  在**消息类型**框中，单击下拉箭头，展开**架构**，然后选择**\<选择从引用的程序集 >**。  
+5.  在**消息类型**框中，单击下拉箭头，展开**架构**，然后选择**\<从引用的程序集选择\>**。  
   
 6.  在选择项目 Typedialog 框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择**_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，和然后单击**确定**。  
   
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在属性窗口中，在**标识符**框中，键入**contosoResponseXML**。  
   
-3.  在**类型**框中，选择 **\<.NET 类 >**从下拉列表。  
+3.  在**类型**框中，选择 **\<.NET 类\>**从下拉列表。  
   
 4.  在选择项目中键入对话框中，在左窗格中下,**当前项目**和**引用**节点，选择**System.Xml**，选择**XmlDocument**从在右窗格中，然后单击列表**确定**。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  在属性窗口中，在**标识符**框中，键入**submitMessage**。  
   
-7.  在**类型**框中，选择 **\<.NET 类 >**从下拉列表。  
+7.  在**类型**框中，选择 **\<.NET 类\>**从下拉列表。  
   
 8.  在左窗格中，选择项目类型对话框中展开**当前项目**和**引用**节点，选择**Microsoft.Solutions.BTARN.Shared**，选择**SubmitRNIF**从在右窗格中，然后单击列表**确定**。  
   
@@ -143,4 +143,4 @@ ms.lasthandoff: 09/20/2017
 12. 在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]上**文件**，单击**保存所有**保存此项目。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 6： 配置业务流程形状 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)
+ [步骤 6：配置业务流程形状 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)

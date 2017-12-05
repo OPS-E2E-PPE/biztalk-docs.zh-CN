@@ -23,18 +23,18 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94fe45a2882d85164ab81c13e78fca2ac26d0ec4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a02e3eddcd43acf67e8e928e1a8f172c0019c616
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mitigating-denial-of-service-attacks"></a>减少拒绝服务攻击
 建议使用以下缓解措施来保护您的 BizTalk Server 和服务免受拒绝服务攻击。 您必须确定其中哪些缓解措施适用于您的环境。  
   
 -   **接收端口中使用的身份验证所需属性。** 默认情况下，BizTalk 将其接收的所有消息都发送到 MessageBox 数据库，即使这些消息来自未知或无法解析的参与方（来宾）。若要缓解攻击者将大量的消息发送到 BizTalk Server 以及扩散 （填充） 可能 MessageBox 数据库中，你可以使用**所需的身份验证**中仅接收到的接收端口属性来自 BizTalk 服务器知道的参与方的消息。 您可选择删除或挂起来自未知参与方的消息。 有关详细信息**所需的身份验证**属性，请参阅[进行身份验证消息的发件人](../core/authenticating-the-sender-of-a-message.md)。 除了**所需的身份验证**属性，则应考虑使用的外部机制，如防火墙端口筛选或 IP 地址阻止来防止拒绝服务攻击。  
   
--   **限制 BizTalk 可以接收的消息的大小。** 例如，当你使用 SOAP 接收适配器，你可以避免通过 maxRequestLength 属性设置接收非常大的消息大小\<httpRuntime > 到可接受的大小的元素。 \<HttpRuntime > 元素定义在 Machine.config 文件中，它位于\<*驱动器*>:\\<*Windows directory*> \Microsoft.NET\Framework\vX.X.XXXXX\CONFIG 目录。 有关详细信息\<httpRuntime > 元素，请参阅 Microsoft MSDN 网站， [http://go.microsoft.com/fwlink/?LinkId=60948](http://go.microsoft.com/fwlink/?LinkId=60948)。  
+-   **限制 BizTalk 可以接收的消息的大小。** 例如，当你使用 SOAP 接收适配器，你可以避免通过 maxRequestLength 属性设置接收非常大的消息大小\<httpRuntime\>到可接受的大小的元素。 \<HttpRuntime\>元素定义在 Machine.config 文件中，它位于\<*驱动器*\>:\\<*Windows目录*\>\Microsoft.NET\Framework\vX.X.XXXXX\CONFIG 目录。 有关详细信息\<httpRuntime\>元素，请参阅 Microsoft MSDN 网站， [http://go.microsoft.com/fwlink/?LinkId=60948](http://go.microsoft.com/fwlink/?LinkId=60948)。  
   
 -   **有关使用强 Dacl 接收位置。** 建议在接收位置的存放位置中使用加强的随机访问控制列表 (DACL)。 例如，在文件接收位置从其中提取消息的目录中，必须使用加强的 DACL，以便只有经过授权的用户才能在此位置中存放消息。  
   

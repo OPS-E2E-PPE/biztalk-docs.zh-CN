@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56b390ef87ac2ea58d91be2ff16a50f2c3748db2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d93284823c2ce5d0c00a1601a5b9ae0aac4643c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="deploy-and-test-the-application"></a>部署并测试应用程序
 > [!NOTE]
->  本教程仅适用于 [!INCLUDE[prague](../includes/prague-md.md)]。  
+>  本教程仅适用于 BizTalk Server。  
   
  在本主题中，我们将生成、部署、配置并测试 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  导航到你下载的示例和从**testmessage 存储库库**文件夹中，复制**JsonPurchaseOrder.json**，并将其粘贴在与接收位置关联的文件夹中。 等待此文件消失。  
   
-2.  导航到与你所创建的发送端口关联的文件夹。 请注意，   ***\<GUID >*.json**文件位于文件夹中可用。 打开此文件并验证它是否是发票消息。  
+2.  导航到与你所创建的发送端口关联的文件夹。 请注意，   ***\<GUID\>*.json**文件位于文件夹中可用。 打开此文件并验证它是否是发票消息。  
   
 ## <a name="see-also"></a>另请参阅  
  [使用 BizTalk Server 处理 JSON 消息](../core/processing-json-messages-using-biztalk-server.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 105d1b42848b73505d9a82df07693111708ce802
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a71431ee800c80c6972747f09b0e2420f961e33e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-dts-packages"></a>BAM DTS 包
 管理员可以更新以下 BAM DTS 包的参数：  
@@ -41,13 +41,11 @@ ms.lasthandoff: 09/20/2017
   
 -   **CubeUpdate** DTS 包  
   
-     **bam_AN_\<**   
-     ***多维数据集名称* >**，其中多维数据集名称是该多维数据集的名称。 BAM 工作簿从视图名称生成该多维数据集名称。 如果在 BAM 配置 XML 文档中修改该多维数据集名称，则将在 DTS 包名称中使用新的多维数据集名称。  
+     **bam_AN_\<**  ***多维数据集名称* \>** ，其中多维数据集名称是该多维数据集的名称。 BAM 工作簿从视图名称生成该多维数据集名称。 如果在 BAM 配置 XML 文档中修改该多维数据集名称，则将在 DTS 包名称中使用新的多维数据集名称。  
   
 -   **DataMaintenance** DTS 包  
   
-     **bam_DM_\<**   
-     ***ActivityName* >**，其中 ActivityName 是活动的名称。  
+     **bam_DM_\<**   ***ActivityName* \>** ，其中 ActivityName 是活动的名称。  
   
  您可以运行 CubeUpdate DTS 包来聚合计划的聚合。 在下一部分中，您可以为实时数据聚合指定时段。  
   

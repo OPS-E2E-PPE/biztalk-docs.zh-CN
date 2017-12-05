@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e9d3314b5564ab7619744e97f8e63df55683117
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 632ad57a8bb8a32c8f579a07980480dbd3bf0087
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testcrypto"></a>TestCrypto
 使用 TestCrypto 实用工具可以排除解密消息时的故障。 该实用工具指明解密是否失败。 如果解密成功，则该实用工具指明证书是什么，并显示解密的消息。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
  有关检索从消息详细信息`MessageStorageIn`，请参阅[GetMessages 示例](../../adapters-and-accelerators/accelerator-rosettanet/getmessages-sample.md)。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> files\microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键  
+ \<*驱动器*\>files\microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键  
   
 ## <a name="running-testcrypto"></a>运行 TestCrypto  
   
@@ -38,12 +38,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**命令提示符**。  
   
-2.  将移动到\<*驱动器*> files\microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键。  
+2.  将移动到\<*驱动器*\>files\microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键。  
   
-3.  在命令提示符处，键入**TestCrypto.exe\<文件名 >**，然后按 ENTER。  
+3.  在命令提示符处，键入**TestCrypto.exe \<filename\>**，然后按 ENTER。  
   
 ## <a name="remarks"></a>注释  
  如果该实用工具找到的证书不是所需的、有效的证书，或者该实用工具找不到证书，则解密失败。  
   
 ## <a name="see-also"></a>另请参阅  
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

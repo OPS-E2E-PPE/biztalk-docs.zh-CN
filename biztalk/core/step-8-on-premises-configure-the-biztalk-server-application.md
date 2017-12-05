@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47332edbf974b7e45d3ab65644f28d9d2bd6a623
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa411b7ca828a45aa0d5e58212bb48195c48180f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>步骤 8 （在本地）： 配置 BizTalk Server 应用程序
 你在前一个步骤中创建了一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。 在本步骤中，你将构建、部署和配置该应用程序。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  单击**签名**选项卡，然后选择**对程序集签名**复选框。  
   
-    3.  从下拉列表中**选择强名称密钥文件**框中，选择**\<新建 … >**。  
+    3.  从下拉列表中**选择强名称密钥文件**框中，选择**\<新建...\>**.  
   
     4.  在**创建强名称密钥**对话框框中，输入的密钥文件的名称，例如`OrderProcessingDemo.snk`。 清除保护使用密码的密钥文件的复选框，然后单击**确定**。  
   

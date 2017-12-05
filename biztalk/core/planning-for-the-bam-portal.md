@@ -22,17 +22,17 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54cc5bb9bd123f68fbeb0013423c3f3cc07cd50a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85f7291d56d662a8e3a9d46308d6b16ca2a1cafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-the-bam-portal"></a>规划 BAM 门户
 本主题介绍规划业务活动监视 (BAM) 门户部署时应考虑的事项。  
   
 ## <a name="prerequisites"></a>先决条件  
- **系统要求**。 除了的系统要求[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，你必须安装以下软件才能安装 BAM 门户：  
+ **系统要求**。 除了 BizTalk Server 的系统要求，你必须安装以下软件才能安装 BAM 门户：  
   
 -   Internet 信息服务 (IIS)  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="development-planning"></a>开发规划  
  **数据透视表的连接字符串**。 在部署期间，BAM 管理器实用程序不总能更改实时聚合 (RTA) 透视数据表定义的连接字符串。 当 RTA 数据透视表具有预先存在的 OLAP 连接字符串（该字符串已经过手动编辑）并且值项的大小写不正确时，就会发生这种情况。 例如，在 BAM 定义 XML 文件中有以下行，其中值项为 RTARef，而不是想要的 RtaRef：  
   
- **\<PivotTableView CubeRef ="POCube"RTARef ="POAmountByLocation">**  
+ **\<PivotTableView CubeRef ="POCube"RTARef ="POAmountByLocation"\>**  
   
  这将导致通过 OLAP 多维数据集，而不是通过 RTA 数据透视表来生成数据透视表。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0db0f74f7f3799e0058d60b8d30c09c99d99cc3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 891f636a5380eda7db676559194618915213dc37
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-webhttp-adapter"></a>WCF-WebHttp 适配器
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用**WCF WebHttp**适配器将消息发送到 RESTful 服务。 **WCF WebHttp**发送适配器从 BizTalk 消息向服务发送 HTTP 消息。 接收位置将接收来自 RESTful 服务的消息。 对于 GET 和 DELETE 请求，适配器不使用任何负载。 对于 POST 和 PUT 请求，适配器将 BizTalk 消息正文部分用于 HTTP 内容/负载。  
@@ -118,7 +118,7 @@ ms.lasthandoff: 09/20/2017
     |**客户端证书的指纹**|指定用于向终结点验证此发送端口的 X.509 证书的指纹。 你可以通过导航到选择指纹**我**将存储在**当前用户**位置与**浏览**按钮。 **注意：**必须安装到客户端证书**当前用户**承载该发送处理程序的用户帐户的位置发送端口。 <br /><br /> 最小长度：0<br /><br /> 最大长度：40<br /><br /> 默认值为空字符串。|  
     |**服务证书的指纹**|指定用于验证终结点（此发送端口要将消息发送到的终结点）的 X.509 证书的指纹。 你可以选择导航到的指纹**其他人**将存储在**本地计算机**位置与**浏览**按钮。<br /><br /> 最小长度：0<br /><br /> 最大长度：40<br /><br /> 默认值为空字符串。|  
     |**用户名凭据**|指定用于发送消息的凭据。 你可以通过单击指定属性**编辑**按钮。 你必须设置凭据，如果你选择**用户名**选项**消息客户端凭据类型**。<br /><br /> 默认值是**不使用单一登录**。|  
-    |**使用 ACS 服务标识**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和 BizTalk Server 2013。 <br /><br />选择此复选框，然后单击**编辑**并提供以下值，以使用 Service Bus 进行身份验证。 这是必需的仅当服务总线调用 REST 接口的相关实体。<br /><br /> -   **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间 > 是你的服务总线命名空间。<br />-   **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br />-   **颁发者密钥**– 指定的颁发者密钥。|  
+    |**使用 ACS 服务标识**|适用于[!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]和 BizTalk Server 2013。 <br /><br />选择此复选框，然后单击**编辑**并提供以下值，以使用 Service Bus 进行身份验证。 这是必需的仅当服务总线调用 REST 接口的相关实体。<br /><br /> -   **访问控制服务 STS Uri** – 设置为`https://<Namespace>-sb.accesscontrol.windows.net/`，其中\<命名空间\>是服务总线命名空间。<br />-   **颁发者名称**– 指定的颁发者名称。 通常将此值设置为 owner。<br />-   **颁发者密钥**– 指定的颁发者密钥。|  
     |**服务总线连接信息** | 新开头[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。<br/><br/>选择使用共享访问签名 (SAS) 或 Service Bus 命名空间的访问控制服务 (ACS)。 <br/><br/>选择一个选项，然后选择**编辑**输入的密钥信息：<br/><br/> - **共享访问签名**： 输入访问密钥名称和访问密钥。 这两个值中列出[Azure 门户](https://portal.azure.com)。<br/> - **访问控制服务**： 输入 STS URI (`https://<yourNamespace>-sb.accesscontrol.windows.net/`)，颁发者名称和颁发者密钥。 使用 Windows PowerShell 检索这些值中所述[SB 消息适配器](../core/sb-messaging-adapter.md)。 |
   
 6.  在**行为**选项卡上，配置此发送端口的终结点行为。 
@@ -188,4 +188,4 @@ ms.lasthandoff: 09/20/2017
 
 [使用适配器](../core/using-adapters.md)
 
-[WCF 适配器有哪些？](../core/what-are-the-wcf-adapters.md)
+[WCF 适配器概述](../core/what-are-the-wcf-adapters.md)

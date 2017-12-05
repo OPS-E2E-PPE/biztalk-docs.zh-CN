@@ -12,11 +12,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 103eb58223ba4acd61d909640bacda76d08efe8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42f8328268b82a377bb6d73f3bd7305122a830c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-application-for-interception"></a>如何为侦听配置 Windows Communication Foundation 应用
 必须安装 BAM 侦听器软件并将应用程序配置为使用 BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 侦听器服务后才能开始收集 BAM 活动数据。 我们假定您已成功安装了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 及其依存关系，并至少创建了一个 BizTalk 组。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   必须使用 BAM 管理器命令行工具 (bm.exe) 创建并部署侦听器配置文件。  
   
--   运行主机应用程序的用户必须是相应的 BAM 活动事件写入程序的成员 (bam_\<活动 > _EventWriter) SQL Server 角色，以使应用程序读取配置信息的侦听器和写入 BAM活动。  
+-   运行主机应用程序的用户必须是相应的 BAM 活动事件写入程序的成员 (bam_\<活动\>_EventWriter) SQL Server 角色，以使应用程序读取配置信息的侦听器和写入BAM 活动中。  
   
 -   必须修改服务器和客户端应用程序的 App.config 文件才能加载 BAM 跟踪服务。 修改 App.config 文件之后，必须重新启动应用程序。  
   
@@ -50,9 +50,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  部署使用 bm.exe 观察模型：  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 部署所有-Definitionfile:\<*definitionfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 部署所有-Definitionfile:\<*definitionfile.xml*\>  
   
-     请确保你替换\< *definitionfile.xml*> 替换为你想要部署的观察模型文件的名称。 有关更多选项，请参阅[侦听器管理命令](../core/interceptor-management-commands.md)。  
+     请确保你替换\< *definitionfile.xml* \>替换为你想要部署的观察模型文件的名称。 有关更多选项，请参阅[侦听器管理命令](../core/interceptor-management-commands.md)。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -72,9 +72,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  使用 bm.exe 部署侦听器配置文件：  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 部署侦听器 Filename:\<*icfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\bm.exe 部署侦听器 Filename:\<*icfile.xml*\>  
   
-     请确保你替换\< *icfile.xml*> 替换为你想要部署的侦听器配置文件的名称。  
+     请确保你替换\< *icfile.xml* \>替换为你想要部署的侦听器配置文件的名称。  
   
     > [!NOTE]
     >  你可以使用**-Force: True**标志来重写你侦听器的配置文件中的这些相同的名称的现有事件源。 如果这样做，请确保使用备份的现有配置**get 侦听器**命令。 使用 -Force:True 标志可能会删除所有引用被覆盖的事件源的侦听器配置。  

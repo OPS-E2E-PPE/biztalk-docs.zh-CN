@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88a71a44c305e1eabbcdb9aede32b44439f6b03c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a989c58f59581795f641601938fe76bb7b1671f6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-type-data-element-validation"></a>EDI 类型（数据元素）验证
 EDI 接收管道和 EDI 发送管道对事务集数据元素执行 EDI 验证。 在上将此验证配置的所有消息从或对特定方，通过该参与方的协议属性**验证**页 (下**事务设置设置**任一 X12 的部分或 EDIFACT 协议）。 如果**EDI 类型验证**中未选定属性**验证**页上，将不会执行本主题中所述的验证的数据。  
@@ -99,7 +99,7 @@ EDI 接收管道和 EDI 发送管道对事务集数据元素执行 EDI 验证。
 |-|-|  
 |意外数据|操作|  
 |意外/未定义事务集|即使尚未部署 EDI 接收或发送管道的架构，该管道仍将接受事务集。|  
-|意外段/记录|接收管道将生成一个标记具有相应的前缀： \<UnexpectedSegment_ %segmentid%>。<br /><br /> 发送管道将使用 XML 标记名称的前一至三个字符作为段名称。|  
+|意外段/记录|接收管道将生成一个标记具有相应的前缀： \<UnexpectedSegment_ %segmentid%\>。<br /><br /> 发送管道将使用 XML 标记名称的前一至三个字符作为段名称。|  
 |意外简单数据元素|接收管道将生成带有前缀、段标识符和表示数据元素在段中的位置的索引的 XML 标记：<UnexpectedDataElement_%FieldName%。|  
 |意外复合数据元素|接收管道将生成带有前缀、段标识符和表示数据元素在段中的位置的索引的 XML 标记：<UnexpectedCompositeDataElement_%FieldName%。|  
 |缺少必需数据|管道将此数据视为可选数据。|  

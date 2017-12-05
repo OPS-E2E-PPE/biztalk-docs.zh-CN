@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5401e075e7fcf44d32ec1d1b259c5dd194b6767
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ee4559a8a1111c3000499e87612ae754316596e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-oracle-database"></a>插入、 更新、 删除或选择 BizTalk Server 使用 Oracle 数据库的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现的一组 Oracle 数据库表和视图上的标准操作。 这些行为称为数据操作语言 (DML) 操作操作使用你可以执行简单的 INSERT、 UPDATE、 SELECT、 和 DELETE 语句，由对表和视图的 WHERE 子句限定这些。 有关如何适配器支持这些操作的详细信息，请参阅[插入、 更新、 删除和选择 Oracle 表和视图上的操作](../../adapters-and-accelerators/adapter-oracle-database/insert-update-delete-and-select-operations-on-oracle-tables-and-views.md)。 有关 DML 操作的 SOAP 消息结构的信息，请参阅[基本插入、 更新、 删除和选择表和视图上的操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。  
@@ -173,7 +173,7 @@ ms.lasthandoff: 09/20/2017
  业务流程使用该消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置中。 例如，来自 Oracle 数据库以实现更高版本的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
   <SelectResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY">  
     <SelectResult>  
       <ACCOUNTACTIVITYRECORDSELECT>  

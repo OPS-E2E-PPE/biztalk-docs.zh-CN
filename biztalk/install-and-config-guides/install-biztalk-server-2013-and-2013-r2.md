@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3563fe263a3921979c7a0c143112b1bbe9d73790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e04bbce8870e4f0e8c0edb278511f2a6791d62d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-biztalk-server-2013-and-2013-r2"></a>安装 BizTalk Server 2013 和 2013 R2
 列出安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的步骤。  
   
 ## <a name="before-you-get-started"></a>开始操作之前
 
--   **帐户名** – 应尽可能使用默认帐户名。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装程序会自动输入默认帐户。 如果域中存在多个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组，应更改帐户名，以避免冲突。 如果你更改这些名称，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仅支持\< *NetBIOS 域名*>\\<*用户*> 的服务帐户和 Windows组。  
+-   **帐户名** – 应尽可能使用默认帐户名。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装程序会自动输入默认帐户。 如果域中存在多个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组，应更改帐户名，以避免冲突。 如果你更改这些名称，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仅支持\< *NetBIOS 域名*\>\\<*用户*\>服务帐户和 Windows 组。  
   
 -   **带有 BAM 管理 Web Service 的帐户名称** – [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不支持 BAM 管理 Web Service 用户使用内置帐户或无密码的帐户。 Web 服务会访问 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库，而此类帐户可能带来安全威胁。  
   

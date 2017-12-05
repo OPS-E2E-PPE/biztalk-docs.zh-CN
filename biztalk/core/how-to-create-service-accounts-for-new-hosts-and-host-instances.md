@@ -22,11 +22,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3626f4349fa1e2cc9f739cf0375ab73e3adc7ae0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d4887d78466340b12b95ed43d27523955ab0689
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-service-accounts-for-new-hosts-and-host-instances"></a>如何为新主机和主机实例创建服务帐户
 在单台计算机上安装和配置 BizTalk Server 时，配置管理器将配置必需的 Windows 组和用户帐户。  
@@ -49,10 +49,10 @@ ms.lasthandoff: 09/20/2017
 4.  在创建主机和主机实例时，可使用 Windows 组和服务帐户。  
   
     > [!NOTE]
-    >  未指定\<*计算机名称*> \ 作为单个计算机的设置与本地组中的前缀。  
+    >  未指定\<*计算机名称*\>\ 作为单个计算机的设置与本地组中的前缀。  
   
     > [!NOTE]
-    >  如果你正在使用域组，你必须指定\<*域 NetBIOS 名称*> \ 作为主机 Windows 组名的前缀。 例如 CONTOSO\btssvc。  
+    >  如果你正在使用域组，你必须指定\<*域 NetBIOS 名称*\>\ 作为主机 Windows 组名的前缀。 例如 CONTOSO\btssvc。  
   
 ## <a name="see-also"></a>另请参阅  
  [管理主机和服务帐户](../core/managing-hosts-and-service-accounts.md)   

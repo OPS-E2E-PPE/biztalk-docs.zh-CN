@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 135d514b4272246a4c8b0c256670566795ae774d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66cd358f3d8a4fbda2c4ed43432f1ad8b2f6979e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>BizTalk Server 规划环境
 操作指南的规划节介绍了角色和职责与关联[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 它包括规划对于的应用程序和数据层的建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，并提供规划的建议的版本管理的 BizTalk 解决方案的各个阶段。  
@@ -39,11 +39,11 @@ ms.lasthandoff: 09/20/2017
 |**应用场景**|**若要使用的产品**|  
 |------------------|------------------------|  
 |用户设置|**Microsoft Identity Lifecycle Manager 2010**<br /><br /> 有关 Microsoft Identity Lifecycle Manager 2010 的详细信息，请参阅[Microsoft Identity Lifecycle Manager 2010 FP1](http://go.microsoft.com/fwlink/?LinkId=204577) (http://go.microsoft.com/fwlink/?LinkId=204577)。|  
-|系统之间的数据复制|**SQL Server 复制**<br /><br /> 有关详细信息[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]复制，请参阅[SQL Server 2008 R2 复制](http://go.microsoft.com/fwlink/?LinkID=69978)(http://go.microsoft.com/fwlink/?LinkID=69978)。|  
-|数据提取、 转换和加载 (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> 有关详细信息[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]Integration Services，请参阅[SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044)。|  
+|系统之间的数据复制|**SQL Server 复制**<br /><br /> 有关 SQL Server 复制的详细信息，请参阅[SQL Server 2008 R2 复制](http://go.microsoft.com/fwlink/?LinkID=69978)(http://go.microsoft.com/fwlink/?LinkID=69978)。|  
+|数据提取、 转换和加载 (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> 有关 SQL Server Integration Services 的详细信息，请参阅[SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044)。|  
   
 ## <a name="deciding-which-edition-of-biztalk-server-is-right-for-the-job"></a>决定哪个版本的 BizTalk Server 适合作业  
- 有四个不同版本的[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，其中每个为目标的特定方案。 四个版本的[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]包括：  
+ 有四个不同版本的 BizTalk Server 中，其中每个为目标的特定方案。 四个版本的 BizTalk Server 包括：  
   
 -   **企业**-适用于客户与企业级高容量、 可靠性和可用性的要求。  
   
@@ -51,11 +51,11 @@ ms.lasthandoff: 09/20/2017
   
 -   **分支**-专业版[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]专为中心设计并分支包括 RFID 的部署方案。  
   
--   **开发人员**-出于开发和测试目的提供的所有企业版功能，可用作[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]用于评估目的，不收费的评估版。 当安装为评估版， [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 120 天将函数。  
+-   **开发人员**-出于开发和测试目的提供的所有企业版功能，可用作 BizTalk Server Evaluation Edition 用于评估目的，不收费。 安装为评估版，BizTalk Server 将为 120 天正常工作。  
   
 -   **RFID 企业**-设计用于提供一个可缩放、 可扩展的平台进行开发、 部署和管理的丰富 RFID 和传感器解决方案，包括 BizTalk RFID Server 和 BizTalk RFID 移动。  
   
- 有关不同版本的详细信息[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，请参阅[Microsoft BizTalk Server 版本](http://go.microsoft.com/fwlink/?LinkId=108051)(http://go.microsoft.com/fwlink/?LinkId=108051)。  
+ 有关不同版本的 BizTalk Server 的详细信息，请参阅[Microsoft BizTalk Server 版本](http://go.microsoft.com/fwlink/?LinkId=108051)(http://go.microsoft.com/fwlink/?LinkId=108051)。  
   
 ## <a name="planning-for-message-load"></a>规划消息负载  
  一旦确定了，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]符合你业务的集成需要你应该确定消息负载 BizTalk 解决方案将需要处理的下一步操作。 这是一项重要决定，因为在不同版本[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]具有不同的纵向扩展和横向扩展功能。  
@@ -69,8 +69,8 @@ ms.lasthandoff: 09/20/2017
   
 -   [BizTalk Server 角色和职责](../technical-guides/biztalk-server-roles-and-responsibilities.md)  
   
--   [规划 BizTalk 服务器层](../technical-guides/planning-the-biztalk-server-tier.md)  
+-   [规划 BizTalk Server 层](../technical-guides/planning-the-biztalk-server-tier.md)  
   
 -   [规划数据库层](../technical-guides/planning-the-database-tier.md)  
   
--   [规划开发、 测试、 过渡和生产环境](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)
+-   [规划开发、测试、暂存和生产环境](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)

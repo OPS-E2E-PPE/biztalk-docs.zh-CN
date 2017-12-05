@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f49bda367f9929d3ab320ac7bbaeee6ed49de2a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1443219f8562caee53547be3f78df15834ddf4b7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a>获取 Oracle E-business Suite 操作元数据
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]生成为选择的 Oracle E-business Suite 项目的架构。 在浏览并搜索你想要调用的项目后，你可以生成这些项目的架构和发送消息，符合架构，到 Oracle E-business Suite。  
@@ -63,10 +63,10 @@ ms.lasthandoff: 09/20/2017
     >  如果你将使用适配器服务外接程序来生成 Oracle 项目上的操作的元数据，默认情况下创建这些文件使用特定的命名约定： 生成的 XSD 文件名具有以下三个部分：  
     >   
     >  -   中提供"OracleEBSBinding"或前缀**文件名前缀**框。  
-    > -   中包含的名称**fileNameHint**中生成的 WSDL 批注标记。 对于操作，文件名称提示是相同的操作组。 对于复杂类型，文件名称提示是不带"http://schemas.microsoft.com/OracleEBS/2008/05/"前缀的命名空间。 例如，界面表操作的文件名称提示遵循约定\<InterfaceTables > + < app_short_name > + < interface_table_name >。  
+    > -   中包含的名称**fileNameHint**中生成的 WSDL 批注标记。 对于操作，文件名称提示是相同的操作组。 对于复杂类型，文件名称提示是不带"http://schemas.microsoft.com/OracleEBS/2008/05/"前缀的命名空间。 例如，界面表操作的文件名称提示遵循约定\<InterfaceTables\>+ < app_short_name > + < interface_table_name >。  
     > -   （可选）要确保文件名称是唯一的整数。  
     >   
-    >  最后，一 XSD 文件的名称后到达，作为 < file_name_prefix > 时 +\<fileNameHint > + n，其中"n"是一个唯一的整数。  
+    >  最后，一 XSD 文件的名称后到达，作为 < file_name_prefix > 时 +\<fileNameHint\>+ n，其中"n"是一个唯一的整数。  
   
     > [!NOTE]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会创建包含时指定的绑定属性的绑定文件 （XML 文件） 生成某一操作和要调用的操作的 SOAP 操作的架构。 你可以导入中的此绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来创建连接 URI 的 WCF 自定义端口、 绑定属性和的 SOAP 操作设置。 有关详细信息，请参阅[配置使用端口绑定文件到 Oracle 数据库的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)。  

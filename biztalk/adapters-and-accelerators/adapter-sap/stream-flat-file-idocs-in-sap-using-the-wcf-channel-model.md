@@ -13,14 +13,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3d9641f894a493aa5c2c298a71b1b5a49ffb55a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>SAP 使用 WCF 通道模型中的流平面文件 Idoc
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。 这些操作用于发送和接收平面文件 （字符串） Idoc 与其他适配器。 在这两种操作，整个 IDOC 的数据包含在单个节点下的字符串 (\<idocData >)。 对于大型 Idoc，流式处理的 IDOC 数据适配器和代码之间可能会节省大量的内存资源。  
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。 这些操作用于发送和接收平面文件 （字符串） Idoc 与其他适配器。 在这两种操作，整个 IDOC 的数据包含在单个节点下的字符串 (\<idocData\>)。 对于大型 Idoc，流式处理的 IDOC 数据适配器和代码之间可能会节省大量的内存资源。  
   
  有关如何适配器支持流式处理的背景信息，请参阅[流式处理和 SAP 适配器](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)。 您应该阅读然后再继续本主题。  
   

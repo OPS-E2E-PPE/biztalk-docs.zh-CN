@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec68ad7e60033c0830eaf9977e1edf8ab45847d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89a3722d6d8e1d4b730341dfaf16d60af1686f21
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-test-the-solution"></a>步骤 9： 测试解决方案
 在本主题中，你将通过向部署 EDI 协议所在的 HTTP 终结点发送 X12 840 销售订单消息来测试混合应用程序。 销售订单消息示例如下所示：  
@@ -74,7 +74,7 @@ IEA*1*000000025~
 4.  使用**MessageSender**发送另一条消息，但这次设置的值的数量的排序将邮件中*99*。 你将注意到该现在，在中插入任何记录**SalesOrder**表。 相反，消息将复制到用于接收与订单数量小于 100 的消息指定的文件位置。 收到的消息如下所示：  
   
     ```  
-    \<ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
+    <ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
       <CompanyCode>co</CompanyCode>  
       <PartID>1</PartID>  
       <Quantity>99</Quantity>  
@@ -94,7 +94,7 @@ IEA*1*000000025~
       </Contact>  
       <Comments>Order from Partnerco</Comments>  
       <DateNow>2012-06-19</DateNow>  
-    \</ns1:SalesOrder>  
+    </ns1:SalesOrder>  
   
     ```  
   

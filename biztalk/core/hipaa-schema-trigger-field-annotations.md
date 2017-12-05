@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d3bf6d53ec95ebfc57cff646ce5658fc6b1f4a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8c50db43b14899439877fde8ce0ee476feb5095
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a>HIPAA 架构触发器字段批注
-EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常，业务逻辑确定如何解释这些字段并且拆装器将 N1 段的所有实例解析为相同的 XML 记录名称；但是，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 附带的 HIPAA 架构包含批注，该批注允许 EDI 拆装器根据限定元素的存在与否创建唯一 XML 记录。  
+EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk 服务器随附的 HIPAA 架构包含允许 EDI 反汇编程序，创建基于符合条件的元素存在的唯一 XML 记录的批注。  
   
  **触发器字段实现**  
   
@@ -59,7 +59,7 @@ N4*N401__PayeeCityName*N4*N403__PayeePost**N4*N406~
   
  **默认的段和触发字段**  
   
- 下表包含有关作为 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的一部分提供的 HIPAA 文档中使用的默认段和触发器字段的信息。  
+ 下表包含有关的默认段和触发器在作为 BizTalk 服务器的一部分提供的 HIPAA 文档中使用的字段信息：  
   
 > [!NOTE]
 >  用于触发器字段的各个触发器值在架构之间可能会有所不同。  

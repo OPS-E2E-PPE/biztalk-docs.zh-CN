@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e98f793bb96ae8c74c8f375abda4dc87e580c63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c143d19e6071ca4f9ce488ae936082db86dc84dc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-turn-off-global-tracking"></a>如何关闭全局跟踪
-默认情况下，在安装 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 时启用全局跟踪。 BizTalk 跟踪 (BizTalkDTADb) 数据库的大小随着 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理系统上的数据而增大。 如果 BizTalk 跟踪数据库的大小导致磁盘性能下降，则可以从跟踪数据库中清除数据。 如果存在通过清除 BizTalk 跟踪数据库暂时得以解决的性能问题，并且希望对 BizTalk 进行控制以便不再收集跟踪信息，则可能要考虑禁用全局跟踪功能。  
+默认情况下，安装 BizTalk Server 时，被启用全局跟踪。 BizTalk 跟踪 (BizTalkDTADb) 数据库的大小随着 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理系统上的数据而增大。 如果 BizTalk 跟踪数据库的大小导致磁盘性能下降，则可以从跟踪数据库中清除数据。 如果存在通过清除 BizTalk 跟踪数据库暂时得以解决的性能问题，并且希望对 BizTalk 进行控制以便不再收集跟踪信息，则可能要考虑禁用全局跟踪功能。  
   
  很重要的一点是，关闭全局跟踪会禁用整个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组的跟踪侦听器。 这意味着 BizTalk 将不跟踪其跟踪表中的事件。 或者，您可以针对单个事件关闭跟踪。  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**连接到服务器**对话框中，验证服务器名称和身份验证，，然后单击**连接**。  
   
-3.  在 Microsoft SQL Server Management Studio，在**对象资源管理器**，展开\<*计算机名称*>，展开**数据库**，展开**BizTalkMgmtDb**，展开**表**，右键单击**adm_Group**，然后单击**打开表**。  
+3.  在 Microsoft SQL Server Management Studio，在**对象资源管理器**，展开\<*计算机名称*\>，展开**数据库**，展开**BizTalkMgmtDb**，展开**表**，右键单击**adm_Group**，然后单击**打开表**。  
   
 4.  在表查看器中，水平滚动直到找到**GlobalTrackingOption**。  
   

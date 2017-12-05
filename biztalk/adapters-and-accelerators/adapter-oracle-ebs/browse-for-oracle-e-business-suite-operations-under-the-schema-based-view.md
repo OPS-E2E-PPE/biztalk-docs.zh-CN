@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3dea968a12470498012f7dae4fb3093fc05e59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b9dedc20103787f449cc8c5ac475ef2ed2e0f82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-schema-based-view"></a>用于 Oracle E-business Suite 操作基于架构的视图下浏览
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要浏览的出站和入站操作，可以对 Oracle E-business Suite 执行使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 本主题提供有关如何浏览基于架构的视图下的出站和入站操作的信息。  
@@ -67,16 +67,16 @@ ms.lasthandoff: 09/20/2017
      ![浏览 Oracle 数据库中表](../../adapters-and-accelerators/adapter-oracle-ebs/media/94dd4642-1178-4d88-986b-f0ad409c414c.gif "94dd4642-1178-4d88-986b-f0ad409c414c")  
   
     > [!NOTE]
-    >  如果表包含 BLOB 类型的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName >。 例如，如果表中包含列，照片，类型 BLOB，则适配器将公开**Read_PHOTO**操作。 如果表具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个数 Read_\<LOBColName > 操作。  
+    >  如果表包含 BLOB 类型的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName\>。 例如，如果表中包含列，照片，类型 BLOB，则适配器将公开**Read_PHOTO**操作。 如果表具有多个列类型 BLOB，CLOB、 NCLOB、 BFILE 适配器将公开任意多个数 Read_\<LOBColName\>操作。  
     >   
-    >  同样，如果表包含 BLOB 类型的列，CLOB、 或 NCLOB 适配器还公开特定操作来更新到此类列的数据。 此类操作的名称是否 Update_\<LOBColName >。 例如，如果表中包含列，照片，类型 BLOB，则适配器将公开**Update_PHOTO**操作。 如果表具有多个列类型 BLOB，CLOB、 和 NCLOB 适配器将公开任意多个数 Update_\<LOBColName > 操作。 请注意，对类型 BFILE 的列不支持更新操作。  
+    >  同样，如果表包含 BLOB 类型的列，CLOB、 或 NCLOB 适配器还公开特定操作来更新到此类列的数据。 此类操作的名称是否 Update_\<LOBColName\>。 例如，如果表中包含列，照片，类型 BLOB，则适配器将公开**Update_PHOTO**操作。 如果表具有多个列类型 BLOB，CLOB、 和 NCLOB 适配器将公开任意多个数 Update_\<LOBColName\>操作。 请注意，对类型 BFILE 的列不支持更新操作。  
   
 9. 展开**视图**节点以查看为特定架构的视图的列表。 单击以查看中的视图支持的操作的视图名称**可用类别和操作**框。  
   
      ![Oracle 数据库中的视图浏览](../../adapters-and-accelerators/adapter-oracle-ebs/media/e1893e48-065c-4642-b076-192758d103db.gif "e1893e48-065c-4642-b076-192758d103db")  
   
     > [!NOTE]
-    >  如果视图包含类型 BLOB 的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName >。 例如，如果视图有一列，类型 BLOB 的规则，该适配器将公开**Read_RULE**操作。 如果某个视图具有多个列类型 BLOB、 CLOB、 NCLOB、 BFILE 适配器将公开任意多个系列 Read_\<LOBColName > 操作。 请注意该 Update_\<LOBColName > 视图不支持操作。  
+    >  如果视图包含类型 BLOB 的列，CLOB、 NCLOB、 BFILE 适配器还公开从这类列读取数据的特定操作。 此类操作的名称是否 Read_\<LOBColName\>。 例如，如果视图有一列，类型 BLOB 的规则，该适配器将公开**Read_RULE**操作。 如果某个视图具有多个列类型 BLOB、 CLOB、 NCLOB、 BFILE 适配器将公开任意多个系列 Read_\<LOBColName\>操作。 请注意该 Update_\<LOBColName\>视图不支持操作。  
   
 ## <a name="browsing-for-inbound-operations"></a>为入站操作浏览  
  执行以下步骤以浏览基于架构的视图下的入站的操作。  

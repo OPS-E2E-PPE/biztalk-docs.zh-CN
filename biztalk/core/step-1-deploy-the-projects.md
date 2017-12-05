@@ -12,11 +12,11 @@ caps.latest.revision: "44"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65576724a92cc60d2f4d59b2a868cd4861b5eff5
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: ad4424327f6cd24624abe6b4a850f3c24153e6a4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-deploy-the-projects"></a>步骤 1：部署项目
 ![步骤 1，共 3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
@@ -60,7 +60,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  单击**签名**选项卡上，选择**对程序集签名**。  
   
-3.  从下拉列表中**选择强名称密钥文件**框中，选择**\<浏览 … >**。  
+3.  从下拉列表中**选择强名称密钥文件**框中，选择**\<浏览...\>**.  
   
 4.  在**选择文件**对话框框中，导航到**C:\BTStutorials**，单击**btsTutorials.snk**，然后单击**打开**。 
   

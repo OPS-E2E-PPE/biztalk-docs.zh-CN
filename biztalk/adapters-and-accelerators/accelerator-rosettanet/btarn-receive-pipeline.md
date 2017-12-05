@@ -22,11 +22,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d7d5951b40b5c76b533e6425ee4d898b41c6cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4bc69348cfb99b5e7cebb07c65e05a0513cd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN 接收管道
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]执行 RosettaNet 实现框架 (RNIF) 与 RNIFReceive 管道 (RNIFReceive.btp) 都接收到消息。 接收管道包括以下组件：  
@@ -45,16 +45,16 @@ ms.lasthandoff: 09/20/2017
  此组件 MessageStorageIn 表中存储对收到的消息。 此组件执行由 RNIF 标准所需的不可否认性处理。  
   
 ## <a name="rnmimedecoder"></a>RNMimeDecoder  
- 本组件基于本地的 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] MIME 预处理器/解码器。 RNMimeDecoder 添加 RNIF 处理的以下功能：  
+ 此组件基于上本机 BizTalk Server MIME 预处理器/解码器。 RNMimeDecoder 添加 RNIF 处理的以下功能：  
   
 -   有关 RNIF 2.01 解密的服务内容和附件，如果它们存在。  
   
 -   针对 RNIF 1.1 处理 8 字节标头和负载末尾的分离的签名标头。  
   
- 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]预处理器/解码器，请参阅中的"MIME/SMIME 解码器管道组件"[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]预处理器/解码器，请参阅 BizTalk Server 帮助中的"MIME/SMIME 的解码器管道组件"。  
   
 ## <a name="rndasm"></a>RNDAsm  
- 此组件基于本机[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]XML 反汇编程序。 RNDAsm 添加 RNIF 处理的以下功能：  
+ 此组件基于本机的 BizTalk Server XML 反汇编程序。 RNDAsm 添加 RNIF 处理的以下功能：  
   
 -   如果传入的文档的 DOCTYPE 标头，此组件将从其生成命名空间，并将传入的文档中的所有节点都移至该命名空间。  
   
@@ -64,16 +64,16 @@ ms.lasthandoff: 09/20/2017
   
 -   提升消息属性。  
   
- 有关本地 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 拆装器的详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“XML 拆装器管道组件”部分。  
+ 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]反汇编程序，请参阅 BizTalk Server 帮助中的"XML 的反汇编程序管道组件"。  
   
 ## <a name="rnpartyres"></a>RNPartyRes  
- 本组件基于本地的 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 参与方解析组件。 RNPartyRes 添加 RNIF 处理的以下功能：  
+ 此组件基于本机的 BizTalk Server 参与方解析组件。 RNPartyRes 添加 RNIF 处理的以下功能：  
   
 -   如果传入的消息登录到 BizTalk 方会将发件人证书映射。 如果传入的消息未进行签名，并为其允许的贸易合作伙伴协议，该组件检索发件人方从传递标头 RNIF 2.01 或服务标头 RNIF 1.1。  
   
 -   验证发件人存在和发件人已与主组织贸易合作伙伴协议。  
   
- 有关本地 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 参与方解析组件的详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“参与方解析管道组件”部分。  
+ 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]方解析组件，请参阅 BizTalk Server 帮助中的"方的解析管道组件"。  
   
 ## <a name="messageupdater"></a>MessageUpdater  
  此组件将添加 RNIF 处理的以下功能：  
@@ -128,4 +128,4 @@ ms.lasthandoff: 09/20/2017
 21. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将 RosettaNet 头、服务内容和附件路由到公用流程。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息处理在 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+ [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

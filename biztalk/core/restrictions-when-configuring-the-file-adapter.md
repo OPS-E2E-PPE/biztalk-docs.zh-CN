@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daa14a5eba95b11ac29500dce1d60b60ba608abc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6fbf9296e56db816277f9a7a348377bfa4b359d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-when-configuring-the-file-adapter"></a>配置文件适配器时的限制
 限制和规则时使用的文件适配器。
@@ -36,9 +36,9 @@ ms.lasthandoff: 09/20/2017
   
 -   文件掩码和文件名不区分大小写。  
   
--   文件名称不能包含任何以下字符： \< >: / &#124;" ? * ;  
+-   文件名称不能包含任何以下字符： \< \> : / &#124;" ? * ;  
   
--   文件掩码不能包含任何以下字符： \< >: / &#124;" ; 
+-   文件掩码不能包含任何以下字符： \< \> : / &#124;" ; 
   
 -   以下保留的设备名称不能作为文件的名称： CON、 PRN、 AUX、 时钟 $、 NUL、 COM1、 COM2、 COM3、 COM4、 COM5、 COM6、 COM7、 COM8、 COM9、 LPT1、 LPT2、 LPT3、 LPT4、 LPT5、 LPT6、 LPT7、 LPT8 和 LPT9。 此外，不允许使用这些保留名称与扩展名的任意组合。  
   
@@ -118,15 +118,15 @@ ms.lasthandoff: 09/20/2017
   
 -   文件路径始终必须是绝对路径。  
   
--   你可以使用通用命名约定 (UNC) 格式指定的文件路径 (例如， \\ \\ <*服务器*> \\ < *共享*>)。  
+-   你可以使用通用命名约定 (UNC) 格式指定的文件路径 (例如， \\ \\ <*服务器*\> \\ < *共享*\>)。  
   
--   如果该文件路径是 UNC 格式，服务器名称不得包含以下字符: ' ~ ！ @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< > / ? ;  
+-   如果该文件路径是 UNC 格式，服务器名称不得包含以下字符: ' ~ ！ @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ? ;  
   
 -   不能使用父 (\\...\\) 和当前 (\\。\\) 文件夹中的文件路径的任何部分的符号。  
   
 -   文件路径不区分大小写。  
   
--   文件路径不能包含任何以下字符： \< >: / &#124;" ? * ;  
+-   文件路径不能包含任何以下字符： \< \> : / &#124;" ? * ;  
   
 -   在文件路径中不能使用以下保留的设备名称：CON、PRN、AUX、CLOCK$、NUL、COM1、COM2、COM3、COM4、COM5、COM6、COM7、COM8、COM9、LPT1、LPT2、LPT3、LPT4、LPT5、LPT6、LPT7、LPT8 和 LPT9。  
   

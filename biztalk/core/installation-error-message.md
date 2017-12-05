@@ -15,16 +15,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d3f7bbe9440c737b803eb1e6ae04e96449bf4f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ec99a2e9f20b09c4daddad0336037c7f539782a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installation-error-message"></a>安装错误消息
 安装适用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器后，为其定义发送或接收位置可能会导致以下错误：  
   
- 未能添加接收 URL the Messaging Engine"\<发送/接收位置 URL >"到适配器"TIBCO EMS"。 原因:"文件或程序集名称 TIBCO。EMS，或其依赖项之一未找到。"  
+ 未能添加接收 URL the Messaging Engine"\<发送/接收位置 URL\>"到适配器"TIBCO EMS"。 原因:"文件或程序集名称 TIBCO。EMS，或其依赖项之一未找到。"  
   
 ## <a name="possible-causes"></a>可能的原因  
  此错误通常由下列原因之一引起。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
      该文件位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 目录中（默认安装位置为：[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]）。  
   
-2.  将以下条目添加到 BTSNTSVC.exe.config 文件中，作为的子级\<assemblyBinding > 元素：  
+2.  将以下条目添加到 BTSNTSVC.exe.config 文件中，作为的子级\<assemblyBinding\>元素：  
   
 ```  
 <dependentAssembly>  
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
 </dependentAssembly>  
 ```  
   
- 如果以前尚未修改 BTSNTSVC.exe.config 文件， \<assemblyBinding > 元素不将如下所示：  
+ 如果以前尚未修改 BTSNTSVC.exe.config 文件， \<assemblyBinding\>元素将不如下所示：  
   
 ```  
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

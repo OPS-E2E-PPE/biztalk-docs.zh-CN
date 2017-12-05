@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71287d29d13406d3f1159054e988ef0e2b98a648
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4c6ac3b8a3104e1c96b2dc9ebd880489d3c9833
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="considerations-while-using-biztalk-server-on-a-64-bit-windows-operating-system"></a>在 64 位 Windows 操作系统上使用 BizTalk Server 时的注意事项
-使用时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 64 位 Windows 操作系统中，确保考虑本主题中所述的问题。 经常要求与 Microsoft 的 64 位支持相关的问题[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，请参阅[BizTalk Server 64 位支持](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  
+使用时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 64 位 Windows 操作系统中，确保考虑本主题中所述的问题。 有关 Microsoft BizTalk Server 的 64 位支持的常见问题及问题，请参阅[BizTalk Server 64 位支持](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  
   
 ## <a name="modify-the-process-memory-usage-throttling-threshold"></a>修改限制阈值的进程内存使用量  
  默认情况下，**处理内存使用量**主机限制阈值设置为 25。 如果超出此值时，BizTalk 进程内存使用率为 300 MB 以上，可能会发生限制条件。 在 64 位服务器上，您可以增大此值为 100。 这使得更多的内存消耗由 BizTalk 进程限制发生之前。 有关如何修改限制阈值进程内存使用情况宿主的说明，请参阅[如何修改默认的主机限制设置](http://go.microsoft.com/fwlink/?LinkId=157210)(http://go.microsoft.com/fwlink/?LinkId=157210)。  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  请确保在一个 32 位主机实例中运行这些适配器。  
   
 ## <a name="configure-the-mimesmime-encoder-to-run-in-32-bit-mode"></a>配置 MIME/SMIME 编码器，以便在 32 位模式下运行  
- 在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，MIME/SMIME 编码器管道组件发生故障不具有本机 64 位支持。 这意味着此组件必须运行在 32 位仿真模式进程 (WOW64) 中。 这表示运行此编码器组件（或其所属发送管道）的主机实例必须以 32 位仿真模式运行。 请注意此限制对运行在此主机实例中的其他 BizTalk 元素性能（和其他方面）的影响。
+ 在 BizTalk Server 中，MIME/SMIME 编码器管道组件发生故障不具有本机 64 位支持。 这意味着此组件必须运行在 32 位仿真模式进程 (WOW64) 中。 这表示运行此编码器组件（或其所属发送管道）的主机实例必须以 32 位仿真模式运行。 请注意此限制对运行在此主机实例中的其他 BizTalk 元素性能（和其他方面）的影响。

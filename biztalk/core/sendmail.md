@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2fce9c39fad76ad0e621fb4773cc39efc3488cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6cf0243eccb6a38dc121cfe06a60e30fa0c26c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendmail"></a>SendMail
 SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程内发送电子邮件。 用于发送电子邮件的动态信息是通过使用属性升级功能从 XML 消息中检索得到的。  
@@ -37,7 +37,7 @@ SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Mi
 4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程通过 SMTP 适配器发送构造好的电子邮件。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \AdaptersUsage\SendMail\  
+ \<*示例路径*\>\AdaptersUsage\SendMail\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -54,13 +54,13 @@ SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Mi
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersUsage\SendMail  
+     \<*示例路径*\>\AdaptersUsage\SendMail  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   为本示例创建以下输入文件夹：  
   
-         \<*示例路径*> \AdaptersUsage\SendMail\In  
+         \<*示例路径*\>\AdaptersUsage\SendMail\In  
   
     -   编译[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]此示例项目。  
   
@@ -105,4 +105,4 @@ SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Mi
 2.  观察发送给你在前面的过程中指定的电子邮件地址的电子邮件消息的到达。  
   
 ## <a name="see-also"></a>另请参阅  
- [适配器示例-使用情况](../core/adapter-samples-usage.md)
+ [适配器示例 - 用法](../core/adapter-samples-usage.md)

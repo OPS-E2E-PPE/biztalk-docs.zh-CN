@@ -17,11 +17,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf777931837f036f7228c4a359eef77faa9e97e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 377859a1b2c28774342c6ff9dc5cc312c9fd82d9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-sharepoint-services-adapter-expressions"></a>Windows SharePoint Services 适配器表达式
 本主题介绍该格式，可以指定为值的字符串的含义**文件 NameProperty 源**Windows SharePoint Services 适配器的属性。 它还介绍相关的上下文属性中， **WSS。Filename**和**WSS。ConfigPropertiesXml**。 这些表达式使您很容易基于文本以及从消息或 BizTalk 系统提取的值来定义文件名值，或自定义 Windows SharePoint 服务列值。  
@@ -50,13 +50,13 @@ ms.lasthandoff: 09/20/2017
 |%MessageID%|BizTalk 消息 ID，该 ID 是唯一的 GUID。|  
 |%SendingOrchestrationID%|作为消息起源的业务流程实例的 BizTalk ID。|  
 |%SendingOrchestrationType%|作为消息起源的业务流程的类型名称。|  
-|%Xpath =\<xpath > %|允许指定一个 XPATH，用于从消息中提取值。 "\<xpath >"必须替换为有效的 XPATH 表达式。 **注意：**必须中的 Namespace 别名或 WSS 的表达式的外部定义的命名空间别名。ConfigNamespaceAliases 字段。|  
+|%Xpath =\<xpath\>%|允许指定一个 XPATH，用于从消息中提取值。 "\<xpath\>"必须替换为有效的 XPATH 表达式。 **注意：**必须中的 Namespace 别名或 WSS 的表达式的外部定义的命名空间别名。ConfigNamespaceAliases 字段。|  
 |%Filename%|替换为从消息上下文属性 WSS.Filename 中提取的文件名值。 从 SharePoint 接收的消息已将 WSS.Filename 上下文属性值设置为 SharePoint 文件的名称。 使用 Path.GetFilenameWithoutExtension 对返回值进行预处理。 **注意：**中 WSS 不能使用此宏。配置 * （从业务流程） 的上下文属性。|  
 |%Extension%|替换为从消息上下文属性 WSS.Filename 中提取的文件扩展名值。 从 SharePoint 接收的消息已将 WSS.Filename 上下文属性值设置为 SharePoint 文件的名称。 使用 Path.GetExtension 对返回值进行预处理。 返回值将不会包含“.”。 **注意：**中 WSS 不能使用此宏。配置 * （从业务流程） 的上下文属性。|  
   
  属性升级所支持的任何有效的表达式都是有效的设计时文件名。 设计时文件名将在运行时扩展为 Windows SharePoint Services 文件名。 此 Windows SharePoint Services 文件名具有某些其他限制，如下所述：  
   
--   有效的 Windows 文件名称可以包含除以下外的任何 Unicode 字符: / \: *？  \<> &#124; "# {} %& ~ 或选项卡上字符和多个段。  
+-   有效的 Windows 文件名称可以包含除以下外的任何 Unicode 字符: / \: *？  /< &#124; "# {} %& ~ 或选项卡上字符和多个段。  
   
 -   文件名的长度不得超过 256 个字符，整个 URL 的长度必须小于或等于 256 个字符。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
  [如何配置 Windows SharePoint Services 发送处理程序](../core/how-to-configure-a-windows-sharepoint-services-send-handler.md)   
  [如何配置 Windows SharePoint Services 发送端口](../core/how-to-configure-a-windows-sharepoint-services-send-port.md)   
  [Windows SharePoint Services 适配器属性参考](../core/windows-sharepoint-services-adapter-properties-reference.md)   
- [支持的 Windows SharePoint Services 列类型](../core/supported-windows-sharepoint-services-column-types.md)
+ [支持的 Windows SharePoint Services 栏类型](../core/supported-windows-sharepoint-services-column-types.md)

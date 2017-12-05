@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95b03da5bf56367e59142a241dada6454a74c459
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e8d85a49b410f0571e8e9cb0be816f1feda139e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enlist-orchestration-biztalk-server-sample"></a>登记业务流程 （BizTalk Server 示例）
 “登记业务流程”示例演示如何将 BizTalk Server 业务流程登记到主机。  
@@ -40,9 +40,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置：  
   
--   VBScript 版本： \<*示例路径*> \Admin\WMI\Enlist Orchestration\VBScript\  
+-   VBScript 版本： \<*示例路径*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
--   Visusal C# 版本： \<*示例路径*> \Admin\WMI\Enlist Orchestration\CSharp\  
+-   Visusal C# 版本： \<*示例路径*\>\Admin\WMI\Enlist Orchestration\CSharp\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -64,17 +64,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航至下列文件夹之一，具体哪一个文件夹取决于您打算运行本示例的 VBScript 版本还是 Visual C# 版本：  
   
-     \<*示例路径*> \Admin\WMI\Enlist Orchestration\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
-     \<*示例路径*> AdminWMIEnlist OrchestrationCSharpbinDebug  
+     \<*示例路径*\>AdminWMIEnlist OrchestrationCSharpbinDebug  
   
 2.  使用 cscript 程序运行 EnlistOrch.vbs 文件，或者运行 EnlistOrc.exe 文件，具体要运行哪一个文件取决于您打算运行本示例的 VBScript 版本还是 Visual C# 版本。 在任何事件中，传递以下命令行参数：  
   
-    -   **\<**   
-         ***OrchestrationName* >。** 要登记的业务流程的名称。  
+    -   **\<** ***OrchestrationName* \>。** 要登记的业务流程的名称。  
   
-    -   **\<**   
-         ***AssemblyName* >。** 在其中部署业务流程的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***AssemblyName* \>。** 在其中部署业务流程的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
   
          例如: (VBScript):  
   
@@ -94,4 +92,4 @@ ms.lasthandoff: 09/20/2017
  EnlistOrch.vbs 脚本文件和 Visual C# 源文件 EnlistOrc.cs 包含详细注释，对其执行的操作做了进一步说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

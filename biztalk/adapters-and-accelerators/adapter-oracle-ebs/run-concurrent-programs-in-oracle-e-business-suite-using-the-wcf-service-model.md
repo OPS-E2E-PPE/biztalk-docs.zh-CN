@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aed2b50eab9612e5a2a610047e41560e1dc24576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c9ff6b37f2e18c03a364e3f584ea9f79b547f1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite-using-the-wcf-service-model"></a>调用中使用 WCF 服务模型的 Oracle E-business Suite 的并发程序
 Oracle E-business Suite 公开可以执行以执行对 Oracle 应用程序的特定操作的并发程序。 每个 Oracle 应用程序具有一套标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。 有关如何适配器支持并发程序的详细信息，请参阅[并发程序上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。  
@@ -41,7 +41,7 @@ Oracle E-business Suite 公开可以执行以执行对 Oracle 应用程序的特
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|并发程序|公共\<返回类型 >< Concurrent_program_name > (param 1，param 2，...)|  
+|并发程序|公共\<返回类型\>< Concurrent_program_name > (param 1，param 2，...)|  
   
  例如，下面的代码演示方法签名，用于生成 WCF 客户端类**MS_SAMPLE_COPY_EMP_DATA**和**Get_Status**并发程序。  
   

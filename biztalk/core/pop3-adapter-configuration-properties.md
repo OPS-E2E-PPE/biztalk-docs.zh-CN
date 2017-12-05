@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b2ca87faeb20cb717e20dc5c8b5329de37dca94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bf7aa17f36143f80a82f664dbabd257d7b924db
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="pop3-adapter-configuration-properties"></a>POP3 适配器配置属性
 下表列出了可为 POP3 适配器接收位置设置的配置属性：  
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  在指定的适配器，使用适配器框架构建的 TransportTypeData 配置数据时，使用的名称/值对必须全部存储到\<AdapterConfig > 元素。 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型则\<> 数据中的字符必须进行转义。
+>  在指定的适配器，使用适配器框架构建的 TransportTypeData 配置数据时，使用的名称/值对必须全部存储到\<AdapterConfig > 元素。 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型则\<\>数据中的字符必须进行转义。

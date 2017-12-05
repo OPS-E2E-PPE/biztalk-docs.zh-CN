@@ -17,19 +17,19 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e673e55557af87e5f28005a50c2a01aedf09d2c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0f5a33b8951d1f02cf0504ba833b35adf275834
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update2xmlschema-tool"></a>Update2XMLSchema 工具
-Update2XMLSchema 工具，可修改 HL7 2.XML 架构，若要使用 BizTalk 编辑器。 这是必需的因为某些 HL7 2.XML 架构不正确内工作[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]而不进行修改。 修改后的架构，该工具将它们放在架构文件夹其中[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]已安装，例如， *\<驱动器 >*: files\microsoft BizTalk\<版本 > 快捷键HL7\Templates\Schemas。  
+Update2XMLSchema 工具，可修改 HL7 2.XML 架构，若要使用 BizTalk 编辑器。 这是必需的因为某些 HL7 2.XML 架构不正确内工作[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]而不进行修改。 修改后的架构，该工具将它们放在架构文件夹其中[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]已安装，例如， *\<驱动器\>*: files\microsoft BizTalk\<版本\>HL7\Templates\Schemas 快捷键。  
   
  你需要更新手动因运行 Update2XMLSchema 工具的架构的某些字段。 请参阅[所需的手动更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)有关这些架构的列表。  
   
 ## <a name="syntax"></a>语法  
- 此工具位于*\<驱动器 >*: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\2XML 实用程序。 在命令提示符处使用以下命令运行此工具：  
+ 此工具位于*\<驱动器\>*: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\2XML 实用程序。 在命令提示符处使用以下命令运行此工具：  
   
 ```  
 Update2XMLSchema /s /v  
@@ -52,4 +52,4 @@ Update2XMLSchema /s c:\231XML\v231\xsd /v 2.3.1
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [所需的手动更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)
+-   [需要手动更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)

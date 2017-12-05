@@ -12,19 +12,19 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8c6a188255097f0a1c1e85086688252f9154b36
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3899b27324fa00e0b5c630c7be4433f65a917a1b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-for-disaster-recovery"></a>为灾难恢复配置
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送功能扩展现有的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送无需手动还原的备份作业，生成的备份集的一系列，并发生系统故障时减少停机时间。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送是 BizTalk 灾难恢复过程的关键组件。  
+BizTalk Server 日志传送功能扩展现有的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业。 BizTalk Server 日志传送无需手动还原的备份作业，生成的备份集的一系列，并发生系统故障时减少停机时间。 BizTalk Server 日志传送是 BizTalk 灾难恢复过程的关键组件。  
   
 > [!NOTE]  
 >  每个应用程序团队必须有案可稽的备份和还原进行了补充本主题中提供的概念的灾难恢复计划。 整体计划应该解决整个系统，包括应用程序和操作系统的组件。  
   
- 执行灾难恢复操作是非常类似于手动还原到一组新的 BizTalk 组[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库实例。 主要差别在于，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送将持续在灾难恢复站点，保存许多手动步骤的日志应用。 因此，仅最后一组日志必须手动恢复时[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]实现日志传送。 否则，上次的完整备份自上次完整备份后跟的所有日志备份将必须手动还原。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]日志传送减少此手动过程，加快了灾难恢复站点还原了工作。  
+ 执行灾难恢复操作是非常类似于手动还原到一组新的 BizTalk 组[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库实例。 主要差别在于该 BizTalk Server 日志传送将持续在灾难恢复站点，保存许多手动步骤的日志应用。 因此，仅最后一组日志必须手动恢复时实现日志传送的 BizTalk Server。 否则，上次的完整备份自上次完整备份后跟的所有日志备份将必须手动还原。 BizTalk Server 日志传送减少了工作，此手动过程，加快了还原的灾难恢复站点。  
   
  本部分介绍在生产配置的建议，以便于灾难恢复过程。  
   

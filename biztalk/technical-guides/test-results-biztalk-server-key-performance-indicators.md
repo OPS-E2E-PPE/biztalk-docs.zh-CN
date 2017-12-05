@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc1205b0ca8a3fa502df1616900bd112546c5b5c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab682b0d773a613e6dfcdf143ef0afbeb5af48fa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-results-biztalk-server-key-performance-indicators"></a>测试结果： BizTalk Server 关键绩效指标
 本主题总结了 BizTalk Server 关键绩效指标 (KPI) 测试方案期间观察到。 具体而言，这些测试评估吞吐量测量"**BizTalk： 消息传送/文档处理数/秒**"性能监视器计数器和滞后时间，由 Visual studio 客户端响应时间度量。  
@@ -24,16 +24,16 @@ ms.lasthandoff: 09/20/2017
 ## <a name="summary-of-biztalk-server-key-performance-indicators"></a>BizTalk Server 关键绩效指标的摘要  
  每个方案的物理机被限制，以便已等效的逻辑处理器和虚拟处理器数。 执行此操作使用 /maxmem 和 /numproc boot.ini 开关。 有关使用这些开关的详细信息，请参阅"启动 INI 选项参考"在[http://go.microsoft.com/fwlink/?LinkId=122139](http://go.microsoft.com/fwlink/?LinkId=122139)。  
   
- **比较 BizTalk Server 关键绩效指标 –**运行[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V 上虚拟机提供约有 95%的吞吐量和延迟性能[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在为此测试方案的物理硬件上。 无状态性质，因此[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 其他[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]虚拟机可轻松添加到环境需要提供向外的扩展，并提高系统的整体性能。 创建并添加其他[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]到环境，可以通过实现使用 sysprep 实用工具从基本映像生成新的映像。  
+ **比较 BizTalk Server 关键绩效指标 –** HYPER-V 虚拟机上运行 BizTalk Server 提供在物理硬件上为此测试方案的大约 95%的 BizTalk Server 的吞吐量和延迟性能。 无状态性质，因此[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，其他 BizTalk Server 虚拟机可轻松添加到环境需要提供向外的扩展，并提高系统的整体性能。 可以通过使用 sysprep 实用工具从基本映像生成新的映像完成创建并将其他 BizTalk Server 添加到环境。  
   
 > [!NOTE]  
->  Sysprep 应答文件和脚本提供[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]以适应使用 sysprep 从现有的计算机的映像创建其他映像[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装。 这些示例脚本旨在用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]32 位和 64 位版本的 Windows Server 2008 上安装。 有关详细信息请参阅[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]联机文档。  
+>  Sysprep 应答文件和脚本不提供与 BizTalk Server 以容纳使用 sysprep 从现有的计算机的映像创建其他映像安装 BizTalk Server。 这些示例脚本被旨在与安装在 32 位和 64 位版本的 Windows Server 2008 上的 BizTalk Server 一起使用。 有关详细信息请参阅 BizTalk Server 联机文档。  
   
  设置、 整合和管理的虚拟机可以显著加快通过使用 System Center Virtual Machine Manager (VMM)。 有关 System Center Virtual Machine Manager 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303)  
   
- 在此性能实验室中获得的结果显示从实现运行时的性能显著的改进[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]上[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]HYPER-V 虚拟机中。 运行[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]HYPER-V 上虚拟机提供大约为 75%的吞吐量和延迟性能[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]与物理硬件上运行时，观察到大约 95%的性能[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]和[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]在 HYPER-V 虚拟机。 这种性能提高是很大程度上是由引起的性能提高[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]时作为来宾操作系统在 HYPER-V 上运行。 从相关的性能比较[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]HYPER-V 指南位于[http://go.microsoft.com/fwlink/?LinkId=147144](http://go.microsoft.com/fwlink/?LinkId=147144)。  
+ 在此性能实验室中获得的结果显示从实现运行时的性能显著的改进[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]上[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]HYPER-V 虚拟机中。 运行[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]HYPER-V 上虚拟机提供大约为 75%的吞吐量和延迟性能[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]与物理硬件上运行 BizTalk Server 时，观察到大约 95%的性能和[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]在 HYPER-V 虚拟机。 这种性能提高是很大程度上是由引起的性能提高[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]时作为来宾操作系统在 HYPER-V 上运行。 从相关的性能比较[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]HYPER-V 指南位于[http://go.microsoft.com/fwlink/?LinkId=147144](http://go.microsoft.com/fwlink/?LinkId=147144)。  
   
- 下图显示的性能[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]上的各种测试平台：  
+ 下图阐释了在不同的测试平台上的 BizTalk Server 性能：  
   
  ![BizTalk 关键绩效指标](../technical-guides/media/biztalkkpi.gif "BizTAlkKPI")  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17ae913ddbcdd0b87b6ebfc1a4f38790ecdb67bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea0cd71c22fdd614d2e49c996939b785ecadf8bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>安装设计器扩展性示例
 本部分介绍安装设计器扩展性示例的过程。 你必须安装中的示例[安装和运行路线上负载增加示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)和[安装和运行动态解析示例](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)安装和使用此示例之前。  
@@ -25,13 +25,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Itinerary.OrchestrationSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为的 Microsoft Visual Studio 解决方案文件Extenders.Itinerary.OrchestrationSample.sln。  
   
-2.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，单击**生成解决方案**上**生成**菜单。  
+2.  在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
   
 3.  关闭 Visual Studio。  
   
 4.  在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Resolvers.ResolverSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为的 Visual Studio 解决方案文件Extenders.Resolvers.ResolverSample.sln。  
   
-5.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，单击**生成解决方案**上**生成**菜单。  
+5.  在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
   
 6.  关闭 Visual Studio。  
   

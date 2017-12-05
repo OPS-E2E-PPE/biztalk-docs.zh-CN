@@ -16,11 +16,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c934ec415f336074534ed1add342530bcf2023b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2209d38099bcb440bbb836c7107b0cd106e1d596
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="read-about-the-oracle-database-adapter-binding-properties"></a>阅读有关 Oracle 数据库适配器绑定属性
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现几个绑定属性。 通过设置这些属性，可以控制某些适配器的行为。 本部分介绍[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]绑定属性。 它还演示如何访问它们通过使用.NET 编程或通过设置属性[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]物理端口绑定。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 |**UseAmbientTransaction**|中的|指定是否[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]执行使用由调用方提供的事务上下文的操作。 默认值是**True**，这意味着，适配器始终执行操作在事务上下文中，假设客户端提供的事务上下文。 如果没有参与该事务的其他资源，创建的连接在 System.Transaction 中登记，并且会提升为 MSDTC 事务。<br /><br /> 但是，可以在你不希望在事务上下文中执行操作的适配器的方案。 例如：<br /><br /> -时执行简单的选择操作 Oracle 数据库 （在上发送端口）。<br /><br /> 而指定轮询语句执行选择操作并不涉及对表的 DELETE 语句通过或通过调用存储的过程 （在接收端口） 上的任何更改。<br /><br /> 这两个操作不要对数据库表进行任何更新，因此，从而提升这些操作使用 MSDTC 事务可以是性能开销。 在这种情况下，可以将绑定属性设置为 false，以便[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]没有在事务上下文中执行的操作。<br /><br /> **注意：**最好仅对未对数据库进行更改的操作未在事务上下文中执行操作是。 对于更新数据库中的数据的操作，我们建议将绑定属性设置为 true; 否则为既可能会遇到消息丢失或重复消息，具体取决于您执行的入站或出站操作。|bool (System.Boolean)|  
 |**GeneratedUserTypesAssemblyFilePath**|UDT.NET 类型生成设计时|指定的名称和适配器生成时生成元数据，包含的元数据中使用的所有 Udt 的 dll 的路径。 如果正在生成包、 存储的过程或函数，以便用 Udt 的元数据，必须指定 DLL 名称。 指定 DLL 名称是可选的表和具有 Udt 的视图。 生成的 DLL 将保存到与可执行文件相同的位置。<br /><br /> 只有在生成元数据时，此绑定属性是必需的。<br /><br /> **注意：**必须指定一个文件名。 元数据中的所有 udt，适配器生成具有给定名称的单个文件。 如果不指定一个名称，适配器将生成的 GUID 名称与 DLL。 此绑定属性不是 BizTalk Server 中提供配置时**WCF OracleDB**接收或发送端口。|string|  
 |**GeneratedUserTypesAssemblyKeyFilePath**|UDT.NET 类型生成设计时|指定的名称和密钥文件适配器用来创建强类型的程序集的路径。<br /><br /> 此绑定属性是可选的只有在生成元数据时才需要。<br /><br /> **注意：**此绑定属性不是 BizTalk Server 中提供配置时**WCF OracleDB**接收或发送端口。|string|  
-|**UserAssembliesLoadPath**|UDT.NET 类型生成运行时|指定的 Dll，以分号，这将生成元数据时创建的适配器分隔的名称。 在为指定的位置保存这些 Dll **GeneratedUserTypesAssemblyFilePath**生成元数据时绑定属性。 你必须手动将这些 Dll 复制到以下位置：<br /><br /> **对于 BizTalk 项目**： 复制 Dll 作为 BTSNTSvc.exe 所在的位置。 有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，这是通常下提供\<安装驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。<br /><br /> **对于.NET 项目**： 将 Dll 复制到你的.NET 项目文件夹中的 \bin\Development 文件夹中。<br /><br /> 只有在发送和接收消息，在 Oracle 数据库上执行操作时，此绑定属性是必需的。|string|  
+|**UserAssembliesLoadPath**|UDT.NET 类型生成运行时|指定的 Dll，以分号，这将生成元数据时创建的适配器分隔的名称。 在为指定的位置保存这些 Dll **GeneratedUserTypesAssemblyFilePath**生成元数据时绑定属性。 你必须手动将这些 Dll 复制到以下位置：<br /><br /> **对于 BizTalk 项目**： 复制 Dll 作为 BTSNTSvc.exe 所在的位置。 对于 BizTalk Server 中，这是通常下提供\<安装驱动器\>: files\microsoft BizTalk Server。<br /><br /> **对于.NET 项目**： 将 Dll 复制到你的.NET 项目文件夹中的 \bin\Development 文件夹中。<br /><br /> 只有在发送和接收消息，在 Oracle 数据库上执行操作时，此绑定属性是必需的。|string|  
 |**AcceptCredentialsInUri**|不显示[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。|指定 Oracle 连接 URI 是否可包含 Oracle 数据库的用户凭据。 默认值是**False**，这将禁用连接 URI 中的用户凭据。 如果**AcceptCredentialsInUri**是**False**和 Oracle 连接 URI 包含用户凭据[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]引发异常。 你可以设置**AcceptCredentialsInUri**到**True**如果必须在 URI 中指定凭据。 有关详细信息，请参阅[创建 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。|bool (System.Boolean)|  
   
 ## <a name="how-do-i-set-oracle-binding-properties"></a>如何设置绑定属性的 Oracle？  

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 140022c6ebe197d1b0210d732b623d62d2903cd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f14a199e3422a45235727d2d16fc1464e2e4927
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="disassemble-inbound-batches"></a>反汇编入站的批处理
 
@@ -133,8 +133,8 @@ $
     > [!NOTE]
     >  这些配置属性是有效的仅当启用碎片 (**碎片**设置为**True**)。 当禁用碎片时，反汇编程序发布整个批处理的一个精确副本中的本机窗体中，到 MessageBox 数据库中，以便保留设置是不相关 (*的所有内容*保留)。  
   
- 有关详细信息，有关每个配置属性，以及其他使用情况和配置信息，请参阅[SWIFT 反汇编程序配置属性](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)。 有关 MessageBox 数据库发布和多个部分的消息的详细信息，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关详细信息，有关每个配置属性，以及其他使用情况和配置信息，请参阅[SWIFT 反汇编程序配置属性](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md)。 有关 MessageBox 数据库发布和多个部分的消息的详细信息，请参阅 BizTalk Server 帮助。  
   
 ## <a name="next-step"></a>下一步
   
-[与批处理相关提升的属性](batch-related-promoted-properties.md)
+[与批处理相关的已提升属性](batch-related-promoted-properties.md)

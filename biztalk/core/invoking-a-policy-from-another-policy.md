@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b03204b9de4b763f516b7fb22ada1f4f3f6173a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac45c31ef76213e79249e96fe645ecbb5fb66ed4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoking-a-policy-from-another-policy"></a>从其他策略调用策略
 您可以通过使用以下方式之一从其他策略（父策略）调用策略（子策略）：  
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  选择你想要将一个事实中，作为传递，然后单击的 XML 文档的架构**打开**。  
   
-9. 拖动*\<架构名称 >*到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。  
+9. 拖动*\<架构名称\>*到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。  
   
 10. 如果你使用**执行**方法不采用**IRuleSetTrackingInterceptor**作为第二个自变量，跳过以下步骤。  
   

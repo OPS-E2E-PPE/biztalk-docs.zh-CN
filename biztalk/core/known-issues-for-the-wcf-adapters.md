@@ -12,14 +12,14 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ccdc0c0f36f2dca474b962d3f108e4f287e378f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26c296dfb2ca1f05a2f403aa31a73b67934fb23a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-for-the-wcf-adapters"></a>WCF 适配器的已知的问题
-本主题将介绍 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 随附的 WCF 适配器的已知问题。  
+本主题介绍 BizTalk Server 附带的 WCF 适配器的已知的问题。  
   
 ## <a name="a-message-that-fails-in-the-inbound-soap-marshaling-processing-is-not-suspended-in-wcf-receive-adapters"></a>在入站 SOAP 封送处理中失败的消息不会在 WCF 接收适配器中挂起  
  在消息到达 WCF 接收适配器时，WCF 适配器将从传入的 SOAP 消息创建 BizTalk 消息，然后将 BizTalk 消息传递到由终结点管理器管理的传输代理。 如果创建 BizTalk 消息时该适配器无法读取 SOAP 信封和正文，则消息不会挂起，因为该适配器使用快速、非缓存的只进读取器来访问 SOAP 消息。  

@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6dbd0658b43d9e042718153654a4c2666a01feb5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e26caf02978006040e52ed3c62e520f51362e2c4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-an-adapter-handler"></a>如何创建一个适配器处理程序
 可以使用 BizTalk Server 管理控制台来创建发送或接收适配器处理程序。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在展开的适配器列表中，右键单击的适配器，你想要添加发送或接收处理程序，请指向**新建**，然后单击**发送处理程序**创建发送处理程序，或单击**接收处理者**创建接收处理程序。  
   
-3.  在**\<主机名 > 属性**对话框中，在**常规**选项卡上，在**主机名**列表中，选择将与之适配器处理程序主机关联。  
+3.  在**\<主机名\>属性**对话框中，在**常规**选项卡上，在**主机名**列表中，选择用的主机适配器处理程序将相关联。  
   
 4.  如果要创建适配器发送处理程序，选择该选项以**将此项的默认处理**你是否希望此项为此适配器的默认发送处理程序。  
   

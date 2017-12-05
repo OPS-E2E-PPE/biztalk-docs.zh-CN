@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5499c9535ff822dfec8097185ef17d8d7999e1f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a277149a47fa60dda4df9291ec437ac67c518fdd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-considerations"></a>消息注意事项
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供一套全面的功能发送、 接收、 转换和处理消息。 这些功能包括：  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]  
     >  请参阅[优化业务流程性能](../technical-guides/optimizing-orchestration-performance.md)有关使用中的业务流程时应遵循最佳做法指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 请参阅主题[创建业务流程使用 Orchestration 设计器](http://go.microsoft.com/fwlink/?LinkId=158997)(http://go.microsoft.com/fwlink/?LinkId=158997) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档了解有关使用 Orchestration 设计器的深入信息。  
   
- 本主题的其余部分介绍了与在中处理的消息的大小、 复杂性和分发配置文件相关的性能注意事项[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]环境。  
+ 本主题的其余部分介绍与 BizTalk Server 环境中处理的消息的大小、 复杂性和分发配置文件相关的性能注意事项。  
   
 ## <a name="message-size-considerations"></a>消息大小考虑事项  
  BizTalk Server 规定了对消息大小没有限制，而实际限制和依赖项可能要求你为了尽量减少你的消息的大小，因为大消息需要更多的处理资源。 按消息大小增加，总体吞吐量 （每秒处理的消息） 会降低。 当设计你的方案和规划容量，请考虑平均消息大小、 消息类型和 BizTalk 服务器处理的消息数。 不要使用不必要地长属性和标记名称;如果可能，使时长保持在 50 个字符。 例如，不使用仅有 1 个字节的消息大小的 200 个字符标记名称。  

@@ -16,16 +16,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af4679d277a12335f8a9776695cd829473df460d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dfd87d300314616fe05a033360d84f5d2eb8b8cd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-a-user-mapping"></a>如何启用用户映射
 必须首先启用用户映射，然后才能在单一登录系统中使用该映射。  
   
- 当你启用的用户映射时，它将显示为 (E) **\<域 >\\< 用户名\>**时列出的用户映射。  
+ 当你启用的用户映射时，它将显示为 (E) **\<域\>\\< 用户名\>**时列出的用户映射。  
   
  注意，如果已使用 -setcredentials 命令设置了凭据，则将已启用了映射。  
   
@@ -33,9 +33,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-enablemapping\<域 >\\< 用户名\>\<应用程序名称 >**，其中**\<域 >**是Windows 域用户帐户， **\<用户名 >**是你想要启用凭据，Windows 用户名和**\<应用程序名称 >**是你想要删除的用户映射，然后按 ENTER 关联应用程序的名称。  
+3.  类型**ssomanage-enablemapping\<域\>\\< 用户名\>\<应用程序名称\>**，其中 **\<域\>**是用户帐户的 Windows 域**\<用户名\>**是你想要启用凭据，并选择的Windows用户名**\<应用程序名称\>**是你想要删除的用户映射，然后按 ENTER 关联应用程序的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -44,9 +44,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – enablemapping\<应用程序名称 >**，其中**\<应用程序名称 >**是你想要删除的用户映射的关联应用程序的名称。  
+3.  类型**ssoclient – enablemapping\<应用程序名称\>**，其中**\<应用程序名称\>**是关联的应用程序所需的名称若要删除的用户映射。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

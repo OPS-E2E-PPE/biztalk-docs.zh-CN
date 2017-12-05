@@ -13,11 +13,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a9869bdeaeed638c2cc8c3bf3ace869a0124f73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3868906d4f61242b1344a02147e4e71307d67d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>启用的 Bank 标识符代码的验证
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]架构确保 Bank 标识符代码 (BICs) 在 SWIFT 交换文档中指定符合 SWIFT 定义 BIC 数据格式。 A4SWIFT 还支持验证对数据库中的客户指定 BIC 列表 BICs。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-customize-the-bic-master-policy"></a>若要自定义 BIC Master 策略  
   
-1.  打开 XML 编辑器 （如记事本)，并浏览到  **<*驱动器*程序 Files\ Microsoft BizTalk Accelerator for SWIFT\<版本 > 消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本 > \Base 策略 * *。  
+1.  打开 XML 编辑器 （如记事本)，并浏览到  **<*驱动器*程序 Files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFTMessages\A4SWIFT SRG\<版本\>\Base 策略 * *。  
   
 2.  打开**BIC_Master_Policy.xml**。 将以下现有字符串替换为新值。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在策略存储区页上，在**SQL Server 名称**，选择[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]包含 BizTalk 数据库。 在**选定的服务器上的配置数据库**，选择**BizTalkRuleEngineDb**，然后单击**下一步**。  
   
-8.  在导入规则引擎策略/词汇文件页上，浏览到  **<*驱动器*files\ Microsoft BizTalk Accelerator for SWIFT\<版本 > 消息 Pack\SWIFTMessages\A4SWIFT SRG\<版本 > \Base 策略 * *，单击**BIC_Master_Policy.xml**，单击**打开**，然后单击**下一步**。  
+8.  在导入规则引擎策略/词汇文件页上，浏览到  **<*驱动器*files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 策略 * *，单击**BIC_Master_Policy.xml**，单击**打开**，然后单击**下一步**。  
   
 9. 在准备页上，验证数据，，然后单击**下一步**。  
   
@@ -103,4 +103,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [使用的 BRE 策略](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)   
- [管理 A4SWIFT 数据库中的 Bicplus 表](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)
+ [在 A4SWIFT 数据库中管理 Bicplus 表](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)

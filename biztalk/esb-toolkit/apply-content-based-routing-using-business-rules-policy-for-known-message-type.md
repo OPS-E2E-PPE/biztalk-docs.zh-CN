@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b384c63b26f98a866390a001c7d7c2ec6f3f7cb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 878a6e180aaf7e5f37c5cf98ca0a67790917859a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略
 ## <a name="goal"></a>目的  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="to-create-a-bre-policy-to-route-using-custom-message-properties"></a>若要创建 BRE 策略来路由使用自定义消息属性  
  此规则将使用客户的动态设置用于将消息路由到的终结点。  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**业务规则编辑器**。  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**业务规则编辑器**。  
   
 2.  在策略资源管理器中，右键单击**策略**，然后单击**添加新策略**。 命名策略时**RouteBasedOnCustomerKnownType**。  
   
@@ -102,11 +102,11 @@ ms.lasthandoff: 09/20/2017
   
 10. 从事实数据资源管理器拖动**设置终结点出站传输位置**定义与**操作**。  
   
-11. 单击**\<空字符串 >**然后键入**C:\HowTos\Out\West%MessageID%.xml**。  
+11. 单击**\<空字符串\>**然后键入**C:\HowTos\Out\West%MessageID%.xml**。  
   
 12. 从事实数据资源管理器拖动**设置终结点出站传输类型**定义与**操作**。  
   
-13. 在事实数据资源管理器中，展开**ESB。TransportTypes**，展开**版本 1.0**，然后拖动**适配器提供程序**定义与**\<空字符串 >**。  
+13. 在事实数据资源管理器中，展开**ESB。TransportTypes**，展开**版本 1.0**，然后拖动**适配器提供程序**定义与**\<空字符串\>**.  
   
 14. 在**操作**窗格中，展开**适配器提供程序**下拉列表，然后单击**文件**。  
   
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**操作**部分中，右键单击**C:\HowTos\Out\West%MessageID%.xml**，然后单击**重置参数**。  
   
-8.  单击**\<空字符串 >**，然后键入**C:\HowTos\Out\East%MessageID%.xml**。  
+8.  单击**\<空字符串\>**，然后键入**C:\HowTos\Out\East%MessageID%.xml**。  
   
 #### <a name="to-add-a-routing-rule-for-unknown-customers"></a>若要为未知客户添加一个路由规则  
   
@@ -152,11 +152,11 @@ ms.lasthandoff: 09/20/2017
   
 11. 从事实数据资源管理器中，将设置终结点出站传输位置定义拖动到操作。  
   
-12. 单击\<空字符串 >，然后键入 C:\HowTos\Out\CustomerUnknown%MessageID%.xml。  
+12. 单击\<空字符串\>，然后键入 C:\HowTos\Out\CustomerUnknown%MessageID%.xml。  
   
 13. 从事实数据资源管理器中，将设置终结点出站传输类型定义拖动到操作。  
   
-14. 在事实数据资源管理器中，展开 ESB。TransportTypes，展开版本 1.0，然后拖动到的适配器提供程序定义\<空字符串 >。  
+14. 在事实数据资源管理器中，展开 ESB。TransportTypes，展开版本 1.0，然后拖动到的适配器提供程序定义\<空字符串\>。  
   
 15. 在操作窗格中，展开适配器提供程序下拉列表中，，然后单击文件。  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>若要创建 ESB 路线 DSL 模型  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\HowTos\Patterns\Patterns.sln。  
+1.  在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。  
   
 2.  在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。  
   
@@ -278,9 +278,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [如何： 动态路由基于消息上下文使用业务规则策略在一条消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [如何：使用业务规则策略动态路由基于消息上下文的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

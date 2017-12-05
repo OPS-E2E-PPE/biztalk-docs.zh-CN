@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 052f30e7e1fa2461d1332702dbd61b6aa76451b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d1d39bfa1bfd4cc837a77586d6c462c6b7d7f06
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a>如何导出绑定到绑定文件
 你可以导出到使用绑定文件的另一个现有 BizTalk 应用程序的 BizTalk 应用程序的绑定。 你还可以导出组中的所有绑定或程序集的绑定。 随后，你可以导入的应用程序或组的这些绑定。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 -   您可以在生成绑定文件后对其进行编辑，以更改其中的绑定信息。  
   
 ## <a name="how-to-export-to-a-binding-file"></a>如何将导出到绑定文件  
- 通过执行导出绑定命令中的应用程序导出为绑定文件的应用程序的绑定[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理控制台中，或通过命令行上使用 BTSTask ExportBindings 命令。  
+ 通过在 BizTalk Server 管理控制台中，执行应用程序的导出绑定命令或命令行上使用 BTSTask ExportBindings 命令导出到绑定文件的应用程序的绑定。  
   
  出于安全方面的原因，如果导出绑定文件，BizTalk Server 会从该文件中删除绑定的密码。 在导入绑定后，必须为发送端口和接收位置重新配置密码，它们才能正常运行。 您需要在 BizTalk Server 管理控制台的“传输属性”对话框中为发送端口或接收位置配置密码。  
   

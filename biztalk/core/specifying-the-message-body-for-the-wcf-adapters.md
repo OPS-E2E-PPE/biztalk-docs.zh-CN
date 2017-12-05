@@ -17,11 +17,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 215ba0419bd9e6921c74755a88a17fa639567835
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 109ad486baa542aff3cd1c4a44804ff2fd79aac5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>指定 WCF 适配器的消息正文
 你可以使用**消息**BizTalk 消息正文的方式放置在传出 SOAP 消息并在 WCF 适配器以指定如何将 BizTalk 消息正文提取传入 SOAP 消息时，从选项卡上。  
@@ -35,12 +35,12 @@ ms.lasthandoff: 09/20/2017
   
  若要指定如何创建 BizTalk 消息正文，请选择中的下列选项之一**入站 BizTalk 消息正文**上面各图中的部分：  
   
--   **信封--完整\<soap： 信封 >**。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 使用此选项可以创建并入了所有标头的 BizTalk 消息正文。  
+-   **信封--完整\<soap： 信封\>**。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 使用此选项可以创建并入了所有标头的 BizTalk 消息正文。  
   
     > [!NOTE]
     >  SOAP 标头放置在消息上下文中，但不会自动升级。 可以在自定义管道组件中进行升级。  
   
--   **正文--内容\<soap： 正文 > 元素**。 使用 SOAP 的内容**正文**传入消息创建 BizTalk 消息正文部分的元素。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。  
+-   **正文--内容\<soap： 正文\>元素**。 使用 SOAP 的内容**正文**传入消息创建 BizTalk 消息正文部分的元素。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。  
   
 -   **路径--由正文路径定位的内容**。 使用中的正文路径表达式**正文路径表达式**文本框中，用于创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 当传入消息有二进制数据时，可以使用此选项让 BizTalk 消息正文仅包括二进制数据而没有任何标记。  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  有关**正文路径表达式**属性，仅支持适用于处理只进的 XML 的表达式的 XPath。 有关可用于此属性的 XPath 表达式的详细信息，请参阅"最佳的两个领域:: 组合 XPath 与 XmlReader"网址[http://go.microsoft.com/fwlink/?LinkID=75701](http://go.microsoft.com/fwlink/?LinkID=75701)。  
   
- 如果**路径--由正文路径定位的内容**选项和**节点编码**属性设置为**字符串**，WCF 适配器预期的匹配的节点具有 utf-8编码的字符数据。 如果传入消息包含转义的 XML 的特殊字符的字符数据，如\<和 >，创建 BizTalk 消息正文部分时，WCF 适配器还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如 **&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;**  WCF 适配器创建 **\<FirstName > CONTOSO\</FirstName >**在入站 BizTalk 消息正文。  
+ 如果**路径--由正文路径定位的内容**选项和**节点编码**属性设置为**字符串**，WCF 适配器预期的匹配的节点具有 utf-8编码的字符数据。 如果传入消息包含转义的 XML 的特殊字符的字符数据，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如 **&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;**  WCF 适配器创建 **\<FirstName\>CONTOSO\</FirstName\>** 在入站 BizTalk 消息正文。  
   
  如果**路径--由正文路径定位的内容**选项和**节点编码**属性设置为**十六进制**或**Base64**，匹配的节点可以具有一个有效**BinHex**或**Base64**序列。 如果匹配的节点具有无效的序列，WCF 客户端接收**FaultException**、 在您的 BizTalk Server 计算机上的事件日志中记录一条错误消息和不挂起任何消息。  
   
@@ -84,13 +84,13 @@ ms.lasthandoff: 09/20/2017
   
 |入站 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**信封--完整\<soap： 信封 >**|N/A|N/A|  
+|**信封--完整\<soap 信封：\>**|N/A|N/A|  
   
  如果你配置**BizTalk 消息正文**部分下表中所示，WCF 适配器创建的入站的 BizTalk 消息正文部分以仅包含**顺序**在前面的元素传入的 SOAP 消息。  
   
 |入站 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**正文--内容\<soap： 正文 > 元素**|N/A|N/A|  
+|**正文--内容\<soap： 正文\>元素**|N/A|N/A|  
   
  如果你配置**BizTalk 消息正文**部分下表中所示，WCF 适配器预期正文路径表达式匹配的传入节点将具有 utf-8 编码字符数据。  
   
@@ -134,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
  WCF 适配器编码 BizTalk 消息正文根据**编码**属性在 XML 模板，然后替换**bts 消息正文**编码 BizTalk 消息正文在创建时具有元素出站 WCF 消息。 如果**出站 WCF 消息正文-XML**文本框留空，WCF 适配器编码的 BizTalk 消息正文**Base64**，然后将放**Base64**序列中出站 SOAP 消息正文。  
   
- 如果**编码**XML 模板中的属性设置为**字符串**，WCF 适配器将 BizTalk 消息正文部分编码为 utf-8 编码字符数据，在其中 XML 特殊字符如\<和 > 都会经过转义。  
+ 如果**编码**XML 模板中的属性设置为**字符串**，WCF 适配器将 BizTalk 消息正文部分编码为 utf-8 编码字符数据，在其中 XML 特殊字符如\<和\>都会经过转义。  
   
  如果**编码**XML 模板中的属性设置为**base64**或**十六进制**，WCF 适配器编码为 BizTalk 消息正文部分**BinHex**或**Base64**序列。  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 |出站 WCF 消息正文|XML|  
 |-------------------------------|---------|  
-|**正文--BizTalk 响应消息正文**|\<簿 ><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**字符串**"/ ><br /><br /> \</ 本书 >|  
+|**正文--BizTalk 响应消息正文**|\<书籍\><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**字符串**"/\><br /><br /> \</ 簿\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  
@@ -205,7 +205,7 @@ ms.lasthandoff: 09/20/2017
   
 |出站 WCF 消息正文|XML|  
 |-------------------------------|---------|  
-|**正文--BizTalk 响应消息正文**|\<簿 ><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**base64**"/ ><br /><br /> \</ 本书 >|  
+|**正文--BizTalk 响应消息正文**|\<书籍\><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**base64**"/\><br /><br /> \</ 簿\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://ww  
@@ -234,7 +234,7 @@ FBMmM8L25zMDpPcmRlcklEPg0KICA8L25zMDpPcmRlckRldGFpbD4NCjwvbnMwOk9yZGVyPg==</Book
   
 |出站 WCF 消息正文|XML|  
 |-------------------------------|---------|  
-|**正文--BizTalk 响应消息正文**|\<簿 ><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**xml**"/ ><br /><br /> \</ 本书 >|  
+|**正文--BizTalk 响应消息正文**|\<书籍\><br /><br /> \<**bts 消息正文**xmlns ="http://www.microsoft.com/schemas/bts2010"编码 ="**xml**"/\><br /><br /> \</ 簿\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  

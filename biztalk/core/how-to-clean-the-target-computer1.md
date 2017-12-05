@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4ceaef21127ec010450082228b765dcbb8e76005
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8e187233b8755eb84d6169192542d48ce2e86ec3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-clean-the-target-computer"></a>如何清洗目标计算机
 部署将覆盖接收位置配置。 当你部署的目标计算机上，发送端口的绑定文件 （和程序集） 和接收位置已替换为 XML 绑定文件中导入时。  
@@ -23,5 +23,5 @@ ms.lasthandoff: 11/07/2017
   
          例如，在命令提示符下运行：  
   
-         **cscript RemoveSendPort.vbs\<发送端口名称 >**  
+         **cscript RemoveSendPort.vbs\<发送端口名称\>**  
   

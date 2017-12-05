@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06ebfbc9f895525b44174c0e947f5700d54b324f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdaa0f0639bc640e87ff59e3cee0c229319de4ff
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>监视与 System Center Operations Manager 2007 的 BizTalk Server
-监视你的 BizTalk 应用程序和基础结构与 Microsoft System Center Operations Manager (Operations Manager) 是首选的监视方法。 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Operations Manager 的管理包提供主动式和反应式监视运行的计算机的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些管理包提供多个内置的自定义规则，以允许进行全面且自动监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+监视你的 BizTalk 应用程序和基础结构与 Microsoft System Center Operations Manager (Operations Manager) 是首选的监视方法。 Operations Manager 的 Microsoft BizTalk Server 管理包提供主动式和反应式监视运行的计算机的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些管理包提供多个内置的自定义规则，以允许进行全面且自动监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
  以下 BizTalk Server 管理包是可与 Operations Manager 一起使用：  
   
@@ -29,9 +29,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [使用 Operations Manager 2007 监视的最佳做法](../technical-guides/best-practices-for-monitoring-with-operations-manager-2007.md)  
+-   [使用 Operations Manager 2007 进行监视的最佳做法](../technical-guides/best-practices-for-monitoring-with-operations-manager-2007.md)  
   
--   [监视限制使用性能阈值规则](../technical-guides/monitoring-throttling-using-performance-threshold-rules.md)  
+-   [使用性能阈值规则监视带宽限制](../technical-guides/monitoring-throttling-using-performance-threshold-rules.md)  
   
 -   [监视 SQL Server](../technical-guides/monitoring-sql-servers.md)  
   

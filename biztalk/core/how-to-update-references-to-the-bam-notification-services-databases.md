@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 394a002fedaffbb9c67fa4b0ae0229215e6d8efa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c27f1ecaf07c3f953372a9e5733d62c8376a288f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-notification-services-databases"></a>如何更新对 BAM Notification Services 数据库的引用
 执行完将业务活动监视 (BAM) Notification Services 数据库还原到目标系统所需的步骤后，必须在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组中运行 Notification Services (NSservice.exe) 的所有计算机上重新注册 Notification Services。 这样可使 Notification Services 连接到新位置上的数据库。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  打开在步骤 2 中创建的 xml 文件以获取必须重新注册 Notification Services 的计算机列表。  
   
-     中列出的计算机名称**\<属性名称\=>** 中的参数 **\<DeploymentUnit 名称 ="警报">** xml 部分文件：  
+     中列出的计算机名称**\<属性名称\=\>** 中的参数 **\<DeploymentUnit 名称 ="警报"\>** xml 文件的部分内容：  
   
     ```  
     -<DeploymentUnit Name="Alert">  
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  单击**启动**，单击**程序**，单击**Microsoft SQL Server 2008 R2**，单击**配置工具**，然后单击**通知服务命令提示符**。  
   
-    2.  在命令提示符处，键入： **nscontrol register-name BamAlerts-服务器**  *\<ServerName >***-服务-serviceusername"** *\<ServiceUserName >***"-servicepassword"***\<ServicePassword >***"**  
+    2.  在命令提示符处，键入： **nscontrol register-name BamAlerts-服务器**  *\<ServerName\>***-服务-serviceusername"** *\<ServiceUserName\>***"-servicepassword"***\<ServicePassword\>***"**  
   
          这样可使 Notification Services 登录到正确的数据库（此信息由 nscontrol 在服务所在计算机的注册表中维护）。  
   
@@ -104,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 在命令提示符下，键入：  
   
-     **nscontrol register-名称***\<BamAlerts >***-服务器**  *\<NotificationServicesDatabaseServer >*   
+     **nscontrol register-名称***\<BamAlerts\>***-服务器**  *\<NotificationServicesDatabaseServer    \>*  
   
 11. 在命令提示符处，键入： **net 开始 NS$ BamAlerts**。  
   

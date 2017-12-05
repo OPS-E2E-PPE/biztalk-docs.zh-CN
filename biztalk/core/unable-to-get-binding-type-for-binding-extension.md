@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 453a579daae80a202df1ed4d3c72ae9c13f47d9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79b649f69b7503f345f212aa5f014ce7b256148d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a>无法获取绑定扩展的绑定类型
 ## <a name="details"></a>详细信息  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>用户操作  
  要解决此错误，请执行以下一项或多项操作：  
   
--   确保**machine.config 文件**中**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions**> 元素正确配置。  
+-   确保**machine.config 文件**中**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions** \>正确配置的元素。  
   
 -   在 Windows 资源管理器，转到**%WinDir%\Assembly**，并确保正确安装的程序集实现的自定义绑定扩展。  
   

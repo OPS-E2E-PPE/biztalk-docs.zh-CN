@@ -16,19 +16,19 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2a5ee569ff05acf9a14293503ee1238e311bcf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3eeb0a6d4a1fceebe7e16b3f71566f848e4a20f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Siebel 中的 SELECT 语句的语法
 使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端可以通过指定 WHERE 子句表示有效的 Siebel 搜索规范 Siebel 业务组件上执行 SELECT 查询。 SELECT 语句的语法是：  
   
 ```  
 SELECT  
-\<column name 1> AS \<column alias 1>,  
-\<column name 2> AS \<column alias 2>,  
+<column name 1> AS <column alias 1>,  
+<column name 2> AS <column alias 2>,  
 …  
 FROM  
 <Business object name>.<Business component name> AS <table alias>  
@@ -54,7 +54,7 @@ OPTION
   
  搜索规范的规则包括：  
   
--   必须使用标准的比较运算符来比较字段设置为常量或对另一个域的一个字段。 其中包括 =、 ！ =、 >， \<，> =、 和 < =。  
+-   必须使用标准的比较运算符来比较字段设置为常量或对另一个域的一个字段。 其中包括 =、 ！ =、 >，<>、 =、 和 < =。  
   
     ```  
     Example: [Revenue] > 5000  
@@ -97,4 +97,4 @@ OPTION
 -   排序规范表达式必须为 255 个字符或更少。  
   
 ## <a name="see-also"></a>另请参阅  
- [.NET Framework 数据提供程序用于 Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)
+ [使用用于 Siebel eBusiness 应用程序的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)

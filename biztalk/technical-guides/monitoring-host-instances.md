@@ -12,17 +12,17 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 561c40e791d82b28060a45ada51bebed4cd784c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b41dd0e01aa1e28862a3e99cfc767b3dd6ddec3c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-host-instances"></a>监视主机实例
 本主题介绍使用 Microsoft System Center Operations Manager 的监视 BizTalk 主机实例。  
   
 ## <a name="using-threshold-rules-to-monitor-health"></a>使用阈值规则来监视运行状况  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理包包含提供 BizTalk 主机的运行状况的综合视图的性能阈值规则。 提供以下两种不同类型的阈值规则：  
+ BizTalk Server 管理包包含提供 BizTalk 主机的运行状况的综合视图的性能阈值规则。 提供以下两种不同类型的阈值规则：  
   
 -   一般情况下 （例如，对所有 BizTalk 主机和所有 MessageBox 数据库） 应用的规则。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 -   你应创建基于模板规则和适当的阈值的 BizTalk 特定于宿主的规则。  
   
 ## <a name="monitoring-biztalk-host-instances"></a>监视 BizTalk 主机实例  
- 面向特定的 BizTalk 主机的规则是从监视角度来看更灵活。 BizTalkServerApplication 主机中提供的监视规则的所有阈值[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理包是模板规则。 若要使用这些规则，应使用 Operations Manager 管理员控制台：  
+ 面向特定的 BizTalk 主机的规则是从监视角度来看更灵活。 BizTalkServerApplication 主机 BizTalk Server 管理包中提供的所有阈值监视规则都是模板规则。 若要使用这些规则，应使用 Operations Manager 管理员控制台：  
   
 -   创建一份中的模板规则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]规则组并将其重命名。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
  如果你使用的特定于宿主的阈值监视规则，则应禁用泛型的监视规则。 这可阻止多余警报。  
   
 ## <a name="see-also"></a>另请参阅  
- [监视与 System Center Operations Manager 2007 的 BizTalk Server](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [使用 System Center Operations Manager 2007 监视 BizTalk Server](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

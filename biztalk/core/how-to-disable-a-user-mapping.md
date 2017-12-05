@@ -16,24 +16,24 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 417a28dd117a51d0bb1d45238f0efc96417c391a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b17ab68356d5d39f3f839f736261d4a7ef79c78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-a-user-mapping"></a>如何禁用的用户映射
 当需要关闭与给定映射关联的所有操作时，可以禁用用户映射。 在删除用户映射之前必须禁用该映射。  
   
- 当禁用用户映射时，它将显示为 (D) *\<域 >\\< 用户名\>*时列出的用户映射。  
+ 当禁用用户映射时，它将显示为 (D) *\<域\>\\< 用户名\>*时列出的用户映射。  
   
 ### <a name="to-disable-a-user-mapping-using-the-administration-utility"></a>使用管理实用工具禁用用户映射  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型 **ssomanage-disablemapping *\<域 >*\\*\<用户名 >\<应用程序名称 >***，其中*\<域 >*是用户帐户的 Windows 域和*\<用户名 >*是你想要禁用的 Windows 用户名称凭据，和*\<应用程序名称 >*是你想要删除的用户映射的关联应用程序的名称。  
+3.  类型 **ssomanage-disablemapping *\<域\>*\\*\<用户名\>\<应用程序名称\>** *，其中*\<域\>*是用户帐户的 Windows 域和*\<用户名\>*是你想要禁用凭据，Windows 用户名和*\<应用程序名称\>*是你想要删除的用户映射的关联应用程序的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – disablemapping *\<应用程序名称 >***，其中*\<应用程序名称 >*是关联的名称你想要删除的用户映射的应用程序。  
+3.  类型**ssoclient – disablemapping *\<应用程序名称\>***，其中*\<应用程序名称\>*是你想要删除的用户映射的关联应用程序的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fea95a74a15c685f2cff202fcf7f04c86244041b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f50e4de965e8f1efaa1454bb9123317ae904f7e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="related-activities"></a>相关的活动
 “相关活动”区域包含与查询所基于的活动相关的活动的列表。 例如，“采购订单”活动的相关活动可以是多个“发货”活动，因为一个采购订单中的货物可以通过多次发货来交付。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 -   定义两个活动。 开发人员通过调用 AddRelationship() 并定义活动之间的关键字关系、字段关系和值关系，在自定义应用程序中建立相关连接。  
   
- 通过以下方式之一定义的活动关系将添加中的行\<activityname > _Relationships 表。  
+ 通过以下方式之一定义的活动关系将添加中的行\<activityname\>_Relationships 表。  
   
 > [!NOTE]
 >  只有第一种定义关系的方法会使相关活动实时地相互连接。 由于第二种方法不能定义延伸视图，因此门户无法知道两个活动之间的关系。  

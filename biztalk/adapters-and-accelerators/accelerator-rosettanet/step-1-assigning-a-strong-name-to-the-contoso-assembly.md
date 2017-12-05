@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7124561b9f842a7cc980c7a54230cd122ae32856
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d388fc725b8aaeec4cbfa80c23bd5e2a1b42a27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-assigning-a-strong-name-to-the-contoso-assembly"></a>步骤 1： 为 Contoso 程序集分配强名称
 在此步骤中，你将为 BizTalk 程序集创建并分配一个强名称。 强名称通过分配一个数字签名和一个唯一的密钥对可确保程序集的唯一性。 此外，强名称还提供了完整性检查以确保自上次构建以来程序集的内容没有发生变化。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 2.  在命令提示符处，转到 Contoso 解决方案的位置。  
   
     > [!NOTE]
-    >  默认情况下，Contoso 解决方案的位置是*\<驱动器 >*: \Documents and 设置\\*\<用户名 >*documents\visual Studio \<版本 > \Projects。  
+    >  默认情况下，Contoso 解决方案的位置是*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\MyDocuments\Visual Studio\<版本\>\Projects。  
   
 3.  在命令提示符处，键入**sn-k FabConPriceAvail.snk**，然后按**Enter**。  
   

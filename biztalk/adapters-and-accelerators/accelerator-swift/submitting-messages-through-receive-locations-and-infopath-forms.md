@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6cddeca2eb80fbeb7c9fb5742e2838a860079d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4589649be79ce369f0e6756ae7f96615d4a36c0f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>通过提交消息接收位置和 InfoPath 窗体
 接收位置接收消息提交至[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]应用程序。 你可以定义接收位置作为物理终结点配置为接收使用指定的传输协议的消息。 例如，接收位置可能配置为拖放到特定的文件系统文件夹使用文件传输的接收文件。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  若要提交到 A4SWIFT 应用程序接收位置通过 SWIFT 消息，消息必须是拖放到配置的接收位置、 通过使用 SWIFT 反汇编程序接收管道处理、 分析和通过 SWIFT 反汇编程序中，验证和发布到 MessageBox 数据库。 消息发布到 MessageBox 数据库之后，你 A4SWIFT 的应用程序中的其他组件以进行其他处理检索 （使用订阅） 的消息。 例如，可用于发送端口最终路由。  
   
- 有关创建和配置详细信息接收端口和接收位置，请参阅[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关创建和配置的详细信息接收端口和接收位置，请参阅 BizTalk Server 帮助。  
   
  您还可以提交一条新消息通过[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，使用消息修复和新提交功能。 若要执行此操作，你可以打开[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]该消息从 MRSR 网站的文件夹中的窗体。 在中的数据填充[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体、 使用您的证书，其签名，然后提交它。 消息修复和新提交业务流程处理的消息。  
   

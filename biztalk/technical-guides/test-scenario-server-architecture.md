@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34a437cdc306a25d8f5e688880c55530ea9703f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49a51244b7033c6cebc978a39ad37dd5732fa38d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-server-architecture"></a>测试方案服务器体系结构
 本主题概述了在负载测试期间的服务器和对其执行负载测试的不同服务器体系结构之间的消息流。  
@@ -65,9 +65,9 @@ ms.lasthandoff: 09/20/2017
 5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]处理响应并保存到 MessageBox 数据库响应消息。 然后从 BizTalk 请求-响应端口，MessageBox 数据库检索来自计算器 web 服务的响应消息和响应消息发送回的负载测试代理计算机。  
   
 ## <a name="baseline-server-architecture"></a>基线服务器体系结构  
- 对于基线服务器体系结构，HYPER-V 角色未安装且两[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]已将其安装到主机操作系统。 这样做是为了建立的"基准"性能指标[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案上的物理硬件环境。  
+ 对于基线服务器体系结构，HYPER-V 角色未安装且两[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 SQL Server 安装到主机操作系统。 这样做是为了建立的"基准"性能指标[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案上的物理硬件环境。  
   
- 下图描述了物理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]基线服务器体系结构的层。  
+ 下图描述了物理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 SQL Server 层的基线服务器体系结构。  
   
  ![物理 BizTalk &#47;物理 SQL](../technical-guides/media/archphysicalbts-physicalsql.gif "ArchPhysicalBTS_PhysicalSQL")  
 物理 BizTalk Server / 物理 SQL Server （基线）  
@@ -80,7 +80,7 @@ ms.lasthandoff: 09/20/2017
   
     -   总的 6 + 3 = **9**可用 GB RAM 和 8 + 4 = **12**处理器内核可用于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
--   **SQL Server** -1 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ，如下所示配置计算机：  
+-   **SQL Server** -1，如下所示配置的 SQL Server 计算机：  
   
     -   **8** GB RAM 可。  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
  ![虚拟 BizTalk &#47;物理 SQL](../technical-guides/media/archvirtualbts-physicalsql.gif "ArchVirtualBTS_PhysicalSQL")  
 虚拟 BizTalk Server / 物理 SQL Server  
   
- 对于此方案中，针对执行负载测试[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 虚拟机上运行和[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]在物理硬件上运行。  
+ 对于此方案中，针对执行负载测试[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 虚拟机和物理硬件上运行的 SQL Server 上运行。  
   
 > [!NOTE]  
 >  如下所述的 RAM 和处理器内核的分配时相同对于每个非基线方案，唯一的区别是某些计算机是否有运行在 HYPER-V 虚拟机上或在物理硬件上。  
@@ -103,14 +103,14 @@ ms.lasthandoff: 09/20/2017
   
     -   4 个处理器核心分配给每个[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机具有的 3 x 4 总 = **12**处理器内核可用于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
--   **SQL Server** -1 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ，如下所示配置计算机：  
+-   **SQL Server** -1，如下所示配置的 SQL Server 计算机：  
   
     -   **8** GB RAM 可。  
   
     -   **4**处理器内核可用。  
   
 ## <a name="virtual-biztalk-server--virtual-sql-server"></a>虚拟 BizTalk Server / 虚拟 SQL Server  
- 下图描述了虚拟[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和虚拟[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]独立 HYPER-V 主机计算机上的计算机。  
+ 下图描述了虚拟[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和虚拟 SQL Server 计算机上单独的 HYPER-V 主机计算机。  
   
  ![虚拟 BizTalk &#47;虚拟 SQL](../technical-guides/media/archvirtualbts-virtualsql.gif "ArchVirtualBTS_VirtualSQL")  
 虚拟 BizTalk Server / 虚拟 SQL Server  
@@ -121,7 +121,7 @@ ms.lasthandoff: 09/20/2017
 >  RAM 和处理器内核用于这种情况下分配是相同的分配的内存和处理器内核**虚拟 BizTalk Server / 物理 SQL Server**方案、 唯一的区别是，[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]已配置为在 HYPER-V 虚拟机，而不是物理硬件上运行。  
   
 ## <a name="consolidated-environment"></a>统一的环境  
- 下图描述了虚拟[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和虚拟[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]计算机合并到一台 HYPER-V 主机计算机上。  
+ 下图描述了虚拟[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和虚拟 SQL Server 计算机合并到一台 HYPER-V 主机计算机上。  
   
  ![虚拟 BizTalk &#47;虚拟 SQL &#47;合并](../technical-guides/media/archvirtualbts-virtualsql-consolidated.gif "ArchVirtualBTS_VirtualSQL_Consolidated")  
 统一的环境  

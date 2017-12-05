@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a634c2e0a97e627925390610bf4c3039c8afc85c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c85badfaf22ff4fb6aebd9ed19c757faaa1f303c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>如何使用调用规则形状
 在业务流程设计器中，你可以使用**调用规则**形状以调用业务策略。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
      右键单击连接的线条或形状占位符想要添加该形状，指向**插入形状**上下文菜单，然后单击**调用规则**。  
   
     > [!NOTE]
-    >  在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，不需要具有原子作用域插入**调用规则**形状。 您可以拖动**调用规则**从工具箱调整到业务流程设计图面。 但是，在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]、**调用规则**菜单项被禁用的上下文菜单中，如果你尝试插入**调用规则**内没有原子作用域的业务流程的形状。 这是与限制[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]产品。  
+    >  在 BizTalk Server 中，不需要具有原子作用域插入**调用规则**形状。 您可以拖动**调用规则**从工具箱调整到业务流程设计图面。 但是，在 BizTalk Server 中，**调用规则**菜单项被禁用的上下文菜单中，如果你尝试插入**调用规则**内没有原子作用域的业务流程的形状。 这是与限制[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]产品。  
   
 2.  在业务流程设计器中，选择**调用规则**形状。  
   

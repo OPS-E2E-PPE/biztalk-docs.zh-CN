@@ -16,11 +16,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 968e098f195615dc0606d33e584e62184c323794
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3fbd3c28dc6499cb83fcff672673f729ac970ea4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="modifying-a-workflow"></a>修改工作流
-请参阅\<驱动器： > files\microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc 为 BizTalk 快捷键有关详细信息。
+请参阅\<驱动器：\>files\microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc 为 BizTalk 快捷键有关详细信息。

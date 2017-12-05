@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71f689b035f926e0fd5bbdaa159e1450fbad92b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1164cb59bf7fe0e168834f60364cd82f871b3ae0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-channel-model"></a>轮询 Oracle E-business Suite SELECT 语句中使用 WCF 通道模型
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要通过使用 SELECT 语句持续轮询接口表接收定期的数据更改消息，接口视图、 表和 Oracle E-business Suite 中的视图。 你可以指定为适配器执行定期轮询 Oracle E-business Suite 的轮询语句的 SELECT 语句。 你还可以指定后轮询 PL/SQL 代码块适配器执行执行轮询语句后。  
@@ -184,7 +184,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="example"></a>示例  
  下面的示例演示的轮询应用程序轮询 MS_SAMPLE_EMPLOYEE 接口表。 **PollingInput**属性包含从 MS_SAMPLE_EMPLOYEE 表中读取所有数据的 select 语句和 post 轮询语句从同一个表中删除所有数据。 轮询消息写入到`C:\PollingOutput.xml`。  
   
- 更多的数据添加到 MS_SAMPLE_EMPLOYEE 接口表之前，后续的轮询消息将不包含任何记录。 你可以通过运行这些示例使用提供的 insert_apps_data.sql 脚本来实现。 运行此脚本后下, 一个轮询操作将获取新记录插入到表。 适配器将继续轮询，直到按关闭服务主机\<返回 >。  
+ 更多的数据添加到 MS_SAMPLE_EMPLOYEE 接口表之前，后续的轮询消息将不包含任何记录。 你可以通过运行这些示例使用提供的 insert_apps_data.sql 脚本来实现。 运行此脚本后下, 一个轮询操作将获取新记录插入到表。 适配器将继续轮询，直到按关闭服务主机\<返回\>。  
   
 ```  
 using System;  

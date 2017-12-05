@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efdb0a358b378886b8944c9d3d9428b169bab7a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc79fd31e78581d98ecad34579958ff90f3b1e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="prerequisites-for-the-development-activities"></a>开发活动的先决条件
 本部分介绍如何准备环境，以完成的一部分包括的开发活动中的步骤[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 你在尝试任何开发活动中的过程之前，请完成以下设置：  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
     -   C:\HowTos\Out  
   
-4.  确保你[!INCLUDE[prague](../includes/prague-md.md)]服务帐户具有**完全控制**到 C:\HowTos 目录结构的权限。  
+4.  确保您的 BizTalk Server 服务帐户具有**完全控制**到 C:\HowTos 目录结构的权限。  
   
 5.  确保你的 Microsoft BizTalk Server 服务帐户具有**编写**C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out 权限。  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="create-the-visual-studio-solution"></a>创建 Visual Studio 解决方案  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在文件菜单中，指向**新建**，然后单击**项目**。  
+1.  在 Visual Studio 中，在文件菜单中，指向**新建**，然后单击**项目**。  
   
 2.  在**新项目**对话框中，在项目类型窗格中，单击**Visual C#**，然后单击**类库**在模板窗格中。  
   

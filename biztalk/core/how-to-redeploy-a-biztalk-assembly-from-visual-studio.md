@@ -12,16 +12,16 @@ caps.latest.revision: "41"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 361d2bccc783e7bfc7aa6cb0cd1f3eab51d8e640
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1357cb936c0b6f7f830bf1cc77f3d1670cf326aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a>如何从 Visual Studio 重新部署 BizTalk 程序集
 在开发程序集的过程中，你通常需要重复地部署、测试、修改以及重新部署该程序集。 在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，如果你希望在不更改版本号的情况下重新部署程序集，则首先需要手动停止、取消登记和取消绑定包含在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 程序集中的项目，然后从 BizTalk 管理（配置）数据库中删除该程序集。 此外，在重新部署程序集后，还需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中绑定、登记和启动程序集的项目。  
   
- 不过，在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中，如果你启用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的“重新部署”选项，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将自动执行重新部署程序集所需执行的所有步骤。 尽管可以从项目级重新部署某个程序集（如在解决方案资源管理器中右键单击该项目，然后单击“部署”），但我们强烈建议你始终从解决方案级重新部署程序集（如通过右键单击该解决方案，然后单击“部署”）。 后面的方法将立即重新部署解决方案中的所有程序集，并处理具有依赖项时涉及到的所有步骤（在后面介绍）。  
+ 使用 BizTalk Server 中，但是，当你启用中的重新部署选项[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]也会自动编制的所有步骤后，重新部署你的程序集。 尽管可以从项目级重新部署某个程序集（如在解决方案资源管理器中右键单击该项目，然后单击“部署”），但我们强烈建议你始终从解决方案级重新部署程序集（如通过右键单击该解决方案，然后单击“部署”）。 后面的方法将立即重新部署解决方案中的所有程序集，并处理具有依赖项时涉及到的所有步骤（在后面介绍）。  
   
 > [!IMPORTANT]
 >  虽然需要在项目级重新部署的情况少之又少，但一般情况下，你应始终在解决方案级重新部署。  
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
     |*解决方案名称*|解决方案文件的完整路径和名称。|  
   
 ## <a name="see-also"></a>另请参阅  
- [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

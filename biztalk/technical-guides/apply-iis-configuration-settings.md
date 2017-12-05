@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a032070876df6bea0579a159d527a6ad903e2ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6309da02c84b9c317e0743a8ca2199237e835abb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="apply-iis-configuration-settings"></a>将 IIS 配置设置应用
 默认情况下 SOAP、 HTTP，并基于 HTTP 的 WCF 适配器 （和.NET 通常） 打开只有两个并发的 HTTP 连接从每个 BizTalk 主机实例到任何特定的目标服务器。 例如，如果你有 SOAP 发送端口发送消息到**http://www.contoso.com/SomeWebService.asmx**，然后通过默认每上运行每个主机实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将打开到中只有两个并发的HTTP连接**www.contoso.com**，无论多少条消息需要发送。  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  如有必要，单击**应用**中**操作**窗格。  
   
- 禁用调试 ASP.NET 应用程序和 Web 服务通过指定\<编译调试 ="false"/ > web 应用程序的 web.config 文件中的部分。  
+ 禁用调试 ASP.NET 应用程序和 Web 服务通过指定\<编译调试 ="false"\> web 应用程序的 web.config 文件中的部分。  
   
 ## <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>优化每个处理器限制对线程 ASP 属性的值  
  ASP**处理器限制每个线程**属性指定的最大工作线程为每个 IIS 创建的处理器数。 之前的处理器使用率满足至少 50%或更高版本，应增加处理器限制每个线程的值。 此设置可能大大会影响 Web 应用程序的可伸缩性和服务器的性能通常。 因为此属性定义的最大可以同时执行的 ASP 请求数，此设置应保持为默认值，除非你 ASP 应用程序进行扩展的外部组件调用。 在这种情况下，可能会增加处理器限制每个线程的值。 这样做将使要创建更多的线程，以处理更多的并发请求的服务器。 处理器限制每个线程的默认值为 25。 此属性的最大建议的值为 100。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击以展开**限制属性**下**行为**，单击**处理器限制每个线程**，输入所需的值**线程每个处理器限制**单击**应用**中**操作**窗格。  
   
- 有关如何修改中的属性的详细信息\<限制 > 元素的 IIS 7.0 \<asp > 元素，请参阅[ASP 限制\<限制 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ 有关如何修改中的属性的详细信息\<限制\>元素的 IIS 7.0 \<asp\>元素，请参阅[ASP 限制\<限制\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  由于此属性仅可在服务器级别应用，此属性的修改会影响在服务器运行的所有网站。  
@@ -90,7 +90,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击以展开**限制属性**下**行为**，单击**队列长度**，输入所需的值**队列长度**，然后单击**应用**中**操作**窗格。  
   
- 有关如何修改中的属性的详细信息\<限制 > 元素的 IIS 7.0 \<asp > 元素，请参阅[ASP 限制\<限制 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ 有关如何修改中的属性的详细信息\<限制\>元素的 IIS 7.0 \<asp\>元素，请参阅[ASP 限制\<限制\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  由于此属性仅可在服务器级别应用，此属性的修改会影响在服务器运行的所有网站。  
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
  使用配置编辑器工具 (SvcConfigEditor.exe) 禁用在生产环境中进行跟踪的 WCF 服务。 有关配置编辑器工具的详细信息，请参阅[配置编辑器工具 (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)。  
   
 ## <a name="see-also"></a>另请参阅  
- [清单： 配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

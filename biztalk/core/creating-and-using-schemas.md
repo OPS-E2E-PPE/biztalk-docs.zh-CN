@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 707067ed0c48abb62d567098cd472b59bad302b0
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 384d140832c123f46ecf531e64b3c1ca11e64f4e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-and-use-tibco-schemas"></a>创建和使用 TIBCO 架构
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
   
 ## <a name="set-the-target-namespace"></a>设置的目标命名空间  
   
-1.  在 BizTalk 编辑器中，打开架构文件，右键单击**\<架构 >**，然后选择**属性**。  
+1.  在 BizTalk 编辑器中，打开架构文件，右键单击**\<架构\>**，然后选择**属性**。  
   
 2.  在**属性**窗格中，找到**Namespace**字段并键入一个名称，例如， `testNameSpace`。  
   

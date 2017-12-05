@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6460091297e34609365989739f58ed1f04204c8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf37bd2b4ceacfe38736cadd8343b4259db126e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration （BizTalk Server 示例）
 CallOrchestration 示例演示如何从一个 BizTalk 业务流程调用另一个业务流程。  
@@ -60,7 +60,7 @@ End If
 >  使用之间的差异**调用 Orchestration**形状和**启动 Orchestration**形状是，当调用业务流程，调用方会等到嵌套的业务流程，以返回之前继续操作。 而从一个业务流程启动另一个业务流程时，调用方启动该操作之后，即继续执行处理流程的下一步操作。 调用方所调用的业务流程将独立运行，直到它完成处理流程。 有关详细信息，请参阅[如何配置调用业务流程形状](../core/how-to-configure-the-call-orchestration-shape.md)。 另请参阅[如何配置启动 Orchestration 形状](../core/how-to-configure-the-start-orchestration-shape.md)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Orchestrations\CallOrchestration\  
+ \<*示例路径*\>\Orchestrations\CallOrchestration\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -82,7 +82,7 @@ End If
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Orchestrations\CallOrchestration\  
+     \<*示例路径*\>\Orchestrations\CallOrchestration\  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -103,7 +103,7 @@ End If
   
 1.  将 InputPO.xml 文件的副本放到 In 文件夹中。  
   
-2.  查看在 Out 文件夹中创建的已更新 XML 采购订单文件。 此文件包含原始采购订单消息，现在已修改为包含按前述方法计算出的发货费用。 此文件的名称的格式是\< *MessageID*>.xml，其中 *\<MessageID >* GUID 生成以唯一标识消息。  
+2.  查看在 Out 文件夹中创建的已更新 XML 采购订单文件。 此文件包含原始采购订单消息，现在已修改为包含按前述方法计算出的发货费用。 此文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息.  
   
 ## <a name="uninstalling-this-sample"></a>卸载本示例  
   
@@ -111,9 +111,9 @@ End If
   
 1.  在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令窗口中，导航到以下文件夹：  
   
-     \<*示例路径*> \Orchestrations\CallOrchestration\  
+     \<*示例路径*\>\Orchestrations\CallOrchestration\  
   
 2.  运行 Cleanup.bat。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务流程 （BizTalk Server 示例文件夹中）](../core/orchestrations-biztalk-server-samples-folder.md)
+ [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

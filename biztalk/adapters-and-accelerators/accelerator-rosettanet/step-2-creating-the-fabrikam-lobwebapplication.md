@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed64aac8ea0cf4073f3085f4491f607373d721b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0732322d663e51c27bbaab957caa5474cc685326
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>步骤 2： 创建 Fabrikam LOBWebApplication
 在此步骤中，你将创建 Fabrikam 用于向 Contoso 提交 3A2 PIP 请求的 LOB 应用程序。 LOBWebApplication 项目安装在 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中。 若要运行 Web 应用程序，必须创建 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet 信息服务 (IIS) 虚拟目录，然后构建 LOBWebApplication 项目。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  上**虚拟目录别名**页上，在**别名**框中，键入**LOBWebApplication**，然后单击**下一步**。  
   
-6.  上**网站内容目录**页上，单击**浏览**，选择**\<驱动器 >: files\microsoft BizTalk\<版本 > 快捷键RosettaNet\SDK\LOBWebApplication**文件夹，，然后单击**确定**。 单击 **“下一步”**。  
+6.  上**网站内容目录**页上，单击**浏览**，选择**\<驱动器\>: files\microsoft BizTalk\<版本\>快捷键 RosettaNet\SDK\LOBWebApplication**文件夹，，然后单击**确定**。 单击 **“下一步”**。  
   
 7.  上**虚拟目录访问权限**页上，单击**下一步**。  
   
@@ -71,11 +71,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  从**文件**菜单上，指向**打开**，然后单击**Project\Solution**。  
   
-3.  在打开项目对话框中，在**查找中**，将移到**\<驱动器 >: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\ SDK\LOBWebApplication**选择**LOBWebApplication.sln**解决方案，然后再单击**打开**。  
+3.  在打开项目对话框中，在**查找中**，将移到**\<驱动器\>: files\microsoft BizTalk\<版本\>RosettaNet\ SDK\ 快捷键LOBWebApplication**，选择**LOBWebApplication.sln**解决方案，然后再单击**打开**。  
   
 4.  在解决方案资源管理器，右键单击顶级节点 (http://localhost/LOBWebApplication)，然后单击**添加引用**。  
   
-5.  在添加引用对话框中，单击**浏览**并转向**\<驱动器 >: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\bin**。  
+5.  在添加引用对话框中，单击**浏览**并转向**\<驱动器\>: files\microsoft BizTalk\<版本\>RosettaNet\bin 快捷键**.  
   
 6.  **选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集**，然后单击确定。**  
   

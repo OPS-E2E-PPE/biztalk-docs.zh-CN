@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4ebfbed1a6be8d9a148a1e9bf470e6f85818b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b0991ab2714ddb7acc22161ffcd29179ff7339c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>调用在 Oracle E-business Suite 的并发程序
 Oracle E-business Suite 公开可以执行以执行对 Oracle 应用程序的特定操作的并发程序。 每个 Oracle 应用程序具有一套标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。 有关如何的适配器支持并发程序的详细信息，请参阅[并发程序上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。 对于调用并发程序消息的 SOAP 结构的信息，请参阅[并发程序的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)。  
@@ -125,7 +125,7 @@ new System.TimeSpan(0,2,0)
   
 ```  
 XmlDoc = new System.Xml.XmlDocument();  
-XmlDoc.LoadXml("\<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
+XmlDoc.LoadXml("<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
 Get_StatusRequest = XmlDoc;  
 Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResponse']/*[local-name()='RACUSTResult']/text())");  
 ```  
@@ -229,7 +229,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  业务流程使用该消息，将其传递到 Oracle E-business Suite，并收到响应。 响应消息保存在其他文件位置指定为业务流程的一部分。 客户接口并发程序的响应如下所示：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <RACUSTResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <RACUSTResult>2794708</RACUSTResult>  
 </RACUSTResponse>  
@@ -238,7 +238,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  来自 Oracle E-business Suite 的响应包含一个请求 id。 业务流程从响应消息中提取的请求 ID，构造一条消息，调用**Get_Status**并发程序，并将其传递到 Oracle E-business Suite 执行**Get_Status**并发程序。 有关 th 收到的响应之后**Get_Status**并发程序复制到与第一个响应相同的文件位置。 有关响应**Get_Status**并发程序如下所示：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GetStatusForConcurrentProgramResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <GetStatusForConcurrentProgramResult>true</GetStatusForConcurrentProgramResult>   
   <Phase>Pending</Phase>   

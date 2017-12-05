@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c295834f00781cc92a6aa47d01374c80b485149d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0aff501e5bf59d6ae22d9ad2a00e0e5ff5ad4605
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>对于 SAP 数据提供程序安装自定义的 Rfc
 如果你想要使用用于 mySAP Business Suite.NET Framework 数据提供程序访问 SAP 系统，请安装自定义的 Rfc。
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 -   运行 EXECQUERY 操作[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]需要 Z_EXECUTE_SAP_QUERY RFC。  
   
-若要执行这些 SAP 系统上的操作，必须在 SAP 系统上安装这些自定义的 Rfc。 如果你选择安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]连同[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，安装程序将复制的 RFC 传输[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]为压缩文件 (customRFC.zip) 系统上安装适配器。 Zip 文件通常安装在*\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft.NET Framework 数据提供程序为 mySAP Business Suite*。 
+若要执行这些 SAP 系统上的操作，必须在 SAP 系统上安装这些自定义的 Rfc。 如果你选择安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]连同[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，安装程序将复制的 RFC 传输[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]为压缩文件 (customRFC.zip) 系统上安装适配器。 Zip 文件通常安装在*\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft.NET Framework 数据提供程序为 mySAP Business Suite*。 
   
  提取 zip 文件之后, 你将找到四个数据文件、 两个以下命名模式 K9 *。BI1 （例如，类似于 K900534。BI1)，和其他两个以下模式 R9\*。BI1 （例如，类似于 R900534。BI1)。  
   
@@ -217,11 +217,11 @@ ms.lasthandoff: 09/20/2017
   
     |||  
     |-|-|  
-    |OUT_TABLEHEADER|\<T000 常规元数据 >|  
-    |OUT_TECHNICALSETTINGS|\<T000 技术数据库级别的元数据 >|  
-    |OUT_RECORDLENGTH|\<取决于 SAP 版本 >|  
-    |OUT_RECORDCOUNT|\<与上 T000 SE16 系统中确认客户端的数量 >|  
-    |OUT_ZDATATABLE|\<确认此结果与源数据在 T000 上使用 SE 16 >|  
+    |OUT_TABLEHEADER|\<T000 常规元数据\>|  
+    |OUT_TECHNICALSETTINGS|\<T000 技术数据库级别的元数据\>|  
+    |OUT_RECORDLENGTH|\<取决于 SAP 版本\>|  
+    |OUT_RECORDCOUNT|\<与上 T000 SE16 系统中确认客户端的数量\>|  
+    |OUT_ZDATATABLE|\<确认此结果与源数据在 T000 上使用 SE 16\>|  
     |OUT_RETURN_TAB|S 001 成功|  
   
 ## <a name="remove-the-rfc-for-the-data-provider-for-sap"></a>对于 SAP 数据提供程序删除 RFC  
@@ -241,5 +241,5 @@ ms.lasthandoff: 09/20/2017
      以获取进一步的帮助，请与您的 SAP 基础管理员联系。  
      
 ## <a name="next"></a>Next
-[为 mySAP Business Suite 了解 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
+[了解用于 mySAP Business Suite 的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
 [SAP 适配器教程](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)

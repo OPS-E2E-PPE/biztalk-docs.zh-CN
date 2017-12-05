@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dc2d7f2a3dd21d35bb33fa625f59aa27c04e656
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff907e262088acd188028282fe2e03441071358a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="user-trailers"></a>用户拖车安排
 用户预告片除外，选项尾端是可选的当存在时，将按以下顺序发生：  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
     where <authentication-result> = 8!h  
     ```  
   
--   **专有身份验证代码 (PAC) 预告片。** 仅在使用双重身份验证选项时，将 FIN 复制服务中使用 PAC 预告片。 如果存在，块 5 的 FIN 用户和用户消息后，MAC 尾端立即包括 PAC 预告片。 如果存在，此结果的消息，115，字段的值的块 4 的提取字段计算和\<身份验证结果 > 的 MAC 电影预告片复制服务以使用双重身份验证。  
+-   **专有身份验证代码 (PAC) 预告片。** 仅在使用双重身份验证选项时，将 FIN 复制服务中使用 PAC 预告片。 如果存在，块 5 的 FIN 用户和用户消息后，MAC 尾端立即包括 PAC 预告片。 如果存在，此结果的消息，115，字段的值的块 4 的提取字段计算和\<身份验证结果\>的 MAC 电影预告片复制服务以使用双重身份验证。  
   
      因此，PAC 计算中包含的结束块指示器 （CrLf-） 和字段的定义如下：  
   
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 ## <a name="see-also"></a>另请参阅  
- [使用架构](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+ [处理架构](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

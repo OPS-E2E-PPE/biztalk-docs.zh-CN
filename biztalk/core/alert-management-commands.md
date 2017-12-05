@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b73129d884fea81bdb64609de5e95570275a344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f419e7a0019287383080c319961b8a3831d27bb4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="alert-management-commands"></a>警报管理命令
 您可借助 BAM 管理实用程序的警报管理命令来处理已部署的警报。  
@@ -38,15 +38,15 @@ ms.lasthandoff: 09/20/2017
 ## <a name="get-alerts-command"></a>get-alerts 命令  
  **用法**  
   
- **bm.exe get 警报 [的视图：\<视图名称 >] [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe get 警报 [的视图：\<视图名称\>] [-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|视图：\<视图名称 >|从中获取警报列表的视图的名称。|  
-|服务器：\<服务器 >|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|视图：\<视图名称\>|从中获取警报列表的视图的名称。|  
+|服务器：\<服务器\>|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  列出在执行此命令的计算机上定义的警报。  
   
@@ -60,15 +60,15 @@ bm.exe get-alerts -Server:MyServer -Database:MyPrimaryImport
 ## <a name="remove-alerts-command"></a>remove-alerts 命令  
  **用法**  
   
- **bm.exe 删除警报的视图：\<视图名称 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 删除警报的视图：\<视图名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|视图：\<视图名称 >|从中删除警报的视图的名称。|  
-|服务器：\<服务器 >|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|视图：\<视图名称\>|从中删除警报的视图的名称。|  
+|服务器：\<服务器\>|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  删除指定视图中的所有警报。  
   
@@ -82,15 +82,15 @@ bm.exe remove-alerts -View:Shipments -Server:Ship1
 ## <a name="enable-alerts-command"></a>enable-alerts 命令  
  **用法**  
   
- **bm.exe 启用警报的视图：\<视图名称 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 启用警报的视图：\<视图名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|视图：\<视图名称 >|启用警报的视图的名称。|  
-|服务器：\<服务器 >|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|视图：\<视图名称\>|启用警报的视图的名称。|  
+|服务器：\<服务器\>|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  对指定视图启用警报。  
   
@@ -104,15 +104,15 @@ bm.exe enable-alerts -View:SalesManagerView -Server:s1 -Database:db2
 ## <a name="disable-alerts-command"></a>disable-alerts 命令  
  **用法**  
   
- **bm.exe 禁用警报的视图：\<视图名称 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 禁用警报的视图：\<视图名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|视图：\<视图名称 >|禁用警报的视图的名称。|  
-|服务器：\<服务器 >|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|视图：\<视图名称\>|禁用警报的视图的名称。|  
+|服务器：\<服务器\>|可选： 视图所在的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上视图所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  对指定视图禁用警报。  
   

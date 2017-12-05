@@ -12,16 +12,16 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2b5a0aadec9461d4ee951aa200246764e52f667
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc5360cf5e76bfc6218f0fe54444b1651afdefae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-the-configuration-framework"></a>使用配置框架
 通过配置框架，可在安装时轻松快速地更改 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置。 通过与 Microsoft Windows Installer (MSI) 结合使用，配置框架可以读取并报告计算机的状态和需要操作的配置任务。  
   
- 在使用配置向导首次配置 BizTalk Server 时，配置框架将生成一个 XML 文件（配置快照），您随后可对该文件进行修改（即更改用户名、密码等）并将其导出到其他计算机。 您可在“配置摘要”页（配置向导的一部分）上保存配置快照。 您还可使用此快照将配置作为脚本安装的一部分进行复制。 此文件位于\< *BizTalk 安装路径*> \ConfigMain.xml。  
+ 在使用配置向导首次配置 BizTalk Server 时，配置框架将生成一个 XML 文件（配置快照），您随后可对该文件进行修改（即更改用户名、密码等）并将其导出到其他计算机。 您可在“配置摘要”页（配置向导的一部分）上保存配置快照。 您还可使用此快照将配置作为脚本安装的一部分进行复制。 此文件位于\< *BizTalk 安装路径*\>\ConfigMain.xml。  
   
 > [!NOTE]
 >  该 XML 文件中不存储密码。 使用此文件之前，必须输入密码。  

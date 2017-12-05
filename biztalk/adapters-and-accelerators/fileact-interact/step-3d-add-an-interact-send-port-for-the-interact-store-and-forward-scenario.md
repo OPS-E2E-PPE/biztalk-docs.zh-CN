@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ac1d379f2e68431f197f2db339cd0ac9f50c92e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 11b4e17a4435c5d9e6e99cd3ed471fa8819923e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario"></a>步骤 3D： 交互应用商店应用和向前情况下添加交互发送端口
 完成[步骤 3c： 将文件发送端口捕获 Sw:HandleRequest 消息交互，应用商店应用和转发方案添加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)在开始此步骤之前。
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**用户名**|根据压降连接需要设置的用户名。|  
     |**消息格式**|**InteractMessage**|  
     |**不可否认性指示器**|**FALSE**|  
-    |**请求类型**|键入相应\<RequestType > 基于 SWIFT 你设置的字符串。|  
+    |**请求类型**|键入相应\<RequestType\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|**FALSE**|  
-    |**请求者**|键入相应\<RequestorDN > 基于 SWIFT 你设置的字符串。|  
-    |**响应方**|键入相应\<ResponderDN > 基于 SWIFT 你设置的字符串。|  
-    |**服务名称**|键入相应\<服务名称 >，将根据 SWIFT 你预配。|  
+    |**请求者**|键入相应\<RequestorDN\>基于 SWIFT 你设置的字符串。|  
+    |**响应方**|键入相应\<ResponderDN\>基于 SWIFT 你设置的字符串。|  
+    |**服务名称**|键入相应\<服务名称\>，具体取决 SWIFT 你预配。|  
     |**传递通知**|从下拉列表中选择**FALSE**。|  
     |**通知队列**|键入相应的队列名称，基于 SWIFT 你预配。|  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 3： 创建发送端口和交互应用商店应用和向前情况下接收端口](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
  [步骤 3A： 添加一个文件接收交互应用商店应用和向前情况下的位置](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)   
  [步骤 3B： 添加交互接收交互应用商店应用和向前情况下的位置](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)   
- [步骤 3c： 添加文件发送端口交互应用商店应用和向前情况下捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
+ [步骤 3C：为 InterAct 存储和转发方案添加 FILE 发送端口以捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  

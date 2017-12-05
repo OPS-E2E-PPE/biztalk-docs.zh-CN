@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fda8dd26908b241a9897bb4f1b2ba697b55f6532
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e87664180b7ad4d5fdcd121542974a08b8634d55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-crashing"></a>如何捕获所 Crashing 进程内存转储
 BTSNTSvc.exe 定义为 BizTalk 进程**崩溃**进程由 Windows 的意外终止时。 崩溃通常是由进程中未处理的异常（如访问冲突或堆栈溢出）引起的。 在这些情况下，Windows 默认调试器，灾难恢复。Watson (drwtsn32.exe) 捕获异常并终止进程。  
@@ -41,7 +41,7 @@ BTSNTSvc.exe 定义为 BizTalk 进程**崩溃**进程由 Windows 的意外终止
   
 8.  在**规则完成**对话框中，单击**完成**以接受默认值的**立即激活规则**。  
   
-9. 默认情况下，进程的内存转储将保存到 \Program Files\IIS Resources\DebugDiag\Logs\\<*崩溃规则的名称*> 的本地计算机下一步目录何时，某个未处理在过程中会发生异常。  
+9. 默认情况下，进程的内存转储将保存到 \Program Files\IIS Resources\DebugDiag\Logs\\<*崩溃规则的名称*\>的本地计算机下一步目录时间在过程中发生未处理的异常。  
   
 ## <a name="see-also"></a>另请参阅  
  [如何使用调试诊断分析内存转储](../core/how-to-use-debug-diagnostics-to-analyze-a-memory-dump.md)

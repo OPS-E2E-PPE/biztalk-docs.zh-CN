@@ -21,25 +21,25 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6da0c7ae3899c71ab000bc30cb6d801aa856f83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 950f244c3a46af87164c4e276a50cd7a91fee14b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-properties-for-integrated-biztalk-adapters"></a>集成的 BizTalk 适配器的配置属性
-BizTalk 资源管理器对象模型公开了**IReceiveLocation.CustomData**和**ISendPort.CustomData**包含一个名称/值形式的适配器配置属性包的属性对 XML 字符串。 此名称/值对 XML 字符串存储在\<CustomProps > 中的元素\<TransportTypeData > 绑定文件中的元素。 中的信息的大多数\<CustomProps > 元素对应于可以在 BizTalk Server 用户界面 （如 BizTalk 管理控制台或 BizTalk 资源管理器中） 中为适配器设置的信息。 如果在某一绑定文件中提供这些值，则这些值将在导入该绑定文件时应用于指定的接收位置和发送端口的适配器配置。 所有适配器的配置信息都存储于单一登录数据库中。  
+BizTalk 资源管理器对象模型公开了**IReceiveLocation.CustomData**和**ISendPort.CustomData**包含一个名称/值形式的适配器配置属性包的属性对 XML 字符串。 此名称/值对 XML 字符串存储在\<CustomProps\>中的元素\<TransportTypeData\>绑定文件中的元素。 中的信息的大多数\<CustomProps\>元素对应于可以在 BizTalk Server 用户界面 （如 BizTalk 管理控制台或 BizTalk 资源管理器中） 中为适配器设置的信息。 如果在某一绑定文件中提供这些值，则这些值将在导入该绑定文件时应用于指定的接收位置和发送端口的适配器配置。 所有适配器的配置信息都存储于单一登录数据库中。  
   
  本部分说明可为每个集成的 BizTalk 适配器设置的配置属性。  
   
 > [!NOTE]
->  在存储的密码信息\<TransportTypeData > 元素的绑定文件屏蔽了此密码，以便以明文形式不保存敏感数据。 根据传输，密码信息或者由 NULL 代替，或者由星号代替。 您必须手动在绑定文件中输入此信息，以便在将绑定文件导入到目标 BizTalk Server 配置前更新适配器配置。  
+>  在存储的密码信息\<TransportTypeData\>绑定文件的元素，以便以明文形式不保存敏感数据屏蔽。 根据传输，密码信息或者由 NULL 代替，或者由星号代替。 您必须手动在绑定文件中输入此信息，以便在将绑定文件导入到目标 BizTalk Server 配置前更新适配器配置。  
   
- 使用适配器框架构建的适配器的配置数据存储在\<AdapterConfig > 元素。 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型，  **\<  >** 此元素中包含的字符必须避开或当你尝试将出现错误导入的绑定文件。 这会导致配置数据文本在可读性上比对这些字符进行转义前要低。 下面的示例阐释对这些字符（它们来自绑定到 POP3 适配器的发送端口的示例配置数据）进行转义的影响。  
+ 使用适配器框架构建的适配器的配置数据存储在\<AdapterConfig\>元素。 由于\<AdapterConfig\>元素指定 VT_BSTR (vt ="8") 数据类型，  **\< \>** 此元素中包含的字符必须进行转义，否则将发生错误时你尝试导入的绑定文件。 这会导致配置数据文本在可读性上比对这些字符进行转义前要低。 下面的示例阐释对这些字符（它们来自绑定到 POP3 适配器的发送端口的示例配置数据）进行转义的影响。  
   
- **未转义中使用的 <> 字符的 TransportTypeData 配置数据\<AdapterConfig > 元素**  
+ **未转义中使用的 <> 字符的 TransportTypeData 配置数据\<AdapterConfig\>元素**  
   
- 此配置数据无效因为\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型和\<> 中包含的字符\<AdapterConfig > 元素进行转义：  
+ 此配置数据无效因为\<AdapterConfig\>元素指定 VT_BSTR (vt ="8") 数据类型和\<\>中包含的字符\<AdapterConfig\>未转义元素：  
   
 ```  
 <TransportTypeData>  
@@ -65,9 +65,9 @@ BizTalk 资源管理器对象模型公开了**IReceiveLocation.CustomData**和**
 </TransportTypeData>  
 ```  
   
- **未转义中使用的 <> 字符的 TransportTypeData 配置数据\<AdapterConfig > 元素**  
+ **未转义中使用的 <> 字符的 TransportTypeData 配置数据\<AdapterConfig\>元素**  
   
- 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型， \< > 字符必须避开从\<AdapterConfig > 元素，如下所示：  
+ 由于\<AdapterConfig\>元素指定 VT_BSTR (vt ="8") 数据类型， \< \>必须从转义字符\<AdapterConfig\>元素，如下所示：  
   
 ```  
 <TransportTypeData>  
@@ -122,4 +122,4 @@ gt;<bodyPartIndex>1</bodyPartIndex><errorThreshold>10
   
  [SOAP 适配器配置属性](../core/soap-adapter-configuration-properties.md)  
   
- [Windows Sharepoint Services 适配器配置属性](../core/windows-sharepoint-services-adapter-configuration-properties.md)
+ [Windows SharePoint Services 适配器配置属性](../core/windows-sharepoint-services-adapter-configuration-properties.md)

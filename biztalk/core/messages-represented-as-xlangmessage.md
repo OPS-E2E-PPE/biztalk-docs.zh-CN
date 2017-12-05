@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 996c88ca73fcc8abc450159e1cf26cd24b7aa241
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 345c0bbc2eae3289976738d25e76a8a377f86ea7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="messages-represented-as-xlangmessage"></a>表示为 XLANGMessage 的消息
 **XLANGMessage**对象表示的声明与 XLANG 服务的消息实例。 通过在方法调用中将对某一消息的引用作为参数传递，获取此对象。 **XLANGPart**对象表示 XLANG 服务内的消息实例中包含的消息部分。 此对象获取通过其中接收的参数类型在方法调用中传递一部分引用**XLANGPart**或通过枚举在传递的引用上**XLANGMessage**。  
@@ -58,7 +58,7 @@ public static void AssignStreamFactoryToPart(XLANGMessage msg)
  可能有时候，您想要创建新的消息而不转换源消息。 你可以执行此操作通过使用类型的变量的**System.Xml.XmlDocument**和加载或否则构造合适的内容。 在下面的示例中，加载 XML 从字符串使用**LoadXml**方法**XmlDocument**:  
   
 ```  
-XmlVariable.LoadXml("\<ns0:Root PONumber=\"047745351122111\" xmlns:ns0=\"http://BTSHTTPSend.SimpleSchema\">\<MyChildRecord SubAttr1=\"Simple Attribute \" />\</ns0:Root>");  
+XmlVariable.LoadXml("<ns0:Root PONumber="047745351122111" xmlns:ns0="http://BTSHTTPSend.SimpleSchema"><MyChildRecord SubAttr1="Simple Attribute " /></ns0:Root>");  
 XLANGMessage XmlMsg = XmlVariable;  
   
 ```  
@@ -153,4 +153,4 @@ XLANGMessage XmlMsg = XmlVariable;
 ## <a name="see-also"></a>另请参阅  
  [表示为 XSD 架构的消息](../core/messages-represented-as-xsd-schemas.md)   
  [.NET 类表示的消息](../core/messages-represented-as-net-classes.md)   
- [构造在用户代码中的消息](../core/constructing-messages-in-user-code.md)
+ [在用户代码中构造消息](../core/constructing-messages-in-user-code.md)

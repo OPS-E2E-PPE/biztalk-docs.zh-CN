@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f500deb38df3f8145a2cba582164f14c87ac33d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29636a63f7847017b233275ee3dd7c2c389c43be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-biztalk-hosts"></a>BizTalk 主机的高可用性
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]提供极其灵活地寻址高可用性，因为你可以将多个巧妙布局专用逻辑主机运行的功能，如接收和发送消息或处理业务流程，可以以物理方式部署到特定区域多个服务器。  
+BizTalk Server 提供极其灵活地寻址高可用性，因为你可以将多个巧妙布局专用逻辑主机运行的功能，如接收和发送消息或处理的业务流程，可以在物理上是特定区域部署到多个服务器。  
   
  BizTalk 主机是中的逻辑容器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组可以存放[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项如适配器发送处理程序 （包括管道）、 接收位置和业务流程。 通常，您可将具有类似扩展属性的项分到特定的主机中。  
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |进程内|-业务流程<br />-适配器发送处理程序<br />中的进程适配器接收处理程序|  
 |隔离|-HTTP、 SOAP 接收处理程序<br />-任何其他独立的适配器接收处理程序|  
   
- 有关管理 BizTalk 主机和主机实例的详细信息，请参阅[管理 BizTalk 主机和主机实例](http://go.microsoft.com/fwlink/?LinkID=154191)(http://go.microsoft.com/fwlink/?LinkID=154191) 中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关管理 BizTalk 主机和主机实例的详细信息，请参阅[管理 BizTalk 主机和主机实例](http://go.microsoft.com/fwlink/?LinkID=154191)(http://go.microsoft.com/fwlink/?LinkID=154191) BizTalk Server 帮助中。  
   
  若要为 BizTalk 主机提供高可用性，你必须拥有两个或多个主机实例 （在两个或多个计算机） 上的每个主机你的环境。 通过为你确保，如果一个主机实例变为不可用，主机实例正在运行的同一主机的实例的其他计算机上每个主机可以恢复的函数有问题或失败的主机实例中，让多个主机实例和总体系统可以继续使用很少发生中断执行。  
   
@@ -59,13 +59,13 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [向外扩展接收主机](../technical-guides/scaling-out-receiving-hosts.md)  
+-   [横向扩展接收主机](../technical-guides/scaling-out-receiving-hosts.md)  
   
--   [群集接收主机](../technical-guides/clustering-receiving-hosts.md)  
+-   [接收主机](../technical-guides/clustering-receiving-hosts.md)  
   
--   [向外扩展处理主机](../technical-guides/scaling-out-processing-hosts.md)  
+-   [横向扩展处理主机](../technical-guides/scaling-out-processing-hosts.md)  
   
--   [向外扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)  
+-   [横向扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)  
   
 ## <a name="see-also"></a>另请参阅  
  [配置主机和主机实例](../technical-guides/configuring-hosts-and-host-instances.md)   

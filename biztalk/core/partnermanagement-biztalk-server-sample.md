@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 790530d79b06d399e032096d64d47e65bb1dd7a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2ffc9e84e8c31ed1e1feb4c768498e817ad474c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement（BizTalk Server 示例）
 PartnerManagement 示例演示如何管理中的各方[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境使用**ExplorerOM**管理对象。  
@@ -41,7 +41,7 @@ PartnerManagement 示例演示如何管理中的各方[!INCLUDE[btsBizTalkServer
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\PartnerManagement  
+ \<*示例路径*\>\Admin\ExplorerOM\PartnerManagement  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -51,7 +51,7 @@ PartnerManagement 示例演示如何管理中的各方[!INCLUDE[btsBizTalkServer
 |PartnerManagement.sln 和 PartnerManagement.csproj|示例的解决方案文件和项目文件。|  
   
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
- 在生成本示例之前，您需要进行四次代码修改，以便为 BizTalk Server 自定义本示例。 此操作是必须的，因为该示例对与参与方相关的发送端口使用任意名称，并且在登记时也使用任意角色名称。 因此，您需要为此示例提供有效名称。 为了演示此示例，本主题介绍首先生成从下列目录 PartyResolution 示例： \<*示例路径*> \Orchestrations\PartyResolution。 此方法用于确保在 BizTalk Server 上存在有效的角色名称和发送端口名称，以演示示例过程。  
+ 在生成本示例之前，您需要进行四次代码修改，以便为 BizTalk Server 自定义本示例。 此操作是必须的，因为该示例对与参与方相关的发送端口使用任意名称，并且在登记时也使用任意角色名称。 因此，您需要为此示例提供有效名称。 为了演示此示例，本主题介绍首先生成从下列目录 PartyResolution 示例： \<*示例路径*\>\Orchestrations\PartyResolution。 此方法用于确保在 BizTalk Server 上存在有效的角色名称和发送端口名称，以演示示例过程。  
   
 #### <a name="to-build-this-sample"></a>生成示例  
   
@@ -132,7 +132,7 @@ PartnerManagement 示例演示如何管理中的各方[!INCLUDE[btsBizTalkServer
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\PartnerManagement\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
   
 2.  运行文件 PartnerManagement.exe。  
   
@@ -356,4 +356,4 @@ Press <Enter> to unenlist and delete...
 ## <a name="see-also"></a>另请参阅  
  [方](../core/parties.md)   
  [角色链接和服务链接角色](../core/role-links-and-service-link-roles.md)   
- [管理员 （BizTalk Server 示例文件夹中）](../core/admin-biztalk-server-samples-folder.md)
+ [Admin（BizTalk Server 示例文件夹）](../core/admin-biztalk-server-samples-folder.md)

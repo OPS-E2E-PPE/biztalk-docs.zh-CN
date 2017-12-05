@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a139b625ff1c31fb0dce71c08779856f0dc8b685
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>升级到 BizTalk Server 2016
 从 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] 或 BizTalk Server 2013 升级到 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。
@@ -152,9 +152,9 @@ ms.lasthandoff: 09/20/2017
 - **maxTimeout 值**：如果拥有大型 BAM 数据库，请将 machine.config 文件中的分布式事务的 `maxTimeout` 值更新到：  
 
     ```
-    \<system.transactions>
+    <system.transactions>
        <machineSettings maxTimeout="23:59:59" />
-    \</system.transactions>
+    </system.transactions>
     ```
 
 - **使用跟踪配置文件编辑器 (TPE) 启用的 BAM 跟踪**：升级后，会发现之前部署的跟踪配置文件已升级，但相应的侦听器配置尚未升级。 任何新截获的 BAM 消息可能仍具有 BizTalk Server 2013 R2/2013 引用。 若要升级相应的侦听器配置，请使用“跟踪配置文件编辑器”检索活动的配置文件，然后重新应用此配置文件。
@@ -282,7 +282,7 @@ ms.lasthandoff: 09/20/2017
 - **自定义 EXE 和 BRE**：如果在 BizTalk Server 2010 中具有引用业务规则引擎程序集的自定义托管可执行文件，请将以下内容添加到应用程序配置文件中，以在 .NET Framework 2.0 中运行此进程。
 
     ```
-    \<?xml version="1.0" encoding="Windows-1252"?>
+    <?xml version="1.0" encoding="Windows-1252"?>
     <configuration> 
      <startup>
       <supportedRuntime version="v2.0.50727" />

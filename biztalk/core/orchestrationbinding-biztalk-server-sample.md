@@ -12,18 +12,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d539b4249e02422b4189d9c8daea5c19011c4722
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b361968ddb28d629244515281cc02147af533cd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding（BizTalk Server 示例）
 业务流程绑定示例演示使用 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理对象来配置和管理业务流程。  
   
 ## <a name="prerequisites"></a>先决条件  
   
--   此示例要求通过运行 setup.bat 位于来部署 HelloWorld 示例\<*示例路径*> \Orchestrations\HelloWorld 目录。  
+-   此示例要求通过运行 setup.bat 位于来部署 HelloWorld 示例\<*示例路径*\>\Orchestrations\HelloWorld 目录。  
   
 -   您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\OrchestrationBinding  
+ \<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开命令窗口并导航到以下文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
+     \<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
   
 2.  运行文件 OrchestrationBinding.exe 并按照示例提供的说明进行操作。  
   
@@ -232,4 +232,4 @@ Press F5 in the Orchestrations view of BizTalk Server Administration Console to 
   
 ## <a name="see-also"></a>另请参阅  
  [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)   
- [HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)
+ [HelloWorld（BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)

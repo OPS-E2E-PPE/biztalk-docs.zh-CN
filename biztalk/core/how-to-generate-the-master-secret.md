@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfbe186aee99616fa35e8f1e98f67c6ac75593c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-generate-the-master-secret"></a>如何生成主密钥
 必须具有对主密钥服务器的管理员权限才能执行此任务。 此外，您还必须从主密钥服务器执行此任务。  
@@ -44,9 +44,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型 **ssoconfig-generateSecret \<*备份文件*>**，其中\<*备份文件*> 是包含主密钥的文件的名称。  
+3.  类型 **ssoconfig-generateSecret \<*备份文件*\>**，其中\<*备份文件*\>是包含主密钥的文件的名称。  
   
      此时，系统将提示您输入密码以保护刚刚创建的文件。  
   

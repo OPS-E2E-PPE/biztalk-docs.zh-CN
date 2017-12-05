@@ -1,24 +1,22 @@
 ---
 title: "BizTalk Server 核心文档 |Microsoft 文档"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/30/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: bts10.default
-helpviewer_keywords: BizTalk Server Help
 ms.assetid: cadd3bdd-f13b-427d-8979-b2541aa5e21d
 caps.latest.revision: "48"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81a742187f762047d9ab43e108e26784d24c0c33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7abfed788cfdd343397957d154dee104f310cbeb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-core-documentation"></a>BizTalk Server 核心文档
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]核心文档包括各种资源，可帮助你了解如何开发、 部署、 管理和使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -31,13 +29,13 @@ ms.lasthandoff: 09/20/2017
   
 [常见任务和演练](http://msdn.microsoft.com/library/cd02757d-48c6-4ba4-b72d-02acd0b1eff1)和[教程](http://msdn.microsoft.com/library/1e404aca-6e25-4189-a0cc-5e9b95194b81)也是开始的好办法。
 
-## <a name="get-new-features-in-the-feature-pack"></a>功能包中获取新功能 
+## <a name="feature-pack"></a>功能包 
 **[配置功能包](../core/configure-the-feature-pack.md)**列出可用的功能包，包括使用用于跟踪数据、 利用 Visual Studio Team Services，自动部署和多个好东西的 Application Insights 和 Power BI 中的不同更新。 
   
 ## <a name="plan-and-architect-your-applications"></a>规划和设计你的应用程序
 **[规划和体系结构](../core/plan-and-architect-your-biztalk-server-solution.md)**介绍体系结构、 性能和容量、 高可用性和安全性。 阅读有关设计、 构建和运行两种完整模型[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案： 面向服务的解决方案和业务流程管理解决方案。
 
-## <a name="learn-and-implement-business-to-business-messaging"></a>了解和实现企业到企业消息传递
+## <a name="business-to-business-messaging"></a>企业到企业消息传递
 **[B2B 消息传递](../core/trading-partner-management-using-biztalk-server.md)**描述构建基块有关的 B2B 解决方案，如何 EDI 和 AS2 实现，并包括演练和教程以自行执行此操作。 此外，还可以使用确认，更深入批处理、 监视你的解决方案。 
 
 ## <a name="secure-and-protect-your-data"></a>安全和保护数据

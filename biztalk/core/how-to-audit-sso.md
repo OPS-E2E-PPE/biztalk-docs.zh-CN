@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abea3028c2ec9fd2131b8fd17247476b6fdfa6f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27528cf6da53c69db4b2bc6c9e1d296472b24186
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-audit-sso"></a>如何审核 SSO
 可以使用 MMC 管理单元中或命令行设置这两种正值和负值审核级别。 审核的结果存储在事件日志和审核日志中的数据库。  
@@ -67,9 +67,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoconfig-auditlevel\<正 >\<负 >**，其中**\<正 >**是的级别审核操作成功，和**\<负 >**是审核操作失败时的级别。  
+3.  类型**ssoconfig-auditlevel\<正\>\<负\>**，其中**\<正\>**是的级别审核操作成功，和**\<负\>**是审核操作失败时的级别。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -78,9 +78,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-updatedb\<更新文件 >**，其中**\<更新文件 >**是路径和文件的名称。  
+3.  类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>**是路径和文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

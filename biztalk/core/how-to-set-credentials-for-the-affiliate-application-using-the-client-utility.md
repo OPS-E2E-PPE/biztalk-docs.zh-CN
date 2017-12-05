@@ -16,11 +16,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31ba167bc35d01907166bb6610720e03be654c4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ebe3e1a9e8d2ea8df421d0bade60f35d6925459
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>如何为使用客户端实用工具的关联应用程序设置凭据
 使用此命令可为用户设置凭据以便该用户能够访问特定的应用程序。 此命令还将自动启用映射。  
@@ -33,9 +33,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – setcredentials\<应用程序名称 >**，其中**\<应用程序名称 >**是你想要设置的凭据的特定应用程序。  
+3.  类型**ssoclient – setcredentials\<应用程序名称\>**，其中**\<应用程序名称\>**是为其所需的特定应用程序若要设置的凭据。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

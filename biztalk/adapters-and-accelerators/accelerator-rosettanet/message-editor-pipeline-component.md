@@ -17,27 +17,27 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56d22e5ff6003dad9767c57eecac626a6c16e243
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f5877fe04a87a8387340c8e4b004300f41e609e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-editor-pipeline-component"></a>消息编辑器管道组件
 此组件可用于在发送或接收管道内自动编辑多部分消息的任何部分。 向现有管道添加此组件可以在典型处理中设置替换部分。  
   
 ## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>在现有管道中构建消息编辑器管道组件  
- 要使用消息编辑器管道组件，必须向现有管道添加该组件。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“使用管道设计器创建管道”。  
+ 要使用消息编辑器管道组件，必须向现有管道添加该组件。 有关详细信息，请参阅"创建管道与管道中的设计器"BizTalk Server 帮助。  
   
 #### <a name="to-add-the-message-editor-pipeline-component-to-an-existing-pipeline"></a>向现有管道添加消息编辑器管道组件  
   
-1.  启动 [!INCLUDE[vs2012](../../includes/vs2012-md.md)]。  
+1.  启动 Visual Studio。  
   
 2.  上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
 3.  对于 RosettaNet\SDK\Message 编辑器管道组件，选择将移到 C:\Program Files\Microsoft BizTalk 2013 Accelerator **MessageEditor.csproj**，然后单击**打开**。  
   
-4.  启动[!INCLUDE[vs2012](../../includes/vs2012-md.md)]命令提示符。  
+4.  启动 Visual Studio 命令提示符。  
   
 5.  在命令提示符处，转到 C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug。  
   
@@ -94,4 +94,4 @@ ms.lasthandoff: 09/20/2017
  若要获取完整的 XPath 查询，请在 BizTalk 编辑器中打开该架构，然后从“属性”窗口下的 `Instance XPath` 属性中复制 Xpath。 你提供的 XPath 查询应在其中具有所有命名空间引用。  
   
 ## <a name="see-also"></a>另请参阅  
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

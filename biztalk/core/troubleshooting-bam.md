@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d47932ffd9f7843d0b3d95073ca54bce987b8f75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92f13d938b0e0523ce6e20d6021bbca24595782f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-bam"></a>故障排除 BAM
 本主题提供了帮助你解决使用业务活动监视 (BAM) 时可能遇到的问题的信息。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="bam-deployment-failed"></a>BAM 部署失败  
  如果在 SQL Server Analysis Services 不可用时尝试部署包含实时聚合 (RTA) 的 BAM 定义，则 Bm.exe 命令将显示以下消息：  
   
- 错误： BAM 部署失败。 无法进行连接。 请确保服务器正在运行。 无法建立连接，因为目标计算机主动拒绝 *\<IP 地址 >*。  
+ 错误： BAM 部署失败。 无法进行连接。 请确保服务器正在运行。 无法建立连接，因为目标计算机主动拒绝 *\<IP 地址\>*。  
   
  出现这种情况的原因是，SQL Server Analysis Services 必须已经安装和配置，并且必须正在运行才能部署包含 RTA 的 BAM 定义。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**用户帐户控制**对话框中，单击**继续**。  
   
-3.  在 Internet Explorer 地址栏中，键入`http://<server>/BAM`，其中*\<服务器 >*是运行 BAM 门户的计算机的名称。  
+3.  在 Internet Explorer 地址栏中，键入`http://<server>/BAM`，其中*\<服务器\>*是运行 BAM 门户的计算机的名称。  
   
 ## <a name="bam-portal-does-not-work-if-invalid-users-are-granted-permissions"></a>如果向无效用户授予权限，BAM 门户则不起作用  
  如果将具有 BAM 查看权限的 AD 用户从 AD 中删除，则 BAM 门户不会为任何用户正确加载（DBO 除外）。  

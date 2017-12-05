@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 186cbb4e021a281ab834f04097f005c2597fbd37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01f9457404e135027f35f1402575efeec311e2e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-xml-receive-port-and-location"></a>第 1 课： 添加 XML 接收端口和位置
 接收端口是类似的接收位置的逻辑分组。 接收位置的传入消息和用于处理该消息管道定义特定地址 （例如 URL 或文件的位置）。  
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/20/2017
   
 10. 单击**配置**类型下拉列表右侧的按钮。  
   
-11. 在文件传输属性对话框中，单击**浏览**。 将移动到**\<驱动器 >: \Labs**文件夹，，然后单击**新建文件夹**。  
+11. 在文件传输属性对话框中，单击**浏览**。 将移动到**\<驱动器\>: \Labs**文件夹，，然后单击**新建文件夹**。  
   
-12. 在浏览文件夹对话框中，创建**入站**文件夹中的**\<驱动器 >: \Labs**，然后创建**XMLFile**文件夹中的 **\<驱动器 >: \Labs\Inbound**。 单击 **“确定”**。  
+12. 在浏览文件夹对话框中，创建**入站**文件夹中的**\<驱动器\>: \Labs**，然后创建**XMLFile** 中的文件夹**\<驱动器\>: \Labs\Inbound**。 单击 **“确定”**。  
   
 13. 在文件传输属性对话框中，确保 **\*.xml**中输入**文件掩码**框中，并依次**确定**。  
   

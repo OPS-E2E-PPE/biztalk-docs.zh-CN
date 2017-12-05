@@ -7,22 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- sustainable load test
-- maximum sustainable throughput (MST), testing
-- LoadGen tool
-- LoadGen tool, downloading
-- testing, engine maximum sustainable throughput
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
 caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df522748a2d4522e691fb4f579c3fdd26c788e4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dd5b9a2697cb96bb2d042b9fee6a15317f35971c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>测量引擎的 MST 的测试方案
 本部分介绍的测试方案用于度量在三个不同负载级别上驱动 BizTalk 系统的效果：  
@@ -59,7 +53,7 @@ ms.lasthandoff: 09/20/2017
  测试方案非常简单。 负载生成工具 LoadGen 2007 安装在负载驱动程序服务器上，并用于向文件适配器监视的共享位置发送文件副本。 负载生成工具在各个文件共享位置之间均衡地分发输入文件实例的副本。  
   
 > [!NOTE]
->  LoadGen 2007 工具是可在下载[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841)。 此工具的以前版本，BizTalk Server 2004 负载生成工具是可在下载[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)。 有关使用 MSMQ 适配器 LoadGen 的信息的信息，请参阅[使用 MSMQ LoadGen 2007](../core/using-loadgen-2007-with-msmq.md)。  
+>  下载[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)。 此工具的以前版本，BizTalk Server 2004 负载生成工具是可在下载[http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)。 有关使用 MSMQ 适配器 LoadGen 的信息的信息，请参阅[使用 MSMQ LoadGen 2007](../core/using-loadgen-2007-with-msmq.md)。  
   
  BizTalk 文件适配器配置为监视文件共享，并将消息发布到 MessageBox 中。 只包含一个接收形状和一个发送形状的简单业务流程将订阅所发布的消息。 由业务流程发布回 MessageBox 中的消息将由文件发送端口提取出来，并发送到 SAN 上定义的公用共享位置。 到达输出 SAN 共享位置的文件将立即删除，这是为了避免在长期运行测试期间，文件在该共享位置发生累积。  
   
@@ -101,15 +95,13 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  如果无法生成足够大的负载以导致后台处理表无限增长，则只表示系统的最缓慢部分在接收端，而不是在处理/发送端。  
   
-> [!NOTE]
->  SQL Server 2000 用于进行可承受负载测试和过载测试，而 SQL Server 2005 用于进行突发高负载测试。  
-  
-## <a name="in-this-section"></a>本节内容  
+
+## <a name="next"></a>Next
   
 -   [使用 Microsoft BizTalk LoadGen 2007 工具](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)  
   
--   [可持续的负载测试](../core/sustainable-load-test.md)  
+-   [可承受负载测试](../core/sustainable-load-test.md)  
   
--   [Overdrive 负载测试](../core/overdrive-load-test.md)  
+-   [过载测试](../core/overdrive-load-test.md)  
   
--   [Floodgate 负载测试](../core/floodgate-load-test.md)
+-   [突发高负载测试](../core/floodgate-load-test.md)

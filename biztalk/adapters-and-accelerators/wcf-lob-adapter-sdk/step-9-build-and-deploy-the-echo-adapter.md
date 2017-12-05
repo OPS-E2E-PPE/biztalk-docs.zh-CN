@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cec35363cca2f20b38e8a2ecf8bdaf36306f6554
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b9a4985629427e44b8ca85f324c89ab719cf249
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-build-and-deploy-the-echo-adapter"></a>步骤 9： 生成并部署 Echo 适配器
 ![步骤 9 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击**对程序集签名**选项卡。  
   
-4.  选择**\<新建 … >**强名称的文件。 当系统提示输入文件的名称，键入**EchoAdapter.snk**，取消保护选择密钥文件使用密码选项，然后单击**确定**。  
+4.  选择**\<新...\>** 强名称的文件。 当系统提示输入文件的名称，键入**EchoAdapter.snk**，取消保护选择密钥文件使用密码选项，然后单击**确定**。  
   
 5.  单击**应用程序**选项卡。  
   
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  键入下列命令：  
   
-     **gacutil.exe /if"\<**  *路径 assembly\Microsoft.Adapters.Samples.EchoV2.dll* **>"**  
+     **gacutil.exe /if"\<**  *路径 assembly\Microsoft.Adapters.Samples.EchoV2.dll*  **\>"**  
   
      此命令将程序集安装到 GAC，覆盖任何具有相同程序集名称的现有程序集。  
   
 ### <a name="to-register-the-echo-adapter-with-windows-communication-foundation"></a>若要注册 Windows Communication Foundation Echo 适配器  
   
-1.  编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径 > \Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
+1.  编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
   
 2.  更新 machine.config 文件。 如果你 machine.config 不包含 system.serviceModel 部分，在末尾的配置文件，但在结束根标记之前添加以下部分。  
   
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [步骤 8： 为 Echo 适配器实现同步的入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
- [教程 2： 使用.NET Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)
+ [教程 2：从 .NET 使用 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)

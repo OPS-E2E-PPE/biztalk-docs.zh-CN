@@ -16,11 +16,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 099a2b8f3d914297529a192def9e5c23a49d31af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c80a01aa9b4bd19581cb97f7fee127fc244322d4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-user-accounts-with-access-to-a-view"></a>如何列出具有视图访问权限的用户帐户
 管理员使用**get 帐户**BAM 管理实用程序命令，以便获取列表视图角色，这意味着所有的用户帐户有权访问指定的视图的所有用户帐户。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
   
-3.  类型**bm get 帐户的视图：\<视图名称 >**。  
+3.  类型**bm get 帐户的视图：\<视图名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe1a19ee34a98be4130be2ac72e9ad27e83b0c13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09efa7dd00f563b8b02469909d2105d443438e95
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>如何禁用关联应用程序
 可以使用 MMC 管理单元或命令行来禁用指定的关联应用程序。  
@@ -37,9 +37,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-disableapp *\<应用程序名称 >***，其中\<*应用程序名称*> 是的关联应用程序的名称你想要禁用。  
+3.  类型**ssomanage-disableapp *\<应用程序名称\>***，其中\<*应用程序名称*\>是的名称关联应用程序，你想要禁用。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

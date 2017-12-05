@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07260c5f0d161698545ff7fd5b5177a5374f3d04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60b199bcd350a3341640baa05b875347c4f04bb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a>步骤 2： 为 V2.4 创建通用架构
 V2.4 架构是经常引用的架构，用于验证查询和响应消息实例。  
@@ -42,7 +42,7 @@ V2.4 架构是经常引用的架构，用于验证查询和响应消息实例。
   
 8.  在右窗格中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （...） 按钮。  
   
-9. 在**程序集密钥文件**对话框中，浏览到\<*驱动器*>: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\Interrogative 教程中，单击**key.snk**，然后单击**打开**。  
+9. 在**程序集密钥文件**对话框中，浏览到\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\ 快捷键Interrogative 教程，则单击**key.snk**，然后单击**打开**。  
   
 10. 在 Interrogative_24Schemas 属性页对话框中，单击**确定**以保存所做的更改。  
   

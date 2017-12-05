@@ -16,11 +16,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e16577e8bb7e9d624b6ba38211cf04b84a234be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 410bfed33402d8d810434e7ff9287fa5c01462da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-pop3-receive-location"></a>如何配置一个 POP3 接收位置
 您可以在 BizTalk Server 管理控制台中设置 POP3 接收位置适配器变量。 如果未设置接收位置的属性，则使用 BizTalk Server 管理控制台中设置的默认接收处理程序值。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
     |**正文部分索引**|指定要提交到 BizTalk Server 的传入电子邮件的正文部分。 请参阅[POP3 适配器是什么？](../core/what-is-the-pop3-adapter.md)有关详细信息。<br /><br /> 默认值： 0|  
     |**邮件服务器**|指定 POP3 适配器将要轮询的邮箱所在的 POP3 邮件服务器。 **注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
     |**端口**|指定 POP3 邮件服务器的端口。<br /><br /> 有效值：1 到 65535（含）<br /><br /> 默认值： 0**注意：**值为 0 指示如果使用默认 POP3 端口 110**使用 SSL**是`False`或端口 995 如果**使用 SSL**是`True`。|  
-    |**身份验证方案**|指定目标服务器使用的验证类型。<br /><br /> 有效选项为：<br /><br /> -   **基本**<br />-   **摘要**<br />-   **SPA** **注意：**时使用 SPA 身份验证，必须使用以下格式之一指定用户名： 域帐户，则必须输入使用语法：\<域名 >\\<用户名\>本地帐户，则必须输入使用语法：\<计算机名称 >\\< 用户名\>|  
+    |**身份验证方案**|指定目标服务器使用的验证类型。<br /><br /> 有效选项为：<br /><br /> -   **基本**<br />-   **摘要**<br />-   **SPA** **注意：**时使用 SPA 身份验证，必须使用以下格式之一指定用户名： 域帐户，则必须输入使用语法：\<域名\>\\< 用户名\>本地帐户，则必须输入使用语法：\<计算机名称\>\\< 用户名\>|  
     |**密码**|指定对 POP3 服务器进行验证所使用的用户密码。|  
     |**使用 SSL**|指定是否使用安全套接字层 (SSL) 与目标服务器进行通信。<br /><br /> 默认值：30`False`|  
     |**用户名**|指定对 POP3 服务器进行验证所使用的用户名。 需要为此属性输入值。 **注意：**指定用户名称属性必须具有能够登录到网络的功能的帐户。 POP3 适配器连接到与为“用户名”属性指定的帐户相关联的邮箱。 因此，无法使用 POP3 适配器连接到分配到指定帐户的邮箱以外的邮箱。 例如，即使多个帐户都对与特定帐户关联的邮箱具有“读取”权限，但也只能为“用户名”指定实际帐户名。|  

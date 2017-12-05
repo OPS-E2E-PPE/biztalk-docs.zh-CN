@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b594aa02cbecb21a20180d1143f2f8835788a958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a2084e2e46e3e984af2c5466c52862956dc8414
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-unit-testing"></a>执行单元测试
 单元测试的重点放在组件级别和基本上是通过/失败测试来验证按预期方式是否执行 BizTalk 解决方案的各个组件。 必须针对单元测试你的 BizTalk 解决方案的几个选项。  
@@ -24,10 +24,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="using-visual-studio"></a>使用 Visual Studio  
  单元测试功能是适用于 Visual Studio 2008 及更高版本。 有关适用于 Visual Studio 的测试功能的详细信息，请参阅[测试应用程序](http://go.microsoft.com/fwlink/?LinkId=159595)(http://go.microsoft.com/fwlink/?LinkId=159595)。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]此外提供了单元测试功能以使用户能够为架构、 映射和管道创建单元测试。 有关此功能的详细信息，请参阅[使用 BizTalk 服务器项目进行单元测试](http://go.microsoft.com/fwlink/?LinkId=158270)(http://go.microsoft.com/fwlink/?LinkId=158270)。  
+ BizTalk Server 还提供了单元测试功能以使用户能够为架构、 映射和管道创建单元测试。 有关此功能的详细信息，请参阅[使用 BizTalk 服务器项目进行单元测试](http://go.microsoft.com/fwlink/?LinkId=158270)(http://go.microsoft.com/fwlink/?LinkId=158270)。  
   
 > [!NOTE]  
->  Visual Studio 是用于单元测试如业务流程、 架构、 管道和管道组件的 BizTalk 项目非常有用。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]提供测试类，你可以使用与 Visual Studio Team System 测试 BizTalk 项目。  
+>  Visual Studio 是用于单元测试如业务流程、 架构、 管道和管道组件的 BizTalk 项目非常有用。 BizTalk Server 提供测试类，你可以使用与 Visual Studio Team System 测试 BizTalk 项目。  
   
 ## <a name="using-non-microsoft-tools"></a>使用非 Microsoft 工具  
  单元测试 BizTalk 解决方案其他常用的以下两种工具**BizUnit**和**NUnit**。 **BizUnit**与 Visual Studio Team System 测试 Edition 无缝合作。 同样， **NUnit**测试可以轻松地修改，以便它们可以作为运行的是 Visual Studio Team System 测试 Edition 中。 有关这些工具的详细信息，请参阅[测试工具](~/technical-guides/tools-for-testing.md)。  
@@ -51,4 +51,4 @@ ms.lasthandoff: 09/20/2017
  有关详细信息中提供的实用工具[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK，请参阅[SDK 中的实用程序](http://go.microsoft.com/fwlink/?LinkId=154387)(http://go.microsoft.com/fwlink/?LinkId=154387)。  
   
 ## <a name="see-also"></a>另请参阅  
- [用于测试工具](~/technical-guides/tools-for-testing.md)
+ [测试工具](~/technical-guides/tools-for-testing.md)

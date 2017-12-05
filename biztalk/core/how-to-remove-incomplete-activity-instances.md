@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99c2f77b6883b7ffba997551c4121013a4379267
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-incomplete-activity-instances"></a>如何删除不完整的活动实例
 在部署 BAM 定义文件时，系统会在 BAM 主导入数据库中为在该定义文件中定义的每个活动创建五个表。 这些表分别为：  
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
 |@ActivityName nvarchar(128)|指定要删除的不完整活动实例的名称。|  
 |@ActivityId nvarchar(128)|（可选）指定存储过程只删除具有指定实例标识符的虚实例。|  
 |@DateThreshold日期时间|（可选）指定删除活动表中早于（不是等于和早于，只是早于）给定日期的所有活动实例。|  
-|@NewTableExtensionnvarchar (30)|（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。<br /><br /> 生成的表将是：<br /><br /> bam_ActivityName_Active_\<扩展 ><br /><br /> bam_ActivityName_ActiveRelationships_\<扩展 ><br /><br /> bam_ActivityName_Continuations_\<扩展 ><br /><br /> 不完整实例将会移到新的表中，而不是从数据库中清除。<br /><br /> 如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。 **重要说明：**如果表已存在，存储的过程假定其架构匹配，就好像是将使用。 如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。|  
+|@NewTableExtensionnvarchar (30)|（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。<br /><br /> 生成的表将是：<br /><br /> bam_ActivityName_Active_\<扩展\><br /><br /> bam_ActivityName_ActiveRelationships_\<扩展\><br /><br /> bam_ActivityName_Continuations_\<扩展\><br /><br /> 不完整实例将会移到新的表中，而不是从数据库中清除。<br /><br /> 如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。 **重要说明：**如果表已存在，存储的过程假定其架构匹配，就好像是将使用。 如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   

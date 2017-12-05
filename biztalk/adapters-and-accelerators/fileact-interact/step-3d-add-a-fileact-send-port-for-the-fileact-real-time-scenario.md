@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3ab2de6dabd581cb36d23ce218fb1b902ac04e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f7440a0bad39fbfddb6319f4051a397f08ac09f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario"></a>步骤 3D: FileAct 实时方案添加 FILEACT 发送端口
 在开始此步骤之前，必须完成[步骤 3c: FileAct 实时方案将文件发送端口添加到捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)。  
@@ -41,11 +41,11 @@ ms.lasthandoff: 09/20/2017
     |**用户名**|根据压降连接需要设置的用户名。|  
     |**适配器模式**|从下拉列表中选择**存储和转发**。|  
     |**不可否认性指示器**|从下拉列表中选择**FALSE**。|  
-    |**请求类型**|设置为相应\<RequestType > 基于 SWIFT 你设置的字符串。|  
+    |**请求类型**|设置为相应\<RequestType\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|从下拉列表中选择**FALSE**。|  
-    |**请求者**|设置为相应\<请求者 > 基于 SWIFT 你设置的字符串。|  
-    |**响应方**|设置为相应\<响应方 > SWIFT 你设置基于字符串。|  
-    |**服务名称**|设置为相应\<服务名称 > 基于 SWIFT 你预配。|  
+    |**请求者**|设置为相应\<请求者\>基于 SWIFT 你设置的字符串。|  
+    |**响应方**|设置为相应\<响应方\>SWIFT 你设置基于字符串。|  
+    |**服务名称**|设置为相应\<服务名称\>基于 SWIFT 你预配。|  
     |**确认指示器**|从下拉列表中选择**FALSE**。|  
     |**事件终结点**|从下拉列表中选择**FALSE**。|  
     |**文件压缩**|从下拉列表中选择**无**。|  
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 3A： 添加一个文件接收位置 FileAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)   
  [步骤 3B： 添加 FILEACT 接收位置 FileAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario.md)   
  [步骤 3c： 添加文件发送端口 FileAct 实时方案捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)   
- [步骤 3E： 添加文件发送端口 FileAct 实时方案捕获 Sw:ExchangeFileResponse 消息](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)
+ [步骤 3E：为 FileAct 实时方案添加 FILE 发送端口以捕获 Sw:ExchangeFileResponse 消息](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)

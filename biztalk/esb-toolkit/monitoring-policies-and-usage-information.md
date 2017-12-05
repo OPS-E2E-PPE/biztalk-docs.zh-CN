@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4909b96e74d34d469decd11c1ffba0e49217ff7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8ea9c6151b617e2eef2aa5404d6415f8dd71ded
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-policies-and-usage-information"></a>监视策略和使用情况信息
 SOA 服务管理器提供一种机制，允许你创建和编辑监视策略。 例如，图 1 显示应用的策略模板并激活应用程序监视的屏幕。  
@@ -44,4 +44,4 @@ SOA 服务管理器提供一种机制，允许你创建和编辑监视策略。 
  **SOA 服务管理器显示各个邮件的详细信息**  
   
 > [!NOTE]
->  SOA 服务管理器和 Workbench 产品是 SOA 软件，Inc.的与集成的产品[!INCLUDE[prague](../includes/prague-md.md)]。 有关 SOA 软件和他们的产品，并下载最新的安装和操作说明的详细信息，请参阅[SOA 软件](http://go.microsoft.com/fwlink/?LinkId=188559)Web 站点。
+>  SOA 服务管理器和 Workbench 产品是 SOA 软件，Inc.的与 BizTalk Server 集成的产品。 有关 SOA 软件和他们的产品，并下载最新的安装和操作说明的详细信息，请参阅[SOA 软件](http://go.microsoft.com/fwlink/?LinkId=188559)Web 站点。

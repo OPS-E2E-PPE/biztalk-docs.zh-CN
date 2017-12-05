@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7eae4f48209dc4f5afefbc69c40706a31f2b00b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c01e77ab46b1ef23b15bc8e288ff7f151d1563cb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="a-persistence-exception-has-occurred-during-the-batch-submission-in-the-batching-orchestration"></a>批处理业务流程的批提交过程中发生了一个持久性异常
 ## <a name="details"></a>详细信息  
@@ -35,4 +35,4 @@ ms.lasthandoff: 09/20/2017
  此错误/警告/信息事件表明 BizTalk Server 无法发送批处理交换，因为该交换未订阅任何发送端口。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保订阅到批次的发送端口通过设置发送端口的以下筛选器属性： EDI。DestinationPartyName = \<PartyName >，EDI。BatchEncodingType = EDIFACT 或 X12，和 EDI。ToBeBatched = False。
+ 若要解决此错误，请确保订阅到批次的发送端口通过设置发送端口的以下筛选器属性： EDI。DestinationPartyName = \<PartyName\>，EDI。BatchEncodingType = EDIFACT 或 X12，和 EDI。ToBeBatched = False。

@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa982b938fc4fcb9096ca30209938b3b635d9fb8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02a5da0a5c6ff3560d265759d3c5320e55d7d621
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-biztalk-server"></a>使用 BizTalk Server 的 Oracle 数据库中运行 SQLEXECUTE 操作
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使客户端能够在 Oracle 数据库上运行参数化的 SQL 语句。 若要支持此类操作，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]呈现 SQLEXECUTE 操作。 SQLEXECUTE 操作支持组成使你可以执行一次为每个集的相同 SQL 语句的参数集的输入的参数块。 SQLEXECUTE 操作返回泛型记录集内的 SQL 语句的结果。 有关操作的详细信息，请参阅[Oracle 数据库中的 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)。 有关 SQLEXECUTE 操作的 SOAP 消息结构的信息，请参阅[SQLEXECUTE 操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)。  
@@ -179,7 +179,7 @@ ms.lasthandoff: 09/20/2017
  来自 Oracle 数据库以实现更高版本的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SQLEXECUTEResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
   <SQLEXECUTEResult>  
     <GenRecordRow xmlns="http://Microsoft.LobServices.OracleDB/2007/03">  

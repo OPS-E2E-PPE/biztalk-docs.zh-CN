@@ -31,11 +31,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a82ffc63ff041aec1e9151e8198e2a7c3e74b3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12196886285a84b391eb3037064f36f08aa5b1fe
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-net-assembly-certificate-or-other-resource-artifact-from-an-application"></a>如何从应用程序中删除 .NET 程序集、证书或其他资源项目
 本主题描述如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序删除以下资源项目。 使用本主题中的过程可以从 BizTalk 管理数据库中删除项目。 这一删除不会从文件系统、证书存储、Internet 信息服务 (IIS) 或 Windows 注册表中删除项目（如果项目存在于这些位置中）。 此外，如果您删除某一绑定文件，则绑定保持不变，仅删除该绑定文件。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，依次展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”、包含要删除的资源项目的 BizTalk 组和包含该项目的应用程序。  
+2.  在控制台树中，依次展开 BizTalk Server 管理、 BizTalk 包含资源项目要删除的组，和包含项目的应用程序。  
   
 3.  单击**资源**文件夹，右键单击该项目，然后单击**删除**。  
   

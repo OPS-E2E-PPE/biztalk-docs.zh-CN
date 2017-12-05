@@ -18,11 +18,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e948aeca31d3eb9908d6933f5ac375bce206761
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec6e6e290761ba6d1be2ed08c8519e96c2846fa7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mime-biztalk-server-sample"></a>MIME （BizTalk Server 示例）
 MIME 示例演示如何在发送管道中执行 MIME 编码。  
@@ -39,7 +39,7 @@ MIME 示例演示如何在发送管道中执行 MIME 编码。
 4.  在发送管道中，执行 MIME 编码并将文件放置到发送适配器文件夹 MIMEOut 中。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Pipelines\MIME\  
+ \<*示例路径*\>\Pipelines\MIME\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -59,13 +59,13 @@ MIME 示例演示如何在发送管道中执行 MIME 编码。
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Pipelines\MIME  
+     \<*示例路径*\>\Pipelines\MIME  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在下面的文件夹中，为本示例创建输入 (MIMEIn) 和输出 (MIMEOut) 文件夹：  
   
-         \<*示例路径*> \Pipelines\MIME  
+         \<*示例路径*\>\Pipelines\MIME  
   
     -   编译[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]此示例项目。  
   
@@ -101,4 +101,4 @@ MIME 示例演示如何在发送管道中执行 MIME 编码。
 2.  查看在 MIMEOut 文件夹中创建的文本文件。 此文本文件是根据消息 ID GUID 命名的。 此文件包含输入文件 ImageInput.gif 的 MIME 编码的内容。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

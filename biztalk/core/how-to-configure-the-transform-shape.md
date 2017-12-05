@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48cdca50620262581469e924fbb2975dde7e91fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8da12d090ae0c14f30defc1d65850c609b964704
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-transform-shape"></a>如何配置转换形状
 ![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")  
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
 ### <a name="newexisting-map-file"></a>是新建映射文件还是现有映射文件？  
  在此部分中，可以单击**新图**或**现有映射**选项按钮以选择要分配给一个映射**转换**形状。  
   
- 使用**名称**字段在选定的选项按钮以指定地图的下面。 如果你选择**新图**，您可以键入你想要分配映射指定内容。 当你使用**新图**选项，你必须在文本框中指定映射的完全限定的名称。 文本框中默认情况下，显示举例说明这样的名称，因为它是基于项目命名空间的唯一标识符名称预填充和**转换**形状名称：\<项目命名空间 >。\<转换形状名称 > _Map (例如，MyProject.Transform3_Map)。  
+ 使用**名称**字段在选定的选项按钮以指定地图的下面。 如果你选择**新图**，您可以键入你想要分配映射指定内容。 当你使用**新图**选项，你必须在文本框中指定映射的完全限定的名称。 文本框中默认情况下，显示举例说明这样的名称，因为它是基于项目命名空间的唯一标识符名称预填充和**转换**形状名称：\<项目命名空间\>。\<转换形状名称\>_Map (例如，MyProject.Transform3_Map)。  
   
- 如果你选择**现有映射**，单击中的向下箭头**名称**字段来选择要使用的映射文件。 此列表框会显示该项目中可用的所有现有映射的列表（按字母顺序排序）。 在此列表中，如果您单击文本\<选择从引用的程序集 >，则**选择项目类型**对话框随即显示。 它使可选择的详细信息，请参阅[如何使用选择项目类型对话框中](../core/how-to-use-the-select-artifact-type-dialog-box.md)。  
+ 如果你选择**现有映射**，单击中的向下箭头**名称**字段来选择要使用的映射文件。 此列表框会显示该项目中可用的所有现有映射的列表（按字母顺序排序）。 在此列表中，如果您单击文本\<从引用的程序集选择\>、**选择项目类型**对话框随即显示。 它使可选择的详细信息，请参阅[如何使用选择项目类型对话框中](../core/how-to-use-the-select-artifact-type-dialog-box.md)。  
   
 ### <a name="select-source-and-destination-messages"></a>选择源消息和目标消息  
  使用这一部分**转换配置**对话框可以配置在所选的映射**新建/现有映射文件？**部分。 如果你选择**新图**在该部分中，创建该图通过将其配置在本部分中。  

@@ -19,11 +19,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e652ff10c4ebfaf00069f3a7197dfd739eb680e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be03cce0c0d482563ac12bbd3b60cead04b2ccfa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="security-and-privacy-standards"></a>安全和隐私标准
 使用财务服务应用程序和集成解决方案开发[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]通常受本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安全功能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用严格的安全机制，如事实上 Internet 加密消息的标准和传输协议，签名证书，[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]身份验证，并使用企业单一登录来保护[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序、 数据和运行时。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  务必要考虑保护 SWIFT 消息和它们包含在输入或最终用户，在传输过程，以及在时编辑时的信息的度量值[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]处理并存储它们。  
   
- 在一起，[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]和 A4SWIFT 提供平台、 基础结构和工具的设计、 开发和执行安全 SWIFT 消息传递和工作流自动化系统。  
+ 在一起，BizTalk Server 和 A4SWIFT 提供平台、 基础结构，以及用于设计、 开发和执行消息传送的安全 SWIFT 和工作流自动化系统工具。  
   
  在实施安全机制，你必须在设计和开发许多区域。 下面的列表是这些区域的高级视图：  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [A4SWIFT 消息修复和新提交的安全功能](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)  
   
--   [InfoPath 安全](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)  
+-   [InfoPath 安全性](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)  
   
 -   [服务器运行时安全性](../../adapters-and-accelerators/accelerator-swift/server-runtime-security.md)  
   
@@ -70,4 +70,4 @@ ms.lasthandoff: 09/20/2017
   
 -   [A4SWIFT Web 服务安全性](../../adapters-and-accelerators/accelerator-swift/a4swift-web-service-security.md)  
   
--   [安全摘要](../../adapters-and-accelerators/accelerator-swift/security-summary.md)
+-   [安全性摘要](../../adapters-and-accelerators/accelerator-swift/security-summary.md)

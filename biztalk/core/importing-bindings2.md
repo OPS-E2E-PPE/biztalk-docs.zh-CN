@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b21d5a3dda5bc53816c608e97063a42f3eafa4db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f2c92d5469f88494c77ad062d97c53768572a5b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-bindings"></a>导入绑定
 本部分中的主题介绍如何将绑定导入到 BizTalk 组或应用程序。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **适配器的名称属性可能不正确。** 如果绑定文件包括适配器的设置，请验证绑定文件中 TransportType 元素的 Name 属性与在 BizTalk Server 管理控制台中（在“平台设置”>“适配器”下）为该适配器配置的属性相同。  
   
-     特别是，从 [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 将绑定导入到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 时，应当验证是否属于这种情况。 对于以下传输，这可能会是一个问题：  
+     具体而言，你应验证这种情况，在导入来自绑定[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]给 BizTalk Server。 对于以下传输，这可能会是一个问题：  
   
     -   MQS  
   

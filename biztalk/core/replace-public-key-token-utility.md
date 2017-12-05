@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7dee6fff7de065c3663ab373f739f7fb465947c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 344b25b83060143b339a6791ecae6f3ab7028055
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="replace-public-key-token-utility"></a>将公共密钥令牌实用程序
 此实用程序可以用从强名称程序集密钥 (.snk) 文件派生的公钥标记替换文件中的公钥标记或变量。  
@@ -64,13 +64,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  从命令提示符处，运行以下命令：  
   
-4.  **ReplacePKT \<**  *.snk 文件*  **>  \<**  *旧的公钥令牌*  **>  \<**  *文件替换***>**  
+4.  **ReplacePKT \<**  *.snk 文件*  **\> \<**  *旧的公钥令牌*  **\> \<**  *文件替换***\>**  
   
     |选项|Description|  
     |------------|-----------------|  
-    |**\<***.snk 文件***>**|.snk 文件的完整路径，该文件中包含的公钥标记将替换现有的公钥标记或占位符 。|  
-    |**\<***旧的公钥令牌***>**|要替换的公钥标记或占位符。|  
-    |**\<***文件替换***>**|要替换的公钥标记或占位符所在文件的完整路径。|  
+    |**\<***.snk 文件***\>**|.snk 文件的完整路径，该文件中包含的公钥标记将替换现有的公钥标记或占位符 。|  
+    |**\<***旧的公钥令牌***\>**|要替换的公钥标记或占位符。|  
+    |**\<***文件替换***\>**|要替换的公钥标记或占位符所在文件的完整路径。|  
   
      例如：  
   
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
     ReplacePKT <filename>.snk  
     ```  
   
-     其中\< *filename*> 是从中派生公钥标记的.snk 文件的名称。  
+     其中\< *filename* \>是从中派生公钥标记的.snk 文件的名称。  
   
     ```  
     Example: ReplacePKT.bat MyToken.snk  
@@ -103,4 +103,4 @@ ms.lasthandoff: 09/20/2017
 3.  将脚本文件传送给用户时，请将组成替换公钥标记实用程序的三个文件（ReplacePKT.bat、ReplacePKT.vbs、ReplacePKT.wsf）包括在内。 确保脚本用户在运行脚本之前将这三个文件全部复制到文件系统中的同一文件夹。  
   
 ## <a name="see-also"></a>另请参阅  
- [SDK 中的实用程序](../core/utilities-in-the-sdk.md)
+ [SDK 中的实用工具](../core/utilities-in-the-sdk.md)

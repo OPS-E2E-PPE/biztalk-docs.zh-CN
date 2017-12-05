@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77ac34fb06497f72b778592b3ce4c927b0ca3a07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51cd634d7933f7e25de2e742711b1593bf6b6dc1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a>接收使用 FOR XML 子句中使用 BizTalk Server 的 SQL SELECT 语句的轮询消息
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]来接收使用 SELECT 语句或存储的过程包含 FOR XML 子句的 SQL Server 表或视图的定期的数据更改消息。 你可以指定这些语句作为适配器执行轮询数据库的轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回的结果集。  
@@ -86,7 +86,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
          因为你已添加到你的 BizTalk 项目 sqltypes.xsd 架构执行此操作。  
   
-    4.  提供架构目标命名空间。 单击**\<架构 >**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlPolling/namespace`。  
+    4.  提供架构目标命名空间。 单击**\<架构\>**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlPolling/namespace`。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
  你先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，为其类型由相应的架构定义。 后生成架构，你必须将其从 BizTalk 项目的业务流程视图链接到消息中。  
@@ -204,7 +204,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
 -   适配器执行轮询语句，并接收来自 SQL Server 数据库的轮询消息。 轮询语句包含带有 FOR XML 子句的 SELECT 语句，因为该适配器接收的轮询消息如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Root xmlns="http://ForXmlPolling/namespace">  
       <Employee Employee_ID="10765" Name="John" Designation="Tester" xmlns="" />   
       <Employee Employee_ID="10766" Name="Sam" Designation="Manager" xmlns="" />   

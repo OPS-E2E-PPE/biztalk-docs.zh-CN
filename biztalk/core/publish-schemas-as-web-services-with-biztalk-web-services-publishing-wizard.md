@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3421e2e6cfb5c76252bcb48d63f55eb5f1ecdb7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba7f93eae8866212546f5daa3b9ed1a5b653c983
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>如何使用发布向导的 BizTalk Web 服务以将架构作为 Web 服务发布
 使用 BizTalk Web Services 发布向导可将架构发布为 Web Services。  
@@ -88,19 +88,19 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  同一目标命名空间/根元素名称组合只能作为请求 SOAP 标头和响应 SOAP 标头各添加一次。  
   
-9. 上**Web 服务项目**页上，在**项目位置**文本框中，键入项目位置。 你可以接受默认位置 (http://localhost/\<*文件的内容*>)，键入项目的位置或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+9. 上**Web 服务项目**页上，在**项目位置**文本框中，键入项目位置。 你可以接受默认位置 (http://localhost/ <*文件的内容*>)，键入项目的位置或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
   
     -   **覆盖现有项目。** 仅当项目位置已存在时，此选项才可用。 仅当选择了此选项时，你才能够发布到同一位置。 否则，必须输入不同的项目位置。  
   
     -   **允许匿名访问 web 服务。** 此选项会为已创建的虚拟目录添加匿名访问权限。 默认情况下，虚拟目录继承其父虚拟目录或网站（如果该目录是顶级虚拟目录）的访问权限。  
   
-    -   **创建 BizTalk 接收位置。** 此选项自动创建与每个生成的 .asmx 文件对应的 SOAP 适配器接收端口和位置。 如果已存在其他接收位置，则不会替换此接收位置。 使用格式解析 SOAP 适配器接收位置"/\<*虚拟目录名称*>/\<*orchestration namespace_typename_portname*>.asmx"。 选择此选项后，选择将在其中生成接收端口和位置的应用程序。  
+    -   **创建 BizTalk 接收位置。** 此选项自动创建与每个生成的 .asmx 文件对应的 SOAP 适配器接收端口和位置。 如果已存在其他接收位置，则不会替换此接收位置。 使用格式解析 SOAP 适配器接收位置"/\<*虚拟目录名称*\>/\<*orchestration namespace_typename_portname* \>.asmx"。 选择此选项后，选择将在其中生成接收端口和位置的应用程序。  
   
         > [!NOTE]
-        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到不同的服务器，键入项目名称作为 **http://\<*servername*>/\<*文件的内容*> * *。  
+        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到不同的服务器，键入项目名称作为 **http://&lt*servername*>/<*文件的内容*> * *。  
   
         > [!NOTE]
-        >  项目位置可位于非默认网站上。 在发布到非默认网站时，在 URL 中包括的网站的端口号： http://localhost:8080/ /\<*文件的内容*>。  
+        >  项目位置可位于非默认网站上。 在发布到非默认网站时，在 URL 中包括的网站的端口号： http://localhost:8080/ / <*文件的内容*>。  
   
         > [!NOTE]
         >  在使用向导创建接收位置时，向导会使用多个默认值创建接收位置。 默认值为接收和发送管道**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**和**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。 如果通过已发布的 Web 服务接收的消息需要任何特殊的管道处理 （例如，验证、 关联或入站/出站映射），则应设置发送和接收到的管道**Microsoft.BizTalk.DefaultPipelines.XMLReceive**， **Microsoft.BizTalk.DefaultPipelines.XMLSend**，或自定义管道。  
@@ -112,4 +112,4 @@ ms.lasthandoff: 09/20/2017
 12. 单击**完成**完成 BizTalk Web 服务发布向导。  
   
 ## <a name="see-also"></a>另请参阅  
- [发布架构作为 Web 服务](../core/publishing-schemas-as-a-web-service.md)
+ [将架构发布为 Web 服务](../core/publishing-schemas-as-a-web-service.md)

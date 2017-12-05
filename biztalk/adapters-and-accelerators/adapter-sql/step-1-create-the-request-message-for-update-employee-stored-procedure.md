@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be63a18df71a91bebffeb1fccfe46395fdb36b0e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e30225b79b14ffc237798ddde6f3fe40fb4aea9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-the-request-message-for-updateemployee-stored-procedure"></a>步骤 1： 为 UPDATE_EMPLOYEE 创建请求消息存储过程
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  在**签名**选项卡上，选择**对程序集签名**复选框。  
   
-    4.  从**选择强名称密钥文件**列表中，单击**\<浏览 >**。  
+    4.  从**选择强名称密钥文件**列表中，单击**\<浏览\>**。  
   
     5.  导航到您在其中创建强名称密钥文件的文件夹，然后单击**打开**。  
   
@@ -124,4 +124,4 @@ ms.lasthandoff: 09/20/2017
  将请求消息发送到 SQL Server 和中所述接收的响应，[步骤 2： 将请求消息发送到 SQL Server 和接收响应](../../adapters-and-accelerators/adapter-sql/step-2-send-the-request-message-to-sql-server-and-receive-response.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [第 3 课： 执行存储的过程以选择新添加的员工](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)
+ [第 3 课：执行存储过程以选择新添加的员工](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)

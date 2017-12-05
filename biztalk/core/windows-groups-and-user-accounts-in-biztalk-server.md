@@ -85,11 +85,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77f229c950c3f49eca80810e9702ce021f0e8579
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a04b8e774156acaaa44dc49377bbdd7e3f91b198
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>BizTalk Server 中的 Windows 组和用户帐户
 有关 BizTalk Server 本地和域组和用户帐户的信息。 如果在单台计算机上安装了 BizTalk Server 和所有必备软件，则默认情况下配置管理器将为你创建必需的 BizTalk 组帐户。 本部分中包含的信息适用于多计算机拓扑结构。  
@@ -131,7 +131,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk 主机实例帐户|用于运行 BizTalk 进程内主机实例（即访问进程内 BizTalk 主机实例 BTNTSVC 的实例）的服务帐户。|BizTalk Application Users<br /><br /> SSO Affiliate Administrators||  
 |BizTalk 独立主机实例帐户|用于运行 BizTalk 独立主机实例 (HTTP/SOAP) 的服务帐户。|BizTalk Isolated Host Users<br /><br /> SSO Affiliate Administrators<br /><br /> IIS_WPG||  
 |规则引擎更新服务|用于运行规则引擎更新服务收到的规则引擎数据库通知部署/取消部署策略的服务帐户。||BizTalkRuleEngineDb 中的 RE_HOST_USERS SQL Server 数据库角色|  
-|BAM Notification Services 用户|用于运行 BAM Notification Services（该服务访问 BAM 数据库）的服务帐户。|SQLServer2008NotificationServicesUser$\<**ComputerName**>|以下数据库中的 NSRunService SQL Server 数据库角色：<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport 的 BAM_ManagementNSReader SQL Server 角色|  
+|BAM Notification Services 用户|用于运行 BAM Notification Services（该服务访问 BAM 数据库）的服务帐户。|SQLServer2008NotificationServicesUser$\<**ComputerName**\>|以下数据库中的 NSRunService SQL Server 数据库角色：<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport 的 BAM_ManagementNSReader SQL Server 角色|  
 |BAM 管理 Web Services 用户|访问各种 BAM 资源的 BAM 管理 Web Services (BAMManagementService) 的用户帐户。 BAM 门户带有登录 BAM 门户以管理警报、 XML 和 BAM 视图获取 BAM 定义用户凭据的调用 BAMManagementService|IIS_WPG|以下数据库中的 NSSubscriberAdmin SQL Server 数据库角色：<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMPrimaryImport 的 BAM_ManagementWS SQL Server 角色|  
 |BAM 应用程序池帐户|BAM 门户网站宿主 BAMAppPool 的应用程序池帐户。|IIS_WPG||  
   

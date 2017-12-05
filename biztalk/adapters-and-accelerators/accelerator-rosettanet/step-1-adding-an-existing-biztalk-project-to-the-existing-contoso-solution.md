@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34c6a6bd5807702cb01c4c7cbc13780b95cc3da2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 343bdf83d90d38a6fc0c626a65353c0185c43f6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-adding-an-existing-biztalk-project-to-the-existing-contoso-solution"></a>步骤 1： 将现有 BizTalk 项目添加到现有的 Contoso 解决方案
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 包含专用业务流程，在自定义你自己的专用流程时它是一个很好的起点。 在此步骤中，将该业务流程添加到解决方案，然后更改程序集的名称，以避免此名称与 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装过程中安装的 PrivateResponder 业务流程相冲突。 在开始之前，打开你在中创建 Contoso 解决方案[步骤 1： 为 Contoso 价格和可用性请求创建一个新的 BizTalk 解决方案](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 1.  将 PrivateResponder SDK 示例复制到 Contoso 解决方案文件夹中。  
   
     > [!NOTE]
-    >  默认情况下，PrivateResponder SDK 示例位于 C:\Program Files\Microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\PrivateResponder 文件夹。  
+    >  默认情况下，PrivateResponder SDK 示例位于 C:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\PrivateResponder 文件夹。  
   
 2.  在 Visual Studio 中，单击**文件**，指向**添加**，然后单击**现有项目**。  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 7.  在**属性**窗口，请在**Namespace**字段中，键入**ContosoPriceAndAvailability**，然后按**Enter**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 2： 定义和 contoso 发布词汇](../../adapters-and-accelerators/accelerator-rosettanet/step-2-defining-and-publishing-the-vocabulary-for-contoso.md)
+ [步骤 2：定义和发布 Contoso 的词汇](../../adapters-and-accelerators/accelerator-rosettanet/step-2-defining-and-publishing-the-vocabulary-for-contoso.md)

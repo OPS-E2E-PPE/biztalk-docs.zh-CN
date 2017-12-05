@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e77defa2351bf8e180b63b8da5c6a8c4e0e5a4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 446125cbe164cfebfe7635975c5fd1825a026081
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a>对 BizTalk 适配器使用 IPv6 寻址
 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 操作系统上，则 [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] 适配器支持使用 IPv6 寻址。 本主题介绍了指定 UNC 路径的 IPv6 地址时应当使用的命名法、指定文本 IPv6 地址时使用的命名法，以及如何对 HTTP 和 SOAP 适配器使用 IPv6 范围标识符。  
@@ -31,10 +31,10 @@ ms.lasthandoff: 09/20/2017
  例如，如果计算机的 IPv6 地址为 2001:DB8:2a:1005:230:48ff:fe73:989d，则指向该计算机上文件共享路径的 URI 的命名法为：  
   
 ```  
-\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename>  
+\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename\>  
 ```  
   
- 其中\< *sharename*> 是目标计算机上的文件共享的名称。  
+ 其中\< *sharename* \>是目标计算机上的文件共享的名称。  
   
 > [!NOTE]
 >  确保用于运行文件发送和接收处理程序的主机实例的用户帐户具有对该文件共享的相应权限。 有关与文件适配器接收文件所需的文件夹权限的详细信息请参阅[如何配置文件接收处理程序](http://msdn.microsoft.com/library/68333bb6-d79b-4a82-9742-230f62d535c4)。 有关所需时发送与文件适配器的文件的文件夹权限的详细信息请参阅[文件适配器的已知问题](../core/known-issues-with-the-file-adapter.md)。 有关支持用于文件适配器的文件系统的信息，请参阅[http://support.microsoft.com/kb/815070](http://support.microsoft.com/kb/815070)。  

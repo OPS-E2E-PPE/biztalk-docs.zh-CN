@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bb930c3e9d252a23653f0464e1adaa1e18b4f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: babcd621dcc08463e43d0ed3ce49cf4b35fb3775
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-get-the-duration-on-an-rta-window"></a>如何获取 RTA 时段的持续时间
 管理员使用**get rtawindow**命令来获取指定的实时聚合 (RTA) 的持续时间。 该命令返回持续时间的长度和度量单位。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到文件夹 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  类型**bm get rtawindow 的视图：\<视图名称 >-活动：\<活动名称 >-Rta:\<RTA 名称 >**。  
+3.  类型**bm get rtawindow 的视图：\<视图名称\>的活动：\<活动名称\>-Rta:\<RTA 名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

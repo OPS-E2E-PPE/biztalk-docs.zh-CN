@@ -12,11 +12,11 @@ caps.latest.revision: "49"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17f181933daac5170c517a23f809eb97b54f2900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e29a9d3f1256fc24cf0a8f57b8ce0b7b1ba707d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-define-the-business-process"></a>步骤 2：定义业务流程
 ![步骤 2 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**Identifier**|类型**RequestMessage**。|  
-    |**消息类型**|单击**架构**，然后单击**\<选择从引用程序集...>**。 从选择项目类型窗口中，单击**EAISchemas**，然后单击**请求**。 单击 **“确定”**。|  
+    |**消息类型**|单击**架构**，然后单击**\<选择从引用的程序集...\>**. 从选择项目类型窗口中，单击**EAISchemas**，然后单击**请求**。 单击 **“确定”**。|  
   
 4.  从 Orchestration 视图中，右键单击**消息**，然后单击**新消息**。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**Identifier**|类型**RequestDeclineMessage**。|  
-    |**消息类型**|单击**架构**，然后单击**\<选择从引用程序集...>**。 从选择项目类型窗口中，单击**EAISchemas**，然后单击**RequestDecline**。 单击 **“确定”**。|  
+    |**消息类型**|单击**架构**，然后单击**\<选择从引用的程序集...\>**. 从选择项目类型窗口中，单击**EAISchemas**，然后单击**RequestDecline**。 单击 **“确定”**。|  
   
 #### <a name="to-configure-the-properties-of-the-shapes"></a>若要配置形状的属性  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**TransformRequestToRequestDeclineMessage**。|  
-    |**映射名称**|单击**...**. 从“转换配置”中，执行以下操作：<br /><br /> 输入配置信息：<br /><br /> -单击**现有映射**。<br /><br /> 完全限定的映射名称：<br /><br /> -选择**\<选择从引用的程序集 >**。  从左窗格中，选择**EAISchemas**。  从右侧窗格中选择“EAISchemas.MapToReqDecline”。  单击 **“确定”**。<br /><br /> 数据源<br /><br /> -RequestMessage<br /><br /> 目标<br /><br /> -RequestDeclineMessage|  
+    |**映射名称**|单击**...**. 从“转换配置”中，执行以下操作：<br /><br /> 输入配置信息：<br /><br /> -单击**现有映射**。<br /><br /> 完全限定的映射名称：<br /><br /> -选择**\<从引用的程序集选择\>**。  从左窗格中，选择**EAISchemas**。  从右侧窗格中选择“EAISchemas.MapToReqDecline”。  单击 **“确定”**。<br /><br /> 数据源<br /><br /> -RequestMessage<br /><br /> 目标<br /><br /> -RequestDeclineMessage|  
   
 11. 在设计图面上，单击**Send_1**形状。  
   
@@ -158,4 +158,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [步骤 1： 向解决方案添加 EAIOrchestration 项目](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
  [步骤 3： 将端口添加到业务流程](../core/step-3-add-ports-to-the-orchestration.md)   
- [步骤 4： 生成 EAIOrchestration 项目](../core/step-4-build-the-eaiorchestration-project.md)
+ [第 4 步：生成 EAIOrchestration 项目](../core/step-4-build-the-eaiorchestration-project.md)

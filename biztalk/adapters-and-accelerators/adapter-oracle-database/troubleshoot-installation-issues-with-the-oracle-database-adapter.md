@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d245742fb89dd9eb91137d3a5f945af13b97161
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0dc2603a2e86d29797919fb51c3985c384ff9580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>解决与 Oracle 数据库适配器的安装问题
 安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论如何使用故障排除方法来解决安装问题，并还列出了一些已知的问题。  
@@ -44,9 +44,9 @@ ms.lasthandoff: 09/20/2017
   
 手动注册[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]绑定： 
   
-1.  导航到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
+1.  导航到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
   
-     在此路径中，\<版本 > 是.NET Framework 的版本。  
+     在此路径中，\<版本\>是.NET Framework 的版本。  
   
 2.  通过使用文本编辑器中打开该文件。  
   

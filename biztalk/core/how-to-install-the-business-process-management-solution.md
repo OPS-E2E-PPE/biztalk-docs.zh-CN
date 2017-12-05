@@ -16,11 +16,11 @@ caps.latest.revision: "61"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22b16e8c33dfdbf44b000cc9a048e86a5869d616
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 706bc1cec8afc796fa44e022243782a207fe1777
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>如何安装业务流程管理解决方案
 以下步骤介绍如何为安装业务流程管理 (BPM) 解决方案准备计算机，以及如何在此计算机上安装该解决方案：  
@@ -262,8 +262,8 @@ ms.lasthandoff: 09/20/2017
         |属性名称|值|  
         |-------------------|-----------|  
         |**Server**|`localhost`|  
-        |**用户名**|\<*BizTalk 服务帐户名称*>|  
-        |**密码**|\<*BizTalk 服务帐户密码*>|  
+        |**用户名**|\<*BizTalk 服务帐户名称*\>|  
+        |**密码**|\<*BizTalk 服务帐户密码*\>|  
   
 6.  运行 BPM 解决方案。 有关运行解决方案的详细信息，请参阅[如何运行业务流程管理解决方案](../core/how-to-run-the-business-process-management-solution.md)。  
   

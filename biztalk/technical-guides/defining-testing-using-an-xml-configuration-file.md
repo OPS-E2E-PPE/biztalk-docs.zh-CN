@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 761f8c0a4480c26240926240cd890c1c68419b58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f18d6ed5e237a9ee5e9dbe36c58c10ec6f22907d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>定义测试使用 XML 配置文件
 BizUnit 提供两种方法来定义测试： 通过 XML 配置文件和通过 Excel 工作表。 本主题重点介绍使用 XML 配置文件来定义测试;但是，你还应注意 BizUnit SDK，因为它提供了如何定义使用 Excel BizUnit 测试用例的一个有趣示例。 此外，你可能希望调查 BizUnit 设计器工具，它提供一个 GUI，允许快速创建 BizUnit 测试用例。 本主题概述了如何定义使用 XML 配置使用非常简化的方案的测试用例。  
@@ -60,7 +60,7 @@ BizUnit 提供两种方法来定义测试： 通过 XML 配置文件和通过 Ex
 </TestSetup>  
 ```  
   
- 然后输入什么是测试的测试执行阶段的最关键部分。 此阶段可以包含多个测试步骤。 在此示例中我们使用 FileCreateStep 复制文档 (InDoc1.xml 可以看到在\<SourcePath > 标记) 为通过使用该文件放置我们接收位置。 务必要注意 BizUnit 支持用于在此步骤; 的文件名的唯一标识符这可以看到与 %creationpath 标记中的 Guid %引用。  
+ 然后输入什么是测试的测试执行阶段的最关键部分。 此阶段可以包含多个测试步骤。 在此示例中我们使用 FileCreateStep 复制文档 (InDoc1.xml 可以看到在\<SourcePath\>标记) 为通过使用该文件放置我们接收位置。 务必要注意 BizUnit 支持用于在此步骤; 的文件名的唯一标识符这可以看到与 %creationpath 标记中的 Guid %引用。  
   
  完成此操作后，我们需要使用**FileValidateStep**验证出站消息已创建。 你将注意到此步骤允许您指定超时值 （这是以毫秒为单位）、 目录和搜索模式。 除此之外， **DeleteFile**标记使您能够指定是否想要在已进行验证后删除的文件。 最后，你还应注意验证涉及 XPath 查询，验证 XML 消息 （它会检查的值是 PONumber_0。） 中的 PONumber 节点检查和验证的任何出站消息是负载的另一个示例使用 BizUnit 时应遵循以下指导方针。  
   
@@ -148,4 +148,4 @@ BizUnit 提供两种方法来定义测试： 通过 XML 配置文件和通过 Ex
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [使用 BizUnit 以便于自动测试](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [使用 BizUnit 优化自动测试](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

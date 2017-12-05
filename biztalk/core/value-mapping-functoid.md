@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2bb8e89ed790fe9916efe69685ad667d9fe9403
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 038d59827a62c9f4e83879ec7cf2e0b47fd738f4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="value-mapping-functoid"></a>“值映射”Functoid
 **值映射**functoid 返回其第二个参数的值，如果其第一个参数为 true。 该 functoid 通常用于将字段的属性更改为记录的属性。 若要通过将多个记录转换为单个记录平展输入消息的一部分，使用[值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)。  
@@ -62,9 +62,9 @@ ms.lasthandoff: 09/20/2017
  若要取消空标记，可以使用“值映射”functoid 控制是否创建某个标记。 如果值的计算结果为 True，则将创建目标字段，否则，不创建目标字段。 在循环方案中，使用“判断”functoid 并将其连接到目标记录或目标字段。 如果条件的计算结果为 false，则不创建标记。 有关示例，请参阅[条件循环](../core/conditional-looping.md)。  
   
 ## <a name="forcing-the-creation-of-empty-tags"></a>强制创建空标记  
- 若要强制空标记来创建，可以添加一个值的目标字段或链接的值属性中**Concatenate** functoid 到目标字段。  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以通过选择强制生成空标记"\<空 >"的目标字段的值属性中的值。 在这种情况下，将使用空值创建字段。  
+ 若要强制空标记来创建，可以添加一个值的目标字段或链接的值属性中**Concatenate** functoid 到目标字段。  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以通过选择强制生成空标记"\<空\>"目标字段的值属性中的值。 在这种情况下，将使用空值创建字段。  
   
 ## <a name="see-also"></a>另请参阅  
  [映射 （拼合） Functoid 的值](../core/value-mapping-flattening-functoid.md)   
  [如何添加值映射到图 Functoid](../core/how-to-add-value-mapping-functoids-to-a-map.md)   
- [高级的 Functoid](../core/advanced-functoids.md)
+ [高级 Functoid](../core/advanced-functoids.md)

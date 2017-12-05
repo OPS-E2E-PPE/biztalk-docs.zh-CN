@@ -13,17 +13,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf1b105f2e7cfc5601469ac55cac6af22aa21a16
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 64b17179b7131839dc369e9bdecf5e40dd831e4d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transmitpipeline-receiveport-node"></a>TransmitPipeline（ReceivePort 节点）
 绑定文件的 ReceivePort 节点的 TransmitPipeline 节点提供有关绑定到通过绑定文件导出的双向接收端口的发送管道的特定信息。  
   
 > [!NOTE]
->  在接收位置级别绑定由于发送管道的双向接收[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，此节点为了向后与 BizTalk Server 2004 的兼容性。 发送管道的双向接收绑定在 BizTalk Server 2004 中的接收端口级别。 为此节点已从 BizTalk Server 2004 导出绑定文件将应用于引用每个双向接收位置的发送管道节点时设置的接收端口导入到绑定文件的属性[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+>  发送管道的双向接收绑定在 BizTalk Server 中的接收位置级别，因为此节点被为了向后与 BizTalk Server 2004 的兼容性。 发送管道的双向接收绑定在 BizTalk Server 2004 中的接收端口级别。 为绑定文件已从 BizTalk Server 2004 导出的此节点设置的属性将应用到发送管道时绑定文件导入到 BizTalk Server 接收端口通过引用每个双向接收位置的节点。  
   
 ## <a name="nodes-in-the-transmitpipeline-node"></a>TransmitPipeline 节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [发送管道](../core/sendpipeline-receivelocation-node.md)   
- [接收位置](../core/receivelocation-receivelocations-node.md)
+ [ReceiveLocation](../core/receivelocation-receivelocations-node.md)

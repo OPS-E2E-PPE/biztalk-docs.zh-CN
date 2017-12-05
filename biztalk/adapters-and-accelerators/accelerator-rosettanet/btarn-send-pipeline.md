@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bd102c58f85fd38c2f769f6e4aca2b5fd0d7919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f566b37cc43f8aca2f0a36143d10d809c008d5cd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-send-pipeline"></a>BTARN 发送管道
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet 实现框架 (RNIF) 消息准备 RNIFSend 管道 (RNIFSend.btp) 中的传输。 发送管道包括：  
@@ -40,12 +40,12 @@ ms.lasthandoff: 09/20/2017
  XML 预处理器将 DOCTYPE 标头添加到消息。 标头来确定与消息关联的文档类型定义 (DTD) 架构。 RNIF 规范要求 RNIF 传输 DOCTYPE 标头。  
   
 ## <a name="xml-assembler"></a>XML 汇编程序  
- XML 组装器基于 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] XML 组装器。 它将属性从消息上下文传输回包络线和文档。 它从其 XML 部件和附件装配消息。 它不执行消息验证。  
+ XML 汇编程序取决于 BizTalk Server XML 汇编程序。 它将属性从消息上下文传输回包络线和文档。 它从其 XML 部件和附件装配消息。 它不执行消息验证。  
   
- 有关本地 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] XML 组装器的详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“XML 组装器管道组件”部分。  
+ 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]XML 汇编程序，请参阅 BizTalk Server 帮助中的"XML 的汇编程序管道组件"。  
   
 ## <a name="mimesmime-encoder"></a>MIME/SMIME 编码器  
- MIME/SMIME 编码器基于 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] MIME/SMIME 编码器。 根据贸易合作伙伴协议中的协议设置和 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] MIME/SMIME 编码器中的设置，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 编码器执行以下操作：  
+ MIME/SMIME 编码器取决于 BizTalk Server MIME/SMIME 编码器。 具体取决于贸易合作伙伴协议和 BizTalk Server MIME/SMIME 编码器的设置中的协议设置[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]编码器执行以下：  
   
 -   将一个 8 字节的二进制标头添加到消息中，根据需要为 RNIF 1.1 消息。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 -   将加密的负载 （服务内容加附件）、 或负载容器 （服务内容加服务标头加附件）。 如果设置了**编码所有端口**上设置**协议**到贸易合作伙伴协议的选项卡`False`，编码器将加密只对负载。 如果设置了**编码所有端口**将设置为`True`，编码器将加密负载容器。  
   
- 有关本地 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] MIME/SMIME 编码器的详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“MIME/SMIME 编码器管道组件”部分。  
+ 有关本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MIME/SMIME 编码器，请参阅 BizTalk Server 帮助中的"MIME/SMIME 的编码器管道组件"。  
   
 ## <a name="message-flow"></a>消息流  
  消息流通过 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 发送管道的步骤如下：  
@@ -87,4 +87,4 @@ ms.lasthandoff: 09/20/2017
 6.  有关 RNIF 2.01，编码器将计算的 MIME 消息，第一个正文部分的摘要，并保留了摘要。 它将计算使用在中设置的方法的摘要`Digest`贸易合作伙伴协议 （sha-1 或 MD5） 中的方法属性。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息处理在 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+ [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

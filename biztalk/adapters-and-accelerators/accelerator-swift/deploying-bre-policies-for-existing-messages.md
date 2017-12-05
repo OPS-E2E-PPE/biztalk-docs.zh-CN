@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b03f6f3319e90d4782e1e9e5fd7e2a7e2a27b527
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cd094feabe1ba23a6a73c89aae3a1042b8f7fc9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-bre-policies-for-existing-messages"></a>将 BRE 策略部署的现有消息
 **部署相关的业务规则：**  
@@ -33,6 +33,6 @@ ms.lasthandoff: 09/20/2017
   
 5.  关闭 SWIFT BRE 部署实用工具的对话框。  
   
-6.  在 Windows 资源管理器，浏览到*\<驱动器 >*: \Documents and Settings\All Users\Application 数据，以确认日志文件 BREDeploymentLog.txt 显示在文件夹中。  
+6.  在 Windows 资源管理器，浏览到*\<驱动器\>*: \Documents and Settings\All Users\Application 数据，以确认日志文件 BREDeploymentLog.txt 显示在文件夹中。  
   
 7.  单击**启动**，单击**运行**，类型**services.msc**，然后单击**确定**。 在服务 （本地） 窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。

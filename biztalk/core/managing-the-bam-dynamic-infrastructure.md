@@ -15,18 +15,18 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 631a6bb3bab613004e11410a382687147e4adad8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98cf9c3513a4fbd4a55a752233c9f0d704c59ecf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a>管理 BAM 动态基础结构
 业务活动监视 (BAM) 功能使用动态生成的 SQL 和联机分析处理 (OLAP) 基础结构。 管理员使用 BAM 管理实用程序部署的 BAM 定义工作簿或业务分析人员开发的 XML 文件。  
   
  BAM 动态基础结构由 BAM 工作簿视图、 BAM 部署、 BAM 数据转换服务 (DTS) 包，以及 BAM 数据库。 有关 BAM 动态基础结构的详细信息，请参阅[BAM 动态基础结构](../core/bam-dynamic-infrastructure.md)。  
   
- BizTalk Server 创建以下的 BAM 数据库，当你配置[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]:  
+ 配置 BizTalk Server 时，BizTalk Server 将创建以下的 BAM 数据库：  
   
 -   BAM 主导入 (BAMPrimaryImport) 数据库  
   

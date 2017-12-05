@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c9c9be5e9f3361683e495febbd98a05156399d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c011183c6ba34c9614d1e642916264224def546e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a>如何创建或编辑过程配置
 本主题讲述如何创建或编辑流程配置。  
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  右键单击你想要编辑，然后单击的过程配置**属性**。  
   
-5.  在*\<过程配置 >*属性对话框中，在**常规**和**联系人属性**选项卡，更改为所需的设置。 有关这些设置的信息，请参阅上表。  
+5.  在*\<过程配置\>*属性对话框中，在**常规**和**联系人属性**选项卡上，根据更改设置必填。 有关这些设置的信息，请参阅上表。  
   
 6.  单击 **“确定”**。  
   

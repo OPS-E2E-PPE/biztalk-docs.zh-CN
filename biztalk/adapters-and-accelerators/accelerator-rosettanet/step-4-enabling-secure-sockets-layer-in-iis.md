@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05bd6b06ddc54ec0d337dd7dddfff300a625f7df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2964b6ac26d6685a1c38b88c5bbf98e8119f3502
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>步骤 4： 启用安全套接字在 IIS 中的层
 安全套接字层 (SSL) 是一个协议，旨在增强客户端与服务器之间通信通道的安全性。 通过在 Microsoft® Internet 信息服务 (IIS) 7.5/7.0 中启用 SSL，Contoso 和 Fabrikam 组织在通信中对所有的数据传输使用身份验证和加密。 在此步骤中，您将学习如何在 IIS 7.5/7.0 中启用 SSL。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，展开 **\<**  *computer_name*  **>**  (*本地计算机*)，展开**网站**，右键单击**Default Web Site**，然后单击**属性**。  
+2.  在 Internet Information Services 的左窗格中，展开 **\<**  *computer_name*  **\>**  (*本地计算机*)，展开**网站**，右键单击**Default Web Site**，然后单击**属性**。  
   
 3.  在默认网站对话框中，在**目录安全性**选项卡上，单击**服务器证书**启动**IIS 证书向导**。  
   
@@ -59,10 +59,10 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-generate-a-new-server-certificate"></a>生成新服务器证书  
   
-1.  在 Internet Explorer 中，找到并打开 http://\<*contoso_machine*> / CertSrv。  
+1.  在 Internet Explorer 中，找到并打开 http://\<*contoso_machine*\>/CertSrv。  
   
     > [!NOTE]
-    >  在步骤 1 中，打开 http://\<*contoso_machine*> / CertSrv Contoso 或 Fabrikam 计算机上的。  
+    >  在步骤 1 中，打开 http://\<*contoso_machine*\>/CertSrv Contoso 或 Fabrikam 计算机上的。  
   
 2.  上**Microsoft 证书服务向导欢迎**页上，单击**请求证书。**  
   
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  单击**浏览**以打开**选择文件**对话框。  
   
-7.  在**选择文件**对话框中，找到*\<驱动器 >*: \ 文件夹中，选择 certreq.txt 文件，然后单击**打开**。  
+7.  在**选择文件**对话框中，找到*\<驱动器\>*: \ 文件夹中，选择 certreq.txt 文件，然后单击**打开**。  
   
 8.  上**提交证书请求或续订请求**页上，单击**读取**。  
   
@@ -87,7 +87,7 @@ ms.lasthandoff: 09/20/2017
   
 11. 在**文件下载**对话框中，单击**保存**。  
   
-12. 在**另存为**对话框中，保存到证书\<驱动器 >: \Certs\SSLCert.cer，，然后单击**保存**。  
+12. 在**另存为**对话框中，保存到证书\<驱动器\>: \Certs\SSLCert.cer，，然后单击**保存**。  
   
 13. 单击**关闭**关闭**下载已完成**对话框。  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在文件下载对话框中，单击**保存**。  
   
-8.  在另存为对话框中，将保存到证书\<驱动器 >: \Certs\SSLCert.cer，，然后单击**保存**。  
+8.  在另存为对话框中，将保存到证书\<驱动器\>: \Certs\SSLCert.cer，，然后单击**保存**。  
   
 ### <a name="to-import-the-server-certificate-into-iis"></a>将服务器证书导入 IIS  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在 Internet Information Services 的左窗格中，单击**（本地计算机）**，双击**服务器证书**右窗格中。 选择**完成证书请求**从操作窗格。  
   
-3.  在指定的证书颁发机构响应对话框框中键入**\<驱动器 >: \Certs\SSLCert.cer**中**包含证书颁发机构的响应文件的名称**文本框。 中的友好名称文本框中键入**ContosoSSLCert**。  
+3.  在指定的证书颁发机构响应对话框框中键入**\<驱动器\>: \Certs\SSLCert.cer**中**包含证书颁发机构的响应文件的名称**文本框。 中的友好名称文本框中键入**ContosoSSLCert**。  
   
 ### <a name="to-enable-ssl-bindings-for-iis"></a>为 IIS 启用 SSL 绑定  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，展开 **\<**  *computer_name*> (*本地计算机*)，展开**网站**，右键单击**Default Web Site**，然后单击**属性**。  
+2.  在 Internet Information Services 的左窗格中，展开 **\<**  *computer_name* \> (*本地计算机*)，展开**Web站点**，右键单击**Default Web Site**，然后单击**属性**。  
   
 3.  在默认 Web 站点属性对话框中，在**目录安全性**选项卡上，单击**服务器证书**启动**IIS 证书向导**。  
   
@@ -152,7 +152,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  上**挂起的证书申请**页上，选择**处理挂起的请求和安装证书**，然后单击**下一步**。  
   
-6.  上**处理挂起的请求**页上，在**路径和文件名**框中，键入**\<驱动器 >: \Certs\SSLCert.cer** （或浏览到该文件），然后单击**下一步**。  
+6.  上**处理挂起的请求**页上，在**路径和文件名**框中，键入**\<驱动器\>: \Certs\SSLCert.cer** （或浏览到该文件）然后单击**下一步**。  
   
 7.  上**SSL 端口页**，单击**下一步**。  
   

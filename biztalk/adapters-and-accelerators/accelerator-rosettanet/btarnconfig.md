@@ -17,17 +17,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9221e530266091795260bc7d4fd7e8788e066335
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78ab62a86e97bf70e07629052a850b5aea2cee27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btarnconfig"></a>BtarnConfig
 使用 BtarnConfig 实用工具可以将配置数据导入或导出 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 环境。 此处的配置数据是指用 BTARN 管理控制台设置的数据，包括流程配置设置、本组织、合作伙伴和协议。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > RosettaNet\SDK 快捷键  
+ \<*驱动器*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK 快捷键  
   
 ## <a name="running-btarnconfig"></a>运行 BtarnConfig  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开命令提示符。  
   
-2.  将移动到\<*驱动器*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > Accelerator for RosettaNet\SDK\\。  
+2.  将移动到\<*驱动器*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 3.  在命令提示符处，键入**BtarnConfig**，键入相应的开关，然后按 enter 键。  
   
@@ -62,9 +62,9 @@ BTARNCONFIG /EXPORT <filename>.xml [/H] [/P] [/R] [/A]
   
 |语法|Description|  
 |------------|-----------------|  
-|\<*filename*.xml >|要导入或导出的文件的完整路径。 如果你不提供的路径，BTARN 假定该路径\<*驱动器*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > RosettaNet\SDK 快捷键。|  
-|**/ 导入**|导入 XML 数据从\< *filename*.xml > 到 BTARN 配置。|  
-|**/ 导出**|将 BTARN 配置导出到 XML 数据作为\< *filename*.xml >。|  
+|\<*filename*.xml\>|要导入或导出的文件的完整路径。 如果你不提供的路径，BTARN 假定该路径\<*驱动器*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet 快捷键\SDK。|  
+|**/ 导入**|导入 XML 数据从\< *filename*.xml\>到 BTARN 配置。|  
+|**/ 导出**|将 BTARN 配置导出到 XML 数据作为\< *filename*.xml\>。|  
 |**/H**|导入或导出本组织配置数据。|  
 |**/ P**|导入或导出合作伙伴配置数据。|  
 |**/R**|导入或导出流程配置数据。|  
@@ -78,4 +78,4 @@ BTARNCONFIG /EXPORT <filename>.xml [/H] [/P] [/R] [/A]
  你必须是 BizTalk 管理员才能使用 BtarnConfig 导入或导出配置数据。 如果你不是 BizTalk 管理员，则由于访问权限问题某些导入操作可能会失败。 但是，同一 BtarnConfig 命令中的其他导入操作可能会成功。  
   
 ## <a name="see-also"></a>另请参阅  
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b00e829ad569790b257e1d5f0c16290cca68d176
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e5c4d7e20fc4d8e7c8bea724625dde770b4aca2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="undeploy-other-tutorial-projects"></a>取消部署其他教程的项目
 当为 HL7 部署 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 教程，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]在配置数据库 （也称为 BizTalk 管理数据库） 和全局程序集缓存中存储的教程的程序集文件。 如果你已运行另一个[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]教程，及已部署在该教程中创建的程序集，你可能会遇到错误时在批处理教程的三个部分中测试你的程序集。 这可能是因为一次只能部署一个消息架构。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  打开 BizTalk 资源管理器中，右键单击你想要取消部署，然后单击该程序集**取消部署后再次**。  
   
- 有关取消部署程序集的详细信息，请参阅"正在取消部署程序集使用 BizTalk 资源管理器"中[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关取消部署程序集的详细信息，请参阅"正在取消部署程序集使用 BizTalk 资源管理器"BizTalk Server 帮助中。  
   
 ## <a name="see-also"></a>另请参阅  
- [准备使用批处理教程](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+ [为使用批处理教程做准备](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

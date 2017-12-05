@@ -13,11 +13,11 @@ caps.latest.revision: "107"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d91e697504adf23585392c6c761bc13b300c3ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>安装 BizTalk 适配器包 2013 R2 和 2013
 本文档列出的软件要求，和步骤安装 Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] (BAP) 中包含 BizTalk Server 2013 或[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]。  
@@ -429,7 +429,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 <a name="BKMK_CreateSQLServer"></a>   
 #### <a name="create-sql-server-database-objects-only-for-the-sap-adapter"></a>创建 SQL Server 数据库对象 （仅适用于 SAP 适配器）  
- 若要调用 tRFCs SAP 系统中，运行*SapAdapter DbScript Install.sql* SQL 脚本。 此脚本安装使用[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装，并在 SQL Server 中创建数据库对象。 该脚本通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 只要在使用该适配器调用 tRFCs 时输入该数据库名称，你可以针对任何 SQL Server 数据库，运行此脚本。  
+ 若要调用 tRFCs SAP 系统中，运行*SapAdapter DbScript Install.sql* SQL 脚本。 此脚本安装使用[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装，并在 SQL Server 中创建数据库对象。 该脚本通常安装在\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 只要在使用该适配器调用 tRFCs 时输入该数据库名称，你可以针对任何 SQL Server 数据库，运行此脚本。  
   
 <a name="BKMK_Register_Bindings"></a>   
 #### <a name="register-the-adapter-bindings"></a>注册的适配器绑定  
@@ -439,7 +439,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 ###### <a name="register-the-adapter-bindings-or-the-net-framework-data-providers"></a>注册的适配器绑定或.NET Framework 数据提供程序  
   
-1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
+1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
   
 2.  打开使用文本编辑器的文件。  
   
@@ -675,7 +675,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
 ## <a name="removing-the-biztalk-adapter-pack"></a>删除 BizTalk 适配器包  
   
 > [!IMPORTANT]
->  如果你在要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，你必须手动删除之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装将 SapAdapter DbScript Uninstall.sql 文件通常情况下的复制\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 运行此文件，以删除你创建的表。  
+>  如果你在要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，你必须手动删除之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装将 SapAdapter DbScript Uninstall.sql 文件通常情况下的复制\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 运行此文件，以删除你创建的表。  
   
 完成以下步骤以删除[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]从您的计算机。 请确保你具有[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]安装之前您运行安装向导以删除适配器。  
   
@@ -726,7 +726,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 ###### <a name="remove-the-adapter-bindings-or-net-framework-data-provider-registration"></a>删除适配器绑定或.NET Framework 数据提供程序注册  
   
-1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
+1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。  
   
 2.  打开使用文本编辑器的文件。  
   
@@ -845,7 +845,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 -   **在 64 位计算机上的运行安装程序可能会访问架构文件时将引发错误**  
   
-     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装程序在访问时引发错误 **Microsoft.Adapters。*\<AdapterName >*_schema.xml** 文件，但与适配器安装继续进行。  
+     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装程序在访问时引发错误 **Microsoft.Adapters。*\<AdapterName\>*_schema.xml** 文件，但与适配器安装继续进行。  
   
      **可能的原因**  
   
@@ -853,4 +853,4 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
      **解决方法**  
   
-     手动复制 **Microsoft.Adapters。*\<AdapterName >*_schema.xml** 文件从`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"到`C:\Windows\System32\inetsrv\config\schema`。  
+     手动复制 **Microsoft.Adapters。*\<AdapterName\>*_schema.xml** 文件从`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"到`C:\Windows\System32\inetsrv\config\schema`。  

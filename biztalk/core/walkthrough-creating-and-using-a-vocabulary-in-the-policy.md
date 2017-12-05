@@ -12,11 +12,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f44ebd8cb41f96260b48910410014da90bbed0c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fb64a0548fefb816e1975e4c858934fc3dceb7c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a>演练： 创建和使用该策略中的词汇
 本演练提供了分步过程来创建词汇和使用中的词汇**ProcessPurchaseOrder**策略。  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  拖动**请求状态**到**然后**窗格。  
   
-8.  单击**\<空字符串 >**然后键入**已批准**。  
+8.  单击**\<空字符串\>**然后键入**已批准**。  
   
 9. 右键单击**（不保存） 1.1 版**在策略浏览器窗口中，然后单击**保存**。  
   
@@ -168,4 +168,4 @@ ms.lasthandoff: 09/20/2017
  [词汇表](../core/vocabularies.md)   
  [如何开发词汇](../core/how-to-develop-vocabularies.md)   
  [条件计算和操作执行](../core/condition-evaluation-and-action-execution.md)   
- [安排和优先级](../core/agenda-and-priority.md)
+ [议程和优先级](../core/agenda-and-priority.md)

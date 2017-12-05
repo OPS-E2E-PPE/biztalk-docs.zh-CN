@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1db38d804cc5ada05a1457596fb7c694595359d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88c621b6891b816f72603202bd6f2214882eb4b5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-submitting-a-0c4-query"></a>步骤 2： 提交 0 C 4 查询
 在此步骤中，将使用 0C4 - 同步测试查询的合作伙伴接口流程 (PIP) 准备并提交请求。 RosettaNet 对此 PIP 进行定义，以确保在两个不同的组织间能够正常运行成功的同步通信通道。 此 PIP 有一个同步通信模式，因此 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 不会发送确认回执。 此 PIP 遵循与其他同步双操作 PIP（例如，PIP 2A9 - 查询技术产品信息）相同的模式。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip 实例 ID**|类型**0C4_Test**。 **重要说明：**若要避免重复的消息 ID 错误，你必须确保**PIP**对于你提交每条消息是唯一的。 如果以后运行 0C4 测试，则必须更改此字段。|  
     |**消息类别**|类型**操作**。|  
   
-3.  使用记事本或其他文本编辑器中打开该 0C4_Request.xml 文件*\<驱动器 >*: files\microsoft BizTalk 2009 Accelerator RosettaNet\SDK\LOBApplication\SampleInstances 文件夹，然后复制并粘贴到内容**服务内容**LOBWebApplication 字段。  
+3.  使用记事本或其他文本编辑器中打开该 0C4_Request.xml 文件*\<驱动器\>*: files\microsoft BizTalk 2009 Accelerator RosettaNet\SDK\LOBApplication\SampleInstances 文件夹然后复制并粘贴到的内容**服务内容**LOBWebApplication 字段。  
   
 4.  单击**提交**若要提交 0 到 Contoso 计算机 C 4 查询。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在 Microsoft SQL Server Management Studio 中，单击**新查询**。  
   
-4.  在\<表 > 文本框中，选择**BTARNDATA**从列表中。  
+4.  在\<表\>文本框中，选择**BTARNDATA**从列表中。  
   
 5.  在“SQL”窗口中，键入以下 SQL 语句：  
   

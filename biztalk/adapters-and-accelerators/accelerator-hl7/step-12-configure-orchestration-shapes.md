@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7375912c49c431c67c7ff55025cd2821374b87b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f21c373aacc949b95588c66f1243936b15ea9e89
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-12-configure-orchestration-shapes"></a>步骤 12： 配置业务流程形状
 在此步骤中，你将完成业务流程形状的配置才能删除缺少配置智能标记。 你指定**DoorbellOutputMessage**作为第一个转换过程中，输出指定**DoorbellMap.btm**作为用于在该进程中的映射。 然后指定**DoorbellFinalMessage**作为第二个输出转换过程中，并添加丰富的消息的其他字段数据的表达式。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-configure-orchestration-shapes"></a>配置业务流程形状  
   
-1.  上的业务流程设计视图图面[!INCLUDE[vs2012](../../includes/vs2012-md.md)]，单击**ConstructMessage_1**形状。  
+1.  业务流程设计视图图面上的 Visual Studio，请单击**ConstructMessage_1**形状。  
   
 2.  在**属性**窗口中，单击**消息构造**属性中，选择**DoorbellOutputMessage**从下拉列表，然后按**输入**。  
   
@@ -96,4 +96,4 @@ ms.lasthandoff: 09/20/2017
  继续执行[步骤 13： 创建和配置端口](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息扩充教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

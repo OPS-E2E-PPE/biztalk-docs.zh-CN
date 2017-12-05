@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e87fe8076e236fd775dcd2cb697aecaf2d6b1790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e0dc620d2d12933d34df0dce9eb02b697871bdc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="dynamicreceive-sample-biztalk-server-sample"></a>DynamicReceive 示例（BizTalk Server 示例）
 DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MQSeries 从消息队列时动态指定 MQSeries 队列的 URI。  
@@ -46,7 +46,7 @@ DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../i
  使用动态接收更加灵活地因为固定接收位置不是必需的功能提供。 在某些情况下，可能不知道直到运行时的 URI。 动态接收功能可以动态确定从何处获取消息。 它还意味着不需要实现业务流程中的排队协定。  您可以等待使用动态指定的 URI 从基于指定的匹配条件 MQSeries 队列获取消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
+ \<*示例路径*\>\Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -84,7 +84,7 @@ DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../i
   
 7.  你可以生成和部署中通过以下方式之一的项目：  
   
-    -   打开解决方案，右键单击解决方案资源管理器中的项目，单击**属性**查看项目属性。 在签名选项卡上单击**\<新建 … >**中**选择强名称密钥文件**下拉框。 然后提供密钥文件名称，并部署。  
+    -   打开解决方案，右键单击解决方案资源管理器中的项目，单击**属性**查看项目属性。 在签名选项卡上单击**\<新建...\>** 中**选择强名称密钥文件**下拉框。 然后提供密钥文件名称，并部署。  
   
     -   或者，运行 setup.bat 文件，它创建的密钥文件，生成项目并将其部署。  
   

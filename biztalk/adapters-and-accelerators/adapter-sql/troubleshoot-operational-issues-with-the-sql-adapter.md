@@ -13,11 +13,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82bfb1782c6bccdafe4f69326cddff0f49974386
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 5b6850a1b8c3b0cb5d1356078fce8dc8f50c6963
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a>使用 SQL 适配器进行故障排除操作问题：
 本部分讨论如何使用故障排除方法来解决操作使用时可能遇到的错误[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。  
@@ -66,7 +66,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  适配器执行针对 SQL Server 数据库使用的任何操作时将报告以下错误[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  
   
--   **有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -123,26 +123,26 @@ ErrorCode:5
   
  **解决方法**  
   
--   **有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **BizTalk server**  
   
-    1.  在 machine.config 中指定的 WCF 适配器的超时值。导航到 machine.config 文件在下\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG 并添加如下所示的摘要。  
+    1.  在 machine.config 中指定的 WCF 适配器的超时值。导航到 machine.config 文件在下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG 并添加如下所示的摘要。  
   
         ```  
         <configuration>  
-         \<system.transactions>  
+         <system.transactions>  
           <machineSettings maxTimeout="02:00:00" />  
-         \</system.transactions>  
+         </system.transactions>  
         </configuration>  
         ```  
   
          使用此设置时，WCF 适配器超时设置为 2 小时。  
   
-    2.  在 machine.config 中指定的超时设置的 MSDTC 事务。导航到 machine.config 文件在下\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG 并添加如下所示的摘要。  
+    2.  在 machine.config 中指定的超时设置的 MSDTC 事务。导航到 machine.config 文件在下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG 并添加如下所示的摘要。  
   
         ```  
-        \<system.transactions>   
+        <system.transactions>   
                 <defaultSettings distributedTransactionManagerName="<computer_name>" timeout="02:00:00"/>   
-            \</system.transactions>  
+            </system.transactions>  
   
         ```  
   

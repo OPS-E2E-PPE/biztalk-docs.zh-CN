@@ -13,16 +13,16 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843c20229371e213a1409f3bf3c6d297bf16211a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e248ef72d52730894b4fed61c904896e9fe061e7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a>Microsoft BizTalk Accelerator for SWIFT 文档
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]外接程序是[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，并可利用的打开的基于标准的工具和运行时功能[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]以实现对互联网协会全球 Interbank 财务电信 (SWIFT) 消息的支持格式。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]外接程序是[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 中，并可利用的打开的基于标准的工具和 BizTalk server 运行时功能，可以实现对互联网协会为全球 Interbank 财务电信 (SWIFT) 消息格式的支持.  
   
- 这添加功能轻松企业采用[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]作为通用中间件集成平台。 与 A4SWIFT、 客户、 合作伙伴和系统集成商可以简化开发、 部署和对核心金融服务应用程序基础结构和业务流程的集成解决方案的支持。  
+ 此新增的功能，使企业能够采用作为通用中间件集成平台的 BizTalk Server 容易。 对于核心金融服务应用程序基础结构和业务流程的集成解决方案，客户、合作伙伴和系统集成者可通过 A4SWIFT 来精简对其的开发、部署和支持。  
 
 ## <a name="install-configure-and-deploy"></a>安装、 配置和部署
 [安装、 配置和部署](../../adapters-and-accelerators/accelerator-swift/install-configure-and-deploy-the-biztalk-accelerator-for-swift.md)演示如何安装和配置 acclerator BizTalk 服务器上。 你还可以配置的运行时，消息修复和 FIN 响应。 

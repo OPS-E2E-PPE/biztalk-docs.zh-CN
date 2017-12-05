@@ -12,11 +12,11 @@ caps.latest.revision: "50"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be7c36900c39f46f636077c5c9d0cb630265cc80
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5374ba63ba8eb4193c3ef4990e8c169646a3528b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-management-utility"></a>BAM 管理实用程序
 负责业务活动监视 (BAM) 定义的管理员使用 BAM 管理实用程序来管理和维护 BAM 基础结构的各个方面。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  运行 BAM 管理实用程序的计算机的区域设置必须与创建要部署的 BAM 定义所用的区域设置相同，这样 BAM 命令才能正常使用。 例如，如果你执行**get 视图**命令配置的计算机上使用英语区域设置将设置对数据库具有法语的区域设置的计算机上你将不能够使用返回的视图名称，除非你重置你计算机为法语的区域设置。  
   
- 使用 BAM 管理实用程序可以在服务器上生成并部署跟踪配置。 BAM 管理实用程序是一个命令行工具位于\<*安装路径*> files\microsoft BizTalk Server\<版本 > \Tracking\BM.exe。  
+ 使用 BAM 管理实用程序可以在服务器上生成并部署跟踪配置。 BAM 管理实用程序是一个命令行工具位于\<*安装路径*\>files\microsoft BizTalk Server\<版本\>\Tracking\BM.exe。  
   
 > [!IMPORTANT]
 >  若要运行 BAM 管理实用程序，你必须属于**db_owner** BAM 主导入、 BAM 星型架构和 BAM 存档数据库中的 SQL Server 数据库角色。 执行与 BAM 警报有关的任何更新时，你还必须对 BAM 警报数据库具有 sysadmin 权限。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [数据库命令](../core/database-commands.md)  
   
--   [部署的 BAM 定义 （观察模式） 命令](../core/deployment-of-bam-definition-observation-model-commands.md)  
+-   [BAM 定义（观察模型）部署命令](../core/deployment-of-bam-definition-observation-model-commands.md)  
   
 -   [基础结构管理命令](../core/infrastructure-management-commands.md)  
   
@@ -79,14 +79,14 @@ ms.lasthandoff: 09/20/2017
   
 -   [警报订阅管理命令](../core/alert-subscription-management-commands.md)  
   
--   [拦截器管理命令](../core/interceptor-management-commands.md)  
+-   [侦听器管理命令](../core/interceptor-management-commands.md)  
   
 ## <a name="displaying-the-bam-management-utility-help"></a>显示 BAM 管理实用程序帮助  
  你使用**/？** 或**帮助 BAM 管理实用工具**命令以显示 BAM 管理实用程序的帮助文件。  
   
 #### <a name="to-display-the-help-file-for-the-bam-management-utility"></a>显示 BAM 管理实用程序的帮助文件  
   
-1.  从命令提示符处，浏览到以下目录： C:\Program Files\Microsoft BizTalk Server\<版本 > \Tracking\\。  
+1.  从命令提示符处，浏览到以下目录： C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking\\。  
   
 2.  类型**bm**或**bm 帮助**。  
   

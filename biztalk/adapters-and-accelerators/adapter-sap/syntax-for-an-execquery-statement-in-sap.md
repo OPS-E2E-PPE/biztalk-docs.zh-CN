@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f1eb41d07ef6a6ac3577bf0ef6d3f5bffb874f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP 中 EXECQUERY 语句语法
 SAP GUI 可用于通过以图形方式中选择你想要查询，列和排序的顺序要包括在结果集等中的表创建查询。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使用户能够通过提供用户可用于执行查询在 SAP 系统中定义的 EXECQUERY 操作从 ADO.NET 应用程序执行此类查询。  
@@ -30,16 +30,16 @@ SAP GUI 可用于通过以图形方式中选择你想要查询，列和排序的
   
 ```  
 EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='variant']   
-[, @P1='\<value 1>’] [, @P2='\<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='\<value 3>'] [, @P1 > '\<value 4>'] [, @P1 <= '\<value 2>']   
-[, NOT @P1 = '\<value 2>'] [, NOT @P1 != '\<value 2>'] [, NOT @P1 > '\<value 2>']   
-[, @P1 BETWEEN '\<value 1>' AND '\<value 2>'] [, NOT @P1 BETWEEN '\<value 1>' AND '<value2>’]  
+[, @P1='<value 1>’] [, @P2='<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='<value 3>'] [, @P1 > '<value 4>'] [, @P1 <= '<value 2>']   
+[, NOT @P1 = '<value 2>'] [, NOT @P1 != '<value 2>'] [, NOT @P1 > '<value 2>']   
+[, @P1 BETWEEN '<value 1>' AND '<value 2>'] [, NOT @P1 BETWEEN '<value 1>' AND '<value2>’]  
 [OPTION 'USEORIGINALCOLUMNNAMES']  
   
 ```  
   
  其中：  
   
--   **\<QueryName >**是 SAP 系统中定义的查询的名称。  
+-   **\<QueryName\>** 是 SAP 系统中定义的查询的名称。  
   
 -   **USERGROUP**指在其中定义该查询的用户组。 这是必需的参数。  
   
@@ -79,7 +79,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY xyz uSERgROUP=’mygrp’, NOT @P1= 'somevalue'  
     ```  
   
--   EXECQUERY 所支持的运算符是 >， \<，> =、 < =、 ！ =，，和 BETWEEN。  
+-   EXECQUERY 所支持的运算符是 >，<>、 =、 < =、 ！ =，，和 BETWEEN。  
   
 -   EXECQUERY 操作不支持通配符。 例如，以下语句会提供预期的输出：  
   
@@ -107,4 +107,4 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     >  不需要指定变量的名称，如果在 SAP 系统中情况下，定义查询的默认变体。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [使用 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

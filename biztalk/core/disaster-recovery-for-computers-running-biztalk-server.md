@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac655c10aaa443f9971fc40f7301a9e608e0e7eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0ca86ef9a412514fdf3f30f0a38cbac710e0f59
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="disaster-recovery-for-computers-running-biztalk-server"></a>运行 BizTalk Server 的计算机的灾难恢复
 如果您的组织中运行 BizTalk Server 的计算机出现了无法恢复的硬件故障，则应该用相同设置的计算机代替它。 其假定条件是，BizTalk Server 数据库保存完整，并且故障发生在运行 BizTalk Server 的任何计算机上。  
@@ -25,9 +25,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="recovering-different-editions-of-biztalk-server"></a>恢复不同版本的 BizTalk Server  
  恢复方法因计算机上运行的 BizTalk Server 的版本不同而异。  
   
- 对于 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 开发人员版和 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 企业版，允许多台计算机运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 当其中一台运行 BizTalk Server 的计算机发生故障时，可以准备一台替代计算机并将其加入现有 BizTalk 组。 在这种情况下，可以向 BizTalk 组中加入同名或不同名的计算机。  
+ BizTalk Server Developer Edition 和 BizTalk Server Enterprise Edition，多台计算机运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]允许。 当其中一台运行 BizTalk Server 的计算机发生故障时，可以准备一台替代计算机并将其加入现有 BizTalk 组。 在这种情况下，可以向 BizTalk 组中加入同名或不同名的计算机。  
   
- 对于 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 标准版，则不能向 BizTalk 组中加入计算机，所以上述方法不适用。 我们概述以下必要步骤，以设置一台新计算机并还原 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的配置设置，从而使其具备替代功能。 有关详细信息，请参阅[如何恢复 BizTalk 组](../core/how-to-recover-the-biztalk-group.md)。  
+ 为 BizTalk Server Standard Edition，你无法将计算机加入到 BizTalk 组，因此上面的方法是不适合。 我们概述以下必要步骤，以设置一台新计算机并还原 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的配置设置，从而使其具备替代功能。 有关详细信息，请参阅[如何恢复 BizTalk 组](../core/how-to-recover-the-biztalk-group.md)。  
   
 ## <a name="recovery-phases"></a>恢复阶段  
  运行 BizTalk Server 的计算机的恢复过程可分为以下三个阶段：  

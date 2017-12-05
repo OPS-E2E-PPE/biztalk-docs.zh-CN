@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8374e2069660998a46265986125b6b0159ea1961
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1879cb4d748e974454f929bde2018c24b5d276f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xslt-transform-component-biztalk-server-sample"></a>XSLT 转换组件（BizTalk Server 示例）
 XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转换 XML 消息。  
@@ -34,7 +34,7 @@ XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转
 2.  该管道使用 Transform.xsl 将 XML 文档转换为电子邮件消息的 HTML 正文。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Pipelines\XslTransformComponent\  
+ *\<示例路径\>*\Pipelines\XslTransformComponent\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -60,7 +60,7 @@ XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转
   
 1.  在命令窗口中，将目录更改 (**cd)**的以下文件夹：  
   
-     *\<示例路径 >*\Pipelines\XslTransformComponent  
+     *\<示例路径\>*\Pipelines\XslTransformComponent  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -70,7 +70,7 @@ XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转
   
     -   生成并部署 XSLT 转换组件管道。  
   
-    -   将复制到生成的管道组件\<安装路径 > \Pipeline 组件文件夹。  
+    -   将复制到生成的管道组件\<安装路径\>\Pipeline 组件文件夹。  
   
     -   创建发送端口和接收端口。  
   
@@ -108,4 +108,4 @@ XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转
 2.  查看配置为接收 SMTP 的收件人的邮件客户端中的结果。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

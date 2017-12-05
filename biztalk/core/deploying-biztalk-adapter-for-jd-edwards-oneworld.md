@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43c5110a7918ad9a7542be53e4b13126c863fe00
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: d4a452d61b3bdb5f5d0fee9e0916811645938d70
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>导入博士 Edwards EnterpriseOne 应用程序
   
@@ -65,7 +65,7 @@ BizTalk Server 用于导入绑定文件之前，请验证以下各项：
 例如，在命令提示符下运行：  
   
 ```
-cscript RemoveSendPort.vbs \<Send port name>
+cscript RemoveSendPort.vbs \<Send port name\>
 ```
   
 ## <a name="limitations"></a>限制

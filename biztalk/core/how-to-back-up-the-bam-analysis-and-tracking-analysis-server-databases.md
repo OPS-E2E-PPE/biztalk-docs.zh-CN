@@ -29,18 +29,18 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e210fbe805e5a942605920e481faa2f1ca7cf2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: effa2f5787f04493713ea6972562fe768081f4bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a>如何备份 BAM 分析数据库和跟踪分析服务器数据库
 业务活动监视 (BAM) 分析数据库和跟踪分析服务器数据库存储 SQL Server Analysis Services 多维数据集中的内容。 备份 BizTalk Server 作业不备份这些数据库。 若要备份这些数据库，必须使用 SQL Server 分析管理器。  
   
  备份完这些数据库后，您可能希望清除 OLAP 多维数据集。 清除 OLAP 多维数据集时，还必须执行以下步骤：  
   
-1.  在清除 OLAP 多维数据集之前，在 BAMStarSchema 数据库中截断要清除的多维数据集的事实表。 表命名约定是将"bam_*\<多维数据集名称 >*_Facts"。  
+1.  在清除 OLAP 多维数据集之前，在 BAMStarSchema 数据库中截断要清除的多维数据集的事实表。 表命名约定是将"bam_*\<多维数据集名称\>*_Facts"。  
   
 2.  清除完 OLAP 多维数据集后，必须彻底处理活动的、已完成的和虚拟的多维数据集。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
 3.  备份 BAMAnalysis 数据库，然后备份 BAMStarSchema 数据库。  
   
 ## <a name="see-also"></a>另请参阅  
- [备份和还原的 BizTalk Server 数据库](../core/backing-up-and-restoring-the-biztalk-server-databases.md)
+ [备份和还原 BizTalk Server 数据库](../core/backing-up-and-restoring-the-biztalk-server-databases.md)

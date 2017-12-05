@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ca754e84d07718a3656aa9a6f27d3a54f831c25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b18b9b3188ce3d9fb478c3f2d4390d167e5566a9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a>演练： 使用数据库和.NET 事实
 此演练将介绍使用业务规则编辑器创建使用数据库和 .NET 事实的策略的分步说明。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-the-testdb-database-and-the-po-table"></a>创建 TestDB 数据库和 PO 表的步骤  
   
-1.  打开**SQL Server Management Studio**。  
+1.  打开 SQL Server Management Studio。  
   
 2.  验证服务器名称和身份验证，，然后单击**连接**。  
   
@@ -177,7 +177,7 @@ ms.lasthandoff: 09/20/2017
   
 20. 拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。  
   
-21. 在 THEN 窗格中，单击**\<输入值 >**然后键入**已批准**。  
+21. 在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。  
   
 22. 在事实浏览器窗口中，右键单击**版本 1.0**中**ProcessPurchaseOrderDbNet**，然后单击**AddNewRule**。  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
 30. 拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。  
   
-31. 在 THEN 窗格中，单击**\<输入值 >**然后键入**拒绝**。  
+31. 在 THEN 窗格中，单击**\<输入值\>**然后键入**拒绝**。  
   
 32. 在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。  
   

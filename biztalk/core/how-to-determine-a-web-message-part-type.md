@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0dd01d549ffbc6c299124b63df73b82f874cb4d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6102e39eb38e919c68405ae18bebde0b46c0b053
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-determine-a-web-message-part-type"></a>如何确定 Web 消息部分类型
 你可以使用给定 Web 消息类型的“属性”窗口确定 Web 消息部分类型是基元 .NET 类型还是架构类型。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  选择消息部分。  
   
-     开始为 Web 消息一部分签名  **\<*项目默认命名空间*>。\<*Web 引用名称*>。引用。\<*架构根*> * * 是架构类型。   **\<*架构根*> * * 类型的一部分是构造 Web 消息部分的 Web 引用架构的根元素。 否则，消息一部分签名都是基元的.NET 类型如**System.String**或**System.Int32**。  
+     开始为 Web 消息一部分签名  **\<*项目默认命名空间*\>。\<*Web 引用名称*\>。引用。\<*架构根*\>* * 是架构类型。   **\<*架构根*\>* * 类型的一部分是构造 Web 消息部分的 Web 引用架构的根元素。 否则，消息一部分签名都是基元的.NET 类型如**System.String**或**System.Int32**。  
   
 ## <a name="see-also"></a>另请参阅  
  [构造 Web 消息](../core/constructing-web-messages.md)

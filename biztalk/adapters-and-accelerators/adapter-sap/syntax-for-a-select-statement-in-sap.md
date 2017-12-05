@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 331688f3c197fcc26f157346f2f78b74496fbd30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP 中的 SELECT 语句的语法
 以下各节描述了用于实现针对选择查询的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。 请注意，在某些情况下，语法是基本 TRANSACT-SQL 语法的稍有不同。  
@@ -36,15 +36,15 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
 -   **< Join_Condition >** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
   
--   **\<谓词 >** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
+-   **\<谓词\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
   
  支持的条件和表达式是：  
   
--   **\<条件 >** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
--   **\<expr >** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
+-   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
- 其中 **\<const >** = `integer | real | string | ? | NULL | xml_element`。  
+ 其中 **\<const\>** = `integer | real | string | ? | NULL | xml_element`。  
   
  **选项关键字的值**  
   
@@ -58,7 +58,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
     -   当**no_conversion**不使用选项，如果字段具有转换和退出定义然后.NET 字符串作为公开表中的这些字段。  
   
--   当设置为**batchsize\<大小 >**，SELECT 语句的执行将导致多个调用，以使到 SAP 系统，并在每个调用中，仅\<大小 > 检索到的记录数。 例如，如果你指定 batchsize 100，SELECT 查询检索仅在 SAP 系统每次调用中的 100 条记录。 如果**batchsize\<大小 >**未指定，则默认值为 10000 假设批次大小。 请注意，应指定批次大小基于计算机和的行数的物理内存中 SAP 系统的最佳值。 指定批大小的最佳值中的失败可能会导致内存不足异常。  
+-   当设置为**batchsize\<大小\>**，SELECT 语句的执行将导致多个调用，以使到 SAP 系统，并在每个调用中，仅\<大小\>数记录检索。 例如，如果你指定 batchsize 100，SELECT 查询检索仅在 SAP 系统每次调用中的 100 条记录。 如果**batchsize\<大小\>**未指定，则默认值为 10000 假设批次大小。 请注意，应指定批次大小基于计算机和的行数的物理内存中 SAP 系统的最佳值。 指定批大小的最佳值中的失败可能会导致内存不足异常。  
   
 -   当设置为**disabledatavalidation**、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不会验证 DAT、 TIMS 和 NUMC 列中存在的值，但改为将它们作为字符串进行公开。  
   
@@ -280,4 +280,4 @@ Table | '['Table']'
     ```  
   
 ## <a name="see-also"></a>另请参阅  
- [有关.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

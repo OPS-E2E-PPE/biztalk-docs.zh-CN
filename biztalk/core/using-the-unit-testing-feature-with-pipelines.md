@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5aca6e7be3c4fbeff2484f1d59454b09a4777cff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca19a58410014b9ea7c0c49df7420b439a544581
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>对管道使用单元测试功能
 本主题演示如何使用单元测试功能为 FlatFileReceive 管道示例中的管道添加单元测试。 管道单元测试功能类似于此处记录 Pipeline.exe 工具：[管道工具](../core/pipeline-tools.md)。 如果启用单元测试上**部署**选项卡上的项目属性中，你的项目中的管道类派生自**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**。  此类会对 Pipeline.exe 工具公开的某些相同功能进行建模。  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在 TestResults 目录中检查 *.out 文件。 此文件应包含管道处理的新消息。  它应位于类似于以下示例的目录中：  
   
-     C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009年-02-04 上午 09_01_04\Out  
+     C:\Program Files\Microsoft BizTalk Server\<版本\>\SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009年-02-04 上午 09_01_04\Out  
   
      已处理的消息应类似于以下内容：  
   
@@ -175,7 +175,7 @@ ms.lasthandoff: 09/20/2017
 |--------------------|-----------------|  
 |文档|包含管道处理的消息的 StringCollection。|  
 |组成部分|包含消息部分的 StringCollection。|  
-|架构|用于将每种消息类型映射到其对应的字典映射\*.xsd 架构文件。 密钥必须是格式**Namespace.Type**。 命名空间和使用类型应注意的是从属性窗口\*.xsd 文件中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]。 请参见以下屏幕截图。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace 和公开从 XSD 文件的属性窗口的类型。**|  
+|架构|用于将每种消息类型映射到其对应的字典映射\*.xsd 架构文件。 密钥必须是格式**Namespace.Type**。 命名空间和使用类型应注意的是从属性窗口\*Visual Studio 中的.xsd 文件。 请参见以下屏幕截图。<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace 和公开从 XSD 文件的属性窗口的类型。**|  
   
 ## <a name="see-also"></a>另请参阅  
  [使用单元测试与架构和映射的功能](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)   

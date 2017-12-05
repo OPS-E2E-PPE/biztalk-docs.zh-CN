@@ -15,14 +15,14 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a813634f2fe03d427ef5d0b14688ecca977f571
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fc94930ba5ff0851114e36d728ee7f3ffb73ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testing-your-installation"></a>测试安装
-你可以将设置你[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]测试通过手动运行完成端到端教程或执行端到端教程程序的安装。 若要执行程序，可单击**启动教程**按钮在安装过程中或在 C:\Program Files\Microsoft BizTalk 中执行 EndToEndTutorial.exe\<版本 > HL7\SDK\End 端到端教程中的快捷键（后运行安装和配置） 的文件夹。 这两种自动操作将执行相同的安装步骤通过运行完成教程将会手动执行。 端到端教程程序执行以下任务：  
+你可以将设置你[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]测试通过手动运行完成端到端教程或执行端到端教程程序的安装。 若要执行程序，可单击**启动教程**按钮在安装过程中或在 C:\Program Files\Microsoft BizTalk 中执行 EndToEndTutorial.exe\<版本\>HL7\SDK\ 快捷键端到端教程 （后运行安装和配置） 的文件夹。 这两种自动操作将执行相同的安装步骤通过运行完成教程将会手动执行。 端到端教程程序执行以下任务：  
   
 -   部署 MSH 和 ACK 架构  
   
@@ -58,16 +58,16 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-test-your-installation"></a>若要测试你的安装  
   
-1.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*>: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端教程文件夹。  
+1.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\End 端到端教程文件夹。  
   
 2.  右键单击**TutorialSampleInstance.txt**文件，，然后单击**复制**。  
   
-3.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*>: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端 Tutorial\Tutorial_BTAHL7PickUp 文件夹。  
+3.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键BTAHL7PickUp 文件夹。  
   
 4.  右键单击文件夹，并依次**粘贴**。  
   
-5.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*>: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端 Tutorial\Tutorial_BTAHL7Drop 文件夹。  
+5.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键BTAHL7Drop 文件夹。  
   
-     你可以验证你的安装是否成功，如果已处理的实例出现在**Tutorial_BTAHL7Drop**文件夹作为\< *Guid*>.txt。  
+     你可以验证你的安装是否成功，如果已处理的实例出现在**Tutorial_BTAHL7Drop**文件夹作为\< *Guid*\>.txt。  
   
  继续执行下一步，[准备使用本教程](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial2.md)。

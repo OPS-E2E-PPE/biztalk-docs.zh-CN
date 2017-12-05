@@ -12,11 +12,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe4f937af910ceef1ed461e25ea3c62cad5cbc29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57c95ac64637027b5d39699a42e8fac93c003697
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-and-deploy-the-sample-x12-schema"></a>步骤 2： 创建并部署示例 X12 架构
 ![步骤 2，共 11](../core/media/tut-step2-of-11.gif "Tut_Step2_of_11")  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  本主题假定你已从你的应用程序添加了对包含 EDI 架构、管道和业务流程的 BizTalk EDI 应用程序的引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
   
-3.  右键单击架构项目中，并依次**属性**。 单击**签名**项目设计器中的选项卡。 检查**对程序集签名**复选框，为**选择强密钥名称文件**，选择**\<新建 … >**并输入`Schemas.snk`。 清除**保护我使用密码的密钥文件**，然后单击**确定**。 关闭项目属性对话框并保存所做的更改。  
+3.  右键单击架构项目中，并依次**属性**。 单击**签名**项目设计器中的选项卡。 检查**对程序集签名**复选框，为**选择强密钥名称文件**，选择**\<新建...\>** 并输入`Schemas.snk`。 清除**保护我使用密码的密钥文件**，然后单击**确定**。 关闭项目属性对话框并保存所做的更改。  
   
 4.  生成并部署 Schemas.btproj。  
   

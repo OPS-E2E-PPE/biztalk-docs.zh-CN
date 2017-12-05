@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c49ca06bb8177f76344cdb8ff14c612a7aa52a71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ea033770504b0e0024a831e0ad8d8727603046e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-or-editing-an-agreement"></a>创建或编辑协议
 本主题介绍如何创建或编辑贸易合作伙伴协议。 贸易合作伙伴协议对贸易合作伙伴双方之间的关系做出规定，其中包括身份、合作伙伴接口流程 (PIP)、操作 URL、信号 URL、同步 URL 及相关协议。  
@@ -54,9 +54,9 @@ ms.lasthandoff: 09/20/2017
 |**常规**|**0A1 协议**|当故障发生时，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 是否将返回失败通知消息 (0A1 PIP)。<br /><br /> 可以是**非 0A1** （默认值） 或**0A1**。<br /><br /> 必须是**非 0A1** CIDX 有关。|  
 |**常规**|**用法**|指明协议将使用的方案的类型。<br /><br /> 可以是**测试**（默认值） 或**生产**。|  
 |**常规**<br /><br /> (**应用程序适配器**区域)|**程序集名称**|ApplicationAdapter 的文件名，可从文件系统中选择该文件名。<br /><br /> 默认值为空字符串。|  
-|**常规**<br /><br /> (**应用程序适配器区域**)|**类名**|类的名称，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将使用从 ApplicationAdapter。<br /><br /> 默认值是\<无 >。|  
+|**常规**<br /><br /> (**应用程序适配器区域**)|**类名**|类的名称，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将使用从 ApplicationAdapter。<br /><br /> 默认值是\<无\>。|  
 |**常规**<br /><br /> (**验证适配器区域**)|**程序集名称**|ValidationAdapter 的文件名，可从文件系统中选择该文件名。 默认值为空字符串。|  
-|**常规**<br /><br /> (**验证适配器区域**)|**类名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将在 ValidationAdapter 中使用的类的名称。<br /><br /> 默认值是\<无 >。|  
+|**常规**<br /><br /> (**验证适配器区域**)|**类名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将在 ValidationAdapter 中使用的类的名称。<br /><br /> 默认值是\<无\>。|  
 |**端口**|**操作 URL**|本组织要将操作消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下全部为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**信号 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> -你必须在此字段中，"http://domain"或"https://domain"开头的一个输入是有效的 URI。|  
 |**端口**|**信号 URL**|本组织要将信号消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**响应方**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**操作 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> 您必须在此字段中输入以“http://domain”或“https://domain”开头的有效 URI。|  
 |**端口**|**同步 URL**|本组织通过 HTTP 适配器建立连接时所使用的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 您必须在此字段中输入以“http://domain”或“https://domain”开头的有效 URI。|  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  右键单击你想要编辑，然后单击协议**属性**。  
   
-4.  在 **\<** *协议名称* **>** 属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
+4.  在 **\<** *协议名称* **\>** 属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
   
 5.  单击 **“确定”**。  
   

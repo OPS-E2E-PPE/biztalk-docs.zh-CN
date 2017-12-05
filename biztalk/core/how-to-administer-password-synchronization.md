@@ -22,11 +22,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b85fd34a016fe013f10dd618dd551c9467d4b530
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddd696da8b4cab24a8de6a4b5d8ac8f26856f7e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-administer-password-synchronization"></a>如何管理密码同步
 您可以通过 MMC 管理单元或命令行管理密码同步。  
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**ssops-列表**，然后按 enter 键。  
   
@@ -95,9 +95,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-显示\<适配器名称 >** ，然后按 enter 键。  
+4.  类型**ssops-显示\<适配器名称\>** ，然后按 enter 键。  
   
      屏幕输出将显示指定的适配器的信息。  
   
@@ -130,9 +130,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-创建\<适配器文件 >** ，然后按 enter 键。  
+4.  类型**ssops-创建\<适配器文件\>** ，然后按 enter 键。  
   
      屏幕输出将显示新创建的适配器的信息。  
   
@@ -142,9 +142,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops setprops\<适配器名称 >** ，然后按 enter 键。  
+4.  类型**ssops setprops\<适配器名称\>** ，然后按 enter 键。  
   
      屏幕输出将显示指定的适配器的属性。 如果需要，可以对其进行编辑，但将不会对新值进行验证。  
   
@@ -154,9 +154,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-更新\<适配器文件 >** ，然后按 enter 键。  
+4.  类型**ssops-更新\<适配器文件\>** ，然后按 enter 键。  
   
      使用此命令可更新指定的适配器的设置和标志。 请不要使用此命令设置属性，而应使用 -setprops 命令来进行设置。  
   
@@ -166,9 +166,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-删除\<适配器名称 >** ，然后按 enter 键。  
+4.  类型**ssops-删除\<适配器名称\>** ，然后按 enter 键。  
   
      此时，将删除指定的适配器。  
   
@@ -178,9 +178,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-启用\<适配器名称 >** ，然后按 enter 键。  
+4.  类型**ssops-启用\<适配器名称\>** ，然后按 enter 键。  
   
      此时，将启用指定的适配器。  
   
@@ -190,9 +190,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-禁用\<适配器名称 >** ，然后按 enter 键。  
+4.  类型**ssops-禁用\<适配器名称\>** ，然后按 enter 键。  
   
      此时，将禁用指定的适配器。  
   
@@ -202,9 +202,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops addapp\<适配器名称 >\<应用程序名称 >** ，然后按 enter 键。  
+4.  类型**ssops addapp\<适配器名称\>\<应用程序名称\>** ，然后按 enter 键。  
   
      指定的 SSO 应用程序将分配给所指定的适配器。 这意味着该应用程序中各映射的密码将使用此适配器进行同步。  
   
@@ -216,9 +216,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-deleteapp\<应用程序名称 >** ，然后按 enter 键。  
+4.  类型**ssops-deleteapp\<应用程序名称\>** ，然后按 enter 键。  
   
      指定的 SSO 应用程序将从适配器中删除。 （由于一个应用程序只能分配给一个适配器，因此无需指定适配器名称。）  
   
@@ -228,9 +228,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops-重置\<适配器名称 &#124; 所有 &#124; 阻止 >** ，然后按 enter 键。  
+4.  类型**ssops-重置\<适配器名称 &#124; 所有 &#124; 阻止\>** ，然后按 enter 键。  
   
      此命令将根据指定清除单个适配器或所有适配器的阻止表和/或通知队列。 阻止表可存储 10 分钟的密码更改历史记录。 在接受或发送密码更改之前，企业 SSO 系统会检查阻止表以查看最近是否执行了同样的更改。 如果已执行过，则会放弃新的更改。  
   
@@ -240,9 +240,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops addtogroup\<适配器名称 >\<适配器组 >** ，然后按 enter 键。  
+4.  类型**ssops addtogroup\<适配器名称\>\<适配器组\>** ，然后按 enter 键。  
   
      此命令将向所指定的适配器组添加指定的适配器。 虽然一个适配器只能属于一个适配器组，但一个适配器组可包含多个适配器。  
   
@@ -252,9 +252,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssops deletefromgroup\<适配器名称 >\<适配器组 >** ，然后按 enter 键。  
+4.  类型**ssops deletefromgroup\<适配器名称\>\<适配器组\>** ，然后按 enter 键。  
   
      此命令将从所指定的适配器组中删除指定的适配器。  
   

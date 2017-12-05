@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dc65f584bdd474314cd976edc586d0ed60f0505
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a0bf65bdb3de30d5b701946215b5c7ae7d40d828
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manage-user-mappings-for-host-initiated-sso"></a>如何管理用户映射为主机启动的 SSO
 通过以下步骤可以创建映射、设置凭据以及启用或禁用映射。  
@@ -40,9 +40,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-createmappings\<映射文件 >**，其中**映射文件 >**是 xml 文件的名称。  
+4.  类型**ssomanage-createmappings\<映射文件\>**，其中**映射文件 >**是 xml 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -69,9 +69,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-setcredentials \<Windows 帐户名称 >\<应用程序名称 >**。  
+4.  类型**ssomanage-setcredentials \<Windows 帐户名称\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -82,9 +82,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-setcredentials\<外部帐户名 >\<应用程序名称 >**。  
+4.  类型**ssomanage-setcredentials\<外部帐户名\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -95,9 +95,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-enablemapping \<Windows 帐户名称 >\<应用程序名称 >**。  
+4.  类型**ssomanage-enablemapping \<Windows 帐户名称\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -108,9 +108,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-disablemapping \<Windows 帐户名称 >\<应用程序名称 >**。  
+4.  类型**ssomanage-disablemapping \<Windows 帐户名称\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -121,9 +121,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-enablemapping\<外部帐户名 >\<应用程序名称 >**。  
+4.  类型**ssomanage-enablemapping\<外部帐户名\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -134,9 +134,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-disablemapping\<外部帐户名 >\<应用程序名称 >**。  
+4.  类型**ssomanage-disablemapping\<外部帐户名\>\<应用程序名称\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

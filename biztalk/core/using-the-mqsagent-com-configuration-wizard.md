@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6262b87f304a27b36ed1d7bc6a15b5e681331be3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6e8b625bcc3accbefda193c52459616691c265
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>使用 MQSAgent COM + 配置向导
 使用 MQSAgent COM+ 配置向导，可配置适配器的 COM+ 应用程序（MQSeries 组件）部分，即 MQSAgent。 通过此向导可设置该组件的应用程序标识、角色名称和角色中包含的用户。 使用 MQSAgent COM + 配置向导创建 MQSAgent COM + 组件的名称是**MQSAgent2**。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 >  64 位 Windows Server 支持 MQSAgent COM+ 应用程序。 该应用程序将以 32 位进程在 WOW64 下运行。 运行在 64 位版本 Windows Server 上的基于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的计算机可以与安装有 MQSAgent 的远程 32 位计算机进行通信。  
   
 > [!NOTE]
->  MQSeries 代理和 MQSAgent COM + 配置向导可执行文件**MQSConfigWiz.exe**未安装升级到 BizTalk Server 2009 从[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 在升级到之后[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]从 BizTalk Server 2009 重新运行安装程序，选择**修改**选项，然后选择要安装这些组件的其他软件下 MQSeries 代理。  
+>  MQSeries 代理和 MQSAgent COM + 配置向导可执行文件**MQSConfigWiz.exe**未从 BizTalk Server 2009 升级到 BizTalk Server 安装。 从 BizTalk Server 2009 重新运行安装程序，升级到 BizTalk Server 之后, 选择**修改**选项，然后选择要安装这些组件的其他软件下 MQSeries 代理。  
   
 ## <a name="to-set-the-application-identity"></a>设置应用程序标识  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
 >  仅向该角色添加需要访问适配器的帐户。  
   
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>将 Windows Server 2008 计算机上的 MSDTC 安全配置设置为“不要求进行验证”  
- 如果 MQSAgent COM + 应用程序安装在[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]计算机和 MQSeries 适配器 (与安装的哪些[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]) 上安装[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]计算机、 上的 MSDTC 安全配置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]计算机必须设置为**不要求进行验证**。 若要将 MSDTC 安全配置设置为“不要求进行验证”，请按照以下步骤操作：  
+ 如果 MQSAgent COM + 应用程序安装在[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]上安装了计算机和将 MQSeries 适配器 （已安装与 BizTalk Server）[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]计算机、 上的 MSDTC 安全配置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]计算机必须设置为**不要求进行验证**。 若要将 MSDTC 安全配置设置为“不要求进行验证”，请按照以下步骤操作：  
   
 1.  单击**启动**，然后单击**控制面板**。  
   

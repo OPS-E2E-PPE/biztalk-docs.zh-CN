@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efd3a6bf371312348d7ce54a24f34b3cb5e4206c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86349adae1a3ae061cb07c6c770532cf92c74dc8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="basic-oracle-data-types"></a>基本 Oracle 数据类型
 本主题介绍如何[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现基本 Oracle 数据类型。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 |二进制双 * *|化如果 prec < = 15<br />xsd: string 如果 prec > 15|双精度<br />字符串|-|  
 |二进制整数 * *|xsd:integer|Int32|过程、 函数和包的支持。|  
 |Boolean|xsd:boolean|可以为 null 的布尔值||  
-|XMLTYPE|xsd:string|字符串|支持顶部级别过程参数。<br /><br /> 保留 XML 字符，如**\<**'，'**>**必须与相应实体的表示形式替换**(&lt;， &gt;)**开发 BizTalk 中的应用程序时，以及何时使用 WCF 通道模型。 这不是在 WCF 服务模型的情况下必需的。|  
+|XMLTYPE|xsd:string|字符串|支持顶部级别过程参数。<br /><br /> 保留 XML 字符，如**\<**'，'**\>**必须与相应实体的表示形式替换**(&lt;， &gt;)**开发 BizTalk 中的应用程序时，以及何时使用 WCF 通道模型。 这不是在 WCF 服务模型的情况下必需的。|  
   
  \*在其中这些 Oracle 数据类型中加以表示的方法受**EnableSafeTyping**绑定属性。  
   

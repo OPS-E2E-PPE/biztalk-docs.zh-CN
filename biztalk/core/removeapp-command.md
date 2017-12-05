@@ -12,18 +12,18 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9808b43ba07434793403d175885694f67530dae0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05269411c81aeccdaf1c30e36e47c02787bf044a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="removeapp-command"></a>RemoveApp 命令
 从 BizTalk 管理数据库中删除 BizTalk 应用程序及其包含的所有项目。 这不会卸载该应用程序。 有关执行此操作的说明，请参阅[如何卸载 BizTalk 应用程序](../core/how-to-uninstall-a-biztalk-application.md)。  
   
  在以下情况下，删除操作会失败：  
   
--   **应用程序不会停止。** 有关停止应用程序的说明，请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。 **ApplicationManager** SDK 示例中会安装*\<示例路径 >\\*Admin\ExplorerOM\ 目录演示了如何以编程方式启动或停止[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。  
+-   **应用程序不会停止。** 有关停止应用程序的说明，请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。 **ApplicationManager** SDK 示例中会安装*\<示例路径\>\\*Admin\ExplorerOM\ 目录说明了如何以编程方式启动或停止[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。  
   
 -   **其他应用程序包含对应用程序的引用。** 如果其他应用程序包含对要删除的应用程序的引用，则必须先从其他应用程序中删除这类引用。 有关说明，请参阅[如何移除对另一个应用程序的引用](../core/how-to-remove-a-reference-to-another-application.md)。  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 -   **应用程序中的业务流程程序登记之后，启动，或具有挂起的实例。** 有关业务流程的详细信息，请参阅[管理业务流程](../core/managing-orchestrations.md)。  
   
 > [!NOTE]
->  如果应用程序包含在已部署状态的策略，策略不从规则引擎数据库中删除，并且继续在下的策略文件夹中显示\<所有项目 > BizTalk 管理的应用程序节点控制台。 如果将该策略添加到另一个应用程序，则该策略仍处于已部署状态。  
+>  如果应用程序包含在已部署状态的策略，策略不从规则引擎数据库中删除，并且继续在下的策略文件夹中显示\<所有项目\>的 BizTalk 应用程序节点管理控制台。 如果将该策略添加到另一个应用程序，则该策略仍处于已部署状态。  
   
 ## <a name="usage"></a>用法  
  **BTSTask RemoveApp /ApplicationName:** *值*[**/Server:***值*] [**/数据库：** *值*]  
@@ -57,4 +57,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)   
- [正在取消部署的 BizTalk 应用程序](../core/undeploying-biztalk-applications.md)
+ [取消部署 BizTalk 应用程序](../core/undeploying-biztalk-applications.md)

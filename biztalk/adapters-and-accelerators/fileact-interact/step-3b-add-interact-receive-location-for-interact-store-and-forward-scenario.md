@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f6f0ffd20dba192a038981469164f63cdd7593f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e9aa8e153cf510f2d24cbe30a62317d26810e4a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a>步骤 3B： 添加交互接收交互应用商店应用和向前情况下的位置
 完成[步骤 3A： 添加文件接收位置交互应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)在开始此步骤之前。
@@ -41,14 +41,14 @@ ms.lasthandoff: 09/20/2017
     |------------------|--------------------|  
     |**密码**|键入用于连接到压降的密码。 有关详细信息，请参阅压降帮助。|  
     |**用户名**|键入用于连接到压降的用户名称。|  
-    |**应用程序名称**|键入的服务器\<应用程序接口名称 > 压降框中路由组。|  
+    |**应用程序名称**|键入的服务器\<应用程序接口名称\>压降框中路由组。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**LogMessageBody**|从下拉列表中选择**FALSE**。 **注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**消息格式**|从下拉列表中选择**InterActMessage**。|  
     |**MemberRef**|从下拉列表中选择**ResponseHeader**。|  
     |**不可否认性指示器**|从下拉列表中选择**FALSE**。|  
-    |**响应方**|键入相应\<响应方 > 基于 SWIFT 你设置的字符串。|  
+    |**响应方**|键入相应\<响应方\>基于 SWIFT 你设置的字符串。|  
     |**ResponseCrypto**|从下拉列表中选择**FALSE**。|  
     |**超时**|键入适当数量会发生超时之前等待的秒。|  
     |**获取队列**|键入根据 SWIFT 你设置的队列名称。|  
@@ -72,5 +72,5 @@ ms.lasthandoff: 09/20/2017
 ## <a name="complete-steps"></a>完成步骤
  [步骤 3： 创建发送端口和交互应用商店应用和向前情况下接收端口](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
  [步骤 3A： 添加一个文件接收交互应用商店应用和向前情况下的位置](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)   
- [步骤 3c： 添加文件发送端口交互应用商店应用和向前情况下捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
- [步骤 3D： 交互应用商店应用和向前情况下添加交互发送端口](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)
+ [步骤 3C：为 InterAct 存储和转发方案添加 FILE 发送端口以捕获 Sw:HandleRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
+ [步骤 3D：为 InterAct 存储和转发方案添加 INTERACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)

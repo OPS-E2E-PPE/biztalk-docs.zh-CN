@@ -19,11 +19,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60811a8b6875c8cbcf4a8037501855a08fe0be6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d8896691557f48a8e85e67e09e35d20e1d606d0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>配置使用 MMC 导入的证书
 使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 管理控制台 (MMC) 的证书管理单元导入证书后，必须对证书的使用进行配置。 这要求配置 BizTalk 组、 BizTalk 主机和独立的主机服务帐户、 合作伙伴接口进程 (Pip)、 贸易合作伙伴协议和合作伙伴。 你必须执行以下步骤：  
@@ -44,12 +44,12 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-configure-the-signing-certificate-for-a-biztalk-group-or-the-decryption-certificate-for-a-biztalk-host"></a>若要为 BizTalk 主机配置 BizTalk 组或解密证书的签名证书  
   
-1.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务 > mmc**，然后单击**确定**。  
+1.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务\>mmc**，然后单击**确定**。  
   
     > [!NOTE]
-    >  有关\<*承载服务*>，键入你在安装时，在与主机服务关联的服务名称[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
+    >  有关\<*承载服务*\>，键入你在安装时，在与主机服务关联的服务名称[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
   
-2.  键入的密码\<*承载服务*>，然后按 ENTER。  
+2.  键入的密码\<*承载服务*\>，然后按 ENTER。  
   
 3.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**。  
   

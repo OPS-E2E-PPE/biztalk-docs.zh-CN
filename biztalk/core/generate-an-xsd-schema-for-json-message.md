@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b450c74f7d2eda6d3b688c40d0f8e8cde5c66d3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88caf75d312179cd45bb1b3b421d6c2c7f25c2a8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="generate-an-xsd-schema-for-json-message"></a>为 JSON 消息生成 XSD 架构
 > [!NOTE]
->  本教程仅适用于 [!INCLUDE[prague](../includes/prague-md.md)]。  
+>  本教程仅适用于 BizTalk Server。  
   
  在此解决方案中，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序会收到 JSON 消息。 在应用程序处理此消息之前，必须先将此消息转换为 XSD 架构。 为此，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了 JSON 架构向导，以便根据 JSON 消息创建 XSD 架构。  
   

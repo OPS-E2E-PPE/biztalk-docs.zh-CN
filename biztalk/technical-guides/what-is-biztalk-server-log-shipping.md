@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c886bb4d32fa082c2c4c865a45b28133ce4a3aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3b20589229b1e3868f23c3823d2a26decc56081
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>什么 BizTalk Server 日志传送？
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]灾难恢复过程围绕 BizTalk 日志传送。 BizTalk 日志传送通过连续将事务日志更新应用于的灾难恢复站点数据库，简化了发生灾难时的数据库还原。  
+BizTalk Server 灾难恢复过程围绕 BizTalk 日志传送。 BizTalk 日志传送通过连续将事务日志更新应用于的灾难恢复站点数据库，简化了发生灾难时的数据库还原。  
   
  而的 BizTalk 日志传送依赖于使用类似的准则[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]日志传送，[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]不支持日志传送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库备份作为备份 BizTalk Server SQL 代理作业的一部分。  
   

@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 593937dca387d79a127117ee96005b3dc48fbdc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e4d4d19caebb667e822b15b937d9045a26493a57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="exception-management-framework"></a>异常管理框架
-ESB 异常管理框架提供了用于管理在中可能发生的所有异常的统一面向消息的错误生成机制[!INCLUDE[prague](../includes/prague-md.md)]环境。 ESB 异常管理框架可以接收发布通过异常发布服务，除了从 BizTalk Server 失败消息路由机制的消息的异常消息。  
+ESB 异常管理框架提供了用于管理在 BizTalk Server 环境中可能发生的所有异常的统一面向消息的错误生成机制。 ESB 异常管理框架可以接收发布通过异常发布服务，除了从 BizTalk Server 失败消息路由机制的消息的异常消息。  
   
  框架将为错误消息创建、 发布和管理从业务流程，复制与 BizTalk Server 2006 年首次引入的 BizTalk Server 失败的消息路由功能提供一个 API。 此外，框架提供了用于规范化所有异常，丰富关于，将应用业务活动监视 (BAM) 跟踪和发布到异常管理数据库，用于显示的最终输出和报告中 ESB 工具管理门户。  
   

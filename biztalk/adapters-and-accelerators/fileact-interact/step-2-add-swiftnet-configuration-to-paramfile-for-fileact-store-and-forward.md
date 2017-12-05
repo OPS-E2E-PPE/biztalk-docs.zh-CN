@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b3048198747dd8d283ea9f7b329db27db615436
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 394e570ad9bd1c0e7532923dac9c2cc702f2f567
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-store-and-forward-scenario"></a>步骤 2： 将 SWIFTNet 配置添加到 Paramfile FileAct 应用商店应用和转发方案
 在压降中创建的服务器消息合作伙伴必须指定在 SWIFTNet paramfile 以便接收方可以使用这些值进行初始化。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
      subsystem_start:  
   
-     **spawn"snlreceiver-SagMessagePartner \<fileact SnF 的服务器 MessagePartnerName >-AdapterMode fileact"**  
+     **spawn"snlreceiver-SagMessagePartner \<fileact SnF 的服务器 MessagePartnerName\> -AdapterMode fileact"**  
   
      * 结束  
   
@@ -92,4 +92,4 @@ ms.lasthandoff: 09/20/2017
  [FileAct 存储和转发方案](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)   
  [步骤 1： 配置 SWIFT 适配器 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-store-and-forward-scenario.md)   
  [步骤 3： 创建发送端口和接收端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
- [步骤 4： 测试 FileAct 存储区和转发的端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-end-to-end-scenario.md)
+ [步骤 4：测试 FileAct 存储和转发端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-end-to-end-scenario.md)

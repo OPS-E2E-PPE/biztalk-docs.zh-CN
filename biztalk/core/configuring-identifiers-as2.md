@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac5f85187a49f3ab5248f12aceba74731ed7e915
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1f4c8ddde24c32f93d003f778b9359d70e87170
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-identifiers-as2"></a>配置标识符（AS2）
 在合作伙伴协议中，您必须指定发送方和接收方。 这些值还可用于入站或出站消息的协议解析。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 5.  下**其他协议冲突解决程序**部分中，为**AS2To**属性，输入合作伙伴接收消息的其他别名。  
   
     > [!NOTE]
-    >  此属性是可选的。 此属性可用于向后兼容。 在将参与方定义从 BizTalk Server 2006 R2 或 BizTalk Server 2009 迁移到 [!INCLUDE[prague](../includes/prague-md.md)] 时，将包括上一版 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中参与方的名称作为本属性的值。 这可以确保发生协议解析，并且现有的应用程序与合作伙伴定义可以与 [!INCLUDE[prague](../includes/prague-md.md)] 一起使用。  
+    >  此属性是可选的。 此属性可用于向后兼容。 当一方定义从 BizTalk Server 2006 R2 或 BizTalk Server 2009 迁移，到 BizTalk Server 中，在以前版本的一方的名称时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]用作此属性的值。 这可确保，发生协议解析，并可与 BizTalk Server 使用的现有应用程序和合作伙伴定义。  
   
 6.  单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。  
   

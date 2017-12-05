@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21ae11dfb3ecd9a2b5e63449961af70aa3bc6f7d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff9fcc2530484abd7c5bdbf1997e3d294afdb3dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="http-adapter-performance-counters"></a>HTTP 适配器性能计数器
 使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。 性能计数器能够帮助您标识和解决有关服务器性能的问题。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加计数器**对话框中，从**可用计数器**列表中，展开**BizTalk:HTTP**性能计数器对象，然后选择要监视的计数器  
   
-4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**>。  
+4.  在**实例的所选对象**列表中，选择要监视的所选计数器，然后单击的特定实例**添加**。  若要选择的所有可用的计数器实例，选择\<**所有实例**\>。  
   
 5.  添加计数器后, 单击**确定**。  
   
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [监视 BizTalk Server](../core/monitoring-biztalk-server.md)   
  [HTTP 适配器配置和优化参数](../core/http-adapter-configuration-and-tuning-parameters.md)   
- [运行在群集主机内的适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)
+ [在群集主机内运行适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)

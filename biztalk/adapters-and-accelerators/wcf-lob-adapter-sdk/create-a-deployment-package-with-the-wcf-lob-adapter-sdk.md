@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed471aa5395b9cc743825807e63e23e5433e6d07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 734d79e92a4864090720434b9a1fb83387a0a850
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>使用 WCF LOB 适配器 SDK 创建部署包
 在开发周期中，可以生成、 调试和运行你在 Visual Studio 中的适配器。 适配器解决方案的输出是一个 DLL 程序集。 你可以生成使用 Visual Studio IDE 适配器解决方案，或使用 devenv.exe 脚本来创建一个适配器程序集。 一旦开发适配器并且可供适配器使用者的环境中使用，你必须创建一个允许的适配器，测试和生产环境中安装的部署包。  
@@ -47,7 +47,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
 {  
     //Custom action to register the adapter with WCF configuration in machine.config   
   
-    //\<system.serviceModel>  
+    //<system.serviceModel>  
     //  <extensions>  
     //    <bindingElementExtensions>  
     //      <add name="{BINDINGELEM_NAME}" type="{BINDINGELEM_TYPE}, {Assembly Information}" />  
@@ -59,7 +59,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
     //  <client>  
     //    <endpoint binding="{BINDING_NAME}" contract="IMetadataExchange" name="{BINDING_SCHEME}" />  
     //  </client>  
-    //\</system.serviceModel>  
+    //</system.serviceModel>  
   
     [RunInstaller(true)]  
     public partial class WCFLOBAdapterInstaller : Installer  

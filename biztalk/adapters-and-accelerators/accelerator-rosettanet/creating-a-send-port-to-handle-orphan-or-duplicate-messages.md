@@ -18,21 +18,21 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9a5e52197c81e86bac69603e72d294cfbcd6faa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fc969e316df9b493dd294769d68a15012a46904
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a>创建要处理孤立或重复消息的发送端口
 本主题描述如何设置可用于删除孤立或重复消息的发送端口。  
   
- 孤立或重复的消息可能会造成问题，如果[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]公共进程业务流程完成处理消息的第一个副本后接收的消息的其他副本。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将标记为重复这些消息并挂起它们。 您可以在 BizTalk 管理控制台中查看这些消息。 有关 BizTalk 管理控制台的详细信息，请参阅"使用 BizTalk 管理控制台"中[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 孤立或重复的消息可能会造成问题，如果[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]公共进程业务流程完成处理消息的第一个副本后接收的消息的其他副本。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将标记为重复这些消息并挂起它们。 您可以在 BizTalk 管理控制台中查看这些消息。 有关 BizTalk 管理控制台的详细信息，请参阅"使用的 BizTalk 管理控制台"中的 BizTalk Server 帮助。  
   
- 在您查看并删除孤立或重复的消息之前，这些消息将一直保存在 BizTalk 管理控制台中。 删除这些消息最有效的方法是设置具有特定筛选器的发送端口，这些筛选器针对孤立或重复的消息进行设置。 可以使用 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 中提供的任何传输方法来移动这些消息。 例如，你可以通过使用文件传输移动它们。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将文件作为孤立或重复的消息发送到上一个硬盘的位置中。 这可使您轻松删除它们。 该端口可处于登记并停止的状态，在这种情况下，所有发送到该端口的消息都将显示为在该发送端口下挂起。  
+ 在您查看并删除孤立或重复的消息之前，这些消息将一直保存在 BizTalk 管理控制台中。 删除这些消息最有效的方法是设置具有特定筛选器的发送端口，这些筛选器针对孤立或重复的消息进行设置。 你可以移动它们使用任何 BizTalk Server 中提供的传输方式。 例如，你可以通过使用文件传输移动它们。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将文件作为孤立或重复的消息发送到上一个硬盘的位置中。 这可使您轻松删除它们。 该端口可处于登记并停止的状态，在这种情况下，所有发送到该端口的消息都将显示为在该发送端口下挂起。  
   
 > [!NOTE]
->  除创建发送端口来处理重复/孤立的消息外，还可以创建特殊的管道组件从 MessageBox 数据库中删除这些消息。 您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] SDK 中的 FixMsg 组件作为模板， 你必须修改`IComponent.Execute`方法以返回 null。 这将导致[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]要放弃所做的任何消息发送到包含该组件的管道。 您必须编译此管道组件并将其添加到发送管道，然后编译、部署该发送管道并为接收端口选择该发送管道。 有关详细信息，请参阅"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]示例)"中[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+>  除创建发送端口来处理重复/孤立的消息外，还可以创建特殊的管道组件从 MessageBox 数据库中删除这些消息。 您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] SDK 中的 FixMsg 组件作为模板， 你必须修改`IComponent.Execute`方法以返回 null。 这将导致[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]要放弃所做的任何消息发送到包含该组件的管道。 您必须编译此管道组件并将其添加到发送管道，然后编译、部署该发送管道并为接收端口选择该发送管道。 有关详细信息，请参阅"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]示例)"BizTalk Server 帮助中。  
   
 ### <a name="to-create-a-send-port-to-handle-orphan-or-duplicate-messages"></a>创建处理孤立或重复消息的发送端口  
   

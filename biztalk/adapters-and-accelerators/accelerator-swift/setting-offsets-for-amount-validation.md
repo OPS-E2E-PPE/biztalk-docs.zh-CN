@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eaa41714cbe5c3baba85e82f2992ff72544c425c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7cfae474407daa7dd3c0b95db3fed076a581cf1c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-offsets-for-amount-validation"></a>设置量验证偏移量
 通过其各自的验证策略中的规则进行验证的消息类型 MT102，MT103 和 MT103PLUS 量字段使用规则。 量字段可以完全匹配，或可以验证为金额的范围之内。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开文本编辑器，例如记事本。  
   
-2.  在编辑器中，浏览到你要在其中设置偏移量的百分比的消息验证策略的位置。 例如，你可以找到消息验证策略对于 MT103 消息类型，MT103_Validation_Policy.xml，在*\<驱动器 >*: files\ Microsoft BizTalk Accelerator for SWIFT\<版本> 消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本 > \Category 1\MT103。 打开验证策略。  
+2.  在编辑器中，浏览到你要在其中设置偏移量的百分比的消息验证策略的位置。 例如，你可以找到消息验证策略对于 MT103 消息类型，MT103_Validation_Policy.xml，在*\<驱动器\>*: files\ Microsoft BizTalk Accelerator for SWIFT \<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category 1\MT103。 打开验证策略。  
   
 3.  在策略中，搜索上 IsValidSettlementAmount MT102 和 MT102PLUS 消息或 IsValidInterbankSettledAmount MT103 消息。  
   

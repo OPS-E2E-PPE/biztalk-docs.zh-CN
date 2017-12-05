@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61ced5103cfc3f6156b4e3975c51365f505c4e22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5087f88587d3c6453f8d470d7c6095c967904537
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-the-partner-organization"></a>步骤 2： 创建伙伴组织
 在此步骤中，你将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建合作伙伴组织。  
   
 ### <a name="to-create-the-partner-organization"></a>若要创建合作伙伴组织  
   
-1.  在 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开**BizTalk\<版本 > Accelerator for RosettaNet**，右键单击**合作伙伴**，单击**新**，然后单击**合作伙伴**。  
+1.  在 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开**BizTalk\<版本\>Accelerator for RosettaNet**，右键单击**合作伙伴**单击**新建**，然后单击**合作伙伴**。  
   
 2.  在**新合作伙伴属性**对话框框中，执行以下操作：  
   
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 >  如果有加密证书，请在此处进行配置。 有关配置加密证书的信息，请参阅[管理证书](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 3： 编辑合作伙伴接口过程](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)
+ [步骤 3：编辑合作伙伴接口流程](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)

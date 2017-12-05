@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62313528ce406347b1a7f11abf9aa3db1dd5f8e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d03c969dc056e251d8109ce5bc0a29c16f8ffeda
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="resubmission-notes-and-restrictions"></a>重新提交说明和限制
 下面的注意事项和限制适用于重新提交过程：  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
 -   用于在提升 WCF 默认 URL 为 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc。  
   
--   门户网站的 Web.config 文件定义 WCF 入口中的终结点详细信息**\<客户端 >**节点 **\<System.ServiceModel >**部分。 下面是默认值。  
+-   门户网站的 Web.config 文件定义 WCF 入口中的终结点详细信息**\<客户端\>**节点 **\<System.ServiceModel\>** 部分。 下面是默认值。  
   
     ```  
     <endpoint  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 -   用于在提升 SOAP (ASMX) 默认 URL 为 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx。  
   
--   门户网站的 Web.config 文件定义的 SOAP (ASMX) 上的负载增加中配置 **\<applicationSettings >**部分。 下面是默认值。  
+-   门户网站的 Web.config 文件定义的 SOAP (ASMX) 上的负载增加中配置 **\<applicationSettings\>** 部分。 下面是默认值。  
   
     ```  
     <setting   

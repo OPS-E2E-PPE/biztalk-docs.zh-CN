@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: fe869b76a155acb326420c3d5c29850548d8b7ff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>步骤 1： 发布 Siebel 业务组件操作作为 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/17/2017
   
 -   必需的 Siebel 客户端。  
   
- 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
+ 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
 ## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>作为 WCF 服务发布 Siebel 业务组件  
   
@@ -167,7 +167,7 @@ ms.lasthandoff: 10/17/2017
   
     1.  启动 IIS Microsoft 管理控制台。 单击**启动**，指向**管理工具**，然后单击**Internet Information Services**。  
   
-    2.  导航到在其中发布服务的节点。 有关**Siebel_Account**服务中，导航到**Internet Information Services** > **\<计算机名称 >**  >  **网站** > **Default Web Site** > **Siebel_Account**。  
+    2.  导航到在其中发布服务的节点。 有关**Siebel_Account**服务中，导航到**Internet Information Services** > **\<计算机名称\>**  > **网站** > **Default Web Site** > **Siebel_Account**。  
   
     3.  在右窗格中，右键单击 BusinessObjects_Account_Account_Operation.svc 文件，然后单击**浏览**。  
   
@@ -181,4 +181,4 @@ ms.lasthandoff: 10/17/2017
  你现在具有 Siebel 在业务组件的 WCF 服务。 使用业务数据目录定义编辑器来创建应用程序定义文件用于 Siebel 业务组件操作。 请参阅[步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)有关的说明。 应用程序定义文件标识存储 LOB 数据和在其中存储的格式。  
   
 ## <a name="see-also"></a>另请参阅  
- [教程 1： 从 SharePoint 站点上的 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [教程 1：在 SharePoint 站点上从 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

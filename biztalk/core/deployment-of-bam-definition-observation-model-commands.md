@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 847dd40bc7d0e8fe9ec225ad8af45d06c92d7b63
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0dba1e1a4f54b3b33ebca8297cfe9beef7c4f868
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deployment-of-bam-definition-observation-model-commands"></a>部署的 BAM 定义 （观察模式） 命令
 您可借助 BAM 管理实用程序部署命令来应用、修改和删除定义。  
@@ -40,15 +40,15 @@ ms.lasthandoff: 09/20/2017
 ## <a name="deploy-all-command"></a>deploy-all 命令  
  **用法**  
   
- **bm.exe 部署所有-DefinitionFile:\<def 文件 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 部署所有-DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件 >|包含要部署的定义的文件的路径和名称。|  
-|服务器：\<服务器 >|可选： 要将定义部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 要将定义部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|包含要部署的定义的文件的路径和名称。|  
+|服务器：\<服务器\>|可选： 要将定义部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 要将定义部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  将指定 BAM 定义 XML 文件中的所有项目部署到指定的服务器和数据库。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 该定义文件必须仅包含新项目。 如果该文件包含已部署的项目，部署将会失败并报告错误。  
   
@@ -98,15 +98,15 @@ bm.exe deploy-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="update-all-command"></a>update-all 命令  
  **用法**  
   
- **bm.exe 更新所有-DefinitionFile:\<def 文件 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 更新所有-DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件 >|包含执行更新所用定义的文件的路径和名称。|  
-|服务器：\<服务器 >|可选： 要将定义更新部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 要将定义更新部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|包含执行更新所用定义的文件的路径和名称。|  
+|服务器：\<服务器\>|可选： 要将定义更新部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 要将定义更新部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  更新 BAM 定义 XML 中的某些项目。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 更新不会删除当前定义文件中没有描述的项目。 更新可以将新检查点添加到活动中，但是不能从已部署的活动中删除检查点。 更新既不能重命名检查点，也不能更改检查点的属性。  
   
@@ -125,15 +125,15 @@ bm.exe update-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="remove-all-command"></a>remove-all 命令  
  **用法**  
   
- **bm.exe 删除全部 DefinitionFile:\<def 文件 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 删除全部 DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件 >|包含要删除的定义的文件的路径和名称。|  
-|服务器：\<服务器 >|可选： 将从中删除定义的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 定义将从中删除数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|包含要删除的定义的文件的路径和名称。|  
+|服务器：\<服务器\>|可选： 将从中删除定义的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 定义将从中删除数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  删除在 BAM 定义 XML 文件中指定的所有项目。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 每个项目的定义必须与部署所用的初始定义完全匹配。  
   
@@ -147,15 +147,15 @@ bm.exe remove-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="update-livedataworkbook-command"></a>update-livedataworkbook 命令  
  **用法**  
   
- **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿文件名称 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿文件名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|名称：\<livedata 工作簿 >|要更新的现有活动工作簿的名称。|  
-|服务器：\<服务器 >|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|名称：\<livedata 工作簿\>|要更新的现有活动工作簿的名称。|  
+|服务器：\<服务器\>|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  更新指定 BAM 实时数据工作簿中的 BAM 主导入数据库连接信息。  
   
@@ -172,15 +172,15 @@ bm.exe update-livedataworkbook -Name:SalesManager_Live.xls -Server:SalesSrv
 ## <a name="regenerate-livedataworkbook-command"></a>regenerate-livedataworkbook 命令  
  **用法**  
   
- **bm.exe 重新生成 livedataworkbook WorkbookName:\<livedata 工作簿文件名称 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 重新生成 livedataworkbook WorkbookName:\<livedata 工作簿文件名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|WorkbookName:\<livedata 工作簿文件名称 >|要更新的工作簿的名称。|  
-|服务器：\<服务器 >|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|WorkbookName:\<livedata 工作簿文件名称\>|要更新的工作簿的名称。|  
+|服务器：\<服务器\>|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  生成 BAM 实时数据工作簿，但不部署该工作簿。  
   

@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e00514515b31e79655fe457e1aa8682edf002183
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebb2003cc6091e3f14bd863902e03649d9005722
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>如何在主机上使用跟踪实用程序启动的 SSO
 故障排除的主要方法是跟踪。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  为了使 trace 命令起作用，文件 tracelog.exe 必须位于以下目录中：  
 >   
->  \<*驱动器*>: \program Files\Enterprise 单一登录  
+>  \<*驱动器*\>: \program Files\Enterprise 单一登录  
   
 > [!NOTE]
 >  你可以从以下位置下载此文件： [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器 >: \program Files\Enterprise 单一登录。  
+3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
 4.  类型**跟踪 – start – 高**若要将跟踪级别设置为高，并开始跟踪。  
   

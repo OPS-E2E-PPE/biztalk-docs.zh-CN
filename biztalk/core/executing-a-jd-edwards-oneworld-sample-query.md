@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58e06eb1b606217aea6fe5e40ac645a2eaf623c2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e4e15310442d12c0b2604eb0d22b071ff6c57212
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>执行博士 Edwards OneWorld 示例查询
 可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -95,13 +95,13 @@ ms.lasthandoff: 10/17/2017
   
 4.  单击“配置” ，然后输入以下属性值：  
   
-    1.  **主机：** \<输入你 JDEOW 的主机名 >  
+    1.  **主机：** \<输入你 JDEOW 的主机名\>  
   
     2.  **JAVA_HOME:**`C:\j2sdk1.4.2_08`  
   
-    3.  **JDEdwards 环境：** \<进入 JDEOW 环境 >  
+    3.  **JDEdwards 环境：** \<进入 JDEOW 环境\>  
   
-    4.  **JDEdwards JAR 文件：** \<输入的 JAR 文件的完整路径 >  
+    4.  **JDEdwards JAR 文件：** \<输入的 JAR 文件的完整路径\>  
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 10/17/2017
   
     6.  **端口：**  `6009`  
   
-    7.  **用户名：** \<输入博士 Edwards 用户名 >  
+    7.  **用户名：** \<输入博士 Edwards 用户名\>  
   
      ![](../core/media/jdeow-transportproperties-configurebutton.gif "JDEOW_TransportProperties_ConfigureButton")  
   
@@ -287,7 +287,7 @@ ms.lasthandoff: 10/17/2017
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  单击“确定” **。** 在属性窗口中，选择**\<架构 >**并设置**根引用：**到`AddressBookMasterMBF`。 这将导致生成的 XML，仅包含**查询**xml。  
+3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>**并设置**根引用：**到`AddressBookMasterMBF`。 这将导致生成的 XML，仅包含**查询**xml。  
   
      ![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")  
   
@@ -305,7 +305,7 @@ ms.lasthandoff: 10/17/2017
   
 4.  选择“Orchestration_1”  ，然后单击“主机”  下拉框。 选择“BizTalkServerApplication” 。  
   
-5.  下**接收端口**，单击**\<无 >**。 在下拉列表中，选择“新建接收端口” 。  
+5.  下**接收端口**，单击**\<无\>**。 在下拉列表中，选择“新建接收端口” 。  
   
 6.  有关**名称**，类型`JDE_FileIn_Port`，然后单击**确定**。 将出现一个消息框，表明你需要指定接收位置。 单击“确定”，然后单击“新建”。    
   
@@ -327,7 +327,7 @@ ms.lasthandoff: 10/17/2017
   
      ![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")  
   
-9. 单击**\<无 >**为**JDE_OW_Port**下拉列表中。  
+9. 单击**\<无\>**为**JDE_OW_Port**下拉列表中。  
   
 10. 选择**新建发送端口**，然后选择或键入属性的以下值：  
   
@@ -341,11 +341,11 @@ ms.lasthandoff: 10/17/2017
   
 11. 单击“配置” ，然后输入以下属性值：  
   
-     **主机：** \<输入你 JDEOW 的主机名 >  
+     **主机：** \<输入你 JDEOW 的主机名\>  
   
      **JAVA_HOME:**`C:\j2sdk1.4.2_08`  
   
-     **JDEdwards 环境：** \<进入 JDEOW 环境 >  
+     **JDEdwards 环境：** \<进入 JDEOW 环境\>  
   
      **JDEdwards JAR 文件：**<enter full path of JAR files>  
   
@@ -361,7 +361,7 @@ ms.lasthandoff: 10/17/2017
   
 12. 单击“确定”  两次以关闭对话框。  
   
-13. 在配置 Applicationwindow 中，单击**\<无 >**为**JDE_FileOut**下拉列表中。  
+13. 在配置 Applicationwindow 中，单击**\<无\>**为**JDE_FileOut**下拉列表中。  
   
 14. 选择“新建发送端口”  ，然后键入或选择以下属性值：  
   

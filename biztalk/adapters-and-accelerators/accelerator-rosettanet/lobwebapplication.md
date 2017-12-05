@@ -20,11 +20,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b00e29b51eac2c58ac7843cca75994efceb4085
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a9be49eab2560cc9e9eab5a29456a27f92760e5d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="lobwebapplication"></a>LOBWebApplication
 使用 LOBWebApplication 实用工具可以将 ASPX 页中的操作或响应消息提交给贸易合作伙伴，从而模拟实际的业务线 Web 应用程序。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
  设置 ASPX 页后，您启动该页，输入消息的参数：本组织和合作伙伴组织；PIP 代码、版本和实例 ID；以及消息类别。 然后你可以修改服务内容并提交消息。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> files\microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication  
+ \<*驱动器*\>files\microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication  
   
 ## <a name="adding-a-virtual-server-for-lobwebapplication"></a>为 LOBWebApplication 添加虚拟服务器  
   
@@ -40,13 +40,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   
-2.  在信息服务管理器中，展开**\<计算机名称 > （本地计算机）**，展开**网站**，然后右键单击**Default Web Site**。  
+2.  在信息服务管理器中，展开**\<计算机名称\>（本地计算机）**，展开**网站**，然后右键单击**Default Web Site**.  
   
 3.  指向**新建**，然后单击**虚拟目录**。  
   
 4.  上**虚拟目录创建向导**页上，单击**下一步**，，然后键入的别名站点，例如**LOBWebApplication**。  
   
-5.  上**网站内容目录**页上，单击**浏览**，将移到\<*驱动器*> files\microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication，单击**确定**，然后单击**下一步**。  
+5.  上**网站内容目录**页上，单击**浏览**，将移到\<*驱动器*\>files\microsoft BizTalk 2013 Accelerator 为RosettaNet\SDK\LOBWebApplication，单击**确定**，然后单击**下一步**。  
   
 6.  上**虚拟目录访问权限**页上，选择**读取**和**运行脚本**，然后单击**下一步**。 单击 **“完成”**。  
   
@@ -62,18 +62,18 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-build-lobwebapplication"></a>生成 LOBWebApplication  
   
-1.  启动 [!INCLUDE[vs2012](../../includes/vs2012-md.md)]。  
+1.  启动 Visual Studio。  
   
 2.  上**文件**，指向**打开**，然后单击**打开的解决方案**。  
   
-3.  将移动到\<*驱动器*> files\microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication，选择**LOBWebApplication.sln**，然后单击**打开**。  
+3.  将移动到\<*驱动器*\>files\microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\LOBWebApplication，选择**LOBWebApplication.sln**，然后单击**打开**。  
   
     > [!NOTE]
     >  如果你不具有 LOBWebApplication 添加虚拟服务器，将不会打开该解决方案中正确[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
   
 4.  右键单击**引用**，然后单击**添加引用**。  
   
-5.  在**添加引用**对话框中，单击**浏览**，将移到\<*驱动器*>: files\microsoft BizTalk 2013 Accelerator for RosettaNet\Bin，选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll 文件，然后单击**打开**。  
+5.  在**添加引用**对话框中，单击**浏览**，将移到\<*驱动器*\>: files\microsoft BizTalk 2013 Accelerator 为RosettaNet\Bin，选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll 文件，然后单击**打开**。  
   
 6.  右键单击**LOBWebApplication**，然后单击**生成**。  
   

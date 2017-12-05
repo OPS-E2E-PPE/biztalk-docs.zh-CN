@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 060a20e9d074017a79f32f2c2cf526394df9c51d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5edc8ed8991920c0da239979386fb264bdbb8610
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="biztalk-mapper-keyboard-shortcuts"></a>BizTalk 映射器键盘快捷键
 与在所有标准 Microsoft Windows 应用程序中一样，您可以在 BizTalk 映射器中使用键盘快捷键来访问可通过菜单访问的命令。 下表对可用的键盘快捷键进行了说明：  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk &#124;搜索刷新<br /><br /> 刷新源架构、目标架构或网格页中的搜索结果。|Ctrl+M, Ctrl+B|  
 |BizTalk &#124;显示链接节点 （源架构）<br /><br /> 显示源架构中所有链接的节点。|Ctrl+M、Ctrl+H|  
 |BizTalk &#124;显示链接节点 （目标架构）<br /><br /> 显示目标架构中所有链接的节点。|Ctrl+M, Ctrl+D|  
-|BizTalk &#124;配置 Functoid 输入<br /><br /> 打开**配置\<Functoid > Functoid**可在其中配置所选 functoid 的输入的参数的对话框。|Ctrl+M, Ctrl+I<br /><br /> 选择 functoid + Enter|  
+|BizTalk &#124;配置 Functoid 输入<br /><br /> 打开**配置\<Functoid\> Functoid**可在其中配置所选 functoid 的输入的参数的对话框。|Ctrl+M, Ctrl+I<br /><br /> 选择 functoid + Enter|  
 |BizTalk &#124;搜索<br /><br /> 使您可以搜索源架构、目标架构和网格图面中的项目。|Ctrl+M, Ctrl+F|  
 |BizTalk &#124;搜索选项<br /><br /> 使您可以搜索特定项目。|Ctrl+M、Ctrl+O|  
 |BizTalk &#124;搜索上一个<br /><br /> 在搜索的上一个实例中查找搜索字符串。|Ctrl+M, Ctrl+J<br /><br /> 向上键|  
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/20/2017
 |BizTalk &#124;继续指示匹配项<br /><br /> 使您可以按照优先顺序遍历指示匹配。|向上键、向下键|  
   
 ## <a name="see-also"></a>另请参阅  
- [使用 BizTalk 映射程序命令](../core/using-biztalk-mapper-commands.md)
+ [使用 BizTalk 映射器命令](../core/using-biztalk-mapper-commands.md)

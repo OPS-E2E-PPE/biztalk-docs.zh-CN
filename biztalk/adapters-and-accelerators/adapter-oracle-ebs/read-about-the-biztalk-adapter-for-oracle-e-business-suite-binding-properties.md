@@ -12,11 +12,11 @@ caps.latest.revision: "56"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07121b8322dfa899e02ea9c8dc28688aa55a329d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37fc23d20c5e7b578b0415f7ee56b381a3716d3a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties"></a>阅读有关 BizTalk 适配器 Oracle E-business Suite 绑定属性
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]呈现几个绑定属性。 通过设置这些属性，可以控制某些适配器的行为。 本部分介绍[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定属性。 它还演示如何访问它们通过使用.NET 编程或通过设置属性[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]物理端口绑定。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 |**SkipNilNodes**|运行时行为|指定是否[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]插入或更新请求 XML 中将被标记为 nil 的节点的值将跳过。 此绑定属性是适用于插入或更新表中的记录和记录的存储过程中的类型参数。 默认值是**true**，这意味着该适配器将跳过将被标记为 nil 的节点的值传递。 在这种情况下，Oracle （如果指定） 中的默认值是考虑到标记为 nil 的节点。 如果设置为**false**，适配器显式传递这些节点的 null 值。<br /><br /> **注意：**<br /><br /> -对于在请求 XML 中不存在的节点，该适配器始终跳过将值，而不考虑的值传递**SkipNilNodes**绑定属性。<br /><br /> -对于 PL/SQL 表的记录，该适配器将始终传递节点被标记为 nil 或不存在请求的 XML，不管的值中的 null 值**SkipNilNodes**绑定属性。<br /><br /> 下面的示例说明根据为此绑定属性设置的值为适配器配置中的差异。 假设请求 XML 如下所示：<br /><br /> `<EMPNO>1000</EMPNO> <ENAME>John</ENAME> <SAL nil=’true’></SAL>`<br /><br /> 如果**SkipNilNodes**设置为**true**，适配器执行以下命令：<br /><br /> `INSERT INTO EMP (EMPNO, ENAME) VALUES (1000, “John”);`<br /><br /> 如果**SkipNilNodes**设置为**false**，适配器执行以下查询：<br /><br /> `INSERT INTO EMP (EMPNO, ENAME, SAL) VALUES (1000, “John”, null);`<br /><br /> 请注意，在第二个语句中，适配器显式插入参数"SAL"的 null 值。|bool (System.Boolean)|  
 |**GeneratedUserTypesAssemblyFilePath**|UDT.NET 类型生成设计时|指定的名称和适配器生成时生成元数据，包含的元数据中使用的所有 Udt 的 dll 的路径。 如果正在生成包、 存储的过程或函数，以便用 Udt 的元数据，必须指定 DLL 名称。 指定 DLL 名称是可选的表和具有 Udt 的视图。 生成的 DLL 将保存到与可执行文件相同的位置。<br /><br /> 只有在生成元数据时，此绑定属性是必需的。<br /><br /> **注意：**<br /><br /> -您必须指定一个文件名。 元数据中的所有 udt，适配器生成具有给定名称的单个文件。 如果不指定一个名称，适配器将生成的 GUID 名称与 DLL。<br /><br /> -此绑定属性不是 BizTalk Server 中提供配置时**WCF OracleEBS**接收或发送端口。|string|  
 |**GeneratedUserTypesAssemblyKeyFilePath**|UDT.NET 类型生成设计时|指定的名称和密钥文件适配器用来创建强类型的程序集的路径。<br /><br /> 此绑定属性是可选的只有在生成元数据时才需要。<br /><br /> **注意：**此绑定属性不是 BizTalk Server 中提供配置时**WCF OracleEBS**接收或发送端口。|string|  
-|**UserAssembliesLoadPath**|UDT.NET 类型生成运行时|指定的 Dll，以分号，这将生成元数据时创建的适配器分隔的名称。 在为指定的位置保存这些 Dll **GeneratedUserTypesAssemblyFilePath**生成元数据时绑定属性。 你必须手动将这些 Dll 复制到以下位置：<br /><br /> -                      **对于 BizTalk 项目**： 复制 Dll 作为 BTSNTSvc.exe 所在的位置。 有关[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，这是通常下提供\<安装驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。<br /><br /> - **对于.NET 项目**： 将 Dll 复制到你的.NET 项目文件夹中的 \bin\Development 文件夹中。<br /><br /> 只有在发送和接收消息以执行对 Oracle E-business Suite 操作时，此绑定属性是必需的。|string|  
+|**UserAssembliesLoadPath**|UDT.NET 类型生成运行时|指定的 Dll，以分号，这将生成元数据时创建的适配器分隔的名称。 在为指定的位置保存这些 Dll **GeneratedUserTypesAssemblyFilePath**生成元数据时绑定属性。 你必须手动将这些 Dll 复制到以下位置：<br /><br /> -                      **对于 BizTalk 项目**： 复制 Dll 作为 BTSNTSvc.exe 所在的位置。 对于 BizTalk Server 中，这是通常下提供\<安装驱动器\>: files\microsoft BizTalk Server。<br /><br /> - **对于.NET 项目**： 将 Dll 复制到你的.NET 项目文件夹中的 \bin\Development 文件夹中。<br /><br /> 只有在发送和接收消息以执行对 Oracle E-business Suite 操作时，此绑定属性是必需的。|string|  
 |**AcceptCredentialsInUri**|不显示[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。|指定 Oracle E-business Suite 连接 URI 是否可以包含用户凭据。 默认值是**false**，这将禁用连接 URI 中的用户凭据。 如果**AcceptCredentialsInUri**是**false**和 Oracle 连接 URI 包含用户凭据[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]引发异常。 你可以设置**AcceptCredentialsInUri**到**true**如果必须在 URI 中指定凭据。 有关详细信息，请参阅 [创建 Oracle E-business Suite 连接 URI
 ](../../ adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md）。|bool (System.Boolean)|  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb6208395813c7e4be25964d9949d2f909e4806d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 622c6ad687e681591071d472e2ff8a9e8c515f95
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>使用.NET 项目中的 WCF LOB 适配器 SDK 适配器
 若要使用使用构建适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，你必须添加到项目的服务引用。 可以执行此操作：  
@@ -67,10 +67,10 @@ ms.lasthandoff: 09/20/2017
     |协定类型|项目|Description||  
     |-------------------|--------------|-----------------|-|  
     |出站|CLR WCF 代理|包含的协定和服务实现。||  
-    |出站||App.config|包含\<终结点 > 和\<绑定 > 元素\<系统。ServiceModel >\<客户端 >。|  
+    |出站||App.config|包含\<终结点\>和\<绑定\>元素\<系统。ServiceModel\>\<客户端\>。|  
     |入站|CLR WCF 服务接口|包含的协定。||  
     |入站||CLR WCF 服务实现|派生自协定的存根实现。|  
-    |入站||App.config|包含\<终结点 >，\<绑定 > 和\<行为 > 元素\<系统。ServiceModel >\<服务 >。|  
+    |入站||App.config|包含\<终结点\>，\<绑定\>和\<行为\>元素\<系统。ServiceModel\>\<服务\>。|  
   
 10. 你现在可以在你的应用程序中使用代理。  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
  若要从承载于 IIS 中的适配器生成代理类  
   
-1.  在命令提示符处，输入**svcutil.exe"http://localhost/adapter/AdapterService.svc?wsdl"/config:app.config**。将 HTTP 路径替换为你托管的适配器的正确路径。 这将创建包含.NET CLR 代理和 output.config 其中包含的.cs 文件\<绑定 > 和客户端\<终结点 > 为\<system.serviceModel >。  
+1.  在命令提示符处，输入**svcutil.exe"http://localhost/adapter/AdapterService.svc?wsdl"/config:app.config**。将 HTTP 路径替换为你托管的适配器的正确路径。 这将创建包含.NET CLR 代理和 output.config 其中包含的.cs 文件\<绑定\>和客户端\<终结点\>为\<system.serviceModel\>。  
   
     > [!NOTE]
     >  如果你的适配器包含许多操作，你可以限制通过使用的查询字符串返回的操作 op = 跟感兴趣的操作的名称。 例如：`svcutil.exe “http://localhost/adapter/AdapterService.svc?wsdl&op=Echo/EchoString&op=Echo/EchoArray”`生成仅 EchoString 和 EchoArray 操作的代理代码。  

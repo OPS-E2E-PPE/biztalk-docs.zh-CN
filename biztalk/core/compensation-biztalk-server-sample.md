@@ -18,11 +18,11 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7d3e2e917f9ac0cc09117f3de83bbcc6166af1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9752fced7e1b889c41b6e981be6c2858f0411b7b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="compensation-biztalk-server-sample"></a>补偿 （BizTalk Server 示例）
 补偿示例演示如何使用**Compensate**形状中业务流程。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 4.  如果更新 BTSCompensationSampleMailingList 数据库时发生故障，将会引发异常，并且在延迟十秒钟后将原始客户数据重新写回 Northwind 数据库。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Orchestrations\Compensation\  
+ \<*示例路径*\>\Orchestrations\Compensation\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令窗口中，导航到以下文件夹：  
   
-     \<*示例路径*> \Orchestrations\Compensation\  
+     \<*示例路径*\>\Orchestrations\Compensation\  
   
 2.  运行 Setup.bat，该文件将执行以下操作：  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  上**创建 Web 服务**页上，选择**作为 web 服务的发布 BizTalk 业务流程**，然后单击**下一步**。  
   
-    3.  上**BizTalk 程序集**页上，浏览并选择\<*示例路径*> \Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll，，然后单击**下一步**。  
+    3.  上**BizTalk 程序集**页上，浏览并选择\<*示例路径*\>\Orchestrations\Compensation\bin\Release\CompensationOrchestration.dll，，然后单击**下一步**。  
   
     4.  上**业务流程和端口**页上，单击**下一步**。  
   
@@ -147,7 +147,7 @@ ms.lasthandoff: 09/20/2017
   
 -   将该 BizTalk 应用程序用户组 db_owner 权限授予**BTSCompensationSampleMailingList**和**Northwind**数据库。  
   
--   如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]未安装在默认位置 (驱动器： files\microsoft BizTalk Server\<版本 >\\)，你必须在使用它之前发布联系人信息 Update.xsn 窗体。 若要这样做，请执行以下操作。  
+-   如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]未安装在默认位置 (驱动器： files\microsoft BizTalk Server\<版本\>\\)，你必须在使用它之前发布联系人信息 Update.xsn 窗体。 若要这样做，请执行以下操作。  
   
     #### <a name="to-publish-the-infopath-form"></a>发布 InfoPath 表单  
   
@@ -157,7 +157,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  在**杂项**部分中，确保**跨域访问数据源**设置已启用，并依次**确定**。 InfoPath 用户界面解决方案脚本代码需要此设置才能运行。  
   
-    4.  在 Windows 资源管理器，导航到\<*示例路径*> \Orchestrations\Compensation\InfoPath，右键单击**联系人信息 Update.xsn** ，然后单击**设计**.  
+    4.  在 Windows 资源管理器，导航到\<*示例路径*\>\Orchestrations\Compensation\InfoPath，右键单击**联系人信息 Update.xsn** ，然后单击**设计**。  
   
     5.  InfoPath Contact Info Update 解决方案以设计模式打开。  
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 09/20/2017
   
     7.  此时，将显示发布向导。  
   
-    8.  选择**到此计算机上或在网络上的共享文件夹**并将解决方案发布到路径\<*示例路径*> \Orchestrations\Compensation\InfoPath\Contact 信息 Update.xsn。  
+    8.  选择**到此计算机上或在网络上的共享文件夹**并将解决方案发布到路径\<*示例路径*\>\Orchestrations\Compensation\InfoPath\Contact 信息Update.xsn。  
   
     9. 关闭设计模式下的 InfoPath。  
   
@@ -179,7 +179,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  上**文件**菜单上，选择**提交**，然后单击**提交**。  
   
-    4.  响应文档应出现在\<*示例路径*> \Orchestrations\Compensation\Out 文件夹和 Northwind 和 BTSCompensationSampleMailingList 数据库应使用新的情况下更新InfoPath 窗体中的数据。  
+    4.  响应文档应出现在\<*示例路径*\>\Orchestrations\Compensation\Out 文件夹和 Northwind 和 BTSCompensationSampleMailingList 数据库都应更新InfoPath 窗体中的新数据。  
   
         > [!NOTE]
         >  你可以分离 BTSCompensationSampleMailingList 数据库或将其脱机以测试该业务流程执行的补偿操作。 观察相应记录是否先在 Northwind 数据库中进行了更新。 然后，在该业务流程尝试更新 BTSCompensationSampleMailingList 数据库时，因为该数据库已经分离，更新将失败。 因此，将引发异常，并在 10 秒钟的延迟后，就会采取补偿操作将原始客户数据写回 Northwind 数据库。  
@@ -193,9 +193,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令窗口中，导航到以下文件夹：  
   
-     \<*示例路径*> \Orchestrations\Compensation\  
+     \<*示例路径*\>\Orchestrations\Compensation\  
   
 2.  运行 Cleanup.bat。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务流程 （BizTalk Server 示例文件夹中）](../core/orchestrations-biztalk-server-samples-folder.md)
+ [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

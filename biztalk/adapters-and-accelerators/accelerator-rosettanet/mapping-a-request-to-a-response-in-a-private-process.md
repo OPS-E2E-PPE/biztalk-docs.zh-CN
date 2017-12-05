@@ -22,11 +22,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bd67be0bbe70794f6fe6f77d388b69660e2d1ef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 966ad6ad752c36be36b4013743eaba3af5434d0a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>将请求映射到专用过程中响应
 本主题介绍如何将私有响应方进程收到请求消息映射 — 从[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]公用响应方进程，可以发送到的响应消息[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]公用响应方流程。  
@@ -39,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 -   [3A4 请求到 3A4 响应映射示例](../../adapters-and-accelerators/accelerator-rosettanet/3a4-request-to-3a4-response-map-sample.md)  
   
--   [Double 操作 PIPAutomation 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
+-   [双操作 PIPAutomation 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
   
--   [使用业务规则 3A4 私有响应方业务流程](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
+-   [使用业务规则的 3A4 专用响应方业务流程](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
   
 ### <a name="to-create-the-map"></a>若要创建映射  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 在 BizTalk 类型选取器窗口中，展开**引用**，展开**Microsoft.Solutions.BTARN.Schemas.RNPIPs**，展开**架构**，选择的 PIP 架构你想要将映射，并依次的响应消息**确定**。  
   
-10. 右键单击\<*架构*> 源架构，然后单击的节点**展开树节点**。  
+10. 右键单击\<*架构*\>源架构，然后单击的节点**展开树节点**。  
   
 11. 对于其他目标架构，请重复步骤 10。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 13. 对于需要在两个架构之间映射的每个字段，请重复步骤 12。  
   
-14. 验证和测试映射。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“编译和测试映射”主题。  
+14. 验证和测试映射。 有关详细信息，请参阅 BizTalk Server 帮助中的"编译和测试映射"主题。  
   
 ### <a name="to-add-the-map-to-the-orchestration"></a>向业务流程添加映射  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/20/2017
 2.  在工具箱中，单击**转换**形状，并将其拖到业务流程具有可将请求消息转换为响应消息中的点。  
   
     > [!NOTE]
-    >  有关放置的示例**转换**形状，请参阅 PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*>: files\microsoft BizTalk\<版本 > RosettaNet\SDK\PipAutomation\3A4\PR 快捷键。 本示例放入**转换**下立即调整**IsActivityDoubleAction**形状。 有关详细信息，请参阅[3A4 私有响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
+    >  有关放置的示例**转换**形状，请参阅 PIP3A4PrivateResponder.odx 业务流程。 它位于\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\PipAutomation\3A4\PR 快捷键。 本示例放入**转换**下立即调整**IsActivityDoubleAction**形状。 有关详细信息，请参阅[3A4 私有响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
   
     > [!NOTE]
     >  为多个 Pip，您就可以合并多个映射的示例，请参阅[Double 操作 PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)。  

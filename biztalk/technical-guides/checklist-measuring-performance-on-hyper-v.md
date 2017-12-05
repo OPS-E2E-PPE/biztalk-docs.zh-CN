@@ -12,14 +12,14 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 806f1efb67205771a1e202c8bafd77a493d584e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6aefa415bec4b996fa7b5cd4689c48f834dc36a2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-measuring-performance-on-hyper-v"></a>清单： HYPER-V 上测量性能
-虽然大部分分析性能的来宾操作系统安装在 HYPER-V 虚拟机性能的原则是与分析的物理计算机上安装操作系统的性能相同，许多集合方法都是不同的结果。 计算的性能时，应作为快速参考使用以下章节你[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V 虚拟机上安装来宾操作系统上运行的解决方案。  
+虽然大部分分析性能的来宾操作系统安装在 HYPER-V 虚拟机性能的原则是与分析的物理计算机上安装操作系统的性能相同，许多集合方法都是不同的结果。 评估你的 HYPER-V 虚拟机上安装来宾操作系统上运行的 BizTalk Server 解决方案的性能时，以下各节应用作的快速参考。  
   
 ## <a name="measuring-disk-io-performance"></a>测量磁盘 I/O 性能  
  使用以下性能监视器计数器测量 HYPER-V 虚拟机上安装来宾操作系统上的磁盘 I/O 性能：  

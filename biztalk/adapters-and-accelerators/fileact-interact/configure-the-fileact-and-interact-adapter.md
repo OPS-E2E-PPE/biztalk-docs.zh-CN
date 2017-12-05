@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8c847165eb61b6ba9044a95584de7be8f9999d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>配置 FileAct 和交互适配器
 配置不同的项目使用[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]运行时。 
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="step-4-configure-the-swiftnet-param-file"></a>步骤 4： 配置 SWIFTNet param 文件
 
-若要启用的 FileAct 和交互接收适配器，以初始化具有的值，必须在 SWIFTNet paramfile 中输入在压降中创建的合作伙伴服务器消息。 Paramfile 通常位于`c:\SWIFTAlliance\RA\<remote access instance name>\cfg\paramfile`。 配置 paramfile 后，开始**SnlReceiver.exe**。  
+若要启用的 FileAct 和交互接收适配器，以初始化具有的值，必须在 SWIFTNet paramfile 中输入在压降中创建的合作伙伴服务器消息。 Paramfile 通常位于`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`。 配置 paramfile 后，开始**SnlReceiver.exe**。  
   
 1. 打开**SWIFTNet paramfile**。 中的位置标记为"* * *"将以下代码添加。 请注意，`AdapterType`值可以是`Interact`或`Fileact`。  
   
@@ -172,6 +172,6 @@ FileAct 和交互消息的示例，请参阅[示例交互和 FileAct 消息](../
   
 ## <a name="see-also"></a>另请参阅  
 
-[安装 FileAct 和交互适配器](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
-[卸载或修复 FileAct 和交互适配器](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
-[读取安装的已知问题](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+[安装 FileAct 和 InterAct 适配器](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
+[卸载或修复 FileAct 和 InterAct 适配器](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
+[阅读安装过程中的已知问题](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)

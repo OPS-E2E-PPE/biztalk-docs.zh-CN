@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 654fb0eb246cdc8507d1830afce29ebd71fe6a4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8e110fb2a671fc839fb96cfdc2ad03169649e6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-windows-sharepoint-services-send-handler"></a>如何配置 Windows SharePoint Services 发送处理程序
 使用以下步骤可更改与 Windows SharePoint Services 发送处理程序关联的主机。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>更改 Windows SharePoint Services 发送处理程序的全局变量  
   
-1.  在 BizTalk Server 管理控制台中，单击以展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，然后单击以展开**BizTalk 组 [\<servername >:\<管理数据库 >]**，单击以展开**平台设置**，然后单击以展开**适配器**。 此时，适配器列表将显示在该文件夹下。  
+1.  在 BizTalk Server 管理控制台中，单击以展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，然后单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，单击以展开**平台设置**，然后单击以展开**适配器**。 此时，适配器列表将显示在该文件夹下。  
   
 2.  单击**Windows SharePoint Services**，然后在右窗格中，右键单击你想要配置，，然后单击发送处理程序**属性**。  
   
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
  [如何创建发送端口](../core/how-to-create-a-send-port2.md)   
  [Windows SharePoint Services 适配器属性参考](../core/windows-sharepoint-services-adapter-properties-reference.md)   
  [Windows SharePoint Services 适配器表达式](../core/windows-sharepoint-services-adapter-expressions.md)   
- [支持的 Windows SharePoint Services 列类型](../core/supported-windows-sharepoint-services-column-types.md)
+ [支持的 Windows SharePoint Services 栏类型](../core/supported-windows-sharepoint-services-column-types.md)

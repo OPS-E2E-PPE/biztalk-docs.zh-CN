@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 914988661789fdb7750e9c9b650f9887d888694b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d0619dc77496fd1547505221ff2f437bf486fb8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-price-and-availability-request-with-the-fabrikam-sample"></a>创建具有 Fabrikam 示例的价格和可用性请求
 在此步骤中，将使用 LOBWebApplication 工具创建 3A2 价格与可用性请求。  
   
 ### <a name="to-submit-a-3a2-price-and-availability-request-to-contoso"></a>向 Contoso 提交 3A2 价格与可用性请求  
   
-1.  在 Internet Explorer 中，移动到 http://\<*fabrikam_computername*> / LOBWebApplication/default.aspx。  
+1.  在 Internet Explorer 中，移动到 http://\<*fabrikam_computername*\>/LOBWebApplication/default.aspx。  
   
 2.  上**LOBWebApplication**页上，执行以下操作：  
   
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
     |**PIP 版本**|类型**R02.00.00A**。|  
     |**消息类别**|类型**操作**。|  
   
-3.  使用记事本或其他文本编辑器，打开**3A2_Request.xml**文件在 C:\Program Files\Microsoft BizTalk\<版本 > RosettaNet\SDK\LOBApplication\SampleInstancesfolder 和复制的快捷键和将文本粘贴到**服务内容**字段 LOBWebApplication 工具。  
+3.  使用记事本或其他文本编辑器，打开**3A2_Request.xml**文件在 C:\Program Files\Microsoft BizTalk\<版本\>RosettaNet\SDK\LOBApplication\SampleInstancesfolder 快捷键复制并粘贴到文本**服务内容**字段 LOBWebApplication 工具。  
   
 4.  单击**提交**以提交到 Contoso 3A2 请求。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在 Microsoft SQL Server Management Studio 中，单击**新查询**。  
   
-5.  在**\<表 > 文本**对话框中，选择**BTARNDATA**从列表中。  
+5.  在**\<表\>文本**对话框中，选择**BTARNDATA**从列表中。  
   
 6.  在**SQL**窗口中，键入以下 SQL 语句：  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在 Microsoft SQL Server Management Studio 中，单击**新查询**。  
   
-4.  在**\<表 > 文本**对话框中，选择**BTARNDATA**从列表中。  
+4.  在**\<表\>文本**对话框中，选择**BTARNDATA**从列表中。  
   
 5.  在**SQL**窗口中，键入以下 SQL 语句：  
   
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
     >  应看到类别为 25 的消息，该消息代表从 Contoso 计算机发送到 Fabrikam 计算机的确认回执。 还应看到类别为 50 的消息，该消息代表从 Contoso 业务线 (LOB) 应用程序发送到 Fabrikam 计算机的响应。  
   
 ## <a name="see-also"></a>另请参阅  
- [私有过程教程](../../adapters-and-accelerators/accelerator-rosettanet/private-process-tutorial.md)
+ [私有流程教程](../../adapters-and-accelerators/accelerator-rosettanet/private-process-tutorial.md)

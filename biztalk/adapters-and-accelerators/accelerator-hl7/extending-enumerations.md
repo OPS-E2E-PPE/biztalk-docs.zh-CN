@@ -15,20 +15,20 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 527894b27c5720a1b006387f861922eb978069b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2abb040d79f0c9312a8761289c0bf6252fef2f3a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="extending-enumerations"></a>扩展枚举
-可以将值添加到 HL7 消息正文、 确认和消息正文架构中建立的许多字段、 线段和数据类型可接受的值的枚举。 这涉及到的更改的值中的特定表中您正在工作的 HL7 版本的通用表值架构文件集 ( **Tablevalues_\<***版本***>.xsd**架构文件)。  
+可以将值添加到 HL7 消息正文、 确认和消息正文架构中建立的许多字段、 线段和数据类型可接受的值的枚举。 这涉及到的更改的值中的特定表中您正在工作的 HL7 版本的通用表值架构文件集 ( **Tablevalues_\<***版本* **\>.xsd**架构文件)。  
   
- 你将添加到枚举为消息标头架构不同的方式比你在其他架构中，如消息正文架构。 对于消息标头架构，则必须更改 MSH_25_GLO_DEF.xsd 文件中的表。 对于其他架构中，更改表值架构文件中的表 (tablevalues_\<版本 >.xsd)。  
+ 你将添加到枚举为消息标头架构不同的方式比你在其他架构中，如消息正文架构。 对于消息标头架构，则必须更改 MSH_25_GLO_DEF.xsd 文件中的表。 对于其他架构中，更改表值架构文件中的表 (tablevalues_\<版本\>.xsd)。  
   
 ### <a name="to-add-an-enumeration-value-to-the-table-values-common-schema-file"></a>若要将一个枚举值添加到表值常见架构文件  
   
-1.  你首先需要确定包含你想要添加到枚举的表。 在解决方案资源管理器的[!INCLUDE[vs2012](../../includes/vs2012-md.md)]，打开包含你想要更改的元素的架构文件。 在 BizTalk 资源管理器，单击你想要添加的值的字段元素。  
+1.  你首先需要确定包含你想要添加到枚举的表。 在解决方案资源管理器的 Visual Studio 中，打开包含你想要更改的元素的架构文件。 在 BizTalk 资源管理器，单击你想要添加的值的字段元素。  
   
     > [!NOTE]
     >  当您更改表值常见架构文件中的一个枚举时，引用该枚举的所有对象会受到都影响。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  如果没有任何表中列出**基数据类型**字段中，和**派生源**属性未设置为**Restricted**，则该字段不具有与之关联的枚举.  
   
-3.  在解决方案资源管理器，打开**Tablevalues_\<***版本***>.xsd**，然后单击**打开**。  
+3.  在解决方案资源管理器，打开**Tablevalues_\<***版本***\>.xsd**，然后单击**打开**。  
   
     > [!NOTE]
     >  你必须为你想要更改的 HL7 架构的每个版本单独执行此过程。  

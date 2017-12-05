@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c33e49e82f9ebbf8856dd447989d7557558c0e4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c1900b0f775d918f7408ed581b35e6e143cd08d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-parameters-for-send-and-receive-adapters"></a>配置参数发送和接收适配器
 本部分提供的配置参数发送和接收最小较低层协议 (MLLP) 适配器。 这些参数分为两个类： 阻止字符和网络连接参数。  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
  你可以设置的网络连接参数 MLLP 传输属性中为发送端口或接收位置使用 MLLP 传输类型。 为此，请打开 BizTalk Server 管理控制台，导航到发送端口或接收位置文件夹 （如果适用）、 右键单击特定发送端口或接收位置，单击**属性**，然后单击**配置**。  
   
 ## <a name="block-characters"></a>块字符  
- 这些参数是特殊字符，必须将接收或通过 MLLP 适配器发送的 HL7 消息括起来。 这些字符形成块采用以下格式： \<SB >*DDD*\<EB >\<CR >，其中*DDD*消息数据，代表\<SB> 是开始块字符， \<EB > 是结束块字符，和\<CR > 回车符，将返回。  
+ 这些参数是特殊字符，必须将接收或通过 MLLP 适配器发送的 HL7 消息括起来。 这些字符形成块采用以下格式： \<SB\>*DDD*\<EB\>\<CR\>，其中*DDD*代表消息数据， \<SB\>是开始块字符， \<EB\>是结束块字符，和\<CR\>回车符，将返回。  
   
 |参数|改用|  
 |---------------|---------|  
-|**\<CR > 回车符**|用于回车符 （第二个字节的包装后的最终字节） 的字节值 （以十六进制格式）。 可选。|  
-|**\<EB > 结束块字符**|用于结束字节 （消息预告片包装） 的字节值。 ASCII \<FS >，例如， \<1 c >。|  
-|**\<SB > 开始块字符**|用于 （消息标头包装） 中的开始字节的字节值。 ASCII \<VT >，例如， \<0b >。|  
+|**\<CR\>回车符**|用于回车符 （第二个字节的包装后的最终字节） 的字节值 （以十六进制格式）。 可选。|  
+|**\<EB\>结束块字符**|用于结束字节 （消息预告片包装） 的字节值。 ASCII \<FS\>，例如， \<1 c\>。|  
+|**\<SB\>开始块字符**|用于 （消息标头包装） 中的开始字节的字节值。 ASCII \<VT\>，例如， \<0b\>。|  
   
 ## <a name="deliverymode"></a>DeliveryMode  
  是否在序列中，或 （按顺序，按顺序） 的顺序不正确传递实例文件，你可以使用控件的传递模式参数。 每个接收位置具有例如序列文件自己传递。  
@@ -65,4 +65,4 @@ ms.lasthandoff: 09/20/2017
  [处理 MLLP 编码消息](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [MLLP 接收适配器处理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
  [MLLP 发送适配器处理](../../adapters-and-accelerators/accelerator-hl7/mllp-send-adapter-processing.md)   
- [设置发送端口用于接收确认](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [设置用于接收 ACK 的发送端口](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

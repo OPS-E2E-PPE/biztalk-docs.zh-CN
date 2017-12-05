@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfb9db99f06e05877939631e4306be396c47ebda
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f293d00848c32f6b519349543c8a39824d9bca8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="start-send-port-biztalk-server-sample"></a>开始发送端口 （BizTalk Server 示例）
 启动发送端口示例演示如何在使用 FILE 适配器时启动发送端口和选择设置主传输地址。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例文件位于以下 SDK 位置：  
   
- \<*示例路径*> \Admin\WMI\Start 发送 Port\  
+ \<*示例路径*\>\Admin\WMI\Start 发送 Port\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -60,15 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Start 发送 Port\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Start 发送 Port\VBScript\  
   
 2.  使用 cscript 程序运行 StartSendPort.vbs 文件，传递下列命令行参数，其中第二个参数是可选的：  
   
-    -   **\<**   
-         ***SendPortName* >。** 要启动的发送端口的名称。 如果发送端口名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***SendPortName* \>。** 要启动的发送端口的名称。 如果发送端口名称包含空格，则将该名称置于引号中。  
   
-    -   **\<**   
-         ***PrimaryTransportAddress* >。** 相对于产品安装位置的主传输地址，通过指定此参数，您可以更改此地址。 如果主适配器地址包含空格，则将该名称置于引号中。  
+    -   **\<** ***PrimaryTransportAddress* \>。** 相对于产品安装位置的主传输地址，通过指定此参数，您可以更改此地址。 如果主适配器地址包含空格，则将该名称置于引号中。  
   
          例如：  
   
@@ -82,4 +80,4 @@ ms.lasthandoff: 09/20/2017
  StartSendPort.vbs 脚本文件包含详细注释，对其执行的操作做了进一步说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

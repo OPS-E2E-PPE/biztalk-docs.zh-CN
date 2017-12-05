@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77069c3690a73957936c786bc05c2690b9df7a10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61784be74d93753b8c3ca8ecf7302c6517a1d9c4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a>如何启用 Analysis Services 和 BAM 主导入数据库之间的加密
 在安装或升级 BAM 的过程中，默认情况下不启用加密。 若要启用加密，必须将 BAM 配置 XML 文件中的 UseEncryption 标志的值设置为 1。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
   
-3.  类型**bm get-config FileName:\<输出文件 >**。  
+3.  类型**bm get-config FileName:\<输出文件\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -43,11 +43,11 @@ ms.lasthandoff: 09/20/2017
   
 5.  在文本编辑器中打开已导入的文件配置文件，将 UseEncryption 属性标志的值更改为 1。  
   
-    -   默认设置：\<属性名称 ="UseEncryption"> 0\</Property >  
+    -   默认设置：\<属性名称 ="UseEncryption"\>0\</Property\>  
   
-    -   新设置：\<属性名称 ="UseEncryption"> 1\</Property >  
+    -   新设置：\<属性名称 ="UseEncryption"\>1\</Property\>  
   
-6.  通过键入更新 BAM 配置**bm 更新-config FileName:\<配置文件 >**。  
+6.  通过键入更新 BAM 配置**bm 更新-config FileName:\<配置文件\>**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -12,14 +12,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cd1f124518b501a9c007c1f131ef51351b09e53
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 826f72a48eeb4964a7cddf48308e869be99de481
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-and-as2-biztalk-server-samples-folder"></a>EDI 和 AS2（BizTalk Server 示例文件夹）
-Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 在其软件开发工具包 (SDK) 中包含了以下 EDI 和 AS2 示例。 本部分提供了有关这些 EDI 示例所演示的功能、用于生成和运行这些示例的说明以及预期结果的详细信息。  
+Microsoft BizTalk Server 在其软件开发工具包 (SDK) 中包含的以下的 EDI 和 AS2 示例。 本部分提供了有关这些 EDI 示例所演示的功能、用于生成和运行这些示例的说明以及预期结果的详细信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

@@ -12,18 +12,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b671f8fc124875eb5eadf119188d0ffe4c1a2a3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 720da748059d3fe3da376ea42495a2587577f5ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-e-business-suite-using-the-wcf-service-model"></a>完成对表中使用 WCF 服务模型的 Oracle E-business Suite 的较大的数据类型的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端可以执行对接口表和视图的较大的数据类型，如 BLOB、 CLOB、 NCLOB、 和 BFILE 操作。  
   
--   列类型的适配器 BLOB、 CLOB、 和 NCLOB，使客户端可以读取，以及更新数据。 适配器公开 Read_\<*LOBColName*> 和 Update_\<*LOBColName*> 操作来读取和更新数据分别，其中\< *LOBColName*> 是具有较大的数据类型列的名称。 如果没有具有单个接口表中的较大的数据类型的多个列，适配器将公开为许多读取和更新接口该表的操作。  
+-   列类型的适配器 BLOB、 CLOB、 和 NCLOB，使客户端可以读取，以及更新数据。 适配器公开 Read_\<*LOBColName* \>和 Update_\<*LOBColName* \>操作来读取和更新数据分别，其中\<*LOBColName* \>是具有较大的数据类型列的名称。 如果没有具有单个接口表中的较大的数据类型的多个列，适配器将公开为许多读取和更新接口该表的操作。  
   
--   对于类型 BFILE 列，适配器客户端只能读取的数据。 适配器公开 Read_\<*LOBColName*> 从 BFILE 类型的列读取数据的操作。 如果没有具有单个接口表中的较大的数据类型的多个列，该适配器将公开许多读取接口表的操作。  
+-   对于类型 BFILE 列，适配器客户端只能读取的数据。 适配器公开 Read_\<*LOBColName* \>操作从 BFILE 类型的列读取数据。 如果没有具有单个接口表中的较大的数据类型的多个列，该适配器将公开许多读取接口表的操作。  
   
  有关这些操作的详细信息，请参阅[接口表、 界面视图、 表和包含 LOB 数据的视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)。  
   
@@ -53,8 +53,8 @@ ms.lasthandoff: 09/20/2017
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|Update_\<*column_name*>|公共 void Update_\<*column_name*> （字符串筛选器，byte [] 数据）;|  
-|Read_\<*column_name*>|公共 System.IO.Stream Read_\<*column_name*>(string FILTER);|  
+|Update_\<*column_name*\>|公共 void Update_\<*column_name*\>（字符串筛选器，byte [] 数据）;|  
+|Read_\<*column_name*\>|公共 System.IO.Stream Read_\<*column_name*\>（字符串筛选器）;|  
   
  例如，下面的代码演示的方法签名的应用程序架构下的客户数据库表上的 Update_PHOTO 和 Read_PHOTO 操作生成的 WCF 客户端类。  
   
@@ -70,12 +70,12 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
  在此代码段， **Tables_APPS_CUSTOMERClient**是 WCF 中的类的生成的 OracleEBSBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 Update_PHOTO 和 Read_PHOTO 是可以调用更新和读取表中的较大的数据类型的列的方法。  
   
 ### <a name="parameters-for-table-operations"></a>参数用于表操作  
- 本部分提供所需的 Update_ 参数\<*column_name*> 和 Read_\<*column_name*> 操作。  
+ 本部分提供所需的 Update_ 参数\<*column_name* \>和 Read_\<*column_name* \>操作。  
   
 |操作名称|Parameters|  
 |--------------------|----------------|  
-|Update_\<*column_name*>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句指示针对其数据的更新的记录。 例如， `"WHERE Name='Mindy Martin'"`。<br />-   `byte[] DATA`. 包含要更新的大型数据类型列中的数据的字节数组。|  
-|Read_\<*column_name*>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句，它表示具有要读取数据的记录。 例如， `"WHERE Name='Mindy Martin'"`。|  
+|Update_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句指示针对其数据的更新的记录。 例如， `"WHERE Name='Mindy Martin'"`。<br />-   `byte[] DATA`. 包含要更新的大型数据类型列中的数据的字节数组。|  
+|Read_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句，它表示具有要读取数据的记录。 例如， `"WHERE Name='Mindy Martin'"`。|  
   
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-with-columns-of-large-data-types"></a>创建 WCF 客户端来调用对具有较大的数据类型的列的表的操作  
  泛型组执行对 Oracle E-business Suite 使用 WCF 客户端的操作所需的操作涉及到一组任务中所述[与 Oracle E-business Suite 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md)。 本部分介绍如何创建 WCF 客户端来调用 Update_PHOTO 和 Read_PHOTO 客户数据库表上的操作。  
@@ -158,7 +158,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
             Console.WriteLine("Reading the photo");  
             int count = 0;  
             photo = new byte[fs.Length];  
-            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) \< fs.Length) ;  
+            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) < fs.Length) ;  
         }  
         catch(Exception ex)  
         {  

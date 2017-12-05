@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06f0c552b84fd8c4f56e2a88c59e8557585c947e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f639ad516ec4f4a61406b9690d2d52f2ea98599f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-parties"></a>管理方
 使用**方**节点，你可以设置业务合作伙伴 （参与方） 或内部的部门 （业务配置文件） 与其[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案进行交互。 有关详细信息，请参阅[贸易合作伙伴](../core/trading-partners-and-business-profiles.md)。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 3.  上**发送端口**页上，执行以下操作。  
   
     > [!NOTE]
-    >  在 [!INCLUDE[prague](../includes/prague-md.md)] 中，发送端口关联在协议级别执行。 **发送端口**作为一部分的参与方属性是只是为了向后兼容，会出现页面。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。  
+    >  在 BizTalk Server 中，在协议级别完成发送端口关联。 **发送端口**作为一部分的参与方属性是只是为了向后兼容，会出现页面。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  

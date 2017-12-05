@@ -15,11 +15,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 258fcb96bbb9bbb045aeb3f48c2b324502d44940
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e654d22a08a7b07210ded9c319953c288065927a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>如何启用自动存档验证
 使用存档验证可以在创建存档时对其进行验证。 启用自动存档验证之前，必须先设置一个辅助数据库服务器，也称为验证服务器。 由于存档进程是一个简单备份，因此存储在磁盘上的实际图像可能由于硬件问题而受损。  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
 13. 上**常规**页上，在**命令**框中，在命令中， **exec dtasp_ValidateArchive null，null**，替换 null，null 与托管 BizTalk server 的名称跟踪数据库，括在单引号后, 跟用引号引起来，BizTalk 跟踪数据库的名称，然后单击**确定**。 例如：  
   
-     **exec dtasp_ValidateArchive**  *\<TrackingServerName >* **'，'**  *\<TrackingDatabaseName >* **'**  
+     **exec dtasp_ValidateArchive**  *\<TrackingServerName\>*  **'，'**  *\<TrackingDatabaseName\>* **'**  
   
 > [!NOTE]
 >  ValidateArchive 作业没有计划并且不应为其配置计划。 相反，在创建存档时 DTA 清除和存档 (BizTalkDTADb) 作业将自动启动此作业。  

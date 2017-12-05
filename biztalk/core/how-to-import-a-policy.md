@@ -17,18 +17,18 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bae0b72eb323e75a8ecf9563b4fa0e0bc1b725d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac21ad1348dbc934c81d87f3c477977eeecd2ccf
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-a-policy"></a>如何导入策略
 本主题介绍如何使用 BizTalk Server 管理控制台将策略导入到 BizTalk 组或使用 BTSTask 命令行工具将策略导入到 BizTalk 应用程序。  
   
  中所述，可以通过使用业务规则编辑器，创建一个策略[创建业务规则使用业务规则编辑器](../core/creating-business-rules-using-the-business-rule-composer.md)，并直接，然后导入或中所述，你可以从另一个 BizTalk 组中，导出策略[如何导出策略](../core/how-to-export-a-policy.md)然后导入它。  
   
- 导入某个策略时，将在 BizTalk 组的规则引擎数据库中注册此策略。 导入策略后，可以在 BizTalk Server 管理控制台中查看此策略。 如果使用 BizTalk Server 管理控制台来导入策略，它将显示在\<所有项目 > BizTalk 组的节点。 然后可以将其以使其可将其添加到 BizTalk 应用程序，如中所述发布[如何发布策略](../core/how-to-publish-a-policy.md)。 如果使用 BTSTask 命令行工具来导入策略，将自动发布此策略，并且它将显示在您导入此策略的应用程序的“策略”文件夹中。  
+ 导入某个策略时，将在 BizTalk 组的规则引擎数据库中注册此策略。 导入策略后，可以在 BizTalk Server 管理控制台中查看此策略。 如果使用 BizTalk Server 管理控制台来导入策略，它将显示在\<所有项目\>BizTalk 组的节点。 然后可以将其以使其可将其添加到 BizTalk 应用程序，如中所述发布[如何发布策略](../core/how-to-publish-a-policy.md)。 如果使用 BTSTask 命令行工具来导入策略，将自动发布此策略，并且它将显示在您导入此策略的应用程序的“策略”文件夹中。  
   
  导入策略时，请切记以下几点：  
   
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开你想要将策略导入，展开在其中的 BizTalk 组**应用程序**，然后展开**\<所有项目 >**。  
+2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开你想要将策略导入，展开在其中的 BizTalk 组**应用程序**，然后展开**\<所有项目\>**.  
   
 3.  右键单击**策略**，然后单击**导入**。  
   
 4.  浏览到包含该策略，然后单击的.xml 文件**打开**。  
   
-     策略导入组并显示在**策略**文件夹**\<所有项目 >**。  
+     策略导入组并显示在**策略**文件夹**\<所有项目\>**。  
   
 #### <a name="using-the-command-line"></a>使用命令行  
   

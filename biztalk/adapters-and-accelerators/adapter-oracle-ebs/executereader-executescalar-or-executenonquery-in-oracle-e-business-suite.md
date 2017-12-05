@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cff3d58712ca8e926ada18519fcebb5fddc7ea65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 227e6ce16e7cf555a1f600feac215e433a9e7574
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-oracle-e-business-suite"></a>在 Oracle E-business Suite ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]如公开泛型操作**ExecuteNonQuery**， **ExecuteReader**，和**ExecuteScalar**。 这些操作可用于 Oracle 数据库执行任何 SQL 语句。 这些操作因响应为 SQL 语句所获取的类型而异。 有关如何适配器支持这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  
@@ -172,30 +172,30 @@ ms.lasthandoff: 09/20/2017
  业务流程使用该消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置中。 有关响应**ExecuteReader**操作中包含的结果集作为数据集。 例如，来自前面的请求消息的 Oracle 数据库的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <ExecuteReaderResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/">  
   <ExecuteReaderResult>  
-    \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-      \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-        \<xs:complexType>  
-          \<xs:sequence>  
-            \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-              \<xs:complexType>  
-                \<xs:sequence>  
-                  \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                  \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                  \<xs:element minOccurs="0" name="AMOUNT" type="xs:decimal" />   
-                  \<xs:element minOccurs="0" name="DESCRIPTION" type="xs:string" />   
-                  \<xs:element minOccurs="0" name="TRANSDATE" type="xs:dateTime" />   
-                  \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                \</xs:sequence>  
-              \</xs:complexType>  
-            \</xs:element>  
-          \</xs:sequence>  
-        \</xs:complexType>  
-      \</xs:element>  
-    \</xs:schema>  
-    \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+    <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+      <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+        <xs:complexType>  
+          <xs:sequence>  
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+              <xs:complexType>  
+                <xs:sequence>  
+                  <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                  <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                  <xs:element minOccurs="0" name="AMOUNT" type="xs:decimal" />   
+                  <xs:element minOccurs="0" name="DESCRIPTION" type="xs:string" />   
+                  <xs:element minOccurs="0" name="TRANSDATE" type="xs:dateTime" />   
+                  <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                </xs:sequence>  
+              </xs:complexType>  
+            </xs:element>  
+          </xs:sequence>  
+        </xs:complexType>  
+      </xs:element>  
+    </xs:schema>  
+    <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
       <NewDataSet xmlns="">  
         <NewTable>  
           <TID>1</TID>   
@@ -212,7 +212,7 @@ ms.lasthandoff: 09/20/2017
         ......  
         ......  
       </NewDataSet>  
-    \</diffgr:diffgram>  
+    </diffgr:diffgram>  
   </ExecuteReaderResult>  
 </ExecuteReaderResponse>  
 ```  

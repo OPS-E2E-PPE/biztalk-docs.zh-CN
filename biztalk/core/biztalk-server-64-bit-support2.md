@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaf155bac387f613725023feb015f8f9a1894a2d
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: c67e68c210566a4f0ba42fcfa0e10cd0260fb6b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-64-bit-support"></a>BizTalk Server 64 位支持
 本主题解答一些有关 Microsoft 的 64 位支持的常见问题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/28/2017
  
   [BizTalk Server 2016 的硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
   
- [硬件和软件要求 BizTalk Server 2013 和 2013 R2](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
+ [BizTalk Server 2013 和 2013 R2 的硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
   
 ## <a name="is-there-an-extra-cost-for-64-bit-support"></a>64 位支持是否需要额外费用？  
  否。 64 位支持是包含在无需额外付费。  
@@ -132,7 +132,7 @@ ms.lasthandoff: 09/28/2017
  否。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]仍然存在运行时组件使用独立于 32 位或 64 位运行时的格式。 这些组件包括业务流程、消息和端口。 此持久性模型使管理员能够切换 32 位和 64 位之间的主机配置，而不创建不兼容，所以[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据。  
   
 ## <a name="when-i-upgrade-to-biztalk-server-will-my-biztalk-hosts-run-as-64-bit-by-default"></a>升级到 BizTalk Server 后，默认情况下 BizTalk 主机是否会以 64 位运行？  
- 否。 默认情况下，升级到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]仅将标记为 32 位的所有 BizTalk 主机实例。 管理员必须在 Windows x64 计算机上创建新的主机实例并对应用程序进行配置，才能使用这些应用程序。  
+ 否。 默认情况下，升级到 BizTalk Server 将仅标记为 32 位的所有 BizTalk 主机实例。 管理员必须在 Windows x64 计算机上创建新的主机实例并对应用程序进行配置，才能使用这些应用程序。  
   
 ## <a name="can-i-have-a-mixed-biztalk-server-group-that-includes-both-32-bit-and-64-bit-biztalk-runtimes"></a>我可否拥有一个包含 32 位和 64 位 BizTalk 运行时的“混合”BizTalk 服务器组？  
  是。  

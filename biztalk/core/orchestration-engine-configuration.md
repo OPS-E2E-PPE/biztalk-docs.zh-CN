@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbf64565534a368f7bfe084c6901cde62405fb62
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5d2fae252d1b99f1a6393dc2f2ebbd45ed70a2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestration-engine-configuration"></a>业务流程引擎配置
 业务流程引擎使用名为 BTSNTSvc.exe.config 的 XML 文件来确定特定行为。 例如，冻结属性及其默认值在 BTSNTSvc.exe.config 文件中配置为 XML，并会在所有包含业务流程的主机实例启动时进行读取。 有关详细信息，请参阅[Orchestration 冻结和 Rehydration](../core/orchestration-dehydration-and-rehydration.md)。  
@@ -228,7 +228,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
  BTSNTSvc.exe 配置文件包含若干个其他部分，.NET Framework 常规参考中记载了这些部分。 有关修改这些部分的详细信息请参阅**配置文件架构**的在.NET Framework 常规参考[http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)。  
   
- 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET  **\<appSettings >**标记下**\<配置 >**标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制 **\<appSettings >**通常将由使用 BTSNTSvc.exe.config 文件中的标记自定义.NET 组件从调用中业务流程。 例如：  
+ 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET  **\<appSettings\>** 标记下**\<配置\>**标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制 **\<appSettings\>**  BTSNTSvc.exe.config 文件中的标记通常将适用于从内部业务流程调用的自定义.NET 组件。 例如：  
   
 ```  
 <appSettings>  

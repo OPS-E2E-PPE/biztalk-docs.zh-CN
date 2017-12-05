@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 666b08e0c7992f8660d005bef51d26c8f51bbed5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1b768bf667969c4adc8119b6d9d89c0ed79fc32
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-biztalk-web-services"></a>BizTalk Web Services 疑难解答
 本部分提供如何找出和解决常见 Web Services 问题的建议。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="general-troubleshooting"></a>常规疑难解答  
   
 ### <a name="enabling-web-services-publishing-wizard-tracing"></a>启用 Web Services 发布向导跟踪  
- 你可以启用跟踪来调试 BizTalk Web 服务发布向导通过对取消注释\<添加 > BTSWebSvcWiz.exe.config 文件中的节点。 有关从 Web 服务发布向导获取跟踪信息的详细信息，请参阅[如何修改 BTSWebSvcWiz.exe.config](../core/how-to-modify-btswebsvcwiz-exe-config.md)。  
+ 你可以启用跟踪来调试 BizTalk Web 服务发布向导通过对取消注释\<添加\>BTSWebSvcWiz.exe.config 文件中的节点。 有关从 Web 服务发布向导获取跟踪信息的详细信息，请参阅[如何修改 BTSWebSvcWiz.exe.config](../core/how-to-modify-btswebsvcwiz-exe-config.md)。  
   
 ### <a name="enabling-soap-message-tracing"></a>启用 SOAP 消息跟踪  
  通过使用 SOAP 扩展，您可以启用有助于调试 Web Services 发布应用程序的 SOAP 消息跟踪。 有关 SOAP 扩展的详细信息，请参阅[如何： 实现 SOAP 扩展](http://go.microsoft.com/fwlink/?LinkId=62314)。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  若要调试已发布 Web Services，您可以向 web.config 文件添加一个开关来控制由已发布 Web Services 返回的异常详细信息的级别。 该交换机是否**ThrowDetailedError**，并且当设置为**True**服务器代理到 Web 客户端，使你能够调试已发布的 Web 服务返回内部异常信息。  
   
- 下面的 XML 代码演示**ThrowDetailedError**下 web.config 文件中出现的交换机\<appSettings > 节点：  
+ 下面的 XML 代码演示**ThrowDetailedError**下 web.config 文件中出现的交换机\<appSettings\>节点：  
   
 ```  
 <appSettings>  
@@ -160,7 +160,7 @@ ms.lasthandoff: 09/20/2017
   
  有关这些详细信息和相关的注意事项，请参阅[注意事项使用 Web 服务时](../core/considerations-when-consuming-web-services.md)。  
   
-### <a name="why-am-i-getting-errors-publishing-my-schema-that-uses-the-include-element"></a>为什么我收到发布我使用的架构的错误\<包括 > 元素？  
+### <a name="why-am-i-getting-errors-publishing-my-schema-that-uses-the-include-element"></a>为什么我收到发布我使用的架构的错误\<包括\>元素？  
  如果它们包括循环引用，无法发布架构 (包括的架构具有**包括**到包括架构元素) 或具有无法解析**schemaLocation**属性。  
   
  有关限制的详细信息**包括**元素，请参阅[包括元素绑定支持](http://go.microsoft.com/fwlink/?LinkId=62312)。 Web 服务发布向导在.NET Framework 2.0; 中具有与 XSD.exe 相同的限制有关详细信息，请参阅[导入元素绑定支持](http://go.microsoft.com/fwlink/?LinkId=119606)。  
@@ -170,7 +170,7 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-modify-the-generated-web-project-for-envelope-schemas"></a>为信封架构修改生成的 Web 项目  
   
-1.  打开 *\<myWebService >*。 asmx.cs 文件。  
+1.  打开 *\<myWebService\>*。 asmx.cs 文件。  
   
 2.  编辑文件，并更改`bodyTypeAssemblyQualifiedName = <dll.name.version>`到`bodyTypeAssemblyQualifiedName = null`  
   

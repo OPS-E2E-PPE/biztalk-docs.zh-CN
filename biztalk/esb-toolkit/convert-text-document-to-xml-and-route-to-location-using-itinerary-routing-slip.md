@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ba308473568c222559ccc799faf3233478ee490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8284c1623329133533fe03aab567b1281f07c1a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>如何： 将文本文档转换为 XML 和路由到使用路线的路由滑动的文件位置
 ## <a name="goal"></a>目的  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-deploy-the-dataformattransformation-itinerary"></a>若要部署 DataFormatTransformation 路线  
   
-1.  在[!INCLUDE[vs2010](../includes/vs2010-md.md)]，打开 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln。  
+1.  在 Visual Studio 中，打开 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln。  
   
 2.  在解决方案资源管理器，在**Itinerary.Library**项目中，双击**DataFormatTransformation.itinerary**在路线设计器中打开它。  
   
@@ -121,9 +121,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>若要创建和配置 ESB 入口  
   
-1.  单击**启动**在任务栏中，指向**所有程序**，指向 **[!INCLUDE[prague](../includes/prague-md.md)]** ，然后单击**BizTalk Server 管理**.  
+1.  单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**BizTalk Server 管理**。  
   
-2.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后单击**Microsoft.Practices.ESB**。  
+2.  在 BizTalk Server 管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后单击**Microsoft.Practices.ESB**。  
   
 3.  右键单击**接收位置**，指向**新建**，然后单击**单向接收位置**。  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击**确定**关闭**接收位置属性**对话框。  
   
-4.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.FlatFile.FILE**接收位置，并依次**启用**。  
+4.  在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.FlatFile.FILE**接收位置，并依次**启用**。  
   
 #### <a name="to-test-itinerary-based-routing-of-a-flat-file-message"></a>若要测试基于路线的平面文件消息的路由  
   
@@ -159,16 +159,16 @@ ms.lasthandoff: 09/20/2017
   
 3.  浏览到 C:\HowTos\Out。验证 DFT%MessageID%.xml 消息已写入到目录。  
   
-4.  在[!INCLUDE[prague](../includes/prague-md.md)]管理控制台中，右键单击**OnRamp.Itinerary.FlatFile.FILE**接收位置，并依次**禁用**。  
+4.  在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.FlatFile.FILE**接收位置，并依次**禁用**。  
   
 5.  后**OnRamp.Itinerary.FlatFile.FILE**接收位置处于禁用状态，右键单击它，，然后单击**删除**。 在**确认删除接收位置**对话框中，单击**是**。  
   
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何： 转换一条消息，并将生成的消息路由到使用路线的路由滑动某个文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [如何：转换消息并使用路线传送名单将生成的消息路由至文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [如何： 将一条消息路由到多个收件人使用路线路由的滑动](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+-   [如何：使用路线传送名单将单条消息路由至多个收件人](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbd45901afb229cf884390c2a5120deac0daa90d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4f8a3b0bcc58fbed428152bb9f55c34d867258a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-orchestration-performance"></a>优化业务流程性能
 本主题介绍在 BizTalk Server 解决方案中使用业务流程的最佳实践。 这包括有关建议：  
@@ -220,7 +220,7 @@ public static XmlDocument FromMsg(XLANGMessage old)
 }  
 ```  
   
- 另一种方法就是创建基于架构的.NET 类。 这将使较少的内存比加载到文档**XmlDocument**对象，以及为.NET 开发人员提供轻松访问的架构元素。 若要生成基于 BizTalk 架构的类，可以使用与 Visual Studio 提供的 xsd.exe 工具。 例如，运行**xsd.exe \<schema.xsd >/类**ItemB，ItemC，将针对简单架构包含名为 ItemA 的字段，生成下面的类。  
+ 另一种方法就是创建基于架构的.NET 类。 这将使较少的内存比加载到文档**XmlDocument**对象，以及为.NET 开发人员提供轻松访问的架构元素。 若要生成基于 BizTalk 架构的类，可以使用与 Visual Studio 提供的 xsd.exe 工具。 例如，运行**xsd.exe \<schema.xsd\> /类**ItemB，ItemC，将针对简单架构包含名为 ItemA 的字段，生成下面的类。  
   
 ```csharp  
 //------------------------------------------------------------------------------  
@@ -349,7 +349,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
 -   [Charles Young 博客，BizTalk Server 2006： 补偿模型](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)。  
   
     > [!NOTE]  
-    >  而使用编写的此博客[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]记住，博客中所述的原则也适用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+    >  而使用编写的此博客[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]记住，博客中所述的原则也适用于 BizTalk Server。  
   
 ## <a name="considerations-when-using-maps-in-orchestrations"></a>在业务流程中使用地图时的注意事项  
  在业务流程中使用地图时，应考虑以下事项：  

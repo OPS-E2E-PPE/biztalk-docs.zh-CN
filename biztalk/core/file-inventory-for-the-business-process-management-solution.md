@@ -13,16 +13,16 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8ffc18f5d1bf5680586e63a5310454426b26c83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cc187a96e7252fad7edacba10b7a3dcc39c1b33
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-inventory-for-the-business-process-management-solution"></a>业务流程管理解决方案的文件清单
-本部分列出了业务流程管理解决方案的子目录和源文件。 业务流程管理解决方案源文件的默认安装目录为 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM。 下表将具有此路径之前的说明\<安装目录 >。  
+本部分列出了业务流程管理解决方案的子目录和源文件。 业务流程管理解决方案源文件的默认安装目录为 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM。 下表将具有此路径之前的说明\<安装 Directory\>。  
   
- 中的文件\<安装目录 >  
+ 中的文件\<安装目录\>  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -32,14 +32,14 @@ ms.lasthandoff: 09/20/2017
 |ReplacePKToken.wsf|ReplacePKToken VBScript 的 Windows 脚本文件。|  
 |SetupBPM.bat|创建公钥，更新指向公钥的引用和编译解决方案。 有关部署解决方案的信息，请参阅[部署业务流程管理解决方案](../core/deploying-the-business-process-management-solution.md)。|  
   
- 中的文件\<安装目录 > \BAM  
+ 中的文件\<安装目录\>\BAM  
   
 |文件|Description|  
 |----------|-----------------|  
 |BAMServiceOrder.xls|BAM 数据的 Excel 电子表格。|  
 |BAMServiceOrder.xml|定义 BAM 数据项类型的架构。|  
   
- 中的文件\<安装目录 > \Bindings  
+ 中的文件\<安装目录\>\Bindings  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerAppBindings-test.xml|测试版本的绑定文件**OrderBrokerApp**应用程序。|  
 |OrderBrokerAppBindings.xml|绑定文件**OrderBrokerApp**应用程序。|  
   
- 中的文件\<安装目录 > \CableProvisioningSystemClient  
+ 中的文件\<安装目录\>\CableProvisioningSystemClient  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 |CPSClient.cs|客户端的源。 包括**OrderHandlerWrapper**类代码。|  
 |OrderException.cs|C# 类定义文件**OrderException**。|  
   
- 中的文件\<安装目录 > \CableProvisioningSystemServer  
+ 中的文件\<安装目录\>\CableProvisioningSystemServer  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
 |CableProvisioningSystemServer.csproj.user|Visual Studio 项目用户选项文件|  
 |CPSServer.cs|服务器的源。|  
   
- 中的文件\<安装目录 > \CSRWebApp  
+ 中的文件\<安装目录\>\CSRWebApp  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
 |CSRMainForm.aspx.cs|C# 代码隐藏窗体。|  
 |Web.Config|窗体的配置文件。|  
   
- 中的文件\<安装目录 > \CSRWebApp\App_WebReferences\SouthridgeVideo_OrderBroker  
+ 中的文件\<安装目录\>\CSRWebApp\App_WebReferences\SouthridgeVideo_OrderBroker  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
 |orderbrokerorch_orderport.discomap|生成的文件。|  
 |orderbrokerorch_orderport.wsdl|WSDL 文件的**OrderBroker**显示为 web 服务。|  
   
- 中的文件\<安装目录 > \FacilitiesSimulator  
+ 中的文件\<安装目录\>\FacilitiesSimulator  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -93,14 +93,14 @@ ms.lasthandoff: 09/20/2017
 |FacilitiesSimulatorForm.cs|功能模拟程序的 C# 代码。|  
 |FacilitiesSimulatorForm.resx|资源文件。|  
   
- 中的文件\<安装目录 > \HistoryDB  
+ 中的文件\<安装目录\>\HistoryDB  
   
 |文件|Description|  
 |----------|-----------------|  
 |CreateDatabase.cmd|用于驱动创建历史记录数据库的 SQL 文件的文件。|  
 |SouthridgeVideoHistory.sql|用于创建历史记录数据库的 SQL 命令。|  
   
- 中的文件\<安装目录 > \IOperationsSystem  
+ 中的文件\<安装目录\>\IOperationsSystem  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/20/2017
 |IOperationsSystem.csproj|C# 项目文件。|  
 |IOperationsSystem.csproj.user|Visual Studio 项目用户选项文件|  
   
- 中的文件\<安装目录 > \IOrderHandler  
+ 中的文件\<安装目录\>\IOrderHandler  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -116,14 +116,14 @@ ms.lasthandoff: 09/20/2017
 |IOrderHandler.cs|接口定义**OrderHandler**。|  
 |IOrderHandler.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \Maps  
+ 中的文件\<安装目录\>\Maps  
   
 |文件|Description|  
 |----------|-----------------|  
 |Maps.btproj|BizTalk 项目文件。|  
 |Order_To_SQLUpdateStatus.btm|用于将订单转换为消息以更新状态的映射。|  
   
- 中的文件\<安装目录 > \MessagingSchemas  
+ 中的文件\<安装目录\>\MessagingSchemas  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/20/2017
 |OrderStatusEnvelope.xsd|定义订单状态消息的信封的架构。|  
 |SQLUpdateStatus.xsd|定义 SQL 状态更新消息的信封的架构。|  
   
- 中的文件\<安装目录 > \OperationsClient  
+ 中的文件\<安装目录\>\OperationsClient  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -142,14 +142,14 @@ ms.lasthandoff: 09/20/2017
 |OpsClient.cs|操作客户端的 C# 代码。|  
 |OpsExceptions.cs|定义操作异常的 C# 代码。|  
   
- 中的文件\<安装目录 > \OperationsHandler  
+ 中的文件\<安装目录\>\OperationsHandler  
   
 |文件|Description|  
 |----------|-----------------|  
 |OperationsHandler.csproj|操作处理程序的 C# 项目文件。|  
 |OpsHandler.cs|C# 代码中的为**OpsHandler**。 使用**OpsClient**发出请求的操作系统。|  
   
- 中的文件\<安装目录 > \OperationsServer  
+ 中的文件\<安装目录\>\OperationsServer  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -157,7 +157,7 @@ ms.lasthandoff: 09/20/2017
 |OperationsServer.csproj|操作服务器的 C# 项目文件。|  
 |OpsServer.cs|C# 代码中为提供的实例的操作服务器**OpsHandler**对象。|  
   
- 中的文件\<安装目录 > \OpsAdapter  
+ 中的文件\<安装目录\>\OpsAdapter  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -165,14 +165,14 @@ ms.lasthandoff: 09/20/2017
 |Register_Ops_Adapter.vbs|用于注册 Ops 适配器的 VBScript。|  
 |SetupOpsAdapter.bat|用于安装 Ops 适配器的批处理文件。|  
   
- 中的文件\<安装目录 > \OpsAdapter\IOpsAIC  
+ 中的文件\<安装目录\>\OpsAdapter\IOpsAIC  
   
 |文件|Description|  
 |----------|-----------------|  
 |IOpsAIC.cs|用于接口定义的 C# 代码文件**初始化**和**执行**Ops 适配器由调用的方法。|  
 |IOpsAIC.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \OpsAdapter\OpsAdapterMgmt  
+ 中的文件\<安装目录\>\OpsAdapter\OpsAdapterMgmt  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
 |TransmitHandler.xsd|Ops 适配器的 C# 源文件。|  
 |TransmitLocation.xsd|Ops 适配器的 C# 源文件。|  
   
- 中的文件\<安装目录 > \OpsAdapter\OpsTxAdapter  
+ 中的文件\<安装目录\>\OpsAdapter\OpsTxAdapter  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -193,7 +193,7 @@ ms.lasthandoff: 09/20/2017
 |OpsTransmitter.cs|Ops 适配器的 C# 源文件。|  
 |OpsTxAdapter.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \Orchestrations\CableOrderActions  
+ 中的文件\<安装目录\>\Orchestrations\CableOrderActions  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -205,28 +205,28 @@ ms.lasthandoff: 09/20/2017
 |Complete.odx|**完成**订单处理阶段所使用的业务流程。|  
 |Validate.odx|**验证**订单处理阶段所使用的业务流程。|  
   
- 中的文件\<安装目录 > \Orchestrations\CableOrderStage1  
+ 中的文件\<安装目录\>\Orchestrations\CableOrderStage1  
   
 |文件|Description|  
 |----------|-----------------|  
 |CableOrder1.odx|第一个订单处理阶段的业务流程。|  
 |CableOrderStage1.btproj|BizTalk 项目文件。|  
   
- 中的文件\<安装目录 > \Orchestrations\CableOrderStage2  
+ 中的文件\<安装目录\>\Orchestrations\CableOrderStage2  
   
 |文件|Description|  
 |----------|-----------------|  
 |CableOrder2.odx|第二个订单处理阶段的业务流程。|  
 |CableOrderStage2.btproj|BizTalk 项目文件。|  
   
- 中的文件\<安装目录 > \Orchestrations\OrderBroker  
+ 中的文件\<安装目录\>\Orchestrations\OrderBroker  
   
 |文件|Description|  
 |----------|-----------------|  
 |OrderBroker.btproj|BizTalk 项目文件。|  
 |OrderBroker.odx|**OrderBroker**业务流程。|  
   
- 中的文件\<安装目录 > \Orchestrations\OrderManager  
+ 中的文件\<安装目录\>\Orchestrations\OrderManager  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -237,7 +237,7 @@ ms.lasthandoff: 09/20/2017
 |OrderManager.btproj|BizTalk 项目文件。|  
 |OrderManager.odx|**OrderManager**业务流程。|  
   
- 中的文件\<安装目录 > \OrderBrokerMaps  
+ 中的文件\<安装目录\>\OrderBrokerMaps  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerMaps.btproj|BizTalk 项目文件。|  
 |Order_To_CSR_OrderRequest.btm|用于将订单消息转换为客户服务订单请求的映射。|  
   
- 中的文件\<安装目录 > \OrderBrokerSchemas  
+ 中的文件\<安装目录\>\OrderBrokerSchemas  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -256,7 +256,7 @@ ms.lasthandoff: 09/20/2017
 |Servicing_OrderRequest.xsd|定义发送到服务系统的消息的架构。|  
 |SQLHistoryInsert.xsd|SQL 历史记录消息的架构。|  
   
- 中的文件\<安装目录 > \OrderBroker_Proxy  
+ 中的文件\<安装目录\>\OrderBroker_Proxy  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -265,34 +265,34 @@ ms.lasthandoff: 09/20/2017
 |OrderBrokerOrch_OrderPort.asmx|生成的文件。|  
 |Web.config|生成的文件。|  
   
- 中的文件\<安装目录 > \OrderBroker_Proxy\App_Code  
+ 中的文件\<安装目录\>\OrderBroker_Proxy\App_Code  
   
 |文件|Description|  
 |----------|-----------------|  
 |DataTypes.cs|生成的文件。|  
 |OrderBrokerOrch_OrderPort.asmx.cs|生成的文件。|  
   
- 中的文件\<安装目录 > \OrderHandler  
+ 中的文件\<安装目录\>\OrderHandler  
   
 |文件|Description|  
 |----------|-----------------|  
 |OrderHandler.cs|C# 代码中的为**OrderHandler**对象。|  
 |OrderHandler.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \Rules  
+ 中的文件\<安装目录\>\Rules  
   
 |文件|Description|  
 |----------|-----------------|  
 |DecodeAndValidateOrderRules.xml|业务规则引擎的规则文件。|  
   
- 中的文件\<安装目录 > \SampleMessages  
+ 中的文件\<安装目录\>\SampleMessages  
   
 |文件|Description|  
 |----------|-----------------|  
 |CSR_OrderRequest.xml|示例客户服务订单请求。|  
 |OrderEnvelope.xml|示例订单信封。|  
   
- 中的文件\<安装目录 > \SchemaClasses  
+ 中的文件\<安装目录\>\SchemaClasses  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -300,7 +300,7 @@ ms.lasthandoff: 09/20/2017
 |InternalMessages.cs|定义用于在解决方案的各组件之间进行通信的消息的类的 C# 代码。|  
 |SchemaClasses.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \Schemas  
+ 中的文件\<安装目录\>\Schemas  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -308,7 +308,7 @@ ms.lasthandoff: 09/20/2017
 |OrderPropertySchema.xsd|订单消息的升级属性架构。|  
 |Schemas.btproj|BizTalk 项目文件。|  
   
- 中的文件\<安装目录 > \Scripts  
+ 中的文件\<安装目录\>\Scripts  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -321,7 +321,7 @@ ms.lasthandoff: 09/20/2017
 |regac.bat|要在全局程序集缓存 (GAC) 中注册程序集的批处理文件。|  
 |SouthridgeVideoSSOConfiguration.xml|包含的初始的 SSO 配置值的文件。|  
   
- 中的文件\<安装目录 > \ServiceLevelTracking  
+ 中的文件\<安装目录\>\ServiceLevelTracking  
   
 |文件|Description|  
 |----------|-----------------|  
@@ -331,7 +331,7 @@ ms.lasthandoff: 09/20/2017
 |ServiceLevelTracking.cs|C# 代码以定义活动的抽象基类。|  
 |ServiceLevelTracking.csproj|C# 项目文件。|  
   
- 中的文件\<安装目录 > \Utilities  
+ 中的文件\<安装目录\>\Utilities  
   
 |文件|Description|  
 |----------|-----------------|  

@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd7707ded0951eb1141368a91e7fe8f533e8241a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c742d21dd2f2e1d95f697beea3d5d5dfa0461d2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>步骤 14： 发布作为 Web 服务业务流程
 在此步骤中，你可以使用 BizTalk Web 服务发布向导发布您的业务流程作为 Web 服务。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  上**创建 Web 服务**页上，选择**作为 web 服务的发布 BizTalk 业务流程**，然后单击**下一步**。  
   
-4.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**字段中，浏览到或键入  **\<*驱动器*>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**，单击**BTAHL7 Project.dll**，单击**打开**，然后单击**下一步**.  
+4.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**字段中，浏览到或键入  **\<*驱动器*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**，单击**BTAHL7 Project.dll**，单击**打开**，然后单击**下一步**.  
   
 5.  上**业务流程和端口**页上，确保所有节点已选中，然后单击**下一步**。  
   
@@ -67,4 +67,4 @@ ms.lasthandoff: 09/20/2017
  继续执行[步骤 15： 配置发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息扩充教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

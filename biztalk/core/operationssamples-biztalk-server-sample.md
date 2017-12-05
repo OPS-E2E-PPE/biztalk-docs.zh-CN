@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3e190d06c084a6b1b3c9965856897e0df94daab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e42b17f19791eef9bd3f1b5d7d4554f61f08356
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operationssamples-biztalk-server-sample"></a>OperationsSamples（BizTalk Server 示例）
 OperationsSamples 示例演示如何使用操作对象模型执行操作活动。  
@@ -76,7 +76,7 @@ foreach (BizTalkMessage msg in messages)
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\OperationsOM\OperationsSamples\  
+ \<*示例路径*\>\Admin\OperationsOM\OperationsSamples\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -148,7 +148,7 @@ foreach (BizTalkMessage msg in messages)
   
      `<Samples Path>\Admin\OperationsOM\OperationSamples`  
   
-5.  双击**OperationsOM.sln**项目文件以将其加载到[!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+5.  双击**OperationsOM.sln**要加载到 Visual Studio 中的项目文件。  
   
 6.  按 F5 键运行本示例。  
   
@@ -160,4 +160,4 @@ foreach (BizTalkMessage msg in messages)
  [Microsoft.BizTalk.Operations.BizTalkOperations](http://msdn.microsoft.com/library/microsoft.biztalk.operations.biztalkoperations.aspx)&#124;[Microsoft.BizTalk.Operations.MessageFlow](http://msdn.microsoft.com/library/microsoft.biztalk.operations.messageflow.aspx)&#124;[Microsoft.BizTalk.Operations.SendPortInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.sendportinstance.aspx)&#124;[Microsoft.BizTalk.Operations.RoutingFailureInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.routingfailureinstance.aspx)&#124;[Microsoft.BizTalk.Operations.OrchestrationInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.orchestrationinstance.aspx)&#124;[Microsoft.BizTalk.Operations.MSMQtInstance](http://msdn.microsoft.com/library/microsoft.biztalk.operations.msmqtinstance.aspx)&#124;[Microsoft.BizTalk.Operations.TrackedServiceInstance](http://msdn.microsoft.com/library/Microsoft.BizTalk.Operations.TrackedServiceInstance.aspx)  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-OperationsOM （BizTalk Server 示例文件夹中）](../core/admin-operationsom-biztalk-server-samples-folder.md)
+ [Admin-OperationsOM（BizTalk Server 示例文件夹）](../core/admin-operationsom-biztalk-server-samples-folder.md)

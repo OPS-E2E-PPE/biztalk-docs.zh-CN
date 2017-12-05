@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b65596e59820258df01a5655ea30adafe439674
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9787c5ac1371f6743285a151e5666d12b592a300
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a>如何启用在组中的其他计算机上的通知服务
 在多计算机环境中运行 BAM 时，必须在将运行 BAM 管理实用程序以便部署某一活动的每台计算机上都启用 Notification Services。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在其他组中的计算机，单击**启动**，指向**所有程序**，单击**Microsoft SQL Server 2005**，单击**配置工具**，然后单击**通知服务命令提示符**。  
   
-2.  在命令提示符处，键入： **nscontrol register-名称\<选择在配置的 NS 前缀名称 >-服务器\<ns db sql 服务器 >**。 这样可使 Notification Services 登录到正确的数据库（此信息由 nscontrol 在服务所在计算机的注册表中维护）。  
+2.  在命令提示符处，键入： **nscontrol register-名称\<NS 前缀名称在配置选择\>-服务器\<ns db sql 服务器\>**。 这样可使 Notification Services 登录到正确的数据库（此信息由 nscontrol 在服务所在计算机的注册表中维护）。  
   
 ## <a name="see-also"></a>另请参阅  
  [更改 BAM 运行时设置](../core/changing-bam-runtime-settings.md)   

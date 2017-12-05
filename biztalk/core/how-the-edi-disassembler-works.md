@@ -12,11 +12,11 @@ caps.latest.revision: "43"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66f47db034e0c193d4dab6ee303c13dd8c360661
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 拆装器的工作方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行 EDI 接收管道 (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) 中接收的 EDI 编码交换的大多数处理。 此管道包括用于执行下列处理的 EDI 拆装器管道组件：  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   将整个交换转换为 XML，如果**入站批处理选项**属性设置为两种状态之一**保留交换**值。 此属性可以设置从**本地主机设置**下页上**交换设置**的双向协议选项卡**协议属性**对话框。 接收管道将升级 ReuseEnvelope 属性以将交换标识为保留。  
   
--   生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 提升 BTS 的上下文属性。MessageType，将其设置等于 http://schemas.microsoft.com/EDI/ 中的控件模式\<X12 或 EDIFACT > （例如，对于 997 确认 X12_997_Root） 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
+-   生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 提升 BTS 的上下文属性。MessageType，将其设置等于 http://schemas.microsoft.com/EDI/ 中的控件模式\<X12 或 EDIFACT\> （例如，对于 997 确认 X12_997_Root） 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
   
 -   执行 HIPAA 276/277（仅版本 5010 ）834、835（仅版本 4010）和 837 文档拆分（如果适用）。  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 09/20/2017
 |X12 字符集|X12 交换信封生成**注意：**此设置仅用于验证输入的协议属性的值。 用于运行时处理的 X12 字符集在管道属性中选择。 有关详细信息，请参阅[EDI 字符集](../core/edi-character-sets.md)。|  
   
 ## <a name="using-hipaa-trigger-fields"></a>使用 HIPAA 触发器字段  
- EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，HIPAA 架构附带[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]包含允许 EDI 反汇编程序，创建基于是否存在限定值的唯一 XML 记录的批注 (请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md))。  
+ EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk 服务器随附的 HIPAA 架构包含允许 EDI 反汇编程序，创建基于是否存在限定值的唯一 XML 记录的批注 (请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md))。  
   
  当收到一个 HIPAA 事务集时，如果 EDI 拆装器遇到一个包含触发器字段的段，它将使用触发器信息来生成一个特定于该段和触发器组合的 XML 记录。  
   
@@ -168,4 +168,4 @@ ms.lasthandoff: 09/20/2017
 |N1 * PE\*Fabrikam\*FI\*9999999 ~|`<TS835W1_1000B_Loop>   <N1_PayeeIdentification_TS835W1_1000B>    <N101__EntityIdentifierCode>PE</N101__EntityIdentifierCode>    <N102__PayeeName>Fabrikam</N102__PayeeName>    <N103__IdentificationCodeQualifier>FI</N103__IdentificationCodeQualifier>    <N104__PayeeIdentificationCode>9999999</N104__PayeeIdentificationCode>   </N1_PayeeIdentification_TS835W1_1000B>`|  
   
 ## <a name="see-also"></a>另请参阅  
- [BizTalk Server 接收 EDI 消息的方式](../core/how-biztalk-server-receives-edi-messages.md)
+ [BizTalk Server 如何接收 EDI 消息](../core/how-biztalk-server-receives-edi-messages.md)

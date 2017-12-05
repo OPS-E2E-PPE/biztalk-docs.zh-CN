@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22572f01f1e76dae36cbdcb34a4321c2db1c44c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5813bb4881535290422e2ba01d20d4370f4e604
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sending-a-preserved-batch-interchange"></a>发送保留的批交换
 当 EDI 发送管道处理保留的出站批交换时，会将批交换作为一个整体来处理。 在创建 EDI 交换时，它通常重用现有信封（控制）段，而不会基于协议应用信封。 发生这种情况时**入站批处理选项**属性设置为**保留交换-出错时暂停交换**或**保留交换-时暂停事务集错误**。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 >  使用 XML 发送管道可以发送保留批。 但是，若要执行此操作，您需要更改批架构的命名空间。 有关详细信息，请参阅[与 XML 发送管道发送保留批处理](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)。  
   
 ## <a name="error-processing"></a>错误处理  
- 由于 XML 中存在保留标记，EDI 发送管道将批处理 EDI 交换识别为保留批。 此标记，或者\<X12InterchangeXml > 或\<EdifactInterchangeXml >，按以下方式应用于 XML EDI 接收管道。  
+ 由于 XML 中存在保留标记，EDI 发送管道将批处理 EDI 交换识别为保留批。 此标记，或者\<X12InterchangeXml\>或\<EdifactInterchangeXml\>，按以下方式应用于 XML EDI 接收管道。  
   
  挂起的出错事务集具有以下特殊情况：  
   
@@ -54,4 +54,4 @@ ms.lasthandoff: 09/20/2017
 -   如果组控制段或交换控制段无效，则不会生成 EDI 编码的交换。 将在事件查看器中创建一个日志，指示已拒绝交换。  
   
 ## <a name="see-also"></a>另请参阅  
- [对传出的 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)
+ [对传出 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5da387377f6201b518d3c5fdf37dabb872bcf600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc7ed347bc81a8a00ff7faa826bd48203c47e63
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a>使用 SAP 适配器使用性能计数器
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建性能计数器类别"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"沿安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
@@ -35,23 +35,23 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
   
 -   从适配器到 SAP 系统 （出站） 的调用  
   
-    -   A、\<应用程序服务器主机 >，\<系统编号 >  
+    -   A、\<应用程序服务器主机\>，\<系统编号\>  
   
-    -   B，\<消息服务器主机 >，\<R3NAME >  
+    -   B，\<消息服务器主机\>，\<R3NAME\>  
   
-    -   D、\<目标 >  
+    -   D、\<目标\>  
   
 -   从 SAP 系统的适配器的调用 （入站）  
   
-    -   I，\<网关主机 >，\<网关服务器 >  
+    -   I，\<网关主机\>，\<网关服务器\>  
   
-    -   ID，\<目标 >  
+    -   ID，\<目标\>  
   
  可能的操作 ID:  
   
--   \<RFC 名称 > （对于 RFC 调用）  
+-   \<RFC 名称\>（对于 RFC 调用）  
   
--   T，\<RFC 名称 > （对于 tRFC 调用）  
+-   T，\<RFC 名称\>（对于 tRFC 调用）  
   
  仅在该适配器进行首次调用 SAP 系统后，将初始化性能计数器。 此外， [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx)的性能计数器的属性设置为进程，这意味着性能计数器停止存在就会立即创建计数器在程序终止。
   

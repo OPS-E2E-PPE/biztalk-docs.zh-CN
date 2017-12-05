@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25d24eda11d9547b545445239e783ac3bfee4057
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa55a240669ab9369dd7a1862d3fda055f577edd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-deploying-an-application"></a>部署应用程序的最佳做法
 本主题列出应遵循部署 BizTalk 应用程序的最佳做法。  
@@ -33,10 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="creating-a-biztalk-application"></a>创建 BizTalk 应用程序  
  **编写 BizTalk 应用程序和.msi 文件创建的脚本**  
   
--   BtsTask.exe 可用来编写 BizTalk 应用程序创建的脚本。 如果应用程序的创建已编写脚本，然后包可以自动生成的生成服务器上使用一个自动化的过程。 有关脚本创建的应用程序的详细信息，请参阅[部署和管理 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154210)(http://go.microsoft.com/fwlink/?LinkID = 154210) 和[BizTalk Server 2006： 了解 BizTalk Server 应用程序部署](http://go.microsoft.com/fwlink/?LinkID=101599)(http://go.microsoft.com/fwlink/?LinkID = 101599) 白皮书。  
-  
-    > [!NOTE]  
-    >  白皮书也适用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+-   BtsTask.exe 可用来编写 BizTalk 应用程序创建的脚本。 如果应用程序的创建已编写脚本，然后包可以自动生成的生成服务器上使用一个自动化的过程。 有关脚本创建的应用程序的详细信息，请参阅[部署和管理 BizTalk 应用程序](../core/deploying-and-managing-biztalk-applications.md)。
   
 ## <a name="deploying-a-biztalk-assembly"></a>部署 BizTalk 程序集  
  **永远不会部署在生产计算机上的从 Visual Studio 程序集**  
@@ -54,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 -   如果某些项目将由两个或多个应用程序共享，则应将这些共享项目部署在一个单独的应用程序中。 例如，如果两个应用程序共享一个架构，应将该架构部署在一个单独的应用程序中。 我们建议这是因为 BizTalk 组中的只有一个项目可以具有单个本地唯一标识符 (LUID)。 LUID 组成的项目名称和可选的其他特性。 如果你在一个应用程序，包括项目，然后创建从另一个应用程序对它的引用，当你停止包含项目的应用程序引用的应用程序可能未正常工作。  
   
-     此最佳实践适用于所有项目类型，但文件除外（比如 Readme 文件和脚本，它们是以文件类型的项目添加到应用程序中的）。 这是因为可以在 BizTalk 组中部署具有相同名称的多个文件项目。 因此，您可以在两个或多个应用程序中使用具有相同名称的文件。 在这种情况下，停止一个应用程序不会影响其他应用程序。 有关添加文件项目的详细信息，请参阅[如何将文件添加到应用程序](http://go.microsoft.com/fwlink/?LinkId=154997)(http://go.microsoft.com/fwlink/?LinkId=154997)。  
+     此最佳实践适用于所有项目类型，但文件除外（比如 Readme 文件和脚本，它们是以文件类型的项目添加到应用程序中的）。 这是因为可以在 BizTalk 组中部署具有相同名称的多个文件项目。 因此，您可以在两个或多个应用程序中使用具有相同名称的文件。 在这种情况下，停止一个应用程序不会影响其他应用程序。 有关添加文件项目的详细信息，请参阅[如何将文件添加到应用程序](../core/how-to-add-a-file-to-an-application.md)。  
   
  **部署单独的应用程序中的共享的 Web 站点**  
   
@@ -75,7 +72,7 @@ ms.lasthandoff: 09/20/2017
   
 -   部署多个较小的.msi 文件，而不是一个大型的.msi 文件。  
   
-    -   增加 3000 秒与 Microsoft.BizTalk.ApplicationDeployment.Group 和中的组件服务管理界面的 Microsoft.BizTalk.Deployment.DeployerComponent 组件相关联的默认事务的超时。 这些组件分别属于 Microsoft.BizTalk.ApplicationDeployment.Engine 和 Microsoft.Biztalk.Deployment COM + 应用程序。 有关详细信息，请参阅 Microsoft 知识库文章 287499，[如何更改事务超时值 MTS 或 COM +](http://go.microsoft.com/fwlink/?LinkId=109589) (http://go.microsoft.com/fwlink/?LinkId=109589)。  
+    -   增加 3000 秒与 Microsoft.BizTalk.ApplicationDeployment.Group 和中的组件服务管理界面的 Microsoft.BizTalk.Deployment.DeployerComponent 组件相关联的默认事务的超时。 这些组件分别属于 Microsoft.BizTalk.ApplicationDeployment.Engine 和 Microsoft.Biztalk.Deployment COM + 应用程序。 有关详细信息，请参阅 Microsoft 知识库文章 287499，[如何更改事务超时值 MTS 或 COM +](https://support.microsoft.com/help/287499/how-to-change-the-transaction-time-out-value-for-mts-or-com)。  
   
  **防止从被覆盖的绑定**  
   
@@ -83,7 +80,7 @@ ms.lasthandoff: 09/20/2017
   
  **确保.msi 文件是安全的**  
   
--   .Msi 文件可能包含敏感数据。 请确保采取措施来帮助确保该文件是安全的。 有关.msi 文件安全性的详细信息，请参阅[安全和 Windows Installer](http://go.microsoft.com/fwlink/?LinkId=154998) (http://go.microsoft.com/fwlink/?LinkId=154998)。  
+-   .Msi 文件可能包含敏感数据。 请确保采取措施来帮助确保该文件是安全的。 有关.msi 文件安全性的详细信息，请参阅[安全和 Windows Installer](../core/security-and-windows-installer.md)。  
   
  **确保绑定文件是安全的**  
   
@@ -96,12 +93,12 @@ ms.lasthandoff: 09/20/2017
 ## <a name="importing-a-biztalk-application"></a>导入 BizTalk 应用程序  
  **.Msi 文件导入的脚本**  
   
--   BtsTask.exe 可以用于脚本导入现有 BizTalk.msi 文件。 有关脚本.msi 文件导入的详细信息，请参阅[部署和管理 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154210)(http://go.microsoft.com/fwlink/?LinkID = 154210) 和[BizTalk Server 2006： 了解 BizTalk Server 应用程序部署](http://go.microsoft.com/fwlink/?LinkID=101599)(http://go.microsoft.com/fwlink/?LinkID = 101599) 白皮书。  
+-   BtsTask.exe 可以用于脚本导入现有 BizTalk.msi 文件。 有关脚本.msi 文件导入的详细信息，请参阅[部署和管理 BizTalk 应用程序](../core/deploying-and-managing-biztalk-applications.md)。 
   
     > [!NOTE]  
-    >  白皮书也适用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+    >  白皮书也适用于 BizTalk Server。  
   
--   你可以添加脚本以预处理或后续处理脚本运行。 但是，你将需要在你的脚本来检查环境变量，以确定脚本执行中 （导入、 安装或卸载） 的上下文中包括逻辑并进行相应处理。 有关使用前期和后期处理脚本的详细信息，请参阅[使用自定义应用程序部署到的前期和后期处理脚本](http://go.microsoft.com/fwlink/?LinkId=154995)(http://go.microsoft.com/fwlink/?LinkId=154995)。  
+-   你可以添加脚本以预处理或后续处理脚本运行。 但是，你将需要在你的脚本来检查环境变量，以确定脚本执行中 （导入、 安装或卸载） 的上下文中包括逻辑并进行相应处理。 有关使用前期和后期处理脚本的详细信息，请参阅[使用自定义应用程序部署到的前期和后期处理脚本](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)。 
   
  **验证引用的项目存在**  
   
@@ -117,4 +114,4 @@ ms.lasthandoff: 09/20/2017
   
  **如果导入操作超时时，拆分应用程序置于其他.msi 文件**  
   
--   导入操作将超时，如果它超过 3,600 秒中持续时间。 如果你尝试导入.msi 文件，并且在操作超时时，你应将应用程序分成多个.msi 文件的内容划分通过重新导出应用程序并选择要导出项目的子集。 有关导出到.msi 文件的应用程序的详细信息，请参阅[how to Export BizTalk 应用程序如何](http://go.microsoft.com/fwlink/?LinkID=154848)(http://go.microsoft.com/fwlink/?LinkID=154848)。
+-   导入操作将超时，如果它超过 3,600 秒中持续时间。 如果你尝试导入.msi 文件，并且在操作超时时，你应将应用程序分成多个.msi 文件的内容划分通过重新导出应用程序并选择要导出项目的子集。 有关导出到.msi 文件的应用程序的详细信息，请参阅[导出 BizTalk 应用程序](../core/how-to-export-a-biztalk-application.md)。

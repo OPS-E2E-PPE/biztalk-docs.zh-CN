@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6649016dbfc225c4c2f557c73ff37dfc010a1588
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2e1c9b95c84d82dd1d7e2538138bcb9f89b6b8a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="party-resolution-pipeline-component"></a>参与方解析管道组件
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
  如果消息已签名，则对入站消息的签名进行验证所用的证书指纹将再用于在配置存储库中查找与该消息关联的参与方。 如果找到参与方，则会将该参与方的 SourcePartyID 作为该消息的创建者置于消息上下文中。  
   
- 若要启用参与方解析管道组件以验证 Windows 用户，必须向参与方添加“WindowsUser”别名。 在名称和限定符字段中键入"WindowsUser"并将值设置为用户名称的格式\<域 \ 用户名 > (例如 SOMEDOMAIN\someuser)。 在独立方案中，用于配置参与方的 WindowsUser 值应与接收适配器设置的值相匹配。  
+ 若要启用参与方解析管道组件以验证 Windows 用户，必须向参与方添加“WindowsUser”别名。 在名称和限定符字段中键入"WindowsUser"并将值设置为用户名称的格式\<域 \ 用户名称\>(例如 SOMEDOMAIN\someuser)。 在独立方案中，用于配置参与方的 WindowsUser 值应与接收适配器设置的值相匹配。  
   
  如果消息到达时这两个标记的属性的参与方解析组件，参与方解析组件首先尝试解析由证书的参与方 (假设**解决方通过证书**属性是设置为**True**)。 如果方得以解决后，为该方 SourcePartyID 放在消息的上下文中作为消息的 OriginatorPID 如果运行管道的主机进程标记为**受信任的身份验证**由管道。 如果无法使用证书完成参与方解析，则该消息的 OriginatorPID 值将标记为“s-1-5-7”（匿名用户的 SID）。 有关 OriginatorPID 属性的详细信息，请参阅[如何安全管道](../core/how-to-secure-pipelines.md)。  
 
@@ -48,5 +48,5 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
 -  **消息上下文属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
 -  [管道组件](../core/pipeline-components.md)   
--  [自定义参与方解析 （BizTalk Server 示例）](../core/custom-party-resolution-biztalk-server-sample.md)   
--  [进程之间的消息的身份验证](../core/authentication-of-messages-between-processes.md)
+-  [自定义参与方解析（BizTalk Server 示例）](../core/custom-party-resolution-biztalk-server-sample.md)   
+-  [进程间的消息验证](../core/authentication-of-messages-between-processes.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d87e814fd43545d18db0d6e4fd0c585279eb5261
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa252b520f985667820861403a46d39c8527ea07
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-happens-when-artifacts-are-imported"></a>导入项目时发生的情况
 本主题介绍导入项目时发生的情况。 可以通过本主题介绍的三种方式导入项目：  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
  导入应用程序后，您可以使用管理控制台或 BTSTask 在应用程序中将多个项目作为单个实体一起进行查看、管理和部署，也可以对项目分别进行查看、管理和部署。 有关详细信息，请参阅[应用程序部署和管理工具](../core/application-deployment-and-management-tools.md)。  
   
 ## <a name="importing-a-policy"></a>导入策略  
- 从 .xml 文件导入策略时，该策略被添加到规则引擎数据库。 与您导入 BizTalk .msi 文件内的策略不同的是，该策略不与 BizTalk 管理数据库中的任何应用程序相关联。 策略中的策略节点显示\<所有项目 > 在 BizTalk Server 管理控制台中的文件夹。 导入策略后，您可以发布它，使其对组中的应用程序可用。 有关详细信息，请参阅[管理策略](../core/managing-policies.md)。  
+ 从 .xml 文件导入策略时，该策略被添加到规则引擎数据库。 与您导入 BizTalk .msi 文件内的策略不同的是，该策略不与 BizTalk 管理数据库中的任何应用程序相关联。 策略中的策略节点显示\<所有项目\>BizTalk Server 管理控制台中的文件夹。 导入策略后，您可以发布它，使其对组中的应用程序可用。 有关详细信息，请参阅[管理策略](../core/managing-policies.md)。  
   
 ## <a name="importing-a-binding-file"></a>导入绑定文件  
  将绑定文件导入 BizTalk 组时，在该组中当前存在的与所导入文件中的绑定同名的任何绑定被所导入文件中的绑定覆盖，并应用其配置。  

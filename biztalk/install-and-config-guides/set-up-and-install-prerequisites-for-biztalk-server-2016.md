@@ -5,7 +5,7 @@ author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
 ms.custom: 
-ms.date: 08/15/2017
+ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,16 +13,16 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: "11"
 ms.author: mandia
-ms.openlocfilehash: bee25a841d7f434fd5366f483b0b5544462d29fd
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>设置和安装 BizTalk Server 2016 的必备组件
 设置服务器，然后安装和配置软件必备组件。
 
-## <a name="join-the-local-administrators-group"></a>加入本地管理员组
+## <a name="join-the-administrators-group"></a>加入管理员组
 若要安装并配置 BizTalk Server，在本地计算机上使用管理员帐户登录到服务器。 向本地管理员组添加任何管理 BizTalk Server 的用户帐户：
 
 1.  在开始菜单中，打开“计算机管理”。
@@ -33,8 +33,8 @@ ms.lasthandoff: 09/28/2017
 2.  展开“本地用户和组”，然后选择“组”。
 3.  右键单击“管理员”组，然后选择“添加到组”。 **添加**帐户，然后选择“确定”以保存更改。 
 
-## <a name="change-the-computer-name-to-less-than-15-characters-optional"></a>将计算机名称长度更改为少于 15 个字符（可选）
-如果您的计算机名称的长度超过 15 个字符，BizTalk Server 配置将失败。 更改计算机名称：
+## <a name="change-the-computer-name-optional"></a>更改计算机名称 （可选）
+如果您的计算机名称的长度超过 15 个字符，BizTalk Server 配置将失败。 若要将计算机名称更改为少于 15 个字符：
 
 1.  在“服务器管理器” > “仪表板”中，选择“本地服务器”。 
 2.  在“属性”中，选择“计算机名称”属性以对其进行更改。
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/28/2017
 
 有关可能需要的其他设置，请参阅 [MSDTC 疑难解答](../core/troubleshooting-problems-with-msdtc.md)。
 
-## <a name="configure-the-application-event-log-optional"></a>配置应用程序事件日志 （可选）
+## <a name="configure-application-event-log-optional"></a>配置应用程序事件日志 （可选）
 
 BizTalk Server 安装程序会将事件记录保留在应用程序事件日志中。 日志中所需的空间量可能会超出其限制，具体取决于已安装的 BizTalk Server 功能。 如果在应用程序事件日志在安装期间出现空间不足，安装将失败。 更改“应用程序事件日志”设置可防止此故障。
 
@@ -79,7 +79,7 @@ BizTalk Server 安装程序会将事件记录保留在应用程序事件日志�
 
 4. 选择“确定”。
 
-## <a name="edge-cant-be-opened-using-the-built-in-administrator-account-optional"></a>不能使用内置管理员帐户 （可选） 打开边缘
+## <a name="edge-cant-be-opened-optional"></a>无法打开边缘 （可选）
 
 使用 Edge 时，会显示以下消息：  
 `Microsoft Edge can't be opened using the Built-in Administrator account. Sign in with a different account and try again.`
@@ -98,7 +98,7 @@ BizTalk Server 安装程序会将事件记录保留在应用程序事件日志�
 1. 在“开始”菜单上，打开“Windows 更新”，然后检查更新。 还可以打开“设置”，然后选择“更新和安全”。
 2. 安装更新之后，你可能需要重新启动计算机。
 
-## <a name="enable-internet-information-services-iis"></a>启用 Internet 信息服务 (IIS)
+## <a name="enable-iis"></a>启用 IIS
 BizTalk Server 的下列功能需要 IIS：
 
 - HTTP 适配器
@@ -140,7 +140,7 @@ IIS 是作为“角色”或“功能”随附于操作系统，具体取决于 
 **另请参阅**：在 [Windows 8 或 Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012) 上安装 IIS。
 
 
-## <a name="running-the-bam-portal-in-a-64-bit-environment-optional"></a>在 64 位环境下运行 BAM 门户（可选）
+## <a name="run-64-bit-bam-portal-optional"></a>运行 64 位 BAM 门户 （可选）
 如果不使用 BAM 门户，则可以跳过此部分。 
 
 在 32 位模式下运行 BAM 门户。 如果在 64 位环境中使用 Internet 信息服务 (IIS)，然后设置要在 32 位模式下运行的应用程序池。 
@@ -167,7 +167,7 @@ Windows Identity Foundation 作为一项**功能**包括在操作系统中。
 2. 选择“Windows Identity Foundation 3.5”，然后继续进行安装。 
 3. 如果系统提示，则重启计算机。
 
-## <a name="install-and-configure-smtp-server-optional"></a>安装和配置 SMTP 服务器（可选）
+## <a name="install--configure-smtp-server-optional"></a>安装并配置 SMTP 服务器 （可选）
 如果你使用 BAM 警报，BizTalk 服务器要求 SMTP 服务器。 如果不使用 BAM 警报，则可跳过本部分。
 
 SQL Server 数据库邮件使用 SMTP 服务器发送 BAM 警报。 SMTP 服务器可以本地安装在 BizTalk Server 上，也可以安装在其他已安装 IIS 的服务器上。 SMTP 服务器在客户端操作系统上不可用，例如 Windows 8.1 或 Windows 10。 
@@ -178,7 +178,7 @@ SMTP 服务器作为一项**功能**包括在服务器操作系统中。
 2. 选择“SMTP 服务器”，然后继续进行安装。 
 3. 如果系统提示，则重启计算机。
 
-## <a name="install-microsoft-office-excel-2016-or-excel-2013-optional"></a>安装 Microsoft Office Excel 2016 或 Excel 2013（可选）
+## <a name="install-excel-2016-or-2013-optional"></a>安装 Excel 2016 或 2013 （可选）
 如果你使用业务活动监视 (BAM)，BizTalk Server 要求 Excel。 如果不使用 BAM，则可跳过本部分。
 
 可以使用 BAM Office Excel 工作簿来定义要监视的业务流程。 还可以使用 BAM Excel 工作簿定义业务用户查看 BAM 所收集的数据的方式。
@@ -301,7 +301,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 
 ## <a name="disable-shared-memory"></a>禁用共享的内存
 
-1. 打开“SQL Server 配置管理器”。
+1. 打开 **SQL Server 配置管理器**。
 2. 在 SQL Server 配置管理器中，展开**SQL Server 网络配置**，然后选择**MSSQLSERVER 的协议**。
 3. 右键单击“共享内存”，然后选择“禁用”。
 4. 选择**SQL Server Services**，右键单击 SQL **Server (MSSQLSERVER)**，然后选择**停止**。 服务已停止后，右键单击**SQL Server (MSSQLSERVER)**，然后选择**启动**。
@@ -317,7 +317,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 
 下载并安装[SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403)。
 
-## <a name="configure-sql-server-database-mail-optional"></a>配置 SQL Server Database Mail（可选）
+## <a name="configure-sql-database-mail-optional"></a>配置 SQL 数据库邮件 （可选）
 如果你使用 BAM 警报，BizTalk 服务器需要 SQL Server 数据库邮件。 如果未使用 BAM 警报，则跳过此部分。 
 
 **另请参阅**：[Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail) 的详细信息。

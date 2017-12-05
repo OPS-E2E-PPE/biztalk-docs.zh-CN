@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82e10a6800786ae502a6508287581a6a4f827b39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 94cb4b8cfdb0315b55aa88ddd385396ff967b8f6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a>与 Oracle 数据库适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]，你的代码充当 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。  
@@ -45,11 +45,11 @@ ms.lasthandoff: 09/20/2017
   
  如任何 WCF 绑定，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用工厂模式提供到应用程序代码的通道。 你使用**Microsoft.Adapters.OracleDBBinding**对象创建的实例：  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >**提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>** 提供**IRequestChannel**通道可用于调用在适配器上的请求-响应操作。  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >**提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>** 提供**IOutputChannel**通道可用于调用在适配器上的单向操作。  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >**提供**IInputChannel**通道可用于从适配器接收入站的消息 （例如 POLLINGSTMT 操作）。  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>** 提供**IInputChannel**通道可用于从适配器接收入站的消息 （例如 POLLINGSTMT 操作）.  
   
 ### <a name="creating-messages-for-the-oracle-database-adapter-in-the-wcf-channel-model"></a>正在创建的 WCF 通道模型中的 Oracle 数据库适配器消息  
  在 WCF 中**System.ServiceModel.Channels.Message**类提供内存中的 SOAP 消息的表示形式。 你创建**消息**实例通过调用静态**Message.Create**方法。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 -   消息正文包含操作的参数数据。 消息正文组成对应于预期的消息架构的格式正确的 XML[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]请求的操作。 以下的消息正文指定 SCOTT 上的选择操作。EMP 表 (选择 * 从 EMP)。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP">  
         <COLUMN_NAMES>*</COLUMN_NAMES>  
     </Select>  

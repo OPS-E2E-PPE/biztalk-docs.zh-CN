@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ab7f1c75baf5a974fdbc10deb1651fcce1c7d51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab603f12e1f2c431f83af00dc79b57a9e416c251
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario"></a>步骤 1： 配置的 SWIFT 适配器交互实时方案
 下列步骤说明如何配置交互适配器发送处理程序。 在开始该过程之前，必须完成中列出的要求[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数： **SagMessagePartner**\<交互的客户端消息合作伙伴创建在压降 >**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数： **SagMessagePartner**\<交互的客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是 MessagePartner 你在压降中配置。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**LogMessageBody**|从下拉列表中选择`FALSE`。 **注意：**如果设置为`TRUE`，它将保留跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择`TRUE`。 这样将捕获和 BAM 门户中跟踪消息事件。|  
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/20/2017
  [步骤 1： 配置的 SWIFT 适配器交互实时方案](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
  [步骤 2： 将 SWIFTNet 配置添加到为 Paramfile 交互实时方案](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-real-time-scenario.md)   
  [步骤 3： 创建发送和接收端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [步骤 4： 测试交互实时的端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+ [步骤 4：测试 InterAct 实时端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

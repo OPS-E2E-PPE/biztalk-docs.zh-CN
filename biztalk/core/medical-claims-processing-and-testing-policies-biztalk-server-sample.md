@@ -15,11 +15,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33c8921e037b9f9628c0e0ee97a915f62ab634ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70cba6055c51371ddaaf99775bd5e7a60e7f3929
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="medical-claims-processing-and-testing-policies-biztalk-server-sample"></a>医疗声明处理和测试策略 （BizTalk Server 示例）
 “医疗索赔处理和测试保单”示例演示如何创建包含多个规则的规则集，这些规则检查从数据库表和入站文档推断得出的事实，并使用基于 .NET 的对象记录索赔处理结果。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 6.  否则，批准声明。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Business Rules\Medical 声明处理和测试 Policies\  
+ \<*示例路径*\>\Business Rules\Medical 声明处理和测试 Policies\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -67,11 +67,11 @@ ms.lasthandoff: 09/20/2017
 1.  确保您的计算机上具有 Northwind 数据库。  
   
     > [!IMPORTANT]
-    >  为了运行本示例，您必须拥有名为 Northwind 的数据库。 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] 和 [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] 不提供 Northwind 示例数据库。 若要创建 Northwind 数据库，下载安装文件从[http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020)，并按照说明操作。  
+    >  若要运行此示例，你必须有 Northwind SQL Server 示例数据库。 [下载](https://www.microsoft.com/download/details.aspx?id=23654)，并安装。 
   
 2.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Business Rules\Medical 声明处理和测试 Policies\  
+     \<*示例路径*\>\Business Rules\Medical 声明处理和测试 Policies\  
   
 3.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Business Rules\Medical 声明处理和测试 Policies\RulesForMedicalClaims\bin\Debug\  
+     \<*示例路径*\>\Business Rules\Medical 声明处理和测试 Policies\RulesForMedicalClaims\bin\Debug\  
   
 2.  在命令行上运行文件 RulesForMedicalClaims.exe。  
   
@@ -248,4 +248,4 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 ## <a name="see-also"></a>另请参阅  
- [业务规则 （BizTalk Server 示例文件夹中）](../core/business-rules-biztalk-server-samples-folder.md)
+ [业务规则（BizTalk Server 示例文件夹）](../core/business-rules-biztalk-server-samples-folder.md)

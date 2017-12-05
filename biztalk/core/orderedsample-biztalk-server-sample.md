@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf7b0de69005957a333e0c4f884e748e6ab5bbe9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b9e93c7bb9cb59088e465dc53dd992ffd5f1c11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample（BizTalk Server 示例）
 OrderedSample 示例演示如何使用业务流程以往返过程方式接收和发送一系列有序消息。  
@@ -36,7 +36,7 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
  业务流程可接收消息批和单个消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
+ *\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
   
  下表显示了本示例中的文件及其用途说明：  
   

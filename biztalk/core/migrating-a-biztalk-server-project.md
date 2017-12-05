@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5ba2da42c6cbfad2b0c053aba296d34e38211fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2752203b0498a6cd5a4a8b6df6bc558c444e355
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="migrating-a-biztalk-server-project"></a>迁移 BizTalk Server 项目
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]为开发项目[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可迁移到较新的环境中，通过使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]转换。 有关支持的迁移版本的列表，请参阅[支持升级路径和安装指南](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="project-conversion-requires-the-project-and-solution-file"></a>项目转换需要项目和解决方案文件  
  如果您尝试转换 [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] 项目但没有解决方案文件，则您将收到以下错误：  
   
- **转换项目文件时出错。子元素\<BIZTALK > 元素的\<VisualStudioProject > 无效。**  
+ **转换项目文件时出错。子元素\<BIZTALK\>元素的\<VisualStudioProject\>无效。**  
   
  项目转换需要 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中的解决方案文件 (.sln)。 如果该解决方案文件不可用，则您必须使用 [!INCLUDE[btsVStudioNet2005](../includes/btsvstudionet2005-md.md)] 创建一个解决方案文件，并将 [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] 项目添加到该解决方案。 然后运行 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 转换向导。  
   

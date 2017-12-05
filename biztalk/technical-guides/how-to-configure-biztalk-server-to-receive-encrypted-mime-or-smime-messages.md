@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e996ea258b8f3ab1c7df2d30ed12aa0d0150b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bd9778d6fb37058cfb70d476590b5d32fe8936e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-encrypted-mime-or-smime-messages"></a>如何配置 BizTalk Server 接收加密的 MIME 或 SMIME 消息
 本主题介绍如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用证书来接收加密的 MIME/SMIME 消息。 下面的过程也适用于通过 AS2 传输配置加密的消息的接收。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 1.  创建管道用于接收加密的消息，如下所示：  
   
     > [!NOTE]
-    >  此步骤时为接收加密消息，因为 AS2Receive 和 AS2EdiReceive 管道，配置 AS2 传输中包括不需要[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]提供此函数。  
+    >  配置 AS2 传输收到加密的消息因为 BizTalk Server 中包含 AS2Receive 和 AS2EdiReceive 管道提供此函数时，不需要此步骤。  
   
     > [!NOTE]
     >  MIME/SMIME 解码器管道组件既执行解密，又执行数字签名验证（在配置为执行这两个功能时）。 因此，如果将 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置为接收加密和签名消息，则可以使用同一接收管道。 换言之，您不必为解密和数字签名验证创建不同的管道。  

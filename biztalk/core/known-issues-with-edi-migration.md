@@ -12,14 +12,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b642c56151750232be3d17aa3f3cb3b8c858474c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bd62c1c965e814929537a62dc5d49be7e017ae3b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-migration"></a>EDI 迁移的已知问题
-本主题介绍从 [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 中的 EDI/HIPAA 适配器模型迁移到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的已知问题。  
+本主题介绍中的 EDI/HIPAA 适配器模型从迁移的已知的问题[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]给 BizTalk Server。  
   
 ## <a name="credential-information-not-migrated-for-a-file-send-port"></a>不迁移 FILE 发送端口的凭据信息  
  使用 FILE 传输类型迁移发送端口时，如果主机没有访问网络共享位置的权限，则无法迁移用于访问文件夹的凭据。 迁移后，你将需要手动启用凭据，并输入用户名和密码，才能使用在**身份验证**页**文件传输属性**对话框。  

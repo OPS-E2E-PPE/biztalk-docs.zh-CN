@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09a1b9e0514a2c83d927a956bb890c1a89864a07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb8b43fc846835ab8f24f664d4af54ab99b88576
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-duration-on-an-rta-window"></a>如何设置 RTA 时段的持续时间
 管理员使用**集 rtawindow**命令可设置为指定的实时聚合 (RTA) 持续时间。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
   
-3.  类型**bm 集 rtawindow 的视图：\<视图名称 >-活动：\<活动名称 >-名称：\<RTA 名称 >-TimeLength:\<整数 >-时间单位： 天 &#124;小时 &#124;分钟**。  
+3.  类型**bm 集 rtawindow 的视图：\<视图名称\>的活动：\<活动名称\>-名称：\<RTA 名称\>-TimeLength:\<整数\>-时间单位： 天 &#124;小时 &#124;分钟**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

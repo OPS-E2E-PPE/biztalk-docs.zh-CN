@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 220c115edac37b8f7268719eefb2095fa7594243
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8920a8b74da14eeb8186d153444ced7c54d57724
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-swift-disassembler-or-assembler"></a>配置 SWIFT 反汇编程序或汇编程序
 SWIFT 反汇编程序或 SWIFT 汇编程序添加自定义管道后，你必须将其配置为提供 （如启用/禁用动态消息类型发现、 入站 debatching、 XML 验证，在特定方案所需的功能业务规则引擎 (BRE) 验证和等等）。 必须在开发期间编译和部署自定义调用它们的管道之前配置的 SWIFT 反汇编程序和汇编程序。 若要配置 SWIFT 反汇编程序汇编程序，在管道设计器中选择的组件和编辑属性窗口中的配置属性。  
@@ -33,7 +33,7 @@ SWIFT 反汇编程序或 SWIFT 汇编程序添加自定义管道后，你必须�
 > [!NOTE]
 >  配置、 编译和部署自定义管道后，配置中的更改需要重新编译和重新部署自定义的管道。  
   
- 配置、 编译和部署自定义管道处理 SWIFT 消息后，你可以设置最多接收位置的使用自定义 SWIFT 接收管道，和发送端口使用自定义 SWIFT 发送管道。 接收端口的有关部署管道和配置的详细信息，接收位置，并发送端口，请参阅[模块 4： 创建 XML 接收和平面文件发送端口](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)，[模块 5： 创建接收平面文件和XML 发送端口](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)，和[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 配置、 编译和部署自定义管道处理 SWIFT 消息后，你可以设置最多接收位置的使用自定义 SWIFT 接收管道，和发送端口使用自定义 SWIFT 发送管道。 接收端口的有关部署管道和配置的详细信息，接收位置，并发送端口，请参阅[模块 4： 创建 XML 接收和平面文件发送端口](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)，[模块 5： 创建接收平面文件和XML 发送端口](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)，和 BizTalk Server 帮助。  
   
  本部分包含：  
   

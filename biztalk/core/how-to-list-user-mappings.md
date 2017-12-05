@@ -15,36 +15,36 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f6041b40c2b6a3fa468462478754079d41881bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04f988e9f63cccf27c42a33727d86452d34915aa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-user-mappings"></a>如何列出用户映射
 使用此命令可以列出指定用户的所有现有映射。  
   
  只有 SSO 管理员、应用程序管理员、SSO 关联管理员或用户才能执行此任务。  
   
- 启用的用户映射显示为 (E) \<*域*>\\*\<用户名 >*，而禁用用户映射显示为 (D) \<*域*>\\*\<用户名 >*。  
+ 启用的用户映射显示为 (E) \<*域*\>\\*\<用户名\>*，而禁用用户映射显示为 (D) \<*域*\>\\*\<用户名\>*。  
   
 ### <a name="to-list-user-mappings-using-the-administration-utility"></a>使用管理实用工具列出用户映射  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
 3.  执行以下操作之一：  
   
-    -   类型**ssomanage-listmappings *\<域 >\\< 用户名\>*** 若要列出给定的用户有他/她所属关联应用程序中的所有映射指向的位置*\<域 >*是用户帐户的 Microsoft Windows 域和*\<用户名 >*是你要列出的 Windows 用户名称用户映射。 如果用户是关联管理员或 SSO 管理员，此命令将列出该用户在所有关联应用程序中的所有映射。  
+    -   类型**ssomanage-listmappings *\<域\>\\< 用户名\>*** 若要列出给定的用户有关联的应用程序中的所有映射他/她所属，where *\<域\>*是用户帐户的 Microsoft Windows 域和*\<用户名\>*是你想要列出的用户映射的 Windows 用户名。 如果用户是关联管理员或 SSO 管理员，此命令将列出该用户在所有关联应用程序中的所有映射。  
   
          或  
   
-    -   类型**ssomanage-listmappings *\<应用程序名称 >*** 若要列出给定应用程序的所有用户映射。  
+    -   类型**ssomanage-listmappings *\<应用程序名称\>*** 若要列出给定应用程序的所有用户映射。  
   
          或  
   
-    -   如果你是应用程序管理员，请键入**ssomanage-listmappings *\<域 >\\< 用户名\>* *\<应用程序名称 >*** 列出所有映射给定的用户具有在您是管理员关联应用程序。  
+    -   如果你是应用程序管理员，请键入**ssomanage-listmappings *\<域\>\\< 用户名\>*  *\<应用程序名称\>*** 列出所有映射给定的用户具有在您是管理员关联应用程序。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssoclient – listmappings**若要列出所有必须的映射。  
   

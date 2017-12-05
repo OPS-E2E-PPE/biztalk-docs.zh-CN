@@ -17,14 +17,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf40cf5a81188dae0174199f16229daf61115796
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cce166c5d05b8ce48f513420e247e8f35ca1d509
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-pipeline-components"></a>将 WCF 消息中的 SOAP 标头用于管道组件
-可以用管道组件中的 WCF 适配器设置自定义 SOAP 标头。 你使用的上下文的属性名称组合**OutboundCustomHeaders**，和的目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**。 当你使用**OutboundCustomHeaders**属性，该属性必须具有\<**标头**> 元素作为根元素。 所有自定义 SOAP 标头必须放置在\<**标头**> 元素。 如果自定义 SOAP 标头的值为空字符串，则必须分配\<**标头**>\</**标头**> 或\< **标头**/ > 到**OutboundCustomHeaders**属性。 有关如何使用 WCF 适配器使用 SOAP 标头的详细信息，请参阅 SDK 示例中，使用自定义 SOAP 标头与 WCF 适配器中，从[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)。  
+可以用管道组件中的 WCF 适配器设置自定义 SOAP 标头。 你使用的上下文的属性名称组合**OutboundCustomHeaders**，和的目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**。 当你使用**OutboundCustomHeaders**属性，该属性必须具有\<**标头**\>作为根元素的元素。 所有自定义 SOAP 标头必须放置在\<**标头**\>元素。 如果自定义 SOAP 标头的值为空字符串，则必须分配\<**标头**\>\</**标头**\>或\<**标头**/ \>到**OutboundCustomHeaders**属性。 有关如何使用 WCF 适配器使用 SOAP 标头的详细信息，请参阅 SDK 示例中，使用自定义 SOAP 标头与 WCF 适配器中，从[http://go.microsoft.com/fwlink/?LinkId=79960](http://go.microsoft.com/fwlink/?LinkId=79960)。  
   
  下面的代码示例在名为的属性的发送管道组件设置自定义 SOAP 标头**OutboundCustomHeaders**:  
   
@@ -56,4 +56,4 @@ return inmsg;
  [在与业务流程的 WCF 消息中使用 SOAP 标头](../core/using-soap-headers-in-wcf-messages-with-orchestrations.md)   
  [与使用的 WCF 服务的 SOAP 标头](../core/soap-headers-with-consumed-wcf-services.md)   
  [WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)   
- [与已发布的 WCF 服务的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)
+ [SOAP 标头与已发布的 WCF 服务](../core/soap-headers-with-published-wcf-services.md)

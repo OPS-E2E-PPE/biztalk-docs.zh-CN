@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a446f5527bf06164d14079c0bb40f2f41942f38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4c2e029e9599143c52577771a313d9810ca6f12
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="add-a-host-instance"></a>添加一个主机实例
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
   
  如果您尝试在不可用的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上创建 BizTalk 主机的实例，将显示一个对话框，其中显示以下错误消息：  
   
- 安装实例的主机\<*主机名*> 服务器上\<*服务器名称*> 失败。  
+ 安装实例的主机\<*主机名*\>服务器上\<*服务器名称*\>失败。  
   
  其他信息：  
   
@@ -86,11 +86,11 @@ ms.lasthandoff: 09/20/2017
   
  当您单击“确定”以关闭此对话框时，将显示一个对话框，其中显示以下错误消息：  
   
- 清理中止主机安装\<*主机名*> 服务器上\<*服务器名称*> 失败。  
+ 清理中止主机安装\<*主机名*\>服务器上\<*服务器名称*\>失败。  
   
  其他信息：  
   
- 正在删除 Windows NT 服务 BTSSvc 时发生故障 {*\<GUID >*}。 (WinMgmt)  
+ 正在删除 Windows NT 服务 BTSSvc 时发生故障 {*\<GUID\>*}。 (WinMgmt)  
   
  当你单击**确定**要停用此对话框中，BizTalk 主机实例将在使用 BizTalk 管理控制台中可见**状态**的**卸载失败**.  
   

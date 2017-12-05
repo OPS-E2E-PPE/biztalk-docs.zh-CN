@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e77f72effa1a9c9193f9ce589ebe22b65feb5a85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec807cf6b596f7e89f607ebeb56700c59134c211
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-strong-name-assembly-key-file"></a>如何配置强名称程序集密钥文件
 过程中部署 BizTalk 解决方案，[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]首先生成这些程序集。 部署过程要求每个程序集都是强签名的。 强可以通过将项目与强名称程序集密钥文件相关联来签名你的程序集。 如果你尚未这样做，则在从 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 部署某一解决方案之前，使用以下过程生成一个强名称程序集密钥文件并将它分配给解决方案中的每个项目。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
      示例： **sn /k ErrorHandling.snk**  
   
-     一条确认消息，**密钥对写入到** \< *file_name*>**.snk** `,`显示命令行上。  
+     一条确认消息，**密钥对写入到** \< *file_name*\>**.snk** `,`显示命令行上。  
   
 3.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击项目，然后单击**属性**。  
   
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/20/2017
 6.  对解决方案中你要使用此强名称程序集密钥文件部署的每个项目，都重复步骤 3 到 6。  
   
 ## <a name="see-also"></a>另请参阅  
- [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

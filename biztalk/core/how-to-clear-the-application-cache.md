@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eacb7a786ad2729dbbea365e70c3aba8fabed5d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 184569a3eed693a7b699b2ad14cfb8461cc496e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-clear-the-application-cache"></a>如何清除应用程序缓存
 你可以使用 MMC 管理单元中或命令行删除凭据缓存 （所有与关联的信息关联应用程序） 的内容的所有单一登录在服务器上的指定应用程序。  
@@ -39,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-purgecache *\<应用程序名称 >***，其中\<*应用程序名称*> 是的关联应用程序的名称你想要清除的缓存。  
+3.  类型**ssomanage-purgecache *\<应用程序名称\>***，其中\<*应用程序名称*\>是的名称关联应用程序，你想要清除的缓存。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43f0128b0d1da7ddfb9a29b697d5d5073f69dd33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f08c50036dd070d51a8685dc4d47ceaa231737
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-application-context-using-message-context-properties-in-oracle-e-business-suite"></a>配置在 Oracle E-business Suite 中使用消息上下文属性的应用程序上下文
 在使用 Oracle E-business Suite 项目上执行操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，必须正确设置应用程序上下文。 你可以通过以下方式来设置应用程序上下文：  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加引用**对话框中，单击**浏览**选项卡上，然后浏览到位置其中 BizTalk 属性架构 DLL 为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]可用。  
   
-     此 DLL， `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]在\<*安装驱动器*>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin。  
+     此 DLL， `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]在\<*安装驱动器*\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin。  
   
 4.  选择 DLL，然后单击**添加**。  
   
@@ -74,7 +74,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  右键单击**资源**，指向**添加**，然后单击**BizTalk 程序集**。  
   
-    4.  在**添加资源**对话框中，单击**添加**，导航到包含 BizTalk 程序集文件，它是文件夹\<*安装驱动器*>: \程序 Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin。 选择`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`文件，，然后单击**打开**。  
+    4.  在**添加资源**对话框中，单击**添加**，导航到包含 BizTalk 程序集文件，它是文件夹\<*安装驱动器*\>: Files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin。 选择`Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`文件，，然后单击**打开**。  
   
     5.  上**选项**选项卡上，指定安装到全局程序集缓存 (GAC) 中，BizTalk 程序集的选项，然后单击**确定**。  
   

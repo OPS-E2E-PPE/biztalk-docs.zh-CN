@@ -12,11 +12,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94d1aa31a271f0ed88be42066abdae25be3f3e87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95c4bb48805eb0d2b349a8802c0bc8af1d12925a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-x12-receiving-batched-edi-interchanges"></a>演练 (X12)：接收批处理 EDI 交换
 本演练将介绍一组使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建解决方案以接收 EDI 批的分步操作过程。 此解决方案演示了两种接收批处理 EDI 交换的方法：  
@@ -65,10 +65,10 @@ ms.lasthandoff: 09/20/2017
   
 2.  接收管道处理交换而不拆分事务集，并将两个事务集作为一个单位转换为内部 XML 格式。  
   
-3.  接收管道除了将保留标记应用于它生成的 XML 以外，还升级相同的属性（就好像交换不是批那样）。 此标记是\<X12InterchangeXml > 的 X12 编码 EDI 交换或\<EdifactInterchangeXml > 的 EDIFACT 编码 EDI 交换。 EDI 接收管道还应用上下文属性 `ReuseEnvelope` 以将交换标识为保留。  
+3.  接收管道除了将保留标记应用于它生成的 XML 以外，还升级相同的属性（就好像交换不是批那样）。 此标记是\<X12InterchangeXml\>的 X12 编码 EDI 交换或\<EdifactInterchangeXml\>的 EDIFACT 编码 EDI 交换。 EDI 接收管道还应用上下文属性 `ReuseEnvelope` 以将交换标识为保留。  
   
     > [!NOTE]
-    >  EDI 发送管道使用\<X12InterchangeXml > 或\<EdifactInterchangeXml > 标记来标识作为保留的批次的消息。 使用 `ReuseEnvelope` 上下文属性可创建用于订阅所有保留的批处理交换的发送端口。  
+    >  EDI 发送管道使用\<X12InterchangeXml\>或\<EdifactInterchangeXml\>标记来标识作为保留的批次的消息。 使用 `ReuseEnvelope` 上下文属性可创建用于订阅所有保留的批处理交换的发送端口。  
   
 4.  接收管道将消息 XML 文件放入 MessageBox。  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  本主题假定你已从你的应用程序添加了对包含 EDI 架构、管道和业务流程的 BizTalk EDI 应用程序的引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
   
-2.  右键单击你的项目，指向**添加**，然后单击**现有项**。 将移动到**\<驱动器 >: files\microsoft BizTalk Server 2009\XSD_Schema\EDI\X12\00401**，然后双击对应到你的测试消息的架构。  
+2.  右键单击你的项目，指向**添加**，然后单击**现有项**。 将移动到**\<驱动器\>: files\microsoft BizTalk Server 2009\XSD_Schema\EDI\X12\00401**，然后双击对应到你的测试消息的架构。  
   
     > [!NOTE]
     >  如果不具有已 EDI 架构解压缩到 XSD_SchemaEDI 文件夹中，执行**MicrosoftEdiXSDTemplates.exe** XSD_SchemaEDI 文件夹来解压缩到默认文件夹的架构中的文件。  
@@ -313,4 +313,4 @@ ms.lasthandoff: 09/20/2017
  [保留已收到批处理的 EDI 交换](../core/preserving-a-received-batched-edi-interchange.md)   
  [演练 (X12)： 发送批处理的 EDI 交换](../core/walkthrough-x12-sending-batched-edi-interchanges.md)   
  [演练 (X12)： 接收 EDI 交换和发送回确认](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
- [演练 (X12)： 发送 EDI 交换](../core/walkthrough-x12-sending-edi-interchanges.md)
+ [演练 (X12)：发送 EDI 交换](../core/walkthrough-x12-sending-edi-interchanges.md)

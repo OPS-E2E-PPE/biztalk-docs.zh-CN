@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b72574df8cd20b8beb4be7e7eb11e3065d03333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79cfa3f1b799c4a96cdad7f4c9b89b4b594dc4d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>SAP 使用 BizTalk Server 中运行 BAPI 事务
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使适配器客户端可以使用某个 SAP 系统执行事务[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 在创建之前事务业务流程，你必须首先了解将在其中执行事务的基本方案。 在典型事务方案中，与多个操作 （例如调用 BAPI） 请求消息发送到 SAP 系统。 这将称为"操作消息"。 业务流程必须从请求消息中提取每个操作消息并将各个操作消息发送到 SAP 系统。 业务流程将它们发送一次是在另一个使用相同的连接。 业务流程使用通过 BizTalk 映射的 XML 转换中提取的"操作消息"从各条消息。  
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
 >  你必须确保所有必需的架构将添加到 BizTalk 项目。  
   
 > [!IMPORTANT]
->  你必须添加到 BizTalk 属性的架构的引用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]到你的 BizTalk 项目。 架构文件中， *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装过程中，通常情况下\<安装驱动器 >: files\microsoft BizTalk 适配器 Pack\bin。  
+>  你必须添加到 BizTalk 属性的架构的引用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]到你的 BizTalk 项目。 架构文件中， *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装过程中，通常情况下\<安装驱动器\>: files\microsoft BizTalk 适配器包\bin。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
  你先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，为其类型由相应的架构定义。 你必须链接您生成第一步中的邮件从 BizTalk 项目的业务流程视图窗口的架构。  
@@ -324,7 +324,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  有关如何处理异常的详细信息，通常情况下，使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，请参阅[使用事务和处理异常](../../core/using-transactions-and-handling-exceptions.md)。
   
 ## <a name="add-the-biztalk-property-schema-to-biztalk"></a>将 BizTalk 属性架构添加到 BizTalk  
- 在 BizTalk 项目中，添加的 BizTalk 属性架构的程序集引用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 必须将相同的程序集添加为 BizTalk 应用程序，即，应用程序将在其中部署 BizTalk 项目中的资源。 架构文件中， *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]通常低于设置\<安装驱动器 >: files\microsoft BizTalk 适配器 Pack\bin。 如果没有此资源，你将不能将项目部署。  
+ 在 BizTalk 项目中，添加的 BizTalk 属性架构的程序集引用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 必须将相同的程序集添加为 BizTalk 应用程序，即，应用程序将在其中部署 BizTalk 项目中的资源。 架构文件中， *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*，通过安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]通常低于设置\<安装驱动器\>: files\microsoft BizTalk AdapterPack\bin。 如果没有此资源，你将不能将项目部署。  
   
 #### <a name="to-add-an-assembly-as-a-resource-in-biztalk"></a>若要将程序集添加为 BizTalk 中的资源  
   
@@ -384,7 +384,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  运行应用程序后，必须在预定义位置删除业务流程的请求消息。 请求消息必须符合特定的架构，例如，MultipleOrders.xsd 架构。 例如，在某个 SAP 系统中创建销售订单请求消息，然后提交该操作被：  
   
 ```  
-\<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
+<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
   <Order>  
       <ORDER_HEADER_IN>  
         <DOC_TYPE>TA</DOC_TYPE>  
@@ -411,7 +411,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   <isCommit>true</isCommit>  
   <BAPI_TRANSACTION_COMMIT>  
   </BAPI_TRANSACTION_COMMIT>  
-\</ns0:Orders>  
+</ns0:Orders>  
 ```  
   
  业务流程使用该消息，并将其发送到 SAP 系统。 从 SAP 系统的响应保存在定义为业务流程的一部分的其他文件位置中。 对于以上的请求消息中，你可以获取两条响应消息 — 一个用于调用 BAPI_SALESORDER_CREATEFROMDAT2 RFC 和另一个用于使用 BAPI_TRANSACTION_COMMIT 提交操作。  
@@ -419,7 +419,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  BAPI_SALESORDER_CREATEFROMDAT2 的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_SALESORDER_CREATEFROMDAT2Response xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <SALESDOCUMENT />   
   <ORDER_ITEMS_IN>  
@@ -444,7 +444,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  BAPI_TRANSACTION_COMMIT 的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_TRANSACTION_COMMITResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <RETURN>  
     <TYPE xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />   

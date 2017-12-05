@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79fa2e40bd80bb3a4fd8b976aa31a34e4d3c0bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c31146310b8c8b559fcd93d19362679b060cb42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>创建一个通道，使用 SQL 适配器
 在 WCF 通道模型中，调用 SQL Server 数据库上的操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]通过 WCF 通道。  
@@ -128,7 +128,7 @@ channel.Open();
   
 2.  设置入站操作所需的绑定属性。 例如，对于**轮询**操作，必须设置至少**InboundOperationType**， **PolledDataAvailableStatement**，和**PollingStatement**绑定属性来配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]轮询 SQL Server 数据库。  
   
-3.  创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel >**方法**SQLBinding**。 作为此方法的参数之一指定 SQL Server 连接 URI。  
+3.  创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel\>** 方法**SQLBinding**。 作为此方法的参数之一指定 SQL Server 连接 URI。  
   
 4.  打开侦听器。  
   
@@ -168,4 +168,4 @@ channel.Open();
 ```  
   
 ## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[使用 WCF 通道模型开发应用程序](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0c2c016387f6b70870e04b211b0bdfe047de11d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a0bcf80d4a1ea9fc6b54403faa14084816e413be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>使用 ServiceModel 元数据实用工具 BizTalk 适配器为 Siebel eBusiness Applications
 你可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成操作的 WCF 客户端类，[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开。 运行 svcutil.exe 以生成 WCF 客户端类后，你可以在你的代码中包含生成的文件和创建要在 Siebel 系统上执行操作的 WCF 客户端类的实例。  
@@ -41,9 +41,9 @@ ms.lasthandoff: 09/20/2017
   
     ```  
     <configuration>  
-      \<system.serviceModel>  
+      <system.serviceModel>  
         <client>  
-          \<!-- the name should match the required scheme of the Metadata Exchange endpoint   
+          <!-- the name should match the required scheme of the Metadata Exchange endpoint   
           and the contract should be "IMetadataExchange" -->  
           <endpoint name="siebel"  
             binding="siebelBinding"  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
           </siebelBinding>  
         </bindings>  
   
-      \</system.serviceModel>  
+      </system.serviceModel>  
   
     </configuration>  
   

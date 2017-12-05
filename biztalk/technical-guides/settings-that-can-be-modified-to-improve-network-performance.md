@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab8c4b32a5a5f588e76d155c2f8d052398f1a247
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8557c8bbe8c0b1c785d6da8d87e8950d3779b8d0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a>可以修改为提高网络性能的设置
 本主题提供建议的值的说明该影响网络性能。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="adjust-the-maxuserport-and-tcptimedwaitdelay-settings"></a>调整 MaxUserPort 和 TcpTimedWaitDelay 设置  
  **MaxUserPort**值控制在应用程序请求从系统的任何可用的用户端口时使用的最大端口号。 通常情况下，生存期较短的端口是从分配的范围内 1025 到 65535 之间。 端口范围现在真正是一组与起始点，并与终结点。 新的默认起始端口为 49152，而默认结束端口为 65535。 此范围是除了通过服务和应用程序使用的已知端口。 可以在每个服务器上修改的服务器使用的端口范围。 你可以按以下方式使用 netsh 命令中，调整此范围：  
   
- **netsh int \<ipv4 &#124; ipv6 > 设置动态\<tcp &#124; udp > 启动 = 数字 num = 范围**  
+ **netsh int \<ipv4 &#124; ipv6\>设置动态\<tcp &#124; udp\>启动 = 数字 num = 范围**  
   
  此命令设置为 TCP 动态端口范围。 起始端口是**数**，和端口的总数是**范围**。 以下是示例命令： 你可以使用以下 netsh 命令来查看动态端口范围：  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 |默认情况下存在值？|**不**，需要添加。|  
   
 ## <a name="see-also"></a>另请参阅  
- [一般性的指导原则，用于提高网络性能](../technical-guides/general-guidelines-for-improving-network-performance.md)
+ [优化网络性能的通用指南](../technical-guides/general-guidelines-for-improving-network-performance.md)

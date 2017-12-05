@@ -12,16 +12,16 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a19f8c29c22638be97ae62dfea88d0d2feca6c55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81a2b225e5316d16e31d2ed2ca830387dc14048d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-biztalk-failed-message-routing-esb-processing-sample"></a>运行 BizTalk 失败消息路由 ESB 处理示例
-Microsoft BizTalk 失败消息路由 ESB 处理示例演示如何使用[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]异常管理框架作为通用机制，管理、 序列化，并呈现在在所有情况下发生的异常[!INCLUDE[prague](../includes/prague-md.md)]. 这包括由 BizTalk 失败消息路由机制和错误消息框架生成的异常管理从业务流程中生成的异常。  
+Microsoft BizTalk 失败消息路由 ESB 处理示例演示如何使用[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]异常管理框架作为通用机制，管理、 序列化，并呈现在 BizTalk 中的所有情况下发生的异常服务器。 这包括由 BizTalk 失败消息路由机制和错误消息框架生成的异常管理从业务流程中生成的异常。  
   
- BizTalk 失败消息路由机制是的错误处理功能[!INCLUDE[prague](../includes/prague-md.md)]; 使用它，设计器可以指定自动的处理的消息失败传送作为传统的替代方法放置失败 （现在默认值） 行为"已挂起"队列中的消息。 这将自动处理路由到任何订阅的路由目标，如发送端口或业务流程的错误信息。 错误消息是与降级的所有以前升级的属性和提升到消息上下文与特定的消息传递失败相关的所选属性的原始消息的克隆。  
+ BizTalk 失败消息路由机制是 BizTalk Server; 的错误处理功能通过使用它，设计器可以指定自动的处理的消息作为传统的替代方法失败 （现在默认值） 的放置的行为失败"已挂起"队列中的消息。 这将自动处理路由到任何订阅的路由目标，如发送端口或业务流程的错误信息。 错误消息是与降级的所有以前升级的属性和提升到消息上下文与特定的消息传递失败相关的所选属性的原始消息的克隆。  
   
  若要启用接收端口或发送端口上的 BizTalk 失败消息路由机制，请选择**启用路由失败消息**复选框，如图 1 中所示。  
   

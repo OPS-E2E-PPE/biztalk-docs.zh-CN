@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d65e2860e2140a16749ad434ead77bf8a4f49eb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e5f8ed36b4a1ae8553e8df488e8fd5a606c0eabd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-common-schemas-for-v231"></a>步骤 2： 为 V2.3.1 创建通用架构
 V2.3.1 架构是经常引用的架构，用于验证消息实例。  
@@ -47,9 +47,9 @@ V2.3.1 架构是经常引用的架构，用于验证消息实例。
   
 9. 选择**对程序集签名**复选框。  
   
-10. 在**选择强名称密钥文件**，选择**\<浏览 … >** 。  
+10. 在**选择强名称密钥文件**，选择**\<浏览...\>** .  
   
-11. 浏览到\<驱动器 >: \Batching 教程中，选择**key.snk**，然后单击**打开**。  
+11. 浏览到\<驱动器\>: \Batching 教程中，选择**key.snk**，然后单击**打开**。  
   
 12. 在解决方案资源管理器，右键单击**BTAHL7V231Common 项目**，然后单击**部署**。 确保输出窗口中显示一条成功消息。  
   

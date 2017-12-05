@@ -13,11 +13,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b143f528a7c02ccfc1bdb5f68a7cb9576187fb9a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9860625480c2c3e469736989415b4e1510cf6707
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restart-biztalk-services-or-shut-down-the-biztalk-server"></a>重新启动 BizTalk 服务，或关闭 BizTalk Server
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
 |Name|说明|启动类型|依赖关系|  
 |----------|-----------------|------------------|------------------|  
-|BizTalk 服务 BizTalk 组：  *\<BizTalkServerApplication >*|提供 BizTalk Server 应用程序服务。|自动|-企业单一登录 (SSO) 服务<br />事件日志<br />-远程过程调用 (RPC)|  
+|BizTalk 服务 BizTalk 组：  *\<BizTalkServerApplication\>*|提供 BizTalk Server 应用程序服务。|自动|-企业单一登录 (SSO) 服务<br />事件日志<br />-远程过程调用 (RPC)|  
 |企业单一登录服务|提供对企业应用程序的单一登录服务。|自动|已在本地安装 SQL Server：<br /><br /> 的系统 COM + 应用程序<br />-远程过程调用 (RPC)<br />SQL Server (MSSQLSERVER)<br /><br /> 已远程安装 SQL Server：<br /><br /> 的系统 COM + 应用程序<br />-远程过程调用 (RPC) 无|  
 |规则引擎更新服务|通知用户有关部署或取消部署策略的信息。|Automatic|无|  
   

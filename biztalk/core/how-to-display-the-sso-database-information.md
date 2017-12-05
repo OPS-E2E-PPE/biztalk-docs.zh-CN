@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1328e6066af0d19c68657728f8dc7777ba62f12d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e834874cb87da598db0bc92e516b58dfe2da9069
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-display-the-sso-database-information"></a>如何显示的 SSO 数据库信息
 可以使用 MMC 管理单元或命令行 (ssomanage) 实用工具来查看 SSO 数据库信息。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssomanage-displaydb**。  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器 >**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
 3.  类型**ssomanage-showdb**。  
   
@@ -61,9 +61,9 @@ ms.lasthandoff: 09/20/2017
   
 |属性|值|  
 |--------------|-----------|  
-|SQL Server|**\<SQL Server 名称 >**|  
-|单一登录数据库|**\<SQL Server 数据库名称 >**|  
-|单一登录密钥服务器名称|**\<单一登录服务器名称 >**|  
+|SQL Server|**\<SQL Server 名称\>**|  
+|单一登录数据库|**\<SQL Server 数据库名称\>**|  
+|单一登录密钥服务器名称|**\<单一登录服务器名称\>**|  
 |Single Sign-On Administrators 帐户|域\帐户名称|  
 |Single Sign-On Affiliate Administrators 帐户|域\帐户名称|  
 |已删除的应用程序的审核表大小（审核条目数）|1000 （默认值）|  

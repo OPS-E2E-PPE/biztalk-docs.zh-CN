@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ddb40109ff402f1c1794a90e591a43e11407fba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cc742b41735f31b0da43560c19df4beb4f126d6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-delete-an-affiliate-application"></a>如何删除关联应用程序
 可以使用 MMC 管理单元或命令行从 SSO 数据库中删除指定的关联应用程序。  
@@ -43,9 +43,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-deleteapp *\<应用程序名称 >***，其中*\<应用程序名称 >*是关联应用程序的名称你想要从 SSO 数据库中删除。  
+3.  类型**ssomanage-deleteapp *\<应用程序名称\>***，其中*\<应用程序名称\>*是的名称你想要从 SSO 数据库中删除关联的应用程序。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

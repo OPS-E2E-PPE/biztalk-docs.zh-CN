@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b9b2770f1d14d716149025ac44cb3cdffbbb23b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c47f7ba8320a43cbfdc98a3b3e5becdce9a898f9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hubscenario-sample"></a>HubScenario 示例
 HubScenario 示例演示在网络集线器方案中如何管理消息传输。 该示例将发送到中间网络集线器的消息转换为发送到最终接收人的消息。  
@@ -27,18 +27,18 @@ HubScenario 示例演示在网络集线器方案中如何管理消息传输。 �
   
  HubScenario 示例包含 HubHelper.cs 项目和 HubScenario.odx 项目。  
   
- HubScenario 示例还包含一个绑定文件，可以用于导入接收端口 (MessagesToLOB_Receive_Port) 和接收位置 (MessagesToLOB_Receive_Location) 之间的绑定，以用于 HubScenario.odx 业务流程。 此绑定文件 (HubScenarioBinding.xml) 位于*\<驱动器 >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<版本 > Accelerator for RosettaNet \SDK\HubScenario。 使用 BTSTask 命令可以导入绑定。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“ImportBindings 命令”主题。  
+ HubScenario 示例还包含一个绑定文件，可以用于导入接收端口 (MessagesToLOB_Receive_Port) 和接收位置 (MessagesToLOB_Receive_Location) 之间的绑定，以用于 HubScenario.odx 业务流程。 此绑定文件 (HubScenarioBinding.xml) 位于*\<驱动器\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<版本\>快捷键有关 RosettaNet \SDK\HubScenario。 使用 BTSTask 命令可以导入绑定。 有关详细信息，请参阅 BizTalk Server 帮助中的"ImportBindings 命令"主题。  
   
 ### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
   
-1.  在 Visual Studio 中，打开\<驱动器 >: files\microsoft Microsoft BizTalk\<版本 > RosettaNet\SDK\HubScenario\HubScenario.btproj 快捷键。 在解决方案资源管理器中，右键单击 HubScenario 项目，然后单击“属性”。 在为 HubScenario 项目的属性页中，在签名选项卡上选择**对程序集签名**复选框，然后选择**HubScenario.snk**中**选择强名称密钥文件**单击**确定**。  
+1.  在 Visual Studio 中，打开\<驱动器\>: files\microsoft Microsoft BizTalk\<版本\>RosettaNet\SDK\HubScenario\HubScenario.btproj 快捷键。 在解决方案资源管理器中，右键单击 HubScenario 项目，然后单击“属性”。 在为 HubScenario 项目的属性页中，在签名选项卡上选择**对程序集签名**复选框，然后选择**HubScenario.snk**中**选择强名称密钥文件**单击**确定**。  
   
 2.  在解决方案资源管理器中，右键单击 HubHelper 项目，然后单击“属性”。 在 HubHelper 项目的“属性”页中，在“签名”选项卡中选中“为程序集签名”复选框。 在选择强名称密钥文件字段中，选择新类型**HubHelper.snk**作为密钥文件名称，然后单击**确定**。  
   
     > [!NOTE]
     >  如果没有在 HubScenario 和 HubHelper 项目中手动输入程序集密钥文件，则这些程序集将不会进行部署。  
   
-3.  在命令提示符下，将移到*\<驱动器 >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\HubScenario 文件夹。 运行文件 Setup.bat（如果在 64 位计算机上，则运行 Setupx64.bat）。  
+3.  在命令提示符下，将移到*\<驱动器\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键HubScenario 文件夹。 运行文件 Setup.bat（如果在 64 位计算机上，则运行 Setupx64.bat）。  
   
 ## <a name="demonstrates"></a>演示  
  HubScenario.ods 业务流程演示如何执行以下任务：  

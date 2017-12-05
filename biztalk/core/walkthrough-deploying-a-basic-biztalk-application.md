@@ -17,11 +17,11 @@ caps.latest.revision: "69"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5db86f672cd17965ec76877cc3867594bf82b40d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 445dcdf9685d5b4b74f5d1fd9738da838edb5f42
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-deploying-a-basic-biztalk-application"></a>演练： 部署基本 BizTalk 应用程序
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含用于简化 BizTalk 企业解决方案的管理和部署的功能。 它现在为企业解决方案中的各项（例如业务流程、架构、映射、管道和 .NET 程序集等）提供一个 BizTalk 应用程序容器。 你可以管理、 修改、 部署和安装的所有项作为一个整体应用程序中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]此外包括向导来帮助实现自动化应用程序部署任务。 有关背景信息，请参阅[应用程序部署和管理功能](../core/application-deployment-and-management-features.md)和[应用程序部署和管理工具](../core/application-deployment-and-management-tools.md)。  
@@ -104,7 +104,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 #### <a name="2-deploy-the-biztalk-assemblies"></a>2.部署 BizTalk 程序集  
  可以从开发计算机上的 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，使用此步骤中的过程将 BizTalk 程序集部署到 BizTalk 应用程序中。  
   
- 在开始之前，你必须在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中已具有某一 BizTalk 解决方案。 你或者可以创建自己的解决方案或项目，或者可以设置随 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 一起提供的 ErrorHandling 示例。 你可以按如下所示在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中设置 ErrorHandling 示例解决方案：  
+ 在开始之前，你必须在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中已具有某一 BizTalk 解决方案。 你可以创建你自己的解决方案或项目，或你可以将 BizTalk Server 附带 ErrorHandling 示例设置。 你可以按如下所示在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中设置 ErrorHandling 示例解决方案：  
   
 ###### <a name="to-set-up-the-errorhandling-solution"></a>设置 ErrorHandling 解决方案  
   
@@ -132,9 +132,9 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
     |属性|值|解释|  
     |--------------|-----------|-----------------|  
-    |应用程序名称|\<Name>|用于将此项目中的程序集部署到的 BizTalk 应用程序的名称。 如果该应用程序已存在，则在你部署该项目时这些程序集将添加到该应用程序中。 如果该应用程序不存在，则将创建该应用程序。 如果此字段为空，则这些程序集将部署到当前组中的默认 BizTalk 应用程序（默认情况下为“BizTalk Application 1”）中。 包含空格的名称必须括在双引号 (") 中。|  
-    |配置数据库|\<BizTalk 管理数据库名称 >|用于组的 BizTalk 管理数据库的名称，默认情况下为 BizTalkMgmtDb。|  
-    |Server|\<服务器名称 >|作为本地计算机上 BizTalk 管理数据库宿主的 SQL Server 实例的名称。 在单台计算机安装中，该名称通常是本地计算机的名称。 **注意：**此 BizTalk 项目移动到另一台计算机时，如果你将需要修改服务器属性，以反映新的计算机名称，然后你将能够部署程序集。|  
+    |应用程序名称|\<名称\>|用于将此项目中的程序集部署到的 BizTalk 应用程序的名称。 如果该应用程序已存在，则在你部署该项目时这些程序集将添加到该应用程序中。 如果该应用程序不存在，则将创建该应用程序。 如果此字段为空，则这些程序集将部署到当前组中的默认 BizTalk 应用程序（默认情况下为“BizTalk Application 1”）中。 包含空格的名称必须括在双引号 (") 中。|  
+    |配置数据库|\<BizTalk 管理数据库名称\>|用于组的 BizTalk 管理数据库的名称，默认情况下为 BizTalkMgmtDb。|  
+    |Server|\<服务器名称\>|作为本地计算机上 BizTalk 管理数据库宿主的 SQL Server 实例的名称。 在单台计算机安装中，该名称通常是本地计算机的名称。 **注意：**此 BizTalk 项目移动到另一台计算机时，如果你将需要修改服务器属性，以反映新的计算机名称，然后你将能够部署程序集。|  
     |重新部署|True 或 False|如果将此项设置为 True（默认设置），你将能够在不更改版本号的情况下重新部署 BizTalk 程序集。|  
     |安装到全局程序集缓存|True 或 False|如果将此项设置为 True（默认设置），则可以在部署程序集时将程序集安装到本地计算机上的全局程序集缓存 (GAC) 中。|  
     |重新启动主机实例|True 或 False|如果将此项设置为 True，则可以在重新部署程序集时自动重新启动在本地计算机上运行的所有主机实例。 如果将此项设置为 False（默认设置），则必须在你重新部署某一程序集时手动重新启动这些主机实例。 **注意：**如果要重新部署解决方案级别中的程序集，主机实例将重新启动一次每个项目具有此选项设置为 True。 这样可能导致多次重新启动。 如果计划在解决方案级重新部署，你可能希望针对解决方案中的一个项目将此属性设置 True，以避免多次主机实例重新启动。 此设置应针对将在解决方案中重新部署的最后一个项目进行。 此外，如果在你执行重新部署时，主机实例停止，它将不会被启动。|  
@@ -154,7 +154,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      示例： **sn-k ErrorHandling.snk**  
   
-     一条确认消息，**密钥对写入到\<**  *file_name***>.snk** `,`显示命令行上。  
+     一条确认消息，**密钥对写入到\<**  *file_name***\>.snk** `,`显示命令行上。  
   
  接下来，你需要将解决方案中的每个项目都与密钥文件相关联。  
   
@@ -166,7 +166,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 3.  在右窗格中，检查**对程序集签名**框。  
   
-4.  单击下的下拉列表框中**选择强名称密钥文件**，单击**\<浏览 … >**，然后浏览到该密钥文件。  
+4.  单击下的下拉列表框中**选择强名称密钥文件**，单击**\<浏览...\>** ，然后浏览到该密钥文件。  
   
 5.  单击密钥文件，然后单击**打开**。  
   
@@ -324,7 +324,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      ![将引用添加到应用程序](../core/media/appreferences.gif "AppReferences")  
   
-6.  上**应用程序目标环境设置**页上，确认**\<默认 >**已选择，单击**下一步**。  
+6.  上**应用程序目标环境设置**页上，确认**\<默认\>**已选择，单击**下一步**。  
   
 7.  上**导入摘要**页上，确认的摘要信息是否正确，，然后单击**导入**。  
   
@@ -357,4 +357,4 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 -   若要从 BizTalk 组和本地计算机中完全删除应用程序，请按照中的说明[正在取消部署的 BizTalk 应用程序](../core/undeploying-biztalk-applications.md)。  
   
 ## <a name="see-also"></a>另请参阅  
-[了解 BizTalk 应用程序部署和管理](../core/understanding-biztalk-application-deployment-and-management.md)
+[了解 BizTalk 应用程序的部署和管理](../core/understanding-biztalk-application-deployment-and-management.md)

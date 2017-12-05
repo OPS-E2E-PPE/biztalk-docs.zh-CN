@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7ec623c49c90fc0fddcbab7b6ee9b4e7ea0ef58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2232602ec5a91768f4b9dbde5f6c63a79de0c332
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="database-commands"></a>数据库命令
 BAM 管理实用程序数据库命令允许你使用 BAM 数据库：  
@@ -44,14 +44,14 @@ BAM 管理实用程序数据库命令允许你使用 BAM 数据库：
 ## <a name="setup-databases-command"></a>安装程序数据库命令  
  **用法**  
   
- **bm.exe 安装程序数据库 ConfigFile:\<配置文件 > [-NSUser:\<通知服务用户名称 >] [-NSUserPassword:\<通知服务用户密码 >]**  
+ **bm.exe 安装程序数据库 ConfigFile:\<配置文件\>[-NSUser:\<通知服务用户名\>] [-NSUserPassword:\<通知服务用户密码\> ]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|ConfigFile:\<配置文件 >|BAM 配置文件从其创建数据库。|  
-|NSUser:\<通知服务用户名 >|可选： 通知服务用户有权创建数据库用户 ID。|  
+|ConfigFile:\<配置文件\>|BAM 配置文件从其创建数据库。|  
+|NSUser:\<通知服务用户名\>|可选： 通知服务用户有权创建数据库用户 ID。|  
 |NSUserPassword|可选： 指定的通知服务用户的密码。|  
   
  创建如果不存在配置文件 （BAM 主导入、 BAM 星型架构、 BAM 存档、 BAM 分析和警报） 中描述的数据库。 数据库创建后，命令将创建关联的 BAM 元数据的表和存储的过程。  
@@ -82,11 +82,11 @@ bm.exe setup-databases -ConfigFile:cfg.xml -NSUser:domain\user1
 ## <a name="migrate-sql-command"></a>迁移 sql 命令  
  **用法**  
   
- **bm.exe 迁移 sql-从： sql2000-到： sql2008 [-NSUser:\<通知服务用户名称 >] [-NSUserPassword:\<通知服务用户密码 >] [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 迁移 sql-从： sql2000-到： sql2008 [-NSUser:\<通知服务用户名\>] [-NSUserPassword:\<通知服务用户密码\>] [-Server:\<服务器\> ][-数据库：\<数据库\>]**  
   
- \-或者-  
+ \- 或 -  
   
- **bm.exe 迁移 sql-从： sql2005-到： sql2008 [-NSUser:\<通知服务用户名称 >] [-NSUserPassword:\<通知服务用户密码 >] [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 迁移 sql-从： sql2005-到： sql2008 [-NSUser:\<通知服务用户名\>] [-NSUserPassword:\<通知服务用户密码\>] [-Server:\<服务器\> ][-数据库：\<数据库\>]**  
   
  **参数**  
   
@@ -96,10 +96,10 @@ bm.exe setup-databases -ConfigFile:cfg.xml -NSUser:domain\user1
 |到： sql2008|指定要将转换为 Microsoft SQL Server 2008 数据库。|  
 |从： sql2005|指定你要从 Microsoft SQL Server 2005 数据库转换。|  
 |到： sql2008|指定要将转换为 Microsoft SQL Server 2008 数据库。|  
-|NSUser:\<通知服务用户名 >|可选： 通知服务用户有权创建数据库用户 ID。|  
+|NSUser:\<通知服务用户名\>|可选： 通知服务用户有权创建数据库用户 ID。|  
 |NSUserPassword|可选： 指定的通知服务用户的密码。|  
-|服务器：\<服务器 >|可选： 转换后的数据库将驻留的服务器的名称。 服务器必须是与承载 Microsoft SQL Server 2008 数据库的计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 将其命名为的已转换的数据库。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|服务器：\<服务器\>|可选： 转换后的数据库将驻留的服务器的名称。 服务器必须是与承载 Microsoft SQL Server 2008 数据库的计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 将其命名为的已转换的数据库。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  可以从 Microsoft SQL Server 2000 或 Microsoft SQL Server 2005 的 BAM 基础结构迁移到 Microsoft SQL Server 2008。 你将数据库服务器和升级 Analysis server 从 Microsoft SQL Server 2000 或 Microsoft SQL Server 2005 到 Microsoft SQL Server 2008 后，请使用此命令。  
   
@@ -108,7 +108,7 @@ bm.exe setup-databases -ConfigFile:cfg.xml -NSUser:domain\user1
  若要迁移的 SQL Server Notification Services 数据库，你必须具有管理员权限和是本地管理员组的成员，以及是其他任何其他管理组的已配置，如 BTS 成员管理员组。  
   
 > [!NOTE]
->  如果你收到错误消息"错误： 无法在计算机上启动服务 NS$ BAMAlerts\<计算机名称 >。 该服务未及时响应启动请求或控制请求。”，请手动重新启动该服务。 如果在迁移期间，SQL Server 是极其繁忙，服务可能无法重新启动。  
+>  如果你收到错误消息"错误： 无法在计算机上启动服务 NS$ BAMAlerts\<计算机名称\>。 该服务未及时响应启动请求或控制请求。”，请手动重新启动该服务。 如果在迁移期间，SQL Server 是极其繁忙，服务可能无法重新启动。  
   
 > [!NOTE]
 >  Notification Services 的安装位置在计算机上运行迁移 sql 命令，你必须属于该计算机上的本地管理员组。  
@@ -128,16 +128,16 @@ bm.exe migrate-sql -From:sql2005 -To:sql2008 -Server:MyServer -Database:db1
 ## <a name="enable-reference-command"></a>启用引用命令  
  **用法**  
   
- **bm.exe 启用引用 TargetServer:\<目标服务器 >-TargetDatabase:\<目标数据库 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 启用引用 TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>[-Server:\<服务器\>] [-数据库：\<数据库\> ]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|TargetServer:\<目标服务器 >|引用已启用到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。|  
-|TargetDatabase:\<目标数据库 >|引用已启用到数据库的名称。|  
-|服务器：\<服务器 >|可选： 将具有启用的引用的目标服务器和数据库服务器的名称。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 将具有对目标服务器和数据库启用的引用的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|TargetServer:\<目标服务器\>|引用已启用到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。|  
+|TargetDatabase:\<目标数据库\>|引用已启用到数据库的名称。|  
+|服务器：\<服务器\>|可选： 将具有启用的引用的目标服务器和数据库服务器的名称。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 将具有对目标服务器和数据库启用的引用的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  启用对其他分布式 BAM 主导入数据库的引用。 这样可从当前数据库订阅目标 BAM 主导入数据库上的视图和活动元数据。 此功能可用于启用对分布式活动的导航。  
   
@@ -153,14 +153,14 @@ bm.exe enable-reference -TargetServer:s2 -TargetDatabase:db1 -Server:s1
 ## <a name="get-references-command"></a>get-references 命令  
  **用法**  
   
- **bm.exe get 引用 [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe get 引用 [-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|服务器：\<服务器 >|可选： 若要获取的引用列表的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 用于获取的引用列表上的数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|服务器：\<服务器\>|可选： 若要获取的引用列表的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 用于获取的引用列表上的数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  列出执行此命令的计算机上所启用的引用。  
   
@@ -174,16 +174,16 @@ bm.exe get-references -Server:MyServer -Database:MyPrimaryImport
 ## <a name="disable-reference-command"></a>disable-reference 命令  
  **用法**  
   
- **bm.exe 禁用引用 TargetServer:\<目标服务器 >-TargetDatabase:\<目标数据库 > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+ **bm.exe 禁用引用 TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>[-Server:\<服务器\>] [-数据库：\<数据库\> ]**  
   
  **参数**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|TargetServer:\<目标服务器 >|要禁用引用的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。|  
-|TargetDatabase:\<目标数据库 >|要禁用引用的数据库的名称。|  
-|服务器：\<服务器 >|可选： 哪些引用到目标服务器和数据库位于要禁用服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库 >|可选： 将哪些引用到目标服务器上的数据库和数据库的名称要禁用。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|TargetServer:\<目标服务器\>|要禁用引用的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。|  
+|TargetDatabase:\<目标数据库\>|要禁用引用的数据库的名称。|  
+|服务器：\<服务器\>|可选： 哪些引用到目标服务器和数据库位于要禁用服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
+|数据库：\<数据库\>|可选： 将哪些引用到目标服务器上的数据库和数据库的名称要禁用。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  禁用对目标服务器上其他分布式 BAM 主导入数据库的引用。  
   

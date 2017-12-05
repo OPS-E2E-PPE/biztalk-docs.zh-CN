@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f6000c95b94570b5f058073537fa926fd1651c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42adf8f614f124c9b17597a44cdaaba9d7ed4f93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-partitioned-view-in-the-archiving-database"></a>在存档数据库中创建分区的视图
 在运行 BAM 数据维护程序包 (BAM_DM_`<activity name>`) 时，BAM 会将 BAM 主导入数据库的每个分区分别复制到 BAM 存档数据库的一个单独的表中。 如果分离存档数据库，然后又重新附加它进行查询，那么很难找到您要查询的数据。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  上**查询**菜单上，指向**结果到**，然后单击**结果显示为文本**。  
   
-4.  将下面的 SQL 脚本复制到查询窗格中。 替换\<活动名称 > 替换为你的活动名称，并将`<view type>`使用**实例**实例查看或**关系**关系视图。  
+4.  将下面的 SQL 脚本复制到查询窗格中。 替换\<活动名称\>替换为你的活动名称，并将`<view type>`使用**实例**实例查看或**关系**关系视图。  
   
     ```  
     set nocount on  

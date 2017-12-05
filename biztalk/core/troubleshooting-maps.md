@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbb5800ba076184f09f0159f030a44e169ac742b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7bb7b3dc8356172989c215dc13e5fd82e46f4689
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-maps"></a>排除地图故障
 本主题提供故障排除策略和问题详细信息和映射的解决方法信息。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
  如果你决定手动自定义你的代码图，你可以修改映射编译器生成的版本。 更改映射器将不会反映，将会丢失在下次生成你的解决方案。  
   
-### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>优化你使用的特定方案的代码图\<mapsource >  
+### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>优化你使用的特定方案的代码图\<mapsource\>  
  你可以通过修改的属性来修改映射器的某些默认行为**mapsource**直接映射 (.btm) 源文件中的元素。 目前，有三个您可以修改的行为：  
   
 -   **优化值映射 functoid 代码生成**。 你可以修改控制变量与一起使用时的行为`if`语句。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **为每个使用管理使用情况循环、 条件，和值映射 functoid**。 你可以控制在何处`xsl:for-each`在目标架构内使用语句。  
   
- 有关修改**mapsource**，请参阅[管理默认映射器行为使用\<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md)。  
+ 有关修改**mapsource**，请参阅[管理默认映射器行为使用\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)。  
   
 ## <a name="see-also"></a>另请参阅  
  [常规疑难解答问题和解答](../core/general-troubleshooting-questions-and-answers.md)   

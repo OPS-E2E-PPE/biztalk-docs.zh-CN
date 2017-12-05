@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 651c629a0290fef9af20dce3771d87dbb9eeb82d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3ac0c77dbaad27012f104486797c4e47d1e46be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-the-properties-of-an-affiliate-application"></a>如何列出关联应用程序的属性
 此命令显示有关关联应用程序的以下信息。 有关关联应用程序的属性的详细信息，请参阅[SSO Affiliate 应用程序](../core/sso-affiliate-applications.md)。  
@@ -30,9 +30,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-displayapp *\<应用程序名称 >***，其中*\<应用程序名称 >*是 Affiliate 应用程序的名称你想要显示的属性。  
+3.  类型**ssomanage-displayapp *\<应用程序名称\>***，其中*\<应用程序名称\>*是的名称Affiliate 应用程序，你想要显示的属性。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -41,9 +41,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*安装驱动器*>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*安装驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – displayapp *\<应用程序名称 >***，其中*\<应用程序名称 >*是 Affiliate 应用程序的名称你想要显示的属性。  
+3.  类型**ssoclient – displayapp *\<应用程序名称\>***，其中*\<应用程序名称\>*是的名称Affiliate 应用程序，你想要显示的属性。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

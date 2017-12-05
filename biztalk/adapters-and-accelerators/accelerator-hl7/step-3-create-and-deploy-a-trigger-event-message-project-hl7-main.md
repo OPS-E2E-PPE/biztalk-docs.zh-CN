@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff7abfcf363d26d068fab067378eb61d5bcf5c3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ba388eef1f5dbfb885e33c6263c4e0f8ef4be29
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a>步骤 3： 创建和部署触发器事件 （消息） Project_hl7_main
 在此步骤中，你创建的触发器事件消息所使用的架构。 例如，许可放电并传输系统 (ADT)，将发送一条消息到医院信息系统 (HIS)。 此架构用于定义你的消息的格式。  
@@ -87,7 +87,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在右窗格中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （...） 按钮。  
   
-4.  在**程序集密钥文件**对话框中，浏览到\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > HL7\SDK\ 快捷键Interrogative 教程，则单击**key.snk**，然后单击**打开**。  
+4.  在**程序集密钥文件**对话框中，浏览到\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>Accelerator for HL7\SDK\Interrogative 教程中，单击**key.snk**，然后单击**打开**。  
   
 5.  在**BTAHL7V24Body 属性页**对话框中，单击**确定**以保存所做的更改。  
   

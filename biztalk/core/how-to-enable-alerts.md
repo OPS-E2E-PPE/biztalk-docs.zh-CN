@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22bb3610d489f02aa535b562057b4bb09e208983
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9986bea177471a236cab888f20d915292d540e5b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-alerts"></a>如何启用警报
 管理员使用**启用警报**命令启用所有指定的视图上的警报。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
   
-3.  类型**bm 启用警报的视图：\<视图名称 >**。  
+3.  类型**bm 启用警报的视图：\<视图名称\>**。  
   
     > [!NOTE]
     >  如果您已经将 BAM 配置作为 XML 导出，则不要修改与警报相关的 XML。 如果您更改与警报相关的 XML 并部署这些更改，则 bm.exe 将检测到该更改并启用 BAM 警报。  

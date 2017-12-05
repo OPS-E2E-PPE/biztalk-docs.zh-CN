@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37ec562cbc64d15e66d2f265c52606817169bb85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22b59a0606b3cb30827078e28a89d0a51f52c430
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a>架构冲突解决程序组件 （BizTalk Server 示例）
 架构冲突解决程序组件示例演示如何扩展的功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]平面文件反汇编程序组件。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
  架构解析器组件演示为平面文件拆装器选择架构的备用方法。 在本示例中，定义了四个架构，每个架构的消息的前两个字符是唯一的。 在唯一的前两个字符与对应的架构之间定义了一个映射。 当将输入消息发送到架构解析器组件时，架构解析器读取前两个字符，确定要用于对应文档的架构，将架构信息保存在消息上下文中，然后调用标准平面文件拆装器组件。 标准平面文件拆装器组件从消息上下文读取架构信息，然后使用该架构分析文档。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Pipelines\SchemaResolverComponent\  
+ *\<示例路径\>*\Pipelines\SchemaResolverComponent\  
   
  下表显示了本示例中使用的文件及其用途说明：  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，将目录更改 (cd) 为以下文件夹：  
   
-     *\<示例路径 >*\Pipelines\SchemaResolverComponent  
+     *\<示例路径\>*\Pipelines\SchemaResolverComponent  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -76,9 +76,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
   
-1.  POInstance.txt、 PRInstance.txt、 SOInstance.txt、 和 SRInstance.txt 文件放在接收位置\<*安装路径*> \SDK\Samples\Pipelines\SchemaResolverComponent\In  
+1.  POInstance.txt、 PRInstance.txt、 SOInstance.txt、 和 SRInstance.txt 文件放在接收位置\<*安装路径*\>\SDK\Samples\Pipelines\SchemaResolverComponent\In  
   
-2.  观察写入到的四个.xml 文件\<Installdir > \SDK\Samples\Pipelines\SchemaResolverComponent\Out 文件夹。  
+2.  观察写入到的四个.xml 文件\<Installdir\>\SDK\Samples\Pipelines\SchemaResolverComponent\Out 文件夹。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

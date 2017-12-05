@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45d83e1a250850d372c2e12c7ffebc79f823c287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-biztalk-adapter-tracing"></a>使用 BizTalk 适配器跟踪
 本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-enable-biztalk-adapter-tracing"></a>启用 BizTalk 适配器跟踪  
   
-1.  在命令提示符下，将当前目录更改为目录其中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装。 默认情况下，[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装在 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] 目录中。  如果使用的是 64 位版本的 Windows 和 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，则安装路径为 [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]。  
+1.  在命令提示符下，将更改为安装 BizTalk Server 的目录的当前目录。 默认情况下，BizTalk Server 安装在[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]目录。  如果使用的 Windows 和 BizTalk Server 的 64 位版本，安装路径是[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]。  
   
 2.  键入以下命令，然后按 Enter：  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-capture-trace-output"></a>捕获跟踪输出  
   
-1.  在命令提示符下，将当前目录更改为目录其中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]安装。  
+1.  在命令提示符下，将更改为安装 BizTalk Server 的目录的当前目录。  
   
 2.  在命令提示符下，键入以下命令，然后按 Enter：  
   

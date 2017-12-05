@@ -17,11 +17,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c9fc06d9c735a59fe59499bf9ed0ac62aab0408
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 9740bb1c73dd5f416dda3c2f29bb15fbc7241a51
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-cluster-the-master-secret-server"></a>如何安装群集主密钥服务器
 若要在主密钥服务器上成功地对企业单一登录 (SSO) 服务进行群集处理，建议你按照本部分中的说明进行操作。  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/28/2017
   
     6.  输入先前创建的 SSO Affiliate Administrators 域组作为与 SSO 关联管理员角色关联的组。  
   
-8.  选择**企业 SSO 密钥备份**选项从左窗格中并用于备份企业 SSO 密钥提供适当的参数。 默认情况下，最多支持企业 SSO 密钥*\<驱动器 >*: Files\Enterprise 单一登录的 \program\\*SSOxxxx*.bak。  
+8.  选择**企业 SSO 密钥备份**选项从左窗格中并用于备份企业 SSO 密钥提供适当的参数。 默认情况下，最多支持企业 SSO 密钥*\<驱动器\>*: Files\Enterprise 单一登录的 \program\\*SSOxxxx*.bak。  
   
 9. 单击**应用配置**和查看摘要。  
   
@@ -133,7 +133,7 @@ ms.lasthandoff: 09/28/2017
   
     2.  将文件另存为 .xml 文件。 例如，将文件另存为 SSOCLUSTER.xml。  
   
-    3.  在命令提示符下，将目录更改为企业 SSO 安装文件夹。 默认情况下，安装文件夹是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+    3.  在命令提示符下，将目录更改为企业 SSO 安装文件夹。 默认情况下，安装文件夹是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
     4.  在命令提示符下键入以下命令，以更新数据库中的主密钥服务器名称：  
   
@@ -191,7 +191,7 @@ ms.lasthandoff: 09/28/2017
     > [!NOTE]
     >  如果不执行此步骤，则还原主密钥的操作可能失败。  
   
-4.  将第一个节点上的主密钥备份文件复制到第二个节点上的 \Enterprise Single Sign-On 安装文件夹中。 默认情况下，安装文件夹是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+4.  将第一个节点上的主密钥备份文件复制到第二个节点上的 \Enterprise Single Sign-On 安装文件夹中。 默认情况下，安装文件夹是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
 5.  登录到第二个节点，在命令提示符下转入企业 SSO 安装文件夹。  
   

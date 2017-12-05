@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b68a924fba60d4f0162e80dde0ab06b515765558
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63a719299ef6678b9fd38a936d84ba9b1f57a85b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="database-functoids"></a>“数据库”Functoid
 **数据库**functoid 从在输出实例消息中使用数据库中提取数据。 
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/20/2017
   
  在该图中，源架构代表传入采购订单；目标架构则代表提前发运通知。 **数据库查找**functoid 查找相应的数据库表中相应的记录。 **值提取程序**functoid 从查找记录中提取相应的列。 **错误返回**functoid 在运行时输出一个字符串，包含错误信息，如果没有错误 （如连接失败）。  
   
- 在前面的示例中，第一个输入的参数取自**StoreID**字段传入的采购订单，和剩余三个输入的参数是配置中的常量**配置\<Functoid > Functoid**对话框**数据库查找**functoid。 也可以创建源自源架构的链接，以便为全部四个输入参数提供值。  
+ 在前面的示例中，第一个输入的参数取自**StoreID**字段传入的采购订单，和剩余三个输入的参数是配置中的常量**配置\<Functoid\> Functoid**对话框**数据库查找**functoid。 也可以创建源自源架构的链接，以便为全部四个输入参数提供值。  
   
 > [!NOTE]
 >  * 你无法使用某些 Microsoft SQL Server 数据类型，如**文本**， **ntext**，和**映像**，作为查找值**数据库查找**functoid。 该 functoid 需要可用文本字符串形式表示的数据类型。  

@@ -15,19 +15,19 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0014541d7826a8d19d3f92b38608167316453475
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5dcc7ee1b77c91cc4bbc52384a23347ce3e9a0f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server 如何解决的业务需要
-若要解决卫生保健系统的集成需要 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强的功能[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]卫生保健的系统。  
+若要解决卫生保健系统的集成需要 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强的功能[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]卫生保健的系统的 BizTalk Server。  
   
- 由于[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]安装程序将安装的顶部快捷键[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]，本部分介绍该技术通过提供的功能的概述[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，功能的说明，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]添加，并讨论了方式，你可以部署这两种技术。  
+ 由于[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]安装程序将安装在 BizTalk Server 上的快捷键，本部分介绍该技术通过提供的功能的概述[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，功能的说明，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]添加，并讨论了你可以如何部署这两种技术。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [与 BizTalk Server 的系统集成](../../adapters-and-accelerators/accelerator-hl7/systems-integration-with-biztalk-server1.md)  
   
--   [BizTalk Accelerator for HL7 将添加到 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)
+-   [BizTalk Accelerator for HL7 向 BizTalk Server 添加的功能](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)

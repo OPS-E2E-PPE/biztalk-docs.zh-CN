@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5520062cb6c9bbd937d5c131c41992a7013a9711
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf2e8b2b3751f31401ef0353944be0bdad3cbb2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>步骤 4： 配置用于负载测试的 BizTalk Server 环境
 本主题提供有关创建 BizTalk Server 接收位置，接收端口的信息和运行主题所述的示例代码所需的发送端口[步骤 1： 创建单元测试以提交给 BizTalk Server 的文档进行](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)和[步骤 3： 创建负载测试，以同时执行多个单元测试](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="configure-biztalk-server-environment-for-load-tests"></a>为负载测试配置 BizTalk Server 环境  
  本主题中所述[步骤 3： 创建负载测试对执行多个单元测试同时](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)，负载测试**BTS_Messaging_Step**配置为执行单元测试**BTSMessaging**和**BTSMessaging2**。 反过来，这些单元测试加载消息 C:\Projects\LoadTest\BTSLoad\TestMessages\TestXmlDocument.xml 的副本，并将其发送到终结点**BTSMessagingEP**和**BTSMessagingEP2**中定义项目的应用程序配置 (app.config) 文件的以下部分：  
   
- \<\!---> BTSMessagingEP\<终结点 address="net.tcp://*BizTalk 服务器计算机*: 8123/btsloadtest"绑定 ="netTcpBinding"bindingConfiguration ="netTcpBinding"协定 ="System.ServiceModel.Channels.IRequestChannel"名称 ="BTSMessagingEP"/ >\<终结点 address="net.tcp://*BizTalk 服务器计算机*: 8123/btsloadtest"绑定 ="netTcpBinding"bindingConfiguration ="netTcpBinding"contract="System.ServiceModel.Channels.IRequestChannel"名称 ="BTSMessagingEP2"/ >  
+ \<\!-BTSMessagingEP-\>\<终结点 address="net.tcp://*BizTalk 服务器计算机*: 8123/btsloadtest"绑定 ="netTcpBinding"bindingConfiguration ="netTcpBinding"协定 ="System.ServiceModel.Channels.IRequestChannel"名称 ="BTSMessagingEP"/\>\<终结点 address="net.tcp://*BizTalk 服务器计算机*: 8123/btsloadtest"绑定 ="netTcpBinding"bindingConfiguration ="netTcpBinding"contract="System.ServiceModel.Channels.IRequestChannel"名称 ="BTSMessagingEP2"/                  \>  
   
 > [!NOTE]
 >  如前文所述， *BizTalk 服务器计算机*是一个占位符的实际的 BizTalk Server 计算机名，或在情况下，将 BizTalk Server 计算机配置为网络负载平衡 (NLB) 群集; 的成员*BizTalk 服务器计算机*是的名称或地址的相应的 NLB 虚拟服务器的占位符。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 |受信任验证|确保未选中此框。|  
 |仅限 32 位|确保未选中此框。|  
 |将其用作组中的默认主机|确保未选中此框。|  
-|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称 >*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或*\<域名称 >*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称 >*和*\<域名 >*占位符的实际的计算机名称或创建组时使用的域名。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
+|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>*和*\<域名\>*占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
   
  重复执行您遵循创建用来创建"接收"宿主"发送"主机时的步骤。 使用以下属性值配置"接收"主机：  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
 |受信任验证|确保未选中此框。|  
 |仅限 32 位|确保未选中此框。|  
 |将其用作组中的默认主机|确保未选中此框。|  
-|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称 >*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或*\<域名称 >*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称 >*和*\<域名 >*占位符的实际的计算机名称或创建组时使用的域名。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
+|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>*和*\<域名\>*占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
   
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>创建 BizTalk Server 发送的实例，并接收主机  
  请按照 BizTalk Server 文档主题中的步骤[如何添加一个主机实例](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596) 创建并启动 BizTalk Server"发送"主机的实例。 配置要在 BizTalk Server 组中每个 BizTalk 服务器上运行并将每个主机实例配置为带有以下属性值的"发送"主机的实例：  
@@ -139,7 +139,7 @@ ms.lasthandoff: 09/20/2017
   
 |属性|值|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://*\<计算机名称 >*: 2001年/TCP1**重要说明：***\<计算机名称 >*是使用的实际计算机名称的占位符以承载 IndigoService.exe，旨在使用通过 WCF 发送的消息。   由于 IndigoService.exe 需要很少的资源，它通常是完全可以接受用于 BizTalk Server 组数据库的 SQL Server 计算机上运行 IndigoService.exe。 IndigoService.exe 属于 BizTalk 基准向导中，位于[BizTalk 基准向导](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
+|General\Address (URI)|net.tcp://*\<计算机名称\>*: 2001年/TCP1**重要说明：***\<计算机名称\>*是一个占位符对于用于承载 IndigoService.exe 的实际计算机名称，该方法旨在使用通过 WCF 发送的消息。   由于 IndigoService.exe 需要很少的资源，它通常是完全可以接受用于 BizTalk Server 组数据库的 SQL Server 计算机上运行 IndigoService.exe。 IndigoService.exe 属于 BizTalk 基准向导中，位于[BizTalk 基准向导](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
 |Binding\Binding 类型|**customBinding**|  
   
  与大多数 WCF 自定义绑定类型**customBinding**绑定类型公开多个属性，应设置为以下值：  
@@ -181,9 +181,9 @@ ms.lasthandoff: 09/20/2017
   
  然后，通过双击 StartIndigoService.bat 启动 IndigoService.exe。 IndigoService.exe 使用消息发送到 IndigoService.exe.config 文件中指定的终结点：  
   
- \<终结点地址 ="net.tcp: //localhost: 2001年/TCP1"绑定 ="netTcpBinding"bindingConfiguration ="Binding1"名称 ="endpoint1"contract="IndigoService.IServiceTwoWaysVoidNonTransactional"/ >  
+ \<终结点地址 ="net.tcp: //localhost: 2001年/TCP1"绑定 ="netTcpBinding"bindingConfiguration ="Binding1"名称 ="endpoint1"contract="IndigoService.IServiceTwoWaysVoidNonTransactional"/\>  
   
- 这就是为什么发送端口地址配置与地址 (URI) 的 net.tcp://*\<计算机名称 >*: 2001年/TCP1  
+ 这就是为什么发送端口地址配置与地址 (URI) 的 net.tcp://*\<计算机名称\>*: 2001年/TCP1  
   
  由于 IndigoService.exe 需要很少的资源，它通常是完全可以接受用于 BizTalk Server 数据库的 SQL Server 计算机上运行 IndigoService.exe。  
   

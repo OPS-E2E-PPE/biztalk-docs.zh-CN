@@ -18,11 +18,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e1acb31455bfcf81ab9d4cb3e983f2614fce1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eba9aee72bfbd3197437011950f23fd7a31e2ccb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>如何使用 BizTalk WCF 服务发布向导将架构发布为 WCF 服务
 可使用 BizTalk WCF 服务发布向导将架构发布为 WCF 服务。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  上**WCF 服务类型**页上，选中或清除**启用元数据终结点**复选框以指示是否隔离的 WCF 接收由 Internet 信息服务 (IIS) 承载的位置将发布使用 HTTP/GET 请求进行检索的服务元数据。  
   
-     选中此复选框后，向导将生成的 Web.config 文件在其中**httpGetEnabled**属性 **\<serviceMetadata >**元素设置为**true**. 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址为终结点地址加上**？ wsdl**查询字符串。  
+     选中此复选框后，向导将生成的 Web.config 文件在其中**httpGetEnabled**属性 **\<serviceMetadata\>** 元素设置为**true**。 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址为终结点地址加上**？ wsdl**查询字符串。  
   
     > [!NOTE]
     >  为了避免无意中泄漏可能敏感的服务元数据，建议在生产环境中禁用此行为。 这可通过将 httpgetenabled 设置为 false 完成，或删除 MEX 虚拟目录。  
@@ -94,7 +94,7 @@ ms.lasthandoff: 09/20/2017
   
      ![WCF 服务属性页](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-11. 上**WCF 服务位置**页上，在**位置**文本框中，键入中生成的 WCF 服务的 Web 目录名称。 你可以接受默认位置 (http://localhost/\<*Web 服务描述名称*>)，键入用于中的 WCF 服务的位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+11. 上**WCF 服务位置**页上，在**位置**文本框中，键入中生成的 WCF 服务的 Web 目录名称。 你可以接受默认位置 (http://localhost/ <*Web 服务描述名称*>)，键入用于中的 WCF 服务的位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
   
     -   **覆盖现有项目。** 此选项是 Web 目录已存在时才可用。 仅当选择了此选项时，您才能够发布到同一位置。 否则，必须输入不同的项目位置。  
   
@@ -105,10 +105,10 @@ ms.lasthandoff: 09/20/2017
      ![WCF 服务位置页](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到不同的服务器，键入项目名称为 http://\<*servername*>/\<*WCF 服务位置*>。  
+    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到不同的服务器，键入项目名称，作为 http://&lt*servername*>/<*WCF 服务位置*>。  
   
     > [!NOTE]
-    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://\<*servername*>: 8080 /\<*WCF 服务位置*>。  
+    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://&lt*servername*>: 8080 / <*WCF 服务位置*>。  
   
     > [!NOTE]
     >  在使用向导创建接收位置时，向导会使用默认值创建接收位置。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**管道。 如果通过已发布的 WCF 服务接收的消息需要任何特殊的管道处理 （例如，验证、 相关/属性提升或入站/出站映射），则应将接收管道设置为**Microsoft.BizTalk.DefaultPipelines.XMLReceive**，或通过使用 BizTalk 管理控制台的自定义管道。  

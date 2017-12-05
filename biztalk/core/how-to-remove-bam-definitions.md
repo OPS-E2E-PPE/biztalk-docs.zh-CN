@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bce5454528b3dc1cf0feb54a52eae2008e607811
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa02b24ed7d0c7ac09162f486df629bf027d13b9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-definitions"></a>如何删除 BAM 定义
 管理员使用**删除所有**BAM 管理实用工具删除所有视图和特定 BAM 定义文件的基础活动表的命令。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  类型**bm 删除全部 DefinitionFile:\<def 文件 >**。  
+3.  类型**bm 删除全部 DefinitionFile:\<def 文件\>**。  
   
 4.  按 Enter。  
   

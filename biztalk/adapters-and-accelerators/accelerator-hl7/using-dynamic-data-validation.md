@@ -15,14 +15,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c08393b8e6d4b2563d6fb7ccdf49559943538ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3387117648329828c9276545eafddca6872c4aa2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-dynamic-data-validation"></a>使用动态数据验证
-动态数据验证的一个重要部分正在验证针对动态数据，其中包括验证的消息格式和消息内容的消息内容。 文档架构，其中[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] XSD 文件中实现、 定义和验证消息格式。 业务规则定义消息内容，其中[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过业务规则引擎策略验证。 内容验证可以包括确认消息实例中的数据与可能随相对频率发生变化的数据匹配。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]以动态方式实现这种类型的验证，以便你可以更新在生产环境中，此数据，而无需重新编译代码，或关闭服务。  
+动态数据验证的一个重要部分正在验证针对动态数据，其中包括验证的消息格式和消息内容的消息内容。 文档架构，其中[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server XSD 文件中实现、 定义和验证消息格式。 业务规则定义消息内容，其中[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过业务规则引擎策略验证。 内容验证可以包括确认消息实例中的数据与可能随相对频率发生变化的数据匹配。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]以动态方式实现这种类型的验证，以便你可以更新在生产环境中，此数据，而无需重新编译代码，或关闭服务。  
   
 ## <a name="validate-and-expose-data"></a>验证和公开这样的数据  
  在执行动态数据验证 (DDV) 有两个步骤：  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 -   您可将规则在设计时在业务规则编辑器用户界面或直接在业务规则语言 (BRL) XML 文本编辑器中。  
   
- 有关业务规则和业务规则引擎的详细信息，请参阅"开发与业务规则"中[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关业务规则和业务规则引擎的详细信息，请参阅"开发与业务规则"BizTalk Server 帮助中。  
   
 ## <a name="extending-ddv"></a>扩展 DDV  
  如果您更改 HL7 基于跨字段验证或数据类型验证，则必须将记录以下两项操作：  
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [编程指南](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)   
- [消息扩充教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

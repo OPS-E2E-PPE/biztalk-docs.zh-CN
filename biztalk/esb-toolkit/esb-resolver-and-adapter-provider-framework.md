@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cd96da053bad370d635c804df41badf10a7c154
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c23fa8aca6def654b594d8b4fccf5d584e12fed4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a>ESB 冲突解决程序和适配器提供程序框架
-冲突解决程序和适配器提供程序框架提供了全面的、 可插入体系结构动态解析终结点信息和[!INCLUDE[prague](../includes/prague-md.md)]映射类型。 它使用可扩展的组件，允许开发人员更改行为，以便根据其自己的需求和扩展以支持备选解决方案和路由方法的机制。  
+冲突解决程序和适配器提供程序框架提供一个全面的、 可插入体系结构来动态解析终结点信息和 BizTalk Server 映射类型。 它使用可扩展的组件，允许开发人员更改行为，以便根据其自己的需求和扩展以支持备选解决方案和路由方法的机制。  
   
  冲突解决程序和适配器提供程序框架提供的支持通用的说明，发现和集成 (UDDI)、 业务规则引擎 (BRE) 和 XML 路径语言 (XPath)。 它还使开发人员接口 (**IResolveProvider**和**IAdapterProvider**) 以允许创建自定义冲突解决程序和适配器组件。 冲突解决程序和适配器提供程序框架的三个主要组件如下：  
   

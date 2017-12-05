@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf635712e7cafa534f7b6441407e4ec31e8bf047
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-sending-and-receiving"></a>规划用于发送和接收
 处理的几乎每个文档[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]由接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收适配器，并从发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送适配器。 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器因此突出图中任何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，务必要提前计划来确定哪些适配器或快捷键，你将使用以及如何正确配置这些适配器和/或快捷键。  
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
 |TIBCO Enterprise Message Service|用于在 BizTalk Server 和 TIBCO EMS 服务器间交换 XML 和二进制数据格式消息，可提供一个高度整合的可靠的应用程序基础结构。|4.2|  
 |WebSphere MQ|用于在 BizTalk Server 和 IBM WebSphere MQ 间交换消息。|5.3 修复包 10 或更高版本和 6.0 修复包 1.1 或更高版本|  
   
- 有关适用于的 LOB 适配器详细信息[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，请参阅[BizTalk Server 2010 中包含的适配器](http://go.microsoft.com/fwlink/?LinkId=152664)(http://go.microsoft.com/fwlink/?LinkId=152664)。  
+ 有关可用与 BizTalk Server 的 LOB 适配器的详细信息，请参阅[BizTalk Server 2010 中包含的适配器](http://go.microsoft.com/fwlink/?LinkId=152664)(http://go.microsoft.com/fwlink/?LinkId=152664)。  
   
 ## <a name="biztalk-adapter-pack"></a>BizTalk 适配器包  
  Microsoft[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]包含基于 WCF 的适配器，以提供到 LOB 应用程序，例如 Oracle 数据库、 Oracle E-business Suite、 SAP、 Siebel 和 SQL Server 的连接。 有关可使用的适配器列表[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]，请参阅[BizTalk 适配器包](http://go.microsoft.com/fwlink/?LinkId=152665)(http://go.microsoft.com/fwlink/?LinkId=152665)。  
@@ -186,4 +186,4 @@ ms.lasthandoff: 09/20/2017
 -   如果业务流程用于的处理应使用的消息，仅业务流程的单个实例，应将业务流程配置为使用顺序保护和**按序送达**属性业务流程的接收端口应设置为**True**。  
   
 ## <a name="see-also"></a>另请参阅  
- [BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)
+ [为 BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)

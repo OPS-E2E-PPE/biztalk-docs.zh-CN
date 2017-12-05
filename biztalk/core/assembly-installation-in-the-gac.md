@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e48ec0dddcf17be70b915d2beb058f1ab2f6f576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25af22c85602c323b87340cce8b740fe5b68accb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembly-installation-in-the-gac"></a>程序集安装在 gac 中
 每台计算机都包含全局程序集缓存 (GAC)，其中包含该计算机上的一个或多个应用程序所使用的程序集。 为使 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 能够在运行时处理消息，BizTalk 应用程序中包括的程序集必须位于运行该应用程序的计算机的 GAC 中。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
      此外，你可以配置部署选项在任何时间之后部署到程序集或将其添加到应用程序中所述[如何修改 BizTalk 程序集的部署选项](../core/how-to-modify-the-deployment-options-of-a-biztalk-assembly.md)。 当将程序集部署到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]第一次，在管理控制台中的部署选项设置，如下所示： 启用 GAC 上安装并导入 GAC 已禁用。 如果对这些设置进行更改，所做的更改仍将有效如果程序集从重新部署[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
--   **拖放。** 使用 Windows 资源管理器，你可以拖放到的程序集文件\< *Windows 文件夹*> \assembly。  
+-   **拖放。** 使用 Windows 资源管理器，你可以拖放到的程序集文件\< *Windows 文件夹*\>\assembly。  
   
 -   **其他方法。** 还可以选择其他工具和方法，包括使用 Windows Installer 或第三方厂商开发的工具，将程序集安装到 GAC 中。  
   
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)   
- [了解 BizTalk 应用程序部署和管理](../core/understanding-biztalk-application-deployment-and-management.md)
+ [了解 BizTalk 应用程序的部署和管理](../core/understanding-biztalk-application-deployment-and-management.md)

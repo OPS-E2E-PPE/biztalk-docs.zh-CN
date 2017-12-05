@@ -12,16 +12,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55d33b164033cdd3b966ed1f0e77dd551cd56076
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 853b77e24359d6a833d526fc07166384ea946887
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="privateinitiator-sample"></a>PrivateInitiator 示例
-PrivateInitiator.odx 示例包含 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 安装的发起方专用流程的代码。 此通用专用流程从基于默认的 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。  
+PrivateInitiator.odx 示例包含通过安装发起程序专用进程的代码[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server。 此通用专用流程从基于默认的 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。  
   
- 默认情况下，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装中的示例\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > RosettaNet\SDK\ 快捷键PrivateInitiator。  
+ 默认情况下，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装中的示例\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\PrivateInitiator 快捷键。  
   
 ## <a name="sample-contents"></a>示例内容  
  发起方专用流程是发起方内部的业务流程。 该专用流程提供发起方公用流程和后端业务线程序之间的后端集成。 发起方专用流程与公用流程进行通信以发起消息。  
@@ -32,4 +32,4 @@ PrivateInitiator.odx 示例包含 [!INCLUDE[btsCoName](../../includes/btsconame-
   
 ## <a name="see-also"></a>另请参阅  
  [业务流程示例](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md)   
- [私有进程](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)
+ [专用流程](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)

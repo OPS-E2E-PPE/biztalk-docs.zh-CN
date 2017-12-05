@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6aa6f1f3417bbfe7858ab8e1ef29d7155b6528c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2c89bc75871d19939846a587ff23730c05022c7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="the-supply-chain-solution"></a>供应链解决方案
 技术有助于解决与业务流程和数据通信相关的业务难题。 信息技术 (IT) 系统可以帮助高科技公司，将他们与贸易合作伙伴的通信从分离且不兼容的流程转变为一体化的标准流程。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  在此系统中，贸易合作伙伴间的标准接口为 RosettaNet 实现框架 (RNIF) 连接。 此系统用自动 RNIF 连接代替了所有自定义交互和手动交互，从而实现了与 RosettaNet 的兼容。 这并不妨碍公司自定义各自的系统，不妨碍公司与合作伙伴创建协议，也不妨碍在希望使用或必须使用时使用其他通信设备。 合作伙伴可以根据自己的需要灵活地自定义此系统。 但这毕竟意味着，在日常的数据通信中所有的合作伙伴要使用统一的流程。  
   
- 此供应链中的所有公司共享一个 RNIF 连接。 对于大型公司，您可以设置完全自动化的企业系统使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 对于某个贸易合作伙伴，您也可以让其使用已安装的任何 RosettaNet 兼容实现，或继续使用 EDI 系统。 另一方面，小型公司可能不具备安装完整 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 系统所需的资源。 对于这些公司而言，您可以设置 Web Services 使他们能够连接到供应链系统。 在这种情况下，唯一的技术要求是 Web 浏览器。 在上述几种情况下，系统中的所有公司都使用统一的方法与合作伙伴连接。  
+ 此供应链中的所有公司共享一个 RNIF 连接。 对于大型公司，您可以设置完全自动化的企业系统使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 对于某个贸易合作伙伴，您也可以让其使用已安装的任何 RosettaNet 兼容实现，或继续使用 EDI 系统。 另一方面，小型公司可能不具备安装完整 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 系统所需的资源。 对于这些公司而言，您可以设置 Web Services 使他们能够连接到供应链系统。 在这种情况下，唯一的技术要求是 Web 浏览器。 在上述几种情况下，系统中的所有公司都使用统一的方法与合作伙伴连接。  
   
 ## <a name="the-benefits-of-standardization"></a>标准化的优点  
  公司可以通过电子手段进行数据交换，而不必加入完整的集成系统。 但是，如果不同的贸易伙伴以不同的格式维护数据，而且他们的系统通过不同的数据协议进行数据传输，那么，可能需要对数据交换进行大量的设计与自定义工作。 如果每个已连接的合作伙伴将其数据交换所用的格式与协议标准化，那么，将极大地提高业务往来的效率。  
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [示例供应链方案](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md)   
  [供应链挑战](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)   
- [需贸易合作伙伴集成](../../adapters-and-accelerators/accelerator-rosettanet/the-need-for-trading-partner-integration.md)
+ [对贸易合作伙伴集成的需求](../../adapters-and-accelerators/accelerator-rosettanet/the-need-for-trading-partner-integration.md)

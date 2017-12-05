@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1370b4877c2e32055e2ee0a0aca1f922bd8668a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d438a6fa68136b05b358a81f4b026350d92a6af4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a>第 2 课： 添加平面文件发送端口
 在本课程中，你可以配置发送端口和发送位置。 发送端口用于定义要发送的消息的方式。 你还创建了发送的消息文件文件夹位置。  
@@ -38,9 +38,9 @@ ms.lasthandoff: 09/20/2017
   
 5.  在文件传输属性对话框中，单击**浏览**。  
   
-6.  在浏览文件夹对话框中，移动到**\<驱动器 >: \Labs**文件夹，，然后单击**新建文件夹**。  
+6.  在浏览文件夹对话框中，移动到**\<驱动器\>: \Labs**文件夹，，然后单击**新建文件夹**。  
   
-7.  创建**出站**文件夹中的**\<驱动器 >: \Labs**，然后单击**确定**。  
+7.  创建**出站**文件夹中的**\<驱动器\>: \Labs**，然后单击**确定**。  
   
 8.  在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。  
   

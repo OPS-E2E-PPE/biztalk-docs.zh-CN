@@ -16,14 +16,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19ff35b515e70c21e2349ae54847ba312d7ce0f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e7d693cdf70f7d29a79aa8999dde49f408b8815
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="data-types-common-schemas"></a>数据类型的通用架构
- **Datatypes_*\<版本 >*.xsd * * 架构文件 (其中*\<版本 >*是 HL7 版本号) 包含的定义所有 HL7 基本和复合数据类型的相应的 HL7 版本。 Segments_*\<版本 >*.xsd 文件使用此文件与相应的 HL7 版本匹配。 DataStructures Access 数据库表生成 DataTypes_*\<版本 >*.xsd 架构文件。 下面的示例是 HL7 基本数据类型的条目**ST**:  
+ **Datatypes_*\<版本\>*.xsd * * 架构文件 (其中*\<版本\>*是 HL7 版本号) 包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。 Segments_*\<版本\>*.xsd 文件使用此文件与相应的 HL7 版本匹配。 DataStructures Access 数据库表生成 DataTypes_*\<版本\>*.xsd 架构文件。 下面的示例是 HL7 基本数据类型的条目**ST**:  
   
 ```  
 <xsd:simpleType name="ST">  

@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2997b4db8b0c1be353d4ff88166716d21059cea6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9478026980ecaf3e2049773737250c56d18262c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---table-looping-data-not-valid"></a>错误-循环不是有效的数据的表
 **错误代码**  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 确保的输入的参数**表循环**functoid，如通过访问**输入参数**属性和**配置\<Functoid > Functoid**对话框中，是下表中所示。  
+ 确保的输入的参数**表循环**functoid，如通过访问**输入参数**属性和**配置\<Functoid\>Functoid**对话框中，是下表中所示。  
   
 |“表循环”functoid 输入参数编号|Description|  
 |---------------------------------------------------|-----------------|  

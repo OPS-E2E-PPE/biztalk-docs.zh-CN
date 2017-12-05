@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c03f11ad2849b3d46e9e489a1657aa043fb0e61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ac179adbc2e49b767ecae2a68676c5692dcd385
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>步骤 1： 使用 Oracle E-business 适配器来创建和发布 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]从[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
   
- 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
+ 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
 > [!NOTE]
 >  你还必须运行 Microsoft Office SharePoint Server 示例来创建与提供的 create_apps_artifacts.sql 脚本**MS_SAMPLE_EMPLOYEE**接口中的表**应用程序对象库**应用程序。 在本教程中使用此接口表。  
@@ -186,7 +186,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
     ```  
   
     > [!NOTE]
-    >  必须将 WCF 服务发布到已启用 SSL 的位置。 换而言之中的值**目标位置**框必须以"https://"开头。 由于 HTTP 标头中传递的用户凭据，该向导将自动配置适配器的绑定行为，以作为安全模式，这意味着 SSL 加密中使用"传输"。 你可以当然返回，并编辑 web.config 文件以更改的值**\<安全模式 >**参数，但使用 SSL 时始终是更好的选择具有中以明文形式传输敏感信息HTTP 标头。  
+    >  必须将 WCF 服务发布到已启用 SSL 的位置。 换而言之中的值**目标位置**框必须以"https://"开头。 由于 HTTP 标头中传递的用户凭据，该向导将自动配置适配器的绑定行为，以作为安全模式，这意味着 SSL 加密中使用"传输"。 你可以当然返回，并编辑 web.config 文件以更改的值**\<安全模式\>**参数，但使用 SSL 时始终是更好的选择具有以明文传输敏感信息HTTP 标头中的文本。  
   
 3.  从**复制**框中，单击**所有项目文件**。  
   
@@ -196,7 +196,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
   
     1.  启动 IIS Microsoft 管理控制台。 单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-    2.  导航到在其中发布服务的节点。 有关**MS_SAMPLE_EMPLOYEE**服务中，导航到**Internet Information Services** > **\<计算机名称 >**  > **网站** > **Default Web Site** > **MS_SAMPLE_EMPLOYEE**。  
+    2.  导航到在其中发布服务的节点。 有关**MS_SAMPLE_EMPLOYEE**服务中，导航到**Internet Information Services** > **\<计算机名称\>**  > **网站** > **Default Web Site** > **MS_SAMPLE_EMPLOYEE**。  
   
     3.  在右窗格中，右键单击 InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.svc 文件，然后单击**浏览**。  
   

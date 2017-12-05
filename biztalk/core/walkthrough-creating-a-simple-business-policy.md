@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c894ab80926d2fad66af540c492dd053570aaa4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1eb4f21cf9311399ef6092b95fa818547679a240
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a>演练： 创建简单的业务策略
 本演练提供了使用业务规则编辑器创建名为的简单的业务策略的分步过程**ProcessPurchaseOrder**包含一个名为规则**ApprovedRule**。 **ApprovedRule**规则需要用户提交 XML 文档作为一个事实中，并设置的值**状态**字段到文档中**已批准**如果的值**数量**字段是否小于或等于**500**。  
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
 8.  在属性窗口中，更改值**文档类型**属性从**PO**到**RuleTest.PO**。  
   
     > [!NOTE]
-    >  你将需要创建一个名为的 BizTalk 项目**RuleTest**后面[演练： 调用从业务流程策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练。 在于演练中，你将添加**PO.xsd**到项目文件中，创建时，将调用一个业务流程**ProcessPurchaseOrder**策略，以及然后测试策略。 若要测试的策略与业务流程，你需要确保你更改**文档类型**属性**\<项目名称 >。\<SchemaName >**，即**RuleTest.PO**在这种情况下。  
+    >  你将需要创建一个名为的 BizTalk 项目**RuleTest**后面[演练： 调用从业务流程策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练。 在于演练中，你将添加**PO.xsd**到项目文件中，创建时，将调用一个业务流程**ProcessPurchaseOrder**策略，以及然后测试策略。 若要测试的策略与业务流程，你需要确保你更改**文档类型**属性**\<项目名称\>。\<SchemaName\>**，即**RuleTest.PO**在这种情况下。  
   
      ![BRE &#45;演练 &#45;ChangeDocType](../core/media/e9a370fd-d9b2-48f0-ad0e-85a5428a9c21.gif "e9a370fd-d9b2-48f0-ad0e-85a5428a9c21")  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
      ![业务规则编辑器 &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")  
   
-14. 在 THEN 窗格中，单击**\<输入值 >**然后键入**已批准**。  
+14. 在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。  
   
 15. 在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。  
   
@@ -146,4 +146,4 @@ ms.lasthandoff: 09/20/2017
  现在，你已完成本演练中，执行[演练： 测试策略](../core/walkthrough-testing-the-policy.md)演练中，这为你提供用于测试的分步说明**ProcessPurchaseOrder**策略你在本演练中创建。  
   
 ## <a name="see-also"></a>另请参阅  
- [有关业务规则](../core/about-business-rules.md)
+ [关于业务规则](../core/about-business-rules.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0788b693027fb803b121b1b732cb3ee126897e7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f7966fccca324a1453f0ea84e79cd7d9d3d55ad
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-on-the-destination-url-property"></a>在目标 URL 属性上的限制
 目标 URL 是指定要在其中使用 HTTP 协议发送消息的 HTTP 服务器地址的字符串。  
@@ -28,11 +28,11 @@ ms.lasthandoff: 09/20/2017
   
 -   必须始终采用以下格式指定目标 URL 属性：  
   
-     http [s]://\<主机 > [:\<端口 >] [/\<路径 > [/\<文件 > [？\<查询字符串 >]]]  
+     http [s]://\<主机\>[:\<端口\>] [/\<路径\>[/\<文件\>[？\<查询字符串\>]]]  
   
 -   整个字符串可以采用 URI 编码，也可不采用 URI 编码。  
   
--   整个字符串，除查询字符串中，不能包含任何以下字符： \< >: \ &#124;" ? *.  
+-   整个字符串，除查询字符串中，不能包含任何以下字符： \< \> : \ &#124;" ? *.  
   
 -   该属性不区分大小写。  
   

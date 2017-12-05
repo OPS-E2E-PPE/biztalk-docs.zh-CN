@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971a9c69e98bf894d41d5e23d0e852162c2ab139
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21168c1955db8bbbae3e29019632807231b40a1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>如何移动 BAM 分析数据库
 可以使用此过程将 BAM 分析数据库移到另一台服务器。  从端到端方案的角度看，移动 BAM 分析数据库涉及到两个主要步骤：  
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-    2.  在运行 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的计算机中，浏览至以下文件夹：  
+    2.  在运行 BizTalk Server 的计算机，浏览到以下文件夹：  
   
         -   如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装在 64 位版本的 Windows Server 上：  
   
@@ -78,10 +78,10 @@ ms.lasthandoff: 09/20/2017
   
     3.  在命令提示符下，键入：  
   
-         **Bm.exe get-config –filename:BAMConfiguration.xml-server:\<服务器名称 >-数据库：\<数据库 >**  
+         **Bm.exe get-config –filename:BAMConfiguration.xml-server:\<servername\> -数据库：\<数据库\>**  
   
         > [!NOTE]  
-        >  运行此命令时, 替换从其获取的配置信息的服务器的实际名称\<servername >，用替换从其获取的配置信息的数据库的实际名称\<数据库 >。 有关使用 BAM 管理 (BM) 实用工具的详细信息，请参阅[基础结构管理命令](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
+        >  运行此命令时, 替换从其获取的配置信息的服务器的实际名称\<servername\>和替换从其获取的配置信息的数据库的实际名称\<数据库\>。 有关使用 BAM 管理 (BM) 实用工具的详细信息，请参阅[基础结构管理命令](http://go.microsoft.com/fwlink/?LinkId=156516)(http://go.microsoft.com/fwlink/?LinkId=156516) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
   
 2.  编辑 BAMConfiguration.xml 文件并将更改**ServerName**中`<DeploymentUnit Name="AnalysisDatabase">`到新的服务器名称的部分。  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-5.  在运行 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的计算机中，浏览至以下文件夹：  
+5.  在运行 BizTalk Server 的计算机，浏览到以下文件夹：  
   
     -   如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装在 64 位版本的 Windows Server 上：  
   

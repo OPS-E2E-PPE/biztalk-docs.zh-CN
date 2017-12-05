@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15952ef3cc8f19eaa5de1a4155d0dc7f6e03c5c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ef4a96542bcf2a7deae4911c6ee81fa846d0766f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-resolver-with-a-unity-container"></a>使用 Unity 容器中创建自定义冲突解决程序
 你可以创建使用自定义解析程序[Unity 应用程序块](http://go.microsoft.com/fwlink/?LinkId=188286)(Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) 的解析逻辑和元数据源的运行时依赖关系注入。
@@ -30,12 +30,12 @@ ms.lasthandoff: 09/20/2017
  下面的代码演示了包含事实提供程序中的逻辑。 此代码还可以在 ESB ItineraryStaticFactProvider.cs 文件中找到。Resolver.Itinerary.Facts 项目。 它是在从解析程序连接字符串中收集的名称和版本的一条路线路线静态冲突解决程序组件。  
   
 ```csharp  
-public object RegisterFact(IBaseMessage message, IPipelineContext pipelineContext, Dictionary\<string, string> resolverContents)  
+public object RegisterFact(IBaseMessage message, IPipelineContext pipelineContext, Dictionary\<string, string\> resolverContents)  
 {  
     return GetItineraryFactFromResolver(resolverContents);  
 }  
   
-private static object GetItineraryFactFromResolver(Dictionary\<string, string> resolverContents)  
+private static object GetItineraryFactFromResolver(Dictionary\<string, string\> resolverContents)  
 {              
     if (resolverContents == null)  
         throw new ArgumentNullException("resolverContents");  
@@ -61,7 +61,7 @@ private static object GetItineraryFactFromResolver(Dictionary\<string, string> r
  下面的代码演示了一个事实转换器中包含的逻辑。 此代码还可以在 ESB ItineraryStaticFactTranslator.cs 文件中找到。Resolver.Itinerary.Facts 项目。 它是在执行数据库查询，就可以按名称和 （可选） 版本收集的一条路线路线 XML 路线静态冲突解决程序组件。  
   
 ```csharp  
-public void TranslateFact(object[] facts, Dictionary\<string, string> factDictionary)  
+public void TranslateFact(object[] facts, Dictionary\<string, string\> factDictionary)  
 {  
     #region Argument Check  
     if (null == facts) throw new ArgumentNullException("fact");  
@@ -151,7 +151,7 @@ public void Initialize(IUnityContainer container)
  下面的代码演示了解决容器中包含的逻辑。 此代码还可以在 ESB StaticItineraryResolveContainer.cs 文件中找到。Resolver.Itinerary 项目。  
   
 ```csharp  
-public Dictionary\<string, string> Resolve(ResolverInfo resolverInfo,  
+public Dictionary\<string, string\> Resolve(ResolverInfo resolverInfo,  
     XLANGMessage message)  
 {  
     #region Argument Check  
@@ -169,14 +169,14 @@ public Dictionary\<string, string> Resolve(ResolverInfo resolverInfo,
      );  
 }          
   
-private Dictionary\<string, string> ResolveStatic(string config, string resolver,   
-    Func<IFactProvider, Dictionary\<string, string>, object> RegisterFact)  
+private Dictionary\<string, string\> ResolveStatic(string config, string resolver,   
+    Func<IFactProvider, Dictionary\<string, string\>, object> RegisterFact)  
 {  
     try  
     {  
         EventLogger.Write(string.Format("Received {0} value in ITINERARY STATIC resolver.", config));  
   
-        Dictionary\<string, string> queryParams =  
+        Dictionary\<string, string\> queryParams =  
                 ResolverMgr.GetFacts(config, resolver);  
   
         List<object> facts = new List<object>();  
@@ -186,7 +186,7 @@ private Dictionary\<string, string> ResolveStatic(string config, string resolver
             facts.Add(RegisterFact(factProvider, queryParams));  
         }  
   
-        Dictionary\<string, string> resolverDictionary = new Dictionary\<string, string>();  
+        Dictionary\<string, string\> resolverDictionary = new Dictionary\<string, string\>();  
   
         object[] convertedFacts = facts.ToArray();  
   
@@ -230,15 +230,15 @@ private Dictionary\<string, string> ResolveStatic(string config, string resolver
   
 ```xml  
 <typeAliases>  
-     \<!-- Lifetime manager types -->  
+     <!-- Lifetime manager types -->  
      <typeAlias alias="singleton" type="Microsoft.Practices.Unity.ContainerControlledLifetimeManager, Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />  
-     \<!-- std type providers -->  
+     <!-- std type providers -->  
      <typeAlias alias="string" type="System.String, mscorlib"/>  
      <typeAlias alias="int" type="System.Int32, mscorlib"/>  
-     \<!-- repository providers -->  
+     <!-- repository providers -->  
      <typeAlias alias="IRepositoryProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.Facts.Repository.IRepositoryProvider, Microsoft.Practices.ESB.Resolver.Itinerary.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="SqlRepositoryProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.DataAccess.SqlRepositoryProvider, Microsoft.Practices.ESB.Resolver.Itinerary.DataAccess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
-     \<!-- fact providers -->  
+     <!-- fact providers -->  
      <typeAlias alias="IFactProvider" type="Microsoft.Practices.ESB.Resolver.Facts.IFactProvider, Microsoft.Practices.ESB.Resolver.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="IFactTranslator" type="Microsoft.Practices.ESB.Resolver.Facts.IFactTranslator, Microsoft.Practices.ESB.Resolver.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="ItineraryFactProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.Facts.ItineraryFactProvider, Microsoft.Practices.ESB.Resolver.Itinerary.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
@@ -247,7 +247,7 @@ private Dictionary\<string, string> ResolveStatic(string config, string resolver
      <typeAlias alias="ResolutionFactProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.Facts.ResolutionFactProvider, Microsoft.Practices.ESB.Resolver.Itinerary.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="DefaultFactTranslator" type="Microsoft.Practices.ESB.Resolver.Facts.DefaultFactTranslator, Microsoft.Practices.ESB.Resolver.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="ItineraryFactTranslator" type="Microsoft.Practices.ESB.Resolver.Itinerary.Facts.ItineraryFactTranslator, Microsoft.Practices.ESB.Resolver.Itinerary.Facts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
-     \<!-- resolve providers -->  
+     <!-- resolve providers -->  
      <typeAlias alias="IResolveProvider" type="Microsoft.Practices.ESB.Resolver.IResolveProvider, Microsoft.Practices.ESB.Resolver, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22"/>  
      <typeAlias alias="ItineraryResolveProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.BREItineraryResolverContainer,Microsoft.Practices.ESB.Resolver.Itinerary, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22 "/>  
      <typeAlias alias="StaticItineraryResolveProvider" type="Microsoft.Practices.ESB.Resolver.Itinerary.StaticItineraryResolveContainer,Microsoft.Practices.ESB.Resolver.Itinerary, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22 "/>  
@@ -305,7 +305,7 @@ private Dictionary\<string, string> ResolveStatic(string config, string resolver
   
 3.  与实现的类创建一个程序集**IResolveContainer**和**IResolveProvider**接口并包含**解决**验证的方法解析程序配置，从事实提供程序收集的所有事实数据、 执行任何特殊的处理，会将它们使用的事实转换器，转换和实例的形式返回的已翻译的事实数据**字典**类。  
   
-4.  通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序 >**包含根名字对象作为元素**名称**属性和完全限定程序集名称作为**类型**属性。  
+4.  通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>**包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。  
   
 5.  此解析程序将添加到 Esb.config 文件特定于 Unity 的配置。  
   

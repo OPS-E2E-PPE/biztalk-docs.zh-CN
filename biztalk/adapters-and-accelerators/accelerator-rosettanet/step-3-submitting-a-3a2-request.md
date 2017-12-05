@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32122b2c77ee0e69f7890b5a681954ba986e220
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 312e5980636d211f1e023331826e016eb141eb4b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-submitting-a-3a2-request"></a>步骤 3： 提交 3A2 请求
 在此步骤中，将使用 3A2 - 请求价格与可用性的合作伙伴接口流程 (PIP) 准备并提交请求。 通过此 PIP，买方组织可以获得有关特定产品的信息，如价格和可用单位数。 然后，买方就可以通过业务规则对获得的信息进行处理，以便确定是否购买相应供应商的产品。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
     |**Pip 实例 ID**|类型**3A2_Test**。|  
     |**消息类别**|类型**操作**。|  
   
-3.  使用记事本或其他文本编辑器，打开在文件 3A2_Request.xml *\<驱动器 >*: \程序 Files\Microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**字段LOBWebApplication。  
+3.  使用记事本或其他文本编辑器，打开在文件 3A2_Request.xml *\<驱动器\>*: \程序 Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**字段LOBWebApplication。  
   
 4.  单击**提交**以提交到 Contoso 计算机 3A2 请求。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在 Microsoft SQL Server Management Studio 中，单击**新查询**。  
   
-4.  在\<表 > 文本框中，选择**BTARNDATA**从列表中。  
+4.  在\<表\>文本框中，选择**BTARNDATA**从列表中。  
   
 5.  在“SQL”窗口中，键入以下 SQL 语句：  
   

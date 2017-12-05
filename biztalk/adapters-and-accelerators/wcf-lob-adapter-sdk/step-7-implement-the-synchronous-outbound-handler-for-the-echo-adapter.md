@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e1ccddee7bb7b08ec363fabd9b7e061cd41357d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a2e2679edafd72dc0d64510e7a8566180818f8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>步骤 7： 为 Echo 适配器实现同步的出站处理程序
 ![9 的第 7 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
@@ -64,13 +64,13 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 -   WCF 输入消息操作 = 操作的节点 ID  
   
--   传入的消息正文 = 开始正文的元素是\<displayname >\<参数名称 > {数据}\</parameter 名称 >\</displayname >  
+-   传入的消息正文 = 开始正文的元素是\<displayname\>\<参数名称\>{数据}\</parameter 名称\>\</displayname\>  
   
  传出的 WCF 响应消息：  
   
 -   WCF 输出消息操作 = 操作的节点 ID +"/ 响应"  
   
--   传出消息正文 = 开始正文的元素是\<displayname +"响应"> 后, 跟\<displayname +"结果">，并且后跟\<数据类型 > 数据\</datatype >\</displayname +"结果 >\</displayname +"响应">  
+-   传出消息正文 = 开始正文的元素是\<displayname +"响应"\>后, 跟\<displayname +"结果"\>，并且后跟\<datatype\>数据\</datatype\>\</displayname+"结果\>\</displayname +"响应"\>  
   
  例如，操作**string [] EchoStrings （字符串数据）**，节点 ID = Echo/EchoStrings，并显示名称 = EchoStrings:  
   
@@ -145,7 +145,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     return null;              
     ```  
   
-4.  现在添加**ExecuteEchoStrings**方法以处理字符串 [] EchoStrings （字符串数据） 操作。 此帮助器函数将读取 WCF 请求消息，检查以 echoInUpperCase URI 元素是否已设置为 true;如果是这样，它将输入的字符串转换为大写形式计数变量指示多次。 然后，它将生成 WCF 响应消息的格式： \<EchoStringsResponse >\<EchoStringResult >\<字符串 > {数据}\</字符串 >\</EchoStringResult >\</EchoStringsResponse >。  
+4.  现在添加**ExecuteEchoStrings**方法以处理字符串 [] EchoStrings （字符串数据） 操作。 此帮助器函数将读取 WCF 请求消息，检查以 echoInUpperCase URI 元素是否已设置为 true;如果是这样，它将输入的字符串转换为大写形式计数变量指示多次。 然后，它将生成 WCF 响应消息的格式： \<EchoStringsResponse\>\<EchoStringResult\>\<字符串\>{数据}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoStrings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -187,7 +187,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-5.  继续通过添加**ExecuteEchoGreetings**方法以处理 EchoGreetings 操作。 此帮助器函数将读取 WCF 请求消息、 操作以及类型解析`ResolveOperationMetadata`和`ResolveTypeMetadata`方法`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`接口，，然后生成 WCF 响应消息使用的格式： \<EchoGreetingsResponse >\<EchoGreetingsResult >...消息...\</EchoGreetingsResult >\</EchoGreetingsResponse >。  
+5.  继续通过添加**ExecuteEchoGreetings**方法以处理 EchoGreetings 操作。 此帮助器函数将读取 WCF 请求消息、 操作以及类型解析`ResolveOperationMetadata`和`ResolveTypeMetadata`方法`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`接口，，然后生成 WCF 响应消息使用的格式： \<EchoGreetingsResponse\>\<EchoGreetingsResult\>...消息...\</EchoGreetingsResult\>\</EchoGreetingsResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoGreetings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -232,7 +232,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  现在添加**ExecuteEchoCustomGreetingFromFile**方法以处理 EchoCustomGreetingFromFile 操作。 此帮助器函数将读取 WCF 请求消息中，从指定的文件中，读取该消息，然后生成 WCF 响应消息使用的格式： \<EchoGreetingsFromFileResponse >\<EchoGreetingsFromFileResult>...消息...\</EchoGreetingsFromFileResult >\</EchoGreetingsFromFileResponse >。  
+6.  现在添加**ExecuteEchoCustomGreetingFromFile**方法以处理 EchoCustomGreetingFromFile 操作。 此帮助器函数将读取 WCF 请求消息中，从指定的文件中，读取该消息，然后生成 WCF 响应消息使用的格式： \<EchoGreetingsFromFileResponse\> \<EchoGreetingsFromFileResult\>...消息...\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoCustomGreetingFromFile(OperationMetadata om, Message message, TimeSpan timeout)  
@@ -287,4 +287,4 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 ## <a name="see-also"></a>另请参阅  
  [步骤 6： 为 Echo 适配器实现的元数据解析处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
- [步骤 8： 为 Echo 适配器实现同步的入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)
+ [步骤 8：实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f4f00c3071bfc67a888c3550edbf9c946bd4524
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a83dd69e7c66c8ce8ff1af78662392dd0aa66ff2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-sap-artifacts-as-a-wcf-service"></a>步骤 1： 发布的 SAP 项目作为一个 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   所需的 SAP 客户端库。  
   
- 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
+ 有关这些先决条件的详细信息，请参阅[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装指南。 安装指南通常安装在\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
 ### <a name="to-publish-the-sap-artifacts-as-a-wcf-service"></a>若要将 SAP 项目作为 WCF 服务发布  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  启动 IIS Microsoft 管理控制台。 单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-    2.  导航到在其中发布服务的节点。 有关**Customer_Order**服务中，导航到**Internet Information Services** > **\<计算机名称 >**  >  **网站** > **Default Web Site** > **Customer_Order**。  
+    2.  导航到在其中发布服务的节点。 有关**Customer_Order**服务中，导航到**Internet Information Services** > **\<计算机名称\>**  > **网站** > **Default Web Site** > **Customer_Order**。  
   
     3.  在右窗格中，右键单击 Rfc.svc 文件，然后单击**浏览**。  
   
@@ -199,4 +199,4 @@ ms.lasthandoff: 09/20/2017
  若要创建的 SAP 项目的应用程序定义文件，使用业务数据目录定义编辑器。 请参阅[步骤 2： 为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)有关的说明。 应用程序定义文件标识存储 LOB 数据和在其中存储的格式。  
   
 ## <a name="see-also"></a>另请参阅  
- [教程 1： 从 SharePoint 站点上的 SAP 系统提供数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [教程 1：在 SharePoint 上提供来自 SAP 系统的数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

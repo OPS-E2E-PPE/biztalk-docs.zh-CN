@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2bb37ae93b45ac1721da582cc0092bda5d67999
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e8b82af2be42342d51429e42d1952816ee0dd07a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="remove-send-port-biztalk-server-sample"></a>删除发送端口 （BizTalk Server 示例）
 删除发送端口示例演示如何取消登记，并删除其中一个或多个发送端口。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\WMI\Remove 发送 Port\  
+ \<*示例路径*\>\Admin\WMI\Remove 发送 Port\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -63,12 +63,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Remove 接收 Port\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Remove 接收 Port\VBScript\  
   
 2.  运行文件 RemoveSendPort.vbs 使用 cscript 程序中，将以下命令行自变量传递：  
   
-     **\<**   
-     ***SendPortName* >。** 要删除的发送端口的名称。 如果发送端口名称包含空格，则将该名称置于引号中。  
+     **\<** ***SendPortName* \>。** 要删除的发送端口的名称。 如果发送端口名称包含空格，则将该名称置于引号中。  
   
      例如：  
   
@@ -82,4 +81,4 @@ ms.lasthandoff: 09/20/2017
  脚本文件 RemoveSendPort.vbs 包含详细的注释，使用更多有关它执行的操作的说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b777c7883001e0b82bf42e6795e11ead1dbeaef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a22881e7694fee872b7820b8b99157ef2cf20170
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="index-functoid"></a>“索引”Functoid
 **索引**functoid 使您能够选择从特定的记录序列中记录的信息。 每个**索引**functoid 从单个字段中收集信息。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
  若要获取的第一天的每日摘要信息，请上限设置为三个**索引**functoid 具有其索引值设置为 1。 若要获取第二天的每日摘要信息，请越小，将设置为三个**索引**functoid 具有它们设置为 2 的索引值。  
   
- **索引**functoid 使用**配置\<Functoid > Functoid**对话框以设置它们的输入的参数。 第一个输入参数标识源架构中循环记录内的某个字段。 第二个和其后的输入参数指定特定的记录。 您可以指定多个索引值以选择嵌套重复结构中的记录。 最内层结构的索引值为第二个参数。 紧临的靠外一层结构的索引值为第三个参数，以此类推。 例如，假设前面**DailySummary**记录已内**WeeklyData**记录。 若要检索**压力**从第一个**DailySummary**在第二个**WeeklyData**，第二个参数应为 1，并且第三个参数将为 2。  
+ **索引**functoid 使用**配置\<Functoid\> Functoid**对话框以设置它们的输入的参数。 第一个输入参数标识源架构中循环记录内的某个字段。 第二个和其后的输入参数指定特定的记录。 您可以指定多个索引值以选择嵌套重复结构中的记录。 最内层结构的索引值为第二个参数。 紧临的靠外一层结构的索引值为第三个参数，以此类推。 例如，假设前面**DailySummary**记录已内**WeeklyData**记录。 若要检索**压力**从第一个**DailySummary**在第二个**WeeklyData**，第二个参数应为 1，并且第三个参数将为 2。  
   
  请注意，此示例假定**压力**字段不重复。 如果字段未重复，索引就不会进入-开始计数便已为**压力**字段，而不是**每日摘要**。  
   
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/20/2017
  [如何在向地图添加索引 Functoid](../core/how-to-add-index-functoids-to-a-map.md)   
  [高级的 Functoid](../core/advanced-functoids.md)   
  [迭代 Functoid](../core/iteration-functoid.md)   
- [记录计数 Functoid](../core/record-count-functoid.md)
+ [“记录计数”Functoid](../core/record-count-functoid.md)

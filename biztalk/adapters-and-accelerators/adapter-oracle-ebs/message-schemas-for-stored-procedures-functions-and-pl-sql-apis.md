@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6364716793e3638d157e1441e369133dc79bda95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 029c48c1e6066d09d43da51b2bb1f6786a516f54
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-stored-procedures-functions-and-plsql-apis"></a>存储的过程、 函数和 PL/SQL Api 的消息架构
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]曲面基础 Oracle 数据库存储的过程、 函数和 PL/SQL Api （存储的过程和函数在一个包内的） 作为操作。 本部分介绍的消息结构和用于调用存储的过程、 函数和 PL/SQL Api 的操作。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |存储的过程请求|`<[SP_NAME] xmlns="[VERSION]/Procedures/[SCHEMA]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|在消息正文中支持 Oracle IN 和 IN OUT 参数|  
 |存储的过程响应|`<[SP_NAME]Response xmlns="[VERSION]/Procedures/[SCHEMA]">   <[PRM1_NAME]>value1<[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|在消息正文中支持 Oracle 出和 IN OUT 参数|  
 |函数请求|`<[FN_NAME] xmlns="[VERSION]/Functions/[SCHEMA] ">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[FN_NAME]>`|在消息正文中支持 Oracle IN 和 IN OUT 参数|  
-|函数响应|`<[FN_NAME]Response xmlns="[VERSION]/Functions/[SCHEMA]">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|在消息正文中支持 Oracle 出和 IN OUT 参数<br /><br /> 函数返回值返回在\<[FN_NAME] 结果 > 元素。 这是在响应消息中的第一个元素。 它位于之前任何参数。|  
+|函数响应|`<[FN_NAME]Response xmlns="[VERSION]/Functions/[SCHEMA]">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|在消息正文中支持 Oracle 出和 IN OUT 参数<br /><br /> 函数返回值返回在\<[FN_NAME] 结果\>元素。 这是在响应消息中的第一个元素。 它位于之前任何参数。|  
 |PL/SQL API 请求|`<[SP_NAME] xmlns="[VERSION]/PackageApis/[SCHEMA]/[PACKAGE_NAME/[SP_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|相同函数或存储的过程|  
 |打包的过程或函数响应|`<[SP_NAME]Response xmlns="[VERSION]/PackageApis/[SCHEMA]/[PACKAGE_NAME]/[SP_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|相同函数或存储的过程|  
   
@@ -100,4 +100,4 @@ Stored Procedure Overload 2:
  [重载] = 重载的参数。 可能的值为 overload1、 overload2，依次类推。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息和用于 Oracle E-business Suite 的 BizTalk Adapter 的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [用于 Oracle E-Business Suite 的 BizTalk 适配器的消息和消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

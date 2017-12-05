@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e445bc1d2fb4dcea719c33a336eec88554e20962
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2f2de6a4c4cae93db90f0fb2cfc79321bfc7b3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-file-adapter"></a>配置文件适配器
 如何配置文件适配器，阅读安全建议，并查看所需的权限。
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
     |--------------|----------------|  
     |**接收文件夹**|必需的。 在文件系统上，网络共享中，输入文件夹的路径或文件在其中接收处理程序的 Azure 文件共享读取文件。 你可以输入直接在路径**接收文件夹**文本框中，或选择从文件系统使用**浏览**按钮。 在浏览文件夹，你还可以创建新文件夹使用**新建文件夹**。<br /><br /> 如果使用 Azure 文件存储共享，则输入`\\yourfilestoragename.file.core.windows.net\yourfilesharename`。 <br /><br />**类型：**字符串 <br/><br/>**注意：**未设置**接收文件夹**NT 分布式文件系统使用的符号链接的文件夹的属性。 如果你使用的 NT 分布式文件系统，你可以仅使用文件夹中文件适配器的直网络路径接收位置。 <br /><br /> 有关此属性的限制，请参阅[限制在配置文件适配器](../core/restrictions-when-configuring-the-file-adapter.md)。 <br/><br/>**注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
     |**文件掩码**|必需的。 指定文件的掩码。 此掩码均可包含的标准通配符值"\*"。<br /><br /> **默认值：** \*.xml<br /><br /> **类型：**字符串<br /><br /> 有关此属性的限制，请参阅[限制在配置文件适配器](../core/restrictions-when-configuring-the-file-adapter.md)。|  
-    |**公共地址**|指定此位置的公用地址。 BizTalk Server 向外部合作伙伴公开此地址。<br /><br /> 如果未指定此属性，则运行时引擎会将其替换为：<br /><br /> file://\<*接收文件夹*>/\<*文件掩码*><br /><br /> 此属性的值要求包含一个适配器前缀。<br /><br /> **类型：**字符串<br /><br /> **最小长度：** 0<br /><br /> **最大长度：** 256|  
+    |**公共地址**|指定此位置的公用地址。 BizTalk Server 向外部合作伙伴公开此地址。<br /><br /> 如果未指定此属性，则运行时引擎会将其替换为：<br /><br /> file://\<*接收文件夹*\>/\<*文件掩码*\><br /><br /> 此属性的值要求包含一个适配器前缀。<br /><br /> **类型：**字符串<br /><br /> **最小长度：** 0<br /><br /> **最大长度：** 256|  
     |**重试计数**|指定尝试访问网络共享上的接收位置（如果该位置暂时不可用）的次数。<br /><br /> **默认值：** 5<br /><br /> **类型：**长<br /><br /> **最小值：** 0<br /><br /> **最大值：** MAX_LONG|  
     |**重试间隔 （分钟）**|指定两次尝试访问网络共享上的接收位置（如果该位置暂时不可用）之间的重试间隔时间（分钟）。<br /><br /> **默认值：** 5 分钟<br /><br /> **类型：**长<br /><br /> **最小值：** 0<br /><br /> **最大值：** MAX_LONG|  
   

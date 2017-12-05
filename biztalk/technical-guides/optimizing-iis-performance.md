@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5b8cae6700328c68c8b6113c8719cf14f76a22c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 93f1bca77aea5aa6c75521e46edc8fc4d01b2d73
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="optimizing-iis-performance"></a>优化 IIS 性能
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>应用 IIS 配置选项来提高 IIS 性能  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  如有必要，单击**应用**中**操作**窗格。  
   
- 禁用调试 ASP.NET 应用程序和 Web 服务通过指定\<编译调试 ="false"/ > web 应用程序的 web.config 文件中的部分。  
+ 禁用调试 ASP.NET 应用程序和 Web 服务通过指定\<编译调试 ="false"\> web 应用程序的 web.config 文件中的部分。  
   
 ### <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>优化每个处理器限制对线程 ASP 属性的值  
  ASP**处理器限制每个线程**属性指定的最大工作线程为每个 IIS 创建的处理器数。 之前的处理器使用率满足至少 50%或更高版本，应增加处理器限制每个线程的值。 此设置可能大大会影响 Web 应用程序的可伸缩性和服务器的性能通常。 因为此属性定义的最大可以同时执行的 ASP 请求数，此设置应保持为默认值，除非你 ASP 应用程序进行扩展的外部组件调用。 在这种情况下，可能会增加处理器限制每个线程的值。 这样做将使要创建更多的线程，以处理更多的并发请求的服务器。 处理器限制每个线程的默认值为 25。 此属性的最大建议的值为 100。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击以展开**限制属性**下**行为**，单击**处理器限制每个线程**，输入所需的值**线程每个处理器限制**单击**应用**中**操作**窗格。  
   
- 有关如何修改中的属性的详细信息\<限制 > 元素的 IIS 7.5/7.0 \<asp > 元素，请参阅[ASP 限制\<限制 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ 有关如何修改中的属性的详细信息\<限制\>元素 IIS 7.5/7.0 \<asp\>元素，请参阅[ASP 限制\<限制\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  由于此属性仅可在服务器级别应用，此属性的修改会影响在服务器运行的所有网站。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  单击以展开**限制属性**下**行为**，单击**队列长度**，输入所需的值**队列长度**，然后单击**应用**中**操作**窗格。  
   
- 有关如何修改中的属性的详细信息\<限制 > 元素的 IIS 7.5/7.0 \<asp > 元素，请参阅[ASP 限制\<限制 >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483)。  
+ 有关如何修改中的属性的详细信息\<限制\>元素 IIS 7.5/7.0 \<asp\>元素，请参阅[ASP 限制\<限制\>](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483)。  
   
 > [!NOTE]  
 >  由于此属性仅可在服务器级别应用，此属性的修改会影响在服务器运行的所有网站。  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
  有关在 IIS 7.5 上配置 ASP.NET 线程使用情况的详细信息，请参阅[ASP.NET 在 IIS 7.0 上的线程使用情况的 Thomas Marquardt 博客](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)。  
   
 ### <a name="configure-aspnet-4-maxconcurrentrequests-for-iis-7570-integrated-mode"></a>为 IIS 7.5/7.0 集成模式下配置 ASP.NET 4 MaxConcurrentRequests  
- .NET Framework 4，maxconcurrentrequestspercpu 配置的默认设置是 5000 的非常大的数字，因此将留出足够的并发执行的异步请求。 有关详细信息，请参阅[ \<applicationPool > 元素 （Web 设置）](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
+ .NET Framework 4，maxconcurrentrequestspercpu 配置的默认设置是 5000 的非常大的数字，因此将留出足够的并发执行的异步请求。 有关详细信息，请参阅[ \<applicationPool\>元素 （Web 设置）](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)。  
   
  对于 IIS 7.5/7.0 集成模式，名为内 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 maxconcurrentrequestspercpu 配置一个 dword 值确定每个 CPU 的并发请求数。 默认情况下，注册表项不存在并且每 CPU 的请求数限制为 5000。  
   

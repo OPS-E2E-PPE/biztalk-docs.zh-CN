@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b27bb8f88686fe1726aed16113ce227347151996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb5a1778fac8577efb3c3c21a10b16f47a026397
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a>SAP 适配器中 SAPConnection 类
 以下部分列出的方法和属性**SAPConnection**类。 这表示与 SAP 应用程序服务器的 ADO.NET 连接。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 |**ChangeDatabase(string)**|不提供支持。|  
 |**Close （)**|关闭到 SAP 系统的连接。|  
 |**CreateCommand()**|返回与此连接关联新 SAPCommand。|  
-|**GetSchema()**|获取发现 SAP 表的列表。 所有发现在 XML 文件 SAPDiscoveredObjects.xml 表才可用。 该文件位于\<安装驱动器 >: \program Files\Microsoft Shared\Adapters\SAP。|  
+|**GetSchema()**|获取发现 SAP 表的列表。 所有发现在 XML 文件 SAPDiscoveredObjects.xml 表才可用。 该文件位于\<安装驱动器\>: \program Files\Microsoft Shared\Adapters\SAP。|  
 |**GetSchema(string)**|获取基于集合名称的架构。 支持集合名称"Tables"。|  
   
 |Name|Description|  

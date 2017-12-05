@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3651d91f9c4b28fae30182ed6ddd18cde1bb3f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b91a4b65c6e9a9b293e967385b8f0ac4eece1aa4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>配置专用的跟踪主机
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对吞吐量优化，因此主要业务流程和消息传送引擎执行不实际事件或消息直接转至 BizTalk 跟踪 (DTA) 或业务活动监视 (BAM) 数据库，因为这将会从其主这些引擎将转换执行业务流程的作业。 相反，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使 MessageBox 数据库中的事件和消息并将其标记为需要迁移到 BizTalk 跟踪或 BAM 数据库。 后台进程 （跟踪主机），然后移动到 BizTalk 跟踪和 BAM 数据库，SQL Server 代理作业副本跟踪的消息到 BizTalk 跟踪数据库时的事件。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
  跟踪主机实例移动特定的 MessageBox 数据库的跟踪数据，但将永远不会有多个跟踪主机实例特定的 MessageBox 数据库的数据移动。 例如，如果你有三个 MessageBox 数据库，并只有两个跟踪主机实例，然后其中一个主机实例需要 MessageBox 数据库中的两个移动数据。 添加第三个跟踪主机实例将分发跟踪主机到另一台计算机运行的工作[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 在此方案中，程序将添加第四个跟踪主机实例将不会将任何详细的跟踪主机的分发工作，但将提供一个额外跟踪容错能力的主机实例。  
   
- 有关 BAM 事件总线服务的详细信息，请参阅中的以下主题[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]帮助：  
+ 有关 BAM 事件总线服务的详细信息，请参阅 BizTalk Server 帮助中的以下主题：  
   
 -   [管理 BAM 事件总线服务](http://go.microsoft.com/fwlink/?LinkId=154194)(http://go.microsoft.com/fwlink/?LinkId=154194)  
   
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
      如果清除此复选框，该主机将仅对 MessageBox 数据库中的跟踪表具有写权限并且无权访问跟踪数据库。  
   
 ## <a name="see-also"></a>另请参阅  
- [清单： 配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

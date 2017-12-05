@@ -16,14 +16,14 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8a0dad510b0b98657bdd9777f6eb22435c0d2f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffb132fe5c28d7fa1ef148c42d3ef5c98ac56e31
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operational-and-administrative-tasks-in-your-biztalk-environment"></a>在 BizTalk 环境中的操作和管理任务
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 包含了可使 BizTalk Server 的管理比以前的各个 BizTalk Server 版本更为快捷简单的新功能。 本部分介绍有关管理 BizTalk Server 的信息。  
+BizTalk Server 包括使管理 BizTalk Server 速度更快，比以往版本的 BizTalk Server 中的新增功能。 本部分介绍有关管理 BizTalk Server 的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

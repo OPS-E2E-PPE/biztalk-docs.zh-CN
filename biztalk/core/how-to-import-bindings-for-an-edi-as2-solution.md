@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba7e0c601276779067c1699da1526491dc3f7ca2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34c25f3837d6eb0c938900b0da9e34246f1c6038
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-bindings-for-an-edi-as2-solution"></a>如何导入绑定 EDI AS2 解决方案
 本主题介绍如何将 EDI 和/或 AS2 解决方案的配置导入另一台计算机。 EDI/AS2 解决方案的部署与 BizTalk 应用程序的部署集成在一起。 可以通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台和 BTSTask 命令行工具使用该部署。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
  如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法导入一组绑定，则原因可能是绑定文件中的“受信任主机”属性与主机的“受信任验证”属性不相同。 可以通过更改绑定文件中的“受信任主机”属性来解决这个问题。  
   
 > [!NOTE]
->  从以往版本的 BizTalk Server 到导入绑定文件[!INCLUDE[prague](../includes/prague-md.md)]可能会失败。 由于 [!INCLUDE[prague](../includes/prague-md.md)] 的合作伙伴管理模型已进行了相当大的更改，因此从早期版本的 BizTalk Server 导入绑定文件可能不会在 [!INCLUDE[prague](../includes/prague-md.md)] 中创建与新模型相对应的实体。 有关详细信息，请参阅[如何方定义中以前 BizTalk Server 版本转换为新的 TPM 实体？](../core/how-to-import-bindings-for-an-edi-as2-solution.md#BKMK_Party)。  
+>  导入从以前版本的 BizTalk Server 到 BizTalk Server 绑定文件可能会失败。 由于合作伙伴管理模型已显著更改为 BizTalk Server 中，从以前的 BizTalk Server 版本导入绑定文件可能不在中创建实体 BizTalk Server 按照新模型。 有关详细信息，请参阅[如何方定义中以前 BizTalk Server 版本转换为新的 TPM 实体？](../core/how-to-import-bindings-for-an-edi-as2-solution.md#BKMK_Party)。  
   
 ### <a name="to-import-the-configuration-from-a-binding-file"></a>导入绑定文件的配置  
   
@@ -52,12 +52,12 @@ ms.lasthandoff: 09/20/2017
 4.  在导入绑定后，打开 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台。 手动将所有 EDI 密码字段设置为适当的值。  
   
 ##  <a name="BKMK_Party"></a>为新的 TPM 实体如何中以前 BizTalk Server 版本转换方定义？  
- 在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中，参与方定义实际是定义如何在两个贸易合作伙伴之间交换消息的协议。 在 [!INCLUDE[prague](../includes/prague-md.md)] 中，EDI 和 AS2 消息传送经历了许多更改，现在新贸易合作伙伴管理 (TPM) 模型需要在两个贸易业务配置文件之间创建协议。 因此，本质上，要让一个协议存在，首先需要定义两个贸易合作伙伴、两个贸易合作伙伴的配置文件以及两个贸易业务配置文件的协议设置。 定义这些实体后，您可以创建一个贸易合作伙伴协议。  
+ 在 BizTalk Server 中，方定义是实质上是协议，用于定义两个贸易合作伙伴之间交换消息的方式。 在 BizTalk Server、 EDI 和 AS2 消息传递进行了大量更改和新的贸易合作伙伴管理 (TPM) 模型表现在要求要创建两个贸易业务配置文件之间的协议。 因此，本质上，要让一个协议存在，首先需要定义两个贸易合作伙伴、两个贸易合作伙伴的配置文件以及两个贸易业务配置文件的协议设置。 定义这些实体后，您可以创建一个贸易合作伙伴协议。  
   
 > [!NOTE]
->  相关的 TPM 中的增强功能的详细信息[!INCLUDE[prague](../includes/prague-md.md)]，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。  
+>  与 BizTalk Server 中的 TPM 增强功能的详细信息，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。  
   
- 对于新 TPM 对象模型，这是否意味着在 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中创建的 EDI 应用程序无法迁移至 [!INCLUDE[prague](../includes/prague-md.md)]？ 问题的回答是没有。 你可以重复使用现有的应用程序从 BizTalk Server 2006 R2 或中的 BizTalk Server 2009[!INCLUDE[prague](../includes/prague-md.md)]使用方迁移工具从以前的 BizTalk Server 版本迁移方数据。 有关工具的详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
+ 提供了新的 TPM 对象模型，这意味着不能在 BizTalk Server 中创建 EDI 应用程序迁移到 BizTalk Server？ 问题的回答是没有。 通过使用方迁移工具从早期的 BizTalk Server 版本迁移方数据，可以重用现有的应用程序从 BizTalk Server 2006 R2 或 BizTalk Server 中的 BizTalk Server 2009。 有关工具的详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
   
 ## <a name="see-also"></a>另请参阅  
  [导入绑定](../core/importing-bindings2.md)

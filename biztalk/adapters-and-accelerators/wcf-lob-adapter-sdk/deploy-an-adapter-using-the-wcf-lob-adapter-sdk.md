@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c83998bbe16899055c839a73795d456a132381
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c11ae1067fff276d8d24639d3e4d3cc6798c6ba5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>部署使用 WCF LOB 适配器 SDK 的适配器
 若要部署的适配器，必须将适配器程序集安装到全局程序集缓存 (GAC) 中，然后 machine.config 文件中注册该适配器。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
   
      示例： **sn /k EchoAdapter.snk**  
   
-     一条确认消息，**密钥对写入到** \< *file_name*>**.snk** `,`显示命令行上。  
+     一条确认消息，**密钥对写入到** \< *file_name*\>**.snk** `,`显示命令行上。  
   
 4.  在 Visual Studio 解决方案资源管理器，右键单击该项目，然后单击**属性**。  
   
@@ -76,18 +76,18 @@ ms.lasthandoff: 11/07/2017
   
 3.  键入下列命令：  
   
-     **gacutil.exe /if"\<**  *的程序集.dll 文件的路径* **>"**  
+     **gacutil.exe /if"\<**  *的程序集.dll 文件的路径*  **\>"**  
   
 4.  此命令将程序集安装到 GAC，覆盖任何具有相同程序集名称的现有程序集。  
   
 ## <a name="register-the-adapter-in-machineconfig"></a>在 Machine.config 中注册该适配器  
- 使用适配器开发[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]呈现为 WCF 绑定。  有关详细信息，请参阅 Microsoft.ServiceModel.Channels.Common.AdapterBinding。  适配器绑定注册 WCF 使用\<bindingExtensions > 节中\<系统。ServiceModel >，并使用 WCF 注册适配器传输绑定元素使用\<bindingElementExtensions > 节中\<系统。ServiceModel >。  
+ 使用适配器开发[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]呈现为 WCF 绑定。  有关详细信息，请参阅 Microsoft.ServiceModel.Channels.Common.AdapterBinding。  适配器绑定注册 WCF 使用\<bindingExtensions\>节中\<系统。ServiceModel\> ，并使用 WCF 注册适配器传输绑定元素使用\<bindingElementExtensions\>节中\<系统。ServiceModel\>。  
   
  你可以手动编辑使用文本编辑器的 machine.config 文件。  
   
 #### <a name="manually-edit-the-machineconfig-file"></a>手动编辑 machine.config 文件  
   
-1.  编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型记事本\<Windows 安装路径 > \Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config，然后单击**确定**。  
+1.  编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config，，然后单击**确定**。  
   
 2.  更新 machine.config 文件。 如果文件不包含 system.serviceModel 部分，在末尾的配置文件，但在结束根标记之前添加以下部分。  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 11/07/2017
     >  适配器的信息中替换"myAdapterBinding"、 版本、 区域性和其他特定于程序集的信息。  
   
     ```  
-    \<system.serviceModel>  
+    <system.serviceModel>  
       <extensions>  
         <bindingExtensions>  
             <add name="myAdapterBinding" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingCollectionElement,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken= fafafafafafafafa" />  
@@ -103,7 +103,7 @@ ms.lasthandoff: 11/07/2017
             <add name="echoAdapter" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingElementExtension,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken=37f23b4adb996dcf" />  
           </bindingElementExtensions>  
       </extensions>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
     ```  
   
      - 或 -  

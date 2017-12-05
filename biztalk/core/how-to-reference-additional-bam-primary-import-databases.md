@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be973777fda6fad83b4ed6c672b68969cdde5919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fca916339e48f6bce053753111f4467a4c9ae7d5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-reference-additional-bam-primary-import-databases"></a>如何引用其他 BAM 主导入数据库
 管理员使用**启用引用**命令以引用其他 BAM 主导入数据库。 引用多个 BAM 主导入数据库可更有效地查看分布式 BAM 活动。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm 启用引用 TargetServer:\<目标服务器 >-TargetDatabase:\<目标数据库 >**，其中\<*目标服务器*> 替换为在其上通过将指定的目标 BAM 主导入数据库的 SQL server 名称\<目标数据库 > 驻留。 按 Enter。  
+3.  在命令行提示符下键入以下内容： **bm 启用引用 TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>**，其中\<*目标服务器*\>由在其上通过将指定的目标 BAM 主导入数据库的 SQL server 的名称替换\<目标数据库\>驻留。 按 Enter。  
   
 ## <a name="see-also"></a>另请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

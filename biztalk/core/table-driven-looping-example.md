@@ -21,11 +21,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91e0710a8238075610d98b5897fdc7865f30190f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6989ac7e64cf28784d08f26aaf9e7af3a166a28
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-example"></a>表驱动循环示例
 本部分简要介绍映射使用**表循环**和**表提取程序**functoid。 有关选择的详细信息，将放置、 链接和配置 functoid，请参阅[如何添加表循环和一个映射到表提取程序 Functoid](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md)。  
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
  请注意，**表循环**functoid 指向输入和输出架构中的记录级别元素。 此链接可确保创建封闭的结构，从而确保在记录内创建元素。 此外请注意，有一个**表提取程序**functoid 输出架构中每个字段。  
   
- 输入架构中的记录的链接是中的第一个参数**配置\<Functoid > Functoid**对话框。  
+ 输入架构中的记录的链接是中的第一个参数**配置\<Functoid\> Functoid**对话框。  
   
  第二个参数是 functoid 网格表中的列数： 以一个列的每个地址类型、 名称、 街道、 城市、 州和邮政编码。 紧随第二个参数之后是在该网格表中可能显示的所有值的列表。 这些值包括地址类型的字符串常数（“ShipTo”、“BillTo”），以及指向地址的字段的链接。 请注意，指向地址字段的链接都具有名称。 对映射中的链接进行命名，可以简化构造表的过程。 否则，完整路径出现在**配置表循环 Functoid**对话框。  
   
@@ -111,4 +111,4 @@ ms.lasthandoff: 09/20/2017
  [索引 Functoid](../core/index-functoid.md)   
  [迭代 Functoid](../core/iteration-functoid.md)   
  [循环 Functoid](../core/looping-functoid.md)   
- [记录计数 Functoid](../core/record-count-functoid.md)
+ [“记录计数”Functoid](../core/record-count-functoid.md)

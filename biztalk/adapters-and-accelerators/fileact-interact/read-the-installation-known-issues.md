@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f11e713d09ca8babcf7622710fd63bde9980373
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6641e7974a0e1872b71794af6553d708e9619dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-the-installation-known-issues"></a>读取安装的已知问题
 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]具有下列部分中列出已知的问题。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
  如果你使用交互或 FileAct 应用商店和进 (SnF) 模式下，如果与队列会话保持打开状态，不被推送消息，然后你必须重启 SNLreceiver.exe。 这样就避免了 SWIFT 可能偶尔发生的问题。  
   
 ## <a name="you-must-use-cdata-when-passing-characters-like--and--in-message"></a>你必须使用 CDATA 时将传递字符，例如"<"和"&"消息中  
- CDATA 使用有关不应由 XML 分析器分析的文本数据的术语。  字符，例如"<"和"&"在 XML 元素中是非法。 "<"将生成错误，因为分析器将其解释为新元素的开头。 "&"将生成错误，因为分析器将其解释为字符实体的开头。 分析器会忽略所有内容在 CDATA 节内。 CDATA 部分开头介绍"\<！ [CDATA ["和结束的"]] >"  
+ CDATA 使用有关不应由 XML 分析器分析的文本数据的术语。  字符，例如"<"和"&"在 XML 元素中是非法。 "<"将生成错误，因为分析器将其解释为新元素的开头。 "&"将生成错误，因为分析器将其解释为字符实体的开头。 分析器会忽略所有内容在 CDATA 节内。 CDATA 部分开头介绍"\<！ [CDATA ["和结束的"]]\>"  
   
 ## <a name="you-must-use-passthrough-pipelines-with-payload-only-mode"></a>你必须使用带有仅负载模式传递管道  
  如果为交互适配器使用仅负载模式，必须传递管道使用这两个发送和接收端口，如果你不使用自定义管道。  

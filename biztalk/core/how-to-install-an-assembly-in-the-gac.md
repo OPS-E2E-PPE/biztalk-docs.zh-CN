@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0914a41d83f7838211c9fff39e4d0e96b09a6595
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c80e3a5126a56b945b2aa7b53aec71fbe83d678a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-an-assembly-in-the-gac"></a>如何在 GAC 中安装程序集
 手动安装和卸载使用 Gacutil 工具随附的全局程序集缓存 (GAC) 中的 BizTalk 程序集[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
@@ -62,13 +62,13 @@ ms.lasthandoff: 09/20/2017
   
 2.  键入以下命令：  
   
-     `gacutil /u`\<*完全限定程序集名称*>  
+     `gacutil /u`\<*完全限定程序集名称*\>  
   
      例如，键入：  
      `gacutil /u "hello,Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"`
        
 ## <a name="see-also"></a>另请参阅  
- [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
+ [将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
 [正在取消部署的 BizTalk 应用程序](../core/undeploying-biztalk-applications.md)   
  [如何卸载 BizTalk 应用程序](../core/how-to-uninstall-a-biztalk-application.md)   
  [如何从 BizTalk 组中删除 BizTalk 应用程序](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)

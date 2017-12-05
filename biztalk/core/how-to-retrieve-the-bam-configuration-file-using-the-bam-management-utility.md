@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0eb7dee70d3a5b8dc7226203df9f48aefe1d5fc0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ef0f4802aa44a042f39adbdc9f169b11a16796d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>如何检索 BAM 配置文件使用 BAM 管理实用工具
 管理员和开发人员可以使用 BAM 管理实用程序来检索 BAM 基础结构的当前配置。 检索的配置可以用来将 BAM 安装迁移到新的服务器，也可以对该配置进行修改并用于更新现有的 BAM 安装。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm get-config FileName:\<输出文件 >**，其中\<*输出文件*> 替换为你 BAM 配置的名称文件。 按 **Enter**。  
+3.  在命令行提示符下键入以下内容： **bm get-config FileName:\<输出文件\>**，其中\<*输出文件*\>替换为BAM 配置文件的名称。 按 **Enter**。  
   
 ## <a name="see-also"></a>另请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

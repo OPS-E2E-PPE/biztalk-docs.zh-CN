@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3176814481d98a7aa0e1e48abad9f20e887b17ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5749166c8a9b34d5e5a04849c4179ac4427201c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a>步骤 5： 为消息批创建发送端口
 在此步骤中，创建将你创建的消息批处理传送到目标方发送端口。 这是文件适配器类型的静态单向端口。 其中指定用于目标 (\Tutorial_BatchMsgDrop) 的文件文件夹[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将丢弃消息批处理文件。 你定义筛选器，该值指示哪种类型的消息批次将发送端口的端口。 筛选器指定 Tutorial_BatchDest 和 OutboundBatch 的消息类型的目标。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-create-the-send-port-for-the-message-batch"></a>若要创建消息批发送端口  
   
-1.  在[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理控制台中，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
+1.  在 BizTalk Server 管理控制台中，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
   
 2.  在“发送端口属性”对话框中，执行以下操作：  
   
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**目标文件夹**|浏览到  **\<*驱动器*: > files\microsoft BizTalk\<版本 > HL7\SDK\End 端到端 Tutorial\Tutorial_BatchMsgDrop * * 的快捷键。 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含消息批的文件。|  
+    |**目标文件夹**|浏览到  **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键BatchMsgDrop * *。 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含消息批的文件。|  
     |**文件名**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
     |**副本模式**|选择**创建新**。|  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-associate-the-send-port-with-the-destination-party"></a>若要将发送端口与目标方相关联  
   
-1.  在[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]管理控制台中，展开**方**，单击**Tutorial_BatchDest**，然后右键单击**属性**。  
+1.  在 BizTalk Server 管理控制台中，展开**方**，单击**Tutorial_BatchDest**，然后右键单击**属性**。  
   
 2.  在参与方属性对话框中，单击**发送端口**在控制台树中。  选择**Tutorial_BatchDest**从下拉列表，然后单击**确定**。  
   

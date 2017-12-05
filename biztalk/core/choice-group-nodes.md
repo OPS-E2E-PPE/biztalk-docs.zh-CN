@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec6edafcb01e2c0ce155585e4fbe2f9d61b1cf1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21d3007897343b7d517c11599a271b72e92d3710
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="choice-group-nodes"></a>“选择组”节点
 在 BizTalk 编辑器中，你可以插入**选项组**节点包含其他节点 （或整个子树的节点），只有一个可以出现在实例消息中。 给定的实例消息（如果有效）将仅显示这些选择之一。 包含的节点必须是与 XML 元素对应的节点，但不能是与 XML 属性对应的节点。  
   
 > [!NOTE]
->  在 BizTalk 编辑器中，**选项组**节点表示以字符串\<选择 > 架构树视图中。 如果引用设置为**选项组**节点，如 x，则它会表示为\<组： x > 架构树视图中。  
+>  在 BizTalk 编辑器中，**选项组**节点表示以字符串\<选择\>架构树视图中。 如果引用设置为**选项组**节点，如 x，则它会表示为\<组： x\>架构树视图中。  
   
 ## <a name="xsd-representation"></a>XSD 表示形式  
  当**选项组**节点插入到**记录**节点，它将在任何其他子节点的末尾插入**序列**，**选择**，或**所有**中的元素**记录**节点。 下面的示例显示，粗体类型如何新**选项组**节点表示 XML 架构定义 (XSD) 语言**选择**末尾插入元素**序列**中的元素**记录**节点 （带有名为以阐明其标识的节点）。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
  在此示例中，两个同级**记录**节点用于描述这一事实，实例消息将具有在其中，美国地址信息的记录或在其中的全球范围内的地址信息的记录。 此外， **minOccurs**和**maxOccurs**属性**选项组**节点都已设置为一 (1) 在 Visual Studio 属性窗口中，从而导致*minOccurs*和*maxOccurs*属性**选择**被设置为一 (1) 中的 XSD 表示的元素。  
   
 ## <a name="see-also"></a>另请参阅  
--  [BizTalk 表示形式架构](../core/biztalk-representation-of-schemas.md)   
+-  [架构的 BizTalk 表示形式](../core/biztalk-representation-of-schemas.md)   
 -  [节点属性](../core/node-properties.md)   
 -  **序列组节点属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]     
 -  [如何设置节点属性](../core/how-to-set-node-properties.md)

@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9156b6d6fa1374f532efb354e5816c054b83994
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8d2521a8cf434c7a0ea56f749f9df3f032551e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-queuing-queues"></a>消息队列的队列
 本部分将介绍如何在使用 MSMQ 适配器时指定 Microsoft 消息队列（也称为 MSMQ）。 本部分对指定路径的约定进行了说明，并介绍了格式名称在将路径翻译成队列指定格式的过程中所起的作用。  
@@ -60,9 +60,9 @@ ms.lasthandoff: 09/20/2017
   
  如果发送或接收队列路径是 HTTP 或 HTTPS URL，则语法为：  
   
- FormatName:DIRECT = http: / /\<客户端名称 > /msmq/\<队列名称 >  
+ FormatName:DIRECT = http: / /\<客户端名称\>/msmq/\<队列名称\>  
   
- FormatName:DIRECT = https: / /\<客户端名称 > /msmq/\<队列名称 >  
+ FormatName:DIRECT = https: / /\<客户端名称\>/msmq/\<队列名称\>  
   
 > [!NOTE]
 >  “msmq”是消息队列在 Internet 信息服务 (IIS) 中创建的虚拟文件夹。  

@@ -19,11 +19,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6a70e6bc4062a6c2865c9adb8f76d68a078e965
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cebc9e3fb8382fecf7791d14d52a21ac96f77cde
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-idocs-in-sap"></a>SAP 中的 Idoc 上的操作
 Idoc 是 SAP 支持用于以异步方式与 SAP 和非 SAP 系统进行通信的标准化的 EDI 类似文档。 Idoc 用于发送和接收到或从贸易合作伙伴的 SAP 系统或外部程序的销售订单，例如，如"business"文档。  
@@ -109,7 +109,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
     > [!NOTE]
     >  使用**接收**操作，也可以接收多个 Idoc。  
   
--   **ReceiveIdoc**。 使用此操作使用弱类型的架构的 SAP 系统从接收 IDOC。 此操作的架构将作为单个字符串字段组成的控制记录和数据记录公开 Idoc。 此操作作为字符串下一条 XML 消息中接收到的 Idoc \<idocData > 标记。  
+-   **ReceiveIdoc**。 使用此操作使用弱类型的架构的 SAP 系统从接收 IDOC。 此操作的架构将作为单个字符串字段组成的控制记录和数据记录公开 Idoc。 此操作作为字符串下一条 XML 消息中接收到的 Idoc \<idocData\>标记。  
   
      这是为公开的 SAP 系统的所有 Idoc 中加以表示单个操作，可以在根目录下**IDOC**中的节点[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。  
   
@@ -117,7 +117,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
   
 -   如果设置为"类型"，XML 架构强类型化为特定所收到的 IDOC。 （从接收操作，就可以看到此消息的架构。 请注意，架构是不同的不同 Idoc）。 这会生成 XML IDOC。  
   
--   如果设置为"String"，传入的 IDOC 数据返回为字符串值。 （此消息的架构，可以查看从 ReceiveIdoc 操作）。 这将生成的 XML 消息\<idocData > 标记。  
+-   如果设置为"String"，传入的 IDOC 数据返回为字符串值。 （此消息的架构，可以查看从 ReceiveIdoc 操作）。 这将生成的 XML 消息\<idocData\>标记。  
   
 -   如果设置为"Rfc"，消息架构匹配的 RFC 操作 IDOC_INBOUND_ASYNCHRONOUS 或 INBOUND_IDOC_PROCESS，具体取决于传入的 IDOC 版本的 RFC （或 tRFC） 架构。 如果指定此绑定属性，你应使用 IDOC_INBOUND_ASYNCHRONOUS 或 INBOUND_IDOC_PROCESS RFC 接收 IDOC。 在前两个选项中，适配器在内部使用此 RFC。 在此选项，则显式使用此 RFC 来接收 IDOC。  
   

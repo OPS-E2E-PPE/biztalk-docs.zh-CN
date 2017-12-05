@@ -19,11 +19,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b2c7895d8f5fc3789a02c72743705a4a03a9f96
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29124c17603abbc9b38a078238d13cdfb1c992e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ftp-adapter-configuration-properties"></a>FTP 适配器配置属性
 下表列出了可为 FTP 适配器接收位置设置的配置属性：  
@@ -109,4 +109,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  在指定适配器使用适配器框架构建的 TransportTypeData 配置数据时，必须要使用的所有名称/值对都存储在\<AdapterConfig > 元素。 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型则\<> 数据中的字符必须进行转义。
+>  在指定适配器使用适配器框架构建的 TransportTypeData 配置数据时，必须要使用的所有名称/值对都存储在\<AdapterConfig\>元素。 由于\<AdapterConfig\>元素指定 VT_BSTR (vt ="8") 数据类型则\<\>数据中的字符必须进行转义。

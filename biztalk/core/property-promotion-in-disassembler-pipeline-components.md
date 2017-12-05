@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9770b0e66b85dcc41400002e2e0c1780bc51c3a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6c95c58dafe1f7f875232c5b65962e731334f16
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="property-promotion-in-disassembler-pipeline-components"></a>在反汇编程序管道组件中的属性提升
 属性升级是使用 XPath 表达式从 XML 文档中提取属性值，再将其放置到消息上下文中以便用于消息路由的过程。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  自定义管道组件可以升级多值（即数组）属性。 只有在基于内容的路由 (CBR) 方案中，才支持包含多值属性的消息；此类消息无法路由到业务流程或用于跟踪用途。  
   
- 如果空元素带有结束标记，则 XML 拆装器不会升级其默认值或固定值。 例如， \<field1 > 在下面的 XML 中不会对其进行提升。  
+ 如果空元素带有结束标记，则 XML 拆装器不会升级其默认值或固定值。 例如， \<field1\>在下面的 XML 中不会对其进行提升。  
   
 ```  
 <document>  

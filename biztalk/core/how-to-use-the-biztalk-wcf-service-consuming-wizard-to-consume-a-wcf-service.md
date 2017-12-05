@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b218fa44b93211fdb51080d68b429744b5aabf72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12fb3eca6db9ceafeeab9b0b276bfd6f3cb23b16
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a>如何利用 BizTalk WCF 服务使用向导来使用 WCF 服务
 BizTalk 适配器框架提供了一条将适配器架构和 BizTalk 类型添加到 BizTalk 项目的途径。 通过 BizTalk WCF 服务使用向导，可以将 WCF 发送适配器添加到 BizTalk 项目。 对于 WCF 发送适配器，必须为发送端口选择现有的元数据交换 (MEX) 终结点。 然后，您需要输入用于生成架构和类型的信息。 在向导完成后，使用 WCF 服务所需的架构和类型便会添加到 BizTalk 项目中。  
@@ -30,7 +30,7 @@ BizTalk 适配器框架提供了一条将适配器架构和 BizTalk 类型添加
   
 1.  在你的 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目，请在解决方案资源管理器，右键单击你的项目，单击**添加**，然后单击**添加生成的项**。  
   
-2.  在**添加生成的项的\<** *项目名称* **>** 对话框中，在**模板**部分中，选择**使用 WCF 服务**，然后单击**添加**。  
+2.  在**添加生成的项的\<** *项目名称* **\>** 对话框中，在**模板**部分中，选择**使用 WCF 服务**，然后单击**添加**。  
   
 3.  上**欢迎 BizTalk WCF 服务使用向导**页上，单击**下一步**。  
   

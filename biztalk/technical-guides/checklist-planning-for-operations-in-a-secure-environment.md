@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7cac65ac29af9983ec3024677bc8eedc86c924b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c99c14f16df3f6b98555a4006706eb7804f24a34
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a>清单： 规划的安全环境中的操作
 运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]的安全环境中部署和配置需要额外的步骤。 虽然默认操作系统安装不需要考虑这些帐户，但方案其中已应用严格的安全策略，你应考虑到此部分中的帐户信息。 限制应用到服务器的级别可能不同，但以下信息应涵盖大多数情况下，并且会很好的起点。  
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/20/2017
 |调整进程的内存配额|SQL Server 代理服务帐户，SQL Server 服务帐户|运行所需[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 有关详细信息请参阅[设置 Windows 服务帐户](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |跳过遍历检查|SQL Server 代理服务帐户，SQL Server 服务帐户|运行所需[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 有关详细信息请参阅[设置 Windows 服务帐户](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |创建全局对象|SQL Server 服务帐户|所需的 SSIS 服务。 有关详细信息请参阅[设置 Windows 服务帐户](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
-|使计算机和用户帐户可以委派其他|SQL Server 服务帐户，SQL Server 服务器，BizTalk Server 服务器，SQL Server 群集名称|所需的 BizTalk Server。 服务器名称采用的形式\<servername >$。 有关详细信息，请参阅[如何： 在 SQL Server 故障转移群集上启用 Kerberos 身份验证](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
+|使计算机和用户帐户可以委派其他|SQL Server 服务帐户，SQL Server 服务器，BizTalk Server 服务器，SQL Server 群集名称|所需的 BizTalk Server。 服务器名称采用的形式\<servername\>$。 有关详细信息，请参阅[如何： 在 SQL Server 故障转移群集上启用 Kerberos 身份验证](http://go.microsoft.com/fwlink/?LinkId=157417)(http://go.microsoft.com/fwlink/?LinkId=157417)。|  
 |作为服务登录|SQL Server 代理服务帐户，SQL Server 服务帐户|运行所需[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 有关详细信息请参阅[设置 Windows 服务帐户](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
 |作为服务登录|SSO 服务帐户|需要运行企业单一登录服务。 有关不同的用户帐户的详细信息，请参阅[Windows 组和 BizTalk Server 中的用户帐户](http://go.microsoft.com/fwlink/?LinkID=155755)(http://go.microsoft.com/fwlink/?LinkID=155755)。|  
 |作为批处理作业登录|SQL Server 代理服务帐户，SQL Server 服务帐户|运行所需[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 有关详细信息请参阅[设置 Windows 服务帐户](http://go.microsoft.com/fwlink/?LinkId=157415)(http://go.microsoft.com/fwlink/?LinkId=157415)。|  
@@ -137,4 +137,4 @@ ms.lasthandoff: 09/20/2017
 |BizTalk 应用程序用户组|授予执行权限**sp_help_jobhistory**中**msdb**数据库|所需的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
   
 ## <a name="see-also"></a>另请参阅  
- [对于其他重要任务的清单](~/technical-guides/checklists-for-other-important-tasks.md)
+ [其他重要任务清单](~/technical-guides/checklists-for-other-important-tasks.md)

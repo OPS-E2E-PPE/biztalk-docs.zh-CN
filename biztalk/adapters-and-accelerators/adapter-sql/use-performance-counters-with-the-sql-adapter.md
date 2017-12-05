@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6752a9f379cf8739e67420e1acb971959e6850d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f81189e34346d377686dac79b44e5a9b34889dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-sql-adapter"></a>使用 SQL 适配器使用性能计数器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建性能计数器类别"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"以及适配器包安装。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
  `<endpointId>`作为派生`<sql_server_name>, <instance_name>, <database_name>`。  
   
- \<ActionId > 按以下方式派生：  
+ \<ActionId\>按以下方式派生：  
   
 -   用于打开连接，该操作 ID 是"打开"。  
   

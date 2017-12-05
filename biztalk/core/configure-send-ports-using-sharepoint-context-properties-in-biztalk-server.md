@@ -22,11 +22,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5dc4e65ca778c8e299d8fd14303d3d3da009d39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e766272f33bf23166ba412a76498e4240ab3343b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-send-ports-using-windows-sharepoint-services-context-properties"></a>如何配置发送端口使用 Windows Sharepoint Services 上下文属性
 本主题介绍如何使用 BizTalk 业务流程中的 Windows SharePoint Services 上下文属性在运行时配置 Windows Sharepoint Services 发送端口。 这一机制还可用于配置 Windows SharePoint Services 动态和后期绑定发送端口。 动态发送端口的配置属性是在运行时通过业务流程设置的。 适配器属性中公开**Windows SharePoint Services 传输属性**对话框还可应用于动态或后期绑定的发送端口。 若要使用 Windows Sharepoint Services 适配器上下文属性为动态或后期绑定发送端口设置配置属性，请执行以下步骤：  
@@ -51,8 +51,8 @@ ms.lasthandoff: 09/20/2017
     |模板后备文档库|WSS.ConfigCustomTemplatesDocLib|字符串|无|  
     |模板后备命名空间栏|WSS.ConfigCustomTemplatesNamespaceCol|字符串|无|  
     |模板命名空间栏|WSS.ConfigTemplatesNamespaceCol|字符串|无|  
-    |列 `n`|WSS.ConfigPropertiesXml<br /><br /> 在中设置列名称\<PropertyName*x*>*columnname*\</ PropertyName*x*> 字段。|字符串|无|  
-    |列 `n` 值|WSS.ConfigPropertiesXml<br /><br /> 在中设置列值\<PropertySource*x*>*columnvalue*\</ PropertySource*x*> 字段。|字符串|支持除之外的传输属性中的所有可用的文件名宏使用**%filename%**和**%扩展 %**宏。|  
+    |列 `n`|WSS.ConfigPropertiesXml<br /><br /> 在中设置列名称\<PropertyName*x*\>*columnname*\</ PropertyName*x* \>字段。|字符串|无|  
+    |列 `n` 值|WSS.ConfigPropertiesXml<br /><br /> 在中设置列值\<PropertySource*x*\>*columnvalue*\</ PropertySource*x* \>字段。|字符串|支持除之外的传输属性中的所有可用的文件名宏使用**%filename%**和**%扩展 %**宏。|  
   
     > [!NOTE]
     >  为上下文属性提供的值都是区分大小写的。 在使用上下文属性设置动态端口的配置值时，需确保使用正确的大小写格式，否则，如果 BizTalk 尝试将文档路由到指定的发送端口，将会出现错误。  

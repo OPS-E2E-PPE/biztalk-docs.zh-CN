@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43d7a54305443d35aba5b363983b17157780fe4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c4274362e5ec8441e203d0b2b97f27e95235fd9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembling-a-batched-edi-interchange"></a>装配批处理的 EDI 交换
 为了将各个事务集批元素组装成 EDI 交换，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 和 AS2 将执行下列操作：  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  在批处理业务流程完成某个交换的批处理之后，它将升级该交换的以下属性：EDI.DestinationPartyName = %PartyName%，EDI.BatchEncodingType = X12 或 EDIFACT，并且 EDI.ToBeBatched = False。  
   
-9. 发送端口选取基于 EDI 的批处理的事务集。DestinationPartyName = \<PartyName >，EDI。BatchEncodingType = EDIFACT 或 X12，和 EDI。ToBeBatched = False。  
+9. 发送端口选取基于 EDI 的批处理的事务集。DestinationPartyName = \<PartyName\>，EDI。BatchEncodingType = EDIFACT 或 X12，和 EDI。ToBeBatched = False。  
   
 ## <a name="batching-orchestration-control-messages"></a>批处理业务流程控制消息  
  批处理业务流程由下列控制消息激活、终止或重写：  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
   
 -   `EDI.DestinationPartyId` exists  
   
- 当业务流程收到消息时，它会尝试使用参与方名称和编码类型为此消息查找匹配的批设置。  `EDI.DestinationPartyID`属性用于确定当事方名称，并随后业务流程查找相匹配的批处理名称\<PartyName > +\<EncodingType > + 默认。  例如，如果参与方名称为 Contoso，且 `EDI.EncodingType` 的值为 X12，则业务流程将查找名为 ContosoX12Default 的批。  
+ 当业务流程收到消息时，它会尝试使用参与方名称和编码类型为此消息查找匹配的批设置。  `EDI.DestinationPartyID`属性用于确定当事方名称，并随后业务流程查找相匹配的批处理名称\<PartyName\>+\<EncodingType\>+ 默认。  例如，如果参与方名称为 Contoso，且 `EDI.EncodingType` 的值为 X12，则业务流程将查找名为 ContosoX12Default 的批。  
   
  如果找到匹配的批配置，则会将此消息以及下列属性放回消息框：  
   
@@ -278,4 +278,4 @@ ms.lasthandoff: 09/20/2017
 -   通过关联适配器传送消息  
   
 ## <a name="see-also"></a>另请参阅  
- [对传出的 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)
+ [对传出 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)

@@ -18,11 +18,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3434dc46be2fa43885346ac8d146e9326ab1ea73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da57e32f2ba4d4d5feb60a6f44cc7d92195852c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a>如何从架构类型构造 Web 消息部分
 从架构类型中使用创建的 Web 消息部分**转换**形状。 也可以通过使用 .NET 帮助程序类设置各个部分来从架构类型创建 Web 消息部分。 通过使用一个.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 2.  在 BizTalk 映射程序中，单击**打开目标架构**中**目标架构**窗格中的代码图并在**BizTalk 类型选取器**对话框框中，展开**架构**节点，选择所添加的 Web 引用的架构，然后单击**确定**。  
   
     > [!NOTE]
-    >  Web 引用架构的格式是**\<项目默认命名空间 >。\<Web 引用名称 >。引用**。  
+    >  Web 引用架构的格式是**\<项目默认命名空间\>。\<Web 引用名称\>。引用**。  
   
 3.  在**目标架构的根节点**对话框中，选择目标架构的根节点，然后单击**确定**。 有关如何确定 Web 消息部件类型的根节点的详细信息，请参阅[如何确定 Web 消息部件类型](../core/how-to-determine-a-web-message-part-type.md)。  
   

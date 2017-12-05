@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62b6137964c493ae8dff3c0ab635a3145f2d9348
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6fc9eda3ba1bee61b4737428f41870fc31504e3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a>从使用 BizTalk Server 的 SQL 查询通知以增量方式接收
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |绑定属性|Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|指定你想要执行的入站的操作。 若要接收通知消息，请将此设置为**通知**。|  
-|**NotificationStatement**|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程 >) 用于注册查询通知。 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|  
+|**NotificationStatement**|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程\>) 用于注册查询通知。 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|  
 |**NotifyOnListenerStart**|指定启动侦听器时，适配器是否发送到适配器客户端通知。|  
   
  有关这些属性的更完整说明，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。 有关如何使用的完整说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]若要从 SQL Server 接收通知，请阅读更多。  
@@ -317,7 +317,7 @@ Salary = 100000
 -   适配器将接收通知消息，如下所示：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -330,7 +330,7 @@ Salary = 100000
 -   适配器将执行选择操作。 因为选择操作 XML 还包括一个 Update 语句，也会执行更新语句。 从 SQL Server 的下一步响应是 Select 语句。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult>  
         <Employee xmlns="http://schemas.microsoft.com/Sql/2008/05/Types/Tables/dbo">  
@@ -347,7 +347,7 @@ Salary = 100000
 -   作为 Select 语句的一部分，也会执行更新语句和新的记录的状态列更改为 1。 这将再次触发从 SQL Server 的另一个通知，而且适配器将收到相应通知消息，类似于以下：  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -360,7 +360,7 @@ Salary = 100000
 -   第二个通知之后, 该适配器执行 Select 语句。 但是，因为没有记录现在具有状态为 0，适配器获取类似于以下一个空响应。  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult />   
     </SelectResponse>  

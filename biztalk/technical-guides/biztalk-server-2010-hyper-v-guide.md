@@ -12,14 +12,14 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0e76fee8ce74f11ec0f1a14334447114f3c4ed0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 937fcb3618bf3bde4883242d48da2a841f00dea5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 Hyper V 指南
-本指南的目的是提供使用 Microsoft 的实践性指南[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]与 Microsoft [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] HYPER-V。 重点是[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，但性能评估方法和测试方案的性能会用于分析虚拟化的服务器应用程序的性能通常很有用。 本指南将感兴趣的 IT 专业人员和开发人员社区。  
+本指南的目的是提供 Microsoft BizTalk Server 使用 Microsoft 的实践性指南[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V。 重点是[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，但性能评估方法和测试方案的性能会用于分析虚拟化的服务器应用程序的性能通常很有用。 本指南将感兴趣的 IT 专业人员和开发人员社区。  
   
  若要下载本指南的副本，请转到[http://go.microsoft.com/fwlink/?LinkId=149267](http://go.microsoft.com/fwlink/?LinkId=149267)。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 -   开发人员感兴趣性能优化和识别性能瓶颈  
   
 ### <a name="goals-of-this-guide"></a>本指南的目标  
- 本指南的主要目的是提供有关如何确定如果指南[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在 HYPER-V 上运行是否可达到性能预期。 本指南也将的值作为辅助手段的已部署的优化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。  
+ 本指南的主要目的是提供有关如何确定是否在 HYPER-V 上运行的 BizTalk Server 很可能达到性能预期的指南。 本指南也将的值作为辅助手段的已部署的优化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。  
   
  此项目已执行到了以下目标：  
   

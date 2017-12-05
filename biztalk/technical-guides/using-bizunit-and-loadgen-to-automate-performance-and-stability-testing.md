@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 538e47f481f0817acfbd26477866a3d45a0d285b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e84fcd29af6b698713623fbca556d988e037d8c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>使用 BizUnit 和 LoadGen 来自动执行性能和稳定性测试
 本主题提供有关如何使用 Microsoft BizTalk LoadGen 2007 工具和 BizUnit 来自动执行性能和稳定性测试 BizTalk Server 解决方案的信息。  
@@ -96,11 +96,11 @@ ms.lasthandoff: 09/20/2017
  Microsoft [BizTalk LoadGen 2007 工具](http://go.microsoft.com/fwlink/?LinkId=59841)是下载[http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841) (http://go.microsoft.com/fwlink/?LinkId=59841)。  
   
 ### <a name="sample-loadgen-configuration-file"></a>示例 LoadGen 配置文件  
- 所有 LoadGen 配置信息都存储在 xml 文件中。 LoadGen 配置文件包含\<CommonSection > 元素，用于配置 LoadGen 方案中的所有 LoadGen 任务的默认设置。 LoadGen 配置文件还可以包含一个或多个\<部分 > 提供特定的 LoadGen 任务的配置设置的元素。 中的条目\<部分 > 元素取代中指定任何默认值\<CommonSection > 元素。  
+ 所有 LoadGen 配置信息都存储在 xml 文件中。 LoadGen 配置文件包含\<CommonSection\> LoadGen 方案中配置所有 LoadGen 任务的默认设置的元素。 LoadGen 配置文件还可以包含一个或多个\<部分\>提供特定的 LoadGen 任务的配置设置的元素。 中的条目\<部分\>元素取代中指定任何默认值\<CommonSection\>元素。  
   
- 下面的示例 LoadGen 配置文件是包含 LoadGen 安装目录的 \ConfigFiles\ConsoleConfigFiles 子目录中的 FileToFileLG.xml 示例配置文件的略有修改的版本。 此测试将发送 25 的消息\<LotSizePerInterval > 每隔 200 毫秒\<SleepInterval >，每个负载生成器的 5 线程\<NumThreadsperSection > 和 5000 消息后，会停止负载测试\<NumFiles > 已发送。  
+ 下面的示例 LoadGen 配置文件是包含 LoadGen 安装目录的 \ConfigFiles\ConsoleConfigFiles 子目录中的 FileToFileLG.xml 示例配置文件的略有修改的版本。 此测试将发送 25 的消息\<LotSizePerInterval\>每隔 200 毫秒\<SleepInterval\>，每个负载生成器的 5 线程\<NumThreadsperSection\>，并且将停止负载5000 消息之后，测试\<NumFiles\>已发送。  
   
- 中指定的文件限制控制器\<ThrottleController > 部分。 值\<ThresholdRange > 设置为 1000年-2000，这意味着，如果该文件位置 C:\Scenarios\FileToFile\Receive （参数） 必须小于 1000年或多个 2000年文件，限制控制器将限制文件生成器和根据需要增大/减少负载。 中的文件位置的文件数将检查每隔 1000年毫秒\<SleepInterval >。 \<FileSection > 元素定义要由负载生成器发送的消息的属性。 FileToFileLG.xml 文件\<SrcFilePath > 将通过 LoadGen 复制到 filedrop C:\Scenarios\FileToFile\Receive \<DstFilePath >。 因为这是中指定的默认传输此处使用文件传输\<传输名称 > 中的元素\<CommonSection > 元素。  
+ 中指定的文件限制控制器\<ThrottleController\>部分。 值\<ThresholdRange\>设置为 1000年-2000，这意味着，如果该文件位置 C:\Scenarios\FileToFile\Receive （参数） 必须小于 1000年或多个 2000年文件，限制控制器将限制该文件根据负载生成器和相应增大/减少。 中的文件位置的文件数将检查每隔 1000年毫秒\<SleepInterval\>。 \<FileSection\>元素定义要由负载生成器发送的消息的属性。 FileToFileLG.xml 文件\<SrcFilePath\>将通过 LoadGen 复制到 filedrop C:\Scenarios\FileToFile\Receive \<DstFilePath >。 因为这是中指定的默认传输此处使用文件传输\<传输名称\>中的元素\<CommonSection\>元素。  
   
 ```  
 <LoadGenFramework>  
@@ -350,7 +350,7 @@ ms.lasthandoff: 09/20/2017
 </TestStep>  
 ```  
   
- 在测试结束我们使用**BizUnit.DBExecuteNonQueryStep**更新测试结果数据库。 完成此步骤结束所述，则表示测试执行阶段，末尾\</TestExecution > 标记。 同样，你必须修改**ConnectionString**和**RawSQLQuery**参数以匹配你的环境。  
+ 在测试结束我们使用**BizUnit.DBExecuteNonQueryStep**更新测试结果数据库。 完成此步骤结束所述，则表示测试执行阶段，末尾\</TestExecution\>标记。 同样，你必须修改**ConnectionString**和**RawSQLQuery**参数以匹配你的环境。  
   
 ```  
    <!-- Step 11: Update test results DB with test stop time -->  
@@ -527,4 +527,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [使用 BizUnit 以便于自动测试](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [使用 BizUnit 优化自动测试](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

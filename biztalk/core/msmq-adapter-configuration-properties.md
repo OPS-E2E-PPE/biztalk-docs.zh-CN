@@ -19,18 +19,18 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2460f359e0a9a3954d9417fdf441e9bd01de58b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 060d6fbfb75c97e4fa4bc6bbfc3f160972c437ff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msmq-adapter-configuration-properties"></a>MSMQ 适配器配置属性
 下表列出了可为 MSMQ 适配器接收位置设置的配置属性：  
   
 |属性名称|类型|Description|限制|注释|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|队列|VT_BSTR|指定接收位置所监视的位置的有效队列路径。|发送端口或接收位置的 URI 不能超过 256 个字符。|无|  
+|queue|VT_BSTR|指定接收位置所监视的位置的有效队列路径。|发送端口或接收位置的 URI 不能超过 256 个字符。|无|  
 |batchSize|VT_BSTR|指定 MSMQ 适配器向 MessageBox 数据库提交消息批时所用的批大小。|有效值为从 1 到 4294967295。|默认值为 20。|  
 |transactional|VT_BSTR|指定是否从 Microsoft 分布式事务处理 (MSDTC) 的上下文下的源队列读取消息。|有效值为<br /><br /> -true<br />-false<br /><br /> 该适配器不支持对远程队列进行事务性读取。|默认值为 false。|  
 |serialProcessing|VT_BSTR|指定是否按顺序处理信息。|有效值为<br /><br /> -true<br />-false|默认值为 false。|  
@@ -75,4 +75,4 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  在指定的适配器，使用适配器框架构建的 TransportTypeData 配置数据时，使用的名称/值对必须全部存储到\<AdapterConfig > 元素。 由于\<AdapterConfig > 元素指定 VT_BSTR (vt ="8") 数据类型则\<> 数据中的字符必须进行转义。
+>  在指定的适配器，使用适配器框架构建的 TransportTypeData 配置数据时，使用的名称/值对必须全部存储到\<AdapterConfig\>元素。 由于\<AdapterConfig\>元素指定 VT_BSTR (vt ="8") 数据类型则\<\>数据中的字符必须进行转义。

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf96bdc546223b68677b642944265c22d2ce4b14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49fd078f64cbd4163eef648f7a0d58fe6e8db6b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>步骤 3： 创建和部署的触发器事件 （消息） 项目
 在此步骤中，你的触发器事件消息创建架构。 例如，你可能在许可放电并传输系统 (ADT) 发送到医院信息系统 (HIS) 的一条消息。 你需要此架构来定义你的消息的格式。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在右窗格中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 (**...**) 按钮。  
   
-4.  在程序集密钥文件对话框中，浏览到\<*驱动器*>: files\microsoft BizTalk\<版本 > Accelerator for HL7\SDK\End 端到端教程中，单击**key.snk**，然后单击**打开**。  
+4.  在程序集密钥文件对话框中，浏览到\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\End 端到端教程中，单击**key.snk**，然后单击**打开**。  
   
 5.  在项目属性页对话框中，单击**确定**以保存所做的更改。  
   

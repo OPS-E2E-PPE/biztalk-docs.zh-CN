@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f0b9e1538ea667eab2299a1a02021c1237bc985
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af1d853e381da6cbfbbe96fa805ca6396a1b7aae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8c-configure-party-information-for-the-hi-system"></a>步骤 8 C： 配置 HI 系统的当事方信息
 在此步骤中，你可以配置 HI 系统的方信息。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在发送端口窗格中，单击中的空白字段**名称**列中，选择**Tutorial_MllpSend**，然后单击**确定**。  
   
-5.  单击**启动**，指向**程序**，指向**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+5.  单击**启动**，指向**程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 6.  在 BTAHL7 配置资源管理器中，选择**MSH 映射**选项卡，然后执行以下操作：  
   

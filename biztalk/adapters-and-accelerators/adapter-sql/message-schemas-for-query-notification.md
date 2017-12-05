@@ -13,16 +13,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c78c817470bd8acd41f44204653c41e9012d154
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f662f34a9ac31dd5ce200d776bc8b542008e98e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-query-notification"></a>查询通知的消息架构
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]面，用于从 SQL Server 数据库接收查询通知的通知操作。  
   
- 通过设置绑定属性配置通知操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 有关与通知相关的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。 你设置**NotificationStatement**绑定属性来指定 SQL 语句 (SELECT 或 EXEC\<存储过程 >) 的查询通知。 此查询的结果集都会返回作为强类型化数据中通知操作的代码。  
+ 通过设置绑定属性配置通知操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 有关与通知相关的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。 你设置**NotificationStatement**绑定属性来指定 SQL 语句 (SELECT 或 EXEC\<存储过程\>) 的查询通知。 此查询的结果集都会返回作为强类型化数据中通知操作的代码。  
   
 ## <a name="message-structure-for-the-notification-operation"></a>通知操作的消息结构  
  下表显示通知操作的 XML 消息结构。  

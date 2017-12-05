@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b5162d05f9daa591458acaf87aefd86478ef70d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e04d2dfcd6d7f34b0a60a450b64e217b02390a6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="tpe-menu-options"></a>键入菜单选项
 本主题介绍跟踪配置文件编辑器 (TPE) 的菜单选项。 主菜单包括“文件”、“工具”和“帮助”。  
@@ -91,7 +91,7 @@ ms.lasthandoff: 09/20/2017
  您可以同时打开多个程序集。 但不能同时处理这些程序集，不过在与任何一个 BAM 活动定义相关的单个编辑会话中可以访问多个程序集。  换言之，如果导入 BAM 活动定义，然后选择三个要从中提取跟踪项的程序集，那么 TPE 创建的配置文件将应用到与该跟踪配置文件中所使用的业务流程和端口相关联的多个配置文件。 跟踪配置文件始终包含有关与任何给定 BAM 活动定义相关联的所有程序集的信息。  
   
 > [!CAUTION]
->  在[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，每个 BAM 活动只能有一个对其部署的跟踪配置文件。 换言之，如果部署了一个将活动映射到某个业务流程的配置文件，而后又部署了另一个将相同的活动映射到不同的业务流程的配置文件，那么部署的第一个配置文件将被覆盖。  
+>  在 BizTalk Server 中，每个 BAM 活动只能有一个对其部署的跟踪配置文件。 换言之，如果部署了一个将活动映射到某个业务流程的配置文件，而后又部署了另一个将相同的活动映射到不同的业务流程的配置文件，那么部署的第一个配置文件将被覆盖。  
   
 ### <a name="remove-tracking-profile"></a>删除跟踪配置文件  
  **删除跟踪配置文件**菜单选项用于加载的活动定义和其相应的业务流程和端口的跟踪配置文件中删除。 在完成此操作前，系统会提示您进行确认。  

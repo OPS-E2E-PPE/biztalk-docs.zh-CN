@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d89f81bbaf15dfb0c87de91659888d70a2345a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 573e7a2509741748b0f95837f310e2e651b255c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>故障排除的 BizTalk Server 管理
 本部分提供有关使用 BizTalk Server 管理控制台时遇到的常见问题的信息的一个集中的位置。  
@@ -71,13 +71,13 @@ ms.lasthandoff: 09/20/2017
 >  在 messagebox 环境中会出现此问题。  
   
 ##### <a name="cause"></a>原因  
- 此问题可以出现在多个消息框环境中，如果 SQL 代理作业 Operations_OperateOnInstances_OnMaster_\<*dbName*> 不在辅助 messagebox 数据库上运行。 此作业必须正在运行，才能将信息从辅助 messagebox 数据库传播到主 messagebox 数据库。 如果该作业未启用或者如果发生登录故障，则此作业将无法运行。  
+ 此问题可以出现在多个消息框环境中，如果 SQL 代理作业 Operations_OperateOnInstances_OnMaster_\<*dbName*\>不在辅助 messagebox 数据库上运行。 此作业必须正在运行，才能将信息从辅助 messagebox 数据库传播到主 messagebox 数据库。 如果该作业未启用或者如果发生登录故障，则此作业将无法运行。  
   
 ##### <a name="solution"></a>解决方案  
- 如果你使用 BizTalk 管理控制台同时执行多个服务实例上的操作，且你的 BizTalk Server 环境配置的多个 messagebox 数据库，请验证 SQL Server 代理作业名为 Operations_OperateOnInstances_OnMaster_\<*dbName*> 所有辅助 (非 master) messagebox 数据库上启用。 此外，托管辅助 messagebox 数据库的 SQL Server 计算机上的 SQL Server 代理服务必须作为辅助 messagebox 数据库的 BTS_SQLAGENT_USER 数据库角色中包含的帐户运行。  
+ 如果你使用 BizTalk 管理控制台同时执行多个服务实例上的操作，且你的 BizTalk Server 环境配置的多个 messagebox 数据库，请验证 SQL Server 代理作业名为 Operations_OperateOnInstances_OnMaster_\<*dbName*\>在所有辅助 (非 master) messagebox 数据库上启用。 此外，托管辅助 messagebox 数据库的 SQL Server 计算机上的 SQL Server 代理服务必须作为辅助 messagebox 数据库的 BTS_SQLAGENT_USER 数据库角色中包含的帐户运行。  
   
 > [!NOTE]
->  \<*dbname*> 是 BizTalk messagebox 数据库的实际名称的占位符。  
+>  \<*dbname* \>是 BizTalk messagebox 数据库的实际名称的占位符。  
   
  请按照以下步骤，将 SQL Server 代理服务帐户添加到辅助 messagebox 数据库的 BTS_SQLAGENT_USER 数据库角色  
   

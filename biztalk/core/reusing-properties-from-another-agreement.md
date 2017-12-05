@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e2a4e1efbfb7a86c18fb3643a789312a3707a72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7db2118f372014a3e8f108c1ff2273bc5aad976
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="reusing-properties-from-another-agreement"></a>重用其他协议的属性
-您可以重复使用协议之间的属性。 当新协议的大多数或所有属性与现有协议的属性相同时，此操作可以节省大量时间。 通过 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] 中的 [!INCLUDE[prague](../includes/prague-md.md)] 用户界面，您可以将协议导出到 XML 模板文件。 然后，您可以导入该 XML 模板以重复使用相同的协议属性。  
+您可以重复使用协议之间的属性。 当新协议的大多数或所有属性与现有协议的属性相同时，此操作可以节省大量时间。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server 中的用户界面，可导出到 XML 模板文件的协议。 然后，您可以导入该 XML 模板以重复使用相同的协议属性。  
   
  导出协议到 XML 模板可捕获该协议的大多数属性，但并非全部。 以下属性将*不*导出到 XML 模板文件：  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [导出到 XML 文件的协议属性](../core/exporting-agreement-properties-to-an-xml-file.md)  
+-   [将协议属性导出为 XML 文件](../core/exporting-agreement-properties-to-an-xml-file.md)  
   
 -   [从 XML 文件导入协议属性](../core/importing-agreement-properties-from-an-xml-file.md)  
   

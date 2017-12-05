@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42833e24ee4b0ad8f78a8f60139d66ceb41a5f8f
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 3ae4f855b01a7cfcd789e8d8a37e375f9e72c1a7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="domain-groups-in-biztalk"></a>在 BIzTalk 域组
 BizTalk Server 在单计算机配置和多计算机配置中都支持域组和域用户帐户。 对于多计算机配置，必须满足本部分以及安装指南的“多服务器环境注意事项”中提出的要求。 有关详细信息，请参阅[安装概述](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。  
@@ -26,7 +26,7 @@ BizTalk Server 在单计算机配置和多计算机配置中都支持域组和�
   
 -   在创建域组和/或用户帐户后, 将用户帐户添加到适当的组中组隶属关系根据[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。  
   
--   使用 **\<DomainName >\\< 用户名\>**时指定 Configuration Manager 中的域帐户信息。  
+-   使用 **\<DomainName\>\\< 用户名\>**时指定 Configuration Manager 中的域帐户信息。  
   
 -   对于所有群集方案，BizTalk Server 要求使用域帐户。 不能将本地帐户用于群集 SQL Server 或群集 SSO 服务器（主密钥服务器）。  
   

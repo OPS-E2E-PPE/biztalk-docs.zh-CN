@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5c29b21ea36efe3fe0a63c5994b771e36e570ed3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: cce9ad685bc4b0bc8a0d97e0645573c5e2db1cf5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>使用适用于 Windows 跟踪的事件
 Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记录到 Windows 事件查看器。 使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。 例如，tracerpt.exe 应用程序会将转换\*到两个文本文件的.etl 文件： summary.txt 和 dumpfile.csv。  
@@ -25,7 +25,7 @@ Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记�
   
      为了让使用者应用程序能够读取 etl 文件中的事件，Windows 事件跟踪必须将这些事件转储到该文件。 通常，当控制器停用跟踪时执行此操作。  
   
-     若要使用使用者应用程序而无需停用跟踪，控制器必须激活了实时选项中，跟踪\<实时 > =-rt。  
+     若要使用使用者应用程序而无需停用跟踪，控制器必须激活了实时选项中，跟踪\<实时\>=-rt。  
   
 -   **提供程序**： 提供的事件。  
   
@@ -33,15 +33,15 @@ Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记�
   
  用于 TIBCO Rendezvous 的 BizTalk 适配器具有三个提供程序。 这样就可以记录不同种类的消息：  
   
--   **接收方日志记录提供程序**:\<跟踪元素 > 交换机**-接收方**。  
+-   **接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。  
   
 -   使用**-接收方**以获取已在运行时适配器接收到日志中的任何消息。  
   
--   **发送器日志记录提供程序**:\<跟踪元素 > 交换机**-发送器**。  
+-   **发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。  
   
      使用**-发送器**以获取已传输的适配器在运行时日志中的任何消息。  
   
--   **管理日志记录提供程序-**\<跟踪元素 > 交换机**-管理**。  
+-   **管理日志记录提供程序-**\<跟踪元素\>交换机**-管理**。  
   
      使用**-管理**若要获取的服务器系统浏览过程中生成了日志中的任何消息。  
   
@@ -54,7 +54,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- 其中： **\<跟踪元素 >** （必需） 是一种的提供程序。  
+ 其中： **\<跟踪元素\>** （必需） 是一种的提供程序。  
   
  其选项如下：  
   
@@ -66,9 +66,9 @@ BTATIBCORVTrace <Trace element> -stop
   
 -   **-启动、-停止**： 激活或停用该提供程序。  
   
--   **-cir \<MB >**： 大小和类型的文件。 **-cir**是圆形文件。 **\<MB >**： 大小以兆字节为单位。  
+-   **-cir \<MB\>**： 大小和类型的文件。 **-cir**是圆形文件。 **\<MB\>**： 大小以兆字节为单位。  
   
--   **-seq \<MB >**： 大小和类型的文件。 **-seq**是连续的文件。 **\<MB >**： 大小以兆字节为单位。  
+-   **-seq \<MB\>**： 大小和类型的文件。 **-seq**是连续的文件。 **\<MB\>**： 大小以兆字节为单位。  
   
 -   **-rt**： 上设置的实时模式。  
   

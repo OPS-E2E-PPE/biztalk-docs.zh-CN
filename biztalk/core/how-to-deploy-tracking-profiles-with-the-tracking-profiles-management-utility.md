@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a2c3c464e4b06e65ab15059da6ec3c36179ff25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2dde3f351c583be9037127c060d02c98d12b2fcb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility"></a>如何使用跟踪配置文件管理实用程序部署跟踪配置文件
 业务经理要求解决方案开发人员创建一个新的跟踪配置文件或修改现有跟踪配置文件以便更好地管理和监视组织的特定业务流程。  
@@ -38,12 +38,12 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-deploy-the-tracking-profile-from-the-command-line-utility"></a>通过命令行实用工具部署跟踪配置文件  
   
-1.  从命令提示符处，将移动到目录\<安装路径 > files\microsoft BizTalk Server\<版本 > \Tracking\\。  
+1.  从命令提示符处，将移动到目录\<安装路径\>files\microsoft BizTalk Server\<版本\>\Tracking\\。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-2.  类型**bttdeploy.exe\<配置文件名称 >.btt**。  
+2.  类型**bttdeploy.exe\<配置文件名称\>.btt**。  
   
 3.  按 Enter。  
   

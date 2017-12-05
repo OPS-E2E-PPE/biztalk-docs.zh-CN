@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4416534bdd73e8ae6eeeca28165ebc62c11bfc92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb8516ceb780e64c4f4a01370de0e7c40098f3da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-orchestration-variables"></a>如何添加业务流程变量
 业务流程视图窗口可以管理业务流程的属性 (也称为**服务**属性)，参数、 端口、 消息以及其他变量。 除了端口和消息，您还可以创建整数变量、布尔型变量、字符串变量或 .NET 类的变量。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 3.  将该变量与一个类型相关联，如 .NET 类。  
   
     > [!NOTE]
-    >  **类型**下拉列表包含下列预定义的变量类型：**布尔**，**字节**， **datetime**， **十进制**， **double**， **int16**， **int32**， **int64**， **sbyte****单个**，**字符串**， **timespan**， **uint16**， **uint32**，和**uint64**。 你还可以通过选择访问.NET 数据类型和类 **\<.NET 类...>**，它可提供**选择项目类型**对话框。  
+    >  **类型**下拉列表包含下列预定义的变量类型：**布尔**，**字节**， **datetime**， **十进制**， **double**， **int16**， **int32**， **int64**， **sbyte****单个**，**字符串**， **timespan**， **uint16**， **uint32**，和**uint64**。 你还可以通过选择访问.NET 数据类型和类 **\<.NET 类...\>** ，它可提供**选择项目类型**对话框。  
   
 4.  如果选择预定义变量类型，则可以选择指定该变量的初始值。 在属性窗口中，设置**初始值**属性。  
   

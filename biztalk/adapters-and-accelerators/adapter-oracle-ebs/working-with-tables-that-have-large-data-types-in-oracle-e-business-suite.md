@@ -12,25 +12,25 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cc357809ecc446c0c282f6a4f8fa46ad7392a53
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d65bd37e6ad9c8b8b196df6092a0573d2774a756
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-tables-that-have-large-data-types-in-oracle-e-business-suite"></a>使用在 Oracle E-business Suite 中具有较大的数据类型的表
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端可以执行对接口表和视图的较大的数据类型，如 BLOB、 CLOB、 NCLOB、 和 BFILE 操作。  
   
--   列类型的 BLOB、 CLOB、 和 NCLOB 适配器允许客户端读取，以及更新数据。 适配器公开 Read_\<LOBColName > 和 Update_\<LOBColName > 操作来读取和更新数据分别，其中\<LOBColName > 是具有较大的数据类型列的名称。 如果没有具有单个接口表中的较大的数据类型的多个列，适配器将公开为许多读取和更新接口该表的操作。  
+-   列类型的 BLOB、 CLOB、 和 NCLOB 适配器允许客户端读取，以及更新数据。 适配器公开 Read_\<LOBColName\>和 Update_\<LOBColName\>操作来读取和更新数据分别，其中\<LOBColName\>是较大的列名称数据类型。 如果没有具有单个接口表中的较大的数据类型的多个列，适配器将公开为许多读取和更新接口该表的操作。  
   
--   对于类型 BFILE 列，适配器客户端只能读取的数据。 适配器公开 Read_\<LOBColName > 从 BFILE 类型的列读取数据的操作。 如果没有具有单个接口表中的较大的数据类型的多个列，该适配器将公开许多读取接口表的操作。  
+-   对于类型 BFILE 列，适配器客户端只能读取的数据。 适配器公开 Read_\<LOBColName\>操作从 BFILE 类型的列读取数据。 如果没有具有单个接口表中的较大的数据类型的多个列，该适配器将公开许多读取接口表的操作。  
   
  有关这些操作的详细信息，请参阅[接口表、 界面视图、 表和包含 LOB 数据的视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)。 有关执行这些操作的消息架构的信息，请参阅[特殊 LOB 操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-special-lob-operations1.md)。  
   
 ## <a name="how-to-perform-operations-on-columns-with-large-data-types"></a>如何在具有较大的数据类型的列上执行操作  
  通过执行上 Oracle E-business Suite 操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]涉及过程中所述的任务[创建 Oracle E-business Suite 应用程序的构建基块](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)。 若要在包含较大的数据类型的 Oracle E-business Suite 执行接口表和接口视图上的操作，这些任务包括：  
   
-1.  创建 BizTalk 项目，并生成操作的架构 (Read_\<LOBColName > 或 Update_\<LOBColName >) 你想要在表或视图上调用。  
+1.  创建 BizTalk 项目，并生成操作的架构 (Read_\<LOBColName\>或 Update_\<LOBColName\>) 你想要在表或视图上调用。  
   
 2.  在发送和接收消息从 Oracle E-business Suite 的 BizTalk 项目中创建消息。  
   
@@ -222,7 +222,7 @@ ReadMessage(WCF.Action) = "Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO ";
         -   由于 WCF 自定义或 WCF OracleEBS 发送端口将发送和接收符合到多个架构的消息并执行两个操作，必须设置为这两种操作的动态操作。 有关操作的详细信息，请参阅[为 Oracle E-business Suite 配置 SOAP 操作](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)。 适用于此业务流程，应将操作设置，如下所示：  
   
             ```  
-            \<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+            <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
               <Operation Name="Update_LOB" Action="Tables/UpdateBlob/SCOTT/CUSTOMER/PHOTO" />  
               <Operation Name="Read_LOB" Action="Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO" />  
             </BtsActionMapping>  
@@ -279,14 +279,14 @@ ReadMessage(WCF.Action) = "Tables/ReadLOB/SCOTT/CUSTOMER/PHOTO ";
  业务流程使用该消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置中。 例如，从前面的请求消息的 Oracle 数据库响应如下所示：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Update_PHOTOResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/CUSTOMER" />  
 ```  
   
  业务流程现在构造的请求消息**Read_PHOTO** C:\TestLocation\MessageIn 在使用提供的请求消息的操作。 请求消息发送到 Oracle 数据库和响应保存在同一文件位置。 在照片列上执行读取操作的响应如下所示：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Read_PHOTOResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Tables/SCOTT/CUSTOMER">  
   <Read_PHOTOResult>U2FtcGxlIERhdGE=</Read_PHOTOResult>  
 </Read_PHOTOResponse>  

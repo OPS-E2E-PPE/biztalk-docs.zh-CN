@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b2b5eadcbdbdc357529f4ad8af47d46840d47e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1356209f700fc7ceff220f4b0f8fcd3dd67db07
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>已知问题
 本部分包含有用信息来帮助你避免与错误[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 已知问题归为以下几个方面：  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
  在消息修复业务流程将路由到 MessageBox 未分析的消息已修复，它会将设置[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_MRSRDepartment 属性设置为一个空字符串并将其升级。 发送端口将不能订阅此属性上。  
   
 #### <a name="cannot-save-a-department-if-the-sso-service-has-been-stopped"></a>如果 SSO 服务已停止，无法保存部门  
- 主 SSO 服务器如果你尝试添加一个部门，SSO 服务停止时，你都将收到错误，该值指示\<machinename > 失败。 请检查是否正确配置了 SSO 以及 SSO 服务是否正在该服务器上运行。  
+ 主 SSO 服务器如果你尝试添加一个部门，SSO 服务停止时，你都将收到错误，该值指示\<machinename\>失败。 请检查是否正确配置了 SSO 以及 SSO 服务是否正在该服务器上运行。  
   
 #### <a name="a-department-name-must-not-contain-the-character-"></a>部门名称不能包含字符"~"  
  包含字符的部门名称"~"将导致 A4SWIFT 数据库时出现的问题。  
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
  即使[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]安装程序将从 32 CacheEntries 设置为 512，卸载[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]不重置 CacheEntries 从 512 为 32。  
   
- 有关详细信息，请参阅中的"规则引擎配置和优化参数"主题[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+ 有关详细信息，请参阅 BizTalk Server 帮助中的"规则引擎配置和优化参数"主题。  
   
 #### <a name="building-a-pipeline-project-may-result-in-a-large-number-of-warnings"></a>生成管道项目可能会导致大量的警告  
  当你将 SWIFT 汇编程序添加到发送管道或 SWIFT 拆装器接收管道，然后生成包含这些管道的管道项目，你可能会收到警告的管道组件相关的一系列。 这些警告指示 Visual Studio 找不到依赖项。 您可以更正导致通过更改中的引用文件夹中，SWIFTAsm 或 SWIFTDasm 程序集的复制本地属性，如下所示的这些警告的条件：  

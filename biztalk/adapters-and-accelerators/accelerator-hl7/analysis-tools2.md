@@ -19,14 +19,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947796495a321a4b3b9cabbc01db1610223c034f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78dd748febee568513c6138b036aab89369fcafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analysis-tools"></a>分析工具
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]于业务分析人员和信息工作者提供一套分析工具。 有关这些工具的详细信息，请参阅[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]帮助。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 业务分析人员和信息工作者提供一套分析工具。 有关这些工具的详细信息，请参阅[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 帮助。  
   
 ## <a name="business-activity-monitoring"></a>业务活动监视  
  BizTalk 业务活动监视 (BAM) 向业务用户提供其异类业务流程的实时视图。 它使您能够做出业务决策所需的数据。  
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>另请参阅  
  [工具和功能](../../adapters-and-accelerators/accelerator-hl7/tools-and-features.md)   
  [设计时工具](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)   
- [管理和运行的时工具](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)
+ [管理和运行时工具](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5e74e297eba5dcc92d2008bcca90fdc7b325814
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: bcd87b89c6c23e709f21e78e3ea98dd2b84575ca
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-the-virtual-directory"></a>配置虚拟目录
 本主题演示了为用户配置虚拟目录并验证应用程序的过程。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  单击**启动**，指向**程序**，单击**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-3.  展开**\<服务器名称 >**然后展开**站点**。  
+3.  展开**\<服务器名称\>**然后展开**站点**。  
   
 4.  右键单击**Default Web Site**单击**添加虚拟目录**。  
   

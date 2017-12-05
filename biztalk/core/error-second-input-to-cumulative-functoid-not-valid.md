@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a288bdaa9427cd26191571d180d39ad2dde9f9f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f0228beda57b961d515471e42760abe3ab92db54
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---second-input-to-cumulative-functoid-not-valid"></a>错误-第二个输入无效的累积 functoid
 **错误代码**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 选择指示**的累积**functoid，单击省略号 (**...**) 与关联的按钮**顺序 Functoid 输入**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid > Functoid**对话框框中，确保第二个输入的参数，如果有的话，是一个正整数。
+ 选择指示**的累积**functoid，单击省略号 (**...**) 与关联的按钮**顺序 Functoid 输入**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\>Functoid**对话框框中，确保第二个输入的参数，如果有的话，是一个正整数。

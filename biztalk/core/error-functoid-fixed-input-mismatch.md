@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c569c04d1cd5022821312f2dc361b9880b76c552
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8de4020105f357905e510be1694c0cf95a4af6c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---functoid-fixed-input-mismatch"></a>错误-Functoid 固定输入不匹配
 **错误代码**  
@@ -34,8 +34,8 @@ ms.lasthandoff: 09/20/2017
   
 -   若要创建其他链接，请拖动鼠标以在所指示的 functoid 与源架构中的节点或其他 functoid 的输出之间创建链接，这些 functoid 在映射网格页中位于所指示的 functoid 的左侧。  
   
--   若要创建更多链接，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后配置和重新排列中的输入参数的顺序**配置\<Functoid > Functoid**对话框。 也可以创建常数输入参数并为它赋值，然后在此对话框中将该参数放置到相对于其他输入参数的正确位置。  
+-   若要创建更多链接，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后配置和重新排列中的输入参数的顺序**配置\<Functoid\> Functoid**对话框。 也可以创建常数输入参数并为它赋值，然后在此对话框中将该参数放置到相对于其他输入参数的正确位置。  
   
 -   要删除现有的链接，为每个链接连接到左侧指定 functoid，右键单击该链接，然后单击**删除**。  
   
--   若要删除现有的链接，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid > Functoid**对话框框中，通过选择并单击删除所有输入的参数![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。 删除常数输入参数时必须使用这种方法。
+-   若要删除现有的链接，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\> Functoid**对话框中，删除所有输入参数，请选择并单击![ ] (../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。 删除常数输入参数时必须使用这种方法。

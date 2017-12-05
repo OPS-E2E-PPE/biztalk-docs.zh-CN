@@ -13,11 +13,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21cf3bcfae53d3204a1b4de23c1476591be2b453
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 117541cdeded0ff6204797f12e6d8cca1afce38b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-end-to-end-biztalk-server-sample"></a>BAM 端对端（BizTalk Server 示例）
 端到端示例演示如何通过使用 BAM 关联中 （在这种情况下，三个业务流程和管道） 的多个组件的事件。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 
 本示例的工作原理如下所示：  
   
-1.  从检索到输入的消息*\<示例路径 >*\BamEndToEnd\Input 文件夹。  
+1.  从检索到输入的消息*\<示例路径\>*\BamEndToEnd\Input 文件夹。  
   
 2.  管道组件向消息分配唯一的 DocumentID，然后使用 BAM API 开始一个新 BAM 活动。 将此 DocumentID 作为此输入消息的一个单独部分附加，以使其可用于业务流程。  
   
@@ -54,12 +54,12 @@ ms.lasthandoff: 09/20/2017
   
 5.  Orchestration2 修改此输入消息，然后将其发送给 MessageBox 数据库，这便激活了 Orchestration3。  
   
-6.  Orchestration3 修改消息并将其写入文件夹*\<示例路径 >*\BamEndToEnd\Output。  
+6.  Orchestration3 修改消息并将其写入文件夹*\<示例路径\>*\BamEndToEnd\Output。  
   
 7.  每个业务流程都会更新 BAM 活动中的活动项。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 你可以找到在此示例*\<示例路径 >*\BAM\BamEndToEnd。  
+ 你可以找到在此示例*\<示例路径\>*\BAM\BamEndToEnd。  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -101,11 +101,11 @@ Services\Schema3.xsd|消息架构。|
   
 ##  <a name="To_Build_Sample"></a>生成并初始化此示例  
   
-1.  打开命令提示符以管理员身份，并运行*\<示例路径 >*\BAM\BAMEndToEnd\Setup.bat。 Setup.bat 为此示例生成并初始化 BAM 基础结构。 保持命令提示符处于打开状态。  
+1.  打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BAMEndToEnd\Setup.bat。 Setup.bat 为此示例生成并初始化 BAM 基础结构。 保持命令提示符处于打开状态。  
   
 2.  创建一个跟踪配置文件，以将 Orchestration1、Orchestration2 和 Orchestration3 映射到 BAM 活动。 (由于创建跟踪配置文件是一个复杂的过程，在单独的过程调用了的详细的说明**创建跟踪配置文件**。 此过程位于本文档后面的部分中。）  
   
-3.  部署上一步中创建的跟踪配置文件 BamEndToEnd.btt。  在命令提示符将更改为*\<示例路径 >*\BAM\BamEndToEnd 目录。 若要部署的跟踪配置文件，请键入以下行，，然后按**Enter**:  
+3.  部署上一步中创建的跟踪配置文件 BamEndToEnd.btt。  在命令提示符将更改为*\<示例路径\>*\BAM\BamEndToEnd 目录。 若要部署的跟踪配置文件，请键入以下行，，然后按**Enter**:  
   
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
   
@@ -116,7 +116,7 @@ Services\Schema3.xsd|消息架构。|
   
 ##  <a name="To_Run_Sample"></a>运行此示例  
   
-将文件复制*\<示例路径 >*到文件夹 \BamEndToEnd\InputMessage.xml *\<示例路径 >*\BamEndToEnd\Input。 在几秒钟后，消息消失从输入文件夹中，并输出消息出现在*\<示例路径 >*\BamEndToEnd\Output 文件夹。  
+将文件复制*\<示例路径\>*到文件夹 \BamEndToEnd\InputMessage.xml *\<示例路径\>*\BamEndToEnd\Input。 在几秒钟后，消息消失从输入文件夹中，并输出消息出现在*\<示例路径\>*\BamEndToEnd\Output 文件夹。  
   
 ##  <a name="To_View_Data"></a>查看 BAM 数据  
   
@@ -124,20 +124,20 @@ Services\Schema3.xsd|消息架构。|
   
 2.  在 SQL Server Management Studio，展开服务器，展开**数据库**，展开**BAMPrimaryImport**，然后展开**表**。  
   
-3.  右键单击**dbo.bam_EndToEndActivity_Completed**，然后单击**打开表**。 如果你使用[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]，单击**选择前 1000年行**。  
+3.  右键单击**dbo.bam_EndToEndActivity_Completed**，然后单击**打开表**。 如果你使用的 SQL Server，请单击**选择前 1000年行**。  
   
      右窗格中会显示 bam_EndToEndActivity_Completed 表的内容。 表中的每一行均代表一个已完成的 EndToEndActivity 活动。  
   
 #### <a name="rerun-this-sample"></a>重新运行此示例  
   
-1.  打开命令提示符以管理员身份，并将更改为*\<示例路径 >*\BAM\BamEndToEnd 目录。 键入以下行：  
+1.  打开命令提示符以管理员身份，并将更改为*\<示例路径\>*\BAM\BamEndToEnd 目录。 键入以下行：  
   
     `“C:\Program Files\Microsoft BizTalk Server <version>\Tracking\bttdeploy” BamEndToEnd.btt /remove`  
   
     > [!NOTE]
     >  如果你未安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到 C 驱动器中，将"C"替换为你的安装位置的驱动器号[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-2.  运行*\<示例路径 >*\BAM\BAMEndToEnd\Cleanup.bat。 Cleanup.bat 移除此示例的 BAM 基础结构。  
+2.  运行*\<示例路径\>*\BAM\BAMEndToEnd\Cleanup.bat。 Cleanup.bat 移除此示例的 BAM 基础结构。  
   
 3.  执行中的步骤**生成并初始化此示例**本主题中的部分。  
   
@@ -163,7 +163,7 @@ Services\Schema3.xsd|消息架构。|
   
 10. 滚动到末尾**上下文属性名称**列表，，然后双击**BAMEndToEnd.Services.PropertySchema.DocumentID**。  
   
-11. 展开**\<架构 >**，然后拖动**DocumentID**到右窗格中**Orch1_**的左窗格中。  
+11. 展开**\<架构\>**，然后拖动**DocumentID**到右窗格中**Orch1_**的左窗格中。  
   
 12. 单击文件夹图标带有箭头 (![使用文件夹和向上箭头的按钮](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) 两次以显示业务流程。  
   
@@ -183,7 +183,7 @@ Services\Schema3.xsd|消息架构。|
   
 19. 滚动到末尾**上下文属性名称**列表，，然后双击**BAMEndToEnd.Services.PropertySchema.DocumentID**。  
   
-20. 展开**\<架构 >**，然后拖动**DocumentID**到**Orch2_**延续的左窗格中。  
+20. 展开**\<架构\>**，然后拖动**DocumentID**到**Orch2_**延续的左窗格中。  
   
     > [!NOTE]
     >  不要混淆 Orch2_ 延续替换 Orch2_ 延续 id。 表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。  
@@ -256,10 +256,10 @@ Services\Schema3.xsd|消息架构。|
   
 48. 在**选择端口**部分**选择端口**对话框中，单击**BamEndToEnd_ReceivePort**，单击大于-号 ( **>**)，然后单击**确定**。  
   
-49. 保存跟踪配置文件到*\<示例路径 >*\BAM\BamEndToEnd\BamEndToEnd.btt。  
+49. 保存跟踪配置文件到*\<示例路径\>*\BAM\BamEndToEnd\BamEndToEnd.btt。  
   
 ## <a name="important-details"></a>重要详细信息  
  管道不支持跟踪配置文件。 但是，对的调用**BeginActivity**在管道组件是在业务流程中使用 ActivityID 相同。 调用**EnableContinuation**等同于业务流程中使用延续。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务活动监视 （BizTalk Server 示例文件夹中）](../core/business-activity-monitoring-biztalk-server-samples-folder.md)
+ [业务活动监视（BizTalk Server 示例文件夹）](../core/business-activity-monitoring-biztalk-server-samples-folder.md)

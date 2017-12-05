@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fa0c0b5435e235a07046f311a971a0036dc8346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a87404e608789fa3dba003f3aba6155c5f049e8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>如何恢复企业单一登录
 必须先恢复企业单一登录 (SSO)，然后才能恢复 BizTalk Server。  
@@ -60,9 +60,9 @@ ms.lasthandoff: 09/20/2017
   
 10. 在命令提示符下，键入：  
   
-     **ssoconfig restoreSecret***\<a c k e >*   
+     **ssoconfig restoreSecret***\<backupfile  \>*  
   
-     其中 *\<a c k e >*是 master 你备份的密钥文件的名称。  
+     其中 *\<backupfile\>* 是 master 你备份的密钥文件的名称。  
   
      当**ssoconfig**提示您输入备份文件的密码，输入已在 SSO 配置过程中指定的密码。 如果密码是否正确， **ssoconfig**显示以下消息：  
   

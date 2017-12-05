@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6030b711e0fd48d2632ff84428e1cb9ffc6e0402
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 466917e0656dfa39467a00dfa91285b3cb7cf1a1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="importing-certificates-using-mmc"></a>导入证书使用 MMC
 本主题描述如何导入数字证书[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]用于进行身份验证贸易合作伙伴，解密传入消息时，或者加密或传出消息进行签名。  
@@ -54,12 +54,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  将私钥 (.pfx) 证书文件复制到服务器硬盘上的某个位置，该位置也是您正在向其复制证书的位置。  
   
-2.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务 > mmc**，然后单击**确定**。  
+2.  单击**启动**，单击**运行**，类型**runas /user:\<承载服务\>mmc**，然后单击**确定**。  
   
     > [!NOTE]
-    >  有关\<*承载服务*>，键入你在安装时自动为主机服务中选择服务的名称[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
+    >  有关\<*承载服务*\>，键入你在安装时自动为主机服务中选择服务的名称[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
   
-3.  键入的密码\<*承载服务*>，然后按**Enter**。  
+3.  键入的密码\<*承载服务*\>，然后按**Enter**。  
   
 4.  在[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]管理控制台中，在**文件**菜单上，单击**添加/删除管理单元中**。  
   

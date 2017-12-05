@@ -19,11 +19,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b76cead956ade8d16c5cbd26c55f94eabe15e1fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13b0f446dab1d597e9dd2435e2bb5f40b3fd37ce
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bpel-import-biztalk-server-sample"></a>BPEL 导入 （BizTalk Server 示例）
 BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及其相关项目中创建业务流程。  
@@ -90,7 +90,7 @@ BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及�
   
 6.  上**选择 BPEL、 WSDL 和 XSD 文件**页上，单击**浏览**。  
   
-7.  选择的所有文件\<*示例路径*> \Orchestrations\BPELImport\BPELSource 文件夹中，单击**打开**，然后单击**下一步**。  
+7.  选择的所有文件\<*示例路径*\>\Orchestrations\BPELImport\BPELSource 文件夹中，单击**打开**，然后单击**下一步**.  
   
     > [!NOTE]
     >  在此步骤中，你将选择用于描述业务流程的 BPEL 和 WSDL 文件以及表述业务文档架构的 XSD 文件。  
@@ -113,7 +113,7 @@ BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及�
   
 15. 在解决方案资源管理器，选择**添加引用**，然后在**项目**选项卡上，单击**浏览**。  
   
-16. 选择**ShippingSchemas.dll**从位置\<*示例路径*> \Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development，然后单击**确定**。  
+16. 选择**ShippingSchemas.dll**从位置\<*示例路径*\>\Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development，和然后单击**确定**。  
   
     > [!NOTE]
     >  “生成并初始化 ShipperProcess 应用程序”部分中说明了如何生成此应用程序。  
@@ -156,7 +156,7 @@ BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及�
   
 27. 在解决方案资源管理器，右键单击**BPELShipping**项目，指向**添加**，然后单击**现有项**。  
   
-28. 从位置选择所有.btm 文件\<*示例路径*> \Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping。  
+28. 从位置选择所有.btm 文件\<*示例路径*\>\Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping。  
   
 29. 在业务流程视图窗口中，找到**消息分配**调整命名的 MessageAssignment_1 ConstructMessage1 中并将其删除。  
   
@@ -229,10 +229,10 @@ BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及�
   
 50. 部署该解决方案。  
   
-51. 浏览到的位置\<*示例路径*> \Orchestrations\BPELImport\Solution\BPELShipping 并双击**BindAndStartOnly.bat**绑定以及启动业务流程。  
+51. 浏览到的位置\<*示例路径*\>\Orchestrations\BPELImport\Solution\BPELShipping 并双击**BindAndStartOnly.bat**绑定并启动业务流程。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Orchestrations\BPELImport  
+ *\<示例路径\>*\Orchestrations\BPELImport  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -277,7 +277,7 @@ olution\BPELShipping\BPELShipping\Invoice2Ack.btm|从开发票到发票确认的
   
 2.  从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 的以下文件夹：  
   
-     *\<示例路径 >*\Orchestrations\BPELImport\Solution\ShipperProcess  
+     *\<示例路径\>*\Orchestrations\BPELImport\Solution\ShipperProcess  
   
 3.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -312,7 +312,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
      从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 的以下文件夹：  
   
-     *\<示例路径 >*\Orchestrations\BPELImport\Solution\BPELShipping  
+     *\<示例路径\>*\Orchestrations\BPELImport\Solution\BPELShipping  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -330,21 +330,21 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
 #### <a name="to-run-the-bpel-import-sample"></a>运行 BPEL 导入示例  
   
-1.  复制**Order.xml**文件从*\<示例路径 >*\Orchestrations\BPELImport\Solution 文件夹\<*示例路径 >*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。  
+1.  复制**Order.xml**文件从*\<示例路径\>*\Orchestrations\BPELImport\Solution 文件夹\<*示例路径\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。  
   
-2.  业务流程选取此文件作为客户订单处理系统中，从订单 BPELShipping 运行完传送过程中，并生成一个文件中的每个\<*示例路径*> \Orchestrations\BPELImport\Solution\Ports\SendOrder 文件夹和\<*示例路径*> \Orchestrations\BPELImport\Solution\Ports\FinalConfirmation 文件夹。 这些文件的名称的格式是\< *MessageID*>.xml，其中 *\<MessageID >* GUID 生成以唯一标识消息。  
+2.  业务流程选取此文件作为客户订单处理系统中，从订单 BPELShipping 运行完传送过程中，并生成一个文件中的每个\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder 文件夹和\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation 文件夹。 这些文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息。  
   
 ## <a name="uninstalling-this-sample"></a>卸载本示例  
   
 #### <a name="to-uninstall-the-bpel-import-sample"></a>卸载 BPEL 导入示例  
   
-1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 到\<*示例路径*> \Orchestrations\BPELImport\BPELShipping。  
+1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 到\<*示例路径*\>\Orchestrations\BPELImport\BPELShipping。  
   
 2.  运行 Cleanup.bat。  
   
-3.  浏览到\<*示例路径*> \Orchestrations\BPELImport\ShipperProcess。  
+3.  浏览到\<*示例路径*\>\Orchestrations\BPELImport\ShipperProcess。  
   
 4.  运行 Cleanup.bat。  
   
 ## <a name="see-also"></a>另请参阅  
- [业务流程 （BizTalk Server 示例文件夹中）](../core/orchestrations-biztalk-server-samples-folder.md)
+ [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

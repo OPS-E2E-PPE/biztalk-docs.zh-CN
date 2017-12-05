@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66d6d35ac668a324ed28f7c9519b32812e10cb3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 632ca1c46a3df313e3aac4e144cad1647eb2360f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-sql-server"></a>故障排除 SQL Server
 影响 Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 的大多数 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 问题主要分为以下几类：  
@@ -100,13 +100,13 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="permissions-related-problems"></a>与权限相关的问题  
   
-#### <a name="biztalk-server-run-time-or-design-time-operations-fail-and-a-cannot-open-database-requested-in-login-database-error-is-written-to-the-application-log-of-the-biztalk-server-or-sql-server-computer"></a>运行时或设计时操作失败的 BizTalk Server 和一个"无法打开登录中所请求的数据库\<数据库 >"到 BizTalk Server 或 SQL Server 计算机的应用程序日志写入错误  
+#### <a name="biztalk-server-run-time-or-design-time-operations-fail-and-a-cannot-open-database-requested-in-login-database-error-is-written-to-the-application-log-of-the-biztalk-server-or-sql-server-computer"></a>运行时或设计时操作失败的 BizTalk Server 和一个"无法打开登录中所请求的数据库\<数据库\>"错误写入到 BizTalk Server 或 SQL Server 计算机的应用程序日志  
   
 ##### <a name="problem"></a>问题  
  运行时或设计时操作将失败，出现类似于以下的错误写入到的应用程序日志[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机：  
   
- 无法打开登录中所请求的数据库\<*数据库*>。 登录失败。   
-用户登录失败\<*用户名*>。  
+ 无法打开登录中所请求的数据库\<*数据库*\>。 登录失败。   
+用户登录失败\<*用户名*\>。  
   
 ##### <a name="cause"></a>原因  
  如果指定的帐户不属于相应的 Windows 组，可能出现此错误或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]角色。  

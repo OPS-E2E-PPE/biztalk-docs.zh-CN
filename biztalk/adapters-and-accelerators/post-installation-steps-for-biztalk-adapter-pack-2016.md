@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33726ebafc3ed6b3d1ad62bf97019e30493a895e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17bd0a76cacb35563448f31f79c2275c79b92ab8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a>BizTalk 适配器包 2016年的安装后步骤
 安装之后[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]，有一些安装后步骤。 本主题列出了这些步骤。   
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
 > - *NewVersion*值需要更新的计算机上安装的 Oracle.DataAccess.dll 文件的版本。  Oracle.DataAccess.dll 都附带从 Oracle 安装 Oracle 客户端。  你只需安装的 Oracle 客户端版本[的 BizTalk 适配器包支持](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)。  
   
 ## <a name="create-sql-server-database-objects-sap-adapter-only"></a>创建 SQL Server 数据库对象 （仅适用于 SAP 适配器）  
- 若要调用 tRFCs SAP 系统中，运行*SapAdapter DbScript Install.sql* SQL 脚本。 此脚本安装使用[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装，并在 SQL Server 中创建数据库对象。 该脚本通常安装在*\<安装驱动器 >: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* 。 只要在使用该适配器调用 tRFCs 时输入该数据库名称，你可以针对任何 SQL Server 数据库，运行此脚本。
+ 若要调用 tRFCs SAP 系统中，运行*SapAdapter DbScript Install.sql* SQL 脚本。 此脚本安装使用[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装，并在 SQL Server 中创建数据库对象。 该脚本通常安装在*\<安装驱动器\>: files\microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* 。 只要在使用该适配器调用 tRFCs 时输入该数据库名称，你可以针对任何 SQL Server 数据库，运行此脚本。
   
 ## <a name="register-the-adapter-bindings"></a>注册的适配器绑定
 期间[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装，安装向导可能无法注册的适配器绑定或.NET Framework 数据提供程序 mySAP Business Suite。 和安装程序将继续执行适配器安装。 这可能由 Windows Communication Foundation (WCF) 安装中，[!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)]安装或被损坏的 machine.config 文件。  
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 > 完成以下步骤*仅*如果安装向导无法在 machine.config 文件中注册的适配器的绑定或.NET Framework 数据提供程序。  
   
-1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下*\<系统驱动器 >: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
+1.  转到计算机上的 machine.config 文件。 例如，在 32 位平台上，machine.config 位于下*\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
   
 2.  打开使用文本编辑器的文件。  
   

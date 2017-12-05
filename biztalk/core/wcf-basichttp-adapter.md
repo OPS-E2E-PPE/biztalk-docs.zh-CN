@@ -13,11 +13,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 855a96a8cab86b09826f8bf11241b03b45c72949
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27d0e731fd63ce01e9cc1c2604eb8f83141e024e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-basichttp-adapter"></a>WCF-BasicHttp 适配器
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] WCF BasicHttp 适配器用于接收和发送通过 WCF 服务请求[BasicHttpBinding 类](https://msdn.microsoft.com/library/system.servicemodel.basichttpbinding.aspx)。 WCF BasicHttp 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**BasicHttpBinding**。  
@@ -131,14 +131,14 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**信封--完整\<soap： 信封 >**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。<br /><br /> 默认值为清除此复选框。|  
-    |**正文--内容\<soap： 正文 > 元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br /><br /> 这是默认设置。|  
+    |**信封--完整\<soap 信封：\>**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。<br /><br /> 默认值为清除此复选框。|  
+    |**正文--内容\<soap： 正文\>元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br /><br /> 这是默认设置。|  
     |**路径--由正文路径定位的内容**|使用“正文路径表达式”  文本框中的正文路径表达式创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。<br /><br /> 默认值为清除此复选框。|  
     |**正文路径表达式**|键入正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算此正文路径表达式。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|  
     |**节点编码**|指定的编码，WCF BasicHttp 接收适配器使用要解码识别由正文路径表达式中的节点类型**正文路径表达式**文本框。<br /><br /> 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 有效值包括：<br /><br /> -   **Base64**: Base64 编码。<br />-   **十六进制**： 十六进制编码。<br />-   **字符串**： 文本编码的 utf-8<br />-   **XML**: WCF 适配器使用由正文路径表达式中所选节点的外部 XML 创建 BizTalk 消息正文**正文路径表达式**文本框。<br /><br /> 默认值为“XML” 。|  
     |**正文--BizTalk 响应消息正文**|使用 BizTalk 消息正文部分创建传出响应消息的 SOAP **Body** 元素的内容。 此属性仅对请求响应接收位置有效。<br /><br /> 这是默认设置。|  
     |**指定模板的模板--内容**|使用在“XML”  文本框中提供的模板创建传出消息的 SOAP **Body** 元素的内容。 此属性仅对请求响应接收位置有效。<br /><br /> 默认值为清除此复选框。|  
-    |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。 此属性仅对请求响应接收位置有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 **\<bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="xml"/ >**。|  
+    |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。 此属性仅对请求响应接收位置有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 **\<bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="xml"\>**。|  
     |**挂起失败的请求消息**|指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。<br /><br /> 默认值为清除此复选框。|  
     |**错误中包括异常详细信息**|指定发生错误时是否返回 SOAP 错误以方便进行调试。<br /><br /> 默认值为清除此复选框。|   
  
@@ -161,7 +161,7 @@ ms.lasthandoff: 09/20/2017
     |--------------|----------------|  
     |**地址 (URI)**|必需的。 指定此发送端口的完全限定 URI。 使用**https**或**http**根据安全配置的方案。<br /><br /> 最大长度： 255<br /><br /> 默认值： http://localhost/|  
     |**终结点标识**|可选。 指定此发送端口预期的服务标识。 这些设置支持此发送端口对服务进行验证。 在客户端与服务进行握手的过程中，Windows Communication Foundation (WCF) 基础结构将确保预期服务的标识与此元素的值保持一致。 可以为指定的值**标识**属性而异的安全配置。<br /><br /> 默认值为清除此复选框。| 
-    |**操作**|指定**SOAPAction**传出消息的 HTTP 标头字段。 此外可以通过消息上下文属性设置此属性**WCF。操作**在管道或业务流程。 你可以通过两种方式指定此值： 单个操作格式和操作映射格式。 如果将此属性设置中的单个操作格式-例如，http://contoso.com/Svc/Op1- **SOAPAction**标头为传出消息始终设置为此属性中指定的值。<br /><br /> 如果在操作映射格式，传出中设置此属性**SOAPAction**标头由**BTS。操作**上下文属性。 例如，如果此属性设置为以下 XML 格式和**BTS。操作**属性设置为 Op1，为传出的 WCF 发送适配器使用 http://contoso.com/Svc/Op1 **SOAPAction**标头。<br /><br /> \<BtsActionMapping ><br /><br /> \<操作名称 ="Op1"操作 ="http://contoso.com/Svc/Op1"/ ><br /><br /> \<操作名称 ="Op2"操作 ="http://contoso.com/Svc/Op2"/ ><br /><br /> \</ BtsActionMapping ><br /><br /> 如果传出消息来自于业务流程端口，动态设置业务流程实例**BTS。操作**与操作名称的端口的属性。 如果使用基于内容的路由路由传出消息，则可以设置**BTS。操作**管道组件中的属性。<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|
+    |**操作**|指定**SOAPAction**传出消息的 HTTP 标头字段。 此外可以通过消息上下文属性设置此属性**WCF。操作**在管道或业务流程。 你可以通过两种方式指定此值： 单个操作格式和操作映射格式。 如果将此属性设置中的单个操作格式-例如，http://contoso.com/Svc/Op1- **SOAPAction**标头为传出消息始终设置为此属性中指定的值。<br /><br /> 如果在操作映射格式，传出中设置此属性**SOAPAction**标头由**BTS。操作**上下文属性。 例如，如果此属性设置为以下 XML 格式和**BTS。操作**属性设置为 Op1，为传出的 WCF 发送适配器使用 http://contoso.com/Svc/Op1 **SOAPAction**标头。<br /><br /> \<BtsActionMapping\><br /><br /> \<操作名称 ="Op1"操作 ="http://contoso.com/Svc/Op1"\><br /><br /> \<操作名称 ="Op2"操作 ="http://contoso.com/Svc/Op2"\><br /><br /> \</ BtsActionMapping\><br /><br /> 如果传出消息来自于业务流程端口，动态设置业务流程实例**BTS。操作**与操作名称的端口的属性。 如果使用基于内容的路由路由传出消息，则可以设置**BTS。操作**管道组件中的属性。<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|
  
 4.  在**WCF BasicHttp 传输属性**上**绑定**选项卡上，配置的超时和编码属性： 
 
@@ -218,8 +218,8 @@ ms.lasthandoff: 09/20/2017
     |**正文--BizTalk 请求消息正文**|使用 BizTalk 消息正文部分创建的 SOAP 内容**正文**传出消息的元素。<br /><br /> 这是默认设置。|  
     |**指定模板的模板--内容**|使用在“XML”  文本框中提供的模板创建传出消息的 SOAP **Body** 元素的内容。<br /><br /> 默认值为清除此复选框。|  
     |**XML**|为传出消息的 SOAP **Body** 元素的内容键入 XML 格式的模板。 如果选择了“模板 -- BizTalk 响应消息正文”  选项，则此属性是必需的。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值是 < bts 消息正文<br /><br /> xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="xml"/ >。|  
-    |**信封--完整\<soap： 信封 >**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
-    |**正文--内容\<soap： 正文 > 元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 这是默认设置。|  
+    |**信封--完整\<soap 信封：\>**|从传入消息的整个 SOAP **Envelope** 创建 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
+    |**正文--内容\<soap： 正文\>元素**|使用传入消息的 SOAP **Body** 元素的内容创建 BizTalk 消息正文部分。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。 此属性仅对要求-响应端口有效。<br /><br /> 这是默认设置。|  
     |**路径--由正文路径定位的内容**|使用“正文路径表达式”  文本框中的正文路径表达式创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 此属性仅对要求-响应端口有效。<br /><br /> 默认值为清除此复选框。|  
     |**正文路径表达式**|键入正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 此正文路径表达式针对 SOAP 的即时子元素进行评估**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 此属性仅对要求-响应端口有效。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：32767<br /><br /> 默认值为空字符串。|  
     |**节点编码**|指定 WCF BasicHttp 发送适配器用于解码识别由正文路径表达式中的节点的编码类型**正文路径表达式**文本框。 如果选择了“路径 -- 按正文路径定位内容”  选项，则此属性是必需的。 此属性仅对要求-响应端口有效。 有效值包括：<br /><br /> -   **Base64**: Base64 编码。<br />-   **十六进制**： 十六进制编码。<br />-   **字符串**： 文本编码的 utf-8<br />-   **XML**: WCF 适配器使用由正文路径表达式中所选节点的外部 XML 创建 BizTalk 消息正文**正文路径表达式**文本框。<br /><br /> 默认值为“XML” 。|  
@@ -248,7 +248,7 @@ ms.lasthandoff: 09/20/2017
 
  ## <a name="see-also"></a>另请参阅
  
-[WCF 适配器有哪些？](../core/what-are-the-wcf-adapters.md)
+[WCF 适配器概述](../core/what-are-the-wcf-adapters.md)
 
 [SB 消息适配器](../core/sb-messaging-adapter.md)
 

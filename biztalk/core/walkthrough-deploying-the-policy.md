@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00c603a3a0c52d735441858af6a2f602c30d1f51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d235fa0f6882ecd9e180aabd26999b1d7f73390
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-deploying-the-policy"></a>演练： 部署策略
 本演练提供了部署的分步说明**ProcessPurchaseOrder**以下三种方式的策略：  
@@ -268,7 +268,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  浏览，然后双击该 XML 文件 (**C:\BRE-Walkthroughs\ProcessPOFromAdmin.xml**) 在第一个过程中创建。  
   
-4.  展开**\<所有项目 >**下**应用程序**。  
+4.  展开**\<所有项目\>**下**应用程序**。  
   
 5.  单击**策略**，并且你应看到 1.3 版**ProcessPurchaseOrder**列表中的策略。  
   
@@ -413,7 +413,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  从包含词汇的第一个 BRL 文件复制整个 XML 内容。  
   
-    3.  复制 ruleset 块 (开头\<ruleset > 标记和以结尾\</ruleset > 标记) 从第二个 BRL 文件。  
+    3.  复制 ruleset 块 (开头\<ruleset\>标记和以结尾\</ruleset\>标记) 从第二个 BRL 文件。  
   
     4.  保存该新文件。 你可以导入此单个 XML 文件，以创建**POVocabulary**词汇和**ProcessPurchaseOrder**策略。  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d917114d21ceed37eb68ee4bb9503aac97735ffa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49b2145320bd8e22b01d312d62246fa282fb534e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-sso-server-using-the-client-utility"></a>如何设置 SSO 服务器使用客户端实用工具
 每次使用 ssoclient，你必须首先指向用户正确上单一登录服务器包含它们的配置信息。  
@@ -29,9 +29,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – 服务器*\<单一登录服务器 >***，其中\<*单一登录服务器 >*是的单一登录的名称服务器用户想要连接到。  
+3.  类型**ssoclient – 服务器*\<单一登录服务器\>***，其中\<*单一登录服务器\>*是要连接到用户中的单一登录服务器名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

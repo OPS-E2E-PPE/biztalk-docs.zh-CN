@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bc8a298686772d354c934d76fbcb7dbbb8146f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1027e30e847c4f35b9270083ad56074967072467
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-or-editing-a-home-organization"></a>创建或编辑主组织
 本主题讲述如何创建或编辑本组织。 本组织配置用于对组织进行描述和分类、设置原始时间段的不可否认性以及提供联系人信息。  
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  右键单击你想要编辑，然后单击该主组织**属性**。  
   
-5.  在*\<主页组织 >*属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
+5.  在*\<主页组织\>*属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
   
 6.  单击 **“确定”**。  
   

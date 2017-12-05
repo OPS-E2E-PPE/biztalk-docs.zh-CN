@@ -18,11 +18,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 416fc38c8768e7391659d133877b2ae59e704463
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58365383b1981ae40e87ee23891929bf05c8530e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a>如何修改 BizTalk 程序集的部署选项
 本主题介绍如何使用 BizTalk Server 管理控制台修改 BizTalk 程序集的部署选项。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，依次展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”、包含要修改其部署选项的 BizTalk 程序集的 BizTalk 组，以及包含该 BizTalk 程序集的应用程序。  
+2.  在控制台树中，展开 BizTalk Server 管理，展开包含要修改的部署选项的 BizTalk 程序集的 BizTalk 组，然后展开包含 BizTalk 程序集的应用程序。  
   
 3.  单击**资源**文件夹中，右键单击 BizTalk 程序集，并依次**修改**。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed990dd60ab65c7b85284a9eeadd4b27de3136f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68c63e7aeab46436e894d43d77b92a2a061d5b60
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>疑难解答： 问题和解决方法
 本主题讲述与运行 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 相关的问题。 每个问题都详细描述了一种特定的症状、其可能的原因以及解决方案。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="installing-btarn-on-a-computer-without-biztalk-server-causes-missing-files"></a>在未安装 BizTalk Server 的计算机上安装 BTARN 会导致文件丢失  
   
 ### <a name="symptom"></a>故障现象  
- 运行 ConfigFramework.exe 文件生成不具有的计算机上没有结果[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]或[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]安装。 只能将此 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置作为 HTTP 客户端使用。  
+ 运行 ConfigFramework.exe 文件生成不具有的计算机上没有结果[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 或[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]安装。 只能将此 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置作为 HTTP 客户端使用。  
   
 ### <a name="possible-cause"></a>可能的原因  
  安装过程中缺少两个 DLL 文件。  
@@ -102,7 +102,7 @@ ms.lasthandoff: 09/20/2017
   
  - 或 -  
   
- 终止具有 id BAM 消息活动中的错误* \<ID 号 >*。  
+ 终止具有 id BAM 消息活动中的错误 *\<ID 号\>*。  
   
 ### <a name="possible-cause"></a>可能的原因  
  未安装业务活动监视 (BAM) 跟踪工具。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
  例如：  
   
- \<schemaInfo document_type ="4A1"版本 ="V02_00"xmlns ="http://schemas.microsoft.com/BizTalk/2003" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification"/ >  
+ \<schemaInfo document_type ="4A1"版本 ="V02_00"xmlns ="http://schemas.microsoft.com/BizTalk/2003" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification"\>  
   
 ## <a name="404-not-found-error-when-sending-a-http-request"></a>发送 HTTP 请求时出现“404 找不到”错误  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称 > （本地计算机）**，然后单击**Web 服务扩展**。  
+2.  展开**\<计算机名称\>（本地计算机）**，然后单击**Web 服务扩展**。  
   
 3.  在**Web 服务扩展**窗格中，验证是否允许 HwsMessages HttpReceive 的状态。 如果没有，请右键单击**HwsMessages HttpReceive**，然后单击**允许**。  
   
@@ -154,11 +154,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称 > （本地计算机）**，右键单击**Web 服务扩展**，然后单击**添加一个新的 Web 服务扩展**。  
+2.  展开**\<计算机名称\>（本地计算机）**，右键单击**Web 服务扩展**，然后单击**添加一个新的 Web 服务扩展**.  
   
 3.  在**新建 Web 服务扩展**对话框中，在**扩展名**框中，键入**BizTalk ISAPI 扩展**，然后单击**添加**。  
   
-4.  在**Add File**对话框中，在**文件路径**框中，键入**\<驱动器 >: files\microsoft BizTalk Server\<版本 > \HttpReceive\BTSHttpReceive.dll**，然后单击**确定**。  
+4.  在**Add File**对话框中，在**文件路径**框中，键入**\<驱动器\>: files\microsoft BizTalk Server\<版本\>\HttpReceive\BTSHttpReceive.dll**，然后单击**确定**。  
   
 5.  在**新建 Web 服务扩展**对话框中，选择**设置扩展状态为允许**，然后单击**确定**。  
   
@@ -170,10 +170,10 @@ ms.lasthandoff: 09/20/2017
  使用用户帐户“\HostSvc”配置的 BizTalk 独立主机实例要么未运行，要么在此计算机上不存在。 请使用 BizTalk 管理控制台新建一个独立主机，或者重新配置一个现有主机，使其以“\hostsvc”的身份运行。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 若要运行配置向导，用户应配置为\<*计算机名称*> \hostsvc，不是 \hostsvc。  
+ 若要运行配置向导，用户应配置为\<*计算机名称*\>\hostsvc，不是 \hostsvc。  
   
 ### <a name="solution"></a>解决方案  
- 打开 BizTalk 管理控制台中，并更改 \hostsvc 的帐户下运行的主机，以便它们在帐户下运行\<*计算机名称*> \hostsvc。  
+ 打开 BizTalk 管理控制台中，并更改 \hostsvc 的帐户下运行的主机，以便它们在帐户下运行\<*计算机名称*\>\hostsvc。  
   
 ## <a name="you-receive-an-error-when-importing-and-compiling-a-rosettanet-next-generation-pip-schema"></a>导入和编译 RosettaNet 下一代 PIP 架构时出现错误  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称 > （本地计算机）**，右键单击**网站**，然后单击**属性**。  
+2.  展开**\<计算机名称\>（本地计算机）**，右键单击**网站**，然后单击**属性**。  
   
 3.  选择**ISAPI 筛选器**选项卡。  
   
@@ -303,7 +303,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>如果没有为项目输入程序集密钥文件，则 HubScenario 示例将无法正确安装  
   
 ### <a name="symptom"></a>故障现象  
- 当你运行 setup.bat *\<驱动器 >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > Accelerator for RosettaNet\SDK\HubScenario 设置 HubScenario 示例中，操作将失败。  
+ 当你运行 setup.bat *\<驱动器\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\HubScenario 设置快捷键HubScenario 示例中，则操作将失败。  
   
 ### <a name="possible-cause"></a>可能的原因  
  由于项目中没有设置程序集密钥文件，HubScenario 和 HubHelper 程序集没有正确部署。  
@@ -317,7 +317,7 @@ ms.lasthandoff: 09/20/2017
  当你运行 setup.bat 以生成和初始化“双操作 PIPAutomation 业务流程”示例时，BTARNData 数据库中未创建 PipAutomationGetAction 存储过程。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 你在 64 位计算机上或在 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 系统（它在 SQL Server 2008 R2/2008 SP1 上运行）运行了 setup.bat。 这两种情况要求你运行 setupx64.bat。  
+ 在 64 位计算机上或在 SQL Server 2008 R2/2008 SP1 运行的 BizTalk Server 安装上运行 setup.bat。 这两种情况要求你运行 setupx64.bat。  
   
 ### <a name="solution"></a>解决方案  
  运行 setupx64.bat 以创建该存储过程。 有关详细信息，请参阅[Double 操作 PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)。  
@@ -331,4 +331,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   
- [环回](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)
+ [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)

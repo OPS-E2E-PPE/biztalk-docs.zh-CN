@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23cd2a6550263f707531101db743a6ecdef39e5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: deaf3ddae7d7351d53c5cd46b7d48633e0271a3d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-the-biztalk-group"></a>如何恢复 BizTalk 组
 必须在系统恢复过程中将 BizTalk Server 重新连接到现有的 BizTalk 组。  
@@ -32,9 +32,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  在命令提示符下，键入：  
   
-     **RestoreConfig.vbe***\<SavedConfigXML >*   
+     **RestoreConfig.vbe***\<SavedConfigXML  \>*  
   
-     其中 *\<SavedConfigXML >*是完整路径和保存的配置文件的文件名。  
+     其中 *\<SavedConfigXML\>* 是完整路径和保存的配置文件的文件名。  
   
      上述操作应该在不显示任何错误的情况下退出。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: feb9efa5ad879e86f32ca1963313dadc7e6a9d7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f70855621f03011c92be7b04b844122d98be48f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-adapter-provider"></a>创建自定义适配器提供程序
 解析程序执行，如前面几节中所述后，动态解析服务将检查结果是否为终结点 （未转换）。 如果它是一个终结点，服务实例适配器管理器，它是实例化的**AdapterMgr**类。  
@@ -55,6 +55,6 @@ ms.lasthandoff: 09/20/2017
   
 1.  创建派生自一个程序集**BaseAdapterProvider**基类和包含**SetEndPoint**设置的终结点的消息上下文属性的方法。  
   
-2.  通过将其添加到使用 Esb.config 配置文件中注册该适配器提供程序 **\<adapterProvider >**替换为作为适配器的名称元素**名称**属性中，完全与类的限定的名称**类型**属性，作为标记**标记**（应该用逗号分隔多个值） 的属性，和 （可选） 的实际适配器程序集作为**adapterAssembly**属性。  
+2.  通过将其添加到使用 Esb.config 配置文件中注册该适配器提供程序 **\<adapterProvider\>** 替换为作为适配器的名称元素**名称**属性，作为类的完全限定的名称**类型**属性，作为标记**标记**（应该用逗号分隔多个值） 的属性，和 （可选） 的程序集作为实际适配器**adapterAssembly**属性。  
   
 3.  在全局程序集缓存中注册新的程序集。

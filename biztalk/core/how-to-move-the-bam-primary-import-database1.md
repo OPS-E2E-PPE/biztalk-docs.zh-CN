@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eca9ed37cf116d57888bae1343e383cc2d2a666
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a63c556bfb95f4b22a3256540d3ecb336a17f7f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>如何移动 BAM 主导入数据库
 您可以使用此过程将 BAM 主导入数据库移至其他服务器。  
@@ -140,9 +140,9 @@ ms.lasthandoff: 09/20/2017
   
     6.  更改以下行，以匹配新的服务器和数据库：  
   
-         PrimaryImportServer ="*\<ServerName >*"  
+         PrimaryImportServer ="*\<ServerName\>*"  
   
-         PrimaryImportDatabase ="*\<DatabaseName >*"  
+         PrimaryImportDatabase ="*\<DatabaseName\>*"  
   
 17. 启动所有 BizTalk Server 服务。 有关详细信息，请参阅[如何开始、 停止、 暂停、 继续或重新启动 BizTalk Server Services](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)。  
   
@@ -159,4 +159,4 @@ ms.lasthandoff: 09/20/2017
         ```  
   
 ## <a name="see-also"></a>另请参阅  
- [将 BizTalk Server 数据库](../core/moving-biztalk-server-databases.md)
+ [移动 BizTalk Server 数据库](../core/moving-biztalk-server-databases.md)

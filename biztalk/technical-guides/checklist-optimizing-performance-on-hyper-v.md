@@ -12,14 +12,14 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87591ef1467608dfc17e8d9802d11456213c6947
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db0afbdc9d89296f8aaff94db057bf2e9c072392
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-optimizing-performance-on-hyper-v"></a>清单： HYPER-V 上优化性能
-运行时，适用以下注意事项[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]和/或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例具有[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V 虚拟机上的数据库。  
+下列注意事项适用时运行 BizTalk Server 和/或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]BizTalk Server 数据库对 HYPER-V 虚拟机的实例。  
   
 ## <a name="allocate-110125-of-cpu-and-disk-resources-to-the-hyper-v-virtual-machines"></a>分配给 HYPER-V 虚拟机的 110%– 125%的 CPU 和磁盘资源  
  计划分配 110%到 125%的 CPU 资源和 105%-110%的解决方案使用 HYPER-V 虚拟机的物理硬件解决方案所需的磁盘资源。 通过配置 HYPER-V 虚拟机提供更多资源，将确保它可以提供可与相媲美物理硬件的性能，同时容纳任何所需的 HYPER-V 虚拟化技术的开销。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
 |步骤|参考|  
 |----------|---------------|  
 |作用域的硬件要求[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。|-按照中的"Planning the 环境的 BizTalk Server"部分的指导[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]操作指南，网址[http://go.microsoft.com/fwlink/?LinkId=122399](http://go.microsoft.com/fwlink/?LinkId=122399)确定解决方案的硬件要求的范围。<br />-到作用域的版本和数量的解决方案将所需的 BizTalk 服务器查看在规划注意事项"规划 BizTalk Server 层"中所述的 BizTalk Server [http://go.microsoft.com/fwlink/?LinkId=122401](http://go.microsoft.com/fwlink/?LinkId=122401)。<br />-到作用域的版本和数量[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]解决方案，将所需的计算机在查看的规划注意事项"规划数据库层"中所述的数据库[http://go.microsoft.com/fwlink/?LinkId = 122402](http://go.microsoft.com/fwlink/?LinkId=122402)和可用在"运行 SQL Server 2008 in a HYPER-V 环境最佳实践和性能注意事项"白皮书"性能开销的运行 SQL Server 中 HYPER-V"部分[http://go.microsoft.com/fwlink/？LinkId = 144622](http://go.microsoft.com/fwlink/?LinkId=144622)。<br />-若要完成规划用于开发、 测试、 过渡和生产环境查看"计划开发、 测试、 过渡和生产环境"在[http://go.microsoft.com/fwlink/?LinkId=122403](http://go.microsoft.com/fwlink/?LinkId=122403)。|  
-|作用域的硬件要求之后你[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]解决方案中，要配置与 HYPER-V 机计划**110%– 125%**的 CPU 和磁盘资源如有可能。|例如，如果物理硬件要求[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]解决方案所使用的计算机被确定为 2 GB RAM，2 GHZ 和 2 x 500 GB 的物理磁盘上运行的双核 CPU，则将显示解决方案所使用的 HYPER-V 虚拟机的理想情况下，配置了 2 个或更多虚拟处理器运行 > = 2.2 GHZ 和更快地物理磁盘 （通常通过增加主轴数，或使用更快的磁盘）。|  
+|在范围之外的 BizTalk Server 解决方案的硬件要求之后, 计划配置为 HYPER-V 机**110%– 125%**的 CPU 和磁盘资源如有可能。|例如，如果解决方案所使用的物理 BizTalk Server 计算机的硬件要求被确定为 2 GB RAM，运行 2 GHZ 和 2 x 500 GB 的物理磁盘的双核 CPU 那么理想情况下，解决方案所使用的 HYPER-V 虚拟机将配置了 2 个或更多虚拟处理器运行 > = 2.2 GHZ 和更快地物理磁盘 （通常通过增加主轴数，或使用更快的磁盘）。|  
   
 ## <a name="optimize-hyper-v-performance"></a>优化 HYPER-V 性能  
  使用以下常规准则来配置 HYPER-V 以获得最佳性能。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
      ![一对一物理到虚拟处理器比率](../technical-guides/media/90f98f0d-a223-404c-b419-81369dc92970.gif "一对一物理到虚拟处理器比率")  
 虚拟与逻辑处理器比率  
   
--   **请注意的不同的来宾操作系统的虚拟处理器限制并相应地-计划**可供 HYPER-V 虚拟机中运行的来宾操作系统的处理器内核数可能会影响整体托管的应用程序的性能。 因此，考虑应将有关哪些来宾操作系统将安装在 HYPER-V 虚拟机以托管[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]和/或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]instance(s) 该主机[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]数据库。 HYPER-V 可以适应下列指定的来宾操作系统的虚拟处理器数：  
+-   **请注意的不同的来宾操作系统的虚拟处理器限制并相应地-计划**可供 HYPER-V 虚拟机中运行的来宾操作系统的处理器内核数可能会影响整体托管的应用程序的性能。 因此，考虑应将有关哪些来宾操作系统将安装在 HYPER-V 虚拟机，以托管 BizTalk Server 和/或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]承载 BizTalk Server 数据库的实例。 HYPER-V 可以适应下列指定的来宾操作系统的虚拟处理器数：  
   
 |操作系统|虚拟处理器限制|  
 |----------------------|-----------------------------|  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 |步骤|参考|  
 |----------|---------------|  
-|请确保有足够的内存在的物理计算机的托管 HYPER-V 虚拟机上安装|可用物理内存通常是为最重要的性能因素[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HYPER-V 虚拟机上运行。 这是因为每个虚拟机必须位于非分页池的内存或不能分页到磁盘的内存。 因为非页面缓冲池内存不能分页到磁盘，承载虚拟机的物理计算机应具有可用的物理内存的内存总和等于为分配每个虚拟机还包括以下：<br />     用于虚拟机监控程序的 300 MB 加上 32 MB; 在第一个 GB 的 RAM 分配给每个虚拟机加上另一台 8 MB 的每个其他 GB 的 RAM 分配给每个虚拟机以及主机 512 MB运行在根分区上的操作系统<br />     例如，如果 HYPER-V 虚拟机分配有 2 GB 的内存在 HYPER-V 管理器，在运行 HYPER-V 虚拟机将大约 2388 MB 时使用的实际物理内存 (为虚拟机的虚拟机监控程序的 300 MB + 2 GB 分配 +32 MB + 8 MB = 2388 MB)。 由于虚拟机监控程序仅需要加载一次，初始化的后续虚拟机不会产生与加载虚拟机监控程序关联的 300 MB 开销。 因此，如果两个 HYPER-V 虚拟机是每个已分配的 2 GB 的内存在 HYPER-V 管理器中，使用这些 HYPER-V 虚拟机运行时的实际物理内存可能大约 4476 MB （虚拟机监控程序的 300 MB + 4 GB 已分配虚拟机 + 64 MB + 16 MB = 4476 MB)。 **注意：**作为一个常规的经验法则，规划分配为根分区提供服务例如 I/O 虚拟化和快照文件支持，且子分区管理至少 512 MB 内存。<br />-   **使用 64 位来宾操作系统尽可能**– 请考虑使用为每个来宾操作系统的 64 位操作系统。 应因为默认情况下，32 位 Windows 操作系统可以仅地址最多为 2 GB 的每个进程的虚拟地址空间完成此操作。 64 位操作系统安装允许应用程序充分利用托管 HYPER-V 虚拟机的物理计算机上安装的内存。|  
+|请确保有足够的内存在的物理计算机的托管 HYPER-V 虚拟机上安装|可用物理内存通常是 HYPER-V 虚拟机上运行的 BizTalk Server 性能的最重要因素。 这是因为每个虚拟机必须位于非分页池的内存或不能分页到磁盘的内存。 因为非页面缓冲池内存不能分页到磁盘，承载虚拟机的物理计算机应具有可用的物理内存的内存总和等于为分配每个虚拟机还包括以下：<br />     用于虚拟机监控程序的 300 MB 加上 32 MB; 在第一个 GB 的 RAM 分配给每个虚拟机加上另一台 8 MB 的每个其他 GB 的 RAM 分配给每个虚拟机以及主机 512 MB运行在根分区上的操作系统<br />     例如，如果 HYPER-V 虚拟机分配有 2 GB 的内存在 HYPER-V 管理器，在运行 HYPER-V 虚拟机将大约 2388 MB 时使用的实际物理内存 (为虚拟机的虚拟机监控程序的 300 MB + 2 GB 分配 +32 MB + 8 MB = 2388 MB)。 由于虚拟机监控程序仅需要加载一次，初始化的后续虚拟机不会产生与加载虚拟机监控程序关联的 300 MB 开销。 因此，如果两个 HYPER-V 虚拟机是每个已分配的 2 GB 的内存在 HYPER-V 管理器中，使用这些 HYPER-V 虚拟机运行时的实际物理内存可能大约 4476 MB （虚拟机监控程序的 300 MB + 4 GB 已分配虚拟机 + 64 MB + 16 MB = 4476 MB)。 **注意：**作为一个常规的经验法则，规划分配为根分区提供服务例如 I/O 虚拟化和快照文件支持，且子分区管理至少 512 MB 内存。<br />-   **使用 64 位来宾操作系统尽可能**– 请考虑使用为每个来宾操作系统的 64 位操作系统。 应因为默认情况下，32 位 Windows 操作系统可以仅地址最多为 2 GB 的每个进程的虚拟地址空间完成此操作。 64 位操作系统安装允许应用程序充分利用托管 HYPER-V 虚拟机的物理计算机上安装的内存。|  
   
 ### <a name="optimize-network-performance"></a>优化网络性能  
  HYPER-V 虚拟机中支持合成和模拟的网络适配器，但合成设备提供显著提高性能并减少 CPU 开销。 其中每个适配器连接到虚拟网络交换机，如果需要外部网络连接可以连接到物理网络适配器。 请遵循本部分中的建议，以优化网络性能的 HYPER-V 虚拟环境中运行的来宾操作系统。  

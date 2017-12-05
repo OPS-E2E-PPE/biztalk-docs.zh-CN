@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60cc8743cd945ad231f3a42f9cbd4f0e76b418d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9a395e691835f3e21622ebf5f29c2845361fb36
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-data-is-stored-for-inbound-edi-messages"></a>入站 EDI 消息数据的存储方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行以下操作来生成状态报表项的入站的交换以及在到它的响应中发送该确认：  
@@ -69,17 +69,17 @@ ms.lasthandoff: 09/20/2017
   
 -   交换控件 ID = （所需的相关） 的更新数据  
   
--   交换 ACK 状态 =\<预期或不适用 >。 如果在传入的交换中配置了技术确认或对其进行了赋值，状态 = 预期。 否则，状态 = 不可用。  
+-   交换 ACK 状态 =\<预期或不适用\>。 如果在传入的交换中配置了技术确认或对其进行了赋值，状态 = 预期。 否则，状态 = 不可用。  
   
--   交换 ACK 控件 ID =\<不值 >  
+-   交换 ACK 控件 ID =\<不值\>  
   
--   交换 ACK 日期 =\<不值 >  
+-   交换 ACK 日期 =\<不值\>  
   
--   交换 ACK 时间 =\<不值 >  
+-   交换 ACK 时间 =\<不值\>  
   
--   确认/操作代码 =\<不值 >  
+-   确认/操作代码 =\<不值\>  
   
--   ACK 注意代码 =\<不值 >  
+-   ACK 注意代码 =\<不值\>  
   
 ## <a name="data-updated-by-the-send-pipeline-for-each-technical-acknowledgment-generated-in-response-to-inbound-interchanges"></a>发送管道为每个为了响应入站交换而生成的技术确认更新的数据  
  对于发送管道发送的每个技术确认，发送管道会更新所接收相关交换的状态报告条目。 数据的来源为发送管道创建的交换信封。  
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
 -   功能确认方向 = 接收  
   
--   功能 ACK 状态 =\<预期或不适用 >。 如果选中了 PAM 中的功能确认选项卡，则状态将设置为“预期”。 否则，状态将设置为“不可用”。  
+-   功能 ACK 状态 =\<预期或不适用\>。 如果选中了 PAM 中的功能确认选项卡，则状态将设置为“预期”。 否则，状态将设置为“不可用”。  
   
 -   交换接收器 = （所需的相关） 的更新数据  
   
@@ -144,27 +144,27 @@ ms.lasthandoff: 09/20/2017
   
 -   事务集的计数 = 数据（在 EDIFACT 中，映射到 UNE.1 并且 UNG/UNE 存在；如果不存在任何组段，则映射到 UNZ.1）  
   
--   功能 ACK 交换的控件 ID =\<不值 >  
+-   功能 ACK 交换的控件 ID =\<不值\>  
   
--   功能 ACK 交换日期 =\<不值 >  
+-   功能 ACK 交换日期 =\<不值\>  
   
--   功能 ACK 交换时间 =\<不值 >  
+-   功能 ACK 交换时间 =\<不值\>  
   
--   计数的事务集传递 =\<不值 >  
+-   计数的事务集传递 =\<不值\>  
   
--   计数的事务集接受 =\<不值 >  
+-   计数的事务集接受 =\<不值\>  
   
--   确认/操作代码 =\<不值 >  
+-   确认/操作代码 =\<不值\>  
   
--   错误/语法错误代码 =\<不值 >  
+-   错误/语法错误代码 =\<不值\>  
   
--   其他 X12 ACK 错误代码 2 =\<不值 >  
+-   其他 X12 ACK 错误代码 2 =\<不值\>  
   
--   其他 X12 ACK 错误代码 3 =\<不值 >  
+-   其他 X12 ACK 错误代码 3 =\<不值\>  
   
--   其他 X12 ACK 错误代码 4 =\<不值 >  
+-   其他 X12 ACK 错误代码 4 =\<不值\>  
   
--   其他 X12 ACK 错误代码 5 =\<不值 >  
+-   其他 X12 ACK 错误代码 5 =\<不值\>  
   
 ## <a name="data-updated-by-the-send-pipeline-for-each-functional-acknowledgment-generated-in-response-to-inbound-interchanges"></a>发送管道为每个为了响应入站交换而生成的功能确认更新的数据  
  对于发送管道发送的每个功能确认，发送管道会更新所接收相关交换的状态报告条目。 数据的来源为发送管道创建的交换信封。  
@@ -227,4 +227,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [如何将数据存储用于 EDI 和 AS2 状态报表](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [如何将数据存储用于出站 EDI 消息](../core/how-data-is-stored-for-outbound-edi-messages.md)
+ [如何为出站 EDI 消息存储数据](../core/how-data-is-stored-for-outbound-edi-messages.md)

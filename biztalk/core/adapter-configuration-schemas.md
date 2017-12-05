@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2afa0e2f06471d90326b0dd8e2b83b8d4c38a82b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89ca7d02c756fdbdf819e1a15069a95d0784d764
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-configuration-schemas"></a>适配器配置架构
 在适配器的设计时配置中使用不同类型的架构。 根据属性值的可见性和作用域，可修改和使用不同的架构。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
  ![](../core/media/ebiz-prog-custad-sh.gif "ebiz_prog_custad_sh")  
 TransmitHandler.xsd 文件创建的发送处理程序属性页  
   
- 请注意，使用\<baf:designer >， \<baf:displayname >，和\<baf:description > 如下所示的 TransmitHandler.xsd 代码中的标记。 这些标记是适配器框架提供的自定义修饰，以便更快地生成这些属性页。  
+ 请注意，使用\<baf:designer\>， \<baf:displayname\>，和\<baf:description\>如下所示的 TransmitHandler.xsd 代码中的标记。 这些标记是适配器框架提供的自定义修饰，以便更快地生成这些属性页。  
   
  有关所有可供使用的适配器框架中的修饰的列表，请参阅[适配器 Framework 配置架构修饰标记](../core/adapter-framework-configuration-schema-decoration-tags.md)。  
   
@@ -106,7 +106,7 @@ number of threads per CPU to execute in the thread pool</baf:description>
  ![](../core/media/ebiz-prog-custad-sp.gif "ebiz_prog_custad_sp")  
 解释示例文件适配器的发送端口属性页  
   
- 请注意下面 TransmitLocation.xsd 文件中，发送端口配置包含\<baf:designer >， \<baf:displayname >，和\<baf:description > 标记，就像发送处理程序，而且它还使用\<baf:category > 标记。 类别标记允许您将属性一起分组。 如果有一个以上的类别，则类别是可展开的、可折叠的，并且作为标题以灰色显示在该类别中属性上方。 有关详细信息，请参阅[适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。  
+ 请注意下面 TransmitLocation.xsd 文件中，发送端口配置包含\<baf:designer\>， \<baf:displayname\>，和\<baf:description\>标记，就像发送处理程序，而且它还使用\<baf:category\>标记。 类别标记允许您将属性一起分组。 如果有一个以上的类别，则类别是可展开的、可折叠的，并且作为标题以灰色显示在该类别中属性上方。 有关详细信息，请参阅[适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。  
   
  此架构还包含 URI 字段。 此字段填充在当您在适配器执行的验证处理期间在发送端口属性页上输入所有字段信息后显示的页面上。  
   

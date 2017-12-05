@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cfc20fea950c737d59e6b325744a02ee67bb63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a64bac6c64a9aadc772bfe8445b23f87b469471d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-group"></a>如何将绑定导入到 BizTalk 组
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行通过 .xml 文件向 BizTalk 组导入绑定。 有关将绑定从 BizTalk 组导出到.xml 文件，你可以导入的说明，请参阅[如何导出绑定 BizTalk 组](../core/how-to-export-bindings-for-a-biztalk-group.md)。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  单击绑定文件，然后单击**打开**。  
   
-     绑定文件中的项目将写入该组。 它们的相应文件夹中显示\<所有项目 > 节点。  
+     绑定文件中的项目将写入该组。 它们的相应文件夹中显示\<所有项目\>节点。  
   
 #### <a name="using-the-command-line"></a>使用命令行  
   

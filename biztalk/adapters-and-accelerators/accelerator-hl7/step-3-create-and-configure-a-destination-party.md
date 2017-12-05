@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34fb3ef45123817f747ab9aa956e961c5bb9a1c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66d955aeaabe4d7207a07827de04c1c21e4c2c7a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a>步骤 3： 创建并配置目标方
 在此步骤中，你可以创建和配置创建批次方案的目标方。 你还选择的消息，[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]批处理和批处理计划，该方的定义。 计划批发送时间为 1 小时后将文件复制到的文件夹。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]为频率为一小时之后接收任何消息进行批处理。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在参与方属性对话框中，在**名称**框中，键入**Tutorial_BatchDest**，然后单击**确定**。  
   
-3.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本 > Accelerator for HL7**，然后单击**BTAHL7配置资源管理器**。  
+3.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
 4.  在 BTAHL7 配置资源管理器，在**方**在控制台树中的选项卡上，单击**Tutorial_BatchDest**。  
   

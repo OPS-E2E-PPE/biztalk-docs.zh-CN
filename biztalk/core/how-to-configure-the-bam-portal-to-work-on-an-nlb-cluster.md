@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73bd5013cd2a09d240fa58b7cf5283c8d1903c69
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20693f00d536414b44a7577277cf9acd3e5af530
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a>如何配置要在 NLB 群集上使用的 BAM 门户
 可以将 BAM 门户配置为在网络负载平衡 (NLB) 群集中使用。  
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  此命令的用途是授予 SOFTWAREMicrosoftBizTalk Server3.0BAMWebServicesidentity 注册表项 BAM 应用程序池用户读取访问权限。 由于默认情况下，IIS 对应用程序池使用网络服务，因此本示例使用网络服务。 如果你不想使用默认的 IIS 设置，则应该替换你的部署所使用的应用程序池用户。  
   
-16. 在命令提示符下键入以下内容： subinacl.exe /keyreg"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BizTalk Server\3.0""/ 授予 =\<BAM WebService 帐户 >"  
+16. 在命令提示符下键入以下内容： subinacl.exe /keyreg"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BizTalk Server\3.0""/ 授予 =\<BAM WebService 帐户\>"  
   
     > [!NOTE]
     >  此命令的目的是向 BAM 管理 Web Services 用户帐户授予读取 SOFTWARE\Microsoft\BizTalk Server\3.0\BAM\WebServices\Identity 注册表项的权限。  
@@ -154,7 +154,7 @@ ms.lasthandoff: 09/20/2017
   
 18. 使用“计算机管理”管理员工具向 IIS Worker Process 组 (IIS_WPG) 和 SharePoint services 组 (STS_WPG) 添加 BAM 管理 Web Services 用户和 BAM 应用程序池帐户。  
   
-19. 在应用程序池和 Web 服务用户的临时 ASP.NET 文件夹上设置权限： c:\windows\system32\cacls"%windir%\Microsoft.NET\Framework\ v2.0。\<min 版本号 > \Temporary ASP.NET 文件"/T /E /G \<BAM WebService 帐户 >: F  
+19. 在应用程序池和 Web 服务用户的临时 ASP.NET 文件夹上设置权限： c:\windows\system32\cacls"%windir%\Microsoft.NET\Framework\ v2.0。\<min 版本号\>\Temporary ASP.NET 文件"/T /E /G \<BAM WebService 帐户\>: F  
   
     > [!NOTE]
     >  你要同时向 BAM 管理 Web Services 用户帐户和 BAM 应用程序池用户帐户授予权限。  

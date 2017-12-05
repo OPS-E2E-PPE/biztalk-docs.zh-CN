@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f62dc38185f9235dd7d2e08629df4099d7ec4f6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd6abeeb04521e95b32b4d6007dcc7f1f532bdbb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>如何移动 BAM 主导入数据库
 您可以使用此过程将 BAM 主导入数据库移至其他服务器。 从端到端方案的角度看，移动 BAM 主导入数据库涉及到两个主要步骤：  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 ###  <a name="BKMK_UpdateDB"></a>若要使用新的服务器名称更新 BizTalk 数据库  
   
-1.  在运行 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 的计算机中，浏览至以下文件夹：  
+1.  在运行 BizTalk Server 的计算机，浏览到以下文件夹：  
   
     -   如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装在 64 位版本的 Windows Server 上：  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 09/20/2017
   
 ###  <a name="BKMK_Config"></a>若要更新 BAM 门户的 Web.config 文件  
   
-1.  运行的计算机上[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，更新下的 Web.config 文件**\<驱动器 >: files\microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**。更新在 Web.config 中下一节中的服务器和数据库名称：  
+1.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件**\<驱动器\>: files\microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**。更新在 Web.config 中下一节中的服务器和数据库名称：  
   
     ```  
     <appSettings>  
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
     </appSettings>  
     ```  
   
-2.  运行的计算机上[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，更新下的 Web.config 文件**\<驱动器 >: files\microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config**。更新在 Web.config 中下一节中的服务器和数据库名称：  
+2.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件**\<驱动器\>: files\microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config**。更新在 Web.config 中下一节中的服务器和数据库名称：  
   
     ```  
     <appSettings>  

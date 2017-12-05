@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c44677d4d488a4770c540ef94c0922579be3184
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af9f90bf80435b00a0d39e83d2b2293595f6f200
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-the-resolver-service-sample-works"></a>解析程序服务示例的工作原理
 解析程序服务示例实例化解析程序服务，并将该消息传递指定向其进行处理。 解析程序服务示例客户端应用程序使用的第一个参数作为 ResolverList.xml 文件，以包含多个冲突解决程序请求，并将这些请求发送到解析程序服务的路径。 例如，下面是示例中使用 XPATH 请求。  
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  实际内容**\<内容 >**元素不包含使用在前面的列表中将行的空白字符。  
+>  实际内容**\<内容\>**元素不包含使用在前面的列表中将行的空白字符。  
   
- 前面的列表显示该请求包含中的解析程序配置连接字符串**\<内容 >**元素。 **\<正文 >**元素包含消息正文。  
+ 前面的列表显示该请求包含中的解析程序配置连接字符串**\<内容\>**元素。 **\<正文\>**元素包含消息正文。  
   
  解析程序服务使用**ResolverMgr**要实例化相应的解析程序，连接字符串中的冲突解决程序类型所定义的具体实例类。 如果 XPATH 请求中，这是由 XPATH 冲突解决程序。  
   

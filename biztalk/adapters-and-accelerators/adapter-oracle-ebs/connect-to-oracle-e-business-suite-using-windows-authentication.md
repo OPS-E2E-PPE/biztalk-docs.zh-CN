@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3fef7c954b1384a31c2185d21b3dc4c529c561c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed71a893ef029e6524b7e71f68626c32f207f91e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>将连接到 Oracle E-business Suite 使用 Windows 身份验证
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端以使用 Windows 身份验证来建立与 Oracle E-business Suite 的连接。 若要使用 Windows 身份验证适配器客户端必须指定"/"用户名称并将密码保留为空。 有关将连接到 Oracle E-business Suite 使用 Windows 身份验证的详细信息，请参阅[连接到 Visual Studio 中 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)。  
@@ -42,13 +42,13 @@ ms.lasthandoff: 09/20/2017
 3.  为外部用户 Oracle 数据库中创建的 Windows 用户。 请注意，用户名称必须以大写形式。  
   
     ```  
-    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME>” IDENTIFIED EXTERNALLY;  
+    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME\>” IDENTIFIED EXTERNALLY;  
     ```  
   
 4.  向用户授予权限。  
   
     ```  
-    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME>”;  
+    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME\>”;  
     ```  
   
 5.  Oracle E-business Suite 项目位于应用程序架构。 若要启用新创建的用户，登录使用 Windows 身份验证，访问 Oracle E-business Suite 项目中，必须将用户的架构更改为应用程序架构。 当用户登录时更改为应用程序的用户的默认架构的登录脚本，可以添加以下 SQL 命令。  

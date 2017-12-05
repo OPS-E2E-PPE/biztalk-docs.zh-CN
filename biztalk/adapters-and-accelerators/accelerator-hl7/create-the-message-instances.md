@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2cd086459c52dbea01e5658115bfae9115f95479
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfd39e1da4e8c730e2ca1c663a5844355ac9cd08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-message-instances"></a>创建消息实例
 若要创建 ADT^A03.txt 消息文件，并创建你将需要运行批处理教程时要使用的消息实例，请使用以下过程。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
     FTS|1|File,BatchCount,TrailerComment  
     ```  
   
-3.  将文件另存**FragmentedInboundBatch.txt**中\<*驱动器*: > \Batching Tutorial\Instances 文件夹，然后关闭记事本。  
+3.  将文件另存**FragmentedInboundBatch.txt**中\<*驱动器*:\>\Batching Tutorial\Instances 文件夹，然后关闭记事本。  
   
 ### <a name="to-create-the-batch-inbatch-out-message-instance-text-file"></a>若要创建的批处理 / 批处理出消息实例文本文件  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-3.  将文件另存**BatchInBatchOut.txt**中\<*驱动器*: > \Batching Tutorial\Instances 文件夹，然后关闭记事本。  
+3.  将文件另存**BatchInBatchOut.txt**中\<*驱动器*:\>\Batching Tutorial\Instances 文件夹，然后关闭记事本。  
   
 ### <a name="to-create-the-create-batch-message-instance-text-files"></a>若要创建的文本文件的创建批处理消息实例  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^hey&test&DNS^test^test^test^test^test||||004777^MILLER^CONNIE^A.|||SUR||||2|A0  
     ```  
   
-3.  将文件另存**CreateBatchMessage1.txt**中\<*驱动器*: > \Batching Tutorial\Instances 文件夹，然后关闭记事本。  
+3.  将文件另存**CreateBatchMessage1.txt**中\<*驱动器*:\>\Batching Tutorial\Instances 文件夹，然后关闭记事本。  
   
 4.  将以下文本复制到记事本的新实例：  
   
@@ -96,6 +96,6 @@ ms.lasthandoff: 09/20/2017
     PV1|1|I|2000^2012^01^JDL&test&DNS^test^test^test^test^test||||004777^DOE^JANE^A.|||SUR||||2|A0  
     ```  
   
-5.  将文件另存**CreateBatchMessage2.txt**中\<*驱动器*: > \Batching Tutorial\Instances 文件夹，然后关闭记事本。  
+5.  将文件另存**CreateBatchMessage2.txt**中\<*驱动器*:\>\Batching Tutorial\Instances 文件夹，然后关闭记事本。  
   
  继续执行[第 1 部分： 分片入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)。

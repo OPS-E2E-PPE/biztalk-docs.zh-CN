@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d922c0acecf81a96b0e40cebf739e7b56c5ffd3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b8a15ab9258c9212c2fa6fdd6557227f534a86c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a>为 WCF 发布服务元数据接收适配器
 可以使用 BizTalk WCF 服务发布向导来创建为现有 WCF 接收位置发布服务元数据的 WCF 服务。 若要从已发布的元数据文档生成客户端服务模型代码可以使用服务模型元数据实用工具 (SvcUtil.exe) 中包含[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]软件开发工具包 (SDK)，为[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]和[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]运行时组件。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 |文件|文件夹|Description|  
 |----------|------------|-----------------|  
 |WCF 服务（.svc 文件）|\|WCF 服务，为 WCF 接收位置发布服务元数据。 WCF 服务发布使用 HTTP/GET 请求进行检索的服务元数据。|  
-|Web.config|\|ASP.NET 配置文件，其中包含有关 ASP.NET Web 应用程序行为、已发布 WCF 服务行为、元数据终结点和 BizTalk 特有设置的信息。 该向导将生成 Web.config 时**httpGetEnabled**属性 **\<serviceMetadata >**元素设置为**true**。 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址是 WCF 服务的终结点地址加上**？ wsdl**查询字符串。 **注意：**由 BizTalk WCF 发布向导生成的默认元数据绑定不安全，它允许匿名访问元数据。 服务元数据中包含有关服务的详细说明，可能会有意或无意地包含敏感信息。 为了防止服务元数据受到未经授权的访问，可以修改 Web.config，使其针对元数据终结点使用安全绑定。|  
+|Web.config|\|ASP.NET 配置文件，其中包含有关 ASP.NET Web 应用程序行为、已发布 WCF 服务行为、元数据终结点和 BizTalk 特有设置的信息。 该向导将生成 Web.config 时**httpGetEnabled**属性 **\<serviceMetadata\>** 元素设置为**true**。 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址是 WCF 服务的终结点地址加上**？ wsdl**查询字符串。 **注意：**由 BizTalk WCF 发布向导生成的默认元数据绑定不安全，它允许匿名访问元数据。 服务元数据中包含有关服务的详细说明，可能会有意或无意地包含敏感信息。 为了防止服务元数据受到未经授权的访问，可以修改 Web.config，使其针对元数据终结点使用安全绑定。|  
 |ServiceDescription.xml|\|用于描述包含消息类型的已发布 WCF 服务约定的 XML 文件。|  
 |BizTalk 架构（.xsd 文件）|\App_Data|XML 架构，用在 WCF 接收位置中并可定义 XML 实例消息的结构。|  
 |SchemaIndex.xml|\App_Data|XML 文件，指示用在 WCF 接收位置中的 XML 架构文件。|  
@@ -55,4 +55,4 @@ ms.lasthandoff: 09/20/2017
 -   [如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置发布服务元数据绑定到业务流程端口](../core/publish-receive-location-service-metadata-biztalk-wcf-service-publishing-wizard.md)  
   
 ## <a name="see-also"></a>另请参阅  
- [演练： 使用 WCF NetMsmq 适配器的 WCF 服务发布](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+ [演练：通过 WCF-NetMsmq 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9b2299407986ef2fca53304b536c5ce89625941
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 362aa1f81158c9d9f1135c9bff25c64d7d745953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a>SAP 中的 EXEC 语句的语法
 以下部分介绍用于实现 EXEC 语句的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。 请注意，在某些情况下，语法的 TRANSACT-SQL 语法稍有不同。  
@@ -30,11 +30,11 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 -   **rfc_name**指定执行的函数调用的名称。  
   
--   **< argument_element >** :: = @param_name = [0，1] \<const > {[输入 &#124;输出]} [0，1]  
+-   **< argument_element >** :: = @param_name = [0，1] \<const\> {[输入 &#124;输出]} [0，1]  
   
     -   **param_name**指定函数接口中定义的参数名称。  
   
-    -   **\<const >** :: = 整数 &#124; 实际 &#124; 字符串 &#124;？ &#124;NULL &#124;xml_element  
+    -   **\<const\>**  :: = 整数 &#124; 实际 &#124; 字符串 &#124;？ &#124;NULL &#124;xml_element  
   
 -   **选项**提供上要如何表示该数据的选项。 可用选项是：  
   
@@ -59,7 +59,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <FIELDNAME_2 xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">value</FIELDNAME_2>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  为表 xml_element 如下所示：  
@@ -74,7 +74,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <STRUCT_NAME/>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  例如，结构类型的 XML 元素如下所示：  
@@ -158,4 +158,4 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     >  对于 SELECT 语句中，[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返回`TIMS`字段值作为.NET`System.TimeSpan`对象。 SELECT 语句的详细信息，请参阅[为 SAP 中 SELECT 语句的语法](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [有关.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

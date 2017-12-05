@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4eed7ead2f0d50e7841ed6c39ffdcee86c6524f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>步骤 3： 添加触发器事件 （消息） 架构
 在此步骤中，你创建新的项目基于空[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]项目模板。 将架构添加到此项目，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将用于验证传入的批处理中消息 (ADT ^ A03)。 添加对包含 v2.3.1 通用架构的项目的引用、 为该项目中，指定强名称，然后部署该项目。  
@@ -64,9 +64,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  检查**对程序集签名**复选框。  
   
-4.  在**选择强名称密钥文件**下拉列表中，选择**\<浏览 … >。**  
+4.  在**选择强名称密钥文件**下拉列表中，选择**\<浏览...\>.**  
   
-5.  浏览到  **\<*驱动器*>: \Batching 教程 * *，选择**key.snk**，然后单击**打开**。  
+5.  浏览到  **\<*驱动器*\>: \Batching 教程 * *，选择**key.snk**，然后单击**打开**。  
   
 6.  在解决方案资源管理器，右键单击**BTAHL7V231Body**，然后单击**部署**。 确保在输出窗口中显示一条成功消息。  
   

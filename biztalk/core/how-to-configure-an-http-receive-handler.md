@@ -21,11 +21,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0380804039d45efbe3db06b6fc072a3afb8b6b48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b199ac25fea412e9912e7989ff1f16e6e0e8d9d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>如何配置 HTTP 接收处理程序
 使用以下过程来为 HTTP 配置属性接收处理程序。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  单击 **“确定”**。  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 设计的目的在于有效地批处理消息，而不是快速处理单个消息。 因此如果此接收处理程序准备用于双向/请求响应接收位置，则可以通过以下这些步骤将延迟时间缩为最短：  
+ BizTalk Server 旨在以有效处理的消息的批次，而不是非常快速地处理一条消息。 因此如果此接收处理程序准备用于双向/请求响应接收位置，则可以通过以下这些步骤将延迟时间缩为最短：  
   
 -   设置**批大小**属性的值为 1。  
   

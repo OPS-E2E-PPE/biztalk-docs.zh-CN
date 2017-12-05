@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4bb5435b946ac02b73ce492410af9b4dfe34c8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9165415ec736c7cf9f4716e8fb183395602a687d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-biztalk-assembly-to-an-application"></a>如何向应用程序中添加 BizTalk 程序集
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行向应用程序添加 BizTalk 程序集。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开“[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 管理”，然后展开包含要添加 BizTalk 程序集的应用程序的 BizTalk 组。  
+2.  在控制台树中，展开 BizTalk Server 管理和 BizTalk 组包含你想要添加 BizTalk 程序集的应用程序。  
   
 3.  展开包含要添加 BizTalk 程序集的应用程序。  
   
@@ -87,4 +87,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [管理 BizTalk 程序集](../core/managing-biztalk-assemblies.md)   
- [AddResource 命令： BizTalk 程序集](../core/addresource-command-biztalk-assembly.md)
+ [AddResource 命令：BizTalk 程序集](../core/addresource-command-biztalk-assembly.md)

@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26397001014dd1e4d6ad7139e040892c71e22754
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0fa8e448d4799329a798cc7b33f222b42c4a28b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]项目关闭计算机。 此过程包括以下操作：  
@@ -37,7 +37,7 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
 -   取消所有部署[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]。Solutions.BTARN.* 程序集  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*> files\ Microsoft BizTalk\<版本 > RosettaNet\SDK 快捷键  
+ \<*驱动器*\>files\ Microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键  
   
 ## <a name="running-btarnclean"></a>运行 BtarnClean  
   
@@ -45,7 +45,7 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
   
 1.  打开命令提示符。  
   
-2.  将移动到\<*驱动器*> \ 程序 Files\Microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK\\。  
+2.  将移动到\<*驱动器*\>\ 程序 Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 3.  在命令提示符处，键入**BtarnClean**，然后按 ENTER。  
   
@@ -63,4 +63,4 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
  如果要在运行该实用工具后取消对 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的配置，请从 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 文件夹运行 Configuration.exe /u。  
   
 ## <a name="see-also"></a>另请参阅  
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

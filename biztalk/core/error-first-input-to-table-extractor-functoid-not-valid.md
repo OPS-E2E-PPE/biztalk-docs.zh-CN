@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2449f6c5572a3a29b620becdc4310f4152f2eac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86d501c18bf104a0f538ef90d10510e7d9ec0f02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-table-extractor-functoid-not-valid"></a>错误-第一个输入表提取程序 functoid 无效
 **错误代码**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 指示之间创建链接**表提取程序**functoid 适当**表循环**通过将其拖放到另 functoid。 在映射网格页中，“表提取程序”functoid 必须位于“表循环”functoid 的右侧。 此外，使用**配置\<Functoid > Functoid**对话框框中，确保新创建的链接是为指示的第一个输入的参数**表提取程序**functoid。
+ 指示之间创建链接**表提取程序**functoid 适当**表循环**通过将其拖放到另 functoid。 在映射网格页中，“表提取程序”functoid 必须位于“表循环”functoid 的右侧。 此外，使用**配置\<Functoid\> Functoid**对话框框中，确保新创建的链接是为指示的第一个输入的参数**表提取程序**functoid。

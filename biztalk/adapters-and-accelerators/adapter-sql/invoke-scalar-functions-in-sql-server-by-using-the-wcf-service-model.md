@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0303378f6e265d3b5d86a1aa9cd4fb1e88df86fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a04904f1170644498d49670104a842b4c8f9dd2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a>使用 WCF 服务模型调用 SQL Server 中的标量函数
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的标量函数。 适配器将标量函数公开为可以直接在 SQL Server 调用的方法。 有关如何适配器支持标量函数的详细信息，请参阅[执行 SQL Server 使用的 SQL 适配器中的标量函数](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)。  
@@ -43,9 +43,9 @@ ms.lasthandoff: 09/20/2017
 |---------------|----------------------|  
 |标量函数名称|公共*< return_type >**< scalar_function_name >*(param1，param2，...)|  
   
- \<*retrun_type*> = 在函数定义中定义的返回类型  
+ \<*retrun_type* \> = 在函数定义中定义的返回类型  
   
- \<*scalar_function_name*> = 标量函数的名称。  
+ \<*scalar_function_name* \> = 标量函数的名称。  
   
  例如，下面的代码演示方法签名，用于生成 WCF 客户端类**GET_EMP_ID**标量函数，在 dbo 架构中，它将作为参数员工指定内容并返回员工 ID （整数）。  
   
@@ -133,4 +133,4 @@ public partial class ScalarFunctions_dboClient : System.ServiceModel.ClientBase<
 8.  生成项目，然后运行它。 应用程序将显示带有"Manager"标志的员工的员工 ID。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[使用 WCF 服务模型开发应用程序](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

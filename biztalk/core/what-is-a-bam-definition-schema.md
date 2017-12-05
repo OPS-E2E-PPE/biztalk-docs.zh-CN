@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3411adf32a15cd2a3b5f11a02dbafcf58f66b184
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-a-bam-definition-schema"></a>什么是 BAM 定义架构？
 BAM 定义架构定义由业务分析员创建的观察模型的结构。  
@@ -43,7 +43,7 @@ BAM 定义架构定义由业务分析员创建的观察模型的结构。
   
  你可以创建包含 BAM 定义 （此架构的实例） 的 XML 文件，使用任何文本编辑器或通过使用 BAM 的外接程序 Excel 创建一个工作表可导出到 XML 文件中，通过使用导出到 XML 功能 BAM 外接程序。  
   
- 在定义 BAM 活动和视图后，您不必手动导出 XML 文件，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，以便自动部署您的基础结构。 结果是名为电子表格的另一个副本\<工作薄名称 > _Livedata.xls。 可以使用此新电子表格连接到实时数据源并在数据透视表报告中查看聚合。  
+ 在定义 BAM 活动和视图后，您不必手动导出 XML 文件，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，以便自动部署您的基础结构。 结果是名为电子表格的另一个副本\<工作薄名称\>_Livedata.xls。 可以使用此新电子表格连接到实时数据源并在数据透视表报告中查看聚合。  
   
 > [!NOTE]
 >  如果你手动导出通过 BAM 菜单项顶部的电子表格将 XML 文件，并使用 BAM 管理实用程序来部署导出的 XML 文件而不是 Microsoft Excel 文件，你无法查看您使用的 Office 工具的实时数据。  

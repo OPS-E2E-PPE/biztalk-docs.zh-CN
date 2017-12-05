@@ -12,18 +12,18 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c673e5c31c0498bb82fe7979d2855765f4c9bf35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1da0def828c1dbfa8511dc61b529fa02cb53ca5a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型
-[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar 或 varbinary （max）。 若要从这类列读取数据，适配器客户端可以使用选择的操作。 若要插入或更新到此类列的数据，该适配器都公开一组\<*column_name*> 操作，其中\< *column_name*> 是类型 varchar （的列的名称max)、 nvarchar 或 varbinary （max）。  
+[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar 或 varbinary （max）。 若要从这类列读取数据，适配器客户端可以使用选择的操作。 若要插入或更新到此类列的数据，该适配器都公开一组\<*column_name* \>操作，其中\< *column_name* \>是的名称类型 varchar （max）、 nvarchar 或 varbinary （max） 列。  
   
  此外，在 SQL Server 中，你可以存储非结构化的数据，例如文本文档和图像的 varbinay(max) 列。 此类非结构化的数据称为 FILESTREAM 数据。 FILESTREAM 数据可以存储为文件系统上的文件。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使客户端 FILESTREAM 数据输入到类型 varbinary （max） 列。 [FILESTREAM 存储](https://docs.microsoft.com/sql/relational-databases/blob/filestream-sql-server)提供了更多信息。 
   
- 本主题提供必须执行某些任务有关的信息的计算机上运行 SQL Server 和运行适配器客户端将无法插入或更新 FILESTREAM 数据的计算机。 本主题还说明了执行组\<*column_name*> 若要插入 FILESTREAM 数据的操作。  
+ 本主题提供必须执行某些任务有关的信息的计算机上运行 SQL Server 和运行适配器客户端将无法插入或更新 FILESTREAM 数据的计算机。 本主题还说明了执行组\<*column_name* \>操作插入 FILESTREAM 数据。  
   
 > [!NOTE]
 >  如果您正在执行包含的用户定义类型的列的表上的操作，请确保您参考[对表和视图使用了 SQL 适配器的用户定义类型的操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
  完成这些任务后，你将插入或更新 SQL Server 数据库表中的 FILESTREAM 数据。  
   
 ## <a name="how-this-topic-demonstrates-operations-on-large-data-types"></a>本主题演示对大型数据类型执行操作的方式  
- 若要演示如何执行一组\<*column_name*> 对表较大的数据类型的操作需要一个表，**记录**，具有列**Id**和**文档**:  
+ 若要演示如何执行集\<*column_name* \>对表较大的数据类型的操作需要一个表，**记录**，具有列**Id**和**文档**:  
   
 -   **记录**通过运行这些示例使用提供的 SQL 脚本创建表，并且所有数据。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
@@ -75,9 +75,9 @@ ms.lasthandoff: 09/20/2017
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|设置\<*column_name*>|公共 void 集\<*column_name*> （字符串筛选器，byte [] 数据）;|  
+|设置\<*column_name*\>|公共 void 集\<*column_name*\>（字符串筛选器，byte [] 数据）;|  
   
- \<*column_name*> = 较大的数据类型的列的名称。  
+ \<*column_name* \> = 较大的数据类型的列的名称。  
   
  例如，下面的代码演示方法签名，用于生成 WCF 客户端类**SetDocument**操作**记录**下的默认"dbo"架构的表。  
   
@@ -90,14 +90,14 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
  在此代码段， **TableOp_dbo_RecordsClient**是 WCF 中的类的生成的 SqlAdapterBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
 ### <a name="parameters-for-operations-on-columns-of-large-data-types"></a>较大的数据类型的列上的操作的参数  
- 本部分提供了通过一组所需的参数\<*column_name*> 操作。  
+ 本部分提供了通过一组所需的参数\<*column_name* \>操作。  
   
 |参数名称|Description|  
 |--------------------|-----------------|  
 |字符串筛选器|指定 WHERE 子句基于适配器在其上更新的记录大的数据类型的列。|  
 |byte [] 数据|指定必须更新为较大的数据类型的列的值。|  
   
- 集\<*column_name*> 操作不返回任何值。  
+ 集\<*column_name* \>操作不返回任何值。  
   
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-columns-of-large-data-types"></a>创建 WCF 客户端以调用较大的数据类型的列上的操作  
  泛型的执行 SQL Server 使用 WCF 客户端上的操作所需的操作集涉及到一组任务中所述[与 SQL 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-sql/overview-of-the-wcf-service-model-with-the-sql-adapter.md)。 本部分介绍如何创建 WCF 客户端来调用**SetDocument**操作**记录**表。 适配器公开**SetDocument**操作，以更新中的较大的数据类型的列的数据。  
@@ -173,4 +173,4 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 9. 生成项目，然后运行它。 应用程序更新**文档**中的列**记录**表。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[使用 WCF 服务模型开发应用程序](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

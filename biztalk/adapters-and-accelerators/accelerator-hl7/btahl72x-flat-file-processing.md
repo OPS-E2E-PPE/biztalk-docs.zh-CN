@@ -38,11 +38,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15d21653b9f0d6109487677484506c7a5d6bcc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcd1afb4843f68b56228c8e9aaa655d83f70119e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btahl72x-flat-file-processing"></a>BTAHL72X 平面文件处理
 中的以下组件[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理 HL7 2.X （HL7 编码） 消息：  
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/20/2017
   
 -   段中有三个字符  
   
--   段分隔符是\<CR > 或\<CR >\<LF > （可选择的最后一段）  
+-   段分隔符是\<CR\>或\<CR\>\<LF\> （对于的最后一段可选）  
   
 -   字段分隔符是适当  
   
@@ -159,9 +159,9 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [HL7 2.X 反汇编程序中的架构确定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
+-   [HL7 2.X 反汇编程序的架构确定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
   
--   [架构确定在 HL7 2.X 汇编程序](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
+-   [HL7 2.X 汇编程序的架构确定](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
   
 ## <a name="see-also"></a>另请参阅  
  [消息处理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   

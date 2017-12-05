@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d328a1a95b7340520352b32b6d72e1579b9594a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34cbb94dff7211a157fc492c1157fa379236641e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties （BizTalk Server 示例）
 UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序集关联的所有参与方。  
@@ -50,7 +50,7 @@ UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例位于以下 SDK 位置中：  
   
- \<*示例路径*> \Admin\ExplorerOM\UnenlistParties\  
+ \<*示例路径*\>\Admin\ExplorerOM\UnenlistParties\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -68,12 +68,11 @@ UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+     \<*示例路径*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
 2.  运行 UnenlistParties.exe 文件，并传递下面两个命令行参数之一：  
   
-    -   **\<**   
-         ***AssemblyName* >**。 将取消登记的所有参与方所在的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***AssemblyName* \>** 。 将取消登记的所有参与方所在的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
   
     -   **/?.** 显示帮助。  
   
@@ -183,7 +182,7 @@ else
   
 ```  
   
- 以下脚本输出是通过从属于 PartyResolution 示例的供应商程序集中注销参与方生成的。 PartyResolution 示例位于\<*示例路径*> \Admin\Orchestrations\PartyResolution 目录。  
+ 以下脚本输出是通过从属于 PartyResolution 示例的供应商程序集中注销参与方生成的。 PartyResolution 示例位于\<*示例路径*\>\Admin\Orchestrations\PartyResolution 目录。  
   
 ```  
 PS C:\> .\UnenlistParties.ps1 Supplier  
@@ -204,4 +203,4 @@ done.
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

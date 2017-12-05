@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adfe1e552c0f129df67ec5ea790f8e685b214fe6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78ae5f1c61f2a00359e88acd75c093e2b6c2fb91
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-bam-development-process"></a>BAM 开发过程概述
 本主题介绍 BAM 开发过程以及存储 BAM 数据所用的数据库和表。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     -   使用 BizTalk Server 配置管理器来安装 BAM 工具。 我们建议你使用配置管理器，因为它在注册表中放入相应的项，便于升级。 有关配置 BAM 的详细信息，请参阅[使用 Configuration Manager 配置 BAM 工具](http://go.microsoft.com/fwlink/?LinkId=70561)(http://go.microsoft.com/fwlink/?LinkId=70561)。  
   
-    -   从已安装了 DLL 的计算机复制 DLL。 DLL 驻留在 Microsoft BizTalk Server\<版本 > \Tracking 文件夹。  
+    -   从已安装了 DLL 的计算机复制 DLL。 DLL 驻留在 Microsoft BizTalk Server\<版本\>\Tracking 文件夹。  
   
 ## <a name="bam-development-process"></a>BAM 开发过程  
  下图对 BAM 开发流程进行了说明。  
@@ -56,11 +56,11 @@ ms.lasthandoff: 09/20/2017
   
 4.  运行该应用程序。 执行此操作时，代码将：  
   
-    -   将占位符记录添加到 BAM_\<*活动名称*> _Active 表。  
+    -   将占位符记录添加到 BAM_\<*活动名称*\>_Active 表。  
   
     -   更新该记录中的数据项。  
   
-    -   结束活动并将该记录移到 BAM_\<*活动名称*e > _completed 表。  
+    -   结束活动并将该记录移到 BAM_\<*活动名称**\>_completed 表。  
   
 ## <a name="where-bam-data-is-stored"></a>BAM 数据的存储位置  
  BAM 提供 EventObservation 命名空间，它包含用于处理 BAM 事件的 EventStream 类。  
@@ -69,11 +69,11 @@ ms.lasthandoff: 09/20/2017
   
 |Name|Description|  
 |----------|-----------------|  
-|活动表|名为 bam_\<*活动名称*> _Active，此表包含此类型的尚未完成的活动。|  
-|活动关系表|名为 bam_\<*活动名称*> _ActiveRelationships，此表包含活动尚未完成相关的活动。|  
-|继续符表|名为 bam_\<*活动名称*> _continuations，此表列出活动的延续活动。|  
-|已完成表|名为 bam_\<*活动名称*> _completed。|  
-|已完成关系表|名为 bam_\<*活动名称*> _CompletedRelationships，此表包含的活动已完成的相关的活动。|  
+|活动表|名为 bam_\<*活动名称*\>_Active，此表包含此类型的尚未完成的活动。|  
+|活动关系表|名为 bam_\<*活动名称*\>_ActiveRelationships，此表包含活动尚未完成相关的活动。|  
+|继续符表|名为 bam_\<*活动名称*\>_continuations，此表列出活动的延续活动。|  
+|已完成表|名为 bam_\<*活动名称*\>_completed。|  
+|已完成关系表|名为 bam_\<*活动名称*\>_CompletedRelationships，此表包含的活动已完成的相关的活动。|  
   
  在 BAM 活动中可捕获 4 种类型的数据：  
   

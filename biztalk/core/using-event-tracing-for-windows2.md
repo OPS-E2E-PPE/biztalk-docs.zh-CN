@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95495448bb7b92f30911d4d33b3456fa5cef9bb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5f610d75048b250fc90aba7f723cee39c4f2e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>使用适用于 Windows 跟踪的事件
 适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件： 例如，tracerpt.exe 或 tracedmp.exe。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      为了让使用者应用程序能够读取 .etl 文件中的事件，Windows 事件跟踪必须将其转储到该文件中。 通常，该操作在控制器停用跟踪时完成。  
   
-     若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **\<实时 > =-rt**。  
+     若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **\<实时\>=-rt**。  
   
 -   **提供程序。** 提供事件。  
   
@@ -46,15 +46,15 @@ ms.lasthandoff: 09/20/2017
   
  用于 JD Edwards OneWorld 的 BizTalk 适配器包含五种提供程序，允许您记录不同种类的消息：  
   
--   **接收方日志记录提供程序。** \<跟踪元素 > 交换机**-接收方**。  
+-   **接收方日志记录提供程序。** \<跟踪元素\>交换机**-接收方**。  
   
--   **接收方 CastDetails 提供程序。** \<跟踪元素 > 交换机**-castDetailsReceive**。  
+-   **接收方 CastDetails 提供程序。** \<跟踪元素\>交换机**-castDetailsReceive**。  
   
--   **发送器日志记录提供程序。** \<跟踪元素 > 交换机**-发送器**。  
+-   **发送器日志记录提供程序。** \<跟踪元素\>交换机**-发送器**。  
   
--   **发送器 CastDetails 提供程序。** \<跟踪元素 > 交换机**-castDetailsTransmit**。  
+-   **发送器 CastDetails 提供程序。** \<跟踪元素\>交换机**-castDetailsTransmit**。  
   
--   **管理日志记录提供程序。** \<跟踪元素 > 交换机**-管理**。  
+-   **管理日志记录提供程序。** \<跟踪元素\>交换机**-管理**。  
   
  BTAJDEOneWorldTrace 命令  
   
@@ -68,7 +68,7 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
  其中：  
   
--   **\<跟踪元素 >** （必需） 是一种的提供程序。  
+-   **\<跟踪元素\>** （必需） 是一种的提供程序。  
   
 -   其选项为：  
   
@@ -84,9 +84,9 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
     -   **-启动、-停止**： 激活或停用该提供程序。  
   
-    -   **-cir \<MB >**： 大小和类型的文件。 -cir 是循环文件。 \<MB >: meg 中的大小。  
+    -   **-cir \<MB\>**： 大小和类型的文件。 -cir 是循环文件。 \<MB\>: meg 中的大小。  
   
-    -   **-seq \<MB >**： 大小和类型的文件。 -seq 是顺序文件。 \<MB >: meg 中的大小。  
+    -   **-seq \<MB\>**： 大小和类型的文件。 -seq 是顺序文件。 \<MB\>: meg 中的大小。  
   
     -   **-rt**： 上设置的实时模式。  
   

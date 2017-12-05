@@ -15,11 +15,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59f5c2821af02fb87727a4096f4b6e586bfd5b4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 500ec05df9a3a365a350571e8b3e66f5d584f92d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
 HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用 ASP.NET 应用程序以帮助处理 orchestration 数据的业务流程。 在本示例中，业务流程利用请求/响应端口将消息发送到 ASP.NET 应用程序以及检索响应。 使用 HTTP 适配器，您可以在 BizTalk Server 业务流程和 ASP.NET 应用程序之间实现集成。 有关详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。  
@@ -36,7 +36,7 @@ HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServer
 4.  业务流程在 HTTP 响应中接收 XML 形式的结果，并将该结果写入特定文件夹中的 .xml 文件。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \AdaptersUsage\HTTPSolicitResponse  
+ \<*示例路径*\>\AdaptersUsage\HTTPSolicitResponse  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -61,15 +61,15 @@ HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServer
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \AdaptersUsage\HTTPSolicitResponse  
+     \<*示例路径*\>\AdaptersUsage\HTTPSolicitResponse  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   为本示例创建输入和输出文件夹：  
   
-         \<*示例路径*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
+         \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
   
-         \<*示例路径*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
+         \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
   
     -   编译并配置本示例使用的 ASP.NET 应用程序。  
   

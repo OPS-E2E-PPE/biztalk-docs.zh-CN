@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d54d742b883ec843d56610b25fdfb91371dbe4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: baf474c68d91b7648f7f0efcfe4e85e7531e4aa1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-in-itinerary-designer"></a>在路线设计器中工作
 创建一个 Microsoft Visual C# 项目后，可以创建新的路线模型，并将现有路线添加到项目。 以下步骤介绍如何创建新路线、 添加现有路线模型，或更改一条路线的名称。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="save-an-itinerary"></a>保存一条路线  
   
-上**文件**菜单上，单击**保存\<路线名称 >**。  
+上**文件**菜单上，单击**保存\<路线名称\>**。  
   
 > [!NOTE]
 >  路线文件将保存为相应的 XML 格式的 DSL 模型。  

@@ -19,11 +19,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f056b05c492e0ca4151c5a70652ee74ea46a464
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41956d9e10cba87e0e1a1f44d49dd8ec8b6039bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsso-biztalk-server-sample"></a>HTTPSSO （BizTalk Server 示例）
 HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HTTP 适配器。  
@@ -65,7 +65,7 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
  有关演示如何使用命令行实用工具 ssomanage.exe 配置 SSO，如创建关联应用程序和用户映射的示例，请参阅[管理 （BizTalk Server 示例）](../core/manage-biztalk-server-sample.md)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \SSO\HTTPSSO\  
+ \<*示例路径*\>\SSO\HTTPSSO\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -101,11 +101,11 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
   
     -   **Microsoft.BizTalk.ExplorerOM**。 默认情况下，Microsoft.BizTalk.ExplorerOM.dll 文件位于文件夹中[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]开发人员工具\\。  
   
-    -   **Microsoft.BizTalk.SSOClient.Interop**。 默认情况下，Microsoft.BizTalk.Interop.SSOClient.dll 文件位于文件夹中\< *ProgramFiles*> 上单一登录的 \Common Files\Enterprise\\。  
+    -   **Microsoft.BizTalk.SSOClient.Interop**。 默认情况下，Microsoft.BizTalk.Interop.SSOClient.dll 文件位于文件夹中\< *ProgramFiles*\>上单一登录的 \Common Files\Enterprise\\。  
   
      这将产生可执行文件的以下文件夹中的 SsoSample.exe:  
   
-     \<*示例路径*> \SSO\HTTPSSO\bin\Debug\  
+     \<*示例路径*\>\SSO\HTTPSSO\bin\Debug\  
   
 ## <a name="running-this-sample"></a>运行本示例  
   
@@ -116,7 +116,7 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
   
 1.  运行在以下文件夹中找到的可执行文件 SsoSample.exe:  
   
-     \<*示例路径*> \SSO\HTTPSSO\bin\Debug\  
+     \<*示例路径*\>\SSO\HTTPSSO\bin\Debug\  
   
      此示例向导应用程序打开。  
   
@@ -142,7 +142,7 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
   
 8.  查看对应于正在执行的 IIS、 SSO 和 BizTalk 配置的状态消息。 你可以找到在此阶段运行的代码**IisConfigurator**， **SsoConfigurator**，和**BtsConfigurator** SsoSample.cs 文件中定义的类。 已完成配置后，单击**下一步**。  
   
-9. 在向导应用程序的最后一页，接受默认设置**启动浏览器显示在**(选中的复选框和文本框中使用 URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<消息 / >)，然后单击**完成**。  
+9. 在向导应用程序的最后一页，接受默认设置**启动浏览器显示在**(选中的复选框和文本框中使用 URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>)，然后单击**完成**。  
   
      Internet Explorer 的实例将打开，并且很快显示添加到罗斯文 SQL 数据库的员工表的示例员工数据。  
   
@@ -159,11 +159,11 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
   
 -   第一个虚拟目录使用 Windows 集成身份验证配置，并且对应于 BizTalk HTTP 接收 ISAPI 扩展插件。 它必须与 BTSHTTPReceive.dll 位于以下文件夹中的.dll 文件相关联：  
   
-     \<*安装路径*> \HttpReceive  
+     \<*安装路径*\>\HttpReceive  
   
 -   第二个虚拟目录配置使用基本身份验证和模拟接受要对用户进行身份验证的用户 ID 和密码的后端系统。 必须将其与一个关联或 ValidateUser.aspx 或 EmployeeData.aspx，ASPX 文件的其他位于以下文件夹中：  
   
-     \<*示例路径*> \SSO\HTTPSSO\Scripts  
+     \<*示例路径*\>\SSO\HTTPSSO\Scripts  
   
  你可以使用 SsoSample.exe 向导应用程序配置一个或多个关联应用程序。 其中每项的关联应用程序，你可以创建一个或多个用户映射。 这些用户映射的每个映射到用来访问特定的后端系统帐户的 Windows 用户帐户。 在此示例中，该帐户是本地的 Windows 帐户的使用进行身份验证模拟真实的后端系统的第二个 IIS 虚拟目录。  
   
@@ -171,7 +171,7 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
   
 -   浏览直接到 Internet 资源管理器中的以下 URL:  
   
-     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<消息 / >  
+     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>  
   
 -   向导再次运行应用程序，但清除所有的第一页上的配置复选框。  
   
@@ -194,4 +194,4 @@ HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!I
     ```  
   
 ## <a name="see-also"></a>另请参阅  
- [SSO （BizTalk Server 示例文件夹中）](../core/sso-biztalk-server-samples-folder.md)
+ [SSO（BizTalk Server 示例文件夹）](../core/sso-biztalk-server-samples-folder.md)

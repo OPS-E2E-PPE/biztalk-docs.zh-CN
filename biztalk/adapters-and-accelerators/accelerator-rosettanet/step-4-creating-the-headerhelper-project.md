@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a7a5dc4aa7c3acca26705449108bb75541099c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2525e0e87106e2eeb82fb05b52b3ec69d4be876d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-creating-the-headerhelper-project"></a>步骤 4： 创建 HeaderHelper 项目
 在此步骤中，将创建 [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 类库。 当专用业务流程收到传入消息时，HeaderHelper 库确定是否需要进行文档转换，如果需要，则执行该转换。 这使你的业务流程能够使用不同版本的 RosettaNet 实现框架 (RNIF) 文档。 此外，当发出 3A2 响应消息时，HeaderHelper 库在传送该消息之前执行另一种文档转换。  
@@ -112,7 +112,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在右窗格中，单击**对程序集签名**。  
   
-4.  单击**选择强名称密钥文件**文本框中，然后选择**\<浏览 >**从下拉列表。  
+4.  单击**选择强名称密钥文件**文本框中，然后选择**\<浏览\>**从下拉列表。  
   
 5.  在选择文件对话框中，移动到的位置您 Contoso 的程序集，并双击**FabConPriceAvail.snk**。  
   
@@ -139,4 +139,4 @@ ms.lasthandoff: 09/20/2017
 4.  在命令提示符处，键入**gacutil /if HeaderHelper.dll**按**Enter**安装**HeaderHelper**到的程序集**全局程序集缓存**.  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)
+ [步骤 5：修改 Contoso 私有业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df98f717c71198d4be6f8d13eaa539e5c1e16786
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21003c4d3565158945e91371fa760cf97692b472
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-biztalk-server-performance"></a>解决 BizTalk Server 性能
 本部分包含诊断和解决与 BizTalk 消息引擎相关的性能问题的一般准则。  
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 -   SQL Server Profiler 可用于捕获发送至 SQL Server 的 Transact-SQL 语句和这些语句的 SQL Server 结果集。 由于 BizTalk Server 与 SQL Server 紧密集成，因此，对于在从 SQL Server 数据库读取和向 SQL Server 数据库写入时在 BizTalk Server 中发生的问题，SQL Server 配置文件跟踪分析将是一个非常有用的问题分析工具。 有关如何使用 SQL Server Profiler 的信息，请参阅 SQL Server 文档。  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]查询编辑器可以用于执行直接针对 SQL Server 数据库的 SQL 语句。 在某些情况下，此功能对于查询 BizTalk Server 数据库或更新 BizTalk Server 数据库很有用。 有关更多信息，请参阅查询编辑器[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]文档。  
+-   SQL Server 查询编辑器可以用于执行直接针对 SQL Server 数据库的 SQL 语句。 在某些情况下，此功能对于查询 BizTalk Server 数据库或更新 BizTalk Server 数据库很有用。 有关查询编辑器的详细信息请参阅 SQL Server 文档。  
   
 -   查看[故障排除 SQL Server](../core/troubleshooting-sql-server.md)有关其他信息。  
   

@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a2d6ef6752965c1f20c695dacb06ff348089054
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 47496b875297e6c16141780979fda933f3968c6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="running-orchestrations"></a>运行业务流程
 以下过程介绍如何生成、部署、绑定和启动业务流程。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/07/2017
   
      例如：  
   
-     **\<驱动器 >: \Adapter_Install\biztalk\my_project**  
+     **\<驱动器\>: \Adapter_Install\biztalk\my_project**  
   
 3.  在命令提示符下键入以下命令并按 ENTER:  
   
@@ -94,4 +94,4 @@ ms.lasthandoff: 11/07/2017
      若要将状态更改为**运行**单击**刷新**，或右键单击主机实例，然后单击**刷新**。  
   
 ## <a name="see-also"></a>另请参阅  
- [安全适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [保护适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

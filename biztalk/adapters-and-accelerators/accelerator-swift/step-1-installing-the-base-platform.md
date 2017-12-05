@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b7551972c14de0bcbd36532d76e3706a762cf48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e0884ff97e9981129f63c9bc425e86dfeaafc9a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-1-installing-the-base-platform"></a>步骤 1： 安装基础平台
 对于基础平台，安装[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]和[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]使用默认安装选项的每个服务器上的 Service Pack 2。 请遵循这些建议：  
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/20/2017
   
 -   请确保你输入合适的许可信息 （最大你购买的每个服务器的连接数）。 可以通过的可用连接数影响系统性能。  
   
--   请确保你已安装所需的所有软件必备项[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]安装。 有关详细信息，请参阅在 BizTalk Server 安装说明[http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)。 [安装指南 》 BizTalk 2013 R2 Accelerator for SWIFT](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1)。  
+-   请确保你已安装 BizTalk Server 安装所需的所有软件必备项。 有关详细信息，请参阅在 BizTalk Server 安装说明[http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)。 [安装指南 》 BizTalk 2013 R2 Accelerator for SWIFT](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1)。  
   
 -   在生产服务器上安装它们之前，请在脱机环境中测试所有重要更新。  
   
 -   请确保你安装适用的作为你部署的一部分安装的所有产品的所有修补程序。 有关详细信息，请参阅以下源：  
   
-    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]联机帮助  
+    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 联机帮助  
   
     -   在 BizTalk Server 安装说明[http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041)。  
   

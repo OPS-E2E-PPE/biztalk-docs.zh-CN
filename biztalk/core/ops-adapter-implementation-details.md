@@ -19,11 +19,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d68a55ce0f6eba835313075e8ab3753ec825db2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3172759541f46ec6c3c8c2b3e684086747036f37
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ops-adapter-implementation-details"></a>Ops 适配器实现详细信息
 你可能会发现有助于了解 Ops 适配器的以下方面，修改适配器时或以编程方式配置。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |**InitializationData**|**InitializationData**|  
 |**TransportLocationUri**|不适用。|  
   
- 所有属性都是字符串值。 构造从程序集名称和类名称 TransportLocationUri 属性的值。 URI 包含值 OPS: / /\<DotNetAssemblyStrongName > /\<DotNetClassName > 其中将占位符替换为相应的自定义属性的值。  
+ 所有属性都是字符串值。 构造从程序集名称和类名称 TransportLocationUri 属性的值。 URI 包含值 OPS: / /\<DotNetAssemblyStrongName\>/\<DotNetClassName\>其中将占位符替换为相应的自定义属性的值。  
   
  有关创建端口在代码中的信息，请参阅[如何从代码创建 MSMQ 接收位置和发送端口](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md)。  
   

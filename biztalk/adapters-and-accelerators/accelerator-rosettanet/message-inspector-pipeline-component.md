@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d146dbeaa94d47799794de7fa6f9e6b9082f9fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc9e1a520153220bcc86d844ca94203ff2b78548
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-inspector-pipeline-component"></a>消息检查器管道组件
 使用此管道组件，你可以检查由多个部分组成的消息的所有部分和消息上下文，以便确定消息是否存在问题。 你可以用此组件来排除故障。  
@@ -32,17 +32,17 @@ ms.lasthandoff: 09/20/2017
  你可以将此组件构建到自定义管道中，然后将其附加到发送端口。 你可以在发送端口中创建一个筛选器，用于订阅要监视的消息。 除了 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 已执行的标准处理操作外，还可以执行此故障排除操作。  
   
 ## <a name="building-a-custom-pipeline-using-the-message-inspector-pipeline-component"></a>使用消息检查器管道组件构建自定义管道  
- 若要使用消息检查器管道组件，你必须构建并部署一个包含该组件的自定义管道。 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] 帮助中的“使用管道设计器创建管道”。  
+ 若要使用消息检查器管道组件，你必须构建并部署一个包含该组件的自定义管道。 有关详细信息，请参阅"创建管道与管道中的设计器"BizTalk Server 帮助。  
   
 #### <a name="to-deploy-the-message-inspector-pipeline-component"></a>部署消息检查器管道组件  
   
-1.  启动 [!INCLUDE[vs2012](../../includes/vs2012-md.md)]。  
+1.  启动 Visual Studio。  
   
 2.  上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
 3.  将移动到 C:\Program Files\Microsoft BizTalk 2013 Accelerator 进行 RosettaNet\SDK\Message 检查器管道组件，选择**MessageInspector.csproj**，然后单击**打开**。  
   
-4.  打开[!INCLUDE[vs2012](../../includes/vs2012-md.md)]命令提示符。  
+4.  打开 Visual Studio 命令提示符。  
   
 5.  在命令提示符处，转到 C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug。  
   
@@ -115,4 +115,4 @@ ms.lasthandoff: 09/20/2017
  在常规的处理操作中，你一次只能检查消息的一部分，即已在业务流程中指定为消息正文的部分。 因此，你只能在 BizTalk 管理控制台中检查消息的各个部分中的一个，这样，排除故障的能力就受到限制。 消息检查器管道组件可以帮助你突破此限制。  
   
 ## <a name="see-also"></a>另请参阅  
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

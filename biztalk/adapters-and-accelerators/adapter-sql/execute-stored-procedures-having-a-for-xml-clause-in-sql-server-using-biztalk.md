@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e47c269516ba73ab1e61664d200db207110e98e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c1b69c522f01f2561ea8145c11dec3e36b5cd4e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a>执行具有 FOR XML 子句中使用 BizTalk Server 的 SQL Server 中的存储的过程
 SQL SELECT 语句可以有一个 FOR XML 子句，而不是行集以 XML 形式返回查询结果。 你还可以具有带 FOR XML 子句的 SELECT 语句的存储的过程。 [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)提供了更多信息。
@@ -86,7 +86,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          因为你已添加到你的 BizTalk 项目 sqltypes.xsd 架构执行此操作。  
   
-    4.  提供架构目标命名空间。 单击**\<架构 >**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlStoredProcs/namespace`。  
+    4.  提供架构目标命名空间。 单击**\<架构\>**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlStoredProcs/namespace`。  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a>生成请求消息来调用存储的过程的架构  
  若要生成可以使用的请求消息架构[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]从 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 本主题中，为生成 GET_EMP_DETAILS_FOR_XML 存储过程的架构。 有关如何生成架构使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，请参阅[检索元数据使用的 SQL 适配器的 Visual Studio 中的 SQL Server 操作](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)。  
@@ -227,9 +227,9 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  业务流程使用该消息，并将其发送到 SQL Server 数据库。 从 SQL Server 数据库响应保存在定义为业务流程的一部分的其他文件位置中。 例如，来自 SQL Server 数据库中的前面的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Root xmlns="http://ForXmlStoredProcs/namespace">  
-  \<Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
+  <Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
 </Root>  
 ```  
   
@@ -239,4 +239,4 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  已部署并配置 BizTalk 项目之后，你可以将配置设置导出到 XML 文件称为绑定文件。 后生成绑定文件，你可以导入的配置设置文件，以便不需要创建诸如发送端口和接收相同的业务流程的端口。 有关绑定文件的详细信息，请参阅[重用适配器绑定](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)。  
   
 ## <a name="see-also"></a>另请参阅  
-[开发使用 SQL 适配器的 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[使用 SQL 适配器开发 BizTalk 应用程序](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

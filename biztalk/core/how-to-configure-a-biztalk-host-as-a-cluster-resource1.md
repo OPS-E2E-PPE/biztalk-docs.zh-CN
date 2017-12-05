@@ -27,11 +27,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9704dbdf2bcf3549e23f1875e85a49f0ee051b2f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a18548394980912796daf1100f700fd03e72f294
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-biztalk-host-as-a-cluster-resource"></a>将 BizTalk 主机配置为群集资源
 本主题将讨论要将 BizTalk 主机配置为群集资源所必须遵循的步骤。 若要完成本主题中的步骤，必须已经在 BizTalk 组中将至少两个 BizTalk 服务器配置为 Windows Server 群集的成员。 有关配置 Windows Server 群集的详细信息，请参阅 Windows Server 联机帮助。  
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-configure-a-biztalk-host-as-a-cluster-resource"></a>若要配置 BizTalk 主机作为群集资源  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername >:\<管理数据库 >]**，单击以展开**平台设置**，然后单击以展开**主机**。 主机列表将显示在该文件夹下。  
+1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，单击以展开**平台设置**，然后单击以展开**主机**。 主机列表将显示在该文件夹下。  
   
 2.  右键单击你想要群集，，然后选择的主机**群集**。  
   
@@ -106,7 +106,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-uncluster-a-clustered-biztalk-host"></a>若要对其取消群集的 BizTalk 主机群集  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername >:\<管理数据库 >]**，单击以展开**平台设置**，然后单击以展开**主机**。 主机列表将显示在该文件夹下。  
+1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，单击以展开**平台设置**，然后单击以展开**主机**。 主机列表将显示在该文件夹下。  
   
 2.  右键单击你想要对其取消群集，，然后选择的群集的主机**Uncluster**。  
   

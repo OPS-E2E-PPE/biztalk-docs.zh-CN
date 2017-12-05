@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22d5c24b0c2d29c225fa2206d47b67e3d166a2c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f2fdc186e93bd182b3021a3ef8fc258cee59923
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="verifying-a-message"></a>验证消息
 本部分介绍如何验证已修复的消息。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*> _Verifier * *。  
+3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>_Verifier * *。  
   
 4.  在验证窗口中，单击**收件箱**。  
   
@@ -82,4 +82,4 @@ ms.lasthandoff: 09/20/2017
   
 19. 关闭[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗口。  
   
-20. 在 MRSR 站点中，单击**文档和列表**。 如果你单击**接受**接受这些更改的步骤 13 中，验证\<部门名称 > _Approve 文档库包含刚刚修改的消息。 如果您已经有打开的文档和列表窗口，请单击**刷新**上**视图**菜单。 如果你单击**拒绝**拒绝步骤 13 中的更改，请确认*\<计算机名称 >*_Outbox 文档库包含刚刚修改的消息。
+20. 在 MRSR 站点中，单击**文档和列表**。 如果你单击**接受**接受这些更改的步骤 13 中，验证\<部门名称\>_Approve 文档库包含刚刚修改的消息。 如果您已经有打开的文档和列表窗口，请单击**刷新**上**视图**菜单。 如果你单击**拒绝**拒绝步骤 13 中的更改，请确认*\<计算机名称\>*_Outbox 文档库包含刚刚修改的消息。

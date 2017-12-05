@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c1463d8a06ab5da89306aababfe19362d6308dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da903e0cde796c6b12c30ea32dfe4012215a231e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-character-set-support"></a>EDI 字符集支持
-本主题表明 [!INCLUDE[prague](../includes/prague-md.md)] 的 EDI 功能中支持哪些字符集。  
+本主题指出的 BizTalk Server EDI 功能中支持的字符集。  
   
 |EDI 编码|支持的字符集|  
 |------------------|------------------------------|  
@@ -43,4 +43,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [配置 EDI 管道属性](../core/configuring-edi-pipeline-properties.md)   
- [配置信封 （EDIFACT 事务集设置）](../core/configuring-envelopes-edifact-transaction-set-settings.md)
+ [配置信封（EDIFACT-事务集设置）](../core/configuring-envelopes-edifact-transaction-set-settings.md)

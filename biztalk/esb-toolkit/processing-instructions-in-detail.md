@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 532721c347189f2e3d4db9e57b2afc3aa45b76db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf0a726d2c8c4f6242ed19a7dcd1e5430775e63
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-instructions-in-detail"></a>在详细信息中的处理指令
-本主题介绍的格式和定义所需的路线处理的多个上下文属性的系统 Properties.xsd 属性架构结构。 这些属性提升接收和处理通过一条消息时[!INCLUDE[prague](../includes/prague-md.md)]管道; 因为它们是提升的属性，它们都 BizTalk Server 组件访问。 系统 Properties.xsd 属性架构中定义以下属性：  
+本主题介绍的格式和定义所需的路线处理的多个上下文属性的系统 Properties.xsd 属性架构结构。 这些属性提升时接收并处理通过 BizTalk Server 管道; 一条消息由于它们是提升的属性，它们是 BizTalk Server 组件访问。 系统 Properties.xsd 属性架构中定义以下属性：  
   
 -   **ItineraryHeader。** 此属性包含所有路线的信息和通过一系列路线步骤要调用的路线服务的列表。 路线 API 内部使用此属性。  
   

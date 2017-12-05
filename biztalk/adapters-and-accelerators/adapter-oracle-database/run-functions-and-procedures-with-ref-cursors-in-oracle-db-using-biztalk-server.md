@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d96f19aadd37e48a238ea28054641bd4eafbaf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9072f3df5c85ed09c5efbdc5e690a8eccc97b2f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的 REF CURSOR
 REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针的 PL/SQL 数据类型。 REF CURSOR 类型使输入和输出流的数据非常适合传输大量数据传入和传出的 PL/SQL 代码。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]提供支持强类型和弱类型 (SYS_REFCURSOR) REF Cursor，可在缩小，传递给 PL/SQL 过程和函数中或在 OUT 参数。 有关详细信息，如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持 REF Cursor，请参阅[函数和过程与 REF CURSOR 参数上的操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)。 REF CURSOR 的 XML 结构的信息，请参阅[REF CURSOR 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)。  
@@ -176,7 +176,7 @@ REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针
  以上的请求消息的响应是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GET_ACTIVITYResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <STATUS>5</STATUS>   
   <INOUTRECS>  

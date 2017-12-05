@@ -12,17 +12,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53e20b7d94e44006df1042c9ca202e296508a5d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86fd882f89caee27211c03a4e13e617fe12faef1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-overview"></a>测试方案概述
 本主题提供测试应用程序; 的概述测试方法使用和列表的说明在负载测试期间捕获的关键绩效指标 (Kpi)。  
   
 ## <a name="test-application"></a>测试应用程序  
- 同步请求-响应应用程序用于比较性能[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]到 HYPER-V 上运行[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在物理硬件上运行。 此应用程序用于演示性能的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已被优化以低延迟的解决方案。 低延迟消息传送是关键如联机银行客户端发送一个请求，需要在非常短的时间间隔内响应消息的其中某些情况下 (例如\<3 秒)。  
+ 同步请求-响应应用程序用于将 BizTalk Server 运行在物理硬件上将在 HYPER-V 上运行的 BizTalk 服务器性能进行比较。 此应用程序用于演示性能的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已被优化以低延迟的解决方案。 低延迟消息对于如联机银行客户端发送一个请求，需要在非常短的时间间隔 （例如 < 3 秒） 内响应消息的其中某些方案至关重要。  
   
  下图显示使用的高级体系结构。 Visual Studio Team System (VSTS) 2008年测试加载代理调用自定义测试类，该类用于 WCF 传输生成负载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]公开在此方案中的应用已通过 WCF BasicHttp 请求-响应接收位置。 VSTS 2008 Load Test Agent 已使用测试客户端由于它提供了极大的灵活性，包括功能配置的消息数，同时线程总数，在发送和请求之间的休眠时间间隔发送。  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **每秒 – 业务流程已完成**报告**XLANG/s 业务流程 (BizTalkServerApplication) \Orchestrations 完成每秒**性能监视器计数器。 此计数器提供的吞吐量很好地衡量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。  
   
--   **消息处理的 % \< 3 秒数 –**以记录在测试期间的 3 秒内处理的消息总数。  
+-   **消息处理 < 3 秒数 – %**以记录在测试期间的 3 秒内处理的消息总数。  
   
  VSTS 2008 负载测试用于生成在所有测试整个一致负载。 以下测试运行设置，并且在测试调整每个测试的负载配置文件期间修改负载模式：  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 09/20/2017
   
  **对于 SQL Server:**  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]按照安装指南位于安装[http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021)。  
+-   按照安装指南位于安装 SQL Server [http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021)。  
   
 -   [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]使用具有 SAN Lun 配置根据下表。 数据库和日志文件以分隔到跨 Lun，如下所示，以减少可能磁盘 I/O 争用：  
   
@@ -245,7 +245,7 @@ ms.lasthandoff: 09/20/2017
     |Logs_BizTalkDatabases|其他 BizTalk 数据库日志文件|20|20|64 KB|  
     |N/A|MSDTC 日志文件|5|5|N/A|  
   
--   [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]已安装在安装指南按照[http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383)。  
+-   按照安装指南可在安装 BizTalk Server [http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383)。  
   
 -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最佳做法分析器 (BPA) 工具已使用系统必须配置后执行平台验证。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BPA 位于[http://go.microsoft.com/fwlink/?LinkId=67150](http://go.microsoft.com/fwlink/?LinkId=67150)。  
   
@@ -259,9 +259,9 @@ ms.lasthandoff: 09/20/2017
  然后，此基 VHD 已复制，并用作的整个环境部署的所有 HYPER-V 虚拟机的基础。 若要重置之前的系统安全标识符的基本 VHD 映像上运行 Sysprep[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]二进制文件部署到系统。  
   
 > [!NOTE]  
->  之后运行 Sysprep[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]已安装并在上配置服务器，可通过使用 Sysprep 应答文件和脚本提供[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。 这些示例脚本旨在用于[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在 32 位和 64 位版本上安装[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]仅。 有关详细信息请参阅[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]联机文档。  
+>  可以通过使用 Sysprep 应答文件和与 BizTalk Server 附带提供的脚本完成之后 BizTalk Server 已安装并配置服务器上运行 Sysprep。 与 BizTalk Server 在 32 位和 64 位版本上安装这些示例脚本旨在用于[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]仅。 有关详细信息请参阅 BizTalk Server 联机文档。  
   
  无人参与 Windows 安装参考位于[http://go.microsoft.com/fwlink/?LinkId=142364](http://go.microsoft.com/fwlink/?LinkId=142364)。  
   
 ## <a name="see-also"></a>另请参阅  
- [附录 c: BizTalk Server 和 SQL Server Hyper V 支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)
+ [附录 C：BizTalk Server 和 SQL Server Hyper-V 支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)

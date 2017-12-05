@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46ddba35a603217660df22668d548ca7c40eb5f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8198b17d07288bff04b64b0a1ad05db0cde4fd91
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-bam-alerts"></a>配置 BAM 警报
 管理员可以修改 BAM 警报框架的某些元素。 本主题介绍管理员可用的配置选项。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 >  在创建警报时，应该知道时间数据以本地时间格式存储在 OLAP 数据库、星型架构数据库和 Notification Services 数据库中。 而且还假定这三个数据库处于同一时区中。 在主导入数据库中，信息以 UTC 时间格式存储，可以在同一时区，也可以在不同时区。  
   
 ## <a name="changing-the-adf-configuration"></a>更改 ADF 配置  
- 部署的 BAM 管理实用工具使用 bm.exe.config 文件中指定的 CommandTimeout 值来填充 Notification Services 应用程序定义文件的视图时\<EventRule >\\< ActionTimeout\>元素。  
+ 部署的 BAM 管理实用工具使用 bm.exe.config 文件中指定的 CommandTimeout 值来填充 Notification Services 应用程序定义文件的视图时\<EventRule\>\\< ActionTimeout\>元素。  
   
  更改 bm.exe.config 中的 CommandTimeout 值，并不会更改之前所部署的视图中的 CommandTimeout 值。  
   
@@ -43,15 +43,15 @@ ms.lasthandoff: 09/20/2017
   
 1.  如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本 > \Tracking"**或**cd"C:\Program Files (x86) \Microsoft BizTalk Server \<版本 > \Tracking"** 64 位计算机上。 按 **Enter**。  
+2.  导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking"**或**cd"C:\Program Files (x86) \Microsoft BizTalk服务器\<版本\>\Tracking"** 64 位计算机上。 按 **Enter**。  
   
-3.  检索 ADF 文件。 类型**cscript ProcessBamNSFiles.vbs-获取\<ConfigFilePath > \<ADFFilePath > \< PID 服务器 > \< PID 数据库 >**。 请将其中的“配置文件路径”、“ADF 文件路径”、“PID 服务器”和“PID 数据库”替换为适合你的安装的值。  
+3.  检索 ADF 文件。 类型**cscript ProcessBamNSFiles.vbs-获取\<ConfigFilePath\> \<ADFFilePath\> \< PID 服务器\> \< PID 数据库\>** . 请将其中的“配置文件路径”、“ADF 文件路径”、“PID 服务器”和“PID 数据库”替换为适合你的安装的值。  
   
 4.  按 **Enter**。  
   
-5.  在编辑器中打开 ADF 文件并搜索\<ActionTimeout >，使用所需的值更新 &) （请注意，此值是 XML 持续时间。  
+5.  在编辑器中打开 ADF 文件并搜索\<ActionTimeout\>、 更新具有所需的值和请注意，此值是 XML 持续时间。  
   
-6.  保存该 ADF 文件。 类型**cscript ProcessBamNSFiles.vbs-更新\<ConfigFilePath > \<ADFFilePath > \< PID 服务器 > \< PID 数据库 >**。  
+6.  保存该 ADF 文件。 类型**cscript ProcessBamNSFiles.vbs-更新\<ConfigFilePath\> \<ADFFilePath\> \< PID 服务器\> \< PID 数据库\>**.  
   
 7.  按 **Enter**。  
   
@@ -89,6 +89,6 @@ ms.lasthandoff: 09/20/2017
   
  修改 BAM 配置文件的以下行并使用 BAM 管理实用程序 update-config 命令，可以更改文件存放位置。  
   
- \<属性名称 ="FileDropUNC">\\\\< 计算机名\>\alerts\</Property >  
+ \<属性名称 ="FileDropUNC"\>\\\\< 计算机名\>\alerts\</Property\>  
   
  BAM 管理实用程序的详细信息，请参阅[BAM 管理实用工具](../core/bam-management-utility.md)。

@@ -12,17 +12,17 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b529a0510ee56a92d3957a84a91d635666016f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b35585d4e3b3ed90df983c8a18f6833ce8aa6bf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-tasks-for-administrators"></a>管理员的 BAM 任务
 本主题描述 BAM 管理员在管理 BAM 基础结构时需要执行的典型任务。  
   
 ## <a name="configuring-bam"></a>配置 BAM  
- 使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置向导进行 BAM 的初始配置。 使用该配置向导，管理员可以执行以下操作：  
+ BAM 的初始配置进行使用 BizTalk 服务器配置向导。 使用该配置向导，管理员可以执行以下操作：  
   
 -   启用业务活动监视工具  
   
@@ -52,25 +52,28 @@ ms.lasthandoff: 09/20/2017
   
  有关使用该配置向导的详细信息，请参阅以下主题：  
   
--   [配置使用 BizTalk Server 配置的 BAM 警报](http://msdn.microsoft.com/library/04d79f8c-9e7f-4ba8-83ce-f79c33fb8e60)  
+-   [配置 BAM 警报](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [配置使用 BizTalk Server 配置的 BAM 工具](http://msdn.microsoft.com/library/075a1627-5bc2-488c-a88c-42c86cc8c3bb)  
+-   [配置 BAM 工具](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [配置 BAM 门户使用 BizTalk Server 配置](http://msdn.microsoft.com/library/8af7cccb-823e-48bd-9743-dfbba4bafa11)  
+-   [配置 BAM 门户](../install-and-config-guides/configure-biztalk-server.md)  
   
-### <a name="distributed-notification-services"></a>分布式 Notification Services  
- 如果将 BAM 配置为在分布式环境中运行，则在处理警报和通知时将具有性能优势。 如果要这样配置，则 Notification Services 的提供者、生成者和分发者角色将位于不同的计算机上，因此您必须在多计算机环境中安装 Notification Services。  
+### <a name="distributed-notification-services---sql-server-2008-r2-only"></a>分布式的 Notification Services 的 SQL Server 2008 R2
+如果将 BAM 配置为在分布式环境中运行，则在处理警报和通知时将具有性能优势。 如果要这样配置，则 Notification Services 的提供者、生成者和分发者角色将位于不同的计算机上，因此您必须在多计算机环境中安装 Notification Services。  
+
+> [!NOTE]
+> 从 SQL Server 2012 开始，BizTalk Server 使用 SQL 数据库邮件。 因此，如果你使用 SQL Server 2012 或更高版本，这不适用于你。 请参阅[BAM 警报](../install-and-config-guides/prepare-your-computer-for-installation.md#BKMK_BAMAlerts)的指南。
   
 ##### <a name="to-configure-distributed-notification-services"></a>配置分布式 Notification Services  
   
-1.  安装 [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] Notification Services。 有关分布式通知服务的详细信息，请参阅[!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)]Notification Services 文档[http://go.microsoft.com/fwlink/?LinkId=68095](http://go.microsoft.com/fwlink/?LinkId=68095)。  
+1.  安装 SQL Server Notification Services。 
   
     > [!NOTE]
-    >  Notification Services 未包含在[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]。 如果你使用[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]，安装[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]通知服务安装时[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]通过选择**BAM 警报提供程序 SQL Notification Services**选项下**其他软件**上**组件安装**安装向导页。  
+    >  SQL Server 中不包括通知服务。 通过选择安装 BizTalk Server 时的情况下安装 SQL Server Notification Services **BAM 警报提供程序 SQL Notification Services**选项下**其他软件**上**组件安装**安装向导页。  
   
-2.  若要创建 BAM 通知运行 C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol 分布式环境中的每台计算机上的服务注册-name bamalerts-服务器\<服务器名称 >-服务-serviceusername \<alertsuseraccount >-servicepassword \<passwd > 从命令提示符。  
+2.  若要创建 BAM 通知运行 C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol 分布式环境中的每台计算机上的服务注册-name bamalerts-服务器\<服务器名称\>-服务-serviceusername \<alertsuseraccount\> -servicepassword \<passwd\>从命令提示符。  
   
-3.  编辑每台计算机上为分布式 Notification Services 配置的 BAM 基础结构配置文件。 若要获取配置文件，请使用**bm.exe get-config FileName:\<输出文件 >**命令。  
+3.  编辑每台计算机上为分布式 Notification Services 配置的 BAM 基础结构配置文件。 若要获取配置文件，请使用**bm.exe get-config FileName:\<输出文件\>**命令。  
   
 4.  编辑配置文件以引用分布式 Notification Services 环境中的服务器：  
   
@@ -80,11 +83,11 @@ ms.lasthandoff: 09/20/2017
     <Property Name="DistributorServerName">PFIDWYUK</Property>  
     ```  
   
-5.  使用 bm.exe 更新-config FileName:\<配置文件 > 更新 BAM 配置。  
+5.  使用 bm.exe 更新-config FileName:\<配置文件\>更新 BAM 配置。  
   
 6.  重新启动分布式环境中所有计算机上的 Notification Services。  
   
- 在多计算机环境中安装 BAM 的详细信息，请参阅[相关到 BizTalk Server 2013 的指南安装](http://go.microsoft.com/fwlink/p/?LinkID=269582)和[安装和配置 BAM （业务活动监视） 在多台计算机环境](http://go.microsoft.com/fwlink/p/?LinkID=208597)。  
+ 在多计算机环境中安装 BAM 的详细信息，请参阅[安装和配置 BAM （业务活动监视） 在多计算机环境中](http://go.microsoft.com/fwlink/p/?LinkID=208597)。  
   
 ### <a name="moving-the-bam-primary-import-database"></a>移动 BAM 主导入数据库  
  有时，可能必须移动 BAM 主导入数据库，例如，在升级硬件或扩展操作时。 若要移动该数据库，需要执行备份和还原操作。 有关此过程的详细信息，请参阅[备份和还原 BAM](../core/backing-up-and-restoring-bam.md)。  
@@ -105,9 +108,9 @@ ms.lasthandoff: 09/20/2017
  可通过 BAM 管理实用程序的所有命令的说明，请参阅[BAM 管理实用工具](../core/bam-management-utility.md)。 有关使用 BAM 管理实用程序来处理 BAM 定义的示例，请参阅[管理 BAM 动态基础结构](../core/managing-the-bam-dynamic-infrastructure.md)。  
   
 ## <a name="configuring-multiple-biztalk-groups-to-reference-a-single-bam-database"></a>将多个 BizTalk 组配置为引用单个 BAM 数据库  
- 配置为使用新的或现有的 BAM 时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组中，你可以配置要使用相同的 BAM 数据库已正在由另一个使用的组[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组。  若要以这种方式配置 BAM，必须执行以下任务：  
+ 在配置时 BAM 以使用新的或现有的 BizTalk Server 组，可以配置要使用相同的 BAM 数据库供另一个 BizTalk Server 组中已有的组。  若要以这种方式配置 BAM，必须执行以下任务：  
   
--   从现有的 BAM 主导入数据库使用获取配置信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置向导。 这包括服务器和数据库的名称。 请注意复选框的状态。 确保获取 BAM 工具和 BAM 警报页的配置信息。  
+-   从现有 BAM 主导入数据库使用 BizTalk 服务器配置向导中获取的配置信息。 这包括服务器和数据库的名称。 请注意复选框的状态。 确保获取 BAM 工具和 BAM 警报页的配置信息。  
   
 -   为新组配置 BAM，然后输入与已为目标 PIT 配置的信息完全相同的信息。 为新组输入配置信息时，将使用从现有组收集的所有信息来配置该新组，唯一的不同是必须将 BAM 警报用户保留为空。  
   
@@ -127,10 +130,10 @@ ms.lasthandoff: 09/20/2017
   
 -   从新服务器运行以下 BAM 管理器命令：  
   
-     **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿变为 update.xls >**  
+     **bm.exe 更新 livedataworkbook-名称：\<到 update.xls livedata 工作簿\>**  
   
     > [!NOTE]
-    >  你还可以指定新的服务器名称和/或 BAM 主导入数据库名称： **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿变为 update.xls > [-Server:\<服务器 >] [-数据库：\<数据库 >]**  
+    >  你还可以指定新的服务器名称和/或 BAM 主导入数据库名称： **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿变为 update.xls\> [-Server:\<服务器\>] [-数据库：\<数据库\>]**  
   
 -   也可以在 Excel 中更新 Excel 工作簿：  
   
@@ -150,9 +153,9 @@ ms.lasthandoff: 09/20/2017
 ### <a name="cleaning-up-the-alerts-chronicle-table"></a>清理 Alerts Chronicle 表  
  如果配置 BAM 警报，则为创建的每个活动视图都创建一个 SQL 作业。 将使用以下模板命名该作业：  
   
- bam_\<视图名称 > _\<活动视图 > _DelAlertHistJob  
+ bam_\<视图名称\>_\<活动视图\>_DelAlertHistJob  
   
- 此作业负责清除审核数据的指定实例警报\<活动视图 > Bam_Metadata_AlertChronicle 表中。 如果您对特定的活动视图定义了实例警报，则每次触发警报时，就会向该表添加一个新行。  
+ 此作业负责清除审核数据的指定实例警报\<活动视图\>Bam_Metadata_AlertChronicle 表中。 如果您对特定的活动视图定义了实例警报，则每次触发警报时，就会向该表添加一个新行。  
   
  您可以手动运行此作业以便清理该表，或者可以根据您的应用程序或环境的需要计划此作业的运行时间。  
   

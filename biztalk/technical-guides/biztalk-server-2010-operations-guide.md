@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 886dc607f0d133392b522a13ec15026a0f421f40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5078cdc0a4b2d28e81daf2247cb0f1f35b3d6288
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-operations-guide"></a>BizTalk Server 2010 操作指南
 欢迎使用 Microsoft® BizTalk® Server 2010 操作指南。 我们创建了本指南为实现和管理 BizTalk 解决方案，尤其是 IT 专业人员的中所涉及的任何人宝贵的资源。  
@@ -24,13 +24,13 @@ ms.lasthandoff: 09/20/2017
  若要下载本指南中 chm、 pdf、 或 docx 窗体的副本，请转到[Microsoft BizTalk Server 2010 操作指南 》](http://go.microsoft.com/fwlink/?LinkId=212652) (http://go.microsoft.com/fwlink/?LinkId=212652)。  
   
 ## <a name="which-versions-of-biztalk-server-does-the-guide-cover"></a>本指南涵盖的 BizTalk Server 的版本？  
- 本指南适用于可[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]提供使用快速启动的操作的准备情况的信息来帮助你和你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。  
+ 本指南适用于 BizTalk Server，可并提供操作的准备情况信息来帮助你开始使用你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。  
   
 > [!NOTE]
 >  若要查看操作指南[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]，请参阅[http://go.microsoft.com/fwlink/?LinkID=130458](http://go.microsoft.com/fwlink/?LinkID=130458)。  
   
 ## <a name="where-do-i-start"></a>其中开始？  
- 我们组织根据规划、 部署和管理的功能方面指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。 因此可以根据这些功能的特性来读取它。 但是，意识到，清单将最发现中的信息之后[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Operations Guide 中，我们已分类以便于可访问性下表中的文档中的所有清单。  
+ 我们组织根据规划、 部署和管理的功能方面指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。 因此可以根据这些功能的特性来读取它。 但是，意识到，清单将最发现在 BizTalk Server 操作指南中的信息后，我们已分类以便于可访问性下表中的文档中的所有清单。  
   
 |||  
 |-|-|  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
 |-   [清单： BizTalk Server 入门](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)<br />-   [清单： 配置 Windows Server](~/technical-guides/checklist-configuring-windows-server.md)<br />-   [清单： 配置 Internet Information Services](~/technical-guides/checklist-configuring-internet-information-services.md)<br />-   [清单： 配置 SQL Server](../technical-guides/checklist-configuring-sql-server.md)<br />-   [清单： 配置 BizTalk Server](~/technical-guides/checklist-configuring-biztalk-server.md)|-   [清单： 会提供高可用性容错或负载平衡](~/technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)<br />-   [清单： 提高可用性与灾难恢复](~/technical-guides/checklist-increasing-availability-with-disaster-recovery.md)|  
 |**监视、 测试和故障排除**|**性能和维护**|  
 |-   [清单： 监视操作的准备情况](~/technical-guides/checklist-monitoring-operational-readiness.md)<br />-   [清单： 维护和故障排除 BizTalk Server 数据库](../technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)<br />-   [清单： 测试操作的准备情况](~/technical-guides/checklist-testing-operational-readiness.md)<br />-   [清单： 监视与 Operations Manager 2007 的 BizTalk Server](~/technical-guides/checklist-monitoring-biztalk-server-with-operations-manager-2007.md)<br />-   [清单： 监视 SQL Server](~/technical-guides/checklist-monitoring-sql-servers.md)|维护相关清单：<br /><br /> -   [清单： 执行日常维护检查](~/technical-guides/checklist-performing-daily-maintenance-checks.md)<br />-   [清单： 执行每周维护检查](~/technical-guides/checklist-performing-weekly-maintenance-checks.md)<br />-   [清单： 执行每月的维护检查](~/technical-guides/checklist-performing-monthly-maintenance-checks.md)<br /><br /> 性能相关的清单：<br /><br /> -   [清单： 执行每周性能检查](~/technical-guides/checklist-performing-weekly-performance-checks.md)<br />-   [清单： 执行每月性能检查](~/technical-guides/checklist-performing-monthly-performance-checks.md)|  
-|**对于其他重要任务的清单**||  
+|**其他重要任务清单**||  
 |-   [清单： 部署应用程序](~/technical-guides/checklist-deploying-an-application.md)<br />-   [清单： 导出绑定到另一个应用程序](~/technical-guides/checklist-exporting-bindings-from-one-application-to-another.md)<br />-   [清单： 更新程序集](~/technical-guides/checklist-updating-an-assembly.md)<br />-   [清单： 更新 BizTalk 应用程序中的项目](~/technical-guides/checklist-updating-artifacts-in-a-biztalk-application.md)|-   [清单： 更新使用的并行版本控制的应用程序](~/technical-guides/checklist-updating-an-application-using-side-by-side-versioning.md)<br />-   [清单： 更新业务流程使用的并行版本控制](~/technical-guides/checklist-updating-an-orchestration-using-side-by-side-versioning.md)<br />-   [清单： 安装和配置证书](../technical-guides/checklist-installing-and-configuring-certificates.md)<br />-   [清单： 规划的安全环境中的操作](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md)|  
   
  如果你正在执行以下任务，您可以开始使用相关章节：  

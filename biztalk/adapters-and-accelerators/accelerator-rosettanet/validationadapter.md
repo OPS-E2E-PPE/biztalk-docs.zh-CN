@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fd80934cef17f930f5dc587bbdbf3f4b87c67e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a325a561017c6efaf6d6aefe2e271c834c13a363
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validationadapter"></a>ValidationAdapter
 该 ValidationAdapter 示例演示了如何对响应方公用流程中的消息运行特殊验证规则。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 本身在发送或接收管道以及业务流程中执行验证。 如果要执行其他验证，可以创建验证适配器。 其他验证可以包括无法使用 XSD 实现的跨字段验证规则或业务特定的验证规则。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
   
  由于 ValidationAdapter 由公用业务流程使用，因此，ValidationAdapter 运行时使用的凭据与该业务流程的宿主 BizTalk 主机服务的凭据相同。  
   
- ValidationAdapter 示例位于\<*驱动器*>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本 > RosettaNet\SDK\ValidationAdapter 快捷键。  
+ ValidationAdapter 示例位于\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\ 快捷键ValidationAdapter。  
   
 ## <a name="demonstrates"></a>演示  
  ValidationAdapter 示例演示如何验证服务内容中的电子邮件地址。 该示例实现 `IValidateRNIFMessageParts` 接口。 如果电子邮件地址的格式不正确，它将返回 `RNIFException`。 XML 文档**preambleToValidate**， **serviceHeaderToValidate**， **deliveryHeaderToValidate**，和**serviceContentToValidate**定义验证。  

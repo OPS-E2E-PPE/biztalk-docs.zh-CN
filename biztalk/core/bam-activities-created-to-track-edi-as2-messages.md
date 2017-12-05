@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f255f2bb71ecef857860fdd5c512f4320b35cc95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7da7ac08a8f26e21b2c648670730db136392471
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a>BAM 活动跟踪 EDI AS2 消息的创建
-[!INCLUDE[prague](../includes/prague-md.md)]包括 BAM 活动已创建用于 EDI 和 AS2 报告的状态。 这些活动可确定在状态报告中显示的数据。 本主题介绍了其中定义的 BAM 活动和字段，以及为 BAM 活动中的某些字段定义的枚举值。  
+BizTalk Server 包括 BAM 活动已创建用于 EDI 和 AS2 报告的状态。 这些活动可确定在状态报告中显示的数据。 本主题介绍了其中定义的 BAM 活动和字段，以及为 BAM 活动中的某些字段定义的枚举值。  
   
  您可以通过创建自定义 BAM 活动来创建自定义状态报告。 自定义活动可以基于某一种标准活动。 还可以通过查询 BizTalkDTADb 数据库中的 EdiMessageContent 表，来显示自定义状态报告中的消息内容。 有关详细信息，请参阅下面的“查询 EdiMessageContent 表”部分。  
   
@@ -81,4 +81,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [如何将数据存储用于 EDI 和 AS2 状态报表](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [将使用的传出的批次的传入事务集相关联](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)
+ [将传入事务集与传出批相关联](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)

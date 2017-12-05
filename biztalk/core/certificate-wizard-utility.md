@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3acbb1198034e76bb1e0f45c0f9755ec6ac95d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b0341a11c45cd08f8476d48ea38cbf96bcc49c1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="certificate-wizard-utility"></a>证书向导实用工具
 使用 CertWizard 实用工具可以将证书从 .pfx 或 .cer 文件导入到专用或公用存储区中，以用于 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
- 在找不到证书向导的源代码**C:\Program Files\Microsoft BizTalk Server\<版本 > \SDK\Utilities\Certificate 向导**文件夹。 与 64 位操作系统和版本[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，则将为**C:\Program Files (x86) \Microsoft BizTalk Server\<版本 > \SDK\Utilities\Certificate 向导**文件夹。 若要使用证书向导，必须首先使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 来生成该向导。  
+ 在找不到证书向导的源代码**C:\Program Files\Microsoft BizTalk Server\<版本\>\SDK\Utilities\Certificate 向导**文件夹。 使用 64 位操作系统和版本的 BizTalk Server，则将为**C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\SDK\Utilities\Certificate 向导**文件夹。 若要使用证书向导将首先需要生成使用 Visual Studio。  
   
  CertWizard 将私钥从 .pfx 文件导入到个人存储区中，将公钥从 .cer 文件导入到公用存储区中。 导入私钥时，证书可为传入消息的解密证书或传出消息的签名证书。  
   
@@ -78,4 +78,4 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
     >  如果在命令提示符处提供的命令不完整，CertWizard 会提示你提供必需的值。  
   
 ## <a name="see-also"></a>另请参阅  
- [SDK 中的实用程序](../core/utilities-in-the-sdk.md)
+ [SDK 中的实用工具](../core/utilities-in-the-sdk.md)

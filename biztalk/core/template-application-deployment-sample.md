@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f32e9432800249e6cbc64d36e281fb564648f78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 315a685f0e289d60e3db9dfbe77bae5a7e2b19f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="template-application-deployment-sample"></a>模板（应用程序部署示例）
 本主题介绍如何使用“模板”示例来进行应用程序部署。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹，，如下所示：  
   
- *\<示例路径 >*\Application Deployment\Template  
+ *\<示例路径\>*\Application Deployment\Template  
   
  如前所述，本示例包括下列两个文件：  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
      例如：  
   
-     设置日志文件 ="*\<示例路径 >*\ApplicationDeployment\Templates\SampleLogOut.txt"  
+     设置日志文件 ="*\<示例路径\>*\ApplicationDeployment\Templates\SampleLogOut.txt"  
   
 ### <a name="to-create-a-new-application"></a>新建应用程序  
   

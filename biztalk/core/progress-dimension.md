@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c6044cd77532c012ddd534bd2b70be8eaaffb09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2e4764071beb2aa94aac738e8f1cec2377dd1d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="progress-dimension"></a>进度维度
 可以使用进度维度来按照 BAM 活动所到达的里程碑对这些活动进行分组。 此功能通过示例得到了最好的说明。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  在**进度里程碑**框**新进度里程碑**对话框框中，键入层次结构设计的最高层进度里程碑的名称。 有关正在运行的示例中，你需要键入`Received`。  
   
-7.  选择对应于进度里程碑，业务里程碑，然后单击**确定**。 对于正在运行的示例中，你将选择**Received (\<活动名称 >)**。  
+7.  选择对应于进度里程碑，业务里程碑，然后单击**确定**。 对于正在运行的示例中，你将选择**Received (\<活动名称\>)**。  
   
 8.  在**新维度**对话框中，单击**新阶段**。  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
 11. 在**进度里程碑**框**新进度里程碑**对话框框中，键入第一级里程碑之一的名称。 我们将使用的示例中，您需要键入`Approved`。  
   
-12. 在**业务里程碑**下拉列表框中，选择对应于进度里程碑，业务里程碑，然后单击**确定**。 对于正在运行的示例中，你将选择**已批准 (\<活动名称 >)**。  
+12. 在**业务里程碑**下拉列表框中，选择对应于进度里程碑，业务里程碑，然后单击**确定**。 对于正在运行的示例中，你将选择**已批准 (\<活动名称\>)**。  
   
 13. 重复前面的三个步骤以添加相同的进度阶段内的任何其他里程碑。  
   

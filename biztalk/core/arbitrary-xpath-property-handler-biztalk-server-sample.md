@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3ce40931caaf8f247afeacdae48721f31a7d99b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意 XPath 属性处理程序 （BizTalk Server 示例）
 任意 XPath 属性处理程序（[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 示例）演示了如何编写自定义管道组件以升级提交到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 XML 文档中的特定属性。 您可以使用示例中包含的功能创建自定义常规组装器和拆装器组件以评估 XPath 表达式。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  DocInstance.xml 由 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收端口检索并由称为“任意 XPath 属性处理程序”的自定义管道组件进行处理。  
   
-2.  任意 XPath 属性处理程序组件将升级所有\<价格 > 和\<数量 > 采购订单架构中定义任意的 XPath 表达式作为元素。 XPath 表达式还包含与 PO 文档根元素的不明确的子元素一起使用的位置构造。  
+2.  任意 XPath 属性处理程序组件将升级所有\<价格\>和\<数量\>采购订单架构中定义任意的 XPath 表达式作为元素。 XPath 表达式还包含与 PO 文档根元素的不明确的子元素一起使用的位置构造。  
   
 3.  任意 XPath 属性处理程序组件可确定消息类型并将其升级到消息上下文中。  
   
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 7.  新 PO 文档将写入 \Output 目录中的文件。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<示例路径\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/20/2017
  本示例设计为在同一台计算机上运行有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 环境中运行。 如果您的环境与此配置不匹配，则您必须修改任意 XPath 属性处理程序（[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 示例）以指向 SQL Server 计算机。  
   
 > [!IMPORTANT]
->  Setup.bat 假定 Microsoft Windows 安装目录为 C:\Windows。 如果 Windows 安装在其他目录中，则必须修改 ArbitraryXPathPropertyHandler.csproj 文件以反映 Microsoft.BizTalk.Component.Utilities 程序集在全局程序集缓存中的位置。 在引用元素中，更改\<SYSTEMROOT > 到 Windows 的安装位置 (例如，C:\WINNT\\)。  
+>  Setup.bat 假定 Microsoft Windows 安装目录为 C:\Windows。 如果 Windows 安装在其他目录中，则必须修改 ArbitraryXPathPropertyHandler.csproj 文件以反映 Microsoft.BizTalk.Component.Utilities 程序集在全局程序集缓存中的位置。 在引用元素中，更改\<SYSTEMROOT\>到 Windows 的安装位置 (例如，C:\WINNT\\)。  
   
 ```  
 <Reference  
@@ -84,13 +84,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，将目录更改 (**cd**) 的以下文件夹：  
   
-     *\<示例路径 >*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<示例路径\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   生成任意 XPath 属性处理程序管道组件。  
   
-    -   要为其生成的副本管道组件*\<安装路径 >*\Pipeline 组件的目录。  
+    -   要为其生成的副本管道组件*\<安装路径\>*\Pipeline 组件的目录。  
   
     -   创建发送端口和接收端口。  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  将采购订单 (PO) 文件 DocInstance.xml 复制到 \Input 目录。 接收端口提取该 PO 文件，并将 XML 数据发送到任意 XPath 属性处理程序管道组件。  
   
-2.  查看 \Output 目录中的内容。 请注意，创建了一个新文件，它包含复制到 \Input 目录的 DocInstance.xml 文件的所有信息。 文件中的差异在于现在\<TotalAmount > 元素中填入了采购订单的总金额。  
+2.  查看 \Output 目录中的内容。 请注意，创建了一个新文件，它包含复制到 \Input 目录的 DocInstance.xml 文件的所有信息。 文件中的差异在于现在\<TotalAmount\>元素填入采购订单的总金额。  
   
 ## <a name="comments"></a>注释  
  规范的 XPath 表达式是简单表达式，如"/ * [本地名称 （) = 元素名称和 namespaceURI() = http://MyUri.org'] /\*[本地名称 （) =' 元素-name'] / @\*[本地名称 = attribute name]"。  
@@ -139,4 +139,4 @@ ms.lasthandoff: 09/20/2017
 7.  将传出消息写入文件。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

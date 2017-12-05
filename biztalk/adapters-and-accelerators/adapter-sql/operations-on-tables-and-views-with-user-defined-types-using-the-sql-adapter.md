@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b09cc02f8f43b589da821924cfdd38bec52160e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa05cf28e267e84dd73ad1a3ffd753ee89febb71
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>对表和视图的用户定义的类型使用的 SQL 适配器操作
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在表或视图具有用户定义类型 (Udt) 的列上执行操作。 你可以使用标准的表操作 （插入、 更新、 删除和选择） 读取或写入数据列上 UDT 类型。 你还可以在此类表上执行存储的过程和函数。 但是，你需要执行某些任务，你可以使用该适配器上包含 UDT 列的表进行操作之前。 一旦你已执行这些任务，你可以使用为该适配器：  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
     |UDT 类型|程序集位置|  
     |--------------|----------------------------|  
     |Udt 随 SQL Server，例如 Geography|-请确保 Microsoft.SqlServer.Types.dll 添加到 GAC。<br />-请确保 SqlServerSpatial.dll 位于 System32 文件夹中。<br /><br /> 可以通过运行 SQL Server 安装程序并选择在计算机上安装这些 Dll**管理工具-基本**和**管理工具 – 完整**中**功能选择**向导页。|  
-    |不随 SQL Server 但由用户定义的 Udt|请确保 Udt 的相应程序集下有[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装位置。 有关[!INCLUDE[prague](../../includes/prague-md.md)]，这通常是\<安装驱动器 >: files\microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]。|  
+    |不随 SQL Server 但由用户定义的 Udt|请确保 Udt 的相应程序集下有[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装位置。 对于 BizTalk Server 中，通常这是\<安装驱动器\>: files\microsoft BizTalk Server。|  
   
 -   **执行操作使用时[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]**  
   

@@ -12,15 +12,15 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86c85f1a45dceb812fc805a66701653642d0ccb6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e4c329bce3ee8f9e2e4faf11a60e5e38a82ff467
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="create-custom-pipelines-to-process-json-messages"></a>创建处理 JSON 消息的自定义管道
 > [!NOTE]
->  本教程仅适用于 [!INCLUDE[prague](../includes/prague-md.md)]。  
+>  本教程仅适用于 BizTalk Server。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了可用于处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序中的 JSON 消息的管道组件。 在此步骤中，我们使用这些管道组件来创建自定义管道，在配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序时使用。  
   

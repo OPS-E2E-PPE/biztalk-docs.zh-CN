@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d362ae262c7b054bd86fda72f8aacd3b5ab1455
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5f00a0bfe14eeb7d4205973b3fef96e23026616
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>以编程方式创建 MSMQ 接收位置和发送端口
 本主题说明了如何使用 WMI 为 MSMQ 适配器创建端口或位置。  
@@ -53,7 +53,7 @@ objReceiveLocation["CustomCfg"] =
   
  CustomProps 元素中的标记的名称是该适配器用于这些属性的内部名称。  
   
- MSMQ 适配器在 CustomProps 标记的内部具有单个标记 AdapterConfig。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记字符串。 但是，编码标记:"&lt;"替换"\<"和"&gt;"替换">"。 例如， MSMQ 属性的适配器子集 XML 可能会如下所示：  
+ MSMQ 适配器在 CustomProps 标记的内部具有单个标记 AdapterConfig。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记字符串。 但是，编码标记:"&lt;"替换"\<"和"&gt;"替换"\>"。 例如， MSMQ 属性的适配器子集 XML 可能会如下所示：  
   
 ```  
 <Config>  
@@ -79,7 +79,7 @@ objReceiveLocation["CustomCfg"] =
 |maximumMessageSize|最大消息大小（以 KB 为单位）|  
 |password|密码|  
 |priority|消息优先级|  
-|队列|目标队列|  
+|queue|目标队列|  
 |recoverable|Recoverable|  
 |segmentationSupport|支持分段|  
 |sendBatchSize|批大小|  

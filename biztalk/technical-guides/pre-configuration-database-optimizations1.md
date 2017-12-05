@@ -12,17 +12,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c1333f956afc4411ff8b105c777214467155ae7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad75319054ced87d449ee50c8e0fea65ab108ade
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="pre-configuration-database-optimizations"></a>预配置数据库优化
 BizTalk Server 是极占用大量数据库的应用程序可能需要在创建 Microsoft SQL Server 中的最多 13 单独数据库。 由于 SQL Server 在任何 BizTalk Server 环境中所扮演的重要角色，它是一项极其重要，SQL Server 配置/优化以获得最佳性能。 如果 SQL Server 不优化很好地运行，然后使用 BizTalk Server 的数据库将成为瓶颈和 BizTalk Server 环境的整体性能将会降低。 本主题介绍在安装 BizTalk Server 并配置 BizTalk Server 数据库之前，应遵循的几个 SQL Server 性能优化。  
   
 ## <a name="set-ntfs-file-allocation-unit"></a>设置 NTFS 文件分配单元  
- SQL Server 将在其数据存储**扩展盘区**，这是组的八个 8k 页。 因此，若要优化磁盘性能，NTFS 分配单元大小设置为 64 KB 最佳做法文章预部署 I/O 最佳实践"在 SQL Server 的"磁盘配置最佳做法"部分中所述[http://go.microsoft.com/fwlink/？LinkId = 140818](http://go.microsoft.com/fwlink/?LinkId=140818)。 有关 SQL Server 页和区的详细信息请参阅[!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]联机丛书主题[了解页和区](http://go.microsoft.com/fwlink/?LinkId=148939)(超链接"http://go.microsoft.com/fwlink/?LinkId=148939"http://go.microsoft.com/fwlink/?LinkId=148939)。  
+ SQL Server 将在其数据存储**扩展盘区**，这是组的八个 8k 页。 因此，若要优化磁盘性能，NTFS 分配单元大小设置为 64 KB 最佳做法文章预部署 I/O 最佳实践"在 SQL Server 的"磁盘配置最佳做法"部分中所述[http://go.microsoft.com/fwlink/？LinkId = 140818](http://go.microsoft.com/fwlink/?LinkId=140818)。 有关 SQL Server 的详细信息页和区请参阅 SQL Server 联机丛书主题[了解页和区](http://go.microsoft.com/fwlink/?LinkId=148939)(超链接"http://go.microsoft.com/fwlink/?LinkId=148939"http://go.microsoft.com/fwlink/?LinkId=148939)。  
   
 ## <a name="database-planning-considerations"></a>数据库的规划注意事项  
  我们建议你托管你[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]快速存储 （例如，快速 SAN 磁盘或快速 SCSI 磁盘） 上的数据库。 我们建议而不是 RAID 5 RAID 10 (1 + 0)，因为 raid 5 是写入速度要慢。 较新的 SAN 磁盘具有非常大的内存缓存，在这些情况下，RAID 选择不是那么重要。 若要提高性能，数据库和其日志文件可以位于不同的物理磁盘。  
@@ -53,7 +53,7 @@ sp_configure ‘Min Server memory (MB)’,(min size in MB)
  为 SQL Server 设置的内存量之前，请通过减去所需的总物理内存从 Windows Server 的内存确定适当的内存设置。 这是内存的最大可以为 SQL Server 分配量。  
   
 > [!NOTE]  
->  如果该主机在运行 SQL Server 的计算机的 BizTalk Server 数据库也承载企业单一登录在主密钥服务器，然后你可能需要调整此值，以确保有足够的内存可用于运行 Enterprise 上单一登录服务。 它不是一种常见的做法，在 SQL Server 群集，以便提供高可用性的主密钥服务器上运行企业单一登录服务的群集的实例。 有关群集企业单一登录在主密钥服务器的详细信息，请参阅主题"如何群集主机密服务器"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]文档[http://go.microsoft.com/fwlink/?LinkID=106874](http://go.microsoft.com/fwlink/?LinkID=106874)。  
+>  如果该主机在运行 SQL Server 的计算机的 BizTalk Server 数据库也承载企业单一登录在主密钥服务器，然后你可能需要调整此值，以确保有足够的内存可用于运行 Enterprise 上单一登录服务。 它不是一种常见的做法，在 SQL Server 群集，以便提供高可用性的主密钥服务器上运行企业单一登录服务的群集的实例。 有关群集企业单一登录在主密钥服务器的详细信息，请参阅主题"如何群集主机密服务器"中在 BizTalk Serverdocumentation [http://go.microsoft.com/fwlink/?LinkID=106874](http://go.microsoft.com/fwlink/?LinkID=106874)。  
   
 ## <a name="split-the-tempdb-database-into-multiple-data-files-of-equal-size-on-each-sql-server-instance-used-by-biztalk-server"></a>将 tempdb 数据库拆分为多个大小相等的 BizTalk Server 使用的每个 SQL Server 实例上的数据文件  
  确保用于 tempdb 数据文件为相等的大小非常重要，因为按比例填充算法使用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]取决于数据文件的大小。 此算法将尝试确保[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]与成比例的可用空间的每个文件保留在该文件，以便到达几乎同时在其最大容量的填充。 如果数据文件创建不相等的大小，按比例填充算法将使用多个 GAM 分配，而无需分配所有的文件，从而与将创建多个数据文件的目的之间分配的最大文件。 Tempdb 数据库的数据文件数应配置为至少等于分配给 SQL Server 的处理器数。  

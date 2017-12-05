@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ea474e3717ec69dfe04261ba144a46350223856
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c2e4adac7c7d1503a49f68208e45e09f86b67ac
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-json-messages-using-biztalk-server"></a>使用 BizTalk Server 处理 JSON 消息
 > [!NOTE]
->  本教程仅适用于 [!INCLUDE[prague](../includes/prague-md.md)]。  
+>  本教程仅适用于 BizTalk Server。  
   
- 本教程说明了如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来处理 JSON 消息。 本教程使用 [!INCLUDE[prague](../includes/prague-md.md)] 中目前可用的自定义管道组件。 这些管道组件可在将 JSON 消息接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程中时将消息转换为 XML，并会在向外发送消息时将消息从 XML 转换为 JSON。  
+ 本教程说明了如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来处理 JSON 消息。 本教程将使用自定义管道组件，现已与 BizTalk Server。 这些管道组件可在将 JSON 消息接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程中时将消息转换为 XML，并会在向外发送消息时将消息从 XML 转换为 JSON。  
   
 ## <a name="what-does-this-tutorial-do"></a>本教程有什么作用？  
  为了说明 JSON 处理，我们将创建一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它将按给定顺序执行以下操作：  
@@ -40,13 +40,13 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [生成 XSD 架构的 JSON 消息](../core/generate-an-xsd-schema-for-json-message.md)  
+-   [为 JSON 消息生成 XSD 架构](../core/generate-an-xsd-schema-for-json-message.md)  
   
--   [创建自定义管道处理 JSON 消息](../core/create-custom-pipelines-to-process-json-messages.md)  
+-   [创建处理 JSON 消息的自定义管道](../core/create-custom-pipelines-to-process-json-messages.md)  
   
 -   [创建 BizTalk Server 业务流程](../core/create-a-biztalk-server-orchestration.md)  
   
--   [部署和测试应用程序](../core/deploy-and-test-the-application.md)  
+-   [部署并测试应用程序](../core/deploy-and-test-the-application.md)  
   
 ## <a name="see-also"></a>另请参阅  
  [BizTalk Server 教程](../core/biztalk-server-tutorials.md)

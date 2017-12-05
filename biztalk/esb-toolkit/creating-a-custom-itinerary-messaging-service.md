@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcf96e8f76a9d2a6ad51bac462c2da101812911d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f08168e69e26d56cb39fb5c05cc53c3cbb51202
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>创建自定义路线消息服务
 是的一部分的路线 framework[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持使用类实现的路线步骤执行**IMessagingService**执行路线的消息传递服务的接口。 当你想要进行负责执行以下的服务时，你可以实现自定义的消息传递服务：  
@@ -78,6 +78,6 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
 1.  与派生自的类创建一个程序集**IMessagingService;**中**执行**方法，包括所需能够修改消息或消息上下文 （如果有） 的所有逻辑。  
   
-2.  添加将项记入**itineraryServices**添加你的服务 Esb.config 文件节 **\<itineraryService >** GUID，则为具有元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。  
+2.  添加将项记入**itineraryServices**添加你的服务 Esb.config 文件节 **\<itineraryService\>**  GUID，则为具有元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。  
   
 3.  在全局程序集缓存中注册新的程序集。

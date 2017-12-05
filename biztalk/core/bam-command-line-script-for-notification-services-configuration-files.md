@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6950326994e99dcbc2ecff49a36f7441f3c219d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b22607193ed7c345388a6435e2d58c16b8986370
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-command-line-script-for-notification-services-configuration-files"></a>BAM 通知的命令行脚本服务配置文件
 管理员使用 ProcessBamNSFiles.vbs 脚本自定义 BAM 警报的 SQL Server Notification Services 的行为。 您可以使用该脚本获取 Notification Services 应用程序定义文件 (ADF) 和 Notification Services 配置文件。 可以对这些文件进行修改，然后使用该脚本来应用这些更改。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="get-command"></a>Get 命令  
  **用法**  
   
- **cscript ProcessBamNSFiles-获取\<配置文件路径 > \<ADF 文件路径 >\<主导入服务器 >\<主导入数据库 >**  
+ **cscript ProcessBamNSFiles-获取\<配置文件路径\> \<ADF 文件路径\>\<主导入服务器\>\<主导入数据库  \>**  
   
 |参数|Description|  
 |---------------|-----------------|  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="update-command"></a>Update 命令  
  **用法**  
   
- **cscript ProcessBamNSFiles-更新\<configfilepath > \<adffilepath > \<primaryimport 服务器 >\<主导入数据库 >**  
+ **cscript ProcessBamNSFiles-更新\<configfilepath\> \<adffilepath\>\<primaryimport 服务器\>\<主导入数据库  \>**  
   
 |参数|Description|  
 |---------------|-----------------|  

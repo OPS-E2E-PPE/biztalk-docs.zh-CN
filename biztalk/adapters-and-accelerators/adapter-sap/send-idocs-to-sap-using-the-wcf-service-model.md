@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbe77a313cf5913a33878ba82d9ed086936e2c98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d9d550887271e2ba54d858456347ea85825554e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="send-idocs-to-sap-using-the-wcf-service-model"></a>将 Idoc 发送到 SAP 使用 WCF 服务模型
 在内部，[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]将 Idoc 发送到 SAP 系统，通过调用两个以下 Rfc 之一：  
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
 public partial class IdocClient : System.ServiceModel.ClientBase<Idoc>, Idoc {  
   
-    public void SendIdoc(string idocData, ref System.Nullable\<System.Guid> guid) {…}  
+    public void SendIdoc(string idocData, ref System.Nullable\<System.Guid\> guid) {…}  
 }  
 ```  
   
@@ -189,7 +189,7 @@ namespace SapIdocStringClientSM
             try  
             {  
                 // Variable for the GUID  
-                System.Nullable\<System.Guid> adapterTxGuid;  
+                System.Nullable<System.Guid> adapterTxGuid;  
                 // string to hold the Idoc data  
                 string idocData;  
                 // string to hold the SAP transaction ID (TID)  

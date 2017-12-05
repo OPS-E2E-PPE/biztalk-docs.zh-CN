@@ -12,14 +12,14 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fcabebb1429fae8531753a8a3aede5595bb148f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3e98ac5f02363c02ff422f44397fbf1f0e3b4c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-regenerate-the-live-data-workbook"></a>如何重新生成实时数据工作簿
-在 BAM 实时数据工作簿丢失或损坏时，可使用 BAM 管理实用程序重新生成工作簿。 此过程在从 [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] 升级到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 时也非常有用，这是因为用于 [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] 的实时数据工作簿与 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 不兼容。  
+在 BAM 实时数据工作簿丢失或损坏时，可使用 BAM 管理实用程序重新生成工作簿。 从升级时，此过程也是有用[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]到 BizTalk Server 中，因为实时数据有关的工作簿[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]与 BizTalk Server 不兼容。  
   
  常规步骤如下所示：  
   
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 -   重新创建数据透视表。 由于 get-defxml 命令完成的 XML 检索仅包含活动和视图，因此必须使用用于 Excel 的 BAM 加载项重新创建数据透视表。  
   
--   重命名数据透视表。 如果要从 [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] 升级到 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]，则必须执行这一步骤。 这是必要自[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]，BAM 存储名称的 BAM 工作簿的两个集： 显示名称和内部名称。 在检索 BAM 定义时，XML 包含工作簿的内部名称。 必须重命名数据透视表，以确保实时数据工作簿可正确地连接到数据库。  
+-   重命名数据透视表。 此步骤是必需的如果要从升级[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]给 BizTalk Server。 这是必要自[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]，BAM 存储名称的 BAM 工作簿的两个集： 显示名称和内部名称。 在检索 BAM 定义时，XML 包含工作簿的内部名称。 必须重命名数据透视表，以确保实时数据工作簿可正确地连接到数据库。  
   
 -   使用 BAM 管理实用程序重新生成实时数据工作簿。  
   
@@ -61,12 +61,12 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开时检索的 BAM 定义，通过单击使用记事本创建 abc.xml 文件**启动**、 单击**运行**，键入记事本[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\abc.xml，，然后单击**确定**。  
   
-2.  找到\<标题 > 标记下\<BAMDefinition >\\< 扩展\>\\< OWC\>\\< PivotTableView\>\\<数据透视表\>\\< 数据透视视图\>\\< 标签\>。 此标记的内容是某个数据透视表的内部名称。 可以通过查找下一步中找到其他数据透视表报告的内部名称\<标题 > 标记。 打开**mynewbook.xls**并使用位于重命名你的数据透视表报告的名称。  
+2.  找到\<标题\>标记下\<BAMDefinition\>\\< 扩展\>\\< OWC\>\\< PivotTableView\> \\< 数据透视表\>\\< 数据透视视图\>\\< 标签\>。 此标记的内容是某个数据透视表的内部名称。 可以通过查找下一步中找到其他数据透视表报告的内部名称\<标题\>标记。 打开**mynewbook.xls**并使用位于重命名你的数据透视表报告的名称。  
   
 3.  保存已更新的工作簿。  
   
     > [!NOTE]
-    >  你必须遵循此过程，仅当您正在从升级[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。  
+    >  你必须遵循此过程，仅当您正在从升级[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]给 BizTalk Server。  
   
 ### <a name="to-regenerate-the-bam-live-data-workbook"></a>重新生成 BAM 实时数据工作簿  
   

@@ -17,14 +17,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a90090c55dcbb0f8e55296d2711d5e4b36cd346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e54a532d33e4f84eb5f1ecea67f957d415344a7c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="important-security-notes-for-the-business-rule-engine"></a>业务规则引擎的重要的安全注意事项
-本主题概括介绍了 Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 中已知的安全问题以及缓解这些安全风险所必须采取的步骤。  
+本主题总结了 Microsoft BizTalk Server 和缓解安全风险时必须执行的步骤中的已知的安全问题。  
   
 ## <a name="malicious-schema-input-causing-denial-of-service-attack"></a>导致拒绝服务攻击的恶意架构输入  
  在添加事实时，将根据与策略内所支持类型匹配的每个对象来验证每条规则。 假定策略中有一条规则根据一个选择器使用所传递架构中的某个元素。 在此情形下，如果与该选择器匹配的元素/属性的实例出现数千次，则会添加所有此类实例，这将导致性能下降，随后可能导致拒绝服务 (DoS)。  

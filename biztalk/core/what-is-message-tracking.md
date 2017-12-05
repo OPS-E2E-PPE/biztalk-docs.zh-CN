@@ -23,11 +23,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c898c2a30d883da4507957c62a0acb75e56a71b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d76a4bd4133906a7949fac9e63816168506f412
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-message-tracking"></a>什么是邮件跟踪？
 消息是一种电子形式的数据实例，通常在两个运行的业务流程或应用程序之间进行交换。 消息实例由消息正文、消息属性和元数据构成。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
  跟踪消息正文可以对所发送和接收的消息进行记录。 必须打开消息正文跟踪功能，才能在服务实例处理完成后保存消息。 在设置跟踪选项后，可能需要几分钟才能查看消息。  
   
 > [!IMPORTANT]
->  所有 MessageBox 数据库中都必须运行 SQL Server 代理服务。 TrackedMessages_Copy_\<MessageBoxName > 作业使消息正文可用于跟踪查询和 WMI。 若要有效地复制消息正文，它们在 MessageBox 数据库中保留和 TrackedMessages_Copy_ 定期复制到 BizTalk 跟踪 (BizTalkDTADb) 数据库\<MessageBoxName > 作业。 运行 SQL Server 代理服务是存档和清除进程得以正常运转的前提条件。  
+>  所有 MessageBox 数据库中都必须运行 SQL Server 代理服务。 TrackedMessages_Copy_\<MessageBoxName\>作业使消息正文可用于跟踪查询和 WMI。 若要有效地复制消息正文，它们在 MessageBox 数据库中保留和 TrackedMessages_Copy_ 定期复制到 BizTalk 跟踪 (BizTalkDTADb) 数据库\<MessageBoxName\>作业。 运行 SQL Server 代理服务是存档和清除进程得以正常运转的前提条件。  
   
  使用跟踪的消息可以提供回执确认、进行故障排除并对历史事务进行数据挖掘。 可以跟踪输入与输出端口、管道及业务流程中的消息正文。 使用 BizTalk Server 管理控制台、使用操作对象模型 (OM)（建议），或通过 Windows 管理规范 (WMI) 应用程序编程接口 (API)，可以恢复这些消息。  
   

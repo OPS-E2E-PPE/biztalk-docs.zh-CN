@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 428d2987465ff1fe09f01979bbe9036def6350b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ba0c156e2ad6ab0fcbccb5ba7629f63b0aa490e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>有关 SAP 中 SAPDiscoveredObjects.xml 文件
-如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将 SAPDiscoveredObjects.xml 文件通常情况下的复制\<安装驱动器 >: \program Files\MicrosoftShared\Adapters\SAP。 后的全新安装文件的内容[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，如下所示。  
+如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将 SAPDiscoveredObjects.xml 文件通常情况下的复制\<安装驱动器\>: \program 文件\Microsoft Shared\Adapters\SAP。 后的全新安装文件的内容[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，如下所示。  
   
 ```  
 <DiscoveredObjects>  
@@ -56,10 +56,10 @@ ms.lasthandoff: 09/20/2017
   
  `name`属性 < 服务器\>元素包含连接到使用 DDEX 插件的服务器的名称。 `user`和`client`属性 < 服务器\>元素分别包含的用户的名称和客户端编号。 `type`属性包含的一种用来连接到 SAP 系统的连接字符串 （A、 B 或 D）。 有关类型的连接字符串的详细信息，请参阅[SAP 连接字符串中读取有关数据提供程序类型](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)。  
   
- \<表 > 元素包含您添加使用的插件的表的名称。 同样， \<Rfc > 元素包含使用插件添加了 Rfc。 如果你连接到多个 SAP 服务器，另一个\<服务器 > 元素添加到 XML 文件中，并且相应的表和 Rfc 列出在\<表 > 和\<Rfc > 元素。  
+ \<表\>元素包含您添加使用的插件的表的名称。 同样， \<Rfc\>元素包含使用插件添加了 Rfc。 如果你连接到多个 SAP 服务器，另一个\<服务器\>元素添加到 XML 文件中，并且相应的表和 Rfc 列出在\<表\>和\<Rfc\>元素。  
   
 > [!NOTE]
 >  有关使用插件的 Visual Studio DDEX 的说明，请参阅[数据提供程序用于与插件 DDEX SAP](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-the-ddex-plug-in.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [有关.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

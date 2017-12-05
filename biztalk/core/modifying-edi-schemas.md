@@ -12,11 +12,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3336d472326dc5ceb8c17e30150039229c18cb77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de196288f3f1d4475e6859e2440e4b03b1e521dc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="modifying-edi-schemas"></a>修改 EDI 架构
 您可以修改 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 附带的现有 EDI 架构。 如果您和您的贸易合作伙伴对标准架构的修改达成一致，并且可能已更改相关的消息实现指南 (MIG) 文件，则可在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 的 BizTalk 编辑器中修改架构。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
 |向 HIPAA 文档添加触发器字段|您可以让 EDI 拆装器根据限定元素（称为触发器字段）为 HIPAA 文档中的一段内容创建唯一的 XML 记录。 必须指定描述段的属性和触发器值，从而为该段创建唯一的 XML 记录。 有关详细信息，请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md)。|  
 |向 X12 事务集添加分段|在向 X12 事务集添加新分段时，分段名称的前三个字符用作分段标识符。 因此，建议您命名分段时，前三个字符是唯一的。|  
 |向 HIPAA 事务集添加循环|在向 HIPAA 事务集添加新循环时，建议命名循环时名称中包括“Loop”。 循环的示例格式为“TS837_2010AB_Loop”。 **注意：**在循环中的第一个段是必需的 （段的 minOccurs 必须等于 1） 以避免多义性。|  
-|向 HIPAA 事务集添加“任何顺序循环”|当事务集包含具有不同语义的等效分段时，必须在 SubLoop 中字义这些分段。 与 XML 批注的 SubLoop \<xs:all > 允许等效线段以任意顺序出现。<br /><br /> 建议您在命名“任意顺序循环”时，在循环名称中包含“SubLoop”。 示例格式是"TS837Q1_2010A_SubLoop"**注意：**任何顺序循环的元素必须只出现一次在循环内。 同级 SubLoop 必须将最大出现次数设置为 1 以避免混乱。|  
+|向 HIPAA 事务集添加“任何顺序循环”|当事务集包含具有不同语义的等效分段时，必须在 SubLoop 中字义这些分段。 与 XML 批注的 SubLoop \<xs:all\>允许等效线段以任意顺序出现。<br /><br /> 建议您在命名“任意顺序循环”时，在循环名称中包含“SubLoop”。 示例格式是"TS837Q1_2010A_SubLoop"**注意：**任何顺序循环的元素必须只出现一次在循环内。 同级 SubLoop 必须将最大出现次数设置为 1 以避免混乱。|  
   
 ### <a name="to-modify-an-existing-edi-schema-in-biztalk-editor"></a>在 BizTalk 编辑器中修改现有 EDI 架构  
   
@@ -70,14 +70,14 @@ ms.lasthandoff: 09/20/2017
   
 5.  若要将自定义记录添加到架构中，右键单击控制台树中的架构编辑器中的记录节点，指向**插入架构节点**，然后单击**子记录**。 命名该记录，然后将该记录拖至该架构中的相应位置。 至少将一个数据元素添加到记录。 根据需要设置自定义记录的属性。  
   
-6.  对架构进行所需的更改后, 可以更改通过单击根节点适用于架构属性的目标命名空间 (\<架构 >)，然后将更改**目标 Namespace**属性。  
+6.  对架构进行所需的更改后, 可以更改通过单击根节点适用于架构属性的目标命名空间 (\<架构\>)，然后将更改**目标 Namespace**属性。  
   
 7.  保存该架构。  
   
 8.  通过右键单击解决方案资源管理器中的架构，并单击验证的架构**验证架构**。  
   
     > [!NOTE]
-    >  **验证架构**命令将验证 EDI 架构，因为**架构编辑器扩展**的根节点的属性 (\<架构 >) 设置为**EDI 架构编辑器扩展**。  
+    >  **验证架构**命令将验证 EDI 架构，因为**架构编辑器扩展**的根节点的属性 (\<架构\>) 设置为**EDI架构编辑器扩展**。  
   
 ### <a name="to-modify-annotation-properties-in-an-existing-edi-schema"></a>修改现有 EDI 架构中的批注属性  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 09/20/2017
     1.  在顶部的架构的 appinfo 批注，设置跨字段验证标志 (任一**X12ConditionDesignator_Check** X12 或 HIPAA 架构或**EdifactDependencyRule_Check**对于 EDIFACT架构） 到**是**。  
   
         > [!NOTE]
-        >  跨字段验证标志**是**默认情况下，为[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]HIPAA 架构。  
+        >  跨字段验证标志**是**默认情况下，BizTalk Server HIPAA 架构。  
   
     2.  在特定元素的批注中，为元素指定关系条件（X12 或 HIPAA）或依赖规则 (EDIFACT)。 有关这些设置的详细信息，请参阅[交叉字段段验证](../core/cross-field-segment-validation.md)。  
   

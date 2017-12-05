@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01765cc47b0d8eafffcf30160ce9ee6c840003d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec243c1d1ed1093241e4dc6120c3703fbf2e4542
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a>调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]使您能够在 Oracle E-business Suite 中执行请求集。 请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。 有关如何适配器支持请求集的详细信息，请参阅[对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|请求组|公共\<返回类型 >\<请求集名称 > (param 1，param 2，...)|  
+|请求组|公共\<返回类型\>\<请求设置名称\>(param 1，param 2，...)|  
   
  例如，下面的代码演示方法签名，用于生成 WCF 客户端类**reqset_singlestage**请求组。  
   

@@ -22,11 +22,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff8a48a05f310db2d11eeddd5a0082132bbe193
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88e6a2aa02decf1e4ed9c4a9838077be0c3b97b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a>SelectiveBindingImport（应用程序部署示例）
 本主题介绍如何使用 SelectiveBindingImport 示例。 将某应用程序导入不同的目标环境时，可以使用本示例脚本将不同的绑定应用到此应用程序。 如要从存储在网络共享位置上的绑定文件导入绑定，则可以使用此方法。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
  本示例演示如何使用 BizTalk 应用程序 .msi 文件中包含的后续处理脚本选择性地从网络共享位置导入绑定文件。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 你可以查找下面的示例文件夹和文件下的*\<示例路径 >*\Application Deployment\SelectiveBindingImport:  
+ 你可以查找下面的示例文件夹和文件下的*\<示例路径\>*\Application Deployment\SelectiveBindingImport:  
   
 -   Develop（文件夹）  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-run-the-sample"></a>运行示例  
   
-1.  运行**从 Build.Bat *\<示例路径 >*\Application Deployment\CreateApp**目录。 这将创建中的以下文件*\<示例路径 >*\Application Deployment\CreateApp\Dlls 文件夹： Schemas.dll、 Maps.dll 和 Orchestrations.dll。  
+1.  运行**从 Build.Bat *\<示例路径\>*\Application Deployment\CreateApp**目录。 这将创建中的以下文件*\<示例路径\>*\Application Deployment\CreateApp\Dlls 文件夹： Schemas.dll、 Maps.dll 和 Orchestrations.dll。  
   
 2.  **创建应用程序。** 在 BizTalk Server 管理控制台中，创建应用程序，如中所述[如何创建应用程序](../core/how-to-create-an-application.md)。  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9763e55c44fc3ea45ab93127ffae8c9c742f0dc9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e44d3a100cdaefe04cf9d3aedfa8cf969811fc5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包简介
 说明的体系结构和内容的 Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 文档还演示了如何应用来开发企业应用程序启用灵活、 更安全的企业服务总线 (ESB) 体系结构模式和可重用的服务和快速单位的现有服务分成若干个新的端到端业务流程。  
@@ -33,21 +33,24 @@ ms.lasthandoff: 09/20/2017
   
  **高级表示形式由企业服务总线体系结构提供的连接**  
 
-\<！---与旧的链接的旧文本
-## <a name="the-industry-view-of-esb"></a>ESB 该行业视图  
- 行业供应商、 系统集成商和独立的源提供了有关 ESB 设计、 体系结构、 基础结构，以及实现的信息来源。  
+<!---  Old text with old links
+## The Industry View of ESB  
+ There are many sources of information about ESB design, architecture, infrastructure, and implementation available from industry suppliers, system integrators, and independent sources.  
 -->
-\<!---    
- IBM 作为系统定义 ESB，"...enables 企业能够对同时减少正在集成的应用程序的复杂性的集成进行全面、 灵活、 使用和一致的方法。 由于复杂和不同的特性的业务需求，ESB 统一面向消息的 evolutional 进展，事件驱动的和服务面向集成应用程序和服务的方法。" IBM 描述与好处"..分隔应用程序是逻辑和集成任务，因此数量、 大小和复杂性的集成接口，可以减少 IT 资产.greater 重用"以及的能力"...add 或更改的服务，只需极少现有 IT 环境中; 中断降低成本和风险涉及随着业务的变化和新的机会出现"。 有关详细信息，请参阅[WebSphere 软件](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958)) IBM Web 站点上。  
+<!---    
+ IBM defines ESB as a system that "...enables a business to make use of a comprehensive, flexible, and consistent approach to integration while also reducing the complexity of the applications being integrated. Due to the complex and varying nature of business needs, ESB is an evolutional progression that unifies message oriented, event driven and service oriented approaches for integrating applications and service." IBM describes the advantages as "...greater reuse of IT assets by separating application logics and integration tasks, so you can reduce the number, size, and complexity of integration interfaces," and the ability to "...add or change services with minimal interruption to existing IT environment; reduce cost and risk involved as business changes and new opportunities arise." For more information, see [WebSphere software](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958))on the IBM Web site.  
 -->
-\<！---与旧链接 Sonic 解决方案提供 ESB，全面检查讨论的原则方面和 IT 的旧文本和业务好处。 这些主题描述了 ESB 的要求:"若要将旧和新的集成，面向服务的体系结构 (SOA) 需要一种可以连接任何 IT 资源，任何基础结构其技术或部署任何位置。" 有关详细信息，请参阅[企业服务总线 (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) Sonic 解决方案 Web 站点上。  
+<!---    Old text with old links
+ Sonic Solutions provide a comprehensive examination of ESB, discussing the principle aspects, and the IT and business benefits. They describe the requirement for ESB: "To integrate old and new, service-oriented architecture (SOA) needs an infrastructure that can connect any IT resource, whatever its technology or wherever it is deployed." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) on the Sonic Solutions Web site.  
 -->
-\<！---与旧链接 TIBCO 软件旧文本定义为 ESB"...a 基于标准的通信层中的面向服务的体系结构 (SOA)，使服务可用于跨多个通信协议 [] 简化服务部署和管理，并将升级服务异类环境中的重复使用。" 这些建议，以便提供这些功能，ESBs"...support 均是开放式标准和专有技术，包括 Web 服务和基于 UDDI 注册表，才能发现和发布服务，Java 消息服务 (JMS) 和其他广泛部署消息传递协议、 基于标准的 (XML) 转换和基本的邮件路由。" 有关详细信息，请参阅[企业服务总线 (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) TIBCO Web 站点上。  
+<!---    Old text with old links
+ TIBCO Software define ESB as "...a standards-based communication layer in a service- oriented architecture (SOA) that enables services to be used across multiple communication protocols [to] simplify service deployment and management, and promote service reuse in a heterogeneous environment." They suggest, in order to provide these capabilities, ESBs "...support both open standards and proprietary technologies, including Web services and UDDI-based registries to discover and publish services, Java Message Service (JMS) and other widely deployed messaging protocols, standards-based (XML) transformations, and basic message routing." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) on the TIBCO Web site.  
 -->
-\<！---与书籍，企业服务总线的说明中的旧链接的旧文本作者 David Chappell 指出"而不是符合中心辐射体系结构的传统的企业应用程序集成产品，ESB 提供高度分布式的方法集成。" 他将添加"...使用唯一功能，以允许各个部门或业务单位来生成 out 增量备份，可以理解的区块，但仍然可以将连接在一起维护其自己的本地控制和自主性，其集成项目每个集成项目到更大、 更具有全局性集成构造或网格。" 有关详细信息，请参阅 David Chappell 企业服务总线：  
+<!---    Old text with old links
+ In the description of his book, Enterprise Service Bus, author David Chappell states that "Rather than conform to the hub-and-spoke architecture of traditional enterprise application integration products, ESB provides a highly distributed approach to integration." He adds "...with unique capabilities that allow individual departments or business units to build out their integration projects in incremental, digestible chunks, maintaining their own local control and autonomy, while still being able to connect together each integration project into a larger, more global integration fabric, or grid." For more information, see Enterprise Service Bus by David Chappell:  
 -->
-\<！---与旧的链接的旧文本
--   Chappell，David。 企业服务总线。 Sebastopol，CA: O'Reilly 媒体，inc.2004.  
+<!---    Old text with old links
+-   Chappell, David. Enterprise Service Bus. Sebastopol, CA: O'Reilly Media, Inc. 2004.  
 -->
 
   
@@ -56,24 +59,24 @@ ms.lasthandoff: 09/20/2017
   
  本部分提供的简介[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并包括以下主题：  
   
--   [BizTalk ESB 工具包的概述](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB 工具包概述](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
   
--   [BizTalk ESB 工具包的内容](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB 工具包内容](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
   
  本文档还包括以下主题各节：  
   
--   [Getting Started with BizTalk ESB 工具包](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB 工具包入门](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
   
--   [重要的方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)  
+-   [主要方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)  
   
--   [创建使用路线设计器的路线](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
+-   [使用路线设计器创建路线](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
   
 -   [BizTalk ESB 工具包示例应用程序](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
   
 -   [修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
   
--   [管理 BizTalk ESB 工具包](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
+-   [BizTalk ESB 工具包管理](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
   
--   [SOA 监管集成](../esb-toolkit/soa-governance-integration.md)  
+-   [SOA 管理集成](../esb-toolkit/soa-governance-integration.md)  
   
 -   [故障排除](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)

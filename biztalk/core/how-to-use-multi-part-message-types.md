@@ -25,11 +25,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f87f210c4b0d2969edc9ddfa27b1d8494310eb6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4e4a07b88e832d99f586d10cdf8af4dbea3af3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-multi-part-message-types"></a>如何使用多个部分消息类型
 每条消息都具有多部分消息类型，该消息类型描述由零个或多个消息部分构成的消息结构。 这些部分由 XML 架构定义 (XSD) 语言架构或 .NET 类定义。 您可以定义自己的多部分消息类型，或使用现有的 .NET 类和架构。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  命名多部分消息类型和所提供的消息部分。  
   
-     如果多个部分消息类型需要多个消息部分，你可以通过分配到名称添加其他部分\<新建 > 消息部件。  
+     如果多个部分消息类型需要多个消息部分，你可以通过分配到名称添加其他部分\<新建\>消息部件。  
   
 4.  将每个消息部分与一个类型相关联，如 .NET 类或架构。  
   

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3f0835c6d83efc9db91f5c1d63e91f4c143399d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 11c77b7b28c65c4743998f7d4c54d9c7cd48437f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-an-a4swift-receive-location"></a>创建 A4SWIFT 接收位置
 你必须创建[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]接收位置来启用从 SWIFT 通过网络接收到消息[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]下, 图中所示。 接收位置接收平面文件消息的入站的文件文件夹。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |接收端口|单向端口|  
 |传输类型|FILE|  
 |地址 URI|你想要接收消息的文件夹名称|  
-|文件掩码|\*.*\<扩展 >*，其中\<*扩展*> 是的传入的扩展名为平面文件消息|  
+|文件掩码|\*.*\<扩展\>*，其中\<*扩展*\>是传入的扩展名为平面文件消息|  
 |接收处理程序|BizTalkServerApplication|  
 |接收管道|[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]接收你创建的管道|  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  如果此文件夹不存在，则可以创建使用**新建文件夹**命令。  
   
-12. 在文件传输属性对话框中，在**文件掩码**框中，输入  **\*。\<*扩展*>**，其中\<*扩展*> 是的传入的扩展名平面文件消息，例如**.txt**。 单击 **“确定”**。  
+12. 在文件传输属性对话框中，在**文件掩码**框中，输入  **\*。\<*扩展*\>**，其中\<*扩展*\>是传入的平面文件的扩展名消息，如作为**.txt**。 单击 **“确定”**。  
   
 13. 在接收位置属性对话框中，确保**BizTalkServerApplication**为输入**接收处理程序**框。  
   

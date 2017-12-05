@@ -12,18 +12,18 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b26c483568e1ceb05679d7548721c1cce818fde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 69659359af123af7d9239241128cae06934d9a54
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-designer-extensibility-sample"></a>运行设计器扩展性示例
 设计器扩展性示例使用两个示例扩展程序来演示如何提供设计时配置选项的自定义解析程序和路线的服务。  
   
  **若要运行设计器扩展性示例**  
   
-1.  启动 [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
+1.  启动 Visual Studio。  
   
 2.  在 Visual Studio 中，依次指向**新建**上**文件**菜单，，然后单击**项目**。  
   

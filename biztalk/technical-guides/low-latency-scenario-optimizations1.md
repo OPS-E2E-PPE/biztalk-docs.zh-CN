@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2957888253826845ea9a941ad7fce8fd7a2ed7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12f16f67f1c161f74e6a9179db8c85f48b5b3e14
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="low-latency-scenario-optimizations"></a>低延迟方案优化
 默认情况下，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对吞吐量，而不是低延迟进行了优化。 下列优化已应用到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]测试方案用于本指南。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 >  这些优化将提高延迟，但可能在执行此操作对整体吞吐量一些成本。  
   
 ## <a name="increase-the-biztalk-server-host-internal-message-queue-size"></a>增加的 BizTalk Server 主机内部消息队列大小  
- 每个 BizTalk 主机有其自己的内部内存中队列。 增加此队列从 100 到 1000，以提高性能的低延迟方案的默认值的大小。 有关修改的内部消息队列大小的值的详细信息，请参阅"如何为修改默认主机限制设置"中[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在帮助[http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225)。  
+ 每个 BizTalk 主机有其自己的内部内存中队列。 增加此队列从 100 到 1000，以提高性能的低延迟方案的默认值的大小。 有关修改的内部消息队列大小的值的详细信息，请参阅"如何为修改默认主机限制设置"在 BizTalk Server 帮助在[http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225)。  
   
 ## <a name="reduce-the-maxreceiveinterval-value-in-the-admserviceclass-table-of-the-biztalk-server-management-database"></a>减小 BizTalk Server 管理数据库的 adm_ServiceClass 表中的 MaxReceiveInterval 值  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用轮询机制从 Messagebox 中其主机队列接收消息。 **MaxReceiveInterval** BizTalk 管理 (BizTalkMgmtDb) 数据库 adm_ServiceClass 表中的值是以每个 BizTalk 主机实例将等待的毫秒为单位的最大值之前它轮询 MessageBox。 Adm_ServiceClass 表包含以下服务类型的记录包含：  

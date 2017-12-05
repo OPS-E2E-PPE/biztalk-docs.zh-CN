@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c910a72f3e5ef39bb2e07e410f484e8c5cbececa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46d087c44cac350df2d58c880303668b5c3e0c24
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-importing-public-and-private-certificates"></a>步骤 3： 导入公共和私有证书
 在此步骤中，你在中创建将证书导入[步骤 2： 创建公钥和私有证书和 #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)到 Contoso 和 Fabrikam 计算机。 每台计算机将导入自己的私用证书和对方组织的公用证书。  
@@ -34,9 +34,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  Contoso 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到 **\<** *驱动器***>: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK**然后按**Enter**。  
+2.  在命令提示符下，将移到 **\<** *驱动器***\>: files\microsoft BizTalk\<版本\>快捷键RosettaNet\SDK**然后按**Enter**。  
   
-3.  在命令提示符处，键入**CertWizard /Privatekey"\<***驱动器***>: \Certs\Contoso 私有 Encryption.pfx"**，然后按**输入**。  
+3.  在命令提示符处，键入**CertWizard /Privatekey"\<***驱动器***\>: \Certs\Contoso 私有 Encryption.pfx"**，然后按**输入**。  
   
 4.  在**请输入证书文件的密码**提示符下，键入**mysecret**，然后按**Enter**。  
   
@@ -55,21 +55,21 @@ ms.lasthandoff: 09/20/2017
   
 1.  Contoso 计算机上，单击**启动**，单击**运行，**类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到*\<驱动器 >***: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK**然后按**Enter**.  
+2.  在命令提示符下，将移到*\<驱动器\>***: files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK** ，然后按**Enter**。  
   
-3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器 >***: \Certs\Fabrikam 公共 Encryption.cer"**，然后按**输入**。  
+3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Fabrikam 公共 Encryption.cer"**，然后按**输入**。  
   
 4.  为 Fabrikam Public Signature.cer 证书重复步骤 3。  
   
 ### <a name="to-import-the-fabrikam-private-certificates-on-the-fabrikam-computer"></a>在 Fabrikam 计算机上导入 Fabrikam 私用证书  
   
-1.  复制以下文件从 Contoso 的计算机向\<驱动器 >: Fabrikam 计算机上的 \Certs 文件夹： Contoso 公共 Encryption.cer、 Contoso 公共 Signature.cer、 Fabrikam 私有 Encryption.pfx 和 Fabrikam 私有 Signature.pfx。  
+1.  复制以下文件从 Contoso 的计算机向\<驱动器\>: Fabrikam 计算机上的 \Certs 文件夹： Contoso 公共 Encryption.cer、 Contoso 公共 Signature.cer、 Fabrikam 私有 Encryption.pfx 和 Fabrikam 私有Signature.pfx。  
   
 2.  Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-3.  在命令提示符下，将移到*\<驱动器 >***: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK**然后按**Enter**.  
+3.  在命令提示符下，将移到*\<驱动器\>***: files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK** ，然后按**Enter**。  
   
-4.  在命令提示符处，键入**CertWizard /Privatekey"***\<驱动器 >***: \Certs\Fabrikam 私有 Encryption.pfx"**，然后按**输入**。  
+4.  在命令提示符处，键入**CertWizard /Privatekey"***\<驱动器\>***: \Certs\Fabrikam 私有 Encryption.pfx"**，然后按**输入**。  
   
 5.  在**请输入证书文件的密码**提示符下，键入**mysecret**，然后按**Enter**。  
   
@@ -88,11 +88,11 @@ ms.lasthandoff: 09/20/2017
   
 1.  Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符下，将移到*\<驱动器 >***: files\microsoft BizTalk\<版本 > Accelerator for RosettaNet\SDK**然后按**Enter**.  
+2.  在命令提示符下，将移到*\<驱动器\>***: files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK** ，然后按**Enter**。  
   
-3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器 >***: \Certs\Contoso 公共 Encryption.cer"**，然后按**输入**。  
+3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Contoso 公共 Encryption.cer"**，然后按**输入**。  
   
 4.  为 Contoso Public Signature.cer 证书重复步骤 3。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 4： 启用安全套接字在 IIS 中的层](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)
+ [步骤 4：在 IIS 中启用安全套接字层](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)

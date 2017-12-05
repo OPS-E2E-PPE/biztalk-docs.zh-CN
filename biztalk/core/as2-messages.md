@@ -12,17 +12,17 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09c2d2d922b9a7ed8a9dfd1ea4c64c369d0e9d2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d54d05a459eb6fef772add6d4bb77f0269fa0ba8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="as2-messages"></a>AS2 消息
 本主题介绍了 AS2 消息，包括其结构、其上下文属性及其标头。  
   
 ## <a name="structure-of-an-as2-message"></a>AS2 消息的结构  
- 在[!INCLUDE[prague](../includes/prague-md.md)]，AS2 消息的构成根据[RFC 4130"MIME 基于安全对等业务数据交换使用 HTTP，适用性语句 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID = 184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
+ 在 BizTalk Server 中 AS2 消息的构成根据[RFC 4130"MIME 基于安全对等业务数据交换使用 HTTP，适用性语句 2 (AS2)](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID = 184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
   
  AS2 消息的基本结构由 HTTP 消息内带有特定于 AS2 的附加标头的 MIME 格式组成。 下面的 HTTP、 AS2 和 MIME 标头的消息的性质取决于消息的类型：  
   

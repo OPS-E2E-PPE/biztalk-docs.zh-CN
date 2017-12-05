@@ -12,11 +12,11 @@ caps.latest.revision: "43"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3d10bd82fa17501920150c6324695ae1cc9834b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc699e4317437305d3ebfba6b5b839f90c527f31
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties"></a>了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现几个绑定属性。 通过设置这些属性，可以控制某些适配器的行为。 本部分介绍公开的绑定属性[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 它还演示如何访问它们通过使用.NET 编程或通过设置属性[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]物理端口绑定。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
 |**InboundOperationType**|入站|指定是否想要执行**轮询**， **TypedPolling**， **XmlPolling**，或**通知**入站操作。 默认值是**轮询**。<br /><br /> 有关详细信息**轮询**， **TypedPolling**，和**XmlPolling**请参阅[进行轮询的支持](https://msdn.microsoft.com/library/dd788416.aspx)。 有关详细信息**通知**，请参阅[注意事项接收查询通知使用的 SQL 适配器](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)。|枚举|  
 |**UseDatabaseNameInXsdNamespace**|元数据|指定是否为一个特定的项目生成的 XSD 包含数据库名称。 将其设置为**True**包括数据库名称。 否则，将其设置为**False**。 默认值是**False**。<br /><br /> 这是单个应用程序希望在不同的数据库中执行操作上具有相同名称的项目具有不同的元数据的方案中十分有用。 如果命名空间中没有任何数据库名称，则生成的元数据将发生冲突。 设置此绑定属性可以包括数据库名称在命名空间，从而使其唯一。 下面是示例突出显示命名空间中的更改。<br /><br /> **UseDatabaseNameInXsdNamespace = False**<br /><br /> `http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee`<br /><br /> **UseDatabaseNameInXsdNamespace = True**<br /><br /> `http://schemas.microsoft.com/Sql/2008/05/TableOp/MyDatabase/dbo/Employee`<br /><br /> 请注意，当绑定属性设置为命名空间中包含的数据库名称**True**。|枚举|  
 |**AllowIdentityInsert**|杂项|指定适配器是否可以在 Insert 和 Update 操作期间插入为标识列的值。 将此属性设置为**True**插入或更新为标识列的值。 否则将其设置为**False**。 默认值是**False**。<br /><br /> **注意：**将此属性设置为**True**都会转换为适配器使用"`SET IDENTITY_INSERT <table_name> ON`"。 有关详细信息，请参阅[SET IDENTITY_INSERT (Transact SQL)](https://msdn.microsoft.com/library/ms188059.aspx)。 <br /><br /> 在使用此绑定属性，你必须考虑以下几点：<br /><br /> -适配器不会验证您要传递标识列的值。 例如，如果表具有的"标识种子"设置为 100 的标识列和"标识增量"设置为 1，并且适配器客户端传递一个值，假设 95，标识列，该适配器只是将传递对此值到 SQL Server。<br /><br /> -即使你设置**AllowIdentityInsert**到**True**，它不是强制的适配器客户端请求消息中指定的标识列的值。 如果为标识列显示一个值，该适配器将其传递到 SQL Server。 如果值不存在，则 SQL Server 将插入基于标识列的规范的值。|bool (System.Boolean)|  
-|**NotificationStatement**|通知 （入站）|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程 >) 用于注册 SQL Server 通知。 请注意，你必须明确指定的列名称在语句中此 SELECT 语句中所示。<br /><br /> `SELECT Employee_ID,Designation FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：**必须指定数据库对象的名称以及架构名称。 例如， `dbo.Employee`。<br /><br /> 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|string|  
+|**NotificationStatement**|通知 （入站）|指定的 SQL 语句 (SELECT 或 EXEC\<存储过程\>) 用于注册 SQL Server 通知。 请注意，你必须明确指定的列名称在语句中此 SELECT 语句中所示。<br /><br /> `SELECT Employee_ID,Designation FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：**必须指定数据库对象的名称以及架构名称。 例如， `dbo.Employee`。<br /><br /> 仅当指定的 SQL 语句更改的结果集时，适配器从 SQL Server 获取的通知消息。|string|  
 |**NotifyOnListenerStart**|通知 （入站）|指定适配器是否将通知消息发送到适配器客户端，通知的接收位置正在运行，侦听器启动时。 默认值是**True**。<br /><br /> 您收到类似于以下内容的通知消息：<br /><br /> `<?xml version="1.0" encoding="utf-8" ?> <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">   <Info>ListenerStarted</Info>    <Source>SqlBinding</Source>    <Type>Startup</Type>  </Notification>`|bool (System.Boolean)|  
 |**PolledDataAvailableStatement**|轮询 （入站）|指定执行以确定任何数据是否可用于轮询的特定表中的 SQL Server 数据库的 SQL 语句。 指定的语句必须返回的结果集行和列组成。 结果集的第一个单元中的值指示适配器是否执行为指定的 SQL 语句**PollingStatement**绑定属性。 如果结果的第一个单元包含一个正值，适配器执行的轮询语句。 下面是一些你可以为此绑定属性中指定的有效语句的示例：<br /><br /> -如果在指定的 SELECT 语句：<br /><br /> `SELECT COUNT(*) from <table_name>`<br /><br /> -如果您在指定的存储的过程，你的存储的过程可能被定义为：<br /><br /> `CREATE PROCEDURE <procedure_name>  AS BEGIN      SELECT COUNT(*) FROM <table_name> END GO`<br /><br /> 或<br /><br /> `CREATE PROCEDURE <procedure_name>  AS BEGIN      DECLARE @count int      SELECT @count = SELECT(*) FROM <table_name>      SELECT @count END GO`<br /><br /> 如果你使用存储的过程，则会指定**PolledDataAvailableStatement**作为`EXEC <procedure_name>`。<br /><br /> **重要说明：**该语句指定为此绑定属性不在内执行*启动的适配器*事务，并可能会多次调用执行实际轮询语句前 （即使执行的语句指示存在可用于轮询行）。|string|  
 |**PollingIntervalInSeconds**|轮询 （入站）|指定的时间间隔，以秒为单位，从该处[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]执行为指定的语句**PolledDataAvailableStatement**绑定属性。 默认值为 30 秒。 轮询间隔确定连续两次轮询之间的时间间隔。 如果在指定间隔内执行该语句，该适配器处于非活动状态的剩余时间的时间间隔内。|int (System.Int32)|  

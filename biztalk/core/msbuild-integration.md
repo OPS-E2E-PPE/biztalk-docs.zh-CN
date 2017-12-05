@@ -12,18 +12,18 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a0e6ff79fa266ada6761c22f5d6f508967e75d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 24c049af6869377363d90bca50c8091b15c8041d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="msbuild-integration"></a>MSBUILD 集成
-Visual Studio 使用 MSBUILD 项目文件格式来存储有关包括 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 项目在内的管理项目的生成信息，并且您可以在带有或不带有 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 的计算机上生成 BizTalk 项目。 本部分为您提供了关于此新增功能的详细信息。  
+Visual Studio 使用 MSBUILD 项目文件格式来存储有关包括 BizTalk 服务器项目的托管项目的生成信息并可以在计算机和不带生成 BizTalk 项目[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 本部分为您提供了关于此新增功能的详细信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [MSBUILD 与 Visual Studio 的集成](../core/msbuild-integration-with-visual-studio.md)  
+-   [与 Visual Studio 的 MSBUILD 集成](../core/msbuild-integration-with-visual-studio.md)  
   
 -   [独立 MSBUILD](../core/standalone-msbuild.md)  
   

@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 010c574c1c9c799d6235b9d10e3378b46c3d1548
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 842683d2eec04d77bad2b7726af0d687fae12884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="createapp-application-deployment-sample"></a>CreateApp（应用程序部署示例）
 本主题介绍如何使用 CreateApp 示例，该示例演示如何使用 BTSTask 命令行工具部署和取消部署 BizTalk 应用程序。 您可以使用本示例中包含的脚本等自动执行夜间生成过程，来部署和取消部署 BizTalk 应用程序。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
          C:\ScriptLog.txt  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 你可以在下的以下文件夹中找到示例文件*\<示例路径 >*\Application 部署\\:  
+ 你可以在下的以下文件夹中找到示例文件*\<示例路径\>*\Application 部署\\:  
   
 -   CreateApp（文件夹）  
   

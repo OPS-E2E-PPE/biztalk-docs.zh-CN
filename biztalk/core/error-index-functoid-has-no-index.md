@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8143442b9d77d6881efe2b64dfb7f5888ab2d466
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0159d308c9befc90590d281351409ba571921a53
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---index-functoid-has-no-index"></a>错误-索引 Functoid 不具有索引
 **错误代码**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **用户执行任何操作**  
   
- 为指示提供适当数量的索引输入参数**索引**functoid，其中的适当数量由的循环数**记录**其中的节点**字段**嵌套源架构中的节点。 若要创建索引输入的参数，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口，然后使用![](../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")按钮内**配置\<Functoid > Functoid**对话框中添加一个或多个常量输入的参数，其中第一个表示索引到循环的直接父**记录**节点和后续索引输入的参数表示较远的祖先循环**记录**节点。
+ 为指示提供适当数量的索引输入参数**索引**functoid，其中的适当数量由的循环数**记录**其中的节点**字段**嵌套源架构中的节点。 若要创建索引输入的参数，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口，然后使用![ ] (../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")按钮内**配置\<Functoid\> Functoid**对话框中添加一个或多个常量输入的参数，其中第一个到直接父表示索引循环**记录**节点和后续索引输入参数表示较远的祖先循环**记录**节点。

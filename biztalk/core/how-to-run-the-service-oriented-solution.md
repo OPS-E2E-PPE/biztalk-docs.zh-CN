@@ -17,11 +17,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27462716832631fc2a36d577b39e3ff5431b858b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35c33b914ecbb9f385e5546d100b7572b4b48b6a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-run-the-service-oriented-solution"></a>如何运行面向服务的解决方案
 以下步骤介绍了如何在单台计算机上运行和验证面向服务的解决方案。 启动付款跟踪模拟程序之后，可以使用 SOAP 或 MQSeries 传输发送请求（对于面向服务的解决方案的适配器和内联版本，需要使用不同的过程）。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-by-soap-transport-using-the-client-application-stub-version"></a>可以使用客户端应用程序 （存根 （stub） 版本） 的 SOAP 传输的发送请求  
   
-1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
+1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
   
 2.  键入中的任何字符**RequestType**， **RequestSource**，和**RequestID**文本框。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-using-the-client-application-adapter-version"></a>使用客户端应用程序发送请求（适配器版本）  
   
-1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*> \SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug 和，然后运行以下命令以启动 PaymentTracker模拟器：  
+1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*\>\SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug 和，然后运行以下命令以启动PaymentTracker 模拟器：  
   
      `BTSScnSOPaymentTracker.exe LastPaymentsInputQueue LastPaymentsOutputQueue <`*队列管理器名称* `> 5 [<` *通道定义*`>]`  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
     -   使付款跟踪模拟程序处于运行状态。  
   
-2.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
+2.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
   
 3.  在 BTSScnSOSimpleClient.exe 中，按以下步骤通过 SOAP 传输发送请求：  
   
@@ -103,13 +103,13 @@ ms.lasthandoff: 09/20/2017
   
     3.  选择**MQSeries**中**选择传输协议和参数**分组框。  
   
-    4.  类型\<*队列管理器名称*> 中**队列管理器**文本框。 QM_\<*您的计算机名称*> 默认值为\<*队列管理器名称*>。  
+    4.  类型\<*队列管理器名称*\>中**队列管理器**文本框。 QM_\<*您的计算机名称*\>默认值为\<*队列管理器名称*\>。  
   
     5.  类型`AdapterSOAInputQueue`中**输入队列**文本框。  
   
     6.  类型`AdapterSOAOutputQueue`中**输出队列**文本框。  
   
-    7.  类型\<*通道定义*> 中**通道定义**框。 S_\<*您的计算机名称*> /TCP/\<*您的计算机名称*> (1414) 是默认值为\<*通道定义*>。  
+    7.  类型\<*通道定义*\>中**通道定义**框。 S_\<*您的计算机名称*\>/TCP/\<*您的计算机名称*\>(1414) 是默认值为\< *通道定义*\>。  
   
     8.  类型`ZipCode`中**名称**下的文本框中**身份验证元素**，然后键入中的任何字符**值**文本框。  
   
@@ -125,7 +125,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-send-requests-using-the-client-application-inline-version"></a>发送请求，使用客户端应用程序 （内联版本）  
   
-1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*> \SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug，并运行以下命令，以启动 PaymentTracker模拟器：  
+1.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*\>\SDK\Scenarios\SO\BTSSoln\PaymentTracker\bin\Debug，并运行以下命令，以启动PaymentTracker 模拟器：  
   
      `BTSScnSOPaymentTracker.exe LastPaymentsInputQueue LastPaymentsOutputQueue <`*队列管理器名称* `> 5 [<` *通道定义*`>]`  
   
@@ -142,7 +142,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  适配器版本和内联版本使用同一个 MQSeries 队列，即 LastPaymentsOutputQueue。 为避免这两个版本之间发生争用情况，请禁用适配器版本对 MQSeries 队列的接收位置侦听。  
   
-3.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*> \SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
+3.  打开命令提示符下，将目录更改为\< *BizTalk Server 安装目录*\>\SDK\Scenarios\SO\BTSSoln\SimpleClient\bin\Release，并再次运行 BTSScnSOSimpleClient.exe。  
   
 4.  在 BTSScnSOSimpleClient.exe 中，按以下步骤通过 SOAP 传输发送请求：  
   
@@ -174,13 +174,13 @@ ms.lasthandoff: 09/20/2017
   
     3.  选择**MQSeries**中**选择传输协议和参数**分组框。  
   
-    4.  类型\<*队列管理器名称*> 中**队列管理器**文本框。 QM_\<*您的计算机名称*> 默认值为\<*队列管理器名称*>。  
+    4.  类型\<*队列管理器名称*\>中**队列管理器**文本框。 QM_\<*您的计算机名称*\>默认值为\<*队列管理器名称*\>。  
   
     5.  类型`InlineSOAInputQueue`中**输入队列**文本框。  
   
     6.  类型`InlineSOAOutputQueue`中**输出队列**文本框。  
   
-    7.  类型\<*通道定义*> 中**通道定义**框。 S_\<*您的计算机名称*> /TCP/\<*您的计算机名称*> (1414) 是默认值为\<*通道定义*>。  
+    7.  类型\<*通道定义*\>中**通道定义**框。 S_\<*您的计算机名称*\>/TCP/\<*您的计算机名称*\>(1414) 是默认值为\< *通道定义*\>。  
   
     8.  类型`ZipCode`中**名称**下的文本框中**身份验证元素**，然后键入中的任何字符**值**文本框。  
   
@@ -196,4 +196,4 @@ ms.lasthandoff: 09/20/2017
  [在安装之前面向服务解决方案](../core/before-installing-the-service-oriented-solution.md)   
  [如何安装服务的存根 （stub） 版本面向解决方案](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
  [如何安装内联和服务的适配器版本面向解决方案](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
- [服务开发人员计算机设置面向解决方案](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [面向服务的解决方案的开发人员计算机设置](../core/developer-machine-setup-for-the-service-oriented-solution.md)

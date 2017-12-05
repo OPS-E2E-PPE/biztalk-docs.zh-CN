@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c907ca8db5b9655d83889b75e7439de46ebeb59c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5b1a6d6b651ea07430f67667a17029dfe162d4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations（BizTalk Server 示例）
 示例演示如何创建接收位置接收中的位置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境使用**ExplorerOM**管理对象。 有关详细信息通常接收位置，请参阅[接收位置](../core/receive-locations.md)。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  此示例位于以下 SDK 的位置：  
   
- \<*示例路径*> \Admin\ExplorerOM\ReceiveLocations  
+ \<*示例路径*\> \Admin\ExplorerOM\ReceiveLocations  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员权限打开命令提示符。  
   
-2.  将更改为\<*示例*> \Admin\ExplorerOM\ReceiveLocations\bin\debug 目录。  
+2.  将更改为\<*示例*\>\Admin\ExplorerOM\ReceiveLocations\bin\debug 目录。  
   
 3.  运行 ReceiveLocations.exe。  
   
@@ -299,4 +299,4 @@ RP_Receive_ShipmentAgency_Ack
   
 ## <a name="see-also"></a>另请参阅  
  [接收位置](../core/receive-locations.md)   
- [管理员-ExplorerOM （BizTalk Server 示例文件夹中）](../core/admin-explorerom-biztalk-server-samples-folder.md)
+ [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

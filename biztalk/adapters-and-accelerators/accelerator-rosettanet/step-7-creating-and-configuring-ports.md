@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c93f7c07f92c7517dbc84403747da869e0d4ceb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44a9696f907928f31a740e4d8545567921a82df9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-creating-and-configuring-ports"></a>步骤 7： 创建和配置端口
 在此步骤中，您将创建和配置用于与业务流程进行通信的端口。 每个端口都具有类型、方向和绑定属性。 这些属性确定通信的方向和模式、发送或接收消息的位置以及通信方式。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在业务流程视图中，展开**类型**，展开**端口类型**，展开**ContosoSQLReqResponsePortName**，展开**Operation_1**，然后选择**请求**。  
   
-2.  在属性窗口中，选择**消息类型**属性中，展开**架构**，然后单击**\<选择从引用的程序集 >**。  
+2.  在属性窗口中，选择**消息类型**属性中，展开**架构**，然后单击**\<从引用的程序集选择\>**.  
   
 3.  在选择项目类型对话框中，单击**ContosoPriceAndAvailability**。  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  在业务流程视图中，在**Operation_1**，选择**响应**为**ContosoSQLReqResponsePortName**端口类型。  
   
-6.  在属性窗口中，选择**消息类型**属性中，展开**架构**，然后单击\<**选择从引用的程序集 >**。  
+6.  在属性窗口中，选择**消息类型**属性中，展开**架构**，然后单击\<**从引用的程序集选择\>**.  
   
 7.  在**选择项目类型**对话框中，单击**ContosoPriceAndAvailability**。  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
 7.  在**文件**菜单上，单击**保存所有**。  
   
 ## <a name="see-also"></a>另请参阅  
- [步骤 8： 构建和部署 Contoso 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)
+ [步骤 8：生成和部署 Contoso 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)

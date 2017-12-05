@@ -12,17 +12,17 @@ caps.latest.revision: "97"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbf374b4efb219f1221275819713787565a325b0
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 2d648db0f3a7c6ad4dccdbcc7555fc3c0727568c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>如何安装面向服务的解决方案的内联版本和适配器版本
 以下步骤将说明如何准备计算机以安装面向服务的解决方案的内联版本和适配器版本，以及如何在此计算机上安装该解决方案：  
   
 > [!NOTE]
->  - 面向的解决方案位于文件夹中的服务\< *BizTalk Server 安装文件夹*> \SDK\Scenarios\SO。  
+>  - 面向的解决方案位于文件夹中的服务\< *BizTalk Server 安装文件夹*\>\SDK\Scenarios\SO。  
 >  - 如果没有大型机可用于该解决方案，则可以修改端口绑定以使用存根 Web Services 来模拟挂起事务。 该 Web Services 将在本地生成事务以模拟大型机事务。  
   
 ##  <a name="step1"></a>准备计算机以安装服务面向解决方案的适配器和内联版本  
@@ -87,7 +87,7 @@ ms.lasthandoff: 10/17/2017
   
     -   `bm remove-all -DefinitionFile:ServiceLevelTracking.xml`  
   
-8.  在命令提示符下，将目录更改为\<*企业单一登录安装目录*>，然后运行以下命令：  
+8.  在命令提示符下，将目录更改为\<*企业单一登录安装目录*\>，然后运行以下命令：  
   
     -   `ssomanage -tickets no no`  
   
@@ -119,13 +119,13 @@ ms.lasthandoff: 10/17/2017
   
 1.  在本地计算机上安装 Windows Server IBM WebSphere MQ。  
   
-    1.  保留所有默认设置。 设置**默认配置**末尾**准备 WebSphere MQ 向导**。 队列管理器命名为 QM_\<*您的计算机名称*>。  
+    1.  保留所有默认设置。 设置**默认配置**末尾**准备 WebSphere MQ 向导**。 队列管理器命名为 QM_\<*您的计算机名称*\>。  
   
     2.  安装 Fix Pack 10 (CSD10)。 保留所有默认设置。  
   
 2.  安装 MQSeries 代理。  
   
-    1.  重新运行 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 安装程序。  
+    1.  重新运行 BizTalk Server 安装程序。  
   
     2.  上**程序维护**页上，选择**修改**，然后单击**下一步**。  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 10/17/2017
     > [!NOTE]
     >  **MQSeries 代理**安装适用于 Windows 的复选框仅在 IBM WebSphere MQ 后激活。  
   
-3.  打开**Visual Studio 命令提示符**，将目录更改为\< *IBM MQSeries 安装目录*> \bin 文件夹，然后运行以下命令：  
+3.  打开**Visual Studio 命令提示符**，将目录更改为\< *IBM MQSeries 安装目录*\>\bin 文件夹，然后运行以下命令：  
   
     -   `gacutil /i amqmdnet.dll`  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 10/17/2017
   
 #### <a name="create-the-mqseries-queues"></a>创建 MQSeries 队列  
   
-1.  打开 WebSphere MQ 资源管理器中，展开**队列管理器**，然后展开你要在其中创建队列的队列管理器。 通常情况下，队列管理器命名为 QM_\<*您的计算机名称*>。  
+1.  打开 WebSphere MQ 资源管理器中，展开**队列管理器**，然后展开你要在其中创建队列的队列管理器。 通常情况下，队列管理器命名为 QM_\<*您的计算机名称*\>。  
   
 2.  在 WebSphere MQ 资源管理器中，右键单击**队列**，指向**新建**，单击**本地队列**，然后创建的适配器版本的以下本地队列解决方案：  
   
@@ -359,7 +359,7 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.PendingTransactions  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\MFAccess\PendingTransactions  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\MFAccess\PendingTransactions  
   
      访问权限 = 读取，运行脚本  
   
@@ -379,7 +379,7 @@ ms.lasthandoff: 10/17/2017
   
      别名 = PendingTransactions  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\MFAccess\PendingTransactions  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\MFAccess\PendingTransactions  
   
      访问权限 = 读取，运行脚本  
   
@@ -400,13 +400,13 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
   
      访问权限 = 读取，运行脚本  
   
 2.  在**Internet Information Services (IIS) Manager**，展开**网站**，展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP，单击**属性**，，然后修改设置，如下所示：  
   
-    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool*> 你在"创建一个新的 IIS 应用程序的过程中创建池的挂起的事务 Web 服务"。  
+    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>你在"创建新的 IIS 的过程中创建应用程序池的挂起的事务 Web 服务"。  
   
     2.  在**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**. 单击**确定**退出。  
   
@@ -496,13 +496,13 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\BTSSoln\OrchProxy\Adapter  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\BTSSoln\OrchProxy\Adapter  
   
      访问权限 = 读取，运行脚本  
   
 3.  在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter，单击**属性**，，然后修改设置，如下所示：  
   
-    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool*> 你在上一步中创建。  
+    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>你在上一步中创建。  
   
     2.  在**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，选择**仅集成 Windows 身份验证启用**，然后清除其他**身份验证访问**复选框。 单击**确定**退出。  
   
@@ -512,13 +512,13 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Inline  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\BTSSoln\OrchProxy\Inline  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\BTSSoln\OrchProxy\Inline  
   
      访问权限 = 读取，运行脚本  
   
 5.  在**Internet Information Services (IIS) Manager**，展开**网站**，展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Inline，单击**属性**，，然后修改设置，如下所示：  
   
-    1.  上**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool*> 你刚创建。  
+    1.  上**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>你刚创建。  
   
     2.  单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，选择**仅集成 Windows 身份验证启用**，然后清除其他**身份验证访问**复选框。 单击**确定**退出。  
   
@@ -615,25 +615,25 @@ ms.lasthandoff: 10/17/2017
     >  SAPAdapterTimeout、PendingTransactionsAdapterTimeout 和 PaymentTrackingAdapterTimeout 值用于适配器版本中。 其余的值用于内联版本。  
   
     > [!NOTE]
-    >  你可以输入""（两个双引号） 有关标记的默认值\<用户指定 > 下表中。  
+    >  你可以输入""（两个双引号） 有关标记的默认值\<用户指定\>下表中。  
   
     |参数|默认值|Description|  
     |---------------|-------------------|-----------------|  
     |SAPAdapterTimeout|20000|对 SAP 后端的请求的最大超时值（毫秒）|  
     |SAPInlineTimeout|20000|对 SAP 后端的请求的最大超时值（毫秒）|  
-    |SAPInlineHostName|\<指定用户 >|SAP 后端标识符|  
-    |SAPInlineClientNumber|\<指定用户 >|SAP 客户端编号|  
-    |SAPInlineSystemNumber|\<指定用户 >|SAP 系统编号|  
-    |SAPInlineUserName|\<指定用户 >|用于连接到 SAP 后端的用户名|  
-    |SAPInlinePassword|\<指定用户 >|用于连接到 SAP 后端的密码|  
+    |SAPInlineHostName|\<指定用户\>|SAP 后端标识符|  
+    |SAPInlineClientNumber|\<指定用户\>|SAP 客户端编号|  
+    |SAPInlineSystemNumber|\<指定用户\>|SAP 系统编号|  
+    |SAPInlineUserName|\<指定用户\>|用于连接到 SAP 后端的用户名|  
+    |SAPInlinePassword|\<指定用户\>|用于连接到 SAP 后端的密码|  
     |PendingTransactionsAdapterTimeout|20000|对挂起事务服务器的请求的最大超时值（毫秒）|  
     |PendingTransactionsInlineTimeout|20000|对挂起事务服务器的请求的最大超时值（毫秒）|  
-    |PendingTransactionsInlineURL|https://\<*您的计算机名称*> /Microsoft.Samples.BizTalk.WoodgroveBank.PendingTransactions/PendTransWS.asmx|挂起事务服务的 URL。 \<*你的计算机名*> 必须匹配**公用名**中"创建证书请求"的过程。 您必须对不使用"localhost" \<*您的计算机名称*>。|  
+    |PendingTransactionsInlineURL|https://\<*您的计算机名称*\>/Microsoft.Samples.BizTalk.WoodgroveBank.PendingTransactions/PendTransWS.asmx|挂起事务服务的 URL。 \<*你的计算机名*\>必须匹配**公用名**中"创建证书请求"的过程。 您必须对不使用"localhost" \<*您的计算机名称*\>。|  
     |PendingTransactionsInlineSSOAffiliateApp|WoodgroveBank.PendingTransactions|挂起事务 SSO 应用程序名|  
     |PaymentTrackingAdapterTimeout|20000|对付款跟踪系统的请求的最大超时值（毫秒）|  
     |PaymentTrackingInlineTimeout|20000|对付款跟踪系统的请求的最大超时值（毫秒）|  
-    |PaymentTrackingInlineQManager|\<用户指定 > (通常 QM_\<*您的计算机名称*>)。|MQSeries 队列管理器名称|  
-    |PaymentTrackingInlineMQChannelDefinition|" "（需要输入两个双引号）。|如果为本地，则此项为空字符串，也可以为远程 MQ 服务器的格式化通道名称。 如果在配置 IBM WebSphere MQ 保留所有默认设置，通道定义将 S__\<*您的计算机名称*> /TCP/\<*您的计算机名称*> (1414)。|  
+    |PaymentTrackingInlineQManager|\<用户指定\>(通常 QM_\<*您的计算机名称*\>)。|MQSeries 队列管理器名称|  
+    |PaymentTrackingInlineMQChannelDefinition|" "（需要输入两个双引号）。|如果为本地，则此项为空字符串，也可以为远程 MQ 服务器的格式化通道名称。 如果在配置 IBM WebSphere MQ 保留所有默认设置，通道定义将 S__\<*您的计算机名称*\>/TCP/\<*您的计算机名称*\>(1414)。|  
     |PaymentTrackingInlineRequestQueue|LastPaymentsInputQueue|付款跟踪请求的 MQ 队列名称|  
     |PaymentTrackingInlineResponseQueue|LastPaymentsOutputQueue|付款跟踪响应的 MQ 队列名称|  
     |PaymentTrackingInlineSSOAffiliateApp|WoodgroveBank.PaymentTracker|付款跟踪 SSO 应用程序名|  
@@ -645,11 +645,11 @@ ms.lasthandoff: 10/17/2017
   
 9. 在命令提示符下运行 CreateInitialConfigInSSO.cmd。 它将创建 SSO Affiliate 应用程序、 SSO 配置存储应用程序和关联应用程序的用户映射。 然后，它将执行 SetConfigValuesInSSO.cmd，以便将配置值存储在 SSO 配置存储应用程序中。  
   
-10. 在命令提示符下，运行以下命令以设置挂起事务关联应用程序的用户凭据。 使用\< **DomainName**> 和\< **UserID**> 中的 PendTransUserMap.xml 定义\<WindowsDomain >\\<WindowsUserId\>。 此命令要求你输入此演练中所使用的外部用户的密码和 UserID。  
+10. 在命令提示符下，运行以下命令以设置挂起事务关联应用程序的用户凭据。 使用\< **DomainName** \>和\< **UserID** \>中为 PendTransUserMap.xml 定义\<WindowsDomain\> \\< WindowsUserId\>。 此命令要求你输入此演练中所使用的外部用户的密码和 UserID。  
   
     -   `ssomanage -setcredentials <WindowsDomain>\<WindowsUserId> WoodgroveBank.PendingTransactions`  
   
-11. 在命令提示符下，运行以下命令以设置付款跟踪关联应用程序的用户凭据。 使用\< **DomainName**> 和\< **UserID**> 中的 PmntTrckUserMap.xml 定义\<WindowsDomain >\\< WindowsUserId\>. 此命令要求你输入此演练中所使用的外部用户的密码和 PTUserID。  
+11. 在命令提示符下，运行以下命令以设置付款跟踪关联应用程序的用户凭据。 使用\< **DomainName** \>和\< **UserID** \>中为 PmntTrckUserMap.xml 定义\<WindowsDomain\> \\< WindowsUserId\>。 此命令要求你输入此演练中所使用的外部用户的密码和 PTUserID。  
   
     > [!NOTE]
     >  付款跟踪模拟程序不验证外部用户凭据。 可以为 PTUserID 输入任何密码。  
@@ -684,7 +684,7 @@ ms.lasthandoff: 10/17/2017
   
     -   替换所有出现的 __MQ_QMANAGER_NAME\_ \_具有 MQSeries 队列管理器名称。  
   
-    -   替换所有出现的 __PT_WS_SERVER_NAME\_ \_字符串中"\<地址 > https://\__PT_WS_SERVER_NAME\_\_"的服务器名称其中挂起的事务部署 web 服务。 服务器名称必须匹配**公用名**在步骤中，"若要配置 Web 服务器用于 SSL"。 不应使用“localhost”。  
+    -   替换所有出现的 __PT_WS_SERVER_NAME\_ \_字符串中"\<地址\>https://\__PT_WS_SERVER_NAME\_\_"的服务器名称其中 Pending部署事务 Web 服务。 服务器名称必须匹配**公用名**在步骤中，"若要配置 Web 服务器用于 SSL"。 不应使用“localhost”。  
   
     > [!NOTE]
     >  绑定文件 AdapterSOAOrchBindings.xml 为以下项使用存根 Web Services：  
@@ -720,13 +720,13 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
   
      访问权限 = 读取，运行脚本  
   
 2.  在**Internet Information Services (IIS) Manager**，展开**网站**，展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，然后修改的设置，如下所示使用**属性**对话框。  
   
-    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool*> 你在步骤中，"以在为 IIS 中创建的虚拟目录中创建解决方案"。  
+    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>创建在步骤中，创建虚拟目录在 IIS 中的解决方案"。  
   
     2.  在**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**. 单击**确定**退出。  
   
@@ -746,13 +746,13 @@ ms.lasthandoff: 10/17/2017
   
      别名 = Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions  
   
-     路径 = \< *BizTalk 安装目录*> \SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
+     路径 = \< *BizTalk 安装目录*\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
   
      访问权限 = 读取，运行脚本  
   
 2.  在**Internet Information Services (IIS) Manager**，展开**网站**，展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，，然后修改设置，如下所示：  
   
-    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool*> 你在步骤中，"以在为 IIS 中创建的虚拟目录中创建解决方案"。  
+    1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>创建在步骤中，创建虚拟目录在 IIS 中的解决方案"。  
   
     2.  在**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**. 单击**确定**退出。  
   
@@ -778,4 +778,4 @@ ms.lasthandoff: 10/17/2017
 ## <a name="see-also"></a>另请参阅  
  [在安装之前面向服务解决方案](../core/before-installing-the-service-oriented-solution.md)   
  [如何安装服务的存根 （stub） 版本面向解决方案](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
- [服务开发人员计算机设置面向解决方案](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [面向服务的解决方案的开发人员计算机设置](../core/developer-machine-setup-for-the-service-oriented-solution.md)

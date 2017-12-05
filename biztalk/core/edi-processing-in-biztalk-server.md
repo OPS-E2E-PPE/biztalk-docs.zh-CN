@@ -12,17 +12,17 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a91afb8542284b5c83b19886a417350aebbc0ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b68781707211922d7d29958f896608c87358c7c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-processing-in-biztalk-server"></a>BizTalk Server 中 EDI 处理
 本主题概述了 EDI 消息的接收端和发送端处理过程，以及贸易合作伙伴协议如何帮助实现 EDI 消息。  
   
 ## <a name="trading-partner-agreements-for-edi-processing"></a>用于 EDI 处理的贸易合作伙伴协议  
- 贸易合作伙伴协议在 [!INCLUDE[prague](../includes/prague-md.md)] 的 EDI 支持中扮演着重要角色。 大多数与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中 EDI 处理相关的配置和管理功能可通过配置业务配置文件之间的贸易合作伙伴协议来执行。 协议集中了处理各种属性（来自合作伙伴双方的特定业务配置文件）的常见双向消息。 协议基于为每个业务配置文件定义的协议设置构建。 可通过为将交换消息的每个业务配置文件定义属性来实现两个业务配置文件之间的贸易合作伙伴协议。 可为每个作为交换接收方的业务配置文件以及作为交换发送方的业务配置文件设置属性。 若要处理传入消息或生成传出消息，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要了解解析该消息的协议，以及适用于该消息的架构。 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定协议，它将使用 TPM 界面中为后备贸易合作伙伴协议定义的属性。  
+ 贸易合作伙伴协议在 BizTalk Server 中的 EDI 支持中扮演着关键作用。 大多数与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中 EDI 处理相关的配置和管理功能可通过配置业务配置文件之间的贸易合作伙伴协议来执行。 协议集中了处理各种属性（来自合作伙伴双方的特定业务配置文件）的常见双向消息。 协议基于为每个业务配置文件定义的协议设置构建。 可通过为将交换消息的每个业务配置文件定义属性来实现两个业务配置文件之间的贸易合作伙伴协议。 可为每个作为交换接收方的业务配置文件以及作为交换发送方的业务配置文件设置属性。 若要处理传入消息或生成传出消息，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要了解解析该消息的协议，以及适用于该消息的架构。 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定协议，它将使用 TPM 界面中为后备贸易合作伙伴协议定义的属性。  
   
  TPM 中有两组主要的编码协议设置：一组用于 EDIFACT 属性，另一组用于 X12 属性。 属性的两个集是密切并行的。 有关协议设置的详细信息，请参阅[协议设置](../core/protocol-settings.md)。 有关协议的详细信息，请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。 可在贸易合作伙伴管理 (TPM) 用户界面中设置协议设置和贸易合作伙伴协议。 TPM 屏幕处于**方**节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 您无须是开发人员即可在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中配置 EDI 处理。  
   
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 -   贸易合作伙伴协议查找和架构确定。  
   
     > [!NOTE]
-    >  在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，参与方定义还包括协议定义。 因此，当接收管道查找参与方属性时，它将从内部查找参与方定义中的协议定义，然后相应地处理这些消息。 对于 [!INCLUDE[prague](../includes/prague-md.md)]，由于参与方（或贸易合作伙伴）与贸易合作伙伴协议截然不同，因此接收管道将特别查找贸易合作伙伴协作。  
+    >  在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，参与方定义还包括协议定义。 因此，当接收管道查找参与方属性时，它将从内部查找参与方定义中的协议定义，然后相应地处理这些消息。 与 BizTalk Server 中，因为方 （或贸易合作伙伴） 不同于贸易合作伙伴协议，接收管道中寻找贸易合作伙伴协议专门。  
   
     > [!NOTE]
     >  如果禁用某个消息解析到的所有协议，则该消息将被挂起。 还会在“事件”日志中记录警告。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
 -   贸易合作伙伴协议查找和架构确定。  
   
     > [!NOTE]
-    >  在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，参与方定义还包括协议定义。 因此，当发送管道查找参与方属性时，它将从内部查找参与方定义中的协议定义，然后相应地处理这些消息。 对于 [!INCLUDE[prague](../includes/prague-md.md)]，由于参与方（或贸易合作伙伴）与贸易合作伙伴协议截然不同，因此发送管道将特别查找贸易合作伙伴协作。  
+    >  在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，参与方定义还包括协议定义。 因此，当发送管道查找参与方属性时，它将从内部查找参与方定义中的协议定义，然后相应地处理这些消息。 与 BizTalk Server 中，因为不同于贸易合作伙伴协议，方 （或贸易合作伙伴） 发送管道查找贸易合作伙伴协议专门。  
   
     > [!NOTE]
     >  如果禁用某个消息解析到的所有协议，则该消息将被挂起。  还会在“事件”日志中记录警告。  

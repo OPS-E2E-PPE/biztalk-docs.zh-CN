@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8ce53882b20f6615ef280a38eddc8c3e2ef7ea3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b0c88bdeb85b8ad493b85d2569061c35bd516e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stop-orchestration-biztalk-server-sample"></a>停止业务流程 （BizTalk Server 示例）
 停止业务流程示例演示如何停止 BizTalk Server 业务流程和对其取消登记，后者可选。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  本示例文件位于以下 SDK 位置：  
   
- \<*示例路径*> \Admin\WMI\Stop Orchestration\  
+ \<*示例路径*\>\Admin\WMI\Stop Orchestration\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -59,15 +59,13 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Admin\WMI\Stop Orchestration\VBScript\  
+     \<*示例路径*\>\Admin\WMI\Stop Orchestration\VBScript\  
   
 2.  使用 cscript 程序运行 StopOrch.vbs 文件，传递下列命令行参数，其中第三个参数是可选的：  
   
-    -   **\<**   
-         ***OrchestrationName* >。** 要停止的和选择取消登记的 BizTalk Server 业务流程的名称。  
+    -   **\<** ***OrchestrationName* \>。** 要停止的和选择取消登记的 BizTalk Server 业务流程的名称。  
   
-    -   **\<**   
-         ***AssemblyName* >。** 在其中部署指定业务流程的 BizTalk 程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***AssemblyName* \>。** 在其中部署指定业务流程的 BizTalk 程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
   
     -   **取消登记。** 用于指示除停止指定业务流程外还应取消登记该业务流程的可选文本字符串。  
   
@@ -89,4 +87,4 @@ ms.lasthandoff: 09/20/2017
  StopOrch.vbs 脚本文件包含详细注释，对其执行的操作进行进一步说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
 ## <a name="see-also"></a>另请参阅  
- [管理员-WMI （BizTalk Server 示例文件夹中）](../core/admin-wmi-biztalk-server-samples-folder.md)
+ [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 122d821754fb6df447067d18f6f5da02b79058e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5096539b86512e51756d3a872ff566872ff520f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-tables-that-contain-bfile-data-types"></a>对包含 BFILE 数据类型的表的操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]表和存储的过程中支持 BFILE 数据类型。 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |存储的过程|OUT 参数|字符串|表示要插入到 BFILE 列的文件的逻辑的 Oracle 目录路径<br /><br /> 例如 MYDIR/screen.jpg MYDIR 所在 Oracle 中的逻辑目录|  
 |存储的过程|INOUT PARAM|不支持|-|  
   
- 特殊操作`Read_<LOBColName>`BFILE 数据类型的表中还支持其中\<LOBColName > 是 LOB 列的名称表中。 `Update_<LOBColName>` BFILE 数据类型不支持操作。 适配器客户端或者可以使用更新操作。  
+ 特殊操作`Read_<LOBColName>`BFILE 数据类型的表中还支持其中\<LOBColName\>是 LOB 列的名称表中。 `Update_<LOBColName>` BFILE 数据类型不支持操作。 适配器客户端或者可以使用更新操作。  
   
 ## <a name="more-good-info"></a>良好的详细信息  
   

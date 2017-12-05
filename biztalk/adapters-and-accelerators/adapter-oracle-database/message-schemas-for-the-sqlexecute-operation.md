@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c0ee3d0905f5ee4205cb5f9e2357573bdbf55b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7c7efc6a59e9dd4c163388803763a7b90a13b31
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现强类型的项目在 LOB 系统中存在的元数据，并公开这些项目上的标准操作。 但是，有一些的情形其中的应用程序可能需要根据应用程序中的业务逻辑的任意 SQL 语句的执行。 例如，你可能希望：  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
  [PARAM_VAL_1] = 的第一个参数的值。  
   
- 每个\<PARAMETERDATA > 部分包含一组完整的\<参数 > 相匹配的架构中的元素\<PARAMETERSCHEMA > 部分。 \<PARAMETERSET > 可以包含多个\<PARAMETERDATA > 部分。 如果出现这种情况，SQL 语句执行多次，一次针对每个参数集。  
+ 每个\<PARAMETERDATA\>部分包含一组完整的\<参数\>相匹配的架构中的元素\<PARAMETERSCHEMA\>部分。 \<PARAMETERSET\>可以包含多个\<PARAMETERDATA\>部分。 如果出现这种情况，SQL 语句执行多次，一次针对每个参数集。  
   
 ## <a name="see-also"></a>另请参阅  
- [消息和用于 Oracle 数据库的 BizTalk Adapter 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [Oracle 数据库的 BizTalk 适配器的消息和消息架构](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

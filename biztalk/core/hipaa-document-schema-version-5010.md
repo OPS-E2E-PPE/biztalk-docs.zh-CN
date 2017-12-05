@@ -12,17 +12,17 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24d1528d5c35c15e777ce1540d42ea4b7066cea2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e464fc26e5a98edd8ee99dad159d5faa068998aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-document-schema-version-5010"></a>HIPAA 文档架构版本 5010
-美国部门的运行状况和公共服务部 (HHS) 宣布当前 HIPAA 版本 4010A1 替换版本 5010 上 2009 年 1 月 16 日的最后一个规则。 5010 新版 HIPAA 标准包括结构，前面的内容，技术中的改进和数据内容。 这些改进将减少，并消除数据中的多义性，同时还解决了几个以前不符合的业务需求。 [!INCLUDE[prague](../includes/prague-md.md)]提供对 HIPAA 版本 5010 支持。  
+美国部门的运行状况和公共服务部 (HHS) 宣布当前 HIPAA 版本 4010A1 替换版本 5010 上 2009 年 1 月 16 日的最后一个规则。 5010 新版 HIPAA 标准包括结构，前面的内容，技术中的改进和数据内容。 这些改进将减少，并消除数据中的多义性，同时还解决了几个以前不符合的业务需求。 BizTalk Server 提供对 HIPAA 版本 5010 的支持。  
   
 > [!NOTE]
->  [!INCLUDE[prague](../includes/prague-md.md)] 继续支持 HIPAA 版本 4010A1。  
+>  BizTalk Server 继续支持 HIPAA 版本 4010A1。  
   
 ## <a name="hipaa-5010-version-support"></a>HIPAA 5010 版本支持  
  为了让 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 支持 HIPAA 5010，引入了以下更改：  
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
   
 -   **支持 ICD 10**： 电子事务代码集用于的医疗保健数据传输。 版本 5010 可使用国际疾病分类 (ICD-10) 代码集，它在早期版本 4010A1 中是不受支持的。 ICD-10 用于识别索赔单、相关事务和临床报告中的各种诊断和手续。 使用 ICD-10 的优点有：可提供有关患者服务、诊断、治疗信息的更准确的数据，以及更全面的质量数据报告。  
   
--   **5010 997 中的新字段**: 997 功能确认架构提供的的现成通过[!INCLUDE[prague](../includes/prague-md.md)]引入了即 AK103、 AK203 和 AK41.3 的三个新可选字段。 EDI 引擎是能够处理传入 5010 997 消息中包含这些字段，但将不会生成传出 997 确认基于新的架构。  
+-   **5010 997 中的新字段**: 997 功能确认提供架构的-现成 BizTalk Server 通过引入了即 AK103、 AK203 和 AK41.3 的三个新可选字段。 EDI 引擎是能够处理传入 5010 997 消息中包含这些字段，但将不会生成传出 997 确认基于新的架构。  
   
- 先前存在一个 HIPAA 4010A1 架构的已知问题，即不会检查 X12_R 数据类型元素的最小和最大长度。 在 [!INCLUDE[prague](../includes/prague-md.md)] 中，此问题已得到解决，现在 HIPAA 5010 架构会验证 X12_R 数据类型元素的最小和最大长度。  
+ 先前存在一个 HIPAA 4010A1 架构的已知问题，即不会检查 X12_R 数据类型元素的最小和最大长度。 BizTalk Server 中解决此问题和 HIPAA 5010 架构验证的最小和最大长度 X12_R 数据类型的元素。  
   
 ## <a name="see-also"></a>另请参阅  
  [BizTalk Server 中的 HIPAA 支持](../core/hipaa-support-in-biztalk-server.md)   

@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e178faee3ed05d4d77eec8f4da182c7dcd21a67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7fd774848dec1ae54541e749a0cc551bf7c42d49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customcomponent-biztalk-server-sample"></a>CustomComponent （BizTalk Server 示例）
 CustomComponent 示例演示如何创建和使用修改流消息的自定义管道组件。 本示例还演示如何在管道设计器中对自定义管道组件进行配置。  
@@ -38,7 +38,7 @@ CustomComponent 示例演示如何创建和使用修改流消息的自定义管�
 4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将得到的文本消息写入位于特定文件夹的文件中。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*> \Pipelines\CustomComponent\  
+ \<*示例路径*\>\Pipelines\CustomComponent\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -62,13 +62,13 @@ CustomComponent 示例演示如何创建和使用修改流消息的自定义管�
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*> \Pipelines\CustomComponent  
+     \<*示例路径*\>\Pipelines\CustomComponent  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在以下文件夹中，为本示例创建输入 (In) 和输出 (Out) 文件夹：  
   
-         \<*示例路径*> \Pipelines\CustomComponent  
+         \<*示例路径*\>\Pipelines\CustomComponent  
   
     -   编译并将部署[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]此示例的项目。  
   
@@ -100,7 +100,7 @@ CustomComponent 示例演示如何创建和使用修改流消息的自定义管�
   
 1.  将文本文件 Input.txt 的副本粘贴到 In 文件夹中。  
   
-2.  查看在 Out 文件夹中创建的文本文件。该文件包含 Input.txt 文件的内容以及在 Input.txt 文件内容的开头（由接收管道）和末尾（由发送管道）插入的其他文本。 此文件的名称的格式是\< *MessageID*>.xml，其中 *\<MessageID >* GUID 生成以唯一标识消息。  
+2.  查看在 Out 文件夹中创建的文本文件。该文件包含 Input.txt 文件的内容以及在 Input.txt 文件内容的开头（由接收管道）和末尾（由发送管道）插入的其他文本。 此文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息.  
   
 ## <a name="comments"></a>注释  
  通过执行以下步骤，可以在管道设计器中查看预配置管道：  
@@ -114,4 +114,4 @@ CustomComponent 示例演示如何创建和使用修改流消息的自定义管�
 4.  单击中的 FixMsg 组件**预组建**设计图面上的阶段。 请注意， **AppendData**属性设置为**要中追加数据发送管道字符串**。  
   
 ## <a name="see-also"></a>另请参阅  
- [管道 （BizTalk Server 示例文件夹中）](../core/pipelines-biztalk-server-samples-folder.md)
+ [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

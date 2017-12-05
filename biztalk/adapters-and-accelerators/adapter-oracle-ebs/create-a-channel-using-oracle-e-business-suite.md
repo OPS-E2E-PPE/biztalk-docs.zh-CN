@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4273ab2dad26cee8f600ff3e502d88933d243e70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0f06a8f1e8b622574f20f331069d7ca280fc45c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-oracle-e-business-suite"></a>创建一个通道，使用 Oracle E-business Suite
 在 WCF 通道模型中，调用对 Oracle E-business Suite 操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]通过 WCF 通道。  
@@ -94,9 +94,9 @@ channel.Open();
  下面的代码演示使用前面示例的配置设置。 客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IOutputChannel"根据你想要创建的通道形状的种类。  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <oracleEBSBinding>  
                 <binding openTimeout="00:05:00" name="OracleEBSBinding" closeTimeout="00:01:00"  
@@ -122,7 +122,7 @@ channel.Open();
                 bindingConfiguration="OracleEBSBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -137,7 +137,7 @@ channel.Open();
   
 3.  创建一个绑定参数集合使用**BindingParameterCollection**类，然后设置凭据。  
   
-4.  创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel >**方法**OracleEBSBinding**。 作为此方法的参数之一指定 Oracle 连接 URI。  
+4.  创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel\>** 方法**OracleEBSBinding**。 作为此方法的参数之一指定 Oracle 连接 URI。  
   
 5.  打开侦听器。  
   

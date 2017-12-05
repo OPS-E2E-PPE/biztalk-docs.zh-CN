@@ -17,14 +17,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78eacae899dada5dd2de659d1599ca60676814d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e67044fbbf5809365475ecdc8e8b9a82d7a843bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-role-based-product"></a>基于角色的产品
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供适用于角色的用户的环境中功能和工具。 通过这些功能和工具可以实现快速开发、部署、操作、管理和业务使用。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供适用于角色的用户的环境中功能和工具。 通过这些功能和工具可以实现快速开发、部署、操作、管理和业务使用。  
   
 ## <a name="features-and-tools"></a>功能和工具  
  适用于开发人员工具集成到[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]® [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 开发人员可以在“解决方案资源管理器”中管理解决方案和项目，且可快速访问 BizTalk 设计时工具。  
@@ -39,4 +39,4 @@ ms.lasthandoff: 09/20/2017
  [BizTalk 设计时工具](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)   
  [管理和运行时工具](../../adapters-and-accelerators/accelerator-rosettanet/administration-and-run-time-tools.md)   
  [分析工具](../../adapters-and-accelerators/accelerator-rosettanet/analysis-tools1.md)   
- [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

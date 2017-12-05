@@ -17,11 +17,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 079bae61dd4e692e25634414f6ff2e7078235b67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de8b806c8a6f39608608a3eabc975cf606410abc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-server-administration-console"></a>使用 BizTalk Server 管理控制台
 BizTalk Server 管理控制台是 Microsoft 管理控制台 (MMC) 可用于管理和监视 BizTalk Server 中，并且你可以用来部署和管理你的 BizTalk Server 应用程序。  
@@ -30,7 +30,7 @@ BizTalk Server 管理控制台是 Microsoft 管理控制台 (MMC) 可用于管�
   
  当在控制台树中选择一个节点时，管理控制台右侧的详细信息窗格中显示项目的信息。  
   
- 选择[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]在控制台树中的管理节点显示开始页，其中包含你可以执行的如连接到现有的 BizTalk Server 组的操作。 此外，开始页包括 BizTalk Server 文档和在线社区网站的链接。  
+ 在控制台树中选择 BizTalk Server 管理节点将显示起始页上，其中包含你可以执行的如连接到现有的 BizTalk Server 组的操作。 此外，开始页包括 BizTalk Server 文档和在线社区网站的链接。  
   
  有关使用用于管理控制台的键盘快捷方式的信息，请参阅[管理控制台键盘快捷方式](../core/administration-console-keyboard-shortcuts.md)。  
   
@@ -127,4 +127,4 @@ BizTalk Server 管理控制台是 Microsoft 管理控制台 (MMC) 可用于管�
   
 -   [配置使用 BizTalk Server 管理控制台的跟踪](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)  
   
--   [使用组中心页](../core/using-the-group-hub-page.md)
+-   [使用“组中心”页](../core/using-the-group-hub-page.md)

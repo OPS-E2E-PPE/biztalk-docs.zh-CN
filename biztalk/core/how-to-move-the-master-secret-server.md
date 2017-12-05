@@ -16,22 +16,22 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b35fae6551a95c1c2009ac9786aa791d189f338
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4158b59e3cce9664ca7c8c7d8ea4c5e3221b04b9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-master-secret-server"></a>如何移动主密钥服务器
 本主题将介绍将主密钥从一个服务器移至另一个服务器时可遵循的步骤以及将主密钥从一个服务器移至 Windows Server 群集时可遵循的步骤。  
   
 ### <a name="to-move-the-master-secret-from-one-server-to-another-server"></a>将主密钥从一个服务器移至另一个服务器  
   
-1.  如果尚未在新的主密钥服务器上安装 Microsoft 企业单一登录 (SSO) 服务器，请安装它。 启动 Microsoft 企业单一登录服务器安装程序从 \Platform\SSO\setup.exe [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] CD。  
+1.  如果尚未在新的主密钥服务器上安装 Microsoft 企业单一登录 (SSO) 服务器，请安装它。 启动从 \Platform\SSO\setup.exe BizTalk Server CD 上的 Microsoft 企业单一登录服务器安装程序。  
   
 2.  如果尚未配置企业 SSO，则在新的主密钥服务器上对其进行配置。 遵循以下步骤可配置企业 SSO：  
   
-    1.  打开配置工具。 默认情况下，配置工具位于\<驱动器 >: \program Files\Enterprise 单一登录 On\Configuration.exe。  
+    1.  打开配置工具。 默认情况下，配置工具位于\<驱动器\>: \program Files\Enterprise 单一登录 On\Configuration.exe。  
   
     2.  单击以选择**企业 SSO**的左窗格中。  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  将文件保存为.xml 文件。 例如，将文件另存**NewMSSServer.xml**。  
   
-    3.  在命令提示符下，将目录更改为企业 SSO 安装文件夹。 默认情况下，安装文件夹是\<驱动器 >: \program Files\Enterprise 单一登录。  
+    3.  在命令提示符下，将目录更改为企业 SSO 安装文件夹。 默认情况下，安装文件夹是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
     4.  类型**ssomanage updatedb** *XMLFile*来更新数据库中的主密钥服务器名称。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67128880233a04b6b1573f11ff5229cebe328b25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fcbce54a488cb687ad0fb2c7a1931243c8cd882
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-the-map"></a>步骤 4：创建映射
 ![步骤 4 5](../core/media/step-4of5.gif "Step_4of5")  
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  在**BizTalk 类型选取器**对话框框中，展开**EAISchemas**，展开**架构**，单击**EAISchemas.Request**，然后单击**确定**。  
   
-6.  在**源架构**窗格中，右键单击**\<架构 >**，然后单击**展开树节点**。  
+6.  在**源架构**窗格中，右键单击**\<架构\>**，然后单击**展开树节点**。  
   
 7.  在**目标架构**窗格中，单击**打开目标架构**。  
   
 8.  在**BizTalk 类型选取器**对话框框中，展开**EAISchemas**，展开**架构**，单击**EAISchemas.RequestDecline**，，然后单击**确定**。  
   
-9. 在**目标架构**窗格中，右键单击**\<架构 >**，然后单击**展开树节点**。  
+9. 在**目标架构**窗格中，右键单击**\<架构\>**，然后单击**展开树节点**。  
   
 10. 在**源架构**窗格中，拖动**ReqID**字段**ReqID**中**目标架构**窗格。 将显示一条连接两个元素的直线。  
   
