@@ -16,14 +16,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19ff35b515e70c21e2349ae54847ba312d7ce0f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e7d693cdf70f7d29a79aa8999dde49f408b8815
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="data-types-common-schemas"></a><span data-ttu-id="caf8d-102">数据类型的通用架构</span><span class="sxs-lookup"><span data-stu-id="caf8d-102">Data Types Common Schemas</span></span>
-<span data-ttu-id="caf8d-103"> **Datatypes_*\<版本 >*.xsd * * 架构文件 (其中*\<版本 >*是 HL7 版本号) 包含的定义所有 HL7 基本和复合数据类型的相应的 HL7 版本。</span><span class="sxs-lookup"><span data-stu-id="caf8d-103">The **datatypes_*\<version>*.xsd** schema file (where *\<version>* is the HL7 version number) contains the definition of all the HL7 elementary and composite data types for the corresponding HL7 version.</span></span> <span data-ttu-id="caf8d-104">Segments_*\<版本 >*.xsd 文件使用此文件与相应的 HL7 版本匹配。</span><span class="sxs-lookup"><span data-stu-id="caf8d-104">The segments_*\<version>*.xsd file uses this file to match the corresponding HL7 version.</span></span> <span data-ttu-id="caf8d-105">DataStructures Access 数据库表生成 DataTypes_*\<版本 >*.xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="caf8d-105">The DataStructures Access database table generates the DataTypes_*\<version>*.xsd schema file.</span></span> <span data-ttu-id="caf8d-106">下面的示例是 HL7 基本数据类型的条目**ST**:</span><span class="sxs-lookup"><span data-stu-id="caf8d-106">The following example is an entry for the HL7 elementary data type **ST**:</span></span>  
+# <a name="data-types-common-schemas"></a><span data-ttu-id="2f452-102">数据类型的通用架构</span><span class="sxs-lookup"><span data-stu-id="2f452-102">Data Types Common Schemas</span></span>
+<span data-ttu-id="2f452-103"> **Datatypes_*\<版本\>*.xsd * * 架构文件 (其中*\<版本\>*是 HL7 版本号) 包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。</span><span class="sxs-lookup"><span data-stu-id="2f452-103">The **datatypes_*\<version\>*.xsd** schema file (where *\<version\>* is the HL7 version number) contains the definition of all the HL7 elementary and composite data types for the corresponding HL7 version.</span></span> <span data-ttu-id="2f452-104">Segments_*\<版本\>*.xsd 文件使用此文件与相应的 HL7 版本匹配。</span><span class="sxs-lookup"><span data-stu-id="2f452-104">The segments_*\<version\>*.xsd file uses this file to match the corresponding HL7 version.</span></span> <span data-ttu-id="2f452-105">DataStructures Access 数据库表生成 DataTypes_*\<版本\>*.xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="2f452-105">The DataStructures Access database table generates the DataTypes_*\<version\>*.xsd schema file.</span></span> <span data-ttu-id="2f452-106">下面的示例是 HL7 基本数据类型的条目**ST**:</span><span class="sxs-lookup"><span data-stu-id="2f452-106">The following example is an entry for the HL7 elementary data type **ST**:</span></span>  
   
 ```  
 <xsd:simpleType name="ST">  
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/20/2017
 </xsd:simpleType>  
 ```  
   
- <span data-ttu-id="caf8d-107">此示例定义**ST**作为**字符串**。</span><span class="sxs-lookup"><span data-stu-id="caf8d-107">This example defines **ST** as a **string**.</span></span>  
+ <span data-ttu-id="2f452-107">此示例定义**ST**作为**字符串**。</span><span class="sxs-lookup"><span data-stu-id="2f452-107">This example defines **ST** as a **string**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="caf8d-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="caf8d-108">See Also</span></span>  
- <span data-ttu-id="caf8d-109">[HL7 2.X 公共架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="caf8d-109">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
- <span data-ttu-id="caf8d-110">[段通用架构](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="caf8d-110">[Segments Common Schemas](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span></span>  
- [<span data-ttu-id="caf8d-111">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="caf8d-111">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="2f452-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2f452-108">See Also</span></span>  
+ <span data-ttu-id="2f452-109">[HL7 2.X 公共架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="2f452-109">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
+ <span data-ttu-id="2f452-110">[段通用架构](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="2f452-110">[Segments Common Schemas](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span></span>  
+ [<span data-ttu-id="2f452-111">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="2f452-111">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)

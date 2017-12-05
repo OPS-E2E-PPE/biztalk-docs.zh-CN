@@ -17,159 +17,159 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f32e9432800249e6cbc64d36e281fb564648f78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 315a685f0e289d60e3db9dfbe77bae5a7e2b19f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="template-application-deployment-sample"></a><span data-ttu-id="d73f9-102">模板（应用程序部署示例）</span><span class="sxs-lookup"><span data-stu-id="d73f9-102">Template (Application Deployment Sample)</span></span>
-<span data-ttu-id="d73f9-103">本主题介绍如何使用“模板”示例来进行应用程序部署。</span><span class="sxs-lookup"><span data-stu-id="d73f9-103">This topic describes how to use the Template sample for application deployment.</span></span>  
+# <a name="template-application-deployment-sample"></a><span data-ttu-id="1424e-102">模板（应用程序部署示例）</span><span class="sxs-lookup"><span data-stu-id="1424e-102">Template (Application Deployment Sample)</span></span>
+<span data-ttu-id="1424e-103">本主题介绍如何使用“模板”示例来进行应用程序部署。</span><span class="sxs-lookup"><span data-stu-id="1424e-103">This topic describes how to use the Template sample for application deployment.</span></span>  
   
- <span data-ttu-id="d73f9-104">你可以创建和部署脚本的两种用于自定义 BizTalk 应用程序部署： 预先处理脚本和脚本的后续处理。</span><span class="sxs-lookup"><span data-stu-id="d73f9-104">You can create and use two types of deployment scripts to customize BizTalk application deployment: pre-processing scripts and post-processing scripts.</span></span> <span data-ttu-id="d73f9-105">预处理脚本在应用程序安装和导入开始前以及在卸载完成后调用。</span><span class="sxs-lookup"><span data-stu-id="d73f9-105">Pre-processing scripts are invoked before application installation and import begins and after uninstallation completes.</span></span> <span data-ttu-id="d73f9-106">后续处理脚本在应用程序安装和导入完成后以及在卸载开始前调用。</span><span class="sxs-lookup"><span data-stu-id="d73f9-106">Post-processing scripts are invoked after application installation and import completes and before uninstallation begins.</span></span>  
+ <span data-ttu-id="1424e-104">你可以创建和部署脚本的两种用于自定义 BizTalk 应用程序部署： 预先处理脚本和脚本的后续处理。</span><span class="sxs-lookup"><span data-stu-id="1424e-104">You can create and use two types of deployment scripts to customize BizTalk application deployment: pre-processing scripts and post-processing scripts.</span></span> <span data-ttu-id="1424e-105">预处理脚本在应用程序安装和导入开始前以及在卸载完成后调用。</span><span class="sxs-lookup"><span data-stu-id="1424e-105">Pre-processing scripts are invoked before application installation and import begins and after uninstallation completes.</span></span> <span data-ttu-id="1424e-106">后续处理脚本在应用程序安装和导入完成后以及在卸载开始前调用。</span><span class="sxs-lookup"><span data-stu-id="1424e-106">Post-processing scripts are invoked after application installation and import completes and before uninstallation begins.</span></span>  
   
- <span data-ttu-id="d73f9-107">您可以编写预处理脚本和后续处理脚本，以便针对上述每项操作进行调用。</span><span class="sxs-lookup"><span data-stu-id="d73f9-107">You can write pre- and post- processing scripts so that they are invoked for each of these operations.</span></span> <span data-ttu-id="d73f9-108">或者，您也可以将脚本配置为仅在其中一项操作后执行。</span><span class="sxs-lookup"><span data-stu-id="d73f9-108">Alternatively, you can configure scripts to execute after only one of them.</span></span> <span data-ttu-id="d73f9-109">有关编写脚本的详细信息，请参阅[使用自定义应用程序部署到的前期和后期处理脚本](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="d73f9-109">For more information about writing scripts, see [Using Pre- and Post-processing Scripts to Customize Application Deployment](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md).</span></span>  
+ <span data-ttu-id="1424e-107">您可以编写预处理脚本和后续处理脚本，以便针对上述每项操作进行调用。</span><span class="sxs-lookup"><span data-stu-id="1424e-107">You can write pre- and post- processing scripts so that they are invoked for each of these operations.</span></span> <span data-ttu-id="1424e-108">或者，您也可以将脚本配置为仅在其中一项操作后执行。</span><span class="sxs-lookup"><span data-stu-id="1424e-108">Alternatively, you can configure scripts to execute after only one of them.</span></span> <span data-ttu-id="1424e-109">有关编写脚本的详细信息，请参阅[使用自定义应用程序部署到的前期和后期处理脚本](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="1424e-109">For more information about writing scripts, see [Using Pre- and Post-processing Scripts to Customize Application Deployment](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md).</span></span>  
   
- <span data-ttu-id="d73f9-110">本主题演示如何编写并部署脚本，使其仅在一项操作之前或之后调用。</span><span class="sxs-lookup"><span data-stu-id="d73f9-110">This topic demonstrates how to write and deploy a script so that it is invoked before or after only one operation.</span></span> <span data-ttu-id="d73f9-111">具体方法是：编写一段脚本，此脚本通过检查三个环境变量的值来决定操作调用上下文中的操作。</span><span class="sxs-lookup"><span data-stu-id="d73f9-111">You do this by writing a script that checks the values of three environment variables to determine the operation in the context of which it is being called.</span></span> <span data-ttu-id="d73f9-112">根据此上下文，脚本将继续执行或停止执行。</span><span class="sxs-lookup"><span data-stu-id="d73f9-112">Based on this context, the script either continues or discontinues execution.</span></span>  
+ <span data-ttu-id="1424e-110">本主题演示如何编写并部署脚本，使其仅在一项操作之前或之后调用。</span><span class="sxs-lookup"><span data-stu-id="1424e-110">This topic demonstrates how to write and deploy a script so that it is invoked before or after only one operation.</span></span> <span data-ttu-id="1424e-111">具体方法是：编写一段脚本，此脚本通过检查三个环境变量的值来决定操作调用上下文中的操作。</span><span class="sxs-lookup"><span data-stu-id="1424e-111">You do this by writing a script that checks the values of three environment variables to determine the operation in the context of which it is being called.</span></span> <span data-ttu-id="1424e-112">根据此上下文，脚本将继续执行或停止执行。</span><span class="sxs-lookup"><span data-stu-id="1424e-112">Based on this context, the script either continues or discontinues execution.</span></span>  
   
- <span data-ttu-id="d73f9-113">本主题介绍如何执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="d73f9-113">This topic describes how to take the following steps:</span></span>  
+ <span data-ttu-id="1424e-113">本主题介绍如何执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="1424e-113">This topic describes how to take the following steps:</span></span>  
   
-1.  <span data-ttu-id="d73f9-114">设置日志文件位置，以便生成脚本操作的日志文件。</span><span class="sxs-lookup"><span data-stu-id="d73f9-114">Set the log file location, so that you can generate a log file of the script operations.</span></span>  
+1.  <span data-ttu-id="1424e-114">设置日志文件位置，以便生成脚本操作的日志文件。</span><span class="sxs-lookup"><span data-stu-id="1424e-114">Set the log file location, so that you can generate a log file of the script operations.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="d73f9-115">最佳做法是，始终生成日志文件以便验证脚本操作并解决任何问题。</span><span class="sxs-lookup"><span data-stu-id="d73f9-115">As a best practice, you should always generate a log file so that you can verify script operations and troubleshoot any problems.</span></span>  
+    >  <span data-ttu-id="1424e-115">最佳做法是，始终生成日志文件以便验证脚本操作并解决任何问题。</span><span class="sxs-lookup"><span data-stu-id="1424e-115">As a best practice, you should always generate a log file so that you can verify script operations and troubleshoot any problems.</span></span>  
   
-2.  <span data-ttu-id="d73f9-116">新建一个 BizTalk 应用程序，并向该应用程序添加示例脚本。</span><span class="sxs-lookup"><span data-stu-id="d73f9-116">Create a new BizTalk application and add the sample scripts to it.</span></span>  
+2.  <span data-ttu-id="1424e-116">新建一个 BizTalk 应用程序，并向该应用程序添加示例脚本。</span><span class="sxs-lookup"><span data-stu-id="1424e-116">Create a new BizTalk application and add the sample scripts to it.</span></span>  
   
-3.  <span data-ttu-id="d73f9-117">导出包含应用程序项目的 .msi 文件。</span><span class="sxs-lookup"><span data-stu-id="d73f9-117">Export an .msi file containing the application artifacts.</span></span>  
+3.  <span data-ttu-id="1424e-117">导出包含应用程序项目的 .msi 文件。</span><span class="sxs-lookup"><span data-stu-id="1424e-117">Export an .msi file containing the application artifacts.</span></span>  
   
-4.  <span data-ttu-id="d73f9-118">从 BizTalk 组删除此应用程序，以便将此 .msi 文件导入回原来的组中，并从此 .msi 文件进行安装。</span><span class="sxs-lookup"><span data-stu-id="d73f9-118">Delete the application from the BizTalk group, so that you can import the .msi file back into the same group as well as install it from the .msi file.</span></span>  
+4.  <span data-ttu-id="1424e-118">从 BizTalk 组删除此应用程序，以便将此 .msi 文件导入回原来的组中，并从此 .msi 文件进行安装。</span><span class="sxs-lookup"><span data-stu-id="1424e-118">Delete the application from the BizTalk group, so that you can import the .msi file back into the same group as well as install it from the .msi file.</span></span>  
   
-5.  <span data-ttu-id="d73f9-119">导入此应用程序，然后检查日志文件以查看是否已记录导入操作。</span><span class="sxs-lookup"><span data-stu-id="d73f9-119">Import the application, and check the log file to see that the import operation was logged.</span></span>  
+5.  <span data-ttu-id="1424e-119">导入此应用程序，然后检查日志文件以查看是否已记录导入操作。</span><span class="sxs-lookup"><span data-stu-id="1424e-119">Import the application, and check the log file to see that the import operation was logged.</span></span>  
   
-6.  <span data-ttu-id="d73f9-120">安装此应用程序，然后检查日志文件以查看是否已将安装日志附加到该日志文件中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-120">Install the application, and check the log file to see that the installation log was appended to the log file.</span></span>  
+6.  <span data-ttu-id="1424e-120">安装此应用程序，然后检查日志文件以查看是否已将安装日志附加到该日志文件中。</span><span class="sxs-lookup"><span data-stu-id="1424e-120">Install the application, and check the log file to see that the installation log was appended to the log file.</span></span>  
   
-7.  <span data-ttu-id="d73f9-121">查看日志文件，注意脚本执行了哪些操作以及执行这些操作的时间。</span><span class="sxs-lookup"><span data-stu-id="d73f9-121">View the log files and note what operations the scripts performed and when they were performed.</span></span>  
+7.  <span data-ttu-id="1424e-121">查看日志文件，注意脚本执行了哪些操作以及执行这些操作的时间。</span><span class="sxs-lookup"><span data-stu-id="1424e-121">View the log files and note what operations the scripts performed and when they were performed.</span></span>  
   
-## <a name="what-this-sample-does"></a><span data-ttu-id="d73f9-122">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="d73f9-122">What This Sample Does</span></span>  
- <span data-ttu-id="d73f9-123">针对本示例提供的两个 .bat 文件包含用于导入、安装和卸载的环境变量的值。</span><span class="sxs-lookup"><span data-stu-id="d73f9-123">Two .bat files provided for this sample contain the values of the environment variables for import, installation, and uninstallation.</span></span> <span data-ttu-id="d73f9-124">SamplePreProcessing.bat 包含预处理脚本的变量。</span><span class="sxs-lookup"><span data-stu-id="d73f9-124">SamplePreProcessing.bat contains variables for a pre-processing script.</span></span> <span data-ttu-id="d73f9-125">SamplePostProcessing.bat 包含后处理脚本的变量。</span><span class="sxs-lookup"><span data-stu-id="d73f9-125">SamplePostProcessing.bat contains variables for a post-processing script.</span></span> <span data-ttu-id="d73f9-126">这些文件还演示了如何记录来自脚本的消息。</span><span class="sxs-lookup"><span data-stu-id="d73f9-126">The files also demonstrate how to log messages from scripts.</span></span> <span data-ttu-id="d73f9-127">您可以将这些文件的相关部分复制到脚本中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-127">You can copy the relevant sections of these files into your scripts.</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="1424e-122">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="1424e-122">What This Sample Does</span></span>  
+ <span data-ttu-id="1424e-123">针对本示例提供的两个 .bat 文件包含用于导入、安装和卸载的环境变量的值。</span><span class="sxs-lookup"><span data-stu-id="1424e-123">Two .bat files provided for this sample contain the values of the environment variables for import, installation, and uninstallation.</span></span> <span data-ttu-id="1424e-124">SamplePreProcessing.bat 包含预处理脚本的变量。</span><span class="sxs-lookup"><span data-stu-id="1424e-124">SamplePreProcessing.bat contains variables for a pre-processing script.</span></span> <span data-ttu-id="1424e-125">SamplePostProcessing.bat 包含后处理脚本的变量。</span><span class="sxs-lookup"><span data-stu-id="1424e-125">SamplePostProcessing.bat contains variables for a post-processing script.</span></span> <span data-ttu-id="1424e-126">这些文件还演示了如何记录来自脚本的消息。</span><span class="sxs-lookup"><span data-stu-id="1424e-126">The files also demonstrate how to log messages from scripts.</span></span> <span data-ttu-id="1424e-127">您可以将这些文件的相关部分复制到脚本中。</span><span class="sxs-lookup"><span data-stu-id="1424e-127">You can copy the relevant sections of these files into your scripts.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="d73f9-128">脚本文件中的某些注释不正确，具体如下：</span><span class="sxs-lookup"><span data-stu-id="d73f9-128">Some of the comments within the script files are incorrect, as follows:</span></span>  
+>  <span data-ttu-id="1424e-128">脚本文件中的某些注释不正确，具体如下：</span><span class="sxs-lookup"><span data-stu-id="1424e-128">Some of the comments within the script files are incorrect, as follows:</span></span>  
 >   
->  <span data-ttu-id="d73f9-129">在 SamplePreProcessing.bat 中，脚本注释“Pre uninstall part of the script called for an existing application”应为“Post uninstall part of the script called for an existing application”。</span><span class="sxs-lookup"><span data-stu-id="d73f9-129">In SamplePreProcessing.bat, the script comment, “Pre uninstall part of the script called for an existing application” should read "Post uninstall part of the script called for an existing application."</span></span>  
+>  <span data-ttu-id="1424e-129">在 SamplePreProcessing.bat 中，脚本注释“Pre uninstall part of the script called for an existing application”应为“Post uninstall part of the script called for an existing application”。</span><span class="sxs-lookup"><span data-stu-id="1424e-129">In SamplePreProcessing.bat, the script comment, “Pre uninstall part of the script called for an existing application” should read "Post uninstall part of the script called for an existing application."</span></span>  
 >   
->  <span data-ttu-id="d73f9-130">在 SamplePostProcessing.bat 中，脚本注释“Post uninstall part of the script called for an existing application”应为“Pre uninstall part of the script called for an existing application”。</span><span class="sxs-lookup"><span data-stu-id="d73f9-130">In SamplePostProcessing.bat, the script comment, “Post uninstall part of the script called for an existing application” should read "Pre uninstall part of the script called for an existing application."</span></span>  
+>  <span data-ttu-id="1424e-130">在 SamplePostProcessing.bat 中，脚本注释“Post uninstall part of the script called for an existing application”应为“Pre uninstall part of the script called for an existing application”。</span><span class="sxs-lookup"><span data-stu-id="1424e-130">In SamplePostProcessing.bat, the script comment, “Post uninstall part of the script called for an existing application” should read "Pre uninstall part of the script called for an existing application."</span></span>  
   
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="d73f9-131">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="d73f9-131">Where to Find This Sample</span></span>  
- <span data-ttu-id="d73f9-132">示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹，，如下所示：</span><span class="sxs-lookup"><span data-stu-id="d73f9-132">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="1424e-131">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="1424e-131">Where to Find This Sample</span></span>  
+ <span data-ttu-id="1424e-132">示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹，，如下所示：</span><span class="sxs-lookup"><span data-stu-id="1424e-132">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows:</span></span>  
   
- <span data-ttu-id="d73f9-133">*\<示例路径 >*\Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="d73f9-133">*\<Samples Path>*\Application Deployment\Template</span></span>  
+ <span data-ttu-id="1424e-133">*\<示例路径\>*\Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="1424e-133">*\<Samples Path\>*\Application Deployment\Template</span></span>  
   
- <span data-ttu-id="d73f9-134">如前所述，本示例包括下列两个文件：</span><span class="sxs-lookup"><span data-stu-id="d73f9-134">As previously mentioned, the sample includes the following two files:</span></span>  
+ <span data-ttu-id="1424e-134">如前所述，本示例包括下列两个文件：</span><span class="sxs-lookup"><span data-stu-id="1424e-134">As previously mentioned, the sample includes the following two files:</span></span>  
   
--   <span data-ttu-id="d73f9-135">SamplePreProcessing.bat</span><span class="sxs-lookup"><span data-stu-id="d73f9-135">SamplePreProcessing.bat</span></span>  
+-   <span data-ttu-id="1424e-135">SamplePreProcessing.bat</span><span class="sxs-lookup"><span data-stu-id="1424e-135">SamplePreProcessing.bat</span></span>  
   
--   <span data-ttu-id="d73f9-136">SamplePostProcessing.bat</span><span class="sxs-lookup"><span data-stu-id="d73f9-136">SamplePostProcessing.bat</span></span>  
+-   <span data-ttu-id="1424e-136">SamplePostProcessing.bat</span><span class="sxs-lookup"><span data-stu-id="1424e-136">SamplePostProcessing.bat</span></span>  
   
-## <a name="how-to-use-this-sample"></a><span data-ttu-id="d73f9-137">如何使用本示例</span><span class="sxs-lookup"><span data-stu-id="d73f9-137">How to Use This Sample</span></span>  
- <span data-ttu-id="d73f9-138">若要运行本示例，请执行下列步骤。</span><span class="sxs-lookup"><span data-stu-id="d73f9-138">To run the sample, take the following steps.</span></span>  
+## <a name="how-to-use-this-sample"></a><span data-ttu-id="1424e-137">如何使用本示例</span><span class="sxs-lookup"><span data-stu-id="1424e-137">How to Use This Sample</span></span>  
+ <span data-ttu-id="1424e-138">若要运行本示例，请执行下列步骤。</span><span class="sxs-lookup"><span data-stu-id="1424e-138">To run the sample, take the following steps.</span></span>  
   
-### <a name="to-set-the-logging-location"></a><span data-ttu-id="d73f9-139">设置日志记录位置</span><span class="sxs-lookup"><span data-stu-id="d73f9-139">To set the logging location</span></span>  
+### <a name="to-set-the-logging-location"></a><span data-ttu-id="1424e-139">设置日志记录位置</span><span class="sxs-lookup"><span data-stu-id="1424e-139">To set the logging location</span></span>  
   
--   <span data-ttu-id="d73f9-140">打开这两个脚本示例并更改 LogFile 变量，使其指向日志文件的写入位置。</span><span class="sxs-lookup"><span data-stu-id="d73f9-140">Open both the script samples and change the LogFile variable to point to the location where the log files are to be written.</span></span> <span data-ttu-id="d73f9-141">您必须提供包含文件名的完整路径。</span><span class="sxs-lookup"><span data-stu-id="d73f9-141">You must provide the full path including the file name.</span></span> <span data-ttu-id="d73f9-142">如果该路径包含空格，则必须将该路径括在双引号 (") 中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-142">If it includes spaces, you must enclose the path in double quotation marks (").</span></span>  
+-   <span data-ttu-id="1424e-140">打开这两个脚本示例并更改 LogFile 变量，使其指向日志文件的写入位置。</span><span class="sxs-lookup"><span data-stu-id="1424e-140">Open both the script samples and change the LogFile variable to point to the location where the log files are to be written.</span></span> <span data-ttu-id="1424e-141">您必须提供包含文件名的完整路径。</span><span class="sxs-lookup"><span data-stu-id="1424e-141">You must provide the full path including the file name.</span></span> <span data-ttu-id="1424e-142">如果该路径包含空格，则必须将该路径括在双引号 (") 中。</span><span class="sxs-lookup"><span data-stu-id="1424e-142">If it includes spaces, you must enclose the path in double quotation marks (").</span></span>  
   
-     <span data-ttu-id="d73f9-143">例如：</span><span class="sxs-lookup"><span data-stu-id="d73f9-143">Example:</span></span>  
+     <span data-ttu-id="1424e-143">例如：</span><span class="sxs-lookup"><span data-stu-id="1424e-143">Example:</span></span>  
   
-     <span data-ttu-id="d73f9-144">设置日志文件 ="*\<示例路径 >*\ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="d73f9-144">set LogFile="*\<Samples Path>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
+     <span data-ttu-id="1424e-144">设置日志文件 ="*\<示例路径\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="1424e-144">set LogFile="*\<Samples Path\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
   
-### <a name="to-create-a-new-application"></a><span data-ttu-id="d73f9-145">新建应用程序</span><span class="sxs-lookup"><span data-stu-id="d73f9-145">To create a new application</span></span>  
+### <a name="to-create-a-new-application"></a><span data-ttu-id="1424e-145">新建应用程序</span><span class="sxs-lookup"><span data-stu-id="1424e-145">To create a new application</span></span>  
   
-1.  <span data-ttu-id="d73f9-146">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-146">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+1.  <span data-ttu-id="1424e-146">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="1424e-146">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  <span data-ttu-id="d73f9-147">在控制台树中，依次展开 [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] 和 BizTalk 组。</span><span class="sxs-lookup"><span data-stu-id="d73f9-147">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] and expand the BizTalk group.</span></span>  
+2.  <span data-ttu-id="1424e-147">在控制台树中，依次展开 [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] 和 BizTalk 组。</span><span class="sxs-lookup"><span data-stu-id="1424e-147">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] and expand the BizTalk group.</span></span>  
   
-3.  <span data-ttu-id="d73f9-148">右键单击**应用程序**，然后单击**新建**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-148">Right-click **Applications** and then click **New**.</span></span>  
+3.  <span data-ttu-id="1424e-148">右键单击**应用程序**，然后单击**新建**。</span><span class="sxs-lookup"><span data-stu-id="1424e-148">Right-click **Applications** and then click **New**.</span></span>  
   
-4.  <span data-ttu-id="d73f9-149">在**应用程序名称**，类型`SamplesTemplate`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-149">In **Application name**, type `SamplesTemplate`, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="1424e-149">在**应用程序名称**，类型`SamplesTemplate`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1424e-149">In **Application name**, type `SamplesTemplate`, and then click **OK**.</span></span>  
   
-### <a name="to-add-the-scripts-to-the-application"></a><span data-ttu-id="d73f9-150">若要将脚本添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="d73f9-150">To add the scripts to the application</span></span>  
+### <a name="to-add-the-scripts-to-the-application"></a><span data-ttu-id="1424e-150">若要将脚本添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="1424e-150">To add the scripts to the application</span></span>  
   
-1.  <span data-ttu-id="d73f9-151">展开你刚创建 SamplesTemplate 应用程序的文件夹，右击**资源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-151">Expand the folder of the SamplesTemplate application that you just created and right-click **Resources** in the left pane.</span></span>  
+1.  <span data-ttu-id="1424e-151">展开你刚创建 SamplesTemplate 应用程序的文件夹，右击**资源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="1424e-151">Expand the folder of the SamplesTemplate application that you just created and right-click **Resources** in the left pane.</span></span>  
   
-2.  <span data-ttu-id="d73f9-152">指向**添加**单击**预处理脚本**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-152">Point to **Add** and click **Pre-processing Scripts**.</span></span>  
+2.  <span data-ttu-id="1424e-152">指向**添加**单击**预处理脚本**。</span><span class="sxs-lookup"><span data-stu-id="1424e-152">Point to **Add** and click **Pre-processing Scripts**.</span></span>  
   
-3.  <span data-ttu-id="d73f9-153">单击**添加**并浏览到 SamplePreProcessing.bat。</span><span class="sxs-lookup"><span data-stu-id="d73f9-153">Click **Add** and browse to SamplePreProcessing.bat.</span></span>  
+3.  <span data-ttu-id="1424e-153">单击**添加**并浏览到 SamplePreProcessing.bat。</span><span class="sxs-lookup"><span data-stu-id="1424e-153">Click **Add** and browse to SamplePreProcessing.bat.</span></span>  
   
-4.  <span data-ttu-id="d73f9-154">选择该文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-154">Select the file and click **Open**.</span></span>  
+4.  <span data-ttu-id="1424e-154">选择该文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="1424e-154">Select the file and click **Open**.</span></span>  
   
-5.  <span data-ttu-id="d73f9-155">在**文件类型**，单击**System.BizTalk:PreprocessingScript**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-155">In **File type**, click **System.BizTalk:PreprocessingScript**, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="1424e-155">在**文件类型**，单击**System.BizTalk:PreprocessingScript**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1424e-155">In **File type**, click **System.BizTalk:PreprocessingScript**, and then click **OK**.</span></span>  
   
-     <span data-ttu-id="d73f9-156">SamplePreProcessing.bat 将添加到应用程序中，并且显示在应用程序的“资源”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-156">SamplePreProcessing.bat is added to the application and is displayed in the Resources folder of the application.</span></span>  
+     <span data-ttu-id="1424e-156">SamplePreProcessing.bat 将添加到应用程序中，并且显示在应用程序的“资源”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="1424e-156">SamplePreProcessing.bat is added to the application and is displayed in the Resources folder of the application.</span></span>  
   
-6.  <span data-ttu-id="d73f9-157">再次右键单击资源，指向**添加**，然后单击**后处理脚本**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-157">Right-click Resources again, point to **Add**, and then click **Post-processing Scripts**.</span></span>  
+6.  <span data-ttu-id="1424e-157">再次右键单击资源，指向**添加**，然后单击**后处理脚本**。</span><span class="sxs-lookup"><span data-stu-id="1424e-157">Right-click Resources again, point to **Add**, and then click **Post-processing Scripts**.</span></span>  
   
-7.  <span data-ttu-id="d73f9-158">单击**添加**并浏览到 SamplePostProcessing.bat。</span><span class="sxs-lookup"><span data-stu-id="d73f9-158">Click **Add** and browse to SamplePostProcessing.bat.</span></span>  
+7.  <span data-ttu-id="1424e-158">单击**添加**并浏览到 SamplePostProcessing.bat。</span><span class="sxs-lookup"><span data-stu-id="1424e-158">Click **Add** and browse to SamplePostProcessing.bat.</span></span>  
   
-8.  <span data-ttu-id="d73f9-159">选择该文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-159">Select the file and click **Open**.</span></span>  
+8.  <span data-ttu-id="1424e-159">选择该文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="1424e-159">Select the file and click **Open**.</span></span>  
   
-9. <span data-ttu-id="d73f9-160">在**文件类型**，单击**System.BizTalk:PostprocessingScript**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-160">In **File type**, click **System.BizTalk:PostprocessingScript**, and then click **OK**.</span></span>  
+9. <span data-ttu-id="1424e-160">在**文件类型**，单击**System.BizTalk:PostprocessingScript**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1424e-160">In **File type**, click **System.BizTalk:PostprocessingScript**, and then click **OK**.</span></span>  
   
-     <span data-ttu-id="d73f9-161">SamplePostProcessing.bat 将添加到应用程序中，并且显示在应用程序的“资源”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-161">SamplePostProcessing.bat is added to the application and is displayed in the Resources folder of the application.</span></span>  
+     <span data-ttu-id="1424e-161">SamplePostProcessing.bat 将添加到应用程序中，并且显示在应用程序的“资源”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="1424e-161">SamplePostProcessing.bat is added to the application and is displayed in the Resources folder of the application.</span></span>  
   
-### <a name="to-export-an-msi-file"></a><span data-ttu-id="d73f9-162">导出 .msi 文件</span><span class="sxs-lookup"><span data-stu-id="d73f9-162">To export an .msi file</span></span>  
+### <a name="to-export-an-msi-file"></a><span data-ttu-id="1424e-162">导出 .msi 文件</span><span class="sxs-lookup"><span data-stu-id="1424e-162">To export an .msi file</span></span>  
   
-1.  <span data-ttu-id="d73f9-163">在 BizTalk Server 管理控制台中，右键单击 SamplesTemplate 应用程序，指向**导出**，然后单击**MSI 文件**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-163">In the BizTalk Server Administration console, right-click the SamplesTemplate application, point to **Export**, and then click **MSI file**.</span></span>  
+1.  <span data-ttu-id="1424e-163">在 BizTalk Server 管理控制台中，右键单击 SamplesTemplate 应用程序，指向**导出**，然后单击**MSI 文件**。</span><span class="sxs-lookup"><span data-stu-id="1424e-163">In the BizTalk Server Administration console, right-click the SamplesTemplate application, point to **Export**, and then click **MSI file**.</span></span>  
   
-2.  <span data-ttu-id="d73f9-164">在欢迎使用导出向导页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-164">On the Welcome to the Export Wizard page, click **Next**.</span></span>  
+2.  <span data-ttu-id="1424e-164">在欢迎使用导出向导页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-164">On the Welcome to the Export Wizard page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="d73f9-165">在选择资源页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-165">On the Select Resources page, click **Next**.</span></span>  
+3.  <span data-ttu-id="1424e-165">在选择资源页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-165">On the Select Resources page, click **Next**.</span></span>  
   
-4.  <span data-ttu-id="d73f9-166">在指定的 IIS 主机页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-166">On the Specify IIS Hosts page, click **Next**.</span></span>  
+4.  <span data-ttu-id="1424e-166">在指定的 IIS 主机页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-166">On the Specify IIS Hosts page, click **Next**.</span></span>  
   
-5.  <span data-ttu-id="d73f9-167">在依赖关系页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-167">On the Dependencies page, click **Next**.</span></span>  
+5.  <span data-ttu-id="1424e-167">在依赖关系页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-167">On the Dependencies page, click **Next**.</span></span>  
   
-6.  <span data-ttu-id="d73f9-168">在目标页上，在**目标应用程序名称**，键入应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="d73f9-168">On the Destination page, in **Destination application name**, type the application name.</span></span>  
+6.  <span data-ttu-id="1424e-168">在目标页上，在**目标应用程序名称**，键入应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="1424e-168">On the Destination page, in **Destination application name**, type the application name.</span></span>  
   
-7.  <span data-ttu-id="d73f9-169">在**MSI 文件以生成**，键入 MSI 文件的完整路径，然后单击**导出**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-169">In **MSI file to generate**, type the full path for the MSI file, and then click **Export**.</span></span> <span data-ttu-id="d73f9-170">示例： C:\MSI\SamplesTemplate.msi</span><span class="sxs-lookup"><span data-stu-id="d73f9-170">Example: C:\MSI\SamplesTemplate.msi</span></span>  
+7.  <span data-ttu-id="1424e-169">在**MSI 文件以生成**，键入 MSI 文件的完整路径，然后单击**导出**。</span><span class="sxs-lookup"><span data-stu-id="1424e-169">In **MSI file to generate**, type the full path for the MSI file, and then click **Export**.</span></span> <span data-ttu-id="1424e-170">示例： C:\MSI\SamplesTemplate.msi</span><span class="sxs-lookup"><span data-stu-id="1424e-170">Example: C:\MSI\SamplesTemplate.msi</span></span>  
   
-8.  <span data-ttu-id="d73f9-171">在摘要页上单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-171">On the Summary page, click **Finish**.</span></span>  
+8.  <span data-ttu-id="1424e-171">在摘要页上单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="1424e-171">On the Summary page, click **Finish**.</span></span>  
   
-### <a name="delete-the-application"></a><span data-ttu-id="d73f9-172">删除应用程序。</span><span class="sxs-lookup"><span data-stu-id="d73f9-172">Delete the application</span></span>  
+### <a name="delete-the-application"></a><span data-ttu-id="1424e-172">删除应用程序。</span><span class="sxs-lookup"><span data-stu-id="1424e-172">Delete the application</span></span>  
   
--   <span data-ttu-id="d73f9-173">在 BizTalk Server 管理控制台中，右键单击 SamplesTemplate 应用程序，并依次**删除**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-173">In the BizTalk Server Administration console, right-click the SamplesTemplate application, and then click **Delete**.</span></span>  
+-   <span data-ttu-id="1424e-173">在 BizTalk Server 管理控制台中，右键单击 SamplesTemplate 应用程序，并依次**删除**。</span><span class="sxs-lookup"><span data-stu-id="1424e-173">In the BizTalk Server Administration console, right-click the SamplesTemplate application, and then click **Delete**.</span></span>  
   
-### <a name="to-import-the-msi-file"></a><span data-ttu-id="d73f9-174">导入 .msi 文件</span><span class="sxs-lookup"><span data-stu-id="d73f9-174">To import the .msi file</span></span>  
+### <a name="to-import-the-msi-file"></a><span data-ttu-id="1424e-174">导入 .msi 文件</span><span class="sxs-lookup"><span data-stu-id="1424e-174">To import the .msi file</span></span>  
   
-1.  <span data-ttu-id="d73f9-175">在 BizTalk Server 管理控制台中，右键单击**应用程序**，指向**导入**，然后单击**MSI 文件**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-175">In the BizTalk Server Administration console, right-click **Applications**, point to **Import**, and then click **MSI file**.</span></span>  
+1.  <span data-ttu-id="1424e-175">在 BizTalk Server 管理控制台中，右键单击**应用程序**，指向**导入**，然后单击**MSI 文件**。</span><span class="sxs-lookup"><span data-stu-id="1424e-175">In the BizTalk Server Administration console, right-click **Applications**, point to **Import**, and then click **MSI file**.</span></span>  
   
-2.  <span data-ttu-id="d73f9-176">在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="d73f9-177">如果有必要，则可以浏览的 MSI 文件通过单击**（…）**按钮。</span><span class="sxs-lookup"><span data-stu-id="d73f9-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
+2.  <span data-ttu-id="1424e-176">在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="1424e-177">如果有必要，则可以浏览的 MSI 文件通过单击**（…）**按钮。</span><span class="sxs-lookup"><span data-stu-id="1424e-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
   
-3.  <span data-ttu-id="d73f9-178">在应用程序设置页上，在**应用程序名称**下拉列表中，选择应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="d73f9-178">On the Application Settings page, in the **Application name** drop-down list, select the application name.</span></span>  
+3.  <span data-ttu-id="1424e-178">在应用程序设置页上，在**应用程序名称**下拉列表中，选择应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="1424e-178">On the Application Settings page, in the **Application name** drop-down list, select the application name.</span></span>  
   
-4.  <span data-ttu-id="d73f9-179">在**可用的应用程序将引用添加到**，选择要向其中添加引用，如果有的话，应用程序，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-179">In **Available applications to add references to**, select the applications to which to add references, if any, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="1424e-179">在**可用的应用程序将引用添加到**，选择要向其中添加引用，如果有的话，应用程序，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-179">In **Available applications to add references to**, select the applications to which to add references, if any, and then click **Next**.</span></span>  
   
-5.  <span data-ttu-id="d73f9-180">在应用程序目标环境设置页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-180">On the Application Target Environment Settings page, click **Next**.</span></span>  
+5.  <span data-ttu-id="1424e-180">在应用程序目标环境设置页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-180">On the Application Target Environment Settings page, click **Next**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="d73f9-181">在本示例中，您无需指定目标环境。</span><span class="sxs-lookup"><span data-stu-id="d73f9-181">You do not need to specify a target environment for the purposes of this sample.</span></span> <span data-ttu-id="d73f9-182">有关此功能的背景信息，请参阅[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="d73f9-182">For background information on this feature, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span> <span data-ttu-id="d73f9-183">有关添加绑定文件的说明，请参阅[如何将绑定文件添加到应用程序](../core/how-to-add-a-binding-file-to-an-application2.md)。</span><span class="sxs-lookup"><span data-stu-id="d73f9-183">For instructions on adding binding files, see [How to Add a Binding File to an Application](../core/how-to-add-a-binding-file-to-an-application2.md).</span></span>  
+    >  <span data-ttu-id="1424e-181">在本示例中，您无需指定目标环境。</span><span class="sxs-lookup"><span data-stu-id="1424e-181">You do not need to specify a target environment for the purposes of this sample.</span></span> <span data-ttu-id="1424e-182">有关此功能的背景信息，请参阅[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="1424e-182">For background information on this feature, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span> <span data-ttu-id="1424e-183">有关添加绑定文件的说明，请参阅[如何将绑定文件添加到应用程序](../core/how-to-add-a-binding-file-to-an-application2.md)。</span><span class="sxs-lookup"><span data-stu-id="1424e-183">For instructions on adding binding files, see [How to Add a Binding File to an Application](../core/how-to-add-a-binding-file-to-an-application2.md).</span></span>  
   
-6.  <span data-ttu-id="d73f9-184">在导入摘要页面上，确认验证摘要信息是否正确，并依次**导入**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-184">On the Import Summary page, confirm that the summary information is correct, and then click **Import**.</span></span>  
+6.  <span data-ttu-id="1424e-184">在导入摘要页面上，确认验证摘要信息是否正确，并依次**导入**。</span><span class="sxs-lookup"><span data-stu-id="1424e-184">On the Import Summary page, confirm that the summary information is correct, and then click **Import**.</span></span>  
   
-7.  <span data-ttu-id="d73f9-185">在结果页上，单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="d73f9-185">On the Results page, click **Finish**.</span></span>  
+7.  <span data-ttu-id="1424e-185">在结果页上，单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="1424e-185">On the Results page, click **Finish**.</span></span>  
   
-8.  <span data-ttu-id="d73f9-186">打开执行脚本时创建的日志文件，并验证是否已记录导入操作。</span><span class="sxs-lookup"><span data-stu-id="d73f9-186">Open the log file that was created when the scripts executed, and verify that import operation was logged.</span></span>  
+8.  <span data-ttu-id="1424e-186">打开执行脚本时创建的日志文件，并验证是否已记录导入操作。</span><span class="sxs-lookup"><span data-stu-id="1424e-186">Open the log file that was created when the scripts executed, and verify that import operation was logged.</span></span>  
   
-### <a name="to-install-the-application"></a><span data-ttu-id="d73f9-187">若要安装应用程序</span><span class="sxs-lookup"><span data-stu-id="d73f9-187">To install the application</span></span>  
+### <a name="to-install-the-application"></a><span data-ttu-id="1424e-187">若要安装应用程序</span><span class="sxs-lookup"><span data-stu-id="1424e-187">To install the application</span></span>  
   
-1.  <span data-ttu-id="d73f9-188">双击 .msi 文件并运行安装向导。</span><span class="sxs-lookup"><span data-stu-id="d73f9-188">Double-click the .msi file and run the Installation Wizard.</span></span>  
+1.  <span data-ttu-id="1424e-188">双击 .msi 文件并运行安装向导。</span><span class="sxs-lookup"><span data-stu-id="1424e-188">Double-click the .msi file and run the Installation Wizard.</span></span>  
   
-2.  <span data-ttu-id="d73f9-189">打开日志文件，并验证是否已将安装操作添加到日志纪录信息中。</span><span class="sxs-lookup"><span data-stu-id="d73f9-189">Open the log file and verify that installation operation was added to the logging information.</span></span>  
+2.  <span data-ttu-id="1424e-189">打开日志文件，并验证是否已将安装操作添加到日志纪录信息中。</span><span class="sxs-lookup"><span data-stu-id="1424e-189">Open the log file and verify that installation operation was added to the logging information.</span></span>  
   
-### <a name="to-verify-that-the-scripts-functioned-correctly"></a><span data-ttu-id="d73f9-190">验证脚本运行是否正常</span><span class="sxs-lookup"><span data-stu-id="d73f9-190">To verify that the scripts functioned correctly</span></span>  
+### <a name="to-verify-that-the-scripts-functioned-correctly"></a><span data-ttu-id="1424e-190">验证脚本运行是否正常</span><span class="sxs-lookup"><span data-stu-id="1424e-190">To verify that the scripts functioned correctly</span></span>  
   
--   <span data-ttu-id="d73f9-191">打开日志文件，验证脚本在指定操作期间是否执行。</span><span class="sxs-lookup"><span data-stu-id="d73f9-191">Open the log files and verify that they executed during the specified operations.</span></span>  
+-   <span data-ttu-id="1424e-191">打开日志文件，验证脚本在指定操作期间是否执行。</span><span class="sxs-lookup"><span data-stu-id="1424e-191">Open the log files and verify that they executed during the specified operations.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d73f9-192">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d73f9-192">See Also</span></span>  
- <span data-ttu-id="d73f9-193">[应用程序部署 （BizTalk Server 示例文件夹中）](../core/application-deployment-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="d73f9-193">[Application Deployment (BizTalk Server Samples Folder)](../core/application-deployment-biztalk-server-samples-folder.md) </span></span>  
- [<span data-ttu-id="d73f9-194">部署 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="d73f9-194">Deploying BizTalk Applications</span></span>](../core/deploying-biztalk-applications.md)
+## <a name="see-also"></a><span data-ttu-id="1424e-192">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1424e-192">See Also</span></span>  
+ <span data-ttu-id="1424e-193">[应用程序部署 （BizTalk Server 示例文件夹中）](../core/application-deployment-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="1424e-193">[Application Deployment (BizTalk Server Samples Folder)](../core/application-deployment-biztalk-server-samples-folder.md) </span></span>  
+ [<span data-ttu-id="1424e-194">部署 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="1424e-194">Deploying BizTalk Applications</span></span>](../core/deploying-biztalk-applications.md)

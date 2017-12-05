@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9daf93fd6c925e5412aef3f4e985dd966f576eee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 167c53d953369d7b35138995b4f38ad8994c18cb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a><span data-ttu-id="1ecc6-102">自 BizTalk Server 2004 后在冻结策略中的变化</span><span class="sxs-lookup"><span data-stu-id="1ecc6-102">Changes in Dehydration Policy from BizTalk Server 2004</span></span>
-<span data-ttu-id="1ecc6-103">BizTalk Server 冻结策略已更改，不再[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]到[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="1ecc6-103">BizTalk Server dehydration policy has changed from [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] to [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].</span></span> <span data-ttu-id="1ecc6-104">之间的差异的介绍[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]和[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]可以按以下的布尔值，确定在冻结汇总[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)](true = 冻结)</span><span class="sxs-lookup"><span data-stu-id="1ecc6-104">The explanation for the difference between [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] and [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] can be summarized by the following Boolean that determines dehydration in [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = dehydrate)</span></span>  
+# <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a><span data-ttu-id="1d23a-102">自 BizTalk Server 2004 后在冻结策略中的变化</span><span class="sxs-lookup"><span data-stu-id="1d23a-102">Changes in Dehydration Policy from BizTalk Server 2004</span></span>
+<span data-ttu-id="1d23a-103">BizTalk Server 冻结策略已更改，不再[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]给 BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="1d23a-103">BizTalk Server dehydration policy has changed from [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] to BizTalk Server.</span></span> <span data-ttu-id="1d23a-104">之间的差异的介绍[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]和 BizTalk Server 可以按以下的布尔值，确定在冻结汇总[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)](true = 冻结)</span><span class="sxs-lookup"><span data-stu-id="1d23a-104">The explanation for the difference between [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] and BizTalk Server can be summarized by the following Boolean that determines dehydration in [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = dehydrate)</span></span>  
   
 ```  
 Dehydrate = (WaitingHistory == -1 OR WaitingHistory > TestThreshold)  
 ```  
   
- <span data-ttu-id="1ecc6-105">冻结策略[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]这样次要中已更改。</span><span class="sxs-lookup"><span data-stu-id="1ecc6-105">Dehydration policy for [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] has changed in this minor way.</span></span> [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]<span data-ttu-id="1ecc6-106">如果没有等待时间超过 2 始终 dehydrates 接收/延迟/侦听 ***MaxThreshold**。</span><span class="sxs-lookup"><span data-stu-id="1ecc6-106"> always dehydrates at a receive/delay/listen if there is a wait longer than 2***MaxThreshold**.</span></span>
+ <span data-ttu-id="1d23a-105">BizTalk Server 的冻结策略已更改此次要的方式。</span><span class="sxs-lookup"><span data-stu-id="1d23a-105">Dehydration policy for BizTalk Server has changed in this minor way.</span></span> <span data-ttu-id="1d23a-106">BizTalk Server 始终 dehydrates 接收/延迟/侦听是否存在等待时间超过 2 ***MaxThreshold**。</span><span class="sxs-lookup"><span data-stu-id="1d23a-106">BizTalk Server always dehydrates at a receive/delay/listen if there is a wait longer than 2***MaxThreshold**.</span></span>

@@ -17,66 +17,66 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6e7440742c5bb8efb8d867ecc96447390336b84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1e5783893bbc9091d0a5f1fb3f116b17413bc5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-enable-and-disable-host-initiated-sso"></a><span data-ttu-id="9ee20-102">如何启用和禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-102">How to Enable and Disable Host Initiated SSO</span></span>
-<span data-ttu-id="9ee20-103">默认情况下，单一登录系统中不启用主机启动的单一登录，而必须由 SSO 管理员启用。</span><span class="sxs-lookup"><span data-stu-id="9ee20-103">By default, host initiated Single Sign-On is not enabled in the Single Sign-On system, and must be enabled by the SSO Administrator.</span></span>  
+# <a name="how-to-enable-and-disable-host-initiated-sso"></a><span data-ttu-id="7e96a-102">如何启用和禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-102">How to Enable and Disable Host Initiated SSO</span></span>
+<span data-ttu-id="7e96a-103">默认情况下，单一登录系统中不启用主机启动的单一登录，而必须由 SSO 管理员启用。</span><span class="sxs-lookup"><span data-stu-id="7e96a-103">By default, host initiated Single Sign-On is not enabled in the Single Sign-On system, and must be enabled by the SSO Administrator.</span></span>  
   
-### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a><span data-ttu-id="9ee20-104">使用 MMC 管理单元启用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-104">To enable host initiated SSO using the MMC Snap-In</span></span>  
+### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a><span data-ttu-id="7e96a-104">使用 MMC 管理单元启用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-104">To enable host initiated SSO using the MMC Snap-In</span></span>  
   
-1.  <span data-ttu-id="9ee20-105">上**启动**菜单上，单击**程序**，单击**Microsoft Enterprise 上单一登录**，然后单击**SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-105">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+1.  <span data-ttu-id="7e96a-105">上**启动**菜单上，单击**程序**，单击**Microsoft Enterprise 上单一登录**，然后单击**SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-105">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
   
-2.  <span data-ttu-id="9ee20-106">在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。</span><span class="sxs-lookup"><span data-stu-id="9ee20-106">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+2.  <span data-ttu-id="7e96a-106">在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。</span><span class="sxs-lookup"><span data-stu-id="7e96a-106">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-3.  <span data-ttu-id="9ee20-107">右键单击“系统” ，然后单击“属性” 。</span><span class="sxs-lookup"><span data-stu-id="9ee20-107">Right-click **System**, and then click **Properties**.</span></span>  
+3.  <span data-ttu-id="7e96a-107">右键单击“系统” ，然后单击“属性” 。</span><span class="sxs-lookup"><span data-stu-id="7e96a-107">Right-click **System**, and then click **Properties**.</span></span>  
   
-4.  <span data-ttu-id="9ee20-108">单击**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="9ee20-108">Click the **Options** tab.</span></span>  
+4.  <span data-ttu-id="7e96a-108">单击**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="7e96a-108">Click the **Options** tab.</span></span>  
   
-5.  <span data-ttu-id="9ee20-109">选择**启用主机启动的 SSO**框中，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-109">Select the **Enable host initiated SSO** box, and click **OK**.</span></span>  
+5.  <span data-ttu-id="7e96a-109">选择**启用主机启动的 SSO**框中，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-109">Select the **Enable host initiated SSO** box, and click **OK**.</span></span>  
   
-### <a name="to-enable-host-initiated-sso-using-the-command-line"></a><span data-ttu-id="9ee20-110">使用命令行启用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-110">To enable host initiated SSO using the command line</span></span>  
+### <a name="to-enable-host-initiated-sso-using-the-command-line"></a><span data-ttu-id="7e96a-110">使用命令行启用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-110">To enable host initiated SSO using the command line</span></span>  
   
-1.  <span data-ttu-id="9ee20-111">在 **“开始”** 菜单上，单击 **“运行”**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-111">On the **Start** menu, click **Run**.</span></span>  
+1.  <span data-ttu-id="7e96a-111">在 **“开始”** 菜单上，单击 **“运行”**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-111">On the **Start** menu, click **Run**.</span></span>  
   
-2.  <span data-ttu-id="9ee20-112">在**运行**对话框中，键入**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-112">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
+2.  <span data-ttu-id="7e96a-112">在**运行**对话框中，键入**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-112">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  <span data-ttu-id="9ee20-113">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="9ee20-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="9ee20-114">默认值是\<驱动器 >: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="9ee20-114">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+3.  <span data-ttu-id="7e96a-113">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="7e96a-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="7e96a-114">默认值是\<驱动器\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="7e96a-114">The default is \<drive\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  <span data-ttu-id="9ee20-115">类型**ssomanage-启用 hisso**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-115">Type **ssomanage -enable hisso**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="9ee20-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="9ee20-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
- <span data-ttu-id="9ee20-117">禁用 SSO 将应用于整个 SSO 系统，与主机启动的 SSO 相关的所有操作都将关闭。</span><span class="sxs-lookup"><span data-stu-id="9ee20-117">Disabling SSO applies to the entire SSO system, and all operations related to host initiated SSO are turned off.</span></span>  
-  
-#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a><span data-ttu-id="9ee20-118">使用 MMC 管理单元禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-118">To disable host initiated SSO using the MMC Snap-In</span></span>  
-  
-1.  <span data-ttu-id="9ee20-119">上**启动**菜单上，单击**程序**，单击**Microsoft Enterprise 上单一登录**，然后单击**SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-119">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
-  
-2.  <span data-ttu-id="9ee20-120">在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。</span><span class="sxs-lookup"><span data-stu-id="9ee20-120">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
-  
-3.  <span data-ttu-id="9ee20-121">右键单击“系统” ，然后单击“属性” 。</span><span class="sxs-lookup"><span data-stu-id="9ee20-121">Right-click **System**, and then click **Properties**.</span></span>  
-  
-4.  <span data-ttu-id="9ee20-122">单击**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="9ee20-122">Click the **Options** tab.</span></span>  
-  
-5.  <span data-ttu-id="9ee20-123">清除**启用主机启动的 SSO**框中，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-123">Clear the **Enable host initiated SSO** box, and click **OK**.</span></span>  
-  
-#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a><span data-ttu-id="9ee20-124">使用命令行禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-124">To disable host initiated SSO using the command line</span></span>  
-  
-1.  <span data-ttu-id="9ee20-125">在 **“开始”** 菜单上，单击 **“运行”**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-125">On the **Start** menu, click **Run**.</span></span>  
-  
-2.  <span data-ttu-id="9ee20-126">在**运行**对话框中，键入**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ee20-126">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
-  
-3.  <span data-ttu-id="9ee20-127">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="9ee20-127">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="9ee20-128">默认值是\<驱动器 >: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="9ee20-128">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-4.  <span data-ttu-id="9ee20-129">类型**ssomanage-禁用 hisso**根据。</span><span class="sxs-lookup"><span data-stu-id="9ee20-129">Type **ssomanage -disable hisso** as appropriate.</span></span>  
+4.  <span data-ttu-id="7e96a-115">类型**ssomanage-启用 hisso**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-115">Type **ssomanage -enable hisso**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ee20-130">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="9ee20-130">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+    >  <span data-ttu-id="7e96a-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="7e96a-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9ee20-131">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9ee20-131">See Also</span></span>  
- [<span data-ttu-id="9ee20-132">主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="9ee20-132">Host Initiated SSO</span></span>](../core/host-initiated-sso.md)
+ <span data-ttu-id="7e96a-117">禁用 SSO 将应用于整个 SSO 系统，与主机启动的 SSO 相关的所有操作都将关闭。</span><span class="sxs-lookup"><span data-stu-id="7e96a-117">Disabling SSO applies to the entire SSO system, and all operations related to host initiated SSO are turned off.</span></span>  
+  
+#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a><span data-ttu-id="7e96a-118">使用 MMC 管理单元禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-118">To disable host initiated SSO using the MMC Snap-In</span></span>  
+  
+1.  <span data-ttu-id="7e96a-119">上**启动**菜单上，单击**程序**，单击**Microsoft Enterprise 上单一登录**，然后单击**SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-119">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+  
+2.  <span data-ttu-id="7e96a-120">在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。</span><span class="sxs-lookup"><span data-stu-id="7e96a-120">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+  
+3.  <span data-ttu-id="7e96a-121">右键单击“系统” ，然后单击“属性” 。</span><span class="sxs-lookup"><span data-stu-id="7e96a-121">Right-click **System**, and then click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="7e96a-122">单击**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="7e96a-122">Click the **Options** tab.</span></span>  
+  
+5.  <span data-ttu-id="7e96a-123">清除**启用主机启动的 SSO**框中，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-123">Clear the **Enable host initiated SSO** box, and click **OK**.</span></span>  
+  
+#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a><span data-ttu-id="7e96a-124">使用命令行禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-124">To disable host initiated SSO using the command line</span></span>  
+  
+1.  <span data-ttu-id="7e96a-125">在 **“开始”** 菜单上，单击 **“运行”**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-125">On the **Start** menu, click **Run**.</span></span>  
+  
+2.  <span data-ttu-id="7e96a-126">在**运行**对话框中，键入**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7e96a-126">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
+  
+3.  <span data-ttu-id="7e96a-127">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="7e96a-127">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="7e96a-128">默认值是\<驱动器\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="7e96a-128">The default is \<drive\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+4.  <span data-ttu-id="7e96a-129">类型**ssomanage-禁用 hisso**根据。</span><span class="sxs-lookup"><span data-stu-id="7e96a-129">Type **ssomanage -disable hisso** as appropriate.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7e96a-130">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="7e96a-130">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7e96a-131">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7e96a-131">See Also</span></span>  
+ [<span data-ttu-id="7e96a-132">主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-132">Host Initiated SSO</span></span>](../core/host-initiated-sso.md)

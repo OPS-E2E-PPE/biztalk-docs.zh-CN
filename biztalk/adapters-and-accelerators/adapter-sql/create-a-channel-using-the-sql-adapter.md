@@ -12,40 +12,40 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79fa2e40bd80bb3a4fd8b976aa31a34e4d3c0bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c31146310b8c8b559fcd93d19362679b060cb42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="create-a-channel-using-the-sql-adapter"></a><span data-ttu-id="bb3b6-102">创建一个通道，使用 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="bb3b6-102">Create a channel using the SQL adapter</span></span>
-<span data-ttu-id="bb3b6-103">在 WCF 通道模型中，调用 SQL Server 数据库上的操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-103">In the WCF channel model, you invoke operations on the SQL Server database and receive the results by exchanging SOAP messages with the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] over a WCF channel.</span></span>  
+# <a name="create-a-channel-using-the-sql-adapter"></a><span data-ttu-id="52b5b-102">创建一个通道，使用 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="52b5b-102">Create a channel using the SQL adapter</span></span>
+<span data-ttu-id="52b5b-103">在 WCF 通道模型中，调用 SQL Server 数据库上的操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="52b5b-103">In the WCF channel model, you invoke operations on the SQL Server database and receive the results by exchanging SOAP messages with the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] over a WCF channel.</span></span>  
   
--   <span data-ttu-id="bb3b6-104">通过使用调用出站操作**IRequestChannel**或**IOutputChannel**将消息发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-104">You invoke outbound operations by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
+-   <span data-ttu-id="52b5b-104">通过使用调用出站操作**IRequestChannel**或**IOutputChannel**将消息发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="52b5b-104">You invoke outbound operations by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
   
--   <span data-ttu-id="bb3b6-105">通过接收消息接收入站操作的消息**IInputChannel**为**轮询**， **TypedPolling**，或**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-105">You receive messages for inbound operations by receiving messages over an **IInputChannel** for **Polling**, **TypedPolling**, or **Notification** operations.</span></span>  
+-   <span data-ttu-id="52b5b-105">通过接收消息接收入站操作的消息**IInputChannel**为**轮询**， **TypedPolling**，或**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="52b5b-105">You receive messages for inbound operations by receiving messages over an **IInputChannel** for **Polling**, **TypedPolling**, or **Notification** operations.</span></span>  
   
- <span data-ttu-id="bb3b6-106">本主题中的过程提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-106">The procedures in this topic provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
+ <span data-ttu-id="52b5b-106">本主题中的过程提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="52b5b-106">The procedures in this topic provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
   
-## <a name="creating-outbound-client-channels"></a><span data-ttu-id="bb3b6-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="bb3b6-107">Creating Outbound (Client) Channels</span></span>  
- <span data-ttu-id="bb3b6-108">你可以使用**IRequestChannel**或**IOutputChannel**来调用 SQL Server 数据库上的操作。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SQL Server database.</span></span> <span data-ttu-id="bb3b6-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="bb3b6-110">然后可以使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="bb3b6-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
+## <a name="creating-outbound-client-channels"></a><span data-ttu-id="52b5b-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="52b5b-107">Creating Outbound (Client) Channels</span></span>  
+ <span data-ttu-id="52b5b-108">你可以使用**IRequestChannel**或**IOutputChannel**来调用 SQL Server 数据库上的操作。</span><span class="sxs-lookup"><span data-stu-id="52b5b-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SQL Server database.</span></span> <span data-ttu-id="52b5b-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="52b5b-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="52b5b-110">然后可以使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="52b5b-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="52b5b-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="52b5b-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="bb3b6-112">若要创建并打开一个出站通道</span><span class="sxs-lookup"><span data-stu-id="bb3b6-112">To create and open an outbound channel</span></span>  
+#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="52b5b-112">若要创建并打开一个出站通道</span><span class="sxs-lookup"><span data-stu-id="52b5b-112">To create and open an outbound channel</span></span>  
   
-1.  <span data-ttu-id="bb3b6-113">创建和初始化的实例**ChannelFactory**使用终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="bb3b6-114">终结点指定的 SQL Server 连接 URI 和绑定是的一个实例**sqlBinding**。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-114">The endpoint specifies a SQL Server connection URI and the binding is an instance of **sqlBinding**.</span></span>  
+1.  <span data-ttu-id="52b5b-113">创建和初始化的实例**ChannelFactory**使用终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="52b5b-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="52b5b-114">终结点指定的 SQL Server 连接 URI 和绑定是的一个实例**sqlBinding**。</span><span class="sxs-lookup"><span data-stu-id="52b5b-114">The endpoint specifies a SQL Server connection URI and the binding is an instance of **sqlBinding**.</span></span>  
   
-2.  <span data-ttu-id="bb3b6-115">通过使用中提供的通道工厂的 SQL Server 凭据**凭据**属性。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-115">Provide SQL Server credentials for the channel factory by using the **Credentials** property.</span></span>  
+2.  <span data-ttu-id="52b5b-115">通过使用中提供的通道工厂的 SQL Server 凭据**凭据**属性。</span><span class="sxs-lookup"><span data-stu-id="52b5b-115">Provide SQL Server credentials for the channel factory by using the **Credentials** property.</span></span>  
   
-3.  <span data-ttu-id="bb3b6-116">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-116">Open the channel factory.</span></span>  
+3.  <span data-ttu-id="52b5b-116">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="52b5b-116">Open the channel factory.</span></span>  
   
-4.  <span data-ttu-id="bb3b6-117">获取通道的实例通过调用**CreateChannel**的通道工厂的方法。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
+4.  <span data-ttu-id="52b5b-117">获取通道的实例通过调用**CreateChannel**的通道工厂的方法。</span><span class="sxs-lookup"><span data-stu-id="52b5b-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
   
-5.  <span data-ttu-id="bb3b6-118">打开通道。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-118">Open the channel.</span></span>  
+5.  <span data-ttu-id="52b5b-118">打开通道。</span><span class="sxs-lookup"><span data-stu-id="52b5b-118">Open the channel.</span></span>  
   
- <span data-ttu-id="bb3b6-119">在代码中或从配置，你可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
+ <span data-ttu-id="52b5b-119">在代码中或从配置，你可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="52b5b-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="bb3b6-120">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="bb3b6-120">Specifying the Binding and Endpoint Address in Code</span></span>  
- <span data-ttu-id="bb3b6-121">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="bb3b6-122">若要创建的代码**IOutputChannel**具有相同，只不过你必须指定**IOutputChannel**接口**ChannelFactory**并通道类型。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="52b5b-120">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="52b5b-120">Specifying the Binding and Endpoint Address in Code</span></span>  
+ <span data-ttu-id="52b5b-121">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="52b5b-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="52b5b-122">若要创建的代码**IOutputChannel**具有相同，只不过你必须指定**IOutputChannel**接口**ChannelFactory**并通道类型。</span><span class="sxs-lookup"><span data-stu-id="52b5b-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
   
 ```  
 // Create binding -- set binding properties before you open the factory.  
@@ -70,8 +70,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="bb3b6-123">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="bb3b6-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
- <span data-ttu-id="bb3b6-124">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="52b5b-123">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="52b5b-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
+ <span data-ttu-id="52b5b-124">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="52b5b-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
   
 ```  
 // Create channel factory from configuration.  
@@ -90,8 +90,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-#### <a name="the-configuration-settings"></a><span data-ttu-id="bb3b6-125">配置设置</span><span class="sxs-lookup"><span data-stu-id="bb3b6-125">The Configuration Settings</span></span>  
- <span data-ttu-id="bb3b6-126">下面的代码演示使用前面示例的配置设置。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="bb3b6-127">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IOutputChannel"根据你想要创建的通道形状的种类。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IOutputChannel" depending on the kind of channel shape that you want to create.</span></span>  
+#### <a name="the-configuration-settings"></a><span data-ttu-id="52b5b-125">配置设置</span><span class="sxs-lookup"><span data-stu-id="52b5b-125">The Configuration Settings</span></span>  
+ <span data-ttu-id="52b5b-126">下面的代码演示使用前面示例的配置设置。</span><span class="sxs-lookup"><span data-stu-id="52b5b-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="52b5b-127">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IOutputChannel"根据你想要创建的通道形状的种类。</span><span class="sxs-lookup"><span data-stu-id="52b5b-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IOutputChannel" depending on the kind of channel shape that you want to create.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -119,27 +119,27 @@ channel.Open();
 </configuration>  
 ```  
   
-## <a name="creating-inbound-service-channels"></a><span data-ttu-id="bb3b6-128">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="bb3b6-128">Creating Inbound (Service) Channels</span></span>  
- <span data-ttu-id="bb3b6-129">你配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]轮询通过设置绑定属性的实例上的 SQL Server 数据库表和视图**sqlBinding**。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-129">You configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database tables and views by setting binding properties on an instance of **sqlBinding**.</span></span> <span data-ttu-id="bb3b6-130">然后使用此绑定来生成通道侦听器，从中可以获取**IInputChannel**通道接收**轮询**， **TypedPolling**，或**通知**适配器中的操作。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive the **Polling**, **TypedPolling**, or **Notification** operation from the adapter.</span></span>  
+## <a name="creating-inbound-service-channels"></a><span data-ttu-id="52b5b-128">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="52b5b-128">Creating Inbound (Service) Channels</span></span>  
+ <span data-ttu-id="52b5b-129">你配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]轮询通过设置绑定属性的实例上的 SQL Server 数据库表和视图**sqlBinding**。</span><span class="sxs-lookup"><span data-stu-id="52b5b-129">You configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database tables and views by setting binding properties on an instance of **sqlBinding**.</span></span> <span data-ttu-id="52b5b-130">然后使用此绑定来生成通道侦听器，从中可以获取**IInputChannel**通道接收**轮询**， **TypedPolling**，或**通知**适配器中的操作。</span><span class="sxs-lookup"><span data-stu-id="52b5b-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive the **Polling**, **TypedPolling**, or **Notification** operation from the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-iinputchannel-to-receive-inbound-operations"></a><span data-ttu-id="bb3b6-131">若要创建并打开 IInputChannel 接收入站的操作</span><span class="sxs-lookup"><span data-stu-id="bb3b6-131">To create and open an IInputChannel to receive inbound operations</span></span>  
+#### <a name="to-create-and-open-an-iinputchannel-to-receive-inbound-operations"></a><span data-ttu-id="52b5b-131">若要创建并打开 IInputChannel 接收入站的操作</span><span class="sxs-lookup"><span data-stu-id="52b5b-131">To create and open an IInputChannel to receive inbound operations</span></span>  
   
-1.  <span data-ttu-id="bb3b6-132">创建的实例**SQLBinding**。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-132">Create an instance of **SQLBinding**.</span></span>  
+1.  <span data-ttu-id="52b5b-132">创建的实例**SQLBinding**。</span><span class="sxs-lookup"><span data-stu-id="52b5b-132">Create an instance of **SQLBinding**.</span></span>  
   
-2.  <span data-ttu-id="bb3b6-133">设置入站操作所需的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-133">Set the binding properties required for inbound operation.</span></span> <span data-ttu-id="bb3b6-134">例如，对于**轮询**操作，必须设置至少**InboundOperationType**， **PolledDataAvailableStatement**，和**PollingStatement**绑定属性来配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]轮询 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-134">For example, for a **Polling** operation, at a minimum you must set the **InboundOperationType**, **PolledDataAvailableStatement**, and **PollingStatement** binding properties to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database.</span></span>  
+2.  <span data-ttu-id="52b5b-133">设置入站操作所需的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="52b5b-133">Set the binding properties required for inbound operation.</span></span> <span data-ttu-id="52b5b-134">例如，对于**轮询**操作，必须设置至少**InboundOperationType**， **PolledDataAvailableStatement**，和**PollingStatement**绑定属性来配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]轮询 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="52b5b-134">For example, for a **Polling** operation, at a minimum you must set the **InboundOperationType**, **PolledDataAvailableStatement**, and **PollingStatement** binding properties to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to poll the SQL Server database.</span></span>  
   
-3.  <span data-ttu-id="bb3b6-135">创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel >**方法**SQLBinding**。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-135">Create a channel listener by invoking **BuildChannelListener\<IInputChannel>** method on the **SQLBinding**.</span></span> <span data-ttu-id="bb3b6-136">作为此方法的参数之一指定 SQL Server 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-136">You specify the SQL Server connection URI as one of the parameters to this method.</span></span>  
+3.  <span data-ttu-id="52b5b-135">创建通道侦听器，通过调用**BuildChannelListener\<IInputChannel\>** 方法**SQLBinding**。</span><span class="sxs-lookup"><span data-stu-id="52b5b-135">Create a channel listener by invoking **BuildChannelListener\<IInputChannel\>** method on the **SQLBinding**.</span></span> <span data-ttu-id="52b5b-136">作为此方法的参数之一指定 SQL Server 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="52b5b-136">You specify the SQL Server connection URI as one of the parameters to this method.</span></span>  
   
-4.  <span data-ttu-id="bb3b6-137">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-137">Open the listener.</span></span>  
+4.  <span data-ttu-id="52b5b-137">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="52b5b-137">Open the listener.</span></span>  
   
-5.  <span data-ttu-id="bb3b6-138">获取**IInputChannel**通道通过调用**AcceptChannel**侦听程序的方法。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-138">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
+5.  <span data-ttu-id="52b5b-138">获取**IInputChannel**通道通过调用**AcceptChannel**侦听程序的方法。</span><span class="sxs-lookup"><span data-stu-id="52b5b-138">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
   
-6.  <span data-ttu-id="bb3b6-139">打开通道。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-139">Open the channel.</span></span>  
+6.  <span data-ttu-id="52b5b-139">打开通道。</span><span class="sxs-lookup"><span data-stu-id="52b5b-139">Open the channel.</span></span>  
   
- <span data-ttu-id="bb3b6-140">下面的代码演示如何创建一个通道侦听器，并获取**IInputChannel**从适配器接收数据更改消息。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-140">The following code shows how to create a channel listener and get an **IInputChannel** to receive data-changed messages from the adapter.</span></span>  
+ <span data-ttu-id="52b5b-140">下面的代码演示如何创建一个通道侦听器，并获取**IInputChannel**从适配器接收数据更改消息。</span><span class="sxs-lookup"><span data-stu-id="52b5b-140">The following code shows how to create a channel listener and get an **IInputChannel** to receive data-changed messages from the adapter.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="bb3b6-141">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]仅支持单向接收。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-141">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="bb3b6-142">因此，你必须使用**IInputChannel**从 SQL Server 接收入站操作的消息。</span><span class="sxs-lookup"><span data-stu-id="bb3b6-142">So, you must use **IInputChannel** to receive messages for inbound operations from SQL Server.</span></span>  
+>  <span data-ttu-id="52b5b-141">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]仅支持单向接收。</span><span class="sxs-lookup"><span data-stu-id="52b5b-141">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="52b5b-142">因此，你必须使用**IInputChannel**从 SQL Server 接收入站操作的消息。</span><span class="sxs-lookup"><span data-stu-id="52b5b-142">So, you must use **IInputChannel** to receive messages for inbound operations from SQL Server.</span></span>  
   
 ```  
 // Create a binding: specify the InboundOperationType, the PolledDataAvailableStatement, and   
@@ -167,5 +167,5 @@ IInputChannel channel = listener.AcceptChannel();
 channel.Open();  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="bb3b6-143">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bb3b6-143">See Also</span></span>  
-[<span data-ttu-id="bb3b6-144">开发应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="bb3b6-144">Develop applications using the WCF Channel model</span></span>](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="52b5b-143">另请参阅</span><span class="sxs-lookup"><span data-stu-id="52b5b-143">See Also</span></span>  
+[<span data-ttu-id="52b5b-144">使用 WCF 通道模型开发应用程序</span><span class="sxs-lookup"><span data-stu-id="52b5b-144">Develop applications using the WCF Channel model</span></span>](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

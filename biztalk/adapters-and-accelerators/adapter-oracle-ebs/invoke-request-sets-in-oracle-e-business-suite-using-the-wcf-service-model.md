@@ -12,35 +12,35 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01765cc47b0d8eafffcf30160ce9ee6c840003d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec243c1d1ed1093241e4dc6120c3703fbf2e4542
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="005b4-102">调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集</span><span class="sxs-lookup"><span data-stu-id="005b4-102">Invoke request sets in Oracle E-Business Suite using the WCF service model</span></span>
-[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]<span data-ttu-id="005b4-103">使您能够在 Oracle E-business Suite 中执行请求集。</span><span class="sxs-lookup"><span data-stu-id="005b4-103"> enables you to execute request sets in Oracle E-Business Suite.</span></span> <span data-ttu-id="005b4-104">请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。</span><span class="sxs-lookup"><span data-stu-id="005b4-104">Request sets are divided into one or more stages, and each stage contains a set of reports and concurrent programs.</span></span> <span data-ttu-id="005b4-105">有关如何适配器支持请求集的详细信息，请参阅[对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。</span><span class="sxs-lookup"><span data-stu-id="005b4-105">For more information about how the adapter supports request sets, see [Operations on Request Sets](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md).</span></span>  
+# <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="a190d-102">调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集</span><span class="sxs-lookup"><span data-stu-id="a190d-102">Invoke request sets in Oracle E-Business Suite using the WCF service model</span></span>
+[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]<span data-ttu-id="a190d-103">使您能够在 Oracle E-business Suite 中执行请求集。</span><span class="sxs-lookup"><span data-stu-id="a190d-103"> enables you to execute request sets in Oracle E-Business Suite.</span></span> <span data-ttu-id="a190d-104">请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。</span><span class="sxs-lookup"><span data-stu-id="a190d-104">Request sets are divided into one or more stages, and each stage contains a set of reports and concurrent programs.</span></span> <span data-ttu-id="a190d-105">有关如何适配器支持请求集的详细信息，请参阅[对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-105">For more information about how the adapter supports request sets, see [Operations on Request Sets](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md).</span></span>  
   
-## <a name="the-wcf-client-class"></a><span data-ttu-id="005b4-106">WCF 客户端类</span><span class="sxs-lookup"><span data-stu-id="005b4-106">The WCF Client Class</span></span>  
- <span data-ttu-id="005b4-107">调用请求设置为生成 WCF 客户端的名称[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]下表中列出。</span><span class="sxs-lookup"><span data-stu-id="005b4-107">The name of the WCF client generated for invoking the request sets by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is listed in the following table.</span></span>  
+## <a name="the-wcf-client-class"></a><span data-ttu-id="a190d-106">WCF 客户端类</span><span class="sxs-lookup"><span data-stu-id="a190d-106">The WCF Client Class</span></span>  
+ <span data-ttu-id="a190d-107">调用请求设置为生成 WCF 客户端的名称[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]下表中列出。</span><span class="sxs-lookup"><span data-stu-id="a190d-107">The name of the WCF client generated for invoking the request sets by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is listed in the following table.</span></span>  
   
-|<span data-ttu-id="005b4-108">项目</span><span class="sxs-lookup"><span data-stu-id="005b4-108">Artifact</span></span>|<span data-ttu-id="005b4-109">WCF 客户端名称</span><span class="sxs-lookup"><span data-stu-id="005b4-109">WCF Client Name</span></span>|  
+|<span data-ttu-id="a190d-108">项目</span><span class="sxs-lookup"><span data-stu-id="a190d-108">Artifact</span></span>|<span data-ttu-id="a190d-109">WCF 客户端名称</span><span class="sxs-lookup"><span data-stu-id="a190d-109">WCF Client Name</span></span>|  
 |--------------|---------------------|  
-|<span data-ttu-id="005b4-110">请求组</span><span class="sxs-lookup"><span data-stu-id="005b4-110">Request Set</span></span>|<span data-ttu-id="005b4-111">RequestSets_ [APP_NAME] 客户端</span><span class="sxs-lookup"><span data-stu-id="005b4-111">RequestSets_[APP_NAME]Client</span></span>|  
+|<span data-ttu-id="a190d-110">请求组</span><span class="sxs-lookup"><span data-stu-id="a190d-110">Request Set</span></span>|<span data-ttu-id="a190d-111">RequestSets_ [APP_NAME] 客户端</span><span class="sxs-lookup"><span data-stu-id="a190d-111">RequestSets_[APP_NAME]Client</span></span>|  
   
- <span data-ttu-id="005b4-112">[APP_NAME] = Oracle E-business Suite 应用程序; 实际名称例如，SQLAP。</span><span class="sxs-lookup"><span data-stu-id="005b4-112">[APP_NAME] = Actual name of the Oracle E-Business Suite application; for example, SQLAP.</span></span>  
+ <span data-ttu-id="a190d-112">[APP_NAME] = Oracle E-business Suite 应用程序; 实际名称例如，SQLAP。</span><span class="sxs-lookup"><span data-stu-id="a190d-112">[APP_NAME] = Actual name of the Oracle E-Business Suite application; for example, SQLAP.</span></span>  
   
-### <a name="method-signature-for-invoking-request-sets"></a><span data-ttu-id="005b4-113">用于调用请求集的方法签名</span><span class="sxs-lookup"><span data-stu-id="005b4-113">Method Signature for Invoking Request Sets</span></span>  
- <span data-ttu-id="005b4-114">下表显示请求集的方法签名。</span><span class="sxs-lookup"><span data-stu-id="005b4-114">The following table shows the method signature for request sets.</span></span>  
+### <a name="method-signature-for-invoking-request-sets"></a><span data-ttu-id="a190d-113">用于调用请求集的方法签名</span><span class="sxs-lookup"><span data-stu-id="a190d-113">Method Signature for Invoking Request Sets</span></span>  
+ <span data-ttu-id="a190d-114">下表显示请求集的方法签名。</span><span class="sxs-lookup"><span data-stu-id="a190d-114">The following table shows the method signature for request sets.</span></span>  
   
-|<span data-ttu-id="005b4-115">运算</span><span class="sxs-lookup"><span data-stu-id="005b4-115">Operation</span></span>|<span data-ttu-id="005b4-116">方法签名</span><span class="sxs-lookup"><span data-stu-id="005b4-116">Method Signature</span></span>|  
+|<span data-ttu-id="a190d-115">运算</span><span class="sxs-lookup"><span data-stu-id="a190d-115">Operation</span></span>|<span data-ttu-id="a190d-116">方法签名</span><span class="sxs-lookup"><span data-stu-id="a190d-116">Method Signature</span></span>|  
 |---------------|----------------------|  
-|<span data-ttu-id="005b4-117">请求组</span><span class="sxs-lookup"><span data-stu-id="005b4-117">Request Set</span></span>|<span data-ttu-id="005b4-118">公共\<返回类型 >\<请求集名称 > (param 1，param 2，...)</span><span class="sxs-lookup"><span data-stu-id="005b4-118">public \<return type> \<request set name>(param 1, param 2, …)</span></span>|  
+|<span data-ttu-id="a190d-117">请求组</span><span class="sxs-lookup"><span data-stu-id="a190d-117">Request Set</span></span>|<span data-ttu-id="a190d-118">公共\<返回类型\>\<请求设置名称\>(param 1，param 2，...)</span><span class="sxs-lookup"><span data-stu-id="a190d-118">public \<return type\> \<request set name\>(param 1, param 2, …)</span></span>|  
   
- <span data-ttu-id="005b4-119">例如，下面的代码演示方法签名，用于生成 WCF 客户端类**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="005b4-119">As an example, the following code shows the method signatures for a WCF client class generated for the **reqset_singlestage** request set.</span></span>  
+ <span data-ttu-id="a190d-119">例如，下面的代码演示方法签名，用于生成 WCF 客户端类**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="a190d-119">As an example, the following code shows the method signatures for a WCF client class generated for the **reqset_singlestage** request set.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="005b4-120">这是自定义请求组，并且不可能 Oracle 电子商务解决方案实例上可用。</span><span class="sxs-lookup"><span data-stu-id="005b4-120">This is a custom request set and might not be available on your Oracle E-Business Solution instance.</span></span>  
+>  <span data-ttu-id="a190d-120">这是自定义请求组，并且不可能 Oracle 电子商务解决方案实例上可用。</span><span class="sxs-lookup"><span data-stu-id="a190d-120">This is a custom request set and might not be available on your Oracle E-Business Solution instance.</span></span>  
   
 ```  
 public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<RequestSets_SQLAP>, RequestSets_SQLAP{      
@@ -55,29 +55,29 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
 }  
 ```  
   
- <span data-ttu-id="005b4-121">在此代码段， **RequestSets_SQLAPClient**是 WCF 中的类的生成的 OracleEBSBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="005b4-121">In this snippet, **RequestSets_SQLAPClient** is the name of the WCF class in the OracleEBSBindingClient.cs generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="005b4-122">**REQSTG**是要调用的请求集的方法的名称。</span><span class="sxs-lookup"><span data-stu-id="005b4-122">**REQSTG** is the name of the method to invoke the request set.</span></span>  
+ <span data-ttu-id="a190d-121">在此代码段， **RequestSets_SQLAPClient**是 WCF 中的类的生成的 OracleEBSBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a190d-121">In this snippet, **RequestSets_SQLAPClient** is the name of the WCF class in the OracleEBSBindingClient.cs generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="a190d-122">**REQSTG**是要调用的请求集的方法的名称。</span><span class="sxs-lookup"><span data-stu-id="a190d-122">**REQSTG** is the name of the method to invoke the request set.</span></span>  
   
-## <a name="creating-a-wcf-client-to-invoke-request-sets"></a><span data-ttu-id="005b4-123">创建 WCF 客户端来调用请求集</span><span class="sxs-lookup"><span data-stu-id="005b4-123">Creating a WCF Client to Invoke Request Sets</span></span>  
- <span data-ttu-id="005b4-124">泛型组执行对 Oracle E-business Suite 使用 WCF 客户端的操作所需的操作涉及到一组任务中所述[与 Oracle E-business Suite 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="005b4-124">The generic set of actions required to perform an operation on Oracle E-Business Suite using a WCF client involves a set of tasks described in [Overview of the WCF service model with the Oracle E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md).</span></span> <span data-ttu-id="005b4-125">本部分介绍如何创建 WCF 客户端来调用**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="005b4-125">This section describes how to create a WCF client to invoke the **reqset_singlestage** request set.</span></span>  
+## <a name="creating-a-wcf-client-to-invoke-request-sets"></a><span data-ttu-id="a190d-123">创建 WCF 客户端来调用请求集</span><span class="sxs-lookup"><span data-stu-id="a190d-123">Creating a WCF Client to Invoke Request Sets</span></span>  
+ <span data-ttu-id="a190d-124">泛型组执行对 Oracle E-business Suite 使用 WCF 客户端的操作所需的操作涉及到一组任务中所述[与 Oracle E-business Suite 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-124">The generic set of actions required to perform an operation on Oracle E-Business Suite using a WCF client involves a set of tasks described in [Overview of the WCF service model with the Oracle E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md).</span></span> <span data-ttu-id="a190d-125">本部分介绍如何创建 WCF 客户端来调用**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="a190d-125">This section describes how to create a WCF client to invoke the **reqset_singlestage** request set.</span></span>  
   
-#### <a name="to-create-a-wcf-client"></a><span data-ttu-id="005b4-126">若要创建 WCF 客户端</span><span class="sxs-lookup"><span data-stu-id="005b4-126">To create a WCF client</span></span>  
+#### <a name="to-create-a-wcf-client"></a><span data-ttu-id="a190d-126">若要创建 WCF 客户端</span><span class="sxs-lookup"><span data-stu-id="a190d-126">To create a WCF client</span></span>  
   
-1.  <span data-ttu-id="005b4-127">在 Visual Studio 中创建 Visual C# 项目。</span><span class="sxs-lookup"><span data-stu-id="005b4-127">Create a Visual C# project in Visual Studio.</span></span> <span data-ttu-id="005b4-128">有关本主题中，创建一个控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="005b4-128">For this topic, create a console application.</span></span>  
+1.  <span data-ttu-id="a190d-127">在 Visual Studio 中创建 Visual C# 项目。</span><span class="sxs-lookup"><span data-stu-id="a190d-127">Create a Visual C# project in Visual Studio.</span></span> <span data-ttu-id="a190d-128">有关本主题中，创建一个控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="a190d-128">For this topic, create a console application.</span></span>  
   
-2.  <span data-ttu-id="005b4-129">生成的 WCF 客户端类**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="005b4-129">Generate the WCF client class for the **reqset_singlestage** request set.</span></span> <span data-ttu-id="005b4-130">有关生成 WCF 客户端类的详细信息，请参阅[生成 WCF 客户端或 Oracle E-business Suite 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="005b4-130">For more information about generating a WCF client class, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
+2.  <span data-ttu-id="a190d-129">生成的 WCF 客户端类**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="a190d-129">Generate the WCF client class for the **reqset_singlestage** request set.</span></span> <span data-ttu-id="a190d-130">有关生成 WCF 客户端类的详细信息，请参阅[生成 WCF 客户端或 Oracle E-business Suite 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-130">For more information about generating a WCF client class, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).</span></span>  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="005b4-131">在生成 WCF 客户端类前, 请确保你设置**EnableBizTalkCompatibilityMode**绑定属性为 false。</span><span class="sxs-lookup"><span data-stu-id="005b4-131">Before generating the WCF client class, make sure you set the **EnableBizTalkCompatibilityMode** binding property to false.</span></span>  
+    >  <span data-ttu-id="a190d-131">在生成 WCF 客户端类前, 请确保你设置**EnableBizTalkCompatibilityMode**绑定属性为 false。</span><span class="sxs-lookup"><span data-stu-id="a190d-131">Before generating the WCF client class, make sure you set the **EnableBizTalkCompatibilityMode** binding property to false.</span></span>  
   
-3.  <span data-ttu-id="005b4-132">在解决方案资源管理器，添加对引用`Microsoft.Adapters.OracleEBS`和`Microsoft.ServiceModel.Channels`。</span><span class="sxs-lookup"><span data-stu-id="005b4-132">In the Solution Explorer, add reference to `Microsoft.Adapters.OracleEBS` and `Microsoft.ServiceModel.Channels`.</span></span>  
+3.  <span data-ttu-id="a190d-132">在解决方案资源管理器，添加对引用`Microsoft.Adapters.OracleEBS`和`Microsoft.ServiceModel.Channels`。</span><span class="sxs-lookup"><span data-stu-id="a190d-132">In the Solution Explorer, add reference to `Microsoft.Adapters.OracleEBS` and `Microsoft.ServiceModel.Channels`.</span></span>  
   
-4.  <span data-ttu-id="005b4-133">打开 Program.cs 文件并添加以下命名空间：</span><span class="sxs-lookup"><span data-stu-id="005b4-133">Open the Program.cs file and add the following namespaces:</span></span>  
+4.  <span data-ttu-id="a190d-133">打开 Program.cs 文件并添加以下命名空间：</span><span class="sxs-lookup"><span data-stu-id="a190d-133">Open the Program.cs file and add the following namespaces:</span></span>  
   
     -   `Microsoft.Adapters.OracleEBS`  
   
     -   `System.ServiceModel`  
   
-5.  <span data-ttu-id="005b4-134">打开 Program.cs 文件并创建客户端，如下面的代码段中所述。</span><span class="sxs-lookup"><span data-stu-id="005b4-134">Open the Program.cs file and create a client as described in the snippet below.</span></span>  
+5.  <span data-ttu-id="a190d-134">打开 Program.cs 文件并创建客户端，如下面的代码段中所述。</span><span class="sxs-lookup"><span data-stu-id="a190d-134">Open the Program.cs file and create a client as described in the snippet below.</span></span>  
   
     ```  
     OracleEBSBinding binding = new OracleEBSBinding();  
@@ -85,19 +85,19 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
     RequestSets_SQLAPClient client = new RequestSets_SQLAPClient(binding, address);  
     ```  
   
-     <span data-ttu-id="005b4-135">在此代码段，`RequestSets_SQLAPClient`是 OracleEBSBindingClient.cs 中定义的 WCF 客户端。</span><span class="sxs-lookup"><span data-stu-id="005b4-135">In this snippet, `RequestSets_SQLAPClient` is the WCF client defined in OracleEBSBindingClient.cs.</span></span> <span data-ttu-id="005b4-136">此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="005b4-136">This file is generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
+     <span data-ttu-id="a190d-135">在此代码段，`RequestSets_SQLAPClient`是 OracleEBSBindingClient.cs 中定义的 WCF 客户端。</span><span class="sxs-lookup"><span data-stu-id="a190d-135">In this snippet, `RequestSets_SQLAPClient` is the WCF client defined in OracleEBSBindingClient.cs.</span></span> <span data-ttu-id="a190d-136">此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a190d-136">This file is generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="005b4-137">在此代码段，则显式应用程序代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="005b4-137">In this snippet, you explicitly specify the binding and endpoint address in your application code.</span></span> <span data-ttu-id="005b4-138">你还可以从还生成的应用程序配置文件 app.config，使用这些值[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="005b4-138">You can also use these values from the application configuration file, app.config, also generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="005b4-139">有关指定客户端绑定的不同方法的详细信息，请参阅[配置客户端绑定 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)。</span><span class="sxs-lookup"><span data-stu-id="005b4-139">For more information about the different ways of specifying client binding, see [Configure a client binding for the Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md).</span></span>  
+    >  <span data-ttu-id="a190d-137">在此代码段，则显式应用程序代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="a190d-137">In this snippet, you explicitly specify the binding and endpoint address in your application code.</span></span> <span data-ttu-id="a190d-138">你还可以从还生成的应用程序配置文件 app.config，使用这些值[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a190d-138">You can also use these values from the application configuration file, app.config, also generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span> <span data-ttu-id="a190d-139">有关指定客户端绑定的不同方法的详细信息，请参阅[配置客户端绑定 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-139">For more information about the different ways of specifying client binding, see [Configure a client binding for the Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md).</span></span>  
   
-6.  <span data-ttu-id="005b4-140">为客户端设置的凭据。</span><span class="sxs-lookup"><span data-stu-id="005b4-140">Set the credentials for the client.</span></span>  
+6.  <span data-ttu-id="a190d-140">为客户端设置的凭据。</span><span class="sxs-lookup"><span data-stu-id="a190d-140">Set the credentials for the client.</span></span>  
   
     ```  
     client.ClientCredentials.UserName.UserName = "myuser";  
     client.ClientCredentials.UserName.Password = "mypassword";  
     ```  
   
-7.  <span data-ttu-id="005b4-141">由于正在调用 Oracle E-business Suite 应用程序中的请求集，必须设置应用程序上下文。</span><span class="sxs-lookup"><span data-stu-id="005b4-141">Because you are invoking request sets in an Oracle E-Business Suite application, you must set the application context.</span></span> <span data-ttu-id="005b4-142">在此示例中，若要设置应用程序上下文中，你指定**OracleUserName**， **OraclePassword**，和**OracleEBSResponsibilityName**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="005b4-142">In this example, to set the application context, you specify the **OracleUserName**, **OraclePassword**, and **OracleEBSResponsibilityName** binding properties.</span></span> <span data-ttu-id="005b4-143">有关应用程序上下文的详细信息，请参阅[设置应用程序上下文](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)。</span><span class="sxs-lookup"><span data-stu-id="005b4-143">For more information about application context, see [Set application context](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md).</span></span>  
+7.  <span data-ttu-id="a190d-141">由于正在调用 Oracle E-business Suite 应用程序中的请求集，必须设置应用程序上下文。</span><span class="sxs-lookup"><span data-stu-id="a190d-141">Because you are invoking request sets in an Oracle E-Business Suite application, you must set the application context.</span></span> <span data-ttu-id="a190d-142">在此示例中，若要设置应用程序上下文中，你指定**OracleUserName**， **OraclePassword**，和**OracleEBSResponsibilityName**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="a190d-142">In this example, to set the application context, you specify the **OracleUserName**, **OraclePassword**, and **OracleEBSResponsibilityName** binding properties.</span></span> <span data-ttu-id="a190d-143">有关应用程序上下文的详细信息，请参阅[设置应用程序上下文](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-143">For more information about application context, see [Set application context](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md).</span></span>  
   
     ```  
     binding.OracleUserName = "myOracleEBSUserName";  
@@ -105,7 +105,7 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
     binding.OracleEBSResponsibilityName = "myOracleEBSResponsibility";  
     ```  
   
-8.  <span data-ttu-id="005b4-144">下面的代码段中所述，请打开客户端：</span><span class="sxs-lookup"><span data-stu-id="005b4-144">Open the client as described in the snippet below:</span></span>  
+8.  <span data-ttu-id="a190d-144">下面的代码段中所述，请打开客户端：</span><span class="sxs-lookup"><span data-stu-id="a190d-144">Open the client as described in the snippet below:</span></span>  
   
     ```  
     try  
@@ -120,7 +120,7 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
     }  
     ```  
   
-9. <span data-ttu-id="005b4-145">调用**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="005b4-145">Invoke the **reqset_singlestage** request set.</span></span>  
+9. <span data-ttu-id="a190d-145">调用**reqset_singlestage**请求组。</span><span class="sxs-lookup"><span data-stu-id="a190d-145">Invoke the **reqset_singlestage** request set.</span></span>  
   
     ```  
     string RequestID;  
@@ -148,13 +148,13 @@ public partial class RequestSets_SQLAPClient : System.ServiceModel.ClientBase<Re
     }  
     ```  
   
-10. <span data-ttu-id="005b4-146">关闭客户端，如下面的代码段中所述：</span><span class="sxs-lookup"><span data-stu-id="005b4-146">Close the client as described in the snippet below:</span></span>  
+10. <span data-ttu-id="a190d-146">关闭客户端，如下面的代码段中所述：</span><span class="sxs-lookup"><span data-stu-id="a190d-146">Close the client as described in the snippet below:</span></span>  
   
     ```  
     client.Close();  
     ```  
   
-11. <span data-ttu-id="005b4-147">生成项目，然后运行它。</span><span class="sxs-lookup"><span data-stu-id="005b4-147">Build the project and then run it.</span></span> <span data-ttu-id="005b4-148">应用程序时，将调用**reqset_singlestage**请求设置并返回一个请求 ID，该写入控制台。</span><span class="sxs-lookup"><span data-stu-id="005b4-148">The application invokes the **reqset_singlestage** request set and returns a request ID, which is written to the console.</span></span>  
+11. <span data-ttu-id="a190d-147">生成项目，然后运行它。</span><span class="sxs-lookup"><span data-stu-id="a190d-147">Build the project and then run it.</span></span> <span data-ttu-id="a190d-148">应用程序时，将调用**reqset_singlestage**请求设置并返回一个请求 ID，该写入控制台。</span><span class="sxs-lookup"><span data-stu-id="a190d-148">The application invokes the **reqset_singlestage** request set and returns a request ID, which is written to the console.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="005b4-149">另请参阅</span><span class="sxs-lookup"><span data-stu-id="005b4-149">See Also</span></span>  
- [<span data-ttu-id="005b4-150">开发 Oracle E-business Suite 应用程序使用 WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="005b4-150">Develop Oracle E-Business Suite applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a><span data-ttu-id="a190d-149">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a190d-149">See Also</span></span>  
+ [<span data-ttu-id="a190d-150">开发 Oracle E-business Suite 应用程序使用 WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="a190d-150">Develop Oracle E-Business Suite applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-service-model.md)

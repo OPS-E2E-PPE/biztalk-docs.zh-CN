@@ -12,25 +12,25 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed471aa5395b9cc743825807e63e23e5433e6d07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 734d79e92a4864090720434b9a1fb83387a0a850
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="bc179-102">使用 WCF LOB 适配器 SDK 创建部署包</span><span class="sxs-lookup"><span data-stu-id="bc179-102">Create a deployment package with the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="bc179-103">在开发周期中，可以生成、 调试和运行你在 Visual Studio 中的适配器。</span><span class="sxs-lookup"><span data-stu-id="bc179-103">During the development cycle, you can build, debug, and run your adapter within Visual Studio.</span></span> <span data-ttu-id="bc179-104">适配器解决方案的输出是一个 DLL 程序集。</span><span class="sxs-lookup"><span data-stu-id="bc179-104">The output of an adapter solution is a DLL assembly.</span></span> <span data-ttu-id="bc179-105">你可以生成使用 Visual Studio IDE 适配器解决方案，或使用 devenv.exe 脚本来创建一个适配器程序集。</span><span class="sxs-lookup"><span data-stu-id="bc179-105">You can build your adapter solution using Visual Studio IDE or use the devenv.exe scripts to create an adapter assembly.</span></span> <span data-ttu-id="bc179-106">一旦开发适配器并且可供适配器使用者的环境中使用，你必须创建一个允许的适配器，测试和生产环境中安装的部署包。</span><span class="sxs-lookup"><span data-stu-id="bc179-106">Once the adapter is developed and it is ready for use within the adapter consumer's environment, you must create a deployment package that allows the adapter to be installed in test and production environments.</span></span>  
+# <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="2575d-102">使用 WCF LOB 适配器 SDK 创建部署包</span><span class="sxs-lookup"><span data-stu-id="2575d-102">Create a deployment package with the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="2575d-103">在开发周期中，可以生成、 调试和运行你在 Visual Studio 中的适配器。</span><span class="sxs-lookup"><span data-stu-id="2575d-103">During the development cycle, you can build, debug, and run your adapter within Visual Studio.</span></span> <span data-ttu-id="2575d-104">适配器解决方案的输出是一个 DLL 程序集。</span><span class="sxs-lookup"><span data-stu-id="2575d-104">The output of an adapter solution is a DLL assembly.</span></span> <span data-ttu-id="2575d-105">你可以生成使用 Visual Studio IDE 适配器解决方案，或使用 devenv.exe 脚本来创建一个适配器程序集。</span><span class="sxs-lookup"><span data-stu-id="2575d-105">You can build your adapter solution using Visual Studio IDE or use the devenv.exe scripts to create an adapter assembly.</span></span> <span data-ttu-id="2575d-106">一旦开发适配器并且可供适配器使用者的环境中使用，你必须创建一个允许的适配器，测试和生产环境中安装的部署包。</span><span class="sxs-lookup"><span data-stu-id="2575d-106">Once the adapter is developed and it is ready for use within the adapter consumer's environment, you must create a deployment package that allows the adapter to be installed in test and production environments.</span></span>  
   
- <span data-ttu-id="bc179-107">你可以包括解决方案中的 Visual Studio 安装程序和部署项目。</span><span class="sxs-lookup"><span data-stu-id="bc179-107">You can include a Visual Studio Setup and Deployment project within the solution.</span></span> <span data-ttu-id="bc179-108">这可以用于自动生成作为解决方案生成的一部分的.msi 文件。</span><span class="sxs-lookup"><span data-stu-id="bc179-108">This can be used to automatically generate an .msi file as part of the solution build.</span></span>  
+ <span data-ttu-id="2575d-107">你可以包括解决方案中的 Visual Studio 安装程序和部署项目。</span><span class="sxs-lookup"><span data-stu-id="2575d-107">You can include a Visual Studio Setup and Deployment project within the solution.</span></span> <span data-ttu-id="2575d-108">这可以用于自动生成作为解决方案生成的一部分的.msi 文件。</span><span class="sxs-lookup"><span data-stu-id="2575d-108">This can be used to automatically generate an .msi file as part of the solution build.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="bc179-109">你可以阻止安装和部署项目生成每次通过排除它通过配置管理器 （在生成菜单中） 在 Visual Studio.NET 中，在本地工作站生成解决方案。</span><span class="sxs-lookup"><span data-stu-id="bc179-109">You can prevent the Setup and Deployment project from building each time you build the solution on your local workstation by excluding it through the Configuration Manager (on the Build menu) within Visual Studio .NET.</span></span> <span data-ttu-id="bc179-110">如果从使用此方法对解决方案生成中排除一个项目，不会影响源受控的解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="bc179-110">If you exclude a project from a solution build using this method, you do not affect the source controlled solution file.</span></span> <span data-ttu-id="bc179-111">解决方案用户选项文件的说明进行操作，这是特定于开发人员的和不受源代码管理中，更改将保留下来。</span><span class="sxs-lookup"><span data-stu-id="bc179-111">Changes are maintained within the solution user option file, which is developer-specific and not under source control.</span></span>  
+>  <span data-ttu-id="2575d-109">你可以阻止安装和部署项目生成每次通过排除它通过配置管理器 （在生成菜单中） 在 Visual Studio.NET 中，在本地工作站生成解决方案。</span><span class="sxs-lookup"><span data-stu-id="2575d-109">You can prevent the Setup and Deployment project from building each time you build the solution on your local workstation by excluding it through the Configuration Manager (on the Build menu) within Visual Studio .NET.</span></span> <span data-ttu-id="2575d-110">如果从使用此方法对解决方案生成中排除一个项目，不会影响源受控的解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="2575d-110">If you exclude a project from a solution build using this method, you do not affect the source controlled solution file.</span></span> <span data-ttu-id="2575d-111">解决方案用户选项文件的说明进行操作，这是特定于开发人员的和不受源代码管理中，更改将保留下来。</span><span class="sxs-lookup"><span data-stu-id="2575d-111">Changes are maintained within the solution user option file, which is developer-specific and not under source control.</span></span>  
   
- <span data-ttu-id="bc179-112">每当新项目添加到你的解决方案必须记住来更新和配置部署项目，以确保该新项目的输出是包含在.msi 文件并执行任何特定于项目的安装步骤。</span><span class="sxs-lookup"><span data-stu-id="bc179-112">Whenever new projects are added to your solution you must remember to update and configure the deployment project to ensure that the output of the new project is included within the .msi file and that any project-specific installation steps are performed.</span></span>  
+ <span data-ttu-id="2575d-112">每当新项目添加到你的解决方案必须记住来更新和配置部署项目，以确保该新项目的输出是包含在.msi 文件并执行任何特定于项目的安装步骤。</span><span class="sxs-lookup"><span data-stu-id="2575d-112">Whenever new projects are added to your solution you must remember to update and configure the deployment project to ensure that the output of the new project is included within the .msi file and that any project-specific installation steps are performed.</span></span>  
   
- <span data-ttu-id="bc179-113">它不是足够，以只在用户的计算机上安装适配器项目的输出。</span><span class="sxs-lookup"><span data-stu-id="bc179-113">It is not enough to just install the output of the adapter project on the user's computer.</span></span> <span data-ttu-id="bc179-114">适配器需要安装在全局程序集缓存 (GAC) 和 machine.config 文件需要更新注册的适配器[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="bc179-114">The adapter needs to be installed in global assembly cache (GAC) and the machine.config file needs to be updated to register the adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].</span></span>  
+ <span data-ttu-id="2575d-113">它不是足够，以只在用户的计算机上安装适配器项目的输出。</span><span class="sxs-lookup"><span data-stu-id="2575d-113">It is not enough to just install the output of the adapter project on the user's computer.</span></span> <span data-ttu-id="2575d-114">适配器需要安装在全局程序集缓存 (GAC) 和 machine.config 文件需要更新注册的适配器[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="2575d-114">The adapter needs to be installed in global assembly cache (GAC) and the machine.config file needs to be updated to register the adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].</span></span>  
   
- <span data-ttu-id="bc179-115">下面是可以用于注册或注销拥有的适配器的示例自定义操作[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="bc179-115">Following is a sample custom action that can be used to register or unregister an adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].</span></span>  
+ <span data-ttu-id="2575d-115">下面是可以用于注册或注销拥有的适配器的示例自定义操作[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="2575d-115">Following is a sample custom action that can be used to register or unregister an adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].</span></span>  
   
 ```  
 using System;  
@@ -47,7 +47,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
 {  
     //Custom action to register the adapter with WCF configuration in machine.config   
   
-    //\<system.serviceModel>  
+    //<system.serviceModel>  
     //  <extensions>  
     //    <bindingElementExtensions>  
     //      <add name="{BINDINGELEM_NAME}" type="{BINDINGELEM_TYPE}, {Assembly Information}" />  
@@ -59,7 +59,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
     //  <client>  
     //    <endpoint binding="{BINDING_NAME}" contract="IMetadataExchange" name="{BINDING_SCHEME}" />  
     //  </client>  
-    //\</system.serviceModel>  
+    //</system.serviceModel>  
   
     [RunInstaller(true)]  
     public partial class WCFLOBAdapterInstaller : Installer  
@@ -260,8 +260,8 @@ namespace Microsoft.Adapters.Samples.EchoV2
 }  
 ```  
   
- <span data-ttu-id="bc179-116">如果你想要浏览与部署包的示例适配器，你可以下载已完成的 Echo 适配器包括测试代码和安装脚本。</span><span class="sxs-lookup"><span data-stu-id="bc179-116">If you want to explore a sample adapter with a deployment package, you can download a completed Echo Adapter including test code and installation script.</span></span> <span data-ttu-id="bc179-117">此示例是在你 BizTalk 安装文件附带`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。</span><span class="sxs-lookup"><span data-stu-id="bc179-117">This sample is included with your BizTalk installation files at `\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples` or `\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`.</span></span>
+ <span data-ttu-id="2575d-116">如果你想要浏览与部署包的示例适配器，你可以下载已完成的 Echo 适配器包括测试代码和安装脚本。</span><span class="sxs-lookup"><span data-stu-id="2575d-116">If you want to explore a sample adapter with a deployment package, you can download a completed Echo Adapter including test code and installation script.</span></span> <span data-ttu-id="2575d-117">此示例是在你 BizTalk 安装文件附带`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。</span><span class="sxs-lookup"><span data-stu-id="2575d-117">This sample is included with your BizTalk installation files at `\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples` or `\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="bc179-118">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bc179-118">See Also</span></span>  
- <span data-ttu-id="bc179-119">[部署使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md) </span><span class="sxs-lookup"><span data-stu-id="bc179-119">[Deploy an adapter using the WCF LOB adapter SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md) </span></span>  
- [<span data-ttu-id="bc179-120">取消部署使用 WCF LOB 适配器 SDK 的适配器</span><span class="sxs-lookup"><span data-stu-id="bc179-120">Undeploy an adapter using the WCF LOB adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/undeploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="2575d-118">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2575d-118">See Also</span></span>  
+ <span data-ttu-id="2575d-119">[部署使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md) </span><span class="sxs-lookup"><span data-stu-id="2575d-119">[Deploy an adapter using the WCF LOB adapter SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md) </span></span>  
+ [<span data-ttu-id="2575d-120">取消部署使用 WCF LOB 适配器 SDK 的适配器</span><span class="sxs-lookup"><span data-stu-id="2575d-120">Undeploy an adapter using the WCF LOB adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/undeploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)

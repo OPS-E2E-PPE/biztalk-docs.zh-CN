@@ -16,64 +16,64 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78cfd1341100fe803679e81300609962a9c0e1f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4b296b01179b3ce52aef41dc246dbed2588c3e6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="step-2-create-a-new-project"></a><span data-ttu-id="6a81e-102">步骤 2： 创建新项目</span><span class="sxs-lookup"><span data-stu-id="6a81e-102">Step 2: Create a New Project</span></span>
-<span data-ttu-id="6a81e-103">通过使用在此步骤中，生成一个新的解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="6a81e-103">In this step, you build a new solution by using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)] environment.</span></span> <span data-ttu-id="6a81e-104">首先，创建新项目 (BTAHL7V22Common) 包含三个常见架构 （适用于数据类型、 线段和表值） 的 HL7 V2.2 架构使用，包括你将用于传出的 HL7 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="6a81e-104">First, you create a new project (BTAHL7V22Common) that contains the three common schemas (for data types, segments, and table values) that the HL7 V2.2 schemas use, including the schema that you will use for the outgoing HL7 message.</span></span> <span data-ttu-id="6a81e-105">其次，生成另一个新包含 HL7 消息 (MSH_25_GLO_DEF) 中的标头使用的常见标准架构的项目 (BTAHL7V2XCommon)。</span><span class="sxs-lookup"><span data-stu-id="6a81e-105">Second, you build another new project (BTAHL7V2XCommon) that contains the common standard schema used for headers in HL7 messages (MSH_25_GLO_DEF).</span></span>  
+# <a name="step-2-create-a-new-project"></a><span data-ttu-id="970b4-102">步骤 2： 创建新项目</span><span class="sxs-lookup"><span data-stu-id="970b4-102">Step 2: Create a New Project</span></span>
+<span data-ttu-id="970b4-103">通过使用在此步骤中，生成一个新的解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="970b4-103">In this step, you build a new solution by using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)] environment.</span></span> <span data-ttu-id="970b4-104">首先，创建新项目 (BTAHL7V22Common) 包含三个常见架构 （适用于数据类型、 线段和表值） 的 HL7 V2.2 架构使用，包括你将用于传出的 HL7 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="970b4-104">First, you create a new project (BTAHL7V22Common) that contains the three common schemas (for data types, segments, and table values) that the HL7 V2.2 schemas use, including the schema that you will use for the outgoing HL7 message.</span></span> <span data-ttu-id="970b4-105">其次，生成另一个新包含 HL7 消息 (MSH_25_GLO_DEF) 中的标头使用的常见标准架构的项目 (BTAHL7V2XCommon)。</span><span class="sxs-lookup"><span data-stu-id="970b4-105">Second, you build another new project (BTAHL7V2XCommon) that contains the common standard schema used for headers in HL7 messages (MSH_25_GLO_DEF).</span></span>  
   
-### <a name="to-create-a-new-project"></a><span data-ttu-id="6a81e-106">创建新项目的步骤</span><span class="sxs-lookup"><span data-stu-id="6a81e-106">To create a new project</span></span>  
+### <a name="to-create-a-new-project"></a><span data-ttu-id="970b4-106">创建新项目的步骤</span><span class="sxs-lookup"><span data-stu-id="970b4-106">To create a new project</span></span>  
   
-1.  <span data-ttu-id="6a81e-107">启动 **[!INCLUDE[vs2012](../../includes/vs2012-md.md)]** 。</span><span class="sxs-lookup"><span data-stu-id="6a81e-107">Start **[!INCLUDE[vs2012](../../includes/vs2012-md.md)]**.</span></span>  
+1.  <span data-ttu-id="970b4-107">启动**Visual Studio**。</span><span class="sxs-lookup"><span data-stu-id="970b4-107">Start **Visual Studio**.</span></span>  
   
-2.  <span data-ttu-id="6a81e-108">在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。</span><span class="sxs-lookup"><span data-stu-id="6a81e-108">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
+2.  <span data-ttu-id="970b4-108">在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。</span><span class="sxs-lookup"><span data-stu-id="970b4-108">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="6a81e-109">在新建项目对话框中，展开**BizTalk 项目**文件夹，，然后单击**BTAHL7Projects**文件夹。</span><span class="sxs-lookup"><span data-stu-id="6a81e-109">In the New Project dialog box, expand the **BizTalk Projects** folder, and then click the **BTAHL7Projects** folder.</span></span>  
+3.  <span data-ttu-id="970b4-109">在新建项目对话框中，展开**BizTalk 项目**文件夹，，然后单击**BTAHL7Projects**文件夹。</span><span class="sxs-lookup"><span data-stu-id="970b4-109">In the New Project dialog box, expand the **BizTalk Projects** folder, and then click the **BTAHL7Projects** folder.</span></span>  
   
-4.  <span data-ttu-id="6a81e-110">在**模板**窗格中，单击**BTAHL7V22Common 项目**。</span><span class="sxs-lookup"><span data-stu-id="6a81e-110">In the **Templates** pane, click **BTAHL7V22Common Project**.</span></span>  
+4.  <span data-ttu-id="970b4-110">在**模板**窗格中，单击**BTAHL7V22Common 项目**。</span><span class="sxs-lookup"><span data-stu-id="970b4-110">In the **Templates** pane, click **BTAHL7V22Common Project**.</span></span>  
   
-5.  <span data-ttu-id="6a81e-111">在**名称**字段中，键入**BTAHL7V22Common**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="6a81e-111">In the **Name** field, type **BTAHL7V22Common** as the project name.</span></span>  
+5.  <span data-ttu-id="970b4-111">在**名称**字段中，键入**BTAHL7V22Common**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="970b4-111">In the **Name** field, type **BTAHL7V22Common** as the project name.</span></span>  
   
-6.  <span data-ttu-id="6a81e-112">在**位置**字段中，键入*\<驱动器 >***: \Tutorial**作为路径，然后单击**确定**打开新项目。</span><span class="sxs-lookup"><span data-stu-id="6a81e-112">In the **Location** field, type *\<drive>***:\Tutorial** as the path, and then click **OK** to open the new project.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="6a81e-113">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 将新项目添加到解决方案资源管理器中，具有三个常见架构：</span><span class="sxs-lookup"><span data-stu-id="6a81e-113">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) adds a new project to Solution Explorer with the three common schemas:</span></span>  
-  
-    -   <span data-ttu-id="6a81e-114">datatypes_22.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-114">datatypes_22.xsd</span></span>  
-  
-    -   <span data-ttu-id="6a81e-115">segments_22.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-115">segments_22.xsd</span></span>  
-  
-    -   <span data-ttu-id="6a81e-116">tablevalues_22.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-116">tablevalues_22.xsd</span></span>  
-  
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="6a81e-117">创建项目文件夹和文件中\<*驱动器*>: \Tutorial\BTAHL7V22Common 文件夹。</span><span class="sxs-lookup"><span data-stu-id="6a81e-117"> creates the project folder and files in the \<*drive*>:\Tutorial\BTAHL7V22Common folder.</span></span>  
-  
-7.  <span data-ttu-id="6a81e-118">在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。</span><span class="sxs-lookup"><span data-stu-id="6a81e-118">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
-  
-8.  <span data-ttu-id="6a81e-119">在新建项目对话框中，展开**BizTalk 项目**文件夹，，然后单击**BTAHL7Projects**文件夹。</span><span class="sxs-lookup"><span data-stu-id="6a81e-119">In the New Project dialog box, expand the **BizTalk Projects** folder, and then click the **BTAHL7Projects** folder.</span></span>  
-  
-9. <span data-ttu-id="6a81e-120">在**模板**窗格中，单击**BTAHL7V2XCommon 项目**。</span><span class="sxs-lookup"><span data-stu-id="6a81e-120">In the **Templates** pane, click **BTAHL7V2XCommon Project**.</span></span>  
-  
-10. <span data-ttu-id="6a81e-121">在**名称**字段中，键入**BTAHL7V2XCommon**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="6a81e-121">In the **Name** field, type **BTAHL7V2XCommon** as the project name.</span></span>  
-  
-11. <span data-ttu-id="6a81e-122">在**位置**字段中，键入*\<驱动器 >***: \Tutorial**作为路径。</span><span class="sxs-lookup"><span data-stu-id="6a81e-122">In the **Location** field, type *\<drive>***:\Tutorial** as the path.</span></span>  
-  
-12. <span data-ttu-id="6a81e-123">在**解决方案**字段中，选择**将添加到解决方案**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6a81e-123">In the **Solution** field, select **Add to Solution**, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="970b4-112">在**位置**字段中，键入*\<驱动器\>***: \Tutorial**作为路径，然后单击**确定**以打开新的项目中。</span><span class="sxs-lookup"><span data-stu-id="970b4-112">In the **Location** field, type *\<drive\>***:\Tutorial** as the path, and then click **OK** to open the new project.</span></span>  
   
     > [!NOTE]
-    >  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="6a81e-124">将新项目添加到解决方案资源管理器中，具有以下架构：</span><span class="sxs-lookup"><span data-stu-id="6a81e-124"> adds a new project to Solution Explorer with the following schemas:</span></span>  
+    >  <span data-ttu-id="970b4-113">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 将新项目添加到解决方案资源管理器中，具有三个常见架构：</span><span class="sxs-lookup"><span data-stu-id="970b4-113">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) adds a new project to Solution Explorer with the three common schemas:</span></span>  
   
-    -   <span data-ttu-id="6a81e-125">ACK_24_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-125">ACK_24_GLO_DEF.xsd</span></span>  
+    -   <span data-ttu-id="970b4-114">datatypes_22.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-114">datatypes_22.xsd</span></span>  
   
-    -   <span data-ttu-id="6a81e-126">ACK_25_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-126">ACK_25_GLO_DEF.xsd</span></span>  
+    -   <span data-ttu-id="970b4-115">segments_22.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-115">segments_22.xsd</span></span>  
   
-    -   <span data-ttu-id="6a81e-127">MSH_25_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="6a81e-127">MSH_25_GLO_DEF.xsd</span></span>  
+    -   <span data-ttu-id="970b4-116">tablevalues_22.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-116">tablevalues_22.xsd</span></span>  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="6a81e-128">创建项目文件夹和文件中**\<驱动器 >: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**文件夹。</span><span class="sxs-lookup"><span data-stu-id="6a81e-128"> creates the project folder and files in the **\<drive>:\Tutorial\BTAHL7V22Common\BTAHL72XCommon** folder.</span></span>  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="970b4-117">创建项目文件夹和文件中\<*驱动器*\>: \Tutorial\BTAHL7V22Common 文件夹。</span><span class="sxs-lookup"><span data-stu-id="970b4-117"> creates the project folder and files in the \<*drive*\>:\Tutorial\BTAHL7V22Common folder.</span></span>  
   
- <span data-ttu-id="6a81e-129">继续执行[步骤 3： 向程序集分配强名称](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)。</span><span class="sxs-lookup"><span data-stu-id="6a81e-129">Proceed to [Step 3: Assign a Strong Name to the Assembly](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md).</span></span>  
+7.  <span data-ttu-id="970b4-118">在 **“文件”** 菜单上，指向 **“新建”**，再单击 **“项目”**。</span><span class="sxs-lookup"><span data-stu-id="970b4-118">On the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6a81e-130">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6a81e-130">See Also</span></span>  
- [<span data-ttu-id="6a81e-131">消息扩充教程</span><span class="sxs-lookup"><span data-stu-id="6a81e-131">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+8.  <span data-ttu-id="970b4-119">在新建项目对话框中，展开**BizTalk 项目**文件夹，，然后单击**BTAHL7Projects**文件夹。</span><span class="sxs-lookup"><span data-stu-id="970b4-119">In the New Project dialog box, expand the **BizTalk Projects** folder, and then click the **BTAHL7Projects** folder.</span></span>  
+  
+9. <span data-ttu-id="970b4-120">在**模板**窗格中，单击**BTAHL7V2XCommon 项目**。</span><span class="sxs-lookup"><span data-stu-id="970b4-120">In the **Templates** pane, click **BTAHL7V2XCommon Project**.</span></span>  
+  
+10. <span data-ttu-id="970b4-121">在**名称**字段中，键入**BTAHL7V2XCommon**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="970b4-121">In the **Name** field, type **BTAHL7V2XCommon** as the project name.</span></span>  
+  
+11. <span data-ttu-id="970b4-122">在**位置**字段中，键入*\<驱动器\>***: \Tutorial**作为路径。</span><span class="sxs-lookup"><span data-stu-id="970b4-122">In the **Location** field, type *\<drive\>***:\Tutorial** as the path.</span></span>  
+  
+12. <span data-ttu-id="970b4-123">在**解决方案**字段中，选择**将添加到解决方案**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="970b4-123">In the **Solution** field, select **Add to Solution**, and then click **OK**.</span></span>  
+  
+    > [!NOTE]
+    >  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="970b4-124">将新项目添加到解决方案资源管理器中，具有以下架构：</span><span class="sxs-lookup"><span data-stu-id="970b4-124"> adds a new project to Solution Explorer with the following schemas:</span></span>  
+  
+    -   <span data-ttu-id="970b4-125">ACK_24_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-125">ACK_24_GLO_DEF.xsd</span></span>  
+  
+    -   <span data-ttu-id="970b4-126">ACK_25_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-126">ACK_25_GLO_DEF.xsd</span></span>  
+  
+    -   <span data-ttu-id="970b4-127">MSH_25_GLO_DEF.xsd</span><span class="sxs-lookup"><span data-stu-id="970b4-127">MSH_25_GLO_DEF.xsd</span></span>  
+  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="970b4-128">创建项目文件夹和文件中**\<驱动器\>: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**文件夹。</span><span class="sxs-lookup"><span data-stu-id="970b4-128"> creates the project folder and files in the **\<drive\>:\Tutorial\BTAHL7V22Common\BTAHL72XCommon** folder.</span></span>  
+  
+ <span data-ttu-id="970b4-129">继续执行[步骤 3： 向程序集分配强名称](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)。</span><span class="sxs-lookup"><span data-stu-id="970b4-129">Proceed to [Step 3: Assign a Strong Name to the Assembly](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="970b4-130">另请参阅</span><span class="sxs-lookup"><span data-stu-id="970b4-130">See Also</span></span>  
+ [<span data-ttu-id="970b4-131">消息充实教程</span><span class="sxs-lookup"><span data-stu-id="970b4-131">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

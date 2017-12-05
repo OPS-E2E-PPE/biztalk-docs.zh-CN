@@ -12,22 +12,22 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0c91221162cccb7b6821c0edad12f8e76de2f10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f0c63671833a394e0c750561d90c12c6476515f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="setting-the-environment"></a><span data-ttu-id="7fb62-102">将环境设置</span><span class="sxs-lookup"><span data-stu-id="7fb62-102">Setting the Environment</span></span>
-<span data-ttu-id="7fb62-103">**若要将环境设置：**</span><span class="sxs-lookup"><span data-stu-id="7fb62-103">**To set the environment:**</span></span>  
+# <a name="setting-the-environment"></a><span data-ttu-id="c8b55-102">将环境设置</span><span class="sxs-lookup"><span data-stu-id="c8b55-102">Setting the Environment</span></span>
+<span data-ttu-id="c8b55-103">**若要将环境设置：**</span><span class="sxs-lookup"><span data-stu-id="c8b55-103">**To set the environment:**</span></span>  
   
-1.  <span data-ttu-id="7fb62-104">请确保配置 SWIFT 消息包。</span><span class="sxs-lookup"><span data-stu-id="7fb62-104">Make sure SWIFT Message Pack is configured.</span></span> <span data-ttu-id="7fb62-105">请参阅 Swift 消息包文档配置相同。</span><span class="sxs-lookup"><span data-stu-id="7fb62-105">Refer to the Swift Message Pack documentation to configure the same.</span></span>  
+1.  <span data-ttu-id="c8b55-104">请确保配置 SWIFT 消息包。</span><span class="sxs-lookup"><span data-stu-id="c8b55-104">Make sure SWIFT Message Pack is configured.</span></span> <span data-ttu-id="c8b55-105">请参阅 Swift 消息包文档配置相同。</span><span class="sxs-lookup"><span data-stu-id="c8b55-105">Refer to the Swift Message Pack documentation to configure the same.</span></span>  
   
-2.  <span data-ttu-id="7fb62-106">运行 SQL 脚本*\<驱动器 >*: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\CreateProceduresScript.sql。</span><span class="sxs-lookup"><span data-stu-id="7fb62-106">Run the SQL script *\<drive>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\CreateProceduresScript.sql.</span></span> <span data-ttu-id="7fb62-107">如果为 A4Swift 之外的数据库名称配置了 Swift 和 MessagePack，更改中的 sql 脚本的数据库名称。</span><span class="sxs-lookup"><span data-stu-id="7fb62-107">Change the database name in the sql script if the Swift and MessagePack are configured for database name other than A4Swift.</span></span>  
+2.  <span data-ttu-id="c8b55-106">运行 SQL 脚本*\<驱动器\>*: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\CreateProceduresScript.sql。</span><span class="sxs-lookup"><span data-stu-id="c8b55-106">Run the SQL script *\<drive\>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\CreateProceduresScript.sql.</span></span> <span data-ttu-id="c8b55-107">如果为 A4Swift 之外的数据库名称配置了 Swift 和 MessagePack，更改中的 sql 脚本的数据库名称。</span><span class="sxs-lookup"><span data-stu-id="c8b55-107">Change the database name in the sql script if the Swift and MessagePack are configured for database name other than A4Swift.</span></span>  
   
-3.  <span data-ttu-id="7fb62-108">将键"数据源"的值设置为计算机名和密钥"数据库"作为数据库名称 (为其配置的 Swift 和 MessagePack) 文件中*\<驱动器 >*: files\microsoft BizTalk Accelerator 为SWIFT\SDK\Tools\DataImport\DataImport.exe.config。</span><span class="sxs-lookup"><span data-stu-id="7fb62-108">Set the value of Key “datasource” as ComputerName and key “database” as database name (for which the Swift and MessagePack is configured) in the file *\<drive>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\DataImport.exe.config.</span></span>  
+3.  <span data-ttu-id="c8b55-108">将键"数据源"的值设置为计算机名和密钥"数据库"作为数据库名称 (为其配置的 Swift 和 MessagePack) 文件中*\<驱动器\>*: files\microsoft BizTalkSWIFT\SDK\Tools\DataImport\DataImport.exe.config 快捷键。</span><span class="sxs-lookup"><span data-stu-id="c8b55-108">Set the value of Key “datasource” as ComputerName and key “database” as database name (for which the Swift and MessagePack is configured) in the file *\<drive\>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools\DataImport\DataImport.exe.config.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="7fb62-109">数据输入的文件不应在 DataImport.exe 文件所在的同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="7fb62-109">The data input file should not be in the same folder as the DataImport.exe file.</span></span>  
+    >  <span data-ttu-id="c8b55-109">数据输入的文件不应在 DataImport.exe 文件所在的同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="c8b55-109">The data input file should not be in the same folder as the DataImport.exe file.</span></span>  
   
-4.  <span data-ttu-id="7fb62-110">运行数据导入实用程序导入 BICplusIBAN 和 SEPA 表中的数据。</span><span class="sxs-lookup"><span data-stu-id="7fb62-110">Run the DataImport utility to import data in BICplusIBAN and SEPA tables.</span></span>
+4.  <span data-ttu-id="c8b55-110">运行数据导入实用程序导入 BICplusIBAN 和 SEPA 表中的数据。</span><span class="sxs-lookup"><span data-stu-id="c8b55-110">Run the DataImport utility to import data in BICplusIBAN and SEPA tables.</span></span>

@@ -12,19 +12,19 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09369108d5e122bb8243ac94d2748db7bc1e06f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ed4f0961bc80a3fe858caaca1d4aa51644912be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="known-issues-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="82bac-102">Windows SharePoint Services 适配器的已知问题</span><span class="sxs-lookup"><span data-stu-id="82bac-102">Known Issues with the Windows SharePoint Services Adapter</span></span>
-<span data-ttu-id="82bac-103">本部分包含可帮助你避免出现错误的信息。</span><span class="sxs-lookup"><span data-stu-id="82bac-103">This section contains information that may help you avoid errors.</span></span>  
+# <a name="known-issues-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="090a4-102">Windows SharePoint Services 适配器的已知问题</span><span class="sxs-lookup"><span data-stu-id="090a4-102">Known Issues with the Windows SharePoint Services Adapter</span></span>
+<span data-ttu-id="090a4-103">本部分包含可帮助你避免出现错误的信息。</span><span class="sxs-lookup"><span data-stu-id="090a4-103">This section contains information that may help you avoid errors.</span></span>  
   
-## <a name="known-issues"></a><span data-ttu-id="82bac-104">已知问题</span><span class="sxs-lookup"><span data-stu-id="82bac-104">Known Issues</span></span>  
+## <a name="known-issues"></a><span data-ttu-id="090a4-104">已知问题</span><span class="sxs-lookup"><span data-stu-id="090a4-104">Known Issues</span></span>  
   
-#### <a name="wss-adapter-fails-to-start-a-workflow-attached-to-a-doc-librarysharepoint-list"></a><span data-ttu-id="82bac-105">WSS 适配器无法启动附加到“文档库/Sharepoint 列表”的工作流</span><span class="sxs-lookup"><span data-stu-id="82bac-105">WSS Adapter Fails to Start a Workflow attached to a Doc Library/Sharepoint List</span></span>  
- <span data-ttu-id="82bac-106">从 BizTalk 使用 WSS 适配器将文档或列表项目提交到“文档库/Sharepoint 列表”时，无法启动附加到该列表的工作流。</span><span class="sxs-lookup"><span data-stu-id="82bac-106">When using the WSS Adapter from BizTalk to submit either a document or list item to a Doc Library/Sharepoint List, it fails to start the workflow attached to that List.</span></span> <span data-ttu-id="82bac-107">解决方法是将以下 XML 代码复制到 \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config 文件中。</span><span class="sxs-lookup"><span data-stu-id="82bac-107">The workaround is to copy the XML code below into the \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config file.</span></span>  <span data-ttu-id="82bac-108">以下 XML 代码必须插入内\<配置 > 元素。</span><span class="sxs-lookup"><span data-stu-id="82bac-108">The below XML code must be inserted inside of the \<configuration> element.</span></span>  
+#### <a name="wss-adapter-fails-to-start-a-workflow-attached-to-a-doc-librarysharepoint-list"></a><span data-ttu-id="090a4-105">WSS 适配器无法启动附加到“文档库/Sharepoint 列表”的工作流</span><span class="sxs-lookup"><span data-stu-id="090a4-105">WSS Adapter Fails to Start a Workflow attached to a Doc Library/Sharepoint List</span></span>  
+ <span data-ttu-id="090a4-106">从 BizTalk 使用 WSS 适配器将文档或列表项目提交到“文档库/Sharepoint 列表”时，无法启动附加到该列表的工作流。</span><span class="sxs-lookup"><span data-stu-id="090a4-106">When using the WSS Adapter from BizTalk to submit either a document or list item to a Doc Library/Sharepoint List, it fails to start the workflow attached to that List.</span></span> <span data-ttu-id="090a4-107">解决方法是将以下 XML 代码复制到 \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config 文件中。</span><span class="sxs-lookup"><span data-stu-id="090a4-107">The workaround is to copy the XML code below into the \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config file.</span></span>  <span data-ttu-id="090a4-108">以下 XML 代码必须插入内\<配置\>元素。</span><span class="sxs-lookup"><span data-stu-id="090a4-108">The below XML code must be inserted inside of the \<configuration\> element.</span></span>  
   
 ```  
 <configSections>  

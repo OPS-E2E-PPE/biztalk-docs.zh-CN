@@ -15,50 +15,50 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95495448bb7b92f30911d4d33b3456fa5cef9bb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5f610d75048b250fc90aba7f723cee39c4f2e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="using-event-tracing-for-windows"></a><span data-ttu-id="be12e-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="be12e-102">Using Event Tracing for Windows</span></span>
-<span data-ttu-id="be12e-103">适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。</span><span class="sxs-lookup"><span data-stu-id="be12e-103">Microsoft BizTalk Adapter for JD Edwards OneWorld logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="be12e-104">可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="be12e-104">You can view additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="be12e-105">激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="be12e-105">When ETW is activated, it creates an *.etl file to receive the messages.</span></span> <span data-ttu-id="be12e-106">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="be12e-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="be12e-107">若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件： 例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="be12e-107">To do this, you must have a consumer application available to interpret the \*.etl file: for example, tracerpt.exe or tracedmp.exe.</span></span>  
+# <a name="using-event-tracing-for-windows"></a><span data-ttu-id="19e60-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="19e60-102">Using Event Tracing for Windows</span></span>
+<span data-ttu-id="19e60-103">适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。</span><span class="sxs-lookup"><span data-stu-id="19e60-103">Microsoft BizTalk Adapter for JD Edwards OneWorld logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="19e60-104">可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="19e60-104">You can view additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="19e60-105">激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="19e60-105">When ETW is activated, it creates an *.etl file to receive the messages.</span></span> <span data-ttu-id="19e60-106">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="19e60-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="19e60-107">若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件： 例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="19e60-107">To do this, you must have a consumer application available to interpret the \*.etl file: for example, tracerpt.exe or tracedmp.exe.</span></span>  
   
-## <a name="etw-components"></a><span data-ttu-id="be12e-108">ETW 组件</span><span class="sxs-lookup"><span data-stu-id="be12e-108">ETW Components</span></span>  
- <span data-ttu-id="be12e-109">Windows 事件跟踪包括以下三个组件：</span><span class="sxs-lookup"><span data-stu-id="be12e-109">Event Tracing for Windows has three components:</span></span>  
+## <a name="etw-components"></a><span data-ttu-id="19e60-108">ETW 组件</span><span class="sxs-lookup"><span data-stu-id="19e60-108">ETW Components</span></span>  
+ <span data-ttu-id="19e60-109">Windows 事件跟踪包括以下三个组件：</span><span class="sxs-lookup"><span data-stu-id="19e60-109">Event Tracing for Windows has three components:</span></span>  
   
--   <span data-ttu-id="be12e-110">**控制器应用程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-110">**Controller application.**</span></span> <span data-ttu-id="be12e-111">激活和停用提供程序（例如 tracelog.exe 或 logman.exe）。</span><span class="sxs-lookup"><span data-stu-id="be12e-111">Activates and deactivates a provider (for example, tracelog.exe or logman.exe).</span></span>  
+-   <span data-ttu-id="19e60-110">**控制器应用程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-110">**Controller application.**</span></span> <span data-ttu-id="19e60-111">激活和停用提供程序（例如 tracelog.exe 或 logman.exe）。</span><span class="sxs-lookup"><span data-stu-id="19e60-111">Activates and deactivates a provider (for example, tracelog.exe or logman.exe).</span></span>  
   
-     <span data-ttu-id="be12e-112">设置 PATH 环境变量以指向 tracelog.exe 的位置。</span><span class="sxs-lookup"><span data-stu-id="be12e-112">You set your PATH environment variable to point to the location of tracelog.exe.</span></span> <span data-ttu-id="be12e-113">这可确保 BTAJDEdwardsOneWorldTrace 调用可以找到你的系统中的 tracelog.exe。</span><span class="sxs-lookup"><span data-stu-id="be12e-113">This ensures that BTAJDEdwardsOneWorldTrace calls can locate tracelog.exe in your system.</span></span> <span data-ttu-id="be12e-114">默认情况下，BTAJDEdwardsOneWorldTrace 搜索当前路径。</span><span class="sxs-lookup"><span data-stu-id="be12e-114">By default, BTAJDEdwardsOneWorldTrace searches the current path.</span></span>  
+     <span data-ttu-id="19e60-112">设置 PATH 环境变量以指向 tracelog.exe 的位置。</span><span class="sxs-lookup"><span data-stu-id="19e60-112">You set your PATH environment variable to point to the location of tracelog.exe.</span></span> <span data-ttu-id="19e60-113">这可确保 BTAJDEdwardsOneWorldTrace 调用可以找到你的系统中的 tracelog.exe。</span><span class="sxs-lookup"><span data-stu-id="19e60-113">This ensures that BTAJDEdwardsOneWorldTrace calls can locate tracelog.exe in your system.</span></span> <span data-ttu-id="19e60-114">默认情况下，BTAJDEdwardsOneWorldTrace 搜索当前路径。</span><span class="sxs-lookup"><span data-stu-id="19e60-114">By default, BTAJDEdwardsOneWorldTrace searches the current path.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="be12e-115">tracelog.exe 可以从 Microsoft SDK 中获得，并与用于 JD Edwards OneWorld 的 BizTalk 适配器提供的命令兼容。</span><span class="sxs-lookup"><span data-stu-id="be12e-115">tracelog.exe is available from the Microsoft SDK and is compatible with the commands provided by BizTalk Adapter for JD Edwards OneWorld.</span></span> <span data-ttu-id="be12e-116">若要使用 logman.exe，请参阅 logman 文档。</span><span class="sxs-lookup"><span data-stu-id="be12e-116">To use logman.exe refer to the logman documentation.</span></span>  
+    >  <span data-ttu-id="19e60-115">tracelog.exe 可以从 Microsoft SDK 中获得，并与用于 JD Edwards OneWorld 的 BizTalk 适配器提供的命令兼容。</span><span class="sxs-lookup"><span data-stu-id="19e60-115">tracelog.exe is available from the Microsoft SDK and is compatible with the commands provided by BizTalk Adapter for JD Edwards OneWorld.</span></span> <span data-ttu-id="19e60-116">若要使用 logman.exe，请参阅 logman 文档。</span><span class="sxs-lookup"><span data-stu-id="19e60-116">To use logman.exe refer to the logman documentation.</span></span>  
   
--   <span data-ttu-id="be12e-117">**使用者应用程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-117">**Consumer application.**</span></span> <span data-ttu-id="be12e-118">读取记录的事件。</span><span class="sxs-lookup"><span data-stu-id="be12e-118">Reads logged events.</span></span>  
+-   <span data-ttu-id="19e60-117">**使用者应用程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-117">**Consumer application.**</span></span> <span data-ttu-id="19e60-118">读取记录的事件。</span><span class="sxs-lookup"><span data-stu-id="19e60-118">Reads logged events.</span></span>  
   
-     <span data-ttu-id="be12e-119">为了让使用者应用程序能够读取 .etl 文件中的事件，Windows 事件跟踪必须将其转储到该文件中。</span><span class="sxs-lookup"><span data-stu-id="be12e-119">For the consumer application to be able to read the event in the .etl file, Event Tracing for Windows must dump them into that file.</span></span> <span data-ttu-id="be12e-120">通常，该操作在控制器停用跟踪时完成。</span><span class="sxs-lookup"><span data-stu-id="be12e-120">Normally this is done when the controller deactivates the tracing.</span></span>  
+     <span data-ttu-id="19e60-119">为了让使用者应用程序能够读取 .etl 文件中的事件，Windows 事件跟踪必须将其转储到该文件中。</span><span class="sxs-lookup"><span data-stu-id="19e60-119">For the consumer application to be able to read the event in the .etl file, Event Tracing for Windows must dump them into that file.</span></span> <span data-ttu-id="19e60-120">通常，该操作在控制器停用跟踪时完成。</span><span class="sxs-lookup"><span data-stu-id="19e60-120">Normally this is done when the controller deactivates the tracing.</span></span>  
   
-     <span data-ttu-id="be12e-121">若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **\<实时 > =-rt**。</span><span class="sxs-lookup"><span data-stu-id="be12e-121">To use the consumer application without deactivating the trace, the controller must activate the trace with the real-time option, **\<Real time> = -rt**.</span></span>  
+     <span data-ttu-id="19e60-121">若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **\<实时\>=-rt**。</span><span class="sxs-lookup"><span data-stu-id="19e60-121">To use the consumer application without deactivating the trace, the controller must activate the trace with the real-time option, **\<Real time\> = -rt**.</span></span>  
   
--   <span data-ttu-id="be12e-122">**提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-122">**Provider.**</span></span> <span data-ttu-id="be12e-123">提供事件。</span><span class="sxs-lookup"><span data-stu-id="be12e-123">Provides the event.</span></span>  
+-   <span data-ttu-id="19e60-122">**提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-122">**Provider.**</span></span> <span data-ttu-id="19e60-123">提供事件。</span><span class="sxs-lookup"><span data-stu-id="19e60-123">Provides the event.</span></span>  
   
- <span data-ttu-id="be12e-124">用于博士 Edwards OneWorld 的 BizTalk Adapter 包括五个不同的提供程序。</span><span class="sxs-lookup"><span data-stu-id="be12e-124">BizTalk Adapter for JD Edwards OneWorld includes five different providers.</span></span> <span data-ttu-id="be12e-125">它们在 Windows Management Instrumentation (WMI) 中进行注册。</span><span class="sxs-lookup"><span data-stu-id="be12e-125">They are registered in Windows Management Instrumentation (WMI).</span></span> <span data-ttu-id="be12e-126">若要在根 \WMI\EventTrace 路径中找到已注册的提供程序，您可以使用诸如 WMI CIM Studio 之类的工具。</span><span class="sxs-lookup"><span data-stu-id="be12e-126">To find the registered providers in the root\WMI\EventTrace path, you can use tools such as WMI CIM Studio.</span></span>  
+ <span data-ttu-id="19e60-124">用于博士 Edwards OneWorld 的 BizTalk Adapter 包括五个不同的提供程序。</span><span class="sxs-lookup"><span data-stu-id="19e60-124">BizTalk Adapter for JD Edwards OneWorld includes five different providers.</span></span> <span data-ttu-id="19e60-125">它们在 Windows Management Instrumentation (WMI) 中进行注册。</span><span class="sxs-lookup"><span data-stu-id="19e60-125">They are registered in Windows Management Instrumentation (WMI).</span></span> <span data-ttu-id="19e60-126">若要在根 \WMI\EventTrace 路径中找到已注册的提供程序，您可以使用诸如 WMI CIM Studio 之类的工具。</span><span class="sxs-lookup"><span data-stu-id="19e60-126">To find the registered providers in the root\WMI\EventTrace path, you can use tools such as WMI CIM Studio.</span></span>  
   
- <span data-ttu-id="be12e-127">用于 JD Edwards OneWorld 的 BizTalk 适配器包含五种提供程序，允许您记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="be12e-127">BizTalk Adapter for JD Edwards OneWorld has five providers, allowing you to log different kinds of messages:</span></span>  
+ <span data-ttu-id="19e60-127">用于 JD Edwards OneWorld 的 BizTalk 适配器包含五种提供程序，允许您记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="19e60-127">BizTalk Adapter for JD Edwards OneWorld has five providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="be12e-128">**接收方日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="be12e-129">\<跟踪元素 > 交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="be12e-129">The \<Trace element> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="19e60-128">**接收方日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="19e60-129">\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="19e60-129">The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="be12e-130">**接收方 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="be12e-131">\<跟踪元素 > 交换机**-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="be12e-131">The \<Trace element> switch is **-castDetailsReceive**.</span></span>  
+-   <span data-ttu-id="19e60-130">**接收方 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="19e60-131">\<跟踪元素\>交换机**-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="19e60-131">The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
   
--   <span data-ttu-id="be12e-132">**发送器日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="be12e-133">\<跟踪元素 > 交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="be12e-133">The \<Trace element> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="19e60-132">**发送器日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="19e60-133">\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="19e60-133">The \<Trace element\> switch is **-transmitter**.</span></span>  
   
--   <span data-ttu-id="be12e-134">**发送器 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="be12e-135">\<跟踪元素 > 交换机**-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="be12e-135">The \<Trace element> switch is **-castDetailsTransmit**.</span></span>  
+-   <span data-ttu-id="19e60-134">**发送器 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="19e60-135">\<跟踪元素\>交换机**-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="19e60-135">The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
   
--   <span data-ttu-id="be12e-136">**管理日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="be12e-136">**Management Logging Provider.**</span></span> <span data-ttu-id="be12e-137">\<跟踪元素 > 交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="be12e-137">The \<Trace element> switch is **-management**.</span></span>  
+-   <span data-ttu-id="19e60-136">**管理日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="19e60-136">**Management Logging Provider.**</span></span> <span data-ttu-id="19e60-137">\<跟踪元素\>交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="19e60-137">The \<Trace element\> switch is **-management**.</span></span>  
   
- <span data-ttu-id="be12e-138">BTAJDEOneWorldTrace 命令</span><span class="sxs-lookup"><span data-stu-id="be12e-138">BTAJDEOneWorldTrace Command</span></span>  
+ <span data-ttu-id="19e60-138">BTAJDEOneWorldTrace 命令</span><span class="sxs-lookup"><span data-stu-id="19e60-138">BTAJDEOneWorldTrace Command</span></span>  
   
- <span data-ttu-id="be12e-139">若要使用 ETW，运行博士 Edwards OneWorld 命令，BTAJDEOneWorldTrace.cmd BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="be12e-139">To use ETW, run the BizTalk Adapter for JD Edwards OneWorld command, BTAJDEOneWorldTrace.cmd.</span></span> <span data-ttu-id="be12e-140">如下所示使用此命令：</span><span class="sxs-lookup"><span data-stu-id="be12e-140">You use this command as follows:</span></span>  
+ <span data-ttu-id="19e60-139">若要使用 ETW，运行博士 Edwards OneWorld 命令，BTAJDEOneWorldTrace.cmd BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="19e60-139">To use ETW, run the BizTalk Adapter for JD Edwards OneWorld command, BTAJDEOneWorldTrace.cmd.</span></span> <span data-ttu-id="19e60-140">如下所示使用此命令：</span><span class="sxs-lookup"><span data-stu-id="19e60-140">You use this command as follows:</span></span>  
   
 ```  
 BTAJDEOneWorldTrace <Trace element> -start [-cir <MB>|   
@@ -66,38 +66,38 @@ BTAJDEOneWorldTrace <Trace element> -start [-cir <MB>|
 BTAJDEOneWorldTrace <Trace element> -stop  
 ```  
   
- <span data-ttu-id="be12e-141">其中：</span><span class="sxs-lookup"><span data-stu-id="be12e-141">Where:</span></span>  
+ <span data-ttu-id="19e60-141">其中：</span><span class="sxs-lookup"><span data-stu-id="19e60-141">Where:</span></span>  
   
--   <span data-ttu-id="be12e-142">**\<跟踪元素 >** （必需） 是一种的提供程序。</span><span class="sxs-lookup"><span data-stu-id="be12e-142">**\<Trace element>** (required) is the kind of provider.</span></span>  
+-   <span data-ttu-id="19e60-142">**\<跟踪元素\>** （必需） 是一种的提供程序。</span><span class="sxs-lookup"><span data-stu-id="19e60-142">**\<Trace element\>** (required) is the kind of provider.</span></span>  
   
--   <span data-ttu-id="be12e-143">其选项为：</span><span class="sxs-lookup"><span data-stu-id="be12e-143">Its options are:</span></span>  
+-   <span data-ttu-id="19e60-143">其选项为：</span><span class="sxs-lookup"><span data-stu-id="19e60-143">Its options are:</span></span>  
   
-    -   <span data-ttu-id="be12e-144">**-castDetailsTransmit**</span><span class="sxs-lookup"><span data-stu-id="be12e-144">**-castDetailsTransmit**</span></span>  
+    -   <span data-ttu-id="19e60-144">**-castDetailsTransmit**</span><span class="sxs-lookup"><span data-stu-id="19e60-144">**-castDetailsTransmit**</span></span>  
   
-    -   <span data-ttu-id="be12e-145">**-发送器**</span><span class="sxs-lookup"><span data-stu-id="be12e-145">**-transmitter**</span></span>  
+    -   <span data-ttu-id="19e60-145">**-发送器**</span><span class="sxs-lookup"><span data-stu-id="19e60-145">**-transmitter**</span></span>  
   
-    -   <span data-ttu-id="be12e-146">**-castDetailsReceive**</span><span class="sxs-lookup"><span data-stu-id="be12e-146">**-castDetailsReceive**</span></span>  
+    -   <span data-ttu-id="19e60-146">**-castDetailsReceive**</span><span class="sxs-lookup"><span data-stu-id="19e60-146">**-castDetailsReceive**</span></span>  
   
-    -   <span data-ttu-id="be12e-147">**-接收方**</span><span class="sxs-lookup"><span data-stu-id="be12e-147">**-receiver**</span></span>  
+    -   <span data-ttu-id="19e60-147">**-接收方**</span><span class="sxs-lookup"><span data-stu-id="19e60-147">**-receiver**</span></span>  
   
-    -   <span data-ttu-id="be12e-148">**-管理**</span><span class="sxs-lookup"><span data-stu-id="be12e-148">**-management**</span></span>  
+    -   <span data-ttu-id="19e60-148">**-管理**</span><span class="sxs-lookup"><span data-stu-id="19e60-148">**-management**</span></span>  
   
-    -   <span data-ttu-id="be12e-149">**-启动、-停止**： 激活或停用该提供程序。</span><span class="sxs-lookup"><span data-stu-id="be12e-149">**-start, -stop**: Activate or deactivate the provider.</span></span>  
+    -   <span data-ttu-id="19e60-149">**-启动、-停止**： 激活或停用该提供程序。</span><span class="sxs-lookup"><span data-stu-id="19e60-149">**-start, -stop**: Activate or deactivate the provider.</span></span>  
   
-    -   <span data-ttu-id="be12e-150">**-cir \<MB >**： 大小和类型的文件。</span><span class="sxs-lookup"><span data-stu-id="be12e-150">**-cir \<MB>**: Size and kind of file.</span></span> <span data-ttu-id="be12e-151">-cir 是循环文件。</span><span class="sxs-lookup"><span data-stu-id="be12e-151">-cir is a circular file.</span></span> <span data-ttu-id="be12e-152">\<MB >: meg 中的大小。</span><span class="sxs-lookup"><span data-stu-id="be12e-152">\<MB>: Size in meg.</span></span>  
+    -   <span data-ttu-id="19e60-150">**-cir \<MB\>**： 大小和类型的文件。</span><span class="sxs-lookup"><span data-stu-id="19e60-150">**-cir \<MB\>**: Size and kind of file.</span></span> <span data-ttu-id="19e60-151">-cir 是循环文件。</span><span class="sxs-lookup"><span data-stu-id="19e60-151">-cir is a circular file.</span></span> <span data-ttu-id="19e60-152">\<MB\>: meg 中的大小。</span><span class="sxs-lookup"><span data-stu-id="19e60-152">\<MB\>: Size in meg.</span></span>  
   
-    -   <span data-ttu-id="be12e-153">**-seq \<MB >**： 大小和类型的文件。</span><span class="sxs-lookup"><span data-stu-id="be12e-153">**-seq \<MB>**: Size and kind of file.</span></span> <span data-ttu-id="be12e-154">-seq 是顺序文件。</span><span class="sxs-lookup"><span data-stu-id="be12e-154">-seq is a sequential file.</span></span> <span data-ttu-id="be12e-155">\<MB >: meg 中的大小。</span><span class="sxs-lookup"><span data-stu-id="be12e-155">\<MB>: Size in meg.</span></span>  
+    -   <span data-ttu-id="19e60-153">**-seq \<MB\>**： 大小和类型的文件。</span><span class="sxs-lookup"><span data-stu-id="19e60-153">**-seq \<MB\>**: Size and kind of file.</span></span> <span data-ttu-id="19e60-154">-seq 是顺序文件。</span><span class="sxs-lookup"><span data-stu-id="19e60-154">-seq is a sequential file.</span></span> <span data-ttu-id="19e60-155">\<MB\>: meg 中的大小。</span><span class="sxs-lookup"><span data-stu-id="19e60-155">\<MB\>: Size in meg.</span></span>  
   
-    -   <span data-ttu-id="be12e-156">**-rt**： 上设置的实时模式。</span><span class="sxs-lookup"><span data-stu-id="be12e-156">**-rt**: Set the real time mode on.</span></span>  
+    -   <span data-ttu-id="19e60-156">**-rt**： 上设置的实时模式。</span><span class="sxs-lookup"><span data-stu-id="19e60-156">**-rt**: Set the real time mode on.</span></span>  
   
-    -   <span data-ttu-id="be12e-157">**日志文件**： 日志文件的名称 （c:\rtlog.etl 是默认值）。</span><span class="sxs-lookup"><span data-stu-id="be12e-157">**Logfile**: Name of the log file (c:\rtlog.etl is the default).</span></span>  
+    -   <span data-ttu-id="19e60-157">**日志文件**： 日志文件的名称 （c:\rtlog.etl 是默认值）。</span><span class="sxs-lookup"><span data-stu-id="19e60-157">**Logfile**: Name of the log file (c:\rtlog.etl is the default).</span></span>  
   
- <span data-ttu-id="be12e-158">例如：</span><span class="sxs-lookup"><span data-stu-id="be12e-158">For example:</span></span>  
+ <span data-ttu-id="19e60-158">例如：</span><span class="sxs-lookup"><span data-stu-id="19e60-158">For example:</span></span>  
   
 ```  
 BTAJDEOneWorldTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  
 BTAJDEOneWorldTrace -transmitter -stop  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="be12e-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="be12e-159">See Also</span></span>  
- [<span data-ttu-id="be12e-160">故障排除博士 Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="be12e-160">Troubleshooting JD Edwards OneWorld</span></span>](../core/troubleshooting-jd-edwards-oneworld.md)
+## <a name="see-also"></a><span data-ttu-id="19e60-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="19e60-159">See Also</span></span>  
+ [<span data-ttu-id="19e60-160">故障排除博士 Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="19e60-160">Troubleshooting JD Edwards OneWorld</span></span>](../core/troubleshooting-jd-edwards-oneworld.md)
