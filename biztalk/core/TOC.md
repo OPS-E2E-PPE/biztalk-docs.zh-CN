@@ -1314,7 +1314,7 @@
 ####### [使用 ThrowDetailedError 开关](how-to-use-the-throwdetailederror-switch.md)
 ###### [测试已发布的 Web 服务](testing-published-web-services.md)
 ####### [创建 .NET 应用程序以测试已发布 Web 服务](creating-a-net-application-to-test-a-published-web-service.md)
-####### [使用 Internet Explorer 测试已发布的 Web 服务](how-to-use-internet-explorer-to-test-a-published-web-service.md)
+####### [测试 Web 服务](how-to-use-internet-explorer-to-test-a-published-web-service.md)
 ###### [在无 Visual Studio 的计算机上部署已发布 Web 服务](deploying-published-web-services-on-a-non-visual-studio-computer.md)
 ####### [为已发布的 Web 服务创建 Web 安装程序](how-to-create-a-web-setup-for-your-published-web-service.md)
 ####### [分发 Web 安装包](how-to-distribute-the-web-setup-package.md)
