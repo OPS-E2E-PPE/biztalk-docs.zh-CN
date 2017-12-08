@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="9d4ca-129">先决条件</span><span class="sxs-lookup"><span data-stu-id="9d4ca-129">Prerequisites</span></span>  
  <span data-ttu-id="9d4ca-130">你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。</span><span class="sxs-lookup"><span data-stu-id="9d4ca-130">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.</span></span>  
   
-##  <span data-ttu-id="9d4ca-131"><a name="BKMK_Env_Can"></a>可以修改的信封字段</span><span class="sxs-lookup"><span data-stu-id="9d4ca-131"><a name="BKMK_Env_Can"></a> Envelope Fields That Can Be Modified</span></span>  
+##  <a name="BKMK_Env_Can"></a><span data-ttu-id="9d4ca-131">可以修改的信封字段</span><span class="sxs-lookup"><span data-stu-id="9d4ca-131">Envelope Fields That Can Be Modified</span></span>  
  <span data-ttu-id="9d4ca-132">只能修改以下信封字段。</span><span class="sxs-lookup"><span data-stu-id="9d4ca-132">Only the following envelope fields can be modified.</span></span> <span data-ttu-id="9d4ca-133">只有这些字段包括在扩展架构中。</span><span class="sxs-lookup"><span data-stu-id="9d4ca-133">Only these fields are included in the extension schemas.</span></span> <span data-ttu-id="9d4ca-134">在服务扩展架构中添加其他字段对处理没有任何影响。</span><span class="sxs-lookup"><span data-stu-id="9d4ca-134">Added other fields in the service extension schema will not have any effect on processing.</span></span>  
   
 |<span data-ttu-id="9d4ca-135">Standard</span><span class="sxs-lookup"><span data-stu-id="9d4ca-135">Standard</span></span>|<span data-ttu-id="9d4ca-136">字段</span><span class="sxs-lookup"><span data-stu-id="9d4ca-136">Field</span></span>|  

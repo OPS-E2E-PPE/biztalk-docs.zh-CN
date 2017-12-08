@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
  [<span data-ttu-id="80c04-112">BizTalk Server 2013 和 2013 R2 的安装后步骤</span><span class="sxs-lookup"><span data-stu-id="80c04-112">Post-installation Steps for BizTalk Server 2013 and 2013 R2</span></span>](../install-and-config-guides/post-installation-steps-for-biztalk-server-2013-and-2013-r2.md)  
   
-##  <span data-ttu-id="80c04-113"><a name="BKMK_BAM"></a>业务活动监视</span><span class="sxs-lookup"><span data-stu-id="80c04-113"><a name="BKMK_BAM"></a> Business Activity Monitoring</span></span>  
+##  <a name="BKMK_BAM"></a><span data-ttu-id="80c04-113">业务活动监视</span><span class="sxs-lookup"><span data-stu-id="80c04-113">Business Activity Monitoring</span></span>  
  <span data-ttu-id="80c04-114">本部分列出了业务活动监视 (BAM) 模块的已知问题。</span><span class="sxs-lookup"><span data-stu-id="80c04-114">This section lists the known issues with the Business Activity Monitoring (BAM) module.</span></span>  
   
 ### <a name="bam-definition-deployment-fails-due-to-a-sql-login-error"></a><span data-ttu-id="80c04-115">由于 SQL 登录错误而导致 BAM 定义部署失败</span><span class="sxs-lookup"><span data-stu-id="80c04-115">BAM definition deployment fails due to a SQL login error</span></span>  
@@ -85,10 +85,10 @@ OLE DB error: OLE DB or ODBC error: Login failed for user <username>.; 42000.
 </configuration>  
 ```  
   
-##  <span data-ttu-id="80c04-138"><a name="BKMK_Upgrade"></a>BizTalk 服务器与 SQL Server 2012 一起使用时的问题</span><span class="sxs-lookup"><span data-stu-id="80c04-138"><a name="BKMK_Upgrade"></a> Issues While Using BizTalk Server with SQL Server 2012</span></span>  
+##  <a name="BKMK_Upgrade"></a><span data-ttu-id="80c04-138">BizTalk 服务器与 SQL Server 2012 一起使用时的问题</span><span class="sxs-lookup"><span data-stu-id="80c04-138">Issues While Using BizTalk Server with SQL Server 2012</span></span>  
  <span data-ttu-id="80c04-139">在使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]与[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]可以设置**远程登录超时值**SQL Server 中为 20 秒的值。</span><span class="sxs-lookup"><span data-stu-id="80c04-139">While using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] with [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] you can set the **Remote Login Timeout** value in SQL Server to 20 seconds.</span></span> <span data-ttu-id="80c04-140">否则，在任务繁忙时可能会出错。</span><span class="sxs-lookup"><span data-stu-id="80c04-140">If you don’t do so, you might encounter errors in stress conditions.</span></span> <span data-ttu-id="80c04-141">有关如何在中设置的远程登录超时值的说明[!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)]，请参阅[http://msdn.microsoft.com/library/ms175136.aspx](http://msdn.microsoft.com/library/ms175136.aspx)</span><span class="sxs-lookup"><span data-stu-id="80c04-141">For instructions on how to set the Remote Login Timeout value in [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)], see [http://msdn.microsoft.com/library/ms175136.aspx](http://msdn.microsoft.com/library/ms175136.aspx)</span></span>  
   
-##  <span data-ttu-id="80c04-142"><a name="BKMK_Adapters"></a>适配器问题</span><span class="sxs-lookup"><span data-stu-id="80c04-142"><a name="BKMK_Adapters"></a> Issues with Adapters</span></span>  
+##  <a name="BKMK_Adapters"></a><span data-ttu-id="80c04-142">适配器问题</span><span class="sxs-lookup"><span data-stu-id="80c04-142">Issues with Adapters</span></span>  
  <span data-ttu-id="80c04-143">本部分列出了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 适配器的已知问题。</span><span class="sxs-lookup"><span data-stu-id="80c04-143">This section lists the known issues with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapters.</span></span>  
   
 ### <a name="dynamic-port-may-fail-while-using-the-windows-sharepoint-services-wss-adapter"></a><span data-ttu-id="80c04-144">在使用 Windows SharePoint Services (WSS) 适配器时，动态端口可能发生故障</span><span class="sxs-lookup"><span data-stu-id="80c04-144">Dynamic port may fail while using the Windows SharePoint Services (WSS) adapter</span></span>  

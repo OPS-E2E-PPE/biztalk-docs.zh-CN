@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="20ead-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="20ead-106">Prerequisites</span></span>  
  <span data-ttu-id="20ead-107">在运行之前 BPM 解决方案，你必须执行中的步骤[如何安装业务流程管理解决方案](../core/how-to-install-the-business-process-management-solution.md)。</span><span class="sxs-lookup"><span data-stu-id="20ead-107">Before running the BPM solution, you must perform the steps in [How to Install the Business Process Management Solution](../core/how-to-install-the-business-process-management-solution.md).</span></span>  
   
-##  <span data-ttu-id="20ead-108"><a name="step1"></a>启动业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-108"><a name="step1"></a> Start the Business Process Management Solution</span></span>  
+##  <a name="step1"></a><span data-ttu-id="20ead-108">启动业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-108">Start the Business Process Management Solution</span></span>  
   
 #### <a name="to-start-the-business-process-management-solution"></a><span data-ttu-id="20ead-109">启动业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-109">To start the Business Process Management Solution</span></span>  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="20ead-146">键入 `BTSScnBPMProvisioning.exe 8880`，然后按 Enter。</span><span class="sxs-lookup"><span data-stu-id="20ead-146">Type `BTSScnBPMProvisioning.exe 8880`, and then press ENTER.</span></span> <span data-ttu-id="20ead-147">然后，使宽带提供系统保持运行状态。</span><span class="sxs-lookup"><span data-stu-id="20ead-147">Then, keep the Cable Provisioning System running.</span></span> <span data-ttu-id="20ead-148">电缆设置系统侦听 TCP 端口，8880。</span><span class="sxs-lookup"><span data-stu-id="20ead-148">The Cable Provisioning System listens on the TCP port, 8880.</span></span> <span data-ttu-id="20ead-149">此应用程序模拟的后端顺序系统，并显示最后一个订单。</span><span class="sxs-lookup"><span data-stu-id="20ead-149">This application simulates a back-end order system, and displays the final orders.</span></span>  
   
-##  <span data-ttu-id="20ead-150"><a name="step3"></a>运行和验证业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-150"><a name="step3"></a> Run and validate the Business Process Management Solution</span></span>  
+##  <a name="step3"></a><span data-ttu-id="20ead-150">运行和验证业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-150">Run and validate the Business Process Management Solution</span></span>  
   
 #### <a name="to-submit-a-new-order-and-validate-the-solution"></a><span data-ttu-id="20ead-151">提交新订单并验证解决方案</span><span class="sxs-lookup"><span data-stu-id="20ead-151">To submit a new order and validate the solution</span></span>  
   

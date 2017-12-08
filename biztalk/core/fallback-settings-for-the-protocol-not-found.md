@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 找不到协议的后备设置
-## 详细信息  
+# <a name="fallback-settings-for-the-protocol-not-found"></a><span data-ttu-id="0d8be-102">找不到协议的后备设置</span><span class="sxs-lookup"><span data-stu-id="0d8be-102">Fallback Settings for the Protocol not found</span></span>
+## <a name="details"></a><span data-ttu-id="0d8be-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0d8be-103">Details</span></span>  
   
 |||  
 |-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|AgreementResolutionFallbackSettingsNotFound|  
-|消息正文|找不到 {0} 协议的回退设置。|  
+|<span data-ttu-id="0d8be-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="0d8be-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="0d8be-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="0d8be-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="0d8be-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="0d8be-106">Event ID</span></span>|-|  
+|<span data-ttu-id="0d8be-107">事件源</span><span class="sxs-lookup"><span data-stu-id="0d8be-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="0d8be-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="0d8be-108"> EDI</span></span>|  
+|<span data-ttu-id="0d8be-109">组件</span><span class="sxs-lookup"><span data-stu-id="0d8be-109">Component</span></span>|<span data-ttu-id="0d8be-110">EDI 引擎</span><span class="sxs-lookup"><span data-stu-id="0d8be-110">EDI Engine</span></span>|  
+|<span data-ttu-id="0d8be-111">符号名称</span><span class="sxs-lookup"><span data-stu-id="0d8be-111">Symbolic Name</span></span>|<span data-ttu-id="0d8be-112">AgreementResolutionFallbackSettingsNotFound</span><span class="sxs-lookup"><span data-stu-id="0d8be-112">AgreementResolutionFallbackSettingsNotFound</span></span>|  
+|<span data-ttu-id="0d8be-113">消息正文</span><span class="sxs-lookup"><span data-stu-id="0d8be-113">Message Text</span></span>|<span data-ttu-id="0d8be-114">找不到 {0} 协议的回退设置。</span><span class="sxs-lookup"><span data-stu-id="0d8be-114">Fallback Settings for the {0} Protocol not found.</span></span>|  
   
-## 解释  
- 此错误/警告/信息事件表明 BizTalk Server 能够解析到某个协议且已重定向到回退设置，但发现特定协议没有回退设置。  
+## <a name="explanation"></a><span data-ttu-id="0d8be-115">解释</span><span class="sxs-lookup"><span data-stu-id="0d8be-115">Explanation</span></span>  
+ <span data-ttu-id="0d8be-116">此错误/警告/信息事件表明 BizTalk Server 能够解析到某个协议且已重定向到回退设置，但发现特定协议没有回退设置。</span><span class="sxs-lookup"><span data-stu-id="0d8be-116">This Error/Warning/Information event indicates BizTalk Server was able to resolve to an agreement and has been redirected to Fallback settings and found that the fallback settings were not there for the particular protocol.</span></span>  
   
-## 用户操作  
- 若要解决此错误，请为特定协议配置回退设置。
+## <a name="user-action"></a><span data-ttu-id="0d8be-117">用户操作</span><span class="sxs-lookup"><span data-stu-id="0d8be-117">User Action</span></span>  
+ <span data-ttu-id="0d8be-118">若要解决此错误，请为特定协议配置回退设置。</span><span class="sxs-lookup"><span data-stu-id="0d8be-118">To resolve this error, please configure the fallback settings for the particular protocol.</span></span>
