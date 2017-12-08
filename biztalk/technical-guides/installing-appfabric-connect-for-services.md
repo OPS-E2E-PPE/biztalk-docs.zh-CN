@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="91ed0-121">在向导完成功能包安装后，单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="91ed0-121">After the wizard completes the feature pack installation, click **Finish**.</span></span>  
   
-##  <span data-ttu-id="91ed0-122"><a name="BKMK_Using"></a>用 AppFabric 连接服务</span><span class="sxs-lookup"><span data-stu-id="91ed0-122"><a name="BKMK_Using"></a> Using AppFabric Connect for Services</span></span>  
+##  <a name="BKMK_Using"></a><span data-ttu-id="91ed0-122">用 AppFabric 连接服务</span><span class="sxs-lookup"><span data-stu-id="91ed0-122">Using AppFabric Connect for Services</span></span>  
  <span data-ttu-id="91ed0-123">安装后 AppFabric 连接的服务，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="91ed0-123">After installing AppFabric Connect for Services, you can do the following:</span></span>  
   
 -   <span data-ttu-id="91ed0-124">使用**BizTalk WCF 服务发布向导**作为与 Azure AppFabric Service bus 中继终结点的 WCF 服务公开 BizTalk 项目 （业务流程、 架构、 等）。</span><span class="sxs-lookup"><span data-stu-id="91ed0-124">Use the **BizTalk WCF Service Publishing Wizard** to expose BizTalk artifacts (orchestration, schema, etc.) as WCF services with a relay endpoint on the Azure AppFabric Service Bus.</span></span> <span data-ttu-id="91ed0-125">有关详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=204700](http://go.microsoft.com/fwlink/?LinkId=204700)。</span><span class="sxs-lookup"><span data-stu-id="91ed0-125">For more information, see [http://go.microsoft.com/fwlink/?LinkId=204700](http://go.microsoft.com/fwlink/?LinkId=204700).</span></span>  

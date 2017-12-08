@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  <span data-ttu-id="d793b-106">按列出的顺序完成这些任务。</span><span class="sxs-lookup"><span data-stu-id="d793b-106">Complete these tasks in the order listed.</span></span>  
   
-##  <span data-ttu-id="d793b-107"><a name="BKMK_InstUpdates"></a> 安装 Windows 更新</span><span class="sxs-lookup"><span data-stu-id="d793b-107"><a name="BKMK_InstUpdates"></a> Install Windows Updates</span></span>  
+##  <a name="BKMK_InstUpdates"></a> <span data-ttu-id="d793b-107">安装 Windows 更新</span><span class="sxs-lookup"><span data-stu-id="d793b-107">Install Windows Updates</span></span>  
   
 -   <span data-ttu-id="d793b-108">**Windows 7**：单击“开始”。</span><span class="sxs-lookup"><span data-stu-id="d793b-108">**Windows 7**: Click Start.</span></span> <span data-ttu-id="d793b-109">在“搜索”文本框中，键入 **Windows Update**。</span><span class="sxs-lookup"><span data-stu-id="d793b-109">In the **Search** text box, type **Windows Update**.</span></span>  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="d793b-112">安装更新之后，你可能需要重新启动计算机。</span><span class="sxs-lookup"><span data-stu-id="d793b-112">After installing updates, you may need to restart the computer.</span></span>  
   
-##  <span data-ttu-id="d793b-113"><a name="BKMK_IIS"></a> 启用 Internet Information Services</span><span class="sxs-lookup"><span data-stu-id="d793b-113"><a name="BKMK_IIS"></a> Enable Internet Information Services</span></span>  
+##  <a name="BKMK_IIS"></a> <span data-ttu-id="d793b-113">启用 Internet Information Services</span><span class="sxs-lookup"><span data-stu-id="d793b-113">Enable Internet Information Services</span></span>  
  <span data-ttu-id="d793b-114">Microsoft Internet 信息服务 (IIS) 为许多 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能提供了 Web 应用程序基础结构，包括：</span><span class="sxs-lookup"><span data-stu-id="d793b-114">Microsoft Internet Information Services (IIS) provides a Web application infrastructure for many [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] features, including:</span></span>  
   
 -   <span data-ttu-id="d793b-115">HTTP 适配器</span><span class="sxs-lookup"><span data-stu-id="d793b-115">HTTP adapter</span></span>  
@@ -162,7 +162,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="d793b-191">[http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) 还列出了在 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] 上启用 IIS 的步骤。</span><span class="sxs-lookup"><span data-stu-id="d793b-191">[http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) also lists the steps to enable IIS on [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)].</span></span>  
   
-##  <span data-ttu-id="d793b-192"><a name="BKMK_XLS"></a> 安装 Microsoft Office Excel</span><span class="sxs-lookup"><span data-stu-id="d793b-192"><a name="BKMK_XLS"></a> Install Microsoft Office Excel</span></span>  
+##  <a name="BKMK_XLS"></a> <span data-ttu-id="d793b-192">安装 Microsoft Office Excel</span><span class="sxs-lookup"><span data-stu-id="d793b-192">Install Microsoft Office Excel</span></span>  
   
 1.  <span data-ttu-id="d793b-193">运行 Microsoft Office 安装程序。</span><span class="sxs-lookup"><span data-stu-id="d793b-193">Run the Microsoft Office setup.</span></span>  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-203">若要成功将 BAM.xla 加载到 Excel 中，请在“Office 共享功能”下安装“Visual Basic for Applications”。</span><span class="sxs-lookup"><span data-stu-id="d793b-203">To successfully load BAM.xla into Excel, install **Visual Basic for Applications** under **Office Shared Features**.</span></span> <span data-ttu-id="d793b-204">否则，可能会收到“此工作簿已丢失了其 VBA 项目、ActiveX 控件以及其他任何与可编程性相关的功能”错误。</span><span class="sxs-lookup"><span data-stu-id="d793b-204">Otherwise, you may get error “This workbook has lost its VBA project, ActiveX controls and any other programmability-related features.”</span></span>  
   
-##  <span data-ttu-id="d793b-205"><a name="BKMK_VS"></a> 安装 Visual Studio</span><span class="sxs-lookup"><span data-stu-id="d793b-205"><a name="BKMK_VS"></a> Install Visual Studio</span></span>  
+##  <a name="BKMK_VS"></a> <span data-ttu-id="d793b-205">安装 Visual Studio</span><span class="sxs-lookup"><span data-stu-id="d793b-205">Install Visual Studio</span></span>  
   
 1.  <span data-ttu-id="d793b-206">以管理员身份运行 Visual Studio 安装程序。</span><span class="sxs-lookup"><span data-stu-id="d793b-206">Run the Visual Studio setup as Administrator.</span></span>  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-218">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时需要 [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d793b-218">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime requires [!INCLUDE[dotnet45](../includes/dotnet45-md.md)].</span></span> <span data-ttu-id="d793b-219">如果已安装 Windows Communication Foundation (WCF) 适配器或 WCF 侦听器，则需要安装 .NET Framework 3.0。</span><span class="sxs-lookup"><span data-stu-id="d793b-219">The .NET Framework 3.0 is required if the Windows Communication Foundation (WCF) adapter or WCF Interceptor is installed.</span></span>  
   
-##  <span data-ttu-id="d793b-220"><a name="BKMK_SQL"></a> 安装 SQL Server</span><span class="sxs-lookup"><span data-stu-id="d793b-220"><a name="BKMK_SQL"></a> Install SQL Server</span></span>  
+##  <a name="BKMK_SQL"></a> <span data-ttu-id="d793b-220">安装 SQL Server</span><span class="sxs-lookup"><span data-stu-id="d793b-220">Install SQL Server</span></span>  
  <span data-ttu-id="d793b-221">安装 [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)</span><span class="sxs-lookup"><span data-stu-id="d793b-221">Install [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)</span></span>  
   
  <span data-ttu-id="d793b-222">安装 [SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx)</span><span class="sxs-lookup"><span data-stu-id="d793b-222">Install [SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx)</span></span>  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-243">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 位于单独的计算机上时，分布式事务协调器 (MS DTC) 处理计算机之间的事务。</span><span class="sxs-lookup"><span data-stu-id="d793b-243">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] are on separate computers, Distributed Transaction Coordinator (MS DTC) handles the transactions between the computers.</span></span> <span data-ttu-id="d793b-244">[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn 功能不支持 MSDTC 事务。</span><span class="sxs-lookup"><span data-stu-id="d793b-244">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature does not support MSDTC transactions.</span></span> <span data-ttu-id="d793b-245">不支持 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn 功能。</span><span class="sxs-lookup"><span data-stu-id="d793b-245">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature is not supported.</span></span>  
   
-##  <span data-ttu-id="d793b-246"><a name="BKMK_MQSeries"></a> 安装 MQSeries 必备组件</span><span class="sxs-lookup"><span data-stu-id="d793b-246"><a name="BKMK_MQSeries"></a> Install MQSeries Prerequisites</span></span>  
+##  <a name="BKMK_MQSeries"></a> <span data-ttu-id="d793b-246">安装 MQSeries 必备组件</span><span class="sxs-lookup"><span data-stu-id="d793b-246">Install MQSeries Prerequisites</span></span>  
  <span data-ttu-id="d793b-247">**MQSeries 适配器**：自动随 BizTalk Server 一起安装。</span><span class="sxs-lookup"><span data-stu-id="d793b-247">**MQSeries adapter**: Automatically installed with the BizTalk Server installation.</span></span>  
   
  <span data-ttu-id="d793b-248">**MQSeries 客户端 (MQSC) 适配器**：</span><span class="sxs-lookup"><span data-stu-id="d793b-248">**MQSeries Client (MQSC) adapter**:</span></span>  
@@ -289,10 +289,10 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-269">IBM WebSphere 不是 Microsoft 产品，也不受 Microsoft 支持。</span><span class="sxs-lookup"><span data-stu-id="d793b-269">IBM WebSphere is not a Microsoft product and is not supported by Microsoft.</span></span> <span data-ttu-id="d793b-270">Microsoft 不保证此程序的适用性。</span><span class="sxs-lookup"><span data-stu-id="d793b-270">Microsoft makes no guarantees about the suitability of this program.</span></span> <span data-ttu-id="d793b-271">有关 IBM WebSphere MQ 的详细信息，请参阅 www.ibm.com。</span><span class="sxs-lookup"><span data-stu-id="d793b-271">For more information about IBM WebSphere MQ, including download instructions, see www.ibm.com.</span></span>  
   
-##  <span data-ttu-id="d793b-272"><a name="BKMK_BAMAlerts"></a> BAM 警报</span><span class="sxs-lookup"><span data-stu-id="d793b-272"><a name="BKMK_BAMAlerts"></a> BAM Alerts</span></span>  
+##  <a name="BKMK_BAMAlerts"></a> <span data-ttu-id="d793b-272">BAM 警报</span><span class="sxs-lookup"><span data-stu-id="d793b-272">BAM Alerts</span></span>  
  <span data-ttu-id="d793b-273">[!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] 或 [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] 的 BAM 警报使用 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 的数据库邮件功能。</span><span class="sxs-lookup"><span data-stu-id="d793b-273">BAM Alerts with [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] or [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] uses Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="d793b-274">[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] 的 BAM 警报使用 SQL Notification Services。</span><span class="sxs-lookup"><span data-stu-id="d793b-274">BAM Alerts with [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] uses SQL Notification Services.</span></span> <span data-ttu-id="d793b-275">在安装或配置 BAM 警报之前，你必须先在 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 中配置 Notification Services 或数据库邮件功能。</span><span class="sxs-lookup"><span data-stu-id="d793b-275">Before installing or configuring BAM Alerts, you must configure the Notification Services or Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span>  
   
-###  <span data-ttu-id="d793b-276"><a name="BKMK_DBMail"></a> 使用 SQL Server 2012/2014 的 BAM 警报</span><span class="sxs-lookup"><span data-stu-id="d793b-276"><a name="BKMK_DBMail"></a> BAM Alerts using SQL Server 2012/2014</span></span>  
+###  <a name="BKMK_DBMail"></a> <span data-ttu-id="d793b-276">使用 SQL Server 2012/2014 的 BAM 警报</span><span class="sxs-lookup"><span data-stu-id="d793b-276">BAM Alerts using SQL Server 2012/2014</span></span>  
  <span data-ttu-id="d793b-277">配置 [SQL Server 2012 数据库邮件](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx)。</span><span class="sxs-lookup"><span data-stu-id="d793b-277">Configure [SQL Server 2012 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx).</span></span>  
   
  <span data-ttu-id="d793b-278">配置 [SQL Server 2014 数据库邮件](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx)。</span><span class="sxs-lookup"><span data-stu-id="d793b-278">Configure [SQL Server 2014 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx).</span></span>  
@@ -301,7 +301,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-280">数据库邮件使用 SMTP 服务器发送 BAM 警报。</span><span class="sxs-lookup"><span data-stu-id="d793b-280">Database Mail uses an SMTP server to send the BAM Alerts.</span></span> <span data-ttu-id="d793b-281">SMTP 服务器可以本地安装在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上，也可以安装在其他 IIS 服务器上。</span><span class="sxs-lookup"><span data-stu-id="d793b-281">SMTP Server can be installed locally on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or on another IIS server.</span></span> <span data-ttu-id="d793b-282">[附录 D：创建 SMTP 服务器](../install-and-config-guides/appendix-d-create-the-smtp-server.md)中列出了安装和配置 SMTP 服务器的步骤。</span><span class="sxs-lookup"><span data-stu-id="d793b-282">[Appendix D: Create the SMTP Server](../install-and-config-guides/appendix-d-create-the-smtp-server.md) lists the steps to install and configure a SMTP Server.</span></span>  
   
-###  <span data-ttu-id="d793b-283"><a name="BKMK_SSNS"></a> 使用 SQL Server 2008 R2 的 BAM 警报 – 安装 SQL Server 2005 Notification Services</span><span class="sxs-lookup"><span data-stu-id="d793b-283"><a name="BKMK_SSNS"></a> BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
+###  <a name="BKMK_SSNS"></a> <span data-ttu-id="d793b-283">使用 SQL Server 2008 R2 的 BAM 警报 – 安装 SQL Server 2005 Notification Services</span><span class="sxs-lookup"><span data-stu-id="d793b-283">BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
   
 1.  <span data-ttu-id="d793b-284">转到 [SQL Server 2005 SP4 功能包](http://go.microsoft.com/fwlink/p/?LinkId=286285)。</span><span class="sxs-lookup"><span data-stu-id="d793b-284">Go to [Feature Pack for Microsoft SQL Server 2005 SP4](http://go.microsoft.com/fwlink/p/?LinkId=286285).</span></span>  
   
@@ -329,7 +329,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-296">不需要配置 SQL Notification Services；只需将其安装在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上。</span><span class="sxs-lookup"><span data-stu-id="d793b-296">SQL Notification Services does not need to be configured; only installed on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="d793b-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="d793b-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span></span>  
+##  <a name="BKMK_WIF"></a> <span data-ttu-id="d793b-297">Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="d793b-297">Windows Identity Foundation</span></span>  
   
 |||  
 |-|-|  
@@ -349,7 +349,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-315">[附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)提供了有关 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 安装选项的特殊信息。</span><span class="sxs-lookup"><span data-stu-id="d793b-315">[Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) provides specific information on the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] installation options.</span></span>  
   
-##  <span data-ttu-id="d793b-316"><a name="BKMK_WSS"></a> 安装和配置 Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="d793b-316"><a name="BKMK_WSS"></a> Install and Configure Microsoft SharePoint</span></span>  
+##  <a name="BKMK_WSS"></a> <span data-ttu-id="d793b-316">安装和配置 Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="d793b-316">Install and Configure Microsoft SharePoint</span></span>  
  <span data-ttu-id="d793b-317">安装 [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)</span><span class="sxs-lookup"><span data-stu-id="d793b-317">Install [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)</span></span>  
   
  <span data-ttu-id="d793b-318">安装 [SharePoint Online 服务](http://technet.microsoft.com/library/jj819267.aspx)</span><span class="sxs-lookup"><span data-stu-id="d793b-318">Install [SharePoint Online Service](http://technet.microsoft.com/library/jj819267.aspx)</span></span>  
@@ -374,7 +374,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-328">使用 SharePoint 适配器时，建议安装新 CSOM 选项（而不是 SharePoint Service Web Service）；相关说明请参阅[附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="d793b-328">When using the SharePoint adapter, it is recommended to install the new CSOM option instead of the SharePoint Service Web Service; described at [Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md).</span></span>  
   
-##  <span data-ttu-id="d793b-329"><a name="BKMK_SharedMem"></a> 禁用 Shared Memory 协议</span><span class="sxs-lookup"><span data-stu-id="d793b-329"><a name="BKMK_SharedMem"></a> Disable the Shared Memory Protocol</span></span>  
+##  <a name="BKMK_SharedMem"></a> <span data-ttu-id="d793b-329">禁用 Shared Memory 协议</span><span class="sxs-lookup"><span data-stu-id="d793b-329">Disable the Shared Memory Protocol</span></span>  
   
 1.  <span data-ttu-id="d793b-330">打开“SQL Server 配置管理器”。</span><span class="sxs-lookup"><span data-stu-id="d793b-330">Open **SQL Server Configuration Manager**.</span></span>  
   
@@ -392,7 +392,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-339">ReplaceThisText</span><span class="sxs-lookup"><span data-stu-id="d793b-339">ReplaceThisText</span></span>  
   
-##  <span data-ttu-id="d793b-340"><a name="BKMK_LocalAdmin"></a> 加入本地管理员组</span><span class="sxs-lookup"><span data-stu-id="d793b-340"><a name="BKMK_LocalAdmin"></a> Join the Local Administrators Group</span></span>  
+##  <a name="BKMK_LocalAdmin"></a> <span data-ttu-id="d793b-340">加入本地管理员组</span><span class="sxs-lookup"><span data-stu-id="d793b-340">Join the Local Administrators Group</span></span>  
  <span data-ttu-id="d793b-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]**[Windows Server 2012: How to Add an Account to a Local Administrator Group](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)（Windows Server 2012：如何将帐户添加到本地管理员组）</span><span class="sxs-lookup"><span data-stu-id="d793b-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]** : [Windows Server 2012: How to Add an Account to a Local Administrator Group](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)</span></span>  
   
  <span data-ttu-id="d793b-342">**Windows 8.1**：若要在 Windows 8 上打开“本地用户和组”，请单击键盘上的 Windows 按钮，然后键入“组”。</span><span class="sxs-lookup"><span data-stu-id="d793b-342">**Windows 8.1**: To open Local Users and Groups on Windows 8, click the Windows button on the keyboard and type **groups**.</span></span> <span data-ttu-id="d793b-343">在“搜索”窗口中，单击“设置”。</span><span class="sxs-lookup"><span data-stu-id="d793b-343">In the Search window, click **Settings**.</span></span> <span data-ttu-id="d793b-344">在“结果”窗口中，单击“编辑本地用户和组”。</span><span class="sxs-lookup"><span data-stu-id="d793b-344">In the Results window, click **Edit local users and groups**.</span></span> <span data-ttu-id="d793b-345">单击“组”，然后双击“管理员”以添加帐户。</span><span class="sxs-lookup"><span data-stu-id="d793b-345">Click **Groups** and then double-click Administrators to add an account.</span></span>  
@@ -403,7 +403,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="d793b-350">你必须是本地 Administrators 组的成员才能安装和配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d793b-350">You must be a member of the local Administrators group to install and configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="d793b-351"><a name="BKMK_AppLog"></a> 配置应用程序事件日志</span><span class="sxs-lookup"><span data-stu-id="d793b-351"><a name="BKMK_AppLog"></a> Configure the Application Event Log</span></span>  
+##  <a name="BKMK_AppLog"></a> <span data-ttu-id="d793b-351">配置应用程序事件日志</span><span class="sxs-lookup"><span data-stu-id="d793b-351">Configure the Application Event Log</span></span>  
   
 1.  <span data-ttu-id="d793b-352">打开“事件查看器”：</span><span class="sxs-lookup"><span data-stu-id="d793b-352">Open **Event Viewer**:</span></span>  
   
