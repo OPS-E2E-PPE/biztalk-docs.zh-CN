@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="d80af-112">以下各节提供有关通过公开的操作信息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]并发程序。</span><span class="sxs-lookup"><span data-stu-id="d80af-112">The following sections provide information about the operations exposed by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] for concurrent programs.</span></span>  
   
-##  <span data-ttu-id="d80af-113"><a name="Concurrent"></a>< Concurrent_Program_Name > 操作</span><span class="sxs-lookup"><span data-stu-id="d80af-113"><a name="Concurrent"></a> <Concurrent_Program_Name> Operation</span></span>  
+##  <a name="Concurrent"></a><span data-ttu-id="d80af-113">< Concurrent_Program_Name > 操作</span><span class="sxs-lookup"><span data-stu-id="d80af-113"><Concurrent_Program_Name> Operation</span></span>  
  <span data-ttu-id="d80af-114">如前所述，将为 Oracle Aapplication 中的并发程序数的任意多个 < Concurrent_Program_Name > 操作。</span><span class="sxs-lookup"><span data-stu-id="d80af-114">As mentioned earlier, there will be as many <Concurrent_Program_Name> operations as the number of concurrent programs in an Oracle Aapplication.</span></span> <span data-ttu-id="d80af-115">< Concurrent_Program_Name > 操作采用标准的五个参数： 三个复杂类型，且两个简单类型。</span><span class="sxs-lookup"><span data-stu-id="d80af-115">The <Concurrent_Program_Name> operation takes five standard parameters:  three of complex type and two of simple type.</span></span>  
   
 > [!NOTE]

@@ -47,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  <span data-ttu-id="6221a-164">如果你使用的 WCF 服务模型或 WCF 通道模型，你还必须设置**AcceptCredentialsInUri**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="6221a-164">If you are using the WCF service model or the WCF channel model, you must also set the **AcceptCredentialsInUri** binding property.</span></span>  
   
-##  <span data-ttu-id="6221a-165"><a name="ForUpdate"></a>指定一个 FOR 更新轮询语句中的子句</span><span class="sxs-lookup"><span data-stu-id="6221a-165"><a name="ForUpdate"></a> Specifying a FOR UPDATE Clause in the Polling Statement</span></span>  
+##  <a name="ForUpdate"></a><span data-ttu-id="6221a-165">指定一个 FOR 更新轮询语句中的子句</span><span class="sxs-lookup"><span data-stu-id="6221a-165">Specifying a FOR UPDATE Clause in the Polling Statement</span></span>  
  <span data-ttu-id="6221a-166">如果使用的作为轮询语句和执行影响在 SELECT 语句中指定的行后轮询语句的 SELECT 语句，你必须在轮询语句中使用 FOR UPDATE 子句。</span><span class="sxs-lookup"><span data-stu-id="6221a-166">If you are using a SELECT statement as the polling statement and executing a post-poll statement that affects the rows specified in the SELECT statement, you must use the FOR UPDATE clause in the polling statement.</span></span> <span data-ttu-id="6221a-167">指定 FOR UPDATE 子句可确保通过轮询语句所选择的记录将被锁定在事务处理期间并后轮询语句可以对它们执行任何所需的更新。</span><span class="sxs-lookup"><span data-stu-id="6221a-167">Specifying a FOR UPDATE clause ensures that the records selected by the polling statement are locked during the transaction and that the post-poll statement can perform any required updates on them.</span></span>  
   
 > [!CAUTION]

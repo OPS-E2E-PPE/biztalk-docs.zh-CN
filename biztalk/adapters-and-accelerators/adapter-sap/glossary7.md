@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 <span data-ttu-id="4b7d2-145">**协定**</span><span class="sxs-lookup"><span data-stu-id="4b7d2-145">**contract**</span></span>  
 <span data-ttu-id="4b7d2-146">指定的集合和访问服务提供的操作所必需的消息的结构。</span><span class="sxs-lookup"><span data-stu-id="4b7d2-146">Specifies the collection and structure of messages required to access the operations offered by the service.</span></span>
   
-####  <span data-ttu-id="4b7d2-147"><a name="D"></a>D</span><span class="sxs-lookup"><span data-stu-id="4b7d2-147"><a name="D"></a> D</span></span>  
+####  <a name="D"></a><span data-ttu-id="4b7d2-147">D</span><span class="sxs-lookup"><span data-stu-id="4b7d2-147">D</span></span>  
   
 <span data-ttu-id="4b7d2-148">**设计时体验**</span><span class="sxs-lookup"><span data-stu-id="4b7d2-148">**design-time experience**</span></span>  
 <span data-ttu-id="4b7d2-149">过程和开发人员在设计时; 期间执行的操作例如，使用使用适配器服务 BizTalk 项目外接程序检索消息架构。</span><span class="sxs-lookup"><span data-stu-id="4b7d2-149">Procedures and operations that a developer performs during design time; for example, using the Consume Adapter Service BizTalk Project Add-in to retrieve message schemas.</span></span>  

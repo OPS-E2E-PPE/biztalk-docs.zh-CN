@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="e8582-136">先决条件</span><span class="sxs-lookup"><span data-stu-id="e8582-136">Prerequisites</span></span>  
  <span data-ttu-id="e8582-137">你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。</span><span class="sxs-lookup"><span data-stu-id="e8582-137">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.</span></span>  
   
-##  <span data-ttu-id="e8582-138"><a name="BKMK_Proc"></a>若要配置 BizTalk Server 发送 AS2 消息通过动态发送端口</span><span class="sxs-lookup"><span data-stu-id="e8582-138"><a name="BKMK_Proc"></a> To configure BizTalk Server to send AS2 messages over a dynamic send port</span></span>  
+##  <a name="BKMK_Proc"></a><span data-ttu-id="e8582-138">若要配置 BizTalk Server 发送 AS2 消息通过动态发送端口</span><span class="sxs-lookup"><span data-stu-id="e8582-138">To configure BizTalk Server to send AS2 messages over a dynamic send port</span></span>  
   
 1.  <span data-ttu-id="e8582-139">在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，使用以上配置创建动态单向发送端口（如果未请求 MDN）或动态要求响应发送端口（如果请求了 MDN）。</span><span class="sxs-lookup"><span data-stu-id="e8582-139">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, create a dynamic one-way send port (if an MDN is not requested) or a dynamic solicit response send port (if an MDN is requested) with the above configuration.</span></span>  
   
