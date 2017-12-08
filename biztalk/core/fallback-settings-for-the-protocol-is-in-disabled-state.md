@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 协议的后备设置处于禁用状态
-## 详细信息  
+# <a name="fallback-settings-for-the-protocol-is-in-disabled-state"></a>协议的后备设置处于禁用状态
+## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |符号名称|AgreementResolutionFallbackSettingsDisabled|  
 |消息正文|{0} 协议的回退设置处于禁用状态。|  
   
-## 解释  
+## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 BizTalk Server 能够解析到某个协议且已重定向到回退设置，但发现特定协议的回退设置处于禁用状态。  
   
-## 用户操作  
+## <a name="user-action"></a>用户操作  
  若要解决此错误，请启用回退设置特定的协议。

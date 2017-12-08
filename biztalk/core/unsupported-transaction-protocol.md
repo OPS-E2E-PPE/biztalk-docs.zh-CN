@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 不支持的事务协议
-## 详细信息  
+# <a name="unsupported-transaction-protocol"></a>不支持的事务协议
+## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
@@ -31,10 +31,10 @@ ms.lasthandoff: 09/20/2017
 |符号名称|0|  
 |消息正文|不受支持的事务处理协议： {0}|  
   
-## 解释  
+## <a name="explanation"></a>解释  
  如果接收位置或发送端口的事务协议属性设置为无效的值，则发生此错误。  
   
-## 用户操作  
+## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  
   
 1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  

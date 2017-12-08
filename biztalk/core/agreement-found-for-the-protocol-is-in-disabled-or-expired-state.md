@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 为协议找到的协议处于禁用或过期的状态
-## 详细信息  
+# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a>为协议找到的协议处于禁用或过期的状态
+## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |符号名称|AgreementResolutionAgreementDiasbledOrExpired|  
 |消息正文|找到 {0} 协议的协议处于已禁用或已过期状态。|  
   
-## 解释  
+## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 BizTalk Server 能够解析到某个协议，但它处于禁用或已过期状态。  
   
-## 用户操作  
+## <a name="user-action"></a>用户操作  
  若要解决此错误，请启用该协议。

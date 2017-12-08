@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 找不到协议的后备设置
-## 详细信息  
+# <a name="fallback-settings-for-the-protocol-not-found"></a>找不到协议的后备设置
+## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |符号名称|AgreementResolutionFallbackSettingsNotFound|  
 |消息正文|找不到 {0} 协议的回退设置。|  
   
-## 解释  
+## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 BizTalk Server 能够解析到某个协议且已重定向到回退设置，但发现特定协议没有回退设置。  
   
-## 用户操作  
+## <a name="user-action"></a>用户操作  
  若要解决此错误，请为特定协议配置回退设置。

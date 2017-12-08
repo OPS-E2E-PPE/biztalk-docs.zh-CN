@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
 ---
-# 基于协议上下文属性的协议解析失败
-## 详细信息  
+# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>基于协议上下文属性的协议解析失败
+## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |符号名称|AgreementResolutionContextPropertiesLookupFailed|  
 |消息正文|协议解析基于的 {0} 协议已失败的上下文属性。|  
   
-## 解释  
+## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 BizTalk Server 无法基于客户提供的上下文属性解析为协议。  
   
-## 用户操作  
+## <a name="user-action"></a>用户操作  
  若要解决此错误，请作为 BizTalk 消息的一部分提供上下文属性，以便可以进行协议解析。
