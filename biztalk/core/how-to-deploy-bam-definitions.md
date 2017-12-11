@@ -17,11 +17,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63c3572658e78c7e32722adf38436133ee098e00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 094a37d90db41e505adeaec3a31ece9128785e04
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-bam-definitions"></a>如何部署 BAM 定义
 管理员使用**部署所有**BAM 管理实用工具命令以部署来自 Excel 工作簿或 XML 定义文件的 BAM 定义导出从工作簿。 当你执行的完整安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，配置向导将自动配置 BAM 配置 XML。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
 >  建议你在部署 BAM Excel 工作簿 (.xls) 之前，先验证其安全性。 你可以在管理计算机上使用 Excel 来验证 BAM Excel 工作簿的安全性。 在部署工作簿之前，将其打开，并确保的宏安全性已设为高，且没有任何警告。  
   
 > [!IMPORTANT]
->  在 BAM 数据库中，"BAM_\<… >"为所有 SQL 实体保留的命名约定 (表、 索引、 存储的过程、 角色等。..)。*不这样做*使用此命名约定来创建任何 SQL 实体; 这类用法可能会导致未定义的行为。  
+>  在 BAM 数据库中，"BAM_\<...\>"为所有 SQL 实体保留的命名约定 (表、 索引、 存储的过程、 角色等.)。*不这样做*使用此命名约定来创建任何 SQL 实体; 这类用法可能会导致未定义的行为。  
   
  在部署 BAM 定义 XML 文件之前，必须确保用于创建此文件的区域设置与用于部署此文件的计算机的区域设置相匹配。 例如，如果你在运行日文版 Microsoft Windows 的计算机上创建该文件，则用于部署该文件的计算机必须设置为日文区域设置。 如果文件和计算机设置不匹配，则必须将用于运行 BAM 管理实用程序的计算机切换到正确的区域设置，并且必须在运行实用程序前重新启动该计算机。  
   
@@ -49,9 +49,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  导航到的跟踪文件夹中，通过键入**C:\Program Files\Microsoft BizTalk Server\<版本 > \Tracking**在命令提示符。 按 **Enter**。  
+2.  导航到的跟踪文件夹中，通过键入**C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking**在命令提示符。 按 **Enter**。  
   
-3.  类型**bm 部署所有-DefinitionFile:\<BAM 定义文件 >**。  
+3.  类型**bm 部署所有-DefinitionFile:\<BAM 定义文件\>**。  
   
 4.  按 **Enter**。  
   
