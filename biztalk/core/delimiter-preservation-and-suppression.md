@@ -12,16 +12,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1195e153eb94215bf8861b4856e4d2135b24443e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0b5a5c60d42892479feacc93aedb3802b11308c
+ms.sourcegitcommit: d572ae5c887898adedcb3dfc5f83841beedd3434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="delimiter-preservation-and-suppression"></a>分隔符保留和抑制
 
 ## <a name="overview"></a>概述
-有两个属性应用于分隔记录：**空数据的保留分隔符**和**[禁止显示尾随分隔符**。 使用这些属性控制的平面文件汇编如何处理尾随分隔符不存在的数据与关联的分隔符。 当你将设置**空数据的保留分隔符**属性**是**（这是默认设置） 中的已翻译的平面文件消息包括分隔符：  
+有两个属性应用于分隔记录：**空数据的保留分隔符**和**禁止显示尾随分隔符**。 使用这些属性控制的平面文件汇编如何处理尾随分隔符不存在的数据与关联的分隔符。 当你将设置**空数据的保留分隔符**属性**是**（这是默认设置） 中的已翻译的平面文件消息包括分隔符：  
   
 -   没有数据的字段。  
   
@@ -111,5 +111,5 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 ## <a name="see-also"></a>另请参阅  
--  [分隔记录的注意事项](../core/delimited-record-considerations.md)   
+-  [分隔记录注意事项](../core/delimited-record-considerations.md)   
 -  **为空数据 （的平面文件架构的节点属性） 保留分隔符**和**禁止显示尾部分隔符 （节点属性的平面文件架构）**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

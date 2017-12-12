@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db9b066b6d1f2334e14e4829d61ec6b84830c4c1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52579934be36d4bb42fa4b299f54b66fd6af3894
+ms.sourcegitcommit: 654a9586d1232ac332a1675b8a4fae832a0d559a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>使用 SQL Server Alwayson 可用性组的高可用性
 配置使用 SQL Server AlwaysOn 可用性组的高可用性。
@@ -69,7 +69,7 @@ SQL Server AlwaysOn 可用性组不支持同一个 SQL Server 实例上的数据
 |1 |身份验证 |SSODB|
 |2 |管理 |BizTalkMgmtDb| 
 |3 |运行时 |BizTalkMsgBoxDb<br/> BizTalkRulesEngineDb<br/> BAMPrimaryImport<br/>BAMStarSchema <br/>BAMAlertsApplication |
-|4 |跟踪 |BizTalkDTADb| 
+|4 |跟踪 |BizTalkDTADb<br/>EsbItineraryDb<br/>EsbExceptionDb | 
  
 在向外扩展的 MessageBox 方案 （具有多个 MessageBox 的配置） 中，没有多个 MessageBox 数据库，并且每个 MessageBox 数据库必须位于其自己的 SQL Server 实例上。 
 
@@ -241,7 +241,7 @@ BizTalk Server 实现数据库备用功能通过数据库使用日志传送。 B
  
 * [为 BizTalk Server 数据库提供高可用性](../core/providing-high-availability-for-biztalk-server-databases.md)  
 * [对 Microsoft Azure 虚拟机的 Microsoft 服务器软件支持](https://support.microsoft.com/kb/2721672)  
-* [SQL Server 数据库镜像，卷影复制服务和 AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
+* [SQL Server 数据库镜像、卷影复制服务和 AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
 * [AlwaysOn 可用性组 (SQL Server) 概述](https://msdn.microsoft.com/library/ff877884.aspx)  
 * [跨数据库事务支持数据库镜像或 AlwaysOn 可用性组 (SQL Server)](https://msdn.microsoft.com/library/ms366279.aspx)  
 * [重新登记时不能调用 SQL Server 接收来自 Windows Server 2012 R2 中的 MSDTC 事务结果](https://support.microsoft.com/kb/3090973)  
