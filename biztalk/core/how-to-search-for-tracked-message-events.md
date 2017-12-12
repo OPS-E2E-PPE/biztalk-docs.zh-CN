@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3d4c573b864d16362c1b12b1e293e85f139cad4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6a3597d0d68dbd79de6c23e7b6d4b222b9c8376
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-search-for-tracked-message-events"></a>如何搜索跟踪的消息事件
 你可以使用**新查询**选项卡中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来搜索跟踪消息事件。  在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，您可以启用消息正文和消息属性跟踪。 在“查询结果”窗格中，您可以查看有关消息事件的信息（包括架构信息、事件类型、服务实例 ID，以及生成消息的所有升级属性）。  
@@ -49,11 +49,11 @@ ms.lasthandoff: 09/20/2017
     |**架构名称**|消息所用的架构的名称。|  
     |**服务实例 ID**|用于消息的服务实例 ID。|  
     |**URI**|用于消息的 URI。|  
-    |**\<选择跟踪的属性的架构名称 >**|当选择架构时，该架构中的任何升级属性都有资格用在查询中。|  
+    |**\<选择跟踪的属性的架构名称\>**|当选择架构时，该架构中的任何升级属性都有资格用在查询中。|  
   
 6.  完成**值**列的适合于所选内容所做中**字段名称**列。  
   
 7.  继续向根据查询中添加更多的行，通过完成**字段名称**，**运算符**，和**值**columns 和 then click**运行查询**。  
   
 ## <a name="see-also"></a>另请参阅  
- [使用管理控制台的查询选项卡](../core/using-the-administration-console-query-tab.md)
+ [使用管理控制台的“查询”选项卡](../core/using-the-administration-console-query-tab.md)

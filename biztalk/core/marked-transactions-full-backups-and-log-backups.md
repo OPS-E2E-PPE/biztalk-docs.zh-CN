@@ -17,11 +17,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36c7eab426bfc19c082d8c9651cf4d02eae0075a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff71cbe7eb910c66530dee3264822eae121c0ce2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="marked-transactions-full-backups-and-log-backups"></a>标记的事务、完整备份和日志备份
 备份 BizTalk Server 作业创建的所有类型的名为的事务与结合使用完整数据库备份和事务日志备份，BizTalk Server 数据库的同步的备份*标记的事务*。 标记的事务是在事务中放到事务日志中的所有数据库参与的标记的事务。 标记的事务会阻止新的分布式的事务，无法启动，等待当前正在运行要完成，则分布式事务，则会执行放置标记。  
@@ -38,9 +38,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="transaction-log-backups"></a>事务日志备份  
  备份 BizTalk Server 作业将执行的第二个过程*MarkAndBackupLog*。 此过程中所有 BizTalk Server 数据库和每次作业执行时执行事务日志备份都放置标记。  
   
- 标记是通过使用创建的字符串 *\<ServerName >*_*\<DatabaseName >*（_l)\_*\<LogMarkName >*\_ *\<时间戳 >*.bak，其中*\<日志标记名称 >*配置中的 SQL Server 代理作业。 还原到每个数据库的最新的日志时，必须使用此标记。  
+ 标记是通过使用创建的字符串 *\<ServerName\>*_*\<DatabaseName\>*（_l)\_  *\<LogMarkName\>*\_*\<时间戳\>*.bak，其中*\<记录标记名称\>*配置中的 SQL Server 代理作业。 还原到每个数据库的最新的日志时，必须使用此标记。  
   
  有关详细信息，请参阅 SQL Server 联机丛书中的“事务日志备份”和“相关数据库的备份和恢复”。  
   
 ## <a name="see-also"></a>另请参阅  
- [有关备份和还原的高级的信息](../core/advanced-information-about-backup-and-restore1.md)
+ [有关备份和还原的高级信息](../core/advanced-information-about-backup-and-restore1.md)

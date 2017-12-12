@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bead22f33bbe38cb8deac3a201121438d344c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67c937ae0edb1698991ad111622a582ebfc64d76
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-applications"></a>监视应用程序
 设置 Microsoft System Center Operations Manager 来监视 BizTalk 应用程序通常可以分为渐进式四个步骤，如下所示：  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
     -   发送的简单网络管理协议 (SNMP) 陷阱 （在 SNMP 代理监视的网络和网络控制台工作站的报表中的各种设备中的活动）  
   
-    -   将通知发送到硄竤舱  
+    -   向通知组发送通知  
   
     -   执行的命令或批处理文件  
   
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/20/2017
   
 4.  **阈值规则用于自动执行手动任务**  
   
-     处理的下一步是超越反应警报并可以使用阈值规则。 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]管理包不包含任何阈值规则默认情况下。 这是因为此类规则通常特定于自定义应用程序，并且对于每个应用程序都有所不同。 阈值它包含有关自定义应用程序的业务规则，并提供一种监视系统的主动方法。 你可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供使用性能分析的日志 (PAL) 工具来定义规则的阈值模板。  
+     处理的下一步是超越反应警报并可以使用阈值规则。 默认情况下，BizTalk Server 管理包不包含任何阈值规则。 这是因为此类规则通常特定于自定义应用程序，并且对于每个应用程序都有所不同。 阈值它包含有关自定义应用程序的业务规则，并提供一种监视系统的主动方法。 你可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供使用性能分析的日志 (PAL) 工具来定义规则的阈值模板。  
   
      此类阈值规则的示例是度量值在服务器上的 Cpu 一致地运行时 75%以上指定的时间段。 这可能表明需要横向扩展系统。 还有另一个示例是在其中创建监视一组唯一的计数器的阈值规则。 然后，此规则就会调用代码以在需求较高的时间段期间初始化以前配置的备份服务器上的 BizTalk 主机实例。  
   
 ## <a name="see-also"></a>另请参阅  
- [监视与 System Center Operations Manager 2007 的 BizTalk Server](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [使用 System Center Operations Manager 2007 监视 BizTalk Server](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

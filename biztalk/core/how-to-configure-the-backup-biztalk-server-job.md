@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1afb4f28584d65401220761dcee626fe63f913b
-ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
+ms.openlocfilehash: 452884062cb9c4cdabbfd4890f590e5f0202b417
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>配置备份 BizTalk Server 作业
 安装和配置 BizTalk Server 后，将备份配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业以备份你的数据。 
@@ -90,12 +90,12 @@ ms.lasthandoff: 11/23/2017
   
     2. **名称**：默认值为 **BTS**。 该名称用作备份文件名的一部分。  
   
-    3. **备份文件的位置**： 替换*\<目标路径 >*替换为计算机和你想要备份的文件夹的完整路径 （的路径必须包括两个单引号） [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。  
+    3. **备份文件的位置**： 替换*\<目标路径\>*替换为计算机和要备份文件夹的完整路径（的路径必须包括两个单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。  
 
         > [!IMPORTANT]
         > - 如果输入的本地路径，则你必须手动将所有文件都复制到目标系统上的相同文件夹每当备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业创建新的文件。  
         >   
-        >      若要使用的远程路径，输入 UNC 共享如\\ \\  *\<ServerName >*\\*\<SharedDrive >*\\，其中 *\<ServerName >*是所需文件，其中的服务器的名称和 *\<SharedDrive >*是共享的驱动器或文件夹的名称。  
+        >      若要使用的远程路径，输入 UNC 共享如\\ \\  *\<ServerName\>*\\*\<SharedDrive\>*  \\，其中 *\<ServerName\>* 是所需文件，其中的服务器的名称和 *\<SharedDrive\>* 是共享的驱动器或文件夹的名称。  
         >   
         >      通过网络备份数据可能会受网络问题的影响。 当使用远程位置时，在备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业完成后，请验证备份是否成功。  
         > - 若要避免潜在的数据丢失，请将备份磁盘配置为除数据库数据和日志磁盘以外的磁盘。 这样做是必需的，以便你可以在数据或日志磁盘出现故障时访问备份。  
@@ -132,14 +132,14 @@ ms.lasthandoff: 11/23/2017
   
 6.  选择**MarkAndBackupLog**单步执行，并选择**编辑**。 在**命令**框中，更新参数值：  
   
-    1.  **@MarkName**： 这是备份文件的命名约定的一部分： <Server Name>  _<Database Name> **_日志_**< 日志标记名称 >_<Timestamp>  
+    1.  **@MarkName**： 这是备份文件的命名约定的一部分：\<服务器名称\>\_\<数据库名称\>**\_日志\_** \<日志标记名\> \_\<时间戳\>  
     
-    2.  **@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。 *\<目标路径 >*也可以是本地或另一台服务器的 UNC 路径。  
+    2.  **@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。 *\<目标路径\>*也可以是本地或另一台服务器的 UNC 路径。  
   
      MarkAndBackupLog 步骤将日志标记为备份，然后对其进行备份。  
   
     > [!IMPORTANT]
-    >  若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径 >*应设置为不同的计算机或硬盘空间不同于用来存储原始的数据库日志。  
+    >  若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径\>*应设置为另一台计算机或硬盘，不同于用来存储原始的数据库日志。  
   
      选择“确定”。  
   

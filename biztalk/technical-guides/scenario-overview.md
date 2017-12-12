@@ -12,32 +12,32 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9400b85cf706efab0e70278e2c6daed0de32922b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab36aa51d2dd28651895818caa781c49bf366f50
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scenario-overview"></a>方案概述
-本主题提供的完成的负载测试概述[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]产品组以评估的可伸缩性[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]现代企业级别的硬件上运行时。  
+本主题提供的负载测试已完成的 BizTalk Server 概述产品组以在现代企业级别的硬件上运行时评估 BizTalk 服务器的可伸缩性。  
   
- 所有测试是使用专用的硬件隔离环境中执行的。 执行超过 200 个测试运行以及是否由已验证所有结果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]产品组。  
+ 所有测试是使用专用的硬件隔离环境中执行的。 执行超过 200 个测试运行和所有结果已都验证由 BizTalk Server 产品组。  
   
  执行测试，使用消息传递方案和业务流程方案;这两种方案使用的 BizTalk WCF NetTcp 适配器。  
   
- 若要评估的最大可能性能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]引擎，使用没有自定义管道组件和仅非常简单的业务流程用于业务流程方案。 性能优化中所述[优化性能](../technical-guides/optimizing-performance.md)已应用到环境，并完全记录在[观测结果和建议](../technical-guides/observations-and-recommendations.md)。  
+ 若要评估的 BizTalk Server 引擎可能的最大性能，使用没有自定义管道组件;和仅非常简单的业务流程用于业务流程方案。 性能优化中所述[优化性能](../technical-guides/optimizing-performance.md)已应用到环境，并完全记录在[观测结果和建议](../technical-guides/observations-and-recommendations.md)。  
   
 ## <a name="test-goals"></a>测试目标  
  负载测试执行的目标包括以下方面：  
   
-1.  提供常规的调整大小和缩放指南[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]:  
+1.  提供常规的调整大小和缩放 BizTalk Server 的指南：  
   
-    1.  量化添加运行 BizTalk Server 到其他计算机的影响[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组。 此测试的性能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案进行测量时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组已运行，运行 BizTalk Server 的两个、 三个，和四个计算机。  
+    1.  量化将其他计算机添加到 BizTalk Server 组的影响。 对此测试，BizTalk Server 解决方案的性能进行测量 BizTalk Server 组运行，运行 BizTalk Server 的两个、 三个，和四个计算机时。  
   
-    2.  量化的影响添加其他 BizTalk MessageBox 数据库移到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组。 此测试的性能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案进行测量时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组已配置为使用单个 MessageBox 数据库或四个 MessageBox 数据库。  
+    2.  量化将其他 BizTalk MessageBox 数据库添加到 BizTalk Server 组的影响。 对此测试，BizTalk Server 解决方案的性能进行测量组已配置为使用单个 MessageBox 数据库或四个 MessageBox 数据库时。  
   
         > [!NOTE]  
-        >  由于存在是什么，如果有的话，性能好处，当从一到两个 MessageBox 数据库扩展未完成测试与两个 MessageBox 数据库。 事实上，缩放一到两个 MessageBox 数据库可能会影响性能。 有关向外扩展的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息框，请参阅[缩放出 SQL Server 层](http://go.microsoft.com/fwlink/?LinkID=158075)(http://go.microsoft.com/fwlink/?LinkID=158075) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档。  
+        >  由于存在是什么，如果有的话，性能好处，当从一到两个 MessageBox 数据库扩展未完成测试与两个 MessageBox 数据库。 事实上，缩放一到两个 MessageBox 数据库可能会影响性能。 有关横向扩展 MessageBox 的详细信息，请参阅[缩放出 SQL Server 层](../core/scaling-up-the-sql-server-tier.md)。
   
 2.  提供以下方案的大小调整和缩放指南：  
   
@@ -46,19 +46,19 @@ ms.lasthandoff: 09/20/2017
     2.  WCF NetTcp 单向 Orchestration 方案  
   
 ## <a name="test-measurements-used"></a>使用的测试度量值  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能进行测量使用以下条件：  
+BizTalk Server 性能进行测量使用以下条件：  
   
-1.  **总体吞吐量**– 使用测量 **BizTalk： 消息传送 (*主机名*) 收到的 \Documents / Sec * * 和 **BizTalk： 消息传送 (*主机名*) \Documents 处理 / Sec * * 性能计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收和处理主机。  
+1.  **总体吞吐量**– 使用测量 **BizTalk： 消息传送 (*主机名*) 收到的 \Documents / Sec * * 和 **BizTalk： 消息传送 (*主机名*) \Documents 处理 / Sec * * 性能计数器的 BizTalk Server 接收和处理主机。  
   
-2.  **CPU 使用率**– 测量与**\Processor(_Total)\\%Processor Time**性能计数器上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。 已全面审阅者所有测试结果和任何性能瓶颈中所述[观测结果和建议](../technical-guides/observations-and-recommendations.md)。  
+2.  **CPU 使用率**– 测量与**\Processor(_Total)\\%Processor Time** BizTalk 服务器上的性能计数器] 和 SQL Server 计算机。 已全面审阅者所有测试结果和任何性能瓶颈中所述[观测结果和建议](../technical-guides/observations-and-recommendations.md)。  
   
 ## <a name="scaling-out-the-processing-tier-and-the-database-tier"></a>向外扩展处理层和数据库层  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]增加的处理层功能通过添加一个或多个可轻易地容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机连接到现有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]还包含通过添加 MessageBox 数据库的更高的数据库层功能。  
+BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机添加到现有的 BizTalk Server 组容纳增加的处理层功能。 BizTalk Server 能够适应增加的数据库层通过添加 MessageBox 数据库的新功能。  
   
- 若要提供横向扩展指标[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，测试执行与一个、 两个、 3 和 4[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。 为了演示数据库层向外缩放的影响，针对单个和多 MessageBox 系统执行这些测试。  
+若要为 BizTalk Server 提供横向扩展度量值，与一个、 两个、 3 和 fourBizTalk 服务器计算机执行测试。 为了演示数据库层向外缩放的影响，针对单个和多 MessageBox 系统执行这些测试。  
   
 ## <a name="testing-scenarios"></a>测试方案  
- 通过消息流的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]下面详细地介绍这些方案的环境。  
+ 下面将详细描述了通过为这些方案的 BizTalk Server 环境的消息的流。  
   
 ### <a name="messaging-test-scenario"></a>消息传送的测试方案  
  ![消息传递方案](../technical-guides/media/messagingscenario.gif "MessagingScenario")  
@@ -70,33 +70,33 @@ ms.lasthandoff: 09/20/2017
     >   
     >  有关如何我们使用在本测试环境中测试的功能的 Visual Studio 2010 Ultimate edition 负载的详细信息，请参阅[促进自动测试使用 Visual Studio](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)。  
   
-2.  收到的 XML 消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收位置使用 WCF NetTcp 接收适配器。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收位置配置为使用 PassThruReceive 管道中，执行不会对消息处理。  
+2.  由 BizTalk 服务器接收 XML 消息接收位置使用 WCF NetTcp 接收适配器。 接收位置配置为使用 PassThruReceive 管道中，执行不会对消息处理。  
   
-3.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]终结点管理器 (EPM) 将消息发布到 BizTalk MessageBox 数据库。  
+3.  BizTalk Server 终结点管理器 (EPM) 将消息发布到 BizTalk MessageBox 数据库。  
   
-4.  A[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送使用 WCF NetTcp 发送适配器的端口订阅接收位置所发布消息，并从 BizTalk MessageBox 中检索消息。 发送端口使用 PassThruTransmit 管道中，执行不会对消息处理。  
+4.  使用 WCF NetTcp 发送适配器 BizTalk Server 发送端口订阅接收位置所发布消息，并从 BizTalk MessageBox 检索消息。 发送端口使用 PassThruTransmit 管道中，执行不会对消息处理。  
   
 5.  消息传递到后端 WCF 服务由 WCF NetTcp 发送适配器。  
   
 ### <a name="orchestration-test-scenario"></a>业务流程测试方案  
  ![业务流程方案流](../technical-guides/media/orchestrationscenarioflow.gif "OrchestrationScenarioFlow")  
   
-1.  正在测试的功能的 Visual Studio 2010 Ultimate edition 负载生成的 XML 消息，并将其发送到运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 NetTcp 传输。  
+1.  正在测试的功能的 Visual Studio 2010 Ultimate edition 负载生成的 XML 消息，并将其发送到运行 BizTalk Server 使用 NetTcp 传输的计算机。  
   
-2.  收到的 XML 消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收使用 WCF NetTcp 接收适配器的端口。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收端口被配置为使用 PassThruReceive，管道会执行不会对消息处理。  
+2.  由 BizTalk 服务器接收 XML 消息接收使用 WCF NetTcp 接收适配器的端口。 接收端口被配置为使用 PassThruReceive，管道会执行不会对消息处理。  
   
 3.  消息传递到简单的业务流程，其中仅包含接收端口 （步骤 2 中绑定到 WCF 接收端口） 和发送端口 （步骤 4 中绑定到 WCF 发送端口）。 消息变量是"非类型化"，这意味着的"System.XML.XmlDocument"的它们使用的"消息类型"。 业务流程只接收消息都通过其接收端口并通过其发送端口发送消息。 执行没有消息处理操作。  
   
-4.  单向[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送使用 WCF NetTcp 发送适配器的端口订阅发布的业务流程的消息，并从 BizTalk MessageBox 中检索消息。 发送端口使用 PassThruTransmit 管道中，执行不会对消息处理。  
+4.  使用 WCF NetTcp 发送适配器单向 BizTalk Server 发送端口业务流程所发布消息订阅，并从 BizTalk MessageBox 检索消息。 发送端口使用 PassThruTransmit 管道中，执行不会对消息处理。  
   
 5.  消息传递到后端 WCF 服务由 WCF NetTcp 发送适配器。  
   
 ## <a name="hardware-configuration"></a>硬件配置  
   
-### <a name="lab-hardware-diagram-and-specifications"></a>实验室祑砰瓜和规范  
+### <a name="lab-hardware-diagram-and-specifications"></a>实验室硬件图和规格  
  为实验室使用的硬件配置如下所示。 若要轻松地适应外的处理和数据库层的缩放，已使用以下实验室硬件：  
   
--   两个企业类 Hewlett Packard DL-380 计算机和两个企业类 Dell R710 计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]处理层。  
+-   两个企业类 Hewlett Packard DL-380 计算机和 BizTalk Server 处理层的两个企业类 Dell R710 计算机。  
   
 -   四个数据库层，以提供多 MessageBox 功能的企业类 Dell R900 计算机。  
   
@@ -108,20 +108,20 @@ ms.lasthandoff: 09/20/2017
   
 |Name|Model|CPU 类型|CPU 数|内核/CPU 数|CPU 体系结构|内存|操作系统|软件|  
 |----------|-----------|--------------|--------------------|--------------------------|----------------------|------------|----------------------|--------------|  
-|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[prague](../includes/prague-md.md)]|  
-|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]负载测试数据库<br /><br /> [!INCLUDE[vs2010](../includes/vs2010-md.md)]<br /><br /> WCF 后端服务|  
-|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]负载测试控制器|  
-|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]负载测试代理|  
-|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]负载测试代理。<br /><br /> Perfmon 命令行|  
-|R805 06|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]负载测试代理|  
-|R805-07|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[vs2010](../includes/vs2010-md.md)]负载测试代理|  
-|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]带累积更新 4|  
-|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]带累积更新 4|  
-|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]带累积更新 4|  
-|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Enterprise Edition|[!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)]带累积更新 4|  
+|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
+|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
+|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
+|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
+|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 负载测试数据库<br /><br /> Visual Studio 2010<br /><br /> WCF 后端服务|  
+|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试控制器|  
+|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
+|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理。<br /><br /> Perfmon 命令行|  
+|R805 06|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
+|R805-07|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
+|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
+|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
+|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
+|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
   
 ### <a name="storage-area-network-configuration"></a>存储区域网络配置  
  下图描绘了存储区域网络 (SAN) 配置用于实验室环境。  
@@ -140,7 +140,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  **什么是 SAN 的最大可达成吞吐量？** -这是使用最低的公用标准，在吞吐量，主机总线适配器 (HBA) 中的服务器、 交换机 SAN 吞吐量和 SAN 控制器卡的速度方面进行测量。  
   
-2.  **哪些其他应用程序将在生产中使用 SAN？** – 请考虑什么其他应用程序将使用 SAN 在生产环境中。 如果其他数据库或否则为 I/O 密集型应用程序如 Exchange Server 将使用 SAN 在生产中，可用于运行的计算机的 SAN 吞吐量量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将相应地降低。  
+2.  **哪些其他应用程序将在生产中使用 SAN？** – 请考虑什么其他应用程序将使用 SAN 在生产环境中。 如果其他数据库或否则为 I/O 密集型应用程序如 Exchange Server 将使用 SAN 在生产环境中，将相应地减少可用于运行 BizTalk Server 的计算机的 SAN 吞吐量的量。  
   
  为实验室环境中，使用专用的 SAN。 每个四个 SQL Server 计算机已连接到 SAN 交换机具有两个 4 Gbps 主机总线适配器 (Hba)，提供每个服务器的 8 Gbps 的总潜在吞吐量。 SAN 具有两个服务处理器，且每个服务处理器必须连接到纤程交换机，提供 16-Gbps SAN 交换机之间的总体潜在吞吐量的两个前端端口。  
   
@@ -156,8 +156,9 @@ ms.lasthandoff: 09/20/2017
 |O|Logs_Spare|不用于 SQL 文件。 用于存储 DTCLog 文件，因为 MSDTC 导致频繁的磁盘 I/O，特别是在多 MessageBox 环境。|20|  
   
 ### <a name="sqlio-test-results"></a>SQLIO 测试结果  
- 我们使用 SQLIO 工具来进行基准测试，并考虑在本实验室环境中使用的存储区域网络 (SAN) 配置的输入/输出容量。 该工具的名称可以看出，SQLIO 是用于测量的文件系统 I/O 对 SQL Server 性能的影响的重要工具。 可以从下载 SQLIO [http://go.microsoft.com/fwlink/?LinkID=210381](http://go.microsoft.com/fwlink/?LinkID=210381)。   
-若要度量的存储区域网络 (SAN) 配置 SQL Server 数据库应用程序的输入/输出容量，请参阅[分析 I/O 特性和用于 SQL Server 数据库应用程序的大小调整存储系统](http://go.microsoft.com/fwlink/?LinkID=210379)(http://go.microsoft.com/fwlink/？LinkID = 210379)。  
+ 我们使用 SQLIO 工具来进行基准测试，并考虑在本实验室环境中使用的存储区域网络 (SAN) 配置的输入/输出容量。 该工具的名称可以看出，SQLIO 是用于测量的文件系统 I/O 对 SQL Server 性能的影响的重要工具。 
+
+若要度量的存储区域网络 (SAN) 配置 SQL Server 数据库应用程序的输入/输出容量，请参阅[分析 I/O 特性和用于 SQL Server 数据库应用程序的大小调整存储系统](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)。  
   
  对于我们 SQLIO 测试，sqlio.exe 实用工具问题 8k 从 8 个线程读取请求和维护的 8 的 I/O 队列深度。 我们使用以下参数：  
   
@@ -210,4 +211,4 @@ ms.lasthandoff: 09/20/2017
     |31527.95|246.31|1 ms|  
   
 ## <a name="see-also"></a>另请参阅  
- [缩放生产 BizTalk Server 环境](../technical-guides/scaling-a-production-biztalk-server-environment.md)
+ [缩放 BizTalk Server 生产环境](../technical-guides/scaling-a-production-biztalk-server-environment.md)

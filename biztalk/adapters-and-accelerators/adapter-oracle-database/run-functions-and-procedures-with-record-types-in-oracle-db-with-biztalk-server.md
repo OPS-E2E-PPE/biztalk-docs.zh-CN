@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9994ad36a8048b7430bbfa06338f2473fb0a9a60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d8aa9b3202adaf57e7ec213a81384606eb1b8a4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a>调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的记录类型
 Oracle 记录类型用于表示传递给 PL/SQL 函数和过程的参数中的分层信息。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现为复杂的 XML 类型的记录类型。 有关详细信息，如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持记录类型，请参阅[函数和过程与 Oracle 数据库中的记录类型上的操作。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)。 记录类型的 XML 结构的信息，请参阅[记录类型的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)。  
@@ -248,7 +248,7 @@ Oracle 记录类型用于表示传递给 PL/SQL 函数和过程的参数中的�
  第一个请求消息调用返回嵌套的记录类型的 GET_ACCOUNTINFO 函数。 调用 GET_ACCOUNTINFO 函数的响应消息是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GET_ACCOUNTINFOResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <GET_ACCOUNTINFOResult>  
     <ACCT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTINFO">  
@@ -268,7 +268,7 @@ Oracle 记录类型用于表示传递给 PL/SQL 函数和过程的参数中的�
  第二个请求消息调用返回一个简单的记录类型的 GET_ACCOUNTADDRESS 函数。 调用 GET_ACCOUNTADDRESS 函数的响应消息是：  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <GET_ACCOUNTADDRESSResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <GET_ACCOUNTADDRESSResult>  
     <ID xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTADDRESS">100004</ID>  

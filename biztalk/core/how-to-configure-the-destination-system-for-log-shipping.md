@@ -20,11 +20,11 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea377f83f6e9c104d1bbd0b2e59923fb11f8fe65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 611544e77de738c904fa673b56dbec75fd17d4bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a>如何配置日志传送的目标系统
 日志传送具有备用服务器功能，用以缩短出现系统故障时的停机时间。 使用日志传送可以自动从源系统向目标系统发送事务日志。 在目标系统中，事务日志还原到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库; 让他们可以与源数据库紧密同步。  
@@ -83,9 +83,9 @@ ms.lasthandoff: 09/20/2017
   
     1.  在目标系统上，启用**[即席分布式查询](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**。  
   
-    2.  在查询窗口中，将替换为 *\<MyLogShippingSolution >*使用有意义的描述，括在单引号。  
+    2.  在查询窗口中，将替换为 *\<MyLogShippingSolution\>* 使用有意义的描述，括在单引号。  
   
-    3.  在查询窗口中，将替换为 *\<BizTalkServerManagementDatabaseName >*和 *\<BizTalkServerManagementDatabaseServer >*的名称和位置与你用单个引号引起来的源 BizTalk 管理数据库。  
+    3.  在查询窗口中，将替换为 *\<BizTalkServerManagementDatabaseName\>* 和 *\<BizTalkServerManagementDatabaseServer\>* 与名称和源 BizTalk 管理数据库括在单引号中的位置。  
   
     > [!NOTE]
     >  如果有多个源服务器，则可将每个源服务器还原到它自己的目标服务器。 在每个目标服务器上，在 **@SourceServerName = null**参数，替换*null*具有合适的源服务器的名称，括在单引号 (例如，  **@SourceServerName = MySourceServer**)。  
@@ -119,9 +119,9 @@ ms.lasthandoff: 09/20/2017
   
 10. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上，转到以下文件夹：  
   
-     32 位计算机： %SystemDrive%\Program Files\Microsoft BizTalk Server\<版本 > \Schema\Restore  
+     32 位计算机： %SystemDrive%\Program Files\Microsoft BizTalk Server\<版本\>\Schema\Restore  
   
-     64 位计算机： %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server\<版本 > \Bins32\Schema\Restore  
+     64 位计算机： %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server\<版本\>\Bins32\Schema\Restore  
   
 11. 右键单击**SampleUpdateInfo.xml**，然后选择**编辑**。 请执行以下操作：  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 09/20/2017
   
 13. 如果使用 BAM 或规则引擎，请相应地取消这些行的注释。  
   
-14. 如果你有任何自定义的数据库，则将其下添加 **\<OtherDatabases >**部分。 请参阅[如何备份自定义数据库](../core/how-to-back-up-custom-databases.md)。  
+14. 如果你有任何自定义的数据库，则将其下添加 **\<OtherDatabases\>** 部分。 请参阅[如何备份自定义数据库](../core/how-to-back-up-custom-databases.md)。  
   
 15. 在完成编辑文件，请保存它，并退出。  
   
