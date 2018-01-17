@@ -16,30 +16,30 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 942ef00948920cd19e2a34e0be52d61a8f492786
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="lesson-1-adding-a-new-biztalk-project"></a><span data-ttu-id="d11d4-102">第 1 课： 添加新的 BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="d11d4-102">Lesson 1: Adding a New BizTalk Project</span></span>
-<span data-ttu-id="d11d4-103">在本课程中，你将新的 BizTalk 项目添加到你的解决方案。</span><span class="sxs-lookup"><span data-stu-id="d11d4-103">In this lesson, you add a new BizTalk project to your solution.</span></span> <span data-ttu-id="d11d4-104">在整个教程使用此项目中创建架构。</span><span class="sxs-lookup"><span data-stu-id="d11d4-104">You create schemas in this project that you use throughout the tutorial.</span></span>  
+# <a name="lesson-1-adding-a-new-biztalk-project"></a><span data-ttu-id="9c883-102">第 1 课： 添加新的 BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="9c883-102">Lesson 1: Adding a New BizTalk Project</span></span>
+<span data-ttu-id="9c883-103">在本课程中，你将新的 BizTalk 项目添加到你的解决方案。</span><span class="sxs-lookup"><span data-stu-id="9c883-103">In this lesson, you add a new BizTalk project to your solution.</span></span> <span data-ttu-id="9c883-104">在整个教程使用此项目中创建架构。</span><span class="sxs-lookup"><span data-stu-id="9c883-104">You create schemas in this project that you use throughout the tutorial.</span></span>  
   
- <span data-ttu-id="d11d4-105">选择 BizTalk 项目模板中公开的 BizTalk 工具，如 BizTalk 映射程序[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]开发环境。</span><span class="sxs-lookup"><span data-stu-id="d11d4-105">Selecting the BizTalk project template exposes the BizTalk tools, such as BizTalk Mapper, within the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] development environment.</span></span>  
+ <span data-ttu-id="9c883-105">选择 BizTalk 项目模板中公开的 BizTalk 工具，如 BizTalk 映射程序[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]开发环境。</span><span class="sxs-lookup"><span data-stu-id="9c883-105">Selecting the BizTalk project template exposes the BizTalk tools, such as BizTalk Mapper, within the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] development environment.</span></span>  
   
-### <a name="to-add-a-new-biztalk-project"></a><span data-ttu-id="d11d4-106">若要添加新的 BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="d11d4-106">To add a new BizTalk project</span></span>  
+### <a name="to-add-a-new-biztalk-project"></a><span data-ttu-id="9c883-106">若要添加新的 BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="9c883-106">To add a new BizTalk project</span></span>  
   
-1.  <span data-ttu-id="d11d4-107">在 Visual Studio 中，单击**文件**，指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="d11d4-107">In Visual Studio, click **File**, point to **New**, and then click **Project**.</span></span>  
+1.  <span data-ttu-id="9c883-107">在 Visual Studio 中，单击**文件**，指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="9c883-107">In Visual Studio, click **File**, point to **New**, and then click **Project**.</span></span>  
   
-2.  <span data-ttu-id="d11d4-108">在新建项目对话框中，在**项目类型**窗格中，选择**BizTalk 项目**文件夹。</span><span class="sxs-lookup"><span data-stu-id="d11d4-108">In the New Project dialog box, in the **Project types** pane, select the **BizTalk Projects** folder.</span></span>  
+2.  <span data-ttu-id="9c883-108">在新建项目对话框中，在**项目类型**窗格中，选择**BizTalk 项目**文件夹。</span><span class="sxs-lookup"><span data-stu-id="9c883-108">In the New Project dialog box, in the **Project types** pane, select the **BizTalk Projects** folder.</span></span>  
   
-3.  <span data-ttu-id="d11d4-109">在**模板**窗格中，选择**空 BizTalk 服务器项目**。</span><span class="sxs-lookup"><span data-stu-id="d11d4-109">In the **Templates** pane, select **Empty BizTalk Server Project**.</span></span>  
+3.  <span data-ttu-id="9c883-109">在**模板**窗格中，选择**空 BizTalk 服务器项目**。</span><span class="sxs-lookup"><span data-stu-id="9c883-109">In the **Templates** pane, select **Empty BizTalk Server Project**.</span></span>  
   
-4.  <span data-ttu-id="d11d4-110">在**名称**框中，键入**SWIFTSchemas**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="d11d4-110">In the **Name** box, type **SWIFTSchemas** as the project name.</span></span>  
+4.  <span data-ttu-id="9c883-110">在**名称**框中，键入**SWIFTSchemas**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="9c883-110">In the **Name** box, type **SWIFTSchemas** as the project name.</span></span>  
   
-5.  <span data-ttu-id="d11d4-111">在**解决方案**框中，选择**将添加到解决方案**。</span><span class="sxs-lookup"><span data-stu-id="d11d4-111">In the **Solution** box, select **Add to Solution**.</span></span> <span data-ttu-id="d11d4-112">在**位置**框中，确保  **\<*驱动器*:\>选择 \labs\SWIFTProject**。</span><span class="sxs-lookup"><span data-stu-id="d11d4-112">In the **Location** box, ensure that **\<*drive*:\>\labs\SWIFTProject** is selected.</span></span>  
+5.  <span data-ttu-id="9c883-111">在**解决方案**框中，选择**将添加到解决方案**。</span><span class="sxs-lookup"><span data-stu-id="9c883-111">In the **Solution** box, select **Add to Solution**.</span></span> <span data-ttu-id="9c883-112">在**位置**框中，确保 **\<*驱动器*:\>\labs\SWIFTProject**选择。</span><span class="sxs-lookup"><span data-stu-id="9c883-112">In the **Location** box, ensure that **\<*drive*:\>\labs\SWIFTProject** is selected.</span></span>  
   
-6.  <span data-ttu-id="d11d4-113">单击**确定**创建新项目。</span><span class="sxs-lookup"><span data-stu-id="d11d4-113">Click **OK** to create the new project.</span></span>  
+6.  <span data-ttu-id="9c883-113">单击**确定**创建新项目。</span><span class="sxs-lookup"><span data-stu-id="9c883-113">Click **OK** to create the new project.</span></span>  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="d11d4-114">将新项目添加到解决方案资源管理器创建的项目文件夹和文件中\<*驱动器*:\>\labs\SWIFTProject\SWIFTSchemas 文件夹。</span><span class="sxs-lookup"><span data-stu-id="d11d4-114"> adds a new project to Solution Explorer and creates the project folder and files in the \<*drive*:\>\labs\SWIFTProject\SWIFTSchemas folder.</span></span>  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="9c883-114">将新项目添加到解决方案资源管理器创建的项目文件夹和文件中\<*驱动器*:\>\labs\SWIFTProject\SWIFTSchemas 文件夹。</span><span class="sxs-lookup"><span data-stu-id="9c883-114"> adds a new project to Solution Explorer and creates the project folder and files in the \<*drive*:\>\labs\SWIFTProject\SWIFTSchemas folder.</span></span>  
   
- <span data-ttu-id="d11d4-115">继续执行[第 2 课： 创建具有强名称的 BizTalk 集 SWIFTSchemas 项目](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。</span><span class="sxs-lookup"><span data-stu-id="d11d4-115">Proceed to [Lesson 2: Creating a Strong-Named BizTalk Assembly for the SWIFTSchemas Project](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md).</span></span>
+ <span data-ttu-id="9c883-115">继续执行[第 2 课： 创建具有强名称的 BizTalk 集 SWIFTSchemas 项目](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。</span><span class="sxs-lookup"><span data-stu-id="9c883-115">Proceed to [Lesson 2: Creating a Strong-Named BizTalk Assembly for the SWIFTSchemas Project](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md).</span></span>
