@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 73270b3d096a8d72de5b339835737cc74d264c9c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations-on-tables-and-views"></a>消息架构为插入、 更新、 删除和选择表和视图上的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现插入、 更新、 删除和每个表和 SQL Server 数据库中的视图的 Select 操作。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]这些操作中使用强类型的记录和记录集。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/28/2017
 |选择响应|`<SelectResponse  xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <SelectResult>     <[TABLE_NAME]>       <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>       <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </SelectResult> <SelectResponse>`|由 SELECT 查询生成的强类型化结果集。|--|  
 |Update|`<SelectResponse  xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <SelectResult>     <[TABLE_NAME]>       <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>       <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </SelectResult> </SelectResponse>`<br /><br /> `<Update xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <RowPair>       <After>         <[FIELD1_NAME]>[value1]</[FIELD1_NAME]>         <[FIELD2_NAME]>[value2]</[FIELD2_NAME]>         …       </After>       <Before>         <[FIELD1_NAME]>[value3]</[FIELD1_NAME]>         <[FIELD2_NAME]>[value4]</[FIELD2_NAME]>         …       </Before>     </RowPair>   </Rows> </Update>`|将记录对的数组作为输入。 每个记录对是两个强类型的记录的集合：<br /><br /> 首先记录 (在`<After>`元素) 对应于需要更新的新值。<br /><br /> 第二个记录 (在`<Before>`) 对应的行的旧值。|`UPDATE [TABLE_NAME] SET [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, … WHERE [FIELD1_NAME] = value3, [FIELD2_NAME] = value4, …;`|  
 |更新响应|`<UpdateResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <UpdateResult>[rows updated]</UpdateResult> </UpdateResponse>`|在返回更新的行数**UpdateResult**元素。|--|  
-|DELETE|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
+|删除|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
 |删除响应|`<DeleteResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <DeleteResult>[rows deleted]</DeleteResult> </DeleteResponse>`|删除的行数返回在**DeleteResult**元素。|--|  
   
  [VERSION] = 消息版本字符串;例如，http://schemas.microsoft.com/Sql/2008/05。  
@@ -57,14 +57,14 @@ ms.lasthandoff: 11/28/2017
   
 |运算|消息操作|示例|  
 |---------------|--------------------|-------------|  
-|Insert|TableOp/Insert / [架构] / [TABLE_NAME]|TableOp/Insert/dbo/员工|  
-|将响应|TableOp/Insert / [架构] / [TABLE_NAME] / 响应|TableOp/Insert/dbo/员工/响应|  
-|选择|TableOp/选择 / [架构] / [TABLE_NAME]|TableOp/选择/dbo/员工|  
-|选择响应|TableOp/选择 / [架构] / [TABLE_NAME] / 响应|TableOp/选择/dbo/员工/响应|  
-|Update|TableOp/更新 / [架构] / [TABLE_NAME]|TableOp/更新/dbo/员工|  
-|更新响应|TableOp/更新 / [架构] / [TABLE_NAME] / 响应|TableOp/更新/dbo/员工/响应|  
-|DELETE|TableOp/删除 / [架构] / [TABLE_NAME]|TableOp/删除/dbo/员工|  
-|删除响应|TableOp/删除 / [架构] / [TABLE_NAME] / 响应|TableOp/删除/dbo/员工/响应|  
+|Insert|TableOp/Insert/[SCHEMA]/[TABLE_NAME]|TableOp/Insert/dbo/Employee|  
+|将响应|TableOp/Insert/[SCHEMA]/[TABLE_NAME]/response|TableOp/Insert/dbo/Employee/response|  
+|选择|TableOp/Select/[SCHEMA]/[TABLE_NAME]|TableOp/Select/dbo/Employee|  
+|选择响应|TableOp/Select/[SCHEMA]/[TABLE_NAME]/response|TableOp/Select/dbo/Employee/response|  
+|Update|TableOp/Update/[SCHEMA]/[TABLE_NAME]|TableOp/Update/dbo/Employee|  
+|更新响应|TableOp/Update/[SCHEMA]/[TABLE_NAME]/response|TableOp/Update/dbo/Employee/response|  
+|删除|TableOp/Delete/[SCHEMA]/[TABLE_NAME]|TableOp/Delete/dbo/Employee|  
+|删除响应|TableOp/Delete/[SCHEMA]/[TABLE_NAME]/response|TableOp/Delete/dbo/Employee/response|  
   
  [架构] = SQL Server 集合项目;例如，dbo。  
   

@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 12fb5741b75fb9792cbabf46bf7a0402972d7bb4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-3-adding-swift-schemas-to-a-project"></a>第 3 课： 将 SWIFT 架构添加到项目
 现在，你有一个解决方案和一个新的项目，你可以向项目添加项。 你添加的第一项是 MT103 SWIFT 付款的消息架构。 当你选择架构模板时，将启动 BizTalk 编辑器。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在解决方案资源管理器，右键单击**SWIFTSchemas**项目，指向**添加**，然后单击**现有项**。  
   
-2.  在添加现有项-SWIFTSchemas 对话框中，浏览到  **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 架构 * *。  
+2.  在添加现有项-SWIFTSchemas 对话框中，浏览到 **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 架构**。  
   
 3.  选择**SWIFT 基 Types.xsd**和**SWIFT 常见数据 Types.xsd**架构，，然后单击**添加**。  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  在解决方案资源管理器，右键单击**SWIFTSchemas**项目，指向**添加**，然后单击**现有项**。  
   
-5.  在添加现有项-SWIFTSchemas 对话框中，浏览到  **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category 1\MT103** 文件夹。  
+5.  在添加现有项-SWIFTSchemas 对话框中，浏览到 **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category 1\MT103**文件夹。  
   
 6.  选择**MT103.xsd**架构，，然后单击**添加**。  
   

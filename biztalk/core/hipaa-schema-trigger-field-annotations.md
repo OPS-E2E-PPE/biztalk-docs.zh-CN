@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f8c50db43b14899439877fde8ce0ee476feb5095
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a>HIPAA 架构触发器字段批注
 EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk 服务器随附的 HIPAA 架构包含允许 EDI 反汇编程序，创建基于符合条件的元素存在的唯一 XML 记录的批注。  
@@ -53,7 +53,7 @@ N4*N401__PayeeCityName*N4*N403__PayeePost**N4*N406~
   
 ```  
   
- 架构中出现的触发器字段批注时由 EDI 反汇编程序处理，将会导致两个单独的 XML 记录 N101，< N1_PayerIdentification_TS835W1_1000A > 的值和 < N1_PayeeIdentification_TS835W1_1000B >对应于 N1 * PR 和 N1\*PE。  
+ 架构中出现的触发器字段批注时由 EDI 反汇编程序处理，将会导致两个单独的 XML 记录 N101，< N1_PayerIdentification_TS835W1_1000A > 的值和 < N1_PayeeIdentification_TS835W1_1000B > 对应 N1 * PR 和 N1\*PE。  
   
  发送时，EDI 组装器将为包含触发器批注的字段丢弃“_”字符后面的后缀。 例如，<N1_PayerIdentification_TS835W1_1000A> 和 <N1_PayeeIdentification_TS835W1_1000B> 都将变成 N1。  
   

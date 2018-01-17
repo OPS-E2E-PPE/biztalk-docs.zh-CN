@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b45fb5e3ebc47bcaa27226be28618269f9da2e55
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>第 1 课： 将管道项目添加到解决方案
 在本课程中，你添加新的 BizTalk 项目 for SWIFT 管道到解决方案，以便您可以自定义你发送和接收管道。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  在**名称**框中，键入**SWIFTPipelines**作为项目名称。  
   
-5.  在**解决方案**框中，选择**将添加到解决方案**。 在**位置**中，浏览并选择  **\<*驱动器*:\>选择 \labs\SWIFTProject**。  
+5.  在**解决方案**框中，选择**将添加到解决方案**。 在**位置**中，浏览并选择 **\<*驱动器*:\>\labs\SWIFTProject**选择。  
   
 6.  单击**确定**打开新项目。  
   

@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3ce9ea850632327e257909e1c7d4b60117865e46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-4-create-the-schemas"></a>步骤 4： 创建架构
 在此步骤中，创建一个新的项目 (**BTAHL7 项目**)，其中包含此项目的项目： 架构、 映射和业务流程。 然后创建架构 (**Doorbell.xsd**) 传入的 XML 编码的消息，然后选择现有架构 (**ADT_A04_22_GLO_DEF.xsd**) 为传出的 HL7 编码消息。 您可以使用这些架构来定义的业务流程中交换的消息的结构。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  在**解决方案**字段中，选择**将添加到解决方案**。  
   
-6.  在**位置**字段中，验证  **\<*驱动器*\>: \Tutorial\BTAHL7V22Common** 是的路径。  
+6.  在**位置**字段中，验证 **\<*驱动器*\>: \Tutorial\BTAHL7V22Common**的路径。  
   
 7.  单击**确定**打开新项目。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 11/28/2017
   
 17. 在 HL7 架构选择器对话框中，在**消息类**框中，选择**V2.X**，然后在**架构的详细信息**窗格中，执行以下操作：  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
     |**版本**|选择 HL7 消息的版本号。 在本教程中，使用**2.2**。|  
     |**消息类型**|选择 HL7 消息的类型。 在本教程中，使用**ADT**。|  

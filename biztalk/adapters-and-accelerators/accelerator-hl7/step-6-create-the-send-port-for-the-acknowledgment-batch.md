@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 958746634776e9b01c32ff2425122312bc7a841c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>步骤 6： 为确认批处理创建发送端口
 在此步骤中，你可以创建将你创建的确认批处理传送到源方发送端口。 这是文件适配器类型的静态单向端口。 其中指定的源 (\Tutorial_BatchACKDrop) 的文件文件夹[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将删除确认批处理文件。 你定义筛选器，该值指示端口将发送的确认批处理哪种类型的端口。 筛选器指定 Tutorial_BatchSource 和 OutboundBatch 的消息类型的源。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在“发送端口属性”对话框中，执行以下操作：  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
     |**名称**|类型**Tutorial_BatchSource**。|  
     |**类型**|选择**文件**从下拉列表。|  
@@ -37,25 +37,25 @@ ms.lasthandoff: 11/28/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**目标文件夹**|浏览到  **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_ 快捷键BatchACKDrop * *。 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含确认批处理的文件。|  
-    |**文件名**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
+    |**目标文件夹**|浏览到 **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_BatchACKDrop快捷键**. 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含确认批处理的文件。|  
+    |**File name**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
     |**副本模式**|选择**创建新**。|  
   
 4.  单击 **“确定”**。  
   
 5.  在发送端口属性对话框中，为**发送管道**，选择**BTAHL72XPipelines.BTAHL72XSendPipeline**。  
   
-6.  在控制台树中，单击**筛选器**，然后执行以下：  
+6.  在控制台树中，单击 **筛选器**, ，然后执行以下︰  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
     |**属性**|单击下的字段**属性**，然后选择**Microsoft.Solutions.BTAHL7.BatchOrchestration.Party**从下拉列表。|  
     |**运算符**|保留 **==** 为运算符。|  
-    |**值**|类型**Tutorial_BatchSource**。|  
+    |**Value**|类型**Tutorial_BatchSource**。|  
     |**分组依据**|选择**和**从下拉列表。|  
     |**属性**|选择**BTAHL7Schemas.BTAHL7MessageType**。|  
     |**运算符**|保留 **==** 为运算符。|  
-    |**值**|类型**OutboundBatch**。|  
+    |**Value**|类型**OutboundBatch**。|  
   
 7.  按 **Enter**。 在对话框中底部窗格中，验证是否正确，输入筛选器表达式，然后单击**确定**。  
   

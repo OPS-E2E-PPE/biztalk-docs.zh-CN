@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a91c0303c9abdf6b1d8c434869445f3c84348935
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a>实现 FRR 否认处理程序示例
 若要实现示例 FRR 否认自定义处理程序，将示例项目添加到你的解决方案、 生成和部署项目、 绑定和启动业务流程，然后停止并重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  生成和部署 RepairSWIFTRejectedMessage.btproj 项目。  
   
-5.  在 BizTalk 资源管理器中，展开**BizTalk 配置数据库**，   **\<*服务器名称*\>，BizTalkMgmtDb.dbo** 和**业务流程**，右键单击**RepairSWIFTRejectedMessage.Orchestration_1**，然后单击**绑定**。  
+5.  在 BizTalk 资源管理器中，展开**BizTalk 配置数据库**，  **\<*服务器名称*\>，BizTalkMgmtDb.dbo**，和**业务流程**，右键单击**RepairSWIFTRejectedMessage.Orchestration_1**，然后单击**绑定**。  
   
 6.  在**端口绑定属性**对话框中，选择你的主机，如 BizTalkServerApplication，，然后单击**确定**。  
   

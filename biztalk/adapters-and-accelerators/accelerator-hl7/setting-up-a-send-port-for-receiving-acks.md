@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: df0988a9edc2af81970237aad363315a778f821b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>设置发送端口用于接收确认
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 可以在单向发送端口上接收确认 (ACK)。 如果你设置了新的单向发送端口用于同一连接上接收确认，你必须将关联该发送端口使用单向接收端口。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在**传输**部分中，为**类型**，选择**MLLP**。  
   
-4.  单击**配置**。  
+4.  单击 **配置**。  
   
 5.  在 MLLP 传输属性对话框中，键入连接名称和主机 (例如， **localhost**)。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/28/2017
     >  当你退出**提交接收位置**保留为空，BTAHL7 输入 URI 默认**TwoWayAckReceiveLocation**。 你可以验证，之后单击**确定**第 6 步中，通过单击**配置**试。 Uri，该 URI **TwoWayAckReceiveLocation** (127.0.0.1:65535) 将被放入**提交接收位置 (URI) ACK**。  
   
     > [!NOTE]
-    >  你必须创建订阅接收，ACK 发送端口或 ACK 将会被发现处于挂起状态，因为未找到的订阅。 若要订阅发送端口收到 ACK，使用筛选器，例如，  **BTS。MessageType = = \<* MessageType*\>* * 和 **BTS。ReceivePortName = = \<*接收端口*\>* *。 对于静态 Ack 消息类型是**StaticAck**。  
+    >  你必须创建订阅接收，ACK 发送端口或 ACK 将会被发现处于挂起状态，因为未找到的订阅。 若要订阅发送端口收到 ACK，使用筛选器，例如， **BTS。MessageType = = \< *MessageType* \>** 和**BTS。ReceivePortName = = \<*接收端口*\>**。 对于静态 Ack 消息类型是**StaticAck**。  
   
 7.  单击 **“确定”**。  
   

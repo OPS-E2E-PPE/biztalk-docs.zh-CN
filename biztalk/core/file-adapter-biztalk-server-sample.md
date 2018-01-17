@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>文件适配器 （BizTalk Server 示例）
 Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配器示例。 它提供了建立动态或静态适配器的代码。  不过，以下过程仅简要介绍静态适配器。 静态适配器是具有静态架构集合且没有自定义用户接口的适配器。 动态适配器具有自定义用户接口，并可能具有动态架构集合。 静态适配器和动态适配器均使用添加适配器向导向 BizTalk 项目中添加其架构。  
@@ -38,7 +38,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
  \<*示例路径*\>**\AdaptersDevelopment\File 适配器**  
   
 > [!NOTE]
->  默认位置\<*示例路径*\>是*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 时运行 32 位计算机上安装 BizTalk ServerWindows 版本。 默认位置\<*示例路径*\>是*%programfiles （x86） %*\Microsoft BizTalk Server\SDK\Samples 运行 64 的计算机上安装 BizTalk Server 时位版本的 Windows。 若要确定与关联的值*%programfiles%*或*%programfiles （x86） %*环境变量类型**echo %programfiles%**或**echo %Programfiles （x86） %**在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用**%programfiles%**到**%programfiles （x86） %**之前运行的.reg 文件。  
+>  默认位置\<*示例路径*\>是*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 时运行 32 位计算机上安装 BizTalk ServerWindows 版本。 默认位置\<*示例路径*\>是*%programfiles （x86） %*\Microsoft BizTalk Server\SDK\Samples 运行 64 的计算机上安装 BizTalk Server 时位版本的 Windows。 若要确定与关联的值 *%programfiles%* 或 *%programfiles （x86） %* 环境变量类型 **echo %programfiles%** 或 **echo %programfiles （x86） %** 在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用 **%programfiles%** 到 **%programfiles （x86） %** 之前运行的.reg 文件。  
   
  下表显示了本示例中的文件并说明了其用途。  
   
@@ -87,70 +87,70 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 #### <a name="to-create-a-strong-name-key-for-the-dotnetfileadapter-projects-and-the-base-adapter-project"></a>为 DotNetFileAdapter 项目和基本适配器项目创建强名称密钥  
   
-1.  启动**Visual Studio 命令提示**。  
+1.  启动 **Visual Studio 命令提示**。  
   
     > [!NOTE]
     >  以管理员身份运行命令提示符。  
   
 2.  将当前目录更改为\<*示例路径*\>**\AdaptersDevelopment\BaseAdapter\v1.0.2**目录。  
   
-3.  在命令提示符处，键入**sn-k BaseAdapter.snk**然后按 ENTER。 如果以前运行过其他示例，则此 .snk 文件可能已经存在。 如果确实如此，则可以跳过此步骤直接转到步骤 4。  
+3.  在命令提示符处，键入 **sn-k BaseAdapter.snk** 然后按 ENTER。 如果以前运行过其他示例，则此 .snk 文件可能已经存在。 如果确实如此，则可以跳过此步骤直接转到步骤 4。  
   
 4.  将当前目录更改为\<*示例路径*\>\\**AdaptersDevelopment\File Adapter\Runtime**目录。  
   
-5.  在命令提示符处，键入**sn-k DotNetFileAdapter.snk**然后按 ENTER。  
+5.  在命令提示符处，键入 **sn-k DotNetFileAdapter.snk** 然后按 ENTER。  
   
-6.  在命令提示符处，键入**退出**然后按 ENTER 以关闭命令提示符窗口。  
+6.  在命令提示符处，键入 **退出** 然后按 ENTER 以关闭命令提示符窗口。  
   
 #### <a name="to-build-the-receiver-run-time-project"></a>生成接收器运行时项目  
   
-1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
+1.  单击 **启动**, ，指向 **所有程序**, ，指向 **附件**, ，然后单击 **Windows 资源管理器**。  
   
 2.  导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Runtime"**目录中，，然后双击**DotNetFile.sln**.  
   
-3.  若要重新生成适配器接收方运行时项目，在解决方案资源管理器，右键单击**DotNetFile**，然后单击**重新生成**。  
+3.  若要重新生成适配器接收方运行时项目，在解决方案资源管理器，右键单击 **DotNetFile**, ，然后单击 **重新生成**。  
   
-4.  从**文件**菜单上，单击**退出**关闭 Visual Studio。  
+4.  从 **文件** 菜单上，单击 **退出** 关闭 Visual Studio。  
   
 #### <a name="to-build-the-adapter-design-time-project"></a>生成适配器设计时项目  
   
 1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Design Time\Adapter 管理"**目录中，，然后双击**AdapterManagement.sln**。  
   
-2.  在解决方案资源管理器，右键单击**AdapterManagement**，然后单击**重新生成**。  
+2.  在解决方案资源管理器，右键单击 **AdapterManagement**, ，然后单击 **重新生成**。  
   
-3.  从**文件**菜单上，单击**退出**关闭 Visual Studio。  
+3.  从 **文件** 菜单上，单击 **退出** 关闭 Visual Studio。  
   
 #### <a name="to-register-the-sample-static-adapter"></a>注册示例静态适配器  
   
 1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File 适配器"**目录。  
   
-2.  若要将示例适配器添加到注册表中，双击**StaticAdapterManagement.reg**。  
+2.  若要将示例适配器添加到注册表中，双击 **StaticAdapterManagement.reg**。  
   
     > [!NOTE]
     >  StaticAdapterManagement.reg 包括硬编码路径 C:\Program Files\Microsoft BizTalk Server\\。 如果你未安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 %ProgramFiles%\Microsoft BizTalk Server\ 目录中，如果从 BizTalk Server 2009 或 BizTalk Server 2006 R2，升级你的 BizTalk Server 安装，或者如果正在运行的计算机上安装 BizTalk Server64 位版本的 Windows，你必须修改文件 StaticAdapterManagement.reg 与相应的路径。 默认情况下，BizTalk Server 安装到 %programfiles(x86) %\Microsoft 运行 Windows 的 64 位版本的计算机上的 BizTalk Server\ 目录。 更新与“InboundAssemblyPath”、“OutboundAssemblyPath”和“AdapterMgmtAssemblyPath”值相关联的路径，使之指向指定文件的正确位置。  
   
     > [!IMPORTANT]
-    >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **StaticAdapterManagement.reg**注册表文件。  
+    >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **StaticAdapterManagement.reg** 注册表文件。  
   
-3.  在**注册表编辑器**对话框中，单击**是**以将示例适配器添加到注册表中，然后单击**确定**。  
+3.  在 **注册表编辑器** 对话框中，单击 **是** 以将示例适配器添加到注册表中，然后单击 **确定**。  
   
-4.  若要关闭 Windows 资源管理器，在**文件**菜单上，单击**关闭**。  
+4.  若要关闭 Windows 资源管理器，在 **文件** 菜单上，单击 **关闭**。  
   
 #### <a name="to-install-the-sample-static-adapter"></a>若要安装示例静态适配器  
   
 1.  单击**启动**，选择**所有程序**，选择[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后选择**BizTalk Server 管理**。  
   
-2.  在 BizTalk Server 管理控制台中，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组**，并单击以展开**平台设置**.  
+2.  在 BizTalk Server 管理控制台中，单击以展开 **BizTalk Server 管理**, ，单击以展开 **BizTalk 组**, ，并单击以展开 **平台设置**。  
   
-3.  右键单击**适配器**，单击**新建**，然后单击**适配器**。  
+3.  右键单击 **适配器**, ，单击 **新建**, ，然后单击 **适配器**。  
   
-4.  在**添加适配器**对话框框中，执行以下操作。  
+4.  在 **添加适配器** 对话框框中，执行以下操作。  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
-    |**名称**|类型**静态**。|  
-    |**适配器**|选择**静态 DotNetFile**从下拉列表。|  
-    |**注释**|类型**示例适配器**。|  
+    |**名称**|类型 **静态**。|  
+    |**适配器**|选择 **静态 DotNetFile** 从下拉列表。|  
+    |**注释**|类型 **示例适配器**。|  
   
 5.  单击 **“确定”**。  
   
@@ -160,119 +160,119 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 1.  单击**启动**，选择**所有程序**，选择[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后选择**BizTalk Server 管理**。  
   
-2.  在 BizTalk Server 管理控制台中，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组**，单击以展开**平台设置**单击**主机实例**。 在右窗格中选择“BizTalkServerApplication”。  
+2.  在 BizTalk Server 管理控制台中，单击以展开 **BizTalk Server 管理**, ，单击以展开 **BizTalk 组**, ，单击以展开 **平台设置** 单击 **主机实例**。 在右窗格中选择“BizTalkServerApplication”。  
   
-3.  在结果窗格中，右键单击主机实例 （通常情况下，计算机名称），并依次**重新启动**。  
+3.  在结果窗格中，右键单击主机实例 （通常情况下，计算机名称），并依次 **重新启动**。  
   
 ### <a name="running-this-sample"></a>运行本示例  
   
 ##### <a name="to-run-the-file-adapter-sample"></a>运行文件适配器示例  
   
-1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
+1.  单击 **启动**, ，指向 **所有程序**, ，指向 **附件**, ，然后单击 **Windows 资源管理器**。  
   
 2.  BizTalk Server 安装驱动器上创建以下文件夹：  
   
-    -   *\<驱动器\>*:**\Temp**  
+    -   *\<drive\>*:**\Temp**  
   
-    -   *\<驱动器\>*:**\Temp\Send**  
+    -   *\<drive\>*:**\Temp\Send**  
   
-    -   *\<驱动器\>*:**\Temp\Receive**  
+    -   *\<drive\>*:**\Temp\Receive**  
   
-3.  若要关闭 Windows 资源管理器，在**文件**菜单上，单击**关闭**。  
+3.  若要关闭 Windows 资源管理器，在 **文件** 菜单上，单击 **关闭**。  
   
 4.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-5.  右键单击**BizTalk Server 管理**节点，然后选择**连接到现有组**。  
+5.  右键单击 **BizTalk Server 管理**  节点，然后选择 **连接到现有组**。  
   
-6.  在**连接到现有的 BizTalk Server 配置数据库**对话框框中，执行以下操作。  
+6.  在 **连接到现有的 BizTalk Server 配置数据库** 对话框框中，执行以下操作。  
   
     > [!NOTE]
     >  BizTalk 管理数据库也称为 BizTalk 配置数据库。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**SQL Server**|类型**。** （句点）。|  
-    |**数据库**|选择由配置向导创建的 BizTalk 管理数据库的名称。 使用配置向导的默认数据库名称是**BizTalkMgmtDb**。|  
+    |**SQL Server**|类型 **。** （句点）。|  
+    |**数据库**|选择由配置向导创建的 BizTalk 管理数据库的名称。 使用配置向导的默认数据库名称是 **BizTalkMgmtDb**。|  
   
 7.  单击 **“确定”**。  
   
-8.  展开 **BizTalk 组 [*服务器名称*] * * 中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
+8.  展开**BizTalk 组 [*服务器名称*]**中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
   
-9. 右键单击**发送端口**节点，，然后单击**新建**，选择**静态单向发送端口**，然后单击**确定**。  
+9. 右键单击 **发送端口** 节点，，然后单击 **新建**, ，选择 **静态单向发送端口**, ，然后单击 **确定**。  
   
-10. 在**发送端口属性**对话框中，选择**常规**，并执行以下操作。  
+10. 在 **发送端口属性** 对话框中，选择 **常规**, ，并执行以下操作。  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
-    |**名称**|类型**AdapterSend**。|  
-    |**传输类型**|选择**静态**从该下拉列表并单击**配置**。<br /><br /> -在**目录**框中，键入 ***\<驱动器\>*: \Temp\Send**。<br />-在**文件模式**框中，选择**创建新**。<br />-在**文件名**框中，键入**%MessageID%.xml**。<br />-单击**确定**。<br />- **URI**字段应显示 ***\<驱动器\>*: \Temp\Send\\%MessageID%.xml**。|  
-    |**发送管道**|选择**PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**，然后单击**确定**。|  
+    |**名称**|类型 **AdapterSend**。|  
+    |**传输类型**|选择 **静态** 从该下拉列表并单击 **配置**。<br /><br /> -在**目录**框中，键入 ***\<驱动器\>*:\Temp\Send**。<br />-在 **文件模式** 框中，选择 **创建新**。<br />-在 **文件名** 框中，键入 **%MessageID%.xml**。<br />-单击 **确定**。<br />- **URI**字段应显示 ***\<驱动器\>*:\Temp\Send\\%MessageID%.xml**。|  
+    |**发送管道**|选择 **PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**, ，然后单击 **确定**。|  
   
-11. 下**BizTalk 应用程序 1**节点单击**接收端口**，然后选择**新 / 单向接收端口**。  
+11. 下 **BizTalk 应用程序 1** 节点单击 **接收端口**, ，然后选择 **新 / 单向接收端口**。  
   
-12. 在**创建新接收端口**对话框中，在**指定的接收端口类型**框中，选择**单向接收端口**从下拉列表，，然后单击**确定**。  
+12. 在 **创建新接收端口** 对话框中，在 **指定的接收端口类型** 框中，选择 **单向接收端口** 从下拉列表，然后单击 **确定**。  
   
-13. 在**接收端口属性**对话框中，在**名称**框中，键入**AdapterReceive**，然后单击**确定**。  
+13. 在 **接收端口属性** 对话框中，在 **名称** 框中，键入 **AdapterReceive**, ，然后单击 **确定**。  
   
-14. 下**BizTalk 应用程序 1**右键单击节点**接收位置**，然后选择**新 / 单向接收位置**。  
+14. 下 **BizTalk 应用程序 1** 右键单击节点 **接收位置**, ，然后选择 **新 / 单向接收位置**。  
   
-15. 在**选择接收端口**对话框中，选择**AdapterReceive**然后单击**确定**。  
+15. 在 **选择接收端口** 对话框中，选择 **AdapterReceive** 然后单击 **确定**。  
   
-16. 在**接收位置属性**对话框框中，执行以下操作。  
+16. 在 **接收位置属性** 对话框框中，执行以下操作。  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
-    |**名称**|类型**AdapterReceiveLocation**|  
-    |**传输类型**|选择**静态**从下拉列表和命中**配置**以访问这些剩余属性。|  
-    |**URI**|-单击省略号按钮 (**...**).<br />-在**数量的文件在批处理**框中，键入**20**。<br />-在**目录**框中，键入 ***\<驱动器\>*: \Temp\Receive**。<br />-确保**文件掩码**属性设置为 **\*.xml**。<br />-在**轮询间隔**框中，键入**5**，然后单击**确定**。<br />-确保**URI**标签包含 ***\<驱动器\>*: \Temp\Receive\\\*.xml**。|  
-    |**接收处理程序**|选择**BizTalkServerApplication**从下拉列表。|  
-    |**接收管道**|选择**XMLReceive**从下拉列表。|  
+    |**名称**|类型 **AdapterReceiveLocation**|  
+    |**传输类型**|选择 **静态** 从下拉列表和命中 **配置** 以访问这些剩余属性。|  
+    |**URI**|-单击省略号按钮 (**...**)。<br />-在 **数量的文件在批处理** 框中，键入 **20**。<br />-在**目录**框中，键入 ***\<驱动器\>*:\Temp\Receive**。<br />-确保 **文件掩码** 属性设置为 **\*.xml**。<br />-在 **轮询间隔** 框中，键入 **5**, ，然后单击 **确定**。<br />-确保**URI**标签包含 ***\<驱动器\>*:\Temp\Receive\\\*.xml**。|  
+    |**接收处理程序**|选择 **BizTalkServerApplication** 从下拉列表。|  
+    |**接收管道**|选择 **XMLReceive** 从下拉列表。|  
   
 17. 单击 **“确定”**。  
   
-     继续执行*生成、 部署和绑定的示例适配器*。  
+     继续执行 *生成、 部署和绑定的示例适配器*。  
   
 ### <a name="building-deploying-and-binding-the-sample-adapter"></a>示例适配器的生成、部署和绑定  
  在适配器投入使用前，必须生成项目、绑定业务流程与端口以及登记适配器。  
   
 ##### <a name="to-create-a-strong-name-key-for-the-static-adapter"></a>为静态适配器创建强名称密钥  
   
-1.  启动**Visual Studio 命令提示**。  
+1.  启动 **Visual Studio 命令提示**。  
   
 2.  在命令提示符下，将当前目录更改为\<*示例路径*\>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter 套**目录。  
   
-3.  在命令提示符处，键入**sn-k AdapterHarness.snk**，然后 pressENTER。  
+3.  在命令提示符处，键入 **sn-k AdapterHarness.snk**, ，然后 pressENTER。  
   
 4.  单击 **“确定”**。  
   
 ##### <a name="to-build-the-adapter-harness-project"></a>生成适配器管理项目  
   
--   在解决方案资源管理器，右键单击**AdapterHarnessProject**，然后单击**重新生成**。  
+-   在解决方案资源管理器，右键单击 **AdapterHarnessProject**, ，然后单击 **重新生成**。  
   
 ##### <a name="to-deploy-the-adapter-harness-project"></a>部署适配器管理项目  
   
-1.  在解决方案资源管理器已重新生成了项目，右键单击**AdapterHarnessProject**，然后单击**部署**。  
+1.  在解决方案资源管理器已重新生成了项目，右键单击 **AdapterHarnessProject**, ，然后单击 **部署**。  
   
-2.  在 BizTalk Server 管理控制台中，选择你已部署，然后单击该项目**刷新**。  
+2.  在 BizTalk Server 管理控制台中，选择你已部署，然后单击该项目 **刷新**。  
   
 ##### <a name="to-bind-the-orchestration-with-the-ports"></a>绑定业务流程与端口  
   
 1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中的，在相应[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序中，展开**业务流程**节点。  
   
-2.  右键单击**AdapterHarness.AdapterHarnessType**，然后单击**绑定**。  
+2.  右键单击 **AdapterHarness.AdapterHarnessType**, ，然后单击 **绑定**。  
   
-3.  在**端口绑定属性 AdapterHarness.AdapterHarnessType-绑定配置**对话框框中，执行以下操作。  
+3.  在 **端口绑定属性 AdapterHarness.AdapterHarnessType-绑定配置** 对话框框中，执行以下操作。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**AdapterFileReceivePort**|选择**AdapterReceive**从下拉列表。|  
-    |**AdapterFileSendPort**|选择**AdapterSend**从下拉列表。|  
+    |**AdapterFileReceivePort**|选择 **AdapterReceive** 从下拉列表。|  
+    |**AdapterFileSendPort**|选择 **AdapterSend** 从下拉列表。|  
   
-4.  在左窗格中，单击**主机**。  
+4.  在左窗格中，单击 **主机**。  
   
-5.  在**主机**框中，选择**BizTalkServerApplication**从下拉列表，然后单击**确定**。  
+5.  在 **主机** 框中，选择 **BizTalkServerApplication** 从下拉列表，然后单击 **确定**。  
   
- 继续执行*管理示例适配器*。  
+ 继续执行 *管理示例适配器*。  
   
 ### <a name="administering-the-sample-adapter"></a>管理示例适配器  
  可以在 BizTalk 管理控制台中完成示例适配器的管理任务。  
@@ -281,32 +281,32 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 1.  单击**启动**，指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在左窗格中，单击以展开**应用程序**，单击以展开**BizTalk 应用程序 1**，然后单击**接收位置**。  
+2.  在左窗格中，单击以展开 **应用程序**, ，单击以展开 **BizTalk 应用程序 1**, ，然后单击 **接收位置**。  
   
-3.  确保**AdapterReceive**状态是**已启用**。  
+3.  确保 **AdapterReceive** 状态是 **已启用**。  
   
-     如果状态不是**已启用**，右键单击**AdapterReceive**在右窗格中，然后单击**启用**。  
+     如果状态不是 **已启用**, ，右键单击 **AdapterReceive** 在右窗格中，然后单击 **启用**。  
   
-4.  在左窗格中，单击**业务流程**并确保**AdapterHarness.AdapterHarnessType**是**登记的**。 右键单击**AdapterHarness.AdapterHarnessType**，然后单击**Enlist** (如果已登记 AdapterHarness.AdapterHarnessType， **Enlist**菜单选项不可用）。  
+4.  在左窗格中，单击 **业务流程** 并确保 **AdapterHarness.AdapterHarnessType** 是 **登记的**。 右键单击 **AdapterHarness.AdapterHarnessType**, ，然后单击 **Enlist** (如果已登记 AdapterHarness.AdapterHarnessType， **Enlist** 菜单选项将不可用)。  
   
-5.  右键单击**AdapterHarness.AdapterHarnessType**和选择**启动**。 此业务流程的状态应更改为**运行**。  
+5.  右键单击 **AdapterHarness.AdapterHarnessType** 和选择 **启动**。 此业务流程的状态应更改为 **运行**。  
   
- 继续执行*测试示例适配器*。  
+ 继续执行 *测试示例适配器*。  
   
 ### <a name="testing-the-sample-adapter"></a>测试示例适配器  
  在部署示例适配器后，必须停止并重新启动主机实例。 在投入生产前测试示例适配器很重要。  
   
 ##### <a name="to-stop-and-restart-the-host-instance"></a>若要停止并重新启动主机实例  
   
-1.  在**BizTalk Server 管理**控制台，单击以展开**BizTalk Server 管理**，单击以展开**BizTalk 组**，单击以展开**平台设置**单击**主机实例**。 在右窗格中选择“BizTalkServerApplication”。  
+1.  在 **BizTalk Server 管理** 控制台，单击以展开 **BizTalk Server 管理**, ，单击以展开 **BizTalk 组**, ，单击以展开 **平台设置** 单击 **主机实例**。 在右窗格中选择“BizTalkServerApplication”。  
   
-2.  右键单击主机实例 （通常情况下，计算机名称），并依次**停止**。  
+2.  右键单击主机实例 （通常情况下，计算机名称），并依次 **停止**。  
   
-     主机实例的状态更改为**已停止**。  
+     主机实例的状态更改为 **已停止**。  
   
-3.  右键单击主机实例，然后单击**启动**。  
+3.  右键单击主机实例，然后单击 **启动**。  
   
-     主机实例的状态更改为**运行**。  
+     主机实例的状态更改为 **运行**。  
   
 ##### <a name="to-test-the-sample-static-adapter-runtime"></a>测试示例静态适配器运行时  
   
@@ -320,19 +320,19 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在解决方案资源管理器，右键单击**AdapterHarnessProject**，指向**添加**，然后单击**添加生成的项**。  
   
-2.  在**添加生成的项的 AdapterHarnessProject**对话框中，单击**添加适配器元数据**，然后单击**打开**。  
+2.  在 **添加生成的项的 AdapterHarnessProject** 对话框中，单击 **添加适配器元数据**, ，然后单击 **打开**。  
   
      即会显示已注册适配器的列表。  
   
-3.  选择**静态 DotNetFile**，然后单击**下一步**。  
+3.  选择 **静态 DotNetFile**, ，然后单击 **下一步**。  
   
      即会显示由该适配器公开的服务组织。  
   
-4.  展开**服务组织**，**卫生保健**，然后单击**管理**。  
+4.  展开 **服务组织**, ，**卫生保健**, ，然后单击 **管理**。  
   
-     请注意，**资格**以不同方式显示来自其他节点。 **资格**是你可以选择一个服务节点。 其他节点为组织节点，不对任何特定服务进行说明。  
+     请注意， **资格** 以不同方式显示来自其他节点。 **资格** 是你可以选择一个服务节点。 其他节点为组织节点，不对任何特定服务进行说明。  
   
-5.  选择**资格**节点，，然后单击**完成**。  
+5.  选择 **资格** 节点，，然后单击 **完成**。  
   
      BizTalk 即会将一个 .odx 文件和一个 .xsd 文件导入到项目中。  
   

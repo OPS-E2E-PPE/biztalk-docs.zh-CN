@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ea38eb106b3554b72885355aaa9aef4928f4fda2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-custom-data-types-in-schemas"></a>在架构中创建自定义数据类型
 你可以在 datatypes_ 中创建自定义数据类型\<*版本*\>.xsd 公用架构。 你可以基于自定义数据类型，现有的数据类型，一个基本数据类型，或基于表中定义的枚举。  
   
 ### <a name="to-create-a-z-data-type"></a>若要创建 Z 数据类型  
   
-1.  在解决方案资源管理器的 Visual Studio 中，打开通用的数据类型架构文件 (**datatypes_\<*版本*\>.xsd * *)，然后单击**打开**.  
+1.  在解决方案资源管理器的 Visual Studio 中，打开通用的数据类型架构文件 (**datatypes_\<*版本*\>.xsd**)，然后单击**打开**.  
   
 2.  在 BizTalk 编辑器中，右键单击**HL7DefinedDataTypes**，指向**插入架构节点**，然后单击**子记录**创建组件数据类型，或单击**子元素**创建简单的数据类型。  
   

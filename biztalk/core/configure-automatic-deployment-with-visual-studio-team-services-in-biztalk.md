@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d135960143fed33d1ce4847c681f5b1134489b65
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-automatic-deployment-with-visual-studio-team-services-in-biztalk-server"></a>使用 BizTalk Server 中的 Visual Studio Team Services 中配置自动部署
 
@@ -42,17 +42,17 @@ ms.lasthandoff: 11/21/2017
 
 我们向您展示如何设置与 VSTS [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]，并添加你要部署的第一个应用程序。 我们建议你为参阅[VSTS 指南](https://docs.microsoft.com/vsts/user-guide/)，如 VSTS UI 更改。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>開始之前
 
 * 已准备好你的 Visual Studio Team Services (VSTS) 帐户。 还没有？ [注册 Visual Studio Team Services](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)。
 * 如果你没有 BizTalk 计算机上安装了 VSTS 代理，然后使用最新的 VSTS 代理覆盖现有的代理。 你可能需要更新你[VSTS 服务，以符合新代理](https://www.visualstudio.com/docs/build/actions/agents/v2-windows#replace-an-agent)。
 * 功能包 1，自动部署 VSTS 完成其中一个上[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]组中。 请确保计算机具有 Visual Studio 和[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]开发人员工具和安装 SDK。 请参阅[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)][硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)。
 * 自动部署 VSTS 可以完成对功能包 2，使用[部署组](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups)。 使用部署组，可以部署到部署组中的多个 BizTalk 服务器应用程序。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必要條件
 
 * 安装[功能包 2](https://aka.ms/bts2016fp2)上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* 某些体验和创建和使用 VSTS 中定义的知识。 如果你是新手 VSTS，这些可能是很好的资源： 
+* 某些体验和创建和使用 VSTS 中定义的知识。 如果你是新手 VSTS，这些可能是很好的资源︰ 
 
   [Visual Studio Team Services 概述](https://www.visualstudio.com/docs/overview)  
   [CI/CD 的新手](https://www.visualstudio.com/docs/build/get-started/ci-cd-part-1)

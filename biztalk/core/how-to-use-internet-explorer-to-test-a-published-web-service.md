@@ -14,15 +14,15 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 48a35373735102bd75d1c388da29b06d4392ba18
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="test-a-biztalk-web-service"></a>BizTalk Web 服务测试
 
 ## <a name="overview"></a>概述
-您无需编写 Web 客户端应用程序即可测试已发布的 Web Services。 可以用 Web 浏览器（如 Internet Explorer）测试已发布的 Web Services。 尽管可以用 Web 浏览器访问任意已发布的 Web Services，但只能用含有简单类型参数的 Web 方法来测试 Web Services。 若要在 Web 浏览器中测试您的 Web 方法，你的请求和响应消息的接收端口中使用的消息部分可以只是简单类型，如**System.String**或**System.Int32**。 如果有消息部分将架构用作消息类型，则无法用浏览器来测试 Web 方法。  
+您无需编写 Web 客户端应用程序即可测试已发布的 Web Services。 可以用 Web 浏览器（如 Internet Explorer）测试已发布的 Web Services。 尽管可以用 Web 浏览器访问任意已发布的 Web Services，但只能用含有简单类型参数的 Web 方法来测试 Web Services。 若要在 Web 浏览器中测试您的 Web 方法，你的请求和响应消息的接收端口中使用的消息部分可以只是简单类型，如 **System.String** 或 **System.Int32**。 如果有消息部分将架构用作消息类型，则无法用浏览器来测试 Web 方法。  
   
  如果想用 HTTP-GET 或 HTTP-POST 来测试已发布的 Web Services，则必须配置用于 SOAP 适配器的 BizTalk 接收位置，并修改用于已发布的 Web Services 的 Web.config 文件。  
   
@@ -72,9 +72,9 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>访问具有 Internet Explorer 的 Web 服务  
   
--   在 Internet Explorer 中，在**地址**框中，键入 Web 服务使用的格式的 URL  **http://*servername*/*apppath*/ *webservicename*.asmx * *。  
+-   在 Internet Explorer 中，在**地址**框中，键入 Web 服务使用的格式的 URL **http://*servername*/*apppath* /*webservicename*.asmx**。  
   
-    |参数|值|  
+    |参数|“值”|  
     |---------------|-----------|  
     |***servername***|已部署 XML Web Services 的服务器的名称。|  
     |***Apppath***|虚拟目录和 Web 应用程序路径的名称。|  
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  访问 Web Services 的说明页后，请单击 Web Services 说明页中列出的一项 Web 方法。  
   
-2.  键入 Web 方法的必需参数，然后单击**Invoke**。  
+2.  键入 Web 方法的必需参数，然后单击 **Invoke**。  
   
 3.  服务器在浏览器中返回一条 XML 响应。 如果 Web Services 的返回数据类型为双精度浮点数，则结果可能会类似如下：  
   
@@ -97,9 +97,9 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>Web 服务测试与 Internet 资源管理器使用 HTTP GET （备选方法）  
   
-1.  在 Internet Explorer 中，在**地址**框中，键入 Web 服务使用的格式的 URL ***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***。  
+1.  在 Internet Explorer 中，在 **地址** 框中，键入 Web 服务使用的格式的 URL ***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***。  
   
-    |参数|值|  
+    |参数|“值”|  
     |---------------|-----------|  
     |***servername***|已部署 XML Web Services 的服务器的名称。|  
     |***Apppath***|虚拟目录和 Web 应用程序路径的名称。|  

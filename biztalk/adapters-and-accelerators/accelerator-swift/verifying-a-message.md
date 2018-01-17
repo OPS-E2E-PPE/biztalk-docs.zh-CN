@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0f2fdc186e93bd182b3021a3ef8fc258cee59923
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="verifying-a-message"></a>验证消息
 本部分介绍如何验证已修复的消息。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>_Verifier * *。  
+3.  在文档窗口中，在**文档库**，单击 **\<*部门名称*\>_Verifier**。  
   
 4.  在验证窗口中，单击**收件箱**。  
   

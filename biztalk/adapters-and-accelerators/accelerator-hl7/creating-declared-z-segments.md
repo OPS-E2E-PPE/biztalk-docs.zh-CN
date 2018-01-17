@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: dae9148547f527d29238b6080cd499be8da7b7e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-declared-z-segments"></a>创建声明的 Z 段
 你可以在任何级别 （而不像未声明 Z 段，必须多方的消息，后面的正文部分的最后一部分） 架构创建声明的 Z 段。  

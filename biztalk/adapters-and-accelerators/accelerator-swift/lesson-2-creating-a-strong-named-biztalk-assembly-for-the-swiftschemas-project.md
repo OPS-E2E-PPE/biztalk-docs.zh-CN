@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集
 在本课程中，你可以创建强名称对其编译并部署 BizTalk 程序集。 具有强名称程序集提供多种安全优势：  
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  向下右窗格中，在和中的程序集属性滚动**强名称**部分中，单击右侧的框中**程序集密钥文件**。 单击省略号按钮。  
   
-7.  在程序集密钥文件对话框中，浏览到  **\<*驱动器*:\>\labs**。  
+7.  在程序集密钥文件对话框中，浏览到 **\<*驱动器*:\>\labs**。  
   
 8.  选择**swift.snk**文件作为的密钥文件，然后单击**打开**。  
   

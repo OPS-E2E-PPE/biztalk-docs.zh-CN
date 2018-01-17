@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2e9e799822c63cb78eda1b989cb157c71fd357d8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 可以使用以下建议以提高 BizTalk Server 性能。 安装并配置 BizTalk Server 之后，将应用本主题中列出的优化。  
@@ -98,9 +98,9 @@ ms.lasthandoff: 11/28/2017
   
  设置 maxconnection 属性时，可以指定 HTTP、 HTTPS、 web 站点 IP 地址和端口号。 其他示例包括：  
   
- **\<添加地址 ="https://www.contoso.com"maxconnection ="24"/\>**   
-**\<添加地址 ="http://www.contoso.com:8080"maxconnection ="24"/\>**   
-**\<添加地址 ="http://*IPAddress*"maxconnection ="24"/\>* * 有关优化 IIS 和 ASP.NET Web 服务的设置的详细信息，请参阅"ASP.NET 设置，可能会影响 HTTP 适配器性能"部分[适配器性能影响的配置参数](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200) 在 BizTalk Server 2010 帮助中。  
+ **\<add address="https://www.contoso.com" maxconnection="24" /\>**   
+**\<add address="http://www.contoso.com:8080" maxconnection="24" /\>**   
+**\<添加地址 ="http://*IPAddress*"maxconnection ="24"/\>** 有关优化 IIS 和 ASP.NET Web 服务的设置的详细信息，请参阅可能会影响 HTTP 适配器的"ASP.NET 设置性能"部分[配置参数会影响适配器性能](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200) 在 BizTalk Server 2010 帮助中。  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>管理 ASP.NET 线程使用情况或并发执行的请求的 Web 应用程序可以承载独立接收到的位置后, 端 Web 服务和 WCF 服务  
  辅助和 I/O 线程 （IIS 7.5 和 IIS 7.0 在经典模式下） 或的同时执行的请求 （IIS 7.5 和 7.0 集成模式下） ASP.NET Web 应用程序主机隔离接收到的位置后, 端 Web 服务和 WCF 服务数目的数量应在以下情况下修改：  

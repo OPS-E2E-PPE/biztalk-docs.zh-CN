@@ -13,15 +13,15 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6d463823a7038e1ead7e2de323da97eda372db76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a>如何更新使用的并行版本控制的映射
 某些 BizTalk 项目，比如地图，选择通过完全限定的强名称 (FQSN)，在这种情况下的绑定包括使用的版本。 这允许两个或多个图并排放置在共存[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 因此，可以发送端口属性中选择其中一个接收位置属性中的入站的映射或出站映射映射。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。  
   
 ### <a name="to-add-a-second-map-side-by-side-to-an-existing-map"></a>若要将第二个图并排显示添加到现有代码图  
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  在**程序集信息**对话框框中，为指定值**程序集版本**字段以更改程序集版本号。 您应更改仅主要或次要版本号。 主版本号是序列中的第一个数字 (***n***.0.0.0); 的次版本号是序列中的第二个数字 (0。***n*** .0.0)。  
   
-    5.  单击**确定**关闭**程序集信息**对话框。  
+    5.  单击 **确定** 关闭 **程序集信息** 对话框。  
   
 4.  编译的程序集。  
   
@@ -60,9 +60,9 @@ ms.lasthandoff: 09/20/2017
   
 1.  使用**启动**菜单上，打开**记事本**。  
   
-2.  在**记事本**上**文件**菜单上，单击**打开**。 在**打开**对话框中，选择代码图文件您想要修改，然后单击**打开**。  
+2.  在**记事本**上**文件**菜单上，单击**打开**。 在 **打开** 对话框中，选择代码图文件您想要修改，然后单击 **打开**。  
   
-3.  在 **“编辑”** 菜单中，单击 **“查找”**。 在**查找**对话框框中，输入**程序集 =**，然后单击**查找下一个**。  
+3.  在 **“编辑”** 菜单中，单击 **“查找”**。 在 **查找** 对话框框中，输入 **程序集 =**, ，然后单击 **查找下一个**。  
   
 4.  如果存在对外部程序集的脚本引用，则记事本应该找到一个类似如下所示的 XML 元素：  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 09/20/2017
     " Class="Contoso.Scripts" Function="CalculateValue" AssemblyPath="Contoso.Scripts.dll"/>  
     ```  
   
-5.  更新版本号。 如果有多个实例，使用**替换**上**编辑**菜单。  
+5.  更新版本号。 如果有多个实例，使用 **替换** 上 **编辑** 菜单。  
   
 6.  保存该文件。  
   

@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>部署 A4SWIFT 信封架构
 每当你设置消息修复和新提交时，架构项目中必须包含信封架构。 信封架构，如 EnvelopeMT103.xsd，需要将写入到 MRSR 站点。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在添加引用对话框中，单击**浏览**标记。  
   
-4.  在选择组件对话框中，打开**查找**下拉列表。 将移动到 ***\<驱动器\>*: files\microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\Assemblies**。 选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**从列表中的程序集，然后单击**添加**。  
+4.  在选择组件对话框中，打开**查找**下拉列表。 将移动到 ***\<驱动器\>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\Assemblies**。 选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**从列表中的程序集，然后单击**添加**。  
   
 5.  在**添加引用**对话框中，单击**确定**。  
   
@@ -62,8 +62,8 @@ ms.lasthandoff: 11/28/2017
   
 8.  在解决方案资源管理器，右键单击你的项目，指向**添加**，然后单击**添加现有项**。  
   
-9. 如果在使用添加现有项对话框中中的消息修复和新提交功能**查找**下拉列表框中，移动到  **\<*驱动器*\>: \Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Unparsed 消息 * *。 选择**EnvelopeUnparsedMessage.xsd**，然后单击**添加**。  
+9. 如果在使用添加现有项对话框中中的消息修复和新提交功能**查找**下拉列表框中，移动到 **\<*驱动器*\>: \Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Unparsed 消息**。 选择**EnvelopeUnparsedMessage.xsd**，然后单击**添加**。  
   
-10. 在解决方案资源管理器，右键单击项目名称，然后单击**生成**。  
+10. 在解决方案资源管理器，右键单击项目名称，然后单击 **生成**。  
   
-11. 在解决方案资源管理器，右键单击项目名称，然后单击**部署**。
+11. 在解决方案资源管理器，右键单击项目名称，然后单击 **部署**。

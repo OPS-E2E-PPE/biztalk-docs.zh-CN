@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>安装 BizTalk 适配器包 2013 R2 和 2013
 本文档列出的软件要求，和步骤安装 Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] (BAP) 中包含 BizTalk Server 2013 或[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]。  
@@ -845,7 +845,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 -   **在 64 位计算机上的运行安装程序可能会访问架构文件时将引发错误**  
   
-     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装程序在访问时引发错误 **Microsoft.Adapters。*\<AdapterName\>*_schema.xml** 文件，但与适配器安装继续进行。  
+     [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装程序在访问时引发错误**Microsoft.Adapters。*\<AdapterName\>*_schema.xml**文件，但与适配器安装继续进行。  
   
      **可能的原因**  
   
@@ -853,4 +853,4 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
      **解决方法**  
   
-     手动复制 **Microsoft.Adapters。*\<AdapterName\>*_schema.xml** 文件从`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"到`C:\Windows\System32\inetsrv\config\schema`。  
+     手动复制**Microsoft.Adapters。*\<AdapterName\>*_schema.xml**文件从`C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`"到`C:\Windows\System32\inetsrv\config\schema`。  

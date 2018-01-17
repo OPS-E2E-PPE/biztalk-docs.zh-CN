@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1804425c48fe3a2613cf924aab968cb0a08303ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="about-metadata-search-and-browse-with-your-wcf-lob-adapter-sdk-adapter"></a>有关元数据搜索和浏览与 WCF LOB 适配器 SDK 适配器
 与使用生成静态服务不同[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，使用生成的适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]可以提供有关类型和业务线系统中可操作的动态信息。 开发人员可以支持以下操作：  

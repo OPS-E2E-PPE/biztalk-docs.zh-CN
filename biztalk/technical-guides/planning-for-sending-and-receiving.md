@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="planning-for-sending-and-receiving"></a>规划用于发送和接收
 处理的几乎每个文档[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]由接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收适配器，并从发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送适配器。 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器因此突出图中任何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，务必要提前计划来确定哪些适配器或快捷键，你将使用以及如何正确配置这些适配器和/或快捷键。  
@@ -43,23 +43,23 @@ ms.lasthandoff: 12/01/2017
   
 |适配器|主要好处|事务支持|双向通信支持|按顺序接收支持|启用 SSO|  
 |-------------|---------------------|-------------------------|------------------------------------|-------------------------------|-----------------|  
-|文件|易于使用|是|“否”|“否”|是|  
-|FTP|广泛用于企业到企业通信|是|“否”|是|是|  
-|HTTP(s)|广泛用于企业到企业通信|是|请求/响应和要求/响应|是|是|  
-|SOAP|支持 Web 服务的使用|是|请求/响应和要求/响应|是|是|  
-|MSMQ|有保障的 BizTalk Server 和 Microsoft 消息队列之间的消息仅一次传递的支持|是|“否”|是|是|  
-|MQ Series|保证仅一次传递消息 BizTalk Server 和 IBM WebSphere MQ 之间的 Windows 平台的支持|是|“否”|是|是|  
-|SQL|支持直接 BizTalk Server 和 SQL Server 数据库之间的通信|是|仅要求/响应|是|是|  
-|Windows SharePoint Services|支持 XML 和 BizTalk Server 和 SharePoint 文档库之间的二进制消息的交换|是|“否”|“否”|是|  
-|POP3|接收文档通过电子邮件的支持|是|“否”|“否”|是|  
-|SMTP|支持发送文档通过电子邮件|是|“否”|“否”|是|  
-|EDI|支持处理符合 EDI 标准的业务文档|是|“否”|“否”|是|  
+|文件|易于使用|否|“否”|“否”|否|  
+|FTP|广泛用于企业到企业通信|否|“否”|“否”|是|  
+|HTTP(s)|广泛用于企业到企业通信|否|请求/响应和要求/响应|否|是|  
+|SOAP|支持 Web 服务的使用|否|请求/响应和要求/响应|否|是|  
+|MSMQ|有保障的 BizTalk Server 和 Microsoft 消息队列之间的消息仅一次传递的支持|是|“否”|是|否|  
+|MQ Series|保证仅一次传递消息 BizTalk Server 和 IBM WebSphere MQ 之间的 Windows 平台的支持|是|“否”|用户帐户控制|是|  
+|SQL|支持直接 BizTalk Server 和 SQL Server 数据库之间的通信|是|仅要求/响应|否|否|  
+|Windows SharePoint Services|支持 XML 和 BizTalk Server 和 SharePoint 文档库之间的二进制消息的交换|否|“否”|“否”|否|  
+|POP3|接收文档通过电子邮件的支持|否|“否”|“否”|否|  
+|SMTP|支持发送文档通过电子邮件|否|“否”|“否”|否|  
+|EDI|支持处理符合 EDI 标准的业务文档|否|“否”|“否”|否|  
 |自定义|支持您的旧系统|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|  
-|WCF-WSHttp|支持 WS-* 标准 HTTP 传输|是，WsHTTP 支持事务（仅限 WS-Transactions）|请求/响应和要求/响应|是|是|  
-|WCF-BasicHttp|与基于 ASMX 的 Web 服务和客户端以及符合 WS 其他服务进行通信的基本配置文件 1.1 使用 HTTP 或 HTTPS|是|请求/响应和要求/响应|是|是|  
-|WCF-NetTcp|支持 WS-* 标准通过 TCP 传输|是|请求/响应和要求/响应|是|是|  
-|WCF-NetMsmq|通过利用 Microsoft 消息队列 (MSMQ) 作为传输协议队列的支持|是|“否”|是|是|  
-|WCF-NetNamedPipe|（仅适用于 WCF 应用程序） 在同一计算机上的跨进程通信提供快速传输|是|请求/响应和要求/响应|是|是|  
+|WCF-WSHttp|支持 WS-* 标准 HTTP 传输|是，WsHTTP 支持事务（仅限 WS-Transactions）|请求/响应和要求/响应|否|是|  
+|WCF-BasicHttp|与基于 ASMX 的 Web 服务和客户端以及符合 WS 其他服务进行通信的基本配置文件 1.1 使用 HTTP 或 HTTPS|否|请求/响应和要求/响应|否|是|  
+|WCF-NetTcp|支持 WS-* 标准通过 TCP 传输|是|请求/响应和要求/响应|否|是|  
+|WCF-NetMsmq|通过利用 Microsoft 消息队列 (MSMQ) 作为传输协议队列的支持|是|“否”|用户帐户控制|是|  
+|WCF-NetNamedPipe|（仅适用于 WCF 应用程序） 在同一计算机上的跨进程通信提供快速传输|是|请求/响应和要求/响应|否|是|  
 |WCF-Custom|启用 WCF 扩展性功能的使用|是。|是。|是，只要绑定支持。|是。|  
 |WCF-CustomIsolated|启用通过 HTTP 传输的 WCF 扩展性功能|是。|是。|否。|是。|  
   
@@ -183,7 +183,7 @@ ms.lasthandoff: 12/01/2017
   
 -   您必须订阅拥有的发送端口与这些消息**按序送达**选项设置为**True**。  
   
--   如果业务流程用于的处理应使用的消息，仅业务流程的单个实例，应将业务流程配置为使用顺序保护和**按序送达**属性业务流程的接收端口应设置为**True**。  
+-   如果业务流程用于的处理应使用的消息，仅业务流程的单个实例，应将业务流程配置为使用顺序保护和 **按序送达** 业务流程的属性的接收端口应该设置为 **True**。  
   
 ## <a name="see-also"></a>另请参阅  
  [为 BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)

@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a663dd593123e647f2f466b6d472d60bb32be1be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-custom-tables-in-schemas"></a>在架构中创建自定义的表
 你可以在 tablevalues_ 中创建自定义表格\<*版本*\>.xsd 公用架构。 你可以基于自定义的表，现有的数据类型，一个基本数据类型，或基于表中定义的枚举。  
   
 ### <a name="to-create-a-z-table"></a>若要创建 Z 表  
   
-1.  在解决方案资源管理器，打开通用的数据类型架构文件 **tablevalues_\<*版本*\>.xsd * *，，然后单击**打开**。  
+1.  在解决方案资源管理器，打开通用的数据类型架构文件**tablevalues_\<*版本*\>.xsd**，然后单击**打开**。  
   
 2.  在 BizTalk 编辑器中，右键单击**HL7DefinedTables**，指向**插入架构节点**，然后单击**子字段元素**。  
   

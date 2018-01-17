@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 03f7c1fa75b6fe7bb4c78e18c97fccd1404f89c9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-delete-user-mappings"></a>如何删除用户映射
 使用这些命令来删除一个或多个用户映射，按照指定的 XML 文件中。 下面是示例 XML 文件。  
@@ -47,33 +47,33 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-delete-user-mappings-using-the-administration-utility"></a>若要删除使用管理实用程序的用户映射  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-deletemappings *\<映射文件名\>***，其中\<*映射文件名*\>是包含你想要删除用户映射的文件的名称。  
+3.  类型 **ssomanage-deletemappings *\<映射文件名\>* * *，其中\<*映射文件名*\>是包含的文件的名称你想要删除的用户映射。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-delete-a-specific-user-mapping-using-the-administration-utility"></a>若要删除特定用户映射使用管理实用工具  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型 **ssomanage-deletemapping *\<域\>*\\*\<用户名\>* *\<应用程序名称\>***，其中*\<域\>*是用户帐户的 Windows 域*\<用户名\>*是 Windows 用户名称，并\<*应用程序名称*\>是所需的特定应用程序删除的用户映射。  
+3.  类型 **ssomanage-deletemapping *\<域\>*\\*\<用户名\>*  *\<应用程序名称\>* * *，其中*\<域\>*是用户帐户的 Windows 域*\<用户名\>*是 Windows 用户名称，并\<*应用程序名称*\>是你想要删除的用户映射的特定应用程序。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-delete-a-user-mapping-using-the-client-utility"></a>若要删除使用客户端实用工具的用户映射  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – deletemapping *\<应用程序名称\>***，其中*\<应用程序名称\>*是你想要删除的用户映射的关联应用程序的名称。  
+3.  类型 * * ssoclient – deletemapping *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是你想要删除的用户映射的关联应用程序的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

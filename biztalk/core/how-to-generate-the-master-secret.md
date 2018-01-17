@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-generate-the-master-secret"></a>如何生成主密钥
 必须具有对主密钥服务器的管理员权限才能执行此任务。 此外，您还必须从主密钥服务器执行此任务。  
@@ -38,15 +38,15 @@ ms.lasthandoff: 11/28/2017
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击**系统**，然后单击**生成机密**。  
+3.  右键单击 **系统**, ，然后单击 **生成机密**。  
   
 ### <a name="to-generate-the-master-secret-using-the-command-line"></a>使用命令行生成主密钥  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型 **ssoconfig-generateSecret \<*备份文件*\>**，其中\<*备份文件*\>是包含主密钥的文件的名称。  
+3.  类型**ssoconfig-generateSecret \<*备份文件*\>**，其中\<*备份文件*\>是的名称包含主密钥的文件。  
   
      此时，系统将提示您输入密码以保护刚刚创建的文件。  
   

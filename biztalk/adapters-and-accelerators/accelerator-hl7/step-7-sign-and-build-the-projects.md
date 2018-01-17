@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f62a37da291bdc148369a28149cdfe29ed7fe446
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-7-sign-and-build-the-projects"></a>步骤 7： 登录和生成项目
 在此步骤中，可以指定一个强名称和生成项目以生成包含你在中创建的资源 （架构） 的程序集[步骤 6： 验证架构](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)。 这还可以确保到目前为止完成的工作中没有编译错误。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在右窗格中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （...） 按钮。  
   
-4.  在程序集密钥文件对话框中，浏览到  **\<*驱动器*\>: \Tutorial\BTAHL7V22Common\key.snk** (在创建[步骤 3： 分配到一个强名称程序集](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md))，然后单击**打开**。  
+4.  在程序集密钥文件对话框中，浏览到 **\<*驱动器*\>: \Tutorial\BTAHL7V22Common\key.snk** (在创建[步骤 3： 分配到一个强名称程序集](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md))，然后单击**打开**。  
   
 5.  单击**确定**以保存更改。  
   

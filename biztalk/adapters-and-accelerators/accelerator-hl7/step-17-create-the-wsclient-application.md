@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 54eff7c2a455d9f1129bb40d83c002bac92841bd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-17-create-the-wsclient-application"></a>步骤 17： 创建 WSClient 应用程序
 WSClient.exe （Web 服务客户端） 是编写的控制台应用程序[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]，演示了如何将数据发送到作为 Web 服务与先前步骤中发布的业务流程。 WSClient 应用程序接受四个输入参数顺序： 患者的名字、 中间名分别姓氏和身份证号。 若要将患者信息发送到你的 Web 服务，请使用以下命令行语法：  
@@ -35,7 +35,7 @@ wsclient john henry smith 123456789
   
 2.  在**添加新项目**对话框中，在**项目类型**窗格中，单击**Visual C#**并在**模板**窗格中，单击**控制台应用程序**。  
   
-3.  在**名称**字段中，键入**WSClient**。 在**位置**字段中，浏览到  **\<*驱动器*\>: \Tutorial**，，然后单击**确定**。 解决方案资源管理器将 WSClient 添加到树中，并且 Program.cs 文件中会出现。  
+3.  在**名称**字段中，键入**WSClient**。 在**位置**字段中，浏览到 **\<*驱动器*\>: \Tutorial**，然后单击**确定**。 解决方案资源管理器将 WSClient 添加到树中，并且 Program.cs 文件中会出现。  
   
 4.  在解决方案资源管理器，右键单击**WSClient**，然后单击**添加 Web 引用**。  
   

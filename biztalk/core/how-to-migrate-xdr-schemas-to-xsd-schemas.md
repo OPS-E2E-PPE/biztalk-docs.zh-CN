@@ -13,23 +13,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 84bbc42297a10c7d42adb8d778ba19b3b392742c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-migrate-xdr-schemas-to-xsd-schemas"></a>如何将 XDR 架构迁移到 XSD 架构
 如果是从早期版本的 BizTalk Server 迁移架构，则需要将精简 XML 数据 (XDR) 架构转换为 XML 架构定义 (XSD) 语言架构。 本主题介绍了必需的步骤。  
   
 ### <a name="to-generate-an-xsd-schema-from-an-xdr-schema"></a>从 XDR 架构生成 XSD 架构  
   
-1.  在**解决方案资源管理器**，右键单击相关的 BizTalk 项目，指向**添加**，然后单击**添加生成的项**。  
+1.  在 **解决方案资源管理器**, ，右键单击相关的 BizTalk 项目，指向 **添加**, ，然后单击 **添加生成的项**。  
   
-2.  在**添加生成项- \<* BizTalk ProjectName*\>* * 对话框中，在**模板**部分中，单击**生成架构**，然后单击**添加**。  
+2.  在**添加生成项- \< *BizTalk ProjectName* \>** 对话框中，在**模板**部分中，单击**生成架构**，然后单击**添加**。  
   
-3.  在**生成架构**对话框中，在**文档类型**列表中，选择**XDR 架构**。  
+3.  在 **生成架构** 对话框中，在 **文档类型** 列表中，选择 **XDR 架构**。  
   
-4.  单击**浏览**，找到你想要迁移，并依次 XDR 架构文件**确定**。  
+4.  单击 **浏览**, ，找到你想要迁移，并依次 XDR 架构文件 **确定**。  
   
      此时，将从指定的 XDR 架构文件生成与该文件同名并具有 .xsd 扩展名的新架构，然后在 BizTalk 编辑器中打开该架构。  
   

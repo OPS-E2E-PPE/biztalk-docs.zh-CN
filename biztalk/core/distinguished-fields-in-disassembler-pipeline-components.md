@@ -18,19 +18,19 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>反汇编程序中的可分辨的字段管道组件
 通过 XML 拆装器管道组件、BizTalk 框架拆装器管道组件或平面文件拆装器管道组件，可将架构中定义的可分辨字段写入消息上下文中，格式如下：  
   
- *使用名称*是 XPath 中的可分辨的字段  
+ *使用名称* 是 XPath 中的可分辨的字段  
   
- *命名空间 URI*是"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
+ *命名空间 URI* 是"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
   
- 属性的值是**System.String**指定从 XML 文档使用提取的值的 XPath。  
+ 属性的值是 **System.String** 指定从 XML 文档使用提取的值的 XPath。  
   
  下面的示例架构具有可分辨字段 Price：  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
  属性的命名空间：http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
- 属性值： 10  
+ 属性值︰ 10  
   
 > [!NOTE]
 >  如果任何 XML 文档元素值的大小超过 85 KB，则处理这些文档时性能可能会降低。  

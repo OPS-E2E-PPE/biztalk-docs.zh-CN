@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>安装和配置故障排除
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>安装程序无法部署 RuntimeSchemas 程序集  
@@ -95,12 +95,12 @@ ms.lasthandoff: 11/28/2017
   
 1.  右键单击服务文件夹，单击**属性**，然后单击**安全**选项卡。  
   
-2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称\>*\A4SWIFT 管理员**，然后单击**确定**。  
+2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称\>* \A4SWIFT 管理员**，然后单击**确定**.  
   
     > [!NOTE]
-    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名\>*\A4SWIFT 管理员**。  
+    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名\>* \A4SWIFT 管理员**。  
   
-3.  重复步骤 2  ***\<服务器名称\>*\A4SWIFT 用户**，或  **\<*域名*\>\A4SWIFT 用户 * * 如果 A4SWIFT 用户组是域组。  
+3.  重复步骤 2 ***\<服务器名称\>* \A4SWIFT 用户**，或 **\<*域名*\>\A4SWIFT 用户**如果A4SWIFT 用户组是域组。  
   
 4.  在组或用户名称窗格中，选择**A4SWIFT 管理员**。 在权限窗格中，选择**允许**为**完全控制**。  
   
@@ -207,7 +207,7 @@ ms.lasthandoff: 11/28/2017
   
     -   类型：**进程内**  
   
-    -   Windows 组：   **\<*域*\>\BizTalk 应用程序用户 * * （或设置在 BizTalk Server BizTalk 在进程内运行的配置过程的帐户应用程序）  
+    -   Windows 组：  **\<*域*\>\BizTalk 应用程序用户**（或设置在 BizTalk Server BizTalk 在进程内运行的配置过程的帐户应用程序）  
   
     -   在选项部分中，选择这两个**允许主机跟踪**和**使此组中的默认主机**。  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  单击**启动**，然后单击运行。 类型**cmd** ，然后单击**确定**。  
   
-7.  在命令提示符处，导航到*%programfiles%***\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools**。  
+7.  在命令提示符处，导航到 * %programfiles%***\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools**。  
   
 8.  类型**RepairBAS.exe**然后按**Enter**。  
   

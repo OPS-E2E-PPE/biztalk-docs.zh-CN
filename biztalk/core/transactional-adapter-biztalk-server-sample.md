@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f934857103952a035159cc08678c8ce8c8e51a56
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>事务适配器 （BizTalk Server 示例）
 事务性适配器示例演示如何在处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息期间，根据数据库创建并使用显式 Microsoft 分布式事务处理协调器 (MSDTC) 事务。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="create-a-strong-name-key-for-the-transactional-adapter-sample"></a>创建事务适配器示例强名称密钥  
   
-1.  启动**Visual Studio 命令提示**。  
+1.  启动 **Visual Studio 命令提示**。  
   
 2.  在命令提示符下，键入以下命令，然后按 Enter：  
   
@@ -79,15 +79,15 @@ ms.lasthandoff: 12/01/2017
     sn –k TransactionalAdapter.snk  
     ```  
   
-4.  在命令提示符处，键入**退出**，然后按 enter 以关闭命令提示符窗口。  
+4.  在命令提示符处，键入 **退出**, ，然后按 enter 以关闭命令提示符窗口。  
   
 #### <a name="build-the-transactional-adapter-solution"></a>生成事务适配器解决方案  
   
-1.  单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
+1.  单击 **启动**, ，指向 **所有程序**, ，指向 **附件**, ，然后单击 **Windows 资源管理器**。  
   
 2.  浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AdaptersDevelopment\TransactionalAdapter，双击**TransactionalAdapter.sln**以打开此解决方案中的[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
-3.  若要生成这两个事务适配器项目 （管理员和运行时） 在解决方案资源管理器中，右键单击**解决方案 TransactionalAdapter**，然后单击**重新生成**。  
+3.  若要生成这两个事务适配器项目 （管理员和运行时） 在解决方案资源管理器中，右键单击 **解决方案 TransactionalAdapter**, ，然后单击 **重新生成**。  
   
 ## <a name="running-this-sample"></a>运行本示例  
   
@@ -95,17 +95,17 @@ ms.lasthandoff: 12/01/2017
   
 1.  在 Windows 资源管理器中，导航至 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AdaptersDevelopment\TransactionalAdapter\Admin。  
   
-2.  若要将事务适配器数据添加到注册表中，双击**TransactionalAdmin.reg**。  
+2.  若要将事务适配器数据添加到注册表中，双击 **TransactionalAdmin.reg**。  
   
     > [!NOTE]
     >  **TransactionalAdmin.reg**包括硬编码路径 C:\Program Files\Microsoft BizTalk Server\\。 如果你的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的安装位置不是默认位置或者是从以前版本升级到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装，则必须使用相应的路径修改 TransactionalAdmin.reg 文件。 更新与揑“InboundAssemblyPath”、揙“OutboundAssemblyPath”和揂“AdapterMgmtAssemblyPath”值相关联的路径，以指向指定文件的正确位置。  
   
     > [!IMPORTANT]
-    >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **TransactionalAdmin.reg**注册表文件。  
+    >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为在 HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ **TransactionalAdmin.reg** 注册表文件。  
   
-3.  在**注册表编辑器**对话框中，单击**是**以将示例适配器添加到注册表中，然后单击**确定**。  
+3.  在 **注册表编辑器** 对话框中，单击 **是** 以将示例适配器添加到注册表中，然后单击 **确定**。  
   
-4.  若要关闭 Windows 资源管理器，请单击**文件**，然后单击**关闭**。  
+4.  若要关闭 Windows 资源管理器，请单击 **文件**, ，然后单击 **关闭**。  
   
 #### <a name="add-the-transactional-adapter-to-biztalk-server"></a>将事务性适配器添加到 BizTalk Server  
   
@@ -113,15 +113,15 @@ ms.lasthandoff: 12/01/2017
   
 2.  在[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk Server 管理**树中，展开**BizTalk 组**树，，然后展开**平台设置**树。  
   
-3.  右键单击**适配器**，单击**新建**，然后单击**适配器**。  
+3.  右键单击 **适配器**, ，单击 **新建**, ，然后单击 **适配器**。  
   
-4.  在**适配器属性**对话框框中，执行以下操作。  
+4.  在 **适配器属性** 对话框框中，执行以下操作。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |Name|类型**TransactionalAdapter**。|  
-    |适配器|选择**Txn**从下拉列表。 此项将作为运行结果显示**TransactionalAdmin.reg**以前文件。|  
-    |Description|类型**示例事务适配器**。|  
+    |名称|类型 **TransactionalAdapter**。|  
+    |适配器|选择 **Txn** 从下拉列表。 此项将作为运行结果显示 **TransactionalAdmin.reg** 以前文件。|  
+    |Description|类型 **示例事务适配器**。|  
   
 5.  单击“确定” **。** 现在该适配器显示在 BizTalk 管理控制台右侧窗口中的适配器列表中。  
   
@@ -129,21 +129,21 @@ ms.lasthandoff: 12/01/2017
   
 1.  展开**BizTalk 组 [服务器名称]**中的节点[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
   
-2.  右键单击**接收端口**，然后单击**新建**，选择**单向接收端口。**  
+2.  右键单击 **接收端口**, ，然后单击 **新建**, ，选择 **单向接收端口。**  
   
-3.  有关**名称**，输入**TxnReceivePort1**，然后单击**确定**。  
+3.  有关 **名称**, ，输入 **TxnReceivePort1**, ，然后单击 **确定**。  
   
-4.  右键单击**接收位置**节点，单击**新建**，然后选择**单向接收位置**。  
+4.  右键单击 **接收位置** 节点，单击 **新建**, ，然后选择 **单向接收位置**。  
   
-5.  在**选择接收端口**对话框中，选择**TxnReceivePort1**，然后单击**确定**。  
+5.  在**选择接收端口** 对话框中，选择 **TxnReceivePort1**, ，然后单击 **确定**。  
   
-6.  在**接收位置属性**对话框中，在**常规**选项卡上，输入**TxnReceiveLocation1**为**名称**。 确保**接收端口**标签显示**TxnReceivePort1**。  
+6.  在 **接收位置属性** 对话框中，在 **常规** 选项卡上，输入 **TxnReceiveLocation1** 为 **名称**。 确保 **接收端口** 标签显示 **TxnReceivePort1**。  
   
-7.  在**类型**下拉列表框中，在**传输**帧中，选择**TransactionalAdapter。**  
+7.  在**类型** 下拉列表框中，在 **传输** 帧中，选择 **TransactionalAdapter。**  
   
-8.  在**接收 * * * 管道**框中，确保**PassThruReceive**选择。 将其他属性保留为默认设置。  
+8.  在 **接收 * * * 管道** 框中，确保 **PassThruReceive** 选择。 将其他属性保留为默认设置。  
   
-9. 单击**配置**按钮旁边**类型**下拉框。 这会显示特定于此适配器的对话框。 指定下列各项，正如你看到的适当情况下，然后单击**确定**。  
+9. 单击 **配置** 按钮旁边 **类型** 下拉框。 这会显示特定于此适配器的对话框。 指定下列各项，正如你看到的适当情况下，然后单击 **确定**。  
   
     |属性|设置|  
     |--------------|-------------|  
@@ -157,27 +157,27 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="create-a-send-port-and-send-handler-that-use-the-adapter"></a>创建使用此适配器的发送端口和发送处理程序  
   
-1.  与**BizTalk 应用程序 1**仍已展开的节点，右键单击**发送端口**，然后单击**新建**，然后选择**静态单向发送端口**.  
+1.  与 **BizTalk 应用程序 1** 仍已展开的节点，右键单击 **发送端口**, ，然后单击 **新建**, ，然后选择 **静态单向发送端口**。  
   
-2.  在**名称**字段中，输入**TxnSendPort1**。  
+2.  在 **名称** 字段中，输入 **TxnSendPort1**。  
   
-3.  在**传输**框架，在**类型**下拉列表中，选择**TransactionalAdapter**`.`  
+3.  在 **传输** 帧，在 **类型** 下拉列表中，选择**TransactionalAdapter**`.`  
   
-4.  在**发送管道**框中，确保**PassThruTransmit**选择。  
+4.  在 **发送管道** 框中，确保 **PassThruTransmit** 选择。  
   
-5.  单击**配置**按钮旁边**传输**下拉列表。在显示的对话框中指定以下正如你看到的适当情况下，然后单击**确定**。  
+5.  单击 **配置** 按钮旁边 **传输** 下拉列表。在显示的对话框中指定以下正如你看到的适当情况下，然后单击 **确定**。  
   
     |属性|设置|  
     |--------------|-------------|  
-    |Cookie|包含一部分的 uri 中的唯一在此处输入值如接收位置的名称的实例： **TxnSendPort1**。|  
-    |连接字符串|用于连接 Northwind 数据库并进行身份验证的 SQL 数据库连接字符串。 它将很可能是用于配置的同一**TxnReceiveLocation1**接收位置。|  
-    |存储过程|若要轮询数据库-获取执行的存储的过程名称**sp_txnProc**。 将消息提供给，BizTalk 正文作为字符串参数调用存储过程@Data。 例如，用户将在此情况下更高版本的存储的过程使用的名称配置**sp_txnProc**。 该适配器在运行时将对数据库执行等效的这种调用。<br /><br /> exec sp_txnProc @Data ="BizTalk 消息的内容"|  
+    |Cookie|包含一部分的 uri 中的唯一在此处输入值如接收位置的名称的实例︰ **TxnSendPort1**。|  
+    |连接字符串|用于连接 Northwind 数据库并进行身份验证的 SQL 数据库连接字符串。 它将很可能是用于配置的同一 **TxnReceiveLocation1** 接收位置。|  
+    |存储过程|若要轮询数据库-获取执行的存储的过程名称 **sp_txnProc**。 将消息提供给，BizTalk 正文作为字符串参数调用存储过程@Data。 例如，用户将在此情况下更高版本的存储的过程使用的名称配置**sp_txnProc**。 该适配器在运行时将对数据库执行等效的这种调用。<br /><br /> exec sp_txnProc @Data ="BizTalk 消息的内容"|  
   
-6.  在左侧的导航窗格中，单击**筛选器**。  
+6.  在左侧的导航窗格中，单击 **筛选器**。  
   
 7.  在筛选器表达式编辑器中，输入以下表达式以便设置针对此发送端口的订阅，接收由 TxnReceivePort1 接收端口接收到的任何消息。  
   
-     请输入这些值：**BTS。ReceivePortName = = TxnReceivePort1**  
+     请输入这些值︰**BTS。ReceivePortName = = TxnReceivePort1**  
   
     1.  `(property)`  **BTS。ReceivePortName**  
   
@@ -185,15 +185,15 @@ ms.lasthandoff: 12/01/2017
   
     3.  `(value)`  **TxnReceivePort1**  
   
-8.  对其余的适配器属性中使用的默认值，然后选择**确定**。  
+8.  对其余的适配器属性中使用的默认值，然后选择 **确定**。  
   
 ## <a name="run-the-sample"></a>运行示例  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft SQL Server 2008 R2**，选择**SQL Server Management Studio**。  
+1.  单击 **启动**, ，指向 **所有程序**, ，指向 **Microsoft SQL Server 2008 R2**, ，选择 **SQL Server Management Studio**。  
   
-2.  在**连接到服务器**对话框框中，请确保**服务器类型**设置为**数据库引擎**，并输入凭据进行身份验证到数据库服务器，然后选择**连接**。  
+2.  在 **连接到服务器** 对话框框中，请确保 **服务器类型** 设置为 **数据库引擎**, ，并输入凭据以进行身份验证到数据库服务器，然后选择 **连接**。  
   
-3.  选择**新查询**工具栏按钮，再粘贴到新的查询窗口，以插入测试表、 测试数据和测试以下存储过程到 Northwind 数据库。 选择**执行**工具栏按钮。  
+3.  选择 **新查询** 工具栏按钮，再粘贴到新的查询窗口，以插入测试表、 测试数据和测试以下存储过程到 Northwind 数据库。 选择 **执行** 工具栏按钮。  
   
     ```  
     use [Northwind]  

@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3ca5a539fdaea9026a7c18cae6f076e72df9efe2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>第 4 课： 构建和部署程序集
 在本课程中，你可以生成和部署此项目以生成该程序集包含你在前面的课程中创建的架构。 此任务可确保到目前为止创建的工作中没有任何编译错误。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  验证**生成成功**将显示在屏幕左下角。 在编译过程中，你可能会看到某些状态消息。 当处理 SWIFT 架构时，这些消息是正常的。 如果出现任何错误，请单击工具，然后单击 BizTalk Server 管理来打开 BizTalk Server 管理控制台。 使用 BizTalk 管理控制台中事件查看器的运行状况和活动跟踪 (HAT) 功能，若要更正你的错误并重新生成。  
   
-2.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到  **\<*驱动器*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development** 文件夹，并确认**SWIFTSchemas.dll**文件是否存在于此文件夹。  
+2.  使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到 **\<*驱动器*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development**文件夹，并确认**SWIFTSchemas.dll**文件是否存在于此文件夹。  
   
 3.  在解决方案资源管理器，右键单击**SWIFTSchemas**，然后单击**部署**。  
   

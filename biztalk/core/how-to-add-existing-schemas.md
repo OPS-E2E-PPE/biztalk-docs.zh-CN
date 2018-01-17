@@ -13,21 +13,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b6ba8f76bd0f306c23ce270217ac3b2aca8b9ccc
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-add-existing-schemas"></a>如何添加现有架构
 有时想要将现有架构添加到现有 BizTalk 项目。 本主题描述所需的步骤。  
   
 ### <a name="to-add-an-existing-schema"></a>若要添加现有架构  
   
-1.  在**解决方案资源管理器**，选择你想要添加现有架构的 BizTalk 项目。  
+1.  在 **解决方案资源管理器**, ，选择你想要添加现有架构的 BizTalk 项目。  
   
 2.  在“项目”菜单上，单击“添加现有项”。  
   
-3.  在**添加现有项- \<* BizTalk ProjectName*\>* * 对话框中，浏览到架构的位置，选择的架构，然后单击**打开**.  
+3.  在**添加现有项- \< *BizTalk ProjectName* \>** 对话框中，浏览到架构的位置，选择的架构，然后单击**打开**.  
   
      现有架构添加到 BizTalk 项目，但未自动打开 BizTalk 编辑器中。  
   

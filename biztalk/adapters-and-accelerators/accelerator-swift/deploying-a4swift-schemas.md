@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: bc89b26d0eee970268d5e9084cd0827d3100fd7b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-schemas"></a>部署 A4SWIFT 架构
 你必须部署你想要交换的 SWIFT 消息的架构。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  启动 Visual Studio 命令提示符。  
   
-8.  在 Visual Studio 命令提示符处，浏览到  **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT * *。  
+8.  在 Visual Studio 命令提示符处，浏览到 **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT**。  
   
 9. 在命令提示符处，键入**sn-k key.snk**，然后按 ENTER。 确保在命令提示符窗口中，该值指示密钥对已写入 key.snk 显示一条消息。  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 12. 在右窗格中**属性页**对话框中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （） 按钮。  
   
-13. 在**程序集密钥文件**对话框中，浏览到  **\<*驱动器*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]，单击**key.snk**，然后单击**打开**。  
+13. 在**程序集密钥文件**对话框中，浏览到 **\<*驱动器*\>: files\microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]，单击**key.snk**，然后单击**打开**。  
   
 14. 在**属性页**对话框中，单击**确定**以保存所做的更改。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在解决方案资源管理器的 Visual Studio 中，打开你的项目。  
   
-2.  右键单击你的项目，指向**添加**，然后单击**现有项**。  
+2.  右键单击你的项目，指向 **添加**, ，然后单击 **现有项**。  
   
 3.  在**添加现有项**对话框中，在:\\**程序 Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT-SRG\<版本\>\Base 架构**。 选择**SWIFT 基 Types.xsd**和**SWIFT 常见数据 Types.xsd**架构，，然后单击**添加**。  
   
@@ -82,6 +82,6 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  A4SWIFT 将添加你的项目的架构，如解决方案资源管理器中所示。  
   
-6.  在解决方案资源管理器，右键单击项目名称，然后单击**生成**。  
+6.  在解决方案资源管理器，右键单击项目名称，然后单击 **生成**。  
   
-7.  在解决方案资源管理器，右键单击项目名称，然后单击**部署**。
+7.  在解决方案资源管理器，右键单击项目名称，然后单击 **部署**。

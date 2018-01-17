@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f3bdbd4845ddc1dff698274492f33ec69d659188
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="approving-a-message"></a>批准一条消息
 本部分描述如何批准已修复且已验证的消息。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>_Approver * *。  
+3.  在文档窗口中，在**文档库**，单击 **\<*部门名称*\>_Approver**。  
   
 4.  在\<部门名称\>_Approver 窗口中，单击**收件箱**。  
   
@@ -55,7 +55,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  如果您拒绝消息更改，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将消息返回至工作流的第一个阶段 （创建或修复） 并将重置修复工作流。  
   
-11. 在用于选择要对表单进行签名的证书数字签名向导页上，选择你想要使用表单 （为审批者创建的证书） 进行签名的证书。 单击**查看证书**如果你想要验证是否正在使用正确的签名。 单击 **“下一步”**。  
+11. 在用于选择要对表单进行签名的证书数字签名向导页上，选择你想要使用表单 （为审批者创建的证书） 进行签名的证书。 单击**查看证书**如果你想要验证是否正在使用正确的签名。 单击“下一步” 。  
   
     > [!NOTE]
     >  若要验证其有效性的数字签名，请单击**数字签名**上**工具**菜单上，单击你想要验证，，然后单击的数字签名**查看签名的表单**. 你还可以看到哪些角色具有签名的表单以前 （窗体进行签名被人猜出一次每个工作流） 通过单击**数字签名**上**工具**菜单。 如果你需要添加为此角色的另一个签名，因此在执行[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]管理控制台。  

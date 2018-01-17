@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6d341a7f03c70e1ddcd242d7804b162338798e94
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>消息修复和新提交疑难解答
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>无法提交修复后的消息，如果未部署信封架构  
@@ -74,7 +74,7 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-change-the-login-account-for-the-web-application-that-the-a4swiftmrsr-web-service-runs-under"></a>若要更改的 web 应用程序下运行 A4SWIFT_MRSR web 服务的登录帐户  
   
-1.  单击**启动**，指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
+1.  单击 **启动**, ，指向 **所有程序**, ，指向 **管理工具**, ，然后单击 **Internet Information Services (IIS) Manager**。  
   
 2.  在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）**节点，**应用程序池**节点和**Web站点**节点。 在网站节点下展开**Default Web Site**节点。  
   

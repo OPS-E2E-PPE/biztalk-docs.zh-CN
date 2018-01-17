@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意 XPath 属性处理程序 （BizTalk Server 示例）
 任意 XPath 属性处理程序（[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 示例）演示了如何编写自定义管道组件以升级提交到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 XML 文档中的特定属性。 您可以使用示例中包含的功能创建自定义常规组装器和拆装器组件以评估 XPath 表达式。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 11/28/2017
   
  下表显示了本示例中的文件及其用途说明：  
   
-|文件|Description|  
+|檔案|Description|  
 |---------------|-----------------|  
 |ArbitraryXPathPropertyHandler.sln|自定义管道组件解决方案文件。|  
 |ArbitraryXPathPropertyHandler.resX|资源文件。|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
   
-1.  在命令窗口中，将目录更改 (**cd**) 的以下文件夹：  
+1.  在命令窗口中，将目录更改 (**cd**) 的以下文件夹︰  
   
      *\<示例路径\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 11/28/2017
   
  任意 XPath 表达式是复杂表达式，例如“//element-name//*[local-name()='element-name' and position()=2]”。 事实上，如果架构的 XPath 正文或某个 XPath 属性中使用了非规范化 XPath，则您将收到一个运行时错误，指出 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不支持非规范化 XPath 表达式。 支持任意 XPath 表达式的解决方案是，创建支持任意 XPath 正文和任意 XPath 属性表达式的自定义拆装器和组装器组件。  
   
- 此示例使用下面的步骤序列中的自定义管道组件时**IComponent.Execute**实现：  
+ 此示例使用下面的步骤序列中的自定义管道组件时 **IComponent.Execute** 实现︰  
   
 1.  通过输入消息正文部分流创建虚拟可查找的流。 （因为输入消息可能较大并且该流可能不可查找，它应具有较小的内存需求量并且能够更改流位置。）  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  为输入消息获取一个架构或基于设计时指定的架构。  
   
-4.  将流加载到的实例**System.Xml.XmlDocument**。  
+4.  将流加载到的实例 **System.Xml.XmlDocument**。  
   
 5.  演练升级属性和可分辨字段并将其升级到或写入传出消息的消息上下文。  
   

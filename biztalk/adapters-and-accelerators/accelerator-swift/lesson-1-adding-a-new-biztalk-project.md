@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 942ef00948920cd19e2a34e0be52d61a8f492786
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-1-adding-a-new-biztalk-project"></a>第 1 课： 添加新的 BizTalk 项目
 在本课程中，你将新的 BizTalk 项目添加到你的解决方案。 在整个教程使用此项目中创建架构。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  在**名称**框中，键入**SWIFTSchemas**作为项目名称。  
   
-5.  在**解决方案**框中，选择**将添加到解决方案**。 在**位置**框中，确保  **\<*驱动器*:\>选择 \labs\SWIFTProject**。  
+5.  在**解决方案**框中，选择**将添加到解决方案**。 在**位置**框中，确保 **\<*驱动器*:\>\labs\SWIFTProject**选择。  
   
 6.  单击**确定**创建新项目。  
   

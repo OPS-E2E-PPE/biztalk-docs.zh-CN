@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5c0e2a18b1cdba47c999150b5bc52c0b016aec61
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a>迁移和升级故障排除
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a>程序集需要升级之前未部署  
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 -   Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas  
   
--   Microsoft.Solutions.FinancialServices.SWIFT.MrsrService。  
+-   Microsoft.Solutions.FinancialServices.SWIFT.MrsrService.  
   
  在升级之后，重新部署这些程序集 (使用**BTSTask.exe**) 按相反的顺序。  
   
@@ -68,12 +68,12 @@ ms.lasthandoff: 11/28/2017
   
 1.  右键单击服务文件夹，单击**属性**，然后单击**安全**选项卡。  
   
-2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称\>*\A4SWIFT 管理员**，然后单击**确定**。  
+2.  在组或用户名称窗格中的服务属性对话框中，单击**添加**，输入 ***\<服务器名称\>* \A4SWIFT 管理员**，然后单击**确定**.  
   
     > [!NOTE]
-    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名\>*\A4SWIFT 管理员**。  
+    >  如果 A4SWIFT Administrators 组的域组，请输入 ***\<域名\>* \A4SWIFT 管理员**。  
   
-3.  重复步骤 2  ***\<服务器名称\>*\A4SWIFT 用户**，或  **\<*域名*\>\A4SWIFT 用户 * * 如果 A4SWIFT 用户组是域组。  
+3.  重复步骤 2 ***\<服务器名称\>* \A4SWIFT 用户**，或 **\<*域名*\>\A4SWIFT 用户**如果A4SWIFT 用户组是域组。  
   
 4.  在组或用户名称窗格中，选择**A4SWIFT 管理员**。 在权限窗格中，选择**允许**为**完全控制**。  
   

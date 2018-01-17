@@ -23,10 +23,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64be28927a49a1fc751870785ff3fc3f55a36cb1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>导入证书使用 CertWizard 实用工具
 本主题介绍如何使用 CertWizard 实用程序，分步的命令行实用程序中提供导入证书[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 本主题说明如何导入私钥、公钥和根钥， 还说明了用于配置证书的开关。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-private-key"></a>导入私钥  
   
-1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1.  单击 **启动**, ，单击 **运行**, ，类型 **cmd**, ，然后单击 **确定**。  
   
 2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK** 。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-public-key"></a>导入公钥  
   
-1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1.  单击 **启动**, ，单击 **运行**, ，类型 **cmd**, ，然后单击 **确定**。  
   
 2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK**。  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-import-a-root-key"></a>导入根钥  
   
-1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1.  单击 **启动**, ，单击 **运行**, ，类型 **cmd**, ，然后单击 **确定**。  
   
 2.  在命令提示符下，将移到[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK 文件夹使用 MS-DOS **CD**命令，例如，键入**cd C:\Program Files\Microsoft BizTalk\<版本\>快捷键RosettaNet\SDK**。  
   
