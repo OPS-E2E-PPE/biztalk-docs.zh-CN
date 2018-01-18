@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 163b06706652b1f65b9a76e3feea8911a2ca4c88
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-update-an-assembly"></a>如何更新的程序集
 本主题介绍如何更新的程序集和程序集部署到使用 Visual Studio 2010 的应用程序的版本。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]  
 >  如果你使用新版本进行更新程序集，你不需要重新启动应用程序。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。  
   
 ## <a name="updating-an-assembly"></a>更新程序集  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**程序集信息**对话框框中，为指定值**程序集版本**字段以增加程序集版本号。 应该只递增主版本号或次版本号。 主版本号是序列中的第一个数字 (***n***.0.0.0); 的次版本号是序列中的第二个数字 (0。***n*** .0.0)。 BizTalk Server 将无法识别序列，如 0.0 中更高版本的版本编号更改。 ***n*** .0 或 0.0.0。***n***.  
   
-5.  单击**确定**关闭**程序集信息**对话框。  
+5.  单击 **确定** 关闭 **程序集信息** 对话框。  
   
 6.  保存项目。  
   
