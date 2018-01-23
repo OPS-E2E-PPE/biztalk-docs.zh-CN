@@ -1,7 +1,8 @@
 ---
-title: "如何删除不完整的活动实例 |Microsoft 文档"
+title: "删除不完整的活动实例 |Microsoft 文档"
+description: "执行自定义的 RemoveDanglingInstances SQL 脚本，以从 BizTalk Server 中的 BAM 主导入数据库中删除不完整的实例"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 01/18/2018
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,13 +13,13 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 542d92b838b1638a2d018c6325d4c40467545c42
+ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="how-to-remove-incomplete-activity-instances"></a>如何删除不完整的活动实例
+# <a name="remove-incomplete-activity-instances"></a>删除不完整的活动实例
 在部署 BAM 定义文件时，系统会在 BAM 主导入数据库中为在该定义文件中定义的每个活动创建五个表。 这些表分别为：  
   
 -   bam_`ActivityName`_Active  
@@ -37,45 +38,41 @@ ms.lasthandoff: 11/28/2017
   
  在跟踪使用继续符的活动期间，可能存在其活动在 BAM 数据库中尚保持未完成状态的实例。 您可以使用本主题结尾处的存储过程创建脚本创建将清除不完整记录的存储过程。  
   
- 若要创建该存储过程，请通过使用 SQL Server Management 复制该脚本并对 BAM 主导入数据库执行它。 该脚本将生成名为的存储的过程**RemoveDanglingInstances**数据库中。  
+ 若要创建该存储过程，请通过使用 SQL Server Management 复制该脚本并对 BAM 主导入数据库执行它。 该脚本将生成名为的存储的过程 **RemoveDanglingInstances** 数据库中。  
   
-### <a name="to-create-the-removedanglinginstances-stored-procedure"></a>创建 RemoveDanglingInstances 存储过程  
+## <a name="create-the-removedanglinginstances-stored-procedure"></a>创建 RemoveDanglingInstances 存储过程  
   
-1.  单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 SP1**或**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
+1.  打开**SQL Server Management Studio**，并连接到 SQL server。
   
-2.  在**连接到服务器**对话框中，选择 SQL server 和适当的身份验证方法，，然后单击**连接**。  
+2.  展开服务器名称，展开 **数据库**, ，然后选择 BAM 主导入数据库。  
   
-3.  展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。  
+3.  单击 **“新建查询”**。  
   
-4.  单击 **“新建查询”**。  
+4.  复制存储的过程创建脚本，并将其粘贴到查询窗格。  
   
-5.  复制存储过程创建脚本并将其粘贴到适当的窗格中。  
+5.  **执行**脚本。 生成的存储的过程可以查看存储过程的列表中，为 dbo。RemoveDanglingInstances。  
   
-6.  单击**执行**以运行该脚本。 生成的存储的过程可以查看存储过程的列表中，为 dbo。RemoveDanglingInstances。  
+## <a name="remove-incomplete-activity-instances"></a>删除不完整的活动实例  
   
-### <a name="to-remove-incomplete-activity-instances"></a>删除不完整的活动实例  
+1.  打开**SQL Server Management Studio**，并连接到 SQL server。
   
-1.  单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 SP1**或**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
+2.  展开服务器名称，展开 **数据库**, ，然后选择 BAM 主导入数据库。  
   
-2.  在**连接到服务器**对话框中，选择 SQL server 和适当的身份验证方法，，然后单击**连接**。  
+3.  单击 **“新建查询”**。  
   
-3.  展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。  
+4.  在查询窗格中，键入`exec RemoveDanglingInstances`和正在执行的删除操作的相应参数。 例如，若要删除所有未完成活动实例的采购订单，键入 `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`。  
   
-4.  单击 **“新建查询”**。  
-  
-5.  在右窗格中，键入`exec RemoveDanglingInstances`和正在执行的删除操作的相应参数。 例如，若要删除所有未完成活动实例的采购订单，键入`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`。  
-  
-6.  单击**执行**以运行该脚本。  
+5.  **执行**脚本。  
   
 ## <a name="removedanglinginstances-usage-examples"></a>RemoveDanglingInstances 用法示例  
- 存储的过程可以收到四个参数：  
+ 存储的过程可以收到四个参数︰  
   
 |参数|Description|  
 |---------------|-----------------|  
-|@ActivityName nvarchar(128)|指定要删除的不完整活动实例的名称。|  
-|@ActivityId nvarchar(128)|（可选）指定存储过程只删除具有指定实例标识符的虚实例。|  
-|@DateThreshold日期时间|（可选）指定删除活动表中早于（不是等于和早于，只是早于）给定日期的所有活动实例。|  
-|@NewTableExtensionnvarchar (30)|（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。<br /><br /> 生成的表将是：<br /><br /> bam_ActivityName_Active_\<扩展\><br /><br /> bam_ActivityName_ActiveRelationships_\<扩展\><br /><br /> bam_ActivityName_Continuations_\<扩展\><br /><br /> 不完整实例将会移到新的表中，而不是从数据库中清除。<br /><br /> 如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。 **重要说明：**如果表已存在，存储的过程假定其架构匹配，就好像是将使用。 如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。|  
+|@ActivityName nvarchar （128)|指定要删除的不完整活动实例的名称。|  
+|@ActivityId nvarchar （128)|（可选）指定存储过程只删除具有指定实例标识符的虚实例。|  
+|@DateThreshold 日期时间|（可选）指定删除活动表中早于（不是等于和早于，只是早于）给定日期的所有活动实例。|  
+|@NewTableExtension nvarchar (30)|（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。<br /><br /> 生成的表将是：<br /><br /> bam_ActivityName_Active_\<Extension\><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension\><br /><br /> bam_ActivityName_Continuations_\<Extension\><br /><br /> 不完整实例将会移到新的表中，而不是从数据库中清除。<br /><br /> 如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。 **重要说明︰**  如果表已存在，存储的过程假定其架构匹配，就好像是将使用。 如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
@@ -235,6 +232,9 @@ AS
     COMMIT TRAN      
 GO  
 ```  
-  
+
+## <a name="another-method-of-resolving-incomplete-instances"></a>解决未完成的实例的另一种方法
+您也可以通过使用 SQL 查询来解决从 BAMPrimaryImport 数据库的未完成的活动实例。 请参阅[解决未完成的活动实例](how-to-resolve-incomplete-activity-instances.md)。
+
 ## <a name="see-also"></a>另请参阅  
  [管理 BAM 数据库](../core/managing-bam-databases.md)
