@@ -7,34 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- certificates, HTTP adapters
-- HTTP adapters, client certificates
-- HTTP adapters, POST requests
-- HTTP adapters, GET requests
-- HTTP adapters, batching
-- HTTP adapters, suspending failed requests
-- HTTP adapters, chunked encoding
-- messages, batching
-- HTTP GET requests, about HTTP GET requests
-- HTTP GET requests, process flow
-- batching, messages
-- HTTP adapters, process flow
-- HTTP POST requests
-- HTTP adapters, status codes
-- chuncked encoding, receive adapters
-- HTTP GET requests
-- batching, HTTP adapters
 ms.assetid: 9008833c-5a02-4fb4-a43e-09ca28a21eff
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ed0c24184d35a836435db3a09202551b7b50ddd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f2f309a129c66d11d019b28b8ffc2b51d68e93d
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="http-receive-adapter"></a>HTTP 接收适配器
 HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制台配置的独特 URL。  
@@ -62,7 +44,7 @@ HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制�
   
 -   如果 HTTP 接收适配器接收到 HTTP GET 请求，该适配器会使用问号 (?) 作为分隔符，将传入 URI 字符串拆分为两部分。  
   
--   URI 字符串，问号分隔符之前, 的部分的第一部分复制到**InboundTransportLocation**消息上下文属性。 **InboundTransportLocation**属性唯一地标识 BizTalk Server 从中接收消息的位置。 引擎使用此属性来确定应为该消息运行哪个接收位置。  
+-   URI 字符串，问号分隔符之前, 的部分的第一部分复制到 **InboundTransportLocation** 消息上下文属性。 **InboundTransportLocation** 属性唯一地标识 BizTalk Server 从中接收消息的位置。 引擎使用此属性来确定应为该消息运行哪个接收位置。  
   
 -   HTTP 适配器获取问号分隔符后面的其余 URI 字符串，然后将其解码并复制到 BizTalk 消息正文部分中。  
   
@@ -84,7 +66,7 @@ HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制�
   
      HTTP 接收适配器将执行如下操作：  
   
-     设置**InboundTransportLocation**等于 /vroot/BTSHTTPReceive.dll，且等于 LocationID BizTalk 消息对象正文部分的消息上下文属性 = 1。  
+     设置 **InboundTransportLocation** 等于 /vroot/BTSHTTPReceive.dll，且等于 LocationID BizTalk 消息对象正文部分的消息上下文属性 = 1。  
   
 2.  假设收到客户端的以下 HTTP GET 请求：  
   
@@ -94,7 +76,7 @@ HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制�
   
      HTTP 接收适配器将执行如下操作：  
   
-     设置**InboundTransportLocation**属性等于 /vroot/BTSHTTPReceive.dll 和 BizTalk 消息对象主体部件等于 LocationID = 1 MyParam = 我的值。  
+     设置 **InboundTransportLocation** 属性等于 /vroot/BTSHTTPReceive.dll 和 BizTalk 消息对象主体部件等于 LocationID = 1 MyParam = 我的值。  
   
 3.  假设收到客户端的以下 HTTP GET 请求：  
   
@@ -102,7 +84,7 @@ HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制�
     http://servername/vroot/BTSHTTPReceive.dll  
     ```  
   
-     通过 HTTP 执行的操作接收适配器是 +，如下所示：  
+     通过 HTTP 执行的操作接收适配器是 +，如下所示︰  
   
      拒绝该请求，因为 HTTP GET 请求的格式不正确。  
   
@@ -110,11 +92,11 @@ HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制�
  HTTP 接收适配器将消息分批提交给服务器。 用于向服务器提交消息的批的大小可在 HTTP 适配器接收处理程序中进行配置。  
   
 ## <a name="http-receive-adapter-support-for-suspending-failed-requests"></a>HTTP 接收适配器对挂起失败请求的支持  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP 接收适配器已配置设置，**挂起失败的请求**、 控制如果仍然失败，因为接收管道失败，映射失败，入站的处理，如何操作使用 HTTP 请求或路由失败。 该设置有两个可能的值：  
+ BizTalk Server HTTP 接收适配器已配置设置，**挂起失败的请求**、 控制如果仍然失败，因为接收管道失败，映射失败，入站的处理，如何操作使用 HTTP 请求或路由失败。 该设置有两个可能的值：  
   
--   **如果为 false。** 这是默认设置。 HTTP 接收适配器将放弃由于接收管道故障、映射故障或路由故障而导致入站处理失败的消息。 另外，将向客户端发送错误状态代码 401 或 500。 这是相同的行为，因为 HTTP 接收中的适配器[!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)]。  
+-   **如果为 false。** 这是默认设置。 HTTP 接收适配器将放弃由于接收管道故障、映射故障或路由故障而导致入站处理失败的消息。 另外，将向客户端发送错误状态代码 401 或 500。 
   
--   **为 true。** HTTP 接收适配器将挂起由于接收管道故障、映射故障或路由故障而导致入站处理失败的消息。 对于单向接收端口**已接受**状态代码 202 发送到客户端。 对于双向接收端口**错误**状态代码 500 发送到客户端。  
+-   **为 true。** HTTP 接收适配器将挂起由于接收管道故障、映射故障或路由故障而导致入站处理失败的消息。 对于单向接收端口 **已接受** 状态代码 202 发送到客户端。 对于双向接收端口 **错误** 状态代码 500 发送到客户端。  
   
 ## <a name="chunked-encoding-support-for-the-http-receive-adapter"></a>HTTP 接收适配器的 Chunked 编码支持  
  HTTP 接收适配器可接受带有使用 Chunked 编码的正文消息的 HTTP 请求。 当正文大小超过 4 KB 时，接收适配器将使用 Chunked 编码来发送响应消息。 分块编码可关闭通过设置中所述的 DWORD 注册表项[HTTP 适配器配置和优化参数](../core/http-adapter-configuration-and-tuning-parameters.md)  
@@ -136,7 +118,7 @@ SourcePartyEvidence = <certificate thumbprint>
   
 -   **401 访问被拒绝。** HTTP 请求被要求验证的接收端口接收，但对该消息的安全检查失败。 例如，参与方未解析或消息未解密。  
   
--   **500 内部服务器错误。** 处理 HTTP 请求时的常见错误。 消息未挂起 BizTalk server，除非配置设置**挂起失败的请求**设置为**True**对于双向收到端口。  
+-   **500 内部服务器错误。** 处理 HTTP 请求时的常见错误。 消息未挂起 BizTalk server，除非配置设置 **挂起失败的请求** 设置为 **True** 对于双向收到端口。  
   
 ## <a name="see-also"></a>另请参阅  
  [HTTP 适配器](../core/http-adapter.md)

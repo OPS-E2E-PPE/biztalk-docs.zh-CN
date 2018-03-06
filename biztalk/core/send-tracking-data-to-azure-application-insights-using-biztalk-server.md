@@ -9,15 +9,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b3ff6cb9-44d0-46cd-9b4f-a346365afb7b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a6fe0c50527f51b599bca5f51c7b8ed8fb7313e
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: f5ddd60f72955c7196edfc8bf2310b73226d2abe
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>发送到 Azure Application Insights 或事件中心跟踪数据的 BizTalk
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 11/21/2017
 
 使用这些 Azure 服务从接收端口、 发送端口和业务流程跟踪您的实例。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必要條件
 * 创建的新实例[Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource)。 BizTalk Server 使用**检测密钥**进行身份验证。
 * 创建[Azure 事件中心命名空间和事件中心](https://docs.microsoft.com/azure/event-hubs/event-hubs-create)。 BizTalk Server 使用的 SAS （命名空间级别） 或事件中心级别策略进行身份验证。
-* 安装[功能包 2](https://aka.ms/bts2016fp2)上你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* 安装[功能包 2](https://aka.ms/bts2016fp2)上你 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 ## <a name="enable-analytics-for-your-environment"></a>启用针对你的环境分析
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 11/21/2017
 
     ![启用针对你的环境分析](../core/media/send-tracking-data-to-azure.png)
 
-5. 单击“确定”保存更改。 
+5. 选择 **确定** 以保存所做的更改。 
 
 在启用之后，[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]已准备好将数据传输到 Azure 资源。 接下来，启用在端口和业务流程的分析。 
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/21/2017
     
     ![业务流程的跟踪数据](../core/media/orchestrationsettingsapplicationinsight.PNG)
 
-3. 单击“确定”保存更改。
+3. 选择 **确定** 以保存所做的更改。
 4. 重新启动跟踪主机实例，并确认启动 BizTalk 应用程序。
 
 > [!TIP]
@@ -85,7 +85,7 @@ ms.lasthandoff: 11/21/2017
 4. 返回到你的 Application Insights 资源，并选择**分析**。 在**用法**，选择**运行**。 示例查询将执行，并且结果将显示在图表中。  
 
 > [!TIP]
-> Azure 的 Application Insights 是一个功能强大的工具。 资源可帮助你在 Application Insights 在编写查询[Application Insights 中的分析](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)，甚至可以开始[什么是 Application Insights？](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)。
+> Azure 的 Application Insights 是一个功能强大的工具。 资源可帮助你在 Application Insights 在编写查询[Application Insights 中的分析](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)，甚至可以开始[什么是 Application Insights？](https://docs.microsoft.com/azure/application-insights/app-insights-overview)。
 
 #### <a name="use-event-hubs"></a>使用事件中心
 后将数据发送到事件中心，有几种方法要查看的数据。 许多事件中心用户正在使用事件中心捕获来流式处理数据加载到 Azure。 其目的是为你焦点上的数据处理，而不是在数据捕获。 [事件中心捕获](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-overview)介绍它的工作原理，以及如何将其设置。

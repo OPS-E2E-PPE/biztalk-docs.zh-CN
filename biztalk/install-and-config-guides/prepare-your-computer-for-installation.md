@@ -1,22 +1,22 @@
 ---
 title: "准备计算机以安装 |Microsoft 文档"
 ms.custom: 
-ms.date: 2016-03-15
+ms.date: 03/15/2016
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 53df7a2f-638b-4921-a97f-736760248526
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a493c1a0ef38e9be5e229ff82f8773211adfe765
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26c2e732073ccc787cad32984720d7fac422a8cb
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="prepare-your-computer-for-installation"></a>准备计算机以进行安装
 本主题将介绍如何通过安装和配置所有必备软件，然后再创建帐户并设置权限来准备你的计算机。  
@@ -33,12 +33,12 @@ ms.lasthandoff: 09/20/2017
   
 -   **Windows 7**：单击“开始”。 在“搜索”文本框中，键入 **Windows Update**。  
   
--   **Windows 8.1、[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] 和 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2**：单击键盘上的 Windows 按钮，并键入“Windows 更新”。 在搜索结果中，单击“Windows 更新”。  
+-   **Windows 8.1、 Windows Server 2012 和 Windows Server 2012 R2**： 单击 Windows 按钮上的键盘和类型**Windows Update**。 在搜索结果中，单击“Windows 更新”。  
   
  安装更新之后，你可能需要重新启动计算机。  
   
 ##  <a name="BKMK_IIS"></a> 启用 Internet Information Services  
- Microsoft Internet 信息服务 (IIS) 为许多 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能提供了 Web 应用程序基础结构，包括：  
+ Microsoft Internet 信息服务 (IIS) 提供的 Web 应用程序基础结构许多 BizTalk Server 功能，包括：  
   
 -   HTTP 适配器  
   
@@ -50,118 +50,44 @@ ms.lasthandoff: 09/20/2017
   
 -   BAM 门户  
   
-#### <a name="install-iis-75-on-windows-7-sp1"></a>在 Windows 7 SP1 上安装 IIS 7.5  
+#### <a name="install-iis"></a>安装 IIS
+
+针对特定的安装步骤，请参阅： 
+
+[安装 IIS （Windows 8 和 Windows Server 2012）](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012)
+
+[安装 IIS （Windows 7 和 Windows Vista）](https://docs.microsoft.com/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
+
+
+安装 IIS 时，除了默认选中的选项，还检查下列项目：  
   
-1.  选择“开始”。 在“搜索”文本框中，键入“程序和功能”，并将其打开。  
+- “Web 管理工具”：还需检查：  
   
-2.  选择“打开或关闭 Windows 功能”。  
+    - IIS 6 管理兼容性：  
   
-3.  选择“Internet Information Services”并展开“Internet Information Services”。 除了已默认选中的选项之外，还应选中以下选项：  
+        - IIS 6 管理控制台  
   
-    -   “Web 管理工具”：还需检查：  
+        - IIS 元数据库和 IIS 6 配置兼容性  
   
-        -   IIS 6 管理兼容性：  
+    - IIS 管理控制台  
   
-            -   IIS 6 管理控制台  
+- **万维网服务**：展开“安全性”，还需选择：  
   
-            -   IIS 元数据库和 IIS 6 配置兼容性  
+    - 基本身份验证  
   
-        -   IIS 管理控制台  
+    - Windows 身份验证  
+
+同时还应考虑下列事项：  
   
-    -   **万维网服务**：展开“安全性”，还需选择：  
+- **.Net framework 3.5 功能**:.NET Framework 4.5 和.NET Framework 3.5 可以用于开发.Net 应用程序涉及 BizTalk 适配器包。 通常情况下， **.NET Framework 4.5 功能**已安装。 如果你将使用.NET Framework 3.5 然后在此计算机上创建应用程序**.Net Framework 3.5 功能**也可以安装。  
   
-        -   基本身份验证  
+- **消息队列**：如果使用 MSMQ 适配器，可以通过选中“消息队列”创建本地 MSMQ 存储。  
   
-        -   Windows 身份验证  
+- **SMTP 服务器**：如果使用 SMTP 适配器，可以通过选中“SMTP 服务器”创建本地 SMTP 服务器。  
   
-4.  选择“确定”。 完成时，单击“关闭”。  
+- **Windows Identity Foundation 3.5**： 使用 CSOM 安装选项时，必须将 Windows Identity Foundation (WIF) 由 SharePoint 适配器。 [附录 b： 安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)介绍 SharePoint 适配器的 CSOM 安装选项。    
   
- [http://go.microsoft.com/fwlink/p/?LinkId=257033](http://go.microsoft.com/fwlink/p/?LinkId=257033) 还列出了在 Windows 7 上启用 IIS 的步骤。  
-  
-#### <a name="install-iis-80-on-windows-8"></a>在 Windows 8 上安装 IIS 8.0  
-  
-1.  选择键盘上的 Windows 按钮。 键入“程序和功能”，然后选择“设置”。 在“结果”窗口中，选择“程序和功能”。  
-  
-2.  选择“打开或关闭 Windows 功能”。  
-  
-3.  选择“Internet Information Services”并展开“Internet Information Services”。 除了已默认选中的选项之外，还应选择以下选项：  
-  
-    -   “Web 管理工具”：还需检查：  
-  
-        -   IIS 6 管理兼容性：  
-  
-            -   IIS 6 管理控制台  
-  
-            -   IIS 元数据库和 IIS 6 配置兼容性  
-  
-        -   IIS 管理控制台  
-  
-    -   **万维网服务**：展开“安全性”，还需检查：  
-  
-        -   基本身份验证  
-  
-        -   Windows 身份验证  
-  
-4.  单击“确定”。 完成时，单击“关闭”。  
-  
- [http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) 还列出了在 Windows 8 上启用 IIS 的步骤。  
-  
-#### <a name="install-iis-80-on-windows-server-2012"></a>在 Windows Server 2012 上安装 IIS 8.0  
-  
-1.  打开“服务器管理器”，然后单击左侧窗格中的“仪表板”。  
-  
-2.  单击“添加角色和功能”。 也可从右上角的“管理”菜单打开“添加角色和功能”。  
-  
-3.  在“开始之前”窗口上，单击“下一步”。  
-  
-4.  在“安装类型”窗口上，单击“基于角色或基于功能的安装”，再单击“下一步”。  
-  
-5.  在“服务器选择” 窗口上，依次单击“从服务器池中选择服务器”、所需的服务器，然后单击“下一步”。  
-  
-     “服务器选择”窗口中会列出“服务器管理器”中使用“添加服务器”添加的服务器。 默认情况下，本地服务器处于选中状态。 [将服务器添加到服务器管理器](http://go.microsoft.com/fwlink/p/?LinkID=241353)中列出了在 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] 上使用“添加服务器”的步骤。  
-  
-6.  在“服务器角色”窗口上，单击“Web 服务器(IIS)”。 如果系统提示，单击“添加功能”，然后单击“下一步”。  
-  
-7.  在“功能”窗口上，保留启用的默认选项，同时考虑以下选项：  
-  
-     **.Net Framework 3.5 Features**：[!INCLUDE[dotnet45](../includes/dotnet45-md.md)] 和 [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] 可用于开发包含 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] 的 .Net 应用程序。 通常，“[!INCLUDE[dotnet45](../includes/dotnet45-md.md)] 功能”已经安装。 如果将使用 [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] 在此计算机上创建应用程序，也可以安装 **.Net Framework 3.5 功能**。  
-  
-     **消息队列**：如果使用 MSMQ 适配器，可以通过选中“消息队列”创建本地 MSMQ 存储。  
-  
-     **SMTP 服务器**：如果使用 SMTP 适配器，可以通过选中“SMTP 服务器”创建本地 SMTP 服务器。  
-  
-     **Windows Identity Foundation 3.5**：使用 CSOM 安装选项时，[!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 适配器需要 Windows Identity Foundation (WIF)。 [附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) 描述了 [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 适配器的 CSOM 安装选项。  
-  
-     单击“下一步”。  
-  
-8.  在“Web 服务器角色(IIS)”窗口上，单击“下一步”。  
-  
-9. 在“角色服务”窗口上（位于“Web 服务器角色(IIS)”下），单击以下选项：  
-  
-     **安全**：除了默认选项之外，还应单击：  
-  
-    -   基本身份验证  
-  
-    -   Windows 身份验证  
-  
-     **应用程序开发**：默认选项足够满足 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的需求。 如果此计算机上还承载了其他基于 IIS 的应用程序，请选中所需的角色。  
-  
-     **管理工具**：除了默认选项之外，还应单击：  
-  
-    -   IIS 管理控制台  
-  
-    -   IIS 6 管理兼容性：  
-  
-        -   IIS 6 元数据库兼容性  
-  
-        -   IIS 6 管理控制台  
-  
-     单击“下一步”。  
-  
-10. 在“确认”窗口上，单击“安装”。 完成时，单击“关闭”。  
-  
- [http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) 还列出了在 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] 上启用 IIS 的步骤。  
-  
+ 
 ##  <a name="BKMK_XLS"></a> 安装 Microsoft Office Excel  
   
 1.  运行 Microsoft Office 安装程序。  
@@ -176,9 +102,9 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 仅支持 32 位版本的 Microsoft Office。  
+-   BizTalk Server 仅支持 32 位版本的 Microsoft Office。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的业务活动监视 (BAM) 需要 Microsoft Office Excel。 可以使用 BAM Office Excel 工作簿来定义要监视的业务流程。 还可以使用 BAM Excel 工作簿定义业务用户查看 BAM 所收集的数据的方式。  
+-   Microsoft Office Excel 需要由业务活动监视 (BAM) BizTalk Server 中。 可以使用 BAM Office Excel 工作簿来定义要监视的业务流程。 还可以使用 BAM Excel 工作簿定义业务用户查看 BAM 所收集的数据的方式。  
   
 -   若要成功将 BAM.xla 加载到 Excel 中，请在“Office 共享功能”下安装“Visual Basic for Applications”。 否则，可能会收到“此工作簿已丢失了其 VBA 项目、ActiveX 控件以及其他任何与可编程性相关的功能”错误。  
   
@@ -188,21 +114,21 @@ ms.lasthandoff: 09/20/2017
   
 2.  接受许可协议，然后单击“下一步”。  
   
-3.  在“要安装的可选功能”中，选择所需的选项，然后选择“安装”。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不需要任何可选功能。  
+3.  在“要安装的可选功能”中，选择所需的选项，然后选择“安装”。 BizTalk Server 不需要任何可选功能。  
   
 4.  在“完成”页面上，关闭窗口或单击“启动”打开 Visual Studio。  
   
  **补充说明**  
   
--   如果安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 之前安装 Visual Studio，然后升级到 Visual Studio Team Explorer，可能需要通过“控制面板” / “程序”选项对 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装进行修复。  
+-   如果在安装 BizTalk Server 中之前, 安装 Visual Studio，然后升级到 Visual Studio 团队资源管理器，你可能需要修复从 BizTalk Server 安装**控制面板** / **程序**选项。  
   
--   Visual Studio 会自动安装 Microsoft SQL Server Express；[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 并不使用。 最好卸载 Microsoft SQL Server Express。  
+-   Visual Studio 会自动安装 Microsoft SQL Server Express；而 BizTalk Server 并不使用它。 最好卸载 Microsoft SQL Server Express。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 开发工具基于 Visual Studio。 在安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**开发人员工具和 SDK** 之前，至少必须安装 Visual Studio 的 Microsoft Visual C#® .NET 组件。  
+-   BizTalk Server 开发工具基于 Visual Studio。 至少，你必须安装 Visual Studio 的 Microsoft Visual C#®.NET 组件，然后再安装 BizTalk Server**开发人员工具和 SDK**。  
   
--   如果要在不需要进行任何应用程序开发或调试的生产计算机（仅限运行时）上安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则不需要 Visual Studio。  
+-   Visual Studio 是*不*所需安装 BizTalk Server 上 （仅运行时） 的生产计算机的任何应用程序开发或调试时是必需的。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时需要 [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]。 如果已安装 Windows Communication Foundation (WCF) 适配器或 WCF 侦听器，则需要安装 .NET Framework 3.0。  
+-   BizTalk Server 运行时需要.NET Framework 4.5。 如果已安装 Windows Communication Foundation (WCF) 适配器或 WCF 侦听器，则需要安装 .NET Framework 3.0。  
   
 ##  <a name="BKMK_SQL"></a> 安装 SQL Server  
  安装 [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)  
@@ -211,7 +137,7 @@ ms.lasthandoff: 09/20/2017
   
  安装 [SQL Server 2014](http://msdn.microsoft.com/library/bb500469\(v=sql.120\).aspx)  
   
- 当你安装 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 时，请选择以下功能：  
+ 在安装 SQL Server 时，选择以下功能：  
   
 -   数据库引擎服务  
   
@@ -239,13 +165,13 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 支持所有区分大小写和不区分大小写的 SQL Server 排序规则，二进制排序规则例外。 不支持二进制排序规则。  
+-   BizTalk Server 支持所有区分大小写和不区分大小写的 SQL Server 排序规则，二进制排序规则例外。 不支持二进制排序规则。  
   
 -   为了获得最佳性能，Microsoft 建议使用 SQL Server Enterprise Edition。 请参阅 [SQL Server 2008 R2 版本](http://msdn.microsoft.com/library/cc645993\(v=sql.105\).aspx)、[SQL Server 2012 版本](http://msdn.microsoft.com/library/cc645993\(v=sql.110\).aspx)或 [SQL Server 2014 版本](http://msdn.microsoft.com/library/cc645993\(v=sql.120\).aspx)。  
   
 -   支持 Service Pack 和 Windows Update，并且应进行安装。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 位于单独的计算机上时，分布式事务协调器 (MS DTC) 处理计算机之间的事务。 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn 功能不支持 MSDTC 事务。 不支持 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn 功能。  
+-   当 BizTalk Server 和 SQL Server 在不同计算机上时，分布式事务处理协调器 (MS DTC) 处理计算机之间的事务。 SQL Server AlwaysOn 功能不支持 MSDTC 事务。 不支持 SQL Server AlwaysOn 功能。  
   
 ##  <a name="BKMK_MQSeries"></a> 安装 MQSeries 必备组件  
  **MQSeries 适配器**：自动随 BizTalk Server 一起安装。  
@@ -273,7 +199,7 @@ ms.lasthandoff: 09/20/2017
      MQ 版本 8 支持随附在[主机集成服务器累积更新 3](https://support.microsoft.com/kb/3019572)中。  
   
 > [!NOTE]
->  如果未列出特定的 WebSphere MQ 版本，如 MQ 5.x，则不支持其与此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 版本一起使用。  
+>  如果未列出特定的 WebSphere MQ 版本，如 MQ 5.x，那么它不支持与此 BizTalk Server 版本。  
   
  **补充说明**  
   
@@ -281,7 +207,7 @@ ms.lasthandoff: 09/20/2017
   
 -   如果在非 Windows 计算机上安装 IBM WebSphere MQ，可将 **MQSAgent COM+ 应用程序** (MQSConfigWiz.exe) 和 **MQSeries Server for Windows** 安装在同一台计算机上。 如果在 Windows 计算机上安装 IBM WebSphere MQ，则不使用也不需要 **MQSAgent COM+ 应用程序**和 **MQSeries Server for Windows** 程序。  
   
-     **MQSConfigWiz.exe** 包含在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装文件中。  
+     **MQSConfigWiz.exe**包含在 BizTalk Server 安装文件。  
   
      **MQSeries Server for Windows** 不是 Microsoft 程序，必须通过 IBM WebSphere MQ 程序获得。  
   
@@ -290,7 +216,7 @@ ms.lasthandoff: 09/20/2017
 -   IBM WebSphere 不是 Microsoft 产品，也不受 Microsoft 支持。 Microsoft 不保证此程序的适用性。 有关 IBM WebSphere MQ 的详细信息，请参阅 www.ibm.com。  
   
 ##  <a name="BKMK_BAMAlerts"></a> BAM 警报  
- [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] 或 [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] 的 BAM 警报使用 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 的数据库邮件功能。 [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] 的 BAM 警报使用 SQL Notification Services。 在安装或配置 BAM 警报之前，你必须先在 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 中配置 Notification Services 或数据库邮件功能。  
+ 使用 SQL Server 2012 和更高版本的 BAM 警报使用 SQL Server 中的数据库邮件。 使用 SQL Server 2008 R2 和较旧版本的 BAM 警报使用 SQL Notification Services。 安装或配置 BAM 警报之前, 你必须对 SQL Server 中配置 Notification Services 或数据库邮件。  
   
 ###  <a name="BKMK_DBMail"></a> 使用 SQL Server 2012/2014 的 BAM 警报  
  配置 [SQL Server 2012 数据库邮件](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx)。  
@@ -299,7 +225,7 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   数据库邮件使用 SMTP 服务器发送 BAM 警报。 SMTP 服务器可以本地安装在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上，也可以安装在其他 IIS 服务器上。 [附录 D：创建 SMTP 服务器](../install-and-config-guides/appendix-d-create-the-smtp-server.md)中列出了安装和配置 SMTP 服务器的步骤。  
+-   数据库邮件使用 SMTP 服务器发送 BAM 警报。 在 BizTalk Server 或另一台 IIS 服务器上，可以本地安装 SMTP 服务器。 [附录 D：创建 SMTP 服务器](../install-and-config-guides/appendix-d-create-the-smtp-server.md)中列出了安装和配置 SMTP 服务器的步骤。  
   
 ###  <a name="BKMK_SSNS"></a> 使用 SQL Server 2008 R2 的 BAM 警报 – 安装 SQL Server 2005 Notification Services  
   
@@ -327,27 +253,27 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   不需要配置 SQL Notification Services；只需将其安装在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上。  
+-   SQL Notification Services 不需要进行配置;仅安装在 BizTalk Server。  
   
 ##  <a name="BKMK_WIF"></a> Windows Identity Foundation  
   
 |||  
 |-|-|  
-|[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] 8.1、[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] 和 [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2|Windows Identity Foundation 作为“打开或关闭 Windows 功能”中的功能包括在操作系统中。|  
-|[!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] SP1|可在下面的地址下载[Windows Identity Foundation](http://www.microsoft.com/download/details.aspx?id=17331) HYPERLINK "http://www.microsoft.com/download/details.aspx?id=17331"。|  
+|Windows 8.1、 Windows Server 2012 和 Windows Server 2012 R2|Windows Identity Foundation 作为“打开或关闭 Windows 功能”中的功能包括在操作系统中。|  
+|Windows Vista SP1|可在下面的地址下载[Windows Identity Foundation](http://www.microsoft.com/download/details.aspx?id=17331) HYPERLINK "http://www.microsoft.com/download/details.aspx?id=17331"。|  
   
  **补充说明**  
   
--   在与 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 客户端对象模型 (CSOM) 结合使用时，[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 适配器或 SharePoint Online 需要 Windows Identity Foundation (WIF)。 具体来说：  
+-   Windows Identity Foundation (WIF) 是 SharePoint 适配器或 SharePoint Online 使用与 SharePoint 客户端对象模型 (CSOM) 时所必需的。 具体来说：  
   
     |安装选项|需要 WIF|  
     |-------------------------|------------------|  
-    |使用 CSOM 的 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 适配器|是|  
+    |使用 CSOM SharePoint 适配器|是|  
     |使用 CSOM 的 SharePoint Online|是|  
-    |[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 适配器 Web Service（不赞成使用）|是|  
-    |无 SharePoint|是|  
+    |SharePoint 适配器 Web 服务 （已弃用）|否|  
+    |无 SharePoint|否|  
   
--   [附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)提供了有关 [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 安装选项的特殊信息。  
+-   [附录 b： 安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)SharePoint 安装选项提供特定信息。  
   
 ##  <a name="BKMK_WSS"></a> 安装和配置 Microsoft SharePoint  
  安装 [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)  
@@ -360,7 +286,7 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   如果你要安装 SharePoint，你必须先完成该安装，然后才能继续安装剩余的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 必备软件。  
+-   如果要安装 SharePoint，则必须在继续执行剩余的 BizTalk Server 先决条件之前执行操作。  
   
 -   安装和配置 SharePoint 包括下列过程：  
   
@@ -376,7 +302,7 @@ ms.lasthandoff: 09/20/2017
   
 ##  <a name="BKMK_SharedMem"></a> 禁用 Shared Memory 协议  
   
-1.  打开“SQL Server 配置管理器”。  
+1.  打开 **SQL Server 配置管理器**。  
   
 2.  在“SQL Server 配置管理器”中，展开“SQL Server 网络配置”，然后选择“MSSQLSERVER 的协议”。  
   
@@ -388,12 +314,12 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   在任务繁忙时（例如，客户端从同一计算机访问 SQL Server 时），SQL Server Shared Memory 协议可能会降低 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 性能。 可以通过在“SQL Server 网络配置”中禁用 Shared Memory 网络协议来解决此行为。  
+-   在任务繁忙时（例如，客户端从同一计算机访问 SQL Server 时），SQL Server Shared Memory 协议可能会降低 BizTalk Server 性能。 可以通过在“SQL Server 网络配置”中禁用 Shared Memory 网络协议来解决此行为。  
   
 -   ReplaceThisText  
   
 ##  <a name="BKMK_LocalAdmin"></a> 加入本地管理员组  
- **[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]**[Windows Server 2012: How to Add an Account to a Local Administrator Group](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)（Windows Server 2012：如何将帐户添加到本地管理员组）  
+ **Windows Server 2012** : [Windows Server 2012： 如何将帐户添加到本地管理员组](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)  
   
  **Windows 8.1**：若要在 Windows 8 上打开“本地用户和组”，请单击键盘上的 Windows 按钮，然后键入“组”。 在“搜索”窗口中，单击“设置”。 在“结果”窗口中，单击“编辑本地用户和组”。 单击“组”，然后双击“管理员”以添加帐户。  
   
@@ -401,13 +327,13 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   你必须是本地 Administrators 组的成员才能安装和配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+-   你必须是本地 Administrators 组的成员，才能安装和配置 BizTalk Server。  
   
 ##  <a name="BKMK_AppLog"></a> 配置应用程序事件日志  
   
 1.  打开“事件查看器”：  
   
-     **[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]**：单击键盘上的 Windows 按钮，并键入“事件查看器”。 在“结果”窗口中，单击“事件查看器”。  
+     **Windows Server 2012** ： 单击 Windows 按钮上的键盘和类型**事件查看器**。 在“结果”窗口中，单击“事件查看器”。  
   
      **Windows 8.1**：单击键盘上的 Windows 按钮，并键入“事件查看器”。 在“搜索”窗口中，单击“设置”。 在“结果”窗口中，单击“查看事件日志”。  
   
@@ -427,7 +353,7 @@ ms.lasthandoff: 09/20/2017
   
  **补充说明**  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装程序会将事件记录保留在应用程序事件日志中。 日志中所需的空间量可能会超出其限制，具体取决于所安装的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能。 如果在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装期间应用程序事件日志出现空间不足，安装将失败。 更改“应用程序事件日志”设置可防止此故障。  
+-   BizTalk Server 安装程序会将事件记录保留在应用程序事件日志中。 日志中所需的空间量可能会超出其限制，具体取决于已安装的 BizTalk Server 功能。 如果在 BizTalk Server 安装期间应用程序事件日志空间不足，安装将失败。 更改“应用程序事件日志”设置可防止此故障。  
   
 ## <a name="next"></a>Next  
  [选择 BizTalk Server 功能和组件](http://msdn.microsoft.com/library/b8c43fcf-9e5c-48ba-830b-13a5177e30f0)  

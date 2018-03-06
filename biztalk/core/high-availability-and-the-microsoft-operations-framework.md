@@ -7,35 +7,26 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- high availability, managing
-- service management functions (SMFs)
-- service continuity management
-- jobs, scheduling
-- MOF, high availability
-- change management
-- MOF, process model
-- high availability, MOF
 ms.assetid: 54d8bae3-b241-4371-b8fc-a9cbdca6b495
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1a06bdadb026617dc55ed40d03e0344584111a0c
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性和 Microsoft Operations Framework
-将 Microsoft Operations Framework (MOF) 流程模型应用于计划和实施高度可用的 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案，可帮助您确保在版本生命周期的不同阶段具有适当的流程。 通过查看在所有生命周期阶段其中高可用性的表面，你可以安装、 维护和故障排除的更方便您环境中的可用性问题。  
+将 Microsoft Operations Framework (MOF) 进程模型应用于的规划和实现高度可用的 Microsoft BizTalk Server 解决方案可帮助你确保在发布生命周期的不同阶段具有适当的过程。 通过提前查看所有生命周期阶段在高可用性的表面，你可以安装、 维护和故障排除的更方便您环境中的可用性问题。  
   
  本部分包含有关 MOF 进程必须要考虑高可用性任务的信息。  
   
 ## <a name="microsoft-operations-framework-process-model"></a>Microsoft Operations Framework 进程模型  
- Microsoft Operations Framework (MOF) 提供使组织能够实现任务关键型系统可靠性、 可用性、 可支持性和可管理性的 Microsoft 产品和技术的指导。 MOF 提供操作指导的白皮书，操作指南、 评估工具、 最佳实践、 案例研究、 模板、 支持工具和服务的形式。 本指南解决与复杂、 分布式和异类 IT 环境相关的人员、 流程、 技术和管理问题。 有关 Microsoft Operations Framework 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=31988](http://go.microsoft.com/fwlink/?LinkId=31988)。  
+ [Microsoft Operations Framework (MOF)](https://technet.microsoft.com/solutionaccelerators/dd320379.aspx)提供使组织能够实现任务关键型系统可靠性、 可用性、 可支持性和可管理性的 Microsoft 产品和技术的指导. MOF 提供操作指导的白皮书，操作指南、 评估工具、 最佳实践、 案例研究、 模板、 支持工具和服务的形式。 本指南解决与复杂、 分布式和异类 IT 环境相关的人员、 流程、 技术和管理问题。 
   
- MOF 过程模型使公司到：  
+ MOF 过程模型使公司到︰  
   
 -   跨服务解决方案，从而简化一致的 IT 服务管理。  
   
@@ -55,11 +46,9 @@ ms.lasthandoff: 12/01/2017
 ### <a name="change-management"></a>更改管理  
  更改管理负责技术、 系统、 应用程序、 硬件、 工具、 文档和进程中的更改，也会更改在角色和职责。  
   
- 在更改管理过程中，属于设计您的 BizTalk Server 实现，您可以执行以下操作：  
+ 在更改管理过程中，属于设计您的 BizTalk Server 实现，您可以执行以下操作︰  
   
 -   确定与你的合作伙伴或客户的服务级别协议是否需要特定级别的可用性、 运行时间、 和负载处理功能。  
-  
--   如果要从升级[!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)]或[!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)]到 BizTalk Server 中，你必须确定是否将满足你现有的硬件，BizTalk Server 的最低硬件要求和服务级别协议的需求。  
   
 -   确定你的业务需求的 BizTalk Server 数据库的最佳群集配置。 运行时进程写入到 BizTalk 管理数据库、 MessageBox 数据库、 跟踪 Analysis Services 数据库、 BAM 分析数据库、 BAM 星型架构数据库、 BAM 主导入数据库和 BAM 存档数据库。 因此，这些数据库是特别重要，如果灾难发生，并且确定群集的数据库时，必须具有更高的优先级。 仅用户或工具写入其他数据库。 对于 MessageBox 数据库中，你可以考虑尽量减少所需的硬件的主动/主动/主动/被动四台服务器群集。  
   
@@ -72,7 +61,7 @@ ms.lasthandoff: 12/01/2017
 ### <a name="configuration-management"></a>配置管理  
  配置管理负责标识、 控制和跟踪软件、 硬件、 文档、 进程、 过程和受控制的更改管理 IT 环境的所有其他组件的所有版本。  
   
- 在配置管理过程中，你必须创建如何实现高度可用的解决方案的详细的计划[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 你必须记录你所花费的创建你的解决方案的步骤。 在高级别的步骤如下：  
+ 在配置管理过程中，你必须创建如何为 BizTalk Server 实现高可用性解决方案的详细的计划。 你必须记录你所花费的创建你的解决方案的步骤。 在高级别的步骤如下︰  
   
 -   域控制器创建的域组和将在你的 BizTalk 服务器环境中使用的帐户。  
   
@@ -82,7 +71,7 @@ ms.lasthandoff: 12/01/2017
   
 -   BizTalk Server 管理员配置的主密钥服务器群集。  
   
--   BizTalk Server 管理员安装和配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]处理，接收和发送服务器上。  
+-   BizTalk Server 管理员上安装和配置 BizTalk Server 处理，接收和发送方服务器。  
   
 -   BizTalk Server 管理员创建主机，并提供高可用性或增加容量，或两者的相应服务器上安装主机实例。  
   
@@ -103,7 +92,7 @@ ms.lasthandoff: 12/01/2017
 ### <a name="service-level-management"></a>服务级别管理  
  服务级别管理旨在维护并持续改进 IT 服务，通过协商和监视服务级别要求的常量周期的质量。 成功的服务级别管理函数导致的服务、 更高级别的客户工作效率和理想情况下，单击提供服务的总体成本的减少的质量中的改进。  
   
- 在服务级别管理过程中，您可以执行以下操作：  
+ 在服务级别管理过程中，您可以执行以下操作︰  
   
 -   评估当前环境满足您的服务级别协议要求的方式。  
   
@@ -114,7 +103,7 @@ ms.lasthandoff: 12/01/2017
 ### <a name="availability-management"></a>可用性管理  
  可用性管理单个目标是确保你的客户可以使用特定的 IT 服务，只要它们希望。  
   
- 可用性管理过程，你可以建立通知 IT 人员，以便他们可以修复或更换硬件尽可能快地发生硬件故障时的机制和服务器负载时通知 IT 人员的机制超过特定阈值。  
+ 可用性管理过程，您可以建立通知 IT 人员，以便他们可以修复或更换硬件尽可能快地发生硬件故障时的机制和服务器负载大于特定阈值时通知 IT 人员的机制。  
   
 ### <a name="service-continuity-management"></a>服务连续性管理  
  服务连续性管理功能的目的是确保指定的 IT 服务，如果常规可用性解决方案失败在向客户提供了值。  
