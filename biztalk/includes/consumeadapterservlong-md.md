@@ -1,1 +1,1 @@
-<span data-ttu-id="abb96-101">使用 Adapter Service BizTalk 项目加载项</span><span class="sxs-lookup"><span data-stu-id="abb96-101">Consume Adapter Service BizTalk Project Add-in</span></span>
+<span data-ttu-id="312e9-101">使用 Adapter Service BizTalk 项目加载项</span><span class="sxs-lookup"><span data-stu-id="312e9-101">Consume Adapter Service BizTalk Project Add-in</span></span>
