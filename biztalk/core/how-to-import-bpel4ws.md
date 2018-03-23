@@ -1,11 +1,11 @@
 ---
-title: "如何导入 BPEL4WS |Microsoft 文档"
-ms.custom: 
+title: 如何导入 BPEL4WS |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL4WS, restrictions
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - BPEL4WS, orchestrations
 - orchestrations, BPEL4WS
 ms.assetid: 3626fcb9-8e7d-4812-a0c9-bde6e7954ec8
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-import-bpel4ws"></a>如何导入 BPEL4WS
 可以从现有的 BPEL4WS 进行导入以创建业务流程。  
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [如何导出 BPEL4WS](../core/how-to-export-bpel4ws.md)   
- [XLANG-s 的 BPEL4WS 类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [XLANG-s 到 BPEL4WS 的类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)

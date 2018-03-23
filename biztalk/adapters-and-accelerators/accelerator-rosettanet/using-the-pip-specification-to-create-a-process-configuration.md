@@ -1,11 +1,11 @@
 ---
-title: "使用 PIP 规范创建过程配置 |Microsoft 文档"
-ms.custom: 
+title: 使用 PIP 规范创建过程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, PIP settings
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - process configuration, PIPs
 - PIPs, process configuration
 ms.assetid: 64f0f5fb-f880-4ef1-95d7-2575b8d0bcff
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 777f32e5a9e035f6009f5450eb48ae8286159f05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a>使用 PIP 规范创建过程配置
 从 RosettaNet 组织 （从 RosettaNet.org) 下载伙伴接口过程 (PIP) 后，下载包包括 PIP 规范文档。 本文档包含要在创建中的过程配置时使用哪些设置的指导[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理控制台。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |不可否认性的源和内容|表 3-3： 业务活动性能控件|  
 |重试计数|表 3-3： 业务活动性能控件|  
 |执行时间|表 3-3： 业务活动性能控件|  
-|Name|表 3-3： 业务活动性能控件 （活动名称）|  
+|名称|表 3-3： 业务活动性能控件 （活动名称）|  
 |类型|（从 PIP 规格-供以后使用未引用）|  
 |说明 （发起方和响应选项卡）|表 3-4: PIP 商业文档|  
 |名称 （发起方和响应选项卡）|表 3-4: PIP 商业文档|  
@@ -55,4 +55,4 @@ ms.lasthandoff: 09/20/2017
 |服务分类|表 4-1： 网络组件规范|  
   
 ## <a name="see-also"></a>另请参阅  
- [如何创建或编辑过程配置](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)
+ [如何创建或编辑流程配置](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

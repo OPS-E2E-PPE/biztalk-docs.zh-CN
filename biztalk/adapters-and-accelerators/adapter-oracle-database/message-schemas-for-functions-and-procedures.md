@@ -1,25 +1,25 @@
 ---
-title: "消息函数和过程的架构 |Microsoft 文档"
-ms.custom: 
+title: 消息函数和过程的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functions and procedures, message structure of
 - functions and procedures, message actions of
 ms.assetid: 90b77b15-a4c6-487d-a09e-a078ceddfd1e
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6fc8c09499914dd075fe6a46fbc230a4bed104e0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a>函数和过程的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]曲面 Oracle 数据库函数和存储的过程作为操作。 本部分介绍的消息结构和用于调用函数和过程的操作。  
@@ -69,16 +69,16 @@ Stored Procedure Overload 2:
   
 |消息|操作|示例|  
 |-------------|------------|-------------|  
-|存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Procedure/ [SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT|  
-|存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Procedure/ [SP_NAME] / 响应|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/response|  
-|函数请求|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Function/ [FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID|  
-|函数响应|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Function/ [FN_NAME] / 响应|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID/response|  
-|打包的存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Package/ [PACKAGE_NAME] / [SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT|  
-|打包存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Package/ [PACKAGE_NAME] / [SP_NAME] / 响应|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT/response|  
-|封装的函数请求|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Package/ [PACKAGE_NAME] / [FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID|  
-|封装的函数响应|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Package/ [PACKAGE_NAME] / [FN_NAME] / 响应|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID/response|  
-|重载的存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Procedure/ [SP_NAME] / [重载]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1|  
-|重载存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/ [架构] /Procedure/ [SP_NAME] / [重载] / 响应|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1/response|  
+|存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT|  
+|存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/response|  
+|函数请求|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID|  
+|函数响应|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function/[FN_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID/response|  
+|打包的存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT|  
+|打包存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT/response|  
+|封装的函数请求|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID|  
+|封装的函数响应|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[FN_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID/response|  
+|重载的存储的过程请求|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/[OVERLOAD]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1|  
+|重载存储的过程响应|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/[OVERLOAD]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1/response|  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   

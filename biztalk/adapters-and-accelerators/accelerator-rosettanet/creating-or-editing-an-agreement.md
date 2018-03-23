@@ -1,11 +1,11 @@
 ---
-title: "创建或编辑协议 |Microsoft 文档"
-ms.custom: 
+title: 创建或编辑协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, about agreements
@@ -17,22 +17,22 @@ helpviewer_keywords:
 - modifying, agreements
 - agreements, trading partners
 ms.assetid: 4bbe4b57-d6ec-4448-9c80-2aecd98e0dc7
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1ea033770504b0e0024a831e0ad8d8727603046e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="creating-or-editing-an-agreement"></a>创建或编辑协议
 本主题介绍如何创建或编辑贸易合作伙伴协议。 贸易合作伙伴协议对贸易合作伙伴双方之间的关系做出规定，其中包括身份、合作伙伴接口流程 (PIP)、操作 URL、信号 URL、同步 URL 及相关协议。  
   
- 贸易合作伙伴协议包括有关流程配置、本组织、合作伙伴及协议的设置。 所有这些设置都是协议所必需的。 您可以根据 RosettaNet PIP 或自定义架构创建流程配置，但是，您必须创建此配置。 你还必须定义本组织和伙伴组织。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]不支持未知的参与方之间的消息交换。  
+ 贸易合作伙伴协议包括有关流程配置、本组织、合作伙伴及协议的设置。 所有这些设置都是协议所必需的。 您可以根据 RosettaNet PIP 或自定义架构创建流程配置，但是，您必须创建此配置。 你还必须定义本组织和伙伴组织。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 不支持未知的参与方之间的消息交换。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 根据所有这些设置处理和验证消息。 例如，对于 CIDX 消息，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 根据 RosettaNet 实现框架 (RNIF) 版本（仅限 1.1）、0A1 协议（仅限非 0A1）和 `Is Single Action` 属性（仅限单一操作)来执行验证。 仅当设置为"1.1"，为"非 0A1"0A1 协议 RNIF 版本，将验证 CIDX 消息和`Is Single Action`属性`True`。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]此外将验证任何协议属性是与过程配置文件设置一致。 例如，它将验证您是否已设置`Standard`"CIDX"，该配置文件的属性和协议 0A1 协议属性设置为"非 0A1"。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 根据所有这些设置处理和验证消息。 例如，对于 CIDX 消息，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 根据 RosettaNet 实现框架 (RNIF) 版本（仅限 1.1）、0A1 协议（仅限非 0A1）和 `Is Single Action` 属性（仅限单一操作)来执行验证。 仅当设置为"1.1"，为"非 0A1"0A1 协议 RNIF 版本，将验证 CIDX 消息和`Is Single Action`属性`True`。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 此外将验证任何协议属性是与过程配置文件设置一致。 例如，它将验证您是否已设置`Standard`"CIDX"，该配置文件的属性和协议 0A1 协议属性设置为"非 0A1"。  
   
  如果您在活动流程存在时更改协议，则可能产生无法预知的结果。 对协议属性的更改将应用，只要你单击**应用**或**确定**来接受它们，但你无法预测运行进程的哪个阶段。 更改协议后，当前流程中的任何新活动或任何新流程将使用已更改的协议属性。 但是，当您更改协议时，某个正在运行的流程可能已对正在处理的消息使用了先前的协议属性。  
   
@@ -65,8 +65,8 @@ ms.lasthandoff: 11/28/2017
 |**协议**|**编码**|用于将所有部分都编码的协议 (如果**将所有部分都都编码**框是`True`) 或附件 (如果**将所有部分都都都编码**框是`False`)。<br /><br /> 可以是**8 位**， **base 64** （默认值），或**quoted printable**。|  
 |**协议**|**加密算法**|用于对传入或传出消息进行加密的算法。<br /><br /> **从开始[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]和更高版本**，AES 支持将自动包含。 选项包括**RC2 40**， **3DES**， **AES128** （默认值）、 **AES192**，和**AES256**。 <br /><br />有关以前[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]版本中，选项包括**RC2 40** （默认值） 或**3DES**。<br /><br /> 加密算法才能起作用，如果设置了`Is Persistent Confidentiality Required`属性为**负载**或**负载容器**相应的过程配置中。|  
 |**协议**|**加密方向**|系统将加密传入消息或传出消息，或者对二者都加密。<br /><br /> 可以是**入站**，**出站**，或**入站/出站**（默认值）。<br /><br /> 加密方向设置才能起作用，如果设置了`Is Persistent Confidentiality Required`属性为**负载**或**负载容器**相应的过程配置中。|  
-|**自定义属性**|**名称**|自定义属性的名称。<br /><br /> 您可以为每份协议设置自定义属性。 如果您新建了自定义专用流程，那么您可以在处理不同协议时使用这些自定义属性。<br /><br /> 您可以使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 中的 `RuntimeConfig.GetTPACustomConfigValue` 方法，以便从 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置中检索自定义属性。<br /><br /> `Name`属性必须是唯一的且不为空。<br /><br /> 您可以输入以下自定义值：<br /><br /> - **AAR**。 这是“要求接受确认”自定义属性。 此属性仅适用于 RNIF 1.1。 将其设置为**false** （这是不区分大小写） 需要仅接收确认，不接受确认。 如果**AAR**设置为任何非**false**、 然后响应方公共过程必须发送验收确认，和发起程序公共过程应接受确认。 如果将“AAR”设置为“false”，则确认收到后公用流程即完成。<br /><br /> - **HPCC**。 这是本组织合作伙伴分类代码。 此属性仅适用于 RNIF 1.1。 使用此属性可以在传出消息的服务头中将本组织合作伙伴的 GlobalPartnerClassificationCode 元素设置为“值”列中的条目。 此值将覆盖本组织配置中的本组织分类属性。 当本组织可以具有多个分类时，可使用此自定义属性。<br /><br /> - **PPCC**。 这是合作伙伴配置文件分类代码。 此属性仅适用于 RNIF 1.1。 使用此属性可以在传出消息的服务头中将合作伙伴的 GlobalPartnerClassificationCode 元素设置为“值”列中的条目。 此值将覆盖合作伙伴配置中的合作伙伴分类属性。 当合作伙伴可以具有多个分类时，可使用此自定义属性。|  
-|**自定义属性**|**值**|自定义属性的值。|  
+|**自定义属性**|**名称**|自定义属性的名称。<br /><br /> 您可以为每份协议设置自定义属性。 如果您新建了自定义专用流程，那么您可以在处理不同协议时使用这些自定义属性。<br /><br /> 您可以使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 中的 `RuntimeConfig.GetTPACustomConfigValue` 方法，以便从 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置中检索自定义属性。<br /><br /> `Name`属性必须是唯一的且不为空。<br /><br /> 您可以输入以下自定义值：<br /><br /> - **AAR**。 这是“要求接受确认”自定义属性。 此属性仅适用于 RNIF 1.1。 将其设置为**false** （这是不区分大小写） 需要仅接收确认，不接受确认。 如果**AAR**设置为任何非**false**、 然后响应方公共过程必须发送验收确认，和发起程序公共过程应接受确认。 如果将“AAR”设置为“false”，则确认收到后公用流程即完成。<br /><br /> - **HPCC**. 这是本组织合作伙伴分类代码。 此属性仅适用于 RNIF 1.1。 使用此属性可以在传出消息的服务头中将本组织合作伙伴的 GlobalPartnerClassificationCode 元素设置为“值”列中的条目。 此值将覆盖本组织配置中的本组织分类属性。 当本组织可以具有多个分类时，可使用此自定义属性。<br /><br /> - **PPCC**. 这是合作伙伴配置文件分类代码。 此属性仅适用于 RNIF 1.1。 使用此属性可以在传出消息的服务头中将合作伙伴的 GlobalPartnerClassificationCode 元素设置为“值”列中的条目。 此值将覆盖合作伙伴配置中的合作伙伴分类属性。 当合作伙伴可以具有多个分类时，可使用此自定义属性。|  
+|**自定义属性**|**Value**|自定义属性的值。|  
   
 ### <a name="to-create-a-trading-partner-agreement"></a>创建贸易合作伙伴协议  
   
@@ -96,7 +96,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  右键单击你想要编辑，然后单击协议**属性**。  
   
-4.  在 **\<** *协议名称* **\>** 属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
+4.  在**\<***协议名称***\>**属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。 有关这些设置的信息，请参阅上表。  
   
 5.  单击 **“确定”**。  
   

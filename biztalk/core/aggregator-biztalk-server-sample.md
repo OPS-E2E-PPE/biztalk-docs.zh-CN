@@ -1,11 +1,11 @@
 ---
-title: "聚合器 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 聚合器 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - examples, pipelines
 - messages, correlating to orchestrations
 ms.assetid: eb8121df-4f5b-4f36-8228-4b5ad1abfb4e
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="aggregator-biztalk-server-sample"></a>聚合器（BizTalk Server 示例）
 本示例的目的在于使用业务流程和管道建立消息聚合功能。 具体而言，我们将生成一个执行以下操作的业务流程：  
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/28/2017
 |在 Aggregator 文件夹中：<br /><br /> Aggregate.odx|业务流程，该业务流程将相关的消息收集在一起，然后执行发送管道以将它们组装到单个交换中。|  
 |在 Aggregate 文件夹中：<br /><br /> SuspendMessage.odx|业务流程，用于挂起那些无法在聚合业务流程中进行处理的消息。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> FFReceivePipeline.btp|带有平面文件拆装器的接收管道。|  
-|在 PipelinesAndSchemas 文件夹中：<br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|本示例的文档实例。 Instance1.txt 和 Instance2.txt 应添加到目标合作伙伴的交换[http://www.contoso.com](http://www.contoso.com/)时 Instance3.txt 和 Instance4.txt 应添加到目标合作伙伴的交换[http://www.northwind.com](http://www.northwind.com/)。|  
+|在 PipelinesAndSchemas 文件夹中：<br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|本示例的文档实例。 Instance1.txt 和 Instance2.txt 应添加到目标合作伙伴的交换[ http://www.contoso.com ](http://www.contoso.com/)时 Instance3.txt 和 Instance4.txt 应添加到目标合作伙伴的交换[ http://www.northwind.com](http://www.northwind.com/).|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> Invoice.xsd、InvoiceEnvelope.xsd|用于输出交换的文档架构和信封架构。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> PipelinesAndSchemas.btproj|架构和管道的 BizTalk 项目。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> PropertySchema.xsd|本示例的属性架构。|  
@@ -91,9 +91,9 @@ ms.lasthandoff: 11/28/2017
   
 1.  打开位于 PipelinesAndSchemas 文件夹中的 Instance1.txt 和 Instance2.txt 文件以查看其内容。  
   
-     请注意，在两个文件中，DestinationPartnerURI 元素的值均为 http://www.contoso.com。该值用于将这两条消息关联在一起，以便可以将它们添加到同一个交换中。  
+     请注意，在这两文件 DestinationPartnerURI 元素包含的值http://www.contoso.com。该值用于将这两条消息关联在一起，以便可以将它们添加到同一个交换中。  
   
-     与此类似，Instance3.txt 和 Instance4.txt 文件中 DestinationPatnerURI 元素的值均设置为 http://www.northwind.com。  
+     同样 Instance3.txt 和 Instance4.txt 文件具有 DestinationPatnerURI 元素设置为http://www.northwind.com。  
   
      这两条消息将一起添加到另一个交换中。  
   

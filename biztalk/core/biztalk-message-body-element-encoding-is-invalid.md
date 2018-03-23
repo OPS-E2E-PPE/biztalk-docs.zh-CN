@@ -1,30 +1,30 @@
 ---
-title: "BizTalk 消息正文元素编码无效 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 消息正文元素编码无效 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b407e5c3-4655-4b2f-8ecc-30eb080ec47c
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1b1835371e5c042d3ddc46558cbf97970f6bfc6c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk 消息正文元素编码无效
 ## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
+|產品名稱|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|產品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
 |事件 ID|0|  
 |事件源|0|  
 |组件|0|  
@@ -49,11 +49,11 @@ ms.lasthandoff: 11/28/2017
   
 5.  单击 **“属性”**。  
   
-6.  在端口**类型**列表中，选择正确的端口。  
+6.  在端口 **类型** 列表中，选择正确的端口。  
   
-7.  单击**配置**。  
+7.  单击 **配置**。  
   
 8.  在**WCF [***传输类型***] 传输属性**对话框中，单击**消息**选项卡。  
   
-9. 在**出站 WCF 消息正文**部分中，单击**模板-指定通过模板内容**单选按钮。 在**XML**文本框中，BizTalk 正文的格式应为   
-    \<**bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="[xml &#124; base64 &#124; 十六进制 &#124; 字符串]"/** \> （有效值，这些值区分大小写，来进行编码 xml &#124; base64 &#124; 十六进制 &#124; 字符串）
+9. 在 **出站 WCF 消息正文** 部分中，单击 **模板-指定通过模板内容** 单选按钮。 在 **XML** 文本框中，BizTalk 正文的格式应为   
+    \<**bts 消息正文 xmlns ="http://www.microsoft.com/schemas/bts2007"编码 ="[xml&#124;base64&#124;十六进制&#124;字符串]"/** \> (区分大小写，编码的有效值为 xml&#124;base64&#124;十六进制&#124;字符串)

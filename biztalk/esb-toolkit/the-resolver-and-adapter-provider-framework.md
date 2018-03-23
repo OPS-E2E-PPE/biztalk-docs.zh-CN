@@ -1,22 +1,22 @@
 ---
-title: "冲突解决程序和适配器提供程序框架 |Microsoft 文档"
-ms.custom: 
+title: 冲突解决程序和适配器提供程序框架 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb7ea42e-b32c-40a8-b36b-c349f56f6edd
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>冲突解决程序和适配器提供程序框架
 冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态解析终结点，并设置出站适配器属性。 后一个冲突解决程序组件解析终结点 （例如，使用通用、 描述、 发现和集成 [UDDI] 看起来出站 Web 服务终结点），适配器提供程序组件设置的已注册 BizTalk Server 特定属性适配器。 例如，WCF BasicHttp 适配器提供程序负责设置 BizTalk 特定消息终结点将使用特定的 BizTalk adapter; 的 URI 的上下文属性FTP 适配器提供程序负责属性特定于设置 FTP 适配器。  
@@ -36,115 +36,115 @@ ms.lasthandoff: 12/01/2017
   
  连接字符串的示例如下：  
   
--   **静态**  
+-   **STATIC**  
   
-     静态：\\\TransportType=;  
+     STATIC:\\\TransportType=;  
   
-     TransportLocation = http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
+     TransportLocation=http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
   
-     操作 =;  
+     Action=;  
   
-     EndPointConfig =;  
+     EndPointConfig=;  
   
-     JaxRpcResponse = false;  
+     JaxRpcResponse=false;  
   
-     MessageExchangePattern =;  
+     MessageExchangePattern=;  
   
-     TargetNamespace = http://globalbank.esb.dynamicresolution.com/canadianservices/;  
+     TargetNamespace=http://globalbank.esb.dynamicresolution.com/canadianservices/;  
   
-     TransformType =;  
+     TransformType=;  
   
 -   **UDDI**  
   
-     UDDI:\\\serverUrl= http://localhost: 9901/rmengine;  
+     UDDI:\\\serverUrl=http://localhost:9901/rmengine;  
   
-     serviceName = OrderPurchaseWebService;  
+     serviceName=OrderPurchaseWebService;  
   
-     服务提供商处 = Microsoft 做法 ESB  
+     serviceProvider=Microsoft Practices ESB  
   
 -   **XPATH**  
   
      \\\TransportType=;  
   
-     TransportLocation=/*[本地名称()=OrderDoc 和 namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[本地名称()='ID'和namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
+     TransportLocation = /*[本地名称 （) = OrderDoc 和 namespace-uri() =http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[本地名称 （) = 'ID' 和 namespace-uri() =http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
   
-     操作 =;  
+     Action=;  
   
-     EndPointConfig =;  
+     EndPointConfig=;  
   
-     JaxRpcResponse =;  
+     JaxRpcResponse=;  
   
-     MessageExchangePattern =;  
+     MessageExchangePattern=;  
   
-     TargetNamespace=/*[本地名称()=OrderDoc和namespace-uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[本地名称()=customerName和命名空间uri()=http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
+     TargetNamespace=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='customerName' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
   
-     TransformType =;  
+     TransformType=;  
   
 -   **BRE**  
   
      BRE:\\\policy=GetCanadaEndPoint;  
   
-     版本 =;  
+     version=;  
   
-     useMsg =;  
+     useMsg=;  
   
 -   **BRI**  
   
      BRI:\\\policy=ResolveItinerary;  
   
-     版本 =;  
+     version=;  
   
-     useMsg =;  
+     useMsg=;  
   
 -   **路线**  
   
-     路线：\\\name=TwoWayTestItinerary;  
+     ITINERARY:\\\name=TwoWayTestItinerary;  
   
-     版本 =;  
+     version=;  
   
 -   **路线静态**  
   
-     路线静态：\\\name=TwoWayTestItinerary;  
+     ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
   
-     版本 =;  
+     version=;  
   
 -   **LDAP**  
   
      LDAP:\\\TransportType=SMTP;  
   
-     TransportLocation = {邮件}  
+     TransportLocation={mail}  
   
-     筛选器 = (&amp;(objectClass = User) (&#124; (userPrincipalName =yourname@domain.com)));  
+     Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
   
-     SearchRoot =;  
+     SearchRoot=;  
   
-     SearchScope = 子树;  
+     SearchScope=Subtree;  
   
      EndpointConfig = Subject = 路线测试消息到 {邮件}&amp;  
   
-     SMTPAuthenticate = 0&amp;  
+     SMTPAuthenticate=0&amp;  
   
-     SMTPHost = 127.0.0.1&amp;  
+     SMTPHost=127.0.0.1&amp;  
   
-     从 =test@globalbank.com&amp;  
+     From=test@globalbank.com&amp;  
   
-     DeliveryReceipt = false&amp;  
+     DeliveryReceipt=false&amp;  
   
-     MessagePartsAttachments = 0&amp;  
+     MessagePartsAttachments=0&amp;  
   
-     ReadReceipt = false;  
+     ReadReceipt=false;  
   
-     ThrowErrorIfNotFound = false;  
+     ThrowErrorIfNotFound=false;  
   
-     操作 =;  
+     Action=;  
   
-     JaxRpcResponse = false;  
+     JaxRpcResponse=false;  
   
-     MessageExchangePattern =;  
+     MessageExchangePattern=;  
   
-     TargetNamespace =;  
+     TargetNamespace=;  
   
-     TransformType =;  
+     TransformType=;  
   
  并非所有连接字符串中的属性都是必需的。 此外， **EndPointConfig**是一个特殊属性，任何冲突解决程序可以填充并返回。 （可选） 冲突解决程序可以存储特定的 BizTalk 适配器上下文属性，它可以反过来，写入 BizTalk 消息的上下文所对应的名称/值对。  
   

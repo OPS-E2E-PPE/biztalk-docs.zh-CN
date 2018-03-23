@@ -1,32 +1,32 @@
 ---
-title: "为 mySAP Business Suite 的 BizTalk 适配器的体系结构概述 |Microsoft 文档"
-ms.custom: 
+title: 为 mySAP Business Suite 的 BizTalk 适配器的体系结构概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture of SAP adapter
 - adapters, architecture
 ms.assetid: 1b45edb0-2476-427b-b6cd-41e38ed815e0
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d571cdd3beea2bc9a57ec7ad15f865e7ef51e53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>为 mySAP Business Suite 的 BizTalk 适配器的体系结构概述
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]实现[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定，其中包含单个自定义传输绑定元素，可实现与 SAP 系统的通信。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]由包装[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]运行时，向应用程序可以通过公开[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道体系结构。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与通过 SAP Unicode RFC SDK (librfc32u.dll) 的 64 位或 32 位版本的 SAP 系统进行通信。 
 
 下图显示了通过使用开发的解决方案的端到端体系结构[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
- ![SAP 结束 &#45; 到 &#45;结束体系结构](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
+ ![SAP 结束&#45;到&#45;结束体系结构](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
   
 ## <a name="consuming-the-adapter"></a>使用适配器  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开与 SAP 系统[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]服务客户端应用程序。 客户端应用程序交换使用 SOAP 消息[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]通过[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道执行操作并访问 SAP 系统上的数据。 上图显示四种方式在其中[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]可使用。  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]和 SAP RFC 库始终托管进程的应用程序或服务使用适配器。  
   
 ## <a name="sap-adapter-and-wcf"></a>SAP 适配器和 WCF  
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供一个基于 SOAP 消息的交换对客户端和服务之间的通道的编程模型。 这些消息将由通信的客户端和服务公开的终结点之间发送。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 提供一个基于 SOAP 消息的交换对客户端和服务之间的通道的编程模型。 这些消息将由通信的客户端和服务公开的终结点之间发送。  
   
  终结点组成*终结点地址*指定的位置从该处接收消息，*绑定*它指定用于交换消息，以及通信协议*协定*指定终结点公开的操作和数据类型。 绑定由一个或多个堆叠在一起以定义如何与终结点交换消息的绑定元素组成。  
   
@@ -83,4 +83,4 @@ ms.lasthandoff: 09/20/2017
  有关详细信息，如何[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]连接到 SAP 系统，请参阅[创建与 SAP 系统的连接](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [为 mySAP Business Suite 了解 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)
+ [了解用于 mySAP Business Suite 的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)

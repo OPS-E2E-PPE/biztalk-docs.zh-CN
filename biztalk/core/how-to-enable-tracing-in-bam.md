@@ -1,22 +1,22 @@
 ---
-title: "如何启用跟踪中 BAM |Microsoft 文档"
-ms.custom: 
+title: 如何启用跟踪中 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da99e74-a41d-4ab1-a07d-e3bee6187216
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>如何在 BAM 中启用跟踪
 您可以在 BAM 中启用跟踪，以便帮助解决在以下 5 个 BAM 组件中出现的问题：  
@@ -35,16 +35,16 @@ ms.lasthandoff: 11/28/2017
  您可以通过为 BAM 管理实用程序启用跟踪，获取与部署错误有关的信息。 可以采取两种方式启用跟踪： 可以通过特定 BM.exe 命令的命令行启用跟踪，或者可以修改 BAM 管理实用程序配置文件来为所有 BM.exe 命令启用跟踪。  
   
 ### <a name="using-the-command-line"></a>使用命令行  
- 使用激活 BM.exe 命令行跟踪**-跟踪： 在 &#124; 关闭**切换。 使用 Trace 开关将重写配置文件中的设置。  
+ 使用激活 BM.exe 命令行跟踪 **-跟踪︰ 在 &#124; 关闭** 切换。 使用 Trace 开关将重写配置文件中的设置。  
   
  该开关可与所有标准 BM.exe 命令一起使用。  
   
  例如：  
   
- **bm.exe 部署全部-DefinitionFile:PO.xml – 跟踪： 上**  
+ **bm.exe 部署全部-DefinitionFile:PO.xml – 跟踪︰ 上**  
   
 ### <a name="using-the-configuration-file"></a>使用配置文件  
- 可以通过修改位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] Tracking 文件夹中的 BM.exe.config 配置文件来启用跟踪。 此文件包含**system.diagnostics**部分，其中包含跟踪元素。 删除注释以便启用跟踪。 默认情况下，不启用跟踪。  
+ 可以通过修改位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] Tracking 文件夹中的 BM.exe.config 配置文件来启用跟踪。 此文件包含 **system.diagnostics** 部分，其中包含跟踪元素。 删除注释以便启用跟踪。 默认情况下，不启用跟踪。  
   
  `<system.diagnostics>`  
   
@@ -183,7 +183,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="bam-alerting"></a>BAM 警报  
  为 BAM 警报启用跟踪可以帮助您排除警报送达问题。  
   
- BAM 警报基于[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Notification Services 基础结构。 若要启用 BAM 警报的跟踪，请参阅故障排除主题 Notification Services [http://go.microsoft.com/fwlink/?LinkId=79416](http://go.microsoft.com/fwlink/?LinkId=79416)。  
+ BAM 警报基于[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Notification Services 基础结构。 若要启用 BAM 警报的跟踪，请参阅故障排除主题 Notification Services [ http://go.microsoft.com/fwlink/?LinkId=79416 ](http://go.microsoft.com/fwlink/?LinkId=79416)。  
   
 ## <a name="bam-interceptors"></a>BAM 拦截器  
  若要启用 BAM 拦截器的端到端跟踪，可修改应用程序的配置文件-对于 Web 承载的应用程序或 Appname.config 自承载应用程序，为 Web.config。 下面的示例说明如何修改该文件：  
@@ -216,14 +216,14 @@ ms.lasthandoff: 11/28/2017
 |错误|记录所有异常。|  
 |警告|存在可能在以后导致出现错误或严重问题的情况。|  
 |信息|生成有助于监视和诊断系统状态、衡量性能或执行分析的消息。 您可以利用此类信息来规划容量和管理性能。|  
-|“详细”|用于用户代码和服务的调试级别跟踪。|  
+|Verbose|用于用户代码和服务的调试级别跟踪。|  
 |全部|所有消息。|  
   
 > [!NOTE]
 >  跟踪可能会对性能有负面影响。 只在执行故障排除活动时启用跟踪。  
   
 ### <a name="viewing-the-wcf-trace-file"></a>查看 WCF 跟踪文件  
- 若要分析 WCF 跟踪，可以使用 WCF Service Trace Viewer Tool。 有关服务跟踪查看器工具的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)。  
+ 若要分析 WCF 跟踪，可以使用 WCF Service Trace Viewer Tool。 有关服务跟踪查看器工具的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218)。  
   
 ## <a name="see-also"></a>另请参阅  
  [管理 BAM](../core/managing-bam.md)

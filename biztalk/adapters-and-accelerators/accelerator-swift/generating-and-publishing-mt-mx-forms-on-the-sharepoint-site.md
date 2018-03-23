@@ -1,22 +1,22 @@
 ---
-title: "生成和发布 SharePoint 站点上的 MT MX 窗体 |Microsoft 文档"
-ms.custom: 
+title: 生成和发布 SharePoint 站点上的 MT MX 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4adf7117-11ad-4a8e-8d6a-fd78c5e496a3
-caps.latest.revision: "3"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1c8bd8248a916d1e98571551a8561119b6377329
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成和发布 SharePoint 站点上的 MT/MX 窗体
 **若要生成和发布 SharePoint 站点上的 MT/MX 窗体：**  
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  键入 FormGenerator.exe [-b] [-\<否。 模板文件夹路径\>]  
   
-     `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`。 将参数替换为新创建的文件夹名称。  
+     `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`中创建已分区表或索引。 将参数替换为新创建的文件夹名称。  
   
 5.  上述命令还将生成所需的 MX 消息修复信封架构。  
   
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/28/2017
   
 13. 在窗体模板路径和文件名称文本框中，键入**http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn**和类型 **\<MessageType\>**窗体模板中将文本框中，然后单击**下一步**。  
   
-14. 单击 **“下一步”**。  
+14. 单击“下一步” 。  
   
 15. 单击**发布并关闭**。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
     -   如果要生成 MT InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   如果要生成 MX InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName\>**  
+    -   如果要生成 MX InfoPath 窗体，请键入：  **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageName\>**  
   
          这将有助于标识与相应的模板消息实例。  
   

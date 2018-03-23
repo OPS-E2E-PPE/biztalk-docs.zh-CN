@@ -1,23 +1,23 @@
 ---
-title: "使用 ServiceModel 元数据实用工具 BizTalk 适配器为 Siebel eBusiness Applications |Microsoft 文档"
-description: "使用 svcutil.exe，对于非默认绑定，或使用 Siebel 适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定"
-ms.custom: 
+title: 使用 ServiceModel 元数据实用工具 BizTalk 适配器为 Siebel eBusiness Applications |Microsoft 文档
+description: 使用 svcutil.exe，对于非默认绑定，或使用 Siebel 适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d16481-cc8b-4e28-a33c-92e48a9a7e8f
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a0bcf80d4a1ea9fc6b54403faa14084816e413be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>使用 ServiceModel 元数据实用工具 BizTalk 适配器为 Siebel eBusiness Applications
 你可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成操作的 WCF 客户端类，[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开。 运行 svcutil.exe 以生成 WCF 客户端类后，你可以在你的代码中包含生成的文件和创建要在 Siebel 系统上执行操作的 WCF 客户端类的实例。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 > [!NOTE]
 >  你可以设置的绑定属性的任何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在绑定配置。  
   
- 有关配置 svcutil.exe 的非默认绑定的详细信息，请参阅 WCF 文档中的"自定义安全元数据终结点"主题[http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)。  
+ 有关配置 svcutil.exe 的非默认绑定的详细信息，请参阅 WCF 文档中的"自定义安全元数据终结点"主题[ http://go.microsoft.com/fwlink/?LinkId=96077 ](http://go.microsoft.com/fwlink/?LinkId=96077)。  
   
 ## <a name="creating-a-wcf-client-class-with-svcutilexe"></a>使用 svcutil.exe 创建 WCF 客户端类  
  若要使用 svcutil.exe 生成的 WCF 客户端代码[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，你必须提供连接 URI，指定**IMetadataExchange** (mex) 终结点的操作或操作所需 svcutil.exe 生成代码。 你还必须在连接 URI 中指定 Siebel 系统的连接凭据。  
@@ -83,11 +83,11 @@ ms.lasthandoff: 11/28/2017
   
  此示例创建插入操作在 ACCOUNT\ACCOUNT 业务对象上的 WCF 客户端类。  
   
- **。 \svcutil"siebel://Username=YourUserName;密码 =YourPassword@Siebel_server:1234？SiebelEnterpriseServer = ent_server SiebelObjectManager = obj_mgr 和语言 = enu （wsdl） 操作 = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"**  
+ **.\svcutil "siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"**  
   
  此示例创建插入操作和删除操作在 ACCOUNT\ACCOUNT 业务对象上的 WCF 客户端类。  
   
- **。 \svcutil"siebel://Username=YourUserName;密码 =YourPassword@Siebel_server:1234？SiebelEnterpriseServer = ent_server SiebelObjectManager = obj_mgr 和语言 = enu （wsdl） 操作 = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert 操作 = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
+ **.\svcutil " siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
   
 > [!IMPORTANT]
 >  必须用引号引起来，在命令行上放置连接 URI。 否则，svcutil.exe 会尝试检索操作的元数据，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]不支持。 这类尝试的结果不确定。  

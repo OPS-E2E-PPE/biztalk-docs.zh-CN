@@ -1,23 +1,23 @@
 ---
-title: "为 IDOC 操作消息架构中 BizTalk 我 SAP 适配器 |Microsoft 文档"
-description: "消息操作、 结构和操作发送和接收到的 Idoc 使用 mySAP 适配器-BizTalk 适配器包 (BAP)"
-ms.custom: 
+title: 为 IDOC 操作消息架构中 BizTalk 我 SAP 适配器 |Microsoft 文档
+description: 消息操作、 结构和操作发送和接收到的 Idoc 使用 mySAP 适配器-BizTalk 适配器包 (BAP)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 601aa9f9-e42f-47aa-b020-7a1eed4f0780
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 53da14ff55d427e3507273af4c991072cff26bec
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-idoc-operations"></a>IDOC 操作的消息架构
 中间文档 (IDOC) 是用于以异步方式与 SAP 和非 SAP 系统进行通信的 SAP 支持的标准化的 EDI 类似文档。 IDOC 用于发送和接收到或从贸易合作伙伴的 SAP 系统或外部程序的销售订单类似的商业文档。  
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
 |SendIdoc|`<SendIdoc xmlns="[MSG_VERSION]/Idoc">   <idocData>docDataString</idocData>   <guid>guid</guid> </SendIdoc>`|将弱类型 IDOC 发送到 SAP。<br /><br /> -IDOC 架构是弱类型。<br /><br /> -作为单个字符串字段组成的控制记录和数据记录公开 IDOC。<br /><br /> [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将 GUID 与它使用以将 IDOC 发送 SAP TID 相关联。 你可以选择是否在请求消息中指定的 GUID。 如果在请求消息中，不包含 GUID[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将生成一个构造函数。 在响应消息中返回的 GUID|  
 |SendIdoc 响应|`<SendIdocResponse xmlns="[MSG_VERSION]/Idoc">   <guid>guid</guid> </SendIdocResponse>`|指示 IDOC，已发送到 SAP 系统。<br /><br /> 如果**AutoConfirmSentIdocs**绑定属性是**true**、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]自动确定事务在 SAP 系统上的，你可以忽略响应中返回的 GUID。 如果**AutoConfirmSentIdocs**绑定属性是**false**，必须调用**RfcConfirmTransID**具有 GUID 的操作返回[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]到完成事务在 SAP 系统上。<br /><br /> 你可以调用**SapAdapterUtilities.ConvertGuidToTid** LUW 与关联的方法来获取 TID。|  
   
- [MSG_VERSION] = 消息版本字符串;例如，http://Microsoft.LobServices.Sap/2007/03。  
+ [MSG_VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.Sap/2007/03。  
   
  [VERSION] = IDOC 发行版 （2 或 3）。  
   
@@ -93,12 +93,12 @@ ms.lasthandoff: 11/28/2017
   
 |运算|操作|示例|  
 |---------------|------------|-------------|  
-|Send|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / 发送|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send|  
-|发送响应|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / 发送/响应|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send/response|  
-|SendIdoc|[MESSAGE_VERSION] / Idoc/SendIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc|  
-|SendIdoc 响应|[MESSAGE_VERSION] / Idoc/SendIdoc/响应|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc/response|  
+|Send|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Send|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send|  
+|发送响应|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Send/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send/response|  
+|SendIdoc|[MESSAGE_VERSION]/Idoc/SendIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc|  
+|SendIdoc 响应|[MESSAGE_VERSION]/Idoc/SendIdoc/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc/response|  
   
- [MESSAGE_VERSION] = 消息版本字符串;例如，http://Microsoft.LobServices.Sap/2007/03。  
+ [MESSAGE_VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.Sap/2007/03。  
   
  [VERSION] = IDOC 发行版 （2 或 3）。  
   
@@ -123,7 +123,7 @@ ms.lasthandoff: 11/28/2017
 |ReceiveIdoc|`<ReceiveIdoc xmlns="[MSG_VERSION]/Idoc">   <idocData>docDataString</idocData> </ReceiveIdoc>`|从 SAP 接收弱类型 IDOC。<br /><br /> -IDOC 架构是弱类型。<br /><br /> -作为单个字符串字段组成的控制记录和数据记录公开 IDOC。|  
 |ReceiveIdoc 响应|`<ReceiveIdocResponse xmlns="[MSG_VERSION]/Idoc"> </ReceiveIdocResponse>`|指示已从 SAP 系统接收了 IDOC。|  
   
- [MSG_VERSION] = 消息版本字符串;例如，http://Microsoft.LobServices.Sap/2007/03。  
+ [MSG_VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.Sap/2007/03。  
   
  [VERSION] = IDOC 发行版 （2 或 3）。  
   
@@ -183,8 +183,8 @@ ms.lasthandoff: 11/28/2017
   
 |运算|操作|示例|  
 |---------------|------------|-------------|  
-|Receive|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / 接收|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive|  
-|接收响应|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / 接收/响应|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive/response|  
-|ReceiveIdoc|[MESSAGE_VERSION] / Idoc/ReceiveIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc|  
-|ReceiveIdoc 响应|[MESSAGE_VERSION] / Idoc/ReceiveIdoc/响应|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc/response|  
+|Receive|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive|  
+|接收响应|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive/response|  
+|ReceiveIdoc|[MESSAGE_VERSION]/Idoc/ReceiveIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc|  
+|ReceiveIdoc 响应|[MESSAGE_VERSION]/Idoc/ReceiveIdoc/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc/response|  
   

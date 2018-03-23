@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Server 中的 Oracle 数据库和 BizTalk 适配器一起使用 ServiceModel 元数据实用工具 |Microsoft 文档"
-description: "使用 svcutil.exe，对于非默认绑定，或使用 Oracle 数据库适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定"
-ms.custom: 
+title: BizTalk Server 中的 Oracle 数据库和 BizTalk 适配器一起使用 ServiceModel 元数据实用工具 |Microsoft 文档
+description: 使用 svcutil.exe，对于非默认绑定，或使用 Oracle 数据库适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8660014-da04-4692-89e8-f14fcb419496
-caps.latest.revision: "3"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9dfbdbd60333a2e5683b4f37a65edb928a451e46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>ServiceModel 元数据实用工具使用 BizTalk 适配器将用于 Oracle 数据库
 你可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或操作的 WCF 服务协定 （接口），[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开。 运行 svcutil.exe 以生成 WCF 客户端类或 WCF 服务协定后，你可以在你的代码中包含生成的文件和创建生成的类的实例或实现从要对 Oracle 执行操作的协定的 WCF 服务数据库。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
  以下部分说明如何配置 svcutil.exe 以及如何使用 svcutil.exe 生成 WCF 客户端代码或 WCF 服务协定与[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>配置非默认绑定的 svcutil.exe   
+##  <a name="BKMK_ConfigureSvcutil"></a> 配置非默认绑定的 svcutil.exe   
  若要配置为使用非默认绑定的 svcutil.exe，你必须创建 svcutil.exe 的本地副本，然后创建或修改 svcutil.exe.config 配置文件的本地副本。  
   
 1.  创建一个文件夹，并将 svcutil.exe 复制到新文件夹。 你通常可以找到 svcutil.exe 在 Windows SDK 安装位置，具体而言，C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin。  
@@ -63,7 +63,7 @@ ms.lasthandoff: 11/28/2017
 > [!NOTE]
 >  你可以设置的绑定属性的任何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在绑定配置。  
   
- 有关配置 svcutil.exe 的非默认绑定的详细信息，请参阅 WCF 文档中的"自定义安全元数据终结点"主题[http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077)。  
+ 有关配置 svcutil.exe 的非默认绑定的详细信息，请参阅 WCF 文档中的"自定义安全元数据终结点"主题[ http://go.microsoft.com/fwlink/?LinkId=96077 ](http://go.microsoft.com/fwlink/?LinkId=96077)。  
   
 ### <a name="configure-a-non-default-binding-for-the-pollingstmt-operation"></a>配置非默认绑定 POLLINGSTMT 操作  
  若要使用 svcutil.exe 来创建 WCF 服务协定 POLLINGSTMT 操作，必须配置非默认绑定，以包括**pollingStatement**属性，此外到**acceptCredentialsInUri**. **PollingStatement**必须包含目标表的 SELECT 语句。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用此属性，以生成类，它表示强类型化结果设置 POLLINGSTMT 操作返回。 下面的示例显示用于生成面向的 POLLINGSTMT 操作的 WCF 服务协定的绑定配置 /SCOTT/EMP 表。  
@@ -93,20 +93,20 @@ ms.lasthandoff: 11/28/2017
   
  此示例创建 WCF 客户端类上 /SCOTT/EMP 表的插入操作。  
   
- **。 \svcutil"oracledb://User=SCOTT;密码 =TIGER@ADAPTER？ wsdl （& a) 操作 = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert"**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert"**  
   
  此示例对插入和删除操作 /SCOTT/EMP 表上的创建一个 WCF 客户端类。  
   
- **。 \svcutil"oracledb://User=SCOTT;密码 =TIGER@ADAPTER？ wsdl （& a) 操作 = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert 操作 = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete"**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete"**  
   
  此示例创建 POLLLINGSTMT 操作的 WCF 服务协定。 （若要使用 svcutil.exe 生成 WCF 服务协定 POLLINGSTMT 操作，你必须配置一个非默认绑定包含一个轮询的语句的 svcutil.exe。）  
   
- **。 \svcutil"oracledb://User=SCOTT;密码 =TIGER@ADAPTER？ wsdl （& a) 操作 = http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT"**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT"**  
   
 > [!IMPORTANT]
 >  必须用引号引起来，在命令行上放置连接 URI。 否则，svcutil.exe 会尝试检索操作的元数据，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不支持。 这类尝试的结果不确定。  
   
- 默认情况下，svcutil.exe 将生成的代码文件中的 output.cs;但是，你可以更改输出文件的名称和许多其他选项，svcutil.exe 使用通过设置命令行开关。 该 svcutil.exe 支持的选项的详细信息，请参阅 WCF 文档中的"ServiceModel 元数据实用工具 (Svcutil.exe)"主题[http://go.microsoft.com/fwlink/?LinkId=72777](http://go.microsoft.com/fwlink/?LinkId=72777)。  
+ 默认情况下，svcutil.exe 将生成的代码文件中的 output.cs;但是，你可以更改输出文件的名称和许多其他选项，svcutil.exe 使用通过设置命令行开关。 该 svcutil.exe 支持的选项的详细信息，请参阅 WCF 文档中的"ServiceModel 元数据实用工具 (Svcutil.exe)"主题[ http://go.microsoft.com/fwlink/?LinkId=72777 ](http://go.microsoft.com/fwlink/?LinkId=72777)。  
   
  Svcutil.exe 不提供的功能 （例如，通过使用通配符） 搜索操作。 你必须显式指定要设定为目标的特定操作的节点 Id。 不能指定节点仅引用中的类别的 Id。 有关节点 Id 的详细信息，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面，请参阅[元数据的节点 Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)。  
   

@@ -1,26 +1,26 @@
 ---
-title: "使用 ServiceModel 元数据实用工具 BizTalk 适配器为 mySAP Business Suite |Microsoft 文档"
-description: "使用 svcutil.exe，对于非默认绑定，或使用 SAP 适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定"
-ms.custom: 
+title: 使用 ServiceModel 元数据实用工具 BizTalk 适配器为 mySAP Business Suite |Microsoft 文档
+description: 使用 svcutil.exe，对于非默认绑定，或使用 SAP 适配器-BizTalk 适配器包 (BAP) 中创建的 WCF 客户端类或 WCF 服务协定
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ServiceModel Metadata Utility Tool, creating a WCF Client Class or a WCF service contract with the tool
 - ServiceModel Metadata Utility Tool, configuring the tool for the adapter
 ms.assetid: 7ac08012-bb12-4983-9402-be84fe3997d8
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 15c4612db6e3cde4e46385b1c5d1810fbb00eb70
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>为 mySAP Business Suite 中使用 BizTalk 适配器使用 ServiceModel 元数据实用工具
 你可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或操作的 WCF 服务协定 （接口），[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开。 运行 svcutil.exe 以生成 WCF 客户端类或 WCF 服务协定后，您可以在你的代码中包含生成的文件和创建生成的类的实例或实现 WCF 服务生成的接口在 SAP 上执行操作系统。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
  以下部分说明如何配置 svcutil.exe 以及如何使用 svcutil.exe 生成 WCF 客户端代码或 WCF 服务协定与[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>为 SAP 适配器配置 svcutil.exe  
+##  <a name="BKMK_ConfigureSvcutil"></a> 为 SAP 适配器配置 svcutil.exe  
  若要配置为使用非默认绑定的 svcutil.exe，你必须创建 svcutil.exe 的本地副本，然后创建或修改 svcutil.exe.config 配置文件的本地副本。  
   
 1.  创建一个文件夹，并将 svcutil.exe 复制到新文件夹。 你通常可以找到 svcutil.exe 在 Windows SDK 安装位置，具体而言，C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin。  
@@ -91,15 +91,15 @@ ms.lasthandoff: 11/28/2017
   
  此示例为 RFC_CALCULATE_TAXES 创建 WCF 客户端类。  
   
- **。 \svcutil"sap://User=YourUserName;密码 = 你的密码;客户端 = 800;Lang = EN;@a/YourSAPHost/00？ wsdl （& a) 操作 = http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES"**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES"**  
   
  此示例创建一个 WCF 客户端类 SALESORDER_CREATEFROMDAT201 和 SALESORDER_CREATEFROMDAT202 IDOC。  
   
- **。 \svcutil"sap://User=YourUserName;密码 = 你的密码;客户端 = 800;Lang = EN;@a/YourSAPHost/00？ wsdl （& a) 操作 = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send 操作 = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"**  
   
  此示例将创建 WCF 服务约定以 SALESORDER_CREATEFROMDAT201 IDOC 接收 SAP 系统。 节点 ID 指定接收操作。 此示例处理检索元数据，因为没有无需连接 URI query_string 中指定的侦听器参数。  
   
- **。 \svcutil"sap://User=YourUserName;密码 = 你的密码;客户端 = 800;Lang = EN;@a/YourSAPHost/00？ wsdl （& a) 操作 = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive"**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive"**  
   
 > [!IMPORTANT]
 >  必须用引号引起来，在命令行上放置连接 URI。 否则，svcutil.exe 会尝试检索操作的元数据，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]不支持。 这类尝试的结果不确定。  

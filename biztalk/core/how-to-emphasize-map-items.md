@@ -1,22 +1,22 @@
 ---
-title: "如何强调映射项 |Microsoft 文档"
-ms.custom: 
+title: 如何强调映射项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2732b36-ca57-4566-ba26-da27a3082f32
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d6bb03969a044c6a474f5d2d1c1e5e1a5067cf81
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-emphasize-map-items"></a>如何强调映射项
 在 BizTalk 映射器中，当您选择一个映射项目时，都会强调所有相关的链接和 functoids。 这在具有许多链接的映射中非常有用，因为识别关系和相关架构项比较困难。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
  ![强调地图项](../core/media/mapper-intelliselect.gif "Mapper_IntelliSelect")  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  此操作要求 BizTalk 映射器处于运行状态。  
   
 ## <a name="to-emphasize-a-map-item"></a>若要强调地图项  

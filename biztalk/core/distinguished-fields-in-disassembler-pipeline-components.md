@@ -1,11 +1,11 @@
 ---
-title: "反汇编程序中的可分辨的字段管道组件 |Microsoft 文档"
-ms.custom: 
+title: 反汇编程序中的可分辨的字段管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, distinquished fields
@@ -13,22 +13,22 @@ helpviewer_keywords:
 - BizTalk Framework Disassembler [pipeline component], distinquished fields
 - XML Disassembler [pipeline component], distinquished fields
 ms.assetid: 7e51d2fe-0004-4a7b-9055-bd41e8a4b7ab
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>反汇编程序中的可分辨的字段管道组件
 通过 XML 拆装器管道组件、BizTalk 框架拆装器管道组件或平面文件拆装器管道组件，可将架构中定义的可分辨字段写入消息上下文中，格式如下：  
   
  *使用名称* 是 XPath 中的可分辨的字段  
   
- *命名空间 URI* 是"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
+ *命名空间 URI*是"http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"  
   
  属性的值是 **System.String** 指定从 XML 文档使用提取的值的 XPath。  
   
@@ -67,9 +67,9 @@ ms.lasthandoff: 01/17/2018
   
  XML 拆装器在消息上下文中写入可分辨字段，如下如示：  
   
- 在上下文的属性名称:"/ * [本地名称 （) = PO 和 namespace-uri() = http://SendHtmlMessage.PO'] /\*[本地名称 （) = 价格和 namespace-uri() = ']"  
+ 在上下文的属性名称:"/ * [本地名称 （) = PO 和 namespace-uri() =http://SendHtmlMessage.PO'] /\*[本地名称 （) = 价格和 namespace-uri() =']"  
   
- 属性的命名空间：http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
+ 属性的 Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
  属性值︰ 10  
   

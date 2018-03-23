@@ -1,28 +1,28 @@
 ---
-title: "常见术语和定义 |Microsoft 文档"
-description: "术语词汇表和 BizTalk Server 及其含义"
-ms.custom: 
+title: 常见术语和定义 |Microsoft 文档
+description: 术语词汇表和 BizTalk Server 及其含义
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac9c7c7d-a97e-425a-9666-02ca6edd8be6
-caps.latest.revision: "68"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 742b695338d7038f830b823af720bd3048399473
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="glossary"></a>词汇表
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的“帮助”中用到以下术语和定义。  
   
-## <a name=""></a>实例时都提供 SQL Server 登录名。  
+## <a name=""></a>。  
   
 |术语|定义|  
 |----------|----------------|  
@@ -35,7 +35,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |.xsd 文件 (.xsd file)|BizTalk Server 架构文件。|  
 |||  
   
-## <a name="a"></a>仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，  
+## <a name="a"></a>指向  
   
 |术语|定义|  
 |----------|----------------|  
@@ -272,7 +272,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |术语|定义|  
 |----------|----------------|  
 |处理程序 (handler)|运行适配器的 BizTalk 主机实例。|  
-|密切相关的文章|通过将单向数学函数（有时也称为哈希算法）应用到任意数量的数据所获得的固定大小的结果。 如果输入数据更改，则哈希值也随之更改。 哈希可用于许多操作，包括身份验证和数字签名。 也称为消息摘要。|  
+|哈希|通过将单向数学函数（有时也称为哈希算法）应用到任意数量的数据所获得的固定大小的结果。 如果输入数据更改，则哈希值也随之更改。 哈希可用于许多操作，包括身份验证和数字签名。 也称为消息摘要。|  
 |运行状况监视|为预先发现问题或解决问题而监视用于实施 BizTalk Server 解决方案的应用程序、组件和服务器的过程。|  
 |运行状况监视多维数据集 (Health Monitoring cube)|一种包含有关消息和服务的信息的联机分析处理 (OLAP) 多维数据集。 BizTalk Server 中包含两个多维数据集：消息事实多维数据集和服务事实多维数据集。|  
 |分层视图 (hierarchical view)|跟踪配置文件编辑器 (TPE) 的左窗格以及创建报表命名空间和业务活动视图的区域。 该视图主要用于表示跟踪配置文件。|  
@@ -359,7 +359,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |消息传送实例 (Messaging Instance)|在组中心页上，消息传送实例包括发送端口和接收端口服务实例。 消息传送实例表示消息传送服务实例。|  
 |元数据|诸如位置、时间、消息大小等信息和/或异常信息。|  
 |里程碑别名 (milestone alias)|在 BAM 中，指代 BAM 活动所包含的里程碑或数据项的名称。 每个里程碑和数据项可以有多个别名。|  
-|混合内容 (mixed content)|特定 XML 元素的内容，既包含子元素又包含子元素内没有的数据。 从 HTML 一个示例是： &lt;P&gt;完整卫星&lt;EM&gt;始终&lt;/EM&gt;上升停用，在多或少。&lt;/ P&gt;|  
+|混合内容 (mixed content)|特定 XML 元素的内容，既包含子元素又包含子元素内没有的数据。 从 HTML 一个示例是︰ &lt;P&gt;完整卫星 &lt;EM&gt;始终&lt;/EM&gt; 上升停用，在多或少。&lt;/ P&gt;|  
 |多部分消息类型 (multi-part message type)|消息结构的定义，包括消息元素的数据类型。 多部分消息类型可以只包含一个部分，也可以包含许多部分。|  
   
 ## <a name="n"></a>否  
@@ -413,7 +413,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |专用队列 (private queue)|未作为 Active Directory 对象发布的队列。 BizTalk 消息队列完全支持将消息发送或接收到专用队列中。|  
 |流程图面 (process surface)|业务流程设计器中设计图面的中间区域。 该区域用于设计业务流程。|  
 |项目设计器 (Project Designer)|构成项目的服务、端口和绑定的可视化表示。 用户可通过在项目设计器中添加和删除服务、创建和删除服务的兼容端口之间的绑定来编辑这些可视项。|  
-|属性升级|通过该特定的消息属性写入到作为属性字段与消息关联的消息上下文的机制。 写入到消息上下文属性字段被视为提升的属性的属性 ( **IsPromoted**的字段的属性设置为**True**)，并且需要一个关联的属性架构。  BizTalk Server Messaging Engine 为了文档路由邮件跟踪，并用于在业务流程中的评估使用属性字段。 消息的消息上下文存储于 MessageBox 数据库的后台处理表中该消息对应行的 imgContext 列中。|  
+|属性升级|通过该特定的消息属性写入到作为属性字段与消息关联的消息上下文的机制。 写入到消息上下文属性字段被视为提升的属性的属性 ( **IsPromoted** 的字段的属性设置为 **True**)，并且需要一个关联的属性架构。  BizTalk Server Messaging Engine 为了文档路由邮件跟踪，并用于在业务流程中的评估使用属性字段。 消息的消息上下文存储于 MessageBox 数据库的后台处理表中该消息对应行的 imgContext 列中。|  
 |属性架构|与 BizTalk Server 架构关联的架构，用于将文档中要升级到消息上下文的元素字段标识为属性字段。|  
 |协议设置|用于定义如何为特定的业务到业务协议而支持业务交易的设置。 针对每一个业务到业务协议（合作伙伴可通过此协议进行通信），每一个业务配置文件都定义了处理消息（编码）或传输消息（传输）的各种设置。 协议设置可以用于编码协议或传输协议。|  
 |公共队列 (public queue)|作为 Active Directory 对象发布的队列。|  
@@ -445,7 +445,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |存储库 (repository)|用于存储 Analysis Service 使用的元数据的存储容器。 元数据以表格形式存储在关系数据库中，用于定义分析服务器对象的参数和属性。 当 BizTalk 浏览器以只读模式访问数据时，XML 工具以读取-写入模式使用库。|  
 |请求-响应适配器 (request-response adapter)|接收客户端的请求消息，将消息提交给服务器，等待响应，然后将响应发送回客户端的接收适配器。|  
 |返回形状 (Return shape)|在业务流程真正结束前用于在某点中止该业务流程的形状。  以下是一个示例：如果通过安全检查，则继续，否则返回。|  
-|角色 (role)|使用服务或实现服务的端口类型集合，提供参与方与业务流程交互的方法。 例如，业务流程可能使用发运方角色。 该发运方将有一两个关联的参与方。 当业务流程确定使用哪家发运公司来发运货物时，它会比较发运方角色中各个参与方的价格。|  
+|角色 (role)|使用服务或实现服务的端口类型集合，提供参与方与业务流程交互的方法。 例如，业务流程可能使用发运方角色。 託運商可能有一或多個合作對象與它關聯。 当业务流程确定使用哪家发运公司来发运货物时，它会比较发运方角色中各个参与方的价格。|  
 |角色链接 (role link)|指的是通过消息定义的角色和双向交互中使用的端口类型之间的关系。|  
 |角色链接类型 (role link type)|用于确定两项服务或业务流程之间的关系的属性，它定义该关系中每项服务的职责并指定每个角色提供的端口类型。|  
 |根节点|BizTalk Server 架构中代表该架构指定的业务文档中最顶端的 XML 元素的节点。|  

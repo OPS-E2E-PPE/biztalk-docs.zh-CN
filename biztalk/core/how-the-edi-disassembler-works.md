@@ -1,22 +1,22 @@
 ---
-title: "EDI 反汇编程序的工作原理 |Microsoft 文档"
-ms.custom: 
+title: EDI 反汇编程序的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8da91ba4-e1c9-4e6b-bbd1-fe71ea880118
-caps.latest.revision: "43"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 拆装器的工作方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行 EDI 接收管道 (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) 中接收的 EDI 编码交换的大多数处理。 此管道包括用于执行下列处理的 EDI 拆装器管道组件：  
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/17/2018
   
 -   将整个交换转换为 XML，如果 **入站批处理选项** 属性设置为两种状态之一 **保留交换** 值。 此属性可以设置从 **本地主机设置** 下页上 **交换设置** 的双向协议选项卡 **协议属性** 对话框。 接收管道将升级 ReuseEnvelope 属性以将交换标识为保留。  
   
--   生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 提升 BTS 的上下文属性。MessageType，将其设置等于 http://schemas.microsoft.com/EDI/ 中的控件模式\<X12 或 EDIFACT\> （例如，对于 997 确认 X12_997_Root） 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
+-   生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 提升 BTS 的上下文属性。MessageType，将其设置等于中的控件模式http://schemas.microsoft.com/EDI/ \<X12 或 EDIFACT\> （例如，对于 997 确认 X12_997_Root） 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
   
 -   执行 HIPAA 276/277（仅版本 5010 ）834、835（仅版本 4010）和 837 文档拆分（如果适用）。  
   

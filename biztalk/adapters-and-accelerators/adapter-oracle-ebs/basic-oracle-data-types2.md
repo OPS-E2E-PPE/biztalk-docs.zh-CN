@@ -1,23 +1,23 @@
 ---
-title: "在 BizTalk 与 Oracle EBS 适配器中的基本 Oracle 数据类型 |Microsoft 文档"
-description: "数据和 XSD 类型、 安全类型和 Oracle E-business Suite 中 BizTalk 适配器包 (BAP) 中的验证"
-ms.custom: 
+title: 在 BizTalk 与 Oracle EBS 适配器中的基本 Oracle 数据类型 |Microsoft 文档
+description: 数据和 XSD 类型、 安全类型和 Oracle E-business Suite 中 BizTalk 适配器包 (BAP) 中的验证
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 008bf621-8b4e-450d-b354-ee26b91592f2
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9012e2ef6adaf94f55b87bbccfc24b7fb889fbf3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="basic-oracle-data-types"></a>基本 Oracle 数据类型
 本主题介绍如何[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]呈现基本 Oracle 数据类型。  
@@ -48,10 +48,10 @@ ms.lasthandoff: 11/28/2017
 |NVarchar2|xsd:string|字符串|-|  
 |原始|xsd:base64Binary|Byte[]||  
 |RowID|xsd:string|字符串|-|  
-|时间戳 *<br /><br /> （不安全键入如果位于内部 UDT）|化如果 prec < = 7<br /><br /> xsd: string 如果 prec > 7|DateTime<br /><br /> 字符串|当公开为字符串 (prec > 7)，则应该在 Oracle NLS_TIMESTAMP_FORMAT 表示值。 你可以指定时间戳中的数据类型的字符串格式**TimeStampFormat**绑定下的属性**MlsSettings**绑定属性。 如果为不指定任何值**TimeStampFormat**绑定属性，该适配器 MLS 设置个 ODP.NET 客户端使用同一台计算机上是否安装了适配器。<br /><br /> 时间戳值不能包含时区信息 （UTC 还是基于 UTC 偏移量）：<br /><br /> -化值不能包含 UTC 或 UTC 偏移量<br />-   **DateTime.Kind**必须**DateTimeKind.Unspecified**<br /><br /> 如果指定时区信息，则将引发适配器**XmlReaderParsingException**异常，并附带一条消息，指示该字段。|  
+|TimeStamp*<br /><br /> （不安全键入如果位于内部 UDT）|xsd:dateTime if prec <= 7<br /><br /> xsd: string 如果 prec > 7|DateTime<br /><br /> 字符串|当公开为字符串 (prec > 7)，则应该在 Oracle NLS_TIMESTAMP_FORMAT 表示值。 你可以指定时间戳中的数据类型的字符串格式**TimeStampFormat**绑定下的属性**MlsSettings**绑定属性。 如果为不指定任何值**TimeStampFormat**绑定属性，该适配器 MLS 设置个 ODP.NET 客户端使用同一台计算机上是否安装了适配器。<br /><br /> 时间戳值不能包含时区信息 （UTC 还是基于 UTC 偏移量）：<br /><br /> -化值不能包含 UTC 或 UTC 偏移量<br />-   **DateTime.Kind**必须**DateTimeKind.Unspecified**<br /><br /> 如果指定时区信息，则将引发适配器**XmlReaderParsingException**异常，并附带一条消息，指示该字段。|  
 |TimeStampLTZ|xsd:string|字符串|Udt 内不支持 TimeStampLTZ。<br /><br /> **外部 UDT**： 应在 Oracle NLS_TIMESTAMP_TZ_FORMAT 表示值。 你可以指定用于 TimeStampLTZ 中的数据类型的字符串格式**TimeStampTZFormat**绑定下的属性**MlsSettings**绑定属性。 如果为不指定任何值**TimeStampTZFormat**绑定属性，该适配器 MLS 设置个 ODP.NET 客户端使用同一台计算机上是否安装了适配器。|  
 |TimeStampTZ|xsd:string<br /><br /> 如果位于内部 UDT 化|字符串<br /><br /> 如果位于内部 UDT 的 DateTime|**外部 UDT**： 应在 Oracle NLS_TIMESTAMP_TZ_FORMAT 表示值。 你可以指定用于 TimeStampTZ 中的数据类型的字符串格式**TimeStampTZFormat**绑定下的属性**MlsSettings**绑定属性。 如果为不指定任何值**TimeStampTZFormat**绑定属性，该适配器 MLS 设置个 ODP.NET 客户端使用同一台计算机上是否安装了适配器。|  
-|小数 * *|化如果 prec < = 28<br /><br /> xsd: string 如果 prec > 28|Decimal<br /><br /> 字符串|-|  
+|Decimal**|化如果 prec < = 28<br /><br /> xsd: string 如果 prec > 28|Decimal<br /><br /> 字符串|-|  
 |varchar2|xsd:string|字符串|-|  
 |二进制 Float * *|化如果 prec < = 7<br /><br /> xsd: string 如果 prec > 7|Float<br /><br /> 字符串|必须指定的值与指定的十进制字符和中的组分隔符的格式一致**NumericCharacters**绑定下的属性**MlsSettings**绑定属性。 如果为不指定任何值**NumericCharacters**绑定属性，该适配器 MLS 设置个 ODP.NET 客户端使用同一台计算机上是否安装了适配器。|  
 |二进制双 * *|化如果 prec < = 15<br /><br /> xsd: string 如果 prec > 15|双精度<br /><br /> 字符串|-|  

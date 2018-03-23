@@ -1,22 +1,22 @@
 ---
-title: "系统级瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 系统级瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bdff435-76eb-495f-9fb6-1f1acef3921e
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 058fd60e1c38a3045197b4a36bdcc81250ab5be5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="system-level-bottlenecks"></a>系统级瓶颈
 本主题介绍如何解决常见的系统级瓶颈，从而可以影响 BizTalk Server 解决方案的性能。  
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
   
  若要确定你的系统是否遇到磁盘 I/O 相关的瓶颈，应使用以下性能计数器：  
   
--   **Physicaldisk\avg.磁盘队列长度**  
+-   **PhysicalDisk\Avg.磁盘队列长度**  
   
     -   阈值： 不应高于数主轴加上两个。  
   
@@ -161,19 +161,19 @@ ms.lasthandoff: 09/20/2017
   
         -   主动接收从硬盘  
   
--   **Physicaldisk\avg.磁盘读取队列长度**  
+-   **PhysicalDisk\Avg.磁盘读取队列长度**  
   
     -   阈值： 应小于两个。  
   
     -   基数： 此计数器指示在采样间隔期间为选择的磁盘排队的读取请求的平均数。  
   
--   **Physicaldisk\avg.磁盘写入队列长度**  
+-   **PhysicalDisk\Avg.磁盘写入队列长度**  
   
     -   阈值： 应小于两个。  
   
     -   基数： 此计数器指示在采样间隔期间为选择的磁盘排队的写入请求的平均数。  
   
--   **Physicaldisk\avg.Disk sec/Read**  
+-   **PhysicalDisk\Avg.Disk sec/Read**  
   
     -   阈值： 没有特定值。  
   
@@ -185,7 +185,7 @@ ms.lasthandoff: 09/20/2017
   
     -   基数： 此计数器指示的平均时间，以秒为单位，从磁盘读取操作的数据。 如果数字为大于 25 毫秒 (ms)，这意味着磁盘系统从磁盘读取时遇到延迟。 对于任务关键型服务器承载 BizTalk Server，可接受的阈值是低得多，大约 10 毫秒。  
   
--   **Physicaldisk\avg.Disk sec/Write**  
+-   **PhysicalDisk\Avg.Disk sec/Write**  
   
     -   阈值： 没有特定值。  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
     -   基数： 此计数器表示的平均时间，以秒为单位的数据向磁盘写入操作。 如果数字为大于 25 ms，磁盘系统将写入到磁盘时遇到延迟。 对于任务关键型服务器承载 BizTalk Server，可接受的阈值是低得多，大约 10 毫秒。  
   
--   **Physicaldisk\avg.Disk sec/Transfer**  
+-   **PhysicalDisk\Avg.Disk sec/Transfer**  
   
     -   阈值： 不应超过 18 的毫秒。  
   
@@ -218,7 +218,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="disk-io-tuning-options"></a>磁盘 I/O 优化选项  
  如果你确定磁盘 I/O 操作成为你的环境中的瓶颈，可能使用以下方法以缓解瓶颈：  
   
--   **碎片整理你的磁盘-**使用可用在[PageDefrag 实用工具](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976) 要整理 Windows 分页文件和预分配主文件表。  
+-   **碎片整理你的磁盘-**使用可用在[PageDefrag 实用工具](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976)以对 Windows 分页文件进行碎片整理和预分配主文件表。  
   
 -   **使用带区集通过多个磁盘的同时处理输入/输出请求**使用镜像的卷来提供容错和提高 I/O 性能。 如果不需要容错功能，为实现带区集快速读取和写入和改进的存储容量。 当使用带区集时，每个磁盘使用率减少，因为工作分布在这些卷，并提高总体吞吐量。 如果你添加更多的磁盘的条带中设置你的系统可能会遇到由于由磁盘控制器的磁盘之间的争用瓶颈，然后不会增加吞吐量。 在这种情况下，将添加一个额外的磁盘控制器将有助于分散负载并提高性能。  
   

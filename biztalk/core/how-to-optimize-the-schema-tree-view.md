@@ -1,25 +1,25 @@
 ---
-title: "如何优化架构树视图 |Microsoft 文档"
-ms.custom: 
+title: 如何优化架构树视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab4ad6b5-5bbd-443b-9041-6cddf9d64735
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: aeeddd0893b80c1c7b37b2d0ee5f9f6cd68849d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-optimize-the-schema-tree-view"></a>如何优化架构树视图
-你可以使用**相关性视图**BizTalk 映射程序来优化的源和/或目标架构树中。 本主题提供了有关如何执行该操作的说明。  
+你可以使用 **相关性视图** BizTalk 映射程序来优化的源和/或目标架构树中。 本主题提供了有关如何执行该操作的说明。  
   
  关联视图使用同级合并来折叠非关联架构元素，以提供更全面的架构视图。 这进一步降低了滚动的需求，可帮助您专注于使用架构和映射。  
   

@@ -1,28 +1,28 @@
 ---
-title: "监视的运行状况和性能使用内置的工具 |Microsoft 文档"
-description: "可用性、 运行状况和性能监视在 BizTalk Server 中和监视 SQL 代理作业"
-ms.custom: 
+title: 监视的运行状况和性能使用内置的工具 |Microsoft 文档
+description: 可用性、 运行状况和性能监视在 BizTalk Server 中和监视 SQL 代理作业
+ms.custom: ''
 ms.date: 01/14/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e6652c962d8ef522128dfb4c9febeca55ce42669
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="monitoring-biztalk-server"></a>监视 BizTalk Server
 定期监视 BizTalk Server 应用程序和基础结构并解决发现的任何问题，有助于使用户保持对 BizTalk Server 应用程序的访问。 监视的目的在于最大限度地减少未检测到（并因此导致未解决）的异常存在的时间。 此外，还可以使用监视来帮助检测可能导致异常的情形。  
   
- 当监视 BizTalk Server 时，您应查找任何意外或异常行为。 监视既可以是手动过程，也可以是自动过程。 您可以使用 BizTalk Server 管理控制台监视 BizTalk Server 基础结构的运行状况。 您可以使用 BizTalk Server 管理控制台监视 BizTalk Server 应用程序的运行状况，执行根源分析以确定任何问题的基本原因。 实例时都提供 SQL Server 登录名。 监视 BizTalk Server 时，请谨记以下几点：  
+ 当监视 BizTalk Server 时，您应查找任何意外或异常行为。 监视既可以是手动过程，也可以是自动过程。 您可以使用 BizTalk Server 管理控制台监视 BizTalk Server 基础结构的运行状况。 您可以使用 BizTalk Server 管理控制台监视 BizTalk Server 应用程序的运行状况，执行根源分析以确定任何问题的基本原因。 。 监视 BizTalk Server 时，请谨记以下几点：  
   
 -   基础结构的运行状况可能处于正常状态，但应用程序则未必（例如，它们正在接收无效消息，但无法处理这些消息）。  
   
@@ -65,9 +65,9 @@ ms.lasthandoff: 09/20/2017
 |业务活动监视 (BAM)|您可以指定业务流程中的特定阶段，以便针对其跟踪与业务应用程序相关的关键性能指示器。|  
   
 ## <a name="biztalk-server-monitoring"></a>BizTalk 服务器监视  
- 你可以运行**监视器 BizTalk Server** SQL 代理作业来标识管理、 消息框中或 DTA 数据库中的所有已知的问题。 在 BizTalk Server 管理控制台中配置 BizTalk 组或从以前的版本升级 BizTalk 时创建该作业。  
+ 你可以运行 **监视器 BizTalk Server** SQL 代理作业来标识管理、 消息框中或 DTA 数据库中的所有已知的问题。 在 BizTalk Server 管理控制台中配置 BizTalk 组或从以前的版本升级 BizTalk 时创建该作业。  
   
- 监视 BizTalk 服务器作业扫描管理、 消息框中，和 DTA 数据库中的以下问题：  
+ 监视 BizTalk 服务器作业扫描管理、 消息框中，和 DTA 数据库中的以下问题︰  
   
 > [!NOTE]
 >  监视 BizTalk 服务器作业仅扫描的问题。 它不能解决找到的问题。  
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
  以下主题讨论如何使用 BizTalk Server 管理控制台的“组中心”页和“查询”页来进行监视和疑难解答。 本节还讨论了跟踪，您可以使用它来帮助您进行疑难解答和根源分析。  
   
-## <a name="more-good-stuff"></a>更多有用内容  
+## <a name="more-good-stuff"></a>多个很好的内容  
   
 -   [使用 BizTalk Server 管理控制台](../core/using-the-biztalk-server-administration-console.md)  
   
@@ -113,6 +113,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [监视 EDI 和 AS2 解决方案](../core/monitoring-edi-and-as2-solutions.md)  
   
--   [跟踪在 BizTalk Server 应用程序中的项目之间依赖项](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
+-   [跟踪 BizTalk Server 应用程序中的项目之间的依赖关系](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
 
 - [性能计数器](performance-counters.md)

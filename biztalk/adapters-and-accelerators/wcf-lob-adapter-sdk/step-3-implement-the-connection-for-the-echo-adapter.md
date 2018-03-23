@@ -1,22 +1,22 @@
 ---
-title: "步骤 3： 实现 Echo 适配器的连接 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 实现 Echo 适配器的连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0a735654fd03f5efb39fe73eb845f4db3632d283
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>步骤 3： 实现 Echo 适配器的连接
 ![步骤 3 中 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  在以下部分中，你将更新这些 3 个类来更好地理解如何处理连接、 URI 结构是什么，以及如何以编程方式检索各种 URI 元素，然后使用这些元素置于该适配器。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  在开始此步骤之前，你必须已成功完成[步骤 2： 对适配器和连接属性进行分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。 并且你应拥有清楚地了解`Microsoft.ServiceModel.Channels.Common.IConnection`， `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`，和`Microsoft.ServiceModel.Channels.Common.ConnectionUri`类。  
   
 ## <a name="connection-related-classes"></a>连接相关的类  
@@ -47,10 +47,10 @@ ms.lasthandoff: 09/20/2017
 |**方法**|**Description**|  
 |----------------|---------------------|  
 |公共 void 关闭 （TimeSpan 超时）|关闭到目标系统的连接。 Echo 适配器使用此方法仅将跟踪事件添加到跟踪侦听器。|  
-|公共 bool IsValid （TimeSpan 超时）|返回一个值，该值指示连接是否仍有效。<br /><br /> 不支持 Echo 适配器。|  
+|public bool IsValid(TimeSpan timeout)|返回一个值，该值指示连接是否仍有效。<br /><br /> 不支持 Echo 适配器。|  
 |公共 void 打开 （TimeSpan 超时）|打开连接到目标系统。<br /><br /> Echo 适配器的不适用。 但是，该示例显示您如何使用 URI 元素调用 enableAuthentication 来要求用户提供的用户名。|  
-|公共 void ClearContext()|清除连接的上下文。 返回到连接池设置的连接时，调用此方法。<br /><br /> 不支持 Echo 适配器。|  
-|公共 void abort （)|中止连接到目标系统。<br /><br /> 不支持 Echo 适配器。|  
+|public void ClearContext()|清除连接的上下文。 返回到连接池设置的连接时，调用此方法。<br /><br /> 不支持 Echo 适配器。|  
+|public void Abort()|中止连接到目标系统。<br /><br /> 不支持 Echo 适配器。|  
   
 ### <a name="echoadapterconnectionfactory"></a>EchoAdapterConnectionFactory  
  连接工厂负责创建连接。 仅在连接到目标系统时，默认情况下，你必须修改此类。 尽管 Echo 适配器不涉及任何目标系统，它演示如何使用自定义 URI 元素调用 enableAuthentication，如果你的连接需要用户身份验证。  
@@ -64,17 +64,17 @@ ms.lasthandoff: 09/20/2017
 |**方法**|**Description**|  
 |----------------|---------------------|  
 |公共重写 Uri Uri|获取和设置的 Uri。 获取生成的 Uri 字符串和设置要分析的 Uri 字符串。|  
-|公共 EchoAdapterConnectionUri()|初始化 ConnectionUri 类的新实例。|  
-|公共重写字符串 SampleUriString|返回 EchoAdapter.SCHEME +": //{hostname}/{application}?enableAuthentication={True &#124;False}"。<br /><br /> 此返回的字符串将显示为**示例**中[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，如下图中所示。|  
+|public EchoAdapterConnectionUri()|初始化 ConnectionUri 类的新实例。|  
+|公共重写字符串 SampleUriString|返回 EchoAdapter.SCHEME +": //{hostname}/{application}?enableAuthentication={True&#124;False}"。<br /><br /> 此返回的字符串将显示为**示例**中[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，如下图中所示。|  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
 ## <a name="echo-adapter-connection-uri"></a>Echo 适配器连接 URI  
- 示例 Echo 适配器连接 URI 被描述为： EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true &#124; 否则为 false}  
+ 示例 Echo 适配器连接 URI 被描述为： EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
   
  由于 EchoAapter.SCHEME 是 echov2，连接 URI 为着：  
   
- echo2: / lobhostname/lobapplication？ enableAuthentication = {true &#124; 否则为 false}  
+ echo2://lobhostname/lobapplication?enableAuthentication={true&#124;false}  
   
  你可以阅读前一连接 URI 时 enableAuthentication = false，如下所示：  
   
@@ -88,19 +88,19 @@ ms.lasthandoff: 09/20/2017
   
  在下面的代码中，Echo 适配器构造以两种方式显示该适配器可以如何使用各种 URI 元素来修改适配器功能的 URI。  
   
- echo2: / lobhostname/lobapplication？ enableAuthentication = [true &#124; 否则为 false]  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]  
   
- echo2: / lobhostname/lobapplication？ enableAuthentication = [true &#124; 否则为 false] & echoInUpperCase = true  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]&echoInUpperCase=true  
   
 ### <a name="retrieving-the-uri-element"></a>在检索 URI 元素  
  你可以分析每个 URI 元素中的 Echo 适配器 URI echo2: / lobhostname/lobapplication？ enableAuthentication = false echoInUpperCase = false。  下表中列出了 URI 的元素值和关联的方法：  
   
 |**URI 元素值**|**方法**|  
 |---------------------------|----------------|  
-|lobhostname|`System.Uri.Host%2A`若要检索的主机名|  
-|Lobapplication|`System.Uri.AbsolutePath%2A`若要检索的目标应用程序名称|  
-|enableAuthentation = false|GetQueryStringValue("enableAuthentication")<br /><br /> 使用此 URI 元素来验证用户凭据**注意：** GetQueryStringValue 是中定义的静态方法`Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
-|echoInUpperValue = false|GetQueryStringValue("echoInUpperValue")<br /><br /> 使用此 URI 元素将传入的字符串转换为大写形式。|  
+|lobhostname|`System.Uri.Host%2A` 若要检索的主机名|  
+|Lobapplication|`System.Uri.AbsolutePath%2A` 若要检索的目标应用程序名称|  
+|enableAuthentation=false|GetQueryStringValue("enableAuthentication")<br /><br /> 使用此 URI 元素来验证用户凭据**注意：** GetQueryStringValue 是中定义的静态方法 `Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
+|echoInUpperValue=false|GetQueryStringValue("echoInUpperValue")<br /><br /> 使用此 URI 元素将传入的字符串转换为大写形式。|  
   
 ### <a name="enableauthentication-uri-element"></a>EnableAuthentication URI 元素  
  目标系统通常要求你提供用于建立到目标系统的连接的客户端凭据。 如前文所述，Echo 适配器不涉及任何目标系统。 作为示例，但它演示如何使用自定义 URI 元素调用 enableAuthentication 提供的凭据。  
@@ -334,4 +334,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>另请参阅  
  [步骤 4： 为 Echo 适配器实现元数据浏览的处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [教程 1：开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

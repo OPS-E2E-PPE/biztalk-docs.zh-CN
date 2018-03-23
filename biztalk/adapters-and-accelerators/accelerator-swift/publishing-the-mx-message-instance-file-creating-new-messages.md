@@ -1,22 +1,22 @@
 ---
-title: "发布 （创建新消息） 的 MX 消息实例文件 |Microsoft 文档"
-ms.custom: 
+title: 发布 （创建新消息） 的 MX 消息实例文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e7e6cdf4-b9db-42be-a92d-10a7471e2c2d
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4082174428f177905527d0c648b4d7ad000dde36
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="publishing-the-mx-message-instance-file-creating-new-messages"></a>发布 （创建新消息） 的 MX 消息实例文件
 **若要发布 MX 消息实例文件：**  
@@ -33,4 +33,4 @@ ms.lasthandoff: 11/28/2017
   
 6.  在上载文档窗口中，单击**确定**。  
   
-7.  新建 SWIFT MX 消息中： \<MessageType\>窗口中的，Namespace 框中，键入**http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageType\>** ，然后单击**确定**。
+7.  新建 SWIFT MX 消息中： \<MessageType\>窗口中的，Namespace 框中，键入 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageType\>**，然后单击**确定**.

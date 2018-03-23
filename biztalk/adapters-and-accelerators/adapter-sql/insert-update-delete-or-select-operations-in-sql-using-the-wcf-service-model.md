@@ -1,22 +1,22 @@
 ---
-title: "插入、 更新、 删除或选择中使用 WCF 服务模型的 SQL 操作 |Microsoft 文档"
-ms.custom: 
+title: 插入、 更新、 删除或选择中使用 WCF 服务模型的 SQL 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 340048ad-ce28-4acf-ae4e-f18bdb3b6f47
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2bc522a1b0b60a9ba0b8407228dd1db65c4e6f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>插入、 更新、 删除或选择中使用 WCF 服务模型的 SQL 操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]发现一组的 SQL Server 数据库表和视图的基本 Insert、 Select、 Update 和 Delete 操作。 通过使用这些操作，你可以执行简单的 SQL Insert、 Select、 Update 和 Delete 语句由 Where 限定目标表或视图上的子句。 本主题将说明了如何使用 WCF 服务模型执行这些操作。  
@@ -34,8 +34,8 @@ ms.lasthandoff: 09/20/2017
   
 |SQL Server 数据库项目|WCF 客户端名称|  
 |----------------------------------|---------------------|  
-|表|TableOp_ [架构] _ [TABLE_NAME] 客户端|  
-|视图|ViewOp_ [架构] _ [VIEW_NAME] 客户端|  
+|表|TableOp_[Schema]_[TABLE_NAME]Client|  
+|视图|ViewOp_[Schema]_[VIEW_NAME]Client|  
   
  [架构] = SQL Server 集合项目;例如，dbo。  
   
@@ -48,10 +48,10 @@ ms.lasthandoff: 09/20/2017
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|Insert|长 [Insert] ([TABLE_NS]。 [TABLE_NAME] [] 的行）;|  
-|选择|[TABLE_NS]。[TABLE_NAME][] 选择 （字符串列，字符串查询）;|  
-|Update|int 更新 ([TABLE_NS]。 [TABLE_NAME]。RowPair [] 的行）;|  
-|DELETE|int 删除 ([TABLE_NS]。 [TABLE_NAME] [] 的行）;|  
+|Insert|long[] Insert([TABLE_NS].[TABLE_NAME][] Rows);|  
+|选择|[TABLE_NS].[TABLE_NAME][] Select(string COLUMNS, string QUERY);|  
+|Update|int Update([TABLE_NS].[TABLE_NAME].RowPair[] Rows);|  
+|删除|int Delete([TABLE_NS].[TABLE_NAME][] Rows);|  
   
  [TABLE_NS] = 表命名空间; 的名称例如，schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee。  
   
@@ -130,7 +130,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
     client.ClientCredentials.UserName.Password = "<Enter password here>";  
     ```  
   
-     在此代码段，`TableOp_dbo_EmployeeClient`是 SqlAdapterBindingClient.cs 中定义的 WCF 客户端。 此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 `SqlAdapterBinding_TableOp_dbo_Employee`是客户端终结点配置的名称，并在 app.config 中定义。此文件也会生成由[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，其中包含的绑定属性和其他配置设置。  
+     在此代码段，`TableOp_dbo_EmployeeClient`是 SqlAdapterBindingClient.cs 中定义的 WCF 客户端。 此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 `SqlAdapterBinding_TableOp_dbo_Employee` 是客户端终结点配置的名称，并在 app.config 中定义。此文件也会生成由[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，其中包含的绑定属性和其他配置设置。  
   
     > [!NOTE]
     >  在此代码段中，你使用的绑定和终结点地址从配置文件。 你还可显式指定这些值在代码中。 指定客户端绑定的不同方法的详细信息，请参阅[为该 SQL 适配器配置客户端绑定](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)。  
@@ -296,4 +296,4 @@ catch (Exception ex)
 ```  
   
 ## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[使用 WCF 服务模型开发应用程序](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

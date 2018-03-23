@@ -1,22 +1,22 @@
 ---
-title: "使用 BizTalk 服务器项目中的 WCF LOB 适配器 SDK 适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk 服务器项目中的 WCF LOB 适配器 SDK 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041f14cc-d00f-450d-b1e9-40a3e423c510
-caps.latest.revision: "15"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 84f81d23b56c2631879f366e6fe502840408a0d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a>使用 BizTalk 服务器项目中的 WCF LOB 适配器 SDK 适配器
 本主题介绍如何使用适配器使用生成[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开.NET 应用程序中的[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
   
-2.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]中**项目**窗格中，右键单击你[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]项目，，然后选择**添加**&#124;**添加生成的项**&#124;**使用适配器服务**。  
+2.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]中**项目**窗格中，右键单击你[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]项目，，然后选择**添加**&#124;**添加生成的项** &#124; **使用适配器服务**。  
   
 3.  在[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]屏幕上，选择适配器绑定。  
   

@@ -1,22 +1,22 @@
 ---
-title: "步骤 1： 测试的 Echo 适配器的出站处理程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 测试的 Echo 适配器的出站处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4a8164-a584-436f-b20b-4c884f6e2b37
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>步骤 1： 测试 Echo 适配器的出站处理的程序
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -25,7 +25,7 @@ ms.lasthandoff: 10/17/2017
   
  在此步骤中，你将测试由 Echo 适配器提供的三个出站操作。 你将执行此操作使用 Visual Studio 中，添加适配器服务引用 Visual Studio 插件和自定义代码。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  若要完成此步骤，你必须已完成[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。  
   
 ## <a name="create-a-visual-studio-project"></a>创建 Visual Studio 项目  
@@ -34,12 +34,12 @@ ms.lasthandoff: 10/17/2017
   
 2.  在 Visual Studio 中，在**文件**菜单上，指向**新建**，然后单击**项目**。  
   
-3.  在**新项目**对话框框中，执行以下操作：  
+3.  在 **新项目** 对话框框中，执行以下操作︰  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**项目类型**|单击**Visual C#**。|  
-    |**模板**|单击**控制台应用程序**。|  
+    |**项目类型**|单击 **Visual C#**。|  
+    |**模板**|单击 **控制台应用程序**。|  
     |**名称**|类型**ConsumeEchoAdapter_Outbound**。|  
     |**位置**|类型**C:\Tutorials**。|  
     |**解决方案名称**|类型**ConsumeEchoAdapter_Outbound**。|  
@@ -99,7 +99,7 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="create-a-sample-xml-file"></a>创建示例 XML 文件  
   
-1.  启动记事本实例。 使用开始菜单中，单击**所有程序**&#124;**附件**，然后选择**记事本**。  
+1.  启动记事本实例。 使用开始菜单中，单击**所有程序** &#124; **附件**，然后选择**记事本**。  
   
 2.  将下面的示例数据复制到记事本编辑器。  
   
@@ -194,15 +194,15 @@ ms.lasthandoff: 10/17/2017
   
      **对适配器调用 EchoStrings() 方法...**  
   
-     **Bonjour ！**  
+     **Bonjour!**  
   
-     **Bonjour ！**  
+     **Bonjour!**  
   
-     **Bonjour ！**  
+     **Bonjour!**  
   
-     **Bonjour ！**  
+     **Bonjour!**  
   
-     **Bonjour ！**  
+     **Bonjour!**  
   
      **对适配器调用 EchoGreetings() 方法...**  
   
@@ -230,4 +230,4 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="see-also"></a>另请参阅  
   [教程 2： 使用.NET Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
- [步骤 2： 测试入站的回显适配器处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)
+ [步骤 2：测试 Echo 适配器的入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)

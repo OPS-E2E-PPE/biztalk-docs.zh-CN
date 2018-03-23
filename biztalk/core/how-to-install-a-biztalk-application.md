@@ -1,11 +1,11 @@
 ---
-title: "如何安装 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何安装 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, requirements
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - installing, warnings
 - applications, installing
 ms.assetid: 99ee0b1a-d46a-4fb6-802b-6827dc740418
-caps.latest.revision: "56"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ffc3d1d6d8fdbfcc168446883e2b65a7d8ed0351
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-install-a-biztalk-application"></a>如何安装 BizTalk 应用程序
 本主题介绍如何通过在 Windows 界面中双击应用程序的 Windows Installer (.msi) 文件或从命令行运行 msiexec 来在本地计算机上安装应用程序。 你也可以启动安装向导导入向导的最后一步骤中所述[如何导入 BizTalk 应用程序](../core/how-to-import-a-biztalk-application.md)。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/01/2017
  若要执行本主题中所述的过程，必须用在本地文件系统上具有写权限的帐户进行登录。 根据应用程序中所包括的项目，可能还需要对 Windows 注册表、GAC、证书存储和 Internet 信息服务拥有写权限。 本地计算机的管理员帐户拥有这些权限。 有关更多详细权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ## <a name="considerations-for-installing-an-application"></a>安装应用程序的注意事项  
- 在安装应用程序时，可能适用以下注意事项：  
+ 在安装应用程序时，可能适用以下注意事项︰  
   
 -   **你还必须安装此应用程序所依赖的任何应用程序。** 如果某个项目（如 BizTalk 程序集）包含在另一个应用程序中，而要安装的应用程序之该项目之间存在依存关系，则在安装该应用程序时，还必须安装包含该项目的应用程序。 可以运行应用程序之前，你必须执行此操作。 例如，如果应用程序 A 依赖于应用程序 B 中的程序集，你还必须安装应用程序 b。然后，你可以安装应用程序 a。有关背景信息，请参阅[依赖关系和应用程序部署](../core/dependencies-and-application-deployment.md)。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 -   **如果目标目录的长度超过 260 个字符，可能会遇到问题。** 如果在安装 MSI 包过程中指定的目标目录的字符数超过 260 个字符，则安装将失败。 若要解决此问题，应确保为目标目录指定的字符数不超过 260 个字符。  
   
--   **不应该重新定位的安装文件夹。** 安装应用程序后，不应该重新定位安装文件夹或其中包含的文件。 如果这样做了，则以后尝试删除（卸载）应用程序时，删除操作将失败。 特别需要注意的是，应用程序安装文件夹中包含由 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的文件，这些文件是执行删除所必需的文件。 不应该重命名、移动或删除这些文件。 文件包括：  
+-   **不应该重新定位的安装文件夹。** 安装应用程序后，不应该重新定位安装文件夹或其中包含的文件。 如果这样做了，则以后尝试删除（卸载）应用程序时，删除操作将失败。 特别需要注意的是，应用程序安装文件夹中包含由 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的文件，这些文件是执行删除所必需的文件。 不应该重命名、移动或删除这些文件。 文件包括︰  
   
     -   ApplicationDefinition.adf  
   
@@ -81,19 +81,19 @@ ms.lasthandoff: 12/01/2017
 >  如果在安装完成之前取消安装操作，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将回滚安装，但在取消操作之前由预处理或后处理脚本执行的操作除外。  
   
 > [!IMPORTANT]
->  在安装任何应用程序之前，请确保从可信来源获得 .msi 文件。 恶意用户可能会在 .msi 文件中包括代码，这些代码会对系统或网络造成不良影响。  有关详细信息，请参阅[安全和 Windows Installer](../core/security-and-windows-installer.md)。  
+>  在安装任何应用程序之前，请确保从可信来源获得 .msi 文件。 恶意用户可能会在 .msi 文件中包括代码，这些代码会对系统或网络造成不良影响。  有关详细信息，请参阅 [安全和 Windows Installer](../core/security-and-windows-installer.md)。  
 >   
 >  如果应用程序包括网站或使用 Web Services 的业务流程，则应注意，虚拟目录上的安全设置是在应用程序导出过程中生成 .msi 文件时起作用的安全设置，除非已经存在虚拟目录，此时会使用现有的设置。 安装应用程序后，应验证设置是否满足安全要求。  
 >   
 >  导出应用程序时，会从文件和文件夹删除 Alldiscretionary 访问控制列表 (Dacl)。 在主机实例上安装应用程序以后，必须在文件和文件夹（包括虚拟目录）上重新配置所有安全设置。  
   
--   **你可能需要更改本地路径： HTTP 引用的虚拟目录的指定目标计算机上创建后接收位置。**  
+-   **你可能需要更改本地路径︰ HTTP 引用的虚拟目录的指定目标计算机上创建后接收位置。**  
   
-     在目标计算机上创建虚拟目录时它将指向以下物理目录之一：  
+     在目标计算机上创建虚拟目录时它将指向以下物理目录之一︰  
   
      \<*安装驱动器*\>files\microsoft BizTalk Server\HttpReceive  
   
-     \-**或**–  
+     \- **or** –  
   
      \<*安装驱动器*\>\Program 文件 (x86) \Microsoft BizTalk Server\HttpReceive  
   
@@ -105,13 +105,13 @@ ms.lasthandoff: 12/01/2017
   
 1.  将应用程序的 .msi 文件复制到本地计算机。  
   
-2.  如果要重新安装或升级现有的 BizTalk 应用程序，并且新的安装过程中包括具有相同版本作为一个已存在于该应用程序，或与你要更新的项目进行交互的程序集，确保应用程序已停止通过右键单击应用程序文件夹，然后单击**停止**。  
+2.  如果要重新安装或升级现有的 BizTalk 应用程序，并且新的安装过程中包括具有相同版本作为一个已存在于该应用程序，或与你要更新的项目进行交互的程序集，请确保应用程序已停止通过右键单击应用程序文件夹，然后单击 **停止**。  
   
 3.  在 Windows 资源管理器中，双击 .msi 文件启动安装向导。  
   
-4.  上**选择安装文件夹**页上，在**文件夹**，键入 BizTalk 应用程序的完整安装路径。 示例： C:\Program Files\Generated BizTalk\MyApplication 通过。  
+4.  上 **选择安装文件夹** 页上，在 **文件夹**, ，键入 BizTalk 应用程序的完整安装路径。 示例︰ C:\Program Files\Generated BizTalk\MyApplication 通过。  
   
-5.  单击**下一步**四次，然后在**安装完成**页上，单击**关闭**。  
+5.  单击 **下一步** 四次，然后在 **安装完成** 页上，单击 **关闭**。  
   
 6.  如果有多台计算机将运行该应用程序，请在每台计算机上重复上述步骤。  
   
@@ -121,25 +121,25 @@ ms.lasthandoff: 12/01/2017
   
 1.  将应用程序的 .msi 文件复制到本地计算机。  
   
-2.  单击**启动**，单击**运行**，类型`cmd`，然后按 ENTER。  
+2.  单击 **启动**, ，单击 **运行**, ，类型 `cmd`, ，然后按 ENTER。  
   
 3.  定位到存储 .msi 文件的位置。  
   
-4.  键入以下命令以安装应用程序，提供适当的参数和值下, 表中所示：  
+4.  键入以下命令以安装应用程序，提供适当的参数和值下, 表中所示︰  
   
     > [!IMPORTANT]
     >  仅支持下表中显示的 msiexec 的参数。  
   
-     **msiexec** [**/i**]*包*[**/qn**] **TARGETDIR ="***值***"**]  
+     **msiexec** [**/i**] *Package* [**/qn**] **TARGETDIR="***value***"**]  
   
-     示例： **msiexec /i MyApplication.msi**  
+     示例︰ **msiexec /i MyApplication.msi**  
   
-    |参数|值|  
+    |参数|“值”|  
     |---------------|-----------|  
     |**/i**|安装应用程序。|  
-    |*“包”*|Windows Installer (.msi) 文件的名称。|  
+    |*包*|Windows Installer (.msi) 文件的名称。|  
     |**/qn**|执行安装而不显示用户界面。|  
-    |**TARGETDIR ="** *值* **"**|指定应用程序安装文件夹。 此值也可以在 %BTAD_InstallDir% 环境变量中设置。<br /><br /> 示例： TARGETDIR ="C:\Programs\BizTalk Applications\My 应用程序"|  
+    |**TARGETDIR ="** *值* **"**|指定应用程序安装文件夹。 此值也可以在 %BTAD_InstallDir% 环境变量中设置。<br /><br /> 示例︰ TARGETDIR ="C:\Programs\BizTalk Applications\My 应用程序"|  
   
 5.  如果有多台计算机将运行该应用程序，请在每台计算机上重复上述步骤。  
   

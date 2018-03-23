@@ -1,21 +1,21 @@
 ---
-title: "为企业应用程序安装 BizTalk 适配器 |Microsoft 文档"
-description: "要求和博士 Edwards OneWorld，博士 Edwards EnterpriseOne PeopleSoft 企业、 TIBCO 会合和 TIBCO 企业消息服务 BizTalk Server 上的安装步骤"
-ms.custom: 
+title: 为企业应用程序安装 BizTalk 适配器 |Microsoft 文档
+description: 要求和博士 Edwards OneWorld，博士 Edwards EnterpriseOne PeopleSoft 企业、 TIBCO 会合和 TIBCO 企业消息服务 BizTalk Server 上的安装步骤
+ms.custom: ''
 ms.date: 10/13/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8fa1a09f3d9fa531cee51ecd0e94b99ab972ba13
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a>安装和配置 Microsoft BizTalk 适配器为企业应用程序 
   
@@ -38,13 +38,13 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="supported-versions--requirements"></a>支持的版本和要求
 
-||要求|  
+||需求|  
 |---|---|
 |操作系统|适配器支持作为 BizTalk Server 相同的操作系统：<ul><li>[BizTalk Server 2016 要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)</li><li>[BizTalk Server 2013 R2 / 2013年要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)</li></ul>|
 |支持的企业系统|[支持的业务线 (LOB) 和企业系统](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)列出支持的版本 |
 |JD Edwards OneWorld XE | <ul><li>在 Windows 上的博士 Edwards 企业服务器</li><li>在 Windows 上的博士 Edwards 部署服务器</li></ul>|
 |JD Edwards EnterpriseOne | 适配器调用博士 Edwards EnterpriseOne API 使用 JDBC，数据库需要驱动程序。 如果安装 JD Edwards EnterpriseOne 的同时安装了 SQL 数据库，则需要 MS-SQL 驱动程序。 同样使用 Oracle 数据库安装博士 Edwards EnterpriseOne，如果你需要 Oracle 驱动程序;或者，如果你安装与 DB2 数据库，你需要 DB2 驱动程序。 |
-|PeopleSoft Enterprise | <ul><li>Sun Systems Java 开发工具包 (JDK)</li><li>PeopleSoft 工具版本</li><li>PeopleSoft 应用程序版本</li><li>此适配器需要 PeopleSoft 应用程序的修改。 若要使用组件接口，将上载到 PeopleSoft 的自定义组件接口，GET_CI_INFO，。 GET_CI_INFO.pc 程序 Files\Common Files\Microsoft BizTalk 适配器中用于 Enterprise Applications\PeopleSoft Enterprise(r) \Config\。</li></ul>|
+|PeopleSoft Enterprise | <ul><li>Sun Systems Java 开发工具包 (JDK)</li><li>PeopleSoft 工具版本</li><li>PeopleSoft 应用程序版本</li><li>此适配器需要 PeopleSoft 应用程序的修改。 若要使用组件接口，将上载到 PeopleSoft 的自定义组件接口，GET_CI_INFO，。 GET_CI_INFO.pc is in Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Config\.</li></ul>|
 |TIBCO Rendezvous | <ul><li>必须用于 TIBCO 会合的 BizTalk Adapter 正在其中运行的计算机上安装 TIBCO 会合运行时组件</li><li>必须在用于 TIBCO 会合的 BizTalk Adapter 正在其中运行的计算机上配置 TIBCO 会合许可证。</li><li>TIBCO Rendezvous 二进制文件目录必须对该适配器可见：在环境变量 PATH 值中，或在 BizTalk 服务器中的每个 Rendezvous 端口上指定。 这对于 Rendezvous 程序集查找它的库和可执行文件是必需的。</li></ul>|
 |TIBCO Enterprise Message Service | 企业消息服务 (EMS) 版本 5.x 和更高版本包括客户端 SDK （使用 TIBCO EMS C# API）。 用于 TIBCO EMS 的 BizTalk Adapter 使用它来与服务器通信。 |
 
@@ -65,11 +65,11 @@ ms.lasthandoff: 10/17/2017
  这些文件位于运行 JD Edwards OneWorld 的计算机上的以下位置：  
   
 -   JD Edwards OneWorld XE_install_Directory\System\classes\Connector.jar    
--   博士 Edwards OneWorld XE_install_Directory\System\classes\Kernel.jar  
+-   JD Edwards OneWorld XE_install_Directory\System\classes\Kernel.jar  
   
  你可将这些文件复制到任何位置；但是，必须指定 CLASSPATH 中的 JAR 文件位置。 CLASSPATH 必须包括文件的完整路径和 JAR 文件的名称（用分号隔开）。  
   
- 用于 JD Edwards OneWorld 的 BizTalk 适配器提供 JDEJAccess JAR 文件以用于 JD Edwards OneWorld。 默认情况下，从引用 JDEJAccess.jar 文件*用于企业 Applications\J.D 程序 Files\Common Files\Microsoft BizTalk 适配器。Edwards OneWorld(r) \classes\JDEJAccess.jar*。 
+ 用于 JD Edwards OneWorld 的 BizTalk 适配器提供 JDEJAccess JAR 文件以用于 JD Edwards OneWorld。 默认情况下，从引用 JDEJAccess.jar 文件*用于企业 Applications\J.D 程序 Files\Common Files\Microsoft BizTalk 适配器。Edwards OneWorld(r)\classes\JDEJAccess.jar*. 
   
 > [!NOTE]
 >  你必须在可以使用用于 JD Edwards OneWorld 的 BizTalk 适配器之前验证 jdeinterop.ini 文件的注册。 请确保包括在此文件的路径**JDE 传输属性**页在 BizTalk Server 中创建发送端口。 完整说明，请参阅"自定义 jdeinterop.ini 文件。"  
@@ -357,11 +357,11 @@ ms.lasthandoff: 10/17/2017
   
 |部分|参数和描述|  
 |-------------|-------------------------------|  
-|[JDENET]|**EnterpriseServerTimeout。** 对企业服务器的请求的超时值（以毫秒为单位）。 默认大小为 120000。<br /><br /> **maxPoolSize。** JDENET 套接字连接池大小。 默认大小为 30。|  
-|[SERVER]|**glossaryTextServer。** 提供词汇表文本信息的企业服务器和端口。 这是返回错误的文本说明的服务器。 这通常是与 JD Edwards OneWorld 应用程序服务器相同的主机和端口。 不同的受支持的语言编码可能有不止一个词汇表服务器。 例如，JDED:6010 或 actsrv1:6009。 值必须匹配那些在系统定义中设置。<br /><br /> **代码页。** 编码方案。 默认为 1252。<br /><br /> -1252年英文和西欧欧洲<br /><br /> -932 日语<br /><br /> -950 中文 （繁体)<br /><br /> -936 中文 （简体的)<br /><br /> -949 朝鲜语|  
-|[LOGS]|**日志 = c:\jas.log。** 日志文件的位置。 可以安全地忽略此参数。<br /><br /> **debuglog = c:\jasdebug.log。** 调试日志文件的位置。 可以安全地忽略此参数。<br /><br /> **调试。** 确定是否已启用 JDENET 调试。 默认值为 FALSE。|  
-|[DEBUG]|**JobFile = c:\Interop.log。** 错误文件的位置。 可以安全地忽略此参数。<br /><br /> **DebugFile = c:\InteropDebug.log。** 调试文件的位置。 可以安全地忽略此参数。<br /><br /> **日志 = c:\net.log。** 日志文件的位置。 可以安全地忽略此参数。<br /><br /> **debugLevel = 0-12。** 调试级别。 可以安全地忽略此参数。 此项定义了由仅在 COM 服务器中的指定日志文件中的 COM 连接器和 Callobject 组件提供的跟踪级别。<br /><br /> -0 none。 关闭日志记录并仅将错误写入 JobFile。<br /><br /> -2 的错误 （错误消息）<br /><br /> -4 系统错误 （异常消息）<br /><br /> -6 警告信息<br /><br /> -8 分钟跟踪 （密钥操作。 例如，登录、注销、业务函数调用。）<br /><br /> -10 疑难解答信息 （帮助）。<br /><br /> -12 完整的调试信息 （记录的所有内容）<br /><br /> -默认情况下，无需启用跟踪，但当你正在调试你的代码时，跟踪非常有用。<br /><br /> -NetTraceLevel = 0。 跟踪级别。 可以安全地忽略此参数。 定义 ThinNet 组件在指定的日志文件，请在 COM 服务器仅中提供的跟踪级别。 对于未来要添加的级别保留奇数值。<br /><br /> -以下列表介绍更多的调试级别：<br /><br /> -0 不跟踪<br /><br /> -1 引用位置记录进程 ID、 线程 ID 以及可用的套接字状态中添加新的连接时，如果搜索的套接字池。<br /><br /> -2 包括跟踪级别 1 中的信息和也跟踪在连接管理器类中所做的每个调用。<br /><br /> -3 包括跟踪级别 2，和也跟踪 getPort() 的调用和 getHost() 调用中的所有信息。|  
-|[INTEROP]|**enterpriseServer。** 此值是主机服务器的名称。 请确保此值是相同的值中输入**主机名**字段**JDE 凭据**主题中**系统定义**中**传输属性**对话框。 默认值为 JDED。<br /><br /> **端口。** 此值是用于交换数据的端口号。 请确保此值是相同的值中输入**端口号**字段博士 Edwards**凭据**主题中**传输属性，系统定义**. 例如，6010 或 6009。 值必须匹配那些在中设置**系统定义**。<br /><br /> **inactive_timeout**。 自动提交模式下的事务的超时值（以毫秒为单位）。 如果用户在这段时间（以毫秒为单位）处于非活动状态，互操作的服务器将注销用户。 可以将此值更改为较短的时间段。 默认值为 1200000。<br /><br /> **manual_timeout。** 以毫秒为单位在手动提交模式下事务超时值。 默认值为 120000。<br /><br /> **存储库。** 指向包含 Connector.jar 和 Kernel.jar 的目录的位置。 在 UNIX 上，这是完整路径。|  
+|[JDENET]|**EnterpriseServerTimeout.** 对企业服务器的请求的超时值（以毫秒为单位）。 默认大小为 120000。<br /><br /> **maxPoolSize.** JDENET 套接字连接池大小。 默认大小为 30。|  
+|[SERVER]|**glossaryTextServer.** 提供词汇表文本信息的企业服务器和端口。 这是返回错误的文本说明的服务器。 这通常是与 JD Edwards OneWorld 应用程序服务器相同的主机和端口。 不同的受支持的语言编码可能有不止一个词汇表服务器。 例如，JDED:6010 或 actsrv1:6009。 值必须匹配那些在系统定义中设置。<br /><br /> **codePage.** 编码方案。 默认为 1252。<br /><br /> -1252年英文和西欧欧洲<br /><br /> -932 日语<br /><br /> -950 中文 （繁体)<br /><br /> -936 中文 （简体的)<br /><br /> -949 朝鲜语|  
+|[LOGS]|**log= c:\jas.log.** 日志文件的位置。 可以安全地忽略此参数。<br /><br /> **debuglog = c:\jasdebug.log。** 调试日志文件的位置。 可以安全地忽略此参数。<br /><br /> **调试。** 确定是否已启用 JDENET 调试。 默认值为 FALSE。|  
+|[DEBUG]|**JobFile= c:\Interop.log.** 错误文件的位置。 可以安全地忽略此参数。<br /><br /> **DebugFile = c:\InteropDebug.log。** 调试文件的位置。 可以安全地忽略此参数。<br /><br /> **log= c:\net.log.** 日志文件的位置。 可以安全地忽略此参数。<br /><br /> **debugLevel = 0-12。** 调试级别。 可以安全地忽略此参数。 此项定义了由仅在 COM 服务器中的指定日志文件中的 COM 连接器和 Callobject 组件提供的跟踪级别。<br /><br /> -0 none。 关闭日志记录并仅将错误写入 JobFile。<br /><br /> -2 的错误 （错误消息）<br /><br /> -4 系统错误 （异常消息）<br /><br /> -6 警告信息<br /><br /> -8 分钟跟踪 （密钥操作。 例如，登录、注销、业务函数调用。）<br /><br /> -10 疑难解答信息 （帮助）。<br /><br /> -12 完整的调试信息 （记录的所有内容）<br /><br /> -默认情况下，无需启用跟踪，但当你正在调试你的代码时，跟踪非常有用。<br /><br /> - NetTraceLevel=0. 跟踪级别。 可以安全地忽略此参数。 定义 ThinNet 组件在指定的日志文件，请在 COM 服务器仅中提供的跟踪级别。 对于未来要添加的级别保留奇数值。<br /><br /> -以下列表介绍更多的调试级别：<br /><br /> -0 不跟踪<br /><br /> -1 引用位置记录进程 ID、 线程 ID 以及可用的套接字状态中添加新的连接时，如果搜索的套接字池。<br /><br /> -2 包括跟踪级别 1 中的信息和也跟踪在连接管理器类中所做的每个调用。<br /><br /> -3 包括跟踪级别 2，和也跟踪 getPort() 的调用和 getHost() 调用中的所有信息。|  
+|[INTEROP]|**enterpriseServer.** 此值是主机服务器的名称。 请确保此值是相同的值中输入**主机名**字段**JDE 凭据**主题中**系统定义**中**传输属性**对话框。 默认值为 JDED。<br /><br /> **端口。** 此值是用于交换数据的端口号。 请确保此值是相同的值中输入**端口号**字段博士 Edwards**凭据**主题中**传输属性，系统定义**. 例如，6010 或 6009。 值必须匹配那些在中设置**系统定义**。<br /><br /> **inactive_timeout**。 自动提交模式下的事务的超时值（以毫秒为单位）。 如果用户在这段时间（以毫秒为单位）处于非活动状态，互操作的服务器将注销用户。 可以将此值更改为较短的时间段。 默认值为 1200000。<br /><br /> **manual_timeout.** 以毫秒为单位在手动提交模式下事务超时值。 默认值为 120000。<br /><br /> **存储库。** 指向包含 Connector.jar 和 Kernel.jar 的目录的位置。 在 UNIX 上，这是完整路径。|  
 |[CORBA]|可以安全地忽略此参数。<br /><br /> **多线程。** 该设置可以被忽略。 将 CORBA 的多线程支持设置为 1。<br /><br /> Objects= CORBA::Connector；CORBA::OneWorldVersion<br /><br /> 定义要在启动时创建的 CORBA 服务器的对象。 此外将替换-DIORFILENAME = 命令行选项，例如： CORBA::Connector=connector.ior。|  
   
 ## <a name="jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne  
@@ -400,7 +400,7 @@ ms.lasthandoff: 10/17/2017
  如果在日志中收到 jdearglist.txt 警告消息，其目的是通知 jdearglist.txt 是缺失。 但是，如果运行了 SalesOrder 或 PurchaseOrder 业务函数，必须在你的路径具有该文件，或它不起作用。  
   
 ### <a name="understand-jdeinteropini"></a>了解 jdeinterop.ini  
- Connector.jar 和 Kernel.jar 中的 JD Edwards EnterpriseOne 连接器类需要你使用名为 jdeinterop.ini 的配置文件。 此文件由博士 Edwards EnterpriseOne 软件定义，并使用其术语。 有关的用途和术语的此文件的详细信息，请参阅博士 Edwards 互操作性指南。 还有一个示例 jdeinterop.ini 文件中： 程序 Files\ Microsoft 企业 Applications\ J.D.BizTalk 适配器 Edwards EnterpriseOne(r) \config。  
+ Connector.jar 和 Kernel.jar 中的 JD Edwards EnterpriseOne 连接器类需要你使用名为 jdeinterop.ini 的配置文件。 此文件由博士 Edwards EnterpriseOne 软件定义，并使用其术语。 有关的用途和术语的此文件的详细信息，请参阅博士 Edwards 互操作性指南。 还有一个示例 jdeinterop.ini 文件中： 程序 Files\ Microsoft 企业 Applications\ J.D.BizTalk 适配器 Edwards EnterpriseOne(r)\config.  
   
  建议不要因为它与交互手动编辑此文件**传输属性**发送端口-例如标记为这些字段的对话框中**< 由 BizTalk 配置\>**.  
   
@@ -434,7 +434,7 @@ ms.lasthandoff: 10/17/2017
   
 #### <a name="set-classpath-environment-variable"></a>设置类路径环境变量  
 
-**更新 JAVA_HOME**    
+**Update JAVA_HOME**    
   
  设置 JAVA_HOME 变量，使其指向您的 JDK 安装，例如：  
   
@@ -499,7 +499,7 @@ and bc2.BCTYPE in (1, 2))
   
 3.  在应用程序设计器上**文件**菜单上，选择**新建**。  
   
-4.  在**新建**对话框中，选择**组件接口**，然后单击**确定**。  
+4.  在 **新建** 对话框中，选择 **组件接口**, ，然后单击 **确定**。  
   
 5.  然后单击“选择”。  
   
@@ -538,7 +538,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 3.  在**权限列表**在右侧窗格中单击向右箭头旁边**登录时间**选项卡以显示**组件接口**选项卡。  
   
-4.  单击**组件接口**选项卡。  
+4.  单击 **组件接口** 选项卡。  
   
 5.  单击加号 （+） 以添加新行**组件接口**列表。  
   
@@ -616,7 +616,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
   
 4.  选择从输入的名称**适配器**列表，然后选择**确定**。  
    
-## <a name="post-install---jd-edwards-oneworld"></a>安装后的博士 Edwards OneWorld  
+## <a name="post-install---jd-edwards-oneworld"></a>Post-install - JD Edwards OneWorld  
  Microsoft BizTalk Adapter for 博士 Edwards OneWorld 包含接口支持的数据库和给 Microsoft BizTalk Server 的服务器系统的传输适配器。 通过传输适配器，你可以从 BizTalk 服务器调用服务器系统。 传输适配器（BizTalk 服务器管理发送处理程序）配置指定 SQL 数据库的位置。  
   
  有关如何使用用于 JD Edwards OneWorld 的 BizTalk 适配器以及在它的模型和 BizTalk 服务器模型之间进行映射的详细信息，请参阅适配器文档。  
@@ -653,7 +653,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll    
     -   jdecba.dll  
   
-## <a name="post-install---jd-edwards-enterpriseone"></a>安装后的博士 Edwards EnterpriseOne  
+## <a name="post-install---jd-edwards-enterpriseone"></a>Post-install - JD Edwards EnterpriseOne  
  Microsoft BizTalk Adapter for 博士 Edwards EnterpriseOne 包含可以与支持的数据库和给 BizTalk Server 的服务器系统的接口的传输适配器。 传输适配器允许你从 BizTalk 服务器调用服务系统。  
   
  用于博士 Edwards EnterpriseOne 的 BizTalk Adapter 提供支持的企业单一登录 (SSO)。 如果你选择使用的 SSO**传输属性**页上，凭据用于 SSO 凭据数据库中的关联应用程序。 关联应用程序表示一个应用程序 - 一个需要凭据的后端。  
@@ -683,7 +683,7 @@ select distinct BCNAME from PSBCITEM bc1 where not exists (select 1 from PSBCITE
     -   Sdk  
   
  
-## <a name="post-install---peoplesoft-enterprise"></a>安装后的 PeopleSoft 企业  
+## <a name="post-install---peoplesoft-enterprise"></a>Post-install - PeopleSoft Enterprise  
  用于 PeopleSoft Enterprise 的 Microsof BizTalk 适配器包括一个传输适配器，该适配器将支持的数据库和服务器系统与 BizTalk 服务器相连接。 传输适配器允许你从 BizTalk 服务器调用服务系统。 传输适配器（BizTalk 服务器管理发送处理程序）配置指定 SQL 数据库的位置。  
   
  用于 PeopleSoft 企业的 BizTalk Adapter 提供支持的企业单一登录 (SSO)。 如果你选择使用的 SSO**传输属性**页上，凭据用于 SSO 凭据数据库中的关联应用程序。 关联应用程序表示一个应用程序 - 一个需要凭据的后端。  
@@ -857,7 +857,7 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
     为了让使用者应用程序能够读取 .etl 文件中的事件，Windows 事件跟踪必须将其转储到该文件中。 通常，当控制器停用跟踪时执行此操作。  
   
-    若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **< 实时\>=-rt**。  
+    若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **< 实时\> =-rt**。  
   
 * **提供程序：**用于提供事件。  
   
@@ -896,9 +896,9 @@ BTA<Adapter Name>Trace <Trace element> -stop
   
  **-启动、-停止：**激活或停用该提供程序。  
   
- **-cir < MB\>:**大小和类型的文件。 **-cir**是圆形文件。 **< MB\>:**大小以兆字节为单位。  
+ **-cir < MB\>:**大小和类型的文件。 **-cir** 是圆形文件。 **< MB\>:**大小以兆字节为单位。  
   
- **-seq < MB\>:**大小和类型的文件。 **-seq**是连续的文件。 **< MB\>:**大小以兆字节为单位。  
+ **-seq < MB\>:**大小和类型的文件。 **-seq** 是连续的文件。 **< MB\>:**大小以兆字节为单位。  
   
  **-rt:**上设置的实时模式。  
   

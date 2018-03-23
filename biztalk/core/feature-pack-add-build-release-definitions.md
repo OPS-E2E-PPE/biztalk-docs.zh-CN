@@ -1,27 +1,27 @@
 ---
-title: "第 3 步-创建的生成和发布定义 |Microsoft 文档"
-description: "在 VSTS，创建要生成你的 git 或 TFS 存储库中的项目，然后创建要部署 BizTalk Server 应用程序的版本定义的生成定义"
-ms.custom: 
+title: 第 3 步-创建的生成和发布定义 |Microsoft 文档
+description: 在 VSTS，创建要生成你的 git 或 TFS 存储库中的项目，然后创建要部署 BizTalk Server 应用程序的版本定义的生成定义
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>步骤 3： 创建构建并发布定义
 
 生成和发布定义 Visual Studio Team Services 任务，并且可能通过 VSTS 管理员联系。生成定义将生成在 git 存储库时，项目和版本定义将将其部署到您的 BizTalk Server 环境。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>開始之前
 完成[步骤 2-创建 VSTS 令牌并安装代理](feature-pack-create-vsts-token.md)。
 
 ## <a name="add-the-build-tasks"></a>添加生成任务
@@ -101,7 +101,7 @@ ms.lasthandoff: 11/21/2017
 
     **部署包**： 选择您的应用程序项目，该 zip 文件，然后选择**确定**。 
 
-8. 选择**代理阶段**任务。 选择**默认**代理队列。 **保存**所做的更改。
+8. 选择**代理阶段**任务。 选择**默认**代理队列。 **保存** 所做的更改。
 
 9. 选择**释放** > **创建版本**:  
 
