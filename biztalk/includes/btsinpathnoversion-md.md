@@ -1,1 +1,1 @@
-<span data-ttu-id="56bfe-101">InfoPath</span><span class="sxs-lookup"><span data-stu-id="56bfe-101">InfoPath</span></span>
+<span data-ttu-id="4b8b2-101">InfoPath</span><span class="sxs-lookup"><span data-stu-id="4b8b2-101">InfoPath</span></span>

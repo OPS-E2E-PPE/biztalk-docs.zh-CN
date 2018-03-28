@@ -1,1 +1,1 @@
-<span data-ttu-id="d0279-101">Windows Server 2008 SP2</span><span class="sxs-lookup"><span data-stu-id="d0279-101">Windows Server 2008 SP2</span></span>
+<span data-ttu-id="0471e-101">Windows Server 2008 SP2</span><span class="sxs-lookup"><span data-stu-id="0471e-101">Windows Server 2008 SP2</span></span>

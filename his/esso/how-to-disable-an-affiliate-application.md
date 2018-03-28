@@ -1,0 +1,46 @@
+---
+title: 如何禁用关联应用程序 |Microsoft 文档
+ms.custom: ''
+ms.date: 11/30/2017
+ms.prod: host-integration-server
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: a7df6e78-6d18-443d-82dc-4351c20a8c4e
+caps.latest.revision: ''
+author: gplarsen
+ms.author: hisdocs; plarsen
+manager: anneta
+ms.openlocfilehash: 6bae89d2a05ec34095e0fa2ac3feafc7b88b894e
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/28/2018
+---
+# <a name="how-to-disable-an-affiliate-application"></a><span data-ttu-id="17de9-102">如何禁用关联应用程序</span><span class="sxs-lookup"><span data-stu-id="17de9-102">How to Disable an Affiliate Application</span></span>
+<span data-ttu-id="17de9-103">使用 Mmc 管理单元或**disableapp**命令以禁用指定的关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="17de9-103">Use the MMC Snap-In or the **disableapp** command to disable the specified affiliate application.</span></span>  
+  
+### <a name="to-disable-an-affiliate-application-using-the-mmc-snap-in"></a><span data-ttu-id="17de9-104">使用 MMC 管理单元禁用关联应用程序</span><span class="sxs-lookup"><span data-stu-id="17de9-104">To disable an affiliate application using the MMC Snap-In</span></span>  
+  
+1.  <span data-ttu-id="17de9-105">单击**启动**，指向**程序**，单击**Microsoft Enterprise 上单一登录**，然后单击**SSO 管理**。</span><span class="sxs-lookup"><span data-stu-id="17de9-105">Click **Start**, point to **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+  
+2.  <span data-ttu-id="17de9-106">在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。</span><span class="sxs-lookup"><span data-stu-id="17de9-106">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+  
+3.  <span data-ttu-id="17de9-107">右键单击关联应用程序，并依次 **禁用**。</span><span class="sxs-lookup"><span data-stu-id="17de9-107">Right-click the affiliate application, and then click **Disable**.</span></span>  
+  
+### <a name="to-disable-an-affiliate-application-using-the-command-line"></a><span data-ttu-id="17de9-108">使用命令行禁用关联应用程序</span><span class="sxs-lookup"><span data-stu-id="17de9-108">To disable an affiliate application using the command line</span></span>  
+  
+1.  <span data-ttu-id="17de9-109">单击 **启动**, ，单击 **运行**, ，类型 `cmd`, ，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="17de9-109">Click **Start**, click **Run**, type `cmd`, and then press ENTER.</span></span>  
+  
+2.  <span data-ttu-id="17de9-110">在命令提示符处，转到企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="17de9-110">At the command prompt, go to the Enterprise Single Sign-On installation directory.</span></span>  
+  
+     <span data-ttu-id="17de9-111">默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="17de9-111">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3.  <span data-ttu-id="17de9-112">类型`ssomanage –disableapp <application name>`，其中\<*应用程序名称*> 是你想要禁用的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="17de9-112">Type `ssomanage –disableapp <application name>`, where \<*application name*> is the name of the affiliate application you want to disable.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="17de9-113">另请参阅</span><span class="sxs-lookup"><span data-stu-id="17de9-113">See Also</span></span>  
+ <span data-ttu-id="17de9-114">[SSO 关联应用程序](../esso/sso-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="17de9-114">[SSO Affiliate Applications](../esso/sso-affiliate-applications.md) </span></span>  
+ <span data-ttu-id="17de9-115">[如何启用关联应用程序](../esso/how-to-enable-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="17de9-115">[How to Enable an Affiliate Application](../esso/how-to-enable-an-affiliate-application.md) </span></span>  
+ <span data-ttu-id="17de9-116">[管理用户映射](../esso/managing-user-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="17de9-116">[Managing User Mappings](../esso/managing-user-mappings.md) </span></span>  
+ [<span data-ttu-id="17de9-117">管理关联应用程序</span><span class="sxs-lookup"><span data-stu-id="17de9-117">Managing Affiliate Applications</span></span>](../esso/managing-affiliate-applications.md)

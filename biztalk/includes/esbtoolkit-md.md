@@ -1,1 +1,1 @@
-<span data-ttu-id="3a421-101">Microsoft BizTalk ESB 工具包</span><span class="sxs-lookup"><span data-stu-id="3a421-101">Microsoft BizTalk ESB Toolkit</span></span>
+<span data-ttu-id="76387-101">Microsoft BizTalk ESB 工具包</span><span class="sxs-lookup"><span data-stu-id="76387-101">Microsoft BizTalk ESB Toolkit</span></span>

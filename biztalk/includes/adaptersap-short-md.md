@@ -1,1 +1,1 @@
-<span data-ttu-id="d431c-101">SAP 适配器</span><span class="sxs-lookup"><span data-stu-id="d431c-101">SAP adapter</span></span>
+<span data-ttu-id="c9ddb-101">SAP 适配器</span><span class="sxs-lookup"><span data-stu-id="c9ddb-101">SAP adapter</span></span>
