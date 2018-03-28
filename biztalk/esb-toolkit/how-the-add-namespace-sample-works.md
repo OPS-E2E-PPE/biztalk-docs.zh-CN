@@ -1,22 +1,22 @@
 ---
-title: "如何添加 Namespace 示例适用 |Microsoft 文档"
-ms.custom: 
+title: 如何添加 Namespace 示例适用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c76a90a9-5898-43b3-98af-ff546dd97153
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 212364030353001cae0589d4d7562641db4b77e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-the-add-namespace-sample-works"></a>如何添加 Namespace 示例的工作机制
 第一，第二和第四个测试使用**添加 Namespace**组件位于 NamespaceSampleReceivePipeline 管道。 它将作为输入具有根节点，如下所示上没有命名空间的文档：  
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
  下表显示设置的属性值**添加 Namespace**组件。  
   
-|属性|类型|值|  
+|属性|类型|“值”|  
 |--------------|----------|-----------|  
 |ExtractionNodeXPath|静态|（空）|  
 |NamespaceBase|静态|http://schemas.microsoft.biztalk.esb.test.com/test|  

@@ -1,11 +1,11 @@
 ---
-title: "处理字符串 Values2 |Microsoft 文档"
-ms.custom: 
+title: 处理字符串 Values2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - string values, configuring
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - right-justified string values
 - strings, right-justified
 ms.assetid: 23d54731-b2b9-4610-a533-e041237e0bb3
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 024663faa56d92361d861a61a0d64a4608839aa6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="handling-string-values"></a>处理字符串值
 本主题介绍如何将某些字符串参数配置为右对齐（并向左填充）。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="types-of-string-values"></a>字符串值的类型  
  JD Edwards EnterpriseOne 通过其互操作层公开两种字符串值：  
   
--   char： 单个字符  
+-   char︰ 单个字符  
   
 -   最大长度字符串  
   
@@ -90,4 +90,4 @@ B4200310.*.szBusinessUnit
 >  在将 JD Edwards EnterpriseOne 业务流程导入另一台计算机时，必须手动复制 jdearglist.txt。  
   
 ## <a name="see-also"></a>另请参阅  
- [附录 b： 数据类型](../core/appendix-b-data-types.md)
+ [附录 B：数据类型](../core/appendix-b-data-types.md)

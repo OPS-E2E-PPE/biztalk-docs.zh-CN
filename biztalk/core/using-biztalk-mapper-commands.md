@@ -16,7 +16,7 @@ ms.openlocfilehash: a5fd32d865bd08fe1b8b8e7929f313626be3e662
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-biztalk-mapper-commands"></a>使用 BizTalk 映射程序命令
 当 BizTalkMapper 变为活动状态时，它将添加菜单调用**BizTalk**到 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] shell。 通过此菜单可以访问 BizTalk 映射器命令及其功能。 当 BizTalk 映射程序处于活动状态， **BizTalk** 菜单提供特定于编辑 BizTalk 映射的命令。  

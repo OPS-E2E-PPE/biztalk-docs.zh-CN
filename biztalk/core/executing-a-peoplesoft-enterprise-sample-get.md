@@ -1,22 +1,22 @@
 ---
-title: "执行 PeopleSoft 企业示例 Get |Microsoft 文档"
-ms.custom: 
+title: 执行 PeopleSoft 企业示例 Get |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb54f14c-3fce-44d6-91bb-cb1ca38a20da
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 29cf6bba03e6a43bb3fdedf0742741e48ac22dd6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>执行 PeopleSoft 企业示例 Get
 使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -78,15 +78,15 @@ ms.lasthandoff: 11/28/2017
   
 2.  右键单击“发送端口” ，单击“新建” ，然后选择“静态要求响应发送端口” 。 在“发送端口属性”  对话框中，输入以下属性值：  
   
-    1.  **名称：**  `PeopleSoftSamplePort`  
+    1.  **名称︰**  `PeopleSoftSamplePort`  
   
-    2.  **类型：**  `PeopleSoft`  
+    2.  **类型︰**  `PeopleSoft`  
   
-    3.  **发送处理程序：**  `BizTalkServerApplication`  
+    3.  **发送处理程序︰**  `BizTalkServerApplication`  
   
-    4.  **发送管道：**  `XMLTransmit`  
+    4.  **发送管道︰**  `XMLTransmit`  
   
-    5.  **接收管道：**  `XMLReceive`  
+    5.  **接收管道︰**  `XMLReceive`  
   
 3.  单击“配置” ，然后输入以下属性值：  
   
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3： 创建 BizTalk 业务流程项目  
  现在，您将在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建 BizTalk 项目，并配置该项目中的业务流程，以处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与 PeopleSoft 系统之间的通信。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
   
-1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`PS_Test`作为唯一项目名称，然后单击**确定**。  
+1.  打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入 `PS_Test` 作为唯一项目名称，然后单击 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 2.  在解决方案资源管理器中，右键单击该项目，单击“添加” ，然后单击“添加生成的项” 。 在“类别”  窗格中选择“添加适配器元数据”  ，在“模板”  侧选择“添加适配器元数据”  ，然后单击“添加” 。  
   
@@ -144,17 +144,17 @@ ms.lasthandoff: 11/28/2017
   
 1.  在上一步中打开的 BizTalk Orchestration.odx 文件中，右键单击左侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
-2.  上**端口属性**页上，输入`FileIn`为**名称**，然后单击**下一步**。  
+2.  在  输入 `FileIn` ， ，然后单击“添加生成的项” 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 3.  在“选择端口类型”  页中，选择“新建端口类型” ，然后输入或选择以下属性值：  
   
-     **端口类型名称**:`FileInPort`  
+     **端口类型名称**: `FileInPort`  
   
      **通信模式**： **单向**  
   
      **访问限制**： **内部 - 仅限于此项目**  
   
-4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：    
+4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：   
   
      **端口通信方向**： **始终在此端口上接收消息**  
   
@@ -168,17 +168,17 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击右侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”页上，单击“下一步”。    
   
-2.  上**端口属性**页上，输入`FileOut`为**名称**，然后单击**下一步**。  
+2.  在  输入 `FileOut` ， ，然后单击“添加生成的项” 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 3.  在“选择端口类型”  页中，选择“新建端口类型” ，然后输入或选择以下属性值：  
   
-     **端口类型名称**:`FileOutPort`  
+     **端口类型名称**: `FileOutPort`  
   
      **通信模式**： **单向**  
   
      **访问限制**： **内部 - 仅限于此项目**  
   
-4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：    
+4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：   
   
      **端口通信方向**： **始终在此端口上发送消息**  
   
@@ -192,13 +192,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 BizTalk Orchestration.odx 文件中，右键单击右侧的端口图面，然后单击“新建配置的端口” 。 这将启动端口配置向导。 在“欢迎使用端口配置向导”  页上，单击“下一步” 。  
   
-2.  上**端口属性**页上，输入`PeopleSoft_Port`为**名称**，然后单击**下一步**。  
+2.  在  输入 `PeopleSoft_Port` ， ，然后单击“添加生成的项” 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 3.  在“选择端口类型”  页上，选择“使用现有端口类型” 。 为“可用端口类型” 选择“PS_Test.LOCATION” ，然后单击“下一步” 。  
   
      ![](../core/media/d8b443ec-294d-4124-a29d-aeb42bbb107e.gif "d8b443ec-294d-4124-a29d-aeb42bbb107e")  
   
-4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：    
+4.  单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：   
   
      **端口通信方向**： **我将始终发送请求并接收响应**  
   
@@ -212,13 +212,13 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="add-send-and-receive-shapes"></a>添加发送和接收形状  
   
-1.  将工具箱中的“接收”  组件拖放到业务流程的起点（绿色圆圈）下。 单击**接收**形状，然后在属性窗口中，输入`FromDisk`为**名称**，并设置**激活**到`true`。 执行此操作后，此接收端口上收到传入文档时将激活业务流程。  
+1.  将工具箱中的“接收”  组件拖放到业务流程的起点（绿色圆圈）下。 单击“接收”形状，  在“属性”窗口中，为“名称”输入 `FromDisk` ， 将“激活”设置为  “true” `true`配合使用的一组八个业务线 (LOB) 适配器之一。 执行此操作后，此接收端口上收到传入文档时将激活业务流程。  
   
-2.  拖动**发送**组件从工具箱拖放正下方**FromDiskReceive**形状。 单击新建**发送**形状，然后在属性窗口中，输入`ToPS`为**名称**。  
+2.  拖动 **发送** 组件从工具箱拖放正下方 **FromDiskReceive** 形状。 单击新的“发送”  在“属性”窗口中，为“名称”输入 `ToPS` ， 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
-3.  拖动**接收**组件从工具箱拖放正下方**To_PS * * * 发送**形状。 单击**接收**形状，然后在属性窗口中，输入`FromPS`为**名称**。  
+3.  拖动 **接收** 组件从工具箱拖放正下方 **To_PS * * * 发送** 形状。 单击“接收”形状，  在“属性”窗口中，为“名称”输入 `FromPS` ， 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
-4.  拖动**发送**组件从工具箱拖放正下方**From_PSReceive**形状。 单击新建**发送**形状，然后在属性窗口中，输入`ToDisk`为**名称**。  
+4.  拖动 **发送** 组件从工具箱拖放正下方 **From_PSReceive** 形状。 单击新的“发送”  在“属性”窗口中，为“名称”输入 `ToDisk`， 配合使用的一组八个业务线 (LOB) 适配器之一。  
   
  您需要先定义要处理的消息类型，然后才能将这些形状连接到逻辑端口。 适配器需要传入（**Request** 方法）消息和传出（**Response** 方法）消息。 每种方法的消息不同。  
   
@@ -271,7 +271,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  单击项目设计器中的“部署”  选项卡。  
   
-8.  设置**应用程序名称**到`PS_Test`。  
+8.  将“应用程序名称”  “true” `PS_Test`配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 9. 在解决方案资源管理器中，右键单击“”  项目，然后单击“生成”   
   
@@ -288,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>**并设置**根引用： 获取**。  
+3.  单击 **“确定”**。 在属性窗口中，选择**\<架构\>**并设置**根引用： 获取**。  
   
 4.  右键单击“LOCATIONService_LOCATION_x5d.xsd”  ，然后单击“生成实例” 。 这将生成 **SampleQuery.xml** 文件。 此文件将放入接收位置，作为适配器启动业务流程进程的输入。  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="configure-and-start-the-biztalk-application"></a>配置和启动 BizTalk 应用程序  
   
-1.  配置用于接收传入文件和发送传出文件的文件夹。 转到**C:\LABS\PS_TEST**并创建两个新的子文件夹名为`FileIn`和`FileOut`。  
+1.  配置用于接收传入文件和发送传出文件的文件夹。 转至“”  ，然后创建名为“FileIn” `FileIn` 和 `FileOut`配合使用的一组八个业务线 (LOB) 适配器之一。  
   
 2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**，展开**BizTalk 组**，展开**应用程序**，右键单击**PS_Test** ，然后单击**配置**。  
   
@@ -306,13 +306,13 @@ ms.lasthandoff: 11/28/2017
   
 4.  下**接收端口**，单击**\<无\>**。 在下拉列表中，选择“新建接收端口” 。  
   
-5.  有关**名称**，类型`FileInPort`，然后单击**确定**。 将出现一个消息框，表明你需要指定接收位置。 单击“确定”，然后单击“新建”。    
+5.  有关 **名称**, ，类型 `FileInPort`, ，然后单击 **确定**。 将出现一个消息框，表明你需要指定接收位置。 单击“确定”，然后单击“新建”。    
   
      ![](../core/media/298638b6-0eb8-49c4-8a2e-485571d070cf.gif "298638b6-0eb8-49c4-8a2e-485571d070cf")  
   
 6.  键入或选择以下属性值：  
   
-     **名称**:`FileInLoc`  
+     **名称**: `FileInLoc`  
   
      **类型**： **文件**  
   
@@ -322,7 +322,7 @@ ms.lasthandoff: 11/28/2017
   
      ![](../core/media/613a5dbc-effe-4827-a72b-d16eef8d0e8a.gif "613a5dbc-effe-4827-a72b-d16eef8d0e8a")  
   
-7.  单击“配置”  ，为“接收文件夹”键入 `C:\LABS\PS_TEST\FILEIN` ， ，然后单击“添加生成的项”    
+7.  单击“配置”  ，为“接收文件夹”键入 `C:\LABS\PS_TEST\FILEIN` ， ，然后单击“添加生成的项”   
   
      ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
@@ -330,7 +330,7 @@ ms.lasthandoff: 11/28/2017
   
 9. 选择“新建发送端口”  ，然后选择或键入以下属性值。  
   
-     **名称**:`PS_Test_Port`  
+     **名称**: `PS_Test_Port`  
   
      **类型**： **PeopleSoft**  
   
@@ -360,7 +360,7 @@ ms.lasthandoff: 11/28/2017
   
 13. 选择“新建发送端口”  ，然后键入或选择以下属性值：  
   
-     **名称**:`FileOutPort`  
+     **名称**: `FileOutPort`  
   
      **类型**： **文件**  
   

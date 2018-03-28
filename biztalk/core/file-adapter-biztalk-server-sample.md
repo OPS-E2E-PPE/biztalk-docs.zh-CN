@@ -1,25 +1,25 @@
 ---
-title: "文件适配器 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 文件适配器 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, File adapters
 - File adapters, examples
 ms.assetid: d59cecb4-6353-44d5-b8d6-316446758536
-caps.latest.revision: "46"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>文件适配器 （BizTalk Server 示例）
 Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配器示例。 它提供了建立动态或静态适配器的代码。  不过，以下过程仅简要介绍静态适配器。 静态适配器是具有静态架构集合且没有自定义用户接口的适配器。 动态适配器具有自定义用户接口，并可能具有动态架构集合。 静态适配器和动态适配器均使用添加适配器向导向 BizTalk 项目中添加其架构。  

@@ -1,22 +1,22 @@
 ---
-title: "教程 1： 开发 Echo 适配器 |Microsoft 文档"
-ms.custom: 
+title: 教程 1： 开发 Echo 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: "24"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 484452dc4ee624f4fa41e9387098f6f792c1de28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a>教程 1： 开发 Echo 适配器
 在本教程中，你将开发功能的适配器使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 适配器模拟虚构的业务线系统，用于说明的许多 WCF LOB 适配器 SDK 包括关键功能的操作：  
@@ -61,7 +61,7 @@ EchoMainCategory
 |**名称**|**操作定义**|**Description**|**方向**|  
 |--------------|------------------------------|---------------------|-------------------|  
 |EchoMainCategory|类别|对操作进行分类。|N/A|  
-|Echo/EchoStrings|字符串 [] EchoStrings(string data)|将传入的字符串回显到调用的客户端按指定的次数。|出站|  
+|Echo/EchoStrings|string[] EchoStrings(string data)|将传入的字符串回显到调用的客户端按指定的次数。|出站|  
 |Echo/EchoGreetings|问候语 [] EchoGreetings(Greeting greeting)|回显传入问候语对象指定大量的时间，以调用的客户端。|出站|  
 |Echo/EchoCustomGreetingFromFile|CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)|通过从文件读取其实例回显问候语对象。 从预定义的 XSD 文件中获取问候语对象的元数据。|出站|  
 |Echo/OnReceiveEcho|void OnReceiveEcho （Uri 路径，长时间内容）|回显的位置和长度的指定文件夹中删除的文件。|入站|  
@@ -73,7 +73,7 @@ EchoMainCategory
 |--------------|------------------|-------------------|---------------------|  
 |Count|杂项|System.Int32|用于回显的输入指定次数的调用的客户端。<br /><br /> 默认值 = 5|  
 |EnableConnectionPooling|杂项|System.Boolean|用于启用或禁用连接池的适配器。<br /><br /> 默认值 = true，这意味着，运行时引擎中启用连接池[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。|  
-|InboundFileFilter|入站|System.String|用于仅入站的方案和 FileSystemWatcher 用于监视扩展的文件。<br /><br /> 默认值 = *.txt|  
+|InboundFileFilter|入站|System.String|用于仅入站的方案和 FileSystemWatcher 用于监视扩展的文件。<br /><br /> Default=*.txt|  
 |InboundFileSystemWatcherFolder|入站|System.String|用于设置文件为 FileSystemWatcher 引发到适配器的通知的放置位置的文件夹。<br /><br /> 默认值 = c:\inbound\watcher。|  
   
 ## <a name="connection-properties"></a>连接属性  
@@ -88,7 +88,7 @@ EchoMainCategory
 ## <a name="interface-implementation"></a>接口实现  
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]定义的类和接口必须实现以支持特定功能的适配器的集合。 下表描述这些类和接口、 及其说明，以及何时实现它们。  
   
-|**类/接口**|**何时实现**|**Description**|  
+|**Class/Interface**|**何时实现**|**Description**|  
 |--------------------------|---------------------------|---------------------|  
 |Microsoft.ServiceModel.Channels.Common.IConnection|如果你需要定义目标系统的连接。|定义连接到目标系统。|  
 |Microsoft.ServiceModel.Channels.Common.IConnectionFactory|如果你需要创建到目标系统的连接。|创建连接到目标系统。|  

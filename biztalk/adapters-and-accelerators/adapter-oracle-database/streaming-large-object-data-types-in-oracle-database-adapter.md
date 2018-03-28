@@ -1,11 +1,11 @@
 ---
-title: "流式处理 Oracle 数据库适配器中的大型对象数据类型 |Microsoft 文档"
-ms.custom: 
+title: 流式处理 Oracle 数据库适配器中的大型对象数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, support in the WCF service model
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - streaming, support in BizTalk Server
 - streaming, support in the WCF channel model
 ms.assetid: c6cbe870-6794-4bf1-90c1-db65a242e8fe
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fda4d99eb381321139e4ed493f119f9eaf21623e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a>Oracle 数据库适配器中的流式处理大型对象数据类型
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持流式处理 Oracle 大型对象 (LOB) 数据类型。 与[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成 XML 节点。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 -   可以使用使用 WCF 消息  
   
-    -   **XmlReader**通过调用**Message.GetReaderAtBodyContents()**，或  
+    -   An **XmlReader** by calling **Message.GetReaderAtBodyContents()**, or  
   
     -   **XmlDictionaryWriter**通过调用**Message.WriteBodyContents(XmlDictionaryWriter)**。  
   
@@ -95,14 +95,14 @@ ms.lasthandoff: 09/20/2017
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |表插入操作|支持*|不支持之间的适配器和 Oracle 数据库。 支持客户端和适配器之间|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲通过 ODP.NET，，然后执行插入。 但是，节点值流式处理客户端和适配器之间有可能 LOB 列，如果客户端创建的消息的**BodyWriter**。|  
-|表选择操作|是否支持|是否支持|适配器使用**BodyWriter**创建响应消息。 如果客户端使用消息使用**XmlDictionaryWriter**，节点值流式处理 LOB 列时发生。|  
-|表更新操作|是否支持|不支持之间的适配器和 Oracle 数据库。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲通过 ODP.NET，，然后执行更新。 如果客户端创建的消息的节点值流式处理客户端和适配器之间但是，有可能 LOB 列**BodyWriter**。|  
-|表删除操作|是否支持|不支持之间的适配器和 Oracle 数据库。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行删除操作。 如果客户端创建的消息的节点值流式处理客户端和适配器之间但是，有可能 LOB 列**BodyWriter**。|  
-|表 ReadLOB 操作|是否支持|是否支持|ReadLOB 操作主要设计为 WCF 服务模型中的流 LOB 数据列。 在 WCF 通道模型中，如果客户端使用消息使用**XmlReader** (通过调用**GetReaderAtBodyContents**的响应消息的方法)，流式处理端到端节点值时发生。 这是因为该适配器返回**XmlReader**支持**ReadValueChunk**调用 ReadLOB 响应消息。 但是，建议不使用 WCF 通道模型 ReadLOB 操作。 可以改为使用选择的操作或 SQLEXECUTE 操作。|  
-|表 UpdateLOB 操作|是否支持|是否支持|适配器使用**XmlDictionaryWriter**使用请求消息。 如果客户端使用**BodyWriter**若要创建请求消息，流式处理 LOB 数据的端到端节点的值在发生。|  
-|SQLEXECUTE 操作|是否支持|是否支持|适配器使用**BodyWriter**创建响应消息。<br /><br /> 如果客户端使用**XmlDictionaryWriter**若要使用响应消息，流式处理 LOB 数据的端到端节点的值在发生。<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
-|存储的过程和函数的操作|是否支持|是否支持|适配器使用**BodyWriter**创建响应消息。<br /><br /> 如果客户端使用**XmlDictionaryWriter**若要使用响应消息，流式处理 LOB 数据的端到端节点的值在发生。 (这意味着，对于扩展支持流式处理和 IN 出过程和函数参数的响应消息中。)<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
-|POLLINGSTMT 操作|是否支持|是否支持|适配器使用**BodyWriter**创建 POLLINGSTMT 请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，则会出现节点值流式处理 LOB 列。|  
+|表选择操作|Supported|Supported|适配器使用**BodyWriter**创建响应消息。 如果客户端使用消息使用**XmlDictionaryWriter**，节点值流式处理 LOB 列时发生。|  
+|表更新操作|Supported|不支持之间的适配器和 Oracle 数据库。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲通过 ODP.NET，，然后执行更新。 如果客户端创建的消息的节点值流式处理客户端和适配器之间但是，有可能 LOB 列**BodyWriter**。|  
+|表删除操作|Supported|不支持之间的适配器和 Oracle 数据库。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行删除操作。 如果客户端创建的消息的节点值流式处理客户端和适配器之间但是，有可能 LOB 列**BodyWriter**。|  
+|表 ReadLOB 操作|Supported|Supported|ReadLOB 操作主要设计为 WCF 服务模型中的流 LOB 数据列。 在 WCF 通道模型中，如果客户端使用消息使用**XmlReader** (通过调用**GetReaderAtBodyContents**的响应消息的方法)，流式处理端到端节点值时发生。 这是因为该适配器返回**XmlReader**支持**ReadValueChunk**调用 ReadLOB 响应消息。 但是，建议不使用 WCF 通道模型 ReadLOB 操作。 可以改为使用选择的操作或 SQLEXECUTE 操作。|  
+|表 UpdateLOB 操作|Supported|Supported|适配器使用**XmlDictionaryWriter**使用请求消息。 如果客户端使用**BodyWriter**若要创建请求消息，流式处理 LOB 数据的端到端节点的值在发生。|  
+|SQLEXECUTE 操作|Supported|Supported|适配器使用**BodyWriter**创建响应消息。<br /><br /> 如果客户端使用**XmlDictionaryWriter**若要使用响应消息，流式处理 LOB 数据的端到端节点的值在发生。<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
+|存储的过程和函数的操作|Supported|Supported|适配器使用**BodyWriter**创建响应消息。<br /><br /> 如果客户端使用**XmlDictionaryWriter**若要使用响应消息，流式处理 LOB 数据的端到端节点的值在发生。 (这意味着，对于扩展支持流式处理和 IN 出过程和函数参数的响应消息中。)<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
+|POLLINGSTMT 操作|Supported|Supported|适配器使用**BodyWriter**创建 POLLINGSTMT 请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，则会出现节点值流式处理 LOB 列。|  
   
  有关如何实现流在代码中，当使用 WCF 通道模型的 LOB 数据的信息，请参阅[流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)。  
   
@@ -117,14 +117,14 @@ ms.lasthandoff: 09/20/2017
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |表插入操作|支持*|之间的适配器和 Oracle 数据库中; 不支持但是，BizTalk Server 和适配器之间进行流式处理数据。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行插入。 但是，节点的值之间 BizTalk Server 和适配器流式处理支持 LOB 数据类型因为 WCF 自定义适配器创建的消息的**BodyWriter**。|  
-|表选择操作|是否支持|是否支持|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持 LOB 类型流式处理的端到端节点的值。|  
-|表更新操作|是否支持|之间的适配器和 Oracle 数据库中; 不支持但是，BizTalk Server 和适配器之间进行流式处理数据。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行更新。 但是，节点的值之间 BizTalk Server 和适配器流式处理支持 LOB 数据类型因为 WCF 自定义适配器创建的消息的**BodyWriter**。|  
-|表删除操作|是否支持|之间的适配器和 Oracle 数据库中; 不支持但是，BizTalk Server 和适配器之间进行流式处理数据。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行删除操作。 但是，节点的值之间 BizTalk Server 和适配器流式处理支持 LOB 数据类型因为 WCF 自定义适配器创建的消息的**BodyWriter**。|  
+|表选择操作|Supported|Supported|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持 LOB 类型流式处理的端到端节点的值。|  
+|表更新操作|Supported|之间的适配器和 Oracle 数据库中; 不支持但是，BizTalk Server 和适配器之间进行流式处理数据。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行更新。 但是，节点的值之间 BizTalk Server 和适配器流式处理支持 LOB 数据类型因为 WCF 自定义适配器创建的消息的**BodyWriter**。|  
+|表删除操作|Supported|之间的适配器和 Oracle 数据库中; 不支持但是，BizTalk Server 和适配器之间进行流式处理数据。|不支持流式处理的端到端节点的值，因为 LOB 列的值进行缓冲 ODP.NET 通过，然后执行删除操作。 但是，节点的值之间 BizTalk Server 和适配器流式处理支持 LOB 数据类型因为 WCF 自定义适配器创建的消息的**BodyWriter**。|  
 |表 ReadLOB 操作|ReadLOB 操作不可用于 BizTalk Server。|ReadLOB 操作不可用于 BizTalk Server。|ReadLOB 操作不可用于 BizTalk Server。 改为使用选择的操作或 SQLEXECUTE 操作。|  
-|表 UpdateLOB 操作|是否支持|是否支持|WCF 自定义适配器使用**BodyWriter**创建请求消息中，因此支持流式处理 LOB 数据类型的端到端节点的值。|  
-|SQLEXECUTE 操作|是否支持|是否支持|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持流式处理响应消息中的 LOB 数据类型的端到端节点的值。<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
-|存储的过程和函数的操作|是否支持|是否支持|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持流式处理响应消息中的 LOB 数据类型的端到端节点的值。 (这意味着，对于扩展支持流式处理和 IN 出过程和函数参数的响应消息中。)<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
-|POLLINGSTMT 操作|是否支持|是否支持|WCF 自定义适配器使用**XmlDictionaryWriter**来使用 （入站） 请求消息，因此支持流式处理 LOB 数据类型的端到端节点的值。|  
+|表 UpdateLOB 操作|Supported|Supported|WCF 自定义适配器使用**BodyWriter**创建请求消息中，因此支持流式处理 LOB 数据类型的端到端节点的值。|  
+|SQLEXECUTE 操作|Supported|Supported|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持流式处理响应消息中的 LOB 数据类型的端到端节点的值。<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
+|存储的过程和函数的操作|Supported|Supported|WCF 自定义适配器使用**XmlDictionaryWriter**来使用响应消息中，因此支持流式处理响应消息中的 LOB 数据类型的端到端节点的值。 (这意味着，对于扩展支持流式处理和 IN 出过程和函数参数的响应消息中。)<br /><br /> 不支持请求消息流式处理的端到端节点的值，因为它可以调用 Oracle 数据库的操作之前，适配器必须缓冲的所有操作数。|  
+|POLLINGSTMT 操作|Supported|Supported|WCF 自定义适配器使用**XmlDictionaryWriter**来使用 （入站） 请求消息，因此支持流式处理 LOB 数据类型的端到端节点的值。|  
   
 ## <a name="see-also"></a>另请参阅  
 [开发 Oracle 数据库应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)

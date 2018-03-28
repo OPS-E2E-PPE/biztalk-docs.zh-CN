@@ -1,22 +1,22 @@
 ---
-title: "BizTalk ESB 工具包 |Microsoft 文档"
-ms.custom: 
+title: BizTalk ESB 工具包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08035518-17ad-44d2-ab06-90d725c95ced
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 535fd99ee5c1b9f9c25dd49e2a2441acb855c78a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="biztalk-esb-toolkit"></a>BizTalk ESB 工具包
 Microsoft BizTalk ESB 工具包使用 Microsoft BizTalk Server 来支持松散连接的消息传送体系结构。 BizTalk Server 包含一个用于消息传送应用程序的强大发布/订阅机制，该机制通过创建和填充订阅进行运作，从而为面向服务的体系结构 (SOA) 应用程序提供一个高效的可扩展平台。 BizTalk ESB 工具包扩展了 BizTalk Server 的功能，使其可以提供一系列新功能，这些新功能专注于构建强大而互连的面向服务的应用程序，这些应用程序融合了用于轻型服务组合的基于行程的服务调用、终结点和映射的动态解析、Web 服务和 WS-* 集成、故障管理和报告，以及与第三方 SOA 监管解决方案的集成。  
@@ -41,7 +41,7 @@ Microsoft BizTalk ESB 工具包使用 Microsoft BizTalk Server 来支持松散�
 此方法提供服务; 之间的松散耦合这意味着 ESB 不需要为每个消息事先了解特定的处理。 它只须了解可能的进程范围和如何应用各进程。 用于指定可用进程及进程与消息中说明间映射的选项众多，它们提供了一个配置和调整行为的灵活机制，不需要更改代码和重新部署组件。  
   
 ## <a name="getting-started"></a>入门  
- 安装 BizTalk ESB 工具包，完成后，您应阅读中的"入门"主题[BizTalk ESB 工具包文档](http://go.microsoft.com/fwlink/?LinkId=193578)了解体系结构、 消息流，以及 BizTalk ESB 工具包的核心组件。 你还应该安装并运行 BizTalk ESB 工具包附带的示例，这些示例演示了“入门”主题中介绍的常见使用案例，以及一些其他消息传送方案。 此方法将帮助你快速掌握 BizTalk ESB 工具包的工作原理，以及如何在你自己的 SOA 应用程序中利用其功能。  
+ 安装 BizTalk ESB 工具包，完成后，您应阅读中的"入门"主题 [BizTalk ESB 工具包文档](http://go.microsoft.com/fwlink/?LinkId=193578) 了解体系结构、 消息流，以及 BizTalk ESB 工具包的核心组件。 你还应该安装并运行 BizTalk ESB 工具包附带的示例，这些示例演示了“入门”主题中介绍的常见使用案例，以及一些其他消息传送方案。 此方法将帮助你快速掌握 BizTalk ESB 工具包的工作原理，以及如何在你自己的 SOA 应用程序中利用其功能。  
   
 ## <a name="see-also"></a>另请参阅  
  [BizTalk 企业服务指南](http://go.microsoft.com/fwlink/?LinkId=193577)   

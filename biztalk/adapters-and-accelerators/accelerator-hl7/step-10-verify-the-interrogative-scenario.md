@@ -1,40 +1,41 @@
 ---
-title: "步骤 10： 验证 Interrogative 方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 10： 验证 Interrogative 方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, verifying solution
+helpviewer_keywords:
+- interrogative tutorial, verifying solution
 ms.assetid: 1f28800b-4a1d-4f29-8123-5cdea4b4a365
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b932ab2f179faab1381609c007dcdd148f200f7e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-10-verify-the-interrogative-scenario"></a>步骤 10： 验证 Interrogative 方案
 在此步骤中，你可以出于本教程验证端到端方案。  
   
 ### <a name="to-send-the-query-message"></a>若要发送查询邮件  
   
-1.  打开命令提示符。  
+1.  開啟命令提示字元。  
   
-2.  在命令提示符下，将移到  **\<*驱动器*\>: files\microsoft BizTalk\<版本\>快捷键的 HL7\SDK\MLLP 实用程序 **.  
+2.  在命令提示符下，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\MLLP 实用工具**。  
   
 3.  在命令提示符下键入**MllpReceive/P 24000**，然后按**Enter**。 这运行侦听端口 24000 MLLP 侦听器应用程序，并显示到屏幕接收任何消息。 此应用程序模拟医院信息系统。  
   
 4.  打开其他的命令提示符。  
   
-5.  在第二个命令提示符窗口中，将移到  **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\ 快捷键MLLP 实用工具 * *。  
+5.  在第二个命令提示符窗口中，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\MLLP 实用工具快捷键**.  
   
-6.  在第二个命令提示符处，键入 **MllpSend /SB 11 /EB 28 /CR 13/双向/P 22000 /F"\<*驱动器*\>: files\microsoft BizTalk\<版本\>快捷键 HL7\SDK\Interrogative Tutorial\QRY^Q01.txt**，然后按**enter 键。**  
+6.  在第二个命令提示符处，键入**MllpSend /SB 11 /EB 28 /CR 13/双向/P 22000 /F"\<*驱动器*\>: files\microsoft BizTalk\<版本\>快捷键 HL7\SDK\Interrogative Tutorial\QRY^Q01.txt**，然后按**enter 键。**  
   
     > [!NOTE]
     >  此命令将发送到 MLLP 端口 22000 并等待响应 （确认） 本教程开头创建查询电子邮件。 ADT 接收端口选取此消息并处理它。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  步骤 2 运行侦听端口 25000 MLLP 侦听器应用程序，并显示到屏幕收到任何消息。 此应用程序模拟 ADT 系统。  
   
-3.  在第二个命令提示符处，键入 **MllpSend /SB 11 /EB 28 /CR 13/P 23000 /F"\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\Interrogative Tutorial\DSR.txt"**，然后按**Enter**。  
+3.  在第二个命令提示符处，键入**MllpSend /SB 11 /EB 28 /CR 13/P 23000 /F"\<*驱动器*\>: files\microsoft BizTalk\<版本\>快捷键HL7\SDK\Interrogative Tutorial\DSR.txt"**，然后按**Enter**。  
   
     > [!NOTE]
     >  步骤 3 将发送到 MLLP 端口 23000 本教程开头创建响应消息。 HIS 接收端口选取此消息并处理它。  

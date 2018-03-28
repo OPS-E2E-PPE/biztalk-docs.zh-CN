@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a6f879111a28d5cbf9b2a75c7b3f3b3b865fb38
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-testing-the-policy"></a>演练： 测试策略
 本演练中提供的测试中创建的策略的分步过程[演练： 创建简单的业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。  
@@ -184,8 +184,8 @@ ms.lasthandoff: 03/23/2018
   
 |字段名称|XPath 选择器|XPath 字段|XPath 选择器（简化形式）|XPath 字段<br /><br /> （简化形式）|  
 |----------------|--------------------|-----------------|----------------------------------------|-----------------------------------------|  
-|数量|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() = http://EAISolution.PurchaseOrder'] /\*[本地名称 （) = Item 和 namespace-uri() = ']|* [本地名称 （) = 数量和 namespace-uri() = ']|/ PurchaseOrder/项|数量|  
-|状态|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() = http://EAISolution.PurchaseOrder']|* [本地名称 （) = 'Status' 和 namespace-uri() = ']|/ PurchaseOrder|状态|  
+|数量|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() =http://EAISolution.PurchaseOrder'] /\*[本地名称 （) = Item 和 namespace-uri() =']|* [本地名称 （) = 数量和 namespace-uri() = ']|/ PurchaseOrder/项|数量|  
+|状态|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() =http://EAISolution.PurchaseOrder']|* [本地名称 （) = 'Status' 和 namespace-uri() = ']|/ PurchaseOrder|状态|  
   
 #### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>查看“数量”字段和“状态”字段的 Xpath 选择器和 Xpath 字段绑定  
   

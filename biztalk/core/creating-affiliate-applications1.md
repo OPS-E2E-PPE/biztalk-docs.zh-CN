@@ -1,22 +1,22 @@
 ---
-title: "创建 Affiliate TIBCO 会合的应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 Affiliate TIBCO 会合的应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤描述如何开始使用项目应用程序和单一登录 (SSO)。 有关如何使用企业单一登录的详细信息，请参阅 Microsoft 文档。  
@@ -26,13 +26,13 @@ ms.lasthandoff: 11/07/2017
   
 ## <a name="create-an-affiliate-application"></a>创建关联应用程序  
   
-1.  在 Control Panel 中，打开**服务**，并验证企业单一登录服务正在运行。  
+1.  在 Control Panel 中，打开 **服务**, ，并验证企业单一登录服务正在运行。  
   
 2.  在命令提示符下，将目录更改为 Enterprise Single Sign-On 文件夹。 例如：  
   
      **C:\Program Files\Common Files\Enterprise 上单一登录 >**  
   
-3.  使用企业单一登录命令。 有关命令的列表，使用**-帮助**切换。  
+3.  使用企业单一登录命令。 有关命令的列表，使用 **-帮助** 切换。  
   
 4.  若要使用 *.XML 作为创建关联应用程序的起始操作，请键入以下命令：  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 11/07/2017
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
-3.  完成时，你将收到以下确认：  
+3.  完成时，你将收到以下确认︰  
   
      **使用此计算机上的 SSO 服务器。已成功完成该操作。**  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 11/07/2017
   
      **有关 IBI\YourID-TIBCO RendezvousApp 可用应用程序**  
   
-3.  键入以下命令以设置应用程序凭据的关联：  
+3.  键入以下命令以设置应用程序凭据的关联︰  
   
      `ssoclient.exe -setcredentials TIBCO RendezvousApp`  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 11/07/2017
   
     -   确认密码: * * *  
   
-6.  关联应用程序中的 BizTalk Adapter 显示个 TIBCO 会合**传输属性**对话框。  
+6.  关联应用程序中的 BizTalk Adapter 显示个 TIBCO 会合 **传输属性** 对话框。  
   
 ## <a name="see-also"></a>另请参阅  
  [用于 TIBCO Rendezvous 的 BizTalk 适配器的安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   

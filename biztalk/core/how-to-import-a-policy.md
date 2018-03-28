@@ -1,11 +1,11 @@
 ---
-title: "如何导入策略 |Microsoft 文档"
-ms.custom: 
+title: 如何导入策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, requirements
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - policies, importing
 - managing [policies], importing
 ms.assetid: 92f6ef18-279f-416d-b13e-8b9642539d27
-caps.latest.revision: "29"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ac21ad1348dbc934c81d87f3c477977eeecd2ccf
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-import-a-policy"></a>如何导入策略
 本主题介绍如何使用 BizTalk Server 管理控制台将策略导入到 BizTalk 组或使用 BTSTask 命令行工具将策略导入到 BizTalk 应用程序。  
@@ -58,29 +58,29 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="using-the-biztalk-server-administration-console"></a>使用 BizTalk Server 管理控制台  
   
-1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+1.  单击 **启动**, ，单击 **所有程序**, ，单击 [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], ，然后单击 **BizTalk Server 管理**。  
   
 2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开你想要将策略导入，展开在其中的 BizTalk 组**应用程序**，然后展开**\<所有项目\>**.  
   
-3.  右键单击**策略**，然后单击**导入**。  
+3.  右键单击 **策略**, ，然后单击 **导入**。  
   
-4.  浏览到包含该策略，然后单击的.xml 文件**打开**。  
+4.  浏览到包含该策略，然后单击的.xml 文件 **打开**。  
   
      策略导入组并显示在**策略**文件夹**\<所有项目\>**。  
   
 #### <a name="using-the-command-line"></a>使用命令行  
   
-1.  如下所示打开命令提示符： 单击**启动**，单击**运行**，类型`cmd`，然后单击**确定**。  
+1.  如下所示打开命令提示符︰ 单击 **启动**, ，单击 **运行**, ，类型 `cmd`, ，然后单击 **确定**。  
   
-2.  键入以下命令，替换为适当的值下, 表中所述：  
+2.  键入以下命令，替换为适当的值下, 表中所述︰  
   
-     **BTSTask ImportApp /Package:** *值*[**/ApplicationName:***值*] [**/覆盖**] [**/ 服务器：***值*] [**/数据库：***值*]  
+     **BTSTask ImportApp /Package:** *值*[**/ApplicationName: * **值*] [**/覆盖**] [**/Server:***值 *] [* * / 数据库：***值 *]  
   
      例如：  
   
      **BTSTask ImportApp /Package:"C:\MSI Files\MyApplication.msi"/Environment:Test /ApplicationName:MyApplication / 覆盖**  
   
-    |参数|值|  
+    |参数|“值”|  
     |---------------|-----------|  
     |**/ 包**|.msi 文件（包含要导入的策略）的完整路径。 如果该路径包含空格，则必须将其括在引号 (") 中。|  
     |**/ 应用程序名称**|向其导入策略的 BizTalk 应用程序的名称。 如果没有指定 BizTalk 应用程序的名称，则将使用导出 .msi 文件时指定的应用程序的名称。 如果指定的应用程序不存在，则将创建该应用程序。 包含空格的应用程序名必须括在双引号 (") 中。|  
@@ -89,7 +89,7 @@ ms.lasthandoff: 11/28/2017
     |**/ 数据库**|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
   
     > [!NOTE]
-    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。 要执行此操作，右键单击该应用程序，，然后选择**以管理员身份运行**。  
+    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。 要执行此操作，右键单击该应用程序，，然后选择 **以管理员身份运行**。  
   
 ## <a name="see-also"></a>另请参阅  
  [导入 BizTalk 应用程序、 绑定和策略](../core/importing-biztalk-applications-bindings-and-policies.md)   

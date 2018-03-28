@@ -1,22 +1,22 @@
 ---
-title: "测试结果： 网络关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 测试结果： 网络关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bdbc2df-9d19-4ae8-b540-ec1b9a7cdbe9
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3eb4e10c739178e6cd923f65b51f982e05ab7f56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="test-results-networking-key-performance-indicators"></a>测试结果： 网络关键绩效指标
 本主题总结了网络关键绩效指标 (KPI) 的测试方案期间观察到。 这些测试评估网络性能测量**\Network 接口 (\*) \Bytes Total/sec**性能监视器计数器和通过度量**SQL Network Interface\Bytes Total/sec (Avg)**返回 VSTS 2008 负载测试控制器。  

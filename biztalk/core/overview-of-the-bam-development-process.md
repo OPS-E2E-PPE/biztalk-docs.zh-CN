@@ -1,22 +1,22 @@
 ---
-title: "BAM 开发过程的概述 |Microsoft 文档"
-ms.custom: 
+title: BAM 开发过程的概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 098db3f6-2a61-4cc8-88c7-2299c2e2a55e
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 78ae5f1c61f2a00359e88acd75c093e2b6c2fb91
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="overview-of-the-bam-development-process"></a>BAM 开发过程概述
 本主题介绍 BAM 开发过程以及存储 BAM 数据所用的数据库和表。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/28/2017
 1.  借助用于 Excel 的 BAM 外接程序创建观察模型  
   
     > [!NOTE]
-    >  可以在 BAM API （BizTalk Server 示例） 中找到此过程中所述的步骤的示例[http://go.microsoft.com/fwlink/?LinkId=69968](http://go.microsoft.com/fwlink/?LinkId=69968)。  
+    >  可以在 BAM API （BizTalk Server 示例） 中找到此过程中所述的步骤的示例[ http://go.microsoft.com/fwlink/?LinkId=69968 ](http://go.microsoft.com/fwlink/?LinkId=69968)。  
   
 2.  使用 BAM 管理实用程序将活动部署到 PID。  
   
@@ -60,14 +60,14 @@ ms.lasthandoff: 11/28/2017
   
     -   更新该记录中的数据项。  
   
-    -   结束活动并将该记录移到 BAM_\<*活动名称**\>_completed 表。  
+    -   结束活动并将该记录移到 BAM_\<* 活动名称 * *\>_completed 表。  
   
 ## <a name="where-bam-data-is-stored"></a>BAM 数据的存储位置  
  BAM 提供 EventObservation 命名空间，它包含用于处理 BAM 事件的 EventStream 类。  
   
  BAM 跟踪数据存储在 BAM 主导入数据库 (PID) 中。 使用 BAM 管理实用程序部署观察模型时，PID 中会创建下面 5 个表。  
   
-|Name|Description|  
+|名称|Description|  
 |----------|-----------------|  
 |活动表|名为 bam_\<*活动名称*\>_Active，此表包含此类型的尚未完成的活动。|  
 |活动关系表|名为 bam_\<*活动名称*\>_ActiveRelationships，此表包含活动尚未完成相关的活动。|  

@@ -18,7 +18,7 @@ ms.openlocfilehash: 27d0e731fd63ce01e9cc1c2604eb8f83141e024e
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="wcf-basichttp-adapter"></a>WCF-BasicHttp 适配器
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用 WCF BasicHttp 适配器接收和发送通过 WCF 服务请求[BasicHttpBinding 类](https://msdn.microsoft.com/library/system.servicemodel.basichttpbinding.aspx)。 WCF BasicHttp 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务 **BasicHttpBinding**。  
@@ -160,7 +160,7 @@ ms.lasthandoff: 03/23/2018
       
     |使用此选项|動作|  
     |--------------|----------------|  
-    |**地址 (URI)**|必需的。 指定此发送端口的完全限定 URI。 使用 **https** 或 **http** 根据安全配置的方案。<br /><br /> 最大长度︰ 255<br /><br /> 默认值︰ http://localhost/|  
+    |**地址 (URI)**|必需的。 指定此发送端口的完全限定 URI。 使用 **https** 或 **http** 根据安全配置的方案。<br /><br /> 最大长度︰ 255<br /><br /> 默认值：30http://localhost/|  
     |**终结点标识**|可选。 指定此发送端口预期的服务标识。 这些设置支持此发送端口对服务进行验证。 在客户端与服务进行握手的过程中，Windows Communication Foundation (WCF) 基础结构将确保预期服务的标识与此元素的值保持一致。 可以为指定的值 **标识** 属性而异的安全配置。<br /><br /> 默认值为清除此复选框。| 
     |**動作**|指定 **SOAPAction** 传出消息的 HTTP 标头字段。 此外可以通过消息上下文属性设置此属性 **WCF。操作** 在管道或业务流程。 你可以通过两种方式指定此值︰ 单个操作格式和操作映射格式。 如果将此属性设置中的单个操作格式-例如， http://contoso.com/Svc/Op1- **SOAPAction**标头为传出消息始终设置为此属性中指定的值。<br /><br /> 如果在操作映射格式，传出中设置此属性 **SOAPAction** 标头由 **BTS。操作** 上下文属性。 例如，如果此属性设置为以下 XML 格式和**BTS。操作**属性设置为 Op1，WCF 发送适配器使用http://contoso.com/Svc/Op1为传出**SOAPAction**标头。<br /><br /> \<BtsActionMapping\><br /><br /> \<Operation Name="Op1" Action="http://contoso.com/Svc/Op1" \><br /><br /> \<Operation Name="Op2" Action="http://contoso.com/Svc/Op2" \><br /><br /> \</BtsActionMapping\><br /><br /> 如果传出消息来自于业务流程端口，动态设置业务流程实例 **BTS。操作** 与操作名称的端口的属性。 如果使用基于内容的路由路由传出消息，则可以设置 **BTS。操作** 管道组件中的属性。<br /><br /> 最小长度：0<br /><br /> 最大長度：32767<br /><br /> 默认值为空字符串。|
  
@@ -208,7 +208,7 @@ ms.lasthandoff: 03/23/2018
     |**使用处理程序的默认代理设置**|指定此发送端口是否使用承载此发送端口的发送处理程序中的代理设置。<br /><br /> 這是預設值。|  
     |**不使用代理服务器**|指出這個傳送埠是否要使用 Proxy 伺服器。<br /><br /> 預設值為清除核取方塊。|  
     |**使用代理服务器**|指示此发送端口使用中指定的代理服务器 **地址** 属性。<br /><br /> 預設值為清除核取方塊。|  
-    |**地址**|指定 Proxy 伺服器的位址。 使用 **https** 或 **http** 根据安全配置的方案。 這個位址後面可以加上冒號和連接埠編號， 例如， http://127.0.0.1:8080.<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
+    |**地址**|指定 Proxy 伺服器的位址。 使用 **https** 或 **http** 根据安全配置的方案。 這個位址後面可以加上冒號和連接埠編號， 例如， http://127.0.0.1:8080。<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
     |**用户名称**|指定要用於驗證的使用者名稱。 若使用整合式驗證，則使用者名稱會包括網域，即「網域\使用者名稱」。 如果使用基本或摘要式身份验证，则用户名不包括域\\。 此属性，则需要值才 **使用代理** 选择。 **注意︰**  WCF BasicHttp 发送适配器使用代理的基本身份验证。 <br /><br /> 类型：字符串<br /><br /> 最小長度：00<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
     |**密码**|指定要用於驗證的密碼。<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最小長度：00<br /><br /> 最大長度：256<br /><br /> 默认值为空字符串。|  
   
@@ -241,7 +241,7 @@ ms.lasthandoff: 03/23/2018
     |使用|動作|  
     |--------------|----------------|  
     |**使用代理服务器**|指示此发送处理程序是否使用代理服务器。<br /><br /> 預設值為清除核取方塊。|  
-    |**地址**|指定 Proxy 伺服器的位址。 使用 **https** 或 **http** 根据安全配置的方案。 這個位址後面可以加上冒號和連接埠編號， 例如， http://127.0.0.1:8080.<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
+    |**地址**|指定 Proxy 伺服器的位址。 使用 **https** 或 **http** 根据安全配置的方案。 這個位址後面可以加上冒號和連接埠編號， 例如， http://127.0.0.1:8080。<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
     |**用户名称**|指定要用於驗證的使用者名稱。 若使用整合式或基本驗證，則使用者名稱也包括網域，即「網域\使用者名稱」。 如果使用摘要式身份验证，则用户名不包括域\\。<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最小長度：00<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
     |**密码**|指定要用於驗證的密碼。<br /><br /> 此属性，则需要值才 **使用代理** 选择。<br /><br /> 類型：字串<br /><br /> 最小長度：00<br /><br /> 最大長度：256<br /><br /> 預設為空字串。|  
   

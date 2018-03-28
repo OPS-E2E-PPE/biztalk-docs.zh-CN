@@ -1,23 +1,24 @@
 ---
-title: "步骤 10： 验证端到端方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 10： 验证端到端方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: end-to-end tutorial, verifying solution
+helpviewer_keywords:
+- end-to-end tutorial, verifying solution
 ms.assetid: 24b74ba6-e303-4ab1-8a93-25a430e4894d
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d38f137625554bd689477964e3a969142eca0658
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-10-verify-the-end-to-end-scenario"></a>步骤 10： 验证端到端方案
 在此步骤中，你可以出于本教程验证端到端方案。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  单击**启动**，指向**程序**，指向**附件**，然后单击**命令提示符**。  
   
-2.  在命令提示符窗口中，将移到  **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\MLLP 快捷键实用工具 * *，，然后按**Enter**。  
+2.  在命令提示符窗口中，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\MLLP 实用工具**，然后按**Enter**。  
   
     > [!NOTE]
     >  如果找不到 SDK 文件夹下的 MLLP Utilities 文件夹，可能未安装 MLLP 测试工具。 打开控制面板，然后打开**添加或删除程序**。 选择**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后选择**更改**。 在 BTAHL7 安装向导中，选择**修改**。 展开**适配器**文件夹以查看是否**MLLP 测试工具**已安装。 如果没有，请安装它。  
@@ -35,12 +36,12 @@ ms.lasthandoff: 11/28/2017
   
 4.  通过单击启动其他的命令提示符**启动**，指向**程序**，指向**附件**，然后单击**命令提示符**.  
   
-5.  在第二个命令提示符窗口中，将移到  **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\ 快捷键MLLP 实用工具 * *，，然后按**Enter**。  
+5.  在第二个命令提示符窗口中，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\MLLP 实用工具快捷键**，然后按**Enter**。  
   
     > [!NOTE]
     >  以下步骤将消息发送。  
   
-6.  在命令提示符窗口中，键入 **mllpsend /SB 11 /EB 28 /CR 13 /f"\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\End 端到端 Tutorial\ADT^A03.txt"**，其中\<*驱动器*\>是你安装驱动器号。 按 **Enter**。  
+6.  在命令提示符窗口中，键入**mllpsend /SB 11 /EB 28 /CR 13 /f"\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\ 快捷键端到端 Tutorial\ADT ^ A03.txt"**，其中\<*驱动器*\>是你安装驱动器号。 按 **Enter**。  
   
 7.  请验证您具有以下结果：  
   

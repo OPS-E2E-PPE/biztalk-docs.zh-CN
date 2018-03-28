@@ -1,22 +1,22 @@
 ---
-title: "使用绑定文件导入或导出 |Microsoft 文档"
-ms.custom: 
+title: 使用绑定文件导入或导出 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f9a2a82a-f8d4-4ec2-b8c1-be6cda3f993a
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e3707726eb9e8e77e0536f36700fe098d83ad414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-binding-files-to-import-or-export"></a>使用绑定文件导入或导出
 
@@ -39,14 +39,14 @@ ms.lasthandoff: 09/20/2017
 * 应用程序导入绑定向导允许你选择要导入的跟踪设置，或排除方。
 * BTSTask 包括`ImportParties`和`ExportParties`命令 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必要條件
 
 * 你必须是的成员的帐户登录 * * BizTalk Server 管理员 * * 组。 请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
 
-* 你必须添加对引用**BizTalk EDI 应用程序**从 BizTalk 应用程序将用作 EDI 应用程序。 请参阅[后配置步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
+* 你必须添加对引用 **BizTalk EDI 应用程序** 从 BizTalk 应用程序将用作 EDI 应用程序。 请参阅[后配置步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
 
 ## <a name="import-or-export-all-the-trading-partners"></a>导入或导出所有贸易合作伙伴
-1. 打开 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，展开的 BizTalk 组。
+1. 打开**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，展开的 BizTalk 组。
 2. 右键单击**方**，然后选择**导出**。 
 
     在导出时**方**-级别时，要导出所有贸易合作伙伴。 这还将导出所有内容使用贸易合作伙伴，包括业务配置文件和到 XML 文件的协议。 
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 
     
 ## <a name="export-individual-partners"></a>导出各个合作伙伴
-1. 在 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，选择**方**。
+1. 在**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，选择**方**。
 2. 在**方和业务配置文件**窗格中，右键单击一个参与方，然后选择**导出**。
 
     在导出特定方时，你可以选择要导出所有各方，并由该方使用的所有协议。 你可以取消选中**导出所选的方和中所选的参与方的所有协议**若要仅导出你选择的当事方。
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
 
 在应用程序级别，你可以与 EDI 和 AS2 方导绑定文件。 
 
-1. 在 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，展开**应用程序**
+1. 在**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，展开**应用程序**
 2. 右键单击你的应用程序，然后选择**导入**。
 3. **导入跟踪设置**和**排除方**选项才可用。 使用这些选项，你可以选择要导入任何现有的跟踪设置，或排除所有绑定文件中的 EDI/AS2 参与方。
 

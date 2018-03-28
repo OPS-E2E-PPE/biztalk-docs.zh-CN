@@ -1,28 +1,28 @@
 ---
-title: "命名约定的 SWIFT 架构 |Microsoft 文档"
-ms.custom: 
+title: 命名约定的 SWIFT 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [schemas]
 - schemas, naming conventions
 ms.assetid: 3c1f2519-2575-4178-89c1-e97333c1e6bd
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 14245a185adcccdfb1f2ea2ed9382820fb84177e
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT 架构的命名约定
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括用于互联网协会用于使用 BizTalk 编辑器创建的全球 Interbank 财务电信 (SWIFT) FIN 消息的架构。 这些架构符合在整个以下约定：  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 包括用于互联网协会用于使用 BizTalk 编辑器创建的全球 Interbank 财务电信 (SWIFT) FIN 消息架构。 这些架构符合在整个以下约定：  
   
 > [!NOTE]
 >  所有架构都是版本控制的。 若要查看版本，请打开[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后右键单击解决方案资源管理器中的架构。 与\<架构\>BizTalk 编辑器中，选定属性窗格中向下滚动到标准版本属性中的节点。  

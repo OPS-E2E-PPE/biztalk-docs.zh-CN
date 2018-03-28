@@ -1,11 +1,11 @@
 ---
-title: "发布时的注意事项 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 发布时的注意事项 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, publishing
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web services, schemas
 - schemas, Web services
 ms.assetid: 3ace0260-a1cb-4e59-a820-36ee7d5cceda
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 825a16555f0b0c82282ae4d85592567d2a19c073
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-publishing-web-services"></a>发布 Web Services 时的注意事项
 本主题介绍你在发布 Web Services 之前应考虑的信息。  
@@ -33,13 +33,13 @@ ms.lasthandoff: 01/17/2018
   
 -   无法解析 **schemaLocation** 属性会导致错误  
   
- 有关限制的详细信息包含元素，请参阅"包括元素绑定支持"，网址 [http://go.microsoft.com/fwlink/?LinkId=62312](http://go.microsoft.com/fwlink/?LinkId=62312)。  
+ 有关限制的详细信息包含元素，请参阅"包括元素绑定支持"，网址[ http://go.microsoft.com/fwlink/?LinkId=62312 ](http://go.microsoft.com/fwlink/?LinkId=62312)。  
   
 ## <a name="publishing-schemas-and-the-import-element"></a>发布架构和 import 元素  
- BizTalk Web Services 发布向导与 .NET Framework 中包含的 XSD.exe 具有相同的限制。 详细信息，请参阅"导入元素绑定支持"在 [http://go.microsoft.com/fwlink/?LinkId=62311](http://go.microsoft.com/fwlink/?LinkId=62311)。  
+ BizTalk Web Services 发布向导与 .NET Framework 中包含的 XSD.exe 具有相同的限制。 详细信息，请参阅"导入元素绑定支持"在[ http://go.microsoft.com/fwlink/?LinkId=62311 ](http://go.microsoft.com/fwlink/?LinkId=62311)。  
   
 ## <a name="publishing-schemas-and-the-redefine-element"></a>发布架构和 redefine 元素  
- BizTalk Web Services 发布向导与 .NET Framework 中包含的 XSD.exe 具有相同的限制。 详细信息，请参阅"重新定义元素绑定支持"在 [http://go.microsoft.com/fwlink/?LinkId=62313](http://go.microsoft.com/fwlink/?LinkId=62313)。  
+ BizTalk Web Services 发布向导与 .NET Framework 中包含的 XSD.exe 具有相同的限制。 详细信息，请参阅"重新定义元素绑定支持"在[ http://go.microsoft.com/fwlink/?LinkId=62313 ](http://go.microsoft.com/fwlink/?LinkId=62313)。  
   
 ## <a name="publishing-schemas-that-specify-values-for-minoccurs-or-maxoccurs-attributes"></a>发布指定了 minOccurs 或 maxOccurs 属性值的架构  
  如果发布包含架构 **minOccurs** 或 **maxOccurs** 具有特定值的属性，这些值可能是由已发布的 Web 服务公开的架构中不同。 通常，所有 minOccurs 属性被转换为 0 (minOccurs=0) 而 maxOccurs 属性则转换为 1 或 unbounded（maxOccurs=1 或 maxOccurs=unbounded）。  

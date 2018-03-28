@@ -1,22 +1,22 @@
 ---
-title: "管理 BizTalk Server 开发人员项目一个的源控制系统 |Microsoft 文档"
-ms.custom: 
+title: 管理 BizTalk Server 开发人员项目一个的源控制系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 829749911bd4f3ca6aee1da42578a1aac28db7ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>通过源代码管理系统管理 BizTalk Server 开发人员项目
 保护 BizTalk 项目不出现意外的系统失败是重中之重。 保护项目文件的一种方法是使用源代码管理系统，如 Team Foundation Server 源代码管理和 Microsoft Visual SourceSafe。 本主题讨论了用于组织项目使之最适合与任何源代码管理系统一起使用的基本策略，之后提供了使用 Visual SourceSafe 的具体建议。  
@@ -100,11 +100,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  在“工具”  菜单上，单击“选项” 。  
   
-4.  单击**文件类型**选项卡。  
+4.  单击 **文件类型** 选项卡。  
   
 5.  将以下文件类型添加到二进制文件列表的末尾。 检查每个文件类型之间是否有分号：  
   
-     *.btm;\*.btp;\*.xsd;\*.odx  
+     *.btm;\*。btp;\*。xsd;\*。odx  
   
 6.  单击 **“确定”**。  
   
@@ -158,11 +158,11 @@ ms.lasthandoff: 09/20/2017
   
 ##### <a name="to-include-a-file-or-folder-into-an-existing-visual-studio-project"></a>将文件或文件夹包括在现有的 Visual Studio 项目中  
   
-1.  在解决方案资源管理器，单击**显示所有文件**。  
+1.  在解决方案资源管理器，单击 **显示所有文件**。  
   
 2.  选择要包括在解决方案中的文件夹或文件。  
   
-3.  右键单击该文件夹或文件，并依次**包括在项目**。  
+3.  右键单击该文件夹或文件，并依次 **包括在项目**。  
   
 > [!NOTE]
 >  Visual SourceSafe 资源管理器不应该用于管理属于的任何项[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]项目受源代码管理。  

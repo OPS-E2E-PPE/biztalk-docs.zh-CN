@@ -1,23 +1,23 @@
 ---
-title: "安装和配置 Microsoft BizTalk ESB 工具包 |Microsoft 文档"
-description: "步骤的步骤说明上安装和配置 ESB 工具包 BizTalk Server"
-caps.latest.revision: "8"
+title: 安装和配置 Microsoft BizTalk ESB 工具包 |Microsoft 文档
+description: 步骤的步骤说明上安装和配置 ESB 工具包 BizTalk Server
+caps.latest.revision: ''
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698843f7-8361-4d02-9278-0e66f2a9f472
 ms.author: mandia
 ms.openlocfilehash: 33805fe58298e4f4729161a62742d3b204996b00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>安装和配置 Microsoft BizTalk ESB 工具包
 使用 BizTalk Server 2013 和更高版本中，启动[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]与集成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。 本主题说明如何安装和配置[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并且还包括社区编写的链接，以升级 ESB 工具包。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  选择“完成”关闭安装向导。  
 
-安装日志文件将创建，类似于 C:\Users\yourUserName\AppData\Local\Temp\Setup(081017 175042).htm。 
+An install log file is created, similar to `C:\Users\yourUserName\AppData\Local\Temp\Setup(081017 175042).htm'. 
   
 ## <a name="configure"></a>配置 
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 09/20/2017
     -   选择**应用配置**创建你选定的应用程序。 验证是否在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中创建了该应用程序。  
   
 ## <a name="upgrade-esb-toolkit--community-addition"></a>升级 ESB 工具包 – 社区加码  
- [将 ESB 工具包 2.1 就地升级到 2.2](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) (http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
+ [就地将 ESB 工具包 2.1 升级到 2.2](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) (http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
 
 ## <a name="see-also"></a>另请参阅
 [解决安装问题，以及常见的错误和解决方法](troubleshooting-the-biztalk-esb-toolkit.md)

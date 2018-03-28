@@ -1,11 +1,11 @@
 ---
-title: "创建 Affiliate Applications3 |Microsoft 文档"
-ms.custom: 
+title: 创建 Affiliate Applications3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - affiliate applications
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - affiliate applications, creating
 - SSO tickets
 ms.assetid: 800644fd-2286-4e59-894b-260f584dd29f
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 下列步骤介绍了如何开始使用关联应用程序和单一登录 (SSO)。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/07/2017
   
 #### <a name="to-create-an-affiliate-application"></a>若要创建关联应用程序  
   
-1.  在**控制面板**，打开**服务**，并验证企业单一登录服务正在运行。  
+1.  在 **控制面板**, ，打开 **服务**, ，并验证企业单一登录服务正在运行。  
   
 2.  在命令提示符下，将目录更改为 Enterprise Single Sign-On 文件夹。  
   
@@ -46,7 +46,7 @@ ms.lasthandoff: 11/07/2017
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  若要创建关联应用程序中使用 *。XML 作为一个开始，键入以下命令：  
+4.  若要创建关联应用程序中使用 *。XML 作为一个开始，键入以下命令︰  
   
      **ssomanage.exe createapps C:\SSOtest\AffiliateApplication.xml**  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 11/07/2017
   
 #### <a name="to-enable-affiliate-application-xml"></a>启用关联应用程序 XML  
   
-1.  键入以下命令：  
+1.  键入以下命令︰  
   
      `ssomanage -enableapp JDEdwardsApp`  
   
@@ -113,11 +113,11 @@ ms.lasthandoff: 11/07/2017
   
 4.  在提示符下输入用户名和密码。 输入 JDEdwardsApp 关联应用程序的登录凭据。 例如，输入用户标识和该用户就可以通过 SSO 服务器系统中输入的密码。  
   
-    -   **用户 ID:**用户  
+    -   **用户 ID:** 用户  
   
-    -   **密码：** ******  
+    -   **密码︰** ******  
   
-    -   **确认？密码：** ******  
+    -   **确认？密码︰** ******  
   
 5.  此关联应用程序显示在“JD Edwards OneWorld 传输属性”对话框的 BizTalk 适配器的下拉列表中。  
   

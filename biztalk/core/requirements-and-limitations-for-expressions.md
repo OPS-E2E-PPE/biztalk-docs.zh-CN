@@ -1,11 +1,11 @@
 ---
-title: "表达式的要求和限制 |Microsoft 文档"
-ms.custom: 
+title: 表达式的要求和限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Expression Editor, about Expression Editor
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Expression Editor
 - Expression Editor, Orchestration Designer
 ms.assetid: 1e0353d3-c2f3-4c10-86e3-8620e62dd0d5
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fd819850f62d47c640753e843325c9851da177b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="requirements-and-limitations-for-expressions"></a>对表达式的要求和限制
 业务流程设计器中的 BizTalk 表达式编辑器是标准的 Visual Studio 文本编辑器，这意味着它提供 IntelliSense 功能。 使用 BizTalk 表达式编辑器可通过文本形式输入表达式。  

@@ -1,26 +1,26 @@
 ---
-title: "如何备份主密钥 |Microsoft 文档"
-ms.custom: 
+title: 如何备份主密钥 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [Master Secret server], backing up
 - backing up, Master Secret server
 - Master Secret server, backing up
 ms.assetid: 22c23f66-b7df-4379-8a9f-065406ba8aa8
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 185f3ea674015e02cac2bdaa785c2ee06e67db65
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-back-up-the-master-secret"></a>如何备份主密钥
 您可以将主密钥服务器中的主密钥备份到 NTFS 文件系统或可移动媒体（如软盘）上。  
@@ -36,17 +36,17 @@ ms.lasthandoff: 11/28/2017
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击**系统**，然后单击**备份机密**。  
+3.  右键单击 **系统**, ，然后单击 **备份机密**。  
   
 ### <a name="to-back-up-the-master-secret-using-the-command-line"></a>使用命令行备份主密钥  
   
-1.  上**启动**菜单上，单击**所有程序**，然后单击**附件**。 右键单击**命令提示符**，然后单击**运行方式...**.  
+1.  上 **启动** 菜单上，单击 **所有程序**, ，然后单击 **附件**。 右键单击 **命令提示符**, ，然后单击 **运行另存为...**。  
   
-2.  选择相应的管理员，然后单击**确定**。  
+2.  选择相应的管理员，然后单击 **确定**。  
   
 3.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssoconfig-backupSecret *\<备份文件\>***，其中*\<备份文件\>*是路径和名称将备份主密钥的文件。 例如，A:\ssobackup.bak。  
+4.  类型 * * ssoconfig-backupSecret *\<备份文件\>* * *，其中*\<备份文件\>*是路径和文件进行备份主密钥的名称。 例如，A:\ssobackup.bak。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

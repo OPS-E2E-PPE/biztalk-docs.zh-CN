@@ -1,22 +1,22 @@
 ---
-title: "规划用于发送和接收 |Microsoft 文档"
-ms.custom: 
+title: 规划用于发送和接收 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d67e5f7-5127-4c1d-be20-8d8dbb538286
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="planning-for-sending-and-receiving"></a>规划用于发送和接收
 处理的几乎每个文档[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]由接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收适配器，并从发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送适配器。 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器因此突出图中任何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，务必要提前计划来确定哪些适配器或快捷键，你将使用以及如何正确配置这些适配器和/或快捷键。  
@@ -92,7 +92,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="biztalk-accelerators"></a>BizTalk 加速器  
  BizTalk 适配器适应与特定协议的发送和接收文档，而 BizTalk 加速器旨在满足根据特定的行业标准的文档的交换。 有关可用的 BizTalk 快捷键的列表，请参阅[Microsoft BizTalk Server 加速器](http://go.microsoft.com/fwlink/?LinkId=103609)(http://go.microsoft.com/fwlink/?LinkId=103609)。  
   
-##  <a name="BKMK_InternetTrans"></a>公开传输到 Internet 时配置你的域  
+##  <a name="BKMK_InternetTrans"></a> 公开传输到 Internet 时配置你的域  
  为了简化发送和接收的组织和外部贸易合作伙伴之间的文档，可能需要公开可从 Internet 访问的公共面向站点上的传输。 在这些情况下，建议使用以下域配置：  
   
 -   **采用的外围网络域 （也称为外围安全区域 (DMZ) 或屏蔽子网），到内部服务器以提供 Internet 相关的服务为你的组织**  

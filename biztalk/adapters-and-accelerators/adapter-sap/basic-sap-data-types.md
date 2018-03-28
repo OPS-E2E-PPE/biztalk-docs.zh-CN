@@ -1,23 +1,23 @@
 ---
-title: "在 BizTalk 与 mySAP 适配器中的基本 SAP 数据类型 |Microsoft 文档"
-description: "MySAP 适配器 BizTalk 适配器的包 (BAP) 中的受支持的 ABAP 和数据库数据类型"
-ms.custom: 
+title: 在 BizTalk 与 mySAP 适配器中的基本 SAP 数据类型 |Microsoft 文档
+description: MySAP 适配器 BizTalk 适配器的包 (BAP) 中的受支持的 ABAP 和数据库数据类型
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 296b4813-f175-4a02-8fd3-227ae301bc3d
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f40e7dc6f98e1de2ff0388a8e7e52fdabafc7681
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="basic-sap-data-types"></a>基本 SAP 数据类型
 参数类型[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]受支持:  
@@ -67,17 +67,17 @@ ms.lasthandoff: 09/20/2017
 ### <a name="support-for-date-and-time-fields"></a>对日期和时间字段的支持  
  如果没有启用安全键入，作为化; 进行展示 ABAP 日期 (D) 和时间 (T) 类型但是，显示的日期和时间类型的模式方面是不同的。  
   
--   日期模式方面是：`(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)`  
+-   日期模式方面是： `(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)`  
   
      例如，2007 年 7 月 7 日 (2007年-07-07) 表示为：  
   
-     `(2007-07-07)T(00:00:00)`。  
+     `(2007-07-07)T(00:00:00)`中创建已分区表或索引。  
   
--   时间模式方面是：`(0001-01-01)T(\d\d:\d\d:\d\d)(.*)`  
+-   时间模式方面是： `(0001-01-01)T(\d\d:\d\d:\d\d)(.*)`  
   
      例如，（下午 6:30 和 30 秒） 18:30:30 表示为：  
   
-     `(0001-01-01)T(18:30:30)`。  
+     `(0001-01-01)T(18:30:30)`中创建已分区表或索引。  
   
 #### <a name="how-does-the-adapter-represent-minimum-and-maximum-time-values-on-inbound-messages-from-sap"></a>原理适配器表示最小值和最大入站消息的时间值 （来自 SAP) 是什么？  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]时收到来自 SAP 系统的时间值使用以下准则：  
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
 |LANG （语言密钥）|RFC_CHAR|xsd:string|字符串|  
 |LCHR|RFC_STRING|xsd:string|字符串|  
 |LRAW (长字节 seq)|RFC_BYTE|xsd:base64binary|Byte[]|  
-|NUMC *|RFC_NUM|xsd:int<br />xsd:long<br />xsd:string|Int32 如果长度 < = 9<br />Int64 如果长度 > 9 和 < = 19<br />如果字符串长度 > 19|  
+|NUMC*|RFC_NUM|xsd:int<br />xsd:long<br />xsd:string|Int32 如果长度 < = 9<br />Int64 如果长度 > 9 和 < = 19<br />如果字符串长度 > 19|  
 |PREC （准确性）|RFC_INT2|xsd:short|Int16|  
 |QUAN （数量）|RFC_BCD|化**注意：** [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]舍入基于十进制参数定义的十进制值。 例如，如果十进制参数可以接受小数点后最多五个数字，如 4.000028 值被舍入为 4.00003。|Decimal|  
 |RAW （字节序列）|RFC_BYTE|xsd:base64binary|Byte[]|  
@@ -132,10 +132,10 @@ ms.lasthandoff: 09/20/2017
   
 |RFC 类型|XSD 方面 (**EnableSafeTyping** = false)|XSD 方面 (**EnableSafeTyping** = true)|  
 |--------------|-------------------------------------------------|------------------------------------------------|  
-|RFC_BCD|**XSD 模式方面**<br /><br /> **零小数位数：**`"([\\-]{0,1})(([0-9]{1,"`  `+ digitsBeforeDecimal +`  `"}))"`<br /><br /> **一个或多个小数位数：**`"([\\-]{0,1})(([0-9]{0,"` + `digitsBeforeDecimal +``"}\\.[0-9]{0,"``+ digitsAfterDecimal +``"})&#124;([0-9]{1,"``+ digitsBeforeDecimal +``"}))"`|相同|  
+|RFC_BCD|**XSD 模式方面**<br /><br /> **小数位数为零：** `"([\\-]{0,1})(([0-9]{1,"`  `+ digitsBeforeDecimal +`  `"}))"`<br /><br /> **一个或多个小数位数：** `"([\\-]{0,1})(([0-9]{0,"` + `digitsBeforeDecimal +``"}\\.[0-9]{0,"``+ digitsAfterDecimal +``"})&#124;([0-9]{1,"``+ digitsBeforeDecimal +``"}))"`|相同|  
 |RFC_NUM|**XSD totalDigits 方面**如果长度 < = 19<br /><br /> **XSD 模式方面**如果长度 > 19|**XSD maxLength 方面 （取决于 SAP 的值的长度）**|  
-|RFC_DATE|**XSD 模式方面**<br /><br /> `"(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)"`<br /><br /> 模式包含时间 00:00:00 才能与兼容`xsd:datetime`|**XSD maxLength 方面 = 8**|  
-|RFC_TIME|**XSD 模式方面**<br /><br /> `"(0001-01-01)T(\d\d:\d\d:\d\d)(.*)"`<br /><br /> 模式包含日期 0001-01-01 才能与兼容`xsd:datetime`|**XSD maxLength 方面 = 6**|  
+|RFC_DATE|**XSD 模式方面**<br /><br /> `"(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)"`<br /><br /> 模式包含时间 00:00:00 才能与兼容 `xsd:datetime`|**XSD maxLength 方面 = 8**|  
+|RFC_TIME|**XSD 模式方面**<br /><br /> `"(0001-01-01)T(\d\d:\d\d:\d\d)(.*)"`<br /><br /> 模式包含日期 0001-01-01 才能与兼容 `xsd:datetime`|**XSD maxLength 方面 = 6**|  
 |RFC_CHAR|**XSD maxLength 方面**|相同|  
   
 ## <a name="unsupported-data-types"></a>不支持的数据类型  

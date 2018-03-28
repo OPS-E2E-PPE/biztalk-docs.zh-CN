@@ -1,22 +1,22 @@
 ---
-title: "运行修复并重新提交自定义异常处理程序示例 |Microsoft 文档"
-ms.custom: 
+title: 运行修复并重新提交自定义异常处理程序示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7363c440-44aa-4d08-8290-72787d17ac60
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b8b33765cbe3ca1c8c0c7c3e7679e543678325af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a>运行修复并重新提交自定义异常处理程序示例
 此修复和重新提交自定义异常处理程序的示例演示一种用于将人工干预集成到 ESB 和 Microsoft 基于 BizTalk 应用程序处理并实现一种有用的设计模式的极其有效方法。 示例代码可无缝集成到 ESB 异常管理系统。  

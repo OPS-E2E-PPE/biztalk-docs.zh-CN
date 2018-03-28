@@ -1,26 +1,27 @@
 ---
-title: "启用的 Bank 标识符代码的验证 |Microsoft 文档"
-ms.custom: 
+title: 启用的 Bank 标识符代码的验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Bank Identifier Code (BIC), enabling
+helpviewer_keywords:
+- Bank Identifier Code (BIC), enabling
 ms.assetid: d268a892-f304-44cb-b590-28ef359c8d99
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c3868906d4f61242b1344a02147e4e71307d67d3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>启用的 Bank 标识符代码的验证
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]架构确保 Bank 标识符代码 (BICs) 在 SWIFT 交换文档中指定符合 SWIFT 定义 BIC 数据格式。 A4SWIFT 还支持验证对数据库中的客户指定 BIC 列表 BICs。  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 架构确保 Bank 标识符代码 (BICs) 在 SWIFT 交换文档中指定符合 SWIFT 定义 BIC 数据格式。 A4SWIFT 还支持验证对数据库中的客户指定 BIC 列表 BICs。  
   
  如果你具有启用 BRE 验证，但然后启用 BIC 验证，你可以执行此验证。  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-customize-the-bic-master-policy"></a>若要自定义 BIC Master 策略  
   
-1.  打开 XML 编辑器 （如记事本)，并浏览到  **<*驱动器*程序 Files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFTMessages\A4SWIFT SRG\<版本\>\Base 策略 * *。  
+1.  打开 XML 编辑器 （如记事本)，并浏览到 **<*驱动器*程序 Files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 策略**。  
   
 2.  打开**BIC_Master_Policy.xml**。 将以下现有字符串替换为新值。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  在策略存储区页上，在**SQL Server 名称**，选择[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]包含 BizTalk 数据库。 在**选定的服务器上的配置数据库**，选择**BizTalkRuleEngineDb**，然后单击**下一步**。  
   
-8.  在导入规则引擎策略/词汇文件页上，浏览到  **<*驱动器*files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 策略 * *，单击**BIC_Master_Policy.xml**，单击**打开**，然后单击**下一步**。  
+8.  在导入规则引擎策略/词汇文件页上，浏览到 **<*驱动器*files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFTMessages\A4SWIFT SRG\<版本\>\Base 策略**，单击**BIC_Master_Policy.xml**，单击**打开**，然后单击**下一步**。  
   
 9. 在准备页上，验证数据，，然后单击**下一步**。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 15. 上**部署策略**页上，选择**BIC_Master_Policy.1.0**，然后单击**下一步**。  
   
-16. 上**准备**页上，单击**下一步**。  
+16. 上 **准备** 页上，单击 **下一步**。  
   
 17. 在部署策略页中，如果已成功部署，请单击**下一步**。 单击**再次运行此向导**，然后单击**完成**。  
   

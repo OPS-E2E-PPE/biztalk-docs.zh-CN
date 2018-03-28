@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和 SAP 中的 RFC 操作获取元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和 SAP 中的 RFC 操作获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - browsing, RFCs
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - searching, RFCs
 - WCF client, generating a
 ms.assetid: 68d9e7b2-b8ab-47f5-afda-2811f68e834b
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3aae3cb0963b4ccbc5c3e891af70706587f8e4b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-rfc-operations-in-sap"></a>浏览、 搜索和 SAP 中的 RFC 操作获取元数据
 此部分提供有关如何浏览、 搜索和检索元数据从 SAP 使用 RFC 操作说明[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 说明大部分都是相同的所有三个用户界面。 任何位置都提供相关的用户界面的适用，单独的过程。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 |特殊字符|解释|  
 |-----------------------|--------------------|  
-|+ （加）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
+|+（加号）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
 |*（星号）|匹配零个或多个字符。<br /><br /> 例如，A * A，AB，与 ABC 匹配。|  
   
  有关支持的适配器的特殊字符的详细信息，请参阅[将适配器设置公开为使用 WCF LOB 适配器 SDK 绑定属性](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)。
@@ -167,4 +167,4 @@ ms.lasthandoff: 09/20/2017
 5.  单击 **“确定”**。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]将保存的 WCF 客户端类 （或 WCF 服务接口） 和帮助器代码的操作和你选择了你的项目目录中的类别。 默认情况下，也保存配置文件。 为入站和出站操作; 生成略有不同的文件有关详细信息，请参阅[生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [获取 Visual Studio 中的 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)
+ [在 Visual Studio 中获取 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)

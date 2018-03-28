@@ -1,11 +1,11 @@
 ---
-title: "类型转换，到 BPEL4WS XLANG-s |Microsoft 文档"
-ms.custom: 
+title: 类型转换，到 BPEL4WS XLANG-s |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XLANG/s
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XLANG/s, BPEL4WS
 - XLANG/s, converting
 ms.assetid: a35d4dba-9344-43c8-86e6-a373a4452579
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 02412b86b8649b73cadb4715793f085682a1de74
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="xlang-s-to-bpel4ws-type-conversions"></a>XLANG-s 的 BPEL4WS 类型转换
 下表详细说明了各种 XLANG/s 构造和 BPEL4WS 构造之间的转换。  

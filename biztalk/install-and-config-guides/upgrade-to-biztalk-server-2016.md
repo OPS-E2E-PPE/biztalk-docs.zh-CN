@@ -1,22 +1,22 @@
 ---
-title: "升级到 BizTalk Server 2016 |Microsoft 文档"
-ms.custom: 
+title: 升级到 BizTalk Server 2016 |Microsoft 文档
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 06/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 975ec82b-ed27-4545-8e4a-0e567507c9ba
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>升级到 BizTalk Server 2016
 从 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] 或 BizTalk Server 2013 升级到 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。
@@ -47,11 +47,11 @@ ms.lasthandoff: 11/28/2017
 
 | 操作系统 | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| Windows Server 2012 R2 | 是 | 是 |
-| Windows Server 2012 | 是 | 是 |
-| Windows 8.1 | 是 | 是 |
-| Windows 8 | 是 | 是
-| Windows 7 SP1 | 是 | 是 |
+| Windows Server 2012 R2 | 是 | 否 |
+| Windows Server 2012 | 否 | 否 |
+| Windows 8.1 | 是 | 否 |
+| Windows 8 | 否 | 否
+| Windows 7 SP1 | 否 | 否 |
 
 下表列出了可以升级到 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 的受支持 SQL Server 版本。 SQL Server 可承载 BizTalk Server 所使用的数据库。 “是”表示使用该 SQL Server 版本的 BizTalk Server 可以升级。 “否”表示使用该 SQL Server 版本的 BizTalk Server 不可升级。 如果是“否”，则必须在受支持的 SQL Server 版本上重新创建 BizTalk 环境。 [BizTalk Server 2016 的硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)列出了受支持的 SQL Server 版本。 
 
@@ -60,21 +60,21 @@ ms.lasthandoff: 11/28/2017
 
 | SQL Server | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| SQL Server 2014 | 是 | 是 |
-| SQL Server 2012 SP1| 是 | 是 |
-| SQL Server 2012 | 是 | 是 |
-| SQL Server 2008 R2 SP1 | 是 | 是 |
+| SQL Server 2014 | 是 | 否 |
+| SQL Server 2012 SP1| 否 | 否 |
+| SQL Server 2012 | 否 | 否 |
+| SQL Server 2008 R2 SP1 | 否 | 否 |
 
 
 下表列出了 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 到 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 这些版本中支持的版本升级路径。 “是”表示 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 版本可升级到该版本。 “否”表示 [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 版本不可升级到该版本。 如果是“否”，则必须重新创建 BizTalk 环境。
 
 | BizTalk Server 2013 R2/2013 | BizTalk Server 2016 Evaluation Edition | BizTalk Server 2016 Branch Edition | BizTalk Server 2016 Developer Edition | BizTalk Server 2016 Standard Edition | BizTalk Server 2016 Enterprise Edition |
 | --- | --- | --- | --- | --- | --- |
-| Evaluation | 是 | “否” | “否” | 是 | 是 | 
-| Branch | 是 | 是 | “否” | 是 | 是 | 
-| Developer | 是 | 是 | 是 | “否” | 是 | 
-| Standard | 是 | “否” | 是 | 是 | 是 | 
-| Enterprise | 是 | “否” | “否” | 是 | 是 | 
+| Evaluation | 否 | “否” | “否” | “否” | 是 | 
+| Branch | 否 | 是 | 是 | “否” | 是 | 
+| Developer | 否 | “否” | 是 | “否” | 是 | 
+| Standard | 否 | “否” | “否” | 用户帐户控制 | 是 | 
+| Enterprise | 否 | “否” | “否” | “否” | 是 | 
 
 ## <a name="before-the-upgrade--what-you-need-to-know"></a>升级之前 – 需要知道的事项
 
@@ -244,7 +244,7 @@ ms.lasthandoff: 11/28/2017
 1. 关闭所有打开的程序。
 2. 从安装媒体中运行 **Setup.exe**。
 3. 在“开始”中，选择“安装 Microsoft BizTalk Server”。
-4. 在“客户信息”中，输入用户名、组织、产品密钥。 选择“下一步”。
+4. 在“客户信息”中，输入用户名、组织、产品密钥。 选择“下一步” 。
 5. 接受许可协议，然后选择“下一步”。
 6. 在“客户体验改善计划”中，输入首选项。 有关详细信息，请参阅本主题中的**附录 A**。
 7. 在“组件安装”中，查看可用组件，然后选择“下一步”。

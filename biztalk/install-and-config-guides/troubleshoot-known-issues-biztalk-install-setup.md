@@ -1,23 +1,23 @@
 ---
-title: "已知的安装问题 |Microsoft 文档"
-description: "已知的问题和常见问题和解决方法时安装和配置 BizTalk Server"
-ms.custom: 
+title: 已知的安装问题 |Microsoft 文档
+description: 已知的问题和常见问题和解决方法时安装和配置 BizTalk Server
+ms.custom: ''
 ms.date: 11/30/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 90217a4e80df6f017b451dd7c40f6a1dfe3898ac
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-biztalk-server-setup"></a>BizTalk Server 安装程序疑难解答
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 12/01/2017
 1. 安装必备软件和程序：
 
     * [BizTalk Server 2016](set-up-and-install-prerequisites-for-biztalk-server-2016.md)
-    * [BizTalk Server 2013 R2 和 2013](prepare-your-computer-for-installation.md)
+    * [BizTalk Server 2013 R2 & 2013](prepare-your-computer-for-installation.md)
 
 2. 安装和配置 BizTalk Server:  
 
     1. 安装 BizTalk Server: [BizTalk 2016](install-biztalk-server-2016.md) ， [BizTalk 2013 R2 / 2013年](install-biztalk-server-2013-and-2013-r2.md)  
     2. [配置](configure-biztalk-server.md)BizTalk Server
-    3. [后配置步骤](post-configuration-steps-to-optimize-your-environment.md)
+    3. [配置后步骤](post-configuration-steps-to-optimize-your-environment.md)
   
 ## <a name="some-edias2-artifacts-are-still-active-after-unconfiguring"></a>某些 EDI/AS2 项目仍处于活动状态后未配置  
   
@@ -217,17 +217,17 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
   
 1.  在 SQL 服务器上，打开**Microsoft SQL Server**，选择**Analysis Services**，然后单击**Analysis Manager**。  
   
-2.  在**Analysis Manager**导航面板中，双击**分析服务器**节点以将其展开。  
+2.  在 **Analysis Manager** 导航面板中，双击 **分析服务器** 节点以将其展开。  
   
-3.  右键单击你想要编辑，，然后选择的存储库连接字符串服务器**编辑储存库连接字符串**。  
+3.  右键单击你想要编辑，，然后选择的存储库连接字符串服务器 **编辑储存库连接字符串**。  
   
-4.  在**编辑储存库连接字符串**对话框中，验证此字符串中的服务器名称，为新的计算机名称进行更新，如果不正确。  
+4.  在 **编辑储存库连接字符串** 对话框中，验证此字符串中的服务器名称，为新的计算机名称进行更新，如果不正确。  
   
-5.  导航到以下位置： <*安装目录*> files\microsoft Analysis Services\Bin。  
+5.  导航到以下位置︰ <*安装目录*> files\microsoft Analysis Services\Bin。  
   
-6.  右键单击**Bin**文件夹，，然后单击**共享和安全**。 **Bin 属性**对话框随即出现。  
+6.  右键单击 **Bin** 文件夹，，然后单击 **共享和安全**。 **Bin 属性** 对话框随即出现。  
   
-7.  在**Bin 属性**对话框中，单击**共享**选项卡以验证所有联机分析处理 (OLAP) 管理员具有对此文件夹的完全权限。  
+7.  在 **Bin 属性** 对话框中，单击 **共享** 选项卡以验证所有联机分析处理 (OLAP) 管理员具有对此文件夹的完全权限。  
   
 ### <a name="artifacts-disappear-from-configuration-database-on-redeployment-of-assemblies-from-visual-studio"></a>从配置数据库消失上的 Visual Studio 中的程序集的重新部署的项目  
   
@@ -261,22 +261,22 @@ Logon fails. Logon failed for user '*BizTalk\BizTalkUser*'
  只有 Maps.dll 和它取决于程序集，将重新部署 Visual Studio，因为存在问题： 在此情况下，Schemas.dll。 因此，当用户刷新 BizTalk Server MMC，Orch1、 Orch2，和管道程序集似乎已消失，但 Maps.dll 和 Schemas.dll 仍将可见。  
   
 **解决方法**  
- 主要项目 （引用其他项目） 执行以下操作：  
+ 主要项目 （引用其他项目） 执行以下操作︰  
   
 1.  在解决方案资源管理器中，右键单击解决方案节点。  
   
-2.  单击**属性**以打开**解决方案属性页**对话框。  
+2.  单击 **属性** 以打开 **解决方案属性页** 对话框。  
   
-3.  单击**配置属性**，然后单击**配置**。  
+3.  单击 **配置属性**, ，然后单击 **配置**。  
   
-4.  清除**部署**引用的项目的复选框。  
+4.  清除 **部署** 引用的项目的复选框。  
   
-5.  在解决方案资源管理器中，执行新的解决方案级别部署。 若要执行此操作，右键单击解决方案节点，然后单击**部署解决方案**。  
+5.  在解决方案资源管理器中，执行新的解决方案级别部署。 若要执行此操作，右键单击解决方案节点，然后单击 **部署解决方案**。  
   
 ### <a name="supported-virtual-directory-types"></a>支持的虚拟目录类型  
- 仅当关联的虚拟目录的类型，在导出操作时从业务流程和尝试的操作的 MSI 导出中引用 Web 服务，将会成功**IIsWebVirtualDir**或**IIsWebDirectory**. **IIsWebVirtualDir**和**IIsWebDirectory**是显示在 IIS 元数据库中的节点类型。 **IIsWebVirtualDir**是使用的虚拟目录**路径**指向绝对文件文件夹的属性。 **IIsWebDirectory**而不是虚拟目录**路径**属性，并因此将路由到相对文件文件夹，通常的另一个子文件夹**IIsWebVirtualDir**或**IIsWebDirectory**节点。 这两种类型是元数据库层次中用于描述文件夹的常见类型。  
+ 仅当关联的虚拟目录的类型，在导出操作时从业务流程和尝试的操作的 MSI 导出中引用 Web 服务，将会成功 **IIsWebVirtualDir** 或 **IIsWebDirectory**。 **IIsWebVirtualDir** 和 **IIsWebDirectory** 是显示在 IIS 元数据库中的节点类型。 **IIsWebVirtualDir** 是使用的虚拟目录 **路径** 指向绝对文件文件夹的属性。 **IIsWebDirectory** 而不是虚拟目录 **路径** 属性，并因此将路由到相对文件文件夹，通常的另一个子文件夹 **IIsWebVirtualDir** 或 **IIsWebDirectory** 节点。 这两种类型是元数据库层次中用于描述文件夹的常见类型。  
   
- 类型的虚拟目录**IIsConfigObject**不支持和 MSI 导出将会在这种情况下失败。 **IIsConfigObject**意外元数据库节点类型，是一个有效的节点类型不正确处理 BizTalk Server 或不正确创建 （并因此无效） 元数据库条目的相对值。 在此情况下，BizTalk 服务器会显示一条错误消息类似于以下内容： 类型为 IIsConfigObject 意外的目录项"IIS://LM/W3SVC/1/ROOT/BadVdir/"。  
+ 类型的虚拟目录 **IIsConfigObject** 不支持和 MSI 导出将会在这种情况下失败。 **IIsConfigObject** 意外元数据库节点类型，是一个有效的节点类型不正确处理 BizTalk Server 或不正确创建 （并因此无效） 元数据库条目的相对值。 在此情况下，BizTalk 服务器会显示一条错误消息类似于以下内容︰ 类型为 IIsConfigObject 意外的目录项"IIS://LM/W3SVC/1/ROOT/BadVdir/"。  
   
 ### <a name="unable-to-view-group-information-after-removing-stale-logons"></a>删除过时登录后无法查看组信息  
   
@@ -454,7 +454,7 @@ SSO_ERROR_SECRETS_NOT_LOADED
 |RBKRegsvcsSQLAdapter|对给定二进制文件运行 regsvcs.exe。|  
 |RestoreBTSCounters|还原包含性能计数器 .ini 文件名的属性。|  
 |RollbackBTSCounters|运行命令 unlodctr BTSSvc.3.0。|  
-|RollbackRegsvcsApplicationDeployment|设置 [FrameworkPath] &#124;[INSTALLDIR]对于失败的安装方案的 Microsoft.BizTalk.ApplicationDeployment.Engine.dll。|  
+|RollbackRegsvcsApplicationDeployment|设置 [FrameworkPath]&#124;[INSTALLDIR]Microsoft.BizTalk.ApplicationDeployment.Engine.dll for 失败的安装方案。|  
 |RollbackRegsvcsDeployment|在卸载/回滚方案过程中调用 regsvcs.exe。|  
 |WMI_Restore_MSBTS_Silent|调用 mofcomp 以注册 WMI 架构|  
 |WMI_Rollback_MSBTS|从 WMI 中删除 BizTalk Server 命名空间。|  
@@ -468,7 +468,7 @@ SSO_ERROR_SECRETS_NOT_LOADED
   
 |文件夹路径|文件名|用户特权|  
 |-----------------|---------------|---------------------|  
-|\Program 文件 (x86) \common shared\Help 9\Microsoft 文档资源管理器 2008年|Install.exe|最高可用权限|  
+|\Program Files (x86)\Common Files\Microsoft shared\Help 9\Microsoft Document Explorer 2008|Install.exe|最高可用权限|  
 |\Program files (x86) \Microsoft BizTalk Server*你的版本*|BTSHatApp.exe|最高可用权限|  
 |\Program files (x86) \Microsoft BizTalk Server*你的版本*|BTSMMCLauncher.exe|最高可用权限|  
 |\Program files (x86) \Microsoft BizTalk Server*你的版本*|BtsWcfServicePublishingWizard.exe|最高可用权限|  
@@ -477,6 +477,6 @@ SSO_ERROR_SECRETS_NOT_LOADED
 |\Program files (x86) \Microsoft BizTalk Server*你的版本*|REDeployWiz.exe|最高可用权限|  
 |\Program files (x86) \Microsoft BizTalk Server*你的版本*|Setup.exe|管理权限|  
 |\Program files (x86) \Microsoft BizTalk Server*你版本*\XSD Schema\EDI|MicrosoftEdiXSDTemplates.exe|Self-extracting .exe 文件。|  
-|\Program 文件 (x86) \Microsoft UDDI Services\config|Configuration .exe|管理权限|  
-|Files\ Microsoft BizTalk RFID\bin|BTSMMCLauncher.exe|最高可用权限|  
-|Files\microsoft BizTalk RFID\BREConfi 配置|Configuration .exe|管理权限|  
+|\Program Files (x86)\Microsoft UDDI Services\config|Configuration .exe|管理权限|  
+|\Program Files\ Microsoft BizTalk RFID\bin|BTSMMCLauncher.exe|最高可用权限|  
+|\Program Files\Microsoft BizTalk RFID\BREConfi guration|Configuration .exe|管理权限|  

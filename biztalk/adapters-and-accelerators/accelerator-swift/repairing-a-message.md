@@ -1,34 +1,35 @@
 ---
-title: "修复消息 |Microsoft 文档"
-ms.custom: 
+title: 修复消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: repairing messages
+helpviewer_keywords:
+- repairing messages
 ms.assetid: 3a61b73b-5433-4249-b580-6194ccb4aebc
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4489e463257f811fe2c71efea49880940751c66a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="repairing-a-message"></a>修复消息
 本部分介绍如何修复未通过验证的消息。  
   
 ### <a name="to-repair-a-message"></a>若要修复一条消息  
   
-1.  在 Internet Explorer 中，打开 http://localhost/sites/bassite MRSR 网站。  
+1.  在 Internet Explorer 中，打开 MRSR 网站http://localhost/sites/bassite。  
   
 2.  在主页窗口中，单击**文档**。  
   
-3.  在文档窗口中，在**文档库**，单击  **\<*部门名称*\>**_**Repairer * *。  
+3.  在文档窗口中，在**文档库**，单击 **\<*部门名称*\>**_**Repairer**.  
   
 4.  在\<*部门名称*\>_Repair 窗口中，单击**收件箱**。  
   

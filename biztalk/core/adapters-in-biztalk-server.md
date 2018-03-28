@@ -1,23 +1,23 @@
 ---
-title: "BizTalk Server 中的适配器 |Microsoft 文档"
-description: "在 BizTalk Server 中包括内置的适配器、 enterprise 适配器和 BizTalk 适配器包的所有可用适配器的完整列表"
-ms.custom: 
+title: BizTalk Server 中的适配器 |Microsoft 文档
+description: 在 BizTalk Server 中包括内置的适配器、 enterprise 适配器和 BizTalk 适配器包的所有可用适配器的完整列表
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fd279fb-2c68-4de4-a586-5a8e42a685ff
-caps.latest.revision: "48"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 7834fe9f7365e9ed94bce82f353e1cd305a2863c
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adapters-in-biztalk-server"></a>BizTalk Server 中的适配器
 主要设计目标之一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是便于实现的业务文档贸易合作伙伴之间交换。 为了帮助满足这一目标，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括几个适配器，提供 BizTalk Server 和使用通常在贸易合作伙伴之间的连接识别数据协议文档格式。 本主题探讨适配器的含义以及使用适配器的原因。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 10/17/2017
 ## <a name="what-is-an-adapter"></a>什么是适配器？  
  适配器是一种软件组件，让你可以使用符合常用标准（例如 SMTP、POP3、FTP 或 Microsoft 消息队列 (MSMQ)）的传送机制轻松地从 BizTalk Server 发出消息或将消息接收到 BizTalk Server 中。 作为 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]的发展，需使用快速通常启用与连接的适配器的应用程序和技术的增加。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括以下适配器，统称为"本机"或"集成"适配器： 文件、 FTP、 HTTP、 MQSeries、 MSMQ、 POP3、 SMTP、 SOAP、 Windows Sharepoint Services 和七个 WCF 适配器 （WCF WSHttp、 WCF BasicHttp、 WCF NetTcp、 WCF NetMsmq，WCF-NetNamedPipe、 WCF 自定义和 WCF CustomIsolated)。 安装本机适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 你还可以通过使用 BizTalk 适配器框架为特定解决方案创建自定义适配器。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包括以下适配器，统称为"本机"或"集成"适配器： 文件、 FTP、 HTTP、 MQSeries、 MSMQ、 POP3、 SMTP、 SOAP、 Windows Sharepoint Services 和七个 WCF 适配器 （WCF WSHttp、 WCF BasicHttp、 WCF NetTcp、 WCF NetMsmq，WCF-NetNamedPipe、 WCF 自定义和 WCF CustomIsolated)。 安装本机适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 你还可以通过使用 BizTalk 适配器框架为特定解决方案创建自定义适配器。  
   
  每个本地适配器均关联有一个接收位置，用于在特定地址侦听来自特定传输的消息。 在接收位置收到消息后，消息将传递给适配器。 适配器将向消息（通常在消息的正文部分）附加数据流，添加有关接收数据的源终结点的所有元数据，然后将消息提交到 BizTalk 消息引擎。  
   
@@ -47,28 +47,28 @@ ms.lasthandoff: 10/17/2017
   
 -   **启用 SSO** ： 使用 SSO 身份验证发送或接收与适配器的文档时的能力。  
   
--   **承载进程**： 在其中适配器执行的过程。 *BizTalk IP*在 BTSNTSvc.exe 进程内执行时*IIS OOP*外部 Internet 信息服务器 (IIS) 进程中的 BizTalk Server 过程运行。  
+-   **承载进程**： 在其中适配器执行的过程。 *BizTalk IP* 在 BTSNTSvc.exe 进程内执行时 *IIS OOP* 外部 Internet 信息服务器 (IIS) 进程中的 BizTalk Server 过程运行。  
   
 |适配器|主要好处|事务支持|双向通信支持|按序接收支持|SSO 已启用|宿主进程|  
 |---|---|---|---|---|---|---|  
 |自定义|支持你的系统。|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|BizTalk IP|  
-|文件|便于使用。|是|“否”|“否”|是|BizTalk IP|  
-|FTP|广泛应用于企业对企业通信。|是|“否”|是|是|BizTalk IP|  
-|HTTP(s)|广泛应用于企业对企业通信。|是|请求/响应和要求/响应|是|是|IIS OOP|  
-|MSMQ|确保在 BizTalk Server 和 Microsoft 消息队列之间一次性送达消息。|是|“否”|是|是|BizTalk IP|  
+|文件|便于使用。|否|“否”|“否”|否|BizTalk IP|  
+|FTP|广泛应用于企业对企业通信。|否|“否”|“否”|是|BizTalk IP|  
+|HTTP(s)|广泛应用于企业对企业通信。|否|请求/响应和要求/响应|否|是|IIS OOP|  
+|MSMQ|确保在 BizTalk Server 和 Microsoft 消息队列之间一次性送达消息。|是|“否”|是|否|BizTalk IP|  
 |逻辑应用| 从，接收和发送到 Azure 逻辑应用程序。 在本地和云环境中，使用此适配器访问许多 Azure 服务 | 是 | 取决于你的工作流设计| | |收到： BizTalk IP<br/>发送： IIS OOP| 
-|MQ Series|确保在 BizTalk Server 和用于 Windows 平台的 IBM WebSphere MQ 之间一次性送达消息。|是|“否”|是|是|BizTalk IP|  
-|POP3|支持通过电子邮件接收文档。|是|“否”|“否”|是|BizTalk IP|  
-|SMTP|支持通过电子邮件发送文档。|是|“否”|“否”|是|BizTalk IP|  
-|SOAP|支持使用 Web Services。|是|请求/响应和要求/响应|是|是|IIS OOP|  
-|Windows SharePoint Services|用于在 BizTalk Server 和 SharePoint 文档库之间交换 XML 和二进制消息。|是|“否”|“否”|是|BizTalk IP| 
-|WCF-WSHttp|通过 HTTP 传输支持 WS-* 标准。|是，WsHTTP 支持事务（仅限 WS-Transactions）|请求/响应和要求/响应|是|是|IIS OOP|  
-|WCF-BasicHttp|使用 HTTP 或 HTTPS 与基于 ASMX 的 Web Services 以及符合 WS-I 基本配置文件 1.1 的客户端和其他服务进行通信。|是|请求/响应和要求/响应|是|是|IIS OOP|  
-|WCF-NetTcp|通过 TCP 传输支持 WS-* 标准。|是|请求/响应和要求/响应|是|是|BizTalk IP|  
-|WCF-NetMsmq|通过将 Microsoft 消息队列 (MSMQ) 作为传输利用来支持队列。|是|“否”|是|是|BizTalk IP|  
-|WCF-NetNamedPipe|为在同一台计算机上进行进程间通信提供快速传输（仅适用于 WCF 应用程序）。|是|请求/响应和要求/响应|是|是|BizTalk IP|  
+|MQ Series|确保在 BizTalk Server 和用于 Windows 平台的 IBM WebSphere MQ 之间一次性送达消息。|是|“否”|用户帐户控制|是|BizTalk IP|  
+|POP3|支持通过电子邮件接收文档。|否|“否”|“否”|否|BizTalk IP|  
+|SMTP|支持通过电子邮件发送文档。|否|“否”|“否”|否|BizTalk IP|  
+|SOAP|支持使用 Web Services。|否|请求/响应和要求/响应|否|是|IIS OOP|  
+|Windows SharePoint Services|用于在 BizTalk Server 和 SharePoint 文档库之间交换 XML 和二进制消息。|否|“否”|“否”|否|BizTalk IP| 
+|WCF-WSHttp|通过 HTTP 传输支持 WS-* 标准。|是，WsHTTP 支持事务（仅限 WS-Transactions）|请求/响应和要求/响应|否|是|IIS OOP|  
+|WCF-BasicHttp|使用 HTTP 或 HTTPS 与基于 ASMX 的 Web Services 以及符合 WS-I 基本配置文件 1.1 的客户端和其他服务进行通信。|否|请求/响应和要求/响应|否|是|IIS OOP|  
+|WCF-NetTcp|通过 TCP 传输支持 WS-* 标准。|是|请求/响应和要求/响应|否|是|BizTalk IP|  
+|WCF-NetMsmq|通过将 Microsoft 消息队列 (MSMQ) 作为传输利用来支持队列。|是|“否”|用户帐户控制|是|BizTalk IP|  
+|WCF-NetNamedPipe|为在同一台计算机上进行进程间通信提供快速传输（仅适用于 WCF 应用程序）。|是|请求/响应和要求/响应|否|是|BizTalk IP|  
 |WCF-Custom|允许使用 WCF 扩展功能。|是|是|是，只要绑定支持。|是|BizTalk IP|  
-|WCF-CustomIsolated|允许通过 HTTP 传输使用 WCF 扩展功能。|是|是|“否”|是|IIS OOP|  
+|WCF-CustomIsolated|允许通过 HTTP 传输使用 WCF 扩展功能。|是|用户帐户控制|“否”|是|IIS OOP|  
   
 ## <a name="enterprise-adapters"></a>Enterprise 适配器  
  下面是 Microsoft 提供的业务线 (LOB) 适配器的列表。  

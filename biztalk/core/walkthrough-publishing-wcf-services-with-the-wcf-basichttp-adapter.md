@@ -1,11 +1,11 @@
 ---
-title: "演练： 发布 WCF 服务与 WCF BasicHttp 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 发布 WCF 服务与 WCF BasicHttp 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, publishing
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WCF services, publishing
 - tutorials, WCF adapters
 ms.assetid: 43b76215-9cb0-47ab-a085-c4cf265410f9
-caps.latest.revision: "72"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca976d2e965d781de352a010bd4ef8c16e712ffb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter"></a>演练： 使用 WCF BasicHttp 适配器的 WCF 服务发布
 ## <a name="introduction"></a>简介  
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/01/2017
 -   部署之后，你即可通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置和控制 BizTalk 业务流程。 在本演练中，你将配置 WCF-BasicHttp 接收位置，以接受发送到 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务的传入消息，该服务由 BizTalk [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务发布向导创建。 此接收位置在 IIS 中以 BizTalk 独立主机为宿主，并充当获取传入请求的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
   
 > [!NOTE]
->  在本演练中，你将使用 BizTalk WCF 发布向导和/或 BizTalk Web Services 发布向导，通过 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器将 BizTalk 业务流程和架构发布为 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 若要作为 Web 服务与 SOAP 适配器发布业务流程和架构，你可以使用**BizTalk WCF 发布向导**和/或**BizTalk Web 服务发布向导**。  
+>  在本演练中，你将使用 BizTalk WCF 发布向导和/或 BizTalk Web Services 发布向导，通过 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器将 BizTalk 业务流程和架构发布为 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 若要作为 Web 服务与 SOAP 适配器发布业务流程和架构，你可以使用 **BizTalk WCF 发布向导** 和/或 **BizTalk Web 服务发布向导**。  
   
 ## <a name="prerequisites"></a>先决条件  
  若要执行本示例中的步骤，请确保你的环境中安装了以下必备软件：  
@@ -54,63 +54,63 @@ ms.lasthandoff: 12/01/2017
   
 -   在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
   
--   需要的任何计算机上[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]功能，完成的一次性安装过程[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]示例在[http://go.microsoft.com/fwlink/?LinkId=135510](http://go.microsoft.com/fwlink/?LinkId=135510)。  
+-   需要的任何计算机上[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]功能，完成的一次性安装过程[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]示例在[ http://go.microsoft.com/fwlink/?LinkId=135510 ](http://go.microsoft.com/fwlink/?LinkId=135510)。  
   
 -   在运行示例并将绑定或 .msi 文件导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的计算机上，确保主机不是受信任主机，否则导入将失败。  
   
--   你必须下载演练代码并将其解压缩到你的计算机。 本演练是整个的一部分[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]适配器演练包。 你可以下载该文件**WCFAdapterWalkthroughs.exe**从[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发人员中心， [http://go.microsoft.com/fwlink/?LinkId=194140](http://go.microsoft.com/fwlink/?LinkId=194140)。  
+-   你必须下载演练代码并将其解压缩到你的计算机。 本演练是整个的一部分[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]适配器演练包。 你可以下载该文件**WCFAdapterWalkthroughs.exe**从[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发人员中心， [ http://go.microsoft.com/fwlink/?LinkId=194140 ](http://go.microsoft.com/fwlink/?LinkId=194140)。  
   
 ### <a name="to-deploy-the-sample-biztalk-solution-biztalkapp"></a>部署 BizTalk 解决方案示例 BizTalkApp  
   
-1.  运行自解压**WCFBasicHttpReceiveAdapter.exe**文件并将文件提取到**C:\WCFBasicHttpReceiveAdapter**文件夹。  
+1.  运行自解压 **WCFBasicHttpReceiveAdapter.exe** 文件并将文件提取到 **C:\WCFBasicHttpReceiveAdapter** 文件夹。  
   
-2.  在 Microsoft Visual Studio 中，打开**C:\WCFBasicHttpReceiveAdapter\WCFBasicHttpReceiveAdapter.sln**文件。  
+2.  在 Microsoft Visual Studio 中，打开 **C:\WCFBasicHttpReceiveAdapter\WCFBasicHttpReceiveAdapter.sln** 文件。  
   
-3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**程序集包含[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程、 地图中和两个架构。 必须安装到 GAC 中和将需要为此文件的强名称密钥。 右键单击**BizTalkApp**项目，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>**，并输入`keyfile.snk`中**密钥文件名称**文本框。 取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
+3.  **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**程序集包含[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程、 地图中和两个架构。 必须安装到 GAC 中和将需要为此文件的强名称密钥。 右键单击 **BizTalkApp** 项目，然后单击 **属性**。 上 **属性** 页上，单击 **签名**, ，然后选择 **对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>**，并输入`keyfile.snk`中**密钥文件名称**文本框。 取消选中 **保护我使用密码的密钥文件**, ，然后单击 **确定**。  
   
-4.  在解决方案资源管理器，右键单击**BizTalkApp**项目，，然后单击**重新生成**。  
+4.  在解决方案资源管理器，右键单击 **BizTalkApp** 项目，，然后单击 **重新生成**。  
   
     > [!NOTE]
-    >  不要尝试**生成解决方案**，或要生成**WCFClient**此时应用程序。 **WCFClient**未准备好构建在此示例中的点的基础。  
+    >  不要尝试 **生成解决方案**, ，或要生成 **WCFClient** 此时应用程序。 **WCFClient** 未准备好构建在此示例中的点的基础。  
   
-5.  展开**BizTalkApp**，然后打开**DeliveryProcess.odx**查看。 业务流程使用 WCF-BasicHttp 适配器通过 HTTP 接收 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 请求。 它通过转换映射修改该请求，并使用同一 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器再次发出响应。  
+5.  展开 **BizTalkApp**, ，然后打开 **DeliveryProcess.odx** 查看。 业务流程使用 WCF-BasicHttp 适配器通过 HTTP 接收 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 请求。 它通过转换映射修改该请求，并使用同一 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器再次发出响应。  
   
     1.  该业务流程具有将通过 WCF-BasicHttp 适配器发布的逻辑请求响应端口。 在稍后的步骤中，该端口将绑定到物理端口。  
   
-    2.  右键单击顶级节点**DeliveryProcess.odx**在设计器窗口，然后选择**属性**。 请确保**类型修饰符**端口类型的属性是**公共**。  
+    2.  右键单击顶级节点 **DeliveryProcess.odx** 在设计器窗口，然后选择 **属性**。 请确保 **类型修饰符** 端口类型的属性是 **公共**。  
   
-6.  在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**属性**。  
+6.  在解决方案资源管理器，右键单击 **BizTalkApp**, ，然后单击 **属性**。  
   
-    1.  如果不在本地托管 BizTalk 管理数据库，修改**服务器**属性，如果你使用不同的数据库服务器。 单击**部署**选项卡上，然后修改**服务器**属性以指向数据库服务器。  
+    1.  如果不在本地托管 BizTalk 管理数据库，修改 **服务器** 属性，如果你使用不同的数据库服务器。 单击 **部署** 选项卡上，然后修改 **服务器** 属性以指向数据库服务器。  
   
-    2.  请确保**应用程序名称**属性设置为**WCFBasicHttpReceiveAdapter**。 这是将部署 BizTalk 解决方案的 BizTalk 应用程序的名称。  
+    2.  请确保 **应用程序名称** 属性设置为 **WCFBasicHttpReceiveAdapter**。 这是将部署 BizTalk 解决方案的 BizTalk 应用程序的名称。  
   
-    3.  在解决方案资源管理器，右键单击**BizTalkApp**，然后单击**部署**。 如果不在本地部署，你可能需要配置 SQL Server 以允许远程连接。 有关详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=194141](http://go.microsoft.com/fwlink/?LinkId=194141)。  
+    3.  在解决方案资源管理器，右键单击 **BizTalkApp**, ，然后单击 **部署**。 如果不在本地部署，你可能需要配置 SQL Server 以允许远程连接。 有关详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=194141 ](http://go.microsoft.com/fwlink/?LinkId=194141)。  
   
 ### <a name="to-publish-the-sample-orchestration-by-using-the-biztalk-wcf-service-publishing-wizard"></a>使用 BizTalk WCF 服务发布向导发布示例业务流程  
   
 1.  在此步骤中，你将采用新部署的业务流程程序集，并将其发布为 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 若要执行此操作，请单击**启动**，指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后单击**BizTalk WCF 服务发布向导**.  
   
-2.  上**BizTalk WCF 服务发布向导欢迎**页上，单击**下一步**。  
+2.  上 **BizTalk WCF 服务发布向导欢迎** 页上，单击 **下一步**。  
   
 3.  上**WCF 服务类型**页上，执行以下操作来指定的一种[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务发布，以及用于接收 BizTalk 终结点[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息，，然后单击**下一步**:  
   
-    1.  选择**服务终结点**选项，状态将发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务中，从中程序集的业务流程。 选择**WCF BasicHttp**从**适配器名称 （传输类型）**下拉列表。  
+    1.  选择**服务终结点**选项，状态将发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务中，从中程序集的业务流程。 选择 **WCF BasicHttp** 从 **适配器名称 （传输类型）** 下拉列表。  
   
     2.  选择**启用元数据终结点**复选框可使[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]接收由 IIS 承载的位置发布其[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务元数据。 选择此复选框设置**httpGetEnabled**属性\< **serviceMetadata** \>元素`true`在 Web.Config 中。在 HTTP/GET 请求要求此元数据时将检索此元数据。 稍后将使用 SvcUtil.exe 工具获取此数据以生成代理类，客户端代码将使用此代理类调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
   
-    3.  选择**以下应用程序中的创建 BizTalk 接收位置**选项来创建接收端口和对应于 WCF BasicHttp 适配器每个生成的.svc 文件的位置。 选择 BizTalk 应用程序名称、 **WCFBasicHttpReceiveAdapter**，其中接收端口和位置将生成，然后单击**下一步**。  
+    3.  选择 **以下应用程序中的创建 BizTalk 接收位置** 选项来创建接收端口和对应于 WCF BasicHttp 适配器每个生成的.svc 文件的位置。 选择 BizTalk 应用程序名称、 **WCFBasicHttpReceiveAdapter**, ，其中接收端口和位置将生成，然后单击 **下一步**。  
   
          向导将创建一个 Binding.XML 绑定文件，以表示关联的接收位置。 该文件位于 Web 目录中，稍后你可以通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台手动导入。  
   
         > [!NOTE]
         >  如果未在此处选择已部署的 BizTalk 应用程序，则选择默认应用程序。  
   
-4.  上**创建 WCF 服务**页上，选择**作为 WCF 服务发布 BizTalk 业务流程**，然后单击**下一步**。 这将发布为下一步中指定的业务流程[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。  
+4.  上 **创建 WCF 服务** 页上，选择 **作为 WCF 服务发布 BizTalk 业务流程**, ，然后单击 **下一步**。 这将发布为下一步中指定的业务流程[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。  
   
-5.  选择包含要发布的业务流程的程序集。 上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**文本框中，单击**浏览**以浏览到**C:\WCFBasicHttpReceiveAdapter\BizTalkApp\bin\Development**文件夹中，双击**Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**包含示例程序集业务流程，若要发布，单击**打开**，然后单击**下一步**。  
+5.  选择包含要发布的业务流程的程序集。 上 **BizTalk 程序集** 页上，在 **BizTalk 程序集文件 (\*.dll)** 文本框中，单击 **浏览** 以浏览到 **C:\WCFBasicHttpReceiveAdapter\BizTalkApp\bin\Development** 文件夹中，双击 **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp** 包含示例业务流程的程序集若要发布，单击 **打开**, ，然后单击 **下一步**。  
   
-6.  上**业务流程和端口**页上，请确保**端口： DeliveryRequestPort**节点在页上，选择，再单击**下一步**。 选择此节点意味着也选择其相应的更高级别的节点。 此端口将通过承载 WCF-BasicHttp 适配器的请求-响应接收位置发布。  
+6.  上 **业务流程和端口** 页上，请确保 **端口︰ DeliveryRequestPort** 节点在页上，选择，再单击 **下一步**。 选择此节点意味着也选择其相应的更高级别的节点。 此端口将通过承载 WCF-BasicHttp 适配器的请求-响应接收位置发布。  
   
 7.  上**WCF 服务属性**页上，在**目标**命名空间的**WCF 服务**文本框中，键入你希望此已发布的 URI[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务以使用，并然后单击**下一步**。 对于本演练中，保留默认 URI，"**http://tempuri.org/"**的目标命名空间中[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务文本框。  
   
@@ -118,11 +118,11 @@ ms.lasthandoff: 12/01/2017
   
     1.  在**位置**文本框中，键入 Web 目录名称[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务运行，或单击**浏览**选择的 Web 目录。 对于本演练中，由于程序集名称是相同的虚拟目录，保留默认位置 (**http://localhost/Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**) 中**位置**文本框。  
   
-    2.  选择**允许匿名访问 WCF 服务**选项，并依次**下一步**。 此选项允许对已创建的虚拟目录进行匿名访问。 由于本演练使用不带身份验证的传输安全模式下，此选项将需要选择以允许为此向导将创建 Web 应用程序的匿名身份验证。  
+    2.  选择 **允许匿名访问 WCF 服务** 选项，并依次 **下一步**。 此选项允许对已创建的虚拟目录进行匿名访问。 由于本演练使用不带身份验证的传输安全模式下，此选项将需要选择以允许为此向导将创建 Web 应用程序的匿名身份验证。  
   
 9. 上**WCF 服务摘要**页上，单击**创建**创建[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 此步骤将为通过指定 Web 目录提供的指定业务流程创建一个接收端口。  
   
-10. 上**完成 BizTalk WCF 服务发布向导**页上，单击**完成**。  
+10. 上 **完成 BizTalk WCF 服务发布向导** 页上，单击 **完成**。  
   
 ### <a name="to-enable-the-sample-biztalk-application"></a>启用 BizTalk 示例应用程序  
   
@@ -130,43 +130,43 @@ ms.lasthandoff: 12/01/2017
   
 2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**应用程序**，展开**WCFBasicHttpReceiveAdapter**，展开**业务流程**，右键单击**DeliveryProcess**业务流程，单击**属性**，然后配置的绑定信息，如下所示：  
   
-    1.  在**业务流程属性**对话框中，单击**绑定**，然后设置**主机**到**BizTalkServerApplication**。  
+    1.  在 **业务流程属性** 对话框中，单击 **绑定**, ，然后设置 **主机** 到 **BizTalkServerApplication**。  
   
-    2.  在**业务流程属性**对话框中，选择接收端口用于**DeliveryRequestPort**绑定。 本演练中，选择接收端口 BizTalk[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务发布向导在之前的过程中创建，然后单击**确定**。  
+    2.  在 **业务流程属性** 对话框中，选择接收端口用于 **DeliveryRequestPort** 绑定。 本演练中，选择接收端口 BizTalk[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务发布向导在之前的过程中创建，然后单击**确定**。  
   
 3.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**WCFBasicHttpReceiveAdapter**，单击**启动**，然后单击**启动**中**启动应用程序**对话框。  
   
 ### <a name="to-configure-the-web-application-hosting-the-published-wcf-service"></a>配置用于承载已发布 WCF 服务的 Web 应用程序  
   
-1.  单击**启动**，指向**管理员工具**，然后单击**Internet Information Services (IIS) 7.0 Manager**。  
+1.  单击 **启动**, ，指向 **管理员工具**, ，然后单击 **Internet Information Services (IIS) 7.0 Manager**。  
   
-2.  在 IIS 管理器中，展开**站点**，展开**Default Web Site**，然后展开 Web 应用程序**Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp**， **BizTalk WCF 服务发布向导**创建。  
+2.  在 IIS 管理器中，展开 **站点**, ，展开 **Default Web Site**, ，然后展开 Web 应用程序 **Microsoft.Samples.BizTalk.WCFBasicHttpReceiveAdapter.BizTalkApp** ， **BizTalk WCF 服务发布向导** 创建。  
   
-3.  创建此服务将运行在其中的应用程序池。 右键单击**应用程序池**，单击**添加应用程序池**，输入应用程序池的名称，然后单击**确定**。  
+3.  创建此服务将运行在其中的应用程序池。 右键单击 **应用程序池**, ，单击 **添加应用程序池**, ，输入应用程序池的名称，然后单击 **确定**。  
   
-4.  展开**应用程序池**，右键单击你刚的应用程序池创建，，然后选择**高级设置**。 下**进程模型**部分中，输入可以访问的帐户[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库下**标识**字段。  
+4.  展开 **应用程序池**, ，右键单击你刚的应用程序池创建，，然后选择 **高级设置**。 下**进程模型**部分中，输入可以访问的帐户[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库下**标识**字段。  
   
-5.  在 IIS 管理器中，单击**内容视图**。  在右窗格中，右键单击[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务.svc 文件**BizTalk WCF 服务发布向导**创建，并依次**浏览**。 这将打开 Internet Explorer 并显示一页，指示你已成功创建一个正在运行的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 此页还包含一个完整的 WSDL 地址，你可以通过复制该地址并将其用于服务元数据工具 (svcutil.exe) 来检索可用于创建该服务客户端应用程序的代理代码和配置文件。  
+5.  在 IIS 管理器中，单击 **内容视图**。  在右窗格中，右键单击[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务.svc 文件**BizTalk WCF 服务发布向导**创建，并依次**浏览**。 这将打开 Internet Explorer 并显示一页，指示你已成功创建一个正在运行的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。 此页还包含一个完整的 WSDL 地址，你可以通过复制该地址并将其用于服务元数据工具 (svcutil.exe) 来检索可用于创建该服务客户端应用程序的代理代码和配置文件。  
   
 6.  SvcUtil.exe 命令行中使用 Internet Explorer 显示上一步中的页面上的完整 WSDL 地址复制到剪贴板。  
   
 ### <a name="to-create-the-proxy-class-for-the-sample-wcf-client-application-wcfclient"></a>为 WCF 客户端应用程序示例 WCFClient 创建代理类  
   
-1.  创建代理类因此[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]客户端示例应用程序可以调用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 虽然不需要代理，但是手动编写代码非常复杂，因此推荐创建代理。 打开**Visual Studio 命令提示符**并转到**C:\WCFBasicHttpReceiveAdapter\WCFClient**将放置的代理类和应用程序配置文件的文件夹。  
+1.  创建代理类因此[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]客户端示例应用程序可以调用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 虽然不需要代理，但是手动编写代码非常复杂，因此推荐创建代理。 打开 **Visual Studio 命令提示符** 并转到 **C:\WCFBasicHttpReceiveAdapter\WCFClient** 将放置的代理类和应用程序配置文件的文件夹。  
   
-2.  粘贴**svcutil.exe**命令行中使用在之前的过程中复制，然后点击的完整 WSDL 地址**Enter**创建代理类和应用程序配置文件。 此命令行创建**BizTalkServiceInstance.cs**的代理类和**output.config**应用程序配置文件。  
+2.  粘贴 **svcutil.exe** 命令行中使用在之前的过程中复制，然后点击的完整 WSDL 地址 **Enter** 创建代理类和应用程序配置文件。 此命令行创建 **BizTalkServiceInstance.cs** 的代理类和 **output.config** 应用程序配置文件。  
   
-3.  在 Visual Studio 中，在解决方案资源管理器，右键单击**WCFClient**，指向**添加**，然后单击**现有项**。  
+3.  在 Visual Studio 中，在解决方案资源管理器，右键单击 **WCFClient**, ，指向 **添加**, ，然后单击 **现有项**。  
   
-4.  在**添加现有项**对话框中，浏览到**WCFClient**文件夹，选择**所有文件 (\*。\*)**中**类型的文件**下拉列表中，选择**BizTalkServiceInstance.cs**和**output.config**文件，并依次**添加**。  
+4.  在 **添加现有项** 对话框中，浏览到 **WCFClient** 文件夹，选择 **所有文件 (\*。\*)** 中 **类型的文件** 下拉列表中，选择 **BizTalkServiceInstance.cs** 和 **output.config** 文件，然后单击 **添加**。  
   
-5.  为**WCFClient**项目中，展开**引用**，那么请确保和**WCFClient**项目具有**System.ServiceModel**作为一个其引用。  
+5.  为 **WCFClient** 项目中，展开 **引用**, ，那么请确保和 **WCFClient** 项目具有 **System.ServiceModel** 作为其引用之一。  
   
-6.  展开**WCFClient**项目，右键单击**output.config**，单击**重命名**，然后键入**App.config**新名称。  
+6.  展开 **WCFClient** 项目，右键单击 **output.config**, ，单击 **重命名**, ，然后键入 **App.config** 新名称。  
   
 7.  双击**Program.cs**若要查看如何调用已发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务中使用生成的代理类**Svcutil.exe**。 调用来实例化并调用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务显示为本地调用中的编码使用的简单性**Microsoft_Samples_BizTalk_WCFBasicHttpReceiveAdapter_BizTalkApp_DeliveryProcess_DeliveryRequestPortClient**类。 调用远程 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务无需额外代码。  
   
-8.  在 Visual Studio 中，在**调试**菜单上，单击**启动但不调试**运行 WCFClient。 客户端代码创建 DeliveryItem 消息并调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务，传入地址、ProductID 和数量。  
+8.  在 Visual Studio 中，在 **调试** 菜单上，单击 **启动但不调试** 运行 WCFClient。 客户端代码创建 DeliveryItem 消息并调用 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务，传入地址、ProductID 和数量。  
   
     ```  
     DeliveryItem deliveryRequestItem = new DeliveryItem();  
@@ -181,7 +181,7 @@ ms.lasthandoff: 12/01/2017
   
      **提交操作调用使用 deliveryRequestItem**  
   
-     **传递发回的确认号码： 00A120c300One Microsoft Way**  
+     **传递发回的确认号码︰ 00A120c300One Microsoft Way**  
   
      **按任意键继续...**  
   

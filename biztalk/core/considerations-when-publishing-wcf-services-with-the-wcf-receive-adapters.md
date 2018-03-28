@@ -1,11 +1,11 @@
 ---
-title: "发布使用 WCF 的 WCF 服务时的注意事项接收适配器 |Microsoft 文档"
-ms.custom: 
+title: 发布使用 WCF 的 WCF 服务时的注意事项接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publishing, WCF services
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - WCF services, publishing
 - best practices, WCF adapters
 ms.assetid: 797b7ffd-534c-4f09-9738-fb17b208bc96
-caps.latest.revision: "34"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>通过 WCF 接收适配器发布 WCF 服务时的注意事项
 本主题提供在通过 WCF 接收适配器发布 WCF 服务时应当注意的信息。  如果使用 WCF 适配器发布服务，会允许该服务由 WCF 客户端调用，就像该服务是一个典型的 WCF 服务一样。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/17/2018
  使用 WCF 适配器 **正文--BizTalk 响应消息正文** （默认值） 选项不允许进行发送非 XML 消息，如字符数据和位图图像。 你可以使用 **模板--由模板指定内容** 发送非 XML 消息的 WCF 适配器的选项。 有关如何使用模板的详细信息，请参阅[为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)。  
   
 ## <a name="setting-up-the-permissions-for-a-wcf-service-published-with-the-wcf-service-publishing-wizard"></a>为通过 WCF 服务发布向导发布的 WCF 服务设置权限  
- 在 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 平台上使用通过 WCF 服务发布向导创建的 ASP.NET 应用程序时，在调用 WCF 服务期间可能会出现与访问 DLL 相关的错误。 通常这些错误与默认的 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 和 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 安全问题有关。 有关这些错误的详细信息，请参阅 Microsoft 帮助和支持文章调用"你收到"System.IO.FileNotFoundException"错误时客户端应用程序调用 Web 服务"帮助和支持 Web 站点上在 [http://go.microsoft.com/fwlink/?LinkId=43659](http://go.microsoft.com/fwlink/?LinkId=43659)。  
+ 在 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 平台上使用通过 WCF 服务发布向导创建的 ASP.NET 应用程序时，在调用 WCF 服务期间可能会出现与访问 DLL 相关的错误。 通常这些错误与默认的 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 和 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 安全问题有关。 有关这些错误的详细信息，请参阅 Microsoft 帮助和支持文章调用"你收到"System.IO.FileNotFoundException"错误时客户端应用程序调用 Web 服务"帮助和支持 Web 站点上在[ http://go.microsoft.com/fwlink/?LinkId=43659](http://go.microsoft.com/fwlink/?LinkId=43659).  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 要求：无论 WCF 服务是在进程内主机上运行还是在独立主机上运行，运行该服务的进程都必须被授予适当的权限。 在 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 和 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 中，独立主机的默认 Windows 组是 Isolated Host Users 组，因此为 Isolated Host Users 组添加权限应当能够解决此问题。  
   
@@ -105,12 +105,12 @@ ms.lasthandoff: 01/17/2018
  如果你选择 **信封** 或 **正文** 选项，该适配器无法创建 BizTalk 消息，从以前的传入消息。 该消息不会挂起，因为在入站 SOAP 封送处理中失败的消息不会挂起。 有关如何使用正文路径表达式上**消息**选项卡上，请参阅[为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)。  
   
 > [!NOTE]
->  可以通过配置 BTSNTSvc.exe.config 文件来使用 Windows SDK 中的 TraceViewer 工具 (SvcTraceViewer.exe)。 有关 Windows SDK 的详细信息，请参阅"什么是 Windows SDK 中的新增功能"网址 [http://go.microsoft.com/fwlink/?LinkId=75219](http://go.microsoft.com/fwlink/?LinkId=75219)。 有关 TraceViewer 工具的详细信息，请参阅"TraceViewer 工具 (SvcTraceViewer.exe)"在 [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218)。  
+>  可以通过配置 BTSNTSvc.exe.config 文件来使用 Windows SDK 中的 TraceViewer 工具 (SvcTraceViewer.exe)。 有关 Windows SDK 的详细信息，请参阅"什么是 Windows SDK 中的新增功能"网址[ http://go.microsoft.com/fwlink/?LinkId=75219 ](http://go.microsoft.com/fwlink/?LinkId=75219)。 有关 TraceViewer 工具的详细信息，请参阅"TraceViewer 工具 (SvcTraceViewer.exe)"在[ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218)。  
   
 ## <a name="using-schemas-that-reference-other-schemas"></a>使用引用其他架构的架构  
  你可以使用 **重新定义**, ，**包括**, ，和 **导入** 元素时你的架构变得大而复杂，或当表示你不同类型的实例消息的架构的共同点某些部分。 可能有必要将较小的架构组合成新的架构，这个新的架构可以最终定义要与贸易合作伙伴进行交换的实例消息的结构。 可使用 BizTalk WCF 服务发布向导将这些架构发布为 WCF 服务。  
   
- 应当使用 BizTalk WCF 服务使用向导创建从 BizTalk 项目使用 WCF 服务所必需的 BizTalk 项目。 如果要从 .NET 应用程序使用 WCF 服务，应当使用服务模型元数据实用工具 (Svcutil.exe) 为 WCF 服务创建代理类。 有关如何使用引用其他架构的架构的详细信息，请参阅[架构，使用其他架构](../core/schemas-that-use-other-schemas.md)和[如何创建架构，使用其他架构](../core/how-to-create-schemas-that-use-other-schemas.md)。 Svcutil.exe 有关的详细信息，请参阅"服务模型元数据实用工具 (Svcutil.exe)"在 [http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696)。  
+ 应当使用 BizTalk WCF 服务使用向导创建从 BizTalk 项目使用 WCF 服务所必需的 BizTalk 项目。 如果要从 .NET 应用程序使用 WCF 服务，应当使用服务模型元数据实用工具 (Svcutil.exe) 为 WCF 服务创建代理类。 有关如何使用引用其他架构的架构的详细信息，请参阅[架构，使用其他架构](../core/schemas-that-use-other-schemas.md)和[如何创建架构，使用其他架构](../core/how-to-create-schemas-that-use-other-schemas.md)。 Svcutil.exe 有关的详细信息，请参阅"服务模型元数据实用工具 (Svcutil.exe)"在[ http://go.microsoft.com/fwlink/?LinkID=74696 ](http://go.microsoft.com/fwlink/?LinkID=74696)。  
   
  下表显示了在使用已发布的、其架构使用其他架构的 WCF 服务时，需要了解的限制和注意事项。  
   

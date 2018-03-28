@@ -1,11 +1,11 @@
 ---
-title: "创建 Affiliate Applications4 |Microsoft 文档"
-ms.custom: 
+title: 创建 Affiliate Applications4 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tickets, Single Sign-On
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Single Sign-On, creating tickets
 - SSO tickets
 ms.assetid: 790fbe21-8081-4d57-803f-23014c8a3135
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 87aa9be716e437e80c0e85bd9e462713e48090ad
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤介绍如何使用 SSO 开始使用关联应用程序。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
   
 ### <a name="to-create-an-affiliate-application"></a>若要创建关联应用程序  
   
-1.  在 Control Panel 中，打开**服务**，并验证企业单一登录服务正在运行。  
+1.  在 Control Panel 中，打开 **服务**, ，并验证企业单一登录服务正在运行。  
   
 2.  在命令提示符下，将目录更改为 Enterprise Single Sign On 文件夹。  
   
@@ -40,7 +40,7 @@ ms.lasthandoff: 11/07/2017
   
      **C:\Program Files\Common Files\Enterprise 上单一登录 >**  
   
-3.  使用企业单一登录命令。 有关命令的列表，使用**-帮助**切换。  
+3.  使用企业单一登录命令。 有关命令的列表，使用 **-帮助** 切换。  
   
 4.  若要以使用 *.XML 作为创建关联应用程序的起始操作，请键入以下命令：  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 11/07/2017
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
-     完成时，你将收到以下确认：  
+     完成时，你将收到以下确认︰  
   
      **使用此计算机上的 SSO 服务器。已成功完成该操作。**  
   
@@ -97,11 +97,11 @@ ms.lasthandoff: 11/07/2017
   
      `ssoclient.exe –listapps`  
   
-     可用于关联应用程序使用列表中显示：  
+     可用于关联应用程序使用列表中显示︰  
   
      **有关 IBI\YourID-JDEdwardsApp 可用应用程序**  
   
-3.  键入以下命令以设置应用程序凭据的关联：  
+3.  键入以下命令以设置应用程序凭据的关联︰  
   
      `ssoclient.exe -setcredentials JDEdwardsApp`  
   
@@ -109,13 +109,13 @@ ms.lasthandoff: 11/07/2017
   
      例如，输入用户标识和该用户就可以通过 SSO 服务器系统中输入的密码。  
   
-    -   用户 ID:**用户**  
+    -   用户 ID: **用户**  
   
-    -   密码：`******`  
+    -   密码︰ `******`  
   
-    -   确认？ 密码：`******`  
+    -   确认？ 密码︰ `******`  
   
-     关联应用程序中的 BizTalk Adapter 显示个博士 Edwards EnterpriseOne**传输属性**对话框。  
+     关联应用程序中的 BizTalk Adapter 显示个博士 Edwards EnterpriseOne **传输属性** 对话框。  
   
 ## <a name="see-also"></a>另请参阅  
  [用于 JD Edwards EnterpriseOne 的 BizTalk 适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

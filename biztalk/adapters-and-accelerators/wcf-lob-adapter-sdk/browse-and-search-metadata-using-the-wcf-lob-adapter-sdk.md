@@ -1,22 +1,22 @@
 ---
-title: "浏览和搜索元数据中使用 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 浏览和搜索元数据中使用 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbb4add7-6cc8-4b93-b559-471b6e31c01a
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 67f4717c8621b798ff960487dfd156c4f0934dfc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a>浏览和搜索元数据中使用 WCF LOB 适配器 SDK
 本部分提供有关如何通过实现 IMetadataBrowseHandler 和 IMetadataSearchHandler，分别公开使用适配器的浏览和搜索功能的信息。  

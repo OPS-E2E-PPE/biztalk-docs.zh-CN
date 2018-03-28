@@ -1,20 +1,20 @@
 ---
-title: "排除故障并在 BizTalk Server 上安装的已知的问题与 BizTalk RosettaNet 快捷键 (BTARN) |Microsoft 文档\""
-description: "安装与 BTARN 安装 BizTalk Server 中的 SQL，主机实例和已知的错误的服务帐户的建议"
+title: 排除故障并在 BizTalk Server 上安装的已知的问题与 BizTalk RosettaNet 快捷键 (BTARN) |Microsoft 文档"
+description: 安装与 BTARN 安装 BizTalk Server 中的 SQL，主机实例和已知的错误的服务帐户的建议
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: cdca89c1a7a4ed3834103776f9f28c8631c5de0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>解决安装问题和发现的已知的安装问题
 
@@ -103,7 +103,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
   
 3.  重新启动 IIS。  
   
-4.  重新启动 IIS 后，尝试访问 http://localhost。 你会收到从 Internet 浏览器返回的 400 消息。  
+4.  在重新启动 IIS 后，请尝试访问http://localhost。 你会收到从 Internet 浏览器返回的 400 消息。  
   
 ### <a name="sql-server-mixed-mode-not-supported"></a>SQL Server 混合模式不支持  
 在混合模式下，BTARN 不支持 SQL Server。  

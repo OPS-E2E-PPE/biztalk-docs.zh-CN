@@ -1,23 +1,23 @@
 ---
-title: "安装 BizTalk 适配器包 2013 R2 和 2013年 |Microsoft 文档"
-description: "先决条件和步骤来安装 BAP 2013 R2 及 BizTalk Server 附带的 BAP 2013"
-ms.custom: 
+title: 安装 BizTalk 适配器包 2013 R2 和 2013年 |Microsoft 文档
+description: 先决条件和步骤来安装 BAP 2013 R2 及 BizTalk Server 附带的 BAP 2013
+ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9980953a-8d38-476f-af38-4f4214ba61f2
-caps.latest.revision: "107"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>安装 BizTalk 适配器包 2013 R2 和 2013
 本文档列出的软件要求，和步骤安装 Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] (BAP) 中包含 BizTalk Server 2013 或[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/17/2018
   
 |BizTalk 适配器包 2013 R2|BizTalk 适配器包 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|  
@@ -58,7 +58,7 @@ ms.lasthandoff: 01/17/2018
   
 |BizTalk 适配器包 2013 R2|BizTalk 适配器包 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]<br /><br /> 安装[!INCLUDE[consumeadapterservlong](../includes/consumeadapterservlong-md.md)]为[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]附带[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]。 若要安装，请执行**自定义**(选择**BizTalk Server 外接程序**) 或**完成**安装[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]。|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]<br /><br /> 安装[!INCLUDE[consumeadapterservlong](../includes/consumeadapterservlong-md.md)]为[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]附带[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]。 若要安装，请执行**自定义**(选择**BizTalk Server 外接程序**) 或**完成**安装[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]。|  
@@ -66,16 +66,16 @@ ms.lasthandoff: 01/17/2018
 |企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。|企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。|  
 
 ### <a name="prerequisites-when-using-ado"></a>使用 ADO 时的先决条件  
-  **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]** 和 **[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]** 包括 ADO 层 ( *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]* 和 *[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]* )。 此 ADO 层可以用于写入的 ADO.NET 客户端可以连接到 SAP 系统或 Siebel 系统。 你还可用于 ADO 层与 SQL Server Integration Services (SSIS) 导入和导出数据从 LOB 应用程序和 SQL Server Reporting Services (SSRS) 生成报表来显示 LOB 系统中的数据。  
+ **[!INCLUDE[adaptersap](../includes/adaptersap-md.md)]**和**[!INCLUDE[adaptersiebel](../includes/adaptersiebel-md.md)]**包括 ADO 层 (*[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*和*[!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]*)。 此 ADO 层可以用于写入的 ADO.NET 客户端可以连接到 SAP 系统或 Siebel 系统。 你还可用于 ADO 层与 SQL Server Integration Services (SSIS) 导入和导出数据从 LOB 应用程序和 SQL Server Reporting Services (SSRS) 生成报表来显示 LOB 系统中的数据。  
   
 > [!NOTE]
->  使用 SSRS ADO 提供程序仅支持 *[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]* 。  
+>  使用 SSRS ADO 提供程序仅支持*[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]*。  
   
 使用的计算机上需要以下软件[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]ADO 界面。 按列出的顺序安装软件。
   
 |BizTalk 适配器包 2013 R2|BizTalk 适配器包 2013|  
 |---|---|  
-|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
+|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2， [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]，Windows 8.1、 Windows 7 SP1|[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)][!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1、 Windows 8、 Windows 7 SP1|  
 |[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]|Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]|  
 |Visual Studio 2013|Visual Studio 2012|  
 |[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]|  
@@ -89,7 +89,7 @@ ms.lasthandoff: 01/17/2018
   
 |运行 WCF 适配器服务开发向导的位置的计算机|其中承载 WCF 服务的计算机|其中你可以使用 SharePoint 设计器来定义外部内容类型的计算机|其中使用 SharePoint 提供的 LOB 应用程序中的信息的计算机|  
 |---|---|---|---|  
-|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li> Visual Studio 2013</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li></ul> **BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>Visual Studio 2012</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li></ul>|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li><li>附带了操作系统的 Internet 信息服务 (IIS) 版本。 KB 224609 列出的版本。</li></ul>**BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li><li>附带了操作系统的 Internet 信息服务 (IIS) 版本。 KB 224609 列出的版本。</li></ul>|Microsoft Office SharePoint Server 软件开发工具包 (SDK)|Microsoft Office 更新服务器基础结构。 在下载[http://go.microsoft.com/fwlink/?LinkId=128344](http://go.microsoft.com/fwlink/?LinkId=128344)。|  
+|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li> Visual Studio 2013</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li></ul> **BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>Visual Studio 2012</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li></ul>|**BAP 2013 R2**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)] R2<br/>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>Windows 8.1<br/>Windows 7 SP1</li><li>[!INCLUDE[dotnet451](../includes/dotnet451-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li><li>附带了操作系统的 Internet 信息服务 (IIS) 版本。 KB 224609 列出的版本。</li></ul>**BAP 2013**:<ul><li>[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]<br/>[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] SP1<br/>Windows 8<br/>Windows 7 SP1</li><li>Microsoft [!INCLUDE[dotnet45](../includes/dotnet45-md.md)]</li><li>[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]</li><li>Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]</li><li>相应的企业应用程序客户端和关联的软件。 请参阅[受支持的企业应用程序版本](#BKMK_SuppLOB)。</li><li>附带了操作系统的 Internet 信息服务 (IIS) 版本。 KB 224609 列出的版本。</li></ul>|Microsoft Office SharePoint Server 软件开发工具包 (SDK)|Microsoft Office 更新服务器基础结构。 在下载[ http://go.microsoft.com/fwlink/?LinkId=128344 ](http://go.microsoft.com/fwlink/?LinkId=128344)。|  
   
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>支持的企业应用程序版本  
@@ -132,9 +132,9 @@ ms.lasthandoff: 01/17/2018
   
     |SAP 客户端版本|必需的驱动程序|  
     |------------------------|----------------------|  
-    |6.4|**BizTalk 适配器包 2013年仅**<br /><br /> - **SAP RFC SDK 6.40 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> -  **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
-    |7.0|- **SAP RFC SDK 7.00 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将复制所有 Dll，从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹和前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> - **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
-    |7.1|- **SAP RFC SDK 7.10 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> Microsoft Visual c + + 运行时 Dll 所需的 SAP 7.1 客户端是可从以下链接：<br /><br /> - **32 位 SAP 7.1 客户端**： 从 Vcredist_x86.exe [http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)。<br /><br /> -                                 **64 位 SAP 7.1 客户端**： 从 Vcredist_x64.exe [http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> - **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
+    |6.4|**BizTalk 适配器包 2013年仅**<br /><br /> - **SAP RFC SDK 6.40 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[ http://go.microsoft.com/fwlink/?LinkId=94691 ](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[ http://go.microsoft.com/fwlink/?LinkId=94693 ](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [ http://go.microsoft.com/fwlink/?LinkId=104032 ](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> -  **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
+    |7.0|- **SAP RFC SDK 7.00 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[ http://go.microsoft.com/fwlink/?LinkId=94691 ](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将复制所有 Dll，从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹和前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[ http://go.microsoft.com/fwlink/?LinkId=94693 ](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [ http://go.microsoft.com/fwlink/?LinkId=104032 ](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> - **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
+    |7.1|- **SAP RFC SDK 7.10 UNICODE**。 这是可用的 SNOTE 一部分<sup>* </sup> 27517。若要下载 SDK 的说明进行操作都在[ http://go.microsoft.com/fwlink/?LinkId=94691 ](http://go.microsoft.com/fwlink/?LinkId=94691)。你已下载并提取 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到前面此表的相关位置提到。<br /> <br /> -Dll 均可用从 SAP 作为的一部分**R3DLLINST.zip**。该文件包含 Microsoft 运行时 Dll 并可以从 SAP 站点下载。请参阅 SNOTE<sup> * </sup> 684106 有关详细信息。 你可以下载的.zip 文件[ http://go.microsoft.com/fwlink/?LinkId=94693 ](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接已从你可以在其中下载包"附件"选项。<br /><br /> Microsoft Visual c + + 运行时 Dll 所需的 SAP 7.1 客户端是可从以下链接：<br /><br /> - **32 位 SAP 7.1 客户端**： 从 Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086 ](http://go.microsoft.com/fwlink/?LinkId=107086)。<br /><br /> -                                 **64 位 SAP 7.1 客户端**： 从 Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087 ](http://go.microsoft.com/fwlink/?LinkId=107087)。<br /><br /> -如果你使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，你还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台且可提供与 SNOTE<sup> * </sup> 352295。 你可以下载从 Dll [ http://go.microsoft.com/fwlink/?LinkId=104032 ](http://go.microsoft.com/fwlink/?LinkId=104032)。 此链接已从你可以在其中下载包"附件"选项。 Dll 的名称为：<br /><br /> - **适用于 32 位**: gsskrb5.dll、 gssntlm.dll<br /><br /> - **为 64 位 x86**: gx64krb5.dll、 gx64ntlm.dll|  
   
      * SNOTEs 是伴随发布 sap 修复程序的发行说明。  
 
@@ -195,7 +195,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
 ### <a name="scenarios-for-installing-the-biztalk-adapter-pack-on-32-bit-and-64-bit-platforms"></a>在 32 位和 64 位平台上安装 BizTalk 适配器包方案  
  与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]可用于： 
   
--   [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]设计时 （在生成 LOB 应用程序上的操作的元数据）
+-   [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 设计时 （在生成 LOB 应用程序上的操作的元数据）
   
 -   BizTalk Server 管理控制台 （用于创建的物理端口） 的设计时
   
@@ -380,7 +380,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
         > [!IMPORTANT]
         >  安装时[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]在静默模式下的评估版，CEIP 的默认选项为 true。  
   
-     有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)。
+     有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[ http://go.microsoft.com/fwlink/p/?LinkId=103199 ](http://go.microsoft.com/fwlink/p/?LinkId=103199)。
   
 <a name="BKMK_PostInst"></a>   
 ### <a name="after-installing-the-biztalk-adapter-pack"></a>安装 BizTalk 适配器包后  
@@ -666,7 +666,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
     msiexec /i AdaptersSetup.msi /qn /f  
     ```  
   
-     带 /f 选项，可以使用各种不同的组合。 有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)。  
+     带 /f 选项，可以使用各种不同的组合。 有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[ http://go.microsoft.com/fwlink/p/?LinkId=103199 ](http://go.microsoft.com/fwlink/p/?LinkId=103199)。  
   
     > [!IMPORTANT]
     >  修改时[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]在静默模式下的安装，不能更改用于选择加入或退出 CEIP 首选项。 在过程中选择该安装将保持，即使你显式设置为 true 或 false 的 CEIP_OPTIN 首选项。  
@@ -710,7 +710,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
     msiexec /x AdaptersSetup.msi /qn  
     ```  
   
-     有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[http://go.microsoft.com/fwlink/p/?LinkId=103199](http://go.microsoft.com/fwlink/p/?LinkId=103199)。
+     有关 msiexec 命令类型的详细信息`msiexec`上的命令行和按`ENTER`。 或转到[ http://go.microsoft.com/fwlink/p/?LinkId=103199 ](http://go.microsoft.com/fwlink/p/?LinkId=103199)。
   
 <a name="BKMK_PostRemove"></a>   
 ### <a name="after-removing-the-biztalk-adapter-pack"></a>删除 BizTalk 适配器包后  
@@ -718,7 +718,7 @@ Siebel 适配器被支持在 32 位主机实例中。 它不被支持的 64 位�
   
 -   删除适配器绑定或.NET Framework 数据提供程序在注册时，如果安装向导未能完成此操作
   
--   删除自定义的 Rfc 中，如果你选择安装[!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]
+-   删除自定义的 Rfc 中，如果你选择安装 [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]
   
 <a name="BKMK_Remove_Binding"></a>   
 #### <a name="remove-the-bindings-or-the-net-framework-data-provider-registration"></a>删除绑定或.NET Framework 数据提供程序注册  

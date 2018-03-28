@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和获取 Siebel 元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和获取 Siebel 元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata, retrieving
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - metadata, searching
 - searching, metadata
 ms.assetid: 48fc3bb1-b949-4b8d-ab62-a41cd8c2f0a0
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ef1ed7d74b4e69f56c53beda8273533bb6891a55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>浏览、 搜索和获取 Siebel 元数据
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]曲面从 Siebel 系统，用于描述与使用适配器 Siebel 系统进行通信的消息结构的元数据。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]为检索元数据支持两个接口。  
@@ -72,4 +72,4 @@ ms.lasthandoff: 09/20/2017
  有关检索元数据的详细信息，请参阅[获取 Visual Studio 中的 Siebel 操作的元数据](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另请参阅  
- [为 Siebel eBusiness 应用程序的 BizTalk Adapter 概述](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)
+ [用于 Siebel eBusiness 应用程序的 BizTalk 适配器概述](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)

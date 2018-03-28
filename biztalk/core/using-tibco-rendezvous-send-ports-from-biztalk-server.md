@@ -1,22 +1,22 @@
 ---
-title: "使用从 BizTalk Server TIBCO 会合发送端口 |Microsoft 文档"
-ms.custom: 
+title: 使用从 BizTalk Server TIBCO 会合发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34e3edf7-cfc5-4c89-8069-63e8784bc9f9
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 950c4c367fe053195ba14029405f5015381fc6be
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-tibco-rendezvous-send-ports"></a>使用 TIBCO 会合发送端口
 传输端口可以发送任何种类的信息。 当 BizTalk Server 通过用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器发送消息时，适配器将基于消息上下文属性值生成消息，或者使用默认消息并将其发送到指定主题。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="using-biztalk-to-send-messages"></a>使用 BizTalk 发送消息
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使用异步 API (Transport.Send)。 您可以指定适配器使用消息上下文属性发送的消息类型：  
   
--   **结构化**： 适配器生成 TIBRVMSG_MSG 结构化，根据消息从 BizTalk Server 接收的 XML 数据。 (*)  
+-   **结构化**︰ 适配器生成 TIBRVMSG_MSG 结构化，根据消息从 BizTalk Server 接收的 XML 数据。 (*)  
   
  如果 BizTalk Server 发送字段名称长于 127 个字符的消息，则用于 TIBCO Rendezvous 的 BizTalk 适配器会将名称截断到 TIBCO Rendezvous 的最大字段名称大小（即 127）。  
   

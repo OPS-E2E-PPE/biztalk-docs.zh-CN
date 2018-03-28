@@ -1,11 +1,11 @@
 ---
-title: "分析跟踪工具 MQSeries 适配器错误 |Microsoft 文档"
-ms.custom: 
+title: 分析跟踪工具 MQSeries 适配器错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Adapter Trace Utility, about Adapter Trace Utility
@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MQSeries adapters, errors
 - Adapter Trace Utility
 ms.assetid: fdc73d99-3b73-491d-9b2f-7064364fefa7
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b53d1d2c0bbe19c54804b553041f8dc9ae4db20c
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a>分析跟踪工具 MQSeries 适配器错误
 在运行应用程序时，使用跟踪工具可以分析消息传送故障。 对于 MQSeries 适配器，您必须使用两个工具：一个用于该适配器和 BizTalk 应用程序 (trace.cmd)，另一个用于 MQSAgent (MQSTrace.cmd)。 这两种工具使用 tracelog.exe。 你必须安装 tracelog.exe，如果你还没有它。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="install-the-trace-utility"></a>安装跟踪实用工具  
  若要安装 BizTalk 适配器跟踪实用工具，请按照以下步骤操作：  
   
-1.  若要下载 Tracelog.exe 文件，请访问 Microsoft 平台 SDK 的下载网站︰ [http://go.microsoft.com/fwlink/?LinkId=21975](http://go.microsoft.com/fwlink/?LinkId=21975)。  
+1.  若要下载 Tracelog.exe 文件，请访问 Microsoft 平台 SDK 的下载网站： [ http://go.microsoft.com/fwlink/?LinkId=21975 ](http://go.microsoft.com/fwlink/?LinkId=21975)。  
   
 2.  通过单击的链接来启动平台 SDK Web 安装程序 **PSDK x86.exe** Web 页面底部的文件。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 01/17/2018
   
 3.  在命令提示符处，键入 **trace.cmd-停止**, ，然后按 ENTER。  
   
-4.  bts2006.bin 文件包含了跟踪工具的输出。 请与 Microsoft 产品支持服务联系以进行分析。 有关详细信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)。  
+4.  bts2006.bin 文件包含了跟踪工具的输出。 请与 Microsoft 产品支持服务联系以进行分析。 有关详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=41645 ](http://go.microsoft.com/fwlink/?LinkId=41645)。  
   
  若要运行 MQSAgent 跟踪实用工具，请按照以下步骤操作：  
   
@@ -86,4 +86,4 @@ ms.lasthandoff: 01/17/2018
   
 3.  在命令提示符处，键入 **MQSTrace.cmd-停止**。  
   
-4.  MQSAdapterTrace.bin 文件包含了跟踪工具的输出。 请与 Microsoft 产品支持服务联系以进行分析。 有关详细信息请参阅 [http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)。
+4.  MQSAdapterTrace.bin 文件包含了跟踪工具的输出。 请与 Microsoft 产品支持服务联系以进行分析。 有关详细信息请参阅[ http://go.microsoft.com/fwlink/?LinkId=41645 ](http://go.microsoft.com/fwlink/?LinkId=41645)。

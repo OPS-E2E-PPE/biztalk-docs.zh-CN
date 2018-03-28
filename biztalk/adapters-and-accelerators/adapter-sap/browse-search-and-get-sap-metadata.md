@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和获取 SAP 元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和获取 SAP 元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BAPI
 - IDOC
 ms.assetid: 5f0d7c1f-d6e1-4c56-8d8e-1f5d537aa3ce
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 40cc1bd6592b38dbda9c9bff3ad01d6cdaf8a707
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>浏览、 搜索和获取 SAP 元数据
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]曲面从 SAP 系统的元数据。 此元数据描述与使用适配器的 SAP 系统通信的消息结构。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]为检索元数据支持两个接口。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="browsing-metadata"></a>浏览元数据  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]允许浏览 Rfc、 tRFCs、 BAPIs 和 Idoc 公开的 SAP 系统的适配器客户端。 作为元数据浏览操作的一部分，该适配器显示为操作的 Rfc 和 BAPIs。 为 Idoc，该适配器显示用于发送和接收到的 Idoc 的操作。 这些操作仅从可用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 在以下节点下，SAP 元数据进行分类：  
   
--   **RFC**。 此节点包含公开的 SAP 系统的 Rfc 并表示 SAP 中的函数模块。 适配器到多个逻辑级别分类 Rfc 并公开到适配器客户端的层次结构视图。 RFC 是在此层次结构的最低级别，并作为外部应用程序可以调用的操作公开。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用 RFC SDK 为 Rfc 生成元数据。 该适配器可以调用它可为其生成元数据这些 Rfc。  
+-   **RFC**. 此节点包含公开的 SAP 系统的 Rfc 并表示 SAP 中的函数模块。 适配器到多个逻辑级别分类 Rfc 并公开到适配器客户端的层次结构视图。 RFC 是在此层次结构的最低级别，并作为外部应用程序可以调用的操作公开。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用 RFC SDK 为 Rfc 生成元数据。 该适配器可以调用它可为其生成元数据这些 Rfc。  
   
      非公开作为操作 Rfc，适配器还显示某些特定操作如**RfcGetAttributes**。 有关这些操作的详细信息，请参阅[操作中 SAP Rfc](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)。  
   
@@ -53,9 +53,9 @@ ms.lasthandoff: 09/20/2017
   
      非公开作为操作 tRFCs，适配器还显示某些特定操作如**RfcConfirmTransID**。 有关这些操作的详细信息，请参阅[对 tRFCs SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)。  
   
--   **BAPI**。 此节点包含公开的 SAP 系统 BAPIs。 适配器到多个逻辑级别分类 BAPIs 并公开到适配器客户端的层次结构视图。 BAPI 是在此层次结构的最低级别，并作为外部应用程序可以调用的操作公开。  
+-   **BAPI**. 此节点包含公开的 SAP 系统 BAPIs。 适配器到多个逻辑级别分类 BAPIs 并公开到适配器客户端的层次结构视图。 BAPI 是在此层次结构的最低级别，并作为外部应用程序可以调用的操作公开。  
   
--   **IDOC**。 此节点包含 SAP 系统公开 Idoc。 适配器到多个逻辑级别分类 Idoc 并公开到适配器客户端的层次结构视图。 适配器公开的 Idoc 的操作如下：  
+-   **IDOC**. 此节点包含 SAP 系统公开 Idoc。 适配器到多个逻辑级别分类 Idoc 并公开到适配器客户端的层次结构视图。 适配器公开的 Idoc 的操作如下：  
   
     -   **发送**和**接收**。 适配器客户端可以使用这些操作来发送和接收到的 Idoc 从 SAP 系统使用强类型的架构。  
   
@@ -70,16 +70,16 @@ ms.lasthandoff: 09/20/2017
   
 |项目|在 GUI 中的节点下的搜索|  
 |--------------|------------------------------------|  
-|RFC|-/RFC<br />-/RFC/ [应用程序组]|  
-|tRFC|-/TRFC<br />-/TRFC/ [应用程序组]|  
-|BAPI|-/BAPI|  
-|IDOC|-/IDOC|  
+|RFC|-   /RFC<br />-   /RFC/[Application Group]|  
+|tRFC|-   /TRFC<br />-   /TRFC/[Application Group]|  
+|BAPI|-   /BAPI|  
+|IDOC|-   /IDOC|  
   
  下表列出了可以用于搜索和其解释的特殊字符[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
 |特殊字符|解释|  
 |-----------------------|--------------------|  
-|+ （加）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
+|+（加号）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
 |*（星号）|匹配零个或多个字符。<br /><br /> 例如，A * A，AB，与 ABC 匹配。|  
   
 ## <a name="retrieving-metadata"></a>检索元数据  

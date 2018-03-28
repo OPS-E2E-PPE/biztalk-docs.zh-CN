@@ -16,7 +16,7 @@ ms.openlocfilehash: 9c9993092c0d798ae2d47f614a24da21c3a2df62
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="btswebsvcpub-command-line-reference"></a>BTSWebSvcPub 命令行参考
 本主题提供 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含的 BTSWebSvcPub 命令行工具的参考信息。 您可以使用 BTSWebSvcPub 创建 Web Services (.asmx)，以通过 Web Services 发布业务流程，BTSWebSvcPub 的具体用法如下：  
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/23/2018
 |参数|必需|Description|  
 |---------------|--------------|-----------------|  
 |**路径名**|是|BizTalk 程序集 (*.dll) 或 web 服务描述的路径和文件名称 (\*.xml) 文件。|  
-|**位置**|否|要发布到的目标位置。 (语法:"http://host [: 端口] / 路径")|  
+|**位置**|否|要发布到的目标位置。 (语法:"http://host[: 端口] / 路径")|  
 |**-覆盖**|否|覆盖指定的位置。|  
 |**匿名**|否|允许匿名访问 Web Services。|  
 |**-名称**|否|将要包含该 Web Services 的解决方案和程序集（.sln 文件和 .dll 文件）的名称。|  
@@ -52,7 +52,7 @@ ms.lasthandoff: 03/23/2018
 |**-应用程序名称**|否|要在其中创建接收位置的 BizTalk 应用程序的名称。 如果未指定，则使用默认 BizTalk 应用程序。|  
   
 ## <a name="sample"></a>示例  
- BTSWebSvcPub.exe"MyAssembly.dll"的位置︰ http://localhost/MyVdir  
+ BTSWebSvcPub.exe "MyAssembly.dll" -Location:http://localhost/MyVdir  
   
  -Overwrite  
   

@@ -1,11 +1,11 @@
 ---
-title: "BtarnClean |Microsoft 文档"
-ms.custom: 
+title: BtarnClean |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BtarnClean utility
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - ports, deleting
 - BTARN, BtarnClean utility
 ms.assetid: fbecbb88-9b18-4b4b-a286-0bfa783f2320
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0fa8e448d4799329a798cc7b33f222b42c4a28b4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]项目关闭计算机。 此过程包括以下操作：  
@@ -37,13 +37,13 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
 -   取消所有部署[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]。Solutions.BTARN.* 程序集  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*\>files\ Microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键  
+ \<*drive*\>\Program Files\ Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
   
 ## <a name="running-btarnclean"></a>运行 BtarnClean  
   
 #### <a name="to-run-btarnclean"></a>运行 BtarnClean  
   
-1.  打开命令提示符。  
+1.  開啟命令提示字元。  
   
 2.  将移动到\<*驱动器*\>\ 程序 Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   

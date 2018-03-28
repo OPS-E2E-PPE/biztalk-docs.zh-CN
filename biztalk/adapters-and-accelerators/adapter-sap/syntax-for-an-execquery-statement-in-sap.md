@@ -1,22 +1,22 @@
 ---
-title: "SAP 中 EXECQUERY 语句语法 |Microsoft 文档"
-ms.custom: 
+title: SAP 中 EXECQUERY 语句语法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99bd7fbb-64f2-4327-a8ae-ccb574e56150
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP 中 EXECQUERY 语句语法
 SAP GUI 可用于通过以图形方式中选择你想要查询，列和排序的顺序要包括在结果集等中的表创建查询。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使用户能够通过提供用户可用于执行查询在 SAP 系统中定义的 EXECQUERY 操作从 ADO.NET 应用程序执行此类查询。  
@@ -47,7 +47,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   **VARIANT**引用为已保存的一组可以执行的 SAP 查询时指定的选择条件。 例如，可以使用变体指定查询的默认值。  
   
--   **@Pn**n 是指<sup>th</sup> SAP 查询定义中的选择字段。  
+-   **@Pn** n 是指<sup>th</sup> SAP 查询定义中的选择字段。  
   
 -   **USEORIGINALCOLUMNNAMES**指定提供程序是否在数据集中，使用原始列名，因为它们存在于 SAP 系统。 默认情况下，提供程序使用 SAP 查询中定义的友好名称。 但是，如果在查询中的友好名称不是唯一的则 ADO.NET 客户端将从数据集读取数据时引发错误。 在这种情况下，你必须指定 USEORIGINALCOLUMNNAMES 选项，，该值指示提供程序在数据集中使用原始列名。  
   
@@ -87,7 +87,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = 'La Quinta Hotel & Towers'  
     ```  
   
-     但是，相同的查询执行带有通配符时将会出错。 请注意，使用通配符字符 **@P2** 。  
+     但是，相同的查询执行带有通配符时将会出错。 请注意，使用通配符字符**@P2**。  
   
     ```  
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = '*&*'  

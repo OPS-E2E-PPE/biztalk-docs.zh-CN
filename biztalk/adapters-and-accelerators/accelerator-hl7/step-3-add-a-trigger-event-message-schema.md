@@ -1,29 +1,29 @@
 ---
-title: "步骤 3： 添加触发器事件 （消息） 架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 添加触发器事件 （消息） 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc4a67d9-9582-4f2b-9bc9-18fbff823d29
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>步骤 3： 添加触发器事件 （消息） 架构
 在此步骤中，你创建新的项目基于空[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]项目模板。 将架构添加到此项目，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将用于验证传入的批处理中消息 (ADT ^ A03)。 添加对包含 v2.3.1 通用架构的项目的引用、 为该项目中，指定强名称，然后部署该项目。  
   
 ### <a name="to-add-the-project-containing-the-message-schema"></a>若要添加包含的消息架构的项目  
   
-1.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]上**文件**菜单上，指向**新建**，然后单击**项目**。  
+1.  在 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], 上 **文件** 菜单上，指向 **新建**, ，然后单击 **项目**。  
   
 2.  在新建项目对话框中，在**项目类型**部分中，展开**BizTalk 项目**，然后选择**BTAHL7Projects**。  
   
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在**HL7 架构选择器**对话框框中，执行以下操作：  
   
-    |使用此选项|执行的操作|  
+    |使用此选项|動作|  
     |--------------|----------------|  
     |**Message 类**|保留**V2.X**为选中状态。|  
     |**版本**|选择**2.3.1**。|  
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  在**选择强名称密钥文件**下拉列表中，选择**\<浏览...\>.**  
   
-5.  浏览到  **\<*驱动器*\>: \Batching 教程 * *，选择**key.snk**，然后单击**打开**。  
+5.  浏览到 **\<*驱动器*\>: \Batching 教程**，选择**key.snk**，然后单击**打开**。  
   
 6.  在解决方案资源管理器，右键单击**BTAHL7V231Body**，然后单击**部署**。 确保在输出窗口中显示一条成功消息。  
   

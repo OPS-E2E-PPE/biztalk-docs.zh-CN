@@ -21,7 +21,7 @@ ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-import-bpel4ws"></a>如何导入 BPEL4WS
 可以从现有的 BPEL4WS 进行导入以创建业务流程。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/23/2018
   
      如果导入非规范化的 XPath，则可以删除升级并重新升级相同字段，以便让架构编辑器创建正确的规范化 XPath。  
   
-     示例：(targetNamespace = http://BizTalk_Server_Project3.Schema1)  
+     示例: (targetNamespace = http://BizTalk_Server_Project3.Schema1)  
   
     ```  
     <element name=Root type=complexType>  
@@ -69,7 +69,7 @@ ms.lasthandoff: 03/23/2018
     </element>  
     ```  
   
-     XPath 的 / * [本地名称 （) = 根和 namespace-uri() = http://BizTalk_Server_Project3.Schema1'] /\*[本地名称 （) = promotedField 和 namespace-uri() = ']  
+     XPath 的 / * [本地名称 （) = 根和 namespace-uri() =http://BizTalk_Server_Project3.Schema1'] /\*[本地名称 （) = promotedField 和 namespace-uri() =']  
   
     |规范化 XPath|非规范化 XPath|  
     |---------------------|--------------------------|  

@@ -1,25 +1,25 @@
 ---
-title: "任意 XPath 属性处理程序 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 任意 XPath 属性处理程序 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>任意 XPath 属性处理程序 （BizTalk Server 示例）
 任意 XPath 属性处理程序（[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 示例）演示了如何编写自定义管道组件以升级提交到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 XML 文档中的特定属性。 您可以使用示例中包含的功能创建自定义常规组装器和拆装器组件以评估 XPath 表达式。  
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/17/2018
 2.  查看 \Output 目录中的内容。 请注意，创建了一个新文件，它包含复制到 \Input 目录的 DocInstance.xml 文件的所有信息。 文件中的差异在于现在\<TotalAmount\>元素填入采购订单的总金额。  
   
 ## <a name="comments"></a>注释  
- 规范的 XPath 表达式是简单表达式，如"/ * [本地名称 （) = 元素名称和 namespaceURI() = http://MyUri.org'] /\*[本地名称 （) =' 元素-name'] / @\*[本地名称 = attribute name]"。  
+ 规范的 XPath 表达式是简单表达式，如"/ * [本地名称 （) = 元素名称和 namespaceURI() =http://MyUri.org'] /\*[本地名称 （) =' 元素-name'] / @\*[本地名称 = attribute name]"。  
   
  任意 XPath 表达式是复杂表达式，例如“//element-name//*[local-name()='element-name' and position()=2]”。 事实上，如果架构的 XPath 正文或某个 XPath 属性中使用了非规范化 XPath，则您将收到一个运行时错误，指出 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不支持非规范化 XPath 表达式。 支持任意 XPath 表达式的解决方案是，创建支持任意 XPath 正文和任意 XPath 属性表达式的自定义拆装器和组装器组件。  
   

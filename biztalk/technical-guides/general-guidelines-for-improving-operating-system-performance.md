@@ -1,22 +1,22 @@
 ---
-title: "一般性的指导原则，用于提高操作系统性能 |Microsoft 文档"
-ms.custom: 
+title: 一般性的指导原则，用于提高操作系统性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc9ca38e-1feb-4f34-a64b-d04566e85db9
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e7be3f8060bba20bc0ba127443095c228f954bba
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>一般性的指导原则，用于提高操作系统性能
 应遵循以下常规准则，以提高操作系统性能：  
@@ -133,21 +133,21 @@ ms.lasthandoff: 11/28/2017
   
 -   [BizTalk Server 所需端口](http://go.microsoft.com/fwlink/?LinkID=153238)(http://go.microsoft.com/fwlink/?LinkID=153238)。  
   
--   若要配置与防火墙一起使用的 RPC 动态端口分配，请参阅知识库文章 929851， ["在 Windows Vista 和 Windows Server 2008 中，已更改了 TCP/IP 的默认动态端口范围"](http://go.microsoft.com/fwlink/?LinkID=204568) （超链接"http://go.microsoft.com/fwlink/？LinkID = 204568"http://go.microsoft.com/fwlink/?LinkID = 204568)。 有关如何配置 Windows 防火墙，以容纳所需的端口的信息，请参阅[Windows 防火墙和 IPsec 策略部署分步指南](http://go.microsoft.com/fwlink/?LinkID=204569)(http://go.microsoft.com/fwlink/?LinkID=204569)。  
+-   若要配置与防火墙一起使用的 RPC 动态端口分配，请参阅知识库文章 929851， ["在 Windows Vista 和 Windows Server 2008 中，已更改了 TCP/IP 的默认动态端口范围"](http://go.microsoft.com/fwlink/?LinkID=204568) (超链接"http://go.microsoft.com/fwlink/?LinkID=204568"http://go.microsoft.com/fwlink/?LinkID=204568). 有关如何配置 Windows 防火墙，以容纳所需的端口的信息，请参阅[Windows 防火墙和 IPsec 策略部署分步指南](http://go.microsoft.com/fwlink/?LinkID=204569)(http://go.microsoft.com/fwlink/?LinkID=204569)。  
   
 ## <a name="install-appropriate-com-and-msdtc-hotfix-rollup-packages"></a>安装相应的 COM + 和 MSDTC 修补程序汇总包  
  查看以下信息来安装相应的 COM + 和 MS DTC 修补程序汇总包：  
   
 -   MS DTC 修补程序可在 Microsoft 知识库文章 article978476 ["在 Windows Server 2008 R2 MS DTC 修补程序汇总包 1 中修复了 MS DTC 问题"](http://go.microsoft.com/fwlink/?LinkID=204109) (http://go.microsoft.com/fwlink/?LinkID=204109)。  
   
--   可以通过搜索找到最新的 DTC 修补程序汇总包 KB 文章[http://support.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185) 短语 （包括引号）：  
+-   可以通过搜索找到最新的 DTC 修补程序汇总包 KB 文章[ http://support.microsoft.com ](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185)短语 （包括引号）：  
   
     ```  
     "MS DTC Hotfix Rollup Package"  
     ```  
   
      下面的查询执行此搜索。 选择的最新项目：   
-    [http://support.microsoft.com/search/default.aspx?query="MS + DTC + 修补程序 + 汇总 + 包"](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
+    [http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package"](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
   
 ## <a name="use-the-interrupt-affinity-policy-tool-to-bind-network-adapter-interrupts-to-specific-processors-on-multiprocessor-computers"></a>使用中断地缘策略工具将网络适配器中断绑定到多处理器计算机上的特定处理器  
  中断地缘策略 (IntPolicy) 是一个工具，可将"绑定"或更改的中断对给定的设备 （如网络适配器） 的 CPU 相关性具有特定处理器或多处理器计算机上的处理器。 此绑定也称为分区。 来自特定网络适配器与多处理器计算机上的特定处理器的中断的绑定强制实施运行延缓的过程调用 (Dpc) 和指定的处理器上的网络适配器的中断服务例程 (Isr)。 请注意，不能在单个处理器的计算机上配置中断相关性。  
@@ -155,12 +155,12 @@ ms.lasthandoff: 11/28/2017
 > [!NOTE]  
 >  DPC 被指排队通常将在以后执行的内核模式函数调用。 ISR 被指其目的是生成中断时服务设备的例程。 有关延缓的过程调用和中断服务例程的详细信息，请参阅[Windows 驱动程序工具包文档](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)。  
   
- ![中断 &#45;相关性策略工具](../technical-guides/media/interrupt-affinitypolicytool.gif "中断 AffinityPolicyTool")  
+ ![中断&#45;地缘策略工具](../technical-guides/media/interrupt-affinitypolicytool.gif "中断 AffinityPolicyTool")  
 中断-关联策略工具  
   
  基于 Windows Server 2008 多处理器计算机上中断控制器的默认行为是将设备中断分配给任何可用的处理器。 当网络连接和文件服务器会话的给定的网络适配器是绑定/分区以在一组特定的处理器上运行而不是任何可用的处理器、 性能以及关联的网络处理的可伸缩性得到了改进。 BizTalk Server 中的大型解决方案通常采用使用多处理器 SQL Server 计算机具有多个网络适配器中断绑定可能特别有益的。   
 中断绑定使用 IntPolicy 应始终评估在测试环境然后再在生产环境中使用。 硬件、 操作系统和应用程序配置的测试环境应尽可能接近生产环境。 这将允许你以测试各种屏蔽的中断绑定，并确定程度该中断绑定将提高性能。  
- 我们建议你禁用超线程支持超线程使用 Cpu 的计算机上配置 IntPolicy 之前。 这将确保中断分配给物理处理器，而不是逻辑处理器。 分配到引用相同的物理处理器的逻辑处理器的中断地缘将不会提高性能，并甚至可能会降低系统性能。    超链接"The"[中断地缘策略工具](http://go.microsoft.com/fwlink/?LinkID=204111)(http://go.microsoft.com/fwlink/?LinkID=204111) 是可供从 WHDC 网站下载。  
+ 我们建议你禁用超线程支持超线程使用 Cpu 的计算机上配置 IntPolicy 之前。 这将确保中断分配给物理处理器，而不是逻辑处理器。 分配到引用相同的物理处理器的逻辑处理器的中断地缘将不会提高性能，并甚至可能会降低系统性能。    超链接"The"[中断地缘策略工具](http://go.microsoft.com/fwlink/?LinkID=204111)(http://go.microsoft.com/fwlink/?LinkID=204111)从 WHDC 网站下载。  
   
 ## <a name="use-the-ntfs-file-system-on-all-volumes"></a>使用上的所有卷的 NTFS 文件系统  
  Windows Server 来格式化驱动器，包括 NTFS、 FAT 和 FAT32 提供多个文件系统类型。 NTFS 应始终为文件系统的服务器的选择。  
@@ -206,16 +206,16 @@ Windows Server 2008 使用抢先式多任务来确定优先级将受 CPU 就读�
 禁用服务时应小心。 彻底研究再禁用该服务，因为 Windows Server 需要某些服务正在运行的服务的目的。 如果所需的 Windows Server 2008 服务被禁用，操作系统可能无法运行，甚至无法启动。  
 若要禁用不需要专用的 BizTalk Server 的 Windows Server 2008 服务，请按照下列步骤：  
   
-1.  单击**启动**，指向**管理工具**，然后单击**计算机管理**。  
+1.  单击 **启动**, ，指向 **管理工具**, ，然后单击 **计算机管理**。  
   
 2.  下**计算机管理 （本地）**，展开**服务和应用程序**，然后单击**服务**。  
     在**状态**列中，每个正在运行的服务标记为"已启动。" 停止并禁用任何不必要地，启动的服务，例如，以下服务不需要专用 BizTalk 服务器上：  
   
     -   警报  
   
-    -   剪贴板  
+    -   ClipBook  
   
-    -   DHCP 服务器  
+    -   DHCP Server  
   
     -   传真服务  
   
@@ -249,7 +249,7 @@ Windows Server 2008 使用抢先式多任务来确定优先级将受 CPU 就读�
   
     1.  双击你想要禁用的服务。  
   
-    2.  单击**依赖关系**选项卡。  
+    2.  单击 **依赖关系** 选项卡。  
   
     3.  在**此服务依赖于以下的系统组件**列表中，记下此服务依赖于该服务。  
   
@@ -275,7 +275,7 @@ Windows Server 2008 使用抢先式多任务来确定优先级将受 CPU 就读�
 ## <a name="manually-load-microsoft-certificate-revocation-lists"></a>手动加载 Microsoft 证书吊销列表  
  在开始时的.NET 应用程序，.NET Framework 将尝试下载的证书吊销列表 (CRL) 的任何签名的程序集。 如果你的系统没有直接访问 Internet，或者被限制访问 Microsoft.com 域，这可能会延迟启动 BizTalk Server。 若要避免在应用程序启动此延迟，可以使用以下步骤手动下载并安装代码签名你的系统上的证书吊销列表。  
   
-1.  下载中的最新 CRL 更新[http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.microsoft.com/fwlink/?LinkID = 117794) 和[http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.microsoft.com/fwlink/?LinkId = 117795)。  
+1.  下载中的最新 CRL 更新[ http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl ](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.microsoft.com/fwlink/?LinkID=117794)和[ http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl ](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.microsoft.com/fwlink/?LinkId=117795)。  
   
 2.  将的 CodeSignPCA.crl 和 CodeSignPCA2.crl 文件移到独立的系统。  
   

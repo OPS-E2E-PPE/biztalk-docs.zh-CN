@@ -21,7 +21,7 @@ ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>反汇编程序中的可分辨的字段管道组件
 通过 XML 拆装器管道组件、BizTalk 框架拆装器管道组件或平面文件拆装器管道组件，可将架构中定义的可分辨字段写入消息上下文中，格式如下：  

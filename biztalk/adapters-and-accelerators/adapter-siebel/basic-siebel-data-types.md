@@ -1,23 +1,24 @@
 ---
-title: "基本 Siebel 数据类型 |Microsoft 文档"
-ms.custom: 
+title: 基本 Siebel 数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Siebel data types, supported
+helpviewer_keywords:
+- Siebel data types, supported
 ms.assetid: bf86f639-6c45-49db-9e58-79c3ad2c9978
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0266f445c2fd8a7cba9a0e2089b9542813230580
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="basic-siebel-data-types"></a>基本 Siebel 数据类型
 本部分介绍如何将 Siebel 数据类型支持上[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
@@ -68,18 +69,18 @@ ms.lasthandoff: 09/20/2017
   
 |Siebel 类型|方面|  
 |-----------------|-----------|  
-|DTYPE_BOOL|无|  
+|DTYPE_BOOL|InclusionThresholdSetting|  
 |DTYPE_CURRENCY|精度 (22)，小数位数|  
 |DTYPE_DATE|(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)|  
-|DTYPE_DATETIME|无|  
+|DTYPE_DATETIME|InclusionThresholdSetting|  
 |DTYPE_ID|MaxLength (15)|  
 |DTYPE_INTEGER|精度 (22)|  
 |DTYPE_NOTE|MaxLength (16384)|  
 |DTYPE_NUMBER|精度 (22)，小数位数|  
 |DTYPE_PHONE|MaxLength (40)|  
 |DTYPE_TEXT|MaxLength (2048)|  
-|DTYPE_TIME|(1753年-01-01)T(\d\d:\d\d:\d\d)(.*)|  
-|DTYPE_UTCDATETIME|无|  
+|DTYPE_TIME|(1753-01-01)T(\d\d:\d\d:\d\d)(.*)|  
+|DTYPE_UTCDATETIME|InclusionThresholdSetting|  
   
  以下是一些规则来控制如何以及何时会发布方面和它们的值：  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 09/20/2017
   
  **未标记为 READ ONLY Siebel 中的业务组件字段**  
   
- 如果业务组件字段未标记为 READ ONLY，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]将其公开为可写的字段。 但是，有几个遵循该规则。 这些是：  
+ 如果业务组件字段未标记为 READ ONLY，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]将其公开为可写的字段。 但是，有几个遵循该规则。 这些是︰  
   
 -   如果业务组件字段是**计算**字段在 Siebel，它不会出现在 Insert 或 Update 操作因为 Siebel 自动将会负责的**计算**字段。  
   

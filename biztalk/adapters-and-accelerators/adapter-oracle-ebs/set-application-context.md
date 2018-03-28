@@ -1,22 +1,22 @@
 ---
-title: "设置应用程序上下文 |Microsoft 文档"
-ms.custom: 
+title: 设置应用程序上下文 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9697155-70c0-4173-80d2-d02d103c397b
-caps.latest.revision: "25"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 88db982be92123a13084892bfc396cb1d89c46ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="set-application-context"></a>设置应用程序上下文
 在[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]，你可以对其执行操作之前某些 Oracle E-business Suite 项目 （接口表、 界面视图、 并发程序和请求集） 的强制设置应用程序上下文。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]不允许你执行这些项目上的操作，直到你安装的应用程序上下文。 但是，对于基础的 Oracle 数据库中的项目，它是由用户是否要设置为应用程序上下文。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **绑定属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下绑定属性用于设置应用程序上下文： **OracleEBSOrganizationId**， **OracleUserName**， **OraclePassword**， **OracleEBSResponsibilityKey**， **OracleEBSResponsibilityName**，和**ApplicationShortName**。 不需要指定所有这些绑定属性，若要设置的各种项目的应用程序上下文的值。 有关所需的项目的设置应用程序上下文的绑定属性的信息，请参阅[绑定属性的设置应用程序上下文的各种项目](#Binding)本主题中更高版本。  
   
--   **消息上下文属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下消息上下文属性用于设置应用程序上下文： **ApplicationShortName**，**组织 Id**， **ResponsibilityKey**，和**ResponsibilityName**。 对于指定的用户名和密码，必须使用的绑定属性。 有关如何设置使用消息上下文属性的应用程序上下文的信息，请参阅[配置应用程序上下文使用消息上下文属性](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)。  
+-   **消息上下文属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下消息上下文属性用于设置应用程序上下文： **ApplicationShortName**，**组织 Id****ResponsibilityKey**，和**ResponsibilityName**。 对于指定的用户名和密码，必须使用的绑定属性。 有关如何设置使用消息上下文属性的应用程序上下文的信息，请参阅[配置应用程序上下文使用消息上下文属性](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)。  
   
 > [!IMPORTANT]
 >  为指定的值**OracleEBSResponsibilityKey**绑定属性将重写的值**OracleEBSResponsibilityName**绑定属性。 同样，为指定的值**ResponsibilityKey**消息上下文属性将为指定的值重写**ResponsibilityName**消息上下文属性。  
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
   
  为指定的值**语言**消息上下文属性将重写的值**语言**绑定下的属性**MlsSettings**绑定属性。 有关详细信息**MlsSettings**绑定属性，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。  
   
-##  <a name="Binding"></a>对于各种项目设置应用程序上下文的绑定属性  
+##  <a name="Binding"></a> 对于各种项目设置应用程序上下文的绑定属性  
  下表提供了有关必须为其指定适当的值设置的各种项目的应用程序上下文的绑定属性的信息：  
   
 |项目|OracleEBSOrganizationId|OracleUserName|OraclePassword|OracleEBSResponsibilityKey<br />或<br />OracleEBSResponsibilityName|ApplicationShortName|  

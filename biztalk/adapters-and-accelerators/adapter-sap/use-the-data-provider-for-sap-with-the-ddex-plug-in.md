@@ -1,33 +1,33 @@
 ---
-title: "数据提供程序用于与插件 DDEX SAP |Microsoft 文档"
-ms.custom: 
+title: 数据提供程序用于与插件 DDEX SAP |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DDEX plug-in
 - DDEX plug-in, Data Provider for SAP
 - Data Provider for SAP, using with DDEX plug-in
 ms.assetid: b16c8634-172a-4630-87ed-2073a75afdec
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>数据提供程序用于与插件 DDEX SAP
 如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将安装[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]DDEX 插件。 你可以使用此插件浏览 SAP 对象使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 本部分提供有关使用 DDEX 插件的信息。  
   
  你可以使用插件来建立与 SAP 系统中，连接将表添加从 SAP 系统，并从 SAP 系统中添加函数模块。 已添加的表和函数模块使用 Visual Studio 插件后，新添加的表和函数模块将反映在 SAPDiscoveredObjects.xml 文件中。 有关此文件的详细信息，请参阅[关于 SAPDiscoveredObjects.xml 文件中 SAP](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  请确保您选择要安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装。  
   
 ### <a name="to-connect-to-an-sap-system-using-the-ddex-plug-in"></a>若要连接到 SAP 系统使用 DDEX 插件  
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/28/2017
   
      建立连接后下, 图显示服务器资源管理器。  
   
-     ![DDEX 即插即用 &#45; 在 SAP ADO.NET 提供程序](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
+     ![DDEX 即插即用&#45;中 SAP ADO.NET 提供程序](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
   
 ### <a name="to-add-tables-from-an-sap-system-using-the-ddex-plug-in"></a>若要从使用插件 DDEX SAP 系统中添加表  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **搜索结果**框中列出的满足搜索条件的表名称。  
   
-     ![DDEX 即插即用 &#45; 中搜索和添加表名称对话框](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
+     ![DDEX 即插即用&#45;中搜索和添加表名称对话框](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
   
 4.  选中对应于你想要添加，然后单击表的复选框**添加**。 若要选择所有表，请单击**都选择所有**。 若要清除所有选择，请单击**都清除所有**。  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  **搜索结果**框列出了满足搜索条件的函数模块。  
   
-     ![DDEX 即插即用 &#45; 中搜索和添加模块对话框](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
+     ![DDEX 即插即用&#45;中搜索和添加模块对话框](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
   
 4.  选中你想要添加，然后单击函数模块所对应的复选框**添加**。 若要选择的所有模块，请单击**都选择所有**。 若要清除所有选择，请单击**都清除所有**。  
   

@@ -1,29 +1,29 @@
 ---
-title: "导入 PeopleSoft 应用程序 |Microsoft 文档"
-description: "使用 XML 绑定文件来将 PeopleSoft 适配器应用程序导入到 BizTalk Server 中，并且当导入时读取的任何限制"
-ms.custom: 
+title: 导入 PeopleSoft 应用程序 |Microsoft 文档
+description: 使用 XML 绑定文件来将 PeopleSoft 适配器应用程序导入到 BizTalk Server 中，并且当导入时读取的任何限制
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f53d1b4-e1df-41ff-b554-1bb1d20b9111
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ed076bd238eff5106bb0b2f08449144d922fed4d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>为 PeopleSoft 企业部署的 BizTalk Adapter
 本部分提供有关部署 PeopleSoft Enterprise 的 BizTalk 适配器的信息。  
 
 ## <a name="overview"></a>概述
-使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可在目标计算机上复制端口和程序集。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送/接收端口的位置将配置导出到 XML 文件。  
+使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可在目标计算机上复制端口和程序集。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送/接收端口的位置将配置导出到 XML 文件。  
   
  您可使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行下列任务：  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 **\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 发送 Port\VBScript\RemoveSendPort.vbs**  
   
-**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 接收 Port\VBScript\RemoveReceivePort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Receive Port\VBScript\RemoveReceivePort.vbs**  
   
 例如，在命令提示符下运行：  
   
@@ -70,7 +70,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ## <a name="limitations"></a>限制
 传输适配器密码为星号 （*） 存储在由导出绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将它传递给相同的格式中的管理组件。  
   
- 在导出绑定信息时，得到的绑定文件不包含传输适配器曾经在接收位置/发送端口中使用过的任何密码。 这样可防止以明文形式显示密码信息。 下一次使用该文件导入绑定信息时，必须使用传输属性页用户界面输入密码。 或者，可以在导入前临时修改绑定文件，将密码输入到文件中。 在这种情况下，必须在完成导入操作后从绑定文件中删除密码。  
+ 當您匯出繫結資訊時，所產生的繫結檔案不會包含傳輸配接器在接收位置/傳送埠中使用的任何密碼。 这样可防止以明文形式显示密码信息。 下一次使用该文件导入绑定信息时，必须使用传输属性页用户界面输入密码。 或者，可以在导入前临时修改绑定文件，将密码输入到文件中。 在这种情况下，必须在完成导入操作后从绑定文件中删除密码。  
   
 
 ### <a name="work-around-the-password-limitation"></a>要解决的密码限制  

@@ -1,22 +1,22 @@
 ---
-title: "已知问题的 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 已知问题的 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce77cdac-79c1-4529-8f09-0fb1f87ca037
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 67f210d0e480a311aed0bed5d50f6a827bd6ea4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="known-issues-with-the-msmq-adapter"></a>MSMQ 适配器已知问题
 本部分包含可帮助你避免出现错误的信息。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/20/2017
 ##### <a name="resolution"></a>解决方法  
  若要增加的主机实例的.NET 线程池的可用线程数，请按照中的步骤**主机的 CLR 承载线程值**主题的部分[配置参数该影响的适配器性能](../core/configuration-parameters-that-affect-adapter-performance.md)。  
   
- 因为每个 MSMQ 接收到 MSMQ 绑定的位置接收处理程序需要.NET 线程池中的线程，设置**MinIOThreads**和**MinWorkerThreads**为大于或等于的值MSMQ 接收位置数绑定到接收处理程序。 相应地，将的值设置**MaxIOThreads**和**MaxWorkerThreads**到的值等于 MSMQ 数接收绑定到接收处理程序的位置 * 2 以留出空间：  
+ 由于每个 MSMQ 接收位置都绑定到 MSMQ 接收处理程序需要.NET 线程池中的线程，设置 **MinIOThreads** 和 **MinWorkerThreads** 为值大于或等于 MSMQ 数目接收绑定到接收处理程序的位置。 相应地，将的值设置 **MaxIOThreads** 和 **MaxWorkerThreads** 到的值等于 MSMQ 数接收绑定到接收处理程序的位置 * 2 以留出空间︰  
   
 |DWORD 条目|推荐值|  
 |-----------------|-----------------------|  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 ##### <a name="problem"></a>问题  
  尝试使用 SC 工具 (Sc.exe) 关闭 BizTalk 主机实例的服务时，您可能会收到类似于以下内容的错误消息：  
   
- **Control 失败 1053年服务：**  
+ **Control 失败 1053年服务︰**  
   
  **服务未响应及时启动或控制请求。**  
   
@@ -71,15 +71,15 @@ ms.lasthandoff: 09/20/2017
   
  此外，可能会在系统日志中记录类似于以下内容的错误消息：  
   
- **事件类型： 错误**  
+ **事件类型︰ 错误**  
   
- **事件来源： 服务控制管理器**  
+ **事件来源︰ 服务控制管理器**  
   
- **事件类别： 无**  
+ **事件类别︰ 无**  
   
  **事件 ID: 7011**  
   
- **描述：**  
+ **描述︰**  
   
  **超时 （30000 毫秒） 等待从 BTSSvc$ BizTalkServerApplication 服务的事务处理响应。**  
   

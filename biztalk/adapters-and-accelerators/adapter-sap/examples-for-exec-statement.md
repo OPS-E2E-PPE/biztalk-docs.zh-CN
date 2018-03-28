@@ -1,23 +1,23 @@
 ---
-title: "EXEC 语句中 BizTalk mySAP 适配器中的示例 |Microsoft 文档"
-description: "EXEC 示例和样本使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器"
-ms.custom: 
+title: EXEC 语句中 BizTalk mySAP 适配器中的示例 |Microsoft 文档
+description: EXEC 示例和样本使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad2691f4-34bb-423c-9b3e-4abe2d55ddac
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6eaae930d7d94d24bac9d484957ccf02718af60f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="examples-for-exec-statement"></a>EXEC 语句的示例
 本主题演示各种 EXEC 语句的示例语法。
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="support-for-complex-parameter-types"></a>对复杂的参数类型的支持  
  有两种方法，以支持复杂的 RFC 参数 （表和结构） 时使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]:  
   
--   复杂类型的提供内联的 XML 值。 此示例演示如何将 XML 传递给复杂的参数类型*字段*。 在下面的示例中，  *@fields* 是表参数。  
+-   复杂类型的提供内联的 XML 值。 此示例演示如何将 XML 传递给复杂的参数类型*字段*。 在下面的示例中， *@fields*是表参数。  
   
     ```  
     exec rfc_read_table @query_table='BNKA', @fields='<FIELDS xmlns='http://Microsoft.LobServices.Sap/2007/03/Rfc/'>  

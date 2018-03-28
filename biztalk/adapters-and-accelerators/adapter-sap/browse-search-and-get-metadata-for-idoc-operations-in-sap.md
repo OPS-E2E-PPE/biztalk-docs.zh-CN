@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和 SAP 中的 IDOC 操作获取元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和 SAP 中的 IDOC 操作获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating for IDOC operations
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - IDOC operations, generating schema for
 - IDOC operations
 ms.assetid: 44d05129-ce06-4a10-bf28-9d3519a02a7a
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b4c82ecf945e85c8e4c9b5f365c808598fcbbf3a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-idoc-operations-in-sap"></a>浏览、 搜索和 SAP 中的 IDOC 操作获取元数据
 此部分提供有关如何浏览、 搜索和检索元数据从 SAP IDOC 操作使用说明[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 说明大部分都是相同的所有三个用户界面。 任何位置都提供相关的用户界面的适用，单独的过程。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
     -   ReceiveIdocFormat  
   
-    -   flatFileSegmentIndicator  
+    -   FlatFileSegmentIndicator  
   
      这些属性控制从 SAP 系统检索 IDOC 的元数据的方式。 有关这些属性的详细信息，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。 有关如何设置绑定属性的说明，请参阅[配置 SAP 适配器的绑定属性](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 11/28/2017
   
 |特殊字符|解释|  
 |-----------------------|--------------------|  
-|+ （加）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
+|+（加号）|完全匹配一个字符。<br /><br /> 例如，A + 匹配 AB、 AC、 AD|  
 |*（星号）|匹配零个或多个字符。<br /><br /> 例如，A * A，AB，与 ABC 匹配。|  
   
  有关支持的适配器的特殊字符的详细信息，请参阅[将适配器设置公开为使用 WCF LOB 适配器 SDK 绑定属性](../../adapters-and-accelerators/wcf-lob-adapter-sdk/expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk.md)。
