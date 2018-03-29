@@ -1,22 +1,22 @@
 ---
-title: "方案概述 |Microsoft 文档"
-ms.custom: 
+title: 方案概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac14328d-c373-49da-a899-4b3ca7d6dc0a
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ab36aa51d2dd28651895818caa781c49bf366f50
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="scenario-overview"></a>方案概述
 本主题提供的负载测试已完成的 BizTalk Server 概述产品组以在现代企业级别的硬件上运行时评估 BizTalk 服务器的可伸缩性。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/01/2017
 ## <a name="test-measurements-used"></a>使用的测试度量值  
 BizTalk Server 性能进行测量使用以下条件：  
   
-1.  **总体吞吐量**– 使用测量 **BizTalk： 消息传送 (*主机名*) 收到的 \Documents / Sec * * 和 **BizTalk： 消息传送 (*主机名*) \Documents 处理 / Sec * * 性能计数器的 BizTalk Server 接收和处理主机。  
+1.  **总体吞吐量**– 使用测量**BizTalk： 消息传送 (*主机名*) 每秒接收 \Documents**和**BizTalk： 消息传送 (*主机名*)每秒处理 \Documents** BizTalk Server 的性能计数器接收和处理主机。  
   
 2.  **CPU 使用率**– 测量与**\Processor(_Total)\\%Processor Time** BizTalk 服务器上的性能计数器] 和 SQL Server 计算机。 已全面审阅者所有测试结果和任何性能瓶颈中所述[观测结果和建议](../technical-guides/observations-and-recommendations.md)。  
   
@@ -93,7 +93,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
   
 ## <a name="hardware-configuration"></a>硬件配置  
   
-### <a name="lab-hardware-diagram-and-specifications"></a>实验室硬件图和规格  
+### <a name="lab-hardware-diagram-and-specifications"></a>实验室瓜和规范  
  为实验室使用的硬件配置如下所示。 若要轻松地适应外的处理和数据库层的缩放，已使用以下实验室硬件：  
   
 -   两个企业类 Hewlett Packard DL-380 计算机和 BizTalk Server 处理层的两个企业类 Dell R710 计算机。  
@@ -106,22 +106,22 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
   
  下表提供有关在实验室中使用的硬件的更具体信息。  
   
-|Name|Model|CPU 类型|CPU 数|内核/CPU 数|CPU 体系结构|内存|操作系统|软件|  
+|名称|Model|CPU 类型|CPU 数|内核/CPU 数|CPU 体系结构|内存|操作系统|软件|  
 |----------|-----------|--------------|--------------------|--------------------------|----------------------|------------|----------------------|--------------|  
-|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 负载测试数据库<br /><br /> Visual Studio 2010<br /><br /> WCF 后端服务|  
-|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试控制器|  
-|DL380 03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|DL380 04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 g h z|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理。<br /><br /> Perfmon 命令行|  
-|R805 06|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|R805-07|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|R900 03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
-|R900 04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
-|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
-|R900 06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|带累积更新 4 的 SQL Server 2008 R2|  
+|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 负载测试数据库<br /><br /> Visual Studio 2010<br /><br /> WCF 后端服务|  
+|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试控制器|  
+|DL380-03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|DL380-04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理。<br /><br /> Perfmon 命令行|  
+|R805-06|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|R805-07|Dell PowerEdge R805|AMD 个四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|R900-03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|带累积更新 4 的 SQL Server 2008 R2|  
+|R900-04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|带累积更新 4 的 SQL Server 2008 R2|  
+|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|带累积更新 4 的 SQL Server 2008 R2|  
+|R900-06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|带累积更新 4 的 SQL Server 2008 R2|  
   
 ### <a name="storage-area-network-configuration"></a>存储区域网络配置  
  下图描绘了存储区域网络 (SAN) 配置用于实验室环境。  
@@ -146,7 +146,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
   
  下面的 LUN 配置为每个四个在测试环境中运行 SQL Server 的计算机使用。  
   
-|驱动器号|卷名|文件|LUN 的大小 (GB)|  
+|驱动器号|卷名|“文件”|LUN 的大小 (GB)|  
 |------------------|-----------------|-----------|---------------------|  
 |C|本地 C 驱动器|MASTER、 MSDB 和模型|136|  
 |H|Data_Tempdb|TempDB 数据文件|50|  
@@ -176,7 +176,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
   
 -   **读取的**: sqlio kR-s60 frandom-o8-t8-b8 LS-FParam.txt  
   
--   **对于写入**: sqlio-kW-s60 frandom-o8-t8-b8 LS-FParam.txt  
+-   **For writes**: sqlio -kW -s60 -frandom -o8 -t8 -b8 -LS -FParam.txt  
   
  Param.txt 文件包含以下项目：  
   
