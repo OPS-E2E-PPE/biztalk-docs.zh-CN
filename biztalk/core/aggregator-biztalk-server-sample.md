@@ -15,7 +15,7 @@ helpviewer_keywords:
 - examples, pipelines
 - messages, correlating to orchestrations
 ms.assetid: eb8121df-4f5b-4f36-8228-4b5ad1abfb4e
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -91,9 +91,9 @@ ms.lasthandoff: 03/23/2018
   
 1.  打开位于 PipelinesAndSchemas 文件夹中的 Instance1.txt 和 Instance2.txt 文件以查看其内容。  
   
-     请注意，在这两文件 DestinationPartnerURI 元素包含的值http://www.contoso.com。该值用于将这两条消息关联在一起，以便可以将它们添加到同一个交换中。  
+     请注意，在这两文件 DestinationPartnerURI 元素包含的值http://www.contoso.com 。该值用于将这两条消息关联在一起，以便可以将它们添加到同一个交换中。  
   
-     同样 Instance3.txt 和 Instance4.txt 文件具有 DestinationPatnerURI 元素设置为http://www.northwind.com。  
+     同样 Instance3.txt 和 Instance4.txt 文件具有 DestinationPatnerURI 元素设置为http://www.northwind.com 。  
   
      这两条消息将一起添加到另一个交换中。  
   
