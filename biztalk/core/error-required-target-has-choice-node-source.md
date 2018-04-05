@@ -1,15 +1,16 @@
 ---
-title: "错误-所需的目标具有选择源节点 |Microsoft 文档"
-ms.custom: 
+title: 错误-所需的目标具有选择源节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.reqdTargetHasChoiceNodeSource
+f1_keywords:
+- bts10.map.error.reqdTargetHasChoiceNodeSource
 ms.assetid: 5b5af999-d100-4e5d-a959-c8b11d574d3b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

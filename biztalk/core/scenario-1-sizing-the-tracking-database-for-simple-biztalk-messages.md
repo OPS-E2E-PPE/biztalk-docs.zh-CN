@@ -1,15 +1,16 @@
 ---
-title: "方案 1： 调整跟踪数据库的简单 BizTalk 消息 |Microsoft 文档"
-ms.custom: 
+title: 方案 1： 调整跟踪数据库的简单 BizTalk 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Tracking database, database size
+helpviewer_keywords:
+- Tracking database, database size
 ms.assetid: 5b8fed48-d9c9-4d1f-a320-d3e23b8b1ec9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

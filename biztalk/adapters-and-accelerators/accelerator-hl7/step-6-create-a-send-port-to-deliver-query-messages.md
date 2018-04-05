@@ -1,15 +1,16 @@
 ---
-title: "步骤 6： 创建发送端口将查询消息传递 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 创建发送端口将查询消息传递 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, send ports
+helpviewer_keywords:
+- interrogative tutorial, send ports
 ms.assetid: a3cfa2aa-888d-4a82-9eb3-2e9cc29ee582
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

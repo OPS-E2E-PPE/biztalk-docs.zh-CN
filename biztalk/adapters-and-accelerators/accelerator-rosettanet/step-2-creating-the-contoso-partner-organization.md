@@ -1,15 +1,16 @@
 ---
-title: "步骤 2： 创建 Contoso 合作伙伴组织 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Contoso 合作伙伴组织 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, creating partner organizations
+helpviewer_keywords:
+- double action tutorial, creating partner organizations
 ms.assetid: ebb3b166-3781-40b9-89d4-2ca0c83d05f3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

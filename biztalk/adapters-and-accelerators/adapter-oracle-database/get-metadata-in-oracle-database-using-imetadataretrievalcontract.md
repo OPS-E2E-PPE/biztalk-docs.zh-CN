@@ -1,15 +1,16 @@
 ---
-title: "使用 IMetadataRetrievalContract 的 Oracle 数据库中获取元数据 |Microsoft 文档"
-ms.custom: 
+title: 使用 IMetadataRetrievalContract 的 Oracle 数据库中获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: metadata, retrieving using IMetadataRetrievalContract
+helpviewer_keywords:
+- metadata, retrieving using IMetadataRetrievalContract
 ms.assetid: 7d32694f-4384-4c2f-be72-ac52c7b2e9f5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

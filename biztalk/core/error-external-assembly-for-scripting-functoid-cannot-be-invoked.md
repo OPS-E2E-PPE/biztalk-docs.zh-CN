@@ -1,15 +1,16 @@
 ---
-title: "错误-用于脚本编写 Functoid 的外部程序集不能调用 |Microsoft 文档"
-ms.custom: 
+title: 错误-用于脚本编写 Functoid 的外部程序集不能调用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.cannotInvokeExternalAssembly
+f1_keywords:
+- bts10.map.error.cannotInvokeExternalAssembly
 ms.assetid: 30d97b05-2cbf-44a5-b219-3a5ae17fc597
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

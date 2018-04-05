@@ -1,15 +1,16 @@
 ---
-title: "错误-Functoid 固定输入不匹配 |Microsoft 文档"
-ms.custom: 
+title: 错误-Functoid 固定输入不匹配 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.functoidFixedInputMismatch
+f1_keywords:
+- bts10.map.error.functoidFixedInputMismatch
 ms.assetid: d235e7c3-efcf-4128-aef7-cdfdf1f317be
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

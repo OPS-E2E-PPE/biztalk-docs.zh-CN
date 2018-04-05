@@ -1,15 +1,16 @@
 ---
-title: "处理 HL7 消息 |Microsoft 文档"
-ms.custom: 
+title: 处理 HL7 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: messages, processing
+helpviewer_keywords:
+- messages, processing
 ms.assetid: 0994f2cc-1e6f-4d07-8ae1-9ee53d4b4537
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

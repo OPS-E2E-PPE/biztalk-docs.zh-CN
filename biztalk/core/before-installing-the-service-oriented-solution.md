@@ -1,15 +1,16 @@
 ---
-title: "安装服务面向解决方案之前 |Microsoft 文档"
-ms.custom: 
+title: 安装服务面向解决方案之前 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: service solution tutorial, deployment prerequisites
+helpviewer_keywords:
+- service solution tutorial, deployment prerequisites
 ms.assetid: 865bd21c-e49a-4647-af91-fefee07ee806
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

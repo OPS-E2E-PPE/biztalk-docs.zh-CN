@@ -1,15 +1,16 @@
 ---
-title: "步骤 8： 配置方 Information_hl7_main |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 配置方 Information_hl7_main |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, parties
+helpviewer_keywords:
+- interrogative tutorial, parties
 ms.assetid: f3678f80-741f-4ab2-9c62-ac2f3078d53d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

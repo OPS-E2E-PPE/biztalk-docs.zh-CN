@@ -1,15 +1,16 @@
 ---
-title: "解决在 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决在 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: troubleshooting
+helpviewer_keywords:
+- troubleshooting
 ms.assetid: de11ffe3-3622-40df-b9c5-11c96f8460e0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

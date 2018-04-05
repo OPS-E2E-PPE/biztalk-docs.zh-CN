@@ -1,15 +1,16 @@
 ---
-title: "与 SAP 适配器的 WCF 服务模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 SAP 适配器的 WCF 服务模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF service model, overview of using
+helpviewer_keywords:
+- WCF service model, overview of using
 ms.assetid: 02a4b43e-ade0-4dba-b8f6-074bca7cbe5c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

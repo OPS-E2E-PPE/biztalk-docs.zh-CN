@@ -1,15 +1,16 @@
 ---
-title: "方案 4： 调整跟踪数据库的所有消息 |Microsoft 文档"
-ms.custom: 
+title: 方案 4： 调整跟踪数据库的所有消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Tracking database, database size
+helpviewer_keywords:
+- Tracking database, database size
 ms.assetid: db1126c7-0b86-4635-bfdc-3b69a82cc64b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

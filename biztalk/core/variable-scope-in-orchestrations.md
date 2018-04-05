@@ -1,15 +1,16 @@
 ---
-title: "在业务流程中的变量范围 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中的变量范围 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, variables
+helpviewer_keywords:
+- orchestrations, variables
 ms.assetid: 5856cdca-0ebd-4e16-8739-7bd50753b9f9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

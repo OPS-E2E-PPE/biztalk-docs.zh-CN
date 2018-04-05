@@ -1,16 +1,17 @@
 ---
-title: "使用组、 创建项目、 优化性能，以及在 BizTalk Server 中的更多 |Microsoft 文档"
-description: "快速链接以使用 BizTalk 管理创建组、 部署应用程序、 更改性能设置，和在 BizTalk Server 中重新启动 BizTalk 服务"
-ms.custom: 
+title: 使用组、 创建项目、 优化性能，以及在 BizTalk Server 中的更多 |Microsoft 文档
+description: 快速链接以使用 BizTalk 管理创建组、 部署应用程序、 更改性能设置，和在 BizTalk Server 中重新启动 BizTalk 服务
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.ops.appandsrv
+f1_keywords:
+- bts10.ops.appandsrv
 ms.assetid: d4d38eca-05b8-49b3-aad2-5b32a012a5cc
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

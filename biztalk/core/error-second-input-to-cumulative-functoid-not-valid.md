@@ -1,15 +1,16 @@
 ---
-title: "错误-第二个输入无效的累积 functoid |Microsoft 文档"
-ms.custom: 
+title: 错误-第二个输入无效的累积 functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.secondInputToCumulativeNotValid
+f1_keywords:
+- bts10.map.error.secondInputToCumulativeNotValid
 ms.assetid: e41a58a7-e0a2-4284-bd19-279578a8915d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

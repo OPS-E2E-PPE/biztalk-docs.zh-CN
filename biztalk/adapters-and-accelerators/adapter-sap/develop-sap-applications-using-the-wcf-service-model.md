@@ -1,15 +1,16 @@
 ---
-title: "开发使用 WCF 服务模型的 SAP 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 开发使用 WCF 服务模型的 SAP 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF service model, developing applications
+helpviewer_keywords:
+- WCF service model, developing applications
 ms.assetid: 5387d063-31d3-49b3-9771-354802542f8f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
