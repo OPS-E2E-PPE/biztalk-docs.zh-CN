@@ -1,15 +1,16 @@
 ---
-title: "如何在向地图添加脚本 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何在向地图添加脚本 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.mapper.functiod.script
+f1_keywords:
+- bts10.mapper.functiod.script
 ms.assetid: eb96814a-b3fb-48f6-a947-ab595a270faa
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

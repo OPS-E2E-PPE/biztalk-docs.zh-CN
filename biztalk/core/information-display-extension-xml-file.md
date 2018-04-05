@@ -1,15 +1,16 @@
 ---
-title: "信息-显示扩展 XML 文件 |Microsoft 文档"
-ms.custom: 
+title: 信息-显示扩展 XML 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.info.displayExtensionXmlFile
+f1_keywords:
+- bts10.map.info.displayExtensionXmlFile
 ms.assetid: a1788ab9-c7eb-4b16-b5ac-7356b2163c2a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

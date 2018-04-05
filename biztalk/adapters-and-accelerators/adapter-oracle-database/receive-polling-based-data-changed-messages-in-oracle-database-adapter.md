@@ -1,15 +1,16 @@
 ---
-title: "Oracle 数据库适配器中接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: Oracle 数据库适配器中接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: polling-base notification, support for
+helpviewer_keywords:
+- polling-base notification, support for
 ms.assetid: 043afb88-701c-41d8-8b8e-84702bd0d984
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "SQLEXECUTE 操作的消息架构 |Microsoft 文档"
-ms.custom: 
+title: SQLEXECUTE 操作的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SQLEXECUTE operations, message schemas for
+helpviewer_keywords:
+- SQLEXECUTE operations, message schemas for
 ms.assetid: 744645f4-0674-44e0-bf8d-8df70086b0f1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
 </SQLEXECUTE>  
 ```  
   
- <span data-ttu-id="2aad9-118">[语句] = 要执行; 的 SQL 语句例如，"选择 * 从 emp WHERE empno =: emp_no"。</span><span class="sxs-lookup"><span data-stu-id="2aad9-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT * from emp WHERE empno=:emp_no".</span></span>  
+ <span data-ttu-id="2aad9-118">[语句] = 要执行; 的 SQL 语句例如，"选择 \* 从 emp WHERE empno =: emp_no"。</span><span class="sxs-lookup"><span data-stu-id="2aad9-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT \* from emp WHERE empno=:emp_no".</span></span>  
   
  <span data-ttu-id="2aad9-119">[PARAM_SPEC] = SQL 语句和其数据类型; 中的 IN 参数的列表例如，"emp_no 数"。</span><span class="sxs-lookup"><span data-stu-id="2aad9-119">[PARAM_SPEC] = The list of the IN parameters in the SQL statement and their data types; for example, "emp_no NUMBER".</span></span>  
   

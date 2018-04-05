@@ -1,15 +1,16 @@
 ---
-title: "与 Oracle 数据库适配器的 WCF 通道模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 Oracle 数据库适配器的 WCF 通道模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF channel model, overview
+helpviewer_keywords:
+- WCF channel model, overview
 ms.assetid: 4712ba62-8360-475c-b2e4-422e499eca21
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="d5e07-143">消息操作是一个字符串，它的 SOAP 消息标头的一部分。</span><span class="sxs-lookup"><span data-stu-id="d5e07-143">The message action is a string that is part of the SOAP message header.</span></span> <span data-ttu-id="d5e07-144">消息操作标识应调用对 Oracle 数据库的操作。</span><span class="sxs-lookup"><span data-stu-id="d5e07-144">The message action identifies the operation that should be invoked on the Oracle database.</span></span> <span data-ttu-id="d5e07-145">下面的示例演示指定要调用/SCOTT/EMP 表上的选择操作的消息操作： `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`。</span><span class="sxs-lookup"><span data-stu-id="d5e07-145">The following shows the message action specified to invoke the Select operation on the /SCOTT/EMP table: `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`.</span></span>  
   
--   <span data-ttu-id="d5e07-146">消息正文包含操作的参数数据。</span><span class="sxs-lookup"><span data-stu-id="d5e07-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="d5e07-147">消息正文组成对应于预期的消息架构的格式正确的 XML[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]请求的操作。</span><span class="sxs-lookup"><span data-stu-id="d5e07-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="d5e07-148">以下的消息正文指定 SCOTT 上的选择操作。EMP 表 (选择 * 从 EMP)。</span><span class="sxs-lookup"><span data-stu-id="d5e07-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT * FROM EMP).</span></span>  
+-   <span data-ttu-id="d5e07-146">消息正文包含操作的参数数据。</span><span class="sxs-lookup"><span data-stu-id="d5e07-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="d5e07-147">消息正文组成对应于预期的消息架构的格式正确的 XML[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]请求的操作。</span><span class="sxs-lookup"><span data-stu-id="d5e07-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="d5e07-148">以下的消息正文指定 SCOTT 上的选择操作。EMP 表 (选择 \* 从 EMP)。</span><span class="sxs-lookup"><span data-stu-id="d5e07-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT \* FROM EMP).</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  

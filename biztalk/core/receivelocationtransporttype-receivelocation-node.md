@@ -1,15 +1,16 @@
 ---
-title: "ReceiveLocationTransportType （接收位置节点） |Microsoft 文档"
-ms.custom: 
+title: ReceiveLocationTransportType （接收位置节点） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: ReceiveLocationTransportType node [binding file]
+helpviewer_keywords:
+- ReceiveLocationTransportType node [binding file]
 ms.assetid: 375076c3-d5e6-4c25-b054-b452e29717e0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

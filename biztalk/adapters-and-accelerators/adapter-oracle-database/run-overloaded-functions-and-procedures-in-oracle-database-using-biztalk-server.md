@@ -1,15 +1,16 @@
 ---
-title: "调用重载函数和 Oracle 数据库使用 BizTalk Server 中的过程 |Microsoft 文档"
-ms.custom: 
+title: 调用重载函数和 Oracle 数据库使用 BizTalk Server 中的过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: overloaded functions and procedures, invoking by using BizTalk Server
+helpviewer_keywords:
+- overloaded functions and procedures, invoking by using BizTalk Server
 ms.assetid: a3d76361-6b0c-415a-b4f9-31939abfdc36
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

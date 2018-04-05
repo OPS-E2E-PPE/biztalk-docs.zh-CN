@@ -1,15 +1,16 @@
 ---
-title: "错误-输入到累积 Functoid 从不同的父记录 |Microsoft 文档"
-ms.custom: 
+title: 错误-输入到累积 Functoid 从不同的父记录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.inputsToCumulativeFromDiffParents
+f1_keywords:
+- bts10.map.error.inputsToCumulativeFromDiffParents
 ms.assetid: a2dcfe6f-0cd4-41ed-a69f-e510a74760a9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "如何将查询保存 |Microsoft 文档"
-ms.custom: 
+title: 如何将查询保存 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Query tab [Administration Console], saving
+helpviewer_keywords:
+- Query tab [Administration Console], saving
 ms.assetid: 55d7585b-1985-48dc-af19-18fa37ede72f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

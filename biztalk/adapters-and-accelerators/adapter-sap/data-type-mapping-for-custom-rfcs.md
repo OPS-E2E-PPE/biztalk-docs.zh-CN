@@ -1,15 +1,16 @@
 ---
-title: "数据类型映射自定义的 Rfc |Microsoft 文档"
-ms.custom: 
+title: 数据类型映射自定义的 Rfc |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: custom RFCs, data type mapping
+helpviewer_keywords:
+- custom RFCs, data type mapping
 ms.assetid: 33539a5a-bdfc-423f-8026-436f69a20c70
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

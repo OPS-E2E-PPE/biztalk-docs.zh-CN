@@ -1,15 +1,16 @@
 ---
-title: "如何添加对另一个应用程序的引用 |Microsoft 文档"
-ms.custom: 
+title: 如何添加对另一个应用程序的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: applications, referencing
+helpviewer_keywords:
+- applications, referencing
 ms.assetid: 6a177560-ee1f-403a-a68a-ade409a39a35
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

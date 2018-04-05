@@ -1,15 +1,16 @@
 ---
-title: "对于小型示例体系结构&amp;中等规模的公司 |Microsoft 文档"
-ms.custom: 
+title: 对于小型示例体系结构&amp;中等规模的公司 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: architecture, examples
+helpviewer_keywords:
+- architecture, examples
 ms.assetid: fc8c2fdd-bcb1-481c-b351-03092dd48540
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

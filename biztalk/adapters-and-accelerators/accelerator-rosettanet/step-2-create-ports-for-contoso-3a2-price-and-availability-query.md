@@ -1,15 +1,16 @@
 ---
-title: "步骤 2： 为 Contoso 3A2 价格和可用性查询响应方案中使用 BizTalk 资源管理器创建端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 为 Contoso 3A2 价格和可用性查询响应方案中使用 BizTalk 资源管理器创建端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating ports
+helpviewer_keywords:
+- private process tutorial, creating ports
 ms.assetid: e0b12a96-e799-47ac-8293-7de10662bdf0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

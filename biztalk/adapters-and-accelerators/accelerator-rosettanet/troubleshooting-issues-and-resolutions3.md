@@ -1,15 +1,16 @@
 ---
-title: "疑难解答： 问题和 Resolutions3 |Microsoft 文档"
-ms.custom: 
+title: 疑难解答： 问题和 Resolutions3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: troubleshooting
+helpviewer_keywords:
+- troubleshooting
 ms.assetid: 40f59f54-183e-43db-afb5-0a45b437697f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -327,7 +328,7 @@ ms.lasthandoff: 12/01/2017
   
  1. <span data-ttu-id="3fab4-291">启用 32 位程序的 BTARN 应用程序池。</span><span class="sxs-lookup"><span data-stu-id="3fab4-291">Enable the BTARN Application Pools for 32 bit.</span></span>  
   
- 2. <span data-ttu-id="3fab4-292">为引用 IsapiModule 筛选器的 *.dll 添加 HTTP 处理程序。</span><span class="sxs-lookup"><span data-stu-id="3fab4-292">Add a HTTP Handler for *.dll refering the IsapiModule Filters.</span></span>  
+ 2. <span data-ttu-id="3fab4-292">为引用 IsapiModule 筛选器的 \*.dll 添加 HTTP 处理程序。</span><span class="sxs-lookup"><span data-stu-id="3fab4-292">Add a HTTP Handler for \*.dll refering the IsapiModule Filters.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="3fab4-293">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3fab4-293">See Also</span></span>  
  <span data-ttu-id="3fab4-294">[BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md) </span><span class="sxs-lookup"><span data-stu-id="3fab4-294">[BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md) </span></span>  

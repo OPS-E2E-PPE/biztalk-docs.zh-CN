@@ -1,15 +1,16 @@
 ---
-title: "错误-但不存在循环的多个输入 |Microsoft 文档"
-ms.custom: 
+title: 错误-但不存在循环的多个输入 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.multipleInputsWithoutLooping
+f1_keywords:
+- bts10.map.error.multipleInputsWithoutLooping
 ms.assetid: 7e55ad22-06a8-4a56-839d-a30b82819a68
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

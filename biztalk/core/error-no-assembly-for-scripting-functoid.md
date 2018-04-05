@@ -1,15 +1,16 @@
 ---
-title: "错误-用于脚本编写 Functoid 没有程序集 |Microsoft 文档"
-ms.custom: 
+title: 错误-用于脚本编写 Functoid 没有程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.noAssemblyForScriptingFunctoid
+f1_keywords:
+- bts10.map.error.noAssemblyForScriptingFunctoid
 ms.assetid: db8fa41c-904c-4789-9522-f3107dbeb087
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

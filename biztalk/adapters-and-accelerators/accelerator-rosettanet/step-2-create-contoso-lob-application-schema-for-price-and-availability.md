@@ -1,15 +1,16 @@
 ---
-title: "步骤 2： 创建 Contoso LOB 应用程序架构的价格和可用性项目使用 BizTalk 编辑器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Contoso LOB 应用程序架构的价格和可用性项目使用 BizTalk 编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB schemas
+helpviewer_keywords:
+- private process tutorial, creating LOB schemas
 ms.assetid: 70e26dc9-4299-4d30-8f8b-5cc3469a2025
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

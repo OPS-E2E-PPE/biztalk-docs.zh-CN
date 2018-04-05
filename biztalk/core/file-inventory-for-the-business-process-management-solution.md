@@ -1,15 +1,16 @@
 ---
-title: "业务流程管理解决方案的文件清单 |Microsoft 文档"
-ms.custom: 
+title: 业务流程管理解决方案的文件清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: process management solution tutorial, file inventory
+helpviewer_keywords:
+- process management solution tutorial, file inventory
 ms.assetid: 3efb7495-9543-4fe0-8f4b-26c19b3b6db9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

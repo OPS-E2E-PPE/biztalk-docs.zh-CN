@@ -1,15 +1,16 @@
 ---
-title: "有关博士企业 OneWorld 单一登录和 BizTalk 适配器 |Microsoft 文档"
-ms.custom: 
+title: 有关博士企业 OneWorld 单一登录和 BizTalk 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Single Sign-On
+helpviewer_keywords:
+- Single Sign-On
 ms.assetid: 44fea3a4-8073-4b64-94e5-1eacbae845d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

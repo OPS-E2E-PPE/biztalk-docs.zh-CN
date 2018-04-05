@@ -1,15 +1,16 @@
 ---
-title: "步骤 3： 创建 Contoso LOB 应用程序映射的价格和可用性项目使用 BizTalk 映射程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建 Contoso LOB 应用程序映射的价格和可用性项目使用 BizTalk 映射程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB maps
+helpviewer_keywords:
+- private process tutorial, creating LOB maps
 ms.assetid: a947e0ac-f0cb-4be9-85a8-09daf3675b1a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
