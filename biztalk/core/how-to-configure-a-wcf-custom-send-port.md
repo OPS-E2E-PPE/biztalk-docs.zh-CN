@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a195c047-5d5c-478b-accd-252e9dc5cfe8
-caps.latest.revision: ''
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/23/2018
 |属性名称|型別|Description|  
 |-------------------|----------|-----------------|  
 |**标识**|XML Blob<br /><br /> 例如：<br /><br /> &lt;标识&gt;<br /><br /> &lt;userPrincipalName value="username@contoso.com" /&gt;<br /><br /> &lt;/identity&gt;|指定此发送端口预期的服务标识。 这些设置支持此发送端口对服务进行验证。 在客户端与服务进行握手的过程中，WCF 基础结构将确保预期服务的标识与此元素的值匹配。 可以为指定的值 **标识** 属性而异的安全配置。<br /><br /> 默认值为空字符串。|  
-|**StaticAction**|字符串|指定 **SOAPAction** 传出消息的标头字段。 此外可以通过消息上下文属性设置此属性 **WCF。操作** 在管道或业务流程。 你可以通过两种方式指定此值︰ 单个操作格式和操作映射格式。 如果将此属性设置中的单个操作格式-例如， http://contoso.com/Svc/Op1- **SOAPAction**标头为传出消息始终设置为此属性中指定的值。<br /><br /> 如果在操作映射格式，传出中设置此属性 **SOAPAction** 标头由 **BTS。操作** 上下文属性。 例如，如果此属性设置为以下 XML 格式和**BTS。操作**属性设置为 Op1，WCF 发送适配器使用http://contoso.com/Svc/Op1为传出**SOAPAction**标头。<br /><br /> \<BtsActionMapping\><br /><br /> \<Operation Name="Op1" Action="http://contoso.com/Svc/Op1" /\><br /><br /> \<Operation Name="Op2" Action="http://contoso.com/Svc/Op2" /\><br /><br /> \</BtsActionMapping\><br /><br /> 如果传出消息来自的业务流程端口时，动态设置业务流程实例 **BTS。操作** 与操作名称的端口的属性。 如果使用基于内容的路由路由传出消息，则可以设置 **BTS。操作** 管道组件中的属性。<br /><br /> 默认值为空字符串。|  
+|**StaticAction**|字符串|指定 **SOAPAction** 传出消息的标头字段。 此外可以通过消息上下文属性设置此属性 **WCF。操作** 在管道或业务流程。 你可以通过两种方式指定此值︰ 单个操作格式和操作映射格式。 如果将此属性设置中的单个操作格式-例如， http://contoso.com/Svc/Op1- **SOAPAction**标头为传出消息始终设置为此属性中指定的值。<br /><br /> 如果在操作映射格式，传出中设置此属性 **SOAPAction** 标头由 **BTS。操作** 上下文属性。 例如，如果此属性设置为以下 XML 格式和**BTS。操作**属性设置为 Op1，WCF 发送适配器使用 http://contoso.com/Svc/Op1 为传出**SOAPAction**标头。<br /><br /> \<BtsActionMapping\><br /><br /> \<Operation Name="Op1" Action="http://contoso.com/Svc/Op1" /\><br /><br /> \<Operation Name="Op2" Action="http://contoso.com/Svc/Op2" /\><br /><br /> \</BtsActionMapping\><br /><br /> 如果传出消息来自的业务流程端口时，动态设置业务流程实例 **BTS。操作** 与操作名称的端口的属性。 如果使用基于内容的路由路由传出消息，则可以设置 **BTS。操作** 管道组件中的属性。<br /><br /> 默认值为空字符串。|  
 |**BindingType**|Enum<br /><br /> 有关成员名称的详细信息**BindingType**属性，请参阅**绑定类型**中的属性**WCF 自定义传输属性对话框中，发送，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|指定此发送端口使用的终结点所采用的绑定类型。 **注意︰**  如果你使用的自定义绑定， **BindingType** 属性可以配置使用自定义绑定。 有关如何使用自定义绑定的详细信息，请参阅[如何启用与 WCF 适配器 WCF 扩展点](../core/how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters.md)。|  
 |**BindingConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;绑定名称 ="netNamedPipeBinding"&gt;&lt;readerQuotas maxDepth ="32"maxStringContentLength ="8192"maxArrayLength ="16384"maxBytesPerRead ="4096"maxNameTableCharCount ="16384"/&gt;&lt;安全模式 ="None"/&gt;&lt;绑定&gt;|指定使用的 XML 字符串**\<绑定\>**元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中所列的相应主题。 **注意︰**  BizTalk Server 不支持你可以使用配置的绑定扩展元素的所有类型 **BindingConfiguration** 属性。 <br /><br /> 默认值为空字符串。|  
 |**EndpointBehaviorConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;行为名称 ="sampleBehavior"&gt;&lt;callbackTimeouts /&gt;&lt;/behavior&gt;|指定使用的 XML 字符串**\<行为\>**元素**\<endpointBehaviors\>**元素来配置的行为设置WCF 终结点。 有关详细信息**\<endpointBehaviors\>**元素，请参阅另请参阅中的相应主题。 **注意︰**  BizTalk Server 不支持你可以使用配置的行为扩展元素的所有类型 **EndpointBehaviorConfiguration** 属性。 <br /><br /> 默认值为空字符串。|  

@@ -17,7 +17,7 @@ helpviewer_keywords:
 - modifying, agreements
 - agreements, trading partners
 ms.assetid: 4bbe4b57-d6ec-4448-9c80-2aecd98e0dc7
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -57,9 +57,9 @@ ms.lasthandoff: 03/23/2018
 |**常规**<br /><br /> (**应用程序适配器区域**)|**类名**|类的名称，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将使用从 ApplicationAdapter。<br /><br /> 默认值是\<无\>。|  
 |**常规**<br /><br /> (**验证适配器区域**)|**程序集名称**|ValidationAdapter 的文件名，可从文件系统中选择该文件名。 默认值为空字符串。|  
 |**常规**<br /><br /> (**验证适配器区域**)|**类名**|[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将在 ValidationAdapter 中使用的类的名称。<br /><br /> 默认值是\<无\>。|  
-|**端口**|**操作 URL**|本组织要将操作消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下全部为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**信号 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> -你必须在此字段中，"http://domain"或"https://domain"开头的一个输入是有效的 URI。|  
-|**端口**|**信号 URL**|本组织要将信号消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**响应方**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**操作 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> 您必须在此字段中输入以“http://domain”或“https://domain”开头的有效 URI。|  
-|**端口**|**同步 URL**|本组织通过 HTTP 适配器建立连接时所使用的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 您必须在此字段中输入以“http://domain”或“https://domain”开头的有效 URI。|  
+|**端口**|**操作 URL**|本组织要将操作消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下全部为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**信号 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> -你必须在此字段中，"http://domain" 或 "https://domain" 开头的一个输入是有效的 URI。|  
+|**端口**|**信号 URL**|本组织要将信号消息传送到的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**响应方**。<br /><br /> 这也是必填的字段，如果满足以下条件 (在这种情况下，**操作 URL**字段也是必填):<br /><br /> -**是同步**过程配置设置是`False`。<br /><br /> -**是否为单一操作**过程配置设置是`False`。<br /><br /> 您必须在此字段中输入以 “http://domain” 或 “https://domain” 开头的有效 URI。|  
+|**端口**|**同步 URL**|本组织通过 HTTP 适配器建立连接时所使用的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。<br /><br /> 如果以下为真，则此字段为必需字段：<br /><br /> -**是同步**过程配置设置是`True`。<br /><br /> -**主页角色**协议设置是**发起程序**。<br /><br /> 您必须在此字段中输入以 “http://domain” 或 “https://domain” 开头的有效 URI。|  
 |**协议**|**Digest 方法**|用于计算传入消息摘要的协议，以确保不可否认性。<br /><br /> **从开始[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]和更高版本**，SHA2 支持将自动包含。 选项包括： **MD5**， **sha-1**， **SHA 256** （默认值）、 **sha-384**，和**sha-512**。<br /><br />有关以前[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]版本中，选项包括**MD5**或**sha-1** （默认值）。<br /><br /> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]接收管道接收并对消息进行解密，即使使用的协议对邮件进行加密和**编码**协议中的此选项卡上的设置不匹配。 因此，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]接收消息以 RC2 40 或 3DES 进行加密。<br /><br /> 所有传出签名的消息具有 sha-1 的摘要。|  
 |**协议**|**将所有部分都编码**|系统是否对多部分消息的所有部分进行集中编码。<br /><br /> 可以是`True`或`False`（默认值）。<br /><br /> 当`True`，将使用由指示的方法编码多部分消息的所有部分`Encoding`属性。<br /><br /> 当`False`，系统将仅编码使用由指示的方法的附件`Encoding`属性。 (始终编码附件时所使用的方法由发送管道`Encoding`属性。)默认情况下，当将此属性设置为`False`，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]的 quoted printable 格式进行编码消息 （RNIF 2.01，RNIF 1.1 中的三个部分中的四个部分） 的其他部分。|  
 |**协议**|**编码**|用于将所有部分都编码的协议 (如果**将所有部分都都编码**框是`True`) 或附件 (如果**将所有部分都都都编码**框是`False`)。<br /><br /> 可以是**8 位**， **base 64** （默认值），或**quoted printable**。|  
