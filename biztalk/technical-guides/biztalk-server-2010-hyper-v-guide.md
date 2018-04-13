@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 2010 Hyper V 指南 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 2010 Hyper V 指南 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c38ecdd-de72-41d9-b639-2aa6bbfee917
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/01/2017
   
  潜在的成本节省具有提示 IT 部门能够评估新的和现有的应用程序，以确定适用于服务器虚拟化候选项。 最这样的计算，以期发现虚拟化的总成本。 虚拟化的总成本是硬件和 IT 运营的资金成本并相比可达成物理环境中的性能的虚拟化的性能开销的总数。 本指南重点介绍专门的虚拟化性能方面。  
   
- 从 Windows Server 2008 开始，使用 HYPER-V 技术的服务器虚拟化已被操作系统的组成部分。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V 提供了可靠且经过优化的虚拟化解决方案，从而使组织能够提高服务器利用率并降低成本。 加上的新功能，如实时迁移功能、 扩展的处理器和内存支持为主机系统，支持动态虚拟机存储，它允许组织整合到单个物理服务器上的工作负荷，并为组织正在整合服务器以及开发和测试环境很好的解决方案。  
+ 从 Windows Server 2008 开始，使用 HYPER-V 技术的服务器虚拟化已由操作系统的组成部分。 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V 提供了可靠且经过优化的虚拟化解决方案，从而使组织能够提高服务器利用率并降低成本。 加上的新功能，如实时迁移功能、 扩展的处理器和内存支持为主机系统，支持动态虚拟机存储，它允许组织整合到单个物理服务器上的工作负荷，并为组织正在整合服务器以及开发和测试环境很好的解决方案。  
   
  BizTalk Server 利用作为的一部分包括的最新的虚拟化改进[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V，可能会导致降低通过生产服务器合并和业务连续性管理，以及多个动态创建的成本IT 基础结构。 聚类分析功能，而无需其他软件或硬件的多站点群集环境中部署的 BizTalk Server。 HYPER-V 提供了支持的虚拟化实例上运行的 BizTalk Server 几个实例[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]。 服务器虚拟化使 BizTalk 客户能够将未充分利用的资源整合以安全的方式来尽量减少 BizTalk 部署的硬件占用空间。  
   

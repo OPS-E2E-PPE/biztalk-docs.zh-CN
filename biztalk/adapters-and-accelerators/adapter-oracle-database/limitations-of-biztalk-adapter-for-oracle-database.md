@@ -55,9 +55,9 @@ ms.lasthandoff: 09/20/2017
   
 -   对于采用十进制值的 Oracle 数据类型，ODP.NET 不引发异常如果输入的值包含字母字符。 因为[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用与 Oracle 数据库时，适配器 ODP.NET 太不会引发异常时传递字母字符。 例如：  
   
-    -   传递插入操作的值"54r"并不会引发异常;而被插入的值"54"。  
+    -   传递插入操作的值"54r"并不会引发异常;而插入的值"54"。  
   
-    -   将值"r54"传递的插入操作不会引发异常;而被插入的值"0"。  
+    -   将值"r54"传递的插入操作不会引发异常;而插入的值"0"。  
   
 -   鉴于 ODP.NET 限制，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不支持重载过程使用强类型和弱类型化的 REF CURSOR 的使用。 在内部，该适配器将这两个强类型和弱类型 REF CURSOR 视为只 REF CURSOR。  
   
