@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 2df2cb82508a12e8e8d279204130d2deedd744f4
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>步骤 3： 创建构建并发布定义
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 03/28/2018
         * **更新现有的 BizTalk 应用程序**： 将更改，如架构，追加到已运行的应用程序。 它不需要应用程序完全重新部署。
         * **安装 BizTalk Server 应用程序**:[安装应用程序](../core/how-to-install-a-biztalk-application.md)，然后输入的 BizTalk 管理计算机的名称和部署包路径。
 
-        ![Deploy operations](../core/media/vsts-deploy-operations.png)
+     ![部署操作](../core/media/vsts-deploy-operations.png)
 
     **应用程序名称**： 您输入的文本将是在 BizTalk 管理的应用程序名称。 执行**不**输入 BizTalk 应用程序 1。
 

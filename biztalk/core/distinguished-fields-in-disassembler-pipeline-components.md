@@ -13,15 +13,15 @@ helpviewer_keywords:
 - BizTalk Framework Disassembler [pipeline component], distinquished fields
 - XML Disassembler [pipeline component], distinquished fields
 ms.assetid: 7e51d2fe-0004-4a7b-9055-bd41e8a4b7ab
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 20a9c79050b4489238ed94444eaebf8c3dac79d9
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>反汇编程序中的可分辨的字段管道组件
 通过 XML 拆装器管道组件、BizTalk 框架拆装器管道组件或平面文件拆装器管道组件，可将架构中定义的可分辨字段写入消息上下文中，格式如下：  
@@ -67,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
  XML 拆装器在消息上下文中写入可分辨字段，如下如示：  
   
- 在上下文的属性名称:"/ * [本地名称 （) = PO 和 namespace-uri() =http://SendHtmlMessage.PO'] /\*[本地名称 （) = 价格和 namespace-uri() =']"  
+ 在上下文的属性名称： `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`  
   
  属性的 Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   

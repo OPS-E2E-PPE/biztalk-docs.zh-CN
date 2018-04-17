@@ -7,23 +7,18 @@ ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords:
-- BPEL4WS, restrictions
-- BPEL4WS, importing
-- BPEL4WS, orchestrations
-- orchestrations, BPEL4WS
 ms.assetid: 3626fcb9-8e7d-4812-a0c9-bde6e7954ec8
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 9e82dd80e280eff39ff5c1678b5c9751e378ee1b
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-import-bpel4ws"></a>如何导入 BPEL4WS
+# <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server 中的导入 BPEL4WS
 可以从现有的 BPEL4WS 进行导入以创建业务流程。  
   
 > [!IMPORTANT]
@@ -31,7 +26,7 @@ ms.lasthandoff: 03/28/2018
   
  有关如何导入 BPEL4WS 的示例，请参阅[BPEL 导入 （BizTalk Server 示例）](../core/bpel-import-biztalk-server-sample.md)。  
   
-### <a name="to-import-bpel4ws-into-an-orchestration"></a>将 BPEL4WS 导入业务流程  
+## <a name="import-bpel4ws-into-an-orchestration"></a>导入 BPEL4WS 到业务流程  
   
 1.  创建一个新的项目。  
   
@@ -69,7 +64,7 @@ ms.lasthandoff: 03/28/2018
     </element>  
     ```  
   
-     XPath 的 / * [本地名称 （) = 根和 namespace-uri() =http://BizTalk_Server_Project3.Schema1'] /\*[本地名称 （) = promotedField 和 namespace-uri() =']  
+     `XPath - /*[local-name()='Root' and namespace-uri()='http://BizTalk_Server_Project3.Schema1']/\*[local-name()='promotedField' and namespace-uri()='']` 
   
     |规范化 XPath|非规范化 XPath|  
     |---------------------|--------------------------|  
