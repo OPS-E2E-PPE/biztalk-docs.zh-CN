@@ -1,5 +1,5 @@
 ---
-title: 冲突解决程序和适配器提供程序框架 |Microsoft 文档
+title: ESB 冲突解决程序和适配器提供程序框架 |Microsoft 文档
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -8,15 +8,15 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb7ea42e-b32c-40a8-b36b-c349f56f6edd
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: a350ac19ac1fa95ffb8eb6782380bda78a457b75
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>冲突解决程序和适配器提供程序框架
 冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态解析终结点，并设置出站适配器属性。 后一个冲突解决程序组件解析终结点 （例如，使用通用、 描述、 发现和集成 [UDDI] 看起来出站 Web 服务终结点），适配器提供程序组件设置的已注册 BizTalk Server 特定属性适配器。 例如，WCF BasicHttp 适配器提供程序负责设置 BizTalk 特定消息终结点将使用特定的 BizTalk adapter; 的 URI 的上下文属性FTP 适配器提供程序负责属性特定于设置 FTP 适配器。  
@@ -36,11 +36,11 @@ ms.lasthandoff: 03/23/2018
   
  连接字符串的示例如下：  
   
--   **STATIC**  
+-   **静态**  
   
      STATIC:\\\TransportType=;  
   
-     TransportLocation=http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
+     TransportLocation =http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
   
      Action=;  
   
@@ -64,9 +64,9 @@ ms.lasthandoff: 03/23/2018
   
 -   **XPATH**  
   
-     \\\TransportType=;  
+     XPATH:\\\TransportType=;  
   
-     TransportLocation = /*[本地名称 （) = OrderDoc 和 namespace-uri() =http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[本地名称 （) = 'ID' 和 namespace-uri() =http://globalbank.esb.dynamicresolution.com/northamericanservices/];  
+     `TransportLocation=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='ID' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];`  
   
      Action=;  
   
@@ -76,10 +76,10 @@ ms.lasthandoff: 03/23/2018
   
      MessageExchangePattern=;  
   
-     TargetNamespace=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='customerName' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
+     `TargetNamespace=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='customerName' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];`  
   
      TransformType=;  
-  
+
 -   **BRE**  
   
      BRE:\\\policy=GetCanadaEndPoint;  
@@ -104,7 +104,7 @@ ms.lasthandoff: 03/23/2018
   
 -   **路线静态**  
   
-     ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
+     路线静态：\\\name=TwoWayTestItinerary;  
   
      version=;  
   
@@ -114,23 +114,23 @@ ms.lasthandoff: 03/23/2018
   
      TransportLocation={mail}  
   
-     Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
+     筛选器 = (&(objectClass=User) (| (userPrincipalName =yourname@domain.com)));  
   
      SearchRoot=;  
   
      SearchScope=Subtree;  
   
-     EndpointConfig = Subject = 路线测试消息到 {邮件}&amp;  
+     EndpointConfig = Subject = {邮件} 到路线测试消息 （& a) 
   
-     SMTPAuthenticate=0&amp;  
+     SMTPAuthenticate = 0 （& a)
   
-     SMTPHost=127.0.0.1&amp;  
+     SMTPHost = 127.0.0.1 （& a)
   
-     From=test@globalbank.com&amp;  
+     从 =test@globalbank.com（& a)
   
-     DeliveryReceipt=false&amp;  
+     DeliveryReceipt = false （& a)
   
-     MessagePartsAttachments=0&amp;  
+     MessagePartsAttachments = 0 （& a)
   
      ReadReceipt=false;  
   

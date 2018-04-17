@@ -1,22 +1,23 @@
 ---
-title: "使用 SQL Server Alwayson 可用性组的高可用性 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
+title: 使用 SQL Server Alwayson 可用性组的高可用性 |Microsoft 文档
+description: 组上不同节点，以便获得一个高度可用 (HA) 解决方案，使用 SQL Server 始终上可用组 (AG)，包括系统要求和限制的 BizTalk Server 数据库。 始终在可用性组要求 Windows Server 故障转移群集 (WSFC)。
+ms.custom: ''
+ms.date: 04/10/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4511a578-77d2-49ee-99bd-f0406ad625d0
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d065013cb4975e6d37e2ab50211c5207852ece64
-ms.sourcegitcommit: 6fe505d37e81dc2da43f89548e8977b60a6f5dbd
+ms.openlocfilehash: 5e7bc583cf64ab822cd785e73b3994e7f8e33a75
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>使用 SQL Server Alwayson 可用性组的高可用性
 配置使用 SQL Server AlwaysOn 可用性组的高可用性。
@@ -259,7 +260,7 @@ BizTalk Server 实现数据库备用功能通过数据库使用日志传送。 B
 * 可用性组内不管理登录名、 SQL 代理作业，SQL 数据库邮件配置文件和帐户。 这要求手动修改，以确保它们对主副本运行的作业中。 
 * SQL Server Analysis Services 和 SQL Server Integration Services 将不参与可用性组。 而不从 SQL Server 此支持，没有这些 Azure 虚拟机中的 HA 解决方案。 BizTalk Server BAM 功能都依赖于这些服务。 
 * 可用性组不支持在相同的 SQL 实例上的数据库之间的 MSDTC。 因此，最小的 8 SQL 实例所需配置 BizTalk。 
-* 若要解决 MSDTC 可以使用至少两个服务器托管四个 SQL 实例每个配置可用性组，BizTalk 数据库中的限制。 但是，在 Azure 虚拟机中，ILB 不支持多个 IP 地址。 这将强制我们能够在单独服务器上创建每个 SQL 实例。 
+* 若要解决 MSDTC 可以使用至少两个服务器托管四个 SQL 实例每个配置可用性组，BizTalk 数据库中的限制。 你还可以使用[与 Azure 负载平衡器的多个 IP 地址](https://docs.microsoft.com/azure/load-balancer/load-balancer-multivip-overview)。 因此，如果你想要在一台服务器上的端口 1433年上使用四个默认 SQL 实例，您需要四个 IP 地址。 如果你是限于一个 IP 地址，并且你想要承载同一服务器上的多个 SQL 实例，然后务必确保为每个 SQL 实例使用一个自定义端口。 
 * BizTalk Server 不能使用只读路由。 
 * BizTalk Server 不会设置 `MultiSubnetFailover` 连接属性。 
 * 使用日志传送的 BizTalk 备份作业将始终针对主副本而不考虑对可用性组设置的备份首选项。 
