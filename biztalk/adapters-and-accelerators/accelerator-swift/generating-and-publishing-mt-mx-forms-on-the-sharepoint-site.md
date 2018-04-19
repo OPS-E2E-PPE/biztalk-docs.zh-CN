@@ -64,7 +64,7 @@ ms.lasthandoff: 04/18/2018
   
     -   如果要生成 MT InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   如果要生成 MX InfoPath 窗体，请键入：  **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageName\>**  
+    -   如果要生成 MX InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageName\>**  
   
          这将有助于标识与相应的模板消息实例。  
   

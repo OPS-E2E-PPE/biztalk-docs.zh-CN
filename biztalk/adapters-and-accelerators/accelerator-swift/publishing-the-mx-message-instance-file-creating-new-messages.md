@@ -33,4 +33,4 @@ ms.lasthandoff: 04/18/2018
   
 6.  在上载文档窗口中，单击**确定**。  
   
-7.  新建 SWIFT MX 消息中： \<MessageType\>窗口中的，Namespace 框中，键入 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageType\>**，然后单击**确定**.
+7.  新建 SWIFT MX 消息中： \<MessageType\>窗口中的，Namespace 框中，键入 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageType\>** ，然后单击**确定**.
