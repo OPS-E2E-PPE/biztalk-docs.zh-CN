@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuring, WCF services
 - WCF Service Publishing Wizard
 ms.assetid: f51b86c0-8c19-453d-a66d-3f373e9f096e
-caps.latest.revision: ''
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>如何配置使用 BizTalk WCF 服务发布向导发布的 WCF 服务
 使用 BizTalk WCF 服务发布向导发布 WCF 服务之后，必须对其进行正确配置。 本主题介绍如何配置发布的 WCF 服务。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 03/23/2018
 7.  如果你未选择 **创建 BizTalk 接收位置** 选项时创建 WCF 服务，在 **传输属性** 对话框中，单击 **常规** 选项卡。上**常规**选项卡上，键入此接收中的位置的 URI**地址**文本框。 指定虚拟目录以及上一步骤中 BizTalk WCF 服务发布向导生成的 .svc 文件名，例如 /path/service.svc。  
   
     > [!NOTE]
-    >  **地址** 属性应以正斜杠 （"/"） 开头，以".svc"结尾。 **地址** 属性必须包含协议方案、 计算机名或端口号，如 http://host:port。 只能将虚拟目录路径用于该属性。 WCF 服务标记文件的扩展名必须为 .svc。  
+    >  **地址** 属性应以正斜杠 （"/"） 开头，以".svc"结尾。 **地址**属性必须包含协议方案、 计算机名或端口号如http://host:port。 只能将虚拟目录路径用于该属性。 WCF 服务标记文件的扩展名必须为 .svc。  
   
      ![WCF 的一般选项卡&#45;BasicHttp 适配器](../core/media/1126fa6a-e3e9-44ad-aeb0-90c78226aeeb.gif "1126fa6a-e3e9-44ad-aeb0-90c78226aeeb")  
   

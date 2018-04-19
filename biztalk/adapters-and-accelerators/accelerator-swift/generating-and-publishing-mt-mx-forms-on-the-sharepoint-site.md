@@ -8,15 +8,15 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4adf7117-11ad-4a8e-8d6a-fd78c5e496a3
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1c8bd8248a916d1e98571551a8561119b6377329
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成和发布 SharePoint 站点上的 MT/MX 窗体
 **若要生成和发布 SharePoint 站点上的 MT/MX 窗体：**  
@@ -50,7 +50,7 @@ ms.lasthandoff: 03/23/2018
   
 12. 在发布向导窗口中，选择**到网络位置**单击**下一步**。  
   
-13. 在窗体模板路径和文件名称文本框中，键入**http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn**和类型 **\<MessageType\>**窗体模板中将文本框中，然后单击**下一步**。  
+13. 在窗体模板路径和文件名称文本框中，键入 **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**和类型**\<MessageType\>**窗体中模板名称文本框中，然后单击**下一步**。  
   
 14. 单击“下一步” 。  
   
