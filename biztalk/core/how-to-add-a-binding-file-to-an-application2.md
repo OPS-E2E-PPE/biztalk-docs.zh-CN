@@ -1,23 +1,23 @@
 ---
-title: "将绑定文件添加到应用程序 |Microsoft 文档"
-description: "添加使用 BizTalk Server 管理的绑定文件或在 BizTalk Server 中使用命令提示符"
-ms.custom: 
+title: 将绑定文件添加到应用程序 |Microsoft 文档
+description: 添加使用 BizTalk Server 管理的绑定文件或在 BizTalk Server 中使用命令提示符
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1543ee5f-9ae4-4683-b6fe-ee84028c381d
-caps.latest.revision: 
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2f6d2a999be4a12860616bc92f3086b37dbd265f
-ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="add-a-binding-file-to-an-application"></a>将绑定文件添加到应用程序
 

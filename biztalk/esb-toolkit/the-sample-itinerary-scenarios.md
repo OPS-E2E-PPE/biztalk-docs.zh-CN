@@ -1,22 +1,22 @@
 ---
-title: "示例路线方案 |Microsoft 文档"
-ms.custom: 
+title: 示例路线方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d438580-2b24-493c-a7d9-27632a75459c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c9359a6fb3d0ce4d4f0d8fbd787c0d6a30f0f499
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="the-sample-itinerary-scenarios"></a>示例路线方案
 下表列出路线入口示例中包含的所有预定义的路线文件。 这些位于 \Source\Samples\Itinerary\Itineraries 文件夹中。  

@@ -1,23 +1,23 @@
 ---
-title: SFTP Adapter | Microsoft Docs
-description: "创建或配置接收位置和发送端口使用 SFTP 适配器在 BizTalk Server 中，包括使用 SFTP 适配器的常见问题解答"
-ms.custom: 
+title: SFTP 适配器 |Microsoft 文档
+description: 创建或配置接收位置和发送端口使用 SFTP 适配器在 BizTalk Server 中，包括使用 SFTP 适配器的常见问题解答
+ms.custom: ''
 ms.date: 02/26/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f64c4c8-64a0-4e43-9660-b5c2d75d28aa
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0d28c3b453ab3e704ddbb06ed42b23dc641a6711
-ms.sourcegitcommit: 3bcf85356d43c3502e61fa801316dc12a4547406
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sftp-adapter"></a>SFTP 适配器
 BizTalk Server 包括 **SFTP** 适配器发送和接收来自使用 SSH 文件传输协议的安全 FTP 服务器的消息。 本主题包括配置的步骤 **SFTP** 接收位置，并配置 SFTP 发送端口来接收和从安全的 FTP 服务器发送消息。 它还包括常见的问题和答案。
@@ -178,7 +178,7 @@ BizTalk Server 2013 R2 和以前的版本不支持 WinSCP。
 |SFTP 适配器是否支持 256 位加密？|支持。SFTP 适配器支持 256 位加密。 支持的加密算法包括︰<br /><br /> -AES 加密︰ 256 位、 192 位或 128 位 SDCTR 或 CBC<br /><br /> -3DES (三重 DES) 加密︰ 168 位 SDCTR 或 CBC|  
 |适配器支持哪些 SSH 版本？|仅 SSH2。 不能与具有 SSH1 版本的 SFTP 服务器建立连接。|  
 |文件掩码是否区分大小写？|否。 *.txt 和 \*。TXT 同样适用。 请安装 BizTalk Server 2013 的最新累积更新。 BizTalk Server 2013 RTM 版本具有区分大小写的文件掩码。|  
-|导出绑定提供了空密码字段。 在尝试通过导入这些绑定创建接收位置时，要进行的所有更改是什么？|通过编辑密码字段编辑绑定文件。 此外，在 `<Password vt="1">MySecretPassword</Password>`, ，**vt ="1"** 指示 null 值。 更改，则为 **vt ="8"**, ，指示一个字符串。 例如：<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 有关更多详细信息，请参阅 [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum (v=vs.100).aspx](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
+|导出绑定提供了空密码字段。 在尝试通过导入这些绑定创建接收位置时，要进行的所有更改是什么？|通过编辑密码字段编辑绑定文件。 此外，在 `<Password vt="1">MySecretPassword</Password>`, ，**vt ="1"** 指示 null 值。 更改，则为 **vt ="8"**, ，指示一个字符串。 例如：<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 有关更多详细信息，请参阅 [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum(v=vs.100).aspx](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
 |如何指定文件路径？|通常情况下，采用 `/folder/pathname` 格式指定路径。 但是，不同的服务器需要不同的格式，带或不带前导或尾随斜杠。 因此，你还可以进行以下尝试：<br /><br /> -                   `/folder/pathname`<br /><br /> -                   `/folder/pathname/`<br /><br /> -                   `folder/pathname`<br /><br /> -                   `folder/pathname/`|  
   
 

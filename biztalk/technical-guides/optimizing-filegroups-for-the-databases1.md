@@ -1,22 +1,22 @@
 ---
-title: "优化文件组的数据库 |Microsoft 文档"
-ms.custom: 
+title: 优化文件组的数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7dbed4d-95d6-4a41-a69e-737a6f2f5a82
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6df4f1213ed35c06b14ae127cf0593abfdd8ff35
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>数据库优化文件组
 文件输入/输出 (I/O) 争用经常是限制因素或在生产 BizTalk Server 环境中的形成瓶颈。 BizTalk Server 是一个非常数据库密集型应用程序和 BizTalk Server 使用的 SQL Server 数据库又是非常文件 I/O 密集型。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/01/2017
   
  进行最佳使用的文件和 SQL Server 中的文件组功能已被证实将有效地满足文件 IO 瓶颈，并改进在 BizTalk Server 解决方案中的整体性能。 此优化仅应由有经验的 SQL Server 数据库管理员和 BizTalk Server 数据库已正确备份仅后的全部完成。 应该在 BizTalk Server 环境中的所有 SQL Server 计算机上执行此优化。  
   
- 可以利用 SQL Server 文件和文件组，来提高数据库性能，因为此功能允许数据库创建跨多个磁盘、 多个磁盘控制器或 RAID （独立磁盘冗余阵列） 系统。 例如，如果计算机上有四个磁盘，那么可以创建一个由三个数据文件和一个日志文件组成的数据库，每个磁盘上放置一个文件。 根据访问数据时，四个读/写磁头可以同时访问并行中的数据。 这极大地加快数据库操作。 有关实现 SQL Server 磁盘的硬件解决方案的详细信息，请参阅"中的数据库性能"SQL Server 联机丛书在[http://go.microsoft.com/fwlink/?LinkID=71419](http://go.microsoft.com/fwlink/?LinkID=71419)。  
+ 可以利用 SQL Server 文件和文件组，来提高数据库性能，因为此功能允许数据库创建跨多个磁盘、 多个磁盘控制器或 RAID （独立磁盘冗余阵列） 系统。 例如，如果计算机上有四个磁盘，那么可以创建一个由三个数据文件和一个日志文件组成的数据库，每个磁盘上放置一个文件。 根据访问数据时，四个读/写磁头可以同时访问并行中的数据。 这极大地加快数据库操作。 有关实现 SQL Server 磁盘的硬件解决方案的详细信息，请参阅"数据库性能"SQL Server 联机丛书中在[ http://go.microsoft.com/fwlink/?LinkID=71419 ](http://go.microsoft.com/fwlink/?LinkID=71419)。  
   
  此外，文件和文件组中启用数据放置，因为可以在特定的文件组中创建表。 这提高了性能，因为对于给定的表的所有文件 i/o 操作可以都定向到特定的磁盘。 例如，常用的表可以放置中的文件组，位于一个磁盘上的文件和其他不太常访问的表，在数据库可以位于另一个文件，位于第二个磁盘上的组中的不同文件。  
   

@@ -1,32 +1,32 @@
 ---
-title: "使用可分辨的字段和属性字段 |Microsoft 文档"
-ms.custom: 
+title: 使用可分辨的字段和属性字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, distinquished fields
 - messages, properties
 ms.assetid: 264ee15e-be9a-4ba2-9c61-a1570b20378e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 18b5d5ee3b29c068b3a37d248b9fb20f07bdfbb2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="using-distinguished-fields-and-property-fields"></a>使用可分辨的字段和属性字段
 可分辨字段是具有特殊作用的消息数据，主要用于决策或处理业务流程中的数据。  
   
  消息属性或者是数据（消息本身的内容），或者是元数据（与消息有关的上下文信息，例如时间戳或路由信息）。 您可以使用系统定义的消息上下文属性或传输上下文属性，或者可以通过引用属性架构内的架构字段来定义您自己的属性。 属性用于订阅和相关。  
   
--   可以通过使用作为可分辨的字段或属性字段中指定架构中的字段**升级属性**从编辑器内的对话框。 有关详细信息，请参阅[升级属性](../core/promoting-properties.md)  
+-   可以通过使用作为可分辨的字段或属性字段中指定架构中的字段 **升级属性** 从编辑器内的对话框。 有关详细信息，请参阅[升级属性](../core/promoting-properties.md)  
   
 -   您可以通过使用 DistinguishedField 属性修饰 .NET 类型中的字段来将这一字段指定为可分辨字段，或者通过 Property 属性将该字段指定为属性字段。  
   
@@ -41,7 +41,7 @@ MyMessage.MyRecord.MySubrecord.MyDistinguishedField
  一旦您将某一字段添加到某一属性架构后，就可以在含代码的业务流程和筛选器表达式中访问其值。 有关属性架构的详细信息，请参阅[属性架构](../core/property-schemas.md)。  
   
 > [!NOTE]
->  消息内容或数据属性是实质上是对基础数据的快捷方式： 如果你修改属性，将修改的数据，反之亦然。  
+>  消息内容或数据属性是实质上是对基础数据的快捷方式︰ 如果你修改属性，将修改的数据，反之亦然。  
   
  消息属性通过消息名称后随括号中的命名空间（架构）和属性名称引用：  
   
@@ -67,4 +67,4 @@ MyMessage2(*)=MyMessage1(*);
  [提升属性](../core/promoting-properties.md)   
  [使用接收消息形状使用筛选器](../core/using-filters-with-the-receive-message-shape.md)   
  [在业务流程中使用消息](../core/using-messages-in-orchestrations.md)   
- [关于 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)
+ [有关 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)

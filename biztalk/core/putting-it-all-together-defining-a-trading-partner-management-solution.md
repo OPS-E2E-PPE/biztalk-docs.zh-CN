@@ -1,22 +1,22 @@
 ---
-title: "综合： 定义一个贸易合作伙伴管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 综合： 定义一个贸易合作伙伴管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4219312a-c4b5-45f3-b77b-d5cc4f1a1ca4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ea32fba8e9e57d7a0549a680b06e08d5bf8e087f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="putting-it-all-together-defining-a-trading-partner-management-solution"></a>综合： 定义一个贸易合作伙伴管理解决方案
 既然我们已经了解了构建 TPM 解决方案所需的不同类型的组件，现在让我们再了解一下典型 TPM 解决方案流以及不同的生成块如何一起工作。 此部分还列出了一些用于对 TPM 解决方案建模的最佳做法。  

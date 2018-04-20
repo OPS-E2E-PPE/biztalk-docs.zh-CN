@@ -1,22 +1,22 @@
 ---
-title: "自动执行生成过程 |Microsoft 文档"
-ms.custom: 
+title: 自动执行生成过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 995dac20-82a1-46ed-b8a3-0aa6182cb821
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d62380146f0bfba188843ed0e022340d88fcaceb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automating-the-build-process"></a>自动执行生成过程
 自动的生成过程编译，部署并按常规、 预先确定的时间间隔对项目的最新源代码然后运行生成验证测试 (Bvt)。 然后"生成报告，"详细信息是成功还是失败的生成过程，这是向项目利益干系人传送至。 生成报告分析以确定项目的方面需要注意和如果项目应将其回滚到以前的版本/生成。  
@@ -54,9 +54,9 @@ ms.lasthandoff: 12/01/2017
 > [!NOTE]  
 >  使用此工具不支持由 Microsoft 和 Microsoft 则没有此程序的适用性的保证。 使用此程序风险自负。  
   
- 有关自动执行使用 Microsoft 测试管理器进行测试的详细信息，请参阅主题[运行自动测试](http://go.microsoft.com/fwlink/?LinkID=208368)(http://go.microsoft.com/fwlink/?LinkID=208368) 在 Visual Studio 2010 联机文档  
+ 有关自动执行使用 Microsoft 测试管理器进行测试的详细信息，请参阅主题[运行自动测试](http://go.microsoft.com/fwlink/?LinkID=208368)(http://go.microsoft.com/fwlink/?LinkID=208368) Visual Studio 2010 联机文档中  
   
- 有关自动执行生成过程使用 Visual Studio 2010 的详细信息，请参阅[生成应用程序](http://go.microsoft.com/fwlink/?LinkID=208369)（超链接"http://go.microsoft.com/fwlink/?LinkID = 208369"http://go.microsoft.com/fwlink/?LinkID = 208369) 中的 Visual Studio 2010 文档。  
+ 有关自动执行生成过程使用 Visual Studio 2010 的详细信息，请参阅[生成应用程序](http://go.microsoft.com/fwlink/?LinkID=208369)(超链接"http://go.microsoft.com/fwlink/?LinkID=208369" http://go.microsoft.com/fwlink/?LinkID=208369) Visual Studio 2010 文档中。  
   
 ## <a name="build-verification-testing"></a>生成验证测试  
  生成验证测试通常包含下列元素：  
@@ -76,7 +76,7 @@ ms.lasthandoff: 12/01/2017
   
  这一点至关重要，功能测试旨在涵盖通过你的解决方案的所有可能路径。 这应包括这些方案不只希望在生产中，但也失败路径和异常处理路径已实现但永远不会希望使用 – 一个短语通常用于描述此测试是否存在"错误天方案"。 你应确保所有的业务流程、 所有允许的消息类型和所有代码分支都执行的功能测试套件。 下列各节描述开发正值和负值功能测试用例以涵盖所有代码路径。  
   
- 有关应投入生产，BizTalk Server 解决方案之前实现的其他测试的类别和有关功能测试的详细信息，请参阅主题[清单： 测试操作的准备情况](http://go.microsoft.com/fwlink/?LinkId=160138)中在 BizTalk Server 2010 操作指南[http://go.microsoft.com/fwlink/?LinkId=160138](http://go.microsoft.com/fwlink/?LinkId=160138)。  
+ 有关应投入生产，BizTalk Server 解决方案之前实现的其他测试的类别和有关功能测试的详细信息，请参阅主题[清单： 测试操作的准备情况](http://go.microsoft.com/fwlink/?LinkId=160138)中在 BizTalk Server 2010 操作指南[ http://go.microsoft.com/fwlink/?LinkId=160138 ](http://go.microsoft.com/fwlink/?LinkId=160138)。  
   
 ### <a name="positive-tests"></a>正测试  
   

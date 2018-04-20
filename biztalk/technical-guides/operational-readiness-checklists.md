@@ -1,22 +1,22 @@
 ---
-title: "操作的准备工作核对清单 |Microsoft 文档"
-ms.custom: 
+title: 操作的准备工作核对清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c308a876-9872-43b3-a1fb-76e81396612f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f9e9297e5539fd95f316ebbf6239a5d017ec4ecf
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="operational-readiness-checklists"></a>操作的准备工作核对清单
 操作的准备情况清单包含应考虑的建议和在 BizTalk 解决方案部署到生产环境之前应执行的任务。 这些清单包括用于配置必备软件，提高可用性，信息监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，并用于测试的步骤。  
@@ -59,22 +59,22 @@ ms.lasthandoff: 10/17/2017
   
 ## <a name="next-steps"></a>后续步骤
   
--   [清单： BizTalk Server 入门](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)  
+-   [清单：BizTalk Server 入门](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)  
   
--   [清单： 配置 Windows Server](../technical-guides/checklist-configuring-windows-server.md)  
+-   [清单：配置 Windows Server](../technical-guides/checklist-configuring-windows-server.md)  
   
--   [清单： 配置 Internet Information Services](../technical-guides/checklist-configuring-internet-information-services.md)  
+-   [清单：配置 Internet Information Services](../technical-guides/checklist-configuring-internet-information-services.md)  
   
--   [清单： 配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)  
+-   [清单：配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)  
   
--   [清单： 配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)  
+-   [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)  
   
--   [清单： 会提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)  
+-   [清单：提供高可用性容错或负载均衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)  
   
--   [清单： 提高可用性与灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)  
+-   [清单：提供高可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)  
   
--   [清单： 监视操作的准备情况](../technical-guides/checklist-monitoring-operational-readiness.md)  
+-   [清单：监视操作准备就绪](../technical-guides/checklist-monitoring-operational-readiness.md)  
   
--   [清单： 维护和故障排除 BizTalk Server 数据库](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)  
+-   [清单：维护 BizTalk Server 数据库并进行故障排除](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)  
   
--   [清单： 测试操作的准备情况](../technical-guides/checklist-testing-operational-readiness.md)
+-   [清单：测试操作准备情况](../technical-guides/checklist-testing-operational-readiness.md)

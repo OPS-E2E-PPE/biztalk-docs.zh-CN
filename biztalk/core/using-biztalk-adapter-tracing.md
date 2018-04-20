@@ -1,11 +1,11 @@
 ---
-title: "使用 BizTalk 适配器跟踪 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk 适配器跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Adapter Trace Utility, installing
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Adapter Trace Utility, running
 - enabling, Adapter Trace Utility
 ms.assetid: ddc6b2c7-9dee-43c1-950b-8fd580bfcb26
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="using-biztalk-adapter-tracing"></a>使用 BizTalk 适配器跟踪
 本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/01/2017
 1.  从 [适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新](http://go.microsoft.com/fwlink/?LinkId=128279) 网站下载跟踪日志工具。  
   
     > [!NOTE]
-    >  即使您运行的是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，也要安装 6.0 版本的 SDK。 如果你安装**Windows Server 2008 的 Windows SDK 和.NET Framework 3.5**版本 (v。 6.1)，它将不安装跟踪日志工具。  
+    >  即使您运行的是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，也要安装 6.0 版本的 SDK。 如果你安装 **Windows Server 2008 的 Windows SDK 和.NET Framework 3.5** 版本 (v。 6.1)，它将不安装跟踪日志工具。  
   
 2.  通过在网页底部单击 **PSDK-x86.exe** 文件的链接，启动 **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** Web 安装程序。  
   

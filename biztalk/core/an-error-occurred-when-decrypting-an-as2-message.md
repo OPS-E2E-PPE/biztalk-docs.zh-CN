@@ -1,32 +1,32 @@
 ---
-title: "解密 AS2 消息时出错 |Microsoft 文档"
-ms.custom: 
+title: 解密 AS2 消息时出错 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bfb1d2a-c79d-4541-8a6d-bab0986f456b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 183933ae48468569cdd89f1d051f4bf961c71e05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="an-error-occurred-when-decrypting-an-as2-message"></a>解密 AS2 消息时出错
 ## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
+|產品名稱|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|產品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|事件識別碼|-|  
+|事件來源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
 |组件|AS2 引擎|  
 |符号名称|-|  
 |消息正文|解密 AS2 消息时出错。|  

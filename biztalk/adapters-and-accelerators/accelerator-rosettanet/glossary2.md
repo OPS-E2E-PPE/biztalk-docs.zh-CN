@@ -1,40 +1,40 @@
 ---
-title: "RosettaNet 快捷键 BizTalk Server 中的术语表 |Microsoft 文档"
-description: "常见术语和定义知道并了解用于 BizTalk Accelerator RosettaNet"
-ms.custom: 
+title: RosettaNet 快捷键 BizTalk Server 中的术语表 |Microsoft 文档
+description: 常见术语和定义知道并了解用于 BizTalk Accelerator RosettaNet
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d98a5ed4-adc5-4ca9-b9d9-38ab02a0bda6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: bd89d75b0d36359fcf59f7edae0bb950a7196ca7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="glossary"></a>词汇表
-[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用以下术语表术语和定义。  
+[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 使用以下术语表术语和定义。  
 
   
-## <a name="a"></a>仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，  
+## <a name="a"></a>指向  
  **应用程序适配器**  
  实现的应用程序的应用程序适配器接口。 接受传入的操作消息 （请求或响应） 上的通知机制调用的应用程序适配器。 它实现两种方法：`BeginNotify`和`EndNotify`。 公共响应方时，将调用`BeginNotify`方法，而现成可用的专用响应方时，将调用`EndNotify`方法。 调用`Notify`方法意味着消息已成功保存到 MessagesToLOB 表。  
   
  **操作 URL**  
- 到本组织传输操作消息在异步过程中，例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx 合作伙伴 URL。  
+ 到本组织传输操作消息在异步过程中，例如，合作伙伴 URL http://FabrikamServer/BTARNApp/RNIFReceive.aspx。  
   
 ## <a name="b"></a>B  
  **BizTalk Accelerator for RosettaNet**  
  给 BizTalk Server，可帮助组织构建 RosettaNet 实现框架 (RNIF) 外接程序产品-合规的解决方案。  
   
- **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理**  
+ **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 管理**  
  一个 Microsoft [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 应用程序，使用它可以描述流程模板和管理合作伙伴协议。  
   
  **BizTalk 编辑器**  
@@ -103,7 +103,7 @@ ms.lasthandoff: 09/20/2017
  由万维网联合会 (W3C) 规范，它使设计器来创建超出标准 HTML 功能的自定义的标记。 尽管 HTML 使用仅预定义的标记来描述页中的元素，XML 将使页面的开发人员定义的标记。 对于几乎任何数据项，如产品或金额，由于标记可以用于特定应用程序。 这使网页能够充当数据库记录。  
   
  **可扩展样式表语言 (XSL)**  
- 样式表的格式为 XML 文档的。 XSL 用于一样级联样式表 (CSS) 用于定义的 HTML 显示定义的 XML 的显示。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用 XSL 作为两个规范之间的转换语言。  
+ 样式表的格式为 XML 文档的。 XSL 用于一样级联样式表 (CSS) 用于定义的 HTML 显示定义的 XML 的显示。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 使用 XSL 作为两个规范之间的转换语言。  
   
 ## <a name="g"></a>G  
  **全局业务标识 (GBI)**  
@@ -187,7 +187,7 @@ ms.lasthandoff: 09/20/2017
  封装对 RosettaNet 实现 Framework 1.1 版中的交付 RosettaNet 消息。  
   
 ## <a name="s"></a>S  
- **架构**  
+ **schema**  
  XML 文件的结构的定义。 架构包含属性信息，因为它涉及到的记录和结构中的字段。  
   
  **服务的内容**  
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
  XML 文档可标识与业务消息，包括 PIP、 业务活动和操作，发送和接收服务、 贸易合作伙伴和角色关联的部分。  
   
  **信号 URL**  
- 本组织将信号消息传输的 URL。 例如，http://FabrikamServer/BTARNApp/RNIFReceive.aspx。  
+ 本组织将信号消息传输的 URL。 例如， http://FabrikamServer/BTARNApp/RNIFReceive.aspx。  
   
  **单个操作通知**  
  发起方将单个操作消息和响应方发送的进程使用消息进行回复。  
@@ -206,7 +206,7 @@ ms.lasthandoff: 09/20/2017
  特定于 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 的 XML 架构。 创建 BizTalk 编辑器中的规范，并可以基于行业标准，如 EDIFACT、 X12 和 XML，或在平面文件，例如分隔，位置，或分隔和位置。 BizTalk 映射程序使用规范，作为源规范和目标规范，打开创建地图。  
   
  **同步 URL**  
- 本组织用于建立与伙伴，例如，http://FabikamServer/BTARNApp/RNIFReceive.aspx 同步事务的 URL。  
+ 本组织用于建立与伙伴，例如，同步事务的 URL http://FabikamServer/BTARNApp/RNIFReceive.aspx。  
   
  **同步事务**  
  过程，其中发起方返回响应 （双操作） 或信号 （单次操作） 的相同的 HTTP 状态而无需关闭连接。  

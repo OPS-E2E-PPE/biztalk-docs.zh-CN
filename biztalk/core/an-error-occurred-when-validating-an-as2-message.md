@@ -1,32 +1,32 @@
 ---
-title: "验证 AS2 消息时出现错误 |Microsoft 文档"
-ms.custom: 
+title: 验证 AS2 消息时出现错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0cf97c63-2bff-4474-9cd8-f68634493dcc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 73f1c9b7cf4e444e256aadc3ade717fcf30735bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="an-error-occurred-when-validating-an-as2-message"></a>在验证 AS2 消息时出错
 ## <a name="details"></a>详细信息  
   
 |||  
 |-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
+|產品名稱|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|產品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|事件識別碼|-|  
+|事件來源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
 |组件|AS2 引擎|  
 |符号名称|-|  
 |消息正文|验证 AS2 消息时出错。 请确保使用的证书没有过时或被吊销。|  

@@ -1,28 +1,28 @@
 ---
-title: "承载模型的适配器 |Microsoft 文档"
-ms.custom: 
+title: 承载模型的适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf9a8e6b-8c8d-47ec-b2a3-aed58206121d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 645a1fcd41650c98c442549a898f7083be770842
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="adapter-hosting-model"></a>承载模型的适配器
 一般情况下在 BizTalk 服务中，Btsntsvc.exe 托管 BizTalk 适配器。 这意味着，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理适配器的生存期。 但也存在其他进程管理适配器的情况，如下所述。  
   
 ## <a name="in-process-adapters"></a>进程内适配器  
- 由管理的适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]称为进程内适配器。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为执行以下这些适配器：  
+ 由管理的适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]称为进程内适配器。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为执行以下这些适配器：  
   
 -   实例化适配器时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]启动  
   
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 -   终止的适配器上的关闭[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]服务  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将在运行时提供给适配器处理程序配置和终结点配置信息。 还指定其他配置信息，例如服务时段，它定义启用适配器以处理请求的特定时间段。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将在运行时提供给适配器处理程序配置和终结点配置信息。 还指定其他配置信息，例如服务时段，它定义启用适配器以处理请求的特定时间段。  
   
  可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或服务控制管理器手动关闭 BizTalk 服务。 如果连接到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库丢失该服务的自动回收本身。  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
 独立适配器宿主模型  
   
 ## <a name="see-also"></a>另请参阅  
- [什么是适配器 Framework？](../core/what-is-the-adapter-framework.md)
+ [适配器框架概述](../core/what-is-the-adapter-framework.md)

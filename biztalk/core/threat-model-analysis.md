@@ -1,33 +1,33 @@
 ---
-title: "威胁模型分析 |Microsoft 文档"
-ms.custom: 
+title: 威胁模型分析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - TMA, about TMA
 - TMA
 - TMA, procedure steps
 ms.assetid: dfbf46aa-0a35-4925-8718-df8591efc279
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 06f5de73434d2c3a7bf67e659c6566b530b38aeb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="threat-model-analysis"></a>威胁模型分析
 威胁模型分析 (TMA) 进行分析可帮助确定到产品、 应用程序、 网络或环境中，所带来安全风险和攻击的显示方式。 目标是确定哪些威胁需要缓解以及如何缓解的方式。  
   
- 本部分提供有关 TMA 过程的高级信息。 有关详细信息，请参阅的第 4 章*编写安全代码，第二版*、 Michael Howard 和 David LeBlanc 编著。  
+ 本部分提供有关 TMA 过程的高级信息。 有关详细信息，请参阅的第 4 章 *编写安全代码，第二版*, 、 Michael Howard 和 David LeBlanc 编著。  
   
- 下面是一些 TMA 的好处：  
+ 下面是一些 TMA 的好处︰  
   
 -   提供更好地了解你的应用程序  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   用于测试人员  
   
- 若要执行 TMA 的高级步骤有：  
+ 若要执行 TMA 的高级步骤有︰  
   
 -   步骤 1. 收集的背景信息  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 -   步骤 7. 使威胁模型设计与同步  
   
 ## <a name="step-1-collect-background-information"></a>步骤 1. 收集的背景信息  
- 要准备成功 TMA，您需要收集一些背景信息。 它可用于分析你的目标环境 （应用程序、 程序或整个基础结构），如下所示：  
+ 要准备成功 TMA，您需要收集一些背景信息。 它可用于分析你的目标环境 （应用程序、 程序或整个基础结构），如下所示︰  
   
 -   标识用例方案。 有关你的目标环境每个用例方案，标识期望你的公司在目标环境上使用目标环境中，任何限制如何。 此信息可帮助定义的讨论范围之内威胁模型，并提供对资产 （任何类型的值与你的公司，比如数据和计算机） 和入口点的指针。  
   
@@ -73,9 +73,9 @@ ms.lasthandoff: 09/20/2017
 -   创建假设每个组件所依赖的其他组件的列表。 这有助于验证跨组件假设、 操作项目和与其他团队的后续项。  
   
 ## <a name="step-2-create-and-analyze-the-threat-model"></a>步骤 2. 创建和分析的威胁模型  
- 收集的背景信息后，你应具有威胁模型会议。 请确保每个开发专业 （例如，项目经理、 开发人员和测试人员） 该至少一个成员位于会议。 请确保，提醒与会者会议的目标是要查找的威胁，不来修复它们。 在威胁模型会议中，执行以下操作：  
+ 收集的背景信息后，你应具有威胁模型会议。 请确保每个开发专业 （例如，项目经理、 开发人员和测试人员） 该至少一个成员位于会议。 请确保，提醒与会者会议的目标是要查找的威胁，不来修复它们。 在威胁模型会议中，执行以下操作︰  
   
--   检查每个用例 DFD。 对于每个用例确定：  
+-   检查每个用例 DFD。 对于每个用例确定︰  
   
     -   入口点  
   
@@ -85,15 +85,15 @@ ms.lasthandoff: 09/20/2017
   
 -   请注意所涉及的资产。  
   
--   讨论每个 DFD，并查找以下类别 DFD 中的所有条目中是否有威胁： **S**哄骗标识， **T**篡改数据， **R**epudiation， **我**璝泄露**D**的服务，用以和**E**提升的权限。  
+-   讨论每个 DFD，并查找以下类别 DFD 中的所有条目中是否有威胁︰ **S**哄骗标识， **T**篡改数据， **R**epudiation， **我**璝泄露 **D**的服务，用以和 **E**提升的权限。  
   
--   创建标识的威胁的列表。 我们建议，此列表包括以下： 标题、 （包括威胁树） 的简要说明、 资产 （资产）、 impact(s)、 风险、 缓解技术、 缓解状态和大量 bug。  
+-   创建标识的威胁的列表。 我们建议，此列表包括以下︰ 标题、 （包括威胁树） 的简要说明、 资产 （资产）、 impact(s)、 风险、 缓解技术、 缓解状态和大量 bug。  
   
     > [!NOTE]
     >  查看威胁，可以添加风险、 缓解技术和缓解状态。 不占用太多时间这些区域中在威胁模型会议过程。  
   
 ## <a name="step-3-review-threats"></a>步骤 3. 查看威胁  
- 确定威胁到你的环境后，你必须排名每种威胁的风险，并确定你想要对每种威胁做出响应。 与其他团队会议或通过电子邮件时，可以执行此操作。 您可以使用以下的效果类别来计算风险暴露程度： **D**amage 潜在， **R**eproducibility， **E**xploitability， ffected 用户和**D**iscoverability。  
+ 确定威胁到你的环境后，你必须排名每种威胁的风险，并确定你想要对每种威胁做出响应。 与其他团队会议或通过电子邮件时，可以执行此操作。 您可以使用以下的效果类别来计算风险暴露程度︰ **D**amage 潜在， **R**eproducibility， **E**xploitability， **A**ffected 用户和 **D**iscoverability。  
   
  对你按风险设置优先级的目标环境的威胁的列表后，你必须确定将如何响应每种威胁。 您的响应可以是不执行任何操作 （极少数情况下是一个不错的选择）、 用户有关的潜在问题，则发出警告，删除此问题，或解决此问题。  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  缓解技术和技术以使用计算时，你必须考虑什么合理业务的公司和你的公司有可能会影响缓解技术，若要选择的任何策略。  
   
- 完成 TMA 后，请执行以下操作：  
+ 完成 TMA 后，请执行以下操作︰  
   
 -   文档的安全模型和部署注意事项  
   

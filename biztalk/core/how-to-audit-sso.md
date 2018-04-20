@@ -1,11 +1,11 @@
 ---
-title: "如何审核 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何审核 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO], auditing
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - auditing [SSO]
 - SSO database, auditing
 ms.assetid: dc6d0726-fc31-4af2-9a23-8df9e3fc5836
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 27528cf6da53c69db4b2bc6c9e1d296472b24186
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-audit-sso"></a>如何审核 SSO
 可以使用 MMC 管理单元中或命令行设置这两种正值和负值审核级别。 审核的结果存储在事件日志和审核日志中的数据库。  
@@ -59,13 +59,13 @@ ms.lasthandoff: 11/28/2017
   
 3.  右键单击“系统” ，然后单击“属性” 。  
   
-4.  上**系统属性**对话框中，单击**审核**选项卡。  
+4.  上  **系统属性** 对话框中，单击 **审核** 选项卡。  
   
 5.  输入相应的设置，然后单击“确定” 。  
   
 ### <a name="to-audit-single-sign-on-using-the-command-line"></a>单一登录使用命令行审核  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   

@@ -1,33 +1,33 @@
 ---
-title: "MSIT： 实际迁移情景从 Gentran 5.1 到 BizTalk 2010 |Microsoft 文档"
-ms.custom: 
+title: MSIT： 实际迁移情景从 Gentran 5.1 到 BizTalk 2010 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31326e2f-fb86-4b2c-88cd-b9406695038b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1b742777c5e547078c2fa3fbf1a8d5bd8c466924
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="msit-real-world-migration-story-from-gentran-51-to-biztalk-2010"></a>MSIT： 实际迁移情景从 Gentran 5.1 到 BizTalk 2010
 BizTalk 技术文章  
   
- **MSIT： 实际迁移情景从 Gentran 5.1 到 BizTalk 2010**  
+ **MSIT：从 Gentran 5.1 迁移到 BizTalk 2010 的真实事例**  
   
- **作者：** Amit Kumar Dua、 Microsoft &#124; Banupriya Thirumaran Microsoft  
+ **作者：** Amit Kumar Dua、 Microsoft &#124; Banupriya Thirumaran、 Microsoft  
   
- **审阅者：** Mandi Ohlinger、 Microsoft &#124; Nitin Mehrotra Microsoft  
+ **审阅者：** Mandi Ohlinger、 Microsoft &#124; Nitin Mehrotra、 Microsoft  
   
- **供稿人：** Nikhil Tayal，Microsoft &#124; Anil Chandra Lingam Microsoft  
+ **供稿人：** Nikhil Tayal、 Microsoft &#124; Anil Chandra Lingam、 Microsoft  
   
  **发布日期：** 2014 年 10 月  
   

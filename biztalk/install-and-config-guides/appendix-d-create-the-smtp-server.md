@@ -1,22 +1,22 @@
 ---
-title: "附录 d： 创建 SMTP 服务器 |Microsoft 文档"
-ms.custom: 
+title: 附录 d： 创建 SMTP 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7441ba9-a498-42ec-a04d-7f2731407373
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9f4d4acc35f5cb38be5f783ee7c4017c8ada83e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="appendix-d-create-the-smtp-server"></a>附录 D：创建 SMTP 服务器
 创建供 SQL Server Database Mail 使用的 SMTP 服务器。  
@@ -151,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
   
 ## <a name="test-the-smtp-server"></a>测试 SMTP 服务器  
- 可以使用 Telnet 测试 SMTP 服务器的配置。 以下步骤使用配置的 SMTP 服务器将消息发送到电子邮件地址。 [http://support.microsoft.com/kb/153119](http://support.microsoft.com/kb/153119) 提供了 telnet 命令的说明。  
+ 可以使用 Telnet 测试 SMTP 服务器的配置。 以下步骤使用配置的 SMTP 服务器将消息发送到电子邮件地址。 [http://support.microsoft.com/kb/153119](http://support.microsoft.com/kb/153119) 提供的 telnet 命令的说明。  
   
 1.  以管理员身份打开命令窗口。
   
