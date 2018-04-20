@@ -1,49 +1,49 @@
 ---
-title: "配置回退信封属性 (EDIFACT 交换 Settngs) |Microsoft 文档"
-ms.custom: 
+title: 配置回退信封属性 (EDIFACT 交换 Settngs) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8826041e-02fa-4086-a774-d44a388f42b1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b6a141b852f85947165d3d3d4d638cf1cb10ccb0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a><span data-ttu-id="0d493-102">配置回退信封属性（EDIFACT-交换设置）</span><span class="sxs-lookup"><span data-stu-id="0d493-102">Configuring Fallback Envelope Properties (EDIFACT-Interchange Settngs)</span></span>
-<span data-ttu-id="0d493-103">本节提供有关如何配置 EDIFACT 待发邮件的信封的说明。</span><span class="sxs-lookup"><span data-stu-id="0d493-103">This section provides instructions on how to configure the envelope for outgoing EDIFACT messages.</span></span>  
+# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a><span data-ttu-id="d8396-102">配置回退信封属性（EDIFACT-交换设置）</span><span class="sxs-lookup"><span data-stu-id="d8396-102">Configuring Fallback Envelope Properties (EDIFACT-Interchange Settngs)</span></span>
+<span data-ttu-id="d8396-103">本节提供有关如何配置 EDIFACT 待发邮件的信封的说明。</span><span class="sxs-lookup"><span data-stu-id="d8396-103">This section provides instructions on how to configure the envelope for outgoing EDIFACT messages.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="0d493-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="0d493-104">Prerequisites</span></span>  
- <span data-ttu-id="0d493-105">必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。</span><span class="sxs-lookup"><span data-stu-id="0d493-105">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="d8396-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="d8396-104">Prerequisites</span></span>  
+ <span data-ttu-id="d8396-105">必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。</span><span class="sxs-lookup"><span data-stu-id="d8396-105">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
   
-### <a name="to-configure-the-interchange-envelope"></a><span data-ttu-id="0d493-106">配置交换信封</span><span class="sxs-lookup"><span data-stu-id="0d493-106">To configure the interchange envelope</span></span>  
+### <a name="to-configure-the-interchange-envelope"></a><span data-ttu-id="d8396-106">配置交换信封</span><span class="sxs-lookup"><span data-stu-id="d8396-106">To configure the interchange envelope</span></span>  
   
-1.  <span data-ttu-id="0d493-107">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 回退设置**。</span><span class="sxs-lookup"><span data-stu-id="0d493-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **EDIFACT Fallback Settings**.</span></span>  
+1.  <span data-ttu-id="d8396-107">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 回退设置**。</span><span class="sxs-lookup"><span data-stu-id="d8396-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **EDIFACT Fallback Settings**.</span></span>  
   
-2.  <span data-ttu-id="0d493-108">在**EDIFACT 回退设置**对话框中，在**EDIFACT 协议页**选项卡上，在**交换设置**部分中，单击**包络线**.</span><span class="sxs-lookup"><span data-stu-id="0d493-108">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Envelopes**.</span></span>  
+2.  <span data-ttu-id="d8396-108">在 **EDIFACT 回退设置** 对话框中，在 **EDIFACT 协议页** 选项卡上，在 **交换设置** 部分中，单击 **包络线**。</span><span class="sxs-lookup"><span data-stu-id="d8396-108">In the **EDIFACT Fallback Settings** dialog box, in the **EDIFACT Agreement Pages** tab, under the **Interchange Settings** section, click **Envelopes**.</span></span>  
   
-3.  <span data-ttu-id="0d493-109">有关**处理优先级代码 (UNB8)**，输入最少包含一个字符，最多一个字符的字母值。</span><span class="sxs-lookup"><span data-stu-id="0d493-109">For **Processing priority code (UNB8)**, enter an alphabetical value with a minimum of one character and a maximum of one character.</span></span> <span data-ttu-id="0d493-110">此字段为可选字段。</span><span class="sxs-lookup"><span data-stu-id="0d493-110">This is an optional field.</span></span>  
+3.  <span data-ttu-id="d8396-109">有关 **处理优先级代码 (UNB8)**, ，输入最少包含一个字符，最多一个字符的字母值。</span><span class="sxs-lookup"><span data-stu-id="d8396-109">For **Processing priority code (UNB8)**, enter an alphabetical value with a minimum of one character and a maximum of one character.</span></span> <span data-ttu-id="d8396-110">此字段为可选字段。</span><span class="sxs-lookup"><span data-stu-id="d8396-110">This is an optional field.</span></span>  
   
-4.  <span data-ttu-id="0d493-111">有关**通信协议 (UNB10)**，输入一个字母数字值，该值最少包含一个字符，最多 35 个字符。</span><span class="sxs-lookup"><span data-stu-id="0d493-111">For **Communication agreement (UNB10)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="0d493-112">此字段为可选字段</span><span class="sxs-lookup"><span data-stu-id="0d493-112">This is an optional field</span></span>  
+4.  <span data-ttu-id="d8396-111">有关 **通信协议 (UNB10)**, ，输入一个字母数字值，该值最少包含一个字符，最多 35 个字符。</span><span class="sxs-lookup"><span data-stu-id="d8396-111">For **Communication agreement (UNB10)**, enter an alphanumeric value with a minimum of one character and a maximum of 35 characters.</span></span> <span data-ttu-id="d8396-112">此字段为可选字段</span><span class="sxs-lookup"><span data-stu-id="d8396-112">This is an optional field</span></span>  
   
-5.  <span data-ttu-id="0d493-113">选择**测试指示器 (UNB11)**以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。</span><span class="sxs-lookup"><span data-stu-id="0d493-113">Select **Test indicator (UNB11)** to indicate that the interchange generated by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is test data.</span></span>  
+5.  <span data-ttu-id="d8396-113">选择**测试指示器 (UNB11)**以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。</span><span class="sxs-lookup"><span data-stu-id="d8396-113">Select **Test indicator (UNB11)** to indicate that the interchange generated by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is test data.</span></span>  
   
-6.  <span data-ttu-id="0d493-114">选择**应用 UNA 段 （字符串服务建议）**生成 UNA 段为要发送的交换。</span><span class="sxs-lookup"><span data-stu-id="0d493-114">Select **Apply UNA segment (String service advice)** to generate a UNA segment for the interchange to be sent.</span></span> <span data-ttu-id="0d493-115">如果选中此选项，然后**UNA6**不能为空和**UNA 6 后缀**不能为**无**。</span><span class="sxs-lookup"><span data-stu-id="0d493-115">If this option is checked, then **UNA6** cannot be empty and **UNA 6 Suffix** cannot be **None**.</span></span>  
+6.  <span data-ttu-id="d8396-114">选择 **应用 UNA 段 （字符串服务建议）** 生成 UNA 段为要发送的交换。</span><span class="sxs-lookup"><span data-stu-id="d8396-114">Select **Apply UNA segment (String service advice)** to generate a UNA segment for the interchange to be sent.</span></span> <span data-ttu-id="d8396-115">如果选中此选项，然后 **UNA6** 不能为空和 **UNA 6 后缀** 不能为 **无**。</span><span class="sxs-lookup"><span data-stu-id="d8396-115">If this option is checked, then **UNA6** cannot be empty and **UNA 6 Suffix** cannot be **None**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="0d493-116">你指定**UNA6**和**UNA6 后缀**中**字符集和分隔符**页中所述[配置回退字符集和分隔符属性 (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)。</span><span class="sxs-lookup"><span data-stu-id="0d493-116">You specify **UNA6** and **UNA6 Suffix** in the **Charset and Separators** page as described in [Configuring Fallback Charset and Separator Properties (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md).</span></span>  
+    >  <span data-ttu-id="d8396-116">你指定**UNA6**和**UNA6 后缀**中**字符集和分隔符**页中所述[配置回退字符集和分隔符属性 (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)。</span><span class="sxs-lookup"><span data-stu-id="d8396-116">You specify **UNA6** and **UNA6 Suffix** in the **Charset and Separators** page as described in [Configuring Fallback Charset and Separator Properties (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md).</span></span>  
   
-7.  <span data-ttu-id="0d493-117">选择**应用 UNG 段 （功能组标头）**创建分组段的功能组标头中传出消息。</span><span class="sxs-lookup"><span data-stu-id="0d493-117">Select **Apply UNG segments (Functional group header)** to create grouping segments in the functional group header in outgoing messages.</span></span>  
+7.  <span data-ttu-id="d8396-117">选择 **应用 UNG 段 （功能组标头）** 创建分组段的功能组标头中传出消息。</span><span class="sxs-lookup"><span data-stu-id="d8396-117">Select **Apply UNG segments (Functional group header)** to create grouping segments in the functional group header in outgoing messages.</span></span>  
   
-8.  <span data-ttu-id="0d493-118">单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。</span><span class="sxs-lookup"><span data-stu-id="0d493-118">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+8.  <span data-ttu-id="d8396-118">单击 **应用** 接受所做的更改，然后才能继续进行配置，或单击 **确定** 验证所做的更改，然后关闭对话框。</span><span class="sxs-lookup"><span data-stu-id="d8396-118">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0d493-119">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0d493-119">See Also</span></span>  
- [<span data-ttu-id="0d493-120">为交换处理配置 EDIFACT 回退协议属性</span><span class="sxs-lookup"><span data-stu-id="0d493-120">Configuring EDIFACT Fallback Agreement Properties for Interchange Processing</span></span>](../core/configuring-edifact-fallback-agreement-properties-for-interchange-processing.md)
+## <a name="see-also"></a><span data-ttu-id="d8396-119">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d8396-119">See Also</span></span>  
+ [<span data-ttu-id="d8396-120">为交换处理配置 EDIFACT 后备协议属性</span><span class="sxs-lookup"><span data-stu-id="d8396-120">Configuring EDIFACT Fallback Agreement Properties for Interchange Processing</span></span>](../core/configuring-edifact-fallback-agreement-properties-for-interchange-processing.md)
