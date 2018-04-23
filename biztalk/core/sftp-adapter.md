@@ -177,7 +177,7 @@ BizTalk Server 2013 R2 和以前的版本不支持 WinSCP。
 |对于 SSHServerHostKeyFingerPrint，应使用哪种指纹算法和格式？|你应使用服务器的密钥的 MD5 指纹格式︰ `ssh-rsa 2048 90:e4:9b:67:d9:22:a7:5f:6f:33:db:6a:b1:23:96:12`。|  
 |SFTP 适配器是否支持 256 位加密？|支持。SFTP 适配器支持 256 位加密。 支持的加密算法包括︰<br /><br /> -AES 加密︰ 256 位、 192 位或 128 位 SDCTR 或 CBC<br /><br /> -3DES (三重 DES) 加密︰ 168 位 SDCTR 或 CBC|  
 |适配器支持哪些 SSH 版本？|仅 SSH2。 不能与具有 SSH1 版本的 SFTP 服务器建立连接。|  
-|文件掩码是否区分大小写？|否。 *.txt 和 \*。TXT 同样适用。 请安装 BizTalk Server 2013 的最新累积更新。 BizTalk Server 2013 RTM 版本具有区分大小写的文件掩码。|  
+|文件掩码是否区分大小写？|否。 \*.txt 和 \*。TXT 同样适用。 请安装 BizTalk Server 2013 的最新累积更新。 BizTalk Server 2013 RTM 版本具有区分大小写的文件掩码。|  
 |导出绑定提供了空密码字段。 在尝试通过导入这些绑定创建接收位置时，要进行的所有更改是什么？|通过编辑密码字段编辑绑定文件。 此外，在 `<Password vt="1">MySecretPassword</Password>`, ，**vt ="1"** 指示 null 值。 更改，则为 **vt ="8"**, ，指示一个字符串。 例如：<br /><br /> `<Password vt="8">MySecretPassword</Password>`<br /><br /> 有关更多详细信息，请参阅 [http://msdn.microsoft.com/library/system.runtime.interopservices.varenum(v=vs.100).aspx](http://msdn.microsoft.com/library/system.runtime.interopservices.varenum\(v=vs.100\).aspx)|  
 |如何指定文件路径？|通常情况下，采用 `/folder/pathname` 格式指定路径。 但是，不同的服务器需要不同的格式，带或不带前导或尾随斜杠。 因此，你还可以进行以下尝试：<br /><br /> -                   `/folder/pathname`<br /><br /> -                   `/folder/pathname/`<br /><br /> -                   `folder/pathname`<br /><br /> -                   `folder/pathname/`|  
   

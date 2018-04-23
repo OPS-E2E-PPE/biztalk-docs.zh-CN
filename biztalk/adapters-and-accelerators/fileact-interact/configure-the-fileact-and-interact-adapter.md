@@ -94,7 +94,7 @@ ms.lasthandoff: 04/20/2018
 
 若要启用的 FileAct 和交互接收适配器，以初始化具有的值，必须在 SWIFTNet paramfile 中输入在压降中创建的合作伙伴服务器消息。 Paramfile 通常位于`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`。 配置 paramfile 后，开始**SnlReceiver.exe**。  
   
-1. 打开**SWIFTNet paramfile**。 中的位置标记为"* * *"将以下代码添加。 请注意，`AdapterType`值可以是`Interact`或`Fileact`。  
+1. 打开**SWIFTNet paramfile**。 中的位置标记为"***"将以下代码添加。 请注意，`AdapterType`值可以是`Interact`或`Fileact`。  
   
      ```spawn "snlreceiver -SagMessagePartner <Server MessagePartnerName\> -AdapterMode <AdapterType\>"```  
        

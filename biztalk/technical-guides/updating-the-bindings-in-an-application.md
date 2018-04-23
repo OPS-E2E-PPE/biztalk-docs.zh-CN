@@ -25,4 +25,4 @@ ms.lasthandoff: 04/20/2018
  如果程序集具有早期绑定端口或动态端口，而您在 BizTalk Server 管理控制台中更改了端口配置，在您使用相同版本号的程序集来更新当前程序集时这些设置将丢失。 你可以为你要更新的程序集导出绑定文件。 在更新后的程序集，可以导入应用程序的程序集，然后将其绑定文件以重新应用上一绑定导入。  
   
 ## <a name="updating-an-assembly-with-a-newer-version"></a>更新的较新版本的程序集  
- 你可以通过导出与绑定文件到单个程序集关联的绑定、 绑定和编辑文件以反映新的程序集版本，然后将程序集绑定到应用程序导入更新的程序集的版本。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkID=155000)(超链接"http://go.microsoft.com/fwlink/?LinkID=155000"http://go.microsoft.com/fwlink/?LinkID=155000)中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。
+ 你可以通过导出与绑定文件到单个程序集关联的绑定、 绑定和编辑文件以反映新的程序集版本，然后将程序集绑定到应用程序导入更新的程序集的版本。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkID=155000)(超链接"http://go.microsoft.com/fwlink/?LinkID=155000" http://go.microsoft.com/fwlink/?LinkID=155000) 中 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。
