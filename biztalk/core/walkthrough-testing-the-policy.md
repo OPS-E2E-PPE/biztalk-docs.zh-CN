@@ -184,8 +184,8 @@ ms.lasthandoff: 04/16/2018
   
 |字段名称|XPath 选择器|XPath 字段|XPath 选择器（简化形式）|XPath 字段<br /><br /> （简化形式）|  
 |----------------|--------------------|-----------------|----------------------------------------|-----------------------------------------|  
-|数量|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() =http://EAISolution.PurchaseOrder'] /\*[本地名称 （) = Item 和 namespace-uri() =']|* [本地名称 （) = 数量和 namespace-uri() = ']|/ PurchaseOrder/项|数量|  
-|状态|/ * [本地名称 （) = PurchaseOrder 和 namespace-uri() =http://EAISolution.PurchaseOrder']|* [本地名称 （) = 'Status' 和 namespace-uri() = ']|/ PurchaseOrder|状态|
+|数量|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()='']|* [本地名称 （) = 数量和 namespace-uri() = ']|/ PurchaseOrder/项|数量|  
+|状态|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']|* [本地名称 （) = 'Status' 和 namespace-uri() = ']|/ PurchaseOrder|状态|
 <!---Loc Comment: Please, verify strucutre in line 183 and 184--->
   
 #### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>查看“数量”字段和“状态”字段的 Xpath 选择器和 Xpath 字段绑定  
