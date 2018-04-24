@@ -224,7 +224,7 @@
 ###### [教程：发送数据](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data.md)
 ###### [教程：接收数据](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data.md)
 #### [体系结构](../core/architecture-of-biztalk-adapter-for-tibco-rendezvous.md)
-#### [安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)
+#### [Security](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)
 ##### [SSO 要求](../core/requirements-for-single-sign-on3.md)
 ##### [SSO 和适配器](../core/single-sign-on-and-biztalk-adapter-for-tibco-rendezvous.md)
 ##### [创建关联应用程序](../core/creating-affiliate-applications1.md)
