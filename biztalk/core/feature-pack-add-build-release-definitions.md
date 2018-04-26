@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
     ![添加 VS 生成任务](../core/media/vsts-add-publish-build-task.png)
 
-7. <span data-ttu-id="e5d5f-129">选择**发布项目**任务，并输入你首选**显示名称**。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-129">Select the **Publish Artifact** task, and enter your preferred **Display name**.</span></span> <span data-ttu-id="e5d5f-130">有关**路径发布**，选择**...**按钮，然后选择应用程序项目文件夹 (例如 appProjectHelloWorld)。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-130">For **Path to publish**, select the **...**  button, and choose the application project folder (e.g. appProjectHelloWorld).</span></span> <span data-ttu-id="e5d5f-131">选择“确定”。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-131">Select **OK**.</span></span>
+7. <span data-ttu-id="e5d5f-129">选择**发布项目**任务，并输入你首选**显示名称**。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-129">Select the **Publish Artifact** task, and enter your preferred **Display name**.</span></span> <span data-ttu-id="e5d5f-130">有关**路径发布**，选择 **...** 按钮，然后选择应用程序项目文件夹 (例如 appProjectHelloWorld)。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-130">For **Path to publish**, select the **...**  button, and choose the application project folder (e.g. appProjectHelloWorld).</span></span> <span data-ttu-id="e5d5f-131">选择“确定”。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-131">Select **OK**.</span></span>
 
 8. <span data-ttu-id="e5d5f-132">**项目名称**可以是任何需要的内容。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-132">The **Artifact Name** can be anything you want.</span></span> <span data-ttu-id="e5d5f-133">选择**保存**。</span><span class="sxs-lookup"><span data-stu-id="e5d5f-133">Select **Save**.</span></span> 
 
