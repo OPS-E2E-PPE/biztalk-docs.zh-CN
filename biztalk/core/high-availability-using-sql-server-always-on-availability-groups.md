@@ -13,11 +13,11 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e7bc583cf64ab822cd785e73b3994e7f8e33a75
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 4bc7a1d1864b4e31bc20d170e2f2dd2602646188
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>使用 SQL Server Alwayson 可用性组的高可用性
 配置使用 SQL Server AlwaysOn 可用性组的高可用性。
@@ -260,7 +260,7 @@ BizTalk Server 实现数据库备用功能通过数据库使用日志传送。 B
 * 可用性组内不管理登录名、 SQL 代理作业，SQL 数据库邮件配置文件和帐户。 这要求手动修改，以确保它们对主副本运行的作业中。 
 * SQL Server Analysis Services 和 SQL Server Integration Services 将不参与可用性组。 而不从 SQL Server 此支持，没有这些 Azure 虚拟机中的 HA 解决方案。 BizTalk Server BAM 功能都依赖于这些服务。 
 * 可用性组不支持在相同的 SQL 实例上的数据库之间的 MSDTC。 因此，最小的 8 SQL 实例所需配置 BizTalk。 
-* 若要解决 MSDTC 可以使用至少两个服务器托管四个 SQL 实例每个配置可用性组，BizTalk 数据库中的限制。 你还可以使用[与 Azure 负载平衡器的多个 IP 地址](https://docs.microsoft.com/azure/load-balancer/load-balancer-multivip-overview)。 因此，如果你想要在一台服务器上的端口 1433年上使用四个默认 SQL 实例，您需要四个 IP 地址。 如果你是限于一个 IP 地址，并且你想要承载同一服务器上的多个 SQL 实例，然后务必确保为每个 SQL 实例使用一个自定义端口。 
+* 若要解决 MSDTC 可以使用至少两个服务器托管四个 SQL 实例每个配置可用性组，BizTalk 数据库中的限制。 你还可以使用[与 Azure 负载平衡器的多个 IP 地址](https://docs.microsoft.com/azure/load-balancer/load-balancer-multivip-overview)。 因此，如果你想要在一台服务器上的端口 1433年上使用四个默认 SQL 实例，您需要四个 IP 地址。 如果仅限于一个 IP 地址，并且你想要承载同一服务器上的多个 SQL 实例，然后请务必为每个 SQL 实例使用一个自定义端口。 
 * BizTalk Server 不能使用只读路由。 
 * BizTalk Server 不会设置 `MultiSubnetFailover` 连接属性。 
 * 使用日志传送的 BizTalk 备份作业将始终针对主副本而不考虑对可用性组设置的备份首选项。 

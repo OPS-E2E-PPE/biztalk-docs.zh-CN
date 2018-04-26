@@ -1,21 +1,21 @@
 ---
-title: "步骤 1-添加应用程序项目和更新 json |Microsoft 文档"
-description: "将 BizTalk Server 应用程序项目添加在 Visual Studio 中，并使用的 Dll，绑定文件和应用程序的 Visual Studio Team Services 的部署序列更新 BizTalkServerInventory.json 文件"
-ms.custom: 
+title: 步骤 1-添加应用程序项目和更新 json |Microsoft 文档
+description: 将 BizTalk Server 应用程序项目添加在 Visual Studio 中，并使用的 Dll，绑定文件和应用程序的 Visual Studio Team Services 的部署序列更新 BizTalkServerInventory.json 文件
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8d4b9773c9c7b23715b5ddae29c3c97f381da5e
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: da1c4bb3cb12cf67e84bab7aa7f38c1a893eca00
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a>步骤 1： 在 Visual Studio 中添加 BizTalk Server 应用程序项目
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 11/21/2017
 
 BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文件中，添加你的 BizTalk 程序集、 添加 BizTalk 应用程序时，绑定文件，然后设置的部署序列。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>開始之前
 
 * 这些步骤假定你的一个现有的 BizTalk 项目。 如果没有，则可以使用 HelloWorld SDK 示例 (\Program Files (x86) \Microsoft BizTalk Server *yourVersion*\SDK\Samples\Orchestrations\HelloWorld)。 
 * 到 XML 绑定文件到你的 BizTalk 项目准备具有路径。 
@@ -39,7 +39,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 
 3. 右键单击你的解决方案，选择**添加**，然后选择**添加新项目**。
 
-4. 选择**BizTalk 项目**选项卡上，选择**.NET Framework 4.6.1**从该下拉列表中，并选择**BizTalk 服务器应用程序项目**。 输入名称 (例如 appProjectHelloWorld)，并选择**确定**:  
+4. 选择**BizTalk 项目**选项卡上，选择 **.NET Framework 4.6.1**从该下拉列表中，并选择**BizTalk 服务器应用程序项目**。 输入名称 (例如 appProjectHelloWorld)，并选择**确定**:  
 
     ![添加应用程序项目](../core/media/add-application-project.png)
 
@@ -52,7 +52,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 
     ![绑定文件属性](../core/media/xml-binding-file-properties.png)
 
-8. 可选。 右键单击新添加的应用程序项目中，然后选择**属性**。 自定义**应用程序名称**要显示在 BizTalk 管理中：  
+8. 選擇性。 右键单击新添加的应用程序项目中，然后选择**属性**。 自定义**应用程序名称**要显示在 BizTalk 管理中：  
 
     ![应用程序名称](../core/media/application-project-name.png)
 
@@ -80,7 +80,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
     ```
     "BizTalkAssemblies": [
         {
-            "Name": "AssemblyName"
+            "Name": "AssemblyName",
             "Path": "PathToAssembly
         }
     ]
@@ -91,7 +91,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
     ```
     "BindingsFiles": [
         {
-            "Name": "Binding File Name"
+            "Name": "Binding File Name",
             "Path": "PathToBindingFile
         }
     ]
@@ -108,7 +108,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
     ```
 
 
-6. **保存**所做的更改。 完成后，如下所示.json 文件： 
+6. **保存** 所做的更改。 完成后，如下所示.json 文件： 
 
     ```
     {
@@ -135,7 +135,7 @@ BizTalk 应用程序项目包含`BizTalkServerInventory.json`文件。 在此文
 
     ![设置调试或发布版本](../core/media/application-project-version.png)
 
-8. 右键单击你的应用程序项目 (例如 appProjectHelloWorld)，然后选择**生成**。 如果成功，在中创建的 zip 文件 ***yourApplicationProject*\bin\debug**文件夹：  
+8. 右键单击你的应用程序项目 (例如 appProjectHelloWorld)，然后选择**生成**。 如果成功，在中创建的 zip 文件 ***yourApplicationProject * \bin\debug**文件夹：  
 
     ![生成的 zip 文件](../core/media/application-project-zip-file.png)
 

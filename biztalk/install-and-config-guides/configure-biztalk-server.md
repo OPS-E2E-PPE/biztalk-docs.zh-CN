@@ -1,23 +1,23 @@
 ---
-title: "使用基本或自定义配置进行配置 |Microsoft 文档"
-description: "执行 BizTalk Server 中，基本或自定义配置和了解如何进行处理每个配置步骤"
-ms.custom: 
+title: 使用基本或自定义配置进行配置 |Microsoft 文档
+description: 执行 BizTalk Server 中，基本或自定义配置和了解如何进行处理每个配置步骤
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 861a1237-d77a-42db-b563-d83f7930add6
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8989fd322fd9fc34e947a80b510619446a65f71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb5850c9dc32fd7b793e24cc08862d86a17abedd
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-biztalk-server"></a>配置 BizTalk Server
 使用“基本配置”或“自定义配置”配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 * 如果配置使用自定义组名称而不是默认组名称，则进行“自定义配置”。
 * 如果配置使用自定义数据库名称而不是默认数据库名称，则进行“自定义配置”。
 * 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 SQL Server 位于单独的计算机上，则需要使用域组。 因此，应进行“自定义配置”。
-* 不能使用“基本配置”在 SQL Server 命名实例上配置 BAM 分析。 如果使用命名实例，并且希望配置 BAM 分析，则应进行“自定义配置”。
+* 无法上为 SQL Server 命名实例使用基本配置来配置 BAM 分析。 如果使用命名实例，并且希望配置 BAM 分析，则应进行“自定义配置”。
 * 在用户设置运行于一台服务器上的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 SQL Server 的完整安装时，建议使用“基本配置”选项。
 * “基本配置”速度更快，因为它会自动使用默认名称来创建本地组和数据库。
 
@@ -82,7 +82,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 1. 选择“企业 SSO”。
 2. 配置下列内容：
 
-    | 使用此项 | 执行的操作 |
+    | 使用此项 | 動作 |
     | --- | --- |
     |在此计算机上启用企业单一登录 | 使用 SSO 设置配置此服务器。 |
     |新建 SSO 系统 | 如果这是配置的第一个 SSO 服务器，则选择此选项。 这将创建和配置 SSO 数据库、创建主密钥（加密的安全密钥），并安装 SSO 所用的服务。 此外，您还必须备份此密钥服务器上的密钥。<br/><br/>密钥详细信息： <br/><ul><li>建议将主密钥服务器配置为独立服务器。</li><li>只有 SSO 管理员才能执行此配置任务。</li><li>只能将一个主密钥服务器与一个 BizTalk 组相关联。 不支持将两个主密钥服务器与同一个 BizTalk 组相关联。</li></ul>|
@@ -94,7 +94,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 3. 选择“企业 SSO 密钥备份”。 此选项可将主密钥保存到加密的备份文件。 
 4. 配置下列内容：  
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |密钥备份密码 | 输入主密钥密码。|
     |确认密码|再次输入主密钥密码。|
@@ -110,7 +110,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 1. 选择“组”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |在此计算机上启用 BizTalk Server 组|选择此选项可在此服务器上新建 BizTalk 组或加入现有组。 |
     |新建 BizTalk 组| 如果这是组中的第一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则选择此选项。 使用此选项可以创建数据库，并添加组。|
@@ -128,7 +128,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 1. 选择“BizTalk 运行时”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     | 注册 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时组件 | 选择此选项可在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上创建主机和主机实例。 |
     | 创建进程内主机和实例 | 在此计算机上创建 BizTalkServerApplication 主机和实例。<br/><br/>其他选项： <ul><li>**受信任**：提交消息时将发件人的凭据（SSID 和/或参与方 ID）传递到 MessageBox 数据库。 这相当于在服务器之间创建信任关系。 大多数主机和实例不受信任。</li><li>**仅限 32 位**：某些适配器仅在 32 位进程中运行，但大多数都可兼容 64 位进程。 配置 BizTalk 后，可在“BizTalk 管理”中启用/禁用此设置。 因此，无需强调。</li><li>**主机名**BizTalkServerApplication 是默认值。 如果在“BizTalk 管理”中新建主机和实例，可以是特定于名称的，如 TrackingHost 或 ReceivingHost。 因此，将其保留原样。</li></ul>|
@@ -146,7 +146,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 1. 选择“业务规则引擎”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |在此计算机上启用业务规则引擎 | 如果在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上使用 BRE，则选择此选项。 |
     |数据存储| 输入承载“规则”数据库的服务器名称。 如果此服务器同时安装了 BizTalk 和 SQL，则输入本地服务器名称。 如果 SQL Server 位于另一台计算机，则输入 SQL Server 名称。<br/><br/>可以保留默认数据库名称或输入自定义名。|
@@ -175,7 +175,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 1. 选择“BAM 工具”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |启用业务活动监视工具 | 在此计算机上启用并安装 BAM 工具。 |
     | 为 BAM 聚合启用 Analysis Services | 提供 BAM 警报的跟踪信息。|
@@ -189,12 +189,12 @@ BAM 警报需要启用 BAM 工具。
 1. 选择“BAM 警报”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     | 启用 BAM 警报 | 如果使用 BAM 警报，则勾选此选项。 <br/><br/>请记住，必须已配置 SQL Database Mail 才能使用 BAM 警报。 |
     | Windows 服务 | 输入用于运行 BAM 警报服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。 |
     | BAM 警报 SMTP 服务器| 输入与 SQL Database Mail 一起配置的 SMTP 服务器名称。 |
-    | BAM 警报文件位置| 输入网络共享，以存储 BAM 警报。 <br/><br/>**注意** <br/>您必须先手动创建此共享位置，BAM 警报才能存储这些文件。|
+    | BAM 警报文件位置| 输入网络共享，以存储 BAM 警报。 <br/><br/>**请注意** <br/>您必须先手动创建此共享位置，BAM 警报才能存储这些文件。|
     | 警报数据库的 SQL Server | 输入承载 Alerts 数据库的 SQL Server 名称。<br/><br/>**注意** <br/>不支持使用 IPv6 地址来指定警报数据库的 NS SQL Server。 但是，您可以使用计算机名称，这样，DNS 转换将会进行查找。|
     |警报数据库名称的前缀| 输入用于 Alerts 数据库的前缀。|  
 
@@ -203,7 +203,7 @@ BAM 警报需要启用 BAM 工具。
 1. 选择“BAM 门户”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |启用 BAM 门户 | 如果使用 BAM 门户，则加粗此选项。 | 
     |Web Services 帐户 | 输入用于运行 IIS 服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。|
@@ -219,7 +219,7 @@ BAM 警报需要启用 BAM 工具。
 1. 选择“BizTalk EDI/AS2 运行时”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     |在此计算机上启用 BizTalk EDI/AS2 运行时| 如果要将 X12、EDIFACT 或 AS2 协议用于企业到企业消息传递，则选择此选项。 |
     |为此 BizTalk 组启用 BizTalk EDI | 如果使用 X12 或 EDIFACT，则选择此选项。 |
@@ -237,7 +237,7 @@ BAM 警报需要启用 BAM 工具。
 1. 选择“Windows SharePoint Services 适配器”。
 2. 配置下列内容：
 
-    |使用此项|执行的操作|
+    |使用此项|動作|
     | --- | --- |
     | 在此计算机上启用 Windows SharePoint Services 适配器 | 选择以安装 SharePoint Services Web 服务。 IIS Web Services 安装在 SharePoint Services 计算机上，既可以和 BizTalk Server 在同一计算机上，也可以在单独的计算机上。 在大多数环境中，BizTalk Server 和 SharePoint Services 都位于单独的计算机上。|
     |Windows 组|可以保留默认组名或输入自定义内容。 |
@@ -270,7 +270,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(1-12-2017 2h39m30s).log`。
   
 |虚拟应用程序|默认应用程序池|Description|  
 |-------------------------|------------------------------|-----------------|  
-|BAM|BAMAppPool|BAM 门户组件（页面、图像、预编译的代码和其他资源）的宿主虚拟应用程序。 此虚拟应用程序调用 BAMManagementService 应用程序，以与 BAM 数据库进行通信。 **注意：**要设置外观 BAM 门户，你可以修改此应用程序的内容。|  
+|BAM|BAMAppPool|BAM 门户组件（页面、图像、预编译的代码和其他资源）的宿主虚拟应用程序。 此虚拟应用程序调用 BAMManagementService 应用程序，以与 BAM 数据库进行通信。 **注意︰**  要设置外观 BAM 门户，你可以修改此应用程序的内容。|  
 |BAMManagementService|BAMAppPool|BAMManagementService Web Services 的宿主虚拟应用程序。 BAM 门户应用程序可使用此 Web Services 与 BAM 主导入表 (PIT) 进行通信。 使用配置期间创建的注册表中存储的模拟凭据可以完成与数据库的通信。 自定义客户端可以使用由 Web Services 公开的这个方法以获取任何用户的视图及其详细信息、相关活动和数据透视表布局。 还可以将其用于管理数据库中的警报。|  
 |BTSharePointAdapterWS|BTSSharePointAdapterWSAppPool|Windows SharePoint Services 适配器 Web Services 的宿主虚拟应用程序。 适用于 BizTalk Server 2013 R2 和仅 2013年。|  
 

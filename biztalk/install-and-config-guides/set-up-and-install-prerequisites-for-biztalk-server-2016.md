@@ -1,23 +1,23 @@
 ---
-title: "设置和安装 BizTalk Server 2016 系统必备组件 |Microsoft 文档"
-description: "安装和配置的所需的软件和设置 BizTalk Server 2016 的分步说明"
+title: 设置和安装 BizTalk Server 2016 系统必备组件 |Microsoft 文档
+description: 安装和配置的所需的软件和设置 BizTalk Server 2016 的分步说明
 author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.date: 04/25/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
-caps.latest.revision: "11"
+caps.latest.revision: 11
 ms.author: mandia
-ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 666cddaab4d23fa69b0ae488f665e2eda5182c05
+ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>设置和安装 BizTalk Server 2016 的必备组件
 设置服务器，然后安装和配置软件必备组件。
@@ -276,7 +276,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 
 > [!IMPORTANT]
 > - 不建议使用或不支持 SQL Server Express Edition。 Express Edition 不包括 BizTalk Server 需要的某些功能。
-> - BizTalk Server 支持 SQL 标准版。 但是，为使用业务活动监视实时聚合 (BAM RTA)，需安装 SQL Server Enterprise Edition。 SQL Server Standard Edition 不支持 BAM 实时聚合 (RTA)。
+> - BizTalk Server 支持 SQL 标准版。 但是，为使用业务活动监视实时聚合 (BAM RTA)，需安装 SQL Server Enterprise Edition。 SQL Server 标准版中不支持 BAM 实时聚合 (RTA)。
 > - 若要从 Visual Studio 全面使用 BizTalk Server SDK 或部署 BizTalk Server 应用程序，请安装 SQL Server 开发工具。
 > - BizTalk Server 支持所有区分大小写和不区分大小写的 SQL Server 排序规则，二进制排序规则例外。 不支持二进制排序规则。
 
@@ -295,7 +295,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
         - Integration Services
 
     > [!NOTE]
-    > **SQL Server Data Tools** 未包含在 SQL Server 的默认安装中。 它不是必需的，但可从 [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 处下载。 下载可与所有 SQL Server 的支持版本兼容的 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)，其中包括 Azure SQL 数据库。 
+    > **SQL Server Data Tools** 未包含在 SQL Server 的默认安装中。 它不是必需的但可以从以下网址下载[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)。 下载可与所有 SQL Server 的支持版本兼容的 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)，其中包括 Azure SQL 数据库。 但是，若要连接到远程 SSIS 使用 BAM 时，你需要为目标 SSIS 服务器安装相同版本的 SSMS。 例如，[安装 SSMS 16。*x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases)安装要连接到 SQL 2016 SSIS 的相关驱动程序。 SSMS 17。*x*无法连接到 SQL 2016 SSIS。 你可以具有多个版本的 SSMS 安装。 
 
 3. 继续进行安装，并且在系统提示时重启计算机。
 
