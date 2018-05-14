@@ -1,1 +1,1 @@
-<span data-ttu-id="80236-101">Windows Server</span><span class="sxs-lookup"><span data-stu-id="80236-101">Windows Server</span></span>
+Windows Server

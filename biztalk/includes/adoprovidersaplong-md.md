@@ -1,1 +1,1 @@
-<span data-ttu-id="092db-101">用于 mySAP Business Suite 的 .NET Framework 数据提供程序</span><span class="sxs-lookup"><span data-stu-id="092db-101">.NET Framework Data Provider for mySAP Business Suite</span></span>
+用于 mySAP Business Suite 的 .NET Framework 数据提供程序

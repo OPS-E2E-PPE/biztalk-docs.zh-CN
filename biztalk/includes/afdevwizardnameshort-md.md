@@ -1,1 +1,1 @@
-<span data-ttu-id="d6dee-101">适配器开发向导</span><span class="sxs-lookup"><span data-stu-id="d6dee-101">Adapter Development Wizard</span></span>
+适配器开发向导

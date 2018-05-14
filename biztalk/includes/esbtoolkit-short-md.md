@@ -1,1 +1,1 @@
-<span data-ttu-id="c2dc1-101">BizTalk ESB 工具包</span><span class="sxs-lookup"><span data-stu-id="c2dc1-101">BizTalk ESB Toolkit</span></span>
+BizTalk ESB 工具包

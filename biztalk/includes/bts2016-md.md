@@ -1,1 +1,1 @@
-<span data-ttu-id="f8a1e-101">BizTalk Server 2016</span><span class="sxs-lookup"><span data-stu-id="f8a1e-101">BizTalk Server 2016</span></span>
+BizTalk Server 2016

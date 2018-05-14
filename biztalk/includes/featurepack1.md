@@ -1,1 +1,1 @@
-<span data-ttu-id="059b5-101">功能包 1</span><span class="sxs-lookup"><span data-stu-id="059b5-101">Feature Pack 1</span></span>
+功能包 1

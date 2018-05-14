@@ -1,1 +1,1 @@
-<span data-ttu-id="e77d3-101">BizTalk Server 管理</span><span class="sxs-lookup"><span data-stu-id="e77d3-101">BizTalk Server Administration</span></span>
+BizTalk Server 管理

@@ -1,1 +1,1 @@
-<span data-ttu-id="aa344-101">使用适配器服务加载项</span><span class="sxs-lookup"><span data-stu-id="aa344-101">Consume Adapter Service Add-in</span></span>
+使用适配器服务加载项

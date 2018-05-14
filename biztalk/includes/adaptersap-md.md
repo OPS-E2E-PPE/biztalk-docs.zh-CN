@@ -1,1 +1,1 @@
-<span data-ttu-id="ac0e9-101">用于 mySAP Business Suite 的 Microsoft BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="ac0e9-101">Microsoft BizTalk Adapter for mySAP Business Suite</span></span>
+用于 mySAP Business Suite 的 Microsoft BizTalk 适配器

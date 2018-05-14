@@ -1,1 +1,1 @@
-<span data-ttu-id="02c45-101">BizTalk Accelerator for SWIFT (A4SWIFT)</span><span class="sxs-lookup"><span data-stu-id="02c45-101">BizTalk Accelerator for SWIFT (A4SWIFT)</span></span>
+BizTalk Accelerator for SWIFT (A4SWIFT)

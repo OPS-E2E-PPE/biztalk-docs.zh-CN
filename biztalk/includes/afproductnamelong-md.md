@@ -1,1 +1,1 @@
-<span data-ttu-id="808fa-101">Microsoft Windows Communication Foundation (WCF) 行业 (LOB) 适配器 SDK</span><span class="sxs-lookup"><span data-stu-id="808fa-101">Microsoft Windows Communication Foundation (WCF) Line of Business (LOB) Adapter SDK</span></span>
+Microsoft Windows Communication Foundation (WCF) 行业 (LOB) 适配器 SDK
