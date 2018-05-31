@@ -1,15 +1,15 @@
 ---
-title: "疑难解答和已知问题 |Microsoft 文档"
-description: "已知问题，僵尸，性能故障排除、 诊断适配器，解决权限、 解决 EDI 和 AS2 和 BizTalk Server 中的详细信息"
-ms.custom: 
+title: 疑难解答和已知问题 |Microsoft 文档
+description: 已知问题，僵尸，性能故障排除、 诊断适配器，解决权限、 解决 EDI 和 AS2 和 BizTalk Server 中的详细信息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecb934c6-3efa-40b6-949b-a04a73e60b07
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286685"
 ---
 # <a name="troubleshooting"></a>故障排除
 

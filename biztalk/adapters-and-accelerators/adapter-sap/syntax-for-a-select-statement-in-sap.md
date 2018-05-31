@@ -10,15 +10,16 @@ ms.topic: article
 helpviewer_keywords:
 - SELECT statement, syntax for
 ms.assetid: 47120d74-bf41-4622-a6bc-7b8ddc959305
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 343e96bb25a062bd524f25c770137bc64227063d
+ms.sourcegitcommit: ba3c4876acc1bf3ee2961ca80c18d930a42c6696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32320957"
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>SAP 中的 SELECT 语句的语法
 以下各节描述了用于实现针对选择查询的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。 请注意，在某些情况下，语法是基本 TRANSACT-SQL 语法的稍有不同。  
@@ -41,7 +42,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  支持的条件和表达式是：  
   
--   **\<condition\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
 -   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
@@ -59,7 +60,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
     -   当**no_conversion**不使用选项，如果字段具有转换和退出定义然后.NET 字符串作为公开表中的这些字段。  
   
--   当设置为**batchsize\<大小\>**，SELECT 语句的执行将导致多个调用，以使到 SAP 系统，并在每个调用中，仅\<大小\>数记录检索。 例如，如果你指定 batchsize 100，SELECT 查询检索仅在 SAP 系统每次调用中的 100 条记录。 如果**batchsize\<大小\>**未指定，则默认值为 10000 假设批次大小。 请注意，应指定批次大小基于计算机和的行数的物理内存中 SAP 系统的最佳值。 指定批大小的最佳值中的失败可能会导致内存不足异常。  
+-   当设置为**batchsize\<大小\>**，SELECT 语句的执行将导致多个调用，以使到 SAP 系统，并在每个调用中，仅\<大小\>数记录检索。 例如，如果你指定 batchsize 100，SELECT 查询检索仅在 SAP 系统每次调用中的 100 条记录。 如果**batchsize\<大小\>** 未指定，则默认值为 10000 假设批次大小。 请注意，应指定批次大小基于计算机和的行数的物理内存中 SAP 系统的最佳值。 指定批大小的最佳值中的失败可能会导致内存不足异常。  
   
 -   当设置为**disabledatavalidation**、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不会验证 DAT、 TIMS 和 NUMC 列中存在的值，但改为将它们作为字符串进行公开。  
   
@@ -208,9 +209,9 @@ Table | '['Table']'
   
 -   SELECT 语句使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]SELECT 查询中支持的自变量值的参数名称。 但是，请确保你遵循这些规则与参数名称：  
   
-    -   在选择的查询中，"@"符号必须位于之前的参数名称。  
+    -   在选择的查询中，"\@"符号必须位于之前的参数名称。  
   
-    -   "@"符号后面必须跟一个字母字符 （A 到 Z 或 a 到 z）。  
+    -   "\@"符号后面必须跟一个字母字符 （A 到 Z 或 a 到 z）。  
   
     -   参数名称只能包含字母数字字符 (A-Z、 a 到 z 或 0-9) 和特殊字符。 可以包含参数名称中的唯一特殊字符是下划线"_"和哈希"#"。  
   

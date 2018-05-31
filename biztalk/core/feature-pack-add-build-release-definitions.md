@@ -11,11 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2df2cb82508a12e8e8d279204130d2deedd744f4
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 37928509c255dbb2720ad393dfc0f1cee0386a85
+ms.sourcegitcommit: ba3c4876acc1bf3ee2961ca80c18d930a42c6696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32320941"
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>步骤 3： 创建构建并发布定义
 
@@ -91,9 +92,10 @@ ms.lasthandoff: 04/16/2018
 
 7. 选择**部署**任务，并输入值： 
 
-    **操作名称**： 你的选项: ***创建新的 BizTalk 应用程序**： 部署一个新的应用程序。 如果应用程序已存在，它会卸载当前的应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动将重新部署应用程序更新存储库中时。 
-        * **更新现有的 BizTalk 应用程序**： 将更改，如架构，追加到已运行的应用程序。 它不需要应用程序完全重新部署。
-        * **安装 BizTalk Server 应用程序**:[安装应用程序](../core/how-to-install-a-biztalk-application.md)，然后输入的 BizTalk 管理计算机的名称和部署包路径。
+    **操作名称**： 你的选项：   
+        - **创建新的 BizTalk 应用程序**： 部署一个新的应用程序。 如果应用程序已存在，它会卸载当前的应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动将重新部署应用程序更新存储库中时。   
+        - **更新现有的 BizTalk 应用程序**： 将更改，如架构，追加到已运行的应用程序。 它不需要应用程序完全重新部署。  
+        - **安装 BizTalk Server 应用程序**:[安装应用程序](../core/how-to-install-a-biztalk-application.md)，然后输入的 BizTalk 管理计算机的名称和部署包路径。  
 
      ![部署操作](../core/media/vsts-deploy-operations.png)
 
