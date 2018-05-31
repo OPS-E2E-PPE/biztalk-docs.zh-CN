@@ -1,1 +1,1 @@
-BizTalk 适配器包 2013
+<span data-ttu-id="d91da-101">BizTalk 适配器包 2013</span><span class="sxs-lookup"><span data-stu-id="d91da-101">BizTalk Adapter Pack 2013</span></span>
