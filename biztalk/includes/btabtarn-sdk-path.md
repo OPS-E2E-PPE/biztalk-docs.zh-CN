@@ -1,0 +1,1 @@
+<span data-ttu-id="ff17b-101">\<*驱动器*\>\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键</span><span class="sxs-lookup"><span data-stu-id="ff17b-101">\<*drive*\>\Program Files (x86)\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\\</span></span>
