@@ -1,21 +1,22 @@
 ---
-title: "使用事件中心适配器 |Microsoft 文档"
-description: "发送和接收消息 BizTalk Server 中使用 Azure 事件中心适配器"
-ms.custom: 
+title: 使用事件中心适配器 |Microsoft 文档
+description: 发送和接收消息 BizTalk Server 中使用 Azure 事件中心适配器
+ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: plarsen
 manager: anneta
-ms.openlocfilehash: f394665a40b0a786ef6411b68ff8871e1a683614
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: cb9bbe26f07d87d7cccc084b6842b6d0974fdbb3
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848917"
 ---
 # <a name="event-hub-adapter-in-biztalk"></a>BizTalk 中的事件中心适配器
 
@@ -24,9 +25,9 @@ ms.lasthandoff: 11/21/2017
 
 Azure 事件中心是高度可伸缩的数据流平台，并可以接收和处理数百万个每秒的事件。 [什么是事件中心？](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs)提供更多详细信息。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必要條件
 
-* 创建[Azure 事件中心命名空间和事件中心](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
+* 创建[Azure 事件中心命名空间和事件中心](https://docs.microsoft.com/azure/event-hubs/event-hubs-create)
 * 创建[与容器的 Azure blob 存储帐户](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
 * 安装[功能包 2](https://aka.ms/bts2016fp2) BizTalk 服务器上
 
@@ -52,7 +53,7 @@ Azure 事件中心是高度可伸缩的数据流平台，并可以接收和处�
 
     |使用此选项|执行的操作|  
     |---|---|  
-    | **命名空间** | 选择事件中心命名空间，这是类似于 sb: / /*youreventhubnamespace*.servicebus.windows.net/ |
+    | **Namespace** | 选择事件中心命名空间，这是类似于 sb: / /*youreventhubnamespace*.servicebus.windows.net/ |
     | **名称** | 选择你的事件中心名称 （这在你的事件中心命名空间内创建） |
     | **默认分区键** | 可选。 [事件中心编程指南](https://docs.microsoft.com/azure/event-hubs/event-hubs-programming-guide)对此项提供更多详细信息。 |
     | **身份验证** | **Namespace 访问签名**是默认设置，并自动使用你创建事件中心命名空间时，创建 RootManageSharedAccessKey。<br/><br/>**实体访问签名**是可以在事件中心的级别 （不是事件中心命名空间的级别） 创建的 SAS 策略。 <br/><br/>[事件中心功能概述](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)说明的详细信息。 |
@@ -107,7 +108,7 @@ Azure 事件中心是高度可伸缩的数据流平台，并可以接收和处�
 
     |使用此选项|执行的操作|  
     |---|---|  
-    | **命名空间** | 选择事件中心命名空间，这是类似于 sb: / /*youreventhubnamespace*.servicebus.windows.net/ |
+    | **Namespace** | 选择事件中心命名空间，这是类似于 sb: / /*youreventhubnamespace*.servicebus.windows.net/ |
     | **名称** | 选择你的事件中心名称 （这在你的事件中心命名空间内创建） |
     | **使用者组** | 选择在事件中心内的使用者组。 自动创建默认组。 <br/><br/>[事件中心功能概述](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)提供更多详细信息。 |
     | **身份验证** | **Namespace 访问签名**是默认设置，并自动使用你创建事件中心命名空间时，创建 RootManageSharedAccessKey。<br/><br/>**实体访问签名**是可以在事件中心的级别 （不是事件中心命名空间的级别） 创建的 SAS 策略。 <br/><br/>[事件中心功能概述](https://docs.microsoft.com/azure/event-hubs/event-hubs-features)说明的详细信息。 |
@@ -138,7 +139,7 @@ Azure 事件中心是高度可伸缩的数据流平台，并可以接收和处�
 
 可以使用简单的文件发送端口从 Azure 事件中心接收消息。 
 
-1. 创建使用文件适配器发送端口。 在你发送端口属性内, 设置**目标文件夹**到 **C:\Temp\Out\**，并将设置和**文件名**到**%MessageID%.xml**.
+1. 创建使用文件适配器发送端口。 在你发送端口属性内, 设置**目标文件夹**到 **C:\Temp\Out\**，并将设置和**文件名**到 **%MessageID%.xml**.
 2. 在你的文件发送端口属性，设置**筛选器**到`BTS.ReceivePortName == EHReceivePort`。
 3. 开始事件中心接收位置和文件发送端口。
 4. 查找目标文件夹 (c:\temp\out) 中的消息。

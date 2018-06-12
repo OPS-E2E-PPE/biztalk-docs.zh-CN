@@ -1,23 +1,24 @@
 ---
-title: "在多计算机环境中安装 BizTalk Server |Microsoft 文档"
-description: "多服务器安装和设置的指南包括 BAM 不同计算机上安装 BizTalk 和 SQL Server 时"
-ms.custom: 
+title: 在多计算机环境中安装 BizTalk Server |Microsoft 文档
+description: 多服务器安装和设置的指南包括 BAM 不同计算机上安装 BizTalk 和 SQL Server 时
+ms.custom: ''
 ms.date: 11/30/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26100e268e6dd657369bb044461c42a6ba0b5a9c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 22fd52c38d7c05fd91453900a26c048ba13bb9f4
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34849005"
 ---
 # <a name="install-biztalk-server-in-a-multi-computer-environment"></a>在多计算机环境中安装 BizTalk Server
 
@@ -226,7 +227,7 @@ BAM 包含以下层：
 4. 重新注册的服务器正在使用迁移计划 (bm.exe) 的位置除外的所有服务器上的通知服务。
 
     1. 在**程序**，单击**Microsoft SQL Server 2005**，单击**配置工具**，然后单击**通知服务命令提示符**.
-    2. 在命令提示符下键入：`nscontrol register -name BamAlerts -server <NS DB Server> -service -serviceusername "<NSServiceUserName>" -servicepassword "<NSServicePassword>"`
+    2. 在命令提示符下键入： `nscontrol register -name BamAlerts -server <NS DB Server> -service -serviceusername "<NSServiceUserName>" -servicepassword "<NSServicePassword>"`
 
     这使通知服务登录到正确的数据库 （此信息将保留在服务计算机的注册表中通过 nscontrol）。
 
@@ -351,7 +352,7 @@ BAM 包含以下层：
 
 1. **安装 Active Directory 域服务**-到多个服务器环境中安装 BizTalk Server 所需的第一步是安装的各种 BizTalk Server 组和帐户的 Active Directory 域服务。 若要创建 Active Directory 域，请参阅以下内容：
 
-    - Windows Server 2012 和更高版本：[安装 Active Directory 域服务](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+    - Windows Server 2012 和更高版本：[安装 Active Directory 域服务](https://docs.microsoft.com/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
     - Windows Server 2008 R2: [AD DS 安装和删除分步指南](https://technet.microsoft.com/library/cc755258(WS.10).aspx)
 
     > [!IMPORTANT]
@@ -388,7 +389,7 @@ BAM 包含以下层：
 - **群集文件系统**– 请参阅[如何安装群集文件系统](http://go.microsoft.com/fwlink/p/?LinkId=189517)。
 
 ## <a name="use-scom"></a>使用 SCOM
-用于 Operations Manager 的 BizTalk Server 管理包提供全面的发现和监视的 BizTalk Server 组件和在多台计算机中运行的应用程序。 有关 BizTalk Server 管理包的详细信息，请参阅 http://www.microsoft.com/download/details.aspx?id=39617。
+用于 Operations Manager 的 BizTalk Server 管理包提供全面的发现和监视的 BizTalk Server 组件和在多台计算机中运行的应用程序。 有关 BizTalk Server 管理包的详细信息，请参阅http://www.microsoft.com/download/details.aspx?id=39617。
   
 ## <a name="next"></a>Next  
 [配置 BizTalk](configure-biztalk-server.md)

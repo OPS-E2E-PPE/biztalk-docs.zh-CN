@@ -1,37 +1,29 @@
 ---
-title: "与 BizTalk Server2 系统集成 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/08/2017
+title: 与 BizTalk Server 的系统集成 |Microsoft 文档
+description: BizTalk Server 包括集成消息使用 XML、 自动执行业务流程使用地图和业务流程，并使用系统使用不同的协议，例如 FTP、 HTTP、 SMTP、 SOAP 和 SQL 的功能。
+ms.custom: ''
+ms.date: 06/08/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords:
-- system integration
-- tools, BizTalk Server
-- BizTalk Server, tools
-- BizTalk Server, about BizTalk Server
-- BizTalk Server, business processes
-- messages, BizTalk Server
-- BizTalk Server, messages
-- BizTalk Server, system integration
-- business processes, BizTalk Server
 ms.assetid: 5ba3dda1-efdb-4a2b-bb3a-825d76696f15
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8729c6a197ce9ff6fe63f5d20499705fba3b258d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 24d2251bf51e59aea919e20b93ff0f7864f3bf31
+ms.sourcegitcommit: 7deb2b5a17d740b777a17566d557b25bdd505302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35290377"
 ---
 # <a name="systems-integration-with-biztalk-server"></a>与 BizTalk Server 的系统集成
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 是为电子商务应用程序设计的集成服务器。 构建的[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsWinSvrNoVersion](../../includes/btswinsvrnoversion-md.md)]系统平台，包括[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsWinSvrNoVersion](../../includes/btswinsvrnoversion-md.md)]® 2008， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] 2008 R2/2008 SP1 和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] SharePoint® Services，并利用功能[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 这种多层次的技术为开发、实现、操作和维护你的解决方案提供了丰富的功能。  
+BizTalk Server 是使用集成服务器[发布和订阅体系结构](../../core/publish-and-subscribe-architecture.md)。 它专为电子商务应用程序，[使用适配器](../../core/using-adapters.md)若要接收和发送消息，实现[通过业务流程的业务流程](../../core/defining-business-processes.md)，并且包括[管理和跟踪](../../core/management-and-tracking-architecture.md)这些不同的部分。 BizTalk Server 还包括[贸易合作伙伴管理](../../core/trading-partner-management-using-biztalk-server.md)以执行企业到企业消息传递，[高可用性](../../core/planning-for-high-availability3.md)以最大化运行时间，一个开发平台，到[创建你自己的组件](../../core/developing-custom-components.md)，到管理控制台[管理你的项目](../../core/operational-and-administrative-tasks-in-your-biztalk-environment.md)，和业务活动监视管理[聚合、 警报和配置文件](../../core/using-business-activity-monitoring.md)。 这种多层次的技术为开发、实现、操作和维护你的解决方案提供了丰富的功能。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]提供以下你可以结合使用的集成服务[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 有关详细信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]集成服务，请参阅[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]帮助。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 提供以下集成服务，你可以将这些集成服务与 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 结合起来使用。 有关详细信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]集成服务，请参阅[BizTalk Accelerator for RosettaNet ](microsoft-biztalk-accelerator-for-rosettanet-documentation.md)。
   
 ## <a name="message-integration"></a>消息集成  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 通过自动交换消息集成了不同的实体（部门、业务合作伙伴和供应商）。 它使用 XML 作为公用通信协议。 它使用 XML 架构定义 (XSD) 架构来描述和验证消息，同时使用 XSL 转换 (XSLT) 在一条消息与另一条消息间转换数据。  
@@ -43,16 +35,15 @@ ms.lasthandoff: 12/01/2017
   
  使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你可以动态地更改基于业务规则的流程。 这就可以让你根据业务需要灵活地更改业务流程中采取的操作。 限制只对超过特定阈值以上的订单进行订单开票审批流程就是一个例子。  
   
- 通过使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你可以将人工操作包括在工作流服务范围内的自动业务流程之中。 有关详细信息，请参阅 [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 帮助中的“工作流服务 (HWS)”。  
   
 ## <a name="integration-of-heterogeneous-systems"></a>异构系统的集成  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]可以将集成在其系统传输不同通信协议中的数据对异类环境中的 IT 系统。 这是通过使用适配器连接使用不同协议的系统而实现的。 它支持使用 File、FTP、HTTP、SMTP、SOAP 和 SQL 适配器。 你可以使用 BizTalk 适配器框架来创建自定义的适配器。 有关详细信息，请参阅 [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 帮助中的“使用适配器框架开发适配器”。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 可以将集成在其系统传输不同通信协议中的数据对异类环境中的 IT 系统。 这是通过使用适配器连接使用不同协议的系统而实现的。 它支持使用 File、FTP、HTTP、SMTP、SOAP 和 SQL 适配器。 你可以使用 BizTalk 适配器框架来创建自定义的适配器。 有关详细信息，请参阅[创建自定义适配器](../../core/developing-custom-adapters.md)。
   
 ## <a name="role-based-tools"></a>基于角色的工具  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]是在其中开发人员、 IT 专业人员和业务专业人员协作创建、 实现、 操作、 维护和自定义系统开发和执行环境。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]其中每个角色提供自定义其使用的工具。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 是在其中开发人员、 IT 专业人员和业务专业人员协作创建、 实现、 操作、 维护和自定义系统开发和执行环境。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 其中每个角色提供自定义其使用的工具。  
   
- 有关详细信息，请参阅[A Role-Based 产品和 #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)，和[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]帮助。  
+ 有关详细信息，请参阅[A Role-Based 产品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)，和[有关 RosettaNet 快捷键](../../adapters-and-accelerators/accelerator-rosettanet/learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BizTalk Server 如何解决的业务需要](../../adapters-and-accelerators/accelerator-rosettanet/how-biztalk-server-solves-the-business-need1.md)   
  [BizTalk Accelerator for RosettaNet 向 BizTalk Server 添加的功能](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)

@@ -1,22 +1,23 @@
 ---
-title: "清单： 安装和配置 HYPER-V 上的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 清单： 安装和配置 HYPER-V 上的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b5ddbb5-3752-4294-ae6a-c14363b3ddc9
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2d96d0156033af5638f471998c065201fafbd1e
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: cb6f268a532eec3c633197320abb99fff563063b
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848997"
 ---
 # <a name="checklist-best-practices-for-installing-and-configuring-biztalk-server-on-hyper-v"></a>清单： 安装和配置 HYPER-V 上的 BizTalk Server 的最佳做法
 下面的部分是安装的摘要和中所述的配置要求[HYPER-V 上部署 BizTalk Server](../technical-guides/deploying-biztalk-server-on-hyper-v.md)本指南的部分。 应将这些用作时安装、 配置和部署的快速参考[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 HYPER-V 环境中。 有关详细信息提供了指向相关部分。  
@@ -34,9 +35,9 @@ ms.lasthandoff: 11/07/2017
   
 |步骤|参考|  
 |----------|---------------|  
-|使用固定的大小虚拟硬盘 (VHD) 提供相比为操作系统驱动器动态调整大小的 Vhd 的改进的性能。|请参阅[HYPER-V 存储 I/O 性能](https://docs.microsoft.com/en-us/windows-server/administration/performance-tuning/role/hyper-v-server/storage-io-performance)有关指南： <br />**固定大小的 VHD**<br />创建 VHD 文件时，首先分配为 VHD 的空间。 这种类型的 VHD 是不太 apt 拆分，这将降低 I/O 吞吐量，当一个单一的 I/O 被拆分为多个 I/o。 它具有三种的 VHD 类型的最低 CPU 开销，因为读取和写入不需要查找的块的映射。|  
-|使用固定大小虚拟硬盘 (VHD) 磁盘进行高的磁盘 I/O 活动并配置为使用 SCSI 控制器的数据卷的磁盘。 对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，应将每个 VHD 附加到更好的总体性能的单独合成 SCSI 控制器。 此外，每个 VHD 应存储在单独的物理磁盘上。|请参阅[HYPER-V 存储 I/O 性能](https://docs.microsoft.com/en-us/windows-server/administration/performance-tuning/role/hyper-v-server/storage-io-performance)有关指南：<br />**合成 SCSI 控制器**<br />综合存储控制器上减少 CPU 开销低于模拟的 IDE 设备使用的存储 I/o 提供显著提高性能。 VM 集成服务包括启用为此存储设备驱动程序和所需的来宾操作系统可以检测到它。 必须在 IDE 设备要正常，启动的操作系统上安装操作系统磁盘，但 VM 集成服务加载到综合存储设备的 IDE 设备 i/0，则重新确定筛选器驱动程序。<br />我们强烈建议你装载直接到综合的 SCSI 控制器的数据驱动器，因为该配置已减少 CPU 开销。 如果其预期的 I/O 率很高，你还应装载日志文件和操作系统分页文件直接到综合的 SCSI 控制器。<br />对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，应将每个 VHD 附加到更好的总体性能的单独合成 SCSI 控制器。 此外，每个 VHD 应存储在单独的物理磁盘上。|  
-|SCSI 控制器用于将 VHD 磁盘用于高 I/O 行为，如附加 SQL Server 数据和日志文件。 **注意：**不要将系统磁盘连接到 SCSI 控制器。 包含操作系统虚拟硬盘必须连接到 IDE 控制器。|即使 HYPER-V IDE 控制器和 SCSI 控制器提供水平相当的性能，如果已安装 HYPER-V 集成服务，可以仅将安装的 SCSI 控制器。 因此，附加传递磁盘的 SCSI 控制器的使用将确保 HYPER-V 集成服务安装这反过来将确保最佳磁盘 I/O 性能。|  
+|使用固定的大小虚拟硬盘 (VHD) 提供相比为操作系统驱动器动态调整大小的 Vhd 的改进的性能。|请参阅[HYPER-V 存储 I/O 性能](https://docs.microsoft.com/windows-server/administration/performance-tuning/role/hyper-v-server/storage-io-performance)有关指南： <br />**固定大小的 VHD**<br />创建 VHD 文件时，首先分配为 VHD 的空间。 这种类型的 VHD 是不太 apt 拆分，这将降低 I/O 吞吐量，当一个单一的 I/O 被拆分为多个 I/o。 它具有三种的 VHD 类型的最低 CPU 开销，因为读取和写入不需要查找的块的映射。|  
+|使用固定大小虚拟硬盘 (VHD) 磁盘进行高的磁盘 I/O 活动并配置为使用 SCSI 控制器的数据卷的磁盘。 对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，应将每个 VHD 附加到更好的总体性能的单独合成 SCSI 控制器。 此外，每个 VHD 应存储在单独的物理磁盘上。|请参阅[HYPER-V 存储 I/O 性能](https://docs.microsoft.com/windows-server/administration/performance-tuning/role/hyper-v-server/storage-io-performance)有关指南：<br />**合成 SCSI 控制器**<br />综合存储控制器上减少 CPU 开销低于模拟的 IDE 设备使用的存储 I/o 提供显著提高性能。 VM 集成服务包括启用为此存储设备驱动程序和所需的来宾操作系统可以检测到它。 必须在 IDE 设备要正常，启动的操作系统上安装操作系统磁盘，但 VM 集成服务加载到综合存储设备的 IDE 设备 i/0，则重新确定筛选器驱动程序。<br />我们强烈建议你装载直接到综合的 SCSI 控制器的数据驱动器，因为该配置已减少 CPU 开销。 如果其预期的 I/O 率很高，你还应装载日志文件和操作系统分页文件直接到综合的 SCSI 控制器。<br />对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，应将每个 VHD 附加到更好的总体性能的单独合成 SCSI 控制器。 此外，每个 VHD 应存储在单独的物理磁盘上。|  
+|SCSI 控制器用于将 VHD 磁盘用于高 I/O 行为，如附加 SQL Server 数据和日志文件。 **注意：** 不要将系统磁盘连接到 SCSI 控制器。 包含操作系统虚拟硬盘必须连接到 IDE 控制器。|即使 HYPER-V IDE 控制器和 SCSI 控制器提供水平相当的性能，如果已安装 HYPER-V 集成服务，可以仅将安装的 SCSI 控制器。 因此，附加传递磁盘的 SCSI 控制器的使用将确保 HYPER-V 集成服务安装这反过来将确保最佳磁盘 I/O 性能。|  
 |配置虚拟机的网络时，请使用网络适配器而不是旧版网络适配器。 旧版网络适配器用于不支持集成组件的操作系统。|**合成网络适配器**<br />相比到仿真的网络适配器，以模拟现有硬件，专为虚拟机以实现显著设计的合成网络适配器能减少 CPU 开销的 HYPER-V 功能将网络 I/O。 合成网络适配器之间的子和根分区通过 VMBus 通过使用共享的内存更高效的数据传输进行通信。 仿真的网络适配器应通过的 VM 的设置对话框删除并替换的合成网络适配器。 来宾要求安装 VM 集成服务。|  
 |确保 integration services 在任何启用的来宾操作系统上安装和验证安装了集成服务的最新版本。 若要检查的集成服务的最新版本，请运行**Windows Update**。|请参阅[HYPER-V 处理器性能](https://docs.microsoft.com/windows-server/administration/performance-tuning/role/hyper-v-server/processor-performance)有关指南：<br />**启用的来宾**<br />可能会建议你使用 Windows Server 作为来宾操作系统。 启蒙降低在 VM 中运行的 Windows 的 CPU 开销。 集成服务提供其他启蒙针对 I/O。 具体取决于服务器负载，则可以适当是托管服务器应用程序在 Windows Server 的来宾即可获得更好的性能。|  
 |只要有可能，配置到可用的逻辑处理器的虚拟处理器的 1-1 分配。|有关配置虚拟处理器分配给可用的逻辑处理器的 1 对 1 分配的详细信息，请参阅中的"优化处理器性能"部分[清单： HYPER-V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。|  

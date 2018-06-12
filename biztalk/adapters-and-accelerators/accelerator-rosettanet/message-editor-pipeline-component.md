@@ -1,11 +1,11 @@
 ---
-title: "消息编辑器管道组件 |Microsoft 文档"
-ms.custom: 
+title: 消息编辑器管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, Message Editor Pipeline Component
@@ -13,15 +13,16 @@ helpviewer_keywords:
 - messages, editing
 - pipelines, Message Editor Pipeline Component
 ms.assetid: f2b22dea-54e8-410b-868f-2978139f438b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f5877fe04a87a8387340c8e4b004300f41e609e
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7f7685fbf800ad69b20eda31e9b64cb75ec7c511
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855680"
 ---
 # <a name="message-editor-pipeline-component"></a>消息编辑器管道组件
 此组件可用于在发送或接收管道内自动编辑多部分消息的任何部分。 向现有管道添加此组件可以在典型处理中设置替换部分。  
@@ -35,11 +36,11 @@ ms.lasthandoff: 12/01/2017
   
 2.  上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
-3.  对于 RosettaNet\SDK\Message 编辑器管道组件，选择将移到 C:\Program Files\Microsoft BizTalk 2013 Accelerator **MessageEditor.csproj**，然后单击**打开**。  
+3.  将移动到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Message 编辑器管道组件选择**MessageEditor.csproj**，然后单击**打开**.  
   
 4.  启动 Visual Studio 命令提示符。  
   
-5.  在命令提示符处，转到 C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug。  
+5.  在命令提示符下，将移到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\Message 编辑器管道 Component\obj\debug 快捷键。  
   
 6.  在命令提示符处，键入**sn-k MessageEditor.snk**创建密钥，，然后按 enter 键。  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
   
 8.  在**MessageEditor 属性**页上，单击**签名**选项卡上，并依次**对程序集签名**复选框。  
   
-9. 在**选择强名称密钥文件**下拉列表、 浏览到 C:\Program Files\Microsoft BizTalk 2013 Accelerator RosettaNet\ SDK\Message 编辑器管道 Component\obj\debug 和选择**MessageEditor.snk** ，然后单击**打开**。  
+9. 在**选择强名称密钥文件**下拉列表中，浏览到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\ SDK\Message 编辑器管道 Component\obj\debug 和选择的快捷键**MessageEditor.snk** ，然后单击**打开**。  
   
 10. 在解决方案资源管理器，右键单击**MessageEditor**，然后单击**生成**。 在输出窗格中检验该生成操作是否成功。  
   
@@ -93,5 +94,5 @@ ms.lasthandoff: 12/01/2017
   
  若要获取完整的 XPath 查询，请在 BizTalk 编辑器中打开该架构，然后从“属性”窗口下的 `Instance XPath` 属性中复制 Xpath。 你提供的 XPath 查询应在其中具有所有命名空间引用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

@@ -17,15 +17,16 @@ helpviewer_keywords:
 - ports, deleting
 - BTARN, BtarnClean utility
 ms.assetid: fbecbb88-9b18-4b4b-a286-0bfa783f2320
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fa8e448d4799329a798cc7b33f222b42c4a28b4
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: dc3759d13498b6582eeb87fe162d287d64550044
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855552"
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]项目关闭计算机。 此过程包括以下操作：  
@@ -37,21 +38,21 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
 -   取消所有部署[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]。Solutions.BTARN.* 程序集  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*drive*\>\Program Files\ Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
+ \<*驱动器*\>\Program Files (x86) \ Microsoft BizTalk\<版本\>RosettaNet\SDK 快捷键  
   
 ## <a name="running-btarnclean"></a>运行 BtarnClean  
   
 #### <a name="to-run-btarnclean"></a>运行 BtarnClean  
   
-1.  開啟命令提示字元。  
+1.  打开命令提示符。  
   
-2.  将移动到\<*驱动器*\>\ 程序 Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
+2.  将移动到\<*驱动器*\>\ Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 3.  在命令提示符处，键入**BtarnClean**，然后按 ENTER。  
   
      该实用工具会提示你确认是否要继续。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>Remarks  
  如果运行 BtarnClean 实用工具的计算机上具有依赖于其他项目的 BizTalk 项目，则 BtarnClean 将指示无法删除该项目。 该实用工具会将该项目留在原处，然后继续删除其他项目。 你可以先删除依赖项目，然后再次运行该实用工具。  
   
  如果运行 BtarnClean 实用工具的计算机是多计算机部署的组成部分，则删除这些项目将影响该部署中的其余服务器。  
@@ -62,5 +63,5 @@ BtarnClean 实用程序用于清理[!INCLUDE[btsCoName](../../includes/btsconame
   
  如果要在运行该实用工具后取消对 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的配置，请从 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 文件夹运行 Configuration.exe /u。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

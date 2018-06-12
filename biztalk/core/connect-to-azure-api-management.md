@@ -1,23 +1,24 @@
 ---
-title: "发布 SOAP 终结点 API 管理 |Microsoft 文档"
-description: "使用功能包 1 和功能包 2，以公开 BizTalk WCF Basic HTTP 接收 SOAP 终结点在 API 管理中的位置。 你可以使用 BizTalk 管理控制台中，执行此操作，或在 Azure 门户中粘贴你直接在 API 管理中的终结点。"
-ms.custom: 
+title: 发布 SOAP 终结点 API 管理 |Microsoft 文档
+description: 使用功能包 1 和功能包 2，以公开 BizTalk WCF Basic HTTP 接收 SOAP 终结点在 API 管理中的位置。 你可以使用 BizTalk 管理控制台中，执行此操作，或在 Azure 门户中粘贴你直接在 API 管理中的终结点。
+ms.custom: ''
 ms.date: 11/21/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a87bfb40-7e6f-46aa-8ac7-db6d13ce7eb2
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: valrobb
 manager: anneta
-ms.openlocfilehash: 8ac1e824ad11ef18eac6deb1252101bbd1ec187a
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: eb716729dcdbac07c5b17cf267866cf282046a70
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848949"
 ---
 # <a name="publish-biztalk-soap-endpoints-in-api-management"></a>在 API 管理中发布 BizTalk SOAP 终结点
 
@@ -28,10 +29,10 @@ ms.lasthandoff: 11/21/2017
 **从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2**，您可以公开 WCF BasicHTTP 接收为终结点，使用 BizTalk 管理 Azure API 管理中的位置。 
 
 > [!TIP]
-> [什么是 API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)是一个很好的资源，若要了解，并了解有关此 Azure 服务的详细信息。
+> [什么是 API 管理](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)是一个很好的资源，若要了解，并了解有关此 Azure 服务的详细信息。
 
-## <a name="prerequisites"></a>先决条件
-* 配置并设置[Azure API 管理](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started)
+## <a name="prerequisites"></a>必要條件
+* 配置并设置[Azure API 管理](https://docs.microsoft.com/azure/api-management/api-management-get-started)
 * 创建[虚拟网络](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet)BizTalk 计算机和 API 管理实例之间
 * 安装[功能包 2](https://aka.ms/bts2016fp2) BizTalk 服务器上
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 11/21/2017
 3. 选择**发布**。 接收位置成功后，将显示为中的 API 管理服务[Azure 门户](https://portal.azure.com)。 
 
 ## <a name="do-more"></a>执行更多操作
-Azure API 管理是功能强大的服务所使用的 Azure 服务，包括 Logic Apps 很多。 API 管理包括许多功能，包括速率限制和配额，有权访问您的 Api、 缓存、 和的详细信息。 请参阅[API Management 是什么？](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)吧。
+Azure API 管理是功能强大的服务所使用的 Azure 服务，包括 Logic Apps 很多。 API 管理包括许多功能，包括速率限制和配额，有权访问您的 Api、 缓存、 和的详细信息。 请参阅[API Management 是什么？](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)吧。
 
 ## <a name="see-also"></a>另请参阅
 [配置功能包](configure-the-feature-pack.md)

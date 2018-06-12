@@ -1,11 +1,11 @@
 ---
-title: "消息检查器管道组件 |Microsoft 文档"
-ms.custom: 
+title: 消息检查器管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -14,15 +14,16 @@ helpviewer_keywords:
 - Message Inspector Pipeline Component
 - pipelines, creating
 ms.assetid: d9c00718-c8cd-4289-8f58-e4edc61b9a05
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc9e1a520153220bcc86d844ca94203ff2b78548
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: bb6b8a2d9bcd503b1b295110665827ead3e85ee6
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855616"
 ---
 # <a name="message-inspector-pipeline-component"></a>消息检查器管道组件
 使用此管道组件，你可以检查由多个部分组成的消息的所有部分和消息上下文，以便确定消息是否存在问题。 你可以用此组件来排除故障。  
@@ -40,27 +41,27 @@ ms.lasthandoff: 12/01/2017
   
 2.  上**文件**菜单上，指向**打开**，然后单击**项目**。  
   
-3.  将移动到 C:\Program Files\Microsoft BizTalk 2013 Accelerator 进行 RosettaNet\SDK\Message 检查器管道组件，选择**MessageInspector.csproj**，然后单击**打开**。  
+3.  将移动到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Message 检查器管道组件，选择**MessageInspector.csproj**，然后单击**打开**。  
   
 4.  打开 Visual Studio 命令提示符。  
   
-5.  在命令提示符处，转到 C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug。  
+5.  在命令提示符下，将移到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\Message 检查器管道 Component\obj\debug 快捷键。  
   
-6.  在命令提示符处，键入**"sn-k MessageInspector.snk"**创建密钥，，然后按 enter 键。  
+6.  在命令提示符处，键入 **"sn-k MessageInspector.snk"** 创建密钥，，然后按 enter 键。  
   
 7.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，在解决方案资源管理器，右键单击**MessageInspector**，然后单击**属性**。  
   
 8.  在**MessageInspector 属性**页上，单击**签名**选项卡上，并依次**对程序集签名**复选框。  
   
-9. 在**选择强名称密钥文件**下拉列表，浏览到 C:\Program Files\Microsoft BizTalk 2013 Accelerator RosettaNet\SDK\Message 检查器管道 Component\obj\debug 并选择**MessageInspector.snk** ，然后单击**打开**。  
+9. 在**选择强名称密钥文件**下拉列表中，浏览到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\Message 检查器管道 Component\obj\debug 和选择的快捷键**MessageInspector.snk** ，然后单击**打开**。  
   
 10. 在解决方案资源管理器中，右键单击**MessageInspector**，然后单击**生成**。 在输出窗格中检验该生成操作是否成功。  
   
 11. 单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
   
-12. 在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器中，移动到 C:\Program Files\Microsoft BizTalk 2013 Accelerator 为 RosettaNet\SDK\Message 检查器管道 Component\obj\debug，右键单击**Microsoft.Solutions.BTARN.SDK.MessageInspector.dll**，然后单击**复制**。  
+12. 在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器中，移动到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Message 检查器管道 Component\obj\debug，右键单击**Microsoft.Solutions.BTARN.SDK.MessageInspector.dll**，然后单击**复制**。  
   
-13. 将移动到 C:\Program Files\Microsoft BizTalk 2013 Accelerator 进行 RosettaNet\Pipeline 组件中，右键单击**管道组件**，然后单击**粘贴**。  
+13. 将移动到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\Pipeline 组件，右键单击**管道组件**，然后单击**粘贴**.  
   
 14. 在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]上**文件**菜单上，指向**新建**，然后单击**项目**。  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 12/01/2017
   
 22. 在**属性页**对话框中，单击**通用属性**，然后单击**程序集**。  
   
-23. 在右窗格中，与关联的文本框中**程序集密钥文件**，单击省略号，将移动到 C:\Program Files\Microsoft BizTalk 2013 Accelerator 进行 RosettaNet\SDK\Message 检查器管道 Component\obj\debug，选择**MessageInspector.snk**，然后单击**确定**。  
+23. 在右窗格中，与关联的文本框中**程序集密钥文件**，单击省略号，将移到 C:\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Message 检查器管道 Component\obj\debug，选择**MessageInspector.snk**，然后单击**确定**。  
   
 24. 在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]管道设计器中，选择**BTARN 消息检查器组件**形状。  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 12/01/2017
   
 31. 在**发送端口属性**对话框中，在**名称**框中，键入发送端口的名称与**主**选择左窗格中，单击**传输类型**在右窗格中，选择**文件**。  
   
-32. 在**发送端口属性**对话框中，在**地址 (URI)**框中，单击省略号按钮 (**...**).  
+32. 在**发送端口属性**对话框中，在**地址 (URI)** 框中，单击省略号按钮 (**...**).  
   
 33. 在**文件传输属性**对话框中，键入**目标**文件夹名称，单击**发送**在左窗格中，然后为**发送管道**在右窗格中，选择刚创建的自定义管道。  
   
@@ -111,8 +112,8 @@ ms.lasthandoff: 12/01/2017
   
 36. 在 BizTalk 资源管理器中，右键单击你刚刚创建的发送端口，请单击**Enlist**，再次右键单击发送端口，，然后单击**启动**。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>Remarks  
  在常规的处理操作中，你一次只能检查消息的一部分，即已在业务流程中指定为消息正文的部分。 因此，你只能在 BizTalk 管理控制台中检查消息的各个部分中的一个，这样，排除故障的能力就受到限制。 消息检查器管道组件可以帮助你突破此限制。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

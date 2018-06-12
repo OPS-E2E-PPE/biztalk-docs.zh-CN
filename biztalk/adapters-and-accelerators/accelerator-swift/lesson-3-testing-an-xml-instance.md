@@ -1,28 +1,29 @@
 ---
-title: "第 3 课： 测试 XML 实例 |Microsoft 文档"
-ms.custom: 
+title: 第 3 课： 测试 XML 实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, XML instances
 - XML instances
 ms.assetid: 19d7dd18-17dc-4355-a4f1-5c5e6750faf3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 948ea484b5cc3138a73a67b384705ed73d9478b2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: dcb9d5ada3054219b1387d92f4244475037c26ac
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848893"
 ---
 # <a name="lesson-3-testing-an-xml-instance"></a>第 3 课： 测试 XML 实例
-在本课程中，你可以提交到该文件的 XML 格式的消息接收端口在前面的课程中创建有效 MT103。 此操作测试你在前一模块中创建的发送管道。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]以平面文件输出写入为前一模块中的发送端口选择的输出文件夹中。  
+在本课程中，你可以提交到该文件的 XML 格式的消息接收端口在前面的课程中创建有效 MT103。 此操作测试你在前一模块中创建的发送管道。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 以平面文件输出写入为前一模块中的发送端口选择的输出文件夹中。  
   
  启动文件通过将 SWIFT XML 格式的文件复制到入站文件夹接收适配器。 此操作会导致系统将有效的 SWIFT 平面文件复制到出站的文件夹。  
   
@@ -40,4 +41,4 @@ ms.lasthandoff: 11/28/2017
   
 6.  请验证两个文件在记事本中的包含相同的内容。  
   
- 继续执行[模块 8： 修复了无效的消息](http://msdn.microsoft.com/en-us/fb531b22-ac7a-4620-b395-87aebf56077d)。
+ 继续执行[模块 8： 修复了无效的消息](http://msdn.microsoft.com/fb531b22-ac7a-4620-b395-87aebf56077d)。

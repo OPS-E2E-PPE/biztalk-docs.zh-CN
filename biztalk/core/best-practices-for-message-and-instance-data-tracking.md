@@ -1,25 +1,26 @@
 ---
-title: "消息和实例数据跟踪的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 消息和实例数据跟踪的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HAT, best practices
 - best practices, HAT
 ms.assetid: 2ac5c87b-2059-4912-9cec-2ae4eaac56df
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a6f673b0a70903575918eb87dc4bd8edc9841e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 680958d2950edffeaa56c7c3b8d7f8da40967173
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34849013"
 ---
 # <a name="best-practices-for-message-and-instance-data-tracking"></a>消息和实例数据跟踪的最佳实践
 请查看以下使用历史数据和跟踪数据的最佳操作。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   **配置跟踪以适合你的业务需求**  
   
-    -   可以查看历史数据和跟踪数据前，必须先使用 BizTalk Server 管理控制台配置跟踪。 启用或禁用跟踪选项时，要时刻牢记几个注意事项。 跟踪的数据越多，BizTalk 跟踪 (BizTalkDTADb) 数据库的大小增长的越快，这将对系统的运行时性能产生不利影响。 有关详细信息，请参阅[配置跟踪使用 BizTalk Server 管理控制台](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)。  
+    -   可以查看历史数据和跟踪数据前，必须先使用 BizTalk Server 管理控制台配置跟踪。 启用或禁用跟踪选项时，要时刻牢记几个注意事项。 跟踪的数据越多，BizTalk 跟踪 (BizTalkDTADb) 数据库的大小增长的越快，这将对系统的运行时性能产生不利影响。 有关详细信息，请参阅[配置跟踪使用 BizTalk Server 管理控制台](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)。  
   
 -   **选择适当类型的跟踪以进行故障排除或审核**  
   
@@ -52,5 +53,5 @@ ms.lasthandoff: 09/20/2017
   
     -   如果启用了跟踪，则应定期存档和清除 BizTalk 跟踪数据库中的数据，以使该数据库保持适当的大小，这有助于改善系统性能。 有关详细信息，请参阅[存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查看跟踪的消息和实例数据](../core/viewing-tracked-message-and-instance-data.md)

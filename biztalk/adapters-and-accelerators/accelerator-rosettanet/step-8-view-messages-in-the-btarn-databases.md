@@ -1,26 +1,27 @@
 ---
-title: "步骤 8： 在 BTARN 数据库中查看消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 在 BTARN 数据库中查看消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, viewing
 - loopback tutorial, viewing messages
 - databases, viewing messages
 ms.assetid: c549670c-4428-483c-906c-eff163ddef9a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2324cca59a9104d8f40b5b6b69eca76af1004384
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 018bd2515dc2c363474c8058a861fd763cb73352
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855440"
 ---
 # <a name="step-8-view-messages-in-the-btarn-databases"></a>BTARN 数据库中的步骤 8： 查看消息
 在此步骤中，您将使用 SQL 查询分析器查看存储在 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 数据库中的业务线 (LOB) 消息，以检验您的环回方案是否正常运行。  
@@ -52,14 +53,14 @@ ms.lasthandoff: 09/20/2017
 -   SQL 发送端口根据订阅筛选器提取消息。 然后将消息保存到 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] DATA 数据库的 MessagesToLOB 表中。  
   
 > [!NOTE]
->  在响应方端中，公共响应方负责生成确认接收或返回到发起方的异常信号。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]不保存信号消息 MessagesFromLOB 表中。 这是因为 LOB 应用程序不生成信号消息。 操作消息将继续通过专用响应方，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将操作消息保存到 MessagesToLOB 表中。  
+>  在响应方端中，公共响应方负责生成确认接收或返回到发起方的异常信号。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不保存信号消息 MessagesFromLOB 表中。 这是因为 LOB 应用程序不生成信号消息。 操作消息将继续通过专用响应方，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将操作消息保存到 MessagesToLOB 表中。  
   
 > [!NOTE]
->  对于双操作 Pip 在响应方端 LOB 负责生成响应消息。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将它放置于 MessagesFromLOB 表，以便通过与发起方端过程相同的进程。 在这种情况下，发起方方面的公用发起方流程将返回响应消息的确认回执或异常信号。  
+>  对于双操作 Pip 在响应方端 LOB 负责生成响应消息。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将它放置于 MessagesFromLOB 表，以便通过与发起方端过程相同的进程。 在这种情况下，发起方方面的公用发起方流程将返回响应消息的确认回执或异常信号。  
   
 ### <a name="to-view-messages-in-the-btarn-databases"></a>在 BTARN 数据库中查看消息  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
+1.  单击**启动**，指向**所有程序**，指向**Microsoft SQL Server\<版本\>**，然后单击**SQL ServerManagement Studio**。  
   
 2.  在连接到服务器对话框中，单击**连接**。  
   
@@ -85,6 +86,6 @@ ms.lasthandoff: 09/20/2017
   
  您将在 MessagesFromLOB 表中看到一条操作消息，如果几分钟后（此时间取决于您的系统配置）再次运行查询，您将在 MessagesToLOB 表中看到所生成的两条消息，其 MessageCategory 值分别为 AsyncAckSignal (25) 和 AsyncAction (10)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [环回](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)   
- [环回教程](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)
+ [Loopback 教程](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)

@@ -1,23 +1,24 @@
 ---
-title: "性能工具 |Microsoft 文档"
-description: "调查 BizTalk Server 使用 BizUnit、 IOMeter、 业务流程探查器、 Log Parser、 LoadGen 和 SQL 工具的性能问题"
-ms.custom: 
+title: 性能工具 |Microsoft 文档
+description: 调查 BizTalk Server 使用 BizUnit、 IOMeter、 业务流程探查器、 Log Parser、 LoadGen 和 SQL 工具的性能问题
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d26c17a-3eb9-41a5-b0dc-31b974bf3d9b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bc63c4473d1a48b65024d4e9f7ee67bbb1d722
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: c5cff86a15aed9a131ed16086d1aebb33739f5f2
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848933"
 ---
 # <a name="performance-tools"></a>性能工具
 本主题提供有关可用于评估 BizTalk Server 解决方案的性能的工具的信息。 本主题中所述的工具有不同的目的;一些旨在评估端到端性能，而其他专注于评估的 BizTalk Server 解决方案的特定方面的性能。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/01/2017
 >  使用此工具不支持由 Microsoft 和 Microsoft 则没有此程序的适用性的保证。 使用此程序风险自负。  
   
 ## <a name="iometer"></a>IOMeter  
- IOMeter 是用于测量磁盘输入/输出性能的开放源工具。 请参阅[http://www.iometer.org](http://www.iometer.org/)。
+ IOMeter 是用于测量磁盘输入/输出性能的开放源工具。 请参阅[ http://www.iometer.org ](http://www.iometer.org/)。
   
 > [!NOTE]  
 >  使用此工具不支持由 Microsoft 和 Microsoft 则没有此程序的适用性的保证。 使用此程序风险自负。  
@@ -71,7 +72,7 @@ Windows 性能工具旨在为大量的性能问题，包括应用程序开始时
 请参阅[Windows 性能分析](https://docs.microsoft.com/windows-hardware/test/weg/performance-tools)。
   
 ## <a name="sql-server-tools-for-performance-monitoring-and-tuning"></a>性能监视和优化的 SQL Server 工具  
- SQL Server 提供几种工具，用于监视 SQL Server 中的事件和优化物理数据库设计。 请参阅[性能监视和优化工具](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)。 
+ SQL Server 提供几种工具，用于监视 SQL Server 中的事件和优化物理数据库设计。 请参阅[性能监视和优化工具](https://docs.microsoft.com/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)。 
   
 ### <a name="sql-profiler"></a>SQL Profiler  
  Microsoft SQL Server 事件探查器可以用于捕获发送到 SQL Server 的 TRANSACT-SQL 语句和 SQL Server 结果设置从这些语句。 由于 SQL Server 与 SQL Server 紧密集成，SQL Server 配置文件跟踪的分析可能用于分析在 BizTalk Server 中读取和写入 SQL Server 数据库时可能发生的问题的有用工具。 请参阅[使用 SQL Server 事件探查器](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler-templates-and-permissions)。
@@ -96,5 +97,5 @@ SQL Server 提供了可用于获取和保存数据，则通过多个来源收集
 ### <a name="sqlio"></a>SQLIO  
  由 Microsoft 评估给定配置的 I/O 容量开发 SQLIO 工具。 该工具的名称可以看出，SQLIO 是用于测量的文件系统 I/O 对 SQL Server 性能的影响的重要工具。 下载[SQLIO](https://www.microsoft.com/download/details.aspx?id=20163)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查找并消除瓶颈](../technical-guides/finding-and-eliminating-bottlenecks.md)

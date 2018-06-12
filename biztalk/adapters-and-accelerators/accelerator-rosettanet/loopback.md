@@ -1,11 +1,11 @@
 ---
-title: "环回 |Microsoft 文档"
-ms.custom: 
+title: 环回 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, 0A1 agreements
@@ -23,15 +23,16 @@ helpviewer_keywords:
 - syntax [loopbacks]
 - agreements, Loopback utility
 ms.assetid: b4ebbdac-05be-4dfc-a133-6b752994e85a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23c2f18d8422440f9a40645642787723642f3ee6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b4fcd620ff90a4ca1650e4a93ad05194c1749774
+ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34855648"
 ---
 # <a name="loopback"></a>环回
 使用 Loopback 实用工具可以自动生成环回协议，它是本组织到合作伙伴协议的镜像副本。 这使你能够在单个计算机上执行本组织到合作伙伴以及合作伙伴到本组织的消息交换。 此实用工具可以用于带有 0A1 消息的方案，也可以用于不带 0A1 消息的方案。 你可以为操作-消息（非 0A1）协议或 0A1 协议创建环回协议。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
  使用该实用工具还可以登记或取消登记发件人角色的本组织。 当你使用该实用程序启用本组织时，它将创建两个发送端口，\<主\>。异步和\<主页\>。同步的组织使用其合作伙伴与进行通信。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*\>\ 程序 Files\Microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键  
+ \<*驱动器*\>\ Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键  
   
 ## <a name="running-loopback"></a>运行环回  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  打开命令提示符。  
   
-2.  将移动到\<*驱动器*\>\ 程序 Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
+2.  将移动到\<*驱动器*\>\ Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 3.  在命令提示符处，键入**环回**，键入必选和相应的交换机，然后按 enter 键。  
   
@@ -63,16 +64,16 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
   
 |**语法**|**Description**|  
 |----------------|---------------------|  
-|**启用**|登记组织 < home_organization > 中指定的发件人角色。 它将创建两个发送端口，\<主页\>。异步和\<主页\>。同步伙伴用来返回到本组织进行通信。|  
-|**禁用**|取消登记发件人角色的本组织。|  
+|**enable**|登记组织 < home_organization > 中指定的发件人角色。 它将创建两个发送端口，\<主页\>。异步和\<主页\>。同步伙伴用来返回到本组织进行通信。|  
+|**disable**|取消登记发件人角色的本组织。|  
 |**home_organization**|要登记或取消登记的发件人角色的合作伙伴。|  
-|**镜像**|创建基于协议中指定的环回协议\< **agreement_name**\>。|  
+|**mirror**|创建基于协议中指定的环回协议\< **agreement_name**\>。|  
 |**unmirror**|删除基于协议中指定的环回协议\< **agreement_name\>**。|  
 |**agreement_name**|在环回方案中要镜像或取消镜像的协议。|  
-|**起**|集**0A1 协议**镜像到环回实用程序的操作消息协议属性\<0A1_agreement\>。 A **/NoF**交换机可以仅添加到环回命令还包含**/镜像**切换。|  
+|**起**|集**0A1 协议**镜像到环回实用程序的操作消息协议属性\<0A1_agreement\>。 A **/NoF**交换机可以仅添加到环回命令还包含 **/镜像**切换。|  
 |**0A1_agreement**|agreement_name 的镜像协议使用的 0A1 协议。 此协议是通过镜像响应方 0A1 协议而生成的。|  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>Remarks  
  Loopback 实用工具在创建环回协议时切换角色。 如果某组织在原始协议中是本组织，则该实用工具会使其成为环回协议中的合作伙伴组织。 同样，如果某组织在原始协议中是合作伙伴组织，则该实用工具会使其成为环回协议中的本组织。 该实用工具还会切换本组织角色的属性设置。 如果在原始协议中本组织角色属性是发起方，则该实用工具会将其更改为响应方，反之亦然。 而所有其他属性保持不变。  
   
  Loopback 实用工具将环回协议的名称命名为与原始协议相同，只是在前面加上“loopback:”。 为避免混淆，请不要将协议命名为以“loopback”开头。  
@@ -146,8 +147,8 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
   
 6.  使用 Loopback 实用工具创建用于合作伙伴组织的响应方 0A1 消息的协议。 为此，需要镜像本组织的 0A1 发起方协议。 这将创建新的 0A1 协议同名**环回：\<0A1 协议名称\>**。 `My organization`属性设置为合作伙伴，`Partner organization`属性设置为在主组织和`Home role`属性是**失败报表管理员 （响应方）**。  
   
-7.  使用 Loopback 实用工具创建用于合作伙伴组织的响应操作消息的协议。 在此命令中，还必须将 0A1 协议属性设置为合作伙伴的响应方 0A1 协议。 执行此操作通过镜像家庭的组织中，请求操作消息协议，并使用**/NoF**切换与合作伙伴的响应方 0A1 协议的名称。 这将创建新的响应操作消息协议同名**环回：\<协议名称\>**。 将 `My organization` 属性设置为合作伙伴，0A1 协议属性设置为合作伙伴的响应方 0A1 协议。  
+7.  使用 Loopback 实用工具创建用于合作伙伴组织的响应操作消息的协议。 在此命令中，还必须将 0A1 协议属性设置为合作伙伴的响应方 0A1 协议。 执行此操作通过镜像家庭的组织中，请求操作消息协议，并使用 **/NoF**切换与合作伙伴的响应方 0A1 协议的名称。 这将创建新的响应操作消息协议同名**环回：\<协议名称\>**。 将 `My organization` 属性设置为合作伙伴，0A1 协议属性设置为合作伙伴的响应方 0A1 协议。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   
  [Loopback 教程](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)

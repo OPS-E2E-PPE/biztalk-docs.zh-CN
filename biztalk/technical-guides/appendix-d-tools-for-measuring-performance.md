@@ -1,22 +1,23 @@
 ---
-title: "附录 d： 工具以衡量性能 |Microsoft 文档"
-ms.custom: 
+title: 附录 d： 工具以衡量性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 024f4a08-f3fd-4786-8549-0da5463c0bb9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19953e021a2416f777d9b28c14b1eb8516c70c81
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f34e2bcda68a9ce2b56af5987f26f071378a52df
+ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848885"
 ---
 # <a name="appendix-d-tools-for-measuring-performance"></a>附录 d： 以衡量性能的工具
 本主题介绍几种工具可用来监视和评估 BizTalk Server 环境的性能。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 12/01/2017
 >  使用此工具不支持由 Microsoft 和 Microsoft 则没有此程序的适用性的保证。 使用此程序风险自负。  
   
 ## <a name="iometer"></a>IOMeter  
- IOMeter 是用于测量磁盘输入/输出性能的开放源工具。 请参阅[http://www.iometer.org](http://www.iometer.org/)。
+ IOMeter 是用于测量磁盘输入/输出性能的开放源工具。 请参阅[ http://www.iometer.org ](http://www.iometer.org/)。
   
 > [!NOTE]  
 >  使用此工具不支持由 Microsoft 和 Microsoft 则没有此程序的适用性的保证。 使用此程序风险自负。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
  Pathping 上某个目标主机的方式提供有关在一个或多个路由器跃点处的数据可能丢失的信息。 为此，请 pathping 将 Internet 控制消息协议 (ICMP) 数据包发送到路径中的每个路由器中。 
   
 ## <a name="sql-server-tools-for-performance-monitoring-and-tuning"></a>性能监视和优化的 SQL Server 工具  
-SQL Server 提供几种工具，用于监视 SQL Server 中的事件和优化物理数据库设计。 请参阅[性能监视和优化工具](https://docs.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)。 
+SQL Server 提供几种工具，用于监视 SQL Server 中的事件和优化物理数据库设计。 请参阅[性能监视和优化工具](https://docs.microsoft.com/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)。 
   
 ### <a name="sql-profiler"></a>SQL Profiler  
  Microsoft SQL Server 事件探查器可以用于捕获发送到 SQL Server 的 TRANSACT-SQL 语句和 SQL Server 结果设置从这些语句。 由于 SQL Server 与 SQL Server 紧密集成，SQL Server 配置文件跟踪的分析可能用于分析在 BizTalk Server 中读取和写入 SQL Server 数据库时可能发生的问题的有用工具。 请参阅[使用 SQL Server 事件探查器](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler-templates-and-permissions)。
