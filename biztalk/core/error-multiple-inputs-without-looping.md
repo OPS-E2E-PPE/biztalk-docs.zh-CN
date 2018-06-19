@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240501"
 ---
 # <a name="error---multiple-inputs-without-looping"></a>错误-但不存在循环的多个输入
 **错误代码**  

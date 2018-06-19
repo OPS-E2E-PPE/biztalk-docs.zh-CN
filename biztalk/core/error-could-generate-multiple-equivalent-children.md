@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239765"
 ---
 # <a name="error---could-generate-multiple-equivalent-children"></a>错误-无法生成多个等效的子节点
 **错误代码**  

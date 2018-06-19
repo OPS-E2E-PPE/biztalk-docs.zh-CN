@@ -1,18 +1,18 @@
 ---
-title: "管理 BAM 数据库 |Microsoft 文档"
-ms.custom: 
+title: 管理 BAM 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], databases
 - databases [BAM], managing
 - databases, BAM
 ms.assetid: ce3c472e-2da1-4d67-816a-befe4ded20d9
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262573"
 ---
 # <a name="managing-bam-databases"></a>管理 BAM 数据库
 管理员使用 BAM 管理实用程序 (bm.exe) 可以安装、管理和更新 BAM 数据库。 本部分介绍如何使用 BAM 管理实用程序来执行 BAM 数据库的这些通用管理员任务，如下表所述。  

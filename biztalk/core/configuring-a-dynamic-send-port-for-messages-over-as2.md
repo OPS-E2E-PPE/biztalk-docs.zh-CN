@@ -1,14 +1,14 @@
 ---
-title: "通过 AS2 消息配置动态发送端口 |Microsoft 文档"
-ms.custom: 
+title: 通过 AS2 消息配置动态发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 246d64e8-70ca-48f4-8b72-d43b0964dbb4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233885"
 ---
 # <a name="configuring-a-dynamic-send-port-for-messages-over-as2"></a>通过 AS2 消息配置动态发送端口
 本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过动态发送端口发送 AS2 消息。 此配置包括创建动态发送端口和配置后端应用程序以设置相应的上下文属性。 在创建动态发送端口以发送 AS2 消息时，您必须升级特定属性才能使相应发送端口工作。 有关详细信息，请参阅[配置 BizTalk Server 发送 AS2 消息通过动态发送端口](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md#BKMK_Proc)下面。  
@@ -27,9 +28,9 @@ ms.lasthandoff: 09/20/2017
   
 |位置|属性|设置|  
 |--------------|--------------|-------------|  
-|**发送端口属性： 常规**|端口类型|-动态请求响应 (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)<br /><br /> -动态单向发送端口 (如果在请求 MDN**确认 (Mdn)**清除的单向协议选项卡中的页)|  
+|**发送端口属性： 常规**|端口类型|-动态请求响应 (如果在请求 MDN**确认 (Mdn)** 的单向协议选项卡中的页处于选定状态)<br /><br /> -动态单向发送端口 (如果在请求 MDN**确认 (Mdn)** 清除的单向协议选项卡中的页)|  
 |**发送端口属性： 常规**|发送管道|-AS2EdiSend （对于 EDI 编码消息）<br /><br /> -AS2Send （对于非 EDI 消息）|  
-|**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)|AS2Receive（用于动态要求响应发送端口）|  
+|**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)** 的单向协议选项卡中的页处于选定状态)|AS2Receive（用于动态要求响应发送端口）|  
 |**发送端口属性： 筛选器**|属性|BTS.MessageType|  
 |**发送端口属性： 筛选器**|运算符|==|  
 |**发送端口属性： 筛选器**|值|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>`（对于 EDI 消息）<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root`(对于 X12 确认)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root`（对于 EDIFACT 确认）|  

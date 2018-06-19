@@ -1,18 +1,18 @@
 ---
-title: "如何导出 BPEL4WS |Microsoft 文档"
-ms.custom: 
+title: 如何导出 BPEL4WS |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL4WS, exporting
 - BPEL4WS, restrictions
 - orchestrations, BPEL4WS
 ms.assetid: 4648dfcf-cf48-4471-b088-07252c080fb8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253829"
 ---
 # <a name="how-to-export-bpel4ws"></a>如何导出 BPEL4WS
 可以将现有的 BizTalk 业务流程导出到 BPEL4WS。  

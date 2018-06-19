@@ -1,14 +1,14 @@
 ---
-title: "如何安装群集实现 SSO 和相同的群集 Group1 中的 BizTalk 主机 |Microsoft 文档"
-ms.custom: 
+title: 如何安装群集实现 SSO 和相同的群集 Group1 中的 BizTalk 主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 413cc8f4-f343-4c1c-8b79-3b15cb4c101d
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250621"
 ---
 # <a name="how-to-cluster-sso-and-a-biztalk-host-in-the-same-cluster-group"></a>如何将 SSO 和 BizTalk 主机群集到同一群集组中
 利用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您可以将一台或多台 BizTalk 主机和企业单一登录 (SSO) 服务群集到同一个 Windows Server 群集中。  
@@ -143,10 +144,10 @@ ms.lasthandoff: 09/20/2017
   
     9. 单击**依赖关系**选项卡上的属性对话框中，单击**插入**。  
   
-    10. 单击下拉框下**资源**，选择**名称：**资源，然后单击**确定**。  
+    10. 单击下拉框下**资源**，选择**名称：** 资源，然后单击**确定**。  
   
         > [!IMPORTANT]
-        >  如果你不希望添加到依赖项**名称：**资源，当用户尝试联系 SSO 服务此群集的实例，SSO 客户端计算机将生成类似于以下错误：  
+        >  如果你不希望添加到依赖项**名称：** 资源，当用户尝试联系 SSO 服务此群集的实例，SSO 客户端计算机将生成类似于以下错误：  
         >   
         >  检索主密钥失败。  
         >   

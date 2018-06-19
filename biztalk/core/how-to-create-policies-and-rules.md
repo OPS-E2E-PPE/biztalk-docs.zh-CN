@@ -1,11 +1,11 @@
 ---
-title: "如何创建策略和规则 |Microsoft 文档"
-ms.custom: 
+title: 如何创建策略和规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, business rules
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - policies, arguments
 - policies, creating
 ms.assetid: 59f06a67-edde-443b-9fbb-55ec4429837a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250325"
 ---
 # <a name="how-to-create-policies-and-rules"></a>如何创建策略和规则
 你可以使用是逻辑运算符的逻辑分组的条件创建规则 (**AND**， **OR**，和**不**) 应用于谓词 （内置或用户定义函数或运算符），采用自变量 （内置或用户定义的事实引用）。 你还可以右键单击**条件**或逻辑运算符，然后从上下文菜单中选择的逻辑运算符或内置的谓词。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-a-rule-to-a-policy-version"></a>若要将规则添加到策略版本  
   
--   在策略资源管理器窗格中，展开 [**你的策略**]，右键单击**（不保存） 1.0 版**，然后选择**添加新规则**。  
+-   在策略资源管理器窗格中，展开 [**你的策略**]，右键单击 **（不保存） 1.0 版**，然后选择**添加新规则**。  
   
 ### <a name="to-add-a-logical-operator-to-a-rule-condition"></a>若要将一个逻辑运算符添加到规则条件  
   

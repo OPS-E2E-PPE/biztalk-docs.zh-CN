@@ -1,14 +1,14 @@
 ---
-title: "配置传出批处理 |Microsoft 文档"
-ms.custom: 
+title: 配置传出批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75e6f41a-0e24-47bf-9234-125791c62044
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234613"
 ---
 # <a name="configuring-an-outgoing-batch"></a>配置传出批
 若要定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将事务集批处理成 EDI 交换的方式，必须为协议创建一个或多个批配置。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与该协议关联并且符合批筛选条件的所有交换，将遵循该批配置的发布条件进行批处理和发布。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 -   日期和时间后进入的日期时间**启动**字段。  
   
--   日期和时间是在输入中的值之前**结束**字段或处理的批处理的数字是小于或等于的中的出现次数**（匹配项） 后的结束**字段或**无结束日期**选项。 所有三个选项下有**终止**部分。  
+-   日期和时间是在输入中的值之前**结束**字段或处理的批处理的数字是小于或等于的中的出现次数 **（匹配项） 后的结束**字段或**无结束日期**选项。 所有三个选项下有**终止**部分。  
   
  在中设置激活条件**批配置**页中的单向协议选项卡**协议属性**对话框。  
   
@@ -101,10 +102,10 @@ ms.lasthandoff: 09/20/2017
  你可以设置**启动**日期时间在将来为日期时间。 但是，如果你单击**启动**按钮时**启动**日期时间是将来，将激活业务流程实例，但将会收集任何消息，直到开始日期时间发生。 BatchMarker 管道组件将不提升将消息路由到路由业务流程或直到开始日期时间批处理业务流程所需的相应属性。 因此不会对消息进行批处理。 但是，任何单独订阅这些消息的发送端口或业务流程仍会提取消息。 有关 BatchMarker 管道组件的作用的详细信息，请参阅[组合批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)。  
   
 ## <a name="batch-termination-criteria"></a>批处理终止条件  
- 消息将停止对收集的一批后**结束**日期时间或之后的中的出现次数**（匹配项） 后的结束**属性。 如果您不希望批处理的业务流程，以将其停用，则选择**无结束日期**选项。  
+ 消息将停止对收集的一批后**结束**日期时间或之后的中的出现次数 **（匹配项） 后的结束**属性。 如果您不希望批处理的业务流程，以将其停用，则选择**无结束日期**选项。  
   
 > [!NOTE]
->  如果**（匹配项） 后的结束**属性已被选中，空批处理发出信号将计入的批次激活范围终点的所需的出现次数。 如果出现在正常情况下可导致空的批处理信号的条件（在计划应发送批处理时批处理业务流程尚未收到任何消息），出现次数也将递增，但因为未配置空的批处理信号，所以不会发送该信号。  
+>  如果 **（匹配项） 后的结束**属性已被选中，空批处理发出信号将计入的批次激活范围终点的所需的出现次数。 如果出现在正常情况下可导致空的批处理信号的条件（在计划应发送批处理时批处理业务流程尚未收到任何消息），出现次数也将递增，但因为未配置空的批处理信号，所以不会发送该信号。  
   
 ## <a name="see-also"></a>另请参阅  
  [对传出的 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)

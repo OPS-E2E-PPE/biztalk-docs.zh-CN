@@ -1,14 +1,14 @@
 ---
-title: "如何管理架构树视图 |Microsoft 文档"
-ms.custom: 
+title: 如何管理架构树视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97fb7a88-e38a-4abb-93bc-a5be1bd091e6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254901"
 ---
 # <a name="how-to-manage-the-schema-tree-view"></a>如何管理架构树视图
 对于架构树视图的管理任务可以划分为四个类别： 更改其大小、 更改其背景色和字体、 更改警告对话框，其用途和展开和折叠其树结构。 本主题提供这些各种任务的分步的说明。  

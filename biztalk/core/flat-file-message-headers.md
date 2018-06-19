@@ -1,14 +1,14 @@
 ---
-title: "平面文件消息标头 |Microsoft 文档"
-ms.custom: 
+title: 平面文件消息标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1981daaf-149a-426d-9a2f-5fcf64bce185
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246349"
 ---
 # <a name="flat-file-message-headers"></a>平面文件消息头部
 可选的平面文件实例消息头的平面文件反汇编程序分析已在中配置的平面文件架构由控制**标头架构**的平面文件反汇编程序的设计时属性或**XMLNORM。HeaderSpecName**消息上下文属性。 如果未指定使用这两种方法之一的架构，平面文件反汇编程序假定平面文件实例消息不包含标头。  

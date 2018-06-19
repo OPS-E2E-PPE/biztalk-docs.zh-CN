@@ -1,11 +1,11 @@
 ---
-title: "如何在业务流程上配置事务属性 |Microsoft 文档"
-ms.custom: 
+title: 如何在业务流程上配置事务属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - atomic transactions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, configuring
 - transactions, atomic
 ms.assetid: 8eec6019-4d96-4ed6-8a90-9403738d8af4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248813"
 ---
 # <a name="how-to-configure-transactional-properties-on-an-orchestration"></a>如何在业务流程上配置事务属性
 业务流程可被视为原子事务、长期事务或既非原子事务也非长期事务。  

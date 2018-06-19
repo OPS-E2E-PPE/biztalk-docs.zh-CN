@@ -1,17 +1,17 @@
 ---
-title: "平面文件汇编管道组件 |Microsoft 文档"
-ms.custom: 
+title: 平面文件汇编管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, Flat File Assembler
 - Flat File Assembler [pipeline component]
 ms.assetid: 3c851771-55b2-4d21-9291-d707dd66837c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245861"
 ---
 # <a name="flat-file-assembler-pipeline-component"></a>平面文件汇编管道组件
 平面文件组装器可以将单个文档组合到批中，并可以根据需要为批添加头部或尾部（或同时添加头部和尾部）。 有关平面文件的详细信息，请参阅[分隔记录的平面文件消息](../core/flat-file-messages-with-delimited-records.md)。 另请参阅[平面文件消息的位置记录](../core/flat-file-messages-with-positional-records.md)。  

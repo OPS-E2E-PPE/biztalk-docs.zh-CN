@@ -1,14 +1,14 @@
 ---
-title: "配置批处理 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置批处理 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f4f9e7b-262d-488e-9a04-088aad289d70
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234773"
 ---
 # <a name="configuring-batching-x12"></a>配置批处理 (X12)
 批处理定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何生成 EDI 批处理并将其发送给参与方。  
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  保留**无结束日期**选择如果你不想要指定为批处理的业务流程，以将其停用的结束日期。  
   
-    2.  选择**（匹配项） 后的结束**指定批处理业务流程，将生成一定数量的批处理后停用状态。 在“次数” 文本框中输入所需数目。  
+    2.  选择 **（匹配项） 后的结束**指定批处理业务流程，将生成一定数量的批处理后停用状态。 在“次数” 文本框中输入所需数目。  
   
     3.  选择**结束**指定批处理业务流程将停用的结束日期。 此后，将不再收集用于批处理的消息。 从日历选择结束日期，或直接在文本框中更改日期或时间。  
   

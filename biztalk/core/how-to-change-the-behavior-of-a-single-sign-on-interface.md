@@ -1,14 +1,14 @@
 ---
-title: "如何更改单个登录接口的行为 |Microsoft 文档"
-ms.custom: 
+title: 如何更改单个登录接口的行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f4a4946a-e345-4c7e-835d-a3f7f72ebaca
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247853"
 ---
 # <a name="how-to-change-the-behavior-of-a-single-sign-on-interface"></a>如何更改单个登录接口的行为
 企业单一登录 (SSO) 对象模型中的许多对象会公开 IPropertyBag 接口，通过它可以修改指定对象的行为。 如果对 SSO 对象调用 QueryInterface，则可以检索 IPropertyBag 接口并用它来更改当前对象的行为。  

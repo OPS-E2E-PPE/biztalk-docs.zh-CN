@@ -20,7 +20,7 @@ helpviewer_keywords:
 - suspending, instances
 - ports, suspending
 ms.assetid: cacc7e58-7d3e-4d6b-adb0-618fdc4f0d89
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22256693"
 ---
 # <a name="how-to-suspend-orchestration-instances-or-ports"></a>如何挂起业务流程实例或端口
 可以从 BizTalk Server 管理控制台中的查询结果列表中挂起业务流程实例或端口。  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 段结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 段结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f474a3d-004a-4981-b155-b0a5775918ba
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242213"
 ---
 # <a name="edi-segment-structural-element"></a>EDI 段结构化元素
 段包含一个或多个数据元素，是消息中的中间信息单位。 每个段均以一个由三个字符组成的数据段标识符开头，以段终止符（默认情况下为撇号 (')）结尾。 段内的数据元素由数据元素分隔符分隔。 默认情况下，数据元素分隔符为加号 (+)。 段可分为两类：必需段和可选段。 传出交换的分隔符可在两贸易合作伙伴间的协议中设置，也可设置为后备贸易合作伙伴协议的一部分。  

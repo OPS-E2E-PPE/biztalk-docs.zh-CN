@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245965"
 ---
 # <a name="find-method"></a>Find 方法
 用于返回满足所提供部分搜索项的项列表。 请注意，对于只有一个实例组件接口（即无项），不会生成 `Find()` 函数。 另请参阅[Get 方法](../core/get-method.md)。  

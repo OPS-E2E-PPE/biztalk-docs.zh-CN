@@ -1,11 +1,11 @@
 ---
-title: "如何配置入站的映射接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置入站的映射接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - maps, inbound
 - managing [receive ports], inbound maps
 ms.assetid: b7448b39-f024-4353-818b-f753c2d60751
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248301"
 ---
 # <a name="how-to-configure-inbound-maps-for-a-receive-port"></a>如何为接收端口配置入站映射
 本主题将介绍如何使用 BizTalk Server 管理控制台为接收端口配置入站映射。 使用入站映射可以将入站消息从一种架构转换为另一种架构，例如，将从合作伙伴接收到的入站消息转换为您公司所使用的架构。  

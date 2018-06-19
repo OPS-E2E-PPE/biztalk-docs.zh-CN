@@ -1,14 +1,14 @@
 ---
-title: "配置回退字符集和分隔符属性 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置回退字符集和分隔符属性 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 477f4952-6a4e-4e98-a37f-f6e1fe7db3d3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233837"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-x12"></a>配置回退字符集和分隔符属性 (X12)
 在备用协议中，您可以指定在为传出 X12 消息创建信封时 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用哪个字符集来验证参与方属性。 还可以指定为交换内部的分段使用哪些分隔符和终止符。  

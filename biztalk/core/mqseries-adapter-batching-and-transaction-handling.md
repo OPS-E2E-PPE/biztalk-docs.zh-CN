@@ -1,11 +1,11 @@
 ---
-title: "MQSeries 适配器批处理和事务处理 |Microsoft 文档"
-ms.custom: 
+title: MQSeries 适配器批处理和事务处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBM WebSphere MQ queues
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - MQSeries adapters, batching
 - batching, MQSeries adapters
 ms.assetid: 2e43fca9-acbd-4fd3-8df3-5f7398553830
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262981"
 ---
 # <a name="mqseries-adapter-batching-and-transaction-handling"></a>MQSeries 适配器批处理和事务处理
 MQSeries 适配器只在未接收所有数据的情况下才停止事务。 适配器事务的边界是适配器终结点（MQSeries 服务器上的 MQSeries 队列）和 MessageBox 数据库。  

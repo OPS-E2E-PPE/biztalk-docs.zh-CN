@@ -1,14 +1,14 @@
 ---
-title: "如何复制、 剪切和粘贴链接和 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何复制、 剪切和粘贴链接和 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80b4792a-5ff6-4603-96cd-b3d3d530c12f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250365"
 ---
 # <a name="how-to-copy-cut-and-paste-links-and-functoids"></a>如何复制、剪切和粘贴链接和 Functoid
 BizTalk 映射器中的复制/剪切/粘贴功能使关系可重复使用。 本主题提供了在映射中复制、剪切和粘贴 functoid 和/或链接的分步说明。  

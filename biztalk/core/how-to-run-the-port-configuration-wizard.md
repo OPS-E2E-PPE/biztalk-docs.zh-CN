@@ -1,11 +1,11 @@
 ---
-title: "如何运行端口配置向导 |Microsoft 文档"
-ms.custom: 
+title: 如何运行端口配置向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Port Configuration Wizard [Orchestration Designer], starting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - ports, Port Configuration Wizard [Orchestration Designer]
 - Port Configuration Wizard [Orchestration Designer]
 ms.assetid: 8035ce32-5ed4-49cb-b6f0-998b0460751e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255789"
 ---
 # <a name="how-to-run-the-port-configuration-wizard"></a>如何运行端口配置向导
 您可以使用端口配置向导在业务流程设计器中创建和配置端口。 端口必须具有与之关联的端口类型，您可以使用该向导来选择现有的端口类型或创建新的端口类型。 有关端口和端口类型的详细信息，请参阅[在业务流程中使用端口](../core/using-ports-in-orchestrations.md)。  

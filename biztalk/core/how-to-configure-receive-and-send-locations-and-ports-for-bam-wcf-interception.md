@@ -1,14 +1,14 @@
 ---
-title: "如何配置接收和 BAM WCF 侦听发送位置和端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置接收和 BAM WCF 侦听发送位置和端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 501194dc-427a-4910-88c9-19cf47daeaad
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248437"
 ---
 # <a name="how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception"></a>如何配置 BAM WCF 侦听的接收和发送位置及端口
 在此过程中，您可以在基于内容的路由 (CBR) 方案中配置接收和发送位置，以便直接演示关键概念。 在此演示的概念可适用于作为 [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 服务公开的业务流程。  

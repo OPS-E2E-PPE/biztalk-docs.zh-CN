@@ -1,14 +1,14 @@
 ---
-title: "如何设计的高性能适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何设计的高性能适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a1f338-fd7c-41c8-a181-8da8b293c4cc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250533"
 ---
 # <a name="how-to-design-a-performant-adapter"></a>如何设计优异的适配器
 出于性能方面的考虑，在提交消息批、传输批和对批中消息执行一般性操作等方面，所有适配器都应该是识别批的。 适配器应该尝试公开与性能相关的可配置属性，例如批的大小或批中的字节数，从适配器的设计时用户界面可以配置这些属性。  

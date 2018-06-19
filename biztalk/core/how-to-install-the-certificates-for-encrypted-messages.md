@@ -1,14 +1,14 @@
 ---
-title: "如何安装证书的加密消息 |Microsoft 文档"
-ms.custom: 
+title: 如何安装证书的加密消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e11fdb81-041c-4ba6-849d-d511ead0e8be
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254773"
 ---
 # <a name="how-to-install-the-certificates-for-encrypted-messages"></a>如何安装的证书加密的邮件
 下面的过程列出了安装证书以便接收和发送加密消息所需遵守的高级步骤。  

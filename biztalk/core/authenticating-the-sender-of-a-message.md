@@ -1,11 +1,11 @@
 ---
-title: "对一条消息的发送方进行身份验证 |Microsoft 文档"
-ms.custom: 
+title: 对一条消息的发送方进行身份验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - parties, authenticating
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - authenticating, digital signatures
 - authenticating, messages
 ms.assetid: 813a2fb9-0346-4129-9cc5-1713f72a491e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232005"
 ---
 # <a name="authenticating-the-sender-of-a-message"></a>对一条消息的发送方进行身份验证
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用不同的机制来验证参与方和流程的真实性。 此外，您可以指定流程是否向 BizTalk Server 通知消息的原始发件人，也可指定 BizTalk Server 是否将参与方识别为合作伙伴。  

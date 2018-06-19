@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22233029"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a>配置回退信封属性（EDIFACT-交换设置）
 本节提供有关如何配置 EDIFACT 待发邮件的信封的说明。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/20/2018
   
 4.  有关 **通信协议 (UNB10)**, ，输入一个字母数字值，该值最少包含一个字符，最多 35 个字符。 此字段为可选字段  
   
-5.  选择**测试指示器 (UNB11)**以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。  
+5.  选择**测试指示器 (UNB11)** 以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。  
   
 6.  选择 **应用 UNA 段 （字符串服务建议）** 生成 UNA 段为要发送的交换。 如果选中此选项，然后 **UNA6** 不能为空和 **UNA 6 后缀** 不能为 **无**。  
   

@@ -1,14 +1,14 @@
 ---
-title: "为适配器配置的自定义模式对话框编辑器 |Microsoft 文档"
-ms.custom: 
+title: 为适配器配置的自定义模式对话框编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 213d5d47-80c1-4b2d-8194-1426982be137
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239229"
 ---
 # <a name="custom-modal-dialog-editor-for-adapter-configuration"></a>适配器配置的的自定义模式对话框编辑器
 自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码模式弹出对话框中的类。 **GetEditStyle**方法重写返回**UIEditorEditStyle.Modal**以指示模式窗体子控件。 服务方法**ShowDialog**管理控制创建与**CreatePassword**。 **ShowDialog**返回**DialogResult**在通常的方式 （例如，switch 语句） 中在与处理**DialogResult.OK**大小写更改仅值。  

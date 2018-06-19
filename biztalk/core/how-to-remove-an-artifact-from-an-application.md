@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序中删除项目 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序中删除项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, deleting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - modifying, applications
 - deleting, artifacts
 ms.assetid: c528be0b-0b1a-4c5f-acd2-7355da91a253
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254917"
 ---
 # <a name="how-to-remove-an-artifact-from-an-application"></a>如何从应用程序中移除项目
 从 BizTalk Server 数据库移除或删除项目，使之不再显示在管理控制台中或由 BTSTask ListApp 命令生成的应用程序的项目列表中。 此操作不会从 Windows 注册表、全局程序集缓存 (GAC)、虚拟目录或文件系统中移除项目（如果项目存在于这些位置中）。 如果是只存在于 BizTalk 管理数据库中的发送端口、发送端口组、接收端口和接收位置，此操作将完全删除项目。 有关背景信息，请参阅[什么发生时项目将添加和已删除](../core/what-happens-when-artifacts-are-added-and-removed.md)  

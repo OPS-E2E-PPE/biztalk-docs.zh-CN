@@ -1,11 +1,11 @@
 ---
-title: "如何将服务器从一个组移到另一个 |Microsoft 文档"
-ms.custom: 
+title: 如何将服务器从一个组移到另一个 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [servers], moving
 - servers, groups
 ms.assetid: 3f789a62-f597-426b-9cea-74c1fe22b694
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254565"
 ---
 # <a name="how-to-move-a-server-from-one-group-to-another"></a>如何将服务器从一个组移到另一个
 一台服务器只能与一个 BizTalk Server 组相关联。 若要将服务器从一个组移至另一个组，则必须首先通过取消原始组中对该服务器的配置将其从组中删除，然后再将该服务器添加到新组中。  

@@ -1,11 +1,11 @@
 ---
-title: "如何使用业务规则在业务流程中 |Microsoft 文档"
-ms.custom: 
+title: 如何使用业务规则在业务流程中 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - atomic transactions, business rules
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, orchestrations
 - orchestrations, business rules
 ms.assetid: d20473c2-267f-4a44-93c3-df6ef655020c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255565"
 ---
 # <a name="how-to-use-business-rules-in-orchestrations"></a>如何在业务流程中使用业务规则
 您可以创建业务规则策略的实例并在业务流程中执行该实例。 为此，请在原子事务作用域内添加调用规则形状，并对其配置策略。  

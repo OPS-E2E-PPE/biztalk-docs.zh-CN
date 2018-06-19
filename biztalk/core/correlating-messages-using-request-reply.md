@@ -1,18 +1,18 @@
 ---
-title: "使消息使用请求-答复关联 |Microsoft 文档"
-ms.custom: 
+title: 使消息使用请求-答复关联 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MQSeries adapters
 - messages, correlating
 - MQSeries adapters, correlating messages
 ms.assetid: 4615b586-663b-41d8-949c-fefb6143c590
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237989"
 ---
 # <a name="correlating-messages-using-request-reply"></a>使消息使用请求-答复关联
 可通过两种方法使 IBM WebSphere MQ 的 BizTalk 业务流程中的消息相关，IBM WebSphere MQ 是 Windows 平台请求-答复方案的服务器组件。 第一种是通过设置这两个 MessageID 提供的相关标识符 (**MQMD_MSGID**) 和 CorrelationID (**MQMD_CorrelId**) 为相同的值。 第二个是使用**BizTalk_CorrelationId**上下文属性。  

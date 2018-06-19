@@ -1,18 +1,18 @@
 ---
-title: "如何备份自定义数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何备份自定义数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - custom databases
 - customizing, custom databases
 - backing up, custom databases
 ms.assetid: 86bebf3c-968e-4fad-9dab-ced1b04aaac7
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247333"
 ---
 # <a name="how-to-back-up-custom-databases"></a>如何备份自定义数据库
 由于自定义数据库不随 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 一起安装，因此它们不包含在可由备份 BizTalk Server 作业进行标记并备份的数据库的默认列表中。 如果希望备份 BizTalk Server 作业对自定义数据库进行备份，则必须手动将自定义数据库添加到备份 BizTalk Server 作业中。  

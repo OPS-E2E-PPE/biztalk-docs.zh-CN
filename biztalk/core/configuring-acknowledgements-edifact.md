@@ -1,14 +1,14 @@
 ---
-title: "配置确认 (EDIFACT) |Microsoft 文档"
-ms.custom: 
+title: 配置确认 (EDIFACT) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9436feb7-4c29-4b7c-b5c2-991660e6c1a9
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233493"
 ---
 # <a name="configuring-acknowledgements-edifact"></a>配置确认(EDIFACT)
 在合作伙伴协议中，可以指定将何种类型的确认返回给参与方以及在发送确认时使用何种发送端口。 还可以指定是否对确认进行批处理、为确认使用哪个起始事务集参考编号以及是否为接受的事务集生成 SG1/SG4 循环。  
@@ -39,9 +40,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**EDIFACT ACK （控件） 部分**，执行以下操作：  
   
-    1.  选择**收到预期消息 (CONTRL)**可向交换发件人返回技术 (CONTRL) 确认。 如果**收到预期消息 (CONTRL)** ，则选择**执行批量收到消息 (CONTRL) 消息**分别发送每个确认或离开清除进行批处理确认。  
+    1.  选择**收到预期消息 (CONTRL)** 可向交换发件人返回技术 (CONTRL) 确认。 如果**收到预期消息 (CONTRL)** ，则选择**执行批量收到消息 (CONTRL) 消息**分别发送每个确认或离开清除进行批处理确认。  
   
-    2.  选择**确认 (CONTRL) 预期**可向交换发件人返回功能 (CONTRL) 确认。 如果**确认 (CONTRL) 预期**，则选择**执行批量确认 (CONTRL)**分别发送每个功能确认或离开清除进行批处理功能确认。  
+    2.  选择**确认 (CONTRL) 预期**可向交换发件人返回功能 (CONTRL) 确认。 如果**确认 (CONTRL) 预期**，则选择**执行批量确认 (CONTRL)** 分别发送每个功能确认或离开清除进行批处理功能确认。  
   
 4.  在**事务集状态接受报告**部分，若要强制在功能 CONTRL 确认中为接受的事务集生成 SG1/SG4 循环选择**生成 SG1/SG4 循环接受事务集 （如果未选中，循环将生成仅当 UCM.5 是否不等于 7）**。 有关 SG1/SG4 循环的详细信息，请参阅[作为功能确认的 EDIFACT CONTRL 消息](../core/edifact-contrl-message-as-functional-acknowledgment.md)。  
   

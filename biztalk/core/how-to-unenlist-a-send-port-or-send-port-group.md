@@ -1,11 +1,11 @@
 ---
-title: "如何取消登记发送端口或发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何取消登记发送端口或发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - unenlisting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - unenlisting, send ports
 - send ports, unenlisting
 ms.assetid: 3185adad-2efa-4abd-a532-77ae6c7b4c1d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256669"
 ---
 # <a name="how-to-unenlist-a-send-port-or-send-port-group"></a>如何取消登记发送端口或发送端口组
 本主题将介绍如何使用 BizTalk Server 管理控制台来取消登记发送端口或发送端口组。 取消登记发送端口或发送端口组可取消与该发送端口或发送端口组相关联的所有订阅。 正在运行的和已停止的发送端口或发送端口组都可以取消登记。 取消登记发送端口或发送端口组将自动停止端口或端口组。  

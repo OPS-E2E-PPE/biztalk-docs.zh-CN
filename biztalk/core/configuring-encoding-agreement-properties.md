@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233925"
 ---
 # <a name="configuring-encoding-agreement-properties"></a>配置编码协议属性
 贸易合作伙伴协议 (TPA) 是两个贸易合作伙伴之间为通过特定 B2B 协议对消息进行事务处理而使用的最终绑定协议。 简言之，TPA 是两个业务配置文件之间为使用特定消息编码协议（X12 或 EDIFACT）或特定传输协议 (AS2) 以及彼此交换 B2B 消息所进行的一种了解。 除了编码和传输协议达成一致之外，协议还可用于自定义如何构成和传送消息。  

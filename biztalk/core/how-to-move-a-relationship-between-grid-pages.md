@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255085"
 ---
 # <a name="how-to-move-a-relationship-between-grid-pages"></a>如何在网格页之间移动关系
 大型映射包含许多 functoid 和链接集合，这会使您难以识别加入多个 functoid 的链接。 在这种情况下，您可能需要将类似的 functoid 和链接集合移到其他网格页中以使映射更容易辨认。  本主题提供执行该操作的逐步说明。  

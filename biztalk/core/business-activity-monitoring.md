@@ -1,14 +1,14 @@
 ---
-title: "业务活动监视 |Microsoft 文档"
-ms.custom: 
+title: 业务活动监视 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83b3c92f-3062-413e-8d89-797f1c7ea7ab
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232725"
 ---
 # <a name="business-activity-monitoring"></a>业务活动监视
 信息工作者在查看和评估业务流程时需要相应的灵活性。 例如，采购经理可能需要查看每天批准和拒绝的采购订单数，而销售经理可能需要每小时更新当前所订购的产品。 若要满足这些不同需要，则需要一个通用框架以跟踪特定业务流程的进展情况。 这是完全什么业务活动监视 (BAM) 中的组件 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供。  

@@ -1,14 +1,14 @@
 ---
-title: "部署到 BizTalk 应用程序程序集从 Visual Studio BizTalk |Microsoft 文档"
-ms.custom: 
+title: 部署到 BizTalk 应用程序程序集从 Visual Studio BizTalk |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: accef4b8-acdf-4043-8fd7-2db9ea752074
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240085"
 ---
 # <a name="deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application"></a>将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序
 部署和重新部署 BizTalk 中的程序集[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]到 BizTalk 应用程序。 当您想要测试所开发的程序集的功能并且想要将它们打包以便移交时，可能要进行 BizTalk 程序集的这一部署和重新部署。  

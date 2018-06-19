@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232269"
 ---
 # <a name="bindinginfo-node"></a>BindingInfo 节点
 **绑定信息**绑定文件的节点是绑定文件的根节点，并且包含适用于所有绑定文件中的项的信息以及有关 BizTalk Server 的信息的绑定文件导出从。  

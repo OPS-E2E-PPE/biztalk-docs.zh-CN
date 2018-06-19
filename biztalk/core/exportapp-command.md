@@ -1,14 +1,14 @@
 ---
-title: "ExportApp 命令 |Microsoft 文档"
-ms.custom: 
+title: ExportApp 命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6217d0f1-cf39-4520-87c8-8d25b21865af
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246269"
 ---
 # <a name="exportapp-command"></a>ExportApp 命令
 用于将 BizTalk 应用程序导出到 .msi 文件。 如果已存在具有相同文件名和路径的 .msi 文件，则覆盖该现有 .msi 文件。  
@@ -35,12 +36,12 @@ ms.lasthandoff: 09/20/2017
   
 |参数|必需|值|  
 |---------------|--------------|-----------|  
-|**/ ApplicationName** (或**/A**，请参阅备注)|是|要导出的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将它用双引号 （"）。 如果未指定应用程序名称，则使用组的默认 BizTalk 应用程序。|  
-|**/ 包**(或**/P**，请参阅备注)|是|.msi 文件的完整路径。 如果该路径包含空格，则必须将其括在引号 (") 中。 示例：Package:"C:\My MSI Files\My.msi"|  
-|**/ 资源规格**(或**/R**，请参阅备注)|是|资源规范文件的完整路径。 如果该路径包含空格，则必须将其括在引号 (") 中。 示例：ResourceSpec:"C:\My Files\MyResourceSpec.xml"|  
-|**/ GlobalParties** (或**/G**，请参阅备注)|是|如果已指定，组的全局参与方信息将导出到 .msi 文件中。|  
-|**/ 服务器**(或**/S**，请参阅备注)|是|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
-|**/ 数据库**(或**/D**，请参阅备注)|是|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|是|要导出的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将它用双引号 （"）。 如果未指定应用程序名称，则使用组的默认 BizTalk 应用程序。|  
+|**/ 包**(或 **/P**，请参阅备注)|是|.msi 文件的完整路径。 如果该路径包含空格，则必须将其括在引号 (") 中。 示例：Package:"C:\My MSI Files\My.msi"|  
+|**/ 资源规格**(或 **/R**，请参阅备注)|是|资源规范文件的完整路径。 如果该路径包含空格，则必须将其括在引号 (") 中。 示例：ResourceSpec:"C:\My Files\MyResourceSpec.xml"|  
+|**/ GlobalParties** (或 **/G**，请参阅备注)|是|如果已指定，组的全局参与方信息将导出到 .msi 文件中。|  
+|**/ 服务器**(或 **/S**，请参阅备注)|是|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
+|**/ 数据库**(或 **/D**，请参阅备注)|是|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
   
 ## <a name="sample"></a>示例  
  **ExportApp /ApplicationName:MyApplication /Package:C:\MSI\MyApplication.msi**  

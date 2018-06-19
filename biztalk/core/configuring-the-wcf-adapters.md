@@ -1,11 +1,11 @@
 ---
-title: "配置 WCF 适配器 |Microsoft 文档"
-ms.custom: 
+title: 配置 WCF 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - NetTcpBinding [WCF adapters]
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - bindings, pre-defined [WCF adapters]
 - WCF adapters, configuring
 ms.assetid: af01e2d4-303d-407a-b853-dd90b0246a8a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233157"
 ---
 # <a name="configuring-the-wcf-adapters"></a>配置 WCF 适配器
 用于 Windows Communication Foundation (WCF) 的 BizTalk 适配器允许 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与基于 WCF 的应用程序通信。 BizTalk WCF 适配器包括表示的预定义的 WCF 绑定的五个物理适配器-**BasicHttpBinding**， **WsHttpBinding**， **NetTcpBinding**， **NetNamedPipeBinding**，和**NetMsmqBinding**。 通过用于预定义绑定的 WCF 适配器，您可以轻松配置大多数应用程序要求的必需信息。  

@@ -1,11 +1,11 @@
 ---
-title: "有关运行适配器处理程序内群集 Host1 注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关运行适配器处理程序内群集 Host1 注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-03-17
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - MSMQ adapters, clustering
 - clustering
 ms.assetid: ee66663c-4f4d-4515-9df1-aacf4fc72be4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238477"
 ---
 # <a name="considerations-for-running-adapter-handlers-within-a-clustered-host"></a>在群集主机内运行适配器处理程序的注意事项
 BizTalk 主机群集支持可用于以下集成 BizTalk 适配器提供高可用性： FTP 适配器、 SFTP 适配器、 MSMQ 适配器和 POP3 适配器。 使用主机群集支持还可以确保在为实现按序送达而运行适配器的单个实例时具有高可用性。  

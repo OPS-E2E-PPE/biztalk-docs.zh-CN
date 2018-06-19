@@ -1,14 +1,14 @@
 ---
-title: "配置确认 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置确认 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eec2dbff-5d04-4a38-bad0-33d040b6dd12
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233621"
 ---
 # <a name="configuring-acknowledgements-x12"></a>配置确认 (X 12)
 在合作伙伴协议中，您可以指定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成确认的方式，以响应从参与方接收的 X12 编码的交换，以及返回到参与方的确认类型。 您还可以指定是否批处理确认，以及是否为接收的事务集生成 AK2 循环。 本部分提供如何执行操作的说明。  

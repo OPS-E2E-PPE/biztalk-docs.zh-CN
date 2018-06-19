@@ -1,14 +1,14 @@
 ---
-title: "文档找不到的规范类型 |Microsoft 文档"
-ms.custom: 
+title: 文档找不到的规范类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cb2a458-d0f4-420d-8d35-0e739167464f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239477"
 ---
 # <a name="document-spec-type-not-found"></a>找不到文档规格类型
 ## <a name="details"></a>详细信息  

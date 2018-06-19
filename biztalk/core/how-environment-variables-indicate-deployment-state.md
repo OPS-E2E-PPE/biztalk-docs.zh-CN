@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246493"
 ---
 # <a name="how-environment-variables-indicate-deployment-state"></a>环境变量如何指示部署状态
 调用预处理脚本或后处理脚本时，脚本通过检查环境变量 BTAD_ChangeRequestAction、BTAD_InstallMode 和 BTAD_HostClass，可确定其所运行的部署状态（安装、导入、删除、卸载、导入回滚或安装回滚）。  

@@ -1,11 +1,11 @@
 ---
-title: "数据项节点 |Microsoft 文档"
-ms.custom: 
+title: 数据项节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definition files [BAM], data items
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - Tracking Profile Editor, definition files [BAM]
 ms.assetid: 95856bfa-90e3-49d9-b55b-5f1b35a23f78
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238021"
 ---
 # <a name="data-item-nodes"></a>数据项节点
 数据项节点存在于开发人员从业务分析员创建的观察模型所导入的活动定义文件中。 跟踪配置文件编辑器 (TPE) 将为所跟踪的数据项命名相应的节点（如“客户姓名”）。 然后，您可以将一个或多个数据项从消息架构视图拖到对应于“客户姓名”的节点。  

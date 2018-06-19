@@ -1,11 +1,11 @@
 ---
-title: "如何构造没有消息部分的 Web 消息 |Microsoft 文档"
-ms.custom: 
+title: 如何构造没有消息部分的 Web 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Web messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Web messages, creating
 - Web messages, parts
 ms.assetid: de17566d-be29-4af0-bf9f-6df3bc316013
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248613"
 ---
 # <a name="how-to-construct-a-web-message-with-no-message-parts"></a>如何构造没有消息部分的 Web 消息
 Web 消息如果没有消息部分，则属于不带输入参数的方法。  

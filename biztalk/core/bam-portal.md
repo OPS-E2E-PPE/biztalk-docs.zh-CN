@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM, portals
 - BAM portal, aggregations
 ms.assetid: 593c9637-6b97-4ad8-8af7-2b49325acf10
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232077"
 ---
 # <a name="bam-portal"></a>BAM 门户
 业务最终用户使用 BAM 门户监视关键绩效指标 (Kpi) 度量的业务目标，以及有关其业务流程的其他信息的进度。 业务分析师使用 BAM 门户监督的观察模型，高级别定义的业务流程中的可见性要求创建。 管理员将其用于各种监视活动，包括监视业务流程管理系统的运行状况。  

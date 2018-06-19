@@ -1,11 +1,11 @@
 ---
-title: "生成 XML 或架构中 PeopleSoft |Microsoft 文档"
-ms.custom: 
+title: 生成 XML 或架构中 PeopleSoft |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - generating schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - generating XML
 - XML, generating
 ms.assetid: adfe2936-0dc2-42d2-b26a-718f8cc57eff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246685"
 ---
 # <a name="generating-xml-or-schema-in-peoplesoft"></a>在 PeopleSoft 中生成 XML 或架构
 以下过程介绍如何使用 PeopleSoft Enterprise 来创建 XML 文件和触发 PeopleSoft 事件。 为此，需更改 PeopleSoft 环境中的某些内容。 此更改将激活发送到文件文件夹（在要监视的业务流程中设置）中的 XML 文件。 随后，在 BizTalk Server 中导入 XML 并生成架构。  
@@ -35,9 +36,9 @@ ms.lasthandoff: 09/20/2017
   
 2.  上**位置**屏幕上，输入以下信息：  
   
-    -   **组 ID:**输入**共享**。  
+    -   **组 ID:** 输入**共享**。  
   
-    -   **位置代码：**输入开头的代码`WKLOC`。  
+    -   **位置代码：** 输入开头的代码`WKLOC`。  
   
      ![](../core/media/psadapter-18-task-sharesearch.gif "PSAdapter_18_Task_ShareSearch")  
   

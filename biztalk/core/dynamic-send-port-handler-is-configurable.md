@@ -1,14 +1,14 @@
 ---
-title: "动态发送端口处理程序是可配置 |Microsoft 文档"
-ms.custom: 
+title: 动态发送端口处理程序是可配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5eb8f5ef-af95-4b2e-9a43-6f1240b25855
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22240589"
 ---
 # <a name="dynamic-send-port-handler-is-configurable"></a>动态发送端口处理程序可配置
 在创建时动态发送端口，一个适配器发送处理程序时可配置用于 *每个* 安装适配器。 请考虑下列方案：  

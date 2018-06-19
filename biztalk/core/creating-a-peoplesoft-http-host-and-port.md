@@ -1,17 +1,17 @@
 ---
-title: "创建 PeopleSoft HTTP 主机和端口 |Microsoft 文档"
-ms.custom: 
+title: 创建 PeopleSoft HTTP 主机和端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP port
 - HTTP host
 ms.assetid: 3e1ce5fd-32ee-409f-b4c8-f2bc68470f17
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238109"
 ---
 # <a name="creating-a-peoplesoft-http-host-and-port"></a>创建 PeopleSoft HTTP 主机和端口
 PeopleSoft 中的消息发布体系结构称为 Integration Broker。 Integration Broker 的主要组件如下所示：  

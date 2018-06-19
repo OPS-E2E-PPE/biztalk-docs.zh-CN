@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户中的警报 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户中的警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Alert Management page [BAM portal]
 - alerts, subscriptions
 ms.assetid: 715a4187-aafa-46be-8b00-8eaba2e569e5
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232709"
 ---
 # <a name="alerts-in-the-bam-portal"></a>BAM 门户中的警报
 使用警报能够定义可实时发送给用户的关于业务流程的重要事件，如关键性能指标 (KPI)。 用户订阅警报后可以接收警报所监视的业务事件的通知。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 |字段名|目录|  
 |----------------|--------------|  
-|Name|警报的名称。 如果通过电子邮件传送警报，则警报的名称将用作邮件的主题；如果以文件的形式传送警报，则警报的名称将作为文件的名称。 **注意：**名称限制为 100 个字符并且不能包含以下字符，~ ！ @# $%^&amp;* （);|  
+|Name|警报的名称。 如果通过电子邮件传送警报，则警报的名称将用作邮件的主题；如果以文件的形式传送警报，则警报的名称将作为文件的名称。 **注意：** 名称限制为 100 个字符并且不能包含以下字符，~ ！ @# $%^&amp;* （);|  
 |消息|将与警报一起传输的消息文本。|  
 |Priority|指示警报所报告的问题的严重性。 优先级可为“高”、“中”和“低”。 对于通过电子邮件传送的警报，此设置确定电子邮件的重要性标志的类型。|  
 |所有者|警报的所有者。 所有者默认为警报的创建者。 要输入多个所有者，请将其输入为以分号分隔的列表。|  

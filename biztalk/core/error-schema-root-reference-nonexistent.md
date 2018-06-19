@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240605"
 ---
 # <a name="error---schema-root-reference-nonexistent"></a>错误-架构根引用不存在
 **错误代码**  

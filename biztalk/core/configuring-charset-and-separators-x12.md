@@ -1,14 +1,14 @@
 ---
-title: "配置字符集和分隔符 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置字符集和分隔符 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6249f2e1-70b0-4960-bbc4-0c3fefd26faa
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234493"
 ---
 # <a name="configuring-charset-and-separators-x12"></a>配置字符集和分隔页(X12)
 在合作伙伴协议中，你可以指定在为传出 X12 消息创建信封时 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用哪个字符集来验证参与方属性。 还可以指定为交换内部的分段使用哪些分隔符和终止符。  
@@ -83,11 +84,11 @@ ms.lasthandoff: 09/20/2017
   
     -   **任何**段终止符 + **CR LF**后缀  
   
-    -   **D （十六进制）**段终止符 +**无**后缀： 这种组合的行为方式好像段终止符为空白，并设置为 CR 的后缀。  
+    -   **D （十六进制）** 段终止符 +**无**后缀： 这种组合的行为方式好像段终止符为空白，并设置为 CR 的后缀。  
   
     -   （十六进制） 段终止符 +**无**后缀： 这种组合的行为方式好像段终止符保留为空并且后缀设置为 LF。  
   
-    -   **D （十六进制）**段终止符 + **LF**后缀： 这种组合的行为方式好像段终止符是 CR，后缀设置为 LF。  
+    -   **D （十六进制）** 段终止符 + **LF**后缀： 这种组合的行为方式好像段终止符是 CR，后缀设置为 LF。  
   
 8.  如果负载数据中的字符也用作数据、 段或组件分隔符，请检查**替换负载中的分隔符**并指定替换字符。 在生成出站 X12 消息时，负载数据中的分隔符的所有实例都将替换为指定字符。 选择**Char**为字符数据元素或**十六进制**为十六进制数据元素。 在更改中的格式时，您输入的字符将自动更改**Char**到**十六进制**，反之亦然。  
   

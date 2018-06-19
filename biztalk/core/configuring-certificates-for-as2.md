@@ -1,14 +1,14 @@
 ---
-title: "配置证书为 AS2 |Microsoft 文档"
-ms.custom: 
+title: 配置证书为 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c160f294-7529-4e0a-876c-5827feaed067
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234653"
 ---
 # <a name="configuring-certificates-for-as2"></a>为 AS2 配置证书
 若要使用加密和数字签名帮助确保 AS2 数据传输的安全，则除了在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上相应地进行 AS2 配置之外，还必须安装适当的证书。 本主题介绍所需证书、证书的配置方式以及有关证书的常见问题。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |证书使用情况|证书类型|管道组件|用户上下文|证书存储|在此定义|  
 |-----------------------|----------------------|------------------------|------------------|-----------------------|-------------------|  
 |签名（出站）|自己的私钥 (.pfx)|AS2 编码器|与发送处理程序相关联的主机实例使用的帐户。|每台承载 AS2 编码器管道的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上针对每个主机实例服务帐户的“当前用户\个人”存储区|-   **证书**页**组属性**对话框。 发送已签名的文档时使用的默认签名证书。<br />-你可以重写默认证书设置，并改为不同方使用不同的证书。 你可以通过选择实现**覆盖组签名证书**中**签名证书**的单向协议选项卡页**协议属性**对话框框中，并指定签名证书。 如果设置此属性，无论 AS2 消息解析为协议将使用签名中提供的证书**签名证书**页上，不由证书提供作为 BizTalk 组属性的一部分。|  
-|签名验证（入站）|贸易合作伙伴的公钥 (.cer)|AS2 解码器|与接收处理程序关联的主机实例使用的帐户。|每台承载 AS2 解码器管道的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上针对每个主机实例服务帐户的“本地计算机\其他人”存储区|**证书**页**参与方属性**对话框**注意：**用于方必须是唯一从用于验证签名的证书验证签名的证书其他各方。|  
+|签名验证（入站）|贸易合作伙伴的公钥 (.cer)|AS2 解码器|与接收处理程序关联的主机实例使用的帐户。|每台承载 AS2 解码器管道的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上针对每个主机实例服务帐户的“本地计算机\其他人”存储区|**证书**页**参与方属性**对话框**注意：** 用于方必须是唯一从用于验证签名的证书验证签名的证书其他各方。|  
 |加密（出站）|贸易合作伙伴的公钥 (.cer)|AS2 编码器|与发送处理程序相关联的主机实例使用的帐户。|每台承载 AS2 编码器管道的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的“本地计算机\其他人”存储区|**证书**页**发送端口属性**对话框|  
 |解密（入站）|自己的私钥 (.pfx)|AS2 解码器|与接收处理程序关联的主机实例使用的帐户。|每台承载 AS2 解码器管道的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上针对每个主机实例服务帐户的“当前用户\个人”存储区|AS2 解码器将根据消息中的证书信息确定证书。<br /><br /> BizTalk MIME 解码器，该证书必须包含在**证书**页用于接收消息的主机。 对于 AS2 解码器，则不一定是这样。|  
   

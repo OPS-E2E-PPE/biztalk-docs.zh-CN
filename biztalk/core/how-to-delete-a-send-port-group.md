@@ -1,18 +1,18 @@
 ---
-title: "如何删除发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何删除发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send port groups, deleting
 - managing [send port groups], deleting
 - deleting, send port groups
 ms.assetid: 90c01e58-d35c-4cb2-ac6d-92199199fb42
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248893"
 ---
 # <a name="how-to-delete-a-send-port-group"></a>如何删除发送端口组
 本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序中删除发送端口组。 执行此操作时，该组的 BizTalk 管理数据库中的发送端口组也会被删除。 删除发送端口组不会删除该组包含的任何发送端口。  

@@ -1,14 +1,14 @@
 ---
-title: "配置回退本地主机设置 （EDIFACT 交换设置） |Microsoft 文档"
-ms.custom: 
+title: 配置回退本地主机设置 （EDIFACT 交换设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eecf5abb-9c12-44b0-bc58-94cb138515c3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234109"
 ---
 # <a name="configuring-fallback-local-host-settings-edifact-interchange-settings"></a>配置回退本地主机设置（EDIFACT-交换设置）
 本地主机设置控制如何处理 EDI 交换。 此页上的设置可以分为两个类别：接收方设置（用于传入交换）和发送方设置（用于传出交换）。 作为接收方设置的一部分，您可以指定将要生成确认控制编号的方式。 作为发送方设置的一部分，可以指定为传出消息生成控制编号的方式。  

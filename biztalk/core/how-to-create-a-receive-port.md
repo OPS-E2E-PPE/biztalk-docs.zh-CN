@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249741"
 ---
 # <a name="how-to-create-a-receive-port"></a>如何创建接收端口
 本主题将介绍如何使用 BizTalk Server 管理控制台来创建接收端口。 接收端口是相似接收位置的一个逻辑分组，使用该端口，服务可通过接收数据与外部合作伙伴进行交互。  

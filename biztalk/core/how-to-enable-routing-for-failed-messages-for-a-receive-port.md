@@ -1,11 +1,11 @@
 ---
-title: "如何允许路由失败的消息接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何允许路由失败的消息接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive ports, routing
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - routing, failed messages
 - errors, receive ports
 ms.assetid: 22366664-545d-4981-9bde-4df48b115002
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254085"
 ---
 # <a name="how-to-enable-routing-for-failed-messages-for-a-receive-port"></a>如何为接收端口启用失败消息路由功能
 本主题将介绍如何使用 BizTalk Server 管理控制台为接收端口所处理的消息启用路由功能。 启用此选项后，BizTalk Server 将尝试把处理失败的所有消息路由至某个订阅应用程序（例如另一个接收端口或业务流程计划）。 禁用此选项（默认情况）时，BizTalk Server 将挂起失败的消息并生成一个否定确认 (NACK)。 有关管理失败的消息的背景信息，请参阅[使用失败消息路由](../core/using-failed-message-routing.md)。  

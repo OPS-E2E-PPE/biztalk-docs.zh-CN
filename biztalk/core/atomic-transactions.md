@@ -1,11 +1,11 @@
 ---
-title: "原子事务 |Microsoft 文档"
-ms.custom: 
+title: 原子事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - atomic transactions
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - scopes, transactions
 - scopes
 ms.assetid: 5030e1fd-943f-42bc-9296-4f315bd5f733
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233541"
 ---
 # <a name="atomic-transactions"></a>原子事务
 BizTalk 业务流程可设计为按照事务的传统“ACID”概念，执行不同部分的工作。 在执行时，这些离散的或原子的工作单位会将业务流程从一个一致的状态转移到独立于其他工作单位的一致且持久的新状态。 这通常是通过使用**作用域**构造，用于封装的与事务的语义的工作单元。 也可以将整个业务流程定义为一个原子事务，而不使用作用域。 但是，这些作用域不能标记为事务性的，除非业务流程本身标记为长期或原子事务类型。 原子事务保证在事务性更新期间发生故障时可自动回滚任何部分更新，并且消除事务的影响（事务中进行的任何 .NET 调用的影响除外）。 BizTalk 业务流程中的原子事务与分布式事务处理协调器 (DTC) 事务大体相似，只是前者通常存活时间较短并且具有四个“ACID”属性（原子性、一致性、隔离性和持久性）：  

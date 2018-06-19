@@ -1,14 +1,14 @@
 ---
-title: "管理默认映射器行为使用&lt;mapsource&gt; |Microsoft 文档"
-ms.custom: 
+title: 管理默认映射器行为使用&lt;mapsource&gt; |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: deea839c-e52e-44c6-ac0d-4396dc5b10d8
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263373"
 ---
 # <a name="managing-default-mapper-behavior-using-ltmapsourcegt"></a>管理默认映射器行为使用&lt;mapsource&gt;
 你可以通过修改的属性来修改 BizTalk 映射程序的某些默认行为**mapsource**直接映射 (.btm) 源文件中的元素。  

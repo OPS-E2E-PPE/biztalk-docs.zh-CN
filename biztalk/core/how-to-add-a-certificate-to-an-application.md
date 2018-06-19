@@ -1,11 +1,11 @@
 ---
-title: "如何将证书添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将证书添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [certificates], applications
 - managing [resources], certificates
 ms.assetid: 7c615002-6627-4134-9c2b-bf1c89d626c2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248173"
 ---
 # <a name="how-to-add-a-certificate-to-an-application"></a>如何向应用程序添加证书
 本主题说明如何使用命令行向 BizTalk Server 应用程序添加证书。 此选项在 BizTalk Server 管理控制台中不可用。 您向某一 BizTalk 应用程序添加证书，以便可以将证书从一个 BizTalk 组传输到另一个组中，与应用程序打包在一起。 您使用证书来验证凭据并为发送端口和接收位置建立安全的链接。 有关详细信息，请参阅[如何将证书分配给发送端口](../core/how-to-assign-a-certificate-to-a-send-port.md)和[如何将证书分配给接收位置](../core/how-to-assign-a-certificate-to-a-receive-location.md)。  

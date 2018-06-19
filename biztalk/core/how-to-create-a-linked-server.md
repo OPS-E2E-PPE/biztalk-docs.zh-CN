@@ -1,17 +1,17 @@
 ---
-title: "如何创建链接的服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何创建链接的服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, linking for backups
 - backing up, linking servers
 ms.assetid: 7d4aba3d-77c0-4cdf-8547-71e821ce34a1
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249805"
 ---
 # <a name="how-to-create-a-linked-server"></a>如何创建链接服务器
 当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装在分布式拓扑中时，多个 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 上均存在属于 BizTalk 组的数据库。 在能够从 BizTalk 管理服务器备份整个 BizTalk 环境之前，必须配置到每个远程服务器的链接服务器连接。 链接服务器是 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 分布式查询中使用的 OLE DB 数据源。  

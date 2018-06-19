@@ -1,14 +1,14 @@
 ---
-title: "BAM 拦截器错误消息 |Microsoft 文档"
-ms.custom: 
+title: BAM 拦截器错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 270dd5b7-33bf-4847-86f1-8798d63421b8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234645"
 ---
 # <a name="bam-interceptor-error-messages"></a>BAM 侦听器错误消息
 使用 WF 或 WCF BAM 侦听器时，你可能会遇到各种各样的问题，如侦听器配置文件无效、在提取上下文属性或尝试跟踪来自单向 WCF 操作回复的事件时出现运行时问题等等。  

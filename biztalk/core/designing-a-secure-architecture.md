@@ -1,11 +1,11 @@
 ---
-title: "设计安全的体系结构 |Microsoft 文档"
-ms.custom: 
+title: 设计安全的体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - firewalls
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - installation, firewalls
 - installation, security
 ms.assetid: 93df6a3f-396c-4767-99c8-2145bddf8fdf
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239445"
 ---
 # <a name="designing-a-secure-architecture"></a>设计安全结构
 有关 BizTalk Server 部署的系统体系结构的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。  

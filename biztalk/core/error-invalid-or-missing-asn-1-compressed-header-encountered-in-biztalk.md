@@ -1,14 +1,14 @@
 ---
-title: "无效或缺少 ASN.1 压缩的标头解压缩处理过程中遇到 |Microsoft 文档"
-ms.custom: 
+title: 无效或缺少 ASN.1 压缩的标头解压缩处理过程中遇到 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e59afea-436c-42c0-b424-0b72dd9db9a8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241813"
 ---
 # <a name="invalid-or-missing-asn1-compressed-header-encountered-during-decompression-processing"></a>无效或缺少 ASN.1 压缩解压缩处理过程中遇到的标头
 ## <a name="details"></a>详细信息  

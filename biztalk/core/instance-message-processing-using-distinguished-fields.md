@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257509"
 ---
 # <a name="instance-message-processing-using-distinguished-fields"></a>使用可分辨字段处理实例消息
 将属性提升通过 **可分辨字段** 机制不需要的属性架构创建。 因为所有属性提升，与你使用 **升级属性** 对话框中，这是可访问通过使用 **升级属性** 属性 **架构** 节点在消息架构中，或通过使用 **Promote & #124;显示升级** 命令 **BizTalk** 或快捷菜单。  

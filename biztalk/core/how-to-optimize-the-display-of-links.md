@@ -1,14 +1,14 @@
 ---
-title: "如何优化的链接显示 |Microsoft 文档"
-ms.custom: 
+title: 如何优化的链接显示 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a9e16ff-01d3-4b7d-91c4-59d17266ee6d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254381"
 ---
 # <a name="how-to-optimize-the-display-of-links"></a>如何优化链接的显示
 如果架构够大，您的映射可能包括源和目标架构之间的大量链接。 由于映射表面有许多链接，可能很难跟踪您要处理的项目或连接。 此外，跟踪源架构、链接、functoid 和目标架构之间的端对端关系可能也很困难。 在 BizTalk 映射器中，您可以更好地管理复杂的大型架构，并可以优化显示映射中的链接。 本主题提供关于如何查看链接的详细信息。  

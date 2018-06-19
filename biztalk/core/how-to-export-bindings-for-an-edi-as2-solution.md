@@ -1,14 +1,14 @@
 ---
-title: "如何导出绑定 EDI AS2 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何导出绑定 EDI AS2 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 856ab630-66c4-4496-884a-fdbe641143c5
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255645"
 ---
 # <a name="how-to-export-bindings-for-an-edi-as2-solution"></a>如何导出 EDI AS2 解决方案的绑定
 本主题介绍如何从设置为 EDI 和/或 AS2 解决方案的计算机中导出配置。 这样，您可以以自动方式在其他计算机上设置相同配置。 您可以从应用程序、组或程序集导出绑定。  

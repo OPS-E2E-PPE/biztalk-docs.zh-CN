@@ -1,14 +1,14 @@
 ---
-title: "如何设置节点属性 |Microsoft 文档"
-ms.custom: 
+title: 如何设置节点属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0c79eac-d9ba-45e2-a6e9-770b2bcb2067
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255445"
 ---
 # <a name="how-to-set-node-properties"></a>如何设置节点属性
 在将节点插入 BizTalk 架构后，通常需要对该节点属性的默认值进行更改。 每种类型的节点都具有不同的属性集，在这些属性集中，对一种属性的设置将会影响其他属性的可用性。 例如，在设置之前**默认换行字符**属性**架构**节点，必须设置**默认换行字符类型**属性设置为任一**字符**或**十六进制**，从而建立你打算在其中表示以前的属性的格式。 此外，既不这些属性不可用，也不是整个**分析**属性它们所属的类别，除非**平面文件扩展名**通过使用**架构编辑器扩展**属性。  

@@ -1,18 +1,18 @@
 ---
-title: "业务规则引擎中的数据访问 |Microsoft 文档"
-ms.custom: 
+title: 业务规则引擎中的数据访问 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, data access
 - Business Rules Engine, helper classes
 - data, data access
 ms.assetid: 38da32af-1e0d-43fb-b946-fb49a11f1681
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238613"
 ---
 # <a name="data-access-in-the-business-rule-engine"></a>业务规则引擎中的数据访问
 规则引擎本身只支持 .NET 对象。 若要处理来自数据库的数据，则可直接使用 ADO.NET 对象，但该引擎还提供了某些助手类以简化根据规则使用数据库数据的过程。 规则引擎通过公开三个数据库相关的类型来扩展它的支持： **TypedDataRow**， **TypedDataTable**，和**该组**。 本部分将介绍这些助手类，提供有关每种类型应在何时使用的建议，以及讨论在使用这些类时对性能所造成的影响。  

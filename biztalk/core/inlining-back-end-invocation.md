@@ -1,11 +1,11 @@
 ---
-title: "内联的后端调用 |Microsoft 文档"
-ms.custom: 
+title: 内联的后端调用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MessageBox database, performance
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Inline Invocation of Back-End Processes [service solutions], performance
 - performance, MessageBox database
 ms.assetid: 991d080f-a4cc-4f14-bab3-3b8b74636daf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257181"
 ---
 # <a name="inlining-back-end-invocation"></a>内联的后端调用
 完整解决方案的内联调用版本提供了最快的处理速度。 该内联版本消除了将与后端系统之间的请求和响应消息保存到 MessageBox 数据库中所带来的开销。 在适配器版本中，消息从发送业务流程传到 MessageBox 中。 运行适配器的主机将提取该消息，并通过再次将其发布到 MessageBox 来向后端进程发送该消息。  

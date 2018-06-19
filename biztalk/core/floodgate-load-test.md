@@ -1,18 +1,18 @@
 ---
-title: "Floodgate 负载测试 |Microsoft 文档"
-ms.custom: 
+title: Floodgate 负载测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - LoadGen tool, simulating floodgate events
 - performance, floodgate peaks
 - floodgate events [performance]
 ms.assetid: 937f2478-339b-4ae2-b107-56f3a4bfc579
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246205"
 ---
 # <a name="floodgate-load-test"></a>突发高负载测试
 本主题中的信息是指中所述的测试[测试方案的引擎测量 MST](../core/test-scenarios-for-measuring-mst-of-the-engine.md)。  

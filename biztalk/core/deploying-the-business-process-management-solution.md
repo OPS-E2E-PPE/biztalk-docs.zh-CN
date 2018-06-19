@@ -1,17 +1,17 @@
 ---
-title: "部署业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 部署业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, process management solution tutorial
 - process management solution tutorial, deploying
 ms.assetid: e033e0cd-0333-4f16-a4a0-eaae9ce98fcc
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239437"
 ---
 # <a name="deploying-the-business-process-management-solution"></a>部署业务流程管理解决方案
 业务流程管理 (BPM) 解决方案为您展示了一种在 BizTalk 应用程序中构造流程管理器的方法。 该解决方案使用组件来选择和控制订单处理中的阶段序列。 解决方案采用订单-这可能会为新的服务、 升级时或服务终止-记录它，并将其上传递以进行处理之前确认顺序。 处理过程由一个或多个订单处理阶段组成。 最后，该解决方案向原始订单请求返回响应。  

@@ -1,11 +1,11 @@
 ---
-title: "消息的生命周期 |Microsoft 文档"
-ms.custom: 
+title: 消息的生命周期 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - orchestrations, about orchestrations
 - messages, send ports
 ms.assetid: d2374f86-9b5f-404f-ba7b-9cab69873fa8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262821"
 ---
 # <a name="lifecycle-of-a-message"></a>消息的生命周期
 下图从消息传送方面对 BizTalk Server 结构进行了高度概括：  
@@ -84,9 +85,9 @@ ms.lasthandoff: 09/20/2017
   
 -   使用**GetInstance**检索服务实例对象。  
   
--   使用**Instance.Messages []**枚举所有消息都当前引用服务实例。  
+-   使用**Instance.Messages []** 枚举所有消息都当前引用服务实例。  
   
--   使用方法对 message 对象例如**Message.BodyPart []**和**Message.Context []**访问并将其保存。  
+-   使用方法对 message 对象例如**Message.BodyPart []** 和**Message.Context []** 访问并将其保存。  
   
 ### <a name="from-the-dta"></a>从 DTA  
   

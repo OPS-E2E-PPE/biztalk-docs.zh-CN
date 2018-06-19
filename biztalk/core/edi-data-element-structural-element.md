@@ -1,14 +1,14 @@
 ---
-title: "EDI 数据元素结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 数据元素结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 775e8b87-b952-46d2-a506-5174d216a9aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239469"
 ---
 # <a name="edi-data-element-structural-element"></a>EDI 数据元素：结构元素
 数据元素是消息中的基本数据单元。 数据元素由数据元素分隔符分隔，默认情况下 X12 是星号，EDIFACT 是加号。 数据元素的可行性定义为：必需、可选或条件。  

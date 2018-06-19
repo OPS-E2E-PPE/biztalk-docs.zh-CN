@@ -1,14 +1,14 @@
 ---
-title: "配置 SharePoint Services 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 配置 SharePoint Services 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36aadbc2-316f-4e1c-a5a8-b162470acf9e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22235029"
 ---
 # <a name="configure-sharepoint-services-send-port"></a>配置 SharePoint Services 发送端口
 本主题将比较静态发送端口与动态发送端口，并列出创建 [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 发送端口的步骤。 具体来说：  

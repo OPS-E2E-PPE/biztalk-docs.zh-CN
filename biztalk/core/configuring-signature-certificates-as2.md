@@ -1,14 +1,14 @@
 ---
-title: "配置签名证书 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置签名证书 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8539e210-1656-4fff-b026-36b81689061f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233261"
 ---
 # <a name="configuring-signature-certificates-as2"></a>配置签名证书（AS2）
 作为此页上设置的一部分，您可以指定用于签署所有传出消息的证书和用于解析此协议的 MDN。 此页上的设置将覆盖作为 BizTalk 组属性一部分提供的证书设置。 有关证书的使用方式的详细信息，请参阅[Configuring certificates for AS2 证书](../core/configuring-certificates-for-as2.md)。  

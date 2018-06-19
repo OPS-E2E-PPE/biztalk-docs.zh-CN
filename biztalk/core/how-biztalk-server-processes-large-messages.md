@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 如何处理大消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 如何处理大消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62c070be-dff5-4349-9e36-dd3a7caf1752
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249629"
 ---
 # <a name="how-biztalk-server-processes-large-messages"></a>BizTalk Server 如何处理大消息
 ## <a name="what-is-a-large-message"></a>什么是大消息？  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
      创建此值后，请输入一个要设置为新阈值的字节数的十进制值。 例如，输入十进制值 2097152 可将消息大小阈值从默认的 1 MB 增大至 2 MB。 在具有大量可用内存的系统上增大此值可提高吞吐量。 将文档缓存到磁盘可以节省内存，但是会对总体吞吐量造成影响。  
   
     > [!NOTE]
-    >  默认情况下，在映射期间缓冲到文件系统的文档写入到*%temp%* BizTalk Server 计算机的目录。 更改的设置*%temp%*到非系统磁盘，以在映射期间缓冲到文件系统的大消息时提高性能的环境变量。  
+    >  默认情况下，在映射期间缓冲到文件系统的文档写入到 *%temp%* BizTalk Server 计算机的目录。 更改的设置 *%temp%* 到非系统磁盘，以在映射期间缓冲到文件系统的大消息时提高性能的环境变量。  
   
 2.  在业务流程中尽量减少使用映射：  
   

@@ -1,18 +1,18 @@
 ---
-title: "如何查看发送端口的实例信息 |Microsoft 文档"
-ms.custom: 
+title: 如何查看发送端口的实例信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, viewing
 - managing [send ports], viewing
 - viewing, send ports
 ms.assetid: 37cf6561-5341-4a05-b531-33ab0334966e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256709"
 ---
 # <a name="how-to-view-instance-information-for-a-send-port"></a>如何查看发送端口的实例信息
 本主题将介绍如何使用 BizTalk Server 管理控制台来查看发送端口的正在运行的服务实例列表。 服务实例是在消息被发送到发送端口时创建的发送端口服务实例。 按照本主题中的过程操作后，实例信息将显示在发送端口的“组概述”页中。  

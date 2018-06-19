@@ -1,18 +1,18 @@
 ---
-title: "如何创建词汇定义 |Microsoft 文档"
-ms.custom: 
+title: 如何创建词汇定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
 - vocabularies, creating
 - vocabularies, definitions
 ms.assetid: 6f8fc4c2-2c46-4a7d-a02f-89de0396e3e2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250557"
 ---
 # <a name="how-to-create-vocabulary-definitions"></a>如何创建词汇定义
 您可以使用词汇定义向导来创建词汇定义。 词汇定义可以定义为常数值、值的范围或值的集合，或定义为 .NET 程序集、XML 文档或数据库表的元素。 如果你选择的公共变量，将有**获取**和**设置**选项就像在数据库和 XML 定义向导。  
@@ -108,16 +109,16 @@ ms.lasthandoff: 09/20/2017
   
 1.  右击词汇版本，然后单击**添加新定义**。  
   
-2.  在词汇定义向导中，选择**.NET 类或类成员**，然后单击**下一步**。  
+2.  在词汇定义向导中，选择 **.NET 类或类成员**，然后单击**下一步**。  
   
 3.  编辑**定义名称**和**说明**字段。  
   
 4.  单击 **“浏览”**。  
   
-5.  在**.NET 程序集**对话框中，选择一个程序集，，然后单击**确定**。  
+5.  在 **.NET 程序集**对话框中，选择一个程序集，，然后单击**确定**。  
   
     > [!NOTE]
-    >  可用程序集必须位于全局程序集缓存 (GAC) 中。 业务规则编辑器加载.NET 程序集的.NET 程序集在浏览时**事实数据资源管理器**窗口中或在**.NET 类或类成员定义**页**词汇定义**窗口。  如果您在 GAC 中更新该程序集，则关闭业务规则编辑器然后重新启动它，以便加载已更新的 .NET 程序集。 业务规则编辑器并不自动刷新该程序集。  
+    >  可用程序集必须位于全局程序集缓存 (GAC) 中。 业务规则编辑器加载.NET 程序集的.NET 程序集在浏览时**事实数据资源管理器**窗口中或在 **.NET 类或类成员定义**页**词汇定义**窗口。  如果您在 GAC 中更新该程序集，则关闭业务规则编辑器然后重新启动它，以便加载已更新的 .NET 程序集。 业务规则编辑器并不自动刷新该程序集。  
   
 6.  展开该程序集节点。  
   

@@ -13,7 +13,7 @@ helpviewer_keywords:
 - subscriptions, viewing
 - subscriptions, searching
 ms.assetid: 95f8fd20-2750-412b-a67b-18976e7706e2
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255517"
 ---
 # <a name="how-to-search-for-subscriptions"></a>如何搜索订阅
 你可以使用 **查询** 在 BizTalk Server 管理控制台中以搜索订阅的选项卡。 当希望查看系统中定义的所有订阅时，这就非常有用。 在排除路由故障时，您可以查看是不是由于某些订阅未正确设置而导致了路由故障。  

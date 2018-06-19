@@ -1,11 +1,11 @@
 ---
-title: "HTTP 适配器 |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, receive adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send adapters, HTTP adapters
 - HTTP adapters, about HTTP adapters
 ms.assetid: a9423052-8392-4006-ab46-79834169c796
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256045"
 ---
 # <a name="http-adapter"></a>HTTP 适配器
 使用 HTTP 适配器可以通过 HTTP 协议在 Microsoft BizTalk Server 和应用程序之间交换信息。 HTTP 是企业间进行消息交换的主要协议。 通过向指定的 HTTP URL 发送 HTTP POST 或 HTTP GET 请求，应用程序可以向服务器发送消息。 HTTP 适配器接收 HTTP 请求，并将其提交到 BizTalk Server 进行处理。 同样，通过向指定的 HTTP URL 发送 HTTP POST 请求，BizTalk Server 可以将消息传输给远程应用程序。  

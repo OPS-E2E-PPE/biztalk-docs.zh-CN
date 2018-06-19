@@ -1,11 +1,11 @@
 ---
-title: "业务规则引擎 |Microsoft 文档"
-ms.custom: 
+title: 业务规则引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, Business Rules Engine
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Business Rules Engine, rules
 - Business Rules Engine, about Business Rules Engine
 ms.assetid: 87b38507-9f6d-4863-88a6-9c20f15a4e55
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232613"
 ---
 # <a name="business-rules-engine"></a>业务规则引擎
 业务规则框架是一个符合 Microsoft .NET 的类库。 它提供了一个有效的推理引擎，可以将高可读性、描述性和语义丰富的规则链接到任何业务对象（.NET 组件）、XML 文档或数据库表。 应用程序开发人员可以通过使用作用于 .NET 对象、数据库表和 XML 文档中所包含信息（事实）的小型业务逻辑生成块（小型规则集）来构造规则，进而构建业务规则。 此设计模式可以提高代码重用率，简化设计，以及促进业务逻辑的模块化。 此外，不会对业务应用程序的结构或设计强制应用该规则引擎。 事实上，您可以通过直接调用规则引擎向业务应用程序中添加规则技术，也可以使用外部逻辑来调用您的业务对象而不必对其进行修改。 简而言之，该技术使得开发人员只需投入极少的精力用于创建和维护应用程序。  

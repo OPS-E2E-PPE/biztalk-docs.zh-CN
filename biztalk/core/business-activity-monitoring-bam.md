@@ -1,11 +1,11 @@
 ---
-title: "业务活动监视 (BAM) |Microsoft 文档"
-ms.custom: 
+title: 业务活动监视 (BAM) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, tools
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - BAM, BAM Management utility
 - BAM, processing
 ms.assetid: a8ad48b1-6891-4bbb-b125-27d224e49293
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234781"
 ---
 # <a name="business-activity-monitoring-bam"></a>业务活动监视 (BAM)
 下图显示了业务活动监视 (BAM) 功能的结构：  

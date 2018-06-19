@@ -1,14 +1,14 @@
 ---
-title: "配置回退本地主机设置 （X12 交换设置） |Microsoft 文档"
-ms.custom: 
+title: 配置回退本地主机设置 （X12 交换设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b552fa2b-1154-491f-9bcf-aaba3b8f343f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233957"
 ---
 # <a name="configuring-fallback-local-host-settings-x12-interchange-settings"></a>配置回退本地主机设置（X12-交换设置）
 本地主机设置控制如何处理 EDI 交换。 此页上的设置可以分为两个类别：接收方设置（用于传入交换）和发送方设置（用于传出交换）。 作为接收方设置的一部分，可以指定生成 ST02 的方式，确认控制编号。 作为发送方设置的一部分，可以指定为传出消息生成控制编号的方式。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**X12 回退设置**对话框中，在**X12 协议页**选项卡上，在**交换设置**部分中，单击**本地主机设置**.  
   
-3.  若要指定确认中使用的事务集控制编号的范围，请输入中的值**ACK 控制编号 (ST02)**字段。 请在中间两个字段中输入一个数值，而为前缀和后缀字段输入字母数字值（如果需要）。 中间字段是必填字段，包含控制编号的最小值和最大值；前缀和后缀可选。 所有三个字段的最大长度均为 9 个字符。  
+3.  若要指定确认中使用的事务集控制编号的范围，请输入中的值**ACK 控制编号 (ST02)** 字段。 请在中间两个字段中输入一个数值，而为前缀和后缀字段输入字母数字值（如果需要）。 中间字段是必填字段，包含控制编号的最小值和最大值；前缀和后缀可选。 所有三个字段的最大长度均为 9 个字符。  
   
      若要重置当前事务集控制编号的最小值，请单击**重置**。 检查**重置为下限超出界限时**来将控制编号重置为较低的限制，一旦已超过最大值。  
   

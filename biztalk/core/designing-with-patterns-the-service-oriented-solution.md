@@ -1,11 +1,11 @@
 ---
-title: "设计用于模式： 面向服务的解决方案 |Microsoft 文档"
-ms.custom: 
+title: 设计用于模式： 面向服务的解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [service solutions], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - patterns [service solutions], designing
 - designing, programming patterns
 ms.assetid: c196cd9d-2b2d-4548-bc7d-26196f7c2878
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240189"
 ---
 # <a name="designing-with-patterns-the-service-oriented-solution"></a>设计用于模式： 面向服务的解决方案
 面向服务的解决方案演示如何公开 BizTalk 应用程序作为服务以使用其他应用程序。 提供一个应用程序作为服务使其他应用程序可以轻松地使用该信息并在它们提供的服务中使用它。 有关服务的详细信息接口都在看到"服务接口" [http://go.microsoft.com/fwlink/?LinkId=46185](http://go.microsoft.com/fwlink/?LinkId=46185)。 有关面向服务的集成的详细信息请参阅"面向服务集成"网址[http://go.microsoft.com/fwlink/?LinkId=46186](http://go.microsoft.com/fwlink/?LinkId=46186)。  

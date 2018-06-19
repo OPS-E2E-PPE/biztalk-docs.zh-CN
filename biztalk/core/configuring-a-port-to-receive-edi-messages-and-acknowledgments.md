@@ -1,14 +1,14 @@
 ---
-title: "配置端口以接收 EDI 消息，确认 |Microsoft 文档"
-ms.custom: 
+title: 配置端口以接收 EDI 消息，确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c043e648-b7f5-40aa-b7b5-0172fbea7b31
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234205"
 ---
 # <a name="configuring-a-port-to-receive-edi-messages-and-acknowledgments"></a>配置接收 EDI 消息和确认的端口
 若要接收的 EDI 交换，你可以创建单向接收端口或请求-响应 （双向） 接收端口，以便接收该交换。  
@@ -45,8 +46,8 @@ ms.lasthandoff: 09/20/2017
 |位置|属性|设置|  
 |--------------|--------------|-------------|  
 |**接收端口属性： 常规**|端口类型|请求响应|  
-|**接收端口属性： 常规**|身份验证|设置为**丢弃的消息，如果身份验证失败**或**身份验证失败时保留消息**进行身份验证对收到的消息发送方。<br /><br /> 设置为**无身份验证**禁用发送对收到的消息一方的身份验证。<br /><br /> **注意：**如果设置为**丢弃的消息，如果身份验证失败**或**身份验证失败时保留消息**，消息必须解析为协议。|  
-|**接收位置属性： 常规**|传输类型|可以是众多传输类型中的任何一个，FILE 除外，在下拉列表中不提供此类型。<br /><br /> **注意：**如果创建一个使用 EDIReceive 管道并且具有 HTTP 传输类型的接收位置，可能出现安全问题。 EdiReceive 管道将不生成 HTTP“200 OK”确认。 如果返回没有 EDI 确认，连接将保持打开，直到超时期限已过。|  
+|**接收端口属性： 常规**|身份验证|设置为**丢弃的消息，如果身份验证失败**或**身份验证失败时保留消息**进行身份验证对收到的消息发送方。<br /><br /> 设置为**无身份验证**禁用发送对收到的消息一方的身份验证。<br /><br /> **注意：** 如果设置为**丢弃的消息，如果身份验证失败**或**身份验证失败时保留消息**，消息必须解析为协议。|  
+|**接收位置属性： 常规**|传输类型|可以是众多传输类型中的任何一个，FILE 除外，在下拉列表中不提供此类型。<br /><br /> **注意：** 如果创建一个使用 EDIReceive 管道并且具有 HTTP 传输类型的接收位置，可能出现安全问题。 EdiReceive 管道将不生成 HTTP“200 OK”确认。 如果返回没有 EDI 确认，连接将保持打开，直到超时期限已过。|  
 |**接收位置属性： 常规**|接收处理程序|BizTalkServerApplication|  
 |**接收位置属性： 常规**|接收管道|EdiReceive|  
 |**接收位置属性： 常规**|发送管道|EdiSend|  

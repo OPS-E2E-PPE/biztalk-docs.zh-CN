@@ -1,18 +1,18 @@
 ---
-title: "业务流程管理解决方案的开发人员计算机设置 |Microsoft 文档"
-ms.custom: 
+title: 业务流程管理解决方案的开发人员计算机设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developer servers
 - process management solution tutorial, developer servers
 - process management solution tutorial, deploying
 ms.assetid: cf975323-53ec-45a8-9f68-80ad423f298b
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238877"
 ---
 # <a name="developer-machine-setup-for-the-business-process-management-solution"></a>业务流程管理解决方案的开发人员计算机设置
 业务流程管理 (BPM) 解决方案为您展示了一种在 BizTalk 应用程序中构造流程管理器的方法。 该解决方案使用组件来选择和控制订单处理中的阶段序列。 该解决方案首先获取订单（该订单可能是申请新的服务、申请升级或申请终止服务），然后记录该订单，并在传递订单以进行处理之前对该订单进行确认。 处理过程由一个或多个订单处理阶段组成。 最后，该解决方案向原始订单请求返回响应。  

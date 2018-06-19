@@ -1,17 +1,17 @@
 ---
-title: "BizTalk server 设计系统体系结构 |Microsoft 文档"
-ms.custom: 
+title: BizTalk server 设计系统体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, security
 - security, deploying
 ms.assetid: b7ded72a-2487-4bb7-9894-cd13235a52c7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239269"
 ---
 # <a name="designing-the-system-architectures-for-biztalk-server"></a>为 BizTalk Server 设计系统结构
 您的 Microsoft® BizTalk® Server 部署在安全性、性能、可用性和操作上的要求高度依赖于您的业务需求、要求、合作伙伴、公司规模等。 尽管将 BizTalk Server 组件的单个配置视为典型配置并为其提供说明性指导非常困难，但本部分还是就如何在分布式安全配置中为大型公司的生产环境配置不同的 BizTalk Server 功能提供了指导和建议。  

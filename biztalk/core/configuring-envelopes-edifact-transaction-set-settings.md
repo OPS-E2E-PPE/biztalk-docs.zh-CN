@@ -1,14 +1,14 @@
 ---
-title: "配置信封 （EDIFACT 事务集设置） |Microsoft 文档"
-ms.custom: 
+title: 配置信封 （EDIFACT 事务集设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec140def-6155-4b8a-8489-6e0a530bd697
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234629"
 ---
 # <a name="configuring-envelopes-edifact-transaction-set-settings"></a>配置信封（EDIFACT--事务集设置）
 在**包络线**页**事务设置设置**部分中，你定义如何 BizTalk Server 生成的 UNG 段和新罕布什尔大学段它将发送到方的 EDIFACT 编码交换。  
@@ -25,14 +26,14 @@ ms.lasthandoff: 09/20/2017
   
  UNH 段是 EDIFACT 编码的交换的消息标头段。 UNH 段提供了有关消息类型以及负责维护该消息类型发布的机构的信息。 该段指示交换中文档的开头以及后面文档的类型。  
   
- 在**功能组标头 (UNG)**部分中，你将关联**UNG**值与**新罕布什尔大学**值和命名空间。 BizTalk Server 确定 BizTalk XML 消息已设置的值**新罕布什尔大学**元素和**目标命名空间**在网格的行中，BizTalk 服务器将填充**UNG**同一行的网格中的值的数据元素。 值**新罕布什尔大学**元素和**目标命名空间**必须是唯一的。  
+ 在**功能组标头 (UNG)** 部分中，你将关联**UNG**值与**新罕布什尔大学**值和命名空间。 BizTalk Server 确定 BizTalk XML 消息已设置的值**新罕布什尔大学**元素和**目标命名空间**在网格的行中，BizTalk 服务器将填充**UNG**同一行的网格中的值的数据元素。 值**新罕布什尔大学**元素和**目标命名空间**必须是唯一的。  
   
  如果消息没有包含的匹配项**新罕布什尔大学**元素和**目标命名空间**在任何行中，BizTalk Server 将填充的值的消息**UNG**默认行中的元素。 将使用这些值，即使消息不具有与匹配**新罕布什尔大学**元素和**目标命名空间**的默认行。  
   
  当 BizTalk 引擎确定 BizTalk XML 消息具有新罕布什尔大学元素和目标命名空间设置的值时，引擎会使用为其设置在网格中，提供的值填充 UNG 元素在消息中的**创建分组段**选中复选框。  
   
 > [!NOTE]
->  在**功能组标头 (UNG)**部分中，如果你在网格中，输入的任何字段的设置，然后删除该设置，您将需要删除整行或页将未通过验证。  
+>  在**功能组标头 (UNG)** 部分中，如果你在网格中，输入的任何字段的设置，然后删除该设置，您将需要删除整行或页将未通过验证。  
   
 > [!IMPORTANT]
 >  所有属性上将都禁用**A 方-> 方 B**单向协议选项卡，如果你清除**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**检查框 a 方。但是，在中相同页面上启用的所有属性**B 方-> A 方**选项卡上，如果创建 a 方。 时选中复选框  

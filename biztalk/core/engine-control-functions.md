@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239853"
 ---
 # <a name="engine-control-functions"></a>引擎控制功能
 本部分将介绍与若干业务规则引擎控制功能相关联的行为，这些引擎控制功能允许应用程序或策略控制规则引擎的工作内存中的事实。 工作内存中存在的事实可以驱动要进行评估的条件和要执行的操作。  

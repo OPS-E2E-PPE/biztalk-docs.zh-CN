@@ -1,14 +1,14 @@
 ---
-title: "生成传出 MDN |Microsoft 文档"
-ms.custom: 
+title: 生成传出 MDN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12d7da1c-0d3c-42d4-9388-29f499353d13
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247949"
 ---
 # <a name="generating-an-outgoing-mdn"></a>生成传出 MDN
 AS2 接收管道会对传入消息生成一个 MDN（消息处置通知）响应。 这是由 AS2EDIReceive 接收管道（响应 EDI 编码的消息）中的 EDI 拆装器管道组件或 AS2Receive 接收管道中的 AS2 拆装器管道组件（响应非 EDI 编码的消息）执行的。  
@@ -38,7 +39,7 @@ AS2 接收管道会对传入消息生成一个 MDN（消息处置通知）响应
   
 -   如果，则会发送 MDN**请求 MDN**选择属性。  
   
--   如果**请求 MDN**选定属性，则与**请求异步 MDN**选择属性，则会以异步方式发送 MDN。 MDN 将发送到的 URL，**回执送达选项 (URL)**属性设置为中，通过不同连接比原始消息。  
+-   如果**请求 MDN**选定属性，则与**请求异步 MDN**选择属性，则会以异步方式发送 MDN。 MDN 将发送到的 URL，**回执送达选项 (URL)** 属性设置为中，通过不同连接比原始消息。  
   
 -   如果**请求 MDN**选择属性，但**请求异步 MDN**不选择属性后，将通过作为原始消息的相同连接以同步方式发送 MDN。  
   

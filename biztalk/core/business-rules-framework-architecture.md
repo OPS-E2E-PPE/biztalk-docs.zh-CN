@@ -1,11 +1,11 @@
 ---
-title: "业务规则 Framework 体系结构 |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Framework 体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Framework, caching
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - architecture, Business Rules Framework
 - Business Rules Framework, rule store
 ms.assetid: f5570cca-7664-4180-af9c-64ef90a0022b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233869"
 ---
 # <a name="business-rules-framework-architecture"></a>业务规则 Framework 体系结构
 下图显示了业务规则框架的组件结构。  

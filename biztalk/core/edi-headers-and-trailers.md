@@ -1,14 +1,14 @@
 ---
-title: "EDI 标头和尾部 |Microsoft 文档"
-ms.custom: 
+title: EDI 标头和尾部 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf1dae3-9570-413d-a85d-94dcbb561906
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241925"
 ---
 # <a name="edi-headers-and-trailers"></a>EDI 的头部和尾部
 EDI 交换的各部分由标头和尾部分隔，而标头和尾部必须遵循 X12 或 EDIFACT 标准。 交换控制标头和尾部只出现一次；功能组和事务集标头和尾部可重复出现，前提是事务集和组在交换内是按批处理的。 每个标头和尾部均由一系列数据元素组成，这些元素包含有关标头和尾部所含内容的信息。  

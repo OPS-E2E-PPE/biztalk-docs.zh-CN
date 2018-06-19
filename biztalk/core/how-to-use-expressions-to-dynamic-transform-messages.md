@@ -1,14 +1,14 @@
 ---
-title: "如何使用动态转换消息的表达式 |Microsoft 文档"
-ms.custom: 
+title: 如何使用动态转换消息的表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48387d97-9312-4df5-b614-727ea9035bf8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256933"
 ---
 # <a name="how-to-use-expressions-to-dynamic-transform-messages"></a>如何使用动态转换消息的表达式
 可以在业务流程中使用表达式来动态转换消息。 XLANG 公开的转换方法，可以从调用**消息分配**形状内**构造消息**形状。 这是时，将调用的相同方法**转换**形状会使用，但是，可以以编程方式将转换使用业务流程中指定映射的消息。 在您执行与类型无关的消息处理时该方法会很有用。 例如，如果您具有需要从一系列映射中选择的业务流程，以便基于接收的入站消息提供的参数转换入站消息，则可以通过在表达式形状中使用该转换方法实现此要求，同时保持整体业务流程的完整性。  

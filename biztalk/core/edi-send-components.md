@@ -1,14 +1,14 @@
 ---
-title: "EDI 发送组件 |Microsoft 文档"
-ms.custom: 
+title: EDI 发送组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fce270db-a573-48b3-be15-0178a5b7785b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239925"
 ---
 # <a name="edi-send-components"></a>EDI 发送组件
 本主题中介绍的管道和管道组件用于处理不是 EDI/AS2 消息的 EDI 消息。 有关发送 EDI/AS2 或非 EDI/AS2 消息的信息，请参阅[AS2 发送组件](../core/as2-send-components.md)。 请注意，除 AS2 处理以外，AS2 发送组件还执行 EDI 处理。  

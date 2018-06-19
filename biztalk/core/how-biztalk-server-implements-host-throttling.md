@@ -17,7 +17,7 @@ helpviewer_keywords:
 - host throttling, user controlled throttling
 - host throttling, strategies
 ms.assetid: 46d3c3de-66b9-4c8a-8369-e68563fc9c40
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22250653"
 ---
 # <a name="how-biztalk-server-implements-host-throttling"></a>BizTalk Server 如何实现主机阻止
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]持续限制机制的主机监视限制条件，计算的重要程度限制条件，并将应用渐进式限制，具体取决于计算严重性的主机。 此限制的机制是自我调整和默认配置选项都适用于大多数[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]处理方案。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 主机限制公开可用于优化限制用于特定方案的几个可配置选项。 有关更改这些配置选项的信息，请参阅[如何修改主机设置](../core/how-to-modify-host-settings.md)。  
@@ -116,6 +117,6 @@ ms.lasthandoff: 03/28/2018
 |-------------------------------------------|--------------------------------------|------------------------------|-------------------------|------------------------|-------------------------|  
 |1|**消息传送传入速率** 主机实例超出 **传出速率的消息传递 \*** 指定 **速率 overdrive 因素 （百分比）** 值<br /><br /> 如果处理复杂度太高，出站适配器速度太慢或者系统资源出现暂时短缺，都会导致此情况。|直到传入速率位于等同于消息传递在动态计算的时间段内阻止传递线程 **传出速率的消息传递 \*** 指定 **速率 overdrive 因素 （百分比）** 值。|使用性能计数器确定消息送达传入速率和消息送达传出速率。 请考虑适当针对你的环境的驱动器因素。<br /><br /> 验证值提供有关 **采样窗口持续时间** 和 **最小样本数** 参数适于你的方案。<br /><br /> 有关这些参数的详细信息，请参阅[如何修改速率基于限制设置](../core/how-to-modify-rate-based-throttling-settings.md)。|BizTalk:MessageAgent|Message delivery incoming rate<br /><br /> Message publishing outgoing rate|  
 |4|进程内存超出指定阈值。<br /><br /> 在需要占用大量内存的处理方案中、在处理大量消息时或者在发送适配器尝试同时处理大量消息时可能发生此情况。|降低向适配器或 XLANG 的消息送达速度。<br /><br /> 根据需要，通过冻结服务实例和缩减缓存来降低进程内存占用率。<br /><br /> 减少由 EPM 和/或消息代理使用的线程池的大小。<br /><br /> 定期强制执行 .NET 垃圾回收 (GC)。|如果系统由于基于进程内存的阻止而没有处于空闲状态，则可能无需采取任何操作。<br /><br /> 如果 **进程内消息计数** 计数器值较高和 CPU 使用率是否即使在没有进程内存限制基于，任何其他操作可能需要过大。<br /><br /> 如果系统看起来过度限制，请考虑增加与关联的值 **进程虚拟** 主机的阈值，并验证主机实例不会生成"内存不足"错误。 如果通过增加引发"内存不足"错误 **进程虚拟** 阈值，请考虑减少的值 **内部消息队列大小** 和 **进程内消息** 阈值。 此策略特别适用于大型消息处理方案。<br /><br /> 有关这些参数的详细信息，请参阅[如何修改资源基于限制设置](../core/how-to-modify-resource-based-throttling-settings.md)。|BizTalk:MessageAgent|High process memory<br /><br /> Process memory usage(MB)<br /><br /> Process memory usage threshold (MB)<br /><br /> In-process message count<br /><br /> Active instance count|  
-|3|送达服务类别的进程内消息数超出指定阈值。<br /><br /> 如果处理复杂度太高，出站适配器速度太慢或者系统资源出现暂时短缺，都会导致此情况。|降低向适配器或 XLANG 的消息送达速度。<br /><br /> 减少由消息代理使用的线程池的大小。|如果发生过度限制，请考虑增加与关联的值 **进程内消息** 阈值。<br /><br /> 有关此参数的详细信息，请参阅[如何修改资源基于限制设置](../core/how-to-modify-resource-based-throttling-settings.md)**注意：**增加此值可能产生负面影响发送适配器性能和/或增加内存进程使用。|BizTalk:MessageAgent|In-process message count<br /><br /> In-process message count threshold|  
+|3|送达服务类别的进程内消息数超出指定阈值。<br /><br /> 如果处理复杂度太高，出站适配器速度太慢或者系统资源出现暂时短缺，都会导致此情况。|降低向适配器或 XLANG 的消息送达速度。<br /><br /> 减少由消息代理使用的线程池的大小。|如果发生过度限制，请考虑增加与关联的值 **进程内消息** 阈值。<br /><br /> 有关此参数的详细信息，请参阅[如何修改资源基于限制设置](../core/how-to-modify-resource-based-throttling-settings.md)**注意：** 增加此值可能产生负面影响发送适配器性能和/或增加内存进程使用。|BizTalk:MessageAgent|In-process message count<br /><br /> In-process message count threshold|  
 |9|进程线程数超出指定阈值。|减少由 EPM 和/或消息代理使用的线程池的大小|考虑调整不同线程池的大小，以确保系统不会创建大量线程。<br /><br /> 有关修改线程池大小的详细信息，请参阅[如何修改常规设置](../core/how-to-modify-general-settings.md)和[如何修改资源基于限制设置](../core/how-to-modify-resource-based-throttling-settings.md)。|BizTalk:MessageAgent|Thread count<br /><br /> Thread count threshold|  
 |5|系统内存超出阈值。|降低向适配器或 XLANG 的消息送达速度。<br /><br /> 根据需要，通过冻结服务实例和缩减缓存来降低进程内存占用率。<br /><br /> 减少由 EPM 和/或消息代理使用的线程池的大小。|考虑通过减少 EPM 线程池的默认大小和/或适配器批的大小来降低负荷量。<br /><br /> 如果进程不占用了过多内存，请考虑增加 **全局物理** 主机的阈值。<br /><br /> 有关更改的详细信息**全局物理**阈值，请参阅[如何修改资源基于限制设置](../core/how-to-modify-resource-based-throttling-settings.md)。|BizTalk:MessageAgent|Physical memory usage (MB)|

@@ -1,14 +1,14 @@
 ---
-title: "配置回退验证属性 (EDIFACT) |Microsoft 文档"
-ms.custom: 
+title: 配置回退验证属性 (EDIFACT) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b925d063-e24b-4cfb-acbd-dcadb511011d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233197"
 ---
 # <a name="configuring-fallback-validation-properties-edifact"></a>配置回退验证属性 (EDIFACT)
 本部分说明如何防止处理重复控制编号。  
@@ -30,11 +31,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  在**EDIFACT 回退设置**对话框中，在**EDIFACT 协议页**选项卡上，在**交换设置**部分中，单击**验证**.  
   
-3.  选择**交换控制编号 (UNB5)**复选框以启用接收管道可阻止重复的交换。 如果选中此选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将检查所接收的交换的控制编号是否与接收的其他交换的控制编号匹配。 如果检测到匹配，则接收管道将不处理交换。  
+3.  选择**交换控制编号 (UNB5)** 复选框以启用接收管道可阻止重复的交换。 如果选中此选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将检查所接收的交换的控制编号是否与接收的其他交换的控制编号匹配。 如果检测到匹配，则接收管道将不处理交换。  
   
-4.  如果**交换控制编号 (UNB5)**选中，则在**检查内重复的 unb5**字段中，输入天数，以检查重复的交换。  
+4.  如果**交换控制编号 (UNB5)** 选中，则在**检查内重复的 unb5**字段中，输入天数，以检查重复的交换。  
   
-5.  选择**交换中的组控制编号 (UNG5)**以防止接收管道处理重复的组。  
+5.  选择**交换中的组控制编号 (UNG5)** 以防止接收管道处理重复的组。  
   
 6.  选择**事务集控制编号 (UNH1) 组中**以防止接收管道处理重复的事务设置。  
   

@@ -1,11 +1,11 @@
 ---
-title: "如何配置为发送端口的入站的映射 |Microsoft 文档"
-ms.custom: 
+title: 如何配置为发送端口的入站的映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], inbound maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [send ports], configuring
 - send ports, configuring
 ms.assetid: 213c66ba-928f-4c00-9a87-f45eaa9f7dca
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248461"
 ---
 # <a name="how-to-configure-inbound-maps-for-a-send-port"></a>如何为发送端口配置入站映射
 本主题将介绍如何使用 BizTalk Server 管理控制台为发送端口配置入站映射。 入站映射仅和动态或静态要求响应发送端口一起使用。 可以使用映射对该端口接收的响应消息应用 XSL 转换，而无需通过业务流程来处理该消息。 您可以添加入站映射、删除映射或更改现有映射。 还可以向发送端口添加多个映射，但每个映射必须具有唯一的源架构。 有关地图背景信息，请参阅[映射](../core/maps.md)。  

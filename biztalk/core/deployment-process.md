@@ -1,11 +1,11 @@
 ---
-title: "部署过程 |Microsoft 文档"
-ms.custom: 
+title: 部署过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SSO, LogonExternalUser test
 - SSO, security
 ms.assetid: 7dd4c022-c70b-467a-bf94-dc4ac6029f81
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240661"
 ---
 # <a name="deployment-process"></a>部署过程
 以下步骤对企业单一登录的安全部署进行了高级概述。 有关在 SQL Server 中执行操作的详细过程，请参阅 SQL Server 文档。  
@@ -32,33 +33,33 @@ ms.lasthandoff: 09/20/2017
   
     -   **名称：** ORCH.com  
   
-    -   **方向：**双向  
+    -   **方向：** 双向  
   
-    -   **边：**仅限于此域  
+    -   **边：** 仅限于此域  
   
-    -   **传出信任身份验证级别的本地域：**选择性身份验证  
+    -   **传出信任身份验证级别的本地域：** 选择性身份验证  
   
-    -   **密码：**选择一个密码  
+    -   **密码：** 选择一个密码  
   
-    -   **确认传出信任：**是  
+    -   **确认传出信任：** 是  
   
-    -   **确认传入信任：**否  
+    -   **确认传入信任：** 否  
   
 2.  在 ORCH.com 域控制器上，使用新建信任向导可创建具有以下属性的信任：  
   
     -   **名称：** SQL.com  
   
-    -   **方向：**双向  
+    -   **方向：** 双向  
   
-    -   **边：**仅限于此域  
+    -   **边：** 仅限于此域  
   
-    -   **传出信任身份验证级别的本地域：**选择性身份验证  
+    -   **传出信任身份验证级别的本地域：** 选择性身份验证  
   
-    -   **密码：**必须是与密码相同的 ORCH.com  
+    -   **密码：** 必须是与密码相同的 ORCH.com  
   
-    -   **确认传出信任：**是  
+    -   **确认传出信任：** 是  
   
-    -   **确认传入信任：**否  
+    -   **确认传入信任：** 否  
   
 3.  在 ORCH.com 域控制器上，为从 SQL.COM 的传入通信设置域范围信任。  
   

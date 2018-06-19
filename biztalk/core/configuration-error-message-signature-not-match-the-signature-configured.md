@@ -1,14 +1,14 @@
 ---
-title: "配置错误。 消息签名没有 &#39; 与为此方配置的签名匹配的 t |Microsoft 文档"
-ms.custom: 
+title: 配置错误。 消息签名没有 &#39; 与为此方配置的签名匹配的 t |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cea0016-12e8-4ee8-ac44-11024b5e74ef
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232485"
 ---
 # <a name="configuration-error-the-message-signature-doesn39t-match-the-signature-configured-for-this-party"></a>配置错误。 消息签名没有 &#39; t 匹配此方配置的签名
 ## <a name="details"></a>详细信息  

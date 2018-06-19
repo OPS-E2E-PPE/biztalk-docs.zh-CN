@@ -1,11 +1,11 @@
 ---
-title: "如何将映射项数据 |Microsoft 文档"
-ms.custom: 
+title: 如何将映射项数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data extraction
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking profiles, orchestrations
 - tracking profiles, data extraction
 ms.assetid: ae8b395e-152a-4e08-af31-3c9276f52711
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253949"
 ---
 # <a name="how-to-map-item-data"></a>如何映射项数据
 映射项数据可以定义如何从业务流程中提取数据。  

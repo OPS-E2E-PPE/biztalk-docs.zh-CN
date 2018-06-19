@@ -1,14 +1,14 @@
 ---
-title: "配置回退信封属性 （EDIFACT 事务集设置） |Microsoft 文档"
-ms.custom: 
+title: 配置回退信封属性 （EDIFACT 事务集设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56a5a93-35ac-4293-b00e-28dcd89dfa2a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233717"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-transaction-set-settings"></a>配置回退信封属性（EDIFACT-事务集设置）
 在**包络线**页**事务设置设置**部分中，你定义 BizTalk Server 如何生成它将发送到方的 EDIFACT 编码交换 UNG 段。  

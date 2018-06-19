@@ -1,11 +1,11 @@
 ---
-title: "示例 TMA： 文件适配器 |Microsoft 文档"
-ms.custom: 
+title: 示例 TMA： 文件适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, File adapters
 - security examples [TMA], File adapters
 ms.assetid: bcb862c0-fe02-4335-8b59-242d28049e3f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271885"
 ---
 # <a name="sample-tma-file-adapter"></a>示例 TMA： 文件适配器
 本主题对示例结构的文件适配器方案进行威胁模型分析 (TMA)。 下图显示了文件适配器方案的示例结构：  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-2-create-and-analyze-the-threat-model-file-adapter-scenario"></a>步骤 2. 创建和分析的威胁模型 （文件适配器方案）  
  本部分提供了我们的示例体系结构的文件适配器方案未 TMA 的结果。  
   
--   **标识入口点、 信任边界和数据的流-**请参阅"收集背景信息的文件适配器方案"和"对于所有方案的背景信息。"中前面所述的背景信息  
+-   **标识入口点、 信任边界和数据的流-** 请参阅"收集背景信息的文件适配器方案"和"对于所有方案的背景信息。"中前面所述的背景信息  
   
 -   **创建标识的威胁的列表**我们使用以下分类 DFD 中的所有条目来识别潜在威胁的方案： **S**哄骗标识， **T**篡改数据， **R**epudiation，**我**璝泄露**D**的服务，用以和**E**提升特权。 下表列出了当你使用文件适配器发送和接收消息与 BizTalk Server 我们标识的威胁。  
   

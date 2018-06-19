@@ -1,17 +1,17 @@
 ---
-title: "BAM 注意事项代码维护 |Microsoft 文档"
-ms.custom: 
+title: BAM 注意事项代码维护 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, code maintenance
 - BAMInterceptor class
 ms.assetid: e1f1d8e0-207c-47e1-b9bd-a473c86922ce
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238093"
 ---
 # <a name="considerations-for-bam-code-maintenance"></a>BAM 代码维护的注意事项
 在决定如何装备您的应用程序以使用 BAM 后，您应当考虑要求将发生更改的可能性。 如果你在某个 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.aspx) 类中调用方法以写入正在被监视数据，则可以从本质上将观察模型“硬编码”到应用程序中。 如果您需要更改被监视的数据，则必须使应用程序处于脱机状态，更改其代码、重新编译应用程序，然后重新部署更新的应用程序。  

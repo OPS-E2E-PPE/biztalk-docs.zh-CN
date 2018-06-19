@@ -1,11 +1,11 @@
 ---
-title: "分离传输类型和处理 |Microsoft 文档"
-ms.custom: 
+title: 分离传输类型和处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transport types, decoupling processing
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - MQSeries adapters, correlations
 - MQSeries adapters, service solutions
 ms.assetid: 0b2c733a-e2c7-42ff-a733-f712fde38f7e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238597"
 ---
 # <a name="decoupling-transport-type-and-processing"></a>分离传输类型和处理
 在面向服务的解决方案中，业务处理与传输和接收消息的具体细节之间通常存在明显的界线。 这样，您可以单独更改解决方案的业务流程或消息传送部分。  

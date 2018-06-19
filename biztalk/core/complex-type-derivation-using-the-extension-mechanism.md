@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22232469"
 ---
 # <a name="complex-type-derivation-using-the-extension-mechanism"></a>使用扩展机制进行复杂类型派生
 由扩展派生的复杂类型是其基本数据类型的功能超集。 顾名思义，其基本数据类型是要定义的类型的基础，与基本数据类型的差异体现在附加的内容中。 本主题提供了在其中一个示例的两个元素 **ShippingAddress** 和 **BillingAddress** 基于复杂全局类型 **GlobalAddrType**。 **ShippingAddress** 只是被定义为类型 **GlobalAddrType**, ，而 **BillingAddress** 被定义为扩展类型 **GlobalAddrType**。 在示例结束时，附加的元素添加到 **BillingAddress**, 命名 **部门**, 、 与字符串类型的默认值为 Accounts Payable。  

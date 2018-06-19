@@ -1,14 +1,14 @@
 ---
-title: "配置验证 （EDIFACT 交换设置） |Microsoft 文档"
-ms.custom: 
+title: 配置验证 （EDIFACT 交换设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55820ebc-fe21-48a3-8985-1bf4184176ac
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233077"
 ---
 # <a name="configuring-validation-edifact-interchange-settings"></a>配置验证（EDIFACT-交换设置）
 本部分说明如何防止处理重复控制编号。  
@@ -33,11 +34,11 @@ ms.lasthandoff: 09/20/2017
   
 2.  单向协议选项卡上，在**交换设置**部分中，单击**验证**。  
   
-3.  选择**交换控制编号 (UNB5)**复选框以启用接收管道可阻止重复的交换。 如果选中此选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将检查所接收的交换的控制编号是否与接收的其他交换的控制编号匹配。 如果检测到匹配，则接收管道将不处理交换。  
+3.  选择**交换控制编号 (UNB5)** 复选框以启用接收管道可阻止重复的交换。 如果选中此选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将检查所接收的交换的控制编号是否与接收的其他交换的控制编号匹配。 如果检测到匹配，则接收管道将不处理交换。  
   
-4.  如果**交换控制编号 (UNB5)**选中，则在**检查内重复的 unb5**字段中，输入天数，以检查重复的交换。  
+4.  如果**交换控制编号 (UNB5)** 选中，则在**检查内重复的 unb5**字段中，输入天数，以检查重复的交换。  
   
-5.  选择**交换中的组控制编号 (UNG5)**以防止接收管道处理重复的组。  
+5.  选择**交换中的组控制编号 (UNG5)** 以防止接收管道处理重复的组。  
   
 6.  选择**事务集控制编号 (UNH1) 组中**以防止接收管道处理重复的事务设置。  
   

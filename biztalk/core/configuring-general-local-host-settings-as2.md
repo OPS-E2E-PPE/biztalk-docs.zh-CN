@@ -1,14 +1,14 @@
 ---
-title: "配置常规本地主机设置 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置常规本地主机设置 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 980daac2-8387-44cc-ae55-38639f759668
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233813"
 ---
 # <a name="configuring-general-local-host-settings-as2"></a>配置常规本地主机设置（AS2）
 作为本地主机常规设置的一部分，可以指定 AS2 消息的内容类型以及是否将文件名保留为 AS2 消息标头的一部分。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  选择**使系统生成文件名**将生成新的 GUID 值作为发送 AS2 消息中每个附件的文件名称。  
   
-6.  如果你选择**指定文件名**，输入中的字符串值或上下文属性**指定文件名**字段。 你还可以启用**挂起消息，如果找不到上下文属性 （例如 %属性 %）**挂起消息，如果所选的上下文属性不存在的出站消息。  
+6.  如果你选择**指定文件名**，输入中的字符串值或上下文属性**指定文件名**字段。 你还可以启用**挂起消息，如果找不到上下文属性 （例如 %属性 %）** 挂起消息，如果所选的上下文属性不存在的出站消息。  
   
     > [!NOTE]
     >  若要指定上下文属性，请将 %字符的属性名称。 例如， `%FILE.ReceivedFileName%`。  

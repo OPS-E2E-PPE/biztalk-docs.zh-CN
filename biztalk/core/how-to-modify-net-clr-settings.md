@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254293"
 ---
 # <a name="how-to-modify-net-clr-settings"></a>如何修改 .NET CLR 设置
 若要更新与 BizTalk 主机的实例相关联的 .NET 线程池中可用的 Windows 线程数，可以使用“BizTalk 设置仪表板”修改相应的公共语言运行时 (CLR) Hosting 值。 本主题提供了修改这些设置的分步过程。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在**BizTalk Server 管理控制台**，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，右键单击**BizTalk 组**，然后单击**设置**。  
   
-2.  在**BizTalk 设置仪表板**对话框中，在**主机实例**选项卡上，单击**.NET CLR**选项卡。  
+2.  在**BizTalk 设置仪表板**对话框中，在**主机实例**选项卡上，单击 **.NET CLR**选项卡。  
   
 3.  执行以下操作，单击**应用**应用修改再转到另一个选项卡。或单击**确定**应用进行修改并退出设置仪表板。  
   

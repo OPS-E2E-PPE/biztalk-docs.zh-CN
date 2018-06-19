@@ -1,14 +1,14 @@
 ---
-title: "AS2 消息和相关的 MDN 状态报告 |Microsoft 文档"
-ms.custom: 
+title: AS2 消息和相关的 MDN 状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48ed0ee3-c844-4cb9-a84d-32b719ab8fab
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232973"
 ---
 # <a name="as2-message-and-correlated-mdn-status-report"></a>AS2 消息和相关的 MDN 状态报表
 此报告显示了 AS2 发送管道和接收管道处理的所有 AS2 消息以及与相应交换有关的 MDN。  

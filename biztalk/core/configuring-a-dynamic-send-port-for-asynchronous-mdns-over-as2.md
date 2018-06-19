@@ -1,14 +1,14 @@
 ---
-title: "配置动态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档"
-ms.custom: 
+title: 配置动态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72646c90-89db-4884-824b-6921bb824f8d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233445"
 ---
 # <a name="configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2"></a>配置用于 AS2 上的异步 MDN 的动态发送端口
 要通过 HTTP/HTTPS 发送异步的 EDIINT/AS2 编码消息，请使用以下配置创建一个动态 HTTP 发送端口：  

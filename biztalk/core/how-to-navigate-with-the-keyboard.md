@@ -1,17 +1,17 @@
 ---
-title: "如何使用键盘导航 |Microsoft 文档"
-ms.custom: 
+title: 如何使用键盘导航 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, keyboard shortcuts
 - keyboard shortcuts, Pipeline Designer
 ms.assetid: 2e41bdfc-98ee-45d8-9d94-8d3dbf6d1194
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254701"
 ---
 # <a name="how-to-navigate-with-the-keyboard"></a>如何使用键盘导航
 通过使用键盘（而不是鼠标），您可以在设计图面中进行导航。 下表显示了可供您使用的键：  

@@ -1,18 +1,18 @@
 ---
-title: "如何定义业务活动 |Microsoft 文档"
-ms.custom: 
+title: 如何定义业务活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business activities, creating [Excel add-in]
 - monitoring business activities [BAM], creating business activities [Excel add-in]
 - monitoring business activities [BAM], Excel add-in
 ms.assetid: 305e3718-46b4-45df-bd52-f7ae36621576
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249829"
 ---
 # <a name="how-to-define-a-business-activity"></a>如何定义业务活动
 要表示需要为报告收集的数据，必须定义 BAM 活动。 这包含了您希望 BAM 跟踪的一系列重要的里程碑和数据项。可以使用 BAM Excel 外接程序创建活动，详见以下步骤中的说明。  

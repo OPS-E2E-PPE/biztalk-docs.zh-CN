@@ -1,14 +1,14 @@
 ---
-title: "生成和测试适配器项目 |Microsoft 文档"
-ms.custom: 
+title: 生成和测试适配器项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b5eb486-99ae-4661-b0d0-d2d363d97b73
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233053"
 ---
 # <a name="build-and-test-the-adapter-project"></a>生成和测试适配器项目
 若要测试对 AdapterManagement 项目所做的所有更改，请重新生成该项目。 在成功生成后，运行“添加适配器元数据”向导以确保所有的内部和外部 XSD 文件已添加到 AdapterManagement 项目。 有关使用添加适配器元数据向导的说明，请参阅[到 BizTalk 项目添加适配器元数据如何](../core/how-to-add-adapter-metadata-to-a-biztalk-project.md)。  
   
- 若要测试对配置架构所做的更改，请打开由 XSD 文件生成的每个属性页以确保它们请求和接受正确的数据。 执行此操作通过配置发送端口、 接收位置、 发送处理程序，和接收处理程序中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台**。**  
+ 若要测试对配置架构所做的更改，请打开由 XSD 文件生成的每个属性页以确保它们请求和接受正确的数据。 执行此操作通过配置发送端口、 接收位置、 发送处理程序，和接收处理程序中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台 **。**  
   
 > [!NOTE]
 >  适配器可能不具有全部配置架构。 例如，不支持接收消息的发送适配器可能只具有 TransmitLocation.xsd 和 TransmitHandler.xsd 架构。  

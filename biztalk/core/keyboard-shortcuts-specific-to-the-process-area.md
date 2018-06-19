@@ -1,17 +1,17 @@
 ---
-title: "键盘快捷方式所特有的过程区域 |Microsoft 文档"
-ms.custom: 
+title: 键盘快捷方式所特有的过程区域 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: d993d341-99f2-4788-b1f3-6a8b911e5278
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262061"
 ---
 # <a name="keyboard-shortcuts-specific-to-the-process-area"></a>过程区域特有的键盘快捷方式
 下表对流程区域中可用的键盘导航进行了说明，该区域是用于定义业务流程处理流程的设计图面的中心区域：  

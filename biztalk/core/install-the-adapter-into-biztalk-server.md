@@ -1,14 +1,14 @@
 ---
-title: "将适配器安装到 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 将适配器安装到 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1164468d-75a9-4116-87a6-6055948c198b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257717"
 ---
 # <a name="install-the-adapter-into-biztalk-server"></a>将适配器安装到 BizTalk Server 中
 在向注册表写入了正确的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 注册表项后，必须将适配器添加到 BizTalk 管理数据库中。 将适配器添加到此数据库之后，它将成为当前可配置的适配器，在正确配置后即可处理消息。 你通过使用到数据库安装适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 将适配器安装到数据库之后，请重新启动主机实例。  

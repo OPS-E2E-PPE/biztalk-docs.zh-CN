@@ -1,14 +1,14 @@
 ---
-title: "如何管理视图 |Microsoft 文档"
-ms.custom: 
+title: 如何管理视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4a865d7-b319-4264-a085-15f2155bdb2d
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254637"
 ---
 # <a name="how-to-manage-views"></a>如何管理视图
 在开发 BizTalk 映射的过程中，您可能需要更改源或目标架构树视图的大小，或网格视图的大小。 有时，您可能需要用之前关闭的同一视图打开您的映射。 本主题提供有关这些任务的分步说明。  

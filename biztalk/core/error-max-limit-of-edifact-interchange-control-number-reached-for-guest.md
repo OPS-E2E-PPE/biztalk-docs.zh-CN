@@ -1,14 +1,14 @@
 ---
-title: "来宾设置达到可接受的 Edifact 交换控制编号的最大限制 |Microsoft 文档"
-ms.custom: 
+title: 来宾设置达到可接受的 Edifact 交换控制编号的最大限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5d2dcc0-61fd-47c9-9339-8a85319c5398
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241525"
 ---
 # <a name="max-limit-of-acceptable-edifact-interchange-control-number-has-reached-for-guest-settings"></a>已达到“来宾”设置的可接受 EDIFACT 交换控制编号最大限制
 ## <a name="details"></a>详细信息  

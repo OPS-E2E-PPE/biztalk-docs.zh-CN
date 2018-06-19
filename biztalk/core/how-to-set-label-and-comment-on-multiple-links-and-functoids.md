@@ -1,14 +1,14 @@
 ---
-title: "如何在多个链接和 Functoid 上设置标签和注释 |Microsoft 文档"
-ms.custom: 
+title: 如何在多个链接和 Functoid 上设置标签和注释 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b554a19-2bd4-4dbc-b5cb-567b98c07024
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255621"
 ---
 # <a name="how-to-set-label-and-comment-on-multiple-links-and-functoids"></a>如何在多个链接和 Functoid 上设置标签和注释
 您可以为多个 functoid 和/或链接设置通用标签和/或注释。 本主题提供有关如何执行此操作的详细信息。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 项目版本控制 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 项目版本控制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dcdd5354-6335-4320-adbf-28ac934c9ce6
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234189"
 ---
 # <a name="biztalk-server-project-versioning"></a>BizTalk Server 项目版本控制
 当使用开发[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]，版本管理由一组标准的工作版本号将更改的影响降至最低的规则。 具体取决于如何[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]部署应用程序或组件，可以处理依赖关系，通过应用程序配置文件，通过 XCOPY 安装，或由其他[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]部署机制。 如以下各节将显示，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将额外的复杂性添加到版本控制和依赖关系。  

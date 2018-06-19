@@ -1,14 +1,14 @@
 ---
-title: "如何配置 BAM WCF 截获 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 BAM WCF 截获 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d85aa130-3219-4df1-8974-a44a51a15002
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249205"
 ---
 # <a name="how-to-configure-the-bam-wcf-interception"></a>如何配置 BAM WCF 侦听
 若要配置用于 WCF 侦听的 BAM，必须修改侦听器配置文件，以便访问事件源的相应程序集清单。  

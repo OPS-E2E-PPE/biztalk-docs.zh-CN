@@ -1,14 +1,14 @@
 ---
-title: "引擎持久性和持久性 |Microsoft 文档"
-ms.custom: 
+title: 引擎持久性和持久性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bd209e9-75d2-422f-b3b2-377986f41f2f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242589"
 ---
 # <a name="engine-persistence-and-durability"></a>引擎持久性和持久性
 本部分将介绍 BizTalk Server 如何通过利用 SQL Server 将流程状态保存到磁盘上来可靠地集成松散连接的业务流程。 通过利用事务以适当的次数保存状态，系统可以保证即使在硬件或软件发生故障的情况下也不会丢失任何流程状态。 这称为系统持久性。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240405"
 ---
 # <a name="error---failed-write-extension-xml-file"></a>错误-失败的写入扩展 XML 文件
 **错误代码**  

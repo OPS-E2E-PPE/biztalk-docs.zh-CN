@@ -1,14 +1,14 @@
 ---
-title: "配置信封 （EDIFACT 交换设置） |Microsoft 文档"
-ms.custom: 
+title: 配置信封 （EDIFACT 交换设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 501ccc5f-e21c-4c36-9509-217d5b3ba21f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233517"
 ---
 # <a name="configuring-envelopes-edifact-interchange-settings"></a>配置信封（EDIFACT-交换设置）
 本节提供有关如何配置 EDIFACT 待发邮件的信封的说明。  
@@ -39,14 +40,14 @@ ms.lasthandoff: 09/20/2017
   
 4.  有关**通信协议 (UNB10)**，输入一个字母数字值，该值最少包含一个字符，最多 35 个字符。 此字段为可选字段  
   
-5.  选择**测试指示器 (UNB11)**以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。  
+5.  选择**测试指示器 (UNB11)** 以指示该交换生成的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。  
   
-6.  选择**应用 UNA 段 （字符串服务建议）**生成 UNA 段为要发送的交换。 如果选中此选项，然后**UNA6**不能为空和**UNA 6 后缀**不能为**无**。  
+6.  选择**应用 UNA 段 （字符串服务建议）** 生成 UNA 段为要发送的交换。 如果选中此选项，然后**UNA6**不能为空和**UNA 6 后缀**不能为**无**。  
   
     > [!NOTE]
     >  你指定**UNA6**和**UNA6 后缀**中**字符集和分隔符**页中所述[配置字符集和分隔符 (EDIFACT)](../core/configuring-charset-and-separators-edifact.md).  
   
-7.  选择**应用 UNG 段 （功能组标头）**创建分组段的功能组标头中传出消息。  
+7.  选择**应用 UNG 段 （功能组标头）** 创建分组段的功能组标头中传出消息。  
   
 8.  单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。  
   

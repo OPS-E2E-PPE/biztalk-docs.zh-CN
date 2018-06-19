@@ -1,11 +1,11 @@
 ---
-title: "构造消息 |Microsoft 文档"
-ms.custom: 
+title: 构造消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, messages
 - messages, creating
 ms.assetid: c9fc1e97-ff53-42e2-848c-6c8fae7c9122
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237813"
 ---
 # <a name="constructing-messages"></a>构造消息
 只要您通过接收消息或为消息变量赋值将消息引入业务流程，就需要构造消息。 您构造的任何消息必须具有消息类型，这样运行时引擎才有所使用的对象的完整说明。 多部分消息类型可以是用户定义的，可以是 .NET 类，也可以是架构。 您可以构造消息以各种方式： 你可以调用一个.NET 类来创建一条消息，将一条消息分配给另一个字符串，或使用转换来将消息中的某些值映射到另一条消息中的值。 消息还可以由接收操作构造，或者在业务流程将消息作为参数来接受的时候构造。  

@@ -1,14 +1,14 @@
 ---
-title: "常见的事件筛选器模式 |Microsoft 文档"
-ms.custom: 
+title: 常见的事件筛选器模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc80168b-25bd-4228-b84c-d38bf4e2fe4a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234517"
 ---
 # <a name="common-event-filter-patterns"></a>常用事件筛选模式
 使用用于 Windows Workflow Foundation (WF) 的 BAM 侦听器时，您可能会注意到，在侦听器配置文件中存在一组频繁使用的常用筛选模式。 虽然其中的某些筛选模式对于应用程序和环境而言是唯一的，但许多模式可跨环境和在不同的应用程序中使用。  

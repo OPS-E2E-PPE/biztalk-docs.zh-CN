@@ -1,14 +1,14 @@
 ---
-title: "EDI 结构验证 |Microsoft 文档"
-ms.custom: 
+title: EDI 结构验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87086614-5616-441d-915c-2979c63c6e2f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239589"
 ---
 # <a name="edi-structural-validation"></a>EDI 结构验证
 X12 和 EDIFACT 编码的 EDI 规范为 EDI 交换的结构定义了特定规则和约定。 EDIReceivePipeline 中的 EDI 拆装器将验证每条接收的消息的信封是否符合这些结构规则。 EDISendPipeline 根据这些规则生成要发送的每个消息并在发送前验证信封。  

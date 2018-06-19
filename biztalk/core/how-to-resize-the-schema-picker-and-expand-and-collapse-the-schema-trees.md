@@ -1,14 +1,14 @@
 ---
-title: "如何调整大小架构选取器，以及展开和折叠架构树 |Microsoft 文档"
-ms.custom: 
+title: 如何调整大小架构选取器，以及展开和折叠架构树 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 267ea17d-54fe-4031-a044-719606489f24
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254813"
 ---
 # <a name="how-to-resize-the-schema-picker-and-expand-and-collapse-the-schema-trees"></a>如何调整大小架构选取器，以及展开和折叠架构树
 开发 BizTalk 映射时，可能需要展开和折叠源架构树及目标架构树，以显示或隐藏各 schema 节点。 本主题提供了分步说明，若要调整大小架构选取器，并可展开和折叠架构树。  

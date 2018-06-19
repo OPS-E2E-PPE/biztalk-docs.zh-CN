@@ -1,14 +1,14 @@
 ---
-title: "适配器变量 |Microsoft 文档"
-ms.custom: 
+title: 适配器变量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeda96bc-5141-4c42-8a29-b0a28bc47aa4
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233877"
 ---
 # <a name="adapter-variables"></a>适配器变量
 任何自定义适配器都有大量变量需要处理。 赋给这些变量的值将影响适配器实现的自定义逻辑。 特定于传输或特定于应用程序的配置属性还有助于支持您的解决方案。 下表列出了这些常见变量。 您必须确定是否要在您的自定义适配器中支持每个变量。  

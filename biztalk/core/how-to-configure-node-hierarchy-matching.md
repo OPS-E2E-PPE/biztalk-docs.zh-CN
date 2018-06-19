@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248669"
 ---
 # <a name="how-to-configure-node-hierarchy-matching"></a>如何配置匹配的节点层次结构
 在映射中创建链接时，BizTalk 映射器会自动创建编译器链接以实现您绘制的链接。 **目标链接** 链接的属性控制 BizTalk 映射程序如何绘制编译器链接。 本主题提供有关如何设置目标链接的信息。  

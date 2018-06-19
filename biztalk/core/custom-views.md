@@ -1,14 +1,14 @@
 ---
-title: "自定义视图 |Microsoft 文档"
-ms.custom: 
+title: 自定义视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9084cc07-be98-4c57-afea-4fa369a38bad
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238165"
 ---
 # <a name="custom-views"></a>自定义视图
 自定义视图通常是只读的窗口控件对象 (派生自**System.Windows.Forms.Control**)，以及由要表示的架构中的文件或文件支持的类型为自定义的显示格式的扩展通过 BizTalk 编辑器扩展中。 扩展可以实现多个自定义视图，虽然它不需要具有任何自定义视图。  

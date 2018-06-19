@@ -1,11 +1,11 @@
 ---
-title: "如何将一个 BAM 项目添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将一个 BAM 项目添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, definition files [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [applications], definition files [BAM]
 - definition files [BAM], managing
 ms.assetid: 86f19030-e510-4527-ba74-10498c361c00
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247421"
 ---
 # <a name="how-to-add-a-bam-artifact-to-an-application"></a>如何将一个 BAM 项目添加到应用程序
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加 BAM 项目。 添加 BAM 定义文件不会部署 BAM 定义。 导入应用程序 .msi 文件时会部署 BAM 定义。  

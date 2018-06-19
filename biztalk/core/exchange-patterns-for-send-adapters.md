@@ -1,14 +1,14 @@
 ---
-title: "为发送适配器交换模式 |Microsoft 文档"
-ms.custom: 
+title: 为发送适配器交换模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ad65fb5-640d-4bd2-aabe-946210f58a22
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248349"
 ---
 # <a name="exchange-patterns-for-send-adapters"></a>发送适配器的交换模式
 发送适配器从 BizTalk 消息引擎通过网络传输来传送消息。 这些消息可能会发送使用的单向或双向消息交换模式。 处理此双向消息交换模式的适配器调用请求-响应适配器。  
@@ -32,9 +33,9 @@ ms.lasthandoff: 09/20/2017
   
  ![](../core/media/io-cpu-bound-threadpools.gif "Io_cpu_bound_threadpools")  
   
- **性能提示：**以实现最佳性能，将发送适配器都应锁定和感知的批处理。 当 BizTalk 文件适配器已从阻止和非批处理感知更改为非阻止和批处理感知，实现了三倍的性能提升了。  
+ **性能提示：** 以实现最佳性能，将发送适配器都应锁定和感知的批处理。 当 BizTalk 文件适配器已从阻止和非批处理感知更改为非阻止和批处理感知，实现了三倍的性能提升了。  
   
- **故障排除提示：**阻止传输可能会导致性能降低的整个主机实例。 如果适配器执行过多阻塞**TransmitMessage**将阻止引擎线程将消息传送到其他适配器。  
+ **故障排除提示：** 阻止传输可能会导致性能降低的整个主机实例。 如果适配器执行过多阻塞**TransmitMessage**将阻止引擎线程将消息传送到其他适配器。  
   
 ## <a name="non-batched-sends"></a>非成批发送  
  不感知的批处理的适配器应实现**IBTTransmitter**详见[异步发送适配器的接口](../core/interfaces-for-an-asynchronous-send-adapter.md)。 为每条消息，该适配器需要传输 the Messaging Engine 调用**IBTTransmitter.TransmitMessage**。 以下对象交互示意图详细说明的典型方法以传输消息，其中包括以下步骤：  

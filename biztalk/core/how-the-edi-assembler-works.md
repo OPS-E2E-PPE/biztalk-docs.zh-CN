@@ -1,14 +1,14 @@
 ---
-title: "EDI 汇编器的工作原理 |Microsoft 文档"
-ms.custom: 
+title: EDI 汇编器的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3785870-08ab-4fc2-8f7e-7c5a37639a7a
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22250485"
 ---
 # <a name="how-the-edi-assembler-works"></a>EDI 组装器的工作原理
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行大多数将发送到 EDI 发送管道的 EDI 编码交换处理(`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`)。 此管道包括用于执行下列处理的 EDI 组装器管道组件：  
@@ -98,7 +99,7 @@ ms.lasthandoff: 01/17/2018
 |组控制编号|GS6|UNG5|  
 |事务集控制编号 (X12)<br /><br /> 事务集参考编号 (EDIFACT)|ST2|UNH1|  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将设置为根据你在中输入的值的范围发送下一步的交换的交换控制编号**交换控制编号 (ISA13)**属性**本地主机设置**页上 （下**交换设置**) 中的单向协议选项卡的**协议属性**对话框。 它将会为每个后续交换递增此编号，直到达到最大值。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将设置为根据你在中输入的值的范围发送下一步的交换的交换控制编号**交换控制编号 (ISA13)** 属性**本地主机设置**页上 （下**交换设置**) 中的单向协议选项卡的**协议属性**对话框。 它将会为每个后续交换递增此编号，直到达到最大值。  
   
  如果使用 EdiOverride 上下文属性指定交换控制编号，则指定的值将用于此交换，并且不会影响在协议中指定的交换控制编号。  
   

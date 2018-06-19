@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234077"
 ---
 # <a name="biztalk-mapper-errors"></a>BizTalk 映射程序错误
 本部分提供了与 BizTalk 映射器相关联的编译消息的补充信息。 你可以访问此信息是在 Microsoft 中的任务列表窗口中选择了其中一个相关的消息也是使用 F1 键[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 BizTalk 映射器的概念性和程序性信息，请参阅[创建地图使用 BizTalk 映射程序](../core/creating-maps-using-biztalk-mapper.md)。  

@@ -1,11 +1,11 @@
 ---
-title: "面向开发的服务解决方案 |Microsoft 文档"
-ms.custom: 
+title: 面向开发的服务解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, developing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - developing, tutorials
 - developing, service solution tutorial
 ms.assetid: 7979a05c-7fd3-4476-a623-55de8abdc493
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239325"
 ---
 # <a name="developing-a-service-oriented-solution"></a>面向开发的服务解决方案
 面向服务的解决方案演示了 Woodgrove Bank 的信用帐户余额系统。 有关帐户的信息来自三个原有系统：提供信用限额的 SAP 系统、在大型机上运行的挂起事务系统、使用 MQSeries 的付款跟踪系统。 余额检查请求来自 Web 服务或交互式语音应答 (IVR) 系统。 有关方案的详细信息，请参阅[了解服务面向解决方案](../core/understanding-the-service-oriented-solution.md)。  

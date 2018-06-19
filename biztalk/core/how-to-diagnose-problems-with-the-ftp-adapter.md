@@ -1,14 +1,14 @@
 ---
-title: "如何使用 FTP 适配器诊断问题 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 FTP 适配器诊断问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 499d23d3-b705-4527-9929-147be157e6b3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248765"
 ---
 # <a name="how-to-diagnose-problems-with-the-ftp-adapter"></a>如何使用 FTP 适配器诊断问题
 本部分中包含的步骤用于诊断 FTP 适配器的问题。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      *%Windir%\\*system32\LogFiles\MSFTPSVC1\  
   
     > [!NOTE]
-    >  *%Windir%*是 FTP 服务器上的 Windows 目录的位置的占位符。  
+    >  *%Windir%* 是 FTP 服务器上的 Windows 目录的位置的占位符。  
   
 ### <a name="enable-logging-for-the-ftp-receive-location-or-send-port"></a>为 FTP 接收位置或发送端口启用日志记录  
   

@@ -1,14 +1,14 @@
 ---
-title: "无效的地址 (绝对 uri) |Microsoft 文档"
-ms.custom: 
+title: 无效的地址 (绝对 uri) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5db292ad-9105-492d-a6c5-a7108159901a
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256957"
 ---
 # <a name="invalid-address-absolute-uri"></a>地址无效（绝对 URI）
 ## <a name="details"></a>详细信息  
@@ -53,4 +54,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**WCF [***传输类型***] 传输属性**对话框中，单击**常规**选项卡。  
   
-9. 在**地址 (URI)**文本框。 更改的地址。 例如，格式正确的绝对地址为 http://localhost/path/service.svc
+9. 在**地址 (URI)** 文本框。 更改的地址。 例如，格式正确的绝对地址为 http://localhost/path/service.svc

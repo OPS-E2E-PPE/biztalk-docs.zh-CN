@@ -1,14 +1,14 @@
 ---
-title: "创建架构 |Microsoft 文档"
-ms.custom: 
+title: 创建架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 20b88194-b400-4ebc-8882-d493fbf30e0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238533"
 ---
 # <a name="creating-schemas"></a>创建架构
 你可以使用 BizTalk 编辑器创建两种类型的架构： 消息架构和属性的架构。  

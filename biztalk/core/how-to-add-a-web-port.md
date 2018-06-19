@@ -1,17 +1,17 @@
 ---
-title: "如何添加 Web 端口 |Microsoft 文档"
-ms.custom: 
+title: 如何添加 Web 端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web ports, creating
 - creating, Web ports
 ms.assetid: da94d98e-10ca-437a-ba34-7aa6efc68f3d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248005"
 ---
 # <a name="how-to-add-a-web-port"></a>如何添加 Web 端口
 你可以在业务流程设计器的端口图面上添加 Web 端口。 与其他已配置端口不同，Web 端口支持混合使用请求（单向）和请求/响应（双向）操作。 Web 端口中的每个操作都表示一个 Web 方法。 如果 Web 方法包含*输入*和*输出*参数，BizTalk 创建请求/响应操作。 如果 Web 服务仅包含*输入*参数时，BizTalk 仅创建单向操作。  

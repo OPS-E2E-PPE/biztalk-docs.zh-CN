@@ -1,14 +1,14 @@
 ---
-title: "应用程序部署和管理工具 |Microsoft 文档"
-ms.custom: 
+title: 应用程序部署和管理工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: de85b52b-7eb7-4cf1-b8b4-41f7488b4d2f
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232189"
 ---
 # <a name="application-deployment-and-management-tools"></a>应用程序部署和管理工具
 

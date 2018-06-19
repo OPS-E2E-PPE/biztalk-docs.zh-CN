@@ -1,17 +1,17 @@
 ---
-title: "高可用性 SSO 安装选项 |Microsoft 文档"
-ms.custom: 
+title: 高可用性 SSO 安装选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability, SSO
 - SSO, high availability
 ms.assetid: b6e7722e-8fe5-49fe-bf53-bdcca2bb4ad2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246149"
 ---
 # <a name="high-availability-sso-installation-options"></a>高可用性 SSO 安装选项
 本部分中的主题将介绍针对企业单一登录的高可用性的安装，例如，多计算机部署。  

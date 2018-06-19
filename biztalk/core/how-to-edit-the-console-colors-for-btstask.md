@@ -1,14 +1,14 @@
 ---
-title: "如何编辑 BTSTask 的控制台颜色 |Microsoft 文档"
-ms.custom: 
+title: 如何编辑 BTSTask 的控制台颜色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 725dcb7b-5a19-4166-9d1c-93f30ddca201
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254037"
 ---
 # <a name="how-to-edit-the-console-colors-for-btstask"></a>如何为 BTSTask 编辑控制台颜色
 本主题介绍如何编辑 BTSTask 输出到控制台的前景色。 如果控制台背景色为白色，则难以查看默认 BTSTask 控制台的输出，您就需要修改控制台的前景色。  

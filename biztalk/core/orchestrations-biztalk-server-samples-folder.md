@@ -1,18 +1,18 @@
 ---
-title: "业务流程 （BizTalk Server 的示例文件夹） |Microsoft 文档"
-ms.custom: 
+title: 业务流程 （BizTalk Server 的示例文件夹） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 - SDK examples
 ms.assetid: f70f8d67-763f-4e3c-b233-c7156026b514
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263549"
 ---
 # <a name="orchestrations-biztalk-server-samples-folder"></a>业务流程 （BizTalk Server 示例文件夹中）
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在其软件开发工具包 (SDK) 中包括了几个业务流程示例。 本部分将提供有关这些业务流程示例所演示功能的详细信息、生成和运行这些示例的说明以及可预期的结果。 下面所列的示例按其复杂程度排序，即 HelloWorld 是列表中最基本的示例。 列表中排在后面的示例可能基于列表中排在前面的示例所示的功能。  

@@ -1,17 +1,17 @@
 ---
-title: "如何定义的持续时间 |Microsoft 文档"
-ms.custom: 
+title: 如何定义的持续时间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business activities, time intervals
 - BAM View Wizard, configuring time intervals
 ms.assetid: 82bb742a-0271-4ece-8a5c-0260322ac545
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248781"
 ---
 # <a name="how-to-define-durations"></a>如何定义持续时间
 持续时间指定一个时间长度，由特定活动项的开始里程碑和结束里程碑来定义。 例如，PO 的有效天数。  

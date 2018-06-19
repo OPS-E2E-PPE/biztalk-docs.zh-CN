@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 中的数据库 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 中的数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Notification Services Application database [BAM]
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Tracking database
 - MessageBox database
 ms.assetid: bb504a26-cae6-4f2a-9b86-3554ef8f6045
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242605"
 ---
 # <a name="databases-in-biztalk-server"></a>BizTalk Server 中的数据库
 Microsoft BizTalk Server 在 SQL Server 中安装了若干数据库。 本主题介绍这些数据库，以及使用这些数据库的 SQL 逻辑组。  

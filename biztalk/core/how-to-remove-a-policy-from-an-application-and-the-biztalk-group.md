@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序和 BizTalk 组中删除策略 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序和 BizTalk 组中删除策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, policies
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [policies], groups
 - applications, policies
 ms.assetid: e9882cb3-8808-4258-a107-a24905290288
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254509"
 ---
 # <a name="how-to-remove-a-policy-from-an-application-and-the-biztalk-group"></a>如何从应用程序和 BizTalk 组中删除策略
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行从应用程序和 BizTalk 组的规则引擎数据库中删除策略。  

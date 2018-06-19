@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254621"
 ---
 # <a name="how-to-modify-orchestration-throttling-settings"></a>如何修改业务流程阻止设置
 使用 BizTalk 设置仪表板，可以在 BizTalk 组中修改给定主机的业务流程阻止配置设置。 这些设置将应用于分配到给定主机的所有主机实例。 本主题提供了修改这些设置的分步过程。  

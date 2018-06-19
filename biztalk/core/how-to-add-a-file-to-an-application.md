@@ -1,18 +1,18 @@
 ---
-title: "如何将文件添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将文件添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], adding files
 - files, adding to applications
 - managing [resources], adding files
 ms.assetid: 6665b946-113a-4026-a0a3-6b67ede4b689
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247733"
 ---
 # <a name="how-to-add-a-file-to-an-application"></a>如何将文件添加到应用程序
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加文件。 在安装应用程序时，添加到该应用程序中的文件将复制到安装文件夹。 还可以将文件导出到应用程序的 .msi 文件，以及随应用程序移到不同部署环境中。  

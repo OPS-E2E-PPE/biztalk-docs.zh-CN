@@ -1,14 +1,14 @@
 ---
-title: "配置签名、 压缩和 AS2 传输中的加密 |Microsoft 文档"
-ms.custom: 
+title: 配置签名、 压缩和 AS2 传输中的加密 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc3537a7-c065-4a33-a375-29e7902b5ffa
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233973"
 ---
 # <a name="configuring-signing-compression-and-encryption-in-as2-transport"></a>配置 AS2 传输中的签名、压缩和加密
 可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置数字签名、签名验证、加密和解密。 该配置需要设置 AS2 管道和 BizTalk 参与方的相应属性。  
@@ -34,14 +35,14 @@ ms.lasthandoff: 09/20/2017
   
 -   若要登录、 压缩，和/或加密出站消息，检查**应对消息进行签名**，**应对消息进行压缩**，和**应对消息进行加密**上的属性**验证**的单向协议选项卡 （对于传出的 AS2 消息） 中的页**协议属性**对话框。  
   
--   若要请求对出站消息的响应签名的 MDN，检查**请求 MDN**和**请求经过签名的 MDN**属性**确认 (Mdn)**页单向协议选项卡**协议属性**对话框。  
+-   若要请求对出站消息的响应签名的 MDN，检查**请求 MDN**和**请求经过签名的 MDN**属性**确认 (Mdn)** 页单向协议选项卡**协议属性**对话框。  
   
 -   若要指定的入站的消息进行签名，压缩，和/或加密，请检查**使用验证和 MDN 的协议设置，而不是消息标头**属性，**应对消息进行签名**属性，**应对消息进行压缩**属性，与**应对消息进行加密**属性**验证**的单向协议页（有关为传入 AS2 消息） 选项卡中**协议属性**对话框。  
   
     > [!NOTE]
     >  当**使用验证和 MDN 的协议设置，而不是消息标头**选择属性，则传入消息的所有标头详细信息将被忽略，消息处理基于的协议设置。  
   
--   若要在入站的消息属性通过选择重写时，以响应传入消息，指定签名的 MDN**使用验证和 MDN 的协议设置，而不是消息标头**属性，检查**请求签名的 MDN**属性**确认 (Mdn)**页**协议属性**对话框。  
+-   若要在入站的消息属性通过选择重写时，以响应传入消息，指定签名的 MDN**使用验证和 MDN 的协议设置，而不是消息标头**属性，检查**请求签名的 MDN**属性**确认 (Mdn)** 页**协议属性**对话框。  
   
     > [!NOTE]
     >  当**使用验证和 MDN 的协议设置，而不是消息标头**选择属性，则传入消息的所有标头详细信息将被忽略，消息处理基于的协议设置。  

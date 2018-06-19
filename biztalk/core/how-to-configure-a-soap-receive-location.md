@@ -1,11 +1,11 @@
 ---
-title: "如何配置 SOAP 接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 SOAP 接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], virtual directories
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - SOAP adapters, virtual directories
 - receive locations, SOAP adapters
 ms.assetid: 7e348409-9181-47e4-b3c0-c73eb2acffa3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250157"
 ---
 # <a name="how-to-configure-a-soap-receive-location"></a>如何配置 SOAP 接收位置
 可以通过编程方式或使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台来配置 SOAP 接收位置。  
@@ -109,7 +110,7 @@ explorer.SaveChanges();
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**虚拟目录以及 Web 服务的.asmx 文件**|指示由 BizTalk Web Services 发布向导创建的 .asmx 文件。<br /><br /> 此消息的格式类似于以下格式：<br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> 其中，.asmx 文件的完整位置是 http://localhost/PurchaseOrder/POOrchestration.asmx。 **注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
+    |**虚拟目录以及 Web 服务的.asmx 文件**|指示由 BizTalk Web Services 发布向导创建的 .asmx 文件。<br /><br /> 此消息的格式类似于以下格式：<br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> 其中，.asmx 文件的完整位置是 http://localhost/PurchaseOrder/POOrchestration.asmx。 **注意：** 对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
     |**公共地址**|指定此接收位置的完全限定 URI。 此属性的值是服务器名和虚拟目录的组合。 指定的 URI 应指定在向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送消息时贸易合作伙伴要连接到的公共网站 URL。<br /><br /> 此信息是可选的，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 并不使用。 管理员可使用此参数记录与接收位置相关联的公共 URL。|  
     |**使用单一登录**|指示 SOAP 适配器使用企业单一登录。 **注意：** BizTalk Web 服务发布向导允许您使用 SharePoint 门户服务器上单一登录; 此属性仅使企业单一登录。|  
   

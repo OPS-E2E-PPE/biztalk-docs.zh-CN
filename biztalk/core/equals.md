@@ -1,14 +1,14 @@
 ---
-title: "等于 |Microsoft 文档"
-ms.custom: 
+title: 等于 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac93031a-9d18-443d-9e38-71ef9edd5a30
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239813"
 ---
 # <a name="equals"></a>等于
 删除堆栈最上方的两项，比较这两项，然后将结果推送到堆栈上。  

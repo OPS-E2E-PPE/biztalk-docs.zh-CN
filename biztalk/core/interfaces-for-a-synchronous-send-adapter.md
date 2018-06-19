@@ -1,14 +1,14 @@
 ---
-title: "异步接口发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 异步接口发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e1b397a-3a35-4447-8522-d8a5f39a42d7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256909"
 ---
 # <a name="interfaces-for-a-synchronous-send-adapter"></a>同步发送适配器的接口
 执行发送操作时，如果阻止了传入消息引擎调用线程，则适配器将会同步发送消息。 为了能够同步发送消息，适配器需要实现以下接口：  

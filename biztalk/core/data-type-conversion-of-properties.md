@@ -1,11 +1,11 @@
 ---
-title: "数据类型的属性转换 |Microsoft 文档"
-ms.custom: 
+title: 数据类型的属性转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQSeries adapters, data type conversion
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MQCHAR property [MQSeries adapters]
 - configuring [MQSeries adapters], data type conversion
 ms.assetid: 5b81eab0-f7a1-42f3-b212-a211b2893fd5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238661"
 ---
 # <a name="data-type-conversion-of-properties"></a>数据类型转换的属性
 MQSeries 消息中的标头属性即为消息本身所包含的数据结构。 在发送和接收消息时，MQSeries 适配器会自动对 MQSeries 消息头中的某些值进行验证和转换。  

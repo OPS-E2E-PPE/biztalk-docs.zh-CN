@@ -1,14 +1,14 @@
 ---
-title: "交换状态和 ACK 的详细信息状态报告 |Microsoft 文档"
-ms.custom: 
+title: 交换状态和 ACK 的详细信息状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebba4af5-6dff-4bb8-9c63-739ef49bbbb8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257637"
 ---
 # <a name="interchange-status-and-ack-details-status-report"></a>“交换状态和确认详细信息”状态报告
 此状态报告显示交换及其相关交换（技术）确认和功能确认的详细信息。 右键单击交换/ACK 状态报表中中的交换，然后单击为此报表显示**交换状态和 ack 的详细信息**。  

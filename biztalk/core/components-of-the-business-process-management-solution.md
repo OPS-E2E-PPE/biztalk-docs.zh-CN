@@ -1,11 +1,11 @@
 ---
-title: "组件的业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 组件的业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, back-end systems, process management solutions
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - assemblies, process management solutions
 - process management solution tutorial, assemblies
 ms.assetid: e3ccebb9-b677-4c17-acd2-0f986f7bd3f0
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234141"
 ---
 # <a name="components-of-the-business-process-management-solution"></a>业务流程管理解决方案的组件
 本部分对业务流程管理解决方案的主要 BizTalk Server 组件进行了说明。 有关源文件的信息，请参阅[业务流程管理解决方案的文件清单](../core/file-inventory-for-the-business-process-management-solution.md)。  

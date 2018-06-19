@@ -1,14 +1,14 @@
 ---
-title: "配置回退信封属性 （X12 事务集设置） |Microsoft 文档"
-ms.custom: 
+title: 配置回退信封属性 （X12 事务集设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a951f70-07d5-4a58-b1ea-e7117a45c545
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233165"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-transaction-set-settings"></a>配置回退信封属性（X 12 事务集设置）
 在**包络线**页**事务设置设置**部分中，你定义 BizTalk Server 如何生成它将发送到方的 X12 编码交换的 GS 段。 GS 段为 X12 编码的交换标识和指定功能组。  

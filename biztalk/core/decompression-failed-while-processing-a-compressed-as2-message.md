@@ -1,14 +1,14 @@
 ---
-title: "处理压缩的 AS2 消息时解压缩失败。 | Microsoft Docs"
-ms.custom: 
+title: 处理压缩的 AS2 消息时解压缩失败。 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5246ee97-cc60-4878-9447-de870c0f4c34
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238453"
 ---
 # <a name="decompression-failed-while-processing-a-compressed-as2-message"></a>处理压缩的 AS2 消息时解压缩失败。
 ## <a name="details"></a>详细信息  

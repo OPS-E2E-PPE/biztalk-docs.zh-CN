@@ -1,14 +1,14 @@
 ---
-title: "如何使用服务器管理单元 |Microsoft 文档"
-ms.custom: 
+title: 如何使用服务器管理单元 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4f520692-9606-41f5-98ed-5a4962bd1f09
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256557"
 ---
 # <a name="how-to-use-the-servers-snap-in"></a>如何使用服务器管理单元
 此版本的企业单一登录 (SSO) 包括 ENTSSO 服务器管理单元，您可用利用它通过 Windows 界面查看、监视 ENTSSO 服务器上的某些操作，以及在该服务器上执行某些操作。  

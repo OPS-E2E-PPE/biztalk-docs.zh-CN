@@ -1,11 +1,11 @@
 ---
-title: "提高性能的存档和清除进程 |Microsoft 文档"
-ms.custom: 
+title: 提高性能的存档和清除进程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - archiving [Tracking database], system performance
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - performance, purging
 - purging, system performance
 ms.assetid: d65da58d-65e0-4f6c-8b15-5d4448049b42
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257837"
 ---
 # <a name="improving-the-performance-of-the-archiving-and-purging-process"></a>提高存档和清除进程的性能
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库中存储的数据量有可能增长得非常迅速，这与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案的设计方式、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案所处理的消息数量和消息大小以及跟踪的配置方式都有关。 使数据库大小维持在合理的水平，可提高处理效率并使系统中的数据量在任何给定时间都保持正常。 这样能够发挥出高效而稳定的性能。 此过程的自动化，可免去您手动维护数据库的工作。  

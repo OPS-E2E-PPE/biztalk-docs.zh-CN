@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2732b36-ca57-4566-ba26-da27a3082f32
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22255437"
 ---
 # <a name="how-to-emphasize-map-items"></a>如何强调映射项
 在 BizTalk 映射器中，当您选择一个映射项目时，都会强调所有相关的链接和 functoids。 这在具有许多链接的映射中非常有用，因为识别关系和相关架构项比较困难。  

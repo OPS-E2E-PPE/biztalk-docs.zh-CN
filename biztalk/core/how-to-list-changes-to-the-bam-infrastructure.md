@@ -1,11 +1,11 @@
 ---
-title: "如何列出 BAM 基础结构更改 |Microsoft 文档"
-ms.custom: 
+title: 如何列出 BAM 基础结构更改 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definitions [BAM], listing infrastructure changes
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Get-Changes command [BAM]
 - infrastructure, listing changes [BAM]
 ms.assetid: 3feacd7d-6f42-4626-835b-0dc3befc9fd6
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253917"
 ---
 # <a name="how-to-list-changes-to-the-bam-infrastructure"></a>如何列出对 BAM 基础结构的更改
 管理员使用**获取变更**命令 BAM 管理实用程序列出有关已部署的 BAM 定义的当前信息。 您还可以使用 get-changes 命令列出 BAM 主导入数据库中当前的部署项目。  

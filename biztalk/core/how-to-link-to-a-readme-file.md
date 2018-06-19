@@ -1,11 +1,11 @@
 ---
-title: "如何链接到一个自述文件 |Microsoft 文档"
-ms.custom: 
+title: 如何链接到一个自述文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - linking, readme files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - linking, applications
 - applications, linking
 ms.assetid: 7ddbfe77-c8b5-4f90-80ee-8fd5ba57170b
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254885"
 ---
 # <a name="how-to-link-to-a-readme-file"></a>如何链接到一个自述文件
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行来添加 Readme.htm 文件，该文件在用户单击控制面板中的“添加或删除程序”中的相应链接时出现。  

@@ -1,14 +1,14 @@
 ---
-title: "管理项目中的映射 |Microsoft 文档"
-ms.custom: 
+title: 管理项目中的映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75b81b94-f55b-4ca5-89b5-d8d5a4e56166
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261989"
 ---
 # <a name="managing-maps-within-projects"></a>管理项目中的映射
 本部分为各种映射处理提供了分步说明，例如，创建映射、指定映射中的架构以及保存映射时所涉及的步骤。 有关生成使用链接和 functoid 映射结构的信息，请参阅[创建更复杂的映射到使用 Functoid](../core/using-functoids-to-create-more-complex-mappings.md)。  

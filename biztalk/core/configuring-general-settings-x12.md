@@ -1,14 +1,14 @@
 ---
-title: "配置常规设置 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置常规设置 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75c1ca3e-19a0-42f7-910e-dd07c24d1ed4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234669"
 ---
 # <a name="configuring-general-settings-x12"></a>配置常规设置（X 12)
 作为常规设置的一部分，指定协议名称、将使用的协议（X12 或 EDIFACT）、之间存在协议的参与方和配置文件以及是否为通过协议处理的所有消息启用报告。 作为协议的一部分，还可以指定参与方联系信息。  

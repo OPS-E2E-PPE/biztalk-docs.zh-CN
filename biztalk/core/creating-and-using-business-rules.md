@@ -1,17 +1,17 @@
 ---
-title: "创建和使用业务规则 |Microsoft 文档"
-ms.custom: 
+title: 创建和使用业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, Business Rules Editor
 - Business Rules Editor
 ms.assetid: a15fd09b-ff4e-4c26-8cb6-5ffd258a2182
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238237"
 ---
 # <a name="creating-and-using-business-rules"></a>创建和使用业务规则
 业务规则（或业务策略）定义并控制着组织的结构、运作和策略。 业务规则可能在操作程序手册、合同或协议中正式定义，也可能作为知识或员工所拥有的专门技术存在着。 业务规则是动态的，可能随时间的推移而不断变更，并存在于各种类型的应用程序中。 金融和保险、电子商务、运输、电信、基于 Web 的服务以及个性化只是受业务规则支配的众多业务领域中的几种。 这些业务领域中的每一种都需要将业务战略、策略和规章传递给信息技术 (IT) 人员，以便使之包括在软件应用程序中。  

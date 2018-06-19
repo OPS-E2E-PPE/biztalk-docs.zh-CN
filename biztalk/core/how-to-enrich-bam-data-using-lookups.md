@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253909"
 ---
 # <a name="how-to-enrich-bam-data-using-lookups"></a>如何使用查找 BAM 数据扩充
 在某些情况下，操作时可用的数据并不包含报告所需的全部信息。 例如，在运行时，可能有 ProductID 但没有 ProductName。 由于 BAM 活动表示的是与数据的实际收集方式无关的抽象概念，因此应包含要在报告“ProductName”中看到的称为最终数据的项。 与任何其他项一样，您也可以在解释性结构（如里程碑组、持续时间、维度和度量）中使用此项。 由于 ProductName 运行时不可用，因此您必须获得其他执行查找所需的数据，如 ProductID。  

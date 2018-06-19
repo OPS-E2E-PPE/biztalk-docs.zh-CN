@@ -1,14 +1,14 @@
 ---
-title: "配置验证 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置验证 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ff22dc8-a544-46f9-86fb-f6845e2dfe46
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234213"
 ---
 # <a name="configuring-validation-as2"></a>配置验证（AS2）
 在合作伙伴协议中，您必须指定验证设置来验证入站 AS2 消息。  

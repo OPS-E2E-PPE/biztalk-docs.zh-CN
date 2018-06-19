@@ -1,11 +1,11 @@
 ---
-title: "如何配置用于存档和清除数据从跟踪数据库 BizTalk BTS_BACKUP_USERS 角色 |Microsoft 文档"
-ms.custom: 
+title: 如何配置用于存档和清除数据从跟踪数据库 BizTalk BTS_BACKUP_USERS 角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - purging, BTS_BACKUP_USERS role
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Tracking database, archiving
 - purging, DTA Purge and Archive job
 ms.assetid: c27aad2a-5788-4236-b5eb-ca730bf79851
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232445"
 ---
 # <a name="how-to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a>如何配置 BTS_BACKUP_USERS 角色以存档和清除 BizTalk 跟踪数据库中的数据
 DTA 清除和存档 (BizTAlkDTADb) 作业通常使用已登录的 SQL Server 代理服务帐户用户的凭据运行。 但是，为了增强安全性，可以将 DTA 清除和存档 (BizTalkDTADb) 作业配置为使用 BTS_BACKUP_USERS 角色的成员帐户的凭据运行。 通过以具有基本权限的帐户身份运行 SQL Server 代理作业，这样可以防止特权提升。  

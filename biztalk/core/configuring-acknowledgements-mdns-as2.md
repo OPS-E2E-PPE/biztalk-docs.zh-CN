@@ -1,14 +1,14 @@
 ---
-title: "配置确认 (Mdn) (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置确认 (Mdn) (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb2bf98a-deb4-460f-a1fc-3d2397c39470
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234101"
 ---
 # <a name="configuring-acknowledgements-mdns-as2"></a>配置确认 (MDN) (AS2)
 在合作伙伴协议中，您可以指定接收 AS2 消息的参与方生成 MDN 响应并将其发回的方式。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE] 
         > **从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]和更高版本**，SHA2 支持将自动包含。 有关以前[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]版本，请参阅[KB 3123748](https://support.microsoft.com/kb/3123748)。
   
-    2.  选择**请求异步 MDN**复选框，然后在**回执送达选项 (URL)**文本框中，输入接收方应发送到 MDN 的 URL。  
+    2.  选择**请求异步 MDN**复选框，然后在**回执送达选项 (URL)** 文本框中，输入接收方应发送到 MDN 的 URL。  
   
          如果**请求异步 MDN**选择复选框后，你还可以设置以下属性：  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
         2.  如果**重新发送 AS2 消息如果未收到 MDN**选中复选框，则检查**替代发送端口设置**指定**最小 HTTP 重试间隔**和**HTTP 重试尝试次数**。 输入一个值**后重试停止尝试 HTTP**字段来指定最长时间使用 HTTP 适配器重试。  
   
-    3.  如果你选择**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)**属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。 如果你未选择**请求异步 MDN**复选框，你必须输入一个值**处置-到通知**。 此字段中的值不会在 AS2 处理中使用。  
+    3.  如果你选择**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)** 属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。 如果你未选择**请求异步 MDN**复选框，你必须输入一个值**处置-到通知**。 此字段中的值不会在 AS2 处理中使用。  
   
 5.  单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。  
   

@@ -1,14 +1,14 @@
 ---
-title: "配置本地主机设置 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置本地主机设置 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b3b4f8e-5f15-431c-9677-971d049b9d36
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232757"
 ---
 # <a name="configuring-local-host-settings-as2"></a>配置本地主机设置（AS2）
 本部分描述本地主机设置，这些设置必须根据消息事务中涉及的某个参与方是否还作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的宿主来进行设置。  

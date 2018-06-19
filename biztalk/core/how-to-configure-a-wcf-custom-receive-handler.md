@@ -1,14 +1,14 @@
 ---
-title: "如何配置 WCF 自定义接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 WCF 自定义接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0208a7aa-6e42-43b7-a934-27ef4409b4ec
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248285"
 ---
 # <a name="how-to-configure-a-wcf-custom-receive-handler"></a>如何配置 WCF-Custom 接收处理程序
 如果希望 [!INCLUDE[wcfadapter_short](../includes/wcfadapter-short-md.md)] 从 machine.config 之外的位置查找自定义行为扩展，则必须配置接收处理程序属性。  

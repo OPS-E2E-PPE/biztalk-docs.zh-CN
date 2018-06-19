@@ -1,14 +1,14 @@
 ---
-title: "如何将 BizTalk Server 配置为参与方解析 |Microsoft 文档"
-ms.custom: 
+title: 如何将 BizTalk Server 配置为参与方解析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ac330b9-3498-4c98-a6e8-d2c02cd641dd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250085"
 ---
 # <a name="how-to-configure-biztalk-server-for-party-resolution"></a>如何将 BizTalk Server 配置为参与方解析
 下面的过程列出了配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以便用于参与方解析时需执行的步骤。  

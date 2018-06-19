@@ -1,11 +1,11 @@
 ---
-title: "定义时间窗口中，然后时间切片属性 |Microsoft 文档"
-ms.custom: 
+title: 定义时间窗口中，然后时间切片属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BAMConfiguration.xml file
 - aggregations [BAM], real-time data
 ms.assetid: 7f07b179-da10-4702-baf7-69516c8f16a6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239053"
 ---
 # <a name="defining-the-time-window-and-time-slice-properties"></a>定义时间窗口中，然后时间切片属性
 管理员可以使用 BAMConfiguration.xml 文件的 TimeWindow 属性和 TimeSlice 属性定义 BAM 主导入数据库的实时聚合表中数据的寿命。  

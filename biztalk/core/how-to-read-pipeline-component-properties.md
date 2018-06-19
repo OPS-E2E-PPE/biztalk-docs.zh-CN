@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254781"
 ---
 # <a name="how-to-read-pipeline-component-properties"></a>如何读取管道组件属性
 “属性”窗口包含组件的两部分：常规属性和组件属性。 常规属性是所有组件共有的属性，尽管常规属性的值在各个组件中都有所不同。  

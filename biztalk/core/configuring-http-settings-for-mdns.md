@@ -1,14 +1,14 @@
 ---
-title: "配置 Mdn 的 HTTP 设置 |Microsoft 文档"
-ms.custom: 
+title: 配置 Mdn 的 HTTP 设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c877e85-7887-43a9-9fd4-0853b573213f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233333"
 ---
 # <a name="configuring-http-settings-for-mdns"></a>配置 MDN 的 HTTP 设置
 作为 MDN 相关 HTTP 设置的一部分，您可以指定接收 MDN 的 Web 服务器所需的属性。  

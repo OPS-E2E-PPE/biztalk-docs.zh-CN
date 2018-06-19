@@ -1,11 +1,11 @@
 ---
-title: "创建预或操作的后续处理脚本 |Microsoft 文档"
-ms.custom: 
+title: 创建预或操作的后续处理脚本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scripts, post-processing
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - scripts, deploying
 - deploying, scripts
 ms.assetid: d5fbaec8-fbfe-4ceb-8ba8-0933baa37a1f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239293"
 ---
 # <a name="creating-a-pre--or-post-processing-script"></a>创建预处理或后处理脚本
 您可以在布署应用程序时创建脚本来执行操作，然后定义在部署过程中何时运行该脚本。 同一脚本中可以同时包含安装和清理代码，之间用环境变量分隔。 也可以向脚本中传递命令行参数。  

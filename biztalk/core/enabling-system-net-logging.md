@@ -1,14 +1,14 @@
 ---
-title: "启用 System.Net 日志记录 |Microsoft 文档"
-ms.custom: 
+title: 启用 System.Net 日志记录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5eea50b9-1f46-45fc-a327-585adb4583a0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239933"
 ---
 # <a name="enabling-systemnet-logging"></a>启用 System.Net 日志记录
 你可以启用日志记录`System.Net`和`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe 服务命名空间。 这会导致创建一个详细的日志文件，其中包含的信息可以帮助您找出安装 BizTalk Server 时出现的问题。  

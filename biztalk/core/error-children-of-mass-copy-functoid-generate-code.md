@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240565"
 ---
 # <a name="error---children-of-mass-copy-functoid-generate-code"></a>错误-的大容量复制 Functoid 子级生成代码
 **错误代码**  

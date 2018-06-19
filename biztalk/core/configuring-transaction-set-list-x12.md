@@ -1,14 +1,14 @@
 ---
-title: "配置事务集列表 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置事务集列表 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f277318-90e9-4ad3-843a-e6128837fa2b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233437"
 ---
 # <a name="configuring-transaction-set-list-x12"></a>配置事务集列表 (X 12)
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使您可以定义在处理 EDI 交换时必须始终包括或排除的事务集列表。 本部分提供了有关如何创建事务集列表的说明。  

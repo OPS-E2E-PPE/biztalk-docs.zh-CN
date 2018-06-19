@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255709"
 ---
 # <a name="how-to-use-a-database-as-a-data-source"></a>如何将数据库用作数据源
 您可以指定数据库作为数据源。 随后，您可从该数据库中选择表或表列，并将其拖至词汇定义或规则上以用作事实。  

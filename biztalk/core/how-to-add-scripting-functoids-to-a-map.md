@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248469"
 ---
 # <a name="how-to-add-scripting-functoids-to-a-map"></a>如何向映射添加“脚本”Functoid
 **脚本**functoid，可使用自定义脚本或代码在运行时执行功能不可用。 例如，通过使用，在运行时调用的 COM 对象**脚本**functoid 和编写您自己的自定义脚本。  

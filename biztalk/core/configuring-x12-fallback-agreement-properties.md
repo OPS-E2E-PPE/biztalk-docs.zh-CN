@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233213"
 ---
 # <a name="configuring-x12-fallback-agreement-properties"></a>配置 X12 后备协议属性
 本部分所述的属性适用于交换采用 X12 编码的交换（包括 HIPAA）并且 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定交换（入站或出站）解析到的协议。 本部分还介绍了 X12 和 EDIFACT 编码的消息通用的常规回退设置。  

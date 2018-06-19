@@ -1,14 +1,14 @@
 ---
-title: "为适配器配置的自定义下拉列表编辑器 |Microsoft 文档"
-ms.custom: 
+title: 为适配器配置的自定义下拉列表编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a1b0961-652f-42b8-a18a-17abe9542cdd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238493"
 ---
 # <a name="custom-drop-down-editor-for-adapter-configuration"></a>适配器配置的的自定义下拉列表编辑器
 自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码的下拉文本框的类。 **GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示的下拉菜单的子控件。 服务方法**DropDownControl**和**CloseDropDown**管理与创建的控件**CreatePassword**。  

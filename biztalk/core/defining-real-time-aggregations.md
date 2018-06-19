@@ -1,17 +1,17 @@
 ---
-title: "定义实时聚合 |Microsoft 文档"
-ms.custom: 
+title: 定义实时聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - real-time data, aggregating
 - aggregations [BAM], real-time data
 ms.assetid: cb3d7124-1663-4af2-9540-4171cc51568a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238677"
 ---
 # <a name="defining-real-time-aggregations"></a>定义实时聚合
 在某些情况下，特定的多维聚合切片都因此时效性你希望它们在实时中不可用。 例如，您的企业出售的是容易腐烂的产品，因而您希望各个交货阶段的产品数量的聚合实时可用。 同时，您还需要在月底获得其他聚合，如典型客户的年龄，以便进行商业智能分析。  

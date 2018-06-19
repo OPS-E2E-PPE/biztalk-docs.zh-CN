@@ -1,11 +1,11 @@
 ---
-title: "绑定文件和应用程序部署 |Microsoft 文档"
-ms.custom: 
+title: 绑定文件和应用程序部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings
@@ -29,7 +29,7 @@ helpviewer_keywords:
 - binding files, deploying
 - bindings, binding files
 ms.assetid: 396ad021-8001-4ed8-8b28-85b72f981fae
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -38,6 +38,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234061"
 ---
 # <a name="binding-files-and-application-deployment"></a>绑定文件和应用程序部署
 本主题提供概述信息，说明如何使用绑定文件简化 BizTalk 程序集和应用程序的部署。 在下列情况下，您会发现，由于使用绑定文件避免了手动配置绑定，因此可以加速部署过程：  

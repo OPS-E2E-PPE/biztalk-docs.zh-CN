@@ -1,11 +1,11 @@
 ---
-title: "如何部署和取消部署策略和词汇 |Microsoft 文档"
-ms.custom: 
+title: 如何部署和取消部署策略和词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - policies, undeploying
 - vocabularies, deploying
 ms.assetid: 9a7e3310-54b7-482c-8210-b4b11fde4c49
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249565"
 ---
 # <a name="how-to-deploy-and-undeploy-policies-and-vocabularies"></a>如何部署和取消部署策略及词汇
 你可以使用规则引擎部署向导来部署策略或取消部署策略。  

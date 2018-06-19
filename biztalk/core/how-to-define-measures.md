@@ -1,18 +1,18 @@
 ---
-title: "如何定义度量值 |Microsoft 文档"
-ms.custom: 
+title: 如何定义度量值 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], creating measures
 - aggregations [BAM], measures
 - BAM views, measures
 ms.assetid: fd3dfe6b-cc63-4306-8aad-a9d2a9af01e8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249141"
 ---
 # <a name="how-to-define-measures"></a>如何定义度量值
 度量值定义如何计算活动。 创建 BAM 视图时，可以为该视图中的活动定义度量值。 例如，对于一项采购订单活动，可以计算总 PO 金额、PO 数量、平均 PO 金额等。  

@@ -1,14 +1,14 @@
 ---
-title: "开发自定义的内联 Functoid |Microsoft 文档"
-ms.custom: 
+title: 开发自定义的内联 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4533f09f-b62d-4b09-b7de-44541c6cf053
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242013"
 ---
 # <a name="developing-a-custom-inline-functoid"></a>开发自定义的内联 Functoid
 自定义内联 functoid 通过将实现代码直接复制到映射中提供功能，而不像自定义引用的 functoid 通过引用程序集、类和方法名称来提供功能。  

@@ -1,11 +1,11 @@
 ---
-title: "自定义参与方解析 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 自定义参与方解析 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - parties, pipeline components [custom]
 - parties, custom
 ms.assetid: 1f88450f-5fe9-486d-bfb8-fd11181c78b4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238693"
 ---
 # <a name="custom-party-resolution-biztalk-server-sample"></a>自定义参与方解析（BizTalk Server 示例）
 自定义参与方解析示例演示如何编写自定义管道组件以解析自定义参与方。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 3.  将 XML 消息写入文件夹。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径 >*\Pipelines\CustomPartyResolution\  
+ *\<示例路径 >* \Pipelines\CustomPartyResolution\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在命令窗口中，将目录更改 (**cd**) 的以下文件夹：  
   
-     *\<示例路径 >*\Pipelines\CustomPartyResolution\  
+     *\<示例路径 >* \Pipelines\CustomPartyResolution\  
   
 2.  运行 Setup.bat 文件，这将执行以下操作：  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
     -   生成和部署自定义参与方解析管道组件。  
   
-    -   将复制到生成的管道组件*\<安装路径 >*\Pipeline 组件的目录。  
+    -   将复制到生成的管道组件*\<安装路径 >* \Pipeline 组件的目录。  
   
     -   创建发送端口和接收端口。  
   

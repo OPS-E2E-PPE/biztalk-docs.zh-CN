@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250237"
 ---
 # <a name="how-to-create-a-send-port"></a>如何创建发送端口
 本主题将介绍如何使用 BizTalk Server 管理控制台来创建发送端口。 创建发送端口时，必须选择要创建的发送端口的类型，各类型如下：  

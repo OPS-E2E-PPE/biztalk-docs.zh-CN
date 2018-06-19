@@ -1,11 +1,11 @@
 ---
-title: "如何配置身份验证选项接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置身份验证选项接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - configuring, receive ports
 - authenticating, receive ports
 ms.assetid: ce213ef0-ae91-47cf-84bf-0f86cc684bce
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248805"
 ---
 # <a name="how-to-configure-authentication-options-for-a-receive-port"></a>如何为接收端口配置验证选项
 本主题将介绍如何使用 BizTalk Server 管理控制台为接收端口配置消息验证选项。 此选项在配置了参与方解析验证后生效。 相应的选项包括：  
