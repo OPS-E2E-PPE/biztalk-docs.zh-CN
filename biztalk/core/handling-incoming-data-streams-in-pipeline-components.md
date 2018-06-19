@@ -1,14 +1,14 @@
 ---
-title: "处理管道组件中的传入数据流 |Microsoft 文档"
-ms.custom: 
+title: 处理管道组件中的传入数据流 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1b7c4f7-99ba-4bfa-89ab-1fabfe0845d1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246565"
 ---
 # <a name="handling-incoming-data-streams-in-pipeline-components"></a>处理管道组件中的传入数据流
 编写管道中的组件的自定义反汇编程序代码时，应进行以下注意事项[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

@@ -1,18 +1,18 @@
 ---
-title: "手动配置到 Oracle 数据库适配器的物理端口绑定 |Microsoft 文档"
-ms.custom: 
+title: 手动配置到 Oracle 数据库适配器的物理端口绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, sending to an Oracle database
 - messages, receiving from an Oracle database
 - physical port binding, manually configuring
 ms.assetid: 6b118236-e9eb-494e-96b2-969c7064943d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214277"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-oracle-database-adapter"></a>手动配置到 Oracle 数据库适配器的物理端口绑定
 本部分提供有关配置信息[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]作为 WCF 自定义绑定或通过使用 WCF OracleDB 绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在部署后适配器，你将能够发送和接收消息从 Oracle 数据库使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤有所不同，具体取决于：  

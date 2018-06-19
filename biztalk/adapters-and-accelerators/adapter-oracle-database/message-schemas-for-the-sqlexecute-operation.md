@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961539"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现强类型的项目在 LOB 系统中存在的元数据，并公开这些项目上的标准操作。 但是，有一些的情形其中的应用程序可能需要根据应用程序中的业务逻辑的任意 SQL 语句的执行。 例如，你可能希望：  

@@ -1,14 +1,14 @@
 ---
-title: "接收位置分解后接收 Oracle 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收位置分解后接收 Oracle 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22ad6da2-2979-4158-b1d1-d54095223af9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214085"
 ---
 # <a name="receive-oracle-database-change-notifications-after-a-receive-location-breakdown"></a>接收位置分解后接收 Oracle 数据库更改通知
 考虑具有 BizTalk 应用程序 ACCOUNTACTIVITY 表发生更改时接收数据库更改通知消息的其中一个方案。 如果接收位置配置的一部分 BizTalk 应用程序将分解，同时记录添加到 ACCOUNTACTIVITY 表，你将无法收到通知最近添加的记录。 你还不知道时接收位置重新变为可用。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]公开的绑定属性， **NotifyOnListenerStart**，可以配置为接收到通知，接收位置已恢复。 你可以指定以下值**NotifyOnListenerStart**绑定属性：  

@@ -1,11 +1,11 @@
 ---
-title: "调用使用 WCF 通道模型对 Oracle 数据库的操作 |Microsoft 文档"
-ms.custom: 
+title: 调用使用 WCF 通道模型对 Oracle 数据库的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - invoking operations, using the WCF channel model
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - invoking operations
 - operations, invoking
 ms.assetid: 6dd95c18-8f78-46d0-8845-b74890614c33
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962779"
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>调用使用 WCF 通道模型对 Oracle 数据库的操作
 你可以在调用操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用**IRequestChannel**或**IOutputChannel**形状以将消息发送到适配器。 基本模式是通过使用绑定创建必需的通道形状的通道工厂 (**OracleDBBinding**) 和从一个连接 URI 创建的终结点。 然后，你创建**消息**表示目标操作的消息架构符合的 SOAP 消息的实例。 然后可以将此发送**消息**到[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]通过从通道工厂创建通道。 如果你使用**IRequestChannel**，你收到的响应。 如果执行对 Oracle 数据库的操作问题[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。  

@@ -1,11 +1,11 @@
 ---
-title: "关联集 |Microsoft 文档"
-ms.custom: 
+title: 关联集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - correlation sets, inspecting
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - correlation sets, following correlation sets
 - correlation sets, initializing
 ms.assetid: 528dcd6c-d364-4bb8-8deb-cd4a0791867f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968387"
 ---
 # <a name="correlation-sets"></a>关联集
 您可以通过定义相关集，实现消息与业务流程实例的此类相关。 相关集是一组属性*具有特定值*。 相关集不同于相关类型，后者只是属性的列表。 如果某一传入消息不具有所有这些属性（每个属性都有匹配的值），则相关将失败，并且业务流程实例将不会收到该消息。  

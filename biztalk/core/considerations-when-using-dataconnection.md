@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Assert function [Business Rules Engine], DataConnection
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: 1b4c8aa5-053f-43d7-9f5f-050383405fed
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22238949"
 ---
 # <a name="considerations-when-using-dataconnection"></a>使用 DataConnection 的注意事项
 对业务规则引擎使用 DataConnection 时，应考虑以下注意事项。  

@@ -1,14 +1,14 @@
 ---
-title: "方案 2： 搜索使用搜索框 web 部件 |Microsoft 文档"
-ms.custom: 
+title: 方案 2： 搜索使用搜索框 web 部件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a233772f-7577-4ac5-b55a-cb1ba2f464c7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218541"
 ---
 # <a name="scenario-2--search-using-the-search-box-web-part"></a>方案 2： 搜索使用搜索框 web 部件
 我们将在 Microsoft Office SharePoint Server，若要配置使用可以对执行全文搜索的搜索应用程序配置的搜索设置中 Oracle E-business Suite 的 MS_SAMPLE_EMPLOYEE 接口表。 更高版本，我们将添加一个搜索框 Web 部件到从可在其中进行搜索。  

@@ -1,11 +1,11 @@
 ---
-title: "如何添加 Catch 异常 Block3 |Microsoft 文档"
-ms.custom: 
+title: 如何添加 Catch 异常 Block3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Scope shape [Orchestration Designer], Catch Exception block [Orchestration Designer]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Catch Exception block [Orchestration Designer], about Catch Exception blocks
 - Orchestration Designer, errors
 ms.assetid: 63ca4a60-b657-452a-86fd-78968ccf2933
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247053"
 ---
 # <a name="how-to-add-a-catch-exception-block"></a>如何添加 Catch 异常块
 **捕获异常**块代表一个异常处理程序。 **捕获异常**块附加到的末尾**作用域**中业务流程设计器形状。 你可以将作为许多附加**捕获异常**阻止根据你的需要。  

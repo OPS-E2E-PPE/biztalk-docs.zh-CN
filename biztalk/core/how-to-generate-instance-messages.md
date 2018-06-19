@@ -1,14 +1,14 @@
 ---
-title: "如何生成实例消息 |Microsoft 文档"
-ms.custom: 
+title: 如何生成实例消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff74c67a-7e73-4153-9ec4-e6e50464ee92
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254397"
 ---
 # <a name="how-to-generate-instance-messages"></a>如何生成实例消息
 构造架构之后，有一种检查工作的方法是从该架构生成一个实例消息示例。 在很多方法中，查看实例消息都比查看架构树或架构的 XML 架构定义 (XSD) 语言表示形式直接的多。 这是因为架构需要描述相应实例消息的所有可能变体，而特定的实例消息只需通过使用由架构指定的格式来传送某些数据。 生成的实例消息是一个示例，可能无法显示由相应架构定义的所有结构。  

@@ -13,7 +13,7 @@ helpviewer_keywords:
 - promoted properties, disassembler
 - assembler, promoted properties
 ms.assetid: 342b0250-bdf7-45ce-8964-3aeda89989b1
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22211293"
 ---
 # <a name="disassembler-and-assembler-promoted-properties"></a>反汇编程序和汇编程序提升属性
 反汇编程序和汇编程序属性分为两类： 路由的属性，用于路由和筛选;和运行时属性，则对于内部处理。  
@@ -34,11 +35,11 @@ SWIFT 反汇编程序提升路由的属性。 您可以将这些属性用于基�
   
 |提升的名称|Description|数据类型|值范围|用法示例|  
 |-------------------|-----------------|---------------|-----------------|-------------------|  
-|**A4SWIFT_BatchId**|在处理入站的批处理时动态生成 SWIFT 反汇编程序的全局唯一标识符。 反汇编程序将此批标识符分配给发布到 MessageBox 数据库从同一个批处理发出的所有消息。<br /><br /> 设置为**-1**单个消息 （不源自的入站批处理）。|字符串|"-1"或*全局唯一标识符 (GUID)*|具有相同关联消息**A4SWIFT_BatchId**要恢复到同一个批处理最初到达对其进行分组的值。|  
+|**A4SWIFT_BatchId**|在处理入站的批处理时动态生成 SWIFT 反汇编程序的全局唯一标识符。 反汇编程序将此批标识符分配给发布到 MessageBox 数据库从同一个批处理发出的所有消息。<br /><br /> 设置为 **-1**单个消息 （不源自的入站批处理）。|字符串|"-1"或*全局唯一标识符 (GUID)*|具有相同关联消息**A4SWIFT_BatchId**要恢复到同一个批处理最初到达对其进行分组的值。|  
 |**A4SWIFT_BreValidationErrors**|指示业务规则引擎 (BRE) 验证过程中遇到的验证错误的数。|数字|>= 0|未通过 BRE 验证的消息筛选器 (**A4SWIFT_BREValidationErrors**等于零)。|  
 |**A4SWIFT_Failed**|指示是否在消息处理 （分析和验证） 期间出现任何故障。 设置为**True**如果**A4SWIFT_ParseErrors** + **A4SWIFT_XmlValidationErrors** + **A4SWIFT_BreValidationErrors** > 0。|Boolean|True、False|唯一有效的 SWIFT 消息筛选器 (**A4SWIFT_Failed**等于**False**)。|  
 |**A4SWIFT_ParseErrors**|指示在分析过程中遇到分析错误数。|数字|>= 0|未通过分析的消息筛选器 (**A4SWIFT_ParseErrors**等于零)。|  
-|**A4SWIFT_PosInBatch**|指示从入站批处理发出一条消息的序号位置。 用于批处理包含*n*消息， **A4SWIFT_PosInBatch**采用值从 1 到*n*，分别对应于在批处理中消息的序号位置。<br /><br /> 设置为**0**如果消息已批处理标头。<br /><br /> 设置为**n + 1**如果消息已批处理尾。<br /><br /> 设置为**1**如果消息本身整个批处理 （禁用批处理碎片）。<br /><br /> 设置为**-1**单个消息 （不源自的入站批处理）。|数字|>= -1|从同一个入站批处理到到达的原始顺序排序消息。|  
+|**A4SWIFT_PosInBatch**|指示从入站批处理发出一条消息的序号位置。 用于批处理包含*n*消息， **A4SWIFT_PosInBatch**采用值从 1 到*n*，分别对应于在批处理中消息的序号位置。<br /><br /> 设置为**0**如果消息已批处理标头。<br /><br /> 设置为**n + 1**如果消息已批处理尾。<br /><br /> 设置为**1**如果消息本身整个批处理 （禁用批处理碎片）。<br /><br /> 设置为 **-1**单个消息 （不源自的入站批处理）。|数字|>= -1|从同一个入站批处理到到达的原始顺序排序消息。|  
 |**A4SWIFT_XmlValidationErrors**|指示 XML 验证过程中遇到的验证错误数。|数字|>= 0|未通过 XML 验证的消息筛选器 (**A4SWIFT_XmlValidationErrors**等于零)。|  
   
 > [!NOTE]

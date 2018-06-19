@@ -1,11 +1,11 @@
 ---
-title: "断言 |Microsoft 文档"
-ms.custom: 
+title: 断言 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Assert function [Business Rules Engine], .NET objects
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Assert function [Business Rules Engine], DataConnection
 - .NET objects
 ms.assetid: e9989214-3c10-4691-9c38-f6fe64e511ed
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234045"
 ---
 # <a name="assert"></a>ActualRebinds
 *断言*是添加到业务规则引擎的工作内存的对象实例的过程。 引擎根据针对实例类型编写的条件和操作，使用匹配-冲突解决-操作阶段来处理每个实例。  

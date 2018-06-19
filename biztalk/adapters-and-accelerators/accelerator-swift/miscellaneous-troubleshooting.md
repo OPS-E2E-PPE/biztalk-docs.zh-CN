@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211173"
 ---
 # <a name="miscellaneous-troubleshooting"></a>其他故障排除
 ## <a name="leading-zeroes-validation-is-not-performed-for-fields-that-use-the-checkleadingzeroesinelement-method-to-validate-a-field-in-the-message-validation-policy"></a>前导零的 CheckLeadingZeroesInElement 方法用于验证消息验证策略中的字段的字段不执行验证。  

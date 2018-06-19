@@ -1,14 +1,14 @@
 ---
-title: "批处理支持的接口接收适配器 |Microsoft 文档"
-ms.custom: 
+title: 批处理支持的接口接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa6ee780-189c-41e3-9ab0-6b869e791c0a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258005"
 ---
 # <a name="interfaces-for-a-batch-supported-receive-adapter"></a>支持批处理的接收适配器的接口
 接收适配器总是成批提交消息。 批是一个可用于除提交以外的各种操作的数据库操作单位。 例如，接收适配器可以在同一批中提交一组消息，挂起一组消息，并删除另外一组消息。 将这些单独的操作放在同一批中可以尽可能减少所需的数据库往返次数，优化性能，因而是一种大力提倡的做法。  
@@ -49,13 +50,13 @@ ms.lasthandoff: 09/20/2017
   
          如果总体批状态为成功，则意味着提交给传输代理的所有消息都已保留到磁盘上。 然而，这并非意味着管道已成功处理了所有消息。 可能会有在管道中失败的消息被挂起。 对于在管道中失败的消息，由于数据已写入磁盘，所以返回的总体批状态是成功的。  
   
-    2.  检查 `operationStatus` 参数中每个操作类型的状态。 如果状态为**，则为 S_OK**，对于此操作提交成功，并且不需要进一步任何检查的状态。 如果状态设置为**BTS_S_EPM_MESSAGE_SUSPENDED**一些的消息已挂起。 **BTS_S_EPM_SECURITY_CHECK_FAILED**表示某些消息失败中的身份验证需要身份验证-接收端口。 如果**E_FAIL**返回，或使用一个值，小于零，为此操作失败的消息提交任何 HRESULT。  
+    2.  检查 `operationStatus` 参数中每个操作类型的状态。 如果状态为 **，则为 S_OK**，对于此操作提交成功，并且不需要进一步任何检查的状态。 如果状态设置为**BTS_S_EPM_MESSAGE_SUSPENDED**一些的消息已挂起。 **BTS_S_EPM_SECURITY_CHECK_FAILED**表示某些消息失败中的身份验证需要身份验证-接收端口。 如果**E_FAIL**返回，或使用一个值，小于零，为此操作失败的消息提交任何 HRESULT。  
   
-    3.  检查操作类型的各个消息的状态。 对于提交操作类型，每条消息的状态设置为**，则为 S_OK**如果提交成功。 **BTS_S_EPM_MESSAGE_SUSPENDED**返回已挂起消息。 **BTS_S_EPM_SECURITY_CHECK_FAILED**返回消息如果失败上接收端口要求身份验证的身份验证。 **E_BTS_NO_SUBSCRIPTION**附带回如果没有任何订户已发布消息。 如果**E_FAIL**返回，或任何与一个值，小于零，消息提交失败的 HRESULT。  
+    3.  检查操作类型的各个消息的状态。 对于提交操作类型，每条消息的状态设置为 **，则为 S_OK**如果提交成功。 **BTS_S_EPM_MESSAGE_SUSPENDED**返回已挂起消息。 **BTS_S_EPM_SECURITY_CHECK_FAILED**返回消息如果失败上接收端口要求身份验证的身份验证。 **E_BTS_NO_SUBSCRIPTION**附带回如果没有任何订户已发布消息。 如果**E_FAIL**返回，或任何与一个值，小于零，消息提交失败的 HRESULT。  
   
     4.  具体取决于您的适配器，你可能想要挂起返回消息**E_FAIL**或任何失败的 HRESULT。  
   
-5.  **BatchComplete**方法需要返回**，则为 S_OK**或**E_FAIL**以指示执行的结果。 如果**BatchComplete**方法返回**E_FAIL**或任何负 HRESULT 传输代理记录错误。  
+5.  **BatchComplete**方法需要返回 **，则为 S_OK**或**E_FAIL**以指示执行的结果。 如果**BatchComplete**方法返回**E_FAIL**或任何负 HRESULT 传输代理记录错误。  
   
  下图显示在创建支持批处理的接收适配器时的对象交互。  
   

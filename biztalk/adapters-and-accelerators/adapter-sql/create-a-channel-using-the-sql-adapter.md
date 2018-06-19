@@ -1,14 +1,14 @@
 ---
-title: "创建一个通道，使用 SQL 适配器 |Microsoft 文档"
-ms.custom: 
+title: 创建一个通道，使用 SQL 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e86398f6-c835-46f8-814f-31e43b18970e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962803"
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>创建一个通道，使用 SQL 适配器
 在 WCF 通道模型中，调用 SQL Server 数据库上的操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]通过 WCF 通道。  

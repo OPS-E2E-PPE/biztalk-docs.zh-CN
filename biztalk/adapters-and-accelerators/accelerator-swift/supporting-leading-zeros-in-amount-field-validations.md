@@ -1,18 +1,18 @@
 ---
-title: "支持前导零量字段验证中的 |Microsoft 文档"
-ms.custom: 
+title: 支持前导零量字段验证中的 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - amounts, amount fields
 - amounts, leading zeros
 - validating, amount fields
 ms.assetid: 7c202422-019f-43da-9c2a-4b9fdf0b2859
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961363"
 ---
 # <a name="supporting-leading-zeros-in-amount-field-validations"></a>支持前导零量字段验证中
 某些消息类型的验证策略对量字段进行验证。 若要启用量字段中的前导零，必须编辑消息类型的验证策略。 您可以创建新版本的默认验证策略，并编辑业务规则编辑器中的自变量或部署该策略之前，你可以编辑在文本编辑器中手动的默认策略。  

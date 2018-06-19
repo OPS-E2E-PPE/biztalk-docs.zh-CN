@@ -1,11 +1,11 @@
 ---
-title: "如何创建事实检索器 |Microsoft 文档"
-ms.custom: 
+title: 如何创建事实检索器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IFactRetriever interface
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - UpdateFacts method
 - Business Rules Framework, programming
 ms.assetid: 503dc769-3ada-4099-a5fe-4dd03d995600
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250205"
 ---
 # <a name="how-to-create-a-fact-retriever"></a>如何创建事实检索器
 事实检索器是在策略执行期间用来将长期事实实例添加到该策略中的组件。 你可以实现**IFactRetriever**接口，并配置为策略版本，以在运行时使用此实现，以使保持长期的事实实例。 策略版本时，将调用**UpdateFacts**上每个执行周期，如果事实检索器配置为该特定版本的事实检索器实现的方法。  

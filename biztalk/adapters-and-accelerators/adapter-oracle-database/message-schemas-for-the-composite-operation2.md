@@ -1,14 +1,14 @@
 ---
-title: "复合 Operation2 的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 复合 Operation2 的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0164ea07-a373-430b-b569-3e29df1d081b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214061"
 ---
 # <a name="message-schemas-for-the-composite-operation"></a>复合操作的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]使你可以执行对 Oracle 数据库的复合操作。 复合操作可以包含多个操作，并按任何顺序。 有关哪些操作可以包含在复合操作的信息，请参阅[运行 Oracle 数据库中的复合操作](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-in-oracle-database.md)。  

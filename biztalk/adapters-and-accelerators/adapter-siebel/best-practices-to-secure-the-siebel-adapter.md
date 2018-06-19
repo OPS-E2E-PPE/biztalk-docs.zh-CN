@@ -1,11 +1,11 @@
 ---
-title: "最佳做法来保护在 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 最佳做法来保护在 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security best practices, for consuming the Siebel adapter with BizTalk Server
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - security best practices, for WCF diagnostic tracing and message logging
 - security best practices, for consuming the Siebel adapter with programming solutions
 ms.assetid: da89fcc5-2705-4198-8df6-64b2c532ef41
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218557"
 ---
 # <a name="best-practices-to-secure-the-siebel-adapter"></a>最佳做法来保护在 Siebel 适配器
 本部分提供了你应遵循的更完整地保护敏感数据，当你使用或开发的应用程序使用的最佳做法[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  

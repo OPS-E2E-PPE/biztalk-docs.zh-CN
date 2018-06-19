@@ -1,14 +1,14 @@
 ---
-title: "创建一个通道，使用 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 创建一个通道，使用 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d18b7c2f-a43e-4499-ba94-4955dd5fe641
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961995"
 ---
 # <a name="create-a-channel-using-oracle-e-business-suite"></a>创建一个通道，使用 Oracle E-business Suite
 在 WCF 通道模型中，调用对 Oracle E-business Suite 操作并通过交换使用 SOAP 消息接收结果[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]通过 WCF 通道。  

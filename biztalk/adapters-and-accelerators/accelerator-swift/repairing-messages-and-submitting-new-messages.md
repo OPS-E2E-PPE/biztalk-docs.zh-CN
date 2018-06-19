@@ -1,11 +1,11 @@
 ---
-title: "修复消息和提交新消息 |Microsoft 文档"
-ms.custom: 
+title: 修复消息和提交新消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - messages, submitting
 - Message Repair and New Submission. about Message Repair and New Submission
 ms.assetid: 6abcce90-f611-422a-b3c8-e25f1e75b039
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214021"
 ---
 # <a name="repairing-messages-and-submitting-new-messages"></a>修复消息和提交新消息
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]消息修复和新的提交，可修复 XML 或业务规则引擎的验证失败的消息。 修复过程包括验证和审核的步骤，以确保准确性和消息修复的适合程度。 执行此过程使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] MRSR 站点内的窗体。  

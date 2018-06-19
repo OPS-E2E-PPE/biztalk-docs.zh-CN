@@ -1,14 +1,14 @@
 ---
-title: "如何使用合作伙伴业务流程直接绑定端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用合作伙伴业务流程直接绑定端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19f9987f-79fb-4cb6-bf6e-542f6eea9ce0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258157"
 ---
 # <a name="how-to-use-partner-orchestration-direct-bound-ports"></a>如何使用合作伙伴业务流程直接绑定端口
 合作伙伴业务流程直接绑定端口提供通过端口进行业务流程间通信的能力。 您可以创建两个通信模式： 正向合作伙伴业务流程直接绑定和反合作伙伴业务流程直接绑定。 这两种模式都提供显式的业务流程间通信，这意味着在使用正向合作伙伴业务流程直接绑定时存在预期的接收方业务流程，并且在使用反向合作伙伴业务流程直接绑定时存在预期的发送方业务流程。  

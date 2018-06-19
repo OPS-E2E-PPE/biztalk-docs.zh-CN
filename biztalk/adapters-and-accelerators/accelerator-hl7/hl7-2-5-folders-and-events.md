@@ -1,14 +1,14 @@
 ---
-title: "HL7 2.5 文件夹和事件 |Microsoft 文档"
-ms.custom: 
+title: HL7 2.5 文件夹和事件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 662ef767-5504-4ff5-8820-994e9cf674ea
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204957"
 ---
 # <a name="hl7-25-folders-and-events"></a>HL7 2.5 文件夹和事件
 下表列出由安装向导在 HL7 编码消息的 HL7 版本 2.5 文件夹内创建的子文件夹。 这些子文件夹还包含所使用的架构[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 若要验证，分析，并序列化此表的事件列中列出的事件。 子文件夹名称描述的这些架构支持的事件的类型。  

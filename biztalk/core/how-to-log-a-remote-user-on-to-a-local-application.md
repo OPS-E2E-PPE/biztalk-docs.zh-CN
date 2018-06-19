@@ -1,14 +1,14 @@
 ---
-title: "如何登录到本地的应用程序的远程用户 |Microsoft 文档"
-ms.custom: 
+title: 如何登录到本地的应用程序的远程用户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 886ee7cb-e6ba-476a-bea9-4bb4c22bf94e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254213"
 ---
 # <a name="how-to-log-a-remote-user-on-to-a-local-application"></a>如何登录到本地的应用程序的远程用户
 企业单一登录服务 (ENTSSO) 的另一主要功能是支持主机启动的进程 (HIP)。 当远程用户试图访问本地 Windows 资源时，ENTSSO 将与 HIP 进行交互。 使用 ENTSSO，可以接收主机用户的请求，并请求对本地 Windows 应用程序进行访问。  

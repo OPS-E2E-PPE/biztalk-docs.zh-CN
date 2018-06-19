@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254317"
 ---
 # <a name="how-to-move-between-and-within-grid-pages"></a>如何移动之间和在网格的页内
 如果映射很复杂，很可能无法在单个网格页中同时看到所有链接和 functoid。 这意味着您需要能够在网格页内滚动。 如果您的映射需要多个网格页，则您需要能够在网格页之间移动。 本主题提供有关这些操作的分步说明。  

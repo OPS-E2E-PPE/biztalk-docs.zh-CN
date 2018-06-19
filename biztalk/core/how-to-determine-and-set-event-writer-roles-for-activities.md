@@ -1,14 +1,14 @@
 ---
-title: "如何确定并设置为活动的事件写入者角色 |Microsoft 文档"
-ms.custom: 
+title: 如何确定并设置为活动的事件写入者角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73bfe8ff-167a-4bf0-ab87-3926290d52d8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249861"
 ---
 # <a name="how-to-determine-and-set-event-writer-roles-for-activities"></a>如何确定和设置活动的事件写入者角色
 BAM 在写入活动事件时提供两种安全模式。 您可以授予写入单独活动的事件的权限，或者授予写入所有已部署活动上的事件的权限。  

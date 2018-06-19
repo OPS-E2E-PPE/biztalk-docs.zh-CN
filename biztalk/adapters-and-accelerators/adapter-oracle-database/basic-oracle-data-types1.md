@@ -11,7 +11,7 @@ helpviewer_keywords:
 - data types, supported
 - data types, unsupported
 ms.assetid: 491230b9-b946-4681-a048-5da46102c370
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25964475"
 ---
 # <a name="basic-oracle-data-types"></a>基本 Oracle 数据类型
 本主题介绍如何[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现基本 Oracle 数据类型。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
 |Float * *|化如果 prec < = 7<br />化如果 prec > 7 和 < = 15<br />xsd: string 如果 prec > 15|Float<br />双精度<br />字符串|-|  
 |IntervalYM|xsd:string<br /><br /> 如果位于内部 UDT 化|字符串<br /><br /> 长如果在 UDT|值应以 Oracle 本机格式表示： 年-月;例如，"1-2"（1 年和 2 个月）。|  
 |IntervalDS|xsd:string<br /><br /> 如果位于内部 UDT xsd:duration|字符串<br /><br /> 如果位于内部 UDT 的 Timespan|值应以 Oracle 本机格式表示： 天 HH:MI:SSxFF;例如，"5 15:30:12.99"|  
-|Long|xsd:string|字符串|支持的所有表操作、 存储的过程和函数。 **注意：**从 Oracle 数据库 9i 版开始，LONG 数据类型已弃用。 Oracle 建议改为使用 LOB 数据类型。 因此，执行操作上将 Oracle 数据库时使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，我们建议使用运行的 Oracle 数据库项目 LOB 数据类型和不是长数据类型。|  
+|Long|xsd:string|字符串|支持的所有表操作、 存储的过程和函数。 **注意：** 从 Oracle 数据库 9i 版开始，LONG 数据类型已弃用。 Oracle 建议改为使用 LOB 数据类型。 因此，执行操作上将 Oracle 数据库时使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，我们建议使用运行的 Oracle 数据库项目 LOB 数据类型和不是长数据类型。|  
 |LongRaw|xsd:base64Binary|Byte[]|-|  
 |NChar|xsd:string|字符串|-|  
 |NClob|xsd:string|字符串|支持表操作和过程。|  
@@ -59,7 +60,7 @@ ms.lasthandoff: 03/28/2018
 |二进制双 * *|化如果 prec < = 15<br />xsd: string 如果 prec > 15|双精度<br />字符串|-|  
 |二进制整数 * *|xsd:integer|Int32|过程、 函数和包的支持。|  
 |Boolean|xsd:boolean|可以为 null 的布尔值||  
-|XMLTYPE|xsd:string|字符串|支持顶部级别过程参数。<br /><br /> 保留 XML 字符，如**\<**'，'**\>**必须与相应实体的表示形式替换**(&lt;， &gt;)**开发 BizTalk 中的应用程序时，以及何时使用 WCF 通道模型。 这不是在 WCF 服务模型的情况下必需的。|  
+|XMLTYPE|xsd:string|字符串|支持顶部级别过程参数。<br /><br /> 保留 XML 字符，如**\<**'，'**\>** 必须与相应实体的表示形式替换 **(&lt;， &gt;)** 开发 BizTalk 中的应用程序时，以及何时使用 WCF 通道模型。 这不是在 WCF 服务模型的情况下必需的。|  
   
  \*在其中这些 Oracle 数据类型中加以表示的方法受**EnableSafeTyping**绑定属性。  
   

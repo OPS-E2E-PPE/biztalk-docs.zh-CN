@@ -1,17 +1,17 @@
 ---
-title: "保护 Siebel 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 保护 Siebel 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security and protection
 - data protection
 ms.assetid: 8977cbd3-0025-48d4-8203-8e9e72ea7d26
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221965"
 ---
 # <a name="secure-your-siebel-applications"></a>保护 Siebel 应用程序
 Siebel 系统通常包含敏感商业信息，例如客户帐户详细信息。 应用程序使用[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]访问和修改此信息是本地或分布式网络可能会无意中公开其能够访问未经授权的参与者，除非努力保护且安全的过程的数据传输。 数据保护和安全是通常认为按下列术语：  

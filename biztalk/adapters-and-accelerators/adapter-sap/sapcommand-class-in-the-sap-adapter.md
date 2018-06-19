@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216557"
 ---
 # <a name="sapcommand-class-in-the-sap-adapter"></a>SAP 适配器中 SAPCommand 类
 此命令表示 SQL 查询，以便在 SAP 后端上执行。 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]当前支持 SELECT 和 EXEC 语句。 SELECT 语句启用提取的数据从单个 SAP 表，以及 EXEC 语句使用户能够在 SAP 服务器上执行 Rfc。  

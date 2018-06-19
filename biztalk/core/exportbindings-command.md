@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6573142e-7ca7-4990-98e3-b7a54840da13
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246653"
 ---
 # <a name="exportbindings-command"></a>ExportBindings 命令
 导出绑定 BizTalk 程序集、 应用程序或组。 你还可以导出全局方以及程序集，应用程序或组绑定的绑定。 （当事方是组织的所有实体，例如你的合作伙伴与业务流程交互。）  
   
 ## <a name="usage"></a>用法  
- **BTSTask ExportBindings /Destination:** *值*[**/GroupLevel**] [**/ApplicationName: * **值*] [**/程序集名称：***值*] &#124; [**/GlobalParties**] [**/Server:***值 *] [* * / 数据库：***值 *]  
+ **BTSTask ExportBindings /Destination:** *值*[**/GroupLevel**] [**/ApplicationName: * **值*] [**/程序集名称：***值*] &#124; [**/GlobalParties **] [**/Server:***值 *] [* * / 数据库：*** 值 *]  
   
 ## <a name="parameters"></a>Parameters  
   

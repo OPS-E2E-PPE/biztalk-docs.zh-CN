@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT 回退协议属性配置事务集设置 |Microsoft 文档"
-ms.custom: 
+title: EDIFACT 回退协议属性配置事务集设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a42add2d-5e4b-4590-b8b2-813aa4f29b46
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232493"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a>为事务集设置配置 EDIFACT 后备协议属性
 EDIFACT 事物集设置定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何处理两个参与方之间交换的事物集。  

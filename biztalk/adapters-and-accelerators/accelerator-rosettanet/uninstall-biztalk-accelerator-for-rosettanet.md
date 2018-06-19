@@ -1,20 +1,21 @@
 ---
-title: "卸载 BizTalk 服务器上的 BizTalk RosettaNet 快捷键 (BTARN) |Microsoft 文档\""
-description: "取消部署项目，并取消配置 BTARN 从 BizTalk Server 中删除快捷键"
+title: 卸载 BizTalk 服务器上的 BizTalk RosettaNet 快捷键 (BTARN) |Microsoft 文档"
+description: 取消部署项目，并取消配置 BTARN 从 BizTalk Server 中删除快捷键
 author: MandiOhlinger
 manager: anneta
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 ms.author: mandia
 ms.openlocfilehash: 8d289a3705eb0c127dc4d2637c2d6ffd3c122b36
 ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209837"
 ---
 # <a name="uninstall-the-rosettanet-accelerator"></a>卸载 RosettaNet 加速器
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 09/20/2017
   
 * 如果您仅运行**Setup.exe**，卸载过程不会删除业务活动监视 (BAM) 项目、 BizTalk 项目、 Internet 信息服务 (IIS) 虚拟目录和应用程序池。  
   
-* 如果你使用**环回**实用程序来创建镜像协议对于单台计算机部署，然后运行该工具与**/禁用 <** **主页组织** **>** 选项在之前删除中的伙伴**BTARN 管理控制台**。  
+* 如果你使用**环回**实用程序来创建镜像协议对于单台计算机部署，然后运行该工具与 **/禁用 <** **主页组织** **>** 选项在之前删除中的伙伴**BTARN 管理控制台**。  
   
 * 如果此服务器是多计算机部署的一部分，不能运行**BtarnClean**实用程序或手动取消部署 BTARN 程序集。 删除一台计算机上的项目会削弱的其他计算机的功能。  如果你想要从所有服务器中卸载 BTARN，然后运行**BtarnClean**实用程序。 
 

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 使用的证书签名消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 使用的证书签名消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, signed messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - digital signatures, message flow
 - messages, certificates
 ms.assetid: 0b521e11-73ef-424f-9e6a-4fb42dc263ff
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233117"
 ---
 # <a name="certificates-that-biztalk-server-uses-for-signed-messages"></a>BizTalk Server 用于签名消息的证书
 BizTalk Server 支持对出站消息进行签名以及对安全多用途 Internet 邮件扩展 (S/MIME) 入站消息进行签名验证。 BizTalk Server 使用 S/MIME 版本 2 和 3 对出站消息进行签名并验证入站消息的签名。 同样，您可以将 BizTalk Server 配置为对其发送到合作伙伴的消息进行签名和加密。  

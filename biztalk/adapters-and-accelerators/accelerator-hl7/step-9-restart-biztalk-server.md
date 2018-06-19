@@ -1,17 +1,17 @@
 ---
-title: "步骤 9： 重新启动 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 步骤 9： 重新启动 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, restarting
 - end-to-end tutorial, BizTalk Server
 ms.assetid: f9215474-e79f-469d-8804-d9d14bb606c9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206421"
 ---
 # <a name="step-9-restart-biztalk-server"></a>步骤 9： 重新启动 BizTalk Server
 在此步骤中，你重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]顺序你所做的更改在本教程中才会生效。  

@@ -1,11 +1,11 @@
 ---
-title: "生成 WCF 客户端或 WCF 服务协定的 Oracle 数据库解决方案项目 |Microsoft 文档"
-ms.custom: 
+title: 生成 WCF 客户端或 WCF 服务协定的 Oracle 数据库解决方案项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model programming, creating a proxy
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating a proxy
 - proxy programming, creating a proxy
 ms.assetid: 3e832ae9-e253-4476-9f25-8cf0de12f469
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215885"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-database-solution-artifacts"></a>生成 WCF 客户端或 Oracle 数据库解决方案项目关联的 WCF 服务协定
 你可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或目标的 Oracle 数据库项目上的所选操作的 WCF 服务协定 （接口）。 你还可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或 WCF 服务协定;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开通过标准的 Microsoft Windows 界面 ServiceModel 元数据实用工具的功能。 它还提供了使用 svcutil.exe 工具中，未提供的浏览和搜索功能并生成基于你选择在连接到 Oracle 数据库时的绑定属性的配置文件。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击你的项目，并依次**添加适配器服务引用**。  
   
-2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)连接到 Oracle 数据库和浏览和搜索操作。 若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）**从选择**选择协定类型**（这是默认值） 的下拉列表。  
+2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)连接到 Oracle 数据库和浏览和搜索操作。 若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）** 从选择**选择协定类型**（这是默认值） 的下拉列表。  
   
 3.  选择所有你想要为目标，请单击操作后**确定**生成 WCF 客户端类。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)来连接到 Oracle 数据库。 有几个绑定属性和一个 URI 属性，你可能想要设置连接到 Oracle 数据库入站操作时。 例如，对于入站的轮询操作 (**POLLINGSTMT**)，必须指定**PollingStatement**绑定属性时配置到 Oracle 数据库的连接。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用此属性中指定的 SQL SELECT 语句来生成表示 POLLINGSTMT 操作返回的结果集的类。  
   
-3.  你已连接到 Oracle 数据库后，选择**服务 （入站操作）**从**选择协定类型**下拉列表。  
+3.  你已连接到 Oracle 数据库后，选择**服务 （入站操作）** 从**选择协定类型**下拉列表。  
   
 4.  在**选择类别**框中，单击根节点 (**/**)，并浏览到你要为其生成服务协定的操作。 例如，对于轮询操作中，选择**POLLINGSTMT**从**可用类别和操作**框中，并依次**添加**。  
   

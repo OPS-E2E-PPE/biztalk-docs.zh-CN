@@ -1,18 +1,18 @@
 ---
-title: "模块 3： 添加的管道项目 |Microsoft 文档"
-ms.custom: 
+title: 模块 3： 添加的管道项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorial, creating pipelines
 - projects, pipelines
 - pipelines, adding to projects
 ms.assetid: 38bf1629-df29-4bea-840b-60b354b06430
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208157"
 ---
 # <a name="module-3-adding-a-pipeline-project"></a>模块 3： 添加的管道项目
 在此模块中，你将新项目添加到你的解决方案，其中包含自定义发送和接收管道。 因为你正在使用 SWIFT，这些消息是在性质的平面文件，不能使用附带的默认管道[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。  

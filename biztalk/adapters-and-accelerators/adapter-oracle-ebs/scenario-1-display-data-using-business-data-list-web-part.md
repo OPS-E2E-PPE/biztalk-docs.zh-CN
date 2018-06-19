@@ -1,14 +1,14 @@
 ---
-title: "方案 1： 显示使用业务数据列表 web 部件的数据 |Microsoft 文档"
-ms.custom: 
+title: 方案 1： 显示使用业务数据列表 web 部件的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3831814-8b70-4352-b22f-cebd08750ef5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217429"
 ---
 # <a name="scenario-1-display-data-using-business-data-list-web-part"></a>方案 1： 使用业务数据列表 web 部件的显示数据
 我们将使用**业务数据列表**Web 部件**Finder**方法实例。 此 Web 部件，可指定要从 Oracle E-business Suite 中检索员工的列表的搜索表达式。 对于本教程中，这被称为显示员工 Web 部件。 本部分提供了创建此 Web 部件的说明。 有关创建 Web 部件的详细信息，请参阅"自定义业务数据列表、 Web 部件和站点"在[http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131)。  

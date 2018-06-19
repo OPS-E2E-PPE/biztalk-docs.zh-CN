@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216293"
 ---
 # <a name="secure-your-sap-applications"></a>保护你的 SAP 应用程序
 SAP 系统可以包含敏感业务信息，例如客户帐户详细信息。 应用程序使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]访问和修改此信息是本地或分布式网络可能会无意中公开其能够访问未经授权的参与者，除非努力保护且安全的过程的数据传输。 数据保护和安全是通常认为按下列术语：  

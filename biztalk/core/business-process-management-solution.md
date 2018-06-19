@@ -1,11 +1,11 @@
 ---
-title: "业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business solutions, tutorials
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - orchestrations, tutorials
 - applications, process management solutions
 ms.assetid: 30ebd248-7e31-4608-ae50-4fc6703ae613
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232093"
 ---
 # <a name="business-process-management-solution"></a>业务流程管理解决方案
 业务流程管理解决方案介绍了如何设计 BizTalk 应用程序来管理业务流程（例如服务订单处理）。 该解决方案演示了如何构造流程管理器，并提供有关将流程划分成不同的阶段的指导信息。 该解决方案还对如何构造可中断业务流程以及大量复杂异常的处理进行了介绍。  

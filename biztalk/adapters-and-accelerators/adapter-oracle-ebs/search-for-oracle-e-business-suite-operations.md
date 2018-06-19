@@ -1,14 +1,14 @@
 ---
-title: "用于 Oracle E-business Suite 操作的搜索 |Microsoft 文档"
-ms.custom: 
+title: 用于 Oracle E-business Suite 操作的搜索 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2970ddd4-a534-4da4-9bd5-28bb9da4deca
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217813"
 ---
 # <a name="search-for-oracle-e-business-suite-operations"></a>用于 Oracle E-business Suite 操作的搜索
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]搜索 Oracle E-business Suite 中的特定项目。 本主题提供有关如何搜索支持不同的视图和内容信息通配符可以用于搜索 Oracle 项目。 本主题还提供有关如何使用搜索信息[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  

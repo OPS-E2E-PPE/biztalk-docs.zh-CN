@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966131"
 ---
 # <a name="step-1-submitting-a-0c2-request"></a>步骤 1： 提交 0 C 2 请求
 在此步骤中，将使用 0C2 - 异步测试请求的合作伙伴接口流程 (PIP) 准备并提交请求。 此 PIP 可确保两个不同组织间的异步通信通道能够正常运转。 此 PIP 遵循与其他异步双操作 PIP（例如，“3A4 - 请求采购订单 PIP”）相同的模式。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
     |**伙伴组织**|类型**CONTOSO**。|  
     |**Pip 代码**|类型**0 C 2**。|  
     |**Pip 版本**|类型**R01.02**。|  
-    |**Pip 实例 ID**|类型**0C2_Test**。 **重要说明：**必须确保**PIP**对于提交以避免重复的消息 ID 错误每条消息是唯一的。 如果以后运行 0C2 测试，则必须更改本字段。|  
+    |**Pip 实例 ID**|类型**0C2_Test**。 **重要说明：** 必须确保**PIP**对于提交以避免重复的消息 ID 错误每条消息是唯一的。 如果以后运行 0C2 测试，则必须更改本字段。|  
     |**消息类别**|类型**操作**。|  
   
 3.  使用记事本或其他文本编辑器中打开该 0C2_Request.xml 文件\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键LOBApplication\SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**LOBWebApplication 字段。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-verify-successful-communication-on-the-contoso-computer"></a>检验 Contoso 计算机上的通信是否成功  
   
-1.  单击 **“开始”**，依次指向 **“所有程序”**和 **Microsoft SQL Server**，然后单击 **SQL Server Management Studio**。  
+1.  单击 **“开始”**，依次指向 **“所有程序”** 和 **Microsoft SQL Server**，然后单击 **SQL Server Management Studio**。  
   
 2.  在**连接到服务器**对话框中，在**SQL Server**框中，键入**localhost**，选择**Windows 身份验证**，然后单击**连接**。  
   

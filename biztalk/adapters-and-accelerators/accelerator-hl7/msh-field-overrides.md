@@ -1,11 +1,11 @@
 ---
-title: "MSH 字段将覆盖 |Microsoft 文档"
-ms.custom: 
+title: MSH 字段将覆盖 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - headers, overriding
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - headers, MSH Map tab
 - messages, message headers
 ms.assetid: f5b2c820-57e7-4a56-9d9f-713563bd7335
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961019"
 ---
 # <a name="msh-field-overrides"></a>MSH 字段将覆盖
 每个 HL7 消息具有一个消息头。 使用[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]，你可以重写基于你的业务需求的任何消息标头值。 你使用[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器**MSH 映射**选项卡以手动覆盖消息标头值而不使用任何映射或业务流程。  

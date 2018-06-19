@@ -1,18 +1,18 @@
 ---
-title: "在架构中创建自定义表 |Microsoft 文档"
-ms.custom: 
+title: 在架构中创建自定义表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Z tables [Z objects]
 - Z objects, creating Z tables
 - 2.X schemas, creating Z tables
 ms.assetid: d6ab8ac9-a835-4ec0-9ddd-76ff267a3cbd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960339"
 ---
 # <a name="creating-custom-tables-in-schemas"></a>在架构中创建自定义的表
 你可以在 tablevalues_ 中创建自定义表格\<*版本*\>.xsd 公用架构。 你可以基于自定义的表，现有的数据类型，一个基本数据类型，或基于表中定义的枚举。  

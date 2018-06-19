@@ -1,18 +1,18 @@
 ---
-title: "如何移动 BAM 通知 Services Databases2 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 通知 Services Databases2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Notification Services Application database [BAM]
 - Notification Services Instance database [BAM]
 - migrating, Notification Services database [BAM]
 ms.assetid: 4b7f3397-65c9-4c71-8374-8764f4c2e2e3
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254261"
 ---
 # <a name="how-to-move-the-bam-notification-services-databases"></a>如何移动 BAM 通知 Services 数据库
 您可以使用此过程将 BAM Notification Services 数据库移到其他服务器。  

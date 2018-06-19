@@ -1,11 +1,11 @@
 ---
-title: "如何配置开始业务流程形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置开始业务流程形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Orchestration Designer], Start Orchestration shapes
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Start Orchestration shape [Orchestration Designer], starting orchestrations
 - Start Orchestration shape [Orchestration Designer], about Star Orchestration shape
 ms.assetid: 9d01c41e-9bc5-4c1c-a869-b2f0df13036a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249661"
 ---
 # <a name="how-to-configure-the-start-orchestration-shape"></a>如何配置开始业务流程形状
 **启动 Orchestration**形状是类似于**调用 Orchestration**形状，但你调用以异步方式与其他业务流程**启动 Orchestration**形状 — 也就是说，调用该业务流程的控制流继续执行后续调用，而无需等待调用的业务流程，以完成其工作。  

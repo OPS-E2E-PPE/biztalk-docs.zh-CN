@@ -1,15 +1,15 @@
 ---
-title: "适配器列表 |Microsoft 文档"
-description: 
-ms.custom: 
+title: 适配器列表 |Microsoft 文档
+description: ''
+ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afdfa70e-5929-4746-99b4-e76274aa5c88
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497782"
 ---
 # <a name="available-adapters-in-biztalk-server"></a>BizTalk Server 中的可用适配器
 

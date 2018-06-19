@@ -1,14 +1,14 @@
 ---
-title: "已知问题 MQSeries 适配器 |Microsoft 文档"
-ms.custom: 
+title: 已知问题 MQSeries 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c36bcabb-e1eb-455c-8384-00d4682464d3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262197"
 ---
 # <a name="known-issues-with-the-mqseries-adapter"></a>MQSeries 适配器已知问题
 本部分包含可帮助你避免出现错误的信息。  
@@ -61,7 +62,7 @@ The adapter "MQSeries" raised an error message. Details "The adapter has encount
   
  **方法 2： 配置 MSDTC 设置**  
   
- 按照中的步骤**上设置适当的 MSDTC 的安全配置选项[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]**部分[问题疑难解答与 MSDTC](../core/troubleshooting-problems-with-msdtc.md)配置 MSDTC 设置。  
+ 按照中的步骤**上设置适当的 MSDTC 的安全配置选项[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]** 部分[问题疑难解答与 MSDTC](../core/troubleshooting-problems-with-msdtc.md)配置 MSDTC 设置。  
   
  **方法 3： 验证主机帐户已添加到 MQSAgent COM + 应用程序中的角色**  
   

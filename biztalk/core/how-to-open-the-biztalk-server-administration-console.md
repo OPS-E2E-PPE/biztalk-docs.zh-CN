@@ -1,18 +1,18 @@
 ---
-title: "如何打开 BizTalk Server 管理控制台 |Microsoft 文档"
-ms.custom: 
+title: 如何打开 BizTalk Server 管理控制台 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Administration Console [BizTalk Server], refreshing
 - Administration Console [BizTalk Server], opening
 - Administration Console [BizTalk Server], sorting columns
 ms.assetid: b95a3d1b-18b8-43df-a35f-dc7a55764480
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254477"
 ---
 # <a name="how-to-open-the-biztalk-server-administration-console"></a>如何打开 BizTalk Server 管理控制台
 使用以下过程可打开 BizTalk Server 管理控制台，并对显示在详细信息窗格中的数据进行排序或刷新。  

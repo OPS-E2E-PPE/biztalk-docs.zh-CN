@@ -1,11 +1,11 @@
 ---
-title: "插入、 更新、 删除或使用 WCF 服务模型的 Oracle 数据库中选择操作 |Microsoft 文档"
-ms.custom: 
+title: 插入、 更新、 删除或使用 WCF 服务模型的 Oracle 数据库中选择操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, Delete operation
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF service model, Insert operation
 - WCF service model, Update operation
 ms.assetid: d1a9f44f-ea0b-4dd6-9489-fa0d963848c4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217485"
 ---
 # <a name="insert-update-delete-or-select-operations-in-oracle-database-using-the-wcf-service-model"></a>插入、 更新、 删除或使用 WCF 服务模型的 Oracle 数据库中选择操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现一套基本 Insert、 Update、 Delete 和 Oracle 数据库表和视图的 Select 操作。 通过使用这些操作，你可以执行简单的 SQL 插入、 更新选择、 和 DELETE 语句由目标表或视图的 WHERE 子句限定。 若要执行更复杂的操作，例如 SQL 选择使用的查询联接运算符，可以使用 SQLEXECUTE 操作。 有关 SQLEXECUTE 操作的详细信息，请参阅[在 Oracle 数据库中使用 WCF 服务模型执行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)。  

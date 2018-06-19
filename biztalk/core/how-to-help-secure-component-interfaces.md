@@ -1,17 +1,17 @@
 ---
-title: "如何帮助安全组件接口 |Microsoft 文档"
-ms.custom: 
+title: 如何帮助安全组件接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - component interfaces, helping to secure
 - security, component interfaces
 ms.assetid: 03b2af44-78e7-4fdc-bfa3-7697b2a60986
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255213"
 ---
 # <a name="how-to-help-secure-component-interfaces"></a>如何帮助保护组件接口
 在开始测试组件接口前，必须为它设置安全性。 以下过程描述如何为 PeopleSoft 版本 8.4 配置组件接口安全性，但你可以为版本 8.1 使用过程。  
