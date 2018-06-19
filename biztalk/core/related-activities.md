@@ -1,11 +1,11 @@
 ---
-title: "相关活动 |Microsoft 文档"
-ms.custom: 
+title: 相关活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], related activities
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], viewing details
 - queries [BAM], viewing details
 ms.assetid: 141b7943-d244-4810-aa88-12aa4a2b7658
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971851"
 ---
 # <a name="related-activities"></a><span data-ttu-id="14fcf-102">相关的活动</span><span class="sxs-lookup"><span data-stu-id="14fcf-102">Related Activities</span></span>
 <span data-ttu-id="14fcf-103">“相关活动”区域包含与查询所基于的活动相关的活动的列表。</span><span class="sxs-lookup"><span data-stu-id="14fcf-103">The Related Activities area contains a list of activities that are related to the activity on which the query is based.</span></span> <span data-ttu-id="14fcf-104">例如，“采购订单”活动的相关活动可以是多个“发货”活动，因为一个采购订单中的货物可以通过多次发货来交付。</span><span class="sxs-lookup"><span data-stu-id="14fcf-104">An example of a related activity for a Purchase Order activity would be multiple Shipment activities, since items on a single purchase order can be delivered in multiple shipments.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "有关开发业务流程的安全注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关开发业务流程的安全注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, orchestrations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, security
 - messages, security
 ms.assetid: a29b2018-4a8f-49ad-a817-6f279db3f801
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269317"
 ---
 # <a name="security-considerations-for-developing-orchestrations"></a><span data-ttu-id="60d99-102">有关开发业务流程的安全注意事项</span><span class="sxs-lookup"><span data-stu-id="60d99-102">Security Considerations for Developing Orchestrations</span></span>
 <span data-ttu-id="60d99-103">在设计业务流程时，应考虑潜在的安全问题。</span><span class="sxs-lookup"><span data-stu-id="60d99-103">When designing your orchestrations, you should consider potential security issues.</span></span>  

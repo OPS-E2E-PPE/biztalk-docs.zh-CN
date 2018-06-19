@@ -1,14 +1,14 @@
 ---
-title: "如何创建使用其他架构的架构 |Microsoft 文档"
-ms.custom: 
+title: 如何创建使用其他架构的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff0bcd9a-6c66-4c3b-bd41-64047a7c8392
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249413"
 ---
 # <a name="how-to-create-schemas-that-use-other-schemas"></a><span data-ttu-id="20e4d-102">如何创建使用其他架构的架构</span><span class="sxs-lookup"><span data-stu-id="20e4d-102">How to Create Schemas That Use Other Schemas</span></span>
 <span data-ttu-id="20e4d-103">XML 架构定义 (XSD) 语言提供了三种不同但相关的机制，用于在一个架构中使用其他架构。</span><span class="sxs-lookup"><span data-stu-id="20e4d-103">XML Schema definition (XSD) language provides three different but related mechanisms for using one schema within another schema.</span></span> <span data-ttu-id="20e4d-104">这些机制是导入架构、包括架构和重新定义架构。</span><span class="sxs-lookup"><span data-stu-id="20e4d-104">These mechanisms are importing a schema, including a schema, and redefining a schema.</span></span> <span data-ttu-id="20e4d-105">这些机制和它们之间的差异的简短摘要，请参阅[架构，使用其他架构](../core/schemas-that-use-other-schemas.md)。</span><span class="sxs-lookup"><span data-stu-id="20e4d-105">For a brief summary of these mechanisms and how they differ, see [Schemas That Use Other Schemas](../core/schemas-that-use-other-schemas.md).</span></span> <span data-ttu-id="20e4d-106">有关详细信息，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)有关 XSD 入门和规范的链接。</span><span class="sxs-lookup"><span data-stu-id="20e4d-106">For detailed information, see [XSD Resources on the Web](../core/xsd-resources-on-the-web.md) for links to the XSD primer and specifications.</span></span>  

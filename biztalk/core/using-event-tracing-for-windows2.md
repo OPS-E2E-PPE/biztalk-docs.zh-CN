@@ -11,7 +11,7 @@ helpviewer_keywords:
 - ETW
 - Event Tracing for Windows
 ms.assetid: 88b91b74-2b2e-40e0-a3e9-1ebd6367abe8
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25974411"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="1ad37-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="1ad37-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="1ad37-103">适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。</span><span class="sxs-lookup"><span data-stu-id="1ad37-103">Microsoft BizTalk Adapter for JD Edwards OneWorld logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="1ad37-104">可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="1ad37-104">You can view additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="1ad37-105">激活 ETW 后，会创建一个 \*.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="1ad37-105">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="1ad37-106">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="1ad37-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="1ad37-107">若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件︰ 例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="1ad37-107">To do this, you must have a consumer application available to interpret the \*.etl file: for example, tracerpt.exe or tracedmp.exe.</span></span>  
@@ -46,15 +47,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="1ad37-127">用于 JD Edwards OneWorld 的 BizTalk 适配器包含五种提供程序，允许您记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="1ad37-127">BizTalk Adapter for JD Edwards OneWorld has five providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="1ad37-128">**接收方日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="1ad37-129">\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-129">The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="1ad37-128">**接收方日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-128">**Receiver Logging Provider.**</span></span> <span data-ttu-id="1ad37-129">\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-129">The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="1ad37-130">**接收方 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="1ad37-131">\<跟踪元素\>交换机**-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-131">The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
+-   <span data-ttu-id="1ad37-130">**接收方 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-130">**Receiver CastDetails Provider.**</span></span> <span data-ttu-id="1ad37-131">\<跟踪元素\>交换机 **-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-131">The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
   
--   <span data-ttu-id="1ad37-132">**发送器日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="1ad37-133">\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-133">The \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="1ad37-132">**发送器日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-132">**Transmitter Logging Provider.**</span></span> <span data-ttu-id="1ad37-133">\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-133">The \<Trace element\> switch is **-transmitter**.</span></span>  
   
--   <span data-ttu-id="1ad37-134">**发送器 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="1ad37-135">\<跟踪元素\>交换机**-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-135">The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
+-   <span data-ttu-id="1ad37-134">**发送器 CastDetails 提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-134">**Transmitter CastDetails Provider.**</span></span> <span data-ttu-id="1ad37-135">\<跟踪元素\>交换机 **-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-135">The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
   
--   <span data-ttu-id="1ad37-136">**管理日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-136">**Management Logging Provider.**</span></span> <span data-ttu-id="1ad37-137">\<跟踪元素\>交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-137">The \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="1ad37-136">**管理日志记录提供程序。**</span><span class="sxs-lookup"><span data-stu-id="1ad37-136">**Management Logging Provider.**</span></span> <span data-ttu-id="1ad37-137">\<跟踪元素\>交换机 **-管理**。</span><span class="sxs-lookup"><span data-stu-id="1ad37-137">The \<Trace element\> switch is **-management**.</span></span>  
   
  <span data-ttu-id="1ad37-138">BTAJDEOneWorldTrace 命令</span><span class="sxs-lookup"><span data-stu-id="1ad37-138">BTAJDEOneWorldTrace Command</span></span>  
   

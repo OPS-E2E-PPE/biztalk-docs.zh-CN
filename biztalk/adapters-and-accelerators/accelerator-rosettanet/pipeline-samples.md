@@ -1,18 +1,18 @@
 ---
-title: "管道示例 |Microsoft 文档"
-ms.custom: 
+title: 管道示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, examples
 - SDK samples, pipelines
 - examples, pipelines
 ms.assetid: 1e53658b-1a7a-4dc0-963b-ebd14155c267
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004390"
 ---
 # <a name="pipeline-samples"></a><span data-ttu-id="c318c-102">管道示例</span><span class="sxs-lookup"><span data-stu-id="c318c-102">Pipeline Samples</span></span>
 <span data-ttu-id="c318c-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK) 包括发送管道示例和接收管道示例。</span><span class="sxs-lookup"><span data-stu-id="c318c-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes a send pipeline sample and a receive pipeline sample.</span></span> <span data-ttu-id="c318c-104">本节提供了有关每个示例所演示功能的详细信息、生成和运行示例的说明以及预期得到的结果。</span><span class="sxs-lookup"><span data-stu-id="c318c-104">This section provides information about the functionality that each sample demonstrates, instructions for building and running the samples, and the results that you can expect.</span></span>  

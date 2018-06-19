@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970675"
 ---
 # <a name="error---second-input-for-table-extractor-functoid-not-valid"></a><span data-ttu-id="c57c0-102">错误-为第二个输入表提取程序 Functoid 不有效</span><span class="sxs-lookup"><span data-stu-id="c57c0-102">Error - Second Input for Table Extractor Functoid Not Valid</span></span>
 <span data-ttu-id="c57c0-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="c57c0-103">**Error Code**</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何将事件源映射 |Microsoft 文档"
-ms.custom: 
+title: 如何将事件源映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, alerts
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - tracking profiles, mapping event sources
 - events, tracking profiles
 ms.assetid: 507f1624-2cd8-4960-8c63-7797ab22519e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253885"
 ---
 # <a name="how-to-map-event-sources"></a><span data-ttu-id="cfc17-102">如何将映射事件源</span><span class="sxs-lookup"><span data-stu-id="cfc17-102">How to Map Event Sources</span></span>
 <span data-ttu-id="cfc17-103">通过映射事件源可以访问 BAM 跟踪的数据项以生成警报。</span><span class="sxs-lookup"><span data-stu-id="cfc17-103">You map event sources to gain access to data items that BAM tracks to generate alerts.</span></span>  

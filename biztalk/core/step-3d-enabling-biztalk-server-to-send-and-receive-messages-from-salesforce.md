@@ -1,14 +1,14 @@
 ---
-title: "步骤 3d： 启用 BizTalk 服务器发送和接收来自 Salesforce 消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3d： 启用 BizTalk 服务器发送和接收来自 Salesforce 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 470c4a72-1e97-4493-8958-33a13f793ffd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975764"
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a><span data-ttu-id="3f7ed-102">步骤 3d： 启用 BizTalk 服务器发送和接收来自 Salesforce 的消息</span><span class="sxs-lookup"><span data-stu-id="3f7ed-102">Step 3d: Enabling BizTalk Server to Send and Receive Messages from Salesforce</span></span>
 <span data-ttu-id="3f7ed-103">使用 REST 接口发送消息时，我们必须向 Salesforce 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="3f7ed-103">We must authenticate with Salesforce while sending messages using the REST interface.</span></span> <span data-ttu-id="3f7ed-104">Salesforce 支持的 REST 调用的身份验证方法并不是 WCF-WebHttp 适配器现成提供的，我们将使用该适配器来调用 Salesforce 的 REST 接口。</span><span class="sxs-lookup"><span data-stu-id="3f7ed-104">The authentication methods for REST calls supported by Salesforce are not available out of the box with the WCF-WebHttp adapter, which we’ll use to invoke Salesforce’s REST interface.</span></span> <span data-ttu-id="3f7ed-105">因此，我们将创建自定义 WCF 终结点行为，然后将其附加到我们配置用于调用 Salesforce REST 接口的 WCF-WebHttp 发送适配器。</span><span class="sxs-lookup"><span data-stu-id="3f7ed-105">So, we’ll create a custom WCF endpoint behavior and then attach it to WCF-WebHttp send adapter that we’ll configure to invoke the Salesforce REST interface.</span></span>  

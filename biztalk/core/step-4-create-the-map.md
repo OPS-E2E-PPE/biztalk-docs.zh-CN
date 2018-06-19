@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 创建映射 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f7f1f6d-0e57-4a65-b91d-c81fcc832961
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973979"
 ---
 # <a name="step-4-create-the-map"></a><span data-ttu-id="22777-102">步骤 4：创建映射</span><span class="sxs-lookup"><span data-stu-id="22777-102">Step 4: Create the Map</span></span>
 <span data-ttu-id="22777-103">![步骤 4 5](../core/media/step-4of5.gif "Step_4of5")</span><span class="sxs-lookup"><span data-stu-id="22777-103">![Step 4 of 5](../core/media/step-4of5.gif "Step_4of5")</span></span>  
   
  <span data-ttu-id="22777-104">**完成时间：** 6 だ 牧</span><span class="sxs-lookup"><span data-stu-id="22777-104">**Time to complete:** 6 minutes</span></span>  
   
- <span data-ttu-id="22777-105">**目标：**在此步骤中，你创建的地图，转换到 RequestDecline 消息请求消息。</span><span class="sxs-lookup"><span data-stu-id="22777-105">**Objective:** In this step, you create a map that transforms Request message to RequestDecline message.</span></span>  
+ <span data-ttu-id="22777-105">**目标：** 在此步骤中，你创建的地图，转换到 RequestDecline 消息请求消息。</span><span class="sxs-lookup"><span data-stu-id="22777-105">**Objective:** In this step, you create a map that transforms Request message to RequestDecline message.</span></span>  
   
- <span data-ttu-id="22777-106">**用途：**映射可确保，返回到仓库库存系统的请求拒绝消息中包含了申请 ID 号和总计。</span><span class="sxs-lookup"><span data-stu-id="22777-106">**Purpose:** The map ensures that the request ID number and the grand total are included in the request decline message returned to the warehouse inventory system.</span></span> <span data-ttu-id="22777-107">使用 BizTalk 映射器，可将传入消息中的字段链接到为传出消息定义的字段。</span><span class="sxs-lookup"><span data-stu-id="22777-107">You use BizTalk Mapper to link fields in an incoming message to fields defined for the outgoing message.</span></span> <span data-ttu-id="22777-108">因为这两种消息的架构结构不同，因此必须这样做。</span><span class="sxs-lookup"><span data-stu-id="22777-108">This is necessary because these two messages do not have the same schema structure.</span></span>  
+ <span data-ttu-id="22777-106">**用途：** 映射可确保，返回到仓库库存系统的请求拒绝消息中包含了申请 ID 号和总计。</span><span class="sxs-lookup"><span data-stu-id="22777-106">**Purpose:** The map ensures that the request ID number and the grand total are included in the request decline message returned to the warehouse inventory system.</span></span> <span data-ttu-id="22777-107">使用 BizTalk 映射器，可将传入消息中的字段链接到为传出消息定义的字段。</span><span class="sxs-lookup"><span data-stu-id="22777-107">You use BizTalk Mapper to link fields in an incoming message to fields defined for the outgoing message.</span></span> <span data-ttu-id="22777-108">因为这两种消息的架构结构不同，因此必须这样做。</span><span class="sxs-lookup"><span data-stu-id="22777-108">This is necessary because these two messages do not have the same schema structure.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="22777-109">先决条件</span><span class="sxs-lookup"><span data-stu-id="22777-109">Prerequisites</span></span>  
  <span data-ttu-id="22777-110">在开始此步骤之前，请注意以下要求：</span><span class="sxs-lookup"><span data-stu-id="22777-110">Note the following requirements before you begin this step:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "分隔符无效设置，因为至少一个分隔符超出允许的范围是 |Microsoft 文档"
-ms.custom: 
+title: 分隔符无效设置，因为至少一个分隔符超出允许的范围是 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1286559-765b-4728-945d-cf3386e1ba06
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241453"
 ---
 # <a name="invalid-delimiter-set-because-at-least-one-of-the-delimiters-is-outside-the-allowed-range"></a><span data-ttu-id="7c70e-102">分隔符设置无效，因为至少有一个分隔符在允许的范围之外</span><span class="sxs-lookup"><span data-stu-id="7c70e-102">Invalid delimiter set because at least one of the delimiters is outside the allowed range</span></span>
 ## <a name="details"></a><span data-ttu-id="7c70e-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="7c70e-103">Details</span></span>  

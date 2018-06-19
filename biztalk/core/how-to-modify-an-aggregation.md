@@ -1,17 +1,17 @@
 ---
-title: "如何修改聚合 |Microsoft 文档"
-ms.custom: 
+title: 如何修改聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], modifying
 - BAM portal, aggregations
 ms.assetid: dd5ce211-32d3-4e1d-8ee0-1225ec2c45fb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254677"
 ---
 # <a name="how-to-modify-an-aggregation"></a><span data-ttu-id="28a42-102">如何修改聚合</span><span class="sxs-lookup"><span data-stu-id="28a42-102">How to Modify an Aggregation</span></span>
 <span data-ttu-id="28a42-103">在 Office Web 组件中使用数据透视表的方法与在 Excel 中使用数据透视表的方法相同。</span><span class="sxs-lookup"><span data-stu-id="28a42-103">You use PivotTable reports in Office Web Components the same way you use PivotTable reports in Excel.</span></span> <span data-ttu-id="28a42-104">可以添加和移除行、列及筛选器，以便生成可在聚合数据上创建警报的视图。</span><span class="sxs-lookup"><span data-stu-id="28a42-104">You can add and remove rows, columns, and filters to generate views of the aggregated data on which you can create alerts.</span></span>  

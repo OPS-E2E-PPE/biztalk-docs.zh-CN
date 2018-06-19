@@ -1,15 +1,15 @@
 ---
-title: "上安装和配置 BAM BizTalk Server |Microsoft 文档"
-description: "安装和配置在 BizTalk Server 上的单个或多台计算机环境中的业务活动监视"
-ms.custom: 
+title: 上安装和配置 BAM BizTalk Server |Microsoft 文档
+description: 安装和配置在 BizTalk Server 上的单个或多台计算机环境中的业务活动监视
+ms.custom: ''
 ms.date: 06/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01986f8f-5117-40d1-a477-b7184721864c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257117"
 ---
 # <a name="install-and-configure-bam"></a><span data-ttu-id="365d9-103">安装和配置 BAM</span><span class="sxs-lookup"><span data-stu-id="365d9-103">Install and configure BAM</span></span>
 <span data-ttu-id="365d9-104">业务活动监视 (BAM) 都附带的 BizTalk Server 安装。</span><span class="sxs-lookup"><span data-stu-id="365d9-104">Business Activity Monitoring (BAM) is included with the BizTalk Server installation.</span></span> <span data-ttu-id="365d9-105">你可以安装和配置 BAM，在单个服务器上，或在多台计算机环境中，就像 BizTalk Server 一样：</span><span class="sxs-lookup"><span data-stu-id="365d9-105">You can install and configure BAM on a single server, or in a multi-computer environment, just like BizTalk Server:</span></span> 

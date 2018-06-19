@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce77cdac-79c1-4529-8f09-0fb1f87ca037
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22262613"
 ---
 # <a name="known-issues-with-the-msmq-adapter"></a><span data-ttu-id="f900c-102">MSMQ 适配器已知问题</span><span class="sxs-lookup"><span data-stu-id="f900c-102">Known Issues with the MSMQ Adapter</span></span>
 <span data-ttu-id="f900c-103">本部分包含可帮助你避免出现错误的信息。</span><span class="sxs-lookup"><span data-stu-id="f900c-103">This section contains information that may help you avoid errors.</span></span>  

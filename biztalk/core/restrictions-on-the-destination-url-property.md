@@ -11,7 +11,7 @@ helpviewer_keywords:
 - configuring [HTTP adapters], restrictions
 - HTTP adapters, restrictions
 ms.assetid: 982a5122-e43d-4730-a8b9-ceb1ff88638c
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972067"
 ---
 # <a name="restrictions-on-the-destination-url-property"></a><span data-ttu-id="778a5-102">在目标 URL 属性上的限制</span><span class="sxs-lookup"><span data-stu-id="778a5-102">Restrictions on the Destination URL Property</span></span>
 <span data-ttu-id="778a5-103">目标 URL 是指定要在其中使用 HTTP 协议发送消息的 HTTP 服务器地址的字符串。</span><span class="sxs-lookup"><span data-stu-id="778a5-103">The destination URL is a string that specifies the address of the HTTP server where you want to send messages using the HTTP protocol.</span></span>  

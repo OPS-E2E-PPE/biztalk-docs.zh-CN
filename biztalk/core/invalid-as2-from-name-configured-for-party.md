@@ -1,14 +1,14 @@
 ---
-title: "无效的 AS2-从配置为当事方名称 |Microsoft 文档"
-ms.custom: 
+title: 无效的 AS2-从配置为当事方名称 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde739bd-f6f7-4e4a-8f02-9a99e9d82fc9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256973"
 ---
 # <a name="invalid-as2-from-name-configured-for-party"></a><span data-ttu-id="d546c-102">为参与方配置的 AS2-From 名称无效</span><span class="sxs-lookup"><span data-stu-id="d546c-102">Invalid AS2-From name configured for Party</span></span>
 ## <a name="details"></a><span data-ttu-id="d546c-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d546c-103">Details</span></span>  

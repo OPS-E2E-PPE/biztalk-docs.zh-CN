@@ -1,17 +1,17 @@
 ---
-title: "如何查看应用程序的引用 |Microsoft 文档"
-ms.custom: 
+title: 如何查看应用程序的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, viewing
 - applications, referencing
 ms.assetid: 5f1026e1-c73e-495d-8160-9ba68f38b9d8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256645"
 ---
 # <a name="how-to-view-the-references-of-an-application"></a><span data-ttu-id="f633c-102">如何查看应用程序的引用</span><span class="sxs-lookup"><span data-stu-id="f633c-102">How to View the References of an Application</span></span>
 <span data-ttu-id="f633c-103">本主题介绍如何使用 BizTalk Server 管理控制台查看当前应用程序引用的应用程序的列表。</span><span class="sxs-lookup"><span data-stu-id="f633c-103">This topic describes how to use the BizTalk Server Administration console to view the list of applications to which the current application has references.</span></span> <span data-ttu-id="f633c-104">有关如何添加引用的详细信息，请参阅[如何添加对另一个应用程序的引用](../core/how-to-add-a-reference-to-another-application.md)。</span><span class="sxs-lookup"><span data-stu-id="f633c-104">For more information about adding references, see [How to Add a Reference to Another Application](../core/how-to-add-a-reference-to-another-application.md).</span></span> <span data-ttu-id="f633c-105">您还可以查看引用了此应用程序的应用程序列表。</span><span class="sxs-lookup"><span data-stu-id="f633c-105">You can also view the list of applications that have references to this application.</span></span>  

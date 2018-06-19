@@ -1,11 +1,11 @@
 ---
-title: "第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道 |Microsoft 文档"
-ms.custom: 
+title: 第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive pipelines, adding disassembler
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - disassembler, custom pipelines
 - disassembler, adding to pipelines
 ms.assetid: 96e26d97-bfab-448f-b7b6-3bc2ec3ccebf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005550"
 ---
 # <a name="lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline"></a><span data-ttu-id="aff00-102">第 5 课： 添加自定义接收管道的 SWIFT 反汇编程序</span><span class="sxs-lookup"><span data-stu-id="aff00-102">Lesson 5: Adding the SWIFT Disassembler to a Custom Receive Pipeline</span></span>
 <span data-ttu-id="aff00-103">在本课程中，你可以将自定义 SWIFT 反汇编程序 (DASM) 添加到管道。</span><span class="sxs-lookup"><span data-stu-id="aff00-103">In this lesson, you add the custom SWIFT disassembler (DASM) to your pipeline.</span></span> <span data-ttu-id="aff00-104">DASM 管道组件是将一批中的消息划分为各个文档的管道组件。</span><span class="sxs-lookup"><span data-stu-id="aff00-104">A DASM pipeline component is a pipeline component that divides messages in a batch into individual documents.</span></span>  

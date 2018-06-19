@@ -1,14 +1,14 @@
 ---
-title: "基础结构管理命令 |Microsoft 文档"
-ms.custom: 
+title: 基础结构管理命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2f1a88c-19fc-4384-b6bb-f95962a32921
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973355"
 ---
 # <a name="infrastructure-management-commands"></a><span data-ttu-id="0a7f3-102">基础结构管理命令</span><span class="sxs-lookup"><span data-stu-id="0a7f3-102">Infrastructure Management Commands</span></span>
 <span data-ttu-id="0a7f3-103">通过 BAM 管理 (BM) 实用程序命令，可以获取和更新 BAM 配置。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-103">The BAM Management (BM) utility configuration commands allow you get and update the BAM configuration.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="0a7f3-107">get defxml： 获取包含 BAM 主导入数据库中的所有项目的文件。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-107">get-defxml: Gets a file containing all the artifacts in the BAM Primary Import database.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="0a7f3-108">你可以通过包括启用任何 BM 实用工具命令的跟踪**-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-108">You can enable tracing on any BM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="0a7f3-109">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-109">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="0a7f3-110">该开关可与所有标准 BM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-110">The switch can be used in conjunction with any normal BM command.</span></span>  
+>  <span data-ttu-id="0a7f3-108">你可以通过包括启用任何 BM 实用工具命令的跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-108">You can enable tracing on any BM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="0a7f3-109">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-109">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="0a7f3-110">该开关可与所有标准 BM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-110">The switch can be used in conjunction with any normal BM command.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="0a7f3-111">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="0a7f3-111">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

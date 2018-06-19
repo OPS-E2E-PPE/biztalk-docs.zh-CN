@@ -11,7 +11,7 @@ helpviewer_keywords:
 - applications [SSO], listing properties
 - managing [SSO applications], listing properties
 ms.assetid: a120acd7-2f0b-4c72-8a8a-f8e500a773c8
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25971923"
 ---
 # <a name="how-to-list-the-properties-of-an-affiliate-application"></a><span data-ttu-id="c9ac0-102">如何列出关联应用程序的属性</span><span class="sxs-lookup"><span data-stu-id="c9ac0-102">How to List the Properties of an Affiliate Application</span></span>
 <span data-ttu-id="c9ac0-103">此命令显示有关关联应用程序的以下信息。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-103">This command shows the following information about the affiliate application.</span></span> <span data-ttu-id="c9ac0-104">有关关联应用程序的属性的详细信息，请参阅[SSO Affiliate 应用程序](../core/sso-affiliate-applications.md)。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-104">For more information about the properties for an affiliate application, see [SSO Affiliate Applications](../core/sso-affiliate-applications.md).</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="c9ac0-109">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-109">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="c9ac0-110">默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-110">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="c9ac0-111">类型 * * ssomanage-displayapp *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是你想要显示的属性关联的应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-111">Type **ssomanage –displayapp *\<application name\>***, where *\<application name\>* is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3.  <span data-ttu-id="c9ac0-111">类型 * * ssomanage-displayapp *\<应用程序名称\>* * *，其中*\<应用程序名称\>* 是你想要显示的属性关联的应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-111">Type **ssomanage –displayapp *\<application name\>***, where *\<application name\>* is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c9ac0-112">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-112">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="c9ac0-115">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-115">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="c9ac0-116">默认安装目录是\<*安装驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-116">The default installation directory is \<*install drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="c9ac0-117">类型 * * ssoclient – displayapp *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是你想要显示的属性关联的应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-117">Type **ssoclient –displayapp *\<application name\>***, where *\<application name\>* is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3.  <span data-ttu-id="c9ac0-117">类型 * * ssoclient – displayapp *\<应用程序名称\>* * *，其中*\<应用程序名称\>* 是你想要显示的属性关联的应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-117">Type **ssoclient –displayapp *\<application name\>***, where *\<application name\>* is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c9ac0-118">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="c9ac0-118">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

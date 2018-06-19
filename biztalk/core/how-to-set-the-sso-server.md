@@ -1,11 +1,11 @@
 ---
-title: "如何设置 SSO 服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何设置 SSO 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, selecting [SSO]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [SSO], selecting servers
 - SSOManage [SSO]
 ms.assetid: a0b0176d-b426-4ab1-8a7e-1f96f4214683
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972163"
 ---
 # <a name="how-to-set-the-sso-server"></a><span data-ttu-id="94362-102">如何设置 SSO 服务器</span><span class="sxs-lookup"><span data-stu-id="94362-102">How to Set the SSO Server</span></span>
 <span data-ttu-id="94362-103">每次使用 ssomanage 时，必须先将用户指向您要连接的单一登录服务器。</span><span class="sxs-lookup"><span data-stu-id="94362-103">Each time you use ssomanage, you must first point the user to the Single Sign-On server you want to connect to.</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="94362-115">在命令行提示符下，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="94362-115">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="94362-116">默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="94362-116">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="94362-117">类型**ssomanage-服务器\<SSO 服务器名\>**，其中 **\<SSO 服务器名\>**是用户的单一登录服务器的计算机名称想要连接到。</span><span class="sxs-lookup"><span data-stu-id="94362-117">Type **ssomanage –server \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server the user wants to connect to.</span></span>  
+3.  <span data-ttu-id="94362-117">类型**ssomanage-服务器\<SSO 服务器名\>**，其中 **\<SSO 服务器名\>** 是用户的单一登录服务器的计算机名称想要连接到。</span><span class="sxs-lookup"><span data-stu-id="94362-117">Type **ssomanage –server \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server the user wants to connect to.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="94362-118">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="94362-118">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="94362-121">在命令行提示符下，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="94362-121">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="94362-122">默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="94362-122">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="94362-123">类型**ssomanage-serverall \<SSO 服务器名\>**，其中 **\<SSO 服务器名\>**为单一登录服务器的所有计算机名称将指向单一登录在用户帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="94362-123">Type **ssomanage –serverall \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server all members of the Single Sign-On Users account will be pointed to.</span></span>  
+3.  <span data-ttu-id="94362-123">类型**ssomanage-serverall \<SSO 服务器名\>**，其中 **\<SSO 服务器名\>** 为单一登录服务器的所有计算机名称将指向单一登录在用户帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="94362-123">Type **ssomanage –serverall \<SSO server name\>**, where **\<SSO server name\>** is the computer name of the Single Sign-On Server all members of the Single Sign-On Users account will be pointed to.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="94362-124">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="94362-124">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

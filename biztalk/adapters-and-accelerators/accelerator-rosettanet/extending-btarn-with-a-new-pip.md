@@ -1,18 +1,18 @@
 ---
-title: "扩展与新 PIP BTARN |Microsoft 文档"
-ms.custom: 
+title: 扩展与新 PIP BTARN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, extending functionality
 - PIPs, extending BTARN
 - BTARN, PIPs
 ms.assetid: 3db5cd5c-031f-4451-9be5-4b5d6163c3b1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007162"
 ---
 # <a name="extending-btarn-with-a-new-pip"></a><span data-ttu-id="c84bc-102">扩展与新 PIP BTARN</span><span class="sxs-lookup"><span data-stu-id="c84bc-102">Extending BTARN with a New PIP</span></span>
 <span data-ttu-id="c84bc-103">本主题介绍如何扩展[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]与新的合作伙伴接口过程 (PIP) 架构。</span><span class="sxs-lookup"><span data-stu-id="c84bc-103">This topic describes how to extend [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] with a new Partner Interface Process (PIP) schema.</span></span> <span data-ttu-id="c84bc-104">这使你能够在 RosettaNet PIP 不与 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装程序所安装的任何架构相关联时，基于该 PIP 添加架构。</span><span class="sxs-lookup"><span data-stu-id="c84bc-104">This lets you add a schema based on a RosettaNet PIP when that PIP is not associated with any of the schemas installed by the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program.</span></span>  

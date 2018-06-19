@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9aa88ca7-a731-4295-8692-6dd36fdf0872
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973163"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a><span data-ttu-id="5dbca-102">如何打开、 保存、 关闭，以及重命名映射</span><span class="sxs-lookup"><span data-stu-id="5dbca-102">How to Open, Save, Close, and Rename Maps</span></span>
 <span data-ttu-id="5dbca-103">在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，映射在文件系统中以扩展名为 .btm 的文件形式存在。</span><span class="sxs-lookup"><span data-stu-id="5dbca-103">In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], maps exist as files in the file system with .btm extensions.</span></span> <span data-ttu-id="5dbca-104">不过，它是得更加常见，若要使用映射作为 BizTalk 项目，你在其中执行操作，如打开、 保存和关闭地图中的项。</span><span class="sxs-lookup"><span data-stu-id="5dbca-104">Nevertheless, it is much more common to work with maps as items in a BizTalk project, from which you perform operations such as opening, saving, and closing maps.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="5dbca-114">在解决方案资源管理器，选择你想要将保存到新位置的映射。</span><span class="sxs-lookup"><span data-stu-id="5dbca-114">In Solution Explorer, select the map you want to save to a new location.</span></span>  
   
-2.  <span data-ttu-id="5dbca-115">上**文件**菜单上，单击**保存*\<名称的映射\>*作为**。</span><span class="sxs-lookup"><span data-stu-id="5dbca-115">On the **File** menu, click **Save *\<Name of Map\>* As**.</span></span>  
+2.  <span data-ttu-id="5dbca-115">上**文件**菜单上，单击**保存*\<名称的映射\>* 作为**。</span><span class="sxs-lookup"><span data-stu-id="5dbca-115">On the **File** menu, click **Save *\<Name of Map\>* As**.</span></span>  
   
 3.  <span data-ttu-id="5dbca-116">在 **文件另存为** 对话框中，浏览到你想要保存代码图的文件夹位置。</span><span class="sxs-lookup"><span data-stu-id="5dbca-116">In the **Save File As** dialog box, browse to the folder location where you want to save the map.</span></span>  
   

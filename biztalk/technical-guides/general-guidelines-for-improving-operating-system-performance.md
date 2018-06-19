@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc9ca38e-1feb-4f34-a64b-d04566e85db9
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976571"
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a><span data-ttu-id="8bbae-102">一般性的指导原则，用于提高操作系统性能</span><span class="sxs-lookup"><span data-stu-id="8bbae-102">General Guidelines for Improving Operating System Performance</span></span>
 <span data-ttu-id="8bbae-103">应遵循以下常规准则，以提高操作系统性能：</span><span class="sxs-lookup"><span data-stu-id="8bbae-103">The following general guidelines should be followed to improve operating system performance:</span></span>  

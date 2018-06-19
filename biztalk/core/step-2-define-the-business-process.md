@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 定义的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 定义的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b37bd9f1-5ee2-434d-950a-cf12967b6fc2
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974699"
 ---
 # <a name="step-2-define-the-business-process"></a><span data-ttu-id="00b50-102">步骤 2：定义业务流程</span><span class="sxs-lookup"><span data-stu-id="00b50-102">Step 2: Define the Business Process</span></span>
 <span data-ttu-id="00b50-103">![步骤 2 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="00b50-103">![Step 2 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="00b50-104">**完成时间：** 8 分钟</span><span class="sxs-lookup"><span data-stu-id="00b50-104">**Time to complete:** 8 minutes</span></span>  
   
- <span data-ttu-id="00b50-105">**目标：**在此步骤中，你使用业务流程设计器来定义您的业务流程。</span><span class="sxs-lookup"><span data-stu-id="00b50-105">**Objective:** In this step, you use Orchestration Designer to define your business process.</span></span>  
+ <span data-ttu-id="00b50-105">**目标：** 在此步骤中，你使用业务流程设计器来定义您的业务流程。</span><span class="sxs-lookup"><span data-stu-id="00b50-105">**Objective:** In this step, you use Orchestration Designer to define your business process.</span></span>  
   
- <span data-ttu-id="00b50-106">**用途：**的工作流的业务流程表示和自动执行用于批准库存补货请求你公司的业务流程。</span><span class="sxs-lookup"><span data-stu-id="00b50-106">**Purpose:** The workflow of the orchestration represents and automates your company's business process for approving inventory replenishment requests.</span></span>  
+ <span data-ttu-id="00b50-106">**用途：** 的工作流的业务流程表示和自动执行用于批准库存补货请求你公司的业务流程。</span><span class="sxs-lookup"><span data-stu-id="00b50-106">**Purpose:** The workflow of the orchestration represents and automates your company's business process for approving inventory replenishment requests.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="00b50-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="00b50-107">Prerequisites</span></span>  
  <span data-ttu-id="00b50-108">在开始此步骤之前，请注意以下要求：</span><span class="sxs-lookup"><span data-stu-id="00b50-108">Note the following requirements before you begin this step:</span></span>  
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="00b50-186">使用此选项</span><span class="sxs-lookup"><span data-stu-id="00b50-186">Use this</span></span>|<span data-ttu-id="00b50-187">执行的操作</span><span class="sxs-lookup"><span data-stu-id="00b50-187">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="00b50-188">**名称**</span><span class="sxs-lookup"><span data-stu-id="00b50-188">**Name**</span></span>|<span data-ttu-id="00b50-189">类型**TransformRequestToRequestDeclineMessage**。</span><span class="sxs-lookup"><span data-stu-id="00b50-189">Type **TransformRequestToRequestDeclineMessage**.</span></span>|  
-    |<span data-ttu-id="00b50-190">**映射名称**</span><span class="sxs-lookup"><span data-stu-id="00b50-190">**Map Name**</span></span>|<span data-ttu-id="00b50-191">单击**...**.</span><span class="sxs-lookup"><span data-stu-id="00b50-191">Click **…**.</span></span> <span data-ttu-id="00b50-192">从“转换配置”中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="00b50-192">From Transform Configuration, do the following:</span></span><br /><br /> <span data-ttu-id="00b50-193">输入配置信息：</span><span class="sxs-lookup"><span data-stu-id="00b50-193">Enter the configuration information:</span></span><br /><br /> <span data-ttu-id="00b50-194">-单击**现有映射**。</span><span class="sxs-lookup"><span data-stu-id="00b50-194">- Click **Existing Map**.</span></span><br /><br /> <span data-ttu-id="00b50-195">完全限定的映射名称：</span><span class="sxs-lookup"><span data-stu-id="00b50-195">Fully Qualified Map Name:</span></span><br /><br /> <span data-ttu-id="00b50-196">-选择**\<从引用的程序集选择\>**。</span><span class="sxs-lookup"><span data-stu-id="00b50-196">- Select **\<Select from referenced assembly\>**.</span></span>  <span data-ttu-id="00b50-197">从左窗格中，选择**EAISchemas**。</span><span class="sxs-lookup"><span data-stu-id="00b50-197">From the left pane, select **EAISchemas**.</span></span>  <span data-ttu-id="00b50-198">从右侧窗格中选择“EAISchemas.MapToReqDecline”。</span><span class="sxs-lookup"><span data-stu-id="00b50-198">From the right pane, select EAISchemas.MapToReqDecline.</span></span>  <span data-ttu-id="00b50-199">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="00b50-199">Click **OK**.</span></span><br /><br /> <span data-ttu-id="00b50-200">数据源</span><span class="sxs-lookup"><span data-stu-id="00b50-200">Source</span></span><br /><br /> <span data-ttu-id="00b50-201">-RequestMessage</span><span class="sxs-lookup"><span data-stu-id="00b50-201">- RequestMessage</span></span><br /><br /> <span data-ttu-id="00b50-202">目标</span><span class="sxs-lookup"><span data-stu-id="00b50-202">Destination</span></span><br /><br /> <span data-ttu-id="00b50-203">-RequestDeclineMessage</span><span class="sxs-lookup"><span data-stu-id="00b50-203">- RequestDeclineMessage</span></span>|  
+    |<span data-ttu-id="00b50-190">**映射名称**</span><span class="sxs-lookup"><span data-stu-id="00b50-190">**Map Name**</span></span>|<span data-ttu-id="00b50-191">单击 **...**.</span><span class="sxs-lookup"><span data-stu-id="00b50-191">Click **…**.</span></span> <span data-ttu-id="00b50-192">从“转换配置”中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="00b50-192">From Transform Configuration, do the following:</span></span><br /><br /> <span data-ttu-id="00b50-193">输入配置信息：</span><span class="sxs-lookup"><span data-stu-id="00b50-193">Enter the configuration information:</span></span><br /><br /> <span data-ttu-id="00b50-194">-单击**现有映射**。</span><span class="sxs-lookup"><span data-stu-id="00b50-194">- Click **Existing Map**.</span></span><br /><br /> <span data-ttu-id="00b50-195">完全限定的映射名称：</span><span class="sxs-lookup"><span data-stu-id="00b50-195">Fully Qualified Map Name:</span></span><br /><br /> <span data-ttu-id="00b50-196">-选择**\<从引用的程序集选择\>**。</span><span class="sxs-lookup"><span data-stu-id="00b50-196">- Select **\<Select from referenced assembly\>**.</span></span>  <span data-ttu-id="00b50-197">从左窗格中，选择**EAISchemas**。</span><span class="sxs-lookup"><span data-stu-id="00b50-197">From the left pane, select **EAISchemas**.</span></span>  <span data-ttu-id="00b50-198">从右侧窗格中选择“EAISchemas.MapToReqDecline”。</span><span class="sxs-lookup"><span data-stu-id="00b50-198">From the right pane, select EAISchemas.MapToReqDecline.</span></span>  <span data-ttu-id="00b50-199">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="00b50-199">Click **OK**.</span></span><br /><br /> <span data-ttu-id="00b50-200">数据源</span><span class="sxs-lookup"><span data-stu-id="00b50-200">Source</span></span><br /><br /> <span data-ttu-id="00b50-201">-RequestMessage</span><span class="sxs-lookup"><span data-stu-id="00b50-201">- RequestMessage</span></span><br /><br /> <span data-ttu-id="00b50-202">目标</span><span class="sxs-lookup"><span data-stu-id="00b50-202">Destination</span></span><br /><br /> <span data-ttu-id="00b50-203">-RequestDeclineMessage</span><span class="sxs-lookup"><span data-stu-id="00b50-203">- RequestDeclineMessage</span></span>|  
   
 11. <span data-ttu-id="00b50-204">在设计图面上，单击**Send_1**形状。</span><span class="sxs-lookup"><span data-stu-id="00b50-204">On the design surface, click the **Send_1** shape.</span></span>  
   

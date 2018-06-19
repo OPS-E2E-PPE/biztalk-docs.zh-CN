@@ -1,11 +1,11 @@
 ---
-title: "在业务流程设计器中工作 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程设计器中工作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, saving
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - orchestrations, deleting
 ms.assetid: 13e72b41-d9b6-4508-9a44-b3c7c1804f36
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975475"
 ---
 # <a name="working-in-orchestration-designer"></a><span data-ttu-id="98743-102">使用业务流程设计器</span><span class="sxs-lookup"><span data-stu-id="98743-102">Working in Orchestration Designer</span></span>
 <span data-ttu-id="98743-103">在您开始了某一 BizTalk 项目后，可以创建新的业务流程和向该项目添加现有业务流程。</span><span class="sxs-lookup"><span data-stu-id="98743-103">After you have started a BizTalk project, you can create new orchestrations and add existing orchestrations to the project.</span></span> <span data-ttu-id="98743-104">请参阅下面的过程来创建和保存业务流程、将现有业务流程添加到某一项目或从项目中删除现有业务流程、更改业务流程的名称以及设置业务流程属性。</span><span class="sxs-lookup"><span data-stu-id="98743-104">See the following procedures to create and save an orchestration, to add an existing orchestration to a project or remove one from it, to change the name of an orchestration, and to set orchestration properties.</span></span>  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="98743-159">事务标识符</span><span class="sxs-lookup"><span data-stu-id="98743-159">Transaction Identifier</span></span>|<span data-ttu-id="98743-160">用于事务性业务流程的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="98743-160">Unique identifier for a transactional orchestration.</span></span>|  
     |<span data-ttu-id="98743-161">事务类型</span><span class="sxs-lookup"><span data-stu-id="98743-161">Transaction Type</span></span>|<span data-ttu-id="98743-162">确定业务流程是原子事务、长期事务还是业务流程未进行事务处理。</span><span class="sxs-lookup"><span data-stu-id="98743-162">Determines whether the orchestration is an atomic transaction, a long-running transaction, or is not transacted.</span></span>|  
     |<span data-ttu-id="98743-163">类型修饰符</span><span class="sxs-lookup"><span data-stu-id="98743-163">Type Modifier</span></span>|<span data-ttu-id="98743-164">确定业务流程级别变量的作用域：</span><span class="sxs-lookup"><span data-stu-id="98743-164">Determines the scope of orchestration-level variables:</span></span><br /><br /> <span data-ttu-id="98743-165">私有-与此业务流程的访问仅限于包含模块。</span><span class="sxs-lookup"><span data-stu-id="98743-165">Private—Access to this orchestration is limited to the containing module.</span></span><br /><br /> <span data-ttu-id="98743-166">公共-与此业务流程的访问不受限制。</span><span class="sxs-lookup"><span data-stu-id="98743-166">Public—Access to this orchestration is not limited.</span></span><br /><br /> <span data-ttu-id="98743-167">内部 — 与此业务流程的访问仅限于同一项目中的模块。</span><span class="sxs-lookup"><span data-stu-id="98743-167">Internal—Access to this orchestration is limited to modules within the same project.</span></span>|  
-    |<span data-ttu-id="98743-168">类型名称</span><span class="sxs-lookup"><span data-stu-id="98743-168">Typename</span></span>|<span data-ttu-id="98743-169">确定此业务流程在包含模块内的名称。</span><span class="sxs-lookup"><span data-stu-id="98743-169">Determines the name of this orchestration within the containing module.</span></span> <span data-ttu-id="98743-170">**注意：**如果你使用与根级命名空间中，相同的类型名称定义消息并基于 e，尝试执行变量将在其上的操作时，可能会从 Orchestration 设计器收到错误。</span><span class="sxs-lookup"><span data-stu-id="98743-170">**Note:**  If you to use a Typename that is the same as a root-level namespace, you may receive an error from Orchestration Designer when you define messages and variables based on the Typename and attempt to perform assign operations on them.</span></span> <span data-ttu-id="98743-171">例如，如果您指定某一系统类型名称，然后定义 System.String 之类的消息和变量，则可能会收到错误消息。</span><span class="sxs-lookup"><span data-stu-id="98743-171">For example, if you specify a Typename of System, and then define messages and variables like System.String, you may receive an error.</span></span>|  
+    |<span data-ttu-id="98743-168">类型名称</span><span class="sxs-lookup"><span data-stu-id="98743-168">Typename</span></span>|<span data-ttu-id="98743-169">确定此业务流程在包含模块内的名称。</span><span class="sxs-lookup"><span data-stu-id="98743-169">Determines the name of this orchestration within the containing module.</span></span> <span data-ttu-id="98743-170">**注意：** 如果你使用与根级命名空间中，相同的类型名称定义消息并基于 e，尝试执行变量将在其上的操作时，可能会从 Orchestration 设计器收到错误。</span><span class="sxs-lookup"><span data-stu-id="98743-170">**Note:**  If you to use a Typename that is the same as a root-level namespace, you may receive an error from Orchestration Designer when you define messages and variables based on the Typename and attempt to perform assign operations on them.</span></span> <span data-ttu-id="98743-171">例如，如果您指定某一系统类型名称，然后定义 System.String 之类的消息和变量，则可能会收到错误消息。</span><span class="sxs-lookup"><span data-stu-id="98743-171">For example, if you specify a Typename of System, and then define messages and variables like System.String, you may receive an error.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="98743-172">另请参阅</span><span class="sxs-lookup"><span data-stu-id="98743-172">See Also</span></span>  
  <span data-ttu-id="98743-173">[业务流程形状](../core/orchestration-shapes.md) </span><span class="sxs-lookup"><span data-stu-id="98743-173">[Orchestration Shapes](../core/orchestration-shapes.md) </span></span>  

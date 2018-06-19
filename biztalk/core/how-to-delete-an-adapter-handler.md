@@ -1,18 +1,18 @@
 ---
-title: "如何删除一个适配器处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何删除一个适配器处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, handlers
 - deleting, handlers [adapters]
 - handlers [adapters], deleting
 ms.assetid: 95db5652-e175-45d1-b713-1ad73655a592
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249621"
 ---
 # <a name="how-to-delete-an-adapter-handler"></a><span data-ttu-id="df590-102">如何删除一个适配器处理程序</span><span class="sxs-lookup"><span data-stu-id="df590-102">How to Delete an Adapter Handler</span></span>
 <span data-ttu-id="df590-103">您可以使用 BizTalk Server 管理控制台来删除发送或接收适配器处理程序。</span><span class="sxs-lookup"><span data-stu-id="df590-103">You can delete a send or receive adapter handler by using the BizTalk Server Administration Console.</span></span>  

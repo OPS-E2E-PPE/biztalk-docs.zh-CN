@@ -1,11 +1,11 @@
 ---
-title: "迁移 Functoid |Microsoft 文档"
-ms.custom: 
+title: 迁移 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids, migrating
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - migrating, functoids
 - migrating, Scripting functoids
 ms.assetid: fc5b3ac9-28c6-41df-b779-15a8c3188528
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009318"
 ---
 # <a name="migrating-functoids"></a><span data-ttu-id="53bc3-102">迁移 Functoid</span><span class="sxs-lookup"><span data-stu-id="53bc3-102">Migrating Functoids</span></span>
 <span data-ttu-id="53bc3-103">当你从以前版本的 BizTalk Server 中迁移地图给 BizTalk Server 时，包括在映射任何 functoid 也会被迁移。</span><span class="sxs-lookup"><span data-stu-id="53bc3-103">When you migrate a map from previous versions of BizTalk Server to BizTalk Server, any functoids included in the map are also migrated.</span></span> <span data-ttu-id="53bc3-104">如果不包括迁移 functoid**脚本**functoid，没有其他迁移所需的任务。</span><span class="sxs-lookup"><span data-stu-id="53bc3-104">If the functoids you migrate do not include **Scripting** functoids, no additional migration tasks are required.</span></span> <span data-ttu-id="53bc3-105">但是如果你的代码图包括**脚本**functoid 或者自定义 functoid，你可能必须执行其他步骤。</span><span class="sxs-lookup"><span data-stu-id="53bc3-105">However if your map includes **Scripting** functoids or custom functoids, you may have additional steps to perform.</span></span>  

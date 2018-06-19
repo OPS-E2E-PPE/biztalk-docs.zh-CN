@@ -1,14 +1,14 @@
 ---
-title: "配置常见回退属性的 X12 和 EDIFACT 编码消息 |Microsoft 文档"
-ms.custom: 
+title: 配置常见回退属性的 X12 和 EDIFACT 编码消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7393d6ac-b901-43ef-a8d6-c5b0b3033257
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006030"
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a><span data-ttu-id="6bceb-102">为 X12 和 EDIFACT 编码的消息配置通用后备属性</span><span class="sxs-lookup"><span data-stu-id="6bceb-102">Configuring Common Fallback Properties for X12 and EDIFACT Encoded Messages</span></span>
 <span data-ttu-id="6bceb-103">后备属性同时适用于 X12（包括 HIPAA）和 EDIFACT 编码的交换。</span><span class="sxs-lookup"><span data-stu-id="6bceb-103">Fallback properties apply to both X12 (including HIPAA) - and EDIFACT-encoded interchanges.</span></span> <span data-ttu-id="6bceb-104">和所有后备协议属性一样，仅当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 尚未确定解析传入或传出消息所用的协议时，这些属性才适用。</span><span class="sxs-lookup"><span data-stu-id="6bceb-104">As with all fallback agreement properties, these properties apply only when [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has not determined the agreement to which an incoming our outgoing message resolves to.</span></span>  

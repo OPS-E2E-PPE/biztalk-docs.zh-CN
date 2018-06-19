@@ -1,14 +1,14 @@
 ---
-title: "更新对跟踪 Analysis Server 数据库的引用 |Microsoft 文档"
-ms.custom: 
+title: 更新对跟踪 Analysis Server 数据库的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a403325-1394-4668-946f-01b610cb686e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976315"
 ---
 # <a name="update-references-to-the-tracking-analysis-server-database"></a><span data-ttu-id="04335-102">更新对跟踪 Analysis Server 数据库的引用</span><span class="sxs-lookup"><span data-stu-id="04335-102">Update References to the Tracking Analysis Server Database</span></span>
 <span data-ttu-id="04335-103">跟踪 Analysis Server 数据库是可选的并包含联机分析处理 (OLAP) 多维数据集。</span><span class="sxs-lookup"><span data-stu-id="04335-103">The Tracking Analysis Server database is an optional and contains the online analytical processing (OLAP) cubes.</span></span> <span data-ttu-id="04335-104">这些 OLAP 多维数据集是 BizTalk 跟踪数据库中包含的数据的聚合。</span><span class="sxs-lookup"><span data-stu-id="04335-104">These OLAP cubes are aggregations of data contained in the BizTalk Tracking database.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
 5.  <span data-ttu-id="04335-115">修改对应于原始数据库的列，以引用新数据库的相应值。</span><span class="sxs-lookup"><span data-stu-id="04335-115">Modify the columns corresponding to the original database to reference the appropriate values for the new database.</span></span>  
   
     > [!NOTE]  
-    >  <span data-ttu-id="04335-116">*\<DBType\>*  DBServerName 和 *\<DBType\>*  DBName 指示的位置的数据库，其中 *\<DBType\>*对应的数据库，例如，TrackingAnalysis 的类型。</span><span class="sxs-lookup"><span data-stu-id="04335-116">*\<DBType\>* DBServerName and *\<DBType\>* DBName indicate the location of the database, where *\<DBType\>* corresponds to the type of the database, for example, TrackingAnalysis.</span></span>  
+    >  <span data-ttu-id="04335-116">*\<DBType\>*  DBServerName 和 *\<DBType\>*  DBName 指示的位置的数据库，其中 *\<DBType\>* 对应的数据库，例如，TrackingAnalysis 的类型。</span><span class="sxs-lookup"><span data-stu-id="04335-116">*\<DBType\>* DBServerName and *\<DBType\>* DBName indicate the location of the database, where *\<DBType\>* corresponds to the type of the database, for example, TrackingAnalysis.</span></span>  
   
 6.  <span data-ttu-id="04335-117">关闭该表以保存新值。</span><span class="sxs-lookup"><span data-stu-id="04335-117">Close the table to save the new values.</span></span>  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265557"
 ---
 # <a name="managing-agreements"></a><span data-ttu-id="87990-102">管理协议</span><span class="sxs-lookup"><span data-stu-id="87990-102">Managing Agreements</span></span>
 <span data-ttu-id="87990-103">贸易合作伙伴协议 (TPA) 将在两个贸易合作伙伴之间被定义为一个确定且具有约束力的协议，以便通过特定的 B2B 协议处理消息。</span><span class="sxs-lookup"><span data-stu-id="87990-103">A Trading Partner Agreement (TPA) is defined as a definitive and binding agreement between two trading partners for transacting messages over a specific B2B Protocol.</span></span> <span data-ttu-id="87990-104">请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。</span><span class="sxs-lookup"><span data-stu-id="87990-104">See [Trading Partner Agreement](../core/trading-partner-agreement.md).</span></span> 

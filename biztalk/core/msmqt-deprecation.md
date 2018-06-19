@@ -1,14 +1,14 @@
 ---
-title: "MSMQT 弃用 |Microsoft 文档"
-ms.custom: 
+title: MSMQT 弃用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 007d65ce-d2a2-4602-80c8-55b26617f397
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007630"
 ---
 # <a name="msmqt-deprecation"></a><span data-ttu-id="89933-102">MSMQT 弃用</span><span class="sxs-lookup"><span data-stu-id="89933-102">MSMQT Deprecation</span></span>
 <span data-ttu-id="89933-103">已从 BizTalk Server 中删除 MSMQT 功能。</span><span class="sxs-lookup"><span data-stu-id="89933-103">The MSMQT feature has been removed from BizTalk Server.</span></span> <span data-ttu-id="89933-104">业务流程的设计器中 MSMQT 传输选项仍可在设计时端口配置向导时选择下面的图中所示**现在指定**选项**端口绑定**.</span><span class="sxs-lookup"><span data-stu-id="89933-104">In Orchestration Designer, the MSMQT transport option remains available in the design-time Port Configuration Wizard as shown in the image below when you choose the **Specify now** option for **Port binding**.</span></span>  

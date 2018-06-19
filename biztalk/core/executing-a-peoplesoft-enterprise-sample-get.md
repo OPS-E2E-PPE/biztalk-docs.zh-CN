@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb54f14c-3fce-44d6-91bb-cb1ca38a20da
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975291"
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a><span data-ttu-id="70e99-102">执行 PeopleSoft 企业示例 Get</span><span class="sxs-lookup"><span data-stu-id="70e99-102">Execute a PeopleSoft Enterprise Sample Get</span></span>
 <span data-ttu-id="70e99-103">使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。</span><span class="sxs-lookup"><span data-stu-id="70e99-103">The PeopleSoft system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the PeopleSoft adapter.</span></span> <span data-ttu-id="70e99-104">此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="70e99-104">This adapter is included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>
@@ -288,7 +289,7 @@ ms.lasthandoff: 03/28/2018
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  <span data-ttu-id="70e99-304">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="70e99-304">Click **OK.**</span></span> <span data-ttu-id="70e99-305">在属性窗口中，选择**\<架构\>**并设置**根引用： 获取**。</span><span class="sxs-lookup"><span data-stu-id="70e99-305">In the Properties window, select **\<Schema\>** and set **Root Reference: Get**.</span></span>  
+3.  <span data-ttu-id="70e99-304">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="70e99-304">Click **OK.**</span></span> <span data-ttu-id="70e99-305">在属性窗口中，选择**\<架构\>** 并设置**根引用： 获取**。</span><span class="sxs-lookup"><span data-stu-id="70e99-305">In the Properties window, select **\<Schema\>** and set **Root Reference: Get**.</span></span>  
   
 4.  <span data-ttu-id="70e99-306">右键单击“LOCATIONService_LOCATION_x5d.xsd”  ，然后单击“生成实例” 。</span><span class="sxs-lookup"><span data-stu-id="70e99-306">Right-click **LOCATIONService_LOCATION_x5d.xsd** and then click **Generate Instance**.</span></span> <span data-ttu-id="70e99-307">这将生成 **SampleQuery.xml** 文件。</span><span class="sxs-lookup"><span data-stu-id="70e99-307">This generates the **SampleQuery.xml** file.</span></span> <span data-ttu-id="70e99-308">此文件将放入接收位置，作为适配器启动业务流程进程的输入。</span><span class="sxs-lookup"><span data-stu-id="70e99-308">This file will be dropped in the receive location as input to the adapter to start the orchestration process.</span></span>  
   
@@ -326,7 +327,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="70e99-330">![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")</span><span class="sxs-lookup"><span data-stu-id="70e99-330">![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")</span></span>  
   
-8.  <span data-ttu-id="70e99-331">单击**\<无\>**为**PeopleSoft_Port**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="70e99-331">Click **\<None\>** for **PeopleSoft_Port** in the drop-down list.</span></span>  
+8.  <span data-ttu-id="70e99-331">单击**\<无\>** 为**PeopleSoft_Port**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="70e99-331">Click **\<None\>** for **PeopleSoft_Port** in the drop-down list.</span></span>  
   
 9. <span data-ttu-id="70e99-332">选择“新建发送端口”  ，然后选择或键入以下属性值。</span><span class="sxs-lookup"><span data-stu-id="70e99-332">Select **New Send Port** and then select or type the following values for the properties.</span></span>  
   
@@ -356,7 +357,7 @@ ms.lasthandoff: 03/28/2018
   
 11. <span data-ttu-id="70e99-346">单击“确定”  两次以关闭对话框。</span><span class="sxs-lookup"><span data-stu-id="70e99-346">Click **OK** twice to close the dialog boxes.</span></span>  
   
-12. <span data-ttu-id="70e99-347">在配置 Applicationwindow 中，单击**\<无\>**为**FileOut**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="70e99-347">In the Configure Applicationwindow, click **\<None\>** for **FileOut** in the drop-down list.</span></span>  
+12. <span data-ttu-id="70e99-347">在配置 Applicationwindow 中，单击**\<无\>** 为**FileOut**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="70e99-347">In the Configure Applicationwindow, click **\<None\>** for **FileOut** in the drop-down list.</span></span>  
   
 13. <span data-ttu-id="70e99-348">选择“新建发送端口”  ，然后键入或选择以下属性值：</span><span class="sxs-lookup"><span data-stu-id="70e99-348">Select **New Send Port** and type or select the following values for the properties:</span></span>  
   
@@ -397,7 +398,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="70e99-367">![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")</span><span class="sxs-lookup"><span data-stu-id="70e99-367">![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")</span></span>  
   
-     <span data-ttu-id="70e99-368">这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。</span><span class="sxs-lookup"><span data-stu-id="70e99-368">This returned record data should match what was returned by the query against the PeopleSoft system in PeopleSoft Lab 1.</span></span> <span data-ttu-id="70e99-369">通过比较的值在中获取实验室 1 专门**地址 1**和**Address2**对中所示此处线**\<位置： 地址 1\>**和**\<位置： ADDRESS2\>** 字段，你可以验证**获取**方法正常运行。</span><span class="sxs-lookup"><span data-stu-id="70e99-369">By comparing the values you obtained in Lab 1, specifically the **Address1** and **Address2** lines, to what is shown here in the **\<LOCATION:ADDRESS1\>** and **\<LOCATION:ADDRESS2\>** fields, you can verify that the **Get** method worked properly.</span></span>  
+     <span data-ttu-id="70e99-368">这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。</span><span class="sxs-lookup"><span data-stu-id="70e99-368">This returned record data should match what was returned by the query against the PeopleSoft system in PeopleSoft Lab 1.</span></span> <span data-ttu-id="70e99-369">通过比较的值在中获取实验室 1 专门**地址 1**和**Address2**对中所示此处线**\<位置： 地址 1\>** 和**\<位置： ADDRESS2\>** 字段，你可以验证**获取**方法正常运行。</span><span class="sxs-lookup"><span data-stu-id="70e99-369">By comparing the values you obtained in Lab 1, specifically the **Address1** and **Address2** lines, to what is shown here in the **\<LOCATION:ADDRESS1\>** and **\<LOCATION:ADDRESS2\>** fields, you can verify that the **Get** method worked properly.</span></span>  
   
 ## <a name="summary"></a><span data-ttu-id="70e99-370">摘要</span><span class="sxs-lookup"><span data-stu-id="70e99-370">Summary</span></span>  
  <span data-ttu-id="70e99-371">在本实验室中，您首先验证了必备组件的设置对于访问 PeopleSoft 系统是否正确。</span><span class="sxs-lookup"><span data-stu-id="70e99-371">In this lab, you first verified that the prerequisites were set up correctly to access the PeopleSoft system.</span></span> <span data-ttu-id="70e99-372">然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。</span><span class="sxs-lookup"><span data-stu-id="70e99-372">Then you used [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to create a new BizTalk project containing an orchestration.</span></span> <span data-ttu-id="70e99-373">对 BizTalk 业务流程进行了配置，以使用 PeopleSoft 适配器获取来自 PeopleSoft 系统的数据。</span><span class="sxs-lookup"><span data-stu-id="70e99-373">You configured the BizTalk orchestration to use the PeopleSoft adapter to get data from the PeopleSoft system.</span></span> <span data-ttu-id="70e99-374">为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。</span><span class="sxs-lookup"><span data-stu-id="70e99-374">To configure the orchestration, you created send, receive, and send/receive ports.</span></span> <span data-ttu-id="70e99-375">将这些端口绑定到 PeopleSoft 适配器，并将消息分配给相应的端口。</span><span class="sxs-lookup"><span data-stu-id="70e99-375">You bound these ports to the PeopleSoft adapter, and assigned messages to the appropriate ports.</span></span>  

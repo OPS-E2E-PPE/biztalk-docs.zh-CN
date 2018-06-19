@@ -1,14 +1,14 @@
 ---
-title: "如何： 实现基于内容的路由使用消息上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 如何： 实现基于内容的路由使用消息上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 952af792-5762-4b04-9087-980bb3323568
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010118"
 ---
 # <a name="how-to-implement-content-based-routing-using-message-context-properties"></a><span data-ttu-id="7a310-102">如何： 实现基于内容的路由使用消息上下文属性</span><span class="sxs-lookup"><span data-stu-id="7a310-102">How to: Implement Content-Based Routing Using Message Context Properties</span></span>
 ## <a name="goal"></a><span data-ttu-id="7a310-103">目的</span><span class="sxs-lookup"><span data-stu-id="7a310-103">Goal</span></span>  

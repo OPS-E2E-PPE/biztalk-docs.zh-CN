@@ -1,14 +1,14 @@
 ---
-title: "配置批处理，以便提高适配器性能 |Microsoft 文档"
-ms.custom: 
+title: 配置批处理，以便提高适配器性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65589925-af94-45f1-b501-37c21618b2cf
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300381"
 ---
 # <a name="configuring-batching-to-improve-adapter-performance"></a><span data-ttu-id="766c3-102">配置批处理，以便提高适配器性能</span><span class="sxs-lookup"><span data-stu-id="766c3-102">Configuring Batching to Improve Adapter Performance</span></span>
 <span data-ttu-id="766c3-103">一个适配器处理批处理的方式可以带来明显影响性能。</span><span class="sxs-lookup"><span data-stu-id="766c3-103">The way an adapter processes a batch can have a significant effect on performance.</span></span> <span data-ttu-id="766c3-104">因为存在与每个事务相关联的固定延迟，所以，您应该通过将多个操作合并为单个批，尝试尽量减少事务的数目。</span><span class="sxs-lookup"><span data-stu-id="766c3-104">Because there is a fixed delay associated with each transaction, you should try to minimize the number of transactions by combining more than one operation into a single batch.</span></span>  

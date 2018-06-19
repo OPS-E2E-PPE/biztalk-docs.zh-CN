@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288165"
 ---
 # <a name="warning---field-data-type-mismatch"></a><span data-ttu-id="64dd9-102">警告-字段数据类型不匹配</span><span class="sxs-lookup"><span data-stu-id="64dd9-102">Warning - Field Data Type Mismatch</span></span>
 <span data-ttu-id="64dd9-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="64dd9-103">**Error Code**</span></span>  

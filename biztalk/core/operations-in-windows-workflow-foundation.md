@@ -1,14 +1,14 @@
 ---
-title: "Windows Workflow Foundation 中的操作 |Microsoft 文档"
-ms.custom: 
+title: Windows Workflow Foundation 中的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a048dfc0-26b2-4f20-9d2f-c52f1ab19ac3
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265621"
 ---
 # <a name="operations-in-windows-workflow-foundation"></a><span data-ttu-id="42b6e-102">Windows Workflow Foundation 中的操作</span><span class="sxs-lookup"><span data-stu-id="42b6e-102">Operations in Windows Workflow Foundation</span></span>
 <span data-ttu-id="42b6e-103">本部分包含 BAM WF 侦听器支持的自定义操作。</span><span class="sxs-lookup"><span data-stu-id="42b6e-103">This section contains the custom operations supported by the BAM WF interceptor.</span></span>  

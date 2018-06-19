@@ -1,11 +1,11 @@
 ---
-title: "演练： 使用 XML 信封 (Basic) |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用 XML 信封 (Basic) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - content-based routing, promoting properties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - routing, messages
 - routing, promoting properties
 ms.assetid: 02d0c596-0cfe-4bae-9f1b-d7dbc17e18a9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975748"
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a><span data-ttu-id="83ed6-102">演练： 使用 XML 信封 (Basic)</span><span class="sxs-lookup"><span data-stu-id="83ed6-102">Walkthrough: Using XML Envelopes (Basic)</span></span>
 <span data-ttu-id="83ed6-103">本示例通过实现部分虚构的错误跟踪系统来演示基本的 XML 信封拆装。</span><span class="sxs-lookup"><span data-stu-id="83ed6-103">This example demonstrates basic XML envelope disassembly by implementing part of a fictitious error-tracking system.</span></span> <span data-ttu-id="83ed6-104">该示例要满足以下条件：</span><span class="sxs-lookup"><span data-stu-id="83ed6-104">The example meets the following requirements:</span></span>  
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="83ed6-151">将根节点的名称从“Root”改为“Envelope”。</span><span class="sxs-lookup"><span data-stu-id="83ed6-151">Change the name of the root node from "Root" to "Envelope".</span></span>  
   
-4.  <span data-ttu-id="83ed6-152">现在，将该架构标记为信封架构。</span><span class="sxs-lookup"><span data-stu-id="83ed6-152">Now mark the schema as an envelope schema.</span></span> <span data-ttu-id="83ed6-153">单击**\<架构\>**节点。</span><span class="sxs-lookup"><span data-stu-id="83ed6-153">Click the **\<Schema\>** node.</span></span> <span data-ttu-id="83ed6-154">在属性窗格中，将架构引用属性设置**信封**到`OK`。</span><span class="sxs-lookup"><span data-stu-id="83ed6-154">In the Properties pane, set the schema reference property **Envelope** to `OK`.</span></span>  
+4.  <span data-ttu-id="83ed6-152">现在，将该架构标记为信封架构。</span><span class="sxs-lookup"><span data-stu-id="83ed6-152">Now mark the schema as an envelope schema.</span></span> <span data-ttu-id="83ed6-153">单击**\<架构\>** 节点。</span><span class="sxs-lookup"><span data-stu-id="83ed6-153">Click the **\<Schema\>** node.</span></span> <span data-ttu-id="83ed6-154">在属性窗格中，将架构引用属性设置**信封**到`OK`。</span><span class="sxs-lookup"><span data-stu-id="83ed6-154">In the Properties pane, set the schema reference property **Envelope** to `OK`.</span></span>  
   
 5.  <span data-ttu-id="83ed6-155">设置**正文 XPath**属性。</span><span class="sxs-lookup"><span data-stu-id="83ed6-155">Set the **Body XPath** property.</span></span> <span data-ttu-id="83ed6-156">若要执行此操作，请单击**信封**节点。</span><span class="sxs-lookup"><span data-stu-id="83ed6-156">To do this, click the **Envelope** node.</span></span> <span data-ttu-id="83ed6-157">在属性窗口中，单击省略号 (**...**) 按钮**正文 XPath**属性中，选择**信封**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="83ed6-157">In the Properties window, click the ellipsis (**...**) button in the **Body XPath** property, select **Envelope**, and then click **OK**.</span></span>  
   

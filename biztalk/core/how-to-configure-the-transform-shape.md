@@ -1,17 +1,17 @@
 ---
-title: "如何配置转换形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置转换形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Orchestration Designer], Transform shape
 - Transform shape [Orchestration Designer]
 ms.assetid: ca81d153-77a6-4bcc-b14f-8f48469fffe0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972131"
 ---
 # <a name="how-to-configure-the-transform-shape"></a><span data-ttu-id="d7eb8-102">如何配置转换形状</span><span class="sxs-lookup"><span data-stu-id="d7eb8-102">How to Configure the Transform Shape</span></span>
 <span data-ttu-id="d7eb8-103">![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")</span><span class="sxs-lookup"><span data-stu-id="d7eb8-103">![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="d7eb8-126">如果你选择**现有映射**，单击中的向下箭头**名称**字段来选择要使用的映射文件。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-126">If you selected **Existing Map**, click the Down arrow in the **Name** field to select which map file to use.</span></span> <span data-ttu-id="d7eb8-127">此列表框会显示该项目中可用的所有现有映射的列表（按字母顺序排序）。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-127">This list box displays an alphabetically sorted list of all the existing maps available in the project.</span></span> <span data-ttu-id="d7eb8-128">在此列表中，如果您单击文本\<从引用的程序集选择\>、**选择项目类型**对话框随即显示。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-128">In this list, if you click the text \<Select from referenced assembly\>, the **Select Artifact Type** dialog box is displayed.</span></span> <span data-ttu-id="d7eb8-129">它使可选择的详细信息，请参阅[如何使用选择项目类型对话框中](../core/how-to-use-the-select-artifact-type-dialog-box.md)。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-129">For more information about the selections it makes available, see [How to Use the Select Artifact Type Dialog Box](../core/how-to-use-the-select-artifact-type-dialog-box.md).</span></span>  
   
 ### <a name="select-source-and-destination-messages"></a><span data-ttu-id="d7eb8-130">选择源消息和目标消息</span><span class="sxs-lookup"><span data-stu-id="d7eb8-130">Select Source and Destination Messages</span></span>  
- <span data-ttu-id="d7eb8-131">使用这一部分**转换配置**对话框可以配置在所选的映射**新建/现有映射文件？**部分。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-131">Use this part of the **Transform Configuration** dialog box to configure the map you selected in the **New/Existing Map File?** section.</span></span> <span data-ttu-id="d7eb8-132">如果你选择**新图**在该部分中，创建该图通过将其配置在本部分中。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-132">If you selected **New Map** in that section, you create that map by configuring it in this section.</span></span>  
+ <span data-ttu-id="d7eb8-131">使用这一部分**转换配置**对话框可以配置在所选的映射**新建/现有映射文件？** 部分。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-131">Use this part of the **Transform Configuration** dialog box to configure the map you selected in the **New/Existing Map File?** section.</span></span> <span data-ttu-id="d7eb8-132">如果你选择**新图**在该部分中，创建该图通过将其配置在本部分中。</span><span class="sxs-lookup"><span data-stu-id="d7eb8-132">If you selected **New Map** in that section, you create that map by configuring it in this section.</span></span>  
   
  <span data-ttu-id="d7eb8-133">如果你选择**现有映射**，你可以使用本部分执行两个操作之一：</span><span class="sxs-lookup"><span data-stu-id="d7eb8-133">If you selected **Existing Map**, you can use this section to do one of two things:</span></span>  
   

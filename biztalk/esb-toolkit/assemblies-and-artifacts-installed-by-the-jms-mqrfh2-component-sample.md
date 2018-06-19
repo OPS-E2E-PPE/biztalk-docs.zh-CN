@@ -1,14 +1,14 @@
 ---
-title: "程序集和项目由 JMS MQRFH2 组件示例安装 |Microsoft 文档"
-ms.custom: 
+title: 程序集和项目由 JMS MQRFH2 组件示例安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 270d4442-ffcc-45fc-a326-3975f2440bf2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009486"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-jms-mqrfh2-component-sample"></a><span data-ttu-id="c2cb5-102">程序集和项目安装 JMS MQRFH2 组件示例</span><span class="sxs-lookup"><span data-stu-id="c2cb5-102">Assemblies and Artifacts Installed by the JMS MQRFH2 Component Sample</span></span>
 <span data-ttu-id="c2cb5-103">下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]JMS MQRFH2 组件示例。</span><span class="sxs-lookup"><span data-stu-id="c2cb5-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 Component sample.</span></span>  

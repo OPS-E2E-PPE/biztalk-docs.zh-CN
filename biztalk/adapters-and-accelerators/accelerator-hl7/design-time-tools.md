@@ -1,11 +1,11 @@
 ---
-title: "设计时工具 |Microsoft 文档"
-ms.custom: 
+title: 设计时工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Adapter Framework
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - design-time tools
 - Orchestration Designer
 ms.assetid: 709bd782-d2ad-49be-ba33-e957eba2a0cc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005046"
 ---
 # <a name="design-time-tools"></a><span data-ttu-id="4eb6b-102">设计时工具</span><span class="sxs-lookup"><span data-stu-id="4eb6b-102">Design Time Tools</span></span>
 <span data-ttu-id="4eb6b-103">开发人员处理[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 具有一套 BizTalk Server 中内置的设计时工具使用。</span><span class="sxs-lookup"><span data-stu-id="4eb6b-103">Developers working on [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) have the use of a set of design time tools built into BizTalk Server.</span></span> <span data-ttu-id="4eb6b-104">这些工具集成到[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="4eb6b-104">These tools are integrated into [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="4eb6b-105">有关详细信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]工具，请参阅[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 帮助。</span><span class="sxs-lookup"><span data-stu-id="4eb6b-105">For more information about [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] tools, see [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server Help.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "定义消息修复和新提交数据的自定义 BAM 视图 |Microsoft 文档"
-ms.custom: 
+title: 定义消息修复和新提交数据的自定义 BAM 视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views
 - Message Repair and New Submission, BAM views
 ms.assetid: 76a6e78d-9b11-4b43-a500-a9d7666ee468
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006814"
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a><span data-ttu-id="5a971-102">定义消息修复和新提交数据的自定义 BAM 视图</span><span class="sxs-lookup"><span data-stu-id="5a971-102">Defining a Custom BAM View for Message Repair and New Submission Data</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="5a971-103">安装程序提供定义的业务活动和业务视图的 BAM 定义文件。</span><span class="sxs-lookup"><span data-stu-id="5a971-103"> Setup provides a BAM definition file that defines a business activity and a business view.</span></span> <span data-ttu-id="5a971-104">你可以部署的 BAM 定义文件要使用该视图，或者可以创建自定义视图，你可以将它们添加到 BAM 定义文件。</span><span class="sxs-lookup"><span data-stu-id="5a971-104">You can deploy the BAM definition file to use that view, or you can create a custom view that you can add to the BAM definition file.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置发布服务元数据绑定到业务流程端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置发布服务元数据绑定到业务流程端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, metadata
 - orchestrations, WCF services
 ms.assetid: 04ccce9f-8d18-433a-8299-d06fa155db06
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975043"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a><span data-ttu-id="6333c-102">如何使用 BizTalk WCF 服务发布向导为已绑定到业务流程端口的 WCF 接收位置发布服务元数据</span><span class="sxs-lookup"><span data-stu-id="6333c-102">How to Use the BizTalk WCF Service Publishing Wizard to Publish Service Metadata for a WCF Receive Location Bound to an Orchestration Port</span></span>
 <span data-ttu-id="6333c-103">您可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为已绑定到业务流程端口的现有 WCF 接收位置发布服务元数据。</span><span class="sxs-lookup"><span data-stu-id="6333c-103">You use the BizTalk WCF Service Publishing Wizard to create a WCF service to publish service metadata for existing WCF receive locations bound to orchestration ports.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="6333c-112">上**BizTalk WCF 服务发布向导欢迎**页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="6333c-112">On the **Welcome to the BizTalk WCF Service Publishing Wizard** page, click **Next**.</span></span>  
   
-3.  <span data-ttu-id="6333c-113">上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)**选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。</span><span class="sxs-lookup"><span data-stu-id="6333c-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
+3.  <span data-ttu-id="6333c-113">上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)** 选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。</span><span class="sxs-lookup"><span data-stu-id="6333c-113">On the **WCF Service Type** page, select the **Metdata only endpoint (MEX)** option to publish the WCF services to provide service metadata for the WCF receive location that you will select in the next step.</span></span>  
   
      <span data-ttu-id="6333c-114">![WCF 服务类型页](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span><span class="sxs-lookup"><span data-stu-id="6333c-114">![WCF Service Type page](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="6333c-117">![创建 WCF 服务页](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")</span><span class="sxs-lookup"><span data-stu-id="6333c-117">![Create WCF Service page](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")</span></span>  
   
-6.  <span data-ttu-id="6333c-118">上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布服务元数据，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="6333c-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, type the name of the BizTalk assembly file or click **Browse** to browse to the assembly containing the orchestration(s) to publish service metadata for, and then click **Next**.</span></span>  
+6.  <span data-ttu-id="6333c-118">上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布服务元数据，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="6333c-118">On the **BizTalk Assembly** page, in the **BizTalk assembly file (\*.dll)** text box, type the name of the BizTalk assembly file or click **Browse** to browse to the assembly containing the orchestration(s) to publish service metadata for, and then click **Next**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="6333c-119">在选择 BizTalk 程序集文件之前, 将所有依赖程序集复制到同一文件夹中，与 BizTalk 程序集或安装到全局程序集缓存 (GAC 中) 的依赖程序集。</span><span class="sxs-lookup"><span data-stu-id="6333c-119">Before selecting a BizTalk assembly file, copy all of the dependent assemblies into the same folder with the BizTalk assembly or install the dependent assemblies to the global assembly cache (GAC).</span></span>  

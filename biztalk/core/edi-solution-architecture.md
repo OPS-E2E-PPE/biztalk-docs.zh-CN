@@ -1,14 +1,14 @@
 ---
-title: "EDI 解决方案体系结构 |Microsoft 文档"
-ms.custom: 
+title: EDI 解决方案体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55709a89-7706-4c64-ada3-16951951c943
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239877"
 ---
 # <a name="edi-solution-architecture"></a><span data-ttu-id="2327c-102">EDI 解决方案体系结构</span><span class="sxs-lookup"><span data-stu-id="2327c-102">EDI Solution Architecture</span></span>
 <span data-ttu-id="2327c-103">电子数据交换 (EDI) 是业务实体以电子方式交换数据的最常见方式之一。</span><span class="sxs-lookup"><span data-stu-id="2327c-103">Electronic Data Interchange (EDI) is one of the most prevalent means by which business entities exchange data electronically.</span></span> <span data-ttu-id="2327c-104">使用 EDI 必须了解消息语法和标准（包括 ANSI X12 和 UN/EDIFACT）、消息传送协议以及传输。</span><span class="sxs-lookup"><span data-stu-id="2327c-104">EDI usage entails message syntax and standards (including ANSI X12 and UN/EDIFACT), messaging protocol, and transports.</span></span> <span data-ttu-id="2327c-105">以下是 EDI 消息传送的一些特性：</span><span class="sxs-lookup"><span data-stu-id="2327c-105">The following are characteristics of EDI messaging:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "维护 BizTalk Server 数据库的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 维护 BizTalk Server 数据库的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93333f41-ee83-4b64-b381-66584a7d5551
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299997"
 ---
 # <a name="best-practices-for-maintaining-biztalk-server-databases"></a><span data-ttu-id="91bbf-102">用于维护 BizTalk Server 数据库的最佳方案</span><span class="sxs-lookup"><span data-stu-id="91bbf-102">Best Practices for Maintaining BizTalk Server Databases</span></span>
 <span data-ttu-id="91bbf-103">本主题列出了用于维护的一些最佳做法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。</span><span class="sxs-lookup"><span data-stu-id="91bbf-103">This topic lists some best practices for maintaining [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "导出 Bindings6 |Microsoft 文档"
-ms.custom: 
+title: 导出 Bindings6 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exporting
 - exporting, bindings
 ms.assetid: 052a429e-3237-44d4-8933-00aa5edfb212
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246277"
 ---
 # <a name="exporting-bindings"></a><span data-ttu-id="27c15-102">导出绑定</span><span class="sxs-lookup"><span data-stu-id="27c15-102">Exporting Bindings</span></span>
 <span data-ttu-id="27c15-103">本部分中的主题介绍如何导出 BizTalk 组、 程序集，或到一个.xml 文件的应用程序的绑定。</span><span class="sxs-lookup"><span data-stu-id="27c15-103">The topics in this section describe how to export bindings for a BizTalk group, assembly, or application into an .xml file.</span></span> <span data-ttu-id="27c15-104">(绑定定义主机，发送端口将端口组的发送、 接收端口，则接收位置，各方都与业务流程、 管道、 映射和架构相关联。)您然后可以从.xml 文件到另一个组或应用程序来导入绑定。</span><span class="sxs-lookup"><span data-stu-id="27c15-104">(Bindings define how hosts, send ports, send port groups, receive ports, receive locations, parties are associated with orchestrations, pipelines, maps, and schemas.) You can then import the bindings from the .xml file into another group or application.</span></span> <span data-ttu-id="27c15-105">导入绑定将覆盖任何现有组或应用程序中的相同名称的绑定。</span><span class="sxs-lookup"><span data-stu-id="27c15-105">Importing bindings overwrites any existing bindings of the same name in the group or application.</span></span> <span data-ttu-id="27c15-106">你还可以向应用程序，不会覆盖现有绑定添加绑定。</span><span class="sxs-lookup"><span data-stu-id="27c15-106">You can also add bindings to an application, which does not overwrite existing bindings.</span></span> <span data-ttu-id="27c15-107">在导入应用程序之前，你添加的绑定不会生效。</span><span class="sxs-lookup"><span data-stu-id="27c15-107">The bindings that you add do not take effect until you import the application.</span></span>  

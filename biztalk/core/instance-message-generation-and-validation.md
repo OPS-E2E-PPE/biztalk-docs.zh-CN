@@ -1,14 +1,14 @@
 ---
-title: "实例消息生成和验证 |Microsoft 文档"
-ms.custom: 
+title: 实例消息生成和验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7a306846-3942-4ba1-a74e-6ead8deb0322
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257981"
 ---
 # <a name="instance-message-generation-and-validation"></a><span data-ttu-id="6cefd-102">实例消息的生成和验证</span><span class="sxs-lookup"><span data-stu-id="6cefd-102">Instance Message Generation and Validation</span></span>
 <span data-ttu-id="6cefd-103">在验证架构之后，可以使用该架构来生成示例实例消息。</span><span class="sxs-lookup"><span data-stu-id="6cefd-103">After you have validated a schema, you can use it to generate a sample instance message.</span></span> <span data-ttu-id="6cefd-104">生成的示例实例消息包含该架构指定的元素和属性结构，并生成必需的虚设数据。</span><span class="sxs-lookup"><span data-stu-id="6cefd-104">The sample instance message that is generated contains the element and attribute structure specified by the schema, and generate fake data where required.</span></span>  

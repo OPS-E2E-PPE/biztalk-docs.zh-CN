@@ -1,14 +1,14 @@
 ---
-title: "如何配置密码同步适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何配置密码同步适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0effdc9b-4aee-4674-90c5-03dfd7cc4cd6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247349"
 ---
 # <a name="how-to-configure-a-password-sync-adapter"></a><span data-ttu-id="0dd79-102">如何配置密码同步适配器</span><span class="sxs-lookup"><span data-stu-id="0dd79-102">How to Configure a Password Sync Adapter</span></span>
 <span data-ttu-id="0dd79-103">创建完密码同步适配器之后，必须将该适配器加载到系统中。</span><span class="sxs-lookup"><span data-stu-id="0dd79-103">After you have finished creating your password sync adapter, you must load your adapter on to a system.</span></span> <span data-ttu-id="0dd79-104">此外，还必须通知企业单一登录 (ENTSSO) 和配置存储，您的应用程序是一个密码同步适配器。</span><span class="sxs-lookup"><span data-stu-id="0dd79-104">Additionally, you must inform Enterprise Single Sign-On (ENTSSO) and the configuration store that your application is a password sync adapter.</span></span> <span data-ttu-id="0dd79-105">必须将注册配置存储区出于安全目的： 你的适配器将请求更新密码和其他凭据。</span><span class="sxs-lookup"><span data-stu-id="0dd79-105">You must register with the configuration store for security purposes: your adapter will request updates to passwords and other credentials.</span></span> <span data-ttu-id="0dd79-106">因此，ENTSSO 必须知道允许给定的适配器请求此类权限。</span><span class="sxs-lookup"><span data-stu-id="0dd79-106">Therefore, ENTSSO must know that a given adapter is allowed to ask for such permissions.</span></span>  

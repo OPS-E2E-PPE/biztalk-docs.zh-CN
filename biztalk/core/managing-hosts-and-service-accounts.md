@@ -1,11 +1,11 @@
 ---
-title: "管理主机和服务帐户 |Microsoft 文档"
-ms.custom: 
+title: 管理主机和服务帐户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, managing
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows groups, managing
 - user accounts, managing
 ms.assetid: 25797571-f1f9-42a4-8fff-5b03076bbe36
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262381"
 ---
 # <a name="managing-hosts-and-service-accounts"></a><span data-ttu-id="70a1f-102">管理主机和服务帐户</span><span class="sxs-lookup"><span data-stu-id="70a1f-102">Managing Hosts and Service Accounts</span></span>
 <span data-ttu-id="70a1f-103">配置 BizTalk Server 后，必须对 Windows 组和用户帐户进行管理。</span><span class="sxs-lookup"><span data-stu-id="70a1f-103">After you configure BizTalk Server, you must manage Windows groups and user accounts.</span></span> <span data-ttu-id="70a1f-104">本部分提供有关如何管理 BizTalk Server 中的这些帐户的信息。</span><span class="sxs-lookup"><span data-stu-id="70a1f-104">This section provides information about how to manage these accounts for BizTalk Server.</span></span>  

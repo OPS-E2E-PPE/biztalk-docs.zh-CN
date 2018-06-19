@@ -1,11 +1,11 @@
 ---
-title: "模板 （应用程序部署示例） |Microsoft 文档"
-ms.custom: 
+title: 模板 （应用程序部署示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, deploying
 ms.assetid: 7e77ff8e-b2bc-4d38-b5fd-329d6d54221f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975011"
 ---
 # <a name="template-application-deployment-sample"></a><span data-ttu-id="1424e-102">模板（应用程序部署示例）</span><span class="sxs-lookup"><span data-stu-id="1424e-102">Template (Application Deployment Sample)</span></span>
 <span data-ttu-id="1424e-103">本主题介绍如何使用“模板”示例来进行应用程序部署。</span><span class="sxs-lookup"><span data-stu-id="1424e-103">This topic describes how to use the Template sample for application deployment.</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="1424e-131">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="1424e-131">Where to Find This Sample</span></span>  
  <span data-ttu-id="1424e-132">示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹，，如下所示：</span><span class="sxs-lookup"><span data-stu-id="1424e-132">The sample is located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation folder, as follows:</span></span>  
   
- <span data-ttu-id="1424e-133">*\<示例路径\>*\Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="1424e-133">*\<Samples Path\>*\Application Deployment\Template</span></span>  
+ <span data-ttu-id="1424e-133">*\<示例路径\>* \Application Deployment\Template</span><span class="sxs-lookup"><span data-stu-id="1424e-133">*\<Samples Path\>* \Application Deployment\Template</span></span>  
   
  <span data-ttu-id="1424e-134">如前所述，本示例包括下列两个文件：</span><span class="sxs-lookup"><span data-stu-id="1424e-134">As previously mentioned, the sample includes the following two files:</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="1424e-143">例如：</span><span class="sxs-lookup"><span data-stu-id="1424e-143">Example:</span></span>  
   
-     <span data-ttu-id="1424e-144">设置日志文件 ="*\<示例路径\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="1424e-144">set LogFile="*\<Samples Path\>*\ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
+     <span data-ttu-id="1424e-144">设置日志文件 ="*\<示例路径\>* \ApplicationDeployment\Templates\SampleLogOut.txt"</span><span class="sxs-lookup"><span data-stu-id="1424e-144">set LogFile="*\<Samples Path\>* \ApplicationDeployment\Templates\SampleLogOut.txt"</span></span>  
   
 ### <a name="to-create-a-new-application"></a><span data-ttu-id="1424e-145">新建应用程序</span><span class="sxs-lookup"><span data-stu-id="1424e-145">To create a new application</span></span>  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="1424e-175">在 BizTalk Server 管理控制台中，右键单击**应用程序**，指向**导入**，然后单击**MSI 文件**。</span><span class="sxs-lookup"><span data-stu-id="1424e-175">In the BizTalk Server Administration console, right-click **Applications**, point to **Import**, and then click **MSI file**.</span></span>  
   
-2.  <span data-ttu-id="1424e-176">在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="1424e-177">如果有必要，则可以浏览的 MSI 文件通过单击**（…）**按钮。</span><span class="sxs-lookup"><span data-stu-id="1424e-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
+2.  <span data-ttu-id="1424e-176">在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1424e-176">On the Welcome to the Import Wizard page, in **MSI file to import**, type the path of the .msi file that you previously exported, and then click **Next**.</span></span> <span data-ttu-id="1424e-177">如果有必要，则可以浏览的 MSI 文件通过单击 **（…）** 按钮。</span><span class="sxs-lookup"><span data-stu-id="1424e-177">If necessary, you can browse for the MSI file by clicking the **(….)** button.</span></span>  
   
 3.  <span data-ttu-id="1424e-178">在应用程序设置页上，在**应用程序名称**下拉列表中，选择应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="1424e-178">On the Application Settings page, in the **Application name** drop-down list, select the application name.</span></span>  
   

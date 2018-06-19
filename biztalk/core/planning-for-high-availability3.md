@@ -1,11 +1,11 @@
 ---
-title: "规划高 Availability3 |Microsoft 文档"
-ms.custom: 
+title: 规划高 Availability3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, high availability
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - planning, high availability
 - high availability, architecture
 ms.assetid: 16feada0-b0b1-4e58-9477-fbd1aae2f51e
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264341"
 ---
 # <a name="planning-for-high-availability"></a><span data-ttu-id="59850-102">规划高可用性</span><span class="sxs-lookup"><span data-stu-id="59850-102">Planning for High Availability</span></span>
 <span data-ttu-id="59850-103">许多公司都使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来处理其业务所依赖的数据。</span><span class="sxs-lookup"><span data-stu-id="59850-103">Many companies use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to process data that their business depends on.</span></span> <span data-ttu-id="59850-104">对于这些公司，由硬件停用所导致的延长故障时间将意味着工作效率和盈利率的降低。</span><span class="sxs-lookup"><span data-stu-id="59850-104">For these companies, the consequences of a prolonged downtime because of a hardware outage can mean diminished productivity and profitability.</span></span> <span data-ttu-id="59850-105">本节提供有关提高 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境的可用性以最大程度地延长 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案运行时间的指南。</span><span class="sxs-lookup"><span data-stu-id="59850-105">This section provides guidance for increasing availability of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment in order to maximize uptime of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  

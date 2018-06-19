@@ -1,11 +1,11 @@
 ---
-title: "错误处理 |Microsoft 文档"
-ms.custom: 
+title: 错误处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Messaging Engine, errors
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - errors, messages
 - messages, errors
 ms.assetid: ebc889cc-eeac-483c-baf3-407a218f6d14
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242613"
 ---
 # <a name="error-handling"></a><span data-ttu-id="de6fd-102">错误处理</span><span class="sxs-lookup"><span data-stu-id="de6fd-102">Error Handling</span></span>
 <span data-ttu-id="de6fd-103">消息通过 BizTalk Server 消息传送子系统时所遵循的路径包含多个处理点和传输点。</span><span class="sxs-lookup"><span data-stu-id="de6fd-103">The pathway that a message follows through the BizTalk Server messaging subsystem encompasses several points of processing and transfer.</span></span> <span data-ttu-id="de6fd-104">在该路径上的每个点，BizTalk Server 基础结构和应用程序提供的元素（例如自定义管道组件和业务流程）中都有可能出现失败。</span><span class="sxs-lookup"><span data-stu-id="de6fd-104">At each point along this pathway, failures can occur in both BizTalk Server infrastructure and application-provided elements such as custom pipeline components and orchestrations.</span></span>  

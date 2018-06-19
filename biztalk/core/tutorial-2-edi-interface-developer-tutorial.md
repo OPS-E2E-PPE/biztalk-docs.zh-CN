@@ -1,14 +1,14 @@
 ---
-title: "教程 2: EDI 接口开发人员教程 |Microsoft 文档"
-ms.custom: 
+title: '教程 2: EDI 接口开发人员教程 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d10fb650-cbb9-41e5-a80d-06afd0513814
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286941"
 ---
 # <a name="tutorial-2-edi-interface-developer-tutorial"></a><span data-ttu-id="d334e-102">教程 2: EDI 接口开发人员教程</span><span class="sxs-lookup"><span data-stu-id="d334e-102">Tutorial 2: EDI Interface Developer Tutorial</span></span>
 <span data-ttu-id="d334e-103">本教程演示如何使用接口开发人员 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 EDI 功能。</span><span class="sxs-lookup"><span data-stu-id="d334e-103">This tutorial demonstrates how to use the EDI functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in an Interface Developer scenario.</span></span>  

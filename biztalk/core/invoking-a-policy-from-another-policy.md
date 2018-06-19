@@ -1,14 +1,14 @@
 ---
-title: "调用来自另一个策略的策略 |Microsoft 文档"
-ms.custom: 
+title: 调用来自另一个策略的策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5bf658a-02a1-426a-abe5-8c9de673cf0d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973555"
 ---
 # <a name="invoking-a-policy-from-another-policy"></a><span data-ttu-id="95309-102">从其他策略调用策略</span><span class="sxs-lookup"><span data-stu-id="95309-102">Invoking a Policy from Another Policy</span></span>
 <span data-ttu-id="95309-103">您可以通过使用以下方式之一从其他策略（父策略）调用策略（子策略）：</span><span class="sxs-lookup"><span data-stu-id="95309-103">You can invoke a policy (child) from another policy (parent) by using one of the following methods:</span></span>  
@@ -35,15 +36,15 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-add-the-policyexecute-method-as-an-action-to-a-policy"></a><span data-ttu-id="95309-113">将 Policy.Execute 方法作为操作添加到某一策略</span><span class="sxs-lookup"><span data-stu-id="95309-113">To add the Policy.Execute method as an action to a policy</span></span>  
   
-1.  <span data-ttu-id="95309-114">在事实浏览器窗口中，单击**.NET 类**选项卡。</span><span class="sxs-lookup"><span data-stu-id="95309-114">In the Facts Explorer window, click the **.NET Classes** tab.</span></span>  
+1.  <span data-ttu-id="95309-114">在事实浏览器窗口中，单击 **.NET 类**选项卡。</span><span class="sxs-lookup"><span data-stu-id="95309-114">In the Facts Explorer window, click the **.NET Classes** tab.</span></span>  
   
-2.  <span data-ttu-id="95309-115">右键单击**.NET 程序集**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="95309-115">Right-click **.NET Assemblies**, and then click **Browse**.</span></span>  
+2.  <span data-ttu-id="95309-115">右键单击 **.NET 程序集**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="95309-115">Right-click **.NET Assemblies**, and then click **Browse**.</span></span>  
   
-3.  <span data-ttu-id="95309-116">选择**Microsoft.RuleEngine**从**.NET 程序集**列表，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="95309-116">Select **Microsoft.RuleEngine** from the **.NET Assemblies** list, and then click **OK**.</span></span>  
+3.  <span data-ttu-id="95309-116">选择**Microsoft.RuleEngine**从 **.NET 程序集**列表，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="95309-116">Select **Microsoft.RuleEngine** from the **.NET Assemblies** list, and then click **OK**.</span></span>  
   
 4.  <span data-ttu-id="95309-117">展开**策略**。</span><span class="sxs-lookup"><span data-stu-id="95309-117">Expand **Policy**.</span></span>  
   
-5.  <span data-ttu-id="95309-118">拖动**Execute （对象事实）**或**Execute （对象事实，IRuleSetTrackingInterceptor trackingInterceptor）**到然后窗格。</span><span class="sxs-lookup"><span data-stu-id="95309-118">Drag **Execute(Object facts)** or **Execute(Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** to the THEN pane.</span></span>  
+5.  <span data-ttu-id="95309-118">拖动**Execute （对象事实）** 或**Execute （对象事实，IRuleSetTrackingInterceptor trackingInterceptor）** 到然后窗格。</span><span class="sxs-lookup"><span data-stu-id="95309-118">Drag **Execute(Object facts)** or **Execute(Object facts, IRuleSetTrackingInterceptor trackingInterceptor)** to the THEN pane.</span></span>  
   
 6.  <span data-ttu-id="95309-119">单击**XML 架构**节点。</span><span class="sxs-lookup"><span data-stu-id="95309-119">Click the **XML Schemas** node.</span></span>  
   
@@ -54,11 +55,11 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="95309-123">选择你想要将一个事实中，作为传递，然后单击的 XML 文档的架构**打开**。</span><span class="sxs-lookup"><span data-stu-id="95309-123">Select the schema for the XML document you want to pass as a fact, and then click **Open**.</span></span>  
   
-9. <span data-ttu-id="95309-124">拖动*\<架构名称\>*到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。</span><span class="sxs-lookup"><span data-stu-id="95309-124">Drag *\<Schema name\>*.xsd to the first argument of the **Policy.Execute** method to pass the XML document that is passed to the parent policy as a fact to the child policy.</span></span>  
+9. <span data-ttu-id="95309-124">拖动*\<架构名称\>* 到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。</span><span class="sxs-lookup"><span data-stu-id="95309-124">Drag *\<Schema name\>*.xsd to the first argument of the **Policy.Execute** method to pass the XML document that is passed to the parent policy as a fact to the child policy.</span></span>  
   
 10. <span data-ttu-id="95309-125">如果你使用**执行**方法不采用**IRuleSetTrackingInterceptor**作为第二个自变量，跳过以下步骤。</span><span class="sxs-lookup"><span data-stu-id="95309-125">If you use the **Execute** method that does not take the **IRuleSetTrackingInterceptor** as the second argument, skip the following steps.</span></span>  
   
-11. <span data-ttu-id="95309-126">单击**.NET 类**选项卡。</span><span class="sxs-lookup"><span data-stu-id="95309-126">Click the **.NET Classes** tab.</span></span>  
+11. <span data-ttu-id="95309-126">单击 **.NET 类**选项卡。</span><span class="sxs-lookup"><span data-stu-id="95309-126">Click the **.NET Classes** tab.</span></span>  
   
 12. <span data-ttu-id="95309-127">拖动**DebugTrackingInterceptor**中**Microsoft.RuleEngine**到的第二个参数**Policy.Execute**方法。</span><span class="sxs-lookup"><span data-stu-id="95309-127">Drag **DebugTrackingInterceptor** in **Microsoft.RuleEngine** to the second argument of the **Policy.Execute** method.</span></span>  
   

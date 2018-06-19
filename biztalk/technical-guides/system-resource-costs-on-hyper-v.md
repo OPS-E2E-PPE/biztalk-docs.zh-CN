@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009422"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a><span data-ttu-id="b886e-102">HYPER-V 上的系统资源成本</span><span class="sxs-lookup"><span data-stu-id="b886e-102">System Resource Costs on Hyper-V</span></span>
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a><span data-ttu-id="b886e-103">与 HYPER-V 上运行来宾操作系统的系统资源成本</span><span class="sxs-lookup"><span data-stu-id="b886e-103">System Resource Costs Associated with Running a Guest Operating System on Hyper-V</span></span>  
@@ -142,7 +143,7 @@ ms.lasthandoff: 03/28/2018
 |<span data-ttu-id="b886e-287">每秒写入 I/o</span><span class="sxs-lookup"><span data-stu-id="b886e-287">Write I/Os per second</span></span>|<span data-ttu-id="b886e-288">89.00</span><span class="sxs-lookup"><span data-stu-id="b886e-288">89.00</span></span>|<span data-ttu-id="b886e-289">82.87</span><span class="sxs-lookup"><span data-stu-id="b886e-289">82.87</span></span>|<span data-ttu-id="b886e-290">93.11%</span><span class="sxs-lookup"><span data-stu-id="b886e-290">93.11%</span></span>|  
 |<span data-ttu-id="b886e-291">总 Mb / 秒</span><span class="sxs-lookup"><span data-stu-id="b886e-291">Total MBs per second</span></span>|<span data-ttu-id="b886e-292">0.53</span><span class="sxs-lookup"><span data-stu-id="b886e-292">0.53</span></span>|<span data-ttu-id="b886e-293">0.49</span><span class="sxs-lookup"><span data-stu-id="b886e-293">0.49</span></span>|<span data-ttu-id="b886e-294">92.45%</span><span class="sxs-lookup"><span data-stu-id="b886e-294">92.45%</span></span>|  
 |<span data-ttu-id="b886e-295">平均读取响应时间 （毫秒）</span><span class="sxs-lookup"><span data-stu-id="b886e-295">Average read response time (ms)</span></span>|<span data-ttu-id="b886e-296">5.4066</span><span class="sxs-lookup"><span data-stu-id="b886e-296">5.4066</span></span>|<span data-ttu-id="b886e-297">5.7797</span><span class="sxs-lookup"><span data-stu-id="b886e-297">5.7797</span></span>|<span data-ttu-id="b886e-298">93.54%</span><span class="sxs-lookup"><span data-stu-id="b886e-298">93.54%</span></span>|  
-|<span data-ttu-id="b886e-299">平均写入响应时间 （毫秒）</span><span class="sxs-lookup"><span data-stu-id="b886e-299">Average write response time (ms)</span></span>|<span data-ttu-id="b886e-300">0.2544</span><span class="sxs-lookup"><span data-stu-id="b886e-300">0.2544</span></span>|<span data-ttu-id="b886e-301">0.3716</span><span class="sxs-lookup"><span data-stu-id="b886e-301">0.3716</span></span>|<span data-ttu-id="b886e-302">68.42%**注意：**虽然的传递磁盘平均写入响应时间的相对性能已 68.42%的物理磁盘的性能，传递磁盘的平均写入响应时间为仍很好地内建立可接受的限制的 10 毫秒。</span><span class="sxs-lookup"><span data-stu-id="b886e-302">68.42% **Note:**  Although the relative performance of the pass through disks for Average write response time was 68.42% of the performance of physical disks, the Average write response time of the passthrough disks was still well within established acceptable limits of 10 ms.</span></span>|  
+|<span data-ttu-id="b886e-299">平均写入响应时间 （毫秒）</span><span class="sxs-lookup"><span data-stu-id="b886e-299">Average write response time (ms)</span></span>|<span data-ttu-id="b886e-300">0.2544</span><span class="sxs-lookup"><span data-stu-id="b886e-300">0.2544</span></span>|<span data-ttu-id="b886e-301">0.3716</span><span class="sxs-lookup"><span data-stu-id="b886e-301">0.3716</span></span>|<span data-ttu-id="b886e-302">68.42%**注意：** 虽然的传递磁盘平均写入响应时间的相对性能已 68.42%的物理磁盘的性能，传递磁盘的平均写入响应时间为仍很好地内建立可接受的限制的 10 毫秒。</span><span class="sxs-lookup"><span data-stu-id="b886e-302">68.42% **Note:**  Although the relative performance of the pass through disks for Average write response time was 68.42% of the performance of physical disks, the Average write response time of the passthrough disks was still well within established acceptable limits of 10 ms.</span></span>|  
 |<span data-ttu-id="b886e-303">平均 I/O 响应时间 （毫秒）</span><span class="sxs-lookup"><span data-stu-id="b886e-303">Average I/O response time (ms)</span></span>|<span data-ttu-id="b886e-304">3.7066</span><span class="sxs-lookup"><span data-stu-id="b886e-304">3.7066</span></span>|<span data-ttu-id="b886e-305">3.9904</span><span class="sxs-lookup"><span data-stu-id="b886e-305">3.9904</span></span>|<span data-ttu-id="b886e-306">93.89%</span><span class="sxs-lookup"><span data-stu-id="b886e-306">93.89%</span></span>|  
   
 > [!NOTE]  

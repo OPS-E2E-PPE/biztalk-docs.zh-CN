@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 主机的高可用性 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 主机的高可用性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3153f7f7-7e82-4b0c-9b48-e9f871de285d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009990"
 ---
 # <a name="high-availability-for-biztalk-hosts"></a><span data-ttu-id="5bf15-102">BizTalk 主机的高可用性</span><span class="sxs-lookup"><span data-stu-id="5bf15-102">High Availability for BizTalk Hosts</span></span>
 <span data-ttu-id="5bf15-103">BizTalk Server 提供极其灵活地寻址高可用性，因为你可以将多个巧妙布局专用逻辑主机运行的功能，如接收和发送消息或处理的业务流程，可以在物理上是特定区域部署到多个服务器。</span><span class="sxs-lookup"><span data-stu-id="5bf15-103">BizTalk Server provides great flexibility in addressing high availability because you can strategically dedicate logical hosts to run specific areas of functionality, such as receiving and sending messages or processing orchestrations, that can be physically deployed to multiple servers.</span></span>  

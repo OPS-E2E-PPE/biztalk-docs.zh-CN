@@ -1,14 +1,14 @@
 ---
-title: "无法获取绑定类型绑定扩展 |Microsoft 文档"
-ms.custom: 
+title: 无法获取绑定类型绑定扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a7cfc81-7439-48f9-8cac-42b2419ecd9d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973763"
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a><span data-ttu-id="2565a-102">无法获取绑定扩展的绑定类型</span><span class="sxs-lookup"><span data-stu-id="2565a-102">Unable to get binding type for binding extension</span></span>
 ## <a name="details"></a><span data-ttu-id="2565a-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="2565a-103">Details</span></span>  
@@ -37,9 +38,9 @@ ms.lasthandoff: 11/28/2017
 ## <a name="user-action"></a><span data-ttu-id="2565a-120">用户操作</span><span class="sxs-lookup"><span data-stu-id="2565a-120">User Action</span></span>  
  <span data-ttu-id="2565a-121">要解决此错误，请执行以下一项或多项操作：</span><span class="sxs-lookup"><span data-stu-id="2565a-121">To resolve this error do one or more of the following:</span></span>  
   
--   <span data-ttu-id="2565a-122">确保**machine.config 文件**中**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions** \>正确配置的元素。</span><span class="sxs-lookup"><span data-stu-id="2565a-122">Ensure the **machine.config file** in **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** has the \<**bindingExtensions**\> element configured properly.</span></span>  
+-   <span data-ttu-id="2565a-122">确保**machine.config 文件**中 **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions** \>正确配置的元素。</span><span class="sxs-lookup"><span data-stu-id="2565a-122">Ensure the **machine.config file** in **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** has the \<**bindingExtensions**\> element configured properly.</span></span>  
   
--   <span data-ttu-id="2565a-123">在 Windows 资源管理器，转到**%WinDir%\Assembly**，并确保正确安装的程序集实现的自定义绑定扩展。</span><span class="sxs-lookup"><span data-stu-id="2565a-123">In Windows Explorer, go to **%WinDir%\Assembly**, and make sure the assemblies implementing the custom binding extension are installed properly.</span></span>  
+-   <span data-ttu-id="2565a-123">在 Windows 资源管理器，转到 **%WinDir%\Assembly**，并确保正确安装的程序集实现的自定义绑定扩展。</span><span class="sxs-lookup"><span data-stu-id="2565a-123">In Windows Explorer, go to **%WinDir%\Assembly**, and make sure the assemblies implementing the custom binding extension are installed properly.</span></span>  
   
 -   <span data-ttu-id="2565a-124">对于 WCF-Custom 适配器，在 BizTalk 管理控制台中，重新启动运行 WCF 传输的主机实例。</span><span class="sxs-lookup"><span data-stu-id="2565a-124">For the WCF-Custom adapter, in the BizTalk Administration console, restart the host instance running the WCF transport.</span></span>  
   

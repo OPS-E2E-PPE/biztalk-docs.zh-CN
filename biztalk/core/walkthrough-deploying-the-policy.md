@@ -1,14 +1,14 @@
 ---
-title: "演练： 部署策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 部署策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 205760e2-9cd4-496f-93cd-0f93bc5d3231
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975907"
 ---
 # <a name="walkthrough-deploying-the-policy"></a><span data-ttu-id="34038-102">演练： 部署策略</span><span class="sxs-lookup"><span data-stu-id="34038-102">Walkthrough: Deploying the Policy</span></span>
 <span data-ttu-id="34038-103">本演练提供了部署的分步说明**ProcessPurchaseOrder**以下三种方式的策略：</span><span class="sxs-lookup"><span data-stu-id="34038-103">This walkthrough provides step-by-step instructions for deploying the **ProcessPurchaseOrder** policy in the following three ways:</span></span>  
@@ -268,7 +269,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="34038-271">浏览，然后双击该 XML 文件 (**C:\BRE-Walkthroughs\ProcessPOFromAdmin.xml**) 在第一个过程中创建。</span><span class="sxs-lookup"><span data-stu-id="34038-271">Browse, and double-click the XML file (**C:\BRE-Walkthroughs\ProcessPOFromAdmin.xml**) that you created in the first procedure.</span></span>  
   
-4.  <span data-ttu-id="34038-272">展开**\<所有项目\>**下**应用程序**。</span><span class="sxs-lookup"><span data-stu-id="34038-272">Expand **\<All Artifacts\>** under **Applications**.</span></span>  
+4.  <span data-ttu-id="34038-272">展开**\<所有项目\>** 下**应用程序**。</span><span class="sxs-lookup"><span data-stu-id="34038-272">Expand **\<All Artifacts\>** under **Applications**.</span></span>  
   
 5.  <span data-ttu-id="34038-273">单击**策略**，并且你应看到 1.3 版**ProcessPurchaseOrder**列表中的策略。</span><span class="sxs-lookup"><span data-stu-id="34038-273">Click **Policies**, and you should see version 1.3 of the **ProcessPurchaseOrder** policy in the list.</span></span>  
   

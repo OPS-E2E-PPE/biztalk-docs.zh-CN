@@ -1,11 +1,11 @@
 ---
-title: "如何删除 BAM 定义 |Microsoft 文档"
-ms.custom: 
+title: 如何删除 BAM 定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definitions [BAM], deleting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [BAM definitions], deleting definitions
 - Remove-All command
 ms.assetid: a905f54b-7c55-49b8-809b-030ad65f3e46
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972563"
 ---
 # <a name="how-to-remove-bam-definitions"></a><span data-ttu-id="84d90-102">如何删除 BAM 定义</span><span class="sxs-lookup"><span data-stu-id="84d90-102">How to Remove BAM Definitions</span></span>
 <span data-ttu-id="84d90-103">管理员使用**删除所有**BAM 管理实用工具删除所有视图和特定 BAM 定义文件的基础活动表的命令。</span><span class="sxs-lookup"><span data-stu-id="84d90-103">Administrators use the **remove-all** command of the BAM Management utility to remove all views and underlying activity tables for a particular BAM definition file.</span></span>  

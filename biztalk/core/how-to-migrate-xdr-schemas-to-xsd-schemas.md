@@ -1,14 +1,14 @@
 ---
-title: "如何将 XDR 架构迁移到 XSD 架构 |Microsoft 文档"
-ms.custom: 
+title: 如何将 XDR 架构迁移到 XSD 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bde0d0-bfe6-4d6c-823c-8ed9c0e15783
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25971619"
 ---
 # <a name="how-to-migrate-xdr-schemas-to-xsd-schemas"></a><span data-ttu-id="f6c46-102">如何将 XDR 架构迁移到 XSD 架构</span><span class="sxs-lookup"><span data-stu-id="f6c46-102">How to Migrate XDR Schemas to XSD Schemas</span></span>
 <span data-ttu-id="f6c46-103">如果是从早期版本的 BizTalk Server 迁移架构，则需要将精简 XML 数据 (XDR) 架构转换为 XML 架构定义 (XSD) 语言架构。</span><span class="sxs-lookup"><span data-stu-id="f6c46-103">If you are migrating schemas from a previous version of BizTalk Server, you will need to convert your XML-Data Reduced (XDR) schemas into XML Schema definition (XSD) language schemas.</span></span> <span data-ttu-id="f6c46-104">本主题介绍了必需的步骤。</span><span class="sxs-lookup"><span data-stu-id="f6c46-104">This topic describes the necessary steps.</span></span>  

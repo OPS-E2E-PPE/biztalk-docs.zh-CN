@@ -1,15 +1,16 @@
 ---
 redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: cce9ad685bc4b0bc8a0d97e0645573c5e2db1cf5
 ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975563"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="faae7-101">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="faae7-101">Using Event Tracing for Windows</span></span>
-<span data-ttu-id="faae7-102">Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记录到 Windows 事件查看器。</span><span class="sxs-lookup"><span data-stu-id="faae7-102">Microsoft BizTalk Adapter for TIBCO Rendezvous logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="faae7-103">使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-103">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="faae7-104">激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-104">When ETW is activated, it creates an *.etl file to receive the messages.</span></span> <span data-ttu-id="faae7-105">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="faae7-105">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="faae7-106">若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="faae7-106">To do this, you must have a consumer application available to interpret the \*.etl file, for example, tracerpt.exe or tracedmp.exe.</span></span> <span data-ttu-id="faae7-107">例如，tracerpt.exe 应用程序会将转换\*到两个文本文件的.etl 文件： summary.txt 和 dumpfile.csv。</span><span class="sxs-lookup"><span data-stu-id="faae7-107">For example, the tracerpt.exe application will convert the \*.etl file into two text files: summary.txt and dumpfile.csv.</span></span>  
+<span data-ttu-id="faae7-102">Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记录到 Windows 事件查看器。</span><span class="sxs-lookup"><span data-stu-id="faae7-102">Microsoft BizTalk Adapter for TIBCO Rendezvous logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="faae7-103">使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-103">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="faae7-104">激活 ETW 后，会创建一个 \*.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-104">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="faae7-105">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="faae7-105">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="faae7-106">若要执行此操作，你必须提供要解释的使用者应用程序\*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="faae7-106">To do this, you must have a consumer application available to interpret the \*.etl file, for example, tracerpt.exe or tracedmp.exe.</span></span> <span data-ttu-id="faae7-107">例如，tracerpt.exe 应用程序会将转换\*到两个文本文件的.etl 文件： summary.txt 和 dumpfile.csv。</span><span class="sxs-lookup"><span data-stu-id="faae7-107">For example, the tracerpt.exe application will convert the \*.etl file into two text files: summary.txt and dumpfile.csv.</span></span>  
   
 ## <a name="etw-components"></a><span data-ttu-id="faae7-108">ETW 组件</span><span class="sxs-lookup"><span data-stu-id="faae7-108">ETW Components</span></span>  
  <span data-ttu-id="faae7-109">Windows 事件跟踪包括以下三个组件：</span><span class="sxs-lookup"><span data-stu-id="faae7-109">Event Tracing for Windows has three components:</span></span>  
@@ -33,17 +34,17 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="faae7-124">用于 TIBCO Rendezvous 的 BizTalk 适配器具有三个提供程序。</span><span class="sxs-lookup"><span data-stu-id="faae7-124">BizTalk Adapter for TIBCO Rendezvous has three providers.</span></span> <span data-ttu-id="faae7-125">这样就可以记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="faae7-125">This lets you log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="faae7-126">**接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="faae7-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="faae7-126">**接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="faae7-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="faae7-127">使用**-接收方**以获取已在运行时适配器接收到日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-127">Use **-receiver** to get any messages from the log that were received by the adapter at runtime.</span></span>  
+-   <span data-ttu-id="faae7-127">使用 **-接收方**以获取已在运行时适配器接收到日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-127">Use **-receiver** to get any messages from the log that were received by the adapter at runtime.</span></span>  
   
--   <span data-ttu-id="faae7-128">**发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="faae7-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="faae7-128">**发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="faae7-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
   
-     <span data-ttu-id="faae7-129">使用**-发送器**以获取已传输的适配器在运行时日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-129">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
+     <span data-ttu-id="faae7-129">使用 **-发送器**以获取已传输的适配器在运行时日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-129">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="faae7-130">**管理日志记录提供程序-**\<跟踪元素\>交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="faae7-130">**Management Logging Provider—**the \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="faae7-130">**管理日志记录提供程序-**\<跟踪元素\>交换机 **-管理**。</span><span class="sxs-lookup"><span data-stu-id="faae7-130">**Management Logging Provider—** the \<Trace element\> switch is **-management**.</span></span>  
   
-     <span data-ttu-id="faae7-131">使用**-管理**若要获取的服务器系统浏览过程中生成了日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-131">Use **-management**to get any messages from the log that were generated during browsing of the server system.</span></span>  
+     <span data-ttu-id="faae7-131">使用 **-管理**若要获取的服务器系统浏览过程中生成了日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="faae7-131">Use **-management**to get any messages from the log that were generated during browsing of the server system.</span></span>  
   
 ## <a name="btatibcorvtrace-command"></a><span data-ttu-id="faae7-132">BTATIBCORVTrace 命令</span><span class="sxs-lookup"><span data-stu-id="faae7-132">BTATIBCORVTrace Command</span></span>  
  <span data-ttu-id="faae7-133">若要使用 ETW，运行 TIBCO 会合命令，BTATIBCORVTrace.cmd BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="faae7-133">To use ETW, run the BizTalk Adapter for TIBCO Rendezvous command, BTATIBCORVTrace.cmd.</span></span> <span data-ttu-id="faae7-134">如下所示使用此命令：</span><span class="sxs-lookup"><span data-stu-id="faae7-134">You use this command as follows:</span></span>  

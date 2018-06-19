@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, publishing
 - best practices, WCF adapters
 ms.assetid: 797b7ffd-534c-4f09-9738-fb17b208bc96
-caps.latest.revision: ''
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972587"
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a><span data-ttu-id="984c3-102">通过 WCF 接收适配器发布 WCF 服务时的注意事项</span><span class="sxs-lookup"><span data-stu-id="984c3-102">Considerations When Publishing WCF Services with the WCF Receive Adapters</span></span>
 <span data-ttu-id="984c3-103">本主题提供在通过 WCF 接收适配器发布 WCF 服务时应当注意的信息。</span><span class="sxs-lookup"><span data-stu-id="984c3-103">This topic provides information that you should take into consideration when publishing WCF services with the WCF receive adapters.</span></span>  <span data-ttu-id="984c3-104">如果使用 WCF 适配器发布服务，会允许该服务由 WCF 客户端调用，就像该服务是一个典型的 WCF 服务一样。</span><span class="sxs-lookup"><span data-stu-id="984c3-104">Publishing a service using a WCF adapter allows it to be called by a WCF client as if it were a typical WCF service.</span></span>  

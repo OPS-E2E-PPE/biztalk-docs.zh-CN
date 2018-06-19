@@ -1,17 +1,17 @@
 ---
-title: "扩展枚举 |Microsoft 文档"
-ms.custom: 
+title: 扩展枚举 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enumeration values
 - 2.X schemas, enumeration values
 ms.assetid: 043def35-b644-4502-a2e2-cc1a5fc0328a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006238"
 ---
 # <a name="extending-enumerations"></a><span data-ttu-id="020ea-102">扩展枚举</span><span class="sxs-lookup"><span data-stu-id="020ea-102">Extending Enumerations</span></span>
 <span data-ttu-id="020ea-103">可以将值添加到 HL7 消息正文、 确认和消息正文架构中建立的许多字段、 线段和数据类型可接受的值的枚举。</span><span class="sxs-lookup"><span data-stu-id="020ea-103">You can add values to the enumerations that establish accepted values for many fields, segments, and data types in HL7 message body, acknowledgment, and message body schemas.</span></span> <span data-ttu-id="020ea-104">这涉及到的更改的值中的特定表中您正在工作的 HL7 版本的通用表值架构文件集 ( **Tablevalues_\<***版本* **\>.xsd**架构文件)。</span><span class="sxs-lookup"><span data-stu-id="020ea-104">This involves changing the set of values in a specific table in the common table values schema file for the HL7 version in which you are working (the **Tablevalues_\<***version***\>.xsd** schema file).</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "在业务流程中使用相关性 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中使用相关性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, validating
 ms.assetid: d919afa9-bada-406a-bf4b-7b46c831c6d5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287365"
 ---
 # <a name="using-correlations-in-orchestrations"></a><span data-ttu-id="19e9c-102">在业务流程中使用相关性</span><span class="sxs-lookup"><span data-stu-id="19e9c-102">Using Correlations in Orchestrations</span></span>
 <span data-ttu-id="19e9c-103">相关是将传入消息与业务流程的相应实例相匹配的过程。</span><span class="sxs-lookup"><span data-stu-id="19e9c-103">Correlation is the process of matching an incoming message with the appropriate instance of an orchestration.</span></span> <span data-ttu-id="19e9c-104">例如，业务流程发出一条消息，然后接收到返回该业务流程的一个或多个响应。</span><span class="sxs-lookup"><span data-stu-id="19e9c-104">For example, orchestration sends out of a message and receives the response or responses back into the same orchestration.</span></span> <span data-ttu-id="19e9c-105">有三种相关消息交换模式：</span><span class="sxs-lookup"><span data-stu-id="19e9c-105">There are three correlated messages exchange patterns:</span></span>  

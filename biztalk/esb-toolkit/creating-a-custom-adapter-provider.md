@@ -1,14 +1,14 @@
 ---
-title: "创建自定义适配器提供程序 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义适配器提供程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb93acf8-fd9d-4315-8690-f0c152a954b5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974275"
 ---
 # <a name="creating-a-custom-adapter-provider"></a><span data-ttu-id="65e77-102">创建自定义适配器提供程序</span><span class="sxs-lookup"><span data-stu-id="65e77-102">Creating a Custom Adapter Provider</span></span>
 <span data-ttu-id="65e77-103">解析程序执行，如前面几节中所述后，动态解析服务将检查结果是否为终结点 （未转换）。</span><span class="sxs-lookup"><span data-stu-id="65e77-103">After a resolver executes, as described in the previous sections, the dynamic resolution service checks whether the result is an endpoint (not a transformation).</span></span> <span data-ttu-id="65e77-104">如果它是一个终结点，服务实例适配器管理器，它是实例化的**AdapterMgr**类。</span><span class="sxs-lookup"><span data-stu-id="65e77-104">If it is an endpoint, the service instantiates the adapter manager, which is an instance of the **AdapterMgr** class.</span></span>  

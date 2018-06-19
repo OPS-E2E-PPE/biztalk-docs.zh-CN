@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10694 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10694 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75faca65-48d9-45f6-b079-2b612ef3de76
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270637"
 ---
 # <a name="single-sign-on-event-10694"></a><span data-ttu-id="8863a-102">单一登录： 事件 10694</span><span class="sxs-lookup"><span data-stu-id="8863a-102">Single Sign-On: Event 10694</span></span>
 ## <a name="details"></a><span data-ttu-id="8863a-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="8863a-103">Details</span></span>  

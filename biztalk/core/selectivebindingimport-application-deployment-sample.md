@@ -1,11 +1,11 @@
 ---
-title: "SelectiveBindingImport （应用程序部署示例） |Microsoft 文档"
-ms.custom: 
+title: SelectiveBindingImport （应用程序部署示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding files, importing
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, binding files
 ms.assetid: 963bfc80-8cc4-4d90-96b4-e85ae04405cf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974827"
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a><span data-ttu-id="1e868-102">SelectiveBindingImport（应用程序部署示例）</span><span class="sxs-lookup"><span data-stu-id="1e868-102">SelectiveBindingImport (Application Deployment Sample)</span></span>
 <span data-ttu-id="1e868-103">本主题介绍如何使用 SelectiveBindingImport 示例。</span><span class="sxs-lookup"><span data-stu-id="1e868-103">This topic explains how to use the SelectiveBindingImport sample.</span></span> <span data-ttu-id="1e868-104">将某应用程序导入不同的目标环境时，可以使用本示例脚本将不同的绑定应用到此应用程序。</span><span class="sxs-lookup"><span data-stu-id="1e868-104">You can use this sample script to apply different bindings to an application when you import the application into different destination environments.</span></span> <span data-ttu-id="1e868-105">如要从存储在网络共享位置上的绑定文件导入绑定，则可以使用此方法。</span><span class="sxs-lookup"><span data-stu-id="1e868-105">You can use this approach when you want to import the bindings from binding files that are stored on a network share.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="1e868-116">本示例演示如何使用 BizTalk 应用程序 .msi 文件中包含的后续处理脚本选择性地从网络共享位置导入绑定文件。</span><span class="sxs-lookup"><span data-stu-id="1e868-116">This sample illustrates how to selectively import binding files from a network share by using a post-processing script contained in a BizTalk application .msi file.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="1e868-117">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="1e868-117">Where to Find This Sample</span></span>  
- <span data-ttu-id="1e868-118">你可以查找下面的示例文件夹和文件下的*\<示例路径\>*\Application Deployment\SelectiveBindingImport:</span><span class="sxs-lookup"><span data-stu-id="1e868-118">You can find the following sample folders and files under *\<Samples Path\>*\Application Deployment\SelectiveBindingImport:</span></span>  
+ <span data-ttu-id="1e868-118">你可以查找下面的示例文件夹和文件下的*\<示例路径\>* \Application Deployment\SelectiveBindingImport:</span><span class="sxs-lookup"><span data-stu-id="1e868-118">You can find the following sample folders and files under *\<Samples Path\>* \Application Deployment\SelectiveBindingImport:</span></span>  
   
 -   <span data-ttu-id="1e868-119">Develop（文件夹）</span><span class="sxs-lookup"><span data-stu-id="1e868-119">Develop (Folder)</span></span>  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-run-the-sample"></a><span data-ttu-id="1e868-130">运行示例</span><span class="sxs-lookup"><span data-stu-id="1e868-130">To run the sample</span></span>  
   
-1.  <span data-ttu-id="1e868-131">运行**从 Build.Bat *\<示例路径\>*\Application Deployment\CreateApp**目录。</span><span class="sxs-lookup"><span data-stu-id="1e868-131">Run **Build.Bat from the *\<Samples Path\>*\Application Deployment\CreateApp** directory.</span></span> <span data-ttu-id="1e868-132">这将创建中的以下文件*\<示例路径\>*\Application Deployment\CreateApp\Dlls 文件夹： Schemas.dll、 Maps.dll 和 Orchestrations.dll。</span><span class="sxs-lookup"><span data-stu-id="1e868-132">This creates the following files in the *\<Samples Path\>*\Application Deployment\CreateApp\Dlls folder: Schemas.dll, Maps.dll, and Orchestrations.dll.</span></span>  
+1.  <span data-ttu-id="1e868-131">运行**从 Build.Bat *\<示例路径\>* \Application Deployment\CreateApp**目录。</span><span class="sxs-lookup"><span data-stu-id="1e868-131">Run **Build.Bat from the *\<Samples Path\>* \Application Deployment\CreateApp** directory.</span></span> <span data-ttu-id="1e868-132">这将创建中的以下文件*\<示例路径\>* \Application Deployment\CreateApp\Dlls 文件夹： Schemas.dll、 Maps.dll 和 Orchestrations.dll。</span><span class="sxs-lookup"><span data-stu-id="1e868-132">This creates the following files in the *\<Samples Path\>* \Application Deployment\CreateApp\Dlls folder: Schemas.dll, Maps.dll, and Orchestrations.dll.</span></span>  
   
 2.  <span data-ttu-id="1e868-133">**创建应用程序。**</span><span class="sxs-lookup"><span data-stu-id="1e868-133">**Create the application.**</span></span> <span data-ttu-id="1e868-134">在 BizTalk Server 管理控制台中，创建应用程序，如中所述[如何创建应用程序](../core/how-to-create-an-application.md)。</span><span class="sxs-lookup"><span data-stu-id="1e868-134">In the BizTalk Server Administration console, create an application, as described in [How to Create an Application](../core/how-to-create-an-application.md).</span></span>  
   

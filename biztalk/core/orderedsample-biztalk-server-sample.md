@@ -1,11 +1,11 @@
 ---
-title: "OrderedSample （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: OrderedSample （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, orchestrations
 - MQSeries adapters, examples
 ms.assetid: 7e59ff43-d425-40cd-9725-af13084f83d9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974747"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a><span data-ttu-id="ca2c2-102">OrderedSample（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="ca2c2-102">OrderedSample (BizTalk Server Sample)</span></span>
 <span data-ttu-id="ca2c2-103">OrderedSample 示例演示如何使用业务流程以往返过程方式接收和发送一系列有序消息。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-103">The OrderedSample sample demonstrates how to use an orchestration to receive and send an ordered series of messages in a round-trip fashion.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="ca2c2-111">业务流程可接收消息批和单个消息。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-111">The orchestration can receive batches of messages and single messages.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="ca2c2-112">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="ca2c2-112">Where to Find This Sample</span></span>  
- <span data-ttu-id="ca2c2-113">*\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample</span><span class="sxs-lookup"><span data-stu-id="ca2c2-113">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample</span></span>  
+ <span data-ttu-id="ca2c2-113">*\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample</span><span class="sxs-lookup"><span data-stu-id="ca2c2-113">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample</span></span>  
   
  <span data-ttu-id="ca2c2-114">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="ca2c2-114">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="ca2c2-140">右键单击**队列**，指向**新建**，然后单击**本地队列**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-140">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   
-4.  <span data-ttu-id="ca2c2-141">在**创建本地队列**对话框中，在**队列名称**，类型**"queue1"**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-141">In **Create Local Queue** dialog box, in **Queue Name**, type **"queue1"**, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="ca2c2-141">在**创建本地队列**对话框中，在**队列名称**，类型 **"queue1"**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-141">In **Create Local Queue** dialog box, in **Queue Name**, type **"queue1"**, and then click **OK**.</span></span>  
   
 5.  <span data-ttu-id="ca2c2-142">右键单击**队列**，单击**新建**，然后单击**本地队列**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-142">Right-click **Queues**, click **New**, and then click **Local Queue**.</span></span>  
   
-6.  <span data-ttu-id="ca2c2-143">在**创建本地队列**对话框中，在**队列名称**，类型**"queue2"**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-143">In the **Create Local Queue** dialog box, in **Queue Name**, type **"queue2"**, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="ca2c2-143">在**创建本地队列**对话框中，在**队列名称**，类型 **"queue2"**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-143">In the **Create Local Queue** dialog box, in **Queue Name**, type **"queue2"**, and then click **OK**.</span></span>  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a><span data-ttu-id="ca2c2-144">创建接收位置和 MQSeries 队列</span><span class="sxs-lookup"><span data-stu-id="ca2c2-144">Creating the Receive Location and the MQSeries Queue</span></span>  
  <span data-ttu-id="ca2c2-145">此过程将创建发送端口和接收位置，以便向 MQSeries 发送消息以及接收来自 MQSeries 的相关消息。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-145">This procedure creates the send port and receive location to send the message to and receive the correlation message from MQSeries.</span></span> <span data-ttu-id="ca2c2-146">创建接收位置时，还将创建 MQSeries 队列（如果尚未创建）。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-146">The MQSeries queue will also be created when you create the receive location if not already created.</span></span>  
@@ -104,9 +105,9 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="ca2c2-157">单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-157">Click **Configure**.</span></span>  
   
-11. <span data-ttu-id="ca2c2-158">在**MQSeries 传输属性**对话框中，在**轮询间隔**框中，键入**"10"**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-158">In the **MQSeries Transport Properties** dialog box, in the **Polling Interval** box, type **"10"**.</span></span>  
+11. <span data-ttu-id="ca2c2-158">在**MQSeries 传输属性**对话框中，在**轮询间隔**框中，键入 **"10"**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-158">In the **MQSeries Transport Properties** dialog box, in the **Polling Interval** box, type **"10"**.</span></span>  
   
-12. <span data-ttu-id="ca2c2-159">在**队列定义**框中，单击**省略号 （...）**按钮。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-159">In the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
+12. <span data-ttu-id="ca2c2-159">在**队列定义**框中，单击**省略号 （...）** 按钮。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-159">In the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
   
 13. <span data-ttu-id="ca2c2-160">在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-160">In the **Queue Definition** dialog box, in the **Server Name** box, type your computer name.</span></span>  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="ca2c2-170">单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-170">Click **Configure**.</span></span>  
   
-6.  <span data-ttu-id="ca2c2-171">在**MQSeries 传输属性**对话框中，在**队列定义**框中，单击**省略号 （...）**按钮。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-171">In the **MQSeries Transport Properties** dialog box, in the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
+6.  <span data-ttu-id="ca2c2-171">在**MQSeries 传输属性**对话框中，在**队列定义**框中，单击**省略号 （...）** 按钮。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-171">In the **MQSeries Transport Properties** dialog box, in the **Queue Definition** box, click the **ellipsis (…)** button.</span></span>  
   
 7.  <span data-ttu-id="ca2c2-172">在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。</span><span class="sxs-lookup"><span data-stu-id="ca2c2-172">In the **Queue Definition** dialog box, in the **Server Name** box, type your computer name.</span></span>  
   

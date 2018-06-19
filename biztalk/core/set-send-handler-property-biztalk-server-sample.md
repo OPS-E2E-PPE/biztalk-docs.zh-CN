@@ -1,18 +1,18 @@
 ---
-title: "设置发送处理程序属性 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 设置发送处理程序属性 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SMTP adapters, examples
 - examples, SMTP adapters
 - send handlers, properties
 ms.assetid: eb6ae2f2-528f-44ec-bca4-f37006893ff2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974579"
 ---
 # <a name="set-send-handler-property-biztalk-server-sample"></a><span data-ttu-id="4b3f3-102">设置发送处理程序属性 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="4b3f3-102">Set Send Handler Property (BizTalk Server Sample)</span></span>
 <span data-ttu-id="4b3f3-103">“设置发送处理程序属性”示例演示如何为简单邮件传输协议 (SMTP) 发送处理程序设置 XML 配置信息。</span><span class="sxs-lookup"><span data-stu-id="4b3f3-103">The Set Send Handler Property sample demonstrates how to set the XML configuration information for a Simple Mail Transfer Protocol (SMTP) send handler.</span></span>  

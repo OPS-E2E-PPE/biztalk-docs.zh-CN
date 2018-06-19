@@ -1,14 +1,14 @@
 ---
-title: "管理员的 BAM 任务 |Microsoft 文档"
-ms.custom: 
+title: 管理员的 BAM 任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d9ae9a6-50fa-4f82-8e48-8dffa55c127f
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008422"
 ---
 # <a name="bam-tasks-for-administrators"></a><span data-ttu-id="77083-102">管理员的 BAM 任务</span><span class="sxs-lookup"><span data-stu-id="77083-102">BAM Tasks for Administrators</span></span>
 <span data-ttu-id="77083-103">本主题描述 BAM 管理员在管理 BAM 基础结构时需要执行的典型任务。</span><span class="sxs-lookup"><span data-stu-id="77083-103">This topic describes typical tasks that BAM administrators undertake in managing the BAM infrastructure.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="77083-134">若要创建 BAM 通知运行 C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol 分布式环境中的每台计算机上的服务注册-name bamalerts-服务器\<服务器名称\>-服务-serviceusername \<alertsuseraccount\> -servicepassword \<passwd\>从命令提示符。</span><span class="sxs-lookup"><span data-stu-id="77083-134">To create the BAM notification service on each computer in the distributed environment run C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol register -name bamalerts -server \<server name\> -service -serviceusername \<alertsuseraccount\> -servicepassword \<passwd\> from a command prompt.</span></span>  
   
-3.  <span data-ttu-id="77083-135">编辑每台计算机上为分布式 Notification Services 配置的 BAM 基础结构配置文件。</span><span class="sxs-lookup"><span data-stu-id="77083-135">Edit the BAM infrastructure configuration file on each computer being configured for distributed Notifications Serviced.</span></span> <span data-ttu-id="77083-136">若要获取配置文件，请使用**bm.exe get-config FileName:\<输出文件\>**命令。</span><span class="sxs-lookup"><span data-stu-id="77083-136">To get the configuration file, use the **bm.exe get-config -FileName:\<output file\>** command.</span></span>  
+3.  <span data-ttu-id="77083-135">编辑每台计算机上为分布式 Notification Services 配置的 BAM 基础结构配置文件。</span><span class="sxs-lookup"><span data-stu-id="77083-135">Edit the BAM infrastructure configuration file on each computer being configured for distributed Notifications Serviced.</span></span> <span data-ttu-id="77083-136">若要获取配置文件，请使用**bm.exe get-config FileName:\<输出文件\>** 命令。</span><span class="sxs-lookup"><span data-stu-id="77083-136">To get the configuration file, use the **bm.exe get-config -FileName:\<output file\>** command.</span></span>  
   
 4.  <span data-ttu-id="77083-137">编辑配置文件以引用分布式 Notification Services 环境中的服务器：</span><span class="sxs-lookup"><span data-stu-id="77083-137">Edit the configuration file to reference the servers in the distributed Notification services environment:</span></span>  
   

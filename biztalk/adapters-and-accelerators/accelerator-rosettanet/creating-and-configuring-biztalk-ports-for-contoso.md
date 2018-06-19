@@ -1,11 +1,11 @@
 ---
-title: "创建和为 Contoso 配置 BizTalk 端口 |Microsoft 文档"
-ms.custom: 
+title: 创建和为 Contoso 配置 BizTalk 端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - private process tutorial, configuring ports
 - ports, configuring
 ms.assetid: 179af692-e14c-40da-9c43-1a7d0b6beb1f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004454"
 ---
 # <a name="creating-and-configuring-biztalk-ports-for-contoso"></a><span data-ttu-id="c7866-102">创建和为 Contoso 配置 BizTalk 端口</span><span class="sxs-lookup"><span data-stu-id="c7866-102">Creating and Configuring BizTalk Ports for Contoso</span></span>
 <span data-ttu-id="c7866-103">在此部分中，你将集成到当前解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="c7866-103">In this section, you integrate your current solution into [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server.</span></span> <span data-ttu-id="c7866-104">执行此操作之前，请将自己的程序集安装到全局程序集缓存 (GAC) 中，然后在配置数据库中配置它。</span><span class="sxs-lookup"><span data-stu-id="c7866-104">Before you do this, you install your assembly in the Global Assembly Cache (GAC), and then configure it in the Configuration database.</span></span> <span data-ttu-id="c7866-105">然后使用 SQL 适配器和 HTTP 适配器创建和配置发送端口。</span><span class="sxs-lookup"><span data-stu-id="c7866-105">You then create and configure send ports using a SQL adapter and a HTTP adapter.</span></span>  

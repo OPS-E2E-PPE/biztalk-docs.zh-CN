@@ -1,11 +1,11 @@
 ---
-title: "什么是聚合？ | Microsoft Docs"
-ms.custom: 
+title: 什么是聚合？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - OLAP cubes, BAM
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - aggregations [BAM], about aggregations
 - aggregations [BAM]
 ms.assetid: 77d40602-ef56-4a5b-a18f-56ccbff573a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289157"
 ---
 # <a name="what-is-an-aggregation"></a><span data-ttu-id="4df1f-103">什么是聚合？</span><span class="sxs-lookup"><span data-stu-id="4df1f-103">What Is an Aggregation?</span></span>
 <span data-ttu-id="4df1f-104">Excel 将聚合定义为预先计算的数据汇总，通过在提问之前准备好答案的方式来提高查询响应时间。</span><span class="sxs-lookup"><span data-stu-id="4df1f-104">Excel defines aggregations as pre-calculated summaries of data that improve query response time by having the answers ready before the questions are asked.</span></span> <span data-ttu-id="4df1f-105">例如，在数据仓库事实表中包含数以万计的行时，检索两种特定产品发货计划的查询可能需要很长时间才能完成，因为必须扫描该事实表才能计算出答案。</span><span class="sxs-lookup"><span data-stu-id="4df1f-105">For example, when a data warehouse fact table contains hundreds of thousands of rows, a query requesting the shipping schedules for two particular products can take a long time to answer if the fact table has to be scanned to compute the answer.</span></span> <span data-ttu-id="4df1f-106">然而，如果预先计算了答复此查询的汇总数据，则查询几乎可以即时得到响应。</span><span class="sxs-lookup"><span data-stu-id="4df1f-106">However, the response can be almost immediate if the summarization data to answer this query has been pre-calculated.</span></span>  

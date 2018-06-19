@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tools, WCF Service Consuming Wizard
 - consuming, WCF Service Consuming Wizard
 ms.assetid: d5fad2ac-4d98-4720-8026-88ebab78b120
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975539"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a><span data-ttu-id="96657-102">如何利用 BizTalk WCF 服务使用向导来使用 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="96657-102">How to Use the BizTalk WCF Service Consuming Wizard to Consume a WCF Service</span></span>
 <span data-ttu-id="96657-103">BizTalk 适配器框架提供了一条将适配器架构和 BizTalk 类型添加到 BizTalk 项目的途径。</span><span class="sxs-lookup"><span data-stu-id="96657-103">The BizTalk Adapter Framework provides a way to add adapter schemas and BizTalk types to BizTalk projects.</span></span> <span data-ttu-id="96657-104">通过 BizTalk WCF 服务使用向导，可以将 WCF 发送适配器添加到 BizTalk 项目。</span><span class="sxs-lookup"><span data-stu-id="96657-104">The BizTalk WCF Service Consuming Wizard enables you to add WCF send adapters to a BizTalk project.</span></span> <span data-ttu-id="96657-105">对于 WCF 发送适配器，必须为发送端口选择现有的元数据交换 (MEX) 终结点。</span><span class="sxs-lookup"><span data-stu-id="96657-105">For the WCF send adapters, you must select an existing metadata exchange (MEX) endpoint for send ports.</span></span> <span data-ttu-id="96657-106">然后，您需要输入用于生成架构和类型的信息。</span><span class="sxs-lookup"><span data-stu-id="96657-106">Then you need to enter the information used to generate the schemas and types.</span></span> <span data-ttu-id="96657-107">在向导完成后，使用 WCF 服务所需的架构和类型便会添加到 BizTalk 项目中。</span><span class="sxs-lookup"><span data-stu-id="96657-107">When the wizard completes, the schemas and types necessary to consume WCF services are added to the BizTalk project.</span></span>  

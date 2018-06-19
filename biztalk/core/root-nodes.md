@@ -1,14 +1,14 @@
 ---
-title: "根节点 |Microsoft 文档"
-ms.custom: 
+title: 根节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2161f877-835e-434d-a8d1-2426f977d60e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268965"
 ---
 # <a name="root-nodes"></a><span data-ttu-id="e50ec-102">根节点</span><span class="sxs-lookup"><span data-stu-id="e50ec-102">Root Nodes</span></span>
 <span data-ttu-id="e50ec-103">在 BizTalk 编辑器中，子节点的**架构**节点称为**根**节点。</span><span class="sxs-lookup"><span data-stu-id="e50ec-103">In BizTalk Editor, child nodes of the **Schema** node are known as **Root** nodes.</span></span> <span data-ttu-id="e50ec-104">**根**节点是特殊类型的**记录**节点，并且具有比常规的几个更多属性**记录**节点。</span><span class="sxs-lookup"><span data-stu-id="e50ec-104">**Root** nodes are a special type of **Record** node, and have a few more properties than regular **Record** nodes.</span></span> <span data-ttu-id="e50ec-105">**根**节点表示的类型的文档所述的架构，并可以重命名为相应。</span><span class="sxs-lookup"><span data-stu-id="e50ec-105">The **Root** node represents the type of document described by the schema, and can be renamed as appropriate.</span></span> <span data-ttu-id="e50ec-106">例如，你可以重命名**根**节点，以使其描述的架构表示，如 purchaseOrder、 orderAcknowledgment 或 shipNotice 消息的类型。</span><span class="sxs-lookup"><span data-stu-id="e50ec-106">For example, you can rename the **Root** node so that it describes the type of message that the schema represents, such as purchaseOrder, orderAcknowledgment, or shipNotice.</span></span>  

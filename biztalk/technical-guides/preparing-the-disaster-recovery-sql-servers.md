@@ -1,14 +1,14 @@
 ---
-title: "准备灾难恢复 SQL Server |Microsoft 文档"
-ms.custom: 
+title: 准备灾难恢复 SQL Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44b77fe8-393d-4781-b0b0-5b7f6e50a67b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008070"
 ---
 # <a name="preparing-the-disaster-recovery-sql-servers"></a><span data-ttu-id="fa8d9-102">准备灾难恢复 SQL 服务器</span><span class="sxs-lookup"><span data-stu-id="fa8d9-102">Preparing the Disaster Recovery SQL Servers</span></span>
 <span data-ttu-id="fa8d9-103">可用来创建一组[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库灾难恢复站点中的实例。</span><span class="sxs-lookup"><span data-stu-id="fa8d9-103">Createa set of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances in the disaster recovery site.</span></span> <span data-ttu-id="fa8d9-104">若要确保灾难恢复[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库实例可以提供相同级别的性能与生产[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库实例、 灾难恢复[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]应具有类似配置数据库实例硬件和运行的物理计算机的数量[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fa8d9-104">To ensure that the disaster recovery [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances can provide the same level of performance as the production [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances, the disaster recovery [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instances should be configured with similar hardware and number of physical computers running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="fa8d9-105">在此方案中，将为每个生产配置日志传送的 BizTalk Server[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据库实例，将应用于相应[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]在灾难恢复站点的数据库实例。</span><span class="sxs-lookup"><span data-stu-id="fa8d9-105">In this scenario, BizTalk Server log shipping will be configured for each production [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instance to apply to a corresponding [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] database instance at the disaster recovery site.</span></span>  

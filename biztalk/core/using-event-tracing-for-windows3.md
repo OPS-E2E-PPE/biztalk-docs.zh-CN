@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973611"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="469ad-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="469ad-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="469ad-103">用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器。</span><span class="sxs-lookup"><span data-stu-id="469ad-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="469ad-104">使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="469ad-104">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="469ad-105">激活 ETW 后，会创建一个 \*.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="469ad-105">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="469ad-106">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="469ad-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="469ad-107">若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="469ad-107">To do this, you must have a consumer application available to interpret the \*.etl file, for example, tracerpt.exe or tracedmp.exe.</span></span> <span data-ttu-id="469ad-108">例如，tracerpt.exe 应用程序将为 \*到两个文本文件的.etl 文件︰ summary.txt 和 dumpfile.csv。</span><span class="sxs-lookup"><span data-stu-id="469ad-108">For example, the tracerpt.exe application converts the \*.etl file into two text files: summary.txt and dumpfile.csv.</span></span>  
@@ -52,11 +53,11 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="469ad-125">用于 TIBCO Enterprise Message Service 的 BizTalk 适配器具有允许您记录不同类型消息的提供程序：</span><span class="sxs-lookup"><span data-stu-id="469ad-125">BizTalk Adapter for TIBCO Enterprise Message Service has providers that enable you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="469ad-126">**接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="469ad-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="469ad-126">**接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="469ad-126">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
      <span data-ttu-id="469ad-127">使用 **-接收方** 以获得在运行时收到了适配器的日志的任何消息。</span><span class="sxs-lookup"><span data-stu-id="469ad-127">Use **-receiver** to obtain any messages from the log that were received by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="469ad-128">**发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="469ad-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="469ad-128">**发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="469ad-128">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
   
      <span data-ttu-id="469ad-129">使用 **-发送器**以获得在运行时该适配器已传输的日志的任何消息。</span><span class="sxs-lookup"><span data-stu-id="469ad-129">Use **-transmitter**to obtain any messages from the log that were transmitted by the adapter at run time.</span></span>  
   

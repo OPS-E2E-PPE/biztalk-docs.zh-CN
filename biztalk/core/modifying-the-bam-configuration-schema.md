@@ -1,18 +1,18 @@
 ---
-title: "修改 BAM 配置架构 |Microsoft 文档"
-ms.custom: 
+title: 修改 BAM 配置架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuration schema [BAM]
 - managing [BAM], configuration schema
 - BAMConfiguration.xml file
 ms.assetid: 8901fb05-1519-4033-8489-67a9b745ed43
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263277"
 ---
 # <a name="modifying-the-bam-configuration-schema"></a><span data-ttu-id="c4633-102">修改 BAM 配置架构</span><span class="sxs-lookup"><span data-stu-id="c4633-102">Modifying the BAM Configuration Schema</span></span>
 <span data-ttu-id="c4633-103">配置向导可自动创建此配置文件。</span><span class="sxs-lookup"><span data-stu-id="c4633-103">The Configuration Wizard creates this configuration file automatically.</span></span> <span data-ttu-id="c4633-104">如果在完成部署后更改了服务器名称或其他配置信息，则必须手动修改此文件。</span><span class="sxs-lookup"><span data-stu-id="c4633-104">You must modify this file manually if you change your server names or other configuration information after you complete the deployment.</span></span>  

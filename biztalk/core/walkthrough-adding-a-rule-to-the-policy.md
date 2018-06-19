@@ -1,14 +1,14 @@
 ---
-title: "演练： 将规则添加到策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将规则添加到策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2a682c0-a5d7-4550-924d-be9fa29b84d2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975699"
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a><span data-ttu-id="ad4de-102">演练： 将规则添加到策略</span><span class="sxs-lookup"><span data-stu-id="ad4de-102">Walkthrough: Adding a Rule to the Policy</span></span>
 <span data-ttu-id="ad4de-103">本演练提供了分步过程添加一个名为规则**DeniedRule**到**ProcessPurchaseOrder**策略。</span><span class="sxs-lookup"><span data-stu-id="ad4de-103">This walkthrough provides step-by-step procedures for adding a rule named **DeniedRule** to the **ProcessPurchaseOrder** policy.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="ad4de-122">右键单击**ProcessPurchaseOrder**，然后单击**粘贴的策略版本**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-122">Right-click **ProcessPurchaseOrder**, and then click **Paste Policy Version**.</span></span>  
   
-4.  <span data-ttu-id="ad4de-123">右键单击**（不保存） 1.2 版**，单击**添加新规则**，然后将更改到规则的名称**DeniedRule**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-123">Right-click **Version 1.2(not saved)**, click **Add New Rule**, and then change the name of the rule to **DeniedRule**.</span></span>  
+4.  <span data-ttu-id="ad4de-123">右键单击 **（不保存） 1.2 版**，单击**添加新规则**，然后将更改到规则的名称**DeniedRule**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-123">Right-click **Version 1.2(not saved)**, click **Add New Rule**, and then change the name of the rule to **DeniedRule**.</span></span>  
   
 5.  <span data-ttu-id="ad4de-124">如果你忘记更改到规则的名称**DeniedRule**在步骤 4 中，单击**规则 1**，和名称更改为**DeniedRule**属性窗口中。</span><span class="sxs-lookup"><span data-stu-id="ad4de-124">If you forgot to change the name of the rule to **DeniedRule** in step 4, click **Rule1**, and change the name to **DeniedRule** in the Properties window.</span></span>  
   
@@ -58,9 +59,9 @@ ms.lasthandoff: 11/28/2017
   
 10. <span data-ttu-id="ad4de-129">拖动**请求状态**到然后窗格。</span><span class="sxs-lookup"><span data-stu-id="ad4de-129">Drag **Request Status** to the THEN pane.</span></span>  
   
-11. <span data-ttu-id="ad4de-130">单击**\<空字符串\>**然后键入**拒绝**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-130">Click **\<empty string\>** and then type **Denied**.</span></span>  
+11. <span data-ttu-id="ad4de-130">单击**\<空字符串\>** 然后键入**拒绝**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-130">Click **\<empty string\>** and then type **Denied**.</span></span>  
   
-12. <span data-ttu-id="ad4de-131">右键单击**（不保存） 1.2 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-131">Right-click **Version 1.2 (not saved)**, and then click **Save**.</span></span>  
+12. <span data-ttu-id="ad4de-131">右键单击 **（不保存） 1.2 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-131">Right-click **Version 1.2 (not saved)**, and then click **Save**.</span></span>  
   
 13. <span data-ttu-id="ad4de-132">右键单击**版本 1.2**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="ad4de-132">Right-click **Version 1.2**, and then click **Publish**.</span></span>  
   

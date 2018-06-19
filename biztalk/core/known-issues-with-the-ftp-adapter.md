@@ -1,14 +1,14 @@
 ---
-title: "已知问题的 FTP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 已知问题的 FTP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e58f2db-9ec5-41fe-af02-9a7d60a217db
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010086"
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a><span data-ttu-id="23ad8-102">与 FTP 适配器的已知的问题</span><span class="sxs-lookup"><span data-stu-id="23ad8-102">Known Issues with the FTP Adapter</span></span>
 <span data-ttu-id="23ad8-103">本部分包含可帮助你避免出现错误的信息。</span><span class="sxs-lookup"><span data-stu-id="23ad8-103">This section contains information that may help you avoid errors.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "反直接合作伙伴绑定 |Microsoft 文档"
-ms.custom: 
+title: 反直接合作伙伴绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, partners
 - process management solution tutorial, partner binding
 ms.assetid: 4cf8717a-2098-46f4-8f58-9d05fb562e2a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262389"
 ---
 # <a name="inverse-direct-partner-binding"></a><span data-ttu-id="ff3f4-102">反直接合作伙伴绑定</span><span class="sxs-lookup"><span data-stu-id="ff3f4-102">Inverse Direct Partner Binding</span></span>
 <span data-ttu-id="ff3f4-103">业务流程管理解决方案设计为在无需停止应用程序的情况下可以更改订单处理阶段。</span><span class="sxs-lookup"><span data-stu-id="ff3f4-103">The Business Process Management solution is designed so that you can change the order processing stages without stopping the application.</span></span> <span data-ttu-id="ff3f4-104">若要分离的处理阶段 (**CableOrder1**， **CableOrder2**) 从进程管理器 (**OrderManager**)，该解决方案使用的不同方法绑定之间这些业务流程的端口。</span><span class="sxs-lookup"><span data-stu-id="ff3f4-104">In order to decouple the processing stages (**CableOrder1**, **CableOrder2**) from the process manager (**OrderManager**), the solution uses a different technique for binding ports among these orchestrations.</span></span>  

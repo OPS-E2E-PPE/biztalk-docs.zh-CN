@@ -1,17 +1,17 @@
 ---
-title: "监视业务流程管理解决方案与 BAM |Microsoft 文档"
-ms.custom: 
+title: 监视业务流程管理解决方案与 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, monitoring
 - monitoring, process management solutions
 ms.assetid: 7c5fde9d-6eef-41c9-979c-ac7e5a172812
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264365"
 ---
 # <a name="monitoring-the-business-process-management-solution-with-bam"></a><span data-ttu-id="79559-102">使用 BAM 监视业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="79559-102">Monitoring the Business Process Management Solution with BAM</span></span>
 <span data-ttu-id="79559-103">该解决方案使用业务活动监视 (BAM) API 来监视订单处理步骤。</span><span class="sxs-lookup"><span data-stu-id="79559-103">The solution monitors the steps in processing orders using the Business Activity Monitoring (BAM) API.</span></span> <span data-ttu-id="79559-104">业务流程在设计上将活动拆分为多个阶段。</span><span class="sxs-lookup"><span data-stu-id="79559-104">The design of the business process splits activities among multiple stages.</span></span> <span data-ttu-id="79559-105">但是，可以将这些活动重新组合起来以形成连续的流程。</span><span class="sxs-lookup"><span data-stu-id="79559-105">Through, the activities can be re-combined to create a sense of a continuous process.</span></span> <span data-ttu-id="79559-106">BAM 还提供聚合数据，以便您能够了解不同后端系统所花费的时间、已完成的订单数以及其他类似信息。</span><span class="sxs-lookup"><span data-stu-id="79559-106">BAM also provides aggregate data so that you can know how long different back-ends are taking, how many orders have been completed, and other similar information.</span></span>  

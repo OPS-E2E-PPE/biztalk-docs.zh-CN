@@ -1,14 +1,14 @@
 ---
-title: "在消息分配中使用非规范 Xpath |Microsoft 文档"
-ms.custom: 
+title: 在消息分配中使用非规范 Xpath |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 052d1d72-43ce-4654-bf29-86f82ad65e91
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287621"
 ---
 # <a name="using-non-canonical-xpaths-in-message-assignments"></a><span data-ttu-id="c6bf4-102">在消息赋值中使用非规范化 XPath</span><span class="sxs-lookup"><span data-stu-id="c6bf4-102">Using Non-Canonical XPaths in Message Assignments</span></span>
 <span data-ttu-id="c6bf4-103">如果使用 .Net 消息部分，则可以用 XML 序列化属性批注代码，不过，当代码中还附带可分辨字段和/或属性批注时，会使 XPath 表达式变得极其复杂。</span><span class="sxs-lookup"><span data-stu-id="c6bf4-103">If you use .Net message parts, it is possible to annotate your code with the XML serialization attribute that, when also accompanied by distinguished fields and/or property annotations, can result in fairly complex XPath expressions.</span></span> <span data-ttu-id="c6bf4-104">这些复杂的 XPath 表达式可能是非规范化的。</span><span class="sxs-lookup"><span data-stu-id="c6bf4-104">It is possible that these complex XPath expressions will be non-canonical.</span></span> <span data-ttu-id="c6bf4-105">非规范化 XPath 只能用于直接绑定的业务流程，如果用于逻辑绑定或物理绑定的业务流程，可能会失败。</span><span class="sxs-lookup"><span data-stu-id="c6bf4-105">Non-canonical XPath should only be used in direct bound orchestrations and may fail with logically or physically bound orchestrations.</span></span> <span data-ttu-id="c6bf4-106">直接绑定的业务流程不依赖管道来处理 XML 文档，因此在处理之前，整个 XML 文档已加载到内存中。</span><span class="sxs-lookup"><span data-stu-id="c6bf4-106">Direct bound orchestrations do not rely on a pipeline for processing the XML document; as a result, the entire XML document is loaded in memory prior to processing.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何诊断问题 HTTP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何诊断问题 HTTP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 91f818dd-11fa-4ea4-b904-e8e00b3e49b4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249837"
 ---
 # <a name="how-to-diagnose-problems-with-the-http-adapter"></a><span data-ttu-id="c5671-102">如何使用 HTTP 适配器诊断问题</span><span class="sxs-lookup"><span data-stu-id="c5671-102">How to Diagnose Problems with the HTTP Adapter</span></span>
 <span data-ttu-id="c5671-103">本部分包含用 HTTP 适配器帮助诊断问题所要遵循的步骤。</span><span class="sxs-lookup"><span data-stu-id="c5671-103">This section contains steps that can be followed to help diagnose problems with the HTTP adapter.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="c5671-107">*%Windir%\\*system32\LogFiles\W3SVC1\\</span><span class="sxs-lookup"><span data-stu-id="c5671-107">*%WinDir%\\*system32\LogFiles\W3SVC1\\</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="c5671-108">*%Windir%*是 IIS 服务器上的 Windows 目录的位置的占位符。</span><span class="sxs-lookup"><span data-stu-id="c5671-108">*%WinDir%* is a placeholder for the location of the Windows directory on the IIS server.</span></span>  
+    >  <span data-ttu-id="c5671-108">*%Windir%* 是 IIS 服务器上的 Windows 目录的位置的占位符。</span><span class="sxs-lookup"><span data-stu-id="c5671-108">*%WinDir%* is a placeholder for the location of the Windows directory on the IIS server.</span></span>  
   
      <span data-ttu-id="c5671-109">默认情况下，在基于 [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] 的计算机上，HTTPERR 日志文件位于下面的目录中：</span><span class="sxs-lookup"><span data-stu-id="c5671-109">By default the HTTPERR log files on a [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] based computer are located in the following directory:</span></span>  
   

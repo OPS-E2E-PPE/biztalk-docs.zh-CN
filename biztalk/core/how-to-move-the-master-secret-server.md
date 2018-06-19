@@ -1,18 +1,18 @@
 ---
-title: "如何移动主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何移动主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [Master Secret server], migrating
 - migrating, Master Secret server
 - Master Secret server, migrating
 ms.assetid: 2bc5137e-f81d-486d-bb91-7c5981896f79
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007806"
 ---
 # <a name="how-to-move-the-master-secret-server"></a><span data-ttu-id="7e0a4-102">如何移动主密钥服务器</span><span class="sxs-lookup"><span data-stu-id="7e0a4-102">How to Move the Master Secret Server</span></span>
 <span data-ttu-id="7e0a4-103">本主题将介绍将主密钥从一个服务器移至另一个服务器时可遵循的步骤以及将主密钥从一个服务器移至 Windows Server 群集时可遵循的步骤。</span><span class="sxs-lookup"><span data-stu-id="7e0a4-103">This topic documents the steps you can follow to move the master secret from one server to another and the steps you can follow to move the master secret from one server to a Windows Server Cluster.</span></span>  

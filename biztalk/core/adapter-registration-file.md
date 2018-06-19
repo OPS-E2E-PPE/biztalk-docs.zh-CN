@@ -1,14 +1,14 @@
 ---
-title: "适配器注册文件 |Microsoft 文档"
-ms.custom: 
+title: 适配器注册文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6750f0ed-4411-4a63-a7fe-f66132cd1e22
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26009102"
 ---
 # <a name="adapter-registration-file"></a><span data-ttu-id="f5da1-102">适配器注册文件</span><span class="sxs-lookup"><span data-stu-id="f5da1-102">Adapter Registration File</span></span>
 <span data-ttu-id="f5da1-103">已成功生成自定义适配器代码后必须将它注册与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="f5da1-103">After the custom adapter code has been successfully built it must be registered with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f5da1-104">可通过使用适当的适配器设置更新注册表来完成此步骤。</span><span class="sxs-lookup"><span data-stu-id="f5da1-104">You do this by updating the registry with the appropriate adapter settings.</span></span> <span data-ttu-id="f5da1-105">你可以手动编写注册表文件，但由于需要输入的信息要求精确且比较复杂，这样做容易出错。</span><span class="sxs-lookup"><span data-stu-id="f5da1-105">You can manually write a registry file, but this is prone to errors due to the preciseness and complexity of the information that you need to enter.</span></span> <span data-ttu-id="f5da1-106">一个更好的办法是运行适配器注册向导。</span><span class="sxs-lookup"><span data-stu-id="f5da1-106">A better decision is to run the Adapter Registry Wizard.</span></span> <span data-ttu-id="f5da1-107">适配器注册向导提供的所有选项与从头创建注册表文件时提供的完全一样，能降低文件中出错的可能性。</span><span class="sxs-lookup"><span data-stu-id="f5da1-107">The Adapter Registry Wizard gives you all the same options as creating a registry file from scratch, and reduces the likelihood of errors in the file.</span></span> <span data-ttu-id="f5da1-108">有关适配器注册表向导的详细信息，请参阅[适配器注册表向导](../core/adapter-registry-wizard.md)。</span><span class="sxs-lookup"><span data-stu-id="f5da1-108">For more information about the Adapter Registry Wizard, see [Adapter Registry Wizard](../core/adapter-registry-wizard.md).</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "如何列出用户映射 |Microsoft 文档"
-ms.custom: 
+title: 如何列出用户映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO maps], listing maps
 - maps [SSO], listing maps
 ms.assetid: f9b73785-3a59-45c8-9e88-d2d16b5a46aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972147"
 ---
 # <a name="how-to-list-user-mappings"></a><span data-ttu-id="75eaa-102">如何列出用户映射</span><span class="sxs-lookup"><span data-stu-id="75eaa-102">How to List User Mappings</span></span>
 <span data-ttu-id="75eaa-103">使用此命令可以列出指定用户的所有现有映射。</span><span class="sxs-lookup"><span data-stu-id="75eaa-103">Use this command to list all the existing mappings for the specified user.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="75eaa-110">执行以下操作之一：</span><span class="sxs-lookup"><span data-stu-id="75eaa-110">Do one of the following:</span></span>  
   
-    -   <span data-ttu-id="75eaa-111">类型**ssomanage-listmappings *\<域\>\\< 用户名\>*** 若要列出给定的用户有关联的应用程序中的所有映射他/她所属，where *\<域\>*是用户帐户的 Microsoft Windows 域和*\<用户名\>*是你想要列出的用户映射的 Windows 用户名。</span><span class="sxs-lookup"><span data-stu-id="75eaa-111">Type **ssomanage –listmappings *\<domain\>\\<username\>*** to list all the mappings a given user has in the affiliate applications he/she belongs to, where *\<domain\>* is the Microsoft Windows domain for the user account, and *\<username\>* is the Windows user name for which you want to list the user mappings.</span></span> <span data-ttu-id="75eaa-112">如果用户是关联管理员或 SSO 管理员，此命令将列出该用户在所有关联应用程序中的所有映射。</span><span class="sxs-lookup"><span data-stu-id="75eaa-112">If the user is an Affiliate Administrator or an SSO Administrator, this command will list all the mappings for that user in all the affiliate applications.</span></span>  
+    -   <span data-ttu-id="75eaa-111">类型**ssomanage-listmappings *\<域\>\\< 用户名\>*** 若要列出给定的用户有关联的应用程序中的所有映射他/她所属，where *\<域\>* 是用户帐户的 Microsoft Windows 域和*\<用户名\>* 是你想要列出的用户映射的 Windows 用户名。</span><span class="sxs-lookup"><span data-stu-id="75eaa-111">Type **ssomanage –listmappings *\<domain\>\\<username\>*** to list all the mappings a given user has in the affiliate applications he/she belongs to, where *\<domain\>* is the Microsoft Windows domain for the user account, and *\<username\>* is the Windows user name for which you want to list the user mappings.</span></span> <span data-ttu-id="75eaa-112">如果用户是关联管理员或 SSO 管理员，此命令将列出该用户在所有关联应用程序中的所有映射。</span><span class="sxs-lookup"><span data-stu-id="75eaa-112">If the user is an Affiliate Administrator or an SSO Administrator, this command will list all the mappings for that user in all the affiliate applications.</span></span>  
   
          <span data-ttu-id="75eaa-113">或</span><span class="sxs-lookup"><span data-stu-id="75eaa-113">Or</span></span>  
   

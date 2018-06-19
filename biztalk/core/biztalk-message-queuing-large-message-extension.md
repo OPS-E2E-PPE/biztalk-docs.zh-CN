@@ -1,17 +1,17 @@
 ---
-title: "BizTalk 消息队列大型消息扩展 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 消息队列大型消息扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Message Queuing Large Message Extension
 - utilities, BizTalk Message Queuing Large Message Extension
 ms.assetid: 5d6892d3-fda8-41a3-8111-d28c11bd71fb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006398"
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a><span data-ttu-id="e3295-102">BizTalk 消息队列大型消息扩展</span><span class="sxs-lookup"><span data-stu-id="e3295-102">BizTalk Message Queuing Large Message Extension</span></span>
 <span data-ttu-id="e3295-103">本机消息队列无法处理的消息其正文大于 4megabytes (MB)。</span><span class="sxs-lookup"><span data-stu-id="e3295-103">Native message queuing cannot process a message with a body larger than 4megabytes (MB).</span></span> <span data-ttu-id="e3295-104">但是，Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含的本地消息队列的加载项可处理大于 4 MB 的消息。</span><span class="sxs-lookup"><span data-stu-id="e3295-104">However, Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes an add-on for native message queuing that permits processing messages larger than 4 MB.</span></span> <span data-ttu-id="e3295-105">此外接程序传递为 Mqrtlarge.dll 文件中，并公开**MQSendLargeMessage**和**MQReceiveLargeMessage**应用程序的编程接口 (Api) 和类似的 COM 模型。</span><span class="sxs-lookup"><span data-stu-id="e3295-105">This add-on is delivered as the Mqrtlarge.dll file, and exposes the **MQSendLargeMessage** and **MQReceiveLargeMessage** application programming interfaces (APIs), and the analogous COM model.</span></span> <span data-ttu-id="e3295-106">这些函数的实现是作为标准的消息队列 Api， **MQSendMessage**和**MQReceiveMessage**分别。</span><span class="sxs-lookup"><span data-stu-id="e3295-106">These functions are implemented as standard message queuing APIs, **MQSendMessage** and **MQReceiveMessage** respectively.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 |<span data-ttu-id="e3295-113">文件</span><span class="sxs-lookup"><span data-stu-id="e3295-113">File(s)</span></span>|<span data-ttu-id="e3295-114">Description</span><span class="sxs-lookup"><span data-stu-id="e3295-114">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="e3295-115">Mqrtlarge.dll</span><span class="sxs-lookup"><span data-stu-id="e3295-115">Mqrtlarge.dll</span></span>|<span data-ttu-id="e3295-116">公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。</span><span class="sxs-lookup"><span data-stu-id="e3295-116">A Win32 dynamic-link library that exposes **MQSendLargeMessage** and **MQReceiveLargeMessage**.</span></span><br /><br /> <span data-ttu-id="e3295-117">标头文件位于*\<安装路径\>*\SDK\Include 目录。</span><span class="sxs-lookup"><span data-stu-id="e3295-117">The header files are located in the *\<Installation Path\>*\SDK\Include directory.</span></span> <span data-ttu-id="e3295-118">**注意：**必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="e3295-118">**Note:**  You must install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] onto a 64 bit version of Windows in order to access the 64 bit version of Mqrtlarge.dll.</span></span>|  
+|<span data-ttu-id="e3295-115">Mqrtlarge.dll</span><span class="sxs-lookup"><span data-stu-id="e3295-115">Mqrtlarge.dll</span></span>|<span data-ttu-id="e3295-116">公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。</span><span class="sxs-lookup"><span data-stu-id="e3295-116">A Win32 dynamic-link library that exposes **MQSendLargeMessage** and **MQReceiveLargeMessage**.</span></span><br /><br /> <span data-ttu-id="e3295-117">标头文件位于*\<安装路径\>* \SDK\Include 目录。</span><span class="sxs-lookup"><span data-stu-id="e3295-117">The header files are located in the *\<Installation Path\>* \SDK\Include directory.</span></span> <span data-ttu-id="e3295-118">**注意：** 必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="e3295-118">**Note:**  You must install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] onto a 64 bit version of Windows in order to access the 64 bit version of Mqrtlarge.dll.</span></span>|  
   
  <span data-ttu-id="e3295-119">**使用此实用工具**</span><span class="sxs-lookup"><span data-stu-id="e3295-119">**Using This Utility**</span></span>  
   

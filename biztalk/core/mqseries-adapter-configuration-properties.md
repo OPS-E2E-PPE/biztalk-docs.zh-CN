@@ -1,11 +1,11 @@
 ---
-title: "MQSeries 适配器配置属性 |Microsoft 文档"
-ms.custom: 
+title: MQSeries 适配器配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQSeries adapters, code sample
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - MQSeries adapters, receive location
 - send ports, adapters
 ms.assetid: 7517a8bf-aa65-4af9-aed0-7c74fb480328
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972483"
 ---
 # <a name="mqseries-adapter-configuration-properties"></a><span data-ttu-id="17f0c-102">MQSeries 适配器配置属性</span><span class="sxs-lookup"><span data-stu-id="17f0c-102">MQSeries Adapter Configuration Properties</span></span>
 <span data-ttu-id="17f0c-103">下表列出了可为 MQSeries 适配器接收位置设置的配置属性：</span><span class="sxs-lookup"><span data-stu-id="17f0c-103">The following table lists the configuration properties that you can set for an MQSeries adapter receive location:</span></span>  

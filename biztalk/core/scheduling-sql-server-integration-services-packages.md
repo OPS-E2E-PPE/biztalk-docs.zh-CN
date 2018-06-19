@@ -1,14 +1,14 @@
 ---
-title: "计划 SQL Server Integration Services 包 |Microsoft 文档"
-ms.custom: 
+title: 计划 SQL Server Integration Services 包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 037ae2cf-c352-4823-95df-9a723f2b5a81
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975947"
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a><span data-ttu-id="e686b-102">计划 SQL Server Integration Services 包</span><span class="sxs-lookup"><span data-stu-id="e686b-102">Scheduling SQL Server Integration Services Packages</span></span>
 <span data-ttu-id="e686b-103">用户可以创建基于存储在联机分析处理 (OLAP) 多维数据集中的数据的 BAM 视图。</span><span class="sxs-lookup"><span data-stu-id="e686b-103">Users create BAM views based on data stored in an online analytical processing (OLAP) cube.</span></span> <span data-ttu-id="e686b-104">多维数据集更新集成服务包将刷新多维数据集中的数据，以便 OLAP 视图可以反映正确的数据。</span><span class="sxs-lookup"><span data-stu-id="e686b-104">The Cube Update Integration Services package refreshes the data in the cube so that OLAP views reflect the correct data.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="e686b-127">在控制台树中，展开**Integration Services**，展开**存储的包**，然后单击**MSDB**。</span><span class="sxs-lookup"><span data-stu-id="e686b-127">In the console tree, expand **Integration Services**, expand **Stored Packages**, and then click **MSDB**.</span></span>  
   
-8.  <span data-ttu-id="e686b-128">右键单击**BAM_AN_\<视图名称\>**包，并依次**运行包**。</span><span class="sxs-lookup"><span data-stu-id="e686b-128">Right-click the **BAM_AN_\<View name\>** package, and then click **Run Package**.</span></span>  
+8.  <span data-ttu-id="e686b-128">右键单击**BAM_AN_\<视图名称\>** 包，并依次**运行包**。</span><span class="sxs-lookup"><span data-stu-id="e686b-128">Right-click the **BAM_AN_\<View name\>** package, and then click **Run Package**.</span></span>  
   
 ### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a><span data-ttu-id="e686b-129">运行维护 BAM 数据集成服务包</span><span class="sxs-lookup"><span data-stu-id="e686b-129">To run the Maintaining BAM Data Integration Services package</span></span>  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="e686b-136">在控制台树中，展开**Integration Services**，展开**存储的包**，然后单击**MSDB**。</span><span class="sxs-lookup"><span data-stu-id="e686b-136">In the console tree, expand **Integration Services**, expand **Stored Packages**, and then click **MSDB**.</span></span>  
   
-8.  <span data-ttu-id="e686b-137">右键单击**BAM_DM_\<活动名称\>**包，并依次**运行包**。</span><span class="sxs-lookup"><span data-stu-id="e686b-137">Right-click the **BAM_DM_\<Activity name\>** package, and then click **Run Package**.</span></span>  
+8.  <span data-ttu-id="e686b-137">右键单击**BAM_DM_\<活动名称\>** 包，并依次**运行包**。</span><span class="sxs-lookup"><span data-stu-id="e686b-137">Right-click the **BAM_DM_\<Activity name\>** package, and then click **Run Package**.</span></span>  
   
 ### <a name="to-schedule-the-packages-to-run-regularly"></a><span data-ttu-id="e686b-138">安排包进行定期运行</span><span class="sxs-lookup"><span data-stu-id="e686b-138">To schedule the packages to run regularly</span></span>  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
   
 14. <span data-ttu-id="e686b-153">在**服务器**下拉列表中，选择在其运行作业的服务器。</span><span class="sxs-lookup"><span data-stu-id="e686b-153">In the **Server** drop-down list, select the server on which you are running the job.</span></span>  
   
-15. <span data-ttu-id="e686b-154">单击的文件选择器按钮**包**文本框中，选择要计划的包 (任一**BAM_DM_\<活动名称\>**或**BAM_AN_\<视图名称\>**包)，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="e686b-154">Click the file selector button for the **Package** text box, select the package you are scheduling (either the **BAM_DM_\<Activity name\>** or **BAM_AN_\<View name\>** package), and then click **OK**.</span></span>  
+15. <span data-ttu-id="e686b-154">单击的文件选择器按钮**包**文本框中，选择要计划的包 (任一**BAM_DM_\<活动名称\>** 或**BAM_AN_\<视图名称\>** 包)，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="e686b-154">Click the file selector button for the **Package** text box, select the package you are scheduling (either the **BAM_DM_\<Activity name\>** or **BAM_AN_\<View name\>** package), and then click **OK**.</span></span>  
   
 16. <span data-ttu-id="e686b-155">在**选择页**窗口中，单击**计划**，然后单击**新建**。</span><span class="sxs-lookup"><span data-stu-id="e686b-155">In the **Select a page** window, click **Schedules**, and then click **New**.</span></span> <span data-ttu-id="e686b-156">这将打开**新建作业计划**对话框。</span><span class="sxs-lookup"><span data-stu-id="e686b-156">This opens the **New Job Schedule** dialog box.</span></span>  
   

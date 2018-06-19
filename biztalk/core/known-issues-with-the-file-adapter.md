@@ -1,14 +1,14 @@
 ---
-title: "文件适配器的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 文件适配器的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6aaf448c-0035-4648-910b-ae2f15106342
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262885"
 ---
 # <a name="known-issues-with-the-file-adapter"></a><span data-ttu-id="6bbed-102">文件适配器的已知的问题</span><span class="sxs-lookup"><span data-stu-id="6bbed-102">Known Issues with the File Adapter</span></span>
 <span data-ttu-id="6bbed-103">本部分包含可帮助你避免出现错误的信息。</span><span class="sxs-lookup"><span data-stu-id="6bbed-103">This section contains information that may help you avoid errors.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="6bbed-116">请确保指定的路径或共享已存在。</span><span class="sxs-lookup"><span data-stu-id="6bbed-116">Ensure that the specified path or share exists.</span></span>  
   
--   <span data-ttu-id="6bbed-117">请确保帐户用作**登录：**帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。</span><span class="sxs-lookup"><span data-stu-id="6bbed-117">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
+-   <span data-ttu-id="6bbed-117">请确保帐户用作**登录：** 帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。</span><span class="sxs-lookup"><span data-stu-id="6bbed-117">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
   
 -   <span data-ttu-id="6bbed-118">请确保写入由文件接收适配器监视的文件夹的文件的文件名长度不超出 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="6bbed-118">Ensure that files written to the folder monitored by the File receive adapter do not have file names exceeding 256 characters.</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="6bbed-131">请确保位于指定接收位置的文件不具有系统属性。</span><span class="sxs-lookup"><span data-stu-id="6bbed-131">Ensure that the files in the specified receive location are not marked with a system attribute.</span></span>  
   
--   <span data-ttu-id="6bbed-132">请确保帐户用作**登录：**帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。</span><span class="sxs-lookup"><span data-stu-id="6bbed-132">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
+-   <span data-ttu-id="6bbed-132">请确保帐户用作**登录：** 帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。</span><span class="sxs-lookup"><span data-stu-id="6bbed-132">Ensure that the account used as the **Logon:** account for the File receive handler host instance has read and write permissions to the specified receive location.</span></span>  
   
 -   <span data-ttu-id="6bbed-133">请确保写入由文件接收适配器监视的文件夹的文件的文件名长度不超出 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="6bbed-133">Ensure that files written to the folder monitored by the File receive adapter do not have file names exceeding 256 characters.</span></span>  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="6bbed-146">请确保指定的路径或共享已存在。</span><span class="sxs-lookup"><span data-stu-id="6bbed-146">Ensure that the specified path or share exists.</span></span>  
   
--   <span data-ttu-id="6bbed-147">请确保帐户用作**登录：**文件发送处理程序主机实例的帐户具有读取和写入到指定的目录或文件共享的权限。</span><span class="sxs-lookup"><span data-stu-id="6bbed-147">Ensure that the account used as the **Logon:** account for the File send handler host instance has read and write permissions to the specified directory or file share.</span></span>  
+-   <span data-ttu-id="6bbed-147">请确保帐户用作**登录：** 文件发送处理程序主机实例的帐户具有读取和写入到指定的目录或文件共享的权限。</span><span class="sxs-lookup"><span data-stu-id="6bbed-147">Ensure that the account used as the **Logon:** account for the File send handler host instance has read and write permissions to the specified directory or file share.</span></span>  
   
 -   <span data-ttu-id="6bbed-148">请确保位于指定目录或文件共享的现有文件不具有系统属性。</span><span class="sxs-lookup"><span data-stu-id="6bbed-148">Ensure that existing files in the specified directory or file share are not marked with the system attribute.</span></span>  
   

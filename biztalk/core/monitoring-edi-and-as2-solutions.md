@@ -1,14 +1,14 @@
 ---
-title: "监视 EDI 和 AS2 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 监视 EDI 和 AS2 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67987c9e-888c-4c10-95b9-af247a844681
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262917"
 ---
 # <a name="monitoring-edi-and-as2-solutions"></a><span data-ttu-id="eed1d-102">监视 EDI 和 AS2 解决方案</span><span class="sxs-lookup"><span data-stu-id="eed1d-102">Monitoring EDI and AS2 Solutions</span></span>
 <span data-ttu-id="eed1d-103">通过 EDI 和 AS2 状态报告 UI，您可以显示传入和传出 EDI 及 AS2 消息的状态。</span><span class="sxs-lookup"><span data-stu-id="eed1d-103">The EDI and AS2 status reporting UI enables you to display the status of incoming and outgoing EDI and AS2 messages.</span></span> <span data-ttu-id="eed1d-104">可以从查看状态报告**组概述**窗格中单击 BizTalk 组节点时可访问，链接到 EDI、 AS2 和批处理状态报告是否都存在底部**组概述**窗格。</span><span class="sxs-lookup"><span data-stu-id="eed1d-104">Status Reports can be viewed from the **Group Overview** pane accessible when BizTalk Group Node is clicked, the links to the EDI, AS2 and Batching Status Reporting are present at the bottom of the **Group Overview** pane.</span></span>  

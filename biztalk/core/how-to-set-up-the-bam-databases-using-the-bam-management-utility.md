@@ -1,14 +1,14 @@
 ---
-title: "如何使用 BAM 管理实用工具的 BAM 数据库设置 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 BAM 管理实用工具的 BAM 数据库设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 801338f4-b363-4f8e-b248-9c628065ded2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971307"
 ---
 # <a name="how-to-set-up-the-bam-databases-using-the-bam-management-utility"></a><span data-ttu-id="3ab17-102">如何使用 BAM 管理实用工具 BAM 数据库设置</span><span class="sxs-lookup"><span data-stu-id="3ab17-102">How to Set Up the BAM Databases Using the BAM Management Utility</span></span>
 <span data-ttu-id="3ab17-103">通常，管理员使用 BizTalk Server 配置实用程序来设置 BAM 数据库。</span><span class="sxs-lookup"><span data-stu-id="3ab17-103">Administrators typically use the BizTalk Server configuration utility to set up the BAM databases.</span></span> <span data-ttu-id="3ab17-104">您可以使用 BAM 管理实用程序 (bm.exe) 作为设置数据库的备选方法。</span><span class="sxs-lookup"><span data-stu-id="3ab17-104">You can use the BAM Management utility (bm.exe) as an alternate method to set up the databases.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "监视服务面向解决方案与 BAM |Microsoft 文档"
-ms.custom: 
+title: 监视服务面向解决方案与 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - monitoring, service solutions
 - service solution tutorial, monitoring
 - OrchestrationEventStream object
 ms.assetid: 9b251580-9371-490e-9218-0ce3f6b00fa6
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264109"
 ---
 # <a name="monitoring-the-service-oriented-solution-with-bam"></a><span data-ttu-id="358d4-102">监视服务面向与 BAM 解决方案</span><span class="sxs-lookup"><span data-stu-id="358d4-102">Monitoring the Service Oriented Solution with BAM</span></span>
 <span data-ttu-id="358d4-103">解决方案监视的所有版本中的活动**CustomerService**使用业务活动监视 (BAM) API 的业务流程。</span><span class="sxs-lookup"><span data-stu-id="358d4-103">The solution monitors activity in all versions of the **CustomerService** orchestration using the Business Activity Monitoring (BAM) API.</span></span> <span data-ttu-id="358d4-104">更具体地说，它使用新**OrchestrationEventStream**对象。</span><span class="sxs-lookup"><span data-stu-id="358d4-104">More specifically, it uses the new **OrchestrationEventStream** object.</span></span>  

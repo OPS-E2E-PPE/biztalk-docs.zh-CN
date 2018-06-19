@@ -1,17 +1,17 @@
 ---
-title: "数值范围维度 |Microsoft 文档"
-ms.custom: 
+title: 数值范围维度 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], Numeric Range dimension
 - Numeric Range dimension [BAM]
 ms.assetid: a874ce44-b034-498f-ba58-114028dbef2c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263397"
 ---
 # <a name="numeric-range-dimension"></a><span data-ttu-id="ba08b-102">数值范围维度</span><span class="sxs-lookup"><span data-stu-id="ba08b-102">Numeric Range Dimension</span></span>
 <span data-ttu-id="ba08b-103">使用数值范围维度，您可以根据给定数值范围的友好名称对聚合进行分类。</span><span class="sxs-lookup"><span data-stu-id="ba08b-103">The numeric range dimension allows aggregations to be categorized based on friendly names of given ranges.</span></span> <span data-ttu-id="ba08b-104">例如，业务分析员可以定义一个名为“采购订单大小”的数值范围维度，其中范围“小”表示采购订单金额在 0-$100 之间，范围“中”代表采购订单金额在 $100 到 $1,000 之间，范围“大”代表采购订单金额超过 $1,000。</span><span class="sxs-lookup"><span data-stu-id="ba08b-104">For example, a business analyst can define a numeric range dimension named PO Size with the ranges Small for purchase orders between 0-$100, Medium for purchase orders between $100 to $1,000, and Large for purchase orders exceeding $1,000.</span></span>  

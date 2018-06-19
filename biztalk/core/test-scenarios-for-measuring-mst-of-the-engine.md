@@ -1,14 +1,14 @@
 ---
-title: "测试方案，用于测量引擎 MST |Microsoft 文档"
-ms.custom: 
+title: 测试方案，用于测量引擎 MST |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008014"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a><span data-ttu-id="439ee-102">测量引擎的 MST 的测试方案</span><span class="sxs-lookup"><span data-stu-id="439ee-102">Test Scenarios for Measuring MST of the Engine</span></span>
 <span data-ttu-id="439ee-103">本部分介绍的测试方案用于度量在三个不同负载级别上驱动 BizTalk 系统的效果：</span><span class="sxs-lookup"><span data-stu-id="439ee-103">This section describes a test scenario that was implemented to measure the effect of driving a BizTalk system at three different levels of load:</span></span>  
@@ -80,15 +81,15 @@ ms.lasthandoff: 12/01/2017
   
  <span data-ttu-id="439ee-163">以下参数是可在度量 MST 时计算的辅助指标。</span><span class="sxs-lookup"><span data-stu-id="439ee-163">The following parameters are secondary indicators that can be evaluated when measuring MST.</span></span> <span data-ttu-id="439ee-164">这些参数可能会影响后台处理深度的主要指标，以及每秒收到的文档数。</span><span class="sxs-lookup"><span data-stu-id="439ee-164">These parameters may impact the primary indicators of spool depth and the number of documents received per second.</span></span>  
   
--   <span data-ttu-id="439ee-165">物理磁盘空闲时间 MessageBox 数据和事务文件磁盘测量**%空闲时间**计数器适用于**逻辑磁盘使用情况**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-165">The physical disk idle time for the MessageBox data and transaction file disk as measured by the **%Idle Time** counter available with the **LogicalDisk** performance object.</span></span>  
+-   <span data-ttu-id="439ee-165">物理磁盘空闲时间 MessageBox 数据和事务文件磁盘测量 **%空闲时间**计数器适用于**逻辑磁盘使用情况**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-165">The physical disk idle time for the MessageBox data and transaction file disk as measured by the **%Idle Time** counter available with the **LogicalDisk** performance object.</span></span>  
   
 -   <span data-ttu-id="439ee-166">MessageBox 服务器测量的 CPU 使用率 （%） **%Processor Time**计数器适用于**处理器**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-166">The CPU utilization (%) for the MessageBox server as measured by the **%Processor Time** counter available with the **Processor** performance object.</span></span>  
   
 -   <span data-ttu-id="439ee-167">每秒锁超时消息框上的数据库测量**Lock Timeouts/sec**计数器适用于**sqlserver: Locks**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-167">The lock timeouts per second on the MessageBox database as measured by the **Lock Timeouts/sec** counter available with the **SQLServer:Locks** performance object.</span></span>  
   
--   <span data-ttu-id="439ee-168">最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除的消息关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="439ee-168">The time in seconds for the most recent run of the SQL agent job that cleans up message box tables associated with removed messages.</span></span> <span data-ttu-id="439ee-169">这通过测量**MsgBox 消息 Cleanup(Purge Jobs)**计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-169">This is measured by the **MsgBox Msg Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
+-   <span data-ttu-id="439ee-168">最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除的消息关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="439ee-168">The time in seconds for the most recent run of the SQL agent job that cleans up message box tables associated with removed messages.</span></span> <span data-ttu-id="439ee-169">这通过测量**MsgBox 消息 Cleanup(Purge Jobs)** 计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-169">This is measured by the **MsgBox Msg Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
   
--   <span data-ttu-id="439ee-170">最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除消息的各部分关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="439ee-170">The time in seconds for the most recent run of the SQL agent job which cleans up message box tables associated with removed message parts.</span></span> <span data-ttu-id="439ee-171">这通过测量**MsgBox 部件 Cleanup(Purge Jobs)**计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-171">This is measured by the **MsgBox Parts Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
+-   <span data-ttu-id="439ee-170">最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除消息的各部分关联的 MessageBox 表。</span><span class="sxs-lookup"><span data-stu-id="439ee-170">The time in seconds for the most recent run of the SQL agent job which cleans up message box tables associated with removed message parts.</span></span> <span data-ttu-id="439ee-171">这通过测量**MsgBox 部件 Cleanup(Purge Jobs)** 计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。</span><span class="sxs-lookup"><span data-stu-id="439ee-171">This is measured by the **MsgBox Parts Cleanup(Purge Jobs)** counter available with the **BizTalk:MessageBox:General Counters** performance object.</span></span>  
   
  <span data-ttu-id="439ee-172">在测试以确定最大可承受吞吐量时，输入负载将增大到后台处理表开始无限增长的点上。</span><span class="sxs-lookup"><span data-stu-id="439ee-172">When testing to determine the maximum sustainable throughput, input load was increased up to the point that the spool table started to grow indefinitely.</span></span>  
   

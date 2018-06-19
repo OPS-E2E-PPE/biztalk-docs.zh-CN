@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestration （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: MQSCorrelationSetOrchestration （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: fcda65d0-e3ec-4ead-978d-3904903b8762
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974979"
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a><span data-ttu-id="d91e0-102">MQSCorrelationSetOrchestration（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="d91e0-102">MQSCorrelationSetOrchestration (BizTalk Server Sample)</span></span>
 <span data-ttu-id="d91e0-103">MQSCorrelationSetOrchestration 示例演示如何使用 MQSeries 相关标识符将发送至 MQSeries 队列的消息重新与正在运行的业务流程关联。</span><span class="sxs-lookup"><span data-stu-id="d91e0-103">The MQSCorrelationSetOrchestration sample demonstrates how to use the MQSeries correlation identifier for correlating messages sent to an MQSeries queue back to a running orchestration.</span></span> <span data-ttu-id="d91e0-104">业务流程设置 MQSeries 相关标识符和消息使用的标识符值**MQMD_CorrelId**和**MQMD_MsgID**属性。</span><span class="sxs-lookup"><span data-stu-id="d91e0-104">The orchestration sets the MQSeries correlation identifier and message identifier values using the **MQMD_CorrelId** and **MQMD_MsgID** properties.</span></span> <span data-ttu-id="d91e0-105">MQSeries 队列管理器将 MessageID 值复制到消息的 CorrelationID 属性。</span><span class="sxs-lookup"><span data-stu-id="d91e0-105">The MQSeries Queue Manager copies the MessageID value to the CorrelationID property of the message.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="d91e0-114">本示例将演示一个方案，在该方案中可以将业务流程正在处理的文档发送至 MQSeries 队列（可能用于其他处理），然后返回正在运行的业务流程。</span><span class="sxs-lookup"><span data-stu-id="d91e0-114">This sample illustrates a scenario in which a document that is being processed by an orchestration can be sent to an MQSeries queue (presumably for additional processing) and returned back to the running orchestration.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="d91e0-115">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="d91e0-115">Where to Find This Sample</span></span>  
- <span data-ttu-id="d91e0-116">*\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span><span class="sxs-lookup"><span data-stu-id="d91e0-116">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span></span>  
+ <span data-ttu-id="d91e0-116">*\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span><span class="sxs-lookup"><span data-stu-id="d91e0-116">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration</span></span>  
   
  <span data-ttu-id="d91e0-117">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="d91e0-117">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="d91e0-132">单击**启动**，指向**程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ 资源管理器**。</span><span class="sxs-lookup"><span data-stu-id="d91e0-132">Click **Start**, point to **Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  <span data-ttu-id="d91e0-133">双击**队列管理器**，然后双击默认队列管理器。</span><span class="sxs-lookup"><span data-stu-id="d91e0-133">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="d91e0-134">默认的队列管理器通常命名为**QM_ < machine_name >**其中*machine_name*是你的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="d91e0-134">The default queue manager is typically named **QM_<machine_name>** where *machine_name* is the name of your computer.</span></span>  
+2.  <span data-ttu-id="d91e0-133">双击**队列管理器**，然后双击默认队列管理器。</span><span class="sxs-lookup"><span data-stu-id="d91e0-133">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="d91e0-134">默认的队列管理器通常命名为**QM_ < machine_name >** 其中*machine_name*是你的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="d91e0-134">The default queue manager is typically named **QM_<machine_name>** where *machine_name* is the name of your computer.</span></span>  
   
 3.  <span data-ttu-id="d91e0-135">右键单击**队列**，指向**新建**，然后单击**本地队列**。</span><span class="sxs-lookup"><span data-stu-id="d91e0-135">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   

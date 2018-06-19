@@ -1,14 +1,14 @@
 ---
-title: "（适用于 Azure) 中的步骤 1： 创建 EDI 项目 |Microsoft 文档"
-ms.custom: 
+title: （适用于 Azure) 中的步骤 1： 创建 EDI 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d353129-04f0-456b-b371-b346959f5155
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009998"
 ---
 # <a name="step-1-for-azure-create-the-edi-project"></a><span data-ttu-id="96094-102">（适用于 Azure) 中的步骤 1： 创建 EDI 项目</span><span class="sxs-lookup"><span data-stu-id="96094-102">Step 1 (For Azure): Create the EDI Project</span></span>
 <span data-ttu-id="96094-103">在本部分中，Contoso 将使用 [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] 2012 年 4 月版本创建一个 EDI 项目。</span><span class="sxs-lookup"><span data-stu-id="96094-103">In this section, Contoso creates an EDI project using the [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] April 2012 release.</span></span> <span data-ttu-id="96094-104">在此项目中，Contoso 将添加以下内容：</span><span class="sxs-lookup"><span data-stu-id="96094-104">As part of the project, Contoso adds the following:</span></span>  

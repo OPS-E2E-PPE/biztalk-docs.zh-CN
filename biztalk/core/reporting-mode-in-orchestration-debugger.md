@@ -1,18 +1,18 @@
 ---
-title: "报告在业务流程调试器模式下 |Microsoft 文档"
-ms.custom: 
+title: 报告在业务流程调试器模式下 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Orchestration Debugger, breakpoints
 - Orchestration Debugger, Reporting mode
 - Reporting mode [Orchestration Debugger]
 ms.assetid: 014a444c-2867-4156-b009-8518e8250d4d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268565"
 ---
 # <a name="reporting-mode-in-orchestration-debugger"></a><span data-ttu-id="68fde-102">业务流程调试器中的“报告”模式</span><span class="sxs-lookup"><span data-stu-id="68fde-102">Reporting Mode in Orchestration Debugger</span></span>
 <span data-ttu-id="68fde-103">“报告”模式使用跟踪的事件来显示所发生的情况。</span><span class="sxs-lookup"><span data-stu-id="68fde-103">Reporting mode uses tracked events to show what has happened.</span></span> <span data-ttu-id="68fde-104">它将使用数据使用跟踪**业务流程事件**选项标志。</span><span class="sxs-lookup"><span data-stu-id="68fde-104">It uses data tracked using the **Orchestration Events** option flag.</span></span> <span data-ttu-id="68fde-105">必须在执行业务流程实例之前设置此标志。</span><span class="sxs-lookup"><span data-stu-id="68fde-105">This flag must be set prior to the execution of the orchestration instance.</span></span> <span data-ttu-id="68fde-106">若要启用事件跟踪适用于特定的业务流程，请参阅[如何配置跟踪为业务流程](../core/how-to-configure-tracking-for-an-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="68fde-106">To enable event tracking for a particular orchestration, see [How to Configure Tracking for an Orchestration](../core/how-to-configure-tracking-for-an-orchestration.md).</span></span>  

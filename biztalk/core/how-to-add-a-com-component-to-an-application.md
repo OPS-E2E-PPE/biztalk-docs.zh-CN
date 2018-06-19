@@ -1,11 +1,11 @@
 ---
-title: "如何将 COM 组件添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将 COM 组件添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], COM components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, COM components
 - COM components, applications
 ms.assetid: fdda1a9d-96af-41fe-9d94-ee1fbd80a7c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007278"
 ---
 # <a name="how-to-add-a-com-component-to-an-application"></a><span data-ttu-id="9d32b-102">如何将 COM 组件添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="9d32b-102">How to Add a COM Component to an Application</span></span>
 <span data-ttu-id="9d32b-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加 COM 组件：</span><span class="sxs-lookup"><span data-stu-id="9d32b-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a COM component to a BizTalk application:</span></span>  

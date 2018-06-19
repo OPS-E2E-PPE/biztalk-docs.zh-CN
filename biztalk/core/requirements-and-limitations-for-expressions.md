@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Expression Editor
 - Expression Editor, Orchestration Designer
 ms.assetid: 1e0353d3-c2f3-4c10-86e3-8620e62dd0d5
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22268381"
 ---
 # <a name="requirements-and-limitations-for-expressions"></a><span data-ttu-id="8799f-102">对表达式的要求和限制</span><span class="sxs-lookup"><span data-stu-id="8799f-102">Requirements and Limitations for Expressions</span></span>
 <span data-ttu-id="8799f-103">业务流程设计器中的 BizTalk 表达式编辑器是标准的 Visual Studio 文本编辑器，这意味着它提供 IntelliSense 功能。</span><span class="sxs-lookup"><span data-stu-id="8799f-103">BizTalk Expression Editor in Orchestration Designer is a standard Visual Studio text editor, which means it offers IntelliSense.</span></span> <span data-ttu-id="8799f-104">使用 BizTalk 表达式编辑器可通过文本形式输入表达式。</span><span class="sxs-lookup"><span data-stu-id="8799f-104">You use BizTalk Expression Editor to enter an expression in textual form.</span></span>  

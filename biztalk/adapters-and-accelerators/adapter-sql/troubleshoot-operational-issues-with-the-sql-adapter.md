@@ -1,15 +1,15 @@
 ---
-title: "使用 BizTalk 中的 SQL 适配器进行的操作问题故障排除 |Microsoft 文档"
-description: "常见的问题和解决方法为 SQL 适配器 BizTalk 适配器包 (BAP) 中"
-ms.custom: 
+title: 使用 BizTalk 中的 SQL 适配器进行的操作问题故障排除 |Microsoft 文档
+description: 常见的问题和解决方法为 SQL 适配器 BizTalk 适配器包 (BAP) 中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c75f85f4-cd03-4c6a-aac9-a6d02d3c3449
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010982"
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a><span data-ttu-id="615af-103">使用 SQL 适配器进行故障排除操作问题：</span><span class="sxs-lookup"><span data-stu-id="615af-103">Troubleshoot Operational Issues with the SQL adapter</span></span>
 <span data-ttu-id="615af-104">本部分讨论如何使用故障排除方法来解决操作使用时可能遇到的错误[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="615af-104">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)].</span></span>  

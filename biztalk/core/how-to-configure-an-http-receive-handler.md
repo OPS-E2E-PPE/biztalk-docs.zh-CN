@@ -1,11 +1,11 @@
 ---
-title: "如何配置 HTTP 接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 HTTP 接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - permissions, receive handlers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - receive handlers, HTTP adapters
 - HTTP adapters, permissions
 ms.assetid: c295489e-dbbb-44f7-bddb-d3cdfe302cf5
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007606"
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a><span data-ttu-id="354d5-102">如何配置 HTTP 接收处理程序</span><span class="sxs-lookup"><span data-stu-id="354d5-102">How to Configure an HTTP Receive Handler</span></span>
 <span data-ttu-id="354d5-103">使用以下过程来为 HTTP 配置属性接收处理程序。</span><span class="sxs-lookup"><span data-stu-id="354d5-103">Use the following procedure to configure the properties for an HTTP receive handler.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="354d5-108">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。</span><span class="sxs-lookup"><span data-stu-id="354d5-108">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then expand **Adapters**.</span></span>  
   
-2.  <span data-ttu-id="354d5-109">在展开的适配器列表中，单击**HTTP，**在右窗格中，右键单击你想要配置，，然后单击接收处理程序**属性**。</span><span class="sxs-lookup"><span data-stu-id="354d5-109">In the expanded adapter list, click **HTTP,** in the right pane, right-click the receive handler that you want to configure, and then click **Properties**.</span></span>  
+2.  <span data-ttu-id="354d5-109">在展开的适配器列表中，单击**HTTP，** 在右窗格中，右键单击你想要配置，，然后单击接收处理程序**属性**。</span><span class="sxs-lookup"><span data-stu-id="354d5-109">In the expanded adapter list, click **HTTP,** in the right pane, right-click the receive handler that you want to configure, and then click **Properties**.</span></span>  
   
 3.  <span data-ttu-id="354d5-110">在**适配器处理程序属性**对话框中，在**常规**选项卡上，在**主机名**列表中，选择接收处理程序将与之关联的主机。</span><span class="sxs-lookup"><span data-stu-id="354d5-110">In the **Adapter Handler Properties** dialog box, on the **General** tab, in the **Host Name** list, select the host with which the receive handler will be associated.</span></span>  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="354d5-116">设置**批大小**属性的值为 1。</span><span class="sxs-lookup"><span data-stu-id="354d5-116">Set the **Batch size** property to a value of 1.</span></span>  
   
--   <span data-ttu-id="354d5-117">减少**MaxReceiveInterval**从 500 的默认值为小于 100 的值的值**独立消息传送、 XLANG/s，**和**消息传送过程中**服务类。</span><span class="sxs-lookup"><span data-stu-id="354d5-117">Reduce the **MaxReceiveInterval** value from the default value of 500 to a value less than 100 for the **Messaging Isolated, XLANG/s,** and **Messaging In-Process** service classes.</span></span>  <span data-ttu-id="354d5-118">进行更改**adm_ServiceClass** BizTalk 管理数据库，其中包含上述每种服务类型的一条记录的表。</span><span class="sxs-lookup"><span data-stu-id="354d5-118">Changes are made the **adm_ServiceClass** table of the BizTalk Management database, which contains one record for each of these service types.</span></span>  <span data-ttu-id="354d5-119">更改此设置，因为这是服务类型范围的更改时要格外小心。</span><span class="sxs-lookup"><span data-stu-id="354d5-119">Use caution when changing this setting because this is a service-type-wide change.</span></span> <span data-ttu-id="354d5-120">此设置指定最大的轮询间隔时间（以毫秒为单位），[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息传送代理会为消息轮询 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messagebox 数据库。</span><span class="sxs-lookup"><span data-stu-id="354d5-120">This setting specifies the maximum polling interval (in milliseconds) at which the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] messaging agent polls the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messagebox database for messages.</span></span>  <span data-ttu-id="354d5-121">阻止控制器还会将其用来决定消息阻止是否在某些加载条件下需要。</span><span class="sxs-lookup"><span data-stu-id="354d5-121">It also is used by the throttle controller to decide whether message throttling is needed under certain load conditions.</span></span> <span data-ttu-id="354d5-122">如果需要，根据系统的繁忙情况，阻止控制器会以递增方式延迟消息调度时间间隔。</span><span class="sxs-lookup"><span data-stu-id="354d5-122">If needed, the throttling controller will incrementally delay the message dispatch interval based upon stress conditions on the system.</span></span> <span data-ttu-id="354d5-123">在较高吞吐量系统中，将不会使用此设置。</span><span class="sxs-lookup"><span data-stu-id="354d5-123">In a high throughput system, this setting will not be used.</span></span>  <span data-ttu-id="354d5-124">但是，如果使用此值，时间间隔将在 MaxReceiveInteral/10 和 MaxReceiveInterval 间发生动态更改。</span><span class="sxs-lookup"><span data-stu-id="354d5-124">Once this values is used, however, the time interval will dynamically change between MaxReceiveInteral/10 and MaxReceiveInterval.</span></span>  
+-   <span data-ttu-id="354d5-117">减少**MaxReceiveInterval**从 500 的默认值为小于 100 的值的值**独立消息传送、 XLANG/s，** 和**消息传送过程中**服务类。</span><span class="sxs-lookup"><span data-stu-id="354d5-117">Reduce the **MaxReceiveInterval** value from the default value of 500 to a value less than 100 for the **Messaging Isolated, XLANG/s,** and **Messaging In-Process** service classes.</span></span>  <span data-ttu-id="354d5-118">进行更改**adm_ServiceClass** BizTalk 管理数据库，其中包含上述每种服务类型的一条记录的表。</span><span class="sxs-lookup"><span data-stu-id="354d5-118">Changes are made the **adm_ServiceClass** table of the BizTalk Management database, which contains one record for each of these service types.</span></span>  <span data-ttu-id="354d5-119">更改此设置，因为这是服务类型范围的更改时要格外小心。</span><span class="sxs-lookup"><span data-stu-id="354d5-119">Use caution when changing this setting because this is a service-type-wide change.</span></span> <span data-ttu-id="354d5-120">此设置指定最大的轮询间隔时间（以毫秒为单位），[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息传送代理会为消息轮询 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messagebox 数据库。</span><span class="sxs-lookup"><span data-stu-id="354d5-120">This setting specifies the maximum polling interval (in milliseconds) at which the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] messaging agent polls the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messagebox database for messages.</span></span>  <span data-ttu-id="354d5-121">阻止控制器还会将其用来决定消息阻止是否在某些加载条件下需要。</span><span class="sxs-lookup"><span data-stu-id="354d5-121">It also is used by the throttle controller to decide whether message throttling is needed under certain load conditions.</span></span> <span data-ttu-id="354d5-122">如果需要，根据系统的繁忙情况，阻止控制器会以递增方式延迟消息调度时间间隔。</span><span class="sxs-lookup"><span data-stu-id="354d5-122">If needed, the throttling controller will incrementally delay the message dispatch interval based upon stress conditions on the system.</span></span> <span data-ttu-id="354d5-123">在较高吞吐量系统中，将不会使用此设置。</span><span class="sxs-lookup"><span data-stu-id="354d5-123">In a high throughput system, this setting will not be used.</span></span>  <span data-ttu-id="354d5-124">但是，如果使用此值，时间间隔将在 MaxReceiveInteral/10 和 MaxReceiveInterval 间发生动态更改。</span><span class="sxs-lookup"><span data-stu-id="354d5-124">Once this values is used, however, the time interval will dynamically change between MaxReceiveInteral/10 and MaxReceiveInterval.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="354d5-125">更改此设置会影响使用创建的所有主机**主机类型**的**Isolated**。</span><span class="sxs-lookup"><span data-stu-id="354d5-125">Changing this setting affects all hosts that are created with a **Host Type** of **Isolated**.</span></span>  

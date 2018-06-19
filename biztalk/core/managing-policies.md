@@ -1,15 +1,15 @@
 ---
-title: "管理策略 |Microsoft 文档"
-description: "快速链接要导入，发布、 添加、 部署、 删除或导出 BizTalk Server 中的策略"
-ms.custom: 
+title: 管理策略 |Microsoft 文档
+description: 快速链接要导入，发布、 添加、 部署、 删除或导出 BizTalk Server 中的策略
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7b3bf92-8868-4c35-953f-61a7f2edff9c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971163"
 ---
 # <a name="manage-policies"></a><span data-ttu-id="505a4-103">管理策略</span><span class="sxs-lookup"><span data-stu-id="505a4-103">Manage policies</span></span>
 

@@ -1,14 +1,14 @@
 ---
-title: "安装和运行 BizTalk 操作示例 |Microsoft 文档"
-ms.custom: 
+title: 安装和运行 BizTalk 操作示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3551e5dd-5d77-4b7b-8e87-5970e29d9dba
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22293941"
 ---
 # <a name="installing-and-running-the-biztalk-operations-sample"></a><span data-ttu-id="63bae-102">安装和运行 BizTalk 操作示例</span><span class="sxs-lookup"><span data-stu-id="63bae-102">Installing and Running the BizTalk Operations Sample</span></span>
 <span data-ttu-id="63bae-103">Microsoft BizTalk Operations 示例演示如何查询上使用 ESB BizTalk Operations 服务的 BizTalk 应用程序的操作数据。</span><span class="sxs-lookup"><span data-stu-id="63bae-103">The Microsoft BizTalk Operations sample shows how you can query for operational data on BizTalk applications using the ESB BizTalk Operations Service.</span></span> <span data-ttu-id="63bae-104">ESB 管理门户使用此服务返回或更新 BizTalk 管理和跟踪数据库中的信息。</span><span class="sxs-lookup"><span data-stu-id="63bae-104">The ESB Management Portal uses this service to return or update information in the BizTalk management and tracking databases.</span></span> <span data-ttu-id="63bae-105">可用的信息，包括：</span><span class="sxs-lookup"><span data-stu-id="63bae-105">The available information includes the following:</span></span>  

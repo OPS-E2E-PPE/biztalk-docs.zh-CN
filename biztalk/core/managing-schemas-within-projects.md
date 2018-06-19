@@ -1,14 +1,14 @@
 ---
-title: "管理架构在项目中的 |Microsoft 文档"
-ms.custom: 
+title: 管理架构在项目中的 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1af8d360-ccda-4e0e-824f-4ace242b5aa7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262485"
 ---
 # <a name="managing-schemas-within-projects"></a><span data-ttu-id="89aa8-102">管理项目中的架构</span><span class="sxs-lookup"><span data-stu-id="89aa8-102">Managing Schemas Within Projects</span></span>
 <span data-ttu-id="89aa8-103">本部分为使用整个架构提供了分步说明，例如，创建架构、将多个架构一起使用以及保存架构所涉及的步骤。</span><span class="sxs-lookup"><span data-stu-id="89aa8-103">This section provides step-by-step instructions for working with entire schemas; for example, the steps involved in creating a schema, using multiple schemas together, and saving schemas.</span></span> <span data-ttu-id="89aa8-104">有关在架构中的节点使用的信息，请参阅[管理架构节点内](../core/managing-the-nodes-within-a-schema.md)。</span><span class="sxs-lookup"><span data-stu-id="89aa8-104">For information about working with nodes within a schema, see [Managing the Nodes Within a Schema](../core/managing-the-nodes-within-a-schema.md).</span></span>  

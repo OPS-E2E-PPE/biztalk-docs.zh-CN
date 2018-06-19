@@ -1,14 +1,14 @@
 ---
-title: "程序集和项目安装的 SQL 适配器示例 |Microsoft 文档"
-ms.custom: 
+title: 程序集和项目安装的 SQL 适配器示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ba1d9826-1f04-4858-b6b8-855a83846ab2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007814"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-sql-adapter-sample"></a><span data-ttu-id="f29b5-102">程序集和安装的 SQL 适配器示例项目</span><span class="sxs-lookup"><span data-stu-id="f29b5-102">Assemblies and Artifacts Installed by the SQL Adapter Sample</span></span>
 <span data-ttu-id="f29b5-103">下表列出的程序集和安装的 SQL 适配器示例其他项目。</span><span class="sxs-lookup"><span data-stu-id="f29b5-103">The following table lists the assemblies and other artifacts installed for the SQL Adapter sample.</span></span>  

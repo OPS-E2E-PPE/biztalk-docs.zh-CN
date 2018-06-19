@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287949"
 ---
 # <a name="warning---body-xpath-not-valid"></a><span data-ttu-id="e81e2-102">警告-正文 XPath 无效</span><span class="sxs-lookup"><span data-stu-id="e81e2-102">Warning - Body XPath Not Valid</span></span>
 <span data-ttu-id="e81e2-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="e81e2-103">**Error Code**</span></span>  

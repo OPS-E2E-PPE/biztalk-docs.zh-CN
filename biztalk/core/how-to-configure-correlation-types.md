@@ -1,11 +1,11 @@
 ---
-title: "如何配置相关类型 |Microsoft 文档"
-ms.custom: 
+title: 如何配置相关类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, correlation types
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - correlation types, deleting
 - configuring, correlation types
 ms.assetid: cfae4d2e-ec79-45c8-93b3-799dc5e0576e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248565"
 ---
 # <a name="how-to-configure-correlation-types"></a><span data-ttu-id="8fcb5-102">如何配置相关类型</span><span class="sxs-lookup"><span data-stu-id="8fcb5-102">How to Configure Correlation Types</span></span>
 <span data-ttu-id="8fcb5-103">你使用**相关性属性**对话框中添加或删除相关类型的属性。</span><span class="sxs-lookup"><span data-stu-id="8fcb5-103">You use the **Correlation Properties** dialog box to add or remove properties from a correlation type.</span></span> <span data-ttu-id="8fcb5-104">相关类型列出相关集中的属性，发送活动和接收活动使用这些属性来确保在运行时将传入消息与业务流程的正确实例相关联。</span><span class="sxs-lookup"><span data-stu-id="8fcb5-104">The correlation type lists the properties in a correlation set which are used by Send and Receive activities to make sure that incoming messages are properly correlated with the right instances of an orchestration at run time.</span></span>  

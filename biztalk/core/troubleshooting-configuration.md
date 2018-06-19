@@ -1,14 +1,14 @@
 ---
-title: "配置疑难解答 |Microsoft 文档"
-ms.custom: 
+title: 配置疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 902e591a-4ff4-4053-b329-0c022f44999a
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975987"
 ---
 # <a name="troubleshooting-configuration"></a><span data-ttu-id="0a203-102">配置疑难解答</span><span class="sxs-lookup"><span data-stu-id="0a203-102">Troubleshooting Configuration</span></span>
 <span data-ttu-id="0a203-103">Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置程序将运行的一个或多个计算机上创建数据库[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、 填充了表，角色的数据库和存储过程使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将部署到运行时期间使用的.NET 程序集BizTalk 管理数据库中。</span><span class="sxs-lookup"><span data-stu-id="0a203-103">The Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration program creates databases on one or more computers running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], populates the databases with tables, roles, and stored procedures used by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and deploys .NET assemblies used during runtime to the BizTalk Management database.</span></span>  

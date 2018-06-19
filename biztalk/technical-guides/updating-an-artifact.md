@@ -1,14 +1,14 @@
 ---
-title: "更新某个项目 |Microsoft 文档"
-ms.custom: 
+title: 更新某个项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 40feab57-4286-4bdf-8f52-25d02b3fa60c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302573"
 ---
 # <a name="updating-an-artifact"></a><span data-ttu-id="4447c-102">更新某个项目</span><span class="sxs-lookup"><span data-stu-id="4447c-102">Updating an Artifact</span></span>
 <span data-ttu-id="4447c-103">在两个或多个 BizTalk 应用程序中的项目之间的依赖关系可以显著影响应用程序部署和维护。</span><span class="sxs-lookup"><span data-stu-id="4447c-103">Dependencies between artifacts in two or more BizTalk applications can have a significant effect on application deployment and maintenance.</span></span> <span data-ttu-id="4447c-104">它需要使用该项目才能正常运行时依赖于另一个项目，例如业务流程，需要使用特定的管道，以正确传输消息。</span><span class="sxs-lookup"><span data-stu-id="4447c-104">An artifact is dependent on another when it needs to use that artifact in order to function properly, for example an orchestration that needs to use a specific pipeline in order to transmit messages correctly.</span></span>  

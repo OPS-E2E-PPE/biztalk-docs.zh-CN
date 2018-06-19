@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239733"
 ---
 # <a name="distributionlistcollection-node"></a><span data-ttu-id="a7c84-102">DistributionListCollection 节点</span><span class="sxs-lookup"><span data-stu-id="a7c84-102">DistributionListCollection Node</span></span>
 <span data-ttu-id="a7c84-103">绑定文件的 DistributionListCollection 节点是所有 DistributionList 节点的父节点，DistributionList 节点包含与绑定文件一起导出的分发列表有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="a7c84-103">The DistributionListCollection node of a binding file is the parent node for all of the DistributionList nodes which contain specific information about distribution lists that are exported with the binding file.</span></span>  

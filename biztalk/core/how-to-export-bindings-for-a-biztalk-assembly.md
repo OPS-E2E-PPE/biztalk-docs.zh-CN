@@ -1,18 +1,18 @@
 ---
-title: "如何导出 BizTalk 程序集绑定 |Microsoft 文档"
-ms.custom: 
+title: 如何导出 BizTalk 程序集绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, bindings
 - assemblies, exporting
 - exporting, assemblies
 ms.assetid: 7e37348d-5fa5-43cc-b3c0-2d8cb6a8f394
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254853"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-assembly"></a><span data-ttu-id="7ce02-102">如何导出 BizTalk 程序集绑定</span><span class="sxs-lookup"><span data-stu-id="7ce02-102">How to Export Bindings for a BizTalk Assembly</span></span>
 <span data-ttu-id="7ce02-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行将 BizTalk 程序集的绑定导出至 .xml 文件。</span><span class="sxs-lookup"><span data-stu-id="7ce02-103">This topic describes how to use the BizTalk Server Administration console or the command line to export the bindings for a BizTalk assembly to an .xml file.</span></span> <span data-ttu-id="7ce02-104">然后可以将这些绑定导入到 BizTalk 应用程序中，与现有绑定同名的导入绑定将覆盖现有绑定。</span><span class="sxs-lookup"><span data-stu-id="7ce02-104">You can then import these bindings into a BizTalk application, which overwrites existing bindings with the imported bindings of the same name.</span></span> <span data-ttu-id="7ce02-105">在更新程序集之前可能需要导出程序集的绑定，以便在更新之后再导入绑定，以重新应用它们。</span><span class="sxs-lookup"><span data-stu-id="7ce02-105">You might want to export the bindings for an assembly before you update it, so that you can import the bindings after you update it to reapply them.</span></span> <span data-ttu-id="7ce02-106">有关更新应用程序和程序集的详细信息，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。</span><span class="sxs-lookup"><span data-stu-id="7ce02-106">For more information about updating applications and assemblies, see [Updating BizTalk Applications](../core/updating-biztalk-applications.md).</span></span> <span data-ttu-id="7ce02-107">有关使用绑定文件的详细信息，请参阅[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="7ce02-107">For more information about using binding files, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span>  

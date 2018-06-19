@@ -1,11 +1,11 @@
 ---
-title: "MSMQ 适配器配置属性 |Microsoft 文档"
-ms.custom: 
+title: MSMQ 适配器配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, receive locations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - MSMQ adapters, code sample
 - send ports, adapters
 ms.assetid: d660d0ce-bff9-4bc5-be1d-38954c2fdbe2
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974547"
 ---
 # <a name="msmq-adapter-configuration-properties"></a><span data-ttu-id="060b8-102">MSMQ 适配器配置属性</span><span class="sxs-lookup"><span data-stu-id="060b8-102">MSMQ Adapter Configuration Properties</span></span>
 <span data-ttu-id="060b8-103">下表列出了可为 MSMQ 适配器接收位置设置的配置属性：</span><span class="sxs-lookup"><span data-stu-id="060b8-103">The following table lists the configuration properties that you can set for an MSMQ adapter receive location:</span></span>  

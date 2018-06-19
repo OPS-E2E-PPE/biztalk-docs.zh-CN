@@ -1,18 +1,18 @@
 ---
-title: "导入 Bindings2 |Microsoft 文档"
-ms.custom: 
+title: 导入 Bindings2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, requirements
 - importing, bindings
 - bindings, importing
 ms.assetid: 9e10bc04-aba8-430a-b8fd-de9399d54f88
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006126"
 ---
 # <a name="importing-bindings"></a><span data-ttu-id="1ab34-102">导入绑定</span><span class="sxs-lookup"><span data-stu-id="1ab34-102">Importing Bindings</span></span>
 <span data-ttu-id="1ab34-103">本部分中的主题介绍如何将绑定导入到 BizTalk 组或应用程序。</span><span class="sxs-lookup"><span data-stu-id="1ab34-103">The topics in this section describe how to import bindings into a BizTalk group or application.</span></span>  

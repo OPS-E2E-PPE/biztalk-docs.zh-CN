@@ -1,14 +1,14 @@
 ---
-title: "Windows SharePoint Services 适配器性能计数器 |Microsoft 文档"
-ms.custom: 
+title: Windows SharePoint Services 适配器性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41583fde-530a-4070-9647-f1ab6273aadf
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973283"
 ---
 # <a name="windows-sharepoint-services-adapter-performance-counters"></a><span data-ttu-id="1405a-102">Windows SharePoint Services 适配器性能计数器</span><span class="sxs-lookup"><span data-stu-id="1405a-102">Windows SharePoint Services Adapter Performance Counters</span></span>
 <span data-ttu-id="1405a-103">使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。</span><span class="sxs-lookup"><span data-stu-id="1405a-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="1405a-104">性能计数器能够帮助您标识和解决有关服务器性能的问题。</span><span class="sxs-lookup"><span data-stu-id="1405a-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  

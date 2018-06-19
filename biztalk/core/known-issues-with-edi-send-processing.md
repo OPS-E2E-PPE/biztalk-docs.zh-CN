@@ -1,14 +1,14 @@
 ---
-title: "已知问题的 EDI 发送处理 |Microsoft 文档"
-ms.custom: 
+title: 已知问题的 EDI 发送处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1325dcd9-5dbb-48bb-b5a3-1502d1424d4e
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263309"
 ---
 # <a name="known-issues-with-edi-send-processing"></a><span data-ttu-id="9288b-102">已知的问题的 EDI 发送处理</span><span class="sxs-lookup"><span data-stu-id="9288b-102">Known Issues with EDI Send Processing</span></span>
 <span data-ttu-id="9288b-103">本主题将介绍在 EDI 发送管道中进行处理时的已知问题。</span><span class="sxs-lookup"><span data-stu-id="9288b-103">This topic describes known issues with processing in the EDI send pipeline.</span></span>  

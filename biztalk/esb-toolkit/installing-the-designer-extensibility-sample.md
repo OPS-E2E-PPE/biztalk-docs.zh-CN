@@ -1,14 +1,14 @@
 ---
-title: "安装设计器扩展性示例 |Microsoft 文档"
-ms.custom: 
+title: 安装设计器扩展性示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eba13a4a-1b87-4268-af91-29af3a5bc5ef
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007974"
 ---
 # <a name="installing-the-designer-extensibility-sample"></a><span data-ttu-id="8d545-102">安装设计器扩展性示例</span><span class="sxs-lookup"><span data-stu-id="8d545-102">Installing the Designer Extensibility Sample</span></span>
 <span data-ttu-id="8d545-103">本部分介绍安装设计器扩展性示例的过程。</span><span class="sxs-lookup"><span data-stu-id="8d545-103">This section describes the process for installing the Designer Extensibility sample.</span></span> <span data-ttu-id="8d545-104">你必须安装中的示例[安装和运行路线上负载增加示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)和[安装和运行动态解析示例](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)安装和使用此示例之前。</span><span class="sxs-lookup"><span data-stu-id="8d545-104">You must install the samples in [Installing and Running the Itinerary On-Ramp Sample](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md) and [Installing and Running the Dynamic Resolution Sample](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md) before you install and use this sample.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "保留在平面文件汇编管道组件的分隔符 |Microsoft 文档"
-ms.custom: 
+title: 保留在平面文件汇编管道组件的分隔符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: adc27561-9996-49a9-b715-e313b9148506
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268781"
 ---
 # <a name="retaining-delimiters-in-the-flat-file-assembler-pipeline-component"></a><span data-ttu-id="6ef49-102">保留平面文件组装器管道组件中的分隔符</span><span class="sxs-lookup"><span data-stu-id="6ef49-102">Retaining Delimiters in the Flat File Assembler Pipeline Component</span></span>
 <span data-ttu-id="6ef49-103">如果在经过使用平面文件组装器的自定义管道的消息中缺少某些记录，则根据输入文件中缺少记录的位置，这些记录的分隔符不一定出现在平面文件输出中。</span><span class="sxs-lookup"><span data-stu-id="6ef49-103">If there are missing records in the message going through a custom pipeline that uses the Flat File Assembler, the delimiter for those records may or may not appear in the flat file output depending on where in the input file the records are missing.</span></span>  

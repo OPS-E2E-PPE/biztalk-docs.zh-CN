@@ -1,14 +1,14 @@
 ---
-title: "于 MSMQ 的大消息 |Microsoft 文档"
-ms.custom: 
+title: 于 MSMQ 的大消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fb87b46-5656-42c0-be99-8ab66e51bb4d
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976107"
 ---
 # <a name="large-message-to-msmq"></a><span data-ttu-id="68d16-102">于 MSMQ 的大型消息</span><span class="sxs-lookup"><span data-stu-id="68d16-102">Large Message to MSMQ</span></span>
 <span data-ttu-id="68d16-103">大型消息到 MSMQ 示例演示如何.xml 文档大于 4 兆字节 (MB) 将从发送消息队列 (也称为 MSMQ) 到 BizTalk MSMQ 适配器使用**MQSendLargeMessage** API 实现通过MQRTLarge.dll。</span><span class="sxs-lookup"><span data-stu-id="68d16-103">The Large Message to MSMQ sample demonstrates how to send an .xml document larger than 4 megabytes (MB) from Message Queuing (also known as MSMQ) to the BizTalk MSMQ adapter by using the **MQSendLargeMessage** API implemented by MQRTLarge.dll.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="68d16-148">单击**配置**按钮以打开**文件传输属性**窗体。</span><span class="sxs-lookup"><span data-stu-id="68d16-148">Click the **Configure** button to open the **File Transport Properties** form.</span></span> <span data-ttu-id="68d16-149">输入**C:\Demo**中**目标文件夹**。</span><span class="sxs-lookup"><span data-stu-id="68d16-149">Enter **C:\Demo** in **Destination Folder**.</span></span> <span data-ttu-id="68d16-150">确保主机实例标识具有对 C:\Demo 文件夹的访问权限。</span><span class="sxs-lookup"><span data-stu-id="68d16-150">Ensure that the host instance identity has access to the C:\Demo folder.</span></span>  
   
-8.  <span data-ttu-id="68d16-151">确保**文件名**设置为**%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="68d16-151">Ensure that **File Name** is set to **%MessageID%.xml**.</span></span> <span data-ttu-id="68d16-152">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="68d16-152">Click **OK**.</span></span>  
+8.  <span data-ttu-id="68d16-151">确保**文件名**设置为 **%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="68d16-151">Ensure that **File Name** is set to **%MessageID%.xml**.</span></span> <span data-ttu-id="68d16-152">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="68d16-152">Click **OK**.</span></span>  
   
 9. <span data-ttu-id="68d16-153">单击 **“筛选器”**。</span><span class="sxs-lookup"><span data-stu-id="68d16-153">Click **Filters**.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
     5.  <span data-ttu-id="68d16-167">在**接收位置属性**对话框中，设置**传输类型**到**MSMQ**。</span><span class="sxs-lookup"><span data-stu-id="68d16-167">In the **Receive Location Properties** dialog box, set **Transport Type** to **MSMQ**.</span></span>  
   
-    6.  <span data-ttu-id="68d16-168">在**地址 (URI)**部分中，单击**配置**以打开**MSMQ 传输属性**窗体。</span><span class="sxs-lookup"><span data-stu-id="68d16-168">In the **Address (URI)** section, click **Configure** to open the **MSMQ Transport Properties** form.</span></span> <span data-ttu-id="68d16-169">设置**队列**到**localhost\private$ \test**。</span><span class="sxs-lookup"><span data-stu-id="68d16-169">Set **Queue** to **localhost\private$\test**.</span></span>  
+    6.  <span data-ttu-id="68d16-168">在**地址 (URI)** 部分中，单击**配置**以打开**MSMQ 传输属性**窗体。</span><span class="sxs-lookup"><span data-stu-id="68d16-168">In the **Address (URI)** section, click **Configure** to open the **MSMQ Transport Properties** form.</span></span> <span data-ttu-id="68d16-169">设置**队列**到**localhost\private$ \test**。</span><span class="sxs-lookup"><span data-stu-id="68d16-169">Set **Queue** to **localhost\private$\test**.</span></span>  
   
     7.  <span data-ttu-id="68d16-170">设置**事务**到`True`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="68d16-170">Set **Transactional** to `True`, and then click **OK**.</span></span>  
   

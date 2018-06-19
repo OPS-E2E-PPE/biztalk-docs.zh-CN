@@ -1,11 +1,11 @@
 ---
-title: "扩展映射器 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 扩展映射器 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Mapper, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, BizTalk Mapper
 - examples, XML tools
 ms.assetid: 6010a13f-b715-4766-ad91-5aa9b98589e3
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970651"
 ---
 # <a name="extending-mapper-biztalk-server-sample"></a><span data-ttu-id="12dc8-102">扩展映射器 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="12dc8-102">Extending Mapper (BizTalk Server Sample)</span></span>
 <span data-ttu-id="12dc8-103">扩展映射器示例对如何使用和扩展 BizTalk 映射器进行演示。</span><span class="sxs-lookup"><span data-stu-id="12dc8-103">The Extending Mapper sample demonstrates how to use and extend BizTalk Mapper.</span></span> <span data-ttu-id="12dc8-104">本示例包含多个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 映射文件 (.btm)，其中的每个文件均阐释了 BizTalk 映射器的一个功能。</span><span class="sxs-lookup"><span data-stu-id="12dc8-104">The sample includes several [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] map files (.btm), each of which illustrates different features of BizTalk Mapper.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="12dc8-106">扩展映射器示例使用基于内容的路由 (CBR)，不使用业务流程。</span><span class="sxs-lookup"><span data-stu-id="12dc8-106">The Extending Mapper sample uses content-based routing (CBR) and does not use an orchestration.</span></span> <span data-ttu-id="12dc8-107">通过在示例发送端口上指定筛选器，扩展映射器示例可直接连接到示例接收端口。</span><span class="sxs-lookup"><span data-stu-id="12dc8-107">By specifying a filter on the sample send port, it is connected directly to the sample receive port.</span></span> <span data-ttu-id="12dc8-108">会在发送端口上指定一个要应用到已处理文档的映射。</span><span class="sxs-lookup"><span data-stu-id="12dc8-108">A map is specified on the send port to be applied to the processed document.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="12dc8-109">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="12dc8-109">Where to Find This Sample</span></span>  
- <span data-ttu-id="12dc8-110">*\<示例路径\>*\XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="12dc8-110">*\<Samples Path\>*\XmlTools\ExtendingMapper</span></span>  
+ <span data-ttu-id="12dc8-110">*\<示例路径\>* \XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="12dc8-110">*\<Samples Path\>* \XmlTools\ExtendingMapper</span></span>  
   
  <span data-ttu-id="12dc8-111">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="12dc8-111">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="12dc8-153">在命令窗口中，将目录更改 (**cd**) 的以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="12dc8-153">In a command window, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="12dc8-154">*\<示例路径\>*\XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="12dc8-154">*\<Samples Path\>*\XmlTools\ExtendingMapper</span></span>  
+     <span data-ttu-id="12dc8-154">*\<示例路径\>* \XmlTools\ExtendingMapper</span><span class="sxs-lookup"><span data-stu-id="12dc8-154">*\<Samples Path\>* \XmlTools\ExtendingMapper</span></span>  
   
 2.  <span data-ttu-id="12dc8-155">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="12dc8-155">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -103,9 +104,9 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="12dc8-182">复制公钥标记值。</span><span class="sxs-lookup"><span data-stu-id="12dc8-182">Copy the public key token value.</span></span>  
   
-    3.  <span data-ttu-id="12dc8-183">在文本编辑器中，打开*\<示例路径\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml。</span><span class="sxs-lookup"><span data-stu-id="12dc8-183">In a text editor, open *\<Samples Path\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml.</span></span>  
+    3.  <span data-ttu-id="12dc8-183">在文本编辑器中，打开*\<示例路径\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml。</span><span class="sxs-lookup"><span data-stu-id="12dc8-183">In a text editor, open *\<Samples Path\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml.</span></span>  
   
-    4.  <span data-ttu-id="12dc8-184">选择**AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary，Version = 1.0.0.0，Culture = neutral，PublicKeyToken = 68496d20c737d84b"**特性，并替换**PublicKeyToken**值时，使用公钥标记值中复制步骤 c。</span><span class="sxs-lookup"><span data-stu-id="12dc8-184">Select the **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=68496d20c737d84b"**attribute, and replace the **PublicKeyToken** value with the public key token value you copied in step c.</span></span>  
+    4.  <span data-ttu-id="12dc8-184">选择**AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary，Version = 1.0.0.0，Culture = neutral，PublicKeyToken = 68496d20c737d84b"** 特性，并替换**PublicKeyToken**值时，使用公钥标记值中复制步骤 c。</span><span class="sxs-lookup"><span data-stu-id="12dc8-184">Select the **AssemblyName="Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=68496d20c737d84b"** attribute, and replace the **PublicKeyToken** value with the public key token value you copied in step c.</span></span>  
   
     5.  <span data-ttu-id="12dc8-185">保存并关闭 ExternalAssembly.xml。</span><span class="sxs-lookup"><span data-stu-id="12dc8-185">Save and close ExternalAssembly.xml.</span></span>  
   
@@ -141,9 +142,9 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-run-this-sample"></a><span data-ttu-id="12dc8-235">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="12dc8-235">To run this sample</span></span>  
   
-1.  <span data-ttu-id="12dc8-236">复制输入到输入文件夹在文件 ExtendingMapper.xml *\<示例路径\>*\XmlTools\ExtendingMapper\In。</span><span class="sxs-lookup"><span data-stu-id="12dc8-236">Copy the input file ExtendingMapper.xml into the input folder at *\<Samples Path\>*\XmlTools\ExtendingMapper\In.</span></span>  
+1.  <span data-ttu-id="12dc8-236">复制输入到输入文件夹在文件 ExtendingMapper.xml *\<示例路径\>* \XmlTools\ExtendingMapper\In。</span><span class="sxs-lookup"><span data-stu-id="12dc8-236">Copy the input file ExtendingMapper.xml into the input folder at *\<Samples Path\>* \XmlTools\ExtendingMapper\In.</span></span>  
   
-2.  <span data-ttu-id="12dc8-237">请注意如何转换以及路由到该文件是*\<示例路径\>*\XmlTools\ExtendingMapper\Out 文件夹。</span><span class="sxs-lookup"><span data-stu-id="12dc8-237">Notice how the file is transformed and routed to the *\<Samples Path\>*\XmlTools\ExtendingMapper\Out folder.</span></span> <span data-ttu-id="12dc8-238">发生的转换由应用的映射确定。</span><span class="sxs-lookup"><span data-stu-id="12dc8-238">The transformation that occurs is based on the map you applied.</span></span>  
+2.  <span data-ttu-id="12dc8-237">请注意如何转换以及路由到该文件是*\<示例路径\>* \XmlTools\ExtendingMapper\Out 文件夹。</span><span class="sxs-lookup"><span data-stu-id="12dc8-237">Notice how the file is transformed and routed to the *\<Samples Path\>* \XmlTools\ExtendingMapper\Out folder.</span></span> <span data-ttu-id="12dc8-238">发生的转换由应用的映射确定。</span><span class="sxs-lookup"><span data-stu-id="12dc8-238">The transformation that occurs is based on the map you applied.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="12dc8-239">另请参阅</span><span class="sxs-lookup"><span data-stu-id="12dc8-239">See Also</span></span>  
  [<span data-ttu-id="12dc8-240">XML 工具（BizTalk Server 示例文件夹）</span><span class="sxs-lookup"><span data-stu-id="12dc8-240">XML Tools (BizTalk Server Samples Folder)</span></span>](../core/xml-tools-biztalk-server-samples-folder.md)

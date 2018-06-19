@@ -1,14 +1,14 @@
 ---
-title: "使用 Visual Studio 以便于自动测试 |Microsoft 文档"
-ms.custom: 
+title: 使用 Visual Studio 以便于自动测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78f622af-08d5-480c-bd5e-f1db52e8d490
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302285"
 ---
 # <a name="using-visual-studio-to-facilitate-automated-testing"></a><span data-ttu-id="cec4f-102">使用 Visual Studio 以便于自动测试</span><span class="sxs-lookup"><span data-stu-id="cec4f-102">Using Visual Studio to Facilitate Automated Testing</span></span>
 <span data-ttu-id="cec4f-103">Visual Studio 2010 提供功能强大的负载测试功能，能模拟数百个用户同时访问服务器应用程序的负载配置文件。</span><span class="sxs-lookup"><span data-stu-id="cec4f-103">Visual Studio 2010 provides powerful load test functionality that can simulate a load profile of up to hundreds of users simultaneously accessing a server application.</span></span> <span data-ttu-id="cec4f-104">此负载测试功能提供了所选的关键性能指标，以及供将来分析数据库中存储这些指标的能力的实时度量值。</span><span class="sxs-lookup"><span data-stu-id="cec4f-104">This load testing functionality provides real time metrics for selected key performance indicators as well as the ability to store these metrics in a database for future analysis.</span></span> <span data-ttu-id="cec4f-105">本部分介绍使用 Visual Studio 负载测试以评估 BizTalk 服务器应用程序的性能。</span><span class="sxs-lookup"><span data-stu-id="cec4f-105">This section describes the use of Visual Studio Load testing to evaluate the performance of a BizTalk Server application.</span></span>  

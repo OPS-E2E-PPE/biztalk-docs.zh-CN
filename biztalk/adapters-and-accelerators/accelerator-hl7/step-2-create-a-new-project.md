@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 创建新项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建新项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, projects
 - projects, creating
 - message enrichment tutorial, projects
 ms.assetid: 6e994845-53b8-4de8-a64f-32d36f7b5412
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004694"
 ---
 # <a name="step-2-create-a-new-project"></a><span data-ttu-id="970b4-102">步骤 2： 创建新项目</span><span class="sxs-lookup"><span data-stu-id="970b4-102">Step 2: Create a New Project</span></span>
 <span data-ttu-id="970b4-103">通过使用在此步骤中，生成一个新的解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="970b4-103">In this step, you build a new solution by using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)] environment.</span></span> <span data-ttu-id="970b4-104">首先，创建新项目 (BTAHL7V22Common) 包含三个常见架构 （适用于数据类型、 线段和表值） 的 HL7 V2.2 架构使用，包括你将用于传出的 HL7 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="970b4-104">First, you create a new project (BTAHL7V22Common) that contains the three common schemas (for data types, segments, and table values) that the HL7 V2.2 schemas use, including the schema that you will use for the outgoing HL7 message.</span></span> <span data-ttu-id="970b4-105">其次，生成另一个新包含 HL7 消息 (MSH_25_GLO_DEF) 中的标头使用的常见标准架构的项目 (BTAHL7V2XCommon)。</span><span class="sxs-lookup"><span data-stu-id="970b4-105">Second, you build another new project (BTAHL7V2XCommon) that contains the common standard schema used for headers in HL7 messages (MSH_25_GLO_DEF).</span></span>  

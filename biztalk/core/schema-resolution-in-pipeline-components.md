@@ -1,18 +1,18 @@
 ---
-title: "管道组件中的架构解析 |Microsoft 文档"
-ms.custom: 
+title: 管道组件中的架构解析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, schema resolution
 - pipeline components, schema resolution
 - schemas, pipeline components
 ms.assetid: 35a79a6f-788b-4ca1-8483-36dcba5ae580
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972955"
 ---
 # <a name="schema-resolution-in-pipeline-components"></a><span data-ttu-id="4f404-102">管道组件中的架构解析</span><span class="sxs-lookup"><span data-stu-id="4f404-102">Schema Resolution in Pipeline Components</span></span>
 <span data-ttu-id="4f404-103">管道拆装器和组装器组件使用 XSD 架构来处理消息。</span><span class="sxs-lookup"><span data-stu-id="4f404-103">Pipeline disassembler and assembler components use XSD schemas to process messages.</span></span> <span data-ttu-id="4f404-104">该架构包含升级属性、可分辨字段、平面文件消息批注和 XML 信封批注的列表等信息。</span><span class="sxs-lookup"><span data-stu-id="4f404-104">The schemas contain information such as the list of promoted properties, distinguished fields, annotations for flat file messages, and annotations for XML envelopes.</span></span>  

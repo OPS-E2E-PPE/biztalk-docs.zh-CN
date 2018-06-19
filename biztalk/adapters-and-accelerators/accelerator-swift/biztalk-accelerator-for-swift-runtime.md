@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Accelerator for SWIFT 运行时 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Accelerator for SWIFT 运行时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - runtime, architecture
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - A4SWIFT, network
 - topology
 ms.assetid: c0f59760-7d7d-4b22-a7dc-54e563971d4a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005278"
 ---
 # <a name="biztalk-accelerator-for-swift-runtime"></a><span data-ttu-id="4f350-102">BizTalk Accelerator for SWIFT 运行时</span><span class="sxs-lookup"><span data-stu-id="4f350-102">BizTalk Accelerator for SWIFT Runtime</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="4f350-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]在两种形式提供的功能： 开发材料和运行时组件。</span><span class="sxs-lookup"><span data-stu-id="4f350-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] provides functionality in two forms: development materials and runtime components.</span></span> <span data-ttu-id="4f350-104">开发资料包括 XSD 架构，验证规则和策略，以及示例代码。</span><span class="sxs-lookup"><span data-stu-id="4f350-104">Development materials include XSD schemas, validation rules and policies, and sample code.</span></span> <span data-ttu-id="4f350-105">运行时组件包括自定义 SWIFT 反汇编程序、 自定义 SWIFT 汇编程序、 消息修复和新提交业务流程 (MrsrRepair.odx) 和 FIN 响应对帐业务流程 (FrrMain.odx)。</span><span class="sxs-lookup"><span data-stu-id="4f350-105">Runtime components include the custom SWIFT disassembler, the custom SWIFT assembler, the Message Repair and New Submission orchestration (MrsrRepair.odx), and the FIN Response Reconciliation orchestration (FrrMain.odx).</span></span> <span data-ttu-id="4f350-106">有关消息修复和新提交的详细信息，请参阅[消息修复和新提交](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="4f350-106">For more information on Message Repair and New Submission, see [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md).</span></span> <span data-ttu-id="4f350-107">FRR 的详细信息，请参阅[FIN 响应对帐](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md)。</span><span class="sxs-lookup"><span data-stu-id="4f350-107">For more information on FRR, see [FIN Response Reconciliation](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation.md).</span></span>  

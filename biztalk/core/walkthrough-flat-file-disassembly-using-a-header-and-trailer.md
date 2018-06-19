@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715af9cc-d718-483d-b593-64462aa5a58b
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976051"
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a><span data-ttu-id="ba2fe-103">演练：使用头部和尾部拆装平面文件</span><span class="sxs-lookup"><span data-stu-id="ba2fe-103">Walkthrough: Flat File Disassembly Using a Header and Trailer</span></span>
 
@@ -128,7 +129,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="ba2fe-187">当满足要求，单击 **完成** 以完成向导。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-187">When you are satisfied, click **Finish** to complete the wizard.</span></span>  
   
-10. <span data-ttu-id="ba2fe-188">单击**\<架构\>**在标头的架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-188">Click the **\<Schema\>** node in the Header schema pane.</span></span> <span data-ttu-id="ba2fe-189">在属性窗格中，更改 **元素 FormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-189">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-190">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-190">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
+10. <span data-ttu-id="ba2fe-188">单击**\<架构\>** 在标头的架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-188">Click the **\<Schema\>** node in the Header schema pane.</span></span> <span data-ttu-id="ba2fe-189">在属性窗格中，更改 **元素 FormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-189">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-190">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-190">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a><span data-ttu-id="ba2fe-191">使用平面文件架构向导创建尾部架构</span><span class="sxs-lookup"><span data-stu-id="ba2fe-191">Use the Flat File Schema Wizard to create the trailer schema</span></span>  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="ba2fe-214">当满足要求，单击 **完成** 以完成向导。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-214">When you are satisfied, click **Finish** to complete the wizard.</span></span>  
   
-10. <span data-ttu-id="ba2fe-215">单击**\<架构\>**预告片架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-215">Click the **\<Schema\>** node in the Trailer schema pane.</span></span> <span data-ttu-id="ba2fe-216">在属性窗格中，更改 **elementFormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-216">In the Properties pane, change **elementFormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-217">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-217">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
+10. <span data-ttu-id="ba2fe-215">单击**\<架构\>** 预告片架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-215">Click the **\<Schema\>** node in the Trailer schema pane.</span></span> <span data-ttu-id="ba2fe-216">在属性窗格中，更改 **elementFormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-216">In the Properties pane, change **elementFormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-217">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-217">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a><span data-ttu-id="ba2fe-218">使用平面文件架构向导创建正文架构</span><span class="sxs-lookup"><span data-stu-id="ba2fe-218">Use the Flat File Schema Wizard to create the body schema</span></span>  
   
@@ -216,9 +217,9 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="ba2fe-252">如果所做的任何错误，请单击 **回** 并进行必要的更正。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-252">If you have made any mistakes, click **Back** and make the necessary corrections.</span></span> <span data-ttu-id="ba2fe-253">当满足要求，单击 **完成** 以完成向导。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-253">When you are satisfied, click **Finish** to complete the wizard.</span></span>  
   
-15. <span data-ttu-id="ba2fe-254">单击**\<架构\>**正文架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-254">Click the **\<Schema\>** node in the Body schema pane.</span></span> <span data-ttu-id="ba2fe-255">在属性窗格中，更改 **元素 FormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-255">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-256">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-256">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
+15. <span data-ttu-id="ba2fe-254">单击**\<架构\>** 正文架构窗格中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-254">Click the **\<Schema\>** node in the Body schema pane.</span></span> <span data-ttu-id="ba2fe-255">在属性窗格中，更改 **元素 FormDefault** 到 **合格**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-255">In the Properties pane, change **Element FormDefault** to **Qualified**.</span></span> <span data-ttu-id="ba2fe-256">这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-256">This indicates that locally declared elements must be qualified by the target namespace in an instance document.</span></span>  
   
-16. <span data-ttu-id="ba2fe-257">单击**\<错误\>**正文架构窗格上的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-257">Click the **\<Error\>** node on the Body schema pane.</span></span> <span data-ttu-id="ba2fe-258">在属性窗格中，更改 **Max Occurs** 到 **1**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-258">In the Properties pane, change **Max Occurs** to **1**.</span></span> <span data-ttu-id="ba2fe-259">这将使平面文件拆装器把每个错误拆分到各自的消息中。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-259">This causes the Flat File Disassembler to split each error into its own message.</span></span>  
+16. <span data-ttu-id="ba2fe-257">单击**\<错误\>** 正文架构窗格上的节点。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-257">Click the **\<Error\>** node on the Body schema pane.</span></span> <span data-ttu-id="ba2fe-258">在属性窗格中，更改 **Max Occurs** 到 **1**。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-258">In the Properties pane, change **Max Occurs** to **1**.</span></span> <span data-ttu-id="ba2fe-259">这将使平面文件拆装器把每个错误拆分到各自的消息中。</span><span class="sxs-lookup"><span data-stu-id="ba2fe-259">This causes the Flat File Disassembler to split each error into its own message.</span></span>  
   
 ##### <a name="test-the-schemas-using-ffdasm"></a><span data-ttu-id="ba2fe-260">测试使用 FFDasm 的架构</span><span class="sxs-lookup"><span data-stu-id="ba2fe-260">Test the schemas using FFDasm</span></span>  
   

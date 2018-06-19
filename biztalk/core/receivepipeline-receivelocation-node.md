@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268501"
 ---
 # <a name="receivepipeline-receivelocation-node"></a><span data-ttu-id="ca76d-102">ReceivePipeline（“接收位置”节点）</span><span class="sxs-lookup"><span data-stu-id="ca76d-102">ReceivePipeline (ReceiveLocation Node)</span></span>
 <span data-ttu-id="ca76d-103">绑定文件的“发送端口”节点的 ReceiveLocation 节点包含有关用于接收位置的接收管道的特定信息，该接收位置与绑定文件一起导出。</span><span class="sxs-lookup"><span data-stu-id="ca76d-103">The ReceivePipeline node of the ReceiveLocation node of a binding file contains specific information about a receive pipeline used with a receive location that is exported with the binding file.</span></span>  

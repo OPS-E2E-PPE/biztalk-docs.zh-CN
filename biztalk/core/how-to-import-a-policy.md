@@ -13,7 +13,7 @@ helpviewer_keywords:
 - policies, importing
 - managing [policies], importing
 ms.assetid: 92f6ef18-279f-416d-b13e-8b9642539d27
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972331"
 ---
 # <a name="how-to-import-a-policy"></a><span data-ttu-id="39fdc-102">如何导入策略</span><span class="sxs-lookup"><span data-stu-id="39fdc-102">How to Import a Policy</span></span>
 <span data-ttu-id="39fdc-103">本主题介绍如何使用 BizTalk Server 管理控制台将策略导入到 BizTalk 组或使用 BTSTask 命令行工具将策略导入到 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="39fdc-103">This topic describes how to use the BizTalk Server Administration console to import a policy into a BizTalk group or the BTSTask command-line tool to import a policy into a BizTalk application.</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="39fdc-140">键入以下命令，替换为适当的值下, 表中所述︰</span><span class="sxs-lookup"><span data-stu-id="39fdc-140">Type the following command, substituting the appropriate values, as described in the following table:</span></span>  
   
-     <span data-ttu-id="39fdc-141">**BTSTask ImportApp /Package:** *值*[**/ApplicationName: * **值*] [**/覆盖**] [**/Server:***值 *] [* * / 数据库：***值 *]</span><span class="sxs-lookup"><span data-stu-id="39fdc-141">**BTSTask ImportApp /Package:** *value* [**/ApplicationName:***value*] [**/Overwrite**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+     <span data-ttu-id="39fdc-141">**BTSTask ImportApp /Package:** *值*[**/ApplicationName: * **值*] [**/覆盖 **] [**/Server:***值 *] [* * / 数据库：*** 值 *]</span><span class="sxs-lookup"><span data-stu-id="39fdc-141">**BTSTask ImportApp /Package:** *value* [**/ApplicationName:***value*] [**/Overwrite **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
      <span data-ttu-id="39fdc-142">例如：</span><span class="sxs-lookup"><span data-stu-id="39fdc-142">Example:</span></span>  
   

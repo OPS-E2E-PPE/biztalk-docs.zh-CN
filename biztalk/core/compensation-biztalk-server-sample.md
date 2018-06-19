@@ -1,11 +1,11 @@
 ---
-title: "补偿 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 补偿 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, compensations
 - compensations, orchestrations
 ms.assetid: 9d10c7be-6a4c-44cc-bf29-78ecdf147bd1
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975123"
 ---
 # <a name="compensation-biztalk-server-sample"></a><span data-ttu-id="3c19c-102">补偿 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="3c19c-102">Compensation (BizTalk Server Sample)</span></span>
 <span data-ttu-id="3c19c-103">补偿示例演示如何使用**Compensate**形状中业务流程。</span><span class="sxs-lookup"><span data-stu-id="3c19c-103">The Compensation sample demonstrates how to use the **Compensate** shape in an orchestration.</span></span>  

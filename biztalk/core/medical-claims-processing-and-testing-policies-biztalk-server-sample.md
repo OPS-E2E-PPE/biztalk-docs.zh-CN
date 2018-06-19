@@ -1,17 +1,17 @@
 ---
-title: "医疗声明处理和测试策略 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 医疗声明处理和测试策略 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: c0bdf7b7-3e55-4560-a5a8-00c5b661d14d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007982"
 ---
 # <a name="medical-claims-processing-and-testing-policies-biztalk-server-sample"></a><span data-ttu-id="8ffac-102">医疗声明处理和测试策略 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="8ffac-102">Medical Claims Processing and Testing Policies (BizTalk Server Sample)</span></span>
 <span data-ttu-id="8ffac-103">“医疗索赔处理和测试保单”示例演示如何创建包含多个规则的规则集，这些规则检查从数据库表和入站文档推断得出的事实，并使用基于 .NET 的对象记录索赔处理结果。</span><span class="sxs-lookup"><span data-stu-id="8ffac-103">The Medical Claims Processing and Testing Policies sample demonstrates how to create a rule set containing multiple rules that examine facts derived from a database table and the inbound document, and which use .NET-based objects to record the results of the claims processing.</span></span>  

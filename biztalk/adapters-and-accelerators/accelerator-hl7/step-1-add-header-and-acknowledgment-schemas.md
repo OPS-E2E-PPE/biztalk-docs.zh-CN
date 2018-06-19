@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 添加标头和确认架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 添加标头和确认架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 808132bf-02e7-4ff4-b914-9fae5d27e5fd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005334"
 ---
 # <a name="step-1-add-header-and-acknowledgment-schemas"></a><span data-ttu-id="73fc0-102">步骤 1： 添加标头和确认架构</span><span class="sxs-lookup"><span data-stu-id="73fc0-102">Step 1: Add Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="73fc0-103">在此步骤中，你可以创建基于 BTAHL72XCommon 项目模板的新项目。</span><span class="sxs-lookup"><span data-stu-id="73fc0-103">In this step, you create a new project based on the BTAHL72XCommon Project template.</span></span> <span data-ttu-id="73fc0-104">此模板包含有关消息标头 (MSH_25_GLO_DEF.xsd) 和确认 (ACK_24_GLO_DEF.xsd) 的三个公共架构和 (ACK_25_GLO_DEF.xsd)。</span><span class="sxs-lookup"><span data-stu-id="73fc0-104">This template contains the three common schemas for message headers (MSH_25_GLO_DEF.xsd) and acknowledgments (ACK_24_GLO_DEF.xsd) and (ACK_25_GLO_DEF.xsd).</span></span> <span data-ttu-id="73fc0-105">你必须包括这些架构在项目中因此 HL7 该 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 生成和/或正确验证的消息标头和确认。</span><span class="sxs-lookup"><span data-stu-id="73fc0-105">You must include these schemas in a project so that BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) builds and/or validates the message headers and acknowledgments correctly.</span></span> <span data-ttu-id="73fc0-106">此过程能够在之间通用的所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。</span><span class="sxs-lookup"><span data-stu-id="73fc0-106">This process is common across all schema versions of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.</span></span>  

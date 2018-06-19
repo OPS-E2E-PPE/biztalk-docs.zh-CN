@@ -1,14 +1,14 @@
 ---
-title: "实例化隔离的适配器 |Microsoft 文档"
-ms.custom: 
+title: 实例化隔离的适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b8359a3-b098-4bb6-87b4-d3432d2671b1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257485"
 ---
 # <a name="instantiating-isolated-adapters"></a><span data-ttu-id="8e6ec-102">实例化隔离的适配器</span><span class="sxs-lookup"><span data-stu-id="8e6ec-102">Instantiating Isolated Adapters</span></span>
 <span data-ttu-id="8e6ec-103">如前面所述，由 BizTalk Server 未实例化隔离的适配器。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-103">As discussed earlier, isolated adapters are not instantiated by BizTalk Server.</span></span> <span data-ttu-id="8e6ec-104">而是在另一个进程中实例化并以此进程为宿主。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-104">Rather, they are instantiated and hosted in another process.</span></span> <span data-ttu-id="8e6ec-105">负责创建其传输代理的适配器**QueryInterface**，为**IBTTransportProxy**，然后调用**IBTTransportProxy**。**RegisterIsolatedReceiver**注册消息引擎。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-105">It is the responsibility of the adapter to create its transport proxy, **QueryInterface**, for **IBTTransportProxy**, and then call **IBTTransportProxy**.**RegisterIsolatedReceiver** to register with the Messaging Engine.</span></span>  
@@ -56,7 +57,7 @@ private IBTTransportProxy transportProxy;
 }  
 ```  
   
- <span data-ttu-id="8e6ec-114">**实现提示：**建议适配器保留工作正在进行的计数。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-114">**Implementation Tip:** We recommend that the adapter keep a count of the work in progress.</span></span> <span data-ttu-id="8e6ec-115">适配器应阻止**终止**直到消息计数已达到零。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-115">The adapter should block **Terminate** until the message count has reached zero.</span></span> <span data-ttu-id="8e6ec-116">在接收端此工作包括尚未发布到 BizTalk Server 任何未完成的请求。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-116">On the receive side this work includes any outstanding requests that have not been published to BizTalk Server.</span></span> <span data-ttu-id="8e6ec-117">响应消息还未发送到接收适配器后**终止**已调用。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-117">Response messages are not delivered to a receive adapter after **Terminate** has been called.</span></span>  
+ <span data-ttu-id="8e6ec-114">**实现提示：** 建议适配器保留工作正在进行的计数。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-114">**Implementation Tip:** We recommend that the adapter keep a count of the work in progress.</span></span> <span data-ttu-id="8e6ec-115">适配器应阻止**终止**直到消息计数已达到零。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-115">The adapter should block **Terminate** until the message count has reached zero.</span></span> <span data-ttu-id="8e6ec-116">在接收端此工作包括尚未发布到 BizTalk Server 任何未完成的请求。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-116">On the receive side this work includes any outstanding requests that have not been published to BizTalk Server.</span></span> <span data-ttu-id="8e6ec-117">响应消息还未发送到接收适配器后**终止**已调用。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-117">Response messages are not delivered to a receive adapter after **Terminate** has been called.</span></span>  
   
  <span data-ttu-id="8e6ec-118">对于发送适配器，应适当地处理正在进行的消息。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-118">For send adapters, messages that are in progress should be handled appropriately.</span></span> <span data-ttu-id="8e6ec-119">这意味着应从要阻止不止一次发送消息的适配器的私有应用程序消息队列中删除已成功传递的任何消息。</span><span class="sxs-lookup"><span data-stu-id="8e6ec-119">This means any message that was successfully delivered should be deleted from the adapter's private application message queue to prevent messages from being sent more than once.</span></span>  
   

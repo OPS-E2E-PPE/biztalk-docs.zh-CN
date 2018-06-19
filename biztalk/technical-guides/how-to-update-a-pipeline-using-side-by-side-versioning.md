@@ -1,14 +1,14 @@
 ---
-title: "如何更新管道使用的并行版本控制 |Microsoft 文档"
-ms.custom: 
+title: 如何更新管道使用的并行版本控制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd884a76-71dd-4c90-b4ba-f1cd7f48eb04
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008374"
 ---
 # <a name="how-to-update-a-pipeline-using-side-by-side-versioning"></a><span data-ttu-id="1508f-102">如何更新管道使用的并行版本控制</span><span class="sxs-lookup"><span data-stu-id="1508f-102">How to Update a Pipeline Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="1508f-103">若要使用的并行版本控制添加一条新管道的简单方法是在发送端口中选择新部署的管道版本或者接收位置。</span><span class="sxs-lookup"><span data-stu-id="1508f-103">The simple way to use a new pipeline added by side-by-side versioning is to select the newly deployed pipeline version in the send port or receive location.</span></span> <span data-ttu-id="1508f-104">这将替换为新替换旧的管道。</span><span class="sxs-lookup"><span data-stu-id="1508f-104">This will replace the old pipeline with the new one.</span></span> <span data-ttu-id="1508f-105">但是，如果你需要 true 的并行功能用于获取向后兼容性，然后必须创建新的发送端口和接收位置并将其绑定到指定的新管道版本。</span><span class="sxs-lookup"><span data-stu-id="1508f-105">However, if you need true side-by-side functionality for backwards-compatibility, then you must create new send ports and receive locations and bind them to the new pipeline version specified.</span></span>  

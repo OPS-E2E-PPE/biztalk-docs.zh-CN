@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 应用程序部署的生产任务 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 应用程序部署的生产任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], assemblies
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - assemblies, deploying
 - deploying [applications], production
 ms.assetid: e77d8921-42ef-4c51-aab2-66c086aad955
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265029"
 ---
 # <a name="production-tasks-for-biztalk-application-deployment"></a><span data-ttu-id="d9b17-102">BizTalk 应用程序部署的生产任务</span><span class="sxs-lookup"><span data-stu-id="d9b17-102">Production Tasks for BizTalk Application Deployment</span></span>
 <span data-ttu-id="d9b17-103">以下是将 BizTalk 应用程序部署到生产环境时所涉及的步骤。</span><span class="sxs-lookup"><span data-stu-id="d9b17-103">The following are the steps involved in deploying a BizTalk application to your production environment.</span></span>  

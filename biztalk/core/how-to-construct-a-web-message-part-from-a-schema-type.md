@@ -1,11 +1,11 @@
 ---
-title: "如何构造中的架构类型的 Web 消息部件 |Microsoft 文档"
-ms.custom: 
+title: 如何构造中的架构类型的 Web 消息部件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Web messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Transform shape [Orchestration Designer]
 - Web messages, Transform shape [Orchestration Designer]
 ms.assetid: 4452ade6-b10f-4564-bffc-18114896aeeb
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970771"
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a><span data-ttu-id="8ebaf-102">如何从架构类型构造 Web 消息部分</span><span class="sxs-lookup"><span data-stu-id="8ebaf-102">How to Construct a Web Message Part from a Schema Type</span></span>
 <span data-ttu-id="8ebaf-103">从架构类型中使用创建的 Web 消息部分**转换**形状。</span><span class="sxs-lookup"><span data-stu-id="8ebaf-103">You create a Web message part from a schema type by using a **Transform** shape.</span></span> <span data-ttu-id="8ebaf-104">也可以通过使用 .NET 帮助程序类设置各个部分来从架构类型创建 Web 消息部分。</span><span class="sxs-lookup"><span data-stu-id="8ebaf-104">Alternatively, you can create a Web message part from a schema type by using a .NET helper class to set the parts.</span></span> <span data-ttu-id="8ebaf-105">通过使用一个.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。</span><span class="sxs-lookup"><span data-stu-id="8ebaf-105">For more information on creating message types by using a .NET class, see [Constructing Messages in User Code](../core/constructing-messages-in-user-code.md).</span></span>  

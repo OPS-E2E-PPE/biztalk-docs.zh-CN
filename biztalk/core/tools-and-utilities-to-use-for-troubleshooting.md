@@ -1,14 +1,14 @@
 ---
-title: "工具和实用程序用于故障排除 |Microsoft 文档"
-ms.custom: 
+title: 工具和实用程序用于故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c817384f-e328-439d-9c41-a94ed75670ce
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008414"
 ---
 # <a name="tools-and-utilities-to-use-for-troubleshooting"></a><span data-ttu-id="fe0cc-102">用于故障排除的工具和实用程序</span><span class="sxs-lookup"><span data-stu-id="fe0cc-102">Tools and Utilities to Use for Troubleshooting</span></span>
 <span data-ttu-id="fe0cc-103">本部分介绍的若干工具和实用程序可用于诊断中使用 Microsoft BizTalk Server 组件或依赖关系的问题的根本原因。</span><span class="sxs-lookup"><span data-stu-id="fe0cc-103">This section describes several tools and utilities that can be useful for diagnosing the root cause of a problem in a Microsoft BizTalk Server component or dependency.</span></span>  

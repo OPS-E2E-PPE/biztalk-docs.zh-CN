@@ -1,14 +1,14 @@
 ---
-title: "使用规则引擎时的性能注意事项 |Microsoft 文档"
-ms.custom: 
+title: 使用规则引擎时的性能注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e9020c2-5152-40f6-940b-d4ce4081f069
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266501"
 ---
 # <a name="performance-considerations-when-using-the-rule-engine"></a><span data-ttu-id="49e9d-102">使用规则引擎时的性能注意事项</span><span class="sxs-lookup"><span data-stu-id="49e9d-102">Performance Considerations When Using the Rule Engine</span></span>
 <span data-ttu-id="49e9d-103">本主题介绍规则引擎在各种情况下以及使用不同的配置/优化参数值时的性能表现。</span><span class="sxs-lookup"><span data-stu-id="49e9d-103">This topic discusses how the rule engine performs in various scenarios and with different values for the configuration/tuning parameters.</span></span>  

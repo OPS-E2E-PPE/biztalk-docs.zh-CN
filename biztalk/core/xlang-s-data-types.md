@@ -1,11 +1,11 @@
 ---
-title: "XLANG-s 数据类型 |Microsoft 文档"
-ms.custom: 
+title: XLANG-s 数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, expressions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, variables
 - Orchestration Designer, expressions
 ms.assetid: 5b08aaa6-1533-4bac-a76d-f9162e39bf4f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290437"
 ---
 # <a name="xlang-s-data-types"></a><span data-ttu-id="ad655-102">XLANG-s 数据类型</span><span class="sxs-lookup"><span data-stu-id="ad655-102">XLANG-s Data Types</span></span>
 <span data-ttu-id="ad655-103">XLANG/s 定义反映的 C# 的对应的标准值类型。</span><span class="sxs-lookup"><span data-stu-id="ad655-103">XLANG/s defines standard value types that are reflections of their C# counterparts.</span></span> <span data-ttu-id="ad655-104">其中包括**布尔**，**字节**， **Char**，**十进制**， **Double**， **Int16**， **Int32**， **Int64**， **SByte**，**单个**，**字符串**， **UInt16**， **UInt32**，和**UInt64**。</span><span class="sxs-lookup"><span data-stu-id="ad655-104">These include **Boolean**, **Byte**, **Char**, **Decimal**, **Double**, **Int16**, **Int32**, **Int64**, **SByte**, **Single**, **String**, **UInt16**, **UInt32**, and **UInt64**.</span></span> <span data-ttu-id="ad655-105">XLANG/s 支持一维数组，但不支持数组文本。</span><span class="sxs-lookup"><span data-stu-id="ad655-105">XLANG/s supports single-dimensional arrays, but does not support array literals.</span></span>  

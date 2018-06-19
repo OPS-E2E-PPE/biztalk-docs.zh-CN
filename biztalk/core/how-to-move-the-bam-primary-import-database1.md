@@ -1,17 +1,17 @@
 ---
-title: "如何移动 BAM 主导入 Database1 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 主导入 Database1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, Primary Import database [BAM]
 - Primary Import database [BAM], migrating
 ms.assetid: fab13fea-5c35-4a9f-977d-cc45545c54b2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972659"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a><span data-ttu-id="7e2fd-102">如何移动 BAM 主导入数据库</span><span class="sxs-lookup"><span data-stu-id="7e2fd-102">How to Move the BAM Primary Import Database</span></span>
 <span data-ttu-id="7e2fd-103">您可以使用此过程将 BAM 主导入数据库移至其他服务器。</span><span class="sxs-lookup"><span data-stu-id="7e2fd-103">You can use this procedure to move the BAM Primary Import database to another server.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="7e2fd-118">右键单击**SampleUpdateInfo.xml**，然后单击**编辑**。</span><span class="sxs-lookup"><span data-stu-id="7e2fd-118">Right-click **SampleUpdateInfo.xml**, and then click **Edit**.</span></span>  
   
-9. <span data-ttu-id="7e2fd-119">在文件的主导入数据库部分中，替换**"SourceServer"**同名的源系统，然后将**"DestinationServer"**与目标系统的名称。</span><span class="sxs-lookup"><span data-stu-id="7e2fd-119">In the Primary Import Database section of the file, replace **"SourceServer"** with the name of the source system, and then replace **"DestinationServer"** with the name of the destination system.</span></span>  
+9. <span data-ttu-id="7e2fd-119">在文件的主导入数据库部分中，替换 **"SourceServer"** 同名的源系统，然后将 **"DestinationServer"** 与目标系统的名称。</span><span class="sxs-lookup"><span data-stu-id="7e2fd-119">In the Primary Import Database section of the file, replace **"SourceServer"** with the name of the source system, and then replace **"DestinationServer"** with the name of the destination system.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="7e2fd-120">用引号将源系统和目标系统的名称括起来。</span><span class="sxs-lookup"><span data-stu-id="7e2fd-120">Include the quotation marks around the name of the source and destination systems.</span></span>  

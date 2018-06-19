@@ -1,11 +1,11 @@
 ---
-title: "如何启动发送端口或发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何启动发送端口或发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - starting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send port groups, starting
 - send ports, starting
 ms.assetid: f17c0b7c-cad7-4c5e-a08c-3ebf838faa54
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255597"
 ---
 # <a name="how-to-start-a-send-port-or-send-port-group"></a><span data-ttu-id="fd151-102">如何启动发送端口或发送端口组</span><span class="sxs-lookup"><span data-stu-id="fd151-102">How to Start a Send Port or Send Port Group</span></span>
 <span data-ttu-id="fd151-103">本主题将介绍如何使用 BizTalk Server 管理控制台启动发送端口或发送端口组。</span><span class="sxs-lookup"><span data-stu-id="fd151-103">This topic describes how to use the BizTalk Server Administration console to start a send port or send port group.</span></span> <span data-ttu-id="fd151-104">必须先启动发送端口或发送端口组，才能处理消息。</span><span class="sxs-lookup"><span data-stu-id="fd151-104">You must start a send port or send port group before it can process messages.</span></span> <span data-ttu-id="fd151-105">如果启动已取消登记的发送端口或发送端口组，则 BizTalk 将先登记该发送端口或发送端口组，然后再启动它。</span><span class="sxs-lookup"><span data-stu-id="fd151-105">If you start an unenlisted send port or send port group, BizTalk enlists the send port or send port group before starting it.</span></span> <span data-ttu-id="fd151-106">发送端口组中必须至少包含一个处于登记状态的发送端口，才能启动。</span><span class="sxs-lookup"><span data-stu-id="fd151-106">A send port group must contain at least one send port in an enlisted state before you can start the send port group.</span></span> <span data-ttu-id="fd151-107">启动和停止发送端口组不影响它所包含的任何发送端口的状态。</span><span class="sxs-lookup"><span data-stu-id="fd151-107">Starting and stopping a send port group does not affect the state of any send ports that it contains.</span></span>  

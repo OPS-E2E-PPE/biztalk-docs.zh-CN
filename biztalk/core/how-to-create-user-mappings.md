@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], creating
 - managing [SSO maps], creating user maps
 ms.assetid: c2e9f0db-920b-4d89-8e1e-5dc92805fd23
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970939"
 ---
 # <a name="how-to-create-user-mappings"></a><span data-ttu-id="99be5-102">如何创建用户映射</span><span class="sxs-lookup"><span data-stu-id="99be5-102">How to Create User Mappings</span></span>
 <span data-ttu-id="99be5-103">使用此命令创建一个或多个用户映射，按照指定的 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="99be5-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="99be5-104">下面是示例 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="99be5-104">The following is an example XML file.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="99be5-113">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="99be5-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="99be5-114">默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="99be5-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="99be5-115">类型 * * ssomanage-createmappings *\<映射文件名\>* * *，其中*\<映射文件名\>*是包含你想要创建用户映射的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="99be5-115">Type **ssomanage –createmappings *\<mappings file name\>***, where *\<mappings file name\>* is the name of file that contains the user mapping(s) you want to create.</span></span>  
+3.  <span data-ttu-id="99be5-115">类型 * * ssomanage-createmappings *\<映射文件名\>* * *，其中*\<映射文件名\>* 是包含你想要创建用户映射的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="99be5-115">Type **ssomanage –createmappings *\<mappings file name\>***, where *\<mappings file name\>* is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="99be5-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="99be5-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="99be5-119">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="99be5-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="99be5-120">默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="99be5-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="99be5-121">类型 * * ssoclient – setcredentials *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是用户想要创建的映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="99be5-121">Type **ssoclient –setcredentials *\<application name \>***, where *\<application name \>* is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3.  <span data-ttu-id="99be5-121">类型 * * ssoclient – setcredentials *\<应用程序名称\>* * *，其中*\<应用程序名称\>* 是用户想要创建的映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="99be5-121">Type **ssoclient –setcredentials *\<application name \>***, where *\<application name \>* is the name of affiliate application that the user wants to create a mapping for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="99be5-122">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="99be5-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

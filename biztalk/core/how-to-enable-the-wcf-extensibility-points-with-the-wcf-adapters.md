@@ -1,15 +1,15 @@
 ---
-title: "启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档"
-description: "安装程序集、 配置 machine.config，将扩展添加到 BizTalk 管理员、 创建接收位置来启用 BizTalk Server 中的 WCF 适配器的 WCF 扩展性点"
-ms.custom: 
+title: 启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档
+description: 安装程序集、 配置 machine.config，将扩展添加到 BizTalk 管理员、 创建接收位置来启用 BizTalk Server 中的 WCF 适配器的 WCF 扩展性点
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975411"
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a><span data-ttu-id="6e258-103">如何启用 WCF 适配器的 WCF 扩展点</span><span class="sxs-lookup"><span data-stu-id="6e258-103">How to Enable the WCF Extensibility Points with the WCF Adapters</span></span>
 <span data-ttu-id="6e258-104">启用三个 WCF 扩展性点-行为扩展、 绑定元素扩展和绑定扩展-与的 WCF 自定义和 WCF CustomIsolated 适配器。</span><span class="sxs-lookup"><span data-stu-id="6e258-104">Enable three WCF extensibility points—behavior extension, binding element extension, and binding extension—with the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="6e258-105">若要执行此操作，首先应将用于实现 WCF 扩展点的程序集安装到全局程序集缓存 (GAC) 中，然后修改计算机上的 machine.config 文件，最后再使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置 WCF-Custom 或 WCF-CustomIsolated 适配器。</span><span class="sxs-lookup"><span data-stu-id="6e258-105">To do so, you first install the assemblies implementing the WCF extensibility points in the global assembly cache (GAC), then modify the machine.config file on your computers, and then configure the WCF-Custom or the WCF-CustomIsolated adapter by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="6e258-121">在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。</span><span class="sxs-lookup"><span data-stu-id="6e258-121">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="6e258-122">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingExtensions\>** 内的 WCF 绑定扩展元素 **\<system.serverModel\>\\< 扩展\>**元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-122">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingExtensions\>** element for a WCF binding extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-123">例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-123">For example, to enable a custom binding extension, netHttpBinding, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="6e258-122">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<bindingExtensions\>** 内的 WCF 绑定扩展元素 **\<system.serverModel\>\\< 扩展\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-122">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingExtensions\>** element for a WCF binding extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-123">例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-123">For example, to enable a custom binding extension, netHttpBinding, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  
@@ -103,7 +104,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="6e258-141">在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。</span><span class="sxs-lookup"><span data-stu-id="6e258-141">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="6e258-142">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions\>**  WCF 绑定元素的元素内部扩展 **\<system.serverModel\>\\< 扩展\>**元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-142">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingElementExtensions\>** element for a WCF binding element extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-143">例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-143">For example, to enable a custom binding element extension, droppingInterceptor, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="6e258-142">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions\>**  WCF 绑定元素的元素内部扩展 **\<system.serverModel\>\\< 扩展\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-142">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<bindingElementExtensions\>** element for a WCF binding element extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-143">例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-143">For example, to enable a custom binding element extension, droppingInterceptor, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  
@@ -166,7 +167,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="6e258-169">在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。</span><span class="sxs-lookup"><span data-stu-id="6e258-169">At a command prompt, go to the %FrameworkDir%\v4.X.XXXXX\CONFIG folder, and then open the **machine.config** file by using Notepad.</span></span>  
   
-2.  <span data-ttu-id="6e258-170">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<behaviorExtensions\>** 的 WCF 行为扩展元素内部 **\<system.serverModel\>\\< 扩展\>**元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-170">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<behaviorExtensions\>** element for a WCF behavior extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-171">例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-171">For example, To enable a custom behavior extension, schemaValidator, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
+2.  <span data-ttu-id="6e258-170">在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<behaviorExtensions\>** 的 WCF 行为扩展元素内部 **\<system.serverModel\>\\< 扩展\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="6e258-170">In Notepad, if the machine.config file does not have the **\<system.serverModel\>\\<extensions\>** elements, add those elements inside the **\<configuration\>** element of the machine.config file, and then add the **\<behaviorExtensions\>** element for a WCF behavior extension inside the **\<system.serverModel\>\\<extensions\>** elements.</span></span> <span data-ttu-id="6e258-171">例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置\>** machine.config 文件的元素：</span><span class="sxs-lookup"><span data-stu-id="6e258-171">For example, To enable a custom behavior extension, schemaValidator, add the following code inside the **\<configuration\>** element of the machine.config file:</span></span>  
   
     ```  
     <system.serviceModel>  

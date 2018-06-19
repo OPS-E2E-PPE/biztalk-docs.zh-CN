@@ -1,14 +1,14 @@
 ---
-title: "清单： 执行每周维护检查 |Microsoft 文档"
-ms.custom: 
+title: 清单： 执行每周维护检查 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b13e43ba-4bac-4d4b-aaf8-46d60c0561bf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976523"
 ---
 # <a name="checklist-performing-weekly-maintenance-checks"></a><span data-ttu-id="49933-102">清单： 执行每周维护检查</span><span class="sxs-lookup"><span data-stu-id="49933-102">Checklist: Performing Weekly Maintenance Checks</span></span>
 <span data-ttu-id="49933-103">本主题介绍在每周执行的可靠性、 管理、 安全性和性能的维护检查所涉及的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="49933-103">This topic describes the steps involved in performing weekly maintenance checks of the reliability, administration, security, and performance of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  

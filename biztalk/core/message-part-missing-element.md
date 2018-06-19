@@ -1,14 +1,14 @@
 ---
-title: "消息部分缺少元素 |Microsoft 文档"
-ms.custom: 
+title: 消息部分缺少元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b519315f-d51d-4ca3-a0e6-d08bb920c6c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263037"
 ---
 # <a name="message-part-missing-element"></a><span data-ttu-id="38131-102">消息部分缺少元素</span><span class="sxs-lookup"><span data-stu-id="38131-102">Message part missing element</span></span>
 ## <a name="details"></a><span data-ttu-id="38131-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="38131-103">Details</span></span>  

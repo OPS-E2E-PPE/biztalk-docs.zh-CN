@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013476"
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a><span data-ttu-id="abe44-101">将适配器添加到 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="abe44-101">Adding the Adapter to BizTalk Server</span></span>
 <span data-ttu-id="abe44-102">适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器包含“接收处理程序”文件夹和“发送处理程序”文件夹。</span><span class="sxs-lookup"><span data-stu-id="abe44-102">Microsoft BizTalk Adapter for JD Edwards OneWorld contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="abe44-103">“发送处理程序”文件夹包含 BizTalkServerApplication。</span><span class="sxs-lookup"><span data-stu-id="abe44-103">The Send Handler folder contains BizTalkServerApplication.</span></span> <span data-ttu-id="abe44-104">适用于 JD Edwards OneWorld 的 BizTalk 适配器是可以创建的，它在与 BizTalk 服务器相关的进程中运行，而不在隔离的主机进程中运行。</span><span class="sxs-lookup"><span data-stu-id="abe44-104">BizTalk Adapter for JD Edwards OneWorld is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="abe44-120">设置 SQL 连接参数。</span><span class="sxs-lookup"><span data-stu-id="abe44-120">Set the SQL Connection parameters.</span></span>  
   
-    -   <span data-ttu-id="abe44-121">**定义 SQL 数据库参数-**的 SQL Server 名称和数据库是那些在安装设置。</span><span class="sxs-lookup"><span data-stu-id="abe44-121">**Define SQL Database Parameters -** The SQL Server Name and Database are those you set at installation.</span></span> <span data-ttu-id="abe44-122">在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。</span><span class="sxs-lookup"><span data-stu-id="abe44-122">This is the text area that you can redefine the server and database for this adapter.</span></span>  
+    -   <span data-ttu-id="abe44-121">**定义 SQL 数据库参数-** 的 SQL Server 名称和数据库是那些在安装设置。</span><span class="sxs-lookup"><span data-stu-id="abe44-121">**Define SQL Database Parameters -** The SQL Server Name and Database are those you set at installation.</span></span> <span data-ttu-id="abe44-122">在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。</span><span class="sxs-lookup"><span data-stu-id="abe44-122">This is the text area that you can redefine the server and database for this adapter.</span></span>  
   
 5.  <span data-ttu-id="abe44-123">单击**关闭**退出**逻辑系统**窗口。</span><span class="sxs-lookup"><span data-stu-id="abe44-123">Click **Close** to exit the **Logical System** window.</span></span>  
   

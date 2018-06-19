@@ -1,14 +1,14 @@
 ---
-title: "部署和测试应用程序 |Microsoft 文档"
-ms.custom: 
+title: 部署和测试应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2c86d5f-1849-4b7d-8061-23f156245f5b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006998"
 ---
 # <a name="deploy-and-test-the-application"></a><span data-ttu-id="1abfb-102">部署并测试应用程序</span><span class="sxs-lookup"><span data-stu-id="1abfb-102">Deploy and test the application</span></span>
 > [!NOTE]
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
   
     4.  <span data-ttu-id="1abfb-119">提供接收位置将从中选取传入 JSON 采购订单的文件夹位置。</span><span class="sxs-lookup"><span data-stu-id="1abfb-119">Provide the folder location from where the receive location will pick the incoming JSON purchase order.</span></span> <span data-ttu-id="1abfb-120">指定`*.json`作为文件掩码，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1abfb-120">Specify `*.json` as the file mask and then click **OK**.</span></span>  
   
-    5.  <span data-ttu-id="1abfb-121">从**接收管道**下拉列表中，选择**JSONToXml**。</span><span class="sxs-lookup"><span data-stu-id="1abfb-121">From the **Receive Pipeline** drop-down, select **JSONToXml**.</span></span> <span data-ttu-id="1abfb-122">此时，你已在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序中创建此自定义接收管道。</span><span class="sxs-lookup"><span data-stu-id="1abfb-122">You created this custom receive pipeline in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.</span></span> <span data-ttu-id="1abfb-123">右键单击省略号**（...）**按钮旁边向管道，然后在下**阶段 1 – Deocde 组件**，提供以下值：</span><span class="sxs-lookup"><span data-stu-id="1abfb-123">Right-click the ellipsis **(…)** button next to the pipeline, and then under **Stage 1 – Deocde Component**, provide the following values:</span></span>  
+    5.  <span data-ttu-id="1abfb-121">从**接收管道**下拉列表中，选择**JSONToXml**。</span><span class="sxs-lookup"><span data-stu-id="1abfb-121">From the **Receive Pipeline** drop-down, select **JSONToXml**.</span></span> <span data-ttu-id="1abfb-122">此时，你已在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序中创建此自定义接收管道。</span><span class="sxs-lookup"><span data-stu-id="1abfb-122">You created this custom receive pipeline in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.</span></span> <span data-ttu-id="1abfb-123">右键单击省略号 **（...）** 按钮旁边向管道，然后在下**阶段 1 – Deocde 组件**，提供以下值：</span><span class="sxs-lookup"><span data-stu-id="1abfb-123">Right-click the ellipsis **(…)** button next to the pipeline, and then under **Stage 1 – Deocde Component**, provide the following values:</span></span>  
   
         -   <span data-ttu-id="1abfb-124">RootNode-`ROOT`</span><span class="sxs-lookup"><span data-stu-id="1abfb-124">RootNode - `ROOT`</span></span>  
   

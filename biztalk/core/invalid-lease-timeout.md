@@ -1,14 +1,14 @@
 ---
-title: "无效的租约超时 |Microsoft 文档"
-ms.custom: 
+title: 无效的租约超时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81b7b2a0-e9e6-4165-88bc-f712b5cbacb6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257349"
 ---
 # <a name="invalid-lease-timeout"></a><span data-ttu-id="34eb9-102">租约超时无效</span><span class="sxs-lookup"><span data-stu-id="34eb9-102">Invalid lease timeout</span></span>
 ## <a name="details"></a><span data-ttu-id="34eb9-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="34eb9-103">Details</span></span>  
@@ -54,4 +55,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="34eb9-128">在**Wcf-nettcp 传输属性**对话框中，单击**绑定**选项卡。</span><span class="sxs-lookup"><span data-stu-id="34eb9-128">In the **WCF-NetTcP Transport Properties** dialog box, click the **Binding** tab.</span></span>  
   
-9. <span data-ttu-id="34eb9-129">在**连接池设置**部分中，确保**租约超时 （hh: mm:）**范围是否有效。</span><span class="sxs-lookup"><span data-stu-id="34eb9-129">In the **Connection Pool settings** section, ensure the **Lease timeout (hh:mm:ss)** range is valid.</span></span> <span data-ttu-id="34eb9-130">可接受的值包括：0 到 23 小时、0 到 59 分钟和 0 到 59 秒。</span><span class="sxs-lookup"><span data-stu-id="34eb9-130">Acceptable values are 0 to 23 hours, 0 to 59 minutes, and 0 to 59 seconds.</span></span>
+9. <span data-ttu-id="34eb9-129">在**连接池设置**部分中，确保**租约超时 （hh: mm:）** 范围是否有效。</span><span class="sxs-lookup"><span data-stu-id="34eb9-129">In the **Connection Pool settings** section, ensure the **Lease timeout (hh:mm:ss)** range is valid.</span></span> <span data-ttu-id="34eb9-130">可接受的值包括：0 到 23 小时、0 到 59 分钟和 0 到 59 秒。</span><span class="sxs-lookup"><span data-stu-id="34eb9-130">Acceptable values are 0 to 23 hours, 0 to 59 minutes, and 0 to 59 seconds.</span></span>

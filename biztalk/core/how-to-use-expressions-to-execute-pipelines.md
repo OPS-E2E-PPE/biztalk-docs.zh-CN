@@ -1,11 +1,11 @@
 ---
-title: "如何使用表达式来执行管道 |Microsoft 文档"
-ms.custom: 
+title: 如何使用表达式来执行管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ExecuteReceivePipeline() method
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - pipelines, orchestrations
 - Message Assignment shape [Orchestration Designer], pipelines
 ms.assetid: f947fa73-526c-4747-8de7-df557a93056c
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974651"
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a><span data-ttu-id="ce63f-102">如何使用表达式来执行管道</span><span class="sxs-lookup"><span data-stu-id="ce63f-102">How to Use Expressions to Execute Pipelines</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="ce63f-103"> 能够从业务流程中同步调用管道。</span><span class="sxs-lookup"><span data-stu-id="ce63f-103"> has the ability to synchronously call a pipeline from within an Orchestration.</span></span> <span data-ttu-id="ce63f-104">这使业务流程能够对数据正文利用封装在管道（发送或接收）内的消息处理，而不必通过消息传递基础结构来发送这些数据。</span><span class="sxs-lookup"><span data-stu-id="ce63f-104">This enables orchestrations to leverage the message processing encapsulated within a pipeline (either send or receive) against a body of data without having to send that data through the messaging infrastructure.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="ce63f-108">业务流程使用中的方法**XLANGPipelineManager**类 (在**Microsoft.XLANGs.Pipeline**命名空间) 调用发送或接收管道。</span><span class="sxs-lookup"><span data-stu-id="ce63f-108">Orchestrations use methods in the **XLANGPipelineManager** class (in the **Microsoft.XLANGs.Pipeline** namespace) to call send or receive pipelines.</span></span>  <span data-ttu-id="ce63f-109">接收管道使用单条消息或一个交换并生成零条或多条消息，就像在 BizTalk 消息传送过程中管道在接收消息的上下文中执行时一样。</span><span class="sxs-lookup"><span data-stu-id="ce63f-109">A Receive pipeline consumes either a single message or an interchange and yields zero or more messages, just as when the pipeline executes in the context of receiving a message within BizTalk messaging.</span></span> <span data-ttu-id="ce63f-110">发送管道使用一条或多条消息并生成单条消息或交换，也是像在 BizTalk 消息传送过程中管道在发送消息的上下文中执行时一样。</span><span class="sxs-lookup"><span data-stu-id="ce63f-110">A Send pipeline consumes one or more messages and yields a single message or interchange, again, just as when the pipeline executes in the context of sending a message within BizTalk messaging.</span></span>  
   
 ## <a name="calling-a-receive-pipeline"></a><span data-ttu-id="ce63f-111">调用接收管道</span><span class="sxs-lookup"><span data-stu-id="ce63f-111">Calling a Receive Pipeline</span></span>  
- <span data-ttu-id="ce63f-112">若要调用从业务流程，在应用程序调用中的接收管道**ExecuteReceivePipeline()**方法**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-112">In order to call a receive pipeline from within an orchestration, the application calls the **ExecuteReceivePipeline()** method of the **XLANGPipelineManager** class.</span></span>  <span data-ttu-id="ce63f-113">此方法使用单个交换，并返回零个或多个消息的集合 (实例中包含**ReceivePipelineOutputMessages**类)。</span><span class="sxs-lookup"><span data-stu-id="ce63f-113">This method consumes a single interchange and returns a collection of zero or more messages (contained in an instance of the **ReceivePipelineOutputMessages** class).</span></span> <span data-ttu-id="ce63f-114">此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-114">The syntax of this method is detailed in the .NET class library reference for the **XLANGPipelineManager** class.</span></span>  
+ <span data-ttu-id="ce63f-112">若要调用从业务流程，在应用程序调用中的接收管道**ExecuteReceivePipeline()** 方法**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-112">In order to call a receive pipeline from within an orchestration, the application calls the **ExecuteReceivePipeline()** method of the **XLANGPipelineManager** class.</span></span>  <span data-ttu-id="ce63f-113">此方法使用单个交换，并返回零个或多个消息的集合 (实例中包含**ReceivePipelineOutputMessages**类)。</span><span class="sxs-lookup"><span data-stu-id="ce63f-113">This method consumes a single interchange and returns a collection of zero or more messages (contained in an instance of the **ReceivePipelineOutputMessages** class).</span></span> <span data-ttu-id="ce63f-114">此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-114">The syntax of this method is detailed in the .NET class library reference for the **XLANGPipelineManager** class.</span></span>  
   
  <span data-ttu-id="ce63f-115">从业务流程内部执行接收管道的 API 是：</span><span class="sxs-lookup"><span data-stu-id="ce63f-115">The API for executing a receive pipeline from within an orchestration is:</span></span>  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="ce63f-124">在调用时**PassThruReceive**管道或从业务流程中的自定义管道组件，因为 System.Xml.XmlDocument 尽管传入的消息类型的或不是 XML，必须声明传入消息的变量类型.</span><span class="sxs-lookup"><span data-stu-id="ce63f-124">When calling **PassThruReceive** pipeline or custom pipeline component from within an orchestration, you must declare the variable type for incoming message as System.Xml.XmlDocument despite of the incoming message type is XML or not.</span></span> <span data-ttu-id="ce63f-125">因此，如果在传入消息为非 XML 消息（例如，为平面文件格式的消息）时尝试对其执行操作，则会遇到异常。</span><span class="sxs-lookup"><span data-stu-id="ce63f-125">Therefore, you may encounter exception if you try to operate on it if the incoming message is a non-XML message such as a flat file format message.</span></span> <span data-ttu-id="ce63f-126">这是因为业务流程引擎在上述情况中为任何传入消息类型都会使用 System.Xml.XmlDocument。</span><span class="sxs-lookup"><span data-stu-id="ce63f-126">This is because of that orchestration engine intends to use System.Xml.XmlDocument for any type of incoming message in the scenario described above.</span></span>  
   
 ## <a name="calling-a-send-pipeline"></a><span data-ttu-id="ce63f-127">调用发送管道</span><span class="sxs-lookup"><span data-stu-id="ce63f-127">Calling a Send Pipeline</span></span>  
- <span data-ttu-id="ce63f-128">若要调用从业务流程，在应用程序调用中的发送管道**ExecuteSendPipeline()**方法**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-128">To call a send pipeline from within an orchestration, the application calls the **ExecuteSendPipeline()** method of the **XLANGPipelineManager** class.</span></span> <span data-ttu-id="ce63f-129">此方法使用一个或多个消息的集合 (实例中包含**SendPipelineInputMessages**类) 并返回单个交换。</span><span class="sxs-lookup"><span data-stu-id="ce63f-129">This method consumes a collection of one or more messages (contained in an instance of the **SendPipelineInputMessages** class) and returns a single interchange.</span></span> <span data-ttu-id="ce63f-130">此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-130">The syntax of this method is detailed in the .NET class library reference for the **XLANGPipelineManager** class.</span></span>  <span data-ttu-id="ce63f-131">因为的发送管道的执行会产生新的交换，调用**ExecuteSendPipeline()**方法必须将消息分配形状中，这种情况下：</span><span class="sxs-lookup"><span data-stu-id="ce63f-131">Because execution of a send pipeline yields a new interchange, the call to **ExecuteSendPipeline()** method must be made within a message assignment shape, as such:</span></span>  
+ <span data-ttu-id="ce63f-128">若要调用从业务流程，在应用程序调用中的发送管道**ExecuteSendPipeline()** 方法**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-128">To call a send pipeline from within an orchestration, the application calls the **ExecuteSendPipeline()** method of the **XLANGPipelineManager** class.</span></span> <span data-ttu-id="ce63f-129">此方法使用一个或多个消息的集合 (实例中包含**SendPipelineInputMessages**类) 并返回单个交换。</span><span class="sxs-lookup"><span data-stu-id="ce63f-129">This method consumes a collection of one or more messages (contained in an instance of the **SendPipelineInputMessages** class) and returns a single interchange.</span></span> <span data-ttu-id="ce63f-130">此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。</span><span class="sxs-lookup"><span data-stu-id="ce63f-130">The syntax of this method is detailed in the .NET class library reference for the **XLANGPipelineManager** class.</span></span>  <span data-ttu-id="ce63f-131">因为的发送管道的执行会产生新的交换，调用**ExecuteSendPipeline()** 方法必须将消息分配形状中，这种情况下：</span><span class="sxs-lookup"><span data-stu-id="ce63f-131">Because execution of a send pipeline yields a new interchange, the call to **ExecuteSendPipeline()** method must be made within a message assignment shape, as such:</span></span>  
   
  <span data-ttu-id="ce63f-132">从业务流程内部执行发送管道的 API 是：</span><span class="sxs-lookup"><span data-stu-id="ce63f-132">The API for executing a send pipeline from within an orchestration is:</span></span>  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="ce63f-152">在部署重复架构的情况下，用于选择适当架构的算法逻辑与在消息传递基础结构上下文中执行时使用的算法逻辑相同。</span><span class="sxs-lookup"><span data-stu-id="ce63f-152">In cases where duplicate schemas are deployed, the algorithm's logic for selecting the appropriate schema is identical to that used when executing in the context of the messaging infrastructure.</span></span>  
   
 ### <a name="transactional-pipelines"></a><span data-ttu-id="ce63f-153">事务管道</span><span class="sxs-lookup"><span data-stu-id="ce63f-153">Transactional Pipelines</span></span>  
- <span data-ttu-id="ce63f-154">如果管道的阶段调用了事务性组件，则管道将没有可用的事务性上下文。</span><span class="sxs-lookup"><span data-stu-id="ce63f-154">Pipelines whose stages call transactional components will not have a transactional context available.</span></span>  <span data-ttu-id="ce63f-155">任何调用到**IPipelineContext.GetTransaction()**将引发**NotSupportedException**。</span><span class="sxs-lookup"><span data-stu-id="ce63f-155">Any call to **IPipelineContext.GetTransaction()** will throw **NotSupportedException**.</span></span>  <span data-ttu-id="ce63f-156">这不会阻止从业务流程中执行此类管道，但确实意味着管道必须检测并处理这种情况。</span><span class="sxs-lookup"><span data-stu-id="ce63f-156">This does not preclude execution of such a pipeline from an orchestration, but it does mean that the pipeline will have to detect and handle this situation.</span></span>  
+ <span data-ttu-id="ce63f-154">如果管道的阶段调用了事务性组件，则管道将没有可用的事务性上下文。</span><span class="sxs-lookup"><span data-stu-id="ce63f-154">Pipelines whose stages call transactional components will not have a transactional context available.</span></span>  <span data-ttu-id="ce63f-155">任何调用到**IPipelineContext.GetTransaction()** 将引发**NotSupportedException**。</span><span class="sxs-lookup"><span data-stu-id="ce63f-155">Any call to **IPipelineContext.GetTransaction()** will throw **NotSupportedException**.</span></span>  <span data-ttu-id="ce63f-156">这不会阻止从业务流程中执行此类管道，但确实意味着管道必须检测并处理这种情况。</span><span class="sxs-lookup"><span data-stu-id="ce63f-156">This does not preclude execution of such a pipeline from an orchestration, but it does mean that the pipeline will have to detect and handle this situation.</span></span>  
   
 ### <a name="message-destination"></a><span data-ttu-id="ce63f-157">消息目标</span><span class="sxs-lookup"><span data-stu-id="ce63f-157">Message Destination</span></span>  
  <span data-ttu-id="ce63f-158">在此上下文中不支持按照管道组件控制消息目标。</span><span class="sxs-lookup"><span data-stu-id="ce63f-158">Controlling message destination by pipeline components is not supported in this context.</span></span>  <span data-ttu-id="ce63f-159">设置上下文属性**MessageDestination**或**SuspendOnRoutingFailure**将导致**XLANGPipelineManagerException**引发。</span><span class="sxs-lookup"><span data-stu-id="ce63f-159">Setting the context properties **MessageDestination** or **SuspendOnRoutingFailure** will cause an **XLANGPipelineManagerException** to be thrown.</span></span>  

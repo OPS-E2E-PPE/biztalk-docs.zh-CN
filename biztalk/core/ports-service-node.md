@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263453"
 ---
 # <a name="ports-service-node"></a><span data-ttu-id="e6700-102">端口 （服务节点）</span><span class="sxs-lookup"><span data-stu-id="e6700-102">Ports (Service Node)</span></span>
 <span data-ttu-id="e6700-103">绑定文件的“Ports”节点是所有端口节点的父节点，端口节点包含与各个端口（这些端口绑定到与绑定文件一起导出的服务）有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="e6700-103">The Ports node of a binding file is the parent node for all of the Port nodes which contain specific information about ports bound to a service that is exported with the binding file.</span></span>  

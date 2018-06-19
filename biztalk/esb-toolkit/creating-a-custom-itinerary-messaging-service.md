@@ -1,14 +1,14 @@
 ---
-title: "创建自定义路线消息传递服务 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义路线消息传递服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2de44c21-68ca-4cf1-a117-bcb35af1b4a9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973731"
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a><span data-ttu-id="d3eed-102">创建自定义路线消息服务</span><span class="sxs-lookup"><span data-stu-id="d3eed-102">Creating a Custom Itinerary Messaging Service</span></span>
 <span data-ttu-id="d3eed-103">是的一部分的路线 framework[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持使用类实现的路线步骤执行**IMessagingService**执行路线的消息传递服务的接口。</span><span class="sxs-lookup"><span data-stu-id="d3eed-103">The itinerary framework that is part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports execution of itinerary steps using classes implementing the **IMessagingService** interface that execute itinerary messaging services.</span></span> <span data-ttu-id="d3eed-104">当你想要进行负责执行以下的服务时，你可以实现自定义的消息传递服务：</span><span class="sxs-lookup"><span data-stu-id="d3eed-104">You can implement a custom messaging service when you want the service to be responsible for the following:</span></span>  
@@ -76,7 +77,7 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
  <span data-ttu-id="d3eed-119">**若要实现自定义路线服务的消息传送**</span><span class="sxs-lookup"><span data-stu-id="d3eed-119">**To implement a custom itinerary service for messaging**</span></span>  
   
-1.  <span data-ttu-id="d3eed-120">与派生自的类创建一个程序集**IMessagingService;**中**执行**方法，包括所需能够修改消息或消息上下文 （如果有） 的所有逻辑。</span><span class="sxs-lookup"><span data-stu-id="d3eed-120">Create an assembly with a class that derives from **IMessagingService;** in the **Execute** method, include all logic necessary to make modifications to the message or the message context (if any).</span></span>  
+1.  <span data-ttu-id="d3eed-120">与派生自的类创建一个程序集**IMessagingService;** 中**执行**方法，包括所需能够修改消息或消息上下文 （如果有） 的所有逻辑。</span><span class="sxs-lookup"><span data-stu-id="d3eed-120">Create an assembly with a class that derives from **IMessagingService;** in the **Execute** method, include all logic necessary to make modifications to the message or the message context (if any).</span></span>  
   
 2.  <span data-ttu-id="d3eed-121">添加将项记入**itineraryServices**添加你的服务 Esb.config 文件节 **\<itineraryService\>**  GUID，则为具有元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。</span><span class="sxs-lookup"><span data-stu-id="d3eed-121">Add an entry in the **itineraryServices** section of the Esb.config file for your service by adding an **\<itineraryService\>** element with a GUID as the **id** attribute, the name of the service as the **name** attribute, the fully qualified name of the class as the **type** attribute, **Messaging** as the **scope** attribute, and the allowed stage (for example, **OnRampReceive**, **OnRampSend**, **OffRampSend**, **OffRampReceive**, **AllSend**, **AllReceive**, or **All**) as the **stage** attribute.</span></span>  
   

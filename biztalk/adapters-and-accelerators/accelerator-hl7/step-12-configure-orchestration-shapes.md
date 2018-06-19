@@ -1,18 +1,18 @@
 ---
-title: "步骤 12： 配置业务流程形状 |Microsoft 文档"
-ms.custom: 
+title: 步骤 12： 配置业务流程形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, orchestration shapes
 - orchestrations, shapes
 - message enrichment tutorial, orchestrations
 ms.assetid: 9388254b-2841-4489-838e-de913ceff151
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006422"
 ---
 # <a name="step-12-configure-orchestration-shapes"></a><span data-ttu-id="90f62-102">步骤 12： 配置业务流程形状</span><span class="sxs-lookup"><span data-stu-id="90f62-102">Step 12: Configure Orchestration Shapes</span></span>
 <span data-ttu-id="90f62-103">在此步骤中，你将完成业务流程形状的配置才能删除缺少配置智能标记。</span><span class="sxs-lookup"><span data-stu-id="90f62-103">In this step, you complete the configuration of the orchestration shapes in order to remove the insufficient configuration smart tags.</span></span> <span data-ttu-id="90f62-104">你指定**DoorbellOutputMessage**作为第一个转换过程中，输出指定**DoorbellMap.btm**作为用于在该进程中的映射。</span><span class="sxs-lookup"><span data-stu-id="90f62-104">You designate **DoorbellOutputMessage** as the output of the first transform process, designating **DoorbellMap.btm** as the map used in that process.</span></span> <span data-ttu-id="90f62-105">然后指定**DoorbellFinalMessage**作为第二个输出转换过程中，并添加丰富的消息的其他字段数据的表达式。</span><span class="sxs-lookup"><span data-stu-id="90f62-105">You then designate **DoorbellFinalMessage** as the output of the second transform process, and add the expression that enriches the message with additional field data.</span></span>  

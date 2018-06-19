@@ -1,11 +1,11 @@
 ---
-title: "映射组件 |Microsoft 文档"
-ms.custom: 
+title: 映射组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - file types, maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Mapper, file type
 - maps, components
 ms.assetid: be438d21-80a8-49d8-bd08-d85618ab23de
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262373"
 ---
 # <a name="map-components"></a><span data-ttu-id="b24be-102">映射组件</span><span class="sxs-lookup"><span data-stu-id="b24be-102">Map Components</span></span>
 <span data-ttu-id="b24be-103">映射的大多数组件存储在映射文件（扩展名为 .btm）中。</span><span class="sxs-lookup"><span data-stu-id="b24be-103">Map files (having a .btm extension) store most of the components of a map.</span></span> <span data-ttu-id="b24be-104">该文件中存储的项包括：</span><span class="sxs-lookup"><span data-stu-id="b24be-104">Items stored in the file include:</span></span>  

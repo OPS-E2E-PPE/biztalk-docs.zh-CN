@@ -1,18 +1,18 @@
 ---
-title: "将公共密钥令牌实用程序 |Microsoft 文档"
-ms.custom: 
+title: 将公共密钥令牌实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Replace Public Key Token Utility
 - utilities, Replace Public Key Token Utility
 - public key token
 ms.assetid: ed8673b9-af06-4bd7-b8b7-7371e4dd0fed
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972043"
 ---
 # <a name="replace-public-key-token-utility"></a><span data-ttu-id="d9f1b-102">将公共密钥令牌实用程序</span><span class="sxs-lookup"><span data-stu-id="d9f1b-102">Replace Public Key Token Utility</span></span>
 <span data-ttu-id="d9f1b-103">此实用程序可以用从强名称程序集密钥 (.snk) 文件派生的公钥标记替换文件中的公钥标记或变量。</span><span class="sxs-lookup"><span data-stu-id="d9f1b-103">This utility can be used to replace either a public key token or variable in a file with a public key token derived from a strong name assembly key (.snk) file.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "测试结果： BizTalk Server 关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 测试结果： BizTalk Server 关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 902cdfc1-21ab-4f56-b97b-2f8979514b11
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009918"
 ---
 # <a name="test-results-biztalk-server-key-performance-indicators"></a><span data-ttu-id="a97d5-102">测试结果： BizTalk Server 关键绩效指标</span><span class="sxs-lookup"><span data-stu-id="a97d5-102">Test Results: BizTalk Server Key Performance Indicators</span></span>
 <span data-ttu-id="a97d5-103">本主题总结了 BizTalk Server 关键绩效指标 (KPI) 测试方案期间观察到。</span><span class="sxs-lookup"><span data-stu-id="a97d5-103">This topic summarizes BizTalk Server Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="a97d5-104">具体而言，这些测试评估吞吐量测量"**BizTalk： 消息传送/文档处理数/秒**"性能监视器计数器和滞后时间，由 Visual studio 客户端响应时间度量。</span><span class="sxs-lookup"><span data-stu-id="a97d5-104">Specifically these tests evaluated throughput as measured by the "**BizTalk:Messaging/Documents processed/Sec**" performance monitor counter, and latency, as measured by the Visual studio client response time.</span></span>  

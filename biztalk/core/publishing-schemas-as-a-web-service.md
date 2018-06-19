@@ -1,11 +1,11 @@
 ---
-title: "作为 Web 服务发布架构 |Microsoft 文档"
-ms.custom: 
+title: 作为 Web 服务发布架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, schemas
 - schemas, Web services
 ms.assetid: 65b5f826-6abf-437f-b2dc-b36e488ba6da
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269037"
 ---
 # <a name="publishing-schemas-as-a-web-service"></a><span data-ttu-id="bd9e0-102">将架构发布为 Web Service</span><span class="sxs-lookup"><span data-stu-id="bd9e0-102">Publishing Schemas as a Web Service</span></span>
 <span data-ttu-id="bd9e0-103">使用 BizTalk Web Services 发布向导可创建使用现有架构的 Web Services。</span><span class="sxs-lookup"><span data-stu-id="bd9e0-103">You use the BizTalk Web Services Publishing Wizard to create Web services that use existing schemas.</span></span> <span data-ttu-id="bd9e0-104">你可以声明要发布的 Web Services、Web 方法以及请求和响应架构。</span><span class="sxs-lookup"><span data-stu-id="bd9e0-104">You declare the Web services, Web methods, and request and response schemas that you want to publish.</span></span> <span data-ttu-id="bd9e0-105">使用该向导，你可以定义目标命名空间、SOAP 标头要求和生成的 Web Services 项目的位置。</span><span class="sxs-lookup"><span data-stu-id="bd9e0-105">Using the wizard, you define the target namespace, SOAP header requirements, and the location of the generated Web service project.</span></span>  

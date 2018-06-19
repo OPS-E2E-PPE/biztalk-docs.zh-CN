@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: befa2268-8a65-465f-8086-70a66808845e
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973571"
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a><span data-ttu-id="d58be-102">WCF 适配器常见问题解答：使用 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="d58be-102">WCF Adapter FAQ: Using WCF Services</span></span>
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a><span data-ttu-id="d58be-103">BizTalk Server 如何使用其 WCF 适配器访问 WCF 服务？</span><span class="sxs-lookup"><span data-stu-id="d58be-103">How does BizTalk Server use its WCF adapters to access WCF services?</span></span>  

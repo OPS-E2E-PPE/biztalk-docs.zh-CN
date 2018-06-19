@@ -1,14 +1,14 @@
 ---
-title: "无效的地址的长度 |Microsoft 文档"
-ms.custom: 
+title: 无效的地址的长度 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8e16eb6-e77e-4361-ac91-0730004c4433
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257581"
 ---
 # <a name="invalid-address-length"></a><span data-ttu-id="0ae36-102">地址长度无效</span><span class="sxs-lookup"><span data-stu-id="0ae36-102">Invalid address length</span></span>
 ## <a name="details"></a><span data-ttu-id="0ae36-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0ae36-103">Details</span></span>  
@@ -55,4 +56,4 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="0ae36-129">在**WCF [***传输类型***] 传输属性**对话框中，单击**常规**选项卡。</span><span class="sxs-lookup"><span data-stu-id="0ae36-129">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="0ae36-130">在**地址 (URI)**文本中，确保该地址不能超过 255 个字符的最大长度。</span><span class="sxs-lookup"><span data-stu-id="0ae36-130">In the **Address (URI)** text box, ensure the address does not exceed the maximum length of 255 characters.</span></span>
+9. <span data-ttu-id="0ae36-130">在**地址 (URI)** 文本中，确保该地址不能超过 255 个字符的最大长度。</span><span class="sxs-lookup"><span data-stu-id="0ae36-130">In the **Address (URI)** text box, ensure the address does not exceed the maximum length of 255 characters.</span></span>

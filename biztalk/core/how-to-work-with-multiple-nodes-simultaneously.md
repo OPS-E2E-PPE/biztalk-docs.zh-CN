@@ -1,14 +1,14 @@
 ---
-title: "如何使用多个节点同时 |Microsoft 文档"
-ms.custom: 
+title: 如何使用多个节点同时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a44d11c-c6f9-4825-b89d-d1b3c3357931
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256397"
 ---
 # <a name="how-to-work-with-multiple-nodes-simultaneously"></a><span data-ttu-id="37834-102">如何同时处理多个节点</span><span class="sxs-lookup"><span data-stu-id="37834-102">How to Work with Multiple Nodes Simultaneously</span></span>
 <span data-ttu-id="37834-103">某些操作可以同时，在多个节点上执行，但相关的节点必须所有可选定。</span><span class="sxs-lookup"><span data-stu-id="37834-103">Some operations can be performed on multiple nodes simultaneously, but the relevant nodes must all be selected.</span></span> <span data-ttu-id="37834-104">本主题提供有关如何同时使用多个节点的说明。</span><span class="sxs-lookup"><span data-stu-id="37834-104">This topic provides instructions about how to work with multiple nodes simultaneously.</span></span>  

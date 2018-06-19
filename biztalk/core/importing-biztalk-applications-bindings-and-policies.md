@@ -1,11 +1,11 @@
 ---
-title: "导入 BizTalk 应用程序、 绑定和策略 |Microsoft 文档"
-ms.custom: 
+title: 导入 BizTalk 应用程序、 绑定和策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing, applications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - importing, bindings
 - bindings, importing
 ms.assetid: 678bdb03-efaa-4053-9048-b71fc539d191
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256773"
 ---
 # <a name="importing-biztalk-applications-bindings-and-policies"></a><span data-ttu-id="40824-102">导入 BizTalk 应用程序、 绑定和策略</span><span class="sxs-lookup"><span data-stu-id="40824-102">Importing BizTalk Applications, Bindings, and Policies</span></span>
 <span data-ttu-id="40824-103">本部分中的主题介绍如何将 BizTalk 应用程序、绑定和策略导入到 BizTalk 组或应用程序。</span><span class="sxs-lookup"><span data-stu-id="40824-103">The topics in this section describe how to import BizTalk applications, bindings and policies into a BizTalk group or application.</span></span> <span data-ttu-id="40824-104">中所述[how to Export BizTalk 应用程序如何](../core/how-to-export-a-biztalk-application.md)，导出应用程序创建 Windows Installer (.msi) 文件，然后，可以使用，以将应用程序的项目导入到不同的 BizTalk 组中的应用程序。</span><span class="sxs-lookup"><span data-stu-id="40824-104">As mentioned in [How to Export a BizTalk Application](../core/how-to-export-a-biztalk-application.md), exporting an application creates a Windows Installer (.msi) file that you can then use to import the application's artifacts into an application in a different BizTalk group.</span></span> <span data-ttu-id="40824-105">如果为导入指定的应用程序在组中不存在，则创建该应用程序。</span><span class="sxs-lookup"><span data-stu-id="40824-105">If the application that you specify for the import does not already exist in the group, the application is created.</span></span> <span data-ttu-id="40824-106">此外，注册应用程序的项目，并将其数据存储于该组的 BizTalk Server 数据库中。</span><span class="sxs-lookup"><span data-stu-id="40824-106">In addition, application's artifacts are registered and their data stored in the BizTalk databases of the group.</span></span> <span data-ttu-id="40824-107">有关详细信息，请参阅[什么发生时项目导入](../core/what-happens-when-artifacts-are-imported.md)。</span><span class="sxs-lookup"><span data-stu-id="40824-107">For more information, see [What Happens When Artifacts Are Imported](../core/what-happens-when-artifacts-are-imported.md).</span></span>  

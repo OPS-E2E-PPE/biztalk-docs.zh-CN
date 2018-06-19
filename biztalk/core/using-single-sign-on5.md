@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-tibco-rendezvous/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: db213735202e893f8207952994a5dc7f4fddb3ac
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015044"
 ---
 # <a name="using-single-sign-on"></a><span data-ttu-id="9339e-101">使用单一登录</span><span class="sxs-lookup"><span data-stu-id="9339e-101">Using Single Sign-On</span></span>
 <span data-ttu-id="9339e-102">用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。</span><span class="sxs-lookup"><span data-stu-id="9339e-102">Microsoft BizTalk Adapter for TIBCO Rendezvous provides Single Sign-On (SSO) support.</span></span> <span data-ttu-id="9339e-103">由企业单一登录工具创建的关联应用程序表示诸如 TIBCO Rendezvous 等服务器系统。</span><span class="sxs-lookup"><span data-stu-id="9339e-103">An affiliate application created by Enterprise Single Sign-On tools represents a server system such as TIBCO Rendezvous.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254669"
 ---
 # <a name="how-to-modify-orchestration-memory-throttling-settings"></a><span data-ttu-id="b29ae-102">如何修改内存阻止设置业务流程</span><span class="sxs-lookup"><span data-stu-id="b29ae-102">How to Modify Orchestration Memory Throttling Settings</span></span>
 <span data-ttu-id="b29ae-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 主机实例内存阻止机制会连续监控阻止条件，计算阻止条件的严重性，并根据计算出的严重性以渐进方式应用主机实例内存阻止。</span><span class="sxs-lookup"><span data-stu-id="b29ae-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host instance memory throttling mechanism continuously monitors for a throttling condition, calculates the severity of the throttling condition, and applies host instance memory throttling progressively depending on the calculated severity.</span></span> <span data-ttu-id="b29ae-104">本主题提供了使用设置仪表板修改这些设置的分步过程。</span><span class="sxs-lookup"><span data-stu-id="b29ae-104">This topic provides the step-by-step procedure to modify these settings using the Settings Dashboard.</span></span>  

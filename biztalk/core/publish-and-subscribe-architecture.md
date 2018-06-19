@@ -1,11 +1,11 @@
 ---
-title: "发布和订阅体系结构 |Microsoft 文档"
-ms.custom: 
+title: 发布和订阅体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publish/subscribe architecture, publishers
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Messaging Engine, publish/subscribe architecture
 - publish/subscribe architecture, events
 ms.assetid: 5ed36c1f-077d-468f-a99e-60f97377cef6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973643"
 ---
 # <a name="publish-and-subscribe-architecture"></a><span data-ttu-id="8582b-102">发布和订阅体系结构</span><span class="sxs-lookup"><span data-stu-id="8582b-102">Publish and Subscribe Architecture</span></span>
 <span data-ttu-id="8582b-103">在发布/订阅设计中，您可以使用以下三个组件：</span><span class="sxs-lookup"><span data-stu-id="8582b-103">In a publish/subscribe design, you have three components:</span></span>  

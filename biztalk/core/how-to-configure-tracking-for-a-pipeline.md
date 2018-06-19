@@ -1,15 +1,15 @@
 ---
-title: "启用管道跟踪 |Microsoft 文档"
-description: "跟踪消息正文和管道处理 BizTalk Server 中的消息时，事件"
-ms.custom: 
+title: 启用管道跟踪 |Microsoft 文档
+description: 跟踪消息正文和管道处理 BizTalk Server 中的消息时，事件
+ms.custom: ''
 ms.date: 12/13/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4f7f3c4a-4464-4170-a580-b4ce9296a097
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/13/2017
+ms.locfileid: "26686620"
 ---
 # <a name="configure-pipeline-tracking-in-biztalk-server"></a><span data-ttu-id="47407-103">配置 BizTalk Server 中跟踪的管道</span><span class="sxs-lookup"><span data-stu-id="47407-103">Configure pipeline tracking in BizTalk Server</span></span>
 <span data-ttu-id="47407-104">使用 BizTalk Server 管理来配置跟踪的管道。</span><span class="sxs-lookup"><span data-stu-id="47407-104">Use the BizTalk Server Administration to configure tracking for a pipeline.</span></span> <span data-ttu-id="47407-105">您可能会希望配置跟踪以进行故障排除和审核。</span><span class="sxs-lookup"><span data-stu-id="47407-105">You might want to configure tracking for troubleshooting and auditing purposes.</span></span> <span data-ttu-id="47407-106">您可以查看消息属性、端口事件和消息事件。</span><span class="sxs-lookup"><span data-stu-id="47407-106">You can view message properties, port events, and message events.</span></span> <span data-ttu-id="47407-107">您还可以跟踪消息事件和消息的端口事件。</span><span class="sxs-lookup"><span data-stu-id="47407-107">You can also track message events and port events for messages.</span></span>  

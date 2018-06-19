@@ -1,17 +1,17 @@
 ---
-title: "如何更新关联应用程序的属性 |Microsoft 文档"
-ms.custom: 
+title: 如何更新关联应用程序的属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], updating properties
 - applications [SSO], properties
 ms.assetid: b06eefdd-a5ca-4a32-93d7-72246e31a2e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972643"
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a><span data-ttu-id="5aafb-102">如何更新关联应用程序的属性</span><span class="sxs-lookup"><span data-stu-id="5aafb-102">How to Update the Properties of an Affiliate Application</span></span>
 <span data-ttu-id="5aafb-103">您可以使用 MMC 管理单元或此命令根据 XML 文件指定的内容更新一个或多个应用程序属性。</span><span class="sxs-lookup"><span data-stu-id="5aafb-103">You can use the MMC Snap-In or this command to update one or more application properties, as specified by the XML file.</span></span> <span data-ttu-id="5aafb-104">只有关联管理员才能执行此任务。</span><span class="sxs-lookup"><span data-stu-id="5aafb-104">You must be an Affiliate Administrator to perform this task.</span></span> <span data-ttu-id="5aafb-105">下面是一个示例 XML 文件，其中列出了可更新的字段：</span><span class="sxs-lookup"><span data-stu-id="5aafb-105">The following is an example XML file that lists the fields you can update.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "如何创建或添加项目 |Microsoft 文档"
-ms.custom: 
+title: 如何创建或添加项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, artifacts
 - artifacts, creating
 - applications, artifacts
 ms.assetid: fea7487c-b5fa-457f-8c74-a20ea3a6df85
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249485"
 ---
 # <a name="how-to-create-or-add-an-artifact"></a><span data-ttu-id="d5067-102">如何创建或添加项目</span><span class="sxs-lookup"><span data-stu-id="d5067-102">How to Create or Add an Artifact</span></span>
 <span data-ttu-id="d5067-103">创建 BizTalk 应用程序后，可以从文件系统中添加基于文件的项目（例如，BizTalk 程序集、.NET 程序集、脚本和证书），或者可以从规则引擎数据库中添加策略。</span><span class="sxs-lookup"><span data-stu-id="d5067-103">After you create a BizTalk application, you can add file-based artifacts (for example BizTalk assemblies, .NET assemblies, scripts, and certificates) from the file system or add policies from the Rule Engine database.</span></span> <span data-ttu-id="d5067-104">您也可以在应用程序中创建发送端口、发送端口组、接收位置和接收端口。</span><span class="sxs-lookup"><span data-stu-id="d5067-104">You can also create send ports, send port groups, receive locations, and receive ports within the application.</span></span> <span data-ttu-id="d5067-105">创建或添加项目可将其添加到 BizTalk 管理数据库中。</span><span class="sxs-lookup"><span data-stu-id="d5067-105">Creating or adding artifacts adds them to the BizTalk Management database.</span></span> <span data-ttu-id="d5067-106">你可以随后部署应用程序和其项目作为单个实体中所述[部署 BizTalk 应用程序](../core/deploying-biztalk-applications.md)。</span><span class="sxs-lookup"><span data-stu-id="d5067-106">You can then deploy the application and its artifacts as a single entity, as described in [Deploying BizTalk Applications](../core/deploying-biztalk-applications.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何诊断问题的 WCF 适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何诊断问题的 WCF 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 997a4ecd-6077-45d6-82d3-3f658ca62fd4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250525"
 ---
 # <a name="how-to-diagnose-problems-with-the-wcf-adapters"></a><span data-ttu-id="25667-102">如何诊断 WCF 适配器问题</span><span class="sxs-lookup"><span data-stu-id="25667-102">How to Diagnose Problems with the WCF Adapters</span></span>
 <span data-ttu-id="25667-103">本部分提供诊断 WCF 适配器问题所需遵循的步骤。</span><span class="sxs-lookup"><span data-stu-id="25667-103">This section contains steps that you can follow to help diagnose problems with the WCF adapters.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="25667-107">*%Windir%\\*system32\LogFiles\W3SVC1\\</span><span class="sxs-lookup"><span data-stu-id="25667-107">*%WinDir%\\*system32\LogFiles\W3SVC1\\</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="25667-108">*%Windir%*是一个占位符的位置[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]IIS 服务器上的目录。</span><span class="sxs-lookup"><span data-stu-id="25667-108">*%WinDir%* is a placeholder for the location of the [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] directory on the IIS server.</span></span>  
+    >  <span data-ttu-id="25667-108">*%Windir%* 是一个占位符的位置[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]IIS 服务器上的目录。</span><span class="sxs-lookup"><span data-stu-id="25667-108">*%WinDir%* is a placeholder for the location of the [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] directory on the IIS server.</span></span>  
   
      <span data-ttu-id="25667-109">默认情况下，在基于 [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] 和 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 的计算机上，HTTPERR 日志文件位于下面的目录中：</span><span class="sxs-lookup"><span data-stu-id="25667-109">By default the HTTPERR log files on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] and [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] based computers are located in the following directory:</span></span>  
   

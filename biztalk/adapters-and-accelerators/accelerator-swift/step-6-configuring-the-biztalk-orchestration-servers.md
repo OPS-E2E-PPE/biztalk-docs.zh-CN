@@ -1,17 +1,17 @@
 ---
-title: "步骤 6： 配置 BizTalk 业务流程服务器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 配置 BizTalk 业务流程服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration server, configuring
 - configuring, orchestration servers
 ms.assetid: 1eb38fac-264d-4730-b16b-572dbb6fabd9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005910"
 ---
 # <a name="step-6-configuring-the-biztalk-orchestration-servers"></a><span data-ttu-id="90afa-102">步骤 6： 配置 BizTalk 业务流程服务器</span><span class="sxs-lookup"><span data-stu-id="90afa-102">Step 6: Configuring the BizTalk Orchestration Servers</span></span>
 <span data-ttu-id="90afa-103">本节提供有关将 BizTalk 业务流程服务器配置的准则。</span><span class="sxs-lookup"><span data-stu-id="90afa-103">This section provides guidelines on configuring the BizTalk Orchestration servers.</span></span>  

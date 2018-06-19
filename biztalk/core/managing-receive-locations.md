@@ -1,15 +1,15 @@
 ---
-title: "管理接收位置 |Microsoft 文档"
-description: "使用在 BizTalk Server 中，包括创建、 更改的属性、 启用和禁用、 添加证书，以及删除接收位置"
-ms.custom: 
+title: 管理接收位置 |Microsoft 文档
+description: 使用在 BizTalk Server 中，包括创建、 更改的属性、 启用和禁用、 添加证书，以及删除接收位置
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b3ff581-e7e9-4a6e-a9ea-70c55a3b9318
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262501"
 ---
 # <a name="manage-receive-locations"></a><span data-ttu-id="287aa-103">管理接收位置</span><span class="sxs-lookup"><span data-stu-id="287aa-103">Manage Receive Locations</span></span>
 

@@ -1,14 +1,14 @@
 ---
-title: "开发自定义的累积 Functoid |Microsoft 文档"
-ms.custom: 
+title: 开发自定义的累积 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ea2c5fa-ed50-4b76-aee9-0d4adf9e6d8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242325"
 ---
 # <a name="developing-a-custom-cumulative-functoid"></a><span data-ttu-id="0df38-102">开发自定义的累积 Functoid</span><span class="sxs-lookup"><span data-stu-id="0df38-102">Developing a Custom Cumulative Functoid</span></span>
 <span data-ttu-id="0df38-103">使用自定义累计 functoid 可以对在一个实例消息中多次出现的值执行累计操作。</span><span class="sxs-lookup"><span data-stu-id="0df38-103">Use a custom cumulative functoid to perform accumulation operations for values that occur multiple times within an instance message.</span></span>  

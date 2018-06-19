@@ -1,11 +1,11 @@
 ---
-title: "架构冲突解决程序组件 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 架构冲突解决程序组件 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, examples
 - examples, Flat File Disassembler [pipeline component]
 ms.assetid: 9ef68988-c4ee-42d5-83b5-a5c978b2007d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974915"
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a><span data-ttu-id="5c070-102">架构冲突解决程序组件 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="5c070-102">Schema Resolver Component (BizTalk Server Sample)</span></span>
 <span data-ttu-id="5c070-103">架构冲突解决程序组件示例演示如何扩展的功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]平面文件反汇编程序组件。</span><span class="sxs-lookup"><span data-stu-id="5c070-103">The Schema Resolver Component sample demonstrates how to extend the functionality of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] flat file disassembler component.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="5c070-109">架构解析器组件演示为平面文件拆装器选择架构的备用方法。</span><span class="sxs-lookup"><span data-stu-id="5c070-109">The Schema Resolver component demonstrates an alternative method of selecting the schema for a flat file disassembler.</span></span> <span data-ttu-id="5c070-110">在本示例中，定义了四个架构，每个架构的消息的前两个字符是唯一的。</span><span class="sxs-lookup"><span data-stu-id="5c070-110">In this sample, four schemas are defined and the first two characters of a message for each schema are unique.</span></span> <span data-ttu-id="5c070-111">在唯一的前两个字符与对应的架构之间定义了一个映射。</span><span class="sxs-lookup"><span data-stu-id="5c070-111">A mapping is defined between the unique first two characters and the corresponding schema.</span></span> <span data-ttu-id="5c070-112">当将输入消息发送到架构解析器组件时，架构解析器读取前两个字符，确定要用于对应文档的架构，将架构信息保存在消息上下文中，然后调用标准平面文件拆装器组件。</span><span class="sxs-lookup"><span data-stu-id="5c070-112">When the input message is given to the Schema Resolver component, it reads the first two characters, determines which schema to use for the corresponding document, saves the schema information on the message context, and then calls into the standard flat file disassembler component.</span></span> <span data-ttu-id="5c070-113">标准平面文件拆装器组件从消息上下文读取架构信息，然后使用该架构分析文档。</span><span class="sxs-lookup"><span data-stu-id="5c070-113">The standard flat file disassembler component reads the schema information from the message context and uses that schema to parse the document.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="5c070-114">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="5c070-114">Where to Find This Sample</span></span>  
- <span data-ttu-id="5c070-115">*\<示例路径\>*\Pipelines\SchemaResolverComponent\\</span><span class="sxs-lookup"><span data-stu-id="5c070-115">*\<Samples Path\>*\Pipelines\SchemaResolverComponent\\</span></span>  
+ <span data-ttu-id="5c070-115">*\<示例路径\>* \Pipelines\SchemaResolverComponent\\</span><span class="sxs-lookup"><span data-stu-id="5c070-115">*\<Samples Path\>* \Pipelines\SchemaResolverComponent\\</span></span>  
   
  <span data-ttu-id="5c070-116">下表显示了本示例中使用的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="5c070-116">The following table shows the files used in this sample and describes their purpose.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="5c070-142">在命令窗口中，将目录更改 (cd) 为以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="5c070-142">In a command window, change directory (cd) to the following folder:</span></span>  
   
-     <span data-ttu-id="5c070-143">*\<示例路径\>*\Pipelines\SchemaResolverComponent</span><span class="sxs-lookup"><span data-stu-id="5c070-143">*\<Samples Path\>*\Pipelines\SchemaResolverComponent</span></span>  
+     <span data-ttu-id="5c070-143">*\<示例路径\>* \Pipelines\SchemaResolverComponent</span><span class="sxs-lookup"><span data-stu-id="5c070-143">*\<Samples Path\>* \Pipelines\SchemaResolverComponent</span></span>  
   
 2.  <span data-ttu-id="5c070-144">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="5c070-144">Run the file Setup.bat, which performs the following actions:</span></span>  
   

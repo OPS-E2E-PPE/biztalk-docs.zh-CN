@@ -1,17 +1,17 @@
 ---
-title: "步骤 6： 配置业务流程形状 (Contoso) |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, configuring shapes
 - private process tutorial, configuring orchestration shapes
 ms.assetid: ce680693-cf72-4ca6-a062-019de5a9257b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009382"
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a><span data-ttu-id="8414c-102">步骤 6： 配置业务流程形状 (Contoso)</span><span class="sxs-lookup"><span data-stu-id="8414c-102">Step 6: Configuring Orchestration Shapes (Contoso)</span></span>
 <span data-ttu-id="8414c-103">在此步骤中，你将配置添加到 PrivateResponder 业务流程中创建的业务流程形状[步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="8414c-103">In this step, you configure the orchestration shapes you added to the PrivateResponder orchestration that you created in [Step 5: Modifying the Contoso Private Process Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md).</span></span> <span data-ttu-id="8414c-104">这包括设置之间的通信[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 和 Contoso 的企业资源规划 (ERP) 系统。</span><span class="sxs-lookup"><span data-stu-id="8414c-104">This includes setting up the communication between [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server and the Enterprise Resource Planning (ERP) system for Contoso.</span></span>  
@@ -50,7 +51,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="8414c-115">在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换的配置对话框。</span><span class="sxs-lookup"><span data-stu-id="8414c-115">In the Properties window, select the **Map Name** property, and then click the ellipsis button (**…**) to open the Transform Configuration dialog box.</span></span>  
   
-5.  <span data-ttu-id="8414c-116">在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择\>**从下拉列表以打开选择项目类型对话框。</span><span class="sxs-lookup"><span data-stu-id="8414c-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
+5.  <span data-ttu-id="8414c-116">在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择\>** 从下拉列表以打开选择项目类型对话框。</span><span class="sxs-lookup"><span data-stu-id="8414c-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
   
 6.  <span data-ttu-id="8414c-117">在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集在左窗格中，选择**PIP3A2RequestToContosoPriceRequest**映射在右窗格中，并依次**确定**。</span><span class="sxs-lookup"><span data-stu-id="8414c-117">In the Select Artifact Type dialog box, select the **ContosoPriceAndAvailability** assembly in the left pane, select **PIP3A2RequestToContosoPriceRequest** map in the right pane, and then click **OK**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "如何更新 BAM 配置使用 BAM 管理实用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何更新 BAM 配置使用 BAM 管理实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 714a834e-1879-4019-9b54-e511705bd67a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971035"
 ---
 # <a name="how-to-update-the-bam-configuration-using-the-bam-management-utility"></a><span data-ttu-id="272d2-102">如何使用 BAM 管理实用程序更新 BAM 配置</span><span class="sxs-lookup"><span data-stu-id="272d2-102">How to Update the BAM Configuration Using the BAM Management Utility</span></span>
 <span data-ttu-id="272d2-103">管理员可以使用 BAM 管理实用程序更新安装的现有 BAM。</span><span class="sxs-lookup"><span data-stu-id="272d2-103">Administrators can use the BAM Management utility to update an existing BAM installation.</span></span>  

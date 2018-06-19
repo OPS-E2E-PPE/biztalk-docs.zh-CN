@@ -1,15 +1,15 @@
 ---
-title: "演练： 跟踪 BizTalk Server 中的策略执行 |Microsoft 文档"
-description: "教程启用跟踪，并在 BizTalk Server 中查看策略跟踪详细信息"
-ms.custom: 
+title: 演练： 跟踪 BizTalk Server 中的策略执行 |Microsoft 文档
+description: 教程启用跟踪，并在 BizTalk Server 中查看策略跟踪详细信息
+ms.custom: ''
 ms.date: 04/05/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef88eae7-f0f8-4f3f-85d0-3961a47395b6
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975091"
 ---
 # <a name="walkthrough-tracking-policy-execution"></a><span data-ttu-id="66727-103">演练： 跟踪策略执行</span><span class="sxs-lookup"><span data-stu-id="66727-103">Walkthrough: Tracking Policy Execution</span></span>
 <span data-ttu-id="66727-104">启用跟踪的分步过程**ProcessPurchaseOrder**策略，以及执行策略后，请查看跟踪信息。</span><span class="sxs-lookup"><span data-stu-id="66727-104">Step-by-step procedures for enabling tracking for the **ProcessPurchaseOrder** policy, and for viewing the tracking information after the policy is executed.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "实现外部批处理释放机制 |Microsoft 文档"
-ms.custom: 
+title: 实现外部批处理释放机制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5633a448-cc29-4931-a3ad-206ae25c989b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258133"
 ---
 # <a name="implementing-an-external-batch-release-mechanism"></a><span data-ttu-id="bf718-102">实现外部批处理发布机制</span><span class="sxs-lookup"><span data-stu-id="bf718-102">Implementing an External Batch Release Mechanism</span></span>
 <span data-ttu-id="bf718-103">您可以使用外部发布触发器触发批处理的发布。</span><span class="sxs-lookup"><span data-stu-id="bf718-103">You can trigger the release of a batch using an external release trigger.</span></span> <span data-ttu-id="bf718-104">可以通过后端业务线应用程序在达到某一阀值时自动触发此发布。</span><span class="sxs-lookup"><span data-stu-id="bf718-104">The release could be automatically triggered by a back-end, line-of-business application upon reaching a certain threshold.</span></span> <span data-ttu-id="bf718-105">此机制是除了自动触发的批次版本按计划或计数的事务集或字符，或手动触发批处理，通过单击**重写**按钮**批处理配置**单向协议选项卡页。</span><span class="sxs-lookup"><span data-stu-id="bf718-105">This mechanism is in addition to automatically triggering the batch release by a schedule or a count of transaction sets or characters, or manually triggering the batch by clicking the **Override** button in the **Batch Configuration** page of the one-way agreement tab.</span></span>  

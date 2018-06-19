@@ -1,17 +1,17 @@
 ---
-title: "处理 SSO 服务器 |Microsoft 文档"
-ms.custom: 
+title: 处理 SSO 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, processing servers
 - processing servers [SSO]
 ms.assetid: 9e80a456-974a-49b3-bb64-2e4713036cfb
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263661"
 ---
 # <a name="processing-servers-for-sso"></a><span data-ttu-id="d1b6d-102">SSO 的处理服务器</span><span class="sxs-lookup"><span data-stu-id="d1b6d-102">Processing Servers for SSO</span></span>
 <span data-ttu-id="d1b6d-103">在多计算机环境中，在创建了主密钥服务器和 SSO 数据库之后，即可在随后的计算机上安装企业单一登录。</span><span class="sxs-lookup"><span data-stu-id="d1b6d-103">In a multi-computer environment, after the master secret server and SSO database have been created, you can install Enterprise Single Sign-On on subsequent computers.</span></span> <span data-ttu-id="d1b6d-104">通常，这些计算机还是用来安装 BizTalk Server 或 Host Integration Server 的计算机。</span><span class="sxs-lookup"><span data-stu-id="d1b6d-104">These are typically the computers on which either BizTalk Server or Host Integration Server is installed as well.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "处理 XML 汇编程序管道组件中的说明 |Microsoft 文档"
-ms.custom: 
+title: 处理 XML 汇编程序管道组件中的说明 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XMLNorm.ProcessingInstructionOption property
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - envelopes, XML Assembler [pipeline component]
 - pipeline components, XML Assembler
 ms.assetid: d8ea453e-3b20-417d-bf25-9d424b0150fd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265149"
 ---
 # <a name="processing-instructions-in-the-xml-assembler-pipeline-component"></a><span data-ttu-id="c17dc-102">处理 XML 汇编程序管道组件中的说明</span><span class="sxs-lookup"><span data-stu-id="c17dc-102">Processing Instructions in the XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="c17dc-103">处理指令向处理 XML 文档的应用程序提供信息。</span><span class="sxs-lookup"><span data-stu-id="c17dc-103">Processing instructions provide information to the application that processes an XML document.</span></span> <span data-ttu-id="c17dc-104">这些信息可能包括有关如何处理文档、如何显示文档等的指令。</span><span class="sxs-lookup"><span data-stu-id="c17dc-104">Such information may include instructions about how to process the document, how to display it, and so on.</span></span>  

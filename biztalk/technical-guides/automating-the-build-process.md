@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010262"
 ---
 # <a name="automating-the-build-process"></a><span data-ttu-id="52cb2-102">自动执行生成过程</span><span class="sxs-lookup"><span data-stu-id="52cb2-102">Automating the Build Process</span></span>
 <span data-ttu-id="52cb2-103">自动的生成过程编译，部署并按常规、 预先确定的时间间隔对项目的最新源代码然后运行生成验证测试 (Bvt)。</span><span class="sxs-lookup"><span data-stu-id="52cb2-103">An automated build process compiles, deploys and then runs build verification tests (BVTs) against the latest source code for a project at regular, predetermined intervals.</span></span> <span data-ttu-id="52cb2-104">然后"生成报告，"详细信息是成功还是失败的生成过程，这是向项目利益干系人传送至。</span><span class="sxs-lookup"><span data-stu-id="52cb2-104">Then a “build report,” which details the success or failure of the build process, is disseminated to the project stakeholders.</span></span> <span data-ttu-id="52cb2-105">生成报告分析以确定项目的方面需要注意和如果项目应将其回滚到以前的版本/生成。</span><span class="sxs-lookup"><span data-stu-id="52cb2-105">The build report is analyzed to determine what areas of the project need attention and if the project should be rolled back to an earlier version/build.</span></span>  

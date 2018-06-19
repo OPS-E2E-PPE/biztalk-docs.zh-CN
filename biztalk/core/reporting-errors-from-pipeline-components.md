@@ -1,11 +1,11 @@
 ---
-title: "从管道组件的错误报告 |Microsoft 文档"
-ms.custom: 
+title: 从管道组件的错误报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IErrorInfo object
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SetErrorInfo method
 - Exception object
 ms.assetid: ad7c519e-829a-4a92-a42f-3e367d5dbaa8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976035"
 ---
 # <a name="reporting-errors-from-pipeline-components"></a><span data-ttu-id="e63a9-102">从管道组件的报告错误</span><span class="sxs-lookup"><span data-stu-id="e63a9-102">Reporting Errors from Pipeline Components</span></span>
 <span data-ttu-id="e63a9-103">管道组件用两种方式报告错误：</span><span class="sxs-lookup"><span data-stu-id="e63a9-103">Pipeline components report errors in two ways:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "配置事务集列表 (EDIFACT) |Microsoft 文档"
-ms.custom: 
+title: 配置事务集列表 (EDIFACT) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b03ace75-70bf-47c9-9a94-df813d7cab1e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005166"
 ---
 # <a name="configuring-transaction-set-list-edifact"></a><span data-ttu-id="3f850-102">配置事务集列表 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="3f850-102">Configuring Transaction Set List (EDIFACT)</span></span>
 <span data-ttu-id="3f850-103">BizTalk Server，可定义的事务集必须始终包含或排除在处理的 EDI 交换时的列表。</span><span class="sxs-lookup"><span data-stu-id="3f850-103">BizTalk Server enables you to define a list of transaction sets that must always be included or excluded while processing an EDI interchange.</span></span> <span data-ttu-id="3f850-104">本部分提供了有关如何创建事务集列表的说明。</span><span class="sxs-lookup"><span data-stu-id="3f850-104">This section provides instructions on how to create the transaction set list.</span></span>  

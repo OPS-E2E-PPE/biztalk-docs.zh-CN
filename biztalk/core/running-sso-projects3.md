@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25974939"
 ---
 # <a name="running-sso-projects"></a><span data-ttu-id="50487-102">运行 SSO 项目</span><span class="sxs-lookup"><span data-stu-id="50487-102">Running SSO Projects</span></span>
 <span data-ttu-id="50487-103">您可以从 Internet Explorer 运行示例单一登录 (SSO) 项目。</span><span class="sxs-lookup"><span data-stu-id="50487-103">You can run a sample Single Sign-On (SSO) project from Internet Explorer.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264253"
 ---
 # <a name="port-ports-node"></a><span data-ttu-id="03b76-102">端口 （端口节点）</span><span class="sxs-lookup"><span data-stu-id="03b76-102">Port (Ports Node)</span></span>
 <span data-ttu-id="03b76-103">绑定文件的端口节点包含与绑定到随该绑定文件一起导出的服务的端口或分发列表有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="03b76-103">The port node of a binding file contains specific information about a port or distribution list that is bound to a service that is exported with the binding file.</span></span>  

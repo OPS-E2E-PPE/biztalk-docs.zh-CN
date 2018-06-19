@@ -1,14 +1,14 @@
 ---
-title: "清单： BizTalk Server 入门 |Microsoft 文档"
-ms.custom: 
+title: 清单： BizTalk Server 入门 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37d265cd-c393-46ac-ac21-129a1511359b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 ms.openlocfilehash: a441fa60bc4ef084d3be5032049e2f712c2e501b
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009438"
 ---
 # <a name="checklist-getting-started-with-biztalk-server"></a><span data-ttu-id="85fcb-102">清单： BizTalk Server 入门</span><span class="sxs-lookup"><span data-stu-id="85fcb-102">Checklist: Getting Started with BizTalk Server</span></span>
 <span data-ttu-id="85fcb-103">如果你是完全新手[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，应遵循本主题以速度中的清单[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="85fcb-103">If you are completely new to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should follow the checklist in this topic to get to speed with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

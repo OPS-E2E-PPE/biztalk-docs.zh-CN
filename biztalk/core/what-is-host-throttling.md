@@ -12,7 +12,7 @@ helpviewer_keywords:
 - host throttling, inbound
 - host throttling, about host throttling
 ms.assetid: 36d1818b-c8a2-4f23-bfb3-c034ee242f69
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291181"
 ---
 # <a name="what-is-host-throttling"></a><span data-ttu-id="77589-103">主机阻止概述</span><span class="sxs-lookup"><span data-stu-id="77589-103">What Is Host Throttling?</span></span>
 <span data-ttu-id="77589-104">在 BizTalk Server 上执行的大部分处理都在称为 BizTalk Server 主机实例的逻辑实体内进行，该逻辑实体是在 BizTalk Server 上以 Windows 服务或独立的主机进程运行的进程。</span><span class="sxs-lookup"><span data-stu-id="77589-104">Most of the processing that takes place on a BizTalk server occurs within a logical entity known as a BizTalk Server host instance, which is a process running as a Windows service or an isolated host process on the BizTalk server.</span></span> <span data-ttu-id="77589-105">为了管理主机实例进程使用的资源，BizTalk Server 使用可调整的阻止机制控制消息在主机实例中的传输和处理。</span><span class="sxs-lookup"><span data-stu-id="77589-105">To manage the use of resources by a host instance process, BizTalk Server utilizes an adjustable throttling mechanism that governs the flow and processing of messages through a host instance.</span></span>  

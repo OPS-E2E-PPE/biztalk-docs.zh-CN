@@ -1,14 +1,14 @@
 ---
-title: "EDI 标准支持 |Microsoft 文档"
-ms.custom: 
+title: EDI 标准支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2ef14c5-5f12-40e2-93d7-59b5c5a0d641
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007918"
 ---
 # <a name="edi-standards-support"></a><span data-ttu-id="3f6c2-102">EDI 标准支持</span><span class="sxs-lookup"><span data-stu-id="3f6c2-102">EDI Standards Support</span></span>
 <span data-ttu-id="3f6c2-103">BizTalk Server 提供四个编码标准的设计和运行时支持。</span><span class="sxs-lookup"><span data-stu-id="3f6c2-103">BizTalk Server provides for design- and run-time support for four encoding standards.</span></span> <span data-ttu-id="3f6c2-104">下表列出了编码标准并详细信息的链接。</span><span class="sxs-lookup"><span data-stu-id="3f6c2-104">The following table lists the encoding standards with links to more information.</span></span>  

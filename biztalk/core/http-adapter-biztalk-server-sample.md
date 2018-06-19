@@ -1,17 +1,17 @@
 ---
-title: "HTTP 适配器 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: f3bd8172-15c4-42fa-aa17-e4bed9d4aba4
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974483"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a><span data-ttu-id="a0fc7-102">HTTP 适配器 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="a0fc7-102">HTTP Adapter (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a0fc7-103">HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应通信范例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-103">The HTTP Adapter sample demonstrates how to implement the request/response and solicit/response communication paradigms used in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="a0fc7-104">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="a0fc7-104">Where to Find This Sample</span></span>  
- <span data-ttu-id="a0fc7-105">*\<示例路径\>*\AdaptersDevelopment\HttpAdapter\\</span><span class="sxs-lookup"><span data-stu-id="a0fc7-105">*\<Samples Path\>*\AdaptersDevelopment\HttpAdapter\\</span></span>  
+ <span data-ttu-id="a0fc7-105">*\<示例路径\>* \AdaptersDevelopment\HttpAdapter\\</span><span class="sxs-lookup"><span data-stu-id="a0fc7-105">*\<Samples Path\>* \AdaptersDevelopment\HttpAdapter\\</span></span>  
   
  <span data-ttu-id="a0fc7-106">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="a0fc7-106">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="a0fc7-178">现在，HTTP.NET 适配器已经准备就绪，可供您的应用程序使用了。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-178">The HTTP.NET adapter is now ready to be used by your application.</span></span> <span data-ttu-id="a0fc7-179">配置的适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-179">When configuring the adapter, the format for the **Virtual Directory** transport property is of the form: /httpreceive/httpreceive.aspx?optionalQueryString.</span></span>  
   
 ## <a name="comments"></a><span data-ttu-id="a0fc7-180">注释</span><span class="sxs-lookup"><span data-stu-id="a0fc7-180">Comments</span></span>  
- <span data-ttu-id="a0fc7-181">中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径\>*\AdaptersDevelopment\BaseAdapter\v1.0...2\\。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-181">The HTTP.NET adapter makes use of the BaseAdapter classes provided in *\<Samples Path\>*\AdaptersDevelopment\BaseAdapter\v1.0..2\\.</span></span> <span data-ttu-id="a0fc7-182">BaseAdapter 项目中提供的类可以加快适配器的开发速度。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-182">The classes provided in the BaseAdapter project are intended to accelerate adapter development.</span></span> <span data-ttu-id="a0fc7-183">请参考 BaseAdapter 代码注释了解所提供的类的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-183">Refer to the BaseAdapter code comments for details about the classes provided.</span></span>  
+ <span data-ttu-id="a0fc7-181">中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-181">The HTTP.NET adapter makes use of the BaseAdapter classes provided in *\<Samples Path\>* \AdaptersDevelopment\BaseAdapter\v1.0..2\\.</span></span> <span data-ttu-id="a0fc7-182">BaseAdapter 项目中提供的类可以加快适配器的开发速度。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-182">The classes provided in the BaseAdapter project are intended to accelerate adapter development.</span></span> <span data-ttu-id="a0fc7-183">请参考 BaseAdapter 代码注释了解所提供的类的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a0fc7-183">Refer to the BaseAdapter code comments for details about the classes provided.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="a0fc7-184">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a0fc7-184">See Also</span></span>  
  <span data-ttu-id="a0fc7-185">[注册的适配器](../core/registering-an-adapter.md) </span><span class="sxs-lookup"><span data-stu-id="a0fc7-185">[Registering an Adapter](../core/registering-an-adapter.md) </span></span>  

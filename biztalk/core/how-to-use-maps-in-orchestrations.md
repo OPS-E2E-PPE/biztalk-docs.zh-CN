@@ -1,14 +1,14 @@
 ---
-title: "如何在业务流程中使用地图 |Microsoft 文档"
-ms.custom: 
+title: 如何在业务流程中使用地图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd628d8-c163-431d-8ad7-d7d77007c549
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255325"
 ---
 # <a name="how-to-use-maps-in-orchestrations"></a><span data-ttu-id="970ef-102">如何在业务流程中使用地图</span><span class="sxs-lookup"><span data-stu-id="970ef-102">How to Use Maps in Orchestrations</span></span>
 <span data-ttu-id="970ef-103">BizTalk 映射程序是一个工具，在 Microsoft 内运行[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="970ef-103">BizTalk Mapper is a tool that runs within the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="970ef-104">BizTalk 映射器可用来创建和编辑映射，在映射中可使用链接和 functoid 定义输入和输出架构之间的关系。</span><span class="sxs-lookup"><span data-stu-id="970ef-104">You use BizTalk Mapper to create and edit maps in which you use links and functoids to define the relationship between an input and an output schema.</span></span> <span data-ttu-id="970ef-105">链接定义了记录或字段的直接数据复制。</span><span class="sxs-lookup"><span data-stu-id="970ef-105">A link defines a direct data copy of a record or field.</span></span> <span data-ttu-id="970ef-106">链接可以直接连接到另一架构中的项，也可以构成指向 functoid 的连接。</span><span class="sxs-lookup"><span data-stu-id="970ef-106">Links may directly connect to items in the other schema, or they may form connections to functoids.</span></span> <span data-ttu-id="970ef-107">functoid 可以执行更加复杂的数据操作。</span><span class="sxs-lookup"><span data-stu-id="970ef-107">Functoids perform more complex data manipulations.</span></span>  

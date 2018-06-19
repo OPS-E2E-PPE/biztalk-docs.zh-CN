@@ -1,11 +1,11 @@
 ---
-title: "SSO 组件 |Microsoft 文档"
-ms.custom: 
+title: SSO 组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - passwords, synchronizing [SSO]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SSO, password synchronization
 - SSO, sub-services
 ms.assetid: e29e68df-f770-4220-a9f8-cb9323403017
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276469"
 ---
 # <a name="sso-components"></a><span data-ttu-id="ec190-102">SSO 组件</span><span class="sxs-lookup"><span data-stu-id="ec190-102">SSO Components</span></span>
 <span data-ttu-id="ec190-103">企业单一登录 (SSO) 服务的子服务如下所示：</span><span class="sxs-lookup"><span data-stu-id="ec190-103">The sub services of the Enterprise Single Sign-On (SSO) service are as follows:</span></span>  

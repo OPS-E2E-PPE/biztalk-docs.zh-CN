@@ -1,15 +1,15 @@
 ---
-title: "配置备份 BizTalk Server 作业 |Microsoft 文档"
-description: 
-ms.custom: 
+title: 配置备份 BizTalk Server 作业 |Microsoft 文档
+description: ''
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 026622c9-fcb4-4db0-af48-1379feb30372
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972843"
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a><span data-ttu-id="1a2bf-102">配置备份 BizTalk Server 作业</span><span class="sxs-lookup"><span data-stu-id="1a2bf-102">Configure the Backup BizTalk Server Job</span></span>
 <span data-ttu-id="1a2bf-103">安装和配置 BizTalk Server 后，将备份配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业以备份你的数据。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-103">After you install and configure BizTalk Server, configure the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job to back up your data.</span></span> 
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
 
 
 ## <a name="overview"></a><span data-ttu-id="1a2bf-105">概述</span><span class="sxs-lookup"><span data-stu-id="1a2bf-105">Overview</span></span>
-<span data-ttu-id="1a2bf-106">**备份 BizTalk Server (BizTalkMgmtDb)**作业包括以下步骤：</span><span class="sxs-lookup"><span data-stu-id="1a2bf-106">The **Backup BizTalk Server (BizTalkMgmtDb)** job includes the following steps:</span></span>
+<span data-ttu-id="1a2bf-106">**备份 BizTalk Server (BizTalkMgmtDb)** 作业包括以下步骤：</span><span class="sxs-lookup"><span data-stu-id="1a2bf-106">The **Backup BizTalk Server (BizTalkMgmtDb)** job includes the following steps:</span></span>
 
 -   <span data-ttu-id="1a2bf-107">步骤 1 – **Set 压缩选项**： 启用或禁用压缩功能在备份期间</span><span class="sxs-lookup"><span data-stu-id="1a2bf-107">Step 1 – **Set Compression Option**: Enable or disable compression during backup</span></span>
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
     2. <span data-ttu-id="1a2bf-154">**名称**：默认值为 **BTS**。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-154">**Name**: The default is **BTS**.</span></span> <span data-ttu-id="1a2bf-155">该名称用作备份文件名的一部分。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-155">The name is used as part of the backup file name.</span></span>  
   
-    3. <span data-ttu-id="1a2bf-156">**备份文件的位置**： 替换*\<目标路径\>*替换为计算机和要备份文件夹的完整路径（的路径必须包括两个单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-156">**Location of backup files**: Replace '*\<destination path\>*' with the full path (the path must include the single quotes) to the computer and folder where you want to back up the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases, or the blob service endpoint URL to an Azure blob storage account.</span></span>  
+    3. <span data-ttu-id="1a2bf-156">**备份文件的位置**： 替换*\<目标路径\>* 替换为计算机和要备份文件夹的完整路径（的路径必须包括两个单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-156">**Location of backup files**: Replace '*\<destination path\>*' with the full path (the path must include the single quotes) to the computer and folder where you want to back up the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases, or the blob service endpoint URL to an Azure blob storage account.</span></span>  
 
         > [!IMPORTANT]
         > - <span data-ttu-id="1a2bf-157">如果输入的本地路径，则你必须手动将所有文件都复制到目标系统上的相同文件夹每当备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业创建新的文件。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-157">If you enter a local path, then you have to manually copy all the files to the same folder on the destination system whenever the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job creates new files.</span></span>  
@@ -134,12 +135,12 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="1a2bf-181">**@MarkName**： 这是备份文件的命名约定的一部分：\<服务器名称\>\_\<数据库名称\>**\_日志\_** \<日志标记名\> \_\<时间戳\></span><span class="sxs-lookup"><span data-stu-id="1a2bf-181">**@MarkName**: This is part of the naming convention for backup files: \<Server Name\>\_\<Database Name\>**\_Log\_**\< Log Mark Name \>\_\<Timestamp\></span></span>  
     
-    2.  <span data-ttu-id="1a2bf-182">**@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-182">**@BackupPath**: Full destination path (including single quotes) to the computer and folder to store the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database logs, or the Azure blob storage account and container.</span></span> <span data-ttu-id="1a2bf-183">*\<目标路径\>*也可以是本地或另一台服务器的 UNC 路径。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-183">The *\<destination path\>* can also be local or a UNC path to another server.</span></span>  
+    2.  <span data-ttu-id="1a2bf-182">**@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-182">**@BackupPath**: Full destination path (including single quotes) to the computer and folder to store the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database logs, or the Azure blob storage account and container.</span></span> <span data-ttu-id="1a2bf-183">*\<目标路径\>* 也可以是本地或另一台服务器的 UNC 路径。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-183">The *\<destination path\>* can also be local or a UNC path to another server.</span></span>  
   
      <span data-ttu-id="1a2bf-184">MarkAndBackupLog 步骤将日志标记为备份，然后对其进行备份。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-184">The MarkAndBackupLog step marks the logs for backup, and then backs them up.</span></span>  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="1a2bf-185">若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径\>*应设置为另一台计算机或硬盘，不同于用来存储原始的数据库日志。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-185">To avoid **potential data loss** and for **performance improvement**, the *\<destination path\>* should be set to a different computer, or hard drive, different from what is used to store the original database logs.</span></span>  
+    >  <span data-ttu-id="1a2bf-185">若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径\>* 应设置为另一台计算机或硬盘，不同于用来存储原始的数据库日志。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-185">To avoid **potential data loss** and for **performance improvement**, the *\<destination path\>* should be set to a different computer, or hard drive, different from what is used to store the original database logs.</span></span>  
   
      <span data-ttu-id="1a2bf-186">选择“确定”。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-186">Select **OK**.</span></span>  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="execute-backupsetupallprocssql-and-logshippingdestinationlogicsql"></a><span data-ttu-id="1a2bf-206">执行 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql</span><span class="sxs-lookup"><span data-stu-id="1a2bf-206">Execute Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql</span></span>
 
-<span data-ttu-id="1a2bf-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2 (FP2)**使用中的 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql 脚本`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2 (FP2)** used the Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql scripts in `\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`.</span></span> 
+<span data-ttu-id="1a2bf-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2 (FP2)** 使用中的 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql 脚本`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`。</span><span class="sxs-lookup"><span data-stu-id="1a2bf-207">**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2 (FP2)** used the Backup_Setup_All_Procs.sql and LogShipping_Destination_Logic.sql scripts in `\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`.</span></span> 
 
 <span data-ttu-id="1a2bf-208">如果已配置你的 BizTalk Server 中备份作业，并且你想要切换到使用 Azure blob （而不是磁盘），则还执行以下：</span><span class="sxs-lookup"><span data-stu-id="1a2bf-208">If your Backup BizTalk Server job is already configured, and you want to switch to using Azure blob (instead of a disk), then also do the following:</span></span> 
 

@@ -1,17 +1,17 @@
 ---
-title: "使用管理控制台的查询选项卡 |Microsoft 文档"
-ms.custom: 
+title: 使用管理控制台的查询选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Administration Console [BizTalk Server], Query tab
 - Query tab [Administration Console]
 ms.assetid: 7655f0b6-9217-46c4-88e0-ca2e661ce7a6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975812"
 ---
 # <a name="using-the-administration-console-query-tab"></a><span data-ttu-id="b91ad-102">使用管理控制台的“查询”选项卡</span><span class="sxs-lookup"><span data-stu-id="b91ad-102">Using the Administration Console Query Tab</span></span>
 <span data-ttu-id="b91ad-103">您可以使用 BizTalk Server 管理控制台的“组中心”页中的“查询”选项卡来搜索和定位正在运行或挂起的特定服务实例、消息或订阅。</span><span class="sxs-lookup"><span data-stu-id="b91ad-103">You can use the Query tab on the Group Hub page in the BizTalk Server Administration Console to search for and locate specific running and suspended service instances, messages, or subscriptions.</span></span> <span data-ttu-id="b91ad-104">使用管理控制台执行的查询可定位存储在 MessageBox 数据库中的实时项。</span><span class="sxs-lookup"><span data-stu-id="b91ad-104">Queries performed using the Administration Console locate live items, which are stored in the MessageBox database.</span></span> <span data-ttu-id="b91ad-105">每次运行新查询时，都会显示一个新的查询选项卡。</span><span class="sxs-lookup"><span data-stu-id="b91ad-105">A new query tab appears each time you run a new query.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="b91ad-106">若要定位跟踪或存档的消息或服务实例，请使用消息事件和服务实例跟踪。</span><span class="sxs-lookup"><span data-stu-id="b91ad-106">To locate tracked or archived messages or service instances, you use message event and service instance tracking.</span></span> <span data-ttu-id="b91ad-107">有关详细信息，请参阅[查看跟踪消息和实例数据](../core/viewing-tracked-message-and-instance-data.md)。</span><span class="sxs-lookup"><span data-stu-id="b91ad-107">For more information, see [Viewing Tracked Message and Instance Data](../core/viewing-tracked-message-and-instance-data.md).</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="b91ad-108">返回的结果集执行对服务实例的查询时，将显示的值**\<名称不可用\>**为**ServiceName**字段的一项服务如果相应发送端口，实例接收位置，或业务流程已被删除。</span><span class="sxs-lookup"><span data-stu-id="b91ad-108">When you execute a query for service instances, the result set that is returned will display a value of **\<Name is not available\>** for the **ServiceName** field of a service instance if the corresponding send port, receive location, or orchestration has been deleted.</span></span>  <span data-ttu-id="b91ad-109">**ServiceName**查找到发送端口的友好名称的 BizTalk 管理数据库填充服务实例的字段、 接收位置或业务流程。</span><span class="sxs-lookup"><span data-stu-id="b91ad-109">The **ServiceName** field of a service instance is populated by a lookup into the BizTalk management database for the friendly name of the send port, receive location, or orchestration.</span></span>  <span data-ttu-id="b91ad-110">如果发送端口接收位置，或删除业务流程则友好名称查找失败和**\<名称不可用\>**显示。</span><span class="sxs-lookup"><span data-stu-id="b91ad-110">If the send port, receive location, or orchestration is deleted then the lookup for the friendly name fails and **\<Name is not available\>** is displayed.</span></span>  
+>  <span data-ttu-id="b91ad-108">返回的结果集执行对服务实例的查询时，将显示的值**\<名称不可用\>** 为**ServiceName**字段的一项服务如果相应发送端口，实例接收位置，或业务流程已被删除。</span><span class="sxs-lookup"><span data-stu-id="b91ad-108">When you execute a query for service instances, the result set that is returned will display a value of **\<Name is not available\>** for the **ServiceName** field of a service instance if the corresponding send port, receive location, or orchestration has been deleted.</span></span>  <span data-ttu-id="b91ad-109">**ServiceName**查找到发送端口的友好名称的 BizTalk 管理数据库填充服务实例的字段、 接收位置或业务流程。</span><span class="sxs-lookup"><span data-stu-id="b91ad-109">The **ServiceName** field of a service instance is populated by a lookup into the BizTalk management database for the friendly name of the send port, receive location, or orchestration.</span></span>  <span data-ttu-id="b91ad-110">如果发送端口接收位置，或删除业务流程则友好名称查找失败和**\<名称不可用\>** 显示。</span><span class="sxs-lookup"><span data-stu-id="b91ad-110">If the send port, receive location, or orchestration is deleted then the lookup for the friendly name fails and **\<Name is not available\>** is displayed.</span></span>  
   
 ## <a name="in-this-section"></a><span data-ttu-id="b91ad-111">本节内容</span><span class="sxs-lookup"><span data-stu-id="b91ad-111">In This Section</span></span>  
   

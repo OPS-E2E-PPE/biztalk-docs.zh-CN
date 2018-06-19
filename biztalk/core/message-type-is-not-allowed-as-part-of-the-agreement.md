@@ -1,14 +1,14 @@
 ---
-title: "消息类型不允许作为协议的一部分 |Microsoft 文档"
-ms.custom: 
+title: 消息类型不允许作为协议的一部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 829f8230-33b8-4b5f-a56a-d0c1d3a17271
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262733"
 ---
 # <a name="message-type-is-not-allowed-as-part-of-the-agreement"></a><span data-ttu-id="9d450-102">不允许将消息类型作为协议的一部分</span><span class="sxs-lookup"><span data-stu-id="9d450-102">Message Type is not allowed as part of the Agreement</span></span>
 ## <a name="details"></a><span data-ttu-id="9d450-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="9d450-103">Details</span></span>  

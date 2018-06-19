@@ -1,14 +1,14 @@
 ---
-title: "导入复制失败，因为有多个活动挂起批 |Microsoft 文档"
-ms.custom: 
+title: 导入复制失败，因为有多个活动挂起批 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 17803f0a-3c70-4a8a-8e8d-7f874ed9ad92
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256717"
 ---
 # <a name="import-copy-failed-as-there-are-active-pending-batches"></a><span data-ttu-id="c06ca-102">导入复制失败，因为有多个活动挂起批</span><span class="sxs-lookup"><span data-stu-id="c06ca-102">Import-Copy failed as there are active-pending batches</span></span>
 ## <a name="details"></a><span data-ttu-id="c06ca-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="c06ca-103">Details</span></span>  

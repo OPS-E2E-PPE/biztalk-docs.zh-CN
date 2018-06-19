@@ -1,15 +1,15 @@
 ---
-title: "为其他数据库配置 BizTalk 日志传送 |Microsoft 文档"
-description: "将自定义数据库添加到备份 BizTalk Server 作业以及 BizTalk Server 中的日志传送"
-ms.custom: 
+title: 为其他数据库配置 BizTalk 日志传送 |Microsoft 文档
+description: 将自定义数据库添加到备份 BizTalk Server 作业以及 BizTalk Server 中的日志传送
+ms.custom: ''
 ms.date: 11/01/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fc2ae67-5cb9-4d53-9bf7-c88f84914960
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976531"
 ---
 # <a name="configuring-biztalk-server-log-shipping-for-additional-databases"></a><span data-ttu-id="4517e-103">配置 BizTalk Server 日志传送有关的其他数据库</span><span class="sxs-lookup"><span data-stu-id="4517e-103">Configuring BizTalk Server Log Shipping for Additional Databases</span></span>
 

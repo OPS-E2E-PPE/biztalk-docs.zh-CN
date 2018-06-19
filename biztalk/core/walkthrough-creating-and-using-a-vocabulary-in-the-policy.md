@@ -1,14 +1,14 @@
 ---
-title: "演练： 创建和使用该策略中的词汇 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建和使用该策略中的词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c306a6e-3384-4f43-9c75-c5407cd9aed2
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975915"
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a><span data-ttu-id="cb07b-102">演练： 创建和使用该策略中的词汇</span><span class="sxs-lookup"><span data-stu-id="cb07b-102">Walkthrough: Creating and Using a Vocabulary in the Policy</span></span>
 <span data-ttu-id="cb07b-103">本演练提供了分步过程来创建词汇和使用中的词汇**ProcessPurchaseOrder**策略。</span><span class="sxs-lookup"><span data-stu-id="cb07b-103">This walkthrough provides step-by-step procedures for creating a vocabulary and using the vocabulary in the **ProcessPurchaseOrder** policy.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="cb07b-124">如果在步骤 3 中，不未将词汇表的名称更改为 POVocabulary，更改到词汇名称**POVocabulary**属性窗口中。</span><span class="sxs-lookup"><span data-stu-id="cb07b-124">If you did not change the name of the vocabulary to POVocabulary in step 3, change the name of the vocabulary to **POVocabulary**in the Properties window.</span></span>  
   
-5.  <span data-ttu-id="cb07b-125">右键单击**（不保存） 1.0 版**中**POVocabulary**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-125">Right-click **Version 1.0(not saved)** in **POVocabulary**, and then click **Add New Definition**.</span></span>  
+5.  <span data-ttu-id="cb07b-125">右键单击 **（不保存） 1.0 版**中**POVocabulary**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-125">Right-click **Version 1.0(not saved)** in **POVocabulary**, and then click **Add New Definition**.</span></span>  
   
 6.  <span data-ttu-id="cb07b-126">在词汇定义向导中，选择**XML 文档元素或属性**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-126">In the Vocabulary Definition Wizard, select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/28/2017
   
 12. <span data-ttu-id="cb07b-136">单击 **“完成”**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-136">Click **Finish**.</span></span>  
   
-13. <span data-ttu-id="cb07b-137">右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-137">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
+13. <span data-ttu-id="cb07b-137">右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-137">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
   
 14. <span data-ttu-id="cb07b-138">选择**XML 文档元素或属性**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-138">Select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 20. <span data-ttu-id="cb07b-145">单击 **“完成”**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-145">Click **Finish**.</span></span>  
   
-21. <span data-ttu-id="cb07b-146">右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-146">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
+21. <span data-ttu-id="cb07b-146">右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-146">Right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
   
 22. <span data-ttu-id="cb07b-147">请确保**常量值、 值的范围或设置的值**已选择，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-147">Make sure that **Constant Value, Range of Values, or Set of Values** is selected, and then click **Next**.</span></span>  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 11/28/2017
   
 25. <span data-ttu-id="cb07b-150">类型**500**作为值，然后单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-150">Type **500** for the value, and then click **Finish**.</span></span>  
   
-26. <span data-ttu-id="cb07b-151">右键单击**（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-151">Right-click **Version 1.0(not saved)**, and then click **Save**.</span></span>  
+26. <span data-ttu-id="cb07b-151">右键单击 **（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-151">Right-click **Version 1.0(not saved)**, and then click **Save**.</span></span>  
   
-27. <span data-ttu-id="cb07b-152">右键单击**（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-152">Right-click **Version 1.0(not saved)**, and then click **Publish**.</span></span>  
+27. <span data-ttu-id="cb07b-152">右键单击 **（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-152">Right-click **Version 1.0(not saved)**, and then click **Publish**.</span></span>  
   
 ### <a name="to-use-the-povocabulary-in-the-processpurchaseorder-policy"></a><span data-ttu-id="cb07b-153">在 ProcessPurchaseOrder 策略中使用 POVocabulary</span><span class="sxs-lookup"><span data-stu-id="cb07b-153">To use the POVocabulary in the ProcessPurchaseOrder policy</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="cb07b-155">右键单击**ProcessPurchaseOrder** ，然后单击**粘贴的策略版本**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-155">Right-click **ProcessPurchaseOrder** and then click **Paste Policy Version**.</span></span>  
   
-3.  <span data-ttu-id="cb07b-156">单击**ApprovalRule**中**（不保存） 1.1 版**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-156">Click **ApprovalRule** in **Version 1.1(not saved)**.</span></span>  
+3.  <span data-ttu-id="cb07b-156">单击**ApprovalRule**中 **（不保存） 1.1 版**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-156">Click **ApprovalRule** in **Version 1.1(not saved)**.</span></span>  
   
 4.  <span data-ttu-id="cb07b-157">在事实浏览器窗口中，展开**词汇**，展开**POVocabulary**，展开**版本 1.0**，然后拖动**请求数量**到如果窗格替换 LessThanOrEqual 谓词的左侧显示端 (LHS) 自变量。</span><span class="sxs-lookup"><span data-stu-id="cb07b-157">In the Facts Explorer window, expand **Vocabularies**, expand **POVocabulary**, expand **Version 1.0**, and then drag **Requested Quantity** to the IF pane to replace the left hand side (LHS) argument of the LessThanOrEqual predicate.</span></span>  
   
@@ -119,11 +120,11 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="cb07b-163">拖动**请求状态**到**然后**窗格。</span><span class="sxs-lookup"><span data-stu-id="cb07b-163">Drag **Request Status** to the **THEN** pane.</span></span>  
   
-8.  <span data-ttu-id="cb07b-164">单击**\<空字符串\>**然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-164">Click **\<empty string\>** and then type **Approved**.</span></span>  
+8.  <span data-ttu-id="cb07b-164">单击**\<空字符串\>** 然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-164">Click **\<empty string\>** and then type **Approved**.</span></span>  
   
-9. <span data-ttu-id="cb07b-165">右键单击**（不保存） 1.1 版**在策略浏览器窗口中，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-165">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Save**.</span></span>  
+9. <span data-ttu-id="cb07b-165">右键单击 **（不保存） 1.1 版**在策略浏览器窗口中，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-165">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Save**.</span></span>  
   
-10. <span data-ttu-id="cb07b-166">右键单击**（不保存） 1.1 版**在策略浏览器窗口中，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-166">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Publish**.</span></span>  
+10. <span data-ttu-id="cb07b-166">右键单击 **（不保存） 1.1 版**在策略浏览器窗口中，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="cb07b-166">Right-click **Version 1.1(not saved)** in the Policy Explorer window, and then click **Publish**.</span></span>  
   
 ### <a name="to-test-the-solution"></a><span data-ttu-id="cb07b-167">若要测试解决方案</span><span class="sxs-lookup"><span data-stu-id="cb07b-167">To test the solution</span></span>  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="cb07b-188">在本演练中，你只使用了 XML 文档作为该策略的事实。</span><span class="sxs-lookup"><span data-stu-id="cb07b-188">In this walkthrough, you used only an XML document as a fact to the policy.</span></span> <span data-ttu-id="cb07b-189">在创建策略时，你还可以使用 .NET 事实和数据库事实。</span><span class="sxs-lookup"><span data-stu-id="cb07b-189">You can also use .NET facts and database facts when you create policies</span></span>  
   
--   <span data-ttu-id="cb07b-190">当选择**执行"设置"操作**词汇定义向导的第二页，可以指定**显示格式字符串**遵循的页面上。</span><span class="sxs-lookup"><span data-stu-id="cb07b-190">When you select **Perform "Set" operation** on the second page of the Vocabulary Definition Wizard, you can specify a **Display format string** on the page that follows.</span></span> <span data-ttu-id="cb07b-191">例如，您无法更改中的显示格式字符串**请求状态 {0}**到**请求状态是： {0}**之前单击**完成**中的步骤 20"创建词汇"过程。</span><span class="sxs-lookup"><span data-stu-id="cb07b-191">For example, you could change the display format string from **Request Status {0}** to **Request status is: {0}** before clicking **Finish** in the step 20 of the "create vocabulary" procedure.</span></span>  
+-   <span data-ttu-id="cb07b-190">当选择**执行"设置"操作**词汇定义向导的第二页，可以指定**显示格式字符串**遵循的页面上。</span><span class="sxs-lookup"><span data-stu-id="cb07b-190">When you select **Perform "Set" operation** on the second page of the Vocabulary Definition Wizard, you can specify a **Display format string** on the page that follows.</span></span> <span data-ttu-id="cb07b-191">例如，您无法更改中的显示格式字符串**请求状态 {0}** 到**请求状态是： {0}** 之前单击**完成**中的步骤 20"创建词汇"过程。</span><span class="sxs-lookup"><span data-stu-id="cb07b-191">For example, you could change the display format string from **Request Status {0}** to **Request status is: {0}** before clicking **Finish** in the step 20 of the "create vocabulary" procedure.</span></span>  
   
 ## <a name="next-steps"></a><span data-ttu-id="cb07b-192">后续步骤</span><span class="sxs-lookup"><span data-stu-id="cb07b-192">Next Steps</span></span>  
  <span data-ttu-id="cb07b-193">现在，你已完成本演练中，执行[演练： 将规则添加到策略](../core/walkthrough-adding-a-rule-to-the-policy.md)演练中，这为你提供将添加到新的规则的分步说明**ProcessPurchaseOrder**策略。</span><span class="sxs-lookup"><span data-stu-id="cb07b-193">Now that you have completed this walkthrough, perform the [Walkthrough: Adding a Rule to the Policy](../core/walkthrough-adding-a-rule-to-the-policy.md) walkthrough, which gives you step-by-step instructions for adding a new rule to the **ProcessPurchaseOrder** policy.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "循环活动 |Microsoft 文档"
-ms.custom: 
+title: 循环活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], looping activities
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, looping
 - orchestrations, activities
 ms.assetid: fb40fdd0-ac8f-486a-b3d0-9d2200a87cda
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262077"
 ---
 # <a name="looping-activities"></a><span data-ttu-id="0522d-102">循环的活动</span><span class="sxs-lookup"><span data-stu-id="0522d-102">Looping Activities</span></span>
 <span data-ttu-id="0522d-103">循环活动是指在某个业务流程内循环的操作。</span><span class="sxs-lookup"><span data-stu-id="0522d-103">Looping activities refers to actions that loop within an orchestration.</span></span> <span data-ttu-id="0522d-104">可以从在业务流程内循环的操作中捕获事件。</span><span class="sxs-lookup"><span data-stu-id="0522d-104">It is possible to capture the events from actions that loop within an orchestration.</span></span> <span data-ttu-id="0522d-105">为此，需要创建另一个活动，并映射该循环内的所有新活动里程碑和数据。</span><span class="sxs-lookup"><span data-stu-id="0522d-105">To do this, you create another activity and map all of the new activity milestones and data inside the loop.</span></span> <span data-ttu-id="0522d-106">这样做是有必要的，因为在循环中数据处理在每次计划的执行中将发生多次。</span><span class="sxs-lookup"><span data-stu-id="0522d-106">This is necessary because the data processing in the loop will occur more than once per scheduled execution.</span></span> <span data-ttu-id="0522d-107">下图显示的就是这种情况的一个示例。</span><span class="sxs-lookup"><span data-stu-id="0522d-107">The following figure shows an example of this situation.</span></span>  

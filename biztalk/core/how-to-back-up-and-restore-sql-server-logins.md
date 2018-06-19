@@ -1,14 +1,14 @@
 ---
-title: "如何备份和还原 SQL Server 登录名 |Microsoft 文档"
-ms.custom: 
+title: 如何备份和还原 SQL Server 登录名 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 847c3a3d-0d97-415b-893e-4ba173085bae
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248549"
 ---
 # <a name="how-to-back-up-and-restore-sql-server-logins"></a><span data-ttu-id="2e6b8-102">如何备份和还原 SQL Server 登录名</span><span class="sxs-lookup"><span data-stu-id="2e6b8-102">How to Back Up and Restore SQL Server Logins</span></span>
 <span data-ttu-id="2e6b8-103">备份和还原与 BizTalk Server 关联的 SQL Server 登录名。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-103">Back up and restore SQL Server logins associated with BizTalk Server.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="2e6b8-118">右键单击你想要创建的备份脚本，然后选择的登录名**脚本以用户身份登录**。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-118">Right-click the login you want to create a backup script for, and then select **Script Login as**.</span></span>  
   
-4.  <span data-ttu-id="2e6b8-119">选择**创建到**，然后选择其中一个**新查询编辑器窗口**，**文件**，或**剪贴板**若要为脚本选择一个目标。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-119">Select **CREATE To**, and then select one of **New Query Editor Window**, **File**, or **Clipboard** to select a destination for the script.</span></span> <span data-ttu-id="2e6b8-120">通常情况下，目标是为此文件**.sql**扩展。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-120">Typically, the destination is a file with a **.sql** extension.</span></span>  
+4.  <span data-ttu-id="2e6b8-119">选择**创建到**，然后选择其中一个**新查询编辑器窗口**，**文件**，或**剪贴板**若要为脚本选择一个目标。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-119">Select **CREATE To**, and then select one of **New Query Editor Window**, **File**, or **Clipboard** to select a destination for the script.</span></span> <span data-ttu-id="2e6b8-120">通常情况下，目标是为此文件 **.sql**扩展。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-120">Typically, the destination is a file with a **.sql** extension.</span></span>  
   
 5.  <span data-ttu-id="2e6b8-121">对于要生成脚本的每个登录，从步骤 3 重复此过程。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-121">Repeat this procedure from Step 3 for each login you want to script.</span></span> <span data-ttu-id="2e6b8-122">请参考与 BizTalk Server 相关的登录名列表，以确定你需要为哪些登录名编写脚本。</span><span class="sxs-lookup"><span data-stu-id="2e6b8-122">Refer to the list of BizTalk Server related logins to determine which logins you need to script.</span></span>  
   

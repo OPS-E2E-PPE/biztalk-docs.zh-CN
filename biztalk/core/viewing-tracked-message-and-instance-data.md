@@ -1,17 +1,17 @@
 ---
-title: "查看跟踪的消息和实例数据 |Microsoft 文档"
-ms.custom: 
+title: 查看跟踪的消息和实例数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - monitoring, HAT
 - HAT, about HAT
 ms.assetid: e3cc7bef-90c7-4375-9f6c-7df00391132e
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288213"
 ---
 # <a name="viewing-tracked-message-and-instance-data"></a><span data-ttu-id="b0341-102">查看跟踪的消息和实例数据</span><span class="sxs-lookup"><span data-stu-id="b0341-102">Viewing Tracked Message and Instance Data</span></span>
 <span data-ttu-id="b0341-103">您可以使用历史记录和跟踪的数据，来帮助您对 BizTalk Server 应用程序中的问题进行疑难解答。</span><span class="sxs-lookup"><span data-stu-id="b0341-103">You can use historical and tracked data to help troubleshoot your BizTalk Server applications.</span></span> <span data-ttu-id="b0341-104">例如，系统管理员可以使用历史记录和跟踪数据完成以下任务：</span><span class="sxs-lookup"><span data-stu-id="b0341-104">For example, system administrators can use historical and tracked data to:</span></span>  

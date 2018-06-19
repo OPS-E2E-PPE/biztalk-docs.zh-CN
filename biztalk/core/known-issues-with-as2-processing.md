@@ -1,14 +1,14 @@
 ---
-title: "AS2 处理的已知问题 |Microsoft 文档"
-ms.custom: 
+title: AS2 处理的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 941111d8-b394-4648-a675-e4a8f118a84b
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009390"
 ---
 # <a name="known-issues-with-as2-processing"></a><span data-ttu-id="d5b14-102">AS2 处理的已知问题</span><span class="sxs-lookup"><span data-stu-id="d5b14-102">Known Issues with AS2 Processing</span></span>
 <span data-ttu-id="d5b14-103">本部分包含主题描述了与 BizTalk Server AS2 解决方案的已知的问题。</span><span class="sxs-lookup"><span data-stu-id="d5b14-103">This section contains topics that describe known issues with BizTalk Server AS2 solutions.</span></span>  

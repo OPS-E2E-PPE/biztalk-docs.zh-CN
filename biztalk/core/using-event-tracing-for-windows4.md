@@ -12,7 +12,7 @@ helpviewer_keywords:
 - BTAJDEEnterpriseOneTrace command
 - Event Tracing for Windows
 ms.assetid: 5f07d317-5ae2-4d1e-a343-941f3079dc4b
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973675"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="414a0-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="414a0-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="414a0-103">适用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。</span><span class="sxs-lookup"><span data-stu-id="414a0-103">Microsoft BizTalk Adapter for JD Edwards EnterpriseOne logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="414a0-104">可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-104">You can view additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="414a0-105">激活 ETW 后，会创建一个 \*.etl 文件以接收这些消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-105">When ETW is activated, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="414a0-106">该文件为二进制格式，必须将其转换为可读格式。</span><span class="sxs-lookup"><span data-stu-id="414a0-106">This file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="414a0-107">若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件; 例如，tracerpt.exe 或 tracedmp.ex。</span><span class="sxs-lookup"><span data-stu-id="414a0-107">To do this, you must have a consumer application available to interpret the \*.etl file; for example, tracerpt.exe or tracedmp.ex.</span></span> <span data-ttu-id="414a0-108">Tracept.exe 应用程序将转换 \*到两个文本文件的.etl: summary.txt 和 dumpfile.csv。</span><span class="sxs-lookup"><span data-stu-id="414a0-108">The tracept.exe application converts the \*.etl into two text files: summary.txt and dumpfile.csv.</span></span>  
@@ -43,11 +44,11 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="414a0-128">用于 JD Edwards EnterpriseOne 的 BizTalk 适配器包含三种提供程序，允许您记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="414a0-128">BizTalk Adapter  for JD Edwards EnterpriseOne contains three providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="414a0-129">**接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="414a0-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span> <span data-ttu-id="414a0-130">使用 **-接收方** 以获取日志收到的已适配器在运行时中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-130">Use **-receiver** to get any messages from the log that were received by the adapter at run time.</span></span>  
+-   <span data-ttu-id="414a0-129">**接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="414a0-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span> <span data-ttu-id="414a0-130">使用 **-接收方** 以获取日志收到的已适配器在运行时中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-130">Use **-receiver** to get any messages from the log that were received by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="414a0-131">**发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="414a0-131">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span> <span data-ttu-id="414a0-132">使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-132">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
+-   <span data-ttu-id="414a0-131">**发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="414a0-131">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span> <span data-ttu-id="414a0-132">使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="414a0-132">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="414a0-133">**管理日志记录提供程序**:\<跟踪元素\>交换机**-管理**使用**-管理**若要获取生成日志中的任何消息期间浏览的服务器系统。</span><span class="sxs-lookup"><span data-stu-id="414a0-133">**Management Logging Provider**: The \<Trace element\> switch is **-management** Use **-management** to get any messages from the log that were generated during browsing of the server system.</span></span>  
+-   <span data-ttu-id="414a0-133">**管理日志记录提供程序**:\<跟踪元素\>交换机 **-管理**使用 **-管理**若要获取生成日志中的任何消息期间浏览的服务器系统。</span><span class="sxs-lookup"><span data-stu-id="414a0-133">**Management Logging Provider**: The \<Trace element\> switch is **-management** Use **-management** to get any messages from the log that were generated during browsing of the server system.</span></span>  
   
 ### <a name="btajdeenterpriseonetrace-command"></a><span data-ttu-id="414a0-134">BTAJDEEnterpriseOneTrace 命令</span><span class="sxs-lookup"><span data-stu-id="414a0-134">BTAJDEEnterpriseOneTrace Command</span></span>  
  <span data-ttu-id="414a0-135">若要使用 ETW，请运行博士 Edwards EnterpriseOne 命令 BizTalk 适配器 **BTAJDEEnterpriseOneTrace.cmd**。</span><span class="sxs-lookup"><span data-stu-id="414a0-135">To use ETW, run the BizTalk Adapter for JD Edwards EnterpriseOne command, **BTAJDEEnterpriseOneTrace.cmd**.</span></span> <span data-ttu-id="414a0-136">如下所示使用此命令：</span><span class="sxs-lookup"><span data-stu-id="414a0-136">You use this command as follows:</span></span>  

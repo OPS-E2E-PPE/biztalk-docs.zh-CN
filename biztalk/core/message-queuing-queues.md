@@ -1,11 +1,11 @@
 ---
-title: "消息队列的队列 |Microsoft 文档"
-ms.custom: 
+title: 消息队列的队列 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [MSMQ adapters], queue paths
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - naming conventions, queue paths [MSMQ adapters]
 - configuring [MSMQ adapters], message queues
 ms.assetid: b802348e-8543-4b06-a6e4-149b86139fb1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971459"
 ---
 # <a name="message-queuing-queues"></a><span data-ttu-id="bbb9d-102">消息队列的队列</span><span class="sxs-lookup"><span data-stu-id="bbb9d-102">Message Queuing Queues</span></span>
 <span data-ttu-id="bbb9d-103">本部分将介绍如何在使用 MSMQ 适配器时指定 Microsoft 消息队列（也称为 MSMQ）。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-103">This section describes how to specify Microsoft Message Queuing (also known as MSMQ) queues when you use the MSMQ adapter.</span></span> <span data-ttu-id="bbb9d-104">本部分对指定路径的约定进行了说明，并介绍了格式名称在将路径翻译成队列指定格式的过程中所起的作用。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-104">It describes the conventions for specifying paths and also describes the role that format names play in translating paths into queue designations.</span></span>  
@@ -40,9 +41,9 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="bbb9d-109">公用队列</span><span class="sxs-lookup"><span data-stu-id="bbb9d-109">Public queue</span></span>|<span data-ttu-id="bbb9d-110">*Computername*\QueueName</span><span class="sxs-lookup"><span data-stu-id="bbb9d-110">*Computername*\QueueName</span></span>|  
 |<span data-ttu-id="bbb9d-111">专用队列</span><span class="sxs-lookup"><span data-stu-id="bbb9d-111">Private queue</span></span>|<span data-ttu-id="bbb9d-112">*Computername*\Private$\QueueName</span><span class="sxs-lookup"><span data-stu-id="bbb9d-112">*Computername*\Private$\QueueName</span></span>|  
 |<span data-ttu-id="bbb9d-113">日志队列</span><span class="sxs-lookup"><span data-stu-id="bbb9d-113">Journal queue</span></span>|<span data-ttu-id="bbb9d-114">*Computername*\QueueName\Journal$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-114">*Computername*\QueueName\Journal$</span></span>|  
-|<span data-ttu-id="bbb9d-115">计算机日记队列**注意：**用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-116">*Computername*\Journal$</span></span>|  
-|<span data-ttu-id="bbb9d-117">计算机死信队列**注意：**用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-118">*Computername*\Deadletter$</span></span>|  
-|<span data-ttu-id="bbb9d-119">计算机事务性死信队列**注意：**用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-120">*Computername*\XactDeadletter$</span></span>|  
+|<span data-ttu-id="bbb9d-115">计算机日记队列**注意：** 用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-116">*Computername*\Journal$</span></span>|  
+|<span data-ttu-id="bbb9d-117">计算机死信队列**注意：** 用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-118">*Computername*\Deadletter$</span></span>|  
+|<span data-ttu-id="bbb9d-119">计算机事务性死信队列**注意：** 用于仅接收队列。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="bbb9d-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="bbb9d-120">*Computername*\XactDeadletter$</span></span>|  
   
 > [!NOTE]
 >  <span data-ttu-id="bbb9d-121">该队列路径必须唯一。</span><span class="sxs-lookup"><span data-stu-id="bbb9d-121">The path of the queue must be unique.</span></span>  

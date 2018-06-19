@@ -1,11 +1,11 @@
 ---
-title: "使用长时间运行事务的方案 |Microsoft 文档"
-ms.custom: 
+title: 使用长时间运行事务的方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transactions, long-running
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - examples, long-running transactions
 - examples, custom compensations
 ms.assetid: 76b3e0f8-44dc-419e-a73a-c2908b1d8795
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269917"
 ---
 # <a name="scenarios-using-long-running-transactions"></a><span data-ttu-id="7639c-102">使用长期事务的方案</span><span class="sxs-lookup"><span data-stu-id="7639c-102">Scenarios Using Long-Running Transactions</span></span>
 <span data-ttu-id="7639c-103">下面的方案介绍如何使用长期事务。</span><span class="sxs-lookup"><span data-stu-id="7639c-103">The following scenarios describe the use of long running transactions.</span></span>  

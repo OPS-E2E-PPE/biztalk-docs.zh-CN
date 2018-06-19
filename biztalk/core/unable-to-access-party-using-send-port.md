@@ -1,14 +1,14 @@
 ---
-title: "无法访问方使用发送端口 |Microsoft 文档"
-ms.custom: 
+title: 无法访问方使用发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffacba77-76e8-4f03-be26-134a9999d6c1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286525"
 ---
 # <a name="unable-to-access-party-using-send-port"></a><span data-ttu-id="e0f08-102">无法使用发送端口访问参与方</span><span class="sxs-lookup"><span data-stu-id="e0f08-102">Unable to access party using send port</span></span>
 ## <a name="details"></a><span data-ttu-id="e0f08-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e0f08-103">Details</span></span>  

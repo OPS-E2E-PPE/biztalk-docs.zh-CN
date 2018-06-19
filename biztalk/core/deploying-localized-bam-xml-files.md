@@ -1,17 +1,17 @@
 ---
-title: "部署本地化 BAM XML 文件 |Microsoft 文档"
-ms.custom: 
+title: 部署本地化 BAM XML 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, unicode mapping
 - unicode mapping [BAM]
 ms.assetid: 8e7e3431-cd20-45db-b7f2-0df23e9df42b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239309"
 ---
 # <a name="deploying-localized-bam-xml-files"></a><span data-ttu-id="407ca-102">部署本地化的 BAM XML 文件</span><span class="sxs-lookup"><span data-stu-id="407ca-102">Deploying Localized BAM XML Files</span></span>
 <span data-ttu-id="407ca-103">Microsoft SQL Server Analysis Services 支持 Unicode 映射。</span><span class="sxs-lookup"><span data-stu-id="407ca-103">Microsoft SQL Server Analysis Services supports Unicode mapping.</span></span> <span data-ttu-id="407ca-104">但是，对于 SQL Server Analysis Services 和 Visual Basic Unicode 映射，存在几个已知的字符出错问题。</span><span class="sxs-lookup"><span data-stu-id="407ca-104">However, there are known character corruption issues with SQL Server Analysis Services and Visual Basic Unicode mapping.</span></span> <span data-ttu-id="407ca-105">具体而言，在从 ANSI 转换为 Unicode 时，如果区域设置未设为正确的本地化语言，将使用错误的区域设置信息执行转换，从而导致出现字符错误。</span><span class="sxs-lookup"><span data-stu-id="407ca-105">Specifically, if the regional settings are not set to the correct localized language when the conversion from ANSI to Unicode occurs, the conversion is performed using the wrong locale information and character corruption occurs.</span></span>  

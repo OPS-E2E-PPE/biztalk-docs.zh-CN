@@ -1,17 +1,17 @@
 ---
-title: "导入项目时，会发生什么情况 |Microsoft 文档"
-ms.custom: 
+title: 导入项目时，会发生什么情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing, artifacts
 - artifacts, importing
 ms.assetid: a83957df-6e16-419a-b693-87985b498cc4
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974907"
 ---
 # <a name="what-happens-when-artifacts-are-imported"></a><span data-ttu-id="653fc-102">导入项目时发生的情况</span><span class="sxs-lookup"><span data-stu-id="653fc-102">What Happens When Artifacts Are Imported</span></span>
 <span data-ttu-id="653fc-103">本主题介绍导入项目时发生的情况。</span><span class="sxs-lookup"><span data-stu-id="653fc-103">This topic describes what happens to artifacts when they are imported.</span></span> <span data-ttu-id="653fc-104">可以通过本主题介绍的三种方式导入项目：</span><span class="sxs-lookup"><span data-stu-id="653fc-104">There are three ways to import artifacts, which are covered in this topic:</span></span>  

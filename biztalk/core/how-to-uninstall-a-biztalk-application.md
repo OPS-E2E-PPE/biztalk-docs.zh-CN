@@ -1,11 +1,11 @@
 ---
-title: "如何卸载 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何卸载 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], uninstalling
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - uninstalling, applications
 - undeploying, uninstalling
 ms.assetid: ab721c6e-194e-4b8a-bfd1-d0139d284373
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256837"
 ---
 # <a name="how-to-uninstall-a-biztalk-application"></a><span data-ttu-id="8fdee-102">如何卸载 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="8fdee-102">How to Uninstall a BizTalk Application</span></span>
 <span data-ttu-id="8fdee-103">本主题介绍如何使用“添加或删除程序”控制面板或 BTSTask 命令行工具卸载 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="8fdee-103">This topic describes how to use the Add or Remove Programs control panel or the BTSTask command-line tool to uninstall a BizTalk application.</span></span> <span data-ttu-id="8fdee-104">它们是用于卸载应用程序的唯一支持的方法。</span><span class="sxs-lookup"><span data-stu-id="8fdee-104">These are the only supported methods for uninstalling an application.</span></span> <span data-ttu-id="8fdee-105">如果您为此应用程序安装了多个 .msi 文件（例如为了更新该应用程序），则双击该 .msi 文件或者使用 msiexec 可能不会完全卸载该应用程序，因此不是支持的卸载方法。</span><span class="sxs-lookup"><span data-stu-id="8fdee-105">If you installed multiple .msi files for this application, for example to update the application, double-clicking the .msi file or using msiexec may not completely uninstall the application and are therefore not supported uninstallation methods.</span></span>  

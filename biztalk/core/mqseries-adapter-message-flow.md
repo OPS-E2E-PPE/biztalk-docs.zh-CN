@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263541"
 ---
 # <a name="mqseries-adapter-message-flow"></a><span data-ttu-id="6406a-102">MQSeries 适配器消息流</span><span class="sxs-lookup"><span data-stu-id="6406a-102">MQSeries Adapter Message Flow</span></span>
 <span data-ttu-id="6406a-103">消息从发起[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机会首先传递给 MQSeries 服务器在 Windows 上运行。</span><span class="sxs-lookup"><span data-stu-id="6406a-103">A message originating from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computer is first passed to an MQSeries Server running on Windows.</span></span> <span data-ttu-id="6406a-104">运行在 Windows 上的 MQSeries 服务器可以位于运行 BizTalk Server 的同一计算机上。</span><span class="sxs-lookup"><span data-stu-id="6406a-104">MQSeries Server running on Windows can be on the same computer as the one that runs BizTalk Server.</span></span> <span data-ttu-id="6406a-105">消息通过 MQSeries Server for Windows 计算机路由至操作系统上（如 UNIX）的 MQSeries 服务器主机。</span><span class="sxs-lookup"><span data-stu-id="6406a-105">The message is routed through the MQSeries Server for Windows computer to an MQSeries Server host on an operating system such as UNIX.</span></span> <span data-ttu-id="6406a-106">随后，应用程序将从 MQSeries 队列中检索消息。</span><span class="sxs-lookup"><span data-stu-id="6406a-106">An application then retrieves the message from the MQSeries queue.</span></span>  

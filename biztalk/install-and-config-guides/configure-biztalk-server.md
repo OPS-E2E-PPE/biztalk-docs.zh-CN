@@ -18,6 +18,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31816977"
 ---
 # <a name="configure-biztalk-server"></a><span data-ttu-id="a1c53-103">配置 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="a1c53-103">Configure BizTalk Server</span></span>
 <span data-ttu-id="a1c53-104">使用“基本配置”或“自定义配置”配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a1c53-104">Configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] using basic configuration or custom configuration.</span></span>

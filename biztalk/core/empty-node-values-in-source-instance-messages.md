@@ -1,14 +1,14 @@
 ---
-title: "源中的空节点值实例消息 |Microsoft 文档"
-ms.custom: 
+title: 源中的空节点值实例消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 76f9d7c8-5a82-41e9-9077-7b1ddd80a837
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240077"
 ---
 # <a name="empty-node-values-in-source-instance-messages"></a><span data-ttu-id="84354-102">源实例消息中的空节点值</span><span class="sxs-lookup"><span data-stu-id="84354-102">Empty Node Values in Source Instance Messages</span></span>
 <span data-ttu-id="84354-103">在测试映射时，有时可能并不需要全部 schema 节点中的内容。</span><span class="sxs-lookup"><span data-stu-id="84354-103">There may be times when you do not want content in all of the schema nodes when you test a map.</span></span>  

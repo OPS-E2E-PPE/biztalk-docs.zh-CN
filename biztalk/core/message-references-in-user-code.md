@@ -1,14 +1,14 @@
 ---
-title: "消息在用户代码中的引用 |Microsoft 文档"
-ms.custom: 
+title: 消息在用户代码中的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a1584be-35fd-4dc2-a5a9-559300e67e0e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263245"
 ---
 # <a name="message-references-in-user-code"></a><span data-ttu-id="76676-102">在用户代码中的消息引用</span><span class="sxs-lookup"><span data-stu-id="76676-102">Message References in User Code</span></span>
 <span data-ttu-id="76676-103">构造一条消息时，消息的表示形式是 MessageBox 数据库中并且另一种表示在计算机上的内存。</span><span class="sxs-lookup"><span data-stu-id="76676-103">When a message is constructed, a representation of the message is in the MessageBox database and another representation is in memory on the computer.</span></span> <span data-ttu-id="76676-104">如果你通过传递消息引用对.NET 对象或一个外部程序集，使消息分配和.NET 对象或外部程序集然后修改计算机上的内存中的表示形式，BizTalk 业务流程引擎并不知道修改。</span><span class="sxs-lookup"><span data-stu-id="76676-104">If you make the message assignment by passing a message reference to a .NET object or to an external assembly, and then the .NET object or the external assembly modifies the representation in memory on the computer, the BizTalk Orchestration Engine is not aware of the modification.</span></span>  

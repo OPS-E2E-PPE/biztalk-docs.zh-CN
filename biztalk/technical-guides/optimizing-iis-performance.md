@@ -1,14 +1,14 @@
 ---
-title: "优化 IIS 性能 |Microsoft 文档"
-ms.custom: 
+title: 优化 IIS 性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6722a2ee-3704-4aaa-9b0d-cef97bcb9a04
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976347"
 ---
 # <a name="optimizing-iis-performance"></a><span data-ttu-id="82c59-102">优化 IIS 性能</span><span class="sxs-lookup"><span data-stu-id="82c59-102">Optimizing IIS Performance</span></span>
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a><span data-ttu-id="82c59-103">应用 IIS 配置选项来提高 IIS 性能</span><span class="sxs-lookup"><span data-stu-id="82c59-103">Apply IIS configuration options to improve IIS performance</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="82c59-135">由于此属性仅可在服务器级别应用，此属性的修改会影响在服务器运行的所有网站。</span><span class="sxs-lookup"><span data-stu-id="82c59-135">Because this property can only be applied at the server level, modification of this property affects all Web sites that run on the server.</span></span>  
   
 ### <a name="tune-the-value-of-the-asp-queue-length-property"></a><span data-ttu-id="82c59-136">优化 ASP 队列长度属性的值</span><span class="sxs-lookup"><span data-stu-id="82c59-136">Tune the value of the ASP Queue Length property</span></span>  
- <span data-ttu-id="82c59-137">优化此属性的目标是确保良好的响应时间，同时最小化 ASP 请求队列已满时，服务器频率发送到客户端的 HTTP 503 （服务器太忙） 错误。</span><span class="sxs-lookup"><span data-stu-id="82c59-137">The goal of tuning this property is to ensure good response time while minimizing how often the server sends the HTTP 503 (Server Too Busy) error to clients when the ASP request queue is full.</span></span> <span data-ttu-id="82c59-138">如果 ASP 队列长度属性的值太低，则服务器将使用更高的频率发送 HTTP 503 错误。</span><span class="sxs-lookup"><span data-stu-id="82c59-138">If the value of ASP Queue Length property is too low, the server will send the HTTP 503 error with greater frequency.</span></span> <span data-ttu-id="82c59-139">如果 ASP 队列长度属性的值过高，所以用户可能会认为，服务器没有响应时实际上他们的请求正在等待队列中。</span><span class="sxs-lookup"><span data-stu-id="82c59-139">If the value of ASP Queue Length property is too high, users might perceive that the server is not responding when in fact their request is waiting in the queue.</span></span> <span data-ttu-id="82c59-140">通过在高流量期间观看队列，你应识别 web 请求高峰和低谷的模式。</span><span class="sxs-lookup"><span data-stu-id="82c59-140">By watching the queue during periods of high traffic, you should discern a pattern of web request peaks and valleys.</span></span> <span data-ttu-id="82c59-141">记下的峰值值，并设置正上方的峰值值 ASP 队列长度属性的值。</span><span class="sxs-lookup"><span data-stu-id="82c59-141">Make note of the peak value, and set the value of the ASP Queue Length property just above the peak value.</span></span> <span data-ttu-id="82c59-142">使用队列以处理短期峰值，请确保响应时间，并限制系统，从而避免重载时持续，出现意外的峰值。</span><span class="sxs-lookup"><span data-stu-id="82c59-142">Use the queue to handle short-term spikes, ensure response time, and throttle the system to avoid overload when sustained, unexpected spikes occur.</span></span> <span data-ttu-id="82c59-143">如果你没有用于调整 ASP 队列长度属性的数据，将是很好的起点将队列一对一比率设置为线程的总数。</span><span class="sxs-lookup"><span data-stu-id="82c59-143">If you do not have data for adjusting the ASP Queue Length property, a good starting point will be to set a one-to-one ratio of queues to total threads.</span></span> <span data-ttu-id="82c59-144">例如，如果每个处理器限制对线程 ASP 属性设为 25，具有四个处理器 (4 * 25 = 100 线程)，将 ASP 队列长度属性设置为 100 并从该处优化。</span><span class="sxs-lookup"><span data-stu-id="82c59-144">For example, if the ASP Threads Per Processor Limit property is set to 25 and you have four processors (4 * 25 = 100 threads), set the ASP Queue Length property to 100 and tune from there.</span></span>  
+ <span data-ttu-id="82c59-137">优化此属性的目标是确保良好的响应时间，同时最小化 ASP 请求队列已满时，服务器频率发送到客户端的 HTTP 503 （服务器太忙） 错误。</span><span class="sxs-lookup"><span data-stu-id="82c59-137">The goal of tuning this property is to ensure good response time while minimizing how often the server sends the HTTP 503 (Server Too Busy) error to clients when the ASP request queue is full.</span></span> <span data-ttu-id="82c59-138">如果 ASP 队列长度属性的值太低，则服务器将使用更高的频率发送 HTTP 503 错误。</span><span class="sxs-lookup"><span data-stu-id="82c59-138">If the value of ASP Queue Length property is too low, the server will send the HTTP 503 error with greater frequency.</span></span> <span data-ttu-id="82c59-139">如果 ASP 队列长度属性的值过高，所以用户可能会认为，服务器没有响应时实际上他们的请求正在等待队列中。</span><span class="sxs-lookup"><span data-stu-id="82c59-139">If the value of ASP Queue Length property is too high, users might perceive that the server is not responding when in fact their request is waiting in the queue.</span></span> <span data-ttu-id="82c59-140">通过在高流量期间观看队列，你应识别 web 请求高峰和低谷的模式。</span><span class="sxs-lookup"><span data-stu-id="82c59-140">By watching the queue during periods of high traffic, you should discern a pattern of web request peaks and valleys.</span></span> <span data-ttu-id="82c59-141">记下的峰值值，并设置正上方的峰值值 ASP 队列长度属性的值。</span><span class="sxs-lookup"><span data-stu-id="82c59-141">Make note of the peak value, and set the value of the ASP Queue Length property just above the peak value.</span></span> <span data-ttu-id="82c59-142">使用队列以处理短期峰值，请确保响应时间，并限制系统，从而避免重载时持续，出现意外的峰值。</span><span class="sxs-lookup"><span data-stu-id="82c59-142">Use the queue to handle short-term spikes, ensure response time, and throttle the system to avoid overload when sustained, unexpected spikes occur.</span></span> <span data-ttu-id="82c59-143">如果你没有用于调整 ASP 队列长度属性的数据，将是很好的起点将队列一对一比率设置为线程的总数。</span><span class="sxs-lookup"><span data-stu-id="82c59-143">If you do not have data for adjusting the ASP Queue Length property, a good starting point will be to set a one-to-one ratio of queues to total threads.</span></span> <span data-ttu-id="82c59-144">例如，如果每个处理器限制对线程 ASP 属性设为 25，具有四个处理器 (4 \* 25 = 100 线程)，将 ASP 队列长度属性设置为 100 并从该处优化。</span><span class="sxs-lookup"><span data-stu-id="82c59-144">For example, if the ASP Threads Per Processor Limit property is set to 25 and you have four processors (4 \* 25 = 100 threads), set the ASP Queue Length property to 100 and tune from there.</span></span>  
   
  <span data-ttu-id="82c59-145">若要增加队列长度的值属性，请按照下列步骤：</span><span class="sxs-lookup"><span data-stu-id="82c59-145">To increase the value for the Queue Length property follow these steps:</span></span>  
   

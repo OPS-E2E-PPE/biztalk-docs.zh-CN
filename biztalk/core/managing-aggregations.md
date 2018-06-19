@@ -1,17 +1,17 @@
 ---
-title: "管理聚合 |Microsoft 文档"
-ms.custom: 
+title: 管理聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
 - aggregations [BAM], managing
 ms.assetid: 54b11cec-1bc4-4c40-a8f8-9f3a40f3161f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262133"
 ---
 # <a name="managing-aggregations"></a><span data-ttu-id="ab975-102">管理聚合</span><span class="sxs-lookup"><span data-stu-id="ab975-102">Managing Aggregations</span></span>
 <span data-ttu-id="ab975-103">聚合是对派生的通常具有代表性的特征或该数据集的说明的数据集的累计操作。</span><span class="sxs-lookup"><span data-stu-id="ab975-103">Aggregations are cumulative operations against a data set to derive a generally representative characteristic or description for that data set.</span></span> <span data-ttu-id="ab975-104">本部分介绍如何管理不同的聚合，如索引、 活动和实时聚合 (Rta) 的元素。</span><span class="sxs-lookup"><span data-stu-id="ab975-104">This section describes how to manage different elements of an aggregation, such as indexes, activities, and real-time aggregations (RTAs).</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "步骤 5： 升级架构属性 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 升级架构属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, pomoted properties
 - promoted properties
 - schemas, promoted properties
 ms.assetid: cb51cece-1b65-4ba2-b8e6-ce8b6694cdb6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004470"
 ---
 # <a name="step-5-promote-schema-properties"></a><span data-ttu-id="030fb-102">步骤 5： 升级架构中的属性</span><span class="sxs-lookup"><span data-stu-id="030fb-102">Step 5: Promote Schema Properties</span></span>
 <span data-ttu-id="030fb-103">在此步骤中，升级架构中的属性，以便[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]业务流程可以引用在后续步骤中创建这些属性值。</span><span class="sxs-lookup"><span data-stu-id="030fb-103">In this step, you promote schema properties so that a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] orchestration can reference those property values that you create in later steps.</span></span> <span data-ttu-id="030fb-104">升级是一种机制，用于引用消息实例内的某个特定值，并使其能够[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]组件，例如业务流程或基于内容的路由目的。</span><span class="sxs-lookup"><span data-stu-id="030fb-104">Promotion is a mechanism that you use to reference a specific value within a message instance and make it accessible to [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] components such as orchestration or for content-based routing purposes.</span></span> <span data-ttu-id="030fb-105">此外，已提升的属性是可见的[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]IntelliSense 中的表达式编辑器[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="030fb-105">Additionally, a promoted property is visible by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] IntelliSense in the Expression Editor of [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span>  

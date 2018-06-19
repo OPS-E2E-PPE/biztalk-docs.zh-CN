@@ -1,17 +1,17 @@
 ---
-title: "使用动态数据验证 |Microsoft 文档"
-ms.custom: 
+title: 使用动态数据验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic data validation
 - validating, dynamic data
 ms.assetid: 8dac7f74-92a7-447c-97bf-b1f3ce39b614
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009038"
 ---
 # <a name="using-dynamic-data-validation"></a><span data-ttu-id="0ce6f-102">使用动态数据验证</span><span class="sxs-lookup"><span data-stu-id="0ce6f-102">Using Dynamic Data Validation</span></span>
 <span data-ttu-id="0ce6f-103">动态数据验证的一个重要部分正在验证针对动态数据，其中包括验证的消息格式和消息内容的消息内容。</span><span class="sxs-lookup"><span data-stu-id="0ce6f-103">An important part of dynamic data validation is validating message content against dynamic data, which includes validating the message format and the message content.</span></span> <span data-ttu-id="0ce6f-104">文档架构，其中[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server XSD 文件中实现、 定义和验证消息格式。</span><span class="sxs-lookup"><span data-stu-id="0ce6f-104">A document schema, which [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server implements in an XSD file, defines and validates message formats.</span></span> <span data-ttu-id="0ce6f-105">业务规则定义消息内容，其中[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过业务规则引擎策略验证。</span><span class="sxs-lookup"><span data-stu-id="0ce6f-105">Business rules define message content, which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] validates through Business Rule Engine policies.</span></span> <span data-ttu-id="0ce6f-106">内容验证可以包括确认消息实例中的数据与可能随相对频率发生变化的数据匹配。</span><span class="sxs-lookup"><span data-stu-id="0ce6f-106">Content validation can include confirmation that data in the message instance matches data that may change with relative frequency.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="0ce6f-107">[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]以动态方式实现这种类型的验证，以便你可以更新在生产环境中，此数据，而无需重新编译代码，或关闭服务。</span><span class="sxs-lookup"><span data-stu-id="0ce6f-107">[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] implements this type of validation in a dynamic manner, so that you can update this data in a production environment, without having to recompile code or shut down services.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何： 验证使用 ESB 入口的消息 |Microsoft 文档"
-ms.custom: 
+title: 如何： 验证使用 ESB 入口的消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43dfc791-7cb6-45a4-898f-f53def199c08
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009518"
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a><span data-ttu-id="92d7f-102">如何： 验证使用 ESB 入口的消息</span><span class="sxs-lookup"><span data-stu-id="92d7f-102">How to: Validate a Message Using an ESB On-Ramp</span></span>
 ## <a name="goal"></a><span data-ttu-id="92d7f-103">目的</span><span class="sxs-lookup"><span data-stu-id="92d7f-103">Goal</span></span>  

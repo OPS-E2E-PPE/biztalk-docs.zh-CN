@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 64f202316e59040a77cb04da99857e8539a184ac
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015012"
 ---
 # <a name="deployment-limitations"></a><span data-ttu-id="dcb8c-101">部署限制</span><span class="sxs-lookup"><span data-stu-id="dcb8c-101">Deployment Limitations</span></span>
 <span data-ttu-id="dcb8c-102">传输适配器密码存储为星号 (\*\*\*\*\*\*)，由 BizTalk 部署向导，导出方法并传递到所管理绑定文件中在相同的格式中的组件。</span><span class="sxs-lookup"><span data-stu-id="dcb8c-102">The Transport Adapter password is stored as asterisks (\*\*\*\*\*\*) in the binding file that is exported by BizTalk Deployment Wizard, and is passed to the management component in the same format.</span></span> <span data-ttu-id="dcb8c-103">在导入之前编辑绑定文件，将星号替换为随机的字母数字值（即，不替换为正确密码）。</span><span class="sxs-lookup"><span data-stu-id="dcb8c-103">Edit the binding file before importing by replacing the asterisks with random alphanumeric values (that is, not the correct password).</span></span> <span data-ttu-id="dcb8c-104">然后输入正确的密码使用**传输属性**后导入绑定文件页。</span><span class="sxs-lookup"><span data-stu-id="dcb8c-104">Then enter the correct password using the **Transport Properties** page after importing the binding file.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "如何列出关联应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何列出关联应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], listing applications
 - applications [SSO], listing applications
 ms.assetid: b51ff597-824e-4488-a47f-3a9b3d4437c6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974147"
 ---
 # <a name="how-to-list-affiliate-applications"></a><span data-ttu-id="cd4fd-102">如何列出关联应用程序</span><span class="sxs-lookup"><span data-stu-id="cd4fd-102">How to List Affiliate Applications</span></span>
 <span data-ttu-id="cd4fd-103">使用此命令可列出所有关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-103">Use this command to list all the affiliate applications.</span></span> <span data-ttu-id="cd4fd-104">如果用户为 Application Administrators 帐户成员，则此命令将只显示用户是其管理员的应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-104">If the user is a member of the Application Administrators account, this command will only display the application for which the user is an administrator.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="cd4fd-107">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-107">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="cd4fd-108">默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-108">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="cd4fd-109">类型**ssomanage listapps [全部]**其中**所有**是也将显示使用的配置存储功能的应用程序的可选参数。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-109">Type **ssomanage -listapps [all]** where **all** is an optional parameter that will also display applications using the Configuration Store feature.</span></span> <span data-ttu-id="cd4fd-110">如果运行此命令的用户为应用程序管理员，将只列出用户是其管理员的应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-110">If the user running this command is an Application administrator, it will only list the applications for which they are an administrator.</span></span> <span data-ttu-id="cd4fd-111">如果运行此命令的用户是关联管理员或 SSO 管理员，则将列出所有关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-111">If the user running this command is an Affiliate Administrator or an SSO Administrator, it will list all the affiliate applications.</span></span>  
+3.  <span data-ttu-id="cd4fd-109">类型**ssomanage listapps [全部]** 其中**所有**是也将显示使用的配置存储功能的应用程序的可选参数。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-109">Type **ssomanage -listapps [all]** where **all** is an optional parameter that will also display applications using the Configuration Store feature.</span></span> <span data-ttu-id="cd4fd-110">如果运行此命令的用户为应用程序管理员，将只列出用户是其管理员的应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-110">If the user running this command is an Application administrator, it will only list the applications for which they are an administrator.</span></span> <span data-ttu-id="cd4fd-111">如果运行此命令的用户是关联管理员或 SSO 管理员，则将列出所有关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-111">If the user running this command is an Affiliate Administrator or an SSO Administrator, it will list all the affiliate applications.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="cd4fd-112">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="cd4fd-112">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "MQSCorrelationSetOrchestrationWithSolicitResponse （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: MQSCorrelationSetOrchestrationWithSolicitResponse （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, examples
 - MQSeries adapters, examples
 ms.assetid: 5127d743-bb79-4e97-a2f3-446892e1bfa0
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975803"
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a><span data-ttu-id="21e4e-102">MQSCorrelationSetOrchestrationWithSolicitResponse（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="21e4e-102">MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server Sample)</span></span>
 <span data-ttu-id="21e4e-103">MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQSeries Server 而非 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的相关标识符。</span><span class="sxs-lookup"><span data-stu-id="21e4e-103">The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to use a correlation identifier produced by the MQSeries Server instead of by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="21e4e-110">如果来自 MQSeries Server 的消息在相关标识符之前到达，则使用此方法的业务流程可能出现问题。</span><span class="sxs-lookup"><span data-stu-id="21e4e-110">Orchestrations using this technique may experience problems if the message from the MQSeries Server arrives before the correlation identifier.</span></span> <span data-ttu-id="21e4e-111">确保将您的业务流程设计为允许 MQSeries Server 具有足够的时间返回相关标识符。</span><span class="sxs-lookup"><span data-stu-id="21e4e-111">Make sure that you design your orchestrations to allow enough time for the MQSeries Server to return the correlation identifier.</span></span> <span data-ttu-id="21e4e-112">此示例未考虑可能出现争用情况。</span><span class="sxs-lookup"><span data-stu-id="21e4e-112">This example does not consider this possible race condition.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="21e4e-113">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="21e4e-113">Where to Find This Sample</span></span>  
- <span data-ttu-id="21e4e-114">*\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="21e4e-114">*\<Samples Path\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span></span>  
+ <span data-ttu-id="21e4e-114">*\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="21e4e-114">*\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse</span></span>  
   
  <span data-ttu-id="21e4e-115">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="21e4e-115">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="21e4e-141">单击**启动**，指向**所有程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ 资源管理器**。</span><span class="sxs-lookup"><span data-stu-id="21e4e-141">Click **Start**, point to **All Programs**, point to **IBM WebSphere MQ**, and then click **WebSphere MQ Explorer**.</span></span>  
   
-2.  <span data-ttu-id="21e4e-142">双击**队列管理器**，然后双击默认队列管理器。</span><span class="sxs-lookup"><span data-stu-id="21e4e-142">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="21e4e-143">默认的队列管理器通常命名为**QM_***< machine_name >*其中*machine_name*是你的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="21e4e-143">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
+2.  <span data-ttu-id="21e4e-142">双击**队列管理器**，然后双击默认队列管理器。</span><span class="sxs-lookup"><span data-stu-id="21e4e-142">Double-click **Queue Managers**, and then double-click the default queue manager.</span></span> <span data-ttu-id="21e4e-143">默认的队列管理器通常命名为**QM_***< machine_name >* 其中*machine_name*是你的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="21e4e-143">The default queue manager is typically named **QM_***<machine_name>* where *machine_name* is the name of your computer.</span></span>  
   
 3.  <span data-ttu-id="21e4e-144">右键单击**队列**，指向**新建**，然后单击**本地队列**。</span><span class="sxs-lookup"><span data-stu-id="21e4e-144">Right-click **Queues**, point to **New**, and then click **Local Queue**.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "HTTP 发送适配器 |Microsoft 文档"
-ms.custom: 
+title: HTTP 发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e69308b4-421f-4d7c-b9bb-ee086df03272
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257973"
 ---
 # <a name="http-send-adapter"></a><span data-ttu-id="805eb-102">HTTP 发送适配器</span><span class="sxs-lookup"><span data-stu-id="805eb-102">HTTP Send Adapter</span></span>
 <span data-ttu-id="805eb-103">HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 获取消息，并将其发送到 HTTP POST 请求的目标 URL。</span><span class="sxs-lookup"><span data-stu-id="805eb-103">The HTTP send adapter gets messages from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and sends them to a destination URL on an HTTP POST request.</span></span> <span data-ttu-id="805eb-104">HTTP 发送适配器获取消息内容从 BizTalk 消息对象的正文部分。</span><span class="sxs-lookup"><span data-stu-id="805eb-104">The HTTP send adapter gets the message content from the body part of the BizTalk Message object.</span></span> <span data-ttu-id="805eb-105">HTTP 发送适配器将忽略所有其他对象的部分 BizTalk 消息。</span><span class="sxs-lookup"><span data-stu-id="805eb-105">The HTTP send adapter ignores all other parts of the BizTalk Message object.</span></span>  

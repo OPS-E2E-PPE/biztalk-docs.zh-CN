@@ -1,14 +1,14 @@
 ---
-title: "企业单一登录故障排除 |Microsoft 文档"
-ms.custom: 
+title: 企业单一登录故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb54af9f-a6ef-46c1-b987-2019cff3f837
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975307"
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a><span data-ttu-id="3f0ee-102">企业单一登录故障排除</span><span class="sxs-lookup"><span data-stu-id="3f0ee-102">Troubleshooting Enterprise Single Sign-On</span></span>
 <span data-ttu-id="3f0ee-103">本主题提供有关使用企业单一登录 (SSO) 时所遇到的常见问题的信息。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-103">This topic describes information about common problems you may encounter while using Enterprise Single Sign-On (SSO).</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
 |<span data-ttu-id="3f0ee-105">问题</span><span class="sxs-lookup"><span data-stu-id="3f0ee-105">Question</span></span>|<span data-ttu-id="3f0ee-106">注释</span><span class="sxs-lookup"><span data-stu-id="3f0ee-106">Comments</span></span>|  
 |--------------|--------------|  
-|<span data-ttu-id="3f0ee-107">应用程序事件日志中是否有来自 SSO 系统的任何内容？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-107">Is there anything in the Application event log from the SSO system?</span></span>|<span data-ttu-id="3f0ee-108">事件日志中的 SSO 消息可帮助您缩小 SSO 系统中问题的范围。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-108">The SSO messages in the event log can help you narrow down the problem in the SSO system.</span></span> <span data-ttu-id="3f0ee-109">SSO 系统中消息的源为 ENTSSO。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-109">The source of the messages from the SSO system is ENTSSO.</span></span> <span data-ttu-id="3f0ee-110">**重要说明：**的许多 SSO 错误和事件显示为警告在事件日志中，不为错误。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-110">**Important:**  Many of the SSO errors and events appear as Warnings in the event log, not as Errors.</span></span> <span data-ttu-id="3f0ee-111">当问题影响 SSO 服务的单个客户端时，SSO 系统生成警告，而问题影响整个 SSO 系统（所有客户端）时，则生成错误。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-111">The SSO system generates a Warning when the problem affects a single client of the SSO service, whereas it generates Errors when the problem affects the entire SSO system (all clients).</span></span>|  
+|<span data-ttu-id="3f0ee-107">应用程序事件日志中是否有来自 SSO 系统的任何内容？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-107">Is there anything in the Application event log from the SSO system?</span></span>|<span data-ttu-id="3f0ee-108">事件日志中的 SSO 消息可帮助您缩小 SSO 系统中问题的范围。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-108">The SSO messages in the event log can help you narrow down the problem in the SSO system.</span></span> <span data-ttu-id="3f0ee-109">SSO 系统中消息的源为 ENTSSO。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-109">The source of the messages from the SSO system is ENTSSO.</span></span> <span data-ttu-id="3f0ee-110">**重要说明：** 的许多 SSO 错误和事件显示为警告在事件日志中，不为错误。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-110">**Important:**  Many of the SSO errors and events appear as Warnings in the event log, not as Errors.</span></span> <span data-ttu-id="3f0ee-111">当问题影响 SSO 服务的单个客户端时，SSO 系统生成警告，而问题影响整个 SSO 系统（所有客户端）时，则生成错误。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-111">The SSO system generates a Warning when the problem affects a single client of the SSO service, whereas it generates Errors when the problem affects the entire SSO system (all clients).</span></span>|  
 |<span data-ttu-id="3f0ee-112">是否正确安装了SSO 服务？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-112">Is the SSO service installed correctly?</span></span><br /><br /> <span data-ttu-id="3f0ee-113">SSO 服务是否按预期启动？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-113">Does it start as expected?</span></span><br /><br /> <span data-ttu-id="3f0ee-114">SSO 服务在哪个服务帐户下运行？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-114">Under which service account is the SSO service running?</span></span>|<span data-ttu-id="3f0ee-115">确保 SSO 服务正确安装，并且服务帐户是 SSO 管理员组的成员。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-115">Ensure the SSO service is correctly installed, and that the service account is member of the SSO administrators group.</span></span>|  
 |<span data-ttu-id="3f0ee-116">SSO 数据库位于何处？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-116">Where is the SSO database?</span></span>|<span data-ttu-id="3f0ee-117">使用命令行 **ssoconfig -showdb**。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-117">Use the command line **ssoconfig -showdb**.</span></span> <span data-ttu-id="3f0ee-118">有关此命令的详细信息，请参阅[如何显示 SSO 数据库信息](../core/how-to-display-the-sso-database-information.md)。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-118">For more information about this command, see [How to Display the SSO Database Information](../core/how-to-display-the-sso-database-information.md).</span></span>|  
 |<span data-ttu-id="3f0ee-119">正在使用哪个 SSO 服务器？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-119">Which SSO server is being used?</span></span>|<span data-ttu-id="3f0ee-120">使用命令行 **ssomanage -showserver**。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-120">Use the command line **ssomanage -showserver**.</span></span> <span data-ttu-id="3f0ee-121">有关此命令的详细信息，请参阅[如何设置 SSO 服务器](../core/how-to-set-the-sso-server.md)。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-121">For more information about this command, see [How to Set the SSO Server](../core/how-to-set-the-sso-server.md).</span></span>|  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="3f0ee-131">从外观上看，特定关联应用程序是否正确？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-131">Does the specific affiliate application look correct?</span></span><br /><br /> <span data-ttu-id="3f0ee-132">哪些帐户在使用此关联应用程序？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-132">What accounts are using this affiliate application?</span></span>|<span data-ttu-id="3f0ee-133">使用命令行**ssomanage-displayapp***\<应用程序名称\>*。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-133">Use the command line **ssomanage –displayapp***\<application name\>*.</span></span> <span data-ttu-id="3f0ee-134">有关此命令的详细信息，请参阅[如何列出 Affiliate 应用程序属性](../core/how-to-list-the-properties-of-an-affiliate-application.md)。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-134">For more information about this command, see [How to List the Properties of an Affiliate Application](../core/how-to-list-the-properties-of-an-affiliate-application.md).</span></span>|  
 |<span data-ttu-id="3f0ee-135">此关联应用程序是否有任何映射？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-135">Are there any mappings for this affiliate application?</span></span>|<span data-ttu-id="3f0ee-136">使用命令行**ssomanage-listmappings***\<应用程序名称\>*。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-136">Use the command line **ssomanage –listmappings***\<application name\>*.</span></span> <span data-ttu-id="3f0ee-137">有关此命令的详细信息，请参阅[如何列表用户映射](../core/how-to-list-user-mappings.md)。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-137">For more information about this command, see [How to List User Mappings](../core/how-to-list-user-mappings.md).</span></span>|  
 |<span data-ttu-id="3f0ee-138">哪些帐户是 SSO 组的成员？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-138">What accounts are members of the SSO groups?</span></span>|<span data-ttu-id="3f0ee-139">验证所有 SSO 组和帐户的组成员关系。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-139">Verify the group membership for all SSO groups and accounts.</span></span>|  
-|<span data-ttu-id="3f0ee-140">SSO 服务器的 COM+ 应用程序是否按预期运行？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-140">Is the COM+ application for the SSO server running as expected?</span></span>|<span data-ttu-id="3f0ee-141">验证 SSO 服务器的 COM+ 应用程序。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-141">Verify the COM+ application SSO server.</span></span> <span data-ttu-id="3f0ee-142">**注意：**还可以检查事件日志的详细信息，如事件和警告消息。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-142">**Note:**  You can also check the event log for detailed information, such as event and warning messages.</span></span>|  
+|<span data-ttu-id="3f0ee-140">SSO 服务器的 COM+ 应用程序是否按预期运行？</span><span class="sxs-lookup"><span data-stu-id="3f0ee-140">Is the COM+ application for the SSO server running as expected?</span></span>|<span data-ttu-id="3f0ee-141">验证 SSO 服务器的 COM+ 应用程序。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-141">Verify the COM+ application SSO server.</span></span> <span data-ttu-id="3f0ee-142">**注意：** 还可以检查事件日志的详细信息，如事件和警告消息。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-142">**Note:**  You can also check the event log for detailed information, such as event and warning messages.</span></span>|  
   
 ## <a name="known-issues"></a><span data-ttu-id="3f0ee-143">已知问题</span><span class="sxs-lookup"><span data-stu-id="3f0ee-143">Known Issues</span></span>  
   

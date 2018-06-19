@@ -23,6 +23,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009206"
 ---
 # <a name="using-biztalk-adapter-tracing"></a><span data-ttu-id="b1f72-102">使用 BizTalk 适配器跟踪</span><span class="sxs-lookup"><span data-stu-id="b1f72-102">Using BizTalk Adapter Tracing</span></span>
 <span data-ttu-id="b1f72-103">本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。</span><span class="sxs-lookup"><span data-stu-id="b1f72-103">This topic describes how to install the Trace Log tool and how to enable BizTalk adapter tracing.</span></span>  
