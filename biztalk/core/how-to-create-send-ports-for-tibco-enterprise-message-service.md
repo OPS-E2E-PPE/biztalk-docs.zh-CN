@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 6b15d9d03ef967bcf7189ef756da8fc63a0eb3f6
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013676"
 ---
 # <a name="how-to-create-send-ports-for-tibco-enterprise-message-service"></a>如何创建 TIBCO Enterprise Message Service 的发送端口
 请按照以下步骤创建发送端口。  

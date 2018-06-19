@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d617a97-c165-46bb-b5a7-b66f0c1ff9f2
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014484"
 ---
 # <a name="create-tibco-rendezvous-receive-artifacts"></a>创建 TIBCO 会合接收项目
 创建通知或事件与在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中创建其他调用类似。 本部分说明如何创建用于侦听 TIBCO Rendezvous 消息的接收位置。  

@@ -1,14 +1,14 @@
 ---
-title: "更新使用的并行版本控制的架构 |Microsoft 文档"
-ms.custom: 
+title: 更新使用的并行版本控制的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7360ec5-b5e9-40c7-9a7c-965fcc95ddb0
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302237"
 ---
 # <a name="updating-a-schema-using-side-by-side-versioning"></a>更新使用的并行版本控制的架构
 你可以执行的并行使用架构的版本控制。 你可以执行以便通过将新版本的架构添加到程序集，而使现有架构 （和其版本） 升级的架构版本不变。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24013636"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤描述如何开始使用项目应用程序和单一登录 (SSO)。 有关如何使用企业单一登录的详细信息，请参阅 Microsoft 文档。  

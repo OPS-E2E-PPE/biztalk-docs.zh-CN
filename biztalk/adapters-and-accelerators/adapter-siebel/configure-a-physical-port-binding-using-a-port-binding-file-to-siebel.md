@@ -1,17 +1,17 @@
 ---
-title: "配置物理端口绑定使用的端口绑定文件，以便 Siebel |Microsoft 文档"
-ms.custom: 
+title: 配置物理端口绑定使用的端口绑定文件，以便 Siebel |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - port binding file
 - physical port binding, configuring by using a port binding file
 ms.assetid: 1758e89c-d56c-4e67-919b-c0bbb22878bf
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222605"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-siebel"></a>配置使用的端口绑定文件，以便 Siebel 的物理端口绑定
 当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]生成 Siebel 项目，以外的架构文件，元数据[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会生成端口绑定文件。 你可以将此绑定文件导入你的 BizTalk 应用程序，以创建物理发送端口。 请参阅[重用适配器绑定在 Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)。 如果你导入此绑定文件，你不需要手动创建物理发送端口。  

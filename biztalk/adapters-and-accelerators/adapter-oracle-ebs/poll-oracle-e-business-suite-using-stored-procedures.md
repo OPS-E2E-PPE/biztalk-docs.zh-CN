@@ -1,14 +1,14 @@
 ---
-title: "使用存储的过程的轮询 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 使用存储的过程的轮询 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9e89dfe-f33a-436b-94c6-be78e84d5efd
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967963"
 ---
 # <a name="poll-oracle-e-business-suite-using-stored-procedures"></a>轮询 Oracle E-business Suite 使用存储过程
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接收定期的数据更改消息通过使用存储的过程来持续轮询 Oracle 数据库。 你可以指定为适配器执行定期轮询 Oracle 数据库的轮询语句的存储的过程。  
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/28/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |Identifier|类型**接收**。|  
-    |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要说明：**因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"轮询"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleEBSBindingSchema。|  
+    |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要说明：** 因为轮询是单向操作，生成适配器的架构不包含响应节点中，并且因此没有只有一个根节点在架构中。 如果此类架构用于消息类型，必须通过生成的架构的文件名来标识的架构。<br /><br /> 例如，如果你创建双向操作的架构，架构中的节点使用文件名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到的请求架构中创建一条消息，你可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在轮询操作时，因为的唯一节点的"轮询"，它不是轻松地标识你想要映射到，因为具有单个节点的架构不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，此类架构仅的文件名按列出。 在这种情况下，唯一的方法来识别的架构是架构文件名，例如，OracleEBSBindingSchema。|  
   
      [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] GET_ACTIVITYS 的入站和出站操作存储过程生成架构。 入站操作，必须使用架构：  
   

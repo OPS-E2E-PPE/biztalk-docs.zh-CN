@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25969499"
 ---
 # <a name="how-to-audit-sso"></a>如何审核 SSO
 可以使用 MMC 管理单元中或命令行设置这两种正值和负值审核级别。 审核的结果存储在事件日志和审核日志中的数据库。  
@@ -69,18 +70,18 @@ ms.lasthandoff: 04/20/2018
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoconfig-auditlevel\<正\>\<负\>**，其中**\<正\>**是的级别审核操作成功，和**\<负\>**是审核操作失败时的级别。  
+3.  类型**ssoconfig-auditlevel\<正\>\<负\>**，其中**\<正\>** 是的级别审核操作成功，和**\<负\>** 是审核操作失败时的级别。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-audit-the-sso-database"></a>若要审核的 SSO 数据库  
   
-1.  依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。  
+1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>**是路径和文件的名称。  
+3.  类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>** 是路径和文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

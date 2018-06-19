@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222077"
 ---
 # <a name="siebel-adapter-tutorials"></a>Siebel 适配器教程
 中的第一个[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]教程包含如何在 Microsoft SharePoint 门户网站上显示从 Siebel 系统的数据的分步演示。 第二个[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]教程包含有关如何迁移 BizTalk 项目创建使用以前版本的 Siebel 适配器以使用基于 WCF 的详细的说明[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  

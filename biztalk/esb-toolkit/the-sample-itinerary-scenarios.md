@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22297181"
 ---
 # <a name="the-sample-itinerary-scenarios"></a>示例路线方案
 下表列出路线入口示例中包含的所有预定义的路线文件。 这些位于 \Source\Samples\Itinerary\Itineraries 文件夹中。  

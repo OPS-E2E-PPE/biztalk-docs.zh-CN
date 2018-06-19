@@ -1,14 +1,14 @@
 ---
-title: "将 Oracle 数据库适配器添加到 BizTalk Server 管理控制台 |Microsoft 文档"
-ms.custom: 
+title: 将 Oracle 数据库适配器添加到 BizTalk Server 管理控制台 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d71e161-addc-47d4-9103-3655f3fb0b0d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214989"
 ---
 # <a name="adding-the-oracle-database-adapter-to-biztalk-server-administration-console"></a>将 Oracle 数据库适配器添加到 BizTalk Server 管理控制台
 本主题将说明了如何将添加到 WCF OracleDB 适配器[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  

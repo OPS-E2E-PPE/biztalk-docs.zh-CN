@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014300"
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a>设置 JD Edwards EnterpriseOne 传输属性
 JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属性**对话框中，你设置的连接和凭据参数特定于服务器系统和你尝试访问的对象。  
@@ -28,7 +29,7 @@ JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属�
   
 4.  下**常规**中**传输类型**框中，选择**JDE EnterpriseOne**下拉列表中。  
   
-5.  在**地址 (URI)**属性，单击省略号 (**...**).  
+5.  在**地址 (URI)** 属性，单击省略号 (**...**).  
   
      **JDE EnterpriseOne 传输属性**对话框随即出现。  
   

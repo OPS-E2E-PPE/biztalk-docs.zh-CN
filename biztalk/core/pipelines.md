@@ -1,11 +1,11 @@
 ---
-title: "管道 |Microsoft 文档"
-ms.custom: 
+title: 管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - pipelines, send pipelines
 - receive pipelines, stages
 ms.assetid: 76947dd8-728a-4fa3-bd33-7a708ae82cac
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265269"
 ---
 # <a name="pipelines"></a>管道
 管道是 Microsoft BizTalk Server 的组件，用于提供管道和筛选器集成模式的实现方式。 在接收和发送消息的过程中，由于业务原因，需要对消息执行转换，以便为其进入或离开 BizTalk Server 做准备。  

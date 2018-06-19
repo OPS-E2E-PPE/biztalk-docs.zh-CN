@@ -1,14 +1,14 @@
 ---
-title: "接收以增量方式使用 BizTalk Server 的 Oracle 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收以增量方式使用 BizTalk Server 的 Oracle 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 17cef39f-a1aa-4f46-993f-620008f3890d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967323"
 ---
 # <a name="receive-oracle-database-change-notifications-incrementally-using-biztalk-server"></a>接收以增量方式使用 BizTalk Server 的 Oracle 数据库更改通知
 > [!IMPORTANT]
@@ -265,8 +266,8 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
         |绑定属性|值|  
         |----------------------|-----------|  
         |**InboundOperationType**|将其设置为**通知**。|  
-        |**NotificationPort**|指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。 将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。<br /><br /> **重要说明：**如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。|  
-        |**NotificationStatement**|将其设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注意：**必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
+        |**NotificationPort**|指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。 将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。<br /><br /> **重要说明：** 如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。|  
+        |**NotificationStatement**|将其设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注意：** 必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
         |**NotifyOnListenerStart**|将其设置为**True**。|  
   
          有关不同的绑定属性的详细信息，请参阅[Oracle 数据库绑定属性的使用 BizTalk Adapter](https://msdn.microsoft.com/library/dd788467.aspx)。  

@@ -1,17 +1,17 @@
 ---
-title: "BAM DTS 包 |Microsoft 文档"
-ms.custom: 
+title: BAM DTS 包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DTS packages, BAM
 - BAM, DTS packages
 ms.assetid: bba70d81-6ddf-4f1f-a1f7-d5a5bf453bae
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965059"
 ---
 # <a name="bam-dts-packages"></a>BAM DTS 包
 管理员可以更新以下 BAM DTS 包的参数：  

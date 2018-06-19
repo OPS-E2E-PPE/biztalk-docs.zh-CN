@@ -1,14 +1,14 @@
 ---
-title: "ESB 路线的选择器组件 |Microsoft 文档"
-ms.custom: 
+title: ESB 路线的选择器组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2cd8a85-e036-4817-9541-3fd720ca04ef
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295149"
 ---
 # <a name="the-esb-itinerary-selector-component"></a>ESB 路线的选择器组件
 ESB 路线选择器组件允许没有路线 SOAP 标头来通过 ESB，通过选择冲突解决程序的帮助消息相应服务器端路线的传入消息。 组件还用于使用 SOAP 标头来定义的名称和版本的一条路线，如客户端请求的消息。  

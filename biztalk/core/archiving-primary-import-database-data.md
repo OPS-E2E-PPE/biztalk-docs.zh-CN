@@ -1,11 +1,11 @@
 ---
-title: "将主导入数据库数据存档 |Microsoft 文档"
-ms.custom: 
+title: 将主导入数据库数据存档 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Primary Import database [BAM], archiving data
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [BAM], archiving data
 - data, archiving [BAM]
 ms.assetid: 4a014a59-0578-41fa-9441-8b582f54bbe8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230413"
 ---
 # <a name="archiving-primary-import-database-data"></a>将主导入数据库数据存档
 管理员可以指定存档主导入数据库中的活动实例数据的时段。 您可以在 BAMPrimaryImport 数据库的 BAM_Metadata_Activities 表中使用 OnlineWindowTimeUnit 和 OnlineWindowTimeLength 属性。  

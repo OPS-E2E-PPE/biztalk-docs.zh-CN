@@ -1,17 +1,17 @@
 ---
-title: "将证书添加到服务器上的证书存储 |Microsoft 文档"
-ms.custom: 
+title: 将证书添加到服务器上的证书存储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, adding to certificates store
 - certificates store
 ms.assetid: 075cfae8-dce7-46f7-9539-796f03229ea2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209565"
 ---
 # <a name="adding-certificates-to-the-certificates-store-on-the-server"></a>将证书添加到服务器上的证书存储
 使用以下步骤将证书添加到服务器计算机上的证书 （本地计算机） 存储中的其他人文件夹。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  如果您还有 MMC 窗口中打开从前面的过程 （向客户端上的证书存储的添加证书），你可以将其用于此过程。  
   
-2.  在管理控制台窗口中，展开**证书 （本地计算机）**文件夹，然后展开**其他人**。  
+2.  在管理控制台窗口中，展开**证书 （本地计算机）** 文件夹，然后展开**其他人**。  
   
 3.  右键单击**证书**，指向**所有任务**，然后单击**导入**。  
   

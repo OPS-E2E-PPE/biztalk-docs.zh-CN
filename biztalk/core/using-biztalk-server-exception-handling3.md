@@ -1,14 +1,14 @@
 ---
-title: "使用 BizTalk Server 异常 Handling3 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk Server 异常 Handling3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9441e884-1de9-45d6-982b-911fc06b9d5c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014940"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 

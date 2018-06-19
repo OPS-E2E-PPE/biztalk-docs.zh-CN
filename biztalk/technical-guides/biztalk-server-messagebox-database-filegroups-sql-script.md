@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server MessageBox 数据库文件组的 SQL 脚本 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server MessageBox 数据库文件组的 SQL 脚本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af4fe437-41ca-46c1-90eb-a28ed73312b6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300541"
 ---
 # <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a>BizTalk Server MessageBox 数据库文件组的 SQL 脚本
 本主题提供了可以在 BizTalk Server 环境以创建多个文件和文件组 BizTalk MessageBox 数据库的 SQL Server 实例运行的 SQL 脚本。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 >   
 >      -   如果在安装 BizTalk Server 修补程序或服务包运行**msgboxlogic.sql**，你将需要再次运行 MessageBox 数据库文件组的 SQL 脚本。 这是必需的因为 msgboxlogic.sql 恢复 MessageBox 文件组和文件为默认设置，即使用主文件组。 若要确定是否修补程序或服务包运行 msgboxlogic.sql，检查**文件信息**修补程序 KB 文章的部分。 或检查 setup.xml 文件都包含在服务包文件。  
 >     -   如果你添加到 BizTalk Server 组的新主机，你将需要再次运行 MessageBox 数据库文件组的 SQL 脚本。 这是必需的因为创建新主机的存储的过程配置要默认情况下使用的主文件组的主机的表。  
-> 2.  **应用 MessageBox 多 MessageBox 环境中的数据库文件组 SQL 脚本：**但不是一种要求，可针对在多 Messagebox 环境中的每个消息框执行 MessageBox 数据库文件组的 SQL 脚本。  
+> 2.  **应用 MessageBox 多 MessageBox 环境中的数据库文件组 SQL 脚本：** 但不是一种要求，可针对在多 Messagebox 环境中的每个消息框执行 MessageBox 数据库文件组的 SQL 脚本。  
   
 ## <a name="biztalk-messagebox-database-filegroups-sql-script"></a>BizTalk MessageBox 数据库文件组的 SQL 脚本  
  可以使用以下 SQL 脚本来创建多个文件和文件组主题中所述[Databases2 优化文件组](../technical-guides/optimizing-filegroups-for-the-databases2.md)。  

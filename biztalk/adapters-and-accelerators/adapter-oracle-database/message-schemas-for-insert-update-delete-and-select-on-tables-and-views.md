@@ -1,11 +1,11 @@
 ---
-title: "对于基本 Insert、 Update、 Delete 消息架构，然后选择表和视图上的操作 |Microsoft 文档"
-ms.custom: 
+title: 对于基本 Insert、 Update、 Delete 消息架构，然后选择表和视图上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations on tables, message actions for
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - table operations, message schemas for
 - operations on tables, message structure for
 ms.assetid: 8228d5e6-14af-49e0-b34b-be03aea59189
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215997"
 ---
 # <a name="message-schemas-for-the-basic-insert-update-delete-and-select-operations-on-tables-and-views"></a>消息架构的基本的插入、 更新、 删除和选择表和视图上的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]曲面基本插入、 更新，删除，并选择操作为每个表，然后查看 Oracle 数据库中。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]这些操作中使用强类型的记录和记录集。  

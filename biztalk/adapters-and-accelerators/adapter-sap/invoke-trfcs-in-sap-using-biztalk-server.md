@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967939"
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a>调用 tRFCs SAP 使用 BizTalk Server 中
 事务性远程函数调用 (tRFCs) 保证 RFC SAP 系统上的一个且仅有一个时间执行。 你可以调用任何显示的 Rfc[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为 tRFC。 调用 tRFC 是类似于调用 RFC (请参阅[调用中使用 BizTalk server 的 SAP 的 Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md)) 具有以下差异：  
@@ -258,7 +259,7 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
     ```  
   
 > [!NOTE]
->  你可以使用**ConvertGuidToTid()**由要映射到 GUID 的 SAP 系统中检索 TID 的 SAP 适配器程序集公开的公共方法。 有关详细信息，请参阅[特殊操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)。  
+>  你可以使用**ConvertGuidToTid()** 由要映射到 GUID 的 SAP 系统中检索 TID 的 SAP 适配器程序集公开的公共方法。 有关详细信息，请参阅[特殊操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)。  
   
 ## <a name="possible-exceptions"></a>可能的异常  
  使用 BizTalk Server SAP 系统中调用 tRFC 时可能遇到的异常的信息，请参阅[异常和错误处理与 SAP 适配器](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)。  

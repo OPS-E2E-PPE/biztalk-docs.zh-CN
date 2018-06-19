@@ -1,14 +1,14 @@
 ---
-title: "灾难恢复 |Microsoft 文档"
-ms.custom: 
+title: 灾难恢复 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 729b3aa0-79dd-4e36-ac5c-4e733afe4156
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297629"
 ---
 # <a name="disaster-recovery"></a>灾难恢复
 灾难恢复过程通过采用的步骤可恢复失败的系统操作来提高系统可用性。 灾难恢复与不同的容错能力的灾难恢复通常需要手动干预来还原发生故障的系统，而容错的设计可以继续操作而无需手动干预，如果系统遇到故障条件。  

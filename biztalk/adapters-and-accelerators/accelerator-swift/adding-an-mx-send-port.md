@@ -1,14 +1,14 @@
 ---
-title: "添加 MX 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 添加 MX 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3ad5d2f-1fcb-49d4-9974-664733308f45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208909"
 ---
 # <a name="adding-an-mx-send-port"></a>添加 MX 发送端口
 **若要添加 MX 发送端口：**  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  在中，浏览文件夹对话框中，选择文件位置。  
   
-7.  在文件名框中，键入**%MessageID%.xml**，然后单击**确定**。  
+7.  在文件名框中，键入 **%MessageID%.xml**，然后单击**确定**。  
   
 8.  在发送端口属性对话框中，单击发送管道框中的下拉列表，然后选择管道项目中的发送管道已部署。  
   

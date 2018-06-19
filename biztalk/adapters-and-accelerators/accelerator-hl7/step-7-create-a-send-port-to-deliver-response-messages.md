@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207077"
 ---
 # <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>步骤 7： 创建发送端口将响应消息传递
 在此步骤中，创建要将传送回许可、 放电和传输 (ADT) 的查询响应的发送端口系统。  

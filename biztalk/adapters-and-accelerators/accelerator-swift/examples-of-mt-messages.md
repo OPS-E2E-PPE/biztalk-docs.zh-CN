@@ -1,14 +1,14 @@
 ---
-title: "MT 消息的示例 |Microsoft 文档"
-ms.custom: 
+title: MT 消息的示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 629042cc-b941-4c58-b0dd-ede056caf573
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208885"
 ---
 # <a name="examples-of-mt-messages"></a>MT 消息的示例
 **用于生成不同 MT 消息的解决方案 （InfoPath 表单模板） 的命令：**  

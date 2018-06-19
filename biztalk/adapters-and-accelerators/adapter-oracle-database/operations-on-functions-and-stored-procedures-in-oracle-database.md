@@ -1,11 +1,11 @@
 ---
-title: "对函数和 Oracle 数据库中的存储的过程的操作 |Microsoft 文档"
-ms.custom: 
+title: 对函数和 Oracle 数据库中的存储的过程的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - REF CURSOR
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - RECORD type
 - overloaded functions and procedures
 ms.assetid: 18072b58-65b2-4da5-9433-ea0da4e2d4f4
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214949"
 ---
 # <a name="operations-on-functions-and-stored-procedures-in-oracle-database"></a>对函数和 Oracle 数据库中的存储的过程的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]按以下方式支持 Oracle 函数、 过程和包：  

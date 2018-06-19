@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/using-tibco-rendezvous-receive-ports-from-biztalk-server/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b1738a0933b5f570edfd882778e50ebf7e2ca730
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013524"
 ---
 # <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>使用来自 TIBCO Rendezvous 的 BizTalk Server 以接收消息
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器从队列中调度多个线程上的事件。 BizTalk Server 接收位置与一个 TIBCO Rendezvous 事件队列及其调度程序线程池关联。  

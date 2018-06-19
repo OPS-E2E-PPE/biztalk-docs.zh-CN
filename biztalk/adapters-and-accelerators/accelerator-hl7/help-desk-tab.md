@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204853"
 ---
 # <a name="help-desk-tab"></a>帮助支持选项卡
 使用技术支持选项卡来输入有关目标或源方的数据。 在技术支持选项卡中具有方信息是如果没有生成任何错误，很有帮助，你需要联系方。 如果在消息中没有错误，方信息将在确认消息。  

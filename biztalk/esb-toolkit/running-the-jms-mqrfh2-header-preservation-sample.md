@@ -1,14 +1,14 @@
 ---
-title: "运行 JMS MQRFH2 标头保留示例 |Microsoft 文档"
-ms.custom: 
+title: 运行 JMS MQRFH2 标头保留示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65982dca-77e1-4267-9528-26c59237e9b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295125"
 ---
 # <a name="running-the-jms-mqrfh2-header-preservation-sample"></a>运行 JMS MQRFH2 标头保留示例
 此示例的这一部分内存一条消息放入 WebSphere 队列。 ESB 拾取此消息，并放到出站 WebSphere 队列。 此示例演示，ESB 和 Microsoft BizTalk 保留完全保真的 RFH2 标头为消息的传输时通过 BizTalk Server。  
@@ -53,4 +54,4 @@ ms.lasthandoff: 09/20/2017
   
 9. 在延迟后时应用程序执行，ESB 输出消息会出现在 ESB。JMS。示例。DYNAMICQ1 和 ESB。JMS。示例。DYNAMICQ1 队列。 打开 WebSphere 队列资源管理器并浏览队列为确认这一点。  
   
-10. 返回到 RfhUtil 实用工具并连接到的队列以查看消息。 单击**MQMD、 RFH，**和**jms**选项卡以验证输入和输出值是否为目标队列中的消息不变并回复队列中的消息是相同除外，而不是标准的 JMS 消息，该消息标记为"其他"。
+10. 返回到 RfhUtil 实用工具并连接到的队列以查看消息。 单击**MQMD、 RFH，** 和**jms**选项卡以验证输入和输出值是否为目标队列中的消息不变并回复队列中的消息是相同除外，而不是标准的 JMS 消息，该消息标记为"其他"。

@@ -1,14 +1,14 @@
 ---
-title: "优化流式处理的内存使用情况 |Microsoft 文档"
-ms.custom: 
+title: 优化流式处理的内存使用情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8ba8820-65b4-4161-9f7a-3ae3d39e3d11
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299341"
 ---
 # <a name="optimizing-memory-usage-with-streaming"></a>优化流式处理的内存使用情况
 本主题提供使用流式处理模式以最大程度减少消息内存空间占用量时发送或接收大消息的 WCF 传输或加载在业务流程中的消息时的建议。   
@@ -169,7 +170,7 @@ ms.lasthandoff: 09/20/2017
     ```  
   
 > [!NOTE]  
->  利用**dispose （)**从.NET 代码返回前由 XLANGMessage 参数公开的方法是特别重要循环方案和长时间运行业务流程可以累积的实例而不释放它们随着时间的推移 XLANGMessage 对象。 调用消息有关的详细信息。Dispose （） 以这种方式，请参阅[消息表示为 XLANGMessage](http://go.microsoft.com/fwlink/?LinkId=139775) (http://go.microsoft.com/fwlink/?LinkId=139775) BizTalk Server 文档中。 本主题还提供使用 IStreamFactory 构造 XLANGMessage 变量在用户代码中使用一种基于流的方法的最佳实践。  
+>  利用**dispose （)** 从.NET 代码返回前由 XLANGMessage 参数公开的方法是特别重要循环方案和长时间运行业务流程可以累积的实例而不释放它们随着时间的推移 XLANGMessage 对象。 调用消息有关的详细信息。Dispose （） 以这种方式，请参阅[消息表示为 XLANGMessage](http://go.microsoft.com/fwlink/?LinkId=139775) (http://go.microsoft.com/fwlink/?LinkId=139775) BizTalk Server 文档中。 本主题还提供使用 IStreamFactory 构造 XLANGMessage 变量在用户代码中使用一种基于流的方法的最佳实践。  
   
  有关处理 XLANGMessage 由业务流程调用帮助器组件中的不同方法的详细信息，请参阅以下主题：  
   

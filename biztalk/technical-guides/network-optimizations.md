@@ -1,14 +1,14 @@
 ---
-title: "网络优化 |Microsoft 文档"
-ms.custom: 
+title: 网络优化 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ff0392f-37ae-4ca6-8cc6-d53065de64c5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298757"
 ---
 # <a name="network-optimizations"></a>网络优化
 在 BizTalk Server 环境中的 BizTalk Server 计算机都独立于 SQL Server 计算机，BizTalk 服务器处理的每个消息无需通过网络通信。 这种通信包括相当大的 BizTalk Server 计算机和 BizTalk 消息框数据库、 BizTalk 管理数据库、 BAM 数据库和其他数据库之间的流量。 在高负载情况下，此通信可能会导致大量网络流量，尤其是在网络设置未经过优化，没有足够的网络接口卡已安装，或足够的网络带宽可能成为瓶颈，可用。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  之后关闭虚拟机，右键单击虚拟机，然后依次**设置**若要更改虚拟机的设置。  
   
-6.  在**< machine_name > 设置**对话框中，在**添加硬件**，单击以选择**网络适配器**，然后单击**添加**.  
+6.  在 **< machine_name > 设置**对话框中，在**添加硬件**，单击以选择**网络适配器**，然后单击**添加**.  
   
 7.  上**网络适配器**配置页上，在**网络：**，选择你以前创建的专用虚拟网络，然后单击**确定**。 你现在已专用虚拟网络提供到 HYPER-V 虚拟机将可访问下次启动虚拟机。  
   

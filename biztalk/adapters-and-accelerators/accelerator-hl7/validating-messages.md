@@ -1,11 +1,11 @@
 ---
-title: "验证消息 |Microsoft 文档"
-ms.custom: 
+title: 验证消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, acknowledgements
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - acknowledgements, messages
 - messages, validating
 ms.assetid: 7dba0f40-5e19-4598-82cb-22c71e9536c6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206885"
 ---
 # <a name="validating-messages"></a>验证消息
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持从应用程序的入站消息发送确认 (ACK) 或贸易合作伙伴可能需要转换为 HL7 HL7 XML 回执形式 ACK 消息编码。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]它签入相关入站 （贸易合作伙伴格式） 文档规范针对入站的消息后，通常会生成回执。 当所有段都通过验证，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]返回回执，该值指示对应用程序接受。 否则为[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]生成，该值指示错误或失败/拒绝回执。  

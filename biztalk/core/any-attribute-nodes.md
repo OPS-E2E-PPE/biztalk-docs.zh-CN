@@ -1,14 +1,14 @@
 ---
-title: "任何属性节点 |Microsoft 文档"
-ms.custom: 
+title: 任何属性节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa2d25bc-3a8f-4fd9-acad-341b8e80c737
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964643"
 ---
 # <a name="any-attribute-nodes"></a>“任何属性”节点
 在 BizTalk 编辑器中，你可以使用**任何属性**节点以指示可能出现零个或多个未知的属性实例消息中 （已知） 元素。 这适用于以下情况：您知道某特定元素将存在于实例消息中的特定位置，但您不十分确定该元素可能包含哪些属性。 如果你将放置**任何属性**中的节点**记录**的相关元素与关联的节点，BizTalk 可以处理该元素，与正在任何关联的属性，唯一的要求语法更正 (attributeName ="attributeValue")。  

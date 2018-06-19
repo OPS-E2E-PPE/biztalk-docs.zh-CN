@@ -1,11 +1,11 @@
 ---
-title: "将架构导入到 BizTalk Server Projects1 |Microsoft 文档"
-ms.custom: 
+title: 将架构导入到 BizTalk Server Projects1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, importing into BizTalk Server
 - orchestration types, port types
 ms.assetid: fa640195-a735-4201-a893-48f3405ddcb5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015444"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>将架构导入到 BizTalk Server 项目
 以下信息介绍如何将架构导入到 BizTalk Server 项目中。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  单击**添加适配器**，然后选择**打开**。  
   
-3.  选择的适配器**，参考Edwards OneWorld XE**。  
+3.  选择的适配器 **，参考Edwards OneWorld XE**。  
   
 4.  在下拉列表中，选择的端口**SSOSendToJD Edwards OneWorld XE**，然后单击**下一步**。  
   

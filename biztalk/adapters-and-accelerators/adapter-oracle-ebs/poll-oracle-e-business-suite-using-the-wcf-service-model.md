@@ -1,14 +1,14 @@
 ---
-title: "轮询 Oracle E-business Suite 使用的是 WCF 服务模型 |Microsoft 文档"
-ms.custom: 
+title: 轮询 Oracle E-business Suite 使用的是 WCF 服务模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96670a39-4fec-49bf-85d1-947b1a1bc750
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215109"
 ---
 # <a name="poll-oracle-e-business-suite-using-the-wcf-service-model"></a>使用 WCF 服务模型的轮询 Oracle E-business Suite
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle 数据库接收基于轮询的消息。 适配器提供轮询 Oracle 数据库的两种的方法：  

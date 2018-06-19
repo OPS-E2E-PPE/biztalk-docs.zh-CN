@@ -1,14 +1,14 @@
 ---
-title: "清单： 测试操作的准备情况 |Microsoft 文档"
-ms.custom: 
+title: 清单： 测试操作的准备情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecdf2609-ba77-4756-a949-ab4e10c54313
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299269"
 ---
 # <a name="checklist-testing-operational-readiness"></a>清单： 测试操作的准备情况
 对操作的准备情况测试是非常小执行或经常被忽视的重要过程。 彻底的测试是一项关键要求的任何企业级别的应用程序，并使用一个解决方案开发[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]也不例外。 至少，你应执行以下测试的将 BizTalk 解决方案移到生产环境之前：  

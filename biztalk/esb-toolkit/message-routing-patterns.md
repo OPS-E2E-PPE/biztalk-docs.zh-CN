@@ -1,14 +1,14 @@
 ---
-title: "消息路由模式 |Microsoft 文档"
-ms.custom: 
+title: 消息路由模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d95c5ba0-122f-4793-bfce-a95830dfe094
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296885"
 ---
 # <a name="message-routing-patterns"></a>消息路由模式
 消息路由模式定义消息路由到其目标终结点的经验证的准则。 路由可以是静态配置的结果，也可以将它动态配置基于许多条件和使用多种方法。  

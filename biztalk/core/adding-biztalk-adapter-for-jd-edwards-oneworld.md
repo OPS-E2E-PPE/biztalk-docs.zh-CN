@@ -1,15 +1,15 @@
 ---
-title: "为博士 Edwards OneWorld 添加 BizTalk 适配器 |Microsoft 文档"
-description: "将博士 Edwards OneWorld 添加到 BizTalk 管理、 创建发送端口、 配置传输属性中，和在 BizTalk Server 中使用博士 Edwards OneWorld 适配器时使用 XMLReceive 和 XMLTransmit 管道"
-ms.custom: 
+title: 为博士 Edwards OneWorld 添加 BizTalk 适配器 |Microsoft 文档
+description: 将博士 Edwards OneWorld 添加到 BizTalk 管理、 创建发送端口、 配置传输属性中，和在 BizTalk Server 中使用博士 Edwards OneWorld 适配器时使用 XMLReceive 和 XMLTransmit 管道
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03126f4e-9156-4c0c-ab5c-0627f0c05263
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014252"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>在 BizTalk 管理中配置博士 Edwards EnterpriseOne 项目
 适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器包含“接收处理程序”文件夹和“发送处理程序”文件夹。 “发送处理程序”文件夹包含 BizTalkServerApplication。 适用于 JD Edwards OneWorld 的 BizTalk 适配器是可以创建的，它在与 BizTalk 服务器相关的进程中运行，而不在隔离的主机进程中运行。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  设置 SQL 连接参数。  
   
-    -   **定义 SQL 数据库参数-**的 SQL Server 名称和数据库是那些在安装设置。 在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。  
+    -   **定义 SQL 数据库参数-** 的 SQL Server 名称和数据库是那些在安装设置。 在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。  
   
 5.  选择**关闭**退出**逻辑系统**窗口。  
   

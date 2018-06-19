@@ -1,14 +1,14 @@
 ---
-title: "最佳做法，避免瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 最佳做法，避免瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81da2e31-dce0-43fb-841f-e65ff99e80a7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299661"
 ---
 # <a name="best-practices-for-avoiding-bottlenecks"></a>为避免瓶颈的最佳做法
 虽然 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的默认设置可为许多硬件和软件配置提供最佳性能，但在某些情况下修改这些设置或部署配置可能更为有利。 配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，请参考下列性能指南：  

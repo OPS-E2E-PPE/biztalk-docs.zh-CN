@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206037"
 ---
 # <a name="preparing-to-use-the-batching-tutorial"></a>准备使用批处理教程
 你可以使用批处理教程之前，必须执行本节中的任务。  

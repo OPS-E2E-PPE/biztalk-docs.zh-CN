@@ -1,18 +1,18 @@
 ---
-title: "MLLP 发送适配器处理 |Microsoft 文档"
-ms.custom: 
+title: MLLP 发送适配器处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MLLP-encoded messages, send adapters
 - send adapters
 - MLLP adapters, send adapters
 ms.assetid: b8e47c7f-4a69-4f0c-86b4-26ed9c70613c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207525"
 ---
 # <a name="mllp-send-adapter-processing"></a>MLLP 发送适配器处理
 最小较低层协议 (MLLP) 发送适配器支持下列配置中的单向和双向传输模式：  

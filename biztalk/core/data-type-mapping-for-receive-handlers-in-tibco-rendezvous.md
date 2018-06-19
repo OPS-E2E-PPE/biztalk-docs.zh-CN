@@ -1,14 +1,14 @@
 ---
-title: "数据类型映射，以接收来自 TIBCO 会合 |Microsoft 文档"
-ms.custom: 
+title: 数据类型映射，以接收来自 TIBCO 会合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36908a94-3c0d-466e-aa49-f674ba4a26af
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014660"
 ---
 # <a name="data-type-mapping-for-receive-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous 中用于接收处理程序的数据类型映射
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器将 TIBCO RV 类型映射到 XML 架构类型，如下表中指定。  

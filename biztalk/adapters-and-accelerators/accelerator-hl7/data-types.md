@@ -1,17 +1,17 @@
 ---
-title: "数据类型 |Microsoft 文档"
-ms.custom: 
+title: 数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data types, messages
 - messages, data types
 ms.assetid: 7a758289-1629-48a0-843d-6f6773bd5ba6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204941"
 ---
 # <a name="data-types"></a>数据类型
 数据类型规范是重要工具，用于分区的 HL7 标准，复杂性，并了解 HL7 字段的数据内容至关重要。 某些数据类型是简单和包含只有一个组件，并且一些包含许多组件和子组件。 例如，PID.5 患者名称具有数据类型在版本 2.4 的 XPN。 此数据类型支持常见的细分。 一个英语语言的名称，例如，姓氏、 名字、 中间名，以及后缀，前缀，名称类型代码和名称的有效性 （日期） 范围。  

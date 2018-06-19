@@ -1,18 +1,18 @@
 ---
-title: "如何创建发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何创建发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send port groups
 - send port groups, creating
 - managing [send port groups], creating
 ms.assetid: de3e72aa-83f4-4760-9f39-a488f904f1d3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970363"
 ---
 # <a name="how-to-create-a-send-port-group"></a>如何创建发送端口组
 本主题介绍如何使用 BizTalk Server 管理控制台在 BizTalk 应用程序中创建发送端口组，然后向其中添加发送端口。 仅向发送端口组，可以添加静态单向发送端口。 若要路由消息，发送端口组必须至少包含一个发送端口。  

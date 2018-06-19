@@ -1,14 +1,14 @@
 ---
-title: "将连接到使用适配器服务外接程序中使用的 Visual Studio 中的 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 将连接到使用适配器服务外接程序中使用的 Visual Studio 中的 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62d60216-5065-4048-b073-8618b7685e00
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217149"
 ---
 # <a name="connect-to-oracle-e-business-suite-in-visual-studio-using-consume-adapter-service-add-in"></a>将连接到使用适配器服务外接程序中使用的 Visual Studio 中的 Oracle E-business Suite
 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]安装时安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]加载在计算机上安装的所有 WCF 自定义绑定。 以连接到 Oracle E-business Suite 使用基于 WCF 的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]在 BizTalk 项目，你必须使用**oracleEBSBinding**。  

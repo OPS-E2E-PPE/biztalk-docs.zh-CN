@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8056ced6-1f04-4be2-878a-48a427a93dad
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302637"
 ---
 # <a name="step-5-perform-step-load-pattern-tests-to-determine-maximum-sustainable-throughput"></a>步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量
 确定 BizTalk Server 解决方案与 Visual Studio 负载测试的最大可持续吞吐量 (MST) 的最简单方法是执行分级负载模式并比较每秒到每秒处理的总文档接收的总文档. 只要每秒处理的平均总文档是大于或等于每秒的测试的持续时间接收的平均总文档，然后考虑负载可持续。 如果每个接收的总文档的平均值第二个是大于每秒的测试持续时间内处理的平均总文档则负载不会被视为可持续的并且这将出现的值中的相应增长BizTalk:Message Box: General Counters\Spool 大小计数器。 随着时间推移，当 BizTalk 服务器应用程序收到多个文档不是它可以处理，未处理的文档将累积在 MessageBox 数据库中，将最终引入限制条件，并大幅降低性能BizTalk Server 应用程序。  

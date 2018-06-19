@@ -1,14 +1,14 @@
 ---
-title: "低特权环境 |Microsoft 文档"
-ms.custom: 
+title: 低特权环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: abdc45d0-b63a-4b6c-80c4-1f8e87644cd9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298293"
 ---
 # <a name="low-privilege-environments"></a>低特权环境
 附带的多个工作流[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包需要提升的权限才能执行某些操作。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包，可在低特权环境中执行基本的监视功能。 有两个管理角色： BizTalk 服务器管理员和 BizTalk Server 运算符。 BizTalk Server 管理员是高权限角色，有权访问配置数据和跟踪数据。 BizTalk 服务器管理员可以执行所有关键管理任务，此类登记和启动项目。 BizTalk Server 操作员是低权限角色，仅有权执行监视操作和排除故障操作。 有关详细信息，请参阅[最低安全用户权限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)。  

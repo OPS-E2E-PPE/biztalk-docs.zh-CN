@@ -1,14 +1,14 @@
 ---
-title: "创建与 Oracle E-business Suite 的连接 |Microsoft 文档"
-ms.custom: 
+title: 创建与 Oracle E-business Suite 的连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eeeab604-155e-4806-b77a-45319a3f8cc0
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216573"
 ---
 # <a name="create-a-connection-to-oracle-e-business-suite"></a>创建与 Oracle E-business Suite 的连接
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它使到 Oracle E-business Suite 通过 WCF 终结点地址的通信。 在 WCF 中的终结点地址标识服务的网络位置，并通常表示为统一资源标识符 (URI)。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]表示此位置作为连接 URI，其中包含属性的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]用于建立与 Oracle E-business Suite 的连接。 必须指定连接 URI 时你：  

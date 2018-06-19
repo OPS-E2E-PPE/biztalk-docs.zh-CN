@@ -1,17 +1,17 @@
 ---
-title: "步骤 16： 启动业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 16： 启动业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, starting
 - message enrichment tutorial, orchestrations
 ms.assetid: a9032b0b-1497-4f6a-8474-a94c14976be0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206173"
 ---
 # <a name="step-16-start-the-orchestration"></a>步骤 16： 启动业务流程
 在此步骤中，为了将业务流程将在其中运行的物理环境与业务流程中设计的业务流程相关联登记服务。 此外，以便你可以测试你的应用程序启动业务流程的处理。  

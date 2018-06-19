@@ -1,11 +1,11 @@
 ---
-title: "如何更改主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何更改主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, promoting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, Master Secret server
 - Master Secret server, changing
 ms.assetid: 44a786ca-4645-44a8-b33e-d0019f0aeca9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969355"
 ---
 # <a name="how-to-change-the-master-secret-server"></a>如何更改主密钥服务器
 在设置主密钥服务器并配置 SSO 数据库后，如果原始的主密钥服务器发生故障并且无法恢复，则可以更改主密钥服务器。 若要更改主密钥服务器，则需要将 SSO 服务器升级为主密钥服务器。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  重新启动新的主密钥服务器。  
   
-8.  类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。  
+8.  类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。  
   
      主密钥存储在注册表中，位置为：  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  重新启动主密钥服务器。  
   
-6.  类型**ssoconfig-restoresecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。  
+6.  类型**ssoconfig-restoresecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。  
   
      主密钥存储在注册表中，位置为：  
   

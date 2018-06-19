@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 接收适配器存储和转发 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 接收适配器存储和转发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11eeb335-366b-4b29-9078-de9396b258ca
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224469"
 ---
 # <a name="swift-receive-adapter-store-and-forward"></a>SWIFT 接收适配器存储和转发
 接收适配器从 SWIFT 存储和转发 (SnF) 队列接收消息。 若要从队列接收消息，适配器必须使用 SnF 队列打开会话。 若要打开队列，则必须建立与队列的会话的专用客户端进程。 在设计中，作为 COM plus 进程外的组件来实现此过程。  

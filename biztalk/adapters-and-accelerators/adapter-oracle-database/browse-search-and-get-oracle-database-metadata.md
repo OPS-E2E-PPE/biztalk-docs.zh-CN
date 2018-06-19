@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和获取 Oracle 数据库元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和获取 Oracle 数据库元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MetadataExchange
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - IMetadataRetrievalContract
 - SQLEXECUTE
 ms.assetid: 828d5a8e-f0a3-47b4-8298-5571cff64b52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215349"
 ---
 # <a name="browse-search-and-get-oracle-database-metadata"></a>浏览、 搜索和获取 Oracle 数据库元数据
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]曲面元数据从 Oracle 数据库，用于描述与使用适配器 Oracle 数据库通信的消息结构。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]为检索元数据支持两个接口。  

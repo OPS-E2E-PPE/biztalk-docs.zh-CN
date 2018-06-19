@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015894"
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a>“JD Edwards OneWorld 传输属性”对话框
 使用 JD Edwards OneWorld 的“传输属性”对话框设置适配器所需的属性。  

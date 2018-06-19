@@ -1,17 +1,17 @@
 ---
-title: "消息确认段 |Microsoft 文档"
-ms.custom: 
+title: 消息确认段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - segments, acknowledgements
 - acknowledgements, segments
 ms.assetid: 6f2b9f6f-a328-4a0f-9e7d-edba32cc045a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204933"
 ---
 # <a name="message-acknowledgment-segment"></a>消息确认段
 确认 (ACK) 消息的消息确认 (MSA) 段标识 ACK 正在确认哪种类型的系统发送，并指示哪些消息的确认。 它由两个所需的段组成： 一个确认代码和消息控制 id。  

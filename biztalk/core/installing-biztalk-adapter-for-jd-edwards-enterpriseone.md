@@ -1,15 +1,15 @@
 ---
-title: "安装 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档"
-description: "快速链接安装和配置概述为 BizTalk 适配器博士 Edwards EnterpriseOne BizTalk Server 中"
-ms.custom: 
+title: 安装 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档
+description: 快速链接安装和配置概述为 BizTalk 适配器博士 Edwards EnterpriseOne BizTalk Server 中
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4281c1fc-1473-44f9-9c52-876e34cd3907
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450566"
 ---
 # <a name="install-biztalk-adapter-for-jd-edwards-enterpriseone"></a>安装 BizTalk Adapter for 博士 Edwards EnterpriseOne
 

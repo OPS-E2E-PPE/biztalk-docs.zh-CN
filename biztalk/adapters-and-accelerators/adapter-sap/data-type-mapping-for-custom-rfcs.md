@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217413"
 ---
 # <a name="data-type-mapping-for-custom-rfcs"></a>自定义的 Rfc 的数据类型映射
 下表提供了有关 SAP 数据类型和它们如何映射到.NET 数据类型为 Z_EXTRACT_DATA_OO RFC 的信息。 使用此自定义的 RFC [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]。  

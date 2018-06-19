@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206453"
 ---
 # <a name="step-15-configure-the-send-and-receive-ports"></a>步骤 15： 配置发送和接收端口
 在上一步骤中，你创建了逻辑发送和接收端口使用 Orchestration 设计器和设置端口绑定到"指定更高版本"。 在此步骤中，你可以使用 BizTalk 资源管理器以完成通过定义的物理源和目标位置，并绑定到你在业务流程中创建的逻辑端口的物理端口的端口配置。  

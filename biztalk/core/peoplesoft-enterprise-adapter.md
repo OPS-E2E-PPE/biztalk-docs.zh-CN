@@ -1,15 +1,15 @@
 ---
-title: "PeopleSoft Enterprise 适配器 |Microsoft 文档"
-description: "安装、 单步执行教程，了解体系结构、 使用 SSO 安全性，创建你的应用程序、 导入绑定文件中，和 PeopleSoft 企业 BizTalk Server 中使用 BizTalk 适配器时添加异常处理"
-ms.custom: 
+title: PeopleSoft Enterprise 适配器 |Microsoft 文档
+description: 安装、 单步执行教程，了解体系结构、 使用 SSO 安全性，创建你的应用程序、 导入绑定文件中，和 PeopleSoft 企业 BizTalk Server 中使用 BizTalk 适配器时添加异常处理
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6c3dd7fd-3566-4063-a2fd-2acbe64d2885
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013404"
 ---
 # <a name="peoplesoft-enterprise-adapter"></a>PeopleSoft Enterprise 适配器
 Microsoft BizTalk Adapter for PeopleSoft 企业可以使用 PeopleSoft BizTalk Server 应用程序中的对象。 以下各节讨论设置该适配器访问 PeopleSoft 特定信息。  

@@ -1,17 +1,17 @@
 ---
-title: "如何配置 HTTP 接收 Adapter2 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 HTTP 接收 Adapter2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP receive adapter, configuring
 - configuring HTTP receive adapter
 ms.assetid: dd26fd57-90d8-4ffe-b56f-8de55ecc6f68
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014772"
 ---
 # <a name="how-to-configure-the-http-receive-adapter"></a>如何配置 HTTP 接收适配器
 您可以使用 HTTP 接收适配器将消息提交到 BizTalk Server。 HTTP 接收适配器是承载于 IIS 进程的 Internet 信息服务 (IIS) ISAPI 扩展。  
   
 ### <a name="to-configure-the-http-receive-adapter"></a>若要配置 HTTP 接收适配器，请执行以下操作：  
   
-1.  复制 HTTP 从接收适配器 (BTSHTTPReceive.dll)  **\<BizTalk2010 > \HttpReceive >**到包含你的单一登录 (SSO) 项目的文件夹 (例如， **< Adapter_install > \biztalk2010\SSO\mySSODemo**)。  
+1.  复制 HTTP 从接收适配器 (BTSHTTPReceive.dll)  **\<BizTalk2010 > \HttpReceive >** 到包含你的单一登录 (SSO) 项目的文件夹 (例如， **< Adapter_install > \biztalk2010\SSO\mySSODemo**)。  
   
     1.  将新的 Web 服务扩展添加到 mySSODemo。  
   

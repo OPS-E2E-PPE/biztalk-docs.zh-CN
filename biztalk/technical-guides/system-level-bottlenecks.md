@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bdff435-76eb-495f-9fb6-1f1acef3921e
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22302981"
 ---
 # <a name="system-level-bottlenecks"></a>系统级瓶颈
 本主题介绍如何解决常见的系统级瓶颈，从而可以影响 BizTalk Server 解决方案的性能。  
@@ -110,13 +111,13 @@ ms.lasthandoff: 03/23/2018
 ## <a name="initial-troubleshooting"></a>初始故障排除  
  如果未启用，将导致性能问题的总体大小无论的 BizTalk Server 解决方案的某些组件或 BizTalk 解决方案的设计有。 应完成以下初步的故障排除任务，以参与详尽瓶颈分析了 BizTalk 解决方案之前查看一些"常用怀疑"规则。  
   
--   **验证是否正在运行跟踪主机实例-**跟踪主机实例负责将 BAM 和 HAT 数据从 MessageBox 数据库的 TrackingData 表移动到 BizTalkDTADb 和/或 BAMPrimaryImport 数据库表。 如果跟踪托管实例未运行，则跟踪数据将堆积在 MessageBox 数据库并对 BizTalk Server 解决方案的性能产生负面影响。  
+-   **验证是否正在运行跟踪主机实例-** 跟踪主机实例负责将 BAM 和 HAT 数据从 MessageBox 数据库的 TrackingData 表移动到 BizTalkDTADb 和/或 BAMPrimaryImport 数据库表。 如果跟踪托管实例未运行，则跟踪数据将堆积在 MessageBox 数据库并对 BizTalk Server 解决方案的性能产生负面影响。  
   
 -   **验证企业单一登录 (ENTSSO) 服务是否正在运行 BizTalk Server 的所有计算机的上**BizTalk 主机实例保留在本地运行的 ENTSSO 服务实例上的一个依赖项。 如果 ENTSSO 服务未运行 BizTalk Server 上，在服务器上的主机实例将无法运行。  
   
 -   **验证 SQL Server 代理服务是否正在运行 SQL Server 的所有计算机的上**必须按顺序执行 BizTalk SQL Server 代理作业运行 SQL Server 代理服务。 这些作业执行重要的功能使你的服务器操作和正常运行。  
   
--   **验证已启用 BizTalk SQL Server 代理作业并正在运行并且无例外-**即使正在运行的 SQL Server 代理服务，它是命令性的所有默认 BizTalk SQL Server 代理作业是否已启用并正在运行成功。  
+-   **验证已启用 BizTalk SQL Server 代理作业并正在运行并且无例外-** 即使正在运行的 SQL Server 代理服务，它是命令性的所有默认 BizTalk SQL Server 代理作业是否已启用并正在运行成功。  
   
 -   **检查 BizTalk Server 和 SQL Server 事件日志-** BizTalk Server 或 SQL Server 事件日志的粗略检查可能会泄漏，否则可能也需要很长时间以诊断并解决问题。  
   
@@ -209,22 +210,22 @@ ms.lasthandoff: 03/23/2018
   
     -   基数： 此计数器指示在磁盘上的写入操作的速率。  
   
--   **处理器\\%DPC Time、 %Interrupt Time 和 %Privileged Time-**如果 Interrupt Time 和延迟过程调用 (DPC) 时间是大部分 Privileged Time、 内核花费很长的时间来处理输入/输出请求。 在某些情况下，通过在多处理器系统上配置中断和 DPC 地缘成数量较少的 Cpu 可以提高性能，这可以提高缓存区域。 在其他情况下，它最适合要分发的中断和 Dpc 之间的 cpu 数量，以便防止中断和 DPC 活动成为性能瓶颈。 使用中断筛选器配置工具将网络适配器中断绑定到多处理器计算机上的特定处理器的信息，请参阅"使用中断筛选器配置工具以将网络适配器中断绑定到特定的部分中的处理器多处理器计算机上"[优化操作系统性能](~/technical-guides/optimizing-operating-system-performance.md)。  
+-   **处理器\\%DPC Time、 %Interrupt Time 和 %Privileged Time-** 如果 Interrupt Time 和延迟过程调用 (DPC) 时间是大部分 Privileged Time、 内核花费很长的时间来处理输入/输出请求。 在某些情况下，通过在多处理器系统上配置中断和 DPC 地缘成数量较少的 Cpu 可以提高性能，这可以提高缓存区域。 在其他情况下，它最适合要分发的中断和 Dpc 之间的 cpu 数量，以便防止中断和 DPC 活动成为性能瓶颈。 使用中断筛选器配置工具将网络适配器中断绑定到多处理器计算机上的特定处理器的信息，请参阅"使用中断筛选器配置工具以将网络适配器中断绑定到特定的部分中的处理器多处理器计算机上"[优化操作系统性能](~/technical-guides/optimizing-operating-system-performance.md)。  
   
--   **Processor\DPCs 排队 / 秒-**测量 Dpc 消耗 CPU 时间和内核资源的方式。  
+-   **Processor\DPCs 排队 / 秒-** 测量 Dpc 消耗 CPU 时间和内核资源的方式。  
   
--   **Processor\Interrupts / 秒-**的中断消耗 CPU 时间和内核资源的方式的另一个度量值。 现代磁盘控制器通常组合或合并中断，以便单个中断导致的多个 I/O 完成处理。 当然，没有延迟中断 （和完成功能） 和 economizing CPU 处理时间之间进行权衡。  
+-   **Processor\Interrupts / 秒-** 的中断消耗 CPU 时间和内核资源的方式的另一个度量值。 现代磁盘控制器通常组合或合并中断，以便单个中断导致的多个 I/O 完成处理。 当然，没有延迟中断 （和完成功能） 和 economizing CPU 处理时间之间进行权衡。  
   
 #### <a name="disk-io-tuning-options"></a>磁盘 I/O 优化选项  
  如果你确定磁盘 I/O 操作成为你的环境中的瓶颈，可能使用以下方法以缓解瓶颈：  
   
--   **碎片整理你的磁盘-**使用可用在[PageDefrag 实用工具](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976)以对 Windows 分页文件进行碎片整理和预分配主文件表。  
+-   **碎片整理你的磁盘-** 使用可用在[PageDefrag 实用工具](http://go.microsoft.com/fwlink/?LinkId=108976)(http://go.microsoft.com/fwlink/?LinkId=108976)以对 Windows 分页文件进行碎片整理和预分配主文件表。  
   
 -   **使用带区集通过多个磁盘的同时处理输入/输出请求**使用镜像的卷来提供容错和提高 I/O 性能。 如果不需要容错功能，为实现带区集快速读取和写入和改进的存储容量。 当使用带区集时，每个磁盘使用率减少，因为工作分布在这些卷，并提高总体吞吐量。 如果你添加更多的磁盘的条带中设置你的系统可能会遇到由于由磁盘控制器的磁盘之间的争用瓶颈，然后不会增加吞吐量。 在这种情况下，将添加一个额外的磁盘控制器将有助于分散负载并提高性能。  
   
 -   **分发在多个驱动器的之间的工作负荷**Windows 群集和分布式文件系统提供多个磁盘驱动器上的负载平衡解决方案。  
   
--   **限制使用文件压缩或加密-**文件压缩和加密是较 O 高的操作。 仅应使用它们在绝对必要时。  
+-   **限制使用文件压缩或加密-** 文件压缩和加密是较 O 高的操作。 仅应使用它们在绝对必要时。  
   
 -   **禁用的短名称-创建**如果你不支持 MS-DOS for Windows 3.x 客户端，禁用短名称，以提高性能。 有关禁用创建短名称的详细信息，请参阅"禁用短文件名 (8.3) 生成"一节中[优化操作系统性能](~/technical-guides/optimizing-operating-system-performance.md)。  
   
@@ -235,15 +236,15 @@ ms.lasthandoff: 03/23/2018
   
 -   **保留的主文件表中的适当的空间**添加**NtfsMftZoneReservation**具体取决于通常存储在 NTFS 卷的文件数目注册表项。 当向注册表添加此条目时，系统将保留主文件表的卷上的空间。 保留空间以这种方式允许主文件表增长以最佳方式。 如果你的 NTFS 卷通常存储相对几个文件，请设置此注册表项的值为 1 的默认值。 通常，如果 NTFS 卷存储适中数量的文件，并使用的值为 4 （最大值），如果你的 NTFS 卷往往会包含一个相对较大文件数，则可以使用值为 2 或 3。 但是，请确保用于测试大于 2，任何设置，因为这些更高的值会导致系统保留更大一部分的主文件表的磁盘。 有关添加详细信息**NtfsMftZoneReservation**到注册表中，请参阅部分"增加主文件表"上的可用空间[优化操作系统性能](~/technical-guides/optimizing-operating-system-performance.md)。  
   
--   **使用最高效的磁盘系统用-**除了使用的物理磁盘，请考虑的磁盘控制器和电缆，将使用的类型。 高效的磁盘子系统还应提供支持中断裁决或中断避免以缓解引起的磁盘 I/O 的处理器中断活动的驱动程序。  
+-   **使用最高效的磁盘系统用-** 除了使用的物理磁盘，请考虑的磁盘控制器和电缆，将使用的类型。 高效的磁盘子系统还应提供支持中断裁决或中断避免以缓解引起的磁盘 I/O 的处理器中断活动的驱动程序。  
   
--   **确保您使用合适的 RAID 配置-**使用 RAID 10 （条带化和镜像） 的最佳性能和容错能力。 折中也是使用 RAID 10 将占用大量资源。 避免使用 RAID 5，如果具有大量写入操作。 有关 BizTalk Server 环境中实现 RAID 的详细信息，请参阅"磁盘基础结构"一节中[BizTalk Server 数据库优化白皮书](http://go.microsoft.com/fwlink/?LinkID=101578)(http://go.microsoft.com/fwlink/?LinkID=101578)。  
+-   **确保您使用合适的 RAID 配置-** 使用 RAID 10 （条带化和镜像） 的最佳性能和容错能力。 折中也是使用 RAID 10 将占用大量资源。 避免使用 RAID 5，如果具有大量写入操作。 有关 BizTalk Server 环境中实现 RAID 的详细信息，请参阅"磁盘基础结构"一节中[BizTalk Server 数据库优化白皮书](http://go.microsoft.com/fwlink/?LinkID=101578)(http://go.microsoft.com/fwlink/?LinkID=101578)。  
   
--   **请考虑使用数据库分区-**如果你有数据库瓶颈，请考虑使用数据库分区并将磁盘映射到特定表和事务日志。 分区的主要目的是克服大型表的磁盘瓶颈。 如果你有具有大量行的表，并且你确定它是瓶颈的根源，请考虑使用分区。 对于 SQL Server，你可以使用文件组以提高 I/O 性能。 可以将表与文件组相关联，然后将文件组与特定硬盘相关联。 有关使用 BizTalk Server 数据库进行的优化文件组的详细信息，请参阅[优化的数据库的文件组](~/technical-guides/optimizing-filegroups-for-the-databases2.md)。  
+-   **请考虑使用数据库分区-** 如果你有数据库瓶颈，请考虑使用数据库分区并将磁盘映射到特定表和事务日志。 分区的主要目的是克服大型表的磁盘瓶颈。 如果你有具有大量行的表，并且你确定它是瓶颈的根源，请考虑使用分区。 对于 SQL Server，你可以使用文件组以提高 I/O 性能。 可以将表与文件组相关联，然后将文件组与特定硬盘相关联。 有关使用 BizTalk Server 数据库进行的优化文件组的详细信息，请参阅[优化的数据库的文件组](~/technical-guides/optimizing-filegroups-for-the-databases2.md)。  
   
--   **请考虑添加物理内存中，如果你有过多的页面错误-**的高值**内存： Pages/sec**性能计数器可能表示这会增加磁盘分页过多我 / 0。 如果发生这种情况，请考虑添加物理内存来减少磁盘 i/o 操作并提高性能。  
+-   **请考虑添加物理内存中，如果你有过多的页面错误-** 的高值**内存： Pages/sec**性能计数器可能表示这会增加磁盘分页过多我 / 0。 如果发生这种情况，请考虑添加物理内存来减少磁盘 i/o 操作并提高性能。  
   
--   **请考虑使用更高版本的 RPM 评级或使用存储区域网络 (SAN) 的磁盘设备-**磁盘具有更高版本的 RPM 评级提供改进的性能与较低的 RPM 分级，对磁盘进行比较。 SAN 设备通常能提供顶层性能但价格高级层。  
+-   **请考虑使用更高版本的 RPM 评级或使用存储区域网络 (SAN) 的磁盘设备-** 磁盘具有更高版本的 RPM 评级提供改进的性能与较低的 RPM 分级，对磁盘进行比较。 SAN 设备通常能提供顶层性能但价格高级层。  
   
 -   请按照中的建议[优化数据库性能](~/technical-guides/optimizing-database-performance.md)。 本主题提供有关优化数据库性能之前和之后配置 BizTalk Server 中的几点建议。  
   

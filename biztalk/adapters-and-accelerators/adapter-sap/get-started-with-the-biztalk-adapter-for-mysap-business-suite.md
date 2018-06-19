@@ -1,15 +1,15 @@
 ---
-title: "要开始使用用于 mySAP Business Suite 的 BizTalk Adapter |Microsoft 文档"
-description: "安装自定义的 Rfc，了解有关适配器的信息，请完成上 SAP，单步执行教程，可以使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器 RFC 和 IDOC 任务"
-ms.custom: 
+title: 要开始使用用于 mySAP Business Suite 的 BizTalk Adapter |Microsoft 文档
+description: 安装自定义的 Rfc，了解有关适配器的信息，请完成上 SAP，单步执行教程，可以使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器 RFC 和 IDOC 任务
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2013253-f911-4e35-a33a-b4a9bcb136aa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216317"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a>要开始使用用于 mySAP Business Suite 的 BizTalk Adapter
 本部分提供的适配器、 先决条件和主题概述的用户的不熟悉 Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 它讨论的功能[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]和可以在使用该适配器的 SAP 系统执行不同操作。  

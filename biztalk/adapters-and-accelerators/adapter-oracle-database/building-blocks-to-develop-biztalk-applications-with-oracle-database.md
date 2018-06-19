@@ -1,18 +1,18 @@
 ---
-title: "开发与 Oracle 数据库的 BizTalk 应用程序的构建基块 |Microsoft 文档"
-ms.custom: 
+title: 开发与 Oracle 数据库的 BizTalk 应用程序的构建基块 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, BizTalk applications
 - run-time tasks
 - design-time tasks
 ms.assetid: ad9ca856-5569-41ab-8617-ae6db5e3b4d7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214837"
 ---
 # <a name="building-blocks-to-develop-biztalk-applications-with-oracle-database"></a>开发与 Oracle 数据库的 BizTalk 应用程序的构建基块
 通过执行对 Oracle 数据库的操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]涉及两个任务组： 设计时和运行时。  

@@ -1,14 +1,14 @@
 ---
-title: "如何为侦听配置 Windows Communication Foundation 应用 |Microsoft 文档"
-ms.custom: 
+title: 如何为侦听配置 Windows Communication Foundation 应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37f2ccde-aa79-470a-ac31-57e4168dc54a
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969651"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-application-for-interception"></a>如何为侦听配置 Windows Communication Foundation 应用
 必须安装 BAM 侦听器软件并将应用程序配置为使用 BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 侦听器服务后才能开始收集 BAM 活动数据。 我们假定您已成功安装了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 及其依存关系，并至少创建了一个 BizTalk 组。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
      请确保你替换\< *icfile.xml* \>替换为你想要部署的侦听器配置文件的名称。  
   
     > [!NOTE]
-    >  你可以使用**-Force: True**标志来重写你侦听器的配置文件中的这些相同的名称的现有事件源。 如果这样做，请确保使用备份的现有配置**get 侦听器**命令。 使用 -Force:True 标志可能会删除所有引用被覆盖的事件源的侦听器配置。  
+    >  你可以使用 **-Force: True**标志来重写你侦听器的配置文件中的这些相同的名称的现有事件源。 如果这样做，请确保使用备份的现有配置**get 侦听器**命令。 使用 -Force:True 标志可能会删除所有引用被覆盖的事件源的侦听器配置。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216117"
 ---
 # <a name="get-metadata-for-sap-operations-in-visual-studio"></a>获取 Visual Studio 中的 SAP 操作的元数据
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]提供了两个[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用来帮助你开发使用该适配器的解决方案的组件- [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 适配器客户端必须使用这些组件连接到 SAP 系统，然后生成他们想要调用的 SAP 项目的元数据。  

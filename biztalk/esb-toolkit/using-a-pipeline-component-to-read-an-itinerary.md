@@ -1,14 +1,14 @@
 ---
-title: "使用管道组件读取一条路线 |Microsoft 文档"
-ms.custom: 
+title: 使用管道组件读取一条路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e3b40c7-0f17-4d33-a26f-f51346a98be5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296189"
 ---
 # <a name="using-a-pipeline-component-to-read-an-itinerary"></a>使用管道组件读取一条路线
 在接收管道到达的消息可以包含在其定义其处理要求 （客户端路线） 的 SOAP 标头的元数据。 图 1 说明 ESB 路线和 ESB 调度程序管道组件的用法。  
@@ -101,4 +102,4 @@ ms.lasthandoff: 09/20/2017
   
     -   **Microsoft.Practices.ESB.Services.Transform。** 此服务执行对入站消息的负载的 BizTalk 映射。 服务验证转换要求，并更新包含文档的规范名称和消息类型的 BizTalk 上下文属性。 这是转换服务的名称，因为它将出现在 ESB 调度程序管道组件的相应属性，ESB 调度程序就会执行此服务。  
   
-    -   **Microsoft.Practices.ESB.Services.Routing。**此服务使用的解析程序和适配器提供程序框架设置相应的终结点路由信息。 这是路由服务的名称，因为它将出现在 ESB 调度程序管道组件的相应属性，ESB 调度程序就会执行此服务。
+    -   **Microsoft.Practices.ESB.Services.Routing。** 此服务使用的解析程序和适配器提供程序框架设置相应的终结点路由信息。 这是路由服务的名称，因为它将出现在 ESB 调度程序管道组件的相应属性，ESB 调度程序就会执行此服务。

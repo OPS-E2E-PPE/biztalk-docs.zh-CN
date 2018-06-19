@@ -1,15 +1,15 @@
 ---
-title: "安装 BizTalk Adapter for TIBCO 企业消息服务 |Microsoft 文档"
-description: "快速链接安装和配置概述为 BizTalk 适配器 TIBCO BizTalk Server 中的企业消息服务"
-ms.custom: 
+title: 安装 BizTalk Adapter for TIBCO 企业消息服务 |Microsoft 文档
+description: 快速链接安装和配置概述为 BizTalk 适配器 TIBCO BizTalk Server 中的企业消息服务
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cdf1d943-5630-49d7-ae19-86e03a1f708b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450334"
 ---
 # <a name="install-biztalk-adapter-for-tibco-enterprise-message-service"></a>安装 BizTalk Adapter for TIBCO 企业消息服务
 

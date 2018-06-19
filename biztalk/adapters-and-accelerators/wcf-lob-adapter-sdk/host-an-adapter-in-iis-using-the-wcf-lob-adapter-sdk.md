@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25967563"
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>承载在 IIS 使用 WCF LOB 适配器 SDK 中的适配器
 本部分包含有关承载使用生成的适配器的信息[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]在 Internet 信息服务 (IIS)。 有关其他宿主选项的详细信息，请参阅[托管服务](https://msdn.microsoft.com/library/ms730158.aspx)。
@@ -84,10 +85,10 @@ ms.lasthandoff: 04/20/2018
         |**IncludeExceptionDetailsinFault**|此值设置为**True**导致托管的异常信息返回到 SOAP 错误中客户端。 此外可以通过修改设置这\< **serviceDebug usingincludeExceptionDetailInFaults =""** \>在 web.config 中。默认值是**False**。|  
         |**名称**|服务行为配置名称。|  
         |**UseServiceCertificate**|此值确定服务是否将使用 X.509 证书来向客户端进程验证自身。 默认值是**True**。|  
-        |**FindValue**|此值用于搜索特定的 X.509 证书的证书存储中。 此外可以通过修改设置这\< **serviceCredentials findValue =""** \>在 web.config 中**注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |**storeLocation**|此值指定要搜索指定的证书的系统存储位置。 此外可以通过修改设置这\< **serviceCredentials storeLocation =""** \>在 web.config 中。**注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |**storeName**|此值指定要搜索指定的证书的特定系统存储区。 此外可以通过修改设置这\< **serviceCredentials storeName =""** \>在 web.config 中**注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |**X509FindType**|为了查找要使用的特定证书的搜索将用于 FindValue 的类型指定更早版本。 此外可以通过修改设置这\< **serviceCredentials x509FindType =""** \>在 web.config 中**注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |**FindValue**|此值用于搜索特定的 X.509 证书的证书存储中。 此外可以通过修改设置这\< **serviceCredentials findValue =""** \>在 web.config 中**注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |**storeLocation**|此值指定要搜索指定的证书的系统存储位置。 此外可以通过修改设置这\< **serviceCredentials storeLocation =""** \>在 web.config 中。**注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |**storeName**|此值指定要搜索指定的证书的特定系统存储区。 此外可以通过修改设置这\< **serviceCredentials storeName =""** \>在 web.config 中**注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |**X509FindType**|为了查找要使用的特定证书的搜索将用于 FindValue 的类型指定更早版本。 此外可以通过修改设置这\< **serviceCredentials x509FindType =""** \>在 web.config 中**注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
   
     2.  **终结点行为配置**部分控制终结点行为。  
   
@@ -95,14 +96,14 @@ ms.lasthandoff: 04/20/2018
         |--------------|-----------------|  
         |**名称**|终结点行为的名称|  
         |**AuthenticationType**|此值指示适配器获取客户端的传入文档的凭据的位置。 若要启用客户端指定客户端证书向服务进行身份验证，请将此设置为**ClientCredentialUsernamePassword**。 若要启用客户端的 HTTP 标头的一部分指定的用户名和密码，将其设置为**HTTPUsernamePassword**。 若要启用客户端指定凭据通过 ClientCredential 界面，将其设置为**自动**。如果此操作失败，客户端可以将凭据传递的 HTTP 标头的一部分。<br /><br /> 此外可以通过修改设置此值\< **endpointBehavior adapterSecurityBridgeType** \>在 web.config 中。默认值是**自动**。|  
-        |**UsernameHeader**|这指定将用于向服务传递用户名标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值\< **endpointBehavior usernameHttpHeader** \>在 web.config 中。**注意：**如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。  如果设置为**自动**，此属性是可选的。|  
-        |**PasswordHeader**|这指定将用于将用户密码传递给服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值 <**endpointBehavior passwordHttpHeader**< 在 web.config 中。**注意：**如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。 如果设置为**自动**，此属性是可选的。|  
+        |**UsernameHeader**|这指定将用于向服务传递用户名标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值\< **endpointBehavior usernameHttpHeader** \>在 web.config 中。**注意：** 如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。  如果设置为**自动**，此属性是可选的。|  
+        |**PasswordHeader**|这指定将用于将用户密码传递给服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值 <**endpointBehavior passwordHttpHeader**< 在 web.config 中。**注意：** 如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。 如果设置为**自动**，此属性是可选的。|  
   
     3.  在设置所需的行为后, 单击**下一步**以继续。  
   
 8.  上**配置服务终结点绑定和地址**页上，你可以配置为协定的地址和绑定属性。 选择在该协定**选择协定配置**列表，，然后输入所需的值以**配置的地址和协定绑定**对话框。  
   
-    1.  选择**BindingConfiguration**绑定属性下的条目。 该向导仅支持基本 HTTP 绑定，因此绑定配置字段将自动设置为**System.ServiceModel.Configuration.BasicHttpBindingElement**。 若要更改此绑定的配置属性，单击省略号**...** 按钮。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 这是默认值。  
+    1.  选择**BindingConfiguration**绑定属性下的条目。 该向导仅支持基本 HTTP 绑定，因此绑定配置字段将自动设置为**System.ServiceModel.Configuration.BasicHttpBindingElement**。 若要更改此绑定的配置属性，单击省略号 **...** 按钮。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 这是默认值。  
   
     2.  选择**EndpointName**，然后输入终结点所需的名称。  
   

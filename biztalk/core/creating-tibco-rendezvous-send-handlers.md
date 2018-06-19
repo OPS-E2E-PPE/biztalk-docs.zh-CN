@@ -1,15 +1,15 @@
 ---
-title: "创建 TIBCO 会合适配器发送项目 |Microsoft 文档"
-description: "创建发送端口，配置要从 BizTalk 将消息发送到 TIBCO 会合的传输属性"
-ms.custom: 
+title: 创建 TIBCO 会合适配器发送项目 |Microsoft 文档
+description: 创建发送端口，配置要从 BizTalk 将消息发送到 TIBCO 会合的传输属性
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad996c4f-e6ed-4582-a768-0cb1ad25b1d8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014348"
 ---
 # <a name="create-tibco-rendezvous-send-handlers"></a>创建 TIBCO 会合发送处理程序
 本部分介绍如何创建架构以在 BizTalk Server 业务流程中使用 TIBCO Rendezvous。  

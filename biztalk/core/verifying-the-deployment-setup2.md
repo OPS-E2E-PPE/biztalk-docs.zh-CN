@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: f5d383ed50a64f238c892db3d6a106c8a1a799a0
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015565"
 ---
 # <a name="verifying-the-deployment-setup"></a>验证部署安装
 在使用 BizTalk Server 导入绑定文件之前，请验证以下各项：  

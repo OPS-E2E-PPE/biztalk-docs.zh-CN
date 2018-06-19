@@ -1,17 +1,17 @@
 ---
-title: "测试 Double 操作教程 |Microsoft 文档"
-ms.custom: 
+title: 测试 Double 操作教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, testing solutions
 - testing solutions
 ms.assetid: e5bc66e6-333e-4d94-ae1e-345ab45c83e5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207045"
 ---
 # <a name="testing-the-double-action-tutorial"></a>测试 Double 操作教程
 在本节中，将使用在前几节创建的 Contoso 和 Fabrikam 解决方案来测试四种不同的合作伙伴接口流程 (PIP)：0C2、0C4、3A2 和 3A4。 您将使用 Fabrikam 计算机上的 LOBWebApplication 生成请求。 系统将使用增强的通信通道向 Contoso 计算机发送此请求。 双操作业务流程将根据您使用的 PIP 生成适当的响应。  

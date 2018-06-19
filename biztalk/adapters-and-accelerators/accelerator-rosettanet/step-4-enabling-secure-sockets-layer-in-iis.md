@@ -1,11 +1,11 @@
 ---
-title: "步骤 4： 启用安全套接字在 IIS 中的层 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 启用安全套接字在 IIS 中的层 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Secure Socket Layers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - double action tutorial, enabling SSL in IIS
 - SSL
 ms.assetid: 96109294-595a-46ac-974e-33123df79ed5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966995"
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>步骤 4： 启用安全套接字在 IIS 中的层
 安全套接字层 (SSL) 是一个协议，旨在增强客户端与服务器之间通信通道的安全性。 通过在 Microsoft® Internet 信息服务 (IIS) 7.5/7.0 中启用 SSL，Contoso 和 Fabrikam 组织在通信中对所有的数据传输使用身份验证和加密。 在此步骤中，您将学习如何在 IIS 7.5/7.0 中启用 SSL。  
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，单击**（本地计算机）**，双击**服务器证书**右窗格中。 选择**完成证书请求**从操作窗格。  
+2.  在 Internet Information Services 的左窗格中，单击 **（本地计算机）**，双击**服务器证书**右窗格中。 选择**完成证书请求**从操作窗格。  
   
 3.  在指定的证书颁发机构响应对话框框中键入**\<驱动器\>: \Certs\SSLCert.cer**中**包含证书颁发机构的响应文件的名称**文本框。 中的友好名称文本框中键入**ContosoSSLCert**。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，展开**（本地计算机）**，展开**站点**，右键单击**Default Web Site**，然后单击**编辑绑定**。  
+2.  在 Internet Information Services 的左窗格中，展开 **（本地计算机）**，展开**站点**，右键单击**Default Web Site**，然后单击**编辑绑定**。  
   
 3.  在站点绑定对话框中单击**添加**。 在添加网站绑定对话框中选择**https**从类型下拉列表中，选择**ContosoSSLCert**从 SSL 证书下拉列表中，单击**确定**，单击**关闭**.  
   

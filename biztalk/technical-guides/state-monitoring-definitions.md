@@ -1,14 +1,14 @@
 ---
-title: "状态监视定义 |Microsoft 文档"
-ms.custom: 
+title: 状态监视定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa2c8247-5e25-4624-9f0d-c7fe621ffba2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302509"
 ---
 # <a name="state-monitoring-definitions"></a>状态监视定义
 状态监视有助于回答问题在给定时间从特定的应用程序的角度监视的计算机是否正常运行。 System Center Operations Manager (SCOM) 更新不同向用户公开的托管实体的状态，并显示状态的监视视图的状态的一部分。  

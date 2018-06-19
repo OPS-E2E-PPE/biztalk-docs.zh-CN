@@ -1,15 +1,15 @@
 ---
-title: "Visual Studio 项目模板 |Microsoft 文档"
-description: "描述.btproj、 BPEL，以及由 BizTalk Server.btaproj Visual Studio 模板"
-ms.custom: 
+title: Visual Studio 项目模板 |Microsoft 文档
+description: 描述.btproj、 BPEL，以及由 BizTalk Server.btaproj Visual Studio 模板
+ms.custom: ''
 ms.date: 11/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2b3d494-db80-4314-afcd-d08d5a26e211
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 068c17d5ac10874b79e8ec5648cea74411c6247c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24020191"
 ---
 # <a name="biztalk-server-project-templates"></a>BizTalk Server 项目模板
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206229"
 ---
 # <a name="step-8-configure-party-informationhl7main"></a>步骤 8： 配置方 Information_hl7_main
 在此步骤中，你配置的每个消息接收方 （ADT 和他） 方信息并分配发送端口以便允许传出的消息使用的消息标头转换[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。  

@@ -1,14 +1,14 @@
 ---
-title: "清除目标环境 |Microsoft 文档"
-ms.custom: 
+title: 清除目标环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8585853b-e625-48c3-a241-81ebf1be0e1e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299861"
 ---
 # <a name="cleaning-the-destination-environment"></a>清除目标环境
 如果还原作业遇到无法解决的错误条件，清除目标环境，以便它可以开始从空环境。 运行存储的过程**sp_LogShippingClean**位于目标上的 master 数据库[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例将"清理"目标环境。 此过程将删除所有数据库，并删除指定的源中最后一个的还原的数据集。  

@@ -1,11 +1,11 @@
 ---
-title: "添加 A4SWIFT 用户和更新 Windows 组 |Microsoft 文档"
-ms.custom: 
+title: 添加 A4SWIFT 用户和更新 Windows 组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - user accounts, Windows groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - updating Windows groups
 - A4SWIFT, creating user accounts
 ms.assetid: ddc54457-6499-402c-9cc2-f7b17bbc255f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209925"
 ---
 # <a name="adding-a4swift-users-and-updating-windows-groups"></a>添加 A4SWIFT 用户和更新 Windows 组
 创建和安装适用于消息修复和新提交角色的证书之后，你必须创建[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户并添加[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]到组的用户。  

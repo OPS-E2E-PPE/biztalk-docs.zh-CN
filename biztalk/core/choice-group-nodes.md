@@ -1,14 +1,14 @@
 ---
-title: "选择组节点 |Microsoft 文档"
-ms.custom: 
+title: 选择组节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 466b525d-4d8c-4b8e-830d-eee27845c0dc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970395"
 ---
 # <a name="choice-group-nodes"></a>“选择组”节点
 在 BizTalk 编辑器中，你可以插入**选项组**节点包含其他节点 （或整个子树的节点），只有一个可以出现在实例消息中。 给定的实例消息（如果有效）将仅显示这些选择之一。 包含的节点必须是与 XML 元素对应的节点，但不能是与 XML 属性对应的节点。  

@@ -1,11 +1,11 @@
 ---
-title: "步骤 3： 定义、 发布和部署为 Contoso 的业务策略 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 定义、 发布和部署为 Contoso 的业务策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, deploying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - private process tutorial, creating policies
 - policies, creating
 ms.assetid: 529b16d8-226b-4046-a95d-64162ebd59a3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210661"
 ---
 # <a name="step-3-defining-publishing-and-deploying-the-business-policy-for-contoso"></a>步骤 3： 定义、 发布和部署为 Contoso 的业务策略
 在此步骤中，您将创建一个业务策略，该策略对于 Contoso 所制造的每种产品都保留一定的数量，以应付紧急情况。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-a-policy-rule-to-enforce-the-emergency-quantity-needs"></a>添加用于实施应急数量需求的策略规则  
   
-1.  右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**添加新规则**。  
+1.  右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**添加新规则**。  
   
 2.  命名规则**紧急情况下提供规则-数量用完**，然后按**Enter**。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-add-a-policy-to-revise-the-number-available-field-in-the-response"></a>添加用于修改响应中的“可用数量”字段的策略  
   
-1.  右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**添加新规则**。  
+1.  右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**添加新规则**。  
   
 2.  将新规则命名为**紧急情况下提供规则-数量可用**，然后按**Enter**。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-publish-and-deploy-the-business-policy"></a>保存、发布和部署业务策略  
   
-1.  在策略资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**保存**。  
+1.  在策略资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityPolicy**，然后单击**保存**。  
   
 2.  右键单击该相同的节点，并依次**发布**。  
   

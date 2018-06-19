@@ -1,15 +1,15 @@
 ---
-title: "体系结构的 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档"
-description: "在设计时和在 BizTalk 博士 Edwards EnterpriseOne 适配器中的运行的时在设计时和运行的时和出站事件描述的入站的服务"
-ms.custom: 
+title: 体系结构的 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档
+description: 在设计时和在 BizTalk 博士 Edwards EnterpriseOne 适配器中的运行的时在设计时和运行的时和出站事件描述的入站的服务
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0441c5d2-6a46-45b6-8ab5-0bdac3590f56
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013756"
 ---
 # <a name="architecture-of-biztalk-adapter-for-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne 的  BizTalk 适配器的体系结构
 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器提供对 JD Edwards EnterpriseOne 业务功能的访问。 JD Edwards EnterpriseOne 使用称为 JDENet 的专用消息体系结构在客户端和服务器计算机之间进行通信。 JDENet 由 Connector.jar 和 Kernel.jar JAR 文件中找到的博士 Edwards EnterpriseOne 连接器类实现。 使用 TCP/IP 作为传输协议，使用默认端口的 6009 或 6010 实现通信。 此值设置有关位置的说明，请参阅[将项目添加到 BizTalk 管理](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)。  

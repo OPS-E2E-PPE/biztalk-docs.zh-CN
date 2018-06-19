@@ -1,15 +1,15 @@
 ---
-title: "创建环境的令牌和变量 |Microsoft 文档\""
-description: "更新绑定文件以使用环境标记，并在 VSTS 中自动执行部署的 BizTalk Server 应用程序中创建变量"
-ms.custom: 
+title: 创建环境的令牌和变量 |Microsoft 文档"
+description: 更新绑定文件以使用环境标记，并在 VSTS 中自动执行部署的 BizTalk Server 应用程序中创建变量
+ms.custom: ''
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.prod: biztalk-server
 ms.topic: article
 ms.assetid: 28bb2d4a-f45c-466d-ba65-0ca8cad0bffd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054565"
 ---
 # <a name="configure-environmental-tokens-and-variables-for-automatic-deployment"></a>配置环境的令牌和自动部署的变量
 使用 Visual Studio Team Services (VSTS) 变量中的你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]绑定文件。

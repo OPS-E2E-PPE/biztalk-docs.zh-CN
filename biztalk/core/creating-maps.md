@@ -1,14 +1,14 @@
 ---
-title: "创建映射 |Microsoft 文档"
-ms.custom: 
+title: 创建映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc9f8ad1-4aad-4866-8aa4-4877fdc5e5f9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969107"
 ---
 # <a name="creating-maps"></a>创建映射
 在选项卡上显示 BizTalk 映射程序的主要用户界面[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编辑窗口。 此显示分成三个窗格。 左窗格以树视图的形式显示源架构。 右窗格以树视图的形式显示目标架构。 中间窗格以多个页面的形式显示网格。 为了指示要如何将数据从源架构映射到目标架构，需在要映射的记录和字段之间绘制线条。 这些行被称为*链接*，并且它们是指定的数据的映射的最基本方法。 有关链接记录和字段的详细信息，请参阅[Maps 中的链接](../core/links-in-maps.md)。  

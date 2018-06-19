@@ -1,14 +1,14 @@
 ---
-title: "EDI 服务和控制架构 |Microsoft 文档"
-ms.custom: 
+title: EDI 服务和控制架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4866571b-b12d-446c-8d27-a72fe7e479ef
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969147"
 ---
 # <a name="edi-service-and-control-schemas"></a>EDI 服务和控制架构
 控制架构对处理消息信封（标头控制架构）和确认来说是必要的。 这些架构由安装程序部署在 Microsoft.BizTalk.Edi.BaseArtifacts.dll 中。 因为这些架构部署在 BaseArtifacts.dll 中，因此不必将它们添加到 BizTalk 项目中。 如果要使用项目中包含的架构，则需要将对 BaseArtifacts.dll 程序集的引用添加到包含这些架构的项目中。  

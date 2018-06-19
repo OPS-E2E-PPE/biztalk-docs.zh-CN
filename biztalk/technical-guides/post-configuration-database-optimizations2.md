@@ -1,14 +1,14 @@
 ---
-title: "后配置数据库 Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 后配置数据库 Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 609eda22-8399-4b7c-b860-21b495d2f68d
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302661"
 ---
 # <a name="post-configuration-database-optimizations"></a>后配置数据库优化
 除了按照中的建议之外[预配置数据库 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)，应遵循的几个步骤来优化 SQL Server 上的 BizTalk Server 数据库性能*后*BizTalk Server 已安装且已被配置 BizTalk Server 数据库。 本主题提供这些优化的列表。  
@@ -53,11 +54,11 @@ ms.lasthandoff: 09/20/2017
   
  以下列表描述了在我们的检验测试中使用的 BizTalk Server 数据库配置：  
   
--   **BizTalk DTADB （BizTalk 跟踪数据库文件）：**具有的文件大小为 100 MB 增长的 2048 MB 和 1024 MB 的日志文件，100 MB 增长数据文件。  
+-   **BizTalk DTADB （BizTalk 跟踪数据库文件）：** 具有的文件大小为 100 MB 增长的 2048 MB 和 1024 MB 的日志文件，100 MB 增长数据文件。  
   
--   **BizTalkMgmtdb （BizTalk 管理数据库文件）：**具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。  
+-   **BizTalkMgmtdb （BizTalk 管理数据库文件）：** 具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。  
   
--   **SSODB:**具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。  
+-   **SSODB:** 具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。  
   
 -   **BizTalkMsgBoxDb （BizTalk MessageBox 数据库）：** 8 个数据文件，每个都有 100 MB 增长的 2 GB 的文件大小和 100 MB 增长 20 GB 的日志文件。 由于 BizTalk MessageBox 数据库都是最活跃的我们建议你将放置数据文件和事务日志文件上专用的驱动器，以减少磁盘 I/O 争用问题的可能性。 在我们实验室环境中，我们使用一个驱动器的以下各项：  
   

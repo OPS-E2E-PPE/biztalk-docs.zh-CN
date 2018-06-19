@@ -14,7 +14,7 @@ helpviewer_keywords:
 - affiliate applications, creating
 - SSO tickets
 ms.assetid: 800644fd-2286-4e59-894b-260f584dd29f
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24015148"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 下列步骤介绍了如何开始使用关联应用程序和单一登录 (SSO)。  

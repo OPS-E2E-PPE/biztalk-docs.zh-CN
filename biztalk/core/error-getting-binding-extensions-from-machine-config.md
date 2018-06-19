@@ -1,14 +1,14 @@
 ---
-title: "从 machine.config 中获取绑定扩展时出错 |Microsoft 文档"
-ms.custom: 
+title: 从 machine.config 中获取绑定扩展时出错 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65ab48cf-575b-4db6-984a-880f7e286959
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968795"
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>从 machine.config 获取绑定扩展时出错。
 ## <a name="details"></a>详细信息  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  GAC 程序集  
   
-2.  修改 machine.config 文件 (位于**%FrameworkDir%\v4.0.30319\CONFIG**)。  
+2.  修改 machine.config 文件 (位于 **%FrameworkDir%\v4.0.30319\CONFIG**)。  
   
     1.  加载你的行为 DLL 在服务配置编辑器 (**svcConfigEditor.exe**)。  
   

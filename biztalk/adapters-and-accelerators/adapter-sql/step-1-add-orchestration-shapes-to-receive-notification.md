@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 添加业务流程形状可以接收通知 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 添加业务流程形状可以接收通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4e4c6fa5-81b7-4928-84d5-39533535f862
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223125"
 ---
 # <a name="step-1-add-orchestration-shapes-to-receive-notification"></a>步骤 1： 添加业务流程形状可以接收通知
 ![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，添加业务流程形状可以接收的更改通知**员工**表。  
+ **目标：** 在此步骤中，添加业务流程形状可以接收的更改通知**员工**表。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成中的步骤[第 1 课： 生成架构和创建消息](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016064"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>有关博士企业 OneWorld 单一登录和 BizTalk 适配器
 单一登录 (SSO) 凭据是从数据库中获取 SSO 凭据;因此，不需要输入中的服务器系统的登录凭据**传输属性**窗口。  

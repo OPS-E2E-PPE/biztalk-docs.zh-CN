@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22301965"
 ---
 # <a name="updating-using-side-by-side-versioning"></a>更新使用的并行版本控制
 如果你不能为计划停机时间，或具有不能以终止的非常长时间运行业务流程实例，可能需要的并行版本控制。 在此类型的升级，同一个应用程序或应用程序项目的两个版本运行并排显示。 名称相同的但以不同方式版本控制要部署的程序集和正在运行，本质上是允许的.NET 运行时，BizTalk Server 还允许它。  

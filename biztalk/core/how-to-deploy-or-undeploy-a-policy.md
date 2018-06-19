@@ -1,11 +1,11 @@
 ---
-title: "如何部署或取消部署策略 |Microsoft 文档"
-ms.custom: 
+title: 如何部署或取消部署策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [policies], undeploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - policies, undeploying
 - undeploying, policies
 ms.assetid: 9d26d4fe-9673-4baa-9927-02efda56b7a4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970099"
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a>如何部署或取消部署策略
 本主题介绍如何使用 BizTalk Server 管理控制台来部署或手动取消部署策略。 此外，自动启动应用程序部署包含，任何策略，并自动停止应用程序取消部署其策略。 部署策略可将其放到中使用它的应用程序的效果。 取消部署策略使它处于非活动状态，以便它不再函数中使用 BizTalk 组中任何应用程序。  

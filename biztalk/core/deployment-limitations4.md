@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 847e66c189cb8fc14014691f95d78b6eec4b45dc
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013356"
 ---
 # <a name="deployment-limitations"></a>部署限制
 传输适配器密码为星号 （*） 存储在由导出绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将它传递给相同的格式中的管理组件。 在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。  

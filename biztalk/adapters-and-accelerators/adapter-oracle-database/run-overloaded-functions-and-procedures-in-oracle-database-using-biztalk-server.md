@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967155"
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>调用重载函数和 Oracle 数据库使用 BizTalk Server 中的过程
 存储的过程和函数可以进行重载 Oracle 数据库中。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持重载函数和过程的更改操作的目标命名空间。 例如，两个重载过程的消息结构如下所示：  

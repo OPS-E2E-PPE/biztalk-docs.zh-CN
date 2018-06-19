@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/using-tibco-rendezvous-send-ports-from-biztalk-server/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: d4a4f4fce200089db0e29d09b3ea49af00f3792f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014492"
 ---
 # <a name="using-biztalk-server-from-tibco-rendezvous-to-send-messages"></a>使用来自 TIBCO Rendezvous 的 BizTalk Server 以发送消息
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使用异步 API (Transport.Send)。 您可以指定适配器使用消息上下文属性发送的消息类型：  

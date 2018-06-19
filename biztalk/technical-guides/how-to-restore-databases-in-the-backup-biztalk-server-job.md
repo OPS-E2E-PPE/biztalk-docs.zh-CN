@@ -1,14 +1,14 @@
 ---
-title: "如何还原备份的 BizTalk Server 作业中的数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何还原备份的 BizTalk Server 作业中的数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bcac40f-ef0b-4ff0-8743-cf1614e14422
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298557"
 ---
 # <a name="how-to-restore-databases-in-the-backup-biztalk-server-job"></a>如何还原备份的 BizTalk Server 作业中的数据库
 本部分介绍用于联机备份的备份 BizTalk Server 作业中的 BizTalk 组的数据库的步骤。 默认情况下，使用除 BAM 数据库外的备份 BizTalk Server 作业备份所有数据库。 请参阅[还原 Analysis Services 和支持数据库](../technical-guides/restoring-analysis-services-and-supporting-databases.md)有关备份和还原的 BAM 数据库详细信息。 必须将所有数据库还原到相同的标记，以确保各个数据库间的事务状态一致。 有关详细信息，请参阅[标记的事务、 完整备份和日志备份](http://go.microsoft.com/fwlink/?LinkId=151565)(http://go.microsoft.com/fwlink/?LinkId=151565)。  

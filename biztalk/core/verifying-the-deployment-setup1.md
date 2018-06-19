@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 404ed3aecbaacf09067b2c8f62077e1f3a9de6d2
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015116"
 ---
 # <a name="verifying-the-deployment-setup"></a>验证部署安装
 在使用 BizTalk Server 导入绑定文件之前，必须验证以下各项：  

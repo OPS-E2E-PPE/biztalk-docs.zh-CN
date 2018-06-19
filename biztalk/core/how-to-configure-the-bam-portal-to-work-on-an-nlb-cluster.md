@@ -1,14 +1,14 @@
 ---
-title: "如何在 NLB 群集上配置到工作 BAM 门户 |Microsoft 文档"
-ms.custom: 
+title: 如何在 NLB 群集上配置到工作 BAM 门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96c04fde-dc12-42fb-9193-aa74819fe880
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969683"
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a>如何配置要在 NLB 群集上使用的 BAM 门户
 可以将 BAM 门户配置为在网络负载平衡 (NLB) 群集中使用。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
 1.  将 web.config 文件复制到群集中每个其他计算机的 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal 文件夹中。  
   
     > [!NOTE]
-    >  在下面的示例步骤对所有引用**Program Files**文件夹将为**Program Files (x86)**的 64 位计算机。  
+    >  在下面的示例步骤对所有引用**Program Files**文件夹将为**Program Files (x86)** 的 64 位计算机。  
   
     > [!IMPORTANT]
     >  在以下步骤中，创建虚拟目录时，请进行查看以确保它们与 BizTalk Server 配置在第一台计算机上所创建的三个 BAM 虚拟目录的设置相同。 确认文件路径、ASP.NET 版本、目录权限和应用程序池。  使用与你设置第一台计算机时使用的相同的域服务帐户在要设置的计算机上运行 BAMAppPool。 确保 BAMAppPool 在所有计算机上运行。 你必须复制两个 web.config 文件。  

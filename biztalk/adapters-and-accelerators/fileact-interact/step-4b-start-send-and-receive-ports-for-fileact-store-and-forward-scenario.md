@@ -1,14 +1,14 @@
 ---
-title: "步骤 4B： 开始发送端口和接收 FileAct 应用商店应用和进 （请求） 方案的端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4B： 开始发送端口和接收 FileAct 应用商店应用和进 （请求） 方案的端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea2215c5-fb43-4c7e-a42d-5d131a6dee38
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224389"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-fileact-store-and-forward-pull-scenario"></a>步骤 4B： 开始发送端口和接收 FileAct 应用商店应用和进 （请求） 方案的端口
 在开始此步骤之前，必须完成[步骤 4A： 启动 FileAct 存储和转发 （请求） 方案的 SWIFTNet 服务](../../adapters-and-accelerators/fileact-interact/step-4a-start-swiftnet-service-for-fileact-store-and-forward-pull-scenario.md)。  

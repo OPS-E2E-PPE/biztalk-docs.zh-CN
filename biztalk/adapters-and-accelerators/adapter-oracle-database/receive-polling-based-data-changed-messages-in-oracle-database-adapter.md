@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216565"
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-adapter"></a>Oracle 数据库适配器中接收基于轮询的数据更改消息
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持通过轮询 Oracle 数据库接收基于轮询的数据更改消息。 适配器将消息传送到您的应用程序：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 09/20/2017
 |绑定属性|值|默认|必需/可选|  
 |----------------------|-----------|-------------|------------------------|  
 |**InboundOperationType**|请确保值设置为**轮询**。|轮询|必需的。 如果未显式设置，默认值将应用。|  
-|**PolledDataAvailableStatement**|指定执行，以确定任何数据是否可用于轮询的特定表的 SELECT 语句。 指定的语句必须返回的结果集行和列组成。 结果集的第一个单元中的值指示适配器是否执行指定的值**PollingStatement**绑定属性。 如果结果的第一个单元包含一个正值，适配器执行的轮询语句。 例如，将为此绑定属性有效的语句：<br /><br /> `Select * from <table_name>`<br /><br /> **注意：**您不能指定此绑定属性的存储的过程。 此外，此语句不能修改基础的 Oracle 数据库。|从双选择 1|必需的。 如果未显式设置，默认值将应用，这意味着，适配器必须继续进行而不考虑或不轮询表是否具有数据的轮询。|  
+|**PolledDataAvailableStatement**|指定执行，以确定任何数据是否可用于轮询的特定表的 SELECT 语句。 指定的语句必须返回的结果集行和列组成。 结果集的第一个单元中的值指示适配器是否执行指定的值**PollingStatement**绑定属性。 如果结果的第一个单元包含一个正值，适配器执行的轮询语句。 例如，将为此绑定属性有效的语句：<br /><br /> `Select * from <table_name>`<br /><br /> **注意：** 您不能指定此绑定属性的存储的过程。 此外，此语句不能修改基础的 Oracle 数据库。|从双选择 1|必需的。 如果未显式设置，默认值将应用，这意味着，适配器必须继续进行而不考虑或不轮询表是否具有数据的轮询。|  
 |**PollingAction**|指定轮询操作的操作。 你可以确定从元数据生成操作使用特定操作的轮询操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。|null|对于上表和视图使用 SELECT 语句的轮询操作可选。|  
 |**PollingInterval**|设置为间隔，以秒为单位，您想要在 Oracle 数据库中查询的适配器。 此属性指定轮询间隔和轮询事务超时。值应大于执行的查询和后轮询语句 （如果指定了一个） 对 Oracle 数据库所花的时间量加上的客户端来处理查询数据并返回轮询响应消息所花费的时间量。|500|必需的。 如果未显式设置，默认值将应用。|  
 |**PollingStatement**|指定以下方法之一：<br /><br /> 应对其执行 Oracle 数据库的 SQL SELECT 语句。 此语句应包含 FOR UPDATE 子句。 有关 FOR UPDATE 子句的信息，请参阅[的轮询语句中指定 FOR UPDATE 子句](#ForUpdate)本主题中更高版本。<br /><br /> -请求的存储的过程、 函数或过程或函数在你想要进行轮询一个包内的消息。|null|必需的。 设置**PollingStatement**为非 null 值可启用轮询。|  

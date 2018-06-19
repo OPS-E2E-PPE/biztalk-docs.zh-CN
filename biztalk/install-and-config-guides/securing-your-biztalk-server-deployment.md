@@ -1,15 +1,15 @@
 ---
-title: "你部署的安全概述 |Microsoft 文档"
-description: "有关安全性、 加密、 你的 BizTalk Server 部署中的用户组的快速链接"
-ms.custom: 
+title: 你部署的安全概述 |Microsoft 文档
+description: 有关安全性、 加密、 你的 BizTalk Server 部署中的用户组的快速链接
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1c5a000-9f6b-49db-bd87-8c694240a192
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299541"
 ---
 # <a name="securing-your-biztalk-server-deployment"></a>确保 BizTalk Server 部署的安全
 本部分中的主题提供有关配置防火墙端口、Internet 协议安全性 (IPSec)、安全套接字层 (SSL) 安全性的链接（完成了 BizTalk 的安装和配置之后）。  

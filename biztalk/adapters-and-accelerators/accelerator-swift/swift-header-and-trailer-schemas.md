@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 标头和预告片架构 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 标头和预告片架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailer schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, trailers
 - header schemas
 ms.assetid: 82cd33d4-6bbb-4124-9506-fd35b5dca8a4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214573"
 ---
 # <a name="swift-header-and-trailer-schemas"></a>SWIFT 标头和预告片架构
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供 SWIFT 标头和尾的架构。 A4SWIFT 已合并这些到各种 FIN 消息的交换架构。 如果你想要创建一个自定义的 SWIFT FIN 格式样式消息类型 （例如，N98 消息），你可以将标头和尾架构合并到你自己的格式。  

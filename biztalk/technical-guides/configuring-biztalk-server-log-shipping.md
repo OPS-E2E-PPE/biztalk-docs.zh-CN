@@ -1,14 +1,14 @@
 ---
-title: "配置 BizTalk Server 日志传送 |Microsoft 文档"
-ms.custom: 
+title: 配置 BizTalk Server 日志传送 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bcef31f7-30d1-4ada-b627-2a5c9ec7e43e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299693"
 ---
 # <a name="configuring-biztalk-server-log-shipping"></a>配置 BizTalk Server 日志传送
 使用备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业可以备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 源系统中的所有数据库，但业务活动监视 (BAM) 所使用的某些数据库除外。 源系统是包含实时数据的服务器或服务器组。 因为某些 BAM 数据库具有不同的备份和还原要求，这些数据库进行备份和还原使用其他方法。  

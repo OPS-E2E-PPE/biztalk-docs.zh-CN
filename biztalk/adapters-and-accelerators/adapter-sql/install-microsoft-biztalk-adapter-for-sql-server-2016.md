@@ -1,14 +1,14 @@
 ---
-title: "安装 Microsoft BizTalk Adapter for SQL Server-2016年 |Microsoft 文档"
-ms.custom: 
+title: 安装 Microsoft BizTalk Adapter for SQL Server-2016年 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bcc6b94e-1cac-4b90-8567-05b33caa9bf3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967907"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>安装 Microsoft BizTalk Adapter for SQL Server-2016
 安装[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]附带[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]。

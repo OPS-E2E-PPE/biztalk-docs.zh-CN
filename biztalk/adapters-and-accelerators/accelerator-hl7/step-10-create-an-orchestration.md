@@ -1,18 +1,18 @@
 ---
-title: "步骤 10： 创建业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 10： 创建业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, creating
 - creating, orchestrations
 - message enrichment tutorial, orchestrations
 ms.assetid: 10f5cf3d-4a34-4c80-89d1-c390552cfc09
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206565"
 ---
 # <a name="step-10-create-an-orchestration"></a>步骤 10： 创建业务流程
 在此步骤中，你可以使用 Orchestration 设计器创建业务流程来表示检索其他患者的详细信息，以完全填充 ADT_A04 消息的业务流程。 使用业务流程设计器，选择表示此业务流程的操作所需的业务流程形状。 在更高版本的练习中，你提供其他信息以配置形状，以便它们可以正常工作。  

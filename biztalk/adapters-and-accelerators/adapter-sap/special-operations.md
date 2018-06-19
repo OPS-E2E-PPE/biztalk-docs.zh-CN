@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216605"
 ---
 # <a name="special-operations"></a>特殊的操作
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现几个特殊操作。 这些操作不基于 SAP 系统项目的影响。 它们将显示为适配器客户端应用程序提供功能。 进行的特殊操作：  

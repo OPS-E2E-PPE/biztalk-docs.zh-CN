@@ -1,14 +1,14 @@
 ---
-title: "单一登录规划 |Microsoft 文档"
-ms.custom: 
+title: 单一登录规划 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d1bc220-4087-4603-ac15-6bb0c62c59d4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302405"
 ---
 # <a name="planning-for-single-sign-on"></a>规划上单一登录
 企业单一登录 (SSO) 是一个重要组成部分的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]没有 SSO 服务，因为运行的时无法运行所有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器的配置信息加密，并在 SSO 数据库中存储和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]访问此信息通过 SSO 服务。 如果 SSO 服务未在 BizTalk server 上运行，或者 SSO 服务没有 SSO 主密钥服务器的访问，此适配器的配置信息不可访问。  

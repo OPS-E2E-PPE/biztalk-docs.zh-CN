@@ -1,18 +1,18 @@
 ---
-title: "与 Oracle 数据库适配器的 WCF 服务模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 Oracle 数据库适配器的 WCF 服务模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, overview
 - invoking operations
 - WCF service, creating and implementing
 ms.assetid: 8ed765e5-b5e6-46bd-bcd6-282219caf75d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214381"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-oracle-database-adapter"></a>与 Oracle 数据库适配器的 WCF 服务模型概述
 当你使用操作的[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]图面，你的代码起作用作为客户端或服务进行适配器。 几乎所有操作，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面，你的代码是客户端。 你的应用程序，即适配器; 上的操作时，将调用有关将记录插入 Oracle 表的示例。 仅有为其代码充当服务进行的操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]POLLINGSMT 操作是。 在这种情况下，该适配器将轮询查询操作的结果发送到你的应用程序。  

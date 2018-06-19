@@ -1,14 +1,14 @@
 ---
-title: "优化 BizTalk Server WCF 适配器性能 |Microsoft 文档"
-ms.custom: 
+title: 优化 BizTalk Server WCF 适配器性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2900c845-15be-4466-8fa0-b51b2486842f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299669"
 ---
 # <a name="optimizing-biztalk-server-wcf-adapter-performance"></a>优化 BizTalk Server WCF 适配器性能
 本主题提供用于选择相应的 WCF 适配器或绑定类型和应用各种 WCF 适配器配置选项的指南的建议。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
 |设置|.NET Framework 4 的默认值|针对.NET Framework 4 的建议的值|.NET Framework 3.5 的默认值|建议值为.Net Framework 3.5|  
 |-------------|----------------------------------------|--------------------------------------------|------------------------------------------|----------------------------------------------|  
 |**ServiceThrottlingBehavior.MaxConcurrentCalls** -获取或设置一个值，指定的最大活动处理跨消息数**ServiceHost**。 **MaxConcurrentCalls**属性指定的最大活动处理跨消息数**ServiceHost**对象。 每个通道都可以有一个挂起消息不会影响的值**MaxConcurrentCalls**直到 WCF 开始对其进行处理。 有关此属性的详细信息，请参阅[ServiceThrottlingBehavior.MaxConcurrentCalls](http://go.microsoft.com/fwlink/?LinkId=157838) (http://go.microsoft.com/fwlink/?LinkId=157838) MSDN 上。 默认值为 BizTalk WCF 自定义和 WCF CustomIsolated 接收适配器**MaxConcurrentCalls**属性是**16**每个 CPU。 **注意：** BizTalk Server WCF 接收 WCF 自定义和 WCF CustomIsolated 适配器公开以外的适配器**最大并发调用**属性**绑定**选项卡**WCF-\*传输属性**对话框中，以配置此行为。 默认值**最大并发调用**行为是**200**。|16 * ProcessorCount|16 * ProcessorCount|-16 个的 BizTalk WCF 自定义和 WCF CustomIsolated 接收适配器。<br />-200 其他 wcf 接收适配器。|-尝试 > = 200，用于 WCF 自定义和 WCF CustomIsolated 接收适配器。<br />-尝试为 200 >**最大并发调用**属性**绑定**选项卡**WCF-\*传输属性**BizTalk Server WCF 的对话框中接收而不是 WCF 自定义和 WCF CustomIsolated 适配器的适配器。|  
-|**ServiceThrottlingBehavior.maxConcurrentInstances** -获取或设置一个值，指定的最大数目**InstanceContext**可以同时执行的服务中的对象。 **MaxConcurrentInstances**属性指定的最大数**InstanceContext**服务中的对象。 务必要记住之间的关系**MaxConcurrentInstances**属性和**InstanceContextMode**属性。 如果**InstanceContextMode**为 PerSession，生成的值为总会话数。 如果**InstanceContextMode**是 PerCall，生成的值是并发调用数。 如果消息到达时的最大数**InstanceContext**对象已经存在，直到保存该消息**InstanceContext**对象关闭。 有关此属性的详细信息，请参阅[ServiceThrottlingBehavior.MaxConcurrentInstances 属性](http://go.microsoft.com/fwlink/?LinkId=157897)(http://go.microsoft.com/fwlink/?LinkId=157897) MSDN 上。 默认值用于 WCF 自定义和 WCF CustomIsolated 接收适配器 MaxConcurrentInstances 属性是**116**每个 CPU。 **注意：**由于 WCF 接收位置实现为包含在 Microsoft.BizTalk.Adapter.Wcf.Runtime.dll 程序集，因为此类标记为 ServiceBehavior (InstanceContextMode BizTalkServiceInstance 类的实例= InstanceContextMode.Single，ConcurrencyMode=ConcurrencyMode.Multiple）。 所有传入请求由相同的单一实例对象，并将忽略此参数。 因此，将 maxConcurrentInstances 属性设置上某些 WCF 自定义接收位置具有不起作用，，因为活动的实例数也始终等于 1。|116 * ProcessorCount|116 * ProcessorCount|26|请尝试 > = 200|  
+|**ServiceThrottlingBehavior.maxConcurrentInstances** -获取或设置一个值，指定的最大数目**InstanceContext**可以同时执行的服务中的对象。 **MaxConcurrentInstances**属性指定的最大数**InstanceContext**服务中的对象。 务必要记住之间的关系**MaxConcurrentInstances**属性和**InstanceContextMode**属性。 如果**InstanceContextMode**为 PerSession，生成的值为总会话数。 如果**InstanceContextMode**是 PerCall，生成的值是并发调用数。 如果消息到达时的最大数**InstanceContext**对象已经存在，直到保存该消息**InstanceContext**对象关闭。 有关此属性的详细信息，请参阅[ServiceThrottlingBehavior.MaxConcurrentInstances 属性](http://go.microsoft.com/fwlink/?LinkId=157897)(http://go.microsoft.com/fwlink/?LinkId=157897) MSDN 上。 默认值用于 WCF 自定义和 WCF CustomIsolated 接收适配器 MaxConcurrentInstances 属性是**116**每个 CPU。 **注意：** 由于 WCF 接收位置实现为包含在 Microsoft.BizTalk.Adapter.Wcf.Runtime.dll 程序集，因为此类标记为 ServiceBehavior (InstanceContextMode BizTalkServiceInstance 类的实例= InstanceContextMode.Single，ConcurrencyMode=ConcurrencyMode.Multiple）。 所有传入请求由相同的单一实例对象，并将忽略此参数。 因此，将 maxConcurrentInstances 属性设置上某些 WCF 自定义接收位置具有不起作用，，因为活动的实例数也始终等于 1。|116 * ProcessorCount|116 * ProcessorCount|26|请尝试 > = 200|  
 |**ServiceThrottlingBehavior.MaxConcurrentSessions** - **MaxConcurrentSessions**属性获取或设置最大会话数**ServiceHost**对象可一次接受. 务必了解，在这种情况下进行会话并不局限于仅支持可靠会话的通道。 每个侦听器对象都可以有一个挂起通道会话不会影响的值**MaxConcurrentSessions**直到 WCF 接受通道会话并开始处理通道会话消息。 此属性是最有用中进行的方案使用的会话。 当此属性设置为小于客户端线程数的值时，从多个客户端请求可能会在同一套接字连接中进行排队。 将阻止来自尚未与服务建立会话的客户端的请求。 它们将保持阻止状态，直到该服务将关闭它的会话与其他客户端，如果服务上打开的会话数已达到指定的值**MaxConcurrentSessions**。 然后将未被提供服务的客户端请求超时时，和服务关闭会话。 若要避免这种情况下，请考虑运行客户端线程从不同的应用程序域，以便其他套接字连接接受请求消息。 有关此属性的详细信息，请参阅[ServiceThrottlingBehavior.MaxConcurrentSessions 属性](http://go.microsoft.com/fwlink/?LinkID=157864)(http://go.microsoft.com/fwlink/?LinkId=157864) MSDN 上。|100 * ProcessorCount|100 * ProcessorCount|10|请尝试 > = 200|  
   
  当修改端口配置设置应用更改系统地;单独修改每个参数，并测试对性能和整体稳定性更改的效果。 如往常一样，要应用的正确值取决于特定的方案： 如果值设置得太低，则可以减少可伸缩性;而如果值设置过高，则应用程序要求可能超出的计算机上的物理资源容量。 此外，由于这些属性在相关，它们应在一致和一致的方式设置。 有关使用 ServiceThrottlingBehavior 控制 WCF 服务性能的详细信息，请参阅[使用 ServiceThrottlingBehavior 控制 WCF 服务性能](http://go.microsoft.com/fwlink/?LinkId=157908)(http://go.microsoft.com/fwlink/?LinkId=157908) MSDN 上。  

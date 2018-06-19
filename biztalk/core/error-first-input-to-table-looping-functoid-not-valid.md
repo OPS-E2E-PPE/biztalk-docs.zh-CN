@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968331"
 ---
 # <a name="error---first-input-to-table-looping-functoid-not-valid"></a>错误-第一个输入到循环 Functoid 不是有效的表
 **错误代码**  

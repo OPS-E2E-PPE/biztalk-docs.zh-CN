@@ -1,14 +1,14 @@
 ---
-title: "窗体生成器实用程序生成 MT MX InfoPath 窗体 |Microsoft 文档"
-ms.custom: 
+title: 窗体生成器实用程序生成 MT MX InfoPath 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41f2fd51-c492-499b-89aa-1b44ed5c9669
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209205"
 ---
 # <a name="form-generator-utility-to-generate-mtmx-infopath-forms"></a>窗体生成器实用程序生成 MT/MX InfoPath 窗体
 本文档的目的是说明如何生成和发布 MT 和 MX InfoPath 2010 的窗体使用窗体生成器实用程序。 这些形式由消息修复和新提交功能使用的[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]。  

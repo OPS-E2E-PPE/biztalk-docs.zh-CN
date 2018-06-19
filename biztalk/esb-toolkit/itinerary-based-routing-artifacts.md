@@ -1,14 +1,14 @@
 ---
-title: "基于路线的路由项目 |Microsoft 文档"
-ms.custom: 
+title: 基于路线的路由项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cff38ab7-5a16-42cc-9065-075e9db7acd3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296821"
 ---
 # <a name="itinerary-based-routing-artifacts"></a>路线基于路由的项目
 基于路线的路由功能[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括一套密钥在多个程序集中定义的项目。 下表列出了按类别以帮助开发人员在使用和扩展与其他 ESB 路线服务实现的基于路线的路由实现的这些项目。  

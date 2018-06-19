@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209397"
 ---
 # <a name="how-biztalk-accelerator-for-rosettanet-works"></a>BizTalk Accelerator for RosettaNet 的工作原理
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供通过基于构建高科技生产解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它通过提供为 RosettaNet 实现框架 (RNIF) 和合作伙伴接口进程 (Pip) 的支持和添加自定义的消息处理到高科技生产应用程序的组件来执行此操作。  

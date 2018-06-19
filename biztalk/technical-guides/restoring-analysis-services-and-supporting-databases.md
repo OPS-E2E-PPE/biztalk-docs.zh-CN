@@ -1,14 +1,14 @@
 ---
-title: "还原 Analysis Services 和支持的数据库 |Microsoft 文档"
-ms.custom: 
+title: 还原 Analysis Services 和支持的数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 490ad0fb-7805-4ebc-9bc5-117d52d7c3a8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301989"
 ---
 # <a name="restoring-analysis-services-and-supporting-databases"></a>还原 Analysis Services 和支持的数据库
 有两个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]，必须在灾难恢复方案中还原的 Analysis Services 数据库：  

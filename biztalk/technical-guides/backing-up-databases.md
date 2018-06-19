@@ -1,14 +1,14 @@
 ---
-title: "备份数据库 |Microsoft 文档"
-ms.custom: 
+title: 备份数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0524a8f0-15a3-4731-a7bd-c0c935fff6c8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300533"
 ---
 # <a name="backing-up-databases"></a>备份数据库
 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用分布式事务跨多个数据库，备份 BizTalk Server 作业创建的所有同步的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。 这可以通过使用"完整"数据库恢复模式的事务进行标记。 这是必需的可以跨数据库事务上一致的备份。 有关详细信息，请参阅["标记的事务，完整备份和日志备份"](http://go.microsoft.com/fwlink/?LinkId=151565) (http://go.microsoft.com/fwlink/?LinkId=151565) BizTalk Server 文档中。  

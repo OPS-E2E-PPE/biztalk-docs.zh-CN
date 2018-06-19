@@ -1,18 +1,18 @@
 ---
-title: "配置客户端绑定用于 Oracle 数据库 |Microsoft 文档"
-ms.custom: 
+title: 配置客户端绑定用于 Oracle 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - client binding, specifying in code
 - WCF client, creating
 - client binding, specifying in configuration file
 ms.assetid: f18c7296-c28a-4dec-9514-5299c8c2dffe
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214605"
 ---
 # <a name="configure-a-client-binding-for-the-oracle-database"></a>配置客户端绑定用于 Oracle 数据库
 在你生成 WCF 客户端类后，可以创建一个 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码，[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开，请参阅[为 Oracle 数据库解决方案项目生成 WCF 客户端或 WCF 服务约定](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。  

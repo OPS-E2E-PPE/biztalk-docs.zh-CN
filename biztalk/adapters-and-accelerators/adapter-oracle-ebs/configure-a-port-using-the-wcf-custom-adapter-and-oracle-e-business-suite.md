@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 BizTalk 中的 WCF 自定义适配器和 Oracle E-business Suite |Microsoft 文档"
-description: "使用 WCF 自定义适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息"
-ms.custom: 
+title: 配置端口使用 BizTalk 中的 WCF 自定义适配器和 Oracle E-business Suite |Microsoft 文档
+description: 使用 WCF 自定义适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83d0bb00-934c-40cf-8833-354e7ce7e927
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218365"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-e-business-suite"></a>配置端口使用 WCF 自定义适配器和 Oracle E-business Suite
 如何配置 WCF 自定义发送和接收端口执行 Oracle E-business Suite 使用的出站和入站操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle E-business Suite 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle E-business Suite 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。  
   
     2.  上**常规**选项卡上，在**操作**文本框中，键入操作的操作。 请参阅[消息和 Oracle EBS 适配器的消息架构](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) 有关的操作的每个操作的列表。 例如，要调用该资产应用程序下接口表 (FA_BOOKS) 上的插入操作的操作是：  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle E-business Suite 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle E-business Suite 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。  
   
     2.  单击**绑定**选项卡上，并从**绑定类型**下拉列表中，选择**oracleEBSBinding**。 你可以指定不同的绑定属性公开的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 有关绑定属性的详细信息，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。  
   

@@ -1,14 +1,14 @@
 ---
-title: "阶段 2： 规划评估 |Microsoft 文档"
-ms.custom: 
+title: 阶段 2： 规划评估 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd67e9fb-afc9-48c7-91c9-eea5b66423a7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301997"
 ---
 # <a name="phase-2-planning-the-assessment"></a>阶段 2： 规划评估
 性能评估计划阶段很大程度上是设置为完成的可交付结果的作用域阶段确定特定里程碑。 计划阶段是到审视阶段的"when"的"内容"。 第三方软件和物理物流是"如何"和"where"还应考虑在规划阶段中为这些方面的方面可能需要其他主管时间才能实现。  

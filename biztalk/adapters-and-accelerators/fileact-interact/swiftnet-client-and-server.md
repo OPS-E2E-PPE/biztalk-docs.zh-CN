@@ -1,14 +1,14 @@
 ---
-title: "SWIFTNet 客户端和服务器 |Microsoft 文档"
-ms.custom: 
+title: SWIFTNet 客户端和服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89d9f54f-af16-4f14-bbe4-8306758320d8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224653"
 ---
 # <a name="swiftnet-client-and-server"></a>SWIFTNet 客户端和服务器
 SWIFT 使用条款客户端和服务器来描述发送和接收。 SWIFT 客户端是一个过程，调用 SWIFTNet 链接 (SNL) 以通过 SWIFTNet 启动的通信。 在 BizTalk Server 中，这被称为发送适配器。 SWIFT 服务器是时流量经过 SWIFTNet SNL 由调用程序。 在 BizTalk Server 中，这被称为接收适配器。  
@@ -58,7 +59,7 @@ Callback(Request):
   
  服务器应用程序可以调用的回调函数中 SwCall API。 在某些情况下，则必须调用 SwCall 能够以生成所需的结果或响应。 但是，服务器应用程序永远不会可以通过网络启动的通信。 服务器应用程序绝不会客户端应用程序。  
   
- 下图中，在调用标记为**初始化**是用于 SNL API 初始化过程中，需要多个调用的抽象。 标记为调用**SwCallback()**将重复几次，并调用标记为**SwCall()**是可选的。  
+ 下图中，在调用标记为**初始化**是用于 SNL API 初始化过程中，需要多个调用的抽象。 标记为调用**SwCallback()** 将重复几次，并调用标记为**SwCall()** 是可选的。  
   
  ![SNL 服务器功能](../../adapters-and-accelerators/fileact-interact/media/42395775-cdbc-4e36-8b36-566caefa2aaf.gif "42395775-cdbc-4e36-8b36-566caefa2aaf")  
   

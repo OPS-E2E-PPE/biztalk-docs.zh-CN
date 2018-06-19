@@ -1,14 +1,14 @@
 ---
-title: "从暖备份中还原生产 |Microsoft 文档"
-ms.custom: 
+title: 从暖备份中还原生产 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bda14b8-b3cc-4a5e-a353-fca5885fd594
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302085"
 ---
 # <a name="restoring-production-from-a-warm-backup"></a>从暖备份中还原生产
 如果源系统开始变得不可靠，则可以从目标到源中还原数据库。 执行以下过程将从目标的数据库还原到源。  

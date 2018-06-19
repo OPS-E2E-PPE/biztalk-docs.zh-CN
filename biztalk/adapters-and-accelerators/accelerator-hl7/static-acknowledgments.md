@@ -1,17 +1,17 @@
 ---
-title: "静态确认 |Microsoft 文档"
-ms.custom: 
+title: 静态确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - static acknowledgements
 - acknowledgements, static acknowledgements
 ms.assetid: 1cdd01fc-1dae-4851-917f-4f13a0f9595a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206277"
 ---
 # <a name="static-acknowledgments"></a>静态确认
 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持原始、 增强、 延迟，和静态确认 (ACK) 模式。 如果你选择静态 ACK 模式中的一方[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将生成包含仅相对值的指示成功或失败的静态确认。 是否接收系统接收和处理消息，在成功和失败值配置中，该值指示静态 ACK[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。  

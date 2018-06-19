@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204485"
 ---
 # <a name="batch-schedule-tab"></a>批处理计划选项卡
 你使用**批处理计划**选项卡以激活、 请求或终止出站批处理。 激活的出站批处理包括两个步骤： 配置基于时间的或消息计数条件，然后启动出站批处理业务流程。  

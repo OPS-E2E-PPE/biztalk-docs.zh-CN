@@ -1,14 +1,14 @@
 ---
-title: "调试自定义管道 |Microsoft 文档"
-ms.custom: 
+title: 调试自定义管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27e5445a-6415-4c52-a450-b74a71fc4aa2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970347"
 ---
 # <a name="debugging-custom-pipelines"></a>调试自定义管道
 当消息处理在您的自定义管道中失败时，可以使用源级别的调试来确定和解决问题。 源级别调试都完成使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]调试器将附加到 BTSNTSVC.exe （如果部署自定义管道） 或 Pipeline.exe （如果使用独立的管道工具）。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  加载自定义管道项目解决方案到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
-2.  更改您的解决方案的输出路径*\<安装文件夹\>*\Pipeline 组件。 在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>*\Pipeline 组件的目录。  
+2.  更改您的解决方案的输出路径*\<安装文件夹\>* \Pipeline 组件。 在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>* \Pipeline 组件的目录。  
   
 3.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，通过单击部署解决方案**生成**&#124;**部署**。  
   
@@ -56,9 +57,9 @@ ms.lasthandoff: 11/28/2017
   
 1.  加载自定义管道项目解决方案到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
-2.  更改您的解决方案的输出路径*\<安装文件夹\>*\Pipeline 组件。 在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>*\Pipeline 组件的目录。  
+2.  更改您的解决方案的输出路径*\<安装文件夹\>* \Pipeline 组件。 在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>* \Pipeline 组件的目录。  
   
-3.  更改解决方案的启动操作。 在解决方案资源管理器，右键单击你的项目，单击调试选项卡，单击启动外部程序，然后单击**...** 并导航到*\<安装文件夹\>*\SDK\Utilities\PipelineTools 选择 Pipeline.exe。 在启动选项，输入适合你的组件的命令行自变量。 Pipeline.exe 的详细信息，请参阅[管道工具](../core/pipeline-tools.md)。 典型配置指定管道和示例文件：  
+3.  更改解决方案的启动操作。 在解决方案资源管理器，右键单击你的项目，单击调试选项卡，单击启动外部程序，然后单击 **...** 并导航到*\<安装文件夹\>* \SDK\Utilities\PipelineTools 选择 Pipeline.exe。 在启动选项，输入适合你的组件的命令行自变量。 Pipeline.exe 的详细信息，请参阅[管道工具](../core/pipeline-tools.md)。 典型配置指定管道和示例文件：  
   
     ```  
     <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

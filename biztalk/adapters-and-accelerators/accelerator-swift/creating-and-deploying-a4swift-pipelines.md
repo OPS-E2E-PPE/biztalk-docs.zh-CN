@@ -1,11 +1,11 @@
 ---
-title: "创建和部署 A4SWIFT 管道 |Microsoft 文档"
-ms.custom: 
+title: 创建和部署 A4SWIFT 管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipelines, deploying
 - pipelines, creating
 ms.assetid: 2a614510-7e15-4e88-9012-fc019d3aefee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210949"
 ---
 # <a name="creating-and-deploying-a4swift-pipelines"></a>创建和部署 A4SWIFT 管道
 下图中所示，请执行以下步骤以创建和部署消息修复和新提交的 SWIFT 管道。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
 7.  在**属性**，验证**BRE 验证**和**XML 验证**属性设置为**True**。  
   
     > [!NOTE]
-    >  SWIFT 标头架构属性应设置为**（无）**。  
+    >  SWIFT 标头架构属性应设置为 **（无）**。  
   
 8.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，单击**文件**，，然后**保存所有**。  
   

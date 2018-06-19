@@ -1,11 +1,11 @@
 ---
-title: "消息修复过程 |Microsoft 文档"
-ms.custom: 
+title: 消息修复过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - validating, messages
 - messages, validating
 ms.assetid: 87b97cec-5796-4684-bcf0-53285aca7ee2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211189"
 ---
 # <a name="message-repair-process"></a>消息修复过程
 默认情况下，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]在 MessageBox 数据库的挂起队列中挂起失败的消息。 此进程处理失败的消息分开成功消息。 使用此默认机制，但是，你具有有限的功能来检索失败的消息和修复它们。 消息修复和新提交功能[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]使[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户修复一条消息并将其重新提交。 另一个[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]然后，用户可以验证修复、 和第三个可以批准修复。  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 263f1f5d9441a30687df3e1a7a1170b7bf35e2fc
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015068"
 ---
 # <a name="how-to-set-send-pipelines-for-jd-edwards-enterpriseone"></a>如何设置 JD Edwards EnterpriseOne 的发送管道
 Microsoft BizTalk Adapter for 博士 Edwards EnterpriseOne 要求你选择**XMLTransmit**和**XMLReceive**为发送和接收管道分别。  

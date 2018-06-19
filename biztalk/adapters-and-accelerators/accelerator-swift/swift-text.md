@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214517"
 ---
 # <a name="swift-text"></a>SWIFT 文本
 消息文本构成财务 (FIN) 消息的负载，并包含所有数据字段包含消息类型，发送方和接收方，字段除外。 这三个字段都包含在标头部分。 有些消息还包含一个可选用户标头，它可能还提供处理信息。  

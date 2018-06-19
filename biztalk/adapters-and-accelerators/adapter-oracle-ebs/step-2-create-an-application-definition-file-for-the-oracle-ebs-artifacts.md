@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 创建 Oracle E-business Suite 项目的应用程序定义文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Oracle E-business Suite 项目的应用程序定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2665afde-0337-4795-ab4c-6223d39fdf9c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219301"
 ---
 # <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>步骤 2： 创建 Oracle E-business Suite 项目的应用程序定义文件
 ![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -187,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  展开**筛选器**参数，然后单击第二个**筛选器**节点。  
   
-    4.  在属性窗格中，选择**员工姓名 [员工]**从**标识符**列表。  
+    4.  在属性窗格中，选择**员工姓名 [员工]** 从**标识符**列表。  
   
          ![设置筛选器参数标识符](../../adapters-and-accelerators/adapter-oracle-ebs/media/16-set-identifier.gif "16_Set_Identifier")  
   
@@ -199,7 +200,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  展开**返回**节点，然后第二个**返回**节点，则**项**节点，，然后单击**名称**节点。  
   
-    4.  在属性窗格中，选择**员工姓名 [员工]**从**标识符**列表。  
+    4.  在属性窗格中，选择**员工姓名 [员工]** 从**标识符**列表。  
   
 #### <a name="to-create-a-specific-finder-method-instance-for-the-select-method"></a>若要创建特定的 Finder 方法实例选择的方法  
   

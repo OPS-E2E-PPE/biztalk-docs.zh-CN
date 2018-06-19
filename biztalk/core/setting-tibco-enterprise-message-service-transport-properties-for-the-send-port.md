@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 24e73be3b953cbd7f597a34a06f09d364ec0f4f4
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014268"
 ---
 # <a name="set-send-port-transport-properties-for-the-send-port-for-tibco-enterprise-message-service"></a>为 TIBCO 企业消息服务设置发送端口发送端口的传输属性
 TIBCO Enterprise Message Service 传输属性在设计时配置，在运行时使用。 在**传输属性**对话框中，你设置的连接和凭据参数特定于服务器系统和你尝试访问的对象。  
@@ -31,7 +32,7 @@ TIBCO Enterprise Message Service 传输属性在设计时配置，在运行时�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |`Destination`|强制设置。 定义目标名称和类型。 例如： staticqueue [Q1]。<br /><br /> 定义的队列或主题具有以下格式: {静态} {动态] 队列 [queuename] 或 {静态} {动态] 主题 [topicname]。 **注意：**可以将消息发送到的目标，不存在。 在这种情况下，TIBCO 企业消息服务创建目标;这称为*动态目标*。 这是在使用消息时由生成者创建的目标，当生成者断开连接时，此目标会被删除。 A*静态目标*是目标仅可以创建由 TIBCO 企业消息服务管理员。 在您打开与目标的连接时无法连接到动态端口，因为用于 TIBCO Enterprise Message Service 的 BizTalk 适配器在服务器上使用名称查找机制。 当您使用名称查找时，只有静态端口是可见的。 在连接到动态端口时，可以使用静态目标；但是，如果不存在具有该名称的目标，则会创建一个目标。 目标可让您在定义端口时显式指定要使用的目标类型。 目标的语法不区分大小写： staticqueue [queue_name]、 statictopic [topic_name]、 dynamicqueue [queue_name];dynamictopic [topic_name]。|  
+    |`Destination`|强制设置。 定义目标名称和类型。 例如： staticqueue [Q1]。<br /><br /> 定义的队列或主题具有以下格式: {静态} {动态] 队列 [queuename] 或 {静态} {动态] 主题 [topicname]。 **注意：** 可以将消息发送到的目标，不存在。 在这种情况下，TIBCO 企业消息服务创建目标;这称为*动态目标*。 这是在使用消息时由生成者创建的目标，当生成者断开连接时，此目标会被删除。 A*静态目标*是目标仅可以创建由 TIBCO 企业消息服务管理员。 在您打开与目标的连接时无法连接到动态端口，因为用于 TIBCO Enterprise Message Service 的 BizTalk 适配器在服务器上使用名称查找机制。 当您使用名称查找时，只有静态端口是可见的。 在连接到动态端口时，可以使用静态目标；但是，如果不存在具有该名称的目标，则会创建一个目标。 目标可让您在定义端口时显式指定要使用的目标类型。 目标的语法不区分大小写： staticqueue [queue_name]、 statictopic [topic_name]、 dynamicqueue [queue_name];dynamictopic [topic_name]。|  
     |`Port Number`|TIBCO EMS 服务器侦听的端口。|  
     |`Server Name`|强制设置。 托管 TIBCO EMS 服务器的系统的名称。|  
   

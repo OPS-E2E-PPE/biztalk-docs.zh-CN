@@ -1,14 +1,14 @@
 ---
-title: "损坏的备份文件 |Microsoft 文档"
-ms.custom: 
+title: 损坏的备份文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc48197c-944a-4f0a-ba01-8e1d91c88ad3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299629"
 ---
 # <a name="corrupt-backup-files"></a>损坏的备份文件
 备份文件可能已损坏、 损坏或缺失。 如果发生这种情况，则无法还原至少一个文件。 遇到的失败的系统上的还原作业搜索下一个有效的完整备份集。 在大多数情况下它将需要强制源系统上进行完整备份。 如果没有此类集存在，恢复作业将失败并有效的完整备份集到达之前，每次后续运行也会失败。 如果存在一组，它用于修复环境。  

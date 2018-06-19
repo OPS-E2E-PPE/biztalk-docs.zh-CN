@@ -1,15 +1,15 @@
 ---
-title: "企业应用程序适配器 |Microsoft 文档"
-description: "Microsoft 企业应用程序的 BizTalk 适配器包括博士 Edwards EnterpriseOne，博士 Edwards OneWorld PeopleSoft 企业、 TIBCO 企业消息服务和 TIBCO 会合若要在 BizTalk Server 中使用"
-ms.custom: 
+title: 企业应用程序适配器 |Microsoft 文档
+description: Microsoft 企业应用程序的 BizTalk 适配器包括博士 Edwards EnterpriseOne，博士 Edwards OneWorld PeopleSoft 企业、 TIBCO 企业消息服务和 TIBCO 会合若要在 BizTalk Server 中使用
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1960a5a-d627-42ce-8898-5df444846fea
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016132"
 ---
 # <a name="enterprise-applications-adapters-in-biztalk-server"></a>BizTalk Server 中的企业应用程序适配器
 

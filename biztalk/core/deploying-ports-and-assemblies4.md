@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: ac85aec2f1153d5117c95627e573ec563d58dbc2
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014796"
 ---
 # <a name="deploying-ports-and-assemblies"></a>部署端口和程序集
 使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可在目标计算机上复制端口和程序集。 BizTalk Server 将发送端口/接收位置配置导出到一个 XML 文件中。  

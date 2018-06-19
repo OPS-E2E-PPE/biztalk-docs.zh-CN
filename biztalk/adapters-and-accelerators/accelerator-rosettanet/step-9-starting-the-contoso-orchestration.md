@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209445"
 ---
 # <a name="step-9-starting-the-contoso-orchestration"></a>步骤 9： 启动 Contoso 业务流程
 在此步骤中，你将通过定义物理源位置和目标位置来完成端口配置流程。 将物理端口绑定到你在中创建的逻辑端口[步骤 7： 创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)。 然后登记服务关联的物理环境的业务流程将运行中的业务流程中设计的业务流程。 最后，你启动业务流程，以便它可以参与与 Fabrikam 的业务事务。  

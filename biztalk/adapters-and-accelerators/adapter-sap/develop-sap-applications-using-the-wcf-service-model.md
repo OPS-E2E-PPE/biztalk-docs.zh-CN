@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217173"
 ---
 # <a name="develop-sap-applications-using-the-wcf-service-model"></a>开发使用 WCF 服务模型的 SAP 应用程序
 在最低级别，[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]提供一个在其中客户端调用服务上的操作通过在客户端和服务终结点之间建立信道交换 SOAP 消息的编程模型。 此模型中，称为 WCF 通道模型，公开数据类型和方法，您可以直接对 WCF 通道体系结构进行操作。 WCF 通道模型为您提供通过你创建的 SOAP 消息的内容和方式这两个应用程序的直接控制和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用它们; 但是，创建格式正确的 SOAP 消息在通道上发送和验证返回答复消息可以是详细、 更严格的任务。  

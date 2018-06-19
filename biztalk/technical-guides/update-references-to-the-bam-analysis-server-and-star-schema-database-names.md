@@ -1,14 +1,14 @@
 ---
-title: "更新到 BAM Analysis Server 和星型架构数据库名称的引用 |Microsoft 文档"
-ms.custom: 
+title: 更新到 BAM Analysis Server 和星型架构数据库名称的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 319caa26-1292-4453-a316-efca4fbffdb6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302229"
 ---
 # <a name="update-references-to-the-bam-analysis-server-and-star-schema-database-names"></a>更新引用到 BAM Analysis Server 和星型架构数据库名称
 如果备份了 BAM 分析数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机上，然后重命名该备份。  

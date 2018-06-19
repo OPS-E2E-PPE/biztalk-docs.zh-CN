@@ -1,14 +1,14 @@
 ---
-title: "阶段 3： 准备评估 |Microsoft 文档"
-ms.custom: 
+title: 阶段 3： 准备评估 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d153ed62-f2cc-4080-8912-c98ecdd329f5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301837"
 ---
 # <a name="phase-3-preparing-for-the-assessment"></a>阶段 3： 准备评估
 性能评估阶段可以被想象成审视阶段的"如何""怎么"和计划阶段的准备工作的"何时。" 此时在性能评估中，所有利益干系人应具有达成一致后用户参与策略和计划的范围进行试验室。 它是在其中执行计划和执行任何步骤以获取已准备好的性能实验室的执行性能评估的准备阶段。  

@@ -1,17 +1,17 @@
 ---
-title: "如何创建发送 Port1 |Microsoft 文档"
-ms.custom: 
+title: 如何创建发送 Port1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating send ports
 - send ports, creating
 ms.assetid: bf32e9f5-ebed-43d2-b9a9-6ab91925d973
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015036"
 ---
 # <a name="how-to-create-a-send-port"></a>如何创建发送端口
 使用下列过程来创建 JD Edwards EnterpriseOne 的 BizTalk Server 的发送端口。  

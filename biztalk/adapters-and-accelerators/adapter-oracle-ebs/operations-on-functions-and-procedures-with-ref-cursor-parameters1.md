@@ -1,14 +1,14 @@
 ---
-title: "对函数和过程与 REF CURSOR Parameters1 操作 |Microsoft 文档"
-ms.custom: 
+title: 对函数和过程与 REF CURSOR Parameters1 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6801c1e-7992-40a0-bab7-87957840cedd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215485"
 ---
 # <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters"></a>对函数和过程与 REF CURSOR 参数的操作
 REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针的 PL/SQL 数据类型。 REF CURSOR 类型使输入和输出流的数据非常适合传输大量数据传入和传出的 PL/SQL 代码。 

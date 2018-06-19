@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206021"
 ---
 # <a name="refi12-in-v2xml-24"></a>V2 中的 REF_I12。XML 2.4
 你必须手动更改 V2 中的 REF_I12 架构中的以下代码。XML 2.4 后运行 Update2XMLSchema 工具：  

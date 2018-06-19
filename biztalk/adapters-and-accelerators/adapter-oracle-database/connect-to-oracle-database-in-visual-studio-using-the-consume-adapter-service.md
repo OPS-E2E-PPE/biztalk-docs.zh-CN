@@ -1,17 +1,17 @@
 ---
-title: "连接到 Oracle 数据库在 Visual Studio 中使用使用适配器服务 |Microsoft 文档"
-ms.custom: 
+title: 连接到 Oracle 数据库在 Visual Studio 中使用使用适配器服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connecting, to the Oracle database
 - connection, to the Oracle database
 ms.assetid: db2789d0-2d61-472b-ad0c-4ef0707e9c64
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215101"
 ---
 # <a name="connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service"></a>连接到 Visual Studio 使用使用适配器服务中的 Oracle 数据库
 使用适配器服务外接程序被安装在安装 WCF LOB 适配器 SDK 时。 使用适配器服务外接程序加载在计算机上安装的所有 WCF 自定义绑定。 若要连接到 Oracle 数据库使用基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在 BizTalk 项目，你必须使用**oracleDBBinding**。  

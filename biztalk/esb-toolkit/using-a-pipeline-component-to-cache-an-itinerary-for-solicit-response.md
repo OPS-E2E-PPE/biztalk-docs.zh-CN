@@ -1,14 +1,14 @@
 ---
-title: "使用管道组件来缓存请求作出响应一条路线 |Microsoft 文档"
-ms.custom: 
+title: 使用管道组件来缓存请求作出响应一条路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add07ebf-785c-4c53-be69-efd40677a758
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294989"
 ---
 # <a name="using-a-pipeline-component-to-cache-an-itinerary-for-solicit-response"></a>使用管道组件来缓存请求作出响应一条路线
 通过提交消息[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线上负载增加可以通过单向路线或双向 （请求-响应） 路线。 若要支持请求-响应路线，路线机制必须提供 BizTalk 动态请求-响应发送端口的缓存。  

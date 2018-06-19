@@ -1,14 +1,14 @@
 ---
-title: "使用带有 SharePoint Oracle E-business Suite 适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用带有 SharePoint Oracle E-business Suite 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d431f8a6-9812-4783-b9f4-34ceb73cf8ba
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215301"
 ---
 # <a name="use-the-oracle-e-business-suite-adapter-with-sharepoint"></a>使用带有 SharePoint Oracle E-business Suite 适配器
 大多数的业务线 (LOB) 应用程序具有相对较少所需的行业专业人员可以访问的专有接口。 但是，因为组织中所有级别信息工作者需要相关信息，行业专家必须将所需的数据导出到更熟悉的应用程序，像 Microsoft Excel 这样的信息工作人员可以使用该信息。  

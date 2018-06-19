@@ -1,14 +1,14 @@
 ---
-title: "ESB 管理门户和错误消息查看器 |Microsoft 文档"
-ms.custom: 
+title: ESB 管理门户和错误消息查看器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4a1636c-2e45-4ee5-92c2-81c976582da3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295205"
 ---
 # <a name="the-esb-management-portal-and-fault-message-viewer"></a>ESB 管理门户和错误消息查看器
 一个主要组件[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是基于 Web 的门户，提供了各种各样的异常管理和警报通知功能; 此外，它作为有用的配置管理和通用、 描述、 发现和集成 （UDDI) 注册接口。 图 1 显示一个门户，它概述了运行状况当前正在运行的应用程序的主页。  

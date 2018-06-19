@@ -1,14 +1,14 @@
 ---
-title: "一般性的指导原则，用于提高网络性能 |Microsoft 文档"
-ms.custom: 
+title: 一般性的指导原则，用于提高网络性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 286c10d2-9262-4e3c-adde-f7b5780c2736
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298445"
 ---
 # <a name="general-guidelines-for-improving-network-performance"></a>一般性的指导原则，用于提高网络性能
 具有已调整为最佳值的网络设置显示可以有效地解决网络瓶颈并提高总体 BizTalk Server 解决方案中的网络性能。 这应在解决方案中，包括 BizTalk Server 计算机、 SQL Server 计算机和任何其他服务器计算机所涉及的所有计算机上。  

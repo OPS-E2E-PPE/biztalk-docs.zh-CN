@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: e31246cf90f42206de6a22fcc32338fcb2936db3
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014884"
 ---
 # <a name="how-to-create-receive-ports-in-tibco-enterprise-message-service"></a>如何创建 在 TIBCO Enterprise Message Service 中创建接收端口
 请遵循以下步骤创建一个接收端口。  

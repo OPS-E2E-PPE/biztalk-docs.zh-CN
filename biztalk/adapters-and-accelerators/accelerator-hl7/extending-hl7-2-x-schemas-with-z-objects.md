@@ -1,17 +1,17 @@
 ---
-title: "扩展 HL7 2.X 架构具有 Z 对象 |Microsoft 文档"
-ms.custom: 
+title: 扩展 HL7 2.X 架构具有 Z 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, Z objects
 - Z objects, extending 2.X schemas
 ms.assetid: 0980d919-eb81-4c65-b0f7-f17f7cfef6b3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204653"
 ---
 # <a name="extending-hl7-2x-schemas-with-z-objects"></a>扩展 HL7 2.X 架构具有 Z 对象
 HL7 组织定义 HL7 2.X 架构，并要求所有发件人和接收方，来识别并使用这些架构，因为组织定义它们。 符合架构时，可确保的互操作性。 但是，HL7 标准允许你自定义现有 HL7 2.X 架构为你特定的本地目的。 你还可以定义全新的架构和对象。 使用哪些 HL7 标准调用 Z 对象执行此操作。  

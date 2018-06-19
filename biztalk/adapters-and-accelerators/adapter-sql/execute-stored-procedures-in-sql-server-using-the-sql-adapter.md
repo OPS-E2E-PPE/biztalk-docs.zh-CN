@@ -1,14 +1,14 @@
 ---
-title: "在使用 SQL 适配器的 SQL Server 中执行存储过程 |Microsoft 文档"
-ms.custom: 
+title: 在使用 SQL 适配器的 SQL Server 中执行存储过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245626a7-f546-4aca-90df-c0579139a872
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224053"
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中执行存储过程
 TRANSACT-SQL 和 SQL Server 中的 CLR 存储过程作为中的操作进行展示[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]下**过程**时使用的节点[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 通过公开的操作名称[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]是 SQL Server 中的存储过程的名称相同。 存储过程中的所有参数都公开在相应的操作。 OUT 参数包含存储过程的返回值。 存储过程的结果集是数据集的数组。 有关数据集的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=196853](http://go.microsoft.com/fwlink/?LinkId=196853)。 在运行时，如果作为响应消息的一部分获取的目标对象的架构信息。  
@@ -44,7 +45,7 @@ TRANSACT-SQL 和 SQL Server 中的 CLR 存储过程作为中的操作进行展�
 |结果集包含...|存储过程|强类型的存储的过程|  
 |--------------------------|----------------------|--------------------------------------|  
 |**没有名称的列**|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]按以下方式生成的列的名称： 为而没有列生成唯一 ID (GUID)"-"（连字符），然后此 GUID 字符串具有前缀"C"因为生成的 GUID 可能以数字开头，但 XML 标记名称不能和。|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]会生成以下名称的列:"UnNamedColumn [column_index]"，从该位置 column_index 开始从"0"。|  
-|**具有相同名称的列**|以外的第一个列的名称以"_"（下划线） 和随机 GUID 而没有将追加"-"（连字符）。 例如:"\_[GUID]"。|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]不支持具有相同名称的列中的结果集，并在引发异常。 **重要说明：**必须确保在结果集中的列名称具有唯一的名称。|  
+|**具有相同名称的列**|以外的第一个列的名称以"_"（下划线） 和随机 GUID 而没有将追加"-"（连字符）。 例如:"\_[GUID]"。|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]不支持具有相同名称的列中的结果集，并在引发异常。 **重要说明：** 必须确保在结果集中的列名称具有唯一的名称。|  
   
 > [!NOTE]
 >  一般情况下，建议，在结果中的所有列都设置的存储过程和强类型的存储的过程必须命名为，并且具有唯一的名称。  

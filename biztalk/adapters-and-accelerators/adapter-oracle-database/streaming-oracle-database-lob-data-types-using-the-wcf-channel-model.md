@@ -1,17 +1,17 @@
 ---
-title: "流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型 |Microsoft 文档"
-ms.custom: 
+title: 流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, Oracle LOB data types
 - WCF channel model, streaming Oracle LOB data types
 ms.assetid: 513a7cb8-495d-4019-bce1-b5babca3629f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215789"
 ---
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端流式处理的某些操作的 LOB 数据。 本主题中的各节描述了如何实现流式处理 LOB 数据时使用 WCF 通道模型。  

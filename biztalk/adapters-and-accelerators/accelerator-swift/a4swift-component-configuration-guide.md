@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209117"
 ---
 # <a name="a4swift-component-configuration-guide"></a>A4SWIFT 组件配置指南
 本指南提供有关配置信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 在安装 A4SWIFT 和完成 A4SWIFT 配置向导 （如安装指南中所述） 后，请执行此配置指南中的步骤。 此配置指南包括以下说明：  

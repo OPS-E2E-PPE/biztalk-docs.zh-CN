@@ -1,11 +1,11 @@
 ---
-title: "安全案例研究： 公司 A |Microsoft 文档"
-ms.custom: 
+title: 安全案例研究： 公司 A |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - architecture, security
 - security, case studies
 ms.assetid: 9417ecf9-e340-479f-b120-552c62f3b189
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269941"
 ---
 # <a name="security-case-studies-company-a"></a>安全性案例研究：公司 A
 公司 A 是为工业区提供物料和服务的主要供应商。 其业务模式依赖于与主要客户和主要供应商之间的电子事务。 公司 A 使用 Microsoft BizTalk 应用程序来管理内部环境与外部环境之间的事务和通信。  

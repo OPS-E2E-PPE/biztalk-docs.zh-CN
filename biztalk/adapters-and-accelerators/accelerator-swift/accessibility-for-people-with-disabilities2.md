@@ -1,17 +1,17 @@
 ---
-title: "辅助功能的人士提供 Disabilities2 |Microsoft 文档"
-ms.custom: 
+title: 辅助功能的人士提供 Disabilities2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, accessibility
 - accessibility
 ms.assetid: 7b11f488-2aae-4625-8537-cbd3c81e62a3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208773"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>为残障人士提供的辅助功能
 Microsoft 致力于使其产品与服务更易于所有人使用。 有关辅助功能和 Microsoft 的服务的常规信息，请参阅 Microsoft 辅助功能网站在[http://go.microsoft.com/fwlink/?LinkId=56272](http://go.microsoft.com/fwlink/?LinkId=56272)。  

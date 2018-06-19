@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214157"
 ---
 # <a name="supporting-secure-sockets-layer-ssl"></a>支持安全套接字层 (SSL)
 若要在客户端计算机和 MRSR 服务器之间部署中实现安全套接字层 (SSL) 协议，你需要请求在 Internet 信息服务 (IIS) 服务器上配置的"服务器身份验证"证书。  

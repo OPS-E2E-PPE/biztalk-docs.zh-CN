@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214885"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database"></a>配置使用端口绑定文件到 Oracle 数据库的物理端口绑定
 当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]生成元数据的 Oracle 数据库项目，以外的架构文件，[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会生成端口绑定文件。 你可以将此绑定文件导入你的 BizTalk 应用程序创建物理发送或接收端口。 有关导入绑定文件的说明，请参阅[重复使用 Oracle 数据库适配器绑定](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)。 如果你导入此绑定文件，你无需手动创建物理发送或接收端口。  

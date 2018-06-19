@@ -1,11 +1,11 @@
 ---
-title: "有关日志记录流程 |Microsoft 文档"
-ms.custom: 
+title: 有关日志记录流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - logging, about logging
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - logging
 - auditing
 ms.assetid: 859ee1f5-aae4-4a47-ab39-8d2b4168a429
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204717"
 ---
 # <a name="about-the-logging-process"></a>有关日志记录流程
 你的应用程序处理关键的因为时间敏感数据和货币数据，审核将成为应用程序的关键部分。 若要启用企业级别的可管理性和可用性， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]依赖于以下共享的运行的时和管理组件：  

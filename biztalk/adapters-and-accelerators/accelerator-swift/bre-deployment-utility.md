@@ -1,17 +1,17 @@
 ---
-title: "BRE 部署实用工具 |Microsoft 文档"
-ms.custom: 
+title: BRE 部署实用工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BRE Deployment utility
 - deploying, BRE Deployment utility
 ms.assetid: 5b04592c-ea1e-4ded-8ca4-dcd051d6375e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966811"
 ---
 # <a name="bre-deployment-utility"></a>BRE 部署实用工具
 你可以使用 BRE 部署实用工具进行发布和部署的业务规则引擎 (BRE) 词汇和 SWIFT 架构所需的策略。 启用消息类型的 BRE 验证需要发布和部署这些词汇和策略。  

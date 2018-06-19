@@ -1,14 +1,14 @@
 ---
-title: "为 Insert、 Update、 Delete 消息架构，然后选择表和视图上的操作 |Microsoft 文档"
-ms.custom: 
+title: 为 Insert、 Update、 Delete 消息架构，然后选择表和视图上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fff9cd3-26c0-4d5c-8162-3fd7966a5020
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25967211"
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations-on-tables-and-views"></a>消息架构为插入、 更新、 删除和选择表和视图上的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现插入、 更新、 删除和每个表和 SQL Server 数据库中的视图的 Select 操作。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]这些操作中使用强类型的记录和记录集。  

@@ -1,14 +1,14 @@
 ---
-title: "已知问题 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 已知问题 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cda4248-2efa-4e3d-a5ce-9a57728c51e1
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968003"
 ---
 # <a name="known-issues-with-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的已知的问题
 本主题介绍与关联的已知的问题[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 它还提供某些这些问题的解决方法。  

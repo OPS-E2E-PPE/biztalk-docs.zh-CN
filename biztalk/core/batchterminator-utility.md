@@ -1,14 +1,14 @@
 ---
-title: "BatchTerminator 实用程序 |Microsoft 文档"
-ms.custom: 
+title: BatchTerminator 实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 771241fa-7df5-4882-8430-c2f36200cc9d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967347"
 ---
 # <a name="batchterminator-utility"></a>BatchTerminator 实用工具
 使用 BatchTerminator 实用工具，您可以终止所有正在运行的用于批量处理 EDI 交换的批处理业务流程。 如果您正在运行大量批处理业务流程实例，并且需要终止所有这些批处理，以便对 BizTalk Server 系统执行维护，此时本实用工具将非常有用。  

@@ -1,11 +1,11 @@
 ---
-title: "创建发送和接收端口 |Microsoft 文档"
-ms.custom: 
+title: 创建发送和接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, receive ports
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - receive ports, creating [JD Edwards OneWorld adapters]
 - creating, send ports [JD Edwards OneWorld adapters]
 ms.assetid: fb4ca8b1-40d9-4beb-a791-554086f8ca98
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014028"
 ---
 # <a name="creating-send-and-receive-ports"></a>创建发送和接收端口
 使用以下过程为用于 JD Edwards OneWorld 的 BizTalk 适配器创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送和接收端口。  

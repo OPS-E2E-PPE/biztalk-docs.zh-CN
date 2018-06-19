@@ -1,17 +1,17 @@
 ---
-title: "示例供应链方案 |Microsoft 文档"
-ms.custom: 
+title: 示例供应链方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - supply chains, examples
 - examples, supply chains
 ms.assetid: 1837a2c8-b1d4-4e1f-a196-a48b13b22662
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211517"
 ---
 # <a name="sample-supply-chain-scenario"></a>示例供应链方案
 在高科技供应链中，最基本的流程之一便是采购订单请求与响应消息之间的交换。 买方发出采购订单，供应商通过一系列操作确认是否接受或拒绝订单，还是将订单挂起。  

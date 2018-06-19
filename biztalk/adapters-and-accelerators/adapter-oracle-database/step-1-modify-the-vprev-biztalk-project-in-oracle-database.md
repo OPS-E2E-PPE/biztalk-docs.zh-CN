@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 修改 vPrev Oracle 数据库中的 BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 修改 vPrev Oracle 数据库中的 BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e3e22ac-126b-46ec-a6dc-3421ad721392
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216189"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-in-oracle-database"></a>步骤 1： 修改 vPrev Oracle 数据库中的 BizTalk 项目
 ![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **完成时间：** 10 分钟  
   
- **目标：**向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：  
+ **目标：** 向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：  
   
 -   生成 SCOTT 上的插入操作的元数据。使用基于 WCF 的 CUSTOMER 表[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。  
   

@@ -1,14 +1,14 @@
 ---
-title: "如何为 BizTalk Server 中安装证书 |Microsoft 文档"
-ms.custom: 
+title: 如何为 BizTalk Server 中安装证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70a89595-8828-4872-b78b-77e9b0b048b8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298421"
 ---
 # <a name="how-to-install-certificates-for-biztalk-server"></a>如何为 BizTalk Server 中安装证书
 若要帮助保护数据，将传输上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，必须将适当的证书添加到适当的证书存储中，并将证书与相应的 BizTalk 项目相关联。 本主题介绍如何显示本地计算机和当前用户证书存储，证书管理控制台接口以及如何在合适的存储区中安装适当的证书。  

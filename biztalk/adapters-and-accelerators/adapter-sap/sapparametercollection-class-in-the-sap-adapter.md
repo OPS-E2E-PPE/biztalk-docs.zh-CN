@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218037"
 ---
 # <a name="sapparametercollection-class-in-the-sap-adapter"></a>SAP 适配器中 SAPParameterCollection 类
 以下部分列出的方法和属性**SAPParameterCollection**类。 该项派生自**System.Data.Common.DbParameterCollection**。  

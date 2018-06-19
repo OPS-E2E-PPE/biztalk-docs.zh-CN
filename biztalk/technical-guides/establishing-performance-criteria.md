@@ -1,14 +1,14 @@
 ---
-title: "建立性能条件 |Microsoft 文档"
-ms.custom: 
+title: 建立性能条件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 181011d1-aa74-43fe-b05a-30b043956d70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299981"
 ---
 # <a name="establishing-performance-criteria"></a>建立性能条件
 BizTalk Server 解决方案的性能目标通常分为两个类别、 吞吐量或延迟之一。 本主题介绍评估吞吐量或延迟的 BizTalk Server 解决方案时应考虑的因素。  

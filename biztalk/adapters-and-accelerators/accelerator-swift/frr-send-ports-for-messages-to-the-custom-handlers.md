@@ -1,11 +1,11 @@
 ---
-title: "为到自定义处理程序的消息的 FRR 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 为到自定义处理程序的消息的 FRR 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, FRR
 - send ports, custom handlers
 ms.assetid: 486d7410-fde1-4a9b-a9c2-64c1ed85ebc0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207829"
 ---
 # <a name="frr-send-ports-for-messages-to-the-custom-handlers"></a>为到自定义处理程序的消息的 FRR 发送端口
 若要为 FRR 启用自定义处理程序，必须创建一系列 FRR 发送端口，每个将特定类型的原始消息的副本路由到的自定义处理程序。 这些发送端口都必须具有以下管道组件：  

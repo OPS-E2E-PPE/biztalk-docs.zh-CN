@@ -1,11 +1,11 @@
 ---
-title: "配置 BAM 警报 |Microsoft 文档"
-ms.custom: 
+title: 配置 BAM 警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - alerts, configuring
 - managing [BAM definitions], configuring alerts
 ms.assetid: 29327466-c8e9-41e8-bc12-f3ac6b5d3096
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968883"
 ---
 # <a name="configuring-bam-alerts"></a>配置 BAM 警报
 管理员可以修改 BAM 警报框架的某些元素。 本主题介绍管理员可用的配置选项。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking"**或**cd"C:\Program Files (x86) \Microsoft BizTalk服务器\<版本\>\Tracking"** 64 位计算机上。 按 **Enter**。  
+2.  导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking"** 或**cd"C:\Program Files (x86) \Microsoft BizTalk服务器\<版本\>\Tracking"** 64 位计算机上。 按 **Enter**。  
   
 3.  检索 ADF 文件。 类型**cscript ProcessBamNSFiles.vbs-获取\<ConfigFilePath\> \<ADFFilePath\> \< PID 服务器\> \< PID 数据库\>** . 请将其中的“配置文件路径”、“ADF 文件路径”、“PID 服务器”和“PID 数据库”替换为适合你的安装的值。  
   

@@ -1,17 +1,17 @@
 ---
-title: "配置批处理 |Microsoft 文档"
-ms.custom: 
+title: 配置批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, configuring
 - configuring, batching
 ms.assetid: 33c72d5e-31dd-44a8-8418-1faab3239e8e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204565"
 ---
 # <a name="configuring-batching"></a>配置批处理
 你使用[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]配置资源管理器来创建批处理，批处理中 / 批处理出批处理，并选择可用架构的出站批处理。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**所需的碎片**|选择以下选项之一：<br /><br /> -   **是**。 若要启用碎片。<br />-   **不**。 若要禁用碎片。 **注意：**为新的当事方，**所需的碎片**默认为**否**。|  
+    |**所需的碎片**|选择以下选项之一：<br /><br /> -   **是**。 若要启用碎片。<br />-   **不**。 若要禁用碎片。 **注意：** 为新的当事方，**所需的碎片**默认为**否**。|  
     |**选择消息**|选择你想要将作为从一批发送的消息类型**可用消息**窗口中，然后单击右箭头转向 (**>>**)。|  
     |**选择消息确认**|选择要为其以从一批的形式发送的确认的消息类型**可用消息确认**窗口中，然后单击向右移动 (**>>**)。|  
   

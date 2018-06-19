@@ -1,11 +1,11 @@
 ---
-title: "创建或编辑过程配置 |Microsoft 文档"
-ms.custom: 
+title: 创建或编辑过程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: 39cc2c93-0986-48d3-8c6f-4280ec9af4e0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207117"
 ---
 # <a name="creating-or-editing-a-process-configuration"></a>创建或编辑过程配置
 本部分介绍如何创建或编辑过程配置以实现在合作伙伴接口过程 (PIP) [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 RosettaNet PIP 定义了两个贸易合作伙伴间的业务流程对话。 在[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，若要创建 PIP 与合作伙伴，你必须首先创建过程配置。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]使用此配置文件来存储所有配置特征的 PIP。 然后，您可以使用此配置创建与合作伙伴的协议。  

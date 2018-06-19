@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b93e747cdc665fb5a8407ca2a3d052b880236378
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013036"
 ---
 # <a name="tibco-rendezvous-events-and-receive-locations"></a>TIBCO 集合事件和接收位置
 任何 TIBCO Rendezvous 系统都可以将消息发送到其选择的使用者名称。 这一概念*事件*是代的其他 TIBCO 会合程序的消息。  

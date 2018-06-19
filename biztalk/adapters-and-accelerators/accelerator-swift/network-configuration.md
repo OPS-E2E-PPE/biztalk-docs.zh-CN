@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214421"
 ---
 # <a name="network-configuration"></a>网络配置
 本部分提供在你的部署中配置网络的规范性指引。 有关详细信息，请参阅[为部署做好准备](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)。  

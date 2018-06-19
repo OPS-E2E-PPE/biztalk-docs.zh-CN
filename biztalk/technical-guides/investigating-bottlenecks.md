@@ -1,14 +1,14 @@
 ---
-title: "调查瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 调查瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ab8e485-ffe5-4f71-9ce2-f72c0c939e5d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298837"
 ---
 # <a name="investigating-bottlenecks"></a>调查瓶颈
 本主题介绍用于调查瓶颈的建议的过程。  
@@ -36,15 +37,15 @@ ms.lasthandoff: 09/20/2017
 ## <a name="testing-consistency"></a>测试的一致性  
  应进行更改设置后测量性能特征来验证更改的效果。  
   
--   **硬件-**使用一致的硬件，因为不同的硬件可以导致不一致的行为，并且生成误导性结果。 例如，不会使用便携式计算机来测试 BizTalk 解决方案的性能。  
+-   **硬件-** 使用一致的硬件，因为不同的硬件可以导致不一致的行为，并且生成误导性结果。 例如，不会使用便携式计算机来测试 BizTalk 解决方案的性能。  
   
--   **测试运行持续时间-**测量固定的最短期限以确保结果的可持续的性能。 运行更长时间测试还确保系统已通过段，其中的所有缓存进行都填充，数据库表已达到预期的计数和限制给定足够的时间，可以一次调节吞吐量，以预定义的初始热/提升阈值，则命中。 此方法将有助于发现最佳可承受吞吐量。  
+-   **测试运行持续时间-** 测量固定的最短期限以确保结果的可持续的性能。 运行更长时间测试还确保系统已通过段，其中的所有缓存进行都填充，数据库表已达到预期的计数和限制给定足够的时间，可以一次调节吞吐量，以预定义的初始热/提升阈值，则命中。 此方法将有助于发现最佳可承受吞吐量。  
   
--   **测试参数 –**不发生更改从测试运行将测试运行的测试参数。 例如，改变映射复杂性和/或文档大小可能产生不同的吞吐量和延迟结果。  
+-   **测试参数 –** 不发生更改从测试运行将测试运行的测试参数。 例如，改变映射复杂性和/或文档大小可能产生不同的吞吐量和延迟结果。  
   
--   **清除状态-**测试已完成后，请确保在运行下一步的测试之前已清理测试环境的状态。 例如，影响运行时吞吐量数据库中的生成可以历史数据。 回收服务实例有助于释放内存、 数据库连接等线程缓存的资源。 在测试环境中，你可能想要创建和执行 bts_CleanupMsgbox 存储过程中所述[如何手动清除数据从测试环境中的 MessageBox 数据库](http://go.microsoft.com/fwlink/?LinkId=158064)(http://go.microsoft.com/fwlink/?LinkId=158064)。 此脚本旨在运行之间返回到消息框方面的新状态的 BizTalk Server 测试环境。 该脚本删除所有正在运行的实例以及所有信息包括状态、 消息以及订阅，这些实例，但保留所有激活订阅，因此不需要重新登记你业务流程或发送端口。 请注意，此工具不支持在生产系统上。  
+-   **清除状态-** 测试已完成后，请确保在运行下一步的测试之前已清理测试环境的状态。 例如，影响运行时吞吐量数据库中的生成可以历史数据。 回收服务实例有助于释放内存、 数据库连接等线程缓存的资源。 在测试环境中，你可能想要创建和执行 bts_CleanupMsgbox 存储过程中所述[如何手动清除数据从测试环境中的 MessageBox 数据库](http://go.microsoft.com/fwlink/?LinkId=158064)(http://go.microsoft.com/fwlink/?LinkId=158064)。 此脚本旨在运行之间返回到消息框方面的新状态的 BizTalk Server 测试环境。 该脚本删除所有正在运行的实例以及所有信息包括状态、 消息以及订阅，这些实例，但保留所有激活订阅，因此不需要重新登记你业务流程或发送端口。 请注意，此工具不支持在生产系统上。  
   
--   **性能测试和优化-**此测试类别的目标是能够最大程度提高性能和吞吐量的你的应用程序，并查找你的系统的最大可持续吞吐量 (MST)。  有关规划和最大可持续性能测量的详细信息请参阅[持续性能规划](http://go.microsoft.com/fwlink/?LinkId=158065)(http://go.microsoft.com/fwlink/?LinkId=158065) 和[什么是可持续的性能？](http://go.microsoft.com/fwlink/?LinkId=132304) (http://go.microsoft.com/fwlink/?LinkId=132304)。  
+-   **性能测试和优化-** 此测试类别的目标是能够最大程度提高性能和吞吐量的你的应用程序，并查找你的系统的最大可持续吞吐量 (MST)。  有关规划和最大可持续性能测量的详细信息请参阅[持续性能规划](http://go.microsoft.com/fwlink/?LinkId=158065)(http://go.microsoft.com/fwlink/?LinkId=158065) 和[什么是可持续的性能？](http://go.microsoft.com/fwlink/?LinkId=132304) (http://go.microsoft.com/fwlink/?LinkId=132304)。  
   
      MST 是一个系统可以无限期地处理在生产环境中的消息流量的最高负载。 在投入生产之前，所有的 BizTalk 应用程序应进行测试的性能和吞吐量。 至少，你应运行一组代表表示最常见的使用方案的测试用例。 我们建议对预期的负载测试和峰值负载在匹配的生产环境的特征的单独环境中。 此环境应具有的所有公司的标准服务安装和运行，如监视代理和防病毒软件。  
   

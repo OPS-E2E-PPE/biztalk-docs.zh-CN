@@ -1,14 +1,14 @@
 ---
-title: "执行功能测试 |Microsoft 文档"
-ms.custom: 
+title: 执行功能测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b9c8c95-5a25-4255-a4c2-e26c67b7a620
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302317"
 ---
 # <a name="performing-functional-testing"></a>执行功能测试
 使用功能的测试来测试特定的 BizTalk 应用程序的上下文中的特定的端到端方案或给定的用例。 功能测试应涵盖通过给定的方案，包括故障路径的所有可能路径。 故障路径应进行评估，以确保应用程序适当地处理故障条件。  
