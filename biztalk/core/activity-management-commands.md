@@ -1,14 +1,14 @@
 ---
-title: "活动管理命令 |Microsoft 文档"
-ms.custom: 
+title: 活动管理命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34db54f3-4116-49de-880b-c9891a38d2e7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967915"
 ---
 # <a name="activity-management-commands"></a><span data-ttu-id="5e259-102">活动管理命令</span><span class="sxs-lookup"><span data-stu-id="5e259-102">Activity Management Commands</span></span>
 <span data-ttu-id="5e259-103">你可借助 BAM 管理实用程序的活动管理命令来处理已部署的活动。</span><span class="sxs-lookup"><span data-stu-id="5e259-103">The BAM Management utility activity management commands allow you to work with deployed activities.</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="5e259-112">集存档： 设置已存档的活动的行为。</span><span class="sxs-lookup"><span data-stu-id="5e259-112">set-archive: Sets the behavior of archived activity.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="5e259-113">您可以通过包括启用 BAM 实用程序的任何命令上跟踪**-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="5e259-113">You can enable tracing on any BAM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="5e259-114">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="5e259-114">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="5e259-115">该开关可与所有标准 BAM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="5e259-115">The switch can be used in conjunction with any normal BAM command.</span></span>  
+>  <span data-ttu-id="5e259-113">您可以通过包括启用 BAM 实用程序的任何命令上跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="5e259-113">You can enable tracing on any BAM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="5e259-114">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="5e259-114">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="5e259-115">该开关可与所有标准 BAM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="5e259-115">The switch can be used in conjunction with any normal BAM command.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="5e259-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="5e259-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

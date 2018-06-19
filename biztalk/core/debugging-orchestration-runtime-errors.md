@@ -1,14 +1,14 @@
 ---
-title: "调试业务流程运行时错误 |Microsoft 文档"
-ms.custom: 
+title: 调试业务流程运行时错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7be9ee5a-b9fa-428b-8b92-0fa0f801c724
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969899"
 ---
 # <a name="debugging-orchestration-runtime-errors"></a><span data-ttu-id="7340c-102">调试业务流程运行时错误</span><span class="sxs-lookup"><span data-stu-id="7340c-102">Debugging Orchestration Runtime Errors</span></span>
 <span data-ttu-id="7340c-103">本部分包含可帮助您解决业务流程运行时问题的一系列问题与解答。</span><span class="sxs-lookup"><span data-stu-id="7340c-103">This section contains a set of questions and answers designed to help you resolve runtime issues with your orchestrations.</span></span>  
@@ -96,7 +97,7 @@ MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLoc
 ```  
   
 ### <a name="cause"></a><span data-ttu-id="7340c-154">原因</span><span class="sxs-lookup"><span data-stu-id="7340c-154">Cause</span></span>  
- <span data-ttu-id="7340c-155">出现此问题的原因在运行时业务流程引擎中删除的文本"**file://"**从指定的 URL。</span><span class="sxs-lookup"><span data-stu-id="7340c-155">This problem occurs because at runtime the orchestration engine removes the text "**file://"** from the specified URL.</span></span> <span data-ttu-id="7340c-156">因此，使用上面的示例时，“file:///c:/test/out”的计算结果为 \c:\test\out，“file://mymachine/test/out”的计算结果为“mymachine\test\out”。</span><span class="sxs-lookup"><span data-stu-id="7340c-156">So, using the examples above, "file:///c:/test/out" is evaluated as \c:\test\out and "file://mymachine/test/out" is evaluated as mymachine\test\out.</span></span>  
+ <span data-ttu-id="7340c-155">出现此问题的原因在运行时业务流程引擎中删除的文本"**file://"** 从指定的 URL。</span><span class="sxs-lookup"><span data-stu-id="7340c-155">This problem occurs because at runtime the orchestration engine removes the text "**file://"** from the specified URL.</span></span> <span data-ttu-id="7340c-156">因此，使用上面的示例时，“file:///c:/test/out”的计算结果为 \c:\test\out，“file://mymachine/test/out”的计算结果为“mymachine\test\out”。</span><span class="sxs-lookup"><span data-stu-id="7340c-156">So, using the examples above, "file:///c:/test/out" is evaluated as \c:\test\out and "file://mymachine/test/out" is evaluated as mymachine\test\out.</span></span>  
   
 ### <a name="resolution"></a><span data-ttu-id="7340c-157">解决方法</span><span class="sxs-lookup"><span data-stu-id="7340c-157">Resolution</span></span>  
  <span data-ttu-id="7340c-158">当指定的 URL **BTS。OutBoundTransportLocation**属性在表达式中，添加或删除"/"字符根据需要。</span><span class="sxs-lookup"><span data-stu-id="7340c-158">When specifying the URL for the **BTS.OutBoundTransportLocation** property in an expression, add or remove "/" characters as needed.</span></span> <span data-ttu-id="7340c-159">使用上面的示例**BTS。OutBoundTransportLocation**属性应定义为"file://c:/test/out"，将计算结果为 c:\test\out 或"file:///mymachine/test/out"，将计算为\\\mymachine\test\out。</span><span class="sxs-lookup"><span data-stu-id="7340c-159">Using the examples above the **BTS.OutBoundTransportLocation** property should be defined as "file://c:/test/out", which would evaluate to c:\test\out or "file:////mymachine/test/out", which would evaluate to \\\mymachine\test\out.</span></span>

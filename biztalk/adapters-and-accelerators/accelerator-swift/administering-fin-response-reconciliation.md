@@ -1,17 +1,17 @@
 ---
-title: "管理 FIN 响应对帐 |Microsoft 文档"
-ms.custom: 
+title: 管理 FIN 响应对帐 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FIN Response Reconciliation, configuring
 - configuring, FIN Response Reconciliation
 ms.assetid: ea8efc9e-049d-44c1-82b5-974d32a3c644
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208933"
 ---
 # <a name="administering-fin-response-reconciliation"></a><span data-ttu-id="7579e-102">管理 FIN 响应对帐</span><span class="sxs-lookup"><span data-stu-id="7579e-102">Administering FIN Response Reconciliation</span></span>
 <span data-ttu-id="7579e-103">本部分提供用于设置 FIN 响应对帐的配置过程。</span><span class="sxs-lookup"><span data-stu-id="7579e-103">This section provides procedures for setting the configuration for FIN Response Reconciliation.</span></span>  

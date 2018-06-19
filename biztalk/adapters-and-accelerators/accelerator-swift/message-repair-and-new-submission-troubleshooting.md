@@ -1,17 +1,17 @@
 ---
-title: "消息修复和新提交故障排除 |Microsoft 文档"
-ms.custom: 
+title: 消息修复和新提交故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, Message Repair and New Submission
 - Message Repair and New Submission, troubleshooting
 ms.assetid: bb07a286-6f02-4639-b5fa-a3647e356ac8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965411"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a><span data-ttu-id="32286-102">消息修复和新提交疑难解答</span><span class="sxs-lookup"><span data-stu-id="32286-102">Message Repair and New Submission Troubleshooting</span></span>
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a><span data-ttu-id="32286-103">无法提交修复后的消息，如果未部署信封架构</span><span class="sxs-lookup"><span data-stu-id="32286-103">A repaired message cannot be submitted if the envelope schema is not deployed</span></span>  
@@ -76,7 +77,7 @@ ms.lasthandoff: 01/17/2018
   
 1.  <span data-ttu-id="32286-146">单击 **启动**, ，指向 **所有程序**, ，指向 **管理工具**, ，然后单击 **Internet Information Services (IIS) Manager**。</span><span class="sxs-lookup"><span data-stu-id="32286-146">Click **Start**, point to **All Programs**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.</span></span>  
   
-2.  <span data-ttu-id="32286-147">在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）**节点，**应用程序池**节点和**Web站点**节点。</span><span class="sxs-lookup"><span data-stu-id="32286-147">In IIS Manager, expand the ***\<server name\>* (local computer)** node, the **Application Pools** node and the **Web Sites** node.</span></span> <span data-ttu-id="32286-148">在网站节点下展开**Default Web Site**节点。</span><span class="sxs-lookup"><span data-stu-id="32286-148">Under the Web Sites node, expand the **Default Web Site** node.</span></span>  
+2.  <span data-ttu-id="32286-147">在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）** 节点，**应用程序池**节点和**Web站点**节点。</span><span class="sxs-lookup"><span data-stu-id="32286-147">In IIS Manager, expand the ***\<server name\>* (local computer)** node, the **Application Pools** node and the **Web Sites** node.</span></span> <span data-ttu-id="32286-148">在网站节点下展开**Default Web Site**节点。</span><span class="sxs-lookup"><span data-stu-id="32286-148">Under the Web Sites node, expand the **Default Web Site** node.</span></span>  
   
 3.  <span data-ttu-id="32286-149">在 Default Web Site 节点中，右键单击**A4SWIFT_MRSR**，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="32286-149">Under the Default Web Site node, right-click **A4SWIFT_MRSR**, and then click **Properties**.</span></span>  
   

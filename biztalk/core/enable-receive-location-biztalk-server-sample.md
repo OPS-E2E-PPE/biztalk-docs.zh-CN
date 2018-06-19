@@ -1,18 +1,18 @@
 ---
-title: "启用接收位置 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 启用接收位置 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, examples
 - receive locations, enabling
 - examples, receive locations
 ms.assetid: dd04b38a-634d-4c9a-b31a-2f226fa91d19
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968723"
 ---
 # <a name="enable-receive-location-biztalk-server-sample"></a><span data-ttu-id="3eb88-102">启用接收位置 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="3eb88-102">Enable Receive Location (BizTalk Server Sample)</span></span>
 <span data-ttu-id="3eb88-103">启用接收位置示例演示如何启用接收位置和 （可选） 设置对该接收位置的入站传输 URL。</span><span class="sxs-lookup"><span data-stu-id="3eb88-103">The Enable Receive Location sample demonstrates how to enable a receive location and optionally set the Inbound Transport URL for that receive location.</span></span>  

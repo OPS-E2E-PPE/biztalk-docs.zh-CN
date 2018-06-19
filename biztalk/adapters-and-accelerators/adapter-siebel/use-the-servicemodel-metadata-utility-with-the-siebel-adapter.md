@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d16481-cc8b-4e28-a33c-92e48a9a7e8f
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25963507"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="0cabc-103">使用 ServiceModel 元数据实用工具 BizTalk 适配器为 Siebel eBusiness Applications</span><span class="sxs-lookup"><span data-stu-id="0cabc-103">Using the ServiceModel Metadata Utility Tool with the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="0cabc-104">你可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成操作的 WCF 客户端类，[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开。</span><span class="sxs-lookup"><span data-stu-id="0cabc-104">You can use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate a WCF client class for operations that the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] exposes.</span></span> <span data-ttu-id="0cabc-105">运行 svcutil.exe 以生成 WCF 客户端类后，你可以在你的代码中包含生成的文件和创建要在 Siebel 系统上执行操作的 WCF 客户端类的实例。</span><span class="sxs-lookup"><span data-stu-id="0cabc-105">After you run svcutil.exe to generate a WCF client class, you can include the generated file in your code and create instances of the WCF client class to perform operations on the Siebel system.</span></span>  

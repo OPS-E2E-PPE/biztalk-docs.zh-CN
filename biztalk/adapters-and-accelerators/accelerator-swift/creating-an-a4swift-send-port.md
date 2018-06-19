@@ -1,17 +1,17 @@
 ---
-title: "创建 A4SWIFT 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 创建 A4SWIFT 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 ms.assetid: d1ee18f8-a6aa-4cd5-9e65-fb2e0fa2d0c2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210245"
 ---
 # <a name="creating-an-a4swift-send-port"></a><span data-ttu-id="8c445-102">创建 A4SWIFT 发送端口</span><span class="sxs-lookup"><span data-stu-id="8c445-102">Creating an A4SWIFT Send Port</span></span>
 <span data-ttu-id="8c445-103">你必须创建发送端口以启用[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]若要将消息发送到 SWIFT 网络，如下图中所示。</span><span class="sxs-lookup"><span data-stu-id="8c445-103">You must create a send port to enable [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] to send a message to the SWIFT network, as shown in the following figure.</span></span> <span data-ttu-id="8c445-104">此发送端口将将平面文件消息发送到的出站文件文件夹。</span><span class="sxs-lookup"><span data-stu-id="8c445-104">This send port will send flat file messages to an outbound file folder.</span></span> <span data-ttu-id="8c445-105">此发送端口用于处理消息修复和新提交功能。</span><span class="sxs-lookup"><span data-stu-id="8c445-105">This send port is designed to work with the Message Repair and New Submission feature.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="8c445-128">如果此文件夹不存在，则可以创建使用**新建文件夹**命令。</span><span class="sxs-lookup"><span data-stu-id="8c445-128">If this folder does not exist, you can create it using the **Make New Folder** command.</span></span>  
   
-7.  <span data-ttu-id="8c445-129">在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8c445-129">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="8c445-129">在**文件名**框中，键入 **%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8c445-129">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
 8.  <span data-ttu-id="8c445-130">在**发送端口属性**对话框框中，单击下拉列表**发送管道**框中，，然后选择你自定义发送管道。</span><span class="sxs-lookup"><span data-stu-id="8c445-130">In the **Send Port Properties** dialog box, click the drop-down list for the **Send pipeline** box, and then select your custom send pipeline.</span></span>  
   

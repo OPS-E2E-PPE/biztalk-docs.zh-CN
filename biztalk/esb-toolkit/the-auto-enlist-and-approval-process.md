@@ -1,14 +1,14 @@
 ---
-title: "自动登记和审批过程 |Microsoft 文档"
-ms.custom: 
+title: 自动登记和审批过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd3e72e-e28b-4ee3-bc4a-89ef3f64e6d5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295621"
 ---
 # <a name="the-auto-enlist-and-approval-process"></a><span data-ttu-id="2fe22-102">自动登记和审批过程</span><span class="sxs-lookup"><span data-stu-id="2fe22-102">The Auto-Enlist and Approval Process</span></span>
 <span data-ttu-id="2fe22-103">你可以配置 ESB 管理门户以两种方式发布 Microsoft BizTalk Server 终结点：</span><span class="sxs-lookup"><span data-stu-id="2fe22-103">You can configure the ESB Management Portal to publish Microsoft BizTalk Server endpoints in two ways:</span></span>  

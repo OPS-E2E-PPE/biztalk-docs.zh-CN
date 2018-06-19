@@ -1,14 +1,14 @@
 ---
-title: "自定义 Web 部件使用 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 自定义 Web 部件使用 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ee3a6c04-6523-483c-bdf4-ce0ac47cda87
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963955"
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a><span data-ttu-id="baadd-102">用于 Siebel 适配器的自定义 Web 部件</span><span class="sxs-lookup"><span data-stu-id="baadd-102">Use a Custom Web Part with the Siebel adapter</span></span>
 <span data-ttu-id="baadd-103">本部分提供有关使用 Microsoft Office SharePoint Server 的自定义 Web 部件的信息。</span><span class="sxs-lookup"><span data-stu-id="baadd-103">This section provides information about using a custom Web Part with Microsoft Office SharePoint Server.</span></span> <span data-ttu-id="baadd-104">若要使用自定义 Web 部件，您必须执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="baadd-104">To use a custom Web Part, you must do the following:</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="baadd-119">指定的名称和解决方案的位置。</span><span class="sxs-lookup"><span data-stu-id="baadd-119">Specify a name and location for the solution.</span></span> <span data-ttu-id="baadd-120">对于本主题中，指定`CustomWebPart`中**名称**和**解决方案名称**框。</span><span class="sxs-lookup"><span data-stu-id="baadd-120">For this topic, specify `CustomWebPart` in the **Name** and **Solution Name** boxes.</span></span> <span data-ttu-id="baadd-121">指定一个位置，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="baadd-121">Specify a location, and then click **OK**.</span></span>  
   
-4.  <span data-ttu-id="baadd-122">将对 System.Web 组件的引用添加到项目。</span><span class="sxs-lookup"><span data-stu-id="baadd-122">Add a reference to the System.Web component into the project.</span></span> <span data-ttu-id="baadd-123">右键单击中的项目名称**解决方案资源管理器**，然后单击**添加引用**。</span><span class="sxs-lookup"><span data-stu-id="baadd-123">Right-click the project name in **Solution Explorer**, and then click **Add Reference**.</span></span> <span data-ttu-id="baadd-124">在**添加引用**对话框中，选择**System.Web**中**.NET**选项卡上，并依次**确定**。</span><span class="sxs-lookup"><span data-stu-id="baadd-124">In the **Add Reference** dialog box, select **System.Web** in the **.NET** tab, and then click **OK**.</span></span> <span data-ttu-id="baadd-125">System.Web 组件包含 System.Web.UI.WebControls.WebParts 的所需命名空间。</span><span class="sxs-lookup"><span data-stu-id="baadd-125">The System.Web component contains the required namespace of System.Web.UI.WebControls.WebParts.</span></span>  
+4.  <span data-ttu-id="baadd-122">将对 System.Web 组件的引用添加到项目。</span><span class="sxs-lookup"><span data-stu-id="baadd-122">Add a reference to the System.Web component into the project.</span></span> <span data-ttu-id="baadd-123">右键单击中的项目名称**解决方案资源管理器**，然后单击**添加引用**。</span><span class="sxs-lookup"><span data-stu-id="baadd-123">Right-click the project name in **Solution Explorer**, and then click **Add Reference**.</span></span> <span data-ttu-id="baadd-124">在**添加引用**对话框中，选择**System.Web**中 **.NET**选项卡上，并依次**确定**。</span><span class="sxs-lookup"><span data-stu-id="baadd-124">In the **Add Reference** dialog box, select **System.Web** in the **.NET** tab, and then click **OK**.</span></span> <span data-ttu-id="baadd-125">System.Web 组件包含 System.Web.UI.WebControls.WebParts 的所需命名空间。</span><span class="sxs-lookup"><span data-stu-id="baadd-125">The System.Web component contains the required namespace of System.Web.UI.WebControls.WebParts.</span></span>  
   
 5.  <span data-ttu-id="baadd-126">添加所需的代码，根据你在项目中的问题。</span><span class="sxs-lookup"><span data-stu-id="baadd-126">Add the required code based on your issue in the project.</span></span> <span data-ttu-id="baadd-127">与某些问题相关的代码示例，请参阅"问题涉及自定义 Web 部件"中[注意事项与 SharePoint 使用 Siebel 适配器时](../../adapters-and-accelerators/adapter-siebel/considerations-when-using-the-siebel-adapter-with-sharepoint.md)。</span><span class="sxs-lookup"><span data-stu-id="baadd-127">For the code sample that is relevant to a certain issue, see “Issues Involving Custom Web Parts” in [Considerations when using the Siebel adapter with SharePoint](../../adapters-and-accelerators/adapter-siebel/considerations-when-using-the-siebel-adapter-with-sharepoint.md).</span></span>  
   

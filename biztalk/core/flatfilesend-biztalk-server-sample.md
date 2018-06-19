@@ -1,14 +1,14 @@
 ---
-title: "FlatFileSend （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: FlatFileSend （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52dd0018-e272-40db-a26a-509d444d7106
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969691"
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a><span data-ttu-id="c755d-102">FlatFileSend（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="c755d-102">FlatFileSend (BizTalk Server Sample)</span></span>
 <span data-ttu-id="c755d-103">FlatFileSend 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将 XML 文件处理成等效的平面文件。</span><span class="sxs-lookup"><span data-stu-id="c755d-103">The FlatFileSend sample demonstrates how you can use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to process an XML file into the equivalent flat file.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="c755d-127">通过结合这些元素，产生了一个可从接收位置接受 XML 格式的采购订单消息并将平面文件格式的采购订单写出到发送位置的解决方案。</span><span class="sxs-lookup"><span data-stu-id="c755d-127">These elements are combined to produce a solution that accepts purchase order messages in XML format from the receive location and writes out a flat file purchase order to the send location.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="c755d-128">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="c755d-128">Where to Find This Sample</span></span>  
- <span data-ttu-id="c755d-129">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-129">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+ <span data-ttu-id="c755d-129">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-129">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
  <span data-ttu-id="c755d-130">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="c755d-130">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -66,13 +67,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="c755d-153">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="c755d-153">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="c755d-154">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-154">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+     <span data-ttu-id="c755d-154">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-154">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
 2.  <span data-ttu-id="c755d-155">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c755d-155">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="c755d-156">在下面的文件夹中，为本示例创建输入 (FFInput) 和输出 (FFOutput) 文件夹：</span><span class="sxs-lookup"><span data-stu-id="c755d-156">Creates the input (FFInput) and output (FFOutput) folders for this sample in the folder:</span></span>  
   
-         <span data-ttu-id="c755d-157">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-157">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
+         <span data-ttu-id="c755d-157">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span><span class="sxs-lookup"><span data-stu-id="c755d-157">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileSend</span></span>  
   
     -   <span data-ttu-id="c755d-158">编译[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]此示例项目。</span><span class="sxs-lookup"><span data-stu-id="c755d-158">Compiles the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for this sample.</span></span>  
   

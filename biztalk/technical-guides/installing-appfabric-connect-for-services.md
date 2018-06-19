@@ -1,14 +1,14 @@
 ---
-title: "安装 AppFabric Connect 服务 |Microsoft 文档"
-ms.custom: 
+title: 安装 AppFabric Connect 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1de3bf49-e3cc-4d3f-9883-9a2c472f3647
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298685"
 ---
 # <a name="installing-appfabric-connect-for-services"></a><span data-ttu-id="91ed0-102">安装 AppFabric 连接服务</span><span class="sxs-lookup"><span data-stu-id="91ed0-102">Installing AppFabric Connect for Services</span></span>
 <span data-ttu-id="91ed0-103">本指南将说明了如何安装 BizTalk Server 2010 功能包 （2010 年 10 月）。</span><span class="sxs-lookup"><span data-stu-id="91ed0-103">This guide provides instructions on how to install BizTalk Server 2010 Feature Pack (October 2010).</span></span> <span data-ttu-id="91ed0-104">功能包提供的增强功能的服务功能的安装 BizTalk Server 2010 AppFabric 连接**BizTalk WCF 服务发布向导**和**WCF 适配器服务开发向导**.</span><span class="sxs-lookup"><span data-stu-id="91ed0-104">The feature pack installs BizTalk Server 2010 AppFabric Connect for Services feature that provides enhancements to the **BizTalk WCF Service Publishing Wizard** and the **WCF Adapter Service Development Wizard**.</span></span> <span data-ttu-id="91ed0-105">已安装的功能包后，你将能够将扩展你的本地 BizTalk Server 项目或者是 LOB 应用程序云的添加 Windows Azure AppFabric Service Bus 终结点。</span><span class="sxs-lookup"><span data-stu-id="91ed0-105">After you have installed the feature pack, you will be able to extend the reach of your on-premises BizTalk Server artifacts or LOB applications to cloud by adding a Windows Azure AppFabric Service Bus endpoint.</span></span>  

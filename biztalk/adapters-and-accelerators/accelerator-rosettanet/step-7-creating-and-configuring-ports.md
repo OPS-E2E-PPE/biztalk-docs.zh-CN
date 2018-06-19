@@ -1,17 +1,17 @@
 ---
-title: "步骤 7： 创建和配置端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 创建和配置端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating ports
 - private process tutorial, configuring ports
 ms.assetid: c00344c6-506a-4560-a948-e5fed2b9fd58
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965235"
 ---
 # <a name="step-7-creating-and-configuring-ports"></a><span data-ttu-id="233a7-102">步骤 7： 创建和配置端口</span><span class="sxs-lookup"><span data-stu-id="233a7-102">Step 7: Creating and Configuring Ports</span></span>
 <span data-ttu-id="233a7-103">在此步骤中，您将创建和配置用于与业务流程进行通信的端口。</span><span class="sxs-lookup"><span data-stu-id="233a7-103">In this step, you create and configure the ports you use to communicate with business processes.</span></span> <span data-ttu-id="233a7-104">每个端口都具有类型、方向和绑定属性。</span><span class="sxs-lookup"><span data-stu-id="233a7-104">Each port has a type, direction, and binding property.</span></span> <span data-ttu-id="233a7-105">这些属性确定通信的方向和模式、发送或接收消息的位置以及通信方式。</span><span class="sxs-lookup"><span data-stu-id="233a7-105">These properties establish the direction and pattern of communication, the location of where the message is sent or received, and how the communication occurs.</span></span>  

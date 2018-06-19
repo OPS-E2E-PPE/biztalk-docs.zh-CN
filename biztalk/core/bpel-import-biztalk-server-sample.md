@@ -1,11 +1,11 @@
 ---
-title: "BPEL 导入 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: BPEL 导入 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL, orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BPEL Import Wizard, examples
 - BPEL Import Wizard, orchestrations
 ms.assetid: 3fc70608-ccd9-4249-b238-c09fc6551db1
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967739"
 ---
 # <a name="bpel-import-biztalk-server-sample"></a><span data-ttu-id="972d4-102">BPEL 导入 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="972d4-102">BPEL Import (BizTalk Server Sample)</span></span>
 <span data-ttu-id="972d4-103">BPEL 导入示例演示如何从业务处理执行语言 (BPEL) 流程说明及其相关项目中创建业务流程。</span><span class="sxs-lookup"><span data-stu-id="972d4-103">The BPEL Import sample demonstrates how to create an orchestration from a Business Process Execution Language (BPEL) process description and its related artifacts.</span></span>  
@@ -215,7 +216,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="972d4-242">ship_status(ShippingSchemas.ShipStatus) == "DONE"</span><span class="sxs-lookup"><span data-stu-id="972d4-242">ship_status(ShippingSchemas.ShipStatus) == "DONE"</span></span>  
   
-44. <span data-ttu-id="972d4-243">在业务流程视图中，展开**类型/相关性类型**单击**_OrderCorrelationSet_Type\_**。</span><span class="sxs-lookup"><span data-stu-id="972d4-243">In the Orchestration View, expand **Types/Correlation Types** and click **_OrderCorrelationSet_Type\_**.</span></span>  
+44. <span data-ttu-id="972d4-243">在业务流程视图中，展开**类型/相关性类型**单击 **_OrderCorrelationSet_Type\_**。</span><span class="sxs-lookup"><span data-stu-id="972d4-243">In the Orchestration View, expand **Types/Correlation Types** and click **_OrderCorrelationSet_Type\_**.</span></span>  
   
 45. <span data-ttu-id="972d4-244">在属性窗口中，单击省略号按钮 (**...**) 上**相关性属性**。</span><span class="sxs-lookup"><span data-stu-id="972d4-244">In the Properties window, click the ellipsis button (**…**) on **Correlation Properties**.</span></span>  
   
@@ -232,7 +233,7 @@ ms.lasthandoff: 11/28/2017
 51. <span data-ttu-id="972d4-250">浏览到的位置\<*示例路径*\>\Orchestrations\BPELImport\Solution\BPELShipping 并双击**BindAndStartOnly.bat**绑定并启动业务流程。</span><span class="sxs-lookup"><span data-stu-id="972d4-250">Browse to the location \<*Samples Path*\>\Orchestrations\BPELImport\Solution\BPELShipping and double-click **BindAndStartOnly.bat** to bind and start the orchestration.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="972d4-251">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="972d4-251">Where to Find This Sample</span></span>  
- <span data-ttu-id="972d4-252">*\<示例路径\>*\Orchestrations\BPELImport</span><span class="sxs-lookup"><span data-stu-id="972d4-252">*\<Samples Path\>*\Orchestrations\BPELImport</span></span>  
+ <span data-ttu-id="972d4-252">*\<示例路径\>* \Orchestrations\BPELImport</span><span class="sxs-lookup"><span data-stu-id="972d4-252">*\<Samples Path\>* \Orchestrations\BPELImport</span></span>  
   
  <span data-ttu-id="972d4-253">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="972d4-253">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -277,7 +278,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="972d4-318">从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 的以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="972d4-318">From the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] command prompt, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="972d4-319">*\<示例路径\>*\Orchestrations\BPELImport\Solution\ShipperProcess</span><span class="sxs-lookup"><span data-stu-id="972d4-319">*\<Samples Path\>*\Orchestrations\BPELImport\Solution\ShipperProcess</span></span>  
+     <span data-ttu-id="972d4-319">*\<示例路径\>* \Orchestrations\BPELImport\Solution\ShipperProcess</span><span class="sxs-lookup"><span data-stu-id="972d4-319">*\<Samples Path\>* \Orchestrations\BPELImport\Solution\ShipperProcess</span></span>  
   
 3.  <span data-ttu-id="972d4-320">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="972d4-320">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -312,7 +313,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
      <span data-ttu-id="972d4-332">从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改 (**cd**) 的以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="972d4-332">From the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] command prompt, change directory (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="972d4-333">*\<示例路径\>*\Orchestrations\BPELImport\Solution\BPELShipping</span><span class="sxs-lookup"><span data-stu-id="972d4-333">*\<Samples Path\>*\Orchestrations\BPELImport\Solution\BPELShipping</span></span>  
+     <span data-ttu-id="972d4-333">*\<示例路径\>* \Orchestrations\BPELImport\Solution\BPELShipping</span><span class="sxs-lookup"><span data-stu-id="972d4-333">*\<Samples Path\>* \Orchestrations\BPELImport\Solution\BPELShipping</span></span>  
   
 2.  <span data-ttu-id="972d4-334">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="972d4-334">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -330,7 +331,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
 #### <a name="to-run-the-bpel-import-sample"></a><span data-ttu-id="972d4-341">运行 BPEL 导入示例</span><span class="sxs-lookup"><span data-stu-id="972d4-341">To run the BPEL Import sample</span></span>  
   
-1.  <span data-ttu-id="972d4-342">复制**Order.xml**文件从*\<示例路径\>*\Orchestrations\BPELImport\Solution 文件夹\<*示例路径\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。</span><span class="sxs-lookup"><span data-stu-id="972d4-342">Copy the **Order.xml** file from the *\<Samples Path\>*\Orchestrations\BPELImport\Solution folder to the \<*Samples Path\>*\Orchestrations\BPELImport\Solution\Ports\ReceiveOrder folder.</span></span>  
+1.  <span data-ttu-id="972d4-342">复制**Order.xml**文件从*\<示例路径\>* \Orchestrations\BPELImport\Solution 文件夹\<*示例路径\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。</span><span class="sxs-lookup"><span data-stu-id="972d4-342">Copy the **Order.xml** file from the *\<Samples Path\>* \Orchestrations\BPELImport\Solution folder to the \<*Samples Path\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder folder.</span></span>  
   
 2.  <span data-ttu-id="972d4-343">业务流程选取此文件作为客户订单处理系统中，从订单 BPELShipping 运行完传送过程中，并生成一个文件中的每个\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder 文件夹和\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation 文件夹。</span><span class="sxs-lookup"><span data-stu-id="972d4-343">The BPELShipping orchestration picks up this file as an order from the customer order processing system, runs through the shipping process, and produces one file each in the \<*Samples Path*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder folder and the \<*Samples Path*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation folder.</span></span> <span data-ttu-id="972d4-344">这些文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息。</span><span class="sxs-lookup"><span data-stu-id="972d4-344">The format of the name of these files is \<*MessageID*\>.xml, where *\<MessageID\>* is the GUID generated to uniquely identify the message.</span></span>  
   

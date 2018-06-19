@@ -1,14 +1,14 @@
 ---
-title: "实现 FRR 否认处理程序示例 |Microsoft 文档"
-ms.custom: 
+title: 实现 FRR 否认处理程序示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80fa5fb7-6864-4923-b641-e76d2b95d923
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961547"
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a><span data-ttu-id="0deb0-102">实现 FRR 否认处理程序示例</span><span class="sxs-lookup"><span data-stu-id="0deb0-102">Implementing the FRR NAK Handler Sample</span></span>
 <span data-ttu-id="0deb0-103">若要实现示例 FRR 否认自定义处理程序，将示例项目添加到你的解决方案、 生成和部署项目、 绑定和启动业务流程，然后停止并重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="0deb0-103">To implement the sample FRR NAK custom handler, add the sample project to your solution, build and deploy the project, bind and start the orchestration, and then stop and restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span>  

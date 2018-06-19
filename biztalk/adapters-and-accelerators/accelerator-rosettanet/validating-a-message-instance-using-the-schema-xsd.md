@@ -1,11 +1,11 @@
 ---
-title: "验证使用 XSD 架构的消息实例 |Microsoft 文档"
-ms.custom: 
+title: 验证使用 XSD 架构的消息实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schema XSD
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, validating
 - schemas, XSDs
 ms.assetid: c4cbf6b4-130d-4e0f-840b-c8008fafac0b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963963"
 ---
 # <a name="validating-a-message-instance-using-the-schema-xsd"></a><span data-ttu-id="94c37-102">验证使用 XSD 架构的消息实例</span><span class="sxs-lookup"><span data-stu-id="94c37-102">Validating a Message Instance Using the Schema XSD</span></span>
 <span data-ttu-id="94c37-103">本主题介绍如何使用 Microsoft?[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 内置到 RNPIP 程序集文件中的架构 XSD 文件之一来验证消息实例。</span><span class="sxs-lookup"><span data-stu-id="94c37-103">This topic describes how to validate a message instance using one of the schema XSD files that Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] has built into the RNPIPs assembly file.</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="94c37-106">上**文件**，指向**打开**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="94c37-106">On the **File**, point to **Open**, and then click **Project**.</span></span>  
   
-3.  <span data-ttu-id="94c37-107">找到*\<驱动器\>*files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="94c37-107">Locate *\<drive\>*\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas, click **RNPIPs.btproj**, and then click **Open**.</span></span>  
+3.  <span data-ttu-id="94c37-107">找到*\<驱动器\>* files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="94c37-107">Locate *\<drive\>* \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas, click **RNPIPs.btproj**, and then click **Open**.</span></span>  
   
 4.  <span data-ttu-id="94c37-108">在解决方案资源管理器，展开**RNPIPs**，右键单击你想要使用以验证消息实例，然后单击的 XSD 架构**属性**。</span><span class="sxs-lookup"><span data-stu-id="94c37-108">In Solution Explorer, expand **RNPIPs**, right-click the schema XSD that you want to use to validate a message instance, and then click **Properties**.</span></span>  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214245"
 ---
 # <a name="swift-assembler-configuration-properties"></a><span data-ttu-id="d6b89-102">SWIFT 汇编程序配置属性</span><span class="sxs-lookup"><span data-stu-id="d6b89-102">SWIFT Assembler Configuration Properties</span></span>
 <span data-ttu-id="d6b89-103">下表提供 SWIFT 汇编程序 (ASM) 属性、 说明、 数据类型和值的范围。</span><span class="sxs-lookup"><span data-stu-id="d6b89-103">The following table provides SWIFT assembler (ASM) properties, descriptions, data types, and value ranges.</span></span>  

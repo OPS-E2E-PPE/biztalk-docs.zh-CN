@@ -1,14 +1,14 @@
 ---
-title: "如何调整配置缓存刷新间隔 |Microsoft 文档"
-ms.custom: 
+title: 如何调整配置缓存刷新间隔 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63c6c998-e9c0-48f1-a36a-f1fcb916321b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297877"
 ---
 # <a name="how-to-adjust-the-configuration-cache-refresh-interval"></a><span data-ttu-id="b1ff3-102">如何调整配置缓存刷新间隔</span><span class="sxs-lookup"><span data-stu-id="b1ff3-102">How to Adjust the Configuration Cache Refresh Interval</span></span>
 <span data-ttu-id="b1ff3-103">配置缓存刷新间隔定义在其中 BizTalk Server 更新的终结点配置的时间段。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-103">The configuration cache refresh interval defines the time period in which BizTalk Server updates the configuration of the endpoints.</span></span> <span data-ttu-id="b1ff3-104">当你启动 BizTalk Server 时，BizTalk 服务器管理，如 MessageBox 数据库、 服务器属性、 适配器、 和到跟踪数据库的连接中的所有项都存储在配置缓存。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-104">When you start BizTalk Server, all items in BizTalk Server administration, such as MessageBox databases, server properties, adapters, and connections to the Tracking database, are stored in the configuration cache.</span></span> <span data-ttu-id="b1ff3-105">通过配置刷新间隔来刷新其缓存中的所有项。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-105">All items in the cache are refreshed by the configuration refresh interval.</span></span> <span data-ttu-id="b1ff3-106">默认情况下这是每隔 60 秒，服务器数据库连接和服务器属性除外。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-106">By default this is every 60 seconds, except for the server database connections and server properties.</span></span> <span data-ttu-id="b1ff3-107">这意味着，如果更改为 BizTalk 组，如 SMTP 主机的常规属性所做的更改会选取在 60 秒内。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-107">This means that if you change the general properties for a BizTalk group, such as the SMTP host, the changes are picked up within 60 seconds.</span></span> <span data-ttu-id="b1ff3-108">你对其进行刷新之前，不会反映所做的 BizTalk Server 管理控制台当前打开的实例之外的系统更改。</span><span class="sxs-lookup"><span data-stu-id="b1ff3-108">System changes made outside the currently open instance of the BizTalk Server Administration console are not reflected until you refresh it.</span></span>  

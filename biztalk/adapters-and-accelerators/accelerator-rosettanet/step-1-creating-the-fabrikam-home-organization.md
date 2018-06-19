@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963627"
 ---
 # <a name="step-1-creating-the-fabrikam-home-organization"></a><span data-ttu-id="a5088-102">步骤 1： 创建 Fabrikam 主页组织</span><span class="sxs-lookup"><span data-stu-id="a5088-102">Step 1: Creating the Fabrikam Home Organization</span></span>
 <span data-ttu-id="a5088-103">在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Fabrikam 本组织。</span><span class="sxs-lookup"><span data-stu-id="a5088-103">In this step, you use the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console to create the Fabrikam home organization.</span></span>  

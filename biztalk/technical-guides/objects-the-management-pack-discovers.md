@@ -1,14 +1,14 @@
 ---
-title: "对象的管理包可发现 |Microsoft 文档"
-ms.custom: 
+title: 对象的管理包可发现 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 291e8936-b299-4719-9f7e-edc86f76fcbd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298861"
 ---
 # <a name="objects-the-management-pack-discovers"></a><span data-ttu-id="10b62-102">管理包发现的对象</span><span class="sxs-lookup"><span data-stu-id="10b62-102">Objects the Management Pack Discovers</span></span>
 <span data-ttu-id="10b62-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包可发现下表中所述的对象类型。</span><span class="sxs-lookup"><span data-stu-id="10b62-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack discovers the object types described in the following table.</span></span> <span data-ttu-id="10b62-104">有关发现对象的信息，请参阅[Operations Manager 2007 中的对象发现](http://go.microsoft.com/fwlink/?LinkId=108505)Operations Manager 2007 R2/2012年联机库 (http://go.microsoft.com/fwlink/?LinkId=108505) 中的主题。</span><span class="sxs-lookup"><span data-stu-id="10b62-104">For information about discovering objects, see the [Object Discoveries in Operations Manager 2007](http://go.microsoft.com/fwlink/?LinkId=108505) topic in Operations Manager 2007 R2/2012 online library (http://go.microsoft.com/fwlink/?LinkId=108505).</span></span>  

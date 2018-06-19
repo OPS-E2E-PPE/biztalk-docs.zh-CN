@@ -1,14 +1,14 @@
 ---
-title: "监视任务的例程 |Microsoft 文档"
-ms.custom: 
+title: 监视任务的例程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2f9f56a-c839-4108-933d-69b00a1e3817
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301901"
 ---
 # <a name="routine-monitoring-tasks"></a><span data-ttu-id="629cf-102">例程的监视任务</span><span class="sxs-lookup"><span data-stu-id="629cf-102">Routine Monitoring Tasks</span></span>
 <span data-ttu-id="629cf-103">按定期计划定期执行以下监视任务将帮助您保留您[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序和基础结构做好运行准备。</span><span class="sxs-lookup"><span data-stu-id="629cf-103">Performing the following monitoring tasks on a regularly scheduled basis will assist you in keeping your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications and infrastructure operationally ready.</span></span>  

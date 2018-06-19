@@ -1,14 +1,14 @@
 ---
-title: "扩展编码支持 |Microsoft 文档"
-ms.custom: 
+title: 扩展编码支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a40fa6-d0da-416e-97fb-675ddde3f005
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204829"
 ---
 # <a name="extended-encoding-support"></a><span data-ttu-id="d8b85-102">扩展编码的支持</span><span class="sxs-lookup"><span data-stu-id="d8b85-102">Extended Encoding Support</span></span>
 <span data-ttu-id="d8b85-103">默认情况下，HL7 接收管道，BTAHL72X，仅支持 ASCII 编码。</span><span class="sxs-lookup"><span data-stu-id="d8b85-103">By default, the HL7 receive pipeline, BTAHL72X, only supports ASCII encoding.</span></span> <span data-ttu-id="d8b85-104">这意味着，具有等效值大于 127 都将替换输入消息中的任何字符"？"。</span><span class="sxs-lookup"><span data-stu-id="d8b85-104">This means that any characters in an input message with an equivalent value greater than 127 are replaced with "?".</span></span> <span data-ttu-id="d8b85-105">这是因为在 ASCII 字符集中未表示具有等效值大于 127 个字符。</span><span class="sxs-lookup"><span data-stu-id="d8b85-105">This is because characters with an equivalent value greater than 127 are not represented in the ASCII character set.</span></span>  

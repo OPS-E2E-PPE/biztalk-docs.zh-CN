@@ -1,14 +1,14 @@
 ---
-title: "维护 BizTalk Server2 |Microsoft 文档"
-ms.custom: 
+title: 维护 BizTalk Server2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b9c10d1-101b-4b9d-8eab-767b853f17d8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298365"
 ---
 # <a name="maintaining-biztalk-server2"></a><span data-ttu-id="410df-102">维护 BizTalk Server2</span><span class="sxs-lookup"><span data-stu-id="410df-102">Maintaining BizTalk Server2</span></span>
 <span data-ttu-id="410df-103">维护活动是服务监视和控制 (SMC) 系统管理函数定义由 Microsoft Operations Framework (MOF) 的一部分。</span><span class="sxs-lookup"><span data-stu-id="410df-103">Maintenance activities are part of the Service Monitoring and Control (SMC) system management function as defined by the Microsoft Operations Framework (MOF).</span></span> <span data-ttu-id="410df-104">SMC 的主要目标是观察的运行状况你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="410df-104">The primary goal of SMC is to observe the health of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="410df-105">SMC 检查可能启动更正操作来避免潜在的服务事件以及发生时，服务事件的影响降至最低。</span><span class="sxs-lookup"><span data-stu-id="410df-105">SMC checks may initiate remedial actions to avoid potential service incidents and to minimize the impact of service incidents when they do occur.</span></span>  

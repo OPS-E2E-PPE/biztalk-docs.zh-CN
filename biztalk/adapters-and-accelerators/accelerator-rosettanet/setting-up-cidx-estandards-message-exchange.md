@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210493"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a><span data-ttu-id="0daca-102">设置向上 CIDX eStandards 消息交换</span><span class="sxs-lookup"><span data-stu-id="0daca-102">Setting Up CIDX eStandards Message Exchange</span></span>
 <span data-ttu-id="0daca-103">本主题介绍如何设置筛选数据交换 (CIDX) eStandards 消息交换。</span><span class="sxs-lookup"><span data-stu-id="0daca-103">This topic describes how to set up Chemical Data Exchange (CIDX) eStandards message exchange.</span></span> <span data-ttu-id="0daca-104">CIDX 需要设置以下三个属性：</span><span class="sxs-lookup"><span data-stu-id="0daca-104">CIDX requires that you set the following three properties:</span></span>  

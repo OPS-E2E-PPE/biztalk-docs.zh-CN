@@ -1,17 +1,17 @@
 ---
-title: "用户拖车安排 |Microsoft 文档"
-ms.custom: 
+title: 用户拖车安排 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailers [SWIFT]
 - SWIFT, trailers
 ms.assetid: 340d9fc8-467b-4cba-b69f-eb761767deaa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961979"
 ---
 # <a name="user-trailers"></a><span data-ttu-id="c40d2-102">用户拖车安排</span><span class="sxs-lookup"><span data-stu-id="c40d2-102">User Trailers</span></span>
 <span data-ttu-id="c40d2-103">用户预告片除外，选项尾端是可选的当存在时，将按以下顺序发生：</span><span class="sxs-lookup"><span data-stu-id="c40d2-103">User trailers, except for the CHK trailer, are optional and when present, occur in the following order:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "部署和导出应用程序 |Microsoft 文档"
-ms.custom: 
+title: 部署和导出应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4106a0a7-878d-4052-8eca-02d546233048
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297613"
 ---
 # <a name="deploying-and-exporting-an-application"></a><span data-ttu-id="b8626-102">部署和导出应用程序</span><span class="sxs-lookup"><span data-stu-id="b8626-102">Deploying and Exporting an Application</span></span>
 <span data-ttu-id="b8626-103">本部分包含有关如何在部署 BizTalk 应用程序中执行所涉及的步骤的详细的信息。</span><span class="sxs-lookup"><span data-stu-id="b8626-103">This section contains detailed information about how to perform the steps involved in deploying a BizTalk application.</span></span> <span data-ttu-id="b8626-104">此部分中的主题支持以下清单：</span><span class="sxs-lookup"><span data-stu-id="b8626-104">The topics in this section support the following checklists:</span></span>  

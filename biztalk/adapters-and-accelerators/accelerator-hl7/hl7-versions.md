@@ -1,17 +1,17 @@
 ---
-title: "HL7 版本 |Microsoft 文档"
-ms.custom: 
+title: HL7 版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HL7, standards
 - HL7, versions
 ms.assetid: 47299c6f-55c3-4434-8170-5ad73fe9a84c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204821"
 ---
 # <a name="hl7-versions"></a><span data-ttu-id="6ba81-102">HL7 版本</span><span class="sxs-lookup"><span data-stu-id="6ba81-102">HL7 Versions</span></span>
 <span data-ttu-id="6ba81-103">HL7 版本 2 是一系列的密切相关的标准，而不是单个标准。</span><span class="sxs-lookup"><span data-stu-id="6ba81-103">HL7 Version 2 is a family of closely related standards rather than a single standard.</span></span> <span data-ttu-id="6ba81-104">HL7 组织已设计为向上兼容的 HL7 版本间的兼容性规则的应用程序通过这些标准。</span><span class="sxs-lookup"><span data-stu-id="6ba81-104">The HL7 organization has designed these standards to be upwards compatible through the application of the HL7 inter-version compatibility rules.</span></span> <span data-ttu-id="6ba81-105">这些规则保证，范围内的版本 2 的接口定义的 HL7 版本的规则下仍可正常工作的定义后续版本中。</span><span class="sxs-lookup"><span data-stu-id="6ba81-105">These rules guarantee that, within the confines of Version 2, an interface defined under the rules of an HL7 version will still function within the definition of successor versions.</span></span> <span data-ttu-id="6ba81-106">以便接收系统将能够接受来自更高版本的消息而不会破坏其实现和发送系统将能够继续将消息发送给支持更高版本的接收者。</span><span class="sxs-lookup"><span data-stu-id="6ba81-106">So that a receiving system will be able to accept messages from later versions without breaking its implementation and a sending system will be able to continue to send messages to receivers who support later versions.</span></span>  

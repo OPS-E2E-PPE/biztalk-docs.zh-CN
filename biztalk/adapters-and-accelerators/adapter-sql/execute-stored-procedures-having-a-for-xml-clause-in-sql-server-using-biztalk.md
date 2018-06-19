@@ -1,14 +1,14 @@
 ---
-title: "执行存储的过程具有 FOR XML 子句中使用 BizTalk Server 的 SQL Server |Microsoft 文档"
-ms.custom: 
+title: 执行存储的过程具有 FOR XML 子句中使用 BizTalk Server 的 SQL Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d8fe927-90bf-48fc-a418-63b920b409ed
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967619"
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a><span data-ttu-id="343b3-102">执行具有 FOR XML 子句中使用 BizTalk Server 的 SQL Server 中的存储的过程</span><span class="sxs-lookup"><span data-stu-id="343b3-102">Execute stored procedures having a FOR XML clause in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="343b3-103">SQL SELECT 语句可以有一个 FOR XML 子句，而不是行集以 XML 形式返回查询结果。</span><span class="sxs-lookup"><span data-stu-id="343b3-103">An SQL SELECT statement can have a FOR XML clause that returns the query result as XML instead of a rowset.</span></span> <span data-ttu-id="343b3-104">你还可以具有带 FOR XML 子句的 SELECT 语句的存储的过程。</span><span class="sxs-lookup"><span data-stu-id="343b3-104">You can also have a stored procedure that has a SELECT statement with a FOR XML clause.</span></span> <span data-ttu-id="343b3-105">[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)提供了更多信息。</span><span class="sxs-lookup"><span data-stu-id="343b3-105">[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx) has more information.</span></span>
@@ -86,7 +87,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          <span data-ttu-id="343b3-155">因为你已添加到你的 BizTalk 项目 sqltypes.xsd 架构执行此操作。</span><span class="sxs-lookup"><span data-stu-id="343b3-155">You do this because you have already added the sqltypes.xsd schema to your BizTalk project.</span></span>  
   
-    4.  <span data-ttu-id="343b3-156">提供架构目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="343b3-156">Provide a target namespace for the schema.</span></span> <span data-ttu-id="343b3-157">单击**\<架构\>**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。</span><span class="sxs-lookup"><span data-stu-id="343b3-157">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="343b3-158">本主题中，为提供的命名空间作为`http://ForXmlStoredProcs/namespace`。</span><span class="sxs-lookup"><span data-stu-id="343b3-158">For this topic, give the namespace as `http://ForXmlStoredProcs/namespace`.</span></span>  
+    4.  <span data-ttu-id="343b3-156">提供架构目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="343b3-156">Provide a target namespace for the schema.</span></span> <span data-ttu-id="343b3-157">单击**\<架构\>** 节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。</span><span class="sxs-lookup"><span data-stu-id="343b3-157">Click the **\<Schema\>** node, and in the properties pane, specify a namespace in the **Target Namespace** property.</span></span> <span data-ttu-id="343b3-158">本主题中，为提供的命名空间作为`http://ForXmlStoredProcs/namespace`。</span><span class="sxs-lookup"><span data-stu-id="343b3-158">For this topic, give the namespace as `http://ForXmlStoredProcs/namespace`.</span></span>  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a><span data-ttu-id="343b3-159">生成请求消息来调用存储的过程的架构</span><span class="sxs-lookup"><span data-stu-id="343b3-159">Generating Schema for the Request Message to Invoke the Stored Procedure</span></span>  
  <span data-ttu-id="343b3-160">若要生成可以使用的请求消息架构[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]从 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="343b3-160">To generate schema for the request message you can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] from a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="343b3-161">本主题中，为生成 GET_EMP_DETAILS_FOR_XML 存储过程的架构。</span><span class="sxs-lookup"><span data-stu-id="343b3-161">For this topic, generate the schema for the GET_EMP_DETAILS_FOR_XML stored procedure.</span></span> <span data-ttu-id="343b3-162">有关如何生成架构使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，请参阅[检索元数据使用的 SQL 适配器的 Visual Studio 中的 SQL Server 操作](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="343b3-162">For more information about how to generate the schema using [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], see [Retrieving Metadata for SQL Server Operations in Visual Studio using the SQL adapter](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md).</span></span>  

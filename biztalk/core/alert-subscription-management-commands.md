@@ -1,14 +1,14 @@
 ---
-title: "警报订阅管理命令 |Microsoft 文档"
-ms.custom: 
+title: 警报订阅管理命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4cd6ad27-6217-466a-b616-4b26fb31b0af
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966651"
 ---
 # <a name="alert-subscription-management-commands"></a><span data-ttu-id="63076-102">警报订阅管理命令</span><span class="sxs-lookup"><span data-stu-id="63076-102">Alert Subscription Management Commands</span></span>
 <span data-ttu-id="63076-103">BAM 管理实用程序订阅管理命令可用于处理警报订阅。</span><span class="sxs-lookup"><span data-stu-id="63076-103">The BAM management utility subscription management commands allow you to work with alert subscriptions.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="63076-106">删除订阅： 订阅服务器，则删除警报。</span><span class="sxs-lookup"><span data-stu-id="63076-106">remove-subscription: Removes a subscriber from an alert.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="63076-107">你可以通过包括启用任何 BM 实用工具命令的跟踪**-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="63076-107">You can enable tracing on any BM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="63076-108">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="63076-108">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="63076-109">该开关可与所有标准 BM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="63076-109">The switch can be used in conjunction with any normal BM command.</span></span>  
+>  <span data-ttu-id="63076-107">你可以通过包括启用任何 BM 实用工具命令的跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。</span><span class="sxs-lookup"><span data-stu-id="63076-107">You can enable tracing on any BM utility command by including the **-Trace:on&#124;off** parameter switch.</span></span> <span data-ttu-id="63076-108">使用 Trace 开关将重写配置文件中的跟踪设置。</span><span class="sxs-lookup"><span data-stu-id="63076-108">Using the Trace switch overrides the tracing settings in the configuration file.</span></span> <span data-ttu-id="63076-109">该开关可与所有标准 BM 命令一起使用。</span><span class="sxs-lookup"><span data-stu-id="63076-109">The switch can be used in conjunction with any normal BM command.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="63076-110">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="63076-110">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

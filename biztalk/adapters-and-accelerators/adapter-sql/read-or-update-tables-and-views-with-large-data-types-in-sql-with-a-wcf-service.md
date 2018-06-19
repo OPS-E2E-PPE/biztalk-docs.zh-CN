@@ -1,14 +1,14 @@
 ---
-title: "在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型 |Microsoft 文档"
-ms.custom: 
+title: 在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d33e17c-e09e-4a57-9acc-43095e67ed8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967123"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a><span data-ttu-id="10971-102">在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型</span><span class="sxs-lookup"><span data-stu-id="10971-102">Run Operations on Tables and Views with Large Data Types in SQL using the WCF Service Model</span></span>
 <span data-ttu-id="10971-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar 或 varbinary （max）。</span><span class="sxs-lookup"><span data-stu-id="10971-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] enables adapter clients to read and update data in columns of large data types, that is, varchar(max), nvarchar(max), or varbinary(max).</span></span> <span data-ttu-id="10971-104">若要从这类列读取数据，适配器客户端可以使用选择的操作。</span><span class="sxs-lookup"><span data-stu-id="10971-104">To read data from such columns, adapter clients can use the Select operation.</span></span> <span data-ttu-id="10971-105">若要插入或更新到此类列的数据，该适配器都公开一组\<*column_name* \>操作，其中\< *column_name* \>是的名称类型 varchar （max）、 nvarchar 或 varbinary （max） 列。</span><span class="sxs-lookup"><span data-stu-id="10971-105">To insert or update data into such columns, the adapter exposes a Set\<*column_name*\> operation, where \<*column_name*\> is the name of the column of type varchar(max), nvarchar(max), or varbinary(max).</span></span>  
@@ -148,7 +149,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 7.  <span data-ttu-id="10971-192">调用**SetDocument**操作**记录**表。</span><span class="sxs-lookup"><span data-stu-id="10971-192">Invoke the **SetDocument** operation on the **Records** table.</span></span>  
   
     > [!CAUTION]
-    >  <span data-ttu-id="10971-193">集*< column_name >*必须始终在事务中执行操作。</span><span class="sxs-lookup"><span data-stu-id="10971-193">The Set*<column_name>* operations must always be performed in a transaction.</span></span> <span data-ttu-id="10971-194">若要确保此操作，请集*< column_name >*必须在事务范围内调用操作和**UseAmbientTransaction**绑定属性必须设置为**true**app.config 中。</span><span class="sxs-lookup"><span data-stu-id="10971-194">To ensure this, the Set*<column_name>* operation must be invoked within a transaction scope and the **UseAmbientTransaction** binding property must be set to **true** in the app.config.</span></span>  
+    >  <span data-ttu-id="10971-193">集 *< column_name >* 必须始终在事务中执行操作。</span><span class="sxs-lookup"><span data-stu-id="10971-193">The Set *<column_name>* operations must always be performed in a transaction.</span></span> <span data-ttu-id="10971-194">若要确保此操作，请集 *< column_name >* 必须在事务范围内调用操作和**UseAmbientTransaction**绑定属性必须设置为**true**app.config 中。</span><span class="sxs-lookup"><span data-stu-id="10971-194">To ensure this, the Set *<column_name>* operation must be invoked within a transaction scope and the **UseAmbientTransaction** binding property must be set to **true** in the app.config.</span></span>  
   
     ```  
     using (TransactionScope tx = new TransactionScope())  

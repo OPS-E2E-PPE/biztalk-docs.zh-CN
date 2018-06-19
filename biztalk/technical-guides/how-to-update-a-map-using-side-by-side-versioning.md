@@ -1,14 +1,14 @@
 ---
-title: "如何更新使用的并行版本控制的映射 |Microsoft 文档"
-ms.custom: 
+title: 如何更新使用的并行版本控制的映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b0e377f-92ab-483e-9f3c-222c7b5ac0b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22298269"
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a><span data-ttu-id="56c9e-102">如何更新使用的并行版本控制的映射</span><span class="sxs-lookup"><span data-stu-id="56c9e-102">How to Update a Map Using Side-by-Side Versioning</span></span>
 <span data-ttu-id="56c9e-103">某些 BizTalk 项目，比如地图，选择通过完全限定的强名称 (FQSN)，在这种情况下的绑定包括使用的版本。</span><span class="sxs-lookup"><span data-stu-id="56c9e-103">Some BizTalk artifacts, such as maps, are chosen by fully-qualified strong name (FQSN), in which case the bindings include the version used.</span></span> <span data-ttu-id="56c9e-104">这允许两个或多个图并排放置在共存[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="56c9e-104">This allows two or more maps to coexist side by side in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="56c9e-105">因此，可以发送端口属性中选择其中一个接收位置属性中的入站的映射或出站映射映射。</span><span class="sxs-lookup"><span data-stu-id="56c9e-105">As a result, you can select one of the maps for inbound mapping in the receive location properties or outbound mapping in the send port properties.</span></span>  

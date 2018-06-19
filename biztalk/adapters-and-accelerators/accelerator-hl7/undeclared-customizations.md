@@ -1,11 +1,11 @@
 ---
-title: "未声明的自定义项 |Microsoft 文档"
-ms.custom: 
+title: 未声明的自定义项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - undeclared customizations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - customizing, Z objects
 - customizing, undeclared customizations
 ms.assetid: f062dbb7-2c78-47ea-a927-99e1fba4854b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206485"
 ---
 # <a name="undeclared-customizations"></a><span data-ttu-id="fcc6d-102">未声明的自定义项</span><span class="sxs-lookup"><span data-stu-id="fcc6d-102">Undeclared Customizations</span></span>
 <span data-ttu-id="fcc6d-103">可以将数据添加到一条消息，而定义的格式或数据的性质。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-103">You can add data to a message without defining the format or nature of the data.</span></span> <span data-ttu-id="fcc6d-104">你使用未声明的 Z 段执行此操作。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-104">You do so by using undeclared Z segments.</span></span> <span data-ttu-id="fcc6d-105">未声明的 Z 段是一条消息末尾的意外的实例。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-105">Undeclared Z segments are unexpected instances at the end of a message.</span></span> <span data-ttu-id="fcc6d-106">分析器/XML 验证程序不验证段。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-106">The parser/XML validator does not validate the segment.</span></span> <span data-ttu-id="fcc6d-107">它不是由任何架构定义。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-107">It is not defined by any schema.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="fcc6d-108">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 段将其视为二进制大型对象 (BLOB)。</span><span class="sxs-lookup"><span data-stu-id="fcc6d-108"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) treats the segment as a binary large object (BLOB).</span></span>  

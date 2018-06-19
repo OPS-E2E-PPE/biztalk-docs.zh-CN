@@ -1,14 +1,14 @@
 ---
-title: "使用 SQL 适配器接收查询通知的注意事项 |Microsoft 文档"
-ms.custom: 
+title: 使用 SQL 适配器接收查询通知的注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0142f385-3d55-41a7-a50e-dda94b96d0a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963003"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a><span data-ttu-id="a5fa7-102">使用 SQL 适配器接收查询通知的注意事项</span><span class="sxs-lookup"><span data-stu-id="a5fa7-102">Considerations for Receiving Query Notifications Using the SQL adapter</span></span>
 <span data-ttu-id="a5fa7-103">本主题提供一些注意事项和最佳实践，在使用时需要牢记[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-103">This topic provides some considerations and best practices to keep in mind while using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notifications from a SQL Server database.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="a5fa7-108">该操作所影响的记录数不影响操作的通知消息。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-108">The notification message for an operation is not affected by the number of records affected by that operation.</span></span> <span data-ttu-id="a5fa7-109">例如，无论包含几个记录插入、 更新或删除的 SQL Server 数据库表中，适配器客户端接收只有一个通知消息。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-109">For example, regardless of the number of records inserted, updated, or deleted in a SQL Server database table, the adapter client receives only one notification message.</span></span>  
   
--   <span data-ttu-id="a5fa7-110">我们建议适配器客户端应用程序包含的逻辑来解释收到来自 SQL Server 的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-110">We recommend that the adapter client application contain the logic to interpret the type of notification received from SQL Server.</span></span> <span data-ttu-id="a5fa7-111">可以通过提取的信息，确定通知类型**\<信息\>**收到的通知消息元素。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-111">The notification type can be determined by extracting the information from, the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="a5fa7-112">下面是收到有关插入操作的通知消息示例：</span><span class="sxs-lookup"><span data-stu-id="a5fa7-112">Here’s an example of a notification message received for an Insert operation:</span></span>  
+-   <span data-ttu-id="a5fa7-110">我们建议适配器客户端应用程序包含的逻辑来解释收到来自 SQL Server 的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-110">We recommend that the adapter client application contain the logic to interpret the type of notification received from SQL Server.</span></span> <span data-ttu-id="a5fa7-111">可以通过提取的信息，确定通知类型**\<信息\>** 收到的通知消息元素。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-111">The notification type can be determined by extracting the information from, the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="a5fa7-112">下面是收到有关插入操作的通知消息示例：</span><span class="sxs-lookup"><span data-stu-id="a5fa7-112">Here’s an example of a notification message received for an Insert operation:</span></span>  
   
     ```  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
     </Notification>  
     ```  
   
-     <span data-ttu-id="a5fa7-113">请注意内的值**\<信息\>**元素。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="a5fa7-114">此值提供有关为其接收到通知消息的操作的信息。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="a5fa7-115">你的应用程序应具有用于提取内的值的功能**\<信息\>**元素，然后根据值，执行后续的任务。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="a5fa7-116">主题[过程通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何提取的值在**\<信息\>**元素.</span><span class="sxs-lookup"><span data-stu-id="a5fa7-116">The topic [Process Notification Messages to complete Specific Tasks in SQL using BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span> <span data-ttu-id="a5fa7-117">执行类似任务的详细的教程也是在[教程 2： 员工-采购订单过程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-117">A detailed tutorial that performs similar tasks is also available at [Tutorial 2: Employee - Purchase Order Process using the SQL adapter](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).</span></span>  
+     <span data-ttu-id="a5fa7-113">请注意内的值**\<信息\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="a5fa7-114">此值提供有关为其接收到通知消息的操作的信息。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="a5fa7-115">你的应用程序应具有用于提取内的值的功能**\<信息\>** 元素，然后根据值，执行后续的任务。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="a5fa7-116">主题[过程通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何提取的值在**\<信息\>** 元素.</span><span class="sxs-lookup"><span data-stu-id="a5fa7-116">The topic [Process Notification Messages to complete Specific Tasks in SQL using BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span> <span data-ttu-id="a5fa7-117">执行类似任务的详细的教程也是在[教程 2： 员工-采购订单过程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-117">A detailed tutorial that performs similar tasks is also available at [Tutorial 2: Employee - Purchase Order Process using the SQL adapter](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).</span></span>  
   
 -   <span data-ttu-id="a5fa7-118">理想情况下，客户端应用程序收到特定记录的通知后，该记录应更新，以便不会收到其他通知。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-118">Ideally, after the client application receives a notification for a specific record, that record should be updated so that additional notifications are not received.</span></span> <span data-ttu-id="a5fa7-119">例如，考虑**员工**表具有**状态**列。</span><span class="sxs-lookup"><span data-stu-id="a5fa7-119">For example, consider an **Employee** table that has a **Status** column.</span></span> <span data-ttu-id="a5fa7-120">为所有新记录插入到**员工**表中的值**状态**列始终是"0"因此表看起来类似于以下：</span><span class="sxs-lookup"><span data-stu-id="a5fa7-120">For all new records inserted into the **Employee** table, the value in the **Status** column is always “0” so the table will look like the following:</span></span>  
   

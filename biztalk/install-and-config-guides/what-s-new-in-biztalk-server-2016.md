@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2016 的新增功能 |Microsoft 文档"
-description: "更改和改进，包括功能包、 适配器、 安全、 跟踪、 性能和 BizTalk Server 2016 中的详细信息"
-ms.custom: 
+title: BizTalk Server 2016 的新增功能 |Microsoft 文档
+description: 更改和改进，包括功能包、 适配器、 安全、 跟踪、 性能和 BizTalk Server 2016 中的详细信息
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fce1fe8-f515-462d-bf6d-19408d515479
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497758"
 ---
 # <a name="whats-new-in-biztalk-server-2016"></a><span data-ttu-id="04d75-103">BizTalk Server 2016 的新增功能</span><span class="sxs-lookup"><span data-stu-id="04d75-103">What's New in BizTalk Server 2016</span></span>
 <span data-ttu-id="04d75-104">了解 [!INCLUDE[bts2016](../includes/bts2016-md.md)] 中的新增功能。</span><span class="sxs-lookup"><span data-stu-id="04d75-104">Read about what's new in [!INCLUDE[bts2016](../includes/bts2016-md.md)].</span></span> 

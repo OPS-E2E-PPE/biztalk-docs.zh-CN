@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966027"
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a><span data-ttu-id="bf0cb-102">SAP 中的 EXEC 语句的语法</span><span class="sxs-lookup"><span data-stu-id="bf0cb-102">Syntax for an EXEC Statement in SAP</span></span>
 <span data-ttu-id="bf0cb-103">以下部分介绍用于实现 EXEC 语句的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="bf0cb-103">The following section describes grammar specifications for implementing EXEC statements against the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)].</span></span> <span data-ttu-id="bf0cb-104">请注意，在某些情况下，语法的 TRANSACT-SQL 语法稍有不同。</span><span class="sxs-lookup"><span data-stu-id="bf0cb-104">Notice that in several cases, the syntax is somewhat different from Transact-SQL syntax.</span></span>  

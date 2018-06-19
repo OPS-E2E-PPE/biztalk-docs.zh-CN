@@ -1,18 +1,18 @@
 ---
-title: "步骤 4： 创建 Contoso 0 C 4 贸易合作伙伴协议 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建 Contoso 0 C 4 贸易合作伙伴协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - agreements, creating
 - creating, agreements
 - double action tutorial, creating agreements
 ms.assetid: de2a943f-945a-4bfc-87f3-dd327d5214ef
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965427"
 ---
 # <a name="step-4-creating-the-contoso-0c4-trading-partner-agreement"></a><span data-ttu-id="307ed-102">步骤 4： 创建 Contoso 0 C 4 贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="307ed-102">Step 4: Creating the Contoso 0C4 Trading Partner Agreement</span></span>
 <span data-ttu-id="307ed-103">在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Contoso 和 Fabrikam 之间的贸易合作伙伴协议，</span><span class="sxs-lookup"><span data-stu-id="307ed-103">In this step, you create a trading partner agreement between Contoso and Fabrikam using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console.</span></span> <span data-ttu-id="307ed-104">并为 0C4 合作伙伴接口流程 (PIP) 创建新的贸易合作伙伴协议。</span><span class="sxs-lookup"><span data-stu-id="307ed-104">You create a new trading partner agreement for the 0C4 Partner Interface Process (PIP).</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="307ed-116">**我的组织**</span><span class="sxs-lookup"><span data-stu-id="307ed-116">**My Organization**</span></span>|<span data-ttu-id="307ed-117">选择**Contoso**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-117">Select **Contoso** from the drop-down list.</span></span>|  
     |<span data-ttu-id="307ed-118">**伙伴组织**</span><span class="sxs-lookup"><span data-stu-id="307ed-118">**Partner Organization**</span></span>|<span data-ttu-id="307ed-119">选择**Fabrikam**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-119">Select **Fabrikam** from the drop-down list.</span></span>|  
     |<span data-ttu-id="307ed-120">**RNIF 版本**</span><span class="sxs-lookup"><span data-stu-id="307ed-120">**RNIF Version**</span></span>|<span data-ttu-id="307ed-121">选择**V02.00.01**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-121">Select **V02.00.01** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="307ed-122">**主角色**</span><span class="sxs-lookup"><span data-stu-id="307ed-122">**Home Role**</span></span>|<span data-ttu-id="307ed-123">选择**响应方 （响应方）**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-123">Select **Responder (Responder)** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="307ed-122">**主角色**</span><span class="sxs-lookup"><span data-stu-id="307ed-122">**Home Role**</span></span>|<span data-ttu-id="307ed-123">选择**响应方 （响应方）** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-123">Select **Responder (Responder)** from the drop-down list.</span></span>|  
     |<span data-ttu-id="307ed-124">**用法**</span><span class="sxs-lookup"><span data-stu-id="307ed-124">**Usage**</span></span>|<span data-ttu-id="307ed-125">选择**测试**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="307ed-125">Select **Test** from the drop-down list.</span></span>|  
   
 3.  <span data-ttu-id="307ed-126">单击**端口**选项卡，然后执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="307ed-126">Click the **Ports** tab, and then do the following:</span></span>  

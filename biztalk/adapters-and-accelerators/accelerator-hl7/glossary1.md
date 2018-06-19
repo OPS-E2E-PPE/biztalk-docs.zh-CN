@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 中的 HL7 快捷键的术语表 |Microsoft 文档"
-description: "常见术语和定义知道并了解用于 BizTalk Accelerator HL7"
-ms.custom: 
+title: BizTalk Server 中的 HL7 快捷键的术语表 |Microsoft 文档
+description: 常见术语和定义知道并了解用于 BizTalk Accelerator HL7
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb9c18a-5fe5-448f-b115-0973e9d12952
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204949"
 ---
 # <a name="glossary"></a><span data-ttu-id="b0f5b-103">词汇表</span><span class="sxs-lookup"><span data-stu-id="b0f5b-103">Glossary</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="b0f5b-104">BizTalk Accelerator for HL7 使用以下术语和定义。</span><span class="sxs-lookup"><span data-stu-id="b0f5b-104"> BizTalk Accelerator for HL7 uses the following terms and definitions.</span></span>

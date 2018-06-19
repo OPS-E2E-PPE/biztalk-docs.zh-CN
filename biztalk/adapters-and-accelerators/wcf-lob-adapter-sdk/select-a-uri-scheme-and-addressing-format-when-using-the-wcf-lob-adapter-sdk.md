@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF LOB 适配器 SDK 时选择的 URI 方案和寻址格式 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF LOB 适配器 SDK 时选择的 URI 方案和寻址格式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bb4feee-3d39-43ca-82ac-aba38c13bc69
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965307"
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="c4db0-102">使用 WCF LOB 适配器 SDK 时选择的 URI 方案和寻址的格式</span><span class="sxs-lookup"><span data-stu-id="c4db0-102">Select a URI scheme and addressing format when using the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="c4db0-103">统一资源标识符 (URI) 唯一标识资源与 Web 服务类似，或者如果使用的开发适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，要连接到系统，以及要执行的操作。</span><span class="sxs-lookup"><span data-stu-id="c4db0-103">A Uniform Resource Identifier (URI) uniquely identifies resources like a Web service or, in the case of an adapter developed with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], the system to connect to as well as the action to perform.</span></span> <span data-ttu-id="c4db0-104">本部分提供有关如何构造用于唯一地描述了终结点地址和适配器的操作的 URI 的建议。</span><span class="sxs-lookup"><span data-stu-id="c4db0-104">This section provides a recommendation on how to construct a URI to uniquely describe the endpoint address and the action for your adapter.</span></span>  

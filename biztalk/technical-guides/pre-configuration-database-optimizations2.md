@@ -1,14 +1,14 @@
 ---
-title: "预配置数据库 Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 预配置数据库 Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c525c3a-249c-4694-b287-a8c35a6aa524
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015428"
 ---
 # <a name="pre-configuration-database-optimizations"></a><span data-ttu-id="25474-102">预配置数据库优化</span><span class="sxs-lookup"><span data-stu-id="25474-102">Pre-Configuration Database Optimizations</span></span>
 <span data-ttu-id="25474-103">由于 SQL Server 在任何 BizTalk Server 环境中所扮演的重要角色，它是一项极其重要 SQL Server 能为了获得最佳性能配置/优化问题。</span><span class="sxs-lookup"><span data-stu-id="25474-103">Because of the critical role that SQL Server plays in any BizTalk Server environment, it is of paramount importance that SQL Server be configured/tuned for optimal performance.</span></span> <span data-ttu-id="25474-104">如果 SQL Server 不优化很好地运行，然后使用 BizTalk Server 的数据库将成为瓶颈和 BizTalk Server 环境的整体性能将会降低。</span><span class="sxs-lookup"><span data-stu-id="25474-104">If SQL Server is not tuned to perform well, then the databases used by BizTalk Server will become a bottleneck and the overall performance of the BizTalk Server environment will suffer.</span></span> <span data-ttu-id="25474-105">本主题介绍在安装 BizTalk Server 并配置 BizTalk Server 数据库之前，应遵循的几个 SQL Server 性能优化。</span><span class="sxs-lookup"><span data-stu-id="25474-105">This topic describes several SQL Server performance optimizations that should be followed before installing BizTalk Server and configuring the BizTalk Server databases.</span></span>  

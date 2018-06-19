@@ -1,11 +1,11 @@
 ---
-title: "消息分隔符 |Microsoft 文档"
-ms.custom: 
+title: 消息分隔符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, events
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - XML messages
 - messages, flat files
 ms.assetid: d25bf6db-5512-4c82-be0e-00da024c55d1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960659"
 ---
 # <a name="message-delimiters"></a><span data-ttu-id="1295b-102">消息分隔符</span><span class="sxs-lookup"><span data-stu-id="1295b-102">Message Delimiters</span></span>
 <span data-ttu-id="1295b-103">由 HL7 标准定义的消息事件采用以下形式：</span><span class="sxs-lookup"><span data-stu-id="1295b-103">Message events defined by HL7 standards take the following form:</span></span>  

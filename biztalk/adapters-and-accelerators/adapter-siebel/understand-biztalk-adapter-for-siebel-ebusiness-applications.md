@@ -1,11 +1,11 @@
 ---
-title: "了解 BizTalk 适配器的 Siebel eBusiness Applications |Microsoft 文档"
-ms.custom: 
+title: 了解 BizTalk 适配器的 Siebel eBusiness Applications |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter features
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - adapters, features
 - adapter, overview
 ms.assetid: 3249fb74-9ca1-4b81-971d-5151a2e354fe
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962611"
 ---
 # <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="e4037-102">为 Siebel eBusiness 应用程序了解的 BizTalk Adapter</span><span class="sxs-lookup"><span data-stu-id="e4037-102">Understand BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="e4037-103">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统交互，以面向服务的编程访问。</span><span class="sxs-lookup"><span data-stu-id="e4037-103">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] enables service-oriented programmatic access in order to interact with an external system.</span></span> <span data-ttu-id="e4037-104">适配器向客户端提供以下优势：</span><span class="sxs-lookup"><span data-stu-id="e4037-104">The adapters provide the following advantages to clients:</span></span>  

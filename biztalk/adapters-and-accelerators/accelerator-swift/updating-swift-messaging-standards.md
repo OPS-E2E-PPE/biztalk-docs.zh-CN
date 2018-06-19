@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214045"
 ---
 # <a name="updating-swift-messaging-standards"></a><span data-ttu-id="9a014-102">更新 SWIFT 消息传送标准</span><span class="sxs-lookup"><span data-stu-id="9a014-102">Updating SWIFT Messaging Standards</span></span>
 <span data-ttu-id="9a014-103">互联网协会为全球 Interbank 财务电信 (SWIFT) 更新每年金融服务行业提出建议，并采用标准的更改作为其消息的标准。</span><span class="sxs-lookup"><span data-stu-id="9a014-103">The Society for Worldwide Interbank Financial Telecommunication (SWIFT) updates their messaging standards annually as the financial services industry proposes and adopts changes to the standards.</span></span> <span data-ttu-id="9a014-104">当 SWIFT 更新其标准版本指南中，[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]架构和 BRE 策略必须经过更新才能符合的最新的 SWIFT 规范。</span><span class="sxs-lookup"><span data-stu-id="9a014-104">When SWIFT updates their Standards Release Guide, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] schemas and BRE policies must be updated to conform to the latest SWIFT specifications.</span></span>  

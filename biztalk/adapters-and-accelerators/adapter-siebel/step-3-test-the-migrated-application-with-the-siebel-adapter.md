@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试与 Siebel 适配器迁移应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试与 Siebel 适配器迁移应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 651ee1b2-52da-497a-84a5-67f1436cc3e6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963099"
 ---
 # <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a><span data-ttu-id="f0cb9-102">步骤 3： 测试与 Siebel 适配器迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="f0cb9-102">Step 3: Test the Migrated Application with the Siebel adapter</span></span>
 <span data-ttu-id="f0cb9-103">![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="f0cb9-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
  <span data-ttu-id="f0cb9-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="f0cb9-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="f0cb9-105">**目标：**在此步骤中，将通过执行插入操作帐户在业务组件上的测试已迁移的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f0cb9-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Account business component.</span></span> <span data-ttu-id="f0cb9-106">若要执行此操作，你可以删除与生成使用 vPrev Siebel 适配器的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="f0cb9-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Siebel adapter.</span></span>  
+ <span data-ttu-id="f0cb9-105">**目标：** 在此步骤中，将通过执行插入操作帐户在业务组件上的测试已迁移的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f0cb9-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Account business component.</span></span> <span data-ttu-id="f0cb9-106">若要执行此操作，你可以删除与生成使用 vPrev Siebel 适配器的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="f0cb9-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Siebel adapter.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="f0cb9-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="f0cb9-107">Prerequisites</span></span>  
   

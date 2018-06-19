@@ -1,17 +1,17 @@
 ---
-title: "Siebel 适配器中的 DbDataReader 类 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器中的 DbDataReader 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, DbDataReader
 - DbDataReader
 ms.assetid: 7673cd10-ec1e-4cb0-93c2-f11928d00ca2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222013"
 ---
 # <a name="dbdatareader-class-in-the-siebel-adapter"></a><span data-ttu-id="a7d6a-102">Siebel 适配器中 DbDataReader 类</span><span class="sxs-lookup"><span data-stu-id="a7d6a-102">DbDataReader class in the Siebel adapter</span></span>
 <span data-ttu-id="a7d6a-103">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供`DbDataReader`利用 XML 数据读取器。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-103">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] provides a `DbDataReader` leveraging the XML Data Reader.</span></span> <span data-ttu-id="a7d6a-104">这使 Siebel 数据源的使用者能够读取的行的只进流。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-104">This provides the consumer of the Siebel data source the ability to read a forward-only stream of rows.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="a7d6a-148">**isDbNull**</span><span class="sxs-lookup"><span data-stu-id="a7d6a-148">**isDbNull**</span></span>|<span data-ttu-id="a7d6a-149">获取一个值，该值指示列是否包含不存在或丢失的值。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-149">Gets a value that indicates whether the column contains nonexistent or missing values.</span></span>|  
 |<span data-ttu-id="a7d6a-150">**NextResult**</span><span class="sxs-lookup"><span data-stu-id="a7d6a-150">**NextResult**</span></span>|<span data-ttu-id="a7d6a-151">Siebel 数据提供程序始终返回单个结果集;因此此调用完全耗尽当前结果集在返回之前**false**。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-151">The Siebel Data Provider always returns a single result set; hence this call fully exhausts the current result set before returning **false**.</span></span>|  
 |<span data-ttu-id="a7d6a-152">**读取**</span><span class="sxs-lookup"><span data-stu-id="a7d6a-152">**Read**</span></span>|<span data-ttu-id="a7d6a-153">将读取器前进到结果集中的下一个结果。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-153">Advances the reader to the next record in a result set.</span></span>  <span data-ttu-id="a7d6a-154">它将返回**true**如果成功，和**false**如果读取器左具有更多的记录。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-154">It returns **true** if it succeeds, and **false** if the reader has no more records left.</span></span>|  
-|<span data-ttu-id="a7d6a-155">**关闭**</span><span class="sxs-lookup"><span data-stu-id="a7d6a-155">**Close**</span></span>|<span data-ttu-id="a7d6a-156">关闭`DbDataReader`对象。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-156">Closes the `DbDataReader` object.</span></span> <span data-ttu-id="a7d6a-157">**注意：**完成后使用`DbDataReader`对象，您必须关闭它，以便释放 Siebel COM 库对象。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-157">**Caution:**  When you are done using the `DbDataReader` object, you must close it, in order to free up the Siebel COM library objects.</span></span> <span data-ttu-id="a7d6a-158">否则，客户端应用程序的内存和句柄的使用情况将转到上。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-158">Otherwise, the client application’s memory and handle usage will go up.</span></span>|  
+|<span data-ttu-id="a7d6a-155">**关闭**</span><span class="sxs-lookup"><span data-stu-id="a7d6a-155">**Close**</span></span>|<span data-ttu-id="a7d6a-156">关闭`DbDataReader`对象。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-156">Closes the `DbDataReader` object.</span></span> <span data-ttu-id="a7d6a-157">**注意：** 完成后使用`DbDataReader`对象，您必须关闭它，以便释放 Siebel COM 库对象。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-157">**Caution:**  When you are done using the `DbDataReader` object, you must close it, in order to free up the Siebel COM library objects.</span></span> <span data-ttu-id="a7d6a-158">否则，客户端应用程序的内存和句柄的使用情况将转到上。</span><span class="sxs-lookup"><span data-stu-id="a7d6a-158">Otherwise, the client application’s memory and handle usage will go up.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="a7d6a-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a7d6a-159">See Also</span></span>  
  [<span data-ttu-id="a7d6a-160">扩展 Siebel 适配器 ADO.NET 接口</span><span class="sxs-lookup"><span data-stu-id="a7d6a-160">Extend ADO.NET Interfaces with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

@@ -1,11 +1,11 @@
 ---
-title: "组和服务帐户的访问控制 |Microsoft 文档"
-ms.custom: 
+title: 组和服务帐户的访问控制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, service accounts
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - groups, access control
 - groups, security
 ms.assetid: 411a7bfa-6675-4d09-9e37-83e2941df3c6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967027"
 ---
 # <a name="access-control-for-groups-and-service-accounts"></a><span data-ttu-id="6b447-102">组和服务帐户的访问控制</span><span class="sxs-lookup"><span data-stu-id="6b447-102">Access Control for Groups and Service Accounts</span></span>
 <span data-ttu-id="6b447-103">在用户创建服务帐户下运行每个 BizTalk 主机实例。</span><span class="sxs-lookup"><span data-stu-id="6b447-103">Each BizTalk Host instance runs under a user-created service account.</span></span> <span data-ttu-id="6b447-104">必须提供的服务帐户并且他们的密码时创建主机实例的计算机上。</span><span class="sxs-lookup"><span data-stu-id="6b447-104">You must provide the service accounts and their passwords at the time you create the host instance on a computer.</span></span> <span data-ttu-id="6b447-105">BizTalk Server 然后确保帐户具有执行其作业通过将每个这些服务帐户添加到本地或域的 Windows 组，反过来，它将添加到 SQL Server 数据库角色特定于该主机所需的最小用户权限。</span><span class="sxs-lookup"><span data-stu-id="6b447-105">BizTalk Server then ensures that the accounts have the minimum user rights needed to do their jobs by adding each of these service accounts to a local or domain Windows group that, in turn, it adds to the SQL Server Database role specific to that host.</span></span>  

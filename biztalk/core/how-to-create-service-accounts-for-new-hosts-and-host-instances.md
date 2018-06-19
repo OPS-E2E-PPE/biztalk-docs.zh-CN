@@ -1,11 +1,11 @@
 ---
-title: "如何创建服务帐户的新主机和主机实例 |Microsoft 文档"
-ms.custom: 
+title: 如何创建服务帐户的新主机和主机实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Configuration Manager, service accounts
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - service accounts, creating
 - creating, service accounts
 ms.assetid: cef97f4a-8db1-41b6-9614-608c2fbf59a9
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969372"
 ---
 # <a name="how-to-create-service-accounts-for-new-hosts-and-host-instances"></a><span data-ttu-id="706ce-102">如何为新主机和主机实例创建服务帐户</span><span class="sxs-lookup"><span data-stu-id="706ce-102">How to Create Service Accounts for New Hosts and Host Instances</span></span>
 <span data-ttu-id="706ce-103">在单台计算机上安装和配置 BizTalk Server 时，配置管理器将配置必需的 Windows 组和用户帐户。</span><span class="sxs-lookup"><span data-stu-id="706ce-103">The Configuration Manager configures the necessary Windows groups and user accounts when you install and configure BizTalk Server on a single computer.</span></span>  

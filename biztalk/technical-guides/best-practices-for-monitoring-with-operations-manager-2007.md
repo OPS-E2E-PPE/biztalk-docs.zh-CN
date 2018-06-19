@@ -1,14 +1,14 @@
 ---
-title: "使用 Operations Manager 2007 监视的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 使用 Operations Manager 2007 监视的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67a5026c-ef59-498b-9bef-ea0f1c932eae
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300221"
 ---
 # <a name="best-practices-for-monitoring-with-operations-manager-2007"></a><span data-ttu-id="5a2e8-102">使用 Operations Manager 2007 监视的最佳做法</span><span class="sxs-lookup"><span data-stu-id="5a2e8-102">Best Practices for Monitoring with Operations Manager 2007</span></span>
 <span data-ttu-id="5a2e8-103">遵循本主题有效地监视应用程序使用 Operations Manager 2007 中列出的最佳做法。</span><span class="sxs-lookup"><span data-stu-id="5a2e8-103">Adhere to the best practices listed in this topic to effectively monitor your applications using Operations Manager 2007.</span></span>  

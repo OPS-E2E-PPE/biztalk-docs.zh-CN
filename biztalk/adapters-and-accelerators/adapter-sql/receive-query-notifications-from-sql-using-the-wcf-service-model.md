@@ -1,14 +1,14 @@
 ---
-title: "从使用 WCF 服务模型的 SQL 接收查询通知 |Microsoft 文档"
-ms.custom: 
+title: 从使用 WCF 服务模型的 SQL 接收查询通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9def31-3c5a-4326-b798-31bde0ff2568
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964083"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a><span data-ttu-id="7a39b-102">从使用 WCF 服务模型的 SQL 接收查询通知</span><span class="sxs-lookup"><span data-stu-id="7a39b-102">Receive Query Notifications from SQL using the WCF Service Model</span></span>
 <span data-ttu-id="7a39b-103">本主题演示如何配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知消息。</span><span class="sxs-lookup"><span data-stu-id="7a39b-103">This topic demonstrates how to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notification messages from a SQL Server database.</span></span> <span data-ttu-id="7a39b-104">为了演示通知，考虑一个表，员工，与"状态"列。</span><span class="sxs-lookup"><span data-stu-id="7a39b-104">To demonstrate notifications, consider a table, Employee, with a “Status” column.</span></span> <span data-ttu-id="7a39b-105">一条新记录插入到此表时，状态列的值设置为 0。</span><span class="sxs-lookup"><span data-stu-id="7a39b-105">When a new record is inserted to this table, the value of the Status column is set to 0.</span></span> <span data-ttu-id="7a39b-106">你可以配置适配器后，以通过使用 SQL 语句检索为"0"。 具有状态列的所有记录的通知注册接收通知</span><span class="sxs-lookup"><span data-stu-id="7a39b-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have Status column as “0.”</span></span> <span data-ttu-id="7a39b-107">你可以通过指定的 SQL 语句来实现**NotificationStatement**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="7a39b-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="7a39b-108">适配器客户端收到通知后，它可以包含执行 SQL Server 数据库上的任何后续任务的逻辑。</span><span class="sxs-lookup"><span data-stu-id="7a39b-108">After the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the SQL Server database.</span></span> <span data-ttu-id="7a39b-109">在此示例中，为简单起见，适配器客户端列出的所有记录表中将状态列设为"0"。</span><span class="sxs-lookup"><span data-stu-id="7a39b-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the Status column as “0.”</span></span>  

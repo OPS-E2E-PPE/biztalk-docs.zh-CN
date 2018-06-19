@@ -1,12 +1,12 @@
 ---
-title: "步骤 2-创建 VSTS 令牌并安装代理 |Microsoft 文档"
-description: "到 Visual Studio 中，创建 VSTS 安全访问令牌，克隆 VSTS 项目并安装用于自动执行部署你的 BizTalk Server 项目的生成代理"
-ms.custom: 
+title: 步骤 2-创建 VSTS 令牌并安装代理 |Microsoft 文档
+description: 到 Visual Studio 中，创建 VSTS 安全访问令牌，克隆 VSTS 项目并安装用于自动执行部署你的 BizTalk Server 项目的生成代理
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
@@ -16,6 +16,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497686"
 ---
 # <a name="step-2-create-the-token--install-the-agent"></a><span data-ttu-id="36125-103">第 2 步： 创建令牌与安装代理</span><span class="sxs-lookup"><span data-stu-id="36125-103">Step 2: Create the token & install the agent</span></span>
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/21/2017
 
     ![打开你的帐户安全](../core/media/vsts-account-security.png)
 
-3. <span data-ttu-id="36125-125">**个人访问令牌**将自动打开。</span><span class="sxs-lookup"><span data-stu-id="36125-125">**Personal access tokens** automatically opens.</span></span> <span data-ttu-id="36125-126">如果你有现有代理，选中它，并确认**代理池 （读取、 管理）**选择：</span><span class="sxs-lookup"><span data-stu-id="36125-126">If you have an existing agent, select it, and confirm **Agent Pools (read, manage)** is selected:</span></span>
+3. <span data-ttu-id="36125-125">**个人访问令牌**将自动打开。</span><span class="sxs-lookup"><span data-stu-id="36125-125">**Personal access tokens** automatically opens.</span></span> <span data-ttu-id="36125-126">如果你有现有代理，选中它，并确认**代理池 （读取、 管理）** 选择：</span><span class="sxs-lookup"><span data-stu-id="36125-126">If you have an existing agent, select it, and confirm **Agent Pools (read, manage)** is selected:</span></span>
 
     ![代理池的读取和管理](../core/media/agent-pools-read-manage.png)
 

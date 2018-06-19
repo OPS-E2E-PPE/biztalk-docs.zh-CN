@@ -1,11 +1,11 @@
 ---
-title: "自定义以使用特定 PIP 私有过程 |Microsoft 文档"
-ms.custom: 
+title: 自定义以使用特定 PIP 私有过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, PIPs
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - PIPs, private processes
 - customizing private processes
 ms.assetid: 88494e87-25a0-4c94-9396-61a0e07964aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966747"
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a><span data-ttu-id="75508-102">自定义以使用特定 PIP 私有过程</span><span class="sxs-lookup"><span data-stu-id="75508-102">Customizing a Private Process to Work with a Specific PIP</span></span>
 <span data-ttu-id="75508-103">你可以创建特定的筛选器表达式，使响应方专用业务流程处理或不处理特定合作伙伴接口流程 (PIP) 的实例。</span><span class="sxs-lookup"><span data-stu-id="75508-103">You can create a filter expression that will cause a responder private-process orchestration to process or not process instances of a specific Partner Interface Process (PIP).</span></span> <span data-ttu-id="75508-104">这样你就可以灵活地创建自定义专用流程来接收和处理某些 PIP 实例，而使用默认的专用流程来处理所有其他 PIP 实例。</span><span class="sxs-lookup"><span data-stu-id="75508-104">This gives you the flexibility of creating a custom private process to receive and process some PIP instances, and using the default private process to process all other PIP instances.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
   
 9. <span data-ttu-id="75508-126">右键单击**ReceiveFromPublicProcessResponder**接收形状，并依次**编辑筛选器表达式**。</span><span class="sxs-lookup"><span data-stu-id="75508-126">Right-click the **ReceiveFromPublicProcessResponder** receive shape, and then click **Edit Filter Expression**.</span></span>  
   
-10. <span data-ttu-id="75508-127">在**筛选器表达式**对话框中，在第一个打开行中，属性列中的选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="75508-127">In the **Filter Expression** dialog box, in the Property column in the first open row, select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span> <span data-ttu-id="75508-128">在运算符列中，选择**！ =**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="75508-128">In the Operator column, select **!=** from the drop-down list.</span></span> <span data-ttu-id="75508-129">在值列中，键入三位数 PIP 代码，例如，键入"**3A4"**。</span><span class="sxs-lookup"><span data-stu-id="75508-129">In the Value column, type the three-digit PIP code, for example, type "**3A4"**.</span></span>  
+10. <span data-ttu-id="75508-127">在**筛选器表达式**对话框中，在第一个打开行中，属性列中的选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="75508-127">In the **Filter Expression** dialog box, in the Property column in the first open row, select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span> <span data-ttu-id="75508-128">在运算符列中，选择 **！ =** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="75508-128">In the Operator column, select **!=** from the drop-down list.</span></span> <span data-ttu-id="75508-129">在值列中，键入三位数 PIP 代码，例如，键入"**3A4"**。</span><span class="sxs-lookup"><span data-stu-id="75508-129">In the Value column, type the three-digit PIP code, for example, type "**3A4"**.</span></span>  
   
 11. <span data-ttu-id="75508-130">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="75508-130">Click **OK**.</span></span>  
   

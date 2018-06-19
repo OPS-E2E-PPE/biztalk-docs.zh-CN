@@ -1,18 +1,18 @@
 ---
-title: "HelloWorld （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: HelloWorld （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 - orchestrations, messages
 ms.assetid: 4416029a-ca76-45a4-b66c-b44cb71ded58
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969307"
 ---
 # <a name="helloworld-biztalk-server-sample"></a><span data-ttu-id="1e836-102">HelloWorld （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="1e836-102">HelloWorld (BizTalk Server Sample)</span></span>
 <span data-ttu-id="1e836-103">HelloWorld 示例演示如何使用 BizTalk 业务流程将 XML 消息（采购订单）转换为相关但不同类型的消息（发票）。</span><span class="sxs-lookup"><span data-stu-id="1e836-103">The HelloWorld sample demonstrates how to use BizTalk orchestrations to convert an XML message (a purchase order) into a related, but distinct, type of message (an invoice).</span></span>  

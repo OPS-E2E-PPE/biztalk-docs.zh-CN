@@ -1,11 +1,11 @@
 ---
-title: "如何为日志传送配置的目标系统 |Microsoft 文档"
-ms.custom: 
+title: 如何为日志传送配置的目标系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 2015-12-03
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - system failures, backing up
 - backing up, system failures
 ms.assetid: 7b4425f5-b105-4fb2-a503-94ca1e75ad55
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969491"
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a><span data-ttu-id="b4537-102">如何配置日志传送的目标系统</span><span class="sxs-lookup"><span data-stu-id="b4537-102">How to Configure the Destination System for Log Shipping</span></span>
 <span data-ttu-id="b4537-103">日志传送具有备用服务器功能，用以缩短出现系统故障时的停机时间。</span><span class="sxs-lookup"><span data-stu-id="b4537-103">Log shipping provides standby server capabilities to reduce downtime in the event of a system failure.</span></span> <span data-ttu-id="b4537-104">使用日志传送可以自动从源系统向目标系统发送事务日志。</span><span class="sxs-lookup"><span data-stu-id="b4537-104">Log shipping allows you to automatically send transaction logs from the source system to the destination system.</span></span> <span data-ttu-id="b4537-105">在目标系统中，事务日志还原到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库; 让他们可以与源数据库紧密同步。</span><span class="sxs-lookup"><span data-stu-id="b4537-105">At the destination system, the transaction logs are restored to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases; keeping them closely synchronized with the source databases.</span></span>  
@@ -125,9 +126,9 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="b4537-161">右键单击**SampleUpdateInfo.xml**，然后选择**编辑**。</span><span class="sxs-lookup"><span data-stu-id="b4537-161">Right-click **SampleUpdateInfo.xml**, and select **Edit**.</span></span> <span data-ttu-id="b4537-162">请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b4537-162">Do the following:</span></span>  
   
-    -   <span data-ttu-id="b4537-163">所有实例都替换**"SourceServer"**与源系统的名称。</span><span class="sxs-lookup"><span data-stu-id="b4537-163">Replace all instances of **"SourceServer"** with the name of the source system.</span></span>  
+    -   <span data-ttu-id="b4537-163">所有实例都替换 **"SourceServer"** 与源系统的名称。</span><span class="sxs-lookup"><span data-stu-id="b4537-163">Replace all instances of **"SourceServer"** with the name of the source system.</span></span>  
   
-    -   <span data-ttu-id="b4537-164">所有实例都替换**"DestinationServer"**与目标系统的名称。</span><span class="sxs-lookup"><span data-stu-id="b4537-164">Replace all instances of **"DestinationServer"** with the name of the destination system.</span></span>  
+    -   <span data-ttu-id="b4537-164">所有实例都替换 **"DestinationServer"** 与目标系统的名称。</span><span class="sxs-lookup"><span data-stu-id="b4537-164">Replace all instances of **"DestinationServer"** with the name of the destination system.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="b4537-165">用引号将源系统和目标系统的名称括起来。</span><span class="sxs-lookup"><span data-stu-id="b4537-165">Include the quotation marks around the name of the source and destination systems.</span></span>  
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  <span data-ttu-id="b4537-168">如果更改了这两个数据库的默认名称，请使用实际的数据库名称。</span><span class="sxs-lookup"><span data-stu-id="b4537-168">If you changed the default name for these two databases, please use the actual database names.</span></span>  
   
-12. <span data-ttu-id="b4537-169">如果你有多个 MessageBox 数据库你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统，将另一个 MessageBoxDB 行添加到列表中，并将**IsMaster ="0"**非 master 数据库。</span><span class="sxs-lookup"><span data-stu-id="b4537-169">If you have more than one MessageBox database in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system, add another MessageBoxDB line to the list, and then set **IsMaster="0"** for the non-master databases.</span></span>  
+12. <span data-ttu-id="b4537-169">如果你有多个 MessageBox 数据库你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统，将另一个 MessageBoxDB 行添加到列表中，并将**IsMaster ="0"** 非 master 数据库。</span><span class="sxs-lookup"><span data-stu-id="b4537-169">If you have more than one MessageBox database in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system, add another MessageBoxDB line to the list, and then set **IsMaster="0"** for the non-master databases.</span></span>  
   
 13. <span data-ttu-id="b4537-170">如果使用 BAM 或规则引擎，请相应地取消这些行的注释。</span><span class="sxs-lookup"><span data-stu-id="b4537-170">If you are using BAM or the Rules Engine, uncomment these lines as appropriate.</span></span>  
   

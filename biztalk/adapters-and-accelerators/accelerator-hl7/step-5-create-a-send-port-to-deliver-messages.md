@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 创建发送端口将消息传递 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 创建发送端口将消息传递 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f56ad7a7-5c77-4191-a001-691e5e0652a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207597"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-messages"></a><span data-ttu-id="a1c43-102">步骤 5： 创建发送端口将消息传递</span><span class="sxs-lookup"><span data-stu-id="a1c43-102">Step 5: Create a Send Port to Deliver Messages</span></span>
 <span data-ttu-id="a1c43-103">在此步骤中，你可以创建和配置用于发送单个消息中收到批处理包含端口。</span><span class="sxs-lookup"><span data-stu-id="a1c43-103">In this step, you create and configure a port for sending the individual messages contained in the received batch.</span></span> <span data-ttu-id="a1c43-104">更高版本在教程中，将在启用发起方 (Tutorial_BatchSource) 的碎片[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。</span><span class="sxs-lookup"><span data-stu-id="a1c43-104">Later in the tutorial, you will enable fragmentation for the originating party (Tutorial_BatchSource) in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.</span></span> <span data-ttu-id="a1c43-105">因此，BizTalk 集成引擎将转换为单个消息，片段批处理和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将通过在此步骤中创建的发送端口发送这些消息。</span><span class="sxs-lookup"><span data-stu-id="a1c43-105">As a result, the BizTalk integration engine will fragment the batch into individual messages, and [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will send those messages over the send port that you create in this step.</span></span>  
@@ -56,15 +57,15 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="a1c43-140">使用此选项</span><span class="sxs-lookup"><span data-stu-id="a1c43-140">Use this</span></span>|<span data-ttu-id="a1c43-141">执行的操作</span><span class="sxs-lookup"><span data-stu-id="a1c43-141">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="a1c43-142">**属性**（首行）</span><span class="sxs-lookup"><span data-stu-id="a1c43-142">**Property** (first line)</span></span>|<span data-ttu-id="a1c43-143">单击下的字段**属性**，然后选择**BTS。MessageType**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-143">Click the field under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="a1c43-144">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-144">**Operator**</span></span>|<span data-ttu-id="a1c43-145">选择**！ =**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-145">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="a1c43-144">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-144">**Operator**</span></span>|<span data-ttu-id="a1c43-145">选择 **！ =** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-145">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="a1c43-146">**值**</span><span class="sxs-lookup"><span data-stu-id="a1c43-146">**Value**</span></span>|<span data-ttu-id="a1c43-147">类型**http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**。</span><span class="sxs-lookup"><span data-stu-id="a1c43-147">Type **http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**.</span></span>|  
     |<span data-ttu-id="a1c43-148">**分组依据**</span><span class="sxs-lookup"><span data-stu-id="a1c43-148">**Group By**</span></span>|<span data-ttu-id="a1c43-149">选择**AND**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-149">Select **AND** from the drop-down list.</span></span>|  
     |<span data-ttu-id="a1c43-150">**属性**（第二个行）</span><span class="sxs-lookup"><span data-stu-id="a1c43-150">**Property** (second line)</span></span>|<span data-ttu-id="a1c43-151">单击下的字段**属性**，然后选择**BTS。MessageType**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-151">Click the field under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="a1c43-152">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-152">**Operator**</span></span>|<span data-ttu-id="a1c43-153">选择**！ =**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-153">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="a1c43-152">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-152">**Operator**</span></span>|<span data-ttu-id="a1c43-153">选择 **！ =** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-153">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="a1c43-154">**值**</span><span class="sxs-lookup"><span data-stu-id="a1c43-154">**Value**</span></span>|<span data-ttu-id="a1c43-155">类型**http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF。**</span><span class="sxs-lookup"><span data-stu-id="a1c43-155">Type **http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF.**</span></span>|  
     |<span data-ttu-id="a1c43-156">**分组依据**</span><span class="sxs-lookup"><span data-stu-id="a1c43-156">**Group By**</span></span>|<span data-ttu-id="a1c43-157">选择**和**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-157">Select **And** from the drop-down list.</span></span>|  
     |<span data-ttu-id="a1c43-158">**属性**（第三个行）</span><span class="sxs-lookup"><span data-stu-id="a1c43-158">**Property** (third line)</span></span>|<span data-ttu-id="a1c43-159">单击下的第二个行上的字段**属性**，然后选择**BTS。MessageType**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-159">Click the field on the second line under **Property**, and then select **BTS.MessageType** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="a1c43-160">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-160">**Operator**</span></span>|<span data-ttu-id="a1c43-161">选择**！ =**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-161">Select **!=** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="a1c43-160">**运算符**</span><span class="sxs-lookup"><span data-stu-id="a1c43-160">**Operator**</span></span>|<span data-ttu-id="a1c43-161">选择 **！ =** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="a1c43-161">Select **!=** from the drop-down list.</span></span>|  
     |<span data-ttu-id="a1c43-162">**值**</span><span class="sxs-lookup"><span data-stu-id="a1c43-162">**Value**</span></span>|<span data-ttu-id="a1c43-163">类型**StaticAck**。</span><span class="sxs-lookup"><span data-stu-id="a1c43-163">Type **StaticAck**.</span></span>|  
   
 7.  <span data-ttu-id="a1c43-164">单击 **“输入”**。</span><span class="sxs-lookup"><span data-stu-id="a1c43-164">Click **Enter**.</span></span> <span data-ttu-id="a1c43-165">在对话框中底部窗格中，验证是否正确，输入筛选器表达式，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a1c43-165">In the pane at the bottom of the dialog box, verify that you entered the filter expression correctly, and then click **OK**.</span></span>  

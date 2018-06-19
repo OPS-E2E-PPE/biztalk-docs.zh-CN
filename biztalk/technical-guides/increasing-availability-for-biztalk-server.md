@@ -1,14 +1,14 @@
 ---
-title: "提高了可用性，BizTalk 服务器 |Microsoft 文档"
-ms.custom: 
+title: 提高了可用性，BizTalk 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72d9ce5e-d775-4f8e-b1a4-bf3c7c05f571
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297997"
 ---
 # <a name="increasing-availability-for-biztalk-server"></a><span data-ttu-id="174e5-102">BizTalk Server 用于提高可用性</span><span class="sxs-lookup"><span data-stu-id="174e5-102">Increasing Availability for BizTalk Server</span></span>
 <span data-ttu-id="174e5-103">本部分介绍你可以增加的可用性的方式你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="174e5-103">This section describes ways you can increase the availability of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  

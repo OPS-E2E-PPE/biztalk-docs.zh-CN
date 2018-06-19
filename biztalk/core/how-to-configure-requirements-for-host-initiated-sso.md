@@ -1,11 +1,11 @@
 ---
-title: "如何配置主机的要求启动的 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何配置主机的要求启动的 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service accounts, granting privileges [SSO]
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - managing [SSO], creating SPNs
 - SSO, service accounts
 ms.assetid: 91d77c9f-bab2-4f6e-8bce-e31c59cebb20
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968612"
 ---
 # <a name="how-to-configure-requirements-for-host-initiated-sso"></a><span data-ttu-id="6f34d-102">如何配置主机启动的 SSO 的要求</span><span class="sxs-lookup"><span data-stu-id="6f34d-102">How to Configure Requirements for Host Initiated SSO</span></span>
 <span data-ttu-id="6f34d-103">尽管企业 SSO 和主机启动的 SSO 在某些方面有相同之处，但对于主机启动的 SSO，某些平台和 Active Directory 要求是其所独有的。</span><span class="sxs-lookup"><span data-stu-id="6f34d-103">Although Enterprise SSO and host initiated SSO have certain aspects in common, certain platform and Active Directory requirements are unique to host initiated SSO.</span></span> <span data-ttu-id="6f34d-104">本主题将介绍这些要求，并列出在系统中检查或创建这些要求所需的步骤。</span><span class="sxs-lookup"><span data-stu-id="6f34d-104">This topic discusses those requirements, and lists the steps to check or create them on your system.</span></span>  

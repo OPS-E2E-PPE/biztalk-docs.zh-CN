@@ -1,14 +1,14 @@
 ---
-title: "配置发送和接收的 EDI 确认 |Microsoft 文档"
-ms.custom: 
+title: 配置发送和接收的 EDI 确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3db1c9f7-bafa-4659-a3c4-0faa56606081
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969755"
 ---
 # <a name="configuring-the-sending-and-receiving-of-edi-acknowledgments"></a><span data-ttu-id="9dbd3-102">配置 EDI 确认的发送和接收</span><span class="sxs-lookup"><span data-stu-id="9dbd3-102">Configuring the Sending and Receiving of EDI Acknowledgments</span></span>
 <span data-ttu-id="9dbd3-103">若要配置 EDI 确认的发送以响应接收交换，您需要执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="9dbd3-103">To configure the sending of an EDI acknowledgment in response to a received interchange, you need to do the following:</span></span>  
@@ -54,9 +55,9 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="9dbd3-135">在**确认**页上，选择属性定义的发件人方需要的确认类型：</span><span class="sxs-lookup"><span data-stu-id="9dbd3-135">In the **Acknowledgements** page, select properties defining the kind of acknowledgement that the sender party expects:</span></span>  
   
-         <span data-ttu-id="9dbd3-136">对于 X12 确认，选择**预期的 TA1**和/或**997 预期**应根据哪些确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-136">For X12 acknowledgements, select **TA1 Expected** and/or **997 Expected** depending on which acknowledgements are expected.</span></span> <span data-ttu-id="9dbd3-137">对于每个确认类型中，选择**执行批量\<ACK 类型\>**如果想确认为以单独的交换形式发送的每个实例。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-137">For each acknowledgement type, select **Do not batch \<ACK type\>** if you want each instance of an acknowledgment to be sent as a separate interchange.</span></span>  
+         <span data-ttu-id="9dbd3-136">对于 X12 确认，选择**预期的 TA1**和/或**997 预期**应根据哪些确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-136">For X12 acknowledgements, select **TA1 Expected** and/or **997 Expected** depending on which acknowledgements are expected.</span></span> <span data-ttu-id="9dbd3-137">对于每个确认类型中，选择**执行批量\<ACK 类型\>** 如果想确认为以单独的交换形式发送的每个实例。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-137">For each acknowledgement type, select **Do not batch \<ACK type\>** if you want each instance of an acknowledgment to be sent as a separate interchange.</span></span>  
   
-         <span data-ttu-id="9dbd3-138">对于 EDIFACT 确认选择**收到预期消息 (CONTRL)**和/或**确认 (CONTRL) 预期**应根据哪些确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-138">For EDIFACT acknowledgements, select **Receipt of message (CONTRL) expected** and/or **Acknowledgement (CONTRL) expected** depending on which acknowledgements are expected.</span></span> <span data-ttu-id="9dbd3-139">对于每个确认类型中，选择**执行批量\<ACK 类型\>**如果想确认为以单独的交换形式发送的每个实例。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-139">For each acknowledgement type, select **Do not batch \<ACK type\>** if you want each instance of an acknowledgment to be sent as a separate interchange.</span></span>  
+         <span data-ttu-id="9dbd3-138">对于 EDIFACT 确认选择**收到预期消息 (CONTRL)** 和/或**确认 (CONTRL) 预期**应根据哪些确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-138">For EDIFACT acknowledgements, select **Receipt of message (CONTRL) expected** and/or **Acknowledgement (CONTRL) expected** depending on which acknowledgements are expected.</span></span> <span data-ttu-id="9dbd3-139">对于每个确认类型中，选择**执行批量\<ACK 类型\>** 如果想确认为以单独的交换形式发送的每个实例。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-139">For each acknowledgement type, select **Do not batch \<ACK type\>** if you want each instance of an acknowledgment to be sent as a separate interchange.</span></span>  
   
     3.  <span data-ttu-id="9dbd3-140">在**本地主机设置**下页上**交换设置**部分中，清除**路由 ACK 发送管道请求-响应接收端口**返回以异步方式通过单向发送端口的确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-140">In the **Local Host Settings** page under the **Interchange Settings** section, clear the **Route ACK to send pipeline on request-response receive port** to return the acknowledgment asynchronously over a one-way send port.</span></span> <span data-ttu-id="9dbd3-141">保持选中此属性可通过双向接收端口同步返回确认。</span><span class="sxs-lookup"><span data-stu-id="9dbd3-141">Keep this property as selected to return the acknowledgment synchronously over a two-way receive port.</span></span>  
   

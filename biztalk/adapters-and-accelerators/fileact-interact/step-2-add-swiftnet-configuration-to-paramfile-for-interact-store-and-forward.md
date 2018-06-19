@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 交互应用商店应用和向前情况下将 SWIFTNet 配置添加到 Paramfile |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 交互应用商店应用和向前情况下将 SWIFTNet 配置添加到 Paramfile |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a18a43c-1dd9-4113-bf32-8bc7bf9338b0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963123"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="411fa-102">步骤 2： 添加 SWIFTNet 配置到 Paramfile 交互应用商店应用和转发方案</span><span class="sxs-lookup"><span data-stu-id="411fa-102">Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Store and Forward Scenario</span></span>
 <span data-ttu-id="411fa-103">在压降中创建的服务器消息合作伙伴必须指定在 SWIFTNet paramfile 以便接收方可以使用这些值进行初始化。</span><span class="sxs-lookup"><span data-stu-id="411fa-103">The Server message partners created in SAG must be specified in the SWIFTNet paramfile to enable Receivers to initialize with these values.</span></span>  
@@ -46,19 +47,19 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="411fa-115">**spawn"snlreceiver-SagMessagePartner\<交互 SnF 的服务器 MessagePartnerName\> -AdapterMode 交互"**</span><span class="sxs-lookup"><span data-stu-id="411fa-115">**spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for Interact SnF\> -AdapterMode Interact"**</span></span>  
   
-     <span data-ttu-id="411fa-116">* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-116">*END</span></span>  
+     <span data-ttu-id="411fa-116">\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-116">\*END</span></span>  
   
      <span data-ttu-id="411fa-117">subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="411fa-117">subsystem_stop:</span></span>  
   
-     <span data-ttu-id="411fa-118">* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="411fa-118">*KILL9:snlreceiver</span></span>  
+     <span data-ttu-id="411fa-118">\* KILL9:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="411fa-118">\*KILL9:snlreceiver</span></span>  
   
-     <span data-ttu-id="411fa-119">* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-119">*END</span></span>  
+     <span data-ttu-id="411fa-119">\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-119">\*END</span></span>  
   
      <span data-ttu-id="411fa-120">subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="411fa-120">subsystem_status:</span></span>  
   
-     <span data-ttu-id="411fa-121">* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="411fa-121">*NB:1:snlreceiver</span></span>  
+     <span data-ttu-id="411fa-121">\* NB:1:snlreceiver</span><span class="sxs-lookup"><span data-stu-id="411fa-121">\*NB:1:snlreceiver</span></span>  
   
-     <span data-ttu-id="411fa-122">* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-122">*END</span></span>  
+     <span data-ttu-id="411fa-122">\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-122">\*END</span></span>  
   
      <span data-ttu-id="411fa-123">start_event:SNL001:subsystem InteractStubSnF 已启动</span><span class="sxs-lookup"><span data-stu-id="411fa-123">start_event:SNL001:subsystem InteractStubSnF is up</span></span>  
   
@@ -74,15 +75,15 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="411fa-129">\#subsystem_start:</span><span class="sxs-lookup"><span data-stu-id="411fa-129">\#subsystem_start:</span></span>  
   
-     <span data-ttu-id="411fa-130">\#* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-130">\#*END</span></span>  
+     <span data-ttu-id="411fa-130">\#\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-130">\#\*END</span></span>  
   
      <span data-ttu-id="411fa-131">\#subsystem_stop:</span><span class="sxs-lookup"><span data-stu-id="411fa-131">\#subsystem_stop:</span></span>  
   
-     <span data-ttu-id="411fa-132">\#* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-132">\#*END</span></span>  
+     <span data-ttu-id="411fa-132">\#\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-132">\#\*END</span></span>  
   
      <span data-ttu-id="411fa-133">\#subsystem_status:</span><span class="sxs-lookup"><span data-stu-id="411fa-133">\#subsystem_status:</span></span>  
   
-     <span data-ttu-id="411fa-134">\#* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-134">\#*END</span></span>  
+     <span data-ttu-id="411fa-134">\#\* 结束</span><span class="sxs-lookup"><span data-stu-id="411fa-134">\#\*END</span></span>  
   
      #<a name="starteventsnl001subsystem-user-is-up"></a><span data-ttu-id="411fa-135">start_event:SNL001:subsystem 用户已启动</span><span class="sxs-lookup"><span data-stu-id="411fa-135">start_event:SNL001:subsystem User is up</span></span>  
   

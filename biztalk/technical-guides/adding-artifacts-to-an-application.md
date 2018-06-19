@@ -1,14 +1,14 @@
 ---
-title: "将项目添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 将项目添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a9b5e92e-2e55-41d7-9959-f62753bbeb04
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295645"
 ---
 # <a name="adding-artifacts-to-an-application"></a><span data-ttu-id="dd3da-102">将项目添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="dd3da-102">Adding Artifacts to an Application</span></span>
 <span data-ttu-id="dd3da-103">你可以添加和配置项目，比如发送和接收端口、 接收位置和业务流程，通过使用管理控制台。</span><span class="sxs-lookup"><span data-stu-id="dd3da-103">You can add and configure artifacts, such as send and receive ports, receive locations, and orchestrations, by using the Administration console.</span></span> <span data-ttu-id="dd3da-104">你还可以生成绑定文件，并将其添加到应用程序中，如果你想要应用的不同环境中将导入到应用程序的不同绑定。</span><span class="sxs-lookup"><span data-stu-id="dd3da-104">You can also generate binding files and add them to the application if you want to apply different bindings for the different environments that you will import the application into.</span></span>  

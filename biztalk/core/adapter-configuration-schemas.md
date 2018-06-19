@@ -1,14 +1,14 @@
 ---
-title: "适配器配置架构 |Microsoft 文档"
-ms.custom: 
+title: 适配器配置架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc08fa71-c5f7-4365-9506-e02351b17567
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966499"
 ---
 # <a name="adapter-configuration-schemas"></a><span data-ttu-id="abe23-102">适配器配置架构</span><span class="sxs-lookup"><span data-stu-id="abe23-102">Adapter Configuration Schemas</span></span>
 <span data-ttu-id="abe23-103">在适配器的设计时配置中使用不同类型的架构。</span><span class="sxs-lookup"><span data-stu-id="abe23-103">Different types of schemas are used in design-time configuration of an adapter.</span></span> <span data-ttu-id="abe23-104">根据属性值的可见性和作用域，可修改和使用不同的架构。</span><span class="sxs-lookup"><span data-stu-id="abe23-104">Depending upon the visibility and scope of property values, different schemas are modified and used.</span></span>  

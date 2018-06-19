@@ -1,14 +1,14 @@
 ---
-title: "MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单 |Microsoft 文档"
-ms.custom: 
+title: MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22091261-cd17-45b2-8746-dc174b52dcff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299213"
 ---
 # <a name="mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders"></a><span data-ttu-id="2261e-102">MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单</span><span class="sxs-lookup"><span data-stu-id="2261e-102">MSCIT: Using Microsoft Azure BizTalk Services for Supply Chain Orders</span></span>
 <span data-ttu-id="2261e-103">**Microsoft 设备 （&) Studio： 使用 Microsoft Azure BizTalk 服务用于供应链订单**</span><span class="sxs-lookup"><span data-stu-id="2261e-103">**Microsoft Devices & Studios: Using Microsoft Azure BizTalk Services for Supply Chain Orders**</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="2261e-108">**适用于：** Microsoft Azure BizTalk 服务 (MABS) 和 BizTalk Server 2013</span><span class="sxs-lookup"><span data-stu-id="2261e-108">**Applies To:** Microsoft Azure BizTalk Services (MABS) and BizTalk Server 2013</span></span>  
   
- <span data-ttu-id="2261e-109">**摘要：**制造、 供应链和信息服务 (MSCIS) 组是在 Microsoft Global Supply Chain Management 组。</span><span class="sxs-lookup"><span data-stu-id="2261e-109">**Summary:** The Manufacturing, Supply Chain, and Information Services (MSCIS) group is a Global Supply Chain Management group at Microsoft.</span></span> <span data-ttu-id="2261e-110">每年，Microsoft 将启动新产品。</span><span class="sxs-lookup"><span data-stu-id="2261e-110">Every year, Microsoft launches new products.</span></span> <span data-ttu-id="2261e-111">MSCIS 负责将这些新产品推向市场。</span><span class="sxs-lookup"><span data-stu-id="2261e-111">MSCIS is responsible for bringing these new products to market.</span></span> <span data-ttu-id="2261e-112">若要支持这些产品，新的合作伙伴添加到供应链，其中包括供应商、 制造商、 分发服务器、 零售商、 服务中心、 运营商和等等。</span><span class="sxs-lookup"><span data-stu-id="2261e-112">To support these products, new partners are added to the Supply Chain, including Supplier, Manufacturer, Distributor, Retailer, Service Center, Carrier, and so on.</span></span>  
+ <span data-ttu-id="2261e-109">**摘要：** 制造、 供应链和信息服务 (MSCIS) 组是在 Microsoft Global Supply Chain Management 组。</span><span class="sxs-lookup"><span data-stu-id="2261e-109">**Summary:** The Manufacturing, Supply Chain, and Information Services (MSCIS) group is a Global Supply Chain Management group at Microsoft.</span></span> <span data-ttu-id="2261e-110">每年，Microsoft 将启动新产品。</span><span class="sxs-lookup"><span data-stu-id="2261e-110">Every year, Microsoft launches new products.</span></span> <span data-ttu-id="2261e-111">MSCIS 负责将这些新产品推向市场。</span><span class="sxs-lookup"><span data-stu-id="2261e-111">MSCIS is responsible for bringing these new products to market.</span></span> <span data-ttu-id="2261e-112">若要支持这些产品，新的合作伙伴添加到供应链，其中包括供应商、 制造商、 分发服务器、 零售商、 服务中心、 运营商和等等。</span><span class="sxs-lookup"><span data-stu-id="2261e-112">To support these products, new partners are added to the Supply Chain, including Supplier, Manufacturer, Distributor, Retailer, Service Center, Carrier, and so on.</span></span>  
   
  <span data-ttu-id="2261e-113">合作伙伴事务数会增加每年。</span><span class="sxs-lookup"><span data-stu-id="2261e-113">The number of partner transactions increases yearly.</span></span> <span data-ttu-id="2261e-114">在高负载，过程有吞吐量与相关的问题。</span><span class="sxs-lookup"><span data-stu-id="2261e-114">During high load, there are issues related to throughput.</span></span> <span data-ttu-id="2261e-115">虽然提供链 BizTalk 中心处理更多的事务 （增加的卷），结束系统或合作伙伴系统不能够保持同步。</span><span class="sxs-lookup"><span data-stu-id="2261e-115">While the Supply Chain BizTalk hub processes more transactions (increased volume), the end system or partner system is not able to keep up.</span></span>  
   

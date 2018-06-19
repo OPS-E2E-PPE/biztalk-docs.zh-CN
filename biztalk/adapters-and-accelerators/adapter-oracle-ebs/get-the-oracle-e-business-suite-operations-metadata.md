@@ -1,14 +1,14 @@
 ---
-title: "获取 Oracle E-business Suite 操作元数据 |Microsoft 文档"
-ms.custom: 
+title: 获取 Oracle E-business Suite 操作元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 566ae086-183a-47db-8f93-12b5903c85c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963787"
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a><span data-ttu-id="a9203-102">获取 Oracle E-business Suite 操作元数据</span><span class="sxs-lookup"><span data-stu-id="a9203-102">Get the Oracle E-Business Suite operations metadata</span></span>
 <span data-ttu-id="a9203-103">你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]生成为选择的 Oracle E-business Suite 项目的架构。</span><span class="sxs-lookup"><span data-stu-id="a9203-103">You can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for selected Oracle E-Business Suite artifacts.</span></span> <span data-ttu-id="a9203-104">在浏览并搜索你想要调用的项目后，你可以生成这些项目的架构和发送消息，符合架构，到 Oracle E-business Suite。</span><span class="sxs-lookup"><span data-stu-id="a9203-104">After you have browsed and searched for the artifacts you want to invoke, you can generate schema for those artifacts and send messages, conforming to the schema, to Oracle E-Business Suite.</span></span>  

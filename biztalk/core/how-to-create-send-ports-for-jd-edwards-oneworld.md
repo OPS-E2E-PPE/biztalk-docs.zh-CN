@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: d65b87fbcbdaf89289406ae6850b70c605123451
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015564"
 ---
 # <a name="how-to-create-send-ports-for-jd-edwards-oneworld"></a><span data-ttu-id="b3194-101">如何创建 JD Edwards OneWorld 的发送端口</span><span class="sxs-lookup"><span data-stu-id="b3194-101">How to Create Send Ports for JD Edwards OneWorld</span></span>
 <span data-ttu-id="b3194-102">使用以下过程创建发送端口。</span><span class="sxs-lookup"><span data-stu-id="b3194-102">Use the following procedure to create a send port.</span></span>  

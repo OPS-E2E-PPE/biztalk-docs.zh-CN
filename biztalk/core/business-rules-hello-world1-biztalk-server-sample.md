@@ -1,17 +1,17 @@
 ---
-title: "业务规则 Hello World1 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Hello World1 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 0623ad20-96cc-430e-bb36-35431a5d17ee
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967667"
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a><span data-ttu-id="b2643-102">业务规则 Hello World1 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="b2643-102">Business Rules Hello World1 (BizTalk Server Sample)</span></span>
 <span data-ttu-id="b2643-103">“Business Rules Hello World1”示例演示如何创建一个 BizTalk 规则集，将它保存到文件 (SampleRuleSet.xml)、加载它并基于示例事实集运行它。</span><span class="sxs-lookup"><span data-stu-id="b2643-103">The Business Rules Hello World1 sample demonstrates how to create a BizTalk rule set, save it to a file (SampleRuleSet.xml), load it, and run it based on a sample set of facts.</span></span> <span data-ttu-id="b2643-104">本示例规则集包含一个简单规则，该规则使用 XML 元素和基于 .NET 的对象（属性和成员）作为规则定义中的条件。</span><span class="sxs-lookup"><span data-stu-id="b2643-104">The sample rule set contains a simple rule that involves an XML element, and .NET-based objects (properties and members) as terms in rule definition.</span></span>  
@@ -125,7 +126,7 @@ Press any key to finish ...
  <span data-ttu-id="b2643-165">将不会获取输出行的任何对象**MySampleBusinessObject**类具有其**MyValue**属性设置为与匹配与关联的值（在期间构造）的值**ID**示例输入文件 SampleDocumentInstance.xml 中的元素。</span><span class="sxs-lookup"><span data-stu-id="b2643-165">You will not get an output line for any objects of the **MySampleBusinessObject** class that have their **MyValue** property set to a value (during construction) that matches the value associated with the **ID** element in the sample input file SampleDocumentInstance.xml.</span></span>  
   
 ## <a name="comments"></a><span data-ttu-id="b2643-166">注释</span><span class="sxs-lookup"><span data-stu-id="b2643-166">Comments</span></span>  
- <span data-ttu-id="b2643-167">以编程方式内创建的规则**CreateRuleset()**方法所示：</span><span class="sxs-lookup"><span data-stu-id="b2643-167">The rule created programmatically within the **CreateRuleset()** method shows:</span></span>  
+ <span data-ttu-id="b2643-167">以编程方式内创建的规则**CreateRuleset()** 方法所示：</span><span class="sxs-lookup"><span data-stu-id="b2643-167">The rule created programmatically within the **CreateRuleset()** method shows:</span></span>  
   
  <span data-ttu-id="b2643-168">**如果**</span><span class="sxs-lookup"><span data-stu-id="b2643-168">**IF**</span></span>  
   
@@ -133,7 +134,7 @@ Press any key to finish ...
   
  <span data-ttu-id="b2643-170">**然后**</span><span class="sxs-lookup"><span data-stu-id="b2643-170">**THEN**</span></span>  
   
- <span data-ttu-id="b2643-171">**MySampleBusinessObject.MySampleMethod(int)**用整数参数，硬编码到常量五 （5） 在这种情况下。</span><span class="sxs-lookup"><span data-stu-id="b2643-171">**MySampleBusinessObject.MySampleMethod(int)** with an integer parameter, hard coded to the constant five (5) in this case.</span></span> <span data-ttu-id="b2643-172">此方法产生开头的输出行**MySampleBusinessObject 类 –-**。</span><span class="sxs-lookup"><span data-stu-id="b2643-172">This method produces the output lines that begin **MySampleBusinessObject Class –-**.</span></span>  
+ <span data-ttu-id="b2643-171">**MySampleBusinessObject.MySampleMethod(int)** 用整数参数，硬编码到常量五 （5） 在这种情况下。</span><span class="sxs-lookup"><span data-stu-id="b2643-171">**MySampleBusinessObject.MySampleMethod(int)** with an integer parameter, hard coded to the constant five (5) in this case.</span></span> <span data-ttu-id="b2643-172">此方法产生开头的输出行**MySampleBusinessObject 类 –-**。</span><span class="sxs-lookup"><span data-stu-id="b2643-172">This method produces the output lines that begin **MySampleBusinessObject Class –-**.</span></span>  
   
  <span data-ttu-id="b2643-173">此规则依赖于以下项：</span><span class="sxs-lookup"><span data-stu-id="b2643-173">This rule depends on the following:</span></span>  
   

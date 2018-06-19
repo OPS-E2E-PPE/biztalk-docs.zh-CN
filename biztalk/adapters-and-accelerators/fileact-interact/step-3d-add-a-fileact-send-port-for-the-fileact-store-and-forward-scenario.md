@@ -1,14 +1,14 @@
 ---
-title: "步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7366140b-ab89-4bea-9cdb-aa27e8dea8a0
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965483"
 ---
 # <a name="step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario"></a><span data-ttu-id="43afd-102">步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和转发方案</span><span class="sxs-lookup"><span data-stu-id="43afd-102">Step 3D: Add a FILEACT Send Port for the FileAct Store and Forward Scenario</span></span>
 <span data-ttu-id="43afd-103">在开始此步骤之前，必须完成[步骤 3c： 添加捕获 Sw:HandleFileRequest 文件发送端口和 FileAct 应用商店应用和转发方案 Sw:HandleSnFRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)。</span><span class="sxs-lookup"><span data-stu-id="43afd-103">Before you begin this step, you must complete [Step 3C: Add a FILE Send Port to Capture the Sw:HandleFileRequest and Sw:HandleSnFRequest Messages for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md).</span></span>  

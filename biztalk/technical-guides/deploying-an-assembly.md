@@ -1,14 +1,14 @@
 ---
-title: "部署程序集 |Microsoft 文档"
-ms.custom: 
+title: 部署程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65f8ee21-0e52-4a74-b114-864a3069659c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297861"
 ---
 # <a name="deploying-an-assembly"></a><span data-ttu-id="e264c-102">部署程序集</span><span class="sxs-lookup"><span data-stu-id="e264c-102">Deploying an Assembly</span></span>
 <span data-ttu-id="e264c-103">部署程序集生成程序集，并将其，以及业务流程、 管道、 架构和映射 （项目），它将包含的本地 BizTalk 管理数据库导入。</span><span class="sxs-lookup"><span data-stu-id="e264c-103">Deploying an assembly builds the assembly and imports it, along with the orchestrations, pipelines, schemas, and maps (artifacts) that it contains into the local BizTalk Management database.</span></span> <span data-ttu-id="e264c-104">最初，这可在开发环境中。</span><span class="sxs-lookup"><span data-stu-id="e264c-104">Initially, this is done in the development environment.</span></span>  

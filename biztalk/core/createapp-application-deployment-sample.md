@@ -1,11 +1,11 @@
 ---
-title: "CreateApp （应用程序部署示例） |Microsoft 文档"
-ms.custom: 
+title: CreateApp （应用程序部署示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - .msi files, deploying
 - examples, deploying
 ms.assetid: 825627ee-21d0-4505-9df4-1dadc51335b6
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969707"
 ---
 # <a name="createapp-application-deployment-sample"></a><span data-ttu-id="ea2a1-102">CreateApp（应用程序部署示例）</span><span class="sxs-lookup"><span data-stu-id="ea2a1-102">CreateApp (Application Deployment Sample)</span></span>
 <span data-ttu-id="ea2a1-103">本主题介绍如何使用 CreateApp 示例，该示例演示如何使用 BTSTask 命令行工具部署和取消部署 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="ea2a1-103">This topic explains how to use the CreateApp sample, which demonstrates using the BTSTask command-line tool to deploy and undeploy a BizTalk application.</span></span> <span data-ttu-id="ea2a1-104">您可以使用本示例中包含的脚本等自动执行夜间生成过程，来部署和取消部署 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="ea2a1-104">You could use scripts such as those included in this sample to automate your nightly build process to deploy and undeploy BizTalk applications.</span></span>  
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/28/2017
          <span data-ttu-id="ea2a1-149">C:\ScriptLog.txt</span><span class="sxs-lookup"><span data-stu-id="ea2a1-149">C:\ScriptLog.txt</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="ea2a1-150">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="ea2a1-150">Where to Find This Sample</span></span>  
- <span data-ttu-id="ea2a1-151">你可以在下的以下文件夹中找到示例文件*\<示例路径\>*\Application 部署\\:</span><span class="sxs-lookup"><span data-stu-id="ea2a1-151">You can find the sample files in the following folders under *\<Samples Path\>*\Application Deployment\\:</span></span>  
+ <span data-ttu-id="ea2a1-151">你可以在下的以下文件夹中找到示例文件*\<示例路径\>* \Application 部署\\:</span><span class="sxs-lookup"><span data-stu-id="ea2a1-151">You can find the sample files in the following folders under *\<Samples Path\>* \Application Deployment\\:</span></span>  
   
 -   <span data-ttu-id="ea2a1-152">CreateApp（文件夹）</span><span class="sxs-lookup"><span data-stu-id="ea2a1-152">CreateApp (Folder)</span></span>  
   

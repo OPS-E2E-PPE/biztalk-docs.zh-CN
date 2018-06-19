@@ -1,14 +1,14 @@
 ---
-title: "将环境设置 |Microsoft 文档"
-ms.custom: 
+title: 将环境设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43027efc-acec-4110-96bd-cc4a19daaeab
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961891"
 ---
 # <a name="setting-the-environment"></a><span data-ttu-id="c8b55-102">将环境设置</span><span class="sxs-lookup"><span data-stu-id="c8b55-102">Setting the Environment</span></span>
 <span data-ttu-id="c8b55-103">**若要将环境设置：**</span><span class="sxs-lookup"><span data-stu-id="c8b55-103">**To set the environment:**</span></span>  

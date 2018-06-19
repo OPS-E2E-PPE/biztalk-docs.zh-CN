@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baecebcd-c324-40aa-bacf-876f45b6c37f
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014452"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a><span data-ttu-id="32e29-103">在 BizTalk 管理中配置博士 Edwards EnterpriseOne 项目</span><span class="sxs-lookup"><span data-stu-id="32e29-103">Configure JD Edwards EnterpriseOne artifacts in BizTalk Administration</span></span>
 <span data-ttu-id="32e29-104">用于 J.D.Edwards EnterpriseOne 的 Microsoft BizTalk 适配器包含接收处理程序和发送处理程序文件夹。</span><span class="sxs-lookup"><span data-stu-id="32e29-104">Microsoft BizTalk Adapter for J.D.Edwards EnterpriseOne contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="32e29-105">这两个文件夹包含 BizTalkServerApplication。</span><span class="sxs-lookup"><span data-stu-id="32e29-105">The folders contain BizTalkServerApplication.</span></span> <span data-ttu-id="32e29-106">用于 J.D.Edwards EnterpriseOne 的 BizTalk 适配器是可创建的；它在 BizTalk Server 进程内运行，而不是在独立的主机进程中运行。</span><span class="sxs-lookup"><span data-stu-id="32e29-106">BizTalk Adapter for J.D.Edwards EnterpriseOne is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 03/28/2018
   
 4.  <span data-ttu-id="32e29-137">下 **常规**, 中 **传输类型** 框中，选择 **JDE EnterpriseOne** 下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="32e29-137">Under **General**, in the **Transport Type** box, select **JDE EnterpriseOne** in the drop-down list.</span></span>  
   
-5.  <span data-ttu-id="32e29-138">在**地址 (URI)**属性，选择省略号 (**...**).</span><span class="sxs-lookup"><span data-stu-id="32e29-138">In the **Address (URI)** property, select the ellipsis (**…**).</span></span> <span data-ttu-id="32e29-139">**JDE EnterpriseOne 传输属性**打开：</span><span class="sxs-lookup"><span data-stu-id="32e29-139">The **JDE EnterpriseOne Transport Properties** open:</span></span> 
+5.  <span data-ttu-id="32e29-138">在**地址 (URI)** 属性，选择省略号 (**...**).</span><span class="sxs-lookup"><span data-stu-id="32e29-138">In the **Address (URI)** property, select the ellipsis (**…**).</span></span> <span data-ttu-id="32e29-139">**JDE EnterpriseOne 传输属性**打开：</span><span class="sxs-lookup"><span data-stu-id="32e29-139">The **JDE EnterpriseOne Transport Properties** open:</span></span> 
   
      <span data-ttu-id="32e29-140">![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")</span><span class="sxs-lookup"><span data-stu-id="32e29-140">![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")</span></span>  
   

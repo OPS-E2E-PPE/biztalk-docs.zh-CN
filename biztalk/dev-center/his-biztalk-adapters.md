@@ -1,12 +1,12 @@
 ---
-title: "BizTalk 适配器附带 Host Integration Server |Microsoft 文档"
-description: "概述用于承载应用程序、 主机文件、 DB2 和 WebSphere MQ BizTalk 适配器附带他"
+title: BizTalk 适配器附带 Host Integration Server |Microsoft 文档
+description: 概述用于承载应用程序、 主机文件、 DB2 和 WebSphere MQ BizTalk 适配器附带他
 author: MandiOhlinger
 manager: anneta
 ms.date: 10/10/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
 ms.openlocfilehash: 26f2bf48c9a1268aace041776ff3895c8f3b3aa5
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 75d35f6f230f0846c29a4b146c6d5b074e60b13c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22645177"
 ---
 # <a name="biztalk-adapters-for-host-systems"></a><span data-ttu-id="8e76b-103">主机系统的 BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="8e76b-103">BizTalk adapters for host systems</span></span>
 

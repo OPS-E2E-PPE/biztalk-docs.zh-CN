@@ -1,14 +1,14 @@
 ---
-title: "浏览基于应用程序的视图下的 Oracle E-business Suite 操作 |Microsoft 文档"
-ms.custom: 
+title: 浏览基于应用程序的视图下的 Oracle E-business Suite 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb207869-1a19-4e19-ba47-c78d2a29b36d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963651"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-application-based-view"></a><span data-ttu-id="2a0a1-102">浏览基于应用程序的视图下的 Oracle E-business Suite 操作</span><span class="sxs-lookup"><span data-stu-id="2a0a1-102">Browse for Oracle E-Business Suite operations under the application-based view</span></span>
 <span data-ttu-id="2a0a1-103">你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要浏览的出站和入站操作，可以对 Oracle E-business Suite 执行使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="2a0a1-103">You can use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to browse for outbound and inbound operations that can be performed on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="2a0a1-104">本主题提供有关如何浏览基于应用程序的视图下的出站和入站操作的信息。</span><span class="sxs-lookup"><span data-stu-id="2a0a1-104">This topic provides information on how to browse for outbound and inbound operations under the application-based view.</span></span>  

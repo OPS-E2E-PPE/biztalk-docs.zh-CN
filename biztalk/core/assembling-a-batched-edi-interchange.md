@@ -1,14 +1,14 @@
 ---
-title: "组合批处理的 EDI 交换 |Microsoft 文档"
-ms.custom: 
+title: 组合批处理的 EDI 交换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18f64595-935e-4d52-9ec2-5edf7c2b9e83
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967539"
 ---
 # <a name="assembling-a-batched-edi-interchange"></a><span data-ttu-id="e24d4-102">装配批处理的 EDI 交换</span><span class="sxs-lookup"><span data-stu-id="e24d4-102">Assembling a Batched EDI Interchange</span></span>
 <span data-ttu-id="e24d4-103">为了将各个事务集批元素组装成 EDI 交换，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 和 AS2 将执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="e24d4-103">To assemble individual transaction-set batch elements into an EDI interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 does the following:</span></span>  

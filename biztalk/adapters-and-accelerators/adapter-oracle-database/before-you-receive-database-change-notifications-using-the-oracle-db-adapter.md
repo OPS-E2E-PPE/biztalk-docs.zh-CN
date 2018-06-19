@@ -1,14 +1,14 @@
 ---
-title: "接收更改通知使用数据库的 Oracle 数据库适配器注意事项 |Microsoft 文档"
-ms.custom: 
+title: 接收更改通知使用数据库的 Oracle 数据库适配器注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 206439b9-0408-4fbb-80e3-cfda2f5a89a5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963699"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-database-adapter"></a><span data-ttu-id="3ca2f-102">接收更改通知使用数据库的 Oracle 数据库适配器的注意事项</span><span class="sxs-lookup"><span data-stu-id="3ca2f-102">Considerations for Receiving Database Change Notifications Using the Oracle Database adapter</span></span>
 <span data-ttu-id="3ca2f-103">本主题提供一些注意事项和最佳做法，你必须使用时应牢记[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以接收从 Oracle 数据库的数据库通知。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-103">This topic provides some considerations and best practices that you must keep in mind while using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive database notifications from an Oracle database.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="3ca2f-108">该操作所影响的记录数不影响操作的通知消息。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-108">The notification message for an operation is not affected by the number of records affected by that operation.</span></span> <span data-ttu-id="3ca2f-109">例如，而不考虑在 Oracle 数据库表中插入的记录数，适配器客户端收到一个通知消息。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-109">For example, irrespective of the number of records inserted in an Oracle database table, the adapter clients receive only one notification message.</span></span>  
   
--   <span data-ttu-id="3ca2f-110">我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-110">We recommend that the adapter client application contain the logic to interpret the kind of notification received from the Oracle database.</span></span> <span data-ttu-id="3ca2f-111">适配器客户端应用程序可以做到这一点提取中的信息**\<信息\>**收到的通知消息元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-111">The adapter client applications can do so by extracting the information in the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="3ca2f-112">下面是收到有关插入操作的通知消息的示例。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-112">Here’s an example of a notification message received for an Insert operation.</span></span>  
+-   <span data-ttu-id="3ca2f-110">我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-110">We recommend that the adapter client application contain the logic to interpret the kind of notification received from the Oracle database.</span></span> <span data-ttu-id="3ca2f-111">适配器客户端应用程序可以做到这一点提取中的信息**\<信息\>** 收到的通知消息元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-111">The adapter client applications can do so by extracting the information in the **\<Info\>** element of the received notification message.</span></span> <span data-ttu-id="3ca2f-112">下面是收到有关插入操作的通知消息的示例。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-112">Here’s an example of a notification message received for an Insert operation.</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
   
     ```  
   
-     <span data-ttu-id="3ca2f-113">请注意内的值**\<信息\>**元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="3ca2f-114">此值提供有关为其接收到通知消息的操作的信息。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="3ca2f-115">你的应用程序应具有用于提取内的值的功能**\<信息\>**元素，然后根据值，执行后续的任务。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="3ca2f-116">主题[处理通知消息来完成 Oracle 数据库中的特定任务](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何提取的值在**\<信息\>**元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-116">The topic [Processing Notification Messages to complete Specific Tasks in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span>  
+     <span data-ttu-id="3ca2f-113">请注意内的值**\<信息\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-113">Notice the value within the **\<Info\>** element.</span></span> <span data-ttu-id="3ca2f-114">此值提供有关为其接收到通知消息的操作的信息。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-114">This value provides information on the operation for which the notification message was received.</span></span> <span data-ttu-id="3ca2f-115">你的应用程序应具有用于提取内的值的功能**\<信息\>** 元素，然后根据值，执行后续的任务。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-115">Your application should have the functionality to extract the value within the **\<Info\>** element and then based on the value, perform subsequent tasks.</span></span> <span data-ttu-id="3ca2f-116">主题[处理通知消息来完成 Oracle 数据库中的特定任务](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何提取的值在**\<信息\>** 元素。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-116">The topic [Processing Notification Messages to complete Specific Tasks in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md) has instructions on how to extract the value within the **\<Info\>** element.</span></span>  
   
 -   <span data-ttu-id="3ca2f-117">理想情况下，客户端应用程序接收的通知后，它应更新为其已收到通知，以便后续通知不是针对同一条记录的记录。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-117">Ideally, after the client application receives a notification, it should update the record for which the notification is already received so that the subsequent notifications are not for the same record.</span></span> <span data-ttu-id="3ca2f-118">例如，考虑**ACCOUNTACTIVITY**表具有**处理**列。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-118">For example, consider an **ACCOUNTACTIVITY** table that has a **Processed** column.</span></span> <span data-ttu-id="3ca2f-119">为所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。</span><span class="sxs-lookup"><span data-stu-id="3ca2f-119">For all new records inserted into the **ACCOUNTACTIVITY** table, the value in the **Processed** column is always ‘n’.</span></span> <span data-ttu-id="3ca2f-120">例如，在插入操作中的记录之后**ACCOUNTACTIVITY**表将如下所示：</span><span class="sxs-lookup"><span data-stu-id="3ca2f-120">For example, after an insert operation, the records in the **ACCOUNTACTIVITY** table will look like the following:</span></span>  
   

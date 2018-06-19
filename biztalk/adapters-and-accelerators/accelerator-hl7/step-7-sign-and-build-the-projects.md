@@ -1,18 +1,18 @@
 ---
-title: "步骤 7： 登录和生成项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 登录和生成项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, projects
 - projects, building
 - projects, signing
 ms.assetid: b66e4dc1-4ec6-4ec0-a69a-419b116b19c1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961763"
 ---
 # <a name="step-7-sign-and-build-the-projects"></a><span data-ttu-id="bbb8f-102">步骤 7： 登录和生成项目</span><span class="sxs-lookup"><span data-stu-id="bbb8f-102">Step 7: Sign and Build the Projects</span></span>
 <span data-ttu-id="bbb8f-103">在此步骤中，可以指定一个强名称和生成项目以生成包含你在中创建的资源 （架构） 的程序集[步骤 6： 验证架构](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)。</span><span class="sxs-lookup"><span data-stu-id="bbb8f-103">In this step, you assign a strong name and build the project to generate an assembly that contains the resources (the schema) that you created in [Step 6: Validate the Schemas](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md).</span></span> <span data-ttu-id="bbb8f-104">这还可以确保到目前为止完成的工作中没有编译错误。</span><span class="sxs-lookup"><span data-stu-id="bbb8f-104">This also ensures that there are no compile errors in the work you have completed so far.</span></span>  

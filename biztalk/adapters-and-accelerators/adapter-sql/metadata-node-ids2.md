@@ -1,15 +1,15 @@
 ---
-title: "BizTalk 适配器包中的 SQL 适配器的元数据节点 Id |Microsoft 文档"
-description: "元数据，搜索、 检索节点类型和用于公开 SQL Server 适配器-BizTalk 适配器包 (BAP) 中的 SQL 组件的 Id"
-ms.custom: 
+title: BizTalk 适配器包中的 SQL 适配器的元数据节点 Id |Microsoft 文档
+description: 元数据，搜索、 检索节点类型和用于公开 SQL Server 适配器-BizTalk 适配器包 (BAP) 中的 SQL 组件的 Id
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8601a328-5380-4577-a121-c926e0fd3140
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967987"
 ---
 # <a name="node-types-and-ids-for-the-sql-server-adapter"></a><span data-ttu-id="7aa85-103">节点类型和 SQL Server 适配器 Id</span><span class="sxs-lookup"><span data-stu-id="7aa85-103">Node types and IDs for the SQL Server adapter</span></span>
 

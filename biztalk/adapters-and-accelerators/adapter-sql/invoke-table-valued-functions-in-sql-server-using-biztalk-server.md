@@ -1,14 +1,14 @@
 ---
-title: "调用 SQL Server 使用 BizTalk Server 中的表值函数 |Microsoft 文档"
-ms.custom: 
+title: 调用 SQL Server 使用 BizTalk Server 中的表值函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d360c15-699e-4859-8143-798c1de821db
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965635"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-using-biztalk-server"></a><span data-ttu-id="2bc78-102">调用 SQL Server 使用 BizTalk Server 中的表值函数</span><span class="sxs-lookup"><span data-stu-id="2bc78-102">Invoke Table-Valued Functions in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="2bc78-103">你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]调用 SQL Server 中的表值函数。</span><span class="sxs-lookup"><span data-stu-id="2bc78-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to invoke table-valued functions in SQL Server.</span></span> <span data-ttu-id="2bc78-104">适配器将表值函数公开为可以直接在 SQL Server 调用的操作。</span><span class="sxs-lookup"><span data-stu-id="2bc78-104">The adapter exposes the table-valued functions as operations that can be invoked directly on SQL Server.</span></span> <span data-ttu-id="2bc78-105">有关如何适配器支持表值函数的详细信息，请参阅[Executing Table-Valued 函数中使用的 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="2bc78-105">For more information about how the adapter supports table-valued functions, see [Executing Table-Valued Functions in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md).</span></span> <span data-ttu-id="2bc78-106">为了调用表值函数的 SOAP 消息结构的信息，请参阅[过程和函数的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)。</span><span class="sxs-lookup"><span data-stu-id="2bc78-106">For information about the structure of the SOAP message for invoking table-valued functions, see [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何配置 BizTalk Server 发送签名 MIME 或 SMIME 消息 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 BizTalk Server 发送签名 MIME 或 SMIME 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ba42463b-2c12-4329-919e-aca427d14eee
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297869"
 ---
 # <a name="how-to-configure-biztalk-server-to-send-signed-mime-or-smime-messages"></a><span data-ttu-id="2e0f6-102">如何配置 BizTalk Server 发送签名 MIME 或 SMIME 消息</span><span class="sxs-lookup"><span data-stu-id="2e0f6-102">How to Configure BizTalk Server to Send Signed MIME or SMIME Messages</span></span>
 <span data-ttu-id="2e0f6-103">本主题介绍如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用证书来发送签名的 MIME/SMIME 邮件。</span><span class="sxs-lookup"><span data-stu-id="2e0f6-103">This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to use certificates to send signed MIME/SMIME messages.</span></span> <span data-ttu-id="2e0f6-104">下面的过程也适用于配置通过 AS2 传输发送签名的消息。</span><span class="sxs-lookup"><span data-stu-id="2e0f6-104">The procedure below also applies to configuring the sending of signed messages over AS2 transport.</span></span>  

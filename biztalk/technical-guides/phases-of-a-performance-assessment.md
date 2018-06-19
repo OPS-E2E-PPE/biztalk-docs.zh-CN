@@ -1,14 +1,14 @@
 ---
-title: "性能评估阶段 |Microsoft 文档"
-ms.custom: 
+title: 性能评估阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 120706f9-9fa1-4f41-bd89-3b9eada940ad
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301885"
 ---
 # <a name="phases-of-a-performance-assessment"></a><span data-ttu-id="5bfa8-102">性能评估阶段</span><span class="sxs-lookup"><span data-stu-id="5bfa8-102">Phases of a Performance Assessment</span></span>
 <span data-ttu-id="5bfa8-103">主要目标之一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是尽可能容纳尽可能多的处理方案提供最大的灵活性。</span><span class="sxs-lookup"><span data-stu-id="5bfa8-103">One of the primary goals of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is to provide maximum flexibility for accommodating as many processing scenarios as possible.</span></span> <span data-ttu-id="5bfa8-104">由于此极大的灵活性，面对的 BizTalk 解决方案的开发人员的主要挑战之一是确定如何在中提供的功能的最佳使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为了满足其业务需求。</span><span class="sxs-lookup"><span data-stu-id="5bfa8-104">Because of this great flexibility, one of the primary challenges facing developers of a BizTalk solution is to determine how to make best use of the features available in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to meet their business needs.</span></span> <span data-ttu-id="5bfa8-105">优化 BizTalk Server 解决方案的性能时，这种灵活性也带来一个挑战。</span><span class="sxs-lookup"><span data-stu-id="5bfa8-105">This flexibility also poses a challenge when optimizing the performance of a BizTalk Server solution.</span></span>  

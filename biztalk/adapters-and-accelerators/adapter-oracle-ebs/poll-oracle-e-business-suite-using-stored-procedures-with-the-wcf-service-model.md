@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型使用存储的过程的轮询 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型使用存储的过程的轮询 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47dcb866-9161-4b28-9481-2761794ce805
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967715"
 ---
 # <a name="poll-oracle-e-business-suite-using-stored-procedures-with-the-wcf-service-model"></a><span data-ttu-id="c82be-102">轮询 Oracle E-business Suite 与 WCF 服务模型使用存储的过程</span><span class="sxs-lookup"><span data-stu-id="c82be-102">Poll Oracle E-Business Suite using stored procedures with the WCF service model</span></span>
 <span data-ttu-id="c82be-103">你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接收定期的数据更改消息通过使用存储的过程来定期轮询 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="c82be-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive periodic data-change messages by using stored procedures to periodically poll the Oracle database.</span></span> <span data-ttu-id="c82be-104">你可以指定为适配器执行定期轮询 Oracle 数据库的轮询语句的存储的过程。</span><span class="sxs-lookup"><span data-stu-id="c82be-104">You can specify a stored procedure as a polling statement that the adapter executes periodically to poll the Oracle database.</span></span>  

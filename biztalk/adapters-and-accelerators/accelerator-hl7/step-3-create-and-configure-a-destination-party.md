@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建并配置目标方 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建并配置目标方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8746f115-9f69-4593-9943-9ccda45cd900
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961339"
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a><span data-ttu-id="fcd7d-102">步骤 3： 创建并配置目标方</span><span class="sxs-lookup"><span data-stu-id="fcd7d-102">Step 3: Create and Configure a Destination Party</span></span>
 <span data-ttu-id="fcd7d-103">在此步骤中，你可以创建和配置创建批次方案的目标方。</span><span class="sxs-lookup"><span data-stu-id="fcd7d-103">In this step, you create and configure a destination party for the Create-Batch scenario.</span></span> <span data-ttu-id="fcd7d-104">你还选择的消息，[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]批处理和批处理计划，该方的定义。</span><span class="sxs-lookup"><span data-stu-id="fcd7d-104">You also select the messages that [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] batches and the batch schedules, as defined for that party.</span></span> <span data-ttu-id="fcd7d-105">计划批发送时间为 1 小时后将文件复制到的文件夹。</span><span class="sxs-lookup"><span data-stu-id="fcd7d-105">You schedule the batch send time as one hour after copying the files into the folder.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="fcd7d-106">为频率为一小时之后接收任何消息进行批处理。</span><span class="sxs-lookup"><span data-stu-id="fcd7d-106"> batches any messages received thereafter with a frequency of one hour.</span></span>  

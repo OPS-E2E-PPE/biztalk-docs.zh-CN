@@ -1,14 +1,14 @@
 ---
-title: "配置的时区和重复计划在 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 配置的时区和重复计划在 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60ae7be-747e-4034-8b99-46bd7e25fe67
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497766"
 ---
 # <a name="configure-the-time-zone-and-recurrence-scheduling-in-biztalk-server"></a><span data-ttu-id="7e2b7-102">配置的时区和 BizTalk Server 中的重复执行计划</span><span class="sxs-lookup"><span data-stu-id="7e2b7-102">Configure the time zone and recurrence scheduling in BizTalk Server</span></span>
 <span data-ttu-id="7e2b7-103">时区上并配置重复计划你接收中的位置[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-103">Set the timezone and configure a recurrence schedule on your receive locations in [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].</span></span> 
 
-<span data-ttu-id="7e2b7-104">**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**上的高级计划功能接收位置包含一些选项。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, the advanced scheduling feature on receive locations includes some options.</span></span> <span data-ttu-id="7e2b7-105">使用高级的计划选项，设置时区，并且还设置重复执行计划。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-105">Using the advanced scheduling options, set the time zone, and also set a recurrence schedule.</span></span>
+<span data-ttu-id="7e2b7-104">**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** 上的高级计划功能接收位置包含一些选项。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-104">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, the advanced scheduling feature on receive locations includes some options.</span></span> <span data-ttu-id="7e2b7-105">使用高级的计划选项，设置时区，并且还设置重复执行计划。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-105">Using the advanced scheduling options, set the time zone, and also set a recurrence schedule.</span></span>
 
 <span data-ttu-id="7e2b7-106">本主题演示如何配置这些功能。</span><span class="sxs-lookup"><span data-stu-id="7e2b7-106">This topic shows you how to configure these features.</span></span>
 

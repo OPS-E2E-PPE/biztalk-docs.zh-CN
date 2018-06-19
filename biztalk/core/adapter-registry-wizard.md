@@ -1,17 +1,17 @@
 ---
-title: "适配器注册表向导 |Microsoft 文档"
-ms.custom: 
+title: 适配器注册表向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - utilities, Adapter Registration Wizard
 - Adapter Registration Wizard
 ms.assetid: bd15d0c7-01bb-41f9-9157-cdcf4bb4e39a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965315"
 ---
 # <a name="adapter-registry-wizard"></a><span data-ttu-id="84ee0-102">适配器注册表向导</span><span class="sxs-lookup"><span data-stu-id="84ee0-102">Adapter Registry Wizard</span></span>
 <span data-ttu-id="84ee0-103">适配器注册表向导用于创建配置和注册的自定义适配器所需的注册表文件。</span><span class="sxs-lookup"><span data-stu-id="84ee0-103">You use the Adapter Registry Wizard to create the registry files needed to configure and register a custom adapter.</span></span>  
   
 ## <a name="location-in-sdk"></a><span data-ttu-id="84ee0-104">在 SDK 中的位置</span><span class="sxs-lookup"><span data-stu-id="84ee0-104">Location in SDK</span></span>  
- <span data-ttu-id="84ee0-105">*\<安装路径\>*\SDK\Utilities\AdapterRegistryWizard\\</span><span class="sxs-lookup"><span data-stu-id="84ee0-105">*\<Installation Path\>*\SDK\Utilities\AdapterRegistryWizard\\</span></span>  
+ <span data-ttu-id="84ee0-105">*\<安装路径\>* \SDK\Utilities\AdapterRegistryWizard\\</span><span class="sxs-lookup"><span data-stu-id="84ee0-105">*\<Installation Path\>* \SDK\Utilities\AdapterRegistryWizard\\</span></span>  
   
 ## <a name="to-run-this-utility"></a><span data-ttu-id="84ee0-106">运行本实用工具</span><span class="sxs-lookup"><span data-stu-id="84ee0-106">To Run This Utility</span></span>  
  <span data-ttu-id="84ee0-107">通过运行 AdapterRegistryWizard.exe 可执行程序启动该向导。</span><span class="sxs-lookup"><span data-stu-id="84ee0-107">Start the wizard by running the AdapterRegistryWizard.exe executable.</span></span> <span data-ttu-id="84ee0-108">向导中的页面将提示您与适配器及其支持的属性有关的信息。</span><span class="sxs-lookup"><span data-stu-id="84ee0-108">The pages that follow prompt you for information about your adapter and the properties that it supports.</span></span> <span data-ttu-id="84ee0-109">在后面的部分中将介绍各适配器注册向导页。</span><span class="sxs-lookup"><span data-stu-id="84ee0-109">The individual Adapter Registry Wizard pages are described in the sections that follow.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "部署 BRE 规则 |Microsoft 文档"
-ms.custom: 
+title: 部署 BRE 规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, BRE policies
 - BRE policies, deploying
 ms.assetid: 3a66aa57-e7f9-400f-963c-eda12fb1e659
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967882"
 ---
 # <a name="deploying-bre-rules"></a><span data-ttu-id="db688-102">部署 BRE 规则</span><span class="sxs-lookup"><span data-stu-id="db688-102">Deploying BRE Rules</span></span>
 <span data-ttu-id="db688-103">必须将部署使用的 BRE 规则[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]业务流程来处理 SWIFT 消息。</span><span class="sxs-lookup"><span data-stu-id="db688-103">You must deploy the BRE rules used by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] orchestrations to process SWIFT messages.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="db688-150">打开[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器。</span><span class="sxs-lookup"><span data-stu-id="db688-150">Open [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer.</span></span> <span data-ttu-id="db688-151">浏览到\<*驱动器*\>: \Documents and Settings\All Users\Application 数据，并确认的日志文件 BREDeploymentLog.txt 是否显示在该驱动器。</span><span class="sxs-lookup"><span data-stu-id="db688-151">Browse to \<*drive*\>:\Documents and Settings\All Users\Application Data, and confirm that the log file BREDeploymentLog.txt appears in that drive.</span></span>  
   
-7.  <span data-ttu-id="db688-152">重新启动的规则引擎更新服务。</span><span class="sxs-lookup"><span data-stu-id="db688-152">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="db688-153">通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="db688-153">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="db688-154">在**服务 （本地）**窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。</span><span class="sxs-lookup"><span data-stu-id="db688-154">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
+7.  <span data-ttu-id="db688-152">重新启动的规则引擎更新服务。</span><span class="sxs-lookup"><span data-stu-id="db688-152">Restart the Rule Engine Update Service.</span></span> <span data-ttu-id="db688-153">通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="db688-153">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="db688-154">在**服务 （本地）** 窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。</span><span class="sxs-lookup"><span data-stu-id="db688-154">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>  
   
 ### <a name="deploying-bre-rules-one-at-a-time"></a><span data-ttu-id="db688-155">一次部署 BRE 规则一个</span><span class="sxs-lookup"><span data-stu-id="db688-155">Deploying BRE Rules One at a Time</span></span>  
  <span data-ttu-id="db688-156">规则引擎部署向导可用于发布的词汇和一次部署一个策略。</span><span class="sxs-lookup"><span data-stu-id="db688-156">You can use the Rules Engine Deployment Wizard to publish vocabularies and deploy policies one at a time.</span></span> <span data-ttu-id="db688-157">有关词汇，此过程涉及到导入和从一个步骤中的文件发布到数据库的词汇。</span><span class="sxs-lookup"><span data-stu-id="db688-157">For a vocabulary, this process involves importing and publishing the vocabulary to the database from a file in one step.</span></span> <span data-ttu-id="db688-158">对于策略，该过程包括导入和在一个步骤中，发布策略并将在另一个步骤中对其进行部署。</span><span class="sxs-lookup"><span data-stu-id="db688-158">For a policy, the process involves importing and publishing the policy in one step, and then deploying it in another step.</span></span>  
@@ -130,4 +131,4 @@ ms.lasthandoff: 11/28/2017
   
 18. <span data-ttu-id="db688-182">单击 **“完成”**。</span><span class="sxs-lookup"><span data-stu-id="db688-182">Click **Finish**.</span></span>  
   
-19. <span data-ttu-id="db688-183">重新启动**规则引擎更新服务**。</span><span class="sxs-lookup"><span data-stu-id="db688-183">Restart the **Rule Engine Update Service**.</span></span> <span data-ttu-id="db688-184">通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="db688-184">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="db688-185">在**服务 （本地）**窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。</span><span class="sxs-lookup"><span data-stu-id="db688-185">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>
+19. <span data-ttu-id="db688-183">重新启动**规则引擎更新服务**。</span><span class="sxs-lookup"><span data-stu-id="db688-183">Restart the **Rule Engine Update Service**.</span></span> <span data-ttu-id="db688-184">通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="db688-184">Do so by clicking **Start**, clicking **Run**, entering **services.msc**, and clicking **OK**.</span></span> <span data-ttu-id="db688-185">在**服务 （本地）** 窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。</span><span class="sxs-lookup"><span data-stu-id="db688-185">In the **Services (Local)** window, right-click **Rule Engine Update Service**, and then click **Restart**.</span></span>

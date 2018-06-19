@@ -1,18 +1,18 @@
 ---
-title: "步骤 4： 创建架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, schemas
 - creating, schemas
 - schemas, creating
 ms.assetid: 81b1f538-9743-433a-87f9-a423dcb868c8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961731"
 ---
 # <a name="step-4-create-the-schemas"></a><span data-ttu-id="00fd5-102">步骤 4： 创建架构</span><span class="sxs-lookup"><span data-stu-id="00fd5-102">Step 4: Create the Schemas</span></span>
 <span data-ttu-id="00fd5-103">在此步骤中，创建一个新的项目 (**BTAHL7 项目**)，其中包含此项目的项目： 架构、 映射和业务流程。</span><span class="sxs-lookup"><span data-stu-id="00fd5-103">In this step, you create a new project (**BTAHL7 Project**) that contains the artifacts for this project: the schemas, map, and orchestration.</span></span> <span data-ttu-id="00fd5-104">然后创建架构 (**Doorbell.xsd**) 传入的 XML 编码的消息，然后选择现有架构 (**ADT_A04_22_GLO_DEF.xsd**) 为传出的 HL7 编码消息。</span><span class="sxs-lookup"><span data-stu-id="00fd5-104">You then create a schema (**Doorbell.xsd**) for the incoming XML-encoded message, and select an existing schema (**ADT_A04_22_GLO_DEF.xsd**) for the outgoing HL7-encoded message.</span></span> <span data-ttu-id="00fd5-105">您可以使用这些架构来定义的业务流程中交换的消息的结构。</span><span class="sxs-lookup"><span data-stu-id="00fd5-105">You use these schemas to define the structure of the messages that you exchange within the orchestration.</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 01/17/2018
   
 11. <span data-ttu-id="00fd5-119">单击**添加**若要打开 BizTalk 编辑器中的空白的架构。</span><span class="sxs-lookup"><span data-stu-id="00fd5-119">Click **Add** to open the blank schema in BizTalk Editor.</span></span>  
   
-12. <span data-ttu-id="00fd5-120">在**\<架构\>**树中，右键单击**根**节点，，然后单击**重命名**。</span><span class="sxs-lookup"><span data-stu-id="00fd5-120">In the **\<Schema\>** tree, right-click the **Root** node, and then click **Rename**.</span></span>  
+12. <span data-ttu-id="00fd5-120">在**\<架构\>** 树中，右键单击**根**节点，，然后单击**重命名**。</span><span class="sxs-lookup"><span data-stu-id="00fd5-120">In the **\<Schema\>** tree, right-click the **Root** node, and then click **Rename**.</span></span>  
   
 13. <span data-ttu-id="00fd5-121">类型**DoorbellRoot**作为新名称，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="00fd5-121">Type **DoorbellRoot** as the new name, and then press **Enter**.</span></span>  
   

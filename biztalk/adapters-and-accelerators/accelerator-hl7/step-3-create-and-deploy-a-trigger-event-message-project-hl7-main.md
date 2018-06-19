@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961459"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a><span data-ttu-id="f8382-102">步骤 3： 创建和部署触发器事件 （消息） Project_hl7_main</span><span class="sxs-lookup"><span data-stu-id="f8382-102">Step 3: Create and Deploy a Trigger Event (Message) Project_hl7_main</span></span>
 <span data-ttu-id="f8382-103">在此步骤中，你创建的触发器事件消息所使用的架构。</span><span class="sxs-lookup"><span data-stu-id="f8382-103">In this step, you create the schema used by a trigger event message.</span></span> <span data-ttu-id="f8382-104">例如，许可放电并传输系统 (ADT)，将发送一条消息到医院信息系统 (HIS)。</span><span class="sxs-lookup"><span data-stu-id="f8382-104">For example, the Admissions Discharge and Transfer system (ADT) that sends a message to the Hospital Information System (HIS).</span></span> <span data-ttu-id="f8382-105">此架构用于定义你的消息的格式。</span><span class="sxs-lookup"><span data-stu-id="f8382-105">You use this schema to define the format of your message.</span></span>  

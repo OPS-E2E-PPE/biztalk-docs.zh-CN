@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206797"
 ---
 # <a name="step-6-create-a-send-port-to-deliver-query-messages"></a><span data-ttu-id="352a4-102">步骤 6： 创建发送端口将查询消息传递</span><span class="sxs-lookup"><span data-stu-id="352a4-102">Step 6: Create a Send Port to Deliver Query Messages</span></span>
 <span data-ttu-id="352a4-103">在此步骤中，创建要发送传入的查询的发送端口 (QRY ^ Q01 消息) 到医院信息系统 (HIS)。</span><span class="sxs-lookup"><span data-stu-id="352a4-103">In this step, you create the send port to deliver the incoming queries (QRY^Q01 messages) to the Hospital Information System (HIS).</span></span>  

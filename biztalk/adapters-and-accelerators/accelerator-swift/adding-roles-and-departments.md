@@ -1,11 +1,11 @@
 ---
-title: "添加角色和部门 |Microsoft 文档"
-ms.custom: 
+title: 添加角色和部门 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - roles, adding
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - departments, department flows
 - creating, departments
 ms.assetid: 45e33759-6e96-4dac-a72e-74227ec108a8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964099"
 ---
 # <a name="adding-roles-and-departments"></a><span data-ttu-id="bafaa-102">添加角色和部门</span><span class="sxs-lookup"><span data-stu-id="bafaa-102">Adding Roles and Departments</span></span>
 <span data-ttu-id="bafaa-103">在创建后[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]将创建、 修复、 验证，和/或批准消息的用户，你必须使用角色以建立创建/修复工作流创建一个或多个部门。</span><span class="sxs-lookup"><span data-stu-id="bafaa-103">After you create [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] users who will create, repair, verify, and/or approve messages, you must create one or more departments with roles to establish the create/repair workflow.</span></span>  

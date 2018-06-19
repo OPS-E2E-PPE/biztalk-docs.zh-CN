@@ -1,14 +1,14 @@
 ---
-title: "监视 BizTalk Server 环境 |Microsoft 文档"
-ms.custom: 
+title: 监视 BizTalk Server 环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baae51cf-0284-429b-8335-bc1ac3e63f4c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299109"
 ---
 # <a name="monitoring-the-biztalk-server-environment"></a><span data-ttu-id="923d3-102">监视 BizTalk Server 环境</span><span class="sxs-lookup"><span data-stu-id="923d3-102">Monitoring the BizTalk Server Environment</span></span>
 <span data-ttu-id="923d3-103">你可以监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]基础结构和应用程序而进行的手动或自动过程中或两个方法下, 表中所示使用的工具的组合。</span><span class="sxs-lookup"><span data-stu-id="923d3-103">You can monitor [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] infrastructure and applications with a manual or automatic process, or a combination of the two methods, using the tools as shown in the following table.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "使用 SELECT 语句的轮询 Oracle 数据库 |Microsoft 文档"
-ms.custom: 
+title: 使用 SELECT 语句的轮询 Oracle 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - polling-based notifications, receiving from Oracle
 - polling query, configuring a
 ms.assetid: d2689eb9-6f17-498f-8a32-07f43a368833
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965091"
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a><span data-ttu-id="03550-102">使用 SELECT 语句的轮询 Oracle 数据库</span><span class="sxs-lookup"><span data-stu-id="03550-102">Poll Oracle Database using the SELECT statement</span></span>
 <span data-ttu-id="03550-103">你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收定期的数据更改消息通过使用 SELECT 语句持续轮询的表和 Oracle 的 Oracle 数据库中的视图。</span><span class="sxs-lookup"><span data-stu-id="03550-103">You can configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive periodic data-change messages by using a SELECT statement to continuously poll the tables and views in Oracle the Oracle database.</span></span> <span data-ttu-id="03550-104">你可以指定为适配器执行定期轮询 Oracle 数据库的轮询语句的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="03550-104">You can specify a SELECT statement as a polling statement that the adapter executes periodically to poll the Oracle database.</span></span> <span data-ttu-id="03550-105">（可选） 还可以指定适配器执行中数据的更改是否后轮询 PL/SQL 代码块。</span><span class="sxs-lookup"><span data-stu-id="03550-105">Optionally, you can also specify a post-poll PL/SQL code block that the adapter executes if there is a change in data.</span></span> <span data-ttu-id="03550-106">若要更新目标中的查询记录上的字段或将查询的记录移到另一个表或视图，通常使用此块。</span><span class="sxs-lookup"><span data-stu-id="03550-106">This block is often used to update a field on the queried records in the target or to move the queried records to another table or view.</span></span>  

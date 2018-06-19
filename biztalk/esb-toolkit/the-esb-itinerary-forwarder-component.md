@@ -1,14 +1,14 @@
 ---
-title: "ESB 路线的转发器组件 |Microsoft 文档"
-ms.custom: 
+title: ESB 路线的转发器组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 607cc8a0-4964-4751-baca-c3329983c98b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295333"
 ---
 # <a name="the-esb-itinerary-forwarder-component"></a><span data-ttu-id="98f22-102">ESB 路线的转发器组件</span><span class="sxs-lookup"><span data-stu-id="98f22-102">The ESB Itinerary Forwarder Component</span></span>
 <span data-ttu-id="98f22-103">一条路线必须按顺序调用多个 Web 服务时使用 ESB 路线转发器组件。</span><span class="sxs-lookup"><span data-stu-id="98f22-103">The ESB Itinerary Forwarder component is used when an itinerary must sequentially invoke multiple Web services.</span></span> <span data-ttu-id="98f22-104">可以使用组件在收到与双向出口响应端关联的管道。</span><span class="sxs-lookup"><span data-stu-id="98f22-104">The component can be used in receive pipelines that are associated with the response side of a two-way off-ramp.</span></span>  

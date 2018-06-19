@@ -1,14 +1,14 @@
 ---
-title: "调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的记录类型 |Microsoft 文档"
-ms.custom: 
+title: 调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的记录类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccdc150e-055a-47df-af3e-64931946455d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963035"
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="767fd-102">调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的记录类型</span><span class="sxs-lookup"><span data-stu-id="767fd-102">Invoke Functions and Procedures with RECORD Types in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="767fd-103">Oracle 记录类型用于表示传递给 PL/SQL 函数和过程的参数中的分层信息。</span><span class="sxs-lookup"><span data-stu-id="767fd-103">Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures.</span></span> <span data-ttu-id="767fd-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现为复杂的 XML 类型的记录类型。</span><span class="sxs-lookup"><span data-stu-id="767fd-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types.</span></span> <span data-ttu-id="767fd-105">有关详细信息，如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持记录类型，请参阅[函数和过程与 Oracle 数据库中的记录类型上的操作。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)。</span><span class="sxs-lookup"><span data-stu-id="767fd-105">For more information about how the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports RECORD Types, see [Operations on Functions and Procedures with RECORD Types in Oracle Database.](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md).</span></span> <span data-ttu-id="767fd-106">记录类型的 XML 结构的信息，请参阅[记录类型的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)。</span><span class="sxs-lookup"><span data-stu-id="767fd-106">For information about the XML structure for RECORD Types, see [Message Schemas for RECORD Types](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md).</span></span>  

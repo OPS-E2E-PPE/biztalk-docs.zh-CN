@@ -1,17 +1,17 @@
 ---
-title: "BizTalk 映射器键盘快捷键 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 映射器键盘快捷键 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, BizTalk Mapper
 - BizTalk Mapper, keyboard shortcuts
 ms.assetid: aba4958d-9104-46da-8524-45a41e07c5e2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966379"
 ---
 # <a name="biztalk-mapper-keyboard-shortcuts"></a><span data-ttu-id="36f3c-102">BizTalk 映射器键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="36f3c-102">BizTalk Mapper Keyboard Shortcuts</span></span>
 <span data-ttu-id="36f3c-103">与在所有标准 Microsoft Windows 应用程序中一样，您可以在 BizTalk 映射器中使用键盘快捷键来访问可通过菜单访问的命令。</span><span class="sxs-lookup"><span data-stu-id="36f3c-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in BizTalk Mapper to access commands otherwise available by using menus.</span></span> <span data-ttu-id="36f3c-104">下表对可用的键盘快捷键进行了说明：</span><span class="sxs-lookup"><span data-stu-id="36f3c-104">The following table describes the available keyboard shortcuts.</span></span>  

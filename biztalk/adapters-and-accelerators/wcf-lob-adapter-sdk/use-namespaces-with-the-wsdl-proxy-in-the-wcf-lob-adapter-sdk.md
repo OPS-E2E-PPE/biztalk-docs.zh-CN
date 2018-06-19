@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF LOB 适配器 SDK 中的 WSDL 代理使用的命名空间 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF LOB 适配器 SDK 中的 WSDL 代理使用的命名空间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 781d20fa-83e3-42fa-866e-5650d5eb71a7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965043"
 ---
 # <a name="use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="9e277-102">使用 WCF LOB 适配器 SDK 中的 WSDL 代理使用的命名空间</span><span class="sxs-lookup"><span data-stu-id="9e277-102">Use namespaces with the WSDL-Proxy in the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="9e277-103">[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]生成 WSDL 和适配器使用开发人员使用所提供值的代理[!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)]或通过修改服务命名空间的私有变量的代码中指定和/或`Namespace`的适配器的属性。</span><span class="sxs-lookup"><span data-stu-id="9e277-103">The [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] generates WSDL and proxies for an adapter using values supplied by the developer using the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)] or specified in code through modification of the SERVICENAMESPACE private variable and/or the `Namespace` property of the adapter.</span></span>  

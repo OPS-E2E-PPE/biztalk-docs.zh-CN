@@ -1,14 +1,14 @@
 ---
-title: "步骤 8A： 配置 ADT 系统的当事方信息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8A： 配置 ADT 系统的当事方信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0d750c2-a3c6-4571-a4e1-0d0aaaa4d400
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962043"
 ---
 # <a name="step-8a-configure-party-information-for-the-adt-system"></a><span data-ttu-id="368a5-102">步骤 8A： 配置 ADT 系统的当事方信息</span><span class="sxs-lookup"><span data-stu-id="368a5-102">Step 8A: Configure Party Information for the ADT System</span></span>
 <span data-ttu-id="368a5-103">在此步骤中，你可以配置 ADT 系统的方信息。</span><span class="sxs-lookup"><span data-stu-id="368a5-103">In this step, you configure the party information for the ADT System.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何更改的警报的频率进行评估 |Microsoft 文档"
-ms.custom: 
+title: 如何更改的警报的频率进行评估 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68f326ed-2017-4853-89b9-146cb0785554
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969067"
 ---
 # <a name="how-to-change-the-frequency-with-which-alerts-are-evaluated"></a><span data-ttu-id="75e0e-102">如何更改计算的警报的频率</span><span class="sxs-lookup"><span data-stu-id="75e0e-102">How to Change the Frequency With Which Alerts Are Evaluated</span></span>
 <span data-ttu-id="75e0e-103">有时会出现这样的情况：使用默认设置部署 SQL Notifications Services 生成器后，它可能无法及时处理 BAM 事件提供程序引发的事件。</span><span class="sxs-lookup"><span data-stu-id="75e0e-103">There are cases in which the SQL Notifications services generator may not keep up with events being raised by the BAM event provider when deployed with the default settings.</span></span> <span data-ttu-id="75e0e-104">您可以通过修改 Notification Services adf.xml 文件来加快评估事件是否需要发出警报的频率（量程持续时间）。</span><span class="sxs-lookup"><span data-stu-id="75e0e-104">You can increase the frequency (the quantum duration) with which events are evaluated for alerts by modifying the Notification Services adf.xml file.</span></span>  

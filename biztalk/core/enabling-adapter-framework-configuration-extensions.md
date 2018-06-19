@@ -1,14 +1,14 @@
 ---
-title: "启用适配器 Framework 配置扩展 |Microsoft 文档"
-ms.custom: 
+title: 启用适配器 Framework 配置扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 851f4a20-502d-45f8-9647-13bec33fa460
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970141"
 ---
 # <a name="enabling-adapter-framework-configuration-extensions"></a><span data-ttu-id="27c79-102">使适配器 Framework 配置扩展</span><span class="sxs-lookup"><span data-stu-id="27c79-102">Enabling Adapter Framework Configuration Extensions</span></span>
 <span data-ttu-id="27c79-103">BizTalk 适配器框架提供多种扩展，为用户带来更多便利。</span><span class="sxs-lookup"><span data-stu-id="27c79-103">The BizTalk Adapter Framework provides several extensions to improve the user experience.</span></span> <span data-ttu-id="27c79-104">若要使用这些扩展，导入的框架的架构，BiztalkAdapterFramework.xsd。</span><span class="sxs-lookup"><span data-stu-id="27c79-104">To use these extensions, import the framework's schema, BiztalkAdapterFramework.xsd.</span></span> <span data-ttu-id="27c79-105">导入架构使你能够访问修饰和专用的类型，以及在适配器的配置架构中使用它们，如下所述。</span><span class="sxs-lookup"><span data-stu-id="27c79-105">Importing the schema enables you to access decorations and specialized types and to use them in the adapter's configuration schema, as described below.</span></span> <span data-ttu-id="27c79-106">下面的代码演示如何导入该架构：</span><span class="sxs-lookup"><span data-stu-id="27c79-106">The following code shows how to import the schema:</span></span>  

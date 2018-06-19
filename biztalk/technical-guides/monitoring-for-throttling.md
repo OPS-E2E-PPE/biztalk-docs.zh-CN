@@ -1,14 +1,14 @@
 ---
-title: "监视限制 |Microsoft 文档"
-ms.custom: 
+title: 监视限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d1d4c72-6942-4572-b27f-c58d37c94062
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299757"
 ---
 # <a name="monitoring-for-throttling"></a><span data-ttu-id="974bd-102">监视的限制</span><span class="sxs-lookup"><span data-stu-id="974bd-102">Monitoring for Throttling</span></span>
 <span data-ttu-id="974bd-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包监视性能计数器指示限制状态的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="974bd-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management pack monitors performance counters that indicate the throttling state of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="974bd-104">下面列出了几个关键因素了解限制。</span><span class="sxs-lookup"><span data-stu-id="974bd-104">Some key factors to understand about throttling are listed below.</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="974bd-106">传递限制 (**MsgBox-> 发送端口或业务流程**)，入站的速率是从消息框中接收消息的速率。</span><span class="sxs-lookup"><span data-stu-id="974bd-106">For delivery throttling (**MsgBox -> Send Port or Orchestration**), inbound rate is the rate at which messages are received from the message box.</span></span> <span data-ttu-id="974bd-107">出站率是从该处消息成功传递通过适配器的速率。</span><span class="sxs-lookup"><span data-stu-id="974bd-107">Outbound rate is the rate at which messages are successfully delivered via the adapters.</span></span>  
   
--   <span data-ttu-id="974bd-108">发布限制 (**接收适配器**或**业务流程-> MsgBox)，**入站的速率是从适配器接收消息的速率和出站率是速率消息插入到 MsgBox。</span><span class="sxs-lookup"><span data-stu-id="974bd-108">For publishing throttling (**Receive adapters** or **Orchestrations -> MsgBox),** inbound rate is the rate at which messages are received from the adapters and outbound rate is the rate messages are plugged into the MsgBox.</span></span>  
+-   <span data-ttu-id="974bd-108">发布限制 (**接收适配器**或**业务流程-> MsgBox)，** 入站的速率是从适配器接收消息的速率和出站率是速率消息插入到 MsgBox。</span><span class="sxs-lookup"><span data-stu-id="974bd-108">For publishing throttling (**Receive adapters** or **Orchestrations -> MsgBox),** inbound rate is the rate at which messages are received from the adapters and outbound rate is the rate messages are plugged into the MsgBox.</span></span>  
   
 -   <span data-ttu-id="974bd-109">非数据库中的总消息的主机之间不存在任何限制的机制。</span><span class="sxs-lookup"><span data-stu-id="974bd-109">No throttling mechanism exists between hosts other than total messages in the database.</span></span>  
   

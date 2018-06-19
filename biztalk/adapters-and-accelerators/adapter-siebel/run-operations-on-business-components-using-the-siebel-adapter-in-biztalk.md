@@ -1,17 +1,17 @@
 ---
-title: "在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作 |Microsoft 文档"
-ms.custom: 
+title: 在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business components, performing operations by using BizTalk Server
 - how to, perform operations on a business component by using BizTalk Server
 ms.assetid: 5bd0f4d7-60ec-42ea-84c0-618aeef9688f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966043"
 ---
 # <a name="run-operations-on-business-components-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="f3894-102">在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作</span><span class="sxs-lookup"><span data-stu-id="f3894-102">Run Operations on Business Components Using BizTalk Server and the Siebel adapter</span></span>
 <span data-ttu-id="f3894-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]面在业务组件上，可以调用的操作。</span><span class="sxs-lookup"><span data-stu-id="f3894-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] surfaces operations that can be invoked on a business component.</span></span> <span data-ttu-id="f3894-104">可以属于业务组件上的操作：</span><span class="sxs-lookup"><span data-stu-id="f3894-104">The operations on business components can be categorized as:</span></span>  

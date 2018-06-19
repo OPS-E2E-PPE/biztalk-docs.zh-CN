@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型调用 SQL Server 中的标量函数 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型调用 SQL Server 中的标量函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a331e275-3c81-41a8-9ba1-3a801ebc259a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964243"
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a><span data-ttu-id="90b59-102">使用 WCF 服务模型调用 SQL Server 中的标量函数</span><span class="sxs-lookup"><span data-stu-id="90b59-102">Invoke Scalar Functions in SQL Server by Using the WCF Service Model</span></span>
 <span data-ttu-id="90b59-103">你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的标量函数。</span><span class="sxs-lookup"><span data-stu-id="90b59-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a .NET application using the WCF service model to invoke scalar functions in SQL Server.</span></span> <span data-ttu-id="90b59-104">适配器将标量函数公开为可以直接在 SQL Server 调用的方法。</span><span class="sxs-lookup"><span data-stu-id="90b59-104">The adapter exposes the scalar functions as methods that can be invoked directly on SQL Server.</span></span> <span data-ttu-id="90b59-105">有关如何适配器支持标量函数的详细信息，请参阅[执行 SQL Server 使用的 SQL 适配器中的标量函数](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="90b59-105">For more information about how the adapter supports scalar functions, see [Execute Scalar Functions in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md).</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 |<span data-ttu-id="90b59-126">运算</span><span class="sxs-lookup"><span data-stu-id="90b59-126">Operation</span></span>|<span data-ttu-id="90b59-127">方法签名</span><span class="sxs-lookup"><span data-stu-id="90b59-127">Method Signature</span></span>|  
 |---------------|----------------------|  
-|<span data-ttu-id="90b59-128">标量函数名称</span><span class="sxs-lookup"><span data-stu-id="90b59-128">Scalar function name</span></span>|<span data-ttu-id="90b59-129">公共*< return_type >**< scalar_function_name >*(param1，param2，...)</span><span class="sxs-lookup"><span data-stu-id="90b59-129">public *<return_type>**<scalar_function_name>*(param1, param2, …)</span></span>|  
+|<span data-ttu-id="90b59-128">标量函数名称</span><span class="sxs-lookup"><span data-stu-id="90b59-128">Scalar function name</span></span>|<span data-ttu-id="90b59-129">公共 *< return_type >**< scalar_function_name >*(param1，param2，...)</span><span class="sxs-lookup"><span data-stu-id="90b59-129">public *<return_type>**<scalar_function_name>*(param1, param2, …)</span></span>|  
   
  <span data-ttu-id="90b59-130">\<*retrun_type* \> = 在函数定义中定义的返回类型</span><span class="sxs-lookup"><span data-stu-id="90b59-130">\<*retrun_type*\> = Return type defined in the function definition</span></span>  
   

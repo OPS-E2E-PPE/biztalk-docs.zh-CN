@@ -1,14 +1,14 @@
 ---
-title: "运行 SQL Server 使用 BizTalk Server 上的复合操作 |Microsoft 文档"
-ms.custom: 
+title: 运行 SQL Server 使用 BizTalk Server 上的复合操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86fd2aa1-20c7-4b58-9f35-83ba0c959cf1
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968019"
 ---
 # <a name="run-composite-operations-on-sql-server-using-biztalk-server"></a><span data-ttu-id="f45ae-102">运行 SQL Server 使用 BizTalk Server 上的复合操作</span><span class="sxs-lookup"><span data-stu-id="f45ae-102">Run composite operations on SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="f45ae-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]允许适配器客户端执行 SQL Server 数据库上的复合操作。</span><span class="sxs-lookup"><span data-stu-id="f45ae-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] enables adapter clients to perform composite operations on the SQL Server database.</span></span> <span data-ttu-id="f45ae-104">复合操作可以包括：</span><span class="sxs-lookup"><span data-stu-id="f45ae-104">A composite operation can include:</span></span>  
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  <span data-ttu-id="f45ae-153">右键单击根**\<架构\>** CompositeSchema.xsd，然后单击的节点**属性**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-153">Right-click the root **\<Schema\>** node in the CompositeSchema.xsd, and click **Properties**.</span></span>  
   
-    2.  <span data-ttu-id="f45ae-154">在**属性**框中，单击省略号按钮**（...）**针对**导入**属性。</span><span class="sxs-lookup"><span data-stu-id="f45ae-154">In the **Property** box, click the ellipsis button **(…)** against the **Imports** property.</span></span>  
+    2.  <span data-ttu-id="f45ae-154">在**属性**框中，单击省略号按钮 **（...）** 针对**导入**属性。</span><span class="sxs-lookup"><span data-stu-id="f45ae-154">In the **Property** box, click the ellipsis button **(…)** against the **Imports** property.</span></span>  
   
          <span data-ttu-id="f45ae-155">![导入架构定义](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")</span><span class="sxs-lookup"><span data-stu-id="f45ae-155">![Import schema definitions](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")</span></span>  
   
@@ -101,9 +102,9 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="f45ae-169">默认情况下，**根**还将节点添加到新的架构文件。</span><span class="sxs-lookup"><span data-stu-id="f45ae-169">By default, a **Root** node is also added to a new schema file.</span></span> <span data-ttu-id="f45ae-170">你可以重命名**根**节点**请求**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-170">You can rename the **Root** node to **Request**.</span></span> <span data-ttu-id="f45ae-171">若要重命名节点，右键单击节点名称，然后单击**重命名**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-171">To rename a node, right-click the node name and click **Rename**.</span></span>  
   
-     <span data-ttu-id="f45ae-172">若要添加一个节点下的**\<架构\>**节点：</span><span class="sxs-lookup"><span data-stu-id="f45ae-172">To add a node under the **\<Schema\>** node:</span></span>  
+     <span data-ttu-id="f45ae-172">若要添加一个节点下的**\<架构\>** 节点：</span><span class="sxs-lookup"><span data-stu-id="f45ae-172">To add a node under the **\<Schema\>** node:</span></span>  
   
-    1.  <span data-ttu-id="f45ae-173">右键单击**\<架构\>**节点，指向**插入架构节点**，然后单击**子记录**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-173">Right-click the **\<Schema\>** node, point to **Insert Schema Node**, and click **Child Record**.</span></span>  
+    1.  <span data-ttu-id="f45ae-173">右键单击**\<架构\>** 节点，指向**插入架构节点**，然后单击**子记录**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-173">Right-click the **\<Schema\>** node, point to **Insert Schema Node**, and click **Child Record**.</span></span>  
   
     2.  <span data-ttu-id="f45ae-174">重命名为新节点**请求响应**。</span><span class="sxs-lookup"><span data-stu-id="f45ae-174">Rename the new node to **RequestResponse**.</span></span>  
   

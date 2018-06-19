@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970259"
 ---
 # <a name="error---second-input-for-table-looping-functoid-not-valid"></a><span data-ttu-id="6064a-102">错误-为第二个输入表不是有效循环 Functoid</span><span class="sxs-lookup"><span data-stu-id="6064a-102">Error - Second Input for Table Looping Functoid Not Valid</span></span>
 <span data-ttu-id="6064a-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="6064a-103">**Error Code**</span></span>  

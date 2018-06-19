@@ -1,11 +1,11 @@
 ---
-title: "访问在与管道组件的 WCF 消息的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 访问在与管道组件的 WCF 消息的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, WCF services
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: 5e24afa3-b2e6-472e-8890-a47b59573304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965099"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-pipeline-components"></a><span data-ttu-id="02186-102">使用管道组件访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="02186-102">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>
 <span data-ttu-id="02186-103">若要访问管道组件中的 WCF 适配器的 SOAP 标头，你使用的上下文的属性名称组合**InboundHeaders**，和的目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/适配器/WCF properties**。</span><span class="sxs-lookup"><span data-stu-id="02186-103">To access the SOAP headers with the WCF adapters in pipeline components, you use a combination of the context property name, **InboundHeaders**, and the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**.</span></span> <span data-ttu-id="02186-104">WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到入站消息中**InboundHeaders**属性。</span><span class="sxs-lookup"><span data-stu-id="02186-104">The WCF adapters copy custom SOAP headers and standard SOAP headers in the inbound messages to the **InboundHeaders** property.</span></span> <span data-ttu-id="02186-105">使用 WCF 适配器，您还可以以编程方式选择要以编程方式升级或写入至上下文属性的属性。</span><span class="sxs-lookup"><span data-stu-id="02186-105">The WCF adapters also allow you to programmatically select the properties you would like to promote or write to the context properties programmatically.</span></span> <span data-ttu-id="02186-106">请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)有关详细信息。</span><span class="sxs-lookup"><span data-stu-id="02186-106">See [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md) for more details.</span></span>  

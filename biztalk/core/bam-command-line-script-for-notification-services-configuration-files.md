@@ -1,14 +1,14 @@
 ---
-title: "BAM 通知的命令行脚本服务配置文件 |Microsoft 文档"
-ms.custom: 
+title: BAM 通知的命令行脚本服务配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6aa4a460-58f9-439d-af28-0a9cb2288236
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965795"
 ---
 # <a name="bam-command-line-script-for-notification-services-configuration-files"></a><span data-ttu-id="f6046-102">BAM 通知的命令行脚本服务配置文件</span><span class="sxs-lookup"><span data-stu-id="f6046-102">BAM Command-Line Script for Notification Services Configuration Files</span></span>
 <span data-ttu-id="f6046-103">管理员使用 ProcessBamNSFiles.vbs 脚本自定义 BAM 警报的 SQL Server Notification Services 的行为。</span><span class="sxs-lookup"><span data-stu-id="f6046-103">Administrators use the ProcessBamNSFiles.vbs script to customize the behavior of SQL Server Notification Services for BAM alerts.</span></span> <span data-ttu-id="f6046-104">您可以使用该脚本获取 Notification Services 应用程序定义文件 (ADF) 和 Notification Services 配置文件。</span><span class="sxs-lookup"><span data-stu-id="f6046-104">You can use the script to obtain the Notification Services application definition file (ADF) and Notification Services configuration file.</span></span> <span data-ttu-id="f6046-105">可以对这些文件进行修改，然后使用该脚本来应用这些更改。</span><span class="sxs-lookup"><span data-stu-id="f6046-105">These files can be modified and then the script can be used to apply the changes.</span></span>  

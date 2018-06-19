@@ -1,18 +1,18 @@
 ---
-title: "步骤 1： 生成并部署用于接收 IDOC vPrev BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 生成并部署用于接收 IDOC vPrev BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, building and deploying previous version of BizTalk project for receiving an IDOC
 - migrating, building and deploying previous version of BizTalk project for receiving an IDOC
 - migration
 ms.assetid: ab6bdf9a-dca5-4acd-97b2-a9afe9792978
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,13 +21,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963323"
 ---
 # <a name="step-1-build-and-deploy-the-vprev-biztalk-project-for-receiving-an-idoc"></a><span data-ttu-id="c1034-102">步骤 1： 生成并部署用于接收 IDOC vPrev BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="c1034-102">Step 1: Build and Deploy the vPrev BizTalk Project for Receiving an IDOC</span></span>
 <span data-ttu-id="c1034-103">![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="c1034-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="c1034-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="c1034-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="c1034-105">**目标：**在此步骤中，生成和部署你现有的 vPrev BizTalk 项目，从某个 SAP 系统接收 IDOC。</span><span class="sxs-lookup"><span data-stu-id="c1034-105">**Objective:** In this step, you build and deploy your existing vPrev BizTalk project to receive an IDOC from an SAP system.</span></span>  
+ <span data-ttu-id="c1034-105">**目标：** 在此步骤中，生成和部署你现有的 vPrev BizTalk 项目，从某个 SAP 系统接收 IDOC。</span><span class="sxs-lookup"><span data-stu-id="c1034-105">**Objective:** In this step, you build and deploy your existing vPrev BizTalk project to receive an IDOC from an SAP system.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="c1034-106">不需要对 vPrev BizTalk 项目进行任何更改。</span><span class="sxs-lookup"><span data-stu-id="c1034-106">You do not need to make any change to the vPrev BizTalk project.</span></span>  

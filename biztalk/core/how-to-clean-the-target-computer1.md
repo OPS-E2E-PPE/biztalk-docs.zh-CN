@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 8e187233b8755eb84d6169192542d48ce2e86ec3
 ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970011"
 ---
 # <a name="how-to-clean-the-target-computer"></a><span data-ttu-id="0e782-101">如何清洗目标计算机</span><span class="sxs-lookup"><span data-stu-id="0e782-101">How to Clean the Target Computer</span></span>
 <span data-ttu-id="0e782-102">部署将覆盖接收位置配置。</span><span class="sxs-lookup"><span data-stu-id="0e782-102">Deployment overwrites the receive location configuration.</span></span> <span data-ttu-id="0e782-103">当你部署的目标计算机上，发送端口的绑定文件 （和程序集） 和接收位置已替换为 XML 绑定文件中导入时。</span><span class="sxs-lookup"><span data-stu-id="0e782-103">When you deploy a binding file (and assembly) on a target computer, the send ports and receive locations are replaced with those in the XML binding file when they are imported.</span></span>  

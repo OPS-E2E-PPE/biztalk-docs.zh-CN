@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966035"
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a><span data-ttu-id="decfd-102">SAP 使用 WCF 通道模型中的流平面文件 Idoc</span><span class="sxs-lookup"><span data-stu-id="decfd-102">Stream Flat-File IDOCs in SAP using the WCF Channel Model</span></span>
 <span data-ttu-id="decfd-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。</span><span class="sxs-lookup"><span data-stu-id="decfd-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports node-value streaming for the SendIdoc and ReceiveIdoc operations.</span></span> <span data-ttu-id="decfd-104">这些操作用于发送和接收平面文件 （字符串） Idoc 与其他适配器。</span><span class="sxs-lookup"><span data-stu-id="decfd-104">These operations are used to send and receive flat-file (string) IDOCs to and from the adapter.</span></span> <span data-ttu-id="decfd-105">在这两种操作，整个 IDOC 的数据包含在单个节点下的字符串 (\<idocData\>)。</span><span class="sxs-lookup"><span data-stu-id="decfd-105">In both of these operations, the data for the entire IDOC is contained in a string under a single node (\<idocData\>).</span></span> <span data-ttu-id="decfd-106">对于大型 Idoc，流式处理的 IDOC 数据适配器和代码之间可能会节省大量的内存资源。</span><span class="sxs-lookup"><span data-stu-id="decfd-106">For large IDOCs, streaming the IDOC data between the adapter and your code may save significant memory resources.</span></span>  

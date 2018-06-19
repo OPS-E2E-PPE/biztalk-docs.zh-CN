@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF LOB 适配器 SDK 创建部署包 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF LOB 适配器 SDK 创建部署包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10022981-7944-45d6-a78a-4d680a79b010
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966555"
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="2575d-102">使用 WCF LOB 适配器 SDK 创建部署包</span><span class="sxs-lookup"><span data-stu-id="2575d-102">Create a deployment package with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="2575d-103">在开发周期中，可以生成、 调试和运行你在 Visual Studio 中的适配器。</span><span class="sxs-lookup"><span data-stu-id="2575d-103">During the development cycle, you can build, debug, and run your adapter within Visual Studio.</span></span> <span data-ttu-id="2575d-104">适配器解决方案的输出是一个 DLL 程序集。</span><span class="sxs-lookup"><span data-stu-id="2575d-104">The output of an adapter solution is a DLL assembly.</span></span> <span data-ttu-id="2575d-105">你可以生成使用 Visual Studio IDE 适配器解决方案，或使用 devenv.exe 脚本来创建一个适配器程序集。</span><span class="sxs-lookup"><span data-stu-id="2575d-105">You can build your adapter solution using Visual Studio IDE or use the devenv.exe scripts to create an adapter assembly.</span></span> <span data-ttu-id="2575d-106">一旦开发适配器并且可供适配器使用者的环境中使用，你必须创建一个允许的适配器，测试和生产环境中安装的部署包。</span><span class="sxs-lookup"><span data-stu-id="2575d-106">Once the adapter is developed and it is ready for use within the adapter consumer's environment, you must create a deployment package that allows the adapter to be installed in test and production environments.</span></span>  

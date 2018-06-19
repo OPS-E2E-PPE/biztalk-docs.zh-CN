@@ -1,17 +1,17 @@
 ---
-title: "步骤 3： 创建和部署的触发器事件 （消息） 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建和部署的触发器事件 （消息） 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, trigger events
 - trigger events
 ms.assetid: 5d21a923-fc2c-4d50-b146-daca0aa26e2a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961275"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a><span data-ttu-id="f8551-102">步骤 3： 创建和部署的触发器事件 （消息） 项目</span><span class="sxs-lookup"><span data-stu-id="f8551-102">Step 3: Create and Deploy a Trigger Event (Message) Project</span></span>
 <span data-ttu-id="f8551-103">在此步骤中，你的触发器事件消息创建架构。</span><span class="sxs-lookup"><span data-stu-id="f8551-103">In this step, you create the schema for your trigger event message.</span></span> <span data-ttu-id="f8551-104">例如，你可能在许可放电并传输系统 (ADT) 发送到医院信息系统 (HIS) 的一条消息。</span><span class="sxs-lookup"><span data-stu-id="f8551-104">For example, you might be the Admissions Discharge and Transfer system (ADT) who sends a message to the Hospital Information System (HIS).</span></span> <span data-ttu-id="f8551-105">你需要此架构来定义你的消息的格式。</span><span class="sxs-lookup"><span data-stu-id="f8551-105">You need this schema to define the format of your message.</span></span>  

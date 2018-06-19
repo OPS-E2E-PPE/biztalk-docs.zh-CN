@@ -1,14 +1,14 @@
 ---
-title: "规划使用 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 规划使用 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24863069-929b-4b0b-9643-073965fb5532
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302269"
 ---
 # <a name="planning-for-consuming-web-services"></a><span data-ttu-id="cfc42-102">规划使用 Web 服务</span><span class="sxs-lookup"><span data-stu-id="cfc42-102">Planning for Consuming Web Services</span></span>
 <span data-ttu-id="cfc42-103">规划 Web 服务可以划分为两个类别，规划用于发布 Web 服务和规划使用 Web 服务。</span><span class="sxs-lookup"><span data-stu-id="cfc42-103">Planning for Web services can be divided into two categories, planning for publishing Web services and planning for consuming Web services.</span></span> <span data-ttu-id="cfc42-104">本主题介绍有关使用 Web 服务的注意事项。</span><span class="sxs-lookup"><span data-stu-id="cfc42-104">This topic describes the considerations for consuming Web services.</span></span> <span data-ttu-id="cfc42-105">有关发布 Web 服务的信息，请参阅[规划发布 Web Services1](../technical-guides/planning-for-publishing-web-services1.md)。</span><span class="sxs-lookup"><span data-stu-id="cfc42-105">For information about publishing Web services, see [Planning for Publishing Web Services1](../technical-guides/planning-for-publishing-web-services1.md).</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="cfc42-146">可以在消息上下文中以编程方式设置配置属性。</span><span class="sxs-lookup"><span data-stu-id="cfc42-146">It is possible to set configuration properties programmatically on the message context.</span></span> <span data-ttu-id="cfc42-147">发送端口是静态还是动态，你可以在业务流程或自定义管道组件中设置这些属性。</span><span class="sxs-lookup"><span data-stu-id="cfc42-147">You can set these properties in an orchestration or a custom pipeline component whether the send port is static or dynamic.</span></span>  
   
     > [!NOTE]  
-    >  <span data-ttu-id="cfc42-148">若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到**[指定更高版本]**中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。</span><span class="sxs-lookup"><span data-stu-id="cfc42-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration console.</span></span>  
+    >  <span data-ttu-id="cfc42-148">若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到 **[指定更高版本]** 中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。</span><span class="sxs-lookup"><span data-stu-id="cfc42-148">To configure the **MethodName** property for the static SOAP send port programmatically, you need to set **Method name** to **[Specify Later]** in the **Web Service** tab of the **SOAP Transport Properties** dialog box in the BizTalk Server Administration console.</span></span>  
   
      <span data-ttu-id="cfc42-149">有关详细信息**MethodName**属性，请参阅[如何动态设置使用的 Web 服务的 URI](http://go.microsoft.com/fwlink/?LinkID=155768) (http://go.microsoft.com/fwlink/?LinkID=155768)。</span><span class="sxs-lookup"><span data-stu-id="cfc42-149">For more information about the **MethodName** property, see [How to Dynamically Set the URI of a Consumed Web Service](http://go.microsoft.com/fwlink/?LinkID=155768) (http://go.microsoft.com/fwlink/?LinkID=155768).</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="cfc42-179">Web 方法应具有**SoapDocumentMethodAttribute**而不是**SoapRpcMethodAttribute**。</span><span class="sxs-lookup"><span data-stu-id="cfc42-179">Web methods should have **SoapDocumentMethodAttribute** instead of **SoapRpcMethodAttribute**.</span></span>  
   
-    -   <span data-ttu-id="cfc42-180">Web 服务和方法必须使用**文本**绑定而不**编码**如**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。</span><span class="sxs-lookup"><span data-stu-id="cfc42-180">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
+    -   <span data-ttu-id="cfc42-180">Web 服务和方法必须使用**文本**绑定而不**编码**如 **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。</span><span class="sxs-lookup"><span data-stu-id="cfc42-180">Web services and methods must use the **Literal** binding instead of **Encoded** such as **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**.</span></span>  
   
     -   <span data-ttu-id="cfc42-181">Web 方法参数和返回类型必须具有**XmlRootAttribute**使用一个有效**Namespace**属性除非它们是本机的 XSD 类型和 XmlNode 类型。</span><span class="sxs-lookup"><span data-stu-id="cfc42-181">Web method parameters and return types must have **XmlRootAttribute** with a valid **Namespace** property unless they are native XSD types and the XmlNode type.</span></span>  
   

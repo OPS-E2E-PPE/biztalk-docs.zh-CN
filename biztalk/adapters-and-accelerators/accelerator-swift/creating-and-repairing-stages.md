@@ -1,17 +1,17 @@
 ---
-title: "创建和修复阶段 |Microsoft 文档"
-ms.custom: 
+title: 创建和修复阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - stages, repair
 - stages, create
 ms.assetid: 07d7ce7b-ed15-40a7-9c85-280a1d38985b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208805"
 ---
 # <a name="creating-and-repairing-stages"></a><span data-ttu-id="31719-102">创建和修复阶段</span><span class="sxs-lookup"><span data-stu-id="31719-102">Creating and Repairing Stages</span></span>
 <span data-ttu-id="31719-103">任何工作流中的第一个阶段可以在创建或修复阶段，具有定义为功能的角色，即创建或修复。</span><span class="sxs-lookup"><span data-stu-id="31719-103">The first stage in any workflow can be either a Create or Repair stage, that is, roles that have a capability defined as create or repair.</span></span> <span data-ttu-id="31719-104">消息源自失败消息的 BizTalk MessageBox 或[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户手动创建的任何消息通过[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体。</span><span class="sxs-lookup"><span data-stu-id="31719-104">The message originates from the BizTalk MessageBox as a failed message or an [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] user manually creates a message through the [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] forms.</span></span>  

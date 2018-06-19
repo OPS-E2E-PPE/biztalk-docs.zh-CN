@@ -1,17 +1,17 @@
 ---
-title: "业务规则 Hello World2 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Hello World2 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 2a88a2a0-8cb6-4373-8441-0ab04345a477
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967299"
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a><span data-ttu-id="81ecd-102">业务规则 Hello World2 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="81ecd-102">Business Rules Hello World2 (BizTalk Server Sample)</span></span>
 <span data-ttu-id="81ecd-103">业务规则 Hello World2 示例扩展业务规则 Hello World1 示例，演示如何为版本，发布和部署 XML 规则设置为共享的 SQL 规则存储，以及如何运行策略使用**策略**对象框架提供的业务规则。</span><span class="sxs-lookup"><span data-stu-id="81ecd-103">The Business Rules Hello World2 sample extends the Business Rules Hello World1 sample by demonstrating how to version, publish, and deploy the XML rule set to the shared SQL rule store, and how to run the policy using the **Policy** object provided by the Business Rules Framework.</span></span> <span data-ttu-id="81ecd-104">该示例还演示了操作中的动态策略更新。</span><span class="sxs-lookup"><span data-stu-id="81ecd-104">The sample also demonstrates dynamic policy updates in action.</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
 >  <span data-ttu-id="81ecd-119">有关在此 SDK 中的所有示例的重要信息，请参阅[示例](../core/samples-in-the-sdk.md)。</span><span class="sxs-lookup"><span data-stu-id="81ecd-119">For important information about all samples in this SDK, see [Samples](../core/samples-in-the-sdk.md).</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="81ecd-120">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="81ecd-120">Where to Find This Sample</span></span>  
- <span data-ttu-id="81ecd-121">*\<示例路径\>*\Business Rules\Business 规则 Hello World2\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-121">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\\</span></span>  
+ <span data-ttu-id="81ecd-121">*\<示例路径\>* \Business Rules\Business 规则 Hello World2\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-121">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\\</span></span>  
   
  <span data-ttu-id="81ecd-122">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="81ecd-122">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="81ecd-146">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="81ecd-146">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="81ecd-147">*\<示例路径\>*\Business Rules\Business 规则 Hello World2\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-147">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\\</span></span>  
+     <span data-ttu-id="81ecd-147">*\<示例路径\>* \Business Rules\Business 规则 Hello World2\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-147">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\\</span></span>  
   
 2.  <span data-ttu-id="81ecd-148">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="81ecd-148">Run the file Setup.bat, which performs the following actions:</span></span>  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="81ecd-156">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="81ecd-156">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="81ecd-157">*\<示例路径\>*\Business Rules\Business 规则 Hello World2\bin\Debug\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-157">*\<Samples Path\>*\Business Rules\Business Rules Hello World2\bin\Debug\\</span></span>  
+     <span data-ttu-id="81ecd-157">*\<示例路径\>* \Business Rules\Business 规则 Hello World2\bin\Debug\\</span><span class="sxs-lookup"><span data-stu-id="81ecd-157">*\<Samples Path\>* \Business Rules\Business Rules Hello World2\bin\Debug\\</span></span>  
   
 2.  <span data-ttu-id="81ecd-158">在命令窗口中，键入此示例的文件的名称 (**BusinessRulesHelloWorld2.exe**)，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="81ecd-158">In the command window, type the name of the file for this sample (**BusinessRulesHelloWorld2.exe**), and then press ENTER.</span></span>  
   
@@ -133,9 +134,9 @@ Press the ENTER to continue after updating the policy...
   
 4.  <span data-ttu-id="81ecd-170">右键单击**SampleRuleSet**，然后单击**粘贴 （策略版本）**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-170">Right-click **SampleRuleSet**, and then click **Paste (Policy Version)**.</span></span>  
   
-5.  <span data-ttu-id="81ecd-171">可以更改规则条件和操作以满足需求。</span><span class="sxs-lookup"><span data-stu-id="81ecd-171">You can change the rule condition and action to meet your needs.</span></span> <span data-ttu-id="81ecd-172">有关此过程中，单击**规则 1**中**（不保存） 1.1 版**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-172">For this procedure, click **rule1** in **Version 1.1 (not saved)**.</span></span> <span data-ttu-id="81ecd-173">在右窗格中，右键单击**条件**，然后单击**添加不逻辑**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-173">In the right pane, right-click **Conditions**, and then click **Add Logical NOT**.</span></span> <span data-ttu-id="81ecd-174">添加**不逻辑**操作**不等于**以谓词相当于使用**相等**谓词。</span><span class="sxs-lookup"><span data-stu-id="81ecd-174">Adding a **Logical NOT** operation to **Not Equal** to predicate is equivalent to using an **Equal** predicate.</span></span>  
+5.  <span data-ttu-id="81ecd-171">可以更改规则条件和操作以满足需求。</span><span class="sxs-lookup"><span data-stu-id="81ecd-171">You can change the rule condition and action to meet your needs.</span></span> <span data-ttu-id="81ecd-172">有关此过程中，单击**规则 1**中 **（不保存） 1.1 版**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-172">For this procedure, click **rule1** in **Version 1.1 (not saved)**.</span></span> <span data-ttu-id="81ecd-173">在右窗格中，右键单击**条件**，然后单击**添加不逻辑**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-173">In the right pane, right-click **Conditions**, and then click **Add Logical NOT**.</span></span> <span data-ttu-id="81ecd-174">添加**不逻辑**操作**不等于**以谓词相当于使用**相等**谓词。</span><span class="sxs-lookup"><span data-stu-id="81ecd-174">Adding a **Logical NOT** operation to **Not Equal** to predicate is equivalent to using an **Equal** predicate.</span></span>  
   
-6.  <span data-ttu-id="81ecd-175">右键单击该节点**（不保存） 1.1 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-175">Right-click the node **Version 1.1(not saved)**, and then click **Save**.</span></span> <span data-ttu-id="81ecd-176">再次右键单击，并依次**发布**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-176">Right-click again, and then click **Publish**.</span></span> <span data-ttu-id="81ecd-177">右键单击第三次，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-177">Right-click a third time and click **Deploy**.</span></span>  
+6.  <span data-ttu-id="81ecd-175">右键单击该节点 **（不保存） 1.1 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-175">Right-click the node **Version 1.1(not saved)**, and then click **Save**.</span></span> <span data-ttu-id="81ecd-176">再次右键单击，并依次**发布**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-176">Right-click again, and then click **Publish**.</span></span> <span data-ttu-id="81ecd-177">右键单击第三次，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="81ecd-177">Right-click a third time and click **Deploy**.</span></span>  
   
 7.  <span data-ttu-id="81ecd-178">更新策略之后，在暂停的命令窗口中将让您按任意键继续，请按任意键。</span><span class="sxs-lookup"><span data-stu-id="81ecd-178">In the paused command window asking you to press any key to continue after updating the policy, press any key.</span></span>  
   

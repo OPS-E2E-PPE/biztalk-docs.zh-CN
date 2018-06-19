@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965259"
 ---
 # <a name="step-5-creating-the-fabrikam-3a2-trading-partner-agreement"></a><span data-ttu-id="60d4e-102">步骤 5： 创建 Fabrikam 3A2 贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="60d4e-102">Step 5: Creating the Fabrikam 3A2 Trading Partner Agreement</span></span>
 <span data-ttu-id="60d4e-103">在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Contoso 和 Fabrikam 之间的贸易合作伙伴协议，</span><span class="sxs-lookup"><span data-stu-id="60d4e-103">In this step, you create a trading partner agreement between Contoso and Fabrikam using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console.</span></span> <span data-ttu-id="60d4e-104">并为 3A2 合作伙伴接口流程 (PIP) 创建新的贸易合作伙伴协议。</span><span class="sxs-lookup"><span data-stu-id="60d4e-104">You create a new trading partner agreement for the 3A2 Partner Interface Process (PIP).</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="60d4e-116">**我的组织**</span><span class="sxs-lookup"><span data-stu-id="60d4e-116">**My Organization**</span></span>|<span data-ttu-id="60d4e-117">选择**Fabrikam**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-117">Select **Fabrikam** from the drop-down list.</span></span>|  
     |<span data-ttu-id="60d4e-118">**伙伴组织**</span><span class="sxs-lookup"><span data-stu-id="60d4e-118">**Partner Organization**</span></span>|<span data-ttu-id="60d4e-119">选择**Contoso**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-119">Select **Contoso** from the drop-down list.</span></span>|  
     |<span data-ttu-id="60d4e-120">**RNIF 版本**</span><span class="sxs-lookup"><span data-stu-id="60d4e-120">**RNIF Version**</span></span>|<span data-ttu-id="60d4e-121">选择**V02.00.01**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-121">Select **V02.00.01** from the drop-down list.</span></span>|  
-    |<span data-ttu-id="60d4e-122">**主角色**</span><span class="sxs-lookup"><span data-stu-id="60d4e-122">**Home Role**</span></span>|<span data-ttu-id="60d4e-123">选择**客户 （发起程序）**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-123">Select **Customer (Initiator)** from the drop-down list.</span></span>|  
+    |<span data-ttu-id="60d4e-122">**主角色**</span><span class="sxs-lookup"><span data-stu-id="60d4e-122">**Home Role**</span></span>|<span data-ttu-id="60d4e-123">选择**客户 （发起程序）** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-123">Select **Customer (Initiator)** from the drop-down list.</span></span>|  
     |<span data-ttu-id="60d4e-124">**用法**</span><span class="sxs-lookup"><span data-stu-id="60d4e-124">**Usage**</span></span>|<span data-ttu-id="60d4e-125">选择**测试**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="60d4e-125">Select **Test** from the drop-down list.</span></span>|  
   
 3.  <span data-ttu-id="60d4e-126">单击**端口**选项卡，然后执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="60d4e-126">Click the **Ports** tab, and then do the following:</span></span>  

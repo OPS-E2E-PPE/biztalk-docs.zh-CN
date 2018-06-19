@@ -1,17 +1,17 @@
 ---
-title: "为 Siebel 中 EXEC 语句的语法 |Microsoft 文档"
-ms.custom: 
+title: 为 Siebel 中 EXEC 语句的语法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - EXEC statement, syntax for
 - Data Provider for Siebel, EXEC statement
 ms.assetid: c5534102-bf37-4b39-83ab-e09483744c4d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963075"
 ---
 # <a name="syntax-for-an-exec-statement-in-siebel"></a><span data-ttu-id="9adf0-102">Siebel 中 EXEC 语句的的语法</span><span class="sxs-lookup"><span data-stu-id="9adf0-102">Syntax for an EXEC Statement in Siebel</span></span>
 <span data-ttu-id="9adf0-103">使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端还可以在执行运算 EXEC [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="9adf0-103">Using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], ADO.NET clients can also perform an EXEC operation on the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="9adf0-104">EXEC 语句的语法是：</span><span class="sxs-lookup"><span data-stu-id="9adf0-104">The syntax for the EXEC statement is:</span></span>  

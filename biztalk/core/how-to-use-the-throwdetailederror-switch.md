@@ -1,17 +1,17 @@
 ---
-title: "如何使用 ThrowDetailedError 交换机 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 ThrowDetailedError 交换机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, security
 - Web services, debugging
 ms.assetid: 8a8af3c0-a9a2-42fe-b0be-a5a106403747
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970315"
 ---
 # <a name="how-to-use-the-throwdetailederror-switch"></a><span data-ttu-id="b0e01-102">如何使用 ThrowDetailedError 开关</span><span class="sxs-lookup"><span data-stu-id="b0e01-102">How to Use the ThrowDetailedError Switch</span></span>
 <span data-ttu-id="b0e01-103">如果发生错误，Web 客户端接收泛型**SoapException**。</span><span class="sxs-lookup"><span data-stu-id="b0e01-103">If an error occurs, the Web client receives a generic **SoapException**.</span></span>  

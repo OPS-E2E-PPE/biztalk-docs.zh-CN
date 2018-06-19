@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960331"
 ---
 # <a name="preparing-to-use-the-tutorial"></a><span data-ttu-id="be7cc-102">准备使用本教程</span><span class="sxs-lookup"><span data-stu-id="be7cc-102">Preparing to Use the Tutorial</span></span>
 <span data-ttu-id="be7cc-103">在使用本教程之前，你需要创建一个 ADT^A03.txt 文件。</span><span class="sxs-lookup"><span data-stu-id="be7cc-103">Before you use the tutorial, you need to create an ADT^A03.txt file.</span></span>  

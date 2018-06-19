@@ -1,14 +1,14 @@
 ---
-title: "监视 SQL Server 代理作业和数据库 |Microsoft 文档"
-ms.custom: 
+title: 监视 SQL Server 代理作业和数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2eb5f318-10d3-4f43-991d-9bff2ebc20e2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299197"
 ---
 # <a name="monitoring-sql-server-agent-jobs-and-databases"></a><span data-ttu-id="b55a4-102">监视 SQL Server 代理作业和数据库</span><span class="sxs-lookup"><span data-stu-id="b55a4-102">Monitoring SQL Server Agent Jobs and Databases</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="b55a4-103">包含多个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]执行重要的功能使你的服务器操作和正常运行的代理作业。</span><span class="sxs-lookup"><span data-stu-id="b55a4-103"> includes multiple [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs that perform important functions to keep your servers operational and healthy.</span></span> <span data-ttu-id="b55a4-104">您应该监视这些作业的运行状况，确保它们无错运行。</span><span class="sxs-lookup"><span data-stu-id="b55a4-104">You should monitor the health of these jobs and ensure that they are running without errors.</span></span> <span data-ttu-id="b55a4-105">Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包包含用于监视 SQL 数据库之类的项的规则和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。</span><span class="sxs-lookup"><span data-stu-id="b55a4-105">The Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack contains rules for monitoring items such as SQL databases and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs.</span></span> <span data-ttu-id="b55a4-106">你应配置[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]用于全面监视的所有管理包[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。</span><span class="sxs-lookup"><span data-stu-id="b55a4-106">You should configure the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack for comprehensive monitoring of all [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent jobs.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "步骤 2： 创建 Fabrikam LOBWebApplication |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Fabrikam LOBWebApplication |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating LOBWebApplication
 - LOBWebApplication
 ms.assetid: 2ff8bd20-7fbc-4e16-b177-bb4afac7f7c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964323"
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a><span data-ttu-id="4decc-102">步骤 2： 创建 Fabrikam LOBWebApplication</span><span class="sxs-lookup"><span data-stu-id="4decc-102">Step 2: Creating the Fabrikam LOBWebApplication</span></span>
 <span data-ttu-id="4decc-103">在此步骤中，你将创建 Fabrikam 用于向 Contoso 提交 3A2 PIP 请求的 LOB 应用程序。</span><span class="sxs-lookup"><span data-stu-id="4decc-103">In this step, you create the LOB application that Fabrikam uses to submit a 3A2 PIP request to Contoso.</span></span> <span data-ttu-id="4decc-104">LOBWebApplication 项目安装在 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中。</span><span class="sxs-lookup"><span data-stu-id="4decc-104">The LOBWebApplication project is installed in the [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK.</span></span> <span data-ttu-id="4decc-105">若要运行 Web 应用程序，必须创建 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet 信息服务 (IIS) 虚拟目录，然后构建 LOBWebApplication 项目。</span><span class="sxs-lookup"><span data-stu-id="4decc-105">To run the Web application, you have to create a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Information Services (IIS) virtual directory and build the LOBWebApplication project.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="4decc-109">如果已完成双操作教程，则应已在该教程中创建了 LOBWebApplication 虚拟目录。</span><span class="sxs-lookup"><span data-stu-id="4decc-109">If you have already done the Double Action tutorial, you will already have created the LOBWebApplication virtual directory for that tutorial.</span></span> <span data-ttu-id="4decc-110">如果是这样，你无需执行这些步骤。</span><span class="sxs-lookup"><span data-stu-id="4decc-110">If so, you do not have to perform these steps.</span></span> <span data-ttu-id="4decc-111">但是，将需要更改从的虚拟目录的权限**运行脚本**到**读取**。</span><span class="sxs-lookup"><span data-stu-id="4decc-111">You will, however, have to change the permissions for the virtual directory from **Run scripts** to **Read**.</span></span>  
   
-2.  <span data-ttu-id="4decc-112">在 Internet 信息服务管理器中，展开**< 计算机名 > （本地计算机）**，然后展开**网站**。</span><span class="sxs-lookup"><span data-stu-id="4decc-112">In Internet Information Services Manager, expand **<computer_name> (local computer)**, and then expand **Web Sites**.</span></span>  
+2.  <span data-ttu-id="4decc-112">在 Internet 信息服务管理器中，展开 **< 计算机名 > （本地计算机）**，然后展开**网站**。</span><span class="sxs-lookup"><span data-stu-id="4decc-112">In Internet Information Services Manager, expand **<computer_name> (local computer)**, and then expand **Web Sites**.</span></span>  
   
 3.  <span data-ttu-id="4decc-113">右键单击**Default Web Site**，指向**新建**，然后单击**虚拟目录**。</span><span class="sxs-lookup"><span data-stu-id="4decc-113">Right-click **Default Web Site**, point to **New**, and then click **Virtual Directory**.</span></span>  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="4decc-135">在添加引用对话框中，单击**浏览**并转向**\<驱动器\>: files\microsoft BizTalk\<版本\>RosettaNet\bin 快捷键**.</span><span class="sxs-lookup"><span data-stu-id="4decc-135">In the Add Reference dialog box, click **Browse** and move to **\<drive\>:\Program Files\Microsoft  BizTalk \<version\> Accelerator for RosettaNet\bin**.</span></span>  
   
-6.  <span data-ttu-id="4decc-136">**选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集**，然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="4decc-136">**Select the Microsoft.Solutions.BTARN.ConfigurationManager.dll and Microsoft.Solutions.BTARN.Shared.dll** assemblies **and then click OK.**</span></span>  
+6.  <span data-ttu-id="4decc-136">**选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集 **，然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="4decc-136">**Select the Microsoft.Solutions.BTARN.ConfigurationManager.dll and Microsoft.Solutions.BTARN.Shared.dll** assemblies **and then click OK.**</span></span>  
   
 7.  <span data-ttu-id="4decc-137">上**生成**菜单上，单击**生成网站**。</span><span class="sxs-lookup"><span data-stu-id="4decc-137">On the **Build** menu, click **Build Web Site**.</span></span>  
   

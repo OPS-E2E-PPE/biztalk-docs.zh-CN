@@ -1,18 +1,18 @@
 ---
-title: "调用具有集成对象使用 Siebel 适配器的业务服务方法 |Microsoft 文档"
-ms.custom: 
+title: 调用具有集成对象使用 Siebel 适配器的业务服务方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - integration objects
 - how to, invoke business service methods with integration objects
 - business service methods, invoking with integration objects
 ms.assetid: ac0fa80a-3451-436e-8a1a-b6b5e93081e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962843"
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a><span data-ttu-id="b62f4-102">调用具有集成对象使用 Siebel 适配器的业务服务方法</span><span class="sxs-lookup"><span data-stu-id="b62f4-102">Invoke Business Service Methods with Integration Objects using the Siebel adapter</span></span>
 <span data-ttu-id="b62f4-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]使适配器客户端调用使用集成的对象的业务服务方法。</span><span class="sxs-lookup"><span data-stu-id="b62f4-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] enables adapter clients to invoke business service methods that work with integration objects.</span></span> <span data-ttu-id="b62f4-104">这些业务服务通常有 IN、 输出、 或的"层次结构"数据 IN OUT 参数键入发送或接收集成对象数据。</span><span class="sxs-lookup"><span data-stu-id="b62f4-104">These business services typically have IN, OUT, or IN OUT parameters of "hierarchy" data type to send or receive integration object data.</span></span>  

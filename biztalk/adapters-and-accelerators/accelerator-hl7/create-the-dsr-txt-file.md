@@ -1,14 +1,14 @@
 ---
-title: "创建 DSR.txt 文件 |Microsoft 文档"
-ms.custom: 
+title: 创建 DSR.txt 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6947af7-c5ce-4ee6-9fe9-5c1094d0aee0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960771"
 ---
 # <a name="create-the-dsrtxt-file"></a><span data-ttu-id="30c5e-102">创建 DSR.txt 文件</span><span class="sxs-lookup"><span data-stu-id="30c5e-102">Create the DSR.txt File</span></span>
 <span data-ttu-id="30c5e-103">使用以下过程创建响应 DSR.txt 消息文件。</span><span class="sxs-lookup"><span data-stu-id="30c5e-103">Use the following procedure to create the response DSR.txt message file.</span></span> <span data-ttu-id="30c5e-104">你将更高版本使用此文件来验证教程的方案。</span><span class="sxs-lookup"><span data-stu-id="30c5e-104">You will use this file later to verify the tutorial scenario.</span></span>  

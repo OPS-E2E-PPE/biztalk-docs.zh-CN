@@ -1,14 +1,14 @@
 ---
-title: "处理通知消息，以完成使用 BizTalk Server 的 Oracle 数据库中的特定任务 |Microsoft 文档"
-ms.custom: 
+title: 处理通知消息，以完成使用 BizTalk Server 的 Oracle 数据库中的特定任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 376055a7-98a6-4055-b6cd-2f5971349a6a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967867"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="0ce83-102">处理通知邮件完成使用 BizTalk Server 的 Oracle 数据库中的特定任务</span><span class="sxs-lookup"><span data-stu-id="0ce83-102">Process notification messages to complete specific tasks in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="0ce83-103">你可以使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收对 Oracle 数据库表的更改的通知。</span><span class="sxs-lookup"><span data-stu-id="0ce83-103">You can use the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive notifications for changes to the Oracle database tables.</span></span> <span data-ttu-id="0ce83-104">但是，该适配器仅向你发送通知某些记录已插入、 更新或删除某些数据库表中。</span><span class="sxs-lookup"><span data-stu-id="0ce83-104">However, the adapter only sends you a notification that some records were inserted, updated, or deleted in a certain database table.</span></span> <span data-ttu-id="0ce83-105">这些记录的任何后续处理必须由客户端应用程序本身进行处理。</span><span class="sxs-lookup"><span data-stu-id="0ce83-105">Any post-processing on those records must be handled by the client applications themselves.</span></span> <span data-ttu-id="0ce83-106">本主题提供有关如何处理表根据从 Oracle 数据库接收的通知的类型中记录的基于方案的说明。</span><span class="sxs-lookup"><span data-stu-id="0ce83-106">This topic presents a scenario-based description on how to process the records in the table based on the kind of notification received from the Oracle database.</span></span>  
@@ -244,8 +245,8 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
         |<span data-ttu-id="0ce83-311">绑定属性</span><span class="sxs-lookup"><span data-stu-id="0ce83-311">Binding Property</span></span>|<span data-ttu-id="0ce83-312">值</span><span class="sxs-lookup"><span data-stu-id="0ce83-312">Value</span></span>|  
         |----------------------|-----------|  
         |<span data-ttu-id="0ce83-313">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="0ce83-313">**InboundOperationType**</span></span>|<span data-ttu-id="0ce83-314">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="0ce83-314">Set this to **Notification**.</span></span>|  
-        |<span data-ttu-id="0ce83-315">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="0ce83-315">**NotificationPort**</span></span>|<span data-ttu-id="0ce83-316">指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。</span><span class="sxs-lookup"><span data-stu-id="0ce83-316">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="0ce83-317">将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="0ce83-317">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="0ce83-318">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。</span><span class="sxs-lookup"><span data-stu-id="0ce83-318">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span><br /><br /> <span data-ttu-id="0ce83-319">**重要说明：**如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="0ce83-319">**Important:** If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
-        |<span data-ttu-id="0ce83-320">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="0ce83-320">**NotificationStatement**</span></span>|<span data-ttu-id="0ce83-321">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="0ce83-321">Set this to:</span></span><br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> <span data-ttu-id="0ce83-322">**注意：**必须指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="0ce83-322">**Note:** You must specify the table name along with the schema name.</span></span> <span data-ttu-id="0ce83-323">例如， `SCOTT.ACCOUNTACTIVITY`。</span><span class="sxs-lookup"><span data-stu-id="0ce83-323">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
+        |<span data-ttu-id="0ce83-315">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="0ce83-315">**NotificationPort**</span></span>|<span data-ttu-id="0ce83-316">指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。</span><span class="sxs-lookup"><span data-stu-id="0ce83-316">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="0ce83-317">将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="0ce83-317">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="0ce83-318">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。</span><span class="sxs-lookup"><span data-stu-id="0ce83-318">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span><br /><br /> <span data-ttu-id="0ce83-319">**重要说明：** 如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="0ce83-319">**Important:** If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
+        |<span data-ttu-id="0ce83-320">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="0ce83-320">**NotificationStatement**</span></span>|<span data-ttu-id="0ce83-321">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="0ce83-321">Set this to:</span></span><br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> <span data-ttu-id="0ce83-322">**注意：** 必须指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="0ce83-322">**Note:** You must specify the table name along with the schema name.</span></span> <span data-ttu-id="0ce83-323">例如， `SCOTT.ACCOUNTACTIVITY`。</span><span class="sxs-lookup"><span data-stu-id="0ce83-323">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
         |<span data-ttu-id="0ce83-324">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="0ce83-324">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="0ce83-325">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="0ce83-325">Set this to **True**.</span></span>|  
   
          <span data-ttu-id="0ce83-326">有关不同的绑定属性的详细信息，请参阅[使用绑定属性](https://msdn.microsoft.com/library/dd788467.aspx)。</span><span class="sxs-lookup"><span data-stu-id="0ce83-326">For more information about the different binding properties, see [Working with binding properties](https://msdn.microsoft.com/library/dd788467.aspx).</span></span>  

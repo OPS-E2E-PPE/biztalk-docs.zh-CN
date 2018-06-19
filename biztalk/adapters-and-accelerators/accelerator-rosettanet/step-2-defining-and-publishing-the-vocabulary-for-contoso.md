@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 定义和 contoso 发布词汇 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 定义和 contoso 发布词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - vocabularies, creating
 - vocabularies, publishing
 - private process tutorial, creating vocabularies
 ms.assetid: e23880c0-772c-48c6-a6b5-32eb951527c8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211085"
 ---
 # <a name="step-2-defining-and-publishing-the-vocabulary-for-contoso"></a><span data-ttu-id="f25dd-102">步骤 2： 定义和 contoso 发布词汇</span><span class="sxs-lookup"><span data-stu-id="f25dd-102">Step 2: Defining and Publishing the Vocabulary for Contoso</span></span>
 <span data-ttu-id="f25dd-103">在此方案中，Contoso 将实现一个业务策略，该策略确保在出现紧急情况时始终有可用库存。</span><span class="sxs-lookup"><span data-stu-id="f25dd-103">In this scenario, Contoso implements a business policy that makes sure that inventory is always on hand if an emergency occurs.</span></span> <span data-ttu-id="f25dd-104">您将使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 中的业务规则编辑器来创建业务策略。</span><span class="sxs-lookup"><span data-stu-id="f25dd-104">You create business policies using the Business Rule Composer in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f25dd-105">在此步骤中，您将创建定义业务策略时所使用的词汇。</span><span class="sxs-lookup"><span data-stu-id="f25dd-105">In this step, you create the vocabulary to use when you define the business policy.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-a-constant-vocabulary-value"></a><span data-ttu-id="f25dd-111">定义词汇常数值</span><span class="sxs-lookup"><span data-stu-id="f25dd-111">To define a constant vocabulary value</span></span>  
   
-1.  <span data-ttu-id="f25dd-112">在业务规则编辑器，单击**3A2PriceAvailabilityVocabulary**，右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-112">In Business Rule Composer, click **3A2PriceAvailabilityVocabulary**, right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
+1.  <span data-ttu-id="f25dd-112">在业务规则编辑器，单击**3A2PriceAvailabilityVocabulary**，右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-112">In Business Rule Composer, click **3A2PriceAvailabilityVocabulary**, right-click **Version 1.0(not saved)**, and then click **Add New Definition**.</span></span>  
   
 2.  <span data-ttu-id="f25dd-113">上**词汇定义向导**页上，选择**常量值、 值的范围或设置的值**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-113">On the **Vocabulary Definition Wizard** page, select **Constant Value, Range of Values, or Set of Values**, and then click **Next**.</span></span>  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-an-xml-document-get-element"></a><span data-ttu-id="f25dd-116">定义 XML 文档的“Get”元素</span><span class="sxs-lookup"><span data-stu-id="f25dd-116">To define an XML document 'Get' element</span></span>  
   
-1.  <span data-ttu-id="f25dd-117">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="f25dd-117">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Add New Definition**.</span></span>  
+1.  <span data-ttu-id="f25dd-117">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="f25dd-117">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Add New Definition**.</span></span>  
   
 2.  <span data-ttu-id="f25dd-118">上**VocabularyDefinition 向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-118">On the **VocabularyDefinition Wizard** page, select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-an-xml-document-set-element"></a><span data-ttu-id="f25dd-124">定义 XML 文档的“Set”元素</span><span class="sxs-lookup"><span data-stu-id="f25dd-124">To define an XML document 'Set' element</span></span>  
   
-1.  <span data-ttu-id="f25dd-125">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="f25dd-125">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Add New Definition**.</span></span>  
+1.  <span data-ttu-id="f25dd-125">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="f25dd-125">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Add New Definition**.</span></span>  
   
 2.  <span data-ttu-id="f25dd-126">上**VocabularyDefinition 向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-126">On the **VocabularyDefinition Wizard** page, select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-and-publish-the-vocabulary"></a><span data-ttu-id="f25dd-134">保存和发布词汇</span><span class="sxs-lookup"><span data-stu-id="f25dd-134">To save and publish the vocabulary</span></span>  
   
-1.  <span data-ttu-id="f25dd-135">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-135">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Save**.</span></span>  
+1.  <span data-ttu-id="f25dd-135">在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-135">In Business Rule Composer, in the Facts Explorer pane, right-click **Version 1.0 (not saved)** under **3A2PriceAvailabilityVocabulary**, and then click **Save**.</span></span>  
   
 2.  <span data-ttu-id="f25dd-136">右键单击该相同**版本 1.0**节点，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="f25dd-136">Right-click that same **Version 1.0** node and then click **Publish**.</span></span>  
   

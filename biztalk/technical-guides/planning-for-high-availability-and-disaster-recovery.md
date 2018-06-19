@@ -1,14 +1,14 @@
 ---
-title: "规划高可用性和灾难恢复 |Microsoft 文档"
-ms.custom: 
+title: 规划高可用性和灾难恢复 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7efba36-6d9c-4ae0-a4f5-893eb5d62a05
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302021"
 ---
 # <a name="planning-for-high-availability-and-disaster-recovery"></a><span data-ttu-id="0eda6-102">规划高可用性和灾难恢复</span><span class="sxs-lookup"><span data-stu-id="0eda6-102">Planning for High Availability and Disaster Recovery</span></span>
 <span data-ttu-id="0eda6-103">使用开发的解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常是执行关键任务的企业级应用程序需要最高的可用性。</span><span class="sxs-lookup"><span data-stu-id="0eda6-103">Solutions developed with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are often mission-critical enterprise-level applications that require maximum availability.</span></span> <span data-ttu-id="0eda6-104">这些解决方案都放到生产环境后，可以用每秒千美元估算停机时间与关联的成本。</span><span class="sxs-lookup"><span data-stu-id="0eda6-104">When these solutions are placed into production, costs associated with downtime can be measured in thousands of dollars per second.</span></span> <span data-ttu-id="0eda6-105">为此，你应采用的特定策略，以便最大化的高可用性和灾难恢复功能附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]依赖软件和支持所需的硬件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。</span><span class="sxs-lookup"><span data-stu-id="0eda6-105">For this reason, you should employ specific strategies to maximize the high availability and disaster recovery capabilities that are available with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the dependency software and hardware required to support a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  

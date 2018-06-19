@@ -1,11 +1,11 @@
 ---
-title: "添加 Web 引用 |Microsoft 文档"
-ms.custom: 
+title: 添加 Web 引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL, orchestrations
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web services, references
 - projects, Web services
 ms.assetid: 7e40f215-f11a-4151-bcc6-e107bf36b6f6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964763"
 ---
 # <a name="adding-web-references"></a><span data-ttu-id="3a8b3-102">添加 Web 引用</span><span class="sxs-lookup"><span data-stu-id="3a8b3-102">Adding Web References</span></span>
 <span data-ttu-id="3a8b3-103">在添加 Web 端口之前，需要向 BizTalk 项目添加 Web 引用。</span><span class="sxs-lookup"><span data-stu-id="3a8b3-103">Before you can add a Web port, you need to add a Web reference to your BizTalk project.</span></span> <span data-ttu-id="3a8b3-104">Web 引用是对可用于你的项目的 Web Services 的说明。</span><span class="sxs-lookup"><span data-stu-id="3a8b3-104">A Web reference is a description of a Web service that is available to your project.</span></span> <span data-ttu-id="3a8b3-105">BizTalk 项目添加到你的项目的 Web 引用时，创建业务流程 Web 端口类型，Web 消息类型，（映射文件） Reference.map、 Reference.odx （orchestration 文件）、 \< *WebService*\>。disco （发现文件） 和\< *WebService*\>.wsdl （Web 服务描述语言文件） 到你的项目。</span><span class="sxs-lookup"><span data-stu-id="3a8b3-105">When you add a Web reference to your project, BizTalk project creates an orchestration Web port type, Web message types, Reference.map (map file), Reference.odx (orchestration file), \<*WebService*\>.disco (discovery file), and \<*WebService*\>.wsdl (Web Service Description Language file) to your project.</span></span> <span data-ttu-id="3a8b3-106">如果 Web Services 描述语言 (WSDL) 文件包含架构 Web 消息类型，则 BizTalk 项目会向你的项目添加 Reference.xsd。</span><span class="sxs-lookup"><span data-stu-id="3a8b3-106">If your Web Service Description Language (WSDL) file contains schema Web message types, BizTalk project adds Reference.xsd to your project.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何标记 BizTalk Server 数据库的自定义监视 |Microsoft 文档"
-ms.custom: 
+title: 如何标记 BizTalk Server 数据库的自定义监视 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfbdc73d-a108-42ee-a5d8-401d5bfe5e7d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298237"
 ---
 # <a name="how-to-mark-biztalk-server-databases-for-customized-monitoring"></a><span data-ttu-id="6b03f-102">如何将 BizTalk Server 数据库标记为自定义监视</span><span class="sxs-lookup"><span data-stu-id="6b03f-102">How to Mark BizTalk Server Databases for Customized Monitoring</span></span>
 <span data-ttu-id="6b03f-103">如果你已安装 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包，你可以自定义的方式[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]监视数据库。</span><span class="sxs-lookup"><span data-stu-id="6b03f-103">If you have installed the Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack, you can customize the way [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases are monitored.</span></span> <span data-ttu-id="6b03f-104">这样可确保[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包监视以下[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库：</span><span class="sxs-lookup"><span data-stu-id="6b03f-104">This ensures that the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Management Pack monitors the following [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases:</span></span>  

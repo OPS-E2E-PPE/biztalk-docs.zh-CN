@@ -1,11 +1,11 @@
 ---
-title: "如何配置虚拟目录 |Microsoft 文档"
-ms.custom: 
+title: 如何配置虚拟目录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directory, configuring
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, verifying for users
 - verifying applications for users
 ms.assetid: 3da16524-8238-426a-88f8-434be5992e13
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969003"
 ---
 # <a name="how-to-configure-the-virtual-directory"></a><span data-ttu-id="9a18e-102">如何配置虚拟目录</span><span class="sxs-lookup"><span data-stu-id="9a18e-102">How to Configure the Virtual Directory</span></span>
 <span data-ttu-id="9a18e-103">本主题介绍配置虚拟目录和验证用户的应用程序的过程。</span><span class="sxs-lookup"><span data-stu-id="9a18e-103">This topic describes the procedures for configuring the virtual directory and verifying the application for a user.</span></span>  
@@ -32,13 +33,13 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="9a18e-106">单击**启动**，指向**程序**，单击**管理工具**，然后单击**Internet Information Services (IIS) Manager**。</span><span class="sxs-lookup"><span data-stu-id="9a18e-106">Click **Start**, point to **Programs**, click **Administrative Tools**, and click **Internet Information Services (IIS) Manager**.</span></span>  
   
-3.  <span data-ttu-id="9a18e-107">展开**\<服务器名称\>**然后展开**站点**。</span><span class="sxs-lookup"><span data-stu-id="9a18e-107">Expand **\<server name\>** and then expand **Sites**.</span></span>  
+3.  <span data-ttu-id="9a18e-107">展开**\<服务器名称\>** 然后展开**站点**。</span><span class="sxs-lookup"><span data-stu-id="9a18e-107">Expand **\<server name\>** and then expand **Sites**.</span></span>  
   
 4.  <span data-ttu-id="9a18e-108">右键单击**Default Web Site**单击**添加虚拟目录**。</span><span class="sxs-lookup"><span data-stu-id="9a18e-108">Right-click **Default Web Site** and click **Add Virtual Directory**.</span></span>  
   
 5.  <span data-ttu-id="9a18e-109">在**添加虚拟目录**对话框框中，键入别名。</span><span class="sxs-lookup"><span data-stu-id="9a18e-109">In the **Add Virtual Directory** dialog box, type the alias.</span></span>  
   
-6.  <span data-ttu-id="9a18e-110">键入在步骤 1 中创建的文件夹的路径。</span><span class="sxs-lookup"><span data-stu-id="9a18e-110">Type the path of the folder created in step 1.</span></span> <span data-ttu-id="9a18e-111">或者，单击**（...）**以浏览到文件夹位置。</span><span class="sxs-lookup"><span data-stu-id="9a18e-111">Alternatively, click **(…)** to browse to the folder location.</span></span>  
+6.  <span data-ttu-id="9a18e-110">键入在步骤 1 中创建的文件夹的路径。</span><span class="sxs-lookup"><span data-stu-id="9a18e-110">Type the path of the folder created in step 1.</span></span> <span data-ttu-id="9a18e-111">或者，单击 **（...）** 以浏览到文件夹位置。</span><span class="sxs-lookup"><span data-stu-id="9a18e-111">Alternatively, click **(…)** to browse to the folder location.</span></span>  
   
 7.  <span data-ttu-id="9a18e-112">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="9a18e-112">Click **OK**.</span></span> <span data-ttu-id="9a18e-113">该文件夹将显示下**Default Web Site**文件夹。</span><span class="sxs-lookup"><span data-stu-id="9a18e-113">The folder is displayed under the **Default Web Site** folder.</span></span>  
   

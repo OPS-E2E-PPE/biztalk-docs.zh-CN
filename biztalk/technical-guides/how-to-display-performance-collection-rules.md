@@ -1,14 +1,14 @@
 ---
-title: "如何显示性能收集规则 |Microsoft 文档"
-ms.custom: 
+title: 如何显示性能收集规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 546aa853-c372-4e26-a1ed-19294c658583
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298181"
 ---
 # <a name="how-to-display-performance-collection-rules"></a><span data-ttu-id="a843a-102">如何显示性能收集规则</span><span class="sxs-lookup"><span data-stu-id="a843a-102">How to Display Performance Collection Rules</span></span>
 <span data-ttu-id="a843a-103">若要显示性能收集规则，使用此部分中的脚本。</span><span class="sxs-lookup"><span data-stu-id="a843a-103">To display performance collection rules, use the script in this section.</span></span> <span data-ttu-id="a843a-104">此脚本适用于大多数规则。</span><span class="sxs-lookup"><span data-stu-id="a843a-104">This script works for the majority of rules.</span></span> <span data-ttu-id="a843a-105">它创建一个.csv 文件，包括下表中列出的列，并可以使用 Office Excel 查看。</span><span class="sxs-lookup"><span data-stu-id="a843a-105">It creates a .csv file that includes the columns listed in the following table, and can be viewed using Office Excel.</span></span>  

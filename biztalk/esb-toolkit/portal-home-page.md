@@ -1,14 +1,14 @@
 ---
-title: "门户主页上 |Microsoft 文档"
-ms.custom: 
+title: 门户主页上 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60072c30-d57b-4bd8-a7ee-b4d0fa50de58
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295037"
 ---
 # <a name="portal-home-page"></a><span data-ttu-id="ca25b-102">门户主页</span><span class="sxs-lookup"><span data-stu-id="ca25b-102">Portal Home Page</span></span>
 <span data-ttu-id="ca25b-103">图 1 显示主页，其中包含四个部分：</span><span class="sxs-lookup"><span data-stu-id="ca25b-103">Figure 1 shows the Home page, which contains four sections:</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="ca25b-113">当你首次加载主页上时，你可能无法看到的第一个图表中的任何应用程序。</span><span class="sxs-lookup"><span data-stu-id="ca25b-113">When you first load the Home page, you may not see any applications in the first chart.</span></span> <span data-ttu-id="ca25b-114">若要选择你想要查看的信息的应用程序，请单击**选择应用程序**链接上方的第一个图表，然后选择或清除复选框中显示的已安装 BizTalk 应用程序的列表。</span><span class="sxs-lookup"><span data-stu-id="ca25b-114">To select the applications for which you want to view information, click the **Select Applications** link above the first chart, and then select or clear the check boxes in the list of installed BizTalk applications that appears.</span></span> <span data-ttu-id="ca25b-115">你也可以使用显示选择所有或应用程序的任何链接。</span><span class="sxs-lookup"><span data-stu-id="ca25b-115">You can also use the links that appear to select all or none of the applications.</span></span> <span data-ttu-id="ca25b-116">单击**保存**以显示所选应用程序的信息或单击**取消**放弃所做的更改。</span><span class="sxs-lookup"><span data-stu-id="ca25b-116">Click **Save** to show the information for the selected applications, or click **Cancel** to abandon your changes.</span></span> <span data-ttu-id="ca25b-117">你可以更改应用程序的默认列表上[门户我设置页](../esb-toolkit/portal-my-settings-page.md)。</span><span class="sxs-lookup"><span data-stu-id="ca25b-117">You can change the default list of applications on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   
--   <span data-ttu-id="ca25b-118">若要更改时间为其门户显示的信息，请更改第一个图表上方的下拉列表中的设置。</span><span class="sxs-lookup"><span data-stu-id="ca25b-118">To change the period for which the portal displays information, change the setting in the drop-down list above the first chart.</span></span> <span data-ttu-id="ca25b-119">你可以选择显示信息之前**小时、 天、 周，**或**月**。</span><span class="sxs-lookup"><span data-stu-id="ca25b-119">You can chose to display information for the previous **Hour, Day, Week,** or **Month**.</span></span> <span data-ttu-id="ca25b-120">你可以上更改的默认期限[门户我设置页](../esb-toolkit/portal-my-settings-page.md)。</span><span class="sxs-lookup"><span data-stu-id="ca25b-120">You can change the default period on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
+-   <span data-ttu-id="ca25b-118">若要更改时间为其门户显示的信息，请更改第一个图表上方的下拉列表中的设置。</span><span class="sxs-lookup"><span data-stu-id="ca25b-118">To change the period for which the portal displays information, change the setting in the drop-down list above the first chart.</span></span> <span data-ttu-id="ca25b-119">你可以选择显示信息之前**小时、 天、 周，** 或**月**。</span><span class="sxs-lookup"><span data-stu-id="ca25b-119">You can chose to display information for the previous **Hour, Day, Week,** or **Month**.</span></span> <span data-ttu-id="ca25b-120">你可以上更改的默认期限[门户我设置页](../esb-toolkit/portal-my-settings-page.md)。</span><span class="sxs-lookup"><span data-stu-id="ca25b-120">You can change the default period on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   
 -   <span data-ttu-id="ca25b-121">若要打开或关闭自动发布 UDDI 条目，请单击**更改**顶部的链接**注册表**页的部分。</span><span class="sxs-lookup"><span data-stu-id="ca25b-121">To turn on or turn off auto-publishing of UDDI entries, click the **Change** link at the top of the **Registry** section of the page.</span></span> <span data-ttu-id="ca25b-122">这将打开[注册表设置页](../esb-toolkit/registry-settings-page.md)，其中指定以下：</span><span class="sxs-lookup"><span data-stu-id="ca25b-122">This opens the [Registry Settings Page](../esb-toolkit/registry-settings-page.md), where you specify the following:</span></span>  
   

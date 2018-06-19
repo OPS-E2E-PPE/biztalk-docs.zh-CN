@@ -1,11 +1,11 @@
 ---
-title: "消息批处理 |Microsoft 文档"
-ms.custom: 
+title: 消息批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, batching
 - batching, messages
 ms.assetid: d852cf00-3882-4f0f-a4c3-2a39483710ee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204645"
 ---
 # <a name="message-batching"></a><span data-ttu-id="a08c0-102">消息批处理</span><span class="sxs-lookup"><span data-stu-id="a08c0-102">Message Batching</span></span>
 <span data-ttu-id="a08c0-103">协议标准、 计划问题或消息大小限制可能会促使对消息进行批处理的需求。</span><span class="sxs-lookup"><span data-stu-id="a08c0-103">Protocol standards, scheduling issues, or message size limitations may motivate the need to batch messages.</span></span> <span data-ttu-id="a08c0-104">运行状况级别七 (HL7) 批处理包含包围在 HL7 批处理标头和批处理尾的消息。</span><span class="sxs-lookup"><span data-stu-id="a08c0-104">A Health Level Seven (HL7) batch consists of messages enclosed by an HL7 batch header and batch trailer.</span></span> <span data-ttu-id="a08c0-105">消息分隔符分隔批处理中的单个消息。</span><span class="sxs-lookup"><span data-stu-id="a08c0-105">Message separators separate the individual messages within the batch.</span></span>  

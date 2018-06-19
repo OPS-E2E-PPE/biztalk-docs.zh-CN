@@ -1,18 +1,18 @@
 ---
-title: "如何配置 SSO 票证 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 SSO 票证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO], configuring tickets
 - SSO, tickets
 - tickets [SSO], configuring
 ms.assetid: 32f0384b-ac79-4cce-b3f5-f4f8a73a673a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968643"
 ---
 # <a name="how-to-configure-the-sso-tickets"></a><span data-ttu-id="8932e-102">如何配置 SSO 票证</span><span class="sxs-lookup"><span data-stu-id="8932e-102">How to Configure the SSO Tickets</span></span>
 <span data-ttu-id="8932e-103">可使用 MMC 管理单元或命令行对整个单一登录系统的票证行为进行控制，包括是否允许使用票证、系统是否必须验证票证。</span><span class="sxs-lookup"><span data-stu-id="8932e-103">You can use the MMC Snap-In or the command line to control ticket behavior for the entire Single Sign-On system, including whether to allow tickets, and whether the system must validate the tickets.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="8932e-124">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="8932e-124">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="8932e-125">默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="8932e-125">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="8932e-126">类型**ssomanage-票证\<允许是/否\> *\<验证是/否\>***，其中*\<允许是/否\>* 指示或不是，是否将允许票证和*\<验证是/否\>*指示票证是否将需要进行验证后它们兑换.</span><span class="sxs-lookup"><span data-stu-id="8932e-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>***, where *\<allowed yes/no\>* indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
+3.  <span data-ttu-id="8932e-126">类型**ssomanage-票证\<允许是/否\> *\<验证是/否\>***，其中*\<允许是/否\>* 指示或不是，是否将允许票证和*\<验证是/否\>* 指示票证是否将需要进行验证后它们兑换.</span><span class="sxs-lookup"><span data-stu-id="8932e-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>***, where *\<allowed yes/no\>* indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="8932e-127">可使用 Yes、No、On 或 Off 指示是否允许使用和/或验证票证。</span><span class="sxs-lookup"><span data-stu-id="8932e-127">You can use yes, no, on, or off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="8932e-128">这些词不区分大小写，必须在任何语言设置下都能使用。</span><span class="sxs-lookup"><span data-stu-id="8932e-128">These words are case independent, and must be used regardless of your language settings.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "测试结果： 内存关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 测试结果： 内存关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 224c40e5-08a7-4d30-b03a-4b6add5cde1f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301869"
 ---
 # <a name="test-results-memory-key-performance-indicators"></a><span data-ttu-id="ad9dd-102">测试结果： 内存关键绩效指标</span><span class="sxs-lookup"><span data-stu-id="ad9dd-102">Test Results: Memory Key Performance Indicators</span></span>
 <span data-ttu-id="ad9dd-103">本主题总结了内存关键绩效指标 (KPI) 的测试方案期间观察到。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-103">This topic summarizes Memory Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="ad9dd-104">这些测试计算由可用内存**\Memory\Available Mbytes**性能监视器计数器。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-104">These tests evaluated available memory as measured by the **\Memory\Available Mbytes** performance monitor counter.</span></span>  
   
 ## <a name="summary-of-memory-key-performance-indicators"></a><span data-ttu-id="ad9dd-105">内存关键绩效指标的摘要</span><span class="sxs-lookup"><span data-stu-id="ad9dd-105">Summary of Memory Key Performance Indicators</span></span>  
- <span data-ttu-id="ad9dd-106">**比较内存关键绩效指标 –**的总内存供 SQL Server 和 BizTalk Server 测量**\Memory\Available Mbytes**所有性能监视器计数器是相当一致测试方案。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-106">**Comparison of Memory Key Performance Indicators –** Total memory available to SQL Server and BizTalk Server as measured by the **\Memory\Available Mbytes** performance monitor counter was fairly consistent across all test scenarios.</span></span> <span data-ttu-id="ad9dd-107">中可用的平均内存到物理 BizTalk Server 计算机以及可用于虚拟机上运行的 BizTalk Server 计算机的平均内存的区别是因为，两个物理 BizTalk Server 计算机用于测试时三个虚拟机上运行的 BizTalk Server 计算机已用于测试。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-107">The difference in the average memory available to the physical BizTalk Server computers and the average memory available to the BizTalk Server computers running on virtual machines is due to the fact that two physical BizTalk Server computers were used for testing while three BizTalk Server computers running on virtual machines were used for testing.</span></span>  
+ <span data-ttu-id="ad9dd-106">**比较内存关键绩效指标 –** 的总内存供 SQL Server 和 BizTalk Server 测量**\Memory\Available Mbytes**所有性能监视器计数器是相当一致测试方案。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-106">**Comparison of Memory Key Performance Indicators –** Total memory available to SQL Server and BizTalk Server as measured by the **\Memory\Available Mbytes** performance monitor counter was fairly consistent across all test scenarios.</span></span> <span data-ttu-id="ad9dd-107">中可用的平均内存到物理 BizTalk Server 计算机以及可用于虚拟机上运行的 BizTalk Server 计算机的平均内存的区别是因为，两个物理 BizTalk Server 计算机用于测试时三个虚拟机上运行的 BizTalk Server 计算机已用于测试。</span><span class="sxs-lookup"><span data-stu-id="ad9dd-107">The difference in the average memory available to the physical BizTalk Server computers and the average memory available to the BizTalk Server computers running on virtual machines is due to the fact that two physical BizTalk Server computers were used for testing while three BizTalk Server computers running on virtual machines were used for testing.</span></span>  
   
  <span data-ttu-id="ad9dd-108">下图阐释了在不同的测试平台上的内存性能：</span><span class="sxs-lookup"><span data-stu-id="ad9dd-108">The graphic below illustrates Memory performance on the various test platforms:</span></span>  
   

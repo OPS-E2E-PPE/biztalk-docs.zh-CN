@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964291"
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a><span data-ttu-id="91242-102">SAP 适配器中 SAPConnection 类</span><span class="sxs-lookup"><span data-stu-id="91242-102">SAPConnection class in the SAP adapter</span></span>
 <span data-ttu-id="91242-103">以下部分列出的方法和属性**SAPConnection**类。</span><span class="sxs-lookup"><span data-stu-id="91242-103">The following section lists the methods and properties for the **SAPConnection** class.</span></span> <span data-ttu-id="91242-104">这表示与 SAP 应用程序服务器的 ADO.NET 连接。</span><span class="sxs-lookup"><span data-stu-id="91242-104">This represents an ADO.NET connection to the SAP application server.</span></span>  

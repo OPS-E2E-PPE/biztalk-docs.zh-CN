@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968827"
 ---
 # <a name="how-to-add-orchestration-variables"></a><span data-ttu-id="95547-102">如何添加业务流程变量</span><span class="sxs-lookup"><span data-stu-id="95547-102">How to Add Orchestration Variables</span></span>
 <span data-ttu-id="95547-103">业务流程视图窗口可以管理业务流程的属性 (也称为**服务**属性)，参数、 端口、 消息以及其他变量。</span><span class="sxs-lookup"><span data-stu-id="95547-103">The Orchestration View window enables you to manage an orchestration's properties (also known as **Service** properties), parameters, ports, messages, and other variables.</span></span> <span data-ttu-id="95547-104">除了端口和消息，您还可以创建整数变量、布尔型变量、字符串变量或 .NET 类的变量。</span><span class="sxs-lookup"><span data-stu-id="95547-104">In addition to ports and messages, you can create integer variables, Boolean variables, string variables, or variables of a .NET class.</span></span>  

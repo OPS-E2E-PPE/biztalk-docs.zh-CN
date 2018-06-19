@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试迁移使用的应用程序的 SQL 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试迁移使用的应用程序的 SQL 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 929ce2f3-94ed-4e12-b629-e229769f825a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964019"
 ---
 # <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a><span data-ttu-id="24532-102">步骤 3： 测试迁移使用的应用程序的 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="24532-102">Step 3: Test the Migrated Application that uses the SQL adapter</span></span>
 <span data-ttu-id="24532-103">![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="24532-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
  <span data-ttu-id="24532-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="24532-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="24532-105">**目标：**在此步骤中，将测试已迁移应用程序，通过执行对 Customer 表的插入操作。</span><span class="sxs-lookup"><span data-stu-id="24532-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="24532-106">若要执行此操作，你可以删除符合架构使用 vPrev 生成的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+ <span data-ttu-id="24532-105">**目标：** 在此步骤中，将测试已迁移应用程序，通过执行对 Customer 表的插入操作。</span><span class="sxs-lookup"><span data-stu-id="24532-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="24532-106">若要执行此操作，你可以删除符合架构使用 vPrev 生成的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="24532-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="24532-107">Prerequisites</span></span>  
   

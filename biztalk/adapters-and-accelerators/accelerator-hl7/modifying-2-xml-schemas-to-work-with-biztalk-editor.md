@@ -1,17 +1,17 @@
 ---
-title: "修改 2.XML 架构，以使用 BizTalk 编辑器 |Microsoft 文档"
-ms.custom: 
+title: 修改 2.XML 架构，以使用 BizTalk 编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.XML schemas, modifying
 - modifying, 2.XML schemas
 ms.assetid: 07316826-84b6-494e-81b9-f64a3d46ffb0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206101"
 ---
 # <a name="modifying-2xml-schemas-to-work-with-biztalk-editor"></a><span data-ttu-id="c8fef-102">修改要使用 BizTalk 编辑器的 2.XML 架构</span><span class="sxs-lookup"><span data-stu-id="c8fef-102">Modifying 2.XML Schemas to Work with BizTalk Editor</span></span>
 <span data-ttu-id="c8fef-103">HL7 2.XML 架构需要进行修改以正确使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])。</span><span class="sxs-lookup"><span data-stu-id="c8fef-103">HL7 2.XML schemas require modification to work properly with [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]).</span></span> <span data-ttu-id="c8fef-104">下面描述如何修改 HL7 V2。要使您能够使用它们使用 BizTalk 编辑器的 XML 架构。</span><span class="sxs-lookup"><span data-stu-id="c8fef-104">The following describes how to modify HL7 V2.XML schemas to enable you to use them with BizTalk Editor.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 >  <span data-ttu-id="c8fef-105">Update2XMLSchema 工具会自动执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="c8fef-105">The Update2XMLSchema tool performs these steps automatically.</span></span> <span data-ttu-id="c8fef-106">请参阅[Update2XMLSchema 工具](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)有关详细信息。</span><span class="sxs-lookup"><span data-stu-id="c8fef-106">See [Update2XMLSchema Tool](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md) for more information.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c8fef-107">**Nillable**属性会导致在元素上的架构。</span><span class="sxs-lookup"><span data-stu-id="c8fef-107">The **nillable** attribute can occur in a schema on an element.</span></span> <span data-ttu-id="c8fef-108">如果设置为**true**，它指示父元素的实例可以具有**xsi: nil ="true"**属性。</span><span class="sxs-lookup"><span data-stu-id="c8fef-108">If set to **true**, it indicates that the instance of the parent element can have an **xsi:nil="true"** attribute.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="c8fef-109">在编译和分析/序列化期间，将忽略此属性。</span><span class="sxs-lookup"><span data-stu-id="c8fef-109"> ignores this attribute during compilation and during parsing/serialization.</span></span>  
+>  <span data-ttu-id="c8fef-107">**Nillable**属性会导致在元素上的架构。</span><span class="sxs-lookup"><span data-stu-id="c8fef-107">The **nillable** attribute can occur in a schema on an element.</span></span> <span data-ttu-id="c8fef-108">如果设置为**true**，它指示父元素的实例可以具有**xsi: nil ="true"** 属性。</span><span class="sxs-lookup"><span data-stu-id="c8fef-108">If set to **true**, it indicates that the instance of the parent element can have an **xsi:nil="true"** attribute.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="c8fef-109">在编译和分析/序列化期间，将忽略此属性。</span><span class="sxs-lookup"><span data-stu-id="c8fef-109"> ignores this attribute during compilation and during parsing/serialization.</span></span>  
   
 ### <a name="to-modify-2xml-schemas"></a><span data-ttu-id="c8fef-110">若要修改 2.XML 架构</span><span class="sxs-lookup"><span data-stu-id="c8fef-110">To modify 2.XML schemas</span></span>  
   

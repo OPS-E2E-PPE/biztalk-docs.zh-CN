@@ -1,11 +1,11 @@
 ---
-title: "Double 操作教程 |Microsoft 文档"
-ms.custom: 
+title: Double 操作教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, PIPs
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - PIPs, tutorials
 - tutorials, double action tutorial
 ms.assetid: b692c043-82ef-46f4-8683-7ae1fd6e4421
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210117"
 ---
 # <a name="double-action-tutorial"></a><span data-ttu-id="9f618-102">Double 操作教程</span><span class="sxs-lookup"><span data-stu-id="9f618-102">Double Action Tutorial</span></span>
 <span data-ttu-id="9f618-103">本教程介绍如何使用端到端解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="9f618-103">This tutorial covers an end-to-end solution using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="9f618-104">本教程详述了通过在两个虚构的公司：Contoso（供应商组织）和 Fabrikam（买方组织）之间创建贸易合作伙伴方案来实现 RosettaNet 兼容解决方案时，应该遵循的步骤。</span><span class="sxs-lookup"><span data-stu-id="9f618-104">The tutorial details the steps that you have to follow to implement a RosettaNet-compliant solution by creating a trading partner scenario between two fictitious companies: Contoso, the supplier organization, and Fabrikam, the buyer organization.</span></span>  

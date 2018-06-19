@@ -1,14 +1,14 @@
 ---
-title: "使用适用于 SAP 的数据提供程序来创建报表服务器项目 |Microsoft 文档"
-ms.custom: 
+title: 使用适用于 SAP 的数据提供程序来创建报表服务器项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe985b5-ba67-4179-a31c-4f41106c32be
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962755"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a><span data-ttu-id="f9546-102">使用适用于 SAP 的数据提供程序来创建报表服务器项目</span><span class="sxs-lookup"><span data-stu-id="f9546-102">Use the Data Provider for SAP to Create a Report Server Project</span></span>
 <span data-ttu-id="f9546-103">你必须创建报表服务器项目，使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，若要为 SAP 系统中可用的数据生成报表。</span><span class="sxs-lookup"><span data-stu-id="f9546-103">You must create a Report Server project, using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], to generate reports for the data available in an SAP system.</span></span> <span data-ttu-id="f9546-104">本主题将说明了如何创建报表服务器项目。</span><span class="sxs-lookup"><span data-stu-id="f9546-104">This topic provides instructions on how to create a Report Server project.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
         |<span data-ttu-id="f9546-126">使用此选项</span><span class="sxs-lookup"><span data-stu-id="f9546-126">Use this</span></span>|<span data-ttu-id="f9546-127">执行的操作</span><span class="sxs-lookup"><span data-stu-id="f9546-127">To do this</span></span>|  
         |--------------|----------------|  
         |<span data-ttu-id="f9546-128">**使用特定用户名和密码**</span><span class="sxs-lookup"><span data-stu-id="f9546-128">**Use a specific user name and password**</span></span>|<span data-ttu-id="f9546-129">指定用户名和密码以连接到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="f9546-129">Specify a user name and password to connect to the SAP system.</span></span>|  
-        |<span data-ttu-id="f9546-130">**提示输入凭据**</span><span class="sxs-lookup"><span data-stu-id="f9546-130">**Prompt for credentials**</span></span>|<span data-ttu-id="f9546-131">生成报表时，应输入 SAP 系统的凭据。</span><span class="sxs-lookup"><span data-stu-id="f9546-131">Enter the credentials for the SAP system while the report is generated.</span></span> <span data-ttu-id="f9546-132">**注意：**凭据指定为此选项将替代凭据，如果指定，作为连接字符串的一部分。</span><span class="sxs-lookup"><span data-stu-id="f9546-132">**Note:**  The credentials you specify for this option will override the credentials, if specified, as part of the connection string.</span></span>|  
+        |<span data-ttu-id="f9546-130">**提示输入凭据**</span><span class="sxs-lookup"><span data-stu-id="f9546-130">**Prompt for credentials**</span></span>|<span data-ttu-id="f9546-131">生成报表时，应输入 SAP 系统的凭据。</span><span class="sxs-lookup"><span data-stu-id="f9546-131">Enter the credentials for the SAP system while the report is generated.</span></span> <span data-ttu-id="f9546-132">**注意：** 凭据指定为此选项将替代凭据，如果指定，作为连接字符串的一部分。</span><span class="sxs-lookup"><span data-stu-id="f9546-132">**Note:**  The credentials you specify for this option will override the credentials, if specified, as part of the connection string.</span></span>|  
         |<span data-ttu-id="f9546-133">**无凭据**</span><span class="sxs-lookup"><span data-stu-id="f9546-133">**No credentials**</span></span>|<span data-ttu-id="f9546-134">如果你要作为连接字符串的一部分提供的用户名和密码，请选择此选项。</span><span class="sxs-lookup"><span data-stu-id="f9546-134">Choose this option if you are providing the user name and password as part of the connection string.</span></span>|  
   
         > [!NOTE]
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/28/2017
   
          <span data-ttu-id="f9546-147">单击 **“下一步”**。</span><span class="sxs-lookup"><span data-stu-id="f9546-147">Click **Next**.</span></span>  
   
-    6.  <span data-ttu-id="f9546-148">在后续的对话框中，你可以设计所需的报表显示在其中的格式。</span><span class="sxs-lookup"><span data-stu-id="f9546-148">In the subsequent dialog boxes you can design the format in which you want the report to appear.</span></span> <span data-ttu-id="f9546-149">如果你想要使用的默认格式，请单击**完成 >> &#124;**以直接转到**完成**对话框。</span><span class="sxs-lookup"><span data-stu-id="f9546-149">If you want to use the default format, click **Finish >>&#124;** to directly go to the **Finish** dialog box.</span></span>  
+    6.  <span data-ttu-id="f9546-148">在后续的对话框中，你可以设计所需的报表显示在其中的格式。</span><span class="sxs-lookup"><span data-stu-id="f9546-148">In the subsequent dialog boxes you can design the format in which you want the report to appear.</span></span> <span data-ttu-id="f9546-149">如果你想要使用的默认格式，请单击**完成 >> &#124;** 以直接转到**完成**对话框。</span><span class="sxs-lookup"><span data-stu-id="f9546-149">If you want to use the default format, click **Finish >>&#124;** to directly go to the **Finish** dialog box.</span></span>  
   
     7.  <span data-ttu-id="f9546-150">在**完成向导**对话框中，指定报表的名称，查看摘要，，然后单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="f9546-150">In the **Completing the Wizard** dialog box, specify a name for the report, review the summary, and then click **Finish**.</span></span> <span data-ttu-id="f9546-151">对于本主题中，指定为报表的名称`SAPReport`。</span><span class="sxs-lookup"><span data-stu-id="f9546-151">For this topic, specify the name of the report as `SAPReport`.</span></span>  
   

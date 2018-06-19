@@ -1,11 +1,11 @@
 ---
-title: "第 4 课： 构建和部署程序集 |Microsoft 文档"
-ms.custom: 
+title: 第 4 课： 构建和部署程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building assemblies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assemblies, building
 - assemblies, deploying
 ms.assetid: 58397c35-6048-4ac9-a8b8-a528dd1cb82a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961923"
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a><span data-ttu-id="836fa-102">第 4 课： 构建和部署程序集</span><span class="sxs-lookup"><span data-stu-id="836fa-102">Lesson 4: Building and Deploying the Assembly</span></span>
 <span data-ttu-id="836fa-103">在本课程中，你可以生成和部署此项目以生成该程序集包含你在前面的课程中创建的架构。</span><span class="sxs-lookup"><span data-stu-id="836fa-103">In this lesson, you build and deploy the project to generate an assembly that contains the schemas you created in the previous lessons.</span></span> <span data-ttu-id="836fa-104">此任务可确保到目前为止创建的工作中没有任何编译错误。</span><span class="sxs-lookup"><span data-stu-id="836fa-104">This task ensures there are no compilation errors in the work you created so far.</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 01/17/2018
   
 1.  <span data-ttu-id="836fa-119">单击**视图**，然后单击**BizTalk 资源管理器**。</span><span class="sxs-lookup"><span data-stu-id="836fa-119">Click **View** and then click **BizTalk Explorer**.</span></span>  
   
-2.  <span data-ttu-id="836fa-120">展开**程序集**节点，并确认**SWIFTSchemas (1.0.0.0)**出现在列表中。</span><span class="sxs-lookup"><span data-stu-id="836fa-120">Expand the **Assemblies** node and confirm that **SWIFTSchemas (1.0.0.0)** appears in the list.</span></span>  
+2.  <span data-ttu-id="836fa-120">展开**程序集**节点，并确认**SWIFTSchemas (1.0.0.0)** 出现在列表中。</span><span class="sxs-lookup"><span data-stu-id="836fa-120">Expand the **Assemblies** node and confirm that **SWIFTSchemas (1.0.0.0)** appears in the list.</span></span>  
   
      <span data-ttu-id="836fa-121">如果 SWIFTSchemas 出现在列表中，程序集成功部署并可以引用和使用从其他[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]项目。</span><span class="sxs-lookup"><span data-stu-id="836fa-121">If SWIFTSchemas appears in the list, the assembly deployed successfully and can be referenced and used from other [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] projects.</span></span>  
   

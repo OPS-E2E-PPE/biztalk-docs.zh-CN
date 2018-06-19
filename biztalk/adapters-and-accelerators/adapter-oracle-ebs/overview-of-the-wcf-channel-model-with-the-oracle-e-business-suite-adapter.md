@@ -1,14 +1,14 @@
 ---
-title: "与 Oracle E-business Suite 适配器的 WCF 通道模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 Oracle E-business Suite 适配器的 WCF 通道模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3afd2a97-5734-4c25-87a3-702d8461898b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963251"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="f9be9-102">与 Oracle E-business Suite 适配器的 WCF 通道模型概述</span><span class="sxs-lookup"><span data-stu-id="f9be9-102">Overview of the WCF channel model with the Oracle E-Business Suite adapter</span></span>
 <span data-ttu-id="f9be9-103">若要在调用操作[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]，你的代码充当 WCF 客户端，并将出站操作发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="f9be9-103">To invoke operations on the [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)], your code acts as a WCF client and sends outbound operations to the adapter.</span></span> <span data-ttu-id="f9be9-104">在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。</span><span class="sxs-lookup"><span data-stu-id="f9be9-104">In the WCF channel model, your code invokes operations on the adapter by sending a request message over a channel.</span></span>  

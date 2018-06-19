@@ -16,7 +16,7 @@ helpviewer_keywords:
 - resuming, orchestrations
 - HAT, debug mode
 ms.assetid: da133183-68d9-48d1-9601-8f6d4d5b8898
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22316889"
 ---
 # <a name="how-to-resume-suspended-orchestration-instances"></a><span data-ttu-id="e91b3-102">如何恢复挂起的业务流程实例</span><span class="sxs-lookup"><span data-stu-id="e91b3-102">How to Resume Suspended Orchestration Instances</span></span>
 <span data-ttu-id="e91b3-103">如果你已挂起被列为“可恢复的挂起”的业务流程实例，则可以尝试从查询结果或预览窗格中恢复该业务流程实例。</span><span class="sxs-lookup"><span data-stu-id="e91b3-103">If you have suspended orchestration instances that are listed as "suspended resumable," you can attempt to resume the orchestration instance from the query results or preview pane.</span></span> <span data-ttu-id="e91b3-104">只有在导致业务流程实例挂起的根本问题也得到解决后，才能成功恢复该业务流程实例。</span><span class="sxs-lookup"><span data-stu-id="e91b3-104">Resuming the orchestration instance will only succeed if the underlying problem that caused the orchestration instance to become suspended has also been fixed.</span></span>  

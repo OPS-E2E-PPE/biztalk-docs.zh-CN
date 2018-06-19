@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967747"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a><span data-ttu-id="f2a51-102">接收来自 SAP 使用 BizTalk Server 的入站 RFC 调用</span><span class="sxs-lookup"><span data-stu-id="f2a51-102">Receive Inbound RFC Calls from SAP using BizTalk Server</span></span>
 <span data-ttu-id="f2a51-103">在 RFC 服务器方案中，有三个实体：</span><span class="sxs-lookup"><span data-stu-id="f2a51-103">In an RFC server scenario, there are three entities:</span></span>  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="f2a51-145">请参阅[浏览、 搜索和 get 元数据在 SAP 中的 RFC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)有关如何为特定 RFC 生成架构的说明。</span><span class="sxs-lookup"><span data-stu-id="f2a51-145">See [Browse, search, and get Metadata for RFC Operations in SAP](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md) for instructions on how to generate schema for a particular RFC.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="f2a51-146">因为您正在生成的入站 RFC 调用的架构，请确保选择**服务 （入站操作）**从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="f2a51-146">Because you are generating the schema for an inbound RFC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
+>  <span data-ttu-id="f2a51-146">因为您正在生成的入站 RFC 调用的架构，请确保选择**服务 （入站操作）** 从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="f2a51-146">Because you are generating the schema for an inbound RFC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
   
 ## <a name="defining-messages-and-message-types"></a><span data-ttu-id="f2a51-147">定义消息和消息类型</span><span class="sxs-lookup"><span data-stu-id="f2a51-147">Defining Messages and Message Types</span></span>  
  <span data-ttu-id="f2a51-148">你先前生成的架构描述业务流程中的消息所需的"类型"。</span><span class="sxs-lookup"><span data-stu-id="f2a51-148">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="f2a51-149">一条消息通常是一个变量，为其类型由相应的架构定义。</span><span class="sxs-lookup"><span data-stu-id="f2a51-149">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="f2a51-150">你必须链接您从生成的架构中的第一步的邮件 BizTalk 项目的业务流程视图。</span><span class="sxs-lookup"><span data-stu-id="f2a51-150">You must link the schema you generated in the first step to the messages from the Orchestration view of the BizTalk project.</span></span>  

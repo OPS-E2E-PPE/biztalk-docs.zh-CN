@@ -1,11 +1,11 @@
 ---
-title: "使用 InfoPath 窗体来修复消息或提交新消息 |Microsoft 文档"
-ms.custom: 
+title: 使用 InfoPath 窗体来修复消息或提交新消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - messages, verifying
 - verifying, messages
 ms.assetid: fb1a885f-fb01-42be-88bc-f68715f689f7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961971"
 ---
 # <a name="using-an-infopath-form-to-repair-a-message-or-submit-a-new-message"></a><span data-ttu-id="15006-102">使用 InfoPath 窗体来修复消息或提交新消息</span><span class="sxs-lookup"><span data-stu-id="15006-102">Using an InfoPath Form to Repair a Message or Submit a New Message</span></span>
 <span data-ttu-id="15006-103">若要修复、 验证、 批准，或创建一条消息，在工作[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]内打开的窗体[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MRSR Web 站点。</span><span class="sxs-lookup"><span data-stu-id="15006-103">To repair, verify, approve, or create a message, you work in an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form that you open from within the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] MRSR Web site.</span></span> <span data-ttu-id="15006-104">MRSR 站点包含[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中的为每种消息类型和[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]未分析的消息的窗体。</span><span class="sxs-lookup"><span data-stu-id="15006-104">The MRSR site contains an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form for each message type and an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form for unparsed messages.</span></span> <span data-ttu-id="15006-105">消息修复和新的提交将需要修复、 验证或审批的消息发送到相应的 MRSR 文档库，你可以打开它。</span><span class="sxs-lookup"><span data-stu-id="15006-105">Message Repair and New Submission sends messages in need of repair, verification, or approval to the appropriate MRSR document library, where you can open it.</span></span>  

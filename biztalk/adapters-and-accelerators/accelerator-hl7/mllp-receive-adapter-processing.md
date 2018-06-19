@@ -1,18 +1,18 @@
 ---
-title: "MLLP 接收适配器处理 |Microsoft 文档"
-ms.custom: 
+title: MLLP 接收适配器处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MLLP-encoded messages, receive adapters
 - MLLP adapters, send adapters
 - receive adapters
 ms.assetid: 03c9a5f6-6f23-454f-8bab-e7c7b6057efa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207445"
 ---
 # <a name="mllp-receive-adapter-processing"></a><span data-ttu-id="6de3d-102">MLLP 接收适配器处理</span><span class="sxs-lookup"><span data-stu-id="6de3d-102">MLLP Receive Adapter Processing</span></span>
 <span data-ttu-id="6de3d-103">最小的较低层协议 (MLLP) 接收适配器支持这两个单向和双向请求响应模式。</span><span class="sxs-lookup"><span data-stu-id="6de3d-103">The Minimal Lower Layer Protocol (MLLP) receive adapter supports both one-way and two-way request response modes.</span></span> <span data-ttu-id="6de3d-104">适配器侦听和接受连接。</span><span class="sxs-lookup"><span data-stu-id="6de3d-104">The adapter listens and accepts connections.</span></span>  

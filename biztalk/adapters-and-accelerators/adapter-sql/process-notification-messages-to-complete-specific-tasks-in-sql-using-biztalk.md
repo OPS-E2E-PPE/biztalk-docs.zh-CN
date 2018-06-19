@@ -1,14 +1,14 @@
 ---
-title: "处理通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务 |Microsoft 文档"
-ms.custom: 
+title: 处理通知消息，以完成 SQL 使用 BizTalk Server 中的特定任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8538cb89-1cca-45ad-b6f4-041e117963ff
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967339"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a><span data-ttu-id="76bd9-102">若要完成 SQL 使用 BizTalk Server 中的特定任务的进程通知消息</span><span class="sxs-lookup"><span data-stu-id="76bd9-102">Process notification messages to complete specific tasks in SQL using BizTalk Server</span></span>
 <span data-ttu-id="76bd9-103">你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接收对 SQL Server 数据库表的更改的通知。</span><span class="sxs-lookup"><span data-stu-id="76bd9-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notifications for changes to SQL Server database tables.</span></span> <span data-ttu-id="76bd9-104">但是，该适配器仅向你发送通知某些记录已插入、 更新或删除某些数据库表中。</span><span class="sxs-lookup"><span data-stu-id="76bd9-104">However, the adapter only sends you a notification that some records were inserted, updated, or deleted in a certain database table.</span></span> <span data-ttu-id="76bd9-105">这些记录的任何后续处理必须由客户端应用程序本身进行处理。</span><span class="sxs-lookup"><span data-stu-id="76bd9-105">Any post-processing on those records must be handled by the client applications themselves.</span></span> <span data-ttu-id="76bd9-106">本主题提供有关如何处理表根据从 SQL Server 数据库接收的通知的类型中记录的基于方案的说明。</span><span class="sxs-lookup"><span data-stu-id="76bd9-106">This topic presents a scenario-based description on how to process the records in the table based on the kind of notification received from the SQL Server database.</span></span>  
@@ -232,7 +233,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
         |<span data-ttu-id="76bd9-309">绑定属性</span><span class="sxs-lookup"><span data-stu-id="76bd9-309">Binding Property</span></span>|<span data-ttu-id="76bd9-310">值</span><span class="sxs-lookup"><span data-stu-id="76bd9-310">Value</span></span>|  
         |----------------------|-----------|  
         |<span data-ttu-id="76bd9-311">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="76bd9-311">**InboundOperationType**</span></span>|<span data-ttu-id="76bd9-312">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="76bd9-312">Set this to **Notification**.</span></span>|  
-        |<span data-ttu-id="76bd9-313">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="76bd9-313">**NotificationStatement**</span></span>|<span data-ttu-id="76bd9-314">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="76bd9-314">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="76bd9-315">**注意：**你必须专门的列名称在语句中指定此 SELECT 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="76bd9-315">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="76bd9-316">此外，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="76bd9-316">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="76bd9-317">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="76bd9-317">For example, `dbo.Employee`.</span></span>|  
+        |<span data-ttu-id="76bd9-313">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="76bd9-313">**NotificationStatement**</span></span>|<span data-ttu-id="76bd9-314">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="76bd9-314">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="76bd9-315">**注意：** 你必须专门的列名称在语句中指定此 SELECT 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="76bd9-315">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="76bd9-316">此外，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="76bd9-316">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="76bd9-317">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="76bd9-317">For example, `dbo.Employee`.</span></span>|  
         |<span data-ttu-id="76bd9-318">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="76bd9-318">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="76bd9-319">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="76bd9-319">Set this to **True**.</span></span>|  
   
          <span data-ttu-id="76bd9-320">有关不同的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="76bd9-320">For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter Binding Properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "计划批处理 |Microsoft 文档"
-ms.custom: 
+title: 计划批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, scheduling
 - scheduling batching
 ms.assetid: 037626f1-1b3b-43e6-80eb-5fb900cdbd46
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961531"
 ---
 # <a name="scheduling-batching"></a><span data-ttu-id="dd27b-102">计划批处理</span><span class="sxs-lookup"><span data-stu-id="dd27b-102">Scheduling Batching</span></span>
 <span data-ttu-id="dd27b-103">你使用[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]配置资源管理器，若要激活、 请求，或终止出站批处理。</span><span class="sxs-lookup"><span data-stu-id="dd27b-103">You use [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer to activate, request, or terminate an outbound batch.</span></span> <span data-ttu-id="dd27b-104">激活的出站批处理包括两个步骤： 配置基于时间的或消息计数条件，然后启动出站批处理业务流程。</span><span class="sxs-lookup"><span data-stu-id="dd27b-104">Activating an outbound batch consists of two steps: configuring time-based or message count criteria and then starting the outbound batching orchestration.</span></span>  

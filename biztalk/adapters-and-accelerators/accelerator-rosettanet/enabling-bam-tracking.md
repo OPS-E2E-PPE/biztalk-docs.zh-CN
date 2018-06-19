@@ -1,17 +1,17 @@
 ---
-title: "启用 BAM 跟踪 |Microsoft 文档"
-ms.custom: 
+title: 启用 BAM 跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM tracking, enabling
 - BAM tracking, disabling
 ms.assetid: 3fee3315-fba7-4eea-89f3-6a061b450bb8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210053"
 ---
 # <a name="enabling-bam-tracking"></a><span data-ttu-id="432bb-102">启用 BAM 跟踪</span><span class="sxs-lookup"><span data-stu-id="432bb-102">Enabling BAM Tracking</span></span>
 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]<span data-ttu-id="432bb-103"> 使用 BizTalk 活动监视 (BAM) 增强了跟踪功能。</span><span class="sxs-lookup"><span data-stu-id="432bb-103"> supports enhanced tracking using BizTalk Activity Monitoring (BAM).</span></span> <span data-ttu-id="432bb-104">启用跟踪是 BTARN 配置的全局属性的一部分。</span><span class="sxs-lookup"><span data-stu-id="432bb-104">You enable tracking as part of the global properties of the BTARN configuration.</span></span> <span data-ttu-id="432bb-105">启用跟踪后，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将跟踪所有协议的所有消息。</span><span class="sxs-lookup"><span data-stu-id="432bb-105">After you enable tracking, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] tracks all messages for all agreements.</span></span> <span data-ttu-id="432bb-106">默认情况下，跟踪是启用的。</span><span class="sxs-lookup"><span data-stu-id="432bb-106">By default, tracking is enabled.</span></span>  

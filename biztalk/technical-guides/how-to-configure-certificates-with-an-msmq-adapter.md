@@ -1,14 +1,14 @@
 ---
-title: "如何使用 MSMQ 适配器配置证书 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 MSMQ 适配器配置证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 922a171d-705f-4465-acda-212aa3797c57
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297909"
 ---
 # <a name="how-to-configure-certificates-with-an-msmq-adapter"></a><span data-ttu-id="a01bc-102">如何使用 MSMQ 适配器配置证书</span><span class="sxs-lookup"><span data-stu-id="a01bc-102">How to Configure Certificates with an MSMQ Adapter</span></span>
 <span data-ttu-id="a01bc-103">MSMQ 发送适配器可以帮助保护与接受或需要客户端证书的服务器的连接。</span><span class="sxs-lookup"><span data-stu-id="a01bc-103">The MSMQ send adapter can help secure a connection with servers that accept or require client certificates.</span></span> <span data-ttu-id="a01bc-104">如果指定客户端证书，则 MSMQ 发送适配器将连接与服务器需要或不接受客户端证书时使用的证书。</span><span class="sxs-lookup"><span data-stu-id="a01bc-104">If a client certificate is specified, the MSMQ send adapter uses the certificate when connecting with servers that require or accept client certificates.</span></span> <span data-ttu-id="a01bc-105">如果未指定客户端证书和目标服务器需要客户端证书、 发件人未经过身份验证和 MSMQ 发送适配器无法发送消息，并将遵循标准的重试逻辑。</span><span class="sxs-lookup"><span data-stu-id="a01bc-105">If the client certificate is not specified and the destination server requires client certificates, the sender is not authenticated and the MSMQ send adapter fails to send the message and follows the standard retry logic.</span></span>  

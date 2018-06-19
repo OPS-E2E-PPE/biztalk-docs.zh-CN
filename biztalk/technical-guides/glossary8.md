@@ -1,14 +1,14 @@
 ---
-title: "Glossary8 |Microsoft 文档"
-ms.custom: 
+title: Glossary8 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d271fe0-1b54-4a83-87e6-20aa1c37df97
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299461"
 ---
 # <a name="glossary"></a><span data-ttu-id="28788-102">词汇表</span><span class="sxs-lookup"><span data-stu-id="28788-102">Glossary</span></span>
 <span data-ttu-id="28788-103">本主题定义本指南中使用的关键术语。</span><span class="sxs-lookup"><span data-stu-id="28788-103">This topic defines key terms used throughout this guide.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 |----------|----------------|  
 |<span data-ttu-id="28788-107">**高级的可编程中断控制器 (APIC)**</span><span class="sxs-lookup"><span data-stu-id="28788-107">**advanced programmable interrupt controller (APIC)**</span></span>|<span data-ttu-id="28788-108">控制器从各种源接收中断并将其发送到处理器核心，以便处理。</span><span class="sxs-lookup"><span data-stu-id="28788-108">A controller that receives interrupts from various sources and sends them to a processor core for handling.</span></span> <span data-ttu-id="28788-109">在多处理器系统中，这可以是 VM 或物理计算机，APIC 发送和接收 interprocessor 中断消息与其他系统总线上的逻辑处理器。</span><span class="sxs-lookup"><span data-stu-id="28788-109">In a multiprocessor system, which can be either a VM or a physical computer, the APIC sends and receive interprocessor interrupt messages to and from other logical processors on the system bus.</span></span> <span data-ttu-id="28788-110">有关高级的可编程中断控制器的详细信息，请参阅的一章 8 [Intel® 64 和 ia-32 体系结构软件开发人员手动卷 3A： 系统编程指南，第 1 部分](http://go.microsoft.com/fwlink/?LinkId=148923)(http://go.microsoft.com/fwlink /？LinkId = 148923)。</span><span class="sxs-lookup"><span data-stu-id="28788-110">For more information about the advanced programmable interrupt controller see chapter 8 of the [Intel® 64 and IA-32 Architectures Software Developer’s Manual Volume 3A: System Programming Guide, Part 1](http://go.microsoft.com/fwlink/?LinkId=148923) (http://go.microsoft.com/fwlink/?LinkId=148923).</span></span>|  
 |<span data-ttu-id="28788-111">**子分区**</span><span class="sxs-lookup"><span data-stu-id="28788-111">**child partition**</span></span>|<span data-ttu-id="28788-112">由父 （或根） 的分区创建的任何分区。</span><span class="sxs-lookup"><span data-stu-id="28788-112">Any partition that is created by the parent (or root) partition.</span></span>|  
-|<span data-ttu-id="28788-113">**核心**</span><span class="sxs-lookup"><span data-stu-id="28788-113">**core**</span></span>|<span data-ttu-id="28788-114">请参阅**逻辑处理器**。</span><span class="sxs-lookup"><span data-stu-id="28788-114">See **logical processor**.</span></span> <span data-ttu-id="28788-115">**注意：**在本指南中，核心有时互换使用与虚拟处理器，特别是在图形。</span><span class="sxs-lookup"><span data-stu-id="28788-115">**Note:**  In this guide, core is sometimes used interchangeably with virtual processor, especially in graphics.</span></span> <span data-ttu-id="28788-116">在本指南的将来版本中，将更正这种用法。</span><span class="sxs-lookup"><span data-stu-id="28788-116">This usage will be corrected in a future edition of this guide.</span></span>|  
+|<span data-ttu-id="28788-113">**核心**</span><span class="sxs-lookup"><span data-stu-id="28788-113">**core**</span></span>|<span data-ttu-id="28788-114">请参阅**逻辑处理器**。</span><span class="sxs-lookup"><span data-stu-id="28788-114">See **logical processor**.</span></span> <span data-ttu-id="28788-115">**注意：** 在本指南中，核心有时互换使用与虚拟处理器，特别是在图形。</span><span class="sxs-lookup"><span data-stu-id="28788-115">**Note:**  In this guide, core is sometimes used interchangeably with virtual processor, especially in graphics.</span></span> <span data-ttu-id="28788-116">在本指南的将来版本中，将更正这种用法。</span><span class="sxs-lookup"><span data-stu-id="28788-116">This usage will be corrected in a future edition of this guide.</span></span>|  
 |<span data-ttu-id="28788-117">**设备虚拟化**</span><span class="sxs-lookup"><span data-stu-id="28788-117">**device virtualization**</span></span>|<span data-ttu-id="28788-118">一种软件技术，可让硬件资源进行抽象和在多个使用者之间共享。</span><span class="sxs-lookup"><span data-stu-id="28788-118">A software technology that lets a hardware resource be abstracted and shared among multiple consumers.</span></span>|  
 |<span data-ttu-id="28788-119">**模拟的设备**</span><span class="sxs-lookup"><span data-stu-id="28788-119">**emulated device**</span></span>|<span data-ttu-id="28788-120">虚拟化的设备，以模拟的实际物理硬件设备，以便来宾可以使用该硬件设备的典型驱动程序。</span><span class="sxs-lookup"><span data-stu-id="28788-120">A virtualized device that mimics an actual physical hardware device so that guests can use the typical drivers for that hardware device.</span></span> <span data-ttu-id="28788-121">模拟的设备效率很低比综合设备，但模拟的设备没有安装集成组件的"unenlightened"操作系统提供支持。</span><span class="sxs-lookup"><span data-stu-id="28788-121">Emulated devices are less efficient than synthetic devices, but emulated devices provide support for “unenlightened” operating systems that do not have integration components installed.</span></span>|  
 |<span data-ttu-id="28788-122">**enlightenment**</span><span class="sxs-lookup"><span data-stu-id="28788-122">**enlightenment**</span></span>|<span data-ttu-id="28788-123">一种优化到来宾操作系统，使其了解 VM 环境并优化 Vm 其行为方式。</span><span class="sxs-lookup"><span data-stu-id="28788-123">An optimization to a guest operating system to make it aware of VM environments and tune its behavior for VMs.</span></span> <span data-ttu-id="28788-124">启蒙有助于降低某些操作系统功能，如内存管理的成本。</span><span class="sxs-lookup"><span data-stu-id="28788-124">Enlightenments help to reduce the cost of certain operating system functions such as memory management.</span></span> <span data-ttu-id="28788-125">启蒙访问通过 hypercall 界面中。</span><span class="sxs-lookup"><span data-stu-id="28788-125">Enlightenments are accessed through the hypercall interface.</span></span> <span data-ttu-id="28788-126">启用的 I/O 可以利用 VMBus 直接，绕过任何设备仿真层。</span><span class="sxs-lookup"><span data-stu-id="28788-126">Enlightened I/O can utilize the VMBus directly, bypassing any device emulation layer.</span></span> <span data-ttu-id="28788-127">利用所有可能启蒙操作系统被称为"完全启用。"</span><span class="sxs-lookup"><span data-stu-id="28788-127">An operating system that takes advantage of all possible enlightenments is said to be “fully enlightened.”</span></span>|  

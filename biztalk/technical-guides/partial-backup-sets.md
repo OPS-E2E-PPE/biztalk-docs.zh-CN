@@ -1,14 +1,14 @@
 ---
-title: "部分备份集 |Microsoft 文档"
-ms.custom: 
+title: 部分备份集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b9f15c0-4d31-4322-ac0a-8efdeed6f71e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298157"
 ---
 # <a name="partial-backup-sets"></a><span data-ttu-id="82910-102">部分备份集</span><span class="sxs-lookup"><span data-stu-id="82910-102">Partial Backup Sets</span></span>
 <span data-ttu-id="82910-103">在源系统上备份数据库，可能发生的问题导致部分的备份集。</span><span class="sxs-lookup"><span data-stu-id="82910-103">When backing up the databases on the source system, problems may occur that result in a partial backup set.</span></span> <span data-ttu-id="82910-104">当发生这种情况时，Master.dbo.bts_LogShippingHistory 表将包含在 0 **SetComplete**集中的所有记录的列。</span><span class="sxs-lookup"><span data-stu-id="82910-104">When this occurs, the Master.dbo.bts_LogShippingHistory table will contain a 0 in the **SetComplete** column for all records in the set.</span></span>  

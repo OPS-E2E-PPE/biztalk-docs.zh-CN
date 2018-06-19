@@ -1,14 +1,14 @@
 ---
-title: "如何显示监视器阈值 |Microsoft 文档"
-ms.custom: 
+title: 如何显示监视器阈值 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88d88b15-0691-49d9-b116-1a2ae95bead9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297701"
 ---
 # <a name="how-to-display-monitor-thresholds"></a><span data-ttu-id="009a9-102">如何显示监视器阈值</span><span class="sxs-lookup"><span data-stu-id="009a9-102">How to Display Monitor Thresholds</span></span>
 <span data-ttu-id="009a9-103">若要显示监视器阈值，请使用本部分中介绍的脚本。</span><span class="sxs-lookup"><span data-stu-id="009a9-103">To display monitor thresholds, use the script described in this section.</span></span> <span data-ttu-id="009a9-104">此脚本适用于多数监视器。</span><span class="sxs-lookup"><span data-stu-id="009a9-104">This script works for the majority of monitors.</span></span> <span data-ttu-id="009a9-105">它创建一个.csv 文件，包括下表中所述列，并可以使用 Office Excel 查看。</span><span class="sxs-lookup"><span data-stu-id="009a9-105">It creates a .csv file that includes the columns described in the following table, and can be viewed using Office Excel.</span></span>  

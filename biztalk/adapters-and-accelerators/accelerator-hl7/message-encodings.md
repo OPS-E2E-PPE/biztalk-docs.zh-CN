@@ -1,11 +1,11 @@
 ---
-title: "消息编码 |Microsoft 文档"
-ms.custom: 
+title: 消息编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, encodings
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - encoding [messages]
 - code samples
 ms.assetid: 360638c0-4094-428f-a7c7-306a5f95a6bf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204789"
 ---
 # <a name="message-encodings"></a><span data-ttu-id="df3cb-102">消息编码</span><span class="sxs-lookup"><span data-stu-id="df3cb-102">Message Encodings</span></span>
 <span data-ttu-id="df3cb-103">不满足需求，以定义顺序有用的 HL7 消息语义。</span><span class="sxs-lookup"><span data-stu-id="df3cb-103">It is not sufficient to define message semantics in order for HL7 to be useful.</span></span> <span data-ttu-id="df3cb-104">一旦已确定消息内容，标准将具有以解释如何表示实际接口中的该内容。</span><span class="sxs-lookup"><span data-stu-id="df3cb-104">Once message content has been determined, the standard has to explain how to represent that content in an actual interface.</span></span> <span data-ttu-id="df3cb-105">也就是说，必须有指定"消息编码"。</span><span class="sxs-lookup"><span data-stu-id="df3cb-105">That is to say, there must be a specified "message encoding".</span></span> <span data-ttu-id="df3cb-106">HL7 版本 2 支持两种形式的消息编码、 自定义基于分隔符的编码，和的 XML 编码。</span><span class="sxs-lookup"><span data-stu-id="df3cb-106">HL7 Version 2 supports two forms of message encoding, a custom delimiter-based encoding, and an XML encoding.</span></span>  

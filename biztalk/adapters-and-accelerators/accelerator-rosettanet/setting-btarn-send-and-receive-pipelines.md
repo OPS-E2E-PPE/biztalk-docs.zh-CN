@@ -1,11 +1,11 @@
 ---
-title: "设置 BTARN 发送和接收管道 |Microsoft 文档"
-ms.custom: 
+title: 设置 BTARN 发送和接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send pipelines, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive pipelines, modifying
 - modifying, receive pipelines
 ms.assetid: 00960de0-3763-40aa-9e4b-1fedc7f1eea6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964507"
 ---
 # <a name="setting-btarn-send-and-receive-pipelines"></a><span data-ttu-id="03438-102">设置 BTARN 发送和接收管道</span><span class="sxs-lookup"><span data-stu-id="03438-102">Setting BTARN Send and Receive Pipelines</span></span>
 <span data-ttu-id="03438-103">默认情况下， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用标准[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]发送管道 (Microsoft.Solutions.BTARN.Pipelines.Send) 和标准[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]在创建时收到管道 (Microsoft.Solutions.BTARN.Pipelines.Receive)合作伙伴发送端口。</span><span class="sxs-lookup"><span data-stu-id="03438-103">By default, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] uses the standard [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] send pipeline (Microsoft.Solutions.BTARN.Pipelines.Send) and the standard [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] receive pipeline (Microsoft.Solutions.BTARN.Pipelines.Receive) when you create partner send ports.</span></span> <span data-ttu-id="03438-104">但是，你可以更改[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]要使用现有 BizTalk 管道或已创建的自定义管道配置。</span><span class="sxs-lookup"><span data-stu-id="03438-104">However, you can change the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration to use an existing BizTalk pipeline or a custom pipeline that you have created.</span></span> <span data-ttu-id="03438-105">所有的贸易合作伙伴协议、合作伙伴和本组织都使用相同的发送管道和接收管道。</span><span class="sxs-lookup"><span data-stu-id="03438-105">All trading partner agreements, and all partners and home organizations, use the same send pipeline and the same receive pipeline.</span></span>  

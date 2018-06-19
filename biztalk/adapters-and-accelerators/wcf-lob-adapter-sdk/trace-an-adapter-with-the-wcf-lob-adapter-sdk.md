@@ -1,14 +1,14 @@
 ---
-title: "跟踪使用 WCF LOB 适配器 SDK 的适配器 |Microsoft 文档"
-ms.custom: 
+title: 跟踪使用 WCF LOB 适配器 SDK 的适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7a4f4758-3e3e-48c4-b4cf-414c2b05d539
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965355"
 ---
 # <a name="trace-an-adapter-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="3d789-102">跟踪使用 WCF LOB 适配器 SDK 的适配器</span><span class="sxs-lookup"><span data-stu-id="3d789-102">Trace an adapter with the WCF LOB Adapter SDK</span></span>
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]<span data-ttu-id="3d789-103">跟踪是 Systems.Diagnostics 基础生成的。</span><span class="sxs-lookup"><span data-stu-id="3d789-103"> tracing is built on top of Systems.Diagnostics.</span></span> <span data-ttu-id="3d789-104">使用 Microsoft.ServiceModel.Channels 跟踪源[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]运行时。</span><span class="sxs-lookup"><span data-stu-id="3d789-104">You use Microsoft.ServiceModel.Channels trace source for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] runtime.</span></span>  <span data-ttu-id="3d789-105">使用 Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse 跟踪源[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3d789-105">You use Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse trace source for [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].</span></span> <span data-ttu-id="3d789-106">WCF 跟踪将写入到名为 System.ServiceModel 的源。</span><span class="sxs-lookup"><span data-stu-id="3d789-106">WCF traces are written to the source named System.ServiceModel.</span></span>  

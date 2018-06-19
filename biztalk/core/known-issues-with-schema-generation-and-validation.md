@@ -1,14 +1,14 @@
 ---
-title: "架构生成和验证的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 架构生成和验证的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df1eaa6c-0d3e-4aec-9de0-8b9817b7bb97
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016008"
 ---
 # <a name="known-issues-with-schema-generation-and-validation"></a><span data-ttu-id="9ec79-102">架构生成和验证已知的问题</span><span class="sxs-lookup"><span data-stu-id="9ec79-102">Known Issues with Schema Generation and Validation</span></span>
 <span data-ttu-id="9ec79-103">本主题提供架构生成和验证的已知问题的相关信息。</span><span class="sxs-lookup"><span data-stu-id="9ec79-103">This topic provides information about known issues with schema generation and validation.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "删除使用规则验证 |Microsoft 文档"
-ms.custom: 
+title: 删除使用规则验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, deleting rules
 - rules
 ms.assetid: b2b0dabf-8f99-4b85-95da-6bbf3e79ad41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962115"
 ---
 # <a name="removing-usage-rule-validation"></a><span data-ttu-id="92c08-102">删除使用规则验证</span><span class="sxs-lookup"><span data-stu-id="92c08-102">Removing Usage Rule Validation</span></span>
 <span data-ttu-id="92c08-103">使用规则 SWIFT 标准中定义并由强制实施[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]特定于每种消息类型的业务策略。</span><span class="sxs-lookup"><span data-stu-id="92c08-103">Usage rules are defined in SWIFT standards and enforced by [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] business policies specific to each message type.</span></span> <span data-ttu-id="92c08-104">这些使用规则是可以使用提供的字段的额外验证的指南。</span><span class="sxs-lookup"><span data-stu-id="92c08-104">These usage rules are guidelines that you can use to provide extra validation for a field.</span></span> <span data-ttu-id="92c08-105">与网络验证规则、 是必需的你可以选择不需要使用规则的消息类型。</span><span class="sxs-lookup"><span data-stu-id="92c08-105">Unlike network validation rules, which are mandatory, you can choose not to require usage rules for a message type.</span></span> <span data-ttu-id="92c08-106">如果是这种情况，你可以执行以下任一操作：</span><span class="sxs-lookup"><span data-stu-id="92c08-106">If that is the case, you can do either of the following:</span></span>  

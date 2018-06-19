@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 配置交互存储和转发 （请求） 方案的 SWIFT 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 配置交互存储和转发 （请求） 方案的 SWIFT 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4182021c-36c9-4c96-b2fa-e23c87862cfe
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965867"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="e9f6e-102">步骤 1： 配置 SWIFT 适配器交互应用商店应用和进 （请求） 方案</span><span class="sxs-lookup"><span data-stu-id="e9f6e-102">Step 1: Configure the SWIFT Adapter for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="e9f6e-103">在开始此步骤之前，必须完成[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-103">Before you begin this step, you must complete [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).</span></span>  
@@ -33,9 +34,9 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="e9f6e-109">**使用此方法**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-109">**Use this**</span></span>|<span data-ttu-id="e9f6e-110">**若要执行此操作**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-110">**To do this**</span></span>|  
     |------------------|--------------------|  
-    |<span data-ttu-id="e9f6e-111">**参数**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-111">**Arguments**</span></span>|<span data-ttu-id="e9f6e-112">键入以下参数:-SagMessagePartner\<交互的客户端消息合作伙伴在压降中创建\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-112">Type the following argument: –SagMessagePartner \<Interact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
+    |<span data-ttu-id="e9f6e-111">**参数**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-111">**Arguments**</span></span>|<span data-ttu-id="e9f6e-112">键入以下参数:-SagMessagePartner\<交互的客户端消息合作伙伴在压降中创建\>**注意：** 自变量中的客户端是在压降中配置 MessagePartner。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-112">Type the following argument: –SagMessagePartner \<Interact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
     |<span data-ttu-id="e9f6e-113">**加密模式**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-113">**Crypto Mode**</span></span>|<span data-ttu-id="e9f6e-114">从下拉列表中选择**高级**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-114">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="e9f6e-115">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-115">**LogMessageBody**</span></span>|<span data-ttu-id="e9f6e-116">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-116">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="e9f6e-117">**注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-117">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="e9f6e-118">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-118">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="e9f6e-115">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-115">**LogMessageBody**</span></span>|<span data-ttu-id="e9f6e-116">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-116">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="e9f6e-117">**注意：** 如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-117">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="e9f6e-118">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-118">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="e9f6e-119">**日志消息**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-119">**LogMessages**</span></span>|<span data-ttu-id="e9f6e-120">从下拉列表中选择**TRUE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-120">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="e9f6e-121">这样将捕获和 BAM 门户中跟踪消息事件。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-121">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="e9f6e-122">**启用**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-122">**Enable**</span></span>|<span data-ttu-id="e9f6e-123">False。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-123">False.</span></span>|  
     |<span data-ttu-id="e9f6e-124">**密码**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-124">**Password**</span></span>|<span data-ttu-id="e9f6e-125">键入用于连接到压降的密码。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-125">Type the password you use to connect to SAG.</span></span> <span data-ttu-id="e9f6e-126">有关详细信息，请参阅压降帮助。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-126">See SAG Help for more information.</span></span>|  
@@ -55,9 +56,9 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="e9f6e-135">**使用此方法**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-135">**Use this**</span></span>|<span data-ttu-id="e9f6e-136">**若要执行此操作**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-136">**To do this**</span></span>|  
     |------------------|--------------------|  
-    |<span data-ttu-id="e9f6e-137">**参数**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-137">**Arguments**</span></span>|<span data-ttu-id="e9f6e-138">键入以下参数:-SagMessagePartner\<交互的客户端消息合作伙伴在压降中创建\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-138">Type the following argument: –SagMessagePartner \<Interact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
+    |<span data-ttu-id="e9f6e-137">**参数**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-137">**Arguments**</span></span>|<span data-ttu-id="e9f6e-138">键入以下参数:-SagMessagePartner\<交互的客户端消息合作伙伴在压降中创建\>**注意：** 自变量中的客户端是在压降中配置 MessagePartner。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-138">Type the following argument: –SagMessagePartner \<Interact Client Message Partner created in SAG\> **Note:**  The client in the argument is the MessagePartner you configured in SAG.</span></span>|  
     |<span data-ttu-id="e9f6e-139">**加密模式**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-139">**Crypto Mode**</span></span>|<span data-ttu-id="e9f6e-140">从下拉列表中选择**高级**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-140">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="e9f6e-141">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-141">**LogMessageBody**</span></span>|<span data-ttu-id="e9f6e-142">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-142">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="e9f6e-143">**注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-143">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="e9f6e-144">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-144">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="e9f6e-141">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-141">**LogMessageBody**</span></span>|<span data-ttu-id="e9f6e-142">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-142">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="e9f6e-143">**注意：** 如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-143">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="e9f6e-144">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-144">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="e9f6e-145">**日志消息**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-145">**LogMessages**</span></span>|<span data-ttu-id="e9f6e-146">从下拉列表中选择**TRUE**。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-146">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="e9f6e-147">这样将捕获和 BAM 门户中跟踪消息事件。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-147">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="e9f6e-148">**启用**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-148">**Enable**</span></span>|<span data-ttu-id="e9f6e-149">True</span><span class="sxs-lookup"><span data-stu-id="e9f6e-149">True</span></span>|  
     |<span data-ttu-id="e9f6e-150">**密码**</span><span class="sxs-lookup"><span data-stu-id="e9f6e-150">**Password**</span></span>|<span data-ttu-id="e9f6e-151">键入用于连接到压降的密码。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-151">Type the password you use to connect to SAG.</span></span> <span data-ttu-id="e9f6e-152">有关详细信息，请参阅压降帮助。</span><span class="sxs-lookup"><span data-stu-id="e9f6e-152">See SAG Help for more information.</span></span>|  

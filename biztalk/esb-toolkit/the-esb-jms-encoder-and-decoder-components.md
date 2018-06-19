@@ -1,14 +1,14 @@
 ---
-title: "ESB JMS 编码器和解码器组件 |Microsoft 文档"
-ms.custom: 
+title: ESB JMS 编码器和解码器组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4e5591c2-d2ca-4168-8026-059fe51dd588
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295677"
 ---
 # <a name="the-esb-jms-encoder-and-decoder-components"></a><span data-ttu-id="b9364-102">ESB JMS 编码器和解码器组件</span><span class="sxs-lookup"><span data-stu-id="b9364-102">The ESB JMS Encoder and Decoder Components</span></span>
 <span data-ttu-id="b9364-103">某些集成解决方案涉及到 Java 消息服务 (JMS) 和 SOAP 消息发送到数据库或从 IBM WebSphere MQ;[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括用在这些情况下使用的托管代码编写的两个 JMS 管道组件。</span><span class="sxs-lookup"><span data-stu-id="b9364-103">Some integration solutions involve Java Message Service (JMS) and SOAP messages sent to or from IBM WebSphere MQ; [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes two JMS pipeline components written in managed code for use in these situations.</span></span> <span data-ttu-id="b9364-104">组件读取或写入 MQ 消息标头使用与消息关联的上下文属性的值的 JMS 部分。</span><span class="sxs-lookup"><span data-stu-id="b9364-104">The components read or write the JMS portion of the MQ message header using the values of context properties associated with the message.</span></span> <span data-ttu-id="b9364-105">目前，有 60 多个不同类型的 JMS 中与 WebSphere MQ 系列系统; 一起使用的标头ESB JMS 组件只使用 MQRFH2 标头。</span><span class="sxs-lookup"><span data-stu-id="b9364-105">Currently, there are more than 60 different types of JMS headers in use with WebSphere MQ Series systems; the ESB JMS components work only with MQRFH2 headers.</span></span>  

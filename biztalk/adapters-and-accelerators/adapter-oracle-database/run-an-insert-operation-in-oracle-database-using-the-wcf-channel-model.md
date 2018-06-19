@@ -1,11 +1,11 @@
 ---
-title: "使用 WCF 通道模型的 Oracle 数据库中运行插入操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 通道模型的 Oracle 数据库中运行插入操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - inserting data, using a channel
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - channel programming, performing an insert operation
 - performing an insert operation, using a channel
 ms.assetid: 85c44507-0166-42ef-a908-6098f7a683fc
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963315"
 ---
 # <a name="run-an-insert-operation-in-oracle-database-using-the-wcf-channel-model"></a><span data-ttu-id="b432c-102">使用 WCF 通道模型的 Oracle 数据库中运行插入操作</span><span class="sxs-lookup"><span data-stu-id="b432c-102">Run an Insert Operation in Oracle Database using the WCF Channel Model</span></span>
 <span data-ttu-id="b432c-103">本部分演示如何将一个记录插入 Oracle 数据库通过通道进行。</span><span class="sxs-lookup"><span data-stu-id="b432c-103">This section shows how to insert a record into an Oracle database by using a channel.</span></span> <span data-ttu-id="b432c-104">当你发送一条消息时，必须指定消息正文和消息操作。</span><span class="sxs-lookup"><span data-stu-id="b432c-104">You must specify both a message body and a message action when you send a message.</span></span>  

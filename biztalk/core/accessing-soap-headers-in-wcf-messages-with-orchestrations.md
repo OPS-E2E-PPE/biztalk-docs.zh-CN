@@ -1,11 +1,11 @@
 ---
-title: "访问在与业务流程的 WCF 消息的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 访问在与业务流程的 WCF 消息的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, SOAP headers [WCF services]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: fe02fb02-18d6-4fc6-89e0-b06bdbfa5cb4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966835"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a><span data-ttu-id="2224d-102">使用业务流程访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="2224d-102">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>
 <span data-ttu-id="2224d-103">若要访问在业务流程中的传入 WCF 消息的 SOAP 标头值，你可以使用上下文属性**WCF。InboundHeaders**。</span><span class="sxs-lookup"><span data-stu-id="2224d-103">To access the SOAP header values of incoming WCF messages in orchestrations, you use the context property **WCF.InboundHeaders**.</span></span> <span data-ttu-id="2224d-104">WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到入站消息中**WCF。InboundHeaders**属性。</span><span class="sxs-lookup"><span data-stu-id="2224d-104">The WCF adapters copy custom SOAP headers and standard SOAP headers in the inbound messages to the **WCF.InboundHeaders** property.</span></span> <span data-ttu-id="2224d-105">WCF 适配器还允许你选择你想要升级或以编程方式编写的上下文属性的属性。</span><span class="sxs-lookup"><span data-stu-id="2224d-105">The WCF adapters also allow you to select the properties you would like to promote or write to the context properties programmatically.</span></span> <span data-ttu-id="2224d-106">请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)有关详细信息。</span><span class="sxs-lookup"><span data-stu-id="2224d-106">See [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md) for more details.</span></span>  

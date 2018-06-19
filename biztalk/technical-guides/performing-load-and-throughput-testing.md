@@ -1,14 +1,14 @@
 ---
-title: "执行负载测试和吞吐量测试 |Microsoft 文档"
-ms.custom: 
+title: 执行负载测试和吞吐量测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ff86ebd-a77f-4e29-bfea-0306e88bbf67
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302109"
 ---
 # <a name="performing-load-and-throughput-testing"></a><span data-ttu-id="672e2-102">执行负载测试和吞吐量测试</span><span class="sxs-lookup"><span data-stu-id="672e2-102">Performing Load and Throughput Testing</span></span>
 <span data-ttu-id="672e2-103">你应提供与匹配性能和压力测试的生产环境的环境。</span><span class="sxs-lookup"><span data-stu-id="672e2-103">You should make available an environment that matches your production environment for performance and stress testing.</span></span> <span data-ttu-id="672e2-104">此环境应已安装并运行，如监视代理和防病毒软件的所有标准服务。</span><span class="sxs-lookup"><span data-stu-id="672e2-104">This environment should have all standard services installed and running, such as monitoring agents and antivirus software.</span></span>  

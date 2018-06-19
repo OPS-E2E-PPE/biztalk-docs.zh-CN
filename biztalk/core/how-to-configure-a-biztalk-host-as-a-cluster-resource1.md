@@ -1,11 +1,11 @@
 ---
-title: "如何将 BizTalk 主机配置为群集 Resource1 |Microsoft 文档"
-ms.custom: 
+title: 如何将 BizTalk 主机配置为群集 Resource1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation, high availability
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - clustering, configuring
 - installation, clustering
 ms.assetid: bcd656d2-8dd6-49fc-9c42-ef5c884e52c4
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970555"
 ---
 # <a name="how-to-configure-a-biztalk-host-as-a-cluster-resource"></a><span data-ttu-id="609c5-102">将 BizTalk 主机配置为群集资源</span><span class="sxs-lookup"><span data-stu-id="609c5-102">How to Configure a BizTalk Host as a Cluster Resource</span></span>
 <span data-ttu-id="609c5-103">本主题将讨论要将 BizTalk 主机配置为群集资源所必须遵循的步骤。</span><span class="sxs-lookup"><span data-stu-id="609c5-103">This topic discusses the steps that you must follow to configure a BizTalk host as a cluster resource.</span></span> <span data-ttu-id="609c5-104">若要完成本主题中的步骤，必须已经在 BizTalk 组中将至少两个 BizTalk 服务器配置为 Windows Server 群集的成员。</span><span class="sxs-lookup"><span data-stu-id="609c5-104">To complete the steps in this topic, you must have already configured at least two BizTalk Servers in a BizTalk group as members of a Windows Server cluster.</span></span> <span data-ttu-id="609c5-105">有关配置 Windows Server 群集的详细信息，请参阅 Windows Server 联机帮助。</span><span class="sxs-lookup"><span data-stu-id="609c5-105">For more information about configuring a Windows Server cluster, see the Windows Server online Help.</span></span>  

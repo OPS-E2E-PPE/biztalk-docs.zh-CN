@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 217a6c344a45d2cd6ae1303913659ae5b81b0814
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013964"
 ---
 # <a name="using-single-sign-on"></a><span data-ttu-id="74b25-101">使用单一登录</span><span class="sxs-lookup"><span data-stu-id="74b25-101">Using Single Sign-On</span></span>
 <span data-ttu-id="74b25-102">用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。</span><span class="sxs-lookup"><span data-stu-id="74b25-102">Microsoft BizTalk Adapter for JD Edwards OneWorld provides Single Sign-On (SSO) support.</span></span> <span data-ttu-id="74b25-103">企业单一登录工具创建的关联应用程序代表一个服务器系统，如 JD Edwards OneWorld。</span><span class="sxs-lookup"><span data-stu-id="74b25-103">An affiliate application created by Enterprise Single Sign-On tools represents a server system such as JD Edwards OneWorld.</span></span>  

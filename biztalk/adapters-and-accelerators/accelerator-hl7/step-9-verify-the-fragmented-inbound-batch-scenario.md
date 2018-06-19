@@ -1,14 +1,14 @@
 ---
-title: "步骤 9： 验证零碎的入站的批处理方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 9： 验证零碎的入站的批处理方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ba61866-2e1b-49e2-be57-ef281407d0a5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962075"
 ---
 # <a name="step-9-verify-the-fragmented-inbound-batch-scenario"></a><span data-ttu-id="4d016-102">步骤 9： 验证零碎的入站的批处理方案</span><span class="sxs-lookup"><span data-stu-id="4d016-102">Step 9: Verify the Fragmented Inbound Batch Scenario</span></span>
 <span data-ttu-id="4d016-103">在此步骤中，你可以验证分片入站批处理方案。</span><span class="sxs-lookup"><span data-stu-id="4d016-103">In this step, you verify the Fragmented Inbound Batch scenario.</span></span>  

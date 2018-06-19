@@ -1,14 +1,14 @@
 ---
-title: "解决博士 Edwards EnterpriseOne 适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决博士 Edwards EnterpriseOne 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5a55e52-039a-4aea-8251-b697fd061ddc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013124"
 ---
 # <a name="troubleshooting-the-adapter"></a><span data-ttu-id="aa837-102">故障排除适配器</span><span class="sxs-lookup"><span data-stu-id="aa837-102">Troubleshooting the Adapter</span></span>
 <span data-ttu-id="aa837-103">本主题包含可帮助您标识和解决使用用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器时可能遇到的问题的信息。</span><span class="sxs-lookup"><span data-stu-id="aa837-103">This topic contains information to help you identify and resolve issues that you might experience while using Microsoft BizTalk Adapter for JD Edwards EnterpriseOne.</span></span>  

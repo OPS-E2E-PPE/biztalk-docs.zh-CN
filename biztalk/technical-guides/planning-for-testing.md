@@ -1,14 +1,14 @@
 ---
-title: "计划测试 |Microsoft 文档"
-ms.custom: 
+title: 计划测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ca2f5f29-9eea-4f4d-9781-75c231db4605
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302357"
 ---
 # <a name="planning-for-testing"></a><span data-ttu-id="3f0ee-102">计划测试</span><span class="sxs-lookup"><span data-stu-id="3f0ee-102">Planning for Testing</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="3f0ee-103">测试可划分为几个类别包括单元测试、 功能测试、 负载测试和可用性测试。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-103"> testing can be divided into several categories including unit testing, functional testing, load testing, and availability testing.</span></span> <span data-ttu-id="3f0ee-104">本主题介绍单元和负载测试以及如何为每个计划。</span><span class="sxs-lookup"><span data-stu-id="3f0ee-104">This topic describes unit and load testing and how to plan for each.</span></span>  

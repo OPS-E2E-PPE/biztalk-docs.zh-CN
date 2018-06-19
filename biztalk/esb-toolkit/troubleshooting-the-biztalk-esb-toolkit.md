@@ -1,15 +1,15 @@
 ---
-title: "故障排除 BizTalk ESB 工具包 |Microsoft 文档"
-description: "解决安装问题，以及与 BizTalk Server 中 ESB 工具包的常见错误"
-caps.latest.revision: "2"
+title: 故障排除 BizTalk ESB 工具包 |Microsoft 文档
+description: 解决安装问题，以及与 BizTalk Server 中 ESB 工具包的常见错误
+caps.latest.revision: 2
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1ea2d56-2ace-40f2-80df-8a7489bbfc2e
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295341"
 ---
 # <a name="troubleshoot-the-biztalk-esb-toolkit"></a><span data-ttu-id="33b38-103">解决 BizTalk ESB 工具包</span><span class="sxs-lookup"><span data-stu-id="33b38-103">Troubleshoot the BizTalk ESB Toolkit</span></span>
 

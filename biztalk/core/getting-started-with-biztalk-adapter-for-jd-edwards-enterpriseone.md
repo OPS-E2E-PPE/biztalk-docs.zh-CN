@@ -1,15 +1,15 @@
 ---
-title: "开始使用的 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档"
-description: "安装并单步教程，说明如何为 BizTalk 适配器为博士 Edwards EnterpriseOne BizTalk Server 中"
-ms.custom: 
+title: 开始使用的 BizTalk Adapter for 博士 Edwards EnterpriseOne |Microsoft 文档
+description: 安装并单步教程，说明如何为 BizTalk 适配器为博士 Edwards EnterpriseOne BizTalk Server 中
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58850648-9e65-41fb-8457-21cdbe441062
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450590"
 ---
 # <a name="get-started-with-biztalk-adapter-for-jd-edwards-enterpriseone"></a><span data-ttu-id="5df37-103">入门博士 Edwards EnterpriseOne BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="5df37-103">Get started with BizTalk Adapter for JD Edwards EnterpriseOne</span></span>
 

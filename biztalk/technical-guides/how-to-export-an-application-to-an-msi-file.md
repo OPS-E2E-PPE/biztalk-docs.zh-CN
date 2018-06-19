@@ -1,14 +1,14 @@
 ---
-title: "如何导出为.msi 文件的应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何导出为.msi 文件的应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7179e86-aa55-426b-a0db-19229ca5625a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297765"
 ---
 # <a name="how-to-export-an-application-to-an-msi-file"></a><span data-ttu-id="cded9-102">如何导出为.msi 文件的应用程序</span><span class="sxs-lookup"><span data-stu-id="cded9-102">How to Export an Application to an .msi File</span></span>
 <span data-ttu-id="cded9-103">可以使用导出 MSI 文件向导或 BTSTask 将导出到.msi 文件将用于将应用程序导入新的 BizTalk 组的应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="cded9-103">You can use the Export MSI File Wizard or BTSTask to export the application artifacts into an .msi file that you will use to import the application into a new BizTalk group.</span></span> <span data-ttu-id="cded9-104">此过程还会将运行它的计算机上安装应用程序。</span><span class="sxs-lookup"><span data-stu-id="cded9-104">This process will also install the application on the computers that will run it.</span></span>  

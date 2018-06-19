@@ -12,7 +12,7 @@ helpviewer_keywords:
 - backing up, Master Secret server
 - Master Secret server, backing up
 ms.assetid: 22c23f66-b7df-4379-8a9f-065406ba8aa8
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969579"
 ---
 # <a name="how-to-back-up-the-master-secret"></a><span data-ttu-id="99585-102">如何备份主密钥</span><span class="sxs-lookup"><span data-stu-id="99585-102">How to Back Up the Master Secret</span></span>
 <span data-ttu-id="99585-103">您可以将主密钥服务器中的主密钥备份到 NTFS 文件系统或可移动媒体（如软盘）上。</span><span class="sxs-lookup"><span data-stu-id="99585-103">You can back up the master secret from the master secret server onto an NTFS file system or removable media, such as a floppy disk.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="99585-117">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="99585-117">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="99585-118">默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="99585-118">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  <span data-ttu-id="99585-119">类型 * * ssoconfig-backupSecret *\<备份文件\>* * *，其中*\<备份文件\>*是路径和文件进行备份主密钥的名称。</span><span class="sxs-lookup"><span data-stu-id="99585-119">Type **ssoconfig –backupSecret *\<backup file\>***, where *\<backup file\>* is the path and name of the file where the master secret will be backed up.</span></span> <span data-ttu-id="99585-120">例如，A:\ssobackup.bak。</span><span class="sxs-lookup"><span data-stu-id="99585-120">For example, A:\ssobackup.bak</span></span>  
+4.  <span data-ttu-id="99585-119">类型 * * ssoconfig-backupSecret *\<备份文件\>* * *，其中*\<备份文件\>* 是路径和文件进行备份主密钥的名称。</span><span class="sxs-lookup"><span data-stu-id="99585-119">Type **ssoconfig –backupSecret *\<backup file\>***, where *\<backup file\>* is the path and name of the file where the master secret will be backed up.</span></span> <span data-ttu-id="99585-120">例如，A:\ssobackup.bak。</span><span class="sxs-lookup"><span data-stu-id="99585-120">For example, A:\ssobackup.bak</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="99585-121">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="99585-121">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

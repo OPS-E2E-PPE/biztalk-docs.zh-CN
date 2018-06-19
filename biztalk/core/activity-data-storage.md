@@ -1,11 +1,11 @@
 ---
-title: "活动数据存储 |Microsoft 文档"
-ms.custom: 
+title: 活动数据存储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - databases [BAM], partitioning
 - BAM, performance
 ms.assetid: 1f736599-3d16-496e-a459-8b0507d57fcb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967019"
 ---
 # <a name="activity-data-storage"></a><span data-ttu-id="d911d-102">活动数据存储</span><span class="sxs-lookup"><span data-stu-id="d911d-102">Activity Data Storage</span></span>
 <span data-ttu-id="d911d-103">本主题介绍以下内容：关于活动数据存储的内容，由于活动表随着时间而不断增加所导致的性能问题，以及 BAM 如何通过对正进行的活动和已完成的活动使用不同的表来解决这些性能问题。</span><span class="sxs-lookup"><span data-stu-id="d911d-103">This topic describes activity data storage, the performance problems caused by the growth of activity tables over time, and how BAM solves these performance problems with separate tables for activities in progress and completed activities.</span></span> <span data-ttu-id="d911d-104">本主题还将介绍用于查询数据的联机时段，以及在 BAM 中如何使用分区来提高性能。</span><span class="sxs-lookup"><span data-stu-id="d911d-104">This topic also describes the online window for querying data, and how you can use partitioning in BAM for higher performance.</span></span>  

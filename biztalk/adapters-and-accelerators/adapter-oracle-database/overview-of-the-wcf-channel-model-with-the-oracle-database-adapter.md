@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964259"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a><span data-ttu-id="d5e07-102">与 Oracle 数据库适配器的 WCF 通道模型概述</span><span class="sxs-lookup"><span data-stu-id="d5e07-102">Overview of the WCF channel model with the Oracle Database adapter</span></span>
 <span data-ttu-id="d5e07-103">若要在调用操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]，你的代码充当 WCF 客户端，并将出站操作发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="d5e07-103">To invoke operations on the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)], your code acts as a WCF client and sends outbound operations to the adapter.</span></span> <span data-ttu-id="d5e07-104">在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。</span><span class="sxs-lookup"><span data-stu-id="d5e07-104">In the WCF channel model, your code invokes operations on the adapter by sending a request message over a channel.</span></span>  

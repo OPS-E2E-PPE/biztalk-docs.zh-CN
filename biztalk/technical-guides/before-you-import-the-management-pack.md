@@ -1,14 +1,14 @@
 ---
-title: "在导入管理包之前 |Microsoft 文档"
-ms.custom: 
+title: 在导入管理包之前 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e3c13dd-613a-4885-a5d2-ad3ee492ff25
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299445"
 ---
 # <a name="before-you-import-the-management-pack"></a><span data-ttu-id="4920a-102">导入管理包之前</span><span class="sxs-lookup"><span data-stu-id="4920a-102">Before You Import the Management Pack</span></span>
 <span data-ttu-id="4920a-103">作为最佳做法，应将用于正在使用的操作系统的 Windows Server 管理包导入。</span><span class="sxs-lookup"><span data-stu-id="4920a-103">As a best practice, you should import the Windows Server Management Pack for the operating system that you are using.</span></span> <span data-ttu-id="4920a-104">在导入之前[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="4920a-104">Before you import the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack, take the following actions:</span></span>  

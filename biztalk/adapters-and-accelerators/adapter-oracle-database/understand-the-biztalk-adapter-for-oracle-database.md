@@ -1,11 +1,11 @@
 ---
-title: "了解用于 Oracle 数据库的 BizTalk Adapter |Microsoft 文档"
-ms.custom: 
+title: 了解用于 Oracle 数据库的 BizTalk Adapter |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF LOB Adapter SDK
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - adapter features
 - channel model
 ms.assetid: a8691957-0430-4cba-83f8-b60c21a86849
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961171"
 ---
 # <a name="understand-the-biztalk-adapter-for-oracle-database"></a><span data-ttu-id="faaa3-102">了解 BizTalk 适配器用于 Oracle 数据库</span><span class="sxs-lookup"><span data-stu-id="faaa3-102">Understand the BizTalk Adapter for Oracle Database</span></span>
 <span data-ttu-id="faaa3-103">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统交互，以面向服务的编程访问。</span><span class="sxs-lookup"><span data-stu-id="faaa3-103">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] enables service-oriented programmatic access in order to interact with an external system.</span></span> <span data-ttu-id="faaa3-104">适配器向客户端提供以下优势：</span><span class="sxs-lookup"><span data-stu-id="faaa3-104">The adapters provide the following advantages to clients:</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "迁移和升级故障排除 |Microsoft 文档"
-ms.custom: 
+title: 迁移和升级故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - upgrading, troubleshooting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - troubleshooting, migrating
 - migrating, troubleshooting
 ms.assetid: 6e6c0ff9-7897-4de6-9e9b-b502b3a1785b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961467"
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a><span data-ttu-id="bf9fe-102">迁移和升级故障排除</span><span class="sxs-lookup"><span data-stu-id="bf9fe-102">Migration and Upgrade Troubleshooting</span></span>
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a><span data-ttu-id="bf9fe-103">程序集需要升级之前未部署</span><span class="sxs-lookup"><span data-stu-id="bf9fe-103">Assemblies need to be undeployed before an upgrade</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 01/17/2018
   
  <span data-ttu-id="bf9fe-129">若要设置这些权限，请继续执行，如下所示：</span><span class="sxs-lookup"><span data-stu-id="bf9fe-129">To set these permissions, proceed as follows:</span></span>  
   
- <span data-ttu-id="bf9fe-130">在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器中，移动到*%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service。</span><span class="sxs-lookup"><span data-stu-id="bf9fe-130">In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service.</span></span>  
+ <span data-ttu-id="bf9fe-130">在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器中，移动到 *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Service。</span><span class="sxs-lookup"><span data-stu-id="bf9fe-130">In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%* \Microsoft BizTalk Accelerator for SWIFT\Service.</span></span>  
   
 1.  <span data-ttu-id="bf9fe-131">右键单击服务文件夹，单击**属性**，然后单击**安全**选项卡。</span><span class="sxs-lookup"><span data-stu-id="bf9fe-131">Right-click the Service folder, click **Properties**, and then click the **Security** tab.</span></span>  
   

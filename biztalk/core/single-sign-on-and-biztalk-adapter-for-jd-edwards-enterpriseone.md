@@ -1,18 +1,18 @@
 ---
-title: "有关博士 Edwards EnterpriseOne 单一登录和 BizTalk 适配器 |Microsoft 文档"
-ms.custom: 
+title: 有关博士 Edwards EnterpriseOne 单一登录和 BizTalk 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards EnterpriseOne adapters, Single Sign-On
 - Single Sign-On, JD Edwards EnterpriseOne adapters
 - adapters [JD Edwards EnterpriseOne adapters], Single Sign-On
 ms.assetid: efcc3a2d-18a6-4090-9e95-143fb7a356b2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015812"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone"></a><span data-ttu-id="8084d-102">JD Edwards EnterpriseOne 的单一登录和 BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="8084d-102">Single Sign-On and BizTalk Adapter for JD Edwards EnterpriseOne</span></span>
 <span data-ttu-id="8084d-103">当您对用于 JD Edwards EnterpriseOne 的 Microsoft 适配器使用单一登录 (SSO) 时,适配器从 SSO 凭据数据库获取凭据。</span><span class="sxs-lookup"><span data-stu-id="8084d-103">When you use Single Sign-On (SSO) with Microsoft   Adapter for JD Edwards EnterpriseOne, the adapter obtains the credentials from the SSO Credentials database.</span></span> <span data-ttu-id="8084d-104">因此，不需要输入中的服务器系统的登录凭据**传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="8084d-104">Therefore, you do not need to enter the logon credentials for the server system in the **Transport Properties** dialog box.</span></span>  

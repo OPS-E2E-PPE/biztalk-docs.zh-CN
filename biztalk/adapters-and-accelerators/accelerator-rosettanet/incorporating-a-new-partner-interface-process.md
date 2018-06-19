@@ -1,11 +1,11 @@
 ---
-title: "合并新的合作伙伴接口进程 |Microsoft 文档"
-ms.custom: 
+title: 合并新的合作伙伴接口进程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, PIP schemas
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, PIP schemas
 - PIP schemas, creating
 ms.assetid: 6a5fcbcb-c6aa-40c0-bcca-dd0c391e7f42
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963587"
 ---
 # <a name="incorporating-a-new-partner-interface-process"></a><span data-ttu-id="292ae-102">合并新的合作伙伴接口进程</span><span class="sxs-lookup"><span data-stu-id="292ae-102">Incorporating a New Partner Interface Process</span></span>
 <span data-ttu-id="292ae-103">你可以在 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 程序集中并入新的 RosettaNet 合作伙伴接口流程 (PIP) 架构。</span><span class="sxs-lookup"><span data-stu-id="292ae-103">You can incorporate a new RosettaNet Partner Interface Process (PIP) schema in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] assemblies.</span></span> <span data-ttu-id="292ae-104">你可以通过执行以下步骤来完成此任务：</span><span class="sxs-lookup"><span data-stu-id="292ae-104">You do so by:</span></span>  

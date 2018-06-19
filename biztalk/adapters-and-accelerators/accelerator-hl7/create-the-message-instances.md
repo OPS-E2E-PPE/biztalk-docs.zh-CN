@@ -1,14 +1,14 @@
 ---
-title: "创建消息实例 |Microsoft 文档"
-ms.custom: 
+title: 创建消息实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d75cb744-99a0-44bc-9a84-d4f8f66fd97e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960211"
 ---
 # <a name="create-the-message-instances"></a><span data-ttu-id="1301d-102">创建消息实例</span><span class="sxs-lookup"><span data-stu-id="1301d-102">Create the Message Instances</span></span>
 <span data-ttu-id="1301d-103">若要创建 ADT^A03.txt 消息文件，并创建你将需要运行批处理教程时要使用的消息实例，请使用以下过程。</span><span class="sxs-lookup"><span data-stu-id="1301d-103">Use the following procedures to create the ADT^A03.txt message file, and to create the message instances that you will need to use when you run the Batching tutorial.</span></span>  

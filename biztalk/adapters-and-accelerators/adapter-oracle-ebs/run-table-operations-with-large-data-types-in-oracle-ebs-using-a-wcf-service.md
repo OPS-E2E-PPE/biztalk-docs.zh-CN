@@ -1,14 +1,14 @@
 ---
-title: "完成对表中使用 WCF 服务模型的 Oracle E-business Suite 的较大的数据类型的操作 |Microsoft 文档"
-ms.custom: 
+title: 完成对表中使用 WCF 服务模型的 Oracle E-business Suite 的较大的数据类型的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93ba3191-d234-424a-b2da-dcf384df4985
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967587"
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="cee18-102">完成对表中使用 WCF 服务模型的 Oracle E-business Suite 的较大的数据类型的操作</span><span class="sxs-lookup"><span data-stu-id="cee18-102">Complete operations on tables with large data types in Oracle E-Business Suite using the WCF service model</span></span>
 <span data-ttu-id="cee18-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端可以执行对接口表和视图的较大的数据类型，如 BLOB、 CLOB、 NCLOB、 和 BFILE 操作。</span><span class="sxs-lookup"><span data-stu-id="cee18-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] enables adapter clients to perform operations on interface tables and views with large data types such as BLOB, CLOB, NCLOB, and BFILE.</span></span>  

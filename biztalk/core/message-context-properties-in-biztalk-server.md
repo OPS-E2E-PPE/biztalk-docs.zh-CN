@@ -1,15 +1,15 @@
 ---
-title: "使用 TIBCO EMS 消息上下文属性 |Microsoft 文档"
-description: "使用 BizTalk Server 业务流程中的 TIBCO 企业消息系统消息描述符字段"
-ms.custom: 
+title: 使用 TIBCO EMS 消息上下文属性 |Microsoft 文档
+description: 使用 BizTalk Server 业务流程中的 TIBCO 企业消息系统消息描述符字段
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 163ac2cf-0e2d-4780-b398-baa825f92b00
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970435"
 ---
 # <a name="message-context-properties-in-tibco-ems"></a><span data-ttu-id="98080-103">在 TIBCO EMS 消息上下文属性</span><span class="sxs-lookup"><span data-stu-id="98080-103">Message Context Properties in TIBCO EMS</span></span>
 

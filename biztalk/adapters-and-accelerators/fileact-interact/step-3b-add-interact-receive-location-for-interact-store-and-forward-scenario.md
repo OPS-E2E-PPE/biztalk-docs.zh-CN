@@ -1,14 +1,14 @@
 ---
-title: "步骤 3B： 添加交互接收位置交互应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3B： 添加交互接收位置交互应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da077518-b2ee-4b5f-88d0-fe73af2baa7a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966667"
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="416f9-102">步骤 3B： 添加交互接收交互应用商店应用和向前情况下的位置</span><span class="sxs-lookup"><span data-stu-id="416f9-102">Step 3B: Add an INTERACT Receive Location for the InterAct Store and Forward Scenario</span></span>
 <span data-ttu-id="416f9-103">完成[步骤 3A： 添加文件接收位置交互应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)在开始此步骤之前。</span><span class="sxs-lookup"><span data-stu-id="416f9-103">Complete [Step 3A: Add a FILE Receive Location for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md) before you begin this step.</span></span>
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="416f9-117">**用户名**</span><span class="sxs-lookup"><span data-stu-id="416f9-117">**User name**</span></span>|<span data-ttu-id="416f9-118">键入用于连接到压降的用户名称。</span><span class="sxs-lookup"><span data-stu-id="416f9-118">Type the user name you use to connect to SAG.</span></span>|  
     |<span data-ttu-id="416f9-119">**应用程序名称**</span><span class="sxs-lookup"><span data-stu-id="416f9-119">**Application name**</span></span>|<span data-ttu-id="416f9-120">键入的服务器\<应用程序接口名称\>压降框中路由组。</span><span class="sxs-lookup"><span data-stu-id="416f9-120">Type the Server \<Application Interface Name\> for the SAG box routing set.</span></span>|  
     |<span data-ttu-id="416f9-121">**加密模式**</span><span class="sxs-lookup"><span data-stu-id="416f9-121">**Crypto Mode**</span></span>|<span data-ttu-id="416f9-122">从下拉列表中选择**高级**。</span><span class="sxs-lookup"><span data-stu-id="416f9-122">From the drop-down list, select **Advanced**.</span></span>|  
-    |<span data-ttu-id="416f9-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="416f9-123">**LogMessageBody**</span></span>|<span data-ttu-id="416f9-124">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="416f9-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="416f9-125">**注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="416f9-125">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="416f9-126">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="416f9-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
+    |<span data-ttu-id="416f9-123">**LogMessageBody**</span><span class="sxs-lookup"><span data-stu-id="416f9-123">**LogMessageBody**</span></span>|<span data-ttu-id="416f9-124">从下拉列表中选择**FALSE**。</span><span class="sxs-lookup"><span data-stu-id="416f9-124">From the drop-down list, select **FALSE**.</span></span> <span data-ttu-id="416f9-125">**注意：** 如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。</span><span class="sxs-lookup"><span data-stu-id="416f9-125">**Note:**  If you set to TRUE, it preserves the message body in the BizTalk Tracking database.</span></span> <span data-ttu-id="416f9-126">但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。</span><span class="sxs-lookup"><span data-stu-id="416f9-126">However, for security reasons, the message body can never be viewed in the BAM portal.</span></span>|  
     |<span data-ttu-id="416f9-127">**日志消息**</span><span class="sxs-lookup"><span data-stu-id="416f9-127">**LogMessages**</span></span>|<span data-ttu-id="416f9-128">从下拉列表中选择**TRUE**。</span><span class="sxs-lookup"><span data-stu-id="416f9-128">From the drop-down list, select **TRUE**.</span></span> <span data-ttu-id="416f9-129">这样将捕获和 BAM 门户中跟踪消息事件。</span><span class="sxs-lookup"><span data-stu-id="416f9-129">This enables the message events to be captured and tracked in the BAM portal.</span></span>|  
     |<span data-ttu-id="416f9-130">**消息格式**</span><span class="sxs-lookup"><span data-stu-id="416f9-130">**Message format**</span></span>|<span data-ttu-id="416f9-131">从下拉列表中选择**InterActMessage**。</span><span class="sxs-lookup"><span data-stu-id="416f9-131">From the drop-down list, select **InterActMessage**.</span></span>|  
     |<span data-ttu-id="416f9-132">**MemberRef**</span><span class="sxs-lookup"><span data-stu-id="416f9-132">**MemberRef**</span></span>|<span data-ttu-id="416f9-133">从下拉列表中选择**ResponseHeader**。</span><span class="sxs-lookup"><span data-stu-id="416f9-133">From the drop-down list, select **ResponseHeader**.</span></span>|  

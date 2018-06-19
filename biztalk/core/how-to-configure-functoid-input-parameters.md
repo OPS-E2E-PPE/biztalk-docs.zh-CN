@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969539"
 ---
 # <a name="how-to-configure-functoid-input-parameters"></a><span data-ttu-id="cc9a0-102">如何配置 Functoid 输入参数</span><span class="sxs-lookup"><span data-stu-id="cc9a0-102">How to Configure Functoid Input Parameters</span></span>
 <span data-ttu-id="cc9a0-103">正确配置映射中 functoid 的输入参数是使用 functoid 最重要的一个方面，也是最可能出错的一个环节。</span><span class="sxs-lookup"><span data-stu-id="cc9a0-103">Properly configuring the input parameters to the functoids in your map is one of the most important, and potentially error-prone, aspects of using functoids.</span></span> <span data-ttu-id="cc9a0-104">可以配置 functoid 输入的参数，如下所示：</span><span class="sxs-lookup"><span data-stu-id="cc9a0-104">You can configure the functoid input parameters as follows:</span></span>  

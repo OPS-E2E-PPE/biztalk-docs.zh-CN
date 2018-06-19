@@ -1,11 +1,11 @@
 ---
-title: "维护不可否认性数据库表 |Microsoft 文档"
-ms.custom: 
+title: 维护不可否认性数据库表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases, purging
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - databases, maintaining
 - non-repudiation, database
 ms.assetid: 29222510-325b-4cd7-854b-6f548a63fd08
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210605"
 ---
 # <a name="maintaining-the-non-repudiation-database-tables"></a><span data-ttu-id="61f84-102">维护不可否认性数据库表</span><span class="sxs-lookup"><span data-stu-id="61f84-102">Maintaining the Non-Repudiation Database Tables</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="61f84-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]存储消息，以便不可否认性 BTARNArchive 数据库的 MessageStorageIn 和 MessageStorageOut 表中。</span><span class="sxs-lookup"><span data-stu-id="61f84-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] stores messages for non-repudiation purposes in the MessageStorageIn and MessageStorageOut tables of the BTARNArchive database.</span></span> <span data-ttu-id="61f84-104">这些表中的许多消息都可能影响系统的性能。</span><span class="sxs-lookup"><span data-stu-id="61f84-104">Many messages in these tables can affect system performance.</span></span> <span data-ttu-id="61f84-105">可以根据需要对不可否认性数据库表中的消息定期进行清除和存档，以便维护这些数据库表。</span><span class="sxs-lookup"><span data-stu-id="61f84-105">You may want to maintain these non-repudiation database tables by periodically purging and archiving messages from these tables, as appropriate.</span></span>  

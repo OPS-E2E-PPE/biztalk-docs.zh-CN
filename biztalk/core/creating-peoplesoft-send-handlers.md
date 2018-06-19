@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce67da59-26a6-44a2-929c-ed3acb21d407
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969547"
 ---
 # <a name="create-peoplesoft-send-artifacts"></a><span data-ttu-id="86d53-103">创建 PeopleSoft 发送项目</span><span class="sxs-lookup"><span data-stu-id="86d53-103">Create PeopleSoft send artifacts</span></span>
 <span data-ttu-id="86d53-104">适用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器用于访问 PeopleSoft，以及浏览可用组件或处理 SOAP 请求。</span><span class="sxs-lookup"><span data-stu-id="86d53-104">Microsoft BizTalk Adapter for PeopleSoft Enterprise accesses PeopleSoft and explores available components or processes SOAP requests.</span></span> <span data-ttu-id="86d53-105">本主题演示如何在 BizTalk Server 管理来使用 PeopleSoft 适配器中创建的发送项目。</span><span class="sxs-lookup"><span data-stu-id="86d53-105">This topic shows you how to create the send artifacts in BizTalk Server Administration to use the PeopleSoft adapter.</span></span>

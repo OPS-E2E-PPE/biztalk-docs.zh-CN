@@ -1,14 +1,14 @@
 ---
-title: "数据库层中的瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 数据库层中的瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55b37393-32dc-4717-bf62-48588c23dd78
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299941"
 ---
 # <a name="bottlenecks-in-the-database-tier"></a><span data-ttu-id="776c3-102">数据库层中的瓶颈</span><span class="sxs-lookup"><span data-stu-id="776c3-102">Bottlenecks in the Database Tier</span></span>
 <span data-ttu-id="776c3-103">本部分说明如何确定 BizTalk MessageBox 数据库、 跟踪数据库和 BAM 主导入数据库中的瓶颈。</span><span class="sxs-lookup"><span data-stu-id="776c3-103">This section explains how to identify bottlenecks in the BizTalk MessageBox database, Tracking database, and BAM Primary Import database.</span></span> <span data-ttu-id="776c3-104">它还说明了如何避免磁盘争用。</span><span class="sxs-lookup"><span data-stu-id="776c3-104">It also explains how to avoid disk contention.</span></span>  

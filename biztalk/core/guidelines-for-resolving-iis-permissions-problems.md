@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970571"
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a><span data-ttu-id="40e2a-102">以解决 IIS 权限问题的指导原则</span><span class="sxs-lookup"><span data-stu-id="40e2a-102">Guidelines for Resolving IIS Permissions Problems</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="40e2a-103"> 将 Microsoft Internet 信息服务 (IIS) 广泛应用于 Web Services 支持，并与 HTTP、SOAP 和 Windows SharePoint Services 适配器一起使用。</span><span class="sxs-lookup"><span data-stu-id="40e2a-103"> makes extensive use of Microsoft Internet Information Services (IIS) for Web services support and for use with the HTTP, SOAP, and Windows SharePoint Services adapters.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="40e2a-116">单击**启动**，然后**所有程序**，然后单击**Internet Information Services (IIS) 7 Manager**。</span><span class="sxs-lookup"><span data-stu-id="40e2a-116">Click **Start**, then **All Programs**, and click **Internet Information Services (IIS) 7 Manager**.</span></span>  
   
-2.  <span data-ttu-id="40e2a-117">在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>***（用户帐户）**单击**应用程序池**。</span><span class="sxs-lookup"><span data-stu-id="40e2a-117">In Internet Information Services (IIS) Manager, expand *\<computer name\>***(User account)** and click **Application Pools**.</span></span>  
+2.  <span data-ttu-id="40e2a-117">在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>***（用户帐户）** 单击**应用程序池**。</span><span class="sxs-lookup"><span data-stu-id="40e2a-117">In Internet Information Services (IIS) Manager, expand *\<computer name\>***(User account)** and click **Application Pools**.</span></span>  
   
 3.  <span data-ttu-id="40e2a-118">右键单击应用程序池，单击**查看应用程序**若要查看与应用程序池关联的应用程序。</span><span class="sxs-lookup"><span data-stu-id="40e2a-118">Right-click an application pool and click **View Applications** to see the applications associated with the application pool.</span></span>  
   
@@ -54,17 +55,17 @@ ms.lasthandoff: 11/28/2017
   
  <span data-ttu-id="40e2a-124">IIS 7.0 支持以下用户验证方法：</span><span class="sxs-lookup"><span data-stu-id="40e2a-124">IIS 7.0 supports the following user authentication methods:</span></span>  
   
--   <span data-ttu-id="40e2a-125">**匿名访问：**允许用户建立匿名连接。</span><span class="sxs-lookup"><span data-stu-id="40e2a-125">**Anonymous access:** Allows users to establish an anonymous connection.</span></span> <span data-ttu-id="40e2a-126">IIS 服务器以指定的 Guest 帐户登录用户。</span><span class="sxs-lookup"><span data-stu-id="40e2a-126">The IIS server logs on the user with the specified guest account.</span></span>  
+-   <span data-ttu-id="40e2a-125">**匿名访问：** 允许用户建立匿名连接。</span><span class="sxs-lookup"><span data-stu-id="40e2a-125">**Anonymous access:** Allows users to establish an anonymous connection.</span></span> <span data-ttu-id="40e2a-126">IIS 服务器以指定的 Guest 帐户登录用户。</span><span class="sxs-lookup"><span data-stu-id="40e2a-126">The IIS server logs on the user with the specified guest account.</span></span>  
   
 -   <span data-ttu-id="40e2a-127">**ASP.NET 模拟**允许应用程序在两个不同的上下文之一中运行： 作为通过 IIS 身份验证的用户或作为你设置的任意帐户。</span><span class="sxs-lookup"><span data-stu-id="40e2a-127">**ASP.NET Impersonation** Allows an application to run in one of two different contexts: either as the user authenticated by IIS or as an arbitrary account that you set up.</span></span>  
   
--   <span data-ttu-id="40e2a-128">**基本身份验证：**纯文本，以未加密形式在网络上传输密码。</span><span class="sxs-lookup"><span data-stu-id="40e2a-128">**Basic authentication:** Transmits passwords across the network in plaintext, an unencrypted form.</span></span>  
+-   <span data-ttu-id="40e2a-128">**基本身份验证：** 纯文本，以未加密形式在网络上传输密码。</span><span class="sxs-lookup"><span data-stu-id="40e2a-128">**Basic authentication:** Transmits passwords across the network in plaintext, an unencrypted form.</span></span>  
   
--   <span data-ttu-id="40e2a-129">**摘要式身份验证：**仅适用于 Active Directory 帐户，通过网络，而不是纯文本密码发送一个哈希值。</span><span class="sxs-lookup"><span data-stu-id="40e2a-129">**Digest authentication:** Works only with Active Directory accounts, sending a hash value over the network, rather than a plaintext password.</span></span> <span data-ttu-id="40e2a-130">摘要验证可通过代理服务器和其他防火墙工作，可以在 Web 分布式创作和版本管理 (WebDAV) 目录中使用。</span><span class="sxs-lookup"><span data-stu-id="40e2a-130">Digest authentication works across proxy servers and other firewalls and is available on Web Distributed Authoring and Versioning (WebDAV) directories.</span></span> <span data-ttu-id="40e2a-131">要使用摘要式身份验证，首先必须禁用匿名身份验证。</span><span class="sxs-lookup"><span data-stu-id="40e2a-131">Use of Digest authentication requires that Anonymous authentication is disabled first.</span></span>  
+-   <span data-ttu-id="40e2a-129">**摘要式身份验证：** 仅适用于 Active Directory 帐户，通过网络，而不是纯文本密码发送一个哈希值。</span><span class="sxs-lookup"><span data-stu-id="40e2a-129">**Digest authentication:** Works only with Active Directory accounts, sending a hash value over the network, rather than a plaintext password.</span></span> <span data-ttu-id="40e2a-130">摘要验证可通过代理服务器和其他防火墙工作，可以在 Web 分布式创作和版本管理 (WebDAV) 目录中使用。</span><span class="sxs-lookup"><span data-stu-id="40e2a-130">Digest authentication works across proxy servers and other firewalls and is available on Web Distributed Authoring and Versioning (WebDAV) directories.</span></span> <span data-ttu-id="40e2a-131">要使用摘要式身份验证，首先必须禁用匿名身份验证。</span><span class="sxs-lookup"><span data-stu-id="40e2a-131">Use of Digest authentication requires that Anonymous authentication is disabled first.</span></span>  
   
 -   <span data-ttu-id="40e2a-132">**窗体身份验证**Accommodates 的高流量站点或公共服务器上的应用程序的身份验证。</span><span class="sxs-lookup"><span data-stu-id="40e2a-132">**Forms Authentication** Accommodates authentication for high-traffic sites or applications on public servers.</span></span> <span data-ttu-id="40e2a-133">表单身份验证可管理客户端注册和应用程序级别的身份验证，而非依赖操作系统提供的身份验证机制。</span><span class="sxs-lookup"><span data-stu-id="40e2a-133">Forms authentication lets you manage client registration and authentication at the application level, instead of relying on the authentication mechanisms provided by the operating system.</span></span>  
   
--   <span data-ttu-id="40e2a-134">**Windows 身份验证：**在您的 Windows 域进行身份验证的客户端连接的使用身份验证。</span><span class="sxs-lookup"><span data-stu-id="40e2a-134">**Windows authentication:** Uses authentication on your Windows domain to authenticate client connections.</span></span>  
+-   <span data-ttu-id="40e2a-134">**Windows 身份验证：** 在您的 Windows 域进行身份验证的客户端连接的使用身份验证。</span><span class="sxs-lookup"><span data-stu-id="40e2a-134">**Windows authentication:** Uses authentication on your Windows domain to authenticate client connections.</span></span>  
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a><span data-ttu-id="40e2a-135">设置 IIS 7.0 中虚拟目录的用户访问权限</span><span class="sxs-lookup"><span data-stu-id="40e2a-135">To set user access rights for a virtual directory in IIS 7.0</span></span>  
   

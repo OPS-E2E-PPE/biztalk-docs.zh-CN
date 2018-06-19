@@ -1,15 +1,15 @@
 ---
-title: "在 BizTalk 中使用的 SQL 适配器的查询通知的消息架构 |Microsoft 文档"
-description: "使用 SQL 适配器 BizTalk 中的 SQL Server 数据库从接收查询通知"
-ms.custom: 
+title: 在 BizTalk 中使用的 SQL 适配器的查询通知的消息架构 |Microsoft 文档
+description: 使用 SQL 适配器 BizTalk 中的 SQL Server 数据库从接收查询通知
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5183655-64d4-4767-a923-0a575e3708cd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963396"
 ---
 # <a name="message-schemas-for-query-notification"></a><span data-ttu-id="816ee-103">查询通知的消息架构</span><span class="sxs-lookup"><span data-stu-id="816ee-103">Message Schemas for Query Notification</span></span>
 <span data-ttu-id="816ee-104">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]面，用于从 SQL Server 数据库接收查询通知的通知操作。</span><span class="sxs-lookup"><span data-stu-id="816ee-104">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the Notification operation to receive query notifications from the SQL Server database.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "步骤 2： 为 V2.3.1 创建通用架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 为 V2.3.1 创建通用架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, common schemas
 - common schemas
 ms.assetid: db1a2206-559f-475a-803d-55522cce007e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960987"
 ---
 # <a name="step-2-create-common-schemas-for-v231"></a><span data-ttu-id="4ca40-102">步骤 2： 为 V2.3.1 创建通用架构</span><span class="sxs-lookup"><span data-stu-id="4ca40-102">Step 2: Create Common Schemas for V2.3.1</span></span>
 <span data-ttu-id="4ca40-103">V2.3.1 架构是经常引用的架构，用于验证消息实例。</span><span class="sxs-lookup"><span data-stu-id="4ca40-103">The V2.3.1 schemas are commonly referenced schemas, which you use to validate the message instance.</span></span>  

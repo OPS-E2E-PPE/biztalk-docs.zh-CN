@@ -1,11 +1,11 @@
 ---
-title: "创建一个通道，使用 SAP |Microsoft 文档"
-ms.custom: 
+title: 创建一个通道，使用 SAP |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - channel programming, creating a channel
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating a channel
 - WCF channel model, creating a channel
 ms.assetid: 24af1465-bb60-41d7-98bd-e501a981f82a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963971"
 ---
 # <a name="create-a-channel-using-sap"></a><span data-ttu-id="7789f-102">创建一个通道，使用 SAP</span><span class="sxs-lookup"><span data-stu-id="7789f-102">Create a channel using SAP</span></span>
 <span data-ttu-id="7789f-103">在 WCF 通道模型中，调用 SAP 系统上的操作或从 SAP 系统接收消息，通过交换使用 SOAP 消息[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="7789f-103">In the WCF channel model, you invoke operations on the SAP system or receive messages from the SAP system by exchanging SOAP messages with the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] over a WCF channel.</span></span>  

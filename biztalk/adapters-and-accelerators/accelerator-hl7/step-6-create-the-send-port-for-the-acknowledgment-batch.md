@@ -1,14 +1,14 @@
 ---
-title: "步骤 6： 为确认批处理创建发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 为确认批处理创建发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2a0f1ee-e060-4fb9-923e-ebe8168777d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960947"
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a><span data-ttu-id="6e6d7-102">步骤 6： 为确认批处理创建发送端口</span><span class="sxs-lookup"><span data-stu-id="6e6d7-102">Step 6: Create the Send Port for the Acknowledgment Batch</span></span>
 <span data-ttu-id="6e6d7-103">在此步骤中，你可以创建将你创建的确认批处理传送到源方发送端口。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-103">In this step, you create a send port to deliver the acknowledgment batch that you create to the source party.</span></span> <span data-ttu-id="6e6d7-104">这是文件适配器类型的静态单向端口。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-104">This is a static one-way port with a FILE adapter type.</span></span> <span data-ttu-id="6e6d7-105">其中指定的源 (\Tutorial_BatchACKDrop) 的文件文件夹[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将删除确认批处理文件。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-105">You designate a file folder for the source (\Tutorial_BatchACKDrop), where [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will drop the acknowledgment batch file.</span></span> <span data-ttu-id="6e6d7-106">你定义筛选器，该值指示端口将发送的确认批处理哪种类型的端口。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-106">You define a filter for the port indicating what type of acknowledgment batches the ports will send.</span></span> <span data-ttu-id="6e6d7-107">筛选器指定 Tutorial_BatchSource 和 OutboundBatch 的消息类型的源。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-107">The filter specifies the source of Tutorial_BatchSource and the message type of OutboundBatch.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 01/17/2018
     |<span data-ttu-id="6e6d7-120">使用此选项</span><span class="sxs-lookup"><span data-stu-id="6e6d7-120">Use this</span></span>|<span data-ttu-id="6e6d7-121">执行的操作</span><span class="sxs-lookup"><span data-stu-id="6e6d7-121">To do this</span></span>|  
     |--------------|----------------|  
     |<span data-ttu-id="6e6d7-122">**目标文件夹**</span><span class="sxs-lookup"><span data-stu-id="6e6d7-122">**Destination folder**</span></span>|<span data-ttu-id="6e6d7-123">浏览到 **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_BatchACKDrop快捷键**.</span><span class="sxs-lookup"><span data-stu-id="6e6d7-123">Browse to **\<*drive*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BatchACKDrop**.</span></span> <span data-ttu-id="6e6d7-124">这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含确认批处理的文件。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-124">This is the path to the location on the file system or public share to which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] will write the file containing the acknowledgment batch.</span></span>|  
-    |<span data-ttu-id="6e6d7-125">**File name**</span><span class="sxs-lookup"><span data-stu-id="6e6d7-125">**File name**</span></span>|<span data-ttu-id="6e6d7-126">类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-126">Type **%MessageID%.txt** (replace the .xml extension with the .txt extension).</span></span>|  
+    |<span data-ttu-id="6e6d7-125">**File name**</span><span class="sxs-lookup"><span data-stu-id="6e6d7-125">**File name**</span></span>|<span data-ttu-id="6e6d7-126">类型 **%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-126">Type **%MessageID%.txt** (replace the .xml extension with the .txt extension).</span></span>|  
     |<span data-ttu-id="6e6d7-127">**副本模式**</span><span class="sxs-lookup"><span data-stu-id="6e6d7-127">**Copy mode**</span></span>|<span data-ttu-id="6e6d7-128">选择**创建新**。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-128">Select **Create New**.</span></span>|  
   
 4.  <span data-ttu-id="6e6d7-129">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="6e6d7-129">Click **OK**.</span></span>  

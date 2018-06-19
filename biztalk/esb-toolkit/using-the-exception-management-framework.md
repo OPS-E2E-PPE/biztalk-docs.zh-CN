@@ -1,14 +1,14 @@
 ---
-title: "使用异常管理框架 |Microsoft 文档"
-ms.custom: 
+title: 使用异常管理框架 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b69c9c01-e7e4-4788-8fe2-43d32075155d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295181"
 ---
 # <a name="using-the-exception-management-framework"></a><span data-ttu-id="86755-102">使用异常管理框架</span><span class="sxs-lookup"><span data-stu-id="86755-102">Using the Exception Management Framework</span></span>
 <span data-ttu-id="86755-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用异常的动态转换和路由进行通信失败 （例如，非部署映射或未返回映射名称的规则）。</span><span class="sxs-lookup"><span data-stu-id="86755-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses exceptions to communicate failures (for example, a non-deployed map or rules that do not return a map name) for dynamic transformations and routing.</span></span> <span data-ttu-id="86755-104">当转换或路由过程失败时，ESB 创建一条异常消息，并将其提交通过直接绑定到消息框数据库端口。</span><span class="sxs-lookup"><span data-stu-id="86755-104">When a transformation or routing process fails, the ESB creates an exception message and submits it through a direct-bound port to the Message Box database.</span></span> <span data-ttu-id="86755-105">ESB 还实现名为所有发送端口。订阅和检索异常消息，并将其发布到 ESB 管理门户的异常。</span><span class="sxs-lookup"><span data-stu-id="86755-105">The ESB also implements a send port named ALL.Exceptions that subscribes to and retrieves exception messages and publishes them to the ESB Management Portal.</span></span>  

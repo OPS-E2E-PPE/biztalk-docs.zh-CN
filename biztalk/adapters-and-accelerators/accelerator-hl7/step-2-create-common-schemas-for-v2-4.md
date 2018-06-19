@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960707"
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a><span data-ttu-id="efc98-102">步骤 2： 为 V2.4 创建通用架构</span><span class="sxs-lookup"><span data-stu-id="efc98-102">Step 2: Create Common Schemas for V2.4</span></span>
 <span data-ttu-id="efc98-103">V2.4 架构是经常引用的架构，用于验证查询和响应消息实例。</span><span class="sxs-lookup"><span data-stu-id="efc98-103">The V2.4 schemas are commonly referenced schemas, which you use to validate the query and response message instances.</span></span>  

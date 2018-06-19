@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 反汇编程序和汇编程序功能 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 反汇编程序和汇编程序功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disassembler, about disassembler
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assembler, functionality
 - disassembler, functionality
 ms.assetid: d4fc092e-586d-4360-921d-151af66b8bc1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214037"
 ---
 # <a name="swift-disassembler-and-assembler-functionality"></a><span data-ttu-id="888a2-102">SWIFT 反汇编程序和汇编程序功能</span><span class="sxs-lookup"><span data-stu-id="888a2-102">SWIFT Disassembler and Assembler Functionality</span></span>
 <span data-ttu-id="888a2-103">SWIFT 反汇编程序可以执行以下任务中调用时[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接收管道：</span><span class="sxs-lookup"><span data-stu-id="888a2-103">The SWIFT disassembler can perform the following tasks when invoked in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] receive pipeline:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "合并 BizTalk Server Databases2 |Microsoft 文档"
-ms.custom: 
+title: 合并 BizTalk Server Databases2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7fc4fe6-3fc2-4164-9f16-90b6f473ba8c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296317"
 ---
 # <a name="consolidate-the-biztalk-server-databases2"></a><span data-ttu-id="1f451-102">合并 BizTalk Server 数据库2</span><span class="sxs-lookup"><span data-stu-id="1f451-102">Consolidate the BizTalk Server Databases2</span></span>
 <span data-ttu-id="1f451-103">安装 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可能需要在 Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 中创建多达 13 个单独的数据库，以用作各种 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 功能的数据库。</span><span class="sxs-lookup"><span data-stu-id="1f451-103">A Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation may require the creation of up to 13 separate databases in Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] for use as data stores for various [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] features.</span></span> <span data-ttu-id="1f451-104">由于管理和维护这些数据库需要过多开销，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 允许将多个这样的数据库合并为一个数据库。</span><span class="sxs-lookup"><span data-stu-id="1f451-104">Due to the overhead required to manage and maintain these databases, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] accommodates the consolidation of several of these databases into a single database.</span></span> <span data-ttu-id="1f451-105">本部分介绍如何实现 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库合并，并讨论实现 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库合并的注意事项。</span><span class="sxs-lookup"><span data-stu-id="1f451-105">This section describes how to accomplish [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database consolidation and discusses considerations for implementing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database consolidation.</span></span>  

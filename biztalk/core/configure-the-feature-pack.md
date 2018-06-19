@@ -1,15 +1,15 @@
 ---
-title: "配置功能包 |Microsoft 文档"
-description: "安装并配置功能包 1，和功能包 2。 请参阅新的功能列表中，包括 API 管理、 team services 部署，新的 Azure 适配器、 备份和 BizTalk Server 2016 中的详细信息"
-ms.custom: 
+title: 配置功能包 |Microsoft 文档
+description: 安装并配置功能包 1，和功能包 2。 请参阅新的功能列表中，包括 API 管理、 team services 部署，新的 Azure 适配器、 备份和 BizTalk Server 2016 中的详细信息
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1027bfa6-49b9-4f58-a2e2-3e0ae2fc3bf3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/23/2017
+ms.locfileid: "25550756"
 ---
 # <a name="configure-the-feature-pack"></a><span data-ttu-id="6259a-104">配置功能包</span><span class="sxs-lookup"><span data-stu-id="6259a-104">Configure the feature pack</span></span>
 

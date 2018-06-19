@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Adapter for PeopleSoft 企业体系结构 |Microsoft 文档"
-description: "描述如何接收消息，消息是如何验证，并将具有 BizTalk Server PeopleSoft 适配器时，提供了组件接口方法上的信息"
-ms.custom: 
+title: BizTalk Adapter for PeopleSoft 企业体系结构 |Microsoft 文档
+description: 描述如何接收消息，消息是如何验证，并将具有 BizTalk Server PeopleSoft 适配器时，提供了组件接口方法上的信息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f246e974-a082-430c-ad15-23a5e597738b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013692"
 ---
 # <a name="peoplesoft-enterprise-adapter-architecture"></a><span data-ttu-id="82509-103">PeopleSoft 企业适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="82509-103">PeopleSoft Enterprise adapter architecture</span></span>
 <span data-ttu-id="82509-104">在用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器的基本操作过程中，适配器会接收来自 BizTalk Server 的 XML 消息。</span><span class="sxs-lookup"><span data-stu-id="82509-104">During the basic operation of Microsoft BizTalk Adapter for PeopleSoft Enterprise, the adapter receives an XML message from BizTalk Server.</span></span> <span data-ttu-id="82509-105">它包含 SOAP 信封中的 XML 消息。</span><span class="sxs-lookup"><span data-stu-id="82509-105">It encloses the XML message in a SOAP envelope.</span></span> <span data-ttu-id="82509-106">PeopleSoft Enterprise 的 BizTalk 适配器会将 SOAP 请求转发给服务器。</span><span class="sxs-lookup"><span data-stu-id="82509-106">BizTalk Adapter for PeopleSoft Enterprise forwards the SOAP requests to the server.</span></span> <span data-ttu-id="82509-107">适配器使用 PeopleSoft psjoa 类与 PeopleSoft 系统进行通信，通过 Jolt 事务协议连接到 PeopleSoft 系统。</span><span class="sxs-lookup"><span data-stu-id="82509-107">The adapter communicates with the PeopleSoft system using the PeopleSoft psjoa classes, which connect to the PeopleSoft system through Jolt Transaction Protocol.</span></span> <span data-ttu-id="82509-108">PeopleSoft 系统接收请求，并执行业务逻辑。</span><span class="sxs-lookup"><span data-stu-id="82509-108">The PeopleSoft system receives the request and executes the business logic.</span></span> <span data-ttu-id="82509-109">通过一个类似过程发送回复。</span><span class="sxs-lookup"><span data-stu-id="82509-109">The reply is sent back through a similar process.</span></span>  

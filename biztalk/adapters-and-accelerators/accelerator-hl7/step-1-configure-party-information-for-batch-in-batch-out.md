@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 配置为批处理中批处理的当事方信息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 配置为批处理中批处理的当事方信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a93d774b-1282-40d9-836f-44abeb65f78e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960507"
 ---
 # <a name="step-1-configure-party-information-for-batch-inbatch-out"></a><span data-ttu-id="f1443-102">步骤 1： 配置对批次中的当事方信息/批处理出</span><span class="sxs-lookup"><span data-stu-id="f1443-102">Step 1: Configure Party Information for Batch In/Batch Out</span></span>
 <span data-ttu-id="f1443-103">在此步骤中，你将关闭批处理用于当事方，启用批处理的碎片中 / 批处理出方案。</span><span class="sxs-lookup"><span data-stu-id="f1443-103">In this step, you turn off fragmentation of batching for the party, enabling the Batch In/Batch Out scenario.</span></span> <span data-ttu-id="f1443-104">然后重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]若要启用配置更改才能生效。</span><span class="sxs-lookup"><span data-stu-id="f1443-104">You then restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to enable the configuration change to take effect.</span></span>  

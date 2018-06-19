@@ -1,17 +1,17 @@
 ---
-title: "验证消息 |Microsoft 文档"
-ms.custom: 
+title: 验证消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, verifying
 - verifying, messages
 ms.assetid: df2b72bb-4dc1-4fdd-8f63-35fc73a12151
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961643"
 ---
 # <a name="verifying-a-message"></a><span data-ttu-id="0e563-102">验证消息</span><span class="sxs-lookup"><span data-stu-id="0e563-102">Verifying a Message</span></span>
 <span data-ttu-id="0e563-103">本部分介绍如何验证已修复的消息。</span><span class="sxs-lookup"><span data-stu-id="0e563-103">This section describes how to verify a message that has been repaired.</span></span>  

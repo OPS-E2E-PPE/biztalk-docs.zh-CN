@@ -1,14 +1,14 @@
 ---
-title: "将用于 SharePoint 的 Oracle 数据库适配器 |Microsoft 文档"
-ms.custom: 
+title: 将用于 SharePoint 的 Oracle 数据库适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 254204e5-3b5d-4e70-97ab-817660d1206a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450303"
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a><span data-ttu-id="d37e8-102">将用于 SharePoint 的 Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="d37e8-102">Use the Oracle Database Adapter with SharePoint</span></span>
 <span data-ttu-id="d37e8-103">WCF 适配器服务开发向导[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]为 Oracle 数据库和 Oracle E-business Suite Microsoft BizTalk 适配器将直接使用作为 Microsoft SharePoint 中的外部数据源启用 Microsoft BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="d37e8-103">The WCF Adapter Service Development Wizard for [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)] enables the Microsoft BizTalk Adapter for Oracle Database and the Microsoft BizTalk Adapter for Oracle E-Business Suite to be directly consumed as an external datasource in Microsoft SharePoint.</span></span> <span data-ttu-id="d37e8-104">添加服务开发支持此功能启动向导时与**WCF 适配器服务**用于创建新 Visual C# Web 中的站点模板[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d37e8-104">The Add Service Development Wizard that supports this feature is launched with the **WCF Adapter Service** template for creating a new Visual C# Web Sites in [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="d37e8-105">此模板是附带[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d37e8-105">The template is included with the [!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="d37e8-106">你还必须安装 Microsoft Windows Communication Foundation (WCF) 的业务线 (LOB) 适配器 SDK。</span><span class="sxs-lookup"><span data-stu-id="d37e8-106">You must also install the Microsoft Windows Communication Foundation (WCF) Line of Business (LOB) Adapter SDK.</span></span>  

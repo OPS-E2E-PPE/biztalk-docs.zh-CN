@@ -1,11 +1,11 @@
 ---
-title: "声明自定义项 |Microsoft 文档"
-ms.custom: 
+title: 声明自定义项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - declared customizations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - customizing, Z objects
 - customizing, declared customizations
 ms.assetid: 484655e9-8bfa-4643-bbe6-4ef69cbd83ad
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204781"
 ---
 # <a name="declared-customizations"></a><span data-ttu-id="e721d-102">声明的自定义项</span><span class="sxs-lookup"><span data-stu-id="e721d-102">Declared Customizations</span></span>
 <span data-ttu-id="e721d-103">借助声明自定义，你可以修改或添加到 HL7 消息灵活。</span><span class="sxs-lookup"><span data-stu-id="e721d-103">With declared customizations, you have the flexibility of modifying or adding to HL7 messages.</span></span> <span data-ttu-id="e721d-104">你甚至可以定义新类型的消息。</span><span class="sxs-lookup"><span data-stu-id="e721d-104">You can even define a new type of message.</span></span> <span data-ttu-id="e721d-105">你可以在任何通过以下方式来执行此操作：</span><span class="sxs-lookup"><span data-stu-id="e721d-105">You can do this in any of the following ways:</span></span>  

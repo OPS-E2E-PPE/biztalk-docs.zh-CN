@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 2016： 最新内容、 和安装 |Microsoft 文档"
-description: "什么是新，以及安装和升级到 BizTalk Server 2016 的简介"
-ms.custom: 
+title: BizTalk Server 2016： 最新内容、 和安装 |Microsoft 文档
+description: 什么是新，以及安装和升级到 BizTalk Server 2016 的简介
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 229043b3-b1a4-47e9-9c0e-1fba5ec5b417
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300101"
 ---
 # <a name="biztalk-server-2016-whats-new-and-installation"></a><span data-ttu-id="a00fa-103">BizTalk Server 2016：新增功能和安装</span><span class="sxs-lookup"><span data-stu-id="a00fa-103">BizTalk Server 2016: What's New, and Installation</span></span>
 

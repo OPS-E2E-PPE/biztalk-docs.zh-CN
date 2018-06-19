@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25965347"
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a><span data-ttu-id="a1664-102">生成和发布 SharePoint 站点上的 MT/MX 窗体</span><span class="sxs-lookup"><span data-stu-id="a1664-102">Generating and Publishing MT/MX Forms on the SharePoint Site</span></span>
 <span data-ttu-id="a1664-103">**若要生成和发布 SharePoint 站点上的 MT/MX 窗体：**</span><span class="sxs-lookup"><span data-stu-id="a1664-103">**To generate and publish MT/MX forms on a SharePoint site:**</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  <span data-ttu-id="a1664-105">打开**FormGenerator.sln**从文件夹上面的下载和编译解决方案。</span><span class="sxs-lookup"><span data-stu-id="a1664-105">Open the **FormGenerator.sln** from the folder downloaded above and compile the solution.</span></span>  
   
-3.  <span data-ttu-id="a1664-106">在命令提示符下，访问已编译可执行文件 (FormGenerator.exe) 的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a1664-106">At a command prompt, access the folder of compiled executable (FormGenerator.exe).</span></span> <span data-ttu-id="a1664-107">例如，如果已生成实用工具在调试模式下，访问**...\bin\debug**文件夹。</span><span class="sxs-lookup"><span data-stu-id="a1664-107">For example, if you have built the utility in debug mode, access the **..\bin\debug** folder.</span></span>  
+3.  <span data-ttu-id="a1664-106">在命令提示符下，访问已编译可执行文件 (FormGenerator.exe) 的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a1664-106">At a command prompt, access the folder of compiled executable (FormGenerator.exe).</span></span> <span data-ttu-id="a1664-107">例如，如果已生成实用工具在调试模式下，访问 **...\bin\debug**文件夹。</span><span class="sxs-lookup"><span data-stu-id="a1664-107">For example, if you have built the utility in debug mode, access the **..\bin\debug** folder.</span></span>  
   
 4.  <span data-ttu-id="a1664-108">键入 FormGenerator.exe [-b] [-\<否。</span><span class="sxs-lookup"><span data-stu-id="a1664-108">Type FormGenerator.exe [-b] [-\<No.</span></span> <span data-ttu-id="a1664-109">模板文件夹路径\>]</span><span class="sxs-lookup"><span data-stu-id="a1664-109">of Template folder paths\>]</span></span>  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/18/2018
   
 12. <span data-ttu-id="a1664-128">在发布向导窗口中，选择**到网络位置**单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="a1664-128">In the publishing wizard window, select **To a network location** and click **Next**.</span></span>  
   
-13. <span data-ttu-id="a1664-129">在窗体模板路径和文件名称文本框中，键入 **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**和类型**\<MessageType\>**窗体中模板名称文本框中，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="a1664-129">In the Form template path and file name textbox, type **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** and type **\<MessageType\>** in the Form Template name textbox and click **Next**.</span></span>  
+13. <span data-ttu-id="a1664-129">在窗体模板路径和文件名称文本框中，键入 **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**和类型**\<MessageType\>** 窗体中模板名称文本框中，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="a1664-129">In the Form template path and file name textbox, type **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** and type **\<MessageType\>** in the Form Template name textbox and click **Next**.</span></span>  
   
 14. <span data-ttu-id="a1664-130">单击“下一步” 。</span><span class="sxs-lookup"><span data-stu-id="a1664-130">Click **Next**.</span></span>  
   

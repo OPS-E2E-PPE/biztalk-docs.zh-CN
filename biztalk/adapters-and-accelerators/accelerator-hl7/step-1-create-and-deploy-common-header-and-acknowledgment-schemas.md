@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960395"
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a><span data-ttu-id="6d606-102">步骤 1： 创建和部署常见标头和确认架构</span><span class="sxs-lookup"><span data-stu-id="6d606-102">Step 1: Create and Deploy Common Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="6d606-103">使用标头架构来验证消息实例的标头 （MSH 段）。</span><span class="sxs-lookup"><span data-stu-id="6d606-103">You use the header schema to validate the header (MSH segment) of the message instance.</span></span> <span data-ttu-id="6d606-104">确认架构用于生成消息实例确认。</span><span class="sxs-lookup"><span data-stu-id="6d606-104">You use the acknowledgment schema to generate the acknowledgment for the message instance.</span></span> <span data-ttu-id="6d606-105">跨所有 HL7 架构版本，此过程是公共的。</span><span class="sxs-lookup"><span data-stu-id="6d606-105">This process is common across all HL7 schema versions.</span></span>  

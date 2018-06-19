@@ -1,18 +1,18 @@
 ---
-title: "步骤 17： 创建 WSClient 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 17： 创建 WSClient 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WSClient application
 - message enrichment tutorial, WSClient application
 - creating, WSClient application
 ms.assetid: 2849cd4c-30d0-47ab-8161-fab379d5a548
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960867"
 ---
 # <a name="step-17-create-the-wsclient-application"></a><span data-ttu-id="3e1c4-102">步骤 17： 创建 WSClient 应用程序</span><span class="sxs-lookup"><span data-stu-id="3e1c4-102">Step 17: Create the WSClient Application</span></span>
 <span data-ttu-id="3e1c4-103">WSClient.exe （Web 服务客户端） 是编写的控制台应用程序[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]，演示了如何将数据发送到作为 Web 服务与先前步骤中发布的业务流程。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-103">WSClient.exe (Web service client) is a console application written in [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)] that illustrates how to send data to the orchestration that you published as a Web service in the previous steps.</span></span> <span data-ttu-id="3e1c4-104">WSClient 应用程序接受四个输入参数顺序： 患者的名字、 中间名分别姓氏和身份证号。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-104">The WSClient application accepts four input parameters in order: patient first name, middle name, last name, and social security number, respectively.</span></span> <span data-ttu-id="3e1c4-105">若要将患者信息发送到你的 Web 服务，请使用以下命令行语法：</span><span class="sxs-lookup"><span data-stu-id="3e1c4-105">To send patient information to your Web service, use the following command line syntax:</span></span>  
@@ -33,7 +34,7 @@ wsclient john henry smith 123456789
   
 1.  <span data-ttu-id="3e1c4-107">在解决方案资源管理器，右键单击**解决方案 BTAHL7V22Common**，单击**添加**，然后单击**新项目**。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-107">In Solution Explorer, right-click **Solution 'BTAHL7V22Common'**, click **Add**, and then click **New Project**.</span></span>  
   
-2.  <span data-ttu-id="3e1c4-108">在**添加新项目**对话框中，在**项目类型**窗格中，单击**Visual C#**并在**模板**窗格中，单击**控制台应用程序**。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
+2.  <span data-ttu-id="3e1c4-108">在**添加新项目**对话框中，在**项目类型**窗格中，单击**Visual C#** 并在**模板**窗格中，单击**控制台应用程序**。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
   
 3.  <span data-ttu-id="3e1c4-109">在**名称**字段中，键入**WSClient**。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-109">In the **Name** field, type **WSClient**.</span></span> <span data-ttu-id="3e1c4-110">在**位置**字段中，浏览到 **\<*驱动器*\>: \Tutorial**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-110">In the **Location** field, browse to **\<*drive*\>:\Tutorial**, and then click **OK**.</span></span> <span data-ttu-id="3e1c4-111">解决方案资源管理器将 WSClient 添加到树中，并且 Program.cs 文件中会出现。</span><span class="sxs-lookup"><span data-stu-id="3e1c4-111">Solution Explorer adds WSClient to the tree, and the Program.cs file appears.</span></span>  
   

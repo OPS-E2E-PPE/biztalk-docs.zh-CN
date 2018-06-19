@@ -1,15 +1,15 @@
 ---
-title: "服务总线消息传送适配器 |Microsoft 文档"
-description: "发送和接收消息 BizTalk Server 中使用的 Azure SB 消息传送的适配器"
-ms.custom: 
+title: 服务总线消息传送适配器 |Microsoft 文档
+description: 发送和接收消息 BizTalk Server 中使用的 Azure SB 消息传送的适配器
+ms.custom: ''
 ms.date: 11/21/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c06c4934-45b2-4f6f-9d19-3ebd937c32ae
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497870"
 ---
 # <a name="sb-messaging-adapter"></a><span data-ttu-id="516b8-103">SB 消息适配器</span><span class="sxs-lookup"><span data-stu-id="516b8-103">SB-Messaging Adapter</span></span>
 <span data-ttu-id="516b8-104">Service Bus (**SB 消息**) 适配器用于接收和发送从服务总线实体，如队列、 主题和中继。</span><span class="sxs-lookup"><span data-stu-id="516b8-104">The Service Bus (**SB-Messaging**) adapter is used to receive and send from Service Bus entities like Queues, Topics, and Relays.</span></span> <span data-ttu-id="516b8-105">你可以使用**SB 消息**适配器以连接本地[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到 Azure。</span><span class="sxs-lookup"><span data-stu-id="516b8-105">You can use the **SB-Messaging** adapter to connect your on-premises [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to Azure.</span></span>

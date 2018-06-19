@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 配置的端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置的端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e804da96-26ae-482d-b6e1-67af24d639d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967283"
 ---
 # <a name="step-2-configure-the-ports"></a><span data-ttu-id="b2148-102">步骤 2： 配置的端口</span><span class="sxs-lookup"><span data-stu-id="b2148-102">Step 2: Configure the Ports</span></span>
 <span data-ttu-id="b2148-103">![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="b2148-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="b2148-104">**完成时间：** 15 分钟</span><span class="sxs-lookup"><span data-stu-id="b2148-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="b2148-105">**目标：**在此步骤中，你将创建中的物理端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="b2148-105">**Objective:** In this step, you create the physical ports in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="b2148-106">创建用于在业务流程中创建的每个逻辑端口的物理端口。</span><span class="sxs-lookup"><span data-stu-id="b2148-106">You create a physical port for each logical port you created in the orchestration.</span></span> <span data-ttu-id="b2148-107">您将创建以下端口：</span><span class="sxs-lookup"><span data-stu-id="b2148-107">You will create the following ports:</span></span>  
+ <span data-ttu-id="b2148-105">**目标：** 在此步骤中，你将创建中的物理端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="b2148-105">**Objective:** In this step, you create the physical ports in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="b2148-106">创建用于在业务流程中创建的每个逻辑端口的物理端口。</span><span class="sxs-lookup"><span data-stu-id="b2148-106">You create a physical port for each logical port you created in the orchestration.</span></span> <span data-ttu-id="b2148-107">您将创建以下端口：</span><span class="sxs-lookup"><span data-stu-id="b2148-107">You will create the following ports:</span></span>  
   
 -   <span data-ttu-id="b2148-108">单向的 WCF 自定义接收端口来接收到的更改的通知消息**员工**SQL Server 数据库中的表。</span><span class="sxs-lookup"><span data-stu-id="b2148-108">A one-way WCF-Custom receive port to receive notification messages for changes to **Employee** table in a SQL Server database.</span></span>  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="b2148-124">绑定属性</span><span class="sxs-lookup"><span data-stu-id="b2148-124">Binding property</span></span>|<span data-ttu-id="b2148-125">值</span><span class="sxs-lookup"><span data-stu-id="b2148-125">Value</span></span>|  
     |----------------------|-----------|  
     |<span data-ttu-id="b2148-126">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="b2148-126">**InboundOperationType**</span></span>|<span data-ttu-id="b2148-127">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="b2148-127">Set this to **Notification**.</span></span>|  
-    |<span data-ttu-id="b2148-128">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="b2148-128">**NotificationStatement**</span></span>|<span data-ttu-id="b2148-129">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="b2148-129">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="b2148-130">**注意：**你必须专门的列名称在语句中指定此 Select 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="b2148-130">**Note:** You must specifically specify the column names in the statement as shown in this Select statement.</span></span> <span data-ttu-id="b2148-131">此外，你必须始终指定表名称以及架构名称，例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="b2148-131">Also, you must always specify the table name along with the schema name, for example, `dbo.Employee`.</span></span>|  
+    |<span data-ttu-id="b2148-128">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="b2148-128">**NotificationStatement**</span></span>|<span data-ttu-id="b2148-129">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="b2148-129">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="b2148-130">**注意：** 你必须专门的列名称在语句中指定此 Select 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="b2148-130">**Note:** You must specifically specify the column names in the statement as shown in this Select statement.</span></span> <span data-ttu-id="b2148-131">此外，你必须始终指定表名称以及架构名称，例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="b2148-131">Also, you must always specify the table name along with the schema name, for example, `dbo.Employee`.</span></span>|  
     |<span data-ttu-id="b2148-132">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="b2148-132">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="b2148-133">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="b2148-133">Set this to **True**.</span></span>|  
   
      <span data-ttu-id="b2148-134">有关不同的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="b2148-134">For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  

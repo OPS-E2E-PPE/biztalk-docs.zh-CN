@@ -1,14 +1,14 @@
 ---
-title: "教程 1： 从 SharePoint 站点上的 Siebel 系统提供数据 |Microsoft 文档"
-ms.custom: 
+title: 教程 1： 从 SharePoint 站点上的 Siebel 系统提供数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd06f75-75d1-4fad-8f34-51c97c7790e3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963083"
 ---
 # <a name="tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site"></a><span data-ttu-id="a6b3c-102">教程 1： 从 SharePoint 站点上的 Siebel 系统提供数据</span><span class="sxs-lookup"><span data-stu-id="a6b3c-102">Tutorial 1: Presenting Data From a Siebel System on a SharePoint Site</span></span>
 <span data-ttu-id="a6b3c-103">本教程提供了详细的说明[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]与 Microsoft Office SharePoint Server，在 SharePoint 门户网站上显示的业务数据免遭 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="a6b3c-103">This tutorial provides detailed instructions on using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Microsoft Office SharePoint Server to present business data from a Siebel system on a SharePoint portal.</span></span> <span data-ttu-id="a6b3c-104">若要演示如何使用[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]与 Office SharePoint Server，我们创建应用程序在 Office SharePoint Server，以检索从 Siebel 存储库使用的客户帐户的列表中[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a6b3c-104">To demonstrate how to use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Office SharePoint Server, we create an application in Office SharePoint Server to retrieve a list of customer accounts from the Siebel repository using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  

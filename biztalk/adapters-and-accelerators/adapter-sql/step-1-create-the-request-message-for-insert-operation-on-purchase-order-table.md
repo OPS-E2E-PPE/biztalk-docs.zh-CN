@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fde018d8-9d9a-42ea-8ee9-e3632450b9d7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966003"
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a><span data-ttu-id="cabd4-102">步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息</span><span class="sxs-lookup"><span data-stu-id="cabd4-102">Step 1: Create the Request Message for Insert Operation on Purchase_Order Table</span></span>
 <span data-ttu-id="cabd4-103">![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="cabd4-103">![Step 1 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
   
  <span data-ttu-id="cabd4-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="cabd4-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="cabd4-105">**目标：**在此步骤中，你可以将 C# 类库项目添加到你的解决方案。</span><span class="sxs-lookup"><span data-stu-id="cabd4-105">**Objective:** In this step, you add a C# class library project to your solution.</span></span> <span data-ttu-id="cabd4-106">此库上创建插入操作的一个内存中请求消息**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="cabd4-106">This library creates an in-memory request message for the Insert operation on the **Purchase_Order** table.</span></span> <span data-ttu-id="cabd4-107">在后续步骤中，业务流程将此邮件发送到 SQL Server 以在表中插入记录。</span><span class="sxs-lookup"><span data-stu-id="cabd4-107">In later steps, the orchestration sends this message to SQL Server to insert records in the table.</span></span>  
+ <span data-ttu-id="cabd4-105">**目标：** 在此步骤中，你可以将 C# 类库项目添加到你的解决方案。</span><span class="sxs-lookup"><span data-stu-id="cabd4-105">**Objective:** In this step, you add a C# class library project to your solution.</span></span> <span data-ttu-id="cabd4-106">此库上创建插入操作的一个内存中请求消息**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="cabd4-106">This library creates an in-memory request message for the Insert operation on the **Purchase_Order** table.</span></span> <span data-ttu-id="cabd4-107">在后续步骤中，业务流程将此邮件发送到 SQL Server 以在表中插入记录。</span><span class="sxs-lookup"><span data-stu-id="cabd4-107">In later steps, the orchestration sends this message to SQL Server to insert records in the table.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="cabd4-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="cabd4-108">Prerequisites</span></span>  
  <span data-ttu-id="cabd4-109">你必须已完成中的步骤[第 3 课： 执行存储过程向选择新添加的员工](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)。</span><span class="sxs-lookup"><span data-stu-id="cabd4-109">You must have completed the steps in [Lesson 3: Execute a Stored Procedure to Select New Employees Added](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md).</span></span>  

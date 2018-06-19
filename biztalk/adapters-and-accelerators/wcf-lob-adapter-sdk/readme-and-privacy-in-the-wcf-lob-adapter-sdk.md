@@ -1,14 +1,14 @@
 ---
-title: "自述文件和 WCF LOB 适配器 SDK 中的隐私 |Microsoft 文档"
-ms.custom: 
+title: 自述文件和 WCF LOB 适配器 SDK 中的隐私 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 539a88f9-ce59-46e6-8c9a-418484eabff4
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965163"
 ---
 # <a name="readme-and-privacy-in-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="54c60-102">自述文件和 WCF LOB 适配器 SDK 中的隐私</span><span class="sxs-lookup"><span data-stu-id="54c60-102">Readme and privacy in the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="54c60-103">Windows Communication Foundation (WCF) 行的业务 (LOB) 适配器软件开发工具包 (SDK)</span><span class="sxs-lookup"><span data-stu-id="54c60-103">The Windows Communication Foundation (WCF) Line of Business (LOB) Adapter Software Development Kit (SDK)</span></span>  

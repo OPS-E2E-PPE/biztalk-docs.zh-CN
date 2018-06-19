@@ -1,14 +1,14 @@
 ---
-title: "如何捕获所 Crashing 进程内存转储 |Microsoft 文档"
-ms.custom: 
+title: 如何捕获所 Crashing 进程内存转储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f436b72-2b6a-4519-acc3-e7ba978651fe
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969563"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-crashing"></a><span data-ttu-id="2a251-102">如何捕获所 Crashing 进程内存转储</span><span class="sxs-lookup"><span data-stu-id="2a251-102">How to Capture a Memory Dump of a Process that is Crashing</span></span>
 <span data-ttu-id="2a251-103">BTSNTSvc.exe 定义为 BizTalk 进程**崩溃**进程由 Windows 的意外终止时。</span><span class="sxs-lookup"><span data-stu-id="2a251-103">The BizTalk process BTSNTSvc.exe is defined as **crashing** when the process is unexpectedly terminated by Windows.</span></span> <span data-ttu-id="2a251-104">崩溃通常是由进程中未处理的异常（如访问冲突或堆栈溢出）引起的。</span><span class="sxs-lookup"><span data-stu-id="2a251-104">A crash is typically caused by an unhandled exception in the process such as an access violation or a stack overflow.</span></span> <span data-ttu-id="2a251-105">在这些情况下，Windows 默认调试器，灾难恢复。Watson (drwtsn32.exe) 捕获异常并终止进程。</span><span class="sxs-lookup"><span data-stu-id="2a251-105">In these situations, the Windows default debugger, Dr. Watson (drwtsn32.exe) catches the exception and terminates the process.</span></span>  

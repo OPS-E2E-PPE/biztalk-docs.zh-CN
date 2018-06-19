@@ -1,14 +1,14 @@
 ---
-title: "优化 MQSeries 适配器性能 |Microsoft 文档"
-ms.custom: 
+title: 优化 MQSeries 适配器性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a46455c-a8d2-4427-99bb-4e3c6dbd9566
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299125"
 ---
 # <a name="optimizing-mqseries-adapter-performance"></a><span data-ttu-id="e62e3-102">优化 MQSeries 适配器性能</span><span class="sxs-lookup"><span data-stu-id="e62e3-102">Optimizing MQSeries Adapter Performance</span></span>
 <span data-ttu-id="e62e3-103">使用时可以提高性能的以下设置配置 MQSeries 适配器。</span><span class="sxs-lookup"><span data-stu-id="e62e3-103">Configure the MQSeries adapter by using the following settings when possible to increase performance.</span></span>  

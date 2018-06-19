@@ -1,14 +1,14 @@
 ---
-title: "配置静态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档"
-ms.custom: 
+title: 配置静态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc43e767-d9d7-4b02-b3fc-0cfdfd6e61c4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968371"
 ---
 # <a name="configuring-a-static-send-port-for-asynchronous-mdns-over-as2"></a><span data-ttu-id="feabe-102">配置用于通过 AS2 发送异步 MDN 的静态发送端口</span><span class="sxs-lookup"><span data-stu-id="feabe-102">Configuring a Static Send Port for Asynchronous MDNs over AS2</span></span>
 <span data-ttu-id="feabe-103">本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过静态发送端口发送异步 EDIINT/AS2 编码的 MDN 消息。</span><span class="sxs-lookup"><span data-stu-id="feabe-103">This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send an asynchronous EDIINT/AS2-encoded MDN message over a static send port.</span></span> <span data-ttu-id="feabe-104">此配置包括创建静态发送端口，以及设置发送端口使用的加密证书（如需要）。</span><span class="sxs-lookup"><span data-stu-id="feabe-104">This configuration includes creating the static send port and if required, setting up an encryption certificate to be used by the send port.</span></span>  
@@ -29,12 +30,12 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="feabe-108">位置</span><span class="sxs-lookup"><span data-stu-id="feabe-108">Location</span></span>|<span data-ttu-id="feabe-109">属性</span><span class="sxs-lookup"><span data-stu-id="feabe-109">Property</span></span>|<span data-ttu-id="feabe-110">设置</span><span class="sxs-lookup"><span data-stu-id="feabe-110">Setting</span></span>|  
 |--------------|--------------|-------------|  
 |<span data-ttu-id="feabe-111">**发送端口属性： 常规**</span><span class="sxs-lookup"><span data-stu-id="feabe-111">**Send Port Properties: General**</span></span>|<span data-ttu-id="feabe-112">端口类型</span><span class="sxs-lookup"><span data-stu-id="feabe-112">Port Type</span></span>|<span data-ttu-id="feabe-113">静态单向发送端口</span><span class="sxs-lookup"><span data-stu-id="feabe-113">Static One-way Send Port</span></span>|  
-|<span data-ttu-id="feabe-114">**发送端口属性： 常规**</span><span class="sxs-lookup"><span data-stu-id="feabe-114">**Send Port Properties: General**</span></span>|<span data-ttu-id="feabe-115">传输类型</span><span class="sxs-lookup"><span data-stu-id="feabe-115">Transport Type</span></span>|<span data-ttu-id="feabe-116">HTTP**注意：**仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。</span><span class="sxs-lookup"><span data-stu-id="feabe-116">HTTP **Note:**  Only the HTTP adapter can be used for transporting EDIINT/AS2-encoded messages.</span></span> <span data-ttu-id="feabe-117">此传输不能用于除 HTTP 适配器之外的其他适配器。</span><span class="sxs-lookup"><span data-stu-id="feabe-117">This transport will not work with an adapter other than the HTTP adapter.</span></span>|  
+|<span data-ttu-id="feabe-114">**发送端口属性： 常规**</span><span class="sxs-lookup"><span data-stu-id="feabe-114">**Send Port Properties: General**</span></span>|<span data-ttu-id="feabe-115">传输类型</span><span class="sxs-lookup"><span data-stu-id="feabe-115">Transport Type</span></span>|<span data-ttu-id="feabe-116">HTTP**注意：** 仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。</span><span class="sxs-lookup"><span data-stu-id="feabe-116">HTTP **Note:**  Only the HTTP adapter can be used for transporting EDIINT/AS2-encoded messages.</span></span> <span data-ttu-id="feabe-117">此传输不能用于除 HTTP 适配器之外的其他适配器。</span><span class="sxs-lookup"><span data-stu-id="feabe-117">This transport will not work with an adapter other than the HTTP adapter.</span></span>|  
 |<span data-ttu-id="feabe-118">**发送端口属性： 常规**</span><span class="sxs-lookup"><span data-stu-id="feabe-118">**Send Port Properties: General**</span></span>|<span data-ttu-id="feabe-119">发送处理程序</span><span class="sxs-lookup"><span data-stu-id="feabe-119">Send handler</span></span>|<span data-ttu-id="feabe-120">BizTalkServerApplication</span><span class="sxs-lookup"><span data-stu-id="feabe-120">BizTalkServerApplication</span></span>|  
 |<span data-ttu-id="feabe-121">**发送端口属性： 常规**</span><span class="sxs-lookup"><span data-stu-id="feabe-121">**Send Port Properties: General**</span></span>|<span data-ttu-id="feabe-122">发送管道</span><span class="sxs-lookup"><span data-stu-id="feabe-122">Send pipeline</span></span>|<span data-ttu-id="feabe-123">AS2Send</span><span class="sxs-lookup"><span data-stu-id="feabe-123">AS2Send</span></span>|  
 |<span data-ttu-id="feabe-124">**HTTP 传输属性**</span><span class="sxs-lookup"><span data-stu-id="feabe-124">**HTTP Transport Properties**</span></span>|<span data-ttu-id="feabe-125">目标 URL</span><span class="sxs-lookup"><span data-stu-id="feabe-125">Destination URL</span></span>|<span data-ttu-id="feabe-126">\<目标 URL 字符串\></span><span class="sxs-lookup"><span data-stu-id="feabe-126">\<Destination URL string\></span></span>|  
 |<span data-ttu-id="feabe-127">**HTTP 传输属性**</span><span class="sxs-lookup"><span data-stu-id="feabe-127">**HTTP Transport Properties**</span></span>|<span data-ttu-id="feabe-128">启用 Chunked 编码</span><span class="sxs-lookup"><span data-stu-id="feabe-128">Enable chunked encoding</span></span>|<span data-ttu-id="feabe-129">已清除</span><span class="sxs-lookup"><span data-stu-id="feabe-129">Cleared</span></span>|  
-|<span data-ttu-id="feabe-130">**发送端口属性： 筛选器**</span><span class="sxs-lookup"><span data-stu-id="feabe-130">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="feabe-131">属性</span><span class="sxs-lookup"><span data-stu-id="feabe-131">Property</span></span>|<span data-ttu-id="feabe-132">EdiIntAS.IsAS2AsynchronousMdn**注意：**还应指定附加的筛选器表达式，以确保仅 MDN 消息要发送到在此指定的地址发送端口将拾取此订阅筛选器。</span><span class="sxs-lookup"><span data-stu-id="feabe-132">EdiIntAS.IsAS2AsynchronousMdn **Note:**  You should also specify additional filter expressions to ensure that only MDN messages destined to the address specified in this send port are picked up by this subscription filter.</span></span>|  
+|<span data-ttu-id="feabe-130">**发送端口属性： 筛选器**</span><span class="sxs-lookup"><span data-stu-id="feabe-130">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="feabe-131">属性</span><span class="sxs-lookup"><span data-stu-id="feabe-131">Property</span></span>|<span data-ttu-id="feabe-132">EdiIntAS.IsAS2AsynchronousMdn**注意：** 还应指定附加的筛选器表达式，以确保仅 MDN 消息要发送到在此指定的地址发送端口将拾取此订阅筛选器。</span><span class="sxs-lookup"><span data-stu-id="feabe-132">EdiIntAS.IsAS2AsynchronousMdn **Note:**  You should also specify additional filter expressions to ensure that only MDN messages destined to the address specified in this send port are picked up by this subscription filter.</span></span>|  
 |<span data-ttu-id="feabe-133">**发送端口属性： 筛选器**</span><span class="sxs-lookup"><span data-stu-id="feabe-133">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="feabe-134">运算符</span><span class="sxs-lookup"><span data-stu-id="feabe-134">Operator</span></span>|==|  
 |<span data-ttu-id="feabe-135">**发送端口属性： 筛选器**</span><span class="sxs-lookup"><span data-stu-id="feabe-135">**Send Port Properties: Filters**</span></span>|<span data-ttu-id="feabe-136">值</span><span class="sxs-lookup"><span data-stu-id="feabe-136">Value</span></span>|<span data-ttu-id="feabe-137">True</span><span class="sxs-lookup"><span data-stu-id="feabe-137">True</span></span>|  
 |<span data-ttu-id="feabe-138">**发送端口属性： 证书**</span><span class="sxs-lookup"><span data-stu-id="feabe-138">**Send Port Properties: Certificates**</span></span>|<span data-ttu-id="feabe-139">公用名和指纹</span><span class="sxs-lookup"><span data-stu-id="feabe-139">Common Name  and thumbprint</span></span>|<span data-ttu-id="feabe-140">如果对出站 MDN 消息使用加密证书，请输入证书名称和指纹。</span><span class="sxs-lookup"><span data-stu-id="feabe-140">Enter the certificate name and thumbprint if using an encryption certificate for the outbound MDN message.</span></span>|  

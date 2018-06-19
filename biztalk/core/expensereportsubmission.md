@@ -1,17 +1,17 @@
 ---
-title: "ExpenseReportSubmission |Microsoft 文档"
-ms.custom: 
+title: ExpenseReportSubmission |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 ms.assetid: d0bacab3-7092-44b8-a1c6-6f574a2db8bd
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969763"
 ---
 # <a name="expensereportsubmission"></a><span data-ttu-id="02b6c-102">ExpenseReportSubmission</span><span class="sxs-lookup"><span data-stu-id="02b6c-102">ExpenseReportSubmission</span></span>
 <span data-ttu-id="02b6c-103">ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Excel）向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程提交文档。</span><span class="sxs-lookup"><span data-stu-id="02b6c-103">The ExpenseReportSubmission sample demonstrates how to submit a document to a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration from a rich client such as Microsoft Excel.</span></span>  
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/28/2017
   
     6.  <span data-ttu-id="02b6c-171">单击**标识**选项卡的属性对话框框中，并将更改此应用程序池运行是的成员的用户的标识**BizTalk 独立主机用户**用户组。</span><span class="sxs-lookup"><span data-stu-id="02b6c-171">Click the **Identity** tab of the properties dialog box and change the identity under which this application pool runs to a user that is a member of the **BizTalk Isolated Host Users** user group.</span></span>  <span data-ttu-id="02b6c-172">此用户还应属于本地**IIS_WPG**用户组。</span><span class="sxs-lookup"><span data-stu-id="02b6c-172">This user should also be a member of the local **IIS_WPG** user group.</span></span>  
   
-    7.  <span data-ttu-id="02b6c-173">将本 SDK 示例的虚拟目录配置为在新应用程序池下运行。</span><span class="sxs-lookup"><span data-stu-id="02b6c-173">Configure the virtual directory for this SDK sample to run under the new application pool.</span></span> <span data-ttu-id="02b6c-174">**应用程序池：**设置位于**虚拟目录**虚拟目录属性对话框中的选项卡。</span><span class="sxs-lookup"><span data-stu-id="02b6c-174">The **Application pool:** setting is available on the **Virtual Directory** tab of the Virtual Directory properties dialog box.</span></span> <span data-ttu-id="02b6c-175">为此示例是创建的虚拟目录**ExpenseReportSubmission**。</span><span class="sxs-lookup"><span data-stu-id="02b6c-175">The virtual directory created for this sample is **ExpenseReportSubmission**.</span></span>  
+    7.  <span data-ttu-id="02b6c-173">将本 SDK 示例的虚拟目录配置为在新应用程序池下运行。</span><span class="sxs-lookup"><span data-stu-id="02b6c-173">Configure the virtual directory for this SDK sample to run under the new application pool.</span></span> <span data-ttu-id="02b6c-174">**应用程序池：** 设置位于**虚拟目录**虚拟目录属性对话框中的选项卡。</span><span class="sxs-lookup"><span data-stu-id="02b6c-174">The **Application pool:** setting is available on the **Virtual Directory** tab of the Virtual Directory properties dialog box.</span></span> <span data-ttu-id="02b6c-175">为此示例是创建的虚拟目录**ExpenseReportSubmission**。</span><span class="sxs-lookup"><span data-stu-id="02b6c-175">The virtual directory created for this sample is **ExpenseReportSubmission**.</span></span>  
   
 4.  <span data-ttu-id="02b6c-176">在 IIS 中为 HTTPReceive.dll 添加一个 Web 服务扩展</span><span class="sxs-lookup"><span data-stu-id="02b6c-176">Add a web service extension to IIS for HTTPReceive.dll</span></span>  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 11/28/2017
   
     4.  <span data-ttu-id="02b6c-180">单击**添加**以显示**Add file**对话框。</span><span class="sxs-lookup"><span data-stu-id="02b6c-180">Click **Add** to display the **Add file** dialog box.</span></span>  
   
-    5.  <span data-ttu-id="02b6c-181">单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹\>*\HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="02b6c-181">Click **Browse** to display the **Open** dialog box and navigate to *\<BizTalk Server Installation folder\>*\HttpReceive\BTSHTTPReceive.dll and click **Open**, then click **OK**.</span></span>  
+    5.  <span data-ttu-id="02b6c-181">单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹\>* \HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="02b6c-181">Click **Browse** to display the **Open** dialog box and navigate to *\<BizTalk Server Installation folder\>* \HttpReceive\BTSHTTPReceive.dll and click **Open**, then click **OK**.</span></span>  
   
     6.  <span data-ttu-id="02b6c-182">启用到选项**设置扩展状态为允许**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="02b6c-182">Enable the option to **Set extension status to Allowed** and click **OK**.</span></span>  
   

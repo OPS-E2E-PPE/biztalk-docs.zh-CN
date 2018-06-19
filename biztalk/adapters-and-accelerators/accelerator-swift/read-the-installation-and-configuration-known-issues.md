@@ -1,14 +1,14 @@
 ---
-title: "安装并配置已知问题，请阅读 |Microsoft 文档"
-ms.custom: 
+title: 安装并配置已知问题，请阅读 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c58d9dcb-7835-4181-a6cb-203c5d138e6a
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962003"
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a><span data-ttu-id="e3107-102">读取的安装和配置的已知问题</span><span class="sxs-lookup"><span data-stu-id="e3107-102">Read the installation and configuration known issues</span></span>
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a><span data-ttu-id="e3107-103">通过终端服务器安装的其他文件夹中创建日志文件</span><span class="sxs-lookup"><span data-stu-id="e3107-103">Installing over Terminal Server creates log files in a different folder</span></span>  
- <span data-ttu-id="e3107-104">A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\Local 设置文件夹。</span><span class="sxs-lookup"><span data-stu-id="e3107-104">When you install A4SWIFT over a Terminal Server connection, the A4SWIFT Setup program creates the setup and configuration log files in the *\<drive\>*:\Documents and Settings\\*\<user name\>*\Local Settings folder.</span></span> <span data-ttu-id="e3107-105">通常情况下，安装程序将创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\LocalSettings\temp 文件夹。</span><span class="sxs-lookup"><span data-stu-id="e3107-105">Normally, the Setup program creates these files in the *\<drive\>*:\Documents and Settings\\*\<user name\>*\Local Settings\temp folder.</span></span> <span data-ttu-id="e3107-106">你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。</span><span class="sxs-lookup"><span data-stu-id="e3107-106">You can review these log files to ensure that your computers are set up and configured properly.</span></span>  
+ <span data-ttu-id="e3107-104">A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \Local 设置文件夹。</span><span class="sxs-lookup"><span data-stu-id="e3107-104">When you install A4SWIFT over a Terminal Server connection, the A4SWIFT Setup program creates the setup and configuration log files in the *\<drive\>*:\Documents and Settings\\*\<user name\>* \Local Settings folder.</span></span> <span data-ttu-id="e3107-105">通常情况下，安装程序将创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \LocalSettings\temp 文件夹。</span><span class="sxs-lookup"><span data-stu-id="e3107-105">Normally, the Setup program creates these files in the *\<drive\>*:\Documents and Settings\\*\<user name\>* \Local Settings\temp folder.</span></span> <span data-ttu-id="e3107-106">你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。</span><span class="sxs-lookup"><span data-stu-id="e3107-106">You can review these log files to ensure that your computers are set up and configured properly.</span></span>  
   
 ## <a name="silent-installation-is-not-recommended"></a><span data-ttu-id="e3107-107">不建议无提示安装</span><span class="sxs-lookup"><span data-stu-id="e3107-107">Silent installation is not recommended</span></span>  
  <span data-ttu-id="e3107-108">无提示安装 A4SWIFT 安装程序支持，但不是建议由于所需的其他配置步骤的复杂性。</span><span class="sxs-lookup"><span data-stu-id="e3107-108">A silent installation is supported by the A4SWIFT Setup program, but is not recommended because of the complexity of the additional configuration steps that are required.</span></span>  

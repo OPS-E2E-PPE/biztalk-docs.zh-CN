@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968435"
 ---
 # <a name="error---index-functoid-has-no-index"></a><span data-ttu-id="09c90-102">错误-索引 Functoid 不具有索引</span><span class="sxs-lookup"><span data-stu-id="09c90-102">Error - Index Functoid Has No Index</span></span>
 <span data-ttu-id="09c90-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="09c90-103">**Error Code**</span></span>  

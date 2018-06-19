@@ -1,11 +1,11 @@
 ---
-title: "第 1 课： 将 XML 添加接收端口和位置 |Microsoft 文档"
-ms.custom: 
+title: 第 1 课： 将 XML 添加接收端口和位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive ports, creating
 - creating, receive ports
 ms.assetid: 252bc080-3820-44cc-8749-715869f3f684
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961259"
 ---
 # <a name="lesson-1-adding-xml-receive-port-and-location"></a><span data-ttu-id="50d0e-102">第 1 课： 添加 XML 接收端口和位置</span><span class="sxs-lookup"><span data-stu-id="50d0e-102">Lesson 1: Adding XML Receive Port and Location</span></span>
 <span data-ttu-id="50d0e-103">接收端口是类似的接收位置的逻辑分组。</span><span class="sxs-lookup"><span data-stu-id="50d0e-103">A receive port is a logical grouping of similar receive locations.</span></span> <span data-ttu-id="50d0e-104">接收位置的传入消息和用于处理该消息管道定义特定地址 （例如 URL 或文件的位置）。</span><span class="sxs-lookup"><span data-stu-id="50d0e-104">A receive location defines a specific address (such as a URL or file location) for an incoming message and the pipeline that is used to process the message.</span></span>  

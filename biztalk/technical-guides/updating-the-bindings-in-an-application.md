@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22302829"
 ---
 # <a name="updating-the-bindings-in-an-application"></a><span data-ttu-id="5d4fd-102">更新应用程序中的绑定</span><span class="sxs-lookup"><span data-stu-id="5d4fd-102">Updating the Bindings in an Application</span></span>
 <span data-ttu-id="5d4fd-103">在更新应用程序中的一个程序集时，通常会覆盖该程序集的绑定，也有可能该程序集根本未绑定，所以您不得不手动重新配置绑定。</span><span class="sxs-lookup"><span data-stu-id="5d4fd-103">When you update an assembly in an application, its bindings are often overwritten or else the assembly may not be bound at all, forcing you to manually reconfigure bindings.</span></span> <span data-ttu-id="5d4fd-104">要避免此问题，可以使用绑定文件若要更新的程序集的相同版本或更新的程序集的较新版本。</span><span class="sxs-lookup"><span data-stu-id="5d4fd-104">To avoid this, you can use a binding file to update the same version of the assembly or update an assembly with a newer version.</span></span>  

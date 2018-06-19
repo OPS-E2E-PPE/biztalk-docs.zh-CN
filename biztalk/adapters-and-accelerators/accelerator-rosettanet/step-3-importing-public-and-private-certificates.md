@@ -1,11 +1,11 @@
 ---
-title: "步骤 3： 导入公共和私有证书 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 导入公共和私有证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - public certificates
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - double action tutorial, importing certificates
 - certificates, importing
 ms.assetid: 955bdd69-9fbc-4100-ab8a-8f5dd4a17cbb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966947"
 ---
 # <a name="step-3-importing-public-and-private-certificates"></a><span data-ttu-id="dcdb9-102">步骤 3： 导入公共和私有证书</span><span class="sxs-lookup"><span data-stu-id="dcdb9-102">Step 3: Importing Public and Private Certificates</span></span>
 <span data-ttu-id="dcdb9-103">在此步骤中，你在中创建将证书导入[步骤 2： 创建公钥和私有证书和 #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)到 Contoso 和 Fabrikam 计算机。</span><span class="sxs-lookup"><span data-stu-id="dcdb9-103">In this step, you import the certificates you created in [Step 2: Creating Public and Private Certificates &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md) to the Contoso and Fabrikam computers.</span></span> <span data-ttu-id="dcdb9-104">每台计算机将导入自己的私用证书和对方组织的公用证书。</span><span class="sxs-lookup"><span data-stu-id="dcdb9-104">Each computer imports its own private certificates and imports the public certificates of the other organization.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-import-the-fabrikam-public-certificates-on-the-contoso-computer"></a><span data-ttu-id="dcdb9-117">在 Contoso 计算机上导入 Fabrikam 公用证书</span><span class="sxs-lookup"><span data-stu-id="dcdb9-117">To import the Fabrikam public certificates on the Contoso computer</span></span>  
   
-1.  <span data-ttu-id="dcdb9-118">Contoso 计算机上，单击**启动**，单击**运行，**类型**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="dcdb9-118">On the Contoso computer, click **Start**, click **Run,** type **cmd**, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="dcdb9-118">Contoso 计算机上，单击**启动**，单击**运行，** 类型**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="dcdb9-118">On the Contoso computer, click **Start**, click **Run,** type **cmd**, and then click **OK**.</span></span>  
   
 2.  <span data-ttu-id="dcdb9-119">在命令提示符下，将移到*\<驱动器\>***: files\microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK** ，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="dcdb9-119">At the command prompt, move to *\<drive\>***:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK** and then press **Enter**.</span></span>  
   

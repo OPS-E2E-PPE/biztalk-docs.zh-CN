@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 消息 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, SWIFT
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SWIFT messages, copies
 - SWIFT messages
 ms.assetid: 21341f2c-8d64-4f7c-ba84-f863d0f7b878
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961827"
 ---
 # <a name="swift-messages"></a><span data-ttu-id="336b8-102">SWIFT 消息</span><span class="sxs-lookup"><span data-stu-id="336b8-102">SWIFT Messages</span></span>
 <span data-ttu-id="336b8-103">互联网协会为全球 Interbank 财务电信 (SWIFT) 是提供在 200 国家/地区的超过 7000 个金融机构为安全消息传递服务和接口软件行业拥有协作。</span><span class="sxs-lookup"><span data-stu-id="336b8-103">Society for Worldwide Interbank Financial Telecommunication (SWIFT) is an industry-owned cooperative supplying secure messaging services and interface software to over 7,000 financial institutions in 200 countries/regions.</span></span> <span data-ttu-id="336b8-104">SWIFT 提供到银行、 经纪商和投资经理以及在付款、 财政部、 证券和贸易市场基础结构的消息传递服务。</span><span class="sxs-lookup"><span data-stu-id="336b8-104">SWIFT provides messaging services to banks, broker-dealers, and investment managers, as well as to market infrastructures in payments, treasury, securities, and trade.</span></span> <span data-ttu-id="336b8-105">这些服务可帮助客户降低成本，提高自动化，并管理风险。</span><span class="sxs-lookup"><span data-stu-id="336b8-105">These services help their customers reduce costs, improve automation, and manage risk.</span></span> <span data-ttu-id="336b8-106">SWIFT 也是 interbank 通信的主要标准正文。</span><span class="sxs-lookup"><span data-stu-id="336b8-106">SWIFT is also the main standards body for interbank communications.</span></span>  

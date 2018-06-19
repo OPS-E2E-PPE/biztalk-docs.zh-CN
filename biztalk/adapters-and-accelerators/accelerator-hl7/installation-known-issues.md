@@ -1,14 +1,14 @@
 ---
-title: "已知问题的安装 |Microsoft 文档"
-ms.custom: 
+title: 已知问题的安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2f80ff9-b37c-49f8-8250-fcf3cec4c0fc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204541"
 ---
 # <a name="installation-known-issues"></a><span data-ttu-id="3f1d9-102">安装的已知问题</span><span class="sxs-lookup"><span data-stu-id="3f1d9-102">Installation known issues</span></span>
 <span data-ttu-id="3f1d9-103">有用的信息来帮助你避免安装问题。</span><span class="sxs-lookup"><span data-stu-id="3f1d9-103">Useful information that may help you avoid installation problems.</span></span>  

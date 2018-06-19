@@ -1,14 +1,14 @@
 ---
-title: "调用中使用 WCF 服务模型的 Oracle E-business Suite 的并发程序 |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 Oracle E-business Suite 的并发程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e227c60f-f6fe-40bf-bf41-2784a4428ad0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964627"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="146b2-102">调用中使用 WCF 服务模型的 Oracle E-business Suite 的并发程序</span><span class="sxs-lookup"><span data-stu-id="146b2-102">Invoke concurrent programs in Oracle E-Business Suite using the WCF service model</span></span>
 <span data-ttu-id="146b2-103">Oracle E-business Suite 公开可以执行以执行对 Oracle 应用程序的特定操作的并发程序。</span><span class="sxs-lookup"><span data-stu-id="146b2-103">Oracle E-Business Suite exposes concurrent programs that you can execute to perform specific operations on Oracle applications.</span></span> <span data-ttu-id="146b2-104">每个 Oracle 应用程序具有一套标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。</span><span class="sxs-lookup"><span data-stu-id="146b2-104">Each Oracle application has a set of standard concurrent programs (that are same across all operations) and certain concurrent programs that are specific to an Oracle application.</span></span> <span data-ttu-id="146b2-105">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。</span><span class="sxs-lookup"><span data-stu-id="146b2-105">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes all concurrent programs as operations that adapter clients can invoke.</span></span> <span data-ttu-id="146b2-106">有关如何适配器支持并发程序的详细信息，请参阅[并发程序上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。</span><span class="sxs-lookup"><span data-stu-id="146b2-106">For more information about how the adapter supports concurrent programs, see [Operations on Concurrent Programs](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md).</span></span>  

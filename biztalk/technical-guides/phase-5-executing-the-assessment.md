@@ -1,14 +1,14 @@
 ---
-title: "阶段 5： 执行评估 |Microsoft 文档"
-ms.custom: 
+title: 阶段 5： 执行评估 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d40fc64-b6cb-448b-8ea1-a6ad7302ab8b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302685"
 ---
 # <a name="phase-5-executing-the-assessment"></a><span data-ttu-id="84155-102">阶段 5： 执行评估</span><span class="sxs-lookup"><span data-stu-id="84155-102">Phase 5: Executing the Assessment</span></span>
 <span data-ttu-id="84155-103">执行阶段是通过自动的负载测试和其中性能瓶颈将发现并解决其中生成的性能数据。</span><span class="sxs-lookup"><span data-stu-id="84155-103">The Execute phase is where the performance data is generated through automated load testing and where performance bottlenecks are discovered and addressed.</span></span> <span data-ttu-id="84155-104">此阶段都有一个迭代过程性能瓶颈，减少或消除通过测试，评估性能、 优化和重新测试。</span><span class="sxs-lookup"><span data-stu-id="84155-104">This phase has an iterative process whereby performance bottlenecks are reduced or eliminated by testing, evaluating performance, optimizing, and testing again.</span></span>  

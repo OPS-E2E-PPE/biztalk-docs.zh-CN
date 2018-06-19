@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25962227"
 ---
 # <a name="creating-or-editing-an-agreement"></a><span data-ttu-id="40be1-102">创建或编辑协议</span><span class="sxs-lookup"><span data-stu-id="40be1-102">Creating or Editing an Agreement</span></span>
 <span data-ttu-id="40be1-103">本主题介绍如何创建或编辑贸易合作伙伴协议。</span><span class="sxs-lookup"><span data-stu-id="40be1-103">This topic describes how to create or edit a trading partner agreement.</span></span> <span data-ttu-id="40be1-104">贸易合作伙伴协议对贸易合作伙伴双方之间的关系做出规定，其中包括身份、合作伙伴接口流程 (PIP)、操作 URL、信号 URL、同步 URL 及相关协议。</span><span class="sxs-lookup"><span data-stu-id="40be1-104">A trading partner agreement configures the relationship between two trading partners, including their identities; the Partner Interface Process (PIP); the action, signal, and sync URLs; and the associated protocols.</span></span>  
@@ -96,7 +97,7 @@ ms.lasthandoff: 03/23/2018
   
 3.  <span data-ttu-id="40be1-294">右键单击你想要编辑，然后单击协议**属性**。</span><span class="sxs-lookup"><span data-stu-id="40be1-294">Right-click the agreement that you want to edit, and then click **Properties**.</span></span>  
   
-4.  <span data-ttu-id="40be1-295">在**\<***协议名称***\>**属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。</span><span class="sxs-lookup"><span data-stu-id="40be1-295">In the **\<***agreement name***\>** Properties dialog box, on the **General** and **Contact Properties** tabs, change settings as needed.</span></span> <span data-ttu-id="40be1-296">有关这些设置的信息，请参阅上表。</span><span class="sxs-lookup"><span data-stu-id="40be1-296">For information about these settings, see the preceding table.</span></span>  
+4.  <span data-ttu-id="40be1-295">在**\<***协议名称***\>** 属性对话框中，在**常规**和**联系人属性**选项卡上，根据需要更改设置。</span><span class="sxs-lookup"><span data-stu-id="40be1-295">In the **\<***agreement name***\>** Properties dialog box, on the **General** and **Contact Properties** tabs, change settings as needed.</span></span> <span data-ttu-id="40be1-296">有关这些设置的信息，请参阅上表。</span><span class="sxs-lookup"><span data-stu-id="40be1-296">For information about these settings, see the preceding table.</span></span>  
   
 5.  <span data-ttu-id="40be1-297">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="40be1-297">Click **OK**.</span></span>  
   

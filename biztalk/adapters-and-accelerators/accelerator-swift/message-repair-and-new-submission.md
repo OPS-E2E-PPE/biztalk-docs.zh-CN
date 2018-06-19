@@ -1,11 +1,11 @@
 ---
-title: "消息修复和新提交 |Microsoft 文档"
-ms.custom: 
+title: 消息修复和新提交 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - messages, errors
 - messages, resubmitting
 ms.assetid: 5bc6bfa2-8210-4dd3-89bb-5455e294ca92
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209981"
 ---
 # <a name="message-repair-and-new-submission"></a><span data-ttu-id="d1322-102">消息修复和新的提交</span><span class="sxs-lookup"><span data-stu-id="d1322-102">Message Repair and New Submission</span></span>
 <span data-ttu-id="d1322-103">消息修复和新提交功能[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供有助于您修复 MT 和 MX 未通过验证的消息。</span><span class="sxs-lookup"><span data-stu-id="d1322-103">The Message Repair and New Submission feature of [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] provides a way for you to repair MT and MX messages that fail validation.</span></span> <span data-ttu-id="d1322-104">使用 MRSR SharePoint 站点 （由用户已部署），你可以看到如何消息未能通过验证。</span><span class="sxs-lookup"><span data-stu-id="d1322-104">Using the MRSR SharePoint site (deployed by user), you can see how the message failed validation.</span></span> <span data-ttu-id="d1322-105">从 MRSR 站点，可以打开的 InfoPath 窗体，可用于识别的错误、 修复消息，并将其提交进行重新处理中的邮件。</span><span class="sxs-lookup"><span data-stu-id="d1322-105">From MRSR site, you can open the message in an InfoPath form that enables you to identify the error, repair the message, and submit it for reprocessing.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试到 Oracle 数据库适配器迁移的应用 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试到 Oracle 数据库适配器迁移的应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 495efc4f-9d9e-450f-a03a-628bb54e658f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962891"
 ---
 # <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a><span data-ttu-id="1a449-102">步骤 3： 测试到 Oracle 数据库适配器已迁移的应用程序</span><span class="sxs-lookup"><span data-stu-id="1a449-102">Step 3: Test the migrated application to Oracle Database adapter</span></span>
 <span data-ttu-id="1a449-103">![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="1a449-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
  <span data-ttu-id="1a449-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="1a449-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="1a449-105">**目标：**在此步骤中，将通过执行插入操作上 SCOTT 测试已迁移的应用程序。CUSTOMER 表。</span><span class="sxs-lookup"><span data-stu-id="1a449-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="1a449-106">若要执行此操作，你可以删除与生成使用 vPrev Oracle 数据库适配器的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="1a449-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
+ <span data-ttu-id="1a449-105">**目标：** 在此步骤中，将通过执行插入操作上 SCOTT 测试已迁移的应用程序。CUSTOMER 表。</span><span class="sxs-lookup"><span data-stu-id="1a449-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="1a449-106">若要执行此操作，你可以删除与生成使用 vPrev Oracle 数据库适配器的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="1a449-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="1a449-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="1a449-107">Prerequisites</span></span>  
   

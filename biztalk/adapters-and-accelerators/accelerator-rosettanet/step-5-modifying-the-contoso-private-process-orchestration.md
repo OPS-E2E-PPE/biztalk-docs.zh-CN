@@ -1,17 +1,17 @@
 ---
-title: "步骤 5： 修改 Contoso 私有进程业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 修改 Contoso 私有进程业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, orchestrations
 - private process tutorial, modifying private process orchestration
 ms.assetid: a5430db8-e5f0-48a6-abb9-e268d8ec2ec4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967755"
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a><span data-ttu-id="6866a-102">步骤 5： 修改 Contoso 私有进程业务流程</span><span class="sxs-lookup"><span data-stu-id="6866a-102">Step 5: Modifying the Contoso Private Process Orchestration</span></span>
 <span data-ttu-id="6866a-103">在此步骤中，将修改专用业务流程以将其集成到 Contoso 的企业资源计划 (ERP) 系统中。</span><span class="sxs-lookup"><span data-stu-id="6866a-103">In this step, you modify the private process orchestration to integrate with the Enterprise Resource Planning (ERP) system for Contoso.</span></span> <span data-ttu-id="6866a-104">Contoso 的 ERP 系统将内部定义的架构用于产品价格与可用性。</span><span class="sxs-lookup"><span data-stu-id="6866a-104">The ERP system for Contoso uses internally defined schemas for product price and availability.</span></span> <span data-ttu-id="6866a-105">通过自定义 3A2 - 价格与可用性合作伙伴接口流程 (PIP) 的专用流程，你将能够使用架构映射信息与 ERP 系统集成。</span><span class="sxs-lookup"><span data-stu-id="6866a-105">By customizing the private process for the 3A2 - Price and Availability Partner Interface Process (PIP), you will be able to integrate with the ERP system by using schema-mapping information.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="6866a-107">通过在解决方案资源管理器中显示 Contoso 解决方案，右键单击**PrivateResponder**项目，，然后单击**添加引用**。</span><span class="sxs-lookup"><span data-stu-id="6866a-107">With the Contoso solution displayed in Solution Explorer, right-click the **PrivateResponder** project, and then click **Add Reference**.</span></span>  
   
-2.  <span data-ttu-id="6866a-108">在添加引用对话框中，单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="6866a-108">In the Add Reference dialog box, click **Browse**.</span></span> <span data-ttu-id="6866a-109">将移动到*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键**:**</span><span class="sxs-lookup"><span data-stu-id="6866a-109">Move to *\<drive\>*:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin folder, and then select the following assemblies**:**</span></span>  
+2.  <span data-ttu-id="6866a-108">在添加引用对话框中，单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="6866a-108">In the Add Reference dialog box, click **Browse**.</span></span> <span data-ttu-id="6866a-109">将移动到*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键 **:**</span><span class="sxs-lookup"><span data-stu-id="6866a-109">Move to *\<drive\>*:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin folder, and then select the following assemblies **:**</span></span>  
   
     -   <span data-ttu-id="6866a-110">Microsoft.Solutions.BTARN.CommonTypes.dll</span><span class="sxs-lookup"><span data-stu-id="6866a-110">Microsoft.Solutions.BTARN.CommonTypes.dll</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="6866a-126">在**消息类型**框中，单击下拉箭头，展开**架构**，然后选择**\<从引用的程序集选择\>**。</span><span class="sxs-lookup"><span data-stu-id="6866a-126">In the **Message Type** box, click the drop-down arrow, expand **Schemas**, and then select **\<Select from referenced assembly\>**.</span></span>  
   
-6.  <span data-ttu-id="6866a-127">在选择项目 Typedialog 框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择**_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，和然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6866a-127">In the Select Artifact Typedialog box, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs** in the left pane, select **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3** in the right pane, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="6866a-127">在选择项目 Typedialog 框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择 **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，和然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6866a-127">In the Select Artifact Typedialog box, select **Microsoft.Solutions.BTARN.Schemas.RNPIPs** in the left pane, select **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3** in the right pane, and then click **OK**.</span></span>  
   
 7.  <span data-ttu-id="6866a-128">使用以下信息重复步骤 3 至 6，为解决方案创建所有消息类型：</span><span class="sxs-lookup"><span data-stu-id="6866a-128">Repeat steps 3 through 6 to create all the message types for the solution using the following information:</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="6866a-146">在属性窗口中，在**标识符**框中，键入**contosoResponseXML**。</span><span class="sxs-lookup"><span data-stu-id="6866a-146">In the Properties window, in the **Identifier** box, type **contosoResponseXML**.</span></span>  
   
-3.  <span data-ttu-id="6866a-147">在**类型**框中，选择 **\<.NET 类\>**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-147">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
+3.  <span data-ttu-id="6866a-147">在**类型**框中，选择 **\<.NET 类\>** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-147">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
   
 4.  <span data-ttu-id="6866a-148">在选择项目中键入对话框中，在左窗格中下,**当前项目**和**引用**节点，选择**System.Xml**，选择**XmlDocument**从在右窗格中，然后单击列表**确定**。</span><span class="sxs-lookup"><span data-stu-id="6866a-148">In the Select Artifact Type dialog box, in the left pane, under the **Current Project** and **References** nodes, select **System.Xml**, select **XmlDocument** from the list in the right pane, and then click **OK**.</span></span>  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  <span data-ttu-id="6866a-150">在属性窗口中，在**标识符**框中，键入**submitMessage**。</span><span class="sxs-lookup"><span data-stu-id="6866a-150">In the Properties window, in the **Identifier** box, type **submitMessage**.</span></span>  
   
-7.  <span data-ttu-id="6866a-151">在**类型**框中，选择 **\<.NET 类\>**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-151">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
+7.  <span data-ttu-id="6866a-151">在**类型**框中，选择 **\<.NET 类\>** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-151">In the **Type** box, select **\<.NET Class\>** from the drop-down list.</span></span>  
   
 8.  <span data-ttu-id="6866a-152">在左窗格中，选择项目类型对话框中展开**当前项目**和**引用**节点，选择**Microsoft.Solutions.BTARN.Shared**，选择**SubmitRNIF**从在右窗格中，然后单击列表**确定**。</span><span class="sxs-lookup"><span data-stu-id="6866a-152">In the Select Artifact Type dialog box, in the left pane, expand **Current Project** and **References** nodes, select **Microsoft.Solutions.BTARN.Shared**, select **SubmitRNIF** from the list in the right pane, and then click **OK**.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="6866a-157">在筛选表达式对话框中，单击**单击此处以添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-157">In the Filter Expression dialog box, click **Click here to add a new row**, and then select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span>  
   
-5.  <span data-ttu-id="6866a-158">在同一行中，单击**值**，然后键入**"3A2"**。</span><span class="sxs-lookup"><span data-stu-id="6866a-158">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
+5.  <span data-ttu-id="6866a-158">在同一行中，单击**值**，然后键入 **"3A2"**。</span><span class="sxs-lookup"><span data-stu-id="6866a-158">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
   
 6.  <span data-ttu-id="6866a-159">在同一行中，单击**AND**中**Group By**框中，，然后选择**或**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-159">In the same row, click **AND** in the **Group By** box, and then select **OR** from the drop-down list.</span></span>  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="6866a-161">单击**单击此处以添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6866a-161">Click **Click here to add a new row**, and then select **Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode** from the drop-down list.</span></span>  
   
-9. <span data-ttu-id="6866a-162">在同一行中，单击**值**，然后键入**"3A2"**。</span><span class="sxs-lookup"><span data-stu-id="6866a-162">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
+9. <span data-ttu-id="6866a-162">在同一行中，单击**值**，然后键入 **"3A2"**。</span><span class="sxs-lookup"><span data-stu-id="6866a-162">In the same row, click **Value**, and then type in **"3A2"**.</span></span>  
   
 10. <span data-ttu-id="6866a-163">单击“确定”。</span><span class="sxs-lookup"><span data-stu-id="6866a-163">Click OK.</span></span>  
   

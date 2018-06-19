@@ -1,14 +1,14 @@
 ---
-title: "查看和测试 SQL Server 群集的故障转移方案配置 |Microsoft 文档"
-ms.custom: 
+title: 查看和测试 SQL Server 群集的故障转移方案配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5dbeb383-5b38-4467-acf8-2a5b244e5fa9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302213"
 ---
 # <a name="reviewing-and-testing-sql-server-cluster-configuration-for-failover-scenarios"></a><span data-ttu-id="1a595-102">查看和测试故障转移方案的 SQL Server 群集配置</span><span class="sxs-lookup"><span data-stu-id="1a595-102">Reviewing and Testing SQL Server Cluster Configuration for Failover Scenarios</span></span>
 <span data-ttu-id="1a595-103">Windows 群集和 SQL Server，可以在主动/主动模式下运行 SQL Server 的群集的每个节点都是"活动"和正在运行一个或多个 SQL Server 实例。</span><span class="sxs-lookup"><span data-stu-id="1a595-103">Windows Clustering and SQL Server allow you to run SQL Server in Active/Active mode where each node of the cluster is “active” and running one or more SQL Server instances.</span></span> <span data-ttu-id="1a595-104">这将允许您，例如，具有上一个节点和所有其他的 MessageBox 数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]另一个节点上的数据库。</span><span class="sxs-lookup"><span data-stu-id="1a595-104">This would allow you, for example, to have the MessageBox database on one node and all other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases on the other node.</span></span> <span data-ttu-id="1a595-105">这可以最大化群集的硬件使用情况。</span><span class="sxs-lookup"><span data-stu-id="1a595-105">This allows you to maximize cluster hardware usage.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "在 SQL Server 使用 BizTalk Server 中执行存储的过程使用单个 XML 参数 |Microsoft 文档"
-description: "在使用中 BizTalk WCF 自定义端口和 SQL 适配器的存储过程传递单个参数"
-ms.custom: 
+title: 在 SQL Server 使用 BizTalk Server 中执行存储的过程使用单个 XML 参数 |Microsoft 文档
+description: 在使用中 BizTalk WCF 自定义端口和 SQL 适配器的存储过程传递单个参数
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: deb9333a-5e28-4e8d-8e0b-07b5a97a111b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964595"
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a><span data-ttu-id="22a1f-103">在 SQL Server 使用 BizTalk Server 中执行存储的过程使用单个 XML 参数</span><span class="sxs-lookup"><span data-stu-id="22a1f-103">Execute stored procedures with a single XML parameter in SQL Server using BizTalk Server</span></span>
 <span data-ttu-id="22a1f-104">执行具有一个参数的存储的过程是类似于执行任何其他存储的过程中所述[中使用 BizTalk Server 的 SQL Server 执行存储过程](execute-stored-procedures-in-sql-server-using-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="22a1f-104">Executing a stored procedure that takes a single parameter is similar to executing any other stored procedure as described in [Execute Stored Procedures in SQL Server using BizTalk Server](execute-stored-procedures-in-sql-server-using-biztalk-server.md).</span></span> <span data-ttu-id="22a1f-105">但是，对于上述链接中所述的方法，你需要在设计时生成的存储过程的元数据并创建业务流程以在运行时调用过程。</span><span class="sxs-lookup"><span data-stu-id="22a1f-105">However, for the approach described in the preceding link, you need to generate metadata for the stored procedure at design time and create an orchestration to invoke the procedure at run time.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="22a1f-143">在**WCF 自定义传输属性**对话框框中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="22a1f-143">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="22a1f-144">单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 SQL Server 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="22a1f-144">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="22a1f-145">有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="22a1f-145">For more information about the connection URI, see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="22a1f-144">单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 SQL Server 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="22a1f-144">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="22a1f-145">有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="22a1f-145">For more information about the connection URI, see [Create the SQL Server Connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="22a1f-146">上**常规**选项卡上，在**操作**文本框中，键入操作的操作。</span><span class="sxs-lookup"><span data-stu-id="22a1f-146">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="22a1f-147">请参阅[消息和消息架构](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)有关每个操作的操作的列表。</span><span class="sxs-lookup"><span data-stu-id="22a1f-147">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) for a list of actions for each operation.</span></span> <span data-ttu-id="22a1f-148">例如，要调用 ADD_LAST_EMP_XML_INFO 的操作是：</span><span class="sxs-lookup"><span data-stu-id="22a1f-148">For example, the action to invoke the ADD_LAST_EMP_XML_INFO is:</span></span>  
   

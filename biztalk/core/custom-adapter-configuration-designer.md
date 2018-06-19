@@ -1,14 +1,14 @@
 ---
-title: "自定义适配器配置设计器 |Microsoft 文档"
-ms.custom: 
+title: 自定义适配器配置设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9b231c3-3948-4db8-b4f0-d9c21c31b168
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970371"
 ---
 # <a name="custom-adapter-configuration-designer"></a><span data-ttu-id="7530e-102">自定义适配器配置设计器</span><span class="sxs-lookup"><span data-stu-id="7530e-102">Custom Adapter Configuration Designer</span></span>
 <span data-ttu-id="7530e-103">您需要在 .NET 类库中生成自定义设计器。</span><span class="sxs-lookup"><span data-stu-id="7530e-103">You need to build the custom designers into a .NET class library.</span></span> <span data-ttu-id="7530e-104">您既可将它们合并到适配器的 DLL，也可生成单独的 DLL。</span><span class="sxs-lookup"><span data-stu-id="7530e-104">You may incorporate them into the DLL for the adapter or build a separate DLL.</span></span> <span data-ttu-id="7530e-105">生成设计器程序集后，您必须通过修饰来引用该程序集，如同引用说明或类别一样。</span><span class="sxs-lookup"><span data-stu-id="7530e-105">After you build a designer assembly, you must reference it through decorations, just like a description or a category.</span></span> <span data-ttu-id="7530e-106">该引用包括一个程序集规范和一个要使用的完全限定类名。</span><span class="sxs-lookup"><span data-stu-id="7530e-106">The reference includes a specification of the assembly and a fully qualified class name to use.</span></span>  

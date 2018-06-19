@@ -1,15 +1,15 @@
 ---
-title: "TIBCO 集合适配器 |Microsoft 文档"
-description: "安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 TIBCO 会合 BizTalk Server 中使用 BizTalk 适配器时添加异常处理"
-ms.custom: 
+title: TIBCO 集合适配器 |Microsoft 文档
+description: 安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 TIBCO 会合 BizTalk Server 中使用 BizTalk 适配器时添加异常处理
+ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0528954d-11b4-449b-8057-30d463104fef
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015452"
 ---
 # <a name="tibco-rendezvous-adapter"></a><span data-ttu-id="d128a-103">TIBCO 会合适配器</span><span class="sxs-lookup"><span data-stu-id="d128a-103">TIBCO Rendezvous Adapter</span></span>
 <span data-ttu-id="d128a-104">用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使您能够使用 BizTalk Server 内的 TIBCO Rendezvous 企业功能。</span><span class="sxs-lookup"><span data-stu-id="d128a-104">Microsoft BizTalk Adapter for TIBCO Rendezvous enables you to use TIBCO Rendezvous business functions within BizTalk Server.</span></span> <span data-ttu-id="d128a-105">以下部分介绍设置适配器以访问 TIBCO Rendezvous 特定信息。</span><span class="sxs-lookup"><span data-stu-id="d128a-105">The following sections discuss setting up the adapter to access TIBCO Rendezvous-specific information.</span></span>  

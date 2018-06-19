@@ -1,14 +1,14 @@
 ---
-title: "ApplicationAdapter |Microsoft 文档"
-ms.custom: 
+title: ApplicationAdapter |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f9b876b-cd37-4e24-a476-186adc155ac0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963187"
 ---
 # <a name="applicationadapter"></a><span data-ttu-id="00bb8-102">ApplicationAdapter</span><span class="sxs-lookup"><span data-stu-id="00bb8-102">ApplicationAdapter</span></span>
 <span data-ttu-id="00bb8-103">ApplicationAdapter 示例演示如何在接收消息时从响应方或发起方的公用流程和专用流程发送通知。</span><span class="sxs-lookup"><span data-stu-id="00bb8-103">The ApplicationAdapter sample demonstrates how to send notifications from the public and private processes (responder or initiator) when you receive a message.</span></span> <span data-ttu-id="00bb8-104">你可以自定义该示例，使其具有任何你需要的其他功能。</span><span class="sxs-lookup"><span data-stu-id="00bb8-104">You can customize the sample with whatever additional functionality you want.</span></span>  

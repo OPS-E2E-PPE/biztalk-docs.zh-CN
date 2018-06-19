@@ -1,11 +1,11 @@
 ---
-title: "如何创建或编辑过程配置 |Microsoft 文档"
-ms.custom: 
+title: 如何创建或编辑过程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: ef6160f1-f2f0-42ff-a516-7818c9d79d26
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962603"
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a><span data-ttu-id="ffbf6-102">如何创建或编辑过程配置</span><span class="sxs-lookup"><span data-stu-id="ffbf6-102">How to Create or Edit a Process Configuration</span></span>
 <span data-ttu-id="ffbf6-103">本主题讲述如何创建或编辑流程配置。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-103">This topic describes how to create or edit a process configuration.</span></span>  
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="ffbf6-359">右键单击你想要编辑，然后单击的过程配置**属性**。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-359">Right-click the process configuration that you want to edit, and then click **Properties**.</span></span>  
   
-5.  <span data-ttu-id="ffbf6-360">在*\<过程配置\>*属性对话框中，在**常规**和**联系人属性**选项卡上，根据更改设置必填。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-360">In the *\<process configuration\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as required.</span></span> <span data-ttu-id="ffbf6-361">有关这些设置的信息，请参阅上表。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-361">For information about these settings, see the preceding table.</span></span>  
+5.  <span data-ttu-id="ffbf6-360">在*\<过程配置\>* 属性对话框中，在**常规**和**联系人属性**选项卡上，根据更改设置必填。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-360">In the *\<process configuration\>* Properties dialog box, on the **General** and **Contact Properties** tabs, change the settings as required.</span></span> <span data-ttu-id="ffbf6-361">有关这些设置的信息，请参阅上表。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-361">For information about these settings, see the preceding table.</span></span>  
   
 6.  <span data-ttu-id="ffbf6-362">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="ffbf6-362">Click **OK**.</span></span>  
   

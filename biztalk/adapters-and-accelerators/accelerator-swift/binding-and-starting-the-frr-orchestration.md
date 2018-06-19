@@ -1,11 +1,11 @@
 ---
-title: "绑定和启动 FRR 业务流程 |Microsoft 文档"
-ms.custom: 
+title: 绑定和启动 FRR 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, binding orchestrations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - bindings, orchestrations
 - orchestrations, bindings
 ms.assetid: b74a0116-e98b-4fec-b386-710ce421a1e2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209053"
 ---
 # <a name="binding-and-starting-the-frr-orchestration"></a><span data-ttu-id="f80e2-102">绑定和启动 FRR 业务流程</span><span class="sxs-lookup"><span data-stu-id="f80e2-102">Binding and Starting the FRR Orchestration</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="f80e2-103">包括 FRR 业务流程为已部署的程序集 ([!INCLUDE[btsCoName](../../includes/btsconame-md.md)]。Solutions.FinancialServices.SWIFT.FrrOrchestration)。</span><span class="sxs-lookup"><span data-stu-id="f80e2-103"> includes the FRR orchestration as a deployed assembly ([!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.FinancialServices.SWIFT.FrrOrchestration).</span></span> <span data-ttu-id="f80e2-104">你需要启动此业务流程。</span><span class="sxs-lookup"><span data-stu-id="f80e2-104">You need to start this orchestration.</span></span>  

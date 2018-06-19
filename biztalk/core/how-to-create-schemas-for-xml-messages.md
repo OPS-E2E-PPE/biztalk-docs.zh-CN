@@ -1,14 +1,14 @@
 ---
-title: "How to Create for XML 消息的架构 |Microsoft 文档"
-ms.custom: 
+title: How to Create for XML 消息的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0270293-fe23-42bd-b090-e877d5e9ce0b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25969723"
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a><span data-ttu-id="bc5bb-102">如何为 XML 消息创建架构</span><span class="sxs-lookup"><span data-stu-id="bc5bb-102">How to Create Schemas for XML Messages</span></span>
 <span data-ttu-id="bc5bb-103">有多种方法用于创建 BizTalk 消息架构。</span><span class="sxs-lookup"><span data-stu-id="bc5bb-103">There are several methods for creating BizTalk message schemas.</span></span> <span data-ttu-id="bc5bb-104">本主题提供这些方法的某些的分步说明。</span><span class="sxs-lookup"><span data-stu-id="bc5bb-104">This topic provides step-by-step instructions for some of those methods.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "从使用 BizTalk Server 的 SQL 查询通知以增量方式接收 |Microsoft 文档"
-ms.custom: 
+title: 从使用 BizTalk Server 的 SQL 查询通知以增量方式接收 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6972e01-80be-47be-986a-c2e4e0fb0cd1
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967923"
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a><span data-ttu-id="968af-102">从使用 BizTalk Server 的 SQL 查询通知以增量方式接收</span><span class="sxs-lookup"><span data-stu-id="968af-102">Receive Query Notifications Incrementally from SQL using BizTalk Server</span></span>
 > [!IMPORTANT]
@@ -269,7 +270,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
         |<span data-ttu-id="968af-326">绑定属性</span><span class="sxs-lookup"><span data-stu-id="968af-326">Binding Property</span></span>|<span data-ttu-id="968af-327">值</span><span class="sxs-lookup"><span data-stu-id="968af-327">Value</span></span>|  
         |----------------------|-----------|  
         |<span data-ttu-id="968af-328">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="968af-328">**InboundOperationType**</span></span>|<span data-ttu-id="968af-329">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="968af-329">Set this to **Notification**.</span></span>|  
-        |<span data-ttu-id="968af-330">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="968af-330">**NotificationStatement**</span></span>|<span data-ttu-id="968af-331">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="968af-331">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="968af-332">**注意：**你必须专门的列名称在语句中指定此 SELECT 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="968af-332">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="968af-333">此外，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="968af-333">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="968af-334">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="968af-334">For example, `dbo.Employee`.</span></span>|  
+        |<span data-ttu-id="968af-330">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="968af-330">**NotificationStatement**</span></span>|<span data-ttu-id="968af-331">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="968af-331">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="968af-332">**注意：** 你必须专门的列名称在语句中指定此 SELECT 语句中所示。</span><span class="sxs-lookup"><span data-stu-id="968af-332">**Note:** You must specifically specify the column names in the statement as shown in this SELECT statement.</span></span> <span data-ttu-id="968af-333">此外，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="968af-333">Also, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="968af-334">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="968af-334">For example, `dbo.Employee`.</span></span>|  
         |<span data-ttu-id="968af-335">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="968af-335">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="968af-336">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="968af-336">Set this to **True**.</span></span>|  
   
          <span data-ttu-id="968af-337">有关不同的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="968af-337">For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  

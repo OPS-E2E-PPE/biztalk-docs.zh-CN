@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - Bank Identifier Code (BIC), enabling
 ms.assetid: d268a892-f304-44cb-b590-28ef359c8d99
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25967107"
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a><span data-ttu-id="2fff5-102">启用的 Bank 标识符代码的验证</span><span class="sxs-lookup"><span data-stu-id="2fff5-102">Enabling Validation of Bank Identifier Codes</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="2fff5-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 架构确保 Bank 标识符代码 (BICs) 在 SWIFT 交换文档中指定符合 SWIFT 定义 BIC 数据格式。</span><span class="sxs-lookup"><span data-stu-id="2fff5-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] schemas ensure that the Bank Identifier Codes (BICs) specified in the SWIFT interchange document conform to the SWIFT-defined BIC data format.</span></span> <span data-ttu-id="2fff5-104">A4SWIFT 还支持验证对数据库中的客户指定 BIC 列表 BICs。</span><span class="sxs-lookup"><span data-stu-id="2fff5-104">A4SWIFT also supports validating the BICs against a customer-specified BIC list in a database.</span></span>  

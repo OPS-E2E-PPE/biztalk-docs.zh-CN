@@ -1,14 +1,14 @@
 ---
-title: "为路线服务的订阅服务器使用发送端口 |Microsoft 文档"
-ms.custom: 
+title: 为路线服务的订阅服务器使用发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 898b461c-4d0d-4703-a8ca-7f52f3f15f70
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295485"
 ---
 # <a name="using-a-send-port-as-an-itinerary-service-subscriber"></a><span data-ttu-id="daf85-102">为路线服务的订阅服务器使用发送端口</span><span class="sxs-lookup"><span data-stu-id="daf85-102">Using a Send Port as an Itinerary Service Subscriber</span></span>
 <span data-ttu-id="daf85-103">作为示例，了解如何为路线服务的订阅服务器使用发送端口，图 1 显示满足以下条件的消息将拾取动态单向发送端口的筛选器条件：</span><span class="sxs-lookup"><span data-stu-id="daf85-103">As an example of how to use a send port as an itinerary service subscriber, Figure 1 shows the filter conditions for a dynamic one-way sent port that picks up messages that meet the following conditions:</span></span>  

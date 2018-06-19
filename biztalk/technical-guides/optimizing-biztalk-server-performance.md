@@ -1,14 +1,14 @@
 ---
-title: "优化 BizTalk Server 性能 |Microsoft 文档"
-ms.custom: 
+title: 优化 BizTalk Server 性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 809913f6-63b1-47cd-9961-0e10397108ca
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298525"
 ---
 # <a name="optimizing-biztalk-server-performance"></a><span data-ttu-id="51207-102">优化 BizTalk Server 性能</span><span class="sxs-lookup"><span data-stu-id="51207-102">Optimizing BizTalk Server Performance</span></span>
 <span data-ttu-id="51207-103">本部分提供用于提高 BizTalk Server 性能准则。</span><span class="sxs-lookup"><span data-stu-id="51207-103">This section provides guidelines for improving BizTalk Server performance.</span></span> <span data-ttu-id="51207-104">安装并配置 BizTalk Server 之后，将应用列出的优化。</span><span class="sxs-lookup"><span data-stu-id="51207-104">The optimizations listed are applied after BizTalk Server has been installed and configured.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "调用上使用 WCF 通道模型的 SAP 系统的操作 |Microsoft 文档"
-ms.custom: 
+title: 调用上使用 WCF 通道模型的 SAP 系统的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, supporting BAPI transactions
 - WCF channel model, invoking operations on the SAP system
 ms.assetid: 80ed85ff-360d-4b7f-a119-cd2a99c21cf4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965619"
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a><span data-ttu-id="6ae14-102">使用 WCF 通道模型的 SAP 系统上调用操作</span><span class="sxs-lookup"><span data-stu-id="6ae14-102">Invoke Operations on the SAP System Using the WCF Channel Model</span></span>
 <span data-ttu-id="6ae14-103">在调用操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用**IRequestChannel**或**IOutputChannel**通道形状将消息发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="6ae14-103">You invoke operations on the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] by using an **IRequestChannel** or **IOutputChannel** channel shape to send messages to the adapter.</span></span> <span data-ttu-id="6ae14-104">基本模式是通过使用绑定创建必需的通道形状的通道工厂 (**SAPBinding**) 和从一个连接 URI 创建的终结点。</span><span class="sxs-lookup"><span data-stu-id="6ae14-104">The basic pattern is to create a channel factory for the required channel shape by using a binding (**SAPBinding**) and an endpoint created from a connection URI.</span></span> <span data-ttu-id="6ae14-105">然后，你创建**消息**表示目标操作的消息架构符合的 SOAP 消息的实例。</span><span class="sxs-lookup"><span data-stu-id="6ae14-105">You then create a **Message** instance that represents a SOAP message that conforms to the message schema for your target operation.</span></span> <span data-ttu-id="6ae14-106">然后可以将此发送**消息**到[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]通过从通道工厂创建通道。</span><span class="sxs-lookup"><span data-stu-id="6ae14-106">You can then send this **Message** to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] by using a channel created from the channel factory.</span></span> <span data-ttu-id="6ae14-107">如果你使用**IRequestChannel**，你收到的响应。</span><span class="sxs-lookup"><span data-stu-id="6ae14-107">If you are using an **IRequestChannel**, you receive a response.</span></span> <span data-ttu-id="6ae14-108">如果执行 SAP 系统上的操作问题[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。</span><span class="sxs-lookup"><span data-stu-id="6ae14-108">If there is a problem executing the operation on the SAP system, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] throws a **Microsoft.ServiceModel.Channels.Common.TargetSystemException**.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "使用 BizTalk 中的 SAP 适配器进行的操作问题故障排除 |Microsoft 文档"
-description: "常见错误、 问题和解决方法与 mySAP 适配器 BizTalk 适配器包 (BAP) 中"
-ms.custom: 
+title: 使用 BizTalk 中的 SAP 适配器进行的操作问题故障排除 |Microsoft 文档
+description: 常见错误、 问题和解决方法与 mySAP 适配器 BizTalk 适配器包 (BAP) 中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb0f005b-7548-478b-8243-69e07c29d02c
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967507"
 ---
 # <a name="troubleshoot-operational-issues-with-the-sap-adapter"></a><span data-ttu-id="34d0e-103">与 SAP 适配器排除操作问题</span><span class="sxs-lookup"><span data-stu-id="34d0e-103">Troubleshoot Operational Issues with the SAP adapter</span></span>
 <span data-ttu-id="34d0e-104">本部分讨论如何使用故障排除方法来解决操作使用时可能遇到的错误[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="34d0e-104">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)].</span></span>  

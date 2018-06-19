@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 创建和部署标头和确认架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建和部署标头和确认架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, header schemas
 - header schemas
 ms.assetid: 3ff013a4-6c67-4bac-be97-81b2dc5b6119
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960739"
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a><span data-ttu-id="67b8e-102">步骤 1： 创建和部署标头和确认架构</span><span class="sxs-lookup"><span data-stu-id="67b8e-102">Step 1: Create and Deploy Header and Acknowledgment Schemas</span></span>
 <span data-ttu-id="67b8e-103">使用标头架构来验证消息实例的标头 （MSH 段）。</span><span class="sxs-lookup"><span data-stu-id="67b8e-103">You use the header schema to validate the header (MSH segment) of the message instance.</span></span> <span data-ttu-id="67b8e-104">确认架构用于生成消息实例确认。</span><span class="sxs-lookup"><span data-stu-id="67b8e-104">You use the acknowledgment schema to generate the acknowledgment for the message instance.</span></span> <span data-ttu-id="67b8e-105">此过程能够在之间通用的所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。</span><span class="sxs-lookup"><span data-stu-id="67b8e-105">This process is common across all schemas versions of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.</span></span>  

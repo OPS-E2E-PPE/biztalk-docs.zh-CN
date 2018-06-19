@@ -1,18 +1,18 @@
 ---
-title: "第 7 课： 添加自定义 SWIFT 汇编程序发送管道 |Microsoft 文档"
-ms.custom: 
+title: 第 7 课： 添加自定义 SWIFT 汇编程序发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assembler, custom pipelines
 - send pipelines, adding assembler
 - send pipelines, custom pipelines
 ms.assetid: 793cd132-7e24-4cf4-a6fc-d522a30b228a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209189"
 ---
 # <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a><span data-ttu-id="5a134-102">第 7 课： 添加自定义发送管道 SWIFT 汇编程序</span><span class="sxs-lookup"><span data-stu-id="5a134-102">Lesson 7: Adding the SWIFT Assembler to a Custom Send Pipeline</span></span>
 <span data-ttu-id="5a134-103">在本课程中，你将 SWIFT 的自定义汇编程序 (ASM) 添加到管道。</span><span class="sxs-lookup"><span data-stu-id="5a134-103">In this lesson, you add the SWIFT custom assembler (ASM) to your pipeline.</span></span>  

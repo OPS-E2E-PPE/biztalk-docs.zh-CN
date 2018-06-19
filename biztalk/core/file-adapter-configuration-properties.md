@@ -1,11 +1,11 @@
 ---
-title: "文件适配器配置属性 |Microsoft 文档"
-ms.custom: 
+title: 文件适配器配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - File adapters, code sample
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - File adapters, properties
 - send ports, adapters
 ms.assetid: 53f4fd17-95b9-4861-b433-772b619e90c7
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969867"
 ---
 # <a name="file-adapter-configuration-properties"></a><span data-ttu-id="1602b-102">文件适配器配置属性</span><span class="sxs-lookup"><span data-stu-id="1602b-102">File Adapter Configuration Properties</span></span>
 <span data-ttu-id="1602b-103">下表列出可以为文件适配器设置的配置属性接收位置：</span><span class="sxs-lookup"><span data-stu-id="1602b-103">The following table lists the configuration properties that you can set for a File adapter receive location:</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
 |-------------------|----------|-----------------|------------------|--------------|  
 |<span data-ttu-id="1602b-109">RemoveReceivedFileRetryCount</span><span class="sxs-lookup"><span data-stu-id="1602b-109">RemoveReceivedFileRetryCount</span></span>|<span data-ttu-id="1602b-110">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="1602b-110">VT_UI4</span></span>|<span data-ttu-id="1602b-111">指定文件适配器将尝试删除已读取并提交到 BizTalk Server 的文件的次数。</span><span class="sxs-lookup"><span data-stu-id="1602b-111">Specify the number of times that the File adapter will attempt to delete a file that it has read and submitted to BizTalk Server.</span></span>|<span data-ttu-id="1602b-112">有效值为从 0 到 100。</span><span class="sxs-lookup"><span data-stu-id="1602b-112">Valid values are from 0 to 100.</span></span>|<span data-ttu-id="1602b-113">默认值为 5。</span><span class="sxs-lookup"><span data-stu-id="1602b-113">The default value is 5.</span></span>|  
 |<span data-ttu-id="1602b-114">RemoveReceivedFileMaxInterval</span><span class="sxs-lookup"><span data-stu-id="1602b-114">RemoveReceivedFileMaxInterval</span></span>|<span data-ttu-id="1602b-115">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="1602b-115">VT_UI4</span></span>|<span data-ttu-id="1602b-116">指定文件适配器在尝试删除已读取并提交到 BizTalk Server 的文件前等待的初始间隔（以毫秒计）。</span><span class="sxs-lookup"><span data-stu-id="1602b-116">Specify the initial interval in milliseconds that the File adapter waits before attempting to delete a file that it has read and submitted to BizTalk Server.</span></span>|<span data-ttu-id="1602b-117">有效值为 1 到 1000年。</span><span class="sxs-lookup"><span data-stu-id="1602b-117">Valid values are from 1 to 1000.</span></span>|<span data-ttu-id="1602b-118">默认值为 10。</span><span class="sxs-lookup"><span data-stu-id="1602b-118">The default value is 10.</span></span>|  
-|<span data-ttu-id="1602b-119">FileMask</span><span class="sxs-lookup"><span data-stu-id="1602b-119">FileMask</span></span>|<span data-ttu-id="1602b-120">VT_BSTR</span><span class="sxs-lookup"><span data-stu-id="1602b-120">VT_BSTR</span></span>|<span data-ttu-id="1602b-121">指定文件的掩码。</span><span class="sxs-lookup"><span data-stu-id="1602b-121">Specify the mask for the files.</span></span>|<span data-ttu-id="1602b-122">无</span><span class="sxs-lookup"><span data-stu-id="1602b-122">None</span></span>|<span data-ttu-id="1602b-123">默认值为 *.xml。</span><span class="sxs-lookup"><span data-stu-id="1602b-123">The default value is *.xml.</span></span>|  
+|<span data-ttu-id="1602b-119">FileMask</span><span class="sxs-lookup"><span data-stu-id="1602b-119">FileMask</span></span>|<span data-ttu-id="1602b-120">VT_BSTR</span><span class="sxs-lookup"><span data-stu-id="1602b-120">VT_BSTR</span></span>|<span data-ttu-id="1602b-121">指定文件的掩码。</span><span class="sxs-lookup"><span data-stu-id="1602b-121">Specify the mask for the files.</span></span>|<span data-ttu-id="1602b-122">无</span><span class="sxs-lookup"><span data-stu-id="1602b-122">None</span></span>|<span data-ttu-id="1602b-123">默认值为 \*.xml。</span><span class="sxs-lookup"><span data-stu-id="1602b-123">The default value is \*.xml.</span></span>|  
 |<span data-ttu-id="1602b-124">BatchSizeInBytes</span><span class="sxs-lookup"><span data-stu-id="1602b-124">BatchSizeInBytes</span></span>|<span data-ttu-id="1602b-125">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="1602b-125">VT_UI4</span></span>|<span data-ttu-id="1602b-126">指定一批发送到 BizTalk MessageBox 的文件的最大总字节数。</span><span class="sxs-lookup"><span data-stu-id="1602b-126">Specify the maximum total bytes for a batch of files sent to the BizTalk MessageBox.</span></span>|<span data-ttu-id="1602b-127">有效值为 1024年到 104857600。</span><span class="sxs-lookup"><span data-stu-id="1602b-127">Valid values are from 1024 to 104857600.</span></span>|<span data-ttu-id="1602b-128">默认值为 102400。</span><span class="sxs-lookup"><span data-stu-id="1602b-128">The default value is 102400.</span></span>|  
 |<span data-ttu-id="1602b-129">PollingInterval</span><span class="sxs-lookup"><span data-stu-id="1602b-129">PollingInterval</span></span>|<span data-ttu-id="1602b-130">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="1602b-130">VT_UI4</span></span>|<span data-ttu-id="1602b-131">指定文件适配器将轮询指定位置以查找新文件的时间间隔（以毫秒计）。</span><span class="sxs-lookup"><span data-stu-id="1602b-131">Specify the interval in milliseconds that the File adapter will poll the specified location for new files.</span></span>|<span data-ttu-id="1602b-132">有效值从 1000年到 3600000。</span><span class="sxs-lookup"><span data-stu-id="1602b-132">Valid values are from 1000 to 3600000.</span></span>|<span data-ttu-id="1602b-133">设置为 1 可禁用轮询。</span><span class="sxs-lookup"><span data-stu-id="1602b-133">Set to 1 to disable polling.</span></span>|  
 |<span data-ttu-id="1602b-134">BatchSize</span><span class="sxs-lookup"><span data-stu-id="1602b-134">BatchSize</span></span>|<span data-ttu-id="1602b-135">VT_UI4</span><span class="sxs-lookup"><span data-stu-id="1602b-135">VT_UI4</span></span>|<span data-ttu-id="1602b-136">指定可在一批中提交的最多消息数。</span><span class="sxs-lookup"><span data-stu-id="1602b-136">Specify the maximum number of messages to be submitted in a batch.</span></span>|<span data-ttu-id="1602b-137">有效值为从 1 到 256。</span><span class="sxs-lookup"><span data-stu-id="1602b-137">Valid values are from 1 to 256.</span></span>|<span data-ttu-id="1602b-138">默认值为 20。</span><span class="sxs-lookup"><span data-stu-id="1602b-138">The default value is 20.</span></span>|  

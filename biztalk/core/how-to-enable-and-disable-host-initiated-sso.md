@@ -1,11 +1,11 @@
 ---
-title: "如何启用和禁用主机启动的 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何启用和禁用主机启动的 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host initiated SSO, disabling
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - enabling, host initiated SSO
 - host initiated SSO, enabling
 ms.assetid: a11d314a-6ff9-4d0a-89c3-c412541c2cec
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968979"
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a><span data-ttu-id="7e96a-102">如何启用和禁用主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="7e96a-102">How to Enable and Disable Host Initiated SSO</span></span>
 <span data-ttu-id="7e96a-103">默认情况下，单一登录系统中不启用主机启动的单一登录，而必须由 SSO 管理员启用。</span><span class="sxs-lookup"><span data-stu-id="7e96a-103">By default, host initiated Single Sign-On is not enabled in the Single Sign-On system, and must be enabled by the SSO Administrator.</span></span>  

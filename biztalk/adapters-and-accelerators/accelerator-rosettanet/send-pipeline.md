@@ -1,14 +1,14 @@
 ---
-title: "发送管道 |Microsoft 文档"
-ms.custom: 
+title: 发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58ca6a63-525a-4b16-932d-6d26e68f6fab
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964059"
 ---
 # <a name="send-pipeline"></a><span data-ttu-id="6d8e4-102">发送管道</span><span class="sxs-lookup"><span data-stu-id="6d8e4-102">Send Pipeline</span></span>
 <span data-ttu-id="6d8e4-103">此示例提供一个能够实际应用的 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 发送管道，你可以为自己的应用程序自定义它。</span><span class="sxs-lookup"><span data-stu-id="6d8e4-103">This sample provides a working [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] send pipeline that you can customize for your application.</span></span>  

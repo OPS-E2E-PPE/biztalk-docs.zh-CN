@@ -11,7 +11,7 @@ helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 ms.assetid: 712cf42f-8d71-47e9-b2bf-3da158b74fe4
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966011"
 ---
 # <a name="creating-an-a4swift-receive-location"></a><span data-ttu-id="22c82-102">创建 A4SWIFT 接收位置</span><span class="sxs-lookup"><span data-stu-id="22c82-102">Creating an A4SWIFT Receive Location</span></span>
 <span data-ttu-id="22c82-103">你必须创建[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]接收位置来启用从 SWIFT 通过网络接收到消息[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]下, 图中所示。</span><span class="sxs-lookup"><span data-stu-id="22c82-103">You must create an [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] receive location to enable message reception from the SWIFT network by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)], as shown in the following figure.</span></span> <span data-ttu-id="22c82-104">接收位置接收平面文件消息的入站的文件文件夹。</span><span class="sxs-lookup"><span data-stu-id="22c82-104">The receive location receives flat file messages from an inbound file folder.</span></span>  
@@ -69,7 +70,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]
     >  <span data-ttu-id="22c82-137">如果此文件夹不存在，则可以创建使用**新建文件夹**命令。</span><span class="sxs-lookup"><span data-stu-id="22c82-137">If this folder does not exist, you can create it using the **Make New Folder** command.</span></span>  
   
-12. <span data-ttu-id="22c82-138">在文件传输属性对话框中，在**文件掩码**框中，输入 **\*。\<*扩展*\>**，其中\<*扩展*\>是传入的扩展平面文件消息，例如**.txt**。</span><span class="sxs-lookup"><span data-stu-id="22c82-138">In the FILE Transport Properties dialog box, in the **File Mask** box, enter **\*.\<*extension*\>**, where \<*extension*\> is the extension of the incoming flat file message, such as **.txt**.</span></span> <span data-ttu-id="22c82-139">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="22c82-139">Click **OK**.</span></span>  
+12. <span data-ttu-id="22c82-138">在文件传输属性对话框中，在**文件掩码**框中，输入 **\*。\<*扩展*\>**，其中\<*扩展*\>是传入的扩展平面文件消息，例如 **.txt**。</span><span class="sxs-lookup"><span data-stu-id="22c82-138">In the FILE Transport Properties dialog box, in the **File Mask** box, enter **\*.\<*extension*\>**, where \<*extension*\> is the extension of the incoming flat file message, such as **.txt**.</span></span> <span data-ttu-id="22c82-139">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="22c82-139">Click **OK**.</span></span>  
   
 13. <span data-ttu-id="22c82-140">在接收位置属性对话框中，确保**BizTalkServerApplication**为输入**接收处理程序**框。</span><span class="sxs-lookup"><span data-stu-id="22c82-140">In the Receive Location Properties dialog box, ensure that **BizTalkServerApplication** is entered for the **Receive handler** box.</span></span>  
   

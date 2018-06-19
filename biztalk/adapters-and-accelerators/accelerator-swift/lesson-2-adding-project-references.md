@@ -1,17 +1,17 @@
 ---
-title: "第 2 课： 添加项目引用 |Microsoft 文档"
-ms.custom: 
+title: 第 2 课： 添加项目引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - references [projects]
 - projects, adding references
 ms.assetid: ddc2bf49-cddd-4edb-8043-870897879655
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962211"
 ---
 # <a name="lesson-2-adding-project-references"></a><span data-ttu-id="b21b3-102">第 2 课： 添加项目引用</span><span class="sxs-lookup"><span data-stu-id="b21b3-102">Lesson 2: Adding Project References</span></span>
 <span data-ttu-id="b21b3-103">你添加项目引用，以便你管道可以访问位于 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll 文件中的默认运行时架构。</span><span class="sxs-lookup"><span data-stu-id="b21b3-103">You add project references so your pipelines can access the default runtime schemas located in the Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll file.</span></span> <span data-ttu-id="b21b3-104">此程序集文件包含与消息类型解析所需的提升属性的标头架构。</span><span class="sxs-lookup"><span data-stu-id="b21b3-104">This assembly file contains the header schema with promoted properties required for message-type resolution.</span></span>  

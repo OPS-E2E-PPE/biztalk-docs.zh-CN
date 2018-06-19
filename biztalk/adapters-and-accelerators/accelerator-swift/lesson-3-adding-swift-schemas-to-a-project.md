@@ -1,17 +1,17 @@
 ---
-title: "第 3 课： 将 SWIFT 架构添加到项目 |Microsoft 文档"
-ms.custom: 
+title: 第 3 课： 将 SWIFT 架构添加到项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, adding to projects
 - projects
 ms.assetid: e17ef4b8-f060-44cc-b988-0f9f54deab90
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961987"
 ---
 # <a name="lesson-3-adding-swift-schemas-to-a-project"></a><span data-ttu-id="73358-102">第 3 课： 将 SWIFT 架构添加到项目</span><span class="sxs-lookup"><span data-stu-id="73358-102">Lesson 3: Adding SWIFT Schemas to a Project</span></span>
 <span data-ttu-id="73358-103">现在，你有一个解决方案和一个新的项目，你可以向项目添加项。</span><span class="sxs-lookup"><span data-stu-id="73358-103">Now that you have a solution and a new project, you can add items to the project.</span></span> <span data-ttu-id="73358-104">你添加的第一项是 MT103 SWIFT 付款的消息架构。</span><span class="sxs-lookup"><span data-stu-id="73358-104">The first item you add is a schema for an MT103 SWIFT Payment message.</span></span> <span data-ttu-id="73358-105">当你选择架构模板时，将启动 BizTalk 编辑器。</span><span class="sxs-lookup"><span data-stu-id="73358-105">When you select the Schema template, BizTalk Editor starts.</span></span>  

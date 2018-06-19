@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204557"
 ---
 # <a name="acknowledgments-processing"></a><span data-ttu-id="4b856-102">处理的确认</span><span class="sxs-lookup"><span data-stu-id="4b856-102">Acknowledgments Processing</span></span>
 <span data-ttu-id="4b856-103">HL7 规范支持消息的交换的两种格式：</span><span class="sxs-lookup"><span data-stu-id="4b856-103">The HL7 specification supports exchange of messages in two formats:</span></span>  

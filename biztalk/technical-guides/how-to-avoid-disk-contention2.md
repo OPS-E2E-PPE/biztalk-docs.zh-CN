@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37bdf6bd-cb34-4540-819e-908d83a22d40
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22298133"
 ---
 # <a name="how-to-avoid-disk-contention"></a><span data-ttu-id="7a8ff-102">如何避免磁盘争用</span><span class="sxs-lookup"><span data-stu-id="7a8ff-102">How to Avoid Disk Contention</span></span>
 <span data-ttu-id="7a8ff-103">BizTalk Server 设计为永久性系统中。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-103">BizTalk Server is designed as a persistent system.</span></span> <span data-ttu-id="7a8ff-104">对于高吞吐量方案，MessageBox 和 BizTalk 跟踪数据库可能会遇到严重的争用现象。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-104">For high throughput scenarios, the MessageBox and BizTalk Tracking databases can experience severe contention.</span></span> <span data-ttu-id="7a8ff-105">缓慢的磁盘速度会进一步加重这种争用状况。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-105">This contention can be aggravated by slow disks.</span></span> <span data-ttu-id="7a8ff-106">如果是磁盘降低 （大于平均的平均时间Disk sec/Read 或 avg.Disk sec/Write)，它可能会导致 SQL Server 保留更长的锁 （高锁等待的时间和高锁定超时）。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-106">If the disks are slow (greater than 15ms on average for Avg. Disk sec/Read or Avg. Disk sec/Write), it may cause SQL Server to hold onto locks longer (high Lock Wait Time and high Lock Timeouts).</span></span> <span data-ttu-id="7a8ff-107">此操作，反过来，可能导致 MessageBox 表 （假脱机和应用程序的队列） 不断增长，导致数据库膨胀和限制。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-107">This, in turn, can cause the MessageBox tables (Spool and Application Queues) to grow, causing database bloat and throttling.</span></span> <span data-ttu-id="7a8ff-108">这种情况下最终将导致较低的总体可持续吞吐量。</span><span class="sxs-lookup"><span data-stu-id="7a8ff-108">This situation ultimately results in lower overall sustainable throughput.</span></span>  

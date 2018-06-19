@@ -1,18 +1,18 @@
 ---
-title: "如何从警报中删除订阅服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何从警报中删除订阅服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - subscriptions, subscribers
 - managing [BAM], deleting alert subscibers
 - alerts, subscribers
 ms.assetid: d5571863-26e3-4c1b-991f-538cd1fef347
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969987"
 ---
 # <a name="how-to-remove-subscribers-from-an-alert"></a><span data-ttu-id="45159-102">如何从警报删除订户</span><span class="sxs-lookup"><span data-stu-id="45159-102">How to Remove Subscribers from an Alert</span></span>
 <span data-ttu-id="45159-103">管理员使用**删除订阅**命令从警报作为订阅服务器中删除指定的用户。</span><span class="sxs-lookup"><span data-stu-id="45159-103">Administrators use the **remove-subscription** command to remove the specified user as a subscriber from an alert.</span></span>  

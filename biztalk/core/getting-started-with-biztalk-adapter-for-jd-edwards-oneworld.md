@@ -1,15 +1,15 @@
 ---
-title: "开始使用的 BizTalk Adapter for 博士 Edwards OneWorld |Microsoft 文档"
-description: "安装并单步教程，说明如何为 BizTalk 适配器为博士 Edwards OneWorld BizTalk Server 中"
-ms.custom: 
+title: 开始使用的 BizTalk Adapter for 博士 Edwards OneWorld |Microsoft 文档
+description: 安装并单步教程，说明如何为 BizTalk 适配器为博士 Edwards OneWorld BizTalk Server 中
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 79f2c176-bc61-4998-b21f-e5082fd977bb
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450550"
 ---
 # <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="0ded8-103">入门博士 Edwards OneWorld BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="0ded8-103">Get started with BizTalk Adapter for JD Edwards OneWorld</span></span>
 

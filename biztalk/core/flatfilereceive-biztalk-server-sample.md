@@ -1,14 +1,14 @@
 ---
-title: "FlatFileReceive （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: FlatFileReceive （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bd9e8d-6ed9-49c4-8437-c0c8b2a9a78d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970163"
 ---
 # <a name="flatfilereceive-biztalk-server-sample"></a><span data-ttu-id="1d6f7-102">FlatFileReceive （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="1d6f7-102">FlatFileReceive (BizTalk Server Sample)</span></span>
 <span data-ttu-id="1d6f7-103">FlatFileReceive 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将平面文件处理成等效的 .xml 文件。</span><span class="sxs-lookup"><span data-stu-id="1d6f7-103">The FlatFileReceive sample demonstrates how you can use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to process a flat file into the equivalent .xml file.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="1d6f7-133">XmlTransmit 用作发送管道。</span><span class="sxs-lookup"><span data-stu-id="1d6f7-133">XmlTransmit is used as the send pipeline.</span></span> <span data-ttu-id="1d6f7-134">当发送管道中不需要属性降级或其他消息处理时，请使用 PassThruTransmit 管道。</span><span class="sxs-lookup"><span data-stu-id="1d6f7-134">Use the PassThruTransmit pipeline when property demotion or other messaging processing is not required in the send port.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="1d6f7-135">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="1d6f7-135">Where to Find This Sample</span></span>  
- <span data-ttu-id="1d6f7-136">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\\</span><span class="sxs-lookup"><span data-stu-id="1d6f7-136">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\\</span></span>  
+ <span data-ttu-id="1d6f7-136">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\\</span><span class="sxs-lookup"><span data-stu-id="1d6f7-136">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\\</span></span>  
   
  <span data-ttu-id="1d6f7-137">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="1d6f7-137">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -72,13 +73,13 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="1d6f7-160">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="1d6f7-160">In a command window, navigate to the following folder:</span></span>  
   
-     <span data-ttu-id="1d6f7-161">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="1d6f7-161">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
+     <span data-ttu-id="1d6f7-161">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="1d6f7-161">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
   
 2.  <span data-ttu-id="1d6f7-162">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="1d6f7-162">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="1d6f7-163">在下面的文件夹中，为本示例创建输入 (FFInput) 和输出 (FFOutput) 文件夹：</span><span class="sxs-lookup"><span data-stu-id="1d6f7-163">Creates the input (FFInput) and output (FFOutput) folders for this sample in the folder:</span></span>  
   
-         <span data-ttu-id="1d6f7-164">*\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="1d6f7-164">*\<Samples Path\>*\Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
+         <span data-ttu-id="1d6f7-164">*\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span><span class="sxs-lookup"><span data-stu-id="1d6f7-164">*\<Samples Path\>* \Pipelines\AssemblerDisassembler\FlatFileReceive</span></span>  
   
     -   <span data-ttu-id="1d6f7-165">为本示例编译并部署 Visual Studio 项目。</span><span class="sxs-lookup"><span data-stu-id="1d6f7-165">Compiles and deploys the Visual Studio project for this sample.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "TIBCO 企业消息服务适配器功能 |Microsoft 文档"
-ms.custom: 
+title: TIBCO 企业消息服务适配器功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede748ce-3f28-4942-b2bd-e38e5f1b0f54
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015132"
 ---
 # <a name="tibco-ems-adapter-features"></a><span data-ttu-id="165c5-102">TIBCO EMS 适配器功能</span><span class="sxs-lookup"><span data-stu-id="165c5-102">TIBCO EMS Adapter Features</span></span>
 <span data-ttu-id="165c5-103">用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器使您能够通过使用 BizTalk Server 和 TIBCO SDK 来发布和订阅由 TIBCO EMS 管理的队列和主题。</span><span class="sxs-lookup"><span data-stu-id="165c5-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) enables you to publish and subscribe to queues and topics managed by TIBCO EMS, using BizTalk Server and the TIBCO SDK.</span></span> <span data-ttu-id="165c5-104">适配器将以快速、简便和可靠的方式集成 TIBCO EMS 消息。</span><span class="sxs-lookup"><span data-stu-id="165c5-104">The adapter integrates TIBCO EMS messages in a fast, easy, and reliable way.</span></span> <span data-ttu-id="165c5-105">它将在 TIBCO EMS 服务器和 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 之间交换 XML 数据格式，以提供一个高度整合并且可靠的应用程序基础结构。</span><span class="sxs-lookup"><span data-stu-id="165c5-105">It exchanges XML data formats between TIBCO EMS servers and Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to provide a tightly integrated and reliable application infrastructure.</span></span> <span data-ttu-id="165c5-106">它提供了传输和接收适配器集成操作，可使用 XML 架构提供端到端业务流程管理。</span><span class="sxs-lookup"><span data-stu-id="165c5-106">It provides transmit and receive adapter integration operations providing end-to-end business-process management using XML schemas.</span></span>  

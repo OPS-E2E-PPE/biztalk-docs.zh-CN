@@ -1,14 +1,14 @@
 ---
-title: "如何汇总运行状况 |Microsoft 文档"
-ms.custom: 
+title: 如何汇总运行状况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c37644cd-7d3c-4e93-ad56-101043cfa685
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297661"
 ---
 # <a name="how-health-rolls-up"></a><span data-ttu-id="8d129-102">运行状况如何汇总</span><span class="sxs-lookup"><span data-stu-id="8d129-102">How Health Rolls Up</span></span>
 <span data-ttu-id="8d129-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包将 BizTalk Server 部署、 应用程序和其构成项目分类到其中的一个层的运行状况可以依赖于较低层的运行状况的层结构。</span><span class="sxs-lookup"><span data-stu-id="8d129-103">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack categorizes the BizTalk Server deployment, applications and its constituent artifacts into a layer structure where the health of one layer can depend on the health of the lower level.</span></span>  

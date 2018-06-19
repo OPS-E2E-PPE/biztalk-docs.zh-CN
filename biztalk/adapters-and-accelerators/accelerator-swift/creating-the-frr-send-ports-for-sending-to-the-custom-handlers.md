@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 发送端口将发送到自定义处理程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 发送端口将发送到自定义处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 - FRR, creating send ports
 ms.assetid: 036f1f97-17a2-4e02-a85a-a52739a48528
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966539"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a><span data-ttu-id="71fd3-102">创建 FRR 发送端口将发送到自定义处理程序</span><span class="sxs-lookup"><span data-stu-id="71fd3-102">Creating the FRR Send Ports for Sending to the Custom Handlers</span></span>
 <span data-ttu-id="71fd3-103">若要执行 FIN 响应对帐，你需要创建一系列发送端口，其中每个发送一条消息 （原始消息或响应） 从[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到处理相关的消息的自定义处理程序。</span><span class="sxs-lookup"><span data-stu-id="71fd3-103">To perform FIN Response Reconciliation, you need to create a series of send ports, each of which sends a message (original message or response) from [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] to the custom handlers that process the correlated messages.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  <span data-ttu-id="71fd3-130">如果此文件夹不存在，则可以创建使用**新建文件夹**命令。</span><span class="sxs-lookup"><span data-stu-id="71fd3-130">If this folder does not exist, you can create it using the **Make New Folder** command.</span></span>  
   
-7.  <span data-ttu-id="71fd3-131">在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="71fd3-131">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="71fd3-131">在**文件名**框中，键入 **%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="71fd3-131">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="71fd3-132">你可以创建用于每种类型的消息的不同文件夹。</span><span class="sxs-lookup"><span data-stu-id="71fd3-132">You can create a different folder for each type of message.</span></span>  

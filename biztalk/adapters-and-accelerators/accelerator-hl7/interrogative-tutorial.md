@@ -1,18 +1,18 @@
 ---
-title: "Interrogative 教程 |Microsoft 文档"
-ms.custom: 
+title: Interrogative 教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - interrogative tutorial
 - interrogative tutorial, about the tutorial
 - tutorials, interrogative tutorial
 ms.assetid: 93988429-5544-4920-821f-54f0a67bda72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960547"
 ---
 # <a name="interrogative-tutorial"></a><span data-ttu-id="00223-102">Interrogative 教程</span><span class="sxs-lookup"><span data-stu-id="00223-102">Interrogative Tutorial</span></span>
 <span data-ttu-id="00223-103">本教程包含的详细的步骤，描述如何使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]以便在查询/响应方案中的业务流程。</span><span class="sxs-lookup"><span data-stu-id="00223-103">This tutorial contains detailed steps that describe how you use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] to facilitate business processes in a Query/Response scenario.</span></span>  

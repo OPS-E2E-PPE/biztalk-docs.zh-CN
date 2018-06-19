@@ -1,18 +1,18 @@
 ---
-title: "如何禁用警报 |Microsoft 文档"
-ms.custom: 
+title: 如何禁用警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - alerts, disabling
 - managing [BAM definitions], disabling alerts
 - Disable-Alerts command [BAM]
 ms.assetid: c5938bc2-1043-4633-8cad-02caf442f2e8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969259"
 ---
 # <a name="how-to-disable-alerts"></a><span data-ttu-id="5e3da-102">如何禁用警报</span><span class="sxs-lookup"><span data-stu-id="5e3da-102">How to Disable Alerts</span></span>
 <span data-ttu-id="5e3da-103">管理员使用**禁用警报**命令以禁用所有指定的视图上的警报。</span><span class="sxs-lookup"><span data-stu-id="5e3da-103">Administrators use the **disable-alerts** command to disable all of the alerts on the specified view.</span></span>  

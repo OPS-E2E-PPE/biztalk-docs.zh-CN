@@ -1,15 +1,15 @@
 ---
-title: "疑难解答和已知问题 BizTalk Server 中使用 SWIFT 快捷键 |Microsoft 文档"
-description: "SWIFT 错误代码、 常见的问题以及 BizTalk Server 中 A4SWIFT 的解决方法"
-ms.custom: 
+title: 疑难解答和已知问题 BizTalk Server 中使用 SWIFT 快捷键 |Microsoft 文档
+description: SWIFT 错误代码、 常见的问题以及 BizTalk Server 中 A4SWIFT 的解决方法
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03902c73-f027-479c-980b-100195354241
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962835"
 ---
 # <a name="troubleshooting-and-known-issues"></a><span data-ttu-id="90047-103">疑难解答和已知问题</span><span class="sxs-lookup"><span data-stu-id="90047-103">Troubleshooting and known issues</span></span>
 <span data-ttu-id="90047-104">本部分提供一个集中的位置相关的疑难解答信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="90047-104">This section provides a centralized location for information related to troubleshooting [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span>  

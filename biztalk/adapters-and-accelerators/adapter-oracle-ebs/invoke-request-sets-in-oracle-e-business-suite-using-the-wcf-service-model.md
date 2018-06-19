@@ -1,14 +1,14 @@
 ---
-title: "调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集 |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb6ec551-c069-4133-add5-2ba83d20405d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965179"
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="a190d-102">调用中使用 WCF 服务模型的 Oracle E-business Suite 请求集</span><span class="sxs-lookup"><span data-stu-id="a190d-102">Invoke request sets in Oracle E-Business Suite using the WCF service model</span></span>
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]<span data-ttu-id="a190d-103">使您能够在 Oracle E-business Suite 中执行请求集。</span><span class="sxs-lookup"><span data-stu-id="a190d-103"> enables you to execute request sets in Oracle E-Business Suite.</span></span> <span data-ttu-id="a190d-104">请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。</span><span class="sxs-lookup"><span data-stu-id="a190d-104">Request sets are divided into one or more stages, and each stage contains a set of reports and concurrent programs.</span></span> <span data-ttu-id="a190d-105">有关如何适配器支持请求集的详细信息，请参阅[对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。</span><span class="sxs-lookup"><span data-stu-id="a190d-105">For more information about how the adapter supports request sets, see [Operations on Request Sets](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md).</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968459"
 ---
 # <a name="error---input-parameter-count-for-table-looping-functoid-not-valid"></a><span data-ttu-id="17641-102">错误-循环 Functoid 不是有效的表的输入参数计数</span><span class="sxs-lookup"><span data-stu-id="17641-102">Error - Input Parameter Count for Table Looping Functoid Not Valid</span></span>
 <span data-ttu-id="17641-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="17641-103">**Error Code**</span></span>  

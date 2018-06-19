@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210133"
 ---
 # <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a><span data-ttu-id="6ba28-102">步骤 1： 为 Contoso 价格和可用性请求创建一个新的 BizTalk 解决方案</span><span class="sxs-lookup"><span data-stu-id="6ba28-102">Step 1: Creating a New BizTalk Solution for the Contoso Price and Availability Request</span></span>
 <span data-ttu-id="6ba28-103">在此步骤中，你将创建[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]为 Contoso 价格和可用性请求项目的解决方案。</span><span class="sxs-lookup"><span data-stu-id="6ba28-103">In this step, you create a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] solution for the Contoso Price and Availability Request project.</span></span> <span data-ttu-id="6ba28-104">此项目包含 3A2 价格与可用性消息的请求和响应的架构和映射。</span><span class="sxs-lookup"><span data-stu-id="6ba28-104">This project will contain the schemas and maps for the requests and responses for the 3A2 Price and Availability messages.</span></span>  

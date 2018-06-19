@@ -1,18 +1,18 @@
 ---
-title: "步骤 3： 编辑合作伙伴接口过程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 编辑合作伙伴接口过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - modifying, PIPs
 - PIPs, modifying
 - loopback tutorial, modifying PIPs
 ms.assetid: 4d03c598-8ed4-4135-9748-ede101997fd0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965067"
 ---
 # <a name="step-3-edit-the-partner-interface-process"></a><span data-ttu-id="989b0-102">步骤 3： 编辑合作伙伴接口过程</span><span class="sxs-lookup"><span data-stu-id="989b0-102">Step 3: Edit the Partner Interface Process</span></span>
 <span data-ttu-id="989b0-103">在此步骤中，如果你没有在 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® Internet 信息服务 (IIS) 中配置的安全套接字层 (SSL) 证书，请编辑合作伙伴接口流程 (PIP) 配置设置，以便禁用安全传输功能。</span><span class="sxs-lookup"><span data-stu-id="989b0-103">In this step, you edit the Partner Interface Process (PIP) configuration settings to disable secure transport if you do not have a Secure Sockets Layer (SSL) certificate configured in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® Internet Information Services (IIS).</span></span> <span data-ttu-id="989b0-104">由于环回方案不支持对传入消息和传出消息签名，为了继续完成教程，你必须更改默认设置。</span><span class="sxs-lookup"><span data-stu-id="989b0-104">Because the loopback scenario does not support signing for both incoming and outgoing messages, you must change the default settings to continue with the tutorial.</span></span> <span data-ttu-id="989b0-105">你将修改 STD_0C1_R01.02 PIP。</span><span class="sxs-lookup"><span data-stu-id="989b0-105">You modify the STD_0C1_R01.02 PIP.</span></span>  

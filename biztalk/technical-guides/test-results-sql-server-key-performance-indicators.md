@@ -1,14 +1,14 @@
 ---
-title: "测试结果： SQL Server 关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 测试结果： SQL Server 关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2459ee6d-7a75-4338-ba5c-f42ab673ab87
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302461"
 ---
 # <a name="test-results-sql-server-key-performance-indicators"></a><span data-ttu-id="58da7-102">测试结果： SQL Server 关键绩效指标</span><span class="sxs-lookup"><span data-stu-id="58da7-102">Test Results: SQL Server Key Performance Indicators</span></span>
 <span data-ttu-id="58da7-103">本主题总结了 SQL Server 关键绩效指标 (KPI) 测试方案期间观察到。</span><span class="sxs-lookup"><span data-stu-id="58da7-103">This topic summarizes SQL Server Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="58da7-104">这些测试评估以下 SQL Server KPI:</span><span class="sxs-lookup"><span data-stu-id="58da7-104">These tests evaluated the following SQL Server KPI:</span></span>  
@@ -34,9 +35,9 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="58da7-118">请按照下列步骤以提高性能测量的 HYPER-V 虚拟机上运行的 SQL Server **\SQL Server:SQL Statistics\Batch 每秒请求数**性能监视器计数器：</span><span class="sxs-lookup"><span data-stu-id="58da7-118">Follow these steps to increase performance of SQL Server running on a Hyper-V virtual machine as measured by the **\SQL Server:SQL Statistics\Batch Requests/sec** performance monitor counter:</span></span>  
   
-1.  <span data-ttu-id="58da7-119">**分配其他固定的 VHD 磁盘与专用虚拟控制器和通道 –**分配其他固定 VHD 磁盘使用的专用虚拟控制器，通道将增加而不是使用单个 VHD 磁盘的磁盘吞吐量。</span><span class="sxs-lookup"><span data-stu-id="58da7-119">**Allocate additional fixed VHD disks with dedicated virtual controllers and channels –** Allocation of additional fixed VHD disks using dedicated virtual controllers and channels will increase disk throughput versus using a single VHD disk.</span></span>  
+1.  <span data-ttu-id="58da7-119">**分配其他固定的 VHD 磁盘与专用虚拟控制器和通道 –** 分配其他固定 VHD 磁盘使用的专用虚拟控制器，通道将增加而不是使用单个 VHD 磁盘的磁盘吞吐量。</span><span class="sxs-lookup"><span data-stu-id="58da7-119">**Allocate additional fixed VHD disks with dedicated virtual controllers and channels –** Allocation of additional fixed VHD disks using dedicated virtual controllers and channels will increase disk throughput versus using a single VHD disk.</span></span>  
   
-2.  <span data-ttu-id="58da7-120">**优化网络性能 –**按照的"优化网络性能"部分中所述步骤[清单： HYPER-V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。</span><span class="sxs-lookup"><span data-stu-id="58da7-120">**Optimize Network Performance –** Follow steps outlined in the “Optimize Network Performance” section of [Checklist: Optimizing Performance on Hyper-V](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md).</span></span> <span data-ttu-id="58da7-121">在同一台 HYPER-V 主机上运行多个 HYPER-V 虚拟机时是非常重要，遵循"在相同的 HYPER-V 运行的配置 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。</span><span class="sxs-lookup"><span data-stu-id="58da7-121">When running multiple Hyper-V virtual machines on the same Hyper-V host it is of particular importance to follow recommendations in the “Configure Hyper-V Virtual Machines that are Running on the same Hyper-V host computer to use a Private Virtual Network” section of [Network Optimizations](../technical-guides/network-optimizations.md).</span></span>  
+2.  <span data-ttu-id="58da7-120">**优化网络性能 –** 按照的"优化网络性能"部分中所述步骤[清单： HYPER-V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。</span><span class="sxs-lookup"><span data-stu-id="58da7-120">**Optimize Network Performance –** Follow steps outlined in the “Optimize Network Performance” section of [Checklist: Optimizing Performance on Hyper-V](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md).</span></span> <span data-ttu-id="58da7-121">在同一台 HYPER-V 主机上运行多个 HYPER-V 虚拟机时是非常重要，遵循"在相同的 HYPER-V 运行的配置 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。</span><span class="sxs-lookup"><span data-stu-id="58da7-121">When running multiple Hyper-V virtual machines on the same Hyper-V host it is of particular importance to follow recommendations in the “Configure Hyper-V Virtual Machines that are Running on the same Hyper-V host computer to use a Private Virtual Network” section of [Network Optimizations](../technical-guides/network-optimizations.md).</span></span>  
   
  <span data-ttu-id="58da7-122">无状态性质，因此[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 其他[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]虚拟机可轻松添加到环境需要提供向外的扩展，并提高系统的整体性能。</span><span class="sxs-lookup"><span data-stu-id="58da7-122">Because of the stateless nature of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], additional [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] virtual machines can be easily added to the environment as required to provide scale out and increase the overall performance of the system.</span></span>  
   

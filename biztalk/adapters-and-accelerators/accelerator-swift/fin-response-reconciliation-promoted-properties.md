@@ -1,17 +1,17 @@
 ---
-title: "FIN 响应对帐提升属性 |Microsoft 文档"
-ms.custom: 
+title: FIN 响应对帐提升属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - promoted properties, FIN Response Reconciliation
 - FIN Response Reconciliation, promoted properties
 ms.assetid: 1a638e9e-61eb-482c-8856-b1aea36c449c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964907"
 ---
 # <a name="fin-response-reconciliation-promoted-properties"></a><span data-ttu-id="a72cb-102">FIN 响应对帐升级的属性</span><span class="sxs-lookup"><span data-stu-id="a72cb-102">FIN Response Reconciliation Promoted Properties</span></span>
 <span data-ttu-id="a72cb-103">[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN 响应对帐功能包括以下提升的属性。</span><span class="sxs-lookup"><span data-stu-id="a72cb-103">The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN Response Reconciliation feature includes the following promoted properties.</span></span>  
@@ -32,5 +33,5 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="a72cb-128">**A4SWIFT_SendingServiceType**</span><span class="sxs-lookup"><span data-stu-id="a72cb-128">**A4SWIFT_SendingServiceType**</span></span>|<span data-ttu-id="a72cb-129">指示 FRR 服务发送消息。</span><span class="sxs-lookup"><span data-stu-id="a72cb-129">Indicates the FRR service that sends the message.</span></span>|<span data-ttu-id="a72cb-130">字符串</span><span class="sxs-lookup"><span data-stu-id="a72cb-130">String</span></span>|<span data-ttu-id="a72cb-131">A4SWIFT_FrrService</span><span class="sxs-lookup"><span data-stu-id="a72cb-131">A4SWIFT_FrrService</span></span>|<span data-ttu-id="a72cb-132">提升时**A4SWIFT_FRRFailed**设置为 True。</span><span class="sxs-lookup"><span data-stu-id="a72cb-132">Promoted when **A4SWIFT_FRRFailed** is set to True.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="a72cb-133">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a72cb-133">See Also</span></span>  
- <span data-ttu-id="a72cb-134">[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span><span class="sxs-lookup"><span data-stu-id="a72cb-134">[A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span></span>  
+ <span data-ttu-id="a72cb-134">[A4SWIFT_ \* 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span><span class="sxs-lookup"><span data-stu-id="a72cb-134">[A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md) </span></span>  
  [<span data-ttu-id="a72cb-135">消息回复和新提交的已提升属性</span><span class="sxs-lookup"><span data-stu-id="a72cb-135">Message Repair and New Submission Promoted Properties</span></span>](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-promoted-properties.md)

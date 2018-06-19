@@ -1,11 +1,11 @@
 ---
-title: "第 2 课： 添加平面文件发送端口 |Microsoft 文档"
-ms.custom: 
+title: 第 2 课： 添加平面文件发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, flat files
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 ms.assetid: 33dceb0d-85f5-4e19-820f-cd33b60cd32a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961331"
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a><span data-ttu-id="2e4fb-102">第 2 课： 添加平面文件发送端口</span><span class="sxs-lookup"><span data-stu-id="2e4fb-102">Lesson 2: Adding a Flat File Send Port</span></span>
 <span data-ttu-id="2e4fb-103">在本课程中，你可以配置发送端口和发送位置。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-103">In this lesson, you configure the send port and the send location.</span></span> <span data-ttu-id="2e4fb-104">发送端口用于定义要发送的消息的方式。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-104">You use the send port to define how you want messages sent.</span></span> <span data-ttu-id="2e4fb-105">你还创建了发送的消息文件文件夹位置。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-105">You also create a file folder location for sent messages.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="2e4fb-113">创建**出站**文件夹中的**\<驱动器\>: \Labs**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-113">Create an **Outbound** folder in **\<drive\>:\Labs**, and then click **OK**.</span></span>  
   
-8.  <span data-ttu-id="2e4fb-114">在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-114">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
+8.  <span data-ttu-id="2e4fb-114">在**文件名**框中，键入 **%MessageID%.txt**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-114">In the **File name** box, type **%MessageID%.txt**, and then click **OK**.</span></span>  
   
 9. <span data-ttu-id="2e4fb-115">在发送端口属性对话框中，单击的下拉列表**发送管道**框中，，然后选择**MT103SendPipeline**。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-115">In the Send Port Properties dialog box, click the drop-down list for the **Send pipeline** box, and then select **MT103SendPipeline**.</span></span>  
   

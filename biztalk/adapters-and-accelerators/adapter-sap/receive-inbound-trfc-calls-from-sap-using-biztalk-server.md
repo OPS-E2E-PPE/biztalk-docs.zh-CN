@@ -1,17 +1,17 @@
 ---
-title: "从 SAP 使用 BizTalk Server 接收入站的 tRFC 调用 |Microsoft 文档"
-ms.custom: 
+title: 从 SAP 使用 BizTalk Server 接收入站的 tRFC 调用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFC calls, receiving using BizTalk Server
 - tRFCs, sample
 ms.assetid: 500eedea-3d27-478c-a64c-903a1fa2b02f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962331"
 ---
 # <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a><span data-ttu-id="a387b-102">从 SAP 使用 BizTalk Server 接收入站的 tRFC 调用</span><span class="sxs-lookup"><span data-stu-id="a387b-102">Receive Inbound tRFC Calls from SAP using BizTalk Server</span></span>
 <span data-ttu-id="a387b-103">TRFC 服务器调用是事务的 RFC 服务器调用。</span><span class="sxs-lookup"><span data-stu-id="a387b-103">A tRFC server call is a transactional RFC server call.</span></span> <span data-ttu-id="a387b-104">在事务上下文中接收 RFC 所需的业务流程是类似于业务流程以接收从某个 SAP 系统发送的任何其他入站的 RFC。</span><span class="sxs-lookup"><span data-stu-id="a387b-104">The orchestration required to receive an RFC in a transactional context is similar to the orchestration to receive any other inbound RFC sent from an SAP system.</span></span> <span data-ttu-id="a387b-105">但是，你需要执行某些其他任务以确保在事务上下文中接收了 Rfc。</span><span class="sxs-lookup"><span data-stu-id="a387b-105">However, you need to perform certain additional tasks to make sure the RFCs are received in a transactional context.</span></span> <span data-ttu-id="a387b-106">有关接收来自 SAP 系统使用的入站的 RFC [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[SAP 使用 BizTalk Server 接收入站 RFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="a387b-106">For more information about receiving an inbound RFC from the SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Receive Inbound RFC Calls from SAP by using BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md).</span></span> <span data-ttu-id="a387b-107">有关详细信息，如何[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持入站的 tRFC 调用接收从 SAP 系统，请参阅[对 tRFCs SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)。</span><span class="sxs-lookup"><span data-stu-id="a387b-107">For more information about how the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports receiving inbound tRFC calls from an SAP system, see [Operations on tRFCs in SAP](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md).</span></span>  

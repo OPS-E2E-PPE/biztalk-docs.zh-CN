@@ -1,14 +1,14 @@
 ---
-title: "禁用 Windows Server 2003 SP1 和 SP2 拒绝服务检查 |Microsoft 文档"
-ms.custom: 
+title: 禁用 Windows Server 2003 SP1 和 SP2 拒绝服务检查 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8822c1e4-d146-4361-b25a-7b81cd5cdd3b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297709"
 ---
 # <a name="disabling-windows-server-2003-sp1-and-sp2-denial-of-service-checking"></a><span data-ttu-id="6d1b7-102">禁用 Windows Server 2003 SP1 和 SP2 拒绝服务检查</span><span class="sxs-lookup"><span data-stu-id="6d1b7-102">Disabling Windows Server 2003 SP1 and SP2 Denial of Service Checking</span></span>
 > [!NOTE]  

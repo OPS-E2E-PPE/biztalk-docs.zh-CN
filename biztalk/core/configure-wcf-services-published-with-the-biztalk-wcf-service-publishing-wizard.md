@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25969627"
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a><span data-ttu-id="b4951-102">如何配置使用 BizTalk WCF 服务发布向导发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="b4951-102">How to Configure WCF Services Published with the BizTalk WCF Service Publishing Wizard</span></span>
 <span data-ttu-id="b4951-103">使用 BizTalk WCF 服务发布向导发布 WCF 服务之后，必须对其进行正确配置。</span><span class="sxs-lookup"><span data-stu-id="b4951-103">After publishing WCF services with the BizTalk WCF Service Publishing Wizard, you must configure them properly.</span></span> <span data-ttu-id="b4951-104">本主题介绍如何配置发布的 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="b4951-104">This topic describes how to configure the published WCF services.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/18/2018
   
 12. <span data-ttu-id="b4951-145">打开命令提示符，请转到 BizTalk Server WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹\\, ，然后打开 Web.config 文件使用记事本。</span><span class="sxs-lookup"><span data-stu-id="b4951-145">Open a command prompt, go to the folder where the BizTalk Server WCF Service Publishing Wizard created the WCF service in %SystemDrive%\InetPub\\, and then open the Web.config file using Notepad.</span></span>  
   
-13. <span data-ttu-id="b4951-146">在记事本中，添加以下代码行内的**\<system.web\>**元素：</span><span class="sxs-lookup"><span data-stu-id="b4951-146">In Notepad, add the following line inside the **\<system.web\>** element:</span></span>  
+13. <span data-ttu-id="b4951-146">在记事本中，添加以下代码行内的**\<system.web\>** 元素：</span><span class="sxs-lookup"><span data-stu-id="b4951-146">In Notepad, add the following line inside the **\<system.web\>** element:</span></span>  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +95,7 @@ ms.lasthandoff: 04/18/2018
   
     1.  <span data-ttu-id="b4951-161">在记事本中，打开 BizTalk Server WCF 服务发布向导中为 %SystemDrive%\InetPub 而创建的 WCF 服务的文件夹中的 Web.config\\。</span><span class="sxs-lookup"><span data-stu-id="b4951-161">In Notepad, open Web.config in the folder where the BizTalk Server WCF Service Publishing Wizard created the WCF service in %SystemDrive%\InetPub\\.</span></span>  
   
-    2.  <span data-ttu-id="b4951-162">在记事本中，设置**httpGetEnabled**属性中**\<serviceMetadata\>**元素为 false 为以下行：</span><span class="sxs-lookup"><span data-stu-id="b4951-162">In Notepad, set the  the **httpGetEnabled** attribute in the  **\<serviceMetadata\>** element to false as following line:</span></span>  
+    2.  <span data-ttu-id="b4951-162">在记事本中，设置**httpGetEnabled**属性中**\<serviceMetadata\>** 元素为 false 为以下行：</span><span class="sxs-lookup"><span data-stu-id="b4951-162">In Notepad, set the  the **httpGetEnabled** attribute in the  **\<serviceMetadata\>** element to false as following line:</span></span>  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

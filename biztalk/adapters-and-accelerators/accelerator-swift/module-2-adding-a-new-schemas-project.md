@@ -1,18 +1,18 @@
 ---
-title: "模块 2： 添加新的架构项目 |Microsoft 文档"
-ms.custom: 
+title: 模块 2： 添加新的架构项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, schemas
 - tutorial, creating new schemas
 - schemas, adding to projects
 ms.assetid: 54ecafe9-6dbf-4d06-ba47-5059432bda3d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207789"
 ---
 # <a name="module-2-adding-a-new-schemas-project"></a><span data-ttu-id="84d35-102">模块 2： 添加新的架构项目</span><span class="sxs-lookup"><span data-stu-id="84d35-102">Module 2: Adding a New Schemas Project</span></span>
 <span data-ttu-id="84d35-103">当你安装[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]更新[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]以包含基本的 BizTalk 项目。</span><span class="sxs-lookup"><span data-stu-id="84d35-103">When you install [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] updates [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to include a basic BizTalk project.</span></span> <span data-ttu-id="84d35-104">此项目模板访问你的工具，例如架构设计器、 BizTalk 映射程序、 业务流程设计器、 管道设计器中，和 BizTalk 资源管理器和其他工具创建 BizTalk 解决方案所需。</span><span class="sxs-lookup"><span data-stu-id="84d35-104">This project template gives you access to tools such as the schema designer, BizTalk Mapper, Orchestration Designer, Pipeline Designer, and BizTalk Explorer, and other tools necessary to create a BizTalk solution.</span></span>  
