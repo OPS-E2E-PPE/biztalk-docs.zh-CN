@@ -1,11 +1,11 @@
 ---
-title: "XML 汇编程序管道组件中的字符编码 |Microsoft 文档"
-ms.custom: 
+title: XML 汇编程序管道组件中的字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBaseMessagePart.Charset property
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Target Charset property
 - XML Assembler [pipeline component], character encoding
 ms.assetid: c031fbbf-f00f-41ba-8ac9-cec7d625cef6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232101"
 ---
 # <a name="character-encoding-in-the-xml-assembler-pipeline-component"></a><span data-ttu-id="15792-102">XML 汇编程序管道组件中的字符编码</span><span class="sxs-lookup"><span data-stu-id="15792-102">Character Encoding in the XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="15792-103">XML 组装器管道组件可以采用下表所示的两种方式根据用户指定的字符编码来生成消息：</span><span class="sxs-lookup"><span data-stu-id="15792-103">The XML Assembler pipeline component can produce messages in user-specified character encoding in two ways, as shown in the following table.</span></span>  

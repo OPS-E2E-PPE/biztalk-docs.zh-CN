@@ -1,11 +1,11 @@
 ---
-title: "如何创建活动搜索查询 |Microsoft 文档"
-ms.custom: 
+title: 如何创建活动搜索查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Query Builder [BAM portal], creating queries
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], saving queries
 - queries [BAM], opening
 ms.assetid: 7940e47d-10e4-4eb1-b4e6-a8b98461e3a8
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250245"
 ---
 # <a name="how-to-create-a-query-in-activity-search"></a><span data-ttu-id="854c1-102">如何在活动搜索中创建查询</span><span class="sxs-lookup"><span data-stu-id="854c1-102">How to Create a Query in Activity Search</span></span>
 <span data-ttu-id="854c1-103">业务最终用户以及其他需要接收有关其业务的事件和状态通知的用户可以使用查询来创建活动搜索，警报将基于这些活动搜索。</span><span class="sxs-lookup"><span data-stu-id="854c1-103">Business end users and other users who need to receive notification of events and status pertaining to their business use queries to create activity searches on which to base alerts.</span></span>  

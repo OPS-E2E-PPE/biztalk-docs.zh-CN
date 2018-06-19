@@ -1,11 +1,11 @@
 ---
-title: "如何将服务器添加到组 |Microsoft 文档"
-ms.custom: 
+title: 如何将服务器添加到组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, servers
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - servers, groups
 - managing [servers], adding to groups
 ms.assetid: 6eca1eeb-1a56-4470-b3bc-c64865cf6270
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247677"
 ---
 # <a name="how-to-add-a-server-to-a-group"></a><span data-ttu-id="90177-102">如何将服务器添加到组</span><span class="sxs-lookup"><span data-stu-id="90177-102">How to Add a Server to a Group</span></span>
 <span data-ttu-id="90177-103">您可以使用 BizTalk Server 配置向 BizTalk 组添加服务器。</span><span class="sxs-lookup"><span data-stu-id="90177-103">You can use BizTalk Server Configuration to add a server to a BizTalk group.</span></span> <span data-ttu-id="90177-104">通过向 BizTalk 组添加其他服务器可以对 BizTalk Server 环境进行扩展。</span><span class="sxs-lookup"><span data-stu-id="90177-104">You add additional servers to a BizTalk group to scale out your BizTalk Server environment.</span></span>  

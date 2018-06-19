@@ -17,7 +17,7 @@ helpviewer_keywords:
 - right-justified string values
 - strings, right-justified
 ms.assetid: 23d54731-b2b9-4610-a533-e041237e0bb3
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22246365"
 ---
 # <a name="handling-string-values"></a><span data-ttu-id="17bf4-102">处理字符串值</span><span class="sxs-lookup"><span data-stu-id="17bf4-102">Handling String Values</span></span>
 <span data-ttu-id="17bf4-103">本主题介绍如何将某些字符串参数配置为右对齐（并向左填充）。</span><span class="sxs-lookup"><span data-stu-id="17bf4-103">This topic describes how to configure certain string arguments as right-justified (and left padded).</span></span>  

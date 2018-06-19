@@ -1,14 +1,14 @@
 ---
-title: "平面文件架构 |Microsoft 文档"
-ms.custom: 
+title: 平面文件架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8009fba7-85f0-4795-9284-5b4e94b3fc72
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246045"
 ---
 # <a name="flat-file-schemas"></a><span data-ttu-id="bd0d3-102">平面文件架构</span><span class="sxs-lookup"><span data-stu-id="bd0d3-102">Flat File Schemas</span></span>
 

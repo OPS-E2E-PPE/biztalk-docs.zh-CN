@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233229"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties"></a><span data-ttu-id="4da14-102">配置 EDIFACT 后备协议属性</span><span class="sxs-lookup"><span data-stu-id="4da14-102">Configuring EDIFACT Fallback Agreement Properties</span></span>
 <span data-ttu-id="4da14-103">本部分所述的属性适用于交换采用 EDIFACT 编码的交换并且 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定交换（入站或出站）解析到的协议。</span><span class="sxs-lookup"><span data-stu-id="4da14-103">The properties described in this section apply whenever EDIFACT-encoded interchanges are exchanged and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot determine the agreement that the interchanges (inbound or outbound) resolve to.</span></span> <span data-ttu-id="4da14-104">本部分还介绍了 X12 和 EDIFACT 编码的消息通用的常规回退设置。</span><span class="sxs-lookup"><span data-stu-id="4da14-104">This section also describes general fallback settings common to both X12 and EDIFACT encoded messages.</span></span>  

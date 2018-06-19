@@ -1,14 +1,14 @@
 ---
-title: "为批处理状态报表存储的数据 |Microsoft 文档"
-ms.custom: 
+title: 为批处理状态报表存储的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d55aa0e1-095f-434e-8530-f1a946ad4430
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238589"
 ---
 # <a name="data-stored-for-batching-status-reports"></a><span data-ttu-id="a8b2d-102">为批处理状态报告存储的数据</span><span class="sxs-lookup"><span data-stu-id="a8b2d-102">Data Stored for Batching Status Reports</span></span>
 <span data-ttu-id="a8b2d-103">当**打开 ON Reporting**为一个协议，选中属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将存储每个批处理的实例的状态。</span><span class="sxs-lookup"><span data-stu-id="a8b2d-103">When the **Turn ON Reporting** property is selected for an agreement, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will store the status of each batching instance.</span></span> <span data-ttu-id="a8b2d-104">此属性是在位于**常规属性**页**常规**选项卡中**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="a8b2d-104">This property is in available in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="a8b2d-105">状态可以为以下任意状态：</span><span class="sxs-lookup"><span data-stu-id="a8b2d-105">The status can be any of the following:</span></span>  

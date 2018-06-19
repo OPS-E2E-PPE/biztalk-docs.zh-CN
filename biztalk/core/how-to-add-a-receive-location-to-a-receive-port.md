@@ -1,11 +1,11 @@
 ---
-title: "如何添加接收到的位置接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何添加接收到的位置接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, adding to receive ports
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive ports, adding receive locations
 - adding, receive locations
 ms.assetid: a71d50dc-629e-4b7f-aa59-6d2274d4cac3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247381"
 ---
 # <a name="how-to-add-a-receive-location-to-a-receive-port"></a><span data-ttu-id="0d1f6-102">如何将接收位置添加到接收端口</span><span class="sxs-lookup"><span data-stu-id="0d1f6-102">How to Add a Receive Location to a Receive Port</span></span>
 <span data-ttu-id="0d1f6-103">本主题将介绍如何使用 BizTalk Server 管理控制台将新接收位置添加到接收端口。</span><span class="sxs-lookup"><span data-stu-id="0d1f6-103">This topic describes how to use the BizTalk Server Administration console to add a new receive location to a receive port.</span></span>  

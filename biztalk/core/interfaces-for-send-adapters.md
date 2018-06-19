@@ -1,14 +1,14 @@
 ---
-title: "发送适配器的接口，|Microsoft 文档"
-ms.custom: 
+title: 发送适配器的接口，|Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 009334b9-2341-4c67-9bcb-885149277fc3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256901"
 ---
 # <a name="interfaces-for-send-adapters"></a><span data-ttu-id="41416-102">发送适配器的接口</span><span class="sxs-lookup"><span data-stu-id="41416-102">Interfaces for Send Adapters</span></span>
 <span data-ttu-id="41416-103">本部分介绍开发发送适配器时需要实现的接口。</span><span class="sxs-lookup"><span data-stu-id="41416-103">This section describes the interfaces you need to implement when you develop a send adapter.</span></span>  

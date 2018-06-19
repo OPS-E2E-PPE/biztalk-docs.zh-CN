@@ -13,7 +13,7 @@ helpviewer_keywords:
 - subscriptions, viewing
 - subscriptions, searching
 ms.assetid: 95f8fd20-2750-412b-a67b-18976e7706e2
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255517"
 ---
 # <a name="how-to-search-for-subscriptions"></a><span data-ttu-id="dd1cc-102">如何搜索订阅</span><span class="sxs-lookup"><span data-stu-id="dd1cc-102">How to Search for Subscriptions</span></span>
 <span data-ttu-id="dd1cc-103">你可以使用 **查询** 在 BizTalk Server 管理控制台中以搜索订阅的选项卡。</span><span class="sxs-lookup"><span data-stu-id="dd1cc-103">You can use the **Query** tab in the BizTalk Server Administration Console to search for subscriptions.</span></span> <span data-ttu-id="dd1cc-104">当希望查看系统中定义的所有订阅时，这就非常有用。</span><span class="sxs-lookup"><span data-stu-id="dd1cc-104">This is useful when you want to review all of the subscriptions defined in the system.</span></span> <span data-ttu-id="dd1cc-105">在排除路由故障时，您可以查看是不是由于某些订阅未正确设置而导致了路由故障。</span><span class="sxs-lookup"><span data-stu-id="dd1cc-105">When troubleshooting routing failures, you can review subscriptions to see if any of them are improperly configured, thereby causing the routing failure.</span></span>  

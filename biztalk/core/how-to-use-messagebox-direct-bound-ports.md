@@ -1,14 +1,14 @@
 ---
-title: "如何使用 MessageBox 直接绑定端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 MessageBox 直接绑定端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1839184b-408e-4ac6-94a4-a0eb708183f6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255909"
 ---
 # <a name="how-to-use-messagebox-direct-bound-ports"></a><span data-ttu-id="7bc3d-102">如何使用 MessageBox 直接绑定端口</span><span class="sxs-lookup"><span data-stu-id="7bc3d-102">How to Use MessageBox Direct Bound Ports</span></span>
 <span data-ttu-id="7bc3d-103">MessageBox 直接绑定的端口，可以直接在没有显式的接收方 MessageBox 数据库丢弃的消息并订阅满足特定条件的消息，而不是来自特定发件人的消息。</span><span class="sxs-lookup"><span data-stu-id="7bc3d-103">MessageBox direct bound ports enable you to drop messages directly into the MessageBox database without an explicit recipient, and to subscribe to messages that meet certain criteria rather than messages that come from a particular sender.</span></span>  

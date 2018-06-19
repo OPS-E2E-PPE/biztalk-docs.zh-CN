@@ -1,14 +1,14 @@
 ---
-title: "运行状况和活动跟踪 |Microsoft 文档"
-ms.custom: 
+title: 运行状况和活动跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c5d7415-38da-47b5-8dbc-0a2ea74548d9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246597"
 ---
 # <a name="health-and-activity-tracking"></a><span data-ttu-id="29afb-102">运行状况与活动跟踪</span><span class="sxs-lookup"><span data-stu-id="29afb-102">Health and Activity Tracking</span></span>
-<span data-ttu-id="29afb-103">**运行状况和活动跟踪 (HAT)**工具已删除在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009年。</span><span class="sxs-lookup"><span data-stu-id="29afb-103">The **Health and Activity Tracking (HAT)** tool was removed in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009.</span></span>  <span data-ttu-id="29afb-104">HAT 工具的角色是跟踪并显示相关生存的信息和历史消息数据存储在 BizTalk 跟踪数据库。</span><span class="sxs-lookup"><span data-stu-id="29afb-104">The role of the HAT tool was to track and display information relating to live and historical message data stored in the BizTalk Tracking database.</span></span>  <span data-ttu-id="29afb-105">该工具允许调试业务流程并能够通过顺序显示来查看消息流。</span><span class="sxs-lookup"><span data-stu-id="29afb-105">The tool allowed debugging of the flow of an orchestration and the ability to view the flow of a message through a sequential display.</span></span>  <span data-ttu-id="29afb-106">查询生成器允许对跟踪数据进行标准和自定义查询。</span><span class="sxs-lookup"><span data-stu-id="29afb-106">A Query Builder allowed standard and custom queries of the tracking data.</span></span>  
+<span data-ttu-id="29afb-103">**运行状况和活动跟踪 (HAT)** 工具已删除在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009年。</span><span class="sxs-lookup"><span data-stu-id="29afb-103">The **Health and Activity Tracking (HAT)** tool was removed in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2009.</span></span>  <span data-ttu-id="29afb-104">HAT 工具的角色是跟踪并显示相关生存的信息和历史消息数据存储在 BizTalk 跟踪数据库。</span><span class="sxs-lookup"><span data-stu-id="29afb-104">The role of the HAT tool was to track and display information relating to live and historical message data stored in the BizTalk Tracking database.</span></span>  <span data-ttu-id="29afb-105">该工具允许调试业务流程并能够通过顺序显示来查看消息流。</span><span class="sxs-lookup"><span data-stu-id="29afb-105">The tool allowed debugging of the flow of an orchestration and the ability to view the flow of a message through a sequential display.</span></span>  <span data-ttu-id="29afb-106">查询生成器允许对跟踪数据进行标准和自定义查询。</span><span class="sxs-lookup"><span data-stu-id="29afb-106">A Query Builder allowed standard and custom queries of the tracking data.</span></span>  
   
  <span data-ttu-id="29afb-107">尽管不再直接从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 菜单中调用运行状况活动跟踪工具，但其跟踪功能仍间接存在于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中。</span><span class="sxs-lookup"><span data-stu-id="29afb-107">While the Health Activity Tracking tool is no longer invoked directly from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] menu, its tracking functionality still indirectly exists from within the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  <span data-ttu-id="29afb-108">可通过 BizTalk Server 管理控制台的“组中心”页中改善的集成和附加跟踪查询来获取运行状况和活动信息。</span><span class="sxs-lookup"><span data-stu-id="29afb-108">Health and activity information is available through improved integration and additional tracking queries within the Group Hub page in the BizTalk Server Administration console.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "EDI 数据元素结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 数据元素结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 775e8b87-b952-46d2-a506-5174d216a9aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239469"
 ---
 # <a name="edi-data-element-structural-element"></a><span data-ttu-id="735ca-102">EDI 数据元素：结构元素</span><span class="sxs-lookup"><span data-stu-id="735ca-102">EDI Data Element Structural Element</span></span>
 <span data-ttu-id="735ca-103">数据元素是消息中的基本数据单元。</span><span class="sxs-lookup"><span data-stu-id="735ca-103">The data element is the primary unit of data in the message.</span></span> <span data-ttu-id="735ca-104">数据元素由数据元素分隔符分隔，默认情况下 X12 是星号，EDIFACT 是加号。</span><span class="sxs-lookup"><span data-stu-id="735ca-104">Data elements are separated by the data element separator, which is an asterisk by default for X12 and a plus sign by default for EDIFACT.</span></span> <span data-ttu-id="735ca-105">数据元素的可行性定义为：必需、可选或条件。</span><span class="sxs-lookup"><span data-stu-id="735ca-105">The optionality of data elements is defined as mandatory, optional, or conditional.</span></span>  

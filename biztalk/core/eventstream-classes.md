@@ -1,14 +1,14 @@
 ---
-title: "EventStream 类 |Microsoft 文档"
-ms.custom: 
+title: EventStream 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3e7a6b3-69cc-4312-9074-acccd1175d37
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245821"
 ---
 # <a name="eventstream-classes"></a><span data-ttu-id="512d3-102">EventStream 类</span><span class="sxs-lookup"><span data-stu-id="512d3-102">EventStream Classes</span></span>
 <span data-ttu-id="512d3-103">用于 BAM 的 EventStream API 驻留在 Microsoft.BizTalk.BAM.EventObservation 命名空间中。</span><span class="sxs-lookup"><span data-stu-id="512d3-103">The EventStream APIs for BAM reside in the Microsoft.BizTalk.BAM.EventObservation namespace.</span></span> <span data-ttu-id="512d3-104">要针对该 API 进行编码，必须在用于开发的计算机上安装以下 DLL：</span><span class="sxs-lookup"><span data-stu-id="512d3-104">To code against the APIs, you must install the following DLLs on your development computer:</span></span>  

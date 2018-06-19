@@ -1,18 +1,18 @@
 ---
-title: "如何配置抛出异常形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置抛出异常形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Throw Exception shape [Orchestration Designer]
 - orchestrations, errors
 - Orchestration Designer, errors
 ms.assetid: d3190f1b-db5e-4988-bff6-f7a276760ece
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248077"
 ---
 # <a name="how-to-configure-the-throw-exception-shape"></a><span data-ttu-id="79227-102">如何配置引发异常形状</span><span class="sxs-lookup"><span data-stu-id="79227-102">How to Configure the Throw Exception Shape</span></span>
 <span data-ttu-id="79227-103">您可以显式抛异常业务流程中使用**引发的异常**形状。</span><span class="sxs-lookup"><span data-stu-id="79227-103">You can explicitly throw exceptions in an orchestration by using the **Throw Exception** shape.</span></span> <span data-ttu-id="79227-104">在引发异常时，运行时引擎将搜索最近的能处理所引发的异常类型的异常处理程序。</span><span class="sxs-lookup"><span data-stu-id="79227-104">When the throw is performed, the runtime engine will search for the nearest exception handler that can handle the type of exception being thrown.</span></span>  

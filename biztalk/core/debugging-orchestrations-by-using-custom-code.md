@@ -1,17 +1,17 @@
 ---
-title: "使用自定义代码进行调试业务流程 |Microsoft 文档"
-ms.custom: 
+title: 使用自定义代码进行调试业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, debugging
 - building, debugging
 ms.assetid: 94e569fa-8dea-4027-abb5-37b4a8015621
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239885"
 ---
 # <a name="debugging-orchestrations-by-using-custom-code"></a><span data-ttu-id="61401-102">使用自定义代码进行调试业务流程</span><span class="sxs-lookup"><span data-stu-id="61401-102">Debugging Orchestrations by using Custom Code</span></span>
 <span data-ttu-id="61401-103">如果您的业务流程要小心，在测试环境中或要创建原型并且想要修改消息字段和业务流程变量的值，你可以将输出写入到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]控制台中使用下面的代码中**表达式**形状：</span><span class="sxs-lookup"><span data-stu-id="61401-103">If your orchestration is going to be exercised in a test environment or you are creating a prototype and want to modify the values of message fields and orchestration variables, you can write the output to the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] console by using the following code in an **Expression** shape:</span></span>  
@@ -45,9 +46,9 @@ System.Diagnostics.Debug.WriteLine(iResult);
   
 3.  <span data-ttu-id="61401-115">单击**调试**菜单，然后选择**附加到进程...**</span><span class="sxs-lookup"><span data-stu-id="61401-115">Click the **Debug** menu and select **Attach to Process…**</span></span> <span data-ttu-id="61401-116">若要显示**附加到进程**对话框。</span><span class="sxs-lookup"><span data-stu-id="61401-116">to display the **Attach to Process** dialog.</span></span>  
   
-4.  <span data-ttu-id="61401-117">单击**选择...**</span><span class="sxs-lookup"><span data-stu-id="61401-117">Click the **Select…**</span></span> <span data-ttu-id="61401-118">下一步按钮**将附加到：**文本框中，用于显示**选择代码类型**对话框。</span><span class="sxs-lookup"><span data-stu-id="61401-118">button next to the **Attach to:** text box to display the **Select Code Type** dialog.</span></span>  
+4.  <span data-ttu-id="61401-117">单击**选择...**</span><span class="sxs-lookup"><span data-stu-id="61401-117">Click the **Select…**</span></span> <span data-ttu-id="61401-118">下一步按钮**将附加到：** 文本框中，用于显示**选择代码类型**对话框。</span><span class="sxs-lookup"><span data-stu-id="61401-118">button next to the **Attach to:** text box to display the **Select Code Type** dialog.</span></span>  
   
-5.  <span data-ttu-id="61401-119">单击此项可选择该选项以**调试以下代码类型：**和选择**托管**，然后单击**确定**按钮。</span><span class="sxs-lookup"><span data-stu-id="61401-119">Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.</span></span>  
+5.  <span data-ttu-id="61401-119">单击此项可选择该选项以**调试以下代码类型：** 和选择**托管**，然后单击**确定**按钮。</span><span class="sxs-lookup"><span data-stu-id="61401-119">Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.</span></span>  
   
 6.  <span data-ttu-id="61401-120">单击以选择**BTSNTSvc.exe**进程**可用进程**，然后单击**附加**按钮。</span><span class="sxs-lookup"><span data-stu-id="61401-120">Click to select the **BTSNTSvc.exe** process from **Available Processes** and then click the **Attach** button.</span></span>  
   

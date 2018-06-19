@@ -1,14 +1,14 @@
 ---
-title: "配置字符集和分隔符 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置字符集和分隔符 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6249f2e1-70b0-4960-bbc4-0c3fefd26faa
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234493"
 ---
 # <a name="configuring-charset-and-separators-x12"></a><span data-ttu-id="ecb35-102">配置字符集和分隔页(X12)</span><span class="sxs-lookup"><span data-stu-id="ecb35-102">Configuring Charset and Separators (X12)</span></span>
 <span data-ttu-id="ecb35-103">在合作伙伴协议中，你可以指定在为传出 X12 消息创建信封时 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用哪个字符集来验证参与方属性。</span><span class="sxs-lookup"><span data-stu-id="ecb35-103">In the partner agreement, you can specify the character set that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message.</span></span> <span data-ttu-id="ecb35-104">还可以指定为交换内部的分段使用哪些分隔符和终止符。</span><span class="sxs-lookup"><span data-stu-id="ecb35-104">You can also specify what separators and terminators will be used for the segments in the interchange.</span></span>  
@@ -83,11 +84,11 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="ecb35-146">**任何**段终止符 + **CR LF**后缀</span><span class="sxs-lookup"><span data-stu-id="ecb35-146">**Any** Segment Terminator + **CR LF** Suffix</span></span>  
   
-    -   <span data-ttu-id="ecb35-147">**D （十六进制）**段终止符 +**无**后缀： 这种组合的行为方式好像段终止符为空白，并设置为 CR 的后缀。</span><span class="sxs-lookup"><span data-stu-id="ecb35-147">**D (Hex)** Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to CR.</span></span>  
+    -   <span data-ttu-id="ecb35-147">**D （十六进制）** 段终止符 +**无**后缀： 这种组合的行为方式好像段终止符为空白，并设置为 CR 的后缀。</span><span class="sxs-lookup"><span data-stu-id="ecb35-147">**D (Hex)** Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to CR.</span></span>  
   
     -   <span data-ttu-id="ecb35-148">（十六进制） 段终止符 +**无**后缀： 这种组合的行为方式好像段终止符保留为空并且后缀设置为 LF。</span><span class="sxs-lookup"><span data-stu-id="ecb35-148">A (Hex) Segment Terminator + **None** Suffix: This combination behaves as if Segment Terminator is blank and Suffix is set to LF.</span></span>  
   
-    -   <span data-ttu-id="ecb35-149">**D （十六进制）**段终止符 + **LF**后缀： 这种组合的行为方式好像段终止符是 CR，后缀设置为 LF。</span><span class="sxs-lookup"><span data-stu-id="ecb35-149">**D (Hex)** Segment Terminator + **LF** Suffix: This combination behaves as if Segment Terminator is CR and Suffix is set to LF.</span></span>  
+    -   <span data-ttu-id="ecb35-149">**D （十六进制）** 段终止符 + **LF**后缀： 这种组合的行为方式好像段终止符是 CR，后缀设置为 LF。</span><span class="sxs-lookup"><span data-stu-id="ecb35-149">**D (Hex)** Segment Terminator + **LF** Suffix: This combination behaves as if Segment Terminator is CR and Suffix is set to LF.</span></span>  
   
 8.  <span data-ttu-id="ecb35-150">如果负载数据中的字符也用作数据、 段或组件分隔符，请检查**替换负载中的分隔符**并指定替换字符。</span><span class="sxs-lookup"><span data-stu-id="ecb35-150">If the payload data contains characters that are also used as data, segment, or component separators, check **Replace separators in payload with** and specify a replacement character.</span></span> <span data-ttu-id="ecb35-151">在生成出站 X12 消息时，负载数据中的分隔符的所有实例都将替换为指定字符。</span><span class="sxs-lookup"><span data-stu-id="ecb35-151">When generating the outbound X12 message, all instances of separator characters in the payload data will be replaced with the specified character.</span></span> <span data-ttu-id="ecb35-152">选择**Char**为字符数据元素或**十六进制**为十六进制数据元素。</span><span class="sxs-lookup"><span data-stu-id="ecb35-152">Select **Char** for a character data element or **Hex** for a hexadecimal data element.</span></span> <span data-ttu-id="ecb35-153">在更改中的格式时，您输入的字符将自动更改**Char**到**十六进制**，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="ecb35-153">The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.</span></span>  
   

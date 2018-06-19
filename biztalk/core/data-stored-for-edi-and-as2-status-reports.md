@@ -1,14 +1,14 @@
 ---
-title: "对于 EDI 和 AS2 状态报表存储的数据 |Microsoft 文档"
-ms.custom: 
+title: 对于 EDI 和 AS2 状态报表存储的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 745466bd-2206-47ee-b804-e8e318506d89
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238357"
 ---
 # <a name="data-stored-for-edi-and-as2-status-reports"></a><span data-ttu-id="ab68a-102">为 EDI 和 AS2 状态报告存储的数据</span><span class="sxs-lookup"><span data-stu-id="ab68a-102">Data Stored for EDI and AS2 Status Reports</span></span>
 <span data-ttu-id="ab68a-103">本部分中的主题介绍在激活了状态报告功能时为 EDI 和 AS2 状态报告存储的数据。</span><span class="sxs-lookup"><span data-stu-id="ab68a-103">The topics in this section describe what data is stored for EDI and AS2 status reports when status reporting is activated.</span></span>  

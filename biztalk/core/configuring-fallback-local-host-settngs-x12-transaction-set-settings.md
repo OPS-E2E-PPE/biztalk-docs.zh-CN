@@ -1,14 +1,14 @@
 ---
-title: "配置回退本地主机 Settngs （X12 事务集设置） |Microsoft 文档"
-ms.custom: 
+title: 配置回退本地主机 Settngs （X12 事务集设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68511199-a7ed-45b3-807d-70378b2c6ebb
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233389"
 ---
 # <a name="configuring-fallback-local-host-settngs-x12-transaction-set-settings"></a><span data-ttu-id="45c14-102">配置回退本地主机设置（X12-事务集设置）</span><span class="sxs-lookup"><span data-stu-id="45c14-102">Configuring Fallback Local Host Settngs (X12-Transaction Set Settings)</span></span>
 <span data-ttu-id="45c14-103">为了处理传入的交换，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 必须确定在处理和验证交换时需要使用的架构。</span><span class="sxs-lookup"><span data-stu-id="45c14-103">To process an incoming interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] must determine the schema that it needs to use in processing and validating the interchange.</span></span> <span data-ttu-id="45c14-104">这包括确定与架构关联的目标命名空间和确定要使用的架构。</span><span class="sxs-lookup"><span data-stu-id="45c14-104">This consists of determining the target namespace associated with the schema, and determining the schema to be used.</span></span> <span data-ttu-id="45c14-105">在备用协议的此页，指定备用目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="45c14-105">In this page of the fallback agreement, you specify the fallback target namespace.</span></span> <span data-ttu-id="45c14-106">如何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]确定架构所述[协议解析、 架构发现和接收 EDI 消息的授权](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)。</span><span class="sxs-lookup"><span data-stu-id="45c14-106">How [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] determines the schema is described in [Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md).</span></span>  

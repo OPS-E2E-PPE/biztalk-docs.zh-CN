@@ -1,14 +1,14 @@
 ---
-title: "配置 XML 文件 |Microsoft 文档"
-ms.custom: 
+title: 配置 XML 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52851901-8374-412f-9c29-83845d8d4861
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233821"
 ---
 # <a name="configuring-the-xml-file"></a><span data-ttu-id="6213d-102">配置 XML 文件</span><span class="sxs-lookup"><span data-stu-id="6213d-102">Configuring the XML File</span></span>
 <span data-ttu-id="6213d-103">在安装企业单一登录 (SSO) 时，会在 Extensions 目录下安装一个名为 ENTSSO.xml 的 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="6213d-103">When you install Enterprise Single Sign-On (SSO), an XML file named ENTSSO.xml is installed in your Extensions directory.</span></span> <span data-ttu-id="6213d-104">通过编辑该文件，可定义 ENTSSO 管理代理 (MA) 所有实例的配置。</span><span class="sxs-lookup"><span data-stu-id="6213d-104">By editing the file, you define the configuration for all instances of the ENTSSO Management Agent (MA).</span></span>  

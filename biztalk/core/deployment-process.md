@@ -1,11 +1,11 @@
 ---
-title: "部署过程 |Microsoft 文档"
-ms.custom: 
+title: 部署过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SSO, LogonExternalUser test
 - SSO, security
 ms.assetid: 7dd4c022-c70b-467a-bf94-dc4ac6029f81
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240661"
 ---
 # <a name="deployment-process"></a><span data-ttu-id="66f1d-102">部署过程</span><span class="sxs-lookup"><span data-stu-id="66f1d-102">Deployment Process</span></span>
 <span data-ttu-id="66f1d-103">以下步骤对企业单一登录的安全部署进行了高级概述。</span><span class="sxs-lookup"><span data-stu-id="66f1d-103">The following steps give a high-level overview of secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="66f1d-104">有关在 SQL Server 中执行操作的详细过程，请参阅 SQL Server 文档。</span><span class="sxs-lookup"><span data-stu-id="66f1d-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
@@ -32,33 +33,33 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="66f1d-106">**名称：** ORCH.com</span><span class="sxs-lookup"><span data-stu-id="66f1d-106">**Name:** ORCH.com</span></span>  
   
-    -   <span data-ttu-id="66f1d-107">**方向：**双向</span><span class="sxs-lookup"><span data-stu-id="66f1d-107">**Direction:** Two-way</span></span>  
+    -   <span data-ttu-id="66f1d-107">**方向：** 双向</span><span class="sxs-lookup"><span data-stu-id="66f1d-107">**Direction:** Two-way</span></span>  
   
-    -   <span data-ttu-id="66f1d-108">**边：**仅限于此域</span><span class="sxs-lookup"><span data-stu-id="66f1d-108">**Sides:** This domain only</span></span>  
+    -   <span data-ttu-id="66f1d-108">**边：** 仅限于此域</span><span class="sxs-lookup"><span data-stu-id="66f1d-108">**Sides:** This domain only</span></span>  
   
-    -   <span data-ttu-id="66f1d-109">**传出信任身份验证级别的本地域：**选择性身份验证</span><span class="sxs-lookup"><span data-stu-id="66f1d-109">**Outgoing Trust Authentication Level - Local Domain:** Selective authentication</span></span>  
+    -   <span data-ttu-id="66f1d-109">**传出信任身份验证级别的本地域：** 选择性身份验证</span><span class="sxs-lookup"><span data-stu-id="66f1d-109">**Outgoing Trust Authentication Level - Local Domain:** Selective authentication</span></span>  
   
-    -   <span data-ttu-id="66f1d-110">**密码：**选择一个密码</span><span class="sxs-lookup"><span data-stu-id="66f1d-110">**Password:** Choose a password</span></span>  
+    -   <span data-ttu-id="66f1d-110">**密码：** 选择一个密码</span><span class="sxs-lookup"><span data-stu-id="66f1d-110">**Password:** Choose a password</span></span>  
   
-    -   <span data-ttu-id="66f1d-111">**确认传出信任：**是</span><span class="sxs-lookup"><span data-stu-id="66f1d-111">**Confirm Outgoing Trust:** Yes</span></span>  
+    -   <span data-ttu-id="66f1d-111">**确认传出信任：** 是</span><span class="sxs-lookup"><span data-stu-id="66f1d-111">**Confirm Outgoing Trust:** Yes</span></span>  
   
-    -   <span data-ttu-id="66f1d-112">**确认传入信任：**否</span><span class="sxs-lookup"><span data-stu-id="66f1d-112">**Confirm Incoming Trust:** No</span></span>  
+    -   <span data-ttu-id="66f1d-112">**确认传入信任：** 否</span><span class="sxs-lookup"><span data-stu-id="66f1d-112">**Confirm Incoming Trust:** No</span></span>  
   
 2.  <span data-ttu-id="66f1d-113">在 ORCH.com 域控制器上，使用新建信任向导可创建具有以下属性的信任：</span><span class="sxs-lookup"><span data-stu-id="66f1d-113">On the ORCH.com domain controller, use the New Trust Wizard to create a trust with the following properties:</span></span>  
   
     -   <span data-ttu-id="66f1d-114">**名称：** SQL.com</span><span class="sxs-lookup"><span data-stu-id="66f1d-114">**Name:** SQL.com</span></span>  
   
-    -   <span data-ttu-id="66f1d-115">**方向：**双向</span><span class="sxs-lookup"><span data-stu-id="66f1d-115">**Direction:** Two-way</span></span>  
+    -   <span data-ttu-id="66f1d-115">**方向：** 双向</span><span class="sxs-lookup"><span data-stu-id="66f1d-115">**Direction:** Two-way</span></span>  
   
-    -   <span data-ttu-id="66f1d-116">**边：**仅限于此域</span><span class="sxs-lookup"><span data-stu-id="66f1d-116">**Sides:** This domain only</span></span>  
+    -   <span data-ttu-id="66f1d-116">**边：** 仅限于此域</span><span class="sxs-lookup"><span data-stu-id="66f1d-116">**Sides:** This domain only</span></span>  
   
-    -   <span data-ttu-id="66f1d-117">**传出信任身份验证级别的本地域：**选择性身份验证</span><span class="sxs-lookup"><span data-stu-id="66f1d-117">**Outgoing Trust Authentication Level - Local Domain:** Selective authentication</span></span>  
+    -   <span data-ttu-id="66f1d-117">**传出信任身份验证级别的本地域：** 选择性身份验证</span><span class="sxs-lookup"><span data-stu-id="66f1d-117">**Outgoing Trust Authentication Level - Local Domain:** Selective authentication</span></span>  
   
-    -   <span data-ttu-id="66f1d-118">**密码：**必须是与密码相同的 ORCH.com</span><span class="sxs-lookup"><span data-stu-id="66f1d-118">**Password:** Must be the same as password for ORCH.com</span></span>  
+    -   <span data-ttu-id="66f1d-118">**密码：** 必须是与密码相同的 ORCH.com</span><span class="sxs-lookup"><span data-stu-id="66f1d-118">**Password:** Must be the same as password for ORCH.com</span></span>  
   
-    -   <span data-ttu-id="66f1d-119">**确认传出信任：**是</span><span class="sxs-lookup"><span data-stu-id="66f1d-119">**Confirm Outgoing Trust:** Yes</span></span>  
+    -   <span data-ttu-id="66f1d-119">**确认传出信任：** 是</span><span class="sxs-lookup"><span data-stu-id="66f1d-119">**Confirm Outgoing Trust:** Yes</span></span>  
   
-    -   <span data-ttu-id="66f1d-120">**确认传入信任：**否</span><span class="sxs-lookup"><span data-stu-id="66f1d-120">**Confirm Incoming Trust:** No</span></span>  
+    -   <span data-ttu-id="66f1d-120">**确认传入信任：** 否</span><span class="sxs-lookup"><span data-stu-id="66f1d-120">**Confirm Incoming Trust:** No</span></span>  
   
 3.  <span data-ttu-id="66f1d-121">在 ORCH.com 域控制器上，为从 SQL.COM 的传入通信设置域范围信任。</span><span class="sxs-lookup"><span data-stu-id="66f1d-121">On the ORCH.com domain controller, set the domain wide trust for Incoming from SQL.COM.</span></span>  
   

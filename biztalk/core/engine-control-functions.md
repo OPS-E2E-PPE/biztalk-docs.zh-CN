@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239853"
 ---
 # <a name="engine-control-functions"></a><span data-ttu-id="c769e-102">引擎控制功能</span><span class="sxs-lookup"><span data-stu-id="c769e-102">Engine Control Functions</span></span>
 <span data-ttu-id="c769e-103">本部分将介绍与若干业务规则引擎控制功能相关联的行为，这些引擎控制功能允许应用程序或策略控制规则引擎的工作内存中的事实。</span><span class="sxs-lookup"><span data-stu-id="c769e-103">This section explains the behaviors associated with several Business Rule engine control functions that allow an application or policy to control the facts in the rule engine's working memory.</span></span> <span data-ttu-id="c769e-104">工作内存中存在的事实可以驱动要进行评估的条件和要执行的操作。</span><span class="sxs-lookup"><span data-stu-id="c769e-104">The presence of facts in the working memory drives the conditions that are evaluated and the actions that are executed.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 消息内容的状态报告 |Microsoft 文档"
-ms.custom: 
+title: EDI 消息内容的状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29acab25-354d-42f0-b6e3-37ebca47addb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238861"
 ---
 # <a name="edi-message-content-status-report"></a><span data-ttu-id="27251-102">EDI 消息内容状态报表</span><span class="sxs-lookup"><span data-stu-id="27251-102">EDI Message Content Status Report</span></span>
 

@@ -1,18 +1,18 @@
 ---
-title: "异常的原因 |Microsoft 文档"
-ms.custom: 
+title: 异常的原因 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, errors
 - errors, orchestrations
 - errors, causes
 ms.assetid: b0422382-d034-4c58-87c6-fc269dbbfe43
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232461"
 ---
 # <a name="causes-of-exceptions"></a><span data-ttu-id="2ce40-102">引发异常的原因</span><span class="sxs-lookup"><span data-stu-id="2ce40-102">Causes of Exceptions</span></span>
 <span data-ttu-id="2ce40-103">可以通过以下方式在业务流程中产生异常：</span><span class="sxs-lookup"><span data-stu-id="2ce40-103">Exceptions can be generated within an orchestration in the following ways:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何在向地图添加基本 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何在向地图添加基本 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a81fb73-cccf-4f74-af92-39e4af13e255
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248981"
 ---
 # <a name="how-to-add-basic-functoids-to-a-map"></a><span data-ttu-id="6d288-102">如何在向地图添加基本 Functoid</span><span class="sxs-lookup"><span data-stu-id="6d288-102">How to Add Basic Functoids to a Map</span></span>
 <span data-ttu-id="6d288-103">许多 functoid 都十分易于使用。</span><span class="sxs-lookup"><span data-stu-id="6d288-103">Many functoids are very simple to use.</span></span> <span data-ttu-id="6d288-104">这些内容称为到此处基本 functoid，以区别于中 functoid**高级**类别。</span><span class="sxs-lookup"><span data-stu-id="6d288-104">These are referred to here as basic functoids to distinguish them from the functoids in the **Advanced** category.</span></span> <span data-ttu-id="6d288-105">基本 functoid 由除“高级”之外的其余类别的 functoid 组成，例如“转换”、“累计”、“数据库”、“日期和时间”、“判断”、“数学”、“科学计数法”和“字符串”。</span><span class="sxs-lookup"><span data-stu-id="6d288-105">Basic functoids comprise the remaining categories of functoids such as Conversion, Cumulative, Database, Date and Time, Logical, Mathematical, Scientific, and String.</span></span>  

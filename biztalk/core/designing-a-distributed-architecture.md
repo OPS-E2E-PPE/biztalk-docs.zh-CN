@@ -1,17 +1,17 @@
 ---
-title: "设计分布式体系结构 |Microsoft 文档"
-ms.custom: 
+title: 设计分布式体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - clustering, SQL Servers
 - SQL Server, clustering
 ms.assetid: 8a8f1710-4d53-42bf-b5e5-2be3b43813b4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239421"
 ---
 # <a name="designing-a-distributed-architecture"></a><span data-ttu-id="2f472-102">设计分布式结构</span><span class="sxs-lookup"><span data-stu-id="2f472-102">Designing a Distributed Architecture</span></span>
 <span data-ttu-id="2f472-103">有关 BizTalk Server 部署的系统体系结构的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。</span><span class="sxs-lookup"><span data-stu-id="2f472-103">For complete information about the system architecture for BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  

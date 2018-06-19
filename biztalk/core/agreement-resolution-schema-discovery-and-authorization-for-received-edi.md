@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22234229"
 ---
 # <a name="agreement-resolution-schema-discovery-and-authorization-for-received-edi-messages"></a><span data-ttu-id="811a1-102">接收到的 EDI 消息的协议解析、架构发现和授权</span><span class="sxs-lookup"><span data-stu-id="811a1-102">Agreement Resolution, Schema Discovery, and Authorization for Received EDI Messages</span></span>
 <span data-ttu-id="811a1-103">当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 收到 EDI 消息时，EDI 接收管道将执行贸易合作伙伴协议查找、架构发现和授权过程以确定如何处理消息。</span><span class="sxs-lookup"><span data-stu-id="811a1-103">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, the EDI receive pipeline performs trading partner agreement lookup, schema discovery, and authorization processes to determine how to process the message.</span></span>  

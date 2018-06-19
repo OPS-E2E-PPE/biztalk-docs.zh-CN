@@ -1,11 +1,11 @@
 ---
-title: "如何还原数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何还原数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-05-10
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - 64-bit environments, restoring databases
 - restoring, databases
 ms.assetid: 0176932a-6b3d-4502-975b-a76296189092
-caps.latest.revision: "52"
+caps.latest.revision: 52
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255765"
 ---
 # <a name="how-to-restore-your-databases"></a><span data-ttu-id="3c325-102">如何还原数据库</span><span class="sxs-lookup"><span data-stu-id="3c325-102">How to Restore Your Databases</span></span>
 <span data-ttu-id="3c325-103">必须将所有数据库还原到相同的标记，以确保各个数据库间的事务状态一致。</span><span class="sxs-lookup"><span data-stu-id="3c325-103">You must restore all databases to the same mark to ensure a consistent transactional state among the databases.</span></span> <span data-ttu-id="3c325-104">请参阅[标记的事务，完整备份，备份和日志备份](../core/marked-transactions-full-backups-and-log-backups.md)。</span><span class="sxs-lookup"><span data-stu-id="3c325-104">See [Marked Transactions, Full Backups, and Log Backups](../core/marked-transactions-full-backups-and-log-backups.md).</span></span>  
@@ -129,9 +130,9 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="3c325-167">右键单击 **“BizTalk Server 管理”** ，然后选择 **“连接到现有组”**。</span><span class="sxs-lookup"><span data-stu-id="3c325-167">Right-click **BizTalk Server Administration** and select **Connect to Existing Group**.</span></span>  
   
-    3.  <span data-ttu-id="3c325-168">在 **“SQL Server 名称”**中，键入托管 BizTalk 管理数据库的 SQL Server 实例的名称。</span><span class="sxs-lookup"><span data-stu-id="3c325-168">In **SQL Server name**, select the name of the SQL Server instance that hosts the BizTalk Management database.</span></span> <span data-ttu-id="3c325-169">在选择 SQL Server 实例时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将自动检测该计算机上的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库。</span><span class="sxs-lookup"><span data-stu-id="3c325-169">When you select the SQL Server instance, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] automatically detects the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases on that computer.</span></span>  
+    3.  <span data-ttu-id="3c325-168">在 **“SQL Server 名称”** 中，键入托管 BizTalk 管理数据库的 SQL Server 实例的名称。</span><span class="sxs-lookup"><span data-stu-id="3c325-168">In **SQL Server name**, select the name of the SQL Server instance that hosts the BizTalk Management database.</span></span> <span data-ttu-id="3c325-169">在选择 SQL Server 实例时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将自动检测该计算机上的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库。</span><span class="sxs-lookup"><span data-stu-id="3c325-169">When you select the SQL Server instance, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] automatically detects the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases on that computer.</span></span>  
   
-    4.  <span data-ttu-id="3c325-170">在 **“数据库名称”**中，选择 BizTalk 管理数据库（默认为**“BizTalkMgmtDb”** ），然后选择 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="3c325-170">In **Database name**, select your BizTalk Management database (**BizTalkMgmtDb** by default), and then select **OK**.</span></span>  
+    4.  <span data-ttu-id="3c325-170">在 **“数据库名称”** 中，选择 BizTalk 管理数据库（默认为 **“BizTalkMgmtDb”** ），然后选择 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="3c325-170">In **Database name**, select your BizTalk Management database (**BizTalkMgmtDb** by default), and then select **OK**.</span></span>  
   
      <span data-ttu-id="3c325-171">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台将 BizTalk 组添加到管理控制台中。</span><span class="sxs-lookup"><span data-stu-id="3c325-171">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console adds the BizTalk group to the Administration console.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "处理验证 MIC 值返回在 MDN 时 AS2 解码器失败 |Microsoft 文档"
-ms.custom: 
+title: 处理验证 MIC 值返回在 MDN 时 AS2 解码器失败 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fe2d76d-b0f1-4118-8483-547c2c9fffb7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241333"
 ---
 # <a name="the-as2-decoder-failed-processing-when-validating-the-mic-value-returned-in-the-mdn"></a><span data-ttu-id="29308-102">AS2 解码器在验证 MDN 中返回的 MIC 值时处理失败</span><span class="sxs-lookup"><span data-stu-id="29308-102">The AS2 Decoder failed processing when validating the MIC value returned in the MDN</span></span>
 ## <a name="details"></a><span data-ttu-id="29308-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="29308-103">Details</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 段结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 段结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f474a3d-004a-4981-b155-b0a5775918ba
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242213"
 ---
 # <a name="edi-segment-structural-element"></a><span data-ttu-id="30334-102">EDI 段结构化元素</span><span class="sxs-lookup"><span data-stu-id="30334-102">EDI Segment Structural Element</span></span>
 <span data-ttu-id="30334-103">段包含一个或多个数据元素，是消息中的中间信息单位。</span><span class="sxs-lookup"><span data-stu-id="30334-103">The segment contains one or more data elements, and is an intermediate unit of information in the message.</span></span> <span data-ttu-id="30334-104">每个段均以一个由三个字符组成的数据段标识符开头，以段终止符（默认情况下为撇号 (')）结尾。</span><span class="sxs-lookup"><span data-stu-id="30334-104">Each segment starts with a three-character data segment identifier, and ends with a segment terminator (by default the apostrophe (')).</span></span> <span data-ttu-id="30334-105">段内的数据元素由数据元素分隔符分隔。</span><span class="sxs-lookup"><span data-stu-id="30334-105">The data elements within the segment are separated by data element separators.</span></span> <span data-ttu-id="30334-106">默认情况下，数据元素分隔符为加号 (+)。</span><span class="sxs-lookup"><span data-stu-id="30334-106">The data element separator is by default the plus sign (+).</span></span> <span data-ttu-id="30334-107">段可分为两类：必需段和可选段。</span><span class="sxs-lookup"><span data-stu-id="30334-107">A segment is classified as Mandatory or Optional.</span></span> <span data-ttu-id="30334-108">传出交换的分隔符可在两贸易合作伙伴间的协议中设置，也可设置为后备贸易合作伙伴协议的一部分。</span><span class="sxs-lookup"><span data-stu-id="30334-108">Separators for outgoing interchanges can be set in the agreements between two trading partners or as part of fallback trading partner agreement.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239749"
 ---
 # <a name="distributionlistref-port-node"></a><span data-ttu-id="8fd17-102">DistributionListRef （端口节点）</span><span class="sxs-lookup"><span data-stu-id="8fd17-102">DistributionListRef (Port Node)</span></span>
 <span data-ttu-id="8fd17-103">绑定文件“端口”节点的 DistributionListRef 节点包含有关服务引用的分发列表的信息。</span><span class="sxs-lookup"><span data-stu-id="8fd17-103">The DistributionListRef node of the Port node of a binding file contains information about a distribution list that is referenced by a service.</span></span>  

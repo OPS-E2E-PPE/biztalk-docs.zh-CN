@@ -1,14 +1,14 @@
 ---
-title: "如何插入序列组、 选择组或所有组节点 |Microsoft 文档"
-ms.custom: 
+title: 如何插入序列组、 选择组或所有组节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19aee400-1369-4310-b1b4-1bfeb2643236
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254837"
 ---
 # <a name="how-to-insert-a-sequence-group-choice-group-or-all-group-node"></a><span data-ttu-id="a8ff1-102">如何插入序列组、 选择组或所有组节点</span><span class="sxs-lookup"><span data-stu-id="a8ff1-102">How to Insert a Sequence Group, Choice Group, or All Group Node</span></span>
 <span data-ttu-id="a8ff1-103">BizTalk 编辑器支持三种类型的组节点的元素：**序列组**，**选项组**，和**所有组**。</span><span class="sxs-lookup"><span data-stu-id="a8ff1-103">BizTalk Editor supports three types of group nodes for elements: **Sequence Group**, **Choice Group**, and **All Group**.</span></span> <span data-ttu-id="a8ff1-104">这些不同类型的组节点可以在相应的实例消息中建立对组的子节点的不同约束。</span><span class="sxs-lookup"><span data-stu-id="a8ff1-104">These different types of group nodes establish different constraints on the child nodes of the group in corresponding instance messages.</span></span> <span data-ttu-id="a8ff1-105">有关这些不同类型的组所受约束的信息，请直接参阅 Web 上有关 XML 架构定义 (XSD) 语言的信息。</span><span class="sxs-lookup"><span data-stu-id="a8ff1-105">For information about the constraints of these different types of groups, you should refer directly to information about the XML Schema definition (XSD) language on the Web.</span></span> <span data-ttu-id="a8ff1-106">此信息的链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。</span><span class="sxs-lookup"><span data-stu-id="a8ff1-106">For links to this information, see [XSD Resources on the Web](../core/xsd-resources-on-the-web.md).</span></span>  

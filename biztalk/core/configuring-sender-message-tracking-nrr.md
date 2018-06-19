@@ -1,14 +1,14 @@
 ---
-title: "配置发件人消息跟踪 (NRR) |Microsoft 文档"
-ms.custom: 
+title: 配置发件人消息跟踪 (NRR) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6ca2709-ac4b-48c0-82f8-8a43971a86cb
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233573"
 ---
 # <a name="configuring-sender-message-tracking-nrr"></a><span data-ttu-id="56f5d-102">配置发送方消息跟踪（NRR）</span><span class="sxs-lookup"><span data-stu-id="56f5d-102">Configuring Sender Message Tracking (NRR)</span></span>
 <span data-ttu-id="56f5d-103">作为此页上的一部分设置，您可以指定是否将出站消息及其确认 (MDN) 存储到不可否认数据库中。</span><span class="sxs-lookup"><span data-stu-id="56f5d-103">As part of the settings on this page, you can specify whether the outbound messages and their acknowledgements (MDNs) are stored in the non-repudiation database.</span></span> <span data-ttu-id="56f5d-104">有关详细信息，请参阅[AS2 处理在 BizTalk Server](../core/as2-processing-in-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="56f5d-104">For more information, see [AS2 Processing in BizTalk Server](../core/as2-processing-in-biztalk-server.md).</span></span>  

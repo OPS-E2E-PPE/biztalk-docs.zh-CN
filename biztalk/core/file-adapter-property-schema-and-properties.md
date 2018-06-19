@@ -1,11 +1,11 @@
 ---
-title: "文件适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: 文件适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [File adapters], properties
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - File adapters, properties
 - UserName property
 ms.assetid: c5ae5339-67bf-4fde-a721-5b1aa3b9caca
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245989"
 ---
 # <a name="file-adapter-property-schema-and-properties"></a><span data-ttu-id="3f400-102">文件适配器属性架构和属性</span><span class="sxs-lookup"><span data-stu-id="3f400-102">File adapter property schema and properties</span></span>
 <span data-ttu-id="3f400-103">下表包含文件适配器属性架构中的属性。</span><span class="sxs-lookup"><span data-stu-id="3f400-103">The following table contains the properties in the File adapter property schema.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255085"
 ---
 # <a name="how-to-move-a-relationship-between-grid-pages"></a><span data-ttu-id="b5813-102">如何在网格页之间移动关系</span><span class="sxs-lookup"><span data-stu-id="b5813-102">How to Move a Relationship Between Grid Pages</span></span>
 <span data-ttu-id="b5813-103">大型映射包含许多 functoid 和链接集合，这会使您难以识别加入多个 functoid 的链接。</span><span class="sxs-lookup"><span data-stu-id="b5813-103">Large maps include many sets of functoids and links, which can make it difficult for you to identify the links joining multiple functoids.</span></span> <span data-ttu-id="b5813-104">在这种情况下，您可能需要将类似的 functoid 和链接集合移到其他网格页中以使映射更容易辨认。 </span><span class="sxs-lookup"><span data-stu-id="b5813-104">In such a scenario, you might want to move a similar set of functoids and links to a different grid page to make the map more readable.</span></span> <span data-ttu-id="b5813-105">本主题提供执行该操作的逐步说明。</span><span class="sxs-lookup"><span data-stu-id="b5813-105">This topic provides step-by-step instructions to perform the operation.</span></span>  

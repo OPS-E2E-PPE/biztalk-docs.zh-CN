@@ -1,14 +1,14 @@
 ---
-title: "如何选择多个链接和 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何选择多个链接和 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f9ae50cb-c212-48f3-9dfb-74df282645c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255221"
 ---
 # <a name="how-to-select-multiple-links-and-functoids"></a><span data-ttu-id="1a77b-102">如何选择多个链接和 Functoid</span><span class="sxs-lookup"><span data-stu-id="1a77b-102">How to Select Multiple Links and Functoids</span></span>
 <span data-ttu-id="1a77b-103">当您想在一组 functoid 和/或映射中的链接上执行类似操作时，可以同时选择该组 functoid 和/或所有链接。</span><span class="sxs-lookup"><span data-stu-id="1a77b-103">When you want to perform a similar operation on a group of functoids and/or links in a map, you can select that group of functoids and/or links all at the same time.</span></span> <span data-ttu-id="1a77b-104">本主题提供有关如何执行此操作的信息。</span><span class="sxs-lookup"><span data-stu-id="1a77b-104">This topic provides information about how to perform this operation.</span></span>  

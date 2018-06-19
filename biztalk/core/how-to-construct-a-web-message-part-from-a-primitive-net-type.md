@@ -1,11 +1,11 @@
 ---
-title: "如何构造中的基元.NET 类型的 Web 消息部件 |Microsoft 文档"
-ms.custom: 
+title: 如何构造中的基元.NET 类型的 Web 消息部件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, Web messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Web messages, parts
 - Web messages, .NET types
 ms.assetid: 1fe52412-d2bc-484c-8925-c7ff3ca7704b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248021"
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-primitive-net-type"></a><span data-ttu-id="b259f-102">如何从基元 .NET 类型构造 Web 消息部分</span><span class="sxs-lookup"><span data-stu-id="b259f-102">How to Construct a Web Message Part from a Primitive .NET Type</span></span>
 <span data-ttu-id="b259f-103">自.NET 的基元类型中使用创建的 Web 消息部分**消息分配**形状。</span><span class="sxs-lookup"><span data-stu-id="b259f-103">You create a Web message part from a primitive .NET type by using a **Message Assignment** shape.</span></span> <span data-ttu-id="b259f-104">也可以通过使用 .NET 帮助程序类设置各个部分来从基元 .NET 类型创建 Web 消息部分。</span><span class="sxs-lookup"><span data-stu-id="b259f-104">Alternatively, you can create a Web message part from a primitive .NET type by using a .NET helper class to set the parts.</span></span> <span data-ttu-id="b259f-105">通过使用一个.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。</span><span class="sxs-lookup"><span data-stu-id="b259f-105">For more information on creating message types by using a .NET class, see [Constructing Messages in User Code](../core/constructing-messages-in-user-code.md).</span></span>  

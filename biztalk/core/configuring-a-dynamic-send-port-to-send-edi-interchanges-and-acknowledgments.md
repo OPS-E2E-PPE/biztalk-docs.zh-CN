@@ -1,14 +1,14 @@
 ---
-title: "配置动态发送端口发送 EDI 交换和确认 |Microsoft 文档"
-ms.custom: 
+title: 配置动态发送端口发送 EDI 交换和确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a124059c-c29c-4a7f-a8a3-13dffc09ae5c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232813"
 ---
 # <a name="configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments"></a><span data-ttu-id="d29f2-102">配置动态发送端口以发送 EDI 交换和确认</span><span class="sxs-lookup"><span data-stu-id="d29f2-102">Configuring a Dynamic Send Port to Send EDI Interchanges and Acknowledgments</span></span>
 <span data-ttu-id="d29f2-103">若要发送 EDI 确认或交换，可以使用静态发送端口或动态发送端口。</span><span class="sxs-lookup"><span data-stu-id="d29f2-103">To send an EDI acknowledgment or interchange, you can use either a static send port or a dynamic send port.</span></span> <span data-ttu-id="d29f2-104">使用动态发送端口，您可以向多个目标中的任何一个发送交换，原因是它将对协议进行解析，并基于 DestinationPartyName 上下文属性中的值确定目标地址。</span><span class="sxs-lookup"><span data-stu-id="d29f2-104">A dynamic send port enables you to send an interchange to any one of multiple destinations, because it resolves the agreement and determines the destination address based upon the value in the DestinationPartyName context property.</span></span>  

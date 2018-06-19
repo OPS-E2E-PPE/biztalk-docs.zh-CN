@@ -1,11 +1,11 @@
 ---
-title: "如何运行端口配置向导 |Microsoft 文档"
-ms.custom: 
+title: 如何运行端口配置向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Port Configuration Wizard [Orchestration Designer], starting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - ports, Port Configuration Wizard [Orchestration Designer]
 - Port Configuration Wizard [Orchestration Designer]
 ms.assetid: 8035ce32-5ed4-49cb-b6f0-998b0460751e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255789"
 ---
 # <a name="how-to-run-the-port-configuration-wizard"></a><span data-ttu-id="0d872-102">如何运行端口配置向导</span><span class="sxs-lookup"><span data-stu-id="0d872-102">How to Run the Port Configuration Wizard</span></span>
 <span data-ttu-id="0d872-103">您可以使用端口配置向导在业务流程设计器中创建和配置端口。</span><span class="sxs-lookup"><span data-stu-id="0d872-103">You use the Port Configuration Wizard to create and configure a port in Orchestration Designer.</span></span> <span data-ttu-id="0d872-104">端口必须具有与之关联的端口类型，您可以使用该向导来选择现有的端口类型或创建新的端口类型。</span><span class="sxs-lookup"><span data-stu-id="0d872-104">A port must have a port type associated with it, and you use the wizard to select an existing port type or to create a new port type.</span></span> <span data-ttu-id="0d872-105">有关端口和端口类型的详细信息，请参阅[在业务流程中使用端口](../core/using-ports-in-orchestrations.md)。</span><span class="sxs-lookup"><span data-stu-id="0d872-105">For more information about ports and port types, see [Using Ports in Orchestrations](../core/using-ports-in-orchestrations.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "业务活动监视 |Microsoft 文档"
-ms.custom: 
+title: 业务活动监视 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83b3c92f-3062-413e-8d89-797f1c7ea7ab
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232725"
 ---
 # <a name="business-activity-monitoring"></a><span data-ttu-id="b6153-102">业务活动监视</span><span class="sxs-lookup"><span data-stu-id="b6153-102">Business Activity Monitoring</span></span>
 <span data-ttu-id="b6153-103">信息工作者在查看和评估业务流程时需要相应的灵活性。</span><span class="sxs-lookup"><span data-stu-id="b6153-103">Information workers need flexibility in looking at and evaluating business processes.</span></span> <span data-ttu-id="b6153-104">例如，采购经理可能需要查看每天批准和拒绝的采购订单数，而销售经理可能需要每小时更新当前所订购的产品。</span><span class="sxs-lookup"><span data-stu-id="b6153-104">A purchasing manager might need to see how many POs are approved and denied each day, for example, while a sales manager might want an hourly update on what products are being ordered.</span></span> <span data-ttu-id="b6153-105">若要满足这些不同需要，则需要一个通用框架以跟踪特定业务流程的进展情况。</span><span class="sxs-lookup"><span data-stu-id="b6153-105">Meeting these diverse needs requires a general framework for tracking what’s going on with a particular business process.</span></span> <span data-ttu-id="b6153-106">这是完全什么业务活动监视 (BAM) 中的组件 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供。</span><span class="sxs-lookup"><span data-stu-id="b6153-106">This is exactly what the Business Activity Monitoring (BAM) component in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241613"
 ---
 # <a name="error-messages"></a><span data-ttu-id="7d70d-102">错误消息</span><span class="sxs-lookup"><span data-stu-id="7d70d-102">Error Messages</span></span>
 <span data-ttu-id="7d70d-103">下表介绍了 JD Edwards EnterpriseOne 系统中的错误消息，并提供了可能的更正。</span><span class="sxs-lookup"><span data-stu-id="7d70d-103">The following table describes error messages in the JD Edwards EnterpriseOne system and provides possible corrections for them.</span></span>  

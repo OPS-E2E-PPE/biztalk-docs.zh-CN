@@ -1,18 +1,18 @@
 ---
-title: "如何配置已安装的 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 如何配置已安装的 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, configuring
 - deploying, Web services
 - Web services, deploying
 ms.assetid: 5a281daa-9e1c-47b0-9002-66ea18ed6caf
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247773"
 ---
 # <a name="how-to-configure-the-installed-web-service"></a><span data-ttu-id="49e36-102">如何配置已安装的 Web 服务</span><span class="sxs-lookup"><span data-stu-id="49e36-102">How to Configure the Installed Web Service</span></span>
 <span data-ttu-id="49e36-103">安装 Web Services 文件之后，您必须将 BizTalk Server 配置为接收来自 Web Services 的消息。</span><span class="sxs-lookup"><span data-stu-id="49e36-103">After you install the Web service files, you must configure BizTalk Server to receive messages from the Web service.</span></span>  

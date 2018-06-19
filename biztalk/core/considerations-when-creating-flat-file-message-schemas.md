@@ -1,14 +1,14 @@
 ---
-title: "注意事项时创建平面文件消息架构 |Microsoft 文档"
-ms.custom: 
+title: 注意事项时创建平面文件消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52271b17-4f0b-4286-a462-cd5951ae49aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237893"
 ---
 # <a name="considerations-when-creating-flat-file-message-schemas"></a><span data-ttu-id="36e11-102">注意事项时创建平面文件消息架构</span><span class="sxs-lookup"><span data-stu-id="36e11-102">Considerations When Creating Flat File Message Schemas</span></span>
 <span data-ttu-id="36e11-103">在处理平面文件消息架构时，存在一些需要注意的事项。</span><span class="sxs-lookup"><span data-stu-id="36e11-103">There are a number of considerations when working with flat file message schemas.</span></span> <span data-ttu-id="36e11-104">这包括适用于所有平面文件架构的注意事项，以及专门适用于位置记录、分隔记录、位置字段或分隔字段的注意事项。</span><span class="sxs-lookup"><span data-stu-id="36e11-104">This includes considerations that apply to all flat file schemas, as well as considerations that apply specifically to positional records, delimited records, positional fields, or delimited fields.</span></span> <span data-ttu-id="36e11-105">还有一些注意事项涉及如何将其他特殊字符解释为常规数据。</span><span class="sxs-lookup"><span data-stu-id="36e11-105">There are also considerations about how to interpret otherwise special characters as regular data.</span></span> <span data-ttu-id="36e11-106">本部分提供了有关上述注意事项的信息。</span><span class="sxs-lookup"><span data-stu-id="36e11-106">This section provides information about these considerations.</span></span>  

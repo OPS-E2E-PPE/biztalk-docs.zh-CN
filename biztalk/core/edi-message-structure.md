@@ -1,14 +1,14 @@
 ---
-title: "EDI 消息结构 |Microsoft 文档"
-ms.custom: 
+title: EDI 消息结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c9a0447-447f-483c-825d-547c06ad691e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239629"
 ---
 # <a name="edi-message-structure"></a><span data-ttu-id="9ad0c-102">EDI 消息结构</span><span class="sxs-lookup"><span data-stu-id="9ad0c-102">EDI Message Structure</span></span>
 <span data-ttu-id="9ad0c-103">EDI 消息由信封和一系列分层结构元素组成。</span><span class="sxs-lookup"><span data-stu-id="9ad0c-103">EDI messages consist of an envelope and a hierarchical series of structural elements.</span></span> <span data-ttu-id="9ad0c-104">信封包含一组头部和尾部，每组都描述并包含一个结构元素。</span><span class="sxs-lookup"><span data-stu-id="9ad0c-104">The envelope contains a set of headers and trailers, each set of which describes and contains a structural element.</span></span> <span data-ttu-id="9ad0c-105">这些结构元素如下所示：</span><span class="sxs-lookup"><span data-stu-id="9ad0c-105">These structural elements are as follows:</span></span>  

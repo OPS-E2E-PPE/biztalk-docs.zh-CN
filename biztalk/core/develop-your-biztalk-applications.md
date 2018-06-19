@@ -1,14 +1,14 @@
 ---
-title: "开发你的 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 开发你的 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f124ec8-95d9-4c20-bdbe-3d086b594e95
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238813"
 ---
 # <a name="develop-your-biztalk-applications"></a><span data-ttu-id="047ad-102">开发你的 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="047ad-102">Develop your BizTalk applications</span></span>
 <span data-ttu-id="047ad-103">本部分介绍的信息面向负责创建 BizTalk 应用程序的开发人员。</span><span class="sxs-lookup"><span data-stu-id="047ad-103">This section contains information for developers who are tasked with creating BizTalk applications.</span></span> <span data-ttu-id="047ad-104">一旦创建了这些应用程序，它们通常由管理员进行管理，使用的操作和管理任务中找到的信息。</span><span class="sxs-lookup"><span data-stu-id="047ad-104">Once these applications are created, they are usually managed by an administrator, using information found in the Operations and Administrative Tasks.</span></span>  

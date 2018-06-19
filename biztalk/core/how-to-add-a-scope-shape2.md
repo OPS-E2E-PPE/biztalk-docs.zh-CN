@@ -1,17 +1,17 @@
 ---
-title: "如何添加作用域形状 2 |Microsoft 文档"
-ms.custom: 
+title: 如何添加作用域形状 2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Scope shapes, adding
 - adding, Scope shapes
 ms.assetid: 9449210f-1f29-4b86-a14b-148caa06ac6b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246797"
 ---
 # <a name="how-to-add-a-scope-shape"></a><span data-ttu-id="8a535-102">如何添加作用域形状</span><span class="sxs-lookup"><span data-stu-id="8a535-102">How to Add a Scope Shape</span></span>
 <span data-ttu-id="8a535-103">使用以下过程添加**作用域**形状。</span><span class="sxs-lookup"><span data-stu-id="8a535-103">Use the following procedure to add a **Scope** shape.</span></span>  

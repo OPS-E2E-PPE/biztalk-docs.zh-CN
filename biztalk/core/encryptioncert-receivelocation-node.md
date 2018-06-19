@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240509"
 ---
 # <a name="encryptioncert-receivelocation-node"></a><span data-ttu-id="9ded8-102">EncryptionCert（ReceiveLocation 节点）</span><span class="sxs-lookup"><span data-stu-id="9ded8-102">EncryptionCert (ReceiveLocation Node)</span></span>
 <span data-ttu-id="9ded8-103">绑定文件的 ReceiveLocation 节点的 EncryptionCert 节点包含与用于从该绑定文件导出的接收位置的加密证书有关的信息。</span><span class="sxs-lookup"><span data-stu-id="9ded8-103">The EncryptionCert node of the ReceiveLocation node of a binding file contains information about the encryption certificate used with a receive location that is exported with the binding file.</span></span>  

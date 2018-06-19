@@ -1,14 +1,14 @@
 ---
-title: "配置信封 （X12 交换设置） |Microsoft 文档"
-ms.custom: 
+title: 配置信封 （X12 交换设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4fade73-14cf-475c-81b5-6102c75db991
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233413"
 ---
 # <a name="configuring-envelopes-x12-interchange-settings"></a><span data-ttu-id="74b13-102">配置信封（X 12 交换设置）</span><span class="sxs-lookup"><span data-stu-id="74b13-102">Configuring Envelopes (X12-Interchange Settings)</span></span>
 <span data-ttu-id="74b13-103">X12 交换信封生成设置定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何生成要发送到接收方的 X12 编码交换的信封。</span><span class="sxs-lookup"><span data-stu-id="74b13-103">X12 interchange envelope generation settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates the envelope of an X12-encoded interchange to be sent to the receiving party.</span></span> <span data-ttu-id="74b13-104">在本部分中，您可以定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何为它发送到参与方的 X12 编码的交换生成 ISA 段。</span><span class="sxs-lookup"><span data-stu-id="74b13-104">In this section, you define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates the ISA segment for an X12-encoded interchange that it sends to the party.</span></span> <span data-ttu-id="74b13-105">ISA 段是 X12 编码的交换的交换控制标头。</span><span class="sxs-lookup"><span data-stu-id="74b13-105">An ISA segment is the interchange control header for an X12-encoded interchange.</span></span>  

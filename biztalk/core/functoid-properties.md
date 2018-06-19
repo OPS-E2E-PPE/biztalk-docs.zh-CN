@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246005"
 ---
 # <a name="functoid-properties"></a><span data-ttu-id="2b671-102">Functoid 属性</span><span class="sxs-lookup"><span data-stu-id="2b671-102">Functoid Properties</span></span>
 

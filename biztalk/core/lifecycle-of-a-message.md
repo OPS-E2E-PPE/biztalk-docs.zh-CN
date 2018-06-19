@@ -1,11 +1,11 @@
 ---
-title: "消息的生命周期 |Microsoft 文档"
-ms.custom: 
+title: 消息的生命周期 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - orchestrations, about orchestrations
 - messages, send ports
 ms.assetid: d2374f86-9b5f-404f-ba7b-9cab69873fa8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262821"
 ---
 # <a name="lifecycle-of-a-message"></a><span data-ttu-id="7c549-102">消息的生命周期</span><span class="sxs-lookup"><span data-stu-id="7c549-102">Lifecycle of a Message</span></span>
 <span data-ttu-id="7c549-103">下图从消息传送方面对 BizTalk Server 结构进行了高度概括：</span><span class="sxs-lookup"><span data-stu-id="7c549-103">The following figure provides a high-level overview of the BizTalk Server architecture from a messaging perspective.</span></span>  
@@ -84,9 +85,9 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="7c549-156">使用**GetInstance**检索服务实例对象。</span><span class="sxs-lookup"><span data-stu-id="7c549-156">Use **GetInstance** to retrieve a Service Instance object.</span></span>  
   
--   <span data-ttu-id="7c549-157">使用**Instance.Messages []**枚举所有消息都当前引用服务实例。</span><span class="sxs-lookup"><span data-stu-id="7c549-157">Use **Instance.Messages [ ]** to enumerate all messages which the service instance currently references.</span></span>  
+-   <span data-ttu-id="7c549-157">使用**Instance.Messages []** 枚举所有消息都当前引用服务实例。</span><span class="sxs-lookup"><span data-stu-id="7c549-157">Use **Instance.Messages [ ]** to enumerate all messages which the service instance currently references.</span></span>  
   
--   <span data-ttu-id="7c549-158">使用方法对 message 对象例如**Message.BodyPart []**和**Message.Context []**访问并将其保存。</span><span class="sxs-lookup"><span data-stu-id="7c549-158">Use methods on the message object such as **Message.BodyPart [ ]** and **Message.Context [  ]** to access and save it.</span></span>  
+-   <span data-ttu-id="7c549-158">使用方法对 message 对象例如**Message.BodyPart []** 和**Message.Context []** 访问并将其保存。</span><span class="sxs-lookup"><span data-stu-id="7c549-158">Use methods on the message object such as **Message.BodyPart [ ]** and **Message.Context [  ]** to access and save it.</span></span>  
   
 ### <a name="from-the-dta"></a><span data-ttu-id="7c549-159">从 DTA</span><span class="sxs-lookup"><span data-stu-id="7c549-159">From the DTA</span></span>  
   

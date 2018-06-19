@@ -1,14 +1,14 @@
 ---
-title: "配置传出批处理 |Microsoft 文档"
-ms.custom: 
+title: 配置传出批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75e6f41a-0e24-47bf-9234-125791c62044
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234613"
 ---
 # <a name="configuring-an-outgoing-batch"></a><span data-ttu-id="c72c5-102">配置传出批</span><span class="sxs-lookup"><span data-stu-id="c72c5-102">Configuring an Outgoing Batch</span></span>
 <span data-ttu-id="c72c5-103">若要定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将事务集批处理成 EDI 交换的方式，必须为协议创建一个或多个批配置。</span><span class="sxs-lookup"><span data-stu-id="c72c5-103">To define the way that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] batches transaction sets into an EDI interchange, you must create one or more batch configurations for an agreement.</span></span> <span data-ttu-id="c72c5-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与该协议关联并且符合批筛选条件的所有交换，将遵循该批配置的发布条件进行批处理和发布。</span><span class="sxs-lookup"><span data-stu-id="c72c5-104">All interchanges that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] associates to that agreement and that meet the filter criteria for a batch will be batched and released according to the same release criteria for that batch configuration.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="c72c5-161">日期和时间后进入的日期时间**启动**字段。</span><span class="sxs-lookup"><span data-stu-id="c72c5-161">The date and time are after the datetime entered in the **Start** field.</span></span>  
   
--   <span data-ttu-id="c72c5-162">日期和时间是在输入中的值之前**结束**字段或处理的批处理的数字是小于或等于的中的出现次数**（匹配项） 后的结束**字段或**无结束日期**选项。</span><span class="sxs-lookup"><span data-stu-id="c72c5-162">The date and time are before the value entered in the **End by** field, or the numbers of batches processed is less than or equal to the number of occurrences in the **End after (occurrences)** field, or the **No end date** option is selected.</span></span> <span data-ttu-id="c72c5-163">所有三个选项下有**终止**部分。</span><span class="sxs-lookup"><span data-stu-id="c72c5-163">All the three options are available under the **Termination** section.</span></span>  
+-   <span data-ttu-id="c72c5-162">日期和时间是在输入中的值之前**结束**字段或处理的批处理的数字是小于或等于的中的出现次数 **（匹配项） 后的结束**字段或**无结束日期**选项。</span><span class="sxs-lookup"><span data-stu-id="c72c5-162">The date and time are before the value entered in the **End by** field, or the numbers of batches processed is less than or equal to the number of occurrences in the **End after (occurrences)** field, or the **No end date** option is selected.</span></span> <span data-ttu-id="c72c5-163">所有三个选项下有**终止**部分。</span><span class="sxs-lookup"><span data-stu-id="c72c5-163">All the three options are available under the **Termination** section.</span></span>  
   
  <span data-ttu-id="c72c5-164">在中设置激活条件**批配置**页中的单向协议选项卡**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="c72c5-164">The activation criteria are set in the **Batch Configuration** page of the one-way agreement tab in the **Agreement Properties** dialog box.</span></span>  
   
@@ -101,10 +102,10 @@ ms.lasthandoff: 09/20/2017
  <span data-ttu-id="c72c5-168">你可以设置**启动**日期时间在将来为日期时间。</span><span class="sxs-lookup"><span data-stu-id="c72c5-168">You can set the **Start** datetime to be a datetime in the future.</span></span> <span data-ttu-id="c72c5-169">但是，如果你单击**启动**按钮时**启动**日期时间是将来，将激活业务流程实例，但将会收集任何消息，直到开始日期时间发生。</span><span class="sxs-lookup"><span data-stu-id="c72c5-169">However, if you click the **Start** button when the **Start** datetime is in the future, the orchestration instance will be activated, but no messages will be collected until the start datetime occurs.</span></span> <span data-ttu-id="c72c5-170">BatchMarker 管道组件将不提升将消息路由到路由业务流程或直到开始日期时间批处理业务流程所需的相应属性。</span><span class="sxs-lookup"><span data-stu-id="c72c5-170">The BatchMarker pipeline component will not promote the appropriate properties needed to route a message to the routing orchestration or the batching orchestration until the start datetime.</span></span> <span data-ttu-id="c72c5-171">因此不会对消息进行批处理。</span><span class="sxs-lookup"><span data-stu-id="c72c5-171">As a result, the message will not be batched.</span></span> <span data-ttu-id="c72c5-172">但是，任何单独订阅这些消息的发送端口或业务流程仍会提取消息。</span><span class="sxs-lookup"><span data-stu-id="c72c5-172">However, the messages will be picked up by any send port or orchestration subscribing to them as individual messages.</span></span> <span data-ttu-id="c72c5-173">有关 BatchMarker 管道组件的作用的详细信息，请参阅[组合批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)。</span><span class="sxs-lookup"><span data-stu-id="c72c5-173">For more information on what the BatchMarker pipeline component does, see [Assembling a Batched EDI Interchange](../core/assembling-a-batched-edi-interchange.md).</span></span>  
   
 ## <a name="batch-termination-criteria"></a><span data-ttu-id="c72c5-174">批处理终止条件</span><span class="sxs-lookup"><span data-stu-id="c72c5-174">Batch Termination Criteria</span></span>  
- <span data-ttu-id="c72c5-175">消息将停止对收集的一批后**结束**日期时间或之后的中的出现次数**（匹配项） 后的结束**属性。</span><span class="sxs-lookup"><span data-stu-id="c72c5-175">Messages will cease to be collected for a batch after the **End by** datetime or after the number of occurrences in the **End after (occurrences)** property.</span></span> <span data-ttu-id="c72c5-176">如果您不希望批处理的业务流程，以将其停用，则选择**无结束日期**选项。</span><span class="sxs-lookup"><span data-stu-id="c72c5-176">If you do not want the batching orchestration to be deactivated, select the **No end date** option.</span></span>  
+ <span data-ttu-id="c72c5-175">消息将停止对收集的一批后**结束**日期时间或之后的中的出现次数 **（匹配项） 后的结束**属性。</span><span class="sxs-lookup"><span data-stu-id="c72c5-175">Messages will cease to be collected for a batch after the **End by** datetime or after the number of occurrences in the **End after (occurrences)** property.</span></span> <span data-ttu-id="c72c5-176">如果您不希望批处理的业务流程，以将其停用，则选择**无结束日期**选项。</span><span class="sxs-lookup"><span data-stu-id="c72c5-176">If you do not want the batching orchestration to be deactivated, select the **No end date** option.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c72c5-177">如果**（匹配项） 后的结束**属性已被选中，空批处理发出信号将计入的批次激活范围终点的所需的出现次数。</span><span class="sxs-lookup"><span data-stu-id="c72c5-177">If the **End after (occurrences)** property has been selected, empty batch signals count toward the number of occurrences required to end the batch activation range.</span></span> <span data-ttu-id="c72c5-178">如果出现在正常情况下可导致空的批处理信号的条件（在计划应发送批处理时批处理业务流程尚未收到任何消息），出现次数也将递增，但因为未配置空的批处理信号，所以不会发送该信号。</span><span class="sxs-lookup"><span data-stu-id="c72c5-178">The number of occurrences will also be incremented if the conditions that would normally lead to an empty batch signal occur (no messages have been received by the batching orchestration when the batch is scheduled to be sent), but no empty batch signal is sent because the signal is not configured.</span></span>  
+>  <span data-ttu-id="c72c5-177">如果 **（匹配项） 后的结束**属性已被选中，空批处理发出信号将计入的批次激活范围终点的所需的出现次数。</span><span class="sxs-lookup"><span data-stu-id="c72c5-177">If the **End after (occurrences)** property has been selected, empty batch signals count toward the number of occurrences required to end the batch activation range.</span></span> <span data-ttu-id="c72c5-178">如果出现在正常情况下可导致空的批处理信号的条件（在计划应发送批处理时批处理业务流程尚未收到任何消息），出现次数也将递增，但因为未配置空的批处理信号，所以不会发送该信号。</span><span class="sxs-lookup"><span data-stu-id="c72c5-178">The number of occurrences will also be incremented if the conditions that would normally lead to an empty batch signal occur (no messages have been received by the batching orchestration when the batch is scheduled to be sent), but no empty batch signal is sent because the signal is not configured.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c72c5-179">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c72c5-179">See Also</span></span>  
  [<span data-ttu-id="c72c5-180">对传出的 EDI 消息进行批处理</span><span class="sxs-lookup"><span data-stu-id="c72c5-180">Batching Outgoing EDI Messages</span></span>](../core/batching-outgoing-edi-messages.md)

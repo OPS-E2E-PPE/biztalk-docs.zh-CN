@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, .NET assemblies
 - .NET assemblies, adding to applications
 ms.assetid: 75dc3303-a622-40df-881e-3109cbc81c91
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22249229"
 ---
 # <a name="how-to-add-a-net-assembly-to-an-application"></a><span data-ttu-id="4cc5f-102">如何向应用程序中添加 .NET 程序集</span><span class="sxs-lookup"><span data-stu-id="4cc5f-102">How to Add a .NET Assembly to an Application</span></span>
 <span data-ttu-id="4cc5f-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 a BizTalk 应用程序添加并非 BizTalk 程序集的 .NET 程序集。</span><span class="sxs-lookup"><span data-stu-id="4cc5f-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a .NET assembly that is not a BizTalk assembly to a BizTalk application.</span></span> <span data-ttu-id="4cc5f-104">向应用程序中添加 .NET 程序集时，请切记以下几点：</span><span class="sxs-lookup"><span data-stu-id="4cc5f-104">When adding a .NET assembly to an application, bear in mind the following important points:</span></span>  
@@ -76,7 +77,7 @@ ms.lasthandoff: 03/23/2018
   
 2.  <span data-ttu-id="4cc5f-145">键入以下命令，替换适当的值，如下表中所述：</span><span class="sxs-lookup"><span data-stu-id="4cc5f-145">Type the following command, substituting the appropriate values, as described in the following table.</span></span>  
   
-     <span data-ttu-id="4cc5f-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span><span class="sxs-lookup"><span data-stu-id="4cc5f-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+     <span data-ttu-id="4cc5f-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span><span class="sxs-lookup"><span data-stu-id="4cc5f-146">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
      <span data-ttu-id="4cc5f-147">例如：</span><span class="sxs-lookup"><span data-stu-id="4cc5f-147">Example:</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "键盘快捷方式所特有的过程区域 |Microsoft 文档"
-ms.custom: 
+title: 键盘快捷方式所特有的过程区域 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: d993d341-99f2-4788-b1f3-6a8b911e5278
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262061"
 ---
 # <a name="keyboard-shortcuts-specific-to-the-process-area"></a><span data-ttu-id="e0b78-102">过程区域特有的键盘快捷方式</span><span class="sxs-lookup"><span data-stu-id="e0b78-102">Keyboard Shortcuts Specific to the Process Area</span></span>
 <span data-ttu-id="e0b78-103">下表对流程区域中可用的键盘导航进行了说明，该区域是用于定义业务流程处理流程的设计图面的中心区域：</span><span class="sxs-lookup"><span data-stu-id="e0b78-103">The following table describes the keyboard navigation available in the Process Area, the central area of the design surface used to define the process flow of the orchestration.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="e0b78-126">END</span><span class="sxs-lookup"><span data-stu-id="e0b78-126">END</span></span>|<span data-ttu-id="e0b78-127">选择内容将移至通向业务流程的结束形状中的连接线。</span><span class="sxs-lookup"><span data-stu-id="e0b78-127">Selection changes to the connector that leads into the End shape of the orchestration.</span></span>|  
 |<span data-ttu-id="e0b78-128">Num Lock + -</span><span class="sxs-lookup"><span data-stu-id="e0b78-128">NUM LOCK + -</span></span>|<span data-ttu-id="e0b78-129">折叠选定的复杂形状。</span><span class="sxs-lookup"><span data-stu-id="e0b78-129">Collapses the selected complex shape.</span></span>|  
 |<span data-ttu-id="e0b78-130">Num Lock + +</span><span class="sxs-lookup"><span data-stu-id="e0b78-130">NUM LOCK + +</span></span>|<span data-ttu-id="e0b78-131">展开选定的复杂形状。</span><span class="sxs-lookup"><span data-stu-id="e0b78-131">Expands the selected complex shape.</span></span>|  
-|<span data-ttu-id="e0b78-132">Num Lock + *</span><span class="sxs-lookup"><span data-stu-id="e0b78-132">NUM LOCK + *</span></span>|<span data-ttu-id="e0b78-133">展开选定的复杂形状，以及其包含的所有子复杂形状。</span><span class="sxs-lookup"><span data-stu-id="e0b78-133">Expands the selected complex shape, plus any child complex shapes it may have.</span></span>|  
+|<span data-ttu-id="e0b78-132">Num Lock + \*</span><span class="sxs-lookup"><span data-stu-id="e0b78-132">NUM LOCK + \*</span></span>|<span data-ttu-id="e0b78-133">展开选定的复杂形状，以及其包含的所有子复杂形状。</span><span class="sxs-lookup"><span data-stu-id="e0b78-133">Expands the selected complex shape, plus any child complex shapes it may have.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="e0b78-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e0b78-134">See Also</span></span>  
  [<span data-ttu-id="e0b78-135">业务流程设计器键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="e0b78-135">Orchestration Designer Keyboard Shortcuts</span></span>](../core/orchestration-designer-keyboard-shortcuts.md)

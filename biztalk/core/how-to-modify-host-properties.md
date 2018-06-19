@@ -1,14 +1,14 @@
 ---
-title: "如何修改主机属性 |Microsoft 文档"
-ms.custom: 
+title: 如何修改主机属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5df9d7f-b6c2-4bb7-a845-284e6323e3d6
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255653"
 ---
 # <a name="update-host-properties"></a><span data-ttu-id="9360e-102">更新主机属性</span><span class="sxs-lookup"><span data-stu-id="9360e-102">Update Host Properties</span></span>
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="9360e-109">如果更改当前已登录用户的组成员身份，并且组也是域成员，您应该注销并在完成更改后再登录。</span><span class="sxs-lookup"><span data-stu-id="9360e-109">If you change the group membership of the current logged-in user, and the group is also a member of the domain, you should logout and login after changes are completed.</span></span> <span data-ttu-id="9360e-110">不这样做将导致拒绝访问，因为当前登录名不会反映出新的组成员身份。</span><span class="sxs-lookup"><span data-stu-id="9360e-110">Failure to do this will result in denied access because new group membership will not be reflected by the current login.</span></span>  
   
--   <span data-ttu-id="9360e-111">**跟踪主机：**组中的至少一个主机必须跟踪运行状况和业务数据。</span><span class="sxs-lookup"><span data-stu-id="9360e-111">**Host tracking:** At least one host in the group must track health and business data.</span></span> <span data-ttu-id="9360e-112">此选项指示主机加载 BizTalk 跟踪组件来处理运行状况监视和业务数据。</span><span class="sxs-lookup"><span data-stu-id="9360e-112">This option indicates whether the host loads the BizTalk Tracking component to process health monitoring and business data.</span></span>  
+-   <span data-ttu-id="9360e-111">**跟踪主机：** 组中的至少一个主机必须跟踪运行状况和业务数据。</span><span class="sxs-lookup"><span data-stu-id="9360e-111">**Host tracking:** At least one host in the group must track health and business data.</span></span> <span data-ttu-id="9360e-112">此选项指示主机加载 BizTalk 跟踪组件来处理运行状况监视和业务数据。</span><span class="sxs-lookup"><span data-stu-id="9360e-112">This option indicates whether the host loads the BizTalk Tracking component to process health monitoring and business data.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="9360e-113">建议您至少创建一个跟踪主机实例。</span><span class="sxs-lookup"><span data-stu-id="9360e-113">We recommend that you create at least one host instance of the tracking host.</span></span> <span data-ttu-id="9360e-114">如果跟踪主机没有任何运行的实例，MessageBox 数据库将继续累计数据，而这会导致性能下降。</span><span class="sxs-lookup"><span data-stu-id="9360e-114">If there is no running host instance of the tracking host, the MessageBox database will continue to accumulate data with a subsequent degradation in performance.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="9360e-118">指定某个特定主机执行主机跟踪将会影响在同一主机上运行的应用程序的性能。</span><span class="sxs-lookup"><span data-stu-id="9360e-118">Specifying a particular host to perform host tracking will have an impact on the performance of applications running on the same host.</span></span> <span data-ttu-id="9360e-119">因此，您最好考虑创建一个仅“允许主机跟踪”的专用主机。</span><span class="sxs-lookup"><span data-stu-id="9360e-119">Therefore, you might want to consider creating a dedicated host just to "allow host tracking" for this reason.</span></span>  
   
--   <span data-ttu-id="9360e-120">**受信任的身份验证：**可以指定 BizTalk Server 信任主机。</span><span class="sxs-lookup"><span data-stu-id="9360e-120">**Authentication trusted:** You can specify that BizTalk Server trusts a host.</span></span> <span data-ttu-id="9360e-121">BizTalk Server 信任**身份验证受信任主机**要放置于受信任的主机正在排队映射到主机以外的其他用户的消息的发件人安全标识符 (SSID)。</span><span class="sxs-lookup"><span data-stu-id="9360e-121">BizTalk Server trusts **authentication trusted hosts** to place the sender security ID (SSID) on messages that the trusted host is queuing that map to users other than to the host.</span></span> <span data-ttu-id="9360e-122">有关受信任的身份验证主机的详细信息，请参阅[进行身份验证消息的发件人](../core/authenticating-the-sender-of-a-message.md)。</span><span class="sxs-lookup"><span data-stu-id="9360e-122">For more information about authentication trusted hosts, see [Authenticating the Sender of a Message](../core/authenticating-the-sender-of-a-message.md).</span></span>  
+-   <span data-ttu-id="9360e-120">**受信任的身份验证：** 可以指定 BizTalk Server 信任主机。</span><span class="sxs-lookup"><span data-stu-id="9360e-120">**Authentication trusted:** You can specify that BizTalk Server trusts a host.</span></span> <span data-ttu-id="9360e-121">BizTalk Server 信任**身份验证受信任主机**要放置于受信任的主机正在排队映射到主机以外的其他用户的消息的发件人安全标识符 (SSID)。</span><span class="sxs-lookup"><span data-stu-id="9360e-121">BizTalk Server trusts **authentication trusted hosts** to place the sender security ID (SSID) on messages that the trusted host is queuing that map to users other than to the host.</span></span> <span data-ttu-id="9360e-122">有关受信任的身份验证主机的详细信息，请参阅[进行身份验证消息的发件人](../core/authenticating-the-sender-of-a-message.md)。</span><span class="sxs-lookup"><span data-stu-id="9360e-122">For more information about authentication trusted hosts, see [Authenticating the Sender of a Message](../core/authenticating-the-sender-of-a-message.md).</span></span>  
   
      <span data-ttu-id="9360e-123">受信任主机和非信任主机的实例不能使用相同的服务帐户。</span><span class="sxs-lookup"><span data-stu-id="9360e-123">Host instances of trusted hosts and host instances of non-trusted hosts cannot use the same service accounts.</span></span> <span data-ttu-id="9360e-124">如果希望更改某个主机实例的信任设置，并且该主机实例与其他主机实例使用了相同的服务帐户，请执行以下操作之一：</span><span class="sxs-lookup"><span data-stu-id="9360e-124">If you want to change the trust setting of a host instance and the host instance uses a service account that other host instances use, you can do one of the following:</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="9360e-127">可以删除主机实例，然后使用不同的信任设置和服务帐户重新进行创建。</span><span class="sxs-lookup"><span data-stu-id="9360e-127">You can delete the host instance, and re-create it with a different trust setting and service account.</span></span>  
   
--   <span data-ttu-id="9360e-128">**默认主机组中：**必须具有默认主机组中的所有时间。</span><span class="sxs-lookup"><span data-stu-id="9360e-128">**Default host in the group:** There must be a default host in the group at all times.</span></span> <span data-ttu-id="9360e-129">除非用户明确选择其他主机，否则业务流程登记进程将自动使用默认主机作为业务流程的宿主。</span><span class="sxs-lookup"><span data-stu-id="9360e-129">The orchestration enlistment process automatically uses the default host to host the orchestration, unless the user explicitly selects a different host.</span></span> <span data-ttu-id="9360e-130">创建的第一个主机将标记为默认主机。</span><span class="sxs-lookup"><span data-stu-id="9360e-130">The first host created is marked as the default host.</span></span> <span data-ttu-id="9360e-131">有关默认主机的信息，请参阅[主机](../core/hosts.md)。</span><span class="sxs-lookup"><span data-stu-id="9360e-131">For information about the default host, see [Hosts](../core/hosts.md).</span></span>  
+-   <span data-ttu-id="9360e-128">**默认主机组中：** 必须具有默认主机组中的所有时间。</span><span class="sxs-lookup"><span data-stu-id="9360e-128">**Default host in the group:** There must be a default host in the group at all times.</span></span> <span data-ttu-id="9360e-129">除非用户明确选择其他主机，否则业务流程登记进程将自动使用默认主机作为业务流程的宿主。</span><span class="sxs-lookup"><span data-stu-id="9360e-129">The orchestration enlistment process automatically uses the default host to host the orchestration, unless the user explicitly selects a different host.</span></span> <span data-ttu-id="9360e-130">创建的第一个主机将标记为默认主机。</span><span class="sxs-lookup"><span data-stu-id="9360e-130">The first host created is marked as the default host.</span></span> <span data-ttu-id="9360e-131">有关默认主机的信息，请参阅[主机](../core/hosts.md)。</span><span class="sxs-lookup"><span data-stu-id="9360e-131">For information about the default host, see [Hosts](../core/hosts.md).</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="9360e-132">先决条件</span><span class="sxs-lookup"><span data-stu-id="9360e-132">Prerequisites</span></span>  
  <span data-ttu-id="9360e-133">必须具有以下用户权限才能创建主机、修改主机属性和删除主机：</span><span class="sxs-lookup"><span data-stu-id="9360e-133">You must have the following user rights to create hosts, modify host properties, and delete hosts:</span></span>  

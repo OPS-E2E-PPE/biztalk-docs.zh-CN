@@ -1,14 +1,14 @@
 ---
-title: "EDI 和 AS2 的配置状态报告 |Microsoft 文档"
-ms.custom: 
+title: EDI 和 AS2 的配置状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c7fa76d-0d03-4b74-9a3a-60f4bd0534ff
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233613"
 ---
 # <a name="configuration-of-edi-and-as2-status-reporting"></a><span data-ttu-id="7d140-102">配置 EDI 和 AS2 状态报告功能</span><span class="sxs-lookup"><span data-stu-id="7d140-102">Configuration of EDI and AS2 Status Reporting</span></span>
 <span data-ttu-id="7d140-103">本主题说明启用 EDI 和 AS2 状态报告功能和配置状态报告筛选器，并显示 EDI、批处理和 AS2 状态报告的列。</span><span class="sxs-lookup"><span data-stu-id="7d140-103">This topic describes the enabling of EDI and AS2 status reporting, and the configuration of status report filters and display columns for EDI, batching, and AS2 status reports.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "适配器变量 |Microsoft 文档"
-ms.custom: 
+title: 适配器变量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeda96bc-5141-4c42-8a29-b0a28bc47aa4
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233877"
 ---
 # <a name="adapter-variables"></a><span data-ttu-id="41dd9-102">适配器变量</span><span class="sxs-lookup"><span data-stu-id="41dd9-102">Adapter Variables</span></span>
 <span data-ttu-id="41dd9-103">任何自定义适配器都有大量变量需要处理。</span><span class="sxs-lookup"><span data-stu-id="41dd9-103">There are a number of variables that any custom adapter needs to handle.</span></span> <span data-ttu-id="41dd9-104">赋给这些变量的值将影响适配器实现的自定义逻辑。</span><span class="sxs-lookup"><span data-stu-id="41dd9-104">Values assigned to these variables influence custom logic that the adapter implements.</span></span> <span data-ttu-id="41dd9-105">特定于传输或特定于应用程序的配置属性还有助于支持您的解决方案。</span><span class="sxs-lookup"><span data-stu-id="41dd9-105">Transport-specific or application-specific configuration properties can also help to support your solution.</span></span> <span data-ttu-id="41dd9-106">下表列出了这些常见变量。</span><span class="sxs-lookup"><span data-stu-id="41dd9-106">The following table lists these common variables.</span></span> <span data-ttu-id="41dd9-107">您必须确定是否要在您的自定义适配器中支持每个变量。</span><span class="sxs-lookup"><span data-stu-id="41dd9-107">You must decide if you want to support each one in your custom adapter.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置发送端口的备份传输选项 |Microsoft 文档"
-ms.custom: 
+title: 如何配置发送端口的备份传输选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, send ports
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send ports, configuring
 - send ports, backup options
 ms.assetid: f05f57a6-e62b-4640-a6e2-cb73e9de2a14
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248373"
 ---
 # <a name="how-to-configure-backup-transport-options-for-a-send-port"></a><span data-ttu-id="8bcf5-102">如何为发送端口配置备份传输选项</span><span class="sxs-lookup"><span data-stu-id="8bcf5-102">How to Configure Backup Transport Options for a Send Port</span></span>
 <span data-ttu-id="8bcf5-103">本主题将介绍如何使用 BizTalk Server 管理控制台为发送端口配置备份传输选项。</span><span class="sxs-lookup"><span data-stu-id="8bcf5-103">This topic describes how to use the BizTalk Server Administration console to configure backup transport options for a send port.</span></span> <span data-ttu-id="8bcf5-104">如果主传输无法正常工作，则您所指定的备份传输将生效。</span><span class="sxs-lookup"><span data-stu-id="8bcf5-104">The backup transport that you specify takes effect in the event the primary transport fails to function.</span></span> <span data-ttu-id="8bcf5-105">中所述配置的主要传输[如何创建发送端口](../core/how-to-create-a-send-port2.md)。</span><span class="sxs-lookup"><span data-stu-id="8bcf5-105">Configuring the primary transport is described in [How to Create a Send Port](../core/how-to-create-a-send-port2.md).</span></span>  

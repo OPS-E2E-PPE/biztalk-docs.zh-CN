@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254293"
 ---
 # <a name="how-to-modify-net-clr-settings"></a><span data-ttu-id="7584c-102">如何修改 .NET CLR 设置</span><span class="sxs-lookup"><span data-stu-id="7584c-102">How to Modify .NET CLR Settings</span></span>
 <span data-ttu-id="7584c-103">若要更新与 BizTalk 主机的实例相关联的 .NET 线程池中可用的 Windows 线程数，可以使用“BizTalk 设置仪表板”修改相应的公共语言运行时 (CLR) Hosting 值。</span><span class="sxs-lookup"><span data-stu-id="7584c-103">To update the number of Windows threads available in the .NET thread pool associated with an instance of a BizTalk host, you can modify the appropriate Common Runtime Language (CLR) Hosting values using the BizTalk Settings Dashboard.</span></span> <span data-ttu-id="7584c-104">本主题提供了修改这些设置的分步过程。</span><span class="sxs-lookup"><span data-stu-id="7584c-104">This topic provides the step-by-step procedure to modify these settings.</span></span>  
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="7584c-108">在**BizTalk Server 管理控制台**，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，右键单击**BizTalk 组**，然后单击**设置**。</span><span class="sxs-lookup"><span data-stu-id="7584c-108">In the **BizTalk Server Administration Console**, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], right-click **BizTalk Group**, and then click **Settings**.</span></span>  
   
-2.  <span data-ttu-id="7584c-109">在**BizTalk 设置仪表板**对话框中，在**主机实例**选项卡上，单击**.NET CLR**选项卡。</span><span class="sxs-lookup"><span data-stu-id="7584c-109">In the **BizTalk Settings Dashboard** dialog box, on the **Host Instance** tab, click the **.NET CLR** tab.</span></span>  
+2.  <span data-ttu-id="7584c-109">在**BizTalk 设置仪表板**对话框中，在**主机实例**选项卡上，单击 **.NET CLR**选项卡。</span><span class="sxs-lookup"><span data-stu-id="7584c-109">In the **BizTalk Settings Dashboard** dialog box, on the **Host Instance** tab, click the **.NET CLR** tab.</span></span>  
   
 3.  <span data-ttu-id="7584c-110">执行以下操作，单击**应用**应用修改再转到另一个选项卡。或单击**确定**应用进行修改并退出设置仪表板。</span><span class="sxs-lookup"><span data-stu-id="7584c-110">Do the following and click **Apply** to apply the modifications and proceed to another tab. Or click **OK** to apply the modifications and exit the Settings Dashboard.</span></span>  
   

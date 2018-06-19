@@ -15,7 +15,7 @@ helpviewer_keywords:
 - HAT, terminiating orchestrations
 - orchestrations, terminating [HAT]
 ms.assetid: b5d44cce-b05c-47f9-9015-5b10c2312bf1
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255237"
 ---
 # <a name="how-to-terminate-suspended-orchestration-instances"></a><span data-ttu-id="c8ebe-102">如何终止挂起的业务流程实例</span><span class="sxs-lookup"><span data-stu-id="c8ebe-102">How to Terminate Suspended Orchestration Instances</span></span>
 <span data-ttu-id="c8ebe-103">可以从 BizTalk Server 管理控制台中的查询结果或预览窗格终止所有挂起的业务流程实例或端口。</span><span class="sxs-lookup"><span data-stu-id="c8ebe-103">You can terminate any suspended orchestration instances or ports from the Query results or preview pane in the BizTalk Server Administration Console.</span></span>  

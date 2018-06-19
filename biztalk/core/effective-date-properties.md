@@ -1,11 +1,11 @@
 ---
-title: "生效日期属性 |Microsoft 文档"
-ms.custom: 
+title: 生效日期属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - effective-dated items
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - EFFDT
 - planned items, scheduling and tracking
 ms.assetid: 0d9a153c-7ea5-41cf-9e4e-055e1c18f64b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240141"
 ---
 # <a name="effective-date-properties"></a><span data-ttu-id="d46fe-102">生效日期属性</span><span class="sxs-lookup"><span data-stu-id="d46fe-102">Effective Date Properties</span></span>
 <span data-ttu-id="d46fe-103">PeopleSoft Enterprise 通过使用名为“有效日期”（简写为 EFFDT）的特殊属性，提供了为项目制定计划和跟踪已计划项目的功能。</span><span class="sxs-lookup"><span data-stu-id="d46fe-103">PeopleSoft Enterprise provides the ability to schedule and keep track of planned items by using a special property called Effective Date (abbreviated EFFDT).</span></span> <span data-ttu-id="d46fe-104">此类项目要么正在实施中要么只是已制定了计划，具体取决于其日期是在 PeopleSoft 当前日期之前还是之后。</span><span class="sxs-lookup"><span data-stu-id="d46fe-104">Such items are either in effect or merely planned, depending on whether their date is before or after the PeopleSoft current date.</span></span>  

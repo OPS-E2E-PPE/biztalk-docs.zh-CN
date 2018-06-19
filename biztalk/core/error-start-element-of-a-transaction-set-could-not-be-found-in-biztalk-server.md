@@ -1,14 +1,14 @@
 ---
-title: "在处理事务集，因为找不到事务集的开始元素之后遇到错误 |Microsoft 文档"
-ms.custom: 
+title: 在处理事务集，因为找不到事务集的开始元素之后遇到错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5380aee-1632-4cdf-98a1-aff87574ce4f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241805"
 ---
 # <a name="error-encountered-after-processing-transaction-sets-because-the-start-element-of-a-transaction-set-could-not-be-found"></a><span data-ttu-id="a902c-102">处理事务集后遇到错误，因为找不到事务集的 Start 元素</span><span class="sxs-lookup"><span data-stu-id="a902c-102">Error encountered after processing Transaction Set(s) because the Start element of a Transaction set could not be found</span></span>
 ## <a name="details"></a><span data-ttu-id="a902c-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="a902c-103">Details</span></span>  

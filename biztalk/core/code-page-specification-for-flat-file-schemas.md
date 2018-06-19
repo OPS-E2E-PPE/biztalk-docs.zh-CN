@@ -1,14 +1,14 @@
 ---
-title: "代码页规范是平面文件架构 |Microsoft 文档"
-ms.custom: 
+title: 代码页规范是平面文件架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 825e75f1-893c-4c61-b566-f893d732a907
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232261"
 ---
 # <a name="code-page-specification-for-flat-file-schemas"></a><span data-ttu-id="4cd88-102">平面文件架构的代码页规范</span><span class="sxs-lookup"><span data-stu-id="4cd88-102">Code Page Specification for Flat File Schemas</span></span>
 

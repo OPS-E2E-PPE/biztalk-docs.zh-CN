@@ -1,14 +1,14 @@
 ---
-title: "由于结构无效，X12 交换 Xml 序列化失败。 查找 TransactionSet 或 GE，但找不到 |Microsoft 文档"
-ms.custom: 
+title: 由于结构无效，X12 交换 Xml 序列化失败。 查找 TransactionSet 或 GE，但找不到 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d058fdbb-6be5-499f-86f7-0eb8a85c5fb2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241717"
 ---
 # <a name="x12-interchange-xml-serialization-failed-due-to-invalid-structure-looking-for-transactionset-or-ge-but-not-found"></a><span data-ttu-id="cdc99-103">由于结构无效，X12 交换 Xml 序列化失败。</span><span class="sxs-lookup"><span data-stu-id="cdc99-103">X12 interchange Xml serialization failed due to invalid structure.</span></span> <span data-ttu-id="cdc99-104">查找 TransactionSet 或 GE，但没有找到</span><span class="sxs-lookup"><span data-stu-id="cdc99-104">Looking for TransactionSet or GE, but not found</span></span>
 ## <a name="details"></a><span data-ttu-id="cdc99-105">详细信息</span><span class="sxs-lookup"><span data-stu-id="cdc99-105">Details</span></span>  

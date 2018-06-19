@@ -1,14 +1,14 @@
 ---
-title: "一个独立的接口接收适配器 |Microsoft 文档"
-ms.custom: 
+title: 一个独立的接口接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c6b195e-76bf-4c3e-a324-5513bc24fed1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257765"
 ---
 # <a name="interfaces-for-an-isolated-receive-adapter"></a><span data-ttu-id="f71d8-102">一个独立的接口接收适配器</span><span class="sxs-lookup"><span data-stu-id="f71d8-102">Interfaces for an Isolated Receive Adapter</span></span>
 <span data-ttu-id="f71d8-103">独立接收适配器在托管进程空间以外[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]过程。</span><span class="sxs-lookup"><span data-stu-id="f71d8-103">Isolated receive adapters are hosted in a process space other than the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process.</span></span> <span data-ttu-id="f71d8-104">独立接收适配器若要与消息引擎进行交互，需要在启动时注册自身，以便引擎可以配置和控制它。</span><span class="sxs-lookup"><span data-stu-id="f71d8-104">To interact with the Messaging Engine, an isolated receive adapter registers itself on startup so that the engine can configure and control it.</span></span> <span data-ttu-id="f71d8-105">适配器创建传输代理、 查询的接口**IBTTransportProxy**，并调用**IBTTransportProxy.RegisterIsolatedReceiver**注册其**IBTTransportConfig** the Messaging Engine 回调接口。</span><span class="sxs-lookup"><span data-stu-id="f71d8-105">The adapter creates the transport proxy, queries for the interface **IBTTransportProxy**, and calls **IBTTransportProxy.RegisterIsolatedReceiver** to register its **IBTTransportConfig** callback interface with the Messaging Engine.</span></span> <span data-ttu-id="f71d8-106">适配器将提交到其第一条消息之前，将发生此同步调用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="f71d8-106">This synchronous call occurs before the adapter submits its first message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f71d8-107">这使消息引擎可以通过回调进入适配器，通知适配器哪些终结点是活动的，因而应该侦听上面的传入消息。</span><span class="sxs-lookup"><span data-stu-id="f71d8-107">This allows the Messaging Engine to call back into the adapter and tell it which of its endpoints are active and should be listened on for incoming messages.</span></span> <span data-ttu-id="f71d8-108">独立适配器必须实现以下接口：</span><span class="sxs-lookup"><span data-stu-id="f71d8-108">Isolated adapters must implement the following interfaces:</span></span>  

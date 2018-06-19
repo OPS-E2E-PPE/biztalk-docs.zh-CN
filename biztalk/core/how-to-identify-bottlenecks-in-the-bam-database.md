@@ -1,14 +1,14 @@
 ---
-title: "如何确定 BAM 数据库中的瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 如何确定 BAM 数据库中的瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6814c0df-3ce1-44f8-8e63-af6e23336c6d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254101"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-database"></a><span data-ttu-id="5c64d-102">如何确定 BAM 数据库中的瓶颈</span><span class="sxs-lookup"><span data-stu-id="5c64d-102">How to Identify Bottlenecks in the BAM Database</span></span>
 <span data-ttu-id="5c64d-103">若要找出 BAM 数据库的瓶颈，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="5c64d-103">To identify bottlenecks in the BAM database, perform the following steps:</span></span>  

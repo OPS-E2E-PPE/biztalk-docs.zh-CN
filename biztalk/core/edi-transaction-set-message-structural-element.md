@@ -1,14 +1,14 @@
 ---
-title: "EDI 事务集消息结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 事务集消息结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: caea8408-c09c-4525-a9c9-18abe4432594
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239181"
 ---
 # <a name="edi-transaction-set-message-structural-element"></a><span data-ttu-id="61da1-102">EDI 事务集消息结构化元素</span><span class="sxs-lookup"><span data-stu-id="61da1-102">EDI Transaction Set-Message Structural Element</span></span>
 <span data-ttu-id="61da1-103">事务集（在 X12 编码中）或消息（在 EDIFACT 编码中）包含构成消息数据的段。</span><span class="sxs-lookup"><span data-stu-id="61da1-103">The transaction set (in X12 encoding) or message (in EDIFACT encoding) contains segments that make up the message data.</span></span> <span data-ttu-id="61da1-104">事务集由标头、数据段集合和尾部组成。</span><span class="sxs-lookup"><span data-stu-id="61da1-104">The transaction set consists of a header, a collection of data segments, and a trailer.</span></span> <span data-ttu-id="61da1-105">事务集中提供了处理事务所需的所有详细信息。</span><span class="sxs-lookup"><span data-stu-id="61da1-105">All details that are required to process the transaction are available within the transaction set.</span></span>  

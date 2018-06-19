@@ -1,14 +1,14 @@
 ---
-title: "如何添加值映射到图 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何添加值映射到图 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc70067a-67a1-4a0e-95e5-b0cb327d2cee
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247837"
 ---
 # <a name="how-to-add-value-mapping-functoids-to-a-map"></a><span data-ttu-id="01e4f-102">如何向映射添加“值映射”Functoid</span><span class="sxs-lookup"><span data-stu-id="01e4f-102">How to Add Value Mapping Functoids to a Map</span></span>
 <span data-ttu-id="01e4f-103">**值映射**functoid 返回其第二个参数的值，如果其第一个参数为 true。</span><span class="sxs-lookup"><span data-stu-id="01e4f-103">The **Value Mapping** functoid returns the value of its second parameter if its first parameter is true.</span></span> <span data-ttu-id="01e4f-104">该 functoid 通常用于将字段的属性更改为记录的属性。</span><span class="sxs-lookup"><span data-stu-id="01e4f-104">A common use of the functoid is to change the attributes of a field into the attributes of a record.</span></span>  

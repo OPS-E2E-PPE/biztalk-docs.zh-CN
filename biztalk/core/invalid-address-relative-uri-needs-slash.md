@@ -1,14 +1,14 @@
 ---
-title: "无效的地址 (相对 uri 需要斜杠 (&quot;-&quot;)) |Microsoft 文档"
-ms.custom: 
+title: 无效的地址 (相对 uri 需要斜杠 (&quot;-&quot;)) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1376f924-f119-4ba8-9be1-eea7ba5f3eb6
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257565"
 ---
 # <a name="invalid-address-relative-uri-needs-slash-quot-quot"></a><span data-ttu-id="c6e53-102">无效的地址 (相对 uri 需要斜杠 (&quot;-&quot;))</span><span class="sxs-lookup"><span data-stu-id="c6e53-102">Invalid address (relative uri needs slash (&quot;-&quot;))</span></span>
 ## <a name="details"></a><span data-ttu-id="c6e53-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="c6e53-103">Details</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="c6e53-130">在**WCF [***传输类型***] 传输属性**对话框中，单击**常规**选项卡。</span><span class="sxs-lookup"><span data-stu-id="c6e53-130">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="c6e53-131">在**地址 (URI)**文本框中，更改的地址。</span><span class="sxs-lookup"><span data-stu-id="c6e53-131">In the **Address (URI)** text box, change the address.</span></span> <span data-ttu-id="c6e53-132">例如，正确格式的相对地址为 /path/service.svc。</span><span class="sxs-lookup"><span data-stu-id="c6e53-132">An example of a well-formed relative address is /path/service.svc.</span></span>  
+9. <span data-ttu-id="c6e53-131">在**地址 (URI)** 文本框中，更改的地址。</span><span class="sxs-lookup"><span data-stu-id="c6e53-131">In the **Address (URI)** text box, change the address.</span></span> <span data-ttu-id="c6e53-132">例如，正确格式的相对地址为 /path/service.svc。</span><span class="sxs-lookup"><span data-stu-id="c6e53-132">An example of a well-formed relative address is /path/service.svc.</span></span>  
   
  <span data-ttu-id="c6e53-133">有关接收位置的其他信息，请参阅以下内容：</span><span class="sxs-lookup"><span data-stu-id="c6e53-133">For additional information on receive locations, see the following:</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "AS2 状态报告为存储的数据 |Microsoft 文档"
-ms.custom: 
+title: AS2 状态报告为存储的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6aa4077-3768-436b-99b9-d203a86a7e69
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238509"
 ---
 # <a name="data-stored-for-as2-status-reports"></a><span data-ttu-id="4d409-102">为 AS2 状态报告存储的数据</span><span class="sxs-lookup"><span data-stu-id="4d409-102">Data Stored for AS2 Status Reports</span></span>
 <span data-ttu-id="4d409-103">AS2 状态报告中提供了两个级别的报告： 首先如果**打开 ON Reporting**了协议选择属性 (从**常规属性**页**常规**选项卡中**协议属性**对话框中)，第二个如果不可否认性数据库存储属性选择了协议。</span><span class="sxs-lookup"><span data-stu-id="4d409-103">Two levels of reporting are available in AS2 status reporting: the first if the **Turn ON Reporting** property is selected for an agreement (from the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box), and the second if a non-repudiation database storage property is selected for an agreement.</span></span>  

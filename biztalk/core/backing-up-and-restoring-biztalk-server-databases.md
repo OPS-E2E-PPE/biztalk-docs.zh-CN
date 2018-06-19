@@ -1,11 +1,11 @@
 ---
-title: "备份和还原 BizTalk Server 数据库 |Microsoft 文档"
-ms.custom: 
+title: 备份和还原 BizTalk Server 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up [BAM]
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - restoring [BAM]
 - BAM, backing up
 ms.assetid: 82fc1af2-1389-4c79-80dc-f2df5656d201
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232925"
 ---
 # <a name="backing-up-and-restoring-biztalk-server-databases"></a><span data-ttu-id="28f39-102">备份和还原 BizTalk Server 数据库</span><span class="sxs-lookup"><span data-stu-id="28f39-102">Backing Up and Restoring BizTalk Server Databases</span></span>
 <span data-ttu-id="28f39-103">使用备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业可以备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 源系统中的所有数据库，但业务活动监视 (BAM) 所使用的某些数据库除外。</span><span class="sxs-lookup"><span data-stu-id="28f39-103">You use the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job to back up all of the databases in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] source system, except for some databases used by Business Activity Monitoring (BAM).</span></span> <span data-ttu-id="28f39-104">源系统是包含实时数据的服务器或服务器组。</span><span class="sxs-lookup"><span data-stu-id="28f39-104">The source system is the server or group of servers that contain live data.</span></span> <span data-ttu-id="28f39-105">由于 BAM 数据库的备份和还原要求不同，因此，要使用其他方法对这些数据库进行备份和还原。</span><span class="sxs-lookup"><span data-stu-id="28f39-105">Because BAM databases have different backup and restore requirements, these databases are backed up and restored using other methods.</span></span>  

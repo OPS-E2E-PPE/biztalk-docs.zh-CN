@@ -1,11 +1,11 @@
 ---
-title: "如何删除孤立的跟踪配置文件 |Microsoft 文档"
-ms.custom: 
+title: 如何删除孤立的跟踪配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, tracking profiles
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking profiles, deleting
 - activities, tracking profiles
 ms.assetid: e8923dab-5d02-41a3-840b-104b20624e6c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255397"
 ---
 # <a name="how-to-remove-orphaned-tracking-profiles"></a><span data-ttu-id="fc9c9-102">如何删除孤立的跟踪配置文件</span><span class="sxs-lookup"><span data-stu-id="fc9c9-102">How to Remove Orphaned Tracking Profiles</span></span>
 <span data-ttu-id="fc9c9-103">跟踪配置文件与活动相关联。</span><span class="sxs-lookup"><span data-stu-id="fc9c9-103">Tracking profiles are associated with an activity.</span></span> <span data-ttu-id="fc9c9-104">如果取消部署活动，则相关的跟踪配置文件可能会变成孤立的配置文件，这意味着它们不再与活动相关联。</span><span class="sxs-lookup"><span data-stu-id="fc9c9-104">If an activity is undeployed, the associated tracking profiles can become orphaned, which means they are no longer associated with an activity.</span></span> <span data-ttu-id="fc9c9-105">可以使用以下过程来删除跟踪配置文件。</span><span class="sxs-lookup"><span data-stu-id="fc9c9-105">You can use the following procedure to remove the tracking profile.</span></span>  

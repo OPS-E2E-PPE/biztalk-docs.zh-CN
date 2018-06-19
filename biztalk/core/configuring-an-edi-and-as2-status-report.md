@@ -1,15 +1,15 @@
 ---
-title: "配置 EDI 和 AS2 状态报告 |Microsoft 文档"
-description: "创建 EDI 或 AS2 状态报告查询表达式中，并选择要在 BizTalk Server 中的报表中显示的数据"
-ms.custom: 
+title: 配置 EDI 和 AS2 状态报告 |Microsoft 文档
+description: 创建 EDI 或 AS2 状态报告查询表达式中，并选择要在 BizTalk Server 中的报表中显示的数据
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6490864d-f1e6-4932-aefb-c332a595aad7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233677"
 ---
 # <a name="configure-an-edi-and-as2-status-report"></a><span data-ttu-id="9851b-103">配置 EDI 和 AS2 状态报表</span><span class="sxs-lookup"><span data-stu-id="9851b-103">Configure an EDI and AS2 Status Report</span></span>
 <span data-ttu-id="9851b-104">已启用 EDI 或 AS2 状态报告，你显示的状态报告后你需要从**EDI 状态报告**或**EDIINT 状态报告**部分**组中心数据库**选项卡**组概述**页面[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="9851b-104">After you have enabled EDI or AS2 status reports, you display the status report you want from the **EDI Status Reports** or **EDIINT Status Reports** section of the **Group Hub** tab of the **Group Overview** page in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="9851b-105">在所显示的状态报告中将看到一组默认数据。</span><span class="sxs-lookup"><span data-stu-id="9851b-105">When you display a status report, you will see a default set of data.</span></span> <span data-ttu-id="9851b-106">您可以配置状态报告的如下方面：</span><span class="sxs-lookup"><span data-stu-id="9851b-106">You can configure the following aspects of the status reports:</span></span>  

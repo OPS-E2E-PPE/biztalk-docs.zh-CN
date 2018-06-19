@@ -1,11 +1,11 @@
 ---
-title: "保护适配器的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 保护适配器的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, security
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - best practices, security
 - adapters, best practices
 ms.assetid: 004e1a01-b316-4eee-967f-5a806431de2b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233293"
 ---
 # <a name="best-practices-for-securing-adapters"></a><span data-ttu-id="64886-102">确保适配器安全的最佳实践</span><span class="sxs-lookup"><span data-stu-id="64886-102">Best Practices for Securing Adapters</span></span>
 <span data-ttu-id="64886-103">本主题提供了适配器安全性最佳实践的列表。</span><span class="sxs-lookup"><span data-stu-id="64886-103">This topic provides a list of best practices for adapter security.</span></span>  

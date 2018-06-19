@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254357"
 ---
 # <a name="how-to-remove-a-reference-to-another-application"></a><span data-ttu-id="c7399-102">如何删除对另一应用程序的引用</span><span class="sxs-lookup"><span data-stu-id="c7399-102">How to Remove a Reference to Another Application</span></span>
 <span data-ttu-id="c7399-103">本主题介绍如何使用 BizTalk Server 管理控制台从一个应用程序删除对另一应用程序的引用。</span><span class="sxs-lookup"><span data-stu-id="c7399-103">This topic describes how to use the BizTalk Server Administration console to remove a reference from one application to another application.</span></span> <span data-ttu-id="c7399-104">如果不再需要在当前应用程序中使用在同一 BizTalk 组中的另一应用程序中存在的项目，就要删除引用。</span><span class="sxs-lookup"><span data-stu-id="c7399-104">You remove a reference when you no longer need to use an artifact in the current application that exists in another application in the same BizTalk group.</span></span> <span data-ttu-id="c7399-105">添加引用的详细信息，请参阅[如何添加对另一个应用程序的引用](../core/how-to-add-a-reference-to-another-application.md)。</span><span class="sxs-lookup"><span data-stu-id="c7399-105">For more information on adding references, see [How to Add a Reference to Another Application](../core/how-to-add-a-reference-to-another-application.md).</span></span>  

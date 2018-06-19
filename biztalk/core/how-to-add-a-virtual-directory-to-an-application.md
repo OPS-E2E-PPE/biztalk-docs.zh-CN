@@ -1,11 +1,11 @@
 ---
-title: "如何将虚拟目录添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将虚拟目录添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directories
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, virtual directories
 - virtual directories, applications
 ms.assetid: a5726696-bd65-49d9-8814-a078afe8c067
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248877"
 ---
 # <a name="how-to-add-a-virtual-directory-to-an-application"></a><span data-ttu-id="ecde8-102">如何向应用程序添加虚拟目录</span><span class="sxs-lookup"><span data-stu-id="ecde8-102">How to Add a Virtual Directory to an Application</span></span>
 <span data-ttu-id="ecde8-103">本主题介绍如何使用 BTSTask 命令行工具向 BizTalk 应用程序添加虚拟目录。</span><span class="sxs-lookup"><span data-stu-id="ecde8-103">This topic describes how to use the BTSTask command-line tool to add a virtual directory to a BizTalk application.</span></span> <span data-ttu-id="ecde8-104">此选项在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中不可用。</span><span class="sxs-lookup"><span data-stu-id="ecde8-104">This option is not available in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="ecde8-105">如果您编写了一个自定义 Web Services 或创建了一个用于与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 连接的 ASP.NET 网站，可能就需要添加虚拟目录，并且希望通过应用程序部署虚拟目录。</span><span class="sxs-lookup"><span data-stu-id="ecde8-105">You might want to add a virtual directory if you have written a custom Web service or created an ASP.NET Web site for interfacing with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and want to deploy the virtual directory with the application.</span></span>  

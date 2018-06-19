@@ -1,11 +1,11 @@
 ---
-title: "如何停止发送端口或发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何停止发送端口或发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], stopping
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - stopping, send port groups
 - send ports, stopping
 ms.assetid: a7a5eab3-34fe-4417-900a-c37ec16ec009
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255317"
 ---
 # <a name="how-to-stop-a-send-port-or-send-port-group"></a><span data-ttu-id="a6f11-102">如何停止发送端口或发送端口组</span><span class="sxs-lookup"><span data-stu-id="a6f11-102">How to Stop a Send Port or Send Port Group</span></span>
 <span data-ttu-id="a6f11-103">本主题将介绍如何使用 BizTalk Server 管理控制台停止发送端口或发送端口组。</span><span class="sxs-lookup"><span data-stu-id="a6f11-103">This topic describes how to use the BizTalk Server Administration console to stop a send port or send port group.</span></span> <span data-ttu-id="a6f11-104">停止发送端口或发送端口组时，它不再处理消息。</span><span class="sxs-lookup"><span data-stu-id="a6f11-104">When you stop a send port or send port group, it no longer processes messages.</span></span> <span data-ttu-id="a6f11-105">BizTalk Server 挂起所有发往已停止的发送端口或发送端口组的激活消息。</span><span class="sxs-lookup"><span data-stu-id="a6f11-105">BizTalk Server suspends all activation messages to a stopped send port or send port group.</span></span> <span data-ttu-id="a6f11-106">停止发送端口组不会影响其包含的任何发送端口的状态。</span><span class="sxs-lookup"><span data-stu-id="a6f11-106">Stopping a send port group does not affect the state of any send ports that it contains.</span></span>  

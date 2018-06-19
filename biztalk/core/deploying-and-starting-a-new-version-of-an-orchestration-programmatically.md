@@ -1,14 +1,14 @@
 ---
-title: "部署和以编程方式启动新版本的业务流程的 |Microsoft 文档"
-ms.custom: 
+title: 部署和以编程方式启动新版本的业务流程的 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f90025ec-3641-49ef-8918-88238d6ad420
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239021"
 ---
 # <a name="deploying-and-starting-a-new-version-of-an-orchestration-programmatically"></a><span data-ttu-id="ff8ff-102">部署和以编程方式启动的业务流程的新版本</span><span class="sxs-lookup"><span data-stu-id="ff8ff-102">Deploying and Starting a New Version of an Orchestration Programmatically</span></span>
 <span data-ttu-id="ff8ff-103">本主题中的代码说明如何快速部署和启动新版本的业务流程。</span><span class="sxs-lookup"><span data-stu-id="ff8ff-103">The code in this topic illustrates how to quickly deploy and start a new version of the orchestration.</span></span> <span data-ttu-id="ff8ff-104">由于手动操作会花几秒钟来执行，因此手动取消登记业务流程并随后启动新版本的业务流程将导致生成挂起或重复的消息。</span><span class="sxs-lookup"><span data-stu-id="ff8ff-104">Because manual operations can take a few seconds to perform, manually unenlisting an orchestration and then starting a new version of it can result in suspended or duplicate messages.</span></span> <span data-ttu-id="ff8ff-105">通过本主题中说明的编程方法，可以更快速地执行这些操作，从而减小生成挂起和重复消息的可能性；并且可作为单个事务来执行这些操作，以便其中一个操作失败时，这两个业务流程都保持开始时的相同状态。</span><span class="sxs-lookup"><span data-stu-id="ff8ff-105">The programmatic method illustrated in this topic allows you to perform these operations much more quickly – reducing the likelihood of suspended and duplicate messages – and as a single transaction, so that if one operation fails, both orchestrations are left in the same state as they were at the beginning.</span></span>  

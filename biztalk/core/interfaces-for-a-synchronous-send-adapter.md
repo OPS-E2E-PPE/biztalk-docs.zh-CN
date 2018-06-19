@@ -1,14 +1,14 @@
 ---
-title: "异步接口发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 异步接口发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e1b397a-3a35-4447-8522-d8a5f39a42d7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256909"
 ---
 # <a name="interfaces-for-a-synchronous-send-adapter"></a><span data-ttu-id="5e7f6-102">同步发送适配器的接口</span><span class="sxs-lookup"><span data-stu-id="5e7f6-102">Interfaces for a Synchronous Send Adapter</span></span>
 <span data-ttu-id="5e7f6-103">执行发送操作时，如果阻止了传入消息引擎调用线程，则适配器将会同步发送消息。</span><span class="sxs-lookup"><span data-stu-id="5e7f6-103">An adapter sends messages synchronously when it blocks the incoming Messaging Engine calling thread while performing its send operation.</span></span> <span data-ttu-id="5e7f6-104">为了能够同步发送消息，适配器需要实现以下接口：</span><span class="sxs-lookup"><span data-stu-id="5e7f6-104">To be able to send messages synchronously, an adapter needs to implement the following interfaces:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "常见组件开发人员任务 |Microsoft 文档"
-ms.custom: 
+title: 常见组件开发人员任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b74e258f-2b4f-4e2f-b068-680f7d9546e8
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232413"
 ---
 # <a name="common-component-developer-tasks"></a><span data-ttu-id="f6673-102">常见组件开发人员任务</span><span class="sxs-lookup"><span data-stu-id="f6673-102">Common Component Developer Tasks</span></span>
 <span data-ttu-id="f6673-103">组件开发人员负责设计和开发先进的 BizTalk Server 组件，这些组件以后将用于 BizTalk Server 解决方案中。</span><span class="sxs-lookup"><span data-stu-id="f6673-103">Component developers design and develop advanced BizTalk Server components that are later used in BizTalk Server solutions.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "用于管理 Certificates1 最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 用于管理 Certificates1 最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - best practices, certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - best practices, security
 - security, best practices
 ms.assetid: cd182df4-0fcd-409c-9221-89f92e069f07
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232085"
 ---
 # <a name="best-practices-for-managing-certificates"></a><span data-ttu-id="6075a-102">管理证书的最佳实践</span><span class="sxs-lookup"><span data-stu-id="6075a-102">Best Practices for Managing Certificates</span></span>
 <span data-ttu-id="6075a-103">本部分提供了在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中管理证书的最佳做法。</span><span class="sxs-lookup"><span data-stu-id="6075a-103">This section provides best practices for managing certificates in your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span>  

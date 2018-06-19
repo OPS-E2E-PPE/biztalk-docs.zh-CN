@@ -1,14 +1,14 @@
 ---
-title: "适配器如何处理大消息 |Microsoft 文档"
-ms.custom: 
+title: 适配器如何处理大消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c48671fd-b6cf-4507-92b4-35a4cd135714
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247013"
 ---
 # <a name="how-adapters-handle-large-messages"></a><span data-ttu-id="b0b9d-102">适配器如何处理大消息</span><span class="sxs-lookup"><span data-stu-id="b0b9d-102">How Adapters Handle Large Messages</span></span>
 <span data-ttu-id="b0b9d-103">BizTalk 消息引擎可以处理非常大的消息，对消息的最大大小没有限制。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-103">The BizTalk Messaging Engine can process very large messages and imposes no restriction on the maximum size of a message.</span></span> <span data-ttu-id="b0b9d-104">但是，您应该考虑限制消息的大小，以便优化性能和资源管理。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-104">However, you should consider limits to message size to maintain optimum performance and resource management.</span></span> <span data-ttu-id="b0b9d-105">随着消息的增大，每秒处理的消息数将相应减少。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-105">As message size increases the number of messages processed per second decreases.</span></span> <span data-ttu-id="b0b9d-106">当设计使用方案和计划容量时，请考虑 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将处理的消息的平均大小、类型和数量。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-106">Consider the average message size, message type, and number of messages being processed by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] when designing your scenario and planning for capacity.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="b0b9d-119">当适配器向引擎提交消息时，会将其数据流附加到 BizTalk 消息。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-119">When an adapter submits a message to the engine it should attach its data stream to the BizTalk message.</span></span> <span data-ttu-id="b0b9d-120">对于某些适配器，这意味着实现网络流。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-120">For some adapters this may mean implementing a network stream.</span></span> <span data-ttu-id="b0b9d-121">消息提交后，引擎执行接收管道。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-121">When the message is submitted, the engine executes the receive pipeline.</span></span> <span data-ttu-id="b0b9d-122">在管道执行期间，要更改数据的管道组件将克隆该消息，同时连接新消息流和上一个消息流。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-122">During pipeline execution, the pipeline components that want to change the data clone the message, wiring up the stream from the new message to the stream on the previous message.</span></span> <span data-ttu-id="b0b9d-123">管道执行完毕后，消息引擎从管道中取出消息，然后运行一个循环程序，读取该消息上的流。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-123">After the pipeline has been executed, the Messaging Engine takes a message out of the pipeline and executes a loop reading the stream on that message.</span></span> <span data-ttu-id="b0b9d-124">此读取流的操作调用对先前流的读取操作，后者又调用对更靠前流的读取操作，如此类推，直到调用网络流的读取操作。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-124">This reading of the stream invokes a read on the previous stream, which in turn invokes a read on the previous stream, and so on back to the network stream.</span></span> <span data-ttu-id="b0b9d-125">引擎定期刷新 MessageBox 的数据，以维护平面内存模型。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-125">The engine periodically flushes the data to the MessageBox to maintain a flat memory model.</span></span>  
   
- <span data-ttu-id="b0b9d-126">**故障排除提示：**在发送端，该适配器是负责读取流。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-126">**Troubleshooting Tip:** On the send side, the adapter is responsible for reading the stream.</span></span> <span data-ttu-id="b0b9d-127">如果发送适配器要读取发送管道中任何升级或写入的消息上下文属性，则要等到整个流都读取以后，才可以写入这些属性。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-127">If the send adapter wants to read any message context properties that are promoted or written in the send pipeline, these properties may not be written until the entire stream is read.</span></span> <span data-ttu-id="b0b9d-128">仅当完全读取该流以后，适配器才能确定所有管道组件都已经执行完毕。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-128">Only when the stream has been completely read can the adapter be sure that all of the pipeline components have finished executing.</span></span>  
+ <span data-ttu-id="b0b9d-126">**故障排除提示：** 在发送端，该适配器是负责读取流。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-126">**Troubleshooting Tip:** On the send side, the adapter is responsible for reading the stream.</span></span> <span data-ttu-id="b0b9d-127">如果发送适配器要读取发送管道中任何升级或写入的消息上下文属性，则要等到整个流都读取以后，才可以写入这些属性。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-127">If the send adapter wants to read any message context properties that are promoted or written in the send pipeline, these properties may not be written until the entire stream is read.</span></span> <span data-ttu-id="b0b9d-128">仅当完全读取该流以后，适配器才能确定所有管道组件都已经执行完毕。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-128">Only when the stream has been completely read can the adapter be sure that all of the pipeline components have finished executing.</span></span>  
   
 ## <a name="locating-a-specific-byte-in-the-stream"></a><span data-ttu-id="b0b9d-129">在流中定位特定字节</span><span class="sxs-lookup"><span data-stu-id="b0b9d-129">Locating a Specific Byte in the Stream</span></span>  
  <span data-ttu-id="b0b9d-130">在几种情况下适配器可能需要将流返回到开始处，以便处理需要挂起的失败的消息。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-130">There are scenarios in which an adapter may need to locate the stream back to the beginning to handle failed messages that need to be suspended.</span></span> <span data-ttu-id="b0b9d-131">例如，一种 HTTP 适配器就属于这种情况，这种适配器接收使用 Chunked 编码以“要求响应对”形式提交响应消息的数据。</span><span class="sxs-lookup"><span data-stu-id="b0b9d-131">An example of this is an HTTP adapter that is receiving data using chunked encoding to submit the response message in a solicit-response pair.</span></span>  

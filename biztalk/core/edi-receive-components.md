@@ -1,14 +1,14 @@
 ---
-title: "EDI 接收组件 |Microsoft 文档"
-ms.custom: 
+title: EDI 接收组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d3b82e8-1168-4c2c-bf1a-886b43ff8108
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241693"
 ---
 # <a name="edi-receive-components"></a><span data-ttu-id="a9fce-102">EDI 接收组件</span><span class="sxs-lookup"><span data-stu-id="a9fce-102">EDI Receive Components</span></span>
 <span data-ttu-id="a9fce-103">本主题中介绍的管道和管道组件用于处理不是 EDI/AS2 消息的 EDI 消息。</span><span class="sxs-lookup"><span data-stu-id="a9fce-103">The pipeline and pipeline components described in this topic process EDI messages that are not EDI/AS2 messages.</span></span> <span data-ttu-id="a9fce-104">有关处理收到的 EDI/AS2 或非 EDI/AS2 消息的信息，请参阅[AS2 接收组件](../core/as2-receive-components.md)。</span><span class="sxs-lookup"><span data-stu-id="a9fce-104">For information about the processing of received EDI/AS2 or non-EDI/AS2 messages, see [AS2 Receive Components](../core/as2-receive-components.md).</span></span> <span data-ttu-id="a9fce-105">请注意，除 AS2 处理以外，AS2 接收组件还执行 EDI 处理。</span><span class="sxs-lookup"><span data-stu-id="a9fce-105">Note that AS2 receive components perform EDI processing in addition to AS2 processing.</span></span>  

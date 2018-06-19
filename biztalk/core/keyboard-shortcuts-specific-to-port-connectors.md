@@ -1,17 +1,17 @@
 ---
-title: "键盘快捷方式所特有的端口连接器 |Microsoft 文档"
-ms.custom: 
+title: 键盘快捷方式所特有的端口连接器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: 140d156f-b294-47ad-9b7c-931a31959d31
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261853"
 ---
 # <a name="keyboard-shortcuts-specific-to-port-connectors"></a><span data-ttu-id="1f146-102">键盘快捷方式特定于端口连接器</span><span class="sxs-lookup"><span data-stu-id="1f146-102">Keyboard Shortcuts Specific to Port Connectors</span></span>
 <span data-ttu-id="1f146-103">以下键盘快捷键专供端口连接线使用：</span><span class="sxs-lookup"><span data-stu-id="1f146-103">The following keyboard shortcuts are specific to Port Connectors.</span></span>  

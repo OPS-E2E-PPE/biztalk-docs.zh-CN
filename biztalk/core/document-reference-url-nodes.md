@@ -1,18 +1,18 @@
 ---
-title: "文档引用 URL 节点 |Microsoft 文档"
-ms.custom: 
+title: 文档引用 URL 节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Document Reference URL nodes [Tracking Profile Editor]
 - Tracking Profile Editor, node descriptions
 - definition files [BAM], related documents
 ms.assetid: 38c8ae50-ed56-451c-9549-db852d4770e5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238965"
 ---
 # <a name="document-reference-url-nodes"></a><span data-ttu-id="b6cae-102">文档引用 URL 节点</span><span class="sxs-lookup"><span data-stu-id="b6cae-102">Document Reference URL Nodes</span></span>
 <span data-ttu-id="b6cae-103">文档引用 URL 节点位于开发人员从知识工作者创建的观察模型导入的活动定义文件中。</span><span class="sxs-lookup"><span data-stu-id="b6cae-103">Document Reference URL nodes exist in the activity definition file that the developer imports from the knowledge worker created observation model.</span></span> <span data-ttu-id="b6cae-104">文档引用 URL 节点包含一个位置的引用，该位置包含与此活动相关的文档。</span><span class="sxs-lookup"><span data-stu-id="b6cae-104">Document Reference URL nodes contain references to a location that contains a document that is related to this activity.</span></span> <span data-ttu-id="b6cae-105">该文档可以是任何类型的文档，例如，对于表示采购订单审批工作流的活动，文档引用 URL 可能指向底层采购订单文档。</span><span class="sxs-lookup"><span data-stu-id="b6cae-105">This can be any type of document, for example an activity that represents a purchase order approval work flow, the Document Reference URL might point to the underlying purchase order document.</span></span>  

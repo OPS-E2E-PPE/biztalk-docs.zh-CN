@@ -1,14 +1,14 @@
 ---
-title: "冲突的绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 冲突的绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b08c317e-a617-464b-9ee4-007fb41d99b2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233237"
 ---
 # <a name="conflicting-binding-properties"></a><span data-ttu-id="d75d7-102">绑定属性冲突</span><span class="sxs-lookup"><span data-stu-id="d75d7-102">Conflicting binding properties</span></span>
 ## <a name="details"></a><span data-ttu-id="d75d7-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d75d7-103">Details</span></span>  

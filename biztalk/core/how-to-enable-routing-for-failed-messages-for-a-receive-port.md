@@ -1,11 +1,11 @@
 ---
-title: "如何允许路由失败的消息接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何允许路由失败的消息接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive ports, routing
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - routing, failed messages
 - errors, receive ports
 ms.assetid: 22366664-545d-4981-9bde-4df48b115002
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254085"
 ---
 # <a name="how-to-enable-routing-for-failed-messages-for-a-receive-port"></a><span data-ttu-id="796fb-102">如何为接收端口启用失败消息路由功能</span><span class="sxs-lookup"><span data-stu-id="796fb-102">How to Enable Routing for Failed Messages for a Receive Port</span></span>
 <span data-ttu-id="796fb-103">本主题将介绍如何使用 BizTalk Server 管理控制台为接收端口所处理的消息启用路由功能。</span><span class="sxs-lookup"><span data-stu-id="796fb-103">This topic describes how to use the BizTalk Server Administration console to enable routing for the messages processed by a receive port.</span></span> <span data-ttu-id="796fb-104">启用此选项后，BizTalk Server 将尝试把处理失败的所有消息路由至某个订阅应用程序（例如另一个接收端口或业务流程计划）。</span><span class="sxs-lookup"><span data-stu-id="796fb-104">When you enable this option, BizTalk Server will attempt to route any message that fails processing to a subscribing application (such as another receive port or orchestration schedule).</span></span> <span data-ttu-id="796fb-105">禁用此选项（默认情况）时，BizTalk Server 将挂起失败的消息并生成一个否定确认 (NACK)。</span><span class="sxs-lookup"><span data-stu-id="796fb-105">When this option is not enabled (the default), BizTalk Server suspends failed messages and generates a negative acknowledgment (NACK).</span></span> <span data-ttu-id="796fb-106">有关管理失败的消息的背景信息，请参阅[使用失败消息路由](../core/using-failed-message-routing.md)。</span><span class="sxs-lookup"><span data-stu-id="796fb-106">For background information about managing failed messages, see [Using Failed Message Routing](../core/using-failed-message-routing.md).</span></span>  

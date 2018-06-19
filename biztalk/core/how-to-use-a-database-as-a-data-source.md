@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255709"
 ---
 # <a name="how-to-use-a-database-as-a-data-source"></a><span data-ttu-id="835b5-102">如何将数据库用作数据源</span><span class="sxs-lookup"><span data-stu-id="835b5-102">How to Use a Database as a Data Source</span></span>
 <span data-ttu-id="835b5-103">您可以指定数据库作为数据源。</span><span class="sxs-lookup"><span data-stu-id="835b5-103">You can specify a database as a data source.</span></span> <span data-ttu-id="835b5-104">随后，您可从该数据库中选择表或表列，并将其拖至词汇定义或规则上以用作事实。</span><span class="sxs-lookup"><span data-stu-id="835b5-104">You can subsequently select a table or table column from the database, and drag it onto a vocabulary definition or rule to use as a fact.</span></span>  

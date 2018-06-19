@@ -1,11 +1,11 @@
 ---
-title: "消息属性视图 |Microsoft 文档"
-ms.custom: 
+title: 消息属性视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, message schemas
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Messaging Property view
 - message schemas, XML messages
 ms.assetid: 80d040e9-d58b-41d1-b26d-19aff4d3126b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262893"
 ---
 # <a name="messaging-property-view"></a><span data-ttu-id="e1dac-102">“消息传送属性”视图</span><span class="sxs-lookup"><span data-stu-id="e1dac-102">Messaging Property View</span></span>
 <span data-ttu-id="e1dac-103">“消息传送属性”视图显示与该属性相关联的 XML 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="e1dac-103">The Messaging Property view displays the schema of the XML message associated with the property.</span></span> <span data-ttu-id="e1dac-104">可以从“业务流程调度”视图中的某些形状的快捷菜单访问此视图。</span><span class="sxs-lookup"><span data-stu-id="e1dac-104">The view is available from the shortcut menu for some of the shapes in the Orchestration Schedule view.</span></span>  

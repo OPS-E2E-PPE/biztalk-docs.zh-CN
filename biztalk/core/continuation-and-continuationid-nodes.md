@@ -1,11 +1,11 @@
 ---
-title: "延续任务，并 ContinuationID 节点 |Microsoft 文档"
-ms.custom: 
+title: 延续任务，并 ContinuationID 节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - continuation tokens
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - activities, continuation tokens
 - ContinuationID nodes [Tracking Profile Editor]
 ms.assetid: aa050660-66f7-4084-b6bf-b9319ce625af
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238085"
 ---
 # <a name="continuation-and-continuationid-nodes"></a><span data-ttu-id="8b019-102">继续符和 ContinuationID 节点</span><span class="sxs-lookup"><span data-stu-id="8b019-102">Continuation and ContinuationID Nodes</span></span>
 <span data-ttu-id="8b019-103">继续符为 BAM 基础结构提供有关以下信息的指导：</span><span class="sxs-lookup"><span data-stu-id="8b019-103">Continuations provide guidance to the BAM infrastructure about the following information:</span></span>  

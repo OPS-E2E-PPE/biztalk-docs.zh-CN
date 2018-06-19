@@ -1,14 +1,14 @@
 ---
-title: "配置确认 (Mdn) (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置确认 (Mdn) (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb2bf98a-deb4-460f-a1fc-3d2397c39470
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234101"
 ---
 # <a name="configuring-acknowledgements-mdns-as2"></a><span data-ttu-id="fa4d5-102">配置确认 (MDN) (AS2)</span><span class="sxs-lookup"><span data-stu-id="fa4d5-102">Configuring Acknowledgements (MDNs) (AS2)</span></span>
 <span data-ttu-id="fa4d5-103">在合作伙伴协议中，您可以指定接收 AS2 消息的参与方生成 MDN 响应并将其发回的方式。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-103">In the partner agreement, you can specify how the party receiving the AS2 message generates an MDN response and sends it to back.</span></span>  
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE] 
         > <span data-ttu-id="fa4d5-121">**从开始[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]和更高版本**，SHA2 支持将自动包含。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-121">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] and newer versions**, SHA2 support is automatically included.</span></span> <span data-ttu-id="fa4d5-122">有关以前[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]版本，请参阅[KB 3123748](https://support.microsoft.com/kb/3123748)。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-122">For previous [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] versions, see [KB 3123748](https://support.microsoft.com/kb/3123748).</span></span>
   
-    2.  <span data-ttu-id="fa4d5-123">选择**请求异步 MDN**复选框，然后在**回执送达选项 (URL)**文本框中，输入接收方应发送到 MDN 的 URL。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-123">Select the **Request asynchronous MDN** check box and then in the **Receipt-Delivery-Option (URL)** text box, enter the URL that the receiving party should send the MDN to.</span></span>  
+    2.  <span data-ttu-id="fa4d5-123">选择**请求异步 MDN**复选框，然后在**回执送达选项 (URL)** 文本框中，输入接收方应发送到 MDN 的 URL。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-123">Select the **Request asynchronous MDN** check box and then in the **Receipt-Delivery-Option (URL)** text box, enter the URL that the receiving party should send the MDN to.</span></span>  
   
          <span data-ttu-id="fa4d5-124">如果**请求异步 MDN**选择复选框后，你还可以设置以下属性：</span><span class="sxs-lookup"><span data-stu-id="fa4d5-124">If the **Request asynchronous MDN** check box is selected, you can also set the following properties:</span></span>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
         2.  <span data-ttu-id="fa4d5-129">如果**重新发送 AS2 消息如果未收到 MDN**选中复选框，则检查**替代发送端口设置**指定**最小 HTTP 重试间隔**和**HTTP 重试尝试次数**。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-129">If **Resend AS2 message if MDN not received** check box is selected, check **Override send port settings** to specify the **Minimum HTTP retry interval** and **Number of HTTP retry attempts**.</span></span> <span data-ttu-id="fa4d5-130">输入一个值**后重试停止尝试 HTTP**字段来指定最长时间使用 HTTP 适配器重试。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-130">Enter a value for the **Stop attempting HTTP retries after** field to specify the maximum amount of time to attempt retries using the HTTP adapter.</span></span>  
   
-    3.  <span data-ttu-id="fa4d5-131">如果你选择**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)**属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-131">If you selected the **Request asynchronous MDN** check box and specified a URL for **Receipt-Delivery-Option (URL)** property, the **Disposition-Notification-To** text box, is by default set to the same URL.</span></span> <span data-ttu-id="fa4d5-132">如果你未选择**请求异步 MDN**复选框，你必须输入一个值**处置-到通知**。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-132">If you did not select the **Request asynchronous MDN** check box, you must enter a value for **Disposition-Notification-To**.</span></span> <span data-ttu-id="fa4d5-133">此字段中的值不会在 AS2 处理中使用。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-133">The value of this field is not used during AS2 processing.</span></span>  
+    3.  <span data-ttu-id="fa4d5-131">如果你选择**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)** 属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-131">If you selected the **Request asynchronous MDN** check box and specified a URL for **Receipt-Delivery-Option (URL)** property, the **Disposition-Notification-To** text box, is by default set to the same URL.</span></span> <span data-ttu-id="fa4d5-132">如果你未选择**请求异步 MDN**复选框，你必须输入一个值**处置-到通知**。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-132">If you did not select the **Request asynchronous MDN** check box, you must enter a value for **Disposition-Notification-To**.</span></span> <span data-ttu-id="fa4d5-133">此字段中的值不会在 AS2 处理中使用。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-133">The value of this field is not used during AS2 processing.</span></span>  
   
 5.  <span data-ttu-id="fa4d5-134">单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。</span><span class="sxs-lookup"><span data-stu-id="fa4d5-134">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
   

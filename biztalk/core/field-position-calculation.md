@@ -1,14 +1,14 @@
 ---
-title: "字段位置计算 |Microsoft 文档"
-ms.custom: 
+title: 字段位置计算 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e315f09-f2c9-49cc-8d2f-0f4f2d48fd45
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246069"
 ---
 # <a name="field-position-calculation"></a><span data-ttu-id="51474-102">字段位置计算</span><span class="sxs-lookup"><span data-stu-id="51474-102">Field Position Calculation</span></span>
 
@@ -32,4 +33,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a><span data-ttu-id="51474-109">另请参阅</span><span class="sxs-lookup"><span data-stu-id="51474-109">See Also</span></span>  
 -  [<span data-ttu-id="51474-110">位置记录注意事项</span><span class="sxs-lookup"><span data-stu-id="51474-110">Positional Record Considerations</span></span>](../core/positional-record-considerations.md)   
--  <span data-ttu-id="51474-111">**位置的长度 （的平面文件架构的节点属性）**和**位置偏移量 （的平面文件架构的节点属性）**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="51474-111">**Positional Length (Node Property of Flat File Schemas)** and **Positional Offset (Node Property of Flat File Schemas)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>
+-  <span data-ttu-id="51474-111">**位置的长度 （的平面文件架构的节点属性）** 和**位置偏移量 （的平面文件架构的节点属性）**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="51474-111">**Positional Length (Node Property of Flat File Schemas)** and **Positional Offset (Node Property of Flat File Schemas)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

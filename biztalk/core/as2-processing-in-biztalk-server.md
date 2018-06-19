@@ -1,14 +1,14 @@
 ---
-title: "AS2 在 BizTalk Server 中的处理 |Microsoft 文档"
-ms.custom: 
+title: AS2 在 BizTalk Server 中的处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0027d3db-24a5-459d-9f4e-a75f49d31d82
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233733"
 ---
 # <a name="as2-processing-in-biztalk-server"></a><span data-ttu-id="004a1-102">BizTalk Server 中的 AS2 处理</span><span class="sxs-lookup"><span data-stu-id="004a1-102">AS2 Processing in BizTalk Server</span></span>
 <span data-ttu-id="004a1-103">本主题概述了 AS2 消息的接收端和发送端处理过程以及贸易合作伙伴协议将如何帮助您实现 AS2 消息传送。</span><span class="sxs-lookup"><span data-stu-id="004a1-103">This topic provides an overview of receive-side and send-side processing of AS2 messages, and how trading partner agreements can help achieve AS2 messaging.</span></span>  

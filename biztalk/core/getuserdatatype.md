@@ -1,14 +1,14 @@
 ---
-title: "GetUserDataType |Microsoft 文档"
-ms.custom: 
+title: GetUserDataType |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b0605919-a733-4a9d-a725-109346db11a2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246461"
 ---
 # <a name="getuserdatatype"></a><span data-ttu-id="17576-102">GetUserDataType</span><span class="sxs-lookup"><span data-stu-id="17576-102">GetUserDataType</span></span>
 <span data-ttu-id="17576-103">将当前用户数据类型的名称推送到堆栈上。</span><span class="sxs-lookup"><span data-stu-id="17576-103">Pushes the name of the current user data type onto the stack.</span></span>  

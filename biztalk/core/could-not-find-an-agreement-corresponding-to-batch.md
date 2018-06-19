@@ -1,14 +1,14 @@
 ---
-title: "找不到对应于批处理协议 |Microsoft 文档"
-ms.custom: 
+title: 找不到对应于批处理协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4d1c0480-9a6f-481a-9143-e5a55707c3b5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237925"
 ---
 # <a name="could-not-find-an-agreement-corresponding-to-batch"></a><span data-ttu-id="0bf19-102">找不到对应于批的协议</span><span class="sxs-lookup"><span data-stu-id="0bf19-102">Could not find an Agreement corresponding to batch</span></span>
 ## <a name="details"></a><span data-ttu-id="0bf19-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0bf19-103">Details</span></span>  

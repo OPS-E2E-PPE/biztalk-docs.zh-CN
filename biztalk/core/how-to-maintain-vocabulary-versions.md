@@ -1,11 +1,11 @@
 ---
-title: "如何维护词汇版本 |Microsoft 文档"
-ms.custom: 
+title: 如何维护词汇版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - updating, vocabularies
 - vocabularies, updating
 ms.assetid: 43593c6f-4590-4940-ac17-4015928e5838
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254365"
 ---
 # <a name="how-to-maintain-vocabulary-versions"></a><span data-ttu-id="b45da-102">如何维护词汇版本</span><span class="sxs-lookup"><span data-stu-id="b45da-102">How to Maintain Vocabulary Versions</span></span>
 <span data-ttu-id="b45da-103">在向某个版本的词汇中添加了词汇定义之后，可以将该版本保存到规则存储中以用于以后的开发，也可以发布该版本以创建明确定义的不可变数据绑定术语集，用户在开发策略时，可以向规则中添加这些数据绑定术语。</span><span class="sxs-lookup"><span data-stu-id="b45da-103">When you have added vocabulary definitions to a version of your vocabulary, you can save the version to the rule store for further development, or you can publish the version to create a well-defined, immutable set of data-bound terms that are available to users to add to rules as they develop their policies.</span></span> <span data-ttu-id="b45da-104">请注意，现有规则将仍指向旧版本。</span><span class="sxs-lookup"><span data-stu-id="b45da-104">Note that fact that existing rules will still point to the old versions.</span></span>  

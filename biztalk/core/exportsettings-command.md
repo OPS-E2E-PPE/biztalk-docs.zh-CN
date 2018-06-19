@@ -1,14 +1,14 @@
 ---
-title: "ExportSettings 命令 |Microsoft 文档"
-ms.custom: 
+title: ExportSettings 命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa34dab1-c854-473e-a693-43ba45624e16
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245941"
 ---
 # <a name="exportsettings-command"></a><span data-ttu-id="2a2f3-102">ExportSettings 命令</span><span class="sxs-lookup"><span data-stu-id="2a2f3-102">ExportSettings Command</span></span>
 <span data-ttu-id="2a2f3-103">使用 ExportSettings 命令可以将 BizTalk Server 配置数据库中的 BizTalk Server 设置导出到 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="2a2f3-103">The ExportSettings command nables you to export the BizTalk Server settings from a BizTalk Server configuration database to an XML file.</span></span> <span data-ttu-id="2a2f3-104">你可以然后导入这些设置另一个环境中所述[如何导入 BizTalk 设置使用设置仪表板](../core/how-to-import-biztalk-settings-using-settings-dashboard.md)或[如何导入 BizTalk 设置使用 BTSTask](../core/how-to-import-biztalk-settings-using-btstask.md)。</span><span class="sxs-lookup"><span data-stu-id="2a2f3-104">You can then import these settings in another environment as described in [How to Import BizTalk Settings Using Settings Dashboard](../core/how-to-import-biztalk-settings-using-settings-dashboard.md) or [How to Import BizTalk Settings Using BTSTask](../core/how-to-import-biztalk-settings-using-btstask.md).</span></span>  

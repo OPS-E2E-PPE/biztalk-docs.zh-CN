@@ -1,11 +1,11 @@
 ---
-title: "如何将应用并删除跟踪配置文件 |Microsoft 文档"
-ms.custom: 
+title: 如何将应用并删除跟踪配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, tracking profiles
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tracking profiles, deleting
 - testing, tracking profiles
 ms.assetid: 77cef14b-c390-4da7-a383-b3abe414a168
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248293"
 ---
 # <a name="how-to-apply-and-remove-a-tracking-profile"></a><span data-ttu-id="1b4f3-102">如何应用和删除跟踪配置文件</span><span class="sxs-lookup"><span data-stu-id="1b4f3-102">How to Apply and Remove a Tracking Profile</span></span>
 <span data-ttu-id="1b4f3-103">创建或修改完跟踪配置文件后，下一步是将其应用到测试数据库并通过集成测试来验证结果。</span><span class="sxs-lookup"><span data-stu-id="1b4f3-103">Once you have created or modified the tracking profile, the next step is to apply it to a test database and verify the result through integration testing.</span></span> <span data-ttu-id="1b4f3-104">可以从跟踪配置文件编辑器 (TPE) 自身内应用跟踪配置文件，也可以使用命令行来应用跟踪配置文件。</span><span class="sxs-lookup"><span data-stu-id="1b4f3-104">You can apply the tracking profile from within Tracking Profile Editor (TPE) itself or by using the command line.</span></span>  

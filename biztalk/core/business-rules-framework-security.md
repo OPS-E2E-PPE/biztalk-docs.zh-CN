@@ -1,11 +1,11 @@
 ---
-title: "业务规则 Framework 安全性 |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Framework 安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, code samples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, artifacts
 - business rules, security
 ms.assetid: 86582d3a-259e-47f2-9f72-8dbbe0051503
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232685"
 ---
 # <a name="business-rules-framework-security"></a><span data-ttu-id="1e21d-102">业务规则框架安全性</span><span class="sxs-lookup"><span data-stu-id="1e21d-102">Business Rules Framework Security</span></span>
 <span data-ttu-id="1e21d-103">业务规则引擎在宿主应用程序的安全上下文中运行。</span><span class="sxs-lookup"><span data-stu-id="1e21d-103">The Business Rule Engine operates in the security context of the hosting application.</span></span> <span data-ttu-id="1e21d-104">在执行期间的规则引擎实例的标识是，线程上下文调用**Policy.Execute**方法。</span><span class="sxs-lookup"><span data-stu-id="1e21d-104">The identity of the rule engine instance during execution is that of the thread context that invokes the **Policy.Execute** method.</span></span>  

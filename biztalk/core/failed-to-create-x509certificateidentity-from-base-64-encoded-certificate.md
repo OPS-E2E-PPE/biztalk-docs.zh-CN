@@ -1,14 +1,14 @@
 ---
-title: "未能从 base 64 编码的证书创建 X509CertificateIdentity |Microsoft 文档"
-ms.custom: 
+title: 未能从 base 64 编码的证书创建 X509CertificateIdentity |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a13112bd-e0e8-4b49-ad2f-ea82b2e8162f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246301"
 ---
 # <a name="failed-to-create-x509certificateidentity-from-base-64-encoded-certificate"></a><span data-ttu-id="e1d77-102">从 base64 编码的证书创建 X509CertificateIdentity 失败</span><span class="sxs-lookup"><span data-stu-id="e1d77-102">Failed to create X509CertificateIdentity from base-64 encoded certificate</span></span>
 ## <a name="details"></a><span data-ttu-id="e1d77-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e1d77-103">Details</span></span>  

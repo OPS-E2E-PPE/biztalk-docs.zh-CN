@@ -1,11 +1,11 @@
 ---
-title: "组件接口用户定义的方法 |Microsoft 文档"
-ms.custom: 
+title: 组件接口用户定义的方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - component interfaces, user-defined methods
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - samples, custom methods
 - component interfaces, limitations for custom CI
 ms.assetid: e4b15889-35ff-44aa-819d-eade9690bdd6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233829"
 ---
 # <a name="component-interface-user-defined-methods"></a><span data-ttu-id="be7d5-102">组件接口用户定义的方法</span><span class="sxs-lookup"><span data-stu-id="be7d5-102">Component Interface User-Defined Methods</span></span>
 <span data-ttu-id="be7d5-103">用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器在组件接口中支持用户定义的方法。</span><span class="sxs-lookup"><span data-stu-id="be7d5-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise supports user-defined methods in component interfaces.</span></span> <span data-ttu-id="be7d5-104">签名形式如下：</span><span class="sxs-lookup"><span data-stu-id="be7d5-104">The signatures are of the form:</span></span>  

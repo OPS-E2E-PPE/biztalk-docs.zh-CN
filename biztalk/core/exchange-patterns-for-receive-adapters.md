@@ -1,14 +1,14 @@
 ---
-title: "交换模式接收适配器 |Microsoft 文档"
-ms.custom: 
+title: 交换模式接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e505559e-66be-4c32-a2a8-a242cba10000
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246293"
 ---
 # <a name="exchange-patterns-for-receive-adapters"></a><span data-ttu-id="1d2a3-102">接收适配器的交换模式</span><span class="sxs-lookup"><span data-stu-id="1d2a3-102">Exchange Patterns for Receive Adapters</span></span>
 <span data-ttu-id="1d2a3-103">接收适配器从“线路”(wire) 接收数据并以消息的形式将其提交到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="1d2a3-103">Receive adapters receive data from the "wire" and submit it as a message into [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="1d2a3-104">这一提交过程可以是单向的消息交换模式，也可以是双向的交换模式。</span><span class="sxs-lookup"><span data-stu-id="1d2a3-104">This submittal process can be a one-way or a two-way message exchange pattern.</span></span>  

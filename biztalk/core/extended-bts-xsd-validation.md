@@ -1,14 +1,14 @@
 ---
-title: "扩展 (BTS XSD) 验证 |Microsoft 文档"
-ms.custom: 
+title: 扩展 (BTS XSD) 验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f225115d-8890-4149-8e46-d1bc8af17e62
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245949"
 ---
 # <a name="extended-bts-xsd-validation"></a><span data-ttu-id="a90ff-102">扩展 (BTS-XSD) 验证</span><span class="sxs-lookup"><span data-stu-id="a90ff-102">Extended (BTS-XSD) Validation</span></span>
 <span data-ttu-id="a90ff-103">仅当在使用其数据类型不为 EDI 数据类型的元素对架构进行了自定义的情况下，EDI 接收管道和 EDI 发送管道才会执行扩展验证。</span><span class="sxs-lookup"><span data-stu-id="a90ff-103">The EDI receive pipeline and EDI send pipeline perform extended validation only if the schema has been customized with elements whose data type is not an EDI data type.</span></span> <span data-ttu-id="a90ff-104">EDI 验证，以便将受扩展验证将不验证这些添加的元素。</span><span class="sxs-lookup"><span data-stu-id="a90ff-104">These added elements would not be validated by EDI validation, so will be covered by extended validation.</span></span> <span data-ttu-id="a90ff-105">扩展验证使用 `System.Xml.XmlValidatingReader` 并且包括可以在标准 XSD 中定义的所有检查。</span><span class="sxs-lookup"><span data-stu-id="a90ff-105">Extended validation uses `System.Xml.XmlValidatingReader` and includes all checks that can be defined in a standard XSD.</span></span>  

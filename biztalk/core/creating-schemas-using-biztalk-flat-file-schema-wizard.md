@@ -1,14 +1,14 @@
 ---
-title: "创建架构使用 BizTalk 平面文件架构向导 |Microsoft 文档"
-ms.custom: 
+title: 创建架构使用 BizTalk 平面文件架构向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 28d35722-70a5-48fe-a667-0edc952e43a9
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238125"
 ---
 # <a name="creating-schemas-using-biztalk-flat-file-schema-wizard"></a><span data-ttu-id="43943-102">使用“BizTalk 平面文件架构向导”创建架构</span><span class="sxs-lookup"><span data-stu-id="43943-102">Creating Schemas Using BizTalk Flat File Schema Wizard</span></span>
 <span data-ttu-id="43943-103">“BizTalk 平面文件架构向导”是为简化平面文件架构的创建过程而设计的，它提供了以下功能：</span><span class="sxs-lookup"><span data-stu-id="43943-103">The BizTalk Flat File Schema Wizard is designed to simplify the process of creating flat file schemas by providing the following:</span></span>  

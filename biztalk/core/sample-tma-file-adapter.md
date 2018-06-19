@@ -1,11 +1,11 @@
 ---
-title: "示例 TMA： 文件适配器 |Microsoft 文档"
-ms.custom: 
+title: 示例 TMA： 文件适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - examples, File adapters
 - security examples [TMA], File adapters
 ms.assetid: bcb862c0-fe02-4335-8b59-242d28049e3f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271885"
 ---
 # <a name="sample-tma-file-adapter"></a><span data-ttu-id="e6b2f-102">示例 TMA： 文件适配器</span><span class="sxs-lookup"><span data-stu-id="e6b2f-102">Sample TMA: File Adapter</span></span>
 <span data-ttu-id="e6b2f-103">本主题对示例结构的文件适配器方案进行威胁模型分析 (TMA)。</span><span class="sxs-lookup"><span data-stu-id="e6b2f-103">This topic presents the threat model analysis (TMA) for the File adapter scenario for the sample architecture.</span></span> <span data-ttu-id="e6b2f-104">下图显示了文件适配器方案的示例结构：</span><span class="sxs-lookup"><span data-stu-id="e6b2f-104">The following figure shows the sample architecture for the File adapter scenario.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-2-create-and-analyze-the-threat-model-file-adapter-scenario"></a><span data-ttu-id="e6b2f-123">步骤 2.</span><span class="sxs-lookup"><span data-stu-id="e6b2f-123">Step 2.</span></span> <span data-ttu-id="e6b2f-124">创建和分析的威胁模型 （文件适配器方案）</span><span class="sxs-lookup"><span data-stu-id="e6b2f-124">Create and Analyze the Threat Model (File Adapter Scenario)</span></span>  
  <span data-ttu-id="e6b2f-125">本部分提供了我们的示例体系结构的文件适配器方案未 TMA 的结果。</span><span class="sxs-lookup"><span data-stu-id="e6b2f-125">This section provides the results of the TMA we did for the File adapter scenario for the sample architecture.</span></span>  
   
--   <span data-ttu-id="e6b2f-126">**标识入口点、 信任边界和数据的流-**请参阅"收集背景信息的文件适配器方案"和"对于所有方案的背景信息。"中前面所述的背景信息</span><span class="sxs-lookup"><span data-stu-id="e6b2f-126">**Identify Entry Points, Trust Boundaries, and Flow of Data -** See background information described earlier in "Collect Background Information for File Adapter Scenario" and "Background Information for all Scenarios."</span></span>  
+-   <span data-ttu-id="e6b2f-126">**标识入口点、 信任边界和数据的流-** 请参阅"收集背景信息的文件适配器方案"和"对于所有方案的背景信息。"中前面所述的背景信息</span><span class="sxs-lookup"><span data-stu-id="e6b2f-126">**Identify Entry Points, Trust Boundaries, and Flow of Data -** See background information described earlier in "Collect Background Information for File Adapter Scenario" and "Background Information for all Scenarios."</span></span>  
   
 -   <span data-ttu-id="e6b2f-127">**创建标识的威胁的列表**我们使用以下分类 DFD 中的所有条目来识别潜在威胁的方案： **S**哄骗标识， **T**篡改数据， **R**epudiation，**我**璝泄露**D**的服务，用以和**E**提升特权。</span><span class="sxs-lookup"><span data-stu-id="e6b2f-127">**Create a List of the Identified Threats -** We used the following categorization for all entries in the DFD to identify potential threats to the scenario: **S**poofing identify, **T**ampering with data, **R**epudiation, **I**nformation disclosure, **D**enial of service, and **E**levation of privileges.</span></span> <span data-ttu-id="e6b2f-128">下表列出了当你使用文件适配器发送和接收消息与 BizTalk Server 我们标识的威胁。</span><span class="sxs-lookup"><span data-stu-id="e6b2f-128">The following table lists the threats we identified when you use the File adapter to send and receive messages to and from BizTalk Server.</span></span>  
   

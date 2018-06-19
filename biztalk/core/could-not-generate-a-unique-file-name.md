@@ -1,14 +1,14 @@
 ---
-title: "无法生成唯一的文件名 |Microsoft 文档"
-ms.custom: 
+title: 无法生成唯一的文件名 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f0ad4fab-66c8-4475-a345-580ff8a4bb10
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237757"
 ---
 # <a name="could-not-generate-a-unique-file-name"></a><span data-ttu-id="84f98-102">无法生成唯一的文件名</span><span class="sxs-lookup"><span data-stu-id="84f98-102">Could not generate a unique file name</span></span>
 ## <a name="details"></a><span data-ttu-id="84f98-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="84f98-103">Details</span></span>  

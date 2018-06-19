@@ -1,14 +1,14 @@
 ---
-title: "开发 BizTalk Server 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 开发 BizTalk Server 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99b56f86-d8e4-4f4a-9ce9-9f476ba88ea8
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239597"
 ---
 # <a name="developing-biztalk-server-applications"></a><span data-ttu-id="db3ed-102">开发 BizTalk Server 应用程序</span><span class="sxs-lookup"><span data-stu-id="db3ed-102">Developing BizTalk Server Applications</span></span>
 <span data-ttu-id="db3ed-103">本部分包含的开发人员负责创建 BizTalk 项目的信息。</span><span class="sxs-lookup"><span data-stu-id="db3ed-103">This section contains information for developers who are tasked with creating BizTalk projects.</span></span> <span data-ttu-id="db3ed-104">项目是使用 BizTalk 项目系统设计环境中，可用于设计、 组织和生成 BizTalk 应用程序的各种元素创建的。</span><span class="sxs-lookup"><span data-stu-id="db3ed-104">Projects are created using the BizTalk project System Design Environment, which allows you to design, organize, and build the various elements of BizTalk applications.</span></span> <span data-ttu-id="db3ed-105">以下部分将详细介绍此过程：</span><span class="sxs-lookup"><span data-stu-id="db3ed-105">The following sections describe this process in detail.</span></span>  

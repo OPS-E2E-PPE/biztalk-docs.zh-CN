@@ -1,17 +1,17 @@
 ---
-title: "配置 BizTalk 项目属性 |Microsoft 文档"
-ms.custom: 
+title: 配置 BizTalk 项目属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, property pages
 - projects, configuring
 ms.assetid: 2cd8bbf0-1cba-462a-8e26-a761dc067765
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232253"
 ---
 # <a name="configuring-biztalk-project-properties"></a><span data-ttu-id="be129-102">配置 BizTalk 项目属性</span><span class="sxs-lookup"><span data-stu-id="be129-102">Configuring BizTalk Project Properties</span></span>
 <span data-ttu-id="be129-103">项目属性为在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建的项目配置全局设置。</span><span class="sxs-lookup"><span data-stu-id="be129-103">Project properties configure global settings for projects that you create in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="be129-104">BizTalk 项目共享其他 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目的许多项目属性。</span><span class="sxs-lookup"><span data-stu-id="be129-104">BizTalk projects share many of the project properties of other [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projects.</span></span> <span data-ttu-id="be129-105">可在项目设计器中配置其中大多数属性。</span><span class="sxs-lookup"><span data-stu-id="be129-105">You configure most of these properties in the Project Designer.</span></span>  

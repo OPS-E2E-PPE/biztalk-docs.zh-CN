@@ -1,14 +1,14 @@
 ---
-title: "如何避免限制关联消息 |Microsoft 文档"
-ms.custom: 
+title: 如何避免限制关联消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bfe47747-01e7-4e2f-bbd5-d5055cea001a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248501"
 ---
 # <a name="how-to-avoid-throttling-correlated-messages"></a><span data-ttu-id="eb5c9-102">如何避免阻止相关消息</span><span class="sxs-lookup"><span data-stu-id="eb5c9-102">How to Avoid Throttling Correlated Messages</span></span>
 <span data-ttu-id="eb5c9-103">在 BizTalk Server 中排队的消息（例如，通过接收位置或通过业务流程）可以通过以下方式之一进行处理：</span><span class="sxs-lookup"><span data-stu-id="eb5c9-103">Messages that are en-queued into BizTalk Server, for example through a receive location or by orchestrations, can be processed in one of the following ways:</span></span>  

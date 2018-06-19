@@ -1,15 +1,15 @@
 ---
-title: "将 BizTalk Server 数据库移 |Microsoft 文档"
-description: "将 BizTalk Server 数据库移动到新服务器，包括停止服务和使用 SQL Server 代理作业步骤"
-ms.custom: 
+title: 将 BizTalk Server 数据库移 |Microsoft 文档
+description: 将 BizTalk Server 数据库移动到新服务器，包括停止服务和使用 SQL Server 代理作业步骤
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec302e6d-c89d-4fe7-849f-97b5566e8ba4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254173"
 ---
 # <a name="how-to-move-the-biztalk-server-databases"></a><span data-ttu-id="2fb8b-103">如何移动 BizTalk Server 数据库</span><span class="sxs-lookup"><span data-stu-id="2fb8b-103">How to Move the BizTalk Server Databases</span></span>
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 6.  <span data-ttu-id="2fb8b-117">SQL Server 代理作业下面列出传输到新的服务器中, 所述的脚本[如何备份和还原 SQL 代理作业](../core/how-to-back-up-and-restore-sql-agent-jobs.md)。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-117">Script the SQL Server Agent jobs listed below for transfer to the new server, as described at [How to Back Up and Restore SQL Agent Jobs](../core/how-to-back-up-and-restore-sql-agent-jobs.md).</span></span>  <span data-ttu-id="2fb8b-118">在新服务器上运行每个脚本以重新创建作业。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-118">Run each of the scripts on the new server to recreate the jobs.</span></span>  
   
-     <span data-ttu-id="2fb8b-119">在新服务器上运行每个脚本以重新创建作业。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-119">Run each of the scripts on the new server to recreate the jobs.</span></span> <span data-ttu-id="2fb8b-120">某些作业，如**备份 BizTalk Server (BizTalkMsgBoxDb)**作业，必须将其重新配置，除非新的服务器文件路径和服务器名称与旧服务器相同。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-120">Certain jobs, such as the **Backup BizTalk Server (BizTalkMsgBoxDb)** job, will have to be reconfigured unless the new server file paths and server name are identical to the old server.</span></span>  
+     <span data-ttu-id="2fb8b-119">在新服务器上运行每个脚本以重新创建作业。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-119">Run each of the scripts on the new server to recreate the jobs.</span></span> <span data-ttu-id="2fb8b-120">某些作业，如**备份 BizTalk Server (BizTalkMsgBoxDb)** 作业，必须将其重新配置，除非新的服务器文件路径和服务器名称与旧服务器相同。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-120">Certain jobs, such as the **Backup BizTalk Server (BizTalkMsgBoxDb)** job, will have to be reconfigured unless the new server file paths and server name are identical to the old server.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="2fb8b-121">你还可以使用 SSIS/DTS**传输作业**任务将作业移到新的服务器，但大多数用户可能会发现它更轻松地使用 SQL Management Studio 作业编写脚本。</span><span class="sxs-lookup"><span data-stu-id="2fb8b-121">You can also use the SSIS/DTS **Transfer Jobs** task to move the jobs to the new server, but most users will probably find it easier to script the jobs using SQL Management Studio.</span></span>  

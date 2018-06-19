@@ -1,11 +1,11 @@
 ---
-title: "调查业务流程、 端口和消息失败 |Microsoft 文档"
-ms.custom: 
+title: 调查业务流程、 端口和消息失败 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Administration Console [BizTalk Server], Group Hub page
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - messages, errors
 - data, MessageBox database
 ms.assetid: 50b0d272-2d48-4e0f-82ce-6ecc7a65b064
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262301"
 ---
 # <a name="investigating-orchestration-port-and-message-failures"></a><span data-ttu-id="de74a-102">调查业务流程、 端口和消息失败</span><span class="sxs-lookup"><span data-stu-id="de74a-102">Investigating Orchestration, Port, and Message Failures</span></span>
 <span data-ttu-id="de74a-103">使用 BizTalk Server 管理控制台中的组中心页可以调查业务流程、端口和消息的故障。</span><span class="sxs-lookup"><span data-stu-id="de74a-103">You can use the Group Hub page in the BizTalk Server Administration Console to investigate orchestration, port, and message failures.</span></span> <span data-ttu-id="de74a-104">通过组中心页可以查看系统的当前实时状态，访问 MessageBox 数据库中的数据。</span><span class="sxs-lookup"><span data-stu-id="de74a-104">The Group Hub page provides access to the current real-time state of the system, accessing data in the MessageBox database.</span></span> <span data-ttu-id="de74a-105">您可以查看所有服务实例（例如业务流程、端口和消息传送）及其关联的消息。</span><span class="sxs-lookup"><span data-stu-id="de74a-105">You can view all service instances such as orchestrations, ports, and messaging, along with their associated messages.</span></span> <span data-ttu-id="de74a-106">使用组中心页可以实现以下操作：</span><span class="sxs-lookup"><span data-stu-id="de74a-106">Using the Group Hub page you can:</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239573"
 ---
 # <a name="error---first-input-to-value-extractor-functoid-not-valid"></a><span data-ttu-id="00fe0-102">错误-第一个输入值不是有效的提取程序 Functoid</span><span class="sxs-lookup"><span data-stu-id="00fe0-102">Error - First Input to Value Extractor Functoid Not Valid</span></span>
 <span data-ttu-id="00fe0-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="00fe0-103">**Error Code**</span></span>  

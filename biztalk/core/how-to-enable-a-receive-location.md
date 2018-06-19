@@ -1,18 +1,18 @@
 ---
-title: "如何启用接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何启用接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enabling, receive locations
 - managing [receive locations], enabling
 - receive locations, enabling
 ms.assetid: ea1647cd-7bcb-4603-a64e-23b3fb0622a5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253837"
 ---
 # <a name="how-to-enable-a-receive-location"></a><span data-ttu-id="d1e61-102">如何启用接收位置</span><span class="sxs-lookup"><span data-stu-id="d1e61-102">How to Enable a Receive Location</span></span>
 <span data-ttu-id="d1e61-103">本主题介绍如何使用 BizTalk Server 管理控制台来启用接收位置。</span><span class="sxs-lookup"><span data-stu-id="d1e61-103">This topic describes how to use the BizTalk Server Administration console to enable a receive location.</span></span> <span data-ttu-id="d1e61-104">接收位置必须在启用后才能接收消息。</span><span class="sxs-lookup"><span data-stu-id="d1e61-104">A receive location must be enabled before it can receive messages.</span></span>  

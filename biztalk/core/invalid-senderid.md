@@ -1,14 +1,14 @@
 ---
-title: "无效的 SenderId |Microsoft 文档"
-ms.custom: 
+title: 无效的 SenderId |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be8055ab-8aba-49ac-ad33-fb33d4ff3e8b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257285"
 ---
 # <a name="invalid-senderid"></a><span data-ttu-id="ccdd9-102">SenderId 无效</span><span class="sxs-lookup"><span data-stu-id="ccdd9-102">Invalid SenderId</span></span>
 ## <a name="details"></a><span data-ttu-id="ccdd9-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="ccdd9-103">Details</span></span>  

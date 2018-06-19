@@ -1,18 +1,18 @@
 ---
-title: "服务开发人员计算机设置面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 服务开发人员计算机设置面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developer servers
 - service solution tutorial, deployment prerequisites
 - service solution tutorial, developer servers
 ms.assetid: a088696f-c1ee-4578-ac02-af29b6de086b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239453"
 ---
 # <a name="developer-machine-setup-for-the-service-oriented-solution"></a><span data-ttu-id="0476b-102">面向服务的解决方案的开发人员计算机安装</span><span class="sxs-lookup"><span data-stu-id="0476b-102">Developer Machine Setup for the Service Oriented Solution</span></span>
 <span data-ttu-id="0476b-103">面向服务的结构 (SOA) 是一种用于构建分布式系统的方法。</span><span class="sxs-lookup"><span data-stu-id="0476b-103">Service Oriented Architecture (SOA) is an approach to building distributed systems.</span></span> <span data-ttu-id="0476b-104">面向服务的解决方案演示了如何将使用不同协议的几种后端系统聚合为客户端可以使用的单个服务。</span><span class="sxs-lookup"><span data-stu-id="0476b-104">The service oriented solution demonstrates how several back-end systems using different protocols can be aggregated into a single service that clients can consume.</span></span> <span data-ttu-id="0476b-105">此解决方案将服务与可确保需要满足的服务级别协议的送达和性能特征的方法相集成。</span><span class="sxs-lookup"><span data-stu-id="0476b-105">This solution integrates services with an approach that guarantees delivery and performance characteristics for the service level agreement that you need to satisfy.</span></span>  

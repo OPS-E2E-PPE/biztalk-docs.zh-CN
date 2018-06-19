@@ -1,14 +1,14 @@
 ---
-title: "如何使用 Web Services 在消息传递的仅限方案 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 Web Services 在消息传递的仅限方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66873959-5b1b-4d9b-ad19-f083670420b8
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249421"
 ---
 # <a name="how-to-consume-web-services-in-a-messaging-only-scenario"></a><span data-ttu-id="b3509-102">如何在仅进行消息传送的方案中使用 Web Services</span><span class="sxs-lookup"><span data-stu-id="b3509-102">How to Consume Web Services in a Messaging Only Scenario</span></span>
 <span data-ttu-id="b3509-103">SOAP 适配器的新增强之一便是其在仅进行消息传送的方案中使用基于内容的路由发送端口调用 Web Services 的能力。</span><span class="sxs-lookup"><span data-stu-id="b3509-103">One of the new enhancements for the SOAP adapter is ability to call Web services in a messaging only scenario by using content-based routing send ports.</span></span> <span data-ttu-id="b3509-104">此功能使得在无需创建业务流程的情况下使用 Web Services 成为可能。</span><span class="sxs-lookup"><span data-stu-id="b3509-104">This feature makes it possible to consume Web services without creating orchestrations.</span></span> <span data-ttu-id="b3509-105">此外，由于消息不再通过业务流程，在使用 Web Services 时它还具有更为出色的性能表现。</span><span class="sxs-lookup"><span data-stu-id="b3509-105">It also provides better performance to consume Web services because messages do not pass through orchestrations.</span></span>  

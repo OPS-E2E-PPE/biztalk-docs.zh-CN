@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 编辑器错误 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 编辑器错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Editor, error messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - troubleshooting, error messages [BizTalk Editor]
 - error messages, BizTalk Editor
 ms.assetid: d044af11-708a-4365-a105-dd19a2c610a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232845"
 ---
 # <a name="biztalk-editor-errors"></a><span data-ttu-id="8f0c7-102">BizTalk 编辑器错误</span><span class="sxs-lookup"><span data-stu-id="8f0c7-102">BizTalk Editor Errors</span></span>
 <span data-ttu-id="8f0c7-103">本部分提供了与 BizTalk 编辑器相关联的编译消息的补充信息。</span><span class="sxs-lookup"><span data-stu-id="8f0c7-103">This section provides supplemental information about compilation messages associated with BizTalk Editor.</span></span> <span data-ttu-id="8f0c7-104">你可以访问此信息是在 Microsoft 中的任务列表窗口中选择了其中一个相关的消息也是使用 F1 键[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8f0c7-104">You can access this information using the F1 key when one of the relevant messages is selected in the Task List window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="8f0c7-105">概念性和程序性的信息有关 BizTalk 编辑器，请参阅[使用 BizTalk 编辑器创建架构](../core/creating-schemas-using-biztalk-editor.md)。</span><span class="sxs-lookup"><span data-stu-id="8f0c7-105">For conceptual and procedural information about BizTalk Editor, see [Creating Schemas Using BizTalk Editor](../core/creating-schemas-using-biztalk-editor.md).</span></span>  

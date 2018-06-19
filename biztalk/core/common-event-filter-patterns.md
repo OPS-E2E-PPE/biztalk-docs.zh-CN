@@ -1,14 +1,14 @@
 ---
-title: "常见的事件筛选器模式 |Microsoft 文档"
-ms.custom: 
+title: 常见的事件筛选器模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc80168b-25bd-4228-b84c-d38bf4e2fe4a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234517"
 ---
 # <a name="common-event-filter-patterns"></a><span data-ttu-id="c312a-102">常用事件筛选模式</span><span class="sxs-lookup"><span data-stu-id="c312a-102">Common Event Filter Patterns</span></span>
 <span data-ttu-id="c312a-103">使用用于 Windows Workflow Foundation (WF) 的 BAM 侦听器时，您可能会注意到，在侦听器配置文件中存在一组频繁使用的常用筛选模式。</span><span class="sxs-lookup"><span data-stu-id="c312a-103">As you work with the BAM Interceptor for Windows Workflow Foundation (WF), you will likely notice that there are a set of common filter patterns that you will use frequently in your interceptor configuration files.</span></span> <span data-ttu-id="c312a-104">虽然其中的某些筛选模式对于应用程序和环境而言是唯一的，但许多模式可跨环境和在不同的应用程序中使用。</span><span class="sxs-lookup"><span data-stu-id="c312a-104">While some of these filter patterns will be unique to your applications and environments, many patterns can be used across environments and in diverse applications.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "数据项节点 |Microsoft 文档"
-ms.custom: 
+title: 数据项节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definition files [BAM], data items
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - Tracking Profile Editor, definition files [BAM]
 ms.assetid: 95856bfa-90e3-49d9-b55b-5f1b35a23f78
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238021"
 ---
 # <a name="data-item-nodes"></a><span data-ttu-id="23e9c-102">数据项节点</span><span class="sxs-lookup"><span data-stu-id="23e9c-102">Data Item Nodes</span></span>
 <span data-ttu-id="23e9c-103">数据项节点存在于开发人员从业务分析员创建的观察模型所导入的活动定义文件中。</span><span class="sxs-lookup"><span data-stu-id="23e9c-103">Data Item nodes exist in the activity definition file that the developer imports from the created observation model created by the business analyst.</span></span> <span data-ttu-id="23e9c-104">跟踪配置文件编辑器 (TPE) 将为所跟踪的数据项命名相应的节点（如“客户姓名”）。</span><span class="sxs-lookup"><span data-stu-id="23e9c-104">The Tracking Profile Editor (TPE) names them for the data items they are tracking, such as Customer Name.</span></span> <span data-ttu-id="23e9c-105">然后，您可以将一个或多个数据项从消息架构视图拖到对应于“客户姓名”的节点。</span><span class="sxs-lookup"><span data-stu-id="23e9c-105">You then drop one or more data items from the Message Schema View onto the node that corresponds to Customer Name.</span></span>  

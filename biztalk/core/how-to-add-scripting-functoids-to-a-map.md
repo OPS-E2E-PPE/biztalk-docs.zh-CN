@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248469"
 ---
 # <a name="how-to-add-scripting-functoids-to-a-map"></a><span data-ttu-id="8543b-102">如何向映射添加“脚本”Functoid</span><span class="sxs-lookup"><span data-stu-id="8543b-102">How to Add Scripting Functoids to a Map</span></span>
 <span data-ttu-id="8543b-103">**脚本**functoid，可使用自定义脚本或代码在运行时执行功能不可用。</span><span class="sxs-lookup"><span data-stu-id="8543b-103">The **Scripting** functoid enables you to use custom script or code at run time to perform functions otherwise not available.</span></span> <span data-ttu-id="8543b-104">例如，通过使用，在运行时调用的 COM 对象**脚本**functoid 和编写您自己的自定义脚本。</span><span class="sxs-lookup"><span data-stu-id="8543b-104">For example, you can call a COM object at run time by using the **Scripting** functoid and writing your own custom script.</span></span>  

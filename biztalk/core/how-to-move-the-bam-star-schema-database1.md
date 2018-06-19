@@ -1,17 +1,17 @@
 ---
-title: "如何移动 BAM 星型架构 Database1 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 星型架构 Database1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Star Schema database [BAM], migrating
 - migrating, Star Schema database [BAM]
 ms.assetid: b4a5f8fc-0dc4-4987-b96f-ecd49bd4dba3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254237"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a><span data-ttu-id="12bb4-102">如何移动 BAM 星型架构数据库</span><span class="sxs-lookup"><span data-stu-id="12bb4-102">How to Move the BAM Star Schema Database</span></span>
 <span data-ttu-id="12bb4-103">您可以使用此过程将 BAM 星型架构数据库移到其他服务器。</span><span class="sxs-lookup"><span data-stu-id="12bb4-103">You can use this procedure to move the BAM Star Schema database to another server.</span></span>  

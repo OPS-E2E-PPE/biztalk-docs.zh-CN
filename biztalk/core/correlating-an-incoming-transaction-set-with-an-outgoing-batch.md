@@ -1,14 +1,14 @@
 ---
-title: "关联一个传入事务使用传出的批处理设置 |Microsoft 文档"
-ms.custom: 
+title: 关联一个传入事务使用传出的批处理设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fbe40f8-7379-42be-b8a7-070ce8a7ce26
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239405"
 ---
 # <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a><span data-ttu-id="30281-102">将使用的传出的批次的传入事务集相关联</span><span class="sxs-lookup"><span data-stu-id="30281-102">Correlating an Incoming Transaction Set with an Outgoing Batch</span></span>
 <span data-ttu-id="30281-103">借助 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您可将提交到批处理业务流程的 EDI 事务集与传出批相关联。</span><span class="sxs-lookup"><span data-stu-id="30281-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to correlate an EDI transaction set submitted to the Batching Orchestration with an outgoing batch.</span></span> <span data-ttu-id="30281-104">通过将提交到批处理业务流程的事务集的状态报告条目 (BTSInterchangeID) 关联到业务流程的状态报告条目 (ActivityID)，您可以实现这一点。</span><span class="sxs-lookup"><span data-stu-id="30281-104">You do so by correlating a status reporting entry for the transaction set submitted to the Batching Orchestration (the BTSInterchangeID) to a status reporting entry for the orchestration (ActivityID).</span></span> <span data-ttu-id="30281-105">此关联是通过使用 BusinessMessageJournal BAM 活动中的条目执行的。</span><span class="sxs-lookup"><span data-stu-id="30281-105">This correlation is performed using entries in the BusinessMessageJournal BAM activity.</span></span> <span data-ttu-id="30281-106">这些条目是在接收批元素时由批处理业务流程创建的。</span><span class="sxs-lookup"><span data-stu-id="30281-106">These entries are created by the Batching Orchestration when a batch element is received.</span></span>  

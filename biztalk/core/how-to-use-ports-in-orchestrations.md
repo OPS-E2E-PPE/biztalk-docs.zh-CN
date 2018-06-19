@@ -1,11 +1,11 @@
 ---
-title: "如何在业务流程中使用端口 |Microsoft 文档"
-ms.custom: 
+title: 如何在业务流程中使用端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, adding ports
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - ports, adding to orchestrations
 - ports, configuring
 ms.assetid: da8665cd-ccde-4949-b5f5-01f9f8be5ce8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257909"
 ---
 # <a name="how-to-use-ports-in-orchestrations"></a><span data-ttu-id="e2e82-102">如何使用在业务流程中的端口</span><span class="sxs-lookup"><span data-stu-id="e2e82-102">How to Use Ports in Orchestrations</span></span>
 <span data-ttu-id="e2e82-103">向业务流程添加端口的方式与向 Web 窗体或 Windows 窗体添加控件的方式相同。</span><span class="sxs-lookup"><span data-stu-id="e2e82-103">You add ports to an orchestration in much the same way that you add controls to a Web Form or Windows Form.</span></span> <span data-ttu-id="e2e82-104">还可以使用“业务流程视图”窗口来添加端口。</span><span class="sxs-lookup"><span data-stu-id="e2e82-104">You can also add ports by using the Orchestration View window.</span></span>  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250237"
 ---
 # <a name="how-to-create-a-send-port"></a><span data-ttu-id="f4614-102">如何创建发送端口</span><span class="sxs-lookup"><span data-stu-id="f4614-102">How to Create a Send Port</span></span>
 <span data-ttu-id="f4614-103">本主题将介绍如何使用 BizTalk Server 管理控制台来创建发送端口。</span><span class="sxs-lookup"><span data-stu-id="f4614-103">This topic describes how to use the BizTalk Server Administration console to create a send port.</span></span> <span data-ttu-id="f4614-104">创建发送端口时，必须选择要创建的发送端口的类型，各类型如下：</span><span class="sxs-lookup"><span data-stu-id="f4614-104">When creating a send port, you must select the type of send port to create, as follows:</span></span>  

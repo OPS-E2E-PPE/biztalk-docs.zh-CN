@@ -1,11 +1,11 @@
 ---
-title: "定义维度 |Microsoft 文档"
-ms.custom: 
+title: 定义维度 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], dimensions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Excel add-in [BAM], creating dimensions
 - dimensions [BAM]
 ms.assetid: c00e0c45-eef2-42d9-832c-4be08d79203f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238485"
 ---
 # <a name="defining-dimensions"></a><span data-ttu-id="d38f3-102">定义维度</span><span class="sxs-lookup"><span data-stu-id="d38f3-102">Defining Dimensions</span></span>
 <span data-ttu-id="d38f3-103">Microsoft Excel 将维度定义为类别，这些类别用于将表中的数据组织成若干级别以供分析之用。</span><span class="sxs-lookup"><span data-stu-id="d38f3-103">Microsoft Excel defines dimensions as categories used to organize data in a table into levels that will be used for analysis.</span></span> <span data-ttu-id="d38f3-104">例如，位置数据维度可能包含下级别：县/市、省/市/自治区和国家/地区。</span><span class="sxs-lookup"><span data-stu-id="d38f3-104">For example, a location data dimension might contain levels such as city, state/province, and country/region.</span></span> <span data-ttu-id="d38f3-105">在 BAM 视图向导中创建 BAM 视图时，您可以添加以下维度类型中的一个或多个：</span><span class="sxs-lookup"><span data-stu-id="d38f3-105">When creating BAM Views in the BAM View wizard, you can add one or more of the following dimension types:</span></span>  

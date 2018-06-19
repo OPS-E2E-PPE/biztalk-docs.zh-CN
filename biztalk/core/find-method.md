@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245965"
 ---
 # <a name="find-method"></a><span data-ttu-id="7d838-102">Find 方法</span><span class="sxs-lookup"><span data-stu-id="7d838-102">Find Method</span></span>
 <span data-ttu-id="7d838-103">用于返回满足所提供部分搜索项的项列表。</span><span class="sxs-lookup"><span data-stu-id="7d838-103">Used to return a list of keys that satisfy the supplied partial search keys.</span></span> <span data-ttu-id="7d838-104">请注意，对于只有一个实例组件接口（即无项），不会生成 `Find()` 函数。</span><span class="sxs-lookup"><span data-stu-id="7d838-104">Note that for a component interface that has only one instance, that is, there is no key, the `Find()` function is not generated.</span></span> <span data-ttu-id="7d838-105">另请参阅[Get 方法](../core/get-method.md)。</span><span class="sxs-lookup"><span data-stu-id="7d838-105">See also [Get Method](../core/get-method.md).</span></span>  

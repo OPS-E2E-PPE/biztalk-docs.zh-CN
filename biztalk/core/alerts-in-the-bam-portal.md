@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户中的警报 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户中的警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Alert Management page [BAM portal]
 - alerts, subscriptions
 ms.assetid: 715a4187-aafa-46be-8b00-8eaba2e569e5
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232709"
 ---
 # <a name="alerts-in-the-bam-portal"></a><span data-ttu-id="5b10f-102">BAM 门户中的警报</span><span class="sxs-lookup"><span data-stu-id="5b10f-102">Alerts in the BAM Portal</span></span>
 <span data-ttu-id="5b10f-103">使用警报能够定义可实时发送给用户的关于业务流程的重要事件，如关键性能指标 (KPI)。</span><span class="sxs-lookup"><span data-stu-id="5b10f-103">Alerts allow you to define important events about your business process, such as Key Performance Indicators (KPIs), that can be delivered to users on a real-time basis.</span></span> <span data-ttu-id="5b10f-104">用户订阅警报后可以接收警报所监视的业务事件的通知。</span><span class="sxs-lookup"><span data-stu-id="5b10f-104">Users subscribe to alerts to receive notification of the business event that the alert monitors.</span></span>  
@@ -58,7 +59,7 @@ ms.lasthandoff: 09/20/2017
   
 |<span data-ttu-id="5b10f-148">字段名</span><span class="sxs-lookup"><span data-stu-id="5b10f-148">Field Name</span></span>|<span data-ttu-id="5b10f-149">目录</span><span class="sxs-lookup"><span data-stu-id="5b10f-149">Contents</span></span>|  
 |----------------|--------------|  
-|<span data-ttu-id="5b10f-150">Name</span><span class="sxs-lookup"><span data-stu-id="5b10f-150">Name</span></span>|<span data-ttu-id="5b10f-151">警报的名称。</span><span class="sxs-lookup"><span data-stu-id="5b10f-151">The name of the alert.</span></span> <span data-ttu-id="5b10f-152">如果通过电子邮件传送警报，则警报的名称将用作邮件的主题；如果以文件的形式传送警报，则警报的名称将作为文件的名称。</span><span class="sxs-lookup"><span data-stu-id="5b10f-152">The name of the alert is used as the subject of alerts delivered as e-mail and as the file name for alerts delivered as a file.</span></span> <span data-ttu-id="5b10f-153">**注意：**名称限制为 100 个字符并且不能包含以下字符，~ ！ @# $%^&amp;* （);</span><span class="sxs-lookup"><span data-stu-id="5b10f-153">**Note:**  Names are limited to 100 characters and cannot contain the following characters, ~!@#$%^&amp;*();</span></span>|  
+|<span data-ttu-id="5b10f-150">Name</span><span class="sxs-lookup"><span data-stu-id="5b10f-150">Name</span></span>|<span data-ttu-id="5b10f-151">警报的名称。</span><span class="sxs-lookup"><span data-stu-id="5b10f-151">The name of the alert.</span></span> <span data-ttu-id="5b10f-152">如果通过电子邮件传送警报，则警报的名称将用作邮件的主题；如果以文件的形式传送警报，则警报的名称将作为文件的名称。</span><span class="sxs-lookup"><span data-stu-id="5b10f-152">The name of the alert is used as the subject of alerts delivered as e-mail and as the file name for alerts delivered as a file.</span></span> <span data-ttu-id="5b10f-153">**注意：** 名称限制为 100 个字符并且不能包含以下字符，~ ！ @# $%^&amp;\* （);</span><span class="sxs-lookup"><span data-stu-id="5b10f-153">**Note:**  Names are limited to 100 characters and cannot contain the following characters, ~!@#$%^&amp;\*();</span></span>|  
 |<span data-ttu-id="5b10f-154">消息</span><span class="sxs-lookup"><span data-stu-id="5b10f-154">Message</span></span>|<span data-ttu-id="5b10f-155">将与警报一起传输的消息文本。</span><span class="sxs-lookup"><span data-stu-id="5b10f-155">The text of the message that will be delivered with the alert.</span></span>|  
 |<span data-ttu-id="5b10f-156">Priority</span><span class="sxs-lookup"><span data-stu-id="5b10f-156">Priority</span></span>|<span data-ttu-id="5b10f-157">指示警报所报告的问题的严重性。</span><span class="sxs-lookup"><span data-stu-id="5b10f-157">Indicates the severity of the issue the alert is reporting.</span></span> <span data-ttu-id="5b10f-158">优先级可为“高”、“中”和“低”。</span><span class="sxs-lookup"><span data-stu-id="5b10f-158">The priority levels are High, Medium, and Low.</span></span> <span data-ttu-id="5b10f-159">对于通过电子邮件传送的警报，此设置确定电子邮件的重要性标志的类型。</span><span class="sxs-lookup"><span data-stu-id="5b10f-159">For alerts delivered by e-mail, this setting determines the type of importance flag on the e-mail message.</span></span>|  
 |<span data-ttu-id="5b10f-160">所有者</span><span class="sxs-lookup"><span data-stu-id="5b10f-160">Owners</span></span>|<span data-ttu-id="5b10f-161">警报的所有者。</span><span class="sxs-lookup"><span data-stu-id="5b10f-161">The owner of the alert.</span></span> <span data-ttu-id="5b10f-162">所有者默认为警报的创建者。</span><span class="sxs-lookup"><span data-stu-id="5b10f-162">The default value for the owner is the same as the creator of the alert.</span></span> <span data-ttu-id="5b10f-163">要输入多个所有者，请将其输入为以分号分隔的列表。</span><span class="sxs-lookup"><span data-stu-id="5b10f-163">Multiple owners are entered as a semi-colon delimited list.</span></span>|  

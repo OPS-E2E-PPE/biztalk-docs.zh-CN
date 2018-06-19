@@ -1,14 +1,14 @@
 ---
-title: "如何备份的 BizTalk Server 配置 |Microsoft 文档"
-ms.custom: 
+title: 如何备份的 BizTalk Server 配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14f89050-c204-4d44-a875-299e690489ef
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247653"
 ---
 # <a name="how-to-back-up-the-biztalk-server-configuration"></a><span data-ttu-id="6f601-102">如何备份 BizTalk Server 配置</span><span class="sxs-lookup"><span data-stu-id="6f601-102">How to Back Up The BizTalk Server Configuration</span></span>
 <span data-ttu-id="6f601-103">作为备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的一部分，应当备份与运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的计算机相关联的配置设置。</span><span class="sxs-lookup"><span data-stu-id="6f601-103">As part of backing up [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should back up the configuration settings associated with the computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="6f601-104">如果具有原始配置文件的副本，则在计算机发生硬件故障需要更换计算机时，将会极大地简化还原过程。</span><span class="sxs-lookup"><span data-stu-id="6f601-104">Having a copy of the original configuration file greatly simplifies the restoration process if you have a hardware failure that requires you to replace the computer.</span></span>  

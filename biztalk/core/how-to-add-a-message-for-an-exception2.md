@@ -1,11 +1,11 @@
 ---
-title: "如何将消息添加 Exception2 |Microsoft 文档"
-ms.custom: 
+title: 如何将消息添加 Exception2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exceptions, adding messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - exception handling, adding messages
 - fault messages, adding
 ms.assetid: 9d8a3801-78cd-4c18-8deb-3fbe4a49a2f9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246197"
 ---
 # <a name="how-to-add-a-message-for-an-exception"></a><span data-ttu-id="28f21-102">如何将消息添加到为异常</span><span class="sxs-lookup"><span data-stu-id="28f21-102">How to Add a Message for an Exception</span></span>
 <span data-ttu-id="28f21-103">当你首次创建到后端系统的端口时，它包含请求和响应。</span><span class="sxs-lookup"><span data-stu-id="28f21-103">When you first create a port to the back-end system, it contains a request and a response.</span></span> <span data-ttu-id="28f21-104">您必须添加一个信息，以便您可以将其分配给故障。</span><span class="sxs-lookup"><span data-stu-id="28f21-104">You must add a message so that you can assign it to the fault.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="28f21-108">右键单击**Message_3**，然后选择**属性**。</span><span class="sxs-lookup"><span data-stu-id="28f21-108">Right-click **Message_3**, and select **Properties**.</span></span>  
   
-3.  <span data-ttu-id="28f21-109">设置**消息类型**，如下所示： 选择**.NET 类**，然后选择**系统、 字符串**</span><span class="sxs-lookup"><span data-stu-id="28f21-109">Set the **Message Type** as follows: select **.NET Classes**, and then select **System,String**</span></span>  
+3.  <span data-ttu-id="28f21-109">设置**消息类型**，如下所示： 选择 **.NET 类**，然后选择**系统、 字符串**</span><span class="sxs-lookup"><span data-stu-id="28f21-109">Set the **Message Type** as follows: select **.NET Classes**, and then select **System,String**</span></span>  
   
  ![](../core/media/jdeoneworld-03-addscope.gif "JdeOneWorld_03_addscope")  
   

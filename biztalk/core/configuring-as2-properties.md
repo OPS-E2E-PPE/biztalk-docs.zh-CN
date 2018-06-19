@@ -1,14 +1,14 @@
 ---
-title: "配置 AS2 属性 |Microsoft 文档"
-ms.custom: 
+title: 配置 AS2 属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a28531d-da25-4f31-a822-734644d4bbd8
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232749"
 ---
 # <a name="configuring-as2-properties"></a><span data-ttu-id="cffe7-102">配置 AS2 属性</span><span class="sxs-lookup"><span data-stu-id="cffe7-102">Configuring AS2 Properties</span></span>
 <span data-ttu-id="cffe7-103">BizTalk Server 使用 AS2 属性来处理通过 HTTP/HTTPS 传输传入和传出的 EDIINT/AS2 编码的消息。</span><span class="sxs-lookup"><span data-stu-id="cffe7-103">BizTalk Server uses AS2 properties to process incoming and outgoing EDIINT/AS2-encoded messages over HTTP/HTTPS transport.</span></span> <span data-ttu-id="cffe7-104">本部分介绍如何为 AS2 消息传输创建参与方以及如何创建参与方之间的 AS2 协议。</span><span class="sxs-lookup"><span data-stu-id="cffe7-104">This section describes how to create parties for AS2 message transport and how to create AS2 agreements between the parties.</span></span>  

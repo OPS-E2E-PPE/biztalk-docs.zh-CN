@@ -1,14 +1,14 @@
 ---
-title: "如何创建对另一个节点或类型的引用 |Microsoft 文档"
-ms.custom: 
+title: 如何创建对另一个节点或类型的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c60be9ad-01a9-40e7-b43b-8c3d09bbb32f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250349"
 ---
 # <a name="create-references-to-another-node-or-type"></a><span data-ttu-id="53c77-102">创建到另一个节点或类型的引用</span><span class="sxs-lookup"><span data-stu-id="53c77-102">Create References to Another Node or Type</span></span>
 <span data-ttu-id="53c77-103">你可以使用全局节点来创建可重用的数据类型-片段的结构-，你可以在整个使用架构只要该结构适合。</span><span class="sxs-lookup"><span data-stu-id="53c77-103">You can use global nodes to create reusable data types—fragments of structure—that you can use throughout the schema wherever that structure is appropriate.</span></span> <span data-ttu-id="53c77-104">你只能使用节点的直接子级的**架构**节点来创建全局类型。</span><span class="sxs-lookup"><span data-stu-id="53c77-104">You can only use nodes that are direct children of the **Schema** node to create global types.</span></span>  

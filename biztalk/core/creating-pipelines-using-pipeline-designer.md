@@ -1,18 +1,18 @@
 ---
-title: "创建管道使用管道设计器 |Microsoft 文档"
-ms.custom: 
+title: 创建管道使用管道设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, processing messages
 - pipelines, Pipeline Designer
 - Pipeline Designer, about Pipeline Designer
 ms.assetid: 858302d8-a912-4199-95e5-4322db789b4e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238045"
 ---
 # <a name="creating-pipelines-using-pipeline-designer"></a><span data-ttu-id="ee24c-102">创建管道使用管道设计器</span><span class="sxs-lookup"><span data-stu-id="ee24c-102">Creating Pipelines Using Pipeline Designer</span></span>
 <span data-ttu-id="ee24c-103">Microsoft BizTalk Server 主要处理 XML 文档格式。</span><span class="sxs-lookup"><span data-stu-id="ee24c-103">Microsoft BizTalk Server works mainly with the XML document format.</span></span> <span data-ttu-id="ee24c-104">通常，消息必须从本身格式转换为其 XML 表示形式，才能充分利用 BizTalk Server 的处理功能。</span><span class="sxs-lookup"><span data-stu-id="ee24c-104">For a message to take full advantage of BizTalk Server processing, it must often be transformed from its native format into its XML representation.</span></span> <span data-ttu-id="ee24c-105">BizTalk Server 管道可对传入消息和传出消息执行这种转换，并执行其他特定于数据的操作（例如数据加密或解密、属性升级等）。</span><span class="sxs-lookup"><span data-stu-id="ee24c-105">BizTalk Server pipelines perform this transformation, as well as other data-specific actions (such as data encryption or decryption, property promotion, and so on) on incoming and outgoing messages.</span></span> <span data-ttu-id="ee24c-106">本部分提供有关管道和管道设计器的概念信息和任务特定信息。</span><span class="sxs-lookup"><span data-stu-id="ee24c-106">This section provides conceptual and task-specific information about pipelines and Pipeline Designer.</span></span>  

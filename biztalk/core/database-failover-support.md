@@ -1,14 +1,14 @@
 ---
-title: "数据库故障转移支持 |Microsoft 文档"
-ms.custom: 
+title: 数据库故障转移支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 09347fdd-2929-4ed9-b0d8-698508663ecd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238629"
 ---
 # <a name="database-failover-support"></a><span data-ttu-id="de440-102">数据库故障转移支持</span><span class="sxs-lookup"><span data-stu-id="de440-102">Database Failover Support</span></span>
 <span data-ttu-id="de440-103">你可以将传递的实例**PolicyFetchErrorHandler**作为重载构造函数的参数的委托**策略**类。</span><span class="sxs-lookup"><span data-stu-id="de440-103">You can pass an instance of the **PolicyFetchErrorHandler** delegate as a parameter to overloaded constructors of the **Policy** class.</span></span> <span data-ttu-id="de440-104">当从数据库提取策略的详细信息时出错时，将调用委托实例。</span><span class="sxs-lookup"><span data-stu-id="de440-104">When an error occurs while fetching the policy details from the database, the delegate instance is invoked.</span></span> <span data-ttu-id="de440-105">你还可以使用 try catch 块捕获**RuleStoreConnectionException**和**RuleStoreCompatibilityException**规则引擎无法连接到规则引擎时引发的异常数据库。</span><span class="sxs-lookup"><span data-stu-id="de440-105">You can also use a try-catch block to trap **RuleStoreConnectionException** and **RuleStoreCompatibilityException** exceptions that are raised when the rule engine fails to connect to the Rule Engine database.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "如何测试组件接口 |Microsoft 文档"
-ms.custom: 
+title: 如何测试组件接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing component interfaces
 - component interfaces, testing
 ms.assetid: d637f76d-170d-4543-a2b2-a4ac4001386b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256565"
 ---
 # <a name="how-to-test-component-interfaces"></a><span data-ttu-id="5dfa2-102">如何测试组件接口</span><span class="sxs-lookup"><span data-stu-id="5dfa2-102">How to Test Component Interfaces</span></span>
 <span data-ttu-id="5dfa2-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise 使用 PeopleSoft 元数据和组件接口；因此，它可以处理新增或改进过的组件接口。</span><span class="sxs-lookup"><span data-stu-id="5dfa2-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise uses PeopleSoft metadata and component interfaces; therefore, it can handle new or modified component interfaces.</span></span> <span data-ttu-id="5dfa2-104">除假设组件接口符合逻辑并且有效之外，该适配器不对组件接口进行任何其他假设。</span><span class="sxs-lookup"><span data-stu-id="5dfa2-104">The adapter makes no assumptions about component interfaces except that they are logical and valid.</span></span> <span data-ttu-id="5dfa2-105">因此，每个组件接口在用作适配器的来源之前都必须进行测试。</span><span class="sxs-lookup"><span data-stu-id="5dfa2-105">Therefore, each component interface must be tested before it is used as a source for the adapter.</span></span>  

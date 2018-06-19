@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240941"
 ---
 # <a name="error---nested-class-name-collision"></a><span data-ttu-id="aacd0-102">错误-嵌套的类名冲突</span><span class="sxs-lookup"><span data-stu-id="aacd0-102">Error - Nested Class Name Collision</span></span>
 <span data-ttu-id="aacd0-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="aacd0-103">**Error Code**</span></span>  

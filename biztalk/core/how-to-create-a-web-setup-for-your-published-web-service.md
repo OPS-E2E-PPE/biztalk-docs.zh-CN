@@ -1,11 +1,11 @@
 ---
-title: "如何为你的已发布的 Web 服务中创建 Web 安装程序 |Microsoft 文档"
-ms.custom: 
+title: 如何为你的已发布的 Web 服务中创建 Web 安装程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, Web services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Web services, .msi file
 - .msi files, Web services
 ms.assetid: 77c86242-1d27-4d99-ae00-fe2614bc13ef
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249677"
 ---
 # <a name="how-to-create-a-web-setup-for-your-published-web-service"></a><span data-ttu-id="394e2-102">如何为已发布的 Web Services 创建 Web 安装程序</span><span class="sxs-lookup"><span data-stu-id="394e2-102">How to Create a Web Setup for Your Published Web Service</span></span>
 <span data-ttu-id="394e2-103">可以创建一个安装包，以便于在生产环境中设置 Web Services。</span><span class="sxs-lookup"><span data-stu-id="394e2-103">You can create an installation package to facilitate setting up your Web service in a production environment.</span></span> <span data-ttu-id="394e2-104">这会生成一个 .MSI 文件。</span><span class="sxs-lookup"><span data-stu-id="394e2-104">This produces an .MSI file.</span></span>  

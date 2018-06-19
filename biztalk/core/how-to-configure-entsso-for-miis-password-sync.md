@@ -1,14 +1,14 @@
 ---
-title: "如何为 miis 进行密码同步配置 ENTSSO |Microsoft 文档"
-ms.custom: 
+title: 如何为 miis 进行密码同步配置 ENTSSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89438935-37c1-4ac9-9ca2-7af8d9bfd3ae
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248941"
 ---
 # <a name="how-to-configure-entsso-for-miis-password-sync"></a><span data-ttu-id="f8dd1-102">如何配置 ENTSSO 以实现 MIIS 密码同步</span><span class="sxs-lookup"><span data-stu-id="f8dd1-102">How to Configure ENTSSO for MIIS Password Sync</span></span>
 <span data-ttu-id="f8dd1-103">配置完 XML 文件和 Microsoft Identity Integration Server (MIIS) 后，其余配置步骤可在企业单一登录 (ENTSSO) 系统中进行。</span><span class="sxs-lookup"><span data-stu-id="f8dd1-103">After configuring the XML file and Microsoft Identity Integration Server (MIIS), the remaining configuration steps take place in the Enterprise Single Sign-On (ENTSSO) system.</span></span>  

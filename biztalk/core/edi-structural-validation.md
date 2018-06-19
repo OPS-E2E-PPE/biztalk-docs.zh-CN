@@ -1,14 +1,14 @@
 ---
-title: "EDI 结构验证 |Microsoft 文档"
-ms.custom: 
+title: EDI 结构验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87086614-5616-441d-915c-2979c63c6e2f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239589"
 ---
 # <a name="edi-structural-validation"></a><span data-ttu-id="65d9e-102">EDI 结构验证</span><span class="sxs-lookup"><span data-stu-id="65d9e-102">EDI Structural Validation</span></span>
 <span data-ttu-id="65d9e-103">X12 和 EDIFACT 编码的 EDI 规范为 EDI 交换的结构定义了特定规则和约定。</span><span class="sxs-lookup"><span data-stu-id="65d9e-103">EDI specifications for both X12 and EDIFACT encoding define specific rules and conventions for the structure of EDI interchanges.</span></span> <span data-ttu-id="65d9e-104">EDIReceivePipeline 中的 EDI 拆装器将验证每条接收的消息的信封是否符合这些结构规则。</span><span class="sxs-lookup"><span data-stu-id="65d9e-104">The EDI Disassembler in the EDIReceivePipeline verifies that the envelope of each received message complies with these structural rules.</span></span> <span data-ttu-id="65d9e-105">EDISendPipeline 根据这些规则生成要发送的每个消息并在发送前验证信封。</span><span class="sxs-lookup"><span data-stu-id="65d9e-105">The EDISendPipeline builds each message to be sent in accordance with these rules and validates the envelope before sending.</span></span>  

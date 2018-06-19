@@ -1,17 +1,17 @@
 ---
-title: "配置 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 配置 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, configuring
 - configuring [MSMQ adapters]
 ms.assetid: 8f873ee1-4eaa-43d2-948d-aecc406a0bfb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232949"
 ---
 # <a name="configuring-the-msmq-adapter"></a><span data-ttu-id="f529c-102">配置 MSMQ 适配器</span><span class="sxs-lookup"><span data-stu-id="f529c-102">Configuring the MSMQ Adapter</span></span>
 <span data-ttu-id="f529c-103">本部分介绍有关配置 MSMQ 适配器的信息。</span><span class="sxs-lookup"><span data-stu-id="f529c-103">This section includes information about configuring the MSMQ adapter.</span></span> <span data-ttu-id="f529c-104">对接收位置和发送端口均可配置 MSMQ 适配器。</span><span class="sxs-lookup"><span data-stu-id="f529c-104">You can configure the MSMQ adapter for both receive locations and send ports.</span></span>  

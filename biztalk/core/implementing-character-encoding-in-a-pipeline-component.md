@@ -1,18 +1,18 @@
 ---
-title: "实现管道组件中的字符编码 |Microsoft 文档"
-ms.custom: 
+title: 实现管道组件中的字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
 - pipeline components [custom], code samples
 - pipeline components [custom], encoding
 ms.assetid: 862b56da-ec14-41f9-b63c-42d81124e167
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257045"
 ---
 # <a name="implementing-character-encoding-in-a-pipeline-component"></a><span data-ttu-id="82131-102">实现管道组件中的字符编码</span><span class="sxs-lookup"><span data-stu-id="82131-102">Implementing Character Encoding in a Pipeline Component</span></span>
 <span data-ttu-id="82131-103">若要支持自定义的字符编码，必须实现自定义编码类通过从 Microsoft.NET Framework 派生**编码**类，然后通过从标准的平面继承来创建自定义的平面文件管道组件文件反汇编程序或平面文件汇编器组件。</span><span class="sxs-lookup"><span data-stu-id="82131-103">To support custom character encoding, you must implement a custom encoding class by deriving from the Microsoft .NET Framework **Encoding** class, then create a custom flat file pipeline component by inheriting from the standard Flat File Disassembler or Flat File Assembler component.</span></span> <span data-ttu-id="82131-104">你可以通过重写受保护的虚方法提供的新的编码实例到分析引擎**FFDasmComp.GetDataReader**下面的示例中所示。</span><span class="sxs-lookup"><span data-stu-id="82131-104">You can supply a new encoding instance to the parsing engine by overriding the protected virtual method **FFDasmComp.GetDataReader** as shown in the following example.</span></span>  

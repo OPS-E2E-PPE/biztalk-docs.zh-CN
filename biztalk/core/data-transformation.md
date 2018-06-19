@@ -1,11 +1,11 @@
 ---
-title: "数据转换 |Microsoft 文档"
-ms.custom: 
+title: 数据转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, data translation
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - data transformation, maps
 - data translation, maps
 ms.assetid: a6aa5e9a-8d9c-478d-8f69-f9b16ed1a18c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238645"
 ---
 # <a name="data-transformation"></a><span data-ttu-id="60ff7-102">数据转换</span><span class="sxs-lookup"><span data-stu-id="60ff7-102">Data Transformation</span></span>
 <span data-ttu-id="60ff7-103">映射数据依赖于数据转换。</span><span class="sxs-lookup"><span data-stu-id="60ff7-103">Mapping data relies on data transformation.</span></span>  

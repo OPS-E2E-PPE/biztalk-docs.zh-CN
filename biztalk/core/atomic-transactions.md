@@ -1,11 +1,11 @@
 ---
-title: "原子事务 |Microsoft 文档"
-ms.custom: 
+title: 原子事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - atomic transactions
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - scopes, transactions
 - scopes
 ms.assetid: 5030e1fd-943f-42bc-9296-4f315bd5f733
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233541"
 ---
 # <a name="atomic-transactions"></a><span data-ttu-id="67152-102">原子事务</span><span class="sxs-lookup"><span data-stu-id="67152-102">Atomic Transactions</span></span>
 <span data-ttu-id="67152-103">BizTalk 业务流程可设计为按照事务的传统“ACID”概念，执行不同部分的工作。</span><span class="sxs-lookup"><span data-stu-id="67152-103">BizTalk orchestrations can be designed to run discrete pieces of work, following the classic 'ACID' concept of a transaction.</span></span> <span data-ttu-id="67152-104">在执行时，这些离散的或原子的工作单位会将业务流程从一个一致的状态转移到独立于其他工作单位的一致且持久的新状态。</span><span class="sxs-lookup"><span data-stu-id="67152-104">These discrete or atomic units of work, when performed, move the business process from one consistent state to a new, consistent and durable state that is isolated from other units of work.</span></span> <span data-ttu-id="67152-105">这通常是通过使用**作用域**构造，用于封装的与事务的语义的工作单元。</span><span class="sxs-lookup"><span data-stu-id="67152-105">This is typically done by using the **Scope** construct that encapsulates the units of work with the transactional semantics.</span></span> <span data-ttu-id="67152-106">也可以将整个业务流程定义为一个原子事务，而不使用作用域。</span><span class="sxs-lookup"><span data-stu-id="67152-106">The entire orchestration can also be defined as an atomic transaction without the use of scopes.</span></span> <span data-ttu-id="67152-107">但是，这些作用域不能标记为事务性的，除非业务流程本身标记为长期或原子事务类型。</span><span class="sxs-lookup"><span data-stu-id="67152-107">The scopes, however, cannot be marked as transactional unless the orchestration itself is marked as a long running or atomic transaction type.</span></span> <span data-ttu-id="67152-108">原子事务保证在事务性更新期间发生故障时可自动回滚任何部分更新，并且消除事务的影响（事务中进行的任何 .NET 调用的影响除外）。</span><span class="sxs-lookup"><span data-stu-id="67152-108">Atomic transactions guarantee that any partial updates are rolled back automatically in the event of a failure during the transactional update, and that the effects of the transaction are erased (except for the effects of any .NET calls that are made in the transaction).</span></span> <span data-ttu-id="67152-109">BizTalk 业务流程中的原子事务与分布式事务处理协调器 (DTC) 事务大体相似，只是前者通常存活时间较短并且具有四个“ACID”属性（原子性、一致性、隔离性和持久性）：</span><span class="sxs-lookup"><span data-stu-id="67152-109">Atomic transactions in BizTalk orchestrations are similar to distributed transaction coordinator (DTC) transactions in that they are generally short-lived and have the four "ACID" attributes (atomicity, consistency, isolation, and durability):</span></span>  

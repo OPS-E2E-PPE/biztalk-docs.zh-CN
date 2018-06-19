@@ -1,14 +1,14 @@
 ---
-title: "错误-CSharp 存储在以下文件的输出： &lt;file:---{0}&gt; |Microsoft 文档"
-ms.custom: 
+title: 错误-CSharp 存储在以下文件的输出： &lt;file:---{0}&gt; |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bab92f6b-661a-486d-b850-939c9745eb0c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240653"
 ---
 # <a name="error---the-output-csharp-is-stored-in-the-following-file-ltfile---0gt"></a><span data-ttu-id="56c86-102">错误-CSharp 存储在以下文件的输出： &lt;file:---{0}&gt;</span><span class="sxs-lookup"><span data-stu-id="56c86-102">Error - The output CSharp is stored in the following file: &lt;file:---{0}&gt;</span></span>
 <span data-ttu-id="56c86-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="56c86-103">**Error Code**</span></span>  

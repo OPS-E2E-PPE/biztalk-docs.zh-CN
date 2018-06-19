@@ -1,11 +1,11 @@
 ---
-title: "提高性能的存档和清除进程 |Microsoft 文档"
-ms.custom: 
+title: 提高性能的存档和清除进程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - archiving [Tracking database], system performance
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - performance, purging
 - purging, system performance
 ms.assetid: d65da58d-65e0-4f6c-8b15-5d4448049b42
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257837"
 ---
 # <a name="improving-the-performance-of-the-archiving-and-purging-process"></a><span data-ttu-id="642f0-102">提高存档和清除进程的性能</span><span class="sxs-lookup"><span data-stu-id="642f0-102">Improving the Performance of the Archiving and Purging Process</span></span>
 <span data-ttu-id="642f0-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库中存储的数据量有可能增长得非常迅速，这与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案的设计方式、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案所处理的消息数量和消息大小以及跟踪的配置方式都有关。</span><span class="sxs-lookup"><span data-stu-id="642f0-103">The amount of data stored in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases can grow very quickly depending on how you have designed your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] scenario, depending on the number and size of messages processed by your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] scenario, and depending on how you have configured tracking.</span></span> <span data-ttu-id="642f0-104">使数据库大小维持在合理的水平，可提高处理效率并使系统中的数据量在任何给定时间都保持正常。</span><span class="sxs-lookup"><span data-stu-id="642f0-104">By maintaining your database size at a healthy level, processing is more efficient and the amount of data in your system is normalized at any given time.</span></span> <span data-ttu-id="642f0-105">这样能够发挥出高效而稳定的性能。</span><span class="sxs-lookup"><span data-stu-id="642f0-105">This provides efficient and consistent performance.</span></span> <span data-ttu-id="642f0-106">此过程的自动化，可免去您手动维护数据库的工作。</span><span class="sxs-lookup"><span data-stu-id="642f0-106">By automating this process you free yourself of the burden of manually maintaining your databases.</span></span>  

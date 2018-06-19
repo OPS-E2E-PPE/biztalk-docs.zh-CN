@@ -1,14 +1,14 @@
 ---
-title: "无效的授权值 |Microsoft 文档"
-ms.custom: 
+title: 无效的授权值 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70d0dd75-b045-4b67-ba23-78551493f074
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256989"
 ---
 # <a name="invalid-authorization-value"></a><span data-ttu-id="d3938-102">授权值无效</span><span class="sxs-lookup"><span data-stu-id="d3938-102">Invalid Authorization Value</span></span>
 ## <a name="details"></a><span data-ttu-id="d3938-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d3938-103">Details</span></span>  

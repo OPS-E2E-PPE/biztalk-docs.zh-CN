@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254621"
 ---
 # <a name="how-to-modify-orchestration-throttling-settings"></a><span data-ttu-id="1a667-102">如何修改业务流程阻止设置</span><span class="sxs-lookup"><span data-stu-id="1a667-102">How to Modify Orchestration Throttling Settings</span></span>
 <span data-ttu-id="1a667-103">使用 BizTalk 设置仪表板，可以在 BizTalk 组中修改给定主机的业务流程阻止配置设置。</span><span class="sxs-lookup"><span data-stu-id="1a667-103">Using the BizTalk Settings Dashboard, you can modify the orchestration throttling configuration settings of a given host, across the BizTalk Group.</span></span> <span data-ttu-id="1a667-104">这些设置将应用于分配到给定主机的所有主机实例。</span><span class="sxs-lookup"><span data-stu-id="1a667-104">These settings apply to all host instances assigned to the given host.</span></span> <span data-ttu-id="1a667-105">本主题提供了修改这些设置的分步过程。</span><span class="sxs-lookup"><span data-stu-id="1a667-105">This topic provides the step-by-step procedure to modify these settings.</span></span>  

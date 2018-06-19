@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, schemas
 - schemas, Web services
 ms.assetid: 3ace0260-a1cb-4e59-a820-36ee7d5cceda
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22239117"
 ---
 # <a name="considerations-when-publishing-web-services"></a><span data-ttu-id="d0953-102">发布 Web Services 时的注意事项</span><span class="sxs-lookup"><span data-stu-id="d0953-102">Considerations When Publishing Web Services</span></span>
 <span data-ttu-id="d0953-103">本主题介绍你在发布 Web Services 之前应考虑的信息。</span><span class="sxs-lookup"><span data-stu-id="d0953-103">This topic provides information that you should consider before you publish your Web services.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何修改词汇定义 |Microsoft 文档"
-ms.custom: 
+title: 如何修改词汇定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - vocabularies, facts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - vocabularies, definitions
 - vocabularies, modifying
 ms.assetid: 866bb9b9-34e1-4a05-a84e-540c7f7fae3b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254165"
 ---
 # <a name="how-to-modify-vocabulary-definitions"></a><span data-ttu-id="bf5d4-102">如何修改词汇定义</span><span class="sxs-lookup"><span data-stu-id="bf5d4-102">How to Modify Vocabulary Definitions</span></span>
 <span data-ttu-id="bf5d4-103">通过使用词汇定义向导更改显示名称或更改与显示名称关联的绑定，可以修改未发布的词汇版本中的词汇定义。</span><span class="sxs-lookup"><span data-stu-id="bf5d4-103">You can modify a vocabulary definition in an unpublished version of a vocabulary by using the Vocabulary Definition Wizard to change the display name or to change the binding associated with the display name.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="bf5d4-112">在事实浏览器窗口中，单击**词汇**选项卡，然后选择你想要更新的未发布的词汇版本。</span><span class="sxs-lookup"><span data-stu-id="bf5d4-112">In the Facts Explorer window, click the **Vocabularies** tab, and select the unpublished vocabulary version that you want to update.</span></span>  
   
-2.  <span data-ttu-id="bf5d4-113">单击**数据库**， **XML 架构**，或**.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="bf5d4-113">Click **Databases**, **XML Schemas**, or **.NET Classes**.</span></span>  
+2.  <span data-ttu-id="bf5d4-113">单击**数据库**， **XML 架构**，或 **.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="bf5d4-113">Click **Databases**, **XML Schemas**, or **.NET Classes**.</span></span>  
   
 3.  <span data-ttu-id="bf5d4-114">在数据源层次结构中导航到所需事实。</span><span class="sxs-lookup"><span data-stu-id="bf5d4-114">Navigate through the data source hierarchy to the fact you want.</span></span>  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240917"
 ---
 # <a name="error---external-assembly-for-scripting-functoid-cannot-be-invoked"></a><span data-ttu-id="24566-102">错误-用于脚本编写 Functoid 的外部程序集不能调用</span><span class="sxs-lookup"><span data-stu-id="24566-102">Error - External Assembly for Scripting Functoid Cannot Be Invoked</span></span>
 <span data-ttu-id="24566-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="24566-103">**Error Code**</span></span>  

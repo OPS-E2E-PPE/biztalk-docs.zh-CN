@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247357"
 ---
 # <a name="how-to-add-parameters-to-orchestrations"></a><span data-ttu-id="bbf23-102">如何向业务流程添加参数</span><span class="sxs-lookup"><span data-stu-id="bbf23-102">How to Add Parameters to Orchestrations</span></span>
 <span data-ttu-id="bbf23-103">您可以在“业务流程视图”窗口中指定业务流程应采用的参数。</span><span class="sxs-lookup"><span data-stu-id="bbf23-103">You can specify what parameters your orchestration should take in the Orchestration View window.</span></span> <span data-ttu-id="bbf23-104">业务流程可用以下项作为参数：</span><span class="sxs-lookup"><span data-stu-id="bbf23-104">An orchestration can take the following items as parameters:</span></span>  

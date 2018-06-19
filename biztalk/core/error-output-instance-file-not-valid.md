@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240357"
 ---
 # <a name="error---output-instance-file-not-valid"></a><span data-ttu-id="9f0a4-102">错误-输出实例文件无效</span><span class="sxs-lookup"><span data-stu-id="9f0a4-102">Error - Output Instance File Not Valid</span></span>
 <span data-ttu-id="9f0a4-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="9f0a4-103">**Explanation**</span></span>  

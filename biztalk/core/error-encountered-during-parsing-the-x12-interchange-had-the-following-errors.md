@@ -1,14 +1,14 @@
 ---
-title: "在解析过程中遇到错误。 X12 交换了以下错误 |Microsoft 文档"
-ms.custom: 
+title: 在解析过程中遇到错误。 X12 交换了以下错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c1085d4-75ef-4f63-84c9-287a4a61274a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240125"
 ---
 # <a name="error-encountered-during-parsing-the-x12-interchange-had-the-following-errors"></a><span data-ttu-id="bcd08-103">在解析过程中遇到错误。</span><span class="sxs-lookup"><span data-stu-id="bcd08-103">Error encountered during parsing.</span></span> <span data-ttu-id="bcd08-104">X12 交换发生了以下错误</span><span class="sxs-lookup"><span data-stu-id="bcd08-104">The X12 interchange had the following errors</span></span>
 ## <a name="details"></a><span data-ttu-id="bcd08-105">详细信息</span><span class="sxs-lookup"><span data-stu-id="bcd08-105">Details</span></span>  

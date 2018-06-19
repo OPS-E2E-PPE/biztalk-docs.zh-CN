@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240717"
 ---
 # <a name="error---unreferenced-source-schema"></a><span data-ttu-id="be8db-102">错误-未引用的源架构</span><span class="sxs-lookup"><span data-stu-id="be8db-102">Error - Unreferenced Source Schema</span></span>
 <span data-ttu-id="be8db-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="be8db-103">**Error Code**</span></span>  

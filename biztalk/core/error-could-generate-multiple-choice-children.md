@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240685"
 ---
 # <a name="error---could-generate-multiple-choice-children"></a><span data-ttu-id="6cd64-102">错误-无法生成多个选择的子节点</span><span class="sxs-lookup"><span data-stu-id="6cd64-102">Error - Could Generate Multiple Choice Children</span></span>
 <span data-ttu-id="6cd64-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="6cd64-103">**Error Code**</span></span>  

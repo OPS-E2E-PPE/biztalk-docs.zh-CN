@@ -1,14 +1,14 @@
 ---
-title: "配置常规设置 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置常规设置 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8592c52e-5156-418c-9c49-7478f73c372e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234621"
 ---
 # <a name="configuring-general-settings-as2"></a><span data-ttu-id="86fef-102">配置常规设置（AS2）</span><span class="sxs-lookup"><span data-stu-id="86fef-102">Configuring General Settings (AS2)</span></span>
 <span data-ttu-id="86fef-103">作为常规设置的一部分，您可以指定协议名称、将使用的协议 (AS2)、协议的参与方和配置文件，以及是否为所有通过此协议处理的消息启用报告功能。 </span><span class="sxs-lookup"><span data-stu-id="86fef-103">As part of the general settings, you specify agreement name, the protocol it will use (AS2), the parties and profiles that the agreement is between, and whether to have reporting enabled for all messages processed through the agreement.</span></span> <span data-ttu-id="86fef-104">作为协议的一部分，还可以指定参与方联系信息。</span><span class="sxs-lookup"><span data-stu-id="86fef-104">You can also specify the party contact information as part of the agreement.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241389"
 ---
 # <a name="error---schema-dependency-not-valid"></a><span data-ttu-id="9d058-102">错误-架构依存关系无效</span><span class="sxs-lookup"><span data-stu-id="9d058-102">Error - Schema Dependency Not Valid</span></span>
 <span data-ttu-id="9d058-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="9d058-103">**Error Code**</span></span>  

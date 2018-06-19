@@ -17,7 +17,7 @@ helpviewer_keywords:
 - examples, filters
 - messages, examples
 ms.assetid: 8fba494c-9257-4eed-8b6a-867056147c2c
-caps.latest.revision: ''
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22234725"
 ---
 # <a name="cbrsample-biztalk-server-sample"></a><span data-ttu-id="d7a6b-102">CBRSample （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="d7a6b-102">CBRSample (BizTalk Server Sample)</span></span>
 <span data-ttu-id="d7a6b-103">CBRSample 示例演示如何应用筛选器和出站映射，以便基于内容转换和路由实例消息。</span><span class="sxs-lookup"><span data-stu-id="d7a6b-103">The CBRSample sample demonstrates how to apply filters and an outbound map to transform and route instance messages based on content.</span></span>  

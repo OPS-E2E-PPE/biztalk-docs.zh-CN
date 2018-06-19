@@ -1,14 +1,14 @@
 ---
-title: "配置常规设置 (EDIFACT) |Microsoft 文档"
-ms.custom: 
+title: 配置常规设置 (EDIFACT) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e18892d3-c1a4-41c8-98c2-a116ce2805ba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234565"
 ---
 # <a name="configuring-general-settings-edifact"></a><span data-ttu-id="25b06-102">配置常规设置 (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="25b06-102">Configuring General Settings (EDIFACT)</span></span>
 <span data-ttu-id="25b06-103">作为常规设置的一部分，指定协议名称、将使用的协议（X12 或 EDIFACT）、之间存在协议的参与方和配置文件以及是否为通过协议处理的所有消息启用报告。</span><span class="sxs-lookup"><span data-stu-id="25b06-103">As part of the general settings, you specify agreement name, the protocol it will use (X12 or EDIFACT), the parties and profiles that the agreement is between, and whether to have reporting enabled for all messages processed through the agreement.</span></span> <span data-ttu-id="25b06-104">作为协议的一部分，还可以指定参与方联系信息。</span><span class="sxs-lookup"><span data-stu-id="25b06-104">You can also specify the party contact information as part of the agreement.</span></span>  

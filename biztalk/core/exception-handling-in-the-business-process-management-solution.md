@@ -1,17 +1,17 @@
 ---
-title: "业务流程管理解决方案中的异常处理 |Microsoft 文档"
-ms.custom: 
+title: 业务流程管理解决方案中的异常处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, tutorials
 - process management solution tutorial, errors
 ms.assetid: ac9fcb33-7dac-448e-88b8-04d4d439ea6a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245877"
 ---
 # <a name="exception-handling-in-the-business-process-management-solution"></a><span data-ttu-id="453d3-102">业务流程管理解决方案中的异常处理</span><span class="sxs-lookup"><span data-stu-id="453d3-102">Exception Handling in the Business Process Management Solution</span></span>
 <span data-ttu-id="453d3-103">业务流程管理解决方案使用一个特殊的异常处理业务流程以及标准的 BizTalk Server 异常处理方式，对于适配器、管道、映射和路由故障，则使用新的错误报告功能。</span><span class="sxs-lookup"><span data-stu-id="453d3-103">The business process management solution uses a special exception handling orchestration, as well as the standard BizTalk Server exception handling, and for adapter, pipeline, mapping, and routing failures, the new error reporting feature.</span></span> <span data-ttu-id="453d3-104">此自定义的系统围绕**ExceptionHandler**业务流程。</span><span class="sxs-lookup"><span data-stu-id="453d3-104">This customized system is built around the **ExceptionHandler** orchestration.</span></span> <span data-ttu-id="453d3-105">此解决方案使用**ExceptionHandler** orchestration 重试操作或重试后出现临时问题可能会成功的调用。</span><span class="sxs-lookup"><span data-stu-id="453d3-105">The solution uses the **ExceptionHandler** orchestration to retry an operation or to retry a call that might succeed after a transient problem.</span></span>  

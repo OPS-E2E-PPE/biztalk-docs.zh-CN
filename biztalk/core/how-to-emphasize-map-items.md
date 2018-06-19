@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2732b36-ca57-4566-ba26-da27a3082f32
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22255437"
 ---
 # <a name="how-to-emphasize-map-items"></a><span data-ttu-id="2ef3e-102">如何强调映射项</span><span class="sxs-lookup"><span data-stu-id="2ef3e-102">How to Emphasize Map Items</span></span>
 <span data-ttu-id="2ef3e-103">在 BizTalk 映射器中，当您选择一个映射项目时，都会强调所有相关的链接和 functoids。</span><span class="sxs-lookup"><span data-stu-id="2ef3e-103">In the BizTalk Mapper, when you select a map item, all the associated links and functoids are emphasized.</span></span> <span data-ttu-id="2ef3e-104">这在具有许多链接的映射中非常有用，因为识别关系和相关架构项比较困难。</span><span class="sxs-lookup"><span data-stu-id="2ef3e-104">This is useful in maps with many links, where it is difficult to identify a relationship and the related schema items.</span></span>  

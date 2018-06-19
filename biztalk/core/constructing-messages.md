@@ -1,11 +1,11 @@
 ---
-title: "构造消息 |Microsoft 文档"
-ms.custom: 
+title: 构造消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, messages
 - messages, creating
 ms.assetid: c9fc1e97-ff53-42e2-848c-6c8fae7c9122
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237813"
 ---
 # <a name="constructing-messages"></a><span data-ttu-id="fa19e-102">构造消息</span><span class="sxs-lookup"><span data-stu-id="fa19e-102">Constructing Messages</span></span>
 <span data-ttu-id="fa19e-103">只要您通过接收消息或为消息变量赋值将消息引入业务流程，就需要构造消息。</span><span class="sxs-lookup"><span data-stu-id="fa19e-103">You construct a message any time that you introduce a message into your orchestration, either by receiving it or by assigning values to a message variable.</span></span> <span data-ttu-id="fa19e-104">您构造的任何消息必须具有消息类型，这样运行时引擎才有所使用的对象的完整说明。</span><span class="sxs-lookup"><span data-stu-id="fa19e-104">Any message that you construct must have a message type, so that the runtime engine has a complete description of the object that it is working with.</span></span> <span data-ttu-id="fa19e-105">多部分消息类型可以是用户定义的，可以是 .NET 类，也可以是架构。</span><span class="sxs-lookup"><span data-stu-id="fa19e-105">The multi-part message type can be user-defined, it can be a .NET class, or it can be a schema.</span></span> <span data-ttu-id="fa19e-106">您可以构造消息以各种方式： 你可以调用一个.NET 类来创建一条消息，将一条消息分配给另一个字符串，或使用转换来将消息中的某些值映射到另一条消息中的值。</span><span class="sxs-lookup"><span data-stu-id="fa19e-106">You can construct messages in various ways: you can invoke a .NET class to create a message, assign one message to another, or use a transform to map certain values within a message to values within another message.</span></span> <span data-ttu-id="fa19e-107">消息还可以由接收操作构造，或者在业务流程将消息作为参数来接受的时候构造。</span><span class="sxs-lookup"><span data-stu-id="fa19e-107">Messages are also constructed by a receive action or when your orchestration accepts a message as a parameter.</span></span>  

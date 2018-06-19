@@ -1,14 +1,14 @@
 ---
-title: "分隔符不唯一，是相同的字段和段分隔符 |Microsoft 文档"
-ms.custom: 
+title: 分隔符不唯一，是相同的字段和段分隔符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1441434a-e969-4803-8e44-c7738d9b23ed
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238725"
 ---
 # <a name="delimiters-are-not-unique-field-and-segment-separator-are-the-same"></a><span data-ttu-id="556b5-102">分隔符不唯一，字段和段分隔符相同</span><span class="sxs-lookup"><span data-stu-id="556b5-102">Delimiters are not unique, field and segment separator are the same</span></span>
 ## <a name="details"></a><span data-ttu-id="556b5-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="556b5-103">Details</span></span>  

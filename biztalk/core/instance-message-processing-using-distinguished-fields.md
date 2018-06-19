@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257509"
 ---
 # <a name="instance-message-processing-using-distinguished-fields"></a><span data-ttu-id="22bd8-102">使用可分辨字段处理实例消息</span><span class="sxs-lookup"><span data-stu-id="22bd8-102">Instance Message Processing Using Distinguished Fields</span></span>
 <span data-ttu-id="22bd8-103">将属性提升通过 **可分辨字段** 机制不需要的属性架构创建。</span><span class="sxs-lookup"><span data-stu-id="22bd8-103">Promoting properties by using the **Distinguished Field** mechanism does not require the creation of a property schema.</span></span> <span data-ttu-id="22bd8-104">因为所有属性提升，与你使用 **升级属性** 对话框中，这是可访问通过使用 **升级属性** 属性 **架构** 节点在消息架构中，或通过使用 **Promote & #124;显示升级** 命令 **BizTalk** 或快捷菜单。</span><span class="sxs-lookup"><span data-stu-id="22bd8-104">As with all property promotion, you use the **Promote Properties** dialog box, which is accessible by using the **Promote Properties** property of the **Schema** node in message schemas, or by using the **Promote &#124; Show Promotions** command on the **BizTalk** or shortcut menus.</span></span>  

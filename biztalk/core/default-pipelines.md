@@ -1,11 +1,11 @@
 ---
-title: "默认管道 |Microsoft 文档"
-ms.custom: 
+title: 默认管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, PassThruTransmit
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Microsoft.BizTalk.DefaultPipelines assembly
 - pipelines, default
 ms.assetid: 7d82bb2c-c7f1-44a1-9e1b-89b0bb806845
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239301"
 ---
 # <a name="default-pipelines"></a><span data-ttu-id="b2161-102">默认管道</span><span class="sxs-lookup"><span data-stu-id="b2161-102">Default Pipelines</span></span>
 <span data-ttu-id="b2161-103">默认情况下，在创建新应用程序时将创建和部署默认管道。这些管道将显示在每个 BizTalk 项目的 \References 文件夹下的 Microsoft.BizTalk.DefaultPipelines 程序集中。</span><span class="sxs-lookup"><span data-stu-id="b2161-103">When you create a new application, the default pipelines are created and deployed by default and appear in the Microsoft.BizTalk.DefaultPipelines assembly in the \References folder for every BizTalk project.</span></span> <span data-ttu-id="b2161-104">在管道设计器中不能修改默认管道。</span><span class="sxs-lookup"><span data-stu-id="b2161-104">The default pipelines cannot be modified in Pipeline Designer.</span></span> <span data-ttu-id="b2161-105">在 BizTalk 浏览器中配置发送端口或接收位置时，可以选择这些管道。</span><span class="sxs-lookup"><span data-stu-id="b2161-105">These pipelines can be selected when configuring a send port or receive location in BizTalk Explorer.</span></span> <span data-ttu-id="b2161-106">本主题对这些默认管道以及何时使用这些管道进行了说明。</span><span class="sxs-lookup"><span data-stu-id="b2161-106">This topic describes the default pipelines and when to use them.</span></span>  

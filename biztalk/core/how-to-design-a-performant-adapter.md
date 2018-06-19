@@ -1,14 +1,14 @@
 ---
-title: "如何设计的高性能适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何设计的高性能适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a1f338-fd7c-41c8-a181-8da8b293c4cc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250533"
 ---
 # <a name="how-to-design-a-performant-adapter"></a><span data-ttu-id="3ee56-102">如何设计优异的适配器</span><span class="sxs-lookup"><span data-stu-id="3ee56-102">How to Design a Performant Adapter</span></span>
 <span data-ttu-id="3ee56-103">出于性能方面的考虑，在提交消息批、传输批和对批中消息执行一般性操作等方面，所有适配器都应该是识别批的。</span><span class="sxs-lookup"><span data-stu-id="3ee56-103">For performance purposes all adapters should be batch-aware with regard to submitting batches of messages, transmitting batches, and generally performing operations on messages in batches.</span></span> <span data-ttu-id="3ee56-104">适配器应该尝试公开与性能相关的可配置属性，例如批的大小或批中的字节数，从适配器的设计时用户界面可以配置这些属性。</span><span class="sxs-lookup"><span data-stu-id="3ee56-104">Adapters should try to expose configurable performance-related attributes, such as the size of batches or the number of bytes in a batch, that are configurable from the adapter's design-time user interface.</span></span>  

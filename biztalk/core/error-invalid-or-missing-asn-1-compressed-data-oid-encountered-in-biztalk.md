@@ -1,14 +1,14 @@
 ---
-title: "无效或缺少 ASN.1 压缩数据 OID 解压缩处理过程中遇到 |Microsoft 文档"
-ms.custom: 
+title: 无效或缺少 ASN.1 压缩数据 OID 解压缩处理过程中遇到 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0171daa8-289a-43f1-8cbf-d779ef9dc2ea
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241749"
 ---
 # <a name="invalid-or-missing-asn1-compressed-data-oid-encountered-during-decompression-processing"></a><span data-ttu-id="12096-102">解压缩处理期间 ASN.1 压缩数据 OID 无效或缺失</span><span class="sxs-lookup"><span data-stu-id="12096-102">Invalid or missing ASN.1 Compressed Data OID encountered during decompression processing</span></span>
 ## <a name="details"></a><span data-ttu-id="12096-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="12096-103">Details</span></span>  

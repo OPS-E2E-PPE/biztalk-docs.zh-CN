@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240581"
 ---
 # <a name="error---index-functoid-has-negative-index"></a><span data-ttu-id="8633b-102">错误-索引 Functoid 具有负索引</span><span class="sxs-lookup"><span data-stu-id="8633b-102">Error - Index Functoid Has Negative Index</span></span>
 <span data-ttu-id="8633b-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="8633b-103">**Error Code**</span></span>  

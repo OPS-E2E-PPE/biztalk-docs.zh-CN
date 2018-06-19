@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239869"
 ---
 # <a name="error---generic-output-validation"></a><span data-ttu-id="7086e-102">错误-泛型输出验证</span><span class="sxs-lookup"><span data-stu-id="7086e-102">Error - Generic Output Validation</span></span>
 <span data-ttu-id="7086e-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="7086e-103">**Error Code**</span></span>  

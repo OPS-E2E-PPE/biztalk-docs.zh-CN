@@ -1,11 +1,11 @@
 ---
-title: "如何查看架构的架构定义 (XSD) |Microsoft 文档"
-ms.custom: 
+title: 如何查看架构的架构定义 (XSD) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, viewing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - schemas, schema definition (XSD)
 - managing [schemas], schema definition (XSD)
 ms.assetid: 21b6d9e6-5737-4334-9fe6-15ae01f90c0d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256437"
 ---
 # <a name="how-to-view-the-schema-definition-xsd-of-a-schema"></a><span data-ttu-id="6601e-102">如何查看某一架构的架构定义 (XSD)</span><span class="sxs-lookup"><span data-stu-id="6601e-102">How to View the Schema Definition (XSD) of a Schema</span></span>
 <span data-ttu-id="6601e-103">本主题介绍如何使用 BizTalk Server 管理控制台来查看某一架构的架构定义 (XSD)。</span><span class="sxs-lookup"><span data-stu-id="6601e-103">This topic describes how to use the BizTalk Server Administration console to view the schema definition (XSD) of a schema.</span></span> <span data-ttu-id="6601e-104">您可能要查看架构定义以排除架构验证错误或验证部署了正确的架构。</span><span class="sxs-lookup"><span data-stu-id="6601e-104">You might want to do this to troubleshoot schema validation errors or validate that the correct schema is deployed.</span></span>  

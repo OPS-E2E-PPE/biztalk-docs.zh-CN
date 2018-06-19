@@ -1,14 +1,14 @@
 ---
-title: "为适配器配置的自定义下拉列表编辑器 |Microsoft 文档"
-ms.custom: 
+title: 为适配器配置的自定义下拉列表编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a1b0961-652f-42b8-a18a-17abe9542cdd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238493"
 ---
 # <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="8ea30-102">适配器配置的的自定义下拉列表编辑器</span><span class="sxs-lookup"><span data-stu-id="8ea30-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
 <span data-ttu-id="8ea30-103">自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码的下拉文本框的类。</span><span class="sxs-lookup"><span data-stu-id="8ea30-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="8ea30-104">**GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示的下拉菜单的子控件。</span><span class="sxs-lookup"><span data-stu-id="8ea30-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="8ea30-105">服务方法**DropDownControl**和**CloseDropDown**管理与创建的控件**CreatePassword**。</span><span class="sxs-lookup"><span data-stu-id="8ea30-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248669"
 ---
 # <a name="how-to-configure-node-hierarchy-matching"></a><span data-ttu-id="e5b74-102">如何配置匹配的节点层次结构</span><span class="sxs-lookup"><span data-stu-id="e5b74-102">How to Configure Node Hierarchy Matching</span></span>
 <span data-ttu-id="e5b74-103">在映射中创建链接时，BizTalk 映射器会自动创建编译器链接以实现您绘制的链接。</span><span class="sxs-lookup"><span data-stu-id="e5b74-103">When you create a link in a map, the BizTalk Mapper automatically creates compiler links to implement the link you have drawn.</span></span> <span data-ttu-id="e5b74-104">**目标链接** 链接的属性控制 BizTalk 映射程序如何绘制编译器链接。</span><span class="sxs-lookup"><span data-stu-id="e5b74-104">The **Target Links** property of a link controls how the BizTalk Mapper draws the compiler links.</span></span> <span data-ttu-id="e5b74-105">本主题提供有关如何设置目标链接的信息。</span><span class="sxs-lookup"><span data-stu-id="e5b74-105">This topic provides information about how to set the target links.</span></span>  

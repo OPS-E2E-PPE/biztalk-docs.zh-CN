@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240397"
 ---
 # <a name="error---inputs-to-cumulative-functoid-from-different-parent-records"></a><span data-ttu-id="cd480-102">错误-累积 Functoid 输入从不同的父记录</span><span class="sxs-lookup"><span data-stu-id="cd480-102">Error - Inputs to Cumulative Functoid from Different Parent Records</span></span>
 <span data-ttu-id="cd480-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="cd480-103">**Error Code**</span></span>  

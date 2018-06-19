@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234077"
 ---
 # <a name="biztalk-mapper-errors"></a><span data-ttu-id="77d9a-102">BizTalk 映射程序错误</span><span class="sxs-lookup"><span data-stu-id="77d9a-102">BizTalk Mapper Errors</span></span>
 <span data-ttu-id="77d9a-103">本部分提供了与 BizTalk 映射器相关联的编译消息的补充信息。</span><span class="sxs-lookup"><span data-stu-id="77d9a-103">This section provides supplemental information about compilation messages associated with BizTalk Mapper.</span></span> <span data-ttu-id="77d9a-104">你可以访问此信息是在 Microsoft 中的任务列表窗口中选择了其中一个相关的消息也是使用 F1 键[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="77d9a-104">You can access this information using the F1 key when one of the relevant messages is selected in the Task List window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span> <span data-ttu-id="77d9a-105">BizTalk 映射器的概念性和程序性信息，请参阅[创建地图使用 BizTalk 映射程序](../core/creating-maps-using-biztalk-mapper.md)。</span><span class="sxs-lookup"><span data-stu-id="77d9a-105">For conceptual and procedural information for BizTalk Mapper, see [Creating Maps Using BizTalk Mapper](../core/creating-maps-using-biztalk-mapper.md).</span></span>  

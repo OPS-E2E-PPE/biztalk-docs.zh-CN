@@ -1,11 +1,11 @@
 ---
-title: "如何配置 MQSeries 适配器发送和接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 MQSeries 适配器发送和接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive handlers, MQSeries adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send handlers, MQSeries adapters
 - configuring [MQSeries adapters], send handlers
 ms.assetid: e1cfc415-50d2-440b-9301-ad69da28ad3e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248229"
 ---
 # <a name="how-to-configure-mqseries-adapter-send-and-receive-handlers"></a><span data-ttu-id="7ef8f-102">如何配置 MQSeries 适配器发送和接收处理程序</span><span class="sxs-lookup"><span data-stu-id="7ef8f-102">How to Configure MQSeries Adapter Send and Receive Handlers</span></span>
 <span data-ttu-id="7ef8f-103">你可以配置为发送某些属性，接收处理程序通过 BizTalk Server 管理控制台的 MQSeries 适配器。</span><span class="sxs-lookup"><span data-stu-id="7ef8f-103">You can configure some properties for the send and receive handlers for the MQSeries adapter through the BizTalk Server Administration console.</span></span> <span data-ttu-id="7ef8f-104">在过程中所述[如何配置 MQSeries 适配器接收位置和发送端口](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)建立的大部分发送处理程序属性的值。</span><span class="sxs-lookup"><span data-stu-id="7ef8f-104">The process described in [How to Configure MQSeries Adapter Receive Locations and Send Ports](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md) establishes the values for the majority of send handler properties.</span></span>  

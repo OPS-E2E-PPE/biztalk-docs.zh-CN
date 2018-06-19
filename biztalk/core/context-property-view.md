@@ -1,11 +1,11 @@
 ---
-title: "上下文属性视图 |Microsoft 文档"
-ms.custom: 
+title: 上下文属性视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, message schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Context Property view
 - message schemas, XML messages
 ms.assetid: 17a21b86-995c-4dc2-9a3c-1309837d0b9b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237877"
 ---
 # <a name="context-property-view"></a><span data-ttu-id="6dea5-102">上下文属性视图</span><span class="sxs-lookup"><span data-stu-id="6dea5-102">Context Property View</span></span>
 <span data-ttu-id="6dea5-103">“上下文属性”视图显示与该属性相关联的 XML 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="6dea5-103">The Context Property view displays the schema of the XML message associated with the property.</span></span> <span data-ttu-id="6dea5-104">可以从“业务流程调度”视图中的某些形状的快捷菜单访问此视图。</span><span class="sxs-lookup"><span data-stu-id="6dea5-104">The view is available from the shortcut menu for some of the shapes in the Orchestration Schedule view.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 如何处理大消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 如何处理大消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62c070be-dff5-4349-9e36-dd3a7caf1752
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249629"
 ---
 # <a name="how-biztalk-server-processes-large-messages"></a><span data-ttu-id="de2b2-102">BizTalk Server 如何处理大消息</span><span class="sxs-lookup"><span data-stu-id="de2b2-102">How BizTalk Server Processes Large Messages</span></span>
 ## <a name="what-is-a-large-message"></a><span data-ttu-id="de2b2-103">什么是大消息？</span><span class="sxs-lookup"><span data-stu-id="de2b2-103">What is a large message?</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
      <span data-ttu-id="de2b2-144">创建此值后，请输入一个要设置为新阈值的字节数的十进制值。</span><span class="sxs-lookup"><span data-stu-id="de2b2-144">After you have created this value, enter a decimal value with the number of bytes to set the new threshold to.</span></span> <span data-ttu-id="de2b2-145">例如，输入十进制值 2097152 可将消息大小阈值从默认的 1 MB 增大至 2 MB。</span><span class="sxs-lookup"><span data-stu-id="de2b2-145">For example, enter a decimal value of 2097152 to increase the message size threshold to 2 MB (from the default of 1 MB).</span></span> <span data-ttu-id="de2b2-146">在具有大量可用内存的系统上增大此值可提高吞吐量。</span><span class="sxs-lookup"><span data-stu-id="de2b2-146">Increase this value on systems with a large amount of available memory to improve throughput.</span></span> <span data-ttu-id="de2b2-147">将文档缓存到磁盘可以节省内存，但是会对总体吞吐量造成影响。</span><span class="sxs-lookup"><span data-stu-id="de2b2-147">Buffering documents to disk conserves memory at a cost to overall throughput.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="de2b2-148">默认情况下，在映射期间缓冲到文件系统的文档写入到*%temp%* BizTalk Server 计算机的目录。</span><span class="sxs-lookup"><span data-stu-id="de2b2-148">By default, documents that are buffered to the file system during mapping are written to the *%temp%* directory of the BizTalk Server computer.</span></span> <span data-ttu-id="de2b2-149">更改的设置*%temp%*到非系统磁盘，以在映射期间缓冲到文件系统的大消息时提高性能的环境变量。</span><span class="sxs-lookup"><span data-stu-id="de2b2-149">Change the setting for the *%temp%* environment variable to a non-system disk to improve performance when buffering large messages to the file system during mapping.</span></span>  
+    >  <span data-ttu-id="de2b2-148">默认情况下，在映射期间缓冲到文件系统的文档写入到 *%temp%* BizTalk Server 计算机的目录。</span><span class="sxs-lookup"><span data-stu-id="de2b2-148">By default, documents that are buffered to the file system during mapping are written to the *%temp%* directory of the BizTalk Server computer.</span></span> <span data-ttu-id="de2b2-149">更改的设置 *%temp%* 到非系统磁盘，以在映射期间缓冲到文件系统的大消息时提高性能的环境变量。</span><span class="sxs-lookup"><span data-stu-id="de2b2-149">Change the setting for the *%temp%* environment variable to a non-system disk to improve performance when buffering large messages to the file system during mapping.</span></span>  
   
 2.  <span data-ttu-id="de2b2-150">在业务流程中尽量减少使用映射：</span><span class="sxs-lookup"><span data-stu-id="de2b2-150">Minimize the use of maps in orchestrations:</span></span>  
   

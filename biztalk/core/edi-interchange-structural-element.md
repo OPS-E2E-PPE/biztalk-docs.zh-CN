@@ -1,14 +1,14 @@
 ---
-title: "EDI 交换结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 交换结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03f47ae2-fa0f-4d88-a700-85f3d515d2d0
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239525"
 ---
 # <a name="edi-interchange-structural-element"></a><span data-ttu-id="8e6fc-102">EDI 交换结构元素</span><span class="sxs-lookup"><span data-stu-id="8e6fc-102">EDI Interchange Structural Element</span></span>
 <span data-ttu-id="8e6fc-103">交换是 EDI 消息的最高级别的结构元素。</span><span class="sxs-lookup"><span data-stu-id="8e6fc-103">The interchange is the highest-level structural element of an EDI message.</span></span> <span data-ttu-id="8e6fc-104">它包含由两个合作伙伴交换的一个或多个组的集合。</span><span class="sxs-lookup"><span data-stu-id="8e6fc-104">It contains a collection of one or more groups exchanged by two partners.</span></span> <span data-ttu-id="8e6fc-105">交换的目标必须是一个贸易合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="8e6fc-105">The destination of an interchange must be a single trading partner.</span></span> <span data-ttu-id="8e6fc-106">交换可能包含一种或多种类型的事务集/消息。</span><span class="sxs-lookup"><span data-stu-id="8e6fc-106">Interchanges may contain transaction sets/message of one or more than one type.</span></span>  

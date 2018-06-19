@@ -1,14 +1,14 @@
 ---
-title: "无效的地址方案 |Microsoft 文档"
-ms.custom: 
+title: 无效的地址方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b059289-654e-40d6-a092-2a685e6e10f7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257789"
 ---
 # <a name="invalid-address-scheme"></a><span data-ttu-id="04d22-102">地址方案无效</span><span class="sxs-lookup"><span data-stu-id="04d22-102">Invalid address scheme</span></span>
 ## <a name="details"></a><span data-ttu-id="04d22-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="04d22-103">Details</span></span>  
@@ -53,6 +54,6 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="04d22-127">在**WCF [***传输类型***] 传输属性**对话框中，单击**常规**选项卡。</span><span class="sxs-lookup"><span data-stu-id="04d22-127">In the **WCF [***transport type***] Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-9. <span data-ttu-id="04d22-128">在**地址 (URI)**文本中，确保地址值匹配的 WCF 适配器正在使用的类型。</span><span class="sxs-lookup"><span data-stu-id="04d22-128">In the **Address (URI)** text box, ensure that address value matches the type of the WCF adapter that is being used.</span></span>  
+9. <span data-ttu-id="04d22-128">在**地址 (URI)** 文本中，确保地址值匹配的 WCF 适配器正在使用的类型。</span><span class="sxs-lookup"><span data-stu-id="04d22-128">In the **Address (URI)** text box, ensure that address value matches the type of the WCF adapter that is being used.</span></span>  
   
  <span data-ttu-id="04d22-129">此外，如果你与系统提供的绑定类型一起使用的 WCF 自定义适配器，检查的值**绑定类型**列表上**绑定**选项卡。如果**绑定类型**配置为**customBinding**，地址应与匹配传输绑定元素中列出**绑定类型**上列表**绑定**选项卡。</span><span class="sxs-lookup"><span data-stu-id="04d22-129">Also, if you use the WCF-Custom adapter with a system-provided binding type, check the value of the **Binding Type** list on the **Binding** tab. If the **Binding Type** is configured to **customBinding**, the address should match the transport binding element listed in the **Binding Type** list on the **Binding** tab.</span></span>

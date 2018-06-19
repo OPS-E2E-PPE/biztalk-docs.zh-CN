@@ -1,14 +1,14 @@
 ---
-title: "如何将数据复制到与消息的上下文可分辨字段 |Microsoft 文档"
-ms.custom: 
+title: 如何将数据复制到与消息的上下文可分辨字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 004a13ca-a162-4a5e-9f72-8a5c55bbb7a6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248965"
 ---
 # <a name="how-to-copy-data-to-the-message-context-as-distinguished-fields"></a><span data-ttu-id="065da-102">如何将数据复制到可分辨的字段的消息上下文</span><span class="sxs-lookup"><span data-stu-id="065da-102">How to Copy Data to the Message Context as Distinguished Fields</span></span>
 <span data-ttu-id="065da-103">本主题提供有关将提升为属性的分步说明**可分辨字段**。</span><span class="sxs-lookup"><span data-stu-id="065da-103">This topic provides step-by-step instructions for promoting a property as a **Distinguished Field**.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何自动将记录的链接 |Microsoft 文档"
-ms.custom: 
+title: 如何自动将记录的链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc2926c7-07c2-45d1-afde-d3f894f6b88d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254845"
 ---
 # <a name="how-to-link-records-automatically"></a><span data-ttu-id="d0b2d-102">如何自动将记录的链接</span><span class="sxs-lookup"><span data-stu-id="d0b2d-102">How to Link Records Automatically</span></span>
 <span data-ttu-id="d0b2d-103">当您在源架构和目标架构的两个记录元素之间创建链接时，BizTalk 映射器会通过快捷菜单为您提供实时帮助。</span><span class="sxs-lookup"><span data-stu-id="d0b2d-103">The BizTalk Mapper provides you with just-in-time assistance, through a shortcut menu, when you create links between two record elements of source and destination schemas.</span></span> <span data-ttu-id="d0b2d-104">本主题提供了有关如何使用快捷菜单执行链接操作的信息。</span><span class="sxs-lookup"><span data-stu-id="d0b2d-104">This topic provides information about how to use the shortcut menu to perform the linking operations.</span></span>  

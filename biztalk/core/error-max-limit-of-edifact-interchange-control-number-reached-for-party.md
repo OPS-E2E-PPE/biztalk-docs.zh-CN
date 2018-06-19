@@ -1,14 +1,14 @@
 ---
-title: "当事方达到可接受的 Edifact 交换控制编号的最大限制 |Microsoft 文档"
-ms.custom: 
+title: 当事方达到可接受的 Edifact 交换控制编号的最大限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c00c357-4c7b-42ea-a031-15bad0195a75
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241317"
 ---
 # <a name="max-limit-of-acceptable-edifact-interchange-control-number-has-reached-for-party"></a><span data-ttu-id="0c0a8-102">已达到参与方的可接受 EDIFACT 交换控制编号最大限制</span><span class="sxs-lookup"><span data-stu-id="0c0a8-102">Max limit of acceptable Edifact interchange control number has reached for party</span></span>
 ## <a name="details"></a><span data-ttu-id="0c0a8-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0c0a8-103">Details</span></span>  

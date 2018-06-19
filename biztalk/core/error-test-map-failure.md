@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241621"
 ---
 # <a name="error---test-map-failure"></a><span data-ttu-id="b4010-102">错误-测试映射失败</span><span class="sxs-lookup"><span data-stu-id="b4010-102">Error - Test Map Failure</span></span>
 <span data-ttu-id="b4010-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="b4010-103">**Error Code**</span></span>  

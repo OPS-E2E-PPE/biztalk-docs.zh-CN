@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238373"
 ---
 # <a name="debugging-published-web-services"></a><span data-ttu-id="f9700-102">调试已发布的 Web Services</span><span class="sxs-lookup"><span data-stu-id="f9700-102">Debugging Published Web Services</span></span>
 <span data-ttu-id="f9700-103">本节介绍有关调试已发布 Web Services 的信息。</span><span class="sxs-lookup"><span data-stu-id="f9700-103">This section provides information about debugging your published Web services.</span></span>  

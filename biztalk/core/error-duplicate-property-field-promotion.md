@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241341"
 ---
 # <a name="error---duplicate-property-field-promotion"></a><span data-ttu-id="fe11f-102">错误-重复的属性字段升级</span><span class="sxs-lookup"><span data-stu-id="fe11f-102">Error - Duplicate Property Field Promotion</span></span>
 <span data-ttu-id="fe11f-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="fe11f-103">**Error Code**</span></span>  

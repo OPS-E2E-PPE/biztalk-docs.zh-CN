@@ -1,11 +1,11 @@
 ---
-title: "如何发送端口或发送端口组中登记 |Microsoft 文档"
-ms.custom: 
+title: 如何发送端口或发送端口组中登记 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enlisting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [send ports], enlisting
 - managing [send port groups], enlisting
 ms.assetid: d4298b8e-7dc7-4382-af86-c4db0982b7e0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254469"
 ---
 # <a name="how-to-enlist-a-send-port-or-send-port-group"></a><span data-ttu-id="22204-102">如何登记发送端口或发送端口组</span><span class="sxs-lookup"><span data-stu-id="22204-102">How to Enlist a Send Port or Send Port Group</span></span>
 <span data-ttu-id="22204-103">本主题将介绍如何使用 BizTalk Server 管理控制台登记发送端口或发送端口组。</span><span class="sxs-lookup"><span data-stu-id="22204-103">This topic describes how to use the BizTalk Server Administration console to enlist a send port or send port group.</span></span> <span data-ttu-id="22204-104">登记发送端口或发送端口组将把发送端口或发送端口组与 BizTalk 主机相关联，并为发送端口或发送端口组创建订阅。</span><span class="sxs-lookup"><span data-stu-id="22204-104">Enlisting a send port or send port group associates the send port or send port group with a BizTalk host and creates the subscriptions for the send port or send port group.</span></span> <span data-ttu-id="22204-105">如果发送端口组不包含发送端口，登记发送端口组将不会创建任何订阅。</span><span class="sxs-lookup"><span data-stu-id="22204-105">If a send port group does not contain a send port, enlisting the send port group does not create any subscriptions.</span></span> <span data-ttu-id="22204-106">此外，登记发送端口组不会改变其包含的任何发送端口的状态。</span><span class="sxs-lookup"><span data-stu-id="22204-106">In addition, enlisting a send port group does not change the state of any send ports that it contains.</span></span>  

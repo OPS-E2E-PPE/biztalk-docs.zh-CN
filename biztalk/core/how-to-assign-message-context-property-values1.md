@@ -1,14 +1,14 @@
 ---
-title: "如何分配消息上下文属性 Values1 |Microsoft 文档"
-ms.custom: 
+title: 如何分配消息上下文属性 Values1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e7e76c62-3110-482c-8083-84d411e6f475
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247301"
 ---
 # <a name="how-to-assign-message-context-property-values"></a><span data-ttu-id="c1473-102">如何分配消息上下文属性值</span><span class="sxs-lookup"><span data-stu-id="c1473-102">How to Assign Message Context Property Values</span></span>
 <span data-ttu-id="c1473-103">若要从 BizTalk 业务流程管理 JD Edwards EnterpriseOne 适配器连接会话，必须在项目中添加对 Microsoft.BizTalk.Adapters.JDEProperties.dll 的引用。</span><span class="sxs-lookup"><span data-stu-id="c1473-103">To manage the JD Edwards EnterpriseOne Adapter connection session from a BizTalk orchestration, you must add the reference to Microsoft.BizTalk.Adapters.JDEProperties.dll in your project.</span></span> <span data-ttu-id="c1473-104">此程序集都位于企业 Applications\bin %SystemDrive%\Program Files\Common Files\Microsoft BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="c1473-104">This assembly is located in %SystemDrive%\Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\bin.</span></span>  

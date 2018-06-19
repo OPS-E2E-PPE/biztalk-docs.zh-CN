@@ -1,14 +1,14 @@
 ---
-title: "如何安装进行数字签名的证书 |Microsoft 文档"
-ms.custom: 
+title: 如何安装进行数字签名的证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 910ccd84-c022-46a5-a9de-b99046a480b8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255157"
 ---
 # <a name="how-to-install-the-certificates-for-digital-signatures"></a><span data-ttu-id="4ef06-102">如何安装进行数字签名的证书</span><span class="sxs-lookup"><span data-stu-id="4ef06-102">How to install the Certificates for Digital Signatures</span></span>
 <span data-ttu-id="4ef06-103">下面的过程列出了安装证书以便接收和发送签名消息需遵守的高级步骤。</span><span class="sxs-lookup"><span data-stu-id="4ef06-103">The following procedure lists the high-level steps that you have to follow to install the certificates for receiving and sending signed messages.</span></span>  

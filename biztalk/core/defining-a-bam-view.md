@@ -1,18 +1,18 @@
 ---
-title: "定义 BAM 视图 |Microsoft 文档"
-ms.custom: 
+title: 定义 BAM 视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, views
 - BAM views
 - BAM views, about BAM views
 ms.assetid: a669d837-63eb-4cb6-926c-415c03c6413b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238653"
 ---
 # <a name="defining-a-bam-view"></a><span data-ttu-id="af931-102">定义 BAM 视图</span><span class="sxs-lookup"><span data-stu-id="af931-102">Defining a BAM View</span></span>
 <span data-ttu-id="af931-103">有时，您不希望向所有业务用户公开您的所有业务数据。</span><span class="sxs-lookup"><span data-stu-id="af931-103">Sometimes you do not want to expose all of your business data to all business users.</span></span> <span data-ttu-id="af931-104">您可以创建不同的 BAM 视图，用于公开不同类型的信息。</span><span class="sxs-lookup"><span data-stu-id="af931-104">You can create different BAM views that expose different types of information.</span></span>  

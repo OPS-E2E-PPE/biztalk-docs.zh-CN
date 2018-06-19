@@ -1,14 +1,14 @@
 ---
-title: "配置信封 （EDIFACT 事务集设置） |Microsoft 文档"
-ms.custom: 
+title: 配置信封 （EDIFACT 事务集设置） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec140def-6155-4b8a-8489-6e0a530bd697
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234629"
 ---
 # <a name="configuring-envelopes-edifact-transaction-set-settings"></a><span data-ttu-id="003de-102">配置信封（EDIFACT--事务集设置）</span><span class="sxs-lookup"><span data-stu-id="003de-102">Configuring Envelopes (EDIFACT-Transaction Set Settings)</span></span>
 <span data-ttu-id="003de-103">在**包络线**页**事务设置设置**部分中，你定义如何 BizTalk Server 生成的 UNG 段和新罕布什尔大学段它将发送到方的 EDIFACT 编码交换。</span><span class="sxs-lookup"><span data-stu-id="003de-103">In the **Envelopes** page of the **Transaction Set Settings** section, you define how BizTalk Server generates the UNG and UNH segments for an EDIFACT-encoded interchange that it sends to the party.</span></span>  
@@ -25,14 +26,14 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="003de-106">UNH 段是 EDIFACT 编码的交换的消息标头段。</span><span class="sxs-lookup"><span data-stu-id="003de-106">The UNH segment is the message header segment of an EDIFACT-encoded interchange.</span></span> <span data-ttu-id="003de-107">UNH 段提供了有关消息类型以及负责维护该消息类型发布的机构的信息。</span><span class="sxs-lookup"><span data-stu-id="003de-107">It provides information about the message type, and the agency responsible for maintaining the publication of the message type.</span></span> <span data-ttu-id="003de-108">该段指示交换中文档的开头以及后面文档的类型。</span><span class="sxs-lookup"><span data-stu-id="003de-108">This segment indicates the start of a document in an interchange and the type of document that follows.</span></span>  
   
- <span data-ttu-id="003de-109">在**功能组标头 (UNG)**部分中，你将关联**UNG**值与**新罕布什尔大学**值和命名空间。</span><span class="sxs-lookup"><span data-stu-id="003de-109">In the **Functional group header (UNG)** section, you associate **UNG** values with **UNH** values and a namespace.</span></span> <span data-ttu-id="003de-110">BizTalk Server 确定 BizTalk XML 消息已设置的值**新罕布什尔大学**元素和**目标命名空间**在网格的行中，BizTalk 服务器将填充**UNG**同一行的网格中的值的数据元素。</span><span class="sxs-lookup"><span data-stu-id="003de-110">When BizTalk Server determines that a BizTalk XML message has the values set for the **UNH** elements and the **Target namespace** in a row of the grid, BizTalk Server will populate the **UNG** data elements with the values from the same row of the grid.</span></span> <span data-ttu-id="003de-111">值**新罕布什尔大学**元素和**目标命名空间**必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="003de-111">The values of the **UNH** elements and the **Target namespace** must be unique.</span></span>  
+ <span data-ttu-id="003de-109">在**功能组标头 (UNG)** 部分中，你将关联**UNG**值与**新罕布什尔大学**值和命名空间。</span><span class="sxs-lookup"><span data-stu-id="003de-109">In the **Functional group header (UNG)** section, you associate **UNG** values with **UNH** values and a namespace.</span></span> <span data-ttu-id="003de-110">BizTalk Server 确定 BizTalk XML 消息已设置的值**新罕布什尔大学**元素和**目标命名空间**在网格的行中，BizTalk 服务器将填充**UNG**同一行的网格中的值的数据元素。</span><span class="sxs-lookup"><span data-stu-id="003de-110">When BizTalk Server determines that a BizTalk XML message has the values set for the **UNH** elements and the **Target namespace** in a row of the grid, BizTalk Server will populate the **UNG** data elements with the values from the same row of the grid.</span></span> <span data-ttu-id="003de-111">值**新罕布什尔大学**元素和**目标命名空间**必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="003de-111">The values of the **UNH** elements and the **Target namespace** must be unique.</span></span>  
   
  <span data-ttu-id="003de-112">如果消息没有包含的匹配项**新罕布什尔大学**元素和**目标命名空间**在任何行中，BizTalk Server 将填充的值的消息**UNG**默认行中的元素。</span><span class="sxs-lookup"><span data-stu-id="003de-112">If a message does not have a match with the **UNH** elements and the **Target namespace** in any row, BizTalk Server will populate the message with the values of the **UNG** elements in the default row.</span></span> <span data-ttu-id="003de-113">将使用这些值，即使消息不具有与匹配**新罕布什尔大学**元素和**目标命名空间**的默认行。</span><span class="sxs-lookup"><span data-stu-id="003de-113">These values will be used even if the message does not have a match with the **UNH** elements and the **Target namespace** of the default row.</span></span>  
   
  <span data-ttu-id="003de-114">当 BizTalk 引擎确定 BizTalk XML 消息具有新罕布什尔大学元素和目标命名空间设置的值时，引擎会使用为其设置在网格中，提供的值填充 UNG 元素在消息中的**创建分组段**选中复选框。</span><span class="sxs-lookup"><span data-stu-id="003de-114">When the BizTalk engine determines that a BizTalk XML message has the values set for the UNH elements and the Target namespace, the engine will populate the UNG elements in the message with the values set for them in the grid, provided the **Create Grouping Segments** checkbox is checked.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="003de-115">在**功能组标头 (UNG)**部分中，如果你在网格中，输入的任何字段的设置，然后删除该设置，您将需要删除整行或页将未通过验证。</span><span class="sxs-lookup"><span data-stu-id="003de-115">In the **Functional group header (UNG)**  section, if you enter a setting for any of the fields in the grid, and then delete that setting, you will have to delete the entire row or the page will fail validation.</span></span>  
+>  <span data-ttu-id="003de-115">在**功能组标头 (UNG)** 部分中，如果你在网格中，输入的任何字段的设置，然后删除该设置，您将需要删除整行或页将未通过验证。</span><span class="sxs-lookup"><span data-stu-id="003de-115">In the **Functional group header (UNG)**  section, if you enter a setting for any of the fields in the grid, and then delete that setting, you will have to delete the entire row or the page will fail validation.</span></span>  
   
 > [!IMPORTANT]
 >  <span data-ttu-id="003de-116">所有属性上将都禁用**A 方-> 方 B**单向协议选项卡，如果你清除**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**检查框 a 方。但是，在中相同页面上启用的所有属性**B 方-> A 方**选项卡上，如果创建 a 方。 时选中复选框</span><span class="sxs-lookup"><span data-stu-id="003de-116">All properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A. However, all the properties are enabled on the same page in the **Party B->Party A** tab if you selected the check box while creating Party A.</span></span>  

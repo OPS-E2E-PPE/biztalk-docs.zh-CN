@@ -1,17 +1,17 @@
 ---
-title: "平面文件汇编管道组件 |Microsoft 文档"
-ms.custom: 
+title: 平面文件汇编管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, Flat File Assembler
 - Flat File Assembler [pipeline component]
 ms.assetid: 3c851771-55b2-4d21-9291-d707dd66837c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245861"
 ---
 # <a name="flat-file-assembler-pipeline-component"></a><span data-ttu-id="b62c8-102">平面文件汇编管道组件</span><span class="sxs-lookup"><span data-stu-id="b62c8-102">Flat File Assembler Pipeline Component</span></span>
 <span data-ttu-id="b62c8-103">平面文件组装器可以将单个文档组合到批中，并可以根据需要为批添加头部或尾部（或同时添加头部和尾部）。</span><span class="sxs-lookup"><span data-stu-id="b62c8-103">A Flat File Assembler combines individual documents into a batch and optionally adds a header or trailer (or both) to it.</span></span> <span data-ttu-id="b62c8-104">有关平面文件的详细信息，请参阅[分隔记录的平面文件消息](../core/flat-file-messages-with-delimited-records.md)。</span><span class="sxs-lookup"><span data-stu-id="b62c8-104">For more information about flat files, see [Flat File Messages with Delimited Records](../core/flat-file-messages-with-delimited-records.md).</span></span> <span data-ttu-id="b62c8-105">另请参阅[平面文件消息的位置记录](../core/flat-file-messages-with-positional-records.md)。</span><span class="sxs-lookup"><span data-stu-id="b62c8-105">Also see [Flat File Messages with Positional Records](../core/flat-file-messages-with-positional-records.md).</span></span>  

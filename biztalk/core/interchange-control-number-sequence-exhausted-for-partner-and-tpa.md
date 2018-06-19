@@ -1,14 +1,14 @@
 ---
-title: "面向合作伙伴和 TPA 交换控制编号的规则已耗尽 |Microsoft 文档"
-ms.custom: 
+title: 面向合作伙伴和 TPA 交换控制编号的规则已耗尽 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e77c0574-bc51-4690-a7f6-5702f6486f05
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257037"
 ---
 # <a name="interchange-control-number-sequence-exhausted-for-partner-and-tpa"></a><span data-ttu-id="e24bc-102">面向合作伙伴和 TPA 交换控制编号的规则已耗尽</span><span class="sxs-lookup"><span data-stu-id="e24bc-102">Interchange control number sequence exhausted for Partner and TPA</span></span>
 ## <a name="details"></a><span data-ttu-id="e24bc-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e24bc-103">Details</span></span>  

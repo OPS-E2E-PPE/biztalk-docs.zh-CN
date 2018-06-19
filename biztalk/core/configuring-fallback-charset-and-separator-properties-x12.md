@@ -1,14 +1,14 @@
 ---
-title: "配置回退字符集和分隔符属性 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置回退字符集和分隔符属性 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 477f4952-6a4e-4e98-a37f-f6e1fe7db3d3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233837"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-x12"></a><span data-ttu-id="3aa54-102">配置回退字符集和分隔符属性 (X12)</span><span class="sxs-lookup"><span data-stu-id="3aa54-102">Configuring Fallback Charset and Separator Properties (X12)</span></span>
 <span data-ttu-id="3aa54-103">在备用协议中，您可以指定在为传出 X12 消息创建信封时 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用哪个字符集来验证参与方属性。</span><span class="sxs-lookup"><span data-stu-id="3aa54-103">In the fallback agreement, you can specify the character set that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message.</span></span> <span data-ttu-id="3aa54-104">还可以指定为交换内部的分段使用哪些分隔符和终止符。</span><span class="sxs-lookup"><span data-stu-id="3aa54-104">You can also specify what separators and terminators will be used for the segments in the interchange.</span></span>  

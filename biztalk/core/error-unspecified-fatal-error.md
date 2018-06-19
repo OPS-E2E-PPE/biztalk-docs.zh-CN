@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240805"
 ---
 # <a name="error---unspecified-fatal-error"></a><span data-ttu-id="9537a-102">错误-未指定的错误</span><span class="sxs-lookup"><span data-stu-id="9537a-102">Error - Unspecified Fatal Error</span></span>
 <span data-ttu-id="9537a-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="9537a-103">**Error Code**</span></span>  
