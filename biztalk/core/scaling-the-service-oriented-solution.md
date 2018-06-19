@@ -1,17 +1,17 @@
 ---
-title: "缩放服务面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 缩放服务面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scaling, service solutions
 - service solution tutorial, scaling
 ms.assetid: 6c22a68d-03e7-4174-b612-0e2246aa9413
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269173"
 ---
 # <a name="scaling-the-service-oriented-solution"></a>缩放服务面向解决方案
 若要扩展解决方案以支持更高的吞吐量，同时保持较短的消息延迟时间，则需要使用该解决方案的内联版本。 内联解决方案在与后端系统进行交互时将绕过 MessageBox 数据库。  

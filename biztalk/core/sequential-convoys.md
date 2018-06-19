@@ -1,17 +1,17 @@
 ---
-title: "顺序保护 |Microsoft 文档"
-ms.custom: 
+title: 顺序保护 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - convoy sets
 - correlation sets, sequential receive tasks
 ms.assetid: f05ff42c-2236-42a3-8166-19700e0c3d97
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271581"
 ---
 # <a name="sequential-convoys"></a>顺序保护
 顺序保护可以使多个单独的消息结合在一起，以取得所需的效果。 顺序保护是一组具有预定义顺序的相关消息。 虽然这些消息不必完全相同，但 BizTalk Server 必须按顺序接收它们。  

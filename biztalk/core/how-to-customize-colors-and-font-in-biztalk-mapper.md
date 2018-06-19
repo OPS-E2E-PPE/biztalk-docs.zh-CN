@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250389"
 ---
 # <a name="how-to-customize-colors-and-font-in-biztalk-mapper"></a>如何自定义 BizTalk 映射器中的颜色和字体
 您可以更改与不同类型的链接关联的颜色，以及网格视图中选定对象的颜色。 还可以更改用于显示架构树节点的字体。 本主题提供了执行这些更改的分步说明。  

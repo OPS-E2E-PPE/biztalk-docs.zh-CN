@@ -1,14 +1,14 @@
 ---
-title: "如何更新实时数据工作簿的连接字符串 |Microsoft 文档"
-ms.custom: 
+title: 如何更新实时数据工作簿的连接字符串 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d2702fb-637c-46db-8b62-08ae15f983ba
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255309"
 ---
 # <a name="how-to-update-the-connection-string-for-the-live-data-workbook"></a>如何更新实时数据工作簿的连接字符串
 BAM 主导入数据库移动到另一个服务器时，必须更新 BAM 实时数据工作簿中的连接字符串以指向新的服务器。 你使用 BAM add-in for Excel 进行此更新。  

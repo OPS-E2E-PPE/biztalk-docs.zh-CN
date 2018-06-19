@@ -1,11 +1,11 @@
 ---
-title: "确定丢失跟踪数据 |Microsoft 文档"
-ms.custom: 
+title: 确定丢失跟踪数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data loss, HAT
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - MessageBox database, Operation View tool
 - Operation View tool, data loss
 ms.assetid: 1ac13e2c-cd5e-437e-b924-d4547931874e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256701"
 ---
 # <a name="identifying-lost-tracking-data"></a>确定丢失跟踪数据
 您可以使用 BizTalk Server 管理控制台来帮助标识哪些跟踪数据已因硬件失败而丢失。 您可以将 BizTalk Server 管理控制台用于实时数据或存档数据。  

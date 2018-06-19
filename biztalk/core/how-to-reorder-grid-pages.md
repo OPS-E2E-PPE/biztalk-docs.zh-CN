@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254797"
 ---
 # <a name="how-to-reorder-grid-pages"></a>如何重排网格页
 如果映射复杂，则可以包含多个网格页，然后将其重命名和重新排序。 本主题为这些操作提供了分步说明。  

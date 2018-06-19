@@ -1,14 +1,14 @@
 ---
-title: "管理批处理 |Microsoft 文档"
-ms.custom: 
+title: 管理批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82755840-4e00-4fed-80e0-1a22b248c0bf
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263485"
 ---
 # <a name="managing-batches"></a>管理批
 如何手动控制版本的批处理的交换，在顶部使用的控件**批配置**的单向协议选项卡页**协议属性**对话框中 (在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台) 的 X12 和 EDIFACT 编码。 其中包括下列控件：  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置 SOAP 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 SOAP 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, send ports
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - configuring [SOAP adapters], send ports
 - send ports, SOAP adapters
 ms.assetid: 3a0622f4-d25d-4449-a063-d8ba217e9729
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250589"
 ---
 # <a name="how-to-configure-a-soap-send-port"></a>如何配置 SOAP 发送端口
 可以通过编程方式或使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台来配置 SOAP 发送端口。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**Web 服务 URL**|指定要调用的 Web Services 的地址。 **注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
+    |**Web 服务 URL**|指定要调用的 Web Services 的地址。 **注意：** 对要发送的 URI 端口或接收位置不能超过 256 个字符。|  
     |**身份验证**|指示要调用的 Web Services 所采用的验证方法。<br /><br /> 选项：<br /><br /> -   **匿名。** 默认设置。<br />-   **基本。** SOAP 连接以纯文本格式发送用户名和密码。<br />-   **Digest。** SOAP 连接以加密格式发送密码。<br />-   **NTLM。** 用户名和密码都不通过 SOAP 连接发送。 SOAP 适配器始终为此验证类型使用运行 SOAP 发送适配器的进程的凭据。|  
     |**凭据**|指定要使用的凭据类型。<br /><br /> 仅可用**身份验证类型**是**基本**或**摘要式**。<br /><br /> 选项：<br /><br /> -   **不使用单一登录**<br />     **用户名**<br />     对目标服务器进行验证所使用的用户名。 如果**身份验证类型**属性是**匿名**或**NTLM**，将禁用此选项。 此属性需要一个值，如果**基本**或**摘要式**选择，而不用于企业单一登录。<br />     最小长度：0<br />     最大长度：256<br />     **密码**<br />     对目标服务器进行验证所使用的密码。 如果**身份验证类型**属性是**匿名**或**NTLM**，将禁用此选项。 此属性需要一个值，如果**基本**或**摘要式**选择，并且未使用单一登录。<br />     最小长度：0<br />     最大长度：256<br />-   **使用单一登录**<br />     指定是否使用单一登录检索客户端凭据，以便在目标服务器上进行验证。<br />     **关联应用程序**<br />     指定用于单一登录的关联应用程序。 有关填充此列表的信息，请参阅[SSO Affiliate 应用程序](../core/sso-affiliate-applications.md)。<br />     最小长度：0<br />     最大长度：256|  
     |**客户端证书指纹**|指定用于建立连接的客户端证书的指纹。<br /><br /> 示例： 01 23 45 67 89 AB CD EF 01 23 45 67 89 AB CD EF 01 23 45 67<br /><br /> 最小长度：0<br /><br /> 最大长度： 59|  
@@ -93,7 +94,7 @@ ms.lasthandoff: 09/20/2017
     |**不使用代理服务器**|表示 SOAP 发送处理程序是否使用代理服务器。|  
     |**使用代理**|表示 SOAP 发送处理程序是否使用代理服务器。 代理服务器可由所有的 SOAP 发送端口共享。|  
     |**Server**|指定代理服务器的名称。<br /><br /> 此属性仅需要一个值，如果**使用代理**选择。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：256|  
-    |**端口**|指定 SOAP 发送处理程序使用的端口。<br /><br /> 此属性仅需要一个值，如果**使用代理**选择。<br /><br /> 默认值：80<br /><br /> 类型： 长<br /><br /> 最小值： 0<br /><br /> 最大值： 65535**注意：**指定值为 0，则指示要使用默认值，该值是端口 80。|  
+    |**端口**|指定 SOAP 发送处理程序使用的端口。<br /><br /> 此属性仅需要一个值，如果**使用代理**选择。<br /><br /> 默认值：80<br /><br /> 类型： 长<br /><br /> 最小值： 0<br /><br /> 最大值： 65535**注意：** 指定值为 0，则指示要使用默认值，该值是端口 80。|  
     |**用户名**|指定用于身份验证的用户名。 如果你使用 Windows 集成身份验证，用户名将包括域，**域 \ 用户名**。 如果使用基本或摘要式身份验证的用户名不包括**域\\**。<br /><br /> 此属性仅需要一个值，如果**使用代理**选择。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：256|  
     |**密码**|指定用于身份验证的密码。<br /><br /> 此属性仅需要一个值，如果**使用代理**选择。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：256|  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**业务流程 Web 端口**|指定要在中列出的 Web 服务 URL 中使用 Web 服务公开**常规**选项卡。<br /><br /> 这是默认设置。|  
-    |**程序集名称**|指定包含 Web Services 代理的程序集的名称。 您可以通过单击“浏览”按钮找到程序集来填充此字段。 选择程序集之后，此框将填充程序集的完全限定名称。 **注意：**指定程序集必须存在于所有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在运行时的 s。|  
+    |**程序集名称**|指定包含 Web Services 代理的程序集的名称。 您可以通过单击“浏览”按钮找到程序集来填充此字段。 选择程序集之后，此框将填充程序集的完全限定名称。 **注意：** 指定程序集必须存在于所有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在运行时的 s。|  
     |**类型名称**|指定包含要调用的 Web 方法的类的名称。 可以从程序集内包含的类型列表选择此项。|  
     |**方法名称**|在列表框中指定的方法之一或选择"指定"的选项更高版本。 如果选择选项“以后指定”，则必须以其他方式（如管道组件）设置 Web 方法。 在此方案中，必须将 web 方法写入到 Soap 适配器**MethodName**上下文属性。|  
     |**SOAP 1.2**|指定此项可生成将支持 SOAP 1.2 协议的代理代码。 如果不选择此选项，则会生成符合 SOAP 1.1 的代理代码。<br /><br /> 默认值： 清除|  

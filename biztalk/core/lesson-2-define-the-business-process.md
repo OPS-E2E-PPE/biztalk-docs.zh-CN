@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262045"
 ---
 # <a name="lesson-2-define-the-business-process"></a>第 2 课：定义业务流程
 在本课程中，你可以创建企业应用程序 Integration(EAI) 解决方案中的第二个项目。 此项目包含一个业务流程。  

@@ -1,14 +1,14 @@
 ---
-title: "如何导出绑定到绑定文件 |Microsoft 文档"
-ms.custom: 
+title: 如何导出绑定到绑定文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3734ae6d-b790-40f2-8403-d7c7fdbe381b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010742"
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a>如何导出绑定到绑定文件
 你可以导出到使用绑定文件的另一个现有 BizTalk 应用程序的 BizTalk 应用程序的绑定。 你还可以导出组中的所有绑定或程序集的绑定。 随后，你可以导入的应用程序或组的这些绑定。  

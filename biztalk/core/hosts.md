@@ -1,11 +1,11 @@
 ---
-title: "主机 |Microsoft 文档"
-ms.custom: 
+title: 主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host instances, servers
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - Isolated Host Users group
 - hosts, trusted
 ms.assetid: d96537e0-e679-407a-8870-34a663acfed9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247221"
 ---
 # <a name="hosts"></a>主机
 BizTalk 主机对象表示在其中部署服务、管道和其他项目的零个或多个运行时进程的逻辑组。 主机对象还表示运行时实例（零个或多个）的集合，是运行部署项的物理位置。  

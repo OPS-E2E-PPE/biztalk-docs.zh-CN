@@ -1,17 +1,17 @@
 ---
-title: "分析模式 |Microsoft 文档"
-ms.custom: 
+title: 分析模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], code samples
 - pipeline components [custom], parsing
 ms.assetid: b1188720-e5ae-47ae-ab8e-16d7ed08b778
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263301"
 ---
 # <a name="parsing-modes"></a>分析模式
 分析模式是一个属性的 schemaInfo 记录，两种模式： 速度和复杂性。 在 BizTalk 架构编辑器中，可以配置分析器优化属性。  

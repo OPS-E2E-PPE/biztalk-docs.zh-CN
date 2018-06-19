@@ -1,14 +1,14 @@
 ---
-title: "接收方处理的传入 EDI 消息通过 AS2 |Microsoft 文档"
-ms.custom: 
+title: 接收方处理的传入 EDI 消息通过 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 118451ab-d847-4f87-80ab-3cf812d71ac3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270061"
 ---
 # <a name="receive-side-processing-of-an-incoming-edi-message-over-as2"></a>接收方在处理传入 EDI 消息通过 AS2
 通过 AS2 传入的 EDI 消息的接收方处理包括接收 AS2 消息、发送一个 MDN、处理 EDI 负载和发送 EDI 确认（如果已启用）。  

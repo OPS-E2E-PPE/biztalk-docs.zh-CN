@@ -1,11 +1,11 @@
 ---
-title: "向外扩展接收主机 |Microsoft 文档"
-ms.custom: 
+title: 向外扩展接收主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-03-17
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, receive adapters
@@ -34,7 +34,7 @@ helpviewer_keywords:
 - File adapters, scaling
 - clustering
 ms.assetid: 94f35426-37fa-4ad2-8e35-d82fdca02262
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -43,6 +43,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272549"
 ---
 # <a name="scaled-out-receiving-hosts"></a>向外扩展接收主机
 当主机包含接收项（例如接收位置或管道）时，该主机将充当安全边界，而且消息的解码和解密都将发生在主机内的管道中。 为确保接收主机高度可用，必须有两台或更多 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机运行所有接收主机的实例。 可以通过扩展接收主机来保证可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息传递需要进行大量的部署。 尽管这些部署可能很少处理业务流程，但仍可快速和可靠地路由许多不同类型的消息。  

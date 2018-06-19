@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249381"
 ---
 # <a name="how-to-create-a-new-gateway-node"></a>如何创建新的网关节点
 请按照以下步骤在 PeopleSoft Enterprise 中创建和配置新的网关节点。  
@@ -33,19 +34,19 @@ ms.lasthandoff: 09/20/2017
   
 4.  单击**节点**选项卡，然后输入以下信息：  
   
-    1.  **描述：**输入节点的说明。  
+    1.  **描述：** 输入节点的说明。  
   
-    2.  **节点类型：**选择**外部**。  
+    2.  **节点类型：** 选择**外部**。  
   
-    3.  **路由类型：**选择**隐式**。  
+    3.  **路由类型：** 选择**隐式**。  
   
      ![](../core/media/psadapter-34-task-gatewaynodeconnector.gif "PSAdapter_34_Task_GatewayNodeConnector")  
   
 5.  单击**连接器**选项卡，然后输入以下信息：  
   
-    1.  **网关 ID:**输入`LOCAL`。  
+    1.  **网关 ID:** 输入`LOCAL`。  
   
-    2.  **连接器 ID:**输入`HTTPTARGET`。  
+    2.  **连接器 ID:** 输入`HTTPTARGET`。  
   
      ![](../core/media/psadapter-35-task-gatewayhttptarget.gif "PSAdapter_35_Task_GatewayHTTPTarget")  
   
@@ -57,11 +58,11 @@ ms.lasthandoff: 09/20/2017
   
 8.  上**属性**选项卡上，输入以下信息：  
   
-    1.  **标头：**输入`Y`。  
+    1.  **标头：** 输入`Y`。  
   
-    2.  **HTTPPROPERTY:**输入`POST`。  
+    2.  **HTTPPROPERTY:** 输入`POST`。  
   
-    3.  **PrimaryURL:**输入的 IP 地址和端口的目标计算机 （的开发计算机）。  
+    3.  **PrimaryURL:** 输入的 IP 地址和端口的目标计算机 （的开发计算机）。  
   
     > [!NOTE]
     >  **接收端口**之前已设置。  

@@ -1,14 +1,14 @@
 ---
-title: "如何包括和排除架构 |Microsoft 文档"
-ms.custom: 
+title: 如何包括和排除架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9206458-e5d6-48d7-87a6-9471ba60dca7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254341"
 ---
 # <a name="how-to-include-and-exclude-schemas"></a>如何包括和排除架构
 架构文件可以存在于 BizTalk 项目文件夹中，但并不包括在该项目中。 此类架构称为从项目中排除。 生成 BizTalk 项目时不会编译排除的架构。 本主题将介绍在 BizTalk 项目中包括已排除的架构以及从 BizTalk 项目中排除架构所需的步骤。  

@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 运行时安全建议 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 运行时安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, runtime
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - DACLs
 - .NET Framework Code Access Security Mechanism
 ms.assetid: 1933789d-b79a-47ad-8f70-6f1e99bc2be0
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232229"
 ---
 # <a name="biztalk-server-runtime-security-recommendations"></a>BizTalk Server 运行时安全建议
 必须在用来接收、发送、处理和跟踪消息的所有计算机上安装 BizTalk Server 运行时或引擎。 换句话说，必须在创建 BizTalk 主机实例（处理服务器）的所有计算机上安装运行时组件。 建议您遵循以下准则以确保您的环境中的 BizTalk Server 运行时的安全并对其进行部署：  

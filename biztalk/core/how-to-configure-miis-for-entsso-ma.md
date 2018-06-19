@@ -1,14 +1,14 @@
 ---
-title: "如何为 ENTSSO MA 配置 MIIS |Microsoft 文档"
-ms.custom: 
+title: 如何为 ENTSSO MA 配置 MIIS |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7820384-ff64-4628-9e35-02b13803928f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248133"
 ---
 # <a name="how-to-configure-miis-for-entsso-ma"></a>如何针对 ENTSSO MA 配置 MIIS
 当在运行 Microsoft Identity Integration Server (MIIS) 的计算机上安装企业单一登录 (SSO) 管理功能（完整版本或仅管理版本）时，将自动安装 ENTSSO 管理代理。 这表示当打开 MIIS 时，几乎已完成所有配置， 唯一缺少的部分是连接信息。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
      这将启动**创建管理代理向导**。  
   
-4.  上**配置连接信息**页上，在**连接到：**字段中，输入 SSO 服务器的名称。  
+4.  上**配置连接信息**页上，在**连接到：** 字段中，输入 SSO 服务器的名称。  
   
 5.  输入 ENTSSO 管理代理的名称。 该名称必须与 ENTSSO.xml 文件中指定的名称匹配。  
   

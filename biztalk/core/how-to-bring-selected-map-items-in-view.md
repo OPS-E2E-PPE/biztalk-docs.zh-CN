@@ -1,14 +1,14 @@
 ---
-title: "如何将所选的地图视图中的项目 |Microsoft 文档"
-ms.custom: 
+title: 如何将所选的地图视图中的项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e287b22-5738-428a-aa35-cced877e51ea
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005542"
 ---
 # <a name="how-to-bring-selected-map-items-in-view"></a>如何在视图中移动所选的映射项
 使用早期版本的 BizTalk 映射器时，如果映射包含大型架构，则必须手动滚动源架构窗格、网格页和目标架构窗格，以便将全部的相关映射项目引入单个视图中。 与 BizTalk Server BizTalk 映射程序，可将所选 functoid/链接的所有相关映射项引入的单一视图自动滚动的网格页。 本主题提供有关如何执行此操作的信息。  

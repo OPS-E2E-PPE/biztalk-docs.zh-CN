@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239685"
 ---
 # <a name="enlisted-parties-role-node"></a>已登记参与方（角色节点）
 对于任何“已登记参与方”节点，只要它包含与通过某个绑定文件导出的角色关联的已登记参与方相关的特定信息，则该绑定文件的“已登记参与方”节点就是此节点的父节点。  

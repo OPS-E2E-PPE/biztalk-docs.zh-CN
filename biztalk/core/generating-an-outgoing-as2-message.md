@@ -1,14 +1,14 @@
 ---
-title: "生成传出的 AS2 消息 |Microsoft 文档"
-ms.custom: 
+title: 生成传出的 AS2 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288c8101-9a96-4f98-ae18-df43c7cdb3a0
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246541"
 ---
 # <a name="generating-an-outgoing-as2-message"></a>生成传出的 AS2 消息
 AS2EDISend 和 AS2Send 发送管道生成出站消息，如下所示。 每个管道的单向协议选项卡中使用的属性**协议属性**对话框生成传出的 AS2 消息。  

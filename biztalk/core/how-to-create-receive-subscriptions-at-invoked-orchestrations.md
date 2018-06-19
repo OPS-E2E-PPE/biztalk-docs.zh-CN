@@ -1,14 +1,14 @@
 ---
-title: "如何创建接收上调用的业务流程的订阅 |Microsoft 文档"
-ms.custom: 
+title: 如何创建接收上调用的业务流程的订阅 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3423309a-cb5a-40a5-9582-6ee3ac82b538
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250141"
 ---
 # <a name="how-to-create-receive-subscriptions-at-invoked-orchestrations"></a>如何创建接收上调用的业务流程的订阅
 尽管您可以将消息传递作为参数通过**启动 Orchestration**调整时在某些情况下，你可能想要将从调用方业务流程的消息发送到后调用的业务流程启动业务流程，调用。 例如，您可能不清楚调用时要传递什么消息，或者其他业务流程可能需要向调用的业务流程动态发送消息。  

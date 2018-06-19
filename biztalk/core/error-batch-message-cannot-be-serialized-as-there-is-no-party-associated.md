@@ -1,14 +1,14 @@
 ---
-title: "无法序列化批处理消息，因为没有任何与关联一方发送端口 |Microsoft 文档"
-ms.custom: 
+title: 无法序列化批处理消息，因为没有任何与关联一方发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d697ff9c-a6d1-4a3c-9ec3-4cd496f7eec2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241477"
 ---
 # <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>批消息不能序列化，因为没有与发送端口相关联的参与方
 ## <a name="details"></a>详细信息  

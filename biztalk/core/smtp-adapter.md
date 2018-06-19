@@ -1,11 +1,11 @@
 ---
-title: "SMTP 适配器 |Microsoft 文档"
-ms.custom: 
+title: SMTP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SMTP adapters, about SMTP adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SMTP adapters
 - SMTP adapters, send adapters
 ms.assetid: b712f76d-3ce4-4780-9627-951e5951bd8a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277597"
 ---
 # <a name="smtp-adapter"></a>SMTP 适配器
 使用简单邮件传输协议 (SMTP) 适配器可以通过 SMTP 协议在运行 Microsoft BizTalk Server 的服务器和其他应用程序之间交换信息。 BizTalk Server 可以通过创建电子邮件并将其发送到指定的电子邮件地址来向其他应用程序发送消息。 SMTP 发送适配器可在内部创建基于 SMTP 的电子邮件，并将其发送到目标电子邮件地址。 目标电子邮件地址是 SMTP 适配器的一个属性。 在您配置 SMTP 发送端口时，BizTalk 浏览器将公开此属性。  

@@ -1,18 +1,18 @@
 ---
-title: "服务实现重点介绍面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 服务实现重点介绍面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, performance
 - performance, service solutions
 - service solution tutorial, implementing
 ms.assetid: 3dbd8dfd-45b7-4290-ba07-b0c5e6264629
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257749"
 ---
 # <a name="implementation-highlights-of-the-service-oriented-solution"></a>服务实现重点介绍面向解决方案
 解决方案用于解决特定环境中的具体问题。 面向服务的解决方案也不例外和特定于 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和方案。 Woodgrove Bank 方案有关的详细信息，请参阅[了解服务面向解决方案](../core/understanding-the-service-oriented-solution.md)。  

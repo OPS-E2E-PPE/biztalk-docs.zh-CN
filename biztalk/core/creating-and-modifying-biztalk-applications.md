@@ -1,11 +1,11 @@
 ---
-title: "创建和修改 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建和修改 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], modifying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, applications
 - creating, applications
 ms.assetid: d6c9ff3a-3903-40ec-bcaa-e46cbaf8a58d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238141"
 ---
 # <a name="creating-and-modifying-biztalk-applications"></a>创建和修改 BizTalk 应用程序
 本部分介绍如何使用 BizTalk Server 管理控制台或 BTSTask 命令行工具来创建、配置和修改 BizTalk 应用程序。  

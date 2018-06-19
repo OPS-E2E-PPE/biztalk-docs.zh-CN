@@ -1,14 +1,14 @@
 ---
-title: "配置回退确认属性 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置回退确认属性 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce33f5dd-fbd5-448c-8ea3-05dd1467131a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232829"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-x12"></a>配置回退确认属性 (X 12)
 在备选协议中，您可以指定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何生成确认，以响应从参与方接收的 X12 编码的交换，以及返回到参与方的确认类型。 本节提供有关如何执行上述操作的说明。  

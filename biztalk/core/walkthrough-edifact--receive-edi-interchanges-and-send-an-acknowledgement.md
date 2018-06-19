@@ -1,14 +1,14 @@
 ---
-title: "演练 (EDIFACT): 接收 EDI 交换和发回确认 |Microsoft 文档"
-ms.custom: 
+title: '演练 (EDIFACT): 接收 EDI 交换和发回确认 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02751f0c-8e7e-4879-93e4-8bc475640756
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291933"
 ---
 # <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>演练 (EDIFACT)：接收 EDI 交换并发送回确认信息
 本演练将介绍使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为接收 EDIFACT 交换创建解决方案的分步操作过程。 此解决方案中的 EDIFACT 交换从贸易合作伙伴，Fabrikam，发送到另一个贸易合作伙伴，Contoso。  
@@ -268,14 +269,14 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  如果你使用的测试消息作为本主题中前面提供的示例消息，设置**UNB2.1**到**7654321**， **UNB2.2**到**ZZZ-双方约定**， **UNB3.1**到**1234567**，和**UNB3.2**到**ZZZ-双方约定**。  
   
-    2.  上**确认**下页上**交换设置**部分，选中**收到预期消息 (CONTRL)**和**确认 (CONTRL) 预期**。  
+    2.  上**确认**下页上**交换设置**部分，选中**收到预期消息 (CONTRL)** 和**确认 (CONTRL) 预期**。  
   
-    3.  上**包络线**下页上**交换设置**部分，选中**应用 UNA 段 （字符串服务建议）**和**应用 UNG 段 （功能组标头）**。  
+    3.  上**包络线**下页上**交换设置**部分，选中**应用 UNA 段 （字符串服务建议）** 和**应用 UNG 段 （功能组标头）**。  
   
-    4.  上**验证**下页上**交换设置**部分中，请确保**交换控制编号 (UNB5)**选项处于未选中状态。  
+    4.  上**验证**下页上**交换设置**部分中，请确保**交换控制编号 (UNB5)** 选项处于未选中状态。  
   
         > [!NOTE]
-        >  清除**交换控制编号 (UNB5)**属性使您能够接收同一消息的多个实例。  
+        >  清除**交换控制编号 (UNB5)** 属性使您能够接收同一消息的多个实例。  
   
     5.  上**字符集和分隔符**下页上**交换设置**部分中，选择**CR LF**选项**UNA6 后缀**。  
   

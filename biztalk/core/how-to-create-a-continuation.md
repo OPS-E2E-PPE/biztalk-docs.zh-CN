@@ -1,11 +1,11 @@
 ---
-title: "如何创建一个延续任务 |Microsoft 文档"
-ms.custom: 
+title: 如何创建一个延续任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, relating events
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - tracking profiles, continuations
 - tracking profiles, connecting activities
 ms.assetid: 31d6fc24-676e-418c-8e78-1a46b045905d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248845"
 ---
 # <a name="how-to-create-a-continuation"></a>如何创建一个延续任务
 创建继续符可以指示一个或多个业务流程中的哪些业务活动是通过构造连接的活动来关联的。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  打开现有跟踪配置文件，或者创建一个跟踪配置文件。 有关创建跟踪配置文件的信息，请参阅[如何创建跟踪配置文件](../core/how-to-create-a-tracking-profile.md)。  
   
-2.  标识*继续标记、*这是一种可供这两个活动的唯一信息。 例如，如果**CreditHistory**活动从发送消息激活**LoanProcess**中的活动**EquityLoan**业务流程、 的 SSN 字段消息可以用作继续标记，因为它是这两个活动共有的。  
+2.  标识*继续标记、* 这是一种可供这两个活动的唯一信息。 例如，如果**CreditHistory**活动从发送消息激活**LoanProcess**中的活动**EquityLoan**业务流程、 的 SSN 字段消息可以用作继续标记，因为它是这两个活动共有的。  
   
 3.  右键单击该活动，然后选择**新的延续**若要创建一个延续任务 (CreditHistory)。 命名您刚创建的继续符节点。  
   

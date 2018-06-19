@@ -1,14 +1,14 @@
 ---
-title: "Windows Communication Foundation 架构 |Microsoft 文档"
-ms.custom: 
+title: Windows Communication Foundation 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e95e0e8d-82cf-4608-b54f-188cb8cdaaee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288597"
 ---
 # <a name="windows-communication-foundation-schema"></a>Windows Communication Foundation 架构
 本部分包含 Windows Communication Framework 侦听器的架构。  

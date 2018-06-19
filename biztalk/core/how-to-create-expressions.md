@@ -1,11 +1,11 @@
 ---
-title: "如何创建表达式 |Microsoft 文档"
-ms.custom: 
+title: 如何创建表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, expressions [Expression Editor]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Expression Editor, editing expressions
 - Expression Editor, creating expressions
 ms.assetid: 48f8b00f-6ef1-4145-ad17-15c95518fc8a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248861"
 ---
 # <a name="how-to-create-expressions"></a>如何创建表达式
 使用 BizTalk 表达式编辑器，您可以创建 XLANG/s 表达式以扩展业务流程设计器中各种形状的功能。 您可以创建 XLANG/s 表达式来进行决策、设置延迟、进行 .NET 调用和测试 while 循环条件。  

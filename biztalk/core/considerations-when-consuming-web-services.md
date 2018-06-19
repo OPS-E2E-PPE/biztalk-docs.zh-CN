@@ -1,14 +1,14 @@
 ---
-title: "使用时的注意事项 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 使用时的注意事项 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea7038dc-4740-4c0a-b6a1-08bc22f42bc2
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241997"
 ---
 # <a name="considerations-when-consuming-web-services"></a>使用 Web Services 时的注意事项
 本部分说明在使用 Web Services 时应注意的事项。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 09/20/2017
  可以在消息上下文中以编程方式设置配置属性。 无论发送端口为静态还是动态，您都可以在业务流程或自定义管道组件中设置这些属性。  
   
 > [!NOTE]
->  若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到**[指定更高版本]**中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。  
+>  若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到 **[指定更高版本]** 中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。  
 >   
 >  有关详细信息**MethodName**属性，请参阅[如何动态设置使用的 Web 服务的 URI](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md)。  
 >   
@@ -112,7 +113,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Web 方法应具有**SoapDocumentMethodAttribute**而不是**SoapRpcMethodAttribute**。  
   
--   Web 服务和方法必须使用**文本**绑定而不**编码**如**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。  
+-   Web 服务和方法必须使用**文本**绑定而不**编码**如 **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。  
   
 -   Web 方法参数和返回类型必须具有**XmlRootAttribute**使用一个有效**Namespace**属性除非它们是本机的 XSD 类型和 XmlNode 类型。  
   

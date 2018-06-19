@@ -1,14 +1,14 @@
 ---
-title: "EDI 组结构化元素 |Microsoft 文档"
-ms.custom: 
+title: EDI 组结构化元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 100a7118-9c02-474e-8685-9e4bb6f52e81
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242517"
 ---
 # <a name="edi-group-structural-element"></a>EDI 组结构元素
 组包含一个或多个事务集。 一个 EDIFACT 组必须包含同一类型的事务集。 一个 X12 组可能包含类似类型的事务集（基于事务集 - 组 (GS01-ST01) 映射）或相同类型的事务集。 列表类似 X12 事务集 (ST01)，可以在一个组 (GS01) 一起发生这种情况下表。  

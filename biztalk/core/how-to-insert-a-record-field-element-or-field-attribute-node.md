@@ -1,14 +1,14 @@
 ---
-title: "如何插入记录、 Field 元素或字段属性节点 |Microsoft 文档"
-ms.custom: 
+title: 如何插入记录、 Field 元素或字段属性节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c26f2281-f1b8-4788-8593-8d6ad29a53f0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255093"
 ---
 # <a name="how-to-insert-a-record-field-element-or-field-attribute-node"></a>如何插入记录、 Field 元素或字段属性节点
 **记录**节点 (包括**根**节点)，**字段特性**节点，和**Field 元素**节点是唯一的因为可以重命名，以便其名称表示的相应实例消息中的实际、 自定义名为元素的名称。 例如，如果您命名**记录**节点 FullName，在名为 FullName XML 元素应实例消息中的相应位置。 如果该**记录**名为 FullName 节点中有一个子**字段特性**节点名为 RequireFullMiddleName (使用其**最小出现次数**和**Max Occurs**属性设置为**1**)，则**FullName**相应的实例消息中的元素需要具有一个名为特性**RequireFullMiddleName**与之关联。  

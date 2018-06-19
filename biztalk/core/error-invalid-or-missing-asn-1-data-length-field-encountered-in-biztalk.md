@@ -1,14 +1,14 @@
 ---
-title: "解压缩处理过程中遇到无效或缺少 ASN.1 数据长度字段 |Microsoft 文档"
-ms.custom: 
+title: 解压缩处理过程中遇到无效或缺少 ASN.1 数据长度字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd08648d-77b9-42a3-a50e-fd87eb36758a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241165"
 ---
 # <a name="invalid-or-missing-asn1-data-length-field-encountered-during-decompression-processing"></a>解压缩处理期间 ASN.1 数据长度字段无效或缺失
 ## <a name="details"></a>详细信息  

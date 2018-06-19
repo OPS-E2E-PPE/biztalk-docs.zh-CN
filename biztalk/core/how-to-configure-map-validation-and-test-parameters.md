@@ -1,14 +1,14 @@
 ---
-title: "如何配置映射验证和测试参数 |Microsoft 文档"
-ms.custom: 
+title: 如何配置映射验证和测试参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1768918c-e94f-476f-b288-9e030c691177
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248773"
 ---
 # <a name="how-to-configure-map-validation-and-test-parameters"></a>如何配置映射验证和测试参数
 在验证和测试映射时之前，您需要在设置映射验证和测试参数**属性**映射的窗口。  

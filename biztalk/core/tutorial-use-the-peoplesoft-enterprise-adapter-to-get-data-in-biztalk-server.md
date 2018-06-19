@@ -1,14 +1,14 @@
 ---
-title: "教程： 使用 PeopleSoft 企业的 BizTalk 适配器从 PeopleSoft Enterprise 检索数据 |Microsoft 文档"
-ms.custom: 
+title: 教程： 使用 PeopleSoft 企业的 BizTalk 适配器从 PeopleSoft Enterprise 检索数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c173fa4c-911e-4fa3-813f-e8f36b0049a5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975523"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a>教程：使用 PeopleSoft Enterprise 的 BizTalk 适配器以从 PeopleSoft Enterprise 中检索数据
 PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft 系统的查询，并返回查询的结果。 本演练介绍了可演示此功能的 SDK 示例。  
@@ -45,7 +46,7 @@ PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft �
 |**运行时项目文件名**|**运行时项目文件说明**|  
 |----------------------------------|------------------------------------------|  
 |TwoWaySend.btproj,<br /><br /> TwoWaySend.sln|应用程序的项目和解决方案文件。|  
-|LOCATIONService.xsd，<br /><br /> LOCATIONService_1.xsd，<br /><br /> LOCATIONService_2.xsd|应用程序的架构文件。 **注意：**项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。|  
+|LOCATIONService.xsd，<br /><br /> LOCATIONService_1.xsd，<br /><br /> LOCATIONService_2.xsd|应用程序的架构文件。 **注意：** 项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。|  
 |PeopleSoftTwoWaySend.odx|应用程序使用的业务流程。|  
 |PeopleSoftTwoWaySend.snk|强命名密钥文件。|  
   
@@ -61,7 +62,7 @@ PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft �
   
 4.  输入一个值**名称**字段，例如**PeopleSoft**。  
   
-5.  选择**PeopleSoft Enterprise(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
+5.  选择**PeopleSoft Enterprise(r)** 从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
   
 #### <a name="create-a-solicit-response-biztalk-send-port"></a>创建要求响应 BizTalk 发送端口  
   
@@ -80,7 +81,7 @@ PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft �
   
     |**属性**|**值**|  
     |------------------|---------------|  
-    |应用程序服务器路径|PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。 **注意：**如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。|  
+    |应用程序服务器路径|PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。 **注意：** 如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。|  
     |JAVA_HOME|与 Java 2 平台 SDK 文件相关联的主目录路径，例如 C:\j2sdk1.4.2_08|  
     |密码|连接到 PeopleSoft 系统时使用的密码。|  
     |PeopleSoft 8.x JAR 文件|文件的位置 PeopleSoft Java 对象适配器 JAR， **psjoa.jar**，例如 C:\JARS\psjoa.jar。|  
@@ -163,7 +164,7 @@ PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft �
   
 1.  双击**LOCATIONService_1.xsd**在解决方案资源管理器，以在架构编辑器中打开该文件。  
   
-2.  右键单击**\<架构\>**节点在架构编辑器中和单击**属性**以显示节点的属性。  
+2.  右键单击**\<架构\>** 节点在架构编辑器中和单击**属性**以显示节点的属性。  
   
 3.  选择**获取**从列表中的可用节点**根引用**下拉框。 这应这样做为了在你生成的示例文档实例时它将从生成**获取**节点的架构。  
   
@@ -180,9 +181,9 @@ PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft �
   
 8.  右击 LOCATIONService_1.xsd 在解决方案资源管理器中的，单击**生成实例**在指定的位置生成文档实例。  
   
-9. 右键单击**\<架构\>**节点在架构编辑器中和单击**属性**以显示节点的属性。  
+9. 右键单击**\<架构\>** 节点在架构编辑器中和单击**属性**以显示节点的属性。  
   
-10. 选择 (**默认)**从列表中的可用节点**根引用**下拉框。  
+10. 选择 (**默认)** 从列表中的可用节点**根引用**下拉框。  
   
 #### <a name="modify-the-generated-document-instance"></a>修改生成的文档实例  
   

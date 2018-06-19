@@ -1,14 +1,14 @@
 ---
-title: "常规疑难解答问题和答案 |Microsoft 文档"
-ms.custom: 
+title: 常规疑难解答问题和答案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2f89d92-0a97-4017-8b8e-6afd8b20eaf4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247101"
 ---
 # <a name="general-troubleshooting-questions-and-answers"></a>常见疑难问题与解答
 本主题包含有助于解决 BizTalk 映射器问题的问题和解答。  

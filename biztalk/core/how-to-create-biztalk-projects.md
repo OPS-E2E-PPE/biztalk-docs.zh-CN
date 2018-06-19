@@ -1,11 +1,11 @@
 ---
-title: "如何创建 BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 如何创建 BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, projects
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - solutions
 - solutions, adding projects
 ms.assetid: a6900234-f989-4601-96c5-41d435c2f8b4
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249173"
 ---
 # <a name="how-to-create-biztalk-projects"></a>如何创建 BizTalk 项目
 若要创建在 BizTalk Server 上运行的应用程序，首先需要向解决方案添加一个或多个 BizTalk 项目。 本部分将介绍在使用 BizTalk 项目时可能执行的一些任务。  

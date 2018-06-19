@@ -1,14 +1,14 @@
 ---
-title: "平面文件消息的结构 |Microsoft 文档"
-ms.custom: 
+title: 平面文件消息的结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00f2adf6-a47c-498b-b5ae-c6bd55bafceb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278933"
 ---
 # <a name="structure-of-a-flat-file-message"></a>平面文件消息的结构
 Microsoft 的上下文中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，平面文件实例消息是一个文本文件，可以包含三个逻辑部分： 标头、 正文和尾部，按此顺序。 其中，头部和尾部均是可选的。 以下示例显示的平面文件实例消息由这三个部分组成（其正文部分以粗体显示）：  

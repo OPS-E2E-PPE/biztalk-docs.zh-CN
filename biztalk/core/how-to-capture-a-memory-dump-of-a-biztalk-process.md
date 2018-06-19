@@ -1,14 +1,14 @@
 ---
-title: "如何捕获 BizTalk 进程的内存转储 |Microsoft 文档"
-ms.custom: 
+title: 如何捕获 BizTalk 进程的内存转储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8053fcf3-b331-4245-b3c3-21290463e0c0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247573"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-biztalk-process"></a>如何捕获 BizTalk 进程的内存转储
 在某些情况下，可能需要捕获 BizTalk Server 上运行的进程的内存转储，以对该进程执行深入分析。 在以下情况下可能需要对内存转储进行分析：  

@@ -1,17 +1,17 @@
 ---
-title: "与 MSMQ 适配器的消息的有序传送 |Microsoft 文档"
-ms.custom: 
+title: 与 MSMQ 适配器的消息的有序传送 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, ordered delivery
 - MSMQ adapters, ordered delivery
 ms.assetid: e8dafc76-e894-4120-9cea-d014d635850e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263581"
 ---
 # <a name="ordered-delivery-of-messages-with-the-msmq-adapter"></a>与 MSMQ 适配器的消息的有序传送
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供**按序送达**选项适用于静态发送端口。 设置**按序送达**到发送端口上的选项**True**可确保 BizTalk 服务器将消息传送到发送端口与它们发布到 MessageBox 数据库相同的顺序。 为提供端对端的按序送达功能，必须满足以下条件：  

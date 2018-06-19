@@ -1,17 +1,17 @@
 ---
-title: "如何分析的业务规则中的相同类型的多个对象 |Microsoft 文档"
-ms.custom: 
+title: 如何分析的业务规则中的相同类型的多个对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, multiple types
 - Business Rules Framework, programming
 ms.assetid: ff9790c1-13b0-4eee-8cac-d4f25ef5f0b7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248429"
 ---
 # <a name="how-to-analyze-multiple-objects-of-the-same-type-in-a-business-rule"></a>如何分析的业务规则中的相同类型的多个对象
 在许多情况下，您会根据某个类型编写业务规则，希望单独分析添加到引擎的该类型的每个实例，并按规则对每个实例进行操作。 然而，在某些情况下，您可能希望使用一个规则同时分析给定类型的多个实例。  

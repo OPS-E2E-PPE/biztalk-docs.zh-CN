@@ -1,11 +1,11 @@
 ---
-title: "消息传递负载视图 |Microsoft 文档"
-ms.custom: 
+title: 消息传递负载视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Messaging Payload view [Tracking Profile Editor]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - message schemas, payloads
 - Tracking Profile Editor, Messaging Payload view
 ms.assetid: 2bc247c5-5b31-4cd7-8377-ff9614df1320
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263021"
 ---
 # <a name="messaging-payload-view"></a>消息传递负载视图
 “消息传送负载”视图显示与所选操作（例如，消息已发送或消息已接收）相关联的 XML 消息的架构。 可以从“业务流程调度”视图中的某些形状的快捷菜单访问此视图。  

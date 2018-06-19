@@ -1,11 +1,11 @@
 ---
-title: "影响最大可持续性能因素 |Microsoft 文档"
-ms.custom: 
+title: 影响最大可持续性能因素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maximum sustainable throughput (MST), maintenance
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - maximum sustainable throughput (MST), sustainable load test
 - sustainable performance
 ms.assetid: 99b99655-bc77-425c-a133-204781d7c430
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245837"
 ---
 # <a name="factors-that-affect-maximum-sustainable-performance"></a>影响最大可持续性能因素
 最大可承受吞吐量受一系列众多的因素（例如，可用服务器资源、解决方案中使用的功能类型、消息大小以及总体消息负载）直接影响。 还有其他因素需要考虑，尽管这些因素可能目前还不明显。 估计最大可持续性能时，还应考虑以下因素：  

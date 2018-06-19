@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server 消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, properties
 - messages, about messages
 ms.assetid: 6048c191-b495-4fdc-b547-e3e322340a49
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279893"
 ---
 # <a name="the-biztalk-server-message"></a>BizTalk Server 消息
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 本质上是一个消息处理引擎。 若要了解 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的详细信息，则必须先了解消息以及 BizTalk Server 将如何表示、存储和处理消息。 对消息概念的理解将有助于了解 BizTalk Server 处理消息的方式的具体信息。  

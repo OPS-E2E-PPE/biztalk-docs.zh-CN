@@ -1,11 +1,11 @@
 ---
-title: "在映射中的 Functoid |Microsoft 文档"
-ms.custom: 
+title: 在映射中的 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - functoid types, Addition
 - Record Count functoids
 ms.assetid: 10ee8b62-cb20-4d26-9d86-b6564f30c297
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246037"
 ---
 # <a name="functoids-in-maps"></a>映射中的 Functoid
 BizTalk 映射器支持从源架构中的记录和字段转换至目标架构中的记录和字段的复杂结构性转换。 Functoid 使用预定义的公式和特定值（称为参数）来执行计算。 这些计算是根据指定的记录和字段顺序执行的。  

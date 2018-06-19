@@ -1,14 +1,14 @@
 ---
-title: "AS2 解码器找不到处置通知选项 HTTP 标头 |Microsoft 文档"
-ms.custom: 
+title: AS2 解码器找不到处置通知选项 HTTP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6de4b9a6-17b2-4455-9dbd-a6bb69fac1d5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240013"
 ---
 # <a name="the-as2-decoder-was-unable-to-locate-the-disposition-notification-options-http-header"></a>AS2 解码器无法定位 Disposition-Notification-Options HTTP 标头
 ## <a name="details"></a>详细信息  

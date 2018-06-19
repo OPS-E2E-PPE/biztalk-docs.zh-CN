@@ -1,14 +1,14 @@
 ---
-title: "如何将数据复制到作为属性字段的消息上下文 |Microsoft 文档"
-ms.custom: 
+title: 如何将数据复制到作为属性字段的消息上下文 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fdfe475-d9b4-4cf9-898f-dbd7e719c27c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249981"
 ---
 # <a name="how-to-copy-data-to-the-message-context-as-property-fields"></a>如何将数据复制到作为属性字段的消息上下文
 你可以将提升属性作为**属性字段**方式与将提升属性作为得多相同**可分辨字段**，，也可以使用**快速升级**到功能优化过程。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 双击**属性**刚刚添加到的行的列单元格**属性字段列表**，然后在下拉列表中，选择**属性架构**和对应**Field 元素**到想要提升所选的节点的节点。 下拉列表值具有窗体 X:Y，其中 X 是中的属性架构的命名空间前缀**属性架构列表**，Y 是节点名称和**Field 元素**该属性架构中的节点。  
   
-     下拉列表中的默认值是第一个属性架构**（Field 元素）**尚未升级，节点按字母顺序在所有相关属性架构。 此节点一般不会是要将给定架构节点升级到的属性架构节点。  
+     下拉列表中的默认值是第一个属性架构 **（Field 元素）** 尚未升级，节点按字母顺序在所有相关属性架构。 此节点一般不会是要将给定架构节点升级到的属性架构节点。  
   
 10. 你可以在对话框中，单击左侧架构树中选择更多节点升级**添加**和每个所选内容后再执行步骤 9。  
   

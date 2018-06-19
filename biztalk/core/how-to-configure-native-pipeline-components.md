@@ -1,14 +1,14 @@
 ---
-title: "如何配置本机管道组件 |Microsoft 文档"
-ms.custom: 
+title: 如何配置本机管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: adb6b994-c20c-4f43-82c5-a07b29498cdf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248709"
 ---
 # <a name="how-to-configure-native-pipeline-components"></a>如何配置本地管道组件
 以下代码显示如何使用 `IPersistPropertyBag` 接口配置本地管道组件。  

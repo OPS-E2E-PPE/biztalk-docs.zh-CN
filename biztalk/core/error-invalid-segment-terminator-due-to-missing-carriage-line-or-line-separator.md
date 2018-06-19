@@ -1,14 +1,14 @@
 ---
-title: "交换发生了结构错误。 可能的原因是无效的段终止符由于缺少回车换行符和-或换行分隔符 |Microsoft 文档"
-ms.custom: 
+title: 交换发生了结构错误。 可能的原因是无效的段终止符由于缺少回车换行符和-或换行分隔符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 035e37d5-d4a8-49d0-8d75-3bcf2426cac7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241741"
 ---
 # <a name="the-interchange-had-structural-error-a-likely-cause-is-invalid-segment-terminator-due-to-missing-carriage-line-and-or-line-feed-seperators"></a>交换发生了结构错误。 可能的原因是无效的段终止符由于缺少回车换行符和-或换行分隔符
 ## <a name="details"></a>详细信息  

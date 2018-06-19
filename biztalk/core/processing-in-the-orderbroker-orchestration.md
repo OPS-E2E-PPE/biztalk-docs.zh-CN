@@ -1,11 +1,11 @@
 ---
-title: "在 OrderBroker 业务流程处理 |Microsoft 文档"
-ms.custom: 
+title: 在 OrderBroker 业务流程处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - examples, orchestration processing [process management solution]
 - scopes, nesting
 ms.assetid: c296e00c-b3ad-4161-baf7-258899185c34
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266629"
 ---
 # <a name="processing-in-the-orderbroker-orchestration"></a>OrderBroker 业务流程中的处理
 本部分介绍如何**OrderBroker**业务流程接受订单和准备进程管理器。 本部分首先介绍了该业务流程的日常工作。 随后的部分将介绍该业务流程如何处理消息。 然后，将重点介绍该业务流程如何使用原子事务来提高性能。  

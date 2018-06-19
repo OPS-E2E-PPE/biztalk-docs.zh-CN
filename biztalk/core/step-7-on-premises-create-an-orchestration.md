@@ -1,14 +1,14 @@
 ---
-title: "步骤 7 （在本地）： 创建业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7 （在本地）： 创建业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0b6d0e-cf00-4eee-9b89-28210bad46f4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280221"
 ---
 # <a name="step-7-on-premises-create-an-orchestration"></a>步骤 7 （在本地）： 创建业务流程
 根据业务方案之后,[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收的销售订单消息从 Service Bus 队列，它需要检查消息中订购数量是否大于 100。 如果数量大于 100，将消息插入**SalesOrder**表。 否则会将消息发送到共享文件位置。 Northwind 通过创建一个业务流程来实现此业务逻辑。 本主题提供如何创建该业务流程的分步指南。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |------------------|---------------------------|  
 |Message1_SO_Inbound|此消息是的一个实例**ECommerceSalesOrder.xsd**架构。|  
 |Message2_SO_Inbound|此消息是一份**Message1_SO_Inbound**。 作为最佳实践，你必须创建该消息的副本，然后修改新的消息，使原始消息保持不变。 有关详细信息，请参阅[BizTalk Server 消息](http://msdn.microsoft.com/library/aa560436)。|  
-|Message1_SO_Outbound|此消息是的一个实例**TableOperations.dbo.SalesOrder (Insert)**架构。|  
+|Message1_SO_Outbound|此消息是的一个实例**TableOperations.dbo.SalesOrder (Insert)** 架构。|  
   
 #### <a name="to-create-the-messages"></a>创建消息的步骤  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 09/20/2017
   
         |属性名称|值|  
         |-------------------|-----------|  
-        |Identifier|输入`Yes`。 **注意：**其他路由是默认情况下名为**Else**。|  
+        |Identifier|输入`Yes`。 **注意：** 其他路由是默认情况下名为**Else**。|  
         |表达式|输入`quantityOrdered > 100`。|  
   
          现在你有两条路线可用。 如果中的值**quantityOrdered**变量大于 100，消息将**是**路由。 否则，它采用**Else**路由。 现在你必须定义要在每个路线中执行的操作。  

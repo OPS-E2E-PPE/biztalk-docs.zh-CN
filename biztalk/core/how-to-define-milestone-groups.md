@@ -1,11 +1,11 @@
 ---
-title: "如何定义里程碑组 |Microsoft 文档"
-ms.custom: 
+title: 如何定义里程碑组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, milestone groups
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM View Wizard, milestone groups
 - creating, milestone groups
 ms.assetid: 8b04d0ef-d676-476e-a292-16c4f1bf89c8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249349"
 ---
 # <a name="how-to-define-milestone-groups"></a>如何定义里程碑组
 使用里程碑组可以将相关的里程碑（例如，定义采购订单有效时间的开始里程碑和结束里程碑）放在一起。 然后，可以将里程碑组用作一个里程碑。  

@@ -1,11 +1,11 @@
 ---
-title: "规划你的平台容错 |Microsoft 文档"
-ms.custom: 
+title: 规划你的平台容错 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, BizTalk Server
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - Primary Import database [BAM], fault tolerance
 - fail-over clustering
 ms.assetid: 512ed6b8-db1e-434a-8009-63e952cf5500
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265021"
 ---
 # <a name="planning-your-platform-for-fault-tolerance"></a>规划你的平台容错
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 是基于 Microsoft Windows 和 Microsoft SQL Server 平台建立的。 BizTalk Server 幸免于灾难或从灾难中恢复的能力取决于其底层平台幸免或恢复的能力。  

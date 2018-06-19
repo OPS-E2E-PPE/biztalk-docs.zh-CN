@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239333"
 ---
 # <a name="distributionlist-distributionlistcollection-node"></a>DistributionList （DistributionListCollection 节点）
 绑定文件的 DistributionList 节点包含有关与绑定文件一起导出的分发列表的特定信息。 分发列表指 BizTalk Server Administrator 组中的发送端口组。  

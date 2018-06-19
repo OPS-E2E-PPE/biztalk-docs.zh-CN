@@ -1,18 +1,18 @@
 ---
-title: "如何配置平面文件反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: 如何配置平面文件反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], configuring
 - pipeline components, Flat File Disassembler
 - messages, flat files
 ms.assetid: c09996f6-6035-42a3-a75f-4def4ac39a95
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249045"
 ---
 # <a name="how-to-configure-the-flat-file-disassembler-pipeline-component"></a>如何配置平面文件反汇编程序管道组件
 平面文件拆装器管道组件用于拆装平面文件格式的文档，并将其转换为 XML 格式。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**文档架构**|选择用于将消息从平面文件解析为 XML 格式的平面文件文档架构。 可以使用 BizTalk 编辑器创建用于解析的平面文件文档架构。<br /><br /> 默认值： 无**注意：**必须指定用于此属性的架构，否则会发生编译时错误。|  
+    |**文档架构**|选择用于将消息从平面文件解析为 XML 格式的平面文件文档架构。 可以使用 BizTalk 编辑器创建用于解析的平面文件文档架构。<br /><br /> 默认值： 无**注意：** 必须指定用于此属性的架构，否则会发生编译时错误。|  
     |**标头架构**|为平面文件消息的头部部分选择架构。 可以使用 BizTalk 编辑器创建用于平面文件消息头部部分的架构。<br /><br /> 默认值： 无|  
     |**保留标头**|将此属性设置为**True**如果你需要在消息上下文上存储的平面文件消息标头。 通过保留平面文件消息的头部，可以将头部的结构和内容随消息一起通过 BizTalk Server 发送。 然后，在使用平面文件组装器管道组件将该消息重新序列化为平面文件格式时可以使用该头部。<br /><br /> 在使用平面文件组装器序列化保留的头部时，头部文档设计时属性可以缺少头部架构的名称，因为在运行时可以动态获取此信息。 这可以通过使用保留的头部的消息类型来完成。<br /><br /> 默认值： **False**|  
     |**尾部架构**|为平面文件消息的尾部部分选择架构。 可以使用 BizTalk 编辑器创建用于平面文件消息尾部部分的架构。<br /><br /> 默认值： 无|  

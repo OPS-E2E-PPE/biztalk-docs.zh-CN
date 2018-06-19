@@ -1,11 +1,11 @@
 ---
-title: "数据库结构和作业 |Microsoft 文档"
-ms.custom: 
+title: 数据库结构和作业 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PurgeSubscriptionsJob_BizTalkMsgBoxDb job
@@ -32,7 +32,7 @@ helpviewer_keywords:
 - jobs [SQL Server Agent], Tracking database
 - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb job
 ms.assetid: f5f6b17d-0f5e-4821-a7eb-c345234ffc65
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -41,6 +41,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240557"
 ---
 # <a name="database-structure-and-jobs"></a>数据库结构和作业
 本主题讨论数据库结构和数据库作业[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -67,8 +68,8 @@ ms.lasthandoff: 09/20/2017
 |CleanupBTFExpiredEntriesJob_BizTalkMgmtDb|此作业清除 BizTalk 管理 (BizTalkMgmtDb) 数据库中过期的 BizTalk Framework (BTF) 条目。|  
 |DTA 清除和存档 (BizTalkDTADb)|此作业自动存档 BizTalk 跟踪 (BizTalkDTADb) 数据库中的数据并清除过时的数据。 有关配置和运行此作业的详细信息，请参阅[存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)。|  
 |MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb|此作业检测 BizTalk Server 主机实例（NT 服务）停止的时间，并释放该主机实例已完成的所有工作，以便可以由其他主机实例进行处理。|  
-|MessageBox_Message_Cleanup_BizTalkMsgBoxDb|此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何订户引用的所有消息。 **注意：**这是通过 MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb 作业来启动这些计划的作业。 不要手动启动此作业。|  
-|MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb|此作业管理消息的引用计数日志，并确定消息何时不再被任何订户引用。 **注意：**即使此 SQL Server 代理作业计划运行一次，每分钟，此作业由调用的存储的过程包含逻辑，以确保持续运行此存储的过程。 这是由设计行为实现的，不应修改。|  
+|MessageBox_Message_Cleanup_BizTalkMsgBoxDb|此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何订户引用的所有消息。 **注意：** 这是通过 MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb 作业来启动这些计划的作业。 不要手动启动此作业。|  
+|MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb|此作业管理消息的引用计数日志，并确定消息何时不再被任何订户引用。 **注意：** 即使此 SQL Server 代理作业计划运行一次，每分钟，此作业由调用的存储的过程包含逻辑，以确保持续运行此存储的过程。 这是由设计行为实现的，不应修改。|  
 |MessageBox_Parts_Cleanup_BizTalkMsgBoxDb|此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何消息引用的所有消息部分。 所有消息都由一个或多个消息部分组成，这些消息部分包含实际的消息数据。|  
 |MessageBox_UpdateStats_BizTalkMsgBoxDb|此作业手动更新 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库的统计信息。|  
 |监视 BizTalk Server|此作业在 BizTalkMgmtDb、BizTalkMsgBoxDb 和 BizTalkDTADb 数据库中扫描任何已知的问题，包括孤立实例。|  

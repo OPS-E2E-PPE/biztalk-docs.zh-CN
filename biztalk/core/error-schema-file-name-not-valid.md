@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240645"
 ---
 # <a name="error---schema-file-name-not-valid"></a>错误-不是有效的架构文件名称
 **说明**  

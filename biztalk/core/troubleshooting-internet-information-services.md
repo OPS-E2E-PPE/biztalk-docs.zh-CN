@@ -1,14 +1,14 @@
 ---
-title: "Internet 信息服务疑难解答 |Microsoft 文档"
-ms.custom: 
+title: Internet 信息服务疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f77084f1-5797-42ab-bbf6-fe815144232e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280101"
 ---
 # <a name="troubleshooting-internet-information-services"></a>Internet 信息服务疑难解答
 Microsoft Internet 信息服务 (IIS) 被 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 广泛用于各种功能，其中包括 HTTP、SOAP 和 Windows SharePoint Services 适配器。 本主题介绍使用 IIS 时可能遇到的某些已知问题以及这些问题的可能解决方法。  
@@ -133,7 +134,7 @@ Microsoft Internet 信息服务 (IIS) 被 Microsoft [!INCLUDE[btsBizTalkServerNo
      *%Windir%\\*system32\LogFiles\W3SVC1\  
   
     > [!NOTE]
-    >  *%Windir%*是 IIS 服务器上的 Windows 目录的位置的占位符。  
+    >  *%Windir%* 是 IIS 服务器上的 Windows 目录的位置的占位符。  
   
      默认情况下，在运行 Windows Server 2008 或 Windows Vista 的计算机中，IIS 日志文件位于以下目录：  
   
@@ -141,7 +142,7 @@ Microsoft Internet 信息服务 (IIS) 被 Microsoft [!INCLUDE[btsBizTalkServerNo
   
      默认情况下，[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] 上的 HTTPERR 日志文件位于以下目录中：  
   
-     *%Windir%*system32LogFilesHTTPERR  
+     *%Windir%* system32LogFilesHTTPERR  
   
     > [!NOTE]
     >  只有 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 Windows Vista 计算机上才有 HTTPERR 日志文件。  

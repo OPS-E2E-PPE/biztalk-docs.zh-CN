@@ -1,14 +1,14 @@
 ---
-title: "动态设计时适配器配置 |Microsoft 文档"
-ms.custom: 
+title: 动态设计时适配器配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36127d62-0348-42bb-981f-19fcad26efce
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241285"
 ---
 # <a name="dynamic-design-time-adapter-configuration"></a>动态设计时适配器配置
 静态设计时适配器配置以及“添加适配器元数据”向导中的标准默认 UI 有时不够灵活，不足以显示适配器的服务，以供 BizTalk 项目导入。 此时可以选用动态设计时配置，在其中为向导提供自定义 UI，以显示和选择您的适配器服务。 BizTalk 适配器框架提供了一组 API，可供您导入适配器所需的架构以及显示自定义 UI。  

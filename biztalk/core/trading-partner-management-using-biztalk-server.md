@@ -1,14 +1,14 @@
 ---
-title: "贸易合作伙伴管理使用 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 贸易合作伙伴管理使用 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f31a5e49-ef19-41a3-9cf3-cf85d0685a59
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279117"
 ---
 # <a name="trading-partner-management-using-biztalk-server"></a>使用 BizTalk Server 进行贸易合作伙伴管理
 ## <a name="introduction-to-tpm"></a>TPM 简介

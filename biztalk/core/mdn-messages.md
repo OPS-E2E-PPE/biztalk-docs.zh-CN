@@ -1,14 +1,14 @@
 ---
-title: "MDN 消息 |Microsoft 文档"
-ms.custom: 
+title: MDN 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16ac6253-0be5-4636-b102-bf5af8956261
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263725"
 ---
 # <a name="mdn-messages"></a>MDN 消息
 消息处置通知 (MDN) 用于确认已发送 AS2 消息。 如果启用了 MDN，则 AS2 传输直到接收并验证 MDN 后才完成。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将始终尝试返回 MDN 以指示消息处理的状态，即使在处理 AS2 消息时出错。  

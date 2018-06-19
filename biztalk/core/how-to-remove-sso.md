@@ -1,11 +1,11 @@
 ---
-title: "如何删除 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何删除 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, deleting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deleting, SSO
 - deleting, Master Secret server
 ms.assetid: 0e1ad8e3-0938-4f36-b85b-4631d0eeb8c9
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254653"
 ---
 # <a name="how-to-remove-sso"></a>如何删除 SSO
 除非依存产品要使用企业单一登录 (SSO)，否则在删除 BizTalk Server 时将不再配置 SSO。 不过，这样并未删除 SSO。 您必须单独删除 SSO。 也可以还原包括主密钥在内的配置信息以重用现有数据。 有关详细信息，请参阅[如何还原主密钥](../core/how-to-restore-the-master-secret.md)。  

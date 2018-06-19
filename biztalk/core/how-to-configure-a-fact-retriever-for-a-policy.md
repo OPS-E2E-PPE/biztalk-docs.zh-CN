@@ -1,18 +1,18 @@
 ---
-title: "如何为策略配置事实检索器 |Microsoft 文档"
-ms.custom: 
+title: 如何为策略配置事实检索器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer, policies
 - Business Rule Composer, facts
 - policies, facts
 ms.assetid: a7bcf3e5-3f28-4f0e-b112-8c97dee072a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247093"
 ---
 # <a name="how-to-configure-a-fact-retriever-for-a-policy"></a>如何为策略配置事实检索器
 您可以将不经常变化的事实存储起来，然后在主机应用程序的首次执行循环之前，可以从存储中检索这些事实，一次性地将它们提供给规则引擎进行缓存，以便在多个执行循环中重用这些事实。  

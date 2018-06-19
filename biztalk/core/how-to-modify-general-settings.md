@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255981"
 ---
 # <a name="how-to-modify-general-settings"></a>如何修改常规设置
 使用设置仪表板，你可以在 BizTalk 组中修改给定主机的常规配置设置。 本主题提供执行该操作的分步过程。  

@@ -1,17 +1,17 @@
 ---
-title: "平面文件反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: 平面文件反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component]
 - pipeline components, Flat File Disassembler
 ms.assetid: 8d59f86e-ea16-4989-ada4-d24a51e3409a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245917"
 ---
 # <a name="flat-file-disassembler-pipeline-component"></a>平面文件反汇编程序管道组件
 平面文件拆装器组件可解析分隔和位置这两种格式的平面文件消息，并将其转换为 XML 表示形式。 平面文件拆装器还可从平面文件消息中删除头部结构和尾部结构，并将消息中的交换分为各个文档。 另外，它还可升级文档和头部的属性。  

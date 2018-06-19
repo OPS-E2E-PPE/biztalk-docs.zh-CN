@@ -1,14 +1,14 @@
 ---
-title: "定义业务流程 |Microsoft 文档"
-ms.custom: 
+title: 定义业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5e0fdfe-e298-4f32-a7c5-d081b926a206
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22243269"
 ---
 # <a name="defining-business-processes"></a>定义业务流程
 解决 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 所涉及的问题时需要在不同系统间交换消息。 不过，交换消息的实际目的是根据应用程序定义和执行业务流程。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 引擎使用业务流程来定义这些业务程序的逻辑。 另外，它还使用业务规则引擎来创建和评估业务规则组。 本部分介绍业务流程和业务规则引擎。  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 的 64 位支持概述 |Microsoft 文档"
-description: "适配器、 进程、 BizTalk 管理、 BAM 工具、 程序集、 业务流程，和在 BizTalk Server 中的详细信息中的 64 位支持"
-ms.custom: 
+title: BizTalk Server 的 64 位支持概述 |Microsoft 文档
+description: 适配器、 进程、 BizTalk 管理、 BAM 工具、 程序集、 业务流程，和在 BizTalk Server 中的详细信息中的 64 位支持
+ms.custom: ''
 ms.date: 09/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52ae9037-a7af-48e4-b6a3-bff7600802de
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010886"
 ---
 # <a name="biztalk-server-64-bit-support"></a>BizTalk Server 64 位支持
 本主题解答一些有关 Microsoft 的 64 位支持的常见问题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

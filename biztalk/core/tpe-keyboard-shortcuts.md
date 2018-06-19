@@ -1,17 +1,17 @@
 ---
-title: "键入键盘快捷键 |Microsoft 文档"
-ms.custom: 
+title: 键入键盘快捷键 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Tracking Profile Editor
 - Tracking Profile Editor, keyboard shortcuts
 ms.assetid: b10288b8-c63d-4564-905c-5817fd92a592
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279213"
 ---
 # <a name="tpe-keyboard-shortcuts"></a>TPE 键盘快捷键
 在跟踪配置文件编辑器 （键入），可以使用键盘快捷方式执行相同的导航和编辑通过使用鼠标执行操作的函数。 这些快捷方式可用于执行中键入所用的所有函数。 此部分描述的键盘快捷方式，并提供了有关使用你键盘导航中键入一些提示。  

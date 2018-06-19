@@ -1,11 +1,11 @@
 ---
-title: "SSO Affiliate 应用程序 |Microsoft 文档"
-ms.custom: 
+title: SSO Affiliate 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, designing applications
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO, applications
 - applications [SSO], designing
 ms.assetid: 002ecf7e-4d52-425a-9498-0e7bd6545047
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975721"
 ---
 # <a name="sso-affiliate-applications"></a>SSO 关联应用程序
 企业单一登录 (SSO) 关联应用程序是用于表示使用 SSO 连接到的诸如主机、后端系统或业务应用程序之类的系统或子系统的逻辑实体。 关联应用程序可以表示诸如大型机或 UNIX 计算机之类的后端系统。 它还可以表示应用程序（如 SAP）或系统分支（如“福利待遇”子系统或“付款存根”子系统）。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
 |Description|关联应用程序的简要描述|  
 |联系人|用户可以联系的此关联应用程序的主要联系人。 （可以是电子邮件地址。）|  
 |appUserAccount|Windows 组，包含将使用此关联应用程序的最终用户的用户帐户。|  
-|appAdminAccount|Windows 组，包含将管理此关联应用程序的管理员帐户。 **注意：**不需要定义此属性，如果将 adminAccountSame 设置为是。|  
+|appAdminAccount|Windows 组，包含将管理此关联应用程序的管理员帐户。 **注意：** 不需要定义此属性，如果将 adminAccountSame 设置为是。|  
   
 |应用程序标志|Description|  
 |----------------------|-----------------|  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288477"
 ---
 # <a name="wcf-custom-adapter"></a>WCF-Custom 适配器
 WCF 自定义适配器是一个进程内适配器来允许配置接收位置和发送端口的绑定和行为设置为 Windows Communication Foundation (WCF) 适用于[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 WCF 自定义适配器可用于标准 WCF 适配器不支持的方案。 使用 WCF-Custom 适配器，还可在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用 WCF 可扩展点。  

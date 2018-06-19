@@ -1,11 +1,11 @@
 ---
-title: "如何导入 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何导入 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, planning
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, importing
 - importing, planning
 ms.assetid: 51169f35-d572-4612-9104-a59908e24874
-caps.latest.revision: "70"
+caps.latest.revision: 70
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010366"
 ---
 # <a name="how-to-import-a-biztalk-application"></a>如何导入 BizTalk 应用程序
 本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或命令行，将 BizTalk 应用程序导入到 BizTalk 组。 导入 BizTalk 应用程序时将在 BizTalk 管理数据库中注册项目，并将这些项目的数据写入相应的 BizTalk 数据库。 有关详细信息，请参阅[什么发生时项目导入](../core/what-happens-when-artifacts-are-imported.md)。 在导入某个应用程序时，将不会安装该应用程序。 必须先安装包含基于文件的项目的应用程序，该应用程序才能运行。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 12/01/2017
   
     -   若要导入到现有应用程序的.msi 文件中包含的项目，展开**应用程序**，右键单击应用程序，指向**导入**，然后单击**MSI 文件**.  
   
-3.  在导入 MSI 向导页上，欢迎在**MSI 文件以导入**，键入.msi 文件的路径，然后单击**下一步**。 如果有必要，你可以为.msi 文件通过单击浏览**...** 按钮。  
+3.  在导入 MSI 向导页上，欢迎在**MSI 文件以导入**，键入.msi 文件的路径，然后单击**下一步**。 如果有必要，你可以为.msi 文件通过单击浏览 **...** 按钮。  
   
 4.  在应用程序设置页上，在**应用程序名称**下拉列表中，选择应用程序名称，如果可用。 如果将应用程序导入到 BizTalk 组，则可使用此列表。  
   

@@ -1,17 +1,17 @@
 ---
-title: "日志传送 |Microsoft 文档"
-ms.custom: 
+title: 日志传送 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
 - log shipping
 ms.assetid: 25bc9724-1c99-43d0-8cd1-3ed8eaa60268
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262109"
 ---
 # <a name="log-shipping"></a>日志传送
 日志传送具有备用服务器功能，有时称为热备份，它可以缩短出现系统失败时的停机时间。  

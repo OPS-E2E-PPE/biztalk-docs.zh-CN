@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246477"
 ---
 # <a name="how-to-add-a-component-to-a-pipeline"></a>如何将组件添加到管道
 通过将组件从工具箱拖至设计图面可以向管道添加组件。  

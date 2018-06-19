@@ -1,14 +1,14 @@
 ---
-title: "对队列管理的支持 |Microsoft 文档"
-ms.custom: 
+title: 对队列管理的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60d06ba-8cf3-46d6-af59-626f12fc572a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278693"
 ---
 # <a name="support-for-queue-management"></a>队列管理支持
 与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MQSeries 适配器你现在可以创建和删除队列远程 MQSeries 队列管理器上。 这支持，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用的远程 MQSAgent COM + 对象的通信直接与 MQSeries 队列管理器。 通常，在运行时使用此 MQSAgent 从远程 MQSeries 服务器队列读取信息和向其中写入消息。 此远程服务的客户端可以是多台 BizTalk 服务器。 此外，队列创建和删除功能由此 MQSAgent 提供，并可以从业务流程或适配器中直接调用。 这样可以实现高度动态的方案：业务流程或适配器创建一个临时队列，然后向其上发送消息，在另一个队列上接收回复，最后删除这个临时队列。  

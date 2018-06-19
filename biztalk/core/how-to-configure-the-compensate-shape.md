@@ -1,11 +1,11 @@
 ---
-title: "如何配置 Compensate 形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 Compensate 形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Compensate shape [Orchestration Designer], about Compensate shape
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring [Orchestration Designer], Compensate shape
 - Compensate shape [Orchestration Designer], configuring
 ms.assetid: 9f06289e-4d11-4864-9851-c210276865a7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248277"
 ---
 # <a name="how-to-configure-the-compensate-shape"></a>如何配置 Compensate 形状
 如果你在业务流程中使用嵌套的事务，你可以添加**Compensate**补偿块或事务范围的异常块中的形状。 这样可以使您的业务流程能够明确地对嵌套事务执行补偿操作。 指定你想要在补偿的事务**Compensate**形状，以及在嵌套事务中的任何补偿代码将运行，提供已成功提交的事务。  

@@ -1,14 +1,14 @@
 ---
-title: "如何复制、 剪切和粘贴 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何复制、 剪切和粘贴 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 825847e4-87db-4b40-8e5d-5b5b1c79c6de
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249525"
 ---
 # <a name="how-to-copy-cut-and-paste-a-functoid"></a>如何复制、 剪切和粘贴 Functoid
 BizTalk 映射器中的复制/剪切/粘贴功能使 functoid 可重复使用。 在映射中，您可以将一个或多个 functoid 从一个网格页复制、剪切和粘贴到另一个网格页。 本主题提供了执行这些操作的分步说明。  

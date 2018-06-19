@@ -1,17 +1,17 @@
 ---
-title: "创建链接 |Microsoft 文档"
-ms.custom: 
+title: 创建链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, links
 - BizTalk Mapper, links
 ms.assetid: e8596c50-62e9-40a7-ad61-29cbdb4f4fc9
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238565"
 ---
 # <a name="creating-links"></a>创建链接
 BizTalk 映射器可帮助您自动化在创建链接过程中所涉及的一些元素。 简单链接创建类似于简单数据类型。 还有一些较为复杂的链接创建形式，类似于编程语言中的结构分配。 例如，使用单个链接创建指定如何将多个数据项从输入实例消息移至相应的输出实例消息。  

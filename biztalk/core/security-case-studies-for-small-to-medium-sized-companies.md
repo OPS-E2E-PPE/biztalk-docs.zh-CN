@@ -1,11 +1,11 @@
 ---
-title: "对于小型到中型公司的安全案例研究 |Microsoft 文档"
-ms.custom: 
+title: 对于小型到中型公司的安全案例研究 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, small distributions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, architecture
 - architecture, medium distributions
 ms.assetid: b33e3f2a-ddc4-47a8-92d7-511ae0cc880e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269285"
 ---
 # <a name="security-case-studies-for-small-to-medium-sized-companies"></a>对于小型到中型公司的安全案例研究
 对于重视确保仅有选定的一组人员或应用程序可访问其数据和资源的任何公司，安全性是至关重要的。 公司可通过多种方式处理和实现安全性。  

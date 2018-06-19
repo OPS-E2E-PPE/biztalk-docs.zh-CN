@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233317"
 ---
 # <a name="configuring-as2-pipeline-properties"></a>配置 AS2 管道属性
 当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法确定解析为已发送交换或已接收交换的协议时，将使用管道属性来处理传入或传出的 AS2 消息。  

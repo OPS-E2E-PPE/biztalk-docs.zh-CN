@@ -1,18 +1,18 @@
 ---
-title: "事务支持 |Microsoft 文档"
-ms.custom: 
+title: 事务支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DataConnection object
 - Business Rules Framework, code samples
 - Business Rules Framework, programming
 ms.assetid: 84faac2f-6229-4692-9d1a-bf62d87d69bb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279421"
 ---
 # <a name="transaction-support"></a>事务支持
 规则引擎通常不支持事务。 但是，你可以通过更新数据库以事务性方式使用**该组**对象中的以下步骤所示：  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置发送端口的每个实例管道属性 |Microsoft 文档"
-ms.custom: 
+title: 如何配置发送端口的每个实例管道属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, properties
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - send ports, pipelines
 - pipelines, configuring
 ms.assetid: c58faa9e-0dfb-458b-8f1b-d3c91bce0436
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249261"
 ---
 # <a name="how-to-configure-per-instance-pipeline-properties-for-a-send-port"></a>如何为发送端口配置基于实例的管道属性
 本主题介绍如何使用 BizTalk Server 管理控制台来配置发送端口的管道属性，管道已部署到 BizTalk 组后。 您所做更改覆盖默认管道仅，此发送端口属性，这样如果你想，可以将每个发送端口的不同管道属性配置 BizTalk 组中。  

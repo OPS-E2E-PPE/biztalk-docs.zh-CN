@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279269"
 ---
 # <a name="transmitpipeline-sendport-node"></a>TransmitPipeline（“发送端口”节点）
 绑定文件的“发送端口”节点的 TransmitPipeline 节点提供有关与随绑定文件导出的发送端口绑定的发送管道的特定信息。  

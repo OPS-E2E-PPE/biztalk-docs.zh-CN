@@ -1,11 +1,11 @@
 ---
-title: "如何配置每个实例的管道属性接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何配置每个实例的管道属性接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, properties
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - receive locations, pipelines
 - managing [receive locations], configuring
 ms.assetid: e1ed3b10-2f39-479b-a3e6-22b4b2872192
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248837"
 ---
 # <a name="how-to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>如何配置每个实例的管道属性接收位置
 本主题介绍在将管道部署到 BizTalk 组之后如何使用 BizTalk Server 管理控制台为接收位置配置管道属性。 您所做的更改将只覆盖此接收位置的默认管道属性，因此如果需要，可以为 BizTalk 组中的每个接收位置配置不同的管道属性。  

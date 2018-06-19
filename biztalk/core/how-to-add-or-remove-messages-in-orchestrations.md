@@ -1,11 +1,11 @@
 ---
-title: "如何在添加或删除消息业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何在添加或删除消息业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, orchestrations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, variables
 ms.assetid: 5b5267e7-764b-40a4-a848-6e79ef867409
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246725"
 ---
 # <a name="how-to-add-or-remove-messages-in-orchestrations"></a>如何在添加或删除消息业务流程
 一条消息是通信的一个业务流程中的基本单位。 它包含一个或多个部件以及描述消息和其内容的属性的上下文数据。  

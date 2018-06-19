@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254589"
 ---
 # <a name="how-to-open-a-saved-query"></a>如何打开保存的查询
 您可以直接从保存查询的文件夹中或 BizTalk Server 管理控制台内打开保存的查询。 当直接从文件夹中打开查询时，将会在管理控制台中打开对应的 BizTalk Server 组。 当从管理控制台中打开查询时，将显示在列出的所有组上运行查询的选项。  

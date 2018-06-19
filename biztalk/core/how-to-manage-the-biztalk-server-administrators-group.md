@@ -1,11 +1,11 @@
 ---
-title: "如何管理 BizTalk Server Administrators 组 |Microsoft 文档"
-ms.custom: 
+title: 如何管理 BizTalk Server Administrators 组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Administrators group, user accounts
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Administration Console [BizTalk Server], administering
 - BizTalk Administrators group, about BizTalk Administrators group
 ms.assetid: 60ea689b-0b93-4fcc-b49c-6436e7be473f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254749"
 ---
 # <a name="how-to-manage-the-biztalk-server-administrators-group"></a>如何管理 BizTalk Server Administrators 组
 BizTalk Server 管理员组具有执行管理任务所需的最低权限。 您可以使用 BizTalk Server 管理控制台或 WMI 提供程序将用户添加到 BizTalk Server Administrators 组中，以便用户可以执行管理任务。 当不再需要用户执行管理任务时，也可以使用 BizTalk Server 管理控制台或 WMI 提供程序将用户从 BizTalk Server Administrators 组中删除。  

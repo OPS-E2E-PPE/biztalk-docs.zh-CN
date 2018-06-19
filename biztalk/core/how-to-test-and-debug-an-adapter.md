@@ -1,14 +1,14 @@
 ---
-title: "如何测试和调试适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何测试和调试适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf6563ea-b4ea-4617-b3da-d31250d002ab
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256861"
 ---
 # <a name="how-to-test-and-debug-an-adapter"></a>如何测试和调试适配器
 调试运行时问题通常需要综合的解决方法。 必须从多个数据源收集数据，例如软件跟踪、性能计数器、事件日志条目、Windows 管理规范 (WMI) 事件和调试源代码，以确定问题或软件错误的根源。  

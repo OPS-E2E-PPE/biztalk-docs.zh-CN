@@ -1,18 +1,18 @@
 ---
-title: "无提示 MQSeries 适配器配置 |Microsoft 文档"
-ms.custom: 
+title: 无提示 MQSeries 适配器配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - silent configuration [MQSeries adapters]
 - configuring [MQSeries adapters], silent configuration
 - MQSeries adapters, silent configuration
 ms.assetid: 6fdf556b-5c0e-4f8b-ae1c-fe06fd77e102
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269541"
 ---
 # <a name="silent-configuration-of-the-mqseries-adapter"></a>无提示 MQSeries 适配器配置
 可以在命令行中使用 MQSAgent COM+ 配置向导来执行无提示配置。 还可以使用该向导的命令行版本来删除 MQSAgent。 该向导从 XML 文件中读取配置信息。  

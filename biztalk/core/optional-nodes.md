@@ -1,11 +1,11 @@
 ---
-title: "可选节点 |Microsoft 文档"
-ms.custom: 
+title: 可选节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, BizTalk Mapper
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BizTalk Mapper, testing
 - maps, optional nodes
 ms.assetid: 7dcd203e-fb23-438a-87d1-42323acd87cc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263341"
 ---
 # <a name="optional-nodes"></a>可选的节点
 使用可选节点将导致在测试映射时出现警告。 在以下两种情况中源节点可能会被视为可选节点：  

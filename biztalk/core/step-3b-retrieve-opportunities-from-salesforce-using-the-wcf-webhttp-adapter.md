@@ -1,14 +1,14 @@
 ---
-title: "步骤 3b： 检索机会从 Salesforce 使用 WCF WebHttp 适配器的详细信息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3b： 检索机会从 Salesforce 使用 WCF WebHttp 适配器的详细信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 115c908f-777b-4c51-85ea-71d639b01775
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279549"
 ---
 # <a name="step-3b-retrieve-opportunity-details-from-salesforce-using-the-wcf-webhttp-adapter"></a>步骤 3b： 检索机会从 Salesforce 使用 WCF WebHttp 适配器的详细信息
 在本部分中，我们将改进业务流程，以处理传入的机会通知，从通知中提取机会名称，并使用该名称创建请求查询，以发送到 Salesforce。 此请求检索与机会关联的产品的特定详细信息。 来自 Salesforce 的查询响应将接收回 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 为此，我们将执行以下步骤：  
@@ -65,7 +66,7 @@ SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, P
     |-|-|  
     |Input[0]|SELECT Amount, Id, Name,(SELECT Quantity, ListPrice, PricebookEntry.UnitPrice, PricebookEntry.Name FROM OpportunityLineItems) FROM Opportunity Where Name = '|  
     |输入 [1]|将源架构中的 Name 元素连接到 functoid，以使用 Name 元素的值作为第二个输入。|  
-    |输入 [2]|**注意：**对于最后一个输入值，指定仅右单引号 （'）。|  
+    |输入 [2]|**注意：** 对于最后一个输入值，指定仅右单引号 （'）。|  
   
      下面的屏幕截图描绘了配置为**字符串连接**functoid。  
   

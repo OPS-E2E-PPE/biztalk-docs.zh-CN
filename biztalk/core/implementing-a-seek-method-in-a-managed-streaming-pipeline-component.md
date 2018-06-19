@@ -1,11 +1,11 @@
 ---
-title: "实现查找托管流式处理管道组件中的方法 |Microsoft 文档"
-ms.custom: 
+title: 实现查找托管流式处理管道组件中的方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline interfaces, IStream interface
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - IStream interface
 - Seek method
 ms.assetid: 2e546c41-822d-4e22-a8f6-8959072ef3d2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256517"
 ---
 # <a name="implementing-a-seek-method-in-a-managed-streaming-pipeline-component"></a>实现查找托管流式处理管道组件中的方法
 本机**IStream**接口不提供一种检查将当前流的位置，因此消息引擎使用以下方法**Seek**方法。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 7： 配置 MDN 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 配置 MDN 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 983033ac-9d32-47c8-9bb8-b4161bcdf183
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277957"
 ---
 # <a name="step-7-configure-the-mdn-send-port"></a>步骤 7： 配置 MDN 发送端口
 ![11 的第 7 步](../core/media/tut-step7-of-11.gif "Tut_Step7_of_11")  

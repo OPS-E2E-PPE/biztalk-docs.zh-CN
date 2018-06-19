@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254333"
 ---
 # <a name="how-to-open-a-pipeline"></a>如何打开管道
 打开管道文件将显示管道设计器，并在设计区域中显示已定义的管道及其阶段。 此外，还将显示“管道设计器工具箱”和“属性”窗口（如果这些窗口尚未打开）。  

@@ -1,14 +1,14 @@
 ---
-title: "加载 BAM 拦截器使用 BAM API |Microsoft 文档"
-ms.custom: 
+title: 加载 BAM 拦截器使用 BAM API |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d77ea5fb-a796-48f1-8c77-173e995c5252
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261925"
 ---
 # <a name="loading-bam-interceptors-using-the-bam-api"></a>使用 BAM API 加载 BAM 侦听器
 本主题提供有关如何从代码（而不是通过配置文件）加载 WF 和 WCF 侦听器的信息。  

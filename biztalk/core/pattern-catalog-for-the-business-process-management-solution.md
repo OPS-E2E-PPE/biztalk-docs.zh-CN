@@ -1,11 +1,11 @@
 ---
-title: "模式的业务流程管理解决方案的目录 |Microsoft 文档"
-ms.custom: 
+title: 模式的业务流程管理解决方案的目录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Canonical Message pattern [process management solutions]
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - Application Reference pattern [process management solutions]
 - Inverse Direct Partner Binding pattern [process management solutions]
 ms.assetid: 246b109e-6006-404d-88b9-e6324ce3473c
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266413"
 ---
 # <a name="pattern-catalog-for-the-business-process-management-solution"></a>业务流程管理解决方案的模式目录
 业务流程管理解决方案中的模式包括 BizTalk Server 编程的通用模式和前面部分中的企业集成模式。 本部分中的列表包括这两种类型的模式。  

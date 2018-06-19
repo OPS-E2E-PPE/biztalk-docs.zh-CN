@@ -1,11 +1,11 @@
 ---
-title: "配置本机管道组件 |Microsoft 文档"
-ms.custom: 
+title: 配置本机管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, pipeline components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Pipeline Designer, code sample
 - IPersistPropertyBag interface
 ms.assetid: a3332a60-8cd6-43fa-9ecf-e1e54e71fef7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233173"
 ---
 # <a name="configuring-native-pipeline-components"></a>配置本地管道组件
 管道组件可以在设计时公开自己的自定义属性。 如果已实现相应属性的读取和写入存取方法，在组件中定义的任何公共属性都将呈现在管道设计器中。 管道设计器将根据组件属性的声明来显示这些属性；例如，如果属性声明为只读，在管道设计器中就会显示为只读。  

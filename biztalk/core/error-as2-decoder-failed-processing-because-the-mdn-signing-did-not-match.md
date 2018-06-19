@@ -1,14 +1,14 @@
 ---
-title: "AS2 解码器失败处理，因为 MDN 签名与我们请求不匹配 |Microsoft 文档"
-ms.custom: 
+title: AS2 解码器失败处理，因为 MDN 签名与我们请求不匹配 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a42d344-fc28-4bc4-9328-46158f15a008
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239973"
 ---
 # <a name="the-as2-decoder-failed-processing-because-the-mdn-signing-did-not-match-our-request"></a>AS2 解码器处理失败，因为 MDN 签名与我们的请求不匹配
 ## <a name="details"></a>详细信息  

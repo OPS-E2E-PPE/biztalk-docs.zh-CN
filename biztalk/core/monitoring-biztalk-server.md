@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265357"
 ---
 # <a name="monitoring-biztalk-server"></a>监视 BizTalk Server
 定期监视 BizTalk Server 应用程序和基础结构并解决发现的任何问题，有助于使用户保持对 BizTalk Server 应用程序的访问。 监视的目的在于最大限度地减少未检测到（并因此导致未解决）的异常存在的时间。 此外，还可以使用监视来帮助检测可能导致异常的情形。  

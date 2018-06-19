@@ -1,11 +1,11 @@
 ---
-title: "错误消息 |Microsoft 文档"
-ms.custom: 
+title: 错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - error messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - messages, errors
 - error messages, sending
 ms.assetid: 33d62260-b5e0-4d14-b2d2-996733d588e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245893"
 ---
 # <a name="fault-messages"></a>错误消息
 请求-响应端口可以关联错误消息，这样，如果在发送请求后发生任何错误，相应的服务可以根据响应将错误发送给请求方。  

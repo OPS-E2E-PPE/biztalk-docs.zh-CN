@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261909"
 ---
 # <a name="lesson-3-deploy-the-solution"></a>第 3 课：部署解决方案
 部署 EAISolution 的第一步是将程序集添加到 BizTalk 管理数据库和全局程序集缓存中。  

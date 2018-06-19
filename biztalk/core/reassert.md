@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269645"
 ---
 # <a name="reassert"></a>重新声明
 到*重新声明*意味着调用**断言**对已在引擎中的对象的函数的工作内存。 重新添加命令相当于向该对象发出取消命令，然后执行添加命令。  

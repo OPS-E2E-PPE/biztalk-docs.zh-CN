@@ -1,15 +1,15 @@
 ---
-title: "更新主机实例设置 |Microsoft 文档"
-description: "更改主机实例设置 BizTalk 服务器管理器中"
-ms.custom: 
+title: 更新主机实例设置 |Microsoft 文档
+description: 更改主机实例设置 BizTalk 服务器管理器中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2338255b-cc13-4f6a-86c3-9ecc666c43e5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254373"
 ---
 # <a name="update-biztalk-host-instance-settings"></a>更新 BizTalk 主机实例设置
 

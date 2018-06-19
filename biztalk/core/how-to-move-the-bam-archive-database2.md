@@ -1,17 +1,17 @@
 ---
-title: "如何移动 BAM 存档 Database2 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 存档 Database2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Archive database [BAM], migrating
 - migrating, Archive database [BAM]
 ms.assetid: 88b96dc2-8c9c-43f5-afb9-a937e05de36b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253989"
 ---
 # <a name="how-to-move-the-bam-archive-database"></a>如何移动 BAM 存档数据库
 您可以使用此过程将 BAM 存档数据库移到其他服务器。  

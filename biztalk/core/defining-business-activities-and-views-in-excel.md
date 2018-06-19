@@ -1,17 +1,17 @@
 ---
-title: "在 Excel 中定义的业务活动和视图 |Microsoft 文档"
-ms.custom: 
+title: 在 Excel 中定义的业务活动和视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], creating business activities
 - monitoring business activities [BAM], creating business activities
 ms.assetid: 000532f0-cb9a-40ac-a6c5-a8bd4e49f8d0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239677"
 ---
 # <a name="defining-business-activities-and-views-in-excel"></a>在 Excel 中定义业务活动和视图
 创建任何 BAM 解决方案的第一步都是确定感兴趣的数据以及如何解释这些数据。 为此，可使用适用于 Excel 的 BAM 外接程序。 使用该外接程序，可以通过定义业务活动来确定要使用的感兴趣数据的列表。 还可以定义数据的解释方式以及呈现给不同类别的业务用户时的显示方式。  

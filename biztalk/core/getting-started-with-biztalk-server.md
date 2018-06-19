@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247165"
 ---
 # <a name="getting-started-with-biztalk-server"></a>BizTalk Server 入门
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是[发布和订阅体系结构](../core/publish-and-subscribe-architecture.md)，[使用适配器](../core/using-adapters.md)接收和发送消息，实现[通过业务流程的业务流程](../core/defining-business-processes.md)，并包括[管理和跟踪](../core/management-and-tracking-architecture.md)这些不同的部分。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]此外包括[贸易合作伙伴管理](../core/trading-partner-management-using-biztalk-server.md)以执行企业到企业消息传递，[高可用性](../core/planning-for-high-availability3.md)以最大化运行时间，一个开发平台，到[创建您自己的组件](../core/developing-custom-components.md)，到管理控制台[管理你的项目](../core/operational-and-administrative-tasks-in-your-biztalk-environment.md)，和业务活动监视管理[聚合、 警报和配置文件](../core/using-business-activity-monitoring.md)。

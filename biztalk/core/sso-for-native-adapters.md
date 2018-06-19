@@ -1,17 +1,17 @@
 ---
-title: "适用于本机适配器 SSO |Microsoft 文档"
-ms.custom: 
+title: 适用于本机适配器 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, SSO
 - SSO, adapters
 ms.assetid: d8527f0f-910c-42ce-9bd3-83ab6d4349c0
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278053"
 ---
 # <a name="sso-for-native-adapters"></a>本地适配器的 SSO
 使用企业单一登录 (SSO)，您可以在与不同计算机系统或网站进行互操作时只登录一次。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的此功能使 BizTalk 适配器能够向网络中的多个应用程序（这些应用程序使用基于 Microsoft Windows 凭据的通用验证机制）提供适当的用户 ID 和凭据。 Windows 验证凭据之后，您不需要提供其他凭据即可连接到应用程序。  

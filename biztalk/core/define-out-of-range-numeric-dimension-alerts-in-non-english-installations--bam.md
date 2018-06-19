@@ -1,14 +1,14 @@
 ---
-title: "如何在非英语安装中定义的范围外数值维度警报 |Microsoft 文档"
-ms.custom: 
+title: 如何在非英语安装中定义的范围外数值维度警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f1e0373-eadf-4c6d-9a38-a34d847f310f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238685"
 ---
 # <a name="how-to-define-out-of-range-numeric-dimension-alerts-in-non-english-installations"></a>如何在非英语系统中定义“超出范围”数值维度警报
 当设置包括一个值，在非英语安装上定义的数值范围维度之外的条件的警报，你必须手动修改 BAM 定义一同保存本地化版本的字符串**超出范围**.  

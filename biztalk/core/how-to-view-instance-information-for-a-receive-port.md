@@ -1,18 +1,18 @@
 ---
-title: "如何查看实例信息接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何查看实例信息接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], viewing
 - receive ports, viewing
 - viewing, receive ports
 ms.assetid: dad038bc-1202-489b-b144-a93bf1f53c0c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256797"
 ---
 # <a name="how-to-view-instance-information-for-a-receive-port"></a>如何查看实例信息接收端口
 本主题将介绍如何使用 BizTalk Server 管理控制台查看接收端口的服务实例。 每次接收端口收到消息，都会创建一个服务实例来处理该消息。 按照本主题中的过程操作后，实例信息将显示在接收端口的“组概述”页中。  

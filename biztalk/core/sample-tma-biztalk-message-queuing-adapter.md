@@ -1,11 +1,11 @@
 ---
-title: "示例 TMA: BizTalk 消息队列适配器 |Microsoft 文档"
-ms.custom: 
+title: '示例 TMA: BizTalk 消息队列适配器 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security examples [TMA], MSMQ adapters
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - DFD, MSMQ adapters
 - MSMQ adapters, data flow
 ms.assetid: 15b4a540-2fcd-4668-b4b4-757f23ebd83e
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272453"
 ---
 # <a name="sample-tma-biztalk-message-queuing-adapter"></a>示例 TMA: BizTalk 消息队列适配器
 本主题对示例结构的 BizTalk 消息队列适配器方案进行威胁模型分析 (TMA)。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-2-create-and-analyze-the-threat-model-biztalk-message-queuing-adapter-scenario"></a>步骤 2. 创建和分析的威胁模型 （BizTalk 消息队列适配器方案）  
  本部分提供对示例结构的 BizTalk 消息队列适配器方案执行 TMA 的结果。  
   
--   **标识入口点、 信任边界和数据的流-**请参阅前面的步骤 1 和中所述的背景信息[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。  
+-   **标识入口点、 信任边界和数据的流-** 请参阅前面的步骤 1 和中所述的背景信息[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。  
   
 -   **创建标识的威胁的列表**我们使用以下分类 DFD 中的所有条目来识别潜在威胁的方案： **S**哄骗标识， **T**篡改数据， **R**epudiation，**我**璝泄露**D**的服务，用以和**E**提升特权。 下表列出了使用 BizTalk 消息队列适配器与 BizTalk Server 之间收发消息时的威胁分类：  
   
@@ -92,10 +93,10 @@ ms.lasthandoff: 09/20/2017
   
 |威胁|影响|风险度|缓解措施|  
 |------------|------------|-------------------|--------------------------------------------|  
-|向接收位置发送大量消息|拒绝服务|6.8|在要求验证模式下使用 BizTalk 消息队列适配器。 设置**要求 MSMQ 身份验证**上接收位置的标志和**所需的身份验证 （放置消息）**接收端口上。<br /><br /> 将 BizTalk 消息队列配置为要求进行基于证书的验证。 此操作发生在适配器级别，并且与 BizTalk 管道的参与方解析组件不同。 如果配置了此功能，则会在传入消息中包括公用证书。 这是对 BizTalk 消息队列唯一可用的客户端验证模式。 若要使用此客户端验证模式，则必须安装带有 Active Directory 集成模式的 BizTalk 消息队列。 当你使用此功能时，请记得选择**要求进行身份验证**BizTalk 消息队列的属性对话框中的复选框接收位置。|  
+|向接收位置发送大量消息|拒绝服务|6.8|在要求验证模式下使用 BizTalk 消息队列适配器。 设置**要求 MSMQ 身份验证**上接收位置的标志和**所需的身份验证 （放置消息）** 接收端口上。<br /><br /> 将 BizTalk 消息队列配置为要求进行基于证书的验证。 此操作发生在适配器级别，并且与 BizTalk 管道的参与方解析组件不同。 如果配置了此功能，则会在传入消息中包括公用证书。 这是对 BizTalk 消息队列唯一可用的客户端验证模式。 若要使用此客户端验证模式，则必须安装带有 Active Directory 集成模式的 BizTalk 消息队列。 当你使用此功能时，请记得选择**要求进行身份验证**BizTalk 消息队列的属性对话框中的复选框接收位置。|  
 |消息标头在网络上以明文形式传递|篡改数据<br /><br /> 信息泄漏|6.8|在服务器间传递消息时使用 Internet 协议安全性 (IPsec) 帮助保护消息正文和消息标头。|  
 |未经授权的用户可与运行 BizTalk 消息队列主机的 BizTalk Server 建立网络连接。|抵赖<br /><br /> 篡改数据<br /><br /> 信息泄漏<br /><br /> 拒绝服务<br /><br /> 特权提升|9|创建带有参与方解析管道组件的自定义管道，然后配置该参与方解析组件以使用发件人 ID (SID) 来解析参与方。 设置**解决方通过证书**属性**False**，和**通过 SID 解析方**属性**True**。 有关详细信息，请参阅[方解析管道组件](../core/party-resolution-pipeline-component.md)。<br /><br /> 在接收端口上设置**身份验证**属性**必需 （删除消息）**。|  
-|恶意用户可能会在 BizTalk Server 接收到消息前对该消息进行篡改。|篡改数据<br /><br /> 信息泄漏|6|使用协议级别验证，以确保消息在传输中不会被篡改。 若要使用协议级别验证，则电子商务域中必须具有消息队列路由器。 请按照以下步骤配置 BizTalk Server：<br /><br /> -在**BizTalk 消息传送**页上的 Configuration Manager 中，提供的路由器的名称。<br />-对于接收端口设置**身份验证**属性**必需 （删除消息）**或**必需 （保留消息）**。<br />-对于发送处理程序，在**常规**选项卡上，在**MSMQ 路由器**名称框中，键入消息队列路由器的名称。<br />-对于发送端口中，选择**使用 MSMQ 身份验证**。|  
+|恶意用户可能会在 BizTalk Server 接收到消息前对该消息进行篡改。|篡改数据<br /><br /> 信息泄漏|6|使用协议级别验证，以确保消息在传输中不会被篡改。 若要使用协议级别验证，则电子商务域中必须具有消息队列路由器。 请按照以下步骤配置 BizTalk Server：<br /><br /> -在**BizTalk 消息传送**页上的 Configuration Manager 中，提供的路由器的名称。<br />-对于接收端口设置**身份验证**属性**必需 （删除消息）** 或**必需 （保留消息）**。<br />-对于发送处理程序，在**常规**选项卡上，在**MSMQ 路由器**名称框中，键入消息队列路由器的名称。<br />-对于发送端口中，选择**使用 MSMQ 身份验证**。|  
   
 ## <a name="see-also"></a>另请参阅  
  [威胁模型分析](../core/threat-model-analysis.md)   

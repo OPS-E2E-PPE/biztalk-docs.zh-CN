@@ -1,14 +1,14 @@
 ---
-title: "如何： 动态路由根据消息上下文使用业务规则策略消息 |Microsoft 文档"
-ms.custom: 
+title: 如何： 动态路由根据消息上下文使用业务规则策略消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d3b68de-6b24-46fe-ae0d-91afb630bc19
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008814"
 ---
 # <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>如何： 动态路由基于消息上下文使用业务规则策略在一条消息
 ## <a name="goal"></a>目的  
@@ -42,7 +43,7 @@ ms.lasthandoff: 12/01/2017
   
  **若要添加的北美订单的路由规则**  
   
-1.  在**RouteBasedOnMessageType**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetNAOrderEndpoint**。  
+1.  在**RouteBasedOnMessageType**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetNAOrderEndpoint**。  
   
 2.  在规则窗口中，右键单击**条件**，指向**谓词**，然后单击**相等**。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 12/01/2017
   
  **若要发布和部署策略**  
   
-1.  在策略资源管理器下**RouteBasedOnMessageType**策略中，右击**（不保存） 1.0 版**，然后单击**发布**。  
+1.  在策略资源管理器下**RouteBasedOnMessageType**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。  
   
 2.  在策略资源管理器下**RouteBasedOnMessageType**策略中，右击**版本 1.0-发布**，然后单击**部署**。  
   

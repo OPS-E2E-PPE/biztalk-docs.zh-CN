@@ -1,18 +1,18 @@
 ---
-title: "识别潜在的威胁 |Microsoft 文档"
-ms.custom: 
+title: 识别潜在的威胁 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - planning, security
 - security, potential threats
 - security, planning
 ms.assetid: 1d70a0c1-6daf-47bb-af15-a4b35a7bafc2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257493"
 ---
 # <a name="identifying-potential-threats"></a>识别潜在的威胁
 您可以使用 STRIDE 模型来对 BizTalk Server 部署的潜在威胁进行分类。 STRIDE 是派生自以下类别的首字母缩写： *S*哄骗标识*T*篡改数据， *R*epudiation，*我*璝泄露*D*用以服务和特权提升。 本部分列举了对 BizTalk Server 环境的潜在威胁及相应的威胁缓解机制。  

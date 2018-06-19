@@ -1,11 +1,11 @@
 ---
-title: "平面文件汇编管道组件中的字符编码 |Microsoft 文档"
-ms.custom: 
+title: 平面文件汇编管道组件中的字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Assembler [pipeline component], character encoding
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - XMLNorm.TargetCharset property
 - Target Charset property
 ms.assetid: 0cf3c0fd-f036-4190-83ce-9064ef4e823c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232117"
 ---
 # <a name="character-encoding-in-the-flat-file-assembler-pipeline-component"></a>平面文件汇编管道组件中的字符编码
 平面文件组装器可以使用用户指定的字符编码生成消息。 您可以在多个级别指定字符编码：  

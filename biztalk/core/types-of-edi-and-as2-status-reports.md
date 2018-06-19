@@ -1,14 +1,14 @@
 ---
-title: "EDI 和 AS2 状态报表类型 |Microsoft 文档"
-ms.custom: 
+title: EDI 和 AS2 状态报表类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c07fd68-4815-4c2b-9084-1f2bae4c1f8e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286413"
 ---
 # <a name="types-of-edi-and-as2-status-reports"></a>EDI 和 AS2 状态报告的类型
 此部分中的主题描述不同类型的 EDI 和 AS2 可显示的状态报告**组中心数据库**页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  

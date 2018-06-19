@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241709"
 ---
 # <a name="error---root-node-duplicate-class-name"></a>错误-根节点重复类名称
 **错误代码**  

@@ -1,14 +1,14 @@
 ---
-title: "扩展 BizTalk 编辑器 |Microsoft 文档"
-ms.custom: 
+title: 扩展 BizTalk 编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 77c93ab2-0a9b-4c9d-81e5-3871fc8e6e13
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246237"
 ---
 # <a name="extending-biztalk-editor"></a>扩展 BizTalk 编辑器
 BizTalk 编辑器允许使用扩展来支持其他实例消息格式。 实际上，XML 格式是 BizTalk 编辑器内置的唯一格式。 即使对平面文件格式（包含在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中）的支持也是通过 BizTalk 编辑器扩展来实现的，因此，该扩展可作为此类扩展可添加的功能类型的有效示例。  

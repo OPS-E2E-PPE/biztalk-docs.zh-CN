@@ -1,11 +1,11 @@
 ---
-title: "开发组合管道组件 |Microsoft 文档"
-ms.custom: 
+title: 开发组合管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IComponentUI interface, assembling
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - pipeline interfaces, IAssemblerComponent
 - pipeline components [custom], assembling
 ms.assetid: 2f85421d-2010-4a36-82b5-ea8016f8aa99
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239613"
 ---
 # <a name="developing-an-assembling-pipeline-component"></a>开发组装的管道组件
 组装管道组件是一种 .NET 或 COM 组件，它在输入端接收若干消息，在输出端生成一个消息。 组装组件用于将若干单独的文档收集到消息交换批中。  

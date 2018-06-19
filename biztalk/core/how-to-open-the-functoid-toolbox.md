@@ -1,14 +1,14 @@
 ---
-title: "如何打开 Functoid 工具箱 |Microsoft 文档"
-ms.custom: 
+title: 如何打开 Functoid 工具箱 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e62883c5-063f-4f4d-8a24-afa58d66c217
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254997"
 ---
 # <a name="how-to-open-the-functoid-toolbox"></a>如何打开 Functoid 工具箱
 创建映射并选择源架构和目标架构之后，您可以在网格上放置 functoid。 Functoid 出现在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]工具箱中，每个 functoid 类别的某个工具箱选项卡。  

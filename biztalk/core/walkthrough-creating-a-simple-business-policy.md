@@ -1,14 +1,14 @@
 ---
-title: "演练： 创建简单的业务策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建简单的业务策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02d35735-dce2-4ee2-965e-dae307a125b0
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975806"
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a>演练： 创建简单的业务策略
 本演练提供了使用业务规则编辑器创建名为的简单的业务策略的分步过程**ProcessPurchaseOrder**包含一个名为规则**ApprovedRule**。 **ApprovedRule**规则需要用户提交 XML 文档作为一个事实中，并设置的值**状态**字段到文档中**已批准**如果的值**数量**字段是否小于或等于**500**。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  上**文件**菜单上，单击**TextFile1.txt 另存为**。  
   
-5.  值更改**另存为类型**从**文本文档 (\*.txt)**到**所有文件**。  
+5.  值更改**另存为类型**从**文本文档 (\*.txt)** 到**所有文件**。  
   
 6.  类型**PO.xsd**中**文件名**文本框中，将目录更改为**C:\BRE-Walkthroughs**，更改的值**编码**到**Unicode** ，然后单击**保存**。  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  右键单击**版本 1.0**，然后单击**AddNewRule**。  
   
-5.  编辑规则的名称**规则 1**到**ApprovalRule** ，然后按 enter 键**。** 你还可以更改中的规则的名称**属性**窗口。  
+5.  编辑规则的名称**规则 1**到**ApprovalRule** ，然后按 enter 键 **。** 你还可以更改中的规则的名称**属性**窗口。  
   
 6.  在事实浏览器窗口中，单击**XML 架构**选项卡。  
   
@@ -128,9 +129,9 @@ ms.lasthandoff: 11/28/2017
   
      ![业务规则编辑器 &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")  
   
-14. 在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。  
+14. 在 THEN 窗格中，单击**\<输入值\>** 然后键入**已批准**。  
   
-15. 在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。  
+15. 在策略资源管理器窗口中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。  
   
 ## <a name="comments"></a>注释  
   

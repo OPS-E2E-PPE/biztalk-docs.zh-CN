@@ -1,11 +1,11 @@
 ---
-title: "策略 |Microsoft 文档"
-ms.custom: 
+title: 策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, policies
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - policies, creating
 - policies, updating
 ms.assetid: 2e0ae081-938d-4e2a-947e-1c0ecfebb4b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264429"
 ---
 # <a name="policies"></a>策略
 策略是一组逻辑规则。 您可以撰写一个策略版本，保存该策略版本，通过将该策略版本应用于事实来对其进行测试，并在得到满意结果后，发布该策略版本并将其部署到产品环境中。  

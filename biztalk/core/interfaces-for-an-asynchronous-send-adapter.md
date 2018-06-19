@@ -1,14 +1,14 @@
 ---
-title: "异步接口发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 异步接口发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a214716-8f39-400d-a111-ba1b92a284b4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257757"
 ---
 # <a name="interfaces-for-an-asynchronous-send-adapter"></a>异步接口发送适配器
 一次发送一条消息的适配器可以同步或异步发送消息。 如果适配器在执行发送操作时不阻止传输代理线程而是使用单独的线程，则异步发送消息。 为了能够异步发送消息，适配器需要实现以下接口：  

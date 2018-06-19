@@ -1,14 +1,14 @@
 ---
-title: "如何更改服务帐户和密码 |Microsoft 文档"
-ms.custom: 
+title: 如何更改服务帐户和密码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dff53d6b-c262-4b66-b822-1c61f54ae105
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248885"
 ---
 # <a name="how-to-change-service-accounts-and-passwords"></a>如何更改服务帐户和密码
 在配置 BizTalk Server 之后，很常见的组织需要通过帐户策略，例如密码策略和帐户锁定策略来更改服务帐户或密码。 有关帐户策略的详细信息，请参阅 Microsoft TechNet 网站，网址[http://go.microsoft.com/fwlink/?LinkId=62172](http://go.microsoft.com/fwlink/?LinkId=62172)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |企业单一登录服务主密钥服务器上|1.确保你有主密钥的备份。 有关详细信息，请参阅[如何返回向上主密钥](../core/how-to-back-up-the-master-secret.md)。<br />2.更改服务帐户使用服务控制台。<br />3.还原主密钥。 有关详细信息，请参阅[如何还原主密钥](../core/how-to-restore-the-master-secret.md)。|重新启动服务。|使用“服务”控制台更改帐户的密码。|重新启动服务。|  
     |企业单一登录服务|更改服务帐户使用服务控制台。|重新启动服务。|使用“服务”控制台更改帐户的密码。|重新启动服务。|  
     |BizTalk 主机实例|更改服务帐户使用 BizTalk Server 管理控制台|重新启动 BizTalk 主机实例。|使用 BizTalk Server 管理控制台或“服务”控制台更改帐户的密码。|重新启动 BizTalk 主机实例|  
-    |BizTalk 隔离主机实例和相应的应用程序池承载 SOAP 接收适配器|1.更改服务帐户使用 BizTalk Server 管理控制台<br />2.更改为使用 IIS 管理控制台应用程序池帐户**注意：**应用程序池的服务帐户应与相应的独立主机匹配的服务帐户。|1.更改服务帐户使用 IIS 管理控制台的相应应用程序池。<br />2.重新启动应用程序池使用 IIS 管理控制台。|更改应用程序池运行的帐户的密码。 使用 IIS 管理控制台**注意：**无需更改密码后更改 BizTalk Server 管理控制台中的密码。|1.更改在其下的相应的应用程序池运行使用 IIS 管理控制台的帐户的密码。<br />2.重新启动应用程序池使用 IIS 管理控制台。|  
+    |BizTalk 隔离主机实例和相应的应用程序池承载 SOAP 接收适配器|1.更改服务帐户使用 BizTalk Server 管理控制台<br />2.更改为使用 IIS 管理控制台应用程序池帐户**注意：** 应用程序池的服务帐户应与相应的独立主机匹配的服务帐户。|1.更改服务帐户使用 IIS 管理控制台的相应应用程序池。<br />2.重新启动应用程序池使用 IIS 管理控制台。|更改应用程序池运行的帐户的密码。 使用 IIS 管理控制台**注意：** 无需更改密码后更改 BizTalk Server 管理控制台中的密码。|1.更改在其下的相应的应用程序池运行使用 IIS 管理控制台的帐户的密码。<br />2.重新启动应用程序池使用 IIS 管理控制台。|  
     |规则引擎更新服务|使用配置管理器或“服务”控制台更改服务帐户。<br /><br /> Configuration Manager 自动重新启动该服务。|如果使用“服务”控制台，则必须手动启动该服务。|使用配置管理器或“服务”控制台更改帐户的密码。<br /><br /> Configuration Manager 自动重新启动该服务。|如果你使用服务控制台，你必须手动重新启动服务。|  
     |BAM 通知服务|1.将新帐户添加到 SQL server 安装 BAM 通知服务的位置。<br />2.授予对新的帐户的权限。 有关所需的权限的详细信息，请参阅[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)<br />3.更改服务帐户使用服务控制台。|重新启动服务。|使用“服务”控制台更改帐户的密码|重新启动服务。|  
     |BAM 管理 Web 服务|1.将新帐户添加到相应的 SQL 服务器，将在特权授予[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。<br />2.使用 Configuration Manager 的用户帐户进行更改。||更改使用 Configuration Manager 的用户帐户的密码。||  

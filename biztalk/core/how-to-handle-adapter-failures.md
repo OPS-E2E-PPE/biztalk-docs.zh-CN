@@ -1,14 +1,14 @@
 ---
-title: "如何处理适配器故障影响 |Microsoft 文档"
-ms.custom: 
+title: 如何处理适配器故障影响 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdceb364-38d6-4aab-a176-bf751da1be25
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255925"
 ---
 # <a name="how-to-handle-adapter-failures"></a>如何处理适配器错误
 通常，适配器应挂起无法处理的消息。 例如，虽然接收适配器挂起消息的决策取决于适配器的用途，但在其遇到提交失败时，通常应挂起消息。 关于失败的处理，还应注意安全事项。 例如，如果适配器自动挂起所有失败的消息，则该适配器可能会遭受拒绝服务攻击，导致 BizTalk Server 挂起队列向上填充。  某些适配器（如 HTTP）会向客户端返回失败代码，指示请求已被拒绝。 对于这些类型的适配器，返回失败代码通常要比挂起消息更有意义。 通常，发送适配器仅在已重试了所允许的最大主传输和次要传输重试次数后才会挂起消息。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="use-seterrorinfo-to-report-failure-to-biztalk-server"></a>使用 SetErrorInfo 向 BizTalk Server 报告失败  
  如果要挂起消息，必须从前一消息上下文向 BizTalk Server 提供失败信息。 BizTalk Server 提供的错误报告功能使用**SetErrorInfo**方法同时**IBaseMessage**和**ITransportProxy**接口。 您可以按以下方式报告错误：  
   
--   当在处理消息时出现错误时，异常使用设置**SetErrorInfo （异常 e）**对消息 (**IBaseMessage**) 要挂起。 这会让引擎保留该错误和消息以便以后诊断，并将其记录到事件日志以便通知管理员。  
+-   当在处理消息时出现错误时，异常使用设置**SetErrorInfo （异常 e）** 对消息 (**IBaseMessage**) 要挂起。 这会让引擎保留该错误和消息以便以后诊断，并将其记录到事件日志以便通知管理员。  
   
--   如果你遇到的错误在初始化或内部簿记过程 （不消息处理过程） 应调用**SetErrorInfo （异常 e）**上**ITransportProxy**指针传递到你在初始化过程。 如果适配器基于 BaseAdapter 实现，则应始终有权访问该指针。 否则，应确保对它进行缓存。  
+-   如果你遇到的错误在初始化或内部簿记过程 （不消息处理过程） 应调用**SetErrorInfo （异常 e）** 上**ITransportProxy**指针传递到你在初始化过程。 如果适配器基于 BaseAdapter 实现，则应始终有权访问该指针。 否则，应确保对它进行缓存。  
   
  使用以上任一方法报告错误均会将错误消息写入到事件日志中。 如果可以，必须将错误与相关消息相关联。  
   

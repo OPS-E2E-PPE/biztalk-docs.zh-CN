@@ -1,11 +1,11 @@
 ---
-title: "如何配置 WCF WSHttp 发送处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 WCF WSHttp 发送处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-WSHttp adapters, global variables
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuring [WCF-WSHttp adapters], global variables
 - send handlers, WCF-WSHttp adapters
 ms.assetid: b2c30edb-8f7b-4d3c-812b-5b877c47fda1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248453"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-handler"></a>如何配置 WCF-WSHttp 发送处理程序
 使用以下过程可配置 WCF-WSHttp 发送处理程序。  

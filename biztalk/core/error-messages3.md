@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241773"
 ---
 # <a name="error-messages"></a>错误消息
 下表列出了 PeopleSoft Enterprise 系统的组件接口中的错误消息及其描述，以及可能的更正方法。  

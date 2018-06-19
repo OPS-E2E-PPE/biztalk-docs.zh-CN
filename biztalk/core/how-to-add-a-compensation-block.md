@@ -1,17 +1,17 @@
 ---
-title: "如何添加补偿块 |Microsoft 文档"
-ms.custom: 
+title: 如何添加补偿块 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - compensations, compensation blocks
 - compensation blocks, adding
 ms.assetid: 1bdeed92-3144-44ef-ad0d-1c6976f46a36
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246533"
 ---
 # <a name="how-to-add-a-compensation-block"></a>如何添加补偿模块
 如果您没有添加您自己的补偿，则运行时引擎将执行默认补偿，该默认补偿调用当前事务内任何嵌套事务的补偿。 它首先调用最近完成的事务的补偿，并直到所有嵌套的事务都已得到补偿前一直有效。  

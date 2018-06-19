@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255845"
 ---
 # <a name="how-to-use-an-xml-schema-as-a-data-source"></a>如何使用 XML 架构作为数据源
 ### <a name="to-specify-an-xml-schema-as-a-data-source"></a>指定 XML 架构作为数据源  

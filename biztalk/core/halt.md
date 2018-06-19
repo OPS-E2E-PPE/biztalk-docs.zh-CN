@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246093"
 ---
 # <a name="halt"></a>异常终止
 你可以使用**暂停**暂停当前规则引擎执行的函数。 **暂停**函数采用一个类型的参数`Boolean`。 如果指定为参数的值`true`，规则引擎还会清除包含的挂起的候选规则的安排。  

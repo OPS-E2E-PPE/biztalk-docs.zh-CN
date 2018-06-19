@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256637"
 ---
 # <a name="identifying-performance-bottlenecks"></a>确定性能瓶颈
 理想情况下，系统以满载状态运行（充分利用可用资源），则可达到可承受吞吐量，并可降低所属权总成本 (TCO)。  

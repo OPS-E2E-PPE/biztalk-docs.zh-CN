@@ -30,6 +30,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22248125"
 ---
 # <a name="how-to-copy-tracked-messages-into-the-biztalk-tracking-database"></a>如何将跟踪的消息复制到跟踪数据库 BizTalk
 存档和清除进程可能会访问和/或更新其他 SQL Server 中的数据库，因此必须在所涉及的 SQL Server 实例之间设置链接服务器。 可以使用链接服务器直接将跟踪的消息从 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库服务器复制到 BizTalk 跟踪 (BizTalkDTADb) 数据库中。 必须在以下项之间设置链接服务器：  

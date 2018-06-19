@@ -1,14 +1,14 @@
 ---
-title: "事务集架构包含一个或多个控件段 ISA，IEA，GS，GE |Microsoft 文档"
-ms.custom: 
+title: 事务集架构包含一个或多个控件段 ISA，IEA，GS，GE |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7589d8f0-c727-47df-afbc-77b0f190f3e2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241821"
 ---
 # <a name="transaction-set-schema-contains-one-or-more-of-control-segments-isa-iea-gs-ge"></a>事务集架构包含一个或多个控制段 ISA、IEA、GS、GE
 ## <a name="details"></a>详细信息  

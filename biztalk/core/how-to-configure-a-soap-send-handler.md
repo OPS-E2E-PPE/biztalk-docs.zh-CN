@@ -1,11 +1,11 @@
 ---
-title: "如何配置 SOAP 发送处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 SOAP 发送处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send handlers, SOAP adapters
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - SOAP adapters, send handlers
 - denial of service, SOAP adapters
 ms.assetid: fd610a3f-ca10-42e0-b81e-219e07e33830
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248237"
 ---
 # <a name="how-to-configure-a-soap-send-handler"></a>如何配置 SOAP 发送处理程序
 使用以下过程可配置 SOAP 发送处理程序。  

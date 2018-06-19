@@ -1,14 +1,14 @@
 ---
-title: "业务流程设计图面 |Microsoft 文档"
-ms.custom: 
+title: 业务流程设计图面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c5fb190b-60d7-45e4-9883-7b3d2ed6b0c0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279805"
 ---
 # <a name="the-orchestration-design-surface"></a>业务流程设计图面
 业务流程设计图面是可视化设计器，你可以使用创建 BizTalk 业务流程中，并且是业务流程设计器的中心组件。 它是一个画布，你可以从工具箱中，拖动形状拖到，然后配置形状。 为 Visual Studio 编辑器窗口，它占用所使用的其他 Visual Studio 编辑器窗口的主窗口区域。  

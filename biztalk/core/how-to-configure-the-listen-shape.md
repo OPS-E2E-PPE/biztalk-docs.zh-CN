@@ -1,11 +1,11 @@
 ---
-title: "如何配置侦听形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置侦听形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Listen shape [Orchestration Designer], about Listen shape
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Listen shape [Orchestration Designer], branching
 - configuring [Orchestration Designer], Listen shapes
 ms.assetid: 4765dc0a-a30e-4515-83bc-72b4f37268cf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247893"
 ---
 # <a name="how-to-configure-the-listen-shape"></a>如何配置侦听形状
 侦听操作使应用程序可以等待一个或多个端口上的若干消息之一，或者在指定的超时间隔后停止等待，以及基于结果进行分支。  

@@ -1,15 +1,15 @@
 ---
-title: "管理业务流程 |Microsoft 文档"
-description: "若要使用业务流程在 BizTalk Server 中，包括启动、 停止、 绑定、 配置、 启用跟踪，挂起的链接和的详细信息"
-ms.custom: 
+title: 管理业务流程 |Microsoft 文档
+description: 若要使用业务流程在 BizTalk Server 中，包括启动、 停止、 绑定、 配置、 启用跟踪，挂起的链接和的详细信息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2553eec3-b863-45fb-90af-7eddcfa7add7
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262645"
 ---
 # <a name="manage-orchestrations"></a>管理业务流程
 

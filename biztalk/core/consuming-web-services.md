@@ -1,11 +1,11 @@
 ---
-title: "使用 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 使用 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, Web services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Web services, consuming
 - Web services, orchestrations
 ms.assetid: 803ba623-86e7-479a-a4b6-5b576fee8825
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237821"
 ---
 # <a name="consuming-web-services"></a>使用 Web Services
 通过使用 Web Services，可以将现有的 Web Services 添加到业务流程中。 可以将若干 Web Services 聚合成单个业务流程。  

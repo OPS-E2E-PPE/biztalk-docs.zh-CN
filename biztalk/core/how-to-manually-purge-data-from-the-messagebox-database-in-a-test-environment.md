@@ -1,14 +1,14 @@
 ---
-title: "如何手动清除数据，从测试环境中的 MessageBox 数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何手动清除数据，从测试环境中的 MessageBox 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 398991a9-344a-487a-a817-dfc97d48ebe6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254053"
 ---
 # <a name="how-to-manually-purge-data-from-the-messagebox-database-in-a-test-environment"></a>如何在测试环境中从 MessageBox 数据库中手动清除数据
 在开发或测试环境中运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，MessageBox 数据库中存储的数据通常不是业务关键的“实时”数据，因此可能会被删除。 在这些情况下，可能需要一个“快速和更新”的方法将数据从 MessageBox 数据库清除。 按照本主题中的过程，使用 bts_CleanupMsgbox 存储过程将数据从 MessageBox 数据库手动清除。  

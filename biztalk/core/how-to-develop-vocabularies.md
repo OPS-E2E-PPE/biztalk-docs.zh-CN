@@ -1,11 +1,11 @@
 ---
-title: "如何开发词汇 |Microsoft 文档"
-ms.custom: 
+title: 如何开发词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, vocabularies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, vocabularies
 - vocabularies, creating
 ms.assetid: 5c16eb98-2257-44f2-8a29-899e02f7e556
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249053"
 ---
 # <a name="how-to-develop-vocabularies"></a>如何开发词汇
 规则条件和操作基于源可能有详细说明，告知用户只需少量或者无有关它们的指的困难读取绑定信息。 业务规则框架，可创建用于通过提供直观、 特定于域的用户可以将与规则条件和操作相关联的术语的用户简化的规则的开发的词汇。  

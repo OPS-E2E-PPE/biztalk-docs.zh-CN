@@ -1,14 +1,14 @@
 ---
-title: "在序列化期间遇到错误。 Edifact 交换其中不包含一组具有以下错误 |Microsoft 文档"
-ms.custom: 
+title: 在序列化期间遇到错误。 Edifact 交换其中不包含一组具有以下错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af693139-e4cd-4bcb-922c-79caa148d3b7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241757"
 ---
 # <a name="error-encountered-during-serialization-the-edifact-interchange-which-did-not-contain-a-group-had-the-following-errors"></a>在序列化期间遇到错误。 不包含组的 EDIFACT 交换发生了以下错误
 ## <a name="details"></a>详细信息  

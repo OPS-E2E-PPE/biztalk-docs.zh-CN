@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 准备 EDI 接口开发人员教程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 准备 EDI 接口开发人员教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9be1bddf-d673-4054-87f5-0205b8b5cc0d
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279229"
 ---
 # <a name="step-1-prepare-for-the-edi-interface-developer-tutorial"></a>步骤 1： 准备 EDI 接口开发人员教程
 ![9 的第 1 步](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-1of9.gif "Step_1of9")  

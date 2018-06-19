@@ -1,11 +1,11 @@
 ---
-title: "使用确认 |Microsoft 文档"
-ms.custom: 
+title: 使用确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, publishing
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - positive acknowledgements (ACK)
 - BTS.AckOwnerID property
 ms.assetid: 2e5986d4-9633-4b7b-8ff3-fa3da93c5400
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288181"
 ---
 # <a name="using-acknowledgments"></a>使用确认
 在对通过端口处理消息期间所遇到的情况作出响应时，BizTalk 消息引擎将生成肯定确认 (ACK) 和否定确认 (NACK)。 BizTalk Server 发布肯定确认以指示消息传输成功，发布否定确认以指示传输失败并挂起消息。  

@@ -1,11 +1,11 @@
 ---
-title: "事务 |Microsoft 文档"
-ms.custom: 
+title: 事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, transactions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Server Orchestration Engine
 - Orchestration Designer, transactions
 ms.assetid: d9a748c7-be9f-4965-a30f-6b05bd6b42a3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279181"
 ---
 # <a name="transactions"></a>中的
 BizTalk Server 业务流程引擎可管理复杂流程和/或事务集的状态，对其应用业务逻辑，并调用其支持应用程序。  

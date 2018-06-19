@@ -1,17 +1,17 @@
 ---
-title: "企业单一登录 (SSO) |Microsoft 文档"
-ms.custom: 
+title: 企业单一登录 (SSO) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, about SSO
 - SSO
 ms.assetid: beab96f7-f026-4ae1-8462-a165ad76bbec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240149"
 ---
 # <a name="enterprise-single-sign-on-sso"></a>企业单一登录 (SSO)
 使用企业单一登录 (SSO) 提供的服务，可以跨本地和网络边界（包括域边界）存储和传输加密的用户凭据。 SSO 将凭据存储在 SSO 数据库中。 由于 SSO 提供了通用的单一登录解决方案，因此中间件应用程序和自定义适配器可以利用 SSO 来跨环境安全地存储和传输用户凭据。 最终用户不必为不同的应用程序记住不同的凭据。  

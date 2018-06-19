@@ -1,14 +1,14 @@
 ---
-title: "交换发生了结构错误。 最后一个结构有效功能组 ID 是: |Microsoft 文档"
-ms.custom: 
+title: '交换发生了结构错误。 最后一个结构有效功能组 ID 是: |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd62855b-ecc6-4cfd-be9c-0025348eb841
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241405"
 ---
 # <a name="the-interchange-had-structural-error-last-structurally-valid-functional-group-id-was"></a>交换发生了结构错误。 上一个具有有效结构的功能组 ID 为：
 ## <a name="details"></a>详细信息  

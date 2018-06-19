@@ -1,14 +1,14 @@
 ---
-title: "有关活动的安全注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关活动的安全注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2fc49afd-a1c3-4ac7-8b89-11be667221e2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270053"
 ---
 # <a name="security-considerations-for-activities"></a>有关活动的安全注意事项
 侦听 WCF 适配器时所使用的安全角色与用于其他 BAM 解决方案的安全角色相同。 侦听 WCF 适配器时需要考虑的其他注意事项还包括选择要使用的正确的用户和事件写入者角色。  

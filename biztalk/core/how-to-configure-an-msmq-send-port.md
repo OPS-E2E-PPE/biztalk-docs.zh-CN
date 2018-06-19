@@ -1,18 +1,18 @@
 ---
-title: "如何配置 MSMQ 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 MSMQ 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, send ports
 - send ports, MSMQ adapters
 - configuring [MSMQ adapters], send ports
 ms.assetid: 37313d45-8148-4aaf-a3f2-ea05b3b8b448
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249773"
 ---
 # <a name="how-to-configure-an-msmq-send-port"></a>如何配置 MSMQ 发送端口
 可以在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中设置 MSMQ 发送端口适配器变量。 如果未设置发送端口的属性，则使用在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中设置的默认发送处理程序值。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |**管理队列**|指定收到确认消息的队列名称。|字符串|空白|  
     |**正文类型**|指定 MSMQ 中的消息正文类型。 有效值为.NET 成员**VarEnum**枚举。|int|8209|  
     |**证书指纹**|指定用于消息验证的证书的指纹。 将此属性与结合**使用身份验证**属性以验证消息。 使用**用户名**和**密码**属性来访问队列。|字符串|空白|  
-    |**目标队列**|指定目标队列。 有关队列的详细信息，请参阅[消息队列的队列](../core/message-queuing-queues.md)。 **注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。|字符串|空白|  
+    |**目标队列**|指定目标队列。 有关队列的详细信息，请参阅[消息队列的队列](../core/message-queuing-queues.md)。 **注意：** 对要发送的 URI 端口或接收位置不能超过 256 个字符。|字符串|空白|  
     |**加密算法**|选择**RC2**， **RC4**，或**无**加密算法。|Enum|无|  
     |**最大消息大小 （以千字节为单位）**|指定发送到指定的队列消息的最大消息大小。|UnsignedInt|1024|  
     |**消息优先级**|设置消息优先级。|Enum|Normal|  

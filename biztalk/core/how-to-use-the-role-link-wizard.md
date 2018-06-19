@@ -1,11 +1,11 @@
 ---
-title: "如何使用角色链接向导 |Microsoft 文档"
-ms.custom: 
+title: 如何使用角色链接向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - links [roles]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - role links, Role Link Wizard [Orchestration Designer]
 - links [roles], about links
 ms.assetid: ddc33d87-c08d-4193-9483-4644ef302853
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255853"
 ---
 # <a name="how-to-use-the-role-link-wizard"></a>如何使用角色链接向导
 使用角色链接向导，您可以创建新的角色链接或修改现有的角色链接。 您可以使用该向导设置或查看角色链接的名称、类型和访问限制，以及组成该角色链接类型的实现角色和使用角色。 若要了解如何角色链接工作，请参阅[在业务流程中使用角色链接](../core/using-role-links-in-orchestrations.md)。  

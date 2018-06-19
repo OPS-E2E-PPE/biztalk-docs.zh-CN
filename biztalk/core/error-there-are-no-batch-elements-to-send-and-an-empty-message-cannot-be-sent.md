@@ -1,14 +1,14 @@
 ---
-title: "没有要发送的批处理元素和不能发送一个空消息，因为它不配置为当事方 |Microsoft 文档"
-ms.custom: 
+title: 没有要发送的批处理元素和不能发送一个空消息，因为它不配置为当事方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0752079a-173e-4de3-96f4-e5de01b799b5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241957"
 ---
 # <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a>There are no batch elements to send and an empty message cannot be sent as it is not configured for party
 ## <a name="details"></a>详细信息  

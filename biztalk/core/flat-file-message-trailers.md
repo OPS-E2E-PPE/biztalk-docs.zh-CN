@@ -1,14 +1,14 @@
 ---
-title: "平面文件消息拖车安排 |Microsoft 文档"
-ms.custom: 
+title: 平面文件消息拖车安排 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfe115a5-4fdc-4779-94f3-437b5a06fbd4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246285"
 ---
 # <a name="flat-file-message-trailers"></a>平面文件消息尾部
 使用平面文件实例消息标头，在由已在中配置的平面文件架构控制通过平面文件反汇编程序的可选的平面文件实例消息尾部的分析**尾部架构**设计时平面文件反汇编程序的属性或**XMLNORM。TrailerSpecName**消息上下文属性。 如果未使用上述两种方法之一来指定架构，则平面文件拆装器将假设平面文件实例消息不包含尾部。  

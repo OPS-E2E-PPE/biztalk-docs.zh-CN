@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246333"
 ---
 # <a name="ftp-adapter"></a>FTP 适配器
 FTP 适配器可在 FTP 服务器与 Microsoft BizTalk Server 之间交换数据，并可将存储在各种平台中的重要数据与业务流应用程序进行集成。 该适配器可以连接到 FTP 服务器通过 SOCKS4 或 SOCKS5 代理服务器。  

@@ -1,14 +1,14 @@
 ---
-title: "如何添加断言向地图 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何添加断言向地图 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccdd79a2-b70f-489b-8711-e00a50d8e2d8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247757"
 ---
 # <a name="how-to-add-assert-functoids-to-a-map"></a>如何向映射中添加“添加”Functoid
 **断言**functoid 使您能够在你的代码图中测试你的假设有关条件。 例如，如果你执行一些计算来确定在产品采购额外折扣，你可能断言额外折扣，通过使用逻辑 functoid 是不能超过 100 美元 (**大于**或**Less Than**)。  

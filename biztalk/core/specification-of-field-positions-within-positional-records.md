@@ -1,14 +1,14 @@
 ---
-title: "规范的位置记录中的字段位置 |Microsoft 文档"
-ms.custom: 
+title: 规范的位置记录中的字段位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33c2eee3-ec30-46c5-a143-a3d2e2f265a6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279341"
 ---
 # <a name="specification-of-field-positions-within-positional-records"></a>位置记录中的字段位置的规范
 若要定义位置记录，必须提供有关记录中字段的位置和长度的信息。 如果记录包含子记录，则子记录中的字段的位置和长度将汇总到包含记录的有关信息中。  

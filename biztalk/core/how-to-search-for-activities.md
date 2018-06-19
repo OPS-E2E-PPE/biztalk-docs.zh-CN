@@ -1,17 +1,17 @@
 ---
-title: "如何搜索活动 |Microsoft 文档"
-ms.custom: 
+title: 如何搜索活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases [BAM], searching
 - BAM portal, searching databases
 ms.assetid: c29c86e1-ef22-4d71-b646-bc2a6f496553
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255205"
 ---
 # <a name="how-to-search-for-activities"></a>如何搜索活动
 使用 BAM Web 门户中的“业务活动搜索”，可以搜索存储在 BAM 数据库中的跟踪数据，这些数据又称为实例。  

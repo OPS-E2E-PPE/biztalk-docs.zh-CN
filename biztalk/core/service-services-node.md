@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270245"
 ---
 # <a name="service-services-node"></a>服务（“服务”节点）
 绑定文件的“服务”节点包含有关随绑定文件导出的服务的信息。 该“服务”节点还包含描述与该服务相关联的端口和角色的多个节点以及描述与该服务相关联的主机的一个节点。  

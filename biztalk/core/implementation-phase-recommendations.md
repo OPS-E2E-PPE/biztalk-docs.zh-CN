@@ -1,14 +1,14 @@
 ---
-title: "实现阶段建议 |Microsoft 文档"
-ms.custom: 
+title: 实现阶段建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04877156-cc32-480b-8410-d26eb073c327
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257397"
 ---
 # <a name="implementation-phase-recommendations"></a>实现阶段的建议
 实现阶段要实现需求和设计阶段产品，并使用相应的技术来完成这些任务。 对于验证测试，要在此阶段完成测试用例，并自动做好验证测试的准备工作。 系统前期版本的许多测试通常也是在这个阶段完成的，不仅要验证系统，还要检验测试用例自身是否存在问题。  

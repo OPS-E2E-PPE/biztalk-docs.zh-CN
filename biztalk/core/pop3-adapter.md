@@ -1,11 +1,11 @@
 ---
-title: "POP3 适配器 |Microsoft 文档"
-ms.custom: 
+title: POP3 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - POP3 adapters, about POP3 adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - POP3 adapters, authenticating
 - receive adapters, POP3 adapters
 ms.assetid: 008f7fa7-60c3-4ea3-b90d-821e4029a04c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264549"
 ---
 # <a name="pop3-adapter"></a>POP3 适配器
 邮局协议 3 (POP3) 适配器用于从运行 Microsoft BizTalk Server POP3 协议通过另一服务器中保存 POP3 邮箱的服务器中检索数据。  

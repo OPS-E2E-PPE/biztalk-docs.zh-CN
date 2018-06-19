@@ -1,18 +1,18 @@
 ---
-title: "HTTP 适配器安全建议 |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, HTTP adapters
 - configuring [HTTP adapters], security
 - HTTP adapters, security
 ms.assetid: ef6043c2-c62a-40e5-b2e1-53e60f87a761
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256757"
 ---
 # <a name="http-adapter-security-recommendations"></a>HTTP 适配器安全建议
 使用 HTTP 适配器可以通过超文本传输协议 (HTTP) 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与应用程序之间交换信息。 通过向指定的 HTTP URL 发送 HTTP POST 或 HTTP GET 请求，应用程序可以向服务器发送消息。 有关 HTTP 适配器的详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。 建议你使用以下准则以确保你的环境中的 HTTP 适配器的安全并对其进行部署：  

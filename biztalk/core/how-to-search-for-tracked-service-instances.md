@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6337df9-8c2e-4d4a-a64b-cc040f83bd91
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255509"
 ---
 # <a name="how-to-search-for-tracked-service-instances"></a>如何搜索跟踪的服务实例
 你可以使用**查询**选项卡中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来搜索所有跟踪的服务实例。 若要查找服务实例，您可以搜索程序集的名称和版本、生存期的开始时间和结束时间、服务类的名称或实例 ID、主机名称、错误代码和服务实例的状态。  

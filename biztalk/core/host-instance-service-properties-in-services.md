@@ -1,14 +1,14 @@
 ---
-title: "承载服务中的实例服务属性 |Microsoft 文档"
-ms.custom: 
+title: 承载服务中的实例服务属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8b317161-83a9-42d5-b24f-48ff1e54b94a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247445"
 ---
 # <a name="host-instance-service-properties-in-services"></a>“服务”中的主机实例服务属性
 ## <a name="host-instance-service-properties-in-services"></a>“服务”中的主机实例服务属性  

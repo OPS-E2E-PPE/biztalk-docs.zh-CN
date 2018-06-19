@@ -1,14 +1,14 @@
 ---
-title: "步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议 |Microsoft 文档"
-ms.custom: 
+title: 步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fcdb3af-727a-4d20-9dcf-cf162e7d3398
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279197"
 ---
 # <a name="step-10-configure-the-x12-and-as2-trading-partner-agreement"></a>步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议
 ![步骤 10 11](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  设置本属性可以确保在生成 MDN 时会使用的参与方属性，而非接收的 AS2 消息的 AS2 标头。  
   
-    3.  在**确认 (Mdn)**页上，执行以下操作：  
+    3.  在**确认 (Mdn)** 页上，执行以下操作：  
   
         1.  选择**请求 MDN**复选框。  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  选择**请求异步 MDN**复选框。  
   
-        4.  在**回执送达选项 (URL)**文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。  
+        4.  在**回执送达选项 (URL)** 文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。  
   
 9. 在上执行以下任务**Contoso-> Fabrikam**选项卡。  
   
@@ -121,14 +122,14 @@ ms.lasthandoff: 09/20/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择**默认**。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择**默认**。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|例如，选择你的测试消息的消息类型**864 – 短信**。|  
         |**版本/发行版**|输入**00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**。|  
         |**GS1**|验证是否选择测试消息的消息类型，例如， **TX-短信 (864)**。|  
         |**GS2**|输入**01**。|  
         |**GS3**|输入**7654321**。|  
-        |**GS4**|选择所需的日期格式。 选择**CCYYMMDD**。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择所需的日期格式。 选择**CCYYMMDD**。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择所需的时间格式。 选择**HHMMSSdd**。|  
         |**GS7**|选择**T-运输数据协调委员会 (TDCC)**。|  
         |**GS8**|验证已作为中输入的 EDI 版本**00401**。|  

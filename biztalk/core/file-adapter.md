@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247085"
 ---
 # <a name="file-adapter"></a>文件适配器
 文件适配器用于将文件传入和传出 Microsoft BizTalk Server。 文件适配器包含两个适配器-接收适配器和一个发送适配器。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="using-file-change-notifications-and-polling"></a>使用文件更改通知和轮询
   
- 文件接收适配器依靠 Windows 文件更改通知来确定何时从指定的目录或共享提取文件。 如果文件接收适配器在文件尚未完全写入到指定目录或共享时即收到 Windows 文件更改通知，则该文件将会锁定，并且文件适配器将不检索该文件。 在此方案中，该文件收到适配器将主动轮询指定的目录或共享在**轮询间隔 （毫秒）**上指定**高级设置**对话框中配置时可用文件接收位置。 文件接收适配器轮询目录或共享时，会从共享上检索未锁定的文件并将其提交至 MessageBox 数据库。  
+ 文件接收适配器依靠 Windows 文件更改通知来确定何时从指定的目录或共享提取文件。 如果文件接收适配器在文件尚未完全写入到指定目录或共享时即收到 Windows 文件更改通知，则该文件将会锁定，并且文件适配器将不检索该文件。 在此方案中，该文件收到适配器将主动轮询指定的目录或共享在**轮询间隔 （毫秒）** 上指定**高级设置**对话框中配置时可用文件接收位置。 文件接收适配器轮询目录或共享时，会从共享上检索未锁定的文件并将其提交至 MessageBox 数据库。  
   
 > [!NOTE]
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文件适配器仅已测试，并且支持 NTFS 文件系统上。  

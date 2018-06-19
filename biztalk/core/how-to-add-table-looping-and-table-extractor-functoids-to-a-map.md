@@ -1,14 +1,14 @@
 ---
-title: "如何添加表循环和表为地图的提取程序 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何添加表循环和表为地图的提取程序 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c837ab8-55db-471a-af26-9fbd0497d7d4
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249789"
 ---
 # <a name="how-to-add-table-looping-and-table-extractor-functoids-to-a-map"></a>如何向映射添加“表循环”和“表提取程序”Functoid
 **表循环**和**表提取程序**functoid 一起使用。 **表循环**functoid 具有你配置的内部表。 为每个输入字段或记录**表循环**functoid 输出的表，一次一个地行。 **表提取程序**functoid 从行提取所需的项目，并将其传递到输出实例消息。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269629"
 ---
 # <a name="sendports-distributionlist-node"></a>发送端口 （DistributionList 节点）
 绑定文件 DistributionList 节点发送端口节点是通讯组列表中的发送端口引用的容器节点。  

@@ -16,7 +16,7 @@ helpviewer_keywords:
 - instances, suspended
 - instances, services
 ms.assetid: f91b1151-d879-4aa7-afc8-4cf13d928158
-caps.latest.revision: ''
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255669"
 ---
 # <a name="how-to-search-for-suspended-service-instances"></a>如何搜索挂起的服务实例
 你可以使用 **查询** BizTalk Server 管理控制台，以便搜索挂起的服务实例中的选项卡。 您可以搜索消息的特定子集，以查找与服务名、类型、主机等相关联的特定消息。  

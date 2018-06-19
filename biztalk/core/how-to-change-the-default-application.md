@@ -1,18 +1,18 @@
 ---
-title: "如何更改默认应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何更改默认应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, default
 - applications, modifying
 - modifying, applications
 ms.assetid: cfa5e88f-0bbb-4edd-a840-722dcdcce266
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247981"
 ---
 # <a name="how-to-change-the-default-application"></a>如何更改默认应用程序
 本主题介绍如何通过在 BizTalk Server 管理控制台中编辑应用程序的属性来更改默认应用程序。 你还可以更改默认应用程序通过创建新的应用程序并指定为默认应用程序中所述[如何创建应用程序](../core/how-to-create-an-application.md)。  

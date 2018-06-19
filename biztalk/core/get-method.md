@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246517"
 ---
 # <a name="get-method"></a>Get 方法
 用于检索属性基于输入的密钥参数 (key1、 key2，... keyn)。 输出参数是一个结构，该结构包含与关键字参数匹配的记录的属性。 如果组件接口具有只有一个实例 （即，没有任何键） 的 Get 函数中不包含任何关键参数。 另请参阅[Find 方法](../core/find-method.md)。  

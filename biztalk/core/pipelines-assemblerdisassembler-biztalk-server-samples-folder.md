@@ -1,17 +1,17 @@
 ---
-title: "管道 AssemblerDisassembler （BizTalk Server 的示例文件夹） |Microsoft 文档"
-ms.custom: 
+title: 管道 AssemblerDisassembler （BizTalk Server 的示例文件夹） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, examples
 - examples, pipelines
 ms.assetid: 32977eb0-7036-479f-86fd-0b437e12580b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263813"
 ---
 # <a name="pipelines-assemblerdisassembler-biztalk-server-samples-folder"></a>管道 AssemblerDisassembler （BizTalk Server 示例文件夹中）
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]其软件开发工具包 (SDK) 中包括三个汇编/反汇编程序管道样本。 本节提供有关每个组装器/拆装器示例所演示功能的详细信息，介绍了生成和运行这些示例的方法以及可以预期得到的结果。  

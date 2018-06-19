@@ -1,14 +1,14 @@
 ---
-title: "处理事务 |Microsoft 文档"
-ms.custom: 
+title: 处理事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d360742-e969-4651-b364-9edc6a93b8d4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248149"
 ---
 # <a name="handling-transactions"></a>处理事务
 ## <a name="transacted-receivers"></a>事务性接收器  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="transacted-transmitters"></a>事务性发送器  
  事务性适配器在很大程度上与非事务性适配器十分相似。 主要差别在于，事务性适配器将消息中的数据发送到已在 MSDTC 事务中登记的资源。  
   
- **实现提示：**对于事务处理发送适配器应使用相同的 MSDTC 事务将数据写入到目标和删除它通过**IBTTransportBatch.DeleteMessage**方法调用。 只有这两个操作需要进行事务处理。 任何其他操作，如**IBTTransportBatch.Resubmit**， **IBTTransportBatch.MoveToNextTransport**，和**IBTTransportBatch.MoveToSuspendQ**不需要为事务处理。 原因在于：引擎隐式使用事务，并且就目标而言，这些类型的操作无需是原子的。  
+ **实现提示：** 对于事务处理发送适配器应使用相同的 MSDTC 事务将数据写入到目标和删除它通过**IBTTransportBatch.DeleteMessage**方法调用。 只有这两个操作需要进行事务处理。 任何其他操作，如**IBTTransportBatch.Resubmit**， **IBTTransportBatch.MoveToNextTransport**，和**IBTTransportBatch.MoveToSuspendQ**不需要为事务处理。 原因在于：引擎隐式使用事务，并且就目标而言，这些类型的操作无需是原子的。  
   
  下面的对象交互图说明了适配器和引擎之间的交互。 这些事件的顺序如下：  
   

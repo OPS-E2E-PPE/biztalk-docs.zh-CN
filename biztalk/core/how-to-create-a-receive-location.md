@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249685"
 ---
 # <a name="how-to-create-a-receive-location"></a>如何创建接收位置
 本主题将介绍如何使用 BizTalk Server 管理控制台创建新的接收位置，并指定其所属的接收端口。 接收位置为入站消息到达的地址，以及处理在该地址接收到的消息的消息传送管道。  

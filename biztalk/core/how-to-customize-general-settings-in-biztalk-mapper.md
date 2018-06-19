@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249325"
 ---
 # <a name="how-to-customize-general-settings-in-biztalk-mapper"></a>如何在 BizTalk 映射器中自定义常规设置
 您可以更改映射中某些视图选项的默认设置。 每当您打开 Visual Studio 时，都可以看到这些设置。 本主题提供有关此类选项的信息。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271301"
 ---
 # <a name="secondarytransport-sendport-node"></a>SecondaryTransport（“发送端口”节点）
 绑定文件的“发送端口”节点的 SecondaryTransport 节点提供了有关次要传输（绑定到与绑定文件一起导出的某个发送端口）的特定信息。 如果指定了次要传输，它将在主传输的全部重试次数均已耗尽后使用。  

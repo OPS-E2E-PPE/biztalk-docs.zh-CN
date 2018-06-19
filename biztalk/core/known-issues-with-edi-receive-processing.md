@@ -1,14 +1,14 @@
 ---
-title: "已知问题的 EDI 接收处理 |Microsoft 文档"
-ms.custom: 
+title: 已知问题的 EDI 接收处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbb3fd6a-381b-479e-a9f2-7b6371fac39e
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262957"
 ---
 # <a name="known-issues-with-edi-receive-processing"></a>EDI 接收处理的已知问题
 本主题介绍在 EDI 接收管道中进行处理时的已知问题。  

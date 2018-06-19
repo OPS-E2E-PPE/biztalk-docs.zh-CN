@@ -1,14 +1,14 @@
 ---
-title: "如何添加现有映射 |Microsoft 文档"
-ms.custom: 
+title: 如何添加现有映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbeaea05-016e-488c-90f3-af8c6b9a3d84
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247453"
 ---
 # <a name="how-to-add-existing-maps"></a>如何添加现有的映射
 有时，您可能希望向 BizTalk 项目添加现有映射。 在进行此操作之前，必须确保映射的源架构和目标架构都包含在要向其添加映射的 BizTalk 项目中，或均由相应的 .NET 程序集引用。  

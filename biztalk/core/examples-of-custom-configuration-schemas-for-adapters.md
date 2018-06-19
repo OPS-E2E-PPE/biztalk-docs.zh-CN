@@ -1,14 +1,14 @@
 ---
-title: "适配器的自定义配置架构的示例 |Microsoft 文档"
-ms.custom: 
+title: 适配器的自定义配置架构的示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31b188de-9363-4f4c-b40a-149ff59ddf8d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245909"
 ---
 # <a name="examples-of-custom-configuration-schemas-for-adapters"></a>适配器的自定义配置架构的示例
 本节提供以下示例，介绍如何为适配器自定义配置架构：  
