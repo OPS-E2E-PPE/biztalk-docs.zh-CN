@@ -1,11 +1,11 @@
 ---
-title: "服务组件面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 服务组件面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, pipelines
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - service solution tutorial, orchestrations
 - service solution tutorial, back-end applications
 ms.assetid: 97b7b754-abfb-48f9-87bf-7fe171121166
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22234253"
 ---
 # <a name="components-of-the-service-oriented-solution"></a><span data-ttu-id="df125-102">服务组件面向解决方案</span><span class="sxs-lookup"><span data-stu-id="df125-102">Components of the Service Oriented Solution</span></span>
 <span data-ttu-id="df125-103">本部分对面向服务的解决方案的主要 BizTalk Server 组件进行了说明。</span><span class="sxs-lookup"><span data-stu-id="df125-103">This section describes the major BizTalk Server components of the Service Oriented Solution.</span></span> <span data-ttu-id="df125-104">下图显示了该解决方案的主要组件：</span><span class="sxs-lookup"><span data-stu-id="df125-104">The following diagram shows the major components of the solution:</span></span>  

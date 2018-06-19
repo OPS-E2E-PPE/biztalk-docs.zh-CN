@@ -1,11 +1,11 @@
 ---
-title: "环回教程 |Microsoft 文档"
-ms.custom: 
+title: 环回教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - loopbacks, tutorial
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - loopback tutorial
 - tutorials, loopback tutorial
 ms.assetid: 0f69c1f1-4039-4949-8eed-127ceabbc3cc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210029"
 ---
 # <a name="loopback-tutorial"></a><span data-ttu-id="246ad-102">环回教程</span><span class="sxs-lookup"><span data-stu-id="246ad-102">Loopback Tutorial</span></span>
 <span data-ttu-id="246ad-103">本教程包含详细的步骤说明，描述如何使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 在一台计算机上模拟本组织与合作伙伴组织之间的流程实施情况。</span><span class="sxs-lookup"><span data-stu-id="246ad-103">This tutorial contains detailed steps that describe how you can use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] to simulate a process implementation between the home and partner organization on a single computer.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "第 2 课： 提交无效 MT103 消息 |Microsoft 文档"
-ms.custom: 
+title: 第 2 课： 提交无效 MT103 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, invalid messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MT103 messages
 - messages, MT103 messages
 ms.assetid: 4b070ae1-c400-421a-b2f6-b7b1f22c0e41
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961291"
 ---
 # <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a><span data-ttu-id="aec24-102">第 2 课： 提交无效 MT103 消息</span><span class="sxs-lookup"><span data-stu-id="aec24-102">Lesson 2: Submitting an MT103 Message That Is Not Valid</span></span>
 <span data-ttu-id="aec24-103">在本课程中，提交无效 MT103 消息并你解决使用系统工具所生成的错误。</span><span class="sxs-lookup"><span data-stu-id="aec24-103">In this lesson, you submit an MT103 message that is not valid and then you troubleshoot the resulting error using your System Tools.</span></span>  

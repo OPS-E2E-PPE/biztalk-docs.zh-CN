@@ -1,14 +1,14 @@
 ---
-title: "要创建 Oracle E-business Suite 应用程序系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 要创建 Oracle E-business Suite 应用程序系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b02ea286-f301-46b3-b748-d954dead23a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216757"
 ---
 # <a name="prerequisites-to-create-oracle-e-business-suite-applications"></a><span data-ttu-id="580ac-102">创建 Oracle E-business Suite 应用程序的先决条件</span><span class="sxs-lookup"><span data-stu-id="580ac-102">Prerequisites to create Oracle E-Business Suite applications</span></span>
 <span data-ttu-id="580ac-103">本部分提供有关在开发使用的 BizTalk 应用程序之前必须执行什么信息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="580ac-103">This section provides information about what you must do before developing BizTalk applications using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="580ac-104">本部分还列出了你[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]用于开发 BizTalk 应用程序的工具。</span><span class="sxs-lookup"><span data-stu-id="580ac-104">This section also points you to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] tools that are used to develop BizTalk applications.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "如何配置 SOAP 接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 SOAP 接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SOAP adapters], receive handlers
 - SOAP adapters, receive handlers
 - receive handlers, SOAP adapters
 ms.assetid: e1174381-f36c-4131-83b7-26bfa879802e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247309"
 ---
 # <a name="how-to-configure-a-soap-receive-handler"></a><span data-ttu-id="b80fe-102">如何配置 SOAP 接收处理程序</span><span class="sxs-lookup"><span data-stu-id="b80fe-102">How to Configure a SOAP Receive Handler</span></span>
 <span data-ttu-id="b80fe-103">你可以配置 SOAP 接收处理程序设置通过使用 BizTalk Server 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="b80fe-103">You can configure the SOAP receive handler settings by using the BizTalk Server Administration Console.</span></span> <span data-ttu-id="b80fe-104">如果你配置使用 BizTalk Server 管理控制台的适配器，不需要处理程序替代属性在 BizTalk 资源管理器中设置。</span><span class="sxs-lookup"><span data-stu-id="b80fe-104">If you configure the adapter using the BizTalk Server Administration Console, the handler override properties do not need to be set in BizTalk Explorer.</span></span>  

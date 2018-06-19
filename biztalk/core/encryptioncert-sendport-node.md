@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240709"
 ---
 # <a name="encryptioncert-sendport-node"></a><span data-ttu-id="0ffb5-102">EncryptionCert（“发送端口”节点）</span><span class="sxs-lookup"><span data-stu-id="0ffb5-102">EncryptionCert (SendPort Node)</span></span>
 <span data-ttu-id="0ffb5-103">绑定文件的 SendPort 节点的 EncryptionCert 节点包含有关随绑定文件导出的发送端口所用的加密证书的信息。</span><span class="sxs-lookup"><span data-stu-id="0ffb5-103">The EncryptionCert node of the SendPort node of a binding file contains information about the encryption certificate used with a send port that is exported with the binding file.</span></span>  

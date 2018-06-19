@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6573142e-7ca7-4990-98e3-b7a54840da13
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246653"
 ---
 # <a name="exportbindings-command"></a><span data-ttu-id="24256-102">ExportBindings 命令</span><span class="sxs-lookup"><span data-stu-id="24256-102">ExportBindings Command</span></span>
 <span data-ttu-id="24256-103">导出绑定 BizTalk 程序集、 应用程序或组。</span><span class="sxs-lookup"><span data-stu-id="24256-103">Exports bindings for a BizTalk assembly, application, or group.</span></span> <span data-ttu-id="24256-104">你还可以导出全局方以及程序集，应用程序或组绑定的绑定。</span><span class="sxs-lookup"><span data-stu-id="24256-104">You can also export global party bindings along with the assembly, application, or group bindings.</span></span> <span data-ttu-id="24256-105">（当事方是组织的所有实体，例如你的合作伙伴与业务流程交互。）</span><span class="sxs-lookup"><span data-stu-id="24256-105">(A party is all the entities, such as partners of your organization, that interact with an orchestration.)</span></span>  
   
 ## <a name="usage"></a><span data-ttu-id="24256-106">用法</span><span class="sxs-lookup"><span data-stu-id="24256-106">Usage</span></span>  
- <span data-ttu-id="24256-107">**BTSTask ExportBindings /Destination:** *值*[**/GroupLevel**] [**/ApplicationName: * **值*] [**/程序集名称：***值*] &#124; [**/GlobalParties**] [**/Server:***值 *] [* * / 数据库：***值 *]</span><span class="sxs-lookup"><span data-stu-id="24256-107">**BTSTask ExportBindings /Destination:** *value* [**/GroupLevel**] [**/ApplicationName:***value*] [**/AssemblyName:***value* ] &#124; [**/GlobalParties**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+ <span data-ttu-id="24256-107">**BTSTask ExportBindings /Destination:** *值*[**/GroupLevel**] [**/ApplicationName: * **值*] [**/程序集名称：***值*] &#124; [**/GlobalParties **] [**/Server:***值 *] [* * / 数据库：*** 值 *]</span><span class="sxs-lookup"><span data-stu-id="24256-107">**BTSTask ExportBindings /Destination:** *value* [**/GroupLevel**] [**/ApplicationName:***value*] [**/AssemblyName:***value* ] &#124; [**/GlobalParties **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
 ## <a name="parameters"></a><span data-ttu-id="24256-108">Parameters</span><span class="sxs-lookup"><span data-stu-id="24256-108">Parameters</span></span>  
   

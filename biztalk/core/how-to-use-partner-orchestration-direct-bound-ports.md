@@ -1,14 +1,14 @@
 ---
-title: "如何使用合作伙伴业务流程直接绑定端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用合作伙伴业务流程直接绑定端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19f9987f-79fb-4cb6-bf6e-542f6eea9ce0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258157"
 ---
 # <a name="how-to-use-partner-orchestration-direct-bound-ports"></a><span data-ttu-id="12b5c-102">如何使用合作伙伴业务流程直接绑定端口</span><span class="sxs-lookup"><span data-stu-id="12b5c-102">How to Use Partner Orchestration Direct Bound Ports</span></span>
 <span data-ttu-id="12b5c-103">合作伙伴业务流程直接绑定端口提供通过端口进行业务流程间通信的能力。</span><span class="sxs-lookup"><span data-stu-id="12b5c-103">Partner orchestration direct bound ports provide the capability of having inter-orchestration communication through ports.</span></span> <span data-ttu-id="12b5c-104">您可以创建两个通信模式： 正向合作伙伴业务流程直接绑定和反合作伙伴业务流程直接绑定。</span><span class="sxs-lookup"><span data-stu-id="12b5c-104">You can create two communication patterns: forward partner orchestration direct binding and inverse partner orchestration direct binding.</span></span> <span data-ttu-id="12b5c-105">这两种模式都提供显式的业务流程间通信，这意味着在使用正向合作伙伴业务流程直接绑定时存在预期的接收方业务流程，并且在使用反向合作伙伴业务流程直接绑定时存在预期的发送方业务流程。</span><span class="sxs-lookup"><span data-stu-id="12b5c-105">These two patterns provide explicit inter-orchestration communication, which means that there is an intended recipient orchestration when using forward partner orchestration direct binding and an intended sender orchestration when using inverse partner orchestration direct binding.</span></span>  

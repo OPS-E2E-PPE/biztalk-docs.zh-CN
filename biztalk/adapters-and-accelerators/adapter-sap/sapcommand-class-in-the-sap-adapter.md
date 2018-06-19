@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216557"
 ---
 # <a name="sapcommand-class-in-the-sap-adapter"></a><span data-ttu-id="70f0e-102">SAP 适配器中 SAPCommand 类</span><span class="sxs-lookup"><span data-stu-id="70f0e-102">SAPCommand class in the SAP adapter</span></span>
 <span data-ttu-id="70f0e-103">此命令表示 SQL 查询，以便在 SAP 后端上执行。</span><span class="sxs-lookup"><span data-stu-id="70f0e-103">This command represents a SQL query to be executed on the SAP backend.</span></span> <span data-ttu-id="70f0e-104">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]当前支持 SELECT 和 EXEC 语句。</span><span class="sxs-lookup"><span data-stu-id="70f0e-104">The [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] currently supports SELECT and EXEC statements only.</span></span> <span data-ttu-id="70f0e-105">SELECT 语句启用提取的数据从单个 SAP 表，以及 EXEC 语句使用户能够在 SAP 服务器上执行 Rfc。</span><span class="sxs-lookup"><span data-stu-id="70f0e-105">SELECT statements enable extraction of data from a single SAP table, and EXEC statements enable users to execute RFCs on the SAP server.</span></span>  

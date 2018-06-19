@@ -1,11 +1,11 @@
 ---
-title: "清单： 存档和清除跟踪数据库 BizTalk |Microsoft 文档"
-ms.custom: 
+title: 清单： 存档和清除跟踪数据库 BizTalk |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - archiving [Tracking database], checklist
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - purging, checklist
 - checklists, archiving [Tracking database]
 ms.assetid: dccbf471-2add-498e-b292-287d9a94161b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232237"
 ---
 # <a name="checklist-archiving-and-purging-the-biztalk-tracking-database"></a><span data-ttu-id="44bda-102">清单： 存档和清除 BizTalk 跟踪数据库</span><span class="sxs-lookup"><span data-stu-id="44bda-102">Checklist: Archiving and Purging the BizTalk Tracking Database</span></span>
 |<span data-ttu-id="44bda-103">步骤</span><span class="sxs-lookup"><span data-stu-id="44bda-103">Step</span></span>|<span data-ttu-id="44bda-104">参考</span><span class="sxs-lookup"><span data-stu-id="44bda-104">Reference</span></span>|  

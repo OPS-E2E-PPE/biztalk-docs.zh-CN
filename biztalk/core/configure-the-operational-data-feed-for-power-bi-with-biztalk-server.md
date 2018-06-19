@@ -1,15 +1,15 @@
 ---
-title: "启用 Power BI |Microsoft 文档"
-description: "BizTalk server 中功能包安装 Power BI 模板"
+title: 启用 Power BI |Microsoft 文档
+description: BizTalk server 中功能包安装 Power BI 模板
 ms.custom: fp1
 ms.date: 11/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe6d3a97-c7c0-4147-baa9-ee12f93248eb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969467"
 ---
 # <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a><span data-ttu-id="aa821-103">配置 Power BI 操作数据馈送 BizTalk Server 中</span><span class="sxs-lookup"><span data-stu-id="aa821-103">Configure the Power BI operational data feed in BizTalk Server</span></span>
 

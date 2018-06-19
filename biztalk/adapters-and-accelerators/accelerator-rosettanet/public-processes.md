@@ -1,11 +1,11 @@
 ---
-title: "公共进程 |Microsoft 文档"
-ms.custom: 
+title: 公共进程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - public processes, orchestrations
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - trading partners, public processes
 - public processes, about public processes
 ms.assetid: 5ccc7449-5741-4d49-beb6-567bcd93f679
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210021"
 ---
 # <a name="public-processes"></a><span data-ttu-id="73494-102">公共进程</span><span class="sxs-lookup"><span data-stu-id="73494-102">Public Processes</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="73494-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]实现涉及与贸易合作伙伴作为公共进程的集成的业务流程。</span><span class="sxs-lookup"><span data-stu-id="73494-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] implements business processes that involve integration with trading partners as public processes.</span></span> <span data-ttu-id="73494-104">而将组织内部的业务流程作为专用流程来实现。</span><span class="sxs-lookup"><span data-stu-id="73494-104">It implements business processes that are internal to an organization as private processes.</span></span> <span data-ttu-id="73494-105">使用专用流程和公用流程可将 RosettaNet 实现框架 (RNIF) 处理（在公用流程中）与服务内容处理及后端集成（在专用流程中）分隔开来。</span><span class="sxs-lookup"><span data-stu-id="73494-105">Using public and private processes isolates RosettaNet Implementation Framework (RNIF) handling (in the public process) from the service content processing and back-end integration (in the private process).</span></span>  

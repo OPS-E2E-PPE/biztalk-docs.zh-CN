@@ -1,14 +1,14 @@
 ---
-title: "如何在向地图添加大容量复制 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何在向地图添加大容量复制 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cff63fc-8f34-4bd0-8501-a8401bde6349
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247565"
 ---
 # <a name="how-to-add-mass-copy-functoids-to-a-map"></a><span data-ttu-id="f8a63-102">如何向映射中添加“批量复制”Functoid</span><span class="sxs-lookup"><span data-stu-id="f8a63-102">How to Add Mass Copy Functoids to a Map</span></span>
 <span data-ttu-id="f8a63-103">**大容量复制**functoid 使你使用包含的架构的映射**任何**和**anyAttribute**元素。</span><span class="sxs-lookup"><span data-stu-id="f8a63-103">The **Mass Copy** functoid enables your maps to use schemas that include **any** and **anyAttribute** elements.</span></span> <span data-ttu-id="f8a63-104">实际上，这些元素是 XML 架构定义语言为匹配未知结构或属性集而提供的通配符。</span><span class="sxs-lookup"><span data-stu-id="f8a63-104">These elements are, in essence, wildcards provided in the XML Schema definition language to match unknown structures or sets of attributes.</span></span>  

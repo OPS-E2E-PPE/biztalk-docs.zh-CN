@@ -1,14 +1,14 @@
 ---
-title: "如何标记链接 |Microsoft 文档"
-ms.custom: 
+title: 如何标记链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fb81763-8b50-4334-88a8-efad1c5d82d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253789"
 ---
 # <a name="how-to-label-a-link"></a><span data-ttu-id="33ce9-102">如何标记链接</span><span class="sxs-lookup"><span data-stu-id="33ce9-102">How to Label a Link</span></span>
 <span data-ttu-id="33ce9-103">标签有助于记录 functoid 的用途或映射中的链接。</span><span class="sxs-lookup"><span data-stu-id="33ce9-103">Labels are helpful to document the purpose of a functoid or a link in a map.</span></span> <span data-ttu-id="33ce9-104">你可以使用**标签**属性可以命名链接。</span><span class="sxs-lookup"><span data-stu-id="33ce9-104">You can use the **Label** property to name a link.</span></span> <span data-ttu-id="33ce9-105">当您的映射包含大型架构结构，并且标识到 functoid 的输入输出链接变得困难时，此功能很有用。</span><span class="sxs-lookup"><span data-stu-id="33ce9-105">This is useful when your map contains big schema structures and identifying the inputs and output links to a functoid becomes difficult.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "SAP 适配器将用于 SharePoint |Microsoft 文档"
-ms.custom: 
+title: SAP 适配器将用于 SharePoint |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft Office SharePoint Server
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tutorial, MOSS
 - Business Data Catalog
 ms.assetid: 2a07eafb-1344-4169-afab-e6d51a38a2e9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217549"
 ---
 # <a name="use-the-sap-adapter-with-sharepoint"></a><span data-ttu-id="4916e-102">使用带有 SharePoint SAP 适配器</span><span class="sxs-lookup"><span data-stu-id="4916e-102">Use the SAP adapter with SharePoint</span></span>
 <span data-ttu-id="4916e-103">大多数的业务线 (LOB) 应用程序具有相对较少所需的行业专业人员可以访问的专有接口。</span><span class="sxs-lookup"><span data-stu-id="4916e-103">Most line-of-business (LOB) applications have proprietary interfaces that are accessible to relatively few people with the required subject matter expertise.</span></span> <span data-ttu-id="4916e-104">但是，因为组织中所有级别信息工作者需要相关信息，行业专家必须将所需的数据导出到更熟悉的应用程序，像 Microsoft Excel 这样的信息工作人员可以使用该信息。</span><span class="sxs-lookup"><span data-stu-id="4916e-104">However, because information workers need relevant information at all levels in an organization, the subject matter experts have to export required data into more familiar applications, like Microsoft Excel, for information workers to consume the information.</span></span>  

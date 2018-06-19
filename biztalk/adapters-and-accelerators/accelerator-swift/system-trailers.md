@@ -1,17 +1,17 @@
 ---
-title: "系统拖车安排 |Microsoft 文档"
-ms.custom: 
+title: 系统拖车安排 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trailers [SWIFT]
 - SWIFT, trailers
 ms.assetid: 2fd49be9-afe8-47c6-a613-fa469faa2126
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214077"
 ---
 # <a name="system-trailers"></a><span data-ttu-id="85080-102">系统拖车安排</span><span class="sxs-lookup"><span data-stu-id="85080-102">System Trailers</span></span>
 <span data-ttu-id="85080-103">系统拖车安排传达有关 SWIFT 消息的其他或特殊的详细信息。</span><span class="sxs-lookup"><span data-stu-id="85080-103">System trailers convey additional or special details about the SWIFT message.</span></span> <span data-ttu-id="85080-104">如果任一第三个系统拖车安排都存在，它们将按以下顺序发生。</span><span class="sxs-lookup"><span data-stu-id="85080-104">If any of the first three system trailers are present, they occur in the following order.</span></span> <span data-ttu-id="85080-105">剩余系统拖车安排可以按任意顺序出现。</span><span class="sxs-lookup"><span data-stu-id="85080-105">The remaining system trailers can occur in any order.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "事件和 Errors2 |Microsoft 文档"
-ms.custom: 
+title: 事件和 Errors2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03856291-63a1-4265-b053-ff4d623e0b05
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245765"
 ---
 # <a name="events-and-errors"></a><span data-ttu-id="136e5-102">事件和错误</span><span class="sxs-lookup"><span data-stu-id="136e5-102">Events and Errors</span></span>
 <span data-ttu-id="136e5-103">本部分包括 BizTalk Server 技术的事件和错误。</span><span class="sxs-lookup"><span data-stu-id="136e5-103">This section consists of events and errors for BizTalk Server technologies.</span></span> <span data-ttu-id="136e5-104">介绍了出现的错误和用户采取的相应操作。</span><span class="sxs-lookup"><span data-stu-id="136e5-104">It describes the errors and the appropriate user action to take.</span></span>  

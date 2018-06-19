@@ -1,14 +1,14 @@
 ---
-title: "开始使用 BizTalk 适配器用于 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 开始使用 BizTalk 适配器用于 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 852d5855-c58a-4fa3-8efd-6afea9e527df
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216677"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-oracle-e-business-suite"></a><span data-ttu-id="9e4a4-102">开始使用 BizTalk 适配器用于 Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="9e4a4-102">Get started with the BizTalk Adapter for Oracle E-Business Suite</span></span>
 <span data-ttu-id="9e4a4-103">适配器、 先决条件和用户的 Microsoft BizTalk 适配器包的新主题的概述。</span><span class="sxs-lookup"><span data-stu-id="9e4a4-103">Overview of the adapter, prerequisites, and topics for users who are new to Microsoft BizTalk Adapter Pack.</span></span> <span data-ttu-id="9e4a4-104">提供的功能有关的信息[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]和可以使用该适配器执行对 Oracle 数据库的不同运算。</span><span class="sxs-lookup"><span data-stu-id="9e4a4-104">Information is provided about the features of [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] and the different operations that can be performed on the Oracle database by using the adapter.</span></span>  

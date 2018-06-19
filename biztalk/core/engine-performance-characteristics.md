@@ -1,17 +1,17 @@
 ---
-title: "引擎的性能特征 |Microsoft 文档"
-ms.custom: 
+title: 引擎的性能特征 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, engines
 - engines, performance
 ms.assetid: e7cd9618-55c2-459f-aaca-798aa7e45c41
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239837"
 ---
 # <a name="engine-performance-characteristics"></a><span data-ttu-id="0979f-102">引擎性能特征</span><span class="sxs-lookup"><span data-stu-id="0979f-102">Engine Performance Characteristics</span></span>
 <span data-ttu-id="0979f-103">本部分介绍了如何确保消息引擎获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="0979f-103">This section explains how you can ensure the messaging engine has optimal performance.</span></span> <span data-ttu-id="0979f-104">其中介绍了如何测量最大可承受引擎吞吐量，以及如何修改默认的主机阻止设置。</span><span class="sxs-lookup"><span data-stu-id="0979f-104">It explains how to measure maximum sustainable engine throughput and how to modify default host throttling settings.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "确认设置 |Microsoft 文档"
-ms.custom: 
+title: 确认设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, configuring
 - acknowledgements, acknowledgement types
 - configuring, acknowledgements
 ms.assetid: 99ab8caa-8788-4438-96db-8001a6523cc8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204357"
 ---
 # <a name="acknowledgment-settings"></a><span data-ttu-id="f6468-102">确认设置</span><span class="sxs-lookup"><span data-stu-id="f6468-102">Acknowledgment Settings</span></span>
 <span data-ttu-id="f6468-103">你使用**确认**选项卡[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器 (在高级下**方**选项卡) 配置确认 (ACK) 设置。</span><span class="sxs-lookup"><span data-stu-id="f6468-103">You use the **Acknowledgment** tab of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer (under the high-level **Parties** tab) to configure acknowledgment (ACK) settings.</span></span>  

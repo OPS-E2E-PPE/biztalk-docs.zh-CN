@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT 消息修复和新提交的安全功能 |Microsoft 文档"
-ms.custom: 
+title: A4SWIFT 消息修复和新提交的安全功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - security, A4SWIFT
 - messages, security
 ms.assetid: c34bcba7-fecd-4e2f-ab49-a6ccfd96198b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208165"
 ---
 # <a name="a4swift-security-features-for-message-repair-and-new-submission"></a><span data-ttu-id="28565-102">A4SWIFT 消息修复和新提交的安全功能</span><span class="sxs-lookup"><span data-stu-id="28565-102">A4SWIFT Security Features for Message Repair and New Submission</span></span>
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]<span data-ttu-id="28565-103">提供创建 SWIFT 消息、 修复、 重新生成密钥验证和批准了现成可用的功能。</span><span class="sxs-lookup"><span data-stu-id="28565-103"> provides out-of-the-box facilities for SWIFT message creation, repair, rekey verification, and approval.</span></span> <span data-ttu-id="28565-104">业务用户创建、 编辑和查看的使用 SWIFT 消息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]，它提供图形表示形式和用户界面的财务 (FIN) 消息。</span><span class="sxs-lookup"><span data-stu-id="28565-104">Business users create, edit, and review SWIFT messages by using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)][!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)], which provides a graphical representation and user interface for financial (FIN) messages.</span></span> [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]<span data-ttu-id="28565-105">从由 A4SWIFT 运行时生成的 XML 呈现条目/修复/重新生成密钥验证窗体和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="28565-105"> renders the entry/repair/rekey verification form from the XML produced by the A4SWIFT runtime and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="28565-106">A4SWIFT 提供[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]用于每个 FIN 模板消息类型 （基于相应的 A4SWIFT XSD 架构），以便你可以打开在任何 SWIFT FIN 消息类型[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="28565-106">A4SWIFT provides an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] template for each FIN message type (based on the corresponding A4SWIFT XSD schema) so that you can open any SWIFT FIN message types in [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)].</span></span> <span data-ttu-id="28565-107">A4SWIFT 提供以下功能以帮助安全。</span><span class="sxs-lookup"><span data-stu-id="28565-107">A4SWIFT provides the following features to aid in security.</span></span>  

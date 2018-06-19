@@ -1,17 +1,17 @@
 ---
-title: "如何移动 BAM 分析 Database2 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 分析 Database2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, Analysis database [BAM]
 - Analysis database [BAM], migrating
 ms.assetid: b0320273-4840-4573-bb82-bba95021535e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254941"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a><span data-ttu-id="9b7bf-102">如何移动 BAM 分析数据库</span><span class="sxs-lookup"><span data-stu-id="9b7bf-102">How to Move the BAM Analysis Database</span></span>
 <span data-ttu-id="9b7bf-103">可以使用此过程将 BAM 分析数据库移到另一台服务器。</span><span class="sxs-lookup"><span data-stu-id="9b7bf-103">You can use this procedure to move the BAM Analysis database to another server.</span></span>  

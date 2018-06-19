@@ -1,14 +1,14 @@
 ---
-title: "在从 ISA 数据读取分隔符中遇到错误 |Microsoft 文档"
-ms.custom: 
+title: 在从 ISA 数据读取分隔符中遇到错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8cb60abd-53c8-45e1-a840-d27dc974aad7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240157"
 ---
 # <a name="error-encountered-in-reading-delimiters-from-isa-data"></a><span data-ttu-id="be398-102">读取 ISA 数据中的分隔符时遇到错误</span><span class="sxs-lookup"><span data-stu-id="be398-102">Error encountered in reading delimiters from ISA data</span></span>
 ## <a name="details"></a><span data-ttu-id="be398-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="be398-103">Details</span></span>  

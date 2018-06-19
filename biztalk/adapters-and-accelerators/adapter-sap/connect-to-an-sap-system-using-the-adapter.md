@@ -1,18 +1,18 @@
 ---
-title: "连接到 SAP 系统使用适配器 |Microsoft 文档"
-ms.custom: 
+title: 连接到 SAP 系统使用适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
 - adapters, connecting to an SAP system
 - connection string
 ms.assetid: d506a948-5f4a-420b-a404-508824683099
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216893"
 ---
 # <a name="connect-to-an-sap-system-using-the-adapter"></a><span data-ttu-id="46012-102">连接到 SAP 系统使用适配器</span><span class="sxs-lookup"><span data-stu-id="46012-102">Connect to an SAP system using the adapter</span></span>
 <span data-ttu-id="46012-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]要求适配器客户端提供连接字符串，调用统一资源标识符 (URI) 以连接到 SAP 系统的连接。</span><span class="sxs-lookup"><span data-stu-id="46012-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI) to connect to the SAP system.</span></span> <span data-ttu-id="46012-104">通过连接 URI 适配器客户端可以指定要连接到外部系统的连接参数。有关连接 URI 的详细信息，请参阅[创建与 SAP 系统的连接](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md)。</span><span class="sxs-lookup"><span data-stu-id="46012-104">With a connection URI, adapter clients can specify connection parameters to connect to an external system.For more information about the connection URI, see [Create a connection to the SAP system](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md).</span></span>  

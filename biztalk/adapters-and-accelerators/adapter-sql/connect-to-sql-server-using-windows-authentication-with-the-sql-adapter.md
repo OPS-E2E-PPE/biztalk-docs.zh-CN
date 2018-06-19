@@ -1,14 +1,14 @@
 ---
-title: "连接到 SQL Server 和 SQL 适配器一起使用 Windows 身份验证 |Microsoft 文档"
-ms.custom: 
+title: 连接到 SQL Server 和 SQL 适配器一起使用 Windows 身份验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45c54b2a-e056-496f-9f10-f19b6a3ca1a6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222309"
 ---
 # <a name="connect-to-sql-server-using-windows-authentication-with-the-sql-adapter"></a><span data-ttu-id="e9395-102">连接到 SQL Server 和 SQL 适配器一起使用 Windows 身份验证</span><span class="sxs-lookup"><span data-stu-id="e9395-102">Connect to SQL Server using Windows Authentication with the SQL adapter</span></span>
 <span data-ttu-id="e9395-103">[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]使适配器客户端以使用 Windows 身份验证来建立与 SQL Server 的连接。</span><span class="sxs-lookup"><span data-stu-id="e9395-103">The [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] enables adapter clients to use Windows Authentication to establish a connection with SQL Server.</span></span> <span data-ttu-id="e9395-104">若要使用 Windows 身份验证，适配器客户端必须输入一个空的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="e9395-104">To use Windows Authentication, adapter clients must enter an empty user name and password.</span></span> 

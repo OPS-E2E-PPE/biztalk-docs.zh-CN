@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211173"
 ---
 # <a name="miscellaneous-troubleshooting"></a><span data-ttu-id="f326d-102">其他故障排除</span><span class="sxs-lookup"><span data-stu-id="f326d-102">Miscellaneous Troubleshooting</span></span>
 ## <a name="leading-zeroes-validation-is-not-performed-for-fields-that-use-the-checkleadingzeroesinelement-method-to-validate-a-field-in-the-message-validation-policy"></a><span data-ttu-id="f326d-103">前导零的 CheckLeadingZeroesInElement 方法用于验证消息验证策略中的字段的字段不执行验证。</span><span class="sxs-lookup"><span data-stu-id="f326d-103">Leading zeroes validation is not performed for fields that use the CheckLeadingZeroesInElement method to validate a field in the message Validation Policy.</span></span>  

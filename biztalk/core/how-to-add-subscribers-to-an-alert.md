@@ -1,18 +1,18 @@
 ---
-title: "如何将订阅服务器添加到警报 |Microsoft 文档"
-ms.custom: 
+title: 如何将订阅服务器添加到警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - subscriptions, subscribers
 - subscriptions
 - managing [BAM], adding alert subscribers
 ms.assetid: c76a117d-4516-4f48-995c-7e018dbba755
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247245"
 ---
 # <a name="how-to-add-subscribers-to-an-alert"></a><span data-ttu-id="c75a6-102">如何向警报添加订户</span><span class="sxs-lookup"><span data-stu-id="c75a6-102">How to Add Subscribers to an Alert</span></span>
 <span data-ttu-id="c75a6-103">管理员使用**添加订阅**命令将订阅服务器添加到指定的警报。</span><span class="sxs-lookup"><span data-stu-id="c75a6-103">Administrators use the **add-subscription** command to add a subscriber to a specified alert.</span></span>  

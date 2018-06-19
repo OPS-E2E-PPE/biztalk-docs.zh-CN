@@ -1,11 +1,11 @@
 ---
-title: "清单： 部署 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 清单： 部署 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - checklists, deploying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - checklists, applications
 - applications, checklists
 ms.assetid: 0f936475-eea7-49b0-a4ea-9488b4ce3847
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232781"
 ---
 # <a name="checklist-deploy-a-biztalk-application"></a><span data-ttu-id="c12cb-102">清单： 部署 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="c12cb-102">Checklist: Deploy a BizTalk Application</span></span>
 |<span data-ttu-id="c12cb-103">步骤</span><span class="sxs-lookup"><span data-stu-id="c12cb-103">Step</span></span>|<span data-ttu-id="c12cb-104">参考</span><span class="sxs-lookup"><span data-stu-id="c12cb-104">Reference</span></span>|  

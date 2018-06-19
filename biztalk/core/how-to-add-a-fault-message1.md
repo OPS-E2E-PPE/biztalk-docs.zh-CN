@@ -1,11 +1,11 @@
 ---
-title: "如何添加错误 Message1 |Microsoft 文档"
-ms.custom: 
+title: 如何添加错误 Message1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exceptions, adding messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - adding, fault messages
 - faults, adding messages
 ms.assetid: 9d21de6b-c1a5-46e9-a9dc-d6aa7b5fe34b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246645"
 ---
 # <a name="how-to-add-a-fault-message"></a><span data-ttu-id="8c382-102">如何添加错误消息</span><span class="sxs-lookup"><span data-stu-id="8c382-102">How to Add a Fault Message</span></span>
 <span data-ttu-id="8c382-103">首次创建通向后端系统的端口时，该端口中包含了请求和响应通信。</span><span class="sxs-lookup"><span data-stu-id="8c382-103">When you first created the port to the back-end system, it contained a request and a response.</span></span> <span data-ttu-id="8c382-104">必须添加错误来捕获异常。</span><span class="sxs-lookup"><span data-stu-id="8c382-104">You must add a fault to capture the exception.</span></span>  

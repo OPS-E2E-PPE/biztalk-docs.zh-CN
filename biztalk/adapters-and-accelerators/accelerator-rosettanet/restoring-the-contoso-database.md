@@ -1,17 +1,17 @@
 ---
-title: "还原 Contoso 数据库 |Microsoft 文档"
-ms.custom: 
+title: 还原 Contoso 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, restoring databases
 - databases, restoring
 ms.assetid: 291178c1-826e-49e0-a1d2-cbffee749659
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210221"
 ---
 # <a name="restoring-the-contoso-database"></a><span data-ttu-id="796f3-102">Contoso 数据库还原</span><span class="sxs-lookup"><span data-stu-id="796f3-102">Restoring the Contoso Database</span></span>
 <span data-ttu-id="796f3-103">在此步骤中，将使用 SQL Server Management Studio 运行一个用于恢复 Contoso 数据库及其关联存储过程的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="796f3-103">In this step, you use SQL Server Management Studio to run a SQL script to restore the Contoso database and its associated stored procedures.</span></span> <span data-ttu-id="796f3-104">您还将用初始数据来填充数据库表。</span><span class="sxs-lookup"><span data-stu-id="796f3-104">You also populate the database tables with preliminary data.</span></span>  

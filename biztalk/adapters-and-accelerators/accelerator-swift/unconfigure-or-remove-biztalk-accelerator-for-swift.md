@@ -1,14 +1,14 @@
 ---
-title: "取消配置或删除 BizTalk Accelerator for SWIFT |Microsoft 文档"
-ms.custom: 
+title: 取消配置或删除 BizTalk Accelerator for SWIFT |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eef13c65-6596-4aa2-bb03-980e567e9376
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214525"
 ---
 # <a name="unconfigure-or-remove-biztalk-accelerator-for-swift"></a><span data-ttu-id="f1393-102">取消配置或删除 BizTalk Accelerator for SWIFT</span><span class="sxs-lookup"><span data-stu-id="f1393-102">Unconfigure or remove BizTalk Accelerator for SWIFT</span></span>
 <span data-ttu-id="f1393-103">你可以更改或删除 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]从通过运行计算机**安装向导**或通过使用**控制面板**。</span><span class="sxs-lookup"><span data-stu-id="f1393-103">You can change or remove Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] from your computer by running the **Setup Wizard** or by using the **Control Panel**.</span></span>  

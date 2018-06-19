@@ -1,14 +1,14 @@
 ---
-title: "无效的服务证书指纹 |Microsoft 文档"
-ms.custom: 
+title: 无效的服务证书指纹 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22e7d74e-40ec-4187-9246-bc8da2a9ce86
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257213"
 ---
 # <a name="invalid-service-certificate-thumbprint"></a><span data-ttu-id="fed83-102">服务证书指纹无效</span><span class="sxs-lookup"><span data-stu-id="fed83-102">Invalid service certificate thumbprint</span></span>
 ## <a name="details"></a><span data-ttu-id="fed83-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="fed83-103">Details</span></span>  

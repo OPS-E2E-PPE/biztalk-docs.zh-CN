@@ -1,11 +1,11 @@
 ---
-title: "设置 CIDX 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 设置 CIDX 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - CIDX, process configuration
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - CIDX, importing PIPs
 - PIPs, CIDX
 ms.assetid: 7f1f159f-3b09-4efd-907b-9a75f7f3ecd1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210909"
 ---
 # <a name="setting-up-a-cidx-solution"></a><span data-ttu-id="7f804-102">设置 CIDX 解决方案</span><span class="sxs-lookup"><span data-stu-id="7f804-102">Setting Up a CIDX Solution</span></span>
 <span data-ttu-id="7f804-103">Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 提供对 CIDX（化工行业数据交换）XML 消息交换（CIDX Chem eStandards 2.0 版和 3.0 版）的支持。</span><span class="sxs-lookup"><span data-stu-id="7f804-103">Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] support for CIDX (Chemical Industry Data Exchange) XML message exchange (CIDX Chem eStandards versions 2.0 and 3.0).</span></span> <span data-ttu-id="7f804-104">本主题讲述如何设置 CIDX 解决方案，步骤如下：</span><span class="sxs-lookup"><span data-stu-id="7f804-104">This topic describes how to set up a CIDX solution by doing the following:</span></span>  

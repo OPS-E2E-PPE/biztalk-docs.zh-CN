@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961539"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a><span data-ttu-id="2aad9-102">SQLEXECUTE 操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="2aad9-102">Message Schemas for the SQLEXECUTE Operation</span></span>
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]<span data-ttu-id="2aad9-103">呈现强类型的项目在 LOB 系统中存在的元数据，并公开这些项目上的标准操作。</span><span class="sxs-lookup"><span data-stu-id="2aad9-103"> surfaces strongly-typed metadata for artifacts present in the LOB system and exposes standard operations on these artifacts.</span></span> <span data-ttu-id="2aad9-104">但是，有一些的情形其中的应用程序可能需要根据应用程序中的业务逻辑的任意 SQL 语句的执行。</span><span class="sxs-lookup"><span data-stu-id="2aad9-104">However, there are scenarios where an application might require the execution of an arbitrary SQL statement that is driven by the business logic in the application.</span></span> <span data-ttu-id="2aad9-105">例如，你可能希望：</span><span class="sxs-lookup"><span data-stu-id="2aad9-105">For example, you may want to:</span></span>  

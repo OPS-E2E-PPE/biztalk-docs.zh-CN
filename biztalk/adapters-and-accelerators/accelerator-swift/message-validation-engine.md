@@ -1,11 +1,11 @@
 ---
-title: "消息验证引擎 |Microsoft 文档"
-ms.custom: 
+title: 消息验证引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message validation engine
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - validating, errors
 - validating, parsing
 ms.assetid: 4ba0b75e-665b-4771-b04f-5bc3e90d83f0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209029"
 ---
 # <a name="message-validation-engine"></a><span data-ttu-id="e8bb4-102">消息验证引擎</span><span class="sxs-lookup"><span data-stu-id="e8bb4-102">Message Validation Engine</span></span>
 <span data-ttu-id="e8bb4-103">提供的最重要功能之一[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是完全验证 SWIFT 从发往 SWIFT 网络，或从 SWIFT （由贸易合作伙伴发送） 的网络接收的后端系统中收到的消息的功能。</span><span class="sxs-lookup"><span data-stu-id="e8bb4-103">One of the most important features provided by [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] is the ability to fully validate SWIFT messages received from back-end systems destined for the SWIFT network, or received from the SWIFT network (sent by trading partners).</span></span> <span data-ttu-id="e8bb4-104">验证出站 SWIFT 消息保证的消息符合 SWIFT 标准和 SWIFT 网络则不能拒绝消息。</span><span class="sxs-lookup"><span data-stu-id="e8bb4-104">Validating outbound SWIFT messages guarantees that the messages conform to SWIFT standards and that the SWIFT network will not reject the messages.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何创建托管环境的 BizTalk 服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何创建托管环境的 BizTalk 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - hosting environments, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [hosts], creating
 - creating, hosting environment
 ms.assetid: 6f335139-1121-45ff-88da-5c626b8fff97
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250373"
 ---
 # <a name="how-to-create-a-biztalk-server-hosting-environment"></a><span data-ttu-id="71ec6-102">如何创建 BizTalk 服务器宿主环境</span><span class="sxs-lookup"><span data-stu-id="71ec6-102">How to Create a BizTalk Server Hosting Environment</span></span>
 <span data-ttu-id="71ec6-103">在创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 宿主环境之前，请考虑以下建议：</span><span class="sxs-lookup"><span data-stu-id="71ec6-103">Before you create your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] hosting environment, consider the following recommendations:</span></span>  

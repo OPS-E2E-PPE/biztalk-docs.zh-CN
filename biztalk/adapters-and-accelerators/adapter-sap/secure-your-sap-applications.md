@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216293"
 ---
 # <a name="secure-your-sap-applications"></a><span data-ttu-id="8067a-102">保护你的 SAP 应用程序</span><span class="sxs-lookup"><span data-stu-id="8067a-102">Secure your SAP applications</span></span>
 <span data-ttu-id="8067a-103">SAP 系统可以包含敏感业务信息，例如客户帐户详细信息。</span><span class="sxs-lookup"><span data-stu-id="8067a-103">The SAP system can contain sensitive business information such as customer account details.</span></span> <span data-ttu-id="8067a-104">应用程序使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]访问和修改此信息是本地或分布式网络可能会无意中公开其能够访问未经授权的参与者，除非努力保护且安全的过程的数据传输。</span><span class="sxs-lookup"><span data-stu-id="8067a-104">Applications that use the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] to access and modify this information either locally or across a distributed network might inadvertently expose it to access by unauthorized actors, unless efforts are made to protect and secure the data during transmission.</span></span> <span data-ttu-id="8067a-105">数据保护和安全是通常认为按下列术语：</span><span class="sxs-lookup"><span data-stu-id="8067a-105">Data protection and security are usually thought of in the following terms:</span></span>  

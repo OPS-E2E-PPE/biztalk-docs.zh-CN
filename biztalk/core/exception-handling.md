@@ -1,14 +1,14 @@
 ---
-title: "异常处理 |Microsoft 文档"
-ms.custom: 
+title: 异常处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00a9125c-7c7c-4d2a-ae04-c923cd89683c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245925"
 ---
 # <a name="exception-handling"></a><span data-ttu-id="a02e5-102">异常处理</span><span class="sxs-lookup"><span data-stu-id="a02e5-102">Exception Handling</span></span>
 <span data-ttu-id="a02e5-103">**RuleEngine**类具有属性**CompensationHandlerInfo**，该子元素又具有两个属性： **CompensationHandler**和**UserData**.</span><span class="sxs-lookup"><span data-stu-id="a02e5-103">The **RuleEngine** class has the property **CompensationHandlerInfo**, which in turn has two properties: **CompensationHandler** and **UserData**.</span></span> <span data-ttu-id="a02e5-104">**CompensationHandler**属性属于类型**RuleEngineCompensationHandler**，和**UserData**属性属于类型**对象**.</span><span class="sxs-lookup"><span data-stu-id="a02e5-104">The **CompensationHandler** property is of type **RuleEngineCompensationHandler**, and the **UserData** property is of type **Object**.</span></span> <span data-ttu-id="a02e5-105">定义**RuleEngineCompensationHandler**如下：</span><span class="sxs-lookup"><span data-stu-id="a02e5-105">The definition for the **RuleEngineCompensationHandler** is as follows:</span></span>  

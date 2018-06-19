@@ -1,11 +1,11 @@
 ---
-title: "配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机 |Microsoft 文档"
-ms.custom: 
+title: 配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, hosts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - hosts
 - BizTalkServerIsolatedHost host
 ms.assetid: 17bc9f01-ff87-427d-8411-6a065814ba1e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208797"
 ---
 # <a name="configuring-the-biztalkapplicationserver-and-biztalkserverisolatedhost-hosts"></a><span data-ttu-id="d87e2-102">配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机</span><span class="sxs-lookup"><span data-stu-id="d87e2-102">Configuring the BizTalkApplicationServer and BizTalkServerIsolatedHost Hosts</span></span>
 <span data-ttu-id="d87e2-103">若要限制到 BizTalk 消息传送服务器的消息传送的 （发送和接收消息），你需要配置运行 MSMQT 发送和接收处理程序，仅在消息传递的服务器上运行的默认主机。</span><span class="sxs-lookup"><span data-stu-id="d87e2-103">To limit the messaging (sending and receiving messages) to the BizTalk Messaging servers, you need to configure the default hosts, which are running the MSMQT send and receive handlers, to run only on the messaging servers.</span></span>  

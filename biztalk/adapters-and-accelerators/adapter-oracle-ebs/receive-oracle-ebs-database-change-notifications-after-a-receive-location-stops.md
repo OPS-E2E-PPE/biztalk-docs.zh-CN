@@ -1,14 +1,14 @@
 ---
-title: "接收位置分解后接收 Oracle E-business Suite 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收位置分解后接收 Oracle E-business Suite 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12c42cd0-b46e-4c45-a67e-e1fb9c0e8a6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216133"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-after-a-receive-location-breakdown"></a><span data-ttu-id="b6b74-102">接收位置分解后接收 Oracle E-business Suite 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="b6b74-102">Receive Oracle E-Business Suite database change notifications after a receive location breakdown</span></span>
 <span data-ttu-id="b6b74-103">考虑具有 BizTalk 应用程序 ACCOUNTACTIVITY 表发生更改时接收数据库更改通知消息的其中一个方案。</span><span class="sxs-lookup"><span data-stu-id="b6b74-103">Consider a scenario where you have a BizTalk application that receives database change notification messages when changes are made to the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="b6b74-104">如果接收位置配置的一部分 BizTalk 应用程序将分解，同时记录添加到 ACCOUNTACTIVITY 表，你将无法收到通知最近添加的记录。</span><span class="sxs-lookup"><span data-stu-id="b6b74-104">If the receive location configured as part of the BizTalk application breaks down, and simultaneously records are added into the ACCOUNTACTIVITY table, you will not receive notifications for the recently added records.</span></span> <span data-ttu-id="b6b74-105">你还不知道时接收位置重新变为可用。</span><span class="sxs-lookup"><span data-stu-id="b6b74-105">You will also not know when the receive location is available again.</span></span> <span data-ttu-id="b6b74-106">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开的绑定属性， **NotifyOnListenerStart**，可以配置为接收到通知，接收位置已恢复。</span><span class="sxs-lookup"><span data-stu-id="b6b74-106">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes a binding property, **NotifyOnListenerStart**, that you can configure to get a notification that the receive location has recovered.</span></span> <span data-ttu-id="b6b74-107">你可以指定以下值**NotifyOnListenerStart**绑定属性：</span><span class="sxs-lookup"><span data-stu-id="b6b74-107">You can specify the following values for the **NotifyOnListenerStart** binding property:</span></span>  

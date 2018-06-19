@@ -1,14 +1,14 @@
 ---
-title: "方案 1： 显示使用业务数据列表 web 部件的数据 |Microsoft 文档"
-ms.custom: 
+title: 方案 1： 显示使用业务数据列表 web 部件的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3831814-8b70-4352-b22f-cebd08750ef5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217429"
 ---
 # <a name="scenario-1-display-data-using-business-data-list-web-part"></a><span data-ttu-id="46d7b-102">方案 1： 使用业务数据列表 web 部件的显示数据</span><span class="sxs-lookup"><span data-stu-id="46d7b-102">Scenario 1: Display data using Business Data List web part</span></span>
 <span data-ttu-id="46d7b-103">我们将使用**业务数据列表**Web 部件**Finder**方法实例。</span><span class="sxs-lookup"><span data-stu-id="46d7b-103">We will use the **Business Data List** Web Part for the **Finder** method instance.</span></span> <span data-ttu-id="46d7b-104">此 Web 部件，可指定要从 Oracle E-business Suite 中检索员工的列表的搜索表达式。</span><span class="sxs-lookup"><span data-stu-id="46d7b-104">This Web Part enables you to specify a search expression to retrieve a list of employees from Oracle E-Business Suite.</span></span> <span data-ttu-id="46d7b-105">对于本教程中，这被称为显示员工 Web 部件。</span><span class="sxs-lookup"><span data-stu-id="46d7b-105">For this tutorial, this is called the Display Employees Web Part.</span></span> <span data-ttu-id="46d7b-106">本部分提供了创建此 Web 部件的说明。</span><span class="sxs-lookup"><span data-stu-id="46d7b-106">This section provides instructions to create this Web Part.</span></span> <span data-ttu-id="46d7b-107">有关创建 Web 部件的详细信息，请参阅"自定义业务数据列表、 Web 部件和站点"在[http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131)。</span><span class="sxs-lookup"><span data-stu-id="46d7b-107">For more information about creating Web Parts, see "Customize business data lists, Web Parts, and sites" at [http://go.microsoft.com/fwlink/?LinkId=104131](http://go.microsoft.com/fwlink/?LinkId=104131).</span></span>  

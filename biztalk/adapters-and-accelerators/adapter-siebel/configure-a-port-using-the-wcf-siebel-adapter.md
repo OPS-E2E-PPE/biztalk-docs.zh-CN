@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 WCF Siebel 适配器 |Microsoft 文档"
-description: "创建要在 BizTalk Server 中使用 Siebel eBusiness 应用程序适配器的 WCF Siebel 发送端口"
-ms.custom: 
+title: 配置端口使用 WCF Siebel 适配器 |Microsoft 文档
+description: 创建要在 BizTalk Server 中使用 Siebel eBusiness 应用程序适配器的 WCF Siebel 发送端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6314104-c742-440c-b530-b5a82295353a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222437"
 ---
 # <a name="configure-a-port-using-the-wcf-siebel-adapter"></a><span data-ttu-id="fed4e-103">配置使用 WCF Siebel 适配器的端口</span><span class="sxs-lookup"><span data-stu-id="fed4e-103">Configure a port using the WCF-Siebel adapter</span></span>
 <span data-ttu-id="fed4e-104">如何配置 WCF Siebel 发送端口，以执行 Siebel 系统使用的出站操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fed4e-104">How to configure WCF-Siebel send ports to perform outbound operations on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  

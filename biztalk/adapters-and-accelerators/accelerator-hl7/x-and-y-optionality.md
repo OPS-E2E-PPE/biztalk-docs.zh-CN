@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SegmentDataElements table
 - segments, X optionality
 ms.assetid: 8a59b407-95a2-45ba-a8d6-db4154c91d7b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22207213"
 ---
 # <a name="39x39-and-39y39-optionality"></a><span data-ttu-id="36ef7-102">&#39;X&#39;和&#39;Y&#39; Optionality</span><span class="sxs-lookup"><span data-stu-id="36ef7-102">&#39;X&#39; and &#39;Y&#39; Optionality</span></span>
 <span data-ttu-id="36ef7-103">HL7 访问数据库中的 SegmentDataElements 表包含多个已设置为数据项 （字段）**请求/Opt = X**，这意味着 HL7 标准不将此字段关联与此触发器事件，如中所示下表。</span><span class="sxs-lookup"><span data-stu-id="36ef7-103">The SegmentDataElements table in the HL7 Access database contains several Data Items (fields) that have been set as **Req/Opt = X**, meaning that the HL7 standard does not associate this field with this trigger event, as shown in the following table.</span></span>  

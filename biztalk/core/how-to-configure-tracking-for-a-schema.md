@@ -1,11 +1,11 @@
 ---
-title: "如何配置跟踪架构 |Microsoft 文档"
-ms.custom: 
+title: 如何配置跟踪架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, configuring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - tracking, configuring
 - tracking, schemas
 ms.assetid: b5f69c98-8824-43b1-8f21-d84b60ac5431
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248045"
 ---
 # <a name="how-to-configure-tracking-for-a-schema"></a><span data-ttu-id="48f77-102">如何为架构配置跟踪</span><span class="sxs-lookup"><span data-stu-id="48f77-102">How to Configure Tracking for a Schema</span></span>
 <span data-ttu-id="48f77-103">本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台为架构配置跟踪。</span><span class="sxs-lookup"><span data-stu-id="48f77-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to configure tracking for a schema.</span></span> <span data-ttu-id="48f77-104">若要配置跟踪，请指定要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台的“组中心”页的查询视图中查看的消息属性。</span><span class="sxs-lookup"><span data-stu-id="48f77-104">To configure tracking, you specify the properties of the messages that you want to view in the query views of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console Group Hub page.</span></span>  

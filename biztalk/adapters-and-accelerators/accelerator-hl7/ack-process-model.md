@@ -1,17 +1,17 @@
 ---
-title: "ACK 进程模型 |Microsoft 文档"
-ms.custom: 
+title: ACK 进程模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - acknowledgements, process flow
 - ACK process model
 ms.assetid: 3c6a5eef-57ef-41f7-9782-e1cbc4dd78e1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205917"
 ---
 # <a name="ack-process-model"></a><span data-ttu-id="d0435-102">ACK 进程模型</span><span class="sxs-lookup"><span data-stu-id="d0435-102">ACK Process Model</span></span>
 <span data-ttu-id="d0435-103">下面的步骤序列描述的确认 (ACK) 进程模型：</span><span class="sxs-lookup"><span data-stu-id="d0435-103">The following sequence of steps describes the acknowledgment (ACK) process model:</span></span>  

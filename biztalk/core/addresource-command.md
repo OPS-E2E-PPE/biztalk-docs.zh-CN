@@ -1,14 +1,14 @@
 ---
-title: "AddResource 命令 |Microsoft 文档"
-ms.custom: 
+title: AddResource 命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b09bd8d-5e07-4443-b626-60401a158540
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964443"
 ---
 # <a name="addresource-command"></a><span data-ttu-id="98280-102">AddResource 命令</span><span class="sxs-lookup"><span data-stu-id="98280-102">AddResource Command</span></span>
 <span data-ttu-id="98280-103">本部分中主题提供关于 AddResource 命令的参数的参考信息。</span><span class="sxs-lookup"><span data-stu-id="98280-103">The topics in this section provide reference information about the parameters of the AddResource command.</span></span> <span data-ttu-id="98280-104">使用此命令使用的参数因你想要添加的项目的类型。</span><span class="sxs-lookup"><span data-stu-id="98280-104">The parameters that you use with this command vary according to the type of artifact that you want to add.</span></span> <span data-ttu-id="98280-105">若要获取的项目类型的完整列表，请使用**默认应用**命令时中, 所述[默认应用命令](../core/listtypes-command.md)。</span><span class="sxs-lookup"><span data-stu-id="98280-105">To obtain complete lists of artifact types, use the **ListTypes** command, as described in [ListTypes Command](../core/listtypes-command.md).</span></span>  

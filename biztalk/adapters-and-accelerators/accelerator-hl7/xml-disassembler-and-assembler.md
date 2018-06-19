@@ -1,17 +1,17 @@
 ---
-title: "XML 反汇编程序和汇编程序 |Microsoft 文档"
-ms.custom: 
+title: XML 反汇编程序和汇编程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disassembler, XML
 - assembler, XML
 ms.assetid: 242a7a96-2342-4ab5-9d3f-1acbcc7ffd14
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206645"
 ---
 # <a name="xml-disassembler-and-assembler"></a><span data-ttu-id="d293a-102">XML 反汇编程序和汇编程序</span><span class="sxs-lookup"><span data-stu-id="d293a-102">XML Disassembler and Assembler</span></span>
 <span data-ttu-id="d293a-103">XML 反汇编程序和汇编程序确保[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 不仅支持 HL7 编码消息，但也支持传入和/或传出的 XML 消息。</span><span class="sxs-lookup"><span data-stu-id="d293a-103">The XML disassembler and assembler ensure that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) not only supports HL7-encoded messages, but also supports incoming and/or outgoing XML messages.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何生成实例消息 |Microsoft 文档"
-ms.custom: 
+title: 如何生成实例消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff74c67a-7e73-4153-9ec4-e6e50464ee92
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254397"
 ---
 # <a name="how-to-generate-instance-messages"></a><span data-ttu-id="f21c1-102">如何生成实例消息</span><span class="sxs-lookup"><span data-stu-id="f21c1-102">How to Generate Instance Messages</span></span>
 <span data-ttu-id="f21c1-103">构造架构之后，有一种检查工作的方法是从该架构生成一个实例消息示例。</span><span class="sxs-lookup"><span data-stu-id="f21c1-103">After you have constructed a schema, one way to check your work is to generate a sample instance message from the schema.</span></span> <span data-ttu-id="f21c1-104">在很多方法中，查看实例消息都比查看架构树或架构的 XML 架构定义 (XSD) 语言表示形式直接的多。</span><span class="sxs-lookup"><span data-stu-id="f21c1-104">In many ways, looking at an instance message is much more straightforward than looking at either the schema tree or the XML Schema definition (XSD) language representation of the schema.</span></span> <span data-ttu-id="f21c1-105">这是因为架构需要描述相应实例消息的所有可能变体，而特定的实例消息只需通过使用由架构指定的格式来传送某些数据。</span><span class="sxs-lookup"><span data-stu-id="f21c1-105">This is because the schema needs to describe all of the possible variations of the corresponding instance messages, and a specific instance message just needs to convey some data by using the format specified by the schema.</span></span> <span data-ttu-id="f21c1-106">生成的实例消息是一个示例，可能无法显示由相应架构定义的所有结构。</span><span class="sxs-lookup"><span data-stu-id="f21c1-106">The generated instance message is a sample and may not show all of the structures defined by the corresponding schema.</span></span>  

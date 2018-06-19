@@ -1,14 +1,14 @@
 ---
-title: "避免瓶颈的准则 |Microsoft 文档"
-ms.custom: 
+title: 避免瓶颈的准则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 640ab399-b22d-4f71-b41d-ea8d778e064a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246509"
 ---
 # <a name="guidelines-for-avoiding-bottlenecks"></a><span data-ttu-id="ce078-102">避免瓶颈的准则</span><span class="sxs-lookup"><span data-stu-id="ce078-102">Guidelines for Avoiding Bottlenecks</span></span>
 <span data-ttu-id="ce078-103">虽然 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的默认设置可为许多硬件和软件配置提供最佳性能，但在某些情况下修改这些设置或部署配置可能更为有利。</span><span class="sxs-lookup"><span data-stu-id="ce078-103">While the default settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provide optimal performance for many hardware and software configurations, in some scenarios it may be beneficial to modify the settings or deployment configuration.</span></span> <span data-ttu-id="ce078-104">配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，请参考下列性能指南：</span><span class="sxs-lookup"><span data-stu-id="ce078-104">When configuring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consider the following performance guidelines:</span></span>  

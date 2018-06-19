@@ -1,18 +1,18 @@
 ---
-title: "段通用架构 |Microsoft 文档"
-ms.custom: 
+title: 段通用架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, common schemas
 - 2.X schemas, segments
 - common schemas
 ms.assetid: 6f66bce9-ead8-46c1-a66c-830750adc73b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960691"
 ---
 # <a name="segments-common-schemas"></a><span data-ttu-id="3ed17-102">段通用架构</span><span class="sxs-lookup"><span data-stu-id="3ed17-102">Segments Common Schemas</span></span>
 <span data-ttu-id="3ed17-103">**Segments_\<*版本*\>.xsd**文件包括 datatypes_\<*版本*\>.xsd 和包含与 HL7 版本相关的所有线段的定义。</span><span class="sxs-lookup"><span data-stu-id="3ed17-103">The **segments_\<*version*\>.xsd** file includes datatypes_\<*version*\>.xsd and contains the definition of all the segments related to the HL7 version.</span></span> <span data-ttu-id="3ed17-104">每个消息架构使用 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="3ed17-104">Each message schema uses segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="3ed17-105">HL7 消息定义的每个子文件夹下，包括 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="3ed17-105">HL7 message definitions are under each subfolder and include segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="3ed17-106">SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*\>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。</span><span class="sxs-lookup"><span data-stu-id="3ed17-106">The SegmentDataElements and DataElements Access database tables generate the segments_\<*version*\>.xsd file, which includes a pointer to the Fields.xsd schema file for all data types.</span></span> <span data-ttu-id="3ed17-107">架构文件名称格式为：</span><span class="sxs-lookup"><span data-stu-id="3ed17-107">The schema file name format is:</span></span>  

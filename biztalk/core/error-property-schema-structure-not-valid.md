@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240309"
 ---
 # <a name="error---property-schema-structure-not-valid"></a><span data-ttu-id="3d539-102">错误-不是有效的属性架构结构</span><span class="sxs-lookup"><span data-stu-id="3d539-102">Error - Property Schema Structure Not Valid</span></span>
 <span data-ttu-id="3d539-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="3d539-103">**Error Code**</span></span>  

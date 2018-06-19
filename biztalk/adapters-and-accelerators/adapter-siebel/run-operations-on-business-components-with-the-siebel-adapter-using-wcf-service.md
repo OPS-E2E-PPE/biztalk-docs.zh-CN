@@ -1,11 +1,11 @@
 ---
-title: "使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations on business components
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business components, performing operations by using the WCF service model
 - performing operations, using the proxy
 ms.assetid: 7a5fdc95-6159-4f43-aac5-4e2f84e9138b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222221"
 ---
 # <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a><span data-ttu-id="19d1a-102">使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作</span><span class="sxs-lookup"><span data-stu-id="19d1a-102">Run Operations on Business Components with the Siebel adapter using the WCF Service Model</span></span>
 <span data-ttu-id="19d1a-103">你可以创建面向 Siebel 在业务组件的 WCF 客户端。</span><span class="sxs-lookup"><span data-stu-id="19d1a-103">You can create a WCF client that targets a Siebel business component.</span></span> <span data-ttu-id="19d1a-104">WCF 客户端然后可以用于 Siebel 系统上执行插入、 更新、 查询、 删除、 关联、 取消关联和在业务组件上的子记录的查询操作。</span><span class="sxs-lookup"><span data-stu-id="19d1a-104">You can then use the WCF client to perform Insert, Update, Query, Delete, Associate, Dissociate, and child record query operations on the business component on the Siebel system.</span></span> <span data-ttu-id="19d1a-105">Siebel 业务对象下的业务对象节点中加以表示[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="19d1a-105">Siebel business objects are surfaced under the Business Objects node in the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="19d1a-106">在对应于该对象的节点下中加以表示业务组件构成每个业务对象。</span><span class="sxs-lookup"><span data-stu-id="19d1a-106">The business components that compose each business object are surfaced under the node corresponding to that object.</span></span> <span data-ttu-id="19d1a-107">你可以按照中的步骤[与 Siebel 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)来生成 WCF 客户端程序针对特定操作的业务组件，并使用客户端以调用这些操作对业务组件。</span><span class="sxs-lookup"><span data-stu-id="19d1a-107">You can follow the steps in [Overview of the WCF Service Model with the Siebel Adapter](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md) to generate a WCF client for a business component that targets specific operations and use the client to invoke these operations on the business component.</span></span>  

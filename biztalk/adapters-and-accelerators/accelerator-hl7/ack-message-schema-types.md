@@ -1,18 +1,18 @@
 ---
-title: "ACK 消息架构类型 |Microsoft 文档"
-ms.custom: 
+title: ACK 消息架构类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, ACK schemas
 - acknowledgements, ACK schema types
 - ACK messages
 ms.assetid: da6981a0-a70a-481e-8db4-4a6851f205f1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960955"
 ---
 # <a name="ack-message-schema-types"></a><span data-ttu-id="c9912-102">ACK 消息架构类型</span><span class="sxs-lookup"><span data-stu-id="c9912-102">ACK Message Schema Types</span></span>
 <span data-ttu-id="c9912-103">确认消息架构有两种形式：</span><span class="sxs-lookup"><span data-stu-id="c9912-103">Acknowledgment message schemas come in two forms:</span></span>  

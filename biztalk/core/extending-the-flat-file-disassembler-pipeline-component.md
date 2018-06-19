@@ -1,18 +1,18 @@
 ---
-title: "扩展平面文件反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: 扩展平面文件反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, code sample
 - pipeline components [custom], flat file documents
 - pipeline components [custom], disassembling
 ms.assetid: 4bcc746a-696a-4e5c-be01-f8409fce21fa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246229"
 ---
 # <a name="extending-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="9420c-102">扩展平面文件反汇编程序管道组件</span><span class="sxs-lookup"><span data-stu-id="9420c-102">Extending the Flat File Disassembler Pipeline Component</span></span>
 <span data-ttu-id="9420c-103">下面的示例演示如何创建自定义拆装器以便解析用 UTF-7 编码的平面文件文档。</span><span class="sxs-lookup"><span data-stu-id="9420c-103">The following sample illustrates how to create a custom disassembler to parse flat file documents that are UTF-7 encoded.</span></span> <span data-ttu-id="9420c-104">若要处理 utf-7 文档，该组件，继承自**FFDasmComp**类，然后并重写其**GetDataReader**方法。</span><span class="sxs-lookup"><span data-stu-id="9420c-104">To process UTF-7 documents, the component inherits from the **FFDasmComp** class and then overrides its **GetDataReader** method.</span></span>  

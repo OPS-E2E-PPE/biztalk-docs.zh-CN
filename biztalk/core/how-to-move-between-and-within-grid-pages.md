@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254317"
 ---
 # <a name="how-to-move-between-and-within-grid-pages"></a><span data-ttu-id="cfcbe-102">如何移动之间和在网格的页内</span><span class="sxs-lookup"><span data-stu-id="cfcbe-102">How to Move Between and Within Grid Pages</span></span>
 <span data-ttu-id="cfcbe-103">如果映射很复杂，很可能无法在单个网格页中同时看到所有链接和 functoid。</span><span class="sxs-lookup"><span data-stu-id="cfcbe-103">If your map is complex, it is very likely that not all links and functoids are visible within a single grid page at the same time.</span></span> <span data-ttu-id="cfcbe-104">这意味着您需要能够在网格页内滚动。</span><span class="sxs-lookup"><span data-stu-id="cfcbe-104">This means that you need to be able to scroll within a grid page.</span></span> <span data-ttu-id="cfcbe-105">如果您的映射需要多个网格页，则您需要能够在网格页之间移动。</span><span class="sxs-lookup"><span data-stu-id="cfcbe-105">And, if your map warrants multiple grid pages, you will need to be able to move between grid pages.</span></span> <span data-ttu-id="cfcbe-106">本主题提供有关这些操作的分步说明。</span><span class="sxs-lookup"><span data-stu-id="cfcbe-106">This topic provides step-by-step instructions for these operations.</span></span>  

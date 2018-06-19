@@ -1,18 +1,18 @@
 ---
-title: "管理 MessageBox 数据库 |Microsoft 文档"
-ms.custom: 
+title: 管理 MessageBox 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [MessageBox database], about managing MessageBox database
 - managing [MessageBox database]
 - MessageBox database, managing
 ms.assetid: 9675b5d5-7a69-468d-be42-34a72cd6e5c2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262141"
 ---
 # <a name="managing-messagebox-databases"></a><span data-ttu-id="84fd4-102">管理 MessageBox 数据库</span><span class="sxs-lookup"><span data-stu-id="84fd4-102">Managing MessageBox Databases</span></span>
 <span data-ttu-id="84fd4-103">MessageBox 数据库具有三种基本功能。</span><span class="sxs-lookup"><span data-stu-id="84fd4-103">The MessageBox database has three essential functions.</span></span> <span data-ttu-id="84fd4-104">它可存储订阅和跟踪信息，还可将消息送达与订阅相匹配的服务。</span><span class="sxs-lookup"><span data-stu-id="84fd4-104">It stores subscriptions and tracking information and it delivers the messages to the services that match the subscriptions.</span></span> <span data-ttu-id="84fd4-105">MessageBox 数据库是一种为每台 BizTalk 主机存储队列和状态表的主机平台。</span><span class="sxs-lookup"><span data-stu-id="84fd4-105">The MessageBox database is a host platform that stores the queues and state tables for each BizTalk Host.</span></span> <span data-ttu-id="84fd4-106">MessageBox 数据库还可存储消息和消息属性。</span><span class="sxs-lookup"><span data-stu-id="84fd4-106">The MessageBox database also stores messages and message properties.</span></span>  

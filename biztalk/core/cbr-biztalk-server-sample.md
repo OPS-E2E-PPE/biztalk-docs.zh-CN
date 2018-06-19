@@ -1,14 +1,14 @@
 ---
-title: "CBR （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: CBR （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add16683-4090-4854-8d6e-923b58937e9d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967467"
 ---
 # <a name="cbr-biztalk-server-sample"></a><span data-ttu-id="f14aa-102">CBR（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="f14aa-102">CBR (BizTalk Server Sample)</span></span>
 <span data-ttu-id="f14aa-103">CBR 示例演示如何使用**ExplorerOM**要添加和配置新的管理对象发送用于基于内容的路由的 BizTalk 消息的端口。</span><span class="sxs-lookup"><span data-stu-id="f14aa-103">The CBR sample demonstrates using the **ExplorerOM** administrative objects to add and configure new send ports for content-based routing of BizTalk messages.</span></span>  
