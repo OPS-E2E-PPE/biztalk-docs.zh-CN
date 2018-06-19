@@ -1,17 +1,17 @@
 ---
-title: "编程 Guide1 |Microsoft 文档"
-ms.custom: 
+title: 编程 Guide1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, programming guide
 - programming guide
 ms.assetid: fb2d5e3b-1907-49c4-806d-a2604c702322
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004678"
 ---
 # <a name="programming-guide"></a>编程指南
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]编程指南为编写代码与 BTAHL7 的开发人员说明了概念和过程。 将本指南中结合使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]文档。  

@@ -1,14 +1,14 @@
 ---
-title: "（适用于 Azure) 中的步骤 2： 创建一个 EDI 协议 |Microsoft 文档"
-ms.custom: 
+title: （适用于 Azure) 中的步骤 2： 创建一个 EDI 协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a8003697-4955-45c0-ba0b-e7c293a050a2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280069"
 ---
 # <a name="step-2-for-azure-create-an-edi-agreement"></a>（适用于 Azure) 中的步骤 2： 创建一个 EDI 协议
 在本主题中，你将使用 [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] 中的 Azure BizTalk 门户创建合作伙伴。 你还将在两个合作伙伴（Northwind 和 Contoso）之间创建协议，以处理 Contoso 发送给 Northwind 的 X12 销售订单消息。  
@@ -43,10 +44,10 @@ ms.lasthandoff: 09/20/2017
     |||  
     |-|-|  
     |**字段**|**Description**|  
-    |Name|输入协议的名称。 对于本教程，将名称指定为`DemoAgreement`。<br /><br /> **注意：**这是必填字段。 协议的名称必须唯一。|  
+    |Name|输入协议的名称。 对于本教程，将名称指定为`DemoAgreement`。<br /><br /> **注意：** 这是必填字段。 协议的名称必须唯一。|  
     |Description|输入协议的注释或说明。|  
-    |合作伙伴 1 配置文件（托管）|为协议选择托管合作伙伴。 托管合作伙伴是由服务提供商托管的合作伙伴，在协议部署期间会为该合作伙伴部署管道。 在未将企业合作伙伴标记为托管合作伙伴时，通常会将服务提供商托管的合作伙伴配置为托管合作伙伴。<br /><br /> **注意：**对于本教程中，托管的合作伙伴是**Northwind**。<br /><br /> **注意：**的默认配置文件将显示在配置文件字段。 选择已为合作伙伴配置的所需配置文件。|  
-    |合作伙伴 2 配置文件|为协议选择合作伙伴（不是托管合作伙伴）。<br /><br /> **注意：**的默认配置文件将显示在配置文件字段。 选择已为合作伙伴配置的所需配置文件。|  
+    |合作伙伴 1 配置文件（托管）|为协议选择托管合作伙伴。 托管合作伙伴是由服务提供商托管的合作伙伴，在协议部署期间会为该合作伙伴部署管道。 在未将企业合作伙伴标记为托管合作伙伴时，通常会将服务提供商托管的合作伙伴配置为托管合作伙伴。<br /><br /> **注意：** 对于本教程中，托管的合作伙伴是**Northwind**。<br /><br /> **注意：** 的默认配置文件将显示在配置文件字段。 选择已为合作伙伴配置的所需配置文件。|  
+    |合作伙伴 2 配置文件|为协议选择合作伙伴（不是托管合作伙伴）。<br /><br /> **注意：** 的默认配置文件将显示在配置文件字段。 选择已为合作伙伴配置的所需配置文件。|  
   
      **标识**  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  上**转换**页上，上载你在中创建转换[创建 EDI 项目中的转换](../core/step-1-for-azure-create-the-edi-project.md#BKMK_CreateTrfm)。  
   
-         下**选择你想要作为此协议的一部分执行的映射**，选择**/X12_00401_840.xsd**为**架构**和**/EDI840TOSALESORDER。TRFM**为**转换文件名**。  
+         下**选择你想要作为此协议的一部分执行的映射**，选择 **/X12_00401_840.xsd**为**架构**和 **/EDI840TOSALESORDER。TRFM**为**转换文件名**。  
   
     4.  上**路由**页上，选择**路由到服务总线队列**并提供消息发送到队列的相对地址。 对于本教程中，指定的相对地址与`queueordersedi`以便完整的 URL 是`https://<namespace>.servicebus.appfabriclabs.com/queueordersedi`。  
   

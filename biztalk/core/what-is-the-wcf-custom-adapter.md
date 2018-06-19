@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288893"
 ---
 # <a name="what-is-the-wcf-custom-adapter"></a>什么是 WCF-Custom 适配器？
 WCF-Custom 适配器用于在 BizTalk Server 中启用 WCF 扩展性组件。 该适配器为 WCF 框架赋予了完整的灵活性。 用户使用此适配器可以为接收位置和发送端口选择和配置 WCF 绑定。 它还允许用户设置终结点行为和安全设置。  

@@ -1,11 +1,11 @@
 ---
-title: "安装和消息传送的服务器上配置 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 安装和消息传送的服务器上配置 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, installing on BizTalk Messaging servers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Messaging servers, configuring BizTalk Server
 - BizTalk Messaging servers, installing BizTalk Server
 ms.assetid: 8aaa1b97-90f0-4317-9403-ac8b5b9f80e3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004302"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-messaging-server"></a>安装和消息传送的服务器上配置 BizTalk Server
 本部分介绍如何安装和配置 BizTalk Server 用于连接到 SWIFT 网络用作消息的服务器。  

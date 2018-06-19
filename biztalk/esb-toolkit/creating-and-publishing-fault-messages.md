@@ -1,14 +1,14 @@
 ---
-title: "创建并发布错误消息 |Microsoft 文档"
-ms.custom: 
+title: 创建并发布错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc7ba1d9-b647-4cba-a3dc-4400505ff51f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290677"
 ---
 # <a name="creating-and-publishing-fault-messages"></a>创建并发布错误消息
 为了帮助你了解如何使用异常管理框架的功能来管理例外，本部分提供了基于向 ESB 应用程序提交一条消息的一个常见方案。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  ESB 异常机制自动序列化当前**异常**对象写入错误消息。  
   
-6.  （可选） 中的异常处理代码可以将当前的业务流程消息添加到 ESB 错误消息使用**AddMessage （faultMsg，messageToAdd）**方法。 此方法序列化和仍然存在消息，包括所有的上下文属性，如下面的代码示例中所示。  
+6.  （可选） 中的异常处理代码可以将当前的业务流程消息添加到 ESB 错误消息使用**AddMessage （faultMsg，messageToAdd）** 方法。 此方法序列化和仍然存在消息，包括所有的上下文属性，如下面的代码示例中所示。  
   
     ```csharp  
     // Add other current orchestration messages to the fault message.  

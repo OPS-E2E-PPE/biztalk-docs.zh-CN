@@ -1,14 +1,14 @@
 ---
-title: "使用脚本来部署应用程序 |Microsoft 文档"
-ms.custom: 
+title: 使用脚本来部署应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e683c5f-7576-4382-9952-d577cd00186c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009670"
 ---
 # <a name="using-scripts-to-deploy-applications"></a>使用脚本来部署应用程序
 您应使用脚本来部署 BizTalk 应用程序，在可能的情况。 脚本在部署过程中减少人为错误的风险。 你应记录中深度你部署过程。 你应该记录你不具有非常详细步骤编写脚本的任何内容。 这包括记录对外部系统和非 Microsoft 组件部署任何更改。  

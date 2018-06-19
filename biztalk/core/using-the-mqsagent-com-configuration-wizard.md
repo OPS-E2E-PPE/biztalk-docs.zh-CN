@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010430"
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>使用 MQSAgent COM + 配置向导
 使用 MQSAgent COM+ 配置向导，可配置适配器的 COM+ 应用程序（MQSeries 组件）部分，即 MQSAgent。 通过此向导可设置该组件的应用程序标识、角色名称和角色中包含的用户。 使用 MQSAgent COM + 配置向导创建 MQSAgent COM + 组件的名称是**MQSAgent2**。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 12/01/2017
   
     -   展开**组件**。  
   
-    -   右键单击**MQSAgent2.MQSAgent.1**组件，并单击**移动**以显示**移动组件 (s)**对话框。  
+    -   右键单击**MQSAgent2.MQSAgent.1**组件，并单击**移动**以显示**移动组件 (s)** 对话框。  
   
     -   选择**MQSAgent2RunTime**下**请选择一个目标**单击**确定**。  
   

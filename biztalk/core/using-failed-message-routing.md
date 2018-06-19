@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289661"
 ---
 # <a name="using-failed-message-routing"></a>使用失败消息路由
 使用错误处理功能，设计者可以指定对消息传送失败进行自动处理，以此作为将失败消息放在挂起队列中的传统（现在是默认）行为的替换选择。 此自动处理方式会将错误消息路由到任何订阅路由目标（例如发送端口或业务流程）。 错误消息是原始消息的克隆，其中以前升级的所有属性将降级，与特定消息传送失败相关的所选属性将升级到消息上下文。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/20/2017
 |FailureCode|System.String|是|错误代码。 十六进制值，在 BizTalk Server 管理控制台中报告该值。|  
 |FailureCategory|System.Int32|是|不使用此属性。 未定义其值。|  
 |说明|System.String|否|错误说明。 与写入应用程序事件日志中的内容相同的诊断文本，提供有关此消息传送失败的信息。|  
-|MessageType|System.String|是|失败消息的消息类型，如果消息类型不确定则为空。<br /><br /> BizTalk Server 使用消息类型将消息与其 XML 架构相关联。 消息类型通过连接架构命名空间和架构根节点形成：http://mynamespace#rootnode。 **注意：**失败之前，将确定其消息类型不具有此属性的消息设置。|  
+|MessageType|System.String|是|失败消息的消息类型，如果消息类型不确定则为空。<br /><br /> BizTalk Server 使用消息类型将消息与其 XML 架构相关联。 消息类型通过连接架构命名空间和架构根节点形成：http://mynamespace#rootnode。 **注意：** 失败之前，将确定其消息类型不具有此属性的消息设置。|  
 |ReceivePortName|System.String|如果失败发生在入站处理期间（在接收端口中），则为“已升级” 。<br /><br /> 如果在发生端口发生失败，则为“未升级” 。|发生失败的接收端口的名称。|  
 |InboundTransportLocation|System.String|如果失败发生在入站处理期间（在接收端口中），则为“已升级” 。<br /><br /> 如果在发生端口发生失败，则为“未升级” 。|发生失败的接收位置的 URI。|  
 |SendPortName|System.String|如果失败发生在出站处理期间（在发送端口中），则为“已升级” 。<br /><br /> 如果失败发生在接收端口中，则为“未升级” 。|发生失败的发送端口的名称。|  

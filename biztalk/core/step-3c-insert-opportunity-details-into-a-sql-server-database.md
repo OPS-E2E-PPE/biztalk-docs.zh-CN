@@ -1,14 +1,14 @@
 ---
-title: "步骤 3c: SQL Server 数据库中插入机会详细信息 |Microsoft 文档"
-ms.custom: 
+title: '步骤 3c: SQL Server 数据库中插入机会详细信息 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f6f9bbe-6f25-4393-8f92-aeeba9736acf
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280085"
 ---
 # <a name="step-3c-insert-opportunity-details-into-a-sql-server-database"></a>步骤 3c: SQL Server 数据库中插入机会详细信息
 迄今，我们已构建用于将查询发送到 Salesforce 并接收响应的业务流程。 在此部分中，我们将更新该业务流程将响应来自 Salesforce 到**OrderDetails**在本地 SQL Server 数据库中，表**订单**。 为此，我们将执行以下广泛的步骤：  

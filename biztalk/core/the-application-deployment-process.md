@@ -1,17 +1,17 @@
 ---
-title: "应用程序部署过程 |Microsoft 文档"
-ms.custom: 
+title: 应用程序部署过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, deploying
 - deploying [applications], how to
 ms.assetid: 29486c37-6aa7-46fd-a457-916fd235f448
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279733"
 ---
 # <a name="the-application-deployment-process"></a>应用程序部署过程
 下图说明了在部署 BizTalk 应用程序时涉及的一般步骤。 有关所涉及的应用程序部署开发、 测试、 过渡和生产阶段的任务的详细信息，请参阅[应用程序部署任务](../core/application-deployment-tasks.md)。  

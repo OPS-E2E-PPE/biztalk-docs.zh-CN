@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0841c52a-7b15-45f8-9900-f5c9e3abd90b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 124c077d7a15a4938f94239518ad02c8268074a4
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250993"
 ---
 # <a name="how-to-back-up-the-master-secret"></a>如何备份主密钥
 您可以将主密钥服务器中的主密钥备份到 NTFS 文件系统或可移动媒体（如软盘）上。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/28/2018
   
      默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
   
-4.  类型`ssoconfig –backupsecret <backup file>`，其中*\<备份文件 >*是路径和其中主密钥将备份，例如，文件的名称`A:\ssobackup.bak`。  
+4.  类型`ssoconfig –backupsecret <backup file>`，其中*\<备份文件 >* 是路径和其中主密钥将备份，例如，文件的名称`A:\ssobackup.bak`。  
   
 5.  提供一个密码来帮助保护此文件。  
   

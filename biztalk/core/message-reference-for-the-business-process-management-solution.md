@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975355"
 ---
 # <a name="message-reference-for-the-business-process-management-solution"></a>业务流程管理解决方案的消息引用
 本部分列出了解决方案中每个业务流程使用的消息和消息类型。  

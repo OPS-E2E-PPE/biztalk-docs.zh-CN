@@ -1,11 +1,11 @@
 ---
-title: "业务流程形状 |Microsoft 文档"
-ms.custom: 
+title: 业务流程形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Delay shape [Orchestration Designer]
@@ -36,7 +36,7 @@ helpviewer_keywords:
 - Orchestration Designer, shapes
 - Insufficient Configuration Smart Tag [Orchestration Designer]
 ms.assetid: a1d03baa-a267-499d-94fc-700b3e959458
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -45,6 +45,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264293"
 ---
 # <a name="orchestration-shapes"></a>业务流程形状
 业务流程设计器是用于创建业务流程的可视工具。 它提供了一些形状，可放在设计图面上作为底层操作的可视表示形式，这些形状可以帮助你有效地设计和实施业务流程。  

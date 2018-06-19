@@ -1,14 +1,14 @@
 ---
-title: "如何： 转换消息和使用请求-响应消息交换模式的服务终结点的路由 |Microsoft 文档"
-ms.custom: 
+title: 如何： 转换消息和使用请求-响应消息交换模式的服务终结点的路由 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b1e656fb-6c5f-4b2b-a1b6-4c812b78ee22
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010350"
 ---
 # <a name="how-to-transform-a-message-and-route-to-a-service-endpoint-using-a-request-response-message-exchange-pattern"></a>如何： 转换消息和使用请求-响应消息交换模式的服务终结点的路由
 ## <a name="goal"></a>目的  

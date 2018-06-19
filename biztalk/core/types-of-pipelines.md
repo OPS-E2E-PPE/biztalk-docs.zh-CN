@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286429"
 ---
 # <a name="types-of-pipelines"></a>类型的管道
 在创建新管道在 BizTalk 项目时，你有两个选项、 接收管道和发送管道。 本部分介绍管道类型和每个设计注意事项之间的差异。  

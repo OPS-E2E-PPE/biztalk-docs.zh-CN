@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d58bfa4-322b-455f-a062-5bd44d368f57
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009150"
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>对管道使用单元测试功能
 本主题演示如何使用单元测试功能为 FlatFileReceive 管道示例中的管道添加单元测试。 管道单元测试功能类似于此处记录 Pipeline.exe 工具：[管道工具](../core/pipeline-tools.md)。 如果启用单元测试上 **部署** 选项卡上的项目属性中，你的项目中的管道类派生自 **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**。  此类会对 Pipeline.exe 工具公开的某些相同功能进行建模。  

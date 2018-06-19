@@ -1,11 +1,11 @@
 ---
-title: "Recaller 对象 |Microsoft 文档"
-ms.custom: 
+title: Recaller 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Recaller object
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, Recaller object
 - process management solution tutorial, errors
 ms.assetid: b30ad1ae-475f-4913-b402-4d3263fcf072
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279885"
 ---
 # <a name="the-recaller-object"></a>Recaller 对象
 业务流程管理解决方案支持以常规方式重试某些失败的对象方法调用。 解决方案执行此通过**Recaller**对象在**ExceptionHandler**业务流程。 **ExceptionHandler**业务流程使用对象来重试对象方法调用。 有关详细信息，请参阅[ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)。  

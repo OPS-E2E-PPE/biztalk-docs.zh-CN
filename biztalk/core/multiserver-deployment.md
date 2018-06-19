@@ -1,11 +1,11 @@
 ---
-title: "多服务器部署 |Microsoft 文档"
-ms.custom: 
+title: 多服务器部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [Windows SharePoint Services adapters], multi-server deployment
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - deploying, Windows SharePoint Services adapters
 - Windows SharePoint Services adapters, installing
 ms.assetid: 0c6e2aa0-e873-461b-8101-9b0988019597
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974435"
 ---
 # <a name="multiserver-deployment"></a>多服务器部署
 本主题讨论多服务器安装和部署注意事项[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适用于 Windows SharePoint Services 的适配器。  

@@ -1,14 +1,14 @@
 ---
-title: "安装动态解析示例 |Microsoft 文档"
-ms.custom: 
+title: 安装动态解析示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7480191-e693-47aa-8fc5-b8f41eb81f83
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294293"
 ---
 # <a name="installing-the-dynamic-resolution-sample"></a>安装动态解析示例
 本部分介绍将动态解析示例安装到 GlobalBank.ESB BizTalk 应用程序的过程。 可以从解决方案项目安装动态解析示例，也可以使用随附的 Windows Installer 文件[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 本节包含下列主题：  

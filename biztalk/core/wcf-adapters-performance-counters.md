@@ -1,18 +1,18 @@
 ---
-title: "WCF 适配器性能计数器 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, WCF adapters
 - performance, performance counters
 - WCF adapters, performance
 ms.assetid: 9feb052f-5674-419f-84ab-9b5d312a04a5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289469"
 ---
 # <a name="wcf-adapters-performance-counters"></a>WCF 适配器性能计数器
 性能计数器可用于监视由服务上的站点或系统执行的工作的特定方面。 性能计数器能够帮助您标识和解决有关服务器性能的问题。 WCF 适配器不提供自己的性能计数器。 但是，您可以监控 Windows Communication Foundation (WCF) 性能计数器以衡量 WCF 接收位置的性能。 若要将 WCF 性能计数器用于 WCF 接收位置，则必须为运行接收位置的主机实例启用性能计数器。  

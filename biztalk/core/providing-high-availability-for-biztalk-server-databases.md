@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 数据库提供高可用性 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 数据库提供高可用性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - clustering, SQL Servers
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - data, persistence
 - SQL Server Analysis Services
 ms.assetid: 47fbc402-9e46-41dd-bc12-d1cde1982576
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269341"
 ---
 # <a name="providing-high-availability-for-biztalk-server-databases"></a>为 BizTalk Server 数据库提供高可用性
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]很大程度上依赖[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实现数据持久性。 在将完全不同的业务应用程序（例如，接收、处理或路由消息）相集成的过程中，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的其他所有组件和主机都具有特定的角色，只有数据库计算机会捕获此工作并将其保存到磁盘。  

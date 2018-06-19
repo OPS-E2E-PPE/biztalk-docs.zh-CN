@@ -1,14 +1,14 @@
 ---
-title: "架构节点 |Microsoft 文档"
-ms.custom: 
+title: 架构节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ea02c2a-ee00-4f44-9086-83d7ac4a8832
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972227"
 ---
 # <a name="schema-node"></a>Schema 节点
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
  在 BizTalk 编辑器中，创建新的 XML 架构时**架构**节点和一个**根**自动创建的节点。  
   
 ## <a name="xsd-representation"></a>XSD 表示形式  
- 以下示例所示，粗体类型，对应于架构的 XSD 表示中的行**\<架构\>**架构的树视图中的节点。  
+ 以下示例所示，粗体类型，对应于架构的 XSD 表示中的行**\<架构\>** 架构的树视图中的节点。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  

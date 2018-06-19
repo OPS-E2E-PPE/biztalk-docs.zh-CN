@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288221"
 ---
 # <a name="warning---custom-extension-xml-but-no-custom-xslt"></a>警告-自定义扩展 XML 但没有自定义 XSLT
 **错误代码**  

@@ -1,11 +1,11 @@
 ---
-title: "演练： 模块 1-发送和接收消息与 Windows SharePoint Services 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 模块 1-发送和接收消息与 Windows SharePoint Services 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services, creating sites
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows SharePoint Services
 - Windows SharePoint Services adapter tutorials, sending messages
 ms.assetid: 6494aef5-bb1d-4a41-8186-1d49625a1013
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010502"
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a>演练： 模块 1-发送和接收消息与 Windows SharePoint Services Adapter
 本演练介绍如何配置 Windows SharePoint Services 和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，以便可以使用 Windows SharePoint Services 适配器和基于内容的路由 (CBR) 来发送和接收消息。 基于内容的路由消除了订阅明确绑定到特定端口的消息的必要。 同时为那些需要根据信封属性或仅根据接收端口配置属性路由消息的用户提供了更多的灵活性。 Windows SharePoint Services 适配器的简介，请参阅[什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  在**网站地址**部分中，在**URL 名称**字段中，键入`WSSAdapterWalkthrough`。  
   
-5.  在**网站集所有者**部分中，在**用户名字段中，**键入用户名。 此用户将是该网站的所有者，不需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中具有特殊权限。  
+5.  在**网站集所有者**部分中，在**用户名字段中，** 键入用户名。 此用户将是该网站的所有者，不需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中具有特殊权限。  
   
 6.  在**网站集所有者**部分中，在**电子邮件**字段中，键入一个电子邮件地址。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  下**文档库**，单击**文档库**。  
   
-3.  在**名称和描述**部分中，在**名称字段中，**类型`Source`。  
+3.  在**名称和描述**部分中，在**名称字段中，** 类型`Source`。  
   
 4.  在**导航**部分中，选择**是**在快速启动栏上显示此窗体库。  
   

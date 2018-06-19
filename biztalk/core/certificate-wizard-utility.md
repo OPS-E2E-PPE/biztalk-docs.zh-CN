@@ -1,14 +1,14 @@
 ---
-title: "证书向导实用程序 |Microsoft 文档"
-ms.custom: 
+title: 证书向导实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ff72810-c7b3-4f67-8f9f-e127eacc153e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006174"
 ---
 # <a name="certificate-wizard-utility"></a>证书向导实用工具
 使用 CertWizard 实用工具可以将证书从 .pfx 或 .cer 文件导入到专用或公用存储区中，以用于 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -37,10 +38,10 @@ ms.lasthandoff: 12/01/2017
 |Rootkey|用于导入根钥（来自证书颁发机构）。|  
 |filename.pfx（或 .cer）|.pfx（私钥）或 .cer（公钥）文件的完整路径。|  
 |Filepassword|对 .pfx 文件进行解锁所需的密码。|  
-|Useridentity|一个或多个 BizTalk 主机使用的服务标识。 如果不想指定主机，而想以用户帐户导入证书，请输入一个用户帐户。 **注意：**如果不希望添加用户身份交换机，该实用程序导入，并为所有用户设置的证书。 **注意：** WMI 如果添加用户身份开关，但未输入值时，会自动生成的用户标识。|  
+|Useridentity|一个或多个 BizTalk 主机使用的服务标识。 如果不想指定主机，而想以用户帐户导入证书，请输入一个用户帐户。 **注意：** 如果不希望添加用户身份交换机，该实用程序导入，并为所有用户设置的证书。 **注意：** WMI 如果添加用户身份开关，但未输入值时，会自动生成的用户标识。|  
 |密码|服务标识用户的口令。|  
-|Thumbprint|特定证书的指纹（如果证书文件包含多个证书）。 **注意：**对于公共证书文件，如果该文件包含多个证书且未指定指纹，该实用程序导入文件中的所有证书。 对于私用证书文件，实用工具会提示你选择要导入的证书。|  
-|用法|导入的私用证书的预期用途。 可以为以下各项之一：<br /><br /> **登录**（用于签名的证书）<br /><br /> **解密**（用于解密证书）<br /><br /> **同时**（用于解密证书和签名证书的证书）<br /><br /> **无**（还用于解密证书和签名证书的证书）。 **注意：**如果 /Usage 开关设置为 none 时，向导不会在 BizTalk 主机或 BizTalk 组上设置证书的指纹。|  
+|Thumbprint|特定证书的指纹（如果证书文件包含多个证书）。 **注意：** 对于公共证书文件，如果该文件包含多个证书且未指定指纹，该实用程序导入文件中的所有证书。 对于私用证书文件，实用工具会提示你选择要导入的证书。|  
+|用法|导入的私用证书的预期用途。 可以为以下各项之一：<br /><br /> **登录**（用于签名的证书）<br /><br /> **解密**（用于解密证书）<br /><br /> **同时**（用于解密证书和签名证书的证书）<br /><br /> **无**（还用于解密证书和签名证书的证书）。 **注意：** 如果 /Usage 开关设置为 none 时，向导不会在 BizTalk 主机或 BizTalk 组上设置证书的指纹。|  
 |Exportable|可以是**True**或**False**。 如果**True**，可以重新导出私钥。|  
   
  **用于导入私钥的语法**  

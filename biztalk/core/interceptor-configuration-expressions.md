@@ -1,14 +1,14 @@
 ---
-title: "侦听器配置表达式 |Microsoft 文档"
-ms.custom: 
+title: 侦听器配置表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2695f509-fece-40b8-aa00-fa3c0c0f19c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973627"
 ---
 # <a name="interceptor-configuration-expressions"></a>侦听器配置表达式
 BAM 侦听器配置文件使用筛选器表达式来标识活动，并使用数据表达式构造用于存储的数据元素，作为相关 ID、继续标记或类似用途使用。 拦截器配置文件中不考虑目的，标识单个表达式`expression`元素和包含一个或多个操作使用反向波兰语表示法，也称为后缀表示法。  

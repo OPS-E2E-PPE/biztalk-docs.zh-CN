@@ -1,14 +1,14 @@
 ---
-title: "演练： 使用数据库和.NET 事实 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用数据库和.NET 事实 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 676d6e46-d9f8-477e-979e-1ac051ad4451
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976043"
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a>演练： 使用数据库和.NET 事实
 此演练将介绍使用业务规则编辑器创建使用数据库和 .NET 事实的策略的分步说明。  
@@ -147,9 +148,9 @@ ms.lasthandoff: 11/28/2017
   
 5.  展开**TestDB**，然后展开**PO**。  
   
-6.  在事实浏览器窗口中，单击**.NET 类**。  
+6.  在事实浏览器窗口中，单击 **.NET 类**。  
   
-7.  右键单击**。NETAssemblies**，然后单击**浏览**。  
+7.  右键单击 **。NETAssemblies**，然后单击**浏览**。  
   
 8.  选择**POUtility**，然后单击**确定**。  
   
@@ -169,7 +170,7 @@ ms.lasthandoff: 11/28/2017
   
 16. 拖动**数量**从事实浏览器窗口中对节点**argument1**如果窗格中。  
   
-17. 在事实浏览器窗口中，单击**.NET 类**。  
+17. 在事实浏览器窗口中，单击 **.NET 类**。  
   
 18. 拖动**GetMaxAllowed**从事实浏览器窗口中对节点**argument2**如果窗格中。  
   
@@ -177,7 +178,7 @@ ms.lasthandoff: 11/28/2017
   
 20. 拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。  
   
-21. 在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。  
+21. 在 THEN 窗格中，单击**\<输入值\>** 然后键入**已批准**。  
   
 22. 在事实浏览器窗口中，右键单击**版本 1.0**中**ProcessPurchaseOrderDbNet**，然后单击**AddNewRule**。  
   
@@ -189,7 +190,7 @@ ms.lasthandoff: 11/28/2017
   
 26. 拖动**数量**从事实浏览器窗口中对节点**argument1**如果窗格中。  
   
-27. 在事实浏览器窗口中，单击**.NET 类**。  
+27. 在事实浏览器窗口中，单击 **.NET 类**。  
   
 28. 拖动**GetMaxAllowed**从事实浏览器窗口中对节点**argument2**如果窗格中。  
   
@@ -197,9 +198,9 @@ ms.lasthandoff: 11/28/2017
   
 30. 拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。  
   
-31. 在 THEN 窗格中，单击**\<输入值\>**然后键入**拒绝**。  
+31. 在 THEN 窗格中，单击**\<输入值\>** 然后键入**拒绝**。  
   
-32. 在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。  
+32. 在策略资源管理器窗口中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。  
   
 ### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-business-rule-composer"></a>使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略  
   

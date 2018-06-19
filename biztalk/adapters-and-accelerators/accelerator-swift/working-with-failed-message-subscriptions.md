@@ -1,18 +1,18 @@
 ---
-title: "使用失败消息订阅 |Microsoft 文档"
-ms.custom: 
+title: 使用失败消息订阅 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - failed messages, subscriptions
 - failed messages, developing
 - developing, failed message subscriptions
 ms.assetid: 8dee0aa8-53bf-40be-866b-f1b83960dc99
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005606"
 ---
 # <a name="working-with-failed-message-subscriptions"></a>使用失败的邮件订阅
 当[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]反汇编程序进程 （分析和验证） 一条消息，这样还有助于提升该消息的属性。 如果 A4SWIFT 作为入站批处理的一部分接收消息，这些提升的属性提供信息的正确性和有效性的消息，以及与批处理相关的信息。 有关这些属性的完整列表，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。  

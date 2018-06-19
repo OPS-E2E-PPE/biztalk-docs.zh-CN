@@ -1,11 +1,11 @@
 ---
-title: "Windows 帐户对于安全的分布式的 BizTalk 服务器部署 |Microsoft 文档"
-ms.custom: 
+title: Windows 帐户对于安全的分布式的 BizTalk 服务器部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, Windows groups
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, administrators
 - architecture, large distributions
 ms.assetid: 2a0893ef-8bfb-481b-b024-7f7d6e2a6f09
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974955"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>Windows 帐户，可以一种安全的分布式 BizTalk Server 部署
 有关 BizTalk Server 部署的系统体系结构的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/28/2017
 |BizTalk administrator|用户|BizTalk Administrators<br /><br /> SSO Affiliate Administrators|  
 |BizTalk operator|用户|BizTalk Operators|  
 |BizTalk Processing 1|服务|BizTalk Processing Host Users 1|  
-|BizTalk 处理 2**注意：**可以在你的环境中对于每个处理主机创建多个帐户。|服务|BizTalk Processing Host Users 1|  
+|BizTalk 处理 2**注意：** 可以在你的环境中对于每个处理主机创建多个帐户。|服务|BizTalk Processing Host Users 1|  
 |BizTalk Tracking|服务|BizTalk Tracking Host Users|  
 |SOAP 适配器|服务|BizTalk SOAP Users |  
 |HTTP 适配器|服务|BizTalk HTTP Users|  

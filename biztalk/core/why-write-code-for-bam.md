@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4434f50a-e0a9-45e0-8c68-a059011e1296
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22289885"
 ---
 # <a name="why-write-code-for-bam"></a>为什么为 BAM 编写代码？
 在大多数情况下，您不必编写自己的代码就可以使用 BAM 工具执行跟踪功能。 这些工具是用于 Excel、BAM 管理实用程序和跟踪配置文件编辑器 (TPE) 的 BAM 外接程序。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 BAM 为 BizTalk 业务流程和消息传送组件（管道和端口）提供侦听器。 侦听器是一种用于装备应用程序的软件，以便应用程序可以基于配置文件以常规方式收集数据。 您可以使用跟踪配置文件编辑器来装备您的应用程序，以便使用这些侦听器。 有关跟踪配置文件编辑器中的详细信息，请参阅[跟踪配置文件编辑器](../core/tracking-profile-editor.md)。  

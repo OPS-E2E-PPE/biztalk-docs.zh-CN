@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00691a9e-434f-4baa-9a01-b6f452758ab3
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22279389"
 ---
 # <a name="supported-adapter-xsd-element-types"></a>受支持的适配器 XSD 元素类型
 下表列出了适配器框架支持的元素。 当在配置架构中定义一个新的元素，使用以下类型的任何替换 `string` 在下面的示例︰  

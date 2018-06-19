@@ -1,15 +1,15 @@
 ---
-title: "跟踪对 Application Insights 或事件中心的数据 |Microsoft 文档"
-description: "安装功能包启用的跟踪数据与 Azure Application Insights 或 BizTalk Server 中的 Azure 事件中心的分析"
+title: 跟踪对 Application Insights 或事件中心的数据 |Microsoft 文档
+description: 安装功能包启用的跟踪数据与 Azure Application Insights 或 BizTalk Server 中的 Azure 事件中心的分析
 ms.custom: fp1, fp2
 ms.date: 11/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ff6cb9-44d0-46cd-9b4f-a346365afb7b
-caps.latest.revision: 
+caps.latest.revision: 10
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710776"
 ---
 # <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>发送到 Azure Application Insights 或事件中心跟踪数据的 BizTalk
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 02/28/2018
 3. 有关**目标类型**，选择**Application Insight**或**事件中心**从列表中。
     ![启用针对你的环境分析](../core/media/environmentsettingapplicationinishgt.PNG)
 
-4. 有关**连接参数**，选择**...**按钮，和**登录**到你的 Azure 帐户。  
+4. 有关**连接参数**，选择 **...** 按钮，和**登录**到你的 Azure 帐户。  
 
     **有关 Application Insights**  
     选择你**订阅**，**资源组**，和 Application Insights 实例。

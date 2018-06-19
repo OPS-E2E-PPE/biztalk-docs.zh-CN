@@ -1,14 +1,14 @@
 ---
-title: "字符编码 |Microsoft 文档"
-ms.custom: 
+title: 字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a0c21c8-3318-4533-9734-89302527cb67
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014676"
 ---
 # <a name="character-encoding"></a>字符编码
 TIBCO Enterprise Message Service (EMS) 支持在由 TIBCO EMS 的 BizTalk 适配器传输到 EMS 的消息中使用不同的字符编码。 消息是使用默认的 UTF-8 进行编码的。 当接收消息，适配器确定消息编码，以及提供到的消息之前将相应的字符串转换为 utf-8 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 所有字符转换都使用 Microsoft .NET Framework 类；因此，适配器支持通过此相同框架转换字符。  

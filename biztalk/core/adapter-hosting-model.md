@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22225165"
 ---
 # <a name="adapter-hosting-model"></a>承载模型的适配器
 一般情况下在 BizTalk 服务中，Btsntsvc.exe 托管 BizTalk 适配器。 这意味着，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理适配器的生存期。 但也存在其他进程管理适配器的情况，如下所述。  

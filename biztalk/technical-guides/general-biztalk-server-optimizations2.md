@@ -1,14 +1,14 @@
 ---
-title: "常规 BizTalk Server Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 常规 BizTalk Server Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41b452e9-d94c-4bcb-8ef6-e9cea28fc0ab
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009974"
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 以下建议可用于增加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能。 本主题中列出的优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 12/01/2017
 > [!NOTE]  
 >  此设置是全局设置，无法为单个应用程序池或应用程序的更改。  
   
-1.  依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+1.  依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
   
 2.  导航到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  停止 BizTalk 主机实例。  
   
-2.  依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+2.  依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
     导航到**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$***主机名*] 其中*主机名*是与主机关联的主机的名称实例。  
   
     > [!NOTE]  
@@ -172,7 +173,7 @@ ms.lasthandoff: 12/01/2017
     |DWORD 项|默认值|推荐值|  
     |-----------------|-------------------|-----------------------|  
     |MaxIOThreads|20|100|  
-    |MaxWorkerThreads|25|100**重要说明：**增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 建议此参数不超过 100 的值。|  
+    |MaxWorkerThreads|25|100**重要说明：** 增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 建议此参数不超过 100 的值。|  
     |MinIOThreads|1|25|  
     |MinWorkerThreads|1|25|  
   

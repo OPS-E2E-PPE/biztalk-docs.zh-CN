@@ -1,14 +1,14 @@
 ---
-title: "收集异常和保持使用 ESB 异常处理器负载 |Microsoft 文档"
-ms.custom: 
+title: 收集异常和保持使用 ESB 异常处理器负载 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52650eed-e760-4ade-bc3f-2b5b2a1c43ff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007014"
 ---
 # <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>收集异常和保持使用 ESB 异常处理器负载
 在使用此种情况下，异常处理程序为业务流程将 ESB 错误消息发布到 BizTalk Server 消息框，或者 BizTalk 失败消息路由机制将生成错误消息。 发送端口，预先配置为使用 ESB 异常编码器管道组件，订阅这两个类型的错误消息。 它处理的错误消息，并将保持它们为磁盘文件，你可以查看使用 InfoPath，如图 1 中所示。  

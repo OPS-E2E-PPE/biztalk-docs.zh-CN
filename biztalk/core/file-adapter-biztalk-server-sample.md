@@ -11,7 +11,7 @@ helpviewer_keywords:
 - examples, File adapters
 - File adapters, examples
 ms.assetid: d59cecb4-6353-44d5-b8d6-316446758536
-caps.latest.revision: ''
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010334"
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>文件适配器 （BizTalk Server 示例）
 Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配器示例。 它提供了建立动态或静态适配器的代码。  不过，以下过程仅简要介绍静态适配器。 静态适配器是具有静态架构集合且没有自定义用户接口的适配器。 动态适配器具有自定义用户接口，并可能具有动态架构集合。 静态适配器和动态适配器均使用添加适配器向导向 BizTalk 项目中添加其架构。  
@@ -38,7 +39,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
  \<*示例路径*\>**\AdaptersDevelopment\File 适配器**  
   
 > [!NOTE]
->  默认位置\<*示例路径*\>是*%programfiles%*\Microsoft BizTalk Server\SDK\Samples 时运行 32 位计算机上安装 BizTalk ServerWindows 版本。 默认位置\<*示例路径*\>是*%programfiles （x86） %*\Microsoft BizTalk Server\SDK\Samples 运行 64 的计算机上安装 BizTalk Server 时位版本的 Windows。 若要确定与关联的值 *%programfiles%* 或 *%programfiles （x86） %* 环境变量类型 **echo %programfiles%** 或 **echo %programfiles （x86） %** 在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用 **%programfiles%** 到 **%programfiles （x86） %** 之前运行的.reg 文件。  
+>  默认位置\<*示例路径*\>是 *%programfiles%* \Microsoft BizTalk Server\SDK\Samples 时运行 32 位计算机上安装 BizTalk ServerWindows 版本。 默认位置\<*示例路径*\>是 *%programfiles （x86） %* \Microsoft BizTalk Server\SDK\Samples 运行 64 的计算机上安装 BizTalk Server 时位版本的 Windows。 若要确定与关联的值 *%programfiles%* 或 *%programfiles （x86） %* 环境变量类型 **echo %programfiles%** 或 **echo %programfiles （x86） %** 在命令提示符并按 enter 键。 如果在 64 位操作系统上运行此示例，你将需要更改任何从的.reg 文件中的所有引用 **%programfiles%** 到 **%programfiles （x86） %** 之前运行的.reg 文件。  
   
  下表显示了本示例中的文件并说明了其用途。  
   
@@ -106,7 +107,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 1.  单击 **启动**, ，指向 **所有程序**, ，指向 **附件**, ，然后单击 **Windows 资源管理器**。  
   
-2.  导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Runtime"**目录中，，然后双击**DotNetFile.sln**.  
+2.  导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Runtime"** 目录中，，然后双击**DotNetFile.sln**.  
   
 3.  若要重新生成适配器接收方运行时项目，在解决方案资源管理器，右键单击 **DotNetFile**, ，然后单击 **重新生成**。  
   
@@ -114,7 +115,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 #### <a name="to-build-the-adapter-design-time-project"></a>生成适配器设计时项目  
   
-1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Design Time\Adapter 管理"**目录中，，然后双击**AdapterManagement.sln**。  
+1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File Adapter\Design Time\Adapter 管理"** 目录中，，然后双击**AdapterManagement.sln**。  
   
 2.  在解决方案资源管理器，右键单击 **AdapterManagement**, ，然后单击 **重新生成**。  
   
@@ -122,7 +123,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 #### <a name="to-register-the-sample-static-adapter"></a>注册示例静态适配器  
   
-1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File 适配器"**目录。  
+1.  在 Windows 资源管理器，导航到\<*示例路径*\>**"\AdaptersDevelopment\File 适配器"** 目录。  
   
 2.  若要将示例适配器添加到注册表中，双击 **StaticAdapterManagement.reg**。  
   
@@ -196,7 +197,7 @@ Microsoft Visual C#.NET 若要使用 Microsoft BizTalk Server 编写文件适配
   
 7.  单击 **“确定”**。  
   
-8.  展开**BizTalk 组 [*服务器名称*]**中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
+8.  展开**BizTalk 组 [*服务器名称*]** 中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
   
 9. 右键单击 **发送端口** 节点，，然后单击 **新建**, ，选择 **静态单向发送端口**, ，然后单击 **确定**。  
   

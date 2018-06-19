@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 为贸易 Partner1 配置方和业务配置文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 为贸易 Partner1 配置方和业务配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db50d0f6-e838-4e92-8548-a63a2c445d55
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277413"
 ---
 # <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a>步骤 4： 为贸易合作伙伴配置方和业务配置文件
 ![9 的第 4 步](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  

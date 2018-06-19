@@ -1,14 +1,14 @@
 ---
-title: "安装内联和服务的适配器版本面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 安装内联和服务的适配器版本面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6050cfe9-4e94-4a55-8b24-fbcc74d9e8f4
-caps.latest.revision: "97"
+caps.latest.revision: 97
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010734"
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>如何安装面向服务的解决方案的内联版本和适配器版本
 以下步骤将说明如何准备计算机以安装面向服务的解决方案的内联版本和适配器版本，以及如何在此计算机上安装该解决方案：  
@@ -367,7 +368,7 @@ ms.lasthandoff: 12/01/2017
   
     1.  在**目录安全性**选项卡上，单击**编辑**修改**身份验证和访问控制**。 选择**基本身份验证 （以明文形式发送密码）**，并清除其他**身份验证访问**复选框。 单击**确定**关闭**身份验证方法**对话框。  
   
-    2.  在**目录安全性**选项卡上，单击**编辑**下**安全通信**组框中，，然后检查**要求安全通道 (SSL)**中**安全通信**对话框。  
+    2.  在**目录安全性**选项卡上，单击**编辑**下**安全通信**组框中，，然后检查**要求安全通道 (SSL)** 中**安全通信**对话框。  
   
     3.  在**虚拟目录**选项卡上，设置**应用程序池**到你在"创建新的 IIS 应用程序池的挂起的事务 Web 服务"的过程中创建的应用程序池。  
   
@@ -500,7 +501,7 @@ ms.lasthandoff: 12/01/2017
   
      访问权限 = 读取，运行脚本  
   
-3.  在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter，单击**属性**，，然后修改设置，如下所示：  
+3.  在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Adapter，单击**属性**，，然后修改设置，如下所示：  
   
     1.  在**虚拟目录**选项卡上，设置**应用程序池**到\< *YourAppPool* \>你在上一步中创建。  
   

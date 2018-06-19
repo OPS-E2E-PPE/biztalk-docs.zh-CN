@@ -1,14 +1,14 @@
 ---
-title: "路线上负载增加示例的工作原理 |Microsoft 文档"
-ms.custom: 
+title: 路线上负载增加示例的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f4f318c-b955-4a3d-88db-c0d324b63b21
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974891"
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>路线上负载增加示例的工作原理
 该示例路线测试客户端应用程序生成一组包含你在客户端应用程序窗口中，使用控件创建路线的 SOAP 标头从磁盘加载指定的消息文件、 将路线标头追加到消息、 和将其提交到 ESB 通过路线入口进行处理。 如果路线生成响应，应用程序收集响应，并将其显示在应用程序窗口。  
@@ -54,13 +55,13 @@ ms.lasthandoff: 11/28/2017
 ```  
   
 > [!NOTE]
->  每个的实际内容**\<冲突解决程序\>**元素不包含使用在前面的列表中将行的空白字符。  
+>  每个的实际内容**\<冲突解决程序\>** 元素不包含使用在前面的列表中将行的空白字符。  
   
  以下是在路线前面的配置中定义的三个步骤：  
   
 1.  执行 Microsoft.Practices.ESB.Services.Transform 业务流程将消息转换与使用 BizTalk 业务规则引擎 (BRE) ResolverMap 策略。  
   
-2.  执行 Microsoft.Practices.ESB.Services.Routing 业务流程将已转换的消息路由到多个位置使用路由 Microsoft.Practices.ESB.Services.Routing1。  **\<ResolverGroups\>** 部分包含**\<冲突解决程序\>**标识符，用于定义连接字符串的元素。  
+2.  执行 Microsoft.Practices.ESB.Services.Routing 业务流程将已转换的消息路由到多个位置使用路由 Microsoft.Practices.ESB.Services.Routing1。  **\<ResolverGroups\>** 部分包含**\<冲突解决程序\>** 标识符，用于定义连接字符串的元素。  
   
 3.  执行本示例提供 ProcessAndRespond 业务流程。 作为响应发送此业务流程的实现回路线测试客户端的请求消息的副本。  
   

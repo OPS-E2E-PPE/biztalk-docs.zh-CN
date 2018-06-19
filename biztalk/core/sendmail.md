@@ -1,18 +1,18 @@
 ---
-title: "SendMail |Microsoft 文档"
-ms.custom: 
+title: SendMail |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SMTP adapters, examples
 - examples, SMTP adapters
 - SMTP adapters
 ms.assetid: a0258619-b195-4c8a-8326-77add6e6f04d
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974835"
 ---
 # <a name="sendmail"></a>SendMail
 SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程内发送电子邮件。 用于发送电子邮件的动态信息是通过使用属性升级功能从 XML 消息中检索得到的。  
@@ -48,7 +49,7 @@ SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Mi
 |PropertySchema.xsd、PurchaseOrder.xsd|分别为要升级的属性和 XML PO 消息提供架构。|  
 |ReceiveSend.odx|提供用于处理传入 XML PO 消息并根据消息中的信息发送电子邮件的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。|  
 |SendMailInput.xml|包含具有使用 XML 指定的 PO 的示例输入文件。|  
-|Setup.bat|生成并初始化本示例。 **注意：**和此安装程序文件创建并将绑定的端口，在其他方面，使用另一种机制比大部分安装程序文件的 SDK 示例。 它不需要 companion .xml 文件。|  
+|Setup.bat|生成并初始化本示例。 **注意：** 和此安装程序文件创建并将绑定的端口，在其他方面，使用另一种机制比大部分安装程序文件的 SDK 示例。 它不需要 companion .xml 文件。|  
   
 ### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
   
@@ -89,7 +90,7 @@ SendMail 示例演示如何使用简单邮件传输协议 (SMTP) 适配器在 Mi
   
 9. 在**SMTP-适配器处理程序属性**对话框中，单击**属性**。  
   
-10. 在**SMTP 传输属性**对话框中，在**属性**选项卡上，提供相应的值为**SMTP 服务器名称**和**从 （电子邮件地址）**属性，，然后单击**确定**。  
+10. 在**SMTP 传输属性**对话框中，在**属性**选项卡上，提供相应的值为**SMTP 服务器名称**和**从 （电子邮件地址）** 属性，，然后单击**确定**。  
   
      这些值将用于构造为通过此 SMTP 适配器发送任何电子邮件的 From 电子邮件地址。  
   

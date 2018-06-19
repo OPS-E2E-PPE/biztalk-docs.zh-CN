@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008472"
 ---
 # <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server 中的导入 BPEL4WS
 可以从现有的 BPEL4WS 进行导入以创建业务流程。  

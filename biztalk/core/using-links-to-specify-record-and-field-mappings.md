@@ -1,14 +1,14 @@
 ---
-title: "使用链接以指定记录和字段映射 |Microsoft 文档"
-ms.custom: 
+title: 使用链接以指定记录和字段映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c669d93-e088-459e-8f45-87c359874a7e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287245"
 ---
 # <a name="using-links-to-specify-record-and-field-mappings"></a>使用链接指定记录和字段映射
 在 BizTalk 映射器中，使用链接可以将源架构中的数据项与目标架构中的数据项关联起来。 在设置好的映射中，通常包含许多源架构和目标架构之间的链接。 这些链接在一起指定了源实例消息中的数据将如何转换为语义相同、但语法不同的目标实例消息。  

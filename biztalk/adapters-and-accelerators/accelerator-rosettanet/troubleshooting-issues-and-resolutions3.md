@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010326"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>疑难解答： 问题和解决方法
 本主题讲述与运行 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 相关的问题。 每个问题都详细描述了一种特定的症状、其可能的原因以及解决方案。  

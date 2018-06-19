@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8da91ba4-e1c9-4e6b-bbd1-fe71ea880118
-caps.latest.revision: ''
+caps.latest.revision: 43
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010662"
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 拆装器的工作方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行 EDI 接收管道 (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) 中接收的 EDI 编码交换的大多数处理。 此管道包括用于执行下列处理的 EDI 拆装器管道组件：  

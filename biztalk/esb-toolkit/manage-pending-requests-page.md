@@ -1,14 +1,14 @@
 ---
-title: "管理挂起的请求页 |Microsoft 文档"
-ms.custom: 
+title: 管理挂起的请求页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5cdeb6e-71fc-45af-a24d-731c9a459a76
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294253"
 ---
 # <a name="manage-pending-requests-page"></a>“管理挂起的请求”页
 图 1 显示管理挂起的请求页，该页显示列表的挂起的注册请求，并提供一个链接以查看请求历史记录。  

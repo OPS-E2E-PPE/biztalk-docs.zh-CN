@@ -1,14 +1,14 @@
 ---
-title: "管理警报 （管理视图） |Microsoft 文档"
-ms.custom: 
+title: 管理警报 （管理视图） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27f8bf7d-15b7-448d-8c13-e4969b90d021
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294437"
 ---
 # <a name="manage-alerts-administration-view"></a>管理警报 （管理视图）
 图 1 显示管理视图，管理员可以使用它来查看所有警报和其活动的摘要的列表中的通知页。 一个表显示对于每个警报的行。 每行都显示警报的名称、 创建者的姓名、 （如警报激活数内最后一个小时、 天或月），该警报的常规统计信息的链接的警报的订阅服务器上，若要查看列表和一个操作列，包含一套 cli 的计数ckable 图标，以对警报执行操作。  

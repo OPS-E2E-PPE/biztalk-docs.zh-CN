@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009966"
 ---
 # <a name="windows-sharepoint-services-40-support"></a>Windows Sharepoint Services 4.0 支持
 BizTalk Server 的 Windows SharePoint Services 适配器提供用于 Windows SharePoint Services adapter 特性/功能奇偶校验[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]。 BizTalk Server 的 Windows SharePoint Services 适配器还支持适用于 Windows SharePoint Services 4.0 的以下功能：  
@@ -41,7 +42,7 @@ BizTalk Server 的 Windows SharePoint Services 适配器提供用于 Windows Sha
 |属性|“值”|  
 |--------------|-----------|  
 |目标文件夹 URL|相对于 SharePoint 网站的发布内容列表的目标文件夹 URL，如“Lists/Posts”。|  
-|SharePoint 站点 URL|Windows SharePoint Services 4.0 博客站点，例如 http:// URL*\<servername\>*/站点/博客/其中*\<servername\>*是Web 服务器的实际名称的占位符。|  
+|SharePoint 站点 URL|Windows SharePoint Services 4.0 博客站点，例如 http:// URL*\<servername\>*/站点/博客/其中*\<servername\>* 是Web 服务器的实际名称的占位符。|  
   
  然后设置的值 **类别**, ，**已发布**, ，**标题**, ，和 **正文** 博客发布 WSS 中设置相应的值的属性。ConfigPropertiesXml 消息上下文属性。 可通过自定义管道或者在业务流程中实现此操作。 例如，业务流程中的下列表达式将设置 Message_Out 消息的 WSS.ConfigPropertiesXml 上下文属性中的值。  
   
@@ -86,7 +87,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 |属性|“值”|  
 |--------------|-----------|  
 |目标文件夹 URL|相对于 SharePoint 网站的 Wiki 网站主页的 URL，如“wikiSP”。|  
-|SharePoint 站点 URL|Windows SharePoint Services 4.0 Wiki 站点，例如 http:// URL*\<servername\>*/站点/wiki/其中*\<servername\>*是web 服务器的实际名称的占位符。|  
+|SharePoint 站点 URL|Windows SharePoint Services 4.0 Wiki 站点，例如 http:// URL*\<servername\>*/站点/wiki/其中*\<servername\>* 是web 服务器的实际名称的占位符。|  
   
  然后将的值设置 **Wiki 内容** Wiki 页 WSS 中设置相应的值的属性。ConfigPropertiesXml 消息上下文属性。 可通过自定义管道或者在业务流程中实现此操作。 例如，业务流程中的下列表达式将设置 Message_Out 消息的 WSS.ConfigPropertiesXml 上下文属性中的值：  
   

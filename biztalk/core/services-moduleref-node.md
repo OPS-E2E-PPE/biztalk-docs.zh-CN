@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269405"
 ---
 # <a name="services-moduleref-node"></a>服务 （ModuleRef 节点）
 绑定文件的“服务”节点包含有关与绑定文件一起导出的每个服务的特定信息。  

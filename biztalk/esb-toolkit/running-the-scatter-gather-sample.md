@@ -1,14 +1,14 @@
 ---
-title: "运行散播-聚集示例 |Microsoft 文档"
-ms.custom: 
+title: 运行散播-聚集示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53676974-ea1f-4c95-9dbb-98fff92286fa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294653"
 ---
 # <a name="running-the-scatter-gather-sample"></a>运行散播-聚集示例
 散播-聚集示例使用 Windows 窗体测试客户端应用程序的路线入口示例来演示此模式将路线服务的功能的应用。  

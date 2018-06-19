@@ -1,17 +1,17 @@
 ---
-title: "如何安装密码同步 |Microsoft 文档"
-ms.custom: 
+title: 如何安装密码同步 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, Password Synchronization [SSO]
 - Password Synchronization [SSO], installing
 ms.assetid: 8ace0401-b759-4ea3-91a0-be2aa8b5a5a4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970931"
 ---
 # <a name="how-to-install-password-synchronization"></a>如何安装密码同步
 因为在默认的密码同步未安装单一登录与其他功能一起，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装，并且必须专门选择在安装过程。  

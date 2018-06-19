@@ -1,14 +1,14 @@
 ---
-title: "规划 BizTalk 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 规划 BizTalk 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30d56a04-966a-46b1-861d-f5be4e58b7d2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014292"
 ---
 # <a name="plan-for-your-biztalk-solution"></a>规划你的 BizTalk 解决方案
 主要设计目标之一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是尽可能容纳尽可能多的处理方案提供最大的灵活性。 由于此极大的灵活性，面对的 BizTalk 解决方案的开发人员的主要挑战之一是确定如何在中提供的功能的最佳使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为了最好地满足其业务需求。 规划[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以分解到不同的阶段下面概括了这些阶段。  

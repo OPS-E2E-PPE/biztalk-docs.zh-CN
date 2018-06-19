@@ -1,14 +1,14 @@
 ---
-title: "使用限制机制的复杂类型派生 |Microsoft 文档"
-ms.custom: 
+title: 使用限制机制的复杂类型派生 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3003d88-6b75-4dcb-834f-1babcf7449cb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233477"
 ---
 # <a name="complex-type-derivation-using-the-restriction-mechanism"></a>使用限制机制进行复杂类型派生
 在 BizTalk 编辑器功能方面，通过限制进行派生与通过扩展进行派生类似。 通过限制派生的复杂类型与其基本数据类型类似，只是其声明比基本数据类型中的相应声明具有更多限制性。 实际上，新类型所表示的值是基本数据类型所表示的值的子集（与简单类型限制的情况一样）。 使用基本数据类型的值的应用程序应当能够成功处理所有限制的类型的值。  

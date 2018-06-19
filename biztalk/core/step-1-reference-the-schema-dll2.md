@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 引用架构 DLL2 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 引用架构 DLL2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1db92227-6164-42b9-b60c-12dd2cae46e2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277525"
 ---
 # <a name="step-1-reference-the-schema-dll"></a>步骤 1： 引用 DLL 的架构
 在 BizTalk 中，消息是不可改变的。 因此，若要更改属性值，必须创建和修改新消息。 通过在接收形状和发送形状之间插入消息赋值形状可以创建和修改新消息。  

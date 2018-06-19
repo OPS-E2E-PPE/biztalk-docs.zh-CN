@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005758"
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>步骤 2： 为价格和可用性项目使用 BizTalk 编辑器创建 Contoso LOB 应用程序架构
 在此步骤中，将生成用于查询 Contoso ERP 系统中特定产品的价格与可用性的架构。 通过使用生成此架构[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 的 SQL 适配器。  

@@ -1,14 +1,14 @@
 ---
-title: "注册适配器 |Microsoft 文档"
-ms.custom: 
+title: 注册适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc85b96e-7b7b-4131-88ec-87b419a61bc2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270261"
 ---
 # <a name="registering-an-adapter"></a>注册适配器
 如果您在开发自定义适配器，则可以通过修改和运行在软件开发包 (SDK) 的示例文件适配器中附带的某一注册表文件，向 BizTalk Server 注册您开发的适配器。 或者，您可以使用适配器注册向导来创建注册表文件。 该向导位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Utilities\AdapterRegistryWizard 文件夹中。  

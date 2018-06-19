@@ -11,7 +11,7 @@ helpviewer_keywords:
 - SWIFT solutions
 - tutorial, creating SWIFT solutions
 ms.assetid: 550af497-abd2-4044-8c6f-15f9dba0ac5d
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26004846"
 ---
 # <a name="module-1-creating-a-swift-solution"></a>模块 1： 创建 SWIFT 解决方案
 在此模块中，你将创建一个空白的 BizTalk 解决方案。 通过使用在第一课中，创建新的解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 你还可以创建包含你的 BizTalk 解决方案组件例如架构、 地图、 业务流程和管道组件的各个项目。  

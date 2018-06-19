@@ -1,14 +1,14 @@
 ---
-title: "适用于这些 WCF 适配器的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 适用于这些 WCF 适配器的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 423c6021-5fb7-48c9-9319-11e7a18c775c
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009750"
 ---
 # <a name="known-issues-for-the-wcf-adapters"></a>WCF 适配器的已知的问题
 本主题介绍 BizTalk Server 附带的 WCF 适配器的已知的问题。  
@@ -87,7 +88,7 @@ svcutil.exe /t:metadata http://service/metadataendpoint
  BizTalk WCF 服务使用向导不允许导入具有单向操作和请求响应操作组合的端口类型。 若要解决此问题，您可以使用 ServiceModel 元数据实用工具生成端口类型。  
   
 ## <a name="the-biztalk-wcf-service-consuming-wizard-does-not-allow-you-to-set-certificate-credentials-when-retrieving-the-wsdl"></a>BizTalk WCF 服务使用向导不允许在检索 WSDL 时设置证书凭据  
- BizTalk WCF 服务使用向导不允许在检索 WSDL 时设置证书凭据。 若要解决此问题，可以使用 ServiceModel 元数据实用工具生成的 WSDL，并从你想要使用的证书凭据的 WCF 服务的 XSD 文件在 svcutil.exe.config 文件中，设置和将其导入 BizTalk WCF 服务使用向导通过选择**元数据文件 （WSDL 和 XSD）**选项**元数据源**页。  
+ BizTalk WCF 服务使用向导不允许在检索 WSDL 时设置证书凭据。 若要解决此问题，可以使用 ServiceModel 元数据实用工具生成的 WSDL，并从你想要使用的证书凭据的 WCF 服务的 XSD 文件在 svcutil.exe.config 文件中，设置和将其导入 BizTalk WCF 服务使用向导通过选择**元数据文件 （WSDL 和 XSD）** 选项**元数据源**页。  
   
 ## <a name="wcf-adapters-do-not-support-one-way-operations"></a>WCF 适配器不支持单向操作  
  你将收到错误消息类似于以下使用 WCF 服务发布与 WCF 适配器 （除了对于 WCF NetMsmq 收到适配器） 时如果**IsOneWay**属性设置为**true**在客户端。 这是因为**System.ServiceModel.OperationContractAttribute.IsOneWay**发布具有 WCF 适配器 （用于与 WCF NetMsmq 发布服务接收适配器时除外） 的 WCF 服务的属性设置为**false**甚至为单向接收位置。  

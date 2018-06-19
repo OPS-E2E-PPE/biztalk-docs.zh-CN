@@ -1,14 +1,14 @@
 ---
-title: "Messaging Engine BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: Messaging Engine BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0c8d3e6-953d-4a04-adfc-b77ef7173464
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279261"
 ---
 # <a name="the-biztalk-server-messaging-engine"></a>BizTalk Server 消息引擎
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息引擎提供了以下两个主要功能，用户使用这两个功能可以创建涉及多个应用程序的业务流程：  

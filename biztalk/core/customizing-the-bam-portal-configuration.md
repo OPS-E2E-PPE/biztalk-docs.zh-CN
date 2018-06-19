@@ -1,14 +1,14 @@
 ---
-title: "自定义 BAM 门户配置 |Microsoft 文档"
-ms.custom: 
+title: 自定义 BAM 门户配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 507bd5f0-b2a0-4d52-85f8-9d984138ca79
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009742"
 ---
 # <a name="customizing-the-bam-portal-configuration"></a>自定义 BAM 门户配置
 BAM 门户有多个可配置选项。 下面的过程演示如何修改 BAM 门户，以获取最佳用户体验。  
@@ -160,7 +161,7 @@ BAM 门户有多个可配置选项。 下面的过程演示如何修改 BAM 门�
   
 1.  打开命令提示符。  
   
-2.  运行**C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register-name bamalerts-服务器***\<服务器名称\>*替换*\<服务器名称\>*与服务器的名称。  
+2.  运行**C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register-name bamalerts-服务器***\<服务器名称\>* 替换*\<服务器名称\>* 与服务器的名称。  
   
 3.  按下 F5 键来刷新浏览器。  
   

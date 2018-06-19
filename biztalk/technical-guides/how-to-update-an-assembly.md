@@ -1,14 +1,14 @@
 ---
-title: "如何更新的程序集 |Microsoft 文档"
-ms.custom: 
+title: 如何更新的程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4f456c8f-247a-4d5c-b5af-41e88968779c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22298325"
 ---
 # <a name="how-to-update-an-assembly"></a>如何更新的程序集
 本主题介绍如何更新的程序集和程序集部署到使用 Visual Studio 2010 的应用程序的版本。  

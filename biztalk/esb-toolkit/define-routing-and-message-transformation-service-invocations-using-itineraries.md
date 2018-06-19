@@ -1,14 +1,14 @@
 ---
-title: "定义路由和消息转换服务调用使用路线 |Microsoft 文档"
-ms.custom: 
+title: 定义路由和消息转换服务调用使用路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6f2448e-a5a7-496c-86d3-47f12e6f1251
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294277"
 ---
 # <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a>定义路由和转换消息的服务调用使用路线
 在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。 具体而言，转换和路由服务定义，每个 （可选） 需要通过通用描述、 发现和集成 (UDDI)、 业务规则引擎策略、 XML 路径语言 (XPath) 或静态查找解决方法。 可以通过在发布消息时将其他服务添加到路线扩展此用例。  

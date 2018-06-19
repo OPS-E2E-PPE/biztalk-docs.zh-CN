@@ -1,11 +1,11 @@
 ---
-title: "指定的 SOAP 操作，wcf 发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 指定的 SOAP 操作，wcf 发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send adapters, mapping
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - mapping, send adapters
 - mapping, WCF send adapters
 ms.assetid: fa9878eb-65b5-4ccc-b727-ff7e09ba6302
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276637"
 ---
 # <a name="specifying-soap-actions-for-wcf-send-adapters"></a>为 WCF 发送适配器指定 SOAP 操作
 你可以设置**WCF。操作**WCF 发送适配器传输属性对话框中或业务流程中的上下文属性**表达式**形状。 如果你设置**WCF。操作**业务流程中的上下文属性，您需要离开**操作**字段保留为空白中静态发送端口的 WCF 适配器传输属性对话框。 如果你还在静态发送端口中，指定操作**WCF。操作**将替代在业务流程中设置的上下文属性。  

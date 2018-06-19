@@ -1,14 +1,14 @@
 ---
-title: "AS2 解决方案体系结构 |Microsoft 文档"
-ms.custom: 
+title: AS2 解决方案体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41e493ba-919b-4520-9c12-92d6757984ef
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230045"
 ---
 # <a name="as2-solution-architecture"></a>AS2 解决方案体系结构
 AS2 处理是独立于 EDI 处理执行的。 AS2 消息的接收、处理以及确认的发送均独立于 EDI 负载的处理进行。 因此，AS2 处理与 EDI 处理的设计和配置也是分别完成的。 另外，可使用 AS2 传输 EDI 消息或非 EDI 消息。  

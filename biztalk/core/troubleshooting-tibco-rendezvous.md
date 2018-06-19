@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b7bc3ab-16fa-4e91-8730-9431473b2fb4
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973267"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>解决 TIBCO 会合
   
@@ -46,15 +47,15 @@ Microsoft BizTalk Adapter for TIBCO 会合将错误、 警告和信息消息记�
   
  用于 TIBCO Rendezvous 的 BizTalk 适配器具有三个提供程序。 这样就可以记录不同种类的消息︰  
   
--   **接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。  
+-   **接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。  
   
 -   使用 **-接收方** 以获取已在运行时适配器接收到日志中的任何消息。  
   
--   **发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。  
+-   **发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。  
   
      使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。  
   
--   **管理日志记录提供程序-**\<跟踪元素\>交换机**-管理**。  
+-   **管理日志记录提供程序-**\<跟踪元素\>交换机 **-管理**。  
   
      使用 **-管理**若要获取的服务器系统浏览过程中生成了日志中的任何消息。  
   

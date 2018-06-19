@@ -1,14 +1,14 @@
 ---
-title: "发送和接收加密消息 |Microsoft 文档"
-ms.custom: 
+title: 发送和接收加密消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad7f3391-4961-4ec4-ab37-71c0b9162b59
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269149"
 ---
 # <a name="sending-and-receiving-encrypted-messages"></a>发送和接收加密消息
 本部分提供有关如何配置信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管道，接收位置，端口，并接收和发送的 BizTalk Server 环境加密消息。  

@@ -1,14 +1,14 @@
 ---
-title: "静态适配器 IStaticAdapterConfig 接口 |Microsoft 文档"
-ms.custom: 
+title: 静态适配器 IStaticAdapterConfig 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52f5de01-0cfc-456a-a52b-28f8f076bdfc
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277381"
 ---
 # <a name="static-adapter-istaticadapterconfig-interface"></a>静态适配器 IStaticAdapterConfig 接口
 静态的设计时适配器必须实现**IStaticAdapterConfig**接口。 这使得它可以与“添加适配器元数据向导”进行交互，并从适配器获得服务组织和各个服务的说明。 在向导调用**GetServiceOrganization**和**GetServiceDescription**方法中拉入适配器与之交互的元数据信息并将其添加到 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  

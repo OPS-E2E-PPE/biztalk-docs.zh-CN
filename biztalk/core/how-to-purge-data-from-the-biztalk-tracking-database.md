@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "23129702"
 ---
 # <a name="purge-data-from-the-biztalk-tracking-database"></a>从 BizTalk 跟踪数据库清除数据
 在清除 BizTalk 跟踪 (BizTalkDTADb) 数据库中的数据时，DTA 清除和存档作业将从 BizTalk 跟踪 (BizTalkDTADb) 数据库中清除不同类型的跟踪信息，例如消息和服务实例信息、业务流程事件信息和规则引擎跟踪数据。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/20/2018
   
 4.  在**对象资源管理器详细信息**，右键单击**DTA 清除和存档 (BizTalkDTADb)**，然后选择**属性**。  
   
-5.  在**作业属性-DTA 清除和存档 (BizTalkDTADb)**下**选择页**，选择**步骤**。  
+5.  在**作业属性-DTA 清除和存档 (BizTalkDTADb)** 下**选择页**，选择**步骤**。  
   
 6.  在**作业步骤列表**，选择**存档和清除**，然后选择**编辑**。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/20/2018
     declare @dtLastBackup datetime set @dtLastBackup = GetUTCDate() exec dtasp_PurgeTrackingDatabase 1, 0, 1, @dtLastBackup, 1  
     ```  
     
-9. 上**作业属性-DTA 清除和存档 (BizTalkDTADb)**对话框中，在**选择页**，选择**常规**，选择**已启用**复选框，，然后选择**确定**。  
+9. 上**作业属性-DTA 清除和存档 (BizTalkDTADb)** 对话框中，在**选择页**，选择**常规**，选择**已启用**复选框，，然后选择**确定**。  
   
 ## <a name="see-also"></a>另请参阅  
  [存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)

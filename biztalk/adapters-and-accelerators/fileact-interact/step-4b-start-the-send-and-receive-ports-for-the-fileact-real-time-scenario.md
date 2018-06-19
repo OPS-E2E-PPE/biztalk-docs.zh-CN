@@ -1,14 +1,14 @@
 ---
-title: "步骤 4B： 开始发送端口和接收端口 FileAct 实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4B： 开始发送端口和接收端口 FileAct 实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c56b5f7b-551a-4bd2-97c7-0996f5d1b1a2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225421"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-fileact-real-time-scenario"></a>步骤 4B： 开始发送端口和 FileAct 实时方案接收端口
 在开始此步骤之前，必须完成[步骤 4A： 启动 FileAct 实时方案 SWIFTNet 服务](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-real-time-scenario.md)。  

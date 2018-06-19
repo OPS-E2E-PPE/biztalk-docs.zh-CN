@@ -1,14 +1,14 @@
 ---
-title: "加密 BRE DB 连接 |Microsoft 文档"
-ms.custom: 
+title: 加密 BRE DB 连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63edd2bb-97f1-4b8b-8cdc-f4792909ca86
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005654"
 ---
 # <a name="encrypt-the-connection-to-the-bre-database"></a>加密 BRE 数据库的连接
 根据你的公司的安全策略，请考虑加密：  

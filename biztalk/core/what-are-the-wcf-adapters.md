@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18ca8535-3386-4018-8b5b-d32bdb9ebf70
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291213"
 ---
 # <a name="what-are-the-wcf-adapters"></a>WCF 适配器有哪些？
 共有两种 Windows Communication Foundation (WCF) 适配器：一个接收适配器和一个发送适配器。 使用 WCF 接收适配器可以接收 WCF 服务请求。 WCF 接收适配器接收一个请求、创建一个 BizTalk 消息对象，并将关联的属性升级到消息上下文中。 使用 WCF 发送适配器可调用 WCF 服务。 WCF 发送适配器通过无类型的协定调用 WCF 服务。  

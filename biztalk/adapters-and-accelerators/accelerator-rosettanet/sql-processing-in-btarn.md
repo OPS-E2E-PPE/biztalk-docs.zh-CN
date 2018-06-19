@@ -1,11 +1,11 @@
 ---
-title: "SQL 中 BTARN 处理 |Microsoft 文档"
-ms.custom: 
+title: SQL 中 BTARN 处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - line-of-business applications (LOBs)
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - messages, message flow
 - BTARN, SQL processing
 ms.assetid: cfaf804f-3803-438e-a22e-50f487fe21c3
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005054"
 ---
 # <a name="sql-processing-in-btarn"></a>SQL 中 BTARN 处理
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用 SQL 适配器路由中的业务线 (LOB) 应用程序的消息。 它使用 SQL 发送端口将消息路由至 LOB 应用程序。  

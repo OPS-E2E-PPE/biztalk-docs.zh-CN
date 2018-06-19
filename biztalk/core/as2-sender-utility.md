@@ -1,14 +1,14 @@
 ---
-title: "AS2 发送方实用程序 |Microsoft 文档"
-ms.custom: 
+title: AS2 发送方实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e2a88fc-67fd-4801-a6f8-1e7c92098eaf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232277"
 ---
 # <a name="as2-sender-utility"></a>AS2 发送方实用工具
 AS2 发送方实用工具与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 一起提供，允许您向某一计算机上的网站发送 AS2 消息。 此实用工具可模拟从单独的计算机发送 AS2 消息的过程。  

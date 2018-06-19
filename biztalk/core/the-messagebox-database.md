@@ -1,11 +1,11 @@
 ---
-title: "MessageBox 数据库 |Microsoft 文档"
-ms.custom: 
+title: MessageBox 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - MessageBox database
 - suspended messages, MessageBox database
 ms.assetid: f89eb02c-1b83-4127-8a91-e78fb4a1f96e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279309"
 ---
 # <a name="the-messagebox-database"></a>MessageBox 数据库
 Microsoft BizTalk Server 中发布/订阅引擎的核心是 MessageBox 数据库。 MessageBox 由两个组件构成：一个或多个 Microsoft SQL Server 数据库，以及消息传送代理。 SQL Server 数据库为众多对象提供持久化存储，这些对象包括消息、消息部分、消息属性、订阅、业务流程状态、跟踪数据和用于路由的主机队列等。 BizTalk Server 组可以具有一个或多个 MessageBox 数据库，该组将消息发布到此（这些）数据库中，而订阅这些消息的订户从此（这些）数据库提取消息。  

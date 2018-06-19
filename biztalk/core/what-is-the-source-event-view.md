@@ -1,11 +1,11 @@
 ---
-title: "什么是源事件视图？ | Microsoft Docs"
-ms.custom: 
+title: 什么是源事件视图？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, Source Event view
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, message schemas
 - Tracking Profile Editor, orchestrations
 ms.assetid: 72e74780-8590-484b-899d-cdc3d2a908be
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289477"
 ---
 # <a name="what-is-the-source-event-view"></a>什么是源事件视图？
 “事件源”视图是跟踪配置文件编辑器 (TPE) 显示从程序集中选择的业务流程或消息架构或者映射到活动定义的上下文属性的地方。  

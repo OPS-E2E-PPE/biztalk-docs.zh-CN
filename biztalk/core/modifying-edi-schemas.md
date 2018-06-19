@@ -1,14 +1,14 @@
 ---
-title: "修改 EDI 架构 |Microsoft 文档"
-ms.custom: 
+title: 修改 EDI 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6fa33c5e-17ca-4aaf-a1ca-1972a9bb45ac
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009590"
 ---
 # <a name="modifying-edi-schemas"></a>修改 EDI 架构
 您可以修改 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 附带的现有 EDI 架构。 如果您和您的贸易合作伙伴对标准架构的修改达成一致，并且可能已更改相关的消息实现指南 (MIG) 文件，则可在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 的 BizTalk 编辑器中修改架构。  
@@ -42,15 +43,15 @@ ms.lasthandoff: 12/01/2017
 |更改数据元素可以在文件中出现的最大次数|更改**Max Occurs**属性。|  
 |更改数据元素中的字符数|更改**长度**属性。|  
 |更改数据元素的数据类型|更改**基数据类型**或**日期类型**属性。|  
-|添加自定义字段|插入一个子字段元素架构节点并设置其属性。 **注意：**将子字段特性添加到 EDI 架构中的记录不允许的因为将不能保证元素的序列。 尝试添加子字段属性将导致无效架构。 只能将子字段元素添加到 EDI 架构的记录中。|  
+|添加自定义字段|插入一个子字段元素架构节点并设置其属性。 **注意：** 将子字段特性添加到 EDI 架构中的记录不允许的因为将不能保证元素的序列。 尝试添加子字段属性将导致无效架构。 只能将子字段元素添加到 EDI 架构的记录中。|  
 |添加自定义记录|插入一个子记录架构节点并设置其属性，然后添加子字段元素。|  
 |删除自定义字段或记录|删除自定义字段或自定义记录及其子字段元素。|  
 |启用跨字段验证|批注中的架构的 appinfo 部分中设置跨字段验证标志**是**。 此标志是**X12ConditionDesignator_Check** （对于 X12 或 HIPAA 架构） 或**EdifactDependencyRule_Check** （对于 EDIFACT 架构）。<br /><br /> 通过指定关系条件（X12 和 HIPAA）或依赖规则 (EDIFACT) 为特定元素启用跨字段验证。 有关详细信息，请参阅[配置跨字段验证](../core/configuring-cross-field-validation.md)。<br /><br /> 你还需要设置**Edi 类型验证**属性**是**。<br /><br /> 默认情况下，对 HIPAA 架构启用跨字段验证。|  
 |启用 HIPAA 子文档拆分|在其中一个可以设置子文档拆分中的 HIPAA 架构，设置**subdocument_break**和**Split_Without_Sibling_Data**到架构的属性**是**与**subdocument_creation_break**到架构中的特定元素的属性**是**。<br /><br /> 你还需要设置**入站批处理选项**协议属性**将交换拆分为事务集**。<br /><br /> 有关详细信息，请参阅[拆分 HIPAA 子文档](../core/splitting-hipaa-subdocuments.md)。|  
 |向 HIPAA 文档添加触发器字段|您可以让 EDI 拆装器根据限定元素（称为触发器字段）为 HIPAA 文档中的一段内容创建唯一的 XML 记录。 必须指定描述段的属性和触发器值，从而为该段创建唯一的 XML 记录。 有关详细信息，请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md)。|  
 |向 X12 事务集添加分段|在向 X12 事务集添加新分段时，分段名称的前三个字符用作分段标识符。 因此，建议您命名分段时，前三个字符是唯一的。|  
-|向 HIPAA 事务集添加循环|在向 HIPAA 事务集添加新循环时，建议命名循环时名称中包括“Loop”。 循环的示例格式为“TS837_2010AB_Loop”。 **注意：**在循环中的第一个段是必需的 （段的 minOccurs 必须等于 1） 以避免多义性。|  
-|向 HIPAA 事务集添加“任何顺序循环”|当事务集包含具有不同语义的等效分段时，必须在 SubLoop 中字义这些分段。 与 XML 批注的 SubLoop \<xs:all\>允许等效线段以任意顺序出现。<br /><br /> 建议您在命名“任意顺序循环”时，在循环名称中包含“SubLoop”。 示例格式是"TS837Q1_2010A_SubLoop"**注意：**任何顺序循环的元素必须只出现一次在循环内。 同级 SubLoop 必须将最大出现次数设置为 1 以避免混乱。|  
+|向 HIPAA 事务集添加循环|在向 HIPAA 事务集添加新循环时，建议命名循环时名称中包括“Loop”。 循环的示例格式为“TS837_2010AB_Loop”。 **注意：** 在循环中的第一个段是必需的 （段的 minOccurs 必须等于 1） 以避免多义性。|  
+|向 HIPAA 事务集添加“任何顺序循环”|当事务集包含具有不同语义的等效分段时，必须在 SubLoop 中字义这些分段。 与 XML 批注的 SubLoop \<xs:all\>允许等效线段以任意顺序出现。<br /><br /> 建议您在命名“任意顺序循环”时，在循环名称中包含“SubLoop”。 示例格式是"TS837Q1_2010A_SubLoop"**注意：** 任何顺序循环的元素必须只出现一次在循环内。 同级 SubLoop 必须将最大出现次数设置为 1 以避免混乱。|  
   
 ### <a name="to-modify-an-existing-edi-schema-in-biztalk-editor"></a>在 BizTalk 编辑器中修改现有 EDI 架构  
   

@@ -1,14 +1,14 @@
 ---
-title: "批处理状态报告 |Microsoft 文档"
-ms.custom: 
+title: 批处理状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04dad016-e7bb-45cd-b36a-a9c83d073501
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231797"
 ---
 # <a name="batch-status-report"></a>批处理状态报告
 此报告显示批处理业务流程实例的活动。 报告中的每行都指示出正在由一个批处理业务流程实例处理的批的状态。  

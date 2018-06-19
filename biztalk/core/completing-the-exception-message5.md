@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231253"
 ---
 # <a name="completing-the-exception-message"></a>完成的异常消息
 若要完成的异常，创建发送形状将错误 Message_3 重定向到受监视的文件夹。  

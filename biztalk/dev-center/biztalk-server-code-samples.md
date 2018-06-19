@@ -1,12 +1,13 @@
 ---
-title: "BizTalk Server 代码示例"
-description: "下载 BizTalk Server 示例集合，或浏览的各个示例的列表。"
+title: BizTalk Server 代码示例
+description: 下载 BizTalk Server 示例集合，或浏览的各个示例的列表。
 ms.prod: biztalk-server
 ms.openlocfilehash: 78626ac10d49795a4ba86cf6d92294e4cb6a05d0
 ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289629"
 ---
 # <a name="biztalk-server-code-samples"></a>BizTalk Server 代码示例
 

@@ -1,11 +1,11 @@
 ---
-title: "BAM 是什么？ | Microsoft Docs"
-ms.custom: 
+title: BAM 是什么？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], monitoring
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - monitoring, BAM
 - profiles, BAM
 ms.assetid: 5160026a-1ffe-457e-8b75-35ed9bb3457c
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289757"
 ---
 # <a name="what-is-bam"></a>BAM 是什么？
 业务活动监视 (BAM) 是一套工具，用于管理聚合、警报和配置文件，以监视相关的业务度量（称为关键性能指标或 KPI）。 它能够提供对业务流程的端对端的可见性，还能够给出有关各种操作、流程和交易的状态和结果的精确信息，以便您可以找出问题所在并在企业内解决问题。  

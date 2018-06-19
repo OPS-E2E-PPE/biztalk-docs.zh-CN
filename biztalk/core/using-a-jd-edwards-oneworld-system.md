@@ -1,14 +1,14 @@
 ---
-title: "使用博士 Edwards OneWorld 系统 |Microsoft 文档"
-ms.custom: 
+title: 使用博士 Edwards OneWorld 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5346aa04-ebd7-4545-9062-b349fd73b7f1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287469"
 ---
 # <a name="using-a-jd-edwards-oneworld-system"></a>使用 JD Edwards OneWorld 系统
 可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统中访问 JD Edwards OneWorld 系统。 此适配器是 Microsoft 提供的与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配合使用的一组八个业务线 (LOB) 适配器之一。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
      ![](../core/media/2f58413f-41a9-4ed9-ba5c-1d6d59eafb01.gif "2f58413f-41a9-4ed9-ba5c-1d6d59eafb01")  
   
-     在**地址簿修订版本-[工作与地址]**对话框中，搜索结果显示两条记录。  
+     在**地址簿修订版本-[工作与地址]** 对话框中，搜索结果显示两条记录。  
   
      ![](../core/media/9284df4e-ca9b-48ab-b2bf-a90d765d4a05.gif "9284df4e-ca9b-48ab-b2bf-a90d765d4a05")  
   

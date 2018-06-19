@@ -1,14 +1,14 @@
 ---
-title: "协议在 EDI 处理过程中的角色 |Microsoft 文档"
-ms.custom: 
+title: 协议在 EDI 处理过程中的角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81b0449-6656-49f7-a781-5fd60031b3d5
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279933"
 ---
 # <a name="the-role-of-agreements-in-edi-processing"></a>协议在 EDI 处理中的角色
 组织使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来从一个或多个贸易合作伙伴接收 EDI 消息，以及向其发送 EDI 消息。 然后贸易合作伙伴定义作为组织内业务实体的业务配置文件。 如何将业务配置文件交换消息定义为两个业务配置文件之间的贸易合作伙伴协议的一部分。 有关详细信息，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。  

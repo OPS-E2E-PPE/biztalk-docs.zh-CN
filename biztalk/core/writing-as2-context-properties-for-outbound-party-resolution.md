@@ -1,14 +1,14 @@
 ---
-title: "为出站的参与方解析编写 AS2 上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 为出站的参与方解析编写 AS2 上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 808d63d9-076d-4eed-8420-aee12b130fee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289349"
 ---
 # <a name="writing-as2-context-properties-for-outbound-party-resolution"></a>写入 AS2 上下文属性以进行出站参与方解析
 可以使用 AS2To 上下文属性或 `Http.UserHttpHeaders` 上下文属性中的 AS2To 属性来执行出站 AS2 消息的协议解析。 但是，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在收到 AS2 消息后不会将 AS2To 属性写入上下文。 如果要对 AS2To 或 UserHttpHeaders 上下文属性执行协议解析，您必须写入一个自定义业务流程或自定义管道组件来执行此解析。 只有在发送端口未与此协议链接的情况下才需要进行此解析。  

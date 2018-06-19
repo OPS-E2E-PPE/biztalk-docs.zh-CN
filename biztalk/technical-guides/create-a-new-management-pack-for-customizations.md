@@ -1,14 +1,14 @@
 ---
-title: "为自定义项创建新的管理包 |Microsoft 文档"
-ms.custom: 
+title: 为自定义项创建新的管理包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4ce1ffa0-57c7-41ce-b459-48c36522889e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297589"
 ---
 # <a name="create-a-new-management-pack-for-customizations"></a>为自定义项创建新的管理包
 大多数供应商管理包都被密封，因此你无法更改任何管理包文件中的原始设置。 但是，您可以创建自定义，例如替代或新的监视对象，然后将它们保存到不同管理包。 默认情况下，Operations Manager 2007 R2/2012年将所有自定义项保存到默认管理包。 作为最佳做法，应改为创建单独的管理包为你想要自定义每个密封的管理包。  

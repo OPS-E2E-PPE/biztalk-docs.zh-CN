@@ -1,14 +1,14 @@
 ---
-title: "配置专用的跟踪主机 |Microsoft 文档"
-ms.custom: 
+title: 配置专用的跟踪主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f997bcc2-08fd-4e9a-ba44-542ec8460d6d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010838"
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>配置专用的跟踪主机
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对吞吐量优化，因此主要业务流程和消息传送引擎执行不实际事件或消息直接转至 BizTalk 跟踪 (DTA) 或业务活动监视 (BAM) 数据库，因为这将会从其主这些引擎将转换执行业务流程的作业。 相反，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使 MessageBox 数据库中的事件和消息并将其标记为需要迁移到 BizTalk 跟踪或 BAM 数据库。 后台进程 （跟踪主机），然后移动到 BizTalk 跟踪和 BAM 数据库，SQL Server 代理作业副本跟踪的消息到 BizTalk 跟踪数据库时的事件。  

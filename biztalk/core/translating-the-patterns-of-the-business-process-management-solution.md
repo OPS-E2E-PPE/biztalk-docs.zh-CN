@@ -1,11 +1,11 @@
 ---
-title: "翻译模式的业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 翻译模式的业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, patterns
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, patterns
 - orchestrations, boundaries
 ms.assetid: 69f37732-f235-4bbb-bc85-31b4971c95ce
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279093"
 ---
 # <a name="translating-the-patterns-of-the-business-process-management-solution"></a>翻译模式的业务流程管理解决方案
 本部分将介绍该解决方案如何将模式关系图转换为 BizTalk Server 项目。  

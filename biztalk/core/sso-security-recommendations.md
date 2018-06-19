@@ -1,11 +1,11 @@
 ---
-title: "SSO 安全建议 |Microsoft 文档"
-ms.custom: 
+title: SSO 安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, deploying
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - SSO, user accounts
 - Master Secret server, best practices
 ms.assetid: 7ae922b4-fd48-41f4-aaab-419a5e22c753
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -40,6 +40,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279837"
 ---
 # <a name="sso-security-recommendations"></a>SSO 安全建议
 利用企业单一登录 (SSO) 系统，用户只需使用一组凭据即可连接到不同的系统。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用的敏感信息的存储区作为 SSO 系统。 虽然只要安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 便会自动安装企业单一登录，但您也可以独立于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境将企业单一登录作为独立的组件进行安装。 有关企业单一登录的详细信息，请参阅[使用 SSO](../core/using-sso.md)。 建议遵循以下准则，以保护环境中企业单一登录 (SSO) 服务和资源的安全并对其进行部署。  

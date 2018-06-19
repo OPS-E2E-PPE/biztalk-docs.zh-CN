@@ -1,14 +1,14 @@
 ---
-title: "在 64 位 Windows 操作系统上使用 BizTalk Server 时的注意事项 |Microsoft 文档"
-ms.custom: 
+title: 在 64 位 Windows 操作系统上使用 BizTalk Server 时的注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac630f55-7ebe-4b93-bf98-70b00788520f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008382"
 ---
 # <a name="considerations-while-using-biztalk-server-on-a-64-bit-windows-operating-system"></a>在 64 位 Windows 操作系统上使用 BizTalk Server 时的注意事项
 使用时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 64 位 Windows 操作系统中，确保考虑本主题中所述的问题。 有关 Microsoft BizTalk Server 的 64 位支持的常见问题及问题，请参阅[BizTalk Server 64 位支持](http://go.microsoft.com/fwlink/?LinkID=155306)(http://go.microsoft.com/fwlink/?LinkID=155306)。  

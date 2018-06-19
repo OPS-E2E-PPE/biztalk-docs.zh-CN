@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230429"
 ---
 # <a name="artifacts"></a>项目
 本主题将介绍各个 BizTalk Server 项目。 项目包括 BizTalk 应用程序正常运行所必需的程序集、安全证书、业务规则策略、BAM 配置文件和绑定等。 可以从 BizTalk 管理控制台中查看和管理应用程序的项目。  

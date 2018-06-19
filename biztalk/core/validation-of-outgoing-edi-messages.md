@@ -1,14 +1,14 @@
 ---
-title: "验证对传出的 EDI 消息 |Microsoft 文档"
-ms.custom: 
+title: 验证对传出的 EDI 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 491303c0-b585-409e-a289-a2f6f9f82469
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287989"
 ---
 # <a name="validation-of-outgoing-edi-messages"></a>传出 EDI 消息的验证
 EDI 发送管道处理要发送的消息时，将对信封和消息数据执行一系列验证。 其中一些处理将始终执行，而有些处理将仅在您启用的情况下才执行。 这些验证包括  

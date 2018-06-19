@@ -1,11 +1,11 @@
 ---
-title: "什么是活动视图？ | Microsoft Docs"
-ms.custom: 
+title: 什么是活动视图？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], Activity view [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Activity view
 - Activity view [Tracking Profile Editor]
 ms.assetid: ae6bcdc8-e426-4148-b83d-08a1a5e99ca3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290381"
 ---
 # <a name="what-is-an-activity-view"></a>什么是活动视图？
 活动视图包含导入的 BAM 活动定义，该定义是使用 Excel BAM 外接程序创建的。 BAM 活动定义是业务流程的跟踪要求的摘要。 一个活动可以跨多个业务流程和端口。 您可以导入活动定义一次，然后将其映射到实现定义某些部分的每个业务流程或消息传送项目。  
@@ -73,10 +74,10 @@ ms.lasthandoff: 09/20/2017
   
 |菜单项|用法|  
 |---------------|-----------|  
-|新建继续符|将新的继续符文件夹插入“活动”树中。 从继续符的源段中映射此文件夹的值。<br /><br /> 与 ContinuationID 文件夹结合使用，提供一种在填充同一活动的多个组件之间移交处理的方法。 这些组件包括 BizTalk 业务流程、端口、BufferedEventStreams 和 DirectEventStreams。 **注意：**延续文件夹名称可以包含最多 127 个字符。|  
+|新建继续符|将新的继续符文件夹插入“活动”树中。 从继续符的源段中映射此文件夹的值。<br /><br /> 与 ContinuationID 文件夹结合使用，提供一种在填充同一活动的多个组件之间移交处理的方法。 这些组件包括 BizTalk 业务流程、端口、BufferedEventStreams 和 DirectEventStreams。 **注意：** 延续文件夹名称可以包含最多 127 个字符。|  
 |新建 ContinuationID|将 ContinuationID 文件夹插入“活动”树中。 将此文件夹映射到继续符的 continued-to 段。 例如，如果业务流程 A 继续执行业务流程 B，则此文件夹必须映射到业务流程 B 中的项。<br /><br /> 与继续符文件夹结合使用，提供一种在填充同一活动的多个组件之间移交处理的方法。 这些组件包括 BizTalk 业务流程、端口、BufferedEventStreams 和 DirectEventStreams。 **注意：** ContinuationID 文件夹名称可以包含最多 127 个字符。|  
-|新建关系|将新的关系文件夹插入“活动”树中。 用于发布构成视图的两个活动之间的关系。 **注意：**关系文件夹名称可以包含最多 128 个字符。 其中包括服务器名称和 BizTalk 管理数据库名称。|  
-|新建文档引用 URL|将新的文档引用 URL 文件夹插入“活动”树中。 用于设置指向存储此活动的相关文档的位置的引用 URL。 **注意：**文档引用 URL 文件夹名称可以包含最多 128 个字符。|  
+|新建关系|将新的关系文件夹插入“活动”树中。 用于发布构成视图的两个活动之间的关系。 **注意：** 关系文件夹名称可以包含最多 128 个字符。 其中包括服务器名称和 BizTalk 管理数据库名称。|  
+|新建文档引用 URL|将新的文档引用 URL 文件夹插入“活动”树中。 用于设置指向存储此活动的相关文档的位置的引用 URL。 **注意：** 文档引用 URL 文件夹名称可以包含最多 128 个字符。|  
   
  **属性节点**  
   

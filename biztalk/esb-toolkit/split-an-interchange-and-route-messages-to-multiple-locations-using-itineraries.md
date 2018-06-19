@@ -1,14 +1,14 @@
 ---
-title: "如何： 拆分将交换，并将生成的消息路由到多个文件位置，使用不同的路线 |Microsoft 文档"
-ms.custom: 
+title: 如何： 拆分将交换，并将生成的消息路由到多个文件位置，使用不同的路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccd46bee-e4a1-4846-8bde-b0460bda1e72
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010750"
 ---
 # <a name="how-to-split-an-interchange-and-route-the-resulting-messages-to-multiple-file-locations-using-distinct-itineraries"></a>如何： 拆分将交换，并将生成的消息路由到多个使用不同路线的文件位置
 ## <a name="goal"></a>目的  
@@ -188,7 +189,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a>若要添加客户 GlobalBank 西部选择规则  
   
-1.  在**ResolveItineraryBasedOnCustomer**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
+1.  在**ResolveItineraryBasedOnCustomer**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
   
 2.  在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。  
   
@@ -212,7 +213,7 @@ ms.lasthandoff: 12/01/2017
   
 9. 在事实数据资源管理器，单击**词汇**选项卡。展开**ESB。路线**词汇，展开**版本 1.1**，然后拖动**设置路线名称**定义与**操作**。  
   
-10. 单击**\<空字符串\>**然后键入**GlobalBankWestItinerary**。  
+10. 单击**\<空字符串\>** 然后键入**GlobalBankWestItinerary**。  
   
     > [!NOTE]
     >  更高版本在本操作方法主题中，你将创建处理这些消息的此路线，从 GlobalBank 西部。  
@@ -221,7 +222,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  在策略资源管理器中，右键单击**SetGlobalBankWestItinerary**规则，并依次**复制**。  
   
-2.  右键单击**（不保存） 1.0 版**，然后单击**粘贴**。  
+2.  右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。  
   
 3.  在**新规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。  
   
@@ -233,14 +234,14 @@ ms.lasthandoff: 12/01/2017
   
 7.  在**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。  
   
-8.  单击**\<空字符串\>**然后键入**GlobalBankEastItinerary。**  
+8.  单击**\<空字符串\>** 然后键入**GlobalBankEastItinerary。**  
   
     > [!NOTE]
     >  更高版本在本操作方法主题中，你将创建处理这些消息的此路线，从 GlobalBank 东部。  
   
 #### <a name="to-publish-and-deploy-the-policy"></a>若要发布和部署策略  
   
-1.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略，单击**（不保存） 1.0 版**，然后单击**发布**。  
+1.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略，单击 **（不保存） 1.0 版**，然后单击**发布**。  
   
 2.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略，单击**版本 1.0-发布**，然后单击**部署**。  
   

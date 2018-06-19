@@ -1,14 +1,14 @@
 ---
-title: "使用 BizTalk Server 项目进行单元测试 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk Server 项目进行单元测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2594f29-fc34-4dda-9316-2afd4e0056d7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008118"
 ---
 # <a name="unit-testing-with-biztalk-server-projects"></a>使用 BizTalk Server 项目进行单元测试
 BizTalk Server 引入单元测试可在中启用的功能**部署**BizTalk 项目属性页。 以下屏幕截图显示当你右键单击某个项目并单击时从项目设计器访问此项目设置**属性**。  

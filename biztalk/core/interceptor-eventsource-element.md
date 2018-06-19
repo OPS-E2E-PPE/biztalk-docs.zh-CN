@@ -1,14 +1,14 @@
 ---
-title: "拦截器 EventSource 元素 |Microsoft 文档"
-ms.custom: 
+title: 拦截器 EventSource 元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d78846c1-3984-43af-a13f-9d5c0a66d3b5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257469"
 ---
 # <a name="interceptor-eventsource-element"></a>侦听器 EventSource 元素
 **EventSource**元素提供有关的一个或多个显示在侦听器配置文件中的事件源的信息。 除事件源名称之外，您还需要指示源的技术和清单。  

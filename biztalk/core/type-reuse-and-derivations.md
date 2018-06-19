@@ -1,14 +1,14 @@
 ---
-title: "键入重用和派生 |Microsoft 文档"
-ms.custom: 
+title: 键入重用和派生 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 240145ea-be41-40ce-8edd-3d4d00e2baec
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286613"
 ---
 # <a name="type-reuse-and-derivations"></a>类型重用和派生
 在 XML 架构定义 (XSD) 语言中，复杂的全局类型提供了定义可在架构中各个位置重用并可能进行重新定义的结构化数据类型的机制。 例如，最传统的示例之一是包含姓名、街道、城市、省/自治区等信息的地址结构。 此外，姓名本身可能是包含名字、中名和姓氏字符串的结构。 如果对此复杂结构进行全局定义，则可以在架构中的多个位置使用该结构，例如用于发货地址和帐单邮寄地址。  

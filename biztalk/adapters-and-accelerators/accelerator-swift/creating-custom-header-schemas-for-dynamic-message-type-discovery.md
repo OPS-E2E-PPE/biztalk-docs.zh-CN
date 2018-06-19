@@ -1,11 +1,11 @@
 ---
-title: "为动态的消息类型发现创建自定义标头架构 |Microsoft 文档"
-ms.custom: 
+title: 为动态的消息类型发现创建自定义标头架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, dynamic resolution
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, custom headers
 - header schemas
 ms.assetid: 0c936c57-b533-47ca-9258-576b021fd016
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004326"
 ---
 # <a name="creating-custom-header-schemas-for-dynamic-message-type-discovery"></a>为动态的消息类型发现创建自定义标头架构
 在大多数情况下，应为 SWIFT 反汇编程序 SWIFT 标头架构配置属性来指定默认 SWIFT 标头架构 (Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.HeaderSchema)。 SWIFT 反汇编程序使用默认 SWIFT 标头架构来分析消息标头符合 SWIFT 标准规范，并具有所需的提升到的属性促进动态架构解析 （和"双 type"的子类型解析SWIFT 消息，如 MT574_IRSLST 和 MT574_W8BENO）。 有关默认 SWIFT 标头架构并了解如何 SWIFT 反汇编程序执行架构解析的详细信息，请参阅[动态消息类型发现和架构解决](../../adapters-and-accelerators/accelerator-swift/dynamic-message-type-discovery-and-schema-resolution.md)。  

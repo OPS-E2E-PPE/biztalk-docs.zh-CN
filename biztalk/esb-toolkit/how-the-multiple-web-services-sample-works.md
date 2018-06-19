@@ -1,14 +1,14 @@
 ---
-title: "如何多个 Web 服务的示例工作原理 |Microsoft 文档"
-ms.custom: 
+title: 如何多个 Web 服务的示例工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16680ca7-16cc-47df-8c39-a3311d468a46
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294157"
 ---
 # <a name="how-the-multiple-web-services-sample-works"></a>多个 Web 服务工作原理的示例
 多个 Web 服务示例使用两个单独的方法调用中序列的多个 Web 服务，同时仍能够返回到原始调用方的正确的结果。 一种方法在响应管道中使用自定义管道组件和其他方法使用自定义双向路由基于业务流程的路线服务的关闭负载增加调用需要完成对 Web 请求/响应呼叫时绕过服务。  

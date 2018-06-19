@@ -1,14 +1,14 @@
 ---
-title: "步骤 8： 配置参与方之间贸易合作伙伴协议 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 配置参与方之间贸易合作伙伴协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f532f85-3f09-4b60-b7bb-817ee3c79899
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280013"
 ---
 # <a name="step-8-configure-the-trading-partner-agreement-between-the-parties"></a>步骤 8： 配置参与方之间贸易合作伙伴协议
 ![步骤 8 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  上**确认**页上，在**交换设置**部分中，单击**997 预期**。 选择此复选框可以在收到 850 交换时提示接收管道生成 997 确认。  
   
-    3.  上**验证**下页上**交换设置**部分中，请确保**交换控制编号 （检查重复的 isa13）**选项处于未选中状态。  
+    3.  上**验证**下页上**交换设置**部分中，请确保**交换控制编号 （检查重复的 isa13）** 选项处于未选中状态。  
   
         > [!NOTE]
         >  清除**检查重复的 isa13**属性使您能够接收同一消息的多个实例。  
@@ -101,14 +102,14 @@ ms.lasthandoff: 09/20/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择中的复选框**默认**列。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择中的复选框**默认**列。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|选择你的测试消息的消息类型**850-采购订单**。|  
         |**版本/发行版**|输入的 EDI 版本中， **00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/Edi/X12**。|  
-        |**GS1**|验证**PO-采购订单 (850)**选择。|  
+        |**GS1**|验证**PO-采购订单 (850)** 选择。|  
         |**GS2**|输入**1234567**。<br /><br /> **发件人应用程序 id。**|  
         |**GS3**|输入**0000000**。<br /><br /> **接收方应用程序 id。**|  
-        |**GS4**|选择**CCYYMMDD**。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择**CCYYMMDD**。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择**HHMM**。|  
         |**GS7**|选择**X 的公认的标准委员会 X12**。|  
         |**GS8**|验证**00401**已输入。|  

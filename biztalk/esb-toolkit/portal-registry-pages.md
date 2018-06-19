@@ -1,14 +1,14 @@
 ---
-title: "门户注册表页 |Microsoft 文档"
-ms.custom: 
+title: 门户注册表页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78488c67-293c-4f20-9fd5-705eab2bc324
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294325"
 ---
 # <a name="portal-registry-pages"></a>门户注册表页
 将鼠标移**注册表**选项卡上，一个弹出菜单，提供以下门户注册表任务的列表：  

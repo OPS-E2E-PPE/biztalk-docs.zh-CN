@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31a13377-cc89-4763-ad1b-508a16fc9708
-caps.latest.revision: ''
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009886"
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>事务适配器 （BizTalk Server 示例）
 事务性适配器示例演示如何在处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息期间，根据数据库创建并使用显式 Microsoft 分布式事务处理协调器 (MSDTC) 事务。  
@@ -127,7 +128,7 @@ ms.lasthandoff: 03/28/2018
   
 #### <a name="create-a-receive-port-and-location-that-uses-the-adapter"></a>创建使用该适配器的接收端口和位置  
   
-1.  展开**BizTalk 组 [服务器名称]**中的节点[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
+1.  展开**BizTalk 组 [服务器名称]** 中的节点[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**应用程序**节点，展开**BizTalk 应用程序 1**节点。  
   
 2.  右键单击 **接收端口**, ，然后单击 **新建**, ，选择 **单向接收端口。**  
   

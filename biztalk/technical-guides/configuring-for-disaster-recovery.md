@@ -1,14 +1,14 @@
 ---
-title: "为灾难恢复配置 |Microsoft 文档"
-ms.custom: 
+title: 为灾难恢复配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdafe68-c8bf-4064-afca-6dfd22d15052
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010950"
 ---
 # <a name="configuring-for-disaster-recovery"></a>为灾难恢复配置
 BizTalk Server 日志传送功能扩展现有的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业。 BizTalk Server 日志传送无需手动还原的备份作业，生成的备份集的一系列，并发生系统故障时减少停机时间。 BizTalk Server 日志传送是 BizTalk 灾难恢复过程的关键组件。  

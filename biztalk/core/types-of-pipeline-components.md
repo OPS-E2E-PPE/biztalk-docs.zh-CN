@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286773"
 ---
 # <a name="types-of-pipeline-components"></a>类型的管道组件
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了三种管道组件类型：常规、组装和拆装。 这三种类型均可实现探测功能。 本主题介绍每种组件类型及其通常所用的阶段。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d917b82-62c6-489f-99a9-97e429b6f7c0
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22290413"
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML 和平面文件属性架构和属性
 **http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**命名空间包含可用于配置平面文件汇编器和平面文件反汇编程序管道组件的属性。 以下表所述的属性。  

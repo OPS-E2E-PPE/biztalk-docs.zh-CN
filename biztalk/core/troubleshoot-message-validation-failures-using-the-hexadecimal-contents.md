@@ -1,14 +1,14 @@
 ---
-title: "通过查看挂起的消息的十六进制内容来解决消息验证失败 |Microsoft 文档"
-ms.custom: 
+title: 通过查看挂起的消息的十六进制内容来解决消息验证失败 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cf14cd9-2d4b-43a3-9738-52bfd879e1e4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279565"
 ---
 # <a name="troubleshooting-message-validation-failures-by-viewing-the-hexadecimal-contents-of-suspended-messages"></a>通过查看挂起的消息的十六进制内容来解决消息验证失败
 如果消息由于验证失败而挂起，通过查看消息部分的十六进制表示形式可以帮助确定导致验证失败的原因。 本主题列出了查看挂起消息部分的十六进制表示形式时应遵循的步骤。  

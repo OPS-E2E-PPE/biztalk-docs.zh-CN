@@ -1,15 +1,15 @@
 ---
-title: "删除不完整的活动实例 |Microsoft 文档"
-description: "执行自定义的 RemoveDanglingInstances SQL 脚本，以从 BizTalk Server 中的 BAM 主导入数据库中删除不完整的实例"
-ms.custom: 
+title: 删除不完整的活动实例 |Microsoft 文档
+description: 执行自定义的 RemoveDanglingInstances SQL 脚本，以从 BizTalk Server 中的 BAM 主导入数据库中删除不完整的实例
+ms.custom: ''
 ms.date: 01/18/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7060578c-6267-487b-8530-efa18f9431ce
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27914938"
 ---
 # <a name="remove-incomplete-activity-instances"></a>删除不完整的活动实例
 在部署 BAM 定义文件时，系统会在 BAM 主导入数据库中为在该定义文件中定义的每个活动创建五个表。 这些表分别为：  

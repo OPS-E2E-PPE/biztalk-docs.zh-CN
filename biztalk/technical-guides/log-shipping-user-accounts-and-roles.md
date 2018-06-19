@@ -1,14 +1,14 @@
 ---
-title: "日志传送用户帐户和角色 |Microsoft 文档"
-ms.custom: 
+title: 日志传送用户帐户和角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2056ea90-5e9f-4501-95d6-18c905db4023
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010598"
 ---
 # <a name="log-shipping-user-accounts-and-roles"></a>日志传送用户帐户和角色
 BizTalk Server 日志传送都由 SQL Server 代理作业来自动执行还原的备份和日志的过程。 不正确的权限可能会导致执行 BizTalk Server 日志传送失败还原操作。 配置以将数据库还原的用户帐户必须有权承载 BizTalk 管理数据库的生产数据库实例。 在大多数情况下这意味着，服务帐户为灾难恢复驱动的 BizTalk Server 日志传送作业的 SQL Server 代理作业[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例需要一个登录名和承载对生产数据库实例的权限[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理数据库。 这会假定作为作业所有者已配置 SQL Server 代理服务帐户。  

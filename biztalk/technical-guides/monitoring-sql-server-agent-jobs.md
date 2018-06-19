@@ -1,14 +1,14 @@
 ---
-title: "监视 SQL Server 代理作业 |Microsoft 文档"
-ms.custom: 
+title: 监视 SQL Server 代理作业 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60d0a377-c86d-429b-9e48-c37bd5b0f912
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298957"
 ---
 # <a name="monitoring-sql-server-agent-jobs"></a>监视 SQL Server 代理作业
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括执行重要的功能使你的服务器操作和正常运行的多个 SQL Server 代理作业。 您应该监视这些作业的运行状况，确保它们无错运行。  

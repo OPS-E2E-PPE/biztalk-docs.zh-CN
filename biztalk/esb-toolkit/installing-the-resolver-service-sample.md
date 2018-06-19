@@ -1,14 +1,14 @@
 ---
-title: "安装解析程序服务示例 |Microsoft 文档"
-ms.custom: 
+title: 安装解析程序服务示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fce9bbeb-9377-41af-8ca7-740ce4d1f617
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009574"
 ---
 # <a name="installing-the-resolver-service-sample"></a>安装解析程序服务示例
 本部分介绍安装解析程序服务示例的过程。 解析程序服务依赖于[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心解决方案。 安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心自动将复制和安装此示例为正确的位置所需的核心程序集。  

@@ -1,14 +1,14 @@
 ---
-title: "配置警报队列选项和通知 |Microsoft 文档"
-ms.custom: 
+title: 配置警报队列选项和通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f78afbf9-6e27-4887-8424-f265fbd8448a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290149"
 ---
 # <a name="configuring-alert-queue-options-and-notifications"></a>配置警报队列选项和通知
 ESB 管理门户使用 ESB 警报服务来生成警报，如错误消息到达门户中，并使用 ESB 通知服务进行排队，并将警报通知发送到订阅警报的用户。 你可以编辑这些服务在 ESB 管理门户中使用的设置。  

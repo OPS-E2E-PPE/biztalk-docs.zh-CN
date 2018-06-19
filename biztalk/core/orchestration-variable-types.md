@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264573"
 ---
 # <a name="orchestration-variable-types"></a>业务流程变量类型
 您可以声明以下预定义类型的变量：  

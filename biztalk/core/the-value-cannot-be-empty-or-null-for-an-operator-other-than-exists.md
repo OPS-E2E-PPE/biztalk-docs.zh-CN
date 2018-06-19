@@ -1,14 +1,14 @@
 ---
-title: "值不能为空或 null 以外 Exists 运算符 |Microsoft 文档"
-ms.custom: 
+title: 值不能为空或 null 以外 Exists 运算符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44de42c8-eab7-4b13-b55a-d33eabe75c52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279661"
 ---
 # <a name="the-value-cannot-be-empty-or-null-for-an-operator-other-than-exists"></a>对于除 Exists 之外的运算符来说，值不能为空或为 Null
 ## <a name="details"></a>详细信息  

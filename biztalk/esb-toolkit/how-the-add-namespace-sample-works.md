@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c76a90a9-5898-43b3-98af-ff546dd97153
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22294381"
 ---
 # <a name="how-the-add-namespace-sample-works"></a>如何添加 Namespace 示例的工作机制
 第一，第二和第四个测试使用**添加 Namespace**组件位于 NamespaceSampleReceivePipeline 管道。 它将作为输入具有根节点，如下所示上没有命名空间的文档：  

@@ -1,17 +1,17 @@
 ---
-title: "使用管道设计器 |Microsoft 文档"
-ms.custom: 
+title: 使用管道设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Pipeline Designer, how to
 - pipelines, Pipeline Designer
 ms.assetid: bdb2f5c7-f8a2-4bd6-a8d8-8b7a64f97bd0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287829"
 ---
 # <a name="using-pipeline-designer"></a>使用管道设计器
 管道设计器是一个以 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 为宿主的图形编辑器，使用该设计器，可以创建新的管道；查看 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 附带的管道模板；在管道中移动管道组件以及配置管道、阶段和管道组件。  

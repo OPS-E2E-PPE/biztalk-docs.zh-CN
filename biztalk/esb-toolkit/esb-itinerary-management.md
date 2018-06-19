@@ -1,14 +1,14 @@
 ---
-title: "ESB 路线管理 |Microsoft 文档"
-ms.custom: 
+title: ESB 路线管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f78240de-34da-4751-aceb-b69d81403124
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294333"
 ---
 # <a name="esb-itinerary-management"></a>ESB 路线管理
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供有关 ESB 路线管理两个不同的选项： 集中式分散。 本部分讨论每个这些选项的好处和风险。  

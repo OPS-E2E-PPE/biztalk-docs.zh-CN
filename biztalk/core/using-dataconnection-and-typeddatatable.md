@@ -1,11 +1,11 @@
 ---
-title: "使用数据连接和 TypedDataTable |Microsoft 文档"
-ms.custom: 
+title: 使用数据连接和 TypedDataTable |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Retract function [Business Rules Engine], TypedData table
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Update function [Business Rules Engine], TypedData table
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: e825803e-6626-4ddd-a77e-75a3ba2b74a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287541"
 ---
 # <a name="using-dataconnection-and-typeddatatable"></a>使用数据连接和 TypedDataTable
 在许多情况下，使用**该组**提供更好的性能和使用较少的内存比使用**TypedDataTable**。 但是， **TypedDataTable**可能要求在某些情况下，由于某些限制使用**该组**。 在某些其他情况下，使用**TypedDataTable**可能会产生更好的性能比使用**该组**。 本主题介绍了在选择正确的方法时应考虑的条件和因素。  

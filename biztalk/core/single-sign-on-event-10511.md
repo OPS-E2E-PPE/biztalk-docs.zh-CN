@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10511 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10511 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98371982-0db5-4ae0-9f92-f05a58e23b83
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271509"
 ---
 # <a name="single-sign-on-event-10511"></a>单一登录： 事件 10511
 ## <a name="details"></a>详细信息  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 -   如果您担心发生更大范围的配置故障，请对该产品取消配置，然后使用配置程序重新配置。  
   
--   也可以使用 SSO 安装目录（通常为 C:\Program Files\Common Files\Enterprise Single Sign-On）中的 SSO 命令行工具 ssoconfig.exe 来设置这些具体的缺失注册表项。 您的 SSO 安装目录可能有所不同。 使用**-setDB**选项来设置所需的 SQL Server 和 SSO 数据库名称。  
+-   也可以使用 SSO 安装目录（通常为 C:\Program Files\Common Files\Enterprise Single Sign-On）中的 SSO 命令行工具 ssoconfig.exe 来设置这些具体的缺失注册表项。 您的 SSO 安装目录可能有所不同。 使用 **-setDB**选项来设置所需的 SQL Server 和 SSO 数据库名称。  
   
  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
   

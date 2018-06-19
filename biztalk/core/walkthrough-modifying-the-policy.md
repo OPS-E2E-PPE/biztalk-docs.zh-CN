@@ -1,14 +1,14 @@
 ---
-title: "演练： 修改策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 修改策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd74440-2a45-4a1a-8e36-98796e1e1392
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289669"
 ---
 # <a name="walkthrough-modifying-the-policy"></a>演练： 修改策略
 本演练提供有关创建的新版本的分步说明**POVocabulary**，创建的新版本**ProcessPurchaseOrder**策略，以及使用的最新版本**POVocabulary**的新版本中**ProcessPurchaseOrder**策略。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  右键单击**POVocabulary**，然后单击**粘贴词汇版本**。  
   
-5.  双击**数目的项允许的最大**中**（不保存） 1.1 版**以启动词汇定义向导。  
+5.  双击**数目的项允许的最大**中 **（不保存） 1.1 版**以启动词汇定义向导。  
   
 6.  单击 **“下一步”**。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 单击 **“完成”**。  
   
-10. 右键单击**（不保存） 1.1 版**，然后单击**保存**。  
+10. 右键单击 **（不保存） 1.1 版**，然后单击**保存**。  
   
 11. 右键单击**版本 1.1**，然后单击**发布**。  
   

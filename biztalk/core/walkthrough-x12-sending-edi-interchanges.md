@@ -1,14 +1,14 @@
 ---
-title: "演练 (X12)： 发送 EDI 交换 |Microsoft 文档"
-ms.custom: 
+title: 演练 (X12)： 发送 EDI 交换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05533821-b9eb-44bc-af65-b6fb0b545137
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292013"
 ---
 # <a name="walkthrough-x12-sending-edi-interchanges"></a>演练 (X12)：发送 EDI 交换
 本演练将介绍使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为发送 EDI 交换创建解决方案的分步操作过程。  
@@ -135,7 +136,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**传输**部分中，选择**类型**，例如，**文件**。  
   
-5.  如果使用的文件类型，请单击**配置**。 在**目标文件夹**，浏览到要发送到交换的文件夹。 有关**文件名**，输入**%MessageID%.edi**。 单击 **“确定”**。  
+5.  如果使用的文件类型，请单击**配置**。 在**目标文件夹**，浏览到要发送到交换的文件夹。 有关**文件名**，输入 **%MessageID%.edi**。 单击 **“确定”**。  
   
 6.  在**发送管道**，选择**EdiSend**。  
   
@@ -233,14 +234,14 @@ ms.lasthandoff: 09/20/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择中的复选框**默认**列。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择中的复选框**默认**列。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|选择你的测试消息的消息类型**850-采购订单**。|  
         |**版本/发行版**|输入的 EDI 版本中， **00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/BizTalk/Edi/X12/2006**。|  
         |**GS1**|验证是否已选中测试消息的消息类型， **PO-采购订单 (850)**。|  
         |**GS2**|输入应用程序发送方的值。|  
         |**GS3**|输入应用程序接收方的值。|  
-        |**GS4**|选择所需的日期格式。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择所需的日期格式。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择所需的时间格式。|  
         |**GS7**|选择**X 的公认的标准委员会 X12**。|  
         |**GS8**|验证 EDI 版本具有输入**00401**。|  

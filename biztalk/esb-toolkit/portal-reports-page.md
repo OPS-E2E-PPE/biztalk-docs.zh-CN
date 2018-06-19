@@ -1,14 +1,14 @@
 ---
-title: "门户报表页 |Microsoft 文档"
-ms.custom: 
+title: 门户报表页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51d793cc-dcea-4c29-883b-a5045d39d4f6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294597"
 ---
 # <a name="portal-reports-page"></a>门户报告页
 门户报表页上，显示在图 1 中，显示以下图表：  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 -   单击**SelectApplications**链接上方的第一个图表，然后选择或清除复选框中显示的已安装 Microsoft BizTalk Server 应用程序的列表。 你也可以使用显示选择所有或应用程序的任何链接。 单击**保存**以显示所选应用程序的信息或单击**取消**放弃所做的更改。  
   
--   使用在第一个图表上方的下拉列表选择对其所需的图表以显示数据的间隔。 你可以选择包括上一个数据**小时、 天、 周、 月、 季度、 每年，**或**所有**。  
+-   使用在第一个图表上方的下拉列表选择对其所需的图表以显示数据的间隔。 你可以选择包括上一个数据**小时、 天、 周、 月、 季度、 每年，** 或**所有**。  
   
 -   单击其中一个页后，可以显示数据的细分由应用程序中的服务中的图表。 具体取决于图表选择，这将显示单个故障、 警报、 错误类型、 重新提交或为每个服务的警报订阅的计数或趋势行。  
   

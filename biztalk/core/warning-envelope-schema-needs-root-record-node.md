@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288285"
 ---
 # <a name="warning---envelope-schema-needs-root-record-node"></a>警告-信封架构需要根记录节点
 **错误代码**  

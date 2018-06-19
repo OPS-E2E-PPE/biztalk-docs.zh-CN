@@ -1,14 +1,14 @@
 ---
-title: "规划高 Availability2 |Microsoft 文档"
-ms.custom: 
+title: 规划高 Availability2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65271fd5-5294-406f-87f8-3aa394c235a2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008326"
 ---
 # <a name="planning-for-high-availability"></a>规划高可用性
 BizTalk Server 的高可用性侧重于恢复可能会中断 BizTalk Server 部署中的可用性的功能组件。  
@@ -46,8 +47,8 @@ BizTalk Server 的高可用性侧重于恢复可能会中断 BizTalk Server 部�
 |组件或依赖项|故障的范围|  
 |-----------------------------|----------------------|  
 |SQL Server|系统级。 如果 SQL Server 失败 BizTalk Server 将不能处理的文档。|  
-|主密钥服务器|系统级。 如果主密钥服务器失败 BizTalk Server 将不能处理的文档。 <br/>**注意：**如果主密钥服务器失败，BizTalk 组中的每个 BizTalk 服务器将继续使用缓存的内存中副本的主密钥，直到重新启动该 BizTalk 服务器上的企业 SSO 服务。 如果企业 SSO 服务 BizTalk 服务器上重新启动，然后从内存中释放主密钥的缓存的副本，并 BizTalk 服务器必须能够联系以获取主密钥的另一个副本的主密钥服务器。 不重新启动 BizTalk 服务器上的企业 SSO 服务在组中如果主密钥服务器失败并且你希望 BizTalk 服务器继续处理文档。|  
-|MSDTC|服务器。 如果 MSDTC 失败，则将失败，对于需要事务支持服务器上的任何组件。 <br/>**注意：**因为 SQL Server 和主密钥服务器依赖于 MSDTC 事务支持，如果 SQL server 或主密钥服务器上的 MSDTC 失败，故障的范围将成为系统范围。 在运行时操作期间与 SQL Server 和主密钥服务器通信时，BizTalk Server 需要事务的支持。|  
+|主密钥服务器|系统级。 如果主密钥服务器失败 BizTalk Server 将不能处理的文档。 <br/>**注意：** 如果主密钥服务器失败，BizTalk 组中的每个 BizTalk 服务器将继续使用缓存的内存中副本的主密钥，直到重新启动该 BizTalk 服务器上的企业 SSO 服务。 如果企业 SSO 服务 BizTalk 服务器上重新启动，然后从内存中释放主密钥的缓存的副本，并 BizTalk 服务器必须能够联系以获取主密钥的另一个副本的主密钥服务器。 不重新启动 BizTalk 服务器上的企业 SSO 服务在组中如果主密钥服务器失败并且你希望 BizTalk 服务器继续处理文档。|  
+|MSDTC|服务器。 如果 MSDTC 失败，则将失败，对于需要事务支持服务器上的任何组件。 <br/>**注意：** 因为 SQL Server 和主密钥服务器依赖于 MSDTC 事务支持，如果 SQL server 或主密钥服务器上的 MSDTC 失败，故障的范围将成为系统范围。 在运行时操作期间与 SQL Server 和主密钥服务器通信时，BizTalk Server 需要事务的支持。|  
 |BizTalk 主机实例|服务器。 存放在一个 BizTalk 主机实例的任何组件将不能参与文档处理，如果主机实例失败。|  
 |Microsoft 消息队列 (MSMQ)|服务器。 如果 MSMQ 失败然后依赖于 MSMQ 服务，诸如 MSMQ 适配器的任何文档处理将暂停服务器上。|  
 |文件系统|服务器。 如果文件系统失败然后依赖于文件系统中，诸如文件适配器的任何文档处理将暂停服务器上。|  

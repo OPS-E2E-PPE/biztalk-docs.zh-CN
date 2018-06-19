@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22287549"
 ---
 # <a name="tutorial-3-as2-tutorial"></a>教程 3: AS2 教程
 在本教程中，你将设置一个通过 HTTP 传输接收和发送 EDIINT/AS2 编码消息的解决方案。  

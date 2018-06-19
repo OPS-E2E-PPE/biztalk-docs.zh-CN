@@ -1,17 +1,17 @@
 ---
 redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
-title: "配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目 |Microsoft 文档"
-ms.custom: 
+title: 配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2555712a-dfe4-420e-9a61-1d1a6d98c322
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/09/2017
+ms.locfileid: "24054581"
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目
 将 VSTS 设置为自动部署[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]项目。 

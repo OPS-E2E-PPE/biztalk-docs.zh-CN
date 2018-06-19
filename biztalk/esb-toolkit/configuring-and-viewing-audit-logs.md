@@ -1,14 +1,14 @@
 ---
-title: "配置和查看审核日志 |Microsoft 文档"
-ms.custom: 
+title: 配置和查看审核日志 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c725bf04-d59f-42c1-b327-b4268421689c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289837"
 ---
 # <a name="configuring-and-viewing-audit-logs"></a>配置和查看审核日志
 ESB 管理门户维护帮助你监视使用情况和跟踪问题的操作的审核日志。 管理员可以指定该门户将写入审核日志的事件。  

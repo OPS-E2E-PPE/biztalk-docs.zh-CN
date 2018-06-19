@@ -1,14 +1,14 @@
 ---
-title: "BAM API 示例 |Microsoft 文档"
-ms.custom: 
+title: BAM API 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32a925f2-c7f4-4111-9c59-8865f15c6a89
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710448"
 ---
 # <a name="bam-api-biztalk-server-sample"></a>BAM API（BizTalk Server 示例）
 BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以保存可以监视的关键信息。  
@@ -92,7 +93,7 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
  除了 Visual Studio 解决方案中，该示例还包含定义的活动的 Microsoft Excel 文件。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 你可以找到在此示例*\<示例路径\>*\BAM\BamApiSample。  
+ 你可以找到在此示例*\<示例路径\>* \BAM\BamApiSample。  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -116,16 +117,16 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
   
 ## <a name="run-the-bam-api-sample"></a>运行 BAM API 示例  
   
-1.  打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\ BamApiSample\setup.bat。  
+1.  打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\ BamApiSample\setup.bat。  
   
-2.  作为管理员，启动 Visual Studio 并打开*\<示例路径\>*\BAM\ BamApiSample\BamApiSample.sln 解决方案。 
+2.  作为管理员，启动 Visual Studio 并打开*\<示例路径\>* \BAM\ BamApiSample\BamApiSample.sln 解决方案。 
   
     > [!IMPORTANT]
     >  必须注释掉 BamApiSample.cs 文件中的行 `//#define Interceptor`。请勿从该行中删除 “//”。 BAM API 示例只使用不在 `#if Interceptor` 的预处理器指令内的代码。  
   
 3.  生成解决方案。  
   
-4.  运行*\<示例路径\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe。  
+4.  运行*\<示例路径\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe。  
   
      输出将如下所示︰  
   

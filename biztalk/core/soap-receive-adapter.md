@@ -1,17 +1,17 @@
 ---
-title: "SOAP 接收适配器 |Microsoft 文档"
-ms.custom: 
+title: SOAP 接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, receive adapters
 - receive adapters, SOAP adapters
 ms.assetid: bb968fa8-0515-4f3a-bb39-9effb83e960c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278389"
 ---
 # <a name="soap-receive-adapter"></a>SOAP 接收适配器
 您可以使用 SOAP 接收适配器来接收 Web Services 请求。 SOAP 接收适配器可创建 BizTalk 消息对象，并将关联的属性升级到消息上下文中。  

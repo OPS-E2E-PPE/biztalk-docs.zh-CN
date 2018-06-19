@@ -1,14 +1,14 @@
 ---
-title: "HubScenario 示例 |Microsoft 文档"
-ms.custom: 
+title: HubScenario 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb6990ec-aea2-4362-8573-7f737a4fc7f1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006342"
 ---
 # <a name="hubscenario-sample"></a>HubScenario 示例
 HubScenario 示例演示在网络集线器方案中如何管理消息传输。 该示例将发送到中间网络集线器的消息转换为发送到最终接收人的消息。  

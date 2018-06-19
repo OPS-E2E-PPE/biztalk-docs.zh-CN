@@ -1,11 +1,11 @@
 ---
-title: "XSD 元素组 |Microsoft 文档"
-ms.custom: 
+title: XSD 元素组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XSLT, XSLT variations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - XSD element groups
 - XSLT, warnings
 ms.assetid: a6ea22cb-6066-480e-8a2a-75fade3e5970
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289533"
 ---
 # <a name="xsd-element-groups"></a>XSD 元素组
 通过在架构中使用某些结构，可以在 BizTalk 映射器生成的可扩展样式表语言转换 (XSLT) 中创建变体。  

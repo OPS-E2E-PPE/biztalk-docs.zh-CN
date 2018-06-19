@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/mqseries-adapter-deployment-options
-redirect_document_id: 
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2aa74be2d86bcb8f32661fdcf06727eb6391861d
 ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710704"
 ---
 # <a name="using-mqseries-adapter-with-an-earlier-version-of-the-adapter"></a>MQSeries 适配器使用早期版本的适配器
 MQSeries 适配器的不同 BizTalk Server 版本可以所有使用同一个远程 WebSphere MQ 服务器上 Windows。 这是由于与 MQSeries 适配器一起使用的以下版本的 COM+ 应用程序可以同时存在于同一 WebSphere MQSeries 计算机上：  

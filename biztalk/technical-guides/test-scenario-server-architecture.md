@@ -1,14 +1,14 @@
 ---
-title: "测试方案服务器体系结构 |Microsoft 文档"
-ms.custom: 
+title: 测试方案服务器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e3afb57-c3ff-4314-9605-cf9fe936e63f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010846"
 ---
 # <a name="test-scenario-server-architecture"></a>测试方案服务器体系结构
 本主题概述了在负载测试期间的服务器和对其执行负载测试的不同服务器体系结构之间的消息流。  

@@ -1,11 +1,11 @@
 ---
-title: "安全案例研究： 公司 B |Microsoft 文档"
-ms.custom: 
+title: 安全案例研究： 公司 B |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - architecture, security
 - security, case studies
 ms.assetid: 48bbb347-919a-435e-b7b1-34a4c0e65e59
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270477"
 ---
 # <a name="security-case-studies-company-b"></a>安全案例研究： 公司 B
 公司 B 是一家软件公司。 其业务模式依赖于与主要客户和主要供应商之间的电子事务。 公司 B 的事务通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 实现。  

@@ -1,14 +1,14 @@
 ---
-title: "解决 BAM |Microsoft 文档"
-ms.custom: 
+title: 解决 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e63299a8-5c74-4337-ba20-3213e0c6ea1f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710252"
 ---
 # <a name="troubleshooting-bam"></a>故障排除 BAM
 本主题提供了帮助你解决使用业务活动监视 (BAM) 时可能遇到的问题的信息。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 02/28/2018
   
 2.  在 **用户帐户控制** 对话框中，单击 **继续**。  
   
-3.  在 Internet Explorer 地址栏中，键入`http://<server>/BAM`，其中*\<服务器\>*是运行 BAM 门户的计算机的名称。  
+3.  在 Internet Explorer 地址栏中，键入`http://<server>/BAM`，其中*\<服务器\>* 是运行 BAM 门户的计算机的名称。  
   
 ## <a name="bam-portal-does-not-work-if-invalid-users-are-granted-permissions"></a>如果向无效用户授予权限，BAM 门户则不起作用  
  如果将具有 BAM 查看权限的 AD 用户从 AD 中删除，则 BAM 门户不会为任何用户正确加载（DBO 除外）。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试解决方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60c39521-eee2-49f7-a9f9-2dfb9ab468e9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277405"
 ---
 # <a name="step-4-test-the-solution"></a>步骤 4： 测试解决方案
 在本主题中，你将在与 FILE 接收端口关联的文件夹中放置一个虚拟请求消息，以便对解决方案进行测试。 只是为了调用 dummy 请求消息中所述，放置**WCF WebHttp**发送端口。 你可以创建如下所示的虚拟请求消息：  

@@ -1,14 +1,14 @@
 ---
-title: "跟踪在 BizTalk Server 应用程序中的项目之间依赖项 |Microsoft 文档"
-ms.custom: 
+title: 跟踪在 BizTalk Server 应用程序中的项目之间依赖项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 503cadfc-08e5-4b34-94a2-3b0ea6ad6228
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279949"
 ---
 # <a name="tracking-dependencies-between-artifacts-in-a-biztalk-server-application"></a>跟踪 BizTalk Server 应用程序中的项目之间的依存关系
 典型的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序包括各种项目，如业务流程、发送端口、接收位置、管道、架构、映射等。 所有这些项目均相互依存。 下表列出了这些依存关系：  

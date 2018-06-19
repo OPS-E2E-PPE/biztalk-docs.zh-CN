@@ -1,11 +1,11 @@
 ---
-title: "为私有进程业务流程中定义的业务规则 |Microsoft 文档"
-ms.custom: 
+title: 为私有进程业务流程中定义的业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -37,7 +37,7 @@ helpviewer_keywords:
 - private processes, business rules
 - policies, creating
 ms.assetid: 5d2b0257-1b15-482b-a562-798b808e9a2d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -46,6 +46,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010526"
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a>为私有进程业务流程中定义的业务规则
 你可以定义确认专用流程中使用的业务规则。 这使你可以动态修改业务规则，而无须停止专用业务流程。 此过程使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 业务规则引擎， 它包括以下步骤：  
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  在属性窗格中 （左下角），设置**名称**属性设置为适当的词汇和然后按名称**Enter**。  
   
-5.  展开你刚创建的词汇文件夹，右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。  
+5.  展开你刚创建的词汇文件夹，右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。  
   
 6.  上**词汇定义向导**页上，选择**常量值、 值的范围或设置的值**，然后单击**下一步**。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-define-get-and-set-elements"></a>定义 Get 和 Set 元素  
   
-1.  在业务规则编辑器，在事实数据资源管理器窗格中，在中"若要添加新的词汇过程"，创建的词汇文件夹下右键单击**（不保存） 1.0 版**，然后单击**添加新定义**.  
+1.  在业务规则编辑器，在事实数据资源管理器窗格中，在中"若要添加新的词汇过程"，创建的词汇文件夹下右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**.  
   
 2.  上**词汇定义向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-save-and-publish-the-vocabulary"></a>保存和发布词汇  
   
-1.  在业务规则编辑器，在你创建的词汇文件夹下的事实数据资源管理器窗格中，右击**（不保存） 1.0 版**，然后单击**保存**。  
+1.  在业务规则编辑器，在你创建的词汇文件夹下的事实数据资源管理器窗格中，右击 **（不保存） 1.0 版**，然后单击**保存**。  
   
 2.  在事实数据资源管理器窗格中的在 3A4PurchaseOrderVocabulary 文件夹，右键单击**版本 1.0**，然后选择**发布**。  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  在属性窗格中，设置**名称**到相应的策略名称的属性。  
   
-4.  对于新策略，文件夹下的策略资源管理器窗格中右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。  
+4.  对于新策略，文件夹下的策略资源管理器窗格中右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。  
   
 5.  单击**规则 1**。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-save-publish-and-deploy-the-policy"></a>保存、发布并部署策略  
   
-1.  完成后在业务规则编辑器中的规则，定义你创建的策略文件夹下的策略资源管理器窗格中，右键单击**（不保存） 1.0 版**，然后单击**保存**。  
+1.  完成后在业务规则编辑器中的规则，定义你创建的策略文件夹下的策略资源管理器窗格中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。  
   
 2.  在你创建的策略文件夹下的策略资源管理器窗格中，右键单击**版本 1.0**，然后单击**发布**。  
   

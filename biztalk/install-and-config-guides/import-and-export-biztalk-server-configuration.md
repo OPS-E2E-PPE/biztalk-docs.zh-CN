@@ -1,15 +1,15 @@
 ---
-title: "导入和导出 BizTalk Server 配置 |Microsoft 文档"
-description: "步骤，若要应用，导入、 导出或取消配置组件，并更新数据库和 BizTalk Server 中的服务帐户"
-ms.custom: 
+title: 导入和导出 BizTalk Server 配置 |Microsoft 文档
+description: 步骤，若要应用，导入、 导出或取消配置组件，并更新数据库和 BizTalk Server 中的服务帐户
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6206ed8-d087-44cc-8ab5-da5d8a28e09a
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300125"
 ---
 # <a name="import-and-export-biztalk-server-configuration"></a>导入和导出 BizTalk Server 配置
 “BizTalk Server 配置”可提供对本地计算机上已安装功能的配置状态的高级分析。 使用该工具，可以配置功能或取消对功能的配置、配置安全设置，以及导入和导出配置。  

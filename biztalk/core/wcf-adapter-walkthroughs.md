@@ -1,17 +1,17 @@
 ---
-title: "WCF 适配器演练 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器演练 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF adapters, tutorials
 - tutorials, WCF adapters
 ms.assetid: 84262b2b-e91a-477c-984f-863f9cd11f6b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288637"
 ---
 # <a name="wcf-adapter-walkthroughs"></a>WCF 适配器演练
 本部分中的演练有助于你学习如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 WCF 适配器。 这些演练提供了使用 WCF 适配器执行任务或者使用此适配器的功能的分步说明。  

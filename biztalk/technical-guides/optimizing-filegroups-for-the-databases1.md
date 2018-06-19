@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010878"
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>数据库优化文件组
 文件输入/输出 (I/O) 争用经常是限制因素或在生产 BizTalk Server 环境中的形成瓶颈。 BizTalk Server 是一个非常数据库密集型应用程序和 BizTalk Server 使用的 SQL Server 数据库又是非常文件 I/O 密集型。  

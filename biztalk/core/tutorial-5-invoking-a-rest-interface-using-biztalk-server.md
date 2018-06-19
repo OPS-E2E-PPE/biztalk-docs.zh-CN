@@ -1,14 +1,14 @@
 ---
-title: "教程 5： 调用 REST 接口使用 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 教程 5： 调用 REST 接口使用 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73871ca3-abd0-45ae-b379-6df76a967a80
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287293"
 ---
 # <a name="tutorial-5-invoking-a-rest-interface-using-biztalk-server"></a>教程 5： 调用 REST 接口使用 BizTalk Server
 本部分提供了有关如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 调用 REST 终结点的分步概览。 在本教程中，你将调用 [!INCLUDE[winazure](../includes/winazure-md.md)] Marketplace 中的 REST 终结点，该终结点将返回美国航空公司航班的延误情况。 本教程将使用新**WCF WebHttp**中引入的适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来调用 REST 终结点。  

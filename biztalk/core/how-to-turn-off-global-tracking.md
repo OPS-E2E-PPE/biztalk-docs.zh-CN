@@ -1,14 +1,14 @@
 ---
-title: "如何关闭全局跟踪 |Microsoft 文档"
-ms.custom: 
+title: 如何关闭全局跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eae3059a-cbdd-47c4-84cd-edfb5480b9fa
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007094"
 ---
 # <a name="how-to-turn-off-global-tracking"></a>如何关闭全局跟踪
 默认情况下，安装 BizTalk Server 时，被启用全局跟踪。 BizTalk 跟踪 (BizTalkDTADb) 数据库的大小随着 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理系统上的数据而增大。 如果 BizTalk 跟踪数据库的大小导致磁盘性能下降，则可以从跟踪数据库中清除数据。 如果存在通过清除 BizTalk 跟踪数据库暂时得以解决的性能问题，并且希望对 BizTalk 进行控制以便不再收集跟踪信息，则可能要考虑禁用全局跟踪功能。  

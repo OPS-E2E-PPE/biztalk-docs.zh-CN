@@ -1,11 +1,11 @@
 ---
-title: "什么是事件跟踪？ | Microsoft Docs"
-ms.custom: 
+title: 什么是事件跟踪？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [HAT tracking], events
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Tracking database, DTA_Services audit table
 - events, HAT
 ms.assetid: dd211752-d1af-4287-967a-908b8d067ebb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289189"
 ---
 # <a name="what-is-event-tracking"></a>什么是事件跟踪？
 跟踪消息事件数据是基于事件（例如，服务开始或结束时，或发送或接收消息时）进行的。 消息事件跟踪过程会返回一个已发生事件的列表，这样您就可以查看基于所设置的跟踪筛选器发生的所有事件。  

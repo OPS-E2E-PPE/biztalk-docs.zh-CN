@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288493"
 ---
 # <a name="wcf-customisolated-adapter"></a>WCF CustomIsolated 适配器
 WCF CustomIsolated 适配器是一个独立的适配器，来允许配置的绑定和行为设置为 Windows Communication Foundation (WCF) 适用于通过 HTTP 传输接收位置[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 您可在标准 WCF 适配器不支持的情况下使用 WCF-CustomIsolated 适配器。 WCF CustomIsolated 适配器还可以使用中的 WCF 扩展性点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

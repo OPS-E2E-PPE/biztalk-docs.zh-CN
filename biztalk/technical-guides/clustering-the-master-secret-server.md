@@ -1,14 +1,14 @@
 ---
-title: "群集主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 群集主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14aa3622-8462-4ed9-abde-40090d4f96ff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008694"
 ---
 # <a name="clustering-the-master-secret-server"></a>群集主密钥服务器
 BizTalk Server 应用程序服务维护硬编码依赖于随企业单一登录 (SSO) 服务[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 SSO 服务必须能够与启动的主密钥服务器进行通信。 我们建议你在主密钥服务器以提供容错功能的主密钥服务器上群集 SSO 服务。 有关详细信息，请参阅[高可用性 SSO 安装选项](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) BizTalk Server 帮助中。  

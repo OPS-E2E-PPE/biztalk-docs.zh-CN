@@ -1,14 +1,14 @@
 ---
-title: "从业务流程示例运行标头属性访问 |Microsoft 文档"
-ms.custom: 
+title: 从业务流程示例运行标头属性访问 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2059eb2c-50a3-4618-a6ec-faa1a9e5d368
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294773"
 ---
 # <a name="running-the-header-property-access-from-an-orchestration-sample"></a>从业务流程示例运行标头属性访问
 本部分中的示例演示了如何 ESB 将 JMS 标头元数据升级到消息上下文属性，这些代码和在 Microsoft BizTalk 中的业务流程中的组件可以访问的属性。 此示例包括接收管道，其中包含将 JMS 标头元数据升级到消息上下文属性 ESB JMS 组件的实例。  

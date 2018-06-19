@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269829"
 ---
 # <a name="scenario-2-sizing-the-tracking-database--for-messages-in-orchestrations"></a>方案 2：调整业务流程中消息的跟踪数据库
 我们将介绍一个包含业务流程的示例。 下图显示了整个业务流程。 在此方案中，通过业务流程发送传递到 BizTalk Server 中的消息并在该业务流程内对其进行更改，然后通过发送端口发送出该消息。  

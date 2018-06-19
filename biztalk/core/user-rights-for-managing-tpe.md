@@ -1,17 +1,17 @@
 ---
-title: "用于管理键入的用户权限 |Microsoft 文档"
-ms.custom: 
+title: 用于管理键入的用户权限 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Tracking Profile Editor
 - Tracking Profile Editor, security
 ms.assetid: a0353c4d-2aaa-49ac-8e50-88885962abba
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286925"
 ---
 # <a name="user-rights-for-managing-tpe"></a>管理 TPE 的用户权限
 解决方案开发人员、 系统管理员或 IT 操作人员必须有管理员权限才能检索或将跟踪配置文件部署到与程序集关联的数据库。  

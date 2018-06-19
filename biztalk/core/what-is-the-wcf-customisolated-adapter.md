@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289693"
 ---
 # <a name="what-is-the-wcf-customisolated-adapter"></a>WCF-CustomIsolated 适配器概述
 通过 WCF-CustomIsolated 适配器，可将 BizTalk Server 中的 WCF 扩展性组件与独立主机配合使用。 该适配器为 WCF 框架赋予了完整的灵活性。 它允许用户选择并配置接收位置的 WCF 绑定，并指定终结点行为和安全设置。 该适配器仅可由 Internet 信息服务 (IIS) 中承载的传输使用。  

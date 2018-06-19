@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287421"
 ---
 # <a name="updateex-method"></a>UpdateEx 方法
 用于更新属性基于输入的密钥参数 (key1、 key2，... keyn)。 使用 `UpdateEx` 时，不能删除集合中的项目。 可使用单独方法进行删除。 有关详细信息，请参阅[DeleteOnly 方法](../core/deleteonly-method.md)。  

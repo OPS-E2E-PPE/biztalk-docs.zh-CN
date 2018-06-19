@@ -1,11 +1,11 @@
 ---
-title: "与绑定文件更新现有配置 |Microsoft 文档"
-ms.custom: 
+title: 与绑定文件更新现有配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding files, updating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - binding files, customizing
 - artifacts, updating
 ms.assetid: 11580e59-7147-42d0-a976-f6b5e6933d24
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291493"
 ---
 # <a name="updating-an-existing-configuration-with-a-binding-file"></a>使用绑定文件更新现有配置
 绑定文件中的信息将取代现有的配置信息。 如果绑定文件中项目的名称与现有配置中项目的名称相匹配，则当您导入绑定文件时绑定文件中的项目将更新现有配置中的项目。  

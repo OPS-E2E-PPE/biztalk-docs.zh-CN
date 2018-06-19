@@ -1,14 +1,14 @@
 ---
-title: "步骤 6： 配置 EDI AS2 接收位置 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 配置 EDI AS2 接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 167f8ba2-d38b-4088-863b-2bd90c2a12a2
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276253"
 ---
 # <a name="step-6-configure-the-edi-as2-receive-location"></a>步骤 6： 配置 EDI AS2 接收位置
 ![步骤 6 11](../core/media/tut-step6-of-11.gif "Tut_Step6_of_11")  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**接收位置属性**对话框中，名称你接收位置**Receive_AS2**，选择**HTTP**为**类型**，，然后单击**配置**。  
   
-5.  在**HTTP 传输属性**对话框框中，输入**/Contoso/BTSHTTPReceive.dll**为**虚拟目录以及 ISAPI 扩展**。 清除**成功后返回的相关句柄**和选择**挂起失败的请求**。 单击 **“确定”**。  
+5.  在**HTTP 传输属性**对话框框中，输入 **/Contoso/BTSHTTPReceive.dll**为**虚拟目录以及 ISAPI 扩展**。 清除**成功后返回的相关句柄**和选择**挂起失败的请求**。 单击 **“确定”**。  
   
 6.  选择**AS2EdiReceive**为**接收管道**。 单击**确定**，然后单击**确定**试。  
   

@@ -1,14 +1,14 @@
 ---
-title: "发布 WCF 服务 |Microsoft 文档"
-ms.custom: 
+title: 发布 WCF 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70b7851b-77c1-4ab3-a61f-e7165ceb56fb
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710236"
 ---
 # <a name="publish-wcf-services"></a>发布 WCF 服务
 业务流程可以作为由 WCF 客户端调用的 BizTalk Server 中的 WCF 服务发布。  

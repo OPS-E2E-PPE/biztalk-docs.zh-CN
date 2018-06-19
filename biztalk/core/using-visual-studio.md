@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290637"
 ---
 # <a name="using-visual-studio"></a>使用 Visual Studio
 在 BizTalk 项目系统中，可以使用 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中提供的许多工具，还可以使用为创建在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上运行的应用程序而专门设计的工具。 本主题介绍了一些可用来创建在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上运行的应用程序的通用过程。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/20/2017
 |子菜单名称|子菜单名称（如果适用）|Description|  
 |------------------|------------------------------------|-----------------|  
 ||||  
-|**其他 Windows**|**业务流程视图**|通过“业务流程视图”窗口，可以添加、删除和检查业务流程参数、端口及端口类型、消息及多部分消息类型、相关集及相关类型、角色链接及角色链接类型、作用域以及业务流程属性。 **注意：**此窗口都仅可在打开的业务流程。|  
+|**其他 Windows**|**业务流程视图**|通过“业务流程视图”窗口，可以添加、删除和检查业务流程参数、端口及端口类型、消息及多部分消息类型、相关集及相关类型、角色链接及角色链接类型、作用域以及业务流程属性。 **注意：** 此窗口都仅可在打开的业务流程。|  
 |**其他 Windows**|**表达式编辑器**|“表达式编辑器”窗口是带有 IntelliSense 功能的标准 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 文本编辑器，通过该窗口，可以输入复杂的表达式。|  
 |**工具箱**|**BizTalk 管道组件**|列出了可拖至管道设计图面上的管道组件。 只能向可用的活动管道添加管道组件。|  
 |**工具箱**|**BizTalk 业务流程**|列出了可拖至业务流程设计图面上的业务流程形状。|  
@@ -55,8 +56,8 @@ ms.lasthandoff: 09/20/2017
 |**添加引用**|使用此菜单项可以引用其他项目、其他 .NET 项目或 COM 项目。|  
 |**添加服务引用**|使用此菜单项可以添加 WCF 服务引用。 你还使用此项目通过单击添加 Web 引用**高级**上**添加服务引用**对话框。|  
 |**添加生成的项**|可以使用此菜单项来添加产生的适配器或计划文件，或使用 WCF 服务。|  
-|**添加适配器服务引用**|使用此菜单项可浏览（和搜索）元数据并使用所选操作和/或类型生成 .NET CLR 代理类。 **注意：**此项出现在 BizTalk 菜单仅当至少一个适配器 (随[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) 在计算机上安装。|  
-|**添加使用适配器引用**|使用此菜单项可浏览（和搜索）来自适配器的元数据，然后为所选操作生成 XML 架构。 **注意：**此项出现在 BizTalk 菜单仅当至少一个适配器 (随[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) 在计算机上安装。|  
+|**添加适配器服务引用**|使用此菜单项可浏览（和搜索）元数据并使用所选操作和/或类型生成 .NET CLR 代理类。 **注意：** 此项出现在 BizTalk 菜单仅当至少一个适配器 (随[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) 在计算机上安装。|  
+|**添加使用适配器引用**|使用此菜单项可浏览（和搜索）来自适配器的元数据，然后为所选操作生成 XML 架构。 **注意：** 此项出现在 BizTalk 菜单仅当至少一个适配器 (随[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]) 在计算机上安装。|  
   
  有关如何添加 Web 引用 BizTalk Web 服务的信息，请参阅[添加 Web 引用](../core/adding-web-references.md)。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 09/20/2017
 |**目录**|此菜单命令将打开**内容**选项卡上，并显示所有已安装的帮助集合。 若要查看目录，必须已安装了 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 产品文档和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 产品文档。|  
 |**有关 Microsoft BizTalk Server**|此菜单命令将打开**有关 Microsoft BizTalk Server**对话框。 此对话框中显示[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]产品信息。|  
 |**Index**|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助文档不是可通过在此版本中的索引访问。|  
-|**搜索**|没有为任何筛选器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助文档中此版本中，但如果你选择**（无筛选器）**中**按筛选**下拉列表中，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助文档可供搜索。|  
+|**搜索**|没有为任何筛选器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助文档中此版本中，但如果你选择 **（无筛选器）** 中**按筛选**下拉列表中，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助文档可供搜索。|  
   
 ## <a name="property-pages"></a>属性页  
  使用项目设计器中的属性页可以配置 BizTalk 项目的程序集项目属性和部署属性。  

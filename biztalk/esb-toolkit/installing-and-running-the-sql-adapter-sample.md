@@ -1,14 +1,14 @@
 ---
-title: "安装和运行 SQL 适配器示例 |Microsoft 文档"
-ms.custom: 
+title: 安装和运行 SQL 适配器示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f352a5b-3d4d-4597-936a-fdec12c323df
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22293901"
 ---
 # <a name="installing-and-running-the-sql-adapter-sample"></a>安装和运行 SQL 适配器示例
 SQL 适配器示例演示如何使用动态解析 framework 执行通过 WCF 自定义适配器提供程序使用 SQL 存储过程。 此示例使用测试客户端应用程序的入口路线示例。  

@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户中的聚合 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户中的聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, pivot tables
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - charts, BAM portal
 - BAM portal, aggregations
 ms.assetid: 1c689563-714b-4573-9c18-a5b0efe97fb8
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230541"
 ---
 # <a name="aggregations-in-the-bam-portal"></a>BAM 门户中的聚合
 聚合是指预先计算的数据表，用于对 OLAP 多维数据集进行分析处理。 使用聚合可以更有效地查询多维数据库。 在使用用于 Excel 的 BAM 加载项创建和部署观察模型（业务数据的高级定义）时，所创建的聚合可以迅速对与关键性能指标 (KPI) 相关的数据集合进行计算。  

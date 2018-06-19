@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009646"
 ---
 # <a name="managing-parties"></a>管理方
 使用**方**节点，你可以设置业务合作伙伴 （参与方） 或内部的部门 （业务配置文件） 与其[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案进行交互。 有关详细信息，请参阅[贸易合作伙伴](../core/trading-partners-and-business-profiles.md)。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/01/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|输入参与方名称。|  
-    |**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**|选中此复选框以指定该参与方代表托管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的同一个贸易合作伙伴。 **重要说明：**两方 Tpm 使用全新的管道的解决方案附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你必须选择至少一个方此复选框。 **注意：**如果清除此复选框，将创建此参与方的协议时禁用某些属性。|  
+    |**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**|选中此复选框以指定该参与方代表托管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的同一个贸易合作伙伴。 **重要说明：** 两方 Tpm 使用全新的管道的解决方案附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你必须选择至少一个方此复选框。 **注意：** 如果清除此复选框，将创建此参与方的协议时禁用某些属性。|  
     |**其他属性 – 名称/值**|输入一个名称/值对以存储有关参与方的任何信息。 可以根据需要添加任意数量的名称/值对。 **请注意**： 名称-值对不用于 BizTalk server 任何处理; 此数据是仅供信息。|  
     |**删除**|选择要删除所选的名称-值对。|  
   

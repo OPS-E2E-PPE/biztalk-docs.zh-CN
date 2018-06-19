@@ -1,14 +1,14 @@
 ---
-title: "如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略 |Microsoft 文档"
-ms.custom: 
+title: 如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44451c85-929a-4d13-b0dd-53ea600d0859
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010038"
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略
 ## <a name="goal"></a>目的  
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-add-a-routing-rule-for-customer-globalbank-west"></a>若要添加客户 GlobalBank 西部的路由规则  
   
-1.  在**RouteBasedOnCustomerKnownType**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetWestEndpoint**。  
+1.  在**RouteBasedOnCustomerKnownType**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetWestEndpoint**。  
   
 2.  在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 12/01/2017
   
 10. 从事实数据资源管理器拖动**设置终结点出站传输位置**定义与**操作**。  
   
-11. 单击**\<空字符串\>**然后键入**C:\HowTos\Out\West%MessageID%.xml**。  
+11. 单击**\<空字符串\>** 然后键入**C:\HowTos\Out\West%MessageID%.xml**。  
   
 12. 从事实数据资源管理器拖动**设置终结点出站传输类型**定义与**操作**。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  在策略资源管理器中，右键单击**SetWestEndpoint**规则，并依次**复制**。  
   
-2.  右键单击**（不保存） 1.0 版**，然后单击**粘贴**。  
+2.  右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。  
   
 3.  在**新规则名称**对话框中，键入**SetEastEndpoint**，然后单击**确定**。  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-publish-and-deploy-the-policy"></a>若要发布和部署策略  
   
-1.  在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击**（不保存） 1.0 版**，然后单击**发布**。  
+1.  在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。  
   
 2.  在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击**版本 1.0-发布**，然后单击**部署**。  
   

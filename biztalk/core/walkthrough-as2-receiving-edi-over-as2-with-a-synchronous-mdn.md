@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过使用同步 MDN 的 AS2 接收 EDI |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过使用同步 MDN 的 AS2 接收 EDI |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b63395f-03f4-45e8-a68a-9bbbd8dfa344
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291957"
 ---
 # <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a>演练 (AS2)：使用同步 MDN 通过 AS2 接收 EDI
 本演练将介绍创建一个通过 AS2 传输方法接收 EDI 消息并返回异步 MDN 的解决方案的分步操作过程。  
@@ -122,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。  
   
-4.  在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
+4.  在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
   
 5.  输入`BizTalk HTTP Receive`中**名称**字段，然后再单击**请求限制**。  
   
@@ -136,14 +137,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。  
   
-2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表中。 单击 **“确定”**。  
+2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表中。 单击 **“确定”**。  
   
     > [!NOTE]
     >  根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。  
   
 3.  选择**应用程序池**，在功能视图选择**BizTalkAppPool**，然后单击**高级设置**中**操作**窗格。  
   
-4.  在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）**按钮。  
+4.  在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）** 按钮。  
   
 5.  在**应用程序池标识**对话框中，选择**自定义帐户**，然后单击**设置**。  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。  
   
-10. 有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。  
+10. 有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。  
   
 11. 单击**测试设置**并验证没有显示在错误**测试连接**对话框。 单击 **“关闭”**，然后单击 **“确定”**。  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**发送端口属性**对话框中，你发送端口，例如，名称**Send_Payload**。 选择**文件**为**类型**，然后单击**配置**。  
   
-4.  在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。 保留**文件名**作为**%MessageID%.xml**。 单击 **“确定”**。  
+4.  在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。 保留**文件名**作为 **%MessageID%.xml**。 单击 **“确定”**。  
   
 5.  有关**发送管道**下拉列表中，接受默认值**PassThruTransmit**。  
   

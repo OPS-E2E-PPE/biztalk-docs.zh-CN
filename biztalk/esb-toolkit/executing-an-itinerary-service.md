@@ -1,14 +1,14 @@
 ---
-title: "执行路线服务 |Microsoft 文档"
-ms.custom: 
+title: 执行路线服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d86d228-da28-494f-85c7-4225b54f9b98
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294453"
 ---
 # <a name="executing-an-itinerary-service"></a>执行路线服务
 ESB 路线可以包含任何路线服务都可能是实现作为业务流程或消息传递执行以下任务：  

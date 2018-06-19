@@ -1,14 +1,14 @@
 ---
-title: "将适配器设置公开为使用 WCF LOB 适配器 SDK 绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 将适配器设置公开为使用 WCF LOB 适配器 SDK 绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59728113-917e-4bca-8e1a-609cd6558944
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224181"
 ---
 # <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a>将适配器设置公开为使用 WCF LOB 适配器 SDK 绑定属性
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]使用在配置连接池、 元数据缓存和其他适配器行为的不同类中定义的属性。 本主题介绍如何为绑定属性，图面这些属性，以便适配器使用者可以通过配置文件设置它们。  

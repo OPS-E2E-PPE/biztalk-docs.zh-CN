@@ -1,11 +1,11 @@
 ---
-title: "如何运行服务面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何运行服务面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, client applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - service solution tutorial, sending requests
 - service solution tutorial, SOAP transports
 ms.assetid: 764a5ddc-e571-41d8-9e2f-6d0fb3361b2f
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973811"
 ---
 # <a name="how-to-run-the-service-oriented-solution"></a>如何运行面向服务的解决方案
 以下步骤介绍了如何在单台计算机上运行和验证面向服务的解决方案。 启动付款跟踪模拟程序之后，可以使用 SOAP 或 MQSeries 传输发送请求（对于面向服务的解决方案的适配器和内联版本，需要使用不同的过程）。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  键入在任何 16 位数字**帐号**文本框。  
   
-4.  选择**SOAP （WS 调用）**和**存根 （stub)**中**选择传输协议和参数**分组框。  
+4.  选择**SOAP （WS 调用）** 和**存根 （stub)** 中**选择传输协议和参数**分组框。  
   
 5.  键入以下 URL **URL**文本框中，例如：  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  键入在任何 16 位数字**帐号**文本框。  
   
-    3.  选择**SOAP （WS 调用）**和**适配器**中**选择传输协议和参数**分组框。  
+    3.  选择**SOAP （WS 调用）** 和**适配器**中**选择传输协议和参数**分组框。  
   
     4.  键入以下 URL **URL**文本框中，例如：  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  键入在任何 16 位数字**帐号**文本框。  
   
-    3.  选择**SOAP （WS 调用）**和**内联**中**选择传输协议和参数**分组框。  
+    3.  选择**SOAP （WS 调用）** 和**内联**中**选择传输协议和参数**分组框。  
   
     4.  键入以下 URL **URL**文本框中，例如：  
   

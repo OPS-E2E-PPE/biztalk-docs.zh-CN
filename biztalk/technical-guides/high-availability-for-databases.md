@@ -1,14 +1,14 @@
 ---
-title: "数据库的高可用性 |Microsoft 文档"
-ms.custom: 
+title: 数据库的高可用性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63813d87-1ce4-4645-bb2a-d55e413fcace
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009358"
 ---
 # <a name="high-availability-for-databases"></a>数据库的高可用性
 BizTalk Server 十分依赖 SQL Server 数据存储和数据持久性。 在将完全不同的业务应用程序（例如，接收、处理或路由消息）相集成的过程中，BizTalk Server 中的其他所有组件和主机都具有特定的角色，只有数据库计算机会捕获此工作并将其保存到磁盘。 例如，当 BizTalk Server 接收传入消息，接收主机将其保存到 MessageBox 数据库之前的其他主机检索业务流程处理和发送的消息。 如果你的 BizTalk 解决方案涉及业务流程，BizTalk Server 会将消息路由到执行业务流程 （处理主机），并将该消息保存到 MessageBox 数据库，业务流程完成后的主机。 随后，发送主机将从该数据库中检索消息，再通过相应的发送适配器将该消息发送到外部应用程序。  

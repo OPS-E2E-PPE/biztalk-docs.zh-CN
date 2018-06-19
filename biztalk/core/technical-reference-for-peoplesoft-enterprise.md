@@ -1,15 +1,15 @@
 ---
-title: "组件接口 PeopleSoft |Microsoft 文档"
-description: "接口方法、 组件接口和 BizTalk Server 中使用 PeopleSoft 应用程序"
-ms.custom: 
+title: 组件接口 PeopleSoft |Microsoft 文档
+description: 接口方法、 组件接口和 BizTalk Server 中使用 PeopleSoft 应用程序
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 40b25463-5f78-46fa-a136-fc914e68827e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278757"
 ---
 # <a name="component-interface-for-peoplesoft-enterprise"></a>PeopleSoft 企业的组件接口
 

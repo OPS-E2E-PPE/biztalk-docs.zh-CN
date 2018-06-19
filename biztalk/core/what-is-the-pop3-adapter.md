@@ -1,11 +1,11 @@
 ---
-title: "POP3 适配器概述 | Microsoft Docs"
-ms.custom: 
+title: POP3 适配器概述 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - POP3 adapters, availability
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - POP3 adapters, algorithims
 - receive adapters, POP3 adapters
 ms.assetid: 05e9598b-cdfe-4216-b6bf-1b84f8ddfeae
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290621"
 ---
 # <a name="what-is-the-pop3-adapter"></a>POP3 适配器概述
 本部分将介绍 POP3 接收适配器。  

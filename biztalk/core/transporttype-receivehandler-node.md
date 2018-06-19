@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278989"
 ---
 # <a name="transporttype-receivehandler-node"></a>TransportType （接收处理程序节点）
 绑定文件的 ReceiveHandler 节点的 TransportType 节点包含与随绑定文件导出的接收处理程序相关联的适配器有关的特定信息。  

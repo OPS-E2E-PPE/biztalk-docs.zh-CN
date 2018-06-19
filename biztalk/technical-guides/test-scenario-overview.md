@@ -1,14 +1,14 @@
 ---
-title: "测试方案概述 |Microsoft 文档"
-ms.custom: 
+title: 测试方案概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde553ad-2540-40d9-a74b-928fee873c31
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010686"
 ---
 # <a name="test-scenario-overview"></a>测试方案概述
 本主题提供测试应用程序; 的概述测试方法使用和列表的说明在负载测试期间捕获的关键绩效指标 (Kpi)。  
@@ -103,17 +104,17 @@ ms.lasthandoff: 12/01/2017
   
  测试客户端用于创建每次测试运行的唯一结果目录。 此目录包含所有性能日志、 事件日志和相关联的数据所需的测试。 此方法提供所需的以前的测试的追溯分析运行时信息是必需。 在每个测试结束时，原始数据已编译成一组一致的结果和关键绩效指标 (Kpi)。 收集一致的结果设置为提供的点之间的不同的测试运行和不同的环境需要的比较的物理和虚拟机。 所收集的数据包括：  
   
--   **环境 –**要记录的环境已针对在物理硬件上的 BizTalk Server 或 HYPER-V 上的 BizTalk Server 正在运行测试。  
+-   **环境 –** 要记录的环境已针对在物理硬件上的 BizTalk Server 或 HYPER-V 上的 BizTalk Server 正在运行测试。  
   
--   **测试运行数 –**来唯一地标识每个测试运行  
+-   **测试运行数 –** 来唯一地标识每个测试运行  
   
--   **测试用例 –**以记录测试过程中使用 BizTalk Server 解决方案的体系结构。 （例如具有逻辑端口而不是使用内联的业务流程的业务流程将发送）  
+-   **测试用例 –** 以记录测试过程中使用 BizTalk Server 解决方案的体系结构。 （例如具有逻辑端口而不是使用内联的业务流程的业务流程将发送）  
   
--   **日期 –**记录的日期和时间测试运行  
+-   **日期 –** 记录的日期和时间测试运行  
   
--   **时间已启动 –**报告启动第一个 VSTS 负载测试代理  
+-   **时间已启动 –** 报告启动第一个 VSTS 负载测试代理  
   
--   **时间已停止 –**报告的最后一个 VSTS 负载测试代理以完成  
+-   **时间已停止 –** 报告的最后一个 VSTS 负载测试代理以完成  
   
 -   **以分钟为单位 – 测试持续时间**以记录测试的持续时间。  
   
@@ -121,16 +122,16 @@ ms.lasthandoff: 12/01/2017
   
 -   **每秒-发送的邮件**来记录每秒从负载代理计算机到 BizTalk Server 计算机测试过程中发送的消息。  
   
--   **平均客户端延迟 –**记录的平均时测试加载代理客户端启动对请求和接收到的响应的 BizTalk Server 计算机在负载测试期间之间的时间量。  
+-   **平均客户端延迟 –** 记录的平均时测试加载代理客户端启动对请求和接收到的响应的 BizTalk Server 计算机在负载测试期间之间的时间量。  
   
--   **请求-响应持续时间平均 (ms) –**报告**BizTalk： 消息传送 Latency\Request 响应延迟 （秒）** BizTalkServerIsolatedHost 的性能监视器计数器  
+-   **请求-响应持续时间平均 (ms) –** 报告**BizTalk： 消息传送 Latency\Request 响应延迟 （秒）** BizTalkServerIsolatedHost 的性能监视器计数器  
   
     > [!NOTE]  
     >  使用其中多个虚拟化的 BizTalk 主机正在运行这些计数器的平均值计算从日志。  
   
 -   **每秒 – 业务流程已完成**报告**XLANG/s 业务流程 (BizTalkServerApplication) \Orchestrations 完成每秒**性能监视器计数器。 此计数器提供的吞吐量很好地衡量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。  
   
--   **消息处理 < 3 秒数 – %**以记录在测试期间的 3 秒内处理的消息总数。  
+-   **消息处理 < 3 秒数 – %** 以记录在测试期间的 3 秒内处理的消息总数。  
   
  VSTS 2008 负载测试用于生成在所有测试整个一致负载。 以下测试运行设置，并且在测试调整每个测试的负载配置文件期间修改负载模式：  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 12/01/2017
   
      具体取决于正在执行测试修改以下测试运行设置：  
   
-    -   **运行持续时间 –**指定测试运行的多长时间。  
+    -   **运行持续时间 –** 指定测试运行的多长时间。  
   
      ![测试运行的设置](../technical-guides/media/wcfloadtestrunsettings.gif "WCFLoadTestRunSettings")  
 测试运行设置  
@@ -147,23 +148,23 @@ ms.lasthandoff: 12/01/2017
   
      具体取决于正在执行测试修改了以下测试模式设置：  
   
-    1.  **模式 –**指定负载测试期间如何调整模拟的用户负载。 负载模式都是**常量**，**步骤**，或**目标**基于。 所有负载测试执行都为常量或步骤。  
+    1.  **模式 –** 指定负载测试期间如何调整模拟的用户负载。 负载模式都是**常量**，**步骤**，或**目标**基于。 所有负载测试执行都为常量或步骤。  
   
         > [!NOTE]  
         >  所有测试执行本指南使用了上述两**常量**负载模式或**步骤**负载模式。 常量负载模式和步骤的负载模式提供了以下功能：  
         >   
-        >  -   **常量负载模式 –**负载模式是相同的测试的持续时间内，模拟用户的数量从预定义级别开始，并不会更改。  
-        > -   **分级负载模式 –**在测试运行期间增加的负载模式; 模拟用户的数量从预定义级别开始，并且就会递增预定义的量在预定义的间隔为测试的持续时间。  
+        >  -   **常量负载模式 –** 负载模式是相同的测试的持续时间内，模拟用户的数量从预定义级别开始，并不会更改。  
+        > -   **分级负载模式 –** 在测试运行期间增加的负载模式; 模拟用户的数量从预定义级别开始，并且就会递增预定义的量在预定义的间隔为测试的持续时间。  
   
-    2.  **常量用户计数 （常量负载模式） –**生成针对在 Visual Studio 负载测试项目的 app.config 文件中指定的终结点地址的负载的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
+    2.  **常量用户计数 （常量负载模式） –** 生成针对在 Visual Studio 负载测试项目的 app.config 文件中指定的终结点地址的负载的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
   
-    3.  **初始用户计数 （分级负载模式） –**生成负载分级负载模式测试的开始处的指定的终结点地址的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
+    3.  **初始用户计数 （分级负载模式） –** 生成负载分级负载模式测试的开始处的指定的终结点地址的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
   
-    4.  **最大用户计数 （分级负载模式） –**生成对照末尾的分级负载模式测试指定的终结点地址的负载的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
+    4.  **最大用户计数 （分级负载模式） –** 生成对照末尾的分级负载模式测试指定的终结点地址的负载的虚拟用户数。 用于负载测试的负载模式设置中指定此值。  
   
-    5.  **单步持续时间 （分级负载模式） –**的虚拟用户生成针对负载测试步骤的指定的终结点地址的负载的秒数。  
+    5.  **单步持续时间 （分级负载模式） –** 的虚拟用户生成针对负载测试步骤的指定的终结点地址的负载的秒数。  
   
-    6.  **单步用户计数 （分级负载模式） –**来提高在每个步骤时使用的分级负载模式的虚拟用户数。  
+    6.  **单步用户计数 （分级负载模式） –** 来提高在每个步骤时使用的分级负载模式的虚拟用户数。  
   
      ![测试模式设置](../technical-guides/media/wcfloadtestpatternsettings.gif "WCFLoadTestPatternSettings")  
 测试模式设置  
@@ -180,23 +181,23 @@ ms.lasthandoff: 12/01/2017
   
 -   **每秒-处理的文档**测量**BizTalk： 消息传送/文档处理数/秒**计数器。  
   
--   **延迟 –**测量返回 VSTS 2008 负载测试控制器。  
+-   **延迟 –** 测量返回 VSTS 2008 负载测试控制器。  
   
  **SQL Server KPI**  
   
--   **SQL Server 处理器使用率 –**测量**SQL\Processor(Total)\\%Processor Time**计数器。 此计数器可测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+-   **SQL Server 处理器使用率 –** 测量**SQL\Processor(Total)\\%Processor Time**计数器。 此计数器可测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
   
--   **Transact SQL 命令的处理性能 –**测量**\SQL Server:SQL Statistics\Batch 每秒请求数**计数器。 此计数器测量每秒接收的 TRANSACT-SQL 命令批数。 此计数器用于测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+-   **Transact SQL 命令的处理性能 –** 测量**\SQL Server:SQL Statistics\Batch 每秒请求数**计数器。 此计数器测量每秒接收的 TRANSACT-SQL 命令批数。 此计数器用于测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
   
  **网络 KPI**  
   
--   **BizTalk Server 网络吞吐量 –**测量**\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
+-   **BizTalk Server 网络吞吐量 –** 测量**\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
   
--   **SQL Server 网络吞吐量 –**测量**SQL Network Interface\Bytes Total/sec (Avg)**返回 VSTS 2008 负载测试控制器。  
+-   **SQL Server 网络吞吐量 –** 测量**SQL Network Interface\Bytes Total/sec (Avg)** 返回 VSTS 2008 负载测试控制器。  
   
  **内存 KPI**  
   
--   **可用内存 –**测量**\Memory\Available Mbytes**计数器的各种方案。  
+-   **可用内存 –** 测量**\Memory\Available Mbytes**计数器的各种方案。  
   
 ## <a name="physical-infrastructure-specifics"></a>物理基础结构详细信息  
  为每个已安装的服务器已调整的以下设置。  

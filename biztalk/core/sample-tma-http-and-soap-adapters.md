@@ -1,11 +1,11 @@
 ---
-title: "示例 TMA: HTTP 和 SOAP 适配器 |Microsoft 文档"
-ms.custom: 
+title: '示例 TMA: HTTP 和 SOAP 适配器 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - SOAP adapters, TMA
 - HTTP adapters, TMA
 ms.assetid: d9a40cff-92a1-4bc9-ae45-3a5857f70222
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272101"
 ---
 # <a name="sample-tma-http-and-soap-adapters"></a>示例 TMA: HTTP 和 SOAP 适配器
 本主题对示例结构的 HTTP 和 SOAP (Web Services) 适配器方案进行威胁模型分析 (TMA)。 下图显示了 HTTP 和 SOAP 适配器方案的示例结构：  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-2-create-and-analyze-the-threat-model-http-and-soap-adapters-scenario"></a>步骤 2. 创建和分析威胁模型 （HTTP 和 SOAP 适配器方案）  
  本部分提供对示例结构的 HTTP 和 SOAP (Web Services) 适配器方案执行 TMA 的结果。  
   
--   **标识入口点、 信任边界和数据的流-**请参阅之前在步骤 1 中所述的背景信息和[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。  
+-   **标识入口点、 信任边界和数据的流-** 请参阅之前在步骤 1 中所述的背景信息和[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。  
   
 -   **创建标识的威胁的列表**我们使用以下分类 DFD 中的所有条目来识别潜在威胁的方案： **S**哄骗标识， **T**篡改数据， **R**epudiation，**我**璝泄露**D**的服务，用以和**E**提升特权。 下表列出了使用 HTTP 和 SOAP 适配器与 BizTalk Server 之间收发消息时的威胁分类：  
   

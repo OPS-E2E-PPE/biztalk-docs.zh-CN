@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 将端口添加到业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 将端口添加到业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245df16e-d327-4c79-be85-004134d5ea6f
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279829"
 ---
 # <a name="step-3-add-ports-to-the-orchestration"></a>步骤 3：为业务流程添加端口
 ![步骤 3 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，你将三个端口添加到 eai 进程业务流程和配置它们。  
+ **目标：** 在此步骤中，你将三个端口添加到 eai 进程业务流程和配置它们。  
   
- **用途：**端口指定如何将消息发送到您的业务流程和其他业务流程从接收消息。 每个端口都具有类型、方向和绑定，它们共同确定通信方向、通信模式、消息的源位置或目标位置、以及进行通信的方式。 您在此步骤中创建并配置的三个端口可实现以下角色：  
+ **用途：** 端口指定如何将消息发送到您的业务流程和其他业务流程从接收消息。 每个端口都具有类型、方向和绑定，它们共同确定通信方向、通信模式、消息的源位置或目标位置、以及进行通信的方式。 您在此步骤中创建并配置的三个端口可实现以下角色：  
   
 -   **ReceiveRequestPort**从仓库接收库存补货请求消息。  
   

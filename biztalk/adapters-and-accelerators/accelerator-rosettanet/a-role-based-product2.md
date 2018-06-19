@@ -1,11 +1,11 @@
 ---
-title: "基于角色的 Product2 |Microsoft 文档"
-ms.custom: 
+title: 基于角色的 Product2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, tools
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Server, tools
 - tools, BTARN
 ms.assetid: 5805fb09-aac7-4cc8-9cc1-daf0f2ec93da
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004862"
 ---
 # <a name="a-role-based-product"></a>基于角色的产品
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供适用于角色的用户的环境中功能和工具。 通过这些功能和工具可以实现快速开发、部署、操作、管理和业务使用。  

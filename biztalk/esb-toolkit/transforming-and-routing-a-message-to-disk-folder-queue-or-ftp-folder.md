@@ -1,14 +1,14 @@
 ---
-title: "将转换以及消息路由到磁盘文件夹、 队列或 FTP 文件夹 |Microsoft 文档"
-ms.custom: 
+title: 将转换以及消息路由到磁盘文件夹、 队列或 FTP 文件夹 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5bfdbc38-6663-4d95-a0ed-57fec0245b9f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009838"
 ---
 # <a name="transforming-and-routing-a-message-to-disk-folder-queue-or-ftp-folder"></a>将转换以及消息路由到磁盘文件夹、 队列或 FTP 文件夹
 在此用例，ESB 转换消息提交通过路线 Web 服务或任何在负载增加。 动态解析的文件类型的查找、 FTP 或队列位置确定 （适用于转换） 将映射名称和目标终结点的消息，如图 1 中所示。  

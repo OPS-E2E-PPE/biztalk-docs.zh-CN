@@ -1,14 +1,14 @@
 ---
-title: "演练 (X12)： 接收批处理的 EDI 交换 |Microsoft 文档"
-ms.custom: 
+title: 演练 (X12)： 接收批处理的 EDI 交换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f6e6e96-39ec-469d-a845-1bfdce6cc0bf
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975713"
 ---
 # <a name="walkthrough-x12-receiving-batched-edi-interchanges"></a>演练 (X12)：接收批处理 EDI 交换
 本演练将介绍一组使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建解决方案以接收 EDI 批的分步操作过程。 此解决方案演示了两种接收批处理 EDI 交换的方法：  
@@ -255,14 +256,14 @@ ms.lasthandoff: 11/28/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择**默认**。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择**默认**。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|选择你的测试消息的消息类型**850-采购订单**。|  
         |**版本/发行版**|输入的 EDI 版本中， **00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/Edi/X12**。|  
         |**GS1**|验证是否已选中测试消息的消息类型， **PO-采购订单 (850)**。|  
         |**GS2**|例如，应用程序发件人，输入一个值**购买**。|  
         |**GS3**|例如，为应用程序收件人输入一个值**OrderControl**。|  
-        |**GS4**|选择所需的日期格式。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择所需的日期格式。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择所需的时间格式。|  
         |**GS7**|选择**X 的公认的标准委员会 X12**。|  
         |**GS8**|验证 EDI 版本具有输入**00401**。|  

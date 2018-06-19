@@ -1,14 +1,14 @@
 ---
-title: "元数据和 WCF 服务模型与 SQL 适配器 |Microsoft 文档"
-ms.custom: 
+title: 元数据和 WCF 服务模型与 SQL 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4353ce67-f0e8-4f96-b1d9-95deeee7f3e6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222429"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-the-sql-adapter"></a>元数据和 WCF 服务模型与 SQL 适配器
 在 WCF 服务模型中，你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel 元数据实用工具 (svcutile.exe) 来执行以下操作：  

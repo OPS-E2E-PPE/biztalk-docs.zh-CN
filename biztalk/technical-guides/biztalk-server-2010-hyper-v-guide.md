@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26011006"
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 Hyper V 指南
 本指南的目的是提供 Microsoft BizTalk Server 使用 Microsoft 的实践性指南[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V。 重点是[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，但性能评估方法和测试方案的性能会用于分析虚拟化的服务器应用程序的性能通常很有用。 本指南将感兴趣的 IT 专业人员和开发人员社区。  

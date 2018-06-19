@@ -1,11 +1,11 @@
 ---
-title: "用于发送和接收消息的安全 |Microsoft 文档"
-ms.custom: 
+title: 用于发送和接收消息的安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, receiving
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - security, message processing
 - messages, security
 ms.assetid: 9bcd01e4-245a-4f4c-b65c-89d7cd3d1b68
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270597"
 ---
 # <a name="security-for-sending-and-receiving-messages"></a>发送和接收消息过程中的安全性
 下图显示了 BizTalk Server 接收、处理消息以及将消息发送到另一个应用程序或合作伙伴时，对消息执行的操作。  

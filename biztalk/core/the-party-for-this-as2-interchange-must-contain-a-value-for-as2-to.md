@@ -1,14 +1,14 @@
 ---
-title: "为此 AS2 交换方必须包含值对于 AS2-到 |Microsoft 文档"
-ms.custom: 
+title: 为此 AS2 交换方必须包含值对于 AS2-到 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 029eae5d-4c13-402d-90c5-8e9ef3814a1f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279085"
 ---
 # <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-to"></a>此 AS2 交换的参与方必须包含 AS2-To 的值
 ## <a name="details"></a>详细信息  

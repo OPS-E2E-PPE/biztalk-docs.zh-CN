@@ -1,15 +1,15 @@
 ---
-title: "WCF LOB 适配器 SDK 的常见开发人员任务 |Microsoft 文档"
-description: "教程和有关创建使用 WCF LOB 适配器 SDK 适配器的概念信息的快速链接"
-ms.custom: 
+title: WCF LOB 适配器 SDK 的常见开发人员任务 |Microsoft 文档
+description: 教程和有关创建使用 WCF LOB 适配器 SDK 适配器的概念信息的快速链接
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed7ab621-6411-412a-8b8a-2edfe5154426
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224373"
 ---
 # <a name="common-developer-tasks-for-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的常见开发人员任务
 

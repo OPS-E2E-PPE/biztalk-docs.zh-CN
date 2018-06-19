@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e216ae5d-5bad-48ef-87d1-8aa8ee20179b
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22289253"
 ---
 # <a name="use-biztalk-editor-commands"></a>使用 BizTalk 编辑器命令
 
@@ -61,7 +62,7 @@ BizTalk 编辑器将变为活动状态，它会添加菜单调用**BizTalk**到[
 |**剪切、 复制粘贴**|使用这些命令来执行标准[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]的剪切、 复制和粘贴在 BizTalk 项目中的整个架构的行为。|  
 |**删除**|永久删除当前选定的架构，并提示您进行确认。|  
 |**重命名**|允许就地重命名当前选定的架构。|  
-|**属性**|打开 Visual Studio **属性**  窗口对于当前所选的架构，在其中的某些架构属性可以检查和设置。 <br/><br/>**注意：**架构的其他属性都检查并在中设置[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]时选择架构属性窗口。 在中设置属性 **属性** 窗口是为其不同的值可能时有意义的相同的架构使用多个 BizTalk 项目中的这些属性。 <br /><br /> 有关设置架构属性和架构的属性的详细信息，请参阅[设置架构文件和架构项属性](../core/how-to-set-schema-file-and-schema-item-properties.md)和**架构文件属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|  
+|**属性**|打开 Visual Studio **属性**  窗口对于当前所选的架构，在其中的某些架构属性可以检查和设置。 <br/><br/>**注意：** 架构的其他属性都检查并在中设置[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]时选择架构属性窗口。 在中设置属性 **属性** 窗口是为其不同的值可能时有意义的相同的架构使用多个 BizTalk 项目中的这些属性。 <br /><br /> 有关设置架构属性和架构的属性的详细信息，请参阅[设置架构文件和架构项属性](../core/how-to-set-schema-file-and-schema-item-properties.md)和**架构文件属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|  
   
 ## <a name="see-also"></a>另请参阅  
  [使用 BizTalk 编辑器](../core/using-biztalk-editor.md)

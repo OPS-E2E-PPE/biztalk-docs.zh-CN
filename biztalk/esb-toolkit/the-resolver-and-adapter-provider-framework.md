@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008432"
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>冲突解决程序和适配器提供程序框架
 冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态解析终结点，并设置出站适配器属性。 后一个冲突解决程序组件解析终结点 （例如，使用通用、 描述、 发现和集成 [UDDI] 看起来出站 Web 服务终结点），适配器提供程序组件设置的已注册 BizTalk Server 特定属性适配器。 例如，WCF BasicHttp 适配器提供程序负责设置 BizTalk 特定消息终结点将使用特定的 BizTalk adapter; 的 URI 的上下文属性FTP 适配器提供程序负责属性特定于设置 FTP 适配器。  
@@ -151,6 +152,6 @@ ms.lasthandoff: 04/16/2018
  在这种情况下， **ResolverDictionary**实例，其中包含所有已解决的属性返回的解析进程然后传递到适配器管理器。 适配器管理器将传递到的特定的适配器提供程序将设置所有适配器特定和特定终结点的 BizTalk 上下文消息属性的字典。 冲突解决程序查找**EndPointConfig**属性，对应于它们各自的适配器的属性的名称/值对中提取，然后在消息上设置这些值。  
   
 ## <a name="supported-adapter-providers"></a>受支持的适配器提供程序  
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下内置适配器提供程序：**文件、 FTP、 SMTP、 MQSeries、 WCF BasicHttp、 WCF WSHttp，**和**WCF 自定义**。 每个适配器提供程序的名称等同于 BizTalk Server 中关联的适配器 （传输类型） 的名称。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下内置适配器提供程序：**文件、 FTP、 SMTP、 MQSeries、 WCF BasicHttp、 WCF WSHttp，** 和**WCF 自定义**。 每个适配器提供程序的名称等同于 BizTalk Server 中关联的适配器 （传输类型） 的名称。  
   
  冲突解决程序和适配器提供程序框架的主要优点是，你可以通过创建并注册你自己的自定义解析程序来解析终结点信息和自定义适配器提供商能够设置的已注册 BizTalk 适配器的特定属性来扩展它。 有关详细信息，请参阅[修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)。

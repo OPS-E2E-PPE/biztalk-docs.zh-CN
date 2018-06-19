@@ -1,14 +1,14 @@
 ---
-title: "WCF 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/09/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2093745e-86c0-4276-a7cc-a0187391ca4a
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 50798e04fdcaf5dce5288aa18608e2a981b162fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/11/2018
+ms.locfileid: "29139293"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a>WCF 适配器属性架构和属性
 阅读有关 WCF 适配器属性架构中提升的属性。 WCF 适配器对应用程序中可使用的属性进行赋值。 WCF 适配器还提供了一种用于将自定义属性写入 BizTalk 消息上下文但不进行升级的机制，以及一种用于将自定义属性升级到 BizTalk 消息上下文的机制。 有关更多详细信息，请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/11/2018
 - WCF-WSHttp 适配器
 
 #### <a name="bindingconfiguration"></a>BindingConfiguration
-指定使用的 XML 字符串**\<绑定\>**元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。
+指定使用的 XML 字符串**\<绑定\>** 元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。
 
 例如：
 
@@ -147,7 +148,7 @@ ms.lasthandoff: 02/11/2018
 - WCF-NetMsmq 适配器
 
 #### <a name="endpointbehaviorconfiguration"></a>EndpointBehaviorConfiguration
-指定使用的 XML 字符串**\<行为\>**元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。
+指定使用的 XML 字符串**\<行为\>** 元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。
 
 例如： 
 ```
@@ -503,7 +504,7 @@ WCF NetTcp 适配器利用 [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkI
 适用于： 所有 WCF 适配器*除*的 WCF 自定义和 WCF CustomIsolated 适配器
 
 #### <a name="servicebehaviorconfiguration"></a>ServiceBehaviorConfiguration
-指定使用的 XML 字符串**\<行为\>**元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。
+指定使用的 XML 字符串**\<行为\>** 元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。
 
 例如：
 
@@ -625,15 +626,15 @@ WCF NetTcp 适配器利用 [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkI
 适用于： 所有 WCF 都发送适配器*除*WCF NetNamedPipe 适配器
 
 #### <a name="referencedbindings"></a>ReferencedBindings
-指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。 有关详细信息**\<颁发者\>**元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。
+指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。 有关详细信息**\<颁发者\>** 元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。
 
-绑定信息包括**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration**的 WCF 自定义和 WCF CustomIsolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 
-
-**请注意**  
-**BindingConfiguration**属性**\<颁发者\>**元素必须引用此属性中的一个有效的绑定名称。 
+绑定信息包括**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration**的 WCF 自定义和 WCF CustomIsolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 
 
 **请注意**  
-**\<颁发者\>**如果此引用链不会进行一个循环依赖关系中的引用的绑定配置元素还可以引用到此属性中的不同绑定配置。 
+**BindingConfiguration**属性**\<颁发者\>** 元素必须引用此属性中的一个有效的绑定名称。 
+
+**请注意**  
+**\<颁发者\>** 如果此引用链不会进行一个循环依赖关系中的引用的绑定配置元素还可以引用到此属性中的不同绑定配置。 
 
 例如： 
 

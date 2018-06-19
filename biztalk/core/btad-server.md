@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230629"
 ---
 # <a name="btadserver"></a>BTAD_Server
 当应用程序导入前期和后期处理脚本运行时，请设置 BTAD_Server 环境变量。 它指定运行为组 BizTalk 管理数据库的 SQL Server 实例的名称。  

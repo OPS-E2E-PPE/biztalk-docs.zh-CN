@@ -1,14 +1,14 @@
 ---
-title: "出现故障。 处理 X12 发送端口上的消息： 具有名称的否方 |Microsoft 文档"
-ms.custom: 
+title: 出现故障。 处理 X12 发送端口上的消息： 具有名称的否方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af059a04-3b7c-48e2-a3bf-48ad62deb139
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225349"
 ---
 # <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-party-with-name"></a>出现故障。 处理 X12 发送端口上的消息： 具有名称的否方
 ## <a name="details"></a>详细信息  

@@ -1,18 +1,18 @@
 ---
-title: "如何为使用客户端实用工具的关联应用程序设置凭据 |Microsoft 文档"
-ms.custom: 
+title: 如何为使用客户端实用工具的关联应用程序设置凭据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], configuring credentials
 - SSOClient [SSO], configuring credentials
 - applications [SSO], credentials
 ms.assetid: 454b6257-3538-40be-840c-00172a2c1dce
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971563"
 ---
 # <a name="how-to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>如何为使用客户端实用工具的关联应用程序设置凭据
 使用此命令可为用户设置凭据以便该用户能够访问特定的应用程序。 此命令还将自动启用映射。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssoclient – setcredentials\<应用程序名称\>**，其中**\<应用程序名称\>**是为其所需的特定应用程序若要设置的凭据。  
+3.  类型**ssoclient – setcredentials\<应用程序名称\>**，其中**\<应用程序名称\>** 是为其所需的特定应用程序若要设置的凭据。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

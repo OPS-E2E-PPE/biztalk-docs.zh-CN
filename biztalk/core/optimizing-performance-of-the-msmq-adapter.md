@@ -1,18 +1,18 @@
 ---
-title: "优化性能的 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 优化性能的 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, performance
 - performance, MSMQ adapters
 - configuring [MSMQ adapters], performance
 ms.assetid: f8537ea8-a96e-4874-bcaf-cd1442a50bd4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007334"
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a>优化性能的 MSMQ 适配器
 MSMQ 适配器的优化在发送端与接收端有所不同。 对于接收端，通过设置接收位置属性可控制优化。 对于发送端，则可以使用业务流程来控制优化。  

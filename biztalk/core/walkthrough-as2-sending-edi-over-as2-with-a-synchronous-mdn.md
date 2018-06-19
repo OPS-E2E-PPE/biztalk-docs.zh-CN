@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过使用同步 MDN 的 AS2 发送 EDI |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过使用同步 MDN 的 AS2 发送 EDI |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21891d29-eb22-4b31-9258-14b72ae675dc
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292341"
 ---
 # <a name="walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn"></a>演练 (AS2)：使用同步 MDN 通过 AS2 发送 EDI
 本演练将介绍创建一个通过 AS2 用同步 MDN 发送 EDI 消息的解决方案的分步操作过程。 您可以在单台计算机上创建并测试本演练中的完整解决方案。  
@@ -140,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。  
   
-4.  在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
+4.  在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
   
 5.  输入`BizTalk HTTP Receive`中`Name`字段，然后再单击**请求限制**。  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。  
   
-2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表。 单击 **“确定”**。  
+2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表。 单击 **“确定”**。  
   
     > [!NOTE]
     >  根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。  
@@ -254,7 +255,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**接收位置属性**对话框中，名称你接收位置中，选择**HTTP**为**类型**，然后单击**配置**。  
   
-5.  在**HTTP 传输属性**对话框框中，输入**/Fabrikam/BTSHttpReceive.dll**为**虚拟目录以及 ISAPI 扩展**。 清除**成功后返回的相关句柄**和选择**挂起失败的请求**。 单击 **“确定”**。  
+5.  在**HTTP 传输属性**对话框框中，输入 **/Fabrikam/BTSHttpReceive.dll**为**虚拟目录以及 ISAPI 扩展**。 清除**成功后返回的相关句柄**和选择**挂起失败的请求**。 单击 **“确定”**。  
   
 6.  选择**AS2Receive**为**接收管道**，和**AS2Send**为**发送管道**。 单击**确定**，然后单击**确定**试。  
   
@@ -270,7 +271,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**文件传输属性**对话框中，为**目标文件夹**，输入你创建的 EDI 负载的本地文件夹。  
   
-5.  有关**文件名**，输入文件名称。 如果你使用 SamplePO.txt 文件作为测试消息，请输入**%MessageID%.txt**。 单击 **“确定”**。  
+5.  有关**文件名**，输入文件名称。 如果你使用 SamplePO.txt 文件作为测试消息，请输入 **%MessageID%.txt**。 单击 **“确定”**。  
   
 6.  接受默认的**PassThruTransmit**为**发送管道**。  
   
@@ -290,7 +291,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**文件传输属性**对话框中，为**目标文件夹**，输入您创建要发送到 MDN 的本地文件夹。  
   
-5.  有关**文件名**，输入**%MessageID%.msg**。单击**确定**。  
+5.  有关**文件名**，输入 **%MessageID%.msg**。单击**确定**。  
   
 6.  接受默认的**PassThruTransmit**为**发送管道**。  
   
@@ -350,7 +351,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  上**标识符**页上，输入值**AS2-从**和**AS2-到**。 有关**AS2-从**，输入`Contoso`。 有关**AS2-到**，输入`Fabrikam`。  
   
-    2.  在**确认 (Mdn)**页上，执行以下操作：  
+    2.  在**确认 (Mdn)** 页上，执行以下操作：  
   
         1.  选择**路由/传递到 MessageBox 处理入站的 MDN**复选框。  
   

@@ -1,11 +1,11 @@
 ---
-title: "面向服务的解决方案 |Microsoft 文档"
-ms.custom: 
+title: 面向服务的解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solutions
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - business solutions, Web services
 - business solutions, service solutions
 ms.assetid: ce7cdf8d-ecaf-4a6a-9536-a9cf5d7f874f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271365"
 ---
 # <a name="service-oriented-solution"></a>面向服务的解决方案
 面向服务的解决方案显示如何将 BizTalk 应用程序展示为用作 Web Services 的服务、以及旧版应用程序可访问的表单。 该解决方案还显示如何与作为 Web Services 的后端进程进行通信，以及如何从多个后端系统聚合响应。  

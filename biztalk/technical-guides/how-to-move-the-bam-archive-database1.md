@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e371321c-6b8d-4be6-a6d2-926f6218db01
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009814"
 ---
 # <a name="how-to-move-the-bam-archive-database"></a>如何移动 BAM 存档数据库
 您可以使用此过程将 BAM 存档数据库移到其他服务器。  从端到端方案的角度看，移动 BAM 存档数据库涉及到两个主要步骤：  

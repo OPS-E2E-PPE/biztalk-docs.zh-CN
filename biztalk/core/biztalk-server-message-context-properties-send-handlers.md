@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 消息上下文属性 （发送处理程序） |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 消息上下文属性 （发送处理程序） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013836"
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server 消息上下文属性 （发送处理程序）
 除了消息负载之外，消息包含的补充信息必须在运行时从 BizTalk Server 业务流程访问。  
@@ -29,9 +30,9 @@ ms.lasthandoff: 11/07/2017
 |答复主题|string|是|提供答复消息的主题的业务流程（相关时）。 默认值为 Null。|  
   
 ## <a name="getting-a-tibco-reply"></a>获取 TIBCO 答复  
- **问题：**为 TIBCO 会合读取和处理内部业务流程的答复使用者，以便你可以使用它作为发送主题响应如何执行 BizTalk 适配器？ 适配器如何获得来自 Rendezvous 的传入消息的消息上下文？  
+ **问题：** 为 TIBCO 会合读取和处理内部业务流程的答复使用者，以便你可以使用它作为发送主题响应如何执行 BizTalk 适配器？ 适配器如何获得来自 Rendezvous 的传入消息的消息上下文？  
   
- **答案是：**传入的消息的上下文中填充答复使用者和业务流程可以读取它。 如果业务流程最终可以生成答复，则可以使用该值来设置答复消息的发送主题。  
+ **答案是：** 传入的消息的上下文中填充答复使用者和业务流程可以读取它。 如果业务流程最终可以生成答复，则可以使用该值来设置答复消息的发送主题。  
   
 1.  在 BizTalk Server 项目中，请向 <install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll 中添加引用。  
   

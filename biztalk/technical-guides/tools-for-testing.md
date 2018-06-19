@@ -1,14 +1,14 @@
 ---
-title: "用于测试工具 |Microsoft 文档"
-ms.custom: 
+title: 用于测试工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a9b71f02-86df-4b03-bd2c-4d4d2014db02
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009686"
 ---
 # <a name="tools-for-testing"></a>用于测试工具
 下表列出了可用于执行测试的操作的准备情况与关联的工具[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

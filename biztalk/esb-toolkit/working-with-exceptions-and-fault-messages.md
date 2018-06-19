@@ -1,14 +1,14 @@
 ---
-title: "使用异常和错误消息 |Microsoft 文档"
-ms.custom: 
+title: 使用异常和错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4006d4-efa1-431a-a15e-725094c961c8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295029"
 ---
 # <a name="working-with-exceptions-and-fault-messages"></a>使用异常和错误消息
 本部分介绍依据 ESB 管理门户可通过查看在出现错误，请根据以下常见任务时生成的错误消息来监视应用程序的行为的方法：  

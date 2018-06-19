@@ -1,14 +1,14 @@
 ---
-title: "脚本使用内联 XSLT 和 XSLT 调用模板 |Microsoft 文档"
-ms.custom: 
+title: 脚本使用内联 XSLT 和 XSLT 调用模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3168417-3653-4c9e-a09c-184ffdc0ccb2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270429"
 ---
 # <a name="scripting-using-inline-xslt-and-xslt-call-templates"></a>脚本使用内联 XSLT 和 XSLT 调用模板
 你可以直接编写用于可扩展样式表语言转换 (XSLT) 样式表**脚本**functoid。 这样，您就可以执行链接和内置 functoid 可能无法表示的转换。 XSLT 脚本有两种类型：内联 XSLT 和 XSLT 调用模板。 当你选择在**选择脚本类型**中的下拉列表**配置脚本 Functoid**对话框中，示例代码将显示您可以使用。  

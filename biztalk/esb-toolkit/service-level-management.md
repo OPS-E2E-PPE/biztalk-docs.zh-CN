@@ -1,14 +1,14 @@
 ---
-title: "服务级别管理 |Microsoft 文档"
-ms.custom: 
+title: 服务级别管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add50343-5470-4db3-a029-c827523e2f2c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294725"
 ---
 # <a name="service-level-management"></a>服务级别管理
 AmberPoint SMS 服务级别管理器提供了到特定的性能和企业级 SOA 基于系统内的可用性问题的可见性。 它会检测并为每个 Microsoft BizTalk Server 接收位置和发送端口跟踪度量值。 这可实时运行状况和状态指示，除了这些组件的正在进行的性能特征描述。 图 1 显示与接收位置相关联的度量值的显示。  

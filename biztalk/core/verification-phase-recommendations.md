@@ -1,14 +1,14 @@
 ---
-title: "验证阶段建议 |Microsoft 文档"
-ms.custom: 
+title: 验证阶段建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00663354-ce5d-4391-b835-89940c92c1ce
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288133"
 ---
 # <a name="verification-phase-recommendations"></a>验证阶段的建议
 系统代码编写完成后，即准备好进行稳定工作并验证发布标准。 此阶段通常称为稳定阶段。 此阶段的最终目的是发现并修复错误，以及验证系统是否已准备就绪可以投入生产。 因此，此阶段涉及系统候选版本的最终测试步骤。  

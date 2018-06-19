@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288853"
 ---
 # <a name="what-is-scalability"></a>可伸缩性概述
 可伸缩性是指系统为满足您的业务需求进行扩展的能力。 在不对应用程序进行较大改动的情况下，可以通过添加额外的硬件或通过升级现有硬件来对系统进行扩展。 在 BizTalk Server 系统环境中，可伸缩性是指 BizTalk 能够根据吞吐量需求的增长进行扩展的能力（如果您需要缩短延迟时间）。  

@@ -1,11 +1,11 @@
 ---
-title: "步骤 13： 创建并配置端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 13： 创建并配置端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - configuring, ports
 - ports, configuring
 ms.assetid: cc0540d7-46fc-4d9f-bcf3-0b0e0179fd51
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006382"
 ---
 # <a name="step-13-create-and-configure-ports"></a>步骤 13： 创建并配置端口
 在此步骤中，你可以使用端口配置向导以创建和业务流程设计器中配置端口。 端口指定您的业务流程发送和接收消息与其他业务流程的方式。 每个端口都具有类型、 方向和绑定。 属性共同决定通信、 通信模式、 位置到或从其方向[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]发送或接收的消息和如何进行通信。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]使用作为发送端口的最小值较低层协议 (MLLP) 适配器。 MLLP 适配器将接口与其他应用程序，如实验室应用程序、 保险应用程序和旧的业务线应用程序中使用 TCP 套接字通信。 MLLP 发送适配器表示[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]适配器：  

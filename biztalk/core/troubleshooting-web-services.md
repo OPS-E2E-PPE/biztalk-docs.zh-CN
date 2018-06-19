@@ -1,14 +1,14 @@
 ---
-title: "Web 服务疑难解答 |Microsoft 文档"
-ms.custom: 
+title: Web 服务疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c32bf542-dcc6-4727-b31f-52bb19d4b89d
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287485"
 ---
 # <a name="troubleshooting-web-services"></a>Web 服务疑难解答
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发布作为 Web 服务的业务流程时使广泛使用的用途，与 SOAP 适配器以及 Web 服务。 本主题提供了一些用于对 Web Services 进行故障排除的操作步骤，还有一些常见的 Web Services 问题以及如何解决这些问题的说明。  

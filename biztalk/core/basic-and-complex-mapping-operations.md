@@ -1,14 +1,14 @@
 ---
-title: "基本和复杂的映射操作 |Microsoft 文档"
-ms.custom: 
+title: 基本和复杂的映射操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da864b48-6255-4847-9a6f-13e489e8658d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710308"
 ---
 # <a name="basic-and-complex-mapping-operations"></a>基本和复杂的映射操作
 BizTalk 映射器为各种映射方案提供解决方案，这些映射方案包括从简单的父子树类型操作到包含循环记录和层次结构的详细又复杂的操作。 映射方案的复杂程度取决于你的首选项和业务需求-XML 架构定义 (XSD) 语言提供在定义结构化的格式相当大的灵活性。 几乎所有映射方案均属于这两个类别之一：基本映射和复杂映射。  

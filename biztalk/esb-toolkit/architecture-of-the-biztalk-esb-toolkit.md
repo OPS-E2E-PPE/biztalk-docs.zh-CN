@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB 工具包的体系结构 |Microsoft 文档"
-ms.custom: 
+title: BizTalk ESB 工具包的体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a41674f5-5ea4-4a8f-a270-b67fd6854028
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007846"
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包的体系结构
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持和实现松散耦合的消息传递环境，它使更轻松地生成基于消息的企业应用程序的组件进行互操作的一系列组成。 服务和组件自然地划分为以下的七种类别：  

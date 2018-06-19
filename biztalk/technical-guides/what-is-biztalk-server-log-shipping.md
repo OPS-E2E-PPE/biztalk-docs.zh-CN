@@ -1,14 +1,14 @@
 ---
-title: "什么 BizTalk Server 日志传送？ | Microsoft Docs"
-ms.custom: 
+title: 什么 BizTalk Server 日志传送？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 79a2088a-ff36-4590-97c9-51d5bb245486
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010494"
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>什么 BizTalk Server 日志传送？
 BizTalk Server 灾难恢复过程围绕 BizTalk 日志传送。 BizTalk 日志传送通过连续将事务日志更新应用于的灾难恢复站点数据库，简化了发生灾难时的数据库还原。  

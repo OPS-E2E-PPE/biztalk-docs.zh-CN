@@ -1,14 +1,14 @@
 ---
-title: "X12 TA1 确认错误代码 |Microsoft 文档"
-ms.custom: 
+title: X12 TA1 确认错误代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47eb315f-ec99-4e1e-937b-22199255f14f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290845"
 ---
 # <a name="x12-ta1-acknowledgment-error-codes"></a>X12 TA1 确认错误代码
 本主题列举了 X12 TA1 确认的各个段中所用的错误代码。 有关这些段的详细信息，请参阅[X12 TA1 确认](../core/x12-ta1-acknowledgment.md)。  

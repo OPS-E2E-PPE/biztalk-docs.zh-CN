@@ -1,14 +1,14 @@
 ---
-title: "使用 BaseFunctoid |Microsoft 文档"
-ms.custom: 
+title: 使用 BaseFunctoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb26a54d-20bf-4302-a5cb-b38e4091002b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288709"
 ---
 # <a name="using-basefunctoid"></a>使用 BaseFunctoid
 所有自定义 functoid 都必须从 **BaseFunctoid** 类派生。 您必须首先重写该构造函数，并执行一组调用，将您的自定义 functoid 通知给 BizTalk 映射器。 然后需要编写 functoid 逻辑。  

@@ -1,14 +1,14 @@
 ---
-title: "适配器性能影响的配置参数 |Microsoft 文档"
-ms.custom: 
+title: 适配器性能影响的配置参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bbb9fb-0b31-45f0-a54c-7b2025e653b9
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972083"
 ---
 # <a name="configuration-parameters-that-affect-adapter-performance"></a>影响适配器性能的配置参数
 本部分介绍可能会影响 BizTalk Server 适配器性能的配置设置。  
@@ -35,8 +36,8 @@ ms.lasthandoff: 11/28/2017
 |**minFreeLocalRequestFreeThreads**<br /><br /> ASP.NET 保持用于执行新的本地请求的最小可用线程数。 此线程数目是为从本地主机传入的请求而保留的，以防某些请求在其处理期间发出对本地主机的子请求。 这可以避免由于递归重入 Web 服务器而可能带来的死锁。|\<httpRuntime\>|4|76 * 托管 Web 应用程序的服务器上的处理器数。|  
 |**executionTimeout**<br /><br /> 指示在被 ASP.NET 自动关闭前，允许执行请求的最大秒数。|\<httpRuntime\>|90|90|  
 |**maxconnection**<br /><br /> 确定可以向特定的 IP 地址建立多少个连接。|\<connectionManagement\>|2<br /><br /> 如果此设置的值为 2，则符合 HTTP 1.1 规范的 IETF RFC，因此此值可供用户使用，但不利于优化高吞吐量。|12 * 托管 Web 应用程序的服务器上的处理器数。|  
-|**maxWorkerThreads**<br /><br /> 按 CPU 配置用于进程的辅助线程的最大数目。|\<processModel\>|20|100**注意：**此值隐式乘以在服务器上的处理器数。|  
-|**minWorkerThreads**|\<processModel\>|1|**maxWorkerThreads** / 2**注意：** minWorkerThreads 参数不在默认情况下配置文件中。 你必须添加此参数。 **注意：**此值隐式乘以在服务器上的处理器数。|  
+|**maxWorkerThreads**<br /><br /> 按 CPU 配置用于进程的辅助线程的最大数目。|\<processModel\>|20|100**注意：** 此值隐式乘以在服务器上的处理器数。|  
+|**minWorkerThreads**|\<processModel\>|1|**maxWorkerThreads** / 2**注意：** minWorkerThreads 参数不在默认情况下配置文件中。 你必须添加此参数。 **注意：** 此值隐式乘以在服务器上的处理器数。|  
 |**maxIoThreads**<br /><br /> ASP.NET 使用此参数来限制所使用的完成线程数。|\<processModel\>|20|100<br /><br /> 此值将隐式乘以服务器上的处理器数。|  
   
  如果承载的 Web 服务的计算机运行的 ASP.NET 2.0 或更高版本，则可以设置**autoConfig = true** processModel 部分要自动配置以下设置以实现最佳的 Machine.config 文件中基于机配置上的性能：  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
  若要增大默认的 TCP 窗口大小，请执行以下步骤：  
   
-1.  依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+1.  依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
   
      导航到**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\\**  
   

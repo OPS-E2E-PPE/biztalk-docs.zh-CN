@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建请求拒绝架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建请求拒绝架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1ce166c-1be1-4ef4-9d00-3da7038d4ada
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278549"
 ---
 # <a name="step-3-create-the-request-decline-schema"></a>步骤 3： 创建请求拒绝架构
 ![步骤 5 的 3](../core/media/step-3of5.gif "Step_3of5")  
   
  **完成时间：** 7 分钟  
   
- **目标：**在此步骤中，创建消息的架构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发回到仓库如果业务流程拒绝库存补货请求。  
+ **目标：** 在此步骤中，创建消息的架构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发回到仓库如果业务流程拒绝库存补货请求。  
   
- **用途：**架构定义的数据和请求拒绝消息的结构。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用架构来识别并与消息中的数据进行交互。  
+ **用途：** 架构定义的数据和请求拒绝消息的结构。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用架构来识别并与消息中的数据进行交互。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  

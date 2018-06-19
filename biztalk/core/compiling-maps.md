@@ -1,11 +1,11 @@
 ---
-title: "编译映射 |Microsoft 文档"
-ms.custom: 
+title: 编译映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, compiling
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BizTalk Mapper, compiling
 - BizTalk Mapper, validating
 ms.assetid: 967181d6-22a9-4a76-ae45-3317c0c6321b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231861"
 ---
 # <a name="compiling-maps"></a>编译地图
 在验证映射时，BizTalk 映射器的编译器组件将生成可扩展样式表语言转换 (XSLT) 样式表。 这将创建一个已编译的映射，该映射可将源架构定义的实例消息转换为目标架构定义的实例消息。 编译映射将执行在网格页中指定的结构规则和转换。  

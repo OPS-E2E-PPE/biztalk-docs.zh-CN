@@ -1,14 +1,14 @@
 ---
-title: "分隔符保留和抑制 |Microsoft 文档"
-ms.custom: 
+title: 分隔符保留和抑制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30985b94-625e-411a-8137-1c129bc197bf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: d572ae5c887898adedcb3dfc5f83841beedd3434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/06/2017
+ms.locfileid: "26335497"
 ---
 # <a name="delimiter-preservation-and-suppression"></a>分隔符保留和抑制
 

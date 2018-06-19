@@ -1,14 +1,14 @@
 ---
-title: "MessageBox 延迟问题疑难解答 |Microsoft 文档"
-ms.custom: 
+title: MessageBox 延迟问题疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9eb5789-80bd-40d4-8c27-7ae117fd9232
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279869"
 ---
 # <a name="troubleshooting-messagebox-latency-issues"></a>MessageBox 延迟问题疑难解答
 理想情况下，在将消息发布到 MessageBox 数据库后，所有消息都将被处理和传送，并且 MessageBox 数据库永远不会变得过大。 MessageBox 中所有不再被引用的消息将立即由定期清理 MessageBox 数据库表的 SQL 代理作业删除。  

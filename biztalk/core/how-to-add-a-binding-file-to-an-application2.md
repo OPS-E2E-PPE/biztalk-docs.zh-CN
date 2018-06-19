@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "29710418"
 ---
 # <a name="add-a-binding-file-to-an-application"></a>将绑定文件添加到应用程序
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/20/2018
   
 2.  键入以下命令，替换为适当的值下, 表中所述︰  
   
-     **BTSTask AddResource** [**/ApplicationName:"***值***"**] **/Type:System.BizTalk:BizTalkBinding** [**/Overwrite**] **/Source:***值***/Property:TargetEnvironment ="***值***"** [**/Server: * **值*][**数据库 /: * **值*]  
+     **BTSTask AddResource** [**/ApplicationName:"***值***"**] **/Type:System.BizTalk:BizTalkBinding** [**/Overwrite**] **/Source:***值***/Property:TargetEnvironment ="***值***"** [**/Server: * **值*][** 数据库 /: * **值*]  
   
      例如：  
   

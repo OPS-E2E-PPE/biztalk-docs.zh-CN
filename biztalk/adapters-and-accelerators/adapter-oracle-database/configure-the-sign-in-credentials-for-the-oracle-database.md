@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216541"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-database"></a>配置登录凭据用于 Oracle 数据库
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]需要适配器客户端提供客户端凭据。 适配器使用这些凭据与 Oracle 数据库用户进行身份验证并建立连接。  

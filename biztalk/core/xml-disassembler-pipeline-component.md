@@ -1,18 +1,18 @@
 ---
-title: "XML 反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: XML 反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Disassembler [pipeline component], about XML Disassembler
 - pipeline components, XML Disassembler
 - XML Disassembler [pipeline component]
 ms.assetid: ef39b695-6ae7-401d-be1e-b066048c34e9
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289869"
 ---
 # <a name="xml-disassembler-pipeline-component"></a>XML 拆装器管道组件
 XML 拆装器管道组件将 XML 解析功能和拆装功能组合到一个组件中。 该组件的主要功能如下：  

@@ -1,11 +1,11 @@
 ---
-title: "什么是 Windows SharePoint Services Adapter？ | Microsoft Docs"
-ms.custom: 
+title: 什么是 Windows SharePoint Services Adapter？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Windows SharePoint Services adapters
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapters
 - Windows SharePoint Services adapters, about Windows SharePoint Services adapters
 ms.assetid: 1875ac85-46c2-4da5-ad16-8b078cb4cbd7
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291133"
 ---
 # <a name="what-is-the-windows-sharepoint-services-adapter"></a>什么是 Windows SharePoint Services Adapter？
 针对 Windows SharePoint Services 的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 适配器可与 Windows SharePoint Services 和 Microsoft Office InfoPath 更紧密地集成在一起。 以下主题介绍了 Windows SharePoint Services 适配器的功能并对其工作原理进行了简要说明。  

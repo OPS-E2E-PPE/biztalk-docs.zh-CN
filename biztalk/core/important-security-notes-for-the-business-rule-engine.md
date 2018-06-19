@@ -1,11 +1,11 @@
 ---
-title: "重要的安全注意事项业务规则引擎 |Microsoft 文档"
-ms.custom: 
+title: 重要的安全注意事项业务规则引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, store administrator
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, security
 - Denial of Service attacks
 ms.assetid: 8972127a-5569-4b32-bc09-e9265efe9514
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007062"
 ---
 # <a name="important-security-notes-for-the-business-rule-engine"></a>业务规则引擎的重要的安全注意事项
 本主题总结了 Microsoft BizTalk Server 和缓解安全风险时必须执行的步骤中的已知的安全问题。  

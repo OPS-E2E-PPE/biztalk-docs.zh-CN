@@ -1,14 +1,14 @@
 ---
-title: "将从 MSMQT 适配器迁移到 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 将从 MSMQT 适配器迁移到 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 12/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97126f70-0be5-4a2f-bcba-173fd932b6de
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710184"
 ---
 # <a name="migrate-from-the-msmqt-adapter-to-the-msmq-adapter"></a>将从 MSMQT 适配器迁移到 MSMQ 适配器
 本主题讨论在将解决方案从 BizTalk 消息队列 (MSMQT) 适配器迁移到消息队列 (MSMQ) 适配器之前，在端对端按序送达、事务一致性、高可用性以及可伸缩性等方面的注意事项。 在本主题中，按序送达、事务一致性、高可用性以及可伸缩性的定义如下：  

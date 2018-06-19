@@ -1,11 +1,11 @@
 ---
-title: "会发生什么情况项目安装和卸载期间 |Microsoft 文档"
-ms.custom: 
+title: 会发生什么情况项目安装和卸载期间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - uninstalling, artifacts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - artifacts, installing
 - uninstalling
 ms.assetid: f7b5bd8b-bfdf-4536-ae64-fa98c4885be6
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289637"
 ---
 # <a name="what-happens-to-artifacts-during-installation-and-uninstallation"></a>在安装和卸载期间什么操作到项目
 本主题介绍在安装和卸载 BizTalk 应用程序时 BizTalk Server 如何处理包含在应用程序中的基于文件的项目。  

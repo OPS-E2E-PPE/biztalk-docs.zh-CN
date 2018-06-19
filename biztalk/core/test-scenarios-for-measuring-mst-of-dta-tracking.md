@@ -1,14 +1,14 @@
 ---
-title: "用于测量 MST DTA 跟踪测试方案 |Microsoft 文档"
-ms.custom: 
+title: 用于测量 MST DTA 跟踪测试方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 303dc1d8-baac-4b54-92c8-95c0ce640a76
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280189"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a>用于测量 MST DTA 跟踪测试方案
 为了说明实践中的工作方式以及介绍用于度量跟踪的最大可承受吞吐量 (MST) 的简单技术，我们现在将针对度量跟踪 MST 提供一个测试方案。 我们不仅将提供涉及的技术，而且您还可以将提供的数据用作起点，评估其他系统的跟踪性能。  

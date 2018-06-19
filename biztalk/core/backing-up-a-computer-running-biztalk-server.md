@@ -1,14 +1,14 @@
 ---
-title: "备份运行 BizTalk Server 的计算机 |Microsoft 文档"
-ms.custom: 
+title: 备份运行 BizTalk Server 的计算机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 70f53b41-8083-4b56-8698-e75a13b21a69
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230501"
 ---
 # <a name="backing-up-a-computer-running-biztalk-server"></a>对运行 BizTalk Server 的计算机进行备份
 如果运行 BizTalk Server 的计算机出现了不可恢复的硬件故障，则必须用相同的计算机来替代它。 您应该在替代计算机上安装基本平台软件、必备软件和 BizTalk Server 组件，并设置相同的配置。 这些配置设置包括相应的注册表项、文件、文件夹以及正确操作 BizTalk 应用程序所需的相关 Windows 服务。  

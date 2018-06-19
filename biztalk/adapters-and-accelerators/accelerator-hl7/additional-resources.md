@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004198"
 ---
 # <a name="additional-resources"></a>其他资源
 除了[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]和[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 帮助，没有在此平台讨论编程的其他资源。 有关这些资源的详细信息，请转到以下网站：  

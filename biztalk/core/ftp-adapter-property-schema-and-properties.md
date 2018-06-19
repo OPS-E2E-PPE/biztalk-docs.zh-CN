@@ -1,11 +1,11 @@
 ---
-title: "FTP 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: FTP 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [FTP adapters], schemas
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Password property [FTP adapters]
 - MaxConnections property [FTP adapters]
 ms.assetid: 677fdb61-c2b0-4df2-a826-840113e61e8b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006134"
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>FTP 适配器属性架构和属性
 下表包含 FTP 适配器属性架构中的属性。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
   
 |Name|类型|Description|  
 |----------|----------|-----------------|  
-|**RepresentationType**|xs:string|指定 FTP 适配器发送数据的方式。<br /><br /> **有效值：**二进制或 ASCII|  
+|**RepresentationType**|xs:string|指定 FTP 适配器发送数据的方式。<br /><br /> **有效值：** 二进制或 ASCII|  
 |**SSOAffiliateApplication**|xs:string|指定要在 FTP 发送端口上使用的企业单一登录关联应用程序。|  
 |**UserName**|xs:string|指定发送消息时登录 FTP 服务器所用的用户名。|  
 |**密码**|xs:string|指定发送消息时登录 FTP 服务器所用的密码。|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
 |**SpoolingFolder**|xs:string|指定 FTP 服务器上临时文件夹的位置。 此位置用于确保在传输失败后可以进行恢复。|  
 |**UseSsl**|xs:boolean|指定 FTP 适配器是否必须使用 SSL 与 FTPS 服务器进行通信。|  
 |**UseDataProtection**|xs:boolean|指定是否对文件传输进行 SSL 加密。 如果适配器发送和接收来自 FTPS 服务器的数据文件时必须使用 SSL 加密，请选择 true。 对于要以纯文本形式发送和接收数据文件的适配器，请选择 false。|  
-|**FtpsConnectionMode**|xs:string|指定用于 FTPS 服务器的 SSL 连接模式。<br /><br /> **有效值：**隐式或显式|  
+|**FtpsConnectionMode**|xs:string|指定用于 FTPS 服务器的 SSL 连接模式。<br /><br /> **有效值：** 隐式或显式|  
 |**ClientCertificateHash**|xs:string|指定必须在安全套接字层 (SSL) 协商中使用的客户端证书的 SHA1 哈希。<br /><br /> 基于此哈希，从运行 BizTalk 主机实例的用户帐户的个人存储中提取客户端证书。|  
   
 ## <a name="see-also"></a>另请参阅  

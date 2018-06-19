@@ -1,14 +1,14 @@
 ---
-title: "有没有业务流程的公共端口接收此 BizTalk 程序集中 |Microsoft 文档"
-ms.custom: 
+title: 有没有业务流程的公共端口接收此 BizTalk 程序集中 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb901d49-ce3c-4bc6-806a-eb5964d32bb4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279637"
 ---
 # <a name="there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly"></a>此 BizTalk 程序集未包含具有公共接收端口的业务流程
 ## <a name="details"></a>详细信息  

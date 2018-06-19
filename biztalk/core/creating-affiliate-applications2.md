@@ -1,14 +1,14 @@
 ---
-title: "创建 PeopleSoft 企业的关联应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 PeopleSoft 企业的关联应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95151163-5aaf-4683-afb7-02949ccda3e1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015968"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 下列步骤显示如何开始使用关联应用程序和单一登录 (SSO)。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/07/2017
   
      **C:\Program Files\Common Files\Enterprise 上单一登录 >**  
   
-3.  使用企业单一登录命令。 有关命令的列表，使用**-帮助**切换。  
+3.  使用企业单一登录命令。 有关命令的列表，使用 **-帮助**切换。  
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   

@@ -1,18 +1,18 @@
 ---
-title: "如何消息流经 BTAHL7 |Microsoft 文档"
-ms.custom: 
+title: 如何消息流经 BTAHL7 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, message processing
 - messages, message flow
 - BTAHL7, message flow
 ms.assetid: dd4599af-500d-4e52-85b2-8b6a28fd3f0a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008318"
 ---
 # <a name="how-messages-flow-through-btahl7"></a>如何消息流经 BTAHL7
 当你安装[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 的顶部[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 中，你将添加[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]组件[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]体系结构。 下图显示了组合的系统提供的体系结构概述[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]。  

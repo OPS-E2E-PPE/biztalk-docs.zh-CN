@@ -1,11 +1,11 @@
 ---
-title: "针对业务规则引擎中的类继承的支持 |Microsoft 文档"
-ms.custom: 
+title: 针对业务规则引擎中的类继承的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code samples, Business Rules Engine
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Business Rules Engine, examples
 - examples, Business Rules Engine
 ms.assetid: 50871f34-ccbe-4f77-8feb-5694e1b14837
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278621"
 ---
 # <a name="support-for-class-inheritance-in-the-business-rule-engine"></a>业务规则引擎中对类继承的支持
 面向对象编程 (OOP) 语言的主要功能之一是继承。 通过继承，可以使用现有类的所有功能，并且无需重新编写原始类就可以对这些功能进行扩展。  

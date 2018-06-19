@@ -1,17 +1,17 @@
 ---
-title: "键盘快捷方式常规到设计图面 |Microsoft 文档"
-ms.custom: 
+title: 键盘快捷方式常规到设计图面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: a096cb14-7e41-4231-810e-be3f3f098a84
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262541"
 ---
 # <a name="keyboard-shortcuts-general-to-the-design-surface"></a>键盘快捷方式常规到设计图面
 下表介绍一般过程区域和端口图面区域的设计图面键盘导航。  

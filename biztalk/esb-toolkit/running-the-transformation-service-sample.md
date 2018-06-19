@@ -1,14 +1,14 @@
 ---
-title: "运行转换服务示例 |Microsoft 文档"
-ms.custom: 
+title: 运行转换服务示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 42064d32-5ec5-4219-a338-c5769969b958
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295229"
 ---
 # <a name="running-the-transformation-service-sample"></a>运行转换服务示例
 你可以执行使用任何工具或实用程序，它可以执行 Web 服务方法转换服务示例。 例如，你可以使用 Storm，可从[CodePlex](http://go.microsoft.com/fwlink/?LinkId=187762) ([http://go.microsoft.com/fwlink/?LinkId=187762](http://go.microsoft.com/fwlink/?LinkId=187762))，或者可以创建自己的测试客户端调用转换 Web 服务。  

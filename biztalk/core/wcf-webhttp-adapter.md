@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67a353e7-1ba3-427a-8e99-c9b8d83061cb
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976067"
 ---
 # <a name="wcf-webhttp-adapter"></a>WCF-WebHttp 适配器
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用**WCF WebHttp**适配器将消息发送到 RESTful 服务。 **WCF WebHttp** 发送适配器从 BizTalk 消息向服务发送 HTTP 消息。 接收位置将接收来自 RESTful 服务的消息。 对于 GET 和 DELETE 请求，适配器不使用任何负载。 对于 POST 和 PUT 请求，适配器将 BizTalk 消息正文部分用于 HTTP 内容/负载。  

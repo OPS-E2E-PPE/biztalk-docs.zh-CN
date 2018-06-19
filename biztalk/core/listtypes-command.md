@@ -1,14 +1,14 @@
 ---
-title: "默认应用命令 |Microsoft 文档"
-ms.custom: 
+title: 默认应用命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 94febe8a-4c1e-4581-a6d1-ef579633e745
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262213"
 ---
 # <a name="listtypes-command"></a>默认应用命令
 列出的所有项目类型可添加到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用**AddResource**命令。 有关详细信息**AddResource**命令，请参阅[AddResource 命令](../core/addresource-command.md)。  

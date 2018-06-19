@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008595"
 ---
 # <a name="walkthrough-testing-the-policy"></a>演练： 测试策略
 本演练中提供的测试中创建的策略的分步过程[演练： 创建简单的业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。  

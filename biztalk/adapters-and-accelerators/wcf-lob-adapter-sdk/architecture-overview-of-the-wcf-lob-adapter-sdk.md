@@ -1,15 +1,15 @@
 ---
-title: "WCF LOB 适配器 SDK 的体系结构概述 |Microsoft 文档"
-description: "处理程序、 通道实现，连接管理、 元数据，以及使用 WCF LOB 适配器 SDK 中的 WSDL 的简介"
-ms.custom: 
+title: WCF LOB 适配器 SDK 的体系结构概述 |Microsoft 文档
+description: 处理程序、 通道实现，连接管理、 元数据，以及使用 WCF LOB 适配器 SDK 中的 WSDL 的简介
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dbd9b63c-54a4-4f63-b3a8-8600f6009a74
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226621"
 ---
 # <a name="architecture-overview-of-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的体系结构概述
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]构建于 WCF 通道模型之上，并提供适配器开发人员创建到包含大型的动态元数据的业务线系统的适配器的设计时和运行时扩展。 使用创建的适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供给使用者为自定义 WCF 绑定。 下图显示了内部体系结构和 WCF LOB 适配器 SDK 的主要组件。  

@@ -1,14 +1,14 @@
 ---
-title: "什么是 BAM WCF 和 WF 侦听器？ | Microsoft Docs"
-ms.custom: 
+title: 什么是 BAM WCF 和 WF 侦听器？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 198bfdc9-86ff-4017-b65f-19616deeb9f4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288885"
 ---
 # <a name="what-are-the-bam-wcf-and-wf-interceptors"></a>什么是 BAM WCF 和 WF 侦听器？
 业务活动监视 (BAM) 是一个由工具、API 和服务组成的集合，用于管理聚合、警报和配置文件，以及提供实现自动发送事件流程所需的工具，以监视相关业务度量。 同时，还实现了对业务流程的端对端查看，使你可以了解业务流程的最新状态和结果。  

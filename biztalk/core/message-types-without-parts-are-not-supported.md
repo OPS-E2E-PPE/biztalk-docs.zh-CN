@@ -1,14 +1,14 @@
 ---
-title: "消息类型不支持部分没有 |Microsoft 文档"
-ms.custom: 
+title: 消息类型不支持部分没有 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0bfb042-feda-4282-a7fa-c13be4ff6254
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263101"
 ---
 # <a name="message-types-without-parts-are-not-supported"></a>不支持没有消息部分的消息类型
 ## <a name="details"></a>详细信息  

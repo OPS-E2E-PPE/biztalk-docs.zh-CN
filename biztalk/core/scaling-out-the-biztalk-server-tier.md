@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 层向外缩放 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 层向外缩放 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, scaling
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - NLB system, scaling
 - scaling, host instances
 ms.assetid: 01d1ab20-d7a9-4d0b-a61e-65e56fe5010e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271965"
 ---
 # <a name="scaling-out-the-biztalk-server-tier"></a>向外扩展 BizTalk Server 层
 为扩展 BizTalk 层，应向现有拓扑结构添加其他硬件。 如果出现以下情况，则建议您添加硬件：  

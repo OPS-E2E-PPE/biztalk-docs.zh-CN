@@ -1,14 +1,14 @@
 ---
-title: "监视和减少 DTC 日志文件的磁盘 I/O 争用 |Microsoft 文档"
-ms.custom: 
+title: 监视和减少 DTC 日志文件的磁盘 I/O 争用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8b968dd-216e-454f-9224-aaf92ffd363b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007414"
 ---
 # <a name="monitoring-and-reducing-dtc-log-file-disk-io-contention"></a>监视和减少 DTC 日志文件的磁盘 I/O 争用
 分布式事务处理协调器 (DTC) 日志文件可以成为大型事务环境中的磁盘 I/O 瓶颈。 这在使用支持事务，如 SQL Server、 MSMQ 或 MQSeries，或在多 MessageBox 环境中的适配器时尤其如此。 事务的适配器使用 DTC 事务，以及多 MessageBox 环境广泛利用 DTC 事务。  

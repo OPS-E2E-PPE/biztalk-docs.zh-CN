@@ -1,11 +1,11 @@
 ---
-title: "使用独立的 WCF 发布 WCF 服务接收适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用独立的 WCF 发布 WCF 服务接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive adapters, WCF services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, receive adapters
 - WCF services, publishing
 ms.assetid: 62ebf373-075c-4c98-8130-ac2cf06e4a70
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271629"
 ---
 # <a name="publishing-wcf-services-with-the-isolated-wcf-receive-adapters"></a>通过独立 WCF 接收适配器发布 WCF 服务
 BizTalk Windows Communication Foundation (WCF) 适配器允许[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]与基于 WCF 的应用程序进行通信。 BizTalk WCF 适配器包含七个物理适配器。 除 WCF CustomIsolated 适配器之外，每个适配器包含发送和接收适配器。  
@@ -57,7 +58,7 @@ BizTalk Windows Communication Foundation (WCF) 适配器允许[!INCLUDE[btsCoNam
 |文件|文件夹|Description|  
 |----------|------------|-----------------|  
 |WCF 服务（.svc 文件）|\|通过独立 WCF 适配器发布的针对 WCF 接收位置的 WCF 服务。|  
-|Web.config|\|ASP.NET 配置文件，其中包含有关 ASP.NET Web 应用程序行为、已发布 WCF 服务行为、元数据终结点和 BizTalk 特有设置的信息。 由 BizTalk WCF 发布向导生成的默认元数据绑定是不安全的，因为它允许对元数据进行匿名访问。 服务元数据中包含有关服务的详细说明，可能会有意或无意地包含敏感信息。 为了防止服务元数据受到未经授权的访问，可以修改 Web.config，使其针对元数据终结点使用安全绑定。 **注意：**的元数据终结点绑定，以及服务终结点绑定并非所有组合都都有效。 在某些情况下，元数据终结点的绑定配置必须与其服务终结点的绑定配置一致。 例如，当服务终结点依赖于 HTTPS 时，其相应的元数据终结点不能在要求使用 HTTP 传输的安全模式下进行配置。|  
+|Web.config|\|ASP.NET 配置文件，其中包含有关 ASP.NET Web 应用程序行为、已发布 WCF 服务行为、元数据终结点和 BizTalk 特有设置的信息。 由 BizTalk WCF 发布向导生成的默认元数据绑定是不安全的，因为它允许对元数据进行匿名访问。 服务元数据中包含有关服务的详细说明，可能会有意或无意地包含敏感信息。 为了防止服务元数据受到未经授权的访问，可以修改 Web.config，使其针对元数据终结点使用安全绑定。 **注意：** 的元数据终结点绑定，以及服务终结点绑定并非所有组合都都有效。 在某些情况下，元数据终结点的绑定配置必须与其服务终结点的绑定配置一致。 例如，当服务终结点依赖于 HTTPS 时，其相应的元数据终结点不能在要求使用 HTTP 传输的安全模式下进行配置。|  
 |ServiceDescription.xml|\|用于描述包含消息类型的已发布 WCF 服务约定的 XML 文件。|  
 |BizTalk 架构（.xsd 文件）|\App_Data|XML 架构，用于定义通过独立 WCF 适配器发布的 XML 实例消息的结构。|  
 |SchemaIndex.xml|\App_Data|指示在已发布 WCF 服务中使用的 XML 架构文件的 XML 文件。|  

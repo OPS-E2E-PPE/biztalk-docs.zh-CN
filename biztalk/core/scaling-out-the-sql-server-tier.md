@@ -1,11 +1,11 @@
 ---
-title: "SQL Server 层向外缩放 |Microsoft 文档"
-ms.custom: 
+title: SQL Server 层向外缩放 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scaling, MessageBox database
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MessageBox database, scaling
 - scaling, strategies
 ms.assetid: d5b2ebba-401e-4fde-8818-407fa626043a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272349"
 ---
 # <a name="scaling-out-the-sql-server-tier"></a>向外扩展 SQL Server 层
 对于每个 BizTalk 组，添加一个主 MessageBox 数据库。 随后添加的所有 MessageBox 数据库称为辅助 MessageBox。 主 MessageBox 处理所有订阅和消息路由。 它还可以发布消息。 辅助 MessageBox 数据库只有在专门将其配置为发布消息时才能执行此操作。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
     -   **CPU**非常昂贵且复杂的业务流程的情况下，如果 MessageBox 数据库占用大量 CPU 资源。 添加其他发布 MessageBox 数据库应有助于增加吞吐量。  
   
-    -   **锁争用，**具有多个主机实例或业务流程的复杂方案，往往会在 MessageBox 数据库上创建锁争用。 同样，添加其他发布 MessageBox 数据库应有助于增加吞吐量。  
+    -   **锁争用，** 具有多个主机实例或业务流程的复杂方案，往往会在 MessageBox 数据库上创建锁争用。 同样，添加其他发布 MessageBox 数据库应有助于增加吞吐量。  
   
 -   向上扩展不能解决瓶颈问题。 例如，如果主 MessageBox 数据库上出现锁争用，向外扩展是唯一的选择。  
   

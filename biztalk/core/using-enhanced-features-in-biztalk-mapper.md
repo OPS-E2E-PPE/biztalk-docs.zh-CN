@@ -1,14 +1,14 @@
 ---
-title: "使用增强的 BizTalk 映射程序中的功能 |Microsoft 文档"
-ms.custom: 
+title: 使用增强的 BizTalk 映射程序中的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3530281-8bb2-40a1-9632-8112cb4c7735
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287005"
 ---
 # <a name="using-enhanced-features-in-biztalk-mapper"></a>使用 BizTalk 映射器中的增强功能
 BizTalk 映射器引入了一组可用性增强功能可帮助您处理复杂的映射。  

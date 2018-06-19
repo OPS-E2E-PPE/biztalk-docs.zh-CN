@@ -1,17 +1,17 @@
 ---
-title: "结构 MQSeries 适配器 |Microsoft 文档"
-ms.custom: 
+title: 结构 MQSeries 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, MQSeries adapters
 - MQSeries adapters, architecture
 ms.assetid: d25caf6a-3f93-4164-9c92-489b919a624d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278493"
 ---
 # <a name="structure-of-the-mqseries-adapter"></a>MQSeries 适配器的结构
 MQSeries 适配器由两部分组成： 下运行的适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]并将 COM + 应用程序，MQSAgent，适用于 Windows 在 MQSeries 服务器下运行。 下图显示了此关系：  

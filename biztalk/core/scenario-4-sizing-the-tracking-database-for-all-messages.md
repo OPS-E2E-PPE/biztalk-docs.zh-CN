@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269837"
 ---
 # <a name="scenario-4-sizing-the-tracking-database-for-all-messages"></a>方案 4： 调整跟踪数据库的所有消息
 如果 Microsoft® BizTalk Server® 2004 实施中同时出现以上三种消息方案，则需计算所有方案结果的总和以确定 BizTalk 跟踪数据库的大小。  

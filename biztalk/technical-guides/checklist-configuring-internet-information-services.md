@@ -1,14 +1,14 @@
 ---
-title: "清单： 配置 Internet Information Services |Microsoft 文档"
-ms.custom: 
+title: 清单： 配置 Internet Information Services |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 186f82c0-bd50-4c79-a403-8b0d91cc68d6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976499"
 ---
 # <a name="checklist-configuring-internet-information-services"></a>清单： 配置 Internet Information Services
 本主题列出了用于在生产中准备 Internet 信息服务 (IIS) 时应遵循的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  

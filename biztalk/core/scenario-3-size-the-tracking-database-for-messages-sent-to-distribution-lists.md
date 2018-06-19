@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271101"
 ---
 # <a name="scenario-3-sizing-the-tracking-database--for-messages-sent-out-to-distribution-lists"></a>方案 3：对发送到分发列表的消息调整跟踪数据库的大小
 下图中的消息将通过业务流程、在业务流程内被更改，然后通过分发列表向外发送给多个不同的发送端口：  

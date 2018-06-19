@@ -1,14 +1,14 @@
 ---
-title: "创建使用业务规则编辑器规则 |Microsoft 文档"
-ms.custom: 
+title: 创建使用业务规则编辑器规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0600a2b2-36a2-4496-8ba1-c5f6e2fa4760
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 78376935362715684b451eb6da9f2b1e8c129c2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28944101"
 ---
 # <a name="create-business-rules-using-the-business-rule-composer"></a>创建业务规则使用业务规则编辑器
 

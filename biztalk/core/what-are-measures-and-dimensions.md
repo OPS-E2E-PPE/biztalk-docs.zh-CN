@@ -1,14 +1,14 @@
 ---
-title: "什么是度量值和维度？ | Microsoft Docs"
-ms.custom: 
+title: 什么是度量值和维度？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6b12a4c-9be5-4cac-b5b9-ece376d28cb1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289781"
 ---
 # <a name="what-are-measures-and-dimensions"></a>什么是度量值和维度？
 维度和度量值都是数据聚合的物理特征。 本主题以 BAM 方案为上下文环境来说明什么是度量值和维度。  

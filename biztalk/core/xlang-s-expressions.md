@@ -1,14 +1,14 @@
 ---
-title: "XLANG-s 表达式 |Microsoft 文档"
-ms.custom: 
+title: XLANG-s 表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a477ee2c-7fd7-43bd-a194-0d68d79613fc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289357"
 ---
 # <a name="xlang-s-expressions"></a>XLANG-s 表达式
 表达式是运算符和操作数构成的序列。 本主题将说明 XLANG/s 针对各种表达式所支持的语法。  

@@ -1,11 +1,11 @@
 ---
-title: "大小调整跟踪消息正文的跟踪数据库 |Microsoft 文档"
-ms.custom: 
+title: 大小调整跟踪消息正文的跟踪数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, database size
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - HAT, orchestrations
 - tracking, ports
 ms.assetid: ee75e530-f15d-4ceb-ba67-0b0b24d9df6b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277917"
 ---
 # <a name="sizing-the-tracking-database-to-track-message-bodies"></a>大小调整跟踪数据库来跟踪消息正文
 如果计划在 BizTalk 跟踪数据库中跟踪消息正文，那么，在计算时还需考虑这些正文的大小。 请使用以下公式：  

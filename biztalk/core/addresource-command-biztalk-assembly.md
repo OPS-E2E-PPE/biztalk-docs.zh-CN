@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c18607b5-d929-48c9-9fa3-f728a7a80d04
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231821"
 ---
 # <a name="addresource-command-biztalk-assembly"></a>AddResource 命令：BizTalk 程序集
 若要将 BizTalk 程序集添加到 BizTalk 应用程序，请使用 **AddResource** 命令并指定 **System.BizTalk:BizTalkAssembly** 为类型参数。 运行此命令可将程序集添加到 BizTalk 管理数据库中。 该程序集还会显示在 BizTalk Server 管理控制台中，即它所添加到的应用程序的“资源”文件夹下。 该程序集中包含的项目也会显示在相应的文件夹下。 此外，当你使用时，项目会列出[ListApp 命令](../core/listapp-command.md)。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 03/23/2018
  有关依赖关系的详细信息，请参阅[依赖关系和应用程序部署](../core/dependencies-and-application-deployment.md)。  
   
 ## <a name="usage"></a>用法  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]  
+ **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]  
   
 ## <a name="parameters"></a>Parameters  
   

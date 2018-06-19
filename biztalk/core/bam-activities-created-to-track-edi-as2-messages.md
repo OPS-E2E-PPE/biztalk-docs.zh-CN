@@ -1,14 +1,14 @@
 ---
-title: "BAM 活动创建到跟踪 EDI AS2 消息 |Microsoft 文档"
-ms.custom: 
+title: BAM 活动创建到跟踪 EDI AS2 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a10ab846-0fbb-46f5-920e-cb2b5be75814
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008894"
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a>BAM 活动跟踪 EDI AS2 消息的创建
 BizTalk Server 包括 BAM 活动已创建用于 EDI 和 AS2 报告的状态。 这些活动可确定在状态报告中显示的数据。 本主题介绍了其中定义的 BAM 活动和字段，以及为 BAM 活动中的某些字段定义的枚举值。  
