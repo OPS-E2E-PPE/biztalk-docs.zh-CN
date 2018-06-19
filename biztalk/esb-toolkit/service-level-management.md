@@ -1,14 +1,14 @@
 ---
-title: "服务级别管理 |Microsoft 文档"
-ms.custom: 
+title: 服务级别管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: add50343-5470-4db3-a029-c827523e2f2c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294725"
 ---
 # <a name="service-level-management"></a><span data-ttu-id="27e97-102">服务级别管理</span><span class="sxs-lookup"><span data-stu-id="27e97-102">Service Level Management</span></span>
 <span data-ttu-id="27e97-103">AmberPoint SMS 服务级别管理器提供了到特定的性能和企业级 SOA 基于系统内的可用性问题的可见性。</span><span class="sxs-lookup"><span data-stu-id="27e97-103">The AmberPoint SMS Service Level Manager provides visibility into specific performance and availability issues within enterprise-level SOA-based systems.</span></span> <span data-ttu-id="27e97-104">它会检测并为每个 Microsoft BizTalk Server 接收位置和发送端口跟踪度量值。</span><span class="sxs-lookup"><span data-stu-id="27e97-104">It instruments and tracks the metrics for each Microsoft BizTalk Server receive location and send port.</span></span> <span data-ttu-id="27e97-105">这可实时运行状况和状态指示，除了这些组件的正在进行的性能特征描述。</span><span class="sxs-lookup"><span data-stu-id="27e97-105">This provides real-time health and status indication, in addition to ongoing performance characterization of these components.</span></span> <span data-ttu-id="27e97-106">图 1 显示与接收位置相关联的度量值的显示。</span><span class="sxs-lookup"><span data-stu-id="27e97-106">Figure 1 shows the display of the metrics associated with a receive location.</span></span>  

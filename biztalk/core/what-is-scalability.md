@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288853"
 ---
 # <a name="what-is-scalability"></a><span data-ttu-id="22435-103">可伸缩性概述</span><span class="sxs-lookup"><span data-stu-id="22435-103">What Is Scalability?</span></span>
 <span data-ttu-id="22435-104">可伸缩性是指系统为满足您的业务需求进行扩展的能力。</span><span class="sxs-lookup"><span data-stu-id="22435-104">Scalability is the ability of a system to expand to meet your business needs.</span></span> <span data-ttu-id="22435-105">在不对应用程序进行较大改动的情况下，可以通过添加额外的硬件或通过升级现有硬件来对系统进行扩展。</span><span class="sxs-lookup"><span data-stu-id="22435-105">You scale a system by adding extra hardware or by upgrading the existing hardware without changing much of the application.</span></span> <span data-ttu-id="22435-106">在 BizTalk Server 系统环境中，可伸缩性是指 BizTalk 能够根据吞吐量需求的增长进行扩展的能力（如果您需要缩短延迟时间）。</span><span class="sxs-lookup"><span data-stu-id="22435-106">In the context of a BizTalk Server system, scalability refers to the ability of BizTalk to scale as your throughput needs increase, and if you need to reduce latency times.</span></span>  

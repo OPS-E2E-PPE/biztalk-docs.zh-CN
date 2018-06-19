@@ -1,18 +1,18 @@
 ---
-title: "如何在非活动窗口上设置的持续时间 |Microsoft 文档"
-ms.custom: 
+title: 如何在非活动窗口上设置的持续时间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Set-ActivityWindow command [BAM]
 - activities [BAM], time intervals
 - managing [BAM], time intervals
 ms.assetid: e39c315e-f215-4f81-9774-cf7aedf6ba33
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972035"
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a><span data-ttu-id="3c9c1-102">如何设置活动时段的持续时间</span><span class="sxs-lookup"><span data-stu-id="3c9c1-102">How to Set the Duration on an Activity Window</span></span>
 <span data-ttu-id="3c9c1-103">管理员使用**集 activitywindow**命令以设置指定的活动的持续时间。</span><span class="sxs-lookup"><span data-stu-id="3c9c1-103">Administrators use the **set-activitywindow** command to set the duration for the specified activity.</span></span>  

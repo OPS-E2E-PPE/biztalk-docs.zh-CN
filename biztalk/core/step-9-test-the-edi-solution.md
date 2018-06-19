@@ -1,14 +1,14 @@
 ---
-title: "步骤 9： 测试 EDI 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 9： 测试 EDI 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7a44e0f-496c-462f-bf03-1c2f842d13b6
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278645"
 ---
 # <a name="step-9-test-the-edi-solution"></a><span data-ttu-id="65ddf-102">步骤 9： 测试 EDI 解决方案</span><span class="sxs-lookup"><span data-stu-id="65ddf-102">Step 9: Test the EDI Solution</span></span>
 <span data-ttu-id="65ddf-103">![步骤 9 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")</span><span class="sxs-lookup"><span data-stu-id="65ddf-103">![Step 9 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 上下文属性 |Microsoft 文档"
-ms.custom: 
+title: EDI 上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6a408af-daf5-4e9e-afb3-9fd1795e8c16
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010614"
 ---
 # <a name="edi-context-properties"></a><span data-ttu-id="01f3f-102">EDI 上下文属性</span><span class="sxs-lookup"><span data-stu-id="01f3f-102">EDI Context Properties</span></span>
 <span data-ttu-id="01f3f-103">EDI 全局属性架构中的消息上下文属性是公开的，因此可以在消息路由等操作中使用这些属性。</span><span class="sxs-lookup"><span data-stu-id="01f3f-103">The message context properties in the EDI global property schema are publicly exposed so you can use them in operations such as message routing.</span></span> <span data-ttu-id="01f3f-104">这些上下文属性在 Microsoft.BizTalk.Edi.BaseArtifacts 程序集的 PropertySchema.xsd 中定义。</span><span class="sxs-lookup"><span data-stu-id="01f3f-104">These context properties are defined in PropertySchema.xsd in the Microsoft.BizTalk.Edi.BaseArtifacts assembly.</span></span> <span data-ttu-id="01f3f-105">这些属性的命名空间是 `http://schemas.microsoft.com/ Edi/PropertySchema`。</span><span class="sxs-lookup"><span data-stu-id="01f3f-105">The namespace for the properties is `http://schemas.microsoft.com/ Edi/PropertySchema`.</span></span> <span data-ttu-id="01f3f-106">如果它们已被提升，则这些消息上下文属性都可用作 Edi。\<*属性名称*\>中**筛选器**页**发送端口属性对话框中** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="01f3f-106">If they are promoted, these message context properties are available as Edi.\<*Property Name*\> in the **Filters** page of the **Send Port Properties Dialog Box** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>

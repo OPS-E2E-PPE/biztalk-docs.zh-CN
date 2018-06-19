@@ -1,17 +1,17 @@
 ---
-title: "限制在配置文件适配器 |Microsoft 文档"
-ms.custom: 
+title: 限制在配置文件适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [File adapters], restrictions
 - File adapters, restrictions
 ms.assetid: 8d8137a7-5b16-4ae3-a0a7-6d114324bdf3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975124"
 ---
 # <a name="restrictions-when-configuring-the-file-adapter"></a><span data-ttu-id="5632e-102">配置文件适配器时的限制</span><span class="sxs-lookup"><span data-stu-id="5632e-102">Restrictions when configuring the File adapter</span></span>
 <span data-ttu-id="5632e-103">限制和规则时使用的文件适配器。</span><span class="sxs-lookup"><span data-stu-id="5632e-103">Restrictions and rules when using the file adapter.</span></span>
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="5632e-111">文件掩码和文件名不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="5632e-111">The file mask and file name are not case-sensitive.</span></span>  
   
--   <span data-ttu-id="5632e-112">文件名称不能包含任何以下字符： \< \> : / &#124;" ?</span><span class="sxs-lookup"><span data-stu-id="5632e-112">The file name cannot contain any of the following characters: \< \> : / &#124; " ?</span></span> <span data-ttu-id="5632e-113">* ;</span><span class="sxs-lookup"><span data-stu-id="5632e-113">* ;</span></span>  
+-   <span data-ttu-id="5632e-112">文件名称不能包含任何以下字符： \< \> : / &#124;" ?</span><span class="sxs-lookup"><span data-stu-id="5632e-112">The file name cannot contain any of the following characters: \< \> : / &#124; " ?</span></span> <span data-ttu-id="5632e-113">\* ;</span><span class="sxs-lookup"><span data-stu-id="5632e-113">\* ;</span></span>  
   
 -   <span data-ttu-id="5632e-114">文件掩码不能包含任何以下字符： \< \> : / &#124;" ;</span><span class="sxs-lookup"><span data-stu-id="5632e-114">The file mask cannot contain any of the following characters: \< \> : / &#124; " ;</span></span> 
   
@@ -101,9 +102,9 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="5632e-160">%DestinationParty%</span><span class="sxs-lookup"><span data-stu-id="5632e-160">%DestinationParty%</span></span>|<span data-ttu-id="5632e-161">目标参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="5632e-161">Name of the destination party.</span></span> <span data-ttu-id="5632e-162">该值来自消息上下文属性 **BTS.DestinationParty**。</span><span class="sxs-lookup"><span data-stu-id="5632e-162">The value comes from the message context property **BTS.DestinationParty**.</span></span>|  
 |<span data-ttu-id="5632e-163">%DestinationPartyQualifier%</span><span class="sxs-lookup"><span data-stu-id="5632e-163">%DestinationPartyQualifier%</span></span>|<span data-ttu-id="5632e-164">目标参与方的限定符。</span><span class="sxs-lookup"><span data-stu-id="5632e-164">Qualifier of the destination party.</span></span> <span data-ttu-id="5632e-165">该值来自消息上下文属性 **BTS.DestinationPartyQualifier**。</span><span class="sxs-lookup"><span data-stu-id="5632e-165">The value comes from the message context property **BTS.DestinationPartyQualifier**.</span></span>|  
 |<span data-ttu-id="5632e-166">%MessageID%</span><span class="sxs-lookup"><span data-stu-id="5632e-166">%MessageID%</span></span>|<span data-ttu-id="5632e-167">BizTalk Server 中消息的全局唯一标识符 (GUID)。</span><span class="sxs-lookup"><span data-stu-id="5632e-167">Globally unique identifier (GUID) of the message in BizTalk Server.</span></span> <span data-ttu-id="5632e-168">值直接来自消息上下文属性**BTS。MessageID**。</span><span class="sxs-lookup"><span data-stu-id="5632e-168">The value comes directly from the message context property **BTS.MessageID**.</span></span>|  
-|<span data-ttu-id="5632e-169">%SourceFileName%</span><span class="sxs-lookup"><span data-stu-id="5632e-169">%SourceFileName%</span></span>|<span data-ttu-id="5632e-170">文件适配器从中读取消息的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="5632e-170">Name of the file from which the File adapter read the message.</span></span> <span data-ttu-id="5632e-171">文件名称包括扩展名，并排除的文件路径，例如，Sample.xml。</span><span class="sxs-lookup"><span data-stu-id="5632e-171">The file name includes the extension and excludes the file path, for example, Sample.xml.</span></span> <span data-ttu-id="5632e-172">文件适配器时替换此属性，从存储中的绝对文件路径中提取的文件名称**文件。ReceivedFileName**上下文属性。</span><span class="sxs-lookup"><span data-stu-id="5632e-172">When substituting this property, the File adapter extracts the file name from the absolute file path stored in the **FILE.ReceivedFileName** context property.</span></span> <span data-ttu-id="5632e-173">如果上下文属性不具有值-例如，如果而不是文件适配器适配器上接收的消息 — 宏将不会替换，并且将保持原样的文件名称中 (例如，C:\Drop\\%sourcefilename%)。</span><span class="sxs-lookup"><span data-stu-id="5632e-173">If the context property does not have a value—for example, if a message was received on an adapter other than the File adapter—the macro will not be substituted and will remain in the file name as is (for example, C:\Drop\\%SourceFileName%).</span></span> <span data-ttu-id="5632e-174">**注意：**此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-174">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
-|<span data-ttu-id="5632e-175">%SourceParty%</span><span class="sxs-lookup"><span data-stu-id="5632e-175">%SourceParty%</span></span>|<span data-ttu-id="5632e-176">文件适配器从其接收消息的源参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="5632e-176">Name of the source party from which the File adapter received the message.</span></span> <span data-ttu-id="5632e-177">**注意：**此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-177">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
-|<span data-ttu-id="5632e-178">%SourcePartyQualifier%</span><span class="sxs-lookup"><span data-stu-id="5632e-178">%SourcePartyQualifier%</span></span>|<span data-ttu-id="5632e-179">文件适配器从其接收消息的源参与方的限定符。</span><span class="sxs-lookup"><span data-stu-id="5632e-179">Qualifier of the source party from which the File adapter received the message.</span></span> <span data-ttu-id="5632e-180">**注意：**此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-180">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
+|<span data-ttu-id="5632e-169">%SourceFileName%</span><span class="sxs-lookup"><span data-stu-id="5632e-169">%SourceFileName%</span></span>|<span data-ttu-id="5632e-170">文件适配器从中读取消息的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="5632e-170">Name of the file from which the File adapter read the message.</span></span> <span data-ttu-id="5632e-171">文件名称包括扩展名，并排除的文件路径，例如，Sample.xml。</span><span class="sxs-lookup"><span data-stu-id="5632e-171">The file name includes the extension and excludes the file path, for example, Sample.xml.</span></span> <span data-ttu-id="5632e-172">文件适配器时替换此属性，从存储中的绝对文件路径中提取的文件名称**文件。ReceivedFileName**上下文属性。</span><span class="sxs-lookup"><span data-stu-id="5632e-172">When substituting this property, the File adapter extracts the file name from the absolute file path stored in the **FILE.ReceivedFileName** context property.</span></span> <span data-ttu-id="5632e-173">如果上下文属性不具有值-例如，如果而不是文件适配器适配器上接收的消息 — 宏将不会替换，并且将保持原样的文件名称中 (例如，C:\Drop\\%sourcefilename%)。</span><span class="sxs-lookup"><span data-stu-id="5632e-173">If the context property does not have a value—for example, if a message was received on an adapter other than the File adapter—the macro will not be substituted and will remain in the file name as is (for example, C:\Drop\\%SourceFileName%).</span></span> <span data-ttu-id="5632e-174">**注意：** 此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-174">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
+|<span data-ttu-id="5632e-175">%SourceParty%</span><span class="sxs-lookup"><span data-stu-id="5632e-175">%SourceParty%</span></span>|<span data-ttu-id="5632e-176">文件适配器从其接收消息的源参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="5632e-176">Name of the source party from which the File adapter received the message.</span></span> <span data-ttu-id="5632e-177">**注意：** 此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-177">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
+|<span data-ttu-id="5632e-178">%SourcePartyQualifier%</span><span class="sxs-lookup"><span data-stu-id="5632e-178">%SourcePartyQualifier%</span></span>|<span data-ttu-id="5632e-179">文件适配器从其接收消息的源参与方的限定符。</span><span class="sxs-lookup"><span data-stu-id="5632e-179">Qualifier of the source party from which the File adapter received the message.</span></span> <span data-ttu-id="5632e-180">**注意：** 此宏的正确实现需要输出消息是作为对收到的消息，同一消息。</span><span class="sxs-lookup"><span data-stu-id="5632e-180">**Note:**  Correct implementation of this macro requires that the output message is the same message as the received message.</span></span>|  
 |<span data-ttu-id="5632e-181">%time%</span><span class="sxs-lookup"><span data-stu-id="5632e-181">%time%</span></span>|<span data-ttu-id="5632e-182">hhmmss 格式的 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="5632e-182">UTC time in the format hhmmss.</span></span>|  
 |<span data-ttu-id="5632e-183">%time.tz%</span><span class="sxs-lookup"><span data-stu-id="5632e-183">%time.tz%</span></span>|<span data-ttu-id="5632e-184">本地时间加上 GMT 时区，格式为 hhmmssTZD（例如 124525+530）。</span><span class="sxs-lookup"><span data-stu-id="5632e-184">Local time plus time zone from GMT in the format hhmmssTZD (for example, 124525+530).</span></span>|  
   
@@ -120,13 +121,13 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="5632e-191">你可以使用通用命名约定 (UNC) 格式指定的文件路径 (例如， \\ \\ <*服务器*\> \\ < *共享*\>)。</span><span class="sxs-lookup"><span data-stu-id="5632e-191">You can specify the file path by using Universal Naming Convention (UNC) format (for example, \\\\<*server*\>\\<*share*\>).</span></span>  
   
--   <span data-ttu-id="5632e-192">如果该文件路径是 UNC 格式，服务器名称不得包含以下字符: ' ~ ！</span><span class="sxs-lookup"><span data-stu-id="5632e-192">If the file path is in UNC format, the server name must not contain the following characters: \` ~ !</span></span> <span data-ttu-id="5632e-193">@ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ?</span><span class="sxs-lookup"><span data-stu-id="5632e-193">@ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ?</span></span> <span data-ttu-id="5632e-194">;</span><span class="sxs-lookup"><span data-stu-id="5632e-194">;</span></span>  
+-   <span data-ttu-id="5632e-192">如果该文件路径是 UNC 格式，服务器名称不得包含以下字符: ' ~ ！</span><span class="sxs-lookup"><span data-stu-id="5632e-192">If the file path is in UNC format, the server name must not contain the following characters: \` ~ !</span></span> <span data-ttu-id="5632e-193">@ # $ ^ & \* ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ?</span><span class="sxs-lookup"><span data-stu-id="5632e-193">@ # $ ^ & \* ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ?</span></span> <span data-ttu-id="5632e-194">;</span><span class="sxs-lookup"><span data-stu-id="5632e-194">;</span></span>  
   
 -   <span data-ttu-id="5632e-195">不能使用父 (\\...\\) 和当前 (\\。\\) 文件夹中的文件路径的任何部分的符号。</span><span class="sxs-lookup"><span data-stu-id="5632e-195">You cannot use parent (\\..\\) and current (\\.\\) folder symbols in any part of the file path.</span></span>  
   
 -   <span data-ttu-id="5632e-196">文件路径不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="5632e-196">The file path is not case-sensitive.</span></span>  
   
--   <span data-ttu-id="5632e-197">文件路径不能包含任何以下字符： \< \> : / &#124;" ?</span><span class="sxs-lookup"><span data-stu-id="5632e-197">The file path cannot contain any of the following characters: \< \> : / &#124; " ?</span></span> <span data-ttu-id="5632e-198">* ;</span><span class="sxs-lookup"><span data-stu-id="5632e-198">* ;</span></span>  
+-   <span data-ttu-id="5632e-197">文件路径不能包含任何以下字符： \< \> : / &#124;" ?</span><span class="sxs-lookup"><span data-stu-id="5632e-197">The file path cannot contain any of the following characters: \< \> : / &#124; " ?</span></span> <span data-ttu-id="5632e-198">\* ;</span><span class="sxs-lookup"><span data-stu-id="5632e-198">\* ;</span></span>  
   
 -   <span data-ttu-id="5632e-199">在文件路径中不能使用以下保留的设备名称：CON、PRN、AUX、CLOCK$、NUL、COM1、COM2、COM3、COM4、COM5、COM6、COM7、COM8、COM9、LPT1、LPT2、LPT3、LPT4、LPT5、LPT6、LPT7、LPT8 和 LPT9。</span><span class="sxs-lookup"><span data-stu-id="5632e-199">You cannot use the following reserved device names in the file path: CON, PRN, AUX, CLOCK$, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, and LPT9.</span></span>  
   

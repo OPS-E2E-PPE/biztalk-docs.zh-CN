@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb2d2974-8a36-4d36-905c-799e4236ef99
-caps.latest.revision: ''
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291341"
 ---
 # <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a><span data-ttu-id="218fa-102">演练： 调用从业务流程的策略</span><span class="sxs-lookup"><span data-stu-id="218fa-102">Walkthrough: Invoking the Policy from an Orchestration</span></span>
 <span data-ttu-id="218fa-103">你可以通过以下方式之一从业务流程调用策略：</span><span class="sxs-lookup"><span data-stu-id="218fa-103">You can invoke a policy from an orchestration in one of the following ways:</span></span>  

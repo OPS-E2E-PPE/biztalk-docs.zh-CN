@@ -1,18 +1,18 @@
 ---
-title: "步骤 1： 安装基础平台 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 安装基础平台 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - platforms
 - installing, base platform
 - base platform
 ms.assetid: 27da386f-90c7-414f-a4e3-e909f0c18371
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005142"
 ---
 # <a name="step-1-installing-the-base-platform"></a><span data-ttu-id="552fd-102">步骤 1： 安装基础平台</span><span class="sxs-lookup"><span data-stu-id="552fd-102">Step 1: Installing the Base Platform</span></span>
 <span data-ttu-id="552fd-103">对于基础平台，安装[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]和[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]使用默认安装选项的每个服务器上的 Service Pack 2。</span><span class="sxs-lookup"><span data-stu-id="552fd-103">For the base platform, install [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)] and [!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)] Service Pack 2 on each server using the default installation options.</span></span> <span data-ttu-id="552fd-104">请遵循这些建议：</span><span class="sxs-lookup"><span data-stu-id="552fd-104">Follow these recommendations:</span></span>  

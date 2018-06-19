@@ -1,11 +1,11 @@
 ---
-title: "如何管理密码同步 |Microsoft 文档"
-ms.custom: 
+title: 如何管理密码同步 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Password Synchronization [SSO], applications
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - notifications [SSO]
 - Password Synchronization [SSO], SSOPS command line utility
 ms.assetid: e5568cc2-7530-452c-9902-d7ffcad66088
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971947"
 ---
 # <a name="how-to-administer-password-synchronization"></a><span data-ttu-id="cafc8-102">如何管理密码同步</span><span class="sxs-lookup"><span data-stu-id="cafc8-102">How to Administer Password Synchronization</span></span>
 <span data-ttu-id="cafc8-103">您可以通过 MMC 管理单元或命令行管理密码同步。</span><span class="sxs-lookup"><span data-stu-id="cafc8-103">You can administer Password Synchronization through either the MMC Snap-In or the command line.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "BAM 活动创建到跟踪 EDI AS2 消息 |Microsoft 文档"
-ms.custom: 
+title: BAM 活动创建到跟踪 EDI AS2 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a10ab846-0fbb-46f5-920e-cb2b5be75814
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008894"
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a><span data-ttu-id="1e703-102">BAM 活动跟踪 EDI AS2 消息的创建</span><span class="sxs-lookup"><span data-stu-id="1e703-102">BAM Activities Created to Track EDI-AS2 Messages</span></span>
 <span data-ttu-id="1e703-103">BizTalk Server 包括 BAM 活动已创建用于 EDI 和 AS2 报告的状态。</span><span class="sxs-lookup"><span data-stu-id="1e703-103">BizTalk Server includes BAM activities that have been created for EDI and AS2 status reporting.</span></span> <span data-ttu-id="1e703-104">这些活动可确定在状态报告中显示的数据。</span><span class="sxs-lookup"><span data-stu-id="1e703-104">These activities determine the data that is displayed in the status reports.</span></span> <span data-ttu-id="1e703-105">本主题介绍了其中定义的 BAM 活动和字段，以及为 BAM 活动中的某些字段定义的枚举值。</span><span class="sxs-lookup"><span data-stu-id="1e703-105">This topic describes the BAM activities and the fields that are defined in them, and describes the enumeration values that are defined for certain fields in the BAM activities.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4 （在本地）： 创建 SQL Server 表 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4 （在本地）： 创建 SQL Server 表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e7e253ac-8707-484f-8461-f098cc7ec7d8
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277261"
 ---
 # <a name="step-4-on-premises-create-the-sql-server-table"></a><span data-ttu-id="d4961-102">步骤 4 （在本地）： 创建 SQL Server 表</span><span class="sxs-lookup"><span data-stu-id="d4961-102">Step 4 (On Premises): Create the SQL Server Table</span></span>
 <span data-ttu-id="d4961-103">作为业务方案的一部分，由 Contoso 发送到 Northwind 的销售订单消息的消息 X12 必须最后插入中**SalesOrder**表，如果订购数量大于 100。</span><span class="sxs-lookup"><span data-stu-id="d4961-103">As part of the business scenario, the message X12 sales order message sent by Contoso to Northwind must finally be inserted in a **SalesOrder** table, if the quantity ordered is greater than 100.</span></span> <span data-ttu-id="d4961-104">本主题将说明了如何创建**SalesOrder**安放在本地 SQL Server 数据库实例中的表。</span><span class="sxs-lookup"><span data-stu-id="d4961-104">This topic provides instructions on how to create the **SalesOrder** table within a SQL Server database instance that is housed on-premises.</span></span>  

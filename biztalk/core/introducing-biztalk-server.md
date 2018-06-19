@@ -1,14 +1,14 @@
 ---
-title: "引入了 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 引入了 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 01/30/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06a4a31a-eefe-4b1b-89ca-2cba2b6fa587
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: d0a1816a8dd8412906245d40c6479b08d7b3b20a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28910101"
 ---
 # <a name="introducing-biztalk-server"></a><span data-ttu-id="23bae-102">BizTalk Server 简介</span><span class="sxs-lookup"><span data-stu-id="23bae-102">Introducing BizTalk Server</span></span>
 <span data-ttu-id="23bae-103">将系统在一起预期行为，并且变得范数。</span><span class="sxs-lookup"><span data-stu-id="23bae-103">Tying systems together is expected, and has become the norm.</span></span> <span data-ttu-id="23bae-104">随着组织逐渐转向面向服务的环境，其现实目标也即将实现，即创建将各种单独的系统融为一体的有效业务流程。</span><span class="sxs-lookup"><span data-stu-id="23bae-104">As organizations move toward a service-oriented world, the real goal—creating effective business processes that unite separate systems into a coherent whole—comes within reach.</span></span>  

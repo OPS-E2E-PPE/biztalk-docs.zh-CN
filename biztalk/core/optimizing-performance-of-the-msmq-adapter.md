@@ -1,18 +1,18 @@
 ---
-title: "优化性能的 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 优化性能的 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, performance
 - performance, MSMQ adapters
 - configuring [MSMQ adapters], performance
 ms.assetid: f8537ea8-a96e-4874-bcaf-cd1442a50bd4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007334"
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a><span data-ttu-id="df7a5-102">优化性能的 MSMQ 适配器</span><span class="sxs-lookup"><span data-stu-id="df7a5-102">Optimizing Performance of the MSMQ Adapter</span></span>
 <span data-ttu-id="df7a5-103">MSMQ 适配器的优化在发送端与接收端有所不同。</span><span class="sxs-lookup"><span data-stu-id="df7a5-103">Optimization of the MSMQ adapter differs between the send and receive sides.</span></span> <span data-ttu-id="df7a5-104">对于接收端，通过设置接收位置属性可控制优化。</span><span class="sxs-lookup"><span data-stu-id="df7a5-104">You control optimization on the receive side by setting a property on the receive location.</span></span> <span data-ttu-id="df7a5-105">对于发送端，则可以使用业务流程来控制优化。</span><span class="sxs-lookup"><span data-stu-id="df7a5-105">On the send side, you can control optimization by using an orchestration.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "注册表详细信息页面 |Microsoft 文档"
-ms.custom: 
+title: 注册表详细信息页面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db723382-f7f1-485a-bf0e-84d6d7a986cc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294541"
 ---
 # <a name="registry-details-page"></a><span data-ttu-id="0dda9-102">“注册表详细信息”页</span><span class="sxs-lookup"><span data-stu-id="0dda9-102">Registry Details Page</span></span>
 <span data-ttu-id="0dda9-103">图 1 显示注册表的详细信息页上，可以在其中发布现有的通用、 描述、 发现和集成 (UDDI) 注册表请求、 创建新的请求，或编辑现有请求。</span><span class="sxs-lookup"><span data-stu-id="0dda9-103">Figure 1 shows the Registry Details page, where you can publish an existing Universal Description, Discovery, and Integration (UDDI) registry request, create a new request, or edit an existing request.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过 AS2 发送非 EDI 消息 |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过 AS2 发送非 EDI 消息 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6120b81e-bdd5-44ad-9040-26be88c71258
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292109"
 ---
 # <a name="walkthrough-as2-sending-a-non-edi-message-over-as2"></a><span data-ttu-id="8dcd2-102">演练 (AS2)：通过 AS2 发送非 EDI 消息</span><span class="sxs-lookup"><span data-stu-id="8dcd2-102">Walkthrough (AS2): Sending a Non-EDI Message over AS2</span></span>
 <span data-ttu-id="8dcd2-103">本演练介绍创建一个通过 AS2 发送非 EDI 消息的解决方案的分步操作步骤。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-103">This walkthrough provides a set of step-by-step procedures that creates a solution for sending non-EDI messages over AS2.</span></span> <span data-ttu-id="8dcd2-104">在本演练中，PIDX 消息将通过 AS2 发送。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-104">In this walkthrough, a PIDX message is sent over AS2.</span></span> <span data-ttu-id="8dcd2-105">此解决方案将结合使用双向发送端口和 AS2Send 发送管道及 AS2Receive 接收管道。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-105">This solution uses a two-way send port with an AS2Send send pipeline and an AS2Receive receive pipeline.</span></span> <span data-ttu-id="8dcd2-106">您可以在单台计算机上创建并测试本演练中的完整解决方案。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-106">You can create and test the full solution in this walkthrough on a single computer.</span></span>  
@@ -137,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="8dcd2-182">在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-182">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="8dcd2-183">在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-183">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="8dcd2-184">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-184">Select BtsHttpReceive.dll and click **OK**.</span></span>  
+4.  <span data-ttu-id="8dcd2-183">在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-183">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="8dcd2-184">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-184">Select BtsHttpReceive.dll and click **OK**.</span></span>  
   
 5.  <span data-ttu-id="8dcd2-185">输入`BizTalk HTTP Receive`中`Name`字段，然后再单击**请求限制**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-185">Enter `BizTalk HTTP Receive` in the `Name` field, and then click **Request Restrictions**.</span></span>  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="8dcd2-191">在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-191">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="8dcd2-192">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-192">In **the Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="8dcd2-193">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-193">Click **OK**.</span></span>  
+2.  <span data-ttu-id="8dcd2-192">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-192">In **the Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="8dcd2-193">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-193">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="8dcd2-194">根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-194">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
@@ -256,7 +257,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="8dcd2-252">在**接收位置属性**对话框中，名称你接收位置中，选择**HTTP**为**类型**，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-252">In the **Receive Location Properties** dialog box, name your receive location, select **HTTP** for **Type**, and then click **Configure**.</span></span>  
   
-5.  <span data-ttu-id="8dcd2-253">在**HTTP 传输属性**对话框框中，输入**/Fabrikam/BTSHttpReceive.dll**为**虚拟目录以及 ISAPI 扩展**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-253">In the **HTTP Transport Properties** dialog box, enter **/Fabrikam/BTSHttpReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="8dcd2-254">清除**成功后返回的相关句柄**和选择**挂起失败的请求**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-254">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="8dcd2-255">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-255">Click **OK**.</span></span>  
+5.  <span data-ttu-id="8dcd2-253">在**HTTP 传输属性**对话框框中，输入 **/Fabrikam/BTSHttpReceive.dll**为**虚拟目录以及 ISAPI 扩展**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-253">In the **HTTP Transport Properties** dialog box, enter **/Fabrikam/BTSHttpReceive.dll** for **Virtual directory plus ISAPI extension**.</span></span> <span data-ttu-id="8dcd2-254">清除**成功后返回的相关句柄**和选择**挂起失败的请求**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-254">Clear **Return correlation handle on success** and select **Suspend failed requests**.</span></span> <span data-ttu-id="8dcd2-255">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-255">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="8dcd2-256">选择**AS2Receive**为**接收管道**，和**AS2Send**为**发送管道**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-256">Select **AS2Receive** for the **Receive Pipeline**, and **AS2Send** for the **Send Pipeline**.</span></span> <span data-ttu-id="8dcd2-257">单击**确定**，然后单击**确定**试。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-257">Click **OK**, and then click **OK** again.</span></span>  
   
@@ -272,7 +273,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="8dcd2-264">在**文件传输属性**对话框中，为**目标文件夹**，输入你创建的 EDI 负载的本地文件夹。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-264">In the **FILE Transport Properties** dialog box, for **Destination folder**, enter the local folder that you created for the EDI payload.</span></span>  
   
-5.  <span data-ttu-id="8dcd2-265">有关**文件名**，输入文件名称。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-265">For **File name**, enter the file name.</span></span> <span data-ttu-id="8dcd2-266">如果使用的作为测试消息的 XML 文件，输入**%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-266">If you are using an XML file as your test message, enter **%MessageID%.xml**.</span></span> <span data-ttu-id="8dcd2-267">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-267">Click **OK**.</span></span>  
+5.  <span data-ttu-id="8dcd2-265">有关**文件名**，输入文件名称。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-265">For **File name**, enter the file name.</span></span> <span data-ttu-id="8dcd2-266">如果使用的作为测试消息的 XML 文件，输入 **%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-266">If you are using an XML file as your test message, enter **%MessageID%.xml**.</span></span> <span data-ttu-id="8dcd2-267">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-267">Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="8dcd2-268">接受默认的**PassThruTransmit**为**发送管道**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-268">Accept the default of **PassThruTransmit** for **Send Pipeline**.</span></span>  
   
@@ -292,7 +293,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="8dcd2-279">在**文件传输属性**对话框中，为**目标文件夹**，输入您创建要发送到 MDN 的本地文件夹。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-279">In the **FILE Transport Properties** dialog box, for **Destination folder**, enter the local folder you created to send the MDN to.</span></span>  
   
-5.  <span data-ttu-id="8dcd2-280">有关**文件名**，输入**%MessageID%.msg**。单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-280">For **File name**, enter **%MessageID%.msg**. Click **OK**.</span></span>  
+5.  <span data-ttu-id="8dcd2-280">有关**文件名**，输入 **%MessageID%.msg**。单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-280">For **File name**, enter **%MessageID%.msg**. Click **OK**.</span></span>  
   
 6.  <span data-ttu-id="8dcd2-281">接受默认的**PassThruTransmit**为**发送管道**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-281">Accept the default of **PassThruTransmit** for **Send Pipeline**.</span></span>  
   
@@ -352,7 +353,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  <span data-ttu-id="8dcd2-321">上**标识符**页上，输入值**AS2-从**和**AS2-到**。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-321">On the **Identifiers** page, enter values for **AS2-From** and **AS2-To**.</span></span> <span data-ttu-id="8dcd2-322">有关**AS2-从**，输入`Contoso`。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-322">For **AS2-From**, enter `Contoso`.</span></span> <span data-ttu-id="8dcd2-323">有关**AS2-到**，输入`Fabrikam`。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-323">For **AS2- To**, enter `Fabrikam`.</span></span>  
   
-    2.  <span data-ttu-id="8dcd2-324">在**确认 (Mdn)**页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="8dcd2-324">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
+    2.  <span data-ttu-id="8dcd2-324">在**确认 (Mdn)** 页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="8dcd2-324">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
   
         1.  <span data-ttu-id="8dcd2-325">选择**路由/传递到 MessageBox 处理入站的 MDN**复选框。</span><span class="sxs-lookup"><span data-stu-id="8dcd2-325">Select the **Process inbound MDN into MessageBox for routing/delivery options** check box.</span></span>  
   

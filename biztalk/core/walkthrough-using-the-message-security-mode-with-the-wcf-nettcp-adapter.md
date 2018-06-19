@@ -1,14 +1,14 @@
 ---
-title: "演练： 使用 WCF NetTcp 适配器使用消息安全模式 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用 WCF NetTcp 适配器使用消息安全模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f6e892-34ce-4132-8867-54cc3bbfe507
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010606"
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a><span data-ttu-id="88dea-102">演练： 使用 WCF NetTcp 适配器使用消息安全模式</span><span class="sxs-lookup"><span data-stu-id="88dea-102">Walkthrough: Using the Message Security Mode with the WCF-NetTcp Adapter</span></span>
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
     1.  <span data-ttu-id="88dea-144">在 Internet Explorer 中，请访问网站`http://localhost/certsrv`。</span><span class="sxs-lookup"><span data-stu-id="88dea-144">In Internet Explorer, visit the Web site `http://localhost/certsrv`.</span></span> <span data-ttu-id="88dea-145">上**欢迎**页上，单击**请求证书**，然后单击**高级的证书申请**上**请求证书**页。</span><span class="sxs-lookup"><span data-stu-id="88dea-145">On the **Welcome** page, click **Request a Certificate**, and then click **Advanced certificate request** on the **Request a Certificate** page.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="88dea-146">使用时[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]以及证书颁发机构请求证书请求从[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]计算机，你可能会收到错误**"若要完成证书注册，ca 必须将网站配置为使用 HTTPS身份验证"**。</span><span class="sxs-lookup"><span data-stu-id="88dea-146">When using [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] as the certificate authority and requesting a certificate request from a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computer, you may get the error **“In order to complete certificate enrollment, the Web site for the CA must be configured to use HTTPS authentication”**.</span></span> <span data-ttu-id="88dea-147">如果发生此错误，注册网站需要配置使用 Web 证书 (SSL)。</span><span class="sxs-lookup"><span data-stu-id="88dea-147">If this error occurs, the enrollment website needs to be configured with a Web Certificate (SSL).</span></span> <span data-ttu-id="88dea-148">有关完成此任务的详细信息，请参阅以下链接：</span><span class="sxs-lookup"><span data-stu-id="88dea-148">Refer to these links for details in accomplishing this task:</span></span>  
+        >  <span data-ttu-id="88dea-146">使用时[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]以及证书颁发机构请求证书请求从[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]计算机，你可能会收到错误 **"若要完成证书注册，ca 必须将网站配置为使用 HTTPS身份验证"**。</span><span class="sxs-lookup"><span data-stu-id="88dea-146">When using [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] as the certificate authority and requesting a certificate request from a [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computer, you may get the error **“In order to complete certificate enrollment, the Web site for the CA must be configured to use HTTPS authentication”**.</span></span> <span data-ttu-id="88dea-147">如果发生此错误，注册网站需要配置使用 Web 证书 (SSL)。</span><span class="sxs-lookup"><span data-stu-id="88dea-147">If this error occurs, the enrollment website needs to be configured with a Web Certificate (SSL).</span></span> <span data-ttu-id="88dea-148">有关完成此任务的详细信息，请参阅以下链接：</span><span class="sxs-lookup"><span data-stu-id="88dea-148">Refer to these links for details in accomplishing this task:</span></span>  
         >   
         >  [<span data-ttu-id="88dea-149">AD CS: Web 注册</span><span class="sxs-lookup"><span data-stu-id="88dea-149">AD CS: Web Enrollment</span></span>](http://technet.microsoft.com/library/cc732517.aspx)  
         >   
@@ -160,7 +161,7 @@ ms.lasthandoff: 12/01/2017
   
     5.  <span data-ttu-id="88dea-197">在**接收位置属性**对话框中，在**传输**旁边部分**类型**，选择**WCF NetTcp**从下拉列表列表，，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="88dea-197">In the **Receive Location Properties** dialog box, in the **Transport** section next to **Type**, select **WCF-NetTcp** from the drop-down list, and then click **Configure**.</span></span>  
   
-    6.  <span data-ttu-id="88dea-198">在**Wcf-nettcp 传输属性**对话框中，在**常规**选项卡上，在**地址 (URI)**文本框中，键入`net.tcp://localhost/WcfMessageSecurity`。</span><span class="sxs-lookup"><span data-stu-id="88dea-198">In the **WCF-NetTcp Transport Properties** dialog box, on the **General** tab, in the **Address (URI)** text box, type `net.tcp://localhost/WcfMessageSecurity`.</span></span>  
+    6.  <span data-ttu-id="88dea-198">在**Wcf-nettcp 传输属性**对话框中，在**常规**选项卡上，在**地址 (URI)** 文本框中，键入`net.tcp://localhost/WcfMessageSecurity`。</span><span class="sxs-lookup"><span data-stu-id="88dea-198">In the **WCF-NetTcp Transport Properties** dialog box, on the **General** tab, in the **Address (URI)** text box, type `net.tcp://localhost/WcfMessageSecurity`.</span></span>  
   
     7.  <span data-ttu-id="88dea-199">在**Wcf-nettcp 传输属性**对话框中，在**安全**选项卡上，选择**消息**从**安全模式**下拉列表列表，然后再选择**证书**从**消息客户端凭据类型**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="88dea-199">In the **WCF-NetTcp Transport Properties** dialog box, on the **Security** tab, select **Message** from the **Security mode** drop-down list, and then select **Certificate** from the **Message client credential type** drop-down list.</span></span> <span data-ttu-id="88dea-200">将配置 WCF-NetTcp 适配器以使用消息安全模式。</span><span class="sxs-lookup"><span data-stu-id="88dea-200">This configures the WCF-NetTcp adapter to use the Message security mode.</span></span>  
   

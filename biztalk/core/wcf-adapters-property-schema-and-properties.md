@@ -1,14 +1,14 @@
 ---
-title: "WCF 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/09/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2093745e-86c0-4276-a7cc-a0187391ca4a
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 50798e04fdcaf5dce5288aa18608e2a981b162fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/11/2018
+ms.locfileid: "29139293"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a><span data-ttu-id="1f483-102">WCF 适配器属性架构和属性</span><span class="sxs-lookup"><span data-stu-id="1f483-102">WCF Adapters Property Schema and Properties</span></span>
 <span data-ttu-id="1f483-103">阅读有关 WCF 适配器属性架构中提升的属性。</span><span class="sxs-lookup"><span data-stu-id="1f483-103">Read about the promoted properties in the WCF adapter property schema.</span></span> <span data-ttu-id="1f483-104">WCF 适配器对应用程序中可使用的属性进行赋值。</span><span class="sxs-lookup"><span data-stu-id="1f483-104">The WCF adapters assign values to the properties that you can use in your application.</span></span> <span data-ttu-id="1f483-105">WCF 适配器还提供了一种用于将自定义属性写入 BizTalk 消息上下文但不进行升级的机制，以及一种用于将自定义属性升级到 BizTalk 消息上下文的机制。</span><span class="sxs-lookup"><span data-stu-id="1f483-105">WCF adapter also provides a mechanism to write but not promote the custom properties to the BizTalk message context, and a mechanism to promote the custom properties to the BizTalk message context.</span></span> <span data-ttu-id="1f483-106">有关更多详细信息，请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)。</span><span class="sxs-lookup"><span data-stu-id="1f483-106">For more details, see [SOAP Headers with Published WCF Services](../core/soap-headers-with-published-wcf-services.md).</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/11/2018
 - <span data-ttu-id="1f483-137">WCF-WSHttp 适配器</span><span class="sxs-lookup"><span data-stu-id="1f483-137">WCF-WSHttp adapter</span></span>
 
 #### <a name="bindingconfiguration"></a><span data-ttu-id="1f483-138">BindingConfiguration</span><span class="sxs-lookup"><span data-stu-id="1f483-138">BindingConfiguration</span></span>
-<span data-ttu-id="1f483-139">指定使用的 XML 字符串**\<绑定\>**元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。</span><span class="sxs-lookup"><span data-stu-id="1f483-139">Specify an XML string with the **\<binding\>** element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).</span></span> <span data-ttu-id="1f483-140">有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-140">For more information about the system-provided binding and custom binding, see the appropriate topics in See Also.</span></span>
+<span data-ttu-id="1f483-139">指定使用的 XML 字符串**\<绑定\>** 元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。</span><span class="sxs-lookup"><span data-stu-id="1f483-139">Specify an XML string with the **\<binding\>** element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).</span></span> <span data-ttu-id="1f483-140">有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-140">For more information about the system-provided binding and custom binding, see the appropriate topics in See Also.</span></span>
 
 <span data-ttu-id="1f483-141">例如：</span><span class="sxs-lookup"><span data-stu-id="1f483-141">Example:</span></span>
 
@@ -147,7 +148,7 @@ ms.lasthandoff: 02/11/2018
 - <span data-ttu-id="1f483-203">WCF-NetMsmq 适配器</span><span class="sxs-lookup"><span data-stu-id="1f483-203">WCF-NetMsmq adapter</span></span>
 
 #### <a name="endpointbehaviorconfiguration"></a><span data-ttu-id="1f483-204">EndpointBehaviorConfiguration</span><span class="sxs-lookup"><span data-stu-id="1f483-204">EndpointBehaviorConfiguration</span></span>
-<span data-ttu-id="1f483-205">指定使用的 XML 字符串**\<行为\>**元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。</span><span class="sxs-lookup"><span data-stu-id="1f483-205">Specify an XML string with the **\<behavior\>** element of the **\<endpointBehaviors\>** element to configure the behavior settings of a WCF endpoint.</span></span> <span data-ttu-id="1f483-206">有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-206">For more information about the **\<endpointBehaviors\>** element, see the appropriate topic in See Also.</span></span>
+<span data-ttu-id="1f483-205">指定使用的 XML 字符串**\<行为\>** 元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。</span><span class="sxs-lookup"><span data-stu-id="1f483-205">Specify an XML string with the **\<behavior\>** element of the **\<endpointBehaviors\>** element to configure the behavior settings of a WCF endpoint.</span></span> <span data-ttu-id="1f483-206">有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-206">For more information about the **\<endpointBehaviors\>** element, see the appropriate topic in See Also.</span></span>
 
 <span data-ttu-id="1f483-207">例如：</span><span class="sxs-lookup"><span data-stu-id="1f483-207">Example:</span></span> 
 ```
@@ -503,7 +504,7 @@ ms.lasthandoff: 02/11/2018
 <span data-ttu-id="1f483-462">适用于： 所有 WCF 适配器*除*的 WCF 自定义和 WCF CustomIsolated 适配器</span><span class="sxs-lookup"><span data-stu-id="1f483-462">Applies to: All WCF adapters *except* the WCF-Custom and WCF-CustomIsolated adapters</span></span>
 
 #### <a name="servicebehaviorconfiguration"></a><span data-ttu-id="1f483-463">ServiceBehaviorConfiguration</span><span class="sxs-lookup"><span data-stu-id="1f483-463">ServiceBehaviorConfiguration</span></span>
-<span data-ttu-id="1f483-464">指定使用的 XML 字符串**\<行为\>**元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。</span><span class="sxs-lookup"><span data-stu-id="1f483-464">Specify an XML string with the **\<behavior\>** element of the **\<serviceBehaviors\>** element to configure the behavior settings of a WCF service.</span></span> <span data-ttu-id="1f483-465">有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-465">For more information about the **\<serviceBehaviors\>** element, see the appropriate topic in See Also.</span></span>
+<span data-ttu-id="1f483-464">指定使用的 XML 字符串**\<行为\>** 元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。</span><span class="sxs-lookup"><span data-stu-id="1f483-464">Specify an XML string with the **\<behavior\>** element of the **\<serviceBehaviors\>** element to configure the behavior settings of a WCF service.</span></span> <span data-ttu-id="1f483-465">有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。</span><span class="sxs-lookup"><span data-stu-id="1f483-465">For more information about the **\<serviceBehaviors\>** element, see the appropriate topic in See Also.</span></span>
 
 <span data-ttu-id="1f483-466">例如：</span><span class="sxs-lookup"><span data-stu-id="1f483-466">Example:</span></span>
 
@@ -625,15 +626,15 @@ ms.lasthandoff: 02/11/2018
 <span data-ttu-id="1f483-544">适用于： 所有 WCF 都发送适配器*除*WCF NetNamedPipe 适配器</span><span class="sxs-lookup"><span data-stu-id="1f483-544">Applies to: All WCF send adapters *except* the WCF-NetNamedPipe adapter</span></span>
 
 #### <a name="referencedbindings"></a><span data-ttu-id="1f483-545">ReferencedBindings</span><span class="sxs-lookup"><span data-stu-id="1f483-545">ReferencedBindings</span></span>
-<span data-ttu-id="1f483-546">指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。</span><span class="sxs-lookup"><span data-stu-id="1f483-546">Specify the binding configurations referenced by the **bindingConfiguration** attribute of the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding**, which indicates the Security Token Service (STS) that issues security tokens.</span></span> <span data-ttu-id="1f483-547">有关详细信息**\<颁发者\>**元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。</span><span class="sxs-lookup"><span data-stu-id="1f483-547">For more information about the **\<issuer\>** element, see the topic, "\<issuer\>" at [http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476).</span></span>
+<span data-ttu-id="1f483-546">指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。</span><span class="sxs-lookup"><span data-stu-id="1f483-546">Specify the binding configurations referenced by the **bindingConfiguration** attribute of the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding**, which indicates the Security Token Service (STS) that issues security tokens.</span></span> <span data-ttu-id="1f483-547">有关详细信息**\<颁发者\>** 元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。</span><span class="sxs-lookup"><span data-stu-id="1f483-547">For more information about the **\<issuer\>** element, see the topic, "\<issuer\>" at [http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476).</span></span>
 
-<span data-ttu-id="1f483-548">绑定信息包括**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration**的 WCF 自定义和 WCF CustomIsolated 适配器的属性。</span><span class="sxs-lookup"><span data-stu-id="1f483-548">The binding information including the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding** can be configured through the **BindingConfiguration** property of the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="1f483-549">此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。</span><span class="sxs-lookup"><span data-stu-id="1f483-549">All of the referenced binding configurations for this property must be placed in the form of the [\<bindings\>](http://go.microsoft.com/fwlink/?LinkID=80878) element.</span></span> 
+<span data-ttu-id="1f483-548">绑定信息包括**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration**的 WCF 自定义和 WCF CustomIsolated 适配器的属性。</span><span class="sxs-lookup"><span data-stu-id="1f483-548">The binding information including the **\<issuer\>** element for the **wsFederationHttpBinding** and **customBinding** can be configured through the **BindingConfiguration** property of the WCF-Custom and WCF-CustomIsolated adapters.</span></span> <span data-ttu-id="1f483-549">此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。</span><span class="sxs-lookup"><span data-stu-id="1f483-549">All of the referenced binding configurations for this property must be placed in the form of the [\<bindings\>](http://go.microsoft.com/fwlink/?LinkID=80878) element.</span></span> 
 
 <span data-ttu-id="1f483-550">**请注意**</span><span class="sxs-lookup"><span data-stu-id="1f483-550">**Note**</span></span>  
-<span data-ttu-id="1f483-551">**BindingConfiguration**属性**\<颁发者\>**元素必须引用此属性中的一个有效的绑定名称。</span><span class="sxs-lookup"><span data-stu-id="1f483-551">The **bindingConfiguration** attribute of the **\<issuer\>** element must refer to a valid binding name in this property.</span></span> 
+<span data-ttu-id="1f483-551">**BindingConfiguration**属性**\<颁发者\>** 元素必须引用此属性中的一个有效的绑定名称。</span><span class="sxs-lookup"><span data-stu-id="1f483-551">The **bindingConfiguration** attribute of the **\<issuer\>** element must refer to a valid binding name in this property.</span></span> 
 
 <span data-ttu-id="1f483-552">**请注意**</span><span class="sxs-lookup"><span data-stu-id="1f483-552">**Note**</span></span>  
-<span data-ttu-id="1f483-553">**\<颁发者\>**如果此引用链不会进行一个循环依赖关系中的引用的绑定配置元素还可以引用到此属性中的不同绑定配置。</span><span class="sxs-lookup"><span data-stu-id="1f483-553">The **\<issuer\>** element in the referenced binding configurations can also refer to a different binding configuration in this property if this reference chain does not make a circular dependency.</span></span> 
+<span data-ttu-id="1f483-553">**\<颁发者\>** 如果此引用链不会进行一个循环依赖关系中的引用的绑定配置元素还可以引用到此属性中的不同绑定配置。</span><span class="sxs-lookup"><span data-stu-id="1f483-553">The **\<issuer\>** element in the referenced binding configurations can also refer to a different binding configuration in this property if this reference chain does not make a circular dependency.</span></span> 
 
 <span data-ttu-id="1f483-554">例如：</span><span class="sxs-lookup"><span data-stu-id="1f483-554">Example:</span></span> 
 

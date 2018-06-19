@@ -1,14 +1,14 @@
 ---
-title: "XML 验证阶段 （可恢复的交换处理） |Microsoft 文档"
-ms.custom: 
+title: XML 验证阶段 （可恢复的交换处理） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ed00971-d85b-4adb-86c4-c56de7ba7c67
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289949"
 ---
 # <a name="xml-validation-stage-recoverable-interchange-processing"></a><span data-ttu-id="d4d91-102">XML 验证阶段（可恢复的交换处理)</span><span class="sxs-lookup"><span data-stu-id="d4d91-102">XML Validation Stage (Recoverable Interchange Processing)</span></span>
 <span data-ttu-id="d4d91-103">**XML 验证器**管道组件处理以下两种模式的交换：</span><span class="sxs-lookup"><span data-stu-id="d4d91-103">The **XML validator** pipeline component processes an interchange in two modes:</span></span>  

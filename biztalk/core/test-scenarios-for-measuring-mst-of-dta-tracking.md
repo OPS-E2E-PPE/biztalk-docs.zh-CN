@@ -1,14 +1,14 @@
 ---
-title: "用于测量 MST DTA 跟踪测试方案 |Microsoft 文档"
-ms.custom: 
+title: 用于测量 MST DTA 跟踪测试方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 303dc1d8-baac-4b54-92c8-95c0ce640a76
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280189"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a><span data-ttu-id="096db-102">用于测量 MST DTA 跟踪测试方案</span><span class="sxs-lookup"><span data-stu-id="096db-102">Test Scenarios for Measuring MST of DTA Tracking</span></span>
 <span data-ttu-id="096db-103">为了说明实践中的工作方式以及介绍用于度量跟踪的最大可承受吞吐量 (MST) 的简单技术，我们现在将针对度量跟踪 MST 提供一个测试方案。</span><span class="sxs-lookup"><span data-stu-id="096db-103">To show how all of this works in practice and to introduce a simple technique for measuring maximum sustainable throughput (MST) for tracking, we will now present a test scenario for which the tracking MST has been measured.</span></span> <span data-ttu-id="096db-104">我们不仅将提供涉及的技术，而且您还可以将提供的数据用作起点，评估其他系统的跟踪性能。</span><span class="sxs-lookup"><span data-stu-id="096db-104">Not only will we provide the techniques involved, but you can use the data presented as a starting point to estimate tracking performance for other systems.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "与 MSDTC 问题疑难解答 |Microsoft 文档"
-ms.custom: 
+title: 与 MSDTC 问题疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f39cde52-da8f-4cc1-bdc5-e4b828891a79
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280501"
 ---
 # <a name="troubleshooting-problems-with-msdtc"></a><span data-ttu-id="73dcc-102">MSDTC 疑难解答</span><span class="sxs-lookup"><span data-stu-id="73dcc-102">Troubleshooting Problems with MSDTC</span></span>
 <span data-ttu-id="73dcc-103">大多数 BizTalk Server 运行时操作都需要 Microsoft 分布式事务处理协调器 (MSDTC) 支持，以确保操作事务性一致。</span><span class="sxs-lookup"><span data-stu-id="73dcc-103">Most BizTalk Server runtime operations require Microsoft Distributed Transaction Coordinator (MSDTC) support to ensure that the operations are transactionally consistent.</span></span> <span data-ttu-id="73dcc-104">如果没有 MSDTC 事务支持，则相关联的 BizTalk Server 运行时操作将无法进行。</span><span class="sxs-lookup"><span data-stu-id="73dcc-104">If MSDTC transaction support is not available, then the associated BizTalk Server runtime operations cannot proceed.</span></span> <span data-ttu-id="73dcc-105">未正确配置 MSDTC 事务支持时通常会影响的 BizTalk 组件包括（但不限于）单一登录服务、BizTalk 主机实例以及 BizTalk Server 所连接的任何 SQL Server 实例。</span><span class="sxs-lookup"><span data-stu-id="73dcc-105">The components of BizTalk that are commonly affected when MSDTC transaction support is not configured correctly include (but are not limited to) the Single Sign-On Service, BizTalk host instances, and any SQL Server instances that are connected to by BizTalk Server.</span></span> <span data-ttu-id="73dcc-106">本部分包含的信息描述了与 MSDTC 相关的错误和步骤，遵循这些步骤可帮助你诊断并解决 MSDTC 存在的问题。</span><span class="sxs-lookup"><span data-stu-id="73dcc-106">This section contains information that describes MSDTC related errors and steps that can be followed to diagnose and resolve problems with MSDTC.</span></span>  
@@ -140,7 +141,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="73dcc-195">要访问 MSDTC 安全配置选项，请按照下列步骤操作：</span><span class="sxs-lookup"><span data-stu-id="73dcc-195">To access the MSDTC security configuration options follow these steps:</span></span>  
   
-1.  <span data-ttu-id="73dcc-196">依次单击 **“开始”**和 **“运行”**，再键入 **dcomcnfg** 以启动 **“组件服务”**管理控制台。</span><span class="sxs-lookup"><span data-stu-id="73dcc-196">Click **Start**, click **Run**, and type **dcomcnfg** to launch the **Component Services**Management console.</span></span>  
+1.  <span data-ttu-id="73dcc-196">依次单击 **“开始”** 和 **“运行”**，再键入 **dcomcnfg** 以启动 **“组件服务”** 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="73dcc-196">Click **Start**, click **Run**, and type **dcomcnfg** to launch the **Component Services**Management console.</span></span>  
   
 2.  <span data-ttu-id="73dcc-197">单击以展开“组件服务”  ，然后单击以展开“计算机” 。</span><span class="sxs-lookup"><span data-stu-id="73dcc-197">Click to expand **Component Services** and click to expand **Computers**.</span></span>  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="73dcc-207">要更改授予了“从网络访问此计算机”用户权限的用户或组，请按以下步骤进行操作：</span><span class="sxs-lookup"><span data-stu-id="73dcc-207">To change the users or groups that are granted the "Access this computer from the network" user right, follow these steps:</span></span>  
   
-1.  <span data-ttu-id="73dcc-208">依次单击 **“开始”**和 **“运行”**，键入 **Gpedit.msc**，然后单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="73dcc-208">Click **Start**, click **Run**, type **Gpedit.msc**, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="73dcc-208">依次单击 **“开始”** 和 **“运行”**，键入 **Gpedit.msc**，然后单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="73dcc-208">Click **Start**, click **Run**, type **Gpedit.msc**, and then click **OK**.</span></span>  
   
 2.  <span data-ttu-id="73dcc-209">展开“本地计算机策略”列表中的以下项：</span><span class="sxs-lookup"><span data-stu-id="73dcc-209">Expand the following items in the Local Computer Policy list:</span></span>  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 09/20/2017
 > [!WARNING]
 >  <span data-ttu-id="73dcc-233">对注册表编辑器的不当使用可能会引起问题，而必须重新安装操作系统。</span><span class="sxs-lookup"><span data-stu-id="73dcc-233">Incorrect use of Registry Editor may cause problems requiring you to reinstall your operating system.</span></span> <span data-ttu-id="73dcc-234">请慎用注册表编辑器，风险自负。</span><span class="sxs-lookup"><span data-stu-id="73dcc-234">Use Registry Editor at your own risk.</span></span> <span data-ttu-id="73dcc-235">有关如何备份、还原和修改注册表的详细信息，请参阅 Microsoft 知识库文章“Microsoft Windows 注册表说明”，网址为 [Microsoft Windows 注册表说明](http://go.microsoft.com/fwlink/?LinkId=62729)。</span><span class="sxs-lookup"><span data-stu-id="73dcc-235">For more information about how to back up, restore, and modify the registry, see the Microsoft Knowledge Base article "Description of the Microsoft Windows registry" at [Description of the Microsoft Windows registry](http://go.microsoft.com/fwlink/?LinkId=62729).</span></span>  
   
-1.  <span data-ttu-id="73dcc-236">依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="73dcc-236">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
+1.  <span data-ttu-id="73dcc-236">依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="73dcc-236">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
   
      <span data-ttu-id="73dcc-237">导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT**</span><span class="sxs-lookup"><span data-stu-id="73dcc-237">Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT**</span></span>  
   
@@ -226,7 +227,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="if-windows-firewall-is-running-add-an-exception-for-the-msdtc-service"></a><span data-ttu-id="73dcc-253">如果 Windows 防火墙正在运行，则为 MSDTC 服务添加一个例外</span><span class="sxs-lookup"><span data-stu-id="73dcc-253">If Windows Firewall is running, add an exception for the MSDTC service</span></span>  
  <span data-ttu-id="73dcc-254">Windows 防火墙服务可能会阻止计算机之间的 MSDTC 通信。</span><span class="sxs-lookup"><span data-stu-id="73dcc-254">The Windows Firewall service may block MSDTC communications between computers.</span></span> <span data-ttu-id="73dcc-255">要确保未阻止计算机之间的 MSDTC 通信，请在 Windows 防火墙服务正在运行时，将 msdtc.exe 添加到 Windows 防火墙例外列表中。</span><span class="sxs-lookup"><span data-stu-id="73dcc-255">To ensure that MSDTC communications are not blocked between computers, add msdtc.exe to the Windows Firewall exception list if the Windows Firewall service is running.</span></span>  
   
-1.  <span data-ttu-id="73dcc-256">依次单击 **开始”**和 **“运行”**，键入 **firewall.cpl**，然后单击 **确定”** 以显示 **“Windows 防火墙”** 对话框。</span><span class="sxs-lookup"><span data-stu-id="73dcc-256">Click **Start**, click **Run**, type **firewall.cpl**, and then click **OK** to display the **Windows Firewall** dialog box.</span></span>  
+1.  <span data-ttu-id="73dcc-256">依次单击 **开始”** 和 **“运行”**，键入 **firewall.cpl**，然后单击 **确定”** 以显示 **“Windows 防火墙”** 对话框。</span><span class="sxs-lookup"><span data-stu-id="73dcc-256">Click **Start**, click **Run**, type **firewall.cpl**, and then click **OK** to display the **Windows Firewall** dialog box.</span></span>  
   
 2.  <span data-ttu-id="73dcc-257">单击“允许程序通过 Windows 防火墙”  以显示“Windows 防火墙设置”  对话框。</span><span class="sxs-lookup"><span data-stu-id="73dcc-257">Click **Allow a program through the Windows Firewall** to display the **Windows Firewall Settings** dialog box.</span></span>  
   
@@ -234,7 +235,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="73dcc-259">单击“添加程序”  以显示“添加程序”对话框  。</span><span class="sxs-lookup"><span data-stu-id="73dcc-259">Click **Add Program** to display the **Add a Program** dialog box.</span></span>  
   
-5.  <span data-ttu-id="73dcc-260">单击 **浏览”** 并导航到 *%system32%*\msdtc.ex。</span><span class="sxs-lookup"><span data-stu-id="73dcc-260">Click **Browse** and navigate to *%system32%*\msdtc.exe.</span></span>  
+5.  <span data-ttu-id="73dcc-260">单击 **浏览”** 并导航到 *%system32%* \msdtc.ex。</span><span class="sxs-lookup"><span data-stu-id="73dcc-260">Click **Browse** and navigate to *%system32%* \msdtc.exe.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="73dcc-261">启动命令提示符，键入 **echo %system32%** 并按 **Enter** ，以确定此计算机上的 \System32 目录的位置。</span><span class="sxs-lookup"><span data-stu-id="73dcc-261">Launch a command prompt, type **echo %system32%** and press **Enter** to determine the location of the \System32 directory on this computer.</span></span>  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 23bb71717ef4af8596eaed5f0bd8be10d900adf7
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014972"
 ---
 # <a name="deploying-ports-and-assemblies"></a><span data-ttu-id="59d0f-101">部署端口和程序集</span><span class="sxs-lookup"><span data-stu-id="59d0f-101">Deploying Ports and Assemblies</span></span>
 <span data-ttu-id="59d0f-102">与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你可以复制端口和目标计算机上的程序集。</span><span class="sxs-lookup"><span data-stu-id="59d0f-102">With [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can duplicate ports and assemblies on a target computer.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="59d0f-103">导出到 XML 文件发送/接收端口的位置配置。</span><span class="sxs-lookup"><span data-stu-id="59d0f-103"> exports send ports/receive location configuration into an XML file.</span></span>  

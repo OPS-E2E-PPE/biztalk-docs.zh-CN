@@ -1,14 +1,14 @@
 ---
-title: "无符号短整型属性值不是有效 |Microsoft 文档"
-ms.custom: 
+title: 无符号短整型属性值不是有效 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31600ed6-20bc-4382-9eb3-4d6fa9646411
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279789"
 ---
 # <a name="the-unsigned-short-property-value-is-not-valid"></a><span data-ttu-id="178cf-102">无符号 Short 属性值无效</span><span class="sxs-lookup"><span data-stu-id="178cf-102">The unsigned Short property value is not valid</span></span>
 ## <a name="details"></a><span data-ttu-id="178cf-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="178cf-103">Details</span></span>  

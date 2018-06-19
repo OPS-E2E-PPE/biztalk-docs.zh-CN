@@ -1,14 +1,14 @@
 ---
-title: "Microsoft BizTalk Server FileAct 和交互适配器文档 |Microsoft 文档"
-ms.custom: 
+title: Microsoft BizTalk Server FileAct 和交互适配器文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7079835-cfb4-4696-9993-b70f31a57259
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223973"
 ---
 # <a name="microsoft-biztalk-server-fileact-and-interact-adapters-documentation"></a><span data-ttu-id="cc41b-102">Microsoft BizTalk Server FileAct 和交互适配器文档</span><span class="sxs-lookup"><span data-stu-id="cc41b-102">Microsoft BizTalk Server FileAct and InterAct Adapters documentation</span></span>
 <span data-ttu-id="cc41b-103">[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]包括可帮助你安装和配置 FileAct 和交互适配器，了解有关这些适配器，并了解的体系结构的信息。</span><span class="sxs-lookup"><span data-stu-id="cc41b-103">The [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] includes information that can help you install and configure the FileAct and InterAct adapters, learn about these adapters, and understand the architecture.</span></span>  

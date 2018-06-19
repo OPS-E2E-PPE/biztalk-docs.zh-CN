@@ -1,11 +1,11 @@
 ---
-title: "如何将 BizTalk 程序集添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将 BizTalk 程序集添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], adding assemblies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, assemblies
 - managing [assemblies], applications
 ms.assetid: 1525a0f6-cb0f-43bf-a851-40c06ab2135e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009342"
 ---
 # <a name="how-to-add-a-biztalk-assembly-to-an-application"></a><span data-ttu-id="d857c-102">如何向应用程序中添加 BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="d857c-102">How to Add a BizTalk Assembly to an Application</span></span>
 <span data-ttu-id="d857c-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行向应用程序添加 BizTalk 程序集。</span><span class="sxs-lookup"><span data-stu-id="d857c-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a BizTalk assembly to an application.</span></span>  

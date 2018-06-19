@@ -1,14 +1,14 @@
 ---
-title: "对请求设置的操作 |Microsoft 文档"
-ms.custom: 
+title: 对请求设置的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0537354d-821e-4cf9-a4d1-f4e7d1643df9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217293"
 ---
 # <a name="operations-on-request-sets"></a><span data-ttu-id="9ca40-102">对请求设置的操作</span><span class="sxs-lookup"><span data-stu-id="9ca40-102">Operations on Request Sets</span></span>
 <span data-ttu-id="9ca40-103">在 Oracle E-business Suite 中设置的请求是一组报表和组织成各个阶段的并发程序。</span><span class="sxs-lookup"><span data-stu-id="9ca40-103">A request set in Oracle E-Business Suite is a set of reports and concurrent programs that are organized into various stages.</span></span> <span data-ttu-id="9ca40-104">你可以使用单个请求设置为运行一组报表和并发程序。</span><span class="sxs-lookup"><span data-stu-id="9ca40-104">You can use a single request set to run a set of reports and concurrent programs.</span></span> <span data-ttu-id="9ca40-105">请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。</span><span class="sxs-lookup"><span data-stu-id="9ca40-105">Request sets are divided into one or more stages, and each stage contains a set of reports and concurrent programs.</span></span> <span data-ttu-id="9ca40-106">这些阶段链接相互，且每个阶段执行的顺序进行定义。</span><span class="sxs-lookup"><span data-stu-id="9ca40-106">These stages are linked with each other, and the order of the execution of each stage is defined.</span></span> <span data-ttu-id="9ca40-107">有关请求集的多个特定于 Oracle 的信息，请转到[http://go.microsoft.com/fwlink/p/?LinkId=129539](http://go.microsoft.com/fwlink/p/?LinkId=129539)。</span><span class="sxs-lookup"><span data-stu-id="9ca40-107">For more Oracle-specific information about request sets, go to [http://go.microsoft.com/fwlink/p/?LinkId=129539](http://go.microsoft.com/fwlink/p/?LinkId=129539).</span></span>  

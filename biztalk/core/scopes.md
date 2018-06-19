@@ -1,11 +1,11 @@
 ---
-title: "作用域 |Microsoft 文档"
-ms.custom: 
+title: 作用域 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scopes, exception handling
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - scopes, nesting
 - Scope shape [Orchestration Designer], transactions
 ms.assetid: 51d81ce4-0034-4415-b6ab-4c952737c1bd
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269773"
 ---
 # <a name="scopes"></a><span data-ttu-id="fbc61-102">作用域</span><span class="sxs-lookup"><span data-stu-id="fbc61-102">Scopes</span></span>
 <span data-ttu-id="fbc61-103">作用域是用于对操作进行分组的一种框架。</span><span class="sxs-lookup"><span data-stu-id="fbc61-103">A scope is a framework for grouping actions.</span></span> <span data-ttu-id="fbc61-104">作用域主要用于事务性执行和异常处理。</span><span class="sxs-lookup"><span data-stu-id="fbc61-104">It is primarily used for transactional execution and exception handling.</span></span>  

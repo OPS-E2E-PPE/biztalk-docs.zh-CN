@@ -1,11 +1,11 @@
 ---
-title: "了解服务面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 了解服务面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, background information
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - service solution tutorial, about service solution tutorial
 - Service Oriented Architecture (SOA)
 ms.assetid: 56a2ad90-74bb-489a-ab1d-900f3bea3d64
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287941"
 ---
 # <a name="understanding-the-service-oriented-solution"></a><span data-ttu-id="c30be-102">了解服务面向解决方案</span><span class="sxs-lookup"><span data-stu-id="c30be-102">Understanding the Service Oriented Solution</span></span>
 <span data-ttu-id="c30be-103">面向服务的解决方案提供了设计为服务的信用余额报告应用程序。</span><span class="sxs-lookup"><span data-stu-id="c30be-103">The service oriented solution presents a credit balance reporting application designed as a service.</span></span> <span data-ttu-id="c30be-104">该应用程序又使用三个作为服务公开的后端应用程序来获取信用余额所需的信息。</span><span class="sxs-lookup"><span data-stu-id="c30be-104">The application, in turn, uses three backend applications, exposed as services themselves, to get the information needed for the credit balance.</span></span>  

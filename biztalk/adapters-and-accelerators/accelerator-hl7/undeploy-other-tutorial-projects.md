@@ -1,14 +1,14 @@
 ---
-title: "取消部署其他教程的项目 |Microsoft 文档"
-ms.custom: 
+title: 取消部署其他教程的项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fce837f-1853-4d5d-a680-8ae2a974c750
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006414"
 ---
 # <a name="undeploy-other-tutorial-projects"></a><span data-ttu-id="23671-102">取消部署其他教程的项目</span><span class="sxs-lookup"><span data-stu-id="23671-102">Undeploy Other Tutorial Projects</span></span>
 <span data-ttu-id="23671-103">当为 HL7 部署 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 教程，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]在配置数据库 （也称为 BizTalk 管理数据库） 和全局程序集缓存中存储的教程的程序集文件。</span><span class="sxs-lookup"><span data-stu-id="23671-103">When you deploy a BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) tutorials, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] stores the tutorial assembly files in the Configuration database (also known as the BizTalk Management database) and the global assembly cache.</span></span> <span data-ttu-id="23671-104">如果你已运行另一个[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]教程，及已部署在该教程中创建的程序集，你可能会遇到错误时在批处理教程的三个部分中测试你的程序集。</span><span class="sxs-lookup"><span data-stu-id="23671-104">If you have run another [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] tutorial, and deployed the assemblies that you created in that tutorial, you may encounter errors when you test your assemblies in the three parts of the Batching tutorial.</span></span> <span data-ttu-id="23671-105">这可能是因为一次只能部署一个消息架构。</span><span class="sxs-lookup"><span data-stu-id="23671-105">This may occur because you can only deploy one message schema at one time.</span></span>  

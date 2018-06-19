@@ -1,18 +1,18 @@
 ---
-title: "提升属性 |Microsoft 文档"
-ms.custom: 
+title: 提升属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - properties, promoting
 - promoting properties
 - promoting properties, about promoting properties
 ms.assetid: e1825028-7dd9-4eae-a383-4db12a83a402
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266421"
 ---
 # <a name="promoting-properties"></a><span data-ttu-id="47c86-102">提升属性</span><span class="sxs-lookup"><span data-stu-id="47c86-102">Promoting Properties</span></span>
 <span data-ttu-id="47c86-103">属性的升级涉及任一提升**Field 元素**或**字段特性**架构是中的节点**可分辨字段**或**属性字段**。</span><span class="sxs-lookup"><span data-stu-id="47c86-103">Promotion of properties involves either promoting **Field Element** or **Field Attribute** nodes in a schema to be **Distinguished Fields** or **Property Fields**.</span></span> <span data-ttu-id="47c86-104">你还可以升级**记录**节点**属性字段**如果它们具有简单内容 (**内容类型**属性**记录**节点设置为**SimpleContent**)。</span><span class="sxs-lookup"><span data-stu-id="47c86-104">You can also promote **Record** nodes as **Property Fields** if they have simple content (**Content Type** property of the **Record** node set to **SimpleContent**).</span></span> <span data-ttu-id="47c86-105">本部分提供有关将提升为节点的分步说明**可分辨字段**或**属性字段**。</span><span class="sxs-lookup"><span data-stu-id="47c86-105">This section provides step-by-step instructions for promoting nodes as either **Distinguished Fields** or as **Property Fields**.</span></span>  

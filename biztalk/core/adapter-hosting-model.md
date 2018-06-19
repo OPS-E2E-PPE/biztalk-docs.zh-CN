@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22225165"
 ---
 # <a name="adapter-hosting-model"></a><span data-ttu-id="00504-102">承载模型的适配器</span><span class="sxs-lookup"><span data-stu-id="00504-102">Adapter Hosting Model</span></span>
 <span data-ttu-id="00504-103">一般情况下在 BizTalk 服务中，Btsntsvc.exe 托管 BizTalk 适配器。</span><span class="sxs-lookup"><span data-stu-id="00504-103">In general BizTalk adapters are hosted in the BizTalk service, Btsntsvc.exe.</span></span> <span data-ttu-id="00504-104">这意味着，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理适配器的生存期。</span><span class="sxs-lookup"><span data-stu-id="00504-104">This means that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] manages the lifetime of the adapter.</span></span> <span data-ttu-id="00504-105">但也存在其他进程管理适配器的情况，如下所述。</span><span class="sxs-lookup"><span data-stu-id="00504-105">There are also situations, described below, where other processes manage the adapter.</span></span>  

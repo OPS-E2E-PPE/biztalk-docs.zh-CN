@@ -1,14 +1,14 @@
 ---
-title: "新的注册表条目页 |Microsoft 文档"
-ms.custom: 
+title: 新的注册表条目页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 204c547c-ed0e-4a1f-a0b2-ce5da00d9c42
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294389"
 ---
 # <a name="new-registry-entry-page"></a><span data-ttu-id="e689b-102">“新建注册表项”页</span><span class="sxs-lookup"><span data-stu-id="e689b-102">New Registry Entry Page</span></span>
 <span data-ttu-id="e689b-103">图 1 显示的 ESB 管理门户新注册表条目页你可以在其中查看在指定的 Microsoft BizTalk Server ESB 应用程序中存在现有终结点的列表。</span><span class="sxs-lookup"><span data-stu-id="e689b-103">Figure 1 shows the ESB Management Portal New Registry Entry page where you can view a list of the existing endpoints in a specified Microsoft BizTalk Server ESB application.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="e689b-109">在第一个 （终结点类型） 下拉列表中，你可以选择**接收位置、 发送端口**或**所有终结点**。</span><span class="sxs-lookup"><span data-stu-id="e689b-109">In the first (endpoint type) drop-down list, you can select **Receive Locations, Send Ports,** or **All Endpoints**.</span></span>  
   
-    -   <span data-ttu-id="e689b-110">在第二个 （状态） 下拉列表中，你可以选择**已注册、 NotRegistered，挂起，**或**所有**。</span><span class="sxs-lookup"><span data-stu-id="e689b-110">In the second (status) drop-down list, you can select **Registered, NotRegistered, Pending,** or **All**.</span></span>  
+    -   <span data-ttu-id="e689b-110">在第二个 （状态） 下拉列表中，你可以选择**已注册、 NotRegistered，挂起，** 或**所有**。</span><span class="sxs-lookup"><span data-stu-id="e689b-110">In the second (status) drop-down list, you can select **Registered, NotRegistered, Pending,** or **All**.</span></span>  
   
     -   <span data-ttu-id="e689b-111">在第三个 （BizTalk 应用程序） 下拉列表中，你可以选择当前已安装 BizTalk 应用程序之一。</span><span class="sxs-lookup"><span data-stu-id="e689b-111">In the third (BizTalk application) drop-down list, you can select one of the currently installed BizTalk applications.</span></span>  
   

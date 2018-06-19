@@ -1,11 +1,11 @@
 ---
-title: "编译映射 |Microsoft 文档"
-ms.custom: 
+title: 编译映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, compiling
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - BizTalk Mapper, compiling
 - BizTalk Mapper, validating
 ms.assetid: 967181d6-22a9-4a76-ae45-3317c0c6321b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231861"
 ---
 # <a name="compiling-maps"></a><span data-ttu-id="91cb3-102">编译地图</span><span class="sxs-lookup"><span data-stu-id="91cb3-102">Compiling Maps</span></span>
 <span data-ttu-id="91cb3-103">在验证映射时，BizTalk 映射器的编译器组件将生成可扩展样式表语言转换 (XSLT) 样式表。</span><span class="sxs-lookup"><span data-stu-id="91cb3-103">When you validate maps, the BizTalk Mapper compiler component generates an Extensible Stylesheet Language Transformations (XSLT) style sheet.</span></span> <span data-ttu-id="91cb3-104">这将创建一个已编译的映射，该映射可将源架构定义的实例消息转换为目标架构定义的实例消息。</span><span class="sxs-lookup"><span data-stu-id="91cb3-104">This creates a compiled map that transforms an instance message defined by the source schema to an instance message defined by the destination schema.</span></span> <span data-ttu-id="91cb3-105">编译映射将执行在网格页中指定的结构规则和转换。</span><span class="sxs-lookup"><span data-stu-id="91cb3-105">Compiling a map enforces the structural rules and transformations specified in the grid pages.</span></span>  

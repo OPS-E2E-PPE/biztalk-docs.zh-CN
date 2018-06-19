@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230629"
 ---
 # <a name="btadserver"></a><span data-ttu-id="638ea-102">BTAD_Server</span><span class="sxs-lookup"><span data-stu-id="638ea-102">BTAD_Server</span></span>
 <span data-ttu-id="638ea-103">当应用程序导入前期和后期处理脚本运行时，请设置 BTAD_Server 环境变量。</span><span class="sxs-lookup"><span data-stu-id="638ea-103">When pre- and post-processing scripts run on application import, the BTAD_Server environment variable is set.</span></span> <span data-ttu-id="638ea-104">它指定运行为组 BizTalk 管理数据库的 SQL Server 实例的名称。</span><span class="sxs-lookup"><span data-stu-id="638ea-104">It specifies the name of the SQL Server instance running the BizTalk Management database for the group.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "清单： 执行每月的维护检查 |Microsoft 文档"
-ms.custom: 
+title: 清单： 执行每月的维护检查 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 588b74fa-6bf5-43ad-aa15-3595adde76d1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009254"
 ---
 # <a name="checklist-complete-monthly-maintenance-checks-in-biztalk-server"></a><span data-ttu-id="36243-102">清单： 完成每月一次维护检查 BizTalk Server 中</span><span class="sxs-lookup"><span data-stu-id="36243-102">Checklist: Complete Monthly Maintenance Checks in BizTalk Server</span></span>
 <span data-ttu-id="36243-103">本主题介绍在执行每月的可靠性、 管理、 安全性和性能的维护检查所涉及的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="36243-103">This topic describes the steps involved in performing monthly maintenance checks of the reliability, administration, security, and performance of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  

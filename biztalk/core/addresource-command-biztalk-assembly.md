@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c18607b5-d929-48c9-9fa3-f728a7a80d04
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231821"
 ---
 # <a name="addresource-command-biztalk-assembly"></a><span data-ttu-id="f96e5-102">AddResource 命令：BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="f96e5-102">AddResource Command: BizTalk Assembly</span></span>
 <span data-ttu-id="f96e5-103">若要将 BizTalk 程序集添加到 BizTalk 应用程序，请使用 **AddResource** 命令并指定 **System.BizTalk:BizTalkAssembly** 为类型参数。</span><span class="sxs-lookup"><span data-stu-id="f96e5-103">To add a BizTalk assembly to a BizTalk application, you use the **AddResource** command and specify **System.BizTalk:BizTalkAssembly** for the Type parameter.</span></span> <span data-ttu-id="f96e5-104">运行此命令可将程序集添加到 BizTalk 管理数据库中。</span><span class="sxs-lookup"><span data-stu-id="f96e5-104">Running this command adds the assembly to the BizTalk Management database.</span></span> <span data-ttu-id="f96e5-105">该程序集还会显示在 BizTalk Server 管理控制台中，即它所添加到的应用程序的“资源”文件夹下。</span><span class="sxs-lookup"><span data-stu-id="f96e5-105">The assembly is also displayed in the BizTalk Server Administration console, in the Resources folder of the application to which you added it.</span></span> <span data-ttu-id="f96e5-106">该程序集中包含的项目也会显示在相应的文件夹下。</span><span class="sxs-lookup"><span data-stu-id="f96e5-106">The artifacts included in the assembly are also displayed in the appropriate folders.</span></span> <span data-ttu-id="f96e5-107">此外，当你使用时，项目会列出[ListApp 命令](../core/listapp-command.md)。</span><span class="sxs-lookup"><span data-stu-id="f96e5-107">In addition, the artifacts are listed when you use the [ListApp Command](../core/listapp-command.md).</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 03/23/2018
  <span data-ttu-id="f96e5-116">有关依赖关系的详细信息，请参阅[依赖关系和应用程序部署](../core/dependencies-and-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="f96e5-116">For more information about dependencies, see [Dependencies and Application Deployment](../core/dependencies-and-application-deployment.md).</span></span>  
   
 ## <a name="usage"></a><span data-ttu-id="f96e5-117">用法</span><span class="sxs-lookup"><span data-stu-id="f96e5-117">Usage</span></span>  
- <span data-ttu-id="f96e5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]</span><span class="sxs-lookup"><span data-stu-id="f96e5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**] [**/Server:***value*] [**/Database:***value*]</span></span>  
+ <span data-ttu-id="f96e5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]</span><span class="sxs-lookup"><span data-stu-id="f96e5-118">**BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:BizTalkAssembly** [**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **] [**/Server:***value*] [**/Database:*** value*]</span></span>  
   
 ## <a name="parameters"></a><span data-ttu-id="f96e5-119">Parameters</span><span class="sxs-lookup"><span data-stu-id="f96e5-119">Parameters</span></span>  
   

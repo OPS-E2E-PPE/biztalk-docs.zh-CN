@@ -1,11 +1,11 @@
 ---
-title: "测试映射 |Microsoft 文档"
-ms.custom: 
+title: 测试映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, BizTalk Mapper
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - testing, maps
 - BizTalk Mapper, testing
 ms.assetid: c1c8509c-6711-4998-9686-33d0a692d70b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279613"
 ---
 # <a name="testing-maps"></a><span data-ttu-id="84b5e-102">测试映射</span><span class="sxs-lookup"><span data-stu-id="84b5e-102">Testing Maps</span></span>
 <span data-ttu-id="84b5e-103">在编译完映射之后，如何未显示任何警告，此时就可以对该映射进行测试。</span><span class="sxs-lookup"><span data-stu-id="84b5e-103">After your map has compiled without warnings, it is time to test it.</span></span> <span data-ttu-id="84b5e-104">本部分介绍了测试映射的各个方面。</span><span class="sxs-lookup"><span data-stu-id="84b5e-104">This section describes various aspects of testing maps.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 6： 配置发送端口将数据发送到你的组织 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 配置发送端口将数据发送到你的组织 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 796570ca-8178-4679-9213-d67a2a189bf9
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277005"
 ---
 # <a name="step-6-configure-a-send-port-to-send-data-to-your-organization"></a><span data-ttu-id="cd6e1-102">步骤 6： 配置发送端口将数据发送到你的组织</span><span class="sxs-lookup"><span data-stu-id="cd6e1-102">Step 6: Configure a Send Port to Send Data to Your Organization</span></span>
 <span data-ttu-id="cd6e1-103">![步骤 6 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span><span class="sxs-lookup"><span data-stu-id="cd6e1-103">![Step 6 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")</span></span>  
@@ -70,7 +71,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="cd6e1-140">**值**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-140">**Value**</span></span>|<span data-ttu-id="cd6e1-141">输入`ReceiveEDI_fromTHEM_A`。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-141">Enter `ReceiveEDI_fromTHEM_A`.</span></span>|  
     |<span data-ttu-id="cd6e1-142">**分组依据**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-142">**Group by**</span></span>|<span data-ttu-id="cd6e1-143">选择**和**。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-143">Select **And**.</span></span>|  
     |<span data-ttu-id="cd6e1-144">**属性**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-144">**Property**</span></span>|<span data-ttu-id="cd6e1-145">在下一行中，选择**BTS。MessageType**。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-145">On the next line, select **BTS.MessageType**.</span></span>|  
-    |<span data-ttu-id="cd6e1-146">**运算符**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-146">**Operator**</span></span>|<span data-ttu-id="cd6e1-147">选择**！ =**。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-147">Select **!=**.</span></span>|  
+    |<span data-ttu-id="cd6e1-146">**运算符**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-146">**Operator**</span></span>|<span data-ttu-id="cd6e1-147">选择 **！ =**。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-147">Select **!=**.</span></span>|  
     |<span data-ttu-id="cd6e1-148">**值**</span><span class="sxs-lookup"><span data-stu-id="cd6e1-148">**Value**</span></span>|<span data-ttu-id="cd6e1-149">输入`http://schemas.microsoft.com/Edi/X12#X12_997_Root`。</span><span class="sxs-lookup"><span data-stu-id="cd6e1-149">Enter `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.</span></span>|  
   
     > [!NOTE]

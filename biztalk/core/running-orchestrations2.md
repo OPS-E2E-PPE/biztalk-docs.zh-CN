@@ -1,11 +1,11 @@
 ---
-title: "运行 Orchestrations2 |Microsoft 文档"
-ms.custom: 
+title: 运行 Orchestrations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - strong name keys, creating
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - stopping host instances
 - restarting host instances
 ms.assetid: a098d552-d302-44f6-9af9-d77d16549fd3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973211"
 ---
 # <a name="running-orchestrations"></a><span data-ttu-id="426d4-102">运行业务流程</span><span class="sxs-lookup"><span data-stu-id="426d4-102">Running Orchestrations</span></span>
 <span data-ttu-id="426d4-103">以下过程介绍如何生成、部署、绑定和启动业务流程。</span><span class="sxs-lookup"><span data-stu-id="426d4-103">The following procedures describe how to build, deploy, bind, and start an orchestration.</span></span>  

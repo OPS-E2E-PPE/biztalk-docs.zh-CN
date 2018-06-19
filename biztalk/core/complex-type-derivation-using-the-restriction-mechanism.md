@@ -1,14 +1,14 @@
 ---
-title: "使用限制机制的复杂类型派生 |Microsoft 文档"
-ms.custom: 
+title: 使用限制机制的复杂类型派生 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3003d88-6b75-4dcb-834f-1babcf7449cb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233477"
 ---
 # <a name="complex-type-derivation-using-the-restriction-mechanism"></a><span data-ttu-id="16f5a-102">使用限制机制进行复杂类型派生</span><span class="sxs-lookup"><span data-stu-id="16f5a-102">Complex Type Derivation Using the Restriction Mechanism</span></span>
 <span data-ttu-id="16f5a-103">在 BizTalk 编辑器功能方面，通过限制进行派生与通过扩展进行派生类似。</span><span class="sxs-lookup"><span data-stu-id="16f5a-103">Derivation by restriction is similar to derivation by extension, in terms of BizTalk Editor functionality.</span></span> <span data-ttu-id="16f5a-104">通过限制派生的复杂类型与其基本数据类型类似，只是其声明比基本数据类型中的相应声明具有更多限制性。</span><span class="sxs-lookup"><span data-stu-id="16f5a-104">A complex type derived by restriction is similar to its base data type, except that its declarations are more limited than the corresponding declarations in the base data type.</span></span> <span data-ttu-id="16f5a-105">实际上，新类型所表示的值是基本数据类型所表示的值的子集（与简单类型限制的情况一样）。</span><span class="sxs-lookup"><span data-stu-id="16f5a-105">In fact, the values represented by the new type are a subset of the values represented by the base data type (as is the case with restriction of simple types).</span></span> <span data-ttu-id="16f5a-106">使用基本数据类型的值的应用程序应当能够成功处理所有限制的类型的值。</span><span class="sxs-lookup"><span data-stu-id="16f5a-106">An application prepared for the values of the base data type ought to be able to successfully process any of the values of the restricted type.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "前期和后期处理脚本用于自定义应用程序部署 |Microsoft 文档"
-ms.custom: 
+title: 前期和后期处理脚本用于自定义应用程序部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - customizing, applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - scripts, applications
 - scripts, customizing
 ms.assetid: 47627394-d594-491b-9098-38c5d028a378
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287165"
 ---
 # <a name="using-pre--and-post-processing-scripts-to-customize-application-deployment"></a><span data-ttu-id="eba14-102">前期和后期处理脚本用于自定义应用程序部署</span><span class="sxs-lookup"><span data-stu-id="eba14-102">Using Pre- and Post-processing Scripts to Customize Application Deployment</span></span>
 <span data-ttu-id="eba14-103">本部分中的各个主题描述如何创建预处理脚本或后处理脚本来在导入、安装或卸载应用程序时执行操作。</span><span class="sxs-lookup"><span data-stu-id="eba14-103">The topics in this section describe how to create pre- or post-processing scripts to perform actions when an application is imported, installed, or uninstalled.</span></span> <span data-ttu-id="eba14-104">预处理脚本在应用程序导入或安装开始前以及卸载完成后执行某一个或某一组操作。</span><span class="sxs-lookup"><span data-stu-id="eba14-104">Pre-processing scripts perform an action or set of actions before application import or installation starts, and after uninstallation completes.</span></span> <span data-ttu-id="eba14-105">后处理脚本在应用程序导入或安装完成后、或者在卸载开始前执行某一个或某一组操作。</span><span class="sxs-lookup"><span data-stu-id="eba14-105">Post-processing scripts perform an action or set of actions after application import or installation completes, or before uninstallation starts.</span></span>  

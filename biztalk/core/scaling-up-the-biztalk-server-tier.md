@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server 层向上缩放 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 层向上缩放 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, scaling
 - scaling, examples
 - scaling, scaling up
 ms.assetid: 9002006a-f301-4e15-94b9-6caffd7c527c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270133"
 ---
 # <a name="scaling-up-the-biztalk-server-tier"></a><span data-ttu-id="9af27-102">BizTalk Server 层向上扩展</span><span class="sxs-lookup"><span data-stu-id="9af27-102">Scaling Up the BizTalk Server Tier</span></span>
 <span data-ttu-id="9af27-103">若要向上扩展 BizTalk 层，则需要升级 CPU、内存、输入/输出以及其他资源。</span><span class="sxs-lookup"><span data-stu-id="9af27-103">To scale up the BizTalk tier, you upgrade the CPU, memory, IO and other resources.</span></span> <span data-ttu-id="9af27-104">以下示例图显示了如何从双处理器计算机向上扩展 BizTalk 层到具有四个处理器的计算机：</span><span class="sxs-lookup"><span data-stu-id="9af27-104">The following figure shows an example of how you might scale up the BizTalk tier from a two processor computer to a four processor computer.</span></span>  

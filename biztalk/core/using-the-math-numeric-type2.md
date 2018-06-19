@@ -1,11 +1,11 @@
 ---
-title: "使用 MATH_NUMERIC Type2 |Microsoft 文档"
-ms.custom: 
+title: 使用 MATH_NUMERIC Type2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exponents, JD Edwards OneWorld adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MATH_NUMERIC type
 - adapters [JD Edwards OneWorld adapters], currency
 ms.assetid: 14d04576-0028-4af4-84bd-92c4ca492126
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288413"
 ---
 # <a name="using-the-mathnumeric-type"></a><span data-ttu-id="6c745-102">使用 MATH_NUMERIC 类型</span><span class="sxs-lookup"><span data-stu-id="6c745-102">Using the MATH_NUMERIC Type</span></span>
 <span data-ttu-id="6c745-103">本主题介绍了 MATH_NUMERIC 类型并详细说明了指数的处理方式、数字的最大位数以及小数的最大位数。</span><span class="sxs-lookup"><span data-stu-id="6c745-103">This topic describes the MATH_NUMERIC type and details how exponents are handled, the maximum number of digits, and the maximum number of decimal digits.</span></span> <span data-ttu-id="6c745-104">它还包括有关以下内容的讨论：</span><span class="sxs-lookup"><span data-stu-id="6c745-104">It also includes a discussion on the following:</span></span>  
@@ -106,7 +107,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="6c745-153">在其他情况下，不可预知的结果发生，因为时是非常大的正数值的另一乘数。</span><span class="sxs-lookup"><span data-stu-id="6c745-153">In other cases, unpredictable results occur, as when a very large positive value is multiplied by another.</span></span>  
   
- <span data-ttu-id="6c745-154">1.01e32 * 2.053e32 不会生成可靠的结果并不会引发错误。</span><span class="sxs-lookup"><span data-stu-id="6c745-154">1.01e32 * 2.053e32 does not yield reliable results and does not raise an error.</span></span>  
+ <span data-ttu-id="6c745-154">1.01e32 \* 2.053e32 不会生成可靠的结果并不会引发错误。</span><span class="sxs-lookup"><span data-stu-id="6c745-154">1.01e32 \* 2.053e32 does not yield reliable results and does not raise an error.</span></span>  
   
  <span data-ttu-id="6c745-155">对于大多数的业务方案，这些范围不超过。</span><span class="sxs-lookup"><span data-stu-id="6c745-155">For most business scenarios, these ranges are not exceeded.</span></span>  
   

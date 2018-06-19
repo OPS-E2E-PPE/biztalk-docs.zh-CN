@@ -1,14 +1,14 @@
 ---
-title: "程序集和项目安装动态解析示例 |Microsoft 文档"
-ms.custom: 
+title: 程序集和项目安装动态解析示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d9ffdc4-1721-4202-839c-04e5bffe8668
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006990"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-dynamic-resolution-sample"></a><span data-ttu-id="2118b-102">程序集和项目安装动态解析示例</span><span class="sxs-lookup"><span data-stu-id="2118b-102">Assemblies and Artifacts Installed by the Dynamic Resolution Sample</span></span>
 <span data-ttu-id="2118b-103">下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]动态解析示例。</span><span class="sxs-lookup"><span data-stu-id="2118b-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Dynamic Resolution sample.</span></span>  

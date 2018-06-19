@@ -1,14 +1,14 @@
 ---
-title: "管理的远程活动的分布式的导航 |Microsoft 文档"
-ms.custom: 
+title: 管理的远程活动的分布式的导航 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cf6e0c2-ea72-4621-9ca7-fa43e404ec46
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263069"
 ---
 # <a name="managing-distributed-navigation-of-remote-activities"></a><span data-ttu-id="fd538-102">管理远程活动的分布式导航</span><span class="sxs-lookup"><span data-stu-id="fd538-102">Managing Distributed Navigation of Remote Activities</span></span>
 <span data-ttu-id="fd538-103">通过远程活动的分布式导航，业务用户可导航到其他 BAM 数据库上的活动并进行查看。</span><span class="sxs-lookup"><span data-stu-id="fd538-103">Distributed navigation of remote activities is the process by which a business user navigates to and views activities that exist in separate BAM databases.</span></span> <span data-ttu-id="fd538-104">只要您对 BAM 基础结构进行配置以提供分布式导航功能，业务用户就可通过 BAM 门户访问远程活动。</span><span class="sxs-lookup"><span data-stu-id="fd538-104">When you configure the BAM infrastructure to provide distributed navigation, the remote activity is accessible to the business user in the BAM portal.</span></span> <span data-ttu-id="fd538-105">用户单击活动时，该活动就会在远程 BAM 门户中打开。</span><span class="sxs-lookup"><span data-stu-id="fd538-105">When the user clicks the activity, the activity is opened on the remote BAM portal.</span></span> <span data-ttu-id="fd538-106">此时，用户以一种透明且无缝的方式进入远程 BAM 门户，这样用户就可导航到该活动的活动搜索、聚合和警报管理，好像该活动的数据存储在用户本地一样。</span><span class="sxs-lookup"><span data-stu-id="fd538-106">At this point the user has been transferred in a transparent and seamless manner to the remote BAM portal and can navigate to the activity search, aggregations, and alert management for the activity as if the activity existed on the user's home data store.</span></span>  

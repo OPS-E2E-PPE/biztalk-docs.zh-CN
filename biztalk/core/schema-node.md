@@ -1,14 +1,14 @@
 ---
-title: "架构节点 |Microsoft 文档"
-ms.custom: 
+title: 架构节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ea02c2a-ee00-4f44-9086-83d7ac4a8832
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972227"
 ---
 # <a name="schema-node"></a><span data-ttu-id="f6b6e-102">Schema 节点</span><span class="sxs-lookup"><span data-stu-id="f6b6e-102">Schema Node</span></span>
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="f6b6e-110">在 BizTalk 编辑器中，创建新的 XML 架构时**架构**节点和一个**根**自动创建的节点。</span><span class="sxs-lookup"><span data-stu-id="f6b6e-110">When you create a new XML schema in BizTalk Editor, the **Schema** node and one **Root** node are created automatically.</span></span>  
   
 ## <a name="xsd-representation"></a><span data-ttu-id="f6b6e-111">XSD 表示形式</span><span class="sxs-lookup"><span data-stu-id="f6b6e-111">XSD representation</span></span>  
- <span data-ttu-id="f6b6e-112">以下示例所示，粗体类型，对应于架构的 XSD 表示中的行**\<架构\>**架构的树视图中的节点。</span><span class="sxs-lookup"><span data-stu-id="f6b6e-112">The following example shows, in bold type, the lines in the XSD representation of the schema that correspond to the **\<Schema\>** node in the tree view of the schema.</span></span>  
+ <span data-ttu-id="f6b6e-112">以下示例所示，粗体类型，对应于架构的 XSD 表示中的行**\<架构\>** 架构的树视图中的节点。</span><span class="sxs-lookup"><span data-stu-id="f6b6e-112">The following example shows, in bold type, the lines in the XSD representation of the schema that correspond to the **\<Schema\>** node in the tree view of the schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  

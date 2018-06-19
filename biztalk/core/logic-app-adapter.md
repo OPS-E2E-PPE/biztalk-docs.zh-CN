@@ -18,6 +18,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22266709"
 ---
 # <a name="logic-app-adapter"></a><span data-ttu-id="6e88d-103">逻辑应用适配器</span><span class="sxs-lookup"><span data-stu-id="6e88d-103">Logic App Adapter</span></span>
 

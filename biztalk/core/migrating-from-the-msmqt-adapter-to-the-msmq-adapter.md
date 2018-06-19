@@ -1,14 +1,14 @@
 ---
-title: "将从 MSMQT 适配器迁移到 MSMQ 适配器 |Microsoft 文档"
-ms.custom: 
+title: 将从 MSMQT 适配器迁移到 MSMQ 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 12/07/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 97126f70-0be5-4a2f-bcba-173fd932b6de
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710184"
 ---
 # <a name="migrate-from-the-msmqt-adapter-to-the-msmq-adapter"></a><span data-ttu-id="e52d1-102">将从 MSMQT 适配器迁移到 MSMQ 适配器</span><span class="sxs-lookup"><span data-stu-id="e52d1-102">Migrate from the MSMQT Adapter to the MSMQ Adapter</span></span>
 <span data-ttu-id="e52d1-103">本主题讨论在将解决方案从 BizTalk 消息队列 (MSMQT) 适配器迁移到消息队列 (MSMQ) 适配器之前，在端对端按序送达、事务一致性、高可用性以及可伸缩性等方面的注意事项。</span><span class="sxs-lookup"><span data-stu-id="e52d1-103">This topic discusses points to consider regarding end-to-end ordered delivery, transactional consistency, high availability, and scalability before migrating solutions from the BizTalk Message Queuing (MSMQT) adapter to the Message Queuing (MSMQ) adapter.</span></span> <span data-ttu-id="e52d1-104">在本主题中，按序送达、事务一致性、高可用性以及可伸缩性的定义如下：</span><span class="sxs-lookup"><span data-stu-id="e52d1-104">For purposes of this topic ordered delivery, transactional consistency, high availability, and scalability are defined as follows:</span></span>  

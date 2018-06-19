@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac9c7c7d-a97e-425a-9666-02ca6edd8be6
-caps.latest.revision: ''
+caps.latest.revision: 68
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975831"
 ---
 # <a name="glossary"></a><span data-ttu-id="41ad4-103">词汇表</span><span class="sxs-lookup"><span data-stu-id="41ad4-103">Glossary</span></span>
 <span data-ttu-id="41ad4-104">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的“帮助”中用到以下术语和定义。</span><span class="sxs-lookup"><span data-stu-id="41ad4-104">The following terms and definitions are used in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help.</span></span>  

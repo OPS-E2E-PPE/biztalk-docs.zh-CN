@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216541"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-database"></a><span data-ttu-id="79273-102">配置登录凭据用于 Oracle 数据库</span><span class="sxs-lookup"><span data-stu-id="79273-102">Configure the sign in credentials for the Oracle Database</span></span>
 <span data-ttu-id="79273-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]需要适配器客户端提供客户端凭据。</span><span class="sxs-lookup"><span data-stu-id="79273-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="79273-104">适配器使用这些凭据与 Oracle 数据库用户进行身份验证并建立连接。</span><span class="sxs-lookup"><span data-stu-id="79273-104">The adapter uses these credentials to authenticate the user with the Oracle database and to establish a connection.</span></span>  

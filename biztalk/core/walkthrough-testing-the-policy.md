@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008595"
 ---
 # <a name="walkthrough-testing-the-policy"></a><span data-ttu-id="3511e-102">演练： 测试策略</span><span class="sxs-lookup"><span data-stu-id="3511e-102">Walkthrough: Testing the Policy</span></span>
 <span data-ttu-id="3511e-103">本演练中提供的测试中创建的策略的分步过程[演练： 创建简单的业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。</span><span class="sxs-lookup"><span data-stu-id="3511e-103">This walkthrough provides step-by-step procedures for testing the policy you created in the [Walkthrough: Creating a Simple Business Policy](../core/walkthrough-creating-a-simple-business-policy.md) walkthrough.</span></span>  

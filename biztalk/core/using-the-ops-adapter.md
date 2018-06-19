@@ -1,11 +1,11 @@
 ---
-title: "使用 Ops 适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用 Ops 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IOpsAIC interface
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - process management solution tutorial, Ops adapters
 - Ops adapters, processing
 ms.assetid: 331f3614-e00b-4587-b82b-3c7bc394f361
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288733"
 ---
 # <a name="using-the-ops-adapter"></a><span data-ttu-id="d77e3-102">使用 Ops 适配器</span><span class="sxs-lookup"><span data-stu-id="d77e3-102">Using the Ops Adapter</span></span>
 <span data-ttu-id="d77e3-103">业务流程管理解决方案使用 Ops 适配器处理由新的错误报告功能生成的错误报告。</span><span class="sxs-lookup"><span data-stu-id="d77e3-103">The business process management solution uses the Ops adapter to handle error reports from the new error reporting feature.</span></span> <span data-ttu-id="d77e3-104">该解决方案包含一个示例处理程序，用于处理来自适配器的消息，但是，您可以轻松地编写自己的处理程序，从而将适配器用于其他解决方案中。</span><span class="sxs-lookup"><span data-stu-id="d77e3-104">The solution includes a sample handler to process messages from the adapter, although you can easily write your own and use the adapter in other solutions.</span></span> <span data-ttu-id="d77e3-105">有关错误报告功能的信息，请参阅[使用失败消息路由](../core/using-failed-message-routing.md)。</span><span class="sxs-lookup"><span data-stu-id="d77e3-105">For information about the error reporting feature, see [Using Failed Message Routing](../core/using-failed-message-routing.md).</span></span>  

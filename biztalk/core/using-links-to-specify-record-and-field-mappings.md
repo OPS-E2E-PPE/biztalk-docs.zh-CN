@@ -1,14 +1,14 @@
 ---
-title: "使用链接以指定记录和字段映射 |Microsoft 文档"
-ms.custom: 
+title: 使用链接以指定记录和字段映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c669d93-e088-459e-8f45-87c359874a7e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287245"
 ---
 # <a name="using-links-to-specify-record-and-field-mappings"></a><span data-ttu-id="12efa-102">使用链接指定记录和字段映射</span><span class="sxs-lookup"><span data-stu-id="12efa-102">Using Links to Specify Record and Field Mappings</span></span>
 <span data-ttu-id="12efa-103">在 BizTalk 映射器中，使用链接可以将源架构中的数据项与目标架构中的数据项关联起来。</span><span class="sxs-lookup"><span data-stu-id="12efa-103">In BizTalk Mapper, a link is the way you associate a data item in the source schema with a data item in the destination schema.</span></span> <span data-ttu-id="12efa-104">在设置好的映射中，通常包含许多源架构和目标架构之间的链接。</span><span class="sxs-lookup"><span data-stu-id="12efa-104">Typically, in a completed map there are many links between the source schema and the destination schema.</span></span> <span data-ttu-id="12efa-105">这些链接在一起指定了源实例消息中的数据将如何转换为语义相同、但语法不同的目标实例消息。</span><span class="sxs-lookup"><span data-stu-id="12efa-105">All together the links specify how the data in the source instance messages will be transformed into a semantically equivalent, but syntactically distinct, destination instance messages.</span></span>  

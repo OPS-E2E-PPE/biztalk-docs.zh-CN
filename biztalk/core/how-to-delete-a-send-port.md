@@ -1,18 +1,18 @@
 ---
-title: "如何删除发送端口 |Microsoft 文档"
-ms.custom: 
+title: 如何删除发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send ports], deleting
 - send ports, deleting
 - deleting, send ports
 ms.assetid: aff5980e-57bf-400c-82bd-3d02e143f227
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006166"
 ---
 # <a name="how-to-delete-a-send-port"></a><span data-ttu-id="29799-102">如何删除发送端口</span><span class="sxs-lookup"><span data-stu-id="29799-102">How to Delete a Send Port</span></span>
 <span data-ttu-id="29799-103">本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序删除发送端口。</span><span class="sxs-lookup"><span data-stu-id="29799-103">This topic describes how to use the BizTalk Server Administration console to delete a send port from a BizTalk application.</span></span> <span data-ttu-id="29799-104">执行此操作时，发送端口也将删除从组 BizTalk 管理数据库。</span><span class="sxs-lookup"><span data-stu-id="29799-104">When you do this, the send port is also deleted from the BizTalk Management database for the group.</span></span>  

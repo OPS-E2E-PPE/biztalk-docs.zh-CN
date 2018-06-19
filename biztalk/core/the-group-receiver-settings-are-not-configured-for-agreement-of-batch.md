@@ -1,14 +1,14 @@
 ---
-title: "批处理的协议未配置组接收方设置 |Microsoft 文档"
-ms.custom: 
+title: 批处理的协议未配置组接收方设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57b205e9-aaab-43d1-b373-17d206957814
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279069"
 ---
 # <a name="the-group-receiver-settings-are-not-configured-for-agreement-of-batch"></a><span data-ttu-id="579a8-102">未针对批协议配置组接收器设置</span><span class="sxs-lookup"><span data-stu-id="579a8-102">The group receiver settings are not configured for agreement of batch</span></span>
 ## <a name="details"></a><span data-ttu-id="579a8-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="579a8-103">Details</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "查找 MST DTA 跟踪的提示和技巧 |Microsoft 文档"
-ms.custom: 
+title: 查找 MST DTA 跟踪的提示和技巧 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d72e4ac-d952-4cff-9a65-491e20945d40
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279877"
 ---
 # <a name="tips-and-tricks-for-finding-mst-of-dta-tracking"></a><span data-ttu-id="f03ba-102">确定 DTA 跟踪的 MST 的提示与技巧</span><span class="sxs-lookup"><span data-stu-id="f03ba-102">Tips and Tricks for Finding MST of DTA Tracking</span></span>
 <span data-ttu-id="f03ba-103">按照定义，MST 是使用恒负载以可重现方式度量系统性能的基准。</span><span class="sxs-lookup"><span data-stu-id="f03ba-103">By definition, MST is a benchmark to reproducibly measure system performance using a constant load.</span></span> <span data-ttu-id="f03ba-104">在下面介绍的情形中，了解 MST 将非常有用。</span><span class="sxs-lookup"><span data-stu-id="f03ba-104">Following are situations where knowing the MST is particularly useful.</span></span>  

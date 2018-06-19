@@ -1,11 +1,11 @@
 ---
-title: "转换的服务的模式面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 转换的服务的模式面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [service solutions], translating patterns to orchestration shapes
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - orchestrations, boundaries
 - patterns [service solutions], translating patterns to artifacts
 ms.assetid: ff17cc41-2a7b-4304-b5bd-96b1174cea7f
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279997"
 ---
 # <a name="translating-the-patterns-of-the-service-oriented-solution"></a><span data-ttu-id="deb02-102">转换的服务的模式面向解决方案</span><span class="sxs-lookup"><span data-stu-id="deb02-102">Translating the Patterns of the Service Oriented Solution</span></span>
 <span data-ttu-id="deb02-103">本部分将介绍该解决方案如何将模式关系图转换为 BizTalk Server 项目。</span><span class="sxs-lookup"><span data-stu-id="deb02-103">This section describes how the solution translates the pattern diagram into BizTalk Server artifacts.</span></span>  

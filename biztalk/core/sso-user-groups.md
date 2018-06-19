@@ -1,11 +1,11 @@
 ---
-title: "SSO 用户组 |Microsoft 文档"
-ms.custom: 
+title: SSO 用户组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - administrator accounts, SSO
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - SSO, service accounts
 - SSO, administrator accounts
 ms.assetid: e279001e-c724-4a2d-8939-0ba9dd08a19c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277621"
 ---
 # <a name="sso-user-groups"></a><span data-ttu-id="55c39-102">SSO 用户组</span><span class="sxs-lookup"><span data-stu-id="55c39-102">SSO User Groups</span></span>
 <span data-ttu-id="55c39-103">若要配置和管理企业单一登录 (SSO) 系统，必须为其中每个角色创建某些 Windows 组和帐户。</span><span class="sxs-lookup"><span data-stu-id="55c39-103">To configure and manage the Enterprise Single Sign-On (SSO) system, you must create certain Windows groups and accounts for each of these roles.</span></span> <span data-ttu-id="55c39-104">在企业 sso 配置的访问帐户，你可以为每个这些角色指定多个帐户。</span><span class="sxs-lookup"><span data-stu-id="55c39-104">When configuring the access accounts in Enterprise SSO, you can specify more than one account for each of these roles.</span></span> <span data-ttu-id="55c39-105">本部分介绍这些角色。</span><span class="sxs-lookup"><span data-stu-id="55c39-105">This section describes these roles.</span></span>  

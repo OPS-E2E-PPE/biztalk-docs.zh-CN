@@ -1,14 +1,14 @@
 ---
-title: "无法导出客户端终结点配置 |Microsoft 文档"
-ms.custom: 
+title: 无法导出客户端终结点配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d93fe5e-fdb2-49c5-86de-d428b1ecda7f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286949"
 ---
 # <a name="unable-to-export-client-endpoint-configuration"></a><span data-ttu-id="6d206-102">无法导出客户端终结点配置</span><span class="sxs-lookup"><span data-stu-id="6d206-102">Unable to export client endpoint configuration</span></span>
 ## <a name="details"></a><span data-ttu-id="6d206-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="6d206-103">Details</span></span>  
@@ -38,10 +39,10 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="6d206-119">\- 或 -</span><span class="sxs-lookup"><span data-stu-id="6d206-119">\- OR -</span></span>  
   
--   <span data-ttu-id="6d206-120">某些所需的属性未正确指定，如**地址 (URI)**和**绑定类型**。</span><span class="sxs-lookup"><span data-stu-id="6d206-120">Some of the required properties were not correctly specified, such as **Address (URI)** and **Binding Type**.</span></span>  
+-   <span data-ttu-id="6d206-120">某些所需的属性未正确指定，如**地址 (URI)** 和**绑定类型**。</span><span class="sxs-lookup"><span data-stu-id="6d206-120">Some of the required properties were not correctly specified, such as **Address (URI)** and **Binding Type**.</span></span>  
   
 ## <a name="user-action"></a><span data-ttu-id="6d206-121">用户操作</span><span class="sxs-lookup"><span data-stu-id="6d206-121">User Action</span></span>  
- <span data-ttu-id="6d206-122">使用以下过程来验证用户权限并确认**地址 (URI)**和**绑定类型**设置都是有效。</span><span class="sxs-lookup"><span data-stu-id="6d206-122">Use the following procedure to verify user permissions and confirm **Address (URI)** and **Binding Type** settings are valid.</span></span>  
+ <span data-ttu-id="6d206-122">使用以下过程来验证用户权限并确认**地址 (URI)** 和**绑定类型**设置都是有效。</span><span class="sxs-lookup"><span data-stu-id="6d206-122">Use the following procedure to verify user permissions and confirm **Address (URI)** and **Binding Type** settings are valid.</span></span>  
   
 #### <a name="to-verify-user-permissions-and-confirm-settings"></a><span data-ttu-id="6d206-123">验证用户权限并确认设置</span><span class="sxs-lookup"><span data-stu-id="6d206-123">To verify user permissions and confirm settings</span></span>  
   

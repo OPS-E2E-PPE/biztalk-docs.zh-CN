@@ -1,14 +1,14 @@
 ---
-title: "使用管道接口 |Microsoft 文档"
-ms.custom: 
+title: 使用管道接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bb88d0d-23ab-4fdb-bcd2-56050456cf69
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289141"
 ---
 # <a name="using-pipeline-interfaces"></a><span data-ttu-id="843b0-102">使用管道接口</span><span class="sxs-lookup"><span data-stu-id="843b0-102">Using Pipeline Interfaces</span></span>
 <span data-ttu-id="843b0-103">管道组件一种 .NET 或 COM 组件，它实现一组预定义的接口以便与 BizTalk 消息引擎交互。</span><span class="sxs-lookup"><span data-stu-id="843b0-103">A pipeline component is a .NET or COM component that implements a set of predefined interfaces for interaction with the BizTalk Messaging Engine.</span></span> <span data-ttu-id="843b0-104">根据组件的功能，必须实现不同接口。</span><span class="sxs-lookup"><span data-stu-id="843b0-104">Depending on the functionality of the component, different interfaces must be implemented.</span></span> <span data-ttu-id="843b0-105">本主题介绍这些接口及其一些方法。</span><span class="sxs-lookup"><span data-stu-id="843b0-105">This topic discusses these interfaces and some of their methods.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "清单： 消息和实例数据跟踪 |Microsoft 文档"
-description: "跟踪消息、 实例和 BizTalk Server 中的项目时的最佳做法"
-ms.custom: 
+title: 清单： 消息和实例数据跟踪 |Microsoft 文档
+description: 跟踪消息、 实例和 BizTalk Server 中的项目时的最佳做法
+ms.custom: ''
 ms.date: 02/26/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4b5b614-23e5-4895-9c66-417b55dee43c
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710400"
 ---
 # <a name="checklist-message-and-instance-data-tracking"></a><span data-ttu-id="61620-103">清单： 消息和实例数据跟踪</span><span class="sxs-lookup"><span data-stu-id="61620-103">Checklist: Message and Instance Data Tracking</span></span>
 |<span data-ttu-id="61620-104">步骤</span><span class="sxs-lookup"><span data-stu-id="61620-104">Step</span></span>|<span data-ttu-id="61620-105">參考</span><span class="sxs-lookup"><span data-stu-id="61620-105">Reference</span></span>|  

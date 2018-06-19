@@ -1,14 +1,14 @@
 ---
-title: "避免 DBNETLIB 异常 |Microsoft 文档"
-ms.custom: 
+title: 避免 DBNETLIB 异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fbee0cf-d249-4d98-8d16-168ded32f9f1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231909"
 ---
 # <a name="avoiding-dbnetlib-exceptions"></a><span data-ttu-id="3aeb4-102">避免出现 DBNETLIB 异常</span><span class="sxs-lookup"><span data-stu-id="3aeb4-102">Avoiding DBNETLIB Exceptions</span></span>
 <span data-ttu-id="3aeb4-103">当 BizTalk Server 运行时无法与 MessageBox 数据库或管理数据库进行通信时，将出现 DBNetLib（数据库网络库）错误。</span><span class="sxs-lookup"><span data-stu-id="3aeb4-103">DBNetLib (Database Network Library) errors occur when the BizTalk Server runtime is unable to communicate with either the MessageBox or Management databases.</span></span> <span data-ttu-id="3aeb4-104">出现此错误时，捕获该异常的 BizTalk Server 运行时实例将关闭，然后每分钟检查一次该数据库是否可用。</span><span class="sxs-lookup"><span data-stu-id="3aeb4-104">When this occurs, the BizTalk Server runtime instance that catches the exception shuts down and then cycles every minute to check to see if the database is available.</span></span>  

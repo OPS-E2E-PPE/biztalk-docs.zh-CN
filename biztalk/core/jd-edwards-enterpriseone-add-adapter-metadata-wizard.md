@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261869"
 ---
 # <a name="jd-edwards-enterpriseone-add-adapter-metadata-wizard"></a><span data-ttu-id="4e2c0-102">JD Edwards EnterpriseOne 添加适配器元数据向导</span><span class="sxs-lookup"><span data-stu-id="4e2c0-102">JD Edwards EnterpriseOne Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="4e2c0-103">使用“添加适配器向导”从 JD Edwards EnterpriseOne 系统访问元数据信息。</span><span class="sxs-lookup"><span data-stu-id="4e2c0-103">Use the Add Adapter Wizard to access metadata information from the JD Edwards EnterpriseOne system.</span></span>  

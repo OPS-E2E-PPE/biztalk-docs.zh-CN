@@ -1,14 +1,14 @@
 ---
-title: "警报查看器页面 |Microsoft 文档"
-ms.custom: 
+title: 警报查看器页面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0734464f-1f4c-4110-876a-d3bb0d14f6c5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290717"
 ---
 # <a name="alert-viewer-page"></a><span data-ttu-id="315e1-102">“警报查看器”页</span><span class="sxs-lookup"><span data-stu-id="315e1-102">Alert Viewer Page</span></span>
 <span data-ttu-id="315e1-103">图 1 所示的警报查看器页面显示所选警报，包括它与传入的异常，并为该警报定义的订阅的列表进行匹配的条件的所有详细的信息。</span><span class="sxs-lookup"><span data-stu-id="315e1-103">The Alert Viewer page, shown in Figure 1, displays all the details of a selected alert, including the conditions that match it to incoming exceptions, and a list of subscriptions defined for this alert.</span></span>  

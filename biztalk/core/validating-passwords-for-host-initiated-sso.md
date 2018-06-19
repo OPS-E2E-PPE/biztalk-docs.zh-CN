@@ -1,17 +1,17 @@
 ---
-title: "验证密码为主机启动的 SSO |Microsoft 文档"
-ms.custom: 
+title: 验证密码为主机启动的 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - passwords, host initiated [SSO]
 - host initiated SSO, passwords
 ms.assetid: 3cc1d68a-27ac-46ce-ba1e-21139a9df55e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287853"
 ---
 # <a name="validating-passwords-for-host-initiated-sso"></a><span data-ttu-id="8ab01-102">验证密码为主机启动的 SSO</span><span class="sxs-lookup"><span data-stu-id="8ab01-102">Validating Passwords for Host Initiated SSO</span></span>
 <span data-ttu-id="8ab01-103">在为主机启动的 SSO 创建关联应用程序时，默认情况下将启用对非 Windows 用户进行的密码验证。</span><span class="sxs-lookup"><span data-stu-id="8ab01-103">When an affiliate application for host initiated SSO is created, password validation for the non-Windows user is enabled by default.</span></span> <span data-ttu-id="8ab01-104">这意味着如果应用程序调用 SSO 以获得用于访问资源的 Windows 用户标记，则其必须提供非 Windows 用户帐户以及非 Windows 密码。</span><span class="sxs-lookup"><span data-stu-id="8ab01-104">This means when applications call SSO to obtain the Windows user token to access resources, they must provide the non-Windows user account and the non-Windows password.</span></span> <span data-ttu-id="8ab01-105">如果密码与 SSO 数据库中该非 Windows 用户的密码不匹配，则访问将被拒绝。</span><span class="sxs-lookup"><span data-stu-id="8ab01-105">If the password does not match the password in the SSO database for that non-Windows user, access is denied.</span></span> <span data-ttu-id="8ab01-106">如有必要，可为关联应用程序禁用密码验证功能。</span><span class="sxs-lookup"><span data-stu-id="8ab01-106">If necessary, the password validation feature can be disabled for the affiliate application.</span></span> <span data-ttu-id="8ab01-107">密码验证功能同时适用于主机启动的 SSO 的“单项”类型和“主机组”类型的关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="8ab01-107">The password validation feature applies to both individual and host group type affiliate applications for host initiated SSO.</span></span>  

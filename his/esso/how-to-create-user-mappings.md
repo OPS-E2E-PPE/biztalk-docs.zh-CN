@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb91879c-73f4-4e9e-9e5b-534f48cd5584
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 89fd7ab2ca83d23a37944447997becd2d3f008c2
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250961"
 ---
 # <a name="how-to-create-user-mappings"></a><span data-ttu-id="d1102-102">如何创建用户映射</span><span class="sxs-lookup"><span data-stu-id="d1102-102">How to Create User Mappings</span></span>
 <span data-ttu-id="d1102-103">使用**createmappings**命令以创建一个或多个用户映射，按照指定的 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="d1102-103">Use the **createmappings** command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="d1102-104">下面是示例 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="d1102-104">The following is an example XML file.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="d1102-114">默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="d1102-114">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d1102-115">类型`ssomanage –createmappings <mappings file name>`，其中*\<映射文件名称 >*是包含你想要创建的用户映射的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="d1102-115">Type `ssomanage –createmappings <mappings file name>`, where *\<mappings file name>* is the name of the file that contains the user mappings that you want to create.</span></span>  
+3.  <span data-ttu-id="d1102-115">类型`ssomanage –createmappings <mappings file name>`，其中*\<映射文件名称 >* 是包含你想要创建的用户映射的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="d1102-115">Type `ssomanage –createmappings <mappings file name>`, where *\<mappings file name>* is the name of the file that contains the user mappings that you want to create.</span></span>  
   
 ### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="d1102-116">若要创建使用客户端实用工具的用户映射</span><span class="sxs-lookup"><span data-stu-id="d1102-116">To create user mappings using the client utility</span></span>  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/28/2018
   
      <span data-ttu-id="d1102-119">默认安装目录是\<*驱动器*>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="d1102-119">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d1102-120">类型`ssoclient –setcredentials <application name >`，其中*\<应用程序名称 >*是用户想要创建的映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="d1102-120">Type `ssoclient –setcredentials <application name >`, where *\<application name >* is the name of the affiliate application that the user wants to create a mapping for.</span></span>  
+3.  <span data-ttu-id="d1102-120">类型`ssoclient –setcredentials <application name >`，其中*\<应用程序名称 >* 是用户想要创建的映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="d1102-120">Type `ssoclient –setcredentials <application name >`, where *\<application name >* is the name of the affiliate application that the user wants to create a mapping for.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d1102-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d1102-121">See Also</span></span>  
  <span data-ttu-id="d1102-122">[SSO 映射](../esso/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="d1102-122">[SSO Mappings](../esso/sso-mappings.md) </span></span>  

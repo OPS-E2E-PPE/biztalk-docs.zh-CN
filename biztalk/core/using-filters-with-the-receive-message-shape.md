@@ -11,7 +11,7 @@ helpviewer_keywords:
 - filters, receive messages
 - messages, filters
 ms.assetid: 5310039b-6719-4971-933a-2da0573fb5e7
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22287877"
 ---
 # <a name="using-filters-with-the-receive-message-shape"></a><span data-ttu-id="77399-102">使用接收消息形状使用筛选器</span><span class="sxs-lookup"><span data-stu-id="77399-102">Using Filters With the Receive Message Shape</span></span>
 <span data-ttu-id="77399-103">筛选器表达式是可应用于业务流程接收形状的可选参数，它将“激活”属性的值指定为 True。</span><span class="sxs-lookup"><span data-stu-id="77399-103">A filter expression is an optional parameter that can be applied to an orchestration receive shape that specifies a value of True for the Activate property.</span></span> <span data-ttu-id="77399-104">如果指定了某一筛选器表达式，则只有当传入消息与该筛选器表达式中指定的条件匹配时，才会激活业务流程。</span><span class="sxs-lookup"><span data-stu-id="77399-104">If a filter expression is specified then the orchestration will only be activated if an incoming message matches the condition(s) specified in the filter expression.</span></span> <span data-ttu-id="77399-105">如果没有指定任何筛选器表达式，则业务流程订阅的任何传入消息都将激活该业务流程。</span><span class="sxs-lookup"><span data-stu-id="77399-105">If no filter expression is specified then any incoming message that the orchestration subscribes to will activate the orchestration.</span></span>  

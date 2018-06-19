@@ -1,14 +1,14 @@
 ---
-title: "重复使用来自另一个协议属性 |Microsoft 文档"
-ms.custom: 
+title: 重复使用来自另一个协议属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8e1cc60-d581-43ca-aa70-1e0d6238497a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007422"
 ---
 # <a name="reusing-properties-from-another-agreement"></a><span data-ttu-id="9db69-102">重用其他协议的属性</span><span class="sxs-lookup"><span data-stu-id="9db69-102">Reusing Properties from Another Agreement</span></span>
 <span data-ttu-id="9db69-103">您可以重复使用协议之间的属性。</span><span class="sxs-lookup"><span data-stu-id="9db69-103">You can reuse properties between agreements.</span></span> <span data-ttu-id="9db69-104">当新协议的大多数或所有属性与现有协议的属性相同时，此操作可以节省大量时间。</span><span class="sxs-lookup"><span data-stu-id="9db69-104">This can save a significant amount of time when either most or all of the properties of a new agreement are the same as those of an existing agreement.</span></span> <span data-ttu-id="9db69-105">[!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server 中的用户界面，可导出到 XML 模板文件的协议。</span><span class="sxs-lookup"><span data-stu-id="9db69-105">The [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] user interface in BizTalk Server enables you to export an agreement into an XML template file.</span></span> <span data-ttu-id="9db69-106">然后，您可以导入该 XML 模板以重复使用相同的协议属性。</span><span class="sxs-lookup"><span data-stu-id="9db69-106">You can then import the XML template to reuse the same agreement properties.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "使用规则编辑器 |Microsoft 文档"
-ms.custom: 
+title: 使用规则编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Rule Editor [Business Rule Composer], about Rule Editor
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Rule Editor [Business Rule Composer], Actions Editor
 - Rule Editor [Business Rule Composer]
 ms.assetid: 6559a8d1-6caf-4c6e-ac80-acaa4eb57938
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289005"
 ---
 # <a name="using-rule-editor"></a><span data-ttu-id="4e9fc-102">使用规则编辑器</span><span class="sxs-lookup"><span data-stu-id="4e9fc-102">Using Rule Editor</span></span>
 <span data-ttu-id="4e9fc-103">使用 规则编辑器 ，可以在条件编辑器中查看和编辑所选规则的条件，也可以在操作编辑器中查看和编辑所选规则的操作。</span><span class="sxs-lookup"><span data-stu-id="4e9fc-103">Use the Rule Editor to view and edit conditions in the Conditions Editor and actions in the Actions Editor for the selected rule.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269509"
 ---
 # <a name="sendportref-port-node"></a><span data-ttu-id="321f0-102">SendPortRef（端口节点）</span><span class="sxs-lookup"><span data-stu-id="321f0-102">SendPortRef (Port Node)</span></span>
 <span data-ttu-id="321f0-103">绑定文件“端口”节点的 SendPortRef 节点包含有关服务引用的发送端口的信息。</span><span class="sxs-lookup"><span data-stu-id="321f0-103">The SendPortRef node of the Port node of a binding file contains information about a send port that is referenced by a service.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "演练： 修改策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 修改策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dd74440-2a45-4a1a-8e36-98796e1e1392
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289669"
 ---
 # <a name="walkthrough-modifying-the-policy"></a><span data-ttu-id="bdb63-102">演练： 修改策略</span><span class="sxs-lookup"><span data-stu-id="bdb63-102">Walkthrough: Modifying the Policy</span></span>
 <span data-ttu-id="bdb63-103">本演练提供有关创建的新版本的分步说明**POVocabulary**，创建的新版本**ProcessPurchaseOrder**策略，以及使用的最新版本**POVocabulary**的新版本中**ProcessPurchaseOrder**策略。</span><span class="sxs-lookup"><span data-stu-id="bdb63-103">This walkthrough provides step-by-step instructions for creating a new version of the **POVocabulary**, creating a new version of the **ProcessPurchaseOrder** policy, and using the latest version of the **POVocabulary** in the new version of the **ProcessPurchaseOrder** policy.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="bdb63-123">右键单击**POVocabulary**，然后单击**粘贴词汇版本**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-123">Right-click **POVocabulary**, and then click **Paste Vocabulary Version**.</span></span>  
   
-5.  <span data-ttu-id="bdb63-124">双击**数目的项允许的最大**中**（不保存） 1.1 版**以启动词汇定义向导。</span><span class="sxs-lookup"><span data-stu-id="bdb63-124">Double-click **Maximum Number of Items Allowed** in **Version 1.1 (not saved)** to start the Vocabulary Definition Wizard.</span></span>  
+5.  <span data-ttu-id="bdb63-124">双击**数目的项允许的最大**中 **（不保存） 1.1 版**以启动词汇定义向导。</span><span class="sxs-lookup"><span data-stu-id="bdb63-124">Double-click **Maximum Number of Items Allowed** in **Version 1.1 (not saved)** to start the Vocabulary Definition Wizard.</span></span>  
   
 6.  <span data-ttu-id="bdb63-125">单击 **“下一步”**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-125">Click **Next**.</span></span>  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="bdb63-128">单击 **“完成”**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-128">Click **Finish**.</span></span>  
   
-10. <span data-ttu-id="bdb63-129">右键单击**（不保存） 1.1 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-129">Right-click **Version 1.1 (not saved)**, and then click **Save**.</span></span>  
+10. <span data-ttu-id="bdb63-129">右键单击 **（不保存） 1.1 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-129">Right-click **Version 1.1 (not saved)**, and then click **Save**.</span></span>  
   
 11. <span data-ttu-id="bdb63-130">右键单击**版本 1.1**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="bdb63-130">Right-click **Version 1.1**, and then click **Publish**.</span></span>  
   

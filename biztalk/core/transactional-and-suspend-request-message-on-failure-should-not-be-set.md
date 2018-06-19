@@ -1,14 +1,14 @@
 ---
-title: "事务选项&quot;事务&quot;和错误处理选项&quot;失败的挂起请求消息&quot;应不能同时设置为 false |Microsoft 文档"
-ms.custom: 
+title: 事务选项&quot;事务&quot;和错误处理选项&quot;失败的挂起请求消息&quot;应不能同时设置为 false |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc6c66cc-6713-4396-b0d4-ac6a0e72164f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278925"
 ---
 # <a name="transactions-option-quottransactionalquot-and-the-error-handling-option-quotsuspend-request-message-on-failurequot-should-not-both-be-set-to-false"></a><span data-ttu-id="519ec-102">事务选项&quot;事务&quot;和错误处理选项&quot;失败的挂起请求消息&quot;应不能同时设置为 false</span><span class="sxs-lookup"><span data-stu-id="519ec-102">Transactions option &quot;Transactional&quot; and the error handling option &quot;Suspend request message on failure&quot; should not both be set to false</span></span>
 ## <a name="details"></a><span data-ttu-id="519ec-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="519ec-103">Details</span></span>  

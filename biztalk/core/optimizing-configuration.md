@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 2b0a1aa81971e3e086881e23bcfd6d7ba5d5799d
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24012876"
 ---
 # <a name="optimize-configuration"></a><span data-ttu-id="74734-101">优化配置</span><span class="sxs-lookup"><span data-stu-id="74734-101">Optimize configuration</span></span>
 <span data-ttu-id="74734-102">本部分介绍如何优化适用于 PeopleSoft Enterprise 的 BizTalk 适配器的配置，并且包括了用于设置适配器的参数说明。</span><span class="sxs-lookup"><span data-stu-id="74734-102">This section contains information about how to optimize your configuration of BizTalk Adapter for PeopleSoft Enterprise and includes parameter descriptions for setting up the adapter.</span></span>  

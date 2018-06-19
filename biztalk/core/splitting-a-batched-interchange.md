@@ -1,14 +1,14 @@
 ---
-title: "拆分批处理的交换 |Microsoft 文档"
-ms.custom: 
+title: 拆分批处理的交换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67bef19-77fb-47a9-88f3-ee20043b3691
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278941"
 ---
 # <a name="splitting-a-batched-interchange"></a><span data-ttu-id="673dc-102">拆分批处理的交换</span><span class="sxs-lookup"><span data-stu-id="673dc-102">Splitting a Batched Interchange</span></span>
 <span data-ttu-id="673dc-103">本主题介绍了如何配置协议以便通过从交换拆分事务集来处理批处理的 EDI 交换。</span><span class="sxs-lookup"><span data-stu-id="673dc-103">This topic describes how to configure an agreement for processing a batched EDI interchange by splitting the transaction sets from the interchange.</span></span>  

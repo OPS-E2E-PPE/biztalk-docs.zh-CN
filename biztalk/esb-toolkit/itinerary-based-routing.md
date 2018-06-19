@@ -1,14 +1,14 @@
 ---
-title: "基于路线的路由 |Microsoft 文档"
-ms.custom: 
+title: 基于路线的路由 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 28028721-798c-4302-a532-d863ed8ea88b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294509"
 ---
 # <a name="itinerary-based-routing"></a><span data-ttu-id="3cb9c-102">基于路线的路由</span><span class="sxs-lookup"><span data-stu-id="3cb9c-102">Itinerary-Based Routing</span></span>
 <span data-ttu-id="3cb9c-103">核心功能之一[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是基于路线的路由的设置，简化了企业级消息传送应用程序开发并减少成本来维护大量的静态发送端口和接收位置。</span><span class="sxs-lookup"><span data-stu-id="3cb9c-103">One of the core features of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is the provision of itinerary-based routing that simplifies the development of enterprise-level messaging applications and reduces the costs of maintaining a large number of static send ports and receive locations.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "运行多个 Web 服务示例 |Microsoft 文档"
-ms.custom: 
+title: 运行多个 Web 服务示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b201c7c3-213a-4009-8872-5a4c1cbb8195
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294797"
 ---
 # <a name="running-the-multiple-web-services-sample"></a><span data-ttu-id="d286c-102">运行多个 Web 服务示例</span><span class="sxs-lookup"><span data-stu-id="d286c-102">Running the Multiple Web Services Sample</span></span>
 <span data-ttu-id="d286c-103">多个 Web 服务示例使用 Windows 窗体测试客户端应用程序的入口路线示例。</span><span class="sxs-lookup"><span data-stu-id="d286c-103">The Multiple Web Services sample uses the Windows Forms test client application provided with the Itinerary On-Ramp sample.</span></span>  

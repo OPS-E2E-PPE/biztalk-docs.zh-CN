@@ -1,15 +1,15 @@
 ---
-title: "管理和性能工具 |Microsoft 文档"
-description: "常用工具来管理任务、 性能和在 BizTalk Server 中的跟踪"
-ms.custom: 
+title: 管理和性能工具 |Microsoft 文档
+description: 常用工具来管理任务、 性能和在 BizTalk Server 中的跟踪
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 932814f7-2ab3-45cb-8bbc-eaf00fcb24a0
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006574"
 ---
 # <a name="administrative-and-performance-tools"></a><span data-ttu-id="28291-103">管理和性能工具</span><span class="sxs-lookup"><span data-stu-id="28291-103">Administrative and performance tools</span></span> 
 

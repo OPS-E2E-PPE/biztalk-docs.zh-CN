@@ -1,11 +1,11 @@
 ---
-title: "清单： 取消部署 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 清单： 取消部署 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, undeploying
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, undeploying
 - applications, checklists
 ms.assetid: 5bf9c142-b912-48c3-bfa8-13fe5243b7b8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231629"
 ---
 # <a name="checklist-undeploy-a-biztalk-application"></a><span data-ttu-id="170b2-102">清单： 取消部署 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="170b2-102">Checklist: Undeploy a BizTalk Application</span></span>
 |<span data-ttu-id="170b2-103">步骤</span><span class="sxs-lookup"><span data-stu-id="170b2-103">Step</span></span>|<span data-ttu-id="170b2-104">参考</span><span class="sxs-lookup"><span data-stu-id="170b2-104">Reference</span></span>|  

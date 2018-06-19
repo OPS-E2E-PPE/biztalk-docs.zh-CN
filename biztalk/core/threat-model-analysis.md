@@ -21,6 +21,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22279909"
 ---
 # <a name="threat-model-analysis"></a><span data-ttu-id="636b1-102">威胁模型分析</span><span class="sxs-lookup"><span data-stu-id="636b1-102">Threat Model Analysis</span></span>
 <span data-ttu-id="636b1-103">威胁模型分析 (TMA) 进行分析可帮助确定到产品、 应用程序、 网络或环境中，所带来安全风险和攻击的显示方式。</span><span class="sxs-lookup"><span data-stu-id="636b1-103">A threat model analysis (TMA) is an analysis that helps determine the security risks posed to a product, application, network, or environment, and how attacks can show up.</span></span> <span data-ttu-id="636b1-104">目标是确定哪些威胁需要缓解以及如何缓解的方式。</span><span class="sxs-lookup"><span data-stu-id="636b1-104">The goal is to determine which threats require mitigation and how to mitigate them.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "使用 IPv6 寻址与 BizTalk 适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用 IPv6 寻址与 BizTalk 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93cd2ead-5e87-47ac-8f78-d56b80afd34e
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710620"
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a><span data-ttu-id="94ac8-102">对 BizTalk 适配器使用 IPv6 寻址</span><span class="sxs-lookup"><span data-stu-id="94ac8-102">Using IPv6 Addressing with BizTalk Adapters</span></span>
 <span data-ttu-id="94ac8-103">BizTalk Server 适配器支持使用 IPv6 寻址。</span><span class="sxs-lookup"><span data-stu-id="94ac8-103">BizTalk Server adapters support the use of IPv6 addressing.</span></span> <span data-ttu-id="94ac8-104">本主题介绍了指定 UNC 路径的 IPv6 地址时应当使用的命名法、指定文本 IPv6 地址时使用的命名法，以及如何对 HTTP 和 SOAP 适配器使用 IPv6 范围标识符。</span><span class="sxs-lookup"><span data-stu-id="94ac8-104">This topic describes the nomenclature that should be used to specify an IPv6 address for a UNC path, the nomenclature for specifying a literal IPv6 address, and the use of IPv6 scope identifiers with the HTTP and SOAP adapters.</span></span>  

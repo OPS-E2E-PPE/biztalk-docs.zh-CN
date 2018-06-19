@@ -1,11 +1,11 @@
 ---
-title: "使用 Windows Server 群集以提供高可用性的 BizTalk Server Hosts2 |Microsoft 文档"
-ms.custom: 
+title: 使用 Windows Server 群集以提供高可用性的 BizTalk Server Hosts2 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-01-04
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Passive configuration [Master Secret server]
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - installation, Windows Server cluster
 - clustering
 ms.assetid: 4d7f0842-561e-49e0-ab08-504256b9294f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287101"
 ---
 # <a name="using-windows-server-cluster-to-provide-high-availability-for-biztalk-server-hosts2"></a><span data-ttu-id="8f5e1-102">Windows Server 群集用于 BizTalk Server Hosts2 为提供高可用性</span><span class="sxs-lookup"><span data-stu-id="8f5e1-102">Using Windows Server Cluster to Provide High Availability for BizTalk Server Hosts2</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="8f5e1-103">提供允许你将 BizTalk 主机配置为 Windows Server 故障转移群集组中的群集资源的功能。</span><span class="sxs-lookup"><span data-stu-id="8f5e1-103"> provides functionality that allows you to configure a BizTalk host as a clustered resource within a  Windows Server failover cluster group.</span></span> <span data-ttu-id="8f5e1-104">使用主机群集支持，可以确保那些不应同时运行于多个主机实例中的集成 BizTalk 适配器（例如 FTP 接收处理程序，或在某些情况下的 POP3 接收处理程序）高度可用。</span><span class="sxs-lookup"><span data-stu-id="8f5e1-104">Host cluster support is provided to support high availability for integrated BizTalk adapters that should not be run in multiple host instances simultaneously, such as the FTP receive handler or, under certain circumstances, the POP3 receive handler.</span></span> <span data-ttu-id="8f5e1-105">另外，在需要群集 MSMQ 服务的方案中，主机群集支持还可确保 MSMQ 适配器发送或接收的消息的事务一致性。</span><span class="sxs-lookup"><span data-stu-id="8f5e1-105">Host cluster support is also provided to ensure transactional consistency for messages sent or received by the MSMQ adapter in scenarios that require that the MSMQ service is clustered.</span></span>  

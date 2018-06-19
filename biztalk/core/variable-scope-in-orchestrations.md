@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288117"
 ---
 # <a name="variable-scope-in-orchestrations"></a><span data-ttu-id="2bef2-102">在业务流程中的变量范围</span><span class="sxs-lookup"><span data-stu-id="2bef2-102">Variable Scope in Orchestrations</span></span>
 <span data-ttu-id="2bef2-103">有关业务流程内不同位置中变量和业务流程参数的可见性和状态（包括异常处理程序和补偿模块），您需要充分了解其中的一些要点。</span><span class="sxs-lookup"><span data-stu-id="2bef2-103">There are a few important points to understand about the visibility and state of variables and orchestration parameters in various places within your orchestration, including exception handlers and compensation blocks.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "UI 指南和开发人员参考 |Microsoft 文档"
-description: "用户界面 (UI) 帮助适配器，BizTalk 映射程序业务流程设计器中，规则引擎部署向导中，Web 服务发布向导，并更在 BizTalk Server"
-ms.custom: 
+title: UI 指南和开发人员参考 |Microsoft 文档
+description: 用户界面 (UI) 帮助适配器，BizTalk 映射程序业务流程设计器中，规则引擎部署向导中，Web 服务发布向导，并更在 BizTalk Server
+ms.custom: ''
 ms.date: 09/04/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b8539fc6-35fb-4c9c-bdc6-c7aefb5efe0a
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279749"
 ---
 # <a name="biztalk-server-ui-help--developers-reference"></a><span data-ttu-id="12229-103">BizTalk Server UI 帮助和开发人员参考</span><span class="sxs-lookup"><span data-stu-id="12229-103">BizTalk Server UI help & Developers reference</span></span>
 

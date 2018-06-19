@@ -1,15 +1,15 @@
 ---
-title: "设置仪表板用于 BizTalk Server 性能优化 |Microsoft 文档"
-description: "使用 BizTalk Server 管理中的设置仪表板来更新组、 主机和主机实例设置"
-ms.custom: 
+title: 设置仪表板用于 BizTalk Server 性能优化 |Microsoft 文档
+description: 使用 BizTalk Server 管理中的设置仪表板来更新组、 主机和主机实例设置
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bb1ddac-1e8f-4928-9c70-8326ae64a734
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287397"
 ---
 # <a name="use-settings-dashboard-for-biztalk-server-performance-tuning"></a><span data-ttu-id="58699-103">设置仪表板用于 BizTalk Server 性能优化</span><span class="sxs-lookup"><span data-stu-id="58699-103">Use Settings Dashboard for BizTalk Server Performance Tuning</span></span>
 

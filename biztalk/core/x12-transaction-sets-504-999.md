@@ -1,14 +1,14 @@
 ---
-title: "X12 事务集 504-999 |Microsoft 文档"
-ms.custom: 
+title: X12 事务集 504-999 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c658823b-8069-4528-b5b5-a347f68ba207
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010822"
 ---
 # <a name="x12-transaction-sets-504-999"></a><span data-ttu-id="8dcaf-102">X12 事务集 504-999</span><span class="sxs-lookup"><span data-stu-id="8dcaf-102">X12 Transaction Sets 504-999</span></span>
 <span data-ttu-id="8dcaf-103">此主题列出 X12 文档和 BizTalk Server 支持的版本。</span><span class="sxs-lookup"><span data-stu-id="8dcaf-103">This topic lists the X12 documents and versions that are supported by BizTalk Server.</span></span>  

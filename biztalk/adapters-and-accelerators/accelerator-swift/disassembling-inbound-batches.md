@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11cb5672-1155-4648-b1fd-c9a3bc30e351
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26007798"
 ---
 # <a name="disassemble-inbound-batches"></a><span data-ttu-id="4db77-103">反汇编入站的批处理</span><span class="sxs-lookup"><span data-stu-id="4db77-103">Disassemble Inbound Batches</span></span>
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="4db77-120">**批处理尾**</span><span class="sxs-lookup"><span data-stu-id="4db77-120">**Batch Trailer**</span></span>  
   
- <span data-ttu-id="4db77-121">在此结构中，你可以考虑"消息块"是**– SWIFT 交换 – 的消息标头消息预告片**部分。</span><span class="sxs-lookup"><span data-stu-id="4db77-121">Within this structure, you can consider a "message block" to be the **Message Header – SWIFT Interchange – Message Trailer** parts.</span></span> <span data-ttu-id="4db77-122">多个"消息块"的一系列组成批处理中的多个 SWIFT 消息。</span><span class="sxs-lookup"><span data-stu-id="4db77-122">A series of multiple "message blocks" makes up the multiple SWIFT messages in a batch.</span></span> <span data-ttu-id="4db77-123">批处理标头、 消息标头、 消息尾部和批处理尾是可选的但必须一致重复。</span><span class="sxs-lookup"><span data-stu-id="4db77-123">The Batch Header, Message Header, Message Trailer, and Batch Trailer are optional, but must be consistent across repetitions.</span></span>  
+ <span data-ttu-id="4db77-121">在此结构中，你可以考虑"消息块"是 **– SWIFT 交换 – 的消息标头消息预告片**部分。</span><span class="sxs-lookup"><span data-stu-id="4db77-121">Within this structure, you can consider a "message block" to be the **Message Header – SWIFT Interchange – Message Trailer** parts.</span></span> <span data-ttu-id="4db77-122">多个"消息块"的一系列组成批处理中的多个 SWIFT 消息。</span><span class="sxs-lookup"><span data-stu-id="4db77-122">A series of multiple "message blocks" makes up the multiple SWIFT messages in a batch.</span></span> <span data-ttu-id="4db77-123">批处理标头、 消息标头、 消息尾部和批处理尾是可选的但必须一致重复。</span><span class="sxs-lookup"><span data-stu-id="4db77-123">The Batch Header, Message Header, Message Trailer, and Batch Trailer are optional, but must be consistent across repetitions.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="4db77-124">不要用 SWIFT 的标头和尾块混淆消息信封 （消息头和消息预告片）。</span><span class="sxs-lookup"><span data-stu-id="4db77-124">Do not confuse the message envelope (Message Header and Message Trailer) with the SWIFT header and trailer blocks.</span></span> <span data-ttu-id="4db77-125">在上下文中的批处理，应查看作为整体 （原子） 单元包括 SWIFT 标头和尾块 SWIFT 消息 （交换）。</span><span class="sxs-lookup"><span data-stu-id="4db77-125">In the context of batches, you should view the SWIFT message (interchange), including the SWIFT header and trailer blocks, as a holistic (atomic) unit.</span></span> <span data-ttu-id="4db77-126">在此上下文中，消息标头和消息尾端引用到批处理中包装每个 SWIFT 消息信封。</span><span class="sxs-lookup"><span data-stu-id="4db77-126">In this context, the Message Header and Message Trailer refer to the envelope that wraps each SWIFT message in a batch.</span></span>  

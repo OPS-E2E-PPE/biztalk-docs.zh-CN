@@ -1,11 +1,11 @@
 ---
-title: "Recaller 对象 |Microsoft 文档"
-ms.custom: 
+title: Recaller 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Recaller object
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, Recaller object
 - process management solution tutorial, errors
 ms.assetid: b30ad1ae-475f-4913-b402-4d3263fcf072
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279885"
 ---
 # <a name="the-recaller-object"></a><span data-ttu-id="a319a-102">Recaller 对象</span><span class="sxs-lookup"><span data-stu-id="a319a-102">The Recaller Object</span></span>
 <span data-ttu-id="a319a-103">业务流程管理解决方案支持以常规方式重试某些失败的对象方法调用。</span><span class="sxs-lookup"><span data-stu-id="a319a-103">The business process management solution provides for retrying, in a generic way, some failed object method calls.</span></span> <span data-ttu-id="a319a-104">解决方案执行此通过**Recaller**对象在**ExceptionHandler**业务流程。</span><span class="sxs-lookup"><span data-stu-id="a319a-104">The solution does this through the **Recaller** object in the **ExceptionHandler** orchestration.</span></span> <span data-ttu-id="a319a-105">**ExceptionHandler**业务流程使用对象来重试对象方法调用。</span><span class="sxs-lookup"><span data-stu-id="a319a-105">The **ExceptionHandler** orchestration uses the object to retry object method calls.</span></span> <span data-ttu-id="a319a-106">有关详细信息，请参阅[ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="a319a-106">For more information, see [The ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md).</span></span>  

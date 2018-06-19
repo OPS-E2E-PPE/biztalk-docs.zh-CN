@@ -1,11 +1,11 @@
 ---
-title: "创建要处理孤立或重复消息的发送端口 |Microsoft 文档"
-ms.custom: 
+title: 创建要处理孤立或重复消息的发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, duplicate messages
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, orphaned messages
 - messages, send ports
 ms.assetid: 61d51206-13e3-4d32-a184-866248db9b45
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006950"
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a><span data-ttu-id="3b019-102">创建要处理孤立或重复消息的发送端口</span><span class="sxs-lookup"><span data-stu-id="3b019-102">Creating a Send Port to Handle Orphan or Duplicate Messages</span></span>
 <span data-ttu-id="3b019-103">本主题描述如何设置可用于删除孤立或重复消息的发送端口。</span><span class="sxs-lookup"><span data-stu-id="3b019-103">This topic describes how to set up a send port that you can use to delete orphan or duplicate messages.</span></span>  

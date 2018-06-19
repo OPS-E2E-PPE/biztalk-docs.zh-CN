@@ -1,11 +1,11 @@
 ---
-title: "如何运行服务面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何运行服务面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, client applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - service solution tutorial, sending requests
 - service solution tutorial, SOAP transports
 ms.assetid: 764a5ddc-e571-41d8-9e2f-6d0fb3361b2f
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973811"
 ---
 # <a name="how-to-run-the-service-oriented-solution"></a><span data-ttu-id="15dc8-102">如何运行面向服务的解决方案</span><span class="sxs-lookup"><span data-stu-id="15dc8-102">How to Run the Service Oriented Solution</span></span>
 <span data-ttu-id="15dc8-103">以下步骤介绍了如何在单台计算机上运行和验证面向服务的解决方案。</span><span class="sxs-lookup"><span data-stu-id="15dc8-103">The following steps describe how to run and validate the service oriented solution on a single computer.</span></span> <span data-ttu-id="15dc8-104">启动付款跟踪模拟程序之后，可以使用 SOAP 或 MQSeries 传输发送请求（对于面向服务的解决方案的适配器和内联版本，需要使用不同的过程）。</span><span class="sxs-lookup"><span data-stu-id="15dc8-104">After starting the Payment Tracker simulator, you can send requests using either the SOAP or MQSeries transport (with separate procedures for the adapter and inline versions of the service oriented solution).</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="15dc8-112">键入在任何 16 位数字**帐号**文本框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-112">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-4.  <span data-ttu-id="15dc8-113">选择**SOAP （WS 调用）**和**存根 （stub)**中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-113">Select **SOAP (WS Call)** and **Stub** in the **Select Transport and Parameters** group box.</span></span>  
+4.  <span data-ttu-id="15dc8-113">选择**SOAP （WS 调用）** 和**存根 （stub)** 中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-113">Select **SOAP (WS Call)** and **Stub** in the **Select Transport and Parameters** group box.</span></span>  
   
 5.  <span data-ttu-id="15dc8-114">键入以下 URL **URL**文本框中，例如：</span><span class="sxs-lookup"><span data-stu-id="15dc8-114">Type the following URL in the **URL** text box, for example:</span></span>  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="15dc8-129">键入在任何 16 位数字**帐号**文本框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-129">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-    3.  <span data-ttu-id="15dc8-130">选择**SOAP （WS 调用）**和**适配器**中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-130">Select **SOAP (WS Call)** and **Adapter** in the **Select Transport and Parameters** group box.</span></span>  
+    3.  <span data-ttu-id="15dc8-130">选择**SOAP （WS 调用）** 和**适配器**中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-130">Select **SOAP (WS Call)** and **Adapter** in the **Select Transport and Parameters** group box.</span></span>  
   
     4.  <span data-ttu-id="15dc8-131">键入以下 URL **URL**文本框中，例如：</span><span class="sxs-lookup"><span data-stu-id="15dc8-131">Type the following URL in the **URL** text box, for example:</span></span>  
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 11/28/2017
   
     2.  <span data-ttu-id="15dc8-165">键入在任何 16 位数字**帐号**文本框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-165">Type any 16-digit number in the **Account Number** text box.</span></span>  
   
-    3.  <span data-ttu-id="15dc8-166">选择**SOAP （WS 调用）**和**内联**中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-166">Select **SOAP (WS Call)** and **Inline** in the **Select Transport and Parameters** group box.</span></span>  
+    3.  <span data-ttu-id="15dc8-166">选择**SOAP （WS 调用）** 和**内联**中**选择传输协议和参数**分组框。</span><span class="sxs-lookup"><span data-stu-id="15dc8-166">Select **SOAP (WS Call)** and **Inline** in the **Select Transport and Parameters** group box.</span></span>  
   
     4.  <span data-ttu-id="15dc8-167">键入以下 URL **URL**文本框中，例如：</span><span class="sxs-lookup"><span data-stu-id="15dc8-167">Type the following URL in the **URL** text box, for example:</span></span>  
   

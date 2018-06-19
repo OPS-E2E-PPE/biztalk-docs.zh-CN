@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10830 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10830 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd149be1-0a4f-4d39-9b0e-35202dc140cb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276421"
 ---
 # <a name="single-sign-on-event-10830"></a><span data-ttu-id="398f1-102">单一登录： 事件 10830</span><span class="sxs-lookup"><span data-stu-id="398f1-102">Single Sign-On: Event 10830</span></span>
 ## <a name="details"></a><span data-ttu-id="398f1-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="398f1-103">Details</span></span>  

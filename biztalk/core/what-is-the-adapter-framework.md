@@ -1,14 +1,14 @@
 ---
-title: "适配器框架概述 | Microsoft Docs"
-ms.custom: 
+title: 适配器框架概述 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd1e2fd7-4e77-49c4-839d-c2bf16b10ba2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289597"
 ---
 # <a name="what-is-the-adapter-framework"></a><span data-ttu-id="024b6-103">适配器框架概述</span><span class="sxs-lookup"><span data-stu-id="024b6-103">What Is the Adapter Framework?</span></span>
 <span data-ttu-id="024b6-104">BizTalk 适配器框架提供了一个稳定、 打开机制，以实现或访问工作中的所有适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息引擎。</span><span class="sxs-lookup"><span data-stu-id="024b6-104">The BizTalk Adapter Framework offers a stable, open mechanism for all adapters to implement or access work from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messaging Engine.</span></span> <span data-ttu-id="024b6-105">接口中所述**Microsoft.BizTalk.Adapter.Framework**命名空间启用适配器，以提供一种方式来修改配置属性页。</span><span class="sxs-lookup"><span data-stu-id="024b6-105">The interfaces described in the **Microsoft.BizTalk.Adapter.Framework** namespace enable adapters to provide a means to modify configuration property pages.</span></span> <span data-ttu-id="024b6-106">它还可用于将服务和架构导入到 BizTalk 项目中。</span><span class="sxs-lookup"><span data-stu-id="024b6-106">It also is a means to import services and schemas into the BizTalk project.</span></span>  

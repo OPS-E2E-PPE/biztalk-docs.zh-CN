@@ -1,14 +1,14 @@
 ---
-title: "步骤 4d： 测试 FileAct 应用商店应用和进 （请求） 方案的有效实例 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4d： 测试 FileAct 应用商店应用和进 （请求） 方案的有效实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33c7aabe-206f-4b89-b739-ac1e63675451
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223693"
 ---
 # <a name="step-4d-test-a-valid-instance-for-the-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="4c2ed-102">步骤 4d： 测试 FileAct 应用商店应用和进 （请求） 方案的有效实例</span><span class="sxs-lookup"><span data-stu-id="4c2ed-102">Step 4D: Test a Valid Instance for the FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="4c2ed-103">在开始此步骤之前，必须完成[步骤 4c： 创建 FileAct 应用商店应用和向前 （请求） 方案的测试实例](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-fileact-store-and-forward-pull-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="4c2ed-103">Before you begin this step, you must complete [Step 4C: Create a Test Instance for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-fileact-store-and-forward-pull-scenario.md).</span></span>  

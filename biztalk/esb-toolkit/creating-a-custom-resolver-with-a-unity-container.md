@@ -1,14 +1,14 @@
 ---
-title: "使用 Unity 容器中创建自定义解析程序 |Microsoft 文档"
-ms.custom: 
+title: 使用 Unity 容器中创建自定义解析程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6f95f5e-64dd-4cc6-802f-0c5fd6a01c91
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975611"
 ---
 # <a name="creating-a-custom-resolver-with-a-unity-container"></a><span data-ttu-id="7daf7-102">使用 Unity 容器中创建自定义冲突解决程序</span><span class="sxs-lookup"><span data-stu-id="7daf7-102">Creating a Custom Resolver with a Unity Container</span></span>
 <span data-ttu-id="7daf7-103">你可以创建使用自定义解析程序[Unity 应用程序块](http://go.microsoft.com/fwlink/?LinkId=188286)(Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) 的解析逻辑和元数据源的运行时依赖关系注入。</span><span class="sxs-lookup"><span data-stu-id="7daf7-103">You can create a custom resolver using the [Unity Application Block](http://go.microsoft.com/fwlink/?LinkId=188286) (Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) for run-time dependency injection of resolution logic and metadata sources.</span></span>
@@ -305,7 +306,7 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
   
 3.  <span data-ttu-id="7daf7-147">与实现的类创建一个程序集**IResolveContainer**和**IResolveProvider**接口并包含**解决**验证的方法解析程序配置，从事实提供程序收集的所有事实数据、 执行任何特殊的处理，会将它们使用的事实转换器，转换和实例的形式返回的已翻译的事实数据**字典**类。</span><span class="sxs-lookup"><span data-stu-id="7daf7-147">Create an assembly with a class that implements the **IResolveContainer** and **IResolveProvider** interface and that contains a **Resolve** method that validates the resolver configuration, gathers all the facts from the fact providers, performs any specialized processing, translates them using the fact translators, and returns the translated facts as an instance of the **Dictionary** class.</span></span>  
   
-4.  <span data-ttu-id="7daf7-148">通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>**包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。</span><span class="sxs-lookup"><span data-stu-id="7daf7-148">Register the resolver by adding it to the Esb.config configuration file using a **\<resolver\>** element that contains the root moniker as the **name** attribute and the fully qualified assembly name as the **type** attribute.</span></span>  
+4.  <span data-ttu-id="7daf7-148">通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>** 包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。</span><span class="sxs-lookup"><span data-stu-id="7daf7-148">Register the resolver by adding it to the Esb.config configuration file using a **\<resolver\>** element that contains the root moniker as the **name** attribute and the fully qualified assembly name as the **type** attribute.</span></span>  
   
 5.  <span data-ttu-id="7daf7-149">此解析程序将添加到 Esb.config 文件特定于 Unity 的配置。</span><span class="sxs-lookup"><span data-stu-id="7daf7-149">Add the Unity-specific configuration to the Esb.config file for this resolver.</span></span>  
   

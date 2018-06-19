@@ -1,15 +1,15 @@
 ---
-title: "教程： 使用 TIBCO 会合适配器发送 |Microsoft 文档"
-description: "分步指南，以用于 BizTalk 适配器 TIBCO 会合 BizTalk Server 中将数据发送到 TIBCO 系统"
-ms.custom: 
+title: 教程： 使用 TIBCO 会合适配器发送 |Microsoft 文档
+description: 分步指南，以用于 BizTalk 适配器 TIBCO 会合 BizTalk Server 中将数据发送到 TIBCO 系统
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b761ce2d-3465-43e0-bd8d-4d68b523226a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014436"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data"></a><span data-ttu-id="1bf0a-103">教程：使用 TIBCO Rendezvous 的 BizTalk 适配器以发送数据</span><span class="sxs-lookup"><span data-stu-id="1bf0a-103">Tutorial: Using the BizTalk Adapter for TIBCO Rendezvous to Send Data</span></span>
 <span data-ttu-id="1bf0a-104">您可以使用用于 TIBCO Rendezvous 的 BizTalk 适配器向 TIBCO 系统发送数据。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-104">You can use the BizTalk Adapter for TIBCO Rendezvous to send data to a TIBCO system.</span></span> <span data-ttu-id="1bf0a-105">本演练描述了对此进行说明的一个 SDK 示例。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-105">This walkthrough describes an SDK sample that illustrates this.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="1bf0a-131">输入一个值**名称**字段。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-131">Enter a value for the **Name** field.</span></span> <span data-ttu-id="1bf0a-132">例如，输入**TIBCO 会合**。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-132">For example, enter **TIBCO Rendezvous**.</span></span>  
   
-5.  <span data-ttu-id="1bf0a-133">选择**TIBCO(r) Rendezvous(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-133">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
+5.  <span data-ttu-id="1bf0a-133">选择**TIBCO(r) Rendezvous(r)** 从列表中可用的适配器**适配器**下拉列表中单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-133">Select **TIBCO(r) Rendezvous(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
   
 ## <a name="step-2-create-a-send-port"></a><span data-ttu-id="1bf0a-134">步骤 2： 创建发送端口</span><span class="sxs-lookup"><span data-stu-id="1bf0a-134">Step 2: Create a Send Port</span></span>  
   
@@ -100,7 +101,7 @@ ms.lasthandoff: 11/07/2017
   
 1.  <span data-ttu-id="1bf0a-170">在**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，然后单击**接收端口**。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-170">In **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, expand **BizTalk Application 1**, and click **Receive Ports**.</span></span>  
   
-2.  <span data-ttu-id="1bf0a-171">右键单击接收端口文件夹，然后单击**新建**，**单向接收端口...**以显示接收端口属性对话框。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-171">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the Receive Port Properties dialog.</span></span>  
+2.  <span data-ttu-id="1bf0a-171">右键单击接收端口文件夹，然后单击**新建**，**单向接收端口...** 以显示接收端口属性对话框。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-171">Right-click the Receive Ports folder and then click **New**, **One-Way Receive Port...** to display the Receive Port Properties dialog.</span></span>  
   
 3.  <span data-ttu-id="1bf0a-172">输入一个值**名称**字段，例如**TIBCORndOneWayFileRP**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="1bf0a-172">Enter a value for the **Name** field, for example **TIBCORndOneWayFileRP**, and click **OK**.</span></span>  
   

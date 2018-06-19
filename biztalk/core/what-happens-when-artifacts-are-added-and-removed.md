@@ -1,11 +1,11 @@
 ---
-title: "当添加和删除项目时，会发生什么情况 |Microsoft 文档"
-ms.custom: 
+title: 当添加和删除项目时，会发生什么情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, artifacts
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - artifacts, creating
 - deleting, artifacts
 ms.assetid: 811166ba-3ff4-4224-9d84-a2f4ed31bf4d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288877"
 ---
 # <a name="what-happens-when-artifacts-are-added-and-removed"></a><span data-ttu-id="675cf-102">当添加和删除项目时，会发生什么情况</span><span class="sxs-lookup"><span data-stu-id="675cf-102">What Happens When Artifacts Are Added and Removed</span></span>
 <span data-ttu-id="675cf-103">本主题介绍将项目添加到应用程序时发生的情况。</span><span class="sxs-lookup"><span data-stu-id="675cf-103">This topic describes what happens when you add artifacts to an application.</span></span> <span data-ttu-id="675cf-104">您可以通过使用 BizTalk Server 管理控制台或 BTSTask 命令行工具，将基于文件的项目添加到应用程序中。</span><span class="sxs-lookup"><span data-stu-id="675cf-104">You can add file-based artifacts to an application by using the BizTalk Server Administration console or the BTSTask command-line tool.</span></span> <span data-ttu-id="675cf-105">基于文件的项目包括以下类型：</span><span class="sxs-lookup"><span data-stu-id="675cf-105">File-based artifacts include the following types:</span></span>  

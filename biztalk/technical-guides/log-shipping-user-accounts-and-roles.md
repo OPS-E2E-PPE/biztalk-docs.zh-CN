@@ -1,14 +1,14 @@
 ---
-title: "日志传送用户帐户和角色 |Microsoft 文档"
-ms.custom: 
+title: 日志传送用户帐户和角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2056ea90-5e9f-4501-95d6-18c905db4023
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010598"
 ---
 # <a name="log-shipping-user-accounts-and-roles"></a><span data-ttu-id="1e730-102">日志传送用户帐户和角色</span><span class="sxs-lookup"><span data-stu-id="1e730-102">Log Shipping User Accounts and Roles</span></span>
 <span data-ttu-id="1e730-103">BizTalk Server 日志传送都由 SQL Server 代理作业来自动执行还原的备份和日志的过程。</span><span class="sxs-lookup"><span data-stu-id="1e730-103">BizTalk Server log shipping is driven by a SQL Server Agent job to automate the process of restoring backups and logs.</span></span> <span data-ttu-id="1e730-104">不正确的权限可能会导致执行 BizTalk Server 日志传送失败还原操作。</span><span class="sxs-lookup"><span data-stu-id="1e730-104">Incorrect permissions can cause restore operations performed by BizTalk Server log shipping to fail.</span></span> <span data-ttu-id="1e730-105">配置以将数据库还原的用户帐户必须有权承载 BizTalk 管理数据库的生产数据库实例。</span><span class="sxs-lookup"><span data-stu-id="1e730-105">The user account configured to restore databases must have access to the production database instance that hosts the BizTalk Management database.</span></span> <span data-ttu-id="1e730-106">在大多数情况下这意味着，服务帐户为灾难恢复驱动的 BizTalk Server 日志传送作业的 SQL Server 代理作业[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例需要一个登录名和承载对生产数据库实例的权限[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理数据库。</span><span class="sxs-lookup"><span data-stu-id="1e730-106">In most cases this means that the service account for the SQL Server Agent job driving the BizTalk Server log shipping job on the disaster recovery [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] instance requires a login and permissions on the production database instance that hosts the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database.</span></span> <span data-ttu-id="1e730-107">这会假定作为作业所有者已配置 SQL Server 代理服务帐户。</span><span class="sxs-lookup"><span data-stu-id="1e730-107">This assumes that the SQL Server Agent service account is configured as the job owner.</span></span>  

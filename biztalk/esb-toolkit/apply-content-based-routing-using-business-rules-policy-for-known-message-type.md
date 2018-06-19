@@ -1,14 +1,14 @@
 ---
-title: "如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略 |Microsoft 文档"
-ms.custom: 
+title: 如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44451c85-929a-4d13-b0dd-53ea600d0859
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010038"
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a><span data-ttu-id="32da6-102">如何： 实现基于内容的路由使用业务规则的一个已知的消息类型的策略</span><span class="sxs-lookup"><span data-stu-id="32da6-102">How to: Implement Content-Based Routing Using a Business Rules Policy for a Known Message Type</span></span>
 ## <a name="goal"></a><span data-ttu-id="32da6-103">目的</span><span class="sxs-lookup"><span data-stu-id="32da6-103">Goal</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-add-a-routing-rule-for-customer-globalbank-west"></a><span data-ttu-id="32da6-132">若要添加客户 GlobalBank 西部的路由规则</span><span class="sxs-lookup"><span data-stu-id="32da6-132">To add a routing rule for customer GlobalBank West</span></span>  
   
-1.  <span data-ttu-id="32da6-133">在**RouteBasedOnCustomerKnownType**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="32da6-133">In the **RouteBasedOnCustomerKnownType** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="32da6-134">命名规则**SetWestEndpoint**。</span><span class="sxs-lookup"><span data-stu-id="32da6-134">Name the rule **SetWestEndpoint**.</span></span>  
+1.  <span data-ttu-id="32da6-133">在**RouteBasedOnCustomerKnownType**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="32da6-133">In the **RouteBasedOnCustomerKnownType** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="32da6-134">命名规则**SetWestEndpoint**。</span><span class="sxs-lookup"><span data-stu-id="32da6-134">Name the rule **SetWestEndpoint**.</span></span>  
   
 2.  <span data-ttu-id="32da6-135">在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="32da6-135">In Facts Explorer, click the **XML Schemas** tab, right-click **Schemas**, and then click **Browse**.</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 12/01/2017
   
 10. <span data-ttu-id="32da6-148">从事实数据资源管理器拖动**设置终结点出站传输位置**定义与**操作**。</span><span class="sxs-lookup"><span data-stu-id="32da6-148">From Facts Explorer, drag the **Set End Point Outbound Transport Location** definition to **Actions**.</span></span>  
   
-11. <span data-ttu-id="32da6-149">单击**\<空字符串\>**然后键入**C:\HowTos\Out\West%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="32da6-149">Click **\<empty string\>** and then type **C:\HowTos\Out\West%MessageID%.xml**.</span></span>  
+11. <span data-ttu-id="32da6-149">单击**\<空字符串\>** 然后键入**C:\HowTos\Out\West%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="32da6-149">Click **\<empty string\>** and then type **C:\HowTos\Out\West%MessageID%.xml**.</span></span>  
   
 12. <span data-ttu-id="32da6-150">从事实数据资源管理器拖动**设置终结点出站传输类型**定义与**操作**。</span><span class="sxs-lookup"><span data-stu-id="32da6-150">From Facts Explorer, drag the **Set End Point Outbound Transport Type** definition to **Actions**.</span></span>  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="32da6-154">在策略资源管理器中，右键单击**SetWestEndpoint**规则，并依次**复制**。</span><span class="sxs-lookup"><span data-stu-id="32da6-154">In Policy Explorer, right-click the **SetWestEndpoint** rule, and then click **Copy**.</span></span>  
   
-2.  <span data-ttu-id="32da6-155">右键单击**（不保存） 1.0 版**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="32da6-155">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
+2.  <span data-ttu-id="32da6-155">右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="32da6-155">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
   
 3.  <span data-ttu-id="32da6-156">在**新规则名称**对话框中，键入**SetEastEndpoint**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="32da6-156">In the **New Rule Name** dialog box, type **SetEastEndpoint**, and then click **OK**.</span></span>  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-publish-and-deploy-the-policy"></a><span data-ttu-id="32da6-179">若要发布和部署策略</span><span class="sxs-lookup"><span data-stu-id="32da6-179">To publish and deploy the policy</span></span>  
   
-1.  <span data-ttu-id="32da6-180">在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击**（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="32da6-180">In Policy Explorer, under the **RouteBasedOnCustomerKnownType** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
+1.  <span data-ttu-id="32da6-180">在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="32da6-180">In Policy Explorer, under the **RouteBasedOnCustomerKnownType** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
   
 2.  <span data-ttu-id="32da6-181">在策略资源管理器下**RouteBasedOnCustomerKnownType**策略中，右击**版本 1.0-发布**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="32da6-181">In Policy Explorer, under the **RouteBasedOnCustomerKnownType** policy, right click **Version 1.0 - Published**, and then click **Deploy**.</span></span>  
   

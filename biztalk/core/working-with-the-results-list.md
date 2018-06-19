@@ -1,18 +1,18 @@
 ---
-title: "使用结果列表 |Microsoft 文档"
-ms.custom: 
+title: 使用结果列表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - results list [Orchestration Debugger], finding messages
 - results list [Orchestration Debugger], sorting
 - Orchestration Debugger, results
 ms.assetid: d168c5d4-c186-4b5c-851d-ec499cefc7c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289565"
 ---
 # <a name="working-with-the-results-list"></a><span data-ttu-id="a2a65-102">使用“结果”列表</span><span class="sxs-lookup"><span data-stu-id="a2a65-102">Working with the Results List</span></span>
 <span data-ttu-id="a2a65-103">在组中心页中运行查询时，它会生成**查询结果**包含搜索结果中，例如相关的消息、 管道和程序集的列表。</span><span class="sxs-lookup"><span data-stu-id="a2a65-103">When you run a query in the Group Hub page, it generates a **Query results** list containing the search results, such as relevant messages, pipelines, and assemblies.</span></span>  

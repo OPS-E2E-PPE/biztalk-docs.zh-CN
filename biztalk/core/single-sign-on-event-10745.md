@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10745 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10745 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed630e40-d876-4e90-937e-4d2d54fe9f1a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270821"
 ---
 # <a name="single-sign-on-event-10745"></a><span data-ttu-id="2f6a9-102">单一登录： 事件 10745</span><span class="sxs-lookup"><span data-stu-id="2f6a9-102">Single Sign-On: Event 10745</span></span>
 ## <a name="details"></a><span data-ttu-id="2f6a9-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="2f6a9-103">Details</span></span>  

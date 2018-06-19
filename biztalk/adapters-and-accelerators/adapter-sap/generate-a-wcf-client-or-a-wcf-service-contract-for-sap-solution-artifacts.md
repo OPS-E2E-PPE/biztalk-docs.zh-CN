@@ -1,14 +1,14 @@
 ---
-title: "生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定 |Microsoft 文档"
-ms.custom: 
+title: 生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff01e2b0-6480-427a-bc6d-6169e7d6e256
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217493"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts"></a><span data-ttu-id="30c3c-102">生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定</span><span class="sxs-lookup"><span data-stu-id="30c3c-102">Generate a WCF client or a WCF service contract for SAP solution artifacts</span></span>
 <span data-ttu-id="30c3c-103">你可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或所选操作上的 SAP 项目所面向的 WCF 服务协定 （接口）。</span><span class="sxs-lookup"><span data-stu-id="30c3c-103">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class or a WCF service contract (interface) targeted at selected operations on SAP artifacts.</span></span> <span data-ttu-id="30c3c-104">你还可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或 WCF 服务协定;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开通过标准的 Microsoft Windows 界面 ServiceModel 元数据实用工具的功能。</span><span class="sxs-lookup"><span data-stu-id="30c3c-104">You can also use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class or WCF service contract; however, the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] exposes the functionality of the ServiceModel Metadata Utility Tool through a standard Microsoft Windows interface.</span></span> <span data-ttu-id="30c3c-105">它还提供浏览和搜索功能，使用 svcutil.exe 工具中，未提供，并生成一个基于连接到 SAP 系统时选择的绑定属性的配置文件。</span><span class="sxs-lookup"><span data-stu-id="30c3c-105">It also provides browse and search capabilities that are not available with the svcutil.exe tool, and generates a configuration file based on the binding properties that you select when you connect to the SAP system.</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="30c3c-109">在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击你的项目，并依次**添加适配器服务引用**。</span><span class="sxs-lookup"><span data-stu-id="30c3c-109">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="30c3c-110">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[获取 Visual Studio 中的 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)连接到 SAP 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="30c3c-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="30c3c-111">若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）**从选择**选择协定类型**（这是默认值） 的下拉列表。</span><span class="sxs-lookup"><span data-stu-id="30c3c-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
+2.  <span data-ttu-id="30c3c-110">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[获取 Visual Studio 中的 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)连接到 SAP 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="30c3c-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="30c3c-111">若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）** 从选择**选择协定类型**（这是默认值） 的下拉列表。</span><span class="sxs-lookup"><span data-stu-id="30c3c-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
   
 3.  <span data-ttu-id="30c3c-112">选择所有你想要为目标，请单击操作后**确定**生成 WCF 客户端类。</span><span class="sxs-lookup"><span data-stu-id="30c3c-112">After you select all of the operations that you want to target, click **OK** to generate the WCF client class.</span></span>  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="30c3c-130">在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击你的项目，并依次**添加适配器服务引用**。</span><span class="sxs-lookup"><span data-stu-id="30c3c-130">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="30c3c-131">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[获取 Visual Studio 中的 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)连接到 SAP 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="30c3c-131">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="30c3c-132">若要创建 WCF 服务协定的操作，你选择，请确保**服务 （入站操作）**从选择**选择协定类型**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="30c3c-132">To create a WCF service contract for the operations that you select, be sure that **Service (Inbound operations)** is selected from the **Select contract type** drop-down list.</span></span>  
+2.  <span data-ttu-id="30c3c-131">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[获取 Visual Studio 中的 SAP 操作的元数据](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)连接到 SAP 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="30c3c-131">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Get Metadata for SAP Operations in Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md) to connect to the SAP system and browse and search for operations.</span></span> <span data-ttu-id="30c3c-132">若要创建 WCF 服务协定的操作，你选择，请确保**服务 （入站操作）** 从选择**选择协定类型**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="30c3c-132">To create a WCF service contract for the operations that you select, be sure that **Service (Inbound operations)** is selected from the **Select contract type** drop-down list.</span></span>  
   
 3.  <span data-ttu-id="30c3c-133">选择所有你想要为目标，请单击操作后**确定**来生成 WCF 服务协定。</span><span class="sxs-lookup"><span data-stu-id="30c3c-133">After you select all of the operations that you want to target, click **OK** to generate the WCF service contract.</span></span>  
   

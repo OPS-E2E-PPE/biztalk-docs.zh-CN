@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF LOB 适配器 SDK 配置调度程序启动或适配器启动事务 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF LOB 适配器 SDK 配置调度程序启动或适配器启动事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85b9ef8d-3922-4838-a41a-32db5e005dc0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225757"
 ---
 # <a name="configure-dispatcher-initiated-or-adapter-initiated-transactions-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="07c56-102">使用 WCF LOB 适配器 SDK 配置调度程序启动或适配器启动事务</span><span class="sxs-lookup"><span data-stu-id="07c56-102">Configure dispatcher-initiated or adapter-initiated transactions with the WCF LOB Adapter SDK</span></span>
 ## <a name="inbound-transactions"></a><span data-ttu-id="07c56-103">入站的事务</span><span class="sxs-lookup"><span data-stu-id="07c56-103">Inbound Transactions</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 09/20/2017
   
 |<span data-ttu-id="07c56-108">SupportsTransactedInbound</span><span class="sxs-lookup"><span data-stu-id="07c56-108">SupportsTransactedInbound</span></span>|<span data-ttu-id="07c56-109">事务行为</span><span class="sxs-lookup"><span data-stu-id="07c56-109">Transactional Behavior</span></span>|  
 |-------------------------------|----------------------------|  
-|<span data-ttu-id="07c56-110">True （调度程序启动）</span><span class="sxs-lookup"><span data-stu-id="07c56-110">True (dispatcher-initiated)</span></span>|<span data-ttu-id="07c56-111">-TryReceive 始终将在事务的上下文内调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-111">-   TryReceive will always be called within the context of a transaction.</span></span><br /><span data-ttu-id="07c56-112">的该消息返回给服务实现后，将提交事务。</span><span class="sxs-lookup"><span data-stu-id="07c56-112">-   The transaction will be committed after the message is returned to the service implementation.</span></span><br /><span data-ttu-id="07c56-113">的将创建一个新事务的每个 IInputChannel.Receive 调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-113">-   A new transaction will be created for each IInputChannel.Receive call.</span></span> <span data-ttu-id="07c56-114">事务跨越多个接收依赖于服务主机，并不是适配器开发人员。</span><span class="sxs-lookup"><span data-stu-id="07c56-114">Spanning a transaction across multiple receives is dependent on the service host and not the adapter developer.</span></span> <span data-ttu-id="07c56-115">**注意：**如果主机未在使用 WCF 调度程序 （服务主机），而使用通道级编程，应遵循主机**TransactedReceiveEnabled**的 WCF 绑定的属性，应相应进行所有对 IInputChannel.Receive 在事务中的调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-115">**Note:**  If the host is not using the WCF dispatcher (service host) and is instead using channel level programming, the host should honor the **TransactedReceiveEnabled** property of the WCF binding, and should make all calls to IInputChannel.Receive within a transaction.</span></span> <span data-ttu-id="07c56-116">**注意：**适配器使用调度程序启动事务，并且与 Biztalk Server 一起使用，如果设置`SupportedInboundChannels`属性`SupportedInboundChannels.IInputChannel`以指示的适配器仅支持单向通道。</span><span class="sxs-lookup"><span data-stu-id="07c56-116">**Note:**  If the adapter uses dispatcher-initiated transactions, and is used with Biztalk Server, set the `SupportedInboundChannels` property to `SupportedInboundChannels.IInputChannel` to indicate that the adapter only supports one-way channels.</span></span> <span data-ttu-id="07c56-117">如果未设置，BizTalk Server 将尝试使用双向通道。</span><span class="sxs-lookup"><span data-stu-id="07c56-117">If this is not set, BizTalk Server will attempt to use two-way channels.</span></span>|  
+|<span data-ttu-id="07c56-110">True （调度程序启动）</span><span class="sxs-lookup"><span data-stu-id="07c56-110">True (dispatcher-initiated)</span></span>|<span data-ttu-id="07c56-111">-TryReceive 始终将在事务的上下文内调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-111">-   TryReceive will always be called within the context of a transaction.</span></span><br /><span data-ttu-id="07c56-112">的该消息返回给服务实现后，将提交事务。</span><span class="sxs-lookup"><span data-stu-id="07c56-112">-   The transaction will be committed after the message is returned to the service implementation.</span></span><br /><span data-ttu-id="07c56-113">的将创建一个新事务的每个 IInputChannel.Receive 调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-113">-   A new transaction will be created for each IInputChannel.Receive call.</span></span> <span data-ttu-id="07c56-114">事务跨越多个接收依赖于服务主机，并不是适配器开发人员。</span><span class="sxs-lookup"><span data-stu-id="07c56-114">Spanning a transaction across multiple receives is dependent on the service host and not the adapter developer.</span></span> <span data-ttu-id="07c56-115">**注意：** 如果主机未在使用 WCF 调度程序 （服务主机），而使用通道级编程，应遵循主机**TransactedReceiveEnabled**的 WCF 绑定的属性，应相应进行所有对 IInputChannel.Receive 在事务中的调用。</span><span class="sxs-lookup"><span data-stu-id="07c56-115">**Note:**  If the host is not using the WCF dispatcher (service host) and is instead using channel level programming, the host should honor the **TransactedReceiveEnabled** property of the WCF binding, and should make all calls to IInputChannel.Receive within a transaction.</span></span> <span data-ttu-id="07c56-116">**注意：** 适配器使用调度程序启动事务，并且与 Biztalk Server 一起使用，如果设置`SupportedInboundChannels`属性`SupportedInboundChannels.IInputChannel`以指示的适配器仅支持单向通道。</span><span class="sxs-lookup"><span data-stu-id="07c56-116">**Note:**  If the adapter uses dispatcher-initiated transactions, and is used with Biztalk Server, set the `SupportedInboundChannels` property to `SupportedInboundChannels.IInputChannel` to indicate that the adapter only supports one-way channels.</span></span> <span data-ttu-id="07c56-117">如果未设置，BizTalk Server 将尝试使用双向通道。</span><span class="sxs-lookup"><span data-stu-id="07c56-117">If this is not set, BizTalk Server will attempt to use two-way channels.</span></span>|  
 |<span data-ttu-id="07c56-118">False （适配器启动）</span><span class="sxs-lookup"><span data-stu-id="07c56-118">False (adapter-initiated)</span></span>|<span data-ttu-id="07c56-119">-适配器开发人员必须实现该适配器中的事务逻辑。</span><span class="sxs-lookup"><span data-stu-id="07c56-119">-   The adapter developer must implement transaction logic within the adapter.</span></span><br /><span data-ttu-id="07c56-120">-双向的消息传送 （答复通道） 模型只能处理适配器启动事务。</span><span class="sxs-lookup"><span data-stu-id="07c56-120">-   Adapter-initiated transactions can only work with a two-way messaging (Reply Channel) model.</span></span><br /><span data-ttu-id="07c56-121">-一个事务可以跨多个消息，因为依赖克隆将调度程序创建为每个消息。</span><span class="sxs-lookup"><span data-stu-id="07c56-121">-   One transaction can span multiple messages, since dependent clones will be created for each message by the dispatcher.</span></span>|  
   
 ### <a name="dispatcher-initiated-transactions"></a><span data-ttu-id="07c56-122">调度程序启动事务</span><span class="sxs-lookup"><span data-stu-id="07c56-122">Dispatcher-initiated Transactions</span></span>  

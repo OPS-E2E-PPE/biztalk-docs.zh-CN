@@ -1,14 +1,14 @@
 ---
-title: "步骤 8： 配置参与方之间贸易合作伙伴协议 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 配置参与方之间贸易合作伙伴协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f532f85-3f09-4b60-b7bb-817ee3c79899
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280013"
 ---
 # <a name="step-8-configure-the-trading-partner-agreement-between-the-parties"></a><span data-ttu-id="0395a-102">步骤 8： 配置参与方之间贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="0395a-102">Step 8: Configure the Trading Partner Agreement between the Parties</span></span>
 <span data-ttu-id="0395a-103">![步骤 8 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span><span class="sxs-lookup"><span data-stu-id="0395a-103">![Step 8 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="0395a-132">上**确认**页上，在**交换设置**部分中，单击**997 预期**。</span><span class="sxs-lookup"><span data-stu-id="0395a-132">On the **Acknowledgements** page, under the **Interchange Settings** section, click **997 Expected**.</span></span> <span data-ttu-id="0395a-133">选择此复选框可以在收到 850 交换时提示接收管道生成 997 确认。</span><span class="sxs-lookup"><span data-stu-id="0395a-133">Selecting this check box prompts the receive pipeline to generate a 997 acknowledgment when it receives the 850 interchange..</span></span>  
   
-    3.  <span data-ttu-id="0395a-134">上**验证**下页上**交换设置**部分中，请确保**交换控制编号 （检查重复的 isa13）**选项处于未选中状态。</span><span class="sxs-lookup"><span data-stu-id="0395a-134">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (Check for duplicate ISA13)** option is unchecked.</span></span>  
+    3.  <span data-ttu-id="0395a-134">上**验证**下页上**交换设置**部分中，请确保**交换控制编号 （检查重复的 isa13）** 选项处于未选中状态。</span><span class="sxs-lookup"><span data-stu-id="0395a-134">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (Check for duplicate ISA13)** option is unchecked.</span></span>  
   
         > [!NOTE]
         >  <span data-ttu-id="0395a-135">清除**检查重复的 isa13**属性使您能够接收同一消息的多个实例。</span><span class="sxs-lookup"><span data-stu-id="0395a-135">Clearing the **Check for duplicate ISA13** property enables you to receive multiple instances of the same message.</span></span>  
@@ -101,14 +102,14 @@ ms.lasthandoff: 09/20/2017
   
         |<span data-ttu-id="0395a-167">使用此选项</span><span class="sxs-lookup"><span data-stu-id="0395a-167">Use this</span></span>|<span data-ttu-id="0395a-168">执行的操作</span><span class="sxs-lookup"><span data-stu-id="0395a-168">To do this</span></span>|  
         |--------------|----------------|  
-        |<span data-ttu-id="0395a-169">**Default**</span><span class="sxs-lookup"><span data-stu-id="0395a-169">**Default**</span></span>|<span data-ttu-id="0395a-170">选择中的复选框**默认**列。</span><span class="sxs-lookup"><span data-stu-id="0395a-170">Select the checkbox in the **Default** column.</span></span> <span data-ttu-id="0395a-171">**注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="0395a-171">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
+        |<span data-ttu-id="0395a-169">**Default**</span><span class="sxs-lookup"><span data-stu-id="0395a-169">**Default**</span></span>|<span data-ttu-id="0395a-170">选择中的复选框**默认**列。</span><span class="sxs-lookup"><span data-stu-id="0395a-170">Select the checkbox in the **Default** column.</span></span> <span data-ttu-id="0395a-171">**注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="0395a-171">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
         |<span data-ttu-id="0395a-172">**事务类型**</span><span class="sxs-lookup"><span data-stu-id="0395a-172">**Transaction Type**</span></span>|<span data-ttu-id="0395a-173">选择你的测试消息的消息类型**850-采购订单**。</span><span class="sxs-lookup"><span data-stu-id="0395a-173">Select the message type of your test message, **850 - Purchase Order**.</span></span>|  
         |<span data-ttu-id="0395a-174">**版本/发行版**</span><span class="sxs-lookup"><span data-stu-id="0395a-174">**Version/Release**</span></span>|<span data-ttu-id="0395a-175">输入的 EDI 版本中， **00401**。</span><span class="sxs-lookup"><span data-stu-id="0395a-175">Enter the EDI version, **00401**.</span></span>|  
         |<span data-ttu-id="0395a-176">**目标命名空间**</span><span class="sxs-lookup"><span data-stu-id="0395a-176">**Target namespace**</span></span>|<span data-ttu-id="0395a-177">选择**http://schemas.microsoft.com/Edi/X12**。</span><span class="sxs-lookup"><span data-stu-id="0395a-177">Select **http://schemas.microsoft.com/Edi/X12**.</span></span>|  
-        |<span data-ttu-id="0395a-178">**GS1**</span><span class="sxs-lookup"><span data-stu-id="0395a-178">**GS1**</span></span>|<span data-ttu-id="0395a-179">验证**PO-采购订单 (850)**选择。</span><span class="sxs-lookup"><span data-stu-id="0395a-179">Verify that **PO - Purchase Order (850)** is selected.</span></span>|  
+        |<span data-ttu-id="0395a-178">**GS1**</span><span class="sxs-lookup"><span data-stu-id="0395a-178">**GS1**</span></span>|<span data-ttu-id="0395a-179">验证**PO-采购订单 (850)** 选择。</span><span class="sxs-lookup"><span data-stu-id="0395a-179">Verify that **PO - Purchase Order (850)** is selected.</span></span>|  
         |<span data-ttu-id="0395a-180">**GS2**</span><span class="sxs-lookup"><span data-stu-id="0395a-180">**GS2**</span></span>|<span data-ttu-id="0395a-181">输入**1234567**。</span><span class="sxs-lookup"><span data-stu-id="0395a-181">Enter **1234567**.</span></span><br /><br /> <span data-ttu-id="0395a-182">**发件人应用程序 id。**</span><span class="sxs-lookup"><span data-stu-id="0395a-182">**Sender Application ID.**</span></span>|  
         |<span data-ttu-id="0395a-183">**GS3**</span><span class="sxs-lookup"><span data-stu-id="0395a-183">**GS3**</span></span>|<span data-ttu-id="0395a-184">输入**0000000**。</span><span class="sxs-lookup"><span data-stu-id="0395a-184">Enter **0000000**.</span></span><br /><br /> <span data-ttu-id="0395a-185">**接收方应用程序 id。**</span><span class="sxs-lookup"><span data-stu-id="0395a-185">**Receiver Application ID.**</span></span>|  
-        |<span data-ttu-id="0395a-186">**GS4**</span><span class="sxs-lookup"><span data-stu-id="0395a-186">**GS4**</span></span>|<span data-ttu-id="0395a-187">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="0395a-187">Select **CCYYMMDD**.</span></span> <span data-ttu-id="0395a-188">**注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="0395a-188">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="0395a-189">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="0395a-189">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="0395a-186">**GS4**</span><span class="sxs-lookup"><span data-stu-id="0395a-186">**GS4**</span></span>|<span data-ttu-id="0395a-187">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="0395a-187">Select **CCYYMMDD**.</span></span> <span data-ttu-id="0395a-188">**注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="0395a-188">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="0395a-189">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="0395a-189">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="0395a-190">**GS5**</span><span class="sxs-lookup"><span data-stu-id="0395a-190">**GS5**</span></span>|<span data-ttu-id="0395a-191">选择**HHMM**。</span><span class="sxs-lookup"><span data-stu-id="0395a-191">Select **HHMM**.</span></span>|  
         |<span data-ttu-id="0395a-192">**GS7**</span><span class="sxs-lookup"><span data-stu-id="0395a-192">**GS7**</span></span>|<span data-ttu-id="0395a-193">选择**X 的公认的标准委员会 X12**。</span><span class="sxs-lookup"><span data-stu-id="0395a-193">Select **X - Accredited Standards Committee X12**.</span></span>|  
         |<span data-ttu-id="0395a-194">**GS8**</span><span class="sxs-lookup"><span data-stu-id="0395a-194">**GS8**</span></span>|<span data-ttu-id="0395a-195">验证**00401**已输入。</span><span class="sxs-lookup"><span data-stu-id="0395a-195">Verify that **00401** has been entered.</span></span>|  

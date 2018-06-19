@@ -1,11 +1,11 @@
 ---
-title: "规划消息安全 |Microsoft 文档"
-ms.custom: 
+title: 规划消息安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - planning, security
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - security, planning
 - messages, security
 ms.assetid: c0f93515-a822-425c-9155-270a179d6b61
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264285"
 ---
 # <a name="planning-message-security"></a><span data-ttu-id="771ae-102">规划消息安全性</span><span class="sxs-lookup"><span data-stu-id="771ae-102">Planning Message Security</span></span>
 <span data-ttu-id="771ae-103">根据你的公司中的安全策略，你可能想要考虑下表来确定必须在 BizTalk Server 环境中实施的安全级别中的问题。</span><span class="sxs-lookup"><span data-stu-id="771ae-103">Based on the security policies in your company, you may want to consider the questions in the following table to determine the level of security that you must implement in your BizTalk Server environment.</span></span> <span data-ttu-id="771ae-104">这些问题的答案将确定所需的消息的安全功能。</span><span class="sxs-lookup"><span data-stu-id="771ae-104">The answers to these questions will determine the security features that you need for messaging.</span></span>  

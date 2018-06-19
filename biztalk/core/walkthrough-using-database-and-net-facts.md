@@ -1,14 +1,14 @@
 ---
-title: "演练： 使用数据库和.NET 事实 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用数据库和.NET 事实 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 676d6e46-d9f8-477e-979e-1ac051ad4451
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976043"
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a><span data-ttu-id="ba83e-102">演练： 使用数据库和.NET 事实</span><span class="sxs-lookup"><span data-stu-id="ba83e-102">Walkthrough: Using Database and .NET Facts</span></span>
 <span data-ttu-id="ba83e-103">此演练将介绍使用业务规则编辑器创建使用数据库和 .NET 事实的策略的分步说明。</span><span class="sxs-lookup"><span data-stu-id="ba83e-103">This walkthrough provides step-by-step procedures for using the Business Rule Composer to create a policy that uses database and .NET facts.</span></span>  
@@ -147,9 +148,9 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="ba83e-181">展开**TestDB**，然后展开**PO**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-181">Expand **TestDB**, and then expand **PO**.</span></span>  
   
-6.  <span data-ttu-id="ba83e-182">在事实浏览器窗口中，单击**.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-182">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+6.  <span data-ttu-id="ba83e-182">在事实浏览器窗口中，单击 **.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-182">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
-7.  <span data-ttu-id="ba83e-183">右键单击**。NETAssemblies**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-183">Right-click **.NETAssemblies**, and then click **Browse**.</span></span>  
+7.  <span data-ttu-id="ba83e-183">右键单击 **。NETAssemblies**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-183">Right-click **.NETAssemblies**, and then click **Browse**.</span></span>  
   
 8.  <span data-ttu-id="ba83e-184">选择**POUtility**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-184">Select **POUtility**, and then click **OK**.</span></span>  
   
@@ -169,7 +170,7 @@ ms.lasthandoff: 11/28/2017
   
 16. <span data-ttu-id="ba83e-194">拖动**数量**从事实浏览器窗口中对节点**argument1**如果窗格中。</span><span class="sxs-lookup"><span data-stu-id="ba83e-194">Drag the **Quantity** node from the Facts Explorer window to **argument1** in the IF pane.</span></span>  
   
-17. <span data-ttu-id="ba83e-195">在事实浏览器窗口中，单击**.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-195">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+17. <span data-ttu-id="ba83e-195">在事实浏览器窗口中，单击 **.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-195">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
 18. <span data-ttu-id="ba83e-196">拖动**GetMaxAllowed**从事实浏览器窗口中对节点**argument2**如果窗格中。</span><span class="sxs-lookup"><span data-stu-id="ba83e-196">Drag **GetMaxAllowed** node from the Facts Explorer window to **argument2** in the IF pane.</span></span>  
   
@@ -177,7 +178,7 @@ ms.lasthandoff: 11/28/2017
   
 20. <span data-ttu-id="ba83e-198">拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba83e-198">Drag the **Status** node from the Facts Explorer window to the THEN pane at the bottom right of the Business Rule Composer.</span></span>  
   
-21. <span data-ttu-id="ba83e-199">在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-199">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
+21. <span data-ttu-id="ba83e-199">在 THEN 窗格中，单击**\<输入值\>** 然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-199">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
   
 22. <span data-ttu-id="ba83e-200">在事实浏览器窗口中，右键单击**版本 1.0**中**ProcessPurchaseOrderDbNet**，然后单击**AddNewRule**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-200">In the Facts Explorer window, right-click **Version 1.0** in **ProcessPurchaseOrderDbNet**, and then click **AddNewRule**.</span></span>  
   
@@ -189,7 +190,7 @@ ms.lasthandoff: 11/28/2017
   
 26. <span data-ttu-id="ba83e-205">拖动**数量**从事实浏览器窗口中对节点**argument1**如果窗格中。</span><span class="sxs-lookup"><span data-stu-id="ba83e-205">Drag the **Quantity** node from the Facts Explorer window to **argument1** in the IF pane.</span></span>  
   
-27. <span data-ttu-id="ba83e-206">在事实浏览器窗口中，单击**.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-206">In the Facts Explorer window, click **.NET Classes**.</span></span>  
+27. <span data-ttu-id="ba83e-206">在事实浏览器窗口中，单击 **.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-206">In the Facts Explorer window, click **.NET Classes**.</span></span>  
   
 28. <span data-ttu-id="ba83e-207">拖动**GetMaxAllowed**从事实浏览器窗口中对节点**argument2**如果窗格中。</span><span class="sxs-lookup"><span data-stu-id="ba83e-207">Drag the **GetMaxAllowed** node from the Facts Explorer window to **argument2** in the IF pane.</span></span>  
   
@@ -197,9 +198,9 @@ ms.lasthandoff: 11/28/2017
   
 30. <span data-ttu-id="ba83e-209">拖动**状态**在业务规则编辑器的右下方的 THEN 窗格中的事实数据资源管理器窗口中的节点。</span><span class="sxs-lookup"><span data-stu-id="ba83e-209">Drag the **Status** node from the Facts Explorer window to the THEN pane at the bottom right of the Business Rule Composer.</span></span>  
   
-31. <span data-ttu-id="ba83e-210">在 THEN 窗格中，单击**\<输入值\>**然后键入**拒绝**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-210">In the THEN pane, click **\<Enter a value\>** and then type **Denied**.</span></span>  
+31. <span data-ttu-id="ba83e-210">在 THEN 窗格中，单击**\<输入值\>** 然后键入**拒绝**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-210">In the THEN pane, click **\<Enter a value\>** and then type **Denied**.</span></span>  
   
-32. <span data-ttu-id="ba83e-211">在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-211">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
+32. <span data-ttu-id="ba83e-211">在策略资源管理器窗口中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="ba83e-211">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   
 ### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-business-rule-composer"></a><span data-ttu-id="ba83e-212">使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略</span><span class="sxs-lookup"><span data-stu-id="ba83e-212">To test the ProcessPurchaseOrderDbNet policy by using the Business Rule Composer</span></span>  
   

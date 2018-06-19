@@ -1,14 +1,14 @@
 ---
-title: "程序集和项目安装 Namespace 组件示例 |Microsoft 文档"
-ms.custom: 
+title: 程序集和项目安装 Namespace 组件示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df4a0a73-6b60-4006-ab9a-74354c972507
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290501"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-namespace-component-sample"></a><span data-ttu-id="9c021-102">程序集和项目安装 Namespace 组件示例</span><span class="sxs-lookup"><span data-stu-id="9c021-102">Assemblies and Artifacts Installed by the Namespace Component Sample</span></span>
 <span data-ttu-id="9c021-103">下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]Namespace 组件示例。</span><span class="sxs-lookup"><span data-stu-id="9c021-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace Component sample.</span></span>  

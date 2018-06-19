@@ -1,11 +1,11 @@
 ---
-title: "使用多订单项 |Microsoft 文档"
-ms.custom: 
+title: 使用多订单项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, multiple calls
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - multi-order numbers [JD Edwards OneWorld adapters]
 - adapters [JD Edwards OneWorld adapters], multiple calls
 ms.assetid: 207ea92c-03f7-4117-8414-eb174e659d26
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287253"
 ---
 # <a name="using-multi-order-items"></a><span data-ttu-id="f814f-102">使用多订单项</span><span class="sxs-lookup"><span data-stu-id="f814f-102">Using Multi-Order Items</span></span>
 <span data-ttu-id="f814f-103">由于 JD Edwards OneWorld API 的结构，如果想要在 BizTalk Server 上使用 multi-order 成员，必须在业务流程中创建多个编辑行调用，以将这些行项目添加到业务流程中。</span><span class="sxs-lookup"><span data-stu-id="f814f-103">Due to the structure of the JD Edwards OneWorld API, if you want to use multi-order numbers with BizTalk Server, you must make multiple edit line calls in your orchestration to add those line items in an orchestration.</span></span> <span data-ttu-id="f814f-104">例如，一个 multi-order 项目可能包含带有单个订单编号的标头，以及包括多个项目订单（如 Toy 1EA、Gloves 2EA）的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f814f-104">For example, a multi-order item might contain a header with a single order number, and detail that includes several items orders (like Toy 1EA, Gloves 2EA).</span></span>  

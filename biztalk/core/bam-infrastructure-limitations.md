@@ -1,14 +1,14 @@
 ---
-title: "BAM 基础结构限制 |Microsoft 文档"
-ms.custom: 
+title: BAM 基础结构限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e33d2f6c-8d26-4a76-810e-85d810cfdbee
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005598"
 ---
 # <a name="bam-infrastructure-limitations"></a><span data-ttu-id="f1b5c-102">BAM 基础结构限制</span><span class="sxs-lookup"><span data-stu-id="f1b5c-102">BAM Infrastructure Limitations</span></span>
 <span data-ttu-id="f1b5c-103">BAM 基础结构具有以下设计此版本的 BizTalk Server 的限制：</span><span class="sxs-lookup"><span data-stu-id="f1b5c-103">The BAM infrastructure has the following design limitations for this release of BizTalk Server:</span></span>  

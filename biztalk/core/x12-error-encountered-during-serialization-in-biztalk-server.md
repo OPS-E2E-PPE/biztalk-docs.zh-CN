@@ -1,14 +1,14 @@
 ---
-title: "在序列化期间遇到错误。 X12 功能组具有以下错误 |Microsoft 文档"
-ms.custom: 
+title: 在序列化期间遇到错误。 X12 功能组具有以下错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dad987c3-92f3-4a6b-ba1a-b60f6ea2fbe4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290053"
 ---
 # <a name="error-encountered-during-serialization-the-x12-functional-group-had-the-following-errors"></a><span data-ttu-id="776b2-103">在序列化期间遇到错误。</span><span class="sxs-lookup"><span data-stu-id="776b2-103">Error encountered during serialization.</span></span> <span data-ttu-id="776b2-104">X 12 功能组发生了以下错误</span><span class="sxs-lookup"><span data-stu-id="776b2-104">The X12 functional group had the following errors</span></span>
 ## <a name="details"></a><span data-ttu-id="776b2-105">详细信息</span><span class="sxs-lookup"><span data-stu-id="776b2-105">Details</span></span>  

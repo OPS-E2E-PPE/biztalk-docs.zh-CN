@@ -19,12 +19,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287869"
 ---
 # <a name="value-mapping-flattening-functoid"></a><span data-ttu-id="eb306-102">“值映射(平展)”Functoid</span><span class="sxs-lookup"><span data-stu-id="eb306-102">Value Mapping (Flattening) Functoid</span></span>
 <span data-ttu-id="eb306-103">**值映射 （平展）** functoid，可通过将多个记录转换为单个记录平展输入的实例消息的一部分。</span><span class="sxs-lookup"><span data-stu-id="eb306-103">The **Value Mapping (Flattening)** functoid enables you to flatten a portion of an input instance message by converting multiple records into a single record.</span></span> <span data-ttu-id="eb306-104">在转换 Microsoft Commerce Server 目录时通常执行此操作。</span><span class="sxs-lookup"><span data-stu-id="eb306-104">This is a common operation in converting Microsoft Commerce Server catalogs.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="eb306-105">**值映射 （平展）**不应与组合 functoid**循环**functoid 或**表循环**functoid。</span><span class="sxs-lookup"><span data-stu-id="eb306-105">The **Value Mapping (Flattening)** functoid should not be combined with the **Looping** functoid or the **Table Looping** functoid.</span></span> <span data-ttu-id="eb306-106">如果它们结合使用，这会导致的编译的地图，假定循环依赖关系如下的目标节点没有源**循环**或**表循环**functoid。</span><span class="sxs-lookup"><span data-stu-id="eb306-106">If they are combined, it results in a compiled map that assumes there is no source looping dependency for the target nodes that are below the **Looping** or **Table Looping** functoid.</span></span>  
+>  <span data-ttu-id="eb306-105">**值映射 （平展）** 不应与组合 functoid**循环**functoid 或**表循环**functoid。</span><span class="sxs-lookup"><span data-stu-id="eb306-105">The **Value Mapping (Flattening)** functoid should not be combined with the **Looping** functoid or the **Table Looping** functoid.</span></span> <span data-ttu-id="eb306-106">如果它们结合使用，这会导致的编译的地图，假定循环依赖关系如下的目标节点没有源**循环**或**表循环**functoid。</span><span class="sxs-lookup"><span data-stu-id="eb306-106">If they are combined, it results in a compiled map that assumes there is no source looping dependency for the target nodes that are below the **Looping** or **Table Looping** functoid.</span></span>  
   
  <span data-ttu-id="eb306-107">下面的代码显示了部分目录，其中列出了改型产品，改型产品的每一个特征都记录在单独的记录中。</span><span class="sxs-lookup"><span data-stu-id="eb306-107">The following code shows a portion of a catalog listing product variants with each feature of the variant in a separate record.</span></span>  
   

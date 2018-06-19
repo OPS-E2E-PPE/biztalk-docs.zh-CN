@@ -1,11 +1,11 @@
 ---
-title: "在业务流程管理解决方案中有效地使用 SSO |Microsoft 文档"
-ms.custom: 
+title: 在业务流程管理解决方案中有效地使用 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, process management solutions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - SSO, caching
 - process management solution tutorial, SSO
 ms.assetid: 39fbc42d-caa4-4003-a13b-5cde578eb5e1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288517"
 ---
 # <a name="using-sso-efficiently-in-the-business-process-management-solution"></a><span data-ttu-id="9ae7a-102">在业务流程管理解决方案中有效地使用 SSO</span><span class="sxs-lookup"><span data-stu-id="9ae7a-102">Using SSO Efficiently in the Business Process Management Solution</span></span>
 <span data-ttu-id="9ae7a-103">与面向服务的解决方案类似，业务流程管理解决方案使用企业单一登录 (SSO) 来存储配置值，例如订单处理阶段数。</span><span class="sxs-lookup"><span data-stu-id="9ae7a-103">Like the Service Oriented solution, the Business Process Management solution uses Enterprise Single Sign-On (SSO) to store configuration values such as the number of order processing stages.</span></span> <span data-ttu-id="9ae7a-104">由于只要安装 BizTalk 就会存在密钥存储区，因此该解决方案将使用密钥存储区；SSO 将缓存配置信息以便随时可以使用这些值，并且可以保护诸如数据库连接字符串和密码之类的信息。</span><span class="sxs-lookup"><span data-stu-id="9ae7a-104">It uses the secret store because it is present whenever BizTalk is installed, SSO caches the configuration information so that the values are readily available, and it can protect information such as database connection strings and passwords.</span></span> <span data-ttu-id="9ae7a-105">由于上述这些原因，因此密钥存储区是配置信息的适当位置，即使不将单一登录用于管理指向后端应用程序的连接。</span><span class="sxs-lookup"><span data-stu-id="9ae7a-105">For all of these reasons, the secret store is a good place for the configuration information even if Single Sign-On weren't being used for managing connections to the backend applications.</span></span>  

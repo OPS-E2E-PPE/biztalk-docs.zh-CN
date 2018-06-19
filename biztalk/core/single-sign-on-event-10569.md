@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10569 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10569 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e051a84-51c1-4e63-be55-6278a1d17c5e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269389"
 ---
 # <a name="single-sign-on-event-10569"></a><span data-ttu-id="b8eb3-102">单一登录： 事件 10569</span><span class="sxs-lookup"><span data-stu-id="b8eb3-102">Single Sign-On: Event 10569</span></span>
 ## <a name="details"></a><span data-ttu-id="b8eb3-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="b8eb3-103">Details</span></span>  

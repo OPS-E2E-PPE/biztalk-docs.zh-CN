@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 051bc35f-55e6-4811-9559-b1bb66a570ce
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 53dcd9886bc808f84b112146971a6f9519c404e2
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250929"
 ---
 # <a name="how-to-enable-an-affiliate-application"></a><span data-ttu-id="a9b58-102">如何启用关联应用程序</span><span class="sxs-lookup"><span data-stu-id="a9b58-102">How to Enable an Affiliate Application</span></span>
 <span data-ttu-id="a9b58-103">你可以使用 Mmc 管理单元或**enableapp**命令以启用指定的关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="a9b58-103">You can use the MMC Snap-In or the **enableapp** command to enable the specified affiliate application.</span></span>  

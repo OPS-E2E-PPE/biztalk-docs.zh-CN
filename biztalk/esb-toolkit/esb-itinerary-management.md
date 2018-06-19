@@ -1,14 +1,14 @@
 ---
-title: "ESB 路线管理 |Microsoft 文档"
-ms.custom: 
+title: ESB 路线管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f78240de-34da-4751-aceb-b69d81403124
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294333"
 ---
 # <a name="esb-itinerary-management"></a><span data-ttu-id="a695d-102">ESB 路线管理</span><span class="sxs-lookup"><span data-stu-id="a695d-102">ESB Itinerary Management</span></span>
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]<span data-ttu-id="a695d-103">提供有关 ESB 路线管理两个不同的选项： 集中式分散。</span><span class="sxs-lookup"><span data-stu-id="a695d-103"> offers two distinct options for ESB itinerary management: centralized and decentralized.</span></span> <span data-ttu-id="a695d-104">本部分讨论每个这些选项的好处和风险。</span><span class="sxs-lookup"><span data-stu-id="a695d-104">This section discusses benefits and risks for each of these options.</span></span>  

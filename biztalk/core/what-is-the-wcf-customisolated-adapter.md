@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289693"
 ---
 # <a name="what-is-the-wcf-customisolated-adapter"></a><span data-ttu-id="d5e72-103">WCF-CustomIsolated 适配器概述</span><span class="sxs-lookup"><span data-stu-id="d5e72-103">What Is the WCF-CustomIsolated Adapter?</span></span>
 <span data-ttu-id="d5e72-104">通过 WCF-CustomIsolated 适配器，可将 BizTalk Server 中的 WCF 扩展性组件与独立主机配合使用。</span><span class="sxs-lookup"><span data-stu-id="d5e72-104">The WCF-CustomIsolated adapter is used to enable the use of WCF extensibility components in BizTalk Server with an isolated host.</span></span> <span data-ttu-id="d5e72-105">该适配器为 WCF 框架赋予了完整的灵活性。</span><span class="sxs-lookup"><span data-stu-id="d5e72-105">The adapter enables complete flexibility of the WCF framework.</span></span> <span data-ttu-id="d5e72-106">它允许用户选择并配置接收位置的 WCF 绑定，并指定终结点行为和安全设置。</span><span class="sxs-lookup"><span data-stu-id="d5e72-106">It allows users to select and configure a WCF binding for the receive location, and to specify the endpoint behaviors and security settings.</span></span> <span data-ttu-id="d5e72-107">该适配器仅可由 Internet 信息服务 (IIS) 中承载的传输使用。</span><span class="sxs-lookup"><span data-stu-id="d5e72-107">This adapter can only be used by transports that are hosted in Internet Information Services (IIS).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "创建并发布错误消息 |Microsoft 文档"
-ms.custom: 
+title: 创建并发布错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc7ba1d9-b647-4cba-a3dc-4400505ff51f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290677"
 ---
 # <a name="creating-and-publishing-fault-messages"></a><span data-ttu-id="7e45e-102">创建并发布错误消息</span><span class="sxs-lookup"><span data-stu-id="7e45e-102">Creating and Publishing Fault Messages</span></span>
 <span data-ttu-id="7e45e-103">为了帮助你了解如何使用异常管理框架的功能来管理例外，本部分提供了基于向 ESB 应用程序提交一条消息的一个常见方案。</span><span class="sxs-lookup"><span data-stu-id="7e45e-103">To help you understand how to use the features of the Exception Management Framework to manage exceptions, this section presents a common scenario based on the submission of a message to an ESB application.</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="7e45e-121">ESB 异常机制自动序列化当前**异常**对象写入错误消息。</span><span class="sxs-lookup"><span data-stu-id="7e45e-121">The ESB Exception mechanism automatically serializes the current **Exception** object into the fault message.</span></span>  
   
-6.  <span data-ttu-id="7e45e-122">（可选） 中的异常处理代码可以将当前的业务流程消息添加到 ESB 错误消息使用**AddMessage （faultMsg，messageToAdd）**方法。</span><span class="sxs-lookup"><span data-stu-id="7e45e-122">Optionally, code in the exception handler can add current orchestration messages to the ESB fault message using the **AddMessage(faultMsg, messageToAdd)** method.</span></span> <span data-ttu-id="7e45e-123">此方法序列化和仍然存在消息，包括所有的上下文属性，如下面的代码示例中所示。</span><span class="sxs-lookup"><span data-stu-id="7e45e-123">This method serializes and persists the message, including all the context properties, as shown in the following code example.</span></span>  
+6.  <span data-ttu-id="7e45e-122">（可选） 中的异常处理代码可以将当前的业务流程消息添加到 ESB 错误消息使用**AddMessage （faultMsg，messageToAdd）** 方法。</span><span class="sxs-lookup"><span data-stu-id="7e45e-122">Optionally, code in the exception handler can add current orchestration messages to the ESB fault message using the **AddMessage(faultMsg, messageToAdd)** method.</span></span> <span data-ttu-id="7e45e-123">此方法序列化和仍然存在消息，包括所有的上下文属性，如下面的代码示例中所示。</span><span class="sxs-lookup"><span data-stu-id="7e45e-123">This method serializes and persists the message, including all the context properties, as shown in the following code example.</span></span>  
   
     ```csharp  
     // Add other current orchestration messages to the fault message.  

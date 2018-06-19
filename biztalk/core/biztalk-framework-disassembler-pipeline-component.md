@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Framework 反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Framework 反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, BizTalk Framework Disassembler
 - BizTalk Framework Disassembler [pipeline component]
 ms.assetid: 48d6c530-5c02-4c70-ad11-0ea6c3c808f8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230581"
 ---
 # <a name="biztalk-framework-disassembler-pipeline-component"></a><span data-ttu-id="f0c3b-102">BizTalk Framework 反汇编程序管道组件</span><span class="sxs-lookup"><span data-stu-id="f0c3b-102">BizTalk Framework Disassembler Pipeline Component</span></span>
 <span data-ttu-id="f0c3b-103">BizTalk 框架拆装器管道组件可以解析 XML 数据并确定其是否包含基于 BizTalk 框架的消息传送负载。</span><span class="sxs-lookup"><span data-stu-id="f0c3b-103">The BizTalk Framework Disassembler pipeline component parses XML data and determines whether it contains a BizTalk Framework-based messaging payload.</span></span> <span data-ttu-id="f0c3b-104">该管道组件将保存消息上下文，并使用 BizTalk 框架属性创建需要生成的新的消息上下文。</span><span class="sxs-lookup"><span data-stu-id="f0c3b-104">The pipeline component saves the message context, and a new message context is created with the BizTalk Framework property that needs to be generated.</span></span> <span data-ttu-id="f0c3b-105">此属性用于将消息路由到 BizTalk 框架入站处理程序，因此它可以接收要处理的消息。</span><span class="sxs-lookup"><span data-stu-id="f0c3b-105">This property is used to route the message to the BizTalk Framework inbound handler, so it can receive the message to process.</span></span>  

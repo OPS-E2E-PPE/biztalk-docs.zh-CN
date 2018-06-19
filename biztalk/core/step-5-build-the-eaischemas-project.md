@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 生成 EAISchemas 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 生成 EAISchemas 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c20cd368-7446-4861-8d71-5bc25ce408a2
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278149"
 ---
 # <a name="step-5-build-the-eaischemas-project"></a><span data-ttu-id="24380-102">步骤 5：生成 EAISchemas 项目</span><span class="sxs-lookup"><span data-stu-id="24380-102">Step 5: Build the EAISchemas Project</span></span>
 <span data-ttu-id="24380-103">![步骤 5 5](../core/media/step-5of5.gif "Step_5of5")</span><span class="sxs-lookup"><span data-stu-id="24380-103">![Step 5 of 5](../core/media/step-5of5.gif "Step_5of5")</span></span>  
   
  <span data-ttu-id="24380-104">**完成时间：** 6 だ 牧</span><span class="sxs-lookup"><span data-stu-id="24380-104">**Time to complete:** 6 minutes</span></span>  
   
- <span data-ttu-id="24380-105">**目标：**在此步骤中，您将编译 EAISchemas 项目。</span><span class="sxs-lookup"><span data-stu-id="24380-105">**Objective:** In this step, you compile the EAISchemas project.</span></span>  
+ <span data-ttu-id="24380-105">**目标：** 在此步骤中，您将编译 EAISchemas 项目。</span><span class="sxs-lookup"><span data-stu-id="24380-105">**Objective:** In this step, you compile the EAISchemas project.</span></span>  
   
  <span data-ttu-id="24380-106">**用途：** Microsoft BizTalk Server 和.NET Framework 的最重要方面是，所有的 BizTalk Server 项目; 地图、 架构、 业务流程和管道，可以编译成.NET 程序集。</span><span class="sxs-lookup"><span data-stu-id="24380-106">**Purpose:** The most important aspect of Microsoft BizTalk Server and the .NET Framework is that all BizTalk Server artifacts; maps, schemas, orchestrations, and pipelines, get compiled into .NET assemblies.</span></span> <span data-ttu-id="24380-107">此设计的两个最重要含义是：这些程序集必须具有强名称，为此它们还需遵守 .NET 版本控制规则。</span><span class="sxs-lookup"><span data-stu-id="24380-107">The two most important implications of this design are that these assemblies must have strong names, and because of that, they also follow .NET versioning rules.</span></span> <span data-ttu-id="24380-108">其主要含义是：根据特定版本的其他 .NET 项目或程序集（包括 BizTalk 项目）生成 BizTalk 项目后，该 BizTalk 项目将继续使用该版本，直到根据更高的版本重新生成该 BizTalk 项目。</span><span class="sxs-lookup"><span data-stu-id="24380-108">The main implication of this is that a BizTalk project, once built against a particular version of another .NET project or assembly (including BizTalk projects), continues to use that version until it has been rebuilt against a newer version.</span></span>  
   

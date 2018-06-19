@@ -1,11 +1,11 @@
 ---
-title: "使用断点 |Microsoft 文档"
-ms.custom: 
+title: 使用断点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Orchestration Debugger, breakpoints
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Orchestration Debugger, service options
 - Message Flow view [Orchestration Debugger]
 ms.assetid: aad1a2b0-d705-49cd-85f7-b0ab2e473bcc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289205"
 ---
 # <a name="working-with-breakpoints"></a><span data-ttu-id="11ddb-102">使用断点</span><span class="sxs-lookup"><span data-stu-id="11ddb-102">Working with Breakpoints</span></span>
 <span data-ttu-id="11ddb-103">通过附加到挂起的业务流程或在类中设置断点，可以设置断点。</span><span class="sxs-lookup"><span data-stu-id="11ddb-103">You can set breakpoints by attaching to a suspended orchestration, or by setting a breakpoint on a class.</span></span>  

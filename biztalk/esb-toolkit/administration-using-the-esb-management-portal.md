@@ -1,14 +1,14 @@
 ---
-title: "使用 ESB 管理门户管理 |Microsoft 文档"
-ms.custom: 
+title: 使用 ESB 管理门户管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 478d1dcc-e9b2-443b-be98-5b7545322401
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290269"
 ---
 # <a name="administration-using-the-esb-management-portal"></a><span data-ttu-id="86755-102">使用 ESB 管理门户管理</span><span class="sxs-lookup"><span data-stu-id="86755-102">Administration Using the ESB Management Portal</span></span>
 <span data-ttu-id="86755-103">ESB 管理门户中，作为的一部分包括[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，是演示如何使用度量值和存在可能的匹配项用于扩展 BizTalk ESB 工具包的示例站点。</span><span class="sxs-lookup"><span data-stu-id="86755-103">The ESB Management Portal, included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], is a sample site that demonstrates the use of metrics and the possibilities that exist for extending the BizTalk ESB Toolkit.</span></span> <span data-ttu-id="86755-104">门户提供了可以从中生成自定义门户网站的起点。</span><span class="sxs-lookup"><span data-stu-id="86755-104">The portal provides a starting point from which you can build your own customized portal.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 将端口添加到业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 将端口添加到业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 245df16e-d327-4c79-be85-004134d5ea6f
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279829"
 ---
 # <a name="step-3-add-ports-to-the-orchestration"></a><span data-ttu-id="ba5ea-102">步骤 3：为业务流程添加端口</span><span class="sxs-lookup"><span data-stu-id="ba5ea-102">Step 3: Add Ports to the Orchestration</span></span>
 <span data-ttu-id="ba5ea-103">![步骤 3 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="ba5ea-103">![Step 3 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="ba5ea-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="ba5ea-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="ba5ea-105">**目标：**在此步骤中，你将三个端口添加到 eai 进程业务流程和配置它们。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-105">**Objective:** In this step, you add three ports to the EAIProcess orchestration and configure them.</span></span>  
+ <span data-ttu-id="ba5ea-105">**目标：** 在此步骤中，你将三个端口添加到 eai 进程业务流程和配置它们。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-105">**Objective:** In this step, you add three ports to the EAIProcess orchestration and configure them.</span></span>  
   
- <span data-ttu-id="ba5ea-106">**用途：**端口指定如何将消息发送到您的业务流程和其他业务流程从接收消息。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-106">**Purpose:** Ports specify how your orchestration will send messages to and receive messages from other business processes.</span></span> <span data-ttu-id="ba5ea-107">每个端口都具有类型、方向和绑定，它们共同确定通信方向、通信模式、消息的源位置或目标位置、以及进行通信的方式。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-107">Each port has a type, a direction, and a binding, which together determine the direction of communication, the pattern of communication, the location to or from which the message is sent or received, and how the communication takes place.</span></span> <span data-ttu-id="ba5ea-108">您在此步骤中创建并配置的三个端口可实现以下角色：</span><span class="sxs-lookup"><span data-stu-id="ba5ea-108">The three ports you create and configure in this step fulfill the following roles:</span></span>  
+ <span data-ttu-id="ba5ea-106">**用途：** 端口指定如何将消息发送到您的业务流程和其他业务流程从接收消息。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-106">**Purpose:** Ports specify how your orchestration will send messages to and receive messages from other business processes.</span></span> <span data-ttu-id="ba5ea-107">每个端口都具有类型、方向和绑定，它们共同确定通信方向、通信模式、消息的源位置或目标位置、以及进行通信的方式。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-107">Each port has a type, a direction, and a binding, which together determine the direction of communication, the pattern of communication, the location to or from which the message is sent or received, and how the communication takes place.</span></span> <span data-ttu-id="ba5ea-108">您在此步骤中创建并配置的三个端口可实现以下角色：</span><span class="sxs-lookup"><span data-stu-id="ba5ea-108">The three ports you create and configure in this step fulfill the following roles:</span></span>  
   
 -   <span data-ttu-id="ba5ea-109">**ReceiveRequestPort**从仓库接收库存补货请求消息。</span><span class="sxs-lookup"><span data-stu-id="ba5ea-109">**ReceiveRequestPort** receives inventory replenishment request messages from the warehouse.</span></span>  
   

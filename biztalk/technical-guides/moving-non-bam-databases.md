@@ -1,14 +1,14 @@
 ---
-title: "移动非 BAM 数据库 |Microsoft 文档"
-ms.custom: 
+title: 移动非 BAM 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e548e72-db0e-4f07-a07a-8d210425dfa5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298221"
 ---
 # <a name="moving-non-bam-databases"></a><span data-ttu-id="4ff79-102">移动非 BAM 数据库</span><span class="sxs-lookup"><span data-stu-id="4ff79-102">Moving Non-BAM Databases</span></span>
 <span data-ttu-id="4ff79-103">此过程可用于将主 BizTalk Server 数据库移到另一台服务器。</span><span class="sxs-lookup"><span data-stu-id="4ff79-103">You can use this procedure to move the primary BizTalk Server databases to another server.</span></span> <span data-ttu-id="4ff79-104">此相同的基本过程还可用来将 BizTalk Server 数据库从本地 SQL Server 移到远程 SQL Server 或 SQL Server 群集。</span><span class="sxs-lookup"><span data-stu-id="4ff79-104">This same basic procedure can also be used to move the BizTalk Server databases from a local SQL Server to a remote SQL Server or to a SQL Server cluster.</span></span> <span data-ttu-id="4ff79-105">本部分介绍如何将移动[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不相关的 BAM 数据库。</span><span class="sxs-lookup"><span data-stu-id="4ff79-105">This section describes how to move the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases that are not BAM related.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 配置 BizTalk Server 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 配置 BizTalk Server 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d60e6a82-51af-41e5-a755-5f337492ba2f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280181"
 ---
 # <a name="step-4-configure-the-biztalk-server-solution"></a><span data-ttu-id="89f18-102">步骤 4： 配置 BizTalk Server 解决方案</span><span class="sxs-lookup"><span data-stu-id="89f18-102">Step 4: Configure the BizTalk Server Solution</span></span>
 <span data-ttu-id="89f18-103">在上一步中，你创建并部署了一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序，以将 Salesforce 通知接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，并将详细信息插入到本地 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="89f18-103">In the previous step, you created and deployed a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application to receive Salesforce notification into [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and insert the details into an on-premise SQL Server database.</span></span> <span data-ttu-id="89f18-104">在本步骤中，我们将在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中配置应用程序。</span><span class="sxs-lookup"><span data-stu-id="89f18-104">In this step, we’ll configure the application in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="89f18-105">配置应用程序主要涉及创建对应于我们在业务流程中创建的逻辑端口的物理端口。</span><span class="sxs-lookup"><span data-stu-id="89f18-105">Configuring the application primarily involves creating physical ports corresponding to the logical ports we created in the orchestration.</span></span> <span data-ttu-id="89f18-106">它还涉及将物理端口绑定到逻辑端口。</span><span class="sxs-lookup"><span data-stu-id="89f18-106">It also involves binding the physical port to the logical ports.</span></span> <span data-ttu-id="89f18-107">我们将执行以下步骤来配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。</span><span class="sxs-lookup"><span data-stu-id="89f18-107">We’ll perform the following steps to configure the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application:</span></span>  
@@ -97,9 +98,9 @@ ms.lasthandoff: 09/20/2017
             https://na15.salesforce.com/services/data/v24.0/query?q=<query_string>  
             ```  
   
-             <span data-ttu-id="89f18-176">我们已有的 Salesforce REST 终结点的一部分**地址 (URI)**字段。</span><span class="sxs-lookup"><span data-stu-id="89f18-176">We already have the Salesforce REST endpoint as part of the **Address (URI)** field.</span></span> <span data-ttu-id="89f18-177">因此，作为的一部分**HTTP 方法和 URL 映射**属性，指定使用 GET 方法和追加**{VAR}**作为变量。</span><span class="sxs-lookup"><span data-stu-id="89f18-177">So, as part of **HTTP Method and URL Mapping** property, we specify using the GET method and appending the **{VAR}** as a variable.</span></span>  
+             <span data-ttu-id="89f18-176">我们已有的 Salesforce REST 终结点的一部分**地址 (URI)** 字段。</span><span class="sxs-lookup"><span data-stu-id="89f18-176">We already have the Salesforce REST endpoint as part of the **Address (URI)** field.</span></span> <span data-ttu-id="89f18-177">因此，作为的一部分**HTTP 方法和 URL 映射**属性，指定使用 GET 方法和追加 **{VAR}** 作为变量。</span><span class="sxs-lookup"><span data-stu-id="89f18-177">So, as part of **HTTP Method and URL Mapping** property, we specify using the GET method and appending the **{VAR}** as a variable.</span></span>  
   
-        -   <span data-ttu-id="89f18-178">在**变量映射**框中，单击**编辑**。</span><span class="sxs-lookup"><span data-stu-id="89f18-178">In the **Variable Mapping** box, click **Edit**.</span></span> <span data-ttu-id="89f18-179">在此框中，你指定如何为值**{VAR}**变量在运行时将推导。</span><span class="sxs-lookup"><span data-stu-id="89f18-179">In this box you specify how the value for the **{VAR}** variable is deduced at runtime.</span></span>  
+        -   <span data-ttu-id="89f18-178">在**变量映射**框中，单击**编辑**。</span><span class="sxs-lookup"><span data-stu-id="89f18-178">In the **Variable Mapping** box, click **Edit**.</span></span> <span data-ttu-id="89f18-179">在此框中，你指定如何为值 **{VAR}** 变量在运行时将推导。</span><span class="sxs-lookup"><span data-stu-id="89f18-179">In this box you specify how the value for the **{VAR}** variable is deduced at runtime.</span></span>  
   
              <span data-ttu-id="89f18-180">在[步骤 3b： 从 Salesforce 使用 WCF WebHttp 适配器检索机会详细信息](../core/step-3b-retrieve-opportunities-from-salesforce-using-the-wcf-webhttp-adapter.md)，我们已升级的查询属性，这将导致中创建**PropertySchema.xsd**。</span><span class="sxs-lookup"><span data-stu-id="89f18-180">In [Step 3b: Retrieve Opportunity Details from Salesforce using the WCF-WebHttp Adapter](../core/step-3b-retrieve-opportunities-from-salesforce-using-the-wcf-webhttp-adapter.md), we had promoted the Query property, which resulted in creating a **PropertySchema.xsd**.</span></span> <span data-ttu-id="89f18-181">我们将使用**查询**该架构，通过将该元素映射到 URL 中的 {VAR} 变量传递的查询字符串中的元素。</span><span class="sxs-lookup"><span data-stu-id="89f18-181">We’ll use the **Query** element in that schema to pass the query string by mapping that element to the {VAR} variable in the URL.</span></span>  
   

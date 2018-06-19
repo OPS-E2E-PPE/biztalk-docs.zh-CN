@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b669c06c5c474d5ce134b593dcecd110c6e8d572
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015716"
 ---
 # <a name="deployment-limitations"></a><span data-ttu-id="a8d66-101">部署限制</span><span class="sxs-lookup"><span data-stu-id="a8d66-101">Deployment Limitations</span></span>
 <span data-ttu-id="a8d66-102">传输适配器密码存储为星号 (\*\*\*\*\*\*) 在绑定文件中，将导出由 BizTalk Server 中，并且它将传递给在同一个管理组件格式。</span><span class="sxs-lookup"><span data-stu-id="a8d66-102">The Transport Adapter password is stored as stars (\*\*\*\*\*\*) in the binding file that is exported by BizTalk Server, and it passes to the management component in the same format.</span></span> <span data-ttu-id="a8d66-103">在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。</span><span class="sxs-lookup"><span data-stu-id="a8d66-103">Edit the binding file before importing by replacing the stars with some junk value (that is, not the correct password).</span></span> <span data-ttu-id="a8d66-104">输入正确的密码使用**传输属性**在 BizTalk Server 管理控制台中导入的绑定文件后的页。</span><span class="sxs-lookup"><span data-stu-id="a8d66-104">Enter the correct password using the **Transport Properties** page in the BizTalk Server Administration Console after importing the binding file.</span></span>  

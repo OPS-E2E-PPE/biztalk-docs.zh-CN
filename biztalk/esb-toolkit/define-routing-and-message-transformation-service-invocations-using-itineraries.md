@@ -1,14 +1,14 @@
 ---
-title: "定义路由和消息转换服务调用使用路线 |Microsoft 文档"
-ms.custom: 
+title: 定义路由和消息转换服务调用使用路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e6f2448e-a5a7-496c-86d3-47f12e6f1251
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294277"
 ---
 # <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a><span data-ttu-id="34222-102">定义路由和转换消息的服务调用使用路线</span><span class="sxs-lookup"><span data-stu-id="34222-102">Defining Routing and Message Transformation Service Invocations Using Itineraries</span></span>
 <span data-ttu-id="34222-103">在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="34222-103">In this use case, a message submitted for processing contains an itinerary SOAP header that describes the list of services to execute and their resolution requirements.</span></span> <span data-ttu-id="34222-104">具体而言，转换和路由服务定义，每个 （可选） 需要通过通用描述、 发现和集成 (UDDI)、 业务规则引擎策略、 XML 路径语言 (XPath) 或静态查找解决方法。</span><span class="sxs-lookup"><span data-stu-id="34222-104">Specifically, a transformation and routing service are defined, each optionally requiring resolution through a Universal Description, Discovery, and Integration (UDDI), Business Rules Engine Policy, XML Path Language (XPath), or STATIC lookup.</span></span> <span data-ttu-id="34222-105">可以通过在发布消息时将其他服务添加到路线扩展此用例。</span><span class="sxs-lookup"><span data-stu-id="34222-105">This use case can be extended by adding other services to the itinerary at the time of message publication.</span></span>  

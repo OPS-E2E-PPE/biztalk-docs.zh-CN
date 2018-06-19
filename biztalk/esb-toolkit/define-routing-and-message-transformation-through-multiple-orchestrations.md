@@ -1,14 +1,14 @@
 ---
-title: "定义路由和消息通过使用路线的多个业务流程的转换 |Microsoft 文档"
-ms.custom: 
+title: 定义路由和消息通过使用路线的多个业务流程的转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63141b83-798e-40d0-908d-6b7649923e69
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294013"
 ---
 # <a name="defining-routing-and-message-transformation-through-multiple-orchestrations-using-itineraries"></a><span data-ttu-id="8410d-102">定义路由和通过使用路线的多个业务流程的消息转换</span><span class="sxs-lookup"><span data-stu-id="8410d-102">Defining Routing and Message Transformation Through Multiple Orchestrations Using Itineraries</span></span>
 <span data-ttu-id="8410d-103">在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="8410d-103">In this use case, a message submitted for processing contains an itinerary SOAP header that describes the list of services to execute and their resolution requirements.</span></span> <span data-ttu-id="8410d-104">路线指定消息将传递在处理周期内的一个或多个 Microsoft BizTalk Server 业务流程。</span><span class="sxs-lookup"><span data-stu-id="8410d-104">The itinerary specifies one or more Microsoft BizTalk Server orchestrations through which the message will pass during the processing cycle.</span></span> <span data-ttu-id="8410d-105">（可选） 路线可以包含用来确定终结点或消息的转换要求的动态路由信息。</span><span class="sxs-lookup"><span data-stu-id="8410d-105">Optionally, the itinerary can contain dynamic routing information used to determine endpoints or transformation requirements for the message.</span></span> <span data-ttu-id="8410d-106">图 1 说明的过程的示意图。</span><span class="sxs-lookup"><span data-stu-id="8410d-106">Figure 1 illustrates a schematic view of the process.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "错误设置页 |Microsoft 文档"
-ms.custom: 
+title: 错误设置页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67f10b8b-9a32-40ca-9ce4-0b69e159c36c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294141"
 ---
 # <a name="fault-settings-page"></a><span data-ttu-id="338a3-102">“错误设置”页</span><span class="sxs-lookup"><span data-stu-id="338a3-102">Fault Settings Page</span></span>
 <span data-ttu-id="338a3-103">图 1 显示的错误设置页。</span><span class="sxs-lookup"><span data-stu-id="338a3-103">Figure 1 shows the Fault Settings page.</span></span> <span data-ttu-id="338a3-104">此页显示了一系列的可修改的管理设置。</span><span class="sxs-lookup"><span data-stu-id="338a3-104">This page displays a range of administrative settings that you can modify.</span></span>  

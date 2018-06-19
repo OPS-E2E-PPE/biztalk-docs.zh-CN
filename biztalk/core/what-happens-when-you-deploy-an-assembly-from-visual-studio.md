@@ -1,14 +1,14 @@
 ---
-title: "部署来自 Visual Studio 的程序集时，会发生什么情况 |Microsoft 文档"
-ms.custom: 
+title: 部署来自 Visual Studio 的程序集时，会发生什么情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 421df529-1ddb-4f49-a40a-c06f2a434ffc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290165"
 ---
 # <a name="what-happens-when-you-deploy-an-assembly-from-visual-studio"></a><span data-ttu-id="01b42-102">部署来自 Visual Studio 的程序集时，会发生什么情况</span><span class="sxs-lookup"><span data-stu-id="01b42-102">What Happens When You Deploy an Assembly from Visual Studio</span></span>
 <span data-ttu-id="01b42-103">本主题介绍将程序集从 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 部署到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 BizTalk 应用程序时所发生的情况。</span><span class="sxs-lookup"><span data-stu-id="01b42-103">This topic describes what happens when you deploy assemblies from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] into a BizTalk application on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

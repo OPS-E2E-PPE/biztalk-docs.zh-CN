@@ -1,14 +1,14 @@
 ---
-title: "静态的设计时适配器配置 |Microsoft 文档"
-ms.custom: 
+title: 静态的设计时适配器配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 332723a4-e39d-43f5-af4d-bf9f56496535
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278893"
 ---
 # <a name="static-design-time-adapter-configuration"></a><span data-ttu-id="97e2b-102">静态的设计时适配器配置</span><span class="sxs-lookup"><span data-stu-id="97e2b-102">Static Design-Time Adapter Configuration</span></span>
 <span data-ttu-id="97e2b-103">适配器的设计时部分负责定义所有可用属性并且验证用户输入。</span><span class="sxs-lookup"><span data-stu-id="97e2b-103">The design-time part of the adapter is responsible for defining all the available properties and for validating user input.</span></span> <span data-ttu-id="97e2b-104">在静态设计时配置中，适配器使用默认用户界面 (UI) 显示和编辑其属性。</span><span class="sxs-lookup"><span data-stu-id="97e2b-104">In a static design-time configuration the adapter uses the default user interface (UI) for displaying and editing its properties.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "协议在 EDI 处理过程中的角色 |Microsoft 文档"
-ms.custom: 
+title: 协议在 EDI 处理过程中的角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81b0449-6656-49f7-a781-5fd60031b3d5
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279933"
 ---
 # <a name="the-role-of-agreements-in-edi-processing"></a><span data-ttu-id="3947c-102">协议在 EDI 处理中的角色</span><span class="sxs-lookup"><span data-stu-id="3947c-102">The Role of Agreements in EDI Processing</span></span>
 <span data-ttu-id="3947c-103">组织使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来从一个或多个贸易合作伙伴接收 EDI 消息，以及向其发送 EDI 消息。</span><span class="sxs-lookup"><span data-stu-id="3947c-103">An organization uses [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to receive EDI messages from, and send EDI messages to, one or more trading partners.</span></span> <span data-ttu-id="3947c-104">然后贸易合作伙伴定义作为组织内业务实体的业务配置文件。</span><span class="sxs-lookup"><span data-stu-id="3947c-104">The trading partners, in turn define business profiles that are business entities within an organization.</span></span> <span data-ttu-id="3947c-105">如何将业务配置文件交换消息定义为两个业务配置文件之间的贸易合作伙伴协议的一部分。</span><span class="sxs-lookup"><span data-stu-id="3947c-105">How business profiles exchange messages is defined as part of trading partner agreements between two business profiles.</span></span> <span data-ttu-id="3947c-106">有关详细信息，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。</span><span class="sxs-lookup"><span data-stu-id="3947c-106">For more information, see [Building Blocks of a Trading Partner Management Solution](../core/building-blocks-of-a-trading-partner-management-solution.md).</span></span>  

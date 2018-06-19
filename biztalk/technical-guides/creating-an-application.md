@@ -1,14 +1,14 @@
 ---
-title: "创建应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b6e325c-a86f-419d-9a27-864f4f035507
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298125"
 ---
 # <a name="creating-an-application"></a><span data-ttu-id="70565-102">创建应用程序</span><span class="sxs-lookup"><span data-stu-id="70565-102">Creating an Application</span></span>
 <span data-ttu-id="70565-103">有三种方法创建 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="70565-103">There are three ways to create a BizTalk application.</span></span> <span data-ttu-id="70565-104">也有多种选项可使命名、 引用，以及将项目部署到应用程序。</span><span class="sxs-lookup"><span data-stu-id="70565-104">There are also several options for naming, referencing, and deploying artifacts to applications.</span></span>  

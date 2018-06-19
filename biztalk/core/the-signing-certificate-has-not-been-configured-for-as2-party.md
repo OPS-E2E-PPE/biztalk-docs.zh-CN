@@ -1,14 +1,14 @@
 ---
-title: "尚未配置 AS2 方的签名证书 |Microsoft 文档"
-ms.custom: 
+title: 尚未配置 AS2 方的签名证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82928a39-3acf-447b-a0e8-f7c25b6f38dc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279645"
 ---
 # <a name="the-signing-certificate-has-not-been-configured-for-as2-party"></a><span data-ttu-id="6cc75-102">尚未为 AS2 参与方配置签名证书</span><span class="sxs-lookup"><span data-stu-id="6cc75-102">The Signing Certificate has not been configured for AS2 party</span></span>
 ## <a name="details"></a><span data-ttu-id="6cc75-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="6cc75-103">Details</span></span>  

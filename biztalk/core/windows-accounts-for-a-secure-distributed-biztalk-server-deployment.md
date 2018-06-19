@@ -1,11 +1,11 @@
 ---
-title: "Windows 帐户对于安全的分布式的 BizTalk 服务器部署 |Microsoft 文档"
-ms.custom: 
+title: Windows 帐户对于安全的分布式的 BizTalk 服务器部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, Windows groups
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, administrators
 - architecture, large distributions
 ms.assetid: 2a0893ef-8bfb-481b-b024-7f7d6e2a6f09
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974955"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a><span data-ttu-id="dcde4-102">Windows 帐户，可以一种安全的分布式 BizTalk Server 部署</span><span class="sxs-lookup"><span data-stu-id="dcde4-102">Windows Accounts for a Secure Distributed BizTalk Server Deployment</span></span>
 <span data-ttu-id="dcde4-103">有关 BizTalk Server 部署的系统体系结构的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。</span><span class="sxs-lookup"><span data-stu-id="dcde4-103">For complete information about the system architecture for BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="dcde4-151">BizTalk administrator</span><span class="sxs-lookup"><span data-stu-id="dcde4-151">BizTalk administrator</span></span>|<span data-ttu-id="dcde4-152">用户</span><span class="sxs-lookup"><span data-stu-id="dcde4-152">User</span></span>|<span data-ttu-id="dcde4-153">BizTalk Administrators</span><span class="sxs-lookup"><span data-stu-id="dcde4-153">BizTalk Administrators</span></span><br /><br /> <span data-ttu-id="dcde4-154">SSO Affiliate Administrators</span><span class="sxs-lookup"><span data-stu-id="dcde4-154">SSO Affiliate Administrators</span></span>|  
 |<span data-ttu-id="dcde4-155">BizTalk operator</span><span class="sxs-lookup"><span data-stu-id="dcde4-155">BizTalk operator</span></span>|<span data-ttu-id="dcde4-156">用户</span><span class="sxs-lookup"><span data-stu-id="dcde4-156">User</span></span>|<span data-ttu-id="dcde4-157">BizTalk Operators</span><span class="sxs-lookup"><span data-stu-id="dcde4-157">BizTalk Operators</span></span>|  
 |<span data-ttu-id="dcde4-158">BizTalk Processing 1</span><span class="sxs-lookup"><span data-stu-id="dcde4-158">BizTalk Processing 1</span></span>|<span data-ttu-id="dcde4-159">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-159">Service</span></span>|<span data-ttu-id="dcde4-160">BizTalk Processing Host Users 1</span><span class="sxs-lookup"><span data-stu-id="dcde4-160">BizTalk Processing Host Users 1</span></span>|  
-|<span data-ttu-id="dcde4-161">BizTalk 处理 2**注意：**可以在你的环境中对于每个处理主机创建多个帐户。</span><span class="sxs-lookup"><span data-stu-id="dcde4-161">BizTalk Processing 2 **Note:**  You can create multiple accounts for each processing host in your environment.</span></span>|<span data-ttu-id="dcde4-162">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-162">Service</span></span>|<span data-ttu-id="dcde4-163">BizTalk Processing Host Users 1</span><span class="sxs-lookup"><span data-stu-id="dcde4-163">BizTalk Processing Host Users 1</span></span>|  
+|<span data-ttu-id="dcde4-161">BizTalk 处理 2**注意：** 可以在你的环境中对于每个处理主机创建多个帐户。</span><span class="sxs-lookup"><span data-stu-id="dcde4-161">BizTalk Processing 2 **Note:**  You can create multiple accounts for each processing host in your environment.</span></span>|<span data-ttu-id="dcde4-162">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-162">Service</span></span>|<span data-ttu-id="dcde4-163">BizTalk Processing Host Users 1</span><span class="sxs-lookup"><span data-stu-id="dcde4-163">BizTalk Processing Host Users 1</span></span>|  
 |<span data-ttu-id="dcde4-164">BizTalk Tracking</span><span class="sxs-lookup"><span data-stu-id="dcde4-164">BizTalk Tracking</span></span>|<span data-ttu-id="dcde4-165">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-165">Service</span></span>|<span data-ttu-id="dcde4-166">BizTalk Tracking Host Users</span><span class="sxs-lookup"><span data-stu-id="dcde4-166">BizTalk Tracking Host Users</span></span>|  
 |<span data-ttu-id="dcde4-167">SOAP 适配器</span><span class="sxs-lookup"><span data-stu-id="dcde4-167">SOAP adapter</span></span>|<span data-ttu-id="dcde4-168">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-168">Service</span></span>|<span data-ttu-id="dcde4-169">BizTalk SOAP Users </span><span class="sxs-lookup"><span data-stu-id="dcde4-169">BizTalk SOAP Users</span></span>|  
 |<span data-ttu-id="dcde4-170">HTTP 适配器</span><span class="sxs-lookup"><span data-stu-id="dcde4-170">HTTP adapter</span></span>|<span data-ttu-id="dcde4-171">服务</span><span class="sxs-lookup"><span data-stu-id="dcde4-171">Service</span></span>|<span data-ttu-id="dcde4-172">BizTalk HTTP Users</span><span class="sxs-lookup"><span data-stu-id="dcde4-172">BizTalk HTTP Users</span></span>|  

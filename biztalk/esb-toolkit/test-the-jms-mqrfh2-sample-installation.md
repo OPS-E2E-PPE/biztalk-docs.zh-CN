@@ -1,14 +1,14 @@
 ---
-title: "测试 JMS MQRFH2 示例安装 |Microsoft 文档"
-ms.custom: 
+title: 测试 JMS MQRFH2 示例安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 965e985d-f0fe-4b0f-b01b-cf98d1e2f6a4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294613"
 ---
 # <a name="test-the-jms-mqrfh2-sample-installation"></a><span data-ttu-id="479e8-102">测试 JMS MQRFH2 示例安装</span><span class="sxs-lookup"><span data-stu-id="479e8-102">Test the JMS MQRFH2 Sample Installation</span></span>
 <span data-ttu-id="479e8-103">你可以检查成功地安装和操作的[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]JMS MQRFH2 示例之前执行任何示例方案。</span><span class="sxs-lookup"><span data-stu-id="479e8-103">You can check for successful installation and operation of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 sample before you execute any of the sample scenarios.</span></span>  

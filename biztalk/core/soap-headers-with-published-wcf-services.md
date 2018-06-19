@@ -1,18 +1,18 @@
 ---
-title: "与已发布的 WCF 服务的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 与已发布的 WCF 服务的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publishing, SOAP headers [WCF services]
 - SOAP headers, WCF services
 - WCF services, SOAP headers
 ms.assetid: 5564a57e-e241-4595-a959-4289c8502410
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975683"
 ---
 # <a name="soap-headers-with-published-wcf-services"></a><span data-ttu-id="6f2cc-102">SOAP 标头与发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="6f2cc-102">SOAP Headers with Published WCF Services</span></span>
 <span data-ttu-id="6f2cc-103">WCF 接收适配器可以将所有 SOAP 标头值都复制到入站消息中**InboundHeaders**属性，也可以编写或提升为 BizTalk 消息上下文的指定的值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-103">The WCF receive adapters can copy all the SOAP header values in the inbound messages to the **InboundHeaders** property, or they can write or promote specified values to the BizTalk message context.</span></span> <span data-ttu-id="6f2cc-104">这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-104">The adapters can work with both custom SOAP headers and standard SOAP headers that the WCF infrastructure uses, such as WS-Addressing, WS-Security, and WS-AtomicTransaction.</span></span> <span data-ttu-id="6f2cc-105">**InboundHeaders**上下文属性是目标命名空间中**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含在 soap 的字符串表示形式入站消息中的标头值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-105">The **InboundHeaders** context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the SOAP header values in inbound messages.</span></span>  

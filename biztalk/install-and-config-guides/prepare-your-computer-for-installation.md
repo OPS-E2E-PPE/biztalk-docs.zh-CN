@@ -1,14 +1,14 @@
 ---
-title: "准备计算机以安装 |Microsoft 文档"
-ms.custom: 
+title: 准备计算机以安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 03/15/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53df7a2f-638b-4921-a97f-736760248526
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710456"
 ---
 # <a name="prepare-your-computer-for-installation"></a><span data-ttu-id="1b000-102">准备计算机以进行安装</span><span class="sxs-lookup"><span data-stu-id="1b000-102">Prepare Your Computer for Installation</span></span>
 <span data-ttu-id="1b000-103">本主题将介绍如何通过安装和配置所有必备软件，然后再创建帐户并设置权限来准备你的计算机。</span><span class="sxs-lookup"><span data-stu-id="1b000-103">This topic lists the steps to prepare your computer by installing and configuring all software prerequisites, and then creating accounts and setting permissions.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 02/28/2018
 
 <span data-ttu-id="1b000-133">同时还应考虑下列事项：</span><span class="sxs-lookup"><span data-stu-id="1b000-133">Also consider the following:</span></span>  
   
-- <span data-ttu-id="1b000-134">**.Net framework 3.5 功能**:.NET Framework 4.5 和.NET Framework 3.5 可以用于开发.Net 应用程序涉及 BizTalk 适配器包。</span><span class="sxs-lookup"><span data-stu-id="1b000-134">**.Net Framework 3.5 Features**: .NET Framework 4.5 and .NET Framework 3.5 can be used to develop .Net applications involving the BizTalk Adapter Pack.</span></span> <span data-ttu-id="1b000-135">通常情况下， **.NET Framework 4.5 功能**已安装。</span><span class="sxs-lookup"><span data-stu-id="1b000-135">Typically, **.NET Framework 4.5 Features** is already installed.</span></span> <span data-ttu-id="1b000-136">如果你将使用.NET Framework 3.5 然后在此计算机上创建应用程序**.Net Framework 3.5 功能**也可以安装。</span><span class="sxs-lookup"><span data-stu-id="1b000-136">If you will use .NET Framework 3.5 to create applications on this computer, then **.Net Framework 3.5 Features** can also be installed.</span></span>  
+- <span data-ttu-id="1b000-134">**.Net framework 3.5 功能**:.NET Framework 4.5 和.NET Framework 3.5 可以用于开发.Net 应用程序涉及 BizTalk 适配器包。</span><span class="sxs-lookup"><span data-stu-id="1b000-134">**.Net Framework 3.5 Features**: .NET Framework 4.5 and .NET Framework 3.5 can be used to develop .Net applications involving the BizTalk Adapter Pack.</span></span> <span data-ttu-id="1b000-135">通常情况下， **.NET Framework 4.5 功能**已安装。</span><span class="sxs-lookup"><span data-stu-id="1b000-135">Typically, **.NET Framework 4.5 Features** is already installed.</span></span> <span data-ttu-id="1b000-136">如果你将使用.NET Framework 3.5 然后在此计算机上创建应用程序 **.Net Framework 3.5 功能**也可以安装。</span><span class="sxs-lookup"><span data-stu-id="1b000-136">If you will use .NET Framework 3.5 to create applications on this computer, then **.Net Framework 3.5 Features** can also be installed.</span></span>  
   
 - <span data-ttu-id="1b000-137">**消息队列**：如果使用 MSMQ 适配器，可以通过选中“消息队列”创建本地 MSMQ 存储。</span><span class="sxs-lookup"><span data-stu-id="1b000-137">**Message Queuing**: If you are using the MSMQ adapter, you can create a local MSMQ store by checking **Message Queuing**.</span></span>  
   

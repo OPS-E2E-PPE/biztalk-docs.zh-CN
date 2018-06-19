@@ -1,14 +1,14 @@
 ---
-title: "可选配置 |Microsoft 文档"
-ms.custom: 
+title: 可选配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f4b0b51-2cad-4cb5-b6cd-4db92bd199fa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976755"
 ---
 # <a name="optional-configurations"></a><span data-ttu-id="ddedc-102">可选配置</span><span class="sxs-lookup"><span data-stu-id="ddedc-102">Optional Configurations</span></span>
 <span data-ttu-id="ddedc-103">BizTalk Server 管理包导入后，监视窗格的导航窗格中显示自动发现的对象类型。</span><span class="sxs-lookup"><span data-stu-id="ddedc-103">After you import the BizTalk Server Management Pack, the navigation pane of the Monitoring pane displays the object types that are discovered automatically.</span></span> <span data-ttu-id="ddedc-104">对象类型的列表，请参阅[对象管理包发现](../technical-guides/objects-the-management-pack-discovers.md)部分。</span><span class="sxs-lookup"><span data-stu-id="ddedc-104">For a list of object types, see [Objects the Management Pack Discovers](../technical-guides/objects-the-management-pack-discovers.md) section.</span></span> <span data-ttu-id="ddedc-105">你可以修改由发现的对象的默认发现配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包。</span><span class="sxs-lookup"><span data-stu-id="ddedc-105">You can modify the default discovery configuration of objects discovered by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack.</span></span> <span data-ttu-id="ddedc-106">使用 Operations Manager 2007 R2/2012年的替代功能更改配置设置。</span><span class="sxs-lookup"><span data-stu-id="ddedc-106">You use the overrides feature of Operations Manager 2007 R2/2012 to change configuration settings.</span></span>  

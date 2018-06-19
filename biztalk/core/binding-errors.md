@@ -1,14 +1,14 @@
 ---
-title: "绑定错误 |Microsoft 文档"
-ms.custom: 
+title: 绑定错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8659786-bf2d-4260-a38c-6be1620b3cb6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230725"
 ---
 # <a name="binding-errors"></a><span data-ttu-id="4e5a8-102">绑定错误</span><span class="sxs-lookup"><span data-stu-id="4e5a8-102">Binding Errors</span></span>
 <span data-ttu-id="4e5a8-103">本部分包含诊断和解决 WCF 绑定错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="4e5a8-103">This section contains detailed information for diagnosing and resolving WCF Binding errors.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "此实例是否在合作伙伴批处理服务窗口之外 |Microsoft 文档"
-ms.custom: 
+title: 此实例是否在合作伙伴批处理服务窗口之外 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e420d75-11fd-4221-9d97-814ca6e48c81
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278661"
 ---
 # <a name="this-instance-is-outside-the-batching-service-window-for-the-partner"></a><span data-ttu-id="41e92-102">此实例在合作伙伴的“批处理服务”窗口之外</span><span class="sxs-lookup"><span data-stu-id="41e92-102">This instance is outside the Batching Service window for the partner</span></span>
 ## <a name="details"></a><span data-ttu-id="41e92-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="41e92-103">Details</span></span>  

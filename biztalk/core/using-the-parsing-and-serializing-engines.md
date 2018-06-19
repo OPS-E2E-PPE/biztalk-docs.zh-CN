@@ -1,11 +1,11 @@
 ---
-title: "使用的分析和序列化引擎 |Microsoft 文档"
-ms.custom: 
+title: 使用的分析和序列化引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - parsing engine
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - pipeline components [custom], assembling
 - pipeline components [custom], parsing
 ms.assetid: a9d19703-b074-402a-971a-b2a6cd5d0724
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287677"
 ---
 # <a name="using-the-parsing-and-serializing-engines"></a><span data-ttu-id="0aa84-102">使用了分析和序列化引擎</span><span class="sxs-lookup"><span data-stu-id="0aa84-102">Using the Parsing and Serializing Engines</span></span>
 <span data-ttu-id="0aa84-103">Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括分析和序列化引擎来简化分析和序列化平面文件文档的过程。</span><span class="sxs-lookup"><span data-stu-id="0aa84-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes a parsing and serializing engine to simplify the process of parsing and serializing flat file documents.</span></span>  

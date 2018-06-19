@@ -1,11 +1,11 @@
 ---
-title: "创建使用 BizTalk 映射程序图 |Microsoft 文档"
-ms.custom: 
+title: 创建使用 BizTalk 映射程序图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, maps
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - transformations [maps]
 - maps
 ms.assetid: 265e61d8-8cff-44c9-a717-8e895cb4b9bf
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238333"
 ---
 # <a name="creating-maps-using-biztalk-mapper"></a><span data-ttu-id="18683-102">使用 BizTalk 映射器创建映射</span><span class="sxs-lookup"><span data-stu-id="18683-102">Creating Maps Using BizTalk Mapper</span></span>
 <span data-ttu-id="18683-103">BizTalk 映射程序是一个工具，在 Microsoft 内运行[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="18683-103">BizTalk Mapper is a tool that runs within the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="18683-104">BizTalk 映射程序可用来创建和编辑映射，用于将转换或转换 xml 消息。</span><span class="sxs-lookup"><span data-stu-id="18683-104">BizTalk Mapper can be used to create and edit maps, which are used for translating or transforming xml messages.</span></span> <span data-ttu-id="18683-105">下图建议，并还可以用于处理在接收端口收到的消息和然后转换通过发送的消息将发送端口业务流程，用于映射。</span><span class="sxs-lookup"><span data-stu-id="18683-105">Maps are used in orchestrations, as the following figure suggest, and can also be used for processing messages received at a receive port, and then transforming the message to be sent via send port(s).</span></span>  

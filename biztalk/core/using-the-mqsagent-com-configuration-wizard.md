@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010430"
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a><span data-ttu-id="6ddcc-102">使用 MQSAgent COM + 配置向导</span><span class="sxs-lookup"><span data-stu-id="6ddcc-102">Using the MQSAgent COM+ Configuration Wizard</span></span>
 <span data-ttu-id="6ddcc-103">使用 MQSAgent COM+ 配置向导，可配置适配器的 COM+ 应用程序（MQSeries 组件）部分，即 MQSAgent。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-103">The MQSAgent COM+ Configuration Wizard configures the MQSAgent, the COM+ application (MQSeries component) part of the adapter.</span></span> <span data-ttu-id="6ddcc-104">通过此向导可设置该组件的应用程序标识、角色名称和角色中包含的用户。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-104">The wizard sets the application identity of the component, and the role name and users included in the role.</span></span> <span data-ttu-id="6ddcc-105">使用 MQSAgent COM + 配置向导创建 MQSAgent COM + 组件的名称是**MQSAgent2**。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-105">The name of the MQSAgent COM+ component created with the MQSAgent COM+ Configuration Wizard is **MQSAgent2**.</span></span>  
@@ -123,7 +124,7 @@ ms.lasthandoff: 12/01/2017
   
     -   <span data-ttu-id="6ddcc-173">展开**组件**。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-173">Expand **Components**.</span></span>  
   
-    -   <span data-ttu-id="6ddcc-174">右键单击**MQSAgent2.MQSAgent.1**组件，并单击**移动**以显示**移动组件 (s)**对话框。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-174">Right-click the **MQSAgent2.MQSAgent.1** component and click **Move** to display the **Move components(s)** dialog box.</span></span>  
+    -   <span data-ttu-id="6ddcc-174">右键单击**MQSAgent2.MQSAgent.1**组件，并单击**移动**以显示**移动组件 (s)** 对话框。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-174">Right-click the **MQSAgent2.MQSAgent.1** component and click **Move** to display the **Move components(s)** dialog box.</span></span>  
   
     -   <span data-ttu-id="6ddcc-175">选择**MQSAgent2RunTime**下**请选择一个目标**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6ddcc-175">Select **MQSAgent2RunTime** under **Please select a destination** and click **OK**.</span></span>  
   

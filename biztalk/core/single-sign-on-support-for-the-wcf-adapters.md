@@ -1,17 +1,17 @@
 ---
-title: "单一登录支持个 WCF 适配器 |Microsoft 文档"
-ms.custom: 
+title: 单一登录支持个 WCF 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF adapters, Single Sign-On
 - Single Sign-On, WCF adapters
 ms.assetid: 70a33d87-50bd-41de-9084-68dd66b0dbf9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280053"
 ---
 # <a name="single-sign-on-support-for-the-wcf-adapters"></a><span data-ttu-id="f99f5-102">WCF 适配器的单一登录支持</span><span class="sxs-lookup"><span data-stu-id="f99f5-102">Single Sign-On Support for the WCF Adapters</span></span>
 <span data-ttu-id="f99f5-103">可以使用 BizTalk Server 管理控制台来配置企业单一登录 (SSO)，以便与 WCF 接收位置或发送端口结合使用。</span><span class="sxs-lookup"><span data-stu-id="f99f5-103">You can configure Enterprise Single Sign-On (SSO) for use with a WCF receive location or send port by using the BizTalk Administration console.</span></span> <span data-ttu-id="f99f5-104">本主题介绍 SSO 与 WCF 适配器的协同工作机制。</span><span class="sxs-lookup"><span data-stu-id="f99f5-104">This topic describes how SSO works with the WCF adapters.</span></span>  

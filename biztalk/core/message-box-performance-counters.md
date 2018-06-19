@@ -1,14 +1,14 @@
 ---
-title: "消息框性能计数器 |Microsoft 文档"
-ms.custom: 
+title: 消息框性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5eafbd7b-f5fc-4942-a975-18154e6a7ee2
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972779"
 ---
 # <a name="message-box-performance-counters"></a><span data-ttu-id="0763f-102">消息框性能计数器</span><span class="sxs-lookup"><span data-stu-id="0763f-102">Message Box Performance Counters</span></span>
 <span data-ttu-id="0763f-103">使用性能计数器可以监视服务在站点或系统上执行的工作的特定方面。</span><span class="sxs-lookup"><span data-stu-id="0763f-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="0763f-104">性能计数器能够帮助您标识和解决有关服务器性能的问题。</span><span class="sxs-lookup"><span data-stu-id="0763f-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何更新对 BAM Analysis Server 和星型架构数据库名称的引用 |Microsoft 文档"
-ms.custom: 
+title: 如何更新对 BAM Analysis Server 和星型架构数据库名称的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - restoring [BAM], Analysis database
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BAM, restoring
 - Analysis database [BAM], updating references
 ms.assetid: cbe5e500-0a25-427e-bc76-1eae24b3e5f3
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287445"
 ---
 # <a name="how-to-update-references-to-the-bam-analysis-server-and-star-schema-database-names"></a><span data-ttu-id="cac23-102">如何更新对 BAM 分析服务器和 BAM 星型架构数据库名称的引用</span><span class="sxs-lookup"><span data-stu-id="cac23-102">How to Update References to the BAM Analysis Server and Star Schema Database Names</span></span>
 <span data-ttu-id="cac23-103">如果备份了 BAMAnalysis 和 BAMStarSchema 数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机上，然后重命名该备份。</span><span class="sxs-lookup"><span data-stu-id="cac23-103">If you backed up your BAMAnalysis and BAMStarSchema databases, in the event of a system or data failure you can restore that backup to a different computer and you can rename the backup.</span></span>  

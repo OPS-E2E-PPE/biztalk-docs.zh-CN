@@ -1,14 +1,14 @@
 ---
-title: "使用 EDI 批处理的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 使用 EDI 批处理的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 510ac82b-8a02-4135-87b7-0a5f288f5317
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008214"
 ---
 # <a name="known-issues-with-edi-batching"></a><span data-ttu-id="d152b-102">EDI 批处理的已知问题</span><span class="sxs-lookup"><span data-stu-id="d152b-102">Known Issues with EDI Batching</span></span>
 <span data-ttu-id="d152b-103">本主题介绍了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中批处理的已知问题。</span><span class="sxs-lookup"><span data-stu-id="d152b-103">This topic describes known issues with batching in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  

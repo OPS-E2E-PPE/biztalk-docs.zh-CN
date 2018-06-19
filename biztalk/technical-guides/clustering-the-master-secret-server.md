@@ -1,14 +1,14 @@
 ---
-title: "群集主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 群集主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14aa3622-8462-4ed9-abde-40090d4f96ff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008694"
 ---
 # <a name="clustering-the-master-secret-server"></a><span data-ttu-id="49d8f-102">群集主密钥服务器</span><span class="sxs-lookup"><span data-stu-id="49d8f-102">Clustering the Master Secret Server</span></span>
 <span data-ttu-id="49d8f-103">BizTalk Server 应用程序服务维护硬编码依赖于随企业单一登录 (SSO) 服务[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="49d8f-103">The BizTalk Server application service maintains a hard-coded dependency upon the Enterprise Single Sign-On (SSO) service that is installed with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="49d8f-104">SSO 服务必须能够与启动的主密钥服务器进行通信。</span><span class="sxs-lookup"><span data-stu-id="49d8f-104">The SSO service must be able to communicate with the master secret server to start.</span></span> <span data-ttu-id="49d8f-105">我们建议你在主密钥服务器以提供容错功能的主密钥服务器上群集 SSO 服务。</span><span class="sxs-lookup"><span data-stu-id="49d8f-105">We recommend that you cluster the SSO service on the master secret server to provide fault tolerance for the master secret server.</span></span> <span data-ttu-id="49d8f-106">有关详细信息，请参阅[高可用性 SSO 安装选项](http://go.microsoft.com/fwlink/?LinkId=156838)(http://go.microsoft.com/fwlink/?LinkId=156838) BizTalk Server 帮助中。</span><span class="sxs-lookup"><span data-stu-id="49d8f-106">For more information, see [High-Availability SSO Installation Options](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) in BizTalk Server Help.</span></span>  

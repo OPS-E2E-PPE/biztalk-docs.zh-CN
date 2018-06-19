@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269829"
 ---
 # <a name="scenario-2-sizing-the-tracking-database--for-messages-in-orchestrations"></a><span data-ttu-id="51c17-102">方案 2：调整业务流程中消息的跟踪数据库</span><span class="sxs-lookup"><span data-stu-id="51c17-102">Scenario 2: Sizing the Tracking Database  for Messages in Orchestrations</span></span>
 <span data-ttu-id="51c17-103">我们将介绍一个包含业务流程的示例。</span><span class="sxs-lookup"><span data-stu-id="51c17-103">Let's look at an example that includes an orchestration.</span></span> <span data-ttu-id="51c17-104">下图显示了整个业务流程。</span><span class="sxs-lookup"><span data-stu-id="51c17-104">The following figure displays the entire business process.</span></span> <span data-ttu-id="51c17-105">在此方案中，通过业务流程发送传递到 BizTalk Server 中的消息并在该业务流程内对其进行更改，然后通过发送端口发送出该消息。</span><span class="sxs-lookup"><span data-stu-id="51c17-105">In this scenario, a message comes into BizTalk Server, is sent through an orchestration, is changed within the orchestration, and is then sent out through a send port.</span></span>  

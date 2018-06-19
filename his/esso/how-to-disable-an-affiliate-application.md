@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7df6e78-6d18-443d-82dc-4351c20a8c4e
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 6bae89d2a05ec34095e0fa2ac3feafc7b88b894e
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250921"
 ---
 # <a name="how-to-disable-an-affiliate-application"></a><span data-ttu-id="17de9-102">如何禁用关联应用程序</span><span class="sxs-lookup"><span data-stu-id="17de9-102">How to Disable an Affiliate Application</span></span>
 <span data-ttu-id="17de9-103">使用 Mmc 管理单元或**disableapp**命令以禁用指定的关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="17de9-103">Use the MMC Snap-In or the **disableapp** command to disable the specified affiliate application.</span></span>  

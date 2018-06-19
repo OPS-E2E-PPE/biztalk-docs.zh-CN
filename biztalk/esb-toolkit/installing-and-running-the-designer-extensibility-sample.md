@@ -1,14 +1,14 @@
 ---
-title: "安装和运行设计器扩展性示例 |Microsoft 文档"
-ms.custom: 
+title: 安装和运行设计器扩展性示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede0c2da-0ddc-4131-b8ea-cc1dc6456a36
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22293909"
 ---
 # <a name="installing-and-running-the-designer-extensibility-sample"></a><span data-ttu-id="707ec-102">安装和运行设计器扩展性示例</span><span class="sxs-lookup"><span data-stu-id="707ec-102">Installing and Running the Designer Extensibility Sample</span></span>
 <span data-ttu-id="707ec-103">设计器扩展性示例演示如何设计器扩展可以开发自定义冲突解决程序的配置和路线服务的配置提供设计时支持。</span><span class="sxs-lookup"><span data-stu-id="707ec-103">The Designer Extensibility sample shows how designer extensions can be developed to provide design-time support for configuration of custom resolvers and configuration of itinerary services.</span></span>  

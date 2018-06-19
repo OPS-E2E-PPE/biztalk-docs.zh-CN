@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 平面文件架构向导演练 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 平面文件架构向导演练 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e764d5c-be06-445d-80f5-7fa8c7ea075b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230453"
 ---
 # <a name="biztalk-flat-file-schema-wizard-walkthrough"></a><span data-ttu-id="04869-102">BizTalk 平面文件架构向导演练</span><span class="sxs-lookup"><span data-stu-id="04869-102">BizTalk Flat File Schema Wizard Walkthrough</span></span>
 <span data-ttu-id="04869-103">下面的演练演示了如何从使用 BizTalk 平面文件架构向导的平面文件文档实例创建平面文件架构。</span><span class="sxs-lookup"><span data-stu-id="04869-103">The following walkthrough shows you how to create flat file schema from flat file document instances using the BizTalk Flat File Schema Wizard.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "备份和还原的 BizTalk Server 数据库 |Microsoft 文档"
-ms.custom: 
+title: 备份和还原的 BizTalk Server 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, BizTalk Server
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - maintaining, backing up
 - transaction logs
 ms.assetid: 7c08ce19-614c-4728-8dde-c40d4052339e
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230365"
 ---
 # <a name="backing-up-and-restoring-the-biztalk-server-databases"></a><span data-ttu-id="1c0a0-102">备份和还原的 BizTalk Server 数据库</span><span class="sxs-lookup"><span data-stu-id="1c0a0-102">Backing Up and Restoring the BizTalk Server Databases</span></span>
 <span data-ttu-id="1c0a0-103">本部分提供有关如何备份和还原 BizTalk Server 数据库的信息。</span><span class="sxs-lookup"><span data-stu-id="1c0a0-103">This section provides information about how to back up and restore the BizTalk Server databases.</span></span> <span data-ttu-id="1c0a0-104">请按照本部分中的过程进行操作，以确保在发生硬件故障时能够还原出一致的 BizTalk Server 环境。</span><span class="sxs-lookup"><span data-stu-id="1c0a0-104">You should follow the procedures in this section to ensure your ability to restore a consistent BizTalk Server environment in the event of a hardware failure.</span></span> <span data-ttu-id="1c0a0-105">由于 BizTalk Server 在各数据库中执行分布式事务，所以应先备份所有数据库，然后再还原所有数据库，这是很关键的。</span><span class="sxs-lookup"><span data-stu-id="1c0a0-105">BizTalk Server performs distributed transactions across databases, so it is critical that you back up and then restore all databases.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "恢复 BizTalk 组 |Microsoft 文档"
-ms.custom: 
+title: 恢复 BizTalk 组 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/30/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f1010e55-7e3d-4565-8604-ea652ea4da8c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 78376935362715684b451eb6da9f2b1e8c129c2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28944093"
 ---
 # <a name="how-to-recover-the-biztalk-group"></a><span data-ttu-id="bd64f-102">如何恢复 BizTalk 组</span><span class="sxs-lookup"><span data-stu-id="bd64f-102">How to Recover the BizTalk Group</span></span>
 <span data-ttu-id="bd64f-103">必须在系统恢复过程中将 BizTalk Server 重新连接到现有的 BizTalk 组。</span><span class="sxs-lookup"><span data-stu-id="bd64f-103">You must rejoin the BizTalk Server to an existing BizTalk group as part of the system recovery process.</span></span>  

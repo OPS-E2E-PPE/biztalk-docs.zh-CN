@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006222"
 ---
 # <a name="before-installing-the-service-oriented-solution"></a><span data-ttu-id="83cb8-102">在安装面向服务的解决方案之前</span><span class="sxs-lookup"><span data-stu-id="83cb8-102">Before Installing the Service Oriented Solution</span></span>
 <span data-ttu-id="83cb8-103">若要在单台计算机上安装面向服务的解决方案的存根版本，必须具备以下必备组件：</span><span class="sxs-lookup"><span data-stu-id="83cb8-103">The following prerequisites must be available to install the stub version of the service-oriented solution on a single computer:</span></span>  

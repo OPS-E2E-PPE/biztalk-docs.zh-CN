@@ -1,14 +1,14 @@
 ---
-title: "消息传送引擎接口 |Microsoft 文档"
-ms.custom: 
+title: 消息传送引擎接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14241db3-edcf-4449-9ec8-2171a14496c0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263285"
 ---
 # <a name="messaging-engine-interfaces"></a><span data-ttu-id="c2d49-102">消息传递引擎接口</span><span class="sxs-lookup"><span data-stu-id="c2d49-102">Messaging Engine Interfaces</span></span>
 <span data-ttu-id="c2d49-103">适配器可以使用三种公共接口来允许与消息引擎的交互。</span><span class="sxs-lookup"><span data-stu-id="c2d49-103">There are three public interfaces that adapters can use to allow interaction with the Messaging Engine.</span></span> <span data-ttu-id="c2d49-104">下面几部分将概要介绍这些公共接口。</span><span class="sxs-lookup"><span data-stu-id="c2d49-104">These are outlined in the following sections.</span></span>  

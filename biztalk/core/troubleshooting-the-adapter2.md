@@ -1,11 +1,11 @@
 ---
-title: "故障排除 Adapter2 |Microsoft 文档"
-ms.custom: 
+title: 故障排除 Adapter2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - wildcard characters, in send port properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Get.xml
 - send ports, using wildcards in properties
 ms.assetid: e9e0408f-5a12-4f05-83a6-37dc519ae4c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279189"
 ---
 # <a name="troubleshooting-the-adapter"></a><span data-ttu-id="e21c4-102">故障排除适配器</span><span class="sxs-lookup"><span data-stu-id="e21c4-102">Troubleshooting the Adapter</span></span>
 <span data-ttu-id="e21c4-103">本主题包含了一些信息，可帮助您识别和解决可能会在使用用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器时遇到的问题。</span><span class="sxs-lookup"><span data-stu-id="e21c4-103">This topic contains information to help you identify and resolve issues that you might experience while you are using Microsoft BizTalk Adapter for PeopleSoft Enterprise.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "配置 DTA 清除和存档作业 |Microsoft 文档"
-description: "在 SQL Server 代理来维护 BizTalk Server 中的跟踪数据库中设置 DTA 清除和存档作业参数"
-ms.custom: 
+title: 配置 DTA 清除和存档作业 |Microsoft 文档
+description: 在 SQL Server 代理来维护 BizTalk Server 中的跟踪数据库中设置 DTA 清除和存档作业参数
+ms.custom: ''
 ms.date: 10/11/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 156ccf9b-284f-4b96-a395-92936e8cebcf
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2017
+ms.locfileid: "22646929"
 ---
 # <a name="configure-the-dta-purge-and-archive-job"></a><span data-ttu-id="56367-103">配置 DTA 清除和存档作业</span><span class="sxs-lookup"><span data-stu-id="56367-103">Configure the DTA Purge and Archive Job</span></span>
 <span data-ttu-id="56367-104">在对 BizTalk 跟踪 (BizTalkDTADb) 数据库中的数据进行存档或清除之前，必须首先配置 DTA 清除和存档 (BizTalkDTADb) 作业。</span><span class="sxs-lookup"><span data-stu-id="56367-104">Before you can archive or purge data from the BizTalk Tracking (BizTalkDTADb) database, you must configure the DTA Purge and Archive (BizTalkDTADb) job.</span></span> <span data-ttu-id="56367-105">此作业被配置为调用 dtasp_BackupAndPurgeTrackingDatabase 存储过程中，使用六个参数必须配置。</span><span class="sxs-lookup"><span data-stu-id="56367-105">This job is configured to call the dtasp_BackupAndPurgeTrackingDatabase store procedure, which uses six parameters you must configure.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/11/2017
   
 4.  <span data-ttu-id="56367-112">在**对象资源管理器详细信息**，右键单击**DTA 清除和存档 (BizTalkDTADb)**，然后选择**属性**。</span><span class="sxs-lookup"><span data-stu-id="56367-112">In **Object Explorer Details**, right-click **DTA Purge and Archive (BizTalkDTADb)**, and then select **Properties**.</span></span>  
   
-5.  <span data-ttu-id="56367-113">在**作业属性-DTA 清除和存档 (BizTalkDTADb)**下**选择页**，选择**步骤**。</span><span class="sxs-lookup"><span data-stu-id="56367-113">In **Job Properties - DTA Purge and Archive (BizTalkDTADb)**, under **Select a page**, select **Steps**.</span></span>  
+5.  <span data-ttu-id="56367-113">在**作业属性-DTA 清除和存档 (BizTalkDTADb)** 下**选择页**，选择**步骤**。</span><span class="sxs-lookup"><span data-stu-id="56367-113">In **Job Properties - DTA Purge and Archive (BizTalkDTADb)**, under **Select a page**, select **Steps**.</span></span>  
   
 6.  <span data-ttu-id="56367-114">在**作业步骤列表**，选择**存档和清除**，然后选择**编辑**。</span><span class="sxs-lookup"><span data-stu-id="56367-114">In the **Job step list**, select **Archive and Purge**, and then select **Edit**.</span></span>  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/11/2017
     exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0, 1  
     ```  
   
-8.  <span data-ttu-id="56367-139">上**作业属性-DTA 清除和存档 (BizTalkDTADb)**对话框中，在**选择页**，选择**常规**，选择**已启用**复选框，，然后选择**确定**。</span><span class="sxs-lookup"><span data-stu-id="56367-139">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
+8.  <span data-ttu-id="56367-139">上**作业属性-DTA 清除和存档 (BizTalkDTADb)** 对话框中，在**选择页**，选择**常规**，选择**已启用**复选框，，然后选择**确定**。</span><span class="sxs-lookup"><span data-stu-id="56367-139">On the **Job Properties - DTA Purge and Archive (BizTalkDTADb)** dialog box, under **Select a page**, select **General**, select the **Enabled** check box, and then select **OK**.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="56367-140">另请参阅</span><span class="sxs-lookup"><span data-stu-id="56367-140">See Also</span></span>  
  [<span data-ttu-id="56367-141">存档和清除 BizTalk 跟踪数据库</span><span class="sxs-lookup"><span data-stu-id="56367-141">Archiving and Purging the BizTalk Tracking Database</span></span>](../core/archiving-and-purging-the-biztalk-tracking-database.md)

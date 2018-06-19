@@ -1,14 +1,14 @@
 ---
-title: "开发活动的先决条件 |Microsoft 文档"
-ms.custom: 
+title: 开发活动的先决条件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54c91405-f9a4-4676-b5c5-fe90b3b51b45
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006254"
 ---
 # <a name="prerequisites-for-the-development-activities"></a><span data-ttu-id="77bb4-102">开发活动的先决条件</span><span class="sxs-lookup"><span data-stu-id="77bb4-102">Prerequisites for the Development Activities</span></span>
 <span data-ttu-id="77bb4-103">本部分介绍如何准备环境，以完成的一部分包括的开发活动中的步骤[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="77bb4-103">This section describes how to prepare your environment to complete the steps in the development activities that are included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span> <span data-ttu-id="77bb4-104">你在尝试任何开发活动中的过程之前，请完成以下设置：</span><span class="sxs-lookup"><span data-stu-id="77bb4-104">Complete the following setup before you attempt any of the procedures in the development activities:</span></span>  

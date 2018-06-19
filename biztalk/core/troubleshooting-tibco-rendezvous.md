@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b7bc3ab-16fa-4e91-8730-9431473b2fb4
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973267"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a><span data-ttu-id="4e843-103">解决 TIBCO 会合</span><span class="sxs-lookup"><span data-stu-id="4e843-103">Troubleshoot TIBCO Rendezvous</span></span>
   
@@ -46,15 +47,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="4e843-127">用于 TIBCO Rendezvous 的 BizTalk 适配器具有三个提供程序。</span><span class="sxs-lookup"><span data-stu-id="4e843-127">BizTalk Adapter for TIBCO Rendezvous has three providers.</span></span> <span data-ttu-id="4e843-128">这样就可以记录不同种类的消息︰</span><span class="sxs-lookup"><span data-stu-id="4e843-128">This lets you log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="4e843-129">**接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="4e843-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="4e843-129">**接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="4e843-129">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
 -   <span data-ttu-id="4e843-130">使用 **-接收方** 以获取已在运行时适配器接收到日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="4e843-130">Use **-receiver** to get any messages from the log that were received by the adapter at runtime.</span></span>  
   
--   <span data-ttu-id="4e843-131">**发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="4e843-131">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="4e843-131">**发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="4e843-131">**Transmitter Logging Provider**: the \<Trace element\> switch is **-transmitter**.</span></span>  
   
      <span data-ttu-id="4e843-132">使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="4e843-132">Use **-transmitter** to get any messages from the log that were transmitted by the adapter at run time.</span></span>  
   
--   <span data-ttu-id="4e843-133">**管理日志记录提供程序-**\<跟踪元素\>交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="4e843-133">**Management Logging Provider—**the \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="4e843-133">**管理日志记录提供程序-**\<跟踪元素\>交换机 **-管理**。</span><span class="sxs-lookup"><span data-stu-id="4e843-133">**Management Logging Provider—** the \<Trace element\> switch is **-management**.</span></span>  
   
      <span data-ttu-id="4e843-134">使用 **-管理**若要获取的服务器系统浏览过程中生成了日志中的任何消息。</span><span class="sxs-lookup"><span data-stu-id="4e843-134">Use **-management**to get any messages from the log that were generated during browsing of the server system.</span></span>  
   

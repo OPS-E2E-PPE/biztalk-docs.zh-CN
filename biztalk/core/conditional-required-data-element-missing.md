@@ -1,14 +1,14 @@
 ---
-title: "数据元素缺少必需的条件 |Microsoft 文档"
-ms.custom: 
+title: 数据元素缺少必需的条件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5105c03-fa26-4c38-a276-c656f3076d5f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231957"
 ---
 # <a name="conditional-required-data-element-missing"></a><span data-ttu-id="96e38-102">条件性必需数据元素缺失</span><span class="sxs-lookup"><span data-stu-id="96e38-102">Conditional required data element missing</span></span>
 ## <a name="details"></a><span data-ttu-id="96e38-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="96e38-103">Details</span></span>  

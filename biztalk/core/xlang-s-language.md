@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290909"
 ---
 # <a name="xlang-s-language"></a><span data-ttu-id="230ab-102">XLANG-s 语言</span><span class="sxs-lookup"><span data-stu-id="230ab-102">XLANG-s Language</span></span>
 <span data-ttu-id="230ab-103">XLANG/s 设计为使用 Internet 标准，如 XML、 XSD 和 Web 服务描述语言 (WSDL)，并具有嵌入支持使用。基于网络的对象和消息。</span><span class="sxs-lookup"><span data-stu-id="230ab-103">XLANG/s was designed to use Internet standards such as XML, XSD, and Web Services Description Language (WSDL), and has embedded support for working with .NET-based objects and messages.</span></span> <span data-ttu-id="230ab-104">作为消息传递使用的某些表达式功能的 C# 语言，可以查看 XLANG/s。</span><span class="sxs-lookup"><span data-stu-id="230ab-104">XLANG/s can be viewed as a messaging language with some of the expression capabilities of C#.</span></span> <span data-ttu-id="230ab-105">但是，代码不可移植 XLANG/s 和 C# 之间。</span><span class="sxs-lookup"><span data-stu-id="230ab-105">However, code is not portable between XLANG/s and C#.</span></span>  

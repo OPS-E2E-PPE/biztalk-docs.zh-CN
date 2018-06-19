@@ -1,14 +1,14 @@
 ---
-title: "使用多个延续 |Microsoft 文档"
-ms.custom: 
+title: 使用多个延续 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01a38087-71ee-40b3-a957-6a2653bd6435
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288933"
 ---
 # <a name="using-multiple-continuations"></a><span data-ttu-id="60d2d-102">使用多个继续符</span><span class="sxs-lookup"><span data-stu-id="60d2d-102">Using Multiple Continuations</span></span>
 <span data-ttu-id="60d2d-103">在有多个活动的环境中使用跟踪配置文件编辑器 (TPE)，您需要知道在哪些情况下跟踪活动，这是为了以正确的顺序映射接收端口、业务流程和发送端口。</span><span class="sxs-lookup"><span data-stu-id="60d2d-103">Using the Tracking Profile Editor (TPE) in environments in which there are multiple activities requires that you understand the scenario in which the activities are being tracked in order to map the receive ports, orchestrations, and send ports in the proper sequence.</span></span>  

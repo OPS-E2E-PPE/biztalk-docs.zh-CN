@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 配置接收端口和接收位置 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 配置接收端口和接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43fc8d12-5fde-4ddf-a7f0-770f078ba66b
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277949"
 ---
 # <a name="step-5-configure-a-receive-port-and-receive-location"></a><span data-ttu-id="15619-102">步骤 5： 配置接收端口和接收位置</span><span class="sxs-lookup"><span data-stu-id="15619-102">Step 5: Configure a Receive Port and Receive Location</span></span>
 <span data-ttu-id="15619-103">![步骤 5 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span><span class="sxs-lookup"><span data-stu-id="15619-103">![Step 5 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 7.  <span data-ttu-id="15619-117">在**文件传输属性**对话框中，更改**文件掩码**到 **\*.txt**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="15619-117">In the **FILE Transport Properties** dialog box, change the **File mask** to **\*.txt** and click **OK**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="15619-118">由于输入测试消息为文本文件 SamplePO.txt，因此文件掩码应设为 *.txt。</span><span class="sxs-lookup"><span data-stu-id="15619-118">The file mask is set to *.txt because the input test message is a text file, SamplePO.txt.</span></span>  
+    >  <span data-ttu-id="15619-118">由于输入测试消息为文本文件 SamplePO.txt，因此文件掩码应设为 \*.txt。</span><span class="sxs-lookup"><span data-stu-id="15619-118">The file mask is set to \*.txt because the input test message is a text file, SamplePO.txt.</span></span>  
   
 8.  <span data-ttu-id="15619-119">在**接收位置属性**对话框中，在**接收管道**字段中，选择**EdiReceive**。</span><span class="sxs-lookup"><span data-stu-id="15619-119">In the **Receive Location Properties** dialog box, in the **Receive Pipeline** field, select **EdiReceive**.</span></span>  
   

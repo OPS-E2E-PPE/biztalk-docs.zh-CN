@@ -1,14 +1,14 @@
 ---
-title: "列出、 搜索和排序错误消息 |Microsoft 文档"
-ms.custom: 
+title: 列出、 搜索和排序错误消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 850b9682-8eba-4a3f-8508-d3eefcd715b7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294637"
 ---
 # <a name="listing-searching-and-sorting-fault-messages"></a><span data-ttu-id="88e86-102">列出、 搜索和排序错误消息</span><span class="sxs-lookup"><span data-stu-id="88e86-102">Listing, Searching, and Sorting Fault Messages</span></span>
 <span data-ttu-id="88e86-103">ESB 管理门户主页上可用于获取在 Microsoft BizTalk Server 中执行的应用程序的状态的总体视图。</span><span class="sxs-lookup"><span data-stu-id="88e86-103">You can use the Home page of the ESB Management Portal to obtain an overall view of the status of the applications executing within Microsoft BizTalk Server.</span></span> <span data-ttu-id="88e86-104">可以使用的错误页的错误消息，基于对一系列的条件的查询。</span><span class="sxs-lookup"><span data-stu-id="88e86-104">The Faults page can be used to query for fault messages, based on a range of criteria.</span></span>  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  <span data-ttu-id="88e86-108">若要选择你想要查看的信息的应用程序，请单击**选择应用程序**链接上方的第一个图表，然后选择或清除复选框中显示的已安装 BizTalk Server 应用程序的列表。</span><span class="sxs-lookup"><span data-stu-id="88e86-108">To select the applications for which you want to view information, click the **Select Applications** link above the first chart, and then select or clear the check boxes in the list of installed BizTalk Server applications that appears.</span></span>  
   
-3.  <span data-ttu-id="88e86-109">若要更改时间为其门户显示的信息，请选择**小时、 天、 周、 月、 季度、 每年，**或**所有**第二个图表上方的下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="88e86-109">To change the period for which the portal displays information, select **Hour, Day, Week, Month, Quarter, Year,** or **ALL** in the drop-down list above the first chart.</span></span>  
+3.  <span data-ttu-id="88e86-109">若要更改时间为其门户显示的信息，请选择**小时、 天、 周、 月、 季度、 每年，** 或**所有**第二个图表上方的下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="88e86-109">To change the period for which the portal displays information, select **Hour, Day, Week, Month, Quarter, Year,** or **ALL** in the drop-down list above the first chart.</span></span>  
   
 4.  <span data-ttu-id="88e86-110">若要更改默认设置用于在主页上的应用程序和显示时间的列表，请编辑设置上[门户我设置页](../esb-toolkit/portal-my-settings-page.md)。</span><span class="sxs-lookup"><span data-stu-id="88e86-110">To change the default settings used on the Home page for the list of applications and the display period, edit the settings on the [Portal My Settings Page](../esb-toolkit/portal-my-settings-page.md).</span></span>  
   

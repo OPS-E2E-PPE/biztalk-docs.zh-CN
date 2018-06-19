@@ -1,14 +1,14 @@
 ---
-title: "向事件日志中写入信息 |Microsoft 文档"
-ms.custom: 
+title: 向事件日志中写入信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d7398dc-29d8-4a7a-bab4-c8f128b47dca
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289573"
 ---
 # <a name="writing-information-to-the-event-log"></a><span data-ttu-id="7b42a-102">将信息写入事件日志</span><span class="sxs-lookup"><span data-stu-id="7b42a-102">Writing Information to the Event Log</span></span>
 <span data-ttu-id="7b42a-103">您可能要通过将信息写入默认的应用程序日志或自定义的事件日志，监控您的 BizTalk 应用程序内的不同业务流程的进度。</span><span class="sxs-lookup"><span data-stu-id="7b42a-103">You may want to monitor the progress of the different business processes within your BizTalk application by writing information to the default Application log or to a custom event log.</span></span> <span data-ttu-id="7b42a-104">在以下情况下将信息写入事件日志可能会很有用：</span><span class="sxs-lookup"><span data-stu-id="7b42a-104">Writing to the event log can be useful in the following scenarios:</span></span>  

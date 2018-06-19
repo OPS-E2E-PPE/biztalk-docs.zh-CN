@@ -1,14 +1,14 @@
 ---
-title: "配置回退验证属性 (X12) |Microsoft 文档"
-ms.custom: 
+title: 配置回退验证属性 (X12) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a64431d-373a-4d63-9b83-cbb323620152
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233149"
 ---
 # <a name="configuring-fallback-validation-properties-x12"></a><span data-ttu-id="2eafb-102">配置回退验证属性 (X 12)</span><span class="sxs-lookup"><span data-stu-id="2eafb-102">Configuring Fallback Validation Properties (X12)</span></span>
 <span data-ttu-id="2eafb-103">X12 交换验证生成后备设置定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何检查收到的交换中重复的控制编号。</span><span class="sxs-lookup"><span data-stu-id="2eafb-103">X12 interchange validation generation fallback settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] checks for duplicate control numbers in the received interchange.</span></span>  

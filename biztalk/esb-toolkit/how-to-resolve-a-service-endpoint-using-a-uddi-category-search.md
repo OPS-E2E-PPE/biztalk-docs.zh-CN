@@ -1,14 +1,14 @@
 ---
-title: "如何： 解决使用 UDDI 类别搜索的服务终结点 |Microsoft 文档"
-ms.custom: 
+title: 如何： 解决使用 UDDI 类别搜索的服务终结点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 61ac5d37-5529-4509-a948-415453944e01
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009110"
 ---
 # <a name="how-to-resolve-a-service-endpoint-using-a-uddi-category-search"></a><span data-ttu-id="7d42c-102">如何： 解决使用 UDDI 类别搜索的服务终结点</span><span class="sxs-lookup"><span data-stu-id="7d42c-102">How to: Resolve a Service Endpoint Using a UDDI Category Search</span></span>
 ## <a name="goal"></a><span data-ttu-id="7d42c-103">目的</span><span class="sxs-lookup"><span data-stu-id="7d42c-103">Goal</span></span>  
@@ -164,7 +165,7 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="7d42c-188">单击**提交请求**按钮。</span><span class="sxs-lookup"><span data-stu-id="7d42c-188">Click the **Submit Request** button.</span></span> <span data-ttu-id="7d42c-189">在测试完成后，单击**确定**关闭出现的确认。</span><span class="sxs-lookup"><span data-stu-id="7d42c-189">When the test completes, click **OK** to dismiss the confirmation that appears.</span></span>  
   
-8.  <span data-ttu-id="7d42c-190">在 Windows 资源管理器，浏览到**C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out**并确认**%MessageID%.xml**消息已写入到目录。</span><span class="sxs-lookup"><span data-stu-id="7d42c-190">In Windows Explorer, browse to **C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out** and verify that the **%MessageID%.xml** message has been written to the directory.</span></span>  
+8.  <span data-ttu-id="7d42c-190">在 Windows 资源管理器，浏览到**C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out**并确认 **%MessageID%.xml**消息已写入到目录。</span><span class="sxs-lookup"><span data-stu-id="7d42c-190">In Windows Explorer, browse to **C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out** and verify that the **%MessageID%.xml** message has been written to the directory.</span></span>  
   
 ## <a name="additional-resources"></a><span data-ttu-id="7d42c-191">其他资源</span><span class="sxs-lookup"><span data-stu-id="7d42c-191">Additional Resources</span></span>  
  <span data-ttu-id="7d42c-192">有关详细信息，请参阅下列相关主题：</span><span class="sxs-lookup"><span data-stu-id="7d42c-192">For more information, see the following related topics:</span></span>  

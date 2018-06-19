@@ -1,11 +1,11 @@
 ---
-title: "密码 Synchronization2 |Microsoft 文档"
-ms.custom: 
+title: 密码 Synchronization2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, passwords
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Password Synchronization [SSO], about Password Synchronization
 - SSO database, passwords
 ms.assetid: 6d4970e0-ac73-4fca-ab8f-6c8a6f3a6ec0
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264357"
 ---
 # <a name="password-synchronization"></a><span data-ttu-id="b08da-102">密码同步</span><span class="sxs-lookup"><span data-stu-id="b08da-102">Password Synchronization</span></span>
 <span data-ttu-id="b08da-103">密码同步的用途是简化 SSO 数据库的管理，使密码在用户目录中保持同步。</span><span class="sxs-lookup"><span data-stu-id="b08da-103">The purpose of Password Synchronization is to simplify administration of the SSO database, and to keep passwords in sync across user directories.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "业务流程开发中的步骤 |Microsoft 文档"
-ms.custom: 
+title: 业务流程开发中的步骤 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - designing, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, orchestrations
 - Copy Local property
 ms.assetid: 556b1e6c-63a6-4805-a0a5-e555f198fe4e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277389"
 ---
 # <a name="steps-in-orchestration-development"></a><span data-ttu-id="ec90c-102">业务流程开发中的步骤</span><span class="sxs-lookup"><span data-stu-id="ec90c-102">Steps in Orchestration Development</span></span>
 <span data-ttu-id="ec90c-103">若要开发一个业务流程，您通常执行以下基本操作：</span><span class="sxs-lookup"><span data-stu-id="ec90c-103">To develop an orchestration, you typically perform the following basic actions:</span></span>  

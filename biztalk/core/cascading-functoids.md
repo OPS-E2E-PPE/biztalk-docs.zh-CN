@@ -1,17 +1,17 @@
 ---
-title: "级联 Functoid |Microsoft 文档"
-ms.custom: 
+title: 级联 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoid types, Cascading
 - Cascading functoids
 ms.assetid: 03c46e7b-be1c-475e-b68b-f9d1d7732fce
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231005"
 ---
 # <a name="cascading-functoids"></a><span data-ttu-id="89bfd-102">级联 Functoid</span><span class="sxs-lookup"><span data-stu-id="89bfd-102">Cascading Functoids</span></span>
 <span data-ttu-id="89bfd-103">如果某个 functoid 在链接到目标架构中的记录或字段之前先链接到其他 functoid，此时称为对 Functoid 进行级联。</span><span class="sxs-lookup"><span data-stu-id="89bfd-103">Functoids are said to be cascaded when one functoid is linked to another functoid before it is linked to a record or field in the destination schema.</span></span> <span data-ttu-id="89bfd-104">例如，可以创建如下级联 functoid，其中两个串连的字符串产生第三个字符串来填充到目标架构的字段中。</span><span class="sxs-lookup"><span data-stu-id="89bfd-104">For example, you can create cascading functoids in which two concatenated strings produce a third string fed into a field in the destination schema.</span></span>  

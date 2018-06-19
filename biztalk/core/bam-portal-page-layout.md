@@ -1,17 +1,17 @@
 ---
-title: "BAM 门户页面布局 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户页面布局 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal
 - Portal page [BAM portal]
 ms.assetid: 0d8833b7-dd2f-475c-a890-e925ee47d219
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231525"
 ---
 # <a name="bam-portal-page-layout"></a><span data-ttu-id="dd3e2-102">BAM 门户页面布局</span><span class="sxs-lookup"><span data-stu-id="dd3e2-102">BAM Portal Page Layout</span></span>
 <span data-ttu-id="dd3e2-103">BAM 门户页由以下三个框架组成：</span><span class="sxs-lookup"><span data-stu-id="dd3e2-103">The BAM portal page is laid out in the following three frames:</span></span>  

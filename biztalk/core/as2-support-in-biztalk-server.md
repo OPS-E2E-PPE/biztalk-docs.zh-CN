@@ -1,14 +1,14 @@
 ---
-title: "AS2 BizTalk Server 中支持 |Microsoft 文档"
-ms.custom: 
+title: AS2 BizTalk Server 中支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8ee230e-8f5f-4b51-99e2-0b38acaf5707
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008222"
 ---
 # <a name="as2-support-in-biztalk-server"></a><span data-ttu-id="57933-102">BizTalk Server 中的 AS2 支持</span><span class="sxs-lookup"><span data-stu-id="57933-102">AS2 Support in BizTalk Server</span></span>
 <span data-ttu-id="57933-103">本主题提供 AS2 处理和 BizTalk Server 如何实现它常规简要概述。</span><span class="sxs-lookup"><span data-stu-id="57933-103">This topic provides a brief general overview of AS2 processing and how BizTalk Server implements it.</span></span>  

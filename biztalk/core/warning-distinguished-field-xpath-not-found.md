@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288157"
 ---
 # <a name="warning---distinguished-field-xpath-not-found"></a><span data-ttu-id="ddcac-102">警告-找不到可分辨的字段 XPath</span><span class="sxs-lookup"><span data-stu-id="ddcac-102">Warning - Distinguished Field XPath Not Found</span></span>
 <span data-ttu-id="ddcac-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="ddcac-103">**Error Code**</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "添加一个主机实例 |Microsoft 文档"
-ms.custom: 
+title: 添加一个主机实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98ba10a6-c5e7-4dec-98f1-4e6ba44c2851
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972747"
 ---
 # <a name="add-a-host-instance"></a><span data-ttu-id="3ba57-102">添加一个主机实例</span><span class="sxs-lookup"><span data-stu-id="3ba57-102">Add a Host Instance</span></span>
 

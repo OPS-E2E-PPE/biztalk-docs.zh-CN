@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278797"
 ---
 # <a name="the-messaging-engine"></a><span data-ttu-id="7f88c-102">消息传送的引擎</span><span class="sxs-lookup"><span data-stu-id="7f88c-102">The Messaging Engine</span></span>
 <span data-ttu-id="7f88c-103">本部分将介绍组成 Microsoft BizTalk Server 消息引擎的组件和结构。</span><span class="sxs-lookup"><span data-stu-id="7f88c-103">This section discusses the components and architecture that comprise the Microsoft BizTalk Server Messaging engine.</span></span>  

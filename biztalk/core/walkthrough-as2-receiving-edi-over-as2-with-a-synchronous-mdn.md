@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过使用同步 MDN 的 AS2 接收 EDI |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过使用同步 MDN 的 AS2 接收 EDI |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b63395f-03f4-45e8-a68a-9bbbd8dfa344
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291957"
 ---
 # <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a><span data-ttu-id="7c153-102">演练 (AS2)：使用同步 MDN 通过 AS2 接收 EDI</span><span class="sxs-lookup"><span data-stu-id="7c153-102">Walkthrough (AS2): Receiving EDI over AS2 with a Synchronous MDN</span></span>
 <span data-ttu-id="7c153-103">本演练将介绍创建一个通过 AS2 传输方法接收 EDI 消息并返回异步 MDN 的解决方案的分步操作过程。</span><span class="sxs-lookup"><span data-stu-id="7c153-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDI messages over AS2 transport, returning synchronous MDNs.</span></span>  
@@ -122,7 +123,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="7c153-169">在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。</span><span class="sxs-lookup"><span data-stu-id="7c153-169">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="7c153-170">在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="7c153-170">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="7c153-171">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7c153-171">Select BtsHttpReceive.dll and click **OK**.</span></span>  
+4.  <span data-ttu-id="7c153-170">在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="7c153-170">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="7c153-171">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7c153-171">Select BtsHttpReceive.dll and click **OK**.</span></span>  
   
 5.  <span data-ttu-id="7c153-172">输入`BizTalk HTTP Receive`中**名称**字段，然后再单击**请求限制**。</span><span class="sxs-lookup"><span data-stu-id="7c153-172">Enter `BizTalk HTTP Receive` in the **Name** field, and then click **Request Restrictions**.</span></span>  
   
@@ -136,14 +137,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="7c153-178">在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。</span><span class="sxs-lookup"><span data-stu-id="7c153-178">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="7c153-179">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="7c153-179">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="7c153-180">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="7c153-180">Click **OK**.</span></span>  
+2.  <span data-ttu-id="7c153-179">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="7c153-179">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** dropdown list.</span></span> <span data-ttu-id="7c153-180">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="7c153-180">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="7c153-181">根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。</span><span class="sxs-lookup"><span data-stu-id="7c153-181">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
   
 3.  <span data-ttu-id="7c153-182">选择**应用程序池**，在功能视图选择**BizTalkAppPool**，然后单击**高级设置**中**操作**窗格。</span><span class="sxs-lookup"><span data-stu-id="7c153-182">Select **Application Pools**, in the Features View select **BizTalkAppPool**, and then click **Advanced Settings** in the **Actions** pane.</span></span>  
   
-4.  <span data-ttu-id="7c153-183">在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）**按钮。</span><span class="sxs-lookup"><span data-stu-id="7c153-183">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
+4.  <span data-ttu-id="7c153-183">在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）** 按钮。</span><span class="sxs-lookup"><span data-stu-id="7c153-183">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
   
 5.  <span data-ttu-id="7c153-184">在**应用程序池标识**对话框中，选择**自定义帐户**，然后单击**设置**。</span><span class="sxs-lookup"><span data-stu-id="7c153-184">In the **Application Pool Identity** dialog box, select **Custom account** and then click **Set**.</span></span>  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="7c153-189">在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7c153-189">In the **Select Application Pool** dialog box, select **BizTalkAppPool** and click **OK**.</span></span>  
   
-10. <span data-ttu-id="7c153-190">有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="7c153-190">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
+10. <span data-ttu-id="7c153-190">有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="7c153-190">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
   
 11. <span data-ttu-id="7c153-191">单击**测试设置**并验证没有显示在错误**测试连接**对话框。</span><span class="sxs-lookup"><span data-stu-id="7c153-191">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="7c153-192">单击 **“关闭”**，然后单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="7c153-192">Click **Close**, and then click **OK**.</span></span>  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="7c153-218">在**发送端口属性**对话框中，你发送端口，例如，名称**Send_Payload**。</span><span class="sxs-lookup"><span data-stu-id="7c153-218">In the **Send Port Properties** dialog box, name your send port, for example, **Send_Payload**.</span></span> <span data-ttu-id="7c153-219">选择**文件**为**类型**，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="7c153-219">Select **FILE** for **Type**, and then click **Configure**.</span></span>  
   
-4.  <span data-ttu-id="7c153-220">在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。</span><span class="sxs-lookup"><span data-stu-id="7c153-220">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="7c153-221">保留**文件名**作为**%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="7c153-221">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="7c153-222">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="7c153-222">Click **OK**.</span></span>  
+4.  <span data-ttu-id="7c153-220">在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。</span><span class="sxs-lookup"><span data-stu-id="7c153-220">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="7c153-221">保留**文件名**作为 **%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="7c153-221">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="7c153-222">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="7c153-222">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="7c153-223">有关**发送管道**下拉列表中，接受默认值**PassThruTransmit**。</span><span class="sxs-lookup"><span data-stu-id="7c153-223">For the **Send Pipeline** drop-down, accept the default **PassThruTransmit**.</span></span>  
   

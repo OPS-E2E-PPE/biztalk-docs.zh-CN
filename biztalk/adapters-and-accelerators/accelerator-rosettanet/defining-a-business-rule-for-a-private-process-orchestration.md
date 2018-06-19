@@ -1,11 +1,11 @@
 ---
-title: "为私有进程业务流程中定义的业务规则 |Microsoft 文档"
-ms.custom: 
+title: 为私有进程业务流程中定义的业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -37,7 +37,7 @@ helpviewer_keywords:
 - private processes, business rules
 - policies, creating
 ms.assetid: 5d2b0257-1b15-482b-a562-798b808e9a2d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -46,6 +46,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010526"
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a><span data-ttu-id="8b67a-102">为私有进程业务流程中定义的业务规则</span><span class="sxs-lookup"><span data-stu-id="8b67a-102">Defining a Business Rule for a Private Process Orchestration</span></span>
 <span data-ttu-id="8b67a-103">你可以定义确认专用流程中使用的业务规则。</span><span class="sxs-lookup"><span data-stu-id="8b67a-103">You can define a business rule for use in an acknowledgement private process.</span></span> <span data-ttu-id="8b67a-104">这使你可以动态修改业务规则，而无须停止专用业务流程。</span><span class="sxs-lookup"><span data-stu-id="8b67a-104">This lets you to modify the business rule dynamically without stopping the private-process orchestration.</span></span> <span data-ttu-id="8b67a-105">此过程使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 业务规则引擎，</span><span class="sxs-lookup"><span data-stu-id="8b67a-105">This process uses the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Business Rule Engine.</span></span> <span data-ttu-id="8b67a-106">它包括以下步骤：</span><span class="sxs-lookup"><span data-stu-id="8b67a-106">This process involves the following steps:</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="8b67a-125">在属性窗格中 （左下角），设置**名称**属性设置为适当的词汇和然后按名称**Enter**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-125">In the Property pane (lower left), set the **Name** property to the name of the appropriate vocabulary, and then press **Enter**.</span></span>  
   
-5.  <span data-ttu-id="8b67a-126">展开你刚创建的词汇文件夹，右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-126">Expand the vocabulary folder you just created, right-click **Version 1.0 (not saved)**, and then click **Add New Definition**.</span></span>  
+5.  <span data-ttu-id="8b67a-126">展开你刚创建的词汇文件夹，右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-126">Expand the vocabulary folder you just created, right-click **Version 1.0 (not saved)**, and then click **Add New Definition**.</span></span>  
   
 6.  <span data-ttu-id="8b67a-127">上**词汇定义向导**页上，选择**常量值、 值的范围或设置的值**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-127">On the **Vocabulary Definition Wizard** page, select **Constant Value, Range of Values, or Set of Values**, and then click **Next**.</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-define-get-and-set-elements"></a><span data-ttu-id="8b67a-130">定义 Get 和 Set 元素</span><span class="sxs-lookup"><span data-stu-id="8b67a-130">To define Get and Set elements</span></span>  
   
-1.  <span data-ttu-id="8b67a-131">在业务规则编辑器，在事实数据资源管理器窗格中，在中"若要添加新的词汇过程"，创建的词汇文件夹下右键单击**（不保存） 1.0 版**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="8b67a-131">In Business Rule Composer, in the Facts Explorer pane, under the vocabulary folder created in the "To add a new vocabulary procedure", right-click **Version 1.0 (not saved)**, and then click **Add New Definition**.</span></span>  
+1.  <span data-ttu-id="8b67a-131">在业务规则编辑器，在事实数据资源管理器窗格中，在中"若要添加新的词汇过程"，创建的词汇文件夹下右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**.</span><span class="sxs-lookup"><span data-stu-id="8b67a-131">In Business Rule Composer, in the Facts Explorer pane, under the vocabulary folder created in the "To add a new vocabulary procedure", right-click **Version 1.0 (not saved)**, and then click **Add New Definition**.</span></span>  
   
 2.  <span data-ttu-id="8b67a-132">上**词汇定义向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-132">On the **Vocabulary Definition Wizard** page, select **XML Document Element or Attribute**, and then click **Next**.</span></span>  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-save-and-publish-the-vocabulary"></a><span data-ttu-id="8b67a-141">保存和发布词汇</span><span class="sxs-lookup"><span data-stu-id="8b67a-141">To save and publish the vocabulary</span></span>  
   
-1.  <span data-ttu-id="8b67a-142">在业务规则编辑器，在你创建的词汇文件夹下的事实数据资源管理器窗格中，右击**（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-142">In Business Rule Composer, in the Facts Explorer pane, under the vocabulary folder that you created, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
+1.  <span data-ttu-id="8b67a-142">在业务规则编辑器，在你创建的词汇文件夹下的事实数据资源管理器窗格中，右击 **（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-142">In Business Rule Composer, in the Facts Explorer pane, under the vocabulary folder that you created, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   
 2.  <span data-ttu-id="8b67a-143">在事实数据资源管理器窗格中的在 3A4PurchaseOrderVocabulary 文件夹，右键单击**版本 1.0**，然后选择**发布**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-143">In the Facts Explorer pane, under the 3A4PurchaseOrderVocabulary folder, right-click **Version 1.0**, and then select **Publish**.</span></span>  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  <span data-ttu-id="8b67a-147">在属性窗格中，设置**名称**到相应的策略名称的属性。</span><span class="sxs-lookup"><span data-stu-id="8b67a-147">In the Property pane, set the **Name** property to the appropriate policy name.</span></span>  
   
-4.  <span data-ttu-id="8b67a-148">对于新策略，文件夹下的策略资源管理器窗格中右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-148">In the Policy Explorer pane, under the folder for the new policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span>  
+4.  <span data-ttu-id="8b67a-148">对于新策略，文件夹下的策略资源管理器窗格中右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-148">In the Policy Explorer pane, under the folder for the new policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span>  
   
 5.  <span data-ttu-id="8b67a-149">单击**规则 1**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-149">Click **Rule1**.</span></span>  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 12/01/2017
   
 ### <a name="to-save-publish-and-deploy-the-policy"></a><span data-ttu-id="8b67a-158">保存、发布并部署策略</span><span class="sxs-lookup"><span data-stu-id="8b67a-158">To save, publish, and deploy the policy</span></span>  
   
-1.  <span data-ttu-id="8b67a-159">完成后在业务规则编辑器中的规则，定义你创建的策略文件夹下的策略资源管理器窗格中，右键单击**（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-159">When you have finished defining the rules, in Business Rule Composer, in the Policy Explorer pane, under the policy folder that you created, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
+1.  <span data-ttu-id="8b67a-159">完成后在业务规则编辑器中的规则，定义你创建的策略文件夹下的策略资源管理器窗格中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-159">When you have finished defining the rules, in Business Rule Composer, in the Policy Explorer pane, under the policy folder that you created, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   
 2.  <span data-ttu-id="8b67a-160">在你创建的策略文件夹下的策略资源管理器窗格中，右键单击**版本 1.0**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="8b67a-160">In the Policy Explorer pane, under the policy folder that you created, right-click **Version 1.0**, and then click **Publish**.</span></span>  
   

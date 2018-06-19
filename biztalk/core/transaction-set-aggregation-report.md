@@ -1,14 +1,14 @@
 ---
-title: "事务集聚合报表 |Microsoft 文档"
-ms.custom: 
+title: 事务集聚合报表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a6e1417e-e0c6-4d30-aab5-d9bfe14cd4b8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279677"
 ---
 # <a name="transaction-set-aggregation-report"></a><span data-ttu-id="f3851-102">事务集聚合报告</span><span class="sxs-lookup"><span data-stu-id="f3851-102">Transaction Set Aggregation Report</span></span>
 <span data-ttu-id="f3851-103">此报告提供了单个记录，用于说明共享同一事务集 ID、EDI 编码类型、发送方、接收方和方向的 EDI 事务集的数量。</span><span class="sxs-lookup"><span data-stu-id="f3851-103">This report provides a single record that shows the number of EDI transaction sets that share the same Transaction Set ID, EDI encoding type, sender party, receiver party, and direction.</span></span> <span data-ttu-id="f3851-104">此报告不提供有关单个事务集的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f3851-104">This report does not provide details about the individual transaction sets.</span></span>  

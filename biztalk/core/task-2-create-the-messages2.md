@@ -1,14 +1,14 @@
 ---
-title: "任务 2︰ 创建 Messages2 |Microsoft 文档"
-ms.custom: 
+title: 任务 2︰ 创建 Messages2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2db67595-bcb6-455b-ad81-07b4426b7ea4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279077"
 ---
 # <a name="task-2-create-the-messages"></a><span data-ttu-id="ffc1e-102">任务 2： 创建消息</span><span class="sxs-lookup"><span data-stu-id="ffc1e-102">Task 2: Create the Messages</span></span>
 <span data-ttu-id="ffc1e-103">请创建以下消息，业务流程中将用到这些消息。</span><span class="sxs-lookup"><span data-stu-id="ffc1e-103">Create the following Messages, which will be used in the orchestration.</span></span>  

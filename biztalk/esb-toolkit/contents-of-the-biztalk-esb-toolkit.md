@@ -1,14 +1,14 @@
 ---
-title: "BizTalk ESB 工具包的内容 |Microsoft 文档"
-ms.custom: 
+title: BizTalk ESB 工具包的内容 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e7114df-dadf-49ab-b024-44d84e47faa5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290613"
 ---
 # <a name="contents-of-the-biztalk-esb-toolkit"></a><span data-ttu-id="d84d7-102">BizTalk ESB 工具包的内容</span><span class="sxs-lookup"><span data-stu-id="d84d7-102">Contents of the BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="d84d7-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供体系结构指南、 模式和实践，以及 BizTalk Server 和.NET Framework 组件，用于简化的开发在 Microsoft 平台上的企业级解决方案的集合。</span><span class="sxs-lookup"><span data-stu-id="d84d7-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides architectural guidance, patterns and practices, and a collection of BizTalk Server and .NET Framework components to simplify the development of enterprise-scale solutions on the Microsoft platform.</span></span> <span data-ttu-id="d84d7-104">该工具包还提供功能，可帮助开发人员扩展现有消息传送和集成解决方案。</span><span class="sxs-lookup"><span data-stu-id="d84d7-104">The toolkit also provides capabilities to help developers extend existing messaging and integration solutions.</span></span> <span data-ttu-id="d84d7-105">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持和实现松散耦合的消息传递环境，它简化了生成动态基于消息的企业应用程序的进程的组件进行互操作的集合组成。</span><span class="sxs-lookup"><span data-stu-id="d84d7-105">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] consists of a collection of interoperating components that support and implement a loosely coupled messaging environment that simplifies the process of building dynamic message-based enterprise applications.</span></span>  

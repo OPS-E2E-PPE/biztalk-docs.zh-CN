@@ -1,14 +1,14 @@
 ---
-title: "有关设计 BizTalk 应用程序的国际注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关设计 BizTalk 应用程序的国际注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9daaaaf7-6149-4e62-9e9b-b6356fc820d2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974571"
 ---
 # <a name="international-considerations-for-designing-biztalk-applications"></a><span data-ttu-id="a8e93-102">有关设计 BizTalk 应用程序的国际注意事项</span><span class="sxs-lookup"><span data-stu-id="a8e93-102">International Considerations for Designing BizTalk Applications</span></span>
 <span data-ttu-id="a8e93-103">强烈建议你查看以下已知问题，当你开发国际时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序。</span><span class="sxs-lookup"><span data-stu-id="a8e93-103">It is strongly recommended that you review the following known issues when you develop your international [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications.</span></span>  

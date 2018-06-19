@@ -1,15 +1,15 @@
 ---
-title: "BizTalk ESB 工具包示例应用程序 |Microsoft 文档"
-description: "安装 ESB 工具包示例应用程序，并获取有关如何在 BizTalk Server 中使用它们快速链接"
-caps.latest.revision: "5"
+title: BizTalk ESB 工具包示例应用程序 |Microsoft 文档
+description: 安装 ESB 工具包示例应用程序，并获取有关如何在 BizTalk Server 中使用它们快速链接
+caps.latest.revision: 5
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 188f8e1f-26fb-4ea6-8e2e-f2ae3e46ca20
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290685"
 ---
 # <a name="biztalk-esb-toolkit-sample-applications"></a><span data-ttu-id="07b25-103">BizTalk ESB 工具包示例应用程序</span><span class="sxs-lookup"><span data-stu-id="07b25-103">BizTalk ESB Toolkit Sample Applications</span></span>
 <span data-ttu-id="07b25-104">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括几个示例应用程序可以安装和运行，以查看如何 ESB 工作原理以及如何使用某些 ESB 管道组件。</span><span class="sxs-lookup"><span data-stu-id="07b25-104">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes several sample applications that you can install and run to see how the ESB works and how it uses some of the ESB pipeline components.</span></span> <span data-ttu-id="07b25-105">您可以调整和修改的代码和在这些示例用于自己的应用程序的技术。</span><span class="sxs-lookup"><span data-stu-id="07b25-105">You can adapt and modify the code and techniques used in the samples for your own applications.</span></span>  

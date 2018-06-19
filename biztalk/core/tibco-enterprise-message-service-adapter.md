@@ -1,15 +1,15 @@
 ---
-title: "TIBCO Enterprise 消息服务适配器 |Microsoft 文档"
-description: "安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 TIBCO EMS BizTalk Server 中使用 BizTalk 适配器时添加异常处理"
-ms.custom: 
+title: TIBCO Enterprise 消息服务适配器 |Microsoft 文档
+description: 安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 TIBCO EMS BizTalk Server 中使用 BizTalk 适配器时添加异常处理
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 362556d2-295c-4496-a429-ad7ecc44db76
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013716"
 ---
 # <a name="tibco-enterprise-message-service-adapter"></a><span data-ttu-id="05bf1-103">TIBCO Enterprise Message Service 适配器</span><span class="sxs-lookup"><span data-stu-id="05bf1-103">TIBCO Enterprise Message Service Adapter</span></span>
 <span data-ttu-id="05bf1-104">Microsoft BizTalk Adapter for TIBCO 企业消息服务使你可以发布和订阅队列和主题使用 btsBizTalkServerNoVersion TIBCO EMS 由管理。</span><span class="sxs-lookup"><span data-stu-id="05bf1-104">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service enables you to publish and subscribe to queues and topics managed by TIBCO EMS using btsBizTalkServerNoVersion.</span></span>  <span data-ttu-id="05bf1-105">以下各节讨论入门、 创建应用程序，和的详细信息。</span><span class="sxs-lookup"><span data-stu-id="05bf1-105">The following sections discuss getting started, creating applications, and more.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 配置并启动应用程序 1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置并启动应用程序 1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5cb061ca-acf4-4de4-a634-b3bb98876989
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280005"
 ---
 # <a name="step-2-configure-and-start-the-application"></a><span data-ttu-id="9e26a-102">步骤 2： 配置并启动应用程序</span><span class="sxs-lookup"><span data-stu-id="9e26a-102">Step 2: Configure and Start the Application</span></span>
 <span data-ttu-id="9e26a-103">![步骤 2 / 3](../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="9e26a-103">![Step 2 of 3](../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="9e26a-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="9e26a-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="9e26a-105">**目标：**在此步骤中，可以配置和启动 EAISolution 应用程序。</span><span class="sxs-lookup"><span data-stu-id="9e26a-105">**Objective:** In this step, you configure and start the EAISolution application.</span></span>  
+ <span data-ttu-id="9e26a-105">**目标：** 在此步骤中，可以配置和启动 EAISolution 应用程序。</span><span class="sxs-lookup"><span data-stu-id="9e26a-105">**Objective:** In this step, you configure and start the EAISolution application.</span></span>  
   
- <span data-ttu-id="9e26a-106">**用途：**配置主要是指绑定。</span><span class="sxs-lookup"><span data-stu-id="9e26a-106">**Purpose:** The configuration is mostly about binding.</span></span>  <span data-ttu-id="9e26a-107">绑定可以在逻辑终结点（如业务流程端口或角色链接）与物理终结点（如发送/接收端口或参与方）之间创建映射。</span><span class="sxs-lookup"><span data-stu-id="9e26a-107">A binding creates a mapping between a logical endpoint, such as an orchestration port or a role link, and a physical endpoint, such as a send and receive port or party.</span></span> <span data-ttu-id="9e26a-108">这样即可在 BizTalk 业务解决方案的不同组件之间进行通信。</span><span class="sxs-lookup"><span data-stu-id="9e26a-108">This enables communication between different components of a BizTalk business solution.</span></span> <span data-ttu-id="9e26a-109">使用 BizTalk Server 管理控制台可以创建绑定。</span><span class="sxs-lookup"><span data-stu-id="9e26a-109">You can create bindings by using the BizTalk Server Administration console.</span></span>  
+ <span data-ttu-id="9e26a-106">**用途：** 配置主要是指绑定。</span><span class="sxs-lookup"><span data-stu-id="9e26a-106">**Purpose:** The configuration is mostly about binding.</span></span>  <span data-ttu-id="9e26a-107">绑定可以在逻辑终结点（如业务流程端口或角色链接）与物理终结点（如发送/接收端口或参与方）之间创建映射。</span><span class="sxs-lookup"><span data-stu-id="9e26a-107">A binding creates a mapping between a logical endpoint, such as an orchestration port or a role link, and a physical endpoint, such as a send and receive port or party.</span></span> <span data-ttu-id="9e26a-108">这样即可在 BizTalk 业务解决方案的不同组件之间进行通信。</span><span class="sxs-lookup"><span data-stu-id="9e26a-108">This enables communication between different components of a BizTalk business solution.</span></span> <span data-ttu-id="9e26a-109">使用 BizTalk Server 管理控制台可以创建绑定。</span><span class="sxs-lookup"><span data-stu-id="9e26a-109">You can create bindings by using the BizTalk Server Administration console.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="9e26a-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="9e26a-110">Prerequisites</span></span>  
  <span data-ttu-id="9e26a-111">在开始此步骤之前，请注意以下要求：</span><span class="sxs-lookup"><span data-stu-id="9e26a-111">Note the following requirements before you begin this step:</span></span>  

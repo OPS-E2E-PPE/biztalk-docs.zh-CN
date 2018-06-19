@@ -1,14 +1,14 @@
 ---
-title: "嵌套位置记录 |Microsoft 文档"
-ms.custom: 
+title: 嵌套位置记录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e205e9d-f740-4177-b45a-5e1baadae99a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263237"
 ---
 # <a name="nested-positional-records"></a><span data-ttu-id="dd4ea-102">嵌套的位置记录</span><span class="sxs-lookup"><span data-stu-id="dd4ea-102">Nested Positional Records</span></span>
 <span data-ttu-id="dd4ea-103">如果允许嵌套的位置记录**Max Occurs**的子记录的属性设置为正整数。</span><span class="sxs-lookup"><span data-stu-id="dd4ea-103">Nested positional records are allowed if the **Max Occurs** property of child records is set to a positive integer.</span></span> <span data-ttu-id="dd4ea-104">字段自动计算应能够处理新的深度。</span><span class="sxs-lookup"><span data-stu-id="dd4ea-104">Field autocalculation should be able to handle the new depth.</span></span> <span data-ttu-id="dd4ea-105">但是，此行为方式已修改。</span><span class="sxs-lookup"><span data-stu-id="dd4ea-105">However, there is a modification to the way this behaves.</span></span> <span data-ttu-id="dd4ea-106">具体而言，由于可能存在空分隔符，所以仅在满足以下条件之一时，字段位置的自动计算才能进行：</span><span class="sxs-lookup"><span data-stu-id="dd4ea-106">Specifically, because of the possibility for null delimiters, autocalculation of field positions will function only if one of the following conditions is met:</span></span>  

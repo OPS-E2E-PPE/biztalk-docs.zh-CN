@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289405"
 ---
 # <a name="what-is-the-wcf-nettcp-adapter"></a><span data-ttu-id="c36d1-103">什么是 WCF-NetTcp 适配器？</span><span class="sxs-lookup"><span data-stu-id="c36d1-103">What Is the WCF-NetTcp Adapter?</span></span>
 <span data-ttu-id="c36d1-104">WCF-NetTcp 适配器在服务和客户端都是基于 WCF 的环境中提供连接的跨计算机或跨进程通信。</span><span class="sxs-lookup"><span data-stu-id="c36d1-104">The WCF-NetTcp adapter provides connected cross-computer or cross-process communication in an environment in which both services and clients are WCF based.</span></span> <span data-ttu-id="c36d1-105">它提供了对 SOAP 安全性、可靠性和事务功能的完全访问权限。</span><span class="sxs-lookup"><span data-stu-id="c36d1-105">It provides full access to SOAP security, reliability, and transaction features.</span></span> <span data-ttu-id="c36d1-106">此适配器使用 TCP 传输，消息采用二进制编码。</span><span class="sxs-lookup"><span data-stu-id="c36d1-106">This adapter uses the TCP transport, and messages have binary encoding.</span></span>  

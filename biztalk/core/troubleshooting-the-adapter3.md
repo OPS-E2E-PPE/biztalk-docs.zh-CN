@@ -1,14 +1,14 @@
 ---
-title: "解决博士 Edwards OneWorld 适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决博士 Edwards OneWorld 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dd6a951-f113-4f43-b43f-057a239d05c4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015984"
 ---
 # <a name="troubleshooting-the-adapter"></a><span data-ttu-id="c12f2-102">故障排除适配器</span><span class="sxs-lookup"><span data-stu-id="c12f2-102">Troubleshooting the Adapter</span></span>
 <span data-ttu-id="c12f2-103">本主题包含的信息可以帮助您确定和解决使用 JD Edwards OneWorld 的 Microsoft BizTalk 适配器时可能遇到的问题。</span><span class="sxs-lookup"><span data-stu-id="c12f2-103">This topic contains information to help you identify and resolve issues that you might experience while using Microsoft BizTalk Adapter for JD Edwards OneWorld.</span></span>  

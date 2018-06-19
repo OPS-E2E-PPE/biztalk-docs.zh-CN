@@ -1,14 +1,14 @@
 ---
-title: "BAM API 示例 |Microsoft 文档"
-ms.custom: 
+title: BAM API 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32a925f2-c7f4-4111-9c59-8865f15c6a89
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710448"
 ---
 # <a name="bam-api-biztalk-server-sample"></a><span data-ttu-id="5998e-102">BAM API（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="5998e-102">BAM API (BizTalk Server Sample)</span></span>
 <span data-ttu-id="5998e-103">BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以保存可以监视的关键信息。</span><span class="sxs-lookup"><span data-stu-id="5998e-103">The BAM API sample illustrates how to incorporate calls to the BAM API into an application to save key information that you can monitor.</span></span>  
@@ -92,7 +93,7 @@ ms.lasthandoff: 02/28/2018
  <span data-ttu-id="5998e-146">除了 Visual Studio 解决方案中，该示例还包含定义的活动的 Microsoft Excel 文件。</span><span class="sxs-lookup"><span data-stu-id="5998e-146">In addition to the Visual Studio solution, the sample also contains a Microsoft Excel file that defines the activities.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="5998e-147">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="5998e-147">Where to Find This Sample</span></span>  
- <span data-ttu-id="5998e-148">你可以找到在此示例*\<示例路径\>*\BAM\BamApiSample。</span><span class="sxs-lookup"><span data-stu-id="5998e-148">You can find this sample at *\<Samples Path\>*\BAM\BamApiSample.</span></span>  
+ <span data-ttu-id="5998e-148">你可以找到在此示例*\<示例路径\>* \BAM\BamApiSample。</span><span class="sxs-lookup"><span data-stu-id="5998e-148">You can find this sample at *\<Samples Path\>* \BAM\BamApiSample.</span></span>  
   
  <span data-ttu-id="5998e-149">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="5998e-149">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -116,16 +117,16 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="run-the-bam-api-sample"></a><span data-ttu-id="5998e-182">运行 BAM API 示例</span><span class="sxs-lookup"><span data-stu-id="5998e-182">Run the BAM API sample</span></span>  
   
-1.  <span data-ttu-id="5998e-183">打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\ BamApiSample\setup.bat。</span><span class="sxs-lookup"><span data-stu-id="5998e-183">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\ BamApiSample\setup.bat.</span></span>  
+1.  <span data-ttu-id="5998e-183">打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\ BamApiSample\setup.bat。</span><span class="sxs-lookup"><span data-stu-id="5998e-183">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\ BamApiSample\setup.bat.</span></span>  
   
-2.  <span data-ttu-id="5998e-184">作为管理员，启动 Visual Studio 并打开*\<示例路径\>*\BAM\ BamApiSample\BamApiSample.sln 解决方案。</span><span class="sxs-lookup"><span data-stu-id="5998e-184">Start Visual Studio as Administrator, and open the *\<Samples Path\>*\BAM\ BamApiSample\BamApiSample.sln solution.</span></span> 
+2.  <span data-ttu-id="5998e-184">作为管理员，启动 Visual Studio 并打开*\<示例路径\>* \BAM\ BamApiSample\BamApiSample.sln 解决方案。</span><span class="sxs-lookup"><span data-stu-id="5998e-184">Start Visual Studio as Administrator, and open the *\<Samples Path\>* \BAM\ BamApiSample\BamApiSample.sln solution.</span></span> 
   
     > [!IMPORTANT]
     >  <span data-ttu-id="5998e-185">必须注释掉 BamApiSample.cs 文件中的行 `//#define Interceptor`。请勿从该行中删除 “//”。</span><span class="sxs-lookup"><span data-stu-id="5998e-185">The line `//#define Interceptor` in the BamApiSample.cs file must be commented out. Do not remove the “//” from this line.</span></span> <span data-ttu-id="5998e-186">BAM API 示例只使用不在 `#if Interceptor` 的预处理器指令内的代码。</span><span class="sxs-lookup"><span data-stu-id="5998e-186">The BAM API sample uses only the code that is not inside an `#if Interceptor` preprocessor directive.</span></span>  
   
 3.  <span data-ttu-id="5998e-187">生成解决方案。</span><span class="sxs-lookup"><span data-stu-id="5998e-187">Build the solution.</span></span>  
   
-4.  <span data-ttu-id="5998e-188">运行*\<示例路径\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe。</span><span class="sxs-lookup"><span data-stu-id="5998e-188">Run *\<Samples Path\>*\BAM\BamApiSample\bin\debug\BamApiSample.exe.</span></span>  
+4.  <span data-ttu-id="5998e-188">运行*\<示例路径\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe。</span><span class="sxs-lookup"><span data-stu-id="5998e-188">Run *\<Samples Path\>* \BAM\BamApiSample\bin\debug\BamApiSample.exe.</span></span>  
   
      <span data-ttu-id="5998e-189">输出将如下所示︰</span><span class="sxs-lookup"><span data-stu-id="5998e-189">The output will resemble the following:</span></span>  
   

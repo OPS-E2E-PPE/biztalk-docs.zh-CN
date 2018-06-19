@@ -1,14 +1,14 @@
 ---
-title: "如何关闭全局跟踪 |Microsoft 文档"
-ms.custom: 
+title: 如何关闭全局跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eae3059a-cbdd-47c4-84cd-edfb5480b9fa
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007094"
 ---
 # <a name="how-to-turn-off-global-tracking"></a><span data-ttu-id="86448-102">如何关闭全局跟踪</span><span class="sxs-lookup"><span data-stu-id="86448-102">How to Turn Off Global Tracking</span></span>
 <span data-ttu-id="86448-103">默认情况下，安装 BizTalk Server 时，被启用全局跟踪。</span><span class="sxs-lookup"><span data-stu-id="86448-103">By default, global tracking is enabled when you install BizTalk Server.</span></span> <span data-ttu-id="86448-104">BizTalk 跟踪 (BizTalkDTADb) 数据库的大小随着 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理系统上的数据而增大。</span><span class="sxs-lookup"><span data-stu-id="86448-104">The BizTalk Tracking (BizTalkDTADb) database grows in size as [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes data on your system.</span></span> <span data-ttu-id="86448-105">如果 BizTalk 跟踪数据库的大小导致磁盘性能下降，则可以从跟踪数据库中清除数据。</span><span class="sxs-lookup"><span data-stu-id="86448-105">If the size of the BizTalk Tracking database causes poor disk performance, you can purge the data from the Tracking database.</span></span> <span data-ttu-id="86448-106">如果存在通过清除 BizTalk 跟踪数据库暂时得以解决的性能问题，并且希望对 BizTalk 进行控制以便不再收集跟踪信息，则可能要考虑禁用全局跟踪功能。</span><span class="sxs-lookup"><span data-stu-id="86448-106">If you are having performance issues that are momentarily addressed by purging the BizTalk tracking database, and you want to configure BizTalk to no longer collect tracking information, you may want to consider turning off global tracking.</span></span>  

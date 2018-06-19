@@ -1,14 +1,14 @@
 ---
-title: "路线上负载增加示例的工作原理 |Microsoft 文档"
-ms.custom: 
+title: 路线上负载增加示例的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f4f318c-b955-4a3d-88db-c0d324b63b21
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974891"
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a><span data-ttu-id="82af5-102">路线上负载增加示例的工作原理</span><span class="sxs-lookup"><span data-stu-id="82af5-102">How the Itinerary On-Ramp Sample Works</span></span>
 <span data-ttu-id="82af5-103">该示例路线测试客户端应用程序生成一组包含你在客户端应用程序窗口中，使用控件创建路线的 SOAP 标头从磁盘加载指定的消息文件、 将路线标头追加到消息、 和将其提交到 ESB 通过路线入口进行处理。</span><span class="sxs-lookup"><span data-stu-id="82af5-103">The sample Itinerary Test Client application builds a set of SOAP headers that contain the itinerary that you create using the controls in the client application window, loads the specified message file from disk, appends the itinerary headers to the message, and submits it to the ESB through an Itinerary on-ramp for processing.</span></span> <span data-ttu-id="82af5-104">如果路线生成响应，应用程序收集响应，并将其显示在应用程序窗口。</span><span class="sxs-lookup"><span data-stu-id="82af5-104">If the itinerary generates a response, the application collects the response and displays it in the application window.</span></span>  
@@ -54,13 +55,13 @@ ms.lasthandoff: 11/28/2017
 ```  
   
 > [!NOTE]
->  <span data-ttu-id="82af5-109">每个的实际内容**\<冲突解决程序\>**元素不包含使用在前面的列表中将行的空白字符。</span><span class="sxs-lookup"><span data-stu-id="82af5-109">The actual content of each **\<Resolvers\>** element does not contain the white space characters used to wrap the lines in the preceding listing.</span></span>  
+>  <span data-ttu-id="82af5-109">每个的实际内容**\<冲突解决程序\>** 元素不包含使用在前面的列表中将行的空白字符。</span><span class="sxs-lookup"><span data-stu-id="82af5-109">The actual content of each **\<Resolvers\>** element does not contain the white space characters used to wrap the lines in the preceding listing.</span></span>  
   
  <span data-ttu-id="82af5-110">以下是在路线前面的配置中定义的三个步骤：</span><span class="sxs-lookup"><span data-stu-id="82af5-110">The following are the three steps defined in the itinerary preceding configuration:</span></span>  
   
 1.  <span data-ttu-id="82af5-111">执行 Microsoft.Practices.ESB.Services.Transform 业务流程将消息转换与使用 BizTalk 业务规则引擎 (BRE) ResolverMap 策略。</span><span class="sxs-lookup"><span data-stu-id="82af5-111">Execute the Microsoft.Practices.ESB.Services.Transform orchestration to transform the message with the ResolverMap policy using BizTalk Business Rules Engine (BRE).</span></span>  
   
-2.  <span data-ttu-id="82af5-112">执行 Microsoft.Practices.ESB.Services.Routing 业务流程将已转换的消息路由到多个位置使用路由 Microsoft.Practices.ESB.Services.Routing1。</span><span class="sxs-lookup"><span data-stu-id="82af5-112">Execute the Microsoft.Practices.ESB.Services.Routing orchestration to route the transformed message to multiple locations using the routing Microsoft.Practices.ESB.Services.Routing1.</span></span> <span data-ttu-id="82af5-113"> **\<ResolverGroups\>** 部分包含**\<冲突解决程序\>**标识符，用于定义连接字符串的元素。</span><span class="sxs-lookup"><span data-stu-id="82af5-113">The **\<ResolverGroups\>** section contains a **\<Resolvers\>** element with this identifier, which defines the connection strings.</span></span>  
+2.  <span data-ttu-id="82af5-112">执行 Microsoft.Practices.ESB.Services.Routing 业务流程将已转换的消息路由到多个位置使用路由 Microsoft.Practices.ESB.Services.Routing1。</span><span class="sxs-lookup"><span data-stu-id="82af5-112">Execute the Microsoft.Practices.ESB.Services.Routing orchestration to route the transformed message to multiple locations using the routing Microsoft.Practices.ESB.Services.Routing1.</span></span> <span data-ttu-id="82af5-113"> **\<ResolverGroups\>** 部分包含**\<冲突解决程序\>** 标识符，用于定义连接字符串的元素。</span><span class="sxs-lookup"><span data-stu-id="82af5-113">The **\<ResolverGroups\>** section contains a **\<Resolvers\>** element with this identifier, which defines the connection strings.</span></span>  
   
 3.  <span data-ttu-id="82af5-114">执行本示例提供 ProcessAndRespond 业务流程。</span><span class="sxs-lookup"><span data-stu-id="82af5-114">Execute the ProcessAndRespond orchestration provided with this sample.</span></span> <span data-ttu-id="82af5-115">作为响应发送此业务流程的实现回路线测试客户端的请求消息的副本。</span><span class="sxs-lookup"><span data-stu-id="82af5-115">The implementation of this orchestration sends as the response a copy of the request message back to the Itinerary Test Client.</span></span>  
   

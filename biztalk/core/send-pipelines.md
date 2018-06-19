@@ -1,11 +1,11 @@
 ---
-title: "发送管道 |Microsoft 文档"
-ms.custom: 
+title: 发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send pipelines, message flow
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - pipelines, send pipelines
 - messages, send pipelines
 ms.assetid: c963b2d8-3b2b-4575-8105-c750deae8189
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270173"
 ---
 # <a name="send-pipelines"></a><span data-ttu-id="eb4a7-102">发送管道</span><span class="sxs-lookup"><span data-stu-id="eb4a7-102">Send Pipelines</span></span>
 <span data-ttu-id="eb4a7-103">下图显示消息处理工作流，其中突出显示了发送管道：</span><span class="sxs-lookup"><span data-stu-id="eb4a7-103">The following figure shows the message processing workflow, highlighting the send pipeline.</span></span>  

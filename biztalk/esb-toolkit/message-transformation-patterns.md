@@ -1,14 +1,14 @@
 ---
-title: "消息转换模式 |Microsoft 文档"
-ms.custom: 
+title: 消息转换模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aef41642-d33b-4878-be65-ef336530647f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294813"
 ---
 # <a name="message-transformation-patterns"></a><span data-ttu-id="5c28a-102">消息转换模式</span><span class="sxs-lookup"><span data-stu-id="5c28a-102">Message Transformation Patterns</span></span>
 <span data-ttu-id="5c28a-103">消息转换模式定义转换以进行其他处理，或以匹配的消息将发送到服务的预期的文档格式的消息的经验证的的准则。</span><span class="sxs-lookup"><span data-stu-id="5c28a-103">Message transformation patterns define proven guidelines for transforming messages for additional processing or to match the expected document format of the service to which the message will be sent.</span></span> <span data-ttu-id="5c28a-104">一条消息可能需要转换，因为收到的消息的结构不在预期的标准，或者必须将消息从非标准的格式转换为 XML。</span><span class="sxs-lookup"><span data-stu-id="5c28a-104">A message may require transformation because the structure of the received message is not in the expected standard or because the message must be converted from a non-standard format to XML.</span></span>  

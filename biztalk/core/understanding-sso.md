@@ -1,11 +1,11 @@
 ---
-title: "了解 SSO |Microsoft 文档"
-ms.custom: 
+title: 了解 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, about SSO
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Extranet Single Sign-On (Web SSO)
 - Server-Based Intranet Single Sign-On
 ms.assetid: 03f78a7b-4880-408f-9733-d07e19775d21
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286981"
 ---
 # <a name="understanding-sso"></a><span data-ttu-id="8983d-102">了解 SSO</span><span class="sxs-lookup"><span data-stu-id="8983d-102">Understanding SSO</span></span>
 <span data-ttu-id="8983d-103">若要了解企业单一登录，最好今天查看上单一登录服务可用的三种类型： Windows 集成的 extranet 和 intranet。</span><span class="sxs-lookup"><span data-stu-id="8983d-103">To understand Enterprise Single Sign-On, it is useful to look at the three types of Single Sign-On services available today: Windows integrated, extranet, and intranet.</span></span> <span data-ttu-id="8983d-104">下面对这三种类型进行了说明，其中将企业单一登录归为第三个类别。</span><span class="sxs-lookup"><span data-stu-id="8983d-104">These are described below, with Enterprise Single Sign-On falling into the third category.</span></span>  

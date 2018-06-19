@@ -1,14 +1,14 @@
 ---
-title: "创建自定义管道处理 JSON 消息 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义管道处理 JSON 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b04faad1-b14b-4146-82c7-88a38d2a46a5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005006"
 ---
 # <a name="create-custom-pipelines-to-process-json-messages"></a><span data-ttu-id="563ca-102">创建处理 JSON 消息的自定义管道</span><span class="sxs-lookup"><span data-stu-id="563ca-102">Create custom pipelines to process JSON messages</span></span>
 > [!NOTE]

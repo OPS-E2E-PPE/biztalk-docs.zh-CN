@@ -1,14 +1,14 @@
 ---
-title: "字符编码 |Microsoft 文档"
-ms.custom: 
+title: 字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a0c21c8-3318-4533-9734-89302527cb67
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014676"
 ---
 # <a name="character-encoding"></a><span data-ttu-id="9e367-102">字符编码</span><span class="sxs-lookup"><span data-stu-id="9e367-102">Character Encoding</span></span>
 <span data-ttu-id="9e367-103">TIBCO Enterprise Message Service (EMS) 支持在由 TIBCO EMS 的 BizTalk 适配器传输到 EMS 的消息中使用不同的字符编码。</span><span class="sxs-lookup"><span data-stu-id="9e367-103">TIBCO Enterprise Message Service (EMS) supports different character encoding in the messages transmitted to EMS by BizTalk Adapter for TIBCO EMS.</span></span> <span data-ttu-id="9e367-104">消息是使用默认的 UTF-8 进行编码的。</span><span class="sxs-lookup"><span data-stu-id="9e367-104">Messages are encoded using the default UTF-8 encoding.</span></span> <span data-ttu-id="9e367-105">当接收消息，适配器确定消息编码，以及提供到的消息之前将相应的字符串转换为 utf-8 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="9e367-105">When receiving messages, the adapter determines the encoding of the message and converts the appropriate strings to UTF-8 before providing the message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="9e367-106">所有字符转换都使用 Microsoft .NET Framework 类；因此，适配器支持通过此相同框架转换字符。</span><span class="sxs-lookup"><span data-stu-id="9e367-106">All character conversions use the Microsoft .NET Framework classes; therefore the adapter supports the character conversions provided by this same framework.</span></span>  

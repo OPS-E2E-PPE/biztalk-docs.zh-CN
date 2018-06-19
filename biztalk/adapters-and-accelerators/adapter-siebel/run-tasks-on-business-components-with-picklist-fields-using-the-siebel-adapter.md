@@ -1,17 +1,17 @@
 ---
-title: "使用选择列表字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作 |Microsoft 文档"
-ms.custom: 
+title: 使用选择列表字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, perform operations with picklist fields by using BizTalk Server
 - business components, performing operations with picklist fields by using BizTalk Server
 ms.assetid: b62d32fa-903a-442b-951b-2343ef719bd0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226829"
 ---
 # <a name="run-operations-on-business-components-with-picklist-fields-using-biztalk-server-and-the-siebel-adapter"></a><span data-ttu-id="a812d-102">使用选择列表字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作</span><span class="sxs-lookup"><span data-stu-id="a812d-102">Run Operations on Business Components with Picklist Fields Using BizTalk Server and the Siebel adapter</span></span>
 <span data-ttu-id="a812d-103">Siebel 选择列表字段类型构成的可能的值集合从哪种客户端可以指定要传递到 Siebel 系统的某些值。</span><span class="sxs-lookup"><span data-stu-id="a812d-103">A Siebel picklist field type constitutes a collection of possible values from which client may specify a certain value to be passed onto the Siebel system.</span></span> <span data-ttu-id="a812d-104">换而言之，选择列表字段包含字段接受的值的列表。</span><span class="sxs-lookup"><span data-stu-id="a812d-104">In other words, a picklist field contains a list of accepted values for a field.</span></span> <span data-ttu-id="a812d-105">有关选择列表和它们的类型的详细信息，请参阅 Siebel 文档。</span><span class="sxs-lookup"><span data-stu-id="a812d-105">For more information about picklist and their types, refer to Siebel documentation.</span></span> <span data-ttu-id="a812d-106">有关详细信息，如何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]上与选择列表字段的业务组件支持操作请参阅[Siebel 业务组件上的操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md)。</span><span class="sxs-lookup"><span data-stu-id="a812d-106">For more information about how the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] supports operations on business components with picklist fields, see [Operations on Business Components in Siebel](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md).</span></span>  

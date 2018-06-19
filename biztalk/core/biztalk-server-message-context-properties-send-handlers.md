@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 消息上下文属性 （发送处理程序） |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 消息上下文属性 （发送处理程序） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a065ba89-9fdb-47dc-9021-fb95cf347cdc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013836"
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a><span data-ttu-id="273d1-102">BizTalk Server 消息上下文属性 （发送处理程序）</span><span class="sxs-lookup"><span data-stu-id="273d1-102">BizTalk Server Message Context Properties (Send Handlers)</span></span>
 <span data-ttu-id="273d1-103">除了消息负载之外，消息包含的补充信息必须在运行时从 BizTalk Server 业务流程访问。</span><span class="sxs-lookup"><span data-stu-id="273d1-103">In addition to the message payload, the supplementary information that a message contains must be accessible from the BizTalk Server orchestration at run time.</span></span>  
@@ -29,9 +30,9 @@ ms.lasthandoff: 11/07/2017
 |<span data-ttu-id="273d1-115">答复主题</span><span class="sxs-lookup"><span data-stu-id="273d1-115">Reply Subject</span></span>|<span data-ttu-id="273d1-116">string</span><span class="sxs-lookup"><span data-stu-id="273d1-116">string</span></span>|<span data-ttu-id="273d1-117">是</span><span class="sxs-lookup"><span data-stu-id="273d1-117">Yes</span></span>|<span data-ttu-id="273d1-118">提供答复消息的主题的业务流程（相关时）。</span><span class="sxs-lookup"><span data-stu-id="273d1-118">Orchestration provides a subject for reply messages, when pertinent.</span></span> <span data-ttu-id="273d1-119">默认值为 Null。</span><span class="sxs-lookup"><span data-stu-id="273d1-119">Default value is Null.</span></span>|  
   
 ## <a name="getting-a-tibco-reply"></a><span data-ttu-id="273d1-120">获取 TIBCO 答复</span><span class="sxs-lookup"><span data-stu-id="273d1-120">Getting a TIBCO Reply</span></span>  
- <span data-ttu-id="273d1-121">**问题：**为 TIBCO 会合读取和处理内部业务流程的答复使用者，以便你可以使用它作为发送主题响应如何执行 BizTalk 适配器？</span><span class="sxs-lookup"><span data-stu-id="273d1-121">**Question:** How does BizTalk Adapter for TIBCO Rendezvous read and manipulate the reply subject inside an orchestration so that you can use it as the send subject for the response?</span></span> <span data-ttu-id="273d1-122">适配器如何获得来自 Rendezvous 的传入消息的消息上下文？</span><span class="sxs-lookup"><span data-stu-id="273d1-122">How does the adapter get to the message context of an incoming message from Rendezvous?</span></span>  
+ <span data-ttu-id="273d1-121">**问题：** 为 TIBCO 会合读取和处理内部业务流程的答复使用者，以便你可以使用它作为发送主题响应如何执行 BizTalk 适配器？</span><span class="sxs-lookup"><span data-stu-id="273d1-121">**Question:** How does BizTalk Adapter for TIBCO Rendezvous read and manipulate the reply subject inside an orchestration so that you can use it as the send subject for the response?</span></span> <span data-ttu-id="273d1-122">适配器如何获得来自 Rendezvous 的传入消息的消息上下文？</span><span class="sxs-lookup"><span data-stu-id="273d1-122">How does the adapter get to the message context of an incoming message from Rendezvous?</span></span>  
   
- <span data-ttu-id="273d1-123">**答案是：**传入的消息的上下文中填充答复使用者和业务流程可以读取它。</span><span class="sxs-lookup"><span data-stu-id="273d1-123">**Answer:** The reply subject is populated in the context of the incoming message, and the orchestration can read it.</span></span> <span data-ttu-id="273d1-124">如果业务流程最终可以生成答复，则可以使用该值来设置答复消息的发送主题。</span><span class="sxs-lookup"><span data-stu-id="273d1-124">If the orchestration ultimately produces a reply, it can use that value to set the send subject of the reply message.</span></span>  
+ <span data-ttu-id="273d1-123">**答案是：** 传入的消息的上下文中填充答复使用者和业务流程可以读取它。</span><span class="sxs-lookup"><span data-stu-id="273d1-123">**Answer:** The reply subject is populated in the context of the incoming message, and the orchestration can read it.</span></span> <span data-ttu-id="273d1-124">如果业务流程最终可以生成答复，则可以使用该值来设置答复消息的发送主题。</span><span class="sxs-lookup"><span data-stu-id="273d1-124">If the orchestration ultimately produces a reply, it can use that value to set the send subject of the reply message.</span></span>  
   
 1.  <span data-ttu-id="273d1-125">在 BizTalk Server 项目中，请向 <install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll 中添加引用。</span><span class="sxs-lookup"><span data-stu-id="273d1-125">In a BizTalk Server project, add a reference to <install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll.</span></span>  
   

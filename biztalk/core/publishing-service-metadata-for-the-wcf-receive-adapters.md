@@ -1,14 +1,14 @@
 ---
-title: "用于 WCF 接收适配器发布服务元数据 |Microsoft 文档"
-ms.custom: 
+title: 用于 WCF 接收适配器发布服务元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4df09e8f-e0c9-41c5-bd71-13bb0e96cd97
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710244"
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a><span data-ttu-id="56f8f-102">为 WCF 发布服务元数据接收适配器</span><span class="sxs-lookup"><span data-stu-id="56f8f-102">Publishing Service Metadata for the WCF Receive Adapters</span></span>
 <span data-ttu-id="56f8f-103">可以使用 BizTalk WCF 服务发布向导来创建为现有 WCF 接收位置发布服务元数据的 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="56f8f-103">You can use the BizTalk WCF Service Publishing Wizard to create WCF services for publishing service metadata for existing WCF receive locations.</span></span> <span data-ttu-id="56f8f-104">若要从已发布的元数据文档生成客户端服务模型代码可以使用服务模型元数据实用工具 (SvcUtil.exe) 包含在 Windows 软件开发工具包 (SDK) 和.NET Framework 运行时组件。</span><span class="sxs-lookup"><span data-stu-id="56f8f-104">To generate client service model code from the published metadata documents you can use the Service Model Metadata Utility tool (SvcUtil.exe) included in the Windows Software Development Kit (SDK) and .NET Framework Runtime Components.</span></span>  

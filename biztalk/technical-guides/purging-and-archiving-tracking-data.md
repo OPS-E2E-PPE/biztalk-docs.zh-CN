@@ -1,14 +1,14 @@
 ---
-title: "清除和存档跟踪数据 |Microsoft 文档"
-ms.custom: 
+title: 清除和存档跟踪数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14094fda-3fd9-4d45-9bbb-cd9377c2cbad
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302933"
 ---
 # <a name="purging-and-archiving-tracking-data"></a><span data-ttu-id="e3798-102">清除和存档跟踪数据</span><span class="sxs-lookup"><span data-stu-id="e3798-102">Purging and Archiving Tracking Data</span></span>
 <span data-ttu-id="e3798-103">务必要配置并启用 DTA 清除和存档 SQL 代理作业。</span><span class="sxs-lookup"><span data-stu-id="e3798-103">It is important to configure and enable the DTA Purge and Archive SQL Agent job.</span></span> <span data-ttu-id="e3798-104">此作业存档，并从 BizTalk 跟踪 (DTA) 数据库中清除旧数据。</span><span class="sxs-lookup"><span data-stu-id="e3798-104">This job archives and purges old data from the BizTalk Tracking (DTA) database.</span></span> <span data-ttu-id="e3798-105">这是必需的正常[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="e3798-105">This is essential for a healthy [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="e3798-106">大型的跟踪数据库将开始对跟踪主机和任何其他进程的性能影响该查询跟踪数据库。</span><span class="sxs-lookup"><span data-stu-id="e3798-106">A large Tracking database will begin to affect the performance of the tracking host and any other processes that query the Tracking database.</span></span> <span data-ttu-id="e3798-107">如果跟踪数据不会清除从跟踪数据库，数据库将继续增长。</span><span class="sxs-lookup"><span data-stu-id="e3798-107">If the tracking data is not purged from the Tracking database, the database will continue to grow.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "常规 BizTalk Server Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 常规 BizTalk Server Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41b452e9-d94c-4bcb-8ef6-e9cea28fc0ab
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009974"
 ---
 # <a name="general-biztalk-server-optimizations"></a><span data-ttu-id="bd4b5-102">一般 BizTalk Server 优化</span><span class="sxs-lookup"><span data-stu-id="bd4b5-102">General BizTalk Server Optimizations</span></span>
 <span data-ttu-id="bd4b5-103">以下建议可用于增加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-103">The following recommendations can be used to increase [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performance.</span></span> <span data-ttu-id="bd4b5-104">本主题中列出的优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-104">The optimizations listed in this topic are applied after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.</span></span>  
@@ -110,7 +111,7 @@ ms.lasthandoff: 12/01/2017
 > [!NOTE]  
 >  <span data-ttu-id="bd4b5-171">此设置是全局设置，无法为单个应用程序池或应用程序的更改。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-171">This setting is global and cannot be changed for individual application pools or applications.</span></span>  
   
-1.  <span data-ttu-id="bd4b5-172">依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-172">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
+1.  <span data-ttu-id="bd4b5-172">依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-172">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
   
 2.  <span data-ttu-id="bd4b5-173">导航到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**</span><span class="sxs-lookup"><span data-stu-id="bd4b5-173">Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**</span></span>  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="bd4b5-198">停止 BizTalk 主机实例。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-198">Stop the BizTalk host instance.</span></span>  
   
-2.  <span data-ttu-id="bd4b5-199">依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-199">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
+2.  <span data-ttu-id="bd4b5-199">依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-199">Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.</span></span>  
     <span data-ttu-id="bd4b5-200">导航到**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$***主机名*] 其中*主机名*是与主机关联的主机的名称实例。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-200">Navigate to **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$***hostname*] where *hostname* is the name of the host associated with the host instance.</span></span>  
   
     > [!NOTE]  
@@ -172,7 +173,7 @@ ms.lasthandoff: 12/01/2017
     |<span data-ttu-id="bd4b5-207">DWORD 项</span><span class="sxs-lookup"><span data-stu-id="bd4b5-207">DWORD entry</span></span>|<span data-ttu-id="bd4b5-208">默认值</span><span class="sxs-lookup"><span data-stu-id="bd4b5-208">Default value</span></span>|<span data-ttu-id="bd4b5-209">推荐值</span><span class="sxs-lookup"><span data-stu-id="bd4b5-209">Recommended value</span></span>|  
     |-----------------|-------------------|-----------------------|  
     |<span data-ttu-id="bd4b5-210">MaxIOThreads</span><span class="sxs-lookup"><span data-stu-id="bd4b5-210">MaxIOThreads</span></span>|<span data-ttu-id="bd4b5-211">20</span><span class="sxs-lookup"><span data-stu-id="bd4b5-211">20</span></span>|<span data-ttu-id="bd4b5-212">100</span><span class="sxs-lookup"><span data-stu-id="bd4b5-212">100</span></span>|  
-    |<span data-ttu-id="bd4b5-213">MaxWorkerThreads</span><span class="sxs-lookup"><span data-stu-id="bd4b5-213">MaxWorkerThreads</span></span>|<span data-ttu-id="bd4b5-214">25</span><span class="sxs-lookup"><span data-stu-id="bd4b5-214">25</span></span>|<span data-ttu-id="bd4b5-215">100**重要说明：**增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-215">100 **Important:**  Increasing this value beyond 100 can have an adverse effect on the performance of the SQL Server computer hosting the BizTalk Server MessageBox database.</span></span> <span data-ttu-id="bd4b5-216">当发生此问题时，SQL Server 可能会遇到死锁情况。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-216">When this problem occurs, SQL Server may encounter a deadlock condition.</span></span> <span data-ttu-id="bd4b5-217">建议此参数不超过 100 的值。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-217">It is recommended this parameter is not increased beyond a value of 100.</span></span>|  
+    |<span data-ttu-id="bd4b5-213">MaxWorkerThreads</span><span class="sxs-lookup"><span data-stu-id="bd4b5-213">MaxWorkerThreads</span></span>|<span data-ttu-id="bd4b5-214">25</span><span class="sxs-lookup"><span data-stu-id="bd4b5-214">25</span></span>|<span data-ttu-id="bd4b5-215">100**重要说明：** 增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-215">100 **Important:**  Increasing this value beyond 100 can have an adverse effect on the performance of the SQL Server computer hosting the BizTalk Server MessageBox database.</span></span> <span data-ttu-id="bd4b5-216">当发生此问题时，SQL Server 可能会遇到死锁情况。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-216">When this problem occurs, SQL Server may encounter a deadlock condition.</span></span> <span data-ttu-id="bd4b5-217">建议此参数不超过 100 的值。</span><span class="sxs-lookup"><span data-stu-id="bd4b5-217">It is recommended this parameter is not increased beyond a value of 100.</span></span>|  
     |<span data-ttu-id="bd4b5-218">MinIOThreads</span><span class="sxs-lookup"><span data-stu-id="bd4b5-218">MinIOThreads</span></span>|<span data-ttu-id="bd4b5-219">1</span><span class="sxs-lookup"><span data-stu-id="bd4b5-219">1</span></span>|<span data-ttu-id="bd4b5-220">25</span><span class="sxs-lookup"><span data-stu-id="bd4b5-220">25</span></span>|  
     |<span data-ttu-id="bd4b5-221">MinWorkerThreads</span><span class="sxs-lookup"><span data-stu-id="bd4b5-221">MinWorkerThreads</span></span>|<span data-ttu-id="bd4b5-222">1</span><span class="sxs-lookup"><span data-stu-id="bd4b5-222">1</span></span>|<span data-ttu-id="bd4b5-223">25</span><span class="sxs-lookup"><span data-stu-id="bd4b5-223">25</span></span>|  
   

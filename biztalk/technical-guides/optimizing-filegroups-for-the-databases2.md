@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010694"
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a><span data-ttu-id="29706-102">数据库优化文件组</span><span class="sxs-lookup"><span data-stu-id="29706-102">Optimizing Filegroups for the Databases</span></span>
 <span data-ttu-id="29706-103">文件输入/输出 (I/O) 争用经常是限制因素或在生产 BizTalk Server 环境中的形成瓶颈。</span><span class="sxs-lookup"><span data-stu-id="29706-103">File input/output (I/O) contention is frequently a limiting factor, or bottleneck, in a production BizTalk Server environment.</span></span> <span data-ttu-id="29706-104">BizTalk Server 是一个非常数据库密集型应用程序和 BizTalk Server 使用的 SQL Server 数据库又是非常文件 I/O 密集型。</span><span class="sxs-lookup"><span data-stu-id="29706-104">BizTalk Server is a very database intensive application and in turn, the SQL Server database used by BizTalk Server is very file I/O intensive.</span></span> <span data-ttu-id="29706-105">本主题介绍如何更好地利用的文件和文件组功能的 SQL Server，以最少的匹配项的文件 I/O 争用并提高 BizTalk Server 解决方案的整体性能。</span><span class="sxs-lookup"><span data-stu-id="29706-105">This topic describes how to make optimal use of the files and filegroups feature of SQL Server to minimize the occurrence of file I/O contention and improve the overall performance of a BizTalk Server solution.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "示例 TMA: HTTP 和 SOAP 适配器 |Microsoft 文档"
-ms.custom: 
+title: '示例 TMA: HTTP 和 SOAP 适配器 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - SOAP adapters, TMA
 - HTTP adapters, TMA
 ms.assetid: d9a40cff-92a1-4bc9-ae45-3a5857f70222
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272101"
 ---
 # <a name="sample-tma-http-and-soap-adapters"></a><span data-ttu-id="1b5ee-102">示例 TMA: HTTP 和 SOAP 适配器</span><span class="sxs-lookup"><span data-stu-id="1b5ee-102">Sample TMA: HTTP and SOAP Adapters</span></span>
 <span data-ttu-id="1b5ee-103">本主题对示例结构的 HTTP 和 SOAP (Web Services) 适配器方案进行威胁模型分析 (TMA)。</span><span class="sxs-lookup"><span data-stu-id="1b5ee-103">This topic presents the threat model analysis (TMA) for the HTTP and SOAP (Web services) adapter scenario for the sample architecture.</span></span> <span data-ttu-id="1b5ee-104">下图显示了 HTTP 和 SOAP 适配器方案的示例结构：</span><span class="sxs-lookup"><span data-stu-id="1b5ee-104">The following figure shows the sample architecture for the HTTP and SOAP adapters scenario.</span></span>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="step-2-create-and-analyze-the-threat-model-http-and-soap-adapters-scenario"></a><span data-ttu-id="1b5ee-125">步骤 2.</span><span class="sxs-lookup"><span data-stu-id="1b5ee-125">Step 2.</span></span> <span data-ttu-id="1b5ee-126">创建和分析威胁模型 （HTTP 和 SOAP 适配器方案）</span><span class="sxs-lookup"><span data-stu-id="1b5ee-126">Create and Analyze the Threat Model (HTTP and SOAP Adapters Scenario)</span></span>  
  <span data-ttu-id="1b5ee-127">本部分提供对示例结构的 HTTP 和 SOAP (Web Services) 适配器方案执行 TMA 的结果。</span><span class="sxs-lookup"><span data-stu-id="1b5ee-127">This section provides the results of the TMA we did for the HTTP and SOAP (Web services) adapters scenario for the sample architecture.</span></span>  
   
--   <span data-ttu-id="1b5ee-128">**标识入口点、 信任边界和数据的流-**请参阅之前在步骤 1 中所述的背景信息和[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。</span><span class="sxs-lookup"><span data-stu-id="1b5ee-128">**Identify Entry Points, Trust Boundaries, and Flow of Data -** See background information described earlier in step 1 and [Background Information for Sample Scenarios](../core/background-information-for-sample-scenarios.md).</span></span>  
+-   <span data-ttu-id="1b5ee-128">**标识入口点、 信任边界和数据的流-** 请参阅之前在步骤 1 中所述的背景信息和[示例方案的背景信息](../core/background-information-for-sample-scenarios.md)。</span><span class="sxs-lookup"><span data-stu-id="1b5ee-128">**Identify Entry Points, Trust Boundaries, and Flow of Data -** See background information described earlier in step 1 and [Background Information for Sample Scenarios](../core/background-information-for-sample-scenarios.md).</span></span>  
   
 -   <span data-ttu-id="1b5ee-129">**创建标识的威胁的列表**我们使用以下分类 DFD 中的所有条目来识别潜在威胁的方案： **S**哄骗标识， **T**篡改数据， **R**epudiation，**我**璝泄露**D**的服务，用以和**E**提升特权。</span><span class="sxs-lookup"><span data-stu-id="1b5ee-129">**Create a List of the Identified Threats -** We used the following categorization for all entries in the DFD to identify potential threats to the scenario: **S**poofing identify, **T**ampering with data, **R**epudiation, **I**nformation disclosure, **D**enial of service, and **E**levation of privileges.</span></span> <span data-ttu-id="1b5ee-130">下表列出了使用 HTTP 和 SOAP 适配器与 BizTalk Server 之间收发消息时的威胁分类：</span><span class="sxs-lookup"><span data-stu-id="1b5ee-130">The following table lists the threats we identified when you use the HTTP and SOAP adapters to send and receive messages to and from BizTalk Server.</span></span>  
   

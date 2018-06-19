@@ -1,14 +1,14 @@
 ---
-title: "事务集预告片缺少 |Microsoft 文档"
-ms.custom: 
+title: 事务集预告片缺少 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 07753300-fe47-47a6-a947-6abec10c1c90
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279285"
 ---
 # <a name="transaction-set-trailer-missing"></a><span data-ttu-id="7a5db-102">事务集尾部缺失</span><span class="sxs-lookup"><span data-stu-id="7a5db-102">Transaction Set Trailer Missing</span></span>
 ## <a name="details"></a><span data-ttu-id="7a5db-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="7a5db-103">Details</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "使用数据连接和 TypedDataTable |Microsoft 文档"
-ms.custom: 
+title: 使用数据连接和 TypedDataTable |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Retract function [Business Rules Engine], TypedData table
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Update function [Business Rules Engine], TypedData table
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: e825803e-6626-4ddd-a77e-75a3ba2b74a4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287541"
 ---
 # <a name="using-dataconnection-and-typeddatatable"></a><span data-ttu-id="9636d-102">使用数据连接和 TypedDataTable</span><span class="sxs-lookup"><span data-stu-id="9636d-102">Using DataConnection and TypedDataTable</span></span>
 <span data-ttu-id="9636d-103">在许多情况下，使用**该组**提供更好的性能和使用较少的内存比使用**TypedDataTable**。</span><span class="sxs-lookup"><span data-stu-id="9636d-103">In many scenarios, using **DataConnection** provides better performance and consumes less memory than using **TypedDataTable**.</span></span> <span data-ttu-id="9636d-104">但是， **TypedDataTable**可能要求在某些情况下，由于某些限制使用**该组**。</span><span class="sxs-lookup"><span data-stu-id="9636d-104">However, **TypedDataTable** may be required in some cases because of certain restrictions on using **DataConnection**.</span></span> <span data-ttu-id="9636d-105">在某些其他情况下，使用**TypedDataTable**可能会产生更好的性能比使用**该组**。</span><span class="sxs-lookup"><span data-stu-id="9636d-105">In some other cases, using **TypedDataTable** may yield better performance than using **DataConnection**.</span></span> <span data-ttu-id="9636d-106">本主题介绍了在选择正确的方法时应考虑的条件和因素。</span><span class="sxs-lookup"><span data-stu-id="9636d-106">This topic describes the criteria and factors that you should consider for choosing the right approach.</span></span>  

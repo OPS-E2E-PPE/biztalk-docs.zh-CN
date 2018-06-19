@@ -1,11 +1,11 @@
 ---
-title: "演练： 模块 3-从业务流程访问 SharePoint 属性 |Microsoft 文档"
-ms.custom: 
+title: 演练： 模块 3-从业务流程访问 SharePoint 属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Windows SharePoint Services adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapters, orchestrations
 - Windows SharePoint Services adapter tutorials, accessing SharePoint properties
 ms.assetid: 310c4002-3416-44c6-b409-1d5467063e28
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010958"
 ---
 # <a name="walkthrough-module-3---accessing-sharepoint-properties-from-an-orchestration"></a><span data-ttu-id="8359f-102">演练： 模块 3-从业务流程访问 SharePoint 属性</span><span class="sxs-lookup"><span data-stu-id="8359f-102">Walkthrough: Module 3 - Accessing SharePoint Properties from an Orchestration</span></span>
 <span data-ttu-id="8359f-103">本演练是的延续[演练： 模块 2-将与 Windows SharePoint Services Adapter 集成 Office](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md)并演示如何访问在传入消息的 Windows SharePoint Services 上下文属性运行时间，并确定使用动态端口业务流程中的属性上基于该消息的目标。</span><span class="sxs-lookup"><span data-stu-id="8359f-103">This walkthrough is a continuation of [Walkthrough: Module 2 - Integrating Office with the Windows SharePoint Services Adapter](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md) and shows you how to access the Windows SharePoint Services context properties of an incoming message at run time and then determine the destination of that message based on a property using dynamic ports in an orchestration.</span></span> <span data-ttu-id="8359f-104">有关 Windows SharePoint Services 适配器的简介，请参阅[什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="8359f-104">For an introduction to the Windows SharePoint Services adapter see [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  

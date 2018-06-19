@@ -1,11 +1,11 @@
 ---
-title: "SOAP 适配器配置属性 |Microsoft 文档"
-ms.custom: 
+title: SOAP 适配器配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, send ports
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SOAP adapters, receive locations
 - send ports, adapters
 ms.assetid: 0d033371-ee31-4e43-a7d3-e0975791d981
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279813"
 ---
 # <a name="soap-adapter-configuration-properties"></a><span data-ttu-id="51e59-102">SOAP 适配器配置属性</span><span class="sxs-lookup"><span data-stu-id="51e59-102">SOAP Adapter Configuration Properties</span></span>
 <span data-ttu-id="51e59-103">下表列出了可为 SOAP 适配器接收位置设置的配置属性：</span><span class="sxs-lookup"><span data-stu-id="51e59-103">The following table lists the configuration properties that you can set for a SOAP adapter receive location:</span></span>  

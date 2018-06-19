@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289429"
 ---
 # <a name="what-is-the-wcf-netmsmq-adapter"></a><span data-ttu-id="d0262-103">什么是 WCF-NetMsmq 适配器？</span><span class="sxs-lookup"><span data-stu-id="d0262-103">What Is the WCF-NetMsmq Adapter?</span></span>
 <span data-ttu-id="d0262-104">WCF-NetMsmq 适配器提供断开连接的跨计算机通信，方式是通过在服务和客户端都是基于 WCF 的环境中使用队列技术。</span><span class="sxs-lookup"><span data-stu-id="d0262-104">The WCF-NetMsmq adapter provides disconnected cross-computer communication by using queuing technology in an environment where both the services and clients are WCF based.</span></span> <span data-ttu-id="d0262-105">它使用消息队列 (MSMQ) 传输，而且消息采用二进制编码。</span><span class="sxs-lookup"><span data-stu-id="d0262-105">It uses the Message Queuing (MSMQ) transport, and messages have binary encoding.</span></span>  

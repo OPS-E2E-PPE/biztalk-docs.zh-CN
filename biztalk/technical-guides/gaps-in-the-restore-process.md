@@ -1,14 +1,14 @@
 ---
-title: "在还原过程中的缺口 |Microsoft 文档"
-ms.custom: 
+title: 在还原过程中的缺口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 616c4f36-8ed6-4b99-b97a-5635627dfc17
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298093"
 ---
 # <a name="gaps-in-the-restore-process"></a><span data-ttu-id="47c5d-102">在还原过程中的缺口</span><span class="sxs-lookup"><span data-stu-id="47c5d-102">Gaps in the Restore Process</span></span>
 <span data-ttu-id="47c5d-103">时查看 Master.dbo.bts_LogShippingHistory 表中的记录，你可能会观察还原集方面的差距。</span><span class="sxs-lookup"><span data-stu-id="47c5d-103">When reviewing records in the Master.dbo.bts_LogShippingHistory table, you may observe gaps in restored sets.</span></span> <span data-ttu-id="47c5d-104">这可能由多种原因引起。</span><span class="sxs-lookup"><span data-stu-id="47c5d-104">This can occur for several reasons.</span></span> <span data-ttu-id="47c5d-105">但是，即使发生缺口，则可以还原的目标系统的稳定性。</span><span class="sxs-lookup"><span data-stu-id="47c5d-105">However, the stability of the destination system can be restored even when gaps have occurred.</span></span> <span data-ttu-id="47c5d-106">间隔必须跟设置为修复目标环境的完整备份还原。</span><span class="sxs-lookup"><span data-stu-id="47c5d-106">A gap must be followed by a restore of a full backup set to repair the destination environment.</span></span> <span data-ttu-id="47c5d-107">如果间隔后面不是完整备份集还原，目标环境不稳定且不能还原处于一致状态。</span><span class="sxs-lookup"><span data-stu-id="47c5d-107">If a gap is not followed by a full backup set restore, the destination environment is not stable and cannot be restored in a consistent state.</span></span>  

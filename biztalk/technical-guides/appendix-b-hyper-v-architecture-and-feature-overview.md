@@ -1,14 +1,14 @@
 ---
-title: "附录 b: HYPER-V 体系结构和功能概述 |Microsoft 文档"
-ms.custom: 
+title: '附录 b: HYPER-V 体系结构和功能概述 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87b6b9a0-a470-43f7-b076-36075477cc34
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710300"
 ---
 # <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a><span data-ttu-id="d9dc0-102">附录 b: HYPER-V 体系结构和功能概述</span><span class="sxs-lookup"><span data-stu-id="d9dc0-102">Appendix B: Hyper-V Architecture and Feature Overview</span></span>
 <span data-ttu-id="d9dc0-103">本主题提供了 HYPER-V 体系结构的概述，描述 HYPER-V 的优点和缺点。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-103">This topic provides an overview of Hyper-V architecture, describes advantages and disadvantages of Hyper-V.</span></span>  
@@ -129,6 +130,6 @@ ms.lasthandoff: 02/28/2018
 ## <a name="disadvantages"></a><span data-ttu-id="d9dc0-207">缺点</span><span class="sxs-lookup"><span data-stu-id="d9dc0-207">Disadvantages</span></span>
  <span data-ttu-id="d9dc0-208">在 HYPER-V 虚拟化环境中运行企业级解决方案的一些缺点可能包括：</span><span class="sxs-lookup"><span data-stu-id="d9dc0-208">Some disadvantages of running enterprise-level solutions in a Hyper-V virtualized environment may include:</span></span>  
   
--   <span data-ttu-id="d9dc0-209">**硬件要求 –**由于服务器合并的需求，HYPER-V 虚拟机倾向于使用更多的 CPU 和内存，并且需要更大的磁盘 I/O 带宽比具有可比较的计算负载的物理服务器。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-209">**Hardware requirements –** Due to the demands of server consolidation, Hyper-V virtual machines tend to consume more CPU and memory, and require greater disk I/O bandwidth than physical servers with comparable computing loads.</span></span> <span data-ttu-id="d9dc0-210">由于 HYPER-V 服务器角色可用的仅为 64 位和所有版本的 Windows Server 只有 64 位物理硬件必须支持硬件辅助虚拟化。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-210">Because the Hyper-V server role is only available for 64-bit and all editions of Windows Server are 64-bit only, the physical hardware must support hardware assisted virtualization.</span></span> <span data-ttu-id="d9dc0-211">这意味着必须是具有 Intel VT 或 AMD 虚拟化 (AMD-V) 技术兼容的处理器、 系统 BIOS 必须支持数据执行保护 (DEP)，并且必须支持 DEP。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-211">This means the processor must be compatible with Intel VT or AMD Virtualization (AMD-V) technology, the system BIOS must support Data Execution Prevention (DEP), and DEP must be enabled.</span></span>  
+-   <span data-ttu-id="d9dc0-209">**硬件要求 –** 由于服务器合并的需求，HYPER-V 虚拟机倾向于使用更多的 CPU 和内存，并且需要更大的磁盘 I/O 带宽比具有可比较的计算负载的物理服务器。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-209">**Hardware requirements –** Due to the demands of server consolidation, Hyper-V virtual machines tend to consume more CPU and memory, and require greater disk I/O bandwidth than physical servers with comparable computing loads.</span></span> <span data-ttu-id="d9dc0-210">由于 HYPER-V 服务器角色可用的仅为 64 位和所有版本的 Windows Server 只有 64 位物理硬件必须支持硬件辅助虚拟化。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-210">Because the Hyper-V server role is only available for 64-bit and all editions of Windows Server are 64-bit only, the physical hardware must support hardware assisted virtualization.</span></span> <span data-ttu-id="d9dc0-211">这意味着必须是具有 Intel VT 或 AMD 虚拟化 (AMD-V) 技术兼容的处理器、 系统 BIOS 必须支持数据执行保护 (DEP)，并且必须支持 DEP。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-211">This means the processor must be compatible with Intel VT or AMD Virtualization (AMD-V) technology, the system BIOS must support Data Execution Prevention (DEP), and DEP must be enabled.</span></span>  
   
--   <span data-ttu-id="d9dc0-212">**软件要求 –**尽管大多数 Microsoft 软件支持 HYPER-V 虚拟机上运行，某些 Microsoft 软件正在仍然正在进行测试以确保与 HYPER-V 虚拟化环境的兼容性。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-212">**Software requirements –** While most Microsoft software is supported running on Hyper-V virtual machines, some Microsoft software is still in the process of being tested to ensure compatibility with a Hyper-V virtualized environment.</span></span> <span data-ttu-id="d9dc0-213">例如，大多数 Microsoft 企业级应用程序支持在 HYPER-V 上运行或正在要测试其 HYPER-V 上的支持。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-213">For example, most Microsoft enterprise level applications either support running on Hyper-V or are in the process of being tested for support on Hyper-V.</span></span> <span data-ttu-id="d9dc0-214">BizTalk Server 和 HYPER-V 上的 SQL Server 上可支持性的详细信息，请参阅[附录 c: BizTalk Server 和 SQL Server HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-214">For more information on the supportability of BizTalk Server and SQL Server on Hyper-V, see [Appendix C: BizTalk Server and SQL Server Hyper-V Supportability](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md).</span></span>
+-   <span data-ttu-id="d9dc0-212">**软件要求 –** 尽管大多数 Microsoft 软件支持 HYPER-V 虚拟机上运行，某些 Microsoft 软件正在仍然正在进行测试以确保与 HYPER-V 虚拟化环境的兼容性。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-212">**Software requirements –** While most Microsoft software is supported running on Hyper-V virtual machines, some Microsoft software is still in the process of being tested to ensure compatibility with a Hyper-V virtualized environment.</span></span> <span data-ttu-id="d9dc0-213">例如，大多数 Microsoft 企业级应用程序支持在 HYPER-V 上运行或正在要测试其 HYPER-V 上的支持。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-213">For example, most Microsoft enterprise level applications either support running on Hyper-V or are in the process of being tested for support on Hyper-V.</span></span> <span data-ttu-id="d9dc0-214">BizTalk Server 和 HYPER-V 上的 SQL Server 上可支持性的详细信息，请参阅[附录 c: BizTalk Server 和 SQL Server HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)。</span><span class="sxs-lookup"><span data-stu-id="d9dc0-214">For more information on the supportability of BizTalk Server and SQL Server on Hyper-V, see [Appendix C: BizTalk Server and SQL Server Hyper-V Supportability](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md).</span></span>

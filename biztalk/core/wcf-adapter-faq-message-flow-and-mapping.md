@@ -1,14 +1,14 @@
 ---
-title: "WCF 适配器常见问题： 消息流和映射 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器常见问题： 消息流和映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 907e5c6a-a095-4b3a-9362-506832b6bc8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976027"
 ---
 # <a name="wcf-adapter-faq-message-flow-and-mapping"></a><span data-ttu-id="e641c-102">WCF 适配器常见问题： 消息流和映射</span><span class="sxs-lookup"><span data-stu-id="e641c-102">WCF Adapter FAQ: Message Flow and Mapping</span></span>
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a><span data-ttu-id="e641c-103">WCF 和 BizTalk 系统中的消息流是什么？</span><span class="sxs-lookup"><span data-stu-id="e641c-103">What is the message flow within the WCF and BizTalk systems?</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "解决未完成的活动实例 |Microsoft 文档"
-description: "BAM 活动实例备份 BizTalk Server 中的 BAMPrimaryImport 数据库之后保持活动状态"
-ms.custom: 
+title: 解决未完成的活动实例 |Microsoft 文档
+description: BAM 活动实例备份 BizTalk Server 中的 BAMPrimaryImport 数据库之后保持活动状态
+ms.custom: ''
 ms.date: 01/17/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8adbcb66-58ad-42c5-ba16-7dc07572099e
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 20d33d8b74bf129a8d1a506ac4a1ad960184966d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/18/2018
+ms.locfileid: "27873413"
 ---
 # <a name="resolve-incomplete-bam-activity-instances---biztalk-server"></a><span data-ttu-id="dd9d6-103">解决不完整的 BAM 活动实例的 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="dd9d6-103">Resolve incomplete BAM activity instances - BizTalk Server</span></span>
 <span data-ttu-id="dd9d6-104">BAM 将未完成的活动实例的数据存储在一个特殊 *活动实例* BAMPrimaryImport 数据库表中的。</span><span class="sxs-lookup"><span data-stu-id="dd9d6-104">BAM stores data for incomplete activity instances in a special *active instance* table in the BAMPrimaryImport database.</span></span>  

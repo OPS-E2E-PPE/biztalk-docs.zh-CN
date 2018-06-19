@@ -1,14 +1,14 @@
 ---
-title: "测试方案概述 |Microsoft 文档"
-ms.custom: 
+title: 测试方案概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde553ad-2540-40d9-a74b-928fee873c31
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010686"
 ---
 # <a name="test-scenario-overview"></a><span data-ttu-id="c33fd-102">测试方案概述</span><span class="sxs-lookup"><span data-stu-id="c33fd-102">Test Scenario Overview</span></span>
 <span data-ttu-id="c33fd-103">本主题提供测试应用程序; 的概述测试方法使用和列表的说明在负载测试期间捕获的关键绩效指标 (Kpi)。</span><span class="sxs-lookup"><span data-stu-id="c33fd-103">This topic provides an overview of the test application; a description of the testing methodology used, and lists the key performance indicators (KPIs) captured during load testing.</span></span>  
@@ -103,17 +104,17 @@ ms.lasthandoff: 12/01/2017
   
  <span data-ttu-id="c33fd-164">测试客户端用于创建每次测试运行的唯一结果目录。</span><span class="sxs-lookup"><span data-stu-id="c33fd-164">The test client was used to create a unique results directory for each test run.</span></span> <span data-ttu-id="c33fd-165">此目录包含所有性能日志、 事件日志和相关联的数据所需的测试。</span><span class="sxs-lookup"><span data-stu-id="c33fd-165">This directory contained all the performance logs, event logs and associated data required for the test.</span></span> <span data-ttu-id="c33fd-166">此方法提供所需的以前的测试的追溯分析运行时信息是必需。</span><span class="sxs-lookup"><span data-stu-id="c33fd-166">This approach provided information needed when retrospective analysis of prior test runs was required.</span></span> <span data-ttu-id="c33fd-167">在每个测试结束时，原始数据已编译成一组一致的结果和关键绩效指标 (Kpi)。</span><span class="sxs-lookup"><span data-stu-id="c33fd-167">At the end of each test, the raw data was compiled into a set of consistent results and key performance indicators (KPIs).</span></span> <span data-ttu-id="c33fd-168">收集一致的结果设置为提供的点之间的不同的测试运行和不同的环境需要的比较的物理和虚拟机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-168">Collecting consistent results set for physical and virtualized machines provided the points of comparison needed between the different test runs and different environments.</span></span> <span data-ttu-id="c33fd-169">所收集的数据包括：</span><span class="sxs-lookup"><span data-stu-id="c33fd-169">The data collected included:</span></span>  
   
--   <span data-ttu-id="c33fd-170">**环境 –**要记录的环境已针对在物理硬件上的 BizTalk Server 或 HYPER-V 上的 BizTalk Server 正在运行测试。</span><span class="sxs-lookup"><span data-stu-id="c33fd-170">**Environment –** To record which environment the test was being run against, either BizTalk Server on physical hardware or BizTalk Server on Hyper-V.</span></span>  
+-   <span data-ttu-id="c33fd-170">**环境 –** 要记录的环境已针对在物理硬件上的 BizTalk Server 或 HYPER-V 上的 BizTalk Server 正在运行测试。</span><span class="sxs-lookup"><span data-stu-id="c33fd-170">**Environment –** To record which environment the test was being run against, either BizTalk Server on physical hardware or BizTalk Server on Hyper-V.</span></span>  
   
--   <span data-ttu-id="c33fd-171">**测试运行数 –**来唯一地标识每个测试运行</span><span class="sxs-lookup"><span data-stu-id="c33fd-171">**Test Run Number –** To uniquely identify each test run</span></span>  
+-   <span data-ttu-id="c33fd-171">**测试运行数 –** 来唯一地标识每个测试运行</span><span class="sxs-lookup"><span data-stu-id="c33fd-171">**Test Run Number –** To uniquely identify each test run</span></span>  
   
--   <span data-ttu-id="c33fd-172">**测试用例 –**以记录测试过程中使用 BizTalk Server 解决方案的体系结构。</span><span class="sxs-lookup"><span data-stu-id="c33fd-172">**Test Case –** To record the architecture of the BizTalk Server solution used during testing.</span></span> <span data-ttu-id="c33fd-173">（例如具有逻辑端口而不是使用内联的业务流程的业务流程将发送）</span><span class="sxs-lookup"><span data-stu-id="c33fd-173">(For example Orchestration with Logical Ports versus Orchestration using inline Sends)</span></span>  
+-   <span data-ttu-id="c33fd-172">**测试用例 –** 以记录测试过程中使用 BizTalk Server 解决方案的体系结构。</span><span class="sxs-lookup"><span data-stu-id="c33fd-172">**Test Case –** To record the architecture of the BizTalk Server solution used during testing.</span></span> <span data-ttu-id="c33fd-173">（例如具有逻辑端口而不是使用内联的业务流程的业务流程将发送）</span><span class="sxs-lookup"><span data-stu-id="c33fd-173">(For example Orchestration with Logical Ports versus Orchestration using inline Sends)</span></span>  
   
--   <span data-ttu-id="c33fd-174">**日期 –**记录的日期和时间测试运行</span><span class="sxs-lookup"><span data-stu-id="c33fd-174">**Date –** To record the date and time the test was run</span></span>  
+-   <span data-ttu-id="c33fd-174">**日期 –** 记录的日期和时间测试运行</span><span class="sxs-lookup"><span data-stu-id="c33fd-174">**Date –** To record the date and time the test was run</span></span>  
   
--   <span data-ttu-id="c33fd-175">**时间已启动 –**报告启动第一个 VSTS 负载测试代理</span><span class="sxs-lookup"><span data-stu-id="c33fd-175">**Time Started –** As reported by the first VSTS load test agent initiated</span></span>  
+-   <span data-ttu-id="c33fd-175">**时间已启动 –** 报告启动第一个 VSTS 负载测试代理</span><span class="sxs-lookup"><span data-stu-id="c33fd-175">**Time Started –** As reported by the first VSTS load test agent initiated</span></span>  
   
--   <span data-ttu-id="c33fd-176">**时间已停止 –**报告的最后一个 VSTS 负载测试代理以完成</span><span class="sxs-lookup"><span data-stu-id="c33fd-176">**Time Stopped –** As reported by the last VSTS load test agent to complete</span></span>  
+-   <span data-ttu-id="c33fd-176">**时间已停止 –** 报告的最后一个 VSTS 负载测试代理以完成</span><span class="sxs-lookup"><span data-stu-id="c33fd-176">**Time Stopped –** As reported by the last VSTS load test agent to complete</span></span>  
   
 -   <span data-ttu-id="c33fd-177">**以分钟为单位 – 测试持续时间**以记录测试的持续时间。</span><span class="sxs-lookup"><span data-stu-id="c33fd-177">**Test Duration in Minutes –** To record the duration of the test.</span></span>  
   
@@ -121,16 +122,16 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="c33fd-179">**每秒-发送的邮件**来记录每秒从负载代理计算机到 BizTalk Server 计算机测试过程中发送的消息。</span><span class="sxs-lookup"><span data-stu-id="c33fd-179">**Messages Sent per Second –** To record the messages sent per second from the Load Agent computers to the BizTalk Server computers during the test.</span></span>  
   
--   <span data-ttu-id="c33fd-180">**平均客户端延迟 –**记录的平均时测试加载代理客户端启动对请求和接收到的响应的 BizTalk Server 计算机在负载测试期间之间的时间量。</span><span class="sxs-lookup"><span data-stu-id="c33fd-180">**Average Client Latency –** To record the average amount of time between when Test Load Agent clients initiated a request to and received a response from the BizTalk Server computers during the load test.</span></span>  
+-   <span data-ttu-id="c33fd-180">**平均客户端延迟 –** 记录的平均时测试加载代理客户端启动对请求和接收到的响应的 BizTalk Server 计算机在负载测试期间之间的时间量。</span><span class="sxs-lookup"><span data-stu-id="c33fd-180">**Average Client Latency –** To record the average amount of time between when Test Load Agent clients initiated a request to and received a response from the BizTalk Server computers during the load test.</span></span>  
   
--   <span data-ttu-id="c33fd-181">**请求-响应持续时间平均 (ms) –**报告**BizTalk： 消息传送 Latency\Request 响应延迟 （秒）** BizTalkServerIsolatedHost 的性能监视器计数器</span><span class="sxs-lookup"><span data-stu-id="c33fd-181">**Request-Response Duration Average (ms) –** As reported by the **BizTalk:Messaging Latency\Request-Response Latency (sec)** Performance Monitor counter for the BizTalkServerIsolatedHost</span></span>  
+-   <span data-ttu-id="c33fd-181">**请求-响应持续时间平均 (ms) –** 报告**BizTalk： 消息传送 Latency\Request 响应延迟 （秒）** BizTalkServerIsolatedHost 的性能监视器计数器</span><span class="sxs-lookup"><span data-stu-id="c33fd-181">**Request-Response Duration Average (ms) –** As reported by the **BizTalk:Messaging Latency\Request-Response Latency (sec)** Performance Monitor counter for the BizTalkServerIsolatedHost</span></span>  
   
     > [!NOTE]  
     >  <span data-ttu-id="c33fd-182">使用其中多个虚拟化的 BizTalk 主机正在运行这些计数器的平均值计算从日志。</span><span class="sxs-lookup"><span data-stu-id="c33fd-182">Where multiple virtualized BizTalk hosts were running an average of these counters as calculated from the logs was used.</span></span>  
   
 -   <span data-ttu-id="c33fd-183">**每秒 – 业务流程已完成**报告**XLANG/s 业务流程 (BizTalkServerApplication) \Orchestrations 完成每秒**性能监视器计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-183">**Orchestrations Completed per Second –** As reported by the **XLANG/s Orchestrations(BizTalkServerApplication)\Orchestrations completed/sec** Performance Monitor counter.</span></span> <span data-ttu-id="c33fd-184">此计数器提供的吞吐量很好地衡量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。</span><span class="sxs-lookup"><span data-stu-id="c33fd-184">This counter provides a good measure of the throughput of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  
   
--   <span data-ttu-id="c33fd-185">**消息处理 < 3 秒数 – %**以记录在测试期间的 3 秒内处理的消息总数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-185">**% of Messages Processed < 3 seconds –** To record the total number of messages processed within 3 seconds during the test.</span></span>  
+-   <span data-ttu-id="c33fd-185">**消息处理 < 3 秒数 – %** 以记录在测试期间的 3 秒内处理的消息总数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-185">**% of Messages Processed < 3 seconds –** To record the total number of messages processed within 3 seconds during the test.</span></span>  
   
  <span data-ttu-id="c33fd-186">VSTS 2008 负载测试用于生成在所有测试整个一致负载。</span><span class="sxs-lookup"><span data-stu-id="c33fd-186">VSTS 2008 Load Test was used to generate a consistent load throughout all the tests.</span></span> <span data-ttu-id="c33fd-187">以下测试运行设置，并且在测试调整每个测试的负载配置文件期间修改负载模式：</span><span class="sxs-lookup"><span data-stu-id="c33fd-187">The following test run settings and load pattern were modified during testing to adjust the load profile of each test:</span></span>  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="c33fd-189">具体取决于正在执行测试修改以下测试运行设置：</span><span class="sxs-lookup"><span data-stu-id="c33fd-189">The following test run setting was modified depending on the test being performed:</span></span>  
   
-    -   <span data-ttu-id="c33fd-190">**运行持续时间 –**指定测试运行的多长时间。</span><span class="sxs-lookup"><span data-stu-id="c33fd-190">**Run Duration –** Specifies how long the test is run.</span></span>  
+    -   <span data-ttu-id="c33fd-190">**运行持续时间 –** 指定测试运行的多长时间。</span><span class="sxs-lookup"><span data-stu-id="c33fd-190">**Run Duration –** Specifies how long the test is run.</span></span>  
   
      <span data-ttu-id="c33fd-191">![测试运行的设置](../technical-guides/media/wcfloadtestrunsettings.gif "WCFLoadTestRunSettings")</span><span class="sxs-lookup"><span data-stu-id="c33fd-191">![Test Run Settings](../technical-guides/media/wcfloadtestrunsettings.gif "WCFLoadTestRunSettings")</span></span>  
 <span data-ttu-id="c33fd-192">测试运行设置</span><span class="sxs-lookup"><span data-stu-id="c33fd-192">Test Run Settings</span></span>  
@@ -147,23 +148,23 @@ ms.lasthandoff: 12/01/2017
   
      <span data-ttu-id="c33fd-194">具体取决于正在执行测试修改了以下测试模式设置：</span><span class="sxs-lookup"><span data-stu-id="c33fd-194">The following test pattern settings were modified depending on the test being performed:</span></span>  
   
-    1.  <span data-ttu-id="c33fd-195">**模式 –**指定负载测试期间如何调整模拟的用户负载。</span><span class="sxs-lookup"><span data-stu-id="c33fd-195">**Pattern –** Specifies how the simulated user load is adjusted during a load test.</span></span> <span data-ttu-id="c33fd-196">负载模式都是**常量**，**步骤**，或**目标**基于。</span><span class="sxs-lookup"><span data-stu-id="c33fd-196">Load patterns are either **Constant**, **Step**, or **Goal** based.</span></span> <span data-ttu-id="c33fd-197">所有负载测试执行都为常量或步骤。</span><span class="sxs-lookup"><span data-stu-id="c33fd-197">All load testing performed was either Constant or Step.</span></span>  
+    1.  <span data-ttu-id="c33fd-195">**模式 –** 指定负载测试期间如何调整模拟的用户负载。</span><span class="sxs-lookup"><span data-stu-id="c33fd-195">**Pattern –** Specifies how the simulated user load is adjusted during a load test.</span></span> <span data-ttu-id="c33fd-196">负载模式都是**常量**，**步骤**，或**目标**基于。</span><span class="sxs-lookup"><span data-stu-id="c33fd-196">Load patterns are either **Constant**, **Step**, or **Goal** based.</span></span> <span data-ttu-id="c33fd-197">所有负载测试执行都为常量或步骤。</span><span class="sxs-lookup"><span data-stu-id="c33fd-197">All load testing performed was either Constant or Step.</span></span>  
   
         > [!NOTE]  
         >  <span data-ttu-id="c33fd-198">所有测试执行本指南使用了上述两**常量**负载模式或**步骤**负载模式。</span><span class="sxs-lookup"><span data-stu-id="c33fd-198">All testing performed for purposes of this guide used either a **Constant** load pattern or a **Step** load pattern.</span></span> <span data-ttu-id="c33fd-199">常量负载模式和步骤的负载模式提供了以下功能：</span><span class="sxs-lookup"><span data-stu-id="c33fd-199">Constant load patterns and Step load patterns provide the following functionality:</span></span>  
         >   
-        >  -   <span data-ttu-id="c33fd-200">**常量负载模式 –**负载模式是相同的测试的持续时间内，模拟用户的数量从预定义级别开始，并不会更改。</span><span class="sxs-lookup"><span data-stu-id="c33fd-200">**Constant load pattern –** The load pattern is the same for the duration of the test, the number of simulated users starts at a predefined level and does not change.</span></span>  
-        > -   <span data-ttu-id="c33fd-201">**分级负载模式 –**在测试运行期间增加的负载模式; 模拟用户的数量从预定义级别开始，并且就会递增预定义的量在预定义的间隔为测试的持续时间。</span><span class="sxs-lookup"><span data-stu-id="c33fd-201">**Step load pattern –** The load pattern is increased during the test run; the number of simulated users starts at a predefined level and is incremented by a predefined amount at predefined intervals for the duration of the test.</span></span>  
+        >  -   <span data-ttu-id="c33fd-200">**常量负载模式 –** 负载模式是相同的测试的持续时间内，模拟用户的数量从预定义级别开始，并不会更改。</span><span class="sxs-lookup"><span data-stu-id="c33fd-200">**Constant load pattern –** The load pattern is the same for the duration of the test, the number of simulated users starts at a predefined level and does not change.</span></span>  
+        > -   <span data-ttu-id="c33fd-201">**分级负载模式 –** 在测试运行期间增加的负载模式; 模拟用户的数量从预定义级别开始，并且就会递增预定义的量在预定义的间隔为测试的持续时间。</span><span class="sxs-lookup"><span data-stu-id="c33fd-201">**Step load pattern –** The load pattern is increased during the test run; the number of simulated users starts at a predefined level and is incremented by a predefined amount at predefined intervals for the duration of the test.</span></span>  
   
-    2.  <span data-ttu-id="c33fd-202">**常量用户计数 （常量负载模式） –**生成针对在 Visual Studio 负载测试项目的 app.config 文件中指定的终结点地址的负载的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-202">**Constant User Count (Constant Load Pattern) –** Number of virtual users that are generating load against the endpoint address specified in the app.config file of the Visual Studio Load Test project.</span></span> <span data-ttu-id="c33fd-203">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-203">This value is specified in the Load Pattern settings used for the load test.</span></span>  
+    2.  <span data-ttu-id="c33fd-202">**常量用户计数 （常量负载模式） –** 生成针对在 Visual Studio 负载测试项目的 app.config 文件中指定的终结点地址的负载的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-202">**Constant User Count (Constant Load Pattern) –** Number of virtual users that are generating load against the endpoint address specified in the app.config file of the Visual Studio Load Test project.</span></span> <span data-ttu-id="c33fd-203">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-203">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    3.  <span data-ttu-id="c33fd-204">**初始用户计数 （分级负载模式） –**生成负载分级负载模式测试的开始处的指定的终结点地址的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-204">**Initial User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the beginning of a Step Load Pattern test.</span></span> <span data-ttu-id="c33fd-205">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-205">This value is specified in the Load Pattern settings used for the load test.</span></span>  
+    3.  <span data-ttu-id="c33fd-204">**初始用户计数 （分级负载模式） –** 生成负载分级负载模式测试的开始处的指定的终结点地址的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-204">**Initial User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the beginning of a Step Load Pattern test.</span></span> <span data-ttu-id="c33fd-205">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-205">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    4.  <span data-ttu-id="c33fd-206">**最大用户计数 （分级负载模式） –**生成对照末尾的分级负载模式测试指定的终结点地址的负载的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-206">**Maximum User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the end of a Step Load Pattern test.</span></span> <span data-ttu-id="c33fd-207">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-207">This value is specified in the Load Pattern settings used for the load test.</span></span>  
+    4.  <span data-ttu-id="c33fd-206">**最大用户计数 （分级负载模式） –** 生成对照末尾的分级负载模式测试指定的终结点地址的负载的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-206">**Maximum User Count (Step Load Pattern) –** Number of virtual users that are generating load against the specified endpoint address at the end of a Step Load Pattern test.</span></span> <span data-ttu-id="c33fd-207">用于负载测试的负载模式设置中指定此值。</span><span class="sxs-lookup"><span data-stu-id="c33fd-207">This value is specified in the Load Pattern settings used for the load test.</span></span>  
   
-    5.  <span data-ttu-id="c33fd-208">**单步持续时间 （分级负载模式） –**的虚拟用户生成针对负载测试步骤的指定的终结点地址的负载的秒数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-208">**Step Duration (Step Load Pattern) –** Number of seconds that virtual users are generating load against the specified endpoint address for a load test step.</span></span>  
+    5.  <span data-ttu-id="c33fd-208">**单步持续时间 （分级负载模式） –** 的虚拟用户生成针对负载测试步骤的指定的终结点地址的负载的秒数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-208">**Step Duration (Step Load Pattern) –** Number of seconds that virtual users are generating load against the specified endpoint address for a load test step.</span></span>  
   
-    6.  <span data-ttu-id="c33fd-209">**单步用户计数 （分级负载模式） –**来提高在每个步骤时使用的分级负载模式的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-209">**Step User Count (Step Load Pattern) –** Number of virtual users to increase at each step when using a step load pattern.</span></span>  
+    6.  <span data-ttu-id="c33fd-209">**单步用户计数 （分级负载模式） –** 来提高在每个步骤时使用的分级负载模式的虚拟用户数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-209">**Step User Count (Step Load Pattern) –** Number of virtual users to increase at each step when using a step load pattern.</span></span>  
   
      <span data-ttu-id="c33fd-210">![测试模式设置](../technical-guides/media/wcfloadtestpatternsettings.gif "WCFLoadTestPatternSettings")</span><span class="sxs-lookup"><span data-stu-id="c33fd-210">![Test Pattern Settings](../technical-guides/media/wcfloadtestpatternsettings.gif "WCFLoadTestPatternSettings")</span></span>  
 <span data-ttu-id="c33fd-211">测试模式设置</span><span class="sxs-lookup"><span data-stu-id="c33fd-211">Test Pattern Settings</span></span>  
@@ -180,23 +181,23 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="c33fd-217">**每秒-处理的文档**测量**BizTalk： 消息传送/文档处理数/秒**计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-217">**Documents processed per second –** As measured by the **BizTalk:Messaging/Documents processed/Sec** counter.</span></span>  
   
--   <span data-ttu-id="c33fd-218">**延迟 –**测量返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-218">**Latency –** As measured as returned by the VSTS 2008 Load Test Controller.</span></span>  
+-   <span data-ttu-id="c33fd-218">**延迟 –** 测量返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-218">**Latency –** As measured as returned by the VSTS 2008 Load Test Controller.</span></span>  
   
  <span data-ttu-id="c33fd-219">**SQL Server KPI**</span><span class="sxs-lookup"><span data-stu-id="c33fd-219">**SQL Server KPI**</span></span>  
   
--   <span data-ttu-id="c33fd-220">**SQL Server 处理器使用率 –**测量**SQL\Processor(Total)\\%Processor Time**计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-220">**SQL Server processor utilization –** As measured by the **SQL\Processor(Total)\\%Processor Time** counter.</span></span> <span data-ttu-id="c33fd-221">此计数器可测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-221">This counter measures CPU utilization of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] processing on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
+-   <span data-ttu-id="c33fd-220">**SQL Server 处理器使用率 –** 测量**SQL\Processor(Total)\\%Processor Time**计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-220">**SQL Server processor utilization –** As measured by the **SQL\Processor(Total)\\%Processor Time** counter.</span></span> <span data-ttu-id="c33fd-221">此计数器可测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-221">This counter measures CPU utilization of [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] processing on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
   
--   <span data-ttu-id="c33fd-222">**Transact SQL 命令的处理性能 –**测量**\SQL Server:SQL Statistics\Batch 每秒请求数**计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-222">**Transact SQL command processing performance –** As measured by the **\SQL Server:SQL Statistics\Batch Requests/sec** counter.</span></span> <span data-ttu-id="c33fd-223">此计数器测量每秒接收的 TRANSACT-SQL 命令批数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-223">This counter measures the number of Transact-SQL command batches received per second.</span></span> <span data-ttu-id="c33fd-224">此计数器用于测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-224">This counter is used to measure throughput on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
+-   <span data-ttu-id="c33fd-222">**Transact SQL 命令的处理性能 –** 测量**\SQL Server:SQL Statistics\Batch 每秒请求数**计数器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-222">**Transact SQL command processing performance –** As measured by the **\SQL Server:SQL Statistics\Batch Requests/sec** counter.</span></span> <span data-ttu-id="c33fd-223">此计数器测量每秒接收的 TRANSACT-SQL 命令批数。</span><span class="sxs-lookup"><span data-stu-id="c33fd-223">This counter measures the number of Transact-SQL command batches received per second.</span></span> <span data-ttu-id="c33fd-224">此计数器用于测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-224">This counter is used to measure throughput on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer.</span></span>  
   
  <span data-ttu-id="c33fd-225">**网络 KPI**</span><span class="sxs-lookup"><span data-stu-id="c33fd-225">**Networking KPI**</span></span>  
   
--   <span data-ttu-id="c33fd-226">**BizTalk Server 网络吞吐量 –**测量**\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-226">**BizTalk Server network throughput –** As measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers.</span></span>  
+-   <span data-ttu-id="c33fd-226">**BizTalk Server 网络吞吐量 –** 测量**\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。</span><span class="sxs-lookup"><span data-stu-id="c33fd-226">**BizTalk Server network throughput –** As measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers.</span></span>  
   
--   <span data-ttu-id="c33fd-227">**SQL Server 网络吞吐量 –**测量**SQL Network Interface\Bytes Total/sec (Avg)**返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-227">**SQL Server network throughput –** As measured by the **SQL Network Interface\Bytes Total/sec (Avg)** returned by the VSTS 2008 Load Test Controller.</span></span>  
+-   <span data-ttu-id="c33fd-227">**SQL Server 网络吞吐量 –** 测量**SQL Network Interface\Bytes Total/sec (Avg)** 返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="c33fd-227">**SQL Server network throughput –** As measured by the **SQL Network Interface\Bytes Total/sec (Avg)** returned by the VSTS 2008 Load Test Controller.</span></span>  
   
  <span data-ttu-id="c33fd-228">**内存 KPI**</span><span class="sxs-lookup"><span data-stu-id="c33fd-228">**Memory KPI**</span></span>  
   
--   <span data-ttu-id="c33fd-229">**可用内存 –**测量**\Memory\Available Mbytes**计数器的各种方案。</span><span class="sxs-lookup"><span data-stu-id="c33fd-229">**Available memory –** As measured by the **\Memory\Available Mbytes** counter for the various scenarios.</span></span>  
+-   <span data-ttu-id="c33fd-229">**可用内存 –** 测量**\Memory\Available Mbytes**计数器的各种方案。</span><span class="sxs-lookup"><span data-stu-id="c33fd-229">**Available memory –** As measured by the **\Memory\Available Mbytes** counter for the various scenarios.</span></span>  
   
 ## <a name="physical-infrastructure-specifics"></a><span data-ttu-id="c33fd-230">物理基础结构详细信息</span><span class="sxs-lookup"><span data-stu-id="c33fd-230">Physical Infrastructure Specifics</span></span>  
  <span data-ttu-id="c33fd-231">为每个已安装的服务器已调整的以下设置。</span><span class="sxs-lookup"><span data-stu-id="c33fd-231">For each of the servers that were installed the following settings were adjusted.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "发布 BizTalk 终结点 |Microsoft 文档"
-ms.custom: 
+title: 发布 BizTalk 终结点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c8e8cc81-c6c7-4269-81e3-8725082a0c98
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294285"
 ---
 # <a name="publishing-biztalk-endpoints"></a><span data-ttu-id="c964b-102">发布 BizTalk 终结点</span><span class="sxs-lookup"><span data-stu-id="c964b-102">Publishing BizTalk Endpoints</span></span>
 <span data-ttu-id="c964b-103">ESB 管理门户可用于创建和发布到当前配置的通用、 描述、 发现和集成 (UDDI) 服务器的条目。</span><span class="sxs-lookup"><span data-stu-id="c964b-103">You can use the ESB Management Portal to create and publish entries into the currently configured Universal Description, Discovery, and Integration (UDDI) server.</span></span>  

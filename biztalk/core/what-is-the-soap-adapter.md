@@ -1,11 +1,11 @@
 ---
-title: "SOAP 适配器概述 | Microsoft Docs"
-ms.custom: 
+title: SOAP 适配器概述 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, SOAP adapters
 - SOAP adapters, about SOAP adapters
 ms.assetid: 725e6e31-430f-49f3-b9dd-8e65b963da70
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289917"
 ---
 # <a name="what-is-the-soap-adapter"></a><span data-ttu-id="64c58-103">SOAP 适配器概述</span><span class="sxs-lookup"><span data-stu-id="64c58-103">What Is the SOAP Adapter?</span></span>
 <span data-ttu-id="64c58-104">Web Services 是指接口符合 Web Services 描述语言 (WSDL) 所述标准的程序。</span><span class="sxs-lookup"><span data-stu-id="64c58-104">Web services are programs with interfaces that adhere to the standards set forth in the Web Services Description Language (WSDL).</span></span> <span data-ttu-id="64c58-105">您可以使用 Microsoft BizTalk Server 业务流程创建和使用 Web Services，以便通过易于管理的直观方式将独立的相关功能组合在一起。</span><span class="sxs-lookup"><span data-stu-id="64c58-105">You can use a Microsoft BizTalk Server orchestration to create and use Web services to combine separate but related business functions in a manageable and intuitive way.</span></span> <span data-ttu-id="64c58-106">有关 Web 服务和业务流程的详细信息，请参阅[使用 Web 服务](../core/using-web-services.md)。</span><span class="sxs-lookup"><span data-stu-id="64c58-106">For more information about Web services and orchestration, see [Using Web Services](../core/using-web-services.md).</span></span>  

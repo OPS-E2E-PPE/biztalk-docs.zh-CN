@@ -1,14 +1,14 @@
 ---
-title: "要求阶段建议 |Microsoft 文档"
-ms.custom: 
+title: 要求阶段建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b510313-c3a7-42bc-9c9b-336c927a5d4a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271013"
 ---
 # <a name="requirements-phase-recommendations"></a><span data-ttu-id="5d74f-102">需求阶段的建议</span><span class="sxs-lookup"><span data-stu-id="5d74f-102">Requirements Phase Recommendations</span></span>
 <span data-ttu-id="5d74f-103">与需求阶段相关的主要可交付成果是需求规范，即包括诸如性能目标等要求的功能规范。</span><span class="sxs-lookup"><span data-stu-id="5d74f-103">The primary deliverable associated with the requirements phase is a requirements specification, or a functional specification that includes requirements including performance goals.</span></span> <span data-ttu-id="5d74f-104">务必让使用该系统的最终用户和业务所有者参与确定这些目标，以确保了解准确的性能状况。</span><span class="sxs-lookup"><span data-stu-id="5d74f-104">It is very important to involve the end-users and business owners of the system when determining these goals to assure that an accurate profile for performance is derived.</span></span>  

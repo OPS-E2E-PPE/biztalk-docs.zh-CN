@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263861"
 ---
 # <a name="outboundtransforms-receiveport-node"></a><span data-ttu-id="e8d16-102">OutboundTransforms （接收端口节点）</span><span class="sxs-lookup"><span data-stu-id="e8d16-102">OutboundTransforms (ReceivePort Node)</span></span>
 <span data-ttu-id="e8d16-103">绑定文件的 ReceivePort 节点的 OutboundTransforms 节点包含与绑定文件一起导出的双向接收端口的出站转换集合。</span><span class="sxs-lookup"><span data-stu-id="e8d16-103">The OutboundTransforms node of the ReceivePort node of a binding file contains the collection of outbound transforms of a two-way receive port that is exported with the binding file.</span></span>  

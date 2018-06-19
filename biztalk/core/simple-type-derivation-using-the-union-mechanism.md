@@ -1,14 +1,14 @@
 ---
-title: "使用联合的机制的简单类型派生 |Microsoft 文档"
-ms.custom: 
+title: 使用联合的机制的简单类型派生 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e51ae390-78f5-4fb9-9163-2a8023aea1ec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270373"
 ---
 # <a name="simple-type-derivation-using-the-union-mechanism"></a><span data-ttu-id="1b54c-102">使用联合机制进行简单类型派生</span><span class="sxs-lookup"><span data-stu-id="1b54c-102">Simple Type Derivation Using the Union Mechanism</span></span>
 <span data-ttu-id="1b54c-103">使用联合机制从现有简单类型派生新的简单类型时，可根据所指定的类型列表，指定此属性或元素的值能够具有多种类型。</span><span class="sxs-lookup"><span data-stu-id="1b54c-103">When you derive a new simple type from an existing simple type by using the union mechanism, you are specifying that the value for this attribute or element can be of more than one type, according to a list of types that you specify.</span></span> <span data-ttu-id="1b54c-104">例如，您可以指定属性或元素值为日期、时间或日期/时间值。</span><span class="sxs-lookup"><span data-stu-id="1b54c-104">For example, you can specify that an attribute or element value is either a date, a time, or a date/time value.</span></span>  

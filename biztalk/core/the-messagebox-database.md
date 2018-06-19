@@ -1,11 +1,11 @@
 ---
-title: "MessageBox 数据库 |Microsoft 文档"
-ms.custom: 
+title: MessageBox 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - MessageBox database
 - suspended messages, MessageBox database
 ms.assetid: f89eb02c-1b83-4127-8a91-e78fb4a1f96e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279309"
 ---
 # <a name="the-messagebox-database"></a><span data-ttu-id="6c56d-102">MessageBox 数据库</span><span class="sxs-lookup"><span data-stu-id="6c56d-102">The MessageBox Database</span></span>
 <span data-ttu-id="6c56d-103">Microsoft BizTalk Server 中发布/订阅引擎的核心是 MessageBox 数据库。</span><span class="sxs-lookup"><span data-stu-id="6c56d-103">The heart of the publish/subscribe engine in Microsoft BizTalk Server is the MessageBox database.</span></span> <span data-ttu-id="6c56d-104">MessageBox 由两个组件构成：一个或多个 Microsoft SQL Server 数据库，以及消息传送代理。</span><span class="sxs-lookup"><span data-stu-id="6c56d-104">The MessageBox is made up of two components: one or more Microsoft SQL Server databases and the Messaging Agent.</span></span> <span data-ttu-id="6c56d-105">SQL Server 数据库为众多对象提供持久化存储，这些对象包括消息、消息部分、消息属性、订阅、业务流程状态、跟踪数据和用于路由的主机队列等。</span><span class="sxs-lookup"><span data-stu-id="6c56d-105">The SQL Server database provides the persistence store for many things including messages, message parts, message properties, subscriptions, orchestration state, tracking data, host queues for routing, and others.</span></span> <span data-ttu-id="6c56d-106">BizTalk Server 组可以具有一个或多个 MessageBox 数据库，该组将消息发布到此（这些）数据库中，而订阅这些消息的订户从此（这些）数据库提取消息。</span><span class="sxs-lookup"><span data-stu-id="6c56d-106">The BizTalk Server group may have one or more MessageBox databases into which it publishes messages and from which subscribers to those messages extract messages.</span></span>  

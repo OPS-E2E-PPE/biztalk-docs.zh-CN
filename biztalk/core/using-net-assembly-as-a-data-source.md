@@ -1,14 +1,14 @@
 ---
-title: "使用作为数据源的.NET 程序集 |Microsoft 文档"
-ms.custom: 
+title: 使用作为数据源的.NET 程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2b60ac9-84f7-4522-80dd-6bb68f5f0c60
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287045"
 ---
 # <a name="using-net-assembly-as-a-data-source"></a><span data-ttu-id="7bb2e-102">将.NET 程序集用作数据源</span><span class="sxs-lookup"><span data-stu-id="7bb2e-102">Using .NET Assembly as a Data Source</span></span>
 <span data-ttu-id="7bb2e-103">本主题讨论如何将 .NET 程序集用作数据源以及如何根据规则访问 .NET 类的成员。</span><span class="sxs-lookup"><span data-stu-id="7bb2e-103">This topic discusses how to use a .NET assembly as a data source, and how to access members of a .NET class from rules.</span></span>  

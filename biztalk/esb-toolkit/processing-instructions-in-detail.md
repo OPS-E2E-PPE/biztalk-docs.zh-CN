@@ -1,14 +1,14 @@
 ---
-title: "处理详细信息中的说明 |Microsoft 文档"
-ms.custom: 
+title: 处理详细信息中的说明 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed5d92fb-d53b-49a2-b2c7-8558708d6554
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008934"
 ---
 # <a name="processing-instructions-in-detail"></a><span data-ttu-id="4a8ae-102">在详细信息中的处理指令</span><span class="sxs-lookup"><span data-stu-id="4a8ae-102">Processing Instructions in Detail</span></span>
 <span data-ttu-id="4a8ae-103">本主题介绍的格式和定义所需的路线处理的多个上下文属性的系统 Properties.xsd 属性架构结构。</span><span class="sxs-lookup"><span data-stu-id="4a8ae-103">This topic describes the format and structure of the System-Properties.xsd property schema, which defines several context properties required for itinerary processing.</span></span> <span data-ttu-id="4a8ae-104">这些属性提升时接收并处理通过 BizTalk Server 管道; 一条消息由于它们是提升的属性，它们是 BizTalk Server 组件访问。</span><span class="sxs-lookup"><span data-stu-id="4a8ae-104">These properties are promoted when a message is received and processed through BizTalk Server pipelines; because they are promoted properties, they are accessible to BizTalk Server components.</span></span> <span data-ttu-id="4a8ae-105">系统 Properties.xsd 属性架构中定义以下属性：</span><span class="sxs-lookup"><span data-stu-id="4a8ae-105">The following properties are defined in the System-Properties.xsd property schema:</span></span>  

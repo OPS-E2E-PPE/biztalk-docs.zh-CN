@@ -1,14 +1,14 @@
 ---
-title: "接收消息上下文属性的 TIBCO 会合 |Microsoft 文档"
-ms.custom: 
+title: 接收消息上下文属性的 TIBCO 会合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f47e2a0-6ac8-404a-bc0a-c7739911af74
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014996"
 ---
 # <a name="biztalk-server-message-context-properties-receive-handlers"></a><span data-ttu-id="a3028-102">BizTalk Server 消息上下文属性 （接收处理程序）</span><span class="sxs-lookup"><span data-stu-id="a3028-102">BizTalk Server Message Context Properties (Receive Handlers)</span></span>
 <span data-ttu-id="a3028-103">除了消息负载之外，构成消息的补充信息必须可以在运行时从 BizTalk Server 业务流程访问。</span><span class="sxs-lookup"><span data-stu-id="a3028-103">In addition to the message payload, the supplementary information that composes a message must be accessible from a BizTalk Server orchestration at run time.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 为 BizTalk 业务流程创建消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 为 BizTalk 业务流程创建消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47a4fb98-6085-4aeb-ab39-2f2c3858d4e0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226109"
 ---
 # <a name="step-2-create-messages-for-biztalk-orchestrations"></a><span data-ttu-id="8e11d-102">步骤 2： 为 BizTalk 业务流程创建消息</span><span class="sxs-lookup"><span data-stu-id="8e11d-102">Step 2: Create Messages for BizTalk Orchestrations</span></span>
 <span data-ttu-id="8e11d-103">![步骤 2 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span><span class="sxs-lookup"><span data-stu-id="8e11d-103">![Step 2 of 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span></span>  
   
  <span data-ttu-id="8e11d-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="8e11d-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="8e11d-105">**目标：**在此步骤中，BizTalk 项目中添加业务流程和创建适用于你在中生成各种架构的消息[步骤 1： 为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="8e11d-105">**Objective:** In this step, you add an orchestration to the BizTalk project and create messages for the schemas you generated in [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  
+ <span data-ttu-id="8e11d-105">**目标：** 在此步骤中，BizTalk 项目中添加业务流程和创建适用于你在中生成各种架构的消息[步骤 1： 为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="8e11d-105">**Objective:** In this step, you add an orchestration to the BizTalk project and create messages for the schemas you generated in [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="8e11d-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="8e11d-106">Prerequisites</span></span>  
  <span data-ttu-id="8e11d-107">你必须已完成[步骤 1： 为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="8e11d-107">You must have completed [Step 1: Generate Schema for Operations](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md).</span></span>  

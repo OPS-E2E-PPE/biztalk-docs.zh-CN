@@ -1,14 +1,14 @@
 ---
-title: "运行 BizTalk 操作示例 |Microsoft 文档"
-ms.custom: 
+title: 运行 BizTalk 操作示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e91d4e57-ba94-4730-8c5a-4c96902f313f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294533"
 ---
 # <a name="running-the-biztalk-operations-sample"></a><span data-ttu-id="5a2bc-102">运行 BizTalk 操作示例</span><span class="sxs-lookup"><span data-stu-id="5a2bc-102">Running the BizTalk Operations Sample</span></span>
 <span data-ttu-id="5a2bc-103">Microsoft BizTalk Operations 示例使用 Windows 窗体测试客户端应用程序来执行 BizTalk 操作 Web 服务方法并显示结果。</span><span class="sxs-lookup"><span data-stu-id="5a2bc-103">The Microsoft BizTalk Operations sample uses a Windows Forms test client application to execute methods of the BizTalk Operations Web service and display the results.</span></span> <span data-ttu-id="5a2bc-104">你可以打开测试客户端项目，以便运行它，并检查代码以了解如何使用你自己的面向服务的体系结构 (SOA) 和 ESB 应用程序中的 BizTalk 操作 Web 服务。</span><span class="sxs-lookup"><span data-stu-id="5a2bc-104">You can open the test client project to run it and to examine the code to see how you can use the BizTalk Operations Web service in your own service-oriented architecture (SOA) and ESB applications.</span></span>  

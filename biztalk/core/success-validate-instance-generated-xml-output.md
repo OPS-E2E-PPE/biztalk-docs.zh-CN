@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277733"
 ---
 # <a name="success---validate-instance-generated-xml-output"></a><span data-ttu-id="51615-102">成功的验证实例生成 XML 输出</span><span class="sxs-lookup"><span data-stu-id="51615-102">Success - Validate Instance Generated XML Output</span></span>
 <span data-ttu-id="51615-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="51615-103">**Explanation**</span></span>  

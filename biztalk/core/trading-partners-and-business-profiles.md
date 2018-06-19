@@ -1,14 +1,14 @@
 ---
-title: "贸易合作伙伴和业务配置文件 |Microsoft 文档"
-ms.custom: 
+title: 贸易合作伙伴和业务配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbeac421-c319-4a60-a188-28f7268888fc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279533"
 ---
 # <a name="trading-partners-and-business-profiles"></a><span data-ttu-id="d6c15-102">贸易合作伙伴和业务配置文件</span><span class="sxs-lookup"><span data-stu-id="d6c15-102">Trading partners and business profiles</span></span>
 

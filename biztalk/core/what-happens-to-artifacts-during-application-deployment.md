@@ -1,17 +1,17 @@
 ---
-title: "在应用程序部署期间什么操作到项目 |Microsoft 文档"
-ms.custom: 
+title: 在应用程序部署期间什么操作到项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, deploying
 - deploying [artifacts]
 ms.assetid: afd77251-c3bd-454b-907f-a841911abe47
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288485"
 ---
 # <a name="what-happens-to-artifacts-during-application-deployment"></a><span data-ttu-id="9f983-102">在应用程序部署期间对项目采取的操作</span><span class="sxs-lookup"><span data-stu-id="9f983-102">What Happens to Artifacts During Application Deployment</span></span>
 <span data-ttu-id="9f983-103">本部分中的主题介绍添加和删除项目、 导出和导入应用程序和项目，并安装和卸载应用程序时，与应用程序关联的项目会发生什么情况。</span><span class="sxs-lookup"><span data-stu-id="9f983-103">The topics in this section describe what happens to the artifacts associated with an application when you add and remove artifacts, export and import applications and artifacts, and install and uninstall applications.</span></span> <span data-ttu-id="9f983-104">它包含主题如下所示：</span><span class="sxs-lookup"><span data-stu-id="9f983-104">It covers subjects such as the following:</span></span>  

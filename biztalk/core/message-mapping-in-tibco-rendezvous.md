@@ -1,15 +1,15 @@
 ---
-title: "消息映射中 TIBCO 会合 |Microsoft 文档"
-description: "消息字段和 TIBCO 会合到 BizTalk 适配器中的 XML 消息映射"
-ms.custom: 
+title: 消息映射中 TIBCO 会合 |Microsoft 文档
+description: 消息字段和 TIBCO 会合到 BizTalk 适配器中的 XML 消息映射
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62793bec-f076-425c-b25e-c4be5bd93cc8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014948"
 ---
 # <a name="message-mapping-in-tibco-rendezvous"></a><span data-ttu-id="cd690-103">TIBCO Rendezvous 中消息映射</span><span class="sxs-lookup"><span data-stu-id="cd690-103">Message Mapping in TIBCO Rendezvous</span></span>
 <span data-ttu-id="cd690-104">TIBCO Rendezvous 消息由标头信息和一组消息字段组成。</span><span class="sxs-lookup"><span data-stu-id="cd690-104">TIBCO Rendezvous messages are composed of header information and a set of message fields.</span></span> <span data-ttu-id="cd690-105">标头信息直接映射到消息上下文属性。</span><span class="sxs-lookup"><span data-stu-id="cd690-105">The header information is directly mapped to message context properties.</span></span>  

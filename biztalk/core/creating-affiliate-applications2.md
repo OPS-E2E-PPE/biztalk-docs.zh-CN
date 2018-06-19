@@ -1,14 +1,14 @@
 ---
-title: "创建 PeopleSoft 企业的关联应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 PeopleSoft 企业的关联应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95151163-5aaf-4683-afb7-02949ccda3e1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015968"
 ---
 # <a name="creating-affiliate-applications"></a><span data-ttu-id="80446-102">创建关联应用程序</span><span class="sxs-lookup"><span data-stu-id="80446-102">Creating Affiliate Applications</span></span>
 <span data-ttu-id="80446-103">下列步骤显示如何开始使用关联应用程序和单一登录 (SSO)。</span><span class="sxs-lookup"><span data-stu-id="80446-103">The following steps show how to start using affiliate applications and Single Sign-On (SSO).</span></span>  
@@ -34,11 +35,11 @@ ms.lasthandoff: 11/07/2017
   
      <span data-ttu-id="80446-110">**C:\Program Files\Common Files\Enterprise 上单一登录 >**</span><span class="sxs-lookup"><span data-stu-id="80446-110">**C:\Program Files\Common Files\Enterprise Single Sign-On>**</span></span>  
   
-3.  <span data-ttu-id="80446-111">使用企业单一登录命令。</span><span class="sxs-lookup"><span data-stu-id="80446-111">Use the Enterprise Single Sign-On commands.</span></span> <span data-ttu-id="80446-112">有关命令的列表，使用**-帮助**切换。</span><span class="sxs-lookup"><span data-stu-id="80446-112">For a list of commands, use the **-help** switch.</span></span>  
+3.  <span data-ttu-id="80446-111">使用企业单一登录命令。</span><span class="sxs-lookup"><span data-stu-id="80446-111">Use the Enterprise Single Sign-On commands.</span></span> <span data-ttu-id="80446-112">有关命令的列表，使用 **-帮助**切换。</span><span class="sxs-lookup"><span data-stu-id="80446-112">For a list of commands, use the **-help** switch.</span></span>  
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  <span data-ttu-id="80446-113">若要使用 *.XML 作为创建关联应用程序的起始操作，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="80446-113">To create the affiliate application by using *.XML as a start, type the following command:</span></span>  
+4.  <span data-ttu-id="80446-113">若要使用 \*.XML 作为创建关联应用程序的起始操作，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="80446-113">To create the affiliate application by using \*.XML as a start, type the following command:</span></span>  
   
      `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   

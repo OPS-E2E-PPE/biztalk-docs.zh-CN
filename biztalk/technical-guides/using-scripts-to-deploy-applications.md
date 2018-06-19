@@ -1,14 +1,14 @@
 ---
-title: "使用脚本来部署应用程序 |Microsoft 文档"
-ms.custom: 
+title: 使用脚本来部署应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e683c5f-7576-4382-9952-d577cd00186c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009670"
 ---
 # <a name="using-scripts-to-deploy-applications"></a><span data-ttu-id="c597e-102">使用脚本来部署应用程序</span><span class="sxs-lookup"><span data-stu-id="c597e-102">Using Scripts to Deploy Applications</span></span>
 <span data-ttu-id="c597e-103">您应使用脚本来部署 BizTalk 应用程序，在可能的情况。</span><span class="sxs-lookup"><span data-stu-id="c597e-103">You should use scripts to deploy BizTalk applications where possible.</span></span> <span data-ttu-id="c597e-104">脚本在部署过程中减少人为错误的风险。</span><span class="sxs-lookup"><span data-stu-id="c597e-104">Scripting reduces the risk of human error during the deployment process.</span></span> <span data-ttu-id="c597e-105">你应记录中深度你部署过程。</span><span class="sxs-lookup"><span data-stu-id="c597e-105">You should also document your deployment procedures in depth.</span></span> <span data-ttu-id="c597e-106">你应该记录你不具有非常详细步骤编写脚本的任何内容。</span><span class="sxs-lookup"><span data-stu-id="c597e-106">You should document anything that you do not script with very detailed steps.</span></span> <span data-ttu-id="c597e-107">这包括记录对外部系统和非 Microsoft 组件部署任何更改。</span><span class="sxs-lookup"><span data-stu-id="c597e-107">This includes documenting any changes to external systems and to deployment of non-Microsoft components.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "使用列表机制的简单类型派生 |Microsoft 文档"
-ms.custom: 
+title: 使用列表机制的简单类型派生 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14f3c7b7-7585-4297-9177-2deaef8355f0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270957"
 ---
 # <a name="simple-type-derivation-using-the-list-mechanism"></a><span data-ttu-id="07892-102">使用列表机制进行简单类型派生</span><span class="sxs-lookup"><span data-stu-id="07892-102">Simple Type Derivation Using the List Mechanism</span></span>
 <span data-ttu-id="07892-103">使用列表机制从现有简单类型派生新的简单类型时，可以指定此属性或元素的值可为以空格分隔的指定类型值的列表。</span><span class="sxs-lookup"><span data-stu-id="07892-103">When you derive a new simple type from an existing simple type by using the list mechanism, you are specifying that the value for this attribute or element can be a space-separated list of values of the specified type.</span></span> <span data-ttu-id="07892-104">例如，可以指定属性或元素值为以空格分隔的整数列表。</span><span class="sxs-lookup"><span data-stu-id="07892-104">For example, you can specify that an attribute or element value is a space-separated list of integers.</span></span>  

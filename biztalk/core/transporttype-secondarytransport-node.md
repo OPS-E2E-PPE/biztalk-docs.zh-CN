@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279573"
 ---
 # <a name="transporttype-secondarytransport-node"></a><span data-ttu-id="a0c80-102">TransportType （SecondaryTransport 节点）</span><span class="sxs-lookup"><span data-stu-id="a0c80-102">TransportType (SecondaryTransport Node)</span></span>
 <span data-ttu-id="a0c80-103">绑定文件的“SecondaryTransport”节点的“TransportType”节点包含有关适配器的特定信息，该适配器与随同该绑定文件一起导出的传输相关联。</span><span class="sxs-lookup"><span data-stu-id="a0c80-103">The TransportType node of the SecondaryTransport node of a binding file contains specific information about the adapter associated with a transport that is exported with the binding file.</span></span>  

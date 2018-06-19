@@ -1,11 +1,11 @@
 ---
-title: "构造 Web 消息 |Microsoft 文档"
-ms.custom: 
+title: 构造 Web 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web messages, about Web messages
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Web messages
 - messages, Web messages
 ms.assetid: ca1792be-5fba-4f5d-a88e-b854f6a8ce33
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237981"
 ---
 # <a name="constructing-web-messages"></a><span data-ttu-id="3e534-102">构造 Web 消息</span><span class="sxs-lookup"><span data-stu-id="3e534-102">Constructing Web Messages</span></span>
 <span data-ttu-id="3e534-103">可从 Web 消息类型构造 Web 消息。</span><span class="sxs-lookup"><span data-stu-id="3e534-103">You construct a Web message from a Web message type.</span></span> <span data-ttu-id="3e534-104">添加 Web 引用时，BizTalk 会基于已添加的 Web Services 的 Web 方法自动创建 Web 消息类型。</span><span class="sxs-lookup"><span data-stu-id="3e534-104">When you add a Web reference, BizTalk automatically creates Web message types, which BizTalk creates based on the Web methods from the added Web service.</span></span> <span data-ttu-id="3e534-105">你可以向业务流程添加 Web 消息，并将消息类型设置为 Web 消息类型之一。</span><span class="sxs-lookup"><span data-stu-id="3e534-105">You add a Web message to your orchestration, setting the message type to one of the Web message types.</span></span> <span data-ttu-id="3e534-106">你可以基于基元 .NET 或架构类型创建各消息部分。</span><span class="sxs-lookup"><span data-stu-id="3e534-106">You create individual message parts based on primitive .NET or schema types.</span></span> <span data-ttu-id="3e534-107">构造的 Web 消息可以不包含任何消息部分。</span><span class="sxs-lookup"><span data-stu-id="3e534-107">You can construct a Web message that contains no message parts.</span></span>  

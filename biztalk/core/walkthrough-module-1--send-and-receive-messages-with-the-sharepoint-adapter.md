@@ -1,11 +1,11 @@
 ---
-title: "演练： 模块 1-发送和接收消息与 Windows SharePoint Services 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 模块 1-发送和接收消息与 Windows SharePoint Services 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services, creating sites
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Windows SharePoint Services
 - Windows SharePoint Services adapter tutorials, sending messages
 ms.assetid: 6494aef5-bb1d-4a41-8186-1d49625a1013
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010502"
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="ee83b-102">演练： 模块 1-发送和接收消息与 Windows SharePoint Services Adapter</span><span class="sxs-lookup"><span data-stu-id="ee83b-102">Walkthrough: Module 1 - Sending and Receiving Messages with the Windows SharePoint Services Adapter</span></span>
 <span data-ttu-id="ee83b-103">本演练介绍如何配置 Windows SharePoint Services 和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，以便可以使用 Windows SharePoint Services 适配器和基于内容的路由 (CBR) 来发送和接收消息。</span><span class="sxs-lookup"><span data-stu-id="ee83b-103">This walkthrough shows you how to configure Windows SharePoint Services and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] so you can send and receive a message using the Windows SharePoint Services Adapter and content-based routing (CBR).</span></span> <span data-ttu-id="ee83b-104">基于内容的路由消除了订阅明确绑定到特定端口的消息的必要。</span><span class="sxs-lookup"><span data-stu-id="ee83b-104">Content-based routing eliminates the need for message subscription for messages that are deterministically bound to specific ports.</span></span> <span data-ttu-id="ee83b-105">同时为那些需要根据信封属性或仅根据接收端口配置属性路由消息的用户提供了更多的灵活性。</span><span class="sxs-lookup"><span data-stu-id="ee83b-105">It also provides additional flexibility for users who want to route messages based on envelope properties or simply based on receive port configuration properties.</span></span> <span data-ttu-id="ee83b-106">Windows SharePoint Services 适配器的简介，请参阅[什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="ee83b-106">For an introduction to the Windows SharePoint Services adapter, see [What Is the Windows SharePoint Services Adapter?](../core/what-is-the-windows-sharepoint-services-adapter.md).</span></span>  
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  <span data-ttu-id="ee83b-121">在**网站地址**部分中，在**URL 名称**字段中，键入`WSSAdapterWalkthrough`。</span><span class="sxs-lookup"><span data-stu-id="ee83b-121">In the **Web Site Address** section, in the **URL name** field, type `WSSAdapterWalkthrough`.</span></span>  
   
-5.  <span data-ttu-id="ee83b-122">在**网站集所有者**部分中，在**用户名字段中，**键入用户名。</span><span class="sxs-lookup"><span data-stu-id="ee83b-122">In the **Site Collection Owner** section, in the **User name field,** type a user name.</span></span> <span data-ttu-id="ee83b-123">此用户将是该网站的所有者，不需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中具有特殊权限。</span><span class="sxs-lookup"><span data-stu-id="ee83b-123">This user will be the owner for the Web site and does not need special permissions in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+5.  <span data-ttu-id="ee83b-122">在**网站集所有者**部分中，在**用户名字段中，** 键入用户名。</span><span class="sxs-lookup"><span data-stu-id="ee83b-122">In the **Site Collection Owner** section, in the **User name field,** type a user name.</span></span> <span data-ttu-id="ee83b-123">此用户将是该网站的所有者，不需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中具有特殊权限。</span><span class="sxs-lookup"><span data-stu-id="ee83b-123">This user will be the owner for the Web site and does not need special permissions in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
 6.  <span data-ttu-id="ee83b-124">在**网站集所有者**部分中，在**电子邮件**字段中，键入一个电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="ee83b-124">In the **Site Collection Owner** section, in the **E-mail** field, type in an e-mail address.</span></span>  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="ee83b-132">下**文档库**，单击**文档库**。</span><span class="sxs-lookup"><span data-stu-id="ee83b-132">Under **Document Libraries**, click **Document Library**.</span></span>  
   
-3.  <span data-ttu-id="ee83b-133">在**名称和描述**部分中，在**名称字段中，**类型`Source`。</span><span class="sxs-lookup"><span data-stu-id="ee83b-133">In the **Name and Description** section, in the **Name field,** type `Source`.</span></span>  
+3.  <span data-ttu-id="ee83b-133">在**名称和描述**部分中，在**名称字段中，** 类型`Source`。</span><span class="sxs-lookup"><span data-stu-id="ee83b-133">In the **Name and Description** section, in the **Name field,** type `Source`.</span></span>  
   
 4.  <span data-ttu-id="ee83b-134">在**导航**部分中，选择**是**在快速启动栏上显示此窗体库。</span><span class="sxs-lookup"><span data-stu-id="ee83b-134">In the **Navigation** section, select **Yes** to display this form library on the Quick Launch bar.</span></span>  
   

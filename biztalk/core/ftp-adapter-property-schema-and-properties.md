@@ -1,11 +1,11 @@
 ---
-title: "FTP 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: FTP 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [FTP adapters], schemas
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - Password property [FTP adapters]
 - MaxConnections property [FTP adapters]
 ms.assetid: 677fdb61-c2b0-4df2-a826-840113e61e8b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006134"
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a><span data-ttu-id="dc409-102">FTP 适配器属性架构和属性</span><span class="sxs-lookup"><span data-stu-id="dc409-102">FTP Adapter Property Schema and Properties</span></span>
 <span data-ttu-id="dc409-103">下表包含 FTP 适配器属性架构中的属性。</span><span class="sxs-lookup"><span data-stu-id="dc409-103">The following table contains the properties in the FTP adapter property schema.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
   
 |<span data-ttu-id="dc409-105">Name</span><span class="sxs-lookup"><span data-stu-id="dc409-105">Name</span></span>|<span data-ttu-id="dc409-106">类型</span><span class="sxs-lookup"><span data-stu-id="dc409-106">Type</span></span>|<span data-ttu-id="dc409-107">Description</span><span class="sxs-lookup"><span data-stu-id="dc409-107">Description</span></span>|  
 |----------|----------|-----------------|  
-|<span data-ttu-id="dc409-108">**RepresentationType**</span><span class="sxs-lookup"><span data-stu-id="dc409-108">**RepresentationType**</span></span>|<span data-ttu-id="dc409-109">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-109">xs:string</span></span>|<span data-ttu-id="dc409-110">指定 FTP 适配器发送数据的方式。</span><span class="sxs-lookup"><span data-stu-id="dc409-110">Specifies how the FTP adapter sends data.</span></span><br /><br /> <span data-ttu-id="dc409-111">**有效值：**二进制或 ASCII</span><span class="sxs-lookup"><span data-stu-id="dc409-111">**Valid values:** binary or ASCII</span></span>|  
+|<span data-ttu-id="dc409-108">**RepresentationType**</span><span class="sxs-lookup"><span data-stu-id="dc409-108">**RepresentationType**</span></span>|<span data-ttu-id="dc409-109">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-109">xs:string</span></span>|<span data-ttu-id="dc409-110">指定 FTP 适配器发送数据的方式。</span><span class="sxs-lookup"><span data-stu-id="dc409-110">Specifies how the FTP adapter sends data.</span></span><br /><br /> <span data-ttu-id="dc409-111">**有效值：** 二进制或 ASCII</span><span class="sxs-lookup"><span data-stu-id="dc409-111">**Valid values:** binary or ASCII</span></span>|  
 |<span data-ttu-id="dc409-112">**SSOAffiliateApplication**</span><span class="sxs-lookup"><span data-stu-id="dc409-112">**SSOAffiliateApplication**</span></span>|<span data-ttu-id="dc409-113">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-113">xs:string</span></span>|<span data-ttu-id="dc409-114">指定要在 FTP 发送端口上使用的企业单一登录关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="dc409-114">Specifies the Enterprise Single Sign-On affiliate application to use on the FTP send port.</span></span>|  
 |<span data-ttu-id="dc409-115">**UserName**</span><span class="sxs-lookup"><span data-stu-id="dc409-115">**UserName**</span></span>|<span data-ttu-id="dc409-116">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-116">xs:string</span></span>|<span data-ttu-id="dc409-117">指定发送消息时登录 FTP 服务器所用的用户名。</span><span class="sxs-lookup"><span data-stu-id="dc409-117">Specifies the user name to log on to the FTP server when sending messages.</span></span>|  
 |<span data-ttu-id="dc409-118">**密码**</span><span class="sxs-lookup"><span data-stu-id="dc409-118">**Password**</span></span>|<span data-ttu-id="dc409-119">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-119">xs:string</span></span>|<span data-ttu-id="dc409-120">指定发送消息时登录 FTP 服务器所用的密码。</span><span class="sxs-lookup"><span data-stu-id="dc409-120">Specifies the password to use when logging on to the FTP server when sending messages.</span></span>|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 12/01/2017
 |<span data-ttu-id="dc409-150">**SpoolingFolder**</span><span class="sxs-lookup"><span data-stu-id="dc409-150">**SpoolingFolder**</span></span>|<span data-ttu-id="dc409-151">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-151">xs:string</span></span>|<span data-ttu-id="dc409-152">指定 FTP 服务器上临时文件夹的位置。</span><span class="sxs-lookup"><span data-stu-id="dc409-152">Specifies the location for a temporary folder on the FTP server.</span></span> <span data-ttu-id="dc409-153">此位置用于确保在传输失败后可以进行恢复。</span><span class="sxs-lookup"><span data-stu-id="dc409-153">You use this to ensure recovery from a transfer failure.</span></span>|  
 |<span data-ttu-id="dc409-154">**UseSsl**</span><span class="sxs-lookup"><span data-stu-id="dc409-154">**UseSsl**</span></span>|<span data-ttu-id="dc409-155">xs:boolean</span><span class="sxs-lookup"><span data-stu-id="dc409-155">xs:boolean</span></span>|<span data-ttu-id="dc409-156">指定 FTP 适配器是否必须使用 SSL 与 FTPS 服务器进行通信。</span><span class="sxs-lookup"><span data-stu-id="dc409-156">Specifies whether the FTP adapter must use SSL to communicate with the FTPS server.</span></span>|  
 |<span data-ttu-id="dc409-157">**UseDataProtection**</span><span class="sxs-lookup"><span data-stu-id="dc409-157">**UseDataProtection**</span></span>|<span data-ttu-id="dc409-158">xs:boolean</span><span class="sxs-lookup"><span data-stu-id="dc409-158">xs:boolean</span></span>|<span data-ttu-id="dc409-159">指定是否对文件传输进行 SSL 加密。</span><span class="sxs-lookup"><span data-stu-id="dc409-159">Specifies whether SSL encryption is used for file transfers.</span></span> <span data-ttu-id="dc409-160">如果适配器发送和接收来自 FTPS 服务器的数据文件时必须使用 SSL 加密，请选择 true。</span><span class="sxs-lookup"><span data-stu-id="dc409-160">Choose true if the adapter must use SSL encryption when it sends and receives data files from the FTPS server.</span></span> <span data-ttu-id="dc409-161">对于要以纯文本形式发送和接收数据文件的适配器，请选择 false。</span><span class="sxs-lookup"><span data-stu-id="dc409-161">Choose false for the adapter to send and receive data files as plaintext.</span></span>|  
-|<span data-ttu-id="dc409-162">**FtpsConnectionMode**</span><span class="sxs-lookup"><span data-stu-id="dc409-162">**FtpsConnectionMode**</span></span>|<span data-ttu-id="dc409-163">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-163">xs:string</span></span>|<span data-ttu-id="dc409-164">指定用于 FTPS 服务器的 SSL 连接模式。</span><span class="sxs-lookup"><span data-stu-id="dc409-164">Specifies the mode of SSL connection made to the FTPS server.</span></span><br /><br /> <span data-ttu-id="dc409-165">**有效值：**隐式或显式</span><span class="sxs-lookup"><span data-stu-id="dc409-165">**Valid Values:** Implicit or Explicit</span></span>|  
+|<span data-ttu-id="dc409-162">**FtpsConnectionMode**</span><span class="sxs-lookup"><span data-stu-id="dc409-162">**FtpsConnectionMode**</span></span>|<span data-ttu-id="dc409-163">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-163">xs:string</span></span>|<span data-ttu-id="dc409-164">指定用于 FTPS 服务器的 SSL 连接模式。</span><span class="sxs-lookup"><span data-stu-id="dc409-164">Specifies the mode of SSL connection made to the FTPS server.</span></span><br /><br /> <span data-ttu-id="dc409-165">**有效值：** 隐式或显式</span><span class="sxs-lookup"><span data-stu-id="dc409-165">**Valid Values:** Implicit or Explicit</span></span>|  
 |<span data-ttu-id="dc409-166">**ClientCertificateHash**</span><span class="sxs-lookup"><span data-stu-id="dc409-166">**ClientCertificateHash**</span></span>|<span data-ttu-id="dc409-167">xs:string</span><span class="sxs-lookup"><span data-stu-id="dc409-167">xs:string</span></span>|<span data-ttu-id="dc409-168">指定必须在安全套接字层 (SSL) 协商中使用的客户端证书的 SHA1 哈希。</span><span class="sxs-lookup"><span data-stu-id="dc409-168">Specifies the SHA1 hash of the client certificate that must be used in the Secure Sockets Layer (SSL) negotiation.</span></span><br /><br /> <span data-ttu-id="dc409-169">基于此哈希，从运行 BizTalk 主机实例的用户帐户的个人存储中提取客户端证书。</span><span class="sxs-lookup"><span data-stu-id="dc409-169">Based on this hash, the client certificate is picked up from the personal store of the user account under which the BizTalk host instance is running.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="dc409-170">另请参阅</span><span class="sxs-lookup"><span data-stu-id="dc409-170">See Also</span></span>  

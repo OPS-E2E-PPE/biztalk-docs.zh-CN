@@ -1,14 +1,14 @@
 ---
-title: "配置标识符 (AS2) |Microsoft 文档"
-ms.custom: 
+title: 配置标识符 (AS2) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29f12696-8257-4664-8e61-292678e98b6b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007438"
 ---
 # <a name="configuring-identifiers-as2"></a><span data-ttu-id="cf54a-102">配置标识符（AS2）</span><span class="sxs-lookup"><span data-stu-id="cf54a-102">Configuring Identifiers (AS2)</span></span>
 <span data-ttu-id="cf54a-103">在合作伙伴协议中，您必须指定发送方和接收方。</span><span class="sxs-lookup"><span data-stu-id="cf54a-103">In the partner agreement, you must specify the sender and receiver parties.</span></span> <span data-ttu-id="cf54a-104">这些值还可用于入站或出站消息的协议解析。</span><span class="sxs-lookup"><span data-stu-id="cf54a-104">These values are also used for agreement resolution for the inbound or outbound messages.</span></span>  

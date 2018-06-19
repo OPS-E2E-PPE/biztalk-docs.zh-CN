@@ -1,14 +1,14 @@
 ---
-title: "什么 BizTalk Server 日志传送？ | Microsoft Docs"
-ms.custom: 
+title: 什么 BizTalk Server 日志传送？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 79a2088a-ff36-4590-97c9-51d5bb245486
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010494"
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a><span data-ttu-id="5a833-103">什么 BizTalk Server 日志传送？</span><span class="sxs-lookup"><span data-stu-id="5a833-103">What Is BizTalk Server Log Shipping?</span></span>
 <span data-ttu-id="5a833-104">BizTalk Server 灾难恢复过程围绕 BizTalk 日志传送。</span><span class="sxs-lookup"><span data-stu-id="5a833-104">BizTalk Server disaster recovery procedures are built around BizTalk log shipping.</span></span> <span data-ttu-id="5a833-105">BizTalk 日志传送通过连续将事务日志更新应用于的灾难恢复站点数据库，简化了发生灾难时的数据库还原。</span><span class="sxs-lookup"><span data-stu-id="5a833-105">BizTalk log shipping simplifies database restoration in the event of a disaster by continuously applying transaction log updates to the disaster recovery site databases.</span></span>  

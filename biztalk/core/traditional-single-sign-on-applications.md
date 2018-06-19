@@ -1,14 +1,14 @@
 ---
-title: "传统单一登录在应用程序 |Microsoft 文档"
-ms.custom: 
+title: 传统单一登录在应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a49bdae7-215a-43fb-875e-f64abb37aef0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279685"
 ---
 # <a name="traditional-single-sign-on-applications"></a><span data-ttu-id="ffa87-102">传统单一登录在应用程序</span><span class="sxs-lookup"><span data-stu-id="ffa87-102">Traditional Single Sign-On Applications</span></span>
 <span data-ttu-id="ffa87-103">单一登录 (SSO) 编程结构包含一个用于在应用程序和用户之间建立映射的映射组件、一个用于查找指定用途凭据的查找组件以及一个用于执行管理任务的管理组件。</span><span class="sxs-lookup"><span data-stu-id="ffa87-103">The Single Sign-On (SSO) programming architecture contains a mapping component to map between applications and users, a lookup component to look up credentials for a specified use, and an administration component to perform administrative tasks.</span></span> <span data-ttu-id="ffa87-104">此外，SSO 结构还包含一个票证接口，以便应用程序可颁发和兑换票证。</span><span class="sxs-lookup"><span data-stu-id="ffa87-104">In addition, SSO also contains a ticketing interface so that your application can issue and redeem tickets.</span></span>  

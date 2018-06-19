@@ -1,18 +1,18 @@
 ---
-title: "警报管理器上 BAM 门户页 |Microsoft 文档"
-ms.custom: 
+title: 警报管理器上 BAM 门户页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, alerts
 - alerts, creating
 - Alert Manager page [BAM portal]
 ms.assetid: 9e2a17e5-94f8-48ea-b704-44168fab6981
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230405"
 ---
 # <a name="alert-manager-on-the-bam-portal-page"></a><span data-ttu-id="72d9c-102">警报管理器上 BAM 门户页</span><span class="sxs-lookup"><span data-stu-id="72d9c-102">Alert Manager on the BAM Portal Page</span></span>
 <span data-ttu-id="72d9c-103">业务用户、 开发人员和业务分析师使用警报管理器在 BAM 门户页上创建或编辑警报。</span><span class="sxs-lookup"><span data-stu-id="72d9c-103">Business users, developers, and business analysts use the Alert Manager on the BAM portal page to create or edit an alert.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "使用事务和处理异常 |Microsoft 文档"
-ms.custom: 
+title: 使用事务和处理异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transactions, orchestrations
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Scope shape [Orchestration Designer], errors
 - Scope shape [Orchestration Designer], transactions
 ms.assetid: bb38f5eb-6641-4e7c-8e2a-c474fc739999
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288429"
 ---
 # <a name="using-transactions-and-handling-exceptions"></a><span data-ttu-id="62707-102">使用事务和处理异常</span><span class="sxs-lookup"><span data-stu-id="62707-102">Using Transactions and Handling Exceptions</span></span>
 <span data-ttu-id="62707-103">在您设计某一业务流程时，应该仔细考虑可能发生问题的地方以及如何最好地处理这些问题。</span><span class="sxs-lookup"><span data-stu-id="62707-103">When you design an orchestration, you should consider carefully where problems might occur and how best to deal with them.</span></span> <span data-ttu-id="62707-104">许多业务流程都存在若干潜在的故障点。</span><span class="sxs-lookup"><span data-stu-id="62707-104">Many orchestrations have several potential points of failure.</span></span> <span data-ttu-id="62707-105">问题可能出自许多方面；例如，服务器可能停机，或者消息的格式可能不正确。</span><span class="sxs-lookup"><span data-stu-id="62707-105">Problems can arise for any number of other reasons; for example, a server might go down or a message might be badly formatted.</span></span>  

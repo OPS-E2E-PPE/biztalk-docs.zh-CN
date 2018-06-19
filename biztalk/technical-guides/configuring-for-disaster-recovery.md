@@ -1,14 +1,14 @@
 ---
-title: "为灾难恢复配置 |Microsoft 文档"
-ms.custom: 
+title: 为灾难恢复配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdafe68-c8bf-4064-afca-6dfd22d15052
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010950"
 ---
 # <a name="configuring-for-disaster-recovery"></a><span data-ttu-id="71e80-102">为灾难恢复配置</span><span class="sxs-lookup"><span data-stu-id="71e80-102">Configuring for Disaster Recovery</span></span>
 <span data-ttu-id="71e80-103">BizTalk Server 日志传送功能扩展现有的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业。</span><span class="sxs-lookup"><span data-stu-id="71e80-103">The BizTalk Server Log Shipping feature extends the existing Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job.</span></span> <span data-ttu-id="71e80-104">BizTalk Server 日志传送无需手动还原的备份作业，生成的备份集的一系列，并发生系统故障时减少停机时间。</span><span class="sxs-lookup"><span data-stu-id="71e80-104">BizTalk Server Log Shipping eliminates the need to manually restore a series of backup sets produced by the backup job, and reduces downtime in the event of a system failure.</span></span> <span data-ttu-id="71e80-105">BizTalk Server 日志传送是 BizTalk 灾难恢复过程的关键组件。</span><span class="sxs-lookup"><span data-stu-id="71e80-105">BizTalk Server Log Shipping is a critical component for BizTalk disaster recovery procedures.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "包含的位置记录的平面文件消息 |Microsoft 文档"
-ms.custom: 
+title: 包含的位置记录的平面文件消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72c17c25-3847-458e-a43e-0dbdc42db749
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005590"
 ---
 # <a name="flat-file-messages-with-positional-records"></a><span data-ttu-id="2dc97-102">带有位置记录的平面文件消息</span><span class="sxs-lookup"><span data-stu-id="2dc97-102">Flat File Messages with Positional Records</span></span>
 <span data-ttu-id="2dc97-103">平面文件实例消息中的位置记录包含的各个字段（数据项）都具有预定义长度。</span><span class="sxs-lookup"><span data-stu-id="2dc97-103">Positional records within a flat file instance message contain individual fields (items of data) that are each of a predefined length.</span></span> <span data-ttu-id="2dc97-104">根据这些长度对字段进行解析。</span><span class="sxs-lookup"><span data-stu-id="2dc97-104">The fields are parsed according to these lengths.</span></span> <span data-ttu-id="2dc97-105">例如，考虑平面文件实例消息中的以下位置记录，该记录包含发货地址（第一行显示了为每个字段保留的字符数）。</span><span class="sxs-lookup"><span data-stu-id="2dc97-105">For example, consider the following positional record from a flat file instance message, which contains a ship to address (the first line shows the number of characters reserved for each field).</span></span>  

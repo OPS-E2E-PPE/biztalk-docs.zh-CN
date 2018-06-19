@@ -1,14 +1,14 @@
 ---
-title: "使用网格页 |Microsoft 文档"
-ms.custom: 
+title: 使用网格页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14a27bbf-3761-49dd-be6f-f311857e38c2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289813"
 ---
 # <a name="working-with-grid-pages"></a><span data-ttu-id="c63e4-102">使用网格页</span><span class="sxs-lookup"><span data-stu-id="c63e4-102">Working with Grid Pages</span></span>
 <span data-ttu-id="c63e4-103">为许多业务文档创建映射可能会涉及大量的链接和 functoid，这经常会导致网格变得复杂并且难以理解。</span><span class="sxs-lookup"><span data-stu-id="c63e4-103">Creating maps for many business documents can involve numerous links and functoids, often enough to make the grid complex and difficult to understand.</span></span> <span data-ttu-id="c63e4-104">对这一潜在复杂问题的解决方案是将多页引入网格。</span><span class="sxs-lookup"><span data-stu-id="c63e4-104">The solution to this potential complexity is the introduction of pages to the grid.</span></span> <span data-ttu-id="c63e4-105">您可以将映射的各方面分别放置在不同的页上，然后分别查看和使用这些页。</span><span class="sxs-lookup"><span data-stu-id="c63e4-105">You can isolate different aspects of your mapping into different pages, and then view and work with those pages separately.</span></span>  

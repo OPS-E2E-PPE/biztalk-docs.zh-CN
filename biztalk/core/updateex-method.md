@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287421"
 ---
 # <a name="updateex-method"></a><span data-ttu-id="caf03-102">UpdateEx 方法</span><span class="sxs-lookup"><span data-stu-id="caf03-102">UpdateEx Method</span></span>
 <span data-ttu-id="caf03-103">用于更新属性基于输入的密钥参数 (key1、 key2，...</span><span class="sxs-lookup"><span data-stu-id="caf03-103">Used to update properties based on the input key parameters (key1, key2, …</span></span> <span data-ttu-id="caf03-104">keyn)。</span><span class="sxs-lookup"><span data-stu-id="caf03-104">keyn).</span></span> <span data-ttu-id="caf03-105">使用 `UpdateEx` 时，不能删除集合中的项目。</span><span class="sxs-lookup"><span data-stu-id="caf03-105">When using `UpdateEx`, you cannot delete items in a collection.</span></span> <span data-ttu-id="caf03-106">可使用单独方法进行删除。</span><span class="sxs-lookup"><span data-stu-id="caf03-106">A separate method facilitates deletion.</span></span> <span data-ttu-id="caf03-107">有关详细信息，请参阅[DeleteOnly 方法](../core/deleteonly-method.md)。</span><span class="sxs-lookup"><span data-stu-id="caf03-107">For more information, see [DeleteOnly Method](../core/deleteonly-method.md).</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230429"
 ---
 # <a name="artifacts"></a><span data-ttu-id="e0cf4-102">项目</span><span class="sxs-lookup"><span data-stu-id="e0cf4-102">Artifacts</span></span>
 <span data-ttu-id="e0cf4-103">本主题将介绍各个 BizTalk Server 项目。</span><span class="sxs-lookup"><span data-stu-id="e0cf4-103">This topic discusses the various BizTalk Server artifacts.</span></span> <span data-ttu-id="e0cf4-104">项目包括 BizTalk 应用程序正常运行所必需的程序集、安全证书、业务规则策略、BAM 配置文件和绑定等。</span><span class="sxs-lookup"><span data-stu-id="e0cf4-104">Artifacts include the assemblies, security certificates, business rules policies, BAM configuration files, bindings, and so forth that are necessary for a BizTalk application to function.</span></span> <span data-ttu-id="e0cf4-105">可以从 BizTalk 管理控制台中查看和管理应用程序的项目。</span><span class="sxs-lookup"><span data-stu-id="e0cf4-105">You view and manage an application's artifacts from within the BizTalk Administration Console.</span></span>  

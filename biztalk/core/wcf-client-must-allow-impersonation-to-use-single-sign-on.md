@@ -1,14 +1,14 @@
 ---
-title: "WCF 客户端必须允许的模拟，以便使用单一登录 |Microsoft 文档"
-ms.custom: 
+title: WCF 客户端必须允许的模拟，以便使用单一登录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5b9f294-4d8a-4a12-91e8-8d325db7c420
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288605"
 ---
 # <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a><span data-ttu-id="44182-102">WCF 客户端必须允许模拟才能使用单一登录</span><span class="sxs-lookup"><span data-stu-id="44182-102">WCF client must allow impersonation to use Single Sign-On</span></span>
 ## <a name="details"></a><span data-ttu-id="44182-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="44182-103">Details</span></span>  

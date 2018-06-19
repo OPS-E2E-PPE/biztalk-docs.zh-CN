@@ -1,14 +1,14 @@
 ---
-title: "ESB 管理门户 |Microsoft 文档"
-ms.custom: 
+title: ESB 管理门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b702d03a-2e0a-4c46-a785-c0aeae35a5f0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294229"
 ---
 # <a name="esb-management-portal"></a><span data-ttu-id="2816c-102">ESB 管理门户</span><span class="sxs-lookup"><span data-stu-id="2816c-102">ESB Management Portal</span></span>
 <span data-ttu-id="2816c-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括一个全面的基于 Web 的异常和错误消息管理框架，以促进一致的系统和业务异常的处理。</span><span class="sxs-lookup"><span data-stu-id="2816c-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes a comprehensive Web-based exception and fault message management framework that promotes consistent handling of both system and business exceptions.</span></span> <span data-ttu-id="2816c-104">包含的门户用作了度量值和可见性 ESB 活动如何提供门户应用程序的示例。</span><span class="sxs-lookup"><span data-stu-id="2816c-104">The included portal serves as a sample of how a portal application can provide metrics and visibility into ESB activities.</span></span>  

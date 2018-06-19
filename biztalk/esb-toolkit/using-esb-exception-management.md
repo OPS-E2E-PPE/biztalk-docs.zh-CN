@@ -1,14 +1,14 @@
 ---
-title: "使用 ESB 异常管理 |Microsoft 文档"
-ms.custom: 
+title: 使用 ESB 异常管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: de6ce411-2d34-4fd8-9644-6fbc9cec266d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008534"
 ---
 # <a name="using-esb-exception-management"></a><span data-ttu-id="2a73b-102">使用 ESB 异常管理</span><span class="sxs-lookup"><span data-stu-id="2a73b-102">Using ESB Exception Management</span></span>
 <span data-ttu-id="2a73b-103">在一组的上下文，并在大量不同的处理阶段中 ESB 期间可能出现错误和异常。</span><span class="sxs-lookup"><span data-stu-id="2a73b-103">Errors and exceptions can occur in a range of contexts and during a number of different processing stages in an ESB.</span></span> <span data-ttu-id="2a73b-104">本部分提供有关处理异常的信息，并描述如何在您可以发布通过 ESB 管理门户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="2a73b-104">This section provides information about handling exceptions and describes how you can publish details through the ESB Management Portal.</span></span>  
