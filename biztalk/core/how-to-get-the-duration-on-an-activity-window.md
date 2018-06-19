@@ -1,18 +1,18 @@
 ---
-title: "如何在非活动窗口上获取持续时间 |Microsoft 文档"
-ms.custom: 
+title: 如何在非活动窗口上获取持续时间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], time intervals
 - managing [BAM], time intervals
 - Get-ActivityWindow command [BAM]
 ms.assetid: d70f6767-f6f7-4ecf-ad9d-4a9d8c76edea
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971395"
 ---
 # <a name="how-to-get-the-duration-on-an-activity-window"></a><span data-ttu-id="69830-102">如何获取活动时段的持续时间</span><span class="sxs-lookup"><span data-stu-id="69830-102">How to Get the Duration on an Activity Window</span></span>
 <span data-ttu-id="69830-103">管理员使用**get activitywindow**命令来获取指定的活动的持续时间。</span><span class="sxs-lookup"><span data-stu-id="69830-103">Administrators use the **get-activitywindow** command to get the duration for the specified activity.</span></span> <span data-ttu-id="69830-104">该命令返回持续时间的长度和度量单位。</span><span class="sxs-lookup"><span data-stu-id="69830-104">The command returns the length of the duration and the units by which the duration is measured.</span></span>  

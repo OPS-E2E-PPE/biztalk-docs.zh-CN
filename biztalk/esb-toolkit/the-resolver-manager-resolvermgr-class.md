@@ -1,14 +1,14 @@
 ---
-title: "冲突解决程序管理器 (ResolverMgr) 类 |Microsoft 文档"
-ms.custom: 
+title: 冲突解决程序管理器 (ResolverMgr) 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89fa551d-0aca-4777-adbc-2bc46ab8664a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294741"
 ---
 # <a name="the-resolver-manager-resolvermgr-class"></a><span data-ttu-id="85f48-102">冲突解决程序管理器 (ResolverMgr) 类</span><span class="sxs-lookup"><span data-stu-id="85f48-102">The Resolver Manager (ResolverMgr) Class</span></span>
 <span data-ttu-id="85f48-103">转换和路由消息传递服务会使用**ResolverMgr**类来执行解析。</span><span class="sxs-lookup"><span data-stu-id="85f48-103">The Transform and Routing messaging services use the **ResolverMgr** class to perform resolution.</span></span> <span data-ttu-id="85f48-104">ESB 动态转换和动态传递代理还使用**ResolverManager**类来执行实时 (JIT) 解析。</span><span class="sxs-lookup"><span data-stu-id="85f48-104">The ESB dynamic transformation and dynamic delivery agents also use the **ResolverManager** class to perform just-in-time (JIT) resolution.</span></span>  

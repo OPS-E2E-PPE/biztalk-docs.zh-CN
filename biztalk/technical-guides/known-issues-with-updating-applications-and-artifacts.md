@@ -1,14 +1,14 @@
 ---
-title: "带有更新应用程序和项目的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 带有更新应用程序和项目的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 220ea03c-d453-40cc-8ddb-18a96f8ddfe5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009926"
 ---
 # <a name="known-issues-with-updating-applications-and-artifacts"></a><span data-ttu-id="8b53c-102">更新应用程序和项目的已知的问题</span><span class="sxs-lookup"><span data-stu-id="8b53c-102">Known Issues with Updating Applications and Artifacts</span></span>
 ## <a name="updating-an-application"></a><span data-ttu-id="8b53c-103">更新应用程序</span><span class="sxs-lookup"><span data-stu-id="8b53c-103">Updating an Application</span></span>  

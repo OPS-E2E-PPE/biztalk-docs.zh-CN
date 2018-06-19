@@ -1,11 +1,11 @@
 ---
-title: "使用上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 使用上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, context properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - promoted properties, context properties
 - context properties, messages
 ms.assetid: 306127a9-df03-4aaf-8dd8-76df51eb193d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006750"
 ---
 # <a name="using-context-properties"></a><span data-ttu-id="41727-102">使用上下文属性</span><span class="sxs-lookup"><span data-stu-id="41727-102">Using Context Properties</span></span>
 <span data-ttu-id="41727-103">HL7 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) Messaging Engine 和其组件在内部使用上下文属性。</span><span class="sxs-lookup"><span data-stu-id="41727-103">The BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) Messaging Engine and its components use context properties internally.</span></span> <span data-ttu-id="41727-104">不建议更改由某些上下文属性的引擎设置的值，因为它可能会影响引擎的执行逻辑。</span><span class="sxs-lookup"><span data-stu-id="41727-104">Changing the values set by the engine for some context properties is not recommended, because it may affect the execution logic of the engine.</span></span> <span data-ttu-id="41727-105">但是，你可以更改大量的属性不由引擎设置。</span><span class="sxs-lookup"><span data-stu-id="41727-105">However, you can change a large number of properties not set by the engine.</span></span> <span data-ttu-id="41727-106">可用于创建发送端口上的筛选器表达式的上下文属性 (有关详细信息，请参阅[发送端口上设置筛选器表达式](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md))。</span><span class="sxs-lookup"><span data-stu-id="41727-106">You can use the context properties for creation of filter expressions on send ports (for more information, see [Setting Filter Expressions on Send Ports](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)).</span></span> <span data-ttu-id="41727-107">业务流程，还可以在筛选表达式中使用上下文属性。</span><span class="sxs-lookup"><span data-stu-id="41727-107">You can also use context properties in filter expressions for orchestrations.</span></span> <span data-ttu-id="41727-108">只要一个项目具有对全局属性架构的引用的属性是可用于筛选器表达式 (其[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]时使用的常见模板之一创建)。</span><span class="sxs-lookup"><span data-stu-id="41727-108">The properties are available for filter expressions as long as a project has a reference to the global properties schemas (which [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] creates when you use one of the common templates).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "演练： 以编程方式执行策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 以编程方式执行策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6398e7af-2ed1-4596-879c-3b7d000b8de2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290373"
 ---
 # <a name="walkthrough-executing-the-policy-programmatically"></a><span data-ttu-id="fc38c-102">演练： 以编程方式执行策略</span><span class="sxs-lookup"><span data-stu-id="fc38c-102">Walkthrough: Executing the Policy Programmatically</span></span>
 <span data-ttu-id="fc38c-103">本演练提供了分步过程调用中创建的策略[演练： 创建简单的业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练的控制台应用程序以编程方式。</span><span class="sxs-lookup"><span data-stu-id="fc38c-103">This walkthrough provides step-by-step procedures for invoking the policy you created in the [Walkthrough: Creating a Simple Business Policy](../core/walkthrough-creating-a-simple-business-policy.md) walkthrough from a console application programmatically.</span></span>  
@@ -200,7 +201,7 @@ ms.lasthandoff: 09/20/2017
     }  
     ```  
   
--   <span data-ttu-id="fc38c-162">你可能想要添加**console.readline （)**末尾的语句**Main**函数，以便在应用程序等待你终止该应用程序。</span><span class="sxs-lookup"><span data-stu-id="fc38c-162">You may want to add a **Console.ReadLine()** statement at the end of the **Main** function so that the application waits for you to terminate the application.</span></span>  
+-   <span data-ttu-id="fc38c-162">你可能想要添加**console.readline （)** 末尾的语句**Main**函数，以便在应用程序等待你终止该应用程序。</span><span class="sxs-lookup"><span data-stu-id="fc38c-162">You may want to add a **Console.ReadLine()** statement at the end of the **Main** function so that the application waits for you to terminate the application.</span></span>  
   
 -   <span data-ttu-id="fc38c-163">在本演练中，客户端只向 ProcessPurchaseOrder 策略提交一个事实。</span><span class="sxs-lookup"><span data-stu-id="fc38c-163">In this walkthrough, the client submits only one fact to the ProcessPurchaseOrder policy.</span></span> <span data-ttu-id="fc38c-164">如果客户端必须提交到策略的多个事实，则需要创建的事实数组并使用重载**执行**采用数组作为参数的方法。</span><span class="sxs-lookup"><span data-stu-id="fc38c-164">If the client needs to submit more than one fact to a policy, it needs to create an array of facts and use the overloaded **Execute** method that takes an array as a parameter.</span></span> <span data-ttu-id="fc38c-165">下列示例代码演示了具体做法：</span><span class="sxs-lookup"><span data-stu-id="fc38c-165">The following sample code shows how to do that:</span></span>  
   

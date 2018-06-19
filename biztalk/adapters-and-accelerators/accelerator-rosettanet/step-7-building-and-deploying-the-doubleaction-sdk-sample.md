@@ -1,11 +1,11 @@
 ---
-title: "步骤 7： 构建和部署 DoubleAction SDK 示例 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 构建和部署 DoubleAction SDK 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, building solutions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - building solutions
 - double action tutorial, deploying solutions
 ms.assetid: f67f8aee-1004-48ee-a6fd-881097382888
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005374"
 ---
 # <a name="step-7-building-and-deploying-the-doubleaction-sdk-sample"></a><span data-ttu-id="80b1a-102">步骤 7： 构建和部署 DoubleAction SDK 示例</span><span class="sxs-lookup"><span data-stu-id="80b1a-102">Step 7: Building and Deploying the DoubleAction SDK Sample</span></span>
 <span data-ttu-id="80b1a-103">DoubleAction.odx 示例显示了如何实现业务流程，以自动为双操作合作伙伴接口流程 (PIP) 0C2、0C4、3A2 和 3A4 生成响应。</span><span class="sxs-lookup"><span data-stu-id="80b1a-103">The DoubleAction.odx sample shows how to implement an orchestration to generate responses automatically for the double-action Partner Interface Processes (PIPs) 0C2, 0C4, 3A2, and 3A4.</span></span> <span data-ttu-id="80b1a-104">你可将此示例项目扩展为支持其他双操作 PIP。</span><span class="sxs-lookup"><span data-stu-id="80b1a-104">You can extend this sample project to support additional double-action PIPs.</span></span>  

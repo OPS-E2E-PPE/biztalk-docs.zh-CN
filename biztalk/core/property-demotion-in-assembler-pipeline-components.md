@@ -1,11 +1,11 @@
 ---
-title: "汇编程序管道组件中的属性降级 |Microsoft 文档"
-ms.custom: 
+title: 汇编程序管道组件中的属性降级 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler [pipeline component], properties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - XML Assembler [pipeline component], about XML Assembler
 - Flat File Assembler [pipeline component], properties
 ms.assetid: c5275638-d594-4b0d-a818-b7a9460b41a6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268829"
 ---
 # <a name="property-demotion-in-assembler-pipeline-components"></a><span data-ttu-id="2a39c-102">汇编程序管道组件中的属性降级</span><span class="sxs-lookup"><span data-stu-id="2a39c-102">Property Demotion in Assembler Pipeline Components</span></span>
 <span data-ttu-id="2a39c-103">您可以使用属性降级将属性值从消息上下文复制到消息内容中，或复制到该消息的头部或尾部。</span><span class="sxs-lookup"><span data-stu-id="2a39c-103">You can use property demotion to copy a property value from the message context into the message content or to its header or trailer.</span></span> <span data-ttu-id="2a39c-104">通过使用文档中指定的 XPath 表达式，或头部和尾部架构中指定的 XPath 表达式可以完成属性降级。</span><span class="sxs-lookup"><span data-stu-id="2a39c-104">You accomplish property demotion by using an XPath expression specified in the document or in the header and trailer schema.</span></span>  

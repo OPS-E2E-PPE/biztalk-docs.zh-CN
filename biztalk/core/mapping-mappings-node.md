@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262517"
 ---
 # <a name="mapping-mappings-node"></a><span data-ttu-id="8f58b-102">Mapping（Mappings 节点）</span><span class="sxs-lookup"><span data-stu-id="8f58b-102">Mapping (Mappings Node)</span></span>
 <span data-ttu-id="8f58b-103">绑定文件的 Mapping 节点描述登记的参与方的参与方端口与角色端口类型操作之间的映射。</span><span class="sxs-lookup"><span data-stu-id="8f58b-103">The Mapping node of a binding file describes the mapping between a party port and role port type operation for the enlisted party.</span></span>  

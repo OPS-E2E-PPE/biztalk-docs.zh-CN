@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22eefde6-80f5-4d45-80cf-55f743ff9d45
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975852"
 ---
 # <a name="wcf-basichttprelay-adapter"></a><span data-ttu-id="5a903-102">WCF-BasicHttpRelay 适配器</span><span class="sxs-lookup"><span data-stu-id="5a903-102">WCF-BasicHttpRelay Adapter</span></span>
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)]<span data-ttu-id="5a903-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用**WCF BasicHttpRelay**适配器接收和发送通过 WCF 服务请求[BasicHttpRelayBinding 类](https://msdn.microsoft.com/library/azure/microsoft.servicebus.basichttprelaybinding.aspx)。</span><span class="sxs-lookup"><span data-stu-id="5a903-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the **WCF-BasicHttpRelay** adapter to receive and send WCF service requests through the [BasicHttpRelayBinding class](https://msdn.microsoft.com/library/azure/microsoft.servicebus.basichttprelaybinding.aspx).</span></span> <span data-ttu-id="5a903-104">**Wcf-basichttprelay** 配接器會使用服務匯流排轉送端點使用 **BasicHttpRelayBinding**。</span><span class="sxs-lookup"><span data-stu-id="5a903-104">The **WCF-BasicHttpRelay** adapter uses Service Bus relay endpoints using the **BasicHttpRelayBinding**.</span></span>  

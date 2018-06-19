@@ -1,11 +1,11 @@
 ---
-title: "如何安装服务的存根 （stub） 版本面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何安装服务的存根 （stub） 版本面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS, installing virtual directories [service solutions]
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - service solution tutorial, building solutions
 - service solution tutorial, installing
 ms.assetid: 45de7681-4df0-47a4-a02c-509140423a1e
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010406"
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a><span data-ttu-id="6b867-102">如何安装面向服务的解决方案的存根版本</span><span class="sxs-lookup"><span data-stu-id="6b867-102">How to Install the Stub Version of the Service Oriented Solution</span></span>
 <span data-ttu-id="6b867-103">以下步骤介绍了如何准备计算机以安装面向服务的解决方案的存根版本，以及如何在计算机上安装该解决方案：</span><span class="sxs-lookup"><span data-stu-id="6b867-103">The following steps describe how to prepare your computer before you install the stub version of the service oriented solution, and then how to install the solution on your computer.</span></span>  
@@ -174,25 +175,25 @@ ms.lasthandoff: 12/01/2017
   
          <span data-ttu-id="6b867-174">访问权限 = 读取，运行脚本</span><span class="sxs-lookup"><span data-stu-id="6b867-174">Access Permissions = Read, Run scripts</span></span>  
   
-9. <span data-ttu-id="6b867-175">在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-175">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub, click **Properties**, and then modify the settings as follows:</span></span>  
+9. <span data-ttu-id="6b867-175">在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-175">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="6b867-176">上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。</span><span class="sxs-lookup"><span data-stu-id="6b867-176">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="6b867-177">单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，选择**仅集成 Windows 身份验证启用**，然后清除其他**身份验证访问**复选框。</span><span class="sxs-lookup"><span data-stu-id="6b867-177">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, select **Only Integrated Windows Authentication enabled**, and then clear other **Authentication access** checkboxes.</span></span> <span data-ttu-id="6b867-178">单击**确定**退出。</span><span class="sxs-lookup"><span data-stu-id="6b867-178">Click **OK** to exit.</span></span>  
   
-10. <span data-ttu-id="6b867-179">在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-179">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP, click **Properties**, and then modify the settings as follows:</span></span>  
+10. <span data-ttu-id="6b867-179">在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-179">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="6b867-180">上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。</span><span class="sxs-lookup"><span data-stu-id="6b867-180">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="6b867-181">单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**.</span><span class="sxs-lookup"><span data-stu-id="6b867-181">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, and then select **Enable Anonymous Access**.</span></span> <span data-ttu-id="6b867-182">单击**确定**退出。</span><span class="sxs-lookup"><span data-stu-id="6b867-182">Click **OK** to exit.</span></span>  
   
-11. <span data-ttu-id="6b867-183">在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-183">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions, click **Properties**, and then modify the settings as follows:</span></span>  
+11. <span data-ttu-id="6b867-183">在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-183">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="6b867-184">上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。</span><span class="sxs-lookup"><span data-stu-id="6b867-184">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
     2.  <span data-ttu-id="6b867-185">单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**.</span><span class="sxs-lookup"><span data-stu-id="6b867-185">Click **Directory Security** tab, click **Edit** in the **Authentication and access control** group box, and then select **Enable Anonymous Access**.</span></span> <span data-ttu-id="6b867-186">单击**确定**退出。</span><span class="sxs-lookup"><span data-stu-id="6b867-186">Click **OK** to exit.</span></span>  
   
-12. <span data-ttu-id="6b867-187">在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-187">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker, click **Properties**, and then modify the settings as follows:</span></span>  
+12. <span data-ttu-id="6b867-187">在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker，单击**属性**，，然后修改设置，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6b867-187">In the **Internet Information Services (IIS) Manager**, expand **Web Sites,** expand the **Default Web Site**, right-click Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker, click **Properties**, and then modify the settings as follows:</span></span>  
   
     1.  <span data-ttu-id="6b867-188">上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。</span><span class="sxs-lookup"><span data-stu-id="6b867-188">On the **Virtual directory** tab, set the **Application Pool** to **SSOStubAppPool** you just created.</span></span>  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 12/01/2017
 1.  <span data-ttu-id="6b867-193">启动**Visual Studio 命令提示**。</span><span class="sxs-lookup"><span data-stu-id="6b867-193">Start **Visual Studio Command Prompt**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="6b867-194">在文件中**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**和**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**，将替换为 a1054514fc67bded 17f20caea2afcc8c 的所有实例。</span><span class="sxs-lookup"><span data-stu-id="6b867-194">In the files **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs** and **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**, replace all the instances of 17f20caea2afcc8c with a1054514fc67bded.</span></span>  
+    >  <span data-ttu-id="6b867-194">在文件中 **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**和 **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**，将替换为 a1054514fc67bded 17f20caea2afcc8c 的所有实例。</span><span class="sxs-lookup"><span data-stu-id="6b867-194">In the files **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs** and **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**, replace all the instances of 17f20caea2afcc8c with a1054514fc67bded.</span></span>  
   
 2.  <span data-ttu-id="6b867-195">在“Visual Studio 命令提示”下，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln 文件夹，然后运行以下命令以生成面向服务的解决方案的存根版本。</span><span class="sxs-lookup"><span data-stu-id="6b867-195">At the Visual Studio Command Prompt, change the directory to the %BTSSolutionsPath%\SO\BTSSoln folder, and then run the following command to build the stub version of service-oriented solution.</span></span>  
   

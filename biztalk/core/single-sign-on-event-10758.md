@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10758 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10758 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d2e66be-0b93-4f99-bb2c-7065dba9c8ad
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276277"
 ---
 # <a name="single-sign-on-event-10758"></a><span data-ttu-id="50204-102">单一登录： 事件 10758</span><span class="sxs-lookup"><span data-stu-id="50204-102">Single Sign-On: Event 10758</span></span>
 ## <a name="details"></a><span data-ttu-id="50204-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="50204-103">Details</span></span>  

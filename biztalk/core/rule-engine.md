@@ -1,11 +1,11 @@
 ---
-title: "规则引擎 |Microsoft 文档"
-ms.custom: 
+title: 规则引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RuleEngine object
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Business Rules Engine, ruleset tracking interceptor
 - Business Rules Engine, Business Rules Engine
 ms.assetid: c4043a1f-357f-47bc-84e1-5e4bd9f8b5b8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268725"
 ---
 # <a name="rule-engine"></a><span data-ttu-id="9fe28-102">规则引擎</span><span class="sxs-lookup"><span data-stu-id="9fe28-102">Rule Engine</span></span>
 <span data-ttu-id="9fe28-103">本部分将介绍业务规则引擎的若干组件、功能和操作。</span><span class="sxs-lookup"><span data-stu-id="9fe28-103">This section describes several components, functionalities, and operations of the Business Rule engine.</span></span> <span data-ttu-id="9fe28-104">规则引擎为规则集提供了执行上下文。</span><span class="sxs-lookup"><span data-stu-id="9fe28-104">The rule engine provides the execution context for a rule set.</span></span> <span data-ttu-id="9fe28-105">**RuleEngine**对象将用于实现以下的即插即用-在组件：</span><span class="sxs-lookup"><span data-stu-id="9fe28-105">The **RuleEngine** object uses the following plug–in components for implementation:</span></span>  

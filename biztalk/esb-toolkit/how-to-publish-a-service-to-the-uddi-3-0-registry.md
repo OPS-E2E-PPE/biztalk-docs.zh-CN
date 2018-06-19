@@ -1,14 +1,14 @@
 ---
-title: "如何： 将服务发布到 UDDI 3.0 注册表 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将服务发布到 UDDI 3.0 注册表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c3bd0ed-e5f1-43eb-98d1-e3247a565ba2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009910"
 ---
 # <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a><span data-ttu-id="9dabc-102">如何： 将服务发布到 UDDI 3.0 注册表</span><span class="sxs-lookup"><span data-stu-id="9dabc-102">How to: Publish a Service to the UDDI 3.0 Registry</span></span>
 ## <a name="goal"></a><span data-ttu-id="9dabc-103">目的</span><span class="sxs-lookup"><span data-stu-id="9dabc-103">Goal</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="9dabc-131">单击**实例信息**选项卡上，并依次**添加实例信息**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-131">Click the **Instance Info** tab, and then click **Add Instance Info**.</span></span>  
   
-2.  <span data-ttu-id="9dabc-132">在**搜索 tModel 名称中包含**框中，键入**%esb%** ，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
+2.  <span data-ttu-id="9dabc-132">在**搜索 tModel 名称中包含**框中，键入 **%esb%** ，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
   
 3.  <span data-ttu-id="9dabc-133">找到并单击**tModel**为**transporttype**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-133">Locate and click the **tModel** for **transporttype**.</span></span>  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="9dabc-169">上**类别**选项卡上，单击**添加自定义类别**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-169">On the **Categories** tab, click **Add Custom Category**.</span></span>  
   
-3.  <span data-ttu-id="9dabc-170">在**搜索**框中，键入**%esb%** ，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-170">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
+3.  <span data-ttu-id="9dabc-170">在**搜索**框中，键入 **%esb%** ，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-170">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
   
 4.  <span data-ttu-id="9dabc-171">找到并单击**microsoft-com:esb:runtimeresolution:biztalkapplication** tModel。</span><span class="sxs-lookup"><span data-stu-id="9dabc-171">Locate and click the **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel.</span></span>  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  <span data-ttu-id="9dabc-186">单击**服务**选项卡。</span><span class="sxs-lookup"><span data-stu-id="9dabc-186">Click the **Services** tab.</span></span>  
   
-3.  <span data-ttu-id="9dabc-187">在**服务名称**框中，键入**%PO%**，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-187">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
+3.  <span data-ttu-id="9dabc-187">在**服务名称**框中，键入 **%PO%**，然后单击**搜索**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-187">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
   
 4.  <span data-ttu-id="9dabc-188">在**搜索**窗格中，在**结果**选项卡上，单击**NewPOService**。</span><span class="sxs-lookup"><span data-stu-id="9dabc-188">In the **Search** pane, on the **Results** tab, click **NewPOService**.</span></span>  
   

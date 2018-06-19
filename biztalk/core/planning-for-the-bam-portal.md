@@ -1,11 +1,11 @@
 ---
-title: "规划 BAM 门户 |Microsoft 文档"
-ms.custom: 
+title: 规划 BAM 门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, security
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - deploying, BAM portal
 - security, BAM portal
 ms.assetid: 8a8bd331-c5a8-4d8b-9e93-96e6cd581a1d
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008726"
 ---
 # <a name="planning-for-the-bam-portal"></a><span data-ttu-id="74ed9-102">规划 BAM 门户</span><span class="sxs-lookup"><span data-stu-id="74ed9-102">Planning for the BAM Portal</span></span>
 <span data-ttu-id="74ed9-103">本主题介绍规划业务活动监视 (BAM) 门户部署时应考虑的事项。</span><span class="sxs-lookup"><span data-stu-id="74ed9-103">This topic describes items that you should consider when planning your Business Activity Monitoring (BAM) portal deployment.</span></span>  

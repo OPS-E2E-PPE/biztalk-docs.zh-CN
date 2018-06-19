@@ -1,11 +1,11 @@
 ---
-title: "解决方案生成配置 |Microsoft 文档"
-ms.custom: 
+title: 解决方案生成配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Configuration Manager
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - solutions, developing
 - solutions, build configuration
 ms.assetid: 6f2cce47-388d-4c93-9146-768f53b8207e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006902"
 ---
 # <a name="solution-build-configurations"></a><span data-ttu-id="30ee7-102">解决方案生成配置</span><span class="sxs-lookup"><span data-stu-id="30ee7-102">Solution Build Configurations</span></span>
 <span data-ttu-id="30ee7-103">就像在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中生成的其他项目一样，您可以使用配置管理器来指定解决方案生成配置。</span><span class="sxs-lookup"><span data-stu-id="30ee7-103">As with other projects that you build in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], you can use Configuration Manager to specify solution build configurations.</span></span> <span data-ttu-id="30ee7-104">解决方案生成配置使你可以确定要在中包含的项目版本解决方案，并且如果将部署它们。</span><span class="sxs-lookup"><span data-stu-id="30ee7-104">Solution build configurations enable you to determine which projects to include in builds of a solution and if they will be deployed.</span></span> <span data-ttu-id="30ee7-105">BizTalk Server 同时支持**调试**和**版本**生成配置。</span><span class="sxs-lookup"><span data-stu-id="30ee7-105">BizTalk Server supports both **Debug** and **Release** build configurations.</span></span>  

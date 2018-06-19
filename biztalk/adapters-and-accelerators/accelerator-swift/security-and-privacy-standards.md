@@ -1,11 +1,11 @@
 ---
-title: "安全和隐私标准 |Microsoft 文档"
-ms.custom: 
+title: 安全和隐私标准 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, privacy standards
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, security
 - security, BizTalk Accelerator for SWIFT
 ms.assetid: 5794b25f-8a73-4f5b-97ef-1b0f61775c4b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005310"
 ---
 # <a name="security-and-privacy-standards"></a><span data-ttu-id="fa02d-102">安全和隐私标准</span><span class="sxs-lookup"><span data-stu-id="fa02d-102">Security and privacy standards</span></span>
 <span data-ttu-id="fa02d-103">使用财务服务应用程序和集成解决方案开发[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]通常受本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安全功能。</span><span class="sxs-lookup"><span data-stu-id="fa02d-103">Financial Services applications and integration solutions developed using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] are generally secured by native [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] security features.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="fa02d-104">使用严格的安全机制，如事实上 Internet 加密消息的标准和传输协议，签名证书，[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]身份验证，并使用企业单一登录来保护[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序、 数据和运行时。</span><span class="sxs-lookup"><span data-stu-id="fa02d-104"> uses aggressive security mechanisms such as de facto Internet encrypted messaging standards and transport protocols, signing certificates, [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Authentication, and Enterprise Single Sign-On to secure [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, data, and runtime.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何为应用程序中查看地图 |Microsoft 文档"
-ms.custom: 
+title: 如何为应用程序中查看地图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, applications
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - maps, viewing
 - managing [maps], applications
 ms.assetid: 9a8eed52-b8e1-414d-9a47-2c2be9d49cbe
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256725"
 ---
 # <a name="how-to-view-the-maps-for-an-application"></a><span data-ttu-id="865e1-102">如何为应用程序中查看地图</span><span class="sxs-lookup"><span data-stu-id="865e1-102">How to View the Maps for an Application</span></span>
 <span data-ttu-id="865e1-103">本主题介绍如何使用 BizTalk Server 管理控制台查看 BizTalk 应用程序中包含的映射。</span><span class="sxs-lookup"><span data-stu-id="865e1-103">This topic describes how to use the BizTalk Server Administration console to view the maps contained in a BizTalk application.</span></span>  

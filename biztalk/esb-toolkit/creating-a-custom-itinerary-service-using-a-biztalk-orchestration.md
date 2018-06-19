@@ -1,14 +1,14 @@
 ---
-title: "创建自定义路线服务使用 BizTalk 业务流程 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义路线服务使用 BizTalk 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bd7ed38-02a3-41b1-9990-754d5539f15e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289805"
 ---
 # <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a><span data-ttu-id="0a2b4-102">创建自定义路线服务使用 BizTalk 业务流程</span><span class="sxs-lookup"><span data-stu-id="0a2b4-102">Creating a Custom Itinerary Service Using a BizTalk Orchestration</span></span>
 <span data-ttu-id="0a2b4-103">是的一部分的路线 framework[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持使用业务流程的路线步骤执行。</span><span class="sxs-lookup"><span data-stu-id="0a2b4-103">The itinerary framework that is part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports execution of itinerary steps using orchestrations.</span></span> <span data-ttu-id="0a2b4-104">可以按根据功能要求，其中可能包括以下 Microsoft BizTalk Server 业务流程来实现自定义的路线服务：</span><span class="sxs-lookup"><span data-stu-id="0a2b4-104">You can implement a custom itinerary service as a Microsoft BizTalk Server orchestration based on your functional requirements, which may include the following:</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263141"
 ---
 # <a name="msmq-adapter"></a><span data-ttu-id="f0a01-102">MSMQ 适配器</span><span class="sxs-lookup"><span data-stu-id="f0a01-102">MSMQ Adapter</span></span>
 <span data-ttu-id="f0a01-103">MSMQ 适配器，你可以使用从 Message Queuing 4.0 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="f0a01-103">The MSMQ adapter lets you use Message Queuing 4.0 from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f0a01-104">使用与 BizTalk Server 集成在一起的消息队列技术，在不同时间运行的应用程序就能在可能暂时脱机的不同的网络和系统间进行通信。</span><span class="sxs-lookup"><span data-stu-id="f0a01-104">Integrating Message Queuing technology with BizTalk Server enables applications that are running at different times to communicate across heterogeneous networks and systems that may be temporarily offline.</span></span>  

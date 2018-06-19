@@ -1,11 +1,11 @@
 ---
-title: "如何管理密码同步 |Microsoft 文档"
-ms.custom: 
+title: 如何管理密码同步 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Password Synchronization [SSO], managing
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO database, database settings
 - SSOMANAGE command line utility
 ms.assetid: 033e63f2-e5b0-4400-99c3-145679d9b84e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972651"
 ---
 # <a name="how-to-manage-password-synchronization"></a><span data-ttu-id="33dc8-102">如何管理密码同步</span><span class="sxs-lookup"><span data-stu-id="33dc8-102">How to Manage Password Synchronization</span></span>
 <span data-ttu-id="33dc8-103">使用 MMC 管理单元或 SSOMANAGE 命令行实用工具可以启用或禁用 SSO 功能，并显示当前 SSO 数据库设置。</span><span class="sxs-lookup"><span data-stu-id="33dc8-103">Use the MMC Snap-in or the SSOMANAGE command line utility to enable or disable SSO features, and to display current SSO database settings.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "使用 BizTalk ESB 工具包实用程序 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk ESB 工具包实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2dc05ac-831a-44e1-bd44-e41398552ab1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976683"
 ---
 # <a name="using-the-biztalk-esb-toolkit-utilities"></a><span data-ttu-id="e0719-102">使用 BizTalk ESB 工具包实用程序</span><span class="sxs-lookup"><span data-stu-id="e0719-102">Using the BizTalk ESB Toolkit Utilities</span></span>
 <span data-ttu-id="e0719-103">本部分介绍各种实用程序作为的一部分包括[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e0719-103">This section describes various utilities included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "创建自定义异常处理程序 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义异常处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 401aec8d-d9ca-4a88-9e5b-d3ab605dc0a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290629"
 ---
 # <a name="creating-custom-exception-handlers"></a><span data-ttu-id="0ef6f-102">创建自定义异常处理程序</span><span class="sxs-lookup"><span data-stu-id="0ef6f-102">Creating Custom Exception Handlers</span></span>
 <span data-ttu-id="0ef6f-103">应用程序，以检测异常并做出响应，开发人员必须提供异常处理程序。</span><span class="sxs-lookup"><span data-stu-id="0ef6f-103">For an application to detect and react to exceptions, developers must provide an exception handler.</span></span> <span data-ttu-id="0ef6f-104">此异常处理程序可以订阅到单一类型的异常消息或系统或应用程序的全部或部分中生成的异常消息。</span><span class="sxs-lookup"><span data-stu-id="0ef6f-104">This exception handler can subscribe to a single type of exception message or to exception messages generated from some or all parts of a system or an application.</span></span> <span data-ttu-id="0ef6f-105">例如，你可能需要单个处理程序的所有消息从一个特定的系统 （如在的工资支付系统中发生的任何异常） 或者您而是可能需要目标的处理程序特定的失败 （例如检测如果检查打印过程失败）。</span><span class="sxs-lookup"><span data-stu-id="0ef6f-105">For example, you may require only a single handler for all messages from a particular system (such as any exceptions occurring in the payroll system), or you may instead require targeted handlers for specific failures (such as detecting if the check print process fails).</span></span>  

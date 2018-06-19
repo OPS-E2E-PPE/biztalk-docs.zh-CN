@@ -1,18 +1,18 @@
 ---
-title: "业务活动监视 （BizTalk Server 的示例文件夹） |Microsoft 文档"
-ms.custom: 
+title: 业务活动监视 （BizTalk Server 的示例文件夹） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, BAM
 - SDK examples
 - BAM, examples
 ms.assetid: 670931dd-ed00-477d-ade9-36c866f9234c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006894"
 ---
 # <a name="business-activity-monitoring-biztalk-server-samples-folder"></a><span data-ttu-id="e67e0-102">业务活动监视 （BizTalk Server 示例文件夹中）</span><span class="sxs-lookup"><span data-stu-id="e67e0-102">Business Activity Monitoring (BizTalk Server Samples Folder)</span></span>
 <span data-ttu-id="e67e0-103">Microsoft BizTalk Server 其软件开发工具包 (SDK) 中包含多个业务活动监视 (BAM) 示例。</span><span class="sxs-lookup"><span data-stu-id="e67e0-103">Microsoft BizTalk Server includes several Business Activity Monitoring (BAM) samples in its software development kit (SDK).</span></span> <span data-ttu-id="e67e0-104">本节提供每个 BAM 示例所演示功能的详细信息、生成和运行示例的说明以及可以预期得到的结果。</span><span class="sxs-lookup"><span data-stu-id="e67e0-104">This section provides detailed information about the functionality demonstrated by each BAM sample, instructions for building and running the sample, and the results you can expect.</span></span>  

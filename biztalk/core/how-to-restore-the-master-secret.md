@@ -12,7 +12,7 @@ helpviewer_keywords:
 - Master Secret server, restoring
 - restoring, Master Secret server
 ms.assetid: 68e133c5-4591-4d76-9a3b-c9564ff1aa60
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970907"
 ---
 # <a name="how-to-restore-the-master-secret"></a><span data-ttu-id="b666c-102">如何还原主密钥</span><span class="sxs-lookup"><span data-stu-id="b666c-102">How to Restore the Master Secret</span></span>
 <span data-ttu-id="b666c-103">在数据恢复过程中，可能需要还原主密钥以重新使用现有的数据。</span><span class="sxs-lookup"><span data-stu-id="b666c-103">As part of data recovery procedures, you may need to restore the master secret to re-use existing data.</span></span> <span data-ttu-id="b666c-104">若要执行此任务，必须使用同时作为 Windows 管理员和 SSO 管理员的帐户登录主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="b666c-104">In order to perform this task, you must log on to the master secret server with an account that is both a Windows administrator and an SSO administrator.</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="b666c-113">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="b666c-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="b666c-114">默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="b666c-114">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  <span data-ttu-id="b666c-115">类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="b666c-115">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
+4.  <span data-ttu-id="b666c-115">类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="b666c-115">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="b666c-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="b666c-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

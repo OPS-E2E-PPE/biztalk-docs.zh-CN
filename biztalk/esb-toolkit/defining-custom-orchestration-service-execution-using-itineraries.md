@@ -1,14 +1,14 @@
 ---
-title: "定义自定义业务流程服务执行使用路线 |Microsoft 文档"
-ms.custom: 
+title: 定义自定义业务流程服务执行使用路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6089169d-2fa1-4f81-afe1-db9d90a10382
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007427"
 ---
 # <a name="defining-custom-orchestration-service-execution-using-itineraries"></a><span data-ttu-id="962ad-102">定义自定义业务流程服务执行使用路线</span><span class="sxs-lookup"><span data-stu-id="962ad-102">Defining Custom Orchestration Service Execution Using Itineraries</span></span>
 <span data-ttu-id="962ad-103">在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="962ad-103">In this use case, a message submitted for processing contains an itinerary SOAP header that describes the list of services to execute and their resolution requirements.</span></span> <span data-ttu-id="962ad-104">路线指定一个或多个自定义业务流程或消息将传递在处理周期内的进程。</span><span class="sxs-lookup"><span data-stu-id="962ad-104">The itinerary specifies one or more custom orchestrations or processes through which the message will pass during the processing cycle.</span></span> <span data-ttu-id="962ad-105">自定义业务流程具有完全控制路线及其消息上下文中公开的其他自定义属性。</span><span class="sxs-lookup"><span data-stu-id="962ad-105">Custom orchestrations have full control of the itinerary and other custom properties exposed in the message context.</span></span> <span data-ttu-id="962ad-106">（可选） 路线可以包含确定转换要求和消息的终结点的动态解析信息。</span><span class="sxs-lookup"><span data-stu-id="962ad-106">Optionally, the itinerary can contain dynamic resolution information that determines transformation requirements and endpoints for the message.</span></span> <span data-ttu-id="962ad-107">图 1 说明的过程的示意图。</span><span class="sxs-lookup"><span data-stu-id="962ad-107">Figure 1 illustrates a schematic view of the process.</span></span>  

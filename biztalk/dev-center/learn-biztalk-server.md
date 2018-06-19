@@ -1,11 +1,12 @@
 ---
-title: "了解 Biztalk Server"
+title: 了解 Biztalk Server
 ms.prod: biztalk-server
 ms.openlocfilehash: ce397fb8a1a3e3f69c0e8c79ac0a084c38ece252
 ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289653"
 ---
 ## <a name="pluralsight-training"></a><span data-ttu-id="ac8f1-102">Pluralsight 培训</span><span class="sxs-lookup"><span data-stu-id="ac8f1-102">Pluralsight training</span></span> 
 [<span data-ttu-id="ac8f1-103">了解有关 functoid、 ESB，和的详细信息</span><span class="sxs-lookup"><span data-stu-id="ac8f1-103">Learn about functoids, ESB, and more</span></span>](http://app.pluralsight.com/search/?searchTerm=biztalk)

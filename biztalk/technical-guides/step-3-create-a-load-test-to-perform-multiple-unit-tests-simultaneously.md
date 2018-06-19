@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建负载测试，以同时执行多个单元测试 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建负载测试，以同时执行多个单元测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5dd7e31-7188-4edf-9513-ea2725950b47
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976547"
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a><span data-ttu-id="1125c-102">步骤 3： 创建负载测试，以同时执行多个单元测试</span><span class="sxs-lookup"><span data-stu-id="1125c-102">Step 3: Create a Load Test to Perform Multiple Unit Tests Simultaneously</span></span>
 <span data-ttu-id="1125c-103">负载测试运行多个实例的一个或多个单元测试，以便可以测量应用程序的性能和能够处理负载。</span><span class="sxs-lookup"><span data-stu-id="1125c-103">Load tests run multiple instances of one or more unit tests so that you can measure your application's performance and ability to handle load.</span></span> <span data-ttu-id="1125c-104">Visual Studio 2010 负载测试的主要组件包括：</span><span class="sxs-lookup"><span data-stu-id="1125c-104">The primary components of a Visual Studio 2010 load test include:</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="1125c-130">单击 **“下一步”**。</span><span class="sxs-lookup"><span data-stu-id="1125c-130">Click **Next**.</span></span>  
   
-5.  <span data-ttu-id="1125c-131">上**编辑负载测试方案设置**下页上**输入负载测试方案的名称：**类型**BTS_Messaging_Step**。</span><span class="sxs-lookup"><span data-stu-id="1125c-131">On the **Edit Settings for a Load Test Scenario** page under **Enter a name for the load test scenario:** type **BTS_Messaging_Step**.</span></span> <span data-ttu-id="1125c-132">下**思考时间配置文件**选择**不使用思考时间**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1125c-132">Under **Think time profile** select **Do not use think times** and then click **Next**.</span></span>  
+5.  <span data-ttu-id="1125c-131">上**编辑负载测试方案设置**下页上**输入负载测试方案的名称：** 类型**BTS_Messaging_Step**。</span><span class="sxs-lookup"><span data-stu-id="1125c-131">On the **Edit Settings for a Load Test Scenario** page under **Enter a name for the load test scenario:** type **BTS_Messaging_Step**.</span></span> <span data-ttu-id="1125c-132">下**思考时间配置文件**选择**不使用思考时间**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1125c-132">Under **Think time profile** select **Do not use think times** and then click **Next**.</span></span>  
   
 6.  <span data-ttu-id="1125c-133">上**编辑负载模式设置的负载测试方案**页上，选择**分级负载**，输入下面的值，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="1125c-133">On the **Edit load pattern settings for a load test scenario** page select **Step load**, enter the values below and then click **Next**.</span></span>  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |<span data-ttu-id="1125c-181">性能类别</span><span class="sxs-lookup"><span data-stu-id="1125c-181">Performance Category</span></span>|<span data-ttu-id="1125c-182">性能计数器</span><span class="sxs-lookup"><span data-stu-id="1125c-182">Performance Counter</span></span>|  
     |--------------------------|-------------------------|  
     |<span data-ttu-id="1125c-183">处理器</span><span class="sxs-lookup"><span data-stu-id="1125c-183">Processor</span></span>|<span data-ttu-id="1125c-184">%Processor Time 的 _Total 计数器实例。</span><span class="sxs-lookup"><span data-stu-id="1125c-184">% Processor Time for the _Total counter instance.</span></span>|  
-    |<span data-ttu-id="1125c-185">BizTalk:Message 框： 常规计数器</span><span class="sxs-lookup"><span data-stu-id="1125c-185">BizTalk:Message Box: General Counters</span></span>|<span data-ttu-id="1125c-186">假脱机的大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>*计数器实例。</span><span class="sxs-lookup"><span data-stu-id="1125c-186">Spool Size for the *\<BizTalk MessageBox database name\>*:*\<SQL Server instance name\>* counter instance.</span></span> <span data-ttu-id="1125c-187">**注意：***\<BizTalk MessageBox 数据库名称\>*和 *\<SQL Server 实例名称\>*的只是占位符BizTalk MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。  </span><span class="sxs-lookup"><span data-stu-id="1125c-187">**Note:**  *\<BizTalk MessageBox database name\>* and *\<SQL Server instance name\>* are just placeholders for the actual names of the BizTalk MessageBox database and the SQL Server instance that houses the BizTalk MessageBox database.</span></span> <span data-ttu-id="1125c-188">这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。</span><span class="sxs-lookup"><span data-stu-id="1125c-188">These placeholders should be replaced with the actual names of the BizTalk MessageBox database and associated SQL Server instance.</span></span>|  
+    |<span data-ttu-id="1125c-185">BizTalk:Message 框： 常规计数器</span><span class="sxs-lookup"><span data-stu-id="1125c-185">BizTalk:Message Box: General Counters</span></span>|<span data-ttu-id="1125c-186">假脱机的大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>* 计数器实例。</span><span class="sxs-lookup"><span data-stu-id="1125c-186">Spool Size for the *\<BizTalk MessageBox database name\>*:*\<SQL Server instance name\>* counter instance.</span></span> <span data-ttu-id="1125c-187">**注意：***\<BizTalk MessageBox 数据库名称\>* 和 *\<SQL Server 实例名称\>* 的只是占位符BizTalk MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。  </span><span class="sxs-lookup"><span data-stu-id="1125c-187">**Note:**  *\<BizTalk MessageBox database name\>* and *\<SQL Server instance name\>* are just placeholders for the actual names of the BizTalk MessageBox database and the SQL Server instance that houses the BizTalk MessageBox database.</span></span> <span data-ttu-id="1125c-188">这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。</span><span class="sxs-lookup"><span data-stu-id="1125c-188">These placeholders should be replaced with the actual names of the BizTalk MessageBox database and associated SQL Server instance.</span></span>|  
     |<span data-ttu-id="1125c-189">BizTalk:Messaging</span><span class="sxs-lookup"><span data-stu-id="1125c-189">BizTalk:Messaging</span></span>|<span data-ttu-id="1125c-190">文档接收每秒接收主机计数器实例。</span><span class="sxs-lookup"><span data-stu-id="1125c-190">Documents received/Sec for the receive host counter instance.</span></span><br /><br /> <span data-ttu-id="1125c-191">文档处理每秒传输主机计数器实例。</span><span class="sxs-lookup"><span data-stu-id="1125c-191">Documents processed/Sec for the transmit host counter instance.</span></span>|  
     |<span data-ttu-id="1125c-192">BizTalk：消息代理</span><span class="sxs-lookup"><span data-stu-id="1125c-192">BizTalk:Message Agent</span></span>|<span data-ttu-id="1125c-193">文档的消息传送传入速率接收主机。</span><span class="sxs-lookup"><span data-stu-id="1125c-193">Message delivery incoming rate for the document receive host.</span></span>|  
     |<span data-ttu-id="1125c-194">BizTalk：消息代理</span><span class="sxs-lookup"><span data-stu-id="1125c-194">BizTalk:Message Agent</span></span>|<span data-ttu-id="1125c-195">为文档传输主机发布传出速率的消息。</span><span class="sxs-lookup"><span data-stu-id="1125c-195">Message publishing outgoing rate for the document transmit host.</span></span>|  

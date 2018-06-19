@@ -1,14 +1,14 @@
 ---
-title: "发送 EDI 确认 |Microsoft 文档"
-ms.custom: 
+title: 发送 EDI 确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a036d08-8a65-43ad-b72c-2a246d302792
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272517"
 ---
 # <a name="sending-an-edi-acknowledgment"></a><span data-ttu-id="3e536-102">发送 EDI 确认</span><span class="sxs-lookup"><span data-stu-id="3e536-102">Sending an EDI Acknowledgment</span></span>
 <span data-ttu-id="3e536-103">确认指示 EDI 消息传输的状态。</span><span class="sxs-lookup"><span data-stu-id="3e536-103">Acknowledgments indicate the status of EDI message transmission.</span></span> <span data-ttu-id="3e536-104">在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 收到 EDI 交换后，会根据已启用的确认将一个或多个确认返回给 EDI 交换的发送方。</span><span class="sxs-lookup"><span data-stu-id="3e536-104">After [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI interchange, it will return one or more acknowledgments to the sender of an EDI interchange, depending upon which acknowledgments have been enabled.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="3e536-136">收到的交换中的数据元素提示确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-136">A data element in the received interchange prompts the acknowledgment.</span></span> <span data-ttu-id="3e536-137">对于 X12 编码消息，接收管道将生成技术的 TA1 ACK，如果 ISA14 数据元素设置为 1。</span><span class="sxs-lookup"><span data-stu-id="3e536-137">For X12-encoded messages, the receive pipeline will generate a technical TA1 ACK if the ISA14 data element is set to 1.</span></span> <span data-ttu-id="3e536-138">对于 EDIFACT 编码消息，接收管道将生成的技术 CONTRL 确认如果 UNB9 数据元素设置为 2，并且如果 UNB9 数据元素设置为 1，它将生成功能 CONTRL 确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-138">For EDIFACT-encoded messages, the receive pipeline will generate a technical CONTRL ACK if the UNB9 data element is set to 2, and it will generate a functional CONTRL ACK if the UNB9 data element is set to 1.</span></span>  
   
--   <span data-ttu-id="3e536-139">协议属性提示确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-139">An agreement property prompts the acknowledgment.</span></span> <span data-ttu-id="3e536-140">这些属性对于 X12 交换，则**预期的 TA1**和**997 预期**中的属性**确认**的双向协议选项卡页**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="3e536-140">For X12 interchanges, these properties are the **TA1 Expected** and **997 Expected** properties in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="3e536-141">对于 EDIFACT 的交换，这些属性是**收到预期消息 (CONTRL)**和**确认 (CONTRL) 预期**中**确认**页双向协议选项卡**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="3e536-141">For EDIFACT interchanges, these properties are the **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="3e536-142">当启用一种确认类型后，还可以指明是否批处理该类型的确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-142">When you enable a type of acknowledgment, you can also indicate whether to batch that type of acknowledgment.</span></span>  
+-   <span data-ttu-id="3e536-139">协议属性提示确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-139">An agreement property prompts the acknowledgment.</span></span> <span data-ttu-id="3e536-140">这些属性对于 X12 交换，则**预期的 TA1**和**997 预期**中的属性**确认**的双向协议选项卡页**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="3e536-140">For X12 interchanges, these properties are the **TA1 Expected** and **997 Expected** properties in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="3e536-141">对于 EDIFACT 的交换，这些属性是**收到预期消息 (CONTRL)** 和**确认 (CONTRL) 预期**中**确认**页双向协议选项卡**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="3e536-141">For EDIFACT interchanges, these properties are the **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected** in the **Acknowledgements** page of the bi-directional agreement tabs of the **Agreement Properties** dialog box.</span></span> <span data-ttu-id="3e536-142">当启用一种确认类型后，还可以指明是否批处理该类型的确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-142">When you enable a type of acknowledgment, you can also indicate whether to batch that type of acknowledgment.</span></span>  
   
 -   <span data-ttu-id="3e536-143">如果没有为交换确定协议，全局属性会提示确认。</span><span class="sxs-lookup"><span data-stu-id="3e536-143">A global property prompts the acknowledgment when no agreement is determined for the interchange.</span></span> <span data-ttu-id="3e536-144">这些属性是</span><span class="sxs-lookup"><span data-stu-id="3e536-144">These properties are the</span></span>  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="identifying-an-acknowledgment-with-a-control-number"></a><span data-ttu-id="3e536-151">使用控制编号标识确认</span><span class="sxs-lookup"><span data-stu-id="3e536-151">Identifying an Acknowledgment with a Control Number</span></span>  
  <span data-ttu-id="3e536-152">每个确认都要用用于 X12 的事务集控制编号（ST2 数据元素）或用于 EDIFACT 的事务集参考编号（UNH1 数据元素）来标识。</span><span class="sxs-lookup"><span data-stu-id="3e536-152">Each acknowledgment needs to be identified by a transaction set control number for X12 (the ST2 data element) or a transaction set reference number for EDIFACT (the UNH1 data element).</span></span> <span data-ttu-id="3e536-153">如果为传出确认配置协议，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将事务集控制编号或参考编号设置为根据以下各项为协议设置的值：</span><span class="sxs-lookup"><span data-stu-id="3e536-153">If an agreement is configured for the outgoing acknowledgment, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will set the transaction set control or reference number to the value set for the agreement based on the following:</span></span>  
   
--   <span data-ttu-id="3e536-154">**对于 X12 确认**– (**ACK 控制编号 (ST02)**中的属性**本地主机设置**页 (**接收方设置**部分) 的协议选项卡中**协议属性**对话框</span><span class="sxs-lookup"><span data-stu-id="3e536-154">**For X12 acknowledgements** – (**ACK Control number (ST02)** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
+-   <span data-ttu-id="3e536-154">**对于 X12 确认**– (**ACK 控制编号 (ST02)** 中的属性**本地主机设置**页 (**接收方设置**部分) 的协议选项卡中**协议属性**对话框</span><span class="sxs-lookup"><span data-stu-id="3e536-154">**For X12 acknowledgements** – (**ACK Control number (ST02)** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
   
 -   <span data-ttu-id="3e536-155">**用于 EDIFACT 确认**– (**Edifact 确认控制编号**中的属性**本地主机设置**页 (**接收方设置**部分) 的中的协议选项卡**协议属性**对话框</span><span class="sxs-lookup"><span data-stu-id="3e536-155">**For EDIFACT acknowledgements** – (**Edifact Ack Control number** property in **Local Host Settings** Page (**Receiver’s Settings** section) of the agreement tab in **Agreement Properties** dialog box</span></span>  
   

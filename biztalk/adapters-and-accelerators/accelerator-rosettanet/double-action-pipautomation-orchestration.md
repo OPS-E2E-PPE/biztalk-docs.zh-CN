@@ -1,14 +1,14 @@
 ---
-title: "Double 操作 PIPAutomation 业务流程 |Microsoft 文档"
-ms.custom: 
+title: Double 操作 PIPAutomation 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9159f7b1-cb83-41f1-8637-39c5ddcc63ae
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008078"
 ---
 # <a name="double-action-pipautomation-orchestration"></a><span data-ttu-id="02d5c-102">Double 操作 PIPAutomation 业务流程</span><span class="sxs-lookup"><span data-stu-id="02d5c-102">Double Action PIPAutomation Orchestration</span></span>
 <span data-ttu-id="02d5c-103">此 DoubleAction.odx 示例演示如何实现为双操作合作伙伴接口流程 (PIP) 0C2、0C4、3A2 和 3A4 自动生成响应的业务流程。</span><span class="sxs-lookup"><span data-stu-id="02d5c-103">The DoubleAction.odx sample illustrates how to implement an orchestration to automatically generate responses for the double-action Partner Interface Processes (PIPs) 0C2, 0C4, 3A2, and 3A4.</span></span> <span data-ttu-id="02d5c-104">你可将此示例项目扩展为支持其他双操作 PIP。</span><span class="sxs-lookup"><span data-stu-id="02d5c-104">You can extend this sample project to support additional double-action PIPs.</span></span>  

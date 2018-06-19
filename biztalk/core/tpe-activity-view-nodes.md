@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279461"
 ---
 # <a name="tpe-activity-view-nodes"></a><span data-ttu-id="66d7c-102">键入活动视图节点</span><span class="sxs-lookup"><span data-stu-id="66d7c-102">TPE Activity View Nodes</span></span>
 <span data-ttu-id="66d7c-103">此部分中的主题描述的树节点由跟踪配置文件编辑器用于特定视图映射的内部业务流程，以及相关联的数据，与业务流程的类型。</span><span class="sxs-lookup"><span data-stu-id="66d7c-103">The topics in this section describe the types of tree nodes used by Tracking Profile Editor to map a specific view of an internal business processes, as well as associated data, to an orchestration.</span></span>  

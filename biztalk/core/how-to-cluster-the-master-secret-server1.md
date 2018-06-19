@@ -1,11 +1,11 @@
 ---
-title: "如何安装群集 Master 机密 Server1 |Microsoft 文档"
-ms.custom: 
+title: 如何安装群集 Master 机密 Server1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, second node
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - clustering, Master Secret server
 - Master Secret server, clustering
 ms.assetid: ef817fa4-e43d-4e3d-8686-5bd675708001
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972947"
 ---
 # <a name="how-to-cluster-the-master-secret-server"></a><span data-ttu-id="6f238-102">如何安装群集主密钥服务器</span><span class="sxs-lookup"><span data-stu-id="6f238-102">How to Cluster the Master Secret Server</span></span>
 <span data-ttu-id="6f238-103">若要在主密钥服务器上成功地对企业单一登录 (SSO) 服务进行群集处理，建议你按照本部分中的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="6f238-103">We recommended that you follow the instructions in this section to cluster the Enterprise Single Sign-On (SSO) service on the master secret server successfully.</span></span>  
@@ -178,7 +179,7 @@ ms.lasthandoff: 11/28/2017
   
 11. <span data-ttu-id="6f238-180">单击**依赖关系**选项卡上的属性对话框中，单击**插入**。</span><span class="sxs-lookup"><span data-stu-id="6f238-180">Click the **Dependencies** tab of the properties dialog box and click **Insert**.</span></span>  
   
-12. <span data-ttu-id="6f238-181">单击下拉框下**资源**，选择**名称：**资源，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6f238-181">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
+12. <span data-ttu-id="6f238-181">单击下拉框下**资源**，选择**名称：** 资源，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6f238-181">Click the drop down box under **Resource**, select the **Name:** resource and click **OK**.</span></span>  
   
 ### <a name="to-restore-the-master-secret-on-the-second-cluster-node"></a><span data-ttu-id="6f238-182">在第二个群集节点上恢复主密钥</span><span class="sxs-lookup"><span data-stu-id="6f238-182">To restore the master secret on the second cluster node</span></span>  
   

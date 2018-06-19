@@ -1,14 +1,14 @@
 ---
-title: "EDI 文档架构支持 |Microsoft 文档"
-ms.custom: 
+title: EDI 文档架构支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 497aa0c6-b6e6-4947-9805-c4733bc23008
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004822"
 ---
 # <a name="edi-document-schema-support"></a><span data-ttu-id="c2305-102">EDI 文档架构支持</span><span class="sxs-lookup"><span data-stu-id="c2305-102">EDI Document Schema Support</span></span>
 <span data-ttu-id="c2305-103">本部分列出与 BizTalk Server 提供的特定 EDI 事务集架构。</span><span class="sxs-lookup"><span data-stu-id="c2305-103">This section lists the specific EDI transaction set schemas that are provided with BizTalk Server.</span></span>  

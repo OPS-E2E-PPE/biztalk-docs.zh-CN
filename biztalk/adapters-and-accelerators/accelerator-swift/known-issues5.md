@@ -1,18 +1,18 @@
 ---
-title: "已知 Issues5 |Microsoft 文档"
-ms.custom: 
+title: 已知 Issues5 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, known issues
 - BizTalk Accelerator for SWIFT, known issues
 - known issues
 ms.assetid: 0f1ec7dd-9e74-479a-bdc8-ab9c4397c992
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006710"
 ---
 # <a name="known-issues"></a><span data-ttu-id="a0db5-102">已知问题</span><span class="sxs-lookup"><span data-stu-id="a0db5-102">Known Issues</span></span>
 <span data-ttu-id="a0db5-103">本部分包含有用信息来帮助你避免与错误[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a0db5-103">This section contains useful information that may help you avoid errors with [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="a0db5-104">已知问题归为以下几个方面：</span><span class="sxs-lookup"><span data-stu-id="a0db5-104">The known issues are grouped into the following areas:</span></span>  

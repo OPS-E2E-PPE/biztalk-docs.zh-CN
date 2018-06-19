@@ -1,14 +1,14 @@
 ---
-title: "SQL Server 和适配器客户端上配置 MSDTC |Microsoft 文档"
-ms.custom: 
+title: SQL Server 和适配器客户端上配置 MSDTC |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c87f455-a8c4-4169-bf18-695926136df1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222917"
 ---
 # <a name="configure-msdtc-on-sql-server-and-adapter-client"></a><span data-ttu-id="f7f05-102">SQL Server 和适配器客户端上配置 MSDTC</span><span class="sxs-lookup"><span data-stu-id="f7f05-102">Configure MSDTC on SQL Server and adapter client</span></span>
 <span data-ttu-id="f7f05-103">使用 SQL Server 上执行的操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] (通过[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，WCF 服务模型或 WCF 通道模型) 可以在事务范围内执行。</span><span class="sxs-lookup"><span data-stu-id="f7f05-103">The operations performed on SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] (through [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the WCF service model, or the WCF channel model) can be performed within a transaction scope.</span></span> <span data-ttu-id="f7f05-104">如果客户端程序具有多个事务的资源在同一事务的一部分，获取提升为 MSDTC 事务的事务。</span><span class="sxs-lookup"><span data-stu-id="f7f05-104">If the client program has more than one transactional resource as part of the same transaction, the transaction gets elevated to an MSDTC transaction.</span></span> <span data-ttu-id="f7f05-105">若要启用的适配器执行 MSDTC 事务的范围内的操作，必须配置 MSDTC 这两个运行的计算机上[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]和 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="f7f05-105">To enable the adapter to perform operations within the scope of an MSDTC transaction, you must configure MSDTC both on the computer running the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and SQL Server.</span></span> <span data-ttu-id="f7f05-106">此外，必须将 MSDTC 添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="f7f05-106">Also, you must add MSDTC to the exceptions list of Windows Firewall.</span></span> <span data-ttu-id="f7f05-107">本部分提供有关如何在运行的适配器客户端和 SQL Server 的计算机上执行这些任务的信息。</span><span class="sxs-lookup"><span data-stu-id="f7f05-107">This section provides information about how to perform these tasks on computers running the adapter client and SQL Server.</span></span>  

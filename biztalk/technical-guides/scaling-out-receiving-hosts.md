@@ -1,14 +1,14 @@
 ---
-title: "向外扩展接收主机 |Microsoft 文档"
-ms.custom: 
+title: 向外扩展接收主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9f78710-93fa-4877-8273-a1634d768d88
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010142"
 ---
 # <a name="scaling-out-receiving-hosts"></a><span data-ttu-id="280e0-102">向外扩展接收主机</span><span class="sxs-lookup"><span data-stu-id="280e0-102">Scaling Out Receiving Hosts</span></span>
 <span data-ttu-id="280e0-103">若要使接收主机高度可用，必须具有两个或多[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在运行的每个接收的主机实例的计算机。</span><span class="sxs-lookup"><span data-stu-id="280e0-103">To make receiving hosts highly available, you must have two or more [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers that are running instances of each receiving host.</span></span> <span data-ttu-id="280e0-104">通过向外扩展接收主机可以增加的消息传送密集型 BizTalk Server 部署的可用性。</span><span class="sxs-lookup"><span data-stu-id="280e0-104">By scaling out the receiving hosts you can increase the availability for BizTalk Server deployments that are messaging-intensive.</span></span> <span data-ttu-id="280e0-105">尽管这些部署可能很少处理业务流程，但仍可快速和可靠地路由许多不同类型的消息。</span><span class="sxs-lookup"><span data-stu-id="280e0-105">While these deployments might perform minimal processing for orchestrations, they can route many messages of varying types with great speed and reliability.</span></span>  

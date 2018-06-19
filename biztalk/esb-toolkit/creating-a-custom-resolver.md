@@ -1,14 +1,14 @@
 ---
-title: "创建自定义解析程序 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义解析程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2775460-8e04-40be-9557-8278336b031c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,17 +17,18 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975899"
 ---
 # <a name="creating-a-custom-resolver"></a><span data-ttu-id="5aa26-102">创建自定义冲突解决程序</span><span class="sxs-lookup"><span data-stu-id="5aa26-102">Creating a Custom Resolver</span></span>
 <span data-ttu-id="5aa26-103">中的冲突解决程序和适配器提供程序框架实现[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用一个名为调度程序的管道组件和名为 ItineraryReceive 和 ItinerarySend 的管道。</span><span class="sxs-lookup"><span data-stu-id="5aa26-103">The Resolver and Adapter Provider Framework implementation in [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses a pipeline component named Dispatcher and pipelines named ItineraryReceive and ItinerarySend.</span></span>  
   
- <span data-ttu-id="5aa26-104">调度程序管道组件具有四个属性：**验证、 已启用、 终结点，**和**映射名称**。</span><span class="sxs-lookup"><span data-stu-id="5aa26-104">The Dispatcher pipeline component has four properties: **Validate, Enabled, EndPoint,** and **MapName**.</span></span> <span data-ttu-id="5aa26-105">**终结点**属性可以包含冲突解决程序用类似于下面的值的连接字符串其中**UDDI:\\ \\** 表示要使用 （根的解决方法类型名字对象）。</span><span class="sxs-lookup"><span data-stu-id="5aa26-105">The **EndPoint** property can contain resolver connection strings with values such as the following, where **UDDI:\\\\** represents the resolution type to use (the root moniker).</span></span>  
+ <span data-ttu-id="5aa26-104">调度程序管道组件具有四个属性：**验证、 已启用、 终结点，** 和**映射名称**。</span><span class="sxs-lookup"><span data-stu-id="5aa26-104">The Dispatcher pipeline component has four properties: **Validate, Enabled, EndPoint,** and **MapName**.</span></span> <span data-ttu-id="5aa26-105">**终结点**属性可以包含冲突解决程序用类似于下面的值的连接字符串其中**UDDI:\\ \\** 表示要使用 （根的解决方法类型名字对象）。</span><span class="sxs-lookup"><span data-stu-id="5aa26-105">The **EndPoint** property can contain resolver connection strings with values such as the following, where **UDDI:\\\\** represents the resolution type to use (the root moniker).</span></span>  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  
 ```  
   
- <span data-ttu-id="5aa26-106">其他受支持的名字对象包括**XPATH:\\\\、 静态：\\\\，**和**BRE:\\\\**。</span><span class="sxs-lookup"><span data-stu-id="5aa26-106">Other supported monikers include **XPATH:\\\\, STATIC:\\\\,** and **BRE:\\\\**.</span></span> <span data-ttu-id="5aa26-107">每个标记类型使用一个特定的类以实现**IResolveProvider**接口。</span><span class="sxs-lookup"><span data-stu-id="5aa26-107">Each moniker type uses a specific class that implements the **IResolveProvider** interface.</span></span> <span data-ttu-id="5aa26-108">你可以创建其他名字对象类型为你自己自定义冲突解决程序和注册它们以供使用的动态解析系统。</span><span class="sxs-lookup"><span data-stu-id="5aa26-108">You can create your own custom resolvers for other moniker types and register them for use by the dynamic resolution system.</span></span>  
+ <span data-ttu-id="5aa26-106">其他受支持的名字对象包括**XPATH:\\\\、 静态：\\\\，** 和**BRE:\\\\**。</span><span class="sxs-lookup"><span data-stu-id="5aa26-106">Other supported monikers include **XPATH:\\\\, STATIC:\\\\,** and **BRE:\\\\**.</span></span> <span data-ttu-id="5aa26-107">每个标记类型使用一个特定的类以实现**IResolveProvider**接口。</span><span class="sxs-lookup"><span data-stu-id="5aa26-107">Each moniker type uses a specific class that implements the **IResolveProvider** interface.</span></span> <span data-ttu-id="5aa26-108">你可以创建其他名字对象类型为你自己自定义冲突解决程序和注册它们以供使用的动态解析系统。</span><span class="sxs-lookup"><span data-stu-id="5aa26-108">You can create your own custom resolvers for other moniker types and register them for use by the dynamic resolution system.</span></span>  
   
  <span data-ttu-id="5aa26-109">标记相当于冲突解决程序连接字符串。</span><span class="sxs-lookup"><span data-stu-id="5aa26-109">The moniker equates to a resolver connection string.</span></span> <span data-ttu-id="5aa26-110">具体的架构定义的参数，其根名字对象。</span><span class="sxs-lookup"><span data-stu-id="5aa26-110">Individual schemas define the parameters and their root moniker.</span></span> <span data-ttu-id="5aa26-111">解析程序采用冲突解决程序连接字符串，验证它，并使用结果来查询并填充**字典**对象可以用于路由、 转换、 路线选择或其他目的特定于你服务。</span><span class="sxs-lookup"><span data-stu-id="5aa26-111">A resolver takes the resolver connection string, validates it, and uses the result to query and populate a **Dictionary** object that can be used for routing, transformation, itinerary selection, or some other purpose specific to your service.</span></span>  
   
@@ -172,7 +173,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 1.  <span data-ttu-id="5aa26-212">与实现的类创建一个程序集**IResolveProvider**接口并包含**解决**实例的形式返回冲突解决程序事实的方法**字典**类。</span><span class="sxs-lookup"><span data-stu-id="5aa26-212">Create an assembly with a class that implements the **IResolveProvider** interface and contains a **Resolve** method that returns resolver facts as an instance of the **Dictionary** class.</span></span>  
   
-2.  <span data-ttu-id="5aa26-213">通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>**包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。</span><span class="sxs-lookup"><span data-stu-id="5aa26-213">Register the resolver by adding it to the Esb.config configuration file using a **\<resolver\>** element that contains the root moniker as the **name** attribute and the fully qualified assembly name as the **type** attribute.</span></span>  
+2.  <span data-ttu-id="5aa26-213">通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>** 包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。</span><span class="sxs-lookup"><span data-stu-id="5aa26-213">Register the resolver by adding it to the Esb.config configuration file using a **\<resolver\>** element that contains the root moniker as the **name** attribute and the fully qualified assembly name as the **type** attribute.</span></span>  
   
 3.  <span data-ttu-id="5aa26-214">（可选）创建架构，用于定义根名字对象和查询参数，然后将其保存在 ESB。Schemas.Resolvers 文件夹。</span><span class="sxs-lookup"><span data-stu-id="5aa26-214">(Optional) Create a schema that defines the root moniker and the query parameters, and then save it in the ESB.Schemas.Resolvers folder.</span></span> <span data-ttu-id="5aa26-215">该名称应遵循现有 ESB 命名约定;这意味着它应使用的名称后追加"_Resolution.xsd"的根名字对象。</span><span class="sxs-lookup"><span data-stu-id="5aa26-215">The name should follow existing ESB naming conventions; this means it should use the name of the root moniker appended with "_Resolution.xsd".</span></span>  
   

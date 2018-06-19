@@ -1,14 +1,14 @@
 ---
-title: "XLANG-s 语句 |Microsoft 文档"
-ms.custom: 
+title: XLANG-s 语句 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 620d0452-a8da-4285-b8b2-5a932ffcde28
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290333"
 ---
 # <a name="xlang-s-statements"></a><span data-ttu-id="0f3f2-102">XLANG-s 语句</span><span class="sxs-lookup"><span data-stu-id="0f3f2-102">XLANG-s Statements</span></span>
 <span data-ttu-id="0f3f2-103">XLANG/s 语句通常分为两个类别之一： 如作用于其自己的简单语句**接收**或**发送**，和复杂语句包含或任一简单语句组合或其他复杂的语句，如**作用域**，**并行**，和**侦听**。</span><span class="sxs-lookup"><span data-stu-id="0f3f2-103">XLANG/s statements generally fall into one of two categories: simple statements that act on their own, such as **receive** or **send**, and complex statements that contain or group either simple statements or other complex statements, such as **scope**, **parallel**, and **listen**.</span></span> <span data-ttu-id="0f3f2-104">每个语句都与 BizTalk 业务流程设计器中的一个业务流程形状相对应。</span><span class="sxs-lookup"><span data-stu-id="0f3f2-104">Each statement is corresponding to an orchestration shape in the BizTalk Orchestration Designer.</span></span> <span data-ttu-id="0f3f2-105">XLANG/s 定义了以下语句：</span><span class="sxs-lookup"><span data-stu-id="0f3f2-105">XLANG/s defines the following statements:</span></span>  

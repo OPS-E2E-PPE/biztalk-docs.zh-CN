@@ -1,15 +1,15 @@
 ---
-title: "与 BizTalk Server 中的 RosettaNet 快捷键的已知问题 |Microsoft 文档"
-description: "请参阅已知的问题和解决方法与 0A1 通知，失败、 BAM、 安装和配置，并更在 BizTalk Server 中的 BTARN"
-caps.latest.revision: "11"
+title: 与 BizTalk Server 中的 RosettaNet 快捷键的已知问题 |Microsoft 文档
+description: 请参阅已知的问题和解决方法与 0A1 通知，失败、 BAM、 安装和配置，并更在 BizTalk Server 中的 BTARN
+caps.latest.revision: 11
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010774"
 ---
 # <a name="known-issues"></a><span data-ttu-id="f79ef-103">已知问题</span><span class="sxs-lookup"><span data-stu-id="f79ef-103">Known Issues</span></span>
 <span data-ttu-id="f79ef-104">本节介绍的有用信息有助于在使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 时避免错误。</span><span class="sxs-lookup"><span data-stu-id="f79ef-104">This section contains useful information that may help you avoid errors with [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="f79ef-105">已知问题归为以下几个方面：</span><span class="sxs-lookup"><span data-stu-id="f79ef-105">The known issues are grouped into the following areas:</span></span>  
@@ -194,7 +195,7 @@ GO
  <span data-ttu-id="f79ef-239">如果需要记录或发送错误说明，可自定义 aspx 代码，在响应中返回实际的文本。</span><span class="sxs-lookup"><span data-stu-id="f79ef-239">If you need to log or send an error description, you can customize the aspx code to have the actual text returned in the response.</span></span> <span data-ttu-id="f79ef-240">为此，请使用 HttpResponse.Status 或 HttpWebResponse.StatusDescription，前者是内部 asp 请求的响应对象，而后者则是通过对 HttpWebRequest 对象的 GetResponse 方法进行 [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 调用返回的。</span><span class="sxs-lookup"><span data-stu-id="f79ef-240">To do so, use HttpResponse.Status (which is the intrinsic asp request’s response object) or HttpWebResponse.StatusDescription (which is returned by the [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] call to the HttpWebRequest object’s GetResponse method).</span></span> <span data-ttu-id="f79ef-241">要从其中一个适用的响应对象中得到返回值，请设置 Response.Status 值，设置方法类似于在随 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 发布的 aspx 代码中设置 Response.StatusCode。</span><span class="sxs-lookup"><span data-stu-id="f79ef-241">To return the return values from one of the applicable response objects, set the Response.Status value similar to how Response.StatusCode is set in the aspx code that ships with [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].</span></span>  
   
 ### <a name="rnif-11-messages-cannot-be-read-in-plain-text-from-non-repudiation-tables-if-the-encoding-method-is-set-to-base64"></a><span data-ttu-id="f79ef-242">如果编码方法设置为 Base64，则无法以纯文本形式从不可否认性表中读取 RNIF 1.1 消息</span><span class="sxs-lookup"><span data-stu-id="f79ef-242">RNIF 1.1 messages cannot be read in plain text from non-repudiation tables if the encoding method is set to Base64</span></span>  
- <span data-ttu-id="f79ef-243">只有编码方法设置为 Base64 时才会出现这种情况。</span><span class="sxs-lookup"><span data-stu-id="f79ef-243">This only happens if the encoding method is set to Base64.</span></span> <span data-ttu-id="f79ef-244">如果编码方法设置为“quoted-printable”或“8 bit”，则可以明文形式从不可否认性表中读取消息。</span><span class="sxs-lookup"><span data-stu-id="f79ef-244">Messages can be read in clear text from non-repudiation tables if encoding method is set to quoted-printable or 8-bit.</span></span> <span data-ttu-id="f79ef-245">需要以 *.eml 扩展名保存消息文件，然后使用 Outlook Express 打开才能读取消息内容，因为 Outlook Express 可以对消息进行解码。</span><span class="sxs-lookup"><span data-stu-id="f79ef-245">You need to save the message file with *.eml extension and then open it using Outlook Express to read the message and Outlook Express will decode the message for you.</span></span> <span data-ttu-id="f79ef-246">还可使用以下代码从不可否认性表中读取用 Base64 编码的消息。</span><span class="sxs-lookup"><span data-stu-id="f79ef-246">You may also use the code below to read the Base64 encoded messages from non-repudiation tables.</span></span>  
+ <span data-ttu-id="f79ef-243">只有编码方法设置为 Base64 时才会出现这种情况。</span><span class="sxs-lookup"><span data-stu-id="f79ef-243">This only happens if the encoding method is set to Base64.</span></span> <span data-ttu-id="f79ef-244">如果编码方法设置为“quoted-printable”或“8 bit”，则可以明文形式从不可否认性表中读取消息。</span><span class="sxs-lookup"><span data-stu-id="f79ef-244">Messages can be read in clear text from non-repudiation tables if encoding method is set to quoted-printable or 8-bit.</span></span> <span data-ttu-id="f79ef-245">需要以 \*.eml 扩展名保存消息文件，然后使用 Outlook Express 打开才能读取消息内容，因为 Outlook Express 可以对消息进行解码。</span><span class="sxs-lookup"><span data-stu-id="f79ef-245">You need to save the message file with \*.eml extension and then open it using Outlook Express to read the message and Outlook Express will decode the message for you.</span></span> <span data-ttu-id="f79ef-246">还可使用以下代码从不可否认性表中读取用 Base64 编码的消息。</span><span class="sxs-lookup"><span data-stu-id="f79ef-246">You may also use the code below to read the Base64 encoded messages from non-repudiation tables.</span></span>  
   
 ```  
 byte[] textBytes = Convert.FromBase64String(txtEncodedText.Text);  

@@ -1,14 +1,14 @@
 ---
-title: "有关安装、 配置和部署的 EDI 和 AS2 解决方案的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 有关安装、 配置和部署的 EDI 和 AS2 解决方案的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dee03f0-2447-4cc2-90f4-e9b73caa0f39
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262797"
 ---
 # <a name="known-issues-with-installation-configuration-and-deployment-of-edi-and-as2-solutions"></a><span data-ttu-id="bf21b-102">安装、 配置和部署的 EDI 和 AS2 解决方案的已知的问题</span><span class="sxs-lookup"><span data-stu-id="bf21b-102">Known Issues with Installation, Configuration, and Deployment of EDI and AS2 Solutions</span></span>
 <span data-ttu-id="bf21b-103">本主题介绍在部署和管理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 和 AS2 解决方案方面的已知问题。</span><span class="sxs-lookup"><span data-stu-id="bf21b-103">This topic describes known issues with deployment and management of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 solutions.</span></span>  

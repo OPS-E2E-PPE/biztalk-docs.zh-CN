@@ -1,14 +1,14 @@
 ---
-title: "如何使用到控件的消息内容消息处理 |Microsoft 文档"
-ms.custom: 
+title: 如何使用到控件的消息内容消息处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1e3792e-9cd4-42b6-8b9d-3c2a022a16d6
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288869"
 ---
 # <a name="ways-to-use-message-content-to-control-message-processing"></a><span data-ttu-id="529d5-102">使用消息内容控制消息处理的方法</span><span class="sxs-lookup"><span data-stu-id="529d5-102">Ways to Use Message Content to Control Message Processing</span></span>
 <span data-ttu-id="529d5-103">有两种类型的属性提升：**可分辨字段**和**属性字段**，后者将使用属性架构。</span><span class="sxs-lookup"><span data-stu-id="529d5-103">There are two types of property promotion: **Distinguished Fields** and **Property Fields**, the latter of which uses property schemas.</span></span> <span data-ttu-id="529d5-104">在 BizTalk 编辑器中，你通过进行管理这两种类型的属性提升**升级属性**对话框中，这是可访问通过使用**升级属性**属性**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="529d5-104">In BizTalk Editor, you manage both of these types of property promotion by using the **Promote Properties** dialog box, which is accessible by using the **Promote Properties** property of the **Schema** node.</span></span>  

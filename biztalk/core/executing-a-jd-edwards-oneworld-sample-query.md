@@ -1,14 +1,14 @@
 ---
-title: "执行博士 Edwards OneWorld 示例查询 |Microsoft 文档"
-ms.custom: 
+title: 执行博士 Edwards OneWorld 示例查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b060d383-a2df-472f-90cc-e79078b0bcfd
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975763"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a><span data-ttu-id="723a8-102">执行博士 Edwards OneWorld 示例查询</span><span class="sxs-lookup"><span data-stu-id="723a8-102">Execute a JD Edwards OneWorld Sample Query</span></span>
 <span data-ttu-id="723a8-103">可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。</span><span class="sxs-lookup"><span data-stu-id="723a8-103">The JD Edwards OneWorld (JDEOW) system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the JD Edwards OneWorld adapter.</span></span> <span data-ttu-id="723a8-104">此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="723a8-104">This adapter is included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
-    5.  <span data-ttu-id="723a8-164">**密码：**使用下拉列表，然后输入你博士 Edwards OneWorld 密码。</span><span class="sxs-lookup"><span data-stu-id="723a8-164">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
+    5.  <span data-ttu-id="723a8-164">**密码：** 使用下拉列表，然后输入你博士 Edwards OneWorld 密码。</span><span class="sxs-lookup"><span data-stu-id="723a8-164">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
   
     6.  <span data-ttu-id="723a8-165">**端口：**  `6009`</span><span class="sxs-lookup"><span data-stu-id="723a8-165">**Port:**  `6009`</span></span>  
   
@@ -287,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  <span data-ttu-id="723a8-293">单击“确定” **。**</span><span class="sxs-lookup"><span data-stu-id="723a8-293">Click **OK.**</span></span> <span data-ttu-id="723a8-294">在属性窗口中，选择**\<架构\>**并设置**根引用：**到`AddressBookMasterMBF`。</span><span class="sxs-lookup"><span data-stu-id="723a8-294">In the Properties window, select **\<Schema\>** and set **Root Reference:** to `AddressBookMasterMBF`.</span></span> <span data-ttu-id="723a8-295">这将导致生成的 XML，仅包含**查询**xml。</span><span class="sxs-lookup"><span data-stu-id="723a8-295">This will cause the generated XML to include only the **Query** xml.</span></span>  
+3.  <span data-ttu-id="723a8-293">单击“确定” **。**</span><span class="sxs-lookup"><span data-stu-id="723a8-293">Click **OK.**</span></span> <span data-ttu-id="723a8-294">在属性窗口中，选择**\<架构\>** 并设置**根引用：** 到`AddressBookMasterMBF`。</span><span class="sxs-lookup"><span data-stu-id="723a8-294">In the Properties window, select **\<Schema\>** and set **Root Reference:** to `AddressBookMasterMBF`.</span></span> <span data-ttu-id="723a8-295">这将导致生成的 XML，仅包含**查询**xml。</span><span class="sxs-lookup"><span data-stu-id="723a8-295">This will cause the generated XML to include only the **Query** xml.</span></span>  
   
      <span data-ttu-id="723a8-296">![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")</span><span class="sxs-lookup"><span data-stu-id="723a8-296">![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")</span></span>  
   
@@ -327,7 +328,7 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="723a8-321">![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")</span><span class="sxs-lookup"><span data-stu-id="723a8-321">![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")</span></span>  
   
-9. <span data-ttu-id="723a8-322">单击**\<无\>**为**JDE_OW_Port**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="723a8-322">Click **\<None\>** for **JDE_OW_Port** in the drop-down list.</span></span>  
+9. <span data-ttu-id="723a8-322">单击**\<无\>** 为**JDE_OW_Port**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="723a8-322">Click **\<None\>** for **JDE_OW_Port** in the drop-down list.</span></span>  
   
 10. <span data-ttu-id="723a8-323">选择**新建发送端口**，然后选择或键入属性的以下值：</span><span class="sxs-lookup"><span data-stu-id="723a8-323">Select **New Send Port** and then select or type the following values for the properties:</span></span>  
   
@@ -351,7 +352,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:JDEOWJarsBTSLIBInterop.jar; C:JDEOWJarsConnector.jar; C:JDEOWJarsKernel.jar;C:Program FilesMicrosoft BizTalk Adapters for Enterprise ApplicationsJ.D. Edwards OneWorld®ClassesJDEJAccess.jar`  
   
-     <span data-ttu-id="723a8-333">**密码：**使用下拉列表，然后输入你博士 Edwards OneWorld 密码。</span><span class="sxs-lookup"><span data-stu-id="723a8-333">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
+     <span data-ttu-id="723a8-333">**密码：** 使用下拉列表，然后输入你博士 Edwards OneWorld 密码。</span><span class="sxs-lookup"><span data-stu-id="723a8-333">**Password:** Use the drop-down list and then enter your JD Edwards OneWorld password.</span></span>  
   
      <span data-ttu-id="723a8-334">**端口：**  `6009`</span><span class="sxs-lookup"><span data-stu-id="723a8-334">**Port:**  `6009`</span></span>  
   
@@ -361,7 +362,7 @@ ms.lasthandoff: 11/28/2017
   
 12. <span data-ttu-id="723a8-337">单击“确定”  两次以关闭对话框。</span><span class="sxs-lookup"><span data-stu-id="723a8-337">Click **OK** twice to close the dialog boxes.</span></span>  
   
-13. <span data-ttu-id="723a8-338">在配置 Applicationwindow 中，单击**\<无\>**为**JDE_FileOut**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="723a8-338">In the Configure Applicationwindow, click **\<None\>** for **JDE_FileOut** in the drop-down list.</span></span>  
+13. <span data-ttu-id="723a8-338">在配置 Applicationwindow 中，单击**\<无\>** 为**JDE_FileOut**下拉列表中。</span><span class="sxs-lookup"><span data-stu-id="723a8-338">In the Configure Applicationwindow, click **\<None\>** for **JDE_FileOut** in the drop-down list.</span></span>  
   
 14. <span data-ttu-id="723a8-339">选择“新建发送端口”  ，然后键入或选择以下属性值：</span><span class="sxs-lookup"><span data-stu-id="723a8-339">Select **New Send Port** and type or select the following values for the properties:</span></span>  
   

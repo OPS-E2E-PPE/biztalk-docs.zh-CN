@@ -1,14 +1,14 @@
 ---
-title: "如何查看管理包详细信息 |Microsoft 文档"
-ms.custom: 
+title: 如何查看管理包详细信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7f02034-9007-4327-9f00-4be60d21f65a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298253"
 ---
 # <a name="how-to-view-management-pack-details"></a><span data-ttu-id="b9fa6-102">如何查看管理包详细信息</span><span class="sxs-lookup"><span data-stu-id="b9fa6-102">How to View Management Pack Details</span></span>
 <span data-ttu-id="b9fa6-103">有关监视器和关联的替代值的信息，请查看监视器的知识。</span><span class="sxs-lookup"><span data-stu-id="b9fa6-103">For information about a monitor and the associated override values, view the knowledge for the monitor.</span></span>  

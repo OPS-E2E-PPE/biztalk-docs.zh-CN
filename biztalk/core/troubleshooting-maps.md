@@ -1,14 +1,14 @@
 ---
-title: "排除地图故障 |Microsoft 文档"
-ms.custom: 
+title: 排除地图故障 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32e2eb52-6740-4cf5-82ec-3b6d0b784276
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974611"
 ---
 # <a name="troubleshooting-maps"></a><span data-ttu-id="681e3-102">排除地图故障</span><span class="sxs-lookup"><span data-stu-id="681e3-102">Troubleshooting Maps</span></span>
 <span data-ttu-id="681e3-103">本主题提供故障排除策略和问题详细信息和映射的解决方法信息。</span><span class="sxs-lookup"><span data-stu-id="681e3-103">This topic provides troubleshooting strategies and problem detail and resolution information for maps.</span></span>  

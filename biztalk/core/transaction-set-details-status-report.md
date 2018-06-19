@@ -1,14 +1,14 @@
 ---
-title: "事务集详细信息状态报告 |Microsoft 文档"
-ms.custom: 
+title: 事务集详细信息状态报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d81367c7-c74e-42cb-b856-748962b727ec
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279509"
 ---
 # <a name="transaction-set-details-status-report"></a><span data-ttu-id="78d4e-102">事务集详细信息状态报告</span><span class="sxs-lookup"><span data-stu-id="78d4e-102">Transaction Set Details Status Report</span></span>
 <span data-ttu-id="78d4e-103">该报告显示从“交换/ACK 状态”报告内部选择的特定 EDI 交换中的事务集的详细信息。</span><span class="sxs-lookup"><span data-stu-id="78d4e-103">This report shows the details for transaction sets in a specific EDI interchange selected from within the Interchange/ACK Status report.</span></span> <span data-ttu-id="78d4e-104">要显示此状态报表，请右键单击交换/ACK 状态报表中，查询结果窗格中列出的交换，然后单击**设置事务的详细信息**。</span><span class="sxs-lookup"><span data-stu-id="78d4e-104">To display this status report, right-click an interchange listed in the Query results pane of the Interchange/ACK Status report, and then click **Transaction Set Details**.</span></span>  

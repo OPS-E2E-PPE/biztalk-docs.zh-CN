@@ -1,14 +1,14 @@
 ---
-title: "在 Web 上找到的 XSD 资源 |Microsoft 文档"
-ms.custom: 
+title: 在 Web 上找到的 XSD 资源 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0de350bc-8206-4a1a-8e8d-cb531a06b529
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290709"
 ---
 # <a name="xsd-resources-on-the-web"></a><span data-ttu-id="915e1-102">Web 上的 XSD 资源</span><span class="sxs-lookup"><span data-stu-id="915e1-102">XSD Resources on the Web</span></span>
 <span data-ttu-id="915e1-103">本文档不提供 XML 架构定义 (XSD) 语言的详细信息，更不对 XSD 进行详细总结。</span><span class="sxs-lookup"><span data-stu-id="915e1-103">Providing details of the XML Schema definition (XSD) language, or even adequately summarizing XSD, is beyond the scope of this document.</span></span> <span data-ttu-id="915e1-104">有关更多详细信息，直接转到 XSD 规范和 World Wide Web Consortium (W3C) 网站上维护的入门知识。</span><span class="sxs-lookup"><span data-stu-id="915e1-104">For more detailed information, go directly to the XSD specifications and primer maintained on the World Wide Web Consortium (W3C) Web site.</span></span> <span data-ttu-id="915e1-105">具体而言，建议参考以下教程，第一个教程可用于快速了解基础知识，而后面两个教程是 XSD 的相关信息的权威来源。</span><span class="sxs-lookup"><span data-stu-id="915e1-105">Specifically, the following tutorials are recommended, the first as a quick way to learn the basics, and the latter two as the definitive sources of information about XSD.</span></span> <span data-ttu-id="915e1-106">有关 XSD 的教程，请参阅以下 W3C 页：</span><span class="sxs-lookup"><span data-stu-id="915e1-106">For tutorials on XSD, see the following W3C pages:</span></span>  

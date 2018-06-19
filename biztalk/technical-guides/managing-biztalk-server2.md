@@ -1,14 +1,14 @@
 ---
-title: "管理 BizTalk Server2 |Microsoft 文档"
-ms.custom: 
+title: 管理 BizTalk Server2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 977e2685-a914-422a-97f7-d0c23717f010
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008598"
 ---
 # <a name="managing-biztalk-server"></a><span data-ttu-id="2bbbd-102">管理 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="2bbbd-102">Managing BizTalk Server</span></span>
 <span data-ttu-id="2bbbd-103">本部分提供用于管理在生产环境中的 BizTalk Server 系统的指南。</span><span class="sxs-lookup"><span data-stu-id="2bbbd-103">This section provides guidance for managing a BizTalk Server system in a production environment.</span></span> <span data-ttu-id="2bbbd-104">通常遵循的步骤假定你正在使用 BizTalk 应用程序部署后。</span><span class="sxs-lookup"><span data-stu-id="2bbbd-104">The procedures that follow generally assume you are working with a BizTalk application after deployment.</span></span> <span data-ttu-id="2bbbd-105">这些过程描述了最佳实践和进行例行操作包括以下概念：</span><span class="sxs-lookup"><span data-stu-id="2bbbd-105">These procedures describe best practices and concepts for routine operations including the following:</span></span>  

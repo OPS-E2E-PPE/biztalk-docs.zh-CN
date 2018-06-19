@@ -1,11 +1,11 @@
 ---
-title: "管理 BAM 定义 |Microsoft 文档"
-ms.custom: 
+title: 管理 BAM 定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [BAM], definitions
 - managing [BAM definitions], about managing BAM definitions
 ms.assetid: 7aba0e40-b8d3-4afc-9e4c-92392f1f6269
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262525"
 ---
 # <a name="managing-bam-definitions"></a><span data-ttu-id="3b9d7-102">管理 BAM 定义</span><span class="sxs-lookup"><span data-stu-id="3b9d7-102">Managing BAM Definitions</span></span>
 <span data-ttu-id="3b9d7-103">BAM 定义是 BAM 基础结构的一部分。</span><span class="sxs-lookup"><span data-stu-id="3b9d7-103">A BAM definition is part of the BAM infrastructure.</span></span> <span data-ttu-id="3b9d7-104">它定义要跟踪和聚合的数据，以及所跟踪数据的业务最终用户视图。</span><span class="sxs-lookup"><span data-stu-id="3b9d7-104">It defines the data to track and aggregate, as well as the business end user's view on the tracking data.</span></span> <span data-ttu-id="3b9d7-105">本部分的主题介绍管理 BAM 定义的各个元素（包括活动、视图、项目和警报）的过程。</span><span class="sxs-lookup"><span data-stu-id="3b9d7-105">The topics in this section give procedures for managing the elements of BAM definitions, which include activities, views, artifacts, and alerts.</span></span>  

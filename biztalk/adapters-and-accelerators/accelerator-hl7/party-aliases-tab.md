@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005582"
 ---
 # <a name="party-aliases-tab"></a><span data-ttu-id="8a512-102">当事方别名选项卡</span><span class="sxs-lookup"><span data-stu-id="8a512-102">Party Aliases Tab</span></span>
 <span data-ttu-id="8a512-103">你使用**方别名**选项卡以查看有关所选的当事方信息。</span><span class="sxs-lookup"><span data-stu-id="8a512-103">You use the **Party Aliases** tab to view information about the selected party.</span></span>  

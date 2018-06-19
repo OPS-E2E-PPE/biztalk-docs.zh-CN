@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 引用架构 DLL1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 引用架构 DLL1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47e4b773-e484-4931-9ab2-b8dd0080ea1c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279437"
 ---
 # <a name="step-1-reference-the-schema-dll"></a><span data-ttu-id="77746-102">步骤 1： 引用 DLL 的架构</span><span class="sxs-lookup"><span data-stu-id="77746-102">Step 1: Reference the Schema DLL</span></span>
 <span data-ttu-id="77746-103">在 BizTalk 中，消息是不可改变的。</span><span class="sxs-lookup"><span data-stu-id="77746-103">In BizTalk, messages are immutable.</span></span> <span data-ttu-id="77746-104">因此，若要更改属性值，必须创建和修改新消息。</span><span class="sxs-lookup"><span data-stu-id="77746-104">Therefore, to change a property value you must create and modify a new message.</span></span> <span data-ttu-id="77746-105">通过在接收形状和发送形状之间插入消息赋值形状可以创建和修改新消息。</span><span class="sxs-lookup"><span data-stu-id="77746-105">You create and modify the new message by inserting a message assignment shape between the Receive and Send shapes.</span></span>  

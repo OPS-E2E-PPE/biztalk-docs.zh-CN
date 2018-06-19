@@ -1,14 +1,14 @@
 ---
-title: "如何导入绑定 EDI AS2 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何导入绑定 EDI AS2 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b918fa2-44f2-4f57-95af-36858cea0d86
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007590"
 ---
 # <a name="how-to-import-bindings-for-an-edi-as2-solution"></a><span data-ttu-id="ec5d4-102">如何导入绑定 EDI AS2 解决方案</span><span class="sxs-lookup"><span data-stu-id="ec5d4-102">How to Import Bindings for an EDI-AS2 Solution</span></span>
 <span data-ttu-id="ec5d4-103">本主题介绍如何将 EDI 和/或 AS2 解决方案的配置导入另一台计算机。</span><span class="sxs-lookup"><span data-stu-id="ec5d4-103">This topic describes how to import the configuration of an EDI and/or AS2 solution onto another computer.</span></span> <span data-ttu-id="ec5d4-104">EDI/AS2 解决方案的部署与 BizTalk 应用程序的部署集成在一起。</span><span class="sxs-lookup"><span data-stu-id="ec5d4-104">Deployment of an EDI/AS2 solution is integrated with BizTalk application deployment.</span></span> <span data-ttu-id="ec5d4-105">可以通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台和 BTSTask 命令行工具使用该部署。</span><span class="sxs-lookup"><span data-stu-id="ec5d4-105">It is available through the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console and the BTSTask command-line tool.</span></span>  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22291589"
 ---
 # <a name="walkthrough-creating-a-flat-file-schema-from-a-document-instance"></a><span data-ttu-id="f7f57-102">演练：从文档实例创建平面文件架构</span><span class="sxs-lookup"><span data-stu-id="f7f57-102">Walkthrough: Creating a Flat File Schema From a Document Instance</span></span>
 <span data-ttu-id="f7f57-103">此演练演示如何根据以下示例采购订单，使用“BizTalk 平面文件架构向导”从文档实例创建平面文件架构。</span><span class="sxs-lookup"><span data-stu-id="f7f57-103">This walkthrough shows you how to create a flat file schema from a document instance using the BizTalk Flat File Schema Wizard based on the following sample purchase order.</span></span> <span data-ttu-id="f7f57-104">BizTalk 平面文件架构向导的介绍，请参阅[如何使用 BizTalk 平面文件架构向导](../core/how-to-use-biztalk-flat-file-schema-wizard.md)。</span><span class="sxs-lookup"><span data-stu-id="f7f57-104">For an introduction to the BizTalk Flat File Schema Wizard, see [How to Use BizTalk Flat File Schema Wizard](../core/how-to-use-biztalk-flat-file-schema-wizard.md).</span></span>  
@@ -70,7 +71,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
   
     -   <span data-ttu-id="f7f57-133">**记录名称︰** 类型 **PO** 因为它将架构根名称。</span><span class="sxs-lookup"><span data-stu-id="f7f57-133">**Record name:** Type **PO** as it will be the schema root name.</span></span>  
   
-    -   <span data-ttu-id="f7f57-134">**目标命名空间：**类型**http://Flat_File_Project.PurchaseOrder**架构目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="f7f57-134">**Target namespace:** Type **http://Flat_File_Project.PurchaseOrder** for schema target namespace.</span></span>  
+    -   <span data-ttu-id="f7f57-134">**目标命名空间：** 类型**http://Flat_File_Project.PurchaseOrder**架构目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="f7f57-134">**Target namespace:** Type **http://Flat_File_Project.PurchaseOrder** for schema target namespace.</span></span>  
   
     -   <span data-ttu-id="f7f57-135">**代码页︰** 选择 **utf-8 (65001)** 的下拉列表选择列表中。</span><span class="sxs-lookup"><span data-stu-id="f7f57-135">**Code page:** Select **UTF-8 (65001)** from the drop down selection list.</span></span>  
   

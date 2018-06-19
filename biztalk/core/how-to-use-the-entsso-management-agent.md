@@ -1,14 +1,14 @@
 ---
-title: "如何使用 ENTSSO 管理代理 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 ENTSSO 管理代理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c89b494-db12-4d2a-a030-6acd34489cab
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256133"
 ---
 # <a name="how-to-use-the-entsso-management-agent"></a><span data-ttu-id="73efa-102">如何使用 ENTSSO 管理代理</span><span class="sxs-lookup"><span data-stu-id="73efa-102">How to Use the ENTSSO Management Agent</span></span>
 <span data-ttu-id="73efa-103">企业单一登录 (SSO) 的此版本包含 Microsoft Identity Integration Server (MIIS) 的管理代理 (MA)，后者将企业 SSO 与 MIIS 的帐户同步功能集成在一起。</span><span class="sxs-lookup"><span data-stu-id="73efa-103">This version of Enterprise Single Sign-On (SSO) contains a Management Agent (MA) for Microsoft Identity Integration Server (MIIS), which integrates Enterprise SSO with the account synchronization capabilities of MIIS.</span></span> <span data-ttu-id="73efa-104">这样，MIIS 管理员便可管理 SSO 数据库中的 SSO 映射。</span><span class="sxs-lookup"><span data-stu-id="73efa-104">This enables an MIIS administrator to manage SSO mappings in the SSO Database.</span></span>  

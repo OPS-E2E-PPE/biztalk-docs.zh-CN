@@ -1,14 +1,14 @@
 ---
-title: "常见错误 |Microsoft 文档"
-ms.custom: 
+title: 常见错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fe48a8e-def0-4a00-aa7f-9a49ae555351
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971531"
 ---
 # <a name="common-errors"></a><span data-ttu-id="4e85e-102">常见错误</span><span class="sxs-lookup"><span data-stu-id="4e85e-102">Common Errors</span></span>
 <span data-ttu-id="4e85e-103">本主题列出来在使用 BizTalk 映射器创建映射时可能遇到的常见错误消息。</span><span class="sxs-lookup"><span data-stu-id="4e85e-103">This topic lists out common error messages you may encounter while creating maps using BizTalk Mapper.</span></span>  
@@ -108,7 +109,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="4e85e-156">多个项目具有相同的文件名。</span><span class="sxs-lookup"><span data-stu-id="4e85e-156">Multiple artifacts have the same filename.</span></span> <span data-ttu-id="4e85e-157">对于如**Map1.xsd**和**Map1.btm**。</span><span class="sxs-lookup"><span data-stu-id="4e85e-157">For e.g., **Map1.xsd** and**Map1.btm**.</span></span>  
   
--   <span data-ttu-id="4e85e-158">文件名包含的仅特殊字符 (**~**， **！**，  **@**等。)。</span><span class="sxs-lookup"><span data-stu-id="4e85e-158">The filename comprises of only special characters (**~**, **!**, **@**, etc.).</span></span>  
+-   <span data-ttu-id="4e85e-158">文件名包含的仅特殊字符 (**~**， **！**，  **@** 等。)。</span><span class="sxs-lookup"><span data-stu-id="4e85e-158">The filename comprises of only special characters (**~**, **!**, **@**, etc.).</span></span>  
   
 ### <a name="resolution"></a><span data-ttu-id="4e85e-159">解决方法</span><span class="sxs-lookup"><span data-stu-id="4e85e-159">Resolution</span></span>  
  <span data-ttu-id="4e85e-160">若要解决此问题，可以执行任何这些解决方法：</span><span class="sxs-lookup"><span data-stu-id="4e85e-160">To resolve this issue, you can follow any of these workarounds:</span></span>  

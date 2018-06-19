@@ -1,14 +1,14 @@
 ---
-title: "FileTransport 示例 |Microsoft 文档"
-ms.custom: 
+title: FileTransport 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a32c8cbf-0c17-4237-b2a3-9d21faa13496
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004998"
 ---
 # <a name="filetransport-sample"></a><span data-ttu-id="54825-102">FileTransport 示例</span><span class="sxs-lookup"><span data-stu-id="54825-102">FileTransport Sample</span></span>
 <span data-ttu-id="54825-103">FileTransport 示例演示如何配置[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]用于文件端口，而不是 SQL 端口。</span><span class="sxs-lookup"><span data-stu-id="54825-103">The FileTransport sample demonstrates how to configure [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] to use File ports, instead of SQL ports.</span></span> <span data-ttu-id="54825-104">FileTransport 示例使用文件传输协议 (FTP) 发送和接收消息，而不是使用 HTTP。</span><span class="sxs-lookup"><span data-stu-id="54825-104">The FileTransport sample uses File Transport Protocol (FTP) to send and receive messages, instead of HTTP.</span></span>  

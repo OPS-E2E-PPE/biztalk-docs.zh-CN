@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970811"
 ---
 # <a name="how-to-label-and-comment-a-functoid"></a><span data-ttu-id="997ae-102">如何标签和注释 Functoid</span><span class="sxs-lookup"><span data-stu-id="997ae-102">How to Label and Comment a Functoid</span></span>
 <span data-ttu-id="997ae-103">标签和注释对于记录映射中 functoid 或链接的作用非常有用。</span><span class="sxs-lookup"><span data-stu-id="997ae-103">Labels and comments are helpful to document the purpose of a functoid or a link in a map.</span></span> <span data-ttu-id="997ae-104">你可以使用**标签**属性，以提供 functoid 的名称。</span><span class="sxs-lookup"><span data-stu-id="997ae-104">You can use the **Label** property to provide a name for a functoid.</span></span> <span data-ttu-id="997ae-105">**注释**属性使您能够提供有关 functoid，关于由它所执行的操作通常相关信息的其他信息。</span><span class="sxs-lookup"><span data-stu-id="997ae-105">The **Comments** property enables you to provide additional information about the functoid, typically relevant information about the operation being performed by it.</span></span>  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  <span data-ttu-id="997ae-121">输入以下信息，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="997ae-121">Enter the following information, and then click **OK**.</span></span>  
   
-    -   <span data-ttu-id="997ae-122">**标签 –**输入新名称。</span><span class="sxs-lookup"><span data-stu-id="997ae-122">**Label –** Enter the new name.</span></span>  
+    -   <span data-ttu-id="997ae-122">**标签 –** 输入新名称。</span><span class="sxs-lookup"><span data-stu-id="997ae-122">**Label –** Enter the new name.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="997ae-123">最大允许的字符数为 256。</span><span class="sxs-lookup"><span data-stu-id="997ae-123">The maximum number of characters allowed is 256.</span></span> <span data-ttu-id="997ae-124">如果指定超过 256 个字符的字符串，则接受前 256 个字符和其余部分将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="997ae-124">If a string with more than 256 characters is specified, the first 256 characters are accepted and the rest are discarded.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  <span data-ttu-id="997ae-130">在**属性**窗口中，输入以下信息，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="997ae-130">In the **Properties** window, enter the following information, and then click **OK**.</span></span>  
   
-    -   <span data-ttu-id="997ae-131">**标签 –**输入新名称。</span><span class="sxs-lookup"><span data-stu-id="997ae-131">**Label –** Enter the new name.</span></span>  
+    -   <span data-ttu-id="997ae-131">**标签 –** 输入新名称。</span><span class="sxs-lookup"><span data-stu-id="997ae-131">**Label –** Enter the new name.</span></span>  
   
         > [!IMPORTANT]
         >  <span data-ttu-id="997ae-132">最大允许的字符数为 256。</span><span class="sxs-lookup"><span data-stu-id="997ae-132">The maximum number of characters allowed is 256.</span></span> <span data-ttu-id="997ae-133">如果指定超过 256 个字符的字符串，则接受前 256 个字符和其余部分将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="997ae-133">If a string with more than 256 characters is specified, the first 256 characters are accepted and the rest are discarded.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "BTARN 接收管道 |Microsoft 文档"
-ms.custom: 
+title: BTARN 接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, receive pipelines
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - MessageUpdater component
 - messages, message flow
 ms.assetid: 811f2a6a-ddd2-49cc-a00b-4c9d0110a0d1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005622"
 ---
 # <a name="btarn-receive-pipeline"></a><span data-ttu-id="d17a3-102">BTARN 接收管道</span><span class="sxs-lookup"><span data-stu-id="d17a3-102">BTARN Receive Pipeline</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="d17a3-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]执行 RosettaNet 实现框架 (RNIF) 与 RNIFReceive 管道 (RNIFReceive.btp) 都接收到消息。</span><span class="sxs-lookup"><span data-stu-id="d17a3-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] performs RosettaNet Implementation Framework (RNIF) message reception with the RNIFReceive pipeline (RNIFReceive.btp).</span></span> <span data-ttu-id="d17a3-104">接收管道包括以下组件：</span><span class="sxs-lookup"><span data-stu-id="d17a3-104">The receive pipeline includes the following components:</span></span>  

@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], deleting
 - managing [SSO maps], deleting user maps
 ms.assetid: de511113-b0b0-4920-91dc-4c9e380fda58
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970659"
 ---
 # <a name="how-to-delete-user-mappings"></a><span data-ttu-id="d9d8d-102">如何删除用户映射</span><span class="sxs-lookup"><span data-stu-id="d9d8d-102">How to Delete User Mappings</span></span>
 <span data-ttu-id="d9d8d-103">使用这些命令来删除一个或多个用户映射，按照指定的 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-103">Use these commands to delete one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="d9d8d-104">下面是示例 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-104">The following is an example XML file.</span></span>  
@@ -51,7 +52,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="d9d8d-110">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-110">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="d9d8d-111">默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-111">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d9d8d-112">类型 **ssomanage-deletemappings *\<映射文件名\>* * *，其中\<*映射文件名*\>是包含的文件的名称你想要删除的用户映射。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-112">Type **ssomanage –deletemappings *\<mappings file name\>***, where \<*mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
+3.  <span data-ttu-id="d9d8d-112">类型 **ssomanage-deletemappings *\<映射文件名\>* * *，其中\<* 映射文件名*\>是包含的文件的名称你想要删除的用户映射。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-112">Type **ssomanage –deletemappings *\<mappings file name\>***, where \<* mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="d9d8d-113">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-113">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="d9d8d-116">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-116">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="d9d8d-117">默认安装目录是*\<驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-117">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d9d8d-118">类型 **ssomanage-deletemapping *\<域\>*\\*\<用户名\>*  *\<应用程序名称\>* * *，其中*\<域\>*是用户帐户的 Windows 域*\<用户名\>*是 Windows 用户名称，并\<*应用程序名称*\>是你想要删除的用户映射的特定应用程序。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-118">Type **ssomanage –deletemapping *\<domain\>*\\*\<username\>* *\<application name\>***, where *\<domain\>* is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<*application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
+3.  <span data-ttu-id="d9d8d-118">类型 **ssomanage-deletemapping *\<域\>*\\*\<用户名\>*  *\<应用程序名称\>* * *，其中*\<域\>* 是用户帐户的 Windows 域*\<用户名\>* 是 Windows 用户名称，并\<* 应用程序名称*\>是你想要删除的用户映射的特定应用程序。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-118">Type **ssomanage –deletemapping *\<domain\>*\\*\<username\>* *\<application name\>***, where *\<domain\>* is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<* application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="d9d8d-119">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-119">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  <span data-ttu-id="d9d8d-122">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-122">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="d9d8d-123">默认安装目录是*\<驱动器*\>: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-123">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="d9d8d-124">类型 * * ssoclient – deletemapping *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是你想要删除的用户映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-124">Type **ssoclient –deletemapping *\<application name\>***, where *\<application name\>* is the name of the affiliate application you want to remove the user mapping for.</span></span>  
+3.  <span data-ttu-id="d9d8d-124">类型 * * ssoclient – deletemapping *\<应用程序名称\>* * *，其中*\<应用程序名称\>* 是你想要删除的用户映射的关联应用程序的名称。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-124">Type **ssoclient –deletemapping *\<application name\>***, where *\<application name\>* is the name of the affiliate application you want to remove the user mapping for.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="d9d8d-125">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="d9d8d-125">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

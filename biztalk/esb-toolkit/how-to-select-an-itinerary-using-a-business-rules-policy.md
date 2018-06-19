@@ -1,14 +1,14 @@
 ---
-title: "如何： 选择使用业务规则策略路线 |Microsoft 文档"
-ms.custom: 
+title: 如何： 选择使用业务规则策略路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f6373a8-d9d6-46c6-95e3-f62dd33c342a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010582"
 ---
 # <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a><span data-ttu-id="9ecc2-102">如何： 选择使用业务规则策略路线</span><span class="sxs-lookup"><span data-stu-id="9ecc2-102">How to: Select an Itinerary Using a Business Rules Policy</span></span>
 ## <a name="goal"></a><span data-ttu-id="9ecc2-103">目的</span><span class="sxs-lookup"><span data-stu-id="9ecc2-103">Goal</span></span>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a><span data-ttu-id="9ecc2-134">若要添加客户 GlobalBank 西部选择规则</span><span class="sxs-lookup"><span data-stu-id="9ecc2-134">To add a selection rule for customer GlobalBank West</span></span>  
   
-1.  <span data-ttu-id="9ecc2-135">在**ResolveItineraryBasedOnCustomer**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-135">In the **ResolveItineraryBasedOnCustomer** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="9ecc2-136">命名规则**SetGlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-136">Name the rule **SetGlobalBankWestItinerary**.</span></span>  
+1.  <span data-ttu-id="9ecc2-135">在**ResolveItineraryBasedOnCustomer**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-135">In the **ResolveItineraryBasedOnCustomer** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="9ecc2-136">命名规则**SetGlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-136">Name the rule **SetGlobalBankWestItinerary**.</span></span>  
   
 2.  <span data-ttu-id="9ecc2-137">在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-137">In Facts Explorer, click the **XML Schemas** tab, right-click **Schemas**, and then click **Browse**.</span></span>  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  <span data-ttu-id="9ecc2-150">在策略资源管理器中，右键单击**SetGlobalBankWestItinerary**规则，并依次**复制**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-150">In Policy Explorer, right-click the **SetGlobalBankWestItinerary** rule, and then click **Copy**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-151">右键单击**（不保存） 1.0 版**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-151">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
+2.  <span data-ttu-id="9ecc2-151">右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-151">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
   
 3.  <span data-ttu-id="9ecc2-152">在**新规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-152">In the **New Rule Name** dialog box, type **SetGlobalBankEastItinerary**, and then click **OK**.</span></span>  
   
@@ -120,14 +121,14 @@ ms.lasthandoff: 12/01/2017
   
 7.  <span data-ttu-id="9ecc2-156">在**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-156">In the **Actions** section, right-click **GlobalBankWestItinerary**, and then click **Reset argument**.</span></span>  
   
-8.  <span data-ttu-id="9ecc2-157">单击**\<空字符串\>**然后键入**GlobalBankEastItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
+8.  <span data-ttu-id="9ecc2-157">单击**\<空字符串\>** 然后键入**GlobalBankEastItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="9ecc2-158">更高版本中的操作方法主题，你将从 GlobalBank 东处理这些消息创建此路线。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-158">Later in the How-to topic, you will create this itinerary to process messages from GlobalBank East.</span></span>  
   
 #### <a name="to-publish-and-deploy-the-policy"></a><span data-ttu-id="9ecc2-159">若要发布和部署策略</span><span class="sxs-lookup"><span data-stu-id="9ecc2-159">To publish and deploy the policy</span></span>  
   
-1.  <span data-ttu-id="9ecc2-160">在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击**（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-160">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
+1.  <span data-ttu-id="9ecc2-160">在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-160">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
   
 2.  <span data-ttu-id="9ecc2-161">在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击**版本 1.0-发布**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-161">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 - Published**, and then click **Deploy**.</span></span>  
   

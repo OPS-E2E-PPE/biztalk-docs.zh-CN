@@ -1,11 +1,11 @@
 ---
-title: "开发自定义管道组件 |Microsoft 文档"
-ms.custom: 
+title: 开发自定义管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom]
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - pipeline components [custom], interfaces
 - pipeline components [custom], component types
 ms.assetid: cce61e0d-f1e3-4ec2-b38c-7c6eaf83ac10
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005462"
 ---
 # <a name="developing-custom-pipeline-components"></a><span data-ttu-id="59be7-102">开发自定义管道组件</span><span class="sxs-lookup"><span data-stu-id="59be7-102">Developing Custom Pipeline Components</span></span>
 <span data-ttu-id="59be7-103">本部分介绍如何开发管道组件。</span><span class="sxs-lookup"><span data-stu-id="59be7-103">This section describes how to develop a pipeline component.</span></span> <span data-ttu-id="59be7-104">您可以创建三种类型的管道组件：普通、组装和拆卸。</span><span class="sxs-lookup"><span data-stu-id="59be7-104">You can create three types of pipeline components: general, assembling, and disassembling.</span></span> <span data-ttu-id="59be7-105">这三种类型均可实现附加的探测功能。</span><span class="sxs-lookup"><span data-stu-id="59be7-105">Each of the three types can additionally implement probing functionality.</span></span> <span data-ttu-id="59be7-106">每种类型的管道组件具有关联的界面，必须以插入到 BizTalk 消息传送引擎，则组件的实现区分类型的组件的管道接口为**IComponent**， **IAssemblerComponent**，和**IDisassemblerComponent**。</span><span class="sxs-lookup"><span data-stu-id="59be7-106">Each type of pipeline component has an associated interface that must be implemented for the component to be plugged into the BizTalk Messaging Engine; the pipeline interfaces that distinguish the types of components are **IComponent**, **IAssemblerComponent**, and **IDisassemblerComponent**.</span></span> <span data-ttu-id="59be7-107">用于探测组件，则必须实现**IProbeMessage**接口。</span><span class="sxs-lookup"><span data-stu-id="59be7-107">For probing components, you must implement the **IProbeMessage** interface.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "BTARN 发送管道 |Microsoft 文档"
-ms.custom: 
+title: BTARN 发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - XML Preprocessor
 - messages, message flow
 ms.assetid: 88562132-0ea4-4b5a-9445-b69f6c84e5ea
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007518"
 ---
 # <a name="btarn-send-pipeline"></a><span data-ttu-id="374bd-102">BTARN 发送管道</span><span class="sxs-lookup"><span data-stu-id="374bd-102">BTARN Send Pipeline</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="374bd-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RosettaNet 实现框架 (RNIF) 消息准备 RNIFSend 管道 (RNIFSend.btp) 中的传输。</span><span class="sxs-lookup"><span data-stu-id="374bd-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] prepares a RosettaNet Implementation Framework (RNIF) message for transmission in the RNIFSend pipeline (RNIFSend.btp).</span></span> <span data-ttu-id="374bd-104">发送管道包括：</span><span class="sxs-lookup"><span data-stu-id="374bd-104">The send pipeline includes the following:</span></span>  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25976323"
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a><span data-ttu-id="ce5a4-102">可以修改为提高网络性能的设置</span><span class="sxs-lookup"><span data-stu-id="ce5a4-102">Settings that can be Modified to Improve Network Performance</span></span>
 <span data-ttu-id="ce5a4-103">本主题提供建议的值的说明该影响网络性能。</span><span class="sxs-lookup"><span data-stu-id="ce5a4-103">This topic provides a description of recommended values   that impact network performance.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 创建 EAISchemas 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建 EAISchemas 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a14ee61-fa27-4f03-997e-42c34a77afee
-caps.latest.revision: "55"
+caps.latest.revision: 55
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277653"
 ---
 # <a name="step-1-create-eaischemas-project"></a><span data-ttu-id="dc409-102">步骤 1：创建 EAISchemas 项目</span><span class="sxs-lookup"><span data-stu-id="dc409-102">Step 1: Create EAISchemas Project</span></span>
 <span data-ttu-id="dc409-103">![步骤 1 5](../core/media/step-1of5.gif "Step_1of5")</span><span class="sxs-lookup"><span data-stu-id="dc409-103">![Step 1 of 5](../core/media/step-1of5.gif "Step_1of5")</span></span>  
   
  <span data-ttu-id="dc409-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="dc409-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="dc409-105">**目标：**在此步骤中，你创建一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案和项目。</span><span class="sxs-lookup"><span data-stu-id="dc409-105">**Objective:** In this step, you create a new [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] solution and a project.</span></span>  
+ <span data-ttu-id="dc409-105">**目标：** 在此步骤中，你创建一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案和项目。</span><span class="sxs-lookup"><span data-stu-id="dc409-105">**Objective:** In this step, you create a new [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] solution and a project.</span></span>  
   
  <span data-ttu-id="dc409-106">**用途：** BizTalk 项目系统用于创建部分或全部[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]应用程序或业务解决方案。</span><span class="sxs-lookup"><span data-stu-id="dc409-106">**Purpose:** You use the BizTalk project system to create part or all of a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] application or business solution.</span></span> <span data-ttu-id="dc409-107">这些解决方案的核心元素是 BizTalk 项目，它是可在部署程序集之前构建并生成到该程序集中的项（例如架构、业务流程、Web 消息类型、类、管道、映射和引用）的集合。</span><span class="sxs-lookup"><span data-stu-id="dc409-107">The core element of any such solution is a BizTalk project—a collection of items, such as schemas, orchestrations, Web message types, classes, pipelines, maps, and references that you can build and generate into an assembly before deploying it.</span></span>  
   

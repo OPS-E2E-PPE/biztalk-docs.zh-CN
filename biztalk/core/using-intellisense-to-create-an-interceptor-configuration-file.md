@@ -1,14 +1,14 @@
 ---
-title: "使用 IntelliSense 来创建一个侦听器配置文件 |Microsoft 文档"
-ms.custom: 
+title: 使用 IntelliSense 来创建一个侦听器配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 349ea1bf-a5d1-4464-bf4b-d8746c622377
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287965"
 ---
 # <a name="using-intellisense-to-create-an-interceptor-configuration-file"></a><span data-ttu-id="32a15-102">使用 IntelliSense 创建侦听器配置文件</span><span class="sxs-lookup"><span data-stu-id="32a15-102">Using IntelliSense to Create an Interceptor Configuration File</span></span>
 <span data-ttu-id="32a15-103">可以使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的 IntelliSense 和架构验证来帮助您构造从架构上来说有效的侦听器配置文件。</span><span class="sxs-lookup"><span data-stu-id="32a15-103">You can use IntelliSense and schema validation in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to help you construct interceptor configuration files that are schematically valid.</span></span> <span data-ttu-id="32a15-104">BAM 管理实用工具根据基本侦听器配置架构验证您的侦听器配置文件，如果此文件无效，则不部署该架构。</span><span class="sxs-lookup"><span data-stu-id="32a15-104">The BAM management utility validates your interceptor configuration file against the base interceptor configuration schema and, if the file is not valid, does not deploy the schema.</span></span> <span data-ttu-id="32a15-105">如果文件通过了根据基本侦听器配置架构进行的验证，则在运行时会根据特定于技术的架构（如 [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] 架构或 [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 架构）对其进行验证，如果出错，则不进行侦听。</span><span class="sxs-lookup"><span data-stu-id="32a15-105">If the file passes validation against the base interceptor configuration schema, it is validated against technology-specific schemas like the [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] schema or the [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] schema during run time and if errors are encountered, no interception will occur.</span></span> <span data-ttu-id="32a15-106">构造侦听器配置文件时，可以通过使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的架构验证来避免这些错误。</span><span class="sxs-lookup"><span data-stu-id="32a15-106">You can avoid these errors by using schema validation in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] when constructing your interceptor configuration file.</span></span>  

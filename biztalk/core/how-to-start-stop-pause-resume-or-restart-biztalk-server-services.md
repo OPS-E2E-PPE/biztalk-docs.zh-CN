@@ -1,15 +1,15 @@
 ---
-title: "步骤重启服务，或关闭 |Microsoft 文档"
-description: "启动、 停止、 暂停、 继续或重新启动 BizTalk Server 服务，或关闭 BizTalk Server 计算机"
-ms.custom: 
+title: 步骤重启服务，或关闭 |Microsoft 文档
+description: 启动、 停止、 暂停、 继续或重新启动 BizTalk Server 服务，或关闭 BizTalk Server 计算机
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d6449ba-2892-49c6-a697-847608d10ec5
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973403"
 ---
 # <a name="restart-biztalk-services-or-shut-down-the-biztalk-server"></a><span data-ttu-id="e5485-103">重新启动 BizTalk 服务，或关闭 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="e5485-103">Restart BizTalk services, or shut down the BizTalk Server</span></span>
 

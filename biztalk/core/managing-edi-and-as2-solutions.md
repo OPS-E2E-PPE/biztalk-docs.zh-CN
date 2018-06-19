@@ -1,11 +1,11 @@
 ---
-title: "管理 EDI 和 AS2 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 管理 EDI 和 AS2 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing, AS2 solutions
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing, EDI solutions
 - AS2 solutions, managing
 ms.assetid: f2e9babe-124d-4967-8c10-b201d71a283f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262349"
 ---
 # <a name="managing-edi-and-as2-solutions"></a><span data-ttu-id="68b07-102">管理 EDI 和 AS2 解决方案</span><span class="sxs-lookup"><span data-stu-id="68b07-102">Managing EDI and AS2 Solutions</span></span>
 <span data-ttu-id="68b07-103">本部分演示如何创建参与方、 业务配置文件、 协议和批处理使用[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]控制台。</span><span class="sxs-lookup"><span data-stu-id="68b07-103">This section shows you how to create parties, business profiles, agreements, and batching using the [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)] console.</span></span>

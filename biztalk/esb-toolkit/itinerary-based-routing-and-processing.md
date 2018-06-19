@@ -1,14 +1,14 @@
 ---
-title: "路由和处理路线基于 |Microsoft 文档"
-ms.custom: 
+title: 路由和处理路线基于 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8354538-e45c-487d-a380-59f497ea060f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006742"
 ---
 # <a name="itinerary-based-routing-and-processing"></a><span data-ttu-id="52a2f-102">基于路线的路由和处理</span><span class="sxs-lookup"><span data-stu-id="52a2f-102">Itinerary-Based Routing and Processing</span></span>
 <span data-ttu-id="52a2f-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]实现通过自定义管道组件使用的路由滑动模式。</span><span class="sxs-lookup"><span data-stu-id="52a2f-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] implements a routing slip pattern through the use of custom pipeline components.</span></span> <span data-ttu-id="52a2f-104">消息元数据和其他因素用于确定适当的路由滑动也称为路线，要用于每个消息。</span><span class="sxs-lookup"><span data-stu-id="52a2f-104">Message metadata and other factors are used to determine the appropriate routing slip, also known as an itinerary, to be used for each message.</span></span> <span data-ttu-id="52a2f-105">此路由滑动即可执行消息转换、 调用业务流程服务，并定义条消息，路由 BizTalk Server 将执行的步骤，有效地分离核心 BizTalk Server 引擎中的消息处理指令。</span><span class="sxs-lookup"><span data-stu-id="52a2f-105">This routing slip can perform message transformation, invoke orchestration services, and define message routing steps that BizTalk Server will execute, effectively decoupling message processing instructions from the core BizTalk Server engine.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 向解决方案添加 EAIOrchestration 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 向解决方案添加 EAIOrchestration 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9aa0d9-2075-4c7e-8baf-1ecd2721859a
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276861"
 ---
 # <a name="step-1-add-eaiorchestration-project-to-the-solution"></a><span data-ttu-id="adfc3-102">步骤 1：向解决方案中添加 EAIOrchestration 项目</span><span class="sxs-lookup"><span data-stu-id="adfc3-102">Step 1: Add EAIOrchestration Project to the Solution</span></span>
 <span data-ttu-id="adfc3-103">![步骤 1 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="adfc3-103">![Step 1 of 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
   
  <span data-ttu-id="adfc3-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="adfc3-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="adfc3-105">**目标：**在此步骤中，你可以将第二个项目添加到 EAI 解决方案。</span><span class="sxs-lookup"><span data-stu-id="adfc3-105">**Objective:** In this step, you add a second project to the EAI solution.</span></span> <span data-ttu-id="adfc3-106">然后再向该新项目添加业务流程。</span><span class="sxs-lookup"><span data-stu-id="adfc3-106">Then you add an orchestration to the new project.</span></span>  
+ <span data-ttu-id="adfc3-105">**目标：** 在此步骤中，你可以将第二个项目添加到 EAI 解决方案。</span><span class="sxs-lookup"><span data-stu-id="adfc3-105">**Objective:** In this step, you add a second project to the EAI solution.</span></span> <span data-ttu-id="adfc3-106">然后再向该新项目添加业务流程。</span><span class="sxs-lookup"><span data-stu-id="adfc3-106">Then you add an orchestration to the new project.</span></span>  
   
- <span data-ttu-id="adfc3-107">**用途：**创建业务流程单独的项目。</span><span class="sxs-lookup"><span data-stu-id="adfc3-107">**Purpose:** You create a separate project for the orchestration.</span></span> <span data-ttu-id="adfc3-108">当多个人员使用一个解决方案时，这样做很有帮助。</span><span class="sxs-lookup"><span data-stu-id="adfc3-108">This is helpful when you have several different people working on one solution.</span></span> <span data-ttu-id="adfc3-109">您可以使用该新业务流程自动执行本课中的业务程序。</span><span class="sxs-lookup"><span data-stu-id="adfc3-109">You use the new orchestration to automate the business process in this lesson.</span></span>  
+ <span data-ttu-id="adfc3-107">**用途：** 创建业务流程单独的项目。</span><span class="sxs-lookup"><span data-stu-id="adfc3-107">**Purpose:** You create a separate project for the orchestration.</span></span> <span data-ttu-id="adfc3-108">当多个人员使用一个解决方案时，这样做很有帮助。</span><span class="sxs-lookup"><span data-stu-id="adfc3-108">This is helpful when you have several different people working on one solution.</span></span> <span data-ttu-id="adfc3-109">您可以使用该新业务流程自动执行本课中的业务程序。</span><span class="sxs-lookup"><span data-stu-id="adfc3-109">You use the new orchestration to automate the business process in this lesson.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="adfc3-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="adfc3-110">Prerequisites</span></span>  
  <span data-ttu-id="adfc3-111">在开始此步骤之前，请注意以下要求：</span><span class="sxs-lookup"><span data-stu-id="adfc3-111">Note the following requirements before you begin this step:</span></span>  

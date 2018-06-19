@@ -1,11 +1,11 @@
 ---
-title: "WCF 发送适配器 |Microsoft 文档"
-ms.custom: 
+title: WCF 发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Web services, headers
 - WCF adapters, send adapters
 ms.assetid: 226a020a-2e12-41fe-a4a2-6683d9e98219
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288757"
 ---
 # <a name="wcf-send-adapter"></a><span data-ttu-id="37514-102">WCF 发送适配器</span><span class="sxs-lookup"><span data-stu-id="37514-102">WCF Send Adapter</span></span>
 <span data-ttu-id="37514-103">WCF 发送适配器允许您通过无类型的协定调用 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="37514-103">The WCF send adapter enables you to call a WCF service through the typeless contract.</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 -   <span data-ttu-id="37514-117">如果 BizTalk 消息包含任意 XML 数据，则会将 BizTalk 消息放置到 SOAP 正文元素中。</span><span class="sxs-lookup"><span data-stu-id="37514-117">If the BizTalk message contains arbitrary XML data, then the BizTalk message is placed into the SOAP Body element.</span></span>  
   
 ## <a name="handling-web-services-headers"></a><span data-ttu-id="37514-118">处理 Web Services 标头</span><span class="sxs-lookup"><span data-stu-id="37514-118">Handling Web Services Headers</span></span>  
- <span data-ttu-id="37514-119">在发送操作期间，BizTalk Server 无法控制 Web Services 标准标头。</span><span class="sxs-lookup"><span data-stu-id="37514-119">During send operations BizTalk Server does not have control over Web services standard headers.</span></span> <span data-ttu-id="37514-120">这些标头会通过 WCF 进行设置和处理。</span><span class="sxs-lookup"><span data-stu-id="37514-120">Those headers are set and processed by the WCF.</span></span> <span data-ttu-id="37514-121">可以修改 BizTalk 服务器应用程序的唯一的标准标头是**： 操作**标头。</span><span class="sxs-lookup"><span data-stu-id="37514-121">The only standard header that can be modified by the BizTalk Server application is the **a:Action** header.</span></span> <span data-ttu-id="37514-122">如果上下文属性**操作**适配器命名空间，则 WCF 发送适配器将使用属性的值设置指定**操作**对 SOAP 消息。</span><span class="sxs-lookup"><span data-stu-id="37514-122">If the context property **Action** is specified on the adapter namespace, then the WCF send adapter will use the value of the property to set the **Action** on the SOAP message.</span></span>  
+ <span data-ttu-id="37514-119">在发送操作期间，BizTalk Server 无法控制 Web Services 标准标头。</span><span class="sxs-lookup"><span data-stu-id="37514-119">During send operations BizTalk Server does not have control over Web services standard headers.</span></span> <span data-ttu-id="37514-120">这些标头会通过 WCF 进行设置和处理。</span><span class="sxs-lookup"><span data-stu-id="37514-120">Those headers are set and processed by the WCF.</span></span> <span data-ttu-id="37514-121">可以修改 BizTalk 服务器应用程序的唯一的标准标头是 **： 操作**标头。</span><span class="sxs-lookup"><span data-stu-id="37514-121">The only standard header that can be modified by the BizTalk Server application is the **a:Action** header.</span></span> <span data-ttu-id="37514-122">如果上下文属性**操作**适配器命名空间，则 WCF 发送适配器将使用属性的值设置指定**操作**对 SOAP 消息。</span><span class="sxs-lookup"><span data-stu-id="37514-122">If the context property **Action** is specified on the adapter namespace, then the WCF send adapter will use the value of the property to set the **Action** on the SOAP message.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="37514-123">要进行动态发送端口，如果**操作**中指定**OutboundHeaders**，为设置的上下文属性**WCF。操作**将被忽略。</span><span class="sxs-lookup"><span data-stu-id="37514-123">For dynamic send ports, if **Action** is specified in the **OutboundHeaders**, the context property you set for the **WCF.Action** will be ignored.</span></span>  

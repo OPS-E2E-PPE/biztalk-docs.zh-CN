@@ -1,14 +1,14 @@
 ---
-title: "运行设计器扩展性示例 |Microsoft 文档"
-ms.custom: 
+title: 运行设计器扩展性示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05ac3b50-5bf2-4566-8654-472391476d1f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007582"
 ---
 # <a name="running-the-designer-extensibility-sample"></a><span data-ttu-id="5068a-102">运行设计器扩展性示例</span><span class="sxs-lookup"><span data-stu-id="5068a-102">Running the Designer Extensibility Sample</span></span>
 <span data-ttu-id="5068a-103">设计器扩展性示例使用两个示例扩展程序来演示如何提供设计时配置选项的自定义解析程序和路线的服务。</span><span class="sxs-lookup"><span data-stu-id="5068a-103">The Designer Extensibility sample uses two sample extenders to demonstrate how you can provide design-time configuration options for custom resolvers and for itinerary services.</span></span>  

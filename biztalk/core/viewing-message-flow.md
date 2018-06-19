@@ -1,11 +1,11 @@
 ---
-title: "查看消息流 |Microsoft 文档"
-ms.custom: 
+title: 查看消息流 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing, messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - HAT, Message Flow view
 - messages, HAT
 ms.assetid: 08d2c052-98d0-43ca-99e5-48d0754411df
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289309"
 ---
 # <a name="viewing-message-flow"></a><span data-ttu-id="6b22b-102">查看消息流</span><span class="sxs-lookup"><span data-stu-id="6b22b-102">Viewing Message Flow</span></span>
 <span data-ttu-id="6b22b-103">消息流是由消息执行的一组连续的处理步骤。</span><span class="sxs-lookup"><span data-stu-id="6b22b-103">A message flow is the set of contiguous processing steps taken by a message.</span></span> <span data-ttu-id="6b22b-104">在 BizTalk Server 管理控制台的“组概述”页中，右键单击服务实例或消息实例，会出现一个快捷菜单，您可以通过此快捷菜单来访问消息视图。</span><span class="sxs-lookup"><span data-stu-id="6b22b-104">You access the message view through the shortcut menu that appears when you right-click a service or message instance in the Group Overview page in the BizTalk Server Administration Console.</span></span> <span data-ttu-id="6b22b-105">进入“消息流”视图后，您可在“消息流”视图与业务流程调试器之间来回切换。</span><span class="sxs-lookup"><span data-stu-id="6b22b-105">Once in the Message Flow view, you can switch back and forth between the Message Flow view and the Orchestration Debugger.</span></span>  

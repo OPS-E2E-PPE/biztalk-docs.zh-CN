@@ -1,11 +1,11 @@
 ---
-title: "管理 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 管理 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, SSO
 - SSOMANAGE command line utility
 ms.assetid: f738e344-4d81-4557-b399-68b59c413245
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970963"
 ---
 # <a name="manage-biztalk-server-sample"></a><span data-ttu-id="b9f10-102">管理 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="b9f10-102">Manage (BizTalk Server Sample)</span></span>
 <span data-ttu-id="b9f10-103">管理单一登录 (SSO) 示例演示如何构造能用于 ssomanage.exe 命令行实用工具的 .xml 文件以执行以下类型的管理操作：</span><span class="sxs-lookup"><span data-stu-id="b9f10-103">The Manage Single Sign-On (SSO) sample demonstrates how to construct .xml files that you can use with the ssomanage.exe command-line utility to perform the following types of administration operations:</span></span>  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
  <span data-ttu-id="b9f10-110">本示例为上述操作类型中的每一种类型都提供了一对 XSD 和示例 .xml 文件。</span><span class="sxs-lookup"><span data-stu-id="b9f10-110">This sample includes pairs of XSD and sample .xml files for each of these types of operations.</span></span> <span data-ttu-id="b9f10-111">示例 .xml 文件中的值是无效的。</span><span class="sxs-lookup"><span data-stu-id="b9f10-111">The values in the sample .xml files are not valid.</span></span> <span data-ttu-id="b9f10-112">必须更改这些值，使其与您的特定需求相适应。</span><span class="sxs-lookup"><span data-stu-id="b9f10-112">You must make changes to the values that are appropriate to your specific requirements.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="b9f10-113">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="b9f10-113">Where to Find This Sample</span></span>  
- <span data-ttu-id="b9f10-114">*\<示例路径\>*\SSO\Manage\\</span><span class="sxs-lookup"><span data-stu-id="b9f10-114">*\<Samples Path\>*\SSO\Manage\\</span></span>  
+ <span data-ttu-id="b9f10-114">*\<示例路径\>* \SSO\Manage\\</span><span class="sxs-lookup"><span data-stu-id="b9f10-114">*\<Samples Path\>* \SSO\Manage\\</span></span>  
   
  <span data-ttu-id="b9f10-115">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="b9f10-115">The following table shows the files in this sample and describes their purpose.</span></span>  
   

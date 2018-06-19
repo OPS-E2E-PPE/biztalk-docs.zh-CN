@@ -1,14 +1,14 @@
 ---
-title: "点到点解析终结点以及转换要求 |Microsoft 文档"
-ms.custom: 
+title: 点到点解析终结点以及转换要求 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4c570bf-8274-4779-ae83-2aef2bf57ded
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294461"
 ---
 # <a name="point-to-point-resolution-of-endpoints-and-transformation-requirements"></a><span data-ttu-id="f01fd-102">点到点解析终结点以及转换要求</span><span class="sxs-lookup"><span data-stu-id="f01fd-102">Point-to-Point Resolution of Endpoints and Transformation Requirements</span></span>
 <span data-ttu-id="f01fd-103">在使用这种情况下，Web 服务客户端调用 Web 服务，而无需通过 ESB。</span><span class="sxs-lookup"><span data-stu-id="f01fd-103">In this use case, a Web service client calls a Web service without going through the ESB.</span></span> <span data-ttu-id="f01fd-104">两个点进行直接通信，但客户端进行的调用之前，它必须解析 Web 服务的终结点。</span><span class="sxs-lookup"><span data-stu-id="f01fd-104">The two points communicate directly, but before the client makes the call, it must resolve the endpoint of the Web service.</span></span> <span data-ttu-id="f01fd-105">对 Web 服务的调用可以是单向或请求-响应。</span><span class="sxs-lookup"><span data-stu-id="f01fd-105">The call to the Web service can be either a one-way or a request-response.</span></span> <span data-ttu-id="f01fd-106">实现此目的的一种方法是使用 ESB，动态解析功能，如图 1 中所示。</span><span class="sxs-lookup"><span data-stu-id="f01fd-106">One way of achieving this is to use the dynamic resolution features of the ESB, as shown in Figure 1.</span></span>  

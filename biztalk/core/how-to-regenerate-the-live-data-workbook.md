@@ -1,14 +1,14 @@
 ---
-title: "重新生成实时数据工作簿 |Microsoft 文档"
-ms.custom: 
+title: 重新生成实时数据工作簿 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bd3a3fa-a550-4363-bbc0-2153226509ad
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710580"
 ---
 # <a name="regenerate-the-live-data-workbook"></a><span data-ttu-id="0bbe3-102">重新生成实时数据工作簿</span><span class="sxs-lookup"><span data-stu-id="0bbe3-102">Regenerate the Live Data Workbook</span></span>
 <span data-ttu-id="0bbe3-103">在 BAM 实时数据工作簿丢失或损坏时，可使用 BAM 管理实用程序重新生成工作簿。</span><span class="sxs-lookup"><span data-stu-id="0bbe3-103">In cases where the BAM live data workbook has been lost or corrupted, you can regenerate the workbook using the BAM Management utiprolity.</span></span> <span data-ttu-id="0bbe3-104">从升级从以前的 BizTalk Server 版本时，此过程也是有用。</span><span class="sxs-lookup"><span data-stu-id="0bbe3-104">This process is also useful when you are upgrading from from previous BizTalk Server versions.</span></span>

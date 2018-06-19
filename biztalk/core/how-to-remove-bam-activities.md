@@ -1,11 +1,11 @@
 ---
-title: "如何删除 BAM 活动 |Microsoft 文档"
-ms.custom: 
+title: 如何删除 BAM 活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions], deleting activities
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deleting, activities [BAM]
 - Remove-Activity command [BAM]
 ms.assetid: 6c4643dc-84df-487d-aad0-590d1a6a5107
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973307"
 ---
 # <a name="how-to-remove-bam-activities"></a><span data-ttu-id="476dc-102">如何删除 BAM 活动</span><span class="sxs-lookup"><span data-stu-id="476dc-102">How to Remove BAM Activities</span></span>
 <span data-ttu-id="476dc-103">管理员使用**删除活动**命令从 BAM 主导入数据库中删除指定的活动。</span><span class="sxs-lookup"><span data-stu-id="476dc-103">Administrators use the **remove-activity** command to remove the specified activity from the BAM Primary Import database.</span></span>  

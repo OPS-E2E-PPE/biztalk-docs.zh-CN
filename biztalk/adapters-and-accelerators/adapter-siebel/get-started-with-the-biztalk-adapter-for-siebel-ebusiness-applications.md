@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222053"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="cc379-102">要开始使用用于 Siebel eBusiness Applications 的 BizTalk Adapter</span><span class="sxs-lookup"><span data-stu-id="cc379-102">Get started with the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="cc379-103">本部分提供的适配器、 先决条件和主题概述的用户的不熟悉 Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="cc379-103">This section provides an overview of the adapter, prerequisites, and topics for users who are new to the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="cc379-104">它讨论的功能[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]和可以在使用该适配器的 Siebel 系统执行不同操作。</span><span class="sxs-lookup"><span data-stu-id="cc379-104">It discusses the features of [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] and the different operations that can be performed on the Siebel system using the adapter.</span></span>  

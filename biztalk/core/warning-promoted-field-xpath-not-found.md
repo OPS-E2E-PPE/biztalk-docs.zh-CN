@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288525"
 ---
 # <a name="warning---promoted-field-xpath-not-found"></a><span data-ttu-id="aa322-102">警告-提升字段 XPath 找不到</span><span class="sxs-lookup"><span data-stu-id="aa322-102">Warning - Promoted Field XPath Not Found</span></span>
 <span data-ttu-id="aa322-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="aa322-103">**Error Code**</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "与使用的 WCF 服务的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 与使用的 WCF 服务的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - consuming, WCF services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, consuming [WCF services]
 ms.assetid: 0582ee26-b549-4b50-b365-36824010dab0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277485"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a><span data-ttu-id="99a19-102">SOAP 标头与使用的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="99a19-102">SOAP Headers with Consumed WCF Services</span></span>
 <span data-ttu-id="99a19-103">若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置在你的业务流程 （在表达式形状中，例如中） 和 （在代码中） 的管道组件中为上下文属性**OutboundCustomHeaders**。</span><span class="sxs-lookup"><span data-stu-id="99a19-103">To send a message to a WCF service with the custom SOAP headers, these headers must be set in your orchestrations (in the Expression shape, for example) and pipeline components (in code) as the context property **OutboundCustomHeaders**.</span></span> <span data-ttu-id="99a19-104">此上下文属性是目标命名空间中**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含的自定义 SOAP 标头的字符串表示形式。</span><span class="sxs-lookup"><span data-stu-id="99a19-104">This context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the custom SOAP headers.</span></span>  

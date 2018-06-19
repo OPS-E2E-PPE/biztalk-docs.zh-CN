@@ -1,11 +1,11 @@
 ---
-title: "如何设置 RTA 窗口上的持续时间 |Microsoft 文档"
-ms.custom: 
+title: 如何设置 RTA 窗口上的持续时间 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], aggregations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Set-RTAWindow command [BAM]
 - managing [BAM], time intervals
 ms.assetid: 3042c3f5-be0f-48fb-9831-daa4868b90fe
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971355"
 ---
 # <a name="how-to-set-the-duration-on-an-rta-window"></a><span data-ttu-id="3ad0c-102">如何设置 RTA 时段的持续时间</span><span class="sxs-lookup"><span data-stu-id="3ad0c-102">How to Set the Duration on an RTA Window</span></span>
 <span data-ttu-id="3ad0c-103">管理员使用**集 rtawindow**命令可设置为指定的实时聚合 (RTA) 持续时间。</span><span class="sxs-lookup"><span data-stu-id="3ad0c-103">Administrators use the **set-rtawindow** command to set the duration for the specified real-time aggregation (RTA).</span></span>  

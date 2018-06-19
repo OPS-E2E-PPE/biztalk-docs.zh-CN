@@ -1,11 +1,11 @@
 ---
-title: "如何使用多个部分消息类型 |Microsoft 文档"
-ms.custom: 
+title: 如何使用多个部分消息类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - multi-part message types, parts
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - creating, multi-part messages
 - messages, about messages
 ms.assetid: 009a39bd-cfc4-42d9-918c-88ac24bfc370
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972075"
 ---
 # <a name="how-to-use-multi-part-message-types"></a><span data-ttu-id="0e316-102">如何使用多个部分消息类型</span><span class="sxs-lookup"><span data-stu-id="0e316-102">How to Use Multi-part Message Types</span></span>
 <span data-ttu-id="0e316-103">每条消息都具有多部分消息类型，该消息类型描述由零个或多个消息部分构成的消息结构。</span><span class="sxs-lookup"><span data-stu-id="0e316-103">Each message has a multi-part message type, a description of the message structure that consists of zero or more message parts.</span></span> <span data-ttu-id="0e316-104">这些部分由 XML 架构定义 (XSD) 语言架构或 .NET 类定义。</span><span class="sxs-lookup"><span data-stu-id="0e316-104">The parts are defined by XML Schema Definition (XSD) language schemas or .NET classes.</span></span> <span data-ttu-id="0e316-105">您可以定义自己的多部分消息类型，或使用现有的 .NET 类和架构。</span><span class="sxs-lookup"><span data-stu-id="0e316-105">You can define your own multi-part message types, or you can use existing .NET classes and schemas.</span></span>  
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="0e316-127">属性</span><span class="sxs-lookup"><span data-stu-id="0e316-127">Property</span></span>|<span data-ttu-id="0e316-128">Description</span><span class="sxs-lookup"><span data-stu-id="0e316-128">Description</span></span>|  
     |--------------|-----------------|  
-    |<span data-ttu-id="0e316-129">**类型修饰符**</span><span class="sxs-lookup"><span data-stu-id="0e316-129">**Type Modifier**</span></span>|<span data-ttu-id="0e316-130">确定多部分消息类型的作用域：</span><span class="sxs-lookup"><span data-stu-id="0e316-130">Determines the scope of the multi-part message type:</span></span><br /><br /> <span data-ttu-id="0e316-131">-   **私有-**到这种多个部分的消息类型的访问仅限于包含模块。</span><span class="sxs-lookup"><span data-stu-id="0e316-131">-   **Private—**Access to this multi-part message type is limited to the containing module.</span></span><br /><span data-ttu-id="0e316-132">-   **公共 —**访问此多个部分消息类型不受限制。</span><span class="sxs-lookup"><span data-stu-id="0e316-132">-   **Public—**Access to this multi-part message type is not limited.</span></span><br /><span data-ttu-id="0e316-133">-   **内部 —**到这种多个部分的消息类型的访问仅限于同一项目中的模块。</span><span class="sxs-lookup"><span data-stu-id="0e316-133">-   **Internal—**Access to this multi-part message type is limited to modules within the same project.</span></span>|  
+    |<span data-ttu-id="0e316-129">**类型修饰符**</span><span class="sxs-lookup"><span data-stu-id="0e316-129">**Type Modifier**</span></span>|<span data-ttu-id="0e316-130">确定多部分消息类型的作用域：</span><span class="sxs-lookup"><span data-stu-id="0e316-130">Determines the scope of the multi-part message type:</span></span><br /><br /> <span data-ttu-id="0e316-131">-   **私有-** 到这种多个部分的消息类型的访问仅限于包含模块。</span><span class="sxs-lookup"><span data-stu-id="0e316-131">-   **Private—** Access to this multi-part message type is limited to the containing module.</span></span><br /><span data-ttu-id="0e316-132">-   **公共 —** 访问此多个部分消息类型不受限制。</span><span class="sxs-lookup"><span data-stu-id="0e316-132">-   **Public—** Access to this multi-part message type is not limited.</span></span><br /><span data-ttu-id="0e316-133">-   **内部 —** 到这种多个部分的消息类型的访问仅限于同一项目中的模块。</span><span class="sxs-lookup"><span data-stu-id="0e316-133">-   **Internal—** Access to this multi-part message type is limited to modules within the same project.</span></span>|  
   
 ## <a name="add-parts-to-an-existing-multi-part-message"></a><span data-ttu-id="0e316-134">将部件添加到现有的多个部分消息</span><span class="sxs-lookup"><span data-stu-id="0e316-134">Add parts to an existing multi-part message</span></span>  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="0e316-139">创建一个变量 (例如*xlangPart*) 类型的**Microsoft.XLANGs.BaseTypes.XLANGMessage**。</span><span class="sxs-lookup"><span data-stu-id="0e316-139">Create a variable (for example *xlangPart*) of type **Microsoft.XLANGs.BaseTypes.XLANGMessage**.</span></span>  
   
--   <span data-ttu-id="0e316-140">调用*xlangPart***。AddPart(...)**使用表达式形状从相应的参数。</span><span class="sxs-lookup"><span data-stu-id="0e316-140">Call *xlangPart***.AddPart(…)** using the appropriate arguments from an Expression shape.</span></span>  
+-   <span data-ttu-id="0e316-140">调用*xlangPart***。AddPart(...)** 使用表达式形状从相应的参数。</span><span class="sxs-lookup"><span data-stu-id="0e316-140">Call *xlangPart***.AddPart(…)** using the appropriate arguments from an Expression shape.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="0e316-141">添加的部件属于类型**XmlDocument**无法添加自定义格式的消息部分使用**AddPart()**方法。</span><span class="sxs-lookup"><span data-stu-id="0e316-141">The added parts are of type **XmlDocument** so you cannot add a custom formatted message part using the **AddPart()** method.</span></span>  
+    >  <span data-ttu-id="0e316-141">添加的部件属于类型**XmlDocument**无法添加自定义格式的消息部分使用**AddPart()** 方法。</span><span class="sxs-lookup"><span data-stu-id="0e316-141">The added parts are of type **XmlDocument** so you cannot add a custom formatted message part using the **AddPart()** method.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="0e316-142">如果收到包含大于的声明部分数多部分消息时，有多少个部分是在消息中，业务流程引擎读取然后构造中声明的消息的部件的数量匹配的部件的正确部件类型类型，然后构造**XmlDocument**部件的其余部分。</span><span class="sxs-lookup"><span data-stu-id="0e316-142">If a multi part message that contains greater than the number of declared parts is received, the orchestration engine reads how many parts there are in the message, then constructs the proper part types for the parts that match the number of parts in the declared message type and then constructs **XmlDocument** parts for the remaining parts.</span></span>  

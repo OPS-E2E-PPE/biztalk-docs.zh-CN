@@ -1,11 +1,11 @@
 ---
-title: "A4SWIFT Web 服务安全 |Microsoft 文档"
-ms.custom: 
+title: A4SWIFT Web 服务安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS security
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - security, Web service
 - messages, security
 ms.assetid: e6c7d275-569f-47f6-81fb-10bcd86ff417
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006470"
 ---
 # <a name="a4swift-web-service-security"></a><span data-ttu-id="3f663-102">A4SWIFT Web 服务安全性</span><span class="sxs-lookup"><span data-stu-id="3f663-102">A4SWIFT Web Service Security</span></span>
 <span data-ttu-id="3f663-103">[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]默认情况下的 Web 服务安装在高度安全的混合安全模型。</span><span class="sxs-lookup"><span data-stu-id="3f663-103">The [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]Web service by default is installed in a highly secure hybrid security model.</span></span> <span data-ttu-id="3f663-104">Web 服务之间存在信任边界 IIS/ASP.NET 模型中[!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)]站点，与[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]数据库。</span><span class="sxs-lookup"><span data-stu-id="3f663-104">In the IIS/ASP.NET model a trust boundary exists between the Web service, the [!INCLUDE[btsWinSharePointSvcsNoVersion](../../includes/btswinsharepointsvcsnoversion-md.md)] site, and the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]database.</span></span>  

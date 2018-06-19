@@ -1,14 +1,14 @@
 ---
-title: "据以加快负载测试 |Microsoft 文档"
-ms.custom: 
+title: 据以加快负载测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0d16d0a8-4255-4f5a-86a2-26cc11bb9a70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007655"
 ---
 # <a name="overdrive-load-test"></a><span data-ttu-id="d107f-102">Overdrive 负载测试</span><span class="sxs-lookup"><span data-stu-id="d107f-102">Overdrive Load Test</span></span>
 <span data-ttu-id="d107f-103">本主题中的信息是指中所述的测试[测试方案的引擎测量 MST](../core/test-scenarios-for-measuring-mst-of-the-engine.md)。</span><span class="sxs-lookup"><span data-stu-id="d107f-103">The information in this topic refers to the tests explained in [Test Scenarios for Measuring MST of the Engine](../core/test-scenarios-for-measuring-mst-of-the-engine.md).</span></span>  

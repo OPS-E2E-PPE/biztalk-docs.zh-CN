@@ -1,14 +1,14 @@
 ---
-title: "AS2 解码器过程中遇到异常处理 |Microsoft 文档"
-ms.custom: 
+title: AS2 解码器过程中遇到异常处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5f16d2e-e83c-4e2c-84be-41b5ed012dce
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278317"
 ---
 # <a name="the-as2-decoder-encountered-an-exception-during-processing"></a><span data-ttu-id="94dae-102">AS2 解码器在处理期间遇到异常</span><span class="sxs-lookup"><span data-stu-id="94dae-102">The AS2 Decoder encountered an exception during processing</span></span>
 ## <a name="details"></a><span data-ttu-id="94dae-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="94dae-103">Details</span></span>  

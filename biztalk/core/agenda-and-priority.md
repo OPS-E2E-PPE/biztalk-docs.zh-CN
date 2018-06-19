@@ -1,11 +1,11 @@
 ---
-title: "安排和优先级 |Microsoft 文档"
-ms.custom: 
+title: 安排和优先级 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, executing
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - examples, Business Rules Engine
 - Business Rules Engine, rules
 ms.assetid: ca54f750-4f2d-4734-8e6e-7af1b4967e6a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230205"
 ---
 # <a name="agenda-and-priority"></a><span data-ttu-id="c2724-102">议程和优先级</span><span class="sxs-lookup"><span data-stu-id="c2724-102">Agenda and Priority</span></span>
 <span data-ttu-id="c2724-103">若要了解业务规则引擎如何计算规则并执行操作，你需要了解的概念*安排*和*优先级*。</span><span class="sxs-lookup"><span data-stu-id="c2724-103">To understand how the Business Rule engine evaluates rules and executes actions, you need to understand the concepts of *agenda* and *priority*.</span></span>  

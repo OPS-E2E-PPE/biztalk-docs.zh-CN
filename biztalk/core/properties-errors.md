@@ -1,14 +1,14 @@
 ---
-title: "属性错误 |Microsoft 文档"
-ms.custom: 
+title: 属性错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d297db1a-352c-4e5a-b0aa-6edae8d74824
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265077"
 ---
 # <a name="properties-errors"></a><span data-ttu-id="04736-102">属性错误</span><span class="sxs-lookup"><span data-stu-id="04736-102">Properties Errors</span></span>
 <span data-ttu-id="04736-103">本部分包含有关诊断和解决 WCF 属性错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="04736-103">This section contains detailed information for diagnosing and resolving WCF Properties errors.</span></span>  

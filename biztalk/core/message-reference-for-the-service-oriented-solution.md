@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974787"
 ---
 # <a name="message-reference-for-the-service-oriented-solution"></a><span data-ttu-id="13eb2-102">服务的消息引用面向解决方案</span><span class="sxs-lookup"><span data-stu-id="13eb2-102">Message Reference for the Service Oriented Solution</span></span>
 <span data-ttu-id="13eb2-103">本部分列出了解决方案中每个业务流程使用的消息和消息类型。</span><span class="sxs-lookup"><span data-stu-id="13eb2-103">This section lists the messages and message types used by each orchestration in the solution.</span></span> <span data-ttu-id="13eb2-104">消息和类型按应用程序的版本列出。</span><span class="sxs-lookup"><span data-stu-id="13eb2-104">The messages and types are listed by version of the application.</span></span>  

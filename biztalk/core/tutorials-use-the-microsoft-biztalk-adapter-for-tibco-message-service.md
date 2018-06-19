@@ -1,14 +1,14 @@
 ---
-title: "教程： 使用 Microsoft BizTalk Adapter for TIBCO 企业消息服务 |Microsoft 文档"
-ms.custom: 
+title: 教程： 使用 Microsoft BizTalk Adapter for TIBCO 企业消息服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b0858be2-be0a-4bdc-8e34-140888a3cccc
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286501"
 ---
 # <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-enterprise-message-service"></a><span data-ttu-id="94e1b-102">教程： 使用 Microsoft BizTalk Adapter for TIBCO 企业消息服务</span><span class="sxs-lookup"><span data-stu-id="94e1b-102">Tutorials: Using the Microsoft BizTalk Adapter for TIBCO Enterprise Message Service</span></span>
 <span data-ttu-id="94e1b-103">用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器是用于行业过程管理和自动化的开发和运行时环境。</span><span class="sxs-lookup"><span data-stu-id="94e1b-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service is a development and run-time environment for line-of-business process management and automation.</span></span> <span data-ttu-id="94e1b-104">本部分介绍两个设置和部署适配器，以便你可以快速入门中存在一个端到端过程的 SDK 示例。</span><span class="sxs-lookup"><span data-stu-id="94e1b-104">This section describes two SDK samples that present an end-to-end exercise in setting up and deploying the adapter so that you can get a quick start.</span></span>  

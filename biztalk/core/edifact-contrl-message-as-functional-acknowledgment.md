@@ -1,14 +1,14 @@
 ---
-title: "作为功能确认的 EDIFACT CONTRL 消息 |Microsoft 文档"
-ms.custom: 
+title: 作为功能确认的 EDIFACT CONTRL 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d3c2be0-0993-4b2d-b6c3-286020117078
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007942"
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a><span data-ttu-id="16722-102">作为功能确认的 EDIFACT CONTRL 消息</span><span class="sxs-lookup"><span data-stu-id="16722-102">EDIFACT CONTRL Message as Functional Acknowledgment</span></span>
 <span data-ttu-id="16722-103">如果已在业务配置文件设置或贸易合作伙伴协议（或者两个业务配置文件间未定义任何协议，则为后备协议）中选择生成功能确认，或者如果消息中的 UNB9 字段设置为“1”，将会生成 CONTRL 消息作为功能确认 (ACK)。</span><span class="sxs-lookup"><span data-stu-id="16722-103">If you have selected to generate a functional acknowledgment in business profile settings or trading partner agreement (or fallback agreement if no agreement is defined between the two business profiles), or if the UNB9 field in the message is set to "1", a CONTRL message will be generated as a functional acknowledgment (ACK).</span></span> <span data-ttu-id="16722-104">此确认会报告交换的语法检查结果。</span><span class="sxs-lookup"><span data-stu-id="16722-104">This ACK reports the results of syntax checks of the interchange.</span></span>  

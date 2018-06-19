@@ -1,14 +1,14 @@
 ---
-title: "监视应用程序 |Microsoft 文档"
-ms.custom: 
+title: 监视应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4be98ba2-6acd-4dee-b6ea-db71bbd368f0
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008974"
 ---
 # <a name="monitoring-applications"></a><span data-ttu-id="f1eaa-102">监视应用程序</span><span class="sxs-lookup"><span data-stu-id="f1eaa-102">Monitoring Applications</span></span>
 <span data-ttu-id="f1eaa-103">设置 Microsoft System Center Operations Manager 来监视 BizTalk 应用程序通常可以分为渐进式四个步骤，如下所示：</span><span class="sxs-lookup"><span data-stu-id="f1eaa-103">Setting up Microsoft System Center Operations Manager to monitor BizTalk applications typically can be broken down into a progressive four-step process as follows:</span></span>  

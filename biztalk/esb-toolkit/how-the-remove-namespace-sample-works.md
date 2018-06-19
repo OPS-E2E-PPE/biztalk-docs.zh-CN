@@ -1,14 +1,14 @@
 ---
-title: "删除 Namespace 示例的工作原理 |Microsoft 文档"
-ms.custom: 
+title: 删除 Namespace 示例的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf5834b4-e0fd-4180-9d15-4cdd99f0f353
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294517"
 ---
 # <a name="how-the-remove-namespace-sample-works"></a><span data-ttu-id="14e6a-102">删除 Namespace 示例的工作原理</span><span class="sxs-lookup"><span data-stu-id="14e6a-102">How the Remove Namespace Sample Works</span></span>
 <span data-ttu-id="14e6a-103">第二个和第三个测试使用**删除 Namespace**组件位于**NamespaceSampleSendPipeline**管道。</span><span class="sxs-lookup"><span data-stu-id="14e6a-103">The second and third tests use the **Remove Namespace** component located in the **NamespaceSampleSendPipeline** pipeline.</span></span> <span data-ttu-id="14e6a-104">它将作为输入具有上的根节点，如下所示的命名空间的文档：</span><span class="sxs-lookup"><span data-stu-id="14e6a-104">It takes as input a document with a namespace on the root node, such as the following:</span></span>  

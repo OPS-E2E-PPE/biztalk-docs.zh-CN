@@ -1,11 +1,11 @@
 ---
-title: "Windows 组和 BizTalk Server 中的用户帐户 |Microsoft 文档"
-ms.custom: 
+title: Windows 组和 BizTalk Server 中的用户帐户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, BTS_ADMIN_USERS role [SQL Server database]
@@ -81,7 +81,7 @@ helpviewer_keywords:
 - BAM Portal Users [Windows group]
 - Notification Services Application database [BAM], NSAdmin role [SQL Server database]
 ms.assetid: a01603bd-4105-4691-819d-de43b00b40f3
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -90,6 +90,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976099"
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a><span data-ttu-id="d1a02-102">BizTalk Server 中的 Windows 组和用户帐户</span><span class="sxs-lookup"><span data-stu-id="d1a02-102">Windows Groups and User Accounts in BizTalk Server</span></span>
 <span data-ttu-id="d1a02-103">有关 BizTalk Server 本地和域组和用户帐户的信息。</span><span class="sxs-lookup"><span data-stu-id="d1a02-103">Information about BizTalk Server local and domain group and user accounts.</span></span> <span data-ttu-id="d1a02-104">如果在单台计算机上安装了 BizTalk Server 和所有必备软件，则默认情况下配置管理器将为你创建必需的 BizTalk 组帐户。</span><span class="sxs-lookup"><span data-stu-id="d1a02-104">The Configuration Manager creates the necessary BizTalk group accounts for you by default if you install BizTalk Server and all prerequisite software on a single computer.</span></span> <span data-ttu-id="d1a02-105">本部分中包含的信息适用于多计算机拓扑结构。</span><span class="sxs-lookup"><span data-stu-id="d1a02-105">The information contained in this section applies to multiple computer topologies.</span></span>  

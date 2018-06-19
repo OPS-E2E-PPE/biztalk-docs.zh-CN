@@ -1,18 +1,18 @@
 ---
-title: "SMTP 适配器安全建议 |Microsoft 文档"
-ms.custom: 
+title: SMTP 适配器安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SMTP adapters], security
 - SMTP adapters, security
 - security, SMTP adapters
 ms.assetid: 45f13744-a0eb-4b4e-85cd-6b862b384ad5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276493"
 ---
 # <a name="smtp-adapter-security-recommendations"></a><span data-ttu-id="e6263-102">SMTP 适配器安全建议</span><span class="sxs-lookup"><span data-stu-id="e6263-102">SMTP Adapter Security Recommendations</span></span>
 <span data-ttu-id="e6263-103">使用 SMTP 适配器可以在运行 BizTalk Server 的服务器与其他应用程序之间通过简单邮件传输协议 (SMTP) 协议进行信息交换。</span><span class="sxs-lookup"><span data-stu-id="e6263-103">You use the SMTP adapter to exchange information between a server running BizTalk Server and other applications by means of the Simple Mail Transfer Protocol (SMTP) protocol.</span></span> <span data-ttu-id="e6263-104">BizTalk Server 可以通过创建电子邮件并将其发送到指定的电子邮件地址来向其他应用程序发送消息。</span><span class="sxs-lookup"><span data-stu-id="e6263-104">BizTalk Server can send messages to other applications by creating an e-mail message and delivering it to a specified e-mail address.</span></span> <span data-ttu-id="e6263-105">只能将 SMTP 适配器用于发送消息。</span><span class="sxs-lookup"><span data-stu-id="e6263-105">You can use the SMTP adapter only for sending messages.</span></span> <span data-ttu-id="e6263-106">有关 SMTP 适配器的详细信息，请参阅[SMTP 适配器](../core/smtp-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="e6263-106">For more information about the SMTP adapter, see [SMTP Adapter](../core/smtp-adapter.md).</span></span>  

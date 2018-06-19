@@ -1,17 +1,17 @@
 ---
-title: "HTTPSolicitResponse |Microsoft 文档"
-ms.custom: 
+title: HTTPSolicitResponse |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: b149544e-3279-4ac9-b31f-fff3e41ec8e7
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973123"
 ---
 # <a name="httpsolicitresponse"></a><span data-ttu-id="5b4e3-102">HTTPSolicitResponse</span><span class="sxs-lookup"><span data-stu-id="5b4e3-102">HTTPSolicitResponse</span></span>
 <span data-ttu-id="5b4e3-103">HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用 ASP.NET 应用程序以帮助处理 orchestration 数据的业务流程。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-103">The HTTPSolicitResponse sample demonstrates how to create a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration that leverages an ASP.NET application to help process orchestration data.</span></span> <span data-ttu-id="5b4e3-104">在本示例中，业务流程利用请求/响应端口将消息发送到 ASP.NET 应用程序以及检索响应。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-104">In this sample, the orchestration makes use of a request/response port to send a message to the ASP.NET application and to retrieve the response.</span></span> <span data-ttu-id="5b4e3-105">使用 HTTP 适配器，您可以在 BizTalk Server 业务流程和 ASP.NET 应用程序之间实现集成。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-105">You achieve the integration between the BizTalk Server orchestration and the ASP.NET application by using the HTTP adapter.</span></span> <span data-ttu-id="5b4e3-106">有关详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-106">For more information, see [HTTP Adapter](../core/http-adapter.md).</span></span>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
     -   <span data-ttu-id="5b4e3-145">编译并配置本示例使用的 ASP.NET 应用程序。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-145">Compiles and configures the multiplier ASP.NET application used by this sample.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="5b4e3-146">在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本**.Net Framework v4.0**。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-146">While creating application pool in IIS Manager, set the **DefaultAppPool** .NET Framework version to **.Net Framework v4.0**.</span></span>  
+        >  <span data-ttu-id="5b4e3-146">在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本 **.Net Framework v4.0**。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-146">While creating application pool in IIS Manager, set the **DefaultAppPool** .NET Framework version to **.Net Framework v4.0**.</span></span>  
   
     -   <span data-ttu-id="5b4e3-147">编译并部署本示例中使用的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。</span><span class="sxs-lookup"><span data-stu-id="5b4e3-147">Compiles and deploys the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration used in this sample.</span></span>  
   

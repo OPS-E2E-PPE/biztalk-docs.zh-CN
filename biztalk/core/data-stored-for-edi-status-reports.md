@@ -1,14 +1,14 @@
 ---
-title: "对于 EDI 状态报表存储的数据 |Microsoft 文档"
-ms.custom: 
+title: 对于 EDI 状态报表存储的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec66e4d7-2694-499f-a60c-2f80fe643e12
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970619"
 ---
 # <a name="data-stored-for-edi-status-reports"></a><span data-ttu-id="38abe-102">为 EDI 状态报告存储的数据</span><span class="sxs-lookup"><span data-stu-id="38abe-102">Data Stored for EDI Status Reports</span></span>
 <span data-ttu-id="38abe-103">在 EDI 状态报告提供了两个级别的报告： 首先如果**打开 ON Reporting**属性选择一个协议，并且第二个如果**存储事务集/负载 reporting**属性为协议选择。</span><span class="sxs-lookup"><span data-stu-id="38abe-103">Two levels of reporting are available in EDI status reporting: the first if the **Turn ON Reporting** property is selected for an agreement, and the second if the **Store transaction set/payload reporting** property is selected for an agreement.</span></span> <span data-ttu-id="38abe-104">这些属性位于**常规属性**页**常规**选项卡中**协议属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="38abe-104">These properties are available in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="38abe-154">TransactionSetStatus</span><span class="sxs-lookup"><span data-stu-id="38abe-154">TransactionSetStatus</span></span>|<span data-ttu-id="38abe-155">“已接受”、“已接受但存在错误”或者“已拒绝”</span><span class="sxs-lookup"><span data-stu-id="38abe-155">Accepted, AcceptedWithError, or Rejected</span></span>|  
 |<span data-ttu-id="38abe-156">方向</span><span class="sxs-lookup"><span data-stu-id="38abe-156">Direction</span></span>|<span data-ttu-id="38abe-157">发送或接收</span><span class="sxs-lookup"><span data-stu-id="38abe-157">Send or Receive</span></span>|  
 |<span data-ttu-id="38abe-158">BtsProcessingTime</span><span class="sxs-lookup"><span data-stu-id="38abe-158">BtsProcessingTime</span></span>|<span data-ttu-id="38abe-159">在接收端：管道中添加的时间戳 BTSReceiveTime（本地时间）</span><span class="sxs-lookup"><span data-stu-id="38abe-159">On receive side: BTSReceiveTime (local time) as stamped in the Pipeline</span></span><br /><br /> <span data-ttu-id="38abe-160">在发送端：ASM 组件在信封上添加的时间戳 BTSSendTime（本地时间）</span><span class="sxs-lookup"><span data-stu-id="38abe-160">On send side: BTSSendTime as (local time) stamped on the envelope by the ASM component</span></span>|  
-|<span data-ttu-id="38abe-161">BTS.MessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-161">BTS.MessageId</span></span>|<span data-ttu-id="38abe-162">在接收端：来自消息属性的 BTSMessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-162">On receive side: BTSMessageId from message properties</span></span><br /><br /> <span data-ttu-id="38abe-163">在发送端：</span><span class="sxs-lookup"><span data-stu-id="38abe-163">On send side:</span></span><br /><br /> <span data-ttu-id="38abe-164">对于单个事务集：BTSMessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-164">For single Transaction Set: BTSMessageId</span></span><br /><br /> <span data-ttu-id="38abe-165">对于出站批： 为每个批次 (不是批处理消息 BTSMessageId) 中的单个消息 TransactionSet BTSMessageId**注意：**存储仅 – 将不会显示在 UI 中。</span><span class="sxs-lookup"><span data-stu-id="38abe-165">For outbound batch: TransactionSet BTSMessageId for each individual message in batch (not the BTSMessageId for the batch message) **Note:**  Storage only – will not be displayed in UI.</span></span>|  
+|<span data-ttu-id="38abe-161">BTS.MessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-161">BTS.MessageId</span></span>|<span data-ttu-id="38abe-162">在接收端：来自消息属性的 BTSMessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-162">On receive side: BTSMessageId from message properties</span></span><br /><br /> <span data-ttu-id="38abe-163">在发送端：</span><span class="sxs-lookup"><span data-stu-id="38abe-163">On send side:</span></span><br /><br /> <span data-ttu-id="38abe-164">对于单个事务集：BTSMessageId</span><span class="sxs-lookup"><span data-stu-id="38abe-164">For single Transaction Set: BTSMessageId</span></span><br /><br /> <span data-ttu-id="38abe-165">对于出站批： 为每个批次 (不是批处理消息 BTSMessageId) 中的单个消息 TransactionSet BTSMessageId**注意：** 存储仅 – 将不会显示在 UI 中。</span><span class="sxs-lookup"><span data-stu-id="38abe-165">For outbound batch: TransactionSet BTSMessageId for each individual message in batch (not the BTSMessageId for the batch message) **Note:**  Storage only – will not be displayed in UI.</span></span>|  
   
 ## <a name="see-also"></a><span data-ttu-id="38abe-166">另请参阅</span><span class="sxs-lookup"><span data-stu-id="38abe-166">See Also</span></span>  
  <span data-ttu-id="38abe-167">[对于 EDI 和 AS2 状态报表存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md) </span><span class="sxs-lookup"><span data-stu-id="38abe-167">[Data Stored for EDI and AS2 Status Reports](../core/data-stored-for-edi-and-as2-status-reports.md) </span></span>  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014004"
 ---
 # <a name="jd-edwards-enterpriseone-transport-properties-dialog-box"></a><span data-ttu-id="ae766-102">“JD Edwards EnterpriseOne 传输属性”对话框</span><span class="sxs-lookup"><span data-stu-id="ae766-102">JD Edwards EnterpriseOne Transport Properties Dialog Box</span></span>
 <span data-ttu-id="ae766-103">使用 JD Edwards EnterpriseOne 的“传输属性”对话框可设置适配器所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ae766-103">Use the JD Edwards EnterpriseOne Transport Properties dialog box to set the adapter-required properties.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "处理在发送端口上的 Edifact 消息时出现故障： 同名否方 |Microsoft 文档"
-ms.custom: 
+title: 处理在发送端口上的 Edifact 消息时出现故障： 同名否方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 678baacb-1f21-4081-b788-ef346c3598ca
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005150"
 ---
 # <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-party-with-name"></a><span data-ttu-id="d98b7-102">处理在发送端口上的 Edifact 消息时出现故障： 同名否方</span><span class="sxs-lookup"><span data-stu-id="d98b7-102">A failure occurred in processing Edifact message on send port: No Party with name</span></span>
 ## <a name="details"></a><span data-ttu-id="d98b7-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d98b7-103">Details</span></span>  

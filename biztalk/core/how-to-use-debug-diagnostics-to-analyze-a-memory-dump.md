@@ -1,14 +1,14 @@
 ---
-title: "如何使用调试诊断分析内存转储 |Microsoft 文档"
-ms.custom: 
+title: 如何使用调试诊断分析内存转储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 986a91a7-feab-4014-bbd5-e8b966b8b841
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256597"
 ---
 # <a name="how-to-use-debug-diagnostics-to-analyze-a-memory-dump"></a><span data-ttu-id="d0b67-102">如何使用调试诊断分析内存转储</span><span class="sxs-lookup"><span data-stu-id="d0b67-102">How to Use Debug Diagnostics to Analyze a Memory Dump</span></span>
 <span data-ttu-id="d0b67-103">IIS 诊断**调试诊断工具**包括可以提供捕获的内存转储文件的基本分析的功能。</span><span class="sxs-lookup"><span data-stu-id="d0b67-103">The IIS Diagnostics **Debug Diagnostics Tool** includes a feature that can provide a basic analysis of a captured memory dump file.</span></span> <span data-ttu-id="d0b67-104">若要执行的内存转储文件分析，请按照下列步骤。</span><span class="sxs-lookup"><span data-stu-id="d0b67-104">To perform an analysis of a memory dump file follow these steps.</span></span>  

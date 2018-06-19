@@ -1,14 +1,14 @@
 ---
-title: "安装路线上负载增加示例 |Microsoft 文档"
-ms.custom: 
+title: 安装路线上负载增加示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebe08b84-dc12-4501-8677-15a32e4795a3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294397"
 ---
 # <a name="installing-the-itinerary-on-ramp-sample"></a><span data-ttu-id="a3253-102">安装路线上负载增加示例</span><span class="sxs-lookup"><span data-stu-id="a3253-102">Installing the Itinerary On-Ramp Sample</span></span>
 <span data-ttu-id="a3253-103">路线入口示例依赖于[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心解决方案、 动态解析示例中和解析程序服务示例。</span><span class="sxs-lookup"><span data-stu-id="a3253-103">The Itinerary On-Ramp sample depends on the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core solution, the Dynamic Resolution sample, and the Resolver Service sample.</span></span> <span data-ttu-id="a3253-104">安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心自动将复制和安装此示例为正确的位置所需的核心程序集。</span><span class="sxs-lookup"><span data-stu-id="a3253-104">Installing the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core automatically copies and installs the core assemblies required by this sample to the correct locations.</span></span> <span data-ttu-id="a3253-105">安装动态解析示例和解析程序服务示例可确保，Web 服务和业务规则引擎策略路线上负载增加示例使用正确安装和配置。</span><span class="sxs-lookup"><span data-stu-id="a3253-105">Installing the Dynamic Resolution sample and Resolver Service sample ensures that the Web services and Business Rules Engine policies used by the Itinerary On-Ramp Sample are correctly installed and configured.</span></span>  

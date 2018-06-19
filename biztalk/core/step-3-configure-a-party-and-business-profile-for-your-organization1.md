@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 为你 Organization1 配置方和业务配置文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 为你 Organization1 配置方和业务配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 849e5146-a82a-41f2-bb96-089841b2444d
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276533"
 ---
 # <a name="step-3-configure-a-party-and-business-profile-for-your-organization"></a><span data-ttu-id="14b86-102">步骤 3： 为你的组织配置方和业务配置文件</span><span class="sxs-lookup"><span data-stu-id="14b86-102">Step 3: Configure a Party and Business Profile for Your Organization</span></span>
 <span data-ttu-id="14b86-103">![步骤 3 中 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span><span class="sxs-lookup"><span data-stu-id="14b86-103">![Step 3 of 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")</span></span>  

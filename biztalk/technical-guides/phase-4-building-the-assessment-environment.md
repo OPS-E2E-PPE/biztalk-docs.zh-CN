@@ -1,14 +1,14 @@
 ---
-title: "阶段 4： 构建评估环境 |Microsoft 文档"
-ms.custom: 
+title: 阶段 4： 构建评估环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b90d7c5-60ca-4a81-b3d9-6d4e9d91e684
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008670"
 ---
 # <a name="phase-4-building-the-assessment-environment"></a><span data-ttu-id="0b762-102">阶段 4： 构建评估环境</span><span class="sxs-lookup"><span data-stu-id="0b762-102">Phase 4: Building the Assessment Environment</span></span>
 <span data-ttu-id="0b762-103">性能评估的生成实验室阶段用于安装的硬件和软件的环境中符合在前几个阶段中做出的设计决策。</span><span class="sxs-lookup"><span data-stu-id="0b762-103">The Build lab phase of a performance assessment is used to install the hardware and software for the environment in conformance to the design decisions made in previous phases.</span></span> <span data-ttu-id="0b762-104">在生成实验室阶段可能会非常耗时，因为它不是异常这一阶段重叠早期阶段。</span><span class="sxs-lookup"><span data-stu-id="0b762-104">Because the Build lab phase can be time consuming, it is not unusual for this phase to overlap earlier phases.</span></span> <span data-ttu-id="0b762-105">在许多情况下，硬件和操作系统可能安装之前应用程序体系结构并做出最终的决策。</span><span class="sxs-lookup"><span data-stu-id="0b762-105">In many scenarios, the hardware and operating system may be installed before a final decision has been made as to the application architecture.</span></span> <span data-ttu-id="0b762-106">性能评估的生成实验室阶段通常包括本主题中讨论的任务。</span><span class="sxs-lookup"><span data-stu-id="0b762-106">The Build lab phase of a performance assessment typically includes the tasks discussed in this topic.</span></span>  

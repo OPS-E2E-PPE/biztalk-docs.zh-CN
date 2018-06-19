@@ -1,14 +1,14 @@
 ---
-title: "设计器扩展性示例的工作原理 |Microsoft 文档"
-ms.custom: 
+title: 设计器扩展性示例的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f4dc622-28b8-498d-961f-df969cff9dcb
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975868"
 ---
 # <a name="how-the-designer-extensibility-sample-works"></a><span data-ttu-id="45bce-102">设计器扩展性示例的工作原理</span><span class="sxs-lookup"><span data-stu-id="45bce-102">How the Designer Extensibility Sample Works</span></span>
 <span data-ttu-id="45bce-103">在设计器扩展性示例的每个项目包含两个类：**扩展程序**类和**扩展提供程序**类。</span><span class="sxs-lookup"><span data-stu-id="45bce-103">Each project in the Designer Extensibility sample contains two classes: an **Extender** class and an **Extension Provider** class.</span></span> <span data-ttu-id="45bce-104">这些类设计用于扩展功能，并定义属性的**ItineraryDsl**模型元素。</span><span class="sxs-lookup"><span data-stu-id="45bce-104">These classes are designed to extend the capabilities and define the properties of the **ItineraryDsl** model elements.</span></span>  

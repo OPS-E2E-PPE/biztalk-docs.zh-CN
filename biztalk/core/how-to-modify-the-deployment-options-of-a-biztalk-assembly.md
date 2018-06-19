@@ -1,11 +1,11 @@
 ---
-title: "如何修改 BizTalk 程序集的部署选项 |Microsoft 文档"
-ms.custom: 
+title: 如何修改 BizTalk 程序集的部署选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - modifying, deploying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [assemblies], deploying
 - assemblies, deploying
 ms.assetid: d25e2f71-08bd-4786-ab6c-35ae4e88b8cc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007750"
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a><span data-ttu-id="a44d5-102">如何修改 BizTalk 程序集的部署选项</span><span class="sxs-lookup"><span data-stu-id="a44d5-102">How to Modify the Deployment Options of a BizTalk Assembly</span></span>
 <span data-ttu-id="a44d5-103">本主题介绍如何使用 BizTalk Server 管理控制台修改 BizTalk 程序集的部署选项。</span><span class="sxs-lookup"><span data-stu-id="a44d5-103">This topic describes how to use the BizTalk Server Administration console to modify the deployment options of a BizTalk assembly.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 -   <span data-ttu-id="a44d5-111">**将添加到 MSI 文件安装 (gacutil) 上的全局程序集缓存。**</span><span class="sxs-lookup"><span data-stu-id="a44d5-111">**Add to the global assembly cache on MSI file install (gacutil).**</span></span> <span data-ttu-id="a44d5-112">从 .msi 文件安装应用程序时将程序集安装到本地计算机的 GAC 中。</span><span class="sxs-lookup"><span data-stu-id="a44d5-112">Install the assembly to the GAC on the local computer when the application is installed from the .msi file.</span></span>  
   
--   <span data-ttu-id="a44d5-113">**目标位置：**时安装的应用程序，则将复制到此程序集文件的路径。</span><span class="sxs-lookup"><span data-stu-id="a44d5-113">**Destination location:** Path to which the assembly file will be copied when the application is installed.</span></span> <span data-ttu-id="a44d5-114">如果不提供此路径，则在安装过程中，该程序集文件将不会被复制到本地文件系统。</span><span class="sxs-lookup"><span data-stu-id="a44d5-114">If a path is not provided, the assembly file is not copied to the local file system on installation.</span></span>  
+-   <span data-ttu-id="a44d5-113">**目标位置：** 时安装的应用程序，则将复制到此程序集文件的路径。</span><span class="sxs-lookup"><span data-stu-id="a44d5-113">**Destination location:** Path to which the assembly file will be copied when the application is installed.</span></span> <span data-ttu-id="a44d5-114">如果不提供此路径，则在安装过程中，该程序集文件将不会被复制到本地文件系统。</span><span class="sxs-lookup"><span data-stu-id="a44d5-114">If a path is not provided, the assembly file is not copied to the local file system on installation.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="a44d5-115">先决条件</span><span class="sxs-lookup"><span data-stu-id="a44d5-115">Prerequisites</span></span>  
  <span data-ttu-id="a44d5-116">若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="a44d5-116">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="a44d5-117">此外，如果您选择立即将程序集添加到 GAC 中的选项，则您的帐户必须也是本地管理员组的成员。</span><span class="sxs-lookup"><span data-stu-id="a44d5-117">In addition, if you select an option that immediately adds the assembly to the GAC, your account must also be a member of the local Administrator's group.</span></span> <span data-ttu-id="a44d5-118">有关更多详细权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="a44d5-118">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  

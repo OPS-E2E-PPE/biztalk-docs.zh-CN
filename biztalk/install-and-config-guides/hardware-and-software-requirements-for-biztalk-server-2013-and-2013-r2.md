@@ -1,15 +1,15 @@
 ---
-title: "硬件和软件要求 BizTalk Server 2013 和 2013 R2 |Microsoft 文档"
-description: "必备软件和支持的版本中列出了安装 BizTalk Server 2013 和 2013 R2"
-ms.custom: 
+title: 硬件和软件要求 BizTalk Server 2013 和 2013 R2 |Microsoft 文档
+description: 必备软件和支持的版本中列出了安装 BizTalk Server 2013 和 2013 R2
+ms.custom: ''
 ms.date: 10/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b15dd23c-c899-43fb-b2da-f8ac55c055bf
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 85e816bcdeb3d66ea5018cf88aea7059f74f7d80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/10/2017
+ms.locfileid: "22627602"
 ---
 # <a name="hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2"></a><span data-ttu-id="a62a6-103">BizTalk Server 2013 和 2013 R2 的硬件和软件要求</span><span class="sxs-lookup"><span data-stu-id="a62a6-103">Hardware and Software Requirements for BizTalk Server 2013 and 2013 R2</span></span>
 <span data-ttu-id="a62a6-104">本主题列出了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 和 [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] 要求。</span><span class="sxs-lookup"><span data-stu-id="a62a6-104">This topic lists the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 and [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] requirements.</span></span>  

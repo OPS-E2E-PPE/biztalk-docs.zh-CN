@@ -1,11 +1,11 @@
 ---
-title: "示例业务方案 |Microsoft 文档"
-ms.custom: 
+title: 示例业务方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, business example
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - health care organizations, business example
 - business processes, example
 ms.assetid: 54bfbe45-4638-4488-bbd8-c642926a35d3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004798"
 ---
 # <a name="sample-business-scenario"></a><span data-ttu-id="26890-102">示例业务方案</span><span class="sxs-lookup"><span data-stu-id="26890-102">Sample Business Scenario</span></span>
 <span data-ttu-id="26890-103">卫生保健进程通常很复杂且涉及许多系统。</span><span class="sxs-lookup"><span data-stu-id="26890-103">Health care processes are often complex and involve many systems.</span></span> <span data-ttu-id="26890-104">一个示例是一个患者进入医院时发生的过程并医生发送实验室测试将患者。</span><span class="sxs-lookup"><span data-stu-id="26890-104">An example is the process that occurs when a patient enters a hospital, and a physician sends the patient for a lab test.</span></span> <span data-ttu-id="26890-105">在此过程中涉及是五个方：</span><span class="sxs-lookup"><span data-stu-id="26890-105">Involved in this procedure are five parties:</span></span>  

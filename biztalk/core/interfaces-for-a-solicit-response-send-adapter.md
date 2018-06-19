@@ -1,14 +1,14 @@
 ---
-title: "发送的请求作出响应的接口适配器 |Microsoft 文档"
-ms.custom: 
+title: 发送的请求作出响应的接口适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c54650e8-dbfb-4c66-843b-0b82c8183dd4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257597"
 ---
 # <a name="interfaces-for-a-solicit-response-send-adapter"></a><span data-ttu-id="aee4b-102">用于要求响应发送适配器的接口</span><span class="sxs-lookup"><span data-stu-id="aee4b-102">Interfaces for a Solicit-Response Send Adapter</span></span>
 <span data-ttu-id="aee4b-103">发送适配器与接收适配器使用相同的批处理机制将响应消息提交回服务器中。</span><span class="sxs-lookup"><span data-stu-id="aee4b-103">Send adapters use the same batch mechanism as receive adapters to submit response messages back into the server.</span></span>  

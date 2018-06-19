@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Event Tracing for Windows, components
 - BTAPeopleSoftTrace command
 ms.assetid: 330ef84b-5e2a-4b79-85a9-72271eb489d2
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973547"
 ---
 # <a name="using-event-tracing-for-windows"></a><span data-ttu-id="83ddc-102">使用适用于 Windows 跟踪的事件</span><span class="sxs-lookup"><span data-stu-id="83ddc-102">Using Event Tracing for Windows</span></span>
 <span data-ttu-id="83ddc-103">Microsoft BizTalk Adapter for PeopleSoft 企业将错误、 警告和信息消息记录到 Windows 事件查看器。</span><span class="sxs-lookup"><span data-stu-id="83ddc-103">Microsoft BizTalk Adapter for PeopleSoft Enterprise logs error, warning, and information messages to the Windows Event Viewer.</span></span> <span data-ttu-id="83ddc-104">使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。</span><span class="sxs-lookup"><span data-stu-id="83ddc-104">You can see additional tracing messages by using the Event Tracing for Windows (ETW) tool.</span></span> <span data-ttu-id="83ddc-105">如果启用 ETW，将创建一个 \*.etl 文件以接收消息。</span><span class="sxs-lookup"><span data-stu-id="83ddc-105">When ETW is enabled, it creates an \*.etl file to receive the messages.</span></span> <span data-ttu-id="83ddc-106">该文件为二进制格式，必须经过转换才能进行读取。</span><span class="sxs-lookup"><span data-stu-id="83ddc-106">The file is in binary format and must be converted to be read.</span></span> <span data-ttu-id="83ddc-107">若要执行此操作必须提供要解释的使用者应用程序 \*.etl 文件; 例如，tracerpt.exe 或 tracedmp.exe。</span><span class="sxs-lookup"><span data-stu-id="83ddc-107">To do this you must have a consumer application available to interpret the \*.etl file; for example, tracerpt.exe or tracedmp.exe.</span></span>  
@@ -53,15 +54,15 @@ ms.lasthandoff: 03/28/2018
   
  <span data-ttu-id="83ddc-124">用于 PeopleSoft Enterprise 的 BizTalk 适配器具有五个提供程序，从而允许您记录不同种类的消息：</span><span class="sxs-lookup"><span data-stu-id="83ddc-124">BizTalk Adapter for PeopleSoft Enterprise has five providers, allowing you to log different kinds of messages:</span></span>  
   
--   <span data-ttu-id="83ddc-125">**接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-125">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
+-   <span data-ttu-id="83ddc-125">**接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-125">**Receiver Logging Provider**: The \<Trace element\> switch is **-receiver**.</span></span>  
   
--   <span data-ttu-id="83ddc-126">**接收方 CastDetails 提供程序**:\<跟踪元素\>交换机**-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-126">**Receiver CastDetails Provider**: The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
+-   <span data-ttu-id="83ddc-126">**接收方 CastDetails 提供程序**:\<跟踪元素\>交换机 **-castDetailsReceive**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-126">**Receiver CastDetails Provider**: The \<Trace element\> switch is **-castDetailsReceive**.</span></span>  
   
--   <span data-ttu-id="83ddc-127">**发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-127">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span>  
+-   <span data-ttu-id="83ddc-127">**发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-127">**Transmitter Logging Provider**: The \<Trace element\> switch is **-transmitter**.</span></span>  
   
--   <span data-ttu-id="83ddc-128">**发送器 CastDetails 提供程序**:\<跟踪元素\>交换机**-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-128">**Transmitter CastDetails Provider**: The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
+-   <span data-ttu-id="83ddc-128">**发送器 CastDetails 提供程序**:\<跟踪元素\>交换机 **-castDetailsTransmit**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-128">**Transmitter CastDetails Provider**: The \<Trace element\> switch is **-castDetailsTransmit**.</span></span>  
   
--   <span data-ttu-id="83ddc-129">**管理日志记录提供程序**:\<跟踪元素\>交换机**-管理**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-129">**Management Logging Provider**: The \<Trace element\> switch is **-management**.</span></span>  
+-   <span data-ttu-id="83ddc-129">**管理日志记录提供程序**:\<跟踪元素\>交换机 **-管理**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-129">**Management Logging Provider**: The \<Trace element\> switch is **-management**.</span></span>  
   
 ## <a name="btapeoplesofttrace-command"></a><span data-ttu-id="83ddc-130">BTAPeopleSoftTrace 命令</span><span class="sxs-lookup"><span data-stu-id="83ddc-130">BTAPeopleSoftTrace Command</span></span>  
  <span data-ttu-id="83ddc-131">若要使用 ETW，请运行适配器命令 **BTAPeopleSoftTrace.cmd**。</span><span class="sxs-lookup"><span data-stu-id="83ddc-131">To use ETW, run the adapter command, **BTAPeopleSoftTrace.cmd**.</span></span> <span data-ttu-id="83ddc-132">如下所示使用此命令：</span><span class="sxs-lookup"><span data-stu-id="83ddc-132">You use this command as follows:</span></span>  

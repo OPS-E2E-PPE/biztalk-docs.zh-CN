@@ -1,11 +1,11 @@
 ---
-title: "如何部署 BAM 定义 |Microsoft 文档"
-ms.custom: 
+title: 如何部署 BAM 定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, definitions [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - definitions [BAM], deploying
 - Deploy-All command [BAM]
 ms.assetid: 02b8888c-6f6c-45dd-8445-6e507a02f5f0
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970731"
 ---
 # <a name="how-to-deploy-bam-definitions"></a><span data-ttu-id="c5dad-102">如何部署 BAM 定义</span><span class="sxs-lookup"><span data-stu-id="c5dad-102">How to Deploy BAM Definitions</span></span>
 <span data-ttu-id="c5dad-103">管理员使用**部署所有**BAM 管理实用工具命令以部署来自 Excel 工作簿或 XML 定义文件的 BAM 定义导出从工作簿。</span><span class="sxs-lookup"><span data-stu-id="c5dad-103">Administrators use the **deploy-all** BAM Management utility command to deploy a BAM definition from the Excel workbook or the XML definitions file exported from the workbook.</span></span> <span data-ttu-id="c5dad-104">当你执行的完整安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，配置向导将自动配置 BAM 配置 XML。</span><span class="sxs-lookup"><span data-stu-id="c5dad-104">When you perform a complete installation of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the Configuration Wizard automatically configures the BAM Configuration XML.</span></span>  

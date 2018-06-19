@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268533"
 ---
 # <a name="receivehandler-receivelocation-node"></a><span data-ttu-id="459c8-102">接收处理程序 （接收位置节点）</span><span class="sxs-lookup"><span data-stu-id="459c8-102">ReceiveHandler (ReceiveLocation Node)</span></span>
 <span data-ttu-id="459c8-103">绑定文件的 ReceiveLocation 节点的 ReceiveHandler 节点包含有关接收处理程序的特定信息，该接收处理程序与随同该绑定文件一起导出的传输相关联。</span><span class="sxs-lookup"><span data-stu-id="459c8-103">The ReceiveHandler node of the ReceiveLocation node of a binding file contains specific information about the receive handler associated with a transport that is exported with the binding file.</span></span>  

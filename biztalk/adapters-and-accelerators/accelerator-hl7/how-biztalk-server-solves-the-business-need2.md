@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Server 如何解决业务 Need2 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 如何解决业务 Need2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, BizTalk Server
 - BizTalk Server, BTAHL7
 ms.assetid: 8703a47e-337c-47a1-8b02-3fb94aa25aa2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004918"
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a><span data-ttu-id="9be59-102">BizTalk Server 如何解决的业务需要</span><span class="sxs-lookup"><span data-stu-id="9be59-102">How BizTalk Server Solves the Business Need</span></span>
 <span data-ttu-id="9be59-103">若要解决卫生保健系统的集成需要 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强的功能[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]卫生保健的系统的 BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="9be59-103">In order to solve your health care system integration needs, BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) enhances the functionality of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server for health care systems.</span></span>  

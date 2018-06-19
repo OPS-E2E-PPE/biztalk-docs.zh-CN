@@ -1,15 +1,15 @@
 ---
-title: "BizTalk web 服务测试 |Microsoft 文档"
-description: "配置接收位置和 web.config 以在 web 浏览器中测试 BizTalk web 服务"
-ms.custom: 
+title: BizTalk web 服务测试 |Microsoft 文档
+description: 配置接收位置和 web.config 以在 web 浏览器中测试 BizTalk web 服务
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dc2171d-4abe-43db-b4bc-e484048c6430
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26008846"
 ---
 # <a name="test-a-biztalk-web-service"></a><span data-ttu-id="426c2-103">BizTalk Web 服务测试</span><span class="sxs-lookup"><span data-stu-id="426c2-103">Test a BizTalk Web Service</span></span>
 

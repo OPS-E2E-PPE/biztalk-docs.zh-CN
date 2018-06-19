@@ -1,14 +1,14 @@
 ---
-title: "实例生成 |Microsoft 文档"
-ms.custom: 
+title: 实例生成 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 14060dca-5e14-474a-bf2c-4e8bc56e3c61
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257261"
 ---
 # <a name="instance-generation"></a><span data-ttu-id="f3650-102">生成实例</span><span class="sxs-lookup"><span data-stu-id="f3650-102">Instance Generation</span></span>
 <span data-ttu-id="f3650-103">BizTalk 编辑器时，将调用**IInstanceGenerator.GenerateInstance**满足以下条件时的扩展方法：</span><span class="sxs-lookup"><span data-stu-id="f3650-103">BizTalk Editor invokes the **IInstanceGenerator.GenerateInstance** method of an extension when the following conditions are met:</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "BAM BizTalk Server 中的端到端示例 |Microsoft 文档"
-description: "有关如何将来自多个组件在 BizTalk Server 中使用业务活动监视的事件相关联的方案"
-ms.custom: 
+title: BAM BizTalk Server 中的端到端示例 |Microsoft 文档
+description: 有关如何将来自多个组件在 BizTalk Server 中使用业务活动监视的事件相关联的方案
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81406038-7f3f-499f-a003-12423d92c44b
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009878"
 ---
 # <a name="bam-end-to-end-biztalk-server-sample"></a><span data-ttu-id="ff15b-103">BAM 端对端（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="ff15b-103">BAM End-to-End (BizTalk Server Sample)</span></span>
 <span data-ttu-id="ff15b-104">端到端示例演示如何通过使用 BAM 关联中 （在这种情况下，三个业务流程和管道） 的多个组件的事件。</span><span class="sxs-lookup"><span data-stu-id="ff15b-104">The End-to-End sample demonstrates how to correlate events from multiple components (in this case, three orchestrations and a pipeline) by using BAM.</span></span>  
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/01/2017
 
 <span data-ttu-id="ff15b-117">本示例的工作原理如下所示：</span><span class="sxs-lookup"><span data-stu-id="ff15b-117">The sample works as follows:</span></span>  
   
-1.  <span data-ttu-id="ff15b-118">从检索到输入的消息*\<示例路径\>*\BamEndToEnd\Input 文件夹。</span><span class="sxs-lookup"><span data-stu-id="ff15b-118">An input message is retrieved from the *\<Samples Path\>*\BamEndToEnd\Input folder.</span></span>  
+1.  <span data-ttu-id="ff15b-118">从检索到输入的消息*\<示例路径\>* \BamEndToEnd\Input 文件夹。</span><span class="sxs-lookup"><span data-stu-id="ff15b-118">An input message is retrieved from the *\<Samples Path\>* \BamEndToEnd\Input folder.</span></span>  
   
 2.  <span data-ttu-id="ff15b-119">管道组件向消息分配唯一的 DocumentID，然后使用 BAM API 开始一个新 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="ff15b-119">The pipeline component assigns a unique DocumentID to the message, and uses the BAM API to begin a new BAM activity.</span></span> <span data-ttu-id="ff15b-120">将此 DocumentID 作为此输入消息的一个单独部分附加，以使其可用于业务流程。</span><span class="sxs-lookup"><span data-stu-id="ff15b-120">The DocumentID is attached as a separate part of the input message to make it available to the orchestrations.</span></span>  
   
@@ -54,12 +55,12 @@ ms.lasthandoff: 12/01/2017
   
 5.  <span data-ttu-id="ff15b-123">Orchestration2 修改此输入消息，然后将其发送给 MessageBox 数据库，这便激活了 Orchestration3。</span><span class="sxs-lookup"><span data-stu-id="ff15b-123">Orchestration2 modifies the input message and sends it to the MessageBox database, which activates Orchestration3.</span></span>  
   
-6.  <span data-ttu-id="ff15b-124">Orchestration3 修改消息并将其写入文件夹*\<示例路径\>*\BamEndToEnd\Output。</span><span class="sxs-lookup"><span data-stu-id="ff15b-124">Orchestration3 modifies the message and writes it to the folder *\<Samples Path\>*\BamEndToEnd\Output.</span></span>  
+6.  <span data-ttu-id="ff15b-124">Orchestration3 修改消息并将其写入文件夹*\<示例路径\>* \BamEndToEnd\Output。</span><span class="sxs-lookup"><span data-stu-id="ff15b-124">Orchestration3 modifies the message and writes it to the folder *\<Samples Path\>* \BamEndToEnd\Output.</span></span>  
   
 7.  <span data-ttu-id="ff15b-125">每个业务流程都会更新 BAM 活动中的活动项。</span><span class="sxs-lookup"><span data-stu-id="ff15b-125">Each orchestration updates activity items in the BAM activity.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="ff15b-126">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="ff15b-126">Where to Find This Sample</span></span>  
- <span data-ttu-id="ff15b-127">你可以找到在此示例*\<示例路径\>*\BAM\BamEndToEnd。</span><span class="sxs-lookup"><span data-stu-id="ff15b-127">You can find this sample at *\<Samples Path\>*\BAM\BamEndToEnd.</span></span>  
+ <span data-ttu-id="ff15b-127">你可以找到在此示例*\<示例路径\>* \BAM\BamEndToEnd。</span><span class="sxs-lookup"><span data-stu-id="ff15b-127">You can find this sample at *\<Samples Path\>* \BAM\BamEndToEnd.</span></span>  
   
  <span data-ttu-id="ff15b-128">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="ff15b-128">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -101,11 +102,11 @@ ms.lasthandoff: 12/01/2017
   
 ##  <a name="To_Build_Sample"></a><span data-ttu-id="ff15b-186">生成并初始化此示例</span><span class="sxs-lookup"><span data-stu-id="ff15b-186">Build and initialize this sample</span></span>  
   
-1.  <span data-ttu-id="ff15b-187">打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BAMEndToEnd\Setup.bat。</span><span class="sxs-lookup"><span data-stu-id="ff15b-187">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BAMEndToEnd\Setup.bat.</span></span> <span data-ttu-id="ff15b-188">Setup.bat 为此示例生成并初始化 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="ff15b-188">Setup.bat builds and initializes the BAM infrastructure for this sample.</span></span> <span data-ttu-id="ff15b-189">保持命令提示符处于打开状态。</span><span class="sxs-lookup"><span data-stu-id="ff15b-189">Keep the command prompt open.</span></span>  
+1.  <span data-ttu-id="ff15b-187">打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\BAMEndToEnd\Setup.bat。</span><span class="sxs-lookup"><span data-stu-id="ff15b-187">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BAMEndToEnd\Setup.bat.</span></span> <span data-ttu-id="ff15b-188">Setup.bat 为此示例生成并初始化 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="ff15b-188">Setup.bat builds and initializes the BAM infrastructure for this sample.</span></span> <span data-ttu-id="ff15b-189">保持命令提示符处于打开状态。</span><span class="sxs-lookup"><span data-stu-id="ff15b-189">Keep the command prompt open.</span></span>  
   
 2.  <span data-ttu-id="ff15b-190">创建一个跟踪配置文件，以将 Orchestration1、Orchestration2 和 Orchestration3 映射到 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="ff15b-190">Create a tracking profile to map Orchestration1, Orchestration2, and Orchestration3 to the BAM activity.</span></span> <span data-ttu-id="ff15b-191">(由于创建跟踪配置文件是一个复杂的过程，在单独的过程调用了的详细的说明**创建跟踪配置文件**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-191">(Because creating the tracking profile is a complex process, the detailed instructions are in a separate procedure called **To create a tracking profile**.</span></span> <span data-ttu-id="ff15b-192">此过程位于本文档后面的部分中。）</span><span class="sxs-lookup"><span data-stu-id="ff15b-192">This procedure appears later in this document.)</span></span>  
   
-3.  <span data-ttu-id="ff15b-193">部署上一步中创建的跟踪配置文件 BamEndToEnd.btt。</span><span class="sxs-lookup"><span data-stu-id="ff15b-193">Deploy the tracking profile BamEndToEnd.btt that you created in the previous step.</span></span>  <span data-ttu-id="ff15b-194">在命令提示符将更改为*\<示例路径\>*\BAM\BamEndToEnd 目录。</span><span class="sxs-lookup"><span data-stu-id="ff15b-194">In the command prompt change to the *\<Samples Path\>*\BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="ff15b-195">若要部署的跟踪配置文件，请键入以下行，，然后按**Enter**:</span><span class="sxs-lookup"><span data-stu-id="ff15b-195">To deploy the tracking profile, type the following line, and then press **Enter**:</span></span>  
+3.  <span data-ttu-id="ff15b-193">部署上一步中创建的跟踪配置文件 BamEndToEnd.btt。</span><span class="sxs-lookup"><span data-stu-id="ff15b-193">Deploy the tracking profile BamEndToEnd.btt that you created in the previous step.</span></span>  <span data-ttu-id="ff15b-194">在命令提示符将更改为*\<示例路径\>* \BAM\BamEndToEnd 目录。</span><span class="sxs-lookup"><span data-stu-id="ff15b-194">In the command prompt change to the *\<Samples Path\>* \BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="ff15b-195">若要部署的跟踪配置文件，请键入以下行，，然后按**Enter**:</span><span class="sxs-lookup"><span data-stu-id="ff15b-195">To deploy the tracking profile, type the following line, and then press **Enter**:</span></span>  
   
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 12/01/2017
   
 ##  <a name="To_Run_Sample"></a><span data-ttu-id="ff15b-199">运行此示例</span><span class="sxs-lookup"><span data-stu-id="ff15b-199">Run this sample</span></span>  
   
-<span data-ttu-id="ff15b-200">将文件复制*\<示例路径\>*到文件夹 \BamEndToEnd\InputMessage.xml *\<示例路径\>*\BamEndToEnd\Input。</span><span class="sxs-lookup"><span data-stu-id="ff15b-200">Copy the file *\<Samples Path\>*\BamEndToEnd\InputMessage.xml into the folder *\<Samples Path\>*\BamEndToEnd\Input.</span></span> <span data-ttu-id="ff15b-201">在几秒钟后，消息消失从输入文件夹中，并输出消息出现在*\<示例路径\>*\BamEndToEnd\Output 文件夹。</span><span class="sxs-lookup"><span data-stu-id="ff15b-201">After a few seconds, the message disappears from the Input folder, and an output message appears in the *\<Samples Path\>*\BamEndToEnd\Output folder.</span></span>  
+<span data-ttu-id="ff15b-200">将文件复制*\<示例路径\>* 到文件夹 \BamEndToEnd\InputMessage.xml *\<示例路径\>* \BamEndToEnd\Input。</span><span class="sxs-lookup"><span data-stu-id="ff15b-200">Copy the file *\<Samples Path\>* \BamEndToEnd\InputMessage.xml into the folder *\<Samples Path\>* \BamEndToEnd\Input.</span></span> <span data-ttu-id="ff15b-201">在几秒钟后，消息消失从输入文件夹中，并输出消息出现在*\<示例路径\>* \BamEndToEnd\Output 文件夹。</span><span class="sxs-lookup"><span data-stu-id="ff15b-201">After a few seconds, the message disappears from the Input folder, and an output message appears in the *\<Samples Path\>* \BamEndToEnd\Output folder.</span></span>  
   
 ##  <a name="To_View_Data"></a><span data-ttu-id="ff15b-202">查看 BAM 数据</span><span class="sxs-lookup"><span data-stu-id="ff15b-202">View the BAM data</span></span>  
   
@@ -130,14 +131,14 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="rerun-this-sample"></a><span data-ttu-id="ff15b-209">重新运行此示例</span><span class="sxs-lookup"><span data-stu-id="ff15b-209">Rerun this sample</span></span>  
   
-1.  <span data-ttu-id="ff15b-210">打开命令提示符以管理员身份，并将更改为*\<示例路径\>*\BAM\BamEndToEnd 目录。</span><span class="sxs-lookup"><span data-stu-id="ff15b-210">Open a command prompt as Administrator, and change to the *\<Samples Path\>*\BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="ff15b-211">键入以下行：</span><span class="sxs-lookup"><span data-stu-id="ff15b-211">Type the following line:</span></span>  
+1.  <span data-ttu-id="ff15b-210">打开命令提示符以管理员身份，并将更改为*\<示例路径\>* \BAM\BamEndToEnd 目录。</span><span class="sxs-lookup"><span data-stu-id="ff15b-210">Open a command prompt as Administrator, and change to the *\<Samples Path\>* \BAM\BamEndToEnd directory.</span></span> <span data-ttu-id="ff15b-211">键入以下行：</span><span class="sxs-lookup"><span data-stu-id="ff15b-211">Type the following line:</span></span>  
   
     `“C:\Program Files\Microsoft BizTalk Server <version>\Tracking\bttdeploy” BamEndToEnd.btt /remove`  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-212">如果你未安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到 C 驱动器中，将"C"替换为你的安装位置的驱动器号[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ff15b-212">If you did not install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to the C drive, replace "C" with the drive letter where you installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="ff15b-213">运行*\<示例路径\>*\BAM\BAMEndToEnd\Cleanup.bat。</span><span class="sxs-lookup"><span data-stu-id="ff15b-213">Run *\<Samples Path\>*\BAM\BAMEndToEnd\Cleanup.bat.</span></span> <span data-ttu-id="ff15b-214">Cleanup.bat 移除此示例的 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="ff15b-214">Cleanup.bat removes the BAM infrastructure for this sample.</span></span>  
+2.  <span data-ttu-id="ff15b-213">运行*\<示例路径\>* \BAM\BAMEndToEnd\Cleanup.bat。</span><span class="sxs-lookup"><span data-stu-id="ff15b-213">Run *\<Samples Path\>* \BAM\BAMEndToEnd\Cleanup.bat.</span></span> <span data-ttu-id="ff15b-214">Cleanup.bat 移除此示例的 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="ff15b-214">Cleanup.bat removes the BAM infrastructure for this sample.</span></span>  
   
 3.  <span data-ttu-id="ff15b-215">执行中的步骤**生成并初始化此示例**本主题中的部分。</span><span class="sxs-lookup"><span data-stu-id="ff15b-215">Perform the steps in **To build and initialize this sample** section in this topic.</span></span>  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/01/2017
   
 6.  <span data-ttu-id="ff15b-223">在**Orchestration 名称**部分**选择业务流程**对话框中，选择**BamEndToEnd.Services.Orchestration1**，然后单击**确定**.</span><span class="sxs-lookup"><span data-stu-id="ff15b-223">In the **Orchestration Name** section of the **Select Orchestration** dialog box, select **BamEndToEnd.Services.Orchestration1**, and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="ff15b-224">在左窗格中**跟踪配置文件编辑器**窗口中，右键单击**EndToEndActivity**，然后单击**新 ContinuationID**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-224">In the left pane of the **Tracking Profile Editor** window, right-click **EndToEndActivity**, and then click **New ContinuationID**.</span></span> <span data-ttu-id="ff15b-225">命名新的延续 ID **Orch1_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-225">Name the new continuation ID **Orch1_**.</span></span> <span data-ttu-id="ff15b-226">重复此步骤以创建两个多个延续 Id 名为**Orch2_**和**Orch3_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-226">Repeat this step to create two more continuation IDs named **Orch2_** and **Orch3_**.</span></span>  
+7.  <span data-ttu-id="ff15b-224">在左窗格中**跟踪配置文件编辑器**窗口中，右键单击**EndToEndActivity**，然后单击**新 ContinuationID**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-224">In the left pane of the **Tracking Profile Editor** window, right-click **EndToEndActivity**, and then click **New ContinuationID**.</span></span> <span data-ttu-id="ff15b-225">命名新的延续 ID **Orch1_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-225">Name the new continuation ID **Orch1_**.</span></span> <span data-ttu-id="ff15b-226">重复此步骤以创建两个多个延续 Id 名为**Orch2_** 和**Orch3_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-226">Repeat this step to create two more continuation IDs named **Orch2_** and **Orch3_**.</span></span>  
   
 8.  <span data-ttu-id="ff15b-227">右键单击**EndToEndActivity**，然后单击**新的延续**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-227">Right-click **EndToEndActivity**, and then click **New Continuation**.</span></span> <span data-ttu-id="ff15b-228">命名新的延续**Orch2_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-228">Name the new continuation **Orch2_**.</span></span> <span data-ttu-id="ff15b-229">重复此步骤以创建名为的另一个延续**Orch3_**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-229">Repeat this step to create another continuation named **Orch3_**.</span></span>  
   
@@ -163,7 +164,7 @@ ms.lasthandoff: 12/01/2017
   
 10. <span data-ttu-id="ff15b-231">滚动到末尾**上下文属性名称**列表，，然后双击**BAMEndToEnd.Services.PropertySchema.DocumentID**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-231">Scroll to the end of the **Context Property Name** list, and then double-click **BAMEndToEnd.Services.PropertySchema.DocumentID**.</span></span>  
   
-11. <span data-ttu-id="ff15b-232">展开**\<架构\>**，然后拖动**DocumentID**到右窗格中**Orch1_**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-232">Expand **\<Schema\>**, and then drag **DocumentID** in the right pane to **Orch1_** in the left pane.</span></span>  
+11. <span data-ttu-id="ff15b-232">展开**\<架构\>**，然后拖动**DocumentID**到右窗格中**Orch1_** 的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-232">Expand **\<Schema\>**, and then drag **DocumentID** in the right pane to **Orch1_** in the left pane.</span></span>  
   
 12. <span data-ttu-id="ff15b-233">单击文件夹图标带有箭头 (![使用文件夹和向上箭头的按钮](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) 两次以显示业务流程。</span><span class="sxs-lookup"><span data-stu-id="ff15b-233">Click the folder icon with the arrow (![button with folder and up arrow](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) twice to display the orchestration.</span></span>  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 12/01/2017
   
 19. <span data-ttu-id="ff15b-241">滚动到末尾**上下文属性名称**列表，，然后双击**BAMEndToEnd.Services.PropertySchema.DocumentID**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-241">Scroll to the end of the **Context Property Name** list, and then double-click **BAMEndToEnd.Services.PropertySchema.DocumentID**.</span></span>  
   
-20. <span data-ttu-id="ff15b-242">展开**\<架构\>**，然后拖动**DocumentID**到**Orch2_**延续的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-242">Expand **\<Schema\>**, and then drag **DocumentID** to the **Orch2_** continuation in the left pane.</span></span>  
+20. <span data-ttu-id="ff15b-242">展开**\<架构\>**，然后拖动**DocumentID**到**Orch2_** 延续的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-242">Expand **\<Schema\>**, and then drag **DocumentID** to the **Orch2_** continuation in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-243">不要混淆 Orch2_ 延续替换 Orch2_ 延续 id。</span><span class="sxs-lookup"><span data-stu-id="ff15b-243">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="ff15b-244">表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。</span><span class="sxs-lookup"><span data-stu-id="ff15b-244">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -198,7 +199,7 @@ ms.lasthandoff: 12/01/2017
   
 25. <span data-ttu-id="ff15b-249">在双击包含"Message_3"的值的行**消息**列和值"BAMPart"中**一部分**列。</span><span class="sxs-lookup"><span data-stu-id="ff15b-249">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-26. <span data-ttu-id="ff15b-250">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch2_**延续的左窗格中的 ID。</span><span class="sxs-lookup"><span data-stu-id="ff15b-250">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch2_** continuation ID in the left pane.</span></span>  
+26. <span data-ttu-id="ff15b-250">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch2_** 延续的左窗格中的 ID。</span><span class="sxs-lookup"><span data-stu-id="ff15b-250">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch2_** continuation ID in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-251">不要混淆 Orch2_ 延续替换 Orch2_ 延续 id。</span><span class="sxs-lookup"><span data-stu-id="ff15b-251">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="ff15b-252">表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。</span><span class="sxs-lookup"><span data-stu-id="ff15b-252">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -219,7 +220,7 @@ ms.lasthandoff: 12/01/2017
   
 34. <span data-ttu-id="ff15b-260">在双击包含"Message_3"的值的行**消息**列和值"BAMPart"中**一部分**列。</span><span class="sxs-lookup"><span data-stu-id="ff15b-260">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-35. <span data-ttu-id="ff15b-261">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch3_**延续的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-261">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation in the left pane.</span></span>  
+35. <span data-ttu-id="ff15b-261">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch3_** 延续的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-261">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-262">不要混淆 Orch3_ 延续替换 Orch3_ 延续 id。</span><span class="sxs-lookup"><span data-stu-id="ff15b-262">Do not confuse the Orch3_ continuation with the Orch3_ continuation ID.</span></span> <span data-ttu-id="ff15b-263">表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。</span><span class="sxs-lookup"><span data-stu-id="ff15b-263">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -234,7 +235,7 @@ ms.lasthandoff: 12/01/2017
   
 40. <span data-ttu-id="ff15b-268">在双击包含"Message_3"的值的行**消息**列和值"BAMPart"中**一部分**列。</span><span class="sxs-lookup"><span data-stu-id="ff15b-268">Double-click the row that contains the value “Message_3” in the **Message** column and the value “BAMPart” in the **Part** column.</span></span>  
   
-41. <span data-ttu-id="ff15b-269">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch3_**延续的左窗格中的 ID。</span><span class="sxs-lookup"><span data-stu-id="ff15b-269">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation ID in the left pane.</span></span>  
+41. <span data-ttu-id="ff15b-269">展开**BAMPart**，然后拖动**DocumentID**到右窗格中**Orch3_** 延续的左窗格中的 ID。</span><span class="sxs-lookup"><span data-stu-id="ff15b-269">Expand **BAMPart**, and then drag **DocumentID** in the right pane to the **Orch3_** continuation ID in the left pane.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-270">不要混淆 Orch3_ 延续替换 Orch3_ 延续 id。</span><span class="sxs-lookup"><span data-stu-id="ff15b-270">Do not confuse the Orch3_ continuation with the Orch3_ continuation ID.</span></span> <span data-ttu-id="ff15b-271">表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。</span><span class="sxs-lookup"><span data-stu-id="ff15b-271">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
@@ -249,14 +250,14 @@ ms.lasthandoff: 12/01/2017
   
 46. <span data-ttu-id="ff15b-276">展开**Schema3**，然后拖动**Data3**到右窗格中**Data3**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="ff15b-276">Expand **Schema3**, and then drag **Data3** in the right pane to **Data3** in the left pane.</span></span>  
   
-47. <span data-ttu-id="ff15b-277">右键单击**DocumentID**下面**Orch2_**延续任务，，然后单击**集端口映射**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-277">Right-click **DocumentID** below the **Orch2_** continuation, and then click **Set Port Mappings**.</span></span>  
+47. <span data-ttu-id="ff15b-277">右键单击**DocumentID**下面**Orch2_** 延续任务，，然后单击**集端口映射**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-277">Right-click **DocumentID** below the **Orch2_** continuation, and then click **Set Port Mappings**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="ff15b-278">不要混淆 Orch2_ 延续替换 Orch2_ 延续 id。</span><span class="sxs-lookup"><span data-stu-id="ff15b-278">Do not confuse the Orch2_ continuation with the Orch2_ continuation ID.</span></span> <span data-ttu-id="ff15b-279">表示延续 ID 的图标包含键 (![图标延续 ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))，而表示延续的图标不包含键 （![延续图标](../core/media/test.gif "测试"))。</span><span class="sxs-lookup"><span data-stu-id="ff15b-279">The icon that represents a continuation ID contains a key (![icon for a continuation ID](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), whereas the icon that represents a continuation does not contain a key (![icon for a continuation](../core/media/test.gif "test")).</span></span>  
   
 48. <span data-ttu-id="ff15b-280">在**选择端口**部分**选择端口**对话框中，单击**BamEndToEnd_ReceivePort**，单击大于-号 ( **>**)，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ff15b-280">In the **Select Ports** section of the **Select Ports** dialog box, click **BamEndToEnd_ReceivePort**, click the greater-than sign (**>**), and then click **OK**.</span></span>  
   
-49. <span data-ttu-id="ff15b-281">保存跟踪配置文件到*\<示例路径\>*\BAM\BamEndToEnd\BamEndToEnd.btt。</span><span class="sxs-lookup"><span data-stu-id="ff15b-281">Save the tracking profile to *\<Samples Path\>*\BAM\BamEndToEnd\BamEndToEnd.btt.</span></span>  
+49. <span data-ttu-id="ff15b-281">保存跟踪配置文件到*\<示例路径\>* \BAM\BamEndToEnd\BamEndToEnd.btt。</span><span class="sxs-lookup"><span data-stu-id="ff15b-281">Save the tracking profile to *\<Samples Path\>* \BAM\BamEndToEnd\BamEndToEnd.btt.</span></span>  
   
 ## <a name="important-details"></a><span data-ttu-id="ff15b-282">重要详细信息</span><span class="sxs-lookup"><span data-stu-id="ff15b-282">Important details</span></span>  
  <span data-ttu-id="ff15b-283">管道不支持跟踪配置文件。</span><span class="sxs-lookup"><span data-stu-id="ff15b-283">Tracking profiles are not supported for pipelines.</span></span> <span data-ttu-id="ff15b-284">但是，对的调用**BeginActivity**在管道组件是在业务流程中使用 ActivityID 相同。</span><span class="sxs-lookup"><span data-stu-id="ff15b-284">However, the call to **BeginActivity** in the pipeline component is the same as using ActivityID in an orchestration.</span></span> <span data-ttu-id="ff15b-285">调用**EnableContinuation**等同于业务流程中使用延续。</span><span class="sxs-lookup"><span data-stu-id="ff15b-285">The call to **EnableContinuation** is the same as using a continuation in an orchestration.</span></span>  

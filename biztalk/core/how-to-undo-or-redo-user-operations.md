@@ -1,14 +1,14 @@
 ---
-title: "如何撤消或重做用户操作 |Microsoft 文档"
-ms.custom: 
+title: 如何撤消或重做用户操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cb3708e-a9c2-4795-aba0-9c6d9635e08c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973395"
 ---
 # <a name="how-to-undo-or-redo-user-operations"></a><span data-ttu-id="dd5d8-102">如何撤消或重做用户操作</span><span class="sxs-lookup"><span data-stu-id="dd5d8-102">How to Undo or Redo User Operations</span></span>
 <span data-ttu-id="dd5d8-103">撤消/重做的支持，而另一个可用性帮助提供通过 BizTalk 映射程序。</span><span class="sxs-lookup"><span data-stu-id="dd5d8-103">The support for undo/redo is yet another usability aid provided by the BizTalk Mapper.</span></span> <span data-ttu-id="dd5d8-104">如果您对所做的更改不满意或者执行了误操作，可以使用撤消功能来返回到之前的“未处理”状态，并从此处继续。</span><span class="sxs-lookup"><span data-stu-id="dd5d8-104">If you are not satisfied with modifications you have made, or if you have made a change by mistake, you can use undo to gradually come back to an earlier "untouched" state, and resume from there.</span></span> <span data-ttu-id="dd5d8-105">重做，可重新应用已撤消的编辑操作。</span><span class="sxs-lookup"><span data-stu-id="dd5d8-105">Redo allows you to reapply the editing actions that have been undone.</span></span> <span data-ttu-id="dd5d8-106">本主题提供有关操作的您可以撤消/重做的信息。</span><span class="sxs-lookup"><span data-stu-id="dd5d8-106">This topic provides information about the operations that you can undo/redo.</span></span>  

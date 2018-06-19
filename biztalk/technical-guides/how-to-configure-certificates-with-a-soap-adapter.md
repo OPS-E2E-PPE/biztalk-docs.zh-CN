@@ -1,14 +1,14 @@
 ---
-title: "如何使用 SOAP 适配器配置证书 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 SOAP 适配器配置证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 20ee05c5-9cea-456d-bff6-49dd249f0ff4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298277"
 ---
 # <a name="how-to-configure-certificates-with-a-soap-adapter"></a><span data-ttu-id="94e92-102">如何使用 SOAP 适配器配置证书</span><span class="sxs-lookup"><span data-stu-id="94e92-102">How to Configure Certificates with a SOAP Adapter</span></span>
 <span data-ttu-id="94e92-103">SOAP 发送适配器可以帮助保护与接受或需要客户端证书的服务器的连接。</span><span class="sxs-lookup"><span data-stu-id="94e92-103">The SOAP send adapter can help secure a connection with servers that accept or require client certificates.</span></span> <span data-ttu-id="94e92-104">如果指定了客户端证书，则在连接要求或接受客户端证书的服务器时，SOAP 发送适配器将使用该证书。</span><span class="sxs-lookup"><span data-stu-id="94e92-104">If you specify a client certificate, the SOAP send adapter uses the certificate when connecting with servers that require or accept client certificates.</span></span> <span data-ttu-id="94e92-105">如果未指定客户端证书和目标服务器需要客户端证书、 发件人未经过身份验证和发送 SOAP 适配器无法发送消息，并将遵循标准的重试逻辑。</span><span class="sxs-lookup"><span data-stu-id="94e92-105">If you do not specify a client certificate and the destination server requires client certificates, the sender is not authenticated and the SOAP send adapter fails to send the message and follows the standard retry logic.</span></span>  

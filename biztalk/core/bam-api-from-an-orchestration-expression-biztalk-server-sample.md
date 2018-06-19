@@ -1,14 +1,14 @@
 ---
-title: "从 Orchestration 表达式示例 BAM API |Microsoft 文档"
-ms.custom: 
+title: 从 Orchestration 表达式示例 BAM API |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 341bc333-9bfc-484c-b431-9a71f9188792
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710980"
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a><span data-ttu-id="d3080-102">业务流程表达式中的 BAM API（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="d3080-102">BAM API from an Orchestration Expression (BizTalk Server Sample)</span></span>
 <span data-ttu-id="d3080-103">此示例演示如何：</span><span class="sxs-lookup"><span data-stu-id="d3080-103">This sample demonstrates how to:</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 -   <span data-ttu-id="d3080-106">在使用跟踪配置文件跟踪的 BAM 数据和使用 BAM API 跟踪的 BAM 数据之间创建关系。</span><span class="sxs-lookup"><span data-stu-id="d3080-106">Create a relationship between BAM data that is tracked by using a tracking profile, and BAM data tracked by using the BAM API.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="d3080-107">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="d3080-107">Where to Find This Sample</span></span>  
- <span data-ttu-id="d3080-108">你可以找到在此示例*\<示例路径\>*\BAM\BamFromExpression。</span><span class="sxs-lookup"><span data-stu-id="d3080-108">You can find this sample at *\<Samples Path\>*\BAM\BamFromExpression.</span></span>  
+ <span data-ttu-id="d3080-108">你可以找到在此示例*\<示例路径\>* \BAM\BamFromExpression。</span><span class="sxs-lookup"><span data-stu-id="d3080-108">You can find this sample at *\<Samples Path\>* \BAM\BamFromExpression.</span></span>  
   
  <span data-ttu-id="d3080-109">下表列出了本示例中的文件及其用途说明。</span><span class="sxs-lookup"><span data-stu-id="d3080-109">The following table lists the files in this sample and describes their purpose.</span></span>  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="create-the-tracking-profile"></a><span data-ttu-id="d3080-134">创建跟踪配置文件</span><span class="sxs-lookup"><span data-stu-id="d3080-134">Create the tracking profile</span></span>  
   
-1.  <span data-ttu-id="d3080-135">打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BAMFromExpression\Setup.bat。</span><span class="sxs-lookup"><span data-stu-id="d3080-135">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BAMFromExpression\Setup.bat.</span></span> <span data-ttu-id="d3080-136">Setup.bat 可初始化此示例的 BAM 基础结构，并部署 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="d3080-136">Setup.bat initializes the BAM infrastructure for this sample, and deploys the BAM activity.</span></span>  
+1.  <span data-ttu-id="d3080-135">打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\BAMFromExpression\Setup.bat。</span><span class="sxs-lookup"><span data-stu-id="d3080-135">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BAMFromExpression\Setup.bat.</span></span> <span data-ttu-id="d3080-136">Setup.bat 可初始化此示例的 BAM 基础结构，并部署 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="d3080-136">Setup.bat initializes the BAM infrastructure for this sample, and deploys the BAM activity.</span></span>  
   
 2.  <span data-ttu-id="d3080-137">从你**程序** > **Microsoft BizTalk Server**，右键单击**跟踪配置文件编辑器**，和**以管理员身份运行**.</span><span class="sxs-lookup"><span data-stu-id="d3080-137">From your **Programs** > **Microsoft BizTalk Server**, right-click **Tracking Profile Editor**, and **Run as administrator**.</span></span>
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 02/28/2018
   
 13. <span data-ttu-id="d3080-160">拖动 **Send_1** 到右窗格中的形状 **发送** 的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="d3080-160">Drag the **Send_1** shape in the right pane to **Send** in the left pane.</span></span>  
   
-14. <span data-ttu-id="d3080-161">保存跟踪配置文件到*\<示例路径\>*\BAM\BamFromExpression\ BamFromExpression.btt。</span><span class="sxs-lookup"><span data-stu-id="d3080-161">Save the tracking profile to *\<Samples Path\>*\BAM\BamFromExpression\ BamFromExpression.btt.</span></span>  
+14. <span data-ttu-id="d3080-161">保存跟踪配置文件到*\<示例路径\>* \BAM\BamFromExpression\ BamFromExpression.btt。</span><span class="sxs-lookup"><span data-stu-id="d3080-161">Save the tracking profile to *\<Samples Path\>* \BAM\BamFromExpression\ BamFromExpression.btt.</span></span>  
   
 15. <span data-ttu-id="d3080-162">上 **工具** 菜单上，单击 **应用跟踪配置文件**。</span><span class="sxs-lookup"><span data-stu-id="d3080-162">On the **Tools** menu, click **Apply Tracking Profile**.</span></span>  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="run-this-sample"></a><span data-ttu-id="d3080-166">运行此示例</span><span class="sxs-lookup"><span data-stu-id="d3080-166">Run this sample</span></span>  
   
-<span data-ttu-id="d3080-167">将文件复制*\<示例路径\>*到 \BamFromExpression\InputMessage.xml *\<示例路径\>*\BamFromExpression\Input。</span><span class="sxs-lookup"><span data-stu-id="d3080-167">Copy the file *\<Samples Path\>*\BamFromExpression\InputMessage.xml to *\<Samples Path\>*\BamFromExpression\Input.</span></span>  
+<span data-ttu-id="d3080-167">将文件复制*\<示例路径\>* 到 \BamFromExpression\InputMessage.xml *\<示例路径\>* \BamFromExpression\Input。</span><span class="sxs-lookup"><span data-stu-id="d3080-167">Copy the file *\<Samples Path\>* \BamFromExpression\InputMessage.xml to *\<Samples Path\>* \BamFromExpression\Input.</span></span>  
   
-<span data-ttu-id="d3080-168">在大约 10 秒输出消息将出现在*\<示例路径\>*\BamFromExpression\Output。</span><span class="sxs-lookup"><span data-stu-id="d3080-168">In about 10 seconds the output message will appear in *\<Samples Path\>*\BamFromExpression\Output.</span></span>  
+<span data-ttu-id="d3080-168">在大约 10 秒输出消息将出现在*\<示例路径\>* \BamFromExpression\Output。</span><span class="sxs-lookup"><span data-stu-id="d3080-168">In about 10 seconds the output message will appear in *\<Samples Path\>* \BamFromExpression\Output.</span></span>  
   
 ## <a name="view-the-bam-data"></a><span data-ttu-id="d3080-169">查看 BAM 数据</span><span class="sxs-lookup"><span data-stu-id="d3080-169">View the BAM data</span></span>  
   
@@ -116,9 +117,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="re-run-the-sample"></a><span data-ttu-id="d3080-187">重新运行此示例</span><span class="sxs-lookup"><span data-stu-id="d3080-187">Re-run the sample</span></span>  
   
-1.  <span data-ttu-id="d3080-188">打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BamFromExpression\Cleanup.bat 若要删除的跟踪配置文件和其他 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="d3080-188">Open a command prompt as Administrator, and run *\<Samples Path\>*\BAM\BamFromExpression\Cleanup.bat to remove the tracking profile and other BAM infrastructure.</span></span> 
+1.  <span data-ttu-id="d3080-188">打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\BamFromExpression\Cleanup.bat 若要删除的跟踪配置文件和其他 BAM 基础结构。</span><span class="sxs-lookup"><span data-stu-id="d3080-188">Open a command prompt as Administrator, and run *\<Samples Path\>* \BAM\BamFromExpression\Cleanup.bat to remove the tracking profile and other BAM infrastructure.</span></span> 
   
-2.  <span data-ttu-id="d3080-189">运行*\<示例路径\>*\BAM\BamFromExpression\Setup.bat 编译该示例并将其部署。</span><span class="sxs-lookup"><span data-stu-id="d3080-189">Run *\<Samples Path\>*\BAM\BamFromExpression\Setup.bat to compile the sample and deploy it.</span></span>  
+2.  <span data-ttu-id="d3080-189">运行*\<示例路径\>* \BAM\BamFromExpression\Setup.bat 编译该示例并将其部署。</span><span class="sxs-lookup"><span data-stu-id="d3080-189">Run *\<Samples Path\>* \BAM\BamFromExpression\Setup.bat to compile the sample and deploy it.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="d3080-190">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d3080-190">See Also</span></span>  
  <span data-ttu-id="d3080-191">[业务活动监视 （BizTalk Server 示例文件夹中）](../core/business-activity-monitoring-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="d3080-191">[Business Activity Monitoring (BizTalk Server Samples Folder)](../core/business-activity-monitoring-biztalk-server-samples-folder.md) </span></span>  

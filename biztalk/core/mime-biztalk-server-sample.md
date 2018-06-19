@@ -1,11 +1,11 @@
 ---
-title: "MIME （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: MIME （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send pipelines, MIME/SMIME Encoder [pipeline component]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - MIME/SMIME Encoder [pipeline component], examples
 - examples, MIME/SMIME Encoder [pipeline component]
 ms.assetid: f76c720d-3798-4f15-a5f9-885ddf421d57
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974067"
 ---
 # <a name="mime-biztalk-server-sample"></a><span data-ttu-id="a916d-102">MIME （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="a916d-102">MIME (BizTalk Server Sample)</span></span>
 <span data-ttu-id="a916d-103">MIME 示例演示如何在发送管道中执行 MIME 编码。</span><span class="sxs-lookup"><span data-stu-id="a916d-103">The MIME sample demonstrates how to perform MIME encoding within a send pipeline.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "使用策略资源管理器 |Microsoft 文档"
-ms.custom: 
+title: 使用策略资源管理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer, Policy Explorer
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, Policy Explorer
 - Policy Explorer [Business Rule Composer]
 ms.assetid: 249b1b72-ba84-4695-ba2b-16f081710b20
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288341"
 ---
 # <a name="using-policy-explorer"></a><span data-ttu-id="92aa4-102">使用策略资源管理器</span><span class="sxs-lookup"><span data-stu-id="92aa4-102">Using Policy Explorer</span></span>
 <span data-ttu-id="92aa4-103">使用策略浏览器可以管理规则存储中的策略和规则。</span><span class="sxs-lookup"><span data-stu-id="92aa4-103">You can use the Policy Explorer to manage policies and rules in the rule store.</span></span> <span data-ttu-id="92aa4-104">可以创建、修改和删除策略和规则，也可以测试、发布、部署和取消部署策略。</span><span class="sxs-lookup"><span data-stu-id="92aa4-104">You can create, modify, and delete policies and rules, and you can test, publish, deploy, and undeploy policies.</span></span>  

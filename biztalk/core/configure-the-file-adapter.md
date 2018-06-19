@@ -12,7 +12,7 @@ helpviewer_keywords:
 - configuring [File adapters], about configuring File adapters
 - configuring [File adapters]
 ms.assetid: 1e0c7e20-80f8-469b-b423-34a2b90f9ec3
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25971891"
 ---
 # <a name="configure-the-file-adapter"></a><span data-ttu-id="465c4-102">配置文件适配器</span><span class="sxs-lookup"><span data-stu-id="465c4-102">Configure the File adapter</span></span>
 <span data-ttu-id="465c4-103">如何配置文件适配器，阅读安全建议，并查看所需的权限。</span><span class="sxs-lookup"><span data-stu-id="465c4-103">How to configure the File adapter, read the security recommendations, and view the required permissions.</span></span>

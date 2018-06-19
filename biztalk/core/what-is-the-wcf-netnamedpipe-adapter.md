@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289245"
 ---
 # <a name="what-is-the-wcf-netnamedpipe-adapter"></a><span data-ttu-id="4420e-103">WCF-NetNamedPipe 适配器概述</span><span class="sxs-lookup"><span data-stu-id="4420e-103">What Is the WCF-NetNamedPipe Adapter?</span></span>
 <span data-ttu-id="4420e-104">WCF-NetNamedPipe 适配器在服务和客户端都是基于 WCF 的环境中的同一计算机上提供跨进程通信。</span><span class="sxs-lookup"><span data-stu-id="4420e-104">The WCF-NetNamedPipe adapter provides cross-process communication on the same computer in an environment in which both services and clients are WCF based.</span></span> <span data-ttu-id="4420e-105">它提供了对 SOAP 可靠性和事务功能的完全访问。</span><span class="sxs-lookup"><span data-stu-id="4420e-105">It provides full access to SOAP reliability and transaction features.</span></span> <span data-ttu-id="4420e-106">适配器使用命名管道传输，消息采用二进制编码。</span><span class="sxs-lookup"><span data-stu-id="4420e-106">The adapter uses the named pipe transport, and messages have binary encoding.</span></span> <span data-ttu-id="4420e-107">此适配器无法用于计算机间的通信。</span><span class="sxs-lookup"><span data-stu-id="4420e-107">This adapter cannot be used in cross-computer communication.</span></span>  

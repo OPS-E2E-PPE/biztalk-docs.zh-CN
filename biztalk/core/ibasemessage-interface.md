@@ -1,14 +1,14 @@
 ---
-title: "IBaseMessage 接口 |Microsoft 文档"
-ms.custom: 
+title: IBaseMessage 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10bfb95c-aef5-46ba-ba0e-9961833f27a3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257085"
 ---
 # <a name="ibasemessage-interface"></a><span data-ttu-id="5da0a-102">IBaseMessage 接口</span><span class="sxs-lookup"><span data-stu-id="5da0a-102">IBaseMessage Interface</span></span>
 <span data-ttu-id="5da0a-103">当接收适配器接受传入的数据包通过其协议时，它会使用**IBaseMessage**接口可创建要传递给 the Messaging Engine 一条消息。</span><span class="sxs-lookup"><span data-stu-id="5da0a-103">When a receive adapter accepts an incoming data packet through its protocol, it uses the **IBaseMessage** interface to create a message to pass to the Messaging Engine.</span></span> <span data-ttu-id="5da0a-104">所有消息都是使用这个接口传递的。</span><span class="sxs-lookup"><span data-stu-id="5da0a-104">All messages are represented by using this interface.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="5da0a-120">升级属性与现有订阅匹配完毕并用于路由消息后，该属性将被降级，以防止发生循环订阅匹配。</span><span class="sxs-lookup"><span data-stu-id="5da0a-120">After a promoted property has been matched to an existing subscription and used to route a message, the property is demoted to prevent cyclic subscription matches.</span></span> <span data-ttu-id="5da0a-121">降级属性仍作为元数据留在消息上下文中，但会失去升级状态。</span><span class="sxs-lookup"><span data-stu-id="5da0a-121">A demoted property remains on the message context as metadata but loses its promoted status.</span></span>  
   
- <span data-ttu-id="5da0a-122">**实现提示：**消息上下文属性都在运行时加载到内存。</span><span class="sxs-lookup"><span data-stu-id="5da0a-122">**Implementation Tip:** Message context properties are loaded into memory at run time.</span></span> <span data-ttu-id="5da0a-123">非常大片的数据应不会写入消息上下文因为这可能会中断[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持大消息。</span><span class="sxs-lookup"><span data-stu-id="5da0a-123">Very large pieces of data should not be written to the message context because this could potentially break the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] large message support.</span></span> <span data-ttu-id="5da0a-124">可能将对象序列化到消息上下文提供其实现**IPersistStream**接口。</span><span class="sxs-lookup"><span data-stu-id="5da0a-124">Objects may be serialized into the message context providing they implement the **IPersistStream** interface.</span></span> <span data-ttu-id="5da0a-125">同样，升级属性的长度也限制在 255 个字符之内。</span><span class="sxs-lookup"><span data-stu-id="5da0a-125">Also, promoted properties are limited to 255 characters.</span></span>  
+ <span data-ttu-id="5da0a-122">**实现提示：** 消息上下文属性都在运行时加载到内存。</span><span class="sxs-lookup"><span data-stu-id="5da0a-122">**Implementation Tip:** Message context properties are loaded into memory at run time.</span></span> <span data-ttu-id="5da0a-123">非常大片的数据应不会写入消息上下文因为这可能会中断[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持大消息。</span><span class="sxs-lookup"><span data-stu-id="5da0a-123">Very large pieces of data should not be written to the message context because this could potentially break the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] large message support.</span></span> <span data-ttu-id="5da0a-124">可能将对象序列化到消息上下文提供其实现**IPersistStream**接口。</span><span class="sxs-lookup"><span data-stu-id="5da0a-124">Objects may be serialized into the message context providing they implement the **IPersistStream** interface.</span></span> <span data-ttu-id="5da0a-125">同样，升级属性的长度也限制在 255 个字符之内。</span><span class="sxs-lookup"><span data-stu-id="5da0a-125">Also, promoted properties are limited to 255 characters.</span></span>  
   
  <span data-ttu-id="5da0a-126">应始终应当使用消息工厂来创建新消息。</span><span class="sxs-lookup"><span data-stu-id="5da0a-126">The message factory should always be used to create new messages.</span></span>  <span data-ttu-id="5da0a-127">下面的代码段演示了如何用适配器接收的数据流来创建新的 BizTalk 消息。</span><span class="sxs-lookup"><span data-stu-id="5da0a-127">The following code fragment illustrates how to create a new BizTalk message from the data stream received by the adapter.</span></span>  
   

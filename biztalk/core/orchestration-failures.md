@@ -1,11 +1,11 @@
 ---
-title: "业务流程失败 |Microsoft 文档"
-ms.custom: 
+title: 业务流程失败 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Catch Exception block [Orchestration Designer], suspended orchestrations
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - orchestrations, HAT
 - HAT, orchestrations
 ms.assetid: d0a799fb-7859-4774-b444-979f22f04215
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263805"
 ---
 # <a name="orchestration-failures"></a><span data-ttu-id="634df-102">业务流程故障</span><span class="sxs-lookup"><span data-stu-id="634df-102">Orchestration Failures</span></span>
 <span data-ttu-id="634df-103">业务流程的复杂性有所不同；例如，业务流程可能通过转换形状和赋值形状来调用 .NET 对象或构造消息。</span><span class="sxs-lookup"><span data-stu-id="634df-103">Orchestrations vary in complexity; for example, an orchestration may call a .NET object or construct messages via transform and assignment shape.</span></span> <span data-ttu-id="634df-104">因此，由于其内容的多样性以及自定义的级别，所以不可能列出每个可能出现的故障。</span><span class="sxs-lookup"><span data-stu-id="634df-104">As a result, it is impossible to list out every possible failure, due to the variety of its content as well as level of customization.</span></span> <span data-ttu-id="634df-105">但是，在业务流程中发生的所有故障都表现为异常。</span><span class="sxs-lookup"><span data-stu-id="634df-105">However, all failures encountered in orchestrations appear as exceptions.</span></span>  

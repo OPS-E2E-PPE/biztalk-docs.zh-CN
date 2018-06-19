@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288685"
 ---
 # <a name="wcf-nettcp-adapter"></a><span data-ttu-id="54ad0-102">WCF NetTcp 适配器</span><span class="sxs-lookup"><span data-stu-id="54ad0-102">WCF-NetTcp Adapter</span></span>
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)]<span data-ttu-id="54ad0-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时接收和发送 WCF 服务通过请求使用 WCF NetTcp 适配器[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087)。</span><span class="sxs-lookup"><span data-stu-id="54ad0-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetTcp adapter when receiving and sending WCF service requests through the [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087).</span></span> <span data-ttu-id="54ad0-104">WCF NetTcp 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**NetTcpBinding**。</span><span class="sxs-lookup"><span data-stu-id="54ad0-104">The WCF-NetTcp adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the **NetTcpBinding**.</span></span>  

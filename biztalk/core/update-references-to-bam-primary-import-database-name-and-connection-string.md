@@ -1,14 +1,14 @@
 ---
-title: "更新 BAM 主导入数据库名称和连接字符串 |Microsoft 文档"
-ms.custom: 
+title: 更新 BAM 主导入数据库名称和连接字符串 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3c58db0-f14f-429a-813c-bae29f6950d3
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c670558deccec266f90ae7ed042dba1105b15596
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28956647"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a><span data-ttu-id="c860b-102">更新对 BAM 主导入数据库名称和连接字符串的引用</span><span class="sxs-lookup"><span data-stu-id="c860b-102">Update References to the BAM Primary Import Database Name and Connection String</span></span>
 <span data-ttu-id="c860b-103">如果备份了 BAMPrimaryImport 数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机上，然后重命名该备份。</span><span class="sxs-lookup"><span data-stu-id="c860b-103">If you backed up your BAMPrimaryImport database in the event of a system or data failure, you can restore that backup to a different computer and rename the backup.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269309"
 ---
 # <a name="schemas-node"></a><span data-ttu-id="99a89-102">“架构”节点</span><span class="sxs-lookup"><span data-stu-id="99a89-102">Schemas Node</span></span>
 <span data-ttu-id="99a89-103">使用**架构**节点以显示部署在 BizTalk 中可用的当前应用程序和系统架构的架构。</span><span class="sxs-lookup"><span data-stu-id="99a89-103">Use the **Schemas** node to display schemas deployed in the current application and system schemas that are available in BizTalk.</span></span> <span data-ttu-id="99a89-104">右键单击**架构**节点以显示以下命令：</span><span class="sxs-lookup"><span data-stu-id="99a89-104">Right-click the **Schemas** node to display the following commands:</span></span>  

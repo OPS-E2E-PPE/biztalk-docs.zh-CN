@@ -1,14 +1,14 @@
 ---
-title: "验证收到的 EDI 消息 |Microsoft 文档"
-ms.custom: 
+title: 验证收到的 EDI 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c56a3c0-042e-4611-8131-d51098064f0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288053"
 ---
 # <a name="validation-of-received-edi-messages"></a><span data-ttu-id="78578-102">验证收到的 EDI 消息</span><span class="sxs-lookup"><span data-stu-id="78578-102">Validation of Received EDI Messages</span></span>
 <span data-ttu-id="78578-103">EDI 接收管道处理传入的消息时，将对信封和消息数据执行一系列验证。</span><span class="sxs-lookup"><span data-stu-id="78578-103">When the EDI receive pipeline processes an incoming message, it performs a series of validations on the envelope and message data.</span></span> <span data-ttu-id="78578-104">其中一些处理将始终执行，而有些处理将仅在您启用的情况下才执行。</span><span class="sxs-lookup"><span data-stu-id="78578-104">Some of these processes are always performed; some are performed only if you enable them.</span></span> <span data-ttu-id="78578-105">这些验证包括</span><span class="sxs-lookup"><span data-stu-id="78578-105">These validations include the following:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "安装和配置 HYPER-V 虚拟机，以使用与 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 安装和配置 HYPER-V 虚拟机，以使用与 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86add392-3cde-432d-95d6-c81d68716537
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010966"
 ---
 # <a name="installing-and-configuring-a-hyper-v-virtual-machine-for-use-with-biztalk-server"></a><span data-ttu-id="4e12a-102">安装和配置 HYPER-V 虚拟机，以使用与 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="4e12a-102">Installing and Configuring a Hyper-V Virtual Machine for use with BizTalk Server</span></span>
 <span data-ttu-id="4e12a-103">本主题提供有关安装和配置在 HYPER-V 环境中，包括有关安装和配置 HYPER-V 虚拟机的建议和建议在上安装 BizTalk Server 的 BizTalk Server 建议HYPER-V 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="4e12a-103">This topic provides recommendations for installing and configuring BizTalk Server in a Hyper-V environment, including recommendations for installation and configuration of the Hyper-V virtual machine and recommendations for installing BizTalk Server on a Hyper-V virtual machine.</span></span>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
  <span data-ttu-id="4e12a-181">配置虚拟机，确保而不是旧版网络适配器使用网络适配器。</span><span class="sxs-lookup"><span data-stu-id="4e12a-181">When configuring a virtual machine, ensure that you use the Network Adapter instead of the Legacy Network Adapter.</span></span> <span data-ttu-id="4e12a-182">旧版网络适配器适用于不支持集成组件的操作系统。</span><span class="sxs-lookup"><span data-stu-id="4e12a-182">The legacy network adapter is intended for operating systems that do not support integration components.</span></span>  
   
- <span data-ttu-id="4e12a-183">若要测量网络性能使用**"\Network 接口 \Bytes Total/sec"**和**\Network 接口 (\*) \Output 队列长度**主机操作系统上的性能监视器计数器要测量的网络卡的总体性能的系统。</span><span class="sxs-lookup"><span data-stu-id="4e12a-183">To measure network performance use the **“\Network Interface \Bytes Total/sec”** and the **\Network Interface(\*)\Output Queue Length** performance monitor counters on the host operating system to measure overall performance of the network card.</span></span> <span data-ttu-id="4e12a-184">如果物理网络已被标识为忙，使用**"\Hyper-V 虚拟网络适配器 (\*) \Bytes/sec"**在主机操作系统以确定哪些虚拟机网络接口适配器上的计数器是生成高负载。</span><span class="sxs-lookup"><span data-stu-id="4e12a-184">If a physical network has been identified as being busy, use the **“\Hyper-V Virtual Network Adapter (\*)\Bytes/sec”** counter on the host operating system to identify which virtual machine network adapter(s) is/are generating high load.</span></span>  
+ <span data-ttu-id="4e12a-183">若要测量网络性能使用 **"\Network 接口 \Bytes Total/sec"** 和**\Network 接口 (\*) \Output 队列长度**主机操作系统上的性能监视器计数器要测量的网络卡的总体性能的系统。</span><span class="sxs-lookup"><span data-stu-id="4e12a-183">To measure network performance use the **“\Network Interface \Bytes Total/sec”** and the **\Network Interface(\*)\Output Queue Length** performance monitor counters on the host operating system to measure overall performance of the network card.</span></span> <span data-ttu-id="4e12a-184">如果物理网络已被标识为忙，使用 **"\Hyper-V 虚拟网络适配器 (\*) \Bytes/sec"** 在主机操作系统以确定哪些虚拟机网络接口适配器上的计数器是生成高负载。</span><span class="sxs-lookup"><span data-stu-id="4e12a-184">If a physical network has been identified as being busy, use the **“\Hyper-V Virtual Network Adapter (\*)\Bytes/sec”** counter on the host operating system to identify which virtual machine network adapter(s) is/are generating high load.</span></span>  
   
  <span data-ttu-id="4e12a-185">有关评估在 HYPER-V 环境中的网络性能的详细信息请参阅**测量网络性能**部分[清单： HYPER-V 上的测量性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。</span><span class="sxs-lookup"><span data-stu-id="4e12a-185">For more information about evaluating network performance on a Hyper-V environment see the **Measuring Network Performance** section of [Checklist: Measuring Performance on Hyper-V](../technical-guides/checklist-measuring-performance-on-hyper-v.md).</span></span>  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288789"
 ---
 # <a name="wcf-netnamedpipe-adapter"></a><span data-ttu-id="fcbb2-102">WCF-NetNamedPipe 适配器</span><span class="sxs-lookup"><span data-stu-id="fcbb2-102">WCF-NetNamedPipe Adapter</span></span>
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)]<span data-ttu-id="fcbb2-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时接收和发送 WCF 服务通过请求使用 WCF NetNamedPipe 适配器[NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588)。</span><span class="sxs-lookup"><span data-stu-id="fcbb2-103"> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetNamedPipe adapter when receiving and sending WCF service requests through the [NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588).</span></span> <span data-ttu-id="fcbb2-104">WCF NetNamedPipe 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**NetNamedPipeBinding**。</span><span class="sxs-lookup"><span data-stu-id="fcbb2-104">The WCF-NetNamedPipe adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the **NetNamedPipeBinding**.</span></span>  

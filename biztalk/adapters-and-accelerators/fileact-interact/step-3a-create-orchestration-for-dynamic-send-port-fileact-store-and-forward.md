@@ -1,14 +1,14 @@
 ---
-title: "步骤 3A： 创建 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3A： 创建 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5675d476-ad36-4bbc-8e87-786edc9c805d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223541"
 ---
 # <a name="step-3a-create-an-orchestration-for-dynamic-send-port-for-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="2baf0-102">步骤 3A： 创建 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程</span><span class="sxs-lookup"><span data-stu-id="2baf0-102">Step 3A: Create an orchestration for dynamic send port for FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="2baf0-103">在开始此部分中的步骤之前，必须完成中的步骤[步骤 2c: FileAct 存储和转发 （请求） 方案的 FILEACT 发送端口添加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)部分。</span><span class="sxs-lookup"><span data-stu-id="2baf0-103">Before you begin the steps in this section, you must complete the steps in the [Step 2C: Add a FILEACT Send Port for the FileAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md) section.</span></span>  

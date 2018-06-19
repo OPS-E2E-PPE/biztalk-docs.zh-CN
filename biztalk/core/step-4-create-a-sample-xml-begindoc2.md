@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 创建示例 XML BeginDoc2 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建示例 XML BeginDoc2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cdda509-085f-4485-b488-c045d589ee96
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277533"
 ---
 # <a name="step-4-create-a-sample-xml-begindoc"></a><span data-ttu-id="751fe-102">步骤 4： 创建示例 XML BeginDoc</span><span class="sxs-lookup"><span data-stu-id="751fe-102">Step 4: Create a Sample XML BeginDoc</span></span>
 <span data-ttu-id="751fe-103">将以下代码保存到一个 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="751fe-103">Save the following code into an XML file.</span></span> <span data-ttu-id="751fe-104">如果您的测试使用本例中的步骤，并且使用示例的 J.D.</span><span class="sxs-lookup"><span data-stu-id="751fe-104">If your test uses the steps in this example, and uses the example's J.D.</span></span> <span data-ttu-id="751fe-105">Edwards EnterpriseOne 对象选择 [JDE://CSALES/B4200310]，可以将其拖放到“输入”文件夹并查看指定的“输出”文件夹（该文件夹绑定到 EndDocOut 端口）中会出现什么内容。</span><span class="sxs-lookup"><span data-stu-id="751fe-105">Edwards EnterpriseOne object selection, [JDE://CSALES/B4200310], you can drop this into the Input folder and what it come out the designated Out folder (the folder bound to the EndDocOut port).</span></span>  

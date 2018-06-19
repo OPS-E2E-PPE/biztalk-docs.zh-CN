@@ -1,14 +1,14 @@
 ---
-title: "规划对其进行跟踪 |Microsoft 文档"
-ms.custom: 
+title: 规划对其进行跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ffc8573-1b4a-47c7-96ab-0471f43facf5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302077"
 ---
 # <a name="planning-for-tracking"></a><span data-ttu-id="55e53-102">规划对其进行跟踪</span><span class="sxs-lookup"><span data-stu-id="55e53-102">Planning for Tracking</span></span>
 <span data-ttu-id="55e53-103">邮件跟踪是依据的部分消息实例，如消息正文、 消息属性和元数据将存储在数据库中，通常用于存档目的的过程。</span><span class="sxs-lookup"><span data-stu-id="55e53-103">Message tracking is the process by which parts of a message instance, such as the message body, message properties, and metadata are stored in a database, typically for archival purposes.</span></span> <span data-ttu-id="55e53-104">随后可以通过从中的组中心数据库页运行查询来查看跟踪的消息实例部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="55e53-104">Message instance parts that are tracked can subsequently be viewed by running queries from the Group Hub page in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="55e53-105">除了访问已存档的数据，还可以查看实时数据，这可能非常有用的工具进行标识和修复开发中的问题或过渡环境。</span><span class="sxs-lookup"><span data-stu-id="55e53-105">In addition to accessing archived data, you can also view live data, which can be a helpful tool for identifying and fixing problems in a development or staging environment.</span></span>  

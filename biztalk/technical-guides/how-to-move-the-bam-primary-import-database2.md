@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc4f2656-2faa-4503-9551-05e1b6eceb1a
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010870"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a><span data-ttu-id="c0b2d-102">如何移动 BAM 主导入数据库</span><span class="sxs-lookup"><span data-stu-id="c0b2d-102">How to Move the BAM Primary Import Database</span></span>
 <span data-ttu-id="c0b2d-103">您可以使用此过程将 BAM 主导入数据库移至其他服务器。</span><span class="sxs-lookup"><span data-stu-id="c0b2d-103">You can use this procedure to move the BAM Primary Import database to another server.</span></span> <span data-ttu-id="c0b2d-104">从端到端方案的角度看，移动 BAM 主导入数据库涉及到两个主要步骤：</span><span class="sxs-lookup"><span data-stu-id="c0b2d-104">From an end-to-end scenario perspective, moving the BAM Primary Import database involves two major steps:</span></span>  
@@ -210,7 +211,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  <span data-ttu-id="c0b2d-208">在对象资源管理器，展开**数据库**，展开**BAMAnalysis**，展开**数据源**，然后双击数据源。</span><span class="sxs-lookup"><span data-stu-id="c0b2d-208">In the Object Explorer, expand **Databases**, expand **BAMAnalysis**, expand **Data Sources**, and then double-click a data source.</span></span>  
   
-4.  <span data-ttu-id="c0b2d-209">在**数据源属性**对话框框中，单击省略号按钮**（...）**针对**连接字符串**属性。</span><span class="sxs-lookup"><span data-stu-id="c0b2d-209">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
+4.  <span data-ttu-id="c0b2d-209">在**数据源属性**对话框框中，单击省略号按钮 **（...）** 针对**连接字符串**属性。</span><span class="sxs-lookup"><span data-stu-id="c0b2d-209">In the **Data Source Properties** dialog box, click the ellipsis button **(…)** against the **Connection String** property.</span></span>  
   
 5.  <span data-ttu-id="c0b2d-210">在**连接管理器**对话框中，在**服务器名称**框中，输入承载 BAMPrimaryImport 数据库的服务器的名称，单击**确定**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="c0b2d-210">In the **Connection Manager** dialog box, in the **Server name** box, enter the name of the server hosting the BAMPrimaryImport database, click **OK**, and then click **OK**.</span></span>  
   

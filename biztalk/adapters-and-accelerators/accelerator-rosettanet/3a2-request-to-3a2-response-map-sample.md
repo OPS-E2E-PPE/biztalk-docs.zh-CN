@@ -1,14 +1,14 @@
 ---
-title: "对 3A2 响应映射示例 3A2 请求 |Microsoft 文档"
-ms.custom: 
+title: 对 3A2 响应映射示例 3A2 请求 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 71c70571-0cb4-4269-9ca9-87f6d1ba95dc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004542"
 ---
 # <a name="3a2-request-to-3a2-response-map-sample"></a><span data-ttu-id="e38c8-102">3A2 请求到 3A2 响应映射示例</span><span class="sxs-lookup"><span data-stu-id="e38c8-102">3A2 Request to 3A2 Response Map Sample</span></span>
 <span data-ttu-id="e38c8-103">_3A2RequestMessageTo3A2ResponseMessage.btm 示例演示如何将 3A2 请求消息映射到 3A2 响应消息。</span><span class="sxs-lookup"><span data-stu-id="e38c8-103">The _3A2RequestMessageTo3A2ResponseMessage.btm sample demonstrates how you can map a 3A2 request message to a 3A2 response message.</span></span>  

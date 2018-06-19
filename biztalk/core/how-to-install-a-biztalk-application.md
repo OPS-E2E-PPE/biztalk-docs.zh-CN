@@ -13,7 +13,7 @@ helpviewer_keywords:
 - installing, warnings
 - applications, installing
 ms.assetid: 99ee0b1a-d46a-4fb6-802b-6827dc740418
-caps.latest.revision: ''
+caps.latest.revision: 56
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "26010534"
 ---
 # <a name="how-to-install-a-biztalk-application"></a><span data-ttu-id="0924e-102">如何安装 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="0924e-102">How to Install a BizTalk Application</span></span>
 <span data-ttu-id="0924e-103">本主题介绍如何通过在 Windows 界面中双击应用程序的 Windows Installer (.msi) 文件或从命令行运行 msiexec 来在本地计算机上安装应用程序。</span><span class="sxs-lookup"><span data-stu-id="0924e-103">This topic describes how to install an application on the local computer by double-clicking the Windows Installer (.msi) file for the application in the Windows interface or by running msiexec from the command line.</span></span> <span data-ttu-id="0924e-104">你也可以启动安装向导导入向导的最后一步骤中所述[如何导入 BizTalk 应用程序](../core/how-to-import-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="0924e-104">You can also start the Installation Wizard as the last step of the Import Wizard, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  

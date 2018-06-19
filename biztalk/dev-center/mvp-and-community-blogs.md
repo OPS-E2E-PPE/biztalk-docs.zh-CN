@@ -1,12 +1,12 @@
 ---
-title: "编写的集成和 Azure Mvp 和社区博客列表 |Microsoft 文档"
-description: "博客和网站集成和 Azure Mvp 和社区成员 BizTalk Server、 逻辑应用和的详细信息"
+title: 编写的集成和 Azure Mvp 和社区博客列表 |Microsoft 文档
+description: 博客和网站集成和 Azure Mvp 和社区成员 BizTalk Server、 逻辑应用和的详细信息
 author: MandiOhlinger
 manager: anneta
 ms.date: 08/23/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.author: mandia
 ms.openlocfilehash: ea6ec410696c1e1f7325c610eb7770e64a574101
@@ -14,6 +14,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290829"
 ---
 # <a name="mvp-and-community-written-blogs"></a><span data-ttu-id="669a0-103">MVP 和社区编写博客</span><span class="sxs-lookup"><span data-stu-id="669a0-103">MVP and community-written blogs</span></span>
 

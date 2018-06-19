@@ -1,14 +1,14 @@
 ---
-title: "ESB 冲突解决程序和适配器提供程序框架 |Microsoft 文档"
-ms.custom: 
+title: ESB 冲突解决程序和适配器提供程序框架 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c82c2247-1f0a-48bd-98c2-9c816f4d68d7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007366"
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a><span data-ttu-id="5e591-102">ESB 冲突解决程序和适配器提供程序框架</span><span class="sxs-lookup"><span data-stu-id="5e591-102">ESB Resolver and Adapter Provider Framework</span></span>
 <span data-ttu-id="5e591-103">冲突解决程序和适配器提供程序框架提供一个全面的、 可插入体系结构来动态解析终结点信息和 BizTalk Server 映射类型。</span><span class="sxs-lookup"><span data-stu-id="5e591-103">The Resolver and Adapter Provider Framework provides a comprehensive, pluggable architecture for dynamically resolving endpoint information and BizTalk Server map types.</span></span> <span data-ttu-id="5e591-104">它使用可扩展的组件，允许开发人员更改行为，以便根据其自己的需求和扩展以支持备选解决方案和路由方法的机制。</span><span class="sxs-lookup"><span data-stu-id="5e591-104">It uses extensible components, which allow developers to change the behavior to suit their own requirements and extend the mechanism to support alternative resolution and routing methods.</span></span>  

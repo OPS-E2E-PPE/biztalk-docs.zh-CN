@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007254"
 ---
 # <a name="enhanced-tracking"></a><span data-ttu-id="09cb3-102">增强的跟踪</span><span class="sxs-lookup"><span data-stu-id="09cb3-102">Enhanced Tracking</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="09cb3-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供增强的能够跟踪进程和消息。</span><span class="sxs-lookup"><span data-stu-id="09cb3-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] provides an enhanced ability to track processes and messages.</span></span> <span data-ttu-id="09cb3-104">有关业务活动监视 (BAM) 中的本机功能[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]为跟踪仅为元数据。</span><span class="sxs-lookup"><span data-stu-id="09cb3-104">The native functionality for Business Activity Monitoring (BAM) in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is to track metadata only.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="09cb3-105">跟踪消息内容 — 服务内容和标头。</span><span class="sxs-lookup"><span data-stu-id="09cb3-105"> tracks message content—both service content and headers.</span></span>  

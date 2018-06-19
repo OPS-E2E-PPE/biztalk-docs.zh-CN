@@ -1,18 +1,18 @@
 ---
-title: "事务处理业务流程 |Microsoft 文档"
-ms.custom: 
+title: 事务处理业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, compensations
 - orchestrations, transactional
 - Transaction Type property
 ms.assetid: c4f0b6ca-d939-4d3a-b7ef-53c6aafdea9c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278733"
 ---
 # <a name="transacted-orchestrations"></a><span data-ttu-id="a549a-102">事务处理的业务流程</span><span class="sxs-lookup"><span data-stu-id="a549a-102">Transacted Orchestrations</span></span>
 <span data-ttu-id="a549a-103">业务流程可以是事务性的，与作用域类似。</span><span class="sxs-lookup"><span data-stu-id="a549a-103">Orchestrations can be transactional, just like scopes.</span></span> <span data-ttu-id="a549a-104">实际上，业务流程本身可以视为作用域。</span><span class="sxs-lookup"><span data-stu-id="a549a-104">In fact, an orchestration can itself be considered a scope.</span></span> <span data-ttu-id="a549a-105">通常，同一规则对进行事务处理的业务流程的适用性与对进行事务处理的作用域的适用性是一样的。</span><span class="sxs-lookup"><span data-stu-id="a549a-105">In general, the same rules apply for transacted orchestrations as for transacted scopes.</span></span>  

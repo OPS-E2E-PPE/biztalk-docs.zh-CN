@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1389284-a2ec-44e7-a2f1-8d26f83fd31d
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26005302"
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a><span data-ttu-id="f53b9-102">HIPAA 架构触发器字段批注</span><span class="sxs-lookup"><span data-stu-id="f53b9-102">HIPAA Schema Trigger Field Annotations</span></span>
 <span data-ttu-id="f53b9-103">EDI 段通常包含修改段含义的限定符值。</span><span class="sxs-lookup"><span data-stu-id="f53b9-103">EDI segments often contain qualifier values that modify the meaning of the segment.</span></span> <span data-ttu-id="f53b9-104">例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。</span><span class="sxs-lookup"><span data-stu-id="f53b9-104">For example, an N1 segment can contain a qualifying element of “BT” to signify a “bill-to name,” or it may contain a qualifying element of “ST” to indicate a “ship-to name.”</span></span> <span data-ttu-id="f53b9-105">通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk 服务器随附的 HIPAA 架构包含允许 EDI 反汇编程序，创建基于符合条件的元素存在的唯一 XML 记录的批注。</span><span class="sxs-lookup"><span data-stu-id="f53b9-105">Normally it is left to business logic to determine how to interpret these fields and the disassembler resolves all instances of the N1 segment to the same XML record name; however, the HIPAA schemas shipped with BizTalk Server contain annotations that allow the EDI disassembler to create unique XML records based on the presence of a qualifying element.</span></span>  

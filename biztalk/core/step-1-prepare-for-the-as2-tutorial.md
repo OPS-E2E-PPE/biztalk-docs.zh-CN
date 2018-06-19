@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 准备 AS2 教程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 准备 AS2 教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3421c33b-0ccd-4e9d-b1c3-b161278e4d98
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279541"
 ---
 # <a name="step-1-prepare-for-the-as2-tutorial"></a><span data-ttu-id="aa93c-102">步骤 1： 准备 AS2 教程</span><span class="sxs-lookup"><span data-stu-id="aa93c-102">Step 1: Prepare for the AS2 Tutorial</span></span>
 <span data-ttu-id="aa93c-103">![步骤 1 11](../core/media/tut-step1-of-11.gif "Tut_Step1_of_11")</span><span class="sxs-lookup"><span data-stu-id="aa93c-103">![Step 1 of 11](../core/media/tut-step1-of-11.gif "Tut_Step1_of_11")</span></span>  

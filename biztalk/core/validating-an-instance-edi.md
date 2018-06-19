@@ -1,14 +1,14 @@
 ---
-title: "验证实例 (EDI) |Microsoft 文档"
-ms.custom: 
+title: 验证实例 (EDI) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0fe4e87-5ab4-41e4-8ceb-8f6cf40cae0b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288909"
 ---
 # <a name="validating-an-instance-edi"></a><span data-ttu-id="767b6-102">验证实例 (EDI)</span><span class="sxs-lookup"><span data-stu-id="767b6-102">Validating an Instance (EDI)</span></span>
 <span data-ttu-id="767b6-103">你可以在设计时验证对照其 EDI 架构实例。</span><span class="sxs-lookup"><span data-stu-id="767b6-103">You can validate an instance against its EDI schema at design time.</span></span> <span data-ttu-id="767b6-104">为此，您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中的 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] XML 工具扩展。</span><span class="sxs-lookup"><span data-stu-id="767b6-104">To do so, you use the XML Tool extensions to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment.</span></span> <span data-ttu-id="767b6-105">你验证该实例可以使用单个事务集 （具有交换和组标题） 的交换或使用多个事务集 （具有完成批处理的交换单个事务设置 （而无需交换和组标头）交换标题和组标题）。</span><span class="sxs-lookup"><span data-stu-id="767b6-105">The instance that you validate can be a single transaction set (without interchange and group headers), an interchange with a single transaction set (with interchange and group headers), or a complete batched interchange with multiple transaction sets (with interchange and group headers).</span></span>  

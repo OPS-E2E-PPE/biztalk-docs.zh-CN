@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10840 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10840 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fcffe07-7800-4056-8cd8-9961a3638bcd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276965"
 ---
 # <a name="single-sign-on-event-10840"></a><span data-ttu-id="3cbff-102">单一登录： 事件 10840</span><span class="sxs-lookup"><span data-stu-id="3cbff-102">Single Sign-On: Event 10840</span></span>
 ## <a name="details"></a><span data-ttu-id="3cbff-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="3cbff-103">Details</span></span>  

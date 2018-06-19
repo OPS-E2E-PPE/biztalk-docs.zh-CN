@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 适配器包常见问题 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 适配器包常见问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0cdaf09a-50fe-4f30-bd9d-60e316351846
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227085"
 ---
 # <a name="frequently-asked-questions"></a><span data-ttu-id="233a5-102">常见问题</span><span class="sxs-lookup"><span data-stu-id="233a5-102">Frequently Asked Questions</span></span>
 <span data-ttu-id="233a5-103">常见问题 (Faq) 有关[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="233a5-103">Frequently asked questions (FAQs) about the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].</span></span>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 [<span data-ttu-id="233a5-131">解决 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="233a5-131">Troubleshoot the SQL adapter</span></span>](../adapters-and-accelerators/adapter-sql/troubleshoot-the-sql-adapter.md)  
   
 ### <a name="are-performance-counters-available-for-the-adapters"></a><span data-ttu-id="233a5-132">是否性能计数器可用于适配器？</span><span class="sxs-lookup"><span data-stu-id="233a5-132">Are performance counters available for the adapters?</span></span>  
-<span data-ttu-id="233a5-133">是。</span><span class="sxs-lookup"><span data-stu-id="233a5-133">Yes.</span></span> <span data-ttu-id="233a5-134">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]提供**LOB 时间 （的累积）**性能计数器，以测量的时间，以毫秒为单位，LOB 客户端库所需完成某项操作启动的适配器。</span><span class="sxs-lookup"><span data-stu-id="233a5-134">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] provides a **LOB Time (Cumulative)** performance counter to measure the time, in milliseconds, that the LOB client library takes to complete an action initiated by the adapter.</span></span>  <span data-ttu-id="233a5-135">可以通过设置中启用性能计数器`EnablePerformanceCounters`属性绑定到**True**。</span><span class="sxs-lookup"><span data-stu-id="233a5-135">You can enable the performance counters by setting the `EnablePerformanceCounters` binding property to **True**.</span></span> <span data-ttu-id="233a5-136">若要禁用性能计数器，设置`EnablePerformanceCounters`到**False** （默认值）。</span><span class="sxs-lookup"><span data-stu-id="233a5-136">To disable performance counters, set `EnablePerformanceCounters` to **False** (the default value).</span></span>   
+<span data-ttu-id="233a5-133">是。</span><span class="sxs-lookup"><span data-stu-id="233a5-133">Yes.</span></span> <span data-ttu-id="233a5-134">[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]提供**LOB 时间 （的累积）** 性能计数器，以测量的时间，以毫秒为单位，LOB 客户端库所需完成某项操作启动的适配器。</span><span class="sxs-lookup"><span data-stu-id="233a5-134">The [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] provides a **LOB Time (Cumulative)** performance counter to measure the time, in milliseconds, that the LOB client library takes to complete an action initiated by the adapter.</span></span>  <span data-ttu-id="233a5-135">可以通过设置中启用性能计数器`EnablePerformanceCounters`属性绑定到**True**。</span><span class="sxs-lookup"><span data-stu-id="233a5-135">You can enable the performance counters by setting the `EnablePerformanceCounters` binding property to **True**.</span></span> <span data-ttu-id="233a5-136">若要禁用性能计数器，设置`EnablePerformanceCounters`到**False** （默认值）。</span><span class="sxs-lookup"><span data-stu-id="233a5-136">To disable performance counters, set `EnablePerformanceCounters` to **False** (the default value).</span></span>   
 
 ## <a name="biztalk-server-questions"></a><span data-ttu-id="233a5-137">BizTalk Server 问题</span><span class="sxs-lookup"><span data-stu-id="233a5-137">BizTalk Server questions</span></span>
 

@@ -1,11 +1,11 @@
 ---
-title: "使用事实数据资源管理器 |Microsoft 文档"
-ms.custom: 
+title: 使用事实数据资源管理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rule Composer, Facts Explorer
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - business rules, .NET classes
 - Facts Explorer [Business Rule Composer]
 ms.assetid: ee125eb1-d5b9-4121-8a25-fcb7a640570e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,9 +24,10 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287701"
 ---
 # <a name="using-facts-explorer"></a><span data-ttu-id="951a5-102">使用事实数据资源管理器</span><span class="sxs-lookup"><span data-stu-id="951a5-102">Using Facts Explorer</span></span>
-<span data-ttu-id="951a5-103">事实数据资源管理器包含四个选项卡：**词汇**， **XML 架构**，**数据库**，和**.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="951a5-103">The Facts Explorer contains four tabs: **Vocabularies**, **XML Schemas**, **Databases**, and **.NET Classes**.</span></span>  
+<span data-ttu-id="951a5-103">事实数据资源管理器包含四个选项卡：**词汇**， **XML 架构**，**数据库**，和 **.NET 类**。</span><span class="sxs-lookup"><span data-stu-id="951a5-103">The Facts Explorer contains four tabs: **Vocabularies**, **XML Schemas**, **Databases**, and **.NET Classes**.</span></span>  
   
 ## <a name="vocabularies-tab"></a><span data-ttu-id="951a5-104">“词汇”选项卡</span><span class="sxs-lookup"><span data-stu-id="951a5-104">Vocabularies tab</span></span>  
  <span data-ttu-id="951a5-105">使用**词汇**事实数据资源管理器来管理词汇版本和定义中的选项卡。</span><span class="sxs-lookup"><span data-stu-id="951a5-105">Use the **Vocabularies** tab in the Facts Explorer to manage vocabulary versions and definitions.</span></span>  

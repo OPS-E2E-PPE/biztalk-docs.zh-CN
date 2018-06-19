@@ -1,17 +1,17 @@
 ---
-title: "SOAP 适配器安全建议 |Microsoft 文档"
-ms.custom: 
+title: SOAP 适配器安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP adapters, security
 - security, SOAP adapters
 ms.assetid: f869bd82-df93-45e1-b747-b538820253fb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279589"
 ---
 # <a name="soap-adapter-security-recommendations"></a><span data-ttu-id="8c1a7-102">SOAP 适配器安全建议</span><span class="sxs-lookup"><span data-stu-id="8c1a7-102">SOAP Adapter Security Recommendations</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="8c1a7-103"> 使用 SOAP 适配器来发布（接收）和使用（发送）Web Services。</span><span class="sxs-lookup"><span data-stu-id="8c1a7-103"> uses the SOAP adapter to publish (receive) and consume (send) Web services.</span></span> <span data-ttu-id="8c1a7-104">有关 SOAP 适配器的详细信息，请参阅[SOAP 适配器](../core/soap-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="8c1a7-104">For more information about the SOAP adapter, see [SOAP Adapter](../core/soap-adapter.md).</span></span> <span data-ttu-id="8c1a7-105">有关 Web 服务的详细信息，请参阅[使用 Web 服务](../core/using-web-services.md)。</span><span class="sxs-lookup"><span data-stu-id="8c1a7-105">For more information about Web services, see [Using Web Services](../core/using-web-services.md).</span></span> <span data-ttu-id="8c1a7-106">建议你遵循这些准则以确保你的环境中的 SOAP 适配器的安全并对其进行部署。</span><span class="sxs-lookup"><span data-stu-id="8c1a7-106">It is recommended you follow these guidelines for securing and deploying the SOAP adapter in your environment.</span></span>  

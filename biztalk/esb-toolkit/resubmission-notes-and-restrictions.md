@@ -1,14 +1,14 @@
 ---
-title: "重新提交说明和限制 |Microsoft 文档"
-ms.custom: 
+title: 重新提交说明和限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 391064a9-1d61-4b10-97ab-d93b37d1ae23
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976603"
 ---
 # <a name="resubmission-notes-and-restrictions"></a><span data-ttu-id="16eaa-102">重新提交说明和限制</span><span class="sxs-lookup"><span data-stu-id="16eaa-102">Resubmission Notes and Restrictions</span></span>
 <span data-ttu-id="16eaa-103">下面的注意事项和限制适用于重新提交过程：</span><span class="sxs-lookup"><span data-stu-id="16eaa-103">The following notes and restrictions apply to the resubmission process:</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="16eaa-105">用于在提升 WCF 默认 URL 为 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc。</span><span class="sxs-lookup"><span data-stu-id="16eaa-105">The default URL for the WCF on-ramp is http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc.</span></span>  
   
--   <span data-ttu-id="16eaa-106">门户网站的 Web.config 文件定义 WCF 入口中的终结点详细信息**\<客户端\>**节点 **\<System.ServiceModel\>** 部分。</span><span class="sxs-lookup"><span data-stu-id="16eaa-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="16eaa-107">下面是默认值。</span><span class="sxs-lookup"><span data-stu-id="16eaa-107">The following is the default value.</span></span>  
+-   <span data-ttu-id="16eaa-106">门户网站的 Web.config 文件定义 WCF 入口中的终结点详细信息**\<客户端\>** 节点 **\<System.ServiceModel\>** 部分。</span><span class="sxs-lookup"><span data-stu-id="16eaa-106">The portal Web.config file defines the endpoint details for the WCF on-ramp in the **\<Client\>** node of the **\<System.ServiceModel\>** section.</span></span> <span data-ttu-id="16eaa-107">下面是默认值。</span><span class="sxs-lookup"><span data-stu-id="16eaa-107">The following is the default value.</span></span>  
   
     ```  
     <endpoint  

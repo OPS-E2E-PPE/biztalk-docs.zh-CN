@@ -1,14 +1,14 @@
 ---
-title: "警报订阅中添加和编辑订阅页面 |Microsoft 文档"
-ms.custom: 
+title: 警报订阅中添加和编辑订阅页面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad5e99f1-714e-458b-b5f0-85ac69be5335
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290037"
 ---
 # <a name="add-alert-subscription-and-edit-subscription-pages"></a><span data-ttu-id="a52b4-102">警报订阅中添加和编辑订阅页面</span><span class="sxs-lookup"><span data-stu-id="a52b4-102">Add Alert Subscription and Edit Subscription Pages</span></span>
 <span data-ttu-id="a52b4-103">添加警报订阅和编辑订阅页很相似。</span><span class="sxs-lookup"><span data-stu-id="a52b4-103">The Add Alert Subscription and Edit Subscription pages are similar.</span></span> <span data-ttu-id="a52b4-104">它们不同，因为编辑订阅页显示订阅服务器 ID （Microsoft Windows 当前门户用户的帐户），并具有一组不同的按钮。</span><span class="sxs-lookup"><span data-stu-id="a52b4-104">They differ in that the Edit Subscription page shows the subscriber ID (the Microsoft Windows account of the current portal user), and has a different set of buttons.</span></span> <span data-ttu-id="a52b4-105">图 1 显示的添加警报订阅和编辑订阅页。</span><span class="sxs-lookup"><span data-stu-id="a52b4-105">Figure 1 shows the Add Alert Subscription and Edit Subscription pages.</span></span>  
