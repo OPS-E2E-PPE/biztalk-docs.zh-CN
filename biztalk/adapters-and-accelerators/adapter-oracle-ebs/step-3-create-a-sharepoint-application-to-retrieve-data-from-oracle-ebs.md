@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建 SharePoint 应用程序从 Oracle E-business Suite 检索数据 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建 SharePoint 应用程序从 Oracle E-business Suite 检索数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eaa16011-9284-4ccf-8132-9c1e14cc6aa7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217197"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-e-business-suite"></a><span data-ttu-id="31381-102">步骤 3： 创建 SharePoint 应用程序从 Oracle E-business Suite 检索数据</span><span class="sxs-lookup"><span data-stu-id="31381-102">Step 3: Create a SharePoint application to retrieve data from Oracle E-Business Suite</span></span>
 <span data-ttu-id="31381-103">![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="31381-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="31381-104">**完成时间：** 15 分钟</span><span class="sxs-lookup"><span data-stu-id="31381-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="31381-105">**目标：**现在必须导入 Microsoft Office SharePoint Server 中的应用程序定义文件，并设置应用程序从 Oracle E-business Suite 检索数据。</span><span class="sxs-lookup"><span data-stu-id="31381-105">**Objective:** You must now import the application definition file in Microsoft Office SharePoint Server, and set up an application to retrieve data from Oracle E-Business Suite.</span></span>  
+ <span data-ttu-id="31381-105">**目标：** 现在必须导入 Microsoft Office SharePoint Server 中的应用程序定义文件，并设置应用程序从 Oracle E-business Suite 检索数据。</span><span class="sxs-lookup"><span data-stu-id="31381-105">**Objective:** You must now import the application definition file in Microsoft Office SharePoint Server, and set up an application to retrieve data from Oracle E-Business Suite.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="31381-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="31381-106">Prerequisites</span></span>  
   

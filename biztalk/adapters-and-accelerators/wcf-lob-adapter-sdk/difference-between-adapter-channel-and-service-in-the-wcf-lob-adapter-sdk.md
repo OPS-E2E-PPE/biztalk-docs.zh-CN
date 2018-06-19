@@ -1,14 +1,14 @@
 ---
-title: "在 WCF LOB 适配器 SDK 适配器通道和服务之间的差异 |Microsoft 文档"
-ms.custom: 
+title: 在 WCF LOB 适配器 SDK 适配器通道和服务之间的差异 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24d41d96-0ea1-4a97-bd45-b65afdbbd923
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225005"
 ---
 # <a name="difference-between-adapter-channel-and-service-in-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="b071a-102">在 WCF LOB 适配器 SDK 适配器通道和服务之间的差异</span><span class="sxs-lookup"><span data-stu-id="b071a-102">Difference between adapter channel and service in the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="b071a-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]和[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]每提供一组可用于公开到消费应用程序在同一台计算机或网络中的应用程序功能的 Api。</span><span class="sxs-lookup"><span data-stu-id="b071a-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] and [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] each provide a set of APIs that can be used to expose application functionality to consuming applications on the same computer or across a network.</span></span> <span data-ttu-id="b071a-104">若要选择最合适的框架，你必须考虑的目标系统应用程序公开的功能的业务要求以及要公开的属性。</span><span class="sxs-lookup"><span data-stu-id="b071a-104">To choose the most appropriate framework, you must consider the properties of the target system application you are exposing as well as the business requirements for the exposed functionality.</span></span> <span data-ttu-id="b071a-105">本主题提供了可用于选择合适的框架的准则。</span><span class="sxs-lookup"><span data-stu-id="b071a-105">This topic provides guidelines that you can use to choose the appropriate framework.</span></span>  

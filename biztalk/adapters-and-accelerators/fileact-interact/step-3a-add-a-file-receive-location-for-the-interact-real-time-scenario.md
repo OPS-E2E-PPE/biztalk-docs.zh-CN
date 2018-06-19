@@ -1,14 +1,14 @@
 ---
-title: "步骤 3A： 添加一个文件接收位置交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3A： 添加一个文件接收位置交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5579375-8c05-4583-bcaa-b483ac275d8a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224557"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario"></a><span data-ttu-id="2eb12-102">步骤 3A： 添加一个文件接收位置交互实时方案</span><span class="sxs-lookup"><span data-stu-id="2eb12-102">Step 3A: Add a FILE Receive Location for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="2eb12-103">设置使您能够轻松地删除用于验证测试文件的接收位置。</span><span class="sxs-lookup"><span data-stu-id="2eb12-103">Set up a receive location that enables you to easily drop test files for validation.</span></span> <span data-ttu-id="2eb12-104">此位置用于测试的方案。</span><span class="sxs-lookup"><span data-stu-id="2eb12-104">You use this location to test the scenario.</span></span>  

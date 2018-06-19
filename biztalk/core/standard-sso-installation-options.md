@@ -1,17 +1,17 @@
 ---
-title: "标准 SSO 安装选项 |Microsoft 文档"
-ms.custom: 
+title: 标准 SSO 安装选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, SSO
 - SSO, installing
 ms.assetid: 59aeb503-f369-4145-8a3c-ab60e9ed31a8
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279149"
 ---
 # <a name="standard-sso-installation-options"></a><span data-ttu-id="4d62f-102">标准 SSO 安装选项</span><span class="sxs-lookup"><span data-stu-id="4d62f-102">Standard SSO Installation Options</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="4d62f-103">利用用于安全地存储凭据的企业单一登录 (SSO) 功能，以启用单一登录方案。</span><span class="sxs-lookup"><span data-stu-id="4d62f-103"> leverages the Enterprise Single Sign-On (SSO) capabilities for securely storing credentials to enable single sign-on scenarios.</span></span>  
@@ -33,17 +34,17 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="4d62f-113">**安装选项的列表**： 运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。</span><span class="sxs-lookup"><span data-stu-id="4d62f-113">**List of installation options**: Run the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup program.</span></span> <span data-ttu-id="4d62f-114">选择**自定义安装**，然后从以下列表中选择相应的选项：</span><span class="sxs-lookup"><span data-stu-id="4d62f-114">Select **Custom Installation**, and then select the appropriate option from the following list:</span></span>  
   
--   <span data-ttu-id="4d62f-115">**企业单一登录管理 ―**用于映射并连接到企业单一登录服务的管理和客户端工具。</span><span class="sxs-lookup"><span data-stu-id="4d62f-115">**Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.</span></span>  
+-   <span data-ttu-id="4d62f-115">**企业单一登录管理 ―** 用于映射并连接到企业单一登录服务的管理和客户端工具。</span><span class="sxs-lookup"><span data-stu-id="4d62f-115">**Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.</span></span>  
   
--   <span data-ttu-id="4d62f-116">**企业单一登录在主密钥服务器 ―**充当 SSO 系统中的主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="4d62f-116">**Enterprise Single Sign-On Master Secret Server ―** Acts as the Master Secret Server in the SSO System.</span></span> <span data-ttu-id="4d62f-117">这是 SSO 系统中需要部署的第一个服务器，使用该服务器可创建 SSO 数据库。</span><span class="sxs-lookup"><span data-stu-id="4d62f-117">This is the first server in the SSO System that needs to deployed and this allows you to create the SSO database.</span></span>  
+-   <span data-ttu-id="4d62f-116">**企业单一登录在主密钥服务器 ―** 充当 SSO 系统中的主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="4d62f-116">**Enterprise Single Sign-On Master Secret Server ―** Acts as the Master Secret Server in the SSO System.</span></span> <span data-ttu-id="4d62f-117">这是 SSO 系统中需要部署的第一个服务器，使用该服务器可创建 SSO 数据库。</span><span class="sxs-lookup"><span data-stu-id="4d62f-117">This is the first server in the SSO System that needs to deployed and this allows you to create the SSO database.</span></span>  
   
  <span data-ttu-id="4d62f-118">完成安装后，您还可以使用“添加或删除程序”实用工具添加以下项：</span><span class="sxs-lookup"><span data-stu-id="4d62f-118">You can also add the following after setup, by using the Add or Remove Programs utility:</span></span>  
   
--   <span data-ttu-id="4d62f-119">**服务器运行时 ―**核心服务，以启用单一登录，并以安全地存储/访问配置数据。</span><span class="sxs-lookup"><span data-stu-id="4d62f-119">**Server Runtime ―** Core services to enable single sign-on and to store/access configuration data securely.</span></span>  
+-   <span data-ttu-id="4d62f-119">**服务器运行时 ―** 核心服务，以启用单一登录，并以安全地存储/访问配置数据。</span><span class="sxs-lookup"><span data-stu-id="4d62f-119">**Server Runtime ―** Core services to enable single sign-on and to store/access configuration data securely.</span></span>  
   
--   <span data-ttu-id="4d62f-120">**企业单一登录管理 ―**用于映射并连接到企业单一登录服务的管理和客户端工具。</span><span class="sxs-lookup"><span data-stu-id="4d62f-120">**Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.</span></span>  
+-   <span data-ttu-id="4d62f-120">**企业单一登录管理 ―** 用于映射并连接到企业单一登录服务的管理和客户端工具。</span><span class="sxs-lookup"><span data-stu-id="4d62f-120">**Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.</span></span>  
   
--   <span data-ttu-id="4d62f-121">**企业单一登录服务与密码同步 ―**服务，以使企业 SSO 系统中的密码同步功能。</span><span class="sxs-lookup"><span data-stu-id="4d62f-121">**Enterprise Single Sign-On Services with Password Synchronization ―** Services to enable the Password Synchronization feature in the Enterprise SSO System.</span></span> <span data-ttu-id="4d62f-122">这些服务也与 Microsoft 密码更改通知服务相集成。</span><span class="sxs-lookup"><span data-stu-id="4d62f-122">These services also integrate with the Microsoft Password Change Notification Service.</span></span> <span data-ttu-id="4d62f-123">安装核心的企业单一登录服务之后，就可以通过 BizTalk Server 包安装企业 SSO 的密码同步功能了，方法是启动 \Platform\SSO\Setup.exe，然后选择密码同步功能。</span><span class="sxs-lookup"><span data-stu-id="4d62f-123">Once you have installed the core Enterprise Single Sign-On services, you can install the Password Synchronization feature of Enterprise SSO from the BizTalk Server package by launching the \Platform\SSO\Setup.exe and selecting the Password Synchronization feature.</span></span>  
+-   <span data-ttu-id="4d62f-121">**企业单一登录服务与密码同步 ―** 服务，以使企业 SSO 系统中的密码同步功能。</span><span class="sxs-lookup"><span data-stu-id="4d62f-121">**Enterprise Single Sign-On Services with Password Synchronization ―** Services to enable the Password Synchronization feature in the Enterprise SSO System.</span></span> <span data-ttu-id="4d62f-122">这些服务也与 Microsoft 密码更改通知服务相集成。</span><span class="sxs-lookup"><span data-stu-id="4d62f-122">These services also integrate with the Microsoft Password Change Notification Service.</span></span> <span data-ttu-id="4d62f-123">安装核心的企业单一登录服务之后，就可以通过 BizTalk Server 包安装企业 SSO 的密码同步功能了，方法是启动 \Platform\SSO\Setup.exe，然后选择密码同步功能。</span><span class="sxs-lookup"><span data-stu-id="4d62f-123">Once you have installed the core Enterprise Single Sign-On services, you can install the Password Synchronization feature of Enterprise SSO from the BizTalk Server package by launching the \Platform\SSO\Setup.exe and selecting the Password Synchronization feature.</span></span>  
   
 -   <span data-ttu-id="4d62f-124">**软件开发工具包**编程和参考信息。</span><span class="sxs-lookup"><span data-stu-id="4d62f-124">**Software Development Kit** Programming and Reference information.</span></span>  
   

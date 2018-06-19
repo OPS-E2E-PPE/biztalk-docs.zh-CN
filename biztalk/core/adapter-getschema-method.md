@@ -1,14 +1,14 @@
 ---
-title: "适配器 GetSchema 方法 |Microsoft 文档"
-ms.custom: 
+title: 适配器 GetSchema 方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c83340c-a775-435c-9633-3a692611e99e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225189"
 ---
 # <a name="adapter-getschema-method"></a><span data-ttu-id="5dc92-102">适配器 GetSchema 方法</span><span class="sxs-lookup"><span data-stu-id="5dc92-102">Adapter GetSchema Method</span></span>
 <span data-ttu-id="5dc92-103">假定引用的 WSDL 文件只包含架构引用并且不包含嵌入的架构。</span><span class="sxs-lookup"><span data-stu-id="5dc92-103">Suppose the referenced WSDL file contains only schema references and does not contain embedded schemas.</span></span> <span data-ttu-id="5dc92-104">在这种情况下，使用**GetSchema**方法**IAdapterConfig**接口以加载 WSDL 文件中从引用的架构。</span><span class="sxs-lookup"><span data-stu-id="5dc92-104">In this case, you use the **GetSchema** method of the **IAdapterConfig** interface to load a schema referenced from within a WSDL file.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 488b13fa-7a71-4430-bbf5-dbf47ba55562
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223029"
 ---
 # <a name="step-4-test-the-application"></a><span data-ttu-id="8e984-102">步骤 4： 测试应用程序</span><span class="sxs-lookup"><span data-stu-id="8e984-102">Step 4: Test the Application</span></span>
 <span data-ttu-id="8e984-103">![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="8e984-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
   
  <span data-ttu-id="8e984-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="8e984-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="8e984-105">**目标：**的方法是插入中的记录在此步骤中，测试应用程序**员工**表**ADAPTER_SAMPLES**数据库。</span><span class="sxs-lookup"><span data-stu-id="8e984-105">**Objective:** In this step, you test the application by inserting a record in the **Employee** table of the **ADAPTER_SAMPLES** database.</span></span> <span data-ttu-id="8e984-106">如果应用程序都运行正常，业务流程会接收的更改的通知**员工**表。</span><span class="sxs-lookup"><span data-stu-id="8e984-106">If the application is working properly, the orchestration receives a notification for changes to the **Employee** table.</span></span> <span data-ttu-id="8e984-107">然后，业务流程中提取收到的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="8e984-107">The orchestration then extracts the type of notification received.</span></span> <span data-ttu-id="8e984-108">如果通知为插入操作，业务流程执行**UPDATE_EMPLOYEE**存储过程并接收响应。</span><span class="sxs-lookup"><span data-stu-id="8e984-108">If the notification is for an Insert operation, the orchestration executes the **UPDATE_EMPLOYEE** stored procedure and receives a response.</span></span> <span data-ttu-id="8e984-109">业务流程提取的值**Employee_ID**和**名称**响应并将其到插入**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="8e984-109">The orchestration extracts the values of **Employee_ID** and **Name** from the response and inserts them into the **Purchase_Order** table.</span></span>  
+ <span data-ttu-id="8e984-105">**目标：** 的方法是插入中的记录在此步骤中，测试应用程序**员工**表**ADAPTER_SAMPLES**数据库。</span><span class="sxs-lookup"><span data-stu-id="8e984-105">**Objective:** In this step, you test the application by inserting a record in the **Employee** table of the **ADAPTER_SAMPLES** database.</span></span> <span data-ttu-id="8e984-106">如果应用程序都运行正常，业务流程会接收的更改的通知**员工**表。</span><span class="sxs-lookup"><span data-stu-id="8e984-106">If the application is working properly, the orchestration receives a notification for changes to the **Employee** table.</span></span> <span data-ttu-id="8e984-107">然后，业务流程中提取收到的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="8e984-107">The orchestration then extracts the type of notification received.</span></span> <span data-ttu-id="8e984-108">如果通知为插入操作，业务流程执行**UPDATE_EMPLOYEE**存储过程并接收响应。</span><span class="sxs-lookup"><span data-stu-id="8e984-108">If the notification is for an Insert operation, the orchestration executes the **UPDATE_EMPLOYEE** stored procedure and receives a response.</span></span> <span data-ttu-id="8e984-109">业务流程提取的值**Employee_ID**和**名称**响应并将其到插入**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="8e984-109">The orchestration extracts the values of **Employee_ID** and **Name** from the response and inserts them into the **Purchase_Order** table.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="8e984-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="8e984-110">Prerequisites</span></span>  
  <span data-ttu-id="8e984-111">在开始之前与此步骤，你必须确保以下方面：</span><span class="sxs-lookup"><span data-stu-id="8e984-111">Before starting with this step, you must ensure the following:</span></span>  

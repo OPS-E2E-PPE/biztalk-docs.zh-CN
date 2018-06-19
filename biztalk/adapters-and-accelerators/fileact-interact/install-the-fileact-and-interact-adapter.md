@@ -1,14 +1,14 @@
 ---
-title: "安装 FileAct 和交互适配器 |Microsoft 文档"
-ms.custom: 
+title: 安装 FileAct 和交互适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf387d59-373b-4151-9dfd-30c511978862
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224165"
 ---
 # <a name="install-the-fileact-and-interact-adapter"></a><span data-ttu-id="35d7e-102">安装 FileAct 和交互适配器</span><span class="sxs-lookup"><span data-stu-id="35d7e-102">Install the FileAct and InterAct Adapter</span></span>
 <span data-ttu-id="35d7e-103">本部分介绍了如何安装[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]– for SWIFT。</span><span class="sxs-lookup"><span data-stu-id="35d7e-103">This section provides instructions to install [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] – for SWIFT.</span></span> <span data-ttu-id="35d7e-104">安装适配器之前，你必须安装必备软件。</span><span class="sxs-lookup"><span data-stu-id="35d7e-104">Before you install the adapters, you must install the prerequisite software.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "适配器 Framework 配置架构扩展 |Microsoft 文档"
-ms.custom: 
+title: 适配器 Framework 配置架构扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27c9727f-5f97-41ee-a0b8-45d90427b0af
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225221"
 ---
 # <a name="adapter-framework-configuration-schema-extensions"></a><span data-ttu-id="25f18-102">适配器 Framework 配置架构扩展</span><span class="sxs-lookup"><span data-stu-id="25f18-102">Adapter Framework Configuration Schema Extensions</span></span>
 <span data-ttu-id="25f18-103">BizTalk 适配器框架支持基于 XSD 定义动态生成用户界面。</span><span class="sxs-lookup"><span data-stu-id="25f18-103">The BizTalk Adapter Framework supports the dynamic generation of user interfaces based on an XSD definition.</span></span> <span data-ttu-id="25f18-104">该适配器还提供必需的 XSD，并且适配器框架将创建允许用户输入值的属性页。</span><span class="sxs-lookup"><span data-stu-id="25f18-104">The adapter supplies the required XSD and the Adapter Framework creates a property page that allows the user to enter values.</span></span>  

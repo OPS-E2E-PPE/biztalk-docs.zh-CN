@@ -1,14 +1,14 @@
 ---
-title: "所有组节点 |Microsoft 文档"
-ms.custom: 
+title: 所有组节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e28d98c-746a-44d8-bed2-ba539b8432aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230645"
 ---
 # <a name="all-group-nodes"></a><span data-ttu-id="035f2-102">“全部组”节点</span><span class="sxs-lookup"><span data-stu-id="035f2-102">All Group Nodes</span></span>
 <span data-ttu-id="035f2-103">在 BizTalk 编辑器中，你可以插入**所有组**节点包含其他节点将出现零次或一次，按任何顺序。</span><span class="sxs-lookup"><span data-stu-id="035f2-103">In BizTalk Editor, you can insert an **All Group** node to contain other nodes that will appear zero or one time, in any order.</span></span> <span data-ttu-id="035f2-104">在 XML 架构定义 (XSD) 语言中，**所有组**具有比的详细使用情况限制**序列**和**选择**组，将转换为中的几种情况下其中你将能够创建 BizTalk 编辑器**所有组**节点。</span><span class="sxs-lookup"><span data-stu-id="035f2-104">In XML Schema definition (XSD) language, the **All group** has more usage limitations than **Sequence** and **Choice** groups, which translates to few situations within BizTalk Editor where you will be able to create an **All Group** node.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268693"
 ---
 # <a name="role-roles-node"></a><span data-ttu-id="428f5-102">角色（“角色”节点）</span><span class="sxs-lookup"><span data-stu-id="428f5-102">Role (Roles Node)</span></span>
 <span data-ttu-id="428f5-103">绑定文件的“角色”节点的“角色”节点指定了与绑定到随绑定文件一起导出的服务的角色有关的信息。</span><span class="sxs-lookup"><span data-stu-id="428f5-103">The Role node of the Roles node of a binding file specifies information about a role that is bound to a service that is exported with the binding file.</span></span>  

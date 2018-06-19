@@ -1,18 +1,18 @@
 ---
-title: "业务流程示例 |Microsoft 文档"
-ms.custom: 
+title: 业务流程示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 - SDK samples, orchestrations
 ms.assetid: 183dd0dd-9012-46a4-af4e-2b6181d4c148
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209685"
 ---
 # <a name="orchestration-samples"></a><span data-ttu-id="f3359-102">业务流程示例</span><span class="sxs-lookup"><span data-stu-id="f3359-102">Orchestration Samples</span></span>
 <span data-ttu-id="f3359-103">[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 软件开发工具包 (SDK) 包含几个业务流程示例。</span><span class="sxs-lookup"><span data-stu-id="f3359-103">The [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes several orchestration samples.</span></span> <span data-ttu-id="f3359-104">本节提供了有关这些业务流程示例所演示功能的详细信息、生成和运行这些示例的说明以及预期得到的结果。</span><span class="sxs-lookup"><span data-stu-id="f3359-104">This section provides detailed information about the functionality demonstrated by these orchestration samples, instructions for building and running the samples, and the results that you can expect.</span></span>  

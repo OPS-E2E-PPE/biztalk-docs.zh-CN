@@ -1,11 +1,11 @@
 ---
-title: "生成 WCF 客户端或 WCF 服务协定的 Siebel 解决方案项目 |Microsoft 文档"
-ms.custom: 
+title: 生成 WCF 客户端或 WCF 服务协定的 Siebel 解决方案项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, generate a client class by using svcutil.exe
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - how to, generate a client class by using the Add Adapter Service Reference Plug-in
 - how to, generate a client class
 ms.assetid: 52c32c86-6403-4bb4-9d43-1319d19a6b49
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222405"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts"></a><span data-ttu-id="d0a31-102">生成 WCF 客户端或 Siebel 解决方案项目关联的 WCF 服务协定</span><span class="sxs-lookup"><span data-stu-id="d0a31-102">Generate a WCF client or a WCF service contract for Siebel solution artifacts</span></span>
 <span data-ttu-id="d0a31-103">你可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类针对 Siebel 项目上的所选操作。</span><span class="sxs-lookup"><span data-stu-id="d0a31-103">You can use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate a WCF client class targeted at selected operations on Siebel artifacts.</span></span> <span data-ttu-id="d0a31-104">此外可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开通过标准的 Microsoft Windows 界面 ServiceModel 元数据实用工具的功能。</span><span class="sxs-lookup"><span data-stu-id="d0a31-104">You can also use the ServiceModel Metadata Utility Tool (svcutil.exe) to generate the WCF client class; however, the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] exposes the functionality of the ServiceModel Metadata Utility Tool through a standard Microsoft Windows interface.</span></span> <span data-ttu-id="d0a31-105">它还提供浏览和搜索功能，使用 svcutil.exe 工具中，未提供，并生成一个基于连接到 Siebel 系统时选择的绑定属性的配置文件。</span><span class="sxs-lookup"><span data-stu-id="d0a31-105">It also provides browse and search capabilities that are not available with the svcutil.exe tool, and generates a configuration file based on the binding properties that you select when you connect to the Siebel system.</span></span>  
@@ -35,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="d0a31-109">在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击你的项目，并依次**添加适配器服务引用**。</span><span class="sxs-lookup"><span data-stu-id="d0a31-109">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click your project, and then click **Add Adapter Service Reference**.</span></span>  
   
-2.  <span data-ttu-id="d0a31-110">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Siebel 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)连接到 Siebel 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="d0a31-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md) to connect to the Siebel system and browse and search for operations.</span></span> <span data-ttu-id="d0a31-111">若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）**从选择**选择协定类型**（这是默认值） 的下拉列表。</span><span class="sxs-lookup"><span data-stu-id="d0a31-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
+2.  <span data-ttu-id="d0a31-110">后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Siebel 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)连接到 Siebel 系统和浏览和搜索操作。</span><span class="sxs-lookup"><span data-stu-id="d0a31-110">After the **Add Adapter Service Reference** dialog box opens, follow the steps in [Retrieving Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md) to connect to the Siebel system and browse and search for operations.</span></span> <span data-ttu-id="d0a31-111">若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）** 从选择**选择协定类型**（这是默认值） 的下拉列表。</span><span class="sxs-lookup"><span data-stu-id="d0a31-111">To create a WCF client class for the operations that you select, be sure that **Client (Outbound operations)** is selected from the **Select contract type** drop-down list (this is the default).</span></span>  
   
 3.  <span data-ttu-id="d0a31-112">选择所有你想要为目标，请单击操作后**确定**生成 WCF 客户端类。</span><span class="sxs-lookup"><span data-stu-id="d0a31-112">After you select all of the operations that you want to target, click **OK** to generate the WCF client class.</span></span>  
   

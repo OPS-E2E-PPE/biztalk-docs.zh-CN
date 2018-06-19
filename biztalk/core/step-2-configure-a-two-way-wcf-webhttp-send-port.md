@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 配置双向的 WCF WebHttp 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置双向的 WCF WebHttp 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bcab296-7921-4df4-abcc-eea78cc827e8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278885"
 ---
 # <a name="step-2-configure-a-two-way-wcf-webhttp-send-port"></a><span data-ttu-id="49c3c-102">步骤 2： 配置双向的 WCF WebHttp 发送端口</span><span class="sxs-lookup"><span data-stu-id="49c3c-102">Step 2: Configure a Two-way WCF-WebHttp Send Port</span></span>
 <span data-ttu-id="49c3c-103">在此步骤中你配置的双向**WCF WebHttp**发送端口来调用 REST 资源 URL，以检索在美国无线运营商的计划中的延迟。</span><span class="sxs-lookup"><span data-stu-id="49c3c-103">In this step you configure a two-way **WCF-WebHttp** send port to invoke the REST resource URL to retrieve delays in the US air carriers’ schedules.</span></span>  

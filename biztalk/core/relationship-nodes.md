@@ -1,11 +1,11 @@
 ---
-title: "关系节点 |Microsoft 文档"
-ms.custom: 
+title: 关系节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - definition files [BAM], relationships
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - Tracking Profile Editor, definition files [BAM]
 ms.assetid: 74090133-24d1-4aba-a4fc-f12d19c881fb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268245"
 ---
 # <a name="relationship-nodes"></a><span data-ttu-id="8cd65-102">关系节点</span><span class="sxs-lookup"><span data-stu-id="8cd65-102">Relationship Nodes</span></span>
 <span data-ttu-id="8cd65-103">只要活动定义文件包含多个活动，就要使用关系文件夹。</span><span class="sxs-lookup"><span data-stu-id="8cd65-103">Relationship folders are used whenever an activity definition file contains more than one activity.</span></span> <span data-ttu-id="8cd65-104">这些文件夹的名称与相关活动的名称匹配。</span><span class="sxs-lookup"><span data-stu-id="8cd65-104">The names of the folders match the name of the associated activity.</span></span> <span data-ttu-id="8cd65-105">通过将关系文件夹的名称与相关活动的活动 ID 进行匹配并匹配数据项的值，可以形成链接。</span><span class="sxs-lookup"><span data-stu-id="8cd65-105">You form the link by matching the name of the relationship folder to the activity ID of the related activity and by matching the values for the data items.</span></span> <span data-ttu-id="8cd65-106">您需要使用单独的节点定义每个关系。</span><span class="sxs-lookup"><span data-stu-id="8cd65-106">You define each relationship using a separate node.</span></span>  

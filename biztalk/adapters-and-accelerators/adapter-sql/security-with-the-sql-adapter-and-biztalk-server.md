@@ -1,14 +1,14 @@
 ---
-title: "使用 SQL 适配器和 BizTalk Server 的安全 |Microsoft 文档"
-ms.custom: 
+title: 使用 SQL 适配器和 BizTalk Server 的安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc439d65-1d7e-4e6e-bb0d-a8cb9f0607b8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225773"
 ---
 # <a name="security-with-the-sql-adapter-and-biztalk-server"></a><span data-ttu-id="6572e-102">使用 SQL 适配器和 BizTalk Server 的安全</span><span class="sxs-lookup"><span data-stu-id="6572e-102">Security with the SQL adapter and BizTalk Server</span></span>
 <span data-ttu-id="6572e-103">配置发送端口或接收端口 （位置） 时使用 BizTalk Server 管理控制台或使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要检索 BizTalk 解决方案的消息架构，你必须提供凭据的 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="6572e-103">When you configure a send port or a receive port (location) by using the BizTalk Server Administration console or use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to retrieve message schemas for a BizTalk solution, you must provide credentials for the SQL Server database.</span></span> <span data-ttu-id="6572e-104">请务必在一个安全的方法，可帮助防止它们被暴露给潜在的恶意 actors 中提供这些凭据。</span><span class="sxs-lookup"><span data-stu-id="6572e-104">It is important to supply these credentials in a secure way to help prevent them from being revealed to potentially malicious actors.</span></span> <span data-ttu-id="6572e-105">本主题讨论如何最安全地提供的凭据[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]BizTalk Server 解决方案。</span><span class="sxs-lookup"><span data-stu-id="6572e-105">This topic discusses how to most securely supply credentials for the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] for BizTalk Server solutions.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 ### <a name="user-name-password-credentials"></a><span data-ttu-id="6572e-122">用户名密码凭据</span><span class="sxs-lookup"><span data-stu-id="6572e-122">User Name Password Credentials</span></span>  
  <span data-ttu-id="6572e-123">你应仅提供用户名和密码从**凭据**选项卡 （对于发送端口） 或**其他**选项卡 （用于接收位置） 中**WCF 自定义传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="6572e-123">You should only supply a user name and password from the **Credentials** tab (for send ports) or the **Other** tab (for receive locations) in the **WCF-Custom Transport Properties** dialog box.</span></span> <span data-ttu-id="6572e-124">这可确保以下项：</span><span class="sxs-lookup"><span data-stu-id="6572e-124">This ensures the following:</span></span>  
   
--   <span data-ttu-id="6572e-125">你的凭据将不会显示在**地址 (URI)**对话框中的字段。</span><span class="sxs-lookup"><span data-stu-id="6572e-125">Your credentials will not be displayed in the **Address (URI)** field of the dialog box.</span></span> <span data-ttu-id="6572e-126">这可以阻止有权访问你的屏幕 （或具有权限，使他们能够查看发送端口或接收位置属性） 的那些看到你的凭据。</span><span class="sxs-lookup"><span data-stu-id="6572e-126">This prevents those who have access to your screen (or who have permissions that enable them to view the send port or receive location properties) from seeing your credentials.</span></span>  
+-   <span data-ttu-id="6572e-125">你的凭据将不会显示在**地址 (URI)** 对话框中的字段。</span><span class="sxs-lookup"><span data-stu-id="6572e-125">Your credentials will not be displayed in the **Address (URI)** field of the dialog box.</span></span> <span data-ttu-id="6572e-126">这可以阻止有权访问你的屏幕 （或具有权限，使他们能够查看发送端口或接收位置属性） 的那些看到你的凭据。</span><span class="sxs-lookup"><span data-stu-id="6572e-126">This prevents those who have access to your screen (or who have permissions that enable them to view the send port or receive location properties) from seeing your credentials.</span></span>  
   
 -   <span data-ttu-id="6572e-127">如果导出发送端口或接收端口绑定，你的密码将不写入到绑定文件中。</span><span class="sxs-lookup"><span data-stu-id="6572e-127">Your password will not be written to the binding file if you export the send port or receive port binding.</span></span> <span data-ttu-id="6572e-128">这可以防止任何人都具有访问权限到文件查看你的密码。</span><span class="sxs-lookup"><span data-stu-id="6572e-128">This prevents anyone with access to the file from viewing your password.</span></span>  
   

@@ -1,14 +1,14 @@
 ---
-title: "失败的控制编号重置 |Microsoft 文档"
-ms.custom: 
+title: 失败的控制编号重置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 64e83c07-1569-4433-b882-a26784b7bb0f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268613"
 ---
 # <a name="reset-for-control-number-failed"></a><span data-ttu-id="e5b18-102">控制编号重置失败</span><span class="sxs-lookup"><span data-stu-id="e5b18-102">Reset for Control number failed</span></span>
 ## <a name="details"></a><span data-ttu-id="e5b18-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e5b18-103">Details</span></span>  

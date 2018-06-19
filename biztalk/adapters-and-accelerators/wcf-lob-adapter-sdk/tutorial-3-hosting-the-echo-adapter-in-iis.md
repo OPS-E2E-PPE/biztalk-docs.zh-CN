@@ -1,14 +1,14 @@
 ---
-title: "教程 3： 承载在 IIS 中的 Echo 适配器 |Microsoft 文档"
-ms.custom: 
+title: 教程 3： 承载在 IIS 中的 Echo 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3044cdea-e9b2-4cc2-b66e-799da1dfc07e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225181"
 ---
 # <a name="tutorial-3-hosting-the-echo-adapter-in-iis"></a><span data-ttu-id="fb210-102">教程 3： 承载在 IIS 中的 Echo 适配器</span><span class="sxs-lookup"><span data-stu-id="fb210-102">Tutorial 3: Hosting the Echo Adapter in IIS</span></span>
 <span data-ttu-id="fb210-103">本教程提供分步说明，为承载 Echo 适配器开发[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="fb210-103">This tutorial provides step-by-step instructions for hosting the Echo Adapter developed in [Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md).</span></span> <span data-ttu-id="fb210-104">更具体地说的步骤说明如何通过使用托管在 Internet 信息服务 (IIS) 的适配器[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fb210-104">More specifically, the steps show how you can host the adapter in Internet Information Services (IIS) by using the [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)].</span></span> <span data-ttu-id="fb210-105">将还使用在 SharePoint 中的业务数据目录功能来调用的承载于 IIS 中的适配器，此 EchoGreetings 操作，然后 Web 部件中显示的结果。</span><span class="sxs-lookup"><span data-stu-id="fb210-105">You will also use the Business Data Catalog feature in SharePoint to call the EchoGreetings operation of the IIS-hosted adapter, and then display the results in a Web Part.</span></span>  

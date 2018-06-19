@@ -1,17 +1,17 @@
 ---
-title: "解决性能问题与 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决性能问题与 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, performance issues
 - performance, troubleshooting
 ms.assetid: fe413b15-f703-4148-99df-17b5be3c74c1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221989"
 ---
 # <a name="troubleshoot-performance-issues-with-the-siebel-adapter"></a><span data-ttu-id="8ec94-102">与 Siebel 适配器解决性能问题</span><span class="sxs-lookup"><span data-stu-id="8ec94-102">Troubleshoot Performance Issues with the Siebel adapter</span></span>
 <span data-ttu-id="8ec94-103">本部分讨论如何使用故障排除方法来解决在使用时可能遇到的性能问题[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8ec94-103">This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span></span>  

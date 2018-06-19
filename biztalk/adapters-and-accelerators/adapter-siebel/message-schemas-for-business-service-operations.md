@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222293"
 ---
 # <a name="message-schemas-for-business-service-operations"></a><span data-ttu-id="26037-102">业务服务操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="26037-102">Message Schemas for Business Service Operations</span></span>
 <span data-ttu-id="26037-103">Siebel 业务服务是可以直接调用 Siebel 系统的业务方法的集合。</span><span class="sxs-lookup"><span data-stu-id="26037-103">A Siebel business service is a collection of business methods that can be directly invoked on a Siebel system.</span></span> <span data-ttu-id="26037-104">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]呈现 Siebel 业务服务的业务方法作为操作。</span><span class="sxs-lookup"><span data-stu-id="26037-104">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] surfaces the business methods of a Siebel business service as operations.</span></span>  

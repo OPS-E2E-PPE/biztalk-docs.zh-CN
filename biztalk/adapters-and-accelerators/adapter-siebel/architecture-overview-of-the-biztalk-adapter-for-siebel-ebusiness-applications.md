@@ -1,18 +1,18 @@
 ---
-title: "Siebel eBusiness Applications 的 BizTalk 适配器的体系结构概述 |Microsoft 文档"
-ms.custom: 
+title: Siebel eBusiness Applications 的 BizTalk 适配器的体系结构概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture of Siebel adapter
 - Siebel COM Data Control
 - adapters, architecture
 ms.assetid: b048937f-207b-4c64-8837-7bfeecedfa03
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219061"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="123e6-102">Siebel eBusiness Applications 的 BizTalk 适配器的体系结构概述</span><span class="sxs-lookup"><span data-stu-id="123e6-102">Architecture overview of the BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="123e6-103">描述使用的端到端解决方案的体系结构[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]若要在 Siebel 系统，以及内部体系结构的运行[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="123e6-103">Describes the architecture of end-to-end solutions that use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to operate on a Siebel system, and also the internal architecture of the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "访问在管道组件中的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 访问在管道组件中的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SOAP headers, pipelines
 - SOAP headers, properties
 - pipelines, SOAP headers
 ms.assetid: a2fb074e-0fde-487e-a6ec-7e2b543b7c8b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225093"
 ---
 # <a name="accessing-soap-headers-in-pipeline-components"></a><span data-ttu-id="03a19-102">访问在管道组件中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="03a19-102">Accessing SOAP Headers in Pipeline Components</span></span>
 <span data-ttu-id="03a19-103">你可以访问在管道组件中的 SOAP 标头上下文属性。</span><span class="sxs-lookup"><span data-stu-id="03a19-103">You can access SOAP header context properties in pipeline components.</span></span> <span data-ttu-id="03a19-104">使用上下文属性名称和目标命名空间的组合**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。</span><span class="sxs-lookup"><span data-stu-id="03a19-104">You use a combination of the context property name and the target namespace **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**.</span></span>  

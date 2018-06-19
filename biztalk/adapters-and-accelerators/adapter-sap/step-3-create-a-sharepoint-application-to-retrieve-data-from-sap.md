@@ -1,11 +1,11 @@
 ---
-title: "步骤 3： 创建 SharePoint 应用程序从 SAP 检索数据 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建 SharePoint 应用程序从 SAP 检索数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO application, creating an
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - Web Part page, creating a
 - Shared Services Provider, creating a
 ms.assetid: 7158caec-9dc0-477c-9db3-179e634e5196
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,13 +25,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219533"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a><span data-ttu-id="0ec71-102">步骤 3： 创建 SharePoint 应用程序从 SAP 检索数据</span><span class="sxs-lookup"><span data-stu-id="0ec71-102">Step 3: Create a SharePoint Application to Retrieve Data from SAP</span></span>
 <span data-ttu-id="0ec71-103">![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="0ec71-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
   
  <span data-ttu-id="0ec71-104">**完成时间：** 15 分钟</span><span class="sxs-lookup"><span data-stu-id="0ec71-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="0ec71-105">**目标：**现在必须采用使用业务数据目录定义编辑器工具创建的应用程序定义文件，并将其导入 Microsoft Office SharePoint Server。</span><span class="sxs-lookup"><span data-stu-id="0ec71-105">**Objective:** You must now take the application definition file that you created by using the Business Data Catalog Definition Editor tool, and import it into Microsoft Office SharePoint Server.</span></span>  
+ <span data-ttu-id="0ec71-105">**目标：** 现在必须采用使用业务数据目录定义编辑器工具创建的应用程序定义文件，并将其导入 Microsoft Office SharePoint Server。</span><span class="sxs-lookup"><span data-stu-id="0ec71-105">**Objective:** You must now take the application definition file that you created by using the Business Data Catalog Definition Editor tool, and import it into Microsoft Office SharePoint Server.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="0ec71-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="0ec71-106">Prerequisites</span></span>  
   

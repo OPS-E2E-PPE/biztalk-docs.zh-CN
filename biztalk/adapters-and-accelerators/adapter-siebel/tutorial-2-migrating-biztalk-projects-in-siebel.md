@@ -1,14 +1,14 @@
 ---
-title: "教程 2： 迁移 BizTalk 项目中 Siebel |Microsoft 文档"
-ms.custom: 
+title: 教程 2： 迁移 BizTalk 项目中 Siebel |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a2a1828-8cc8-4b80-99bd-c083c04e5d04
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223005"
 ---
 # <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a><span data-ttu-id="2218a-102">教程 2： 迁移中 Siebel 的 BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="2218a-102">Tutorial 2: Migrating BizTalk Projects in Siebel</span></span>
 <span data-ttu-id="2218a-103">Microsoft BizTalk 服务器随附的 Siebel 适配器以前版本的基于 WCF 的不同[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在许多方面，包括：</span><span class="sxs-lookup"><span data-stu-id="2218a-103">The previous version of the Siebel adapter that shipped with Microsoft BizTalk Server differs from the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in many aspects, including:</span></span>  

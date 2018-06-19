@@ -1,14 +1,14 @@
 ---
-title: "交互适配器安全体系结构 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器安全体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a4924b8c-1fda-4a0c-b9be-8f2ccba38013
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225357"
 ---
 # <a name="interact-adapter-security-architecture"></a><span data-ttu-id="c16d4-102">交互适配器安全体系结构</span><span class="sxs-lookup"><span data-stu-id="c16d4-102">InterAct Adapter Security Architecture</span></span>
 <span data-ttu-id="c16d4-103">使用 SWIFTNet 链接 (SNL) 和 SWIFTAlliance 网关 （压降） 中的固有的证书和加密功能实现的消息发送和接收的安全性。</span><span class="sxs-lookup"><span data-stu-id="c16d4-103">Security for the message transmission and receipt is implemented using the certificate and crypto features inherent in SWIFTNet Link (SNL) and the SWIFTAlliance Gateway (SAG).</span></span> <span data-ttu-id="c16d4-104">SWIFT 建议服务设计为将"端到端"签名应用的交互 — 也就是说，来签署请求和响应消息。</span><span class="sxs-lookup"><span data-stu-id="c16d4-104">SWIFT recommends that services designed for InterAct to apply an “end-to-end” signature—that is, to sign both request and response messages.</span></span>  

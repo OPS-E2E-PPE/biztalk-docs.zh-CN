@@ -1,14 +1,14 @@
 ---
-title: "FileAct 实时方案 |Microsoft 文档"
-ms.custom: 
+title: FileAct 实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47983fc0-330e-488a-a0bd-5c11bf507e2f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222949"
 ---
 # <a name="fileact-real-time-scenario"></a><span data-ttu-id="cdaf7-102">FileAct 实时方案</span><span class="sxs-lookup"><span data-stu-id="cdaf7-102">FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="cdaf7-103">在开始此方案之前，必须完成[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)。</span><span class="sxs-lookup"><span data-stu-id="cdaf7-103">Before you begin this scenario, you must complete [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).</span></span>  

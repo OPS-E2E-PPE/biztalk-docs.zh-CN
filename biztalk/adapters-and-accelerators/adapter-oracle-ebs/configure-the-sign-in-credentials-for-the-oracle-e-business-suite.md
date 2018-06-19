@@ -1,14 +1,14 @@
 ---
-title: "为 Oracle E-business Suite 配置登录凭据 |Microsoft 文档"
-ms.custom: 
+title: 为 Oracle E-business Suite 配置登录凭据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 743ced51-706b-4788-b5a8-e0ed8ffb3b48
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219069"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-e-business-suite"></a><span data-ttu-id="68549-102">为 Oracle E-business Suite 配置登录凭据</span><span class="sxs-lookup"><span data-stu-id="68549-102">Configure the sign-in credentials for the Oracle E-Business Suite</span></span>
 <span data-ttu-id="68549-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]需要适配器客户端提供客户端凭据。</span><span class="sxs-lookup"><span data-stu-id="68549-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="68549-104">适配器使用这些凭据进行身份验证与 Oracle E-business Suite 用户并建立连接。</span><span class="sxs-lookup"><span data-stu-id="68549-104">The adapter uses these credentials to authenticate the user with the Oracle E-Business Suite and to establish a connection.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "什么是 FileAct 适配器？ | Microsoft Docs"
-ms.custom: 
+title: 什么是 FileAct 适配器？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05ec8f1e-57f9-4e2d-ab8b-22b5c4b28055
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225317"
 ---
 # <a name="what-is-the-fileact-adapter"></a><span data-ttu-id="0799d-103">什么是 FileAct 适配器？</span><span class="sxs-lookup"><span data-stu-id="0799d-103">What Is the FileAct Adapter?</span></span>
 <span data-ttu-id="0799d-104">SWIFTNet FileAct 适配器提供 BizTalk Server 和互联网协会之间的连接的全球 Interbank 财务电信 (SWIFT) 保护 IP 网络 (SIPN) 传输的文件。</span><span class="sxs-lookup"><span data-stu-id="0799d-104">The FileAct adapter for SWIFTNet provides connectivity between BizTalk Server and the Society for Worldwide Interbank Financial Telecommunication (SWIFT) Secure IP Network (SIPN) for the transfer of files.</span></span> <span data-ttu-id="0799d-105">SIPN 连接金融机构、 金融业基础结构和客户的安全专用网络上传输消息和文件。</span><span class="sxs-lookup"><span data-stu-id="0799d-105">The SIPN transfers messages and files over a secure private network which connects financial institutions, financial industry infrastructures, and customers.</span></span> <span data-ttu-id="0799d-106">FileAct 适配器使用 SWIFTNet 链接 (SNL) 应用程序编程接口 (API) s 要连接到 SIPN。</span><span class="sxs-lookup"><span data-stu-id="0799d-106">The FileAct adapter uses the SWIFTNet Link (SNL) application programming interface (API)s to connect to the SIPN.</span></span>  
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="0799d-138">**不可否认性发出和接收。**</span><span class="sxs-lookup"><span data-stu-id="0799d-138">**Non-repudiation of emission and reception.**</span></span> <span data-ttu-id="0799d-139">发生争议，允许 SWIFT 以确认所声称的那个，传输未成功进行。</span><span class="sxs-lookup"><span data-stu-id="0799d-139">In case of dispute, allows SWIFT to confirm that the file transfer did take place as claimed.</span></span>  
   
- <span data-ttu-id="0799d-140">标准 SWIFTNet FileAct 功能包括 SWIFTNet PKI 安全性**。**</span><span class="sxs-lookup"><span data-stu-id="0799d-140">The standard SWIFTNet FileAct features include SWIFTNet PKI security**.**</span></span> <span data-ttu-id="0799d-141">SWIFTNet FileAct 使用 SWIFTNet PKI 进行了保护，并提供消息身份验证和完整性控件。</span><span class="sxs-lookup"><span data-stu-id="0799d-141">SWIFTNet FileAct is secured with SWIFTNet PKI and offers message authentication and integrity control.</span></span>  
+ <span data-ttu-id="0799d-140">标准 SWIFTNet FileAct 功能包括 SWIFTNet PKI 安全性 **。**</span><span class="sxs-lookup"><span data-stu-id="0799d-140">The standard SWIFTNet FileAct features include SWIFTNet PKI security **.**</span></span> <span data-ttu-id="0799d-141">SWIFTNet FileAct 使用 SWIFTNet PKI 进行了保护，并提供消息身份验证和完整性控件。</span><span class="sxs-lookup"><span data-stu-id="0799d-141">SWIFTNet FileAct is secured with SWIFTNet PKI and offers message authentication and integrity control.</span></span>  
   
  <span data-ttu-id="0799d-142">所有消息和交换 SWIFTNet 上的文件都对一组通用的检查，以确保安全、 验证和平台的路由规则没有用户可以绕过。</span><span class="sxs-lookup"><span data-stu-id="0799d-142">All messages and files exchanged on SWIFTNet undergo a common set of checks to ensure that no user can bypass the security, validation and routing rules of the platform.</span></span> <span data-ttu-id="0799d-143">SWIFTAlliance 网关 （压降） 应用程序执行这些检查。</span><span class="sxs-lookup"><span data-stu-id="0799d-143">These checks are performed by the SWIFTAlliance Gateway (SAG) application.</span></span>  
   

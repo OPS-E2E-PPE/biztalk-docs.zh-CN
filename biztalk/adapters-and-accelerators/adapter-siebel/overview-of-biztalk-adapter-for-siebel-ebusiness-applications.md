@@ -1,18 +1,18 @@
 ---
-title: "为 Siebel eBusiness 应用程序的 BizTalk Adapter 概述 |Microsoft 文档"
-ms.custom: 
+title: 为 Siebel eBusiness 应用程序的 BizTalk Adapter 概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - overview, adapter
 - adapter, overview of
 - adapter, overview
 ms.assetid: 41ab7d42-7096-45ef-9763-a5ccf88eb652
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222037"
 ---
 # <a name="overview-of-biztalk-adapter-for-siebel-ebusiness-applications"></a><span data-ttu-id="e1da1-102">为 Siebel eBusiness 应用程序的 BizTalk Adapter 概述</span><span class="sxs-lookup"><span data-stu-id="e1da1-102">Overview of BizTalk Adapter for Siebel eBusiness Applications</span></span>
 <span data-ttu-id="e1da1-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开 Siebel 系统作为 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="e1da1-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] exposes the Siebel system as a WCF service.</span></span> <span data-ttu-id="e1da1-104">适配器客户端可以通过交换 SOAP 消息与适配器执行 Siebel 系统上的操作。</span><span class="sxs-lookup"><span data-stu-id="e1da1-104">Adapter clients can perform operations on the Siebel system by exchanging SOAP messages with the adapter.</span></span> <span data-ttu-id="e1da1-105">适配器使用 WCF 消息，并且到 Siebel 系统的适当调用来执行该操作。</span><span class="sxs-lookup"><span data-stu-id="e1da1-105">The adapter consumes the WCF message and makes appropriate calls to the Siebel system to perform the operation.</span></span> <span data-ttu-id="e1da1-106">适配器回客户端的 SOAP 消息的形式，并将响应返回从 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="e1da1-106">The adapter returns the response from the Siebel system back to the client in the form of SOAP messages.</span></span>  

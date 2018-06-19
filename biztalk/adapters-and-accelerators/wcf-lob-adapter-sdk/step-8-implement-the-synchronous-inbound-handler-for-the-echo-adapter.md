@@ -1,14 +1,14 @@
 ---
-title: "步骤 8： 为 Echo 适配器实现同步的入站处理程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 为 Echo 适配器实现同步的入站处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 723eac73-40c4-41b4-aca1-dd7451d25bfe
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226629"
 ---
 # <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a><span data-ttu-id="97ef9-102">步骤 8： 为 Echo 适配器实现同步的入站处理程序</span><span class="sxs-lookup"><span data-stu-id="97ef9-102">Step 8: Implement the Synchronous Inbound Handler for the Echo Adapter</span></span>
 <span data-ttu-id="97ef9-103">![步骤 8 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span><span class="sxs-lookup"><span data-stu-id="97ef9-103">![Step 8 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")</span></span>  

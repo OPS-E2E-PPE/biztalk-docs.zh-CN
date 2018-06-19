@@ -1,11 +1,11 @@
 ---
-title: "删除摘要 |Microsoft 文档"
-ms.custom: 
+title: 删除摘要 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, digests
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - databases, deleting digests
 - maintaining databases, deleting digests
 ms.assetid: bcc7cb11-2f6a-4996-ad50-040d41993e09
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206741"
 ---
 # <a name="deleting-digests"></a><span data-ttu-id="0c9ff-102">删除摘要</span><span class="sxs-lookup"><span data-stu-id="0c9ff-102">Deleting Digests</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="0c9ff-103">[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]存储为传出消息的摘要，以便它可以针对信号内容对它们进行验证。</span><span class="sxs-lookup"><span data-stu-id="0c9ff-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] stores digests for outgoing messages, so it can validate them against signal content.</span></span> <span data-ttu-id="0c9ff-104">不过，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不会在验证后删除摘要。</span><span class="sxs-lookup"><span data-stu-id="0c9ff-104">However, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not delete the digests after validation.</span></span> <span data-ttu-id="0c9ff-105">您可能希望定期删除这些摘要以保持系统性能。</span><span class="sxs-lookup"><span data-stu-id="0c9ff-105">Periodically, you may want to delete these digests to maintain system performance.</span></span>  

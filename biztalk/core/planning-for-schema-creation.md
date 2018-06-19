@@ -1,14 +1,14 @@
 ---
-title: "规划架构创建 |Microsoft 文档"
-ms.custom: 
+title: 规划架构创建 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4ecb9154-b457-4209-b9b9-572c186bf5e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264637"
 ---
 # <a name="planning-for-schema-creation"></a><span data-ttu-id="38c59-102">规划架构创建</span><span class="sxs-lookup"><span data-stu-id="38c59-102">Planning for Schema Creation</span></span>
 <span data-ttu-id="38c59-103">使用架构，可以验证应该符合架构的消息实例、定义如何在不同格式的实例消息（XML 和非 XML）之间进行翻译、定义如何将一种结构的 XML 实例消息转换成不同结构的 XML 实例消息。</span><span class="sxs-lookup"><span data-stu-id="38c59-103">You use schemas to validate instances of messages that are meant to conform to the schema, to define how instance messages in different formats (XML and non-XML) can be translated back and forth, and to define how XML instance messages with one structure can be transformed into XML instance messages with a different structure.</span></span> <span data-ttu-id="38c59-104">有关实例消息转换和实例消息转换之间的区别的详细信息，请参阅[转换 vs。转换](../core/data-transformation.md)。</span><span class="sxs-lookup"><span data-stu-id="38c59-104">For more information about the distinction between instance message translation and instance message transformation, see [Transformation vs. Translation](../core/data-transformation.md).</span></span>  

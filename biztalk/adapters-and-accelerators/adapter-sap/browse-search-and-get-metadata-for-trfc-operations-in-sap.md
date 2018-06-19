@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和 SAP 中的 tRFC 操作中获取元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和 SAP 中的 tRFC 操作中获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFC operations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tRFC operations, searching
 - browsing, tRFC operations
 ms.assetid: cf4a16d1-7bbf-4dea-b54d-b5315fbcd552
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217165"
 ---
 # <a name="browse-search-and-get-metadata-for-trfc-operations-in-sap"></a><span data-ttu-id="04d9b-102">浏览、 搜索和 SAP 中的 tRFC 操作中获取元数据</span><span class="sxs-lookup"><span data-stu-id="04d9b-102">Browse, search, and get metadata for tRFC operations in SAP</span></span>
 <span data-ttu-id="04d9b-103">tRFCs 不是一个单独的项目的 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="04d9b-103">tRFCs are not a separate artifact in an SAP system.</span></span> <span data-ttu-id="04d9b-104">这些分为在通过单独的节点下[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]因为其元数据特征是不同的 Rfc。</span><span class="sxs-lookup"><span data-stu-id="04d9b-104">These are categorized under a separate node by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] because their metadata characteristics are different from that of RFCs.</span></span> <span data-ttu-id="04d9b-105">但是的浏览体验，搜索和检索元数据 tRFCs 等同于的 Rfc。</span><span class="sxs-lookup"><span data-stu-id="04d9b-105">However, the experience of browsing, searching, and retrieving metadata for tRFCs is identical to that of the RFCs.</span></span> <span data-ttu-id="04d9b-106">请参阅[浏览、 搜索和 SAP 中的 RFC 操作的 get 元数据](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)有关使用信息[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]浏览，搜索，并从 SAP 系统中检索 tRFCs 的元数据。</span><span class="sxs-lookup"><span data-stu-id="04d9b-106">Refer to [Browse, search, and get metadata for RFC operations in SAP](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md) for information about using the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to browse, search, and retrieve metadata for tRFCs from an SAP system.</span></span>  

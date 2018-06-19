@@ -1,18 +1,18 @@
 ---
-title: "使用 WCF 服务模型的 Oracle 数据库中运行 SQLEXECUTE 操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型的 Oracle 数据库中运行 SQLEXECUTE 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing a SQLEXECUTE operation
 - SQLEXECUTE operation, performing a
 - how to, invoke the SQLEXECUTE operation
 ms.assetid: d3f61e5f-4453-4a76-9bc6-40d91cb58224
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215973"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="26823-102">使用 WCF 服务模型的 Oracle 数据库中运行 SQLEXECUTE 操作</span><span class="sxs-lookup"><span data-stu-id="26823-102">Run SQLEXECUTE operation in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="26823-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现一组标准的 Oracle 数据库项目上的操作。</span><span class="sxs-lookup"><span data-stu-id="26823-103">The[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a standard set of operations on Oracle database artifacts.</span></span> <span data-ttu-id="26823-104">通过使用这些操作，你可以执行诸如调用一个 Oracle 函数或过程中，或执行对表的基本 SQL 数据操作语言 (DML) 操作。</span><span class="sxs-lookup"><span data-stu-id="26823-104">By using these operations, you can do things like call an Oracle function or procedure, or perform basic SQL data manipulation language (DML) operations on tables.</span></span> <span data-ttu-id="26823-105">但是，可能会要求你执行操作的方案根据你的业务逻辑，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不能显示。</span><span class="sxs-lookup"><span data-stu-id="26823-105">However, there may be scenarios driven by your business logic that require you to perform operations that the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] does not surface.</span></span> <span data-ttu-id="26823-106">例如，你可能希望：</span><span class="sxs-lookup"><span data-stu-id="26823-106">For example, you may want to:</span></span>  

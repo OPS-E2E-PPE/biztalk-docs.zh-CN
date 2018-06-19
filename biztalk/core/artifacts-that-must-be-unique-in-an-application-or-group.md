@@ -1,18 +1,18 @@
 ---
-title: "必须是唯一的应用程序或组的项目 |Microsoft 文档"
-ms.custom: 
+title: 必须是唯一的应用程序或组的项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, artifacts
 - artifacts, requirements
 - applications, artifacts
 ms.assetid: a758cd74-a962-4e75-aea2-47752ab72a64
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230381"
 ---
 # <a name="artifacts-that-must-be-unique-in-an-application-or-group"></a><span data-ttu-id="3bb9a-102">在应用程序或组中必须唯一的项目</span><span class="sxs-lookup"><span data-stu-id="3bb9a-102">Artifacts That Must Be Unique in an Application or Group</span></span>
 <span data-ttu-id="3bb9a-103">BizTalk 组或 BizTalk 应用程序中某些项目类型必须是唯一的，如下所述。</span><span class="sxs-lookup"><span data-stu-id="3bb9a-103">Certain types of artifacts in a BizTalk group or application must be unique, as follows:</span></span>  

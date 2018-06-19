@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d12014a-0147-4227-88fa-0b290eff4cce
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224821"
 ---
 # <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a><span data-ttu-id="3d779-102">步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息</span><span class="sxs-lookup"><span data-stu-id="3d779-102">Step 2: Map the UPDATE_EMPLOYEE Response Message to Insert Operation Request Message</span></span>
 <span data-ttu-id="3d779-103">![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="3d779-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="3d779-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="3d779-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="3d779-105">**目标：**在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储插入操作的请求消息的过程。</span><span class="sxs-lookup"><span data-stu-id="3d779-105">**Objective:** In this step, you create the request message to perform an Insert operation on the **Purchase_Order** table and then map the response message for the **UPDATE_EMPLOYEE** stored procedure to the request message for the Insert operation.</span></span> <span data-ttu-id="3d779-106">通过这样做，你要插入的响应消息中的值将传递**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="3d779-106">By doing so, you pass on the values in the response message to be inserted in the **Purchase_Order** table.</span></span>  
+ <span data-ttu-id="3d779-105">**目标：** 在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储插入操作的请求消息的过程。</span><span class="sxs-lookup"><span data-stu-id="3d779-105">**Objective:** In this step, you create the request message to perform an Insert operation on the **Purchase_Order** table and then map the response message for the **UPDATE_EMPLOYEE** stored procedure to the request message for the Insert operation.</span></span> <span data-ttu-id="3d779-106">通过这样做，你要插入的响应消息中的值将传递**Purchase_Order**表。</span><span class="sxs-lookup"><span data-stu-id="3d779-106">By doing so, you pass on the values in the response message to be inserted in the **Purchase_Order** table.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="3d779-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="3d779-107">Prerequisites</span></span>  
  <span data-ttu-id="3d779-108">你必须已完成[步骤 1： 为 Purchase_Order 表的插入操作创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)。</span><span class="sxs-lookup"><span data-stu-id="3d779-108">You must have completed [Step 1: Create the Request Message for Insert Operation on Purchase_Order Table](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md).</span></span>  

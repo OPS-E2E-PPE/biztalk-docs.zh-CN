@@ -1,14 +1,14 @@
 ---
-title: "配置 Oracle E-business Suite 连接 URI |Microsoft 文档"
-ms.custom: 
+title: 配置 Oracle E-business Suite 连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2bb02b4-4ad6-4b07-b48a-8f9a47967ffc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219237"
 ---
 # <a name="configure-the-connection-uri-for-oracle-e-business-suite"></a><span data-ttu-id="b56d4-102">配置 Oracle E-business Suite 连接 URI</span><span class="sxs-lookup"><span data-stu-id="b56d4-102">Configure the Connection URI for Oracle E-Business Suite</span></span>
 <span data-ttu-id="b56d4-103">连接 URI 是包含参数才能连接到 Oracle E-business Suite 的连接字符串。</span><span class="sxs-lookup"><span data-stu-id="b56d4-103">A connection URI is a connection string that contains parameters required to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="b56d4-104">在使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，必须指定要连接到 Oracle E-business Suite 生成的元数据的 URI。</span><span class="sxs-lookup"><span data-stu-id="b56d4-104">While using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the URI to connect to Oracle E-Business Suite to generate the metadata.</span></span> <span data-ttu-id="b56d4-105">配置业务流程使用时[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，你必须指定要连接到 Oracle E-business Suite 执行操作的 URI。</span><span class="sxs-lookup"><span data-stu-id="b56d4-105">While configuring an orchestration using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you must specify the URI to connect to Oracle E-Business Suite to perform operations.</span></span>  
@@ -110,7 +111,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="b56d4-184">在**WCF 自定义传输属性**对话框中，单击**常规**选项卡。</span><span class="sxs-lookup"><span data-stu-id="b56d4-184">In the **WCF-Custom Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-5.  <span data-ttu-id="b56d4-185">在**地址 (URI)**文本框中，指定连接 URI 以连接到 Oracle E-business Suite。</span><span class="sxs-lookup"><span data-stu-id="b56d4-185">In the **Address (URI)** text box, specify the connection URI to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="b56d4-186">有关连接 URI 的详细信息为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[配置 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)。</span><span class="sxs-lookup"><span data-stu-id="b56d4-186">For more information about the connection URI for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Configure the Connection URI for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md).</span></span>  
+5.  <span data-ttu-id="b56d4-185">在**地址 (URI)** 文本框中，指定连接 URI 以连接到 Oracle E-business Suite。</span><span class="sxs-lookup"><span data-stu-id="b56d4-185">In the **Address (URI)** text box, specify the connection URI to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="b56d4-186">有关连接 URI 的详细信息为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[配置 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)。</span><span class="sxs-lookup"><span data-stu-id="b56d4-186">For more information about the connection URI for the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Configure the Connection URI for Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md).</span></span>  
   
 6.  <span data-ttu-id="b56d4-187">在**WCF 自定义传输属性**对话框中，单击**绑定**选项卡。从**绑定类型**下拉列表中，选择**oracleEBSBinding**。</span><span class="sxs-lookup"><span data-stu-id="b56d4-187">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab. From the **Binding Type** drop-down list, select **oracleEBSBinding**.</span></span>  
   

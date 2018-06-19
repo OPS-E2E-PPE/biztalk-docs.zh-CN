@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 添加常见架构 v2.3.1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 添加常见架构 v2.3.1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da98fe6c-4776-4cb8-8454-af3128dea4ab
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206509"
 ---
 # <a name="step-2-add-common-schemas-for-v231"></a><span data-ttu-id="c6ec6-102">步骤 2： 添加常见 v2.3.1 架构</span><span class="sxs-lookup"><span data-stu-id="c6ec6-102">Step 2: Add Common Schemas for v2.3.1</span></span>
 <span data-ttu-id="c6ec6-103">在此步骤中，你可以创建基于 BTAHL7231Common 项目模板的新项目。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-103">In this step, you create a new project based on the BTAHL7231Common Project template.</span></span> <span data-ttu-id="c6ec6-104">此模板包含三个常见的架构 （适用于数据类型、 线段和表值）， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 用于验证 v2.3.1 消息实例。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-104">This template contains the three common schemas (for data types, segments, and table values) that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) uses to validate v2.3.1 message instances.</span></span> [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="c6ec6-105">HL7 v2.3.1 架构，包括将使用传入的批处理中的单个消息的架构与结合使用这些常见的架构 (ADT ^ A03)。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-105"> uses these common schemas in conjunction with the HL7 v2.3.1 schemas, including the schema that you will use for the individual messages in the incoming batch (ADT^A03).</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="c6ec6-119">在选择强名称密钥文件下拉列表中，选择列表中。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-119">In Choose a strong name key file drop down list select.</span></span>  
   
-11. <span data-ttu-id="c6ec6-120">浏览到**: \Batching 教程**，选择**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-120">Browse to **:\Batching Tutorial**, select **key.snk**, and then click **Open**.</span></span>  
+11. <span data-ttu-id="c6ec6-120">浏览到 **: \Batching 教程**，选择**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-120">Browse to **:\Batching Tutorial**, select **key.snk**, and then click **Open**.</span></span>  
   
 12. <span data-ttu-id="c6ec6-121">右键单击**BTAHL7V231Common**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-121">Right-click **BTAHL7V231Common**, and then click **Deploy**.</span></span> <span data-ttu-id="c6ec6-122">确保输出窗口中显示一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="c6ec6-122">Ensure a success message appears in the output window.</span></span>  
   

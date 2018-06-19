@@ -1,17 +1,17 @@
 ---
-title: "步骤 8： 构建和部署 Contoso 业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 构建和部署 Contoso 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, building solutions
 - private process tutorial, deploying solutions
 ms.assetid: d350b87a-0e4e-4837-ad39-fb5b1fdc1532
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209301"
 ---
 # <a name="step-8-building-and-deploying-the-contoso-orchestration"></a><span data-ttu-id="bd446-102">步骤 8： 构建和部署 Contoso 业务流程</span><span class="sxs-lookup"><span data-stu-id="bd446-102">Step 8: Building and Deploying the Contoso Orchestration</span></span>
 <span data-ttu-id="bd446-103">在此步骤中，您将生成 Orchestration 项目并使用“BizTalk 部署向导”部署该项目。</span><span class="sxs-lookup"><span data-stu-id="bd446-103">In this step, you build the Orchestration project and deploy it using the BizTalk Deployment Wizard.</span></span> <span data-ttu-id="bd446-104">这会将程序集添加到 Configuration 数据库，并在全局程序集缓存 (GAC) 中安装该程序集。</span><span class="sxs-lookup"><span data-stu-id="bd446-104">This adds the assembly to the Configuration database and installs the assembly in the Global Assembly Cache (GAC).</span></span>  

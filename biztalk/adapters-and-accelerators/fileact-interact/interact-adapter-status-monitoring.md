@@ -1,14 +1,14 @@
 ---
-title: "交互适配器状态监视 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器状态监视 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bbc6a45-8d3a-444e-b760-aef0dfa7218a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224293"
 ---
 # <a name="interact-adapter-status-monitoring"></a><span data-ttu-id="b2e48-102">交互适配器状态监视</span><span class="sxs-lookup"><span data-stu-id="b2e48-102">InterAct Adapter Status Monitoring</span></span>
 <span data-ttu-id="b2e48-103">SWIFTNet 链接 (SNL C) 将保留一个有关 SWIFTNet 存储和该 SNL 上获取的转发 (SnF) 会话的本地状态。</span><span class="sxs-lookup"><span data-stu-id="b2e48-103">SWIFTNet Link (SNL-C) retains a local status about SWIFTNet store and forward (SnF) sessions acquired on that SNL.</span></span> <span data-ttu-id="b2e48-104">要获取有关会话的信息，请使用带有以下基元 SwCall():</span><span class="sxs-lookup"><span data-stu-id="b2e48-104">To get the information about the session, use SwCall() with the following primitive:</span></span>  

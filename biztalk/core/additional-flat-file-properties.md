@@ -1,14 +1,14 @@
 ---
-title: "其他平面文件属性 |Microsoft 文档"
-ms.custom: 
+title: 其他平面文件属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c88ad2f-b5a8-46e6-b1b8-61ce6ba910d1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230037"
 ---
 # <a name="additional-flat-file-properties"></a><span data-ttu-id="284e3-102">其他平面文件属性</span><span class="sxs-lookup"><span data-stu-id="284e3-102">Additional Flat File Properties</span></span>
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="284e3-127">allow_early_termination</span><span class="sxs-lookup"><span data-stu-id="284e3-127">allow_early_termination</span></span>|<span data-ttu-id="284e3-128">**true** 或 **false**</span><span class="sxs-lookup"><span data-stu-id="284e3-128">**true** or **false**</span></span>|<span data-ttu-id="284e3-129">**false**</span><span class="sxs-lookup"><span data-stu-id="284e3-129">**false**</span></span>|<span data-ttu-id="284e3-130">指示位置的记录是否可以提前终止 (**true**) 或必须包含所有记录的字段的数据 (**false**)。</span><span class="sxs-lookup"><span data-stu-id="284e3-130">Indicates whether positional records can terminate early (**true**) or must contain data for all record fields (**false**).</span></span>|  
 |<span data-ttu-id="284e3-131">early_terminate_optional_fields</span><span class="sxs-lookup"><span data-stu-id="284e3-131">early_terminate_optional_fields</span></span>|<span data-ttu-id="284e3-132">**true** 或 **false**</span><span class="sxs-lookup"><span data-stu-id="284e3-132">**true** or **false**</span></span>|<span data-ttu-id="284e3-133">**false**</span><span class="sxs-lookup"><span data-stu-id="284e3-133">**false**</span></span>|<span data-ttu-id="284e3-134">启用的可选的尾随字段提前终止 (**true**)。</span><span class="sxs-lookup"><span data-stu-id="284e3-134">Enable early termination of optional trailing fields (**true**).</span></span> <span data-ttu-id="284e3-135">如果在 BizTalk 编辑器中打开现有架构无此批注，则将默认值设置为添加到它此批注 (**false**)。</span><span class="sxs-lookup"><span data-stu-id="284e3-135">If the existing schema without this annotation is opened in the BizTalk Editor, this annotation will be added to it with the default value set to (**false**).</span></span> <span data-ttu-id="284e3-136">**注意：** early_terminate_optional_fields 批注才能起作用，如果 allow_early_termination 设置为"true"。</span><span class="sxs-lookup"><span data-stu-id="284e3-136">**Note:**  The early_terminate_optional_fields annotation only takes effect if the allow_early_termination is set to "true".</span></span>|  
   
- <span data-ttu-id="284e3-137">所有这些属性是属性的**/annotation/appinfo/schemaInfo**元素。</span><span class="sxs-lookup"><span data-stu-id="284e3-137">All of these properties are attributes of the **/annotation/appinfo/schemaInfo** element.</span></span>  
+ <span data-ttu-id="284e3-137">所有这些属性是属性的 **/annotation/appinfo/schemaInfo**元素。</span><span class="sxs-lookup"><span data-stu-id="284e3-137">All of these properties are attributes of the **/annotation/appinfo/schemaInfo** element.</span></span>  
   
  <span data-ttu-id="284e3-138">当**parser_optimization**设置为**复杂性**，相同的组或记录中的多个可选节点时，您可能必须针对架构验证失败。</span><span class="sxs-lookup"><span data-stu-id="284e3-138">When **parser_optimization** is set to **complexity**, you may have validation failures against a schema when there are many optional nodes in the same group or record.</span></span> <span data-ttu-id="284e3-139">你可能需要设置**lookahead_depth**为零 (0)，以避免验证错误。</span><span class="sxs-lookup"><span data-stu-id="284e3-139">You may need to set **lookahead_depth** to zero (0) to avoid validation errors.</span></span>  
   

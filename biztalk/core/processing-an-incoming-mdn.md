@@ -1,14 +1,14 @@
 ---
-title: "处理传入 MDN |Microsoft 文档"
-ms.custom: 
+title: 处理传入 MDN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd78e84c-4989-47e4-b95b-80582084ddec
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265261"
 ---
 # <a name="processing-an-incoming-mdn"></a><span data-ttu-id="4b7ab-102">处理传入 MDN</span><span class="sxs-lookup"><span data-stu-id="4b7ab-102">Processing an Incoming MDN</span></span>
 <span data-ttu-id="4b7ab-103">AS2 接收传入 MDN 基于为作为 AS2 消息接收方方的协议属性的管道 （AS2EDIReceive 和 AS2Receive） 过程。</span><span class="sxs-lookup"><span data-stu-id="4b7ab-103">The AS2 receive pipelines (AS2EDIReceive and AS2Receive) process an incoming MDN based upon the agreement properties for the party as an AS2 message receiver.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="4b7ab-104">自动关联到传出的 AS2 消息 MDN。</span><span class="sxs-lookup"><span data-stu-id="4b7ab-104"> automatically correlates the MDN to the outgoing AS2 message.</span></span>  

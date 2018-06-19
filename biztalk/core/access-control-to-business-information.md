@@ -1,11 +1,11 @@
 ---
-title: "访问控制对业务信息 |Microsoft 文档"
-ms.custom: 
+title: 访问控制对业务信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, BizTalk Server Operator role
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - access control, BizTalk Server Administrator role
 - BizTalk Server Administrators [Windows group]
 ms.assetid: b63c17cc-fc1b-4d6c-a6b6-c97245858744
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223549"
 ---
 # <a name="access-control-to-business-information"></a><span data-ttu-id="66e1f-102">对业务信息的访问控制</span><span class="sxs-lookup"><span data-stu-id="66e1f-102">Access Control to Business Information</span></span>
 <span data-ttu-id="66e1f-103">只有 BizTalk Server 管理员能够访问 BizTalk 跟踪数据库中的跟踪数据（如跟踪消息属性和消息正文数据）。</span><span class="sxs-lookup"><span data-stu-id="66e1f-103">Only the BizTalk Server Administrators can access tracking data, such as tracking the message properties and message body data, in the BizTalk Tracking database.</span></span> <span data-ttu-id="66e1f-104">BizTalk Server 操作员对 BizTalk 跟踪数据库中的消息流数据具有访问权限。</span><span class="sxs-lookup"><span data-stu-id="66e1f-104">The BizTalk Server Operators has access to message flow data in the BizTalk Tracking database.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "在使用 SQL 适配器的 SQL Server 中运行复合操作 |Microsoft 文档"
-ms.custom: 
+title: 在使用 SQL 适配器的 SQL Server 中运行复合操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 906c6352-44f3-4624-9e32-aea3fbb7510d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223325"
 ---
 # <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a><span data-ttu-id="1b24b-102">在使用 SQL 适配器的 SQL Server 中运行复合操作</span><span class="sxs-lookup"><span data-stu-id="1b24b-102">Run composite operations in SQL Server  using the SQL adapter</span></span>
 <span data-ttu-id="1b24b-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]允许适配器客户端执行 SQL Server 数据库上的复合操作。</span><span class="sxs-lookup"><span data-stu-id="1b24b-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] enables adapter clients to perform composite operations on the SQL Server database.</span></span> <span data-ttu-id="1b24b-104">复合操作可以包含任意数量的以下操作，并按任何顺序：</span><span class="sxs-lookup"><span data-stu-id="1b24b-104">A composite operation can include any number of the following operations, and in any order:</span></span>  

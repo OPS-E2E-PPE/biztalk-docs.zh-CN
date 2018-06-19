@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建发送和接收端口交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建发送和接收端口交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e26137c0-577c-4fa5-ae36-55163a4a56d2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223157"
 ---
 # <a name="step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario"></a><span data-ttu-id="a3a6e-102">步骤 3： 创建发送和接收端口交互实时方案</span><span class="sxs-lookup"><span data-stu-id="a3a6e-102">Step 3: Create Send and Receive Ports for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="a3a6e-103">璝惠 BizTalk Server 发送和接收端口和接收位置，请参阅[管理项目](../../core/managing-artifacts.md)BizTalk Server 文档中。</span><span class="sxs-lookup"><span data-stu-id="a3a6e-103">For information about BizTalk Server send and receive ports, and receive locations, see [Managing Artifacts](../../core/managing-artifacts.md) in the BizTalk Server docs.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "RetractByType |Microsoft 文档"
-ms.custom: 
+title: RetractByType |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RetractByType function [Business Rules Engine], TypedXMLDocument
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - RetractByType function [Business Rules Engine], DataConnection
 - .NET objects
 ms.assetid: e8867553-ee3c-46be-84cd-d5373eaf3337
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268733"
 ---
 # <a name="retractbytype"></a><span data-ttu-id="3810d-102">RetractByType</span><span class="sxs-lookup"><span data-stu-id="3810d-102">RetractByType</span></span>
 <span data-ttu-id="3810d-103">**RetractByType**函数将收回在工作内存中，指定类型的所有实例，而**收回**函数将都收回仅对特定类型的特定项目。</span><span class="sxs-lookup"><span data-stu-id="3810d-103">The **RetractByType** function retracts all instances of a specified type in the working memory, whereas the **Retract**function retracts only specific items of a certain type.</span></span> <span data-ttu-id="3810d-104">以下各段介绍如何**RetractByType**函数适用于不同类型的实体。</span><span class="sxs-lookup"><span data-stu-id="3810d-104">The following paragraphs describe how the **RetractByType** function works with entities of different types.</span></span>  

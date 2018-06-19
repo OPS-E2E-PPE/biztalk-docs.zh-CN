@@ -1,14 +1,14 @@
 ---
-title: "无法加载程序集 |Microsoft 文档"
-ms.custom: 
+title: 无法加载程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 324c4862-cdda-43d6-9976-1d995935cabc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286565"
 ---
 # <a name="unable-to-load-assembly"></a><span data-ttu-id="9712d-102">无法加载程序集</span><span class="sxs-lookup"><span data-stu-id="9712d-102">Unable to load assembly</span></span>
 ## <a name="details"></a><span data-ttu-id="9712d-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="9712d-103">Details</span></span>  

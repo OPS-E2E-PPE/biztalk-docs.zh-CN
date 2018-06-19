@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过使用异步 MDN 的 AS2 接收 EDI |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过使用异步 MDN 的 AS2 接收 EDI |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac3962e4-0525-4194-8cf1-b90664f1a139
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292397"
 ---
 # <a name="walkthrough-as2-receiving-edi-over-as2-with-an-asynchronous-mdn"></a><span data-ttu-id="2c04f-102">演练 (AS2)：使用异步 MDN 通过 AS2 接收 EDI</span><span class="sxs-lookup"><span data-stu-id="2c04f-102">Walkthrough (AS2): Receiving EDI over AS2 with an Asynchronous MDN</span></span>
 <span data-ttu-id="2c04f-103">本演练将介绍创建一个通过 AS2 传输方法接收 EDI 消息并返回异步 MDN 的解决方案的分步操作过程。</span><span class="sxs-lookup"><span data-stu-id="2c04f-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDI messages over AS2 transport, returning synchronous MDNs.</span></span>  
@@ -133,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="2c04f-175">在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。</span><span class="sxs-lookup"><span data-stu-id="2c04f-175">In the **Add Script Map** dialog box, enter `BtsHttpReceive.dll` in the **Request path** field.</span></span>  
   
-4.  <span data-ttu-id="2c04f-176">在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="2c04f-176">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="2c04f-177">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-177">Select BtsHttpReceive.dll and click **OK**.</span></span>  
+4.  <span data-ttu-id="2c04f-176">在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="2c04f-176">In the **Executable** field, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span> <span data-ttu-id="2c04f-177">选择 BtsHttpReceive.dll，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-177">Select BtsHttpReceive.dll and click **OK**.</span></span>  
   
 5.  <span data-ttu-id="2c04f-178">输入`BizTalk HTTP Receive`中`Name`字段，然后再单击**请求限制**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-178">Enter `BizTalk HTTP Receive` in the `Name` field, and then click **Request Restrictions**.</span></span>  
   
@@ -147,14 +148,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="2c04f-184">在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-184">In IIS Manager, right-click **Application Pools** and select **Add Application Pool**.</span></span>  
   
-2.  <span data-ttu-id="2c04f-185">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="2c04f-185">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="2c04f-186">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-186">Click **OK**.</span></span>  
+2.  <span data-ttu-id="2c04f-185">在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="2c04f-185">In the **Add Application Pool** dialog box, enter **BizTalkAppPool** in **Name**, and then select **.NET Framework V4.0.30210** in the **.NET Framework version** drop-down list.</span></span> <span data-ttu-id="2c04f-186">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-186">Click **OK**.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="2c04f-187">根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。</span><span class="sxs-lookup"><span data-stu-id="2c04f-187">The version number may vary depending on the version of [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] installed on the machine.</span></span>  
   
 3.  <span data-ttu-id="2c04f-188">选择**应用程序池**，在功能视图选择**BizTalkAppPool**，然后单击**高级设置**中**操作**窗格。</span><span class="sxs-lookup"><span data-stu-id="2c04f-188">Select **Application Pools**, in the Features View select **BizTalkAppPool**, and then click **Advanced Settings** in the **Actions** pane.</span></span>  
   
-4.  <span data-ttu-id="2c04f-189">在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）**按钮。</span><span class="sxs-lookup"><span data-stu-id="2c04f-189">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
+4.  <span data-ttu-id="2c04f-189">在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）** 按钮。</span><span class="sxs-lookup"><span data-stu-id="2c04f-189">In the **Advanced Settings** dialog box, select **Identity** and then click the **ellipsis (…)** button.</span></span>  
   
 5.  <span data-ttu-id="2c04f-190">在**应用程序池标识**对话框中，选择**自定义帐户**，然后单击**设置**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-190">In the **Application Pool Identity** dialog box, select **Custom account** and then click **Set**.</span></span>  
   
@@ -166,7 +167,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="2c04f-195">在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-195">In the **Select Application Pool** dialog box, select **BizTalkAppPool** and click **OK**.</span></span>  
   
-10. <span data-ttu-id="2c04f-196">有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="2c04f-196">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
+10. <span data-ttu-id="2c04f-196">有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。</span><span class="sxs-lookup"><span data-stu-id="2c04f-196">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive.</span></span>  
   
 11. <span data-ttu-id="2c04f-197">单击**测试设置**并验证没有显示在错误**测试连接**对话框。</span><span class="sxs-lookup"><span data-stu-id="2c04f-197">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="2c04f-198">单击 **“关闭”**，然后单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-198">Click **Close**, and then click **OK**.</span></span>  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="2c04f-206">在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-206">In the **Select Application Pool** dialog box, select **BizTalkAppPool** and click **OK**.</span></span>  
   
-4.  <span data-ttu-id="2c04f-207">有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam。</span><span class="sxs-lookup"><span data-stu-id="2c04f-207">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam.</span></span>  
+4.  <span data-ttu-id="2c04f-207">有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam。</span><span class="sxs-lookup"><span data-stu-id="2c04f-207">For the **Physical Path**, click the **ellipsis (…)** button and browse to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam.</span></span>  
   
 5.  <span data-ttu-id="2c04f-208">单击**测试设置**并验证没有显示在错误**测试连接**对话框。</span><span class="sxs-lookup"><span data-stu-id="2c04f-208">Click **Test Settings** and verify that there are no errors displayed in the **Test Connection** dialog box.</span></span> <span data-ttu-id="2c04f-209">单击 **“关闭”**，然后单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-209">Click **Close**, and then click **OK**.</span></span>  
   
@@ -245,7 +246,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="2c04f-242">在**发送端口属性**对话框中，你发送端口，例如，名称**Send_Payload**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-242">In the **Send Port Properties** dialog box, name your send port, for example, **Send_Payload**.</span></span> <span data-ttu-id="2c04f-243">选择**文件**为**类型**，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-243">Select **FILE** for **Type**, and then click **Configure**.</span></span>  
   
-4.  <span data-ttu-id="2c04f-244">在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。</span><span class="sxs-lookup"><span data-stu-id="2c04f-244">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="2c04f-245">保留**文件名**作为**%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-245">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="2c04f-246">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-246">Click **OK**.</span></span>  
+4.  <span data-ttu-id="2c04f-244">在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。</span><span class="sxs-lookup"><span data-stu-id="2c04f-244">In the **FILE Transport Properties** dialog box, for **Destination folder**, browse to and select the **EDI_to_Contoso** folder that you created in step 1.</span></span> <span data-ttu-id="2c04f-245">保留**文件名**作为 **%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-245">Leave **File name** as **%MessageID%.xml**.</span></span> <span data-ttu-id="2c04f-246">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-246">Click **OK**.</span></span>  
   
 5.  <span data-ttu-id="2c04f-247">接受默认的**PassThruTransmit**为**发送管道**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-247">Accept the default of **PassThruTransmit** for **Send Pipeline**.</span></span>  
   
@@ -309,7 +310,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="2c04f-290">上**验证**页上，选择**使用验证和 MDN 的协议设置，而不是消息标头**复选框</span><span class="sxs-lookup"><span data-stu-id="2c04f-290">On the **Validation** page, select the **Use agreement settings for validation and MDN instead of message header** check box</span></span>  
   
-    3.  <span data-ttu-id="2c04f-291">在**确认 (Mdn)**页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2c04f-291">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
+    3.  <span data-ttu-id="2c04f-291">在**确认 (Mdn)** 页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2c04f-291">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
   
         1.  <span data-ttu-id="2c04f-292">选择**请求 MDN**复选框。</span><span class="sxs-lookup"><span data-stu-id="2c04f-292">Select the **Request MDN** check box.</span></span>  
   
@@ -317,7 +318,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  <span data-ttu-id="2c04f-294">选择**请求异步 MDN**复选框。</span><span class="sxs-lookup"><span data-stu-id="2c04f-294">Select the **Request asynchronous MDN** check box.</span></span>  
   
-        4.  <span data-ttu-id="2c04f-295">在**回执送达选项 (URL)**文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。</span><span class="sxs-lookup"><span data-stu-id="2c04f-295">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
+        4.  <span data-ttu-id="2c04f-295">在**回执送达选项 (URL)** 文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。</span><span class="sxs-lookup"><span data-stu-id="2c04f-295">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
   
 8.  <span data-ttu-id="2c04f-296">在上执行以下任务**Contoso-> Fabrikam**选项卡。</span><span class="sxs-lookup"><span data-stu-id="2c04f-296">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
@@ -375,14 +376,14 @@ ms.lasthandoff: 09/20/2017
   
         |<span data-ttu-id="2c04f-333">使用此选项</span><span class="sxs-lookup"><span data-stu-id="2c04f-333">Use this</span></span>|<span data-ttu-id="2c04f-334">执行的操作</span><span class="sxs-lookup"><span data-stu-id="2c04f-334">To do this</span></span>|  
         |--------------|----------------|  
-        |<span data-ttu-id="2c04f-335">**Default**</span><span class="sxs-lookup"><span data-stu-id="2c04f-335">**Default**</span></span>|<span data-ttu-id="2c04f-336">选择**默认**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-336">Select **Default**.</span></span> <span data-ttu-id="2c04f-337">**注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="2c04f-337">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
+        |<span data-ttu-id="2c04f-335">**Default**</span><span class="sxs-lookup"><span data-stu-id="2c04f-335">**Default**</span></span>|<span data-ttu-id="2c04f-336">选择**默认**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-336">Select **Default**.</span></span> <span data-ttu-id="2c04f-337">**注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="2c04f-337">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
         |<span data-ttu-id="2c04f-338">**事务类型**</span><span class="sxs-lookup"><span data-stu-id="2c04f-338">**Transaction Type**</span></span>|<span data-ttu-id="2c04f-339">例如，选择你的测试消息的消息类型**864 – 短信**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-339">Select the message type of your test message, for example, **864 – Text Message**.</span></span>|  
         |<span data-ttu-id="2c04f-340">**版本/发行版**</span><span class="sxs-lookup"><span data-stu-id="2c04f-340">**Version/Release**</span></span>|<span data-ttu-id="2c04f-341">输入**00401**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-341">Enter **00401**.</span></span>|  
         |<span data-ttu-id="2c04f-342">**目标命名空间**</span><span class="sxs-lookup"><span data-stu-id="2c04f-342">**Target namespace**</span></span>|<span data-ttu-id="2c04f-343">选择**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-343">Select **http://schemas.microsoft.com/BizTalk/EDI/X12/2006**.</span></span>|  
         |<span data-ttu-id="2c04f-344">**GS1**</span><span class="sxs-lookup"><span data-stu-id="2c04f-344">**GS1**</span></span>|<span data-ttu-id="2c04f-345">验证是否选择测试消息的消息类型，例如， **TX-短信 (864)**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-345">Verify that the message type of the test message is selected, for example, **TX - Text Message (864)**.</span></span>|  
         |<span data-ttu-id="2c04f-346">**GS2**</span><span class="sxs-lookup"><span data-stu-id="2c04f-346">**GS2**</span></span>|<span data-ttu-id="2c04f-347">输入**01**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-347">Enter **01**.</span></span>|  
         |<span data-ttu-id="2c04f-348">**GS3**</span><span class="sxs-lookup"><span data-stu-id="2c04f-348">**GS3**</span></span>|<span data-ttu-id="2c04f-349">输入**7654321**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-349">Enter **7654321**.</span></span>|  
-        |<span data-ttu-id="2c04f-350">**GS4**</span><span class="sxs-lookup"><span data-stu-id="2c04f-350">**GS4**</span></span>|<span data-ttu-id="2c04f-351">选择所需的日期格式。</span><span class="sxs-lookup"><span data-stu-id="2c04f-351">Select the date format that you want.</span></span> <span data-ttu-id="2c04f-352">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-352">Select **CCYYMMDD**.</span></span> <span data-ttu-id="2c04f-353">**注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="2c04f-353">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="2c04f-354">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="2c04f-354">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="2c04f-350">**GS4**</span><span class="sxs-lookup"><span data-stu-id="2c04f-350">**GS4**</span></span>|<span data-ttu-id="2c04f-351">选择所需的日期格式。</span><span class="sxs-lookup"><span data-stu-id="2c04f-351">Select the date format that you want.</span></span> <span data-ttu-id="2c04f-352">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-352">Select **CCYYMMDD**.</span></span> <span data-ttu-id="2c04f-353">**注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="2c04f-353">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="2c04f-354">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="2c04f-354">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="2c04f-355">**GS5**</span><span class="sxs-lookup"><span data-stu-id="2c04f-355">**GS5**</span></span>|<span data-ttu-id="2c04f-356">选择所需的时间格式。</span><span class="sxs-lookup"><span data-stu-id="2c04f-356">Select the time format that you want.</span></span> <span data-ttu-id="2c04f-357">选择**HHMMSSdd**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-357">Select **HHMMSSdd**.</span></span>|  
         |<span data-ttu-id="2c04f-358">**GS7**</span><span class="sxs-lookup"><span data-stu-id="2c04f-358">**GS7**</span></span>|<span data-ttu-id="2c04f-359">选择**T-运输数据协调委员会 (TDCC)**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-359">Select **T - Transportation Data Coordinating Committee (TDCC)**.</span></span>|  
         |<span data-ttu-id="2c04f-360">**GS8**</span><span class="sxs-lookup"><span data-stu-id="2c04f-360">**GS8**</span></span>|<span data-ttu-id="2c04f-361">验证已作为中输入的 EDI 版本**00401**。</span><span class="sxs-lookup"><span data-stu-id="2c04f-361">Verify that the EDI version has been entered as **00401**.</span></span>|  

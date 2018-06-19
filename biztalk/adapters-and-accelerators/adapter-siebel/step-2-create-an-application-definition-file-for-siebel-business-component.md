@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75d34c48-0f2a-42e4-a60b-e04bcf2404e1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227029"
 ---
 # <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a><span data-ttu-id="bd368-102">步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件</span><span class="sxs-lookup"><span data-stu-id="bd368-102">Step 2: Create an Application Definition File for Siebel Business Component Operations</span></span>
 <span data-ttu-id="bd368-103">![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="bd368-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
   
  <span data-ttu-id="bd368-104">**完成时间：** 15 分钟</span><span class="sxs-lookup"><span data-stu-id="bd368-104">**Time to complete:** 15 minutes</span></span>  
   
- <span data-ttu-id="bd368-105">**目标：**业务数据目录公开，并将从-的业务线 (LOB) 应用程序的数据合并到门户。</span><span class="sxs-lookup"><span data-stu-id="bd368-105">**Objective:** The Business Data Catalog exposes and incorporates data from line-of-business (LOB) applications into portals.</span></span> <span data-ttu-id="bd368-106">若要将此数据合并到您的门户网站，必须在生成应用程序定义文件，可以使用 Microsoft Office SharePoint Server。</span><span class="sxs-lookup"><span data-stu-id="bd368-106">To incorporate this data into your portal site, you must build an application definition file that Microsoft Office SharePoint Server can consume.</span></span>  
+ <span data-ttu-id="bd368-105">**目标：** 业务数据目录公开，并将从-的业务线 (LOB) 应用程序的数据合并到门户。</span><span class="sxs-lookup"><span data-stu-id="bd368-105">**Objective:** The Business Data Catalog exposes and incorporates data from line-of-business (LOB) applications into portals.</span></span> <span data-ttu-id="bd368-106">若要将此数据合并到您的门户网站，必须在生成应用程序定义文件，可以使用 Microsoft Office SharePoint Server。</span><span class="sxs-lookup"><span data-stu-id="bd368-106">To incorporate this data into your portal site, you must build an application definition file that Microsoft Office SharePoint Server can consume.</span></span>  
   
  <span data-ttu-id="bd368-107">业务数据目录定义编辑器工具，可为业务数据目录中创建应用程序定义文件。</span><span class="sxs-lookup"><span data-stu-id="bd368-107">The Business Data Catalog Definition Editor tool enables you to create an application definition file for the Business Data Catalog.</span></span> <span data-ttu-id="bd368-108">此工具会自动生成的 XML 定义文件。</span><span class="sxs-lookup"><span data-stu-id="bd368-108">This tool automatically generates the XML for the definition file.</span></span> <span data-ttu-id="bd368-109">因此，无需手动创建该文件在 XML 编辑器。</span><span class="sxs-lookup"><span data-stu-id="bd368-109">Therefore, you do not have to manually create the file in an XML editor.</span></span>  
   

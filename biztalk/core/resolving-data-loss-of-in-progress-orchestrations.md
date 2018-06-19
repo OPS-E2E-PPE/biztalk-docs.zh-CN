@@ -1,11 +1,11 @@
 ---
-title: "解决数据丢失的正在进行中业务流程 |Microsoft 文档"
-ms.custom: 
+title: 解决数据丢失的正在进行中业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data loss, MessageBox database
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, data recovery
 - orchestrations, data loss
 ms.assetid: dc6f1fd2-1976-40f2-ab57-41c7db40705e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268997"
 ---
 # <a name="resolving-data-loss-of-in-progress-orchestrations"></a><span data-ttu-id="42826-102">解决正在进行的业务流程的数据丢失问题</span><span class="sxs-lookup"><span data-stu-id="42826-102">Resolving Data Loss of In-Progress Orchestrations</span></span>
 <span data-ttu-id="42826-103">MessageBox 数据库包含当前正在进行的业务流程的状态。</span><span class="sxs-lookup"><span data-stu-id="42826-103">MessageBox databases contain the state of orchestrations that are currently in progress.</span></span> <span data-ttu-id="42826-104">尽管没有没有方法来判断完全哪些数据已从 MessageBox 数据库丢失，但有一些可用于收集有关数据丢失的信息的步骤：</span><span class="sxs-lookup"><span data-stu-id="42826-104">Although there is no way to tell exactly what data has been lost from the MessageBox databases, there are some steps you can take to gather information about the lost data:</span></span>  

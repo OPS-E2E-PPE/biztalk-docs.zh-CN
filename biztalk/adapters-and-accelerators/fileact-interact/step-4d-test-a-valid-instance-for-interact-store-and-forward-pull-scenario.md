@@ -1,14 +1,14 @@
 ---
-title: "步骤 4d： 交互应用商店应用和进 （请求） 方案中测试的有效实例 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4d： 交互应用商店应用和进 （请求） 方案中测试的有效实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c2933d0-bbe3-4486-832e-5009b2d760ac
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223941"
 ---
 # <a name="step-4d-test-a-valid-instance-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="e7260-102">步骤 4d： 交互应用商店应用和进 （请求） 方案中测试的有效实例</span><span class="sxs-lookup"><span data-stu-id="e7260-102">Step 4D: Test a Valid Instance for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="e7260-103">在开始此步骤之前，必须完成[步骤 4c： 创建交互应用商店应用和向前 （请求） 方案的测试实例](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-interact-store-and-forward-pull-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="e7260-103">Before you begin this step, you must complete [Step 4C: Create a Test Instance for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-interact-store-and-forward-pull-scenario.md).</span></span>  

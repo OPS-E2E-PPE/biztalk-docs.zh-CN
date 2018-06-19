@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10682 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10682 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 46f0f425-3946-4bac-a412-488c4afe460d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271405"
 ---
 # <a name="single-sign-on-event-10682"></a><span data-ttu-id="4a2bb-102">单一登录： 事件 10682</span><span class="sxs-lookup"><span data-stu-id="4a2bb-102">Single Sign-On: Event 10682</span></span>
 ## <a name="details"></a><span data-ttu-id="4a2bb-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="4a2bb-103">Details</span></span>  

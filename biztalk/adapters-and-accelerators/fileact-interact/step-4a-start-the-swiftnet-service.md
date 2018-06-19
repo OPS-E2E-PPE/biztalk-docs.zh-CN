@@ -1,14 +1,14 @@
 ---
-title: "步骤 4A： 启动 SWIFTNet 服务 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4A： 启动 SWIFTNet 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1a4128cd-dabe-45a0-9171-1635a875b5e9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223165"
 ---
 # <a name="step-4a-start-the-swiftnet-service"></a><span data-ttu-id="53b86-102">步骤 4A： 启动 SWIFTNet 服务</span><span class="sxs-lookup"><span data-stu-id="53b86-102">Step 4A: Start the SWIFTNet Service</span></span>
 <span data-ttu-id="53b86-103">在开始此步骤之前，必须完成[步骤 3E： 对于交互的实时方案添加交互发送端口](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="53b86-103">Before you begin this step, you must complete [Step 3E: Add an INTERACT Send Port for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "引用 |Microsoft 文档"
-ms.custom: 
+title: 引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b916c55a-c84c-4008-8927-f8e584c36fe9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268597"
 ---
 # <a name="reference"></a><span data-ttu-id="97e96-102">参考</span><span class="sxs-lookup"><span data-stu-id="97e96-102">Reference</span></span>
 <span data-ttu-id="97e96-103">**引用**元素可以用来向 BAM 活动中添加一个或多个关系。</span><span class="sxs-lookup"><span data-stu-id="97e96-103">The **Reference** element can be used to add one or more relationships to a BAM activity.</span></span> <span data-ttu-id="97e96-104">当要将诸如主键、ID 或 URL 之类的指针附加到相关消息时，这特别有用。</span><span class="sxs-lookup"><span data-stu-id="97e96-104">This is useful when you want to attach a pointer like a primary key, ID, or URL to a related message.</span></span> <span data-ttu-id="97e96-105">例如，可能要在“采购订单”活动中存储指向“发货批”的引用。</span><span class="sxs-lookup"><span data-stu-id="97e96-105">For example, you might store a reference to a Shipment Batch in a Purchase Order activity.</span></span>  

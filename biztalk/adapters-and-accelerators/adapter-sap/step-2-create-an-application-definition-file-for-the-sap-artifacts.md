@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 为 SAP 项目创建应用程序定义文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 为 SAP 项目创建应用程序定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - application definition file, creating a
 - Business Data Catalog Definition Editor
 - Business Data Catalog
 ms.assetid: d254b00e-dbeb-4167-ad57-6f0aa2e7a563
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219821"
 ---
 # <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a><span data-ttu-id="eb922-102">步骤 2： 为 SAP 项目创建应用程序定义文件</span><span class="sxs-lookup"><span data-stu-id="eb922-102">Step 2: Create an Application Definition File for the SAP Artifacts</span></span>
 <span data-ttu-id="eb922-103">![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span><span class="sxs-lookup"><span data-stu-id="eb922-103">![Step 2 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")</span></span>  
@@ -235,7 +236,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="eb922-242">展开**KUNNR**参数，然后单击第二个**KUNNR**节点。</span><span class="sxs-lookup"><span data-stu-id="eb922-242">Expand the **KUNNR** parameter, and then click the second **KUNNR** node.</span></span>  
   
-    4.  <span data-ttu-id="eb922-243">在属性窗格中，选择**CustomerID [Customer]**从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-243">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="eb922-243">在属性窗格中，选择**CustomerID [Customer]** 从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-243">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
          <span data-ttu-id="eb922-244">![标识符映射到参数](../../adapters-and-accelerators/adapter-sap/media/04ff6496-34a7-421b-ae9e-f9263895c153.gif "04ff6496-34a7-421b-ae9e-f9263895c153")</span><span class="sxs-lookup"><span data-stu-id="eb922-244">![Map the identifier to a parameter](../../adapters-and-accelerators/adapter-sap/media/04ff6496-34a7-421b-ae9e-f9263895c153.gif "04ff6496-34a7-421b-ae9e-f9263895c153")</span></span>  
   
@@ -247,7 +248,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  <span data-ttu-id="eb922-248">展开**CUSTOMER_T**节点，然后第二个**CUSTOMER_T**节点，则**项**节点，，然后单击**KUNNR**节点。</span><span class="sxs-lookup"><span data-stu-id="eb922-248">Expand the **CUSTOMER_T** node, then the second **CUSTOMER_T** node, then the **Item** node, and then click the **KUNNR** node.</span></span>  
   
-    4.  <span data-ttu-id="eb922-249">在属性窗格中，选择**CustomerID [Customer]**从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-249">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+    4.  <span data-ttu-id="eb922-249">在属性窗格中，选择**CustomerID [Customer]** 从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-249">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
 ##### <a name="to-create-a-specific-finder-method-instance-for-the-sdrfccustomerget-method"></a><span data-ttu-id="eb922-250">若要创建特定的 Finder 方法实例 SD_RFC_CUSTOMER_GET 方法</span><span class="sxs-lookup"><span data-stu-id="eb922-250">To create a Specific Finder method instance for the SD_RFC_CUSTOMER_GET method</span></span>  
   
@@ -282,7 +283,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="eb922-267">展开**CUSTOMER_NUMBER**节点，然后单击第二个**CUSTOMER_NUMBER**节点。</span><span class="sxs-lookup"><span data-stu-id="eb922-267">Expand the **CUSTOMER_NUMBER** node, and then click the second **CUSTOMER_NUMBER** node.</span></span>  
   
-4.  <span data-ttu-id="eb922-268">在属性窗格中，选择**CustomerID [Customer]**从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-268">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
+4.  <span data-ttu-id="eb922-268">在属性窗格中，选择**CustomerID [Customer]** 从**标识符**列表。</span><span class="sxs-lookup"><span data-stu-id="eb922-268">In the Properties pane, select **CustomerID[Customer]** from the **Identifier** list.</span></span>  
   
      <span data-ttu-id="eb922-269">![创建两个实体之间的关联](../../adapters-and-accelerators/adapter-sap/media/ae7e1e7a-a12b-4905-b002-2a04c7050848.gif "ae7e1e7a-a12b-4905-b002-2a04c7050848")</span><span class="sxs-lookup"><span data-stu-id="eb922-269">![Create association between the two entities](../../adapters-and-accelerators/adapter-sap/media/ae7e1e7a-a12b-4905-b002-2a04c7050848.gif "ae7e1e7a-a12b-4905-b002-2a04c7050848")</span></span>  
   

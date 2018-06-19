@@ -1,18 +1,18 @@
 ---
-title: "Siebel 适配器中的 SiebelClientFactory 类 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器中的 SiebelClientFactory 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelClientFactory
 - Data Provider for Siebel, SiebelClientFactory
 - SiebelClientFactory, supported properties and methods
 ms.assetid: f3a807d3-a030-47d8-b145-e18075ec353c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222061"
 ---
 # <a name="siebelclientfactory-class-in-the-siebel-adapter"></a><span data-ttu-id="4309c-102">Siebel 适配器中 SiebelClientFactory 类</span><span class="sxs-lookup"><span data-stu-id="4309c-102">SiebelClientFactory class in the Siebel adapter</span></span>
 <span data-ttu-id="4309c-103">ADO.NET 客户端访问[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]使用泛型的 ADO.NET 类和接口。</span><span class="sxs-lookup"><span data-stu-id="4309c-103">An ADO.NET client accesses the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] using generic ADO.NET classes and interfaces.</span></span> <span data-ttu-id="4309c-104">若要启用此功能，[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]继承**System.Data.Common.DbProviderFactory**类。</span><span class="sxs-lookup"><span data-stu-id="4309c-104">To enable this feature, the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] inherits the **System.Data.Common.DbProviderFactory** class.</span></span> <span data-ttu-id="4309c-105">客户端程序使用客户端，如下所示：</span><span class="sxs-lookup"><span data-stu-id="4309c-105">The client program consumes the client as follows:</span></span>  

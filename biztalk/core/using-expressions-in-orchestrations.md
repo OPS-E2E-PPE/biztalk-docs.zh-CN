@@ -1,14 +1,14 @@
 ---
-title: "在业务流程中使用表达式 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中使用表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1947cd39-6ef2-4b2d-afeb-a0132b19db97
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287133"
 ---
 # <a name="using-expressions-in-orchestrations"></a><span data-ttu-id="9624f-102">在业务流程中使用表达式</span><span class="sxs-lookup"><span data-stu-id="9624f-102">Using Expressions in Orchestrations</span></span>
 <span data-ttu-id="9624f-103">BizTalk 表达式编辑器可用于输入 XLANG/s 表达式，以添加逻辑来操作和测试你的业务流程变量和消息的值。</span><span class="sxs-lookup"><span data-stu-id="9624f-103">You can use BizTalk Expression Editor to enter XLANG/s expressions to add logic to manipulate and test the values of your orchestration variables and messages.</span></span> <span data-ttu-id="9624f-104">但是，它不是作为最佳做法，使用它来执行高级业务流程逻辑，最好是将是在绘制自身的业务流程中可见。</span><span class="sxs-lookup"><span data-stu-id="9624f-104">However, it is not a good practice to use it to perform high-level orchestration logic, which preferably would be visible in the orchestration drawing itself.</span></span> <span data-ttu-id="9624f-105">对业务进程透明度便捷的重新配置，我们建议你使用简单和模块化表达式。</span><span class="sxs-lookup"><span data-stu-id="9624f-105">For business process transparency and easy of reconfiguration, we recommend that you use simple and modular expressions.</span></span>  

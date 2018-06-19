@@ -1,11 +1,11 @@
 ---
-title: "创建 Siebel 系统连接 URI |Microsoft 文档"
-ms.custom: 
+title: 创建 Siebel 系统连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, connect using connection URI
 - connecting using connection URI
 ms.assetid: 8cc78149-1c20-40db-aece-aab520ee04e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224549"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a><span data-ttu-id="aebfb-102">创建 Siebel 系统连接 URI</span><span class="sxs-lookup"><span data-stu-id="aebfb-102">Create the Siebel system connection URI</span></span>
 <span data-ttu-id="aebfb-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]连接 URI 包含适配器用于建立到 Siebel 系统的连接的属性。</span><span class="sxs-lookup"><span data-stu-id="aebfb-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] connection URI contains properties that the adapter uses to establish a connection to the Siebel system.</span></span>  
@@ -99,7 +100,7 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 |<span data-ttu-id="aebfb-162">加密</span><span class="sxs-lookup"><span data-stu-id="aebfb-162">Encryption</span></span>|<span data-ttu-id="aebfb-163">之间使用的加密类型[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="aebfb-163">The type of encryption to use between the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and the Siebel system.</span></span> <span data-ttu-id="aebfb-164">支持的值为 none、 mscrypto，或 rsa。</span><span class="sxs-lookup"><span data-stu-id="aebfb-164">Supported values are none, mscrypto, or rsa.</span></span> <span data-ttu-id="aebfb-165">此参数可选。</span><span class="sxs-lookup"><span data-stu-id="aebfb-165">This parameter is optional.</span></span> <span data-ttu-id="aebfb-166">如果未指定，则 Siebel 系统将提供默认值 （无）。</span><span class="sxs-lookup"><span data-stu-id="aebfb-166">If it is not specified, the Siebel system supplies a default value (none).</span></span>|  
 |<span data-ttu-id="aebfb-167">压缩</span><span class="sxs-lookup"><span data-stu-id="aebfb-167">Compresssion</span></span>|<span data-ttu-id="aebfb-168">要使用之间的压缩算法[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="aebfb-168">The compression algorithm to use between the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and the Siebel system.</span></span> <span data-ttu-id="aebfb-169">支持的值为 none 或 zlib。</span><span class="sxs-lookup"><span data-stu-id="aebfb-169">Supported values are none or zlib.</span></span> <span data-ttu-id="aebfb-170">此参数可选。</span><span class="sxs-lookup"><span data-stu-id="aebfb-170">This parameter is optional.</span></span> <span data-ttu-id="aebfb-171">如果未指定，则 Siebel 系统将提供默认值 (zlib)。</span><span class="sxs-lookup"><span data-stu-id="aebfb-171">If it is not specified, the Siebel system supplies a default value (zlib).</span></span>|  
 |<span data-ttu-id="aebfb-172">SiebelServer</span><span class="sxs-lookup"><span data-stu-id="aebfb-172">SiebelServer</span></span>|<span data-ttu-id="aebfb-173">Siebel 服务器中。</span><span class="sxs-lookup"><span data-stu-id="aebfb-173">The Siebel server.</span></span> <span data-ttu-id="aebfb-174">所需的所有 Siebel 7.5 服务器连接 (7.5.2、 7.5.3，等等。);否则，不设置此参数。</span><span class="sxs-lookup"><span data-stu-id="aebfb-174">Required for all Siebel 7.5 server connections (7.5.2, 7.5.3, etc.); otherwise, do not set this parameter.</span></span>|  
-|<span data-ttu-id="aebfb-175">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="aebfb-175">SiebelRepository</span></span>|<span data-ttu-id="aebfb-176">Siebel 存储库。</span><span class="sxs-lookup"><span data-stu-id="aebfb-176">The Siebel repository.</span></span> <span data-ttu-id="aebfb-177">所需服务器; 上是否存在多个存储库否则为可选。</span><span class="sxs-lookup"><span data-stu-id="aebfb-177">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="aebfb-178">**注意：**如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。</span><span class="sxs-lookup"><span data-stu-id="aebfb-178">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
+|<span data-ttu-id="aebfb-175">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="aebfb-175">SiebelRepository</span></span>|<span data-ttu-id="aebfb-176">Siebel 存储库。</span><span class="sxs-lookup"><span data-stu-id="aebfb-176">The Siebel repository.</span></span> <span data-ttu-id="aebfb-177">所需服务器; 上是否存在多个存储库否则为可选。</span><span class="sxs-lookup"><span data-stu-id="aebfb-177">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="aebfb-178">**注意：** 如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。</span><span class="sxs-lookup"><span data-stu-id="aebfb-178">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
   
  <span data-ttu-id="aebfb-179">在查询信息中设置的 Siebel 参数的详细信息，请参阅 Siebel 文档。</span><span class="sxs-lookup"><span data-stu-id="aebfb-179">For more information about the Siebel parameters that are set in the query information, see your Siebel documentation.</span></span>  
   

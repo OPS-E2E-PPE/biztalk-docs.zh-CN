@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 与 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 与 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 41338723-055d-46b4-acee-6969ea79fac0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222637"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-with-the-siebel-adapter"></a><span data-ttu-id="00fab-102">步骤 2： 与 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程</span><span class="sxs-lookup"><span data-stu-id="00fab-102">Step 2: Configure the Orchestration in BizTalk Server Administration Console with the Siebel adapter</span></span>
 <span data-ttu-id="00fab-103">![步骤 2 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="00fab-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="00fab-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="00fab-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="00fab-105">**目标：**在此步骤中，你将要执行以下任务：</span><span class="sxs-lookup"><span data-stu-id="00fab-105">**Objective:** In this step, you perform the following tasks:</span></span>  
+ <span data-ttu-id="00fab-105">**目标：** 在此步骤中，你将要执行以下任务：</span><span class="sxs-lookup"><span data-stu-id="00fab-105">**Objective:** In this step, you perform the following tasks:</span></span>  
   
 -   <span data-ttu-id="00fab-106">创建 WCF 自定义发送接收端口来发送和接收来自 Siebel 系统使用消息[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="00fab-106">Create a WCF-Custom send-receive port to send and receive messages from the Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="00fab-107">配置此端口，以使用你在上一步中创建的映射。</span><span class="sxs-lookup"><span data-stu-id="00fab-107">Configure this port to use the maps you created in the previous step.</span></span>  
   

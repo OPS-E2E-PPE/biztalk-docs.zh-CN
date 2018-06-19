@@ -1,11 +1,11 @@
 ---
-title: "使用 Oracle 数据库适配器使用性能计数器 |Microsoft 文档"
-ms.custom: 
+title: 使用 Oracle 数据库适配器使用性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance counters, using
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - performance counters, enabling
 - performance counters, and the WCF LOB Adapter SDK
 ms.assetid: beb80896-7594-411e-a83c-169d5278e2ce
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215181"
 ---
 # <a name="use-performance-counters-with-the-oracle-database-adapter"></a><span data-ttu-id="e370b-102">使用与 Oracle 数据库适配器的性能计数器</span><span class="sxs-lookup"><span data-stu-id="e370b-102">Use performance counters with the Oracle Database adapter</span></span>
 <span data-ttu-id="e370b-103">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。</span><span class="sxs-lookup"><span data-stu-id="e370b-103">Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] clients can use performance counters to gauge the performance of the adapters.</span></span> <span data-ttu-id="e370b-104">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建性能计数器类别**针对 Oracle 数据库的 BizTalk.NET 适配器**以及安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e370b-104">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category **BizTalk .NET Adapter for Oracle DB** along with installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span>  

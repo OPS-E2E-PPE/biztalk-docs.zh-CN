@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268837"
 ---
 # <a name="rule-action-side-effects"></a><span data-ttu-id="f1377-102">规则操作副作用</span><span class="sxs-lookup"><span data-stu-id="f1377-102">Rule Action Side Effects</span></span>
 <span data-ttu-id="f1377-103">如果执行某个操作会影响条件中所使用的对象或术语的状态，则将该操作视为对该对象具有副作用。</span><span class="sxs-lookup"><span data-stu-id="f1377-103">If the execution of an action affects the state of an object or a term used in conditions, that action is considered to have a side effect on the object.</span></span>  

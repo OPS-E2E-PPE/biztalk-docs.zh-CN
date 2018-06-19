@@ -1,17 +1,17 @@
 ---
-title: "防范拒绝服务攻击 |Microsoft 文档"
-ms.custom: 
+title: 防范拒绝服务攻击 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, denial-of-service attacks
 - denial-of-service attacks
 ms.assetid: 63342d7a-a5df-4e11-9037-93175d8f7ea7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209701"
 ---
 # <a name="defending-against-denial-of-service-attacks"></a><span data-ttu-id="0c8bf-102">防范拒绝服务攻击</span><span class="sxs-lookup"><span data-stu-id="0c8bf-102">Defending Against Denial-of-Service Attacks</span></span>
 <span data-ttu-id="0c8bf-103">可能会有人通过对 RNIFReceive.aspx 接收页施加压力，开始针对 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 的安装进行拒绝服务的攻击。</span><span class="sxs-lookup"><span data-stu-id="0c8bf-103">Someone could start a denial-of-service attack against an installation of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] by stressing the RNIFReceive.aspx receive page.</span></span> <span data-ttu-id="0c8bf-104">这些人可以通过向该页发送大量的空消息来达到此目的。</span><span class="sxs-lookup"><span data-stu-id="0c8bf-104">They could do so by sending large numbers of empty messages to that page.</span></span> <span data-ttu-id="0c8bf-105">如果状态为不选中，则这种攻击可以使用 ASPX 接收页发布的事件填满事件日志。</span><span class="sxs-lookup"><span data-stu-id="0c8bf-105">If left unchecked, such an attack could flood the event log with events published by the ASPX receive page.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "执行使用 EXECQUERY 命令 SAP 查询 |Microsoft 文档"
-ms.custom: 
+title: 执行使用 EXECQUERY 命令 SAP 查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 520153bf-9477-4b35-8953-3f5cb444ab9f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217205"
 ---
 # <a name="execute-an-sap-query-using-the-execquery-command"></a><span data-ttu-id="dfb69-102">执行 SAP 查询使用 EXECQUERY 命令</span><span class="sxs-lookup"><span data-stu-id="dfb69-102">Execute an SAP Query Using the EXECQUERY Command</span></span>
 <span data-ttu-id="dfb69-103">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]公开与 ADO.NET 数据源 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="dfb69-103">The [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] exposes the SAP system as an ADO.NET data source.</span></span> <span data-ttu-id="dfb69-104">与[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，您可以通过执行 EXECQUERY 语句执行 SAP 系统中预定义的查询。</span><span class="sxs-lookup"><span data-stu-id="dfb69-104">With the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], you can execute pre-defined queries in the SAP system by executing an EXECQUERY statement.</span></span>  

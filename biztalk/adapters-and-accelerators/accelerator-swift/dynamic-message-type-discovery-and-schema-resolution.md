@@ -1,11 +1,11 @@
 ---
-title: "动态消息类型发现和架构解决 |Microsoft 文档"
-ms.custom: 
+title: 动态消息类型发现和架构解决 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic schema resolution
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - disassembler, message types
 - code samples, disassembler
 ms.assetid: 5f71d3df-a37e-4ef2-9055-b614656203e9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211333"
 ---
 # <a name="dynamic-message-type-discovery-and-schema-resolution"></a><span data-ttu-id="b28d9-102">动态消息类型发现和架构解决</span><span class="sxs-lookup"><span data-stu-id="b28d9-102">Dynamic Message Type Discovery and Schema Resolution</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="b28d9-103">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]使您可以动态消息类型发现和架构解决 SWIFT 反汇编程序和汇编程序中的。</span><span class="sxs-lookup"><span data-stu-id="b28d9-103"> [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] enables dynamic message type discovery and schema resolution in both the SWIFT disassembler and assembler.</span></span>  
@@ -91,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="b28d9-138">**A4SWIFT_SecondaryMessageType** （可选）</span><span class="sxs-lookup"><span data-stu-id="b28d9-138">**A4SWIFT_SecondaryMessageType** (optional)</span></span>  
   
- <span data-ttu-id="b28d9-139">有关这些及其他提升的属性的详细信息，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="b28d9-139">For more information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+ <span data-ttu-id="b28d9-139">有关这些及其他提升的属性的详细信息，请参阅[A4SWIFT_ \* 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="b28d9-139">For more information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="b28d9-140">如果 SWIFT 标头架构设置为**无**，您应指定完成交换架构**SWIFT 交换架构**属性。</span><span class="sxs-lookup"><span data-stu-id="b28d9-140">If you set the SWIFT Header Schema to **None**, you should specify a complete interchange schema for the **SWIFT Interchange Schema** property.</span></span> <span data-ttu-id="b28d9-141">在这种情况下，拆装器使用指定的交换架构分析 A4SWIFT 接收的所有消息。</span><span class="sxs-lookup"><span data-stu-id="b28d9-141">In this case, the disassembler uses the specified interchange schema to parse all messages that A4SWIFT receives.</span></span> <span data-ttu-id="b28d9-142">即，禁用动态架构解析，并配置要只接收的消息其类型与指定的交换架构匹配的管线。</span><span class="sxs-lookup"><span data-stu-id="b28d9-142">That is, you disable dynamic schema resolution and configure the pipeline to receive only messages whose type matches the specified interchange schema.</span></span>  

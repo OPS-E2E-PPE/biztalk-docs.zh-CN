@@ -1,18 +1,18 @@
 ---
-title: "用于 Oracle 数据库的 BizTalk Adapter 概述 |Microsoft 文档"
-ms.custom: 
+title: 用于 Oracle 数据库的 BizTalk Adapter 概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter, overview
 - ODP.NET
 - Oracle Data Provider for .NET 2.0
 ms.assetid: 852b8f82-ab34-45b8-ad7f-263d719a87f9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214205"
 ---
 # <a name="overview-of-biztalk-adapter-for-oracle-database"></a><span data-ttu-id="bb6ee-102">用于 Oracle 数据库的 BizTalk Adapter 的概述</span><span class="sxs-lookup"><span data-stu-id="bb6ee-102">Overview of BizTalk Adapter for Oracle Database</span></span>
 <span data-ttu-id="bb6ee-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开作为 WCF 服务的 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="bb6ee-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes the Oracle database as a WCF service.</span></span> <span data-ttu-id="bb6ee-104">适配器客户端可以通过交换 SOAP 消息与适配器执行对 Oracle 数据库的操作。</span><span class="sxs-lookup"><span data-stu-id="bb6ee-104">Adapter clients can perform operations on the Oracle database by exchanging SOAP messages with the adapter.</span></span> <span data-ttu-id="bb6ee-105">适配器使用 WCF 消息，并且相应 ODP.NET 调用来执行该操作。</span><span class="sxs-lookup"><span data-stu-id="bb6ee-105">The adapter consumes the WCF message and makes appropriate ODP.NET calls to perform the operation.</span></span> <span data-ttu-id="bb6ee-106">适配器回客户端的 SOAP 消息的形式，从 Oracle 数据库中返回响应。</span><span class="sxs-lookup"><span data-stu-id="bb6ee-106">The adapter returns the response from the Oracle database back to the client in the form of SOAP messages.</span></span>  

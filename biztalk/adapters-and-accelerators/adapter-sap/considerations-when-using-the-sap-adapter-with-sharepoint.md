@@ -1,14 +1,14 @@
 ---
-title: "与 SharePoint 使用 SAP 适配器时的注意事项 |Microsoft 文档"
-ms.custom: 
+title: 与 SharePoint 使用 SAP 适配器时的注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d310741-b648-4028-a75f-35b843edcc8d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218125"
 ---
 # <a name="considerations-when-using-the-sap-adapter-with-sharepoint"></a><span data-ttu-id="1590e-102">与 SharePoint 使用 SAP 适配器时的注意事项</span><span class="sxs-lookup"><span data-stu-id="1590e-102">Considerations when using the SAP adapter with SharePoint</span></span>
 <span data-ttu-id="1590e-103">本主题包含有关的问题的信息时使用可能会遇到[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]与 Microsoft Office SharePoint Server，以及解决方法。</span><span class="sxs-lookup"><span data-stu-id="1590e-103">This topic contains information about the issues you might encounter while using the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] with Microsoft Office SharePoint Server, along with resolutions.</span></span> <span data-ttu-id="1590e-104">问题分为两个类别：</span><span class="sxs-lookup"><span data-stu-id="1590e-104">The issues are divided into two categories:</span></span>  

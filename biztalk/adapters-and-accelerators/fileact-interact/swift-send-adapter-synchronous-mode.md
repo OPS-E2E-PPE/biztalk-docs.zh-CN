@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 发送适配器同步模式 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 发送适配器同步模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90ffdfa8-908a-4f66-9e7e-36896e10f0e1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223701"
 ---
 # <a name="swift-send-adapter-synchronous-mode"></a><span data-ttu-id="062a5-102">SWIFT 发送适配器同步模式</span><span class="sxs-lookup"><span data-stu-id="062a5-102">SWIFT Send Adapter Synchronous Mode</span></span>
 <span data-ttu-id="062a5-103">下图显示的操作在同步模式下的发送适配器执行以通过 SWIFT 发送消息的序列。</span><span class="sxs-lookup"><span data-stu-id="062a5-103">The following diagram shows the sequence of actions that the send adapter in synchronous mode performs to send a message over SWIFT.</span></span>  

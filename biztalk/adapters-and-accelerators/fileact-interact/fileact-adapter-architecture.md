@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器体系结构 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da024517-af5a-47aa-97e0-c46777dd6c74
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222517"
 ---
 # <a name="fileact-adapter-architecture"></a><span data-ttu-id="559a4-102">FileAct 适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="559a4-102">FileAct Adapter Architecture</span></span>
 <span data-ttu-id="559a4-103">本部分包含有关体系结构的 FileAct 适配器的信息。</span><span class="sxs-lookup"><span data-stu-id="559a4-103">This section contains information about the architecture of the FileAct adapter.</span></span>  

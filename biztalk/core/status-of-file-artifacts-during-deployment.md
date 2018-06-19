@@ -11,7 +11,7 @@ helpviewer_keywords:
 - artifacts, status
 - deploying [artifacts], status
 ms.assetid: 6d0f7336-c2cb-4aa4-9f1d-55fb85fe78bf
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22276549"
 ---
 # <a name="status-of-file-artifacts-during-deployment"></a><span data-ttu-id="66b3d-102">在部署过程中的文件项目的状态</span><span class="sxs-lookup"><span data-stu-id="66b3d-102">Status of File Artifacts During Deployment</span></span>
 <span data-ttu-id="66b3d-103">您可能需要知道，在执行预处理和后处理脚本时，文件系统上存在哪些基于文件的项目。</span><span class="sxs-lookup"><span data-stu-id="66b3d-103">You may need to know what file-based artifacts exist on the file system when a pre- or post-processing script executes.</span></span> <span data-ttu-id="66b3d-104">例如，您可能需要后处理脚本在卸载期间运行，并从文件系统中删除某个项目文件。</span><span class="sxs-lookup"><span data-stu-id="66b3d-104">For example, you might want a post-processing script to run during uninstallation and delete a certain artifact file from the file system.</span></span> <span data-ttu-id="66b3d-105">基于文件的项目是除了 BizTalk 数据库中的表示形式，还可以作为本地文件系统上的文件存在的项目。</span><span class="sxs-lookup"><span data-stu-id="66b3d-105">File-based artifacts are artifacts that can exist as files on the local file system, in addition to their representation in the BizTalk databases.</span></span> <span data-ttu-id="66b3d-106">基于文件的项目的示例包括：COM 组件、.NET 程序集、BizTalk 程序集、BAM 项目、特别文件、脚本和绑定文件。</span><span class="sxs-lookup"><span data-stu-id="66b3d-106">Examples of file-based artifacts are COM components, .NET assemblies, BizTalk assemblies, BAM artifacts, ad hoc files, scripts, and binding files.</span></span>  

@@ -1,20 +1,21 @@
 ---
-title: "升级在 BizTalk Server 中的 RosettaNet 快捷键 (BTARN) |Microsoft 文档\""
-description: "请按照更新 BTARN 到 BizTalk Server 中的当前版本的升级步骤"
+title: 升级在 BizTalk Server 中的 RosettaNet 快捷键 (BTARN) |Microsoft 文档"
+description: 请按照更新 BTARN 到 BizTalk Server 中的当前版本的升级步骤
 author: MandiOhlinger
 manager: anneta
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 ms.author: mandia
 ms.openlocfilehash: 16e6083f3e5fb1778d77536cd602ee2208c0005f
 ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210093"
 ---
 # <a name="upgrade-the-rosettanet-accelerator"></a><span data-ttu-id="307b4-103">升级 RosettaNet 快捷键</span><span class="sxs-lookup"><span data-stu-id="307b4-103">Upgrade the RosettaNet accelerator</span></span>
 
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="307b4-121">你应备份出于安全原因 BTARN 数据库。</span><span class="sxs-lookup"><span data-stu-id="307b4-121">You should back up the BTARN database for safety reasons.</span></span> <span data-ttu-id="307b4-122">安装程序将 BTRAN 数据库迁移到较新版本。</span><span class="sxs-lookup"><span data-stu-id="307b4-122">The installation program migrates the BTRAN database to the newer version.</span></span>  
   
-3.  <span data-ttu-id="307b4-123">备份下的任何文件*< 驱动器\>*: \Program Files\\Microsoft BizTalk Accelerator RosettaNet 文件夹所做更改，例如，文件 SDK 中。</span><span class="sxs-lookup"><span data-stu-id="307b4-123">Back up any files under the *<drive\>*:\Program Files\\Microsoft BizTalk Accelerator for RosettaNet folder that you have made changes to, for example, files in the SDK.</span></span>  
+3.  <span data-ttu-id="307b4-123">备份下的任何文件 *< 驱动器\>*: \Program Files\\Microsoft BizTalk Accelerator RosettaNet 文件夹所做更改，例如，文件 SDK 中。</span><span class="sxs-lookup"><span data-stu-id="307b4-123">Back up any files under the *<drive\>*:\Program Files\\Microsoft BizTalk Accelerator for RosettaNet folder that you have made changes to, for example, files in the SDK.</span></span>  
   
 4.  <span data-ttu-id="307b4-124">取消部署引用一个或多个早期版本 BTARN 程序集的项目或程序集。</span><span class="sxs-lookup"><span data-stu-id="307b4-124">Undeploy any projects or assemblies that have references to one or more of the previous versions of BTARN assemblies.</span></span>  
   

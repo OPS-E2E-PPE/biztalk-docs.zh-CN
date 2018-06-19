@@ -1,14 +1,14 @@
 ---
-title: "第 4 课： 执行插入操作上采购订单表 |Microsoft 文档"
-ms.custom: 
+title: 第 4 课： 执行插入操作上采购订单表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66fc64c5-a3da-4014-8545-f34e6577bd73
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222685"
 ---
 # <a name="lesson-4-perform-an-insert-operation-on-the-purchase-order-table"></a><span data-ttu-id="cb0af-102">第 4 课： 执行插入操作上采购订单表</span><span class="sxs-lookup"><span data-stu-id="cb0af-102">Lesson 4: Perform an Insert Operation on the Purchase Order Table</span></span>
 <span data-ttu-id="cb0af-103">在[第 3 课： 执行存储过程向选择新添加的员工](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)，你执行**UPDATE_EMPLOYEE**存储过程并收到一条包含的详细信息的响应消息新插入员工记录。</span><span class="sxs-lookup"><span data-stu-id="cb0af-103">In [Lesson 3: Execute a Stored Procedure to Select New Employees Added](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md), you executed the **UPDATE_EMPLOYEE** stored procedure and received a response message that contains the details of the newly inserted employee record.</span></span> <span data-ttu-id="cb0af-104">在本课程中，你将在上一课上生成并更新业务流程执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="cb0af-104">In this lesson, you will build on the previous lesson and update the orchestration to perform the following steps:</span></span>  

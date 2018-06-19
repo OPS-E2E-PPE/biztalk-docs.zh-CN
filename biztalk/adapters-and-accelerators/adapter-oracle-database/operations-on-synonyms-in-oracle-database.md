@@ -1,14 +1,14 @@
 ---
-title: "对 Oracle 数据库中的同义词的操作 |Microsoft 文档"
-ms.custom: 
+title: 对 Oracle 数据库中的同义词的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 608e8c36-ac78-4d7d-aca4-be552505fc2b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214957"
 ---
 # <a name="operations-on-synonyms-in-oracle-database"></a><span data-ttu-id="83075-102">对 Oracle 数据库中的同义词的操作</span><span class="sxs-lookup"><span data-stu-id="83075-102">Operations on Synonyms in Oracle Database</span></span>
 <span data-ttu-id="83075-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]允许你执行对同义词的操作。</span><span class="sxs-lookup"><span data-stu-id="83075-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] allows you to perform operations on synonyms.</span></span> <span data-ttu-id="83075-104">同义词是一个别名或数据库对象 （如表、 视图、 存储的过程、 函数和包） 的友好名称。</span><span class="sxs-lookup"><span data-stu-id="83075-104">A synonym is an alias or friendly name for the database objects (such as tables, views, stored procedures, functions, and packages).</span></span> <span data-ttu-id="83075-105">有关 Oracle 中的同义词的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)。</span><span class="sxs-lookup"><span data-stu-id="83075-105">For more information about synonyms in Oracle, see [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058).</span></span>  

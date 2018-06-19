@@ -1,17 +1,17 @@
 ---
-title: "连接超时值设置为 ASPX 页面 |Microsoft 文档"
-ms.custom: 
+title: 连接超时值设置为 ASPX 页面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, connection time-out
 - connections, time-out
 ms.assetid: 61d9c996-caf4-48bd-bda7-52f2797a941b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207189"
 ---
 # <a name="setting-the-connection-time-out-for-an-aspx-page"></a><span data-ttu-id="09213-102">ASPX 页设置连接超时</span><span class="sxs-lookup"><span data-stu-id="09213-102">Setting the Connection Time-Out for an ASPX Page</span></span>
 <span data-ttu-id="09213-103">将 ASPX 页用于同步消息时，必须增加 ASPX 页的连接超时值，以便 ASPX 页可以等待所需的消息。</span><span class="sxs-lookup"><span data-stu-id="09213-103">When you use an ASPX page for synchronous messages, you must increase the connection time-out for the ASPX page so that it can wait for the expected message.</span></span>  

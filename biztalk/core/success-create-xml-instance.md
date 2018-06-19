@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277893"
 ---
 # <a name="success---create-xml-instance"></a><span data-ttu-id="49951-102">成功-创建 XML 实例</span><span class="sxs-lookup"><span data-stu-id="49951-102">Success - Create XML Instance</span></span>
 <span data-ttu-id="49951-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="49951-103">**Explanation**</span></span>  

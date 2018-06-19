@@ -1,18 +1,18 @@
 ---
-title: "手动配置到 SAP 适配器的物理端口绑定 |Microsoft 文档"
-ms.custom: 
+title: 手动配置到 SAP 适配器的物理端口绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, sending messages to the SAP system
 - physical port binding, manually configuring
 - deploying, receiving messages from the SAP system
 ms.assetid: c4f547aa-5514-4ca9-809b-d8d395de419c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216581"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-sap-adapter"></a><span data-ttu-id="5008b-102">手动配置到 SAP 适配器的物理端口绑定</span><span class="sxs-lookup"><span data-stu-id="5008b-102">Manually configure a physical port binding to the SAP adapter</span></span>
 <span data-ttu-id="5008b-103">配置[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]为 WCF 自定义绑定使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="5008b-103">Configure the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] as a WCF custom binding by using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> 

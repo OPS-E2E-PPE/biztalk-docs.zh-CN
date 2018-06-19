@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270829"
 ---
 # <a name="sendhandler-secondarytransport-node"></a><span data-ttu-id="198ff-102">发送处理程序 （SecondaryTransport 节点）</span><span class="sxs-lookup"><span data-stu-id="198ff-102">SendHandler (SecondaryTransport Node)</span></span>
 <span data-ttu-id="198ff-103">绑定文件 SecondaryTransport 节点的发送处理程序节点包含有关发送处理程序与使用绑定文件导出传输关联的特定信息。</span><span class="sxs-lookup"><span data-stu-id="198ff-103">The SendHandler node of the SecondaryTransport node of a binding file contains specific information about the send handler associated with a transport that is exported with the binding file.</span></span>  

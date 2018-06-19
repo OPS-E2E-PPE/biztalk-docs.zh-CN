@@ -1,14 +1,14 @@
 ---
-title: "连接到 SQL Visual Studio 中使用的服务器添加适配器服务引用插件 |Microsoft 文档"
-ms.custom: 
+title: 连接到 SQL Visual Studio 中使用的服务器添加适配器服务引用插件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fc3b824-d20b-4531-81f3-89b4a1ff3216
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226533"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-add-adapter-service-reference-plug-in"></a><span data-ttu-id="4a071-102">连接到 SQL Visual Studio 中使用的服务器添加插件的适配器服务引用</span><span class="sxs-lookup"><span data-stu-id="4a071-102">Connect to SQL Server in Visual Studio Using Add Adapter Service Reference Plug-in</span></span>
 <span data-ttu-id="4a071-103">若要连接到 SQL Server 使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 编程解决方案中，你必须使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="4a071-103">To connect to SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a .NET programming solution, you must use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)].</span></span> <span data-ttu-id="4a071-104">本主题将说明了如何使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="4a071-104">This topic provides instructions on how to use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="4a071-117">**无**</span><span class="sxs-lookup"><span data-stu-id="4a071-117">**None**</span></span>|<span data-ttu-id="4a071-118">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="4a071-118">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="4a071-119">**Windows**</span><span class="sxs-lookup"><span data-stu-id="4a071-119">**Windows**</span></span>|<span data-ttu-id="4a071-120">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="4a071-120">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="4a071-121">**用户名**</span><span class="sxs-lookup"><span data-stu-id="4a071-121">**Username**</span></span>|<span data-ttu-id="4a071-122">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="4a071-122">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="4a071-123">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="4a071-123">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="4a071-124">**注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="4a071-124">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="4a071-121">**用户名**</span><span class="sxs-lookup"><span data-stu-id="4a071-121">**Username**</span></span>|<span data-ttu-id="4a071-122">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="4a071-122">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="4a071-123">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="4a071-123">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="4a071-124">**注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="4a071-124">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 4.  <span data-ttu-id="4a071-125">单击**URI 属性**选项卡上，然后指定连接参数的值。</span><span class="sxs-lookup"><span data-stu-id="4a071-125">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="4a071-126">有关连接 URI 的详细信息为[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="4a071-126">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   

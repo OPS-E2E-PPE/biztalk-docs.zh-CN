@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230573"
 ---
 # <a name="btadchangerequestaction"></a><span data-ttu-id="943dc-102">BTAD_ChangeRequestAction</span><span class="sxs-lookup"><span data-stu-id="943dc-102">BTAD_ChangeRequestAction</span></span>
 <span data-ttu-id="943dc-103">BTAD_ChangeRequestAction 包含指示更改请求操作的值。</span><span class="sxs-lookup"><span data-stu-id="943dc-103">BTAD_ChangeRequestAction contains a value indicating a change request action.</span></span>  

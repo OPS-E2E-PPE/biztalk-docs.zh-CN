@@ -1,14 +1,14 @@
 ---
-title: "什么是交互适配器？ | Microsoft Docs"
-ms.custom: 
+title: 什么是交互适配器？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a09063df-c6c4-41b9-96a1-e5059777fa72
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224749"
 ---
 # <a name="what-is-the-interact-adapter"></a><span data-ttu-id="e1bcd-103">什么是交互适配器？</span><span class="sxs-lookup"><span data-stu-id="e1bcd-103">What Is the InterAct Adapter?</span></span>
 <span data-ttu-id="e1bcd-104">SWIFTNet 交互适配器传输的消息提供 BizTalk Server 和 SWIFT 保护 IP 网络 (SIPN) 之间的连接。</span><span class="sxs-lookup"><span data-stu-id="e1bcd-104">The InterAct Adapter for SWIFTNet provides connectivity between BizTalk Server and the SWIFT Secure IP Network (SIPN) for the transfer of messages.</span></span> <span data-ttu-id="e1bcd-105">SIPN 互连金融机构、 金融业基础结构和客户的安全专用网络上传输消息和文件。</span><span class="sxs-lookup"><span data-stu-id="e1bcd-105">The SIPN transfers messages and files over a secure private network which interconnects financial institutions, financial industry infrastructures, and customers.</span></span> <span data-ttu-id="e1bcd-106">交互适配器使用 SWIFTNet 链接 (SNL) 应用程序编程接口 (API) s 要连接到 SIPN。</span><span class="sxs-lookup"><span data-stu-id="e1bcd-106">The InterAct adapter uses the SWIFTNet Link (SNL) application programming interface (API)s to connect to the SIPN.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "Siebel 适配器中的 SiebelParameter 类 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器中的 SiebelParameter 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelParameter
 - Data Provider for Siebel, SiebelParameter
 - SiebelParameter, supported properties and methods
 ms.assetid: 1dcb72c7-a470-4609-8aba-a5c8ad5f3ac9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222485"
 ---
 # <a name="siebelparameter-class-in-the-siebel-adapter"></a><span data-ttu-id="a8156-102">Siebel 适配器中 SiebelParameter 类</span><span class="sxs-lookup"><span data-stu-id="a8156-102">SiebelParameter class in the Siebel adapter</span></span>
 <span data-ttu-id="a8156-103">[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供`DbParameter`实现，若要启用的 ADO.NET 客户端可以指定特定命令的参数。</span><span class="sxs-lookup"><span data-stu-id="a8156-103">The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] provides a `DbParameter` implementation to enable an ADO.NET client to specify parameters for a particular command.</span></span> <span data-ttu-id="a8156-104">使用的实例`System.Data.Common.DbCommand`类[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，客户端程序可以获取的实例`System.Data.Common.DbParameter`类。</span><span class="sxs-lookup"><span data-stu-id="a8156-104">Using an instance of the `System.Data.Common.DbCommand` class of the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], a client program can obtain an instance of the `System.Data.Common.DbParameter` class.</span></span>  

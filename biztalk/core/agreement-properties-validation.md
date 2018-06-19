@@ -1,14 +1,14 @@
 ---
-title: "协议属性验证 |Microsoft 文档"
-ms.custom: 
+title: 协议属性验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9d565c26-37ef-4aee-aebb-3152880242a1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229869"
 ---
 # <a name="agreement-properties-validation"></a><span data-ttu-id="cbef2-102">协议属性验证</span><span class="sxs-lookup"><span data-stu-id="cbef2-102">Agreement Properties Validation</span></span>
 <span data-ttu-id="cbef2-103">协议属性包括对交换、组或事务集的重复控制编号的检查。</span><span class="sxs-lookup"><span data-stu-id="cbef2-103">Agreement properties include checks for duplicate control numbers for interchanges, groups, or transaction sets.</span></span> <span data-ttu-id="cbef2-104">只有在协议属性中启用这些验证，EDI 接收管道才会执行这些验证。</span><span class="sxs-lookup"><span data-stu-id="cbef2-104">The EDI receive pipeline will perform these validations only if they are enabled in agreement properties.</span></span> <span data-ttu-id="cbef2-105">这些验证包括：</span><span class="sxs-lookup"><span data-stu-id="cbef2-105">These validations include:</span></span>  

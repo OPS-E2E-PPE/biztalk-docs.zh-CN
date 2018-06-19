@@ -1,17 +1,17 @@
 ---
-title: "解决与适用于 SAP 的数据提供程序的问题 |Microsoft 文档"
-ms.custom: 
+title: 解决与适用于 SAP 的数据提供程序的问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for SAP, troubleshooting
 - troubleshooting, Data Provider for SAP
 ms.assetid: 6fe9baed-0404-4f15-b76e-88cc11c5ff46
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217981"
 ---
 # <a name="troubleshoot-issues-with-the-data-provider-for-sap"></a><span data-ttu-id="bbb51-102">解决与适用于 SAP 的数据提供程序的问题</span><span class="sxs-lookup"><span data-stu-id="bbb51-102">Troubleshoot Issues with the Data Provider for SAP</span></span>
 <span data-ttu-id="bbb51-103">本部分讨论如何使用故障排除方法来解决操作使用时可能遇到的错误[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="bbb51-103">This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)].</span></span>  

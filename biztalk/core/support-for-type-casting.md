@@ -1,14 +1,14 @@
 ---
-title: "类型强制转换的支持 |Microsoft 文档"
-ms.custom: 
+title: 类型强制转换的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6af46e34-5e33-4f61-8c19-4348f1bb4d4a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279501"
 ---
 # <a name="support-for-type-casting"></a><span data-ttu-id="91e47-102">类型强制转换的支持</span><span class="sxs-lookup"><span data-stu-id="91e47-102">Support for Type Casting</span></span>
 <span data-ttu-id="91e47-103">你可以使用**强制转换**方法**ClassMemberBinding**类将一种类型的对象转换为另一台兼容类型的对象。</span><span class="sxs-lookup"><span data-stu-id="91e47-103">You can use the **Cast** method of the **ClassMemberBinding** class to convert an object of one type to an object of another compatible type.</span></span> <span data-ttu-id="91e47-104">目前，业务规则编辑器工具不支持创建规则使用**强制转换**方法。</span><span class="sxs-lookup"><span data-stu-id="91e47-104">Currently, the Business Rule Composer tool does not support creating rules by using the **Cast** method.</span></span> <span data-ttu-id="91e47-105">您必须使用规则引擎对象模型通过编程方式来创建规则，以充分利用此功能。</span><span class="sxs-lookup"><span data-stu-id="91e47-105">You must create the rules programmatically by using the rule engine object model to take advantage of this feature.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "轮询 Operations1 的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 轮询 Operations1 的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c572c4ec-0a3f-42b8-bebd-40eb584438ad
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216141"
 ---
 # <a name="message-schemas-for-the-polling-operations"></a><span data-ttu-id="44f78-102">轮询操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="44f78-102">Message Schemas for the Polling Operations</span></span>
 <span data-ttu-id="44f78-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]面，具体取决于 Oracle E-business Suite 中的目标对象的轮询与相关的各种入站的操作。</span><span class="sxs-lookup"><span data-stu-id="44f78-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces various inbound operations related to polling depending on the target object in Oracle E-Business Suite.</span></span> <span data-ttu-id="44f78-104">接口表、 界面视图、 表和视图，而你可以为 PL/SQL Api、 函数和存储的过程的多个自定义轮询操作显示单个轮询操作。</span><span class="sxs-lookup"><span data-stu-id="44f78-104">For interface tables, interface views, tables, and views, a single Poll operation is surfaced whereas you can have multiple custom polling operations for PL/SQL APIs, functions, and stored procedures.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "配置与 Oracle 数据库的事务隔离级别和事务超时 |Microsoft 文档"
-ms.custom: 
+title: 配置与 Oracle 数据库的事务隔离级别和事务超时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4b66e764-2330-441b-89ef-29118f27b366
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214509"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-oracle-database"></a><span data-ttu-id="1dfad-102">配置与 Oracle 数据库的事务隔离级别和事务超时</span><span class="sxs-lookup"><span data-stu-id="1dfad-102">Configure transaction isolation level and transaction timeout with Oracle Database</span></span>
 <span data-ttu-id="1dfad-103">执行入站的操作 （轮询） 使用时[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你应适当地配置事务的隔离级别和事务超时值。</span><span class="sxs-lookup"><span data-stu-id="1dfad-103">While performing inbound operation (Polling) using the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you should appropriately configure the transaction isolation level and the transaction timeout values.</span></span> <span data-ttu-id="1dfad-104">为此，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="1dfad-104">To do this:</span></span>  

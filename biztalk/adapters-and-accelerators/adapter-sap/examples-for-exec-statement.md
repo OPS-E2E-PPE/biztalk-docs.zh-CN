@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad2691f4-34bb-423c-9b3e-4abe2d55ddac
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22216365"
 ---
 # <a name="examples-for-exec-statement"></a><span data-ttu-id="4e6fb-103">EXEC 语句的示例</span><span class="sxs-lookup"><span data-stu-id="4e6fb-103">Examples for EXEC Statement</span></span>
 <span data-ttu-id="4e6fb-104">本主题演示各种 EXEC 语句的示例语法。</span><span class="sxs-lookup"><span data-stu-id="4e6fb-104">This topic shows example syntax for various EXEC statements.</span></span>

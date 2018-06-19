@@ -1,15 +1,15 @@
 ---
-title: "BizTalk 中的 Oracle 数据库的 BizTalk Adapter 术语表 |Microsoft 文档"
-description: "常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 Oracle 数据库适配器"
-ms.custom: 
+title: BizTalk 中的 Oracle 数据库的 BizTalk Adapter 术语表 |Microsoft 文档
+description: 常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 Oracle 数据库适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d386cd36-d8e4-4e5e-806e-0d02e042344f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216309"
 ---
 # <a name="glossary"></a><span data-ttu-id="be22e-103">词汇表</span><span class="sxs-lookup"><span data-stu-id="be22e-103">Glossary</span></span>
 <span data-ttu-id="be22e-104">中使用以下术语和定义[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="be22e-104">The following terms and definitions are used in [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>    

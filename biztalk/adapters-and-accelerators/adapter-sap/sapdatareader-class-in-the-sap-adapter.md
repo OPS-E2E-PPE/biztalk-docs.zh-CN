@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - SAPDataReader, supported methods and classes
 ms.assetid: bd0e55ea-7413-498f-851f-ed97bd8bacab
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22217309"
 ---
 # <a name="sapdatareader-class-in-the-sap-adapter"></a><span data-ttu-id="79337-102">SAP 适配器中 SAPDataReader 类</span><span class="sxs-lookup"><span data-stu-id="79337-102">SAPDataReader class in the SAP adapter</span></span>
 <span data-ttu-id="79337-103">以下部分列出的方法和属性**SAPDataReader**类。</span><span class="sxs-lookup"><span data-stu-id="79337-103">The following section lists the methods and properties for the **SAPDataReader** class.</span></span> <span data-ttu-id="79337-104">该项派生自**System.Data.Common.DbDataReader**。</span><span class="sxs-lookup"><span data-stu-id="79337-104">This is derived from **System.Data.Common.DbDataReader**.</span></span>  

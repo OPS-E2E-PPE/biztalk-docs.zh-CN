@@ -1,15 +1,15 @@
 ---
-title: "步骤 2A-添加文件接收位置 |Microsoft 文档"
-description: "步骤 2A-添加文件在 BizTalk Server 接收 FileAct 应用商店应用和进 （请求） 方案的位置"
-ms.custom: 
+title: 步骤 2A-添加文件接收位置 |Microsoft 文档
+description: 步骤 2A-添加文件在 BizTalk Server 接收 FileAct 应用商店应用和进 （请求） 方案的位置
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 13720ebb-fbe4-4fe1-a095-9ae14c62def1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224069"
 ---
 # <a name="step-2a-add-file-receive-locations-for-the-fileact-store-and-forward-pull-scenario"></a><span data-ttu-id="2e4e6-103">步骤 2A： 添加文件接收 FileAct 应用商店应用和进 （请求） 方案的位置</span><span class="sxs-lookup"><span data-stu-id="2e4e6-103">Step 2A: Add FILE Receive Locations for the FileAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="2e4e6-104">在开始此步骤之前，必须完成[步骤 1： 配置 FileAct 应用商店应用和向前 （请求） 方案 SWIFT 适配器](step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="2e4e6-104">Before you begin this step, you must complete [Step 1: Configure the SWIFT Adapter for the FileAct Store and Forward (Pull) Scenario](step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario.md).</span></span>  

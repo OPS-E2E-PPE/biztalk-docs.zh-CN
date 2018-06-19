@@ -1,14 +1,14 @@
 ---
-title: "中 AS2 协议处理角色 |Microsoft 文档"
-ms.custom: 
+title: 中 AS2 协议处理角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb6a6fe1-8fb4-4998-a1b4-aadad7e672c4
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279429"
 ---
 # <a name="the-role-of-agreements-in-as2-processing"></a><span data-ttu-id="ef57a-102">协议在 AS2 处理中的角色</span><span class="sxs-lookup"><span data-stu-id="ef57a-102">The Role of Agreements in AS2 Processing</span></span>
 <span data-ttu-id="ef57a-103">组织使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来从一个或多个贸易合作伙伴接收 AS2 消息，以及向其发送 AS2 消息。</span><span class="sxs-lookup"><span data-stu-id="ef57a-103">An organization uses [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to receive AS2 messages from, and send AS2 messages to, one or more trading partners.</span></span> <span data-ttu-id="ef57a-104">然后贸易合作伙伴定义作为组织内业务实体的业务配置文件。</span><span class="sxs-lookup"><span data-stu-id="ef57a-104">The trading partners, in turn define business profiles that are business entities within an organization.</span></span> <span data-ttu-id="ef57a-105">您在属于不同贸易合作伙伴的两个业务配置文件之间的双向贸易合作伙伴协议中设置 AS2 属性。</span><span class="sxs-lookup"><span data-stu-id="ef57a-105">You set AS2 properties in bi-directional trading partner agreements between two business profiles belonging to different trading partners.</span></span>  

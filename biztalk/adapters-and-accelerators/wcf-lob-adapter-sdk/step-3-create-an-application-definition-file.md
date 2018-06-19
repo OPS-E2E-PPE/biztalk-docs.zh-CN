@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建应用程序定义文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建应用程序定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 843fafdb-571e-4da4-ad04-7dc7f23e03ac
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227005"
 ---
 # <a name="step-3-create-an-application-definition-file"></a><span data-ttu-id="f134b-102">步骤 3： 创建应用程序定义文件</span><span class="sxs-lookup"><span data-stu-id="f134b-102">Step 3: Create an Application Definition File</span></span>
 <span data-ttu-id="f134b-103">![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span><span class="sxs-lookup"><span data-stu-id="f134b-103">![Step 3 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")</span></span>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="f134b-136">在元数据对象窗格中，展开**EchoGreetings**节点，然后展开**方法**节点。</span><span class="sxs-lookup"><span data-stu-id="f134b-136">In the Metadata Objects pane, expand the **EchoGreetings** node, and then expand the **Methods** node.</span></span>  
   
-2.  <span data-ttu-id="f134b-137">单击**EchoGreetings**节点，然后在属性窗格中，单击省略号**（...）**按钮**属性**字段。</span><span class="sxs-lookup"><span data-stu-id="f134b-137">Click the **EchoGreetings** node and, in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
+2.  <span data-ttu-id="f134b-137">单击**EchoGreetings**节点，然后在属性窗格中，单击省略号 **（...）** 按钮**属性**字段。</span><span class="sxs-lookup"><span data-stu-id="f134b-137">Click the **EchoGreetings** node and, in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
   
 3.  <span data-ttu-id="f134b-138">在 PropertyView 集合编辑器窗口中，单击**添加**，然后在**名称**字段的属性窗格中，类型**HttpHeaderUserName**。</span><span class="sxs-lookup"><span data-stu-id="f134b-138">In the PropertyView Collection Editor window, click **Add**, and in the **Name** field of the Property pane, type  **HttpHeaderUserName**.</span></span>  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="f134b-147">在元数据对象窗格中，展开**EchoWSLOB**节点，然后展开**实例**节点。</span><span class="sxs-lookup"><span data-stu-id="f134b-147">In the Metadata Objects pane, expand the **EchoWSLOB** node, and then expand the **Instances** node.</span></span>  
   
-2.  <span data-ttu-id="f134b-148">单击**EchoWSLOB_Instance**，在属性窗格中，单击省略号**（...）**按钮**属性**字段。</span><span class="sxs-lookup"><span data-stu-id="f134b-148">Click **EchoWSLOB_Instance**, and in the Properties pane, click the ellipsis **(…)**button in the **Properties** field.</span></span>  
+2.  <span data-ttu-id="f134b-148">单击**EchoWSLOB_Instance**，在属性窗格中，单击省略号 **（...）** 按钮**属性**字段。</span><span class="sxs-lookup"><span data-stu-id="f134b-148">Click **EchoWSLOB_Instance**, and in the Properties pane, click the ellipsis **(…)** button in the **Properties** field.</span></span>  
   
 3.  <span data-ttu-id="f134b-149">在 PropertyView 集合编辑器窗口中，单击**添加**，然后在属性窗格中，键入**SecondarySsoApplicationId**中**名称**字段。</span><span class="sxs-lookup"><span data-stu-id="f134b-149">In the PropertyView Collection Editor window, click **Add**, and in the Property pane, type **SecondarySsoApplicationId** in the **Name** field.</span></span>  
   

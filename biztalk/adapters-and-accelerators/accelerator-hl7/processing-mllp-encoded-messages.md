@@ -1,17 +1,17 @@
 ---
-title: "处理 MLLP 编码消息 |Microsoft 文档"
-ms.custom: 
+title: 处理 MLLP 编码消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MLLP-encoded messages, processing
 - MLLP-encoded messages
 ms.assetid: 906524fa-5870-4336-bc9a-e90c4461f053
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205965"
 ---
 # <a name="processing-mllp-encoded-messages"></a><span data-ttu-id="21db7-102">处理 MLLP 编码消息</span><span class="sxs-lookup"><span data-stu-id="21db7-102">Processing MLLP-encoded Messages</span></span>
 <span data-ttu-id="21db7-103">以下各节提供有关最小的较低层协议 (MLLP) 的信息接收适配器和 MLLP 发送用于 HL7 V2 的适配器。X 消息处理。</span><span class="sxs-lookup"><span data-stu-id="21db7-103">The following sections provide information about the Minimal Lower Layer Protocol (MLLP) receive adapter and the MLLP send adapter used for HL7 V2.X message processing.</span></span>  

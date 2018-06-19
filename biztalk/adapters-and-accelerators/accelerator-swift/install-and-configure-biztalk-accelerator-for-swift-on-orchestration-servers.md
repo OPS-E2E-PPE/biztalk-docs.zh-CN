@@ -1,17 +1,17 @@
 ---
-title: "安装和配置 BizTalk Accelerator for SWIFT Orchestration 服务器上 |Microsoft 文档"
-ms.custom: 
+title: 安装和配置 BizTalk Accelerator for SWIFT Orchestration 服务器上 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration server, installing BizTalk Accelerator for SWIFT
 - BizTalk Accelerator for SWIFT, installing on orchestration server
 ms.assetid: 127113ae-46b4-4290-a2c1-6a3db04cd178
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209741"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-orchestration-servers"></a><span data-ttu-id="83134-102">安装和配置 BizTalk Accelerator for SWIFT Orchestration 服务器上</span><span class="sxs-lookup"><span data-stu-id="83134-102">Installing and Configuring BizTalk Accelerator for SWIFT on Orchestration Servers</span></span>
 <span data-ttu-id="83134-103">本部分介绍如何安装和配置[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]orchestration 服务器上。</span><span class="sxs-lookup"><span data-stu-id="83134-103">This section describes how to install and configure [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] on the orchestration servers.</span></span> <span data-ttu-id="83134-104">这些服务器主要用于运行 FIN 修复和调节业务流程和消息修复/新建提交业务流程。</span><span class="sxs-lookup"><span data-stu-id="83134-104">These servers are mainly used to run the FIN Repair and Reconciliation orchestration and the Message Repair/New Submission orchestration.</span></span>  

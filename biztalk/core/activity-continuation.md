@@ -1,11 +1,11 @@
 ---
-title: "活动延续 |Microsoft 文档"
-ms.custom: 
+title: 活动延续 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - continuation tokens
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - continuations, activities [BAM]
 - code samples, activities [BAM]
 ms.assetid: 47d91ae6-77c1-4efb-940f-a7b3a325e5bd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224789"
 ---
 # <a name="activity-continuation"></a><span data-ttu-id="cac26-102">活动延续</span><span class="sxs-lookup"><span data-stu-id="cac26-102">Activity Continuation</span></span>
 <span data-ttu-id="cac26-103">BAM 活动（也称为业务活动）可涉及多个异类应用程序（例如，一个管道、两个业务流程、一个行业应用程序以及另一个管道）。</span><span class="sxs-lookup"><span data-stu-id="cac26-103">The BAM activity (also called the business activity) can span multiple heterogeneous applications (for example, a pipeline, two orchestrations, a line-of-business application, and then another pipeline).</span></span> <span data-ttu-id="cac26-104">BAM 基础结构可以关联多个应用程序开发人员 – 调用一个概念的一些帮助中的事件"*延续*，"在下图中所显示。</span><span class="sxs-lookup"><span data-stu-id="cac26-104">The BAM infrastructure can correlate the events from multiple applications with a little help from the developer – a concept called "*Continuation*," which is shown in the following figure.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "按阶段项目规划的建议 |Microsoft 文档"
-ms.custom: 
+title: 按阶段项目规划的建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - planning, performance
 - performance, planning
 ms.assetid: 422f05e3-5ad4-4f47-9be3-c229a20a6ef3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264949"
 ---
 # <a name="project-planning-recommendations-by-phase"></a><span data-ttu-id="312b2-102">分阶段描述的项目规划建议</span><span class="sxs-lookup"><span data-stu-id="312b2-102">Project Planning Recommendations by Phase</span></span>
 <span data-ttu-id="312b2-103">目前，存在多种软件开发生命周期模型，每一种模型都有自己的方法、优点和局限性。</span><span class="sxs-lookup"><span data-stu-id="312b2-103">There are a number of software development lifecycle models in existence today, each with their own approaches, benefits, and limitations.</span></span> <span data-ttu-id="312b2-104">本部分的目标是提供一组相关建议，来帮助您恰当地成功规划 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 开发项目。</span><span class="sxs-lookup"><span data-stu-id="312b2-104">The goal of this section is to provide a set of recommendations that will help you plan appropriately for a successful [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] development project.</span></span>  

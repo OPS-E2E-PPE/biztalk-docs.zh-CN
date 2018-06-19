@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 从通知消息中提取通知类型 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 从通知消息中提取通知类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 72f3e805-0f5f-42fa-8fe3-78ccbb375f74
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224157"
 ---
 # <a name="step-2-extract-notification-type-from-notification-message"></a><span data-ttu-id="724e5-102">步骤 2： 从通知消息中提取通知类型</span><span class="sxs-lookup"><span data-stu-id="724e5-102">Step 2: Extract Notification Type from Notification Message</span></span>
 <span data-ttu-id="724e5-103">![步骤 2 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span><span class="sxs-lookup"><span data-stu-id="724e5-103">![Step 2 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")</span></span>  
   
  <span data-ttu-id="724e5-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="724e5-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="724e5-105">**目标：**在此步骤中，添加表达式形状以提取 SQL Server 数据库从收到的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="724e5-105">**Objective:** In this step, you add an expression shape to extract the type of notification received from the SQL Server database.</span></span>  
+ <span data-ttu-id="724e5-105">**目标：** 在此步骤中，添加表达式形状以提取 SQL Server 数据库从收到的通知的类型。</span><span class="sxs-lookup"><span data-stu-id="724e5-105">**Objective:** In this step, you add an expression shape to extract the type of notification received from the SQL Server database.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="724e5-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="724e5-106">Prerequisites</span></span>  
  <span data-ttu-id="724e5-107">你必须已完成[步骤 1： 添加要接收通知的业务流程形状](../../adapters-and-accelerators/adapter-sql/step-1-add-orchestration-shapes-to-receive-notification.md)。</span><span class="sxs-lookup"><span data-stu-id="724e5-107">You must have completed [Step 1: Add Orchestration Shapes to Receive Notification](../../adapters-and-accelerators/adapter-sql/step-1-add-orchestration-shapes-to-receive-notification.md).</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 接收管道 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive pipelines, creating
 - FRR, creating receive pipelines
 - creating, receive pipelines
 ms.assetid: 5884176b-8522-4dd3-8f93-8695858b59ac
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210373"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a><span data-ttu-id="45cc0-102">创建 FRR 接收管道</span><span class="sxs-lookup"><span data-stu-id="45cc0-102">Creating the FRR Receive Pipeline</span></span>
 <span data-ttu-id="45cc0-103">若要执行 FIN 响应对帐，必须创建包含 SWIFT FRR 解码器和 SWIFT FRR CorrelationSet 冲突解决程序管道组件，除了 SWIFT 反汇编程序接收管道。</span><span class="sxs-lookup"><span data-stu-id="45cc0-103">To perform FIN Response Reconciliation, you must create a receive pipeline that contains the SWIFT FRR Decoder and SWIFT FRR CorrelationSet Resolver pipeline components, in addition to the SWIFT disassembler.</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="45cc0-127">从 BizTalk 管道组件工具箱窗格中，将拖动**SWIFT 反汇编程序**到**拖至此处**下面框**拆卸**暂存管道设计器中的形状。</span><span class="sxs-lookup"><span data-stu-id="45cc0-127">From the BizTalk Pipeline Components Toolbox pane, drag the **SWIFT Disassembler** to the **Drop Here** box below the **Disassemble** stage shape in Pipeline Designer.</span></span>  
   
-6.  <span data-ttu-id="45cc0-128">与**SWIFT 反汇编程序组件**在管道设计器中，选择在**属性**，验证**BRE 验证**和**XML 验证**属性设置为**True**，和**SWIFT 标头架构**属性设置为**（无）**。</span><span class="sxs-lookup"><span data-stu-id="45cc0-128">With the **SWIFT Disassembler Component** selected in Pipeline Designer, in **Properties**, verify that the **BRE Validation** and **XML Validation** properties are set to **True**, and the **SWIFT Header Schema** property is set to **(None)**.</span></span>  
+6.  <span data-ttu-id="45cc0-128">与**SWIFT 反汇编程序组件**在管道设计器中，选择在**属性**，验证**BRE 验证**和**XML 验证**属性设置为**True**，和**SWIFT 标头架构**属性设置为 **（无）**。</span><span class="sxs-lookup"><span data-stu-id="45cc0-128">With the **SWIFT Disassembler Component** selected in Pipeline Designer, in **Properties**, verify that the **BRE Validation** and **XML Validation** properties are set to **True**, and the **SWIFT Header Schema** property is set to **(None)**.</span></span>  
   
 7.  <span data-ttu-id="45cc0-129">在 BizTalk 管道组件工具箱中，拖动**SWIFT FRR MQSeries 解码器**到**拖至此处**下面框**解码器**暂存管道设计器中的形状。</span><span class="sxs-lookup"><span data-stu-id="45cc0-129">In the BizTalk Pipeline Components Toolbox, drag **SWIFT FRR MQSeries Decoder** to the **Drop Here** box below the **Decoder** stage shape in Pipeline Designer.</span></span>  
   

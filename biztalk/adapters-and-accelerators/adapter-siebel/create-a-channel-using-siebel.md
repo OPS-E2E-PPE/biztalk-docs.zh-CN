@@ -1,18 +1,18 @@
 ---
-title: "创建一个通道，使用 Siebel |Microsoft 文档"
-ms.custom: 
+title: 创建一个通道，使用 Siebel |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - channel programming, creating a channel
 - how to, create a channel
 - creating a channel
 ms.assetid: 5587cf51-7101-4035-b958-3fe070ba6252
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221885"
 ---
 # <a name="create-a-channel-using-siebel"></a><span data-ttu-id="336bb-102">创建一个通道，使用 Siebel</span><span class="sxs-lookup"><span data-stu-id="336bb-102">Create a channel using Siebel</span></span>
 <span data-ttu-id="336bb-103">本部分演示如何创建用于直接消息传送与 Siebel 通过提供并使用 XML 消息的通道。</span><span class="sxs-lookup"><span data-stu-id="336bb-103">This section demonstrates how to create a channel for direct messaging with Siebel by providing and consuming XML messages.</span></span>  

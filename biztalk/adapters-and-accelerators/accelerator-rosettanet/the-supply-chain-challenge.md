@@ -1,11 +1,11 @@
 ---
-title: "供应链挑战 |Microsoft 文档"
-ms.custom: 
+title: 供应链挑战 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - supply chains
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - supply chains, challenges
 - supply chains, about
 ms.assetid: 4a38f15f-cffa-4622-95e2-e606418e5c03
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209949"
 ---
 # <a name="the-supply-chain-challenge"></a><span data-ttu-id="ec7e4-102">供应链挑战</span><span class="sxs-lookup"><span data-stu-id="ec7e4-102">The Supply Chain Challenge</span></span>
 <span data-ttu-id="ec7e4-103">在高科技行业中，与合作伙伴的集成具有诸多挑战。</span><span class="sxs-lookup"><span data-stu-id="ec7e4-103">Integration with partners presents many challenges in the high-technology industry.</span></span> <span data-ttu-id="ec7e4-104">信息技术、电子元件、半导体制造业和电信公司在供应链中无一不面临着挑战。</span><span class="sxs-lookup"><span data-stu-id="ec7e4-104">Information technology, electronic component, semiconductor manufacturing, and telecommunications companies all face challenges in their supply chain.</span></span>  

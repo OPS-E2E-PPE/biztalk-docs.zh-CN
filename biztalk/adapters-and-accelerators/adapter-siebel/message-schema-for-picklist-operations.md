@@ -1,18 +1,18 @@
 ---
-title: "选择列表操作的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 选择列表操作的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - picklist operations, message schemas for
 - picklist operations, message actions
 - picklist operations, message
 ms.assetid: c0b62a8c-5a68-47ea-8676-1580601b5ec9
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221901"
 ---
 # <a name="message-schema-for-picklist-operations"></a><span data-ttu-id="2ef11-102">选择列表操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="2ef11-102">Message Schema for Picklist Operations</span></span>
 <span data-ttu-id="2ef11-103">选择列表是在业务组件中的特殊字段类型。</span><span class="sxs-lookup"><span data-stu-id="2ef11-103">Picklists are special field types in business components.</span></span> <span data-ttu-id="2ef11-104">它们表示的用户可能会从其选取分配的单个值的值的集合。</span><span class="sxs-lookup"><span data-stu-id="2ef11-104">They represent a collection of values from which a user may pick a single value for assignment.</span></span> <span data-ttu-id="2ef11-105">选择列表都是不同的类型。</span><span class="sxs-lookup"><span data-stu-id="2ef11-105">Picklists are of different types.</span></span> <span data-ttu-id="2ef11-106">有关选择列表和它们的类型的详细信息，请参阅 Siebel 文档。</span><span class="sxs-lookup"><span data-stu-id="2ef11-106">For more information about picklists and their types, refer to Siebel documentation.</span></span>  

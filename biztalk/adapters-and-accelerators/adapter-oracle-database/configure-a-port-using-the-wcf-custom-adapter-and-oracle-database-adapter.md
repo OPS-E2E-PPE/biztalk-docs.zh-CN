@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 WCF 自定义适配器和 Oracle 数据库适配器 |Microsoft 文档"
-description: "创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 Oracle 数据库适配器的端口"
-ms.custom: 
+title: 配置端口使用 WCF 自定义适配器和 Oracle 数据库适配器 |Microsoft 文档
+description: 创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 Oracle 数据库适配器的端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c99ff526-ad97-4095-812f-0ce88b071e7f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215853"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-database-adapter"></a><span data-ttu-id="a9c8e-103">配置使用 WCF 自定义适配器和 Oracle 数据库适配器的端口</span><span class="sxs-lookup"><span data-stu-id="a9c8e-103">Configure a port using the WCF-custom adapter and Oracle Database adapter</span></span>
 <span data-ttu-id="a9c8e-104">如何配置 WCF 自定义发送和接收端口来执行对 Oracle 数据库使用的出站和入站操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-104">How to configure WCF-Custom send and receive ports to perform outbound and inbound operations on the Oracle database using the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="a9c8e-115">在**WCF 自定义传输属性**对话框框中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="a9c8e-115">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="a9c8e-116">单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle 数据库的连接 URI。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-116">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="a9c8e-117">有关连接 URI 的详细信息，请参阅[创建 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-117">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="a9c8e-116">单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle 数据库的连接 URI。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-116">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="a9c8e-117">有关连接 URI 的详细信息，请参阅[创建 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-117">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="a9c8e-118">上**常规**选项卡上，在**操作**文本框中，键入操作的操作。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-118">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="a9c8e-119">请参阅[消息和消息架构](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)有关每个操作的操作的列表。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-119">See [Messages and Message Schemas](messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md) for a list of actions for each operation.</span></span> <span data-ttu-id="a9c8e-120">例如，要调用插入操作 Oracle 数据库中的 HR 模式下的员工表的操作是：</span><span class="sxs-lookup"><span data-stu-id="a9c8e-120">For example, the action to invoke the Insert operation an EMPLOYEE table under the HR schema in an Oracle database is:</span></span>  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="a9c8e-149">在**WCF 自定义传输属性**对话框框中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="a9c8e-149">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="a9c8e-150">单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle 数据库的连接 URI。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="a9c8e-151">有关连接 URI 的详细信息，请参阅[创建 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-151">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="a9c8e-150">单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle 数据库的连接 URI。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-150">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for the Oracle database.</span></span> <span data-ttu-id="a9c8e-151">有关连接 URI 的详细信息，请参阅[创建 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-151">For more information about the connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="a9c8e-152">单击**绑定**选项卡上，并从**绑定类型**下拉列表中，选择**oracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-152">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **oracleDBBinding**.</span></span> <span data-ttu-id="a9c8e-153">你可以指定不同的绑定属性公开的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-153">You can specify the different binding properties exposed by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="a9c8e-154">有关绑定属性的详细信息，请参阅[阅读有关 Oracle 数据库适配器绑定属性](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="a9c8e-154">For more information about binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).</span></span>  
   

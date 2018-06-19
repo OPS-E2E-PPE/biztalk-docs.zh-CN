@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 生成项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 生成项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d88b1407-ecdd-4dbf-90da-02dc4781568c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225661"
 ---
 # <a name="step-4-build-the-project"></a><span data-ttu-id="a504d-102">步骤 4： 生成项目</span><span class="sxs-lookup"><span data-stu-id="a504d-102">Step 4: Build the Project</span></span>
 <span data-ttu-id="a504d-103">![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="a504d-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
   
  <span data-ttu-id="a504d-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="a504d-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="a504d-105">**目标：**在此步骤中，您将编译 BizTalk 业务流程项目。</span><span class="sxs-lookup"><span data-stu-id="a504d-105">**Objective:** In this step, you compile the BizTalk orchestration project.</span></span>  
+ <span data-ttu-id="a504d-105">**目标：** 在此步骤中，您将编译 BizTalk 业务流程项目。</span><span class="sxs-lookup"><span data-stu-id="a504d-105">**Objective:** In this step, you compile the BizTalk orchestration project.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="a504d-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="a504d-106">Prerequisites</span></span>  
  <span data-ttu-id="a504d-107">你必须已完成[步骤 3： 将请求消息发送到插入的记录和接收响应](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。</span><span class="sxs-lookup"><span data-stu-id="a504d-107">You must have completed [Step 3: Send the Request Message to Insert Records and Receive a Response](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md).</span></span>  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="a504d-109">在解决方案资源管理器，右键单击 BizTalk 项目名称，，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="a504d-109">In the Solution Explorer, right-click the BizTalk project name, and then click **Properties**.</span></span>  
   
-2.  <span data-ttu-id="a504d-110">在属性页对话框中，在树窗格中，展开**通用属性**，单击**程序集**，然后在属性列表中，单击**程序集密钥文件**省略号**[…]**.</span><span class="sxs-lookup"><span data-stu-id="a504d-110">In the property pages dialog box, in the tree pane, expand **Common Properties**, click **Assembly**, and then in the properties list, click the **Assembly Key File** ellipsis **[…]**.</span></span>  
+2.  <span data-ttu-id="a504d-110">在属性页对话框中，在树窗格中，展开**通用属性**，单击**程序集**，然后在属性列表中，单击**程序集密钥文件**省略号 **[…]**.</span><span class="sxs-lookup"><span data-stu-id="a504d-110">In the property pages dialog box, in the tree pane, expand **Common Properties**, click **Assembly**, and then in the properties list, click the **Assembly Key File** ellipsis **[…]**.</span></span>  
   
 3.  <span data-ttu-id="a504d-111">指定你创建中所述的程序集密钥文件的路径[系统必备组件来创建 SQL 应用程序使用的 SQL 适配器](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md)，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="a504d-111">Specify a path to the assembly key file you created as described in [Prerequisites to create SQL applications using the SQL adapter](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md), and then click **Open**.</span></span>  
   

@@ -1,18 +1,18 @@
 ---
-title: "如何安装业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何安装业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, examples
 - process management solution tutorial, installing
 - process management solution tutorial, deployment prerequisites
 ms.assetid: 930f3bb1-05e6-4b02-852d-6139aaf341f0
-caps.latest.revision: "61"
+caps.latest.revision: 61
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974931"
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a><span data-ttu-id="15f7f-102">如何安装业务流程管理解决方案</span><span class="sxs-lookup"><span data-stu-id="15f7f-102">How to Install the Business Process Management Solution</span></span>
 <span data-ttu-id="15f7f-103">以下步骤介绍如何为安装业务流程管理 (BPM) 解决方案准备计算机，以及如何在此计算机上安装该解决方案：</span><span class="sxs-lookup"><span data-stu-id="15f7f-103">The following steps describe how to prepare the computer for installing the Business Process Management (BPM) solution, and how to install the solution on this computer.</span></span>  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  <span data-ttu-id="15f7f-143">右键单击您创建，，然后选择的应用程序池**高级设置**。</span><span class="sxs-lookup"><span data-stu-id="15f7f-143">Right-click the application pool that you created, and then select **Advanced Settings**.</span></span>  
   
-    4.  <span data-ttu-id="15f7f-144">展开**进程模型**的右侧列中单击**标识**设置，并依次**...**</span><span class="sxs-lookup"><span data-stu-id="15f7f-144">Expand **Process Model**, click in the right-column for the **Identity** setting, and then click **…**</span></span>  
+    4.  <span data-ttu-id="15f7f-144">展开**进程模型**的右侧列中单击**标识**设置，并依次 **...**</span><span class="sxs-lookup"><span data-stu-id="15f7f-144">Expand **Process Model**, click in the right-column for the **Identity** setting, and then click **…**</span></span>  
   
     5.  <span data-ttu-id="15f7f-145">选择的用户帐户 (任一**生成入帐户**或**自定义帐户**)，有权创建并在 Windows\Temp 目录中执行文件。</span><span class="sxs-lookup"><span data-stu-id="15f7f-145">Select a user account (either a **Build-in account** or **Custom account** ) that has permissions to create and execute files in the Windows\Temp directory.</span></span> <span data-ttu-id="15f7f-146">在配置 BizTalk 时，配置过程已为添加到 BizTalk Isolated Host Users 组中的用户设置了这些权限。</span><span class="sxs-lookup"><span data-stu-id="15f7f-146">When you configured BizTalk, the configuration process already set these permissions for the user it added to the BizTalk Isolated Host Users group.</span></span> <span data-ttu-id="15f7f-147">最好指定同一用户。</span><span class="sxs-lookup"><span data-stu-id="15f7f-147">Specifying the same user is a good choice.</span></span>  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 11/28/2017
 1.  <span data-ttu-id="15f7f-198">在命令提示符下，将当前文件夹更改为 %btssolutionspath%\bpm，类型`SetupBPM.bat`，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="15f7f-198">At a command prompt, change the current folder to %BTSSolutionsPath%\BPM, type `SetupBPM.bat`, and then press ENTER.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="15f7f-199">在文件中运行 SetupBPM.bat 之前, **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**和**%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**，将替换为 XXXXXXXXXXXXXXXX 8f8bbebbb3fb375a 的所有实例。</span><span class="sxs-lookup"><span data-stu-id="15f7f-199">Before running SetupBPM.bat, in the files **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl** and **%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**, replace all instances of 8f8bbebbb3fb375a with XXXXXXXXXXXXXXXX.</span></span>  
+    >  <span data-ttu-id="15f7f-199">在文件中运行 SetupBPM.bat 之前, **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**和 **%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**，将替换为 XXXXXXXXXXXXXXXX 8f8bbebbb3fb375a 的所有实例。</span><span class="sxs-lookup"><span data-stu-id="15f7f-199">Before running SetupBPM.bat, in the files **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl** and **%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**, replace all instances of 8f8bbebbb3fb375a with XXXXXXXXXXXXXXXX.</span></span>  
   
      <span data-ttu-id="15f7f-200">SetupBPM.bat 将执行以下任务：</span><span class="sxs-lookup"><span data-stu-id="15f7f-200">The SetupBPM.bat performs the following tasks:</span></span>  
   

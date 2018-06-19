@@ -1,17 +1,17 @@
 ---
-title: "使用 WCF 服务模型的 Oracle 数据库中运行操作使用 REF CURSOR |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型的 Oracle 数据库中运行操作使用 REF CURSOR |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, performing operations using REF CURSORS
 - REF CURSORS, performing operations
 ms.assetid: b4cb9ede-eae1-44d7-8ba5-7e1261ccfa3b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22216429"
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="4c297-102">使用 WCF 服务模型的 Oracle 数据库中运行操作使用 REF CURSOR</span><span class="sxs-lookup"><span data-stu-id="4c297-102">Run Operations Using REF CURSORS in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="4c297-103">REF CURSOR 是 Oracle PL/SQL 数据类型对结果集的 Oracle 数据库中表示的指针。</span><span class="sxs-lookup"><span data-stu-id="4c297-103">A REF CURSOR is an Oracle PL/SQL data type that represents a pointer to a result set in the Oracle database.</span></span> <span data-ttu-id="4c297-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]在过程、 函数和包支持 REF CURSOR 参数。</span><span class="sxs-lookup"><span data-stu-id="4c297-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports REF CURSOR parameters in procedures, functions, and packages.</span></span> <span data-ttu-id="4c297-105">REF CURSOR 参数可以是强类型或弱类型具体取决于在过程或函数中的声明。</span><span class="sxs-lookup"><span data-stu-id="4c297-105">REF CURSOR parameters can be strongly-typed or weakly-typed depending on how they are declared in the procedure or function.</span></span> <span data-ttu-id="4c297-106">有关如何通过表示 REF CURSOR 参数的详细说明[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[REF CURSOR 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)。下表总结了 REF CURSOR 参数 WCF 服务模型中的表示方式。</span><span class="sxs-lookup"><span data-stu-id="4c297-106">For a detailed explanation of how REF CURSOR parameters are represented by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Message Schemas for REF CURSORS](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md).The following table summarizes how REF CURSOR parameters are represented in the WCF service model.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231829"
 ---
 # <a name="components-of-the-tpe"></a><span data-ttu-id="62dd7-102">TPE 的组件</span><span class="sxs-lookup"><span data-stu-id="62dd7-102">Components of the TPE</span></span>
 <span data-ttu-id="62dd7-103">本部分介绍了有关 TPE 用户界面以及它所执行的功能的信息。</span><span class="sxs-lookup"><span data-stu-id="62dd7-103">This section contains information about the TPE user interface and the functions it performs.</span></span>  

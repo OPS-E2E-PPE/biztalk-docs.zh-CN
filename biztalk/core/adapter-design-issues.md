@@ -1,14 +1,14 @@
 ---
-title: "适配器设计问题 |Microsoft 文档"
-ms.custom: 
+title: 适配器设计问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e5568be-a046-40ff-a94a-eda086457564
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226557"
 ---
 # <a name="adapter-design-issues"></a><span data-ttu-id="82e39-102">适配器设计问题</span><span class="sxs-lookup"><span data-stu-id="82e39-102">Adapter Design Issues</span></span>
 <span data-ttu-id="82e39-103">在用户在设计时对配置进行更改后，适配器配置存储于单一登录 (SSO) 数据库中。</span><span class="sxs-lookup"><span data-stu-id="82e39-103">Adapter configuration is stored in the Single Sign-On (SSO) database when the user makes configuration changes during design time.</span></span> <span data-ttu-id="82e39-104">在运行时，消息引擎检索适配器的配置并将配置传送到适配器。</span><span class="sxs-lookup"><span data-stu-id="82e39-104">At run time the Messaging Engine retrieves the adapter's configuration and delivers it to the adapter.</span></span> <span data-ttu-id="82e39-105">四种类型的配置信息将传送到适配器：</span><span class="sxs-lookup"><span data-stu-id="82e39-105">Four types of configuration information are delivered to adapters:</span></span>  
@@ -172,7 +173,7 @@ return int.Parse(s);
 }   
 ```  
   
- <span data-ttu-id="82e39-143">**实现提示：**适配器通常应使用**OutboundTransportLocation**消息上下文属性来确定要将消息发送到的地址。</span><span class="sxs-lookup"><span data-stu-id="82e39-143">**Implementation Tip:** Adapters should in general use the **OutboundTransportLocation** message context property to determine the address to send the message to.</span></span> <span data-ttu-id="82e39-144">这样做之后，适配器可以一致地处理对静态和动态发送的传输，</span><span class="sxs-lookup"><span data-stu-id="82e39-144">By doing this the adapter can handle transmissions to both static and dynamic sends consistently.</span></span> <span data-ttu-id="82e39-145">并且还可以简化对生产绑定文件中地址的修改。</span><span class="sxs-lookup"><span data-stu-id="82e39-145">This also simplifies the modification of addresses in production binding files.</span></span>  
+ <span data-ttu-id="82e39-143">**实现提示：** 适配器通常应使用**OutboundTransportLocation**消息上下文属性来确定要将消息发送到的地址。</span><span class="sxs-lookup"><span data-stu-id="82e39-143">**Implementation Tip:** Adapters should in general use the **OutboundTransportLocation** message context property to determine the address to send the message to.</span></span> <span data-ttu-id="82e39-144">这样做之后，适配器可以一致地处理对静态和动态发送的传输，</span><span class="sxs-lookup"><span data-stu-id="82e39-144">By doing this the adapter can handle transmissions to both static and dynamic sends consistently.</span></span> <span data-ttu-id="82e39-145">并且还可以简化对生产绑定文件中地址的修改。</span><span class="sxs-lookup"><span data-stu-id="82e39-145">This also simplifies the modification of addresses in production binding files.</span></span>  
   
 ## <a name="xsd"></a><span data-ttu-id="82e39-146">XSD</span><span class="sxs-lookup"><span data-stu-id="82e39-146">XSD</span></span>  
  <span data-ttu-id="82e39-147">SDK 文件适配器示例中包括的四个 XSD 文件主要句柄适配器配置： ReceiveHandler.xsd、 ReceiveLocation.xsd、 TransmitLocation.xsd 和 TransmitHandler.xsd。</span><span class="sxs-lookup"><span data-stu-id="82e39-147">Four XSD files included in the SDK File Adapter sample primarily handle adapter configuration: ReceiveHandler.xsd, ReceiveLocation.xsd, TransmitLocation.xsd, and TransmitHandler.xsd.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "协议解析失败，协议基于上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 协议解析失败，协议基于上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58fccd84-579c-4b5e-872b-33730d4079e8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229933"
 ---
 # <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a><span data-ttu-id="a0307-102">基于协议上下文属性的协议解析失败</span><span class="sxs-lookup"><span data-stu-id="a0307-102">Agreement Resolution based on the context properties for Protocol has failed</span></span>
 ## <a name="details"></a><span data-ttu-id="a0307-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="a0307-103">Details</span></span>  

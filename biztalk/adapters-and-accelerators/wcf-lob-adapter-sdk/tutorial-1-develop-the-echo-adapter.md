@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22226653"
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a><span data-ttu-id="7be77-102">教程 1： 开发 Echo 适配器</span><span class="sxs-lookup"><span data-stu-id="7be77-102">Tutorial 1: Develop the Echo Adapter</span></span>
 <span data-ttu-id="7be77-103">在本教程中，你将开发功能的适配器使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="7be77-103">In this tutorial, you will develop a functional adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="7be77-104">适配器模拟虚构的业务线系统，用于说明的许多 WCF LOB 适配器 SDK 包括关键功能的操作：</span><span class="sxs-lookup"><span data-stu-id="7be77-104">The adapter simulates the operations of a fictitious line-of-business system to illustrate many of the key features of the WCF LOB Adapter SDK including:</span></span>  

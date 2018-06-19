@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217357"
 ---
 # <a name="message-context-properties-for-receiving-idocs"></a><span data-ttu-id="549df-102">用于接收到的 Idoc 的消息上下文属性</span><span class="sxs-lookup"><span data-stu-id="549df-102">Message Context Properties for Receiving IDOCs</span></span>
 <span data-ttu-id="549df-103">用于接收使用 Microsoft 的 IDOC [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持以下消息上下文属性。</span><span class="sxs-lookup"><span data-stu-id="549df-103">For receiving an IDOC using Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the following message context properties.</span></span>  

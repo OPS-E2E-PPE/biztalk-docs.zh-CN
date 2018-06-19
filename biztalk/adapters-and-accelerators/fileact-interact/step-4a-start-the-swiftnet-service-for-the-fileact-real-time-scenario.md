@@ -1,14 +1,14 @@
 ---
-title: "步骤 4A： 启动 FileAct 实时方案 SWIFTNet 服务 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4A： 启动 FileAct 实时方案 SWIFTNet 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47c57d37-50d7-49c0-b74c-5357c4601b14
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224149"
 ---
 # <a name="step-4a-start-the-swiftnet-service-for-the-fileact-real-time-scenario"></a><span data-ttu-id="2fed9-102">步骤 4A： 启动 FileAct 实时方案 SWIFTNet 服务</span><span class="sxs-lookup"><span data-stu-id="2fed9-102">Step 4A: Start the SWIFTNet Service for the FileAct Real-Time Scenario</span></span>
 <span data-ttu-id="2fed9-103">在开始此步骤之前，必须完成[步骤 3E: FileAct 实时方案将文件发送端口添加到捕获 Sw:ExchangeFileResponse 消息](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)。</span><span class="sxs-lookup"><span data-stu-id="2fed9-103">Before you begin this step, you must complete [Step 3E: Add a FILE Send Port to Capture Sw:ExchangeFileResponse Message for the FileAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md).</span></span>  

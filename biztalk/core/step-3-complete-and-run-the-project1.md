@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 完成并运行 Project1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 完成并运行 Project1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e70bfdc-11ef-446b-9326-f4791f6c2c87
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276389"
 ---
 # <a name="step-3-complete-and-run-the-project"></a><span data-ttu-id="f3016-102">步骤 3： 完成并运行项目</span><span class="sxs-lookup"><span data-stu-id="f3016-102">Step 3: Complete and Run the Project</span></span>
 <span data-ttu-id="f3016-103">在添加程序集密钥并绑定端口后，就可以测试业务流程。</span><span class="sxs-lookup"><span data-stu-id="f3016-103">After adding the assembly key and binding the ports, it is time to test the orchestration.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器实时本地基元 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器实时本地基元 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef4da4f8-3de2-4d35-8f8a-1e12937e52a1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223069"
 ---
 # <a name="fileact-adapter-real-time-local-primitives"></a><span data-ttu-id="3c6eb-102">FileAct 适配器实时本地基元</span><span class="sxs-lookup"><span data-stu-id="3c6eb-102">FileAct Adapter Real-Time Local Primitives</span></span>
 <span data-ttu-id="3c6eb-103">本地基元涉及两条消息，该客户端 SWIFTNet 链接 (SNL) 和本地 FileAct 子系统之间交换。</span><span class="sxs-lookup"><span data-stu-id="3c6eb-103">Local primitives involve two messages each, which are exchanged between the client SWIFTNet Link (SNL) and the local FileAct subsystem.</span></span>  

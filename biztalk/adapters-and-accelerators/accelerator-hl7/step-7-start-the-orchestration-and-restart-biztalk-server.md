@@ -1,14 +1,14 @@
 ---
-title: "步骤 7： 启动业务流程和重新启动 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 启动业务流程和重新启动 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa5168b0-4642-4842-a57a-ed7fa35fe161
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206349"
 ---
 # <a name="step-7-start-the-orchestration-and-restart-biztalk-server"></a><span data-ttu-id="4a220-102">步骤 7： 启动业务流程和重新启动 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="4a220-102">Step 7: Start the Orchestration and Restart BizTalk Server</span></span>
 <span data-ttu-id="4a220-103">在此步骤中，你将启动业务流程，然后重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，以便在本教程中所做的更改才能生效。</span><span class="sxs-lookup"><span data-stu-id="4a220-103">In this step, you start the orchestration, and then restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] so that the changes that you made in this tutorial will take effect.</span></span>  

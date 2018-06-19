@@ -1,15 +1,15 @@
 ---
-title: "在 BizTalk 中配置 Oracle 数据库的 SOAP 操作 |Microsoft 文档"
-description: "在 Visual Studio 中，输入 SOAP 操作或使用 BizTalk 适配器包 (BAP) 中的 WCF 自定义或 WCF OracleDB 适配器"
-ms.custom: 
+title: 在 BizTalk 中配置 Oracle 数据库的 SOAP 操作 |Microsoft 文档
+description: 在 Visual Studio 中，输入 SOAP 操作或使用 BizTalk 适配器包 (BAP) 中的 WCF 自定义或 WCF OracleDB 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0d21cca-3907-4f99-af76-c1e7286e1bcf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215397"
 ---
 # <a name="configure-the-soap-action-for-oracle-database"></a><span data-ttu-id="19ede-103">配置 Oracle 数据库的 SOAP 操作</span><span class="sxs-lookup"><span data-stu-id="19ede-103">Configure the SOAP action for Oracle Database</span></span>
 <span data-ttu-id="19ede-104">若要完成针对使用基于 WCF 的 Oracle 数据库的任何操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，适配器用户必须输入 SOAP 操作。</span><span class="sxs-lookup"><span data-stu-id="19ede-104">To complete any operation on the Oracle database using the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], adapter users must enter a SOAP action.</span></span> <span data-ttu-id="19ede-105">SOAP 操作进行通信的适配器应完成什么操作。</span><span class="sxs-lookup"><span data-stu-id="19ede-105">The SOAP action communicates to the adapter what action should be completed.</span></span> <span data-ttu-id="19ede-106">你可以输入在设计时或在运行时的 SOAP 操作。</span><span class="sxs-lookup"><span data-stu-id="19ede-106">You can enter the SOAP action either at design time or at run time.</span></span> <span data-ttu-id="19ede-107">但是，如果输入的 SOAP 操作这两个在设计时和运行时，在设计时输入的操作被重写。</span><span class="sxs-lookup"><span data-stu-id="19ede-107">However, if you enter the SOAP action both at design time and run time, the action you enter at design time is overridden.</span></span>  

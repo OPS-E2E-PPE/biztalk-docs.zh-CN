@@ -1,14 +1,14 @@
 ---
-title: "编程单一登录概述 |Microsoft 文档"
-ms.custom: 
+title: 编程单一登录概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a0a3978-cdbf-4703-9d1d-23e0f4923c9c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264821"
 ---
 # <a name="programming-single-sign-on-overview"></a><span data-ttu-id="d29e3-102">编程单一登录概述</span><span class="sxs-lookup"><span data-stu-id="d29e3-102">Programming Single Sign-On Overview</span></span>
 <span data-ttu-id="d29e3-103">依赖于多个不同应用程序的业务流程可能需要处理多个不同的安全域。</span><span class="sxs-lookup"><span data-stu-id="d29e3-103">A business process that relies on several different applications is likely to face the challenge of dealing with several different security domains.</span></span> <span data-ttu-id="d29e3-104">访问 Microsoft Windows 操作系统上的应用程序可能需要一组安全凭据，而访问 IBM 大型机上的应用程序可能需要不同的凭据。</span><span class="sxs-lookup"><span data-stu-id="d29e3-104">Accessing an application on a Microsoft Windows operating system might require one set of security credentials, whereas accessing an application on an IBM mainframe might require different credentials.</span></span> <span data-ttu-id="d29e3-105">处理如此多的凭据对于用户而言并非易事，而这也给流程自动化带来了更大的挑战。</span><span class="sxs-lookup"><span data-stu-id="d29e3-105">Dealing with this profusion of credentials is hard for users, and it can pose an even greater challenge for automating processes.</span></span> <span data-ttu-id="d29e3-106">若要解决此问题，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括企业单一登录 (SSO)。</span><span class="sxs-lookup"><span data-stu-id="d29e3-106">To address this problem, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes Enterprise Single Sign-On (SSO).</span></span> <span data-ttu-id="d29e3-107">通过 SSO，可将 Windows 用户 ID 映射到非 Windows 用户凭据。</span><span class="sxs-lookup"><span data-stu-id="d29e3-107">SSO lets you map a Windows user ID to non-Windows user credentials.</span></span> <span data-ttu-id="d29e3-108">此服务可以简化使用不同系统中的应用程序的业务流程。</span><span class="sxs-lookup"><span data-stu-id="d29e3-108">This service can simplify business processes that use applications on diverse systems.</span></span>  

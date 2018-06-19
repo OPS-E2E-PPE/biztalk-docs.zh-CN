@@ -1,11 +1,11 @@
 ---
-title: "配置 A4SWIFT 站点组 |Microsoft 文档"
-ms.custom: 
+title: 配置 A4SWIFT 站点组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - site groups, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - user accounts, site groups
 - site groups, user accounts
 ms.assetid: ec2f3efe-439a-4018-ad94-5ab0fb2808ee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209005"
 ---
 # <a name="configuring-a4swift-site-groups"></a><span data-ttu-id="a3c14-102">配置 A4SWIFT 站点组</span><span class="sxs-lookup"><span data-stu-id="a3c14-102">Configuring A4SWIFT Site Groups</span></span>
 <span data-ttu-id="a3c14-103">你需要创建相应的网站用户组，来锁定消息修复和新提交配置过程中创建的文档库的权限。</span><span class="sxs-lookup"><span data-stu-id="a3c14-103">You need to create the corresponding site groups to lock down the permissions on the document libraries created during Message Repair and New Submission configuration.</span></span> <span data-ttu-id="a3c14-104">若要执行此操作与在上一部分中的示例，A4SWIFT 管理员将转到 MRSR 站点并设置以下站点组：</span><span class="sxs-lookup"><span data-stu-id="a3c14-104">To do so with the example in the preceding section, an A4SWIFT Administrator would go to the MRSR site and set up the following site groups:</span></span>  

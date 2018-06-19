@@ -1,14 +1,14 @@
 ---
-title: "将连接到 Visual Studio 中 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 将连接到 Visual Studio 中 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e290ea7e-03f3-49d4-9f18-1e539d727d9c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216813"
 ---
 # <a name="connect-to-the-oracle-e-business-suite-in-visual-studio"></a><span data-ttu-id="e2415-102">将连接到 Oracle E-business Suite Visual Studio 中</span><span class="sxs-lookup"><span data-stu-id="e2415-102">Connect to the Oracle E-Business Suite in Visual Studio</span></span>
 <span data-ttu-id="e2415-103">本部分提供有关如何使用信息[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e2415-103">This section provides information about how to use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], and the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  

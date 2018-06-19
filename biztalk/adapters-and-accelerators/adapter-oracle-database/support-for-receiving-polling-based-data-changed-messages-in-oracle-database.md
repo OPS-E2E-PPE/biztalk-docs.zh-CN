@@ -1,11 +1,11 @@
 ---
-title: "支持 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: 支持 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - notifications, polling-based
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - polling interval
 - polling
 ms.assetid: 9ff29d3f-ebb1-4d82-9106-150f939cbd9e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218797"
 ---
 # <a name="support-for-receiving-polling-based-data-changed-messages-in-oracle-database"></a><span data-ttu-id="6eb05-102">支持 Oracle 数据库中接收基于轮询的数据更改消息</span><span class="sxs-lookup"><span data-stu-id="6eb05-102">Support for Receiving Polling-based Data-changed Messages in Oracle Database</span></span>
 <span data-ttu-id="6eb05-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]启用客户端程序来告知他们对 Oracle 数据库中存储的数据的更改的 Oracle 数据库从接收消息。</span><span class="sxs-lookup"><span data-stu-id="6eb05-103">The[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] enables client programs to receive messages from the Oracle database informing them of changes to data stored in an Oracle database.</span></span> <span data-ttu-id="6eb05-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收其中适配器执行指定的 SELECT 查询、 存储的过程、 函数或过程或函数在一个包内的"轮询基于"消息的支持检索数据，然后将提供给常规的客户端的结果时间间隔。</span><span class="sxs-lookup"><span data-stu-id="6eb05-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports receiving "polling-based" messages wherein the adapter executes a specified SELECT query, stored procedure, function, or procedure or function within a package, retrieves the data, and provides the result to the client at regular intervals of time.</span></span> <span data-ttu-id="6eb05-105">若要启用此选项，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]公开 POLLINGSTMT 操作。</span><span class="sxs-lookup"><span data-stu-id="6eb05-105">To enable this, the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] exposes a POLLINGSTMT operation.</span></span> <span data-ttu-id="6eb05-106">此外，所有存储的过程、 函数和过程和函数包内的作为进行轮询的入站操作公开。</span><span class="sxs-lookup"><span data-stu-id="6eb05-106">Moreover, all the stored procedures, functions, and procedures and function within packages are exposed as inbound operations for polling.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="6eb05-145">轮询</span><span class="sxs-lookup"><span data-stu-id="6eb05-145">Polling</span></span>|<span data-ttu-id="6eb05-146">通知</span><span class="sxs-lookup"><span data-stu-id="6eb05-146">Notification</span></span>|  
 |-------------|------------------|  
 |<span data-ttu-id="6eb05-147">所有支持的 Oracle 数据库版本支持轮询[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="6eb05-147">Polling is supported for all the Oracle database versions that are supported by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>|<span data-ttu-id="6eb05-148">通知是仅支持 Oracle 数据库版本 10.2 及更高版本。</span><span class="sxs-lookup"><span data-stu-id="6eb05-148">Notification is supported only for Oracle database versions 10.2 and later.</span></span>|  
-|<span data-ttu-id="6eb05-149">你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。</span><span class="sxs-lookup"><span data-stu-id="6eb05-149">You can either configure the polling interval to check the data available for polling at regular intervals or instantaneously as and when the data is available.</span></span> <span data-ttu-id="6eb05-150">**提示：**轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。</span><span class="sxs-lookup"><span data-stu-id="6eb05-150">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="6eb05-151">作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。</span><span class="sxs-lookup"><span data-stu-id="6eb05-151">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|<span data-ttu-id="6eb05-152">数据更改通知始终是即时的。</span><span class="sxs-lookup"><span data-stu-id="6eb05-152">The data-change notification is always instantaneous.</span></span>|  
+|<span data-ttu-id="6eb05-149">你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。</span><span class="sxs-lookup"><span data-stu-id="6eb05-149">You can either configure the polling interval to check the data available for polling at regular intervals or instantaneously as and when the data is available.</span></span> <span data-ttu-id="6eb05-150">**提示：** 轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。</span><span class="sxs-lookup"><span data-stu-id="6eb05-150">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="6eb05-151">作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。</span><span class="sxs-lookup"><span data-stu-id="6eb05-151">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last change notification.</span></span>|<span data-ttu-id="6eb05-152">数据更改通知始终是即时的。</span><span class="sxs-lookup"><span data-stu-id="6eb05-152">The data-change notification is always instantaneous.</span></span>|  
 |<span data-ttu-id="6eb05-153">轮询启动的适配器。</span><span class="sxs-lookup"><span data-stu-id="6eb05-153">Polling is initiated by the adapter.</span></span> <span data-ttu-id="6eb05-154">适配器执行 SQL 语句以验证是否数据可用于轮询，并随后通过执行轮询语句，如果某些数据可用于轮询开始轮询。</span><span class="sxs-lookup"><span data-stu-id="6eb05-154">The adapter executes a SQL statement to validate whether data is available for polling, and then initiates polling by executing the polling statement if some data is available for polling.</span></span>|<span data-ttu-id="6eb05-155">Oracle 数据库发出通知。</span><span class="sxs-lookup"><span data-stu-id="6eb05-155">Notification is initiated by the Oracle database.</span></span> <span data-ttu-id="6eb05-156">只需适配器发出的通知语句指示要在该语句结果集中的更改的情况下启动通知的数据库。</span><span class="sxs-lookup"><span data-stu-id="6eb05-156">The notification statement issued by the adapter just instructs the database to initiate notification in case there is a change in the result set of the statement.</span></span> <span data-ttu-id="6eb05-157">通知是 Oracle 数据库的一项功能。</span><span class="sxs-lookup"><span data-stu-id="6eb05-157">Notification is a feature of the Oracle database.</span></span>|  
 |<span data-ttu-id="6eb05-158">轮询语句可用于读取或更新的 Oracle 数据库中的数据。</span><span class="sxs-lookup"><span data-stu-id="6eb05-158">You can use the polling statement to read or update data in the Oracle database.</span></span>|<span data-ttu-id="6eb05-159">可以使用通知语句仅具有读取 Oracle 数据库中的数据。</span><span class="sxs-lookup"><span data-stu-id="6eb05-159">You can use the notification statement to only read data in an Oracle database.</span></span>|  
 |<span data-ttu-id="6eb05-160">轮询通知你有关已更改的实际数据信息。</span><span class="sxs-lookup"><span data-stu-id="6eb05-160">Polling informs you about the actual data that has changed.</span></span>|<span data-ttu-id="6eb05-161">通知会告知仅如 Insert、 数据中的更改类型的更新和删除。</span><span class="sxs-lookup"><span data-stu-id="6eb05-161">Notification informs only about the type of change in the data such as Insert, Update, and Delete.</span></span>|  

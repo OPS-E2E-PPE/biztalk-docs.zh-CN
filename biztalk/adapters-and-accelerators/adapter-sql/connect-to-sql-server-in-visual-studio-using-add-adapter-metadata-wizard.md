@@ -1,14 +1,14 @@
 ---
-title: "连接到 SQL Visual Studio 中使用的服务器添加适配器元数据向导 |Microsoft 文档"
-ms.custom: 
+title: 连接到 SQL Visual Studio 中使用的服务器添加适配器元数据向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2169722d-beba-4d96-a54b-54986ece9bf8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226725"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-add-adapter-metadata-wizard"></a><span data-ttu-id="735da-102">连接到 SQL Visual Studio 中使用的服务器添加适配器元数据向导</span><span class="sxs-lookup"><span data-stu-id="735da-102">Connect to SQL Server in Visual Studio Using Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="735da-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]名称还公开为 BizTalk 适配器，因此，你可以使用[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]若要为你想要使用该适配器的 SQL Server 上执行的操作生成架构。</span><span class="sxs-lookup"><span data-stu-id="735da-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is also exposed as a BizTalk adapter and, therefore, you can use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to generate schema for the operations you want to perform on SQL Server using the adapter.</span></span>  
@@ -59,7 +60,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="735da-128">**无**</span><span class="sxs-lookup"><span data-stu-id="735da-128">**None**</span></span>|<span data-ttu-id="735da-129">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="735da-129">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="735da-130">**Windows**</span><span class="sxs-lookup"><span data-stu-id="735da-130">**Windows**</span></span>|<span data-ttu-id="735da-131">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="735da-131">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="735da-132">**用户名**</span><span class="sxs-lookup"><span data-stu-id="735da-132">**Username**</span></span>|<span data-ttu-id="735da-133">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="735da-133">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="735da-134">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="735da-134">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="735da-135">**注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="735da-135">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="735da-132">**用户名**</span><span class="sxs-lookup"><span data-stu-id="735da-132">**Username**</span></span>|<span data-ttu-id="735da-133">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="735da-133">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="735da-134">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="735da-134">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="735da-135">**注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="735da-135">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 4.  <span data-ttu-id="735da-136">单击**URI 属性**选项卡上，然后指定连接参数的值。</span><span class="sxs-lookup"><span data-stu-id="735da-136">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="735da-137">有关连接 URI 的详细信息为[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="735da-137">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   

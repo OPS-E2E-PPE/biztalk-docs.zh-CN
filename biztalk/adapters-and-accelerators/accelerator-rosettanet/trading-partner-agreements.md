@@ -11,7 +11,7 @@ helpviewer_keywords:
 - trading partners, agreements
 - agreements, trading partners
 ms.assetid: 846466d2-db39-42ba-8be1-ecca83a55a02
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22208677"
 ---
 # <a name="trading-partner-agreements"></a><span data-ttu-id="f4244-102">贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="f4244-102">Trading Partner Agreements</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="f4244-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 通过贸易合作伙伴协议 (TPA) 来处理与合作伙伴的消息交换。</span><span class="sxs-lookup"><span data-stu-id="f4244-103"> [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] processes message exchange with a partner by a trading partner agreement (TPA).</span></span> <span data-ttu-id="f4244-104">TPA 定义消息处理和验证两个合作伙伴之间的特性。</span><span class="sxs-lookup"><span data-stu-id="f4244-104">The TPA defines the specifics of message processing and validation between the two partners.</span></span> <span data-ttu-id="f4244-105">它定义了这些合作伙伴如何实现相关的合作伙伴接口过程 (PIP)，它指定某个特定消息类型的所有实现的消息内容。</span><span class="sxs-lookup"><span data-stu-id="f4244-105">It defines how those partners implement the relevant Partner Interface Process (PIP), which specifies the message content for all implementations of a specific message type.</span></span> <span data-ttu-id="f4244-106">TPA 还定义合作伙伴如何通过 Internet 交换消息的详细的信息。</span><span class="sxs-lookup"><span data-stu-id="f4244-106">The TPA also defines specifics of how the partners exchange messages over the Internet.</span></span>  

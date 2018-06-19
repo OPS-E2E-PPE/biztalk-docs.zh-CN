@@ -1,11 +1,11 @@
 ---
-title: "批处理 |Microsoft 文档"
-ms.custom: 
+title: 批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - batching, configuring
 - batching, Messaging Engine
 ms.assetid: eadc177a-d395-4f99-8dab-aa706fd8ea00
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230885"
 ---
 # <a name="batching"></a><span data-ttu-id="65cc0-102">批处理</span><span class="sxs-lookup"><span data-stu-id="65cc0-102">Batching</span></span>
 <span data-ttu-id="65cc0-103">*批处理*是一种允许与目标为数据库优化往返的一组消息的序列化的处理。</span><span class="sxs-lookup"><span data-stu-id="65cc0-103">*Batching* is a serialized processing of a set of messages that allows for optimizations with respect to database round trips.</span></span> <span data-ttu-id="65cc0-104">批是原子工作单元；也就是说，它或者全部成功，或者全部失败。</span><span class="sxs-lookup"><span data-stu-id="65cc0-104">A batch is a unit of work that is atomic; that is, it either all succeeds or all fails.</span></span> <span data-ttu-id="65cc0-105">如果批中的某个操作成功，但另一个操作失败，则构成该批的所有操作都将失效，必须重新执行。</span><span class="sxs-lookup"><span data-stu-id="65cc0-105">If one operation in a batch succeeds but another operation fails, all the operations that make up the batch are invalidated and must be repeated.</span></span>  

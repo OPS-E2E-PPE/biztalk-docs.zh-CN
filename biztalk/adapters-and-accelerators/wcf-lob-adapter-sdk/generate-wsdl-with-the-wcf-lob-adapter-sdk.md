@@ -1,14 +1,14 @@
 ---
-title: "生成 WSDL 与 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 生成 WSDL 与 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f701d78d-b3ad-4f75-b814-e5b1f1319fb9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224605"
 ---
 # <a name="generate-wsdl-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="7209f-102">生成 WSDL 与 WCF LOB 适配器 SDK</span><span class="sxs-lookup"><span data-stu-id="7209f-102">Generate WSDL with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="7209f-103">在开发的适配器，或从 LOB 系统更改返回的元数据，通常是有用的若要查看从适配器以验证你的操作的元数据将生成返回 Web Services 描述语言 (WSDL) 期间正确。</span><span class="sxs-lookup"><span data-stu-id="7209f-103">During development of an adapter, or when the metadata that is returned from the LOB system changes, it is often useful to view the Web Services Description Language (WSDL) that is returned from the adapter to verify that the metadata for your operations is generated correctly.</span></span> <span data-ttu-id="7209f-104">有几种方法来生成的 WSDL。</span><span class="sxs-lookup"><span data-stu-id="7209f-104">There are several methods to generate the WSDL.</span></span> <span data-ttu-id="7209f-105">本主题提供有关使用 svcutil.exe 和元数据搜索浏览控件的信息。</span><span class="sxs-lookup"><span data-stu-id="7209f-105">This topic provides information about using svcutil.exe and the Metadata Search Browse control.</span></span>  
@@ -46,7 +47,7 @@ SvcUtil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
   
 4.  <span data-ttu-id="7209f-119">打开**工具箱**，展开**公共控件**，右键单击**工具箱**，然后单击**选择项**。</span><span class="sxs-lookup"><span data-stu-id="7209f-119">Open the **Toolbox**, expand **Common Controls**, right-click the **Toolbox**, and then click **Choose Items**.</span></span>  
   
-5.  <span data-ttu-id="7209f-120">在**选择工具箱项**对话框中，查找**MetadataUserControl**上**.NET Framework 组件**选项卡上，选择此项目旁边的复选框，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7209f-120">In the **Choose Toolbox Items** dialog box, find **MetadataUserControl** on the **.NET Framework Components** tab, select the check box beside this item, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="7209f-120">在**选择工具箱项**对话框中，查找**MetadataUserControl**上 **.NET Framework 组件**选项卡上，选择此项目旁边的复选框，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7209f-120">In the **Choose Toolbox Items** dialog box, find **MetadataUserControl** on the **.NET Framework Components** tab, select the check box beside this item, and then click **OK**.</span></span>  
   
 6.  <span data-ttu-id="7209f-121">从工具箱中，将 MetadataUserControl 拖到 form1。</span><span class="sxs-lookup"><span data-stu-id="7209f-121">From the Toolbox, drag the MetadataUserControl to Form1.</span></span> <span data-ttu-id="7209f-122">你可能需要调整窗体以查看整个控件的大小。</span><span class="sxs-lookup"><span data-stu-id="7209f-122">You may need to resize the form to see the entire control.</span></span> <span data-ttu-id="7209f-123">你应能够现在运行项目，并验证该控件可正常运行，从而允许您选择适配器和操作。</span><span class="sxs-lookup"><span data-stu-id="7209f-123">You should be able to run the project now and verify that the control is functional, allowing you to select an adapter and operations.</span></span>  
   

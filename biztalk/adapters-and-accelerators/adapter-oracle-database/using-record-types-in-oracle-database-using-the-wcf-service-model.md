@@ -1,17 +1,17 @@
 ---
-title: "使用 WCF 服务模型的 Oracle 数据库中运行操作使用的记录类型 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型的 Oracle 数据库中运行操作使用的记录类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RECORD types, performing operations
 - WCF service model, performing operations using RECORD types
 ms.assetid: e7118a86-7470-48bb-aca0-6200dc0bb67c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216253"
 ---
 # <a name="run-operations-using-record-types-in-oracle-database-using-the-wcf-service-model"></a><span data-ttu-id="6ad78-102">使用 WCF 服务模型的 Oracle 数据库中运行操作使用的记录类型</span><span class="sxs-lookup"><span data-stu-id="6ad78-102">Run Operations Using RECORD Types in Oracle Database using the WCF Service Model</span></span>
 <span data-ttu-id="6ad78-103">Oracle 记录类型用于表示传递给 PL/SQL 函数和过程的参数中的分层信息。</span><span class="sxs-lookup"><span data-stu-id="6ad78-103">Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures.</span></span> <span data-ttu-id="6ad78-104">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现为复杂的 XML 类型的记录类型。</span><span class="sxs-lookup"><span data-stu-id="6ad78-104">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types.</span></span> <span data-ttu-id="6ad78-105">在 WCF 服务模型中，记录类型反序列化到强类型化.NET 类。</span><span class="sxs-lookup"><span data-stu-id="6ad78-105">In the WCF service model, RECORD types are deserialized to strongly-typed .NET classes.</span></span> <span data-ttu-id="6ad78-106">记录字段表示为类的属性。</span><span class="sxs-lookup"><span data-stu-id="6ad78-106">The record fields are represented as properties on the class.</span></span>  

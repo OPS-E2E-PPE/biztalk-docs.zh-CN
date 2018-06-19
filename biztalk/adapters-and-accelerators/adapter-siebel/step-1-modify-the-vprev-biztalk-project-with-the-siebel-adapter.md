@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 修改与 Siebel 适配器 vPrev BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 修改与 Siebel 适配器 vPrev BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7bd95e2-bd51-420f-8156-6f17cc0e91d6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224061"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a><span data-ttu-id="af133-102">步骤 1： 修改与 Siebel 适配器 vPrev BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="af133-102">Step 1: Modify the vPrev BizTalk Project with the Siebel adapter</span></span>
 <span data-ttu-id="af133-103">![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="af133-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="af133-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="af133-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="af133-105">**目标：**向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="af133-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
+ <span data-ttu-id="af133-105">**目标：** 向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="af133-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
   
 -   <span data-ttu-id="af133-106">生成使用基于 WCF 的帐户在业务组件上的插入操作的元数据[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="af133-106">Generate metadata for the Insert operation on the Account business component using the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
   

@@ -1,17 +1,17 @@
 ---
-title: "基本业务流程 Design5 |Microsoft 文档"
-ms.custom: 
+title: 基本业务流程 Design5 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, design
 - exception handling, orchestration design
 ms.assetid: 0941d617-e30c-4ca7-852f-193e16781ca7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230845"
 ---
 # <a name="basic-orchestration-design"></a><span data-ttu-id="263f2-102">基本业务流程设计</span><span class="sxs-lookup"><span data-stu-id="263f2-102">Basic Orchestration Design</span></span>
 <span data-ttu-id="263f2-103">当您在 PeopleSoft Enterprise 的 BizTalk 适配器中创建基本业务流程时，将在该业务流程的接收端口中接收 XML，</span><span class="sxs-lookup"><span data-stu-id="263f2-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="263f2-104">然后将 XML 发送到后端系统以供处理。</span><span class="sxs-lookup"><span data-stu-id="263f2-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="263f2-105">在后端系统中，可能会发生异常，将停止业务流程，并生成错误。</span><span class="sxs-lookup"><span data-stu-id="263f2-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="263f2-106">生成的错误提供了业务流程未完成的相关信息，</span><span class="sxs-lookup"><span data-stu-id="263f2-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="263f2-107">但这并不能帮助确定错误起因。</span><span class="sxs-lookup"><span data-stu-id="263f2-107">This is not helpful in debugging the cause of the error.</span></span>  

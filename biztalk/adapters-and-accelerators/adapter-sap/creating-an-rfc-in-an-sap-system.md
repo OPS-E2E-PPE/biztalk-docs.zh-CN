@@ -1,15 +1,15 @@
 ---
-title: "在一个 SAP 用于 BizTalk 中的 SAP 适配器创建 RFC 概述 |Microsoft 文档"
-description: "创建 RFC，RFC 目标和发送 RFC 从 SAP 系统-BizTalk 适配器包 (BAP)"
-ms.custom: 
+title: 在一个 SAP 用于 BizTalk 中的 SAP 适配器创建 RFC 概述 |Microsoft 文档
+description: 创建 RFC，RFC 目标和发送 RFC 从 SAP 系统-BizTalk 适配器包 (BAP)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35937183-fc1e-49cd-8a75-8f62effe0013
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216517"
 ---
 # <a name="create-and-send-an-rfc-in-sap"></a><span data-ttu-id="460f4-103">创建和 SAP 中发送 RFC</span><span class="sxs-lookup"><span data-stu-id="460f4-103">Create and send an RFC in SAP</span></span>
 <span data-ttu-id="460f4-104">列出在该 SAP 系统创建 RFC 上完成的高级任务。</span><span class="sxs-lookup"><span data-stu-id="460f4-104">Lists high-level tasks to complete on the SAP system to create an RFC.</span></span> <span data-ttu-id="460f4-105">每个任务可能涉及到非常详细的过程。</span><span class="sxs-lookup"><span data-stu-id="460f4-105">Each task may involve very detailed procedures.</span></span> <span data-ttu-id="460f4-106">因此，我们建议联系您的 SAP 管理员来完成这些任务，或指 SAP 指南。</span><span class="sxs-lookup"><span data-stu-id="460f4-106">As a result, we recommend contacting your SAP administrator to complete these tasks, or refer to the SAP guidance.</span></span>  

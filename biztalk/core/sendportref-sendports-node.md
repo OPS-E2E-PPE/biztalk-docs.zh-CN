@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269957"
 ---
 # <a name="sendportref-sendports-node"></a><span data-ttu-id="f218c-102">SendPortRef（“发送端口”节点）</span><span class="sxs-lookup"><span data-stu-id="f218c-102">SendPortRef (SendPorts Node)</span></span>
 <span data-ttu-id="f218c-103">绑定文件的 SendPorts 节点的 SendPortRef 节点可指定分发列表所引用的发送端口的名称。</span><span class="sxs-lookup"><span data-stu-id="f218c-103">The SendPortRef node of the SendPorts node of a binding file specifies the name of a send port referenced by a distribution list.</span></span>  

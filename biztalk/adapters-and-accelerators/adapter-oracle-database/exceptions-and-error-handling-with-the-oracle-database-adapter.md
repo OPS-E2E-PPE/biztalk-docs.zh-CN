@@ -1,11 +1,11 @@
 ---
-title: "异常和错误处理使用 Oracle 数据库适配器 |Microsoft 文档"
-ms.custom: 
+title: 异常和错误处理使用 Oracle 数据库适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - exception, LOB
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - exceptions, error handling
 - error handling, exceptions
 ms.assetid: df9a1244-63cd-438e-8a06-99383fbeba2c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215165"
 ---
 # <a name="exceptions-and-error-handling-with-the-oracle-database-adapter"></a><span data-ttu-id="17a93-102">异常和错误处理使用 Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="17a93-102">Exceptions and error handling with the Oracle Database adapter</span></span>
 <span data-ttu-id="17a93-103">本部分列出的异常，[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]引发。</span><span class="sxs-lookup"><span data-stu-id="17a93-103">This section lists the exceptions that the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] throws.</span></span> <span data-ttu-id="17a93-104">这些可以包含：</span><span class="sxs-lookup"><span data-stu-id="17a93-104">These can contain:</span></span>  

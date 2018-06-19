@@ -1,14 +1,14 @@
 ---
-title: "交互适配器不可否认性 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器不可否认性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a13fb77c-b10c-4f8a-ba4b-efecc83e092c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224917"
 ---
 # <a name="interact-adapter-non-repudiation"></a><span data-ttu-id="16c41-102">交互适配器不可否认性</span><span class="sxs-lookup"><span data-stu-id="16c41-102">InterAct Adapter Non-Repudiation</span></span>
 <span data-ttu-id="16c41-103">不可否认性传出交互，消息支持是通过将 SwInt:NRIndicator 设置为 TRUE SwInt:ResponseControl，根据需要对 SwInt:RequestControl 中获取的。</span><span class="sxs-lookup"><span data-stu-id="16c41-103">Non-repudiation support for an outgoing InterAct message is obtained by setting the SwInt:NRIndicator to TRUE in the SwInt:RequestControl or SwInt:ResponseControl, as appropriate.</span></span> <span data-ttu-id="16c41-104">如果这是必需仅服务不会在默认情况下，选择不可否认性支持根据服务的配置文件。</span><span class="sxs-lookup"><span data-stu-id="16c41-104">This is required only if the service does not select non-repudiation support by default, according to the Service Profile.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 接收位置用于接收从后端应用程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 接收位置用于接收从后端应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 - FRR, creating receive locations
 ms.assetid: 78bd8084-ddec-4066-a474-ab5b1a0a849f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210077"
 ---
 # <a name="creating-the-frr-receive-location-for-receiving-from-the-back-end-application"></a><span data-ttu-id="28cf4-102">创建 FRR 接收位置用于接收从后端应用程序</span><span class="sxs-lookup"><span data-stu-id="28cf4-102">Creating the FRR Receive Location for Receiving from the Back-End Application</span></span>
 <span data-ttu-id="28cf4-103">若要执行 FIN 响应对帐，你需要创建一个从后端应用程序置于接收消息的接收位置[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="28cf4-103">To perform FIN Response Reconciliation, you need to create a receive location that receives a message from the back-end application into [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)].</span></span>  

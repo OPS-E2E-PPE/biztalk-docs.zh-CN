@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264805"
 ---
 # <a name="programming-with-business-rules-framework"></a><span data-ttu-id="39eea-102">使用业务规则框架编程</span><span class="sxs-lookup"><span data-stu-id="39eea-102">Programming with Business Rules Framework</span></span>
 <span data-ttu-id="39eea-103">本部分包含与 BRE 程序员相关的任务，如以编程方式执行策略和创建事实检索器组件。</span><span class="sxs-lookup"><span data-stu-id="39eea-103">This section covers BRE programmer related tasks such as executing policies programmatically and creating a fact retriever component.</span></span>  

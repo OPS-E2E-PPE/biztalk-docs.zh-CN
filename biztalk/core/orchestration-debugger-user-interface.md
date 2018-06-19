@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265653"
 ---
 # <a name="orchestration-debugger-user-interface"></a><span data-ttu-id="0f189-102">业务流程调试器用户界面</span><span class="sxs-lookup"><span data-stu-id="0f189-102">Orchestration Debugger User Interface</span></span>
 <span data-ttu-id="0f189-103">在交互（调试）模式下，“业务流程调试器”视图包含三个区域：“服务”窗格、“跟踪的事件”窗格以及“业务流程”窗格。</span><span class="sxs-lookup"><span data-stu-id="0f189-103">In interactive (debug) mode, the Orchestration Debugger view contains three areas: Service pane, Tracked Events pane, and the Orchestration pane.</span></span> <span data-ttu-id="0f189-104">此外，在交互模式下，在视图底部会依次显示“变量列表”和“变量属性”。</span><span class="sxs-lookup"><span data-stu-id="0f189-104">In addition, in interactive mode, the Variable list and Variable properties display across the bottom of the view.</span></span>  

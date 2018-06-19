@@ -1,17 +1,17 @@
 ---
-title: "第 2 部分： 批处理中的批处理方案出 |Microsoft 文档"
-ms.custom: 
+title: 第 2 部分： 批处理中的批处理方案出 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, outbound batches
 - batching, inbound batches
 ms.assetid: 36b9d927-f5b7-4c1a-9163-9e79d17c3e9e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206181"
 ---
 # <a name="part-2-batch-inbatch-out-scenario"></a><span data-ttu-id="f8301-102">第 2 部分： 中的批处理 / 批处理出方案</span><span class="sxs-lookup"><span data-stu-id="f8301-102">Part 2: Batch In/Batch Out Scenario</span></span>
 <span data-ttu-id="f8301-103">在本教程的此部分中，你会收到 HL7 编码批处理文件，将其传递[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]碎片，而发送到目标的不变的批处理文件。</span><span class="sxs-lookup"><span data-stu-id="f8301-103">In this part of the tutorial, you receive an HL7-encoded batch file, pass it through [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] without fragmentation, and send the intact batch file to the destination.</span></span> <span data-ttu-id="f8301-104">下图显示了此过程中，流和以下子节介绍工作流。</span><span class="sxs-lookup"><span data-stu-id="f8301-104">The following figure shows the flow of this process, and the subsection below describes the workflow.</span></span>  

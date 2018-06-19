@@ -1,11 +1,11 @@
 ---
-title: "SAP 系统和适配器之间的安全性 |Microsoft 文档"
-ms.custom: 
+title: SAP 系统和适配器之间的安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Secure Network Communications
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - security considerations, between SAP system and adapter
 - user name password credentials
 ms.assetid: fa21df0b-a364-4a52-8c38-49c5ee6267cc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217941"
 ---
 # <a name="security-between-the-sap-system-and-the-adapter"></a><span data-ttu-id="ee32c-102">SAP 系统和适配器之间的安全性</span><span class="sxs-lookup"><span data-stu-id="ee32c-102">Security between the SAP system and the adapter</span></span>
 <span data-ttu-id="ee32c-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持以帮助与 SAP 服务器之间的安全通信的 SAP 安全网络通信 (SNC) 或用户名称密码凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports either SAP Secure Network Communications (SNC) or user name password credentials to help secure communication between it and the SAP server.</span></span> <span data-ttu-id="ee32c-104">用户名密码凭据仅提供用于连接到 SAP 系统中; 的授权它们不提供任何安全交换通过连接的数据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-104">User name password credentials only provide authorization for the connection to the SAP system; they do not provide any security on the data exchanged over the connection.</span></span> <span data-ttu-id="ee32c-105">不能同时使用 SNC 和用户名称密码凭据。</span><span class="sxs-lookup"><span data-stu-id="ee32c-105">You cannot use both SNC and user name password credentials simultaneously.</span></span>  

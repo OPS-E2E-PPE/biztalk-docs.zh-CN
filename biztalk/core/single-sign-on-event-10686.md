@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10686 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10686 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3e71f2a-e51d-4736-b06a-117142d30dae
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271021"
 ---
 # <a name="single-sign-on-event-10686"></a><span data-ttu-id="02ea3-102">单一登录： 事件 10686</span><span class="sxs-lookup"><span data-stu-id="02ea3-102">Single Sign-On: Event 10686</span></span>
 ## <a name="details"></a><span data-ttu-id="02ea3-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="02ea3-103">Details</span></span>  

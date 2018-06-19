@@ -1,14 +1,14 @@
 ---
-title: "连接 |Microsoft 文档"
-ms.custom: 
+title: 连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e21a773d-a9cc-4a6f-b548-46badcd92aab
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231693"
 ---
 # <a name="concatenate"></a><span data-ttu-id="bc411-102">连接</span><span class="sxs-lookup"><span data-stu-id="bc411-102">Concatenate</span></span>
 <span data-ttu-id="bc411-103">删除堆栈最上方的两项，连接这两项，然后将结果推送到堆栈上。</span><span class="sxs-lookup"><span data-stu-id="bc411-103">Removes the top two items from the stack, concatenates them, and then pushes the result onto the stack.</span></span>  

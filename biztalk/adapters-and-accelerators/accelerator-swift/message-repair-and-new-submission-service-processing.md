@@ -1,11 +1,11 @@
 ---
-title: "消息修复和新提交服务处理 |Microsoft 文档"
-ms.custom: 
+title: 消息修复和新提交服务处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - repairing messages, MrsrRepair orchestration
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - InfoPath forms, messages
 - BAS, messages
 ms.assetid: fe2ee009-bf63-4bc0-b231-ad8a2633719f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211197"
 ---
 # <a name="message-repair-and-new-submission-service-processing"></a><span data-ttu-id="177c3-102">消息修复和新提交服务处理</span><span class="sxs-lookup"><span data-stu-id="177c3-102">Message Repair and New Submission Service Processing</span></span>
 <span data-ttu-id="177c3-103">MrsrRepair 业务流程处理所有消息修复和新提交操作，包括处理以下：</span><span class="sxs-lookup"><span data-stu-id="177c3-103">The MrsrRepair orchestration handles all Message Repair and New Submission operations, including processing the following:</span></span>  

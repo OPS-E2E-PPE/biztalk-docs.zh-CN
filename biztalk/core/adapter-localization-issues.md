@@ -1,14 +1,14 @@
 ---
-title: "适配器本地化问题 |Microsoft 文档"
-ms.custom: 
+title: 适配器本地化问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d200ce9-1a60-455b-88b0-6ec86092a786
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229861"
 ---
 # <a name="adapter-localization-issues"></a><span data-ttu-id="02dcb-102">适配器本地化问题</span><span class="sxs-lookup"><span data-stu-id="02dcb-102">Adapter Localization Issues</span></span>
 <span data-ttu-id="02dcb-103">下列主题涉及您在开发自定义适配器时可能遇到的本地化问题。</span><span class="sxs-lookup"><span data-stu-id="02dcb-103">The following topics cover localization issues that you may encounter when developing custom adapters.</span></span>  

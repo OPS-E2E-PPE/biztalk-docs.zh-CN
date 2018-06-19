@@ -1,14 +1,14 @@
 ---
-title: "适配器编程配置 |Microsoft 文档"
-ms.custom: 
+title: 适配器编程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e5fef6c-6928-42e7-9a1f-42b5bd769937
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229981"
 ---
 # <a name="adapter-programming-configuration"></a><span data-ttu-id="28b5b-102">适配器编程配置</span><span class="sxs-lookup"><span data-stu-id="28b5b-102">Adapter Programming Configuration</span></span>
 <span data-ttu-id="28b5b-103">每一种类型的密码同步适配器都有不同的配置要求，具体取决于设计适配器所针对的非 Windows 系统。</span><span class="sxs-lookup"><span data-stu-id="28b5b-103">Every type of password sync adapter has different configuration requirements, depending on what non-Windows system you design the adapter for.</span></span> <span data-ttu-id="28b5b-104">与关联应用程序一样，您可以使用企业单一登录配置存储更安全地集中存储配置属性。</span><span class="sxs-lookup"><span data-stu-id="28b5b-104">Like affiliate applications, you can use the Enterprise Single Sign-On configuration store to store configuration properties centrally and more securely.</span></span>  

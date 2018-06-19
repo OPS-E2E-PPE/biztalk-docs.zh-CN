@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221853"
 ---
 # <a name="message-versioning-support"></a><span data-ttu-id="34f1d-102">消息版本控制支持</span><span class="sxs-lookup"><span data-stu-id="34f1d-102">Message Versioning Support</span></span>
 <span data-ttu-id="34f1d-103">[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]通过消息操作、 命名空间和的节点 Id 中包含的版本字符串组件的支持版本控制中加以表示的操作。</span><span class="sxs-lookup"><span data-stu-id="34f1d-103">The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] supports versioning by including a version string component in the message actions, namespaces, and node IDs surfaced for operations.</span></span> <span data-ttu-id="34f1d-104">当前版本为 http://Microsoft.LobServices.Siebel/2007/03。</span><span class="sxs-lookup"><span data-stu-id="34f1d-104">The current version is http://Microsoft.LobServices.Siebel/2007/03.</span></span> <span data-ttu-id="34f1d-105">这意味着 Siebel 存储库中的帐户业务对象上的插入操作，该适配器显示在插入操作具有以下：</span><span class="sxs-lookup"><span data-stu-id="34f1d-105">This means that for an Insert operation on an Account business object in the Siebel repository, the Insert operation surfaced by the adapter has the following:</span></span>  

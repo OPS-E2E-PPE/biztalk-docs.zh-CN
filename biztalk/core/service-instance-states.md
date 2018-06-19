@@ -1,18 +1,18 @@
 ---
-title: "服务实例状态 |Microsoft 文档"
-ms.custom: 
+title: 服务实例状态 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, states
 - messages, processing
 - states, service instances
 ms.assetid: 38189538-72b3-49df-810b-e134362e35ef
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272565"
 ---
 # <a name="service-instance-states"></a><span data-ttu-id="d1366-102">服务实例状态</span><span class="sxs-lookup"><span data-stu-id="d1366-102">Service Instance States</span></span>
 <span data-ttu-id="d1366-103">在处理消息时，将会执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="d1366-103">As a message is processed, the following actions take place:</span></span>  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="d1366-126">**在职**</span><span class="sxs-lookup"><span data-stu-id="d1366-126">**Active**</span></span>|<span data-ttu-id="d1366-127">正在运行的服务实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-127">Running service instance.</span></span>|  
 |<span data-ttu-id="d1366-128">**冻结**</span><span class="sxs-lookup"><span data-stu-id="d1366-128">**Dehydrated**</span></span>|<span data-ttu-id="d1366-129">实例状态保持在 MessageBox 数据库中，并且没有 Windows 服务运行该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-129">Instance state persists in the MessageBox database and no Windows service is running that instance.</span></span>|  
 |<span data-ttu-id="d1366-130">**已完成，但已放弃的消息**</span><span class="sxs-lookup"><span data-stu-id="d1366-130">**Completed with discarded messages**</span></span>|<span data-ttu-id="d1366-131">该服务实例已完成，但某些消息未被该实例使用。</span><span class="sxs-lookup"><span data-stu-id="d1366-131">The service instance was completed, but some messages were not consumed by the instance.</span></span>|  
-|<span data-ttu-id="d1366-132">**已挂起 （恢复）**</span><span class="sxs-lookup"><span data-stu-id="d1366-132">**Suspended (resumable)**</span></span>|<span data-ttu-id="d1366-133">实例已挂起，但可恢复该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-133">Instance suspended, you can resume it.</span></span> <span data-ttu-id="d1366-134">**重要说明：**恢复消息实例将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="d1366-134">**Important:**  Resuming a messaging instance will do the following:</span></span> <ul><li><span data-ttu-id="d1366-135">恢复消息实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-135">Resume the messaging instance.</span></span></li><li><span data-ttu-id="d1366-136">将消息发送到发送端口。</span><span class="sxs-lookup"><span data-stu-id="d1366-136">Send the message to the send port.</span></span></li><li><span data-ttu-id="d1366-137">发送端口将消息传送到目标（即使发送端口未处于“已启动”状态）。</span><span class="sxs-lookup"><span data-stu-id="d1366-137">The send port delivers the message to the destination; even if the send port is not in a Started state.</span></span></li></ul> <br /><br /> <span data-ttu-id="d1366-138">请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。</span><span class="sxs-lookup"><span data-stu-id="d1366-138">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
+|<span data-ttu-id="d1366-132">**已挂起 （恢复）**</span><span class="sxs-lookup"><span data-stu-id="d1366-132">**Suspended (resumable)**</span></span>|<span data-ttu-id="d1366-133">实例已挂起，但可恢复该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-133">Instance suspended, you can resume it.</span></span> <span data-ttu-id="d1366-134">**重要说明：** 恢复消息实例将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="d1366-134">**Important:**  Resuming a messaging instance will do the following:</span></span> <ul><li><span data-ttu-id="d1366-135">恢复消息实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-135">Resume the messaging instance.</span></span></li><li><span data-ttu-id="d1366-136">将消息发送到发送端口。</span><span class="sxs-lookup"><span data-stu-id="d1366-136">Send the message to the send port.</span></span></li><li><span data-ttu-id="d1366-137">发送端口将消息传送到目标（即使发送端口未处于“已启动”状态）。</span><span class="sxs-lookup"><span data-stu-id="d1366-137">The send port delivers the message to the destination; even if the send port is not in a Started state.</span></span></li></ul> <br /><br /> <span data-ttu-id="d1366-138">请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。</span><span class="sxs-lookup"><span data-stu-id="d1366-138">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
 |<span data-ttu-id="d1366-139">**已挂起 （不恢复）**</span><span class="sxs-lookup"><span data-stu-id="d1366-139">**Suspended (not-resumable)**</span></span>|<span data-ttu-id="d1366-140">实例已挂起，且不可恢复该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-140">Instance suspended, but you cannot resume it.</span></span> <span data-ttu-id="d1366-141">可以保存该实例所引用的消息，然后终止该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-141">You can save the Messages referenced by the instance, and then you can terminate the instance.</span></span><br /><br /> <span data-ttu-id="d1366-142">请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。</span><span class="sxs-lookup"><span data-stu-id="d1366-142">Note that when you suspend a scheduled instance and then resume it, the instance goes into a dehydrated state.</span></span>|  
 |<span data-ttu-id="d1366-143">**挂起的挂起 / 挂起的终止**</span><span class="sxs-lookup"><span data-stu-id="d1366-143">**Pending suspend/Pending terminate**</span></span>|<span data-ttu-id="d1366-144">一种状态，但不是独立的状态。</span><span class="sxs-lookup"><span data-stu-id="d1366-144">A status, not an independent state.</span></span> <span data-ttu-id="d1366-145">可以将其与其他状态相结合。</span><span class="sxs-lookup"><span data-stu-id="d1366-145">You can combine it with other states.</span></span><br /><br /> <span data-ttu-id="d1366-146">要挂起或终止的控制消息已发送到服务实例，但该实例尚未提取该控制消息。</span><span class="sxs-lookup"><span data-stu-id="d1366-146">A control message to suspend or terminate was sent to a service instance, but has not yet been picked up by the instance.</span></span> <span data-ttu-id="d1366-147">一次只允许一个待定操作。</span><span class="sxs-lookup"><span data-stu-id="d1366-147">Only one pending operation allowed at a time.</span></span> <span data-ttu-id="d1366-148">当具有暂停操作的实例被冻结时，可以终止该实例。</span><span class="sxs-lookup"><span data-stu-id="d1366-148">When an instance with a pending operation becomes dehydrated, you can terminate the instance.</span></span>|  
   

@@ -1,18 +1,18 @@
 ---
-title: "调用 Rfc 和在 SAP 中使用 EXEC 命令的 BAPIs |Microsoft 文档"
-ms.custom: 
+title: 调用 Rfc 和在 SAP 中使用 EXEC 命令的 BAPIs |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - EXEC command, invoking RFCs and BAPIs
 - BAPIs and RFCs, invoking by using the EXEC command
 - RFCs and BAPIs, invoking by using the EXEC command
 ms.assetid: 55443679-2fa8-4c13-ac3b-1c85b5166cd2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217213"
 ---
 # <a name="invoke-rfcs-and-bapis-using-the-exec-command-in-sap"></a><span data-ttu-id="fe736-102">调用 Rfc 和 BAPIs 在 SAP 中使用 EXEC 命令</span><span class="sxs-lookup"><span data-stu-id="fe736-102">Invoke RFCs and BAPIs using the EXEC Command in SAP</span></span>
 <span data-ttu-id="fe736-103">[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]公开与 ADO.NET 数据源 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="fe736-103">The [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] exposes the SAP system as an ADO.NET data source.</span></span> <span data-ttu-id="fe736-104">通过使用[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]，你可以调用 Rfc 和 BAPIs EXEC 命令通过 SAP 系统上。</span><span class="sxs-lookup"><span data-stu-id="fe736-104">By using [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)], you can invoke RFCs and BAPIs on the SAP system through an EXEC command.</span></span>  

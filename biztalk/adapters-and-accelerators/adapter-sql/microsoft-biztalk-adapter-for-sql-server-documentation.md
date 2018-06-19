@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Adapter for SQL Server 文档 |Microsoft 文档"
-description: "获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 SQL 适配器"
-ms.custom: 
+title: Microsoft BizTalk Adapter for SQL Server 文档 |Microsoft 文档
+description: 获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 SQL 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1979ca70-9075-4fdb-b4b4-0749c92b792f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223053"
 ---
 # <a name="microsoft-biztalk-adapter-for-sql-server-documentation"></a><span data-ttu-id="8c2e1-103">Microsoft BizTalk Adapter for SQL Server 文档</span><span class="sxs-lookup"><span data-stu-id="8c2e1-103">Microsoft BizTalk Adapter for SQL Server documentation</span></span>
 <span data-ttu-id="8c2e1-104">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]包括各种资源来帮助你理解适配器的工作原理，如何创建应用程序使用的适配器，描述了不同的连接选项，请了解如何创建应用程序，和的详细信息。</span><span class="sxs-lookup"><span data-stu-id="8c2e1-104">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.</span></span>

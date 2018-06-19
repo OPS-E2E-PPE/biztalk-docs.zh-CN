@@ -1,14 +1,14 @@
 ---
-title: "适用于业务 Exchange 交互适配器消息 |Microsoft 文档"
-ms.custom: 
+title: 适用于业务 Exchange 交互适配器消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b443b8a-4e56-47f1-8d91-5c807fd54ccc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224597"
 ---
 # <a name="interact-adapter-messages-for-business-exchange"></a><span data-ttu-id="9cf31-102">适用于业务 Exchange 交互适配器消息</span><span class="sxs-lookup"><span data-stu-id="9cf31-102">InterAct Adapter Messages for Business Exchange</span></span>
 <span data-ttu-id="9cf31-103">在交互适配器端到端周期中有四条消息。</span><span class="sxs-lookup"><span data-stu-id="9cf31-103">There are four messages in the InterAct adapter end-to-end cycle.</span></span> <span data-ttu-id="9cf31-104">这些消息将 SWIFTNet 基元。</span><span class="sxs-lookup"><span data-stu-id="9cf31-104">These messages are SWIFTNet primitives.</span></span> <span data-ttu-id="9cf31-105">客户端基元、 SwInt:ExchangeRequest 和 SwInt:ExchangeResponse，前者构成的第一个和最后一个消息。</span><span class="sxs-lookup"><span data-stu-id="9cf31-105">The first and last messages comprise the client-side primitives, SwInt:ExchangeRequest and SwInt:ExchangeResponse.</span></span> <span data-ttu-id="9cf31-106">服务器端基元、 SwInt:HandleRequest 和 SwInt:HandleResponse，前者构成中间两条消息。</span><span class="sxs-lookup"><span data-stu-id="9cf31-106">The middle two messages comprise the server-side primitives, SwInt:HandleRequest and SwInt:HandleResponse.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "对 PL SQL Api 的操作 |Microsoft 文档"
-ms.custom: 
+title: 对 PL SQL Api 的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d47b894d-1047-48ed-8f8c-865c343a12db
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216005"
 ---
 # <a name="operations-on-plsql-apis"></a><span data-ttu-id="98cc7-102">PL/SQL api 的操作</span><span class="sxs-lookup"><span data-stu-id="98cc7-102">Operations on PL/SQL APIs</span></span>
 <span data-ttu-id="98cc7-103">Oracle E-business Suite 提供一组形式的已打包的函数和存储的过程的 PL/SQL Api。</span><span class="sxs-lookup"><span data-stu-id="98cc7-103">Oracle E-Business Suite provides a set of PL/SQL APIs in the form of packaged functions and stored procedures.</span></span> <span data-ttu-id="98cc7-104">这些打包函数和过程作为中的操作进行展示[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="98cc7-104">These packaged functions and procedures are surfaced as operations in [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].</span></span> 

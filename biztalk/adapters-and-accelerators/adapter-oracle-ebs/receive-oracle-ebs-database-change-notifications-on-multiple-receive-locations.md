@@ -1,14 +1,14 @@
 ---
-title: "接收到 Oracle E-business Suite 数据库更改通知上多个接收位置 |Microsoft 文档"
-ms.custom: 
+title: 接收到 Oracle E-business Suite 数据库更改通知上多个接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d25faa52-e0a4-4593-8449-3ec93d5887e9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217021"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-on-multiple-receive-locations"></a><span data-ttu-id="62154-102">接收到 Oracle E-business Suite 数据库更改通知上多个接收位置</span><span class="sxs-lookup"><span data-stu-id="62154-102">Receive Oracle E-Business Suite database change notifications on multiple receive locations</span></span>
 <span data-ttu-id="62154-103">在同一数据库中假设你有多个接收位置不同的 BizTalk 应用程序配置为接收同一个表 (例如 ACCOUNTACTIVITY) 的查询通知的一部分创建的其中一个方案。</span><span class="sxs-lookup"><span data-stu-id="62154-103">Consider a scenario where you have multiple receive locations created as part of different BizTalk applications configured to receive query notifications for the same table (e.g. ACCOUNTACTIVITY) in the same database.</span></span> <span data-ttu-id="62154-104">如果上百个记录插入到同一个表中，所有接收位置将都收到通知消息。</span><span class="sxs-lookup"><span data-stu-id="62154-104">If a hundred records are inserted into the same table, all the receive locations will get the notification message.</span></span> <span data-ttu-id="62154-105">若要有效地接收通知跨多个接收位置、 可以从 BizTalk 应用程序如果逐个收到通知接收位置的此类的方式调用操作、 其他接收位置不会获取相同的通知。</span><span class="sxs-lookup"><span data-stu-id="62154-105">To effectively receive notifications across multiple receive locations, you can call operations from your BizTalk application in such a way that if a notification is received by one receive location, the other receive location does not get the same notification.</span></span> <span data-ttu-id="62154-106">这样，你可以有效地在多个位置上收到的负载平衡通知。</span><span class="sxs-lookup"><span data-stu-id="62154-106">So, you can effectively load-balance notifications received on multiple locations.</span></span>  
@@ -53,8 +54,8 @@ END NOTIFY_LOAD_BALANCE;
     |<span data-ttu-id="62154-125">绑定属性</span><span class="sxs-lookup"><span data-stu-id="62154-125">Binding Property</span></span>|<span data-ttu-id="62154-126">值</span><span class="sxs-lookup"><span data-stu-id="62154-126">Value</span></span>|  
     |----------------------|-----------|  
     |<span data-ttu-id="62154-127">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="62154-127">**InboundOperationType**</span></span>|<span data-ttu-id="62154-128">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="62154-128">Set this to **Notification**.</span></span>|  
-    |<span data-ttu-id="62154-129">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="62154-129">**NotificationPort**</span></span>|<span data-ttu-id="62154-130">指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。</span><span class="sxs-lookup"><span data-stu-id="62154-130">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="62154-131">将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="62154-131">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="62154-132">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。</span><span class="sxs-lookup"><span data-stu-id="62154-132">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span> <span data-ttu-id="62154-133">**重要说明：**如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="62154-133">**Important:**  If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
-    |<span data-ttu-id="62154-134">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="62154-134">**NotificationStatement**</span></span>|<span data-ttu-id="62154-135">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="62154-135">Set this to:</span></span><br /><br /> <span data-ttu-id="62154-136">`SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注意：**必须指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="62154-136">`SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **Note:**  You must specify the table name along with the schema name.</span></span> <span data-ttu-id="62154-137">例如， `SCOTT.ACCOUNTACTIVITY`。</span><span class="sxs-lookup"><span data-stu-id="62154-137">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
+    |<span data-ttu-id="62154-129">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="62154-129">**NotificationPort**</span></span>|<span data-ttu-id="62154-130">指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。</span><span class="sxs-lookup"><span data-stu-id="62154-130">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span> <span data-ttu-id="62154-131">将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="62154-131">Set this to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="62154-132">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。</span><span class="sxs-lookup"><span data-stu-id="62154-132">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959).</span></span> <span data-ttu-id="62154-133">**重要说明：** 如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="62154-133">**Important:**  If you set this to the default value of -1, you will have to completely disable Windows Firewall to receive notification messages.</span></span>|  
+    |<span data-ttu-id="62154-134">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="62154-134">**NotificationStatement**</span></span>|<span data-ttu-id="62154-135">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="62154-135">Set this to:</span></span><br /><br /> <span data-ttu-id="62154-136">`SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注意：** 必须指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="62154-136">`SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **Note:**  You must specify the table name along with the schema name.</span></span> <span data-ttu-id="62154-137">例如， `SCOTT.ACCOUNTACTIVITY`。</span><span class="sxs-lookup"><span data-stu-id="62154-137">For example, `SCOTT.ACCOUNTACTIVITY`.</span></span>|  
     |<span data-ttu-id="62154-138">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="62154-138">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="62154-139">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="62154-139">Set this to **True**.</span></span>|  
   
 6.  <span data-ttu-id="62154-140">启动 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="62154-140">Start the BizTalk application.</span></span>  

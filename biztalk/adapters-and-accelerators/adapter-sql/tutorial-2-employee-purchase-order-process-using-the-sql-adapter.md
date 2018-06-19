@@ -1,14 +1,14 @@
 ---
-title: "教程 2： 员工-采购订单过程使用 SQL 适配器 |Microsoft 文档"
-ms.custom: 
+title: 教程 2： 员工-采购订单过程使用 SQL 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eeb4dd1e-209a-47eb-9c0e-a138e02f0ff2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223229"
 ---
 # <a name="tutorial-2-employee---purchase-order-process-using-the-sql-adapter"></a><span data-ttu-id="f1aad-102">教程 2： 员工-采购订单过程使用 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="f1aad-102">Tutorial 2: Employee - Purchase Order Process using the SQL adapter</span></span>
 <span data-ttu-id="f1aad-103">在本教程中，你要实现自动化其中将设备的购买部门排序每次新员工加入企业组织的过程。</span><span class="sxs-lookup"><span data-stu-id="f1aad-103">In this tutorial, you are automating the process where the Purchases department that places an equipment order every time a new employee joins the organization.</span></span> <span data-ttu-id="f1aad-104">员工详细信息和购买订单详细信息保留在**员工**和**Purchase_Order**分别，表中的 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="f1aad-104">Both employee details and purchase order details are maintained in **Employee** and **Purchase_Order** tables respectively, in a SQL Server database.</span></span> <span data-ttu-id="f1aad-105">通过更新 SQL Server 数据库中的 Purchase_Order 表并发送一封电子邮件，购买部门将得到通知。</span><span class="sxs-lookup"><span data-stu-id="f1aad-105">The Purchases department is informed by updating the Purchase_Order table in the SQL Server database and by sending an e-mail.</span></span> <span data-ttu-id="f1aad-106">在此过程中，将出现以下操作：</span><span class="sxs-lookup"><span data-stu-id="f1aad-106">Within the process, the following actions occur:</span></span>  

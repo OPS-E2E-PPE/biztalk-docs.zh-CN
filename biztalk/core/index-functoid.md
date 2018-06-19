@@ -1,18 +1,18 @@
 ---
-title: "索引 Functoid |Microsoft 文档"
-ms.custom: 
+title: 索引 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Max Occurs property
 - Index functoids, about Index functoids
 - Index functoids
 ms.assetid: 0c8ba427-881c-4b1f-92b9-61992d2a29df
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972579"
 ---
 # <a name="index-functoid"></a><span data-ttu-id="c44f6-102">“索引”Functoid</span><span class="sxs-lookup"><span data-stu-id="c44f6-102">Index Functoid</span></span>
 <span data-ttu-id="c44f6-103">**索引**functoid 使您能够选择从特定的记录序列中记录的信息。</span><span class="sxs-lookup"><span data-stu-id="c44f6-103">The **Index** functoid enables you to select information from a specific record in a series of records.</span></span> <span data-ttu-id="c44f6-104">每个**索引**functoid 从单个字段中收集信息。</span><span class="sxs-lookup"><span data-stu-id="c44f6-104">Each **Index** functoid collects information from a single field.</span></span>  

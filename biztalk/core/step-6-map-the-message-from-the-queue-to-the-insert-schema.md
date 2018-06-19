@@ -1,14 +1,14 @@
 ---
-title: "步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30a55f1e-32cc-409a-a814-084026f51b35
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276589"
 ---
 # <a name="step-6-on-premises-create-a-transform-to-map-the-message-from-the-queue-to-the-insert-schema"></a><span data-ttu-id="8dd57-102">步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换</span><span class="sxs-lookup"><span data-stu-id="8dd57-102">Step 6 (On Premises): Create a Transform to Map the Message from the Queue to the Insert Schema</span></span>
 <span data-ttu-id="8dd57-103">收到的消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从 Service Bus 队列将是**ECommerceSalesOrder.xsd**架构。</span><span class="sxs-lookup"><span data-stu-id="8dd57-103">The message that is received by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] from the Service Bus Queue will be of the **ECommerceSalesOrder.xsd** schema.</span></span> <span data-ttu-id="8dd57-104">但是，若要插入到消息**SalesOrder**表，消息必须为**插入**中生成的架构[步骤 5 （在本地）： 生成用于插入消息 inito 架构SalesOrder 表](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)。</span><span class="sxs-lookup"><span data-stu-id="8dd57-104">However, to insert a message into the **SalesOrder** table, the message must be of **Insert** schema that you generated in [Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md).</span></span> <span data-ttu-id="8dd57-105">因此，在本主题中，我们创建一个映射，以便转换**ECommerceSalesOrder.xsd**到 Insert 操作架构的架构。</span><span class="sxs-lookup"><span data-stu-id="8dd57-105">So, in this topic, we create a map to transform the **ECommerceSalesOrder.xsd** schema into the Insert operation schema.</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="8dd57-107">在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]你已创建，右键单击项目，指向**添加**，然后单击**新项**。</span><span class="sxs-lookup"><span data-stu-id="8dd57-107">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you already created, right-click the project, point to **Add**, and then click **New Item**.</span></span> <span data-ttu-id="8dd57-108">在**新项**对话框中，选择**映射**，输入映射名称为`SalesOrder_SQL.btm`，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="8dd57-108">In the **New Item** dialog box, select **Map**, enter the map name as `SalesOrder_SQL.btm`, and then click **Add**.</span></span>  
   
-2.  <span data-ttu-id="8dd57-109">在映射中，对于源架构中，选择**ECommerceSalesOrder.xsd**。</span><span class="sxs-lookup"><span data-stu-id="8dd57-109">In the map, for the source schema, select **ECommerceSalesOrder.xsd**.</span></span> <span data-ttu-id="8dd57-110">对于目标架构中，选择**TableOperations.SalesOrder.xsd (Insert)**架构。</span><span class="sxs-lookup"><span data-stu-id="8dd57-110">For the destination schema, select **TableOperations.SalesOrder.xsd (Insert)** schema.</span></span>  
+2.  <span data-ttu-id="8dd57-109">在映射中，对于源架构中，选择**ECommerceSalesOrder.xsd**。</span><span class="sxs-lookup"><span data-stu-id="8dd57-109">In the map, for the source schema, select **ECommerceSalesOrder.xsd**.</span></span> <span data-ttu-id="8dd57-110">对于目标架构中，选择**TableOperations.SalesOrder.xsd (Insert)** 架构。</span><span class="sxs-lookup"><span data-stu-id="8dd57-110">For the destination schema, select **TableOperations.SalesOrder.xsd (Insert)** schema.</span></span>  
   
 3.  <span data-ttu-id="8dd57-111">直接映射源架构和目标架构中的以下节点：</span><span class="sxs-lookup"><span data-stu-id="8dd57-111">Directly map the following nodes in the source and destination schemas:</span></span>  
   

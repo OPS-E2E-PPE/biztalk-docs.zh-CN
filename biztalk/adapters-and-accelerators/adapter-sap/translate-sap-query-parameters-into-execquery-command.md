@@ -1,15 +1,15 @@
 ---
-title: "将转换为 EXECQUERY 命令中 BizTalk mySAP 适配器中 SAP 查询参数 |Microsoft 文档"
-description: "转换到 EXECQUERY，示例使用的 SAP 查询的指南"
-ms.custom: 
+title: 将转换为 EXECQUERY 命令中 BizTalk mySAP 适配器中 SAP 查询参数 |Microsoft 文档
+description: 转换到 EXECQUERY，示例使用的 SAP 查询的指南
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8a545e20-2607-4946-a60d-0a227b86d093
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217725"
 ---
 # <a name="translate-sap-query-parameters-into-execquery-command"></a><span data-ttu-id="24216-103">将 SAP 查询参数转换为 EXECQUERY 命令</span><span class="sxs-lookup"><span data-stu-id="24216-103">Translate SAP query parameters into EXECQUERY command</span></span>
 <span data-ttu-id="24216-104">说明如何查询的参数转换成 EXECQUERY 命令文本。</span><span class="sxs-lookup"><span data-stu-id="24216-104">Explains how the parameters of a query translate into an EXECQUERY command text.</span></span> <span data-ttu-id="24216-105">本主题使用自定义的 SAP 查询 ZQUERY_TST_NEW 的示例。</span><span class="sxs-lookup"><span data-stu-id="24216-105">This topic uses the example of a custom SAP query, ZQUERY_TST_NEW.</span></span>  

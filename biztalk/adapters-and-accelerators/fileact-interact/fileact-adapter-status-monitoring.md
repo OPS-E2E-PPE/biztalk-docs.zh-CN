@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器状态监视 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器状态监视 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 15833004-4276-4975-a0e7-8fff3c82576b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223037"
 ---
 # <a name="fileact-adapter-status-monitoring"></a><span data-ttu-id="5406a-102">FileAct 适配器状态监视</span><span class="sxs-lookup"><span data-stu-id="5406a-102">FileAct Adapter Status Monitoring</span></span>
 <span data-ttu-id="5406a-103">在下图说明了这些状态之间的转换的文件传输以及可能的状态。</span><span class="sxs-lookup"><span data-stu-id="5406a-103">The possible states of a file transfer and the transitions between those states are illustrated in the following figure.</span></span>  

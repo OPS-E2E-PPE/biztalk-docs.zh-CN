@@ -1,14 +1,14 @@
 ---
-title: "状态报告数据存储区 |Microsoft 文档"
-ms.custom: 
+title: 状态报告数据存储区 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6cd40ce8-1ac6-43b4-9cef-7cd045e8893c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278093"
 ---
 # <a name="status-report-data-stores"></a><span data-ttu-id="86fde-102">状态报告数据存储区</span><span class="sxs-lookup"><span data-stu-id="86fde-102">Status Report Data Stores</span></span>
 <span data-ttu-id="86fde-103">状态报告跟踪数据存储在 BAM 主导入数据库中。</span><span class="sxs-lookup"><span data-stu-id="86fde-103">Status reporting tracking data is stored in the BAM Primary Import database.</span></span> <span data-ttu-id="86fde-104">该数据库中的许多表都用于 EDI 和 AS2 消息数据，这些表包括以 dbo.bam_AS2、dbo.bam.batching、dbo.bam.InterchangeStatusActivity 等开头的表。</span><span class="sxs-lookup"><span data-stu-id="86fde-104">A number of tables in this database are used for EDI and AS2 message data, including tables starting with dbo.bam_AS2, dbo.bam.batching, dbo.bam.InterchangeStatusActivity, and others.</span></span> <span data-ttu-id="86fde-105">即使在禁用 EDI 报告的情况下，状态数据也存储在主导入数据库中。</span><span class="sxs-lookup"><span data-stu-id="86fde-105">Status data is stored in the Primary Import even if EDI reporting is disabled.</span></span> <span data-ttu-id="86fde-106">如果激活了状态报告，则您将只能在该状态报告 UI 中查看和查询此类数据。</span><span class="sxs-lookup"><span data-stu-id="86fde-106">You will only be to view and query this data in the status reporting UI if status reporting is activated.</span></span>  

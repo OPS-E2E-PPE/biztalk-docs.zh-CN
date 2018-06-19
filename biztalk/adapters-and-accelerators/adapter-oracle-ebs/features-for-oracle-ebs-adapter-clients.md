@@ -1,14 +1,14 @@
 ---
-title: "适用于 Oracle EBS 适配器客户端的功能 |Microsoft 文档"
-ms.custom: 
+title: 适用于 Oracle EBS 适配器客户端的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 50256fb7-5f0c-4b32-87e6-98f49da0b360
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217253"
 ---
 # <a name="features-for-oracle-ebs-adapter-clients"></a><span data-ttu-id="716d1-102">适用于 Oracle EBS 适配器客户端的功能</span><span class="sxs-lookup"><span data-stu-id="716d1-102">Features for Oracle EBS adapter clients</span></span>
 <span data-ttu-id="716d1-103">除了对在的主题中讨论的功能[概述的 BizTalk Adapter for Oracle E-business Suite](http://msdn.microsoft.com/library/4f18fa2e-4e97-4c28-b38d-fc39ac53789e)、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]还提供了以下功能，可用于适配器客户端：</span><span class="sxs-lookup"><span data-stu-id="716d1-103">In addition to the features discussed throughout the topics of [Overview of BizTalk Adapter for Oracle E-Business Suite](http://msdn.microsoft.com/library/4f18fa2e-4e97-4c28-b38d-fc39ac53789e), the [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] also provides the following features that are useful for adapter clients:</span></span>  

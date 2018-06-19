@@ -1,14 +1,14 @@
 ---
-title: "有关实例消息 |Microsoft 文档"
-ms.custom: 
+title: 有关实例消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: de7fc3d3-57a7-4df9-b981-127e21941e22
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224773"
 ---
 # <a name="about-instance-messages"></a><span data-ttu-id="07017-102">有关实例消息</span><span class="sxs-lookup"><span data-stu-id="07017-102">About Instance Messages</span></span>
 <span data-ttu-id="07017-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送和接收实例消息，每个实例消息通常表示诸如采购订单之类的一个或多个业务文档。</span><span class="sxs-lookup"><span data-stu-id="07017-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends and receives instance messages, each of which typically represents one or more business documents such as a purchase order.</span></span> <span data-ttu-id="07017-104">实例消息是由一个或多个架构定义的消息结构的实例。</span><span class="sxs-lookup"><span data-stu-id="07017-104">An instance message is an instance of a message structure defined by one or more schemas.</span></span> <span data-ttu-id="07017-105">一个架构或者一起使用的一组架构将定义有效实例消息的组成部分。</span><span class="sxs-lookup"><span data-stu-id="07017-105">A schema, or a set of schemas being used together, defines what constitutes a valid instance message.</span></span> <span data-ttu-id="07017-106">例如，采购订单可能定义为在其中具有若干记录（如 ShipTo 记录、BillTo 记录和 Items 记录等）。</span><span class="sxs-lookup"><span data-stu-id="07017-106">For example, a purchase order might be defined to have several records within it, such as a ShipTo record, a BillTo record, an Items record, and so on.</span></span> <span data-ttu-id="07017-107">这些记录中的每一个都可以定义为包含它们自己的子记录和字段。</span><span class="sxs-lookup"><span data-stu-id="07017-107">Each of these records can be defined to contain their own subrecords and fields.</span></span> <span data-ttu-id="07017-108">相应的架构定义这些记录和字段的潜在内容，相应的实例消息包含实际采购订单，这些采购订单又包含根据架构组织的采购订单数据。</span><span class="sxs-lookup"><span data-stu-id="07017-108">The corresponding schema defines the potential contents of these records and fields and the corresponding instance messages contain actual purchase orders that contain purchase order data structured according to the schema.</span></span>  

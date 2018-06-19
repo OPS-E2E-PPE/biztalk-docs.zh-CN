@@ -1,14 +1,14 @@
 ---
-title: "适配器 XSD 元素属性构造 |Microsoft 文档"
-ms.custom: 
+title: 适配器 XSD 元素属性构造 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bd58811-d09e-4c29-91b3-cb82b752512c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22229789"
 ---
 # <a name="adapter-xsd-element-attribute-constructs"></a><span data-ttu-id="97250-102">适配器 XSD 元素属性构造</span><span class="sxs-lookup"><span data-stu-id="97250-102">Adapter XSD Element-Attribute Constructs</span></span>
 <span data-ttu-id="97250-103">下表列出了适配器框架支持的 XSD 元素属性构造。</span><span class="sxs-lookup"><span data-stu-id="97250-103">The following tables list XSD element-attribute constructs supported by the Adapter Framework.</span></span> <span data-ttu-id="97250-104">纵轴包含受支持的元素类型，横轴包含每个元素的有效属性类型。</span><span class="sxs-lookup"><span data-stu-id="97250-104">The vertical axis contains the supported element types, and the horizontal axis contains the valid attribute types for each element.</span></span>  

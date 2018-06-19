@@ -1,14 +1,14 @@
 ---
-title: "对于传出 AS2 消息的协议解析 |Microsoft 文档"
-ms.custom: 
+title: 对于传出 AS2 消息的协议解析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 578d7565-534c-4c13-b473-975f347f3a9b
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230317"
 ---
 # <a name="agreement-resolution-for-outgoing-as2-messages"></a><span data-ttu-id="dd198-102">对于传出 AS2 消息的协议解析</span><span class="sxs-lookup"><span data-stu-id="dd198-102">Agreement Resolution for Outgoing AS2 Messages</span></span>
 <span data-ttu-id="dd198-103">当 AS2 发送管道处理通过 HTTP/HTTPS 传输传出的 EDIINT/AS2 编码的消息时，它会确定此消息将解析到的协议。</span><span class="sxs-lookup"><span data-stu-id="dd198-103">When an AS2 send pipeline processes an outgoing EDIINT/AS2-encoded message over HTTP/HTTPS transport, it determines the agreement that the message will resolve to.</span></span> <span data-ttu-id="dd198-104">然后，它将使用这些协议属性来处理此传出消息。</span><span class="sxs-lookup"><span data-stu-id="dd198-104">It will then use those agreement properties to process the outgoing message.</span></span> <span data-ttu-id="dd198-105">发送管道将使用以下条件来确定协议（按优先顺序）：</span><span class="sxs-lookup"><span data-stu-id="dd198-105">The send pipeline will use the following criteria to determine the agreement (in order of priority):</span></span>  

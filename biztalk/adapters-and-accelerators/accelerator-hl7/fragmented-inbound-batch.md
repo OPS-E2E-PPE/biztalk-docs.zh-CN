@@ -1,18 +1,18 @@
 ---
-title: "分片入站的批处理 |Microsoft 文档"
-ms.custom: 
+title: 分片入站的批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, fragmenting messages
 - messages, fragmenting
 - fragmenting messages
 ms.assetid: 5844710e-f662-48a3-bf1a-bc1ba91e678a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204885"
 ---
 # <a name="fragmented-inbound-batch"></a><span data-ttu-id="6bbb2-102">零碎的入站的批处理</span><span class="sxs-lookup"><span data-stu-id="6bbb2-102">Fragmented Inbound Batch</span></span>
 <span data-ttu-id="6bbb2-103">你可以配置[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]若要接收消息批，从该批处理，提取消息，然后单个消息路由到目标系统。</span><span class="sxs-lookup"><span data-stu-id="6bbb2-103">You can configure [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] to receive a message batch, extract the messages from the batch, and then route the individual messages to the destination system.</span></span> <span data-ttu-id="6bbb2-104">如果启用碎片，到单个消息的入站的批处理片段否则为批处理得到处理，并作为单个 'batch' 或交换路由。</span><span class="sxs-lookup"><span data-stu-id="6bbb2-104">If you enable fragmentation, the inbound batch fragments into individual messages; otherwise, the batch is processed and routed as a single 'batch' or interchange.</span></span> <span data-ttu-id="6bbb2-105">BTAHL7 配置资源管理器用于启用批处理。</span><span class="sxs-lookup"><span data-stu-id="6bbb2-105">You use BTAHL7 Configuration Explorer to enable batching.</span></span> <span data-ttu-id="6bbb2-106">有关启用批处理的详细信息，请参阅[配置批处理](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)。</span><span class="sxs-lookup"><span data-stu-id="6bbb2-106">For more information about enabling batching, see [Configuring Batching](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md).</span></span>  

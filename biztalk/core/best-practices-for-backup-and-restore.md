@@ -1,14 +1,14 @@
 ---
-title: "备份和还原最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 备份和还原最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aaf721ba-50ce-4334-b86d-e856b54d3486
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231397"
 ---
 # <a name="best-practices-for-backup-and-restore"></a><span data-ttu-id="cfdfc-102">备份和还原的最佳实践</span><span class="sxs-lookup"><span data-stu-id="cfdfc-102">Best Practices for Backup and Restore</span></span>
 -   <span data-ttu-id="cfdfc-103">**创建备份和还原计划**</span><span class="sxs-lookup"><span data-stu-id="cfdfc-103">**Create a backup and restore plan**</span></span>  

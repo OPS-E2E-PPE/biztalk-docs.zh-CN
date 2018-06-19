@@ -1,11 +1,11 @@
 ---
-title: "XML 信息在 XML 汇编程序管道组件中设置元素 |Microsoft 文档"
-ms.custom: 
+title: XML 信息在 XML 汇编程序管道组件中设置元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML Assembler [pipeline component], processing instructions
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - pipeline components, XML Assembler
 - XML Assembler [pipeline component], XML information set
 ms.assetid: 5a262763-838e-476b-8117-30c94bc1d64a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289517"
 ---
 # <a name="xml-information-set-elements-in-the-xml-assembler-pipeline-component"></a><span data-ttu-id="c7292-102">XML 信息集 XML 汇编程序管道组件中的元素</span><span class="sxs-lookup"><span data-stu-id="c7292-102">XML Information Set Elements in the XML Assembler Pipeline Component</span></span>
 <span data-ttu-id="c7292-103">XML 组装器组件可处理 XML 信息集合元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="c7292-103">The XML Assembler component handles XML information set elements as follows.</span></span>  

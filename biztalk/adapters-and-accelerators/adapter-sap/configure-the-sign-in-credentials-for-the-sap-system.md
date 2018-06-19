@@ -1,14 +1,14 @@
 ---
-title: "配置 SAP 系统的凭据登录 |Microsoft 文档"
-ms.custom: 
+title: 配置 SAP 系统的凭据登录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb41106b-b673-4fcf-a56e-6208e3113469
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217805"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sap-system"></a><span data-ttu-id="91ccb-102">配置 SAP 系统的凭据登录</span><span class="sxs-lookup"><span data-stu-id="91ccb-102">Configure the sign in credentials for the SAP system</span></span>
 <span data-ttu-id="91ccb-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]需要适配器客户端提供客户端凭据。</span><span class="sxs-lookup"><span data-stu-id="91ccb-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] requires the adapter clients to provide client credentials.</span></span> <span data-ttu-id="91ccb-104">适配器使用这些凭据进行身份验证与 SAP 系统用户并建立连接。</span><span class="sxs-lookup"><span data-stu-id="91ccb-104">The adapter uses these credentials to authenticate the user with the SAP system and to establish a connection.</span></span>  

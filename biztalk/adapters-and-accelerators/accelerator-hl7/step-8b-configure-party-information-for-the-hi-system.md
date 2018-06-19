@@ -1,14 +1,14 @@
 ---
-title: "单步 8B： 配置 HI 系统的当事方信息 |Microsoft 文档"
-ms.custom: 
+title: 单步 8B： 配置 HI 系统的当事方信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96338c05-1440-416e-a56a-6f5b19b55a60
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206309"
 ---
 # <a name="step-8b-configure-party-information-for-the-hi-system"></a><span data-ttu-id="1ac97-102">单步 8B： 配置 HI 系统的当事方信息</span><span class="sxs-lookup"><span data-stu-id="1ac97-102">Step 8B: Configure Party Information for the HI System</span></span>
 <span data-ttu-id="1ac97-103">在此步骤中，你可以配置 HI 系统的方信息。</span><span class="sxs-lookup"><span data-stu-id="1ac97-103">In this step, you configure the party information for the HI System.</span></span>  

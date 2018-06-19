@@ -1,11 +1,11 @@
 ---
-title: "保护 Oracle 数据库应用程序 |Microsoft 文档"
-ms.custom: 
+title: 保护 Oracle 数据库应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter, security
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - authentication
 - security
 ms.assetid: c5f18b0a-1c8e-44c6-ba7e-470fa186f636
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214701"
 ---
 # <a name="secure-your-oracle-database-applications"></a><span data-ttu-id="dd51e-102">保护 Oracle 数据库应用程序</span><span class="sxs-lookup"><span data-stu-id="dd51e-102">Secure your Oracle Database applications</span></span>
 ## <a name="data-protection-and-security-overview"></a><span data-ttu-id="dd51e-103">数据保护和安全概述</span><span class="sxs-lookup"><span data-stu-id="dd51e-103">Data protection and security overview</span></span>

@@ -1,14 +1,14 @@
 ---
-title: "如何使用复杂全局类型 |Microsoft 文档"
-ms.custom: 
+title: 如何使用复杂全局类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ddea1c7b-eb0e-4521-8576-0ea6f9460847
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288653"
 ---
 # <a name="ways-to-use-complex-global-types"></a><span data-ttu-id="43ce8-102">使用复杂全局类型的方法</span><span class="sxs-lookup"><span data-stu-id="43ce8-102">Ways to Use Complex Global Types</span></span>
 <span data-ttu-id="43ce8-103">将某一复杂类型转换为全局复杂类型之后，它就可以在您的架构的其他位置中重用。</span><span class="sxs-lookup"><span data-stu-id="43ce8-103">After you have converted a complex type to a global complex type, it becomes available for reuse in other locations within your schema.</span></span> <span data-ttu-id="43ce8-104">有关定义复杂类型，然后将它转换为全局复杂类型的详细信息，请参阅[复杂全局类型定义和命名](../core/complex-global-type-definition-and-naming.md)。</span><span class="sxs-lookup"><span data-stu-id="43ce8-104">For more information about defining a complex type and then converting it to a global complex type, see [Complex Global Type Definition and Naming](../core/complex-global-type-definition-and-naming.md).</span></span>  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 -   <span data-ttu-id="43ce8-110">**基数据类型属性**。</span><span class="sxs-lookup"><span data-stu-id="43ce8-110">**Base Data Type property**.</span></span> <span data-ttu-id="43ce8-111">如果要使用复杂全局类型的变体，以某种方式对其进行扩展或限制，则将此属性设置为您提供给复杂全局类型的类型名称，该类型名称作为下拉列表中的选项提供。</span><span class="sxs-lookup"><span data-stu-id="43ce8-111">If you want to use a variation on the complex global type, either extending it or restricting it in some way, set this property to the type name you gave to the complex global type, which is available as a choice in the drop-down list.</span></span> <span data-ttu-id="43ce8-112">当设置此属性，**派生源**节点属性更改为**扩展**(和**内容类型**属性更改为**ComplexContent**)，指示该扩展的复杂全局类型是默认的派生类型。</span><span class="sxs-lookup"><span data-stu-id="43ce8-112">When you set this property, the **Derived By** node property changes to **Extension** (and the **Content Type** property changes to **ComplexContent**), indicating that extending the complex global type is the default derivation type.</span></span> <span data-ttu-id="43ce8-113">你可以将其更改为**限制**如果您修改该性质的则。</span><span class="sxs-lookup"><span data-stu-id="43ce8-113">You can change it to **Restriction** if your modifications are of that nature.</span></span> <span data-ttu-id="43ce8-114">对从其派生的基本复杂全局类型的更改将自动反映在派生类型中，但在派生类型中所做的更改将不会反映在基本类型中。</span><span class="sxs-lookup"><span data-stu-id="43ce8-114">Changes to the base complex global type from which you are deriving are automatically reflected in the derived type, but changes in the derived type are never reflected in the base type.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="43ce8-115">设置上述属性之一将自动导致另一个属性删除现有设置。</span><span class="sxs-lookup"><span data-stu-id="43ce8-115">Setting either one of these properties automatically causes the other one to have any existing setting removed.</span></span> <span data-ttu-id="43ce8-116">此外，你将注意到相关的属性，例如设置之间的其他自动交互**派生源**属性**（默认）**中删除任何现有设置从**基数据类型**属性。</span><span class="sxs-lookup"><span data-stu-id="43ce8-116">Further, you will notice other automatic interactions between the related properties, such as setting the **Derived By** property to **(Default)** removes any existing setting from the **Base Data Type** property.</span></span>  
+>  <span data-ttu-id="43ce8-115">设置上述属性之一将自动导致另一个属性删除现有设置。</span><span class="sxs-lookup"><span data-stu-id="43ce8-115">Setting either one of these properties automatically causes the other one to have any existing setting removed.</span></span> <span data-ttu-id="43ce8-116">此外，你将注意到相关的属性，例如设置之间的其他自动交互**派生源**属性 **（默认）** 中删除任何现有设置从**基数据类型**属性。</span><span class="sxs-lookup"><span data-stu-id="43ce8-116">Further, you will notice other automatic interactions between the related properties, such as setting the **Derived By** property to **(Default)** removes any existing setting from the **Base Data Type** property.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="43ce8-117">您可以创建一个测试架构并为这些属性使用不同值，以观察 XSD 视图中的变化。</span><span class="sxs-lookup"><span data-stu-id="43ce8-117">You can create a test schema and use different values for these properties, observing the changes in the XSD view.</span></span>  

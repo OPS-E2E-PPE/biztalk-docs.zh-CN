@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbb4add7-6cc8-4b93-b559-471b6e31c01a
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22225669"
 ---
 # <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="fd413-102">浏览和搜索元数据中使用 WCF LOB 适配器 SDK</span><span class="sxs-lookup"><span data-stu-id="fd413-102">Browse and search metadata using the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="fd413-103">本部分提供有关如何通过实现 IMetadataBrowseHandler 和 IMetadataSearchHandler，分别公开使用适配器的浏览和搜索功能的信息。</span><span class="sxs-lookup"><span data-stu-id="fd413-103">This section provides information about how to expose browse and search functionality with an adapter by implementing IMetadataBrowseHandler and IMetadataSearchHandler, respectively.</span></span>  

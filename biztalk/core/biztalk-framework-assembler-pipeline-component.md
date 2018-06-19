@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Framework 汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Framework 汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, BizTalk Framework Assembler
 - BizTalk Framework Assembler [pipeline component]
 ms.assetid: 116dff8d-b7f8-4564-a7fb-6440682683dc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231101"
 ---
 # <a name="biztalk-framework-assembler-pipeline-component"></a><span data-ttu-id="04671-102">BizTalk Framework 汇编程序管道组件</span><span class="sxs-lookup"><span data-stu-id="04671-102">BizTalk Framework Assembler Pipeline Component</span></span>
 <span data-ttu-id="04671-103">BizTalk 框架是用于在使用网络传输协议(例如 HTTP 或 SMTP)时保证一次性传送即可送达的一种方法。</span><span class="sxs-lookup"><span data-stu-id="04671-103">The BizTalk Framework is one approach for doing exactly-once guaranteed delivery using over-the-wire transport protocols such as HTTP or SMTP.</span></span> <span data-ttu-id="04671-104">此框架自 1998 年起就已存在，并且可被视为基于 Web services（尤其是 WSReliable）的挂起标准计划的先驱。</span><span class="sxs-lookup"><span data-stu-id="04671-104">This framework has existed since 1998, and can be thought of as a precursor to pending standards initiatives based on Web services, specifically WSReliable.</span></span> <span data-ttu-id="04671-105">通常，保证一次性传送即可送达数据的问题已属于诸如消息队列（也称为 MSMQ）之类的技术领域。</span><span class="sxs-lookup"><span data-stu-id="04671-105">Typically, the problem of guaranteed exactly-once delivery of data has been the domain of technologies like Message Queuing (also known as MSMQ).</span></span> <span data-ttu-id="04671-106">不过，此类技术通常需要在数据流的两个终结点具有通用软件，并且不适用于使用基于公共网络的开放传输协议，例如使用 Internet 在企业边界间传输的数据。</span><span class="sxs-lookup"><span data-stu-id="04671-106">However, such technologies usually require common software at the two endpoints of a data flow, and also do nothing to address the use of open transport protocols based on public networks, for example, data that flows across enterprise boundaries by using the Internet.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "模块 7： 测试的有效的平面文件实例 |Microsoft 文档"
-ms.custom: 
+title: 模块 7： 测试的有效的平面文件实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, flat file instance
 - tutorial, testing flat file instance
 - flat files, testing
 ms.assetid: ba8a5d81-41b0-4da7-8c2e-02cf29953af7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209813"
 ---
 # <a name="module-7-testing-a-valid-flat-file-instance"></a><span data-ttu-id="9a4a7-102">模块 7： 测试的有效的平面文件实例</span><span class="sxs-lookup"><span data-stu-id="9a4a7-102">Module 7: Testing a Valid Flat File Instance</span></span>
 <span data-ttu-id="9a4a7-103">在此模块中，你可以提交有效示例 MT103 平面文件的文件接收在以前的实验室中创建的端口。</span><span class="sxs-lookup"><span data-stu-id="9a4a7-103">In this module, you submit a valid sample MT103 flat file to the file receive ports created in the previous labs.</span></span> <span data-ttu-id="9a4a7-104">此任务用于测试接收管道在以前的实验室中创建。</span><span class="sxs-lookup"><span data-stu-id="9a4a7-104">This task tests the receive pipelines you created in previous labs.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="9a4a7-105">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]将 XML 格式的输出写入到你在上一课中，所选发送端口中的输出文件夹[第 2 课： 添加 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)。</span><span class="sxs-lookup"><span data-stu-id="9a4a7-105">[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] writes the output in XML format to the output folder in the send port you selected in the previous lesson, [Lesson 2: Adding an XML Send Port](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md).</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "开发 Oracle 数据库应用程序使用 WCF 通道模型 |Microsoft 文档"
-ms.custom: 
+title: 开发 Oracle 数据库应用程序使用 WCF 通道模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, streaming
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - WCF channel model, developingn applications
 - channel programming, performing operations
 ms.assetid: cb6bf5fd-ff90-44bd-a9dd-03b00f12a78d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214981"
 ---
 # <a name="develop-oracle-database-applications-using-the-wcf-channel-model"></a><span data-ttu-id="f227c-102">开发 Oracle 数据库应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="f227c-102">Develop Oracle Database applications using the WCF Channel Model</span></span>
 <span data-ttu-id="f227c-103">你可以使用[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]通道模型来使用[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]通过直接通过使用 Oracle DB 绑定创建的通道实例发送 XML 消息。</span><span class="sxs-lookup"><span data-stu-id="f227c-103">You can use the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] channel model to consume the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] by sending XML messages directly over a channel instance created with the Oracle DB Binding.</span></span>  

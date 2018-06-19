@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269669"
 ---
 # <a name="sendportcollection-node"></a><span data-ttu-id="88cdf-102">SendPortCollection 节点</span><span class="sxs-lookup"><span data-stu-id="88cdf-102">SendPortCollection Node</span></span>
 <span data-ttu-id="88cdf-103">绑定文件的“SendPortCollection”节点是所有“发送端口”节点的父节点，“发送端口”节点包含与绑定文件一起导出的发送端口有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="88cdf-103">The SendPortCollection node of a binding file is the parent node for all of the SendPort nodes which contain specific information about a send port that is exported with the binding file.</span></span>  

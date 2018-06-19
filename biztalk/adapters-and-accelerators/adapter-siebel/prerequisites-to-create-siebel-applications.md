@@ -1,14 +1,14 @@
 ---
-title: "要创建 Siebel 应用程序系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 要创建 Siebel 应用程序系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c08f853-7f72-4e08-aa63-debdab68c972
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222581"
 ---
 # <a name="prerequisites-to-create-siebel-applications"></a><span data-ttu-id="61b2e-102">创建 Siebel 应用程序的先决条件</span><span class="sxs-lookup"><span data-stu-id="61b2e-102">Prerequisites to create Siebel applications</span></span>
 <span data-ttu-id="61b2e-103">在开发使用的 BizTalk 应用程序之前必须执行什么[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="61b2e-103">What you must do before developing BizTalk applications using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="61b2e-104">此主题还列出一些用于开发 BizTalk 应用程序的 BizTalk Server 工具。</span><span class="sxs-lookup"><span data-stu-id="61b2e-104">The topic also lists some BizTalk Server tools that are used to develop BizTalk applications.</span></span>  

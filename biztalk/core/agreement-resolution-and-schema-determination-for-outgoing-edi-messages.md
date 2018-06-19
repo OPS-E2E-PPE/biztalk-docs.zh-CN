@@ -1,14 +1,14 @@
 ---
-title: "协议解析和传出的 EDI 消息的架构确定 |Microsoft 文档"
-ms.custom: 
+title: 协议解析和传出的 EDI 消息的架构确定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e37aeb9d-1e95-464d-bb71-73653c1d4674
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231509"
 ---
 # <a name="agreement-resolution-and-schema-determination-for-outgoing-edi-messages"></a><span data-ttu-id="b6c0a-102">传出 EDI 消息的协议解析和架构确定</span><span class="sxs-lookup"><span data-stu-id="b6c0a-102">Agreement Resolution and Schema Determination for Outgoing EDI Messages</span></span>
 <span data-ttu-id="b6c0a-103">若要向贸易合作伙伴生成 EDI 消息，EDI 发送管道必须执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="b6c0a-103">To generate an EDI message to a trading partner, the EDI send pipeline must do the following:</span></span>  

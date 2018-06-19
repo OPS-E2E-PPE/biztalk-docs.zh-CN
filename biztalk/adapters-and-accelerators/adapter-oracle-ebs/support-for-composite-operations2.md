@@ -1,14 +1,14 @@
 ---
-title: "支持复合 Operations2 |Microsoft 文档"
-ms.custom: 
+title: 支持复合 Operations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f65cf10-4e27-4872-bc6a-defe6cbab198
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216437"
 ---
 # <a name="support-for-composite-operations"></a><span data-ttu-id="7441f-102">对复合操作的支持</span><span class="sxs-lookup"><span data-stu-id="7441f-102">Support for Composite Operations</span></span>
 <span data-ttu-id="7441f-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]允许适配器客户端执行可以包含任意数量的以下操作，并按任何顺序的复合操作：</span><span class="sxs-lookup"><span data-stu-id="7441f-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] enables adapter clients to perform composite operations that can include any number of the following operations, and in any order:</span></span>  

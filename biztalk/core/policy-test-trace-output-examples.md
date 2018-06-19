@@ -1,18 +1,18 @@
 ---
-title: "策略测试跟踪输出示例 |Microsoft 文档"
-ms.custom: 
+title: 策略测试跟踪输出示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, policies
 - policies, testing
 - testing, examples
 ms.assetid: 92e1dc7f-1a8d-41a5-84b6-46d5ad9f2ef2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266677"
 ---
 # <a name="policy-test-trace-output-examples"></a><span data-ttu-id="1b4ac-102">策略测试跟踪输出示例</span><span class="sxs-lookup"><span data-stu-id="1b4ac-102">Policy Test Trace Output Examples</span></span>
 <span data-ttu-id="1b4ac-103">本部分包含用于不同类型事实的策略测试输出的示例。</span><span class="sxs-lookup"><span data-stu-id="1b4ac-103">This section contains examples of the policy test output for different types of facts.</span></span>  
@@ -127,7 +128,7 @@ THEN <do something>
   
  <span data-ttu-id="1b4ac-150">规则集名称: LoanProcessing</span><span class="sxs-lookup"><span data-stu-id="1b4ac-150">Ruleset Name: LoanProcessing</span></span>  
   
- <span data-ttu-id="1b4ac-151">测试表达式： 选择 * 从 [CustInfo] 其中 [CreditCardBalance] > 0</span><span class="sxs-lookup"><span data-stu-id="1b4ac-151">Test Expression: select * from [CustInfo] where [CreditCardBalance] > 0</span></span>  
+ <span data-ttu-id="1b4ac-151">测试表达式： 选择 \* 从 [CustInfo] 其中 [CreditCardBalance] > 0</span><span class="sxs-lookup"><span data-stu-id="1b4ac-151">Test Expression: select \* from [CustInfo] where [CreditCardBalance] > 0</span></span>  
   
  <span data-ttu-id="1b4ac-152">左操作数的值：</span><span class="sxs-lookup"><span data-stu-id="1b4ac-152">Left Operand Value:</span></span>  
   

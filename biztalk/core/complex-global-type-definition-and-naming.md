@@ -1,14 +1,14 @@
 ---
-title: "复杂全局类型定义和命名 |Microsoft 文档"
-ms.custom: 
+title: 复杂全局类型定义和命名 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a12956-7b77-4be8-b323-38363d04fcbc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231621"
 ---
 # <a name="complex-global-type-definition-and-naming"></a><span data-ttu-id="5fa2b-102">复杂全局类型定义和命名</span><span class="sxs-lookup"><span data-stu-id="5fa2b-102">Complex Global Type Definition and Naming</span></span>
 <span data-ttu-id="5fa2b-103">在 BizTalk 编辑器中，定义复杂全局类型的第一步是将第一个出现的复杂类型转换为全局类型后，在使用该全局类型的位置之一进行定义。</span><span class="sxs-lookup"><span data-stu-id="5fa2b-103">Within BizTalk Editor, you begin to define a complex global type by defining the first occurrence of the complex type in one of the locations where the global type will be used, after it has been converted to a global type.</span></span> <span data-ttu-id="5fa2b-104">现在，以地址示例继续进行说明，在架构中定义发货地址时，定义复杂地址类型。</span><span class="sxs-lookup"><span data-stu-id="5fa2b-104">Continuing with the address example, you might define the complex address type in the course of defining a shipping address within the schema.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试 Solution2 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试 Solution2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30dbc7c9-3c5f-4953-b26f-5c41141c22ad
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277269"
 ---
 # <a name="step-3-test-the-solution"></a><span data-ttu-id="85838-102">步骤 3： 测试解决方案</span><span class="sxs-lookup"><span data-stu-id="85838-102">Step 3: Test the Solution</span></span>
 <span data-ttu-id="85838-103">![步骤 3 / 3](../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="85838-103">![Step 3 of 3](../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
  <span data-ttu-id="85838-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="85838-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="85838-105">**目标：**在此步骤中，你测试 EAI 解决方案如何处理消息。</span><span class="sxs-lookup"><span data-stu-id="85838-105">**Objective:** In this step, you test how the EAI solution processes messages.</span></span>  
+ <span data-ttu-id="85838-105">**目标：** 在此步骤中，你测试 EAI 解决方案如何处理消息。</span><span class="sxs-lookup"><span data-stu-id="85838-105">**Objective:** In this step, you test how the EAI solution processes messages.</span></span>  
   
- <span data-ttu-id="85838-106">**用途：**在此步骤中，检查 eai 进程业务流程正确处理消息。</span><span class="sxs-lookup"><span data-stu-id="85838-106">**Purpose:** In this step, you check that the EAIProcess orchestration processes messages correctly.</span></span> <span data-ttu-id="85838-107">检查方法是将示例消息放入为 EAI 应用程序指定的接收位置。</span><span class="sxs-lookup"><span data-stu-id="85838-107">You do this by dropping sample messages into the receive location specified for the EAI application.</span></span> <span data-ttu-id="85838-108">如果 EAI 解决方案工作正常，则当 EAIProcess 业务流程从仓库接收到请求多于 500 个货品的消息时，该业务流程将生成拒绝请求消息。</span><span class="sxs-lookup"><span data-stu-id="85838-108">If the EAI solution is working properly, if the EAIProcess orchestration receives a message from the warehouse requesting more than 500 items, the orchestration generates a decline request message.</span></span> <span data-ttu-id="85838-109">如果 EAIProcess 业务流程从仓库接收到请求少于 500 个货品的消息，则该业务流程会将消息传递到 ERP 系统。</span><span class="sxs-lookup"><span data-stu-id="85838-109">If the EAIProcess orchestration receives a message from the warehouse requesting fewer than 500 items, the orchestration passes the message on to the ERP system.</span></span>  
+ <span data-ttu-id="85838-106">**用途：** 在此步骤中，检查 eai 进程业务流程正确处理消息。</span><span class="sxs-lookup"><span data-stu-id="85838-106">**Purpose:** In this step, you check that the EAIProcess orchestration processes messages correctly.</span></span> <span data-ttu-id="85838-107">检查方法是将示例消息放入为 EAI 应用程序指定的接收位置。</span><span class="sxs-lookup"><span data-stu-id="85838-107">You do this by dropping sample messages into the receive location specified for the EAI application.</span></span> <span data-ttu-id="85838-108">如果 EAI 解决方案工作正常，则当 EAIProcess 业务流程从仓库接收到请求多于 500 个货品的消息时，该业务流程将生成拒绝请求消息。</span><span class="sxs-lookup"><span data-stu-id="85838-108">If the EAI solution is working properly, if the EAIProcess orchestration receives a message from the warehouse requesting more than 500 items, the orchestration generates a decline request message.</span></span> <span data-ttu-id="85838-109">如果 EAIProcess 业务流程从仓库接收到请求少于 500 个货品的消息，则该业务流程会将消息传递到 ERP 系统。</span><span class="sxs-lookup"><span data-stu-id="85838-109">If the EAIProcess orchestration receives a message from the warehouse requesting fewer than 500 items, the orchestration passes the message on to the ERP system.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="85838-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="85838-110">Prerequisites</span></span>  
  <span data-ttu-id="85838-111">在开始此步骤之前必须完成[步骤 2： 配置并启动应用程序](../core/step-2-configure-and-start-the-application1.md)。</span><span class="sxs-lookup"><span data-stu-id="85838-111">Before you begin this step you must complete [Step 2: Configure and Start the Application](../core/step-2-configure-and-start-the-application1.md).</span></span>  

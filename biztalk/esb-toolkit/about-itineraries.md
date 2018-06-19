@@ -1,14 +1,14 @@
 ---
-title: "有关路线 |Microsoft 文档"
-ms.custom: 
+title: 有关路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4d34632f-8652-49dd-97b7-2513aacc1bd7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290605"
 ---
 # <a name="about-itineraries"></a><span data-ttu-id="d05d7-102">有关路线</span><span class="sxs-lookup"><span data-stu-id="d05d7-102">About Itineraries</span></span>
 <span data-ttu-id="d05d7-103">一条路线是的表示形式执行的处理指令基于序列的 ESB 中介策略[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]可扩展格式。</span><span class="sxs-lookup"><span data-stu-id="d05d7-103">An itinerary is a representation of an ESB mediation policy for executing a sequence of processing instructions based on the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extensible format.</span></span> <span data-ttu-id="d05d7-104">一条路线可被视为描述一系列由配置是与中介组件关联的声明性路线服务的高级中介语言[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心引擎。</span><span class="sxs-lookup"><span data-stu-id="d05d7-104">An itinerary can be viewed as a high-level mediation language that describes a sequence of declarative itinerary services that are associated with mediation components by configuration of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine.</span></span> <span data-ttu-id="d05d7-105">你可以设计中介流来描述应如何处理消息，而且您可以组织 visual 绘制整个流中。</span><span class="sxs-lookup"><span data-stu-id="d05d7-105">You can design mediation flows to describe how messages should be processed, and you can organize the entire flow as a visual drawing.</span></span> <span data-ttu-id="d05d7-106">在运行时，[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心引擎执行路线设计器生成的路线。</span><span class="sxs-lookup"><span data-stu-id="d05d7-106">At run time, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine executes the itinerary produced by Itinerary Designer.</span></span>  

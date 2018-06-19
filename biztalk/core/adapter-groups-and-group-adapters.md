@@ -1,14 +1,14 @@
 ---
-title: "适配器组和组适配器 |Microsoft 文档"
-ms.custom: 
+title: 适配器组和组适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e0a9423-99dd-4474-afa1-fd8e1d074cd1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225373"
 ---
 # <a name="adapter-groups-and-group-adapters"></a><span data-ttu-id="557d9-102">适配器组和组适配器</span><span class="sxs-lookup"><span data-stu-id="557d9-102">Adapter Groups and Group Adapters</span></span>
 <span data-ttu-id="557d9-103">*适配器组*是一种管理机制，可用于收集和组织的适配器集。</span><span class="sxs-lookup"><span data-stu-id="557d9-103">An *adapter group* is an administration mechanism that you can use to collect and organize a set of adapters.</span></span> <span data-ttu-id="557d9-104">与此相反，*组适配器*是服务的适配器组中的所有适配器的组件。</span><span class="sxs-lookup"><span data-stu-id="557d9-104">In contrast, a *group adapter* is a component that services all adapters in an adapter group.</span></span> <span data-ttu-id="557d9-105">例如，您可以编写一组全部使用相同的 COM 组件，通过 TCP/IP 传输密码同步的适配器。</span><span class="sxs-lookup"><span data-stu-id="557d9-105">For example, you might write a set of adapters that all use the same COM component to transmit password synchronizations over TCP/IP.</span></span> <span data-ttu-id="557d9-106">这一组适配器称为适配器组，而为所有这些适配器提供服务的组件称为组适配器。</span><span class="sxs-lookup"><span data-stu-id="557d9-106">Your set of adapters is called the adapter group, whereas the component that services them all is called a group adapter.</span></span> <span data-ttu-id="557d9-107">适配器组在配置存储中进行描述。</span><span class="sxs-lookup"><span data-stu-id="557d9-107">Adapter groups are described in the configuration store.</span></span> <span data-ttu-id="557d9-108">你可以通过使用来检索信息和适配器组上的更新`ISSOPSAdapter.ReceiveNotification`。</span><span class="sxs-lookup"><span data-stu-id="557d9-108">You can retrieve information and updates on an adapter group by using `ISSOPSAdapter.ReceiveNotification`.</span></span>  

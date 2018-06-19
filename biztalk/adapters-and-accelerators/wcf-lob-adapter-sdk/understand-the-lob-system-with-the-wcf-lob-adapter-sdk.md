@@ -1,14 +1,14 @@
 ---
-title: "了解与 WCF LOB 适配器 SDK LOB 系统 |Microsoft 文档"
-ms.custom: 
+title: 了解与 WCF LOB 适配器 SDK LOB 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0f97846-5ef2-4530-853a-fba5469156f7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225797"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="75f77-102">了解 LOB 系统与 WCF LOB 适配器 SDK</span><span class="sxs-lookup"><span data-stu-id="75f77-102">Understand the LOB system with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="75f77-103">之前你适配器使用开发[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，你必须具有目标业务线系统的全面了解。</span><span class="sxs-lookup"><span data-stu-id="75f77-103">Before developing your adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], you must have a thorough understanding of the target line-of-business system.</span></span> <span data-ttu-id="75f77-104">如果你不了解业务线系统、 公开方式，以及提供有关安全、 事务和其他功能的支持的不同级别提供的功能，你的适配器可能无法提供所需的适配器的功能使用者。</span><span class="sxs-lookup"><span data-stu-id="75f77-104">If you do not understand the functionality provided by the line-of-business system, how it is exposed, and the different level of support provided for security, transactions, and other features, your adapter may not provide the features required by adapter consumers.</span></span> <span data-ttu-id="75f77-105">本部分介绍你必须了解要有效地设计你的适配器的区域。</span><span class="sxs-lookup"><span data-stu-id="75f77-105">This section describes the areas you must understand to effectively design your adapter.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "业务流程 |Microsoft 文档"
-ms.custom: 
+title: 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - deploying, orchestrations
 - orchestrations, about orchestrations
 ms.assetid: fb01f78a-b805-46be-a7d9-2b7597daab96
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266669"
 ---
 # <a name="orchestrations"></a><span data-ttu-id="7d2f4-102">业务流程</span><span class="sxs-lookup"><span data-stu-id="7d2f4-102">Orchestrations</span></span>
 <span data-ttu-id="7d2f4-103">*业务流程*是可以订阅 （接收） 的可执行业务流程和发布到 MessageBox 数据库 （发送） 消息。</span><span class="sxs-lookup"><span data-stu-id="7d2f4-103">*Orchestrations* are executable business processes that can subscribe to (receive) and publish (send) messages through the MessageBox database.</span></span> <span data-ttu-id="7d2f4-104">此外，业务流程可以构造新的消息。</span><span class="sxs-lookup"><span data-stu-id="7d2f4-104">In addition, orchestrations can construct new messages.</span></span> <span data-ttu-id="7d2f4-105">使用订阅接收消息和路由基础结构中所述[的一条消息的生命周期](../core/lifecycle-of-a-message.md)。</span><span class="sxs-lookup"><span data-stu-id="7d2f4-105">Messages are received using the subscription and routing infrastructure discussed in [Lifecycle of a Message](../core/lifecycle-of-a-message.md).</span></span> <span data-ttu-id="7d2f4-106">在填入业务流程的订阅后，将激活新的实例并传送消息；对于实例订阅，如有必要，将解除对该实例的冻结，然后传送消息。</span><span class="sxs-lookup"><span data-stu-id="7d2f4-106">When subscriptions are filled for orchestrations, a new instance is activated and the message is delivered, or in the case of instance subscriptions, the instance is rehydrated if necessary and the message is then delivered.</span></span> <span data-ttu-id="7d2f4-107">如果从业务流程发送消息，则这些消息将发布到 MessageBox，发布的方式如同消息到达接收位置，相应的属性将插入数据库以用于路由。</span><span class="sxs-lookup"><span data-stu-id="7d2f4-107">When messages are sent from an orchestration, they are published to the MessageBox in the same manner as a message arriving on a receive location with the appropriate properties getting inserted into the database for use in routing.</span></span>  

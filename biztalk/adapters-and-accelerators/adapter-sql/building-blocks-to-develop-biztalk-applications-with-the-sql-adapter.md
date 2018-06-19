@@ -1,14 +1,14 @@
 ---
-title: "开发具有 SQL 适配器的 BizTalk 应用程序的构建基块 |Microsoft 文档"
-ms.custom: 
+title: 开发具有 SQL 适配器的 BizTalk 应用程序的构建基块 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fac7cbf4-b111-43ad-8726-36d037918c9c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223605"
 ---
 # <a name="building-blocks-to-develop-biztalk-applications-with-the-sql-adapter"></a><span data-ttu-id="439c6-102">开发具有 SQL 适配器的 BizTalk 应用程序的构建基块</span><span class="sxs-lookup"><span data-stu-id="439c6-102">Building blocks to develop BizTalk applications with the SQL adapter</span></span>
 <span data-ttu-id="439c6-103">若要通过使用执行 SQL Server 上的操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须执行一组使用的设计时和运行时任务[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]分别管理控制台。</span><span class="sxs-lookup"><span data-stu-id="439c6-103">To perform operations on SQL Server by using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must perform a set of design-time and run-time tasks using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console respectively.</span></span> <span data-ttu-id="439c6-104">本部分概述了这些任务。</span><span class="sxs-lookup"><span data-stu-id="439c6-104">This section provides an overview of these tasks.</span></span> <span data-ttu-id="439c6-105">本部分中，用于演示如何执行 SQL Server 使用的特定操作的所有主题[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，这些高级任务进行建模。</span><span class="sxs-lookup"><span data-stu-id="439c6-105">All the topics in this section, which demonstrate how to perform specific operations on SQL Server using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], are modeled on these high-level tasks.</span></span>  

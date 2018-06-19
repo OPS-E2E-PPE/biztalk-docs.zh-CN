@@ -1,15 +1,15 @@
 ---
-title: "消息和消息架构用于 SQL Server 的 BizTalk Adapter |Microsoft 文档"
-description: "SQL Server 适配器用于 BizTalk Server 的消息和数据类型的 XML 结构"
-ms.custom: 
+title: 消息和消息架构用于 SQL Server 的 BizTalk Adapter |Microsoft 文档
+description: SQL Server 适配器用于 BizTalk Server 的消息和数据类型的 XML 结构
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e95c6342-5420-4fb8-9b41-7c87d27b5b68
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222373"
 ---
 # <a name="messages-and-message-schemas-for-biztalk-adapter-for-sql-server"></a><span data-ttu-id="80bd0-103">消息和用于 SQL Server 的 BizTalk Adapter 的消息架构</span><span class="sxs-lookup"><span data-stu-id="80bd0-103">Messages and Message Schemas for BizTalk Adapter for SQL Server</span></span>
 

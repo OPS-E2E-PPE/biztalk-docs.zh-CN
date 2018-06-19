@@ -1,17 +1,17 @@
 ---
-title: "FRR 接收的消息的位置从 SWIFT |Microsoft 文档"
-ms.custom: 
+title: FRR 接收的消息的位置从 SWIFT |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, receive locations
 - receive locations, FRR
 ms.assetid: d15989de-56f9-4d62-8394-f4fd6e971495
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207557"
 ---
 # <a name="frr-receive-location-for-messages-from-swift"></a><span data-ttu-id="57273-102">FRR 从 SWIFT 接收的消息的位置</span><span class="sxs-lookup"><span data-stu-id="57273-102">FRR Receive Location for Messages from SWIFT</span></span>
 <span data-ttu-id="57273-103">若要启用 FIN 响应对帐 (FRR)，必须设置 FRR 接收管道组件以从 SAA 收到一条消息并准备将其以供处理[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="57273-103">To enable FIN response reconciliation (FRR), you must set up an FRR receive pipeline component to receive a message from SAA and prepare it for processing by [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)].</span></span> <span data-ttu-id="57273-104">接收管道包含以下组件：</span><span class="sxs-lookup"><span data-stu-id="57273-104">The receive pipeline contains the following components:</span></span>  

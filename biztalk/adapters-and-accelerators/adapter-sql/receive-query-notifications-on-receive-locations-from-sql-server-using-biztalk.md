@@ -1,14 +1,14 @@
 ---
-title: "从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置 |Microsoft 文档"
-ms.custom: 
+title: 从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afbe98e-8901-417c-a807-8db97fd7a24b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223421"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a><span data-ttu-id="4690e-102">从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置</span><span class="sxs-lookup"><span data-stu-id="4690e-102">Receive query notifications On Multiple Receive Locations from SQL using BizTalk Server</span></span>
 <span data-ttu-id="4690e-103">在同一数据库中假设你有多个接收位置不同的 BizTalk 应用程序配置为接收同一个表 （例如员工） 的查询通知的一部分创建的其中一个方案。</span><span class="sxs-lookup"><span data-stu-id="4690e-103">Consider a scenario where you have multiple receive locations created as part of different BizTalk applications configured to receive query notifications for the same table (e.g. Employee) in the same database.</span></span> <span data-ttu-id="4690e-104">如果上百个记录插入到同一个表中，所有接收位置将都收到通知消息。</span><span class="sxs-lookup"><span data-stu-id="4690e-104">If a hundred records are inserted into the same table, all the receive locations will get the notification message.</span></span> <span data-ttu-id="4690e-105">若要有效地接收通知跨多个接收位置、 可以从 BizTalk 应用程序如果逐个收到通知接收位置的此类的方式调用操作、 其他接收位置不会获取相同的通知。</span><span class="sxs-lookup"><span data-stu-id="4690e-105">To effectively receive notifications across multiple receive locations, you can call operations from your BizTalk application in such a way that if a notification is received by one receive location, the other receive location does not get the same notification.</span></span> <span data-ttu-id="4690e-106">这样，你可以有效地在多个位置上收到的负载平衡通知。</span><span class="sxs-lookup"><span data-stu-id="4690e-106">So, you can effectively load-balance notifications received on multiple locations.</span></span>  
@@ -50,7 +51,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
     |<span data-ttu-id="4690e-125">绑定属性</span><span class="sxs-lookup"><span data-stu-id="4690e-125">Binding Property</span></span>|<span data-ttu-id="4690e-126">值</span><span class="sxs-lookup"><span data-stu-id="4690e-126">Value</span></span>|  
     |----------------------|-----------|  
     |<span data-ttu-id="4690e-127">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="4690e-127">**InboundOperationType**</span></span>|<span data-ttu-id="4690e-128">将其设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="4690e-128">Set this to **Notification**.</span></span>|  
-    |<span data-ttu-id="4690e-129">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="4690e-129">**NotificationStatement**</span></span>|<span data-ttu-id="4690e-130">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="4690e-130">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="4690e-131">**注意：**对于通知语句，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="4690e-131">**Note:** For notification statements, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="4690e-132">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="4690e-132">For example, `dbo.Employee`.</span></span>|  
+    |<span data-ttu-id="4690e-129">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="4690e-129">**NotificationStatement**</span></span>|<span data-ttu-id="4690e-130">将其设置为：</span><span class="sxs-lookup"><span data-stu-id="4690e-130">Set this to:</span></span><br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> <span data-ttu-id="4690e-131">**注意：** 对于通知语句，你必须始终指定表名称以及架构名称。</span><span class="sxs-lookup"><span data-stu-id="4690e-131">**Note:** For notification statements, you must always specify the table name along with the schema name.</span></span> <span data-ttu-id="4690e-132">例如， `dbo.Employee`。</span><span class="sxs-lookup"><span data-stu-id="4690e-132">For example, `dbo.Employee`.</span></span>|  
     |<span data-ttu-id="4690e-133">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="4690e-133">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="4690e-134">将其设置为**True**。</span><span class="sxs-lookup"><span data-stu-id="4690e-134">Set this to **True**.</span></span>|  
   
 6.  <span data-ttu-id="4690e-135">启动 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="4690e-135">Start the BizTalk application.</span></span>  

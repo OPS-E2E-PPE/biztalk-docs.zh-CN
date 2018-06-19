@@ -1,18 +1,18 @@
 ---
-title: "在业务流程中的持久性 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中的持久性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, persistence
 - persistence
 - BizTalk Server Orchestration Engine
 ms.assetid: 2f79d294-f7df-4d84-ba76-50618506b6c6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264589"
 ---
 # <a name="persistence-in-orchestrations"></a><span data-ttu-id="694f8-102">在业务流程中的持久性</span><span class="sxs-lookup"><span data-stu-id="694f8-102">Persistence in Orchestrations</span></span>
 <span data-ttu-id="694f8-103">业务流程引擎将保存业务流程实例在不同持久化点时的整个状态，以便可以解除冻结业务流程实例。</span><span class="sxs-lookup"><span data-stu-id="694f8-103">The orchestration engine saves the entire state of an orchestration instance at various persistence points to allow rehydration of the orchestration instance.</span></span> <span data-ttu-id="694f8-104">该状态包括可在业务流程中使用的所有基于 .NET 的组件以及消息和变量。</span><span class="sxs-lookup"><span data-stu-id="694f8-104">The state includes any .NET-based components that may be used in the orchestration, in addition to messages and variables.</span></span> <span data-ttu-id="694f8-105">该引擎存储处于以下持久化点时的状态：</span><span class="sxs-lookup"><span data-stu-id="694f8-105">The engine stores state at the following persistence points:</span></span>  

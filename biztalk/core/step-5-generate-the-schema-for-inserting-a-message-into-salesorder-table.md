@@ -1,14 +1,14 @@
 ---
-title: "步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab0bc1a7-8bcd-4110-88e6-4eddf0b57068
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279317"
 ---
 # <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a><span data-ttu-id="e7adc-102">步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构</span><span class="sxs-lookup"><span data-stu-id="e7adc-102">Step 5 (On Premises): Generate the Schema for Inserting a Message inito SalesOrder Table</span></span>
 <span data-ttu-id="e7adc-103">必须根据业务方案中，插入的 X12 销售订单消息从 Contoso 发送到 Northwind 的**SalesOrder**表如果订购的数量大于 100。</span><span class="sxs-lookup"><span data-stu-id="e7adc-103">According to the business scenario, the X12 sales order message sent from Contoso must be inserted into Northwind’s **SalesOrder** table if the quantity ordered is greater than 100.</span></span> <span data-ttu-id="e7adc-104">若要插入到消息**SalesOrder**表，必须生成的架构**插入**表上的操作。</span><span class="sxs-lookup"><span data-stu-id="e7adc-104">To insert a message into a **SalesOrder** table, you must generate the schema for the **Insert** operation on the table.</span></span> <span data-ttu-id="e7adc-105">在本主题中，你将创建[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案，，然后使用[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]生成用于执行架构**插入**操作**SalesOrder**表。</span><span class="sxs-lookup"><span data-stu-id="e7adc-105">In this topic, you will create a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution, and then use the [!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)] to generate the schema for performing an **Insert** operation on the **SalesOrder** table.</span></span>  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="e7adc-118">**无**</span><span class="sxs-lookup"><span data-stu-id="e7adc-118">**None**</span></span>|<span data-ttu-id="e7adc-119">使用 Windows 身份验证连接至 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="e7adc-119">Connect to SQL Server using Windows authentication.</span></span>|  
     |<span data-ttu-id="e7adc-120">**Windows**</span><span class="sxs-lookup"><span data-stu-id="e7adc-120">**Windows**</span></span>|<span data-ttu-id="e7adc-121">使用 Windows 身份验证连接至 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="e7adc-121">Connect to SQL Server using Windows authentication.</span></span>|  
-    |<span data-ttu-id="e7adc-122">**用户名**</span><span class="sxs-lookup"><span data-stu-id="e7adc-122">**Username**</span></span>|<span data-ttu-id="e7adc-123">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="e7adc-123">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="e7adc-124">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="e7adc-124">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="e7adc-125">**注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="e7adc-125">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="e7adc-122">**用户名**</span><span class="sxs-lookup"><span data-stu-id="e7adc-122">**Username**</span></span>|<span data-ttu-id="e7adc-123">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="e7adc-123">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="e7adc-124">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="e7adc-124">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="e7adc-125">**注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="e7adc-125">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 6.  <span data-ttu-id="e7adc-126">单击**URI 属性**选项卡上，然后指定连接参数的值。</span><span class="sxs-lookup"><span data-stu-id="e7adc-126">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="e7adc-127">有关连接 URI 的详细信息为[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]，请参阅[SQL Server 连接 URI](http://msdn.microsoft.com/library/dd788089.aspx)。</span><span class="sxs-lookup"><span data-stu-id="e7adc-127">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)], see [SQL Server Connection URI](http://msdn.microsoft.com/library/dd788089.aspx).</span></span>  
   

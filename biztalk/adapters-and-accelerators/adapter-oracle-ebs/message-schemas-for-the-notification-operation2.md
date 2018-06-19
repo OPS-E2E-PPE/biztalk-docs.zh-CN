@@ -1,14 +1,14 @@
 ---
-title: "通知 Operation2 的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 通知 Operation2 的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dddab2ef-94db-46c8-95c1-57517681e8dd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215941"
 ---
 # <a name="message-schemas-for-the-notification-operation"></a><span data-ttu-id="9049c-102">通知操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="9049c-102">Message Schemas for the Notification Operation</span></span>
 <span data-ttu-id="9049c-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]面，用于接收从 Oracle E-business Suite 中的基础数据库的数据库更改通知的通知操作。</span><span class="sxs-lookup"><span data-stu-id="9049c-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces the Notification operation to receive database change notifications from the underlying database in Oracle E-Business Suite.</span></span>  

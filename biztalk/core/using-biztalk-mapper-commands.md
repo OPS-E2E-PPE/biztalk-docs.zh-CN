@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34fea0fb-0609-4571-be49-6ee3f03afe2a
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22289277"
 ---
 # <a name="using-biztalk-mapper-commands"></a><span data-ttu-id="58dd2-102">使用 BizTalk 映射程序命令</span><span class="sxs-lookup"><span data-stu-id="58dd2-102">Using BizTalk Mapper Commands</span></span>
 <span data-ttu-id="58dd2-103">当 BizTalkMapper 变为活动状态时，它将添加菜单调用**BizTalk**到 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] shell。</span><span class="sxs-lookup"><span data-stu-id="58dd2-103">When BizTalkMapper becomes active, it adds a menu called **BizTalk** to the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] shell.</span></span> <span data-ttu-id="58dd2-104">通过此菜单可以访问 BizTalk 映射器命令及其功能。</span><span class="sxs-lookup"><span data-stu-id="58dd2-104">This menu provides access to the BizTalk Mapper commands and their functionality.</span></span> <span data-ttu-id="58dd2-105">当 BizTalk 映射程序处于活动状态， **BizTalk** 菜单提供特定于编辑 BizTalk 映射的命令。</span><span class="sxs-lookup"><span data-stu-id="58dd2-105">When BizTalk Mapper is active, the **BizTalk** menu provides the commands that are specific to editing BizTalk maps.</span></span>  

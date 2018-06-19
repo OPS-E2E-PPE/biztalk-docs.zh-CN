@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, modifying previous version of BizTalk project for invoking an RFC
 - migration
 ms.assetid: 2d4a6cd7-d216-4e0f-8f82-41e044cd325b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218101"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a><span data-ttu-id="7aa39-102">步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="7aa39-102">Step 1: Modify the vPrev BizTalk Project for Invoking an RFC</span></span>
 <span data-ttu-id="7aa39-103">![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span><span class="sxs-lookup"><span data-stu-id="7aa39-103">![Step 1 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")</span></span>  
   
  <span data-ttu-id="7aa39-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="7aa39-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="7aa39-105">**目标：**向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="7aa39-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
+ <span data-ttu-id="7aa39-105">**目标：** 向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="7aa39-105">**Objective:** In this step, you make the following changes to the existing vPrev BizTalk project:</span></span>  
   
 -   <span data-ttu-id="7aa39-106">为使用基于 WCF 的 SD_RFC_CUSTOMER_GET RFC 生成元数据[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="7aa39-106">Generate metadata for the SD_RFC_CUSTOMER_GET RFC using the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   

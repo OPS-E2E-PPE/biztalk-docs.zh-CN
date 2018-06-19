@@ -1,18 +1,18 @@
 ---
-title: "BAPI 操作的消息架构 |Microsoft 文档"
-ms.custom: 
+title: BAPI 操作的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAPI operations, message schemas for
 - BAPI operations, message structure for
 - BAPI operations, message actions for
 ms.assetid: ef4d88e8-f31a-4b68-a303-6885b6f8c083
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217445"
 ---
 # <a name="message-schemas-for-bapi-operations"></a><span data-ttu-id="56207-102">BAPI 操作的消息架构</span><span class="sxs-lookup"><span data-stu-id="56207-102">Message Schemas for BAPI Operations</span></span>
 <span data-ttu-id="56207-103">下列各节描述的消息架构和消息操作用于调用 BAPIs[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]作为业务对象的方法。</span><span class="sxs-lookup"><span data-stu-id="56207-103">The following sections describe the message schemas and message actions used to invoke BAPIs on the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] as methods of business objects.</span></span> <span data-ttu-id="56207-104">你也可以作为在适配器上的 RFC 操作调用 BAPIs。</span><span class="sxs-lookup"><span data-stu-id="56207-104">You can also invoke BAPIs as RFC operations on the adapter.</span></span> <span data-ttu-id="56207-105">有关用来调用 Rfc 的消息的详细信息，请参阅[RFC 操作的消息架构](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="56207-105">For more information about the messages used to invoke RFCs, see [Message Schemas for RFC Operations](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md).</span></span> <span data-ttu-id="56207-106">而不考虑如何在适配器上的 BAPI 调用时，适配器始终作为 SAP 系统上 RFC 调用 BAPI。</span><span class="sxs-lookup"><span data-stu-id="56207-106">Regardless of how you invoke a BAPI on the adapter, the adapter always invokes the BAPI as an RFC on the SAP system.</span></span> <span data-ttu-id="56207-107">有关如何概述[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持 BAPIs，请参阅[对 BAPIs SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)。</span><span class="sxs-lookup"><span data-stu-id="56207-107">For an overview of how the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports BAPIs, see [Operations on BAPIs in SAP](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md).</span></span>  

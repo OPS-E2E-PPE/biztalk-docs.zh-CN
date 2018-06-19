@@ -1,14 +1,14 @@
 ---
-title: "无法合并由于名称冲突的操作 |Microsoft 文档"
-ms.custom: 
+title: 无法合并由于名称冲突的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 81ddb8b7-6f7e-420c-b7c3-921c0e305326
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231709"
 ---
 # <a name="cannot-merge-operations-due-to-name-collision"></a><span data-ttu-id="b0a89-102">由于名称冲突，无法合并操作</span><span class="sxs-lookup"><span data-stu-id="b0a89-102">Cannot merge operations due to name collision</span></span>
 ## <a name="details"></a><span data-ttu-id="b0a89-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="b0a89-103">Details</span></span>  

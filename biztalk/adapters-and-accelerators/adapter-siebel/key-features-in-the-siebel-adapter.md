@@ -1,11 +1,11 @@
 ---
-title: "关键 Siebel 适配器中的功能 |Microsoft 文档"
-ms.custom: 
+title: 关键 Siebel 适配器中的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - features, performance-related
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - features, operations-related
 - adapter features, metadata-related
 ms.assetid: 4612c9ab-810e-4c69-9168-a25c58682e71
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222125"
 ---
 # <a name="key-features-in-the-siebel-adapter"></a><span data-ttu-id="05b8a-102">Siebel 适配器中的主要功能</span><span class="sxs-lookup"><span data-stu-id="05b8a-102">Key features in the Siebel Adapter</span></span>
 <span data-ttu-id="05b8a-103">本部分列出中的新功能[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="05b8a-103">This section lists the new features in [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span></span>  

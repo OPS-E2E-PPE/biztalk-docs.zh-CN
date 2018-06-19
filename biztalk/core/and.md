@@ -1,14 +1,14 @@
 ---
-title: "和 |Microsoft 文档"
-ms.custom: 
+title: 和 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80bd8f1f-edae-476d-b488-78e6c5ee70bf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230013"
 ---
 # <a name="and"></a><span data-ttu-id="0d3b8-102">And</span><span class="sxs-lookup"><span data-stu-id="0d3b8-102">And</span></span>
 <span data-ttu-id="0d3b8-103">删除前两个项从堆栈中，执行一个布尔值**AND**的两个项，并将然后将推送到堆栈的结果。</span><span class="sxs-lookup"><span data-stu-id="0d3b8-103">Removes the top two items from the stack, performs a Boolean **AND** of the two items, and then pushes the result onto the stack.</span></span>  

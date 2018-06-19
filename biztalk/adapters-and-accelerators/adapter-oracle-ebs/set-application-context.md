@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9697155-70c0-4173-80d2-d02d103c397b
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218597"
 ---
 # <a name="set-application-context"></a><span data-ttu-id="684b7-102">设置应用程序上下文</span><span class="sxs-lookup"><span data-stu-id="684b7-102">Set application context</span></span>
 <span data-ttu-id="684b7-103">在[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]，你可以对其执行操作之前某些 Oracle E-business Suite 项目 （接口表、 界面视图、 并发程序和请求集） 的强制设置应用程序上下文。</span><span class="sxs-lookup"><span data-stu-id="684b7-103">In [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)], setting application context is mandatory for some Oracle E-Business Suite artifacts (interface tables, interface views, concurrent programs, and request sets) before you can perform operations on them.</span></span> <span data-ttu-id="684b7-104">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]不允许你执行这些项目上的操作，直到你安装的应用程序上下文。</span><span class="sxs-lookup"><span data-stu-id="684b7-104">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] does not allow you to perform operations on these artifacts until you have set the application context.</span></span> <span data-ttu-id="684b7-105">但是，对于基础的 Oracle 数据库中的项目，它是由用户是否要设置为应用程序上下文。</span><span class="sxs-lookup"><span data-stu-id="684b7-105">However, for artifacts in the underlying Oracle database, it is up to the user whether they want to set the application context or not.</span></span>  

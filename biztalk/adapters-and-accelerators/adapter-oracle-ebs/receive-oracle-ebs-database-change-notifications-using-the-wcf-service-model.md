@@ -1,14 +1,14 @@
 ---
-title: "接收使用 WCF 服务模型的 Oracle E-business Suite 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收使用 WCF 服务模型的 Oracle E-business Suite 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 362193f5-2586-480f-a62e-1ed5e4ef342c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218341"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-using-the-wcf-service-model"></a><span data-ttu-id="e5e32-102">接收使用 WCF 服务模型的 Oracle E-business Suite 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="e5e32-102">Receive Oracle E-Business Suite database change notifications using the WCF service model</span></span>
 <span data-ttu-id="e5e32-103">本主题演示如何配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle 数据库接收查询通知消息。</span><span class="sxs-lookup"><span data-stu-id="e5e32-103">This topic demonstrates how to configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive query notification messages from an Oracle database.</span></span> <span data-ttu-id="e5e32-104">为了演示通知，考虑一个表，ACCOUNTACTIVITY，与"处理"列。</span><span class="sxs-lookup"><span data-stu-id="e5e32-104">To demonstrate notifications, consider a table, ACCOUNTACTIVITY, with a “Processed” column.</span></span> <span data-ttu-id="e5e32-105">一条新记录插入到此表时，将状态列的值设置为"n"。</span><span class="sxs-lookup"><span data-stu-id="e5e32-105">When a new record is inserted to this table, the value of the Status column is set to “n.”</span></span> <span data-ttu-id="e5e32-106">你可以配置适配器后，以通过使用 SQL 语句，以检索具有为"n"。"处理"列的所有记录的通知注册接收通知</span><span class="sxs-lookup"><span data-stu-id="e5e32-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have “Processed” column as “n.”</span></span> <span data-ttu-id="e5e32-107">你可以通过指定的 SQL 语句来实现**NotificationStatement**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="e5e32-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="e5e32-108">适配器客户端收到通知后，它可以包含执行对 Oracle 数据库的任何后续任务的逻辑。</span><span class="sxs-lookup"><span data-stu-id="e5e32-108">After the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the Oracle database.</span></span> <span data-ttu-id="e5e32-109">在此示例中，为简单起见，适配器客户端列出表中具有"n。"的"处理"列的所有记录</span><span class="sxs-lookup"><span data-stu-id="e5e32-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the “Processed” column as “n.”</span></span>  

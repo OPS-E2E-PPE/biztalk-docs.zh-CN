@@ -1,14 +1,14 @@
 ---
-title: "教程 2： 使用.NET Echo 适配器 |Microsoft 文档"
-ms.custom: 
+title: 教程 2： 使用.NET Echo 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e489c79-51b4-4067-9584-67c67f86aedd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223645"
 ---
 # <a name="tutorial-2-consume-the-echo-adapter-from-net"></a><span data-ttu-id="47ad7-102">教程 2： 使用.NET Echo 适配器</span><span class="sxs-lookup"><span data-stu-id="47ad7-102">Tutorial 2: Consume the Echo Adapter from .NET</span></span>
 <span data-ttu-id="47ad7-103">此部分可为使用通过.NET Echo 适配器公开的入站和出站操作的步骤。</span><span class="sxs-lookup"><span data-stu-id="47ad7-103">This section gives the steps for consuming the inbound and outbound operations exposed by the Echo adapter from .NET.</span></span> <span data-ttu-id="47ad7-104">Echo 适配器为了开发的[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="47ad7-104">The Echo adapter was developed in [Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md).</span></span>  

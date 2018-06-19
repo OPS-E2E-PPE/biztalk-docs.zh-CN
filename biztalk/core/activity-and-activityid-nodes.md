@@ -1,11 +1,11 @@
 ---
-title: "活动和 ActivityID 节点 |Microsoft 文档"
-ms.custom: 
+title: 活动和 ActivityID 节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ActivityID nodes [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, node descriptions
 - activities [BAM], definitions
 ms.assetid: 94d4130a-53c5-4cd5-916a-4a6bd9acbf23
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224669"
 ---
 # <a name="activity-and-activityid-nodes"></a><span data-ttu-id="3231a-102">活动和 ActivityID 节点</span><span class="sxs-lookup"><span data-stu-id="3231a-102">Activity and ActivityID Nodes</span></span>
 <span data-ttu-id="3231a-103">活动节点 和 ActivityID 节点用于包含和标识活动定义。</span><span class="sxs-lookup"><span data-stu-id="3231a-103">Activity and ActivityID nodes are used to contain and identify an activity definition.</span></span> <span data-ttu-id="3231a-104">活动节点是活动定义中项的父文件夹。</span><span class="sxs-lookup"><span data-stu-id="3231a-104">The Activity node is the parent folder for the items in the activity definition.</span></span> <span data-ttu-id="3231a-105">所有数据项和业务事件节点都属于或包含于相关的活动节点中。</span><span class="sxs-lookup"><span data-stu-id="3231a-105">All data items and business event nodes are subordinate to and contained within the associated activity node.</span></span> <span data-ttu-id="3231a-106">活动节点的名称应该反映活动本身的名称。</span><span class="sxs-lookup"><span data-stu-id="3231a-106">The name of the Activity node should reflect the name of the activity itself.</span></span>  

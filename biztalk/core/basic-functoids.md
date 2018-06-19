@@ -1,14 +1,14 @@
 ---
-title: "基本 Functoid |Microsoft 文档"
-ms.custom: 
+title: 基本 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd4b6924-4ad1-4297-a12f-22de11328bab
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230941"
 ---
 # <a name="basic-functoids"></a><span data-ttu-id="48a87-102">基本 Functoid</span><span class="sxs-lookup"><span data-stu-id="48a87-102">Basic Functoids</span></span>
 <span data-ttu-id="48a87-103">不在任何 functoid**高级**类别被视为基本 functoid。</span><span class="sxs-lookup"><span data-stu-id="48a87-103">Any functoid not in the **Advanced** category is considered a basic functoid.</span></span> <span data-ttu-id="48a87-104">基本 functoid 通常易于使用，需要配置的输入参数非常少且往往比较简单。</span><span class="sxs-lookup"><span data-stu-id="48a87-104">Basic functoids are generally easy to use, having few and, often, straightforward input parameters to be configured.</span></span> <span data-ttu-id="48a87-105">本部分提供有关基本 functoid 的概念信息（按类别列出）。</span><span class="sxs-lookup"><span data-stu-id="48a87-105">This section provides conceptual information about the basic functoids, organized by category.</span></span>  

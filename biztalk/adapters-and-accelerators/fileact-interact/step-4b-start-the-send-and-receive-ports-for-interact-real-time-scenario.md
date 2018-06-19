@@ -1,14 +1,14 @@
 ---
-title: "步骤 4B： 开始发送端口和接收端口交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4B： 开始发送端口和接收端口交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dffee9a6-5877-4744-9b46-12ca4f8fa959
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224317"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-interact-real-time-scenario"></a><span data-ttu-id="a24a3-102">步骤 4B： 开始发送端口和接收端口交互实时方案</span><span class="sxs-lookup"><span data-stu-id="a24a3-102">Step 4B: Start the Send Ports and Receive Ports for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="a24a3-103">在开始此步骤之前，必须完成[步骤 4A： 启动 SWIFTNet 服务](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service.md)。</span><span class="sxs-lookup"><span data-stu-id="a24a3-103">Before you begin this step, you must complete [Step 4A: Start the SWIFTNet Service](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service.md).</span></span>  

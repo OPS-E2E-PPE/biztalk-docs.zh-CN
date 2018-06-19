@@ -1,14 +1,14 @@
 ---
-title: "连接到使用适配器服务外接程序使用的 Visual Studio 中的 SQL Server |Microsoft 文档"
-ms.custom: 
+title: 连接到使用适配器服务外接程序使用的 Visual Studio 中的 SQL Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d4fa2bd-ac9e-41b1-8fea-e6a41cbfd1a2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224205"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in"></a><span data-ttu-id="8af99-102">连接到使用适配器服务外接程序使用的 Visual Studio 中的 SQL Server</span><span class="sxs-lookup"><span data-stu-id="8af99-102">Connect to SQL Server in Visual Studio using the Consume Adapter Service Add-in</span></span>
 <span data-ttu-id="8af99-103">[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]安装时安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8af99-103">The [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] is installed when you install [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="8af99-104">[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]加载在计算机上安装的所有 WCF 自定义绑定。</span><span class="sxs-lookup"><span data-stu-id="8af99-104">The [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] loads all the WCF-Custom bindings installed on the computer.</span></span> <span data-ttu-id="8af99-105">若要连接到 SQL Server 使用基于 WCF 的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在 BizTalk 项目，你必须使用**sqlbinding**。</span><span class="sxs-lookup"><span data-stu-id="8af99-105">To connect to SQL Server using the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a BizTalk project, you must use the **sqlbinding**.</span></span>  
@@ -54,7 +55,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |<span data-ttu-id="8af99-127">**无**</span><span class="sxs-lookup"><span data-stu-id="8af99-127">**None**</span></span>|<span data-ttu-id="8af99-128">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="8af99-128">Connect to SQL Server by using Windows authentication.</span></span>|  
     |<span data-ttu-id="8af99-129">**Windows**</span><span class="sxs-lookup"><span data-stu-id="8af99-129">**Windows**</span></span>|<span data-ttu-id="8af99-130">使用 Windows 身份验证连接到 SQL Server。</span><span class="sxs-lookup"><span data-stu-id="8af99-130">Connect to SQL Server by using Windows authentication.</span></span>|  
-    |<span data-ttu-id="8af99-131">**用户名**</span><span class="sxs-lookup"><span data-stu-id="8af99-131">**Username**</span></span>|<span data-ttu-id="8af99-132">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="8af99-132">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="8af99-133">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="8af99-133">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="8af99-134">**注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="8af99-134">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
+    |<span data-ttu-id="8af99-131">**用户名**</span><span class="sxs-lookup"><span data-stu-id="8af99-131">**Username**</span></span>|<span data-ttu-id="8af99-132">通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="8af99-132">Specify the user name and password to connect to SQL Server by specifying credentials for a user defined in SQL Server database.</span></span> <span data-ttu-id="8af99-133">请注意，用户名和密码区分大小写。</span><span class="sxs-lookup"><span data-stu-id="8af99-133">Note that the user name and password are case-sensitive.</span></span> <span data-ttu-id="8af99-134">**注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。</span><span class="sxs-lookup"><span data-stu-id="8af99-134">**Note:**  If you leave the **User name** and **Password** fields as blank, the adapter connects to SQL Server using Windows authentication.</span></span>|  
   
 4.  <span data-ttu-id="8af99-135">单击**URI 属性**选项卡上，然后指定连接参数的值。</span><span class="sxs-lookup"><span data-stu-id="8af99-135">Click the **URI Properties** tab, and then specify values for the connection parameters.</span></span> <span data-ttu-id="8af99-136">有关连接 URI 的详细信息为[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="8af99-136">For more information about the connection URI for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   

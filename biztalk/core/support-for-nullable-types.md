@@ -1,14 +1,14 @@
 ---
-title: "可以为 Null 的类型的支持 |Microsoft 文档"
-ms.custom: 
+title: 可以为 Null 的类型的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a5ea191-09d5-47ab-a197-390fbbcf6306
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278717"
 ---
 # <a name="support-for-nullable-types"></a><span data-ttu-id="63b8e-102">可以为 Null 的类型的支持</span><span class="sxs-lookup"><span data-stu-id="63b8e-102">Support for Nullable Types</span></span>
 <span data-ttu-id="63b8e-103">规则引擎支持业务规则中使用可以为 null 的类型。</span><span class="sxs-lookup"><span data-stu-id="63b8e-103">The rule engine supports using nullable types in a business rule.</span></span> <span data-ttu-id="63b8e-104">你可以使用.NET 类绑定、 XML 绑定和数据库绑定中可以为 null 的类型。</span><span class="sxs-lookup"><span data-stu-id="63b8e-104">You can use nullable types in .NET class bindings, XML bindings, and database bindings.</span></span> <span data-ttu-id="63b8e-105">目前，业务规则编辑器工具不支持业务规则中使用可以为 null 的类型。</span><span class="sxs-lookup"><span data-stu-id="63b8e-105">Currently, the Business Rule Composer tool does not support using nullable types in a business rule.</span></span> <span data-ttu-id="63b8e-106">以编程方式创建规则时，你可以使用可以为 null 的类型。</span><span class="sxs-lookup"><span data-stu-id="63b8e-106">You can use the nullable types when creating rules programmatically.</span></span>  

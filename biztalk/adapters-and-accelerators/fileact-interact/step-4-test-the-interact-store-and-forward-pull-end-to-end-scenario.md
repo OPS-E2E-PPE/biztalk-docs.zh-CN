@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试的交互，存储和转发 （请求） 端到端方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试的交互，存储和转发 （请求） 端到端方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45b6715a-310b-4e7a-952b-4ebcde5e0505
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224909"
 ---
 # <a name="step-4-test-the-interact-store-and-forward-pull-end-to-end-scenario"></a><span data-ttu-id="7bb80-102">步骤 4： 测试的交互，存储和转发 （请求） 端到端方案</span><span class="sxs-lookup"><span data-stu-id="7bb80-102">Step 4: Test the InterAct Store and Forward (Pull) End-to-End Scenario</span></span>
 <span data-ttu-id="7bb80-103">在开始此部分中的步骤之前，必须完成[步骤 3B： 将绑定与交互应用商店应用和向前 （请求） 方案的动态发送端口业务流程](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="7bb80-103">Before you begin the steps in this section, you must complete [Step 3B: Bind the orchestration with dynamic send port for InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-port-for-interact-scenario.md).</span></span>  

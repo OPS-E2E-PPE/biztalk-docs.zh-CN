@@ -1,11 +1,11 @@
 ---
-title: "消息 |Microsoft 文档"
-ms.custom: 
+title: 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - message headers
 - EMS messages
 ms.assetid: 65bb3431-7186-4d4c-b004-932cdf070e73
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266685"
 ---
 # <a name="messages"></a><span data-ttu-id="51c10-102">消息</span><span class="sxs-lookup"><span data-stu-id="51c10-102">Messages</span></span>
 <span data-ttu-id="51c10-103">某个企业消息服务 (EMS) 消息，如 JMS 消息包含三个独立的部分： 标头、 属性和正文。</span><span class="sxs-lookup"><span data-stu-id="51c10-103">An Enterprise Message Service (EMS) message, like a JMS message, contains three separate parts: header, properties, and body.</span></span> <span data-ttu-id="51c10-104">标头是 EMS 消息中唯一必需的部分。</span><span class="sxs-lookup"><span data-stu-id="51c10-104">The header is the only required part of an EMS message.</span></span> <span data-ttu-id="51c10-105">本主题介绍如何在用于在 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器中处理消息。</span><span class="sxs-lookup"><span data-stu-id="51c10-105">This topic describes how messages are treated in Microsoft BizTalk Adapter for TIBCO Enterprise Message Service.</span></span>  

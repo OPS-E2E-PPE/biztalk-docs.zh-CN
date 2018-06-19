@@ -1,14 +1,14 @@
 ---
-title: "接收使用 BizTalk Server Oracle E-business Suite 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收使用 BizTalk Server Oracle E-business Suite 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e92520cf-c552-4225-abba-8e03f73ecf70
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215677"
 ---
 # <a name="receive-oracle-e-business-suite-database-change-notifications-using-biztalk-server"></a><span data-ttu-id="823ff-102">接收使用 BizTalk Server Oracle E-business Suite 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="823ff-102">Receive Oracle E-Business Suite database change notifications using BizTalk Server</span></span>
 <span data-ttu-id="823ff-103">你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle E-business Suite 接收数据库更改通知消息。</span><span class="sxs-lookup"><span data-stu-id="823ff-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive database change notification messages from Oracle E-Business Suite.</span></span> <span data-ttu-id="823ff-104">你可以指定适配器用于 Oracle E-business Suite 通知注册的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="823ff-104">You can specify a SELECT statement that the adapter uses to register for notifications with Oracle E-Business Suite.</span></span> <span data-ttu-id="823ff-105">适配器将结果集中为 SELECT 语句中，为通知注册更改时接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="823ff-105">The adapter receives a notification message when the result set for the SELECT statement, registered for notification, changes.</span></span> <span data-ttu-id="823ff-106">有关如何适配器支持通知的详细信息，请参阅[接收使用 Oracle E-business Suite 适配器数据库更改通知时的注意事项](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="823ff-106">For more information about how the adapter supports notification, see [Considerations for Receiving Database Change Notifications using the Oracle E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/before-you-receive-database-change-notifications-using-the-oracle-ebs-adapter.md).</span></span>  

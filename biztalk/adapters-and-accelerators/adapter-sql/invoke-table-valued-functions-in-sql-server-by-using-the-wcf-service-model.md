@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型调用 SQL Server 中的表值函数 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型调用 SQL Server 中的表值函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48688bcc-36b4-4cc1-b078-17e7a5e1cf8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224693"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a><span data-ttu-id="b83e5-102">使用 WCF 服务模型调用 SQL Server 中的表值函数</span><span class="sxs-lookup"><span data-stu-id="b83e5-102">Invoke Table-Valued Functions in SQL Server by Using the WCF Service Model</span></span>
 <span data-ttu-id="b83e5-103">你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的表值函数。</span><span class="sxs-lookup"><span data-stu-id="b83e5-103">You can use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in a .NET application using the WCF service model to invoke table-valued functions in SQL Server.</span></span> <span data-ttu-id="b83e5-104">适配器将表值函数公开为可以直接在 SQL Server 调用的方法。</span><span class="sxs-lookup"><span data-stu-id="b83e5-104">The adapter exposes the table-valued functions as methods that can be invoked directly on SQL Server.</span></span> <span data-ttu-id="b83e5-105">有关如何适配器支持标量函数的详细信息，请参阅[Execute Table-Valued 函数中使用的 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="b83e5-105">For more information about how the adapter supports scalar functions, see [Execute Table-Valued Functions in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "有关元数据搜索和浏览与 WCF LOB 适配器 SDK 适配器 |Microsoft 文档"
-ms.custom: 
+title: 有关元数据搜索和浏览与 WCF LOB 适配器 SDK 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1dc529ba-86ce-4f83-a4f8-73f5765308e2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22224741"
 ---
 # <a name="about-metadata-search-and-browse-with-your-wcf-lob-adapter-sdk-adapter"></a><span data-ttu-id="14788-102">有关元数据搜索和浏览与 WCF LOB 适配器 SDK 适配器</span><span class="sxs-lookup"><span data-stu-id="14788-102">About metadata search and browse with your WCF LOB Adapter SDK adapter</span></span>
 <span data-ttu-id="14788-103">与使用生成静态服务不同[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，使用生成的适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]可以提供有关类型和业务线系统中可操作的动态信息。</span><span class="sxs-lookup"><span data-stu-id="14788-103">Unlike a static service built using the [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)], adapters built using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] can provide dynamic information about the types and operations available in a line-of-business system.</span></span> <span data-ttu-id="14788-104">开发人员可以支持以下操作：</span><span class="sxs-lookup"><span data-stu-id="14788-104">Developers can support the following operations:</span></span>  

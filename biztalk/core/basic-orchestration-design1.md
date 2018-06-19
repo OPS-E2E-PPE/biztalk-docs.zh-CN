@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230693"
 ---
 # <a name="basic-orchestration-design"></a><span data-ttu-id="6146c-102">基本业务流程设计</span><span class="sxs-lookup"><span data-stu-id="6146c-102">Basic Orchestration Design</span></span>
 <span data-ttu-id="6146c-103">创建基本业务流程时，将在您的业务流程的接收端口接收 XML。</span><span class="sxs-lookup"><span data-stu-id="6146c-103">When you create a basic orchestration, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="6146c-104">将 XML 发送到后端系统以供处理。</span><span class="sxs-lookup"><span data-stu-id="6146c-104">The XML is sent to the back-end system to be processed.</span></span> <span data-ttu-id="6146c-105">在后端系统中，可能会出现停止业务流程并生成错误的异常。</span><span class="sxs-lookup"><span data-stu-id="6146c-105">In the back-end system, an exception could occur that could stop the orchestration and generate a fault.</span></span> <span data-ttu-id="6146c-106">生成的异常提供了业务流程未完成的相关信息。</span><span class="sxs-lookup"><span data-stu-id="6146c-106">The exception that is produced, provides information that the orchestration did not complete.</span></span>  

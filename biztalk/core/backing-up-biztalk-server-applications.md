@@ -1,14 +1,14 @@
 ---
-title: "备份 BizTalk 服务器应用程序 |Microsoft 文档"
-ms.custom: 
+title: 备份 BizTalk 服务器应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b51e3ae6-08ed-48ca-8977-13f46144a5fa
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230373"
 ---
 # <a name="backing-up-biztalk-server-applications"></a><span data-ttu-id="78c74-102">备份 BizTalk Server 应用程序</span><span class="sxs-lookup"><span data-stu-id="78c74-102">Backing Up BizTalk Server Applications</span></span>
 <span data-ttu-id="78c74-103">为确保在硬件故障后可以恢复 BizTalk Server 系统，做好备份至关重要。</span><span class="sxs-lookup"><span data-stu-id="78c74-103">To ensure that you can recover your BizTalk Server system after a hardware failure, it is important to have good backups.</span></span> <span data-ttu-id="78c74-104">作为保留备份的一部分，最好将 BizTalk 应用程序导出到一个远程服务器并加以备份。</span><span class="sxs-lookup"><span data-stu-id="78c74-104">As a part of keeping backups, it is a good idea to export your BizTalk applications to a remote server and to back up these applications.</span></span>  

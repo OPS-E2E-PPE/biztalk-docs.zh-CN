@@ -1,14 +1,14 @@
 ---
-title: "Oracle E-business Suite 适配器支持哪些操作 |Microsoft 文档"
-ms.custom: 
+title: Oracle E-business Suite 适配器支持哪些操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 64cd124a-5e7f-4ee8-85d3-f9540b25d766
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217661"
 ---
 # <a name="what-operations-are-supported-by-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="c8af9-102">Oracle E-business Suite 适配器支持何种操作</span><span class="sxs-lookup"><span data-stu-id="c8af9-102">What operations are supported by the Oracle E-Business Suite adapter</span></span>
 ## <a name="overview"></a><span data-ttu-id="c8af9-103">概述</span><span class="sxs-lookup"><span data-stu-id="c8af9-103">Overview</span></span>

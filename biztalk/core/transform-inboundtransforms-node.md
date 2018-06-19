@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279109"
 ---
 # <a name="transform-inboundtransforms-node"></a><span data-ttu-id="6025c-102">Transform（InboundTransforms 节点）</span><span class="sxs-lookup"><span data-stu-id="6025c-102">Transform (InboundTransforms Node)</span></span>
 <span data-ttu-id="6025c-103">绑定文件的 InboundTransforms 节点的 Transform 节点包含与该绑定文件一起导出的 BizTalk Server 映射有关的信息。</span><span class="sxs-lookup"><span data-stu-id="6025c-103">The Transform node of the InboundTransforms node of a binding file contains specific information about a BizTalk Server map that is exported with the binding file.</span></span>  

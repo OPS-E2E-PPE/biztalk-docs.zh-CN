@@ -1,14 +1,14 @@
 ---
-title: "Oracle 数据库中运行复合操作 |Microsoft 文档"
-ms.custom: 
+title: Oracle 数据库中运行复合操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b877d8e3-2016-40e8-888f-6b768021d6b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215117"
 ---
 # <a name="run-composite-operations-in-oracle-database"></a><span data-ttu-id="a3058-102">Oracle 数据库中运行复合操作</span><span class="sxs-lookup"><span data-stu-id="a3058-102">Run Composite Operations in Oracle Database</span></span>
 <span data-ttu-id="a3058-103">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]允许适配器客户端执行可以包含任意数量的以下操作，并按任何顺序的复合操作：</span><span class="sxs-lookup"><span data-stu-id="a3058-103">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] enables adapter clients to perform composite operations that can include any number of the following operations, and in any order:</span></span>  

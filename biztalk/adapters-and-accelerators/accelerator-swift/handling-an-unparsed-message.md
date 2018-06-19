@@ -1,17 +1,17 @@
 ---
-title: "处理未分析的消息 |Microsoft 文档"
-ms.custom: 
+title: 处理未分析的消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - unparsed messages
 - messages, unparsed messages
 ms.assetid: c6a67ff3-3295-489f-9d5f-fb35b2bf8b19
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209885"
 ---
 # <a name="handling-an-unparsed-message"></a><span data-ttu-id="ebae6-102">处理未分析的消息</span><span class="sxs-lookup"><span data-stu-id="ebae6-102">Handling an Unparsed Message</span></span>
 <span data-ttu-id="ebae6-103">本部分介绍如何处理未分析的消息。</span><span class="sxs-lookup"><span data-stu-id="ebae6-103">This section describes how to handle an unparsed message.</span></span> <span data-ttu-id="ebae6-104">与不同的是未通过验证的消息，不能修复一条消息，[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]无法分析。</span><span class="sxs-lookup"><span data-stu-id="ebae6-104">Unlike messages that fail validation, you cannot repair a message that [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] cannot parse.</span></span> <span data-ttu-id="ebae6-105">消息修复和新提交显示消息和分析错误的性质，并允许你打印消息或将其保存到本地文件。</span><span class="sxs-lookup"><span data-stu-id="ebae6-105">Message Repair and New Submission displays the message and the nature of the parsing error, and enables you to print the message or save it to a local file.</span></span> <span data-ttu-id="ebae6-106">然后，你可以警报将邮件发送给分析失败的特定性质的实体。</span><span class="sxs-lookup"><span data-stu-id="ebae6-106">You can then alert the entity that sent the message to the specific nature of the parsing failure.</span></span>  

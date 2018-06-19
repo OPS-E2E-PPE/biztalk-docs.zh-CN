@@ -1,11 +1,11 @@
 ---
-title: "对表和视图包含 Oracle 数据库中的 LOB 数据的操作 |Microsoft 文档"
-ms.custom: 
+title: 对表和视图包含 Oracle 数据库中的 LOB 数据的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data type
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - BLOB
 - character large object
 ms.assetid: 25afd8c7-8ca3-4855-a231-2bec28c9a5cb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214389"
 ---
 # <a name="operations-on-tables-and-views-that-contain-lob-data-in-oracle-database"></a><span data-ttu-id="677f8-102">对表和视图包含 Oracle 数据库中的 LOB 数据的操作</span><span class="sxs-lookup"><span data-stu-id="677f8-102">Operations on tables and views that contain LOB data in Oracle Database</span></span>
 <span data-ttu-id="677f8-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]提供对 Oracle 大型对象 (LOB) 数据类型的支持：</span><span class="sxs-lookup"><span data-stu-id="677f8-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] provides support for the Oracle large object (LOB) data types:</span></span>  

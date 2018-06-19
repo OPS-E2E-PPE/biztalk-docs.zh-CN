@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试您的 SharePoint 应用程序 1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试您的 SharePoint 应用程序 1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7ded5a5-88d5-40aa-814b-70bc0a7dcfa3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216629"
 ---
 # <a name="step-4-test-your-sharepoint-application"></a><span data-ttu-id="4dcda-102">步骤 4： 测试 SharePoint 应用程序</span><span class="sxs-lookup"><span data-stu-id="4dcda-102">Step 4: Test Your SharePoint Application</span></span>
 <span data-ttu-id="4dcda-103">![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span><span class="sxs-lookup"><span data-stu-id="4dcda-103">![Step 4 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")</span></span>  
   
  <span data-ttu-id="4dcda-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="4dcda-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="4dcda-105">**目标：**后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 SAP 系统中检索一些数据来测试应用程序。</span><span class="sxs-lookup"><span data-stu-id="4dcda-105">**Objective:** After you have added Web Parts in the SharePoint site and created an application, you must test the application by retrieving some data from the SAP system.</span></span> <span data-ttu-id="4dcda-106">本主题将说明了如何使用应用程序从 SAP 系统检索数据。</span><span class="sxs-lookup"><span data-stu-id="4dcda-106">This topic provides instructions on how to use the application to retrieve the data from the SAP system.</span></span>  
+ <span data-ttu-id="4dcda-105">**目标：** 后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 SAP 系统中检索一些数据来测试应用程序。</span><span class="sxs-lookup"><span data-stu-id="4dcda-105">**Objective:** After you have added Web Parts in the SharePoint site and created an application, you must test the application by retrieving some data from the SAP system.</span></span> <span data-ttu-id="4dcda-106">本主题将说明了如何使用应用程序从 SAP 系统检索数据。</span><span class="sxs-lookup"><span data-stu-id="4dcda-106">This topic provides instructions on how to use the application to retrieve the data from the SAP system.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="4dcda-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4dcda-107">Prerequisites</span></span>  
   

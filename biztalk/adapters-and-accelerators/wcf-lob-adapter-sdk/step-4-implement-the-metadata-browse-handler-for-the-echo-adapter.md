@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d31fc6c1-e4b5-4529-ba3e-2a8cfb8ece1c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226981"
 ---
 # <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a><span data-ttu-id="c4ec1-102">步骤 4： 为 Echo 适配器实现元数据浏览的处理程序</span><span class="sxs-lookup"><span data-stu-id="c4ec1-102">Step 4: Implement the Metadata Browse Handler for the Echo Adapter</span></span>
 <span data-ttu-id="c4ec1-103">![9 的第 4 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span><span class="sxs-lookup"><span data-stu-id="c4ec1-103">![Step 4 of 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")</span></span>  
@@ -55,7 +56,7 @@ public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable
   
 |<span data-ttu-id="c4ec1-119">**参数**</span><span class="sxs-lookup"><span data-stu-id="c4ec1-119">**Parameter**</span></span>|<span data-ttu-id="c4ec1-120">**定义**</span><span class="sxs-lookup"><span data-stu-id="c4ec1-120">**Definition**</span></span>|  
 |-------------------|--------------------|  
-|<span data-ttu-id="c4ec1-121">nodeId</span><span class="sxs-lookup"><span data-stu-id="c4ec1-121">nodeId</span></span>|<span data-ttu-id="c4ec1-122">层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和</span><span class="sxs-lookup"><span data-stu-id="c4ec1-122">Each item in the hierarchy of the metadata explorer (the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and</span></span><br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]<span data-ttu-id="c4ec1-123">) 具有 nodeId。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-123">) has a nodeId.</span></span> <span data-ttu-id="c4ec1-124">每个节点 ID 必须唯一，并且可以是一个类别或运算。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-124">Each node ID must be unique and can be a category or an operation.</span></span> <span data-ttu-id="c4ec1-125">类别具有子类别。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-125">The category can have subcategories.</span></span> <span data-ttu-id="c4ec1-126">**注意：**如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-126">**Note:**  If null or an empty string (""), operations are retrieved from the root node ("/") by default.</span></span>|  
+|<span data-ttu-id="c4ec1-121">nodeId</span><span class="sxs-lookup"><span data-stu-id="c4ec1-121">nodeId</span></span>|<span data-ttu-id="c4ec1-122">层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和</span><span class="sxs-lookup"><span data-stu-id="c4ec1-122">Each item in the hierarchy of the metadata explorer (the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and</span></span><br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]<span data-ttu-id="c4ec1-123">) 具有 nodeId。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-123">) has a nodeId.</span></span> <span data-ttu-id="c4ec1-124">每个节点 ID 必须唯一，并且可以是一个类别或运算。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-124">Each node ID must be unique and can be a category or an operation.</span></span> <span data-ttu-id="c4ec1-125">类别具有子类别。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-125">The category can have subcategories.</span></span> <span data-ttu-id="c4ec1-126">**注意：** 如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-126">**Note:**  If null or an empty string (""), operations are retrieved from the root node ("/") by default.</span></span>|  
 |<span data-ttu-id="c4ec1-127">childStartIndex</span><span class="sxs-lookup"><span data-stu-id="c4ec1-127">childStartIndex</span></span>|<span data-ttu-id="c4ec1-128">若要返回的第一个子级的索引。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-128">The index of the first child to return.</span></span><br /><br /> <span data-ttu-id="c4ec1-129">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-129">Not supported by the Echo adapter.</span></span>|  
 |<span data-ttu-id="c4ec1-130">maxChildNodes</span><span class="sxs-lookup"><span data-stu-id="c4ec1-130">maxChildNodes</span></span>|<span data-ttu-id="c4ec1-131">要返回的结果节点最大数量。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-131">The maximum number of result nodes to return.</span></span> <span data-ttu-id="c4ec1-132">使用 Int32.Max 检索结果的所有节点。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-132">Use Int32.Max to retrieve all result nodes.</span></span><br /><br /> <span data-ttu-id="c4ec1-133">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-133">Not supported by the Echo adapter.</span></span>|  
 |<span data-ttu-id="c4ec1-134">timeout</span><span class="sxs-lookup"><span data-stu-id="c4ec1-134">timeout</span></span>|<span data-ttu-id="c4ec1-135">允许此操作完成的最大时间。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-135">The maximum time allowed for the operation to complete.</span></span><br /><br /> <span data-ttu-id="c4ec1-136">不支持 Echo 适配器。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-136">Not supported by the Echo adapter.</span></span>|  
@@ -113,13 +114,13 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
- <span data-ttu-id="c4ec1-151">浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）**选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-151">To browse the three outbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Client (Outbound operations)** option.</span></span> <span data-ttu-id="c4ec1-152">请参阅中的这些操作**可用类别和操作**列表框中，如下所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-152">You see those operations in the **Available categories and operations** list box, as shown below:</span></span>  
+ <span data-ttu-id="c4ec1-151">浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-151">To browse the three outbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Client (Outbound operations)** option.</span></span> <span data-ttu-id="c4ec1-152">请参阅中的这些操作**可用类别和操作**列表框中，如下所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-152">You see those operations in the **Available categories and operations** list box, as shown below:</span></span>  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
   
  <span data-ttu-id="c4ec1-153">在上图中，注意`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`值出现在**名称**列**可用类别和操作**列表框。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-153">In the previous figure, notice that the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A` value appears in the **Name** column of the **Available categories and operations** list box.</span></span> <span data-ttu-id="c4ec1-154">参数传递到`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`构造函数将出现在**节点 ID**列**可用类别和操作**列表框中，与`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`值会显示为工具提示包含说明中，右键单击时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-154">The parameter passed into the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` constructor appears in the **Node ID** column of the **Available categories and operations** list box, and the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A` value appears as the tool tip that contains the description, when you right-click the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`.</span></span>  
   
- <span data-ttu-id="c4ec1-155">若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）**选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-155">To see the inbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Service (Inbound operations)** option.</span></span> <span data-ttu-id="c4ec1-156">请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-156">You see the inbound OnReceiveEcho operation in the **Available categories and operations** list box, as shown in the following figure:</span></span>  
+ <span data-ttu-id="c4ec1-155">若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）** 选项。</span><span class="sxs-lookup"><span data-stu-id="c4ec1-155">To see the inbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Service (Inbound operations)** option.</span></span> <span data-ttu-id="c4ec1-156">请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：</span><span class="sxs-lookup"><span data-stu-id="c4ec1-156">You see the inbound OnReceiveEcho operation in the **Available categories and operations** list box, as shown in the following figure:</span></span>  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
   

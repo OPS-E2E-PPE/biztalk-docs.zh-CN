@@ -1,11 +1,11 @@
 ---
-title: "BTAHL72XML 处理 |Microsoft 文档"
-ms.custom: 
+title: BTAHL72XML 处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.XML messages, processing
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - 2.XML messages, acknowledgements
 - 2.XML messages, validating
 ms.assetid: 2f12cb44-816c-4773-9db0-9cbc3d1b1aee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204677"
 ---
 # <a name="btahl72xml-processing"></a><span data-ttu-id="171e5-102">BTAHL72XML 处理</span><span class="sxs-lookup"><span data-stu-id="171e5-102">BTAHL72XML Processing</span></span>
 <span data-ttu-id="171e5-103">中的以下组件[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理 HL7 2.XML （XML 编码） 消息：</span><span class="sxs-lookup"><span data-stu-id="171e5-103">The following components in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) process HL7 2.XML (XML-encoded) messages:</span></span>  

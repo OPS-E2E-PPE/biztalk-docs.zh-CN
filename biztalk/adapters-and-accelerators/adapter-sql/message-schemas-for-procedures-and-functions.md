@@ -1,14 +1,14 @@
 ---
-title: "有关过程和函数消息架构 |Microsoft 文档"
-ms.custom: 
+title: 有关过程和函数消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4acfb29e-8774-4eb7-ba10-2dcb93d2b41a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223349"
 ---
 # <a name="message-schemas-for-procedures-and-functions"></a><span data-ttu-id="b9b14-102">有关过程和函数的消息架构</span><span class="sxs-lookup"><span data-stu-id="b9b14-102">Message Schemas for Procedures and Functions</span></span>
 <span data-ttu-id="b9b14-103">[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]曲面 SQL Server 数据库存储的过程和标量和表值的函数作为操作。</span><span class="sxs-lookup"><span data-stu-id="b9b14-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server database stored procedures and scalar and table valued functions as operations.</span></span> <span data-ttu-id="b9b14-104">本部分介绍的消息结构和操作用于调用过程和函数。</span><span class="sxs-lookup"><span data-stu-id="b9b14-104">This section describes the message structure and actions used to invoke procedures and functions.</span></span>  

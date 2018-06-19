@@ -1,14 +1,14 @@
 ---
-title: "适配器设计时配置 |Microsoft 文档"
-ms.custom: 
+title: 适配器设计时配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5e7b63c-6e17-4c54-9bbf-6964668a2420
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226165"
 ---
 # <a name="adapter-design-time-configuration"></a><span data-ttu-id="95463-102">适配器设计时配置</span><span class="sxs-lookup"><span data-stu-id="95463-102">Adapter Design-Time Configuration</span></span>
 <span data-ttu-id="95463-103">适配器包含一个运行时组件和一个设计时组件。</span><span class="sxs-lookup"><span data-stu-id="95463-103">An adapter contains both a run-time and a design-time component.</span></span> <span data-ttu-id="95463-104">运行时组件对于用户是不可见的。</span><span class="sxs-lookup"><span data-stu-id="95463-104">The run-time component is not visible to a user.</span></span> <span data-ttu-id="95463-105">它以透明方式负责进行传输、 回执和处理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息。</span><span class="sxs-lookup"><span data-stu-id="95463-105">It is transparently responsible for the transmission, receipt, and processing of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] messages.</span></span>  

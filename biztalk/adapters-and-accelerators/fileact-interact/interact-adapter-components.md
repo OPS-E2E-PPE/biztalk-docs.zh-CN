@@ -1,14 +1,14 @@
 ---
-title: "交互适配器组件 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aad60b57-4cc8-44b9-98f5-e5a2ba3a41e2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224685"
 ---
 # <a name="interact-adapter-components"></a><span data-ttu-id="e83f6-102">交互适配器组件</span><span class="sxs-lookup"><span data-stu-id="e83f6-102">InterAct Adapter Components</span></span>
 <span data-ttu-id="e83f6-103">交互适配器具有客户端和服务器组件。</span><span class="sxs-lookup"><span data-stu-id="e83f6-103">The InterAct adapter has a client and a server component.</span></span> <span data-ttu-id="e83f6-104">请注意，可能会出现在同一台计算机作为 SWIFT 联盟网关 （压降） 上的 A4SWIFT （最小） 安装是否它正在运行 Windows Server。</span><span class="sxs-lookup"><span data-stu-id="e83f6-104">Note that there may be an A4SWIFT (minimal) installation on the same computer as the SWIFT Alliance Gateway (SAG) if it is running Windows Server.</span></span> <span data-ttu-id="e83f6-105">另请注意，SWIFTNet 链接 (SNL) 可能压降从一台计算机上。</span><span class="sxs-lookup"><span data-stu-id="e83f6-105">Also note that the SWIFTNet Link (SNL) may be on a separate computer from the SAG.</span></span> <span data-ttu-id="e83f6-106">远程的应用程序编程接口 (API) 主机适配器 SWIFT 提供用于从 A4SWIFT 到压降，而不考虑组件位置的通信。</span><span class="sxs-lookup"><span data-stu-id="e83f6-106">The remote application programming interface (API) host adapter provided by SWIFT is used to communicate from A4SWIFT to the SAG, regardless of the location of the components.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e05e4d20-4cf2-402f-aaea-66987cb6515a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225885"
 ---
 # <a name="step-3d-add-a-file-send-port-to-capture-the-swhandleresponse-message-for-the-interact-real-time-scenario"></a><span data-ttu-id="d72e6-102">步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案</span><span class="sxs-lookup"><span data-stu-id="d72e6-102">Step 3D: Add a FILE Send Port to Capture the Sw:HandleResponse Message for the InterAct Real-Time Scenario</span></span>
 <span data-ttu-id="d72e6-103">完成[步骤 3c： 将文件发送端口交互实时方案捕获 Sw:HandleRequest 消息添加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)在开始此步骤之前。</span><span class="sxs-lookup"><span data-stu-id="d72e6-103">Complete [Step 3C: Add a FILE Send Port to Capture the Sw:HandleRequest Message for the InterAct Real-Time Scenario](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md) before you begin this step.</span></span>

@@ -1,17 +1,17 @@
 ---
-title: "对 Siebel 中的业务服务的操作 |Microsoft 文档"
-ms.custom: 
+title: 对 Siebel 中的业务服务的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations, on business services
 - business services, operations on
 ms.assetid: 29a1a88c-8c7b-46f1-8faf-49ddd32ba2f0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221941"
 ---
 # <a name="operations-on-business-services-in-siebel"></a><span data-ttu-id="eb7fc-102">对 Siebel 中的业务服务的操作</span><span class="sxs-lookup"><span data-stu-id="eb7fc-102">Operations on Business Services in Siebel</span></span>
 <span data-ttu-id="eb7fc-103">Siebel 业务服务是可以在 Siebel 中直接调用的业务方法的集合。</span><span class="sxs-lookup"><span data-stu-id="eb7fc-103">A Siebel business service is a collection of business methods that can be directly invoked in Siebel.</span></span> <span data-ttu-id="eb7fc-104">业务组件和业务对象关联到特定的数据和 Siebel 中的表，而业务服务调用的对象执行特定任务。</span><span class="sxs-lookup"><span data-stu-id="eb7fc-104">Whereas business components and business objects are associated to specific data and tables in Siebel, business services invoke the objects to perform specific tasks.</span></span>  

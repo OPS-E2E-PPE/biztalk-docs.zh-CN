@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204813"
 ---
 # <a name="end-to-end-tutorial"></a><span data-ttu-id="c1bd0-102">端到端教程</span><span class="sxs-lookup"><span data-stu-id="c1bd0-102">End-to-End Tutorial</span></span>
 <span data-ttu-id="c1bd0-103">本教程包含的详细的步骤，描述如何使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]为了便于在订阅服务器和发布服务器方案中的业务流程。</span><span class="sxs-lookup"><span data-stu-id="c1bd0-103">This tutorial contains detailed steps that describe how you use [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] to facilitate business processes in a subscriber and publisher scenario.</span></span>  

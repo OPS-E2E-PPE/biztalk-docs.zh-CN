@@ -1,14 +1,14 @@
 ---
-title: "步骤 4A： 交互应用商店应用和向前情况下启动 SWIFTNet 服务 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4A： 交互应用商店应用和向前情况下启动 SWIFTNet 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc7f28c6-19b6-4ca5-af2a-26f738538f3d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224125"
 ---
 # <a name="step-4a-start-the-swiftnet-service-for-the-interact-store-and-forward-scenario"></a><span data-ttu-id="38894-102">步骤 4A： 启动 SWIFTNet 服务交互，应用商店应用和转发方案</span><span class="sxs-lookup"><span data-stu-id="38894-102">Step 4A: Start the SWIFTNet Service for the InterAct Store and Forward Scenario</span></span>
 <span data-ttu-id="38894-103">在开始此步骤之前，必须完成[步骤 3D： 添加交互应用商店应用和转发方案交互发送端口](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="38894-103">Before you begin this step, you must complete [Step 3D: Add an INTERACT Send Port for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md).</span></span>  

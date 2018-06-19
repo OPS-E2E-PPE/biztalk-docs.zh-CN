@@ -1,17 +1,17 @@
 ---
-title: "在带有 Siebel 业务组件上运行 SELECT 查询 |Microsoft 文档"
-ms.custom: 
+title: 在带有 Siebel 业务组件上运行 SELECT 查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performing operations, selecting data using ADO.NET provider
 - how to, select data in business components using ADO.NET provider
 ms.assetid: 34a22c2e-6fc9-4760-90a1-131a38ae947b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221957"
 ---
 # <a name="run-a-select-query-on-business-components-with-siebel"></a><span data-ttu-id="95ba6-102">在带有 Siebel 业务组件上运行 SELECT 查询</span><span class="sxs-lookup"><span data-stu-id="95ba6-102">Run a SELECT Query on Business Components with Siebel</span></span>
 <span data-ttu-id="95ba6-103">本部分演示如何从使用 Siebel 业务组件中选择数据[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="95ba6-103">This section demonstrates how to select data from a Siebel business component using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].</span></span>  

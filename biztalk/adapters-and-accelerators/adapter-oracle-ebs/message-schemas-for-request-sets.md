@@ -1,14 +1,14 @@
 ---
-title: "请求集的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 请求集的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bba9677d-ee94-4da5-8611-b1e47f2f3798
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217093"
 ---
 # <a name="message-schemas-for-request-sets"></a><span data-ttu-id="afd13-102">请求集的消息架构</span><span class="sxs-lookup"><span data-stu-id="afd13-102">Message Schemas for Request Sets</span></span>
 <span data-ttu-id="afd13-103">在 Oracle E-business Suite 中的 Oracle 应用程序中设置每个请求显示作为中的操作[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="afd13-103">Each request set in an Oracle application in Oracle E-Business Suite is surfaced as an operation in [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].</span></span>  

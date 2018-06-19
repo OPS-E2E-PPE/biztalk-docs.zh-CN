@@ -1,17 +1,17 @@
 ---
-title: "实时聚合 |Microsoft 文档"
-ms.custom: 
+title: 实时聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, aggregations
 - aggregations [BAM], real-time data
 ms.assetid: 0ef44641-e067-4108-b318-f4373ca8fa8f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269077"
 ---
 # <a name="real-time-aggregations"></a><span data-ttu-id="9b4cf-102">实时聚合</span><span class="sxs-lookup"><span data-stu-id="9b4cf-102">Real-Time Aggregations</span></span>
 <span data-ttu-id="9b4cf-103">在某些情况下，多维聚合的特定切片对时间非常敏感，需要它们实时可用。</span><span class="sxs-lookup"><span data-stu-id="9b4cf-103">In some cases, specific slices of the multidimensional aggregations are so time-sensitive that you want them to be available in real time.</span></span> <span data-ttu-id="9b4cf-104">例如，您的企业出售的是容易腐烂的产品，因而您希望各个交货阶段的产品数量的聚合实时可用。</span><span class="sxs-lookup"><span data-stu-id="9b4cf-104">For example, your business is selling perishable products and you want the aggregation of product quantity in different stages of delivery to be available in real time.</span></span> <span data-ttu-id="9b4cf-105">同时，您还需要在月底获得其他聚合，如典型客户的年龄，以便进行商业智能分析。</span><span class="sxs-lookup"><span data-stu-id="9b4cf-105">At the same time, you want other aggregations such as the age of your typical customers, but only at the end of the month for business intelligence analysis.</span></span>  

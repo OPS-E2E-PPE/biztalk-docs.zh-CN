@@ -1,14 +1,14 @@
 ---
-title: "用于对邮件签名的证书已被吊销 |Microsoft 文档"
-ms.custom: 
+title: 用于对邮件签名的证书已被吊销 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f822235a-8ad8-4b63-94de-9b7f9361a071
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278229"
 ---
 # <a name="the-certificate-used-for-signing-a-message-has-been-revoked"></a><span data-ttu-id="415a1-102">用于对消息进行签名的证书已经被吊销</span><span class="sxs-lookup"><span data-stu-id="415a1-102">The certificate used for signing a message has been revoked</span></span>
 ## <a name="details"></a><span data-ttu-id="415a1-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="415a1-103">Details</span></span>  

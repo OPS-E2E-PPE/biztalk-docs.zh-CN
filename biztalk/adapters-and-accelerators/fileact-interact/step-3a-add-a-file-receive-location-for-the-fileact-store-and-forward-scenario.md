@@ -1,14 +1,14 @@
 ---
-title: "步骤 3A： 添加一个文件接收位置 FileAct 应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3A： 添加一个文件接收位置 FileAct 应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67ecbf4a-a2b4-4534-8ca1-3bfbb6a697bf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224045"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario"></a><span data-ttu-id="204df-102">步骤 3A： 添加一个文件接收位置 FileAct 应用商店应用和转发方案</span><span class="sxs-lookup"><span data-stu-id="204df-102">Step 3A: Add a FILE Receive Location for the FileAct Store and Forward Scenario</span></span>
 <span data-ttu-id="204df-103">在开始此步骤之前，必须完成[步骤 2： 将 SWIFTNet 配置添加到 FileAct 应用商店应用和转发方案 Paramfile](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-store-and-forward.md)。</span><span class="sxs-lookup"><span data-stu-id="204df-103">Before you begin this step, you must complete [Step 2: Add SWIFTNet Configuration to the Paramfile for the FileAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-store-and-forward.md).</span></span>  

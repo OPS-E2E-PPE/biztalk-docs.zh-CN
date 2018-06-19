@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 521d58e4-73b1-48a8-9a0a-9e733386c1b5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218573"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-service-model"></a><span data-ttu-id="add7a-102">使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="add7a-102">Poll Oracle E-Business Suite using SELECT statement with the WCF service model</span></span>
 <span data-ttu-id="add7a-103">你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要通过使用 SELECT 语句持续轮询接口表接收定期的数据更改消息，接口视图、 表和 Oracle E-business Suite 中的视图。</span><span class="sxs-lookup"><span data-stu-id="add7a-103">You can configure the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to receive periodic data-change messages by using a SELECT statement to continuously poll the interface tables, interface views, tables and views in Oracle E-Business Suite.</span></span> <span data-ttu-id="add7a-104">你可以指定为适配器执行定期轮询 Oracle E-business Suite 的轮询语句的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="add7a-104">You can specify a SELECT statement as a polling statement that the adapter executes periodically to poll Oracle E-Business Suite.</span></span> <span data-ttu-id="add7a-105">你还可以指定后轮询 PL/SQL 代码块适配器执行执行轮询语句后。</span><span class="sxs-lookup"><span data-stu-id="add7a-105">You can also specify a post-poll PL/SQL code block that the adapter executes after the polling statement is executed.</span></span>  

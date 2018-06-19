@@ -1,14 +1,14 @@
 ---
-title: "步骤 2A： 添加文件接收交互应用商店应用和进 （请求） 方案的位置 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2A： 添加文件接收交互应用商店应用和进 （请求） 方案的位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acdc30e1-d80c-40bf-864d-bf136c77a2b8
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225269"
 ---
 # <a name="step-2a-add-file-receive-locations-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="1a9a7-102">步骤 2A： 添加文件接收交互应用商店应用和进 （请求） 方案的位置</span><span class="sxs-lookup"><span data-stu-id="1a9a7-102">Step 2A: Add FILE Receive Locations for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="1a9a7-103">在开始此步骤之前，必须完成[步骤 2： 将 SWIFTNet 配置添加到交互应用商店应用和转发方案 Paramfile](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)。</span><span class="sxs-lookup"><span data-stu-id="1a9a7-103">Before you begin this step, you must complete [Step 2: Add SWIFTNet Configuration to the Paramfile for the InterAct Store and Forward Scenario](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md).</span></span>  

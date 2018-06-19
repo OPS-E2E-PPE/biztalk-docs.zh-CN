@@ -1,14 +1,14 @@
 ---
-title: "步骤 4B： 开始发送端口和接收端口交互应用商店应用和进 （请求） 方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4B： 开始发送端口和接收端口交互应用商店应用和进 （请求） 方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00ab119d-ed44-4f4a-84ea-20f2c41e5a92
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223637"
 ---
 # <a name="step-4b-start-the-send-ports-and-receive-ports-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="e9973-102">步骤 4B： 开始发送端口和接收交互应用商店应用和进 （请求） 方案的端口</span><span class="sxs-lookup"><span data-stu-id="e9973-102">Step 4B: Start the Send Ports and Receive Ports for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="e9973-103">在开始此步骤之前，必须完成[步骤 4： 测试的交互，存储和转发的端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="e9973-103">Before you begin this step, you must complete[Step 4: Test the InterAct Store and Forward End-to-End Scenario](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md).</span></span>  

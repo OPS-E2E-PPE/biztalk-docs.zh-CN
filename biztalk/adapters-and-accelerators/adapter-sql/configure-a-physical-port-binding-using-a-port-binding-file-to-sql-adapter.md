@@ -1,14 +1,14 @@
 ---
-title: "配置使用的端口绑定文件以使用 SQL 适配器的物理端口绑定 |Microsoft 文档"
-ms.custom: 
+title: 配置使用的端口绑定文件以使用 SQL 适配器的物理端口绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95b54357-b23d-4ed7-8e31-bd60ed3e625f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225453"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-use-the-sql-adapter"></a><span data-ttu-id="1da29-102">配置使用的端口绑定文件以使用 SQL 适配器的物理端口绑定</span><span class="sxs-lookup"><span data-stu-id="1da29-102">Configure a physical port binding using a port binding file to use the SQL adapter</span></span>
 <span data-ttu-id="1da29-103">当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]生成一个 SQL Server 项目，以外的架构文件，元数据[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会生成端口绑定文件。</span><span class="sxs-lookup"><span data-stu-id="1da29-103">When you use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate metadata for a SQL Server artifact, other than the schema files, the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] also generates a port binding file.</span></span> <span data-ttu-id="1da29-104">你可以将此绑定文件导入你的 BizTalk 应用程序创建物理发送或接收端口。</span><span class="sxs-lookup"><span data-stu-id="1da29-104">You can import this binding file into your BizTalk application to create a physical send or receive port.</span></span> <span data-ttu-id="1da29-105">有关导入绑定文件的说明，请参阅[重用适配器绑定](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)。</span><span class="sxs-lookup"><span data-stu-id="1da29-105">For instructions on importing binding files, see [Reuse adapter bindings](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).</span></span> <span data-ttu-id="1da29-106">如果你导入此绑定文件，你无需手动创建物理发送或接收端口。</span><span class="sxs-lookup"><span data-stu-id="1da29-106">If you import this binding file, you do not have to manually create a physical send or receive port.</span></span>  

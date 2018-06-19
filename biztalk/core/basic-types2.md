@@ -1,18 +1,18 @@
 ---
-title: "基本 Types2 |Microsoft 文档"
-ms.custom: 
+title: 基本 Types2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards EnterpriseOne adapters, data types
 - adapters [JD Edwards EnterpriseOne adapters], data types
 - data types, JD Edwards EnterpriseOne adapters
 ms.assetid: 96a70f0d-f7f8-4e3b-9511-59b330910ead
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230917"
 ---
 # <a name="basic-types"></a><span data-ttu-id="36c00-102">基本类型</span><span class="sxs-lookup"><span data-stu-id="36c00-102">Basic Types</span></span>
 <span data-ttu-id="36c00-103">用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器仅提供了对 JD Edwards EnterpriseOne 业务功能的访问。</span><span class="sxs-lookup"><span data-stu-id="36c00-103">Microsoft BizTalk Adapter for JD Edwards EnterpriseOne provides access only to JD Edwards EnterpriseOne business functions.</span></span> <span data-ttu-id="36c00-104">业务功能元数据使用业务功能接口读取，用于查找业务功能列表和相关联的数据结构。</span><span class="sxs-lookup"><span data-stu-id="36c00-104">Business function metadata is read using a business function interface and used to find a list of business functions and associated data structures.</span></span> <span data-ttu-id="36c00-105">对于所有业务功能方法，元数据都是强类型数据。</span><span class="sxs-lookup"><span data-stu-id="36c00-105">Metadata is strongly typed in all cases for all business function methods.</span></span>  

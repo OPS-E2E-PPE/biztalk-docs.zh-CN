@@ -1,14 +1,14 @@
 ---
-title: "从以前版本的 BizTalk Server 架构迁移 |Microsoft 文档"
-ms.custom: 
+title: 从以前版本的 BizTalk Server 架构迁移 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdc86401-2002-40b8-a919-2c00cf42b557
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269621"
 ---
 # <a name="schema-migration-from-previous-versions-of-biztalk-server"></a><span data-ttu-id="c4f8c-102">从早期版本的 BizTalk Server 迁移架构</span><span class="sxs-lookup"><span data-stu-id="c4f8c-102">Schema Migration from Previous Versions of BizTalk Server</span></span>
 <span data-ttu-id="c4f8c-103">此版本的 BizTalk Server 使用 XML 架构定义 (XSD) 语言来表示消息架构，而早期版本则使用精简 XML 数据 (XDR) 语法来表示消息架构。</span><span class="sxs-lookup"><span data-stu-id="c4f8c-103">This version of BizTalk Server uses XML Schema definition (XSD) language to represent message schemas, while previous versions used the XML-Data Reduced (XDR) syntax to represent message schemas.</span></span> <span data-ttu-id="c4f8c-104">若要从早期版本的 BizTalk Server 进行迁移，则必须将架构转换为使用 XSD，而不是使用 XDR。</span><span class="sxs-lookup"><span data-stu-id="c4f8c-104">If you are migrating from a previous version of BizTalk Server, you must convert your schemas to use XSD rather than XDR.</span></span>  

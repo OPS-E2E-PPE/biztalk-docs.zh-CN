@@ -1,18 +1,18 @@
 ---
-title: "要开始使用 Oracle 数据库适配器 |Microsoft 文档"
-ms.custom: 
+title: 要开始使用 Oracle 数据库适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, about
 - data adapter
 - LOB adapter
 ms.assetid: ed5b3510-11c4-4b10-bf85-c4066f3f80df
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214437"
 ---
 # <a name="get-started-with-the-oracle-database-adapter"></a><span data-ttu-id="70a19-102">要开始使用 Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="70a19-102">Get started with the Oracle Database adapter</span></span>
 <span data-ttu-id="70a19-103">本部分提供的适配器、 先决条件和主题概述的用户的不熟悉 Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="70a19-103">This section provides an overview of the adapter, prerequisites, and topics for users who are new to Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="70a19-104">它讨论的功能[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]和可以在使用该适配器的 Oracle 数据库执行不同操作。</span><span class="sxs-lookup"><span data-stu-id="70a19-104">It discusses the features of [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] and the different operations that can be performed on the Oracle database using the adapter.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "在 Siebel 的业务组件上的操作 |Microsoft 文档"
-ms.custom: 
+title: 在 Siebel 的业务组件上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business components, operations on
 - operations, on business components
 - operations, on business components with picklist fields
 ms.assetid: 5430a8bd-88eb-4851-92e3-676ca83780c9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223613"
 ---
 # <a name="operations-on-business-components-in-siebel"></a><span data-ttu-id="ad851-102">在 Siebel 的业务组件上的操作</span><span class="sxs-lookup"><span data-stu-id="ad851-102">Operations on Business Components in Siebel</span></span>
 <span data-ttu-id="ad851-103">Siebel 在业务组件是将一个或多个数据库表中的列到单个结构相关联的逻辑实体。</span><span class="sxs-lookup"><span data-stu-id="ad851-103">A Siebel business component is a logical entity that associates columns from one or more database tables into a single structure.</span></span> <span data-ttu-id="ad851-104">适配器客户端可以使用该适配器执行对 Siebel 业务组件执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="ad851-104">Adapter clients can perform the following operations on the Siebel business components by using the adapter:</span></span>  

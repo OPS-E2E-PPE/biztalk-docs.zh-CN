@@ -1,11 +1,11 @@
 ---
-title: "关键 SAP 适配器中的功能 |Microsoft 文档"
-ms.custom: 
+title: 关键 SAP 适配器中的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, deprecated features
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - features, operations-related
 - RFC server
 ms.assetid: 30e3140c-447f-42ba-a3b0-13ae66e78b0c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218381"
 ---
 # <a name="key-features-in-the-sap-adapter"></a><span data-ttu-id="6366b-102">SAP 适配器中的主要功能</span><span class="sxs-lookup"><span data-stu-id="6366b-102">Key features in the SAP Adapter</span></span>
 <span data-ttu-id="6366b-103">本部分列出中的新的和已弃用功能[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="6366b-103">This section lists the new and deprecated features in [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)].</span></span>  

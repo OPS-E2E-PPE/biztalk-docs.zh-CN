@@ -1,11 +1,11 @@
 ---
-title: "教程 1： 从 SharePoint 站点上的 SAP 系统提供数据 |Microsoft 文档"
-ms.custom: 
+title: 教程 1： 从 SharePoint 站点上的 SAP 系统提供数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MOSS, creating an application in
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MOSS
 - Microsoft Office SharePoint Server, creating an application in
 ms.assetid: 6e31c365-446c-4fe1-8538-fa6c869eed63
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217421"
 ---
 # <a name="tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site"></a><span data-ttu-id="9f12a-102">教程 1： 从 SharePoint 站点上的 SAP 系统提供数据</span><span class="sxs-lookup"><span data-stu-id="9f12a-102">Tutorial 1: Presenting Data from an SAP System on a SharePoint Site</span></span>
 <span data-ttu-id="9f12a-103">本教程提供了详细的说明[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 Microsoft Office SharePoint Server，在 SharePoint 门户网站上显示从 SAP 系统的业务数据。</span><span class="sxs-lookup"><span data-stu-id="9f12a-103">This tutorial provides detailed instructions on using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with Microsoft Office SharePoint Server to present business data from an SAP system on a SharePoint portal.</span></span> <span data-ttu-id="9f12a-104">若要演示如何使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 Office SharePoint Server，考虑两个最常见的实体中任何业务： 客户和销售订单。</span><span class="sxs-lookup"><span data-stu-id="9f12a-104">To demonstrate how to use the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with Office SharePoint Server, consider the two most common entities in any business: customers and sales orders.</span></span> <span data-ttu-id="9f12a-105">在此示例中，在使用的 Office SharePoint Server 中创建的应用程序[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="9f12a-105">In this example, an application is created in Office SharePoint Server, which uses the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to do the following:</span></span>  

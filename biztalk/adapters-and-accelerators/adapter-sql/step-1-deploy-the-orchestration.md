@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 部署的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 部署的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8988fced-b2d5-4ee7-a851-20fc7c3dd087
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224309"
 ---
 # <a name="step-1-deploy-the-orchestration"></a><span data-ttu-id="d4c53-102">步骤 1： 部署的业务流程</span><span class="sxs-lookup"><span data-stu-id="d4c53-102">Step 1: Deploy the Orchestration</span></span>
 <span data-ttu-id="d4c53-103">![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span><span class="sxs-lookup"><span data-stu-id="d4c53-103">![Step 1 of 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")</span></span>  
   
  <span data-ttu-id="d4c53-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="d4c53-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="d4c53-105">**目标：**在此步骤中，将部署业务流程解决方案。</span><span class="sxs-lookup"><span data-stu-id="d4c53-105">**Objective:** In this step, deploy the orchestration solution.</span></span>  
+ <span data-ttu-id="d4c53-105">**目标：** 在此步骤中，将部署业务流程解决方案。</span><span class="sxs-lookup"><span data-stu-id="d4c53-105">**Objective:** In this step, deploy the orchestration solution.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="d4c53-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="d4c53-106">Prerequisites</span></span>  
  <span data-ttu-id="d4c53-107">你必须已完成中的步骤[第 4 课： 执行采购订单表上的插入操作](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)。</span><span class="sxs-lookup"><span data-stu-id="d4c53-107">You must have completed the steps in [Lesson 4: Perform an Insert Operation on the Purchase Order Table](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "教程和演练 EDI、 AS2 和 EDIFACT |Microsoft 文档"
-ms.custom: 
+title: 教程和演练 EDI、 AS2 和 EDIFACT |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37cc976f-7c71-4084-8ed7-5900f94bdc23
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286725"
 ---
 # <a name="tutorials-and-walkthroughs-for-edi-as2-and-edifact"></a><span data-ttu-id="d6778-102">教程和演练 EDI、 AS2 和 EDIFACT</span><span class="sxs-lookup"><span data-stu-id="d6778-102">Tutorials and walkthroughs for EDI, AS2, and EDIFACT</span></span>
 <span data-ttu-id="d6778-103">逐句通过 X12、 EDIFACT 和 AS2 教程以了解如何启用企业到企业消息传递中[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d6778-103">Step through X12, EDIFACT, and AS2 tutorials to learn how to enable business-to-business messaging within [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].</span></span> 

@@ -1,15 +1,15 @@
 ---
-title: "消息和消息架构用于 Oracle E-business Suite 的 BizTalk Adapter |Microsoft 文档"
-description: "Oracle EBS 适配器用于 BizTalk Server 的消息和数据类型的 XML 结构"
-ms.custom: 
+title: 消息和消息架构用于 Oracle E-business Suite 的 BizTalk Adapter |Microsoft 文档
+description: Oracle EBS 适配器用于 BizTalk Server 的消息和数据类型的 XML 结构
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4434b4d4-fbe0-4692-81a5-9883c9a77cf6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216197"
 ---
 # <a name="messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite"></a><span data-ttu-id="04763-103">消息和用于 Oracle E-business Suite 的 BizTalk Adapter 的消息架构</span><span class="sxs-lookup"><span data-stu-id="04763-103">Messages and Message Schemas for BizTalk Adapter for Oracle E-Business Suite</span></span>
 

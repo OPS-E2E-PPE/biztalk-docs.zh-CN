@@ -1,18 +1,18 @@
 ---
-title: "条件循环 |Microsoft 文档"
-ms.custom: 
+title: 条件循环 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Looping functoids, conditional
 - Equal functoids
 - maps, conditional looping
 ms.assetid: eb16efb8-b12c-47d6-afc9-579fc85ea59c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231973"
 ---
 # <a name="conditional-looping"></a><span data-ttu-id="063d1-102">循环的条件</span><span class="sxs-lookup"><span data-stu-id="063d1-102">Conditional Looping</span></span>
 <span data-ttu-id="063d1-103">您可以添加到条件**循环**通过链接的输出的 functoid**循环**functoid 和**逻辑**functoid 到相同的目标记录。</span><span class="sxs-lookup"><span data-stu-id="063d1-103">You can add conditions to a **Looping** functoid by linking the output of a **Looping** functoid and a **Logical** functoid to the same destination record.</span></span> <span data-ttu-id="063d1-104">目标记录只有在符合逻辑条件时才会创建。</span><span class="sxs-lookup"><span data-stu-id="063d1-104">The destination records are created only when the logical condition is met.</span></span>  

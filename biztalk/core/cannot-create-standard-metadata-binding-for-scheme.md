@@ -1,14 +1,14 @@
 ---
-title: "无法创建绑定个方案的标准元数据 |Microsoft 文档"
-ms.custom: 
+title: 无法创建绑定个方案的标准元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce441c3e-0f6e-46ed-90cf-825dbf89d910
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231165"
 ---
 # <a name="cannot-create-standard-metadata-binding-for-scheme"></a><span data-ttu-id="0edb1-102">无法为架构创建标准元数据绑定</span><span class="sxs-lookup"><span data-stu-id="0edb1-102">Cannot create standard metadata binding for scheme</span></span>
 ## <a name="details"></a><span data-ttu-id="0edb1-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0edb1-103">Details</span></span>  

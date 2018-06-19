@@ -1,17 +1,17 @@
 ---
-title: "获取 Visual Studio 中的 Oracle 数据库操作的元数据 |Microsoft 文档"
-ms.custom: 
+title: 获取 Visual Studio 中的 Oracle 数据库操作的元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata, retrieving in Visual Studio
 - metadata
 ms.assetid: d903b408-1144-4625-909d-710826e37769
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214325"
 ---
 # <a name="get-metadata-for-oracle-database-operations-in-visual-studio"></a><span data-ttu-id="2935a-102">获取 Visual Studio 中的 Oracle 数据库操作的元数据</span><span class="sxs-lookup"><span data-stu-id="2935a-102">Get metadata for Oracle Database operations in Visual Studio</span></span>
 <span data-ttu-id="2935a-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]提供三种[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用来帮助你开发使用该适配器的解决方案的组件。</span><span class="sxs-lookup"><span data-stu-id="2935a-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] provides three [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] components that you can use to help you develop solutions using the adapter.</span></span>  

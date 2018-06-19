@@ -1,14 +1,14 @@
 ---
-title: "使用 SQL 适配器的 SQL Server 中轮询 |Microsoft 文档"
-ms.custom: 
+title: 使用 SQL 适配器的 SQL Server 中轮询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c31b3cda-c05e-46db-827b-6c47a53d1a3a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225845"
 ---
 # <a name="polling-in-sql-server-using-the-sql-adapter"></a><span data-ttu-id="50cd7-102">使用 SQL 适配器的 SQL Server 中轮询</span><span class="sxs-lookup"><span data-stu-id="50cd7-102">Polling in SQL Server using the SQL adapter</span></span>
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]<span data-ttu-id="50cd7-103">允许适配器客户端接收来自 SQL Server 数据库的数据更改消息。</span><span class="sxs-lookup"><span data-stu-id="50cd7-103"> enables adapter clients to receive data-change messages from the SQL Server database.</span></span> <span data-ttu-id="50cd7-104">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接收"轮询基于"消息的支持其中适配器执行指定的 SQL 语句 （SELECT 语句或存储的过程），检索或更新的数据，并在结果中提供的定期到适配器客户端时间。</span><span class="sxs-lookup"><span data-stu-id="50cd7-104">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] supports receiving "polling-based" messages wherein the adapter executes a specified SQL statement (SELECT statement or stored procedure), retrieves or updates the data, and provides the result to the adapter client at regular intervals of time.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="50cd7-151">轮询启动的适配器。</span><span class="sxs-lookup"><span data-stu-id="50cd7-151">Polling is initiated by the adapter.</span></span> <span data-ttu-id="50cd7-152">适配器执行一个语句来验证是否数据可用于轮询，并随后通过执行轮询语句，如果某些数据可用于轮询开始轮询。</span><span class="sxs-lookup"><span data-stu-id="50cd7-152">The adapter executes a statement to validate whether data is available for polling, and then initiates polling by executing the polling statement if some data is available for polling.</span></span>|<span data-ttu-id="50cd7-153">通过 SQL Server 启动的查询通知。</span><span class="sxs-lookup"><span data-stu-id="50cd7-153">Query notification is initiated by SQL Server.</span></span> <span data-ttu-id="50cd7-154">只需适配器发出的通知语句指示要在该语句结果集中的更改的情况下启动通知的数据库。</span><span class="sxs-lookup"><span data-stu-id="50cd7-154">The notification statement issued by the adapter just instructs the database to initiate notification in case there is a change in the result set of the statement.</span></span>|  
 |<span data-ttu-id="50cd7-155">轮询语句可用于读取或更新 SQL Server 数据库表中的数据。</span><span class="sxs-lookup"><span data-stu-id="50cd7-155">You can use the polling statement to read or update data in a SQL Server database table.</span></span>|<span data-ttu-id="50cd7-156">可以使用查询通知语句仅具有读取 SQL Server 数据库表中的数据。</span><span class="sxs-lookup"><span data-stu-id="50cd7-156">You can use the query notification statement to only read data in a SQL Server database table.</span></span>|  
 |<span data-ttu-id="50cd7-157">轮询通知你有关已更改的实际数据信息。</span><span class="sxs-lookup"><span data-stu-id="50cd7-157">Polling informs you about the actual data that has changed.</span></span>|<span data-ttu-id="50cd7-158">查询通知只会通知有关类型的更改数据，例如插入、 更新和删除。</span><span class="sxs-lookup"><span data-stu-id="50cd7-158">Query notification only informs about the type of change in the data such as Insert, Update, and Delete.</span></span>|  
-|<span data-ttu-id="50cd7-159">数据更改通知取决于轮询间隔，并且在每个轮询间隔的末尾，有关数据更改的适配器客户端通知。</span><span class="sxs-lookup"><span data-stu-id="50cd7-159">The data-change notification depends on the polling interval, and the adapter clients are informed about the data changes at the end of every polling interval.</span></span> <span data-ttu-id="50cd7-160">**提示：**轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。</span><span class="sxs-lookup"><span data-stu-id="50cd7-160">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="50cd7-161">作为替代，你指定要在其后自最后一个的数据更改通知以来发生的所有更改的通知轮询间隔。</span><span class="sxs-lookup"><span data-stu-id="50cd7-161">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last data-change notification.</span></span>|<span data-ttu-id="50cd7-162">数据更改通知是即时的。</span><span class="sxs-lookup"><span data-stu-id="50cd7-162">The data-change notification is instantaneous.</span></span>|  
+|<span data-ttu-id="50cd7-159">数据更改通知取决于轮询间隔，并且在每个轮询间隔的末尾，有关数据更改的适配器客户端通知。</span><span class="sxs-lookup"><span data-stu-id="50cd7-159">The data-change notification depends on the polling interval, and the adapter clients are informed about the data changes at the end of every polling interval.</span></span> <span data-ttu-id="50cd7-160">**提示：** 轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。</span><span class="sxs-lookup"><span data-stu-id="50cd7-160">**Tip:**  Polling can give you better throughput in scenarios where the data changes are happening continuously, and you do not want to be notified of each change as and when it happens.</span></span> <span data-ttu-id="50cd7-161">作为替代，你指定要在其后自最后一个的数据更改通知以来发生的所有更改的通知轮询间隔。</span><span class="sxs-lookup"><span data-stu-id="50cd7-161">Instead, you specify a polling interval after which you want to be notified of all the changes that have happened since the last data-change notification.</span></span>|<span data-ttu-id="50cd7-162">数据更改通知是即时的。</span><span class="sxs-lookup"><span data-stu-id="50cd7-162">The data-change notification is instantaneous.</span></span>|  
   
  <span data-ttu-id="50cd7-163">有关中的查询通知的详细信息[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，请参阅[使用 BizTalk server 接收 SQL 的查询通知](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="50cd7-163">For more information about query notification in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)], see [Receive SQL Query Notifications by Using BizTalk Server](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md).</span></span>  
   

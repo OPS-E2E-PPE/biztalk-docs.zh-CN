@@ -1,15 +1,15 @@
 ---
-title: "在 BizTalk Server 中的 HL7 快捷键方选项卡 |Microsoft 文档"
-description: "使用 BTAHL7 配置资源管理器来查看现有的当事方，并在 BizTalk Server 中配置确认"
-ms.custom: 
+title: 在 BizTalk Server 中的 HL7 快捷键方选项卡 |Microsoft 文档
+description: 使用 BTAHL7 配置资源管理器来查看现有的当事方，并在 BizTalk Server 中配置确认
+ms.custom: ''
 ms.date: 08/14/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e01052c8-25c5-4736-8403-33f16fbd3fb7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206133"
 ---
 # <a name="parties-in-btahl7-configuration-explorer"></a><span data-ttu-id="7c4de-103">BTAHL7 配置资源管理器中的各方</span><span class="sxs-lookup"><span data-stu-id="7c4de-103">Parties in BTAHL7 Configuration Explorer</span></span>
 <span data-ttu-id="7c4de-104">你使用**方**选项卡以查看可用的当事方，并指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置特定的一方你选择和配置确认的属性。</span><span class="sxs-lookup"><span data-stu-id="7c4de-104">You use the **Parties** tab to view the available parties and specify [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] configuration for a particular party that you choose, and to configure properties for acknowledgments.</span></span> 

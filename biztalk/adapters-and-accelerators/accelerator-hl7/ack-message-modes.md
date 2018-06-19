@@ -1,11 +1,11 @@
 ---
-title: "ACK 消息模式 |Microsoft 文档"
-ms.custom: 
+title: ACK 消息模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message modes, ACK messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - acknowledgements, message modes
 - ACK message modes
 ms.assetid: ab4a9470-dab2-46d4-8d0a-54dc12f2fa90
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204397"
 ---
 # <a name="ack-message-modes"></a><span data-ttu-id="cecbc-102">ACK 消息模式</span><span class="sxs-lookup"><span data-stu-id="cecbc-102">ACK Message Modes</span></span>
 <span data-ttu-id="cecbc-103">确认 (ACK) 消息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 确定确认模式和要用于填充 MSH15 和 MSH16 你想要生成的确认字段值。</span><span class="sxs-lookup"><span data-stu-id="cecbc-103">For acknowledgment (ACK) messages, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) determines the acknowledgment mode and values to use for populating MSH15 and MSH16 fields of the ACK you want to generate.</span></span> <span data-ttu-id="cecbc-104">这些值是贸易合作伙伴管理 (TPM) 配置中存在。</span><span class="sxs-lookup"><span data-stu-id="cecbc-104">These values are present in the Trading Partner Management (TPM) configuration.</span></span> <span data-ttu-id="cecbc-105">还为 ACK 模式可能有以下值：</span><span class="sxs-lookup"><span data-stu-id="cecbc-105">The following values are possible for ACK mode:</span></span>  
