@@ -1,17 +1,17 @@
 ---
-title: "使用从服务的管道面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 使用从服务的管道面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service solution tutorial, pipelines
 - pipelines, service solutions
 ms.assetid: 0870fce1-52ec-4ff8-884f-a3199bd7ccbb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287205"
 ---
 # <a name="using-pipelines-from-the-service-oriented-solution"></a>使用从服务的管道面向解决方案
 客户服务业务流程的内联版本 (**CustomerService**) 调用直接跟踪系统的付款。 为准备发送的消息和处理接收的消息，业务流程将通过代码调用管道。 这将允许重用其他方案版本中的管道。 还可保持业务流程与管道阶段的分离状态。  

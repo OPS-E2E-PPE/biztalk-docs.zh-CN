@@ -1,17 +1,17 @@
 ---
-title: "配置 SAP 适配器的连接 URI |Microsoft 文档"
-ms.custom: 
+title: 配置 SAP 适配器的连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, specifying at run time
 - connection URI, specifying at design time
 ms.assetid: 8df8e4a7-13f7-48c0-8af2-451253ced7e7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218533"
 ---
 # <a name="configure-the-connection-uri-for-the-sap-adapter"></a>配置 SAP 适配器的连接 URI
 连接 URI 是用于连接到 SAP 系统的连接字符串。 它包含与某个 SAP 系统建立连接所需的各种参数。 在设计时，必须指定要连接到 SAP 系统生成的元数据的 URI。 在运行时，必须指定要连接到 SAP 系统以执行操作的 URI。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**WCF 自定义传输属性**对话框中，单击**常规**选项卡。  
   
-5.  在**地址 (URI)**文本框中，指定连接 URI 以连接到 SAP 系统。 有关连接 URI 的详细信息为[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
+5.  在**地址 (URI)** 文本框中，指定连接 URI 以连接到 SAP 系统。 有关连接 URI 的详细信息为[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
   
 6.  在**WCF 自定义传输属性**对话框中，单击**绑定**选项卡。从**绑定类型**下拉列表中，选择**sapBinding**。  
   

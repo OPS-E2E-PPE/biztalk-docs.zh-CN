@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230589"
 ---
 # <a name="btaddatabase"></a>BTAD_Database
 在预处理脚本和后处理脚本运行在应用程序导入上时，设置 BTAD_Database 环境变量。 它指定组的 BizTalk 管理数据库的名称。  

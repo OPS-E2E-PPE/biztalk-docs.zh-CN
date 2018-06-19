@@ -1,14 +1,14 @@
 ---
-title: "处理传入 AS2 消息 |Microsoft 文档"
-ms.custom: 
+title: 处理传入 AS2 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 998ff334-71e2-4686-b2b7-44940a0ebed1
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266389"
 ---
 # <a name="processing-an-incoming-as2-message"></a>处理传入 AS2 消息
 AS2 接收管道可处理通过 AS2 传入的消息。 AS2EdiReceive 接收管道使用 EDI 拆装器处理 EDI 编码的消息。 AS2Receive 接收管道使用 AS2 拆装器处理非 EDI 编码的消息。 这两个管道采用不同的方式来处理 AS2 消息负载和生成 MDN；不过，两个接收管道都使用 AS2 解码器来处理 AS2 消息。  

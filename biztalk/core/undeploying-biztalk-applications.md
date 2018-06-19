@@ -1,11 +1,11 @@
 ---
-title: "正在取消部署的 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 正在取消部署的 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - undeploying, applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [applications], undeploying
 - undeploying
 ms.assetid: 424ada20-d023-4952-8a36-75f0327d87d5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286637"
 ---
 # <a name="undeploying-biztalk-applications"></a>正在取消部署的 BizTalk 应用程序
 你必须取消部署 BizTalk 应用程序从你的 BizTalk 组和主机计算机删除它。 本部分介绍中取消部署应用程序涉及以下任务：  

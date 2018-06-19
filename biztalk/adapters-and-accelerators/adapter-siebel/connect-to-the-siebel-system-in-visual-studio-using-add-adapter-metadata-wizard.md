@@ -1,14 +1,14 @@
 ---
-title: "连接到 Siebel 系统在 Visual Studio 使用添加适配器元数据向导 |Microsoft 文档"
-ms.custom: 
+title: 连接到 Siebel 系统在 Visual Studio 使用添加适配器元数据向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e0a82fcc-b3ac-4936-9210-03c99d3741d7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222765"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-metadata-wizard"></a>连接到 Siebel 系统在 Visual Studio 使用添加适配器元数据向导
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]名称还公开为 BizTalk 适配器，因此，你可以使用[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]若要为你想要在 Siebel 系统使用该适配器上执行的操作生成架构。  

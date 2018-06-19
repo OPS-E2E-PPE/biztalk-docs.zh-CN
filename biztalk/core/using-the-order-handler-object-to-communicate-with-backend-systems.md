@@ -1,17 +1,17 @@
 ---
-title: "使用顺序处理程序对象与后端系统进行通信 |Microsoft 文档"
-ms.custom: 
+title: 使用顺序处理程序对象与后端系统进行通信 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IOrderHandler interface
 - process management solution tutorial, IOrderHandler interface
 ms.assetid: b9fe4120-bf2a-4d15-a34b-6b98f026b984
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288061"
 ---
 # <a name="using-the-order-handler-object-to-communicate-with-backend-systems"></a>使用顺序处理程序对象与后端系统进行通信
 业务流程管理解决方案可以采用多种方式与原有后端订单系统进行通信，该系统是接收最终订单的宽带提供系统。 该解决方案使用 Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] 中提供的 .NET 远程处理功能与提供系统进行通信。  

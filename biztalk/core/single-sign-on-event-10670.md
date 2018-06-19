@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10670 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10670 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4cf52f35-33b9-4838-a920-e813c2f5886a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270869"
 ---
 # <a name="single-sign-on-event-10670"></a>单一登录： 事件 10670
 ## <a name="details"></a>详细信息  

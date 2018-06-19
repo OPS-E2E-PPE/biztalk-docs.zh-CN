@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22269221"
 ---
 # <a name="putting-it-all-together-defining-a-trading-partner-management-solution"></a>综合： 定义一个贸易合作伙伴管理解决方案
 既然我们已经了解了构建 TPM 解决方案所需的不同类型的组件，现在让我们再了解一下典型 TPM 解决方案流以及不同的生成块如何一起工作。 此部分还列出了一些用于对 TPM 解决方案建模的最佳做法。  

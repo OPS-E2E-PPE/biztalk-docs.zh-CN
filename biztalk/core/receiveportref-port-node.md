@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268477"
 ---
 # <a name="receiveportref-port-node"></a>ReceivePortRef （端口节点）
 绑定文件的“端口”节点的 ReceivePortRef 节点包含有关服务所引用接收端口的信息。  

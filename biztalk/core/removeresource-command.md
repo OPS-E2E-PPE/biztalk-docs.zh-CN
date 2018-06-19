@@ -1,14 +1,14 @@
 ---
-title: "RemoveResource 命令 |Microsoft 文档"
-ms.custom: 
+title: RemoveResource 命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8e2c6046-43d4-4ac1-a1b1-3795b4e44038
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269373"
 ---
 # <a name="removeresource-command"></a>RemoveResource 命令
 从 BizTalk 管理数据库中删除项目。 运行此命令不会从全局程序集缓存 (GAC)、文件系统、证书存储、Internet 信息服务或 Windows 注册表中删除项目（如果项目存在于这些位置中）。 该命令不会从 BAM 主导入数据库中删除 BAM 定义，也不会从规则引擎数据库中删除策略。 如果您运行此命令来删除绑定文件，则绑定保持不变，仅删除绑定文件。  
@@ -62,10 +63,10 @@ ms.lasthandoff: 09/20/2017
   
 |参数|必需|Description|  
 |---------------|--------------|-----------------|  
-|**/ ApplicationName** (或**/A**，请参阅备注)|是|包含要删除的资源项目的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将它用双引号 （"）。|  
-|**/ Luid** (或**/L**，请参阅备注)|是|项目的本地唯一标识符 (LUID)。 你可以通过使用获取而定[ListApp 命令](../core/listapp-command.md)。|  
-|**/ 服务器**(或**/S**，请参阅备注)|是|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
-|**/ 数据库**(或**/D**，请参阅备注)|是|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|是|包含要删除的资源项目的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将它用双引号 （"）。|  
+|**/ Luid** (或 **/L**，请参阅备注)|是|项目的本地唯一标识符 (LUID)。 你可以通过使用获取而定[ListApp 命令](../core/listapp-command.md)。|  
+|**/ 服务器**(或 **/S**，请参阅备注)|是|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
+|**/ 数据库**(或 **/D**，请参阅备注)|是|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
   
 ## <a name="sample"></a>示例  
  **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations，版本 = 1.0.0.0，Culture = neutral，PublicKeyToken = 0123456789ABCDEF"**  

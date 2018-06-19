@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户的安全注意事项 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户的安全注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM portal, security
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BAM portal, user accounts
 - security, BAM portal
 ms.assetid: 5c8e6034-dfb8-4dba-b040-0c19504abdb2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269381"
 ---
 # <a name="security-considerations-for-the-bam-portal"></a>BAM 门户的安全注意事项
 遵循最小权限原则，用户帐户在 BAM 门户中应使用受限制的权限来执行日常的任务。 在设置 BAM 的用户帐户时请记住以下几点，通过适当的用户访问权限来平衡安全性。  

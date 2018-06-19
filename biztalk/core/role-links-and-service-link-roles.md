@@ -1,11 +1,11 @@
 ---
-title: "角色链接和服务链接角色 |Microsoft 文档"
-ms.custom: 
+title: 角色链接和服务链接角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, orchestrations
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - role links, about role links
 - orchestrations, deleting
 ms.assetid: 23b4ca34-a1a5-44d4-a50d-661277681c72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268677"
 ---
 # <a name="role-links-and-service-link-roles"></a>角色链接和服务器链接角色
 A*角色*是使用服务或实现服务的端口类型集合。 角色表示参与方可以具有的与一个或多个业务流程之间的交互类型。 随着参与方数量的增加，使用角色可更便捷地进行管理。 例如，业务流程可能使用发运方角色。 该发运方将有一两个关联的参与方。 当业务流程确定使用哪家发运公司来发运货物时，它会比较发运方角色中各个参与方的价格。  

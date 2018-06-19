@@ -1,14 +1,14 @@
 ---
-title: "备份和还原 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 备份和还原 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe03a75a-1ea6-4ccc-9543-7989ec6b1cff
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230781"
 ---
 # <a name="backing-up-and-restoring-biztalk-server"></a>备份和还原 BizTalk Server
 在发生硬件故障时，对 BizTalk Server 数据库和组件有完善的备份至关重要。 完善的备份使您能够进行恢复，而数据损失很少甚至毫无损失。 如何还原 BizTalk Server，取决于发生硬件故障的系统上安装了什么组件。 本指南涉及以下硬件故障情形：  

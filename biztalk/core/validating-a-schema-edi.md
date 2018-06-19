@@ -1,14 +1,14 @@
 ---
-title: "验证架构 (EDI) |Microsoft 文档"
-ms.custom: 
+title: 验证架构 (EDI) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6175460-2dcf-4fef-b770-02f0a058bf93
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287781"
 ---
 # <a name="validating-a-schema-edi"></a>验证架构 (EDI)
 可以在设计时验证 EDI 架构。 为此，您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中的 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] XML 工具扩展。 验证架构操作会根据 EDI 规则来验证架构。 无需指定输入消息实例即可验证架构。  

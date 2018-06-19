@@ -1,14 +1,14 @@
 ---
-title: "如何解释的特殊字符作为字段值的一部分 |Microsoft 文档"
-ms.custom: 
+title: 如何解释的特殊字符作为字段值的一部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e19a202-4e4d-42e0-ba1e-fddc52792b21
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288381"
 ---
 # <a name="ways-to-interpret-special-characters-as-part-of-a-field-value"></a>如何解释的特殊字符作为字段值的一部分
 位置记录和分隔记录中的字段均可包含不同类型的特殊字符，例如，填充字符、环绕符和转义符。 分隔记录还可以包含一个或多个不同的分隔符，这些字符用于将记录中的各字段分开以及分隔记录。 有时，这些特殊字符是数据自身的一部分，在这种情况下，不应将其作为特殊字符进行解释。  

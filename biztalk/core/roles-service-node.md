@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268397"
 ---
 # <a name="roles-service-node"></a>角色 （服务节点）
 对于任何“角色”节点，只要它提供与绑定到随某个绑定文件导出的服务的每个角色有关的特定信息，则该绑定文件的“角色”节点就是此节点的父节点。  

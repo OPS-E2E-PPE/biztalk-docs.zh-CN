@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269557"
 ---
 # <a name="schema-trackedschemas-node"></a>架构（TrackedSchemas 节点）
 绑定文件的“TrackedSchemas”节点的 Schema 节点描述了绑定到与绑定文件一起导出的服务的架构。  

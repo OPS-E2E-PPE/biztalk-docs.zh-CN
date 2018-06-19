@@ -1,17 +1,17 @@
 ---
-title: "与使用 WCF 服务模型和 Siebel 适配器调用业务服务方法 |Microsoft 文档"
-ms.custom: 
+title: 与使用 WCF 服务模型和 Siebel 适配器调用业务服务方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, invoking business service methods
 - business service methods, invoking by using the WCF service model
 ms.assetid: b41cf944-efdc-453f-824b-70581e7143e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222173"
 ---
 # <a name="invoke-business-service-methods-with-the-siebel-adapter-using-the-wcf-service-model"></a>与使用 WCF 服务模型和 Siebel 适配器调用业务服务方法
 您可创建 WCF 客户端 Siebel 业务服务该目标方法。 然后可以使用 WCF 客户端来调用这些方法 Siebel 系统上。 Siebel 业务服务下的业务服务节点中加以表示[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 在对应于该服务的节点下将显示由每个业务服务公开的方法。 你可以按照中的步骤[与 Siebel 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)生成业务服务的 WCF 客户端并使用它来调用服务的方法。  
