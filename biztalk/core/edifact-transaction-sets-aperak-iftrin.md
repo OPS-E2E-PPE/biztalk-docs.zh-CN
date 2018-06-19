@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT 事务集应用错误确认 IFTRIN |Microsoft 文档"
-ms.custom: 
+title: EDIFACT 事务集应用错误确认 IFTRIN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f22e42cd-6acf-4c60-8d6e-a744f3296560
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010934"
 ---
 # <a name="edifact-transaction-sets-aperak-iftrin"></a>EDIFACT 事务集 APERAK-IFTRIN
 本主题列出了 BizTalk Server 支持的 EDIFACT 事务集。  

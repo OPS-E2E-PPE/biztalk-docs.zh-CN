@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269309"
 ---
 # <a name="schemas-node"></a>“架构”节点
 使用**架构**节点以显示部署在 BizTalk 中可用的当前应用程序和系统架构的架构。 右键单击**架构**节点以显示以下命令：  

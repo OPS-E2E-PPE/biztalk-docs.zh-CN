@@ -1,17 +1,17 @@
 ---
-title: "查看历史记录将备份还原 |Microsoft 文档"
-ms.custom: 
+title: 查看历史记录将备份还原 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - restoring, history
 - backing up, history
 ms.assetid: 8852befa-b8e7-469d-b014-75c881907442
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288149"
 ---
 # <a name="viewing-the-history-of-restored-backups"></a>查看已还原备份的历史记录
 若要确定最近成功还原的备份集，请查看 Master.dbo.bts_LogShippingHistory 表的内容。 此表由获取备份历史记录作业来填充，由还原数据库作业来更新。 如果备份还原成功，则 Restored 列将设为 1，RestoredDateTime 将设为当前日期和时间。  

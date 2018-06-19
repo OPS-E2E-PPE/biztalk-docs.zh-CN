@@ -1,14 +1,14 @@
 ---
-title: "主密钥服务器的高可用性 |Microsoft 文档"
-ms.custom: 
+title: 主密钥服务器的高可用性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b99cb04-61a5-41cc-a409-35897c17b789
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008838"
 ---
 # <a name="high-availability-for-the-master-secret-server"></a>主密钥服务器的高可用性
 即使你不使用的企业单一登录 (SSO) 功能用于将凭据和单一登录映射，SSO 是整体 Microsoft BizTalk Server 基础结构，一个重要组成部分，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 SSO 来帮助为端口的安全信息配置。 端口配置数据加密，并存储在 SSO 数据库中。 每个 BizTalk server 提供用于加密和解密的端口配置数据使用了 SSO 服务服务 (ENTSSO.exe)。  

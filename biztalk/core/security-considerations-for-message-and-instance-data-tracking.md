@@ -1,11 +1,11 @@
 ---
-title: "消息和实例数据跟踪的安全注意事项 |Microsoft 文档"
-ms.custom: 
+title: 消息和实例数据跟踪的安全注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - permissions, HAT
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - HAT, security
 - Management database, HAT
 ms.assetid: 83e47dc2-c8e2-42a2-9c85-d511e7dae83f
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271765"
 ---
 # <a name="security-considerations-for-message-and-instance-data-tracking"></a>消息和实例数据跟踪的安全注意事项
 出于安全方面的原因，消息和服务实例跟踪不使用浏览器或 URL，这与以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不同。 此监视选项是作为 BizTalk Server 管理控制台中“组概述”页的一部分包含在内的。  对于向后兼容性，出于安全方面的原因，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 仍在 shell 中承载 Microsoft Internet Explorer。  

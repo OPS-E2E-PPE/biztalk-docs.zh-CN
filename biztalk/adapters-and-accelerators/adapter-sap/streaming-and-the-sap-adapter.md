@@ -1,11 +1,11 @@
 ---
-title: "流式处理和 SAP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 流式处理和 SAP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, support in WCF service model
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - streaming, and the SAP adapter
 - streaming, support in WCF channel model
 ms.assetid: 9fa1788b-f21b-4dec-be14-27dd8080a9d4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218245"
 ---
 # <a name="streaming-and-the-sap-adapter"></a>流式处理和 SAP 适配器
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持消息本身和客户端应用程序之间流式处理。 与[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成 XML 节点。  

@@ -1,14 +1,14 @@
 ---
-title: "为性能规划 |Microsoft 文档"
-ms.custom: 
+title: 为性能规划 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 267a8bc6-a0ab-4335-bc04-c22d5a56792f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302997"
 ---
 # <a name="planning-for-performance"></a>规划性能
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是一个应用程序平台。 它不是只是一种服务器产品或只是开发人员产品。 它是一个用于构建业务流程管理系统，将企业应用程序，以自动执行工作流，集成的应用程序平台和启用服务的面向体系结构。  

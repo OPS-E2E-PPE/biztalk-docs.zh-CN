@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 为消息批创建发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 为消息批创建发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5db815df-5b76-4ba4-99ab-c7766b0c301a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26006006"
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a>步骤 5： 为消息批创建发送端口
 在此步骤中，创建将你创建的消息批处理传送到目标方发送端口。 这是文件适配器类型的静态单向端口。 其中指定用于目标 (\Tutorial_BatchMsgDrop) 的文件文件夹[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将丢弃消息批处理文件。 你定义筛选器，该值指示哪种类型的消息批次将发送端口的端口。 筛选器指定 Tutorial_BatchDest 和 OutboundBatch 的消息类型的目标。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 01/17/2018
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**目标文件夹**|浏览到 **\<*驱动器*:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_BatchMsgDrop快捷键**. 这是文件系统或到公共共享上的位置的路径[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将编写包含消息批的文件。|  
-    |**File name**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
+    |**File name**|类型 **%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
     |**副本模式**|选择**创建新**。|  
   
 4.  单击 **“确定”**。  

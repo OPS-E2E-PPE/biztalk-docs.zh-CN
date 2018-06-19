@@ -1,14 +1,14 @@
 ---
-title: "解决使用 WCF LOB 适配器 SDK 创建的适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决使用 WCF LOB 适配器 SDK 创建的适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 985db7dd-975f-44f2-82fe-f7be1fc3e0ee
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223453"
 ---
 # <a name="troubleshoot-adapter-created-using-the-wcf-lob-adapter-sdk"></a>解决使用 WCF LOB 适配器 SDK 创建的适配器
 本部分介绍的故障排除信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 它包括问题和解决方法为性能计数器和跟踪。  

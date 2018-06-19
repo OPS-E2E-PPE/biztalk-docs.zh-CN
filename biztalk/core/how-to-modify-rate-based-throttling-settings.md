@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255885"
 ---
 # <a name="how-to-modify-rate-based-throttling-settings"></a>如何修改基于速率的阻止设置
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的基于速率的阻止功能，应用于包含业务流程或发送适配器的主机实例，这些适配器接收和传送或处理已发布到 MessageBox 的消息。 使用 [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]，您可以跨 BizTalk 组，修改给定主机的基于速率的阻止功能配置设置。 这些设置将应用于分配到给定主机的所有主机实例。 本主题提供了修改这些设置的分步过程。  

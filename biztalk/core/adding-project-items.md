@@ -1,15 +1,15 @@
 ---
-title: "添加项目项 |Microsoft 文档"
-description: "将业务流程、 架构、 映射和管道添加到 Visual Studio 中的 BizTalk Server 项目"
-ms.custom: 
+title: 添加项目项 |Microsoft 文档
+description: 将业务流程、 架构、 映射和管道添加到 Visual Studio 中的 BizTalk Server 项目
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1b922d5-8ece-4e1a-a390-e6ae1222665a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710220"
 ---
 # <a name="add-project-items"></a>添加项目项
 在 BizTalk 项目系统的上下文中，项目项是指配置项，例如映射或架构。 BizTalk 应用程序可能包含一个或多个业务流程、架构、映射和管道。  

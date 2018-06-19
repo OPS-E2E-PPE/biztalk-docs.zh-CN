@@ -1,14 +1,14 @@
 ---
-title: "运行 BizTalk 失败消息路由 ESB 处理示例 |Microsoft 文档"
-ms.custom: 
+title: 运行 BizTalk 失败消息路由 ESB 处理示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2a536a0-cfc8-4ba3-adcd-2b8b580bff85
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008798"
 ---
 # <a name="running-the-biztalk-failed-message-routing-esb-processing-sample"></a>运行 BizTalk 失败消息路由 ESB 处理示例
 Microsoft BizTalk 失败消息路由 ESB 处理示例演示如何使用[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]异常管理框架作为通用机制，管理、 序列化，并呈现在 BizTalk 中的所有情况下发生的异常服务器。 这包括由 BizTalk 失败消息路由机制和错误消息框架生成的异常管理从业务流程中生成的异常。  

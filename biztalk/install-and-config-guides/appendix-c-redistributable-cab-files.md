@@ -1,14 +1,14 @@
 ---
-title: "附录 c： 可再发行组件 CAB 文件 |Microsoft 文档"
-ms.custom: 
+title: 附录 c： 可再发行组件 CAB 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2049d61-e169-4b30-869a-33d5af097941
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976387"
 ---
 # <a name="appendix-c-redistributable-cab-files"></a>附录 C：可再发行的 CAB 文件
 BizTalk Server 安装程序使用这些 CAB 文件。

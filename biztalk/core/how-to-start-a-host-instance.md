@@ -1,15 +1,15 @@
 ---
-title: "启动主机实例 |Microsoft 文档"
-description: "使用 BizTalk 管理在 BizTalk Server 中启动的主机实例"
-ms.custom: 
+title: 启动主机实例 |Microsoft 文档
+description: 使用 BizTalk 管理在 BizTalk Server 中启动的主机实例
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a96a4362-2147-4b8e-a270-bf9a17477ba3
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255813"
 ---
 # <a name="start-a-host-instance"></a>启动主机实例
 可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或 Windows 管理规范 (WMI) 来启动主机实例。 在添加或停止主机实例之后，必须启动该实例以便其运行并将消息路由至 MessageBox 数据库。  

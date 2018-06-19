@@ -1,14 +1,14 @@
 ---
-title: "步骤 4A： 启动 FileAct 应用商店应用和向前方案 SWIFTNet 服务 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4A： 启动 FileAct 应用商店应用和向前方案 SWIFTNet 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3837523e-26d8-4ebf-b5a2-0db33ff59bf4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223749"
 ---
 # <a name="step-4a-start-the-swiftnet-service-for-the-fileact-store-and-forward-scenario"></a>步骤 4A： 启动 SWIFTNet 服务 FileAct 应用商店应用和转发方案
 在开始此步骤之前，必须完成[步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)。  

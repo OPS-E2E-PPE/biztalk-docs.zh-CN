@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 48eb0c1694168fb1acf840a52dc793d0ed943a19
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014228"
 ---
 # <a name="setting-tibco-rendezvous-receive-transport-properties"></a>设置 TIBCO Rendezvous 接收传输属性
 当您配置用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器以侦听消息时，指定要侦听的使用者名称。 这是唯一需要的属性。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/07/2017
   
 5.  展开**会合传输**，输入 TIBCO 会合守护程序和程序之间的通信的所有必要的信息。  
   
-     **传输 （网络，后台程序，服务）**指定如何 TIBCO 会合守护程序交换消息。 这些设置将按原样发送到 TIBCO Rendezvous API。 使用默认值（空白）会导到使用默认的通信策略。  
+     **传输 （网络，后台程序，服务）** 指定如何 TIBCO 会合守护程序交换消息。 这些设置将按原样发送到 TIBCO Rendezvous API。 使用默认值（空白）会导到使用默认的通信策略。  
   
      TIBCO Rendezvous 传输定义传输范围—即其发送信息的可能目标集。 此属性集定义了一种传输。  
   

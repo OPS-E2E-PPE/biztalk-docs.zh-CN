@@ -1,18 +1,18 @@
 ---
-title: "如何删除 BAM 警报 |Microsoft 文档"
-ms.custom: 
+title: 如何删除 BAM 警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM definitions], deleting alerts
 - Remove-Alerts command [BAM]
 - alerts, deleting
 ms.assetid: 9deb0ab2-a22f-477d-af31-35410d04fc6c
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970707"
 ---
 # <a name="how-to-remove-bam-alerts"></a>如何删除 BAM 警报
 管理员使用**删除警报**命令从指定的视图中删除所有警报。  

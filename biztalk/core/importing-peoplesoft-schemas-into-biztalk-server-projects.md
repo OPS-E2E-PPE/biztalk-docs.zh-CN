@@ -1,14 +1,14 @@
 ---
-title: "导入 Visual Studio PeopleSoft 架构 |Microsoft 文档"
-ms.custom: 
+title: 导入 Visual Studio PeopleSoft 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 411f25f4-4431-44e4-84cf-5c515b3e32db
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013532"
 ---
 # <a name="import-peoplesoft-schemas-into-biztalk-server-projects"></a>将 PeopleSoft 架构导入到 BizTalk Server 项目
 在创建 PeopleSoft Enterprise 系统之后，可以浏览服务器并将架构导入 BizTalk Server 项目。  

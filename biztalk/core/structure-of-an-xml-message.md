@@ -1,14 +1,14 @@
 ---
-title: "XML 消息的结构 |Microsoft 文档"
-ms.custom: 
+title: XML 消息的结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7a5bba81-2f2b-41f3-b8b2-c2fb9c15ea5a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278477"
 ---
 # <a name="structure-of-an-xml-message"></a>XML 消息的结构
 在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中，XML 实例消息是一个有效的 XML 标记层次结构，这些标记共同构成零个或多个 XML 信封和一个或多个 XML 文档。 例如，以下 XML 实例消息由包含单个 XML 文档（以粗体显示）的单个 XML 信封（使用常规字体）组成。  

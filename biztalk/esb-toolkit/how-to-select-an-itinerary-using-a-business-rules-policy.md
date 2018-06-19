@@ -1,14 +1,14 @@
 ---
-title: "如何： 选择使用业务规则策略路线 |Microsoft 文档"
-ms.custom: 
+title: 如何： 选择使用业务规则策略路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f6373a8-d9d6-46c6-95e3-f62dd33c342a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010582"
 ---
 # <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>如何： 选择使用业务规则策略路线
 ## <a name="goal"></a>目的  
@@ -75,7 +76,7 @@ ms.lasthandoff: 12/01/2017
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a>若要添加客户 GlobalBank 西部选择规则  
   
-1.  在**ResolveItineraryBasedOnCustomer**策略，右键单击**（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
+1.  在**ResolveItineraryBasedOnCustomer**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
   
 2.  在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  在策略资源管理器中，右键单击**SetGlobalBankWestItinerary**规则，并依次**复制**。  
   
-2.  右键单击**（不保存） 1.0 版**，然后单击**粘贴**。  
+2.  右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。  
   
 3.  在**新规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。  
   
@@ -120,14 +121,14 @@ ms.lasthandoff: 12/01/2017
   
 7.  在**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。  
   
-8.  单击**\<空字符串\>**然后键入**GlobalBankEastItinerary**。  
+8.  单击**\<空字符串\>** 然后键入**GlobalBankEastItinerary**。  
   
     > [!NOTE]
     >  更高版本中的操作方法主题，你将从 GlobalBank 东处理这些消息创建此路线。  
   
 #### <a name="to-publish-and-deploy-the-policy"></a>若要发布和部署策略  
   
-1.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击**（不保存） 1.0 版**，然后单击**发布**。  
+1.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。  
   
 2.  在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击**版本 1.0-发布**，然后单击**部署**。  
   

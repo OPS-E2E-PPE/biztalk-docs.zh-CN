@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218565"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sap-adapter"></a>与 SAP 适配器的 WCF 服务模型概述
 当你使用操作的[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]图面，你的代码起作用作为客户端或服务进行适配器。  

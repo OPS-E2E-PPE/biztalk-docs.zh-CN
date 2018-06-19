@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 适配器包常见问题 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 适配器包常见问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0cdaf09a-50fe-4f30-bd9d-60e316351846
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227085"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 常见问题 (Faq) 有关[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 [解决 SQL 适配器](../adapters-and-accelerators/adapter-sql/troubleshoot-the-sql-adapter.md)  
   
 ### <a name="are-performance-counters-available-for-the-adapters"></a>是否性能计数器可用于适配器？  
-是。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]提供**LOB 时间 （的累积）**性能计数器，以测量的时间，以毫秒为单位，LOB 客户端库所需完成某项操作启动的适配器。  可以通过设置中启用性能计数器`EnablePerformanceCounters`属性绑定到**True**。 若要禁用性能计数器，设置`EnablePerformanceCounters`到**False** （默认值）。   
+是。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]提供**LOB 时间 （的累积）** 性能计数器，以测量的时间，以毫秒为单位，LOB 客户端库所需完成某项操作启动的适配器。  可以通过设置中启用性能计数器`EnablePerformanceCounters`属性绑定到**True**。 若要禁用性能计数器，设置`EnablePerformanceCounters`到**False** （默认值）。   
 
 ## <a name="biztalk-server-questions"></a>BizTalk Server 问题
 

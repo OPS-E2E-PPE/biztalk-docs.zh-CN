@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建与交互应用商店应用和向前 （请求） 方案的动态发送端口业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建与交互应用商店应用和向前 （请求） 方案的动态发送端口业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbc97cc6-e818-43a1-8224-49b2842bd777
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223197"
 ---
 # <a name="step3-create-an-orchestration-with--dynamic-send-port-for-the-interact-store-and-forward-pull-scenario"></a>步骤 3： 创建与交互应用商店应用和向前 （请求） 方案的动态发送端口业务流程
 在开始此部分中的步骤之前，必须完成中的步骤[步骤 2c： 添加交互应用商店应用和向前 （请求） 方案交互发送端口](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)部分。  

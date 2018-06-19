@@ -27,6 +27,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25970667"
 ---
 # <a name="how-to-configure-send-ports-using-windows-sharepoint-services-context-properties"></a>如何配置发送端口使用 Windows Sharepoint Services 上下文属性
 本主题介绍如何使用 BizTalk 业务流程中的 Windows SharePoint Services 上下文属性在运行时配置 Windows Sharepoint Services 发送端口。 这一机制还可用于配置 Windows SharePoint Services 动态和后期绑定发送端口。 动态发送端口的配置属性是在运行时通过业务流程设置的。 适配器属性中公开 **Windows SharePoint Services 传输属性** 对话框还可应用于动态或后期绑定的发送端口。 若要使用 Windows Sharepoint Services 适配器上下文属性为动态或后期绑定发送端口设置配置属性，请执行以下步骤：  

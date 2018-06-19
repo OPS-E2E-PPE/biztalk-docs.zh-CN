@@ -1,14 +1,14 @@
 ---
-title: "收集异常和修复，重新提交路由消息 |Microsoft 文档"
-ms.custom: 
+title: 收集异常和修复，重新提交路由消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a61658a-0bac-4802-b506-02e61a3d2a9b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006758"
 ---
 # <a name="collecting-exceptions-and-routing-messages-for-repair-and-resubmit"></a>收集异常和修复，重新提交路由消息
 在使用此种情况下，自定义异常处理程序选取通过 Web 服务收到的错误消息，并将它路由到中随附的 InfoPath 模板与兼容的格式为磁盘文件[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 用户可以使用 Microsoft InfoPath 打开文件，编辑消息内容，然后重新提交以进行处理，该消息，如图 1 中所示。  

@@ -1,17 +1,17 @@
 ---
-title: "编程 Guide2 |Microsoft 文档"
-ms.custom: 
+title: 编程 Guide2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, programming guide
 - programming guide
 ms.assetid: 37573687-85ab-4899-bbe1-05e15637e32b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005574"
 ---
 # <a name="programming-guide"></a>编程指南
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 编程指南旨在为使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 编写代码的开发人员讲解概念和步骤。 将本指南中结合使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 帮助。  

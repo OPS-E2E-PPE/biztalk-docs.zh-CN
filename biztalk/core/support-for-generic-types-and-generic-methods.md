@@ -1,14 +1,14 @@
 ---
-title: "对泛型类型和泛型方法的支持 |Microsoft 文档"
-ms.custom: 
+title: 对泛型类型和泛型方法的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc6b5b51-e084-4828-ad25-9209aa74dc6f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972315"
 ---
 # <a name="support-for-generic-types-and-generic-methods"></a>对泛型类型和泛型方法的支持
 规则引擎支持在规则中使用专用的泛型类型和专用的泛型方法。 但不支持在规则中使用泛型类型和泛型方法本身。 例如，在业务规则可以使用**列表**\<*int*\>，但不是**列表**\<T\> （从**System.Collections.Generic** .NET 类库中的命名空间)。 目前，业务规则编辑器工具不支持使用专用的泛型类型和专用的泛型方法创建规则。 您必须使用规则引擎对象模型通过编程方式来创建规则。 下面的示例代码演示如何使用**列表**业务规则中的泛型类：  

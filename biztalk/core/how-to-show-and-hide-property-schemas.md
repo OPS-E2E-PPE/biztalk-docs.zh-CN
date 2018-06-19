@@ -1,11 +1,11 @@
 ---
-title: "如何显示和隐藏属性架构 |Microsoft 文档"
-ms.custom: 
+title: 如何显示和隐藏属性架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [schemas], showing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [schemas], hiding
 - managing [schemas], properties
 ms.assetid: e7cc1838-cc3f-4dd3-a7d1-e66e7ee82d0c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255469"
 ---
 # <a name="how-to-show-and-hide-property-schemas"></a>如何显示和隐藏属性架构
 本主题介绍如何使用 BizTalk Server 管理控制台在应用程序 Schemas 文件夹中显示和隐藏属性架构。 属性架构是 BizTalk 架构的简化版本，它在实例消息和消息上下文之间来回复制升级属性的过程中起到一定作用。 可能要隐藏属性架构以简化架构视图，从而只显示文档架构。  

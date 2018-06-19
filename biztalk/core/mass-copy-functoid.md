@@ -1,11 +1,11 @@
 ---
-title: "成批复制 Functoid |Microsoft 文档"
-ms.custom: 
+title: 成批复制 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - anyAttribute node
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - any node
 - Mass Copy functoids
 ms.assetid: 228ff569-2e21-4e81-b564-6936241cdf6b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262653"
 ---
 # <a name="mass-copy-functoid"></a>“批量复制”functoid
 **大容量复制**functoid 使你使用包含的架构的映射**任何**和**anyAttribute**元素。 实际上，这些元素是 XML 架构定义语言为匹配未知结构或属性而提供的通配符。  

@@ -1,11 +1,11 @@
 ---
-title: "向外扩展发送主机 |Microsoft 文档"
-ms.custom: 
+title: 向外扩展发送主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - hosts, sending
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - hosts, scaling
 - adapters, scaling
 ms.assetid: a3d79e0b-8c1e-471c-88e2-623600dfd81a
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007742"
 ---
 # <a name="scaled-out-sending-hosts"></a>扩展的发送主机
 向外扩展的发送主机可确保中的发送功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]高度可用。 如果向发送消息的主机添加多台计算机，您就可以运行多个发送主机实例以实现冗余和高可用性。  

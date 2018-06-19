@@ -1,11 +1,11 @@
 ---
-title: "在映射中的链接 |Microsoft 文档"
-ms.custom: 
+title: 在映射中的链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoid types, Looping
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, links
 - BizTalk Mapper, links
 ms.assetid: 3db77b8d-7b86-4c00-99a0-0513aff9b56b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262085"
 ---
 # <a name="links-in-maps"></a>在映射中的链接
 链接指定将数据从输入实例消息中的元素或属性复制到输出实例中的元素或属性的基本功能。 设计时在源架构和目标架构中的记录和字段之间创建链接。 这样可以在运行时从符合源架构的输入实例消息创建符合目标架构的输出实例消息。  

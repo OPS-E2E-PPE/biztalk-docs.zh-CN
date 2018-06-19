@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec290d38-0220-4bf2-b596-2d6453e51c8d
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: d0632f7e4217cb9bbccd2ee604688f22eb6de348
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250977"
 ---
 # <a name="how-to-delete-an-affiliate-application"></a>如何删除关联应用程序
 使用 Mmc 管理单元或**deleteapps**命令以从凭据数据库中删除指定的关联应用程序。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 03/28/2018
   
      默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
   
-3.  类型`ssomanage –deleteapp <application name>`，其中*\<应用程序名称 >*是你想要从凭据数据库中删除关联应用程序的名称。  
+3.  类型`ssomanage –deleteapp <application name>`，其中*\<应用程序名称 >* 是你想要从凭据数据库中删除关联应用程序的名称。  
   
 ## <a name="see-also"></a>另请参阅  
  [SSO 关联应用程序](../esso/sso-affiliate-applications.md)   

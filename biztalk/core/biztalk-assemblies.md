@@ -1,15 +1,15 @@
 ---
-title: "如何部署 BizTalk Server 中的程序集 |Microsoft 文档"
-description: "将程序集部署到 GAC 中，并启用 BizTalk Server 中的程序集的版本控制"
-ms.custom: 
+title: 如何部署 BizTalk Server 中的程序集 |Microsoft 文档
+description: 将程序集部署到 GAC 中，并启用 BizTalk Server 中的程序集的版本控制
+ms.custom: ''
 ms.date: 01/21/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7f99ed5-b64a-4a38-99d7-83070fb69030
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006110"
 ---
 # <a name="biztalk-assemblies"></a>BizTalk 程序集
 Microsoft BizTalk Server 和 .NET Framework 最重要的一个方面是：所有 BizTalk Server 项目（映射、架构、业务流程和管道）都已编译到 .NET 程序集中。 此设计的两个最重要含义是：这些程序集必须具有强名称，为此它们还需遵守 .NET 版本控制规则。 其主要含义是：根据特定版本的其他 .NET 项目或程序集（包括 BizTalk 项目）生成 BizTalk 项目后，该 BizTalk 项目将继续使用该版本，直到根据更高的版本重新生成该 BizTalk 项目。  

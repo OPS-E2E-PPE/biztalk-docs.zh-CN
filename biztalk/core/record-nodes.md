@@ -1,14 +1,14 @@
 ---
-title: "记录节点 |Microsoft 文档"
-ms.custom: 
+title: 记录节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 43af077d-5db8-43ca-8bd0-e3a9e3ebe2b0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268493"
 ---
 # <a name="record-nodes"></a>“记录”节点
 在 BizTalk 编辑器中，使用**记录**节点表示的信息，其中的各个项可以是集合：  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
  当以外的三个属性节点之一的任何子节点 (**字段特性**，**属性组**，和**任何属性**) 添加到**记录**节点，默认情况下它放在**序列**中的元素**complexType**元素。 **序列**时添加，并且如果删除所有非属性子节点中删除第一个非属性子节点添加元素。 中添加的所有三种类型的属性节点**complexType**元素，但外部和之后任何**序列**元素。  
   
- **序列**元素内的非属性添加子节点也可以是**选择**或**所有**元素，如果你更改**组顺序类型 （节点所有架构的属性）**属性的架构关系树中的相应节点**选择**或**所有**分别。  
+ **序列**元素内的非属性添加子节点也可以是**选择**或**所有**元素，如果你更改**组顺序类型 （节点所有架构的属性）** 属性的架构关系树中的相应节点**选择**或**所有**分别。  
   
  在下面的示例中，**记录**节点已被重命名的 shipTo。 中的位置**记录**添加属性和非属性节点下的节点显示在括号中。  
   

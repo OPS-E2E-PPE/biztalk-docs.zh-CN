@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 创建示例 XML BeginDoc1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建示例 XML BeginDoc1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e494b4b2-4c83-4293-8ae8-acae29018e7f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276725"
 ---
 # <a name="step-4-create-a-sample-xml-begindoc"></a>步骤 4： 创建示例 XML BeginDoc
 保存到 XML 文件以下。 如果您的测试使用本例中的步骤，并且使用示例的 J.D. Edwards OneWorld 对象选择，[JDE://CSALES/B4200310]，你可以将此放到输入文件夹和它出指定的文件夹 （绑定到 EndDocOut 端口的文件夹） 出现。  

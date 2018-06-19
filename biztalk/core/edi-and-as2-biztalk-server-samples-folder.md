@@ -1,14 +1,14 @@
 ---
-title: "EDI 和 AS2 （BizTalk Server 的示例文件夹） |Microsoft 文档"
-ms.custom: 
+title: EDI 和 AS2 （BizTalk Server 的示例文件夹） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: faea052e-b891-4f00-9a45-6ed17e588702
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005775"
 ---
 # <a name="edi-and-as2-biztalk-server-samples-folder"></a>EDI 和 AS2（BizTalk Server 示例文件夹）
 Microsoft BizTalk Server 在其软件开发工具包 (SDK) 中包含的以下的 EDI 和 AS2 示例。 本部分提供了有关这些 EDI 示例所演示的功能、用于生成和运行这些示例的说明以及预期结果的详细信息。  

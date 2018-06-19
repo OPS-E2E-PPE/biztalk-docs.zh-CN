@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: ec518c16383d847bf13706a6469b038b447c1543
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013652"
 ---
 # <a name="how-to-create-send-ports-for-peoplesoft-enterprise"></a>如何创建 PeopleSoft Enterprise 的发送端口
 请按照下列步骤以创建发送端口使用 BizTalk Server 管理控制台。  

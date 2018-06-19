@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289245"
 ---
 # <a name="what-is-the-wcf-netnamedpipe-adapter"></a>WCF-NetNamedPipe 适配器概述
 WCF-NetNamedPipe 适配器在服务和客户端都是基于 WCF 的环境中的同一计算机上提供跨进程通信。 它提供了对 SOAP 可靠性和事务功能的完全访问。 适配器使用命名管道传输，消息采用二进制编码。 此适配器无法用于计算机间的通信。  

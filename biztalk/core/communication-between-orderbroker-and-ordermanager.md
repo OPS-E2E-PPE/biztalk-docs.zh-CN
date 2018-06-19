@@ -1,17 +1,17 @@
 ---
-title: "OrderBroker 和 OrderManager 之间的通信 |Microsoft 文档"
-ms.custom: 
+title: OrderBroker 和 OrderManager 之间的通信 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, publishing [MessageBox database]
 - MessageBox database, publishing
 ms.assetid: 1b77dcd2-f7a5-4013-b9a2-c06ace161792
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231869"
 ---
 # <a name="communication-between-orderbroker-and-ordermanager"></a>OrderBroker 和 OrderManager 之间的通信
 顺序 broker 和顺序 manager 业务流程 (**OrderBroker**， **OrderManager**) 通过 MessageBox 数据库，而不是直接合作伙伴绑定进行通信。 这可确保，在以便它们，如有必要，可以在不同的 BizTalk 组和地理位置的位置所在松散耦合的代理和管理器。 分隔这种方式的业务流程需要仅管理配置，并不需要的任何代码更改。  

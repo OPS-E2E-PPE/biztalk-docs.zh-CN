@@ -1,18 +1,18 @@
 ---
-title: "业务规则引擎安全建议 |Microsoft 文档"
-ms.custom: 
+title: 业务规则引擎安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, business rules
 - Business Rules Framework, security
 - business rules, security
 ms.assetid: d5df1cd0-112a-4c72-b95d-cbcd1bc6a2c3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231941"
 ---
 # <a name="business-rule-engine-security-recommendations"></a>业务规则引擎安全建议
 业务规则引擎是业务规则框架的运行时组件。 使用业务规则框架，可以将可读性高、声明性强和语义丰富的规则连接到任何业务对象（.NET 组件）、XML 文档或数据库表。 业务规则框架有关的详细信息，请参阅[创建和使用业务规则](../core/creating-and-using-business-rules.md)。 有关业务规则引擎的详细信息，请参阅[规则引擎](../core/rule-engine.md)。  

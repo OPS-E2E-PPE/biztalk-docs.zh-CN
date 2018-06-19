@@ -1,14 +1,14 @@
 ---
-title: "安装路线上负载增加示例 |Microsoft 文档"
-ms.custom: 
+title: 安装路线上负载增加示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebe08b84-dc12-4501-8677-15a32e4795a3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294397"
 ---
 # <a name="installing-the-itinerary-on-ramp-sample"></a>安装路线上负载增加示例
 路线入口示例依赖于[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心解决方案、 动态解析示例中和解析程序服务示例。 安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]核心自动将复制和安装此示例为正确的位置所需的核心程序集。 安装动态解析示例和解析程序服务示例可确保，Web 服务和业务规则引擎策略路线上负载增加示例使用正确安装和配置。  

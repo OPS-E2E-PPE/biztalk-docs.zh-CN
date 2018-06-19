@@ -1,15 +1,15 @@
 ---
-title: "管理架构 |Microsoft 文档"
-description: "使用 BizTalk 管理可以使用架构在 BizTalk Server 中，包括显示和隐藏属性，查看 XSD，启用跟踪"
-ms.custom: 
+title: 管理架构 |Microsoft 文档
+description: 使用 BizTalk 管理可以使用架构在 BizTalk Server 中，包括显示和隐藏属性，查看 XSD，启用跟踪
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c5632e79-b182-41c9-9138-eb88b44e3172
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262597"
 ---
 # <a name="manage-schemas"></a>管理架构
 

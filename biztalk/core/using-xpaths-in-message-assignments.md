@@ -1,11 +1,11 @@
 ---
-title: "在消息分配中使用 Xpath |Microsoft 文档"
-ms.custom: 
+title: 在消息分配中使用 Xpath |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XPaths, XPath function
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - XPaths, code samples
 - XPaths, nodes
 ms.assetid: f2e12409-bb77-4315-b03b-5c7736ae51d5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288109"
 ---
 # <a name="using-xpaths-in-message-assignments"></a>在消息分配中使用 Xpath
 你可以使用**xpath**函数将一个 XPath 值分配到消息部分，或将值分配给 XPath 引用消息部分。 将分配给消息和消息部分的详细信息，请参阅[构造消息](../core/constructing-messages.md)。  

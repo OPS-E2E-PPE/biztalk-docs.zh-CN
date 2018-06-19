@@ -1,14 +1,14 @@
 ---
-title: "针对灾难恢复进行规划 |Microsoft 文档"
-ms.custom: 
+title: 针对灾难恢复进行规划 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a33e8875-cfde-4a60-9dab-fc6bb3ac4f1c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008973"
 ---
 # <a name="planning-for-disaster-recovery"></a>针对灾难恢复进行规划
 本主题提供灾难恢复要求的应用程序团队和 BizTalk Server 的过程指南。 Microsoft BizTalk Server 配置和处理将信息存储在[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 BizTalk Server 高可用性和灾难恢复通过的高可用性和灾难恢复功能[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  

@@ -1,15 +1,15 @@
 ---
-title: "与 BizTalk Server 中的 RosettaNet 快捷键的已知问题 |Microsoft 文档"
-description: "请参阅已知的问题和解决方法与 0A1 通知，失败、 BAM、 安装和配置，并更在 BizTalk Server 中的 BTARN"
-caps.latest.revision: "11"
+title: 与 BizTalk Server 中的 RosettaNet 快捷键的已知问题 |Microsoft 文档
+description: 请参阅已知的问题和解决方法与 0A1 通知，失败、 BAM、 安装和配置，并更在 BizTalk Server 中的 BTARN
+caps.latest.revision: 11
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010774"
 ---
 # <a name="known-issues"></a>已知问题
 本节介绍的有用信息有助于在使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 时避免错误。 已知问题归为以下几个方面：  

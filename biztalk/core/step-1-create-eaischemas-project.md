@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 创建 EAISchemas 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建 EAISchemas 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a14ee61-fa27-4f03-997e-42c34a77afee
-caps.latest.revision: "55"
+caps.latest.revision: 55
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277653"
 ---
 # <a name="step-1-create-eaischemas-project"></a>步骤 1：创建 EAISchemas 项目
 ![步骤 1 5](../core/media/step-1of5.gif "Step_1of5")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，你创建一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案和项目。  
+ **目标：** 在此步骤中，你创建一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]解决方案和项目。  
   
  **用途：** BizTalk 项目系统用于创建部分或全部[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]应用程序或业务解决方案。 这些解决方案的核心元素是 BizTalk 项目，它是可在部署程序集之前构建并生成到该程序集中的项（例如架构、业务流程、Web 消息类型、类、管道、映射和引用）的集合。  
   

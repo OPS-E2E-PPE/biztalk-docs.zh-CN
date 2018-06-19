@@ -17,7 +17,7 @@ helpviewer_keywords:
 - TypedDataRow class
 - TypedXmlDocument class
 ms.assetid: 8207bfd5-ebd2-45ac-8992-795acdf3ba4c
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22287221"
 ---
 # <a name="typed-facts"></a>类型化的事实
 *类型化事实* 是实现的类 **ITypedFact** 接口︰ **TypedXmlDocument**, ，**该组**, ，**TypedDataTable**, ，和 **TypedDataRow**。  

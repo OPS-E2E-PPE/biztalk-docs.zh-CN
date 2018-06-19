@@ -1,14 +1,14 @@
 ---
-title: "拦截器管理命令 |Microsoft 文档"
-ms.custom: 
+title: 拦截器管理命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2be6460-1f81-4bc3-a831-34ff24d65d34
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974387"
 ---
 # <a name="interceptor-management-commands"></a>侦听器管理命令
 为了支持新的 BAM 侦听器功能，在 BAM 管理实用程序中添加了四个新命令。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
 -   删除侦听器： 删除的侦听器配置。  
   
 > [!NOTE]
->  你可以通过包括启用任何 BM 实用工具命令的跟踪**-跟踪： 在 &#124; 关闭**参数交换机。 使用 Trace 开关将重写配置文件中的跟踪设置。 该开关可与所有标准 BM 命令一起使用。  
+>  你可以通过包括启用任何 BM 实用工具命令的跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。 使用 Trace 开关将重写配置文件中的跟踪设置。 该开关可与所有标准 BM 命令一起使用。  
   
 > [!NOTE]
 >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -57,10 +58,10 @@ ms.lasthandoff: 11/28/2017
   
 -   验证活动存在（部署在主导入数据库中）且检查点有效（存在并具有匹配的数据类型）。  
   
- 如果在事件源名称中检测到冲突，则发出描述冲突的警告。 对于冲突，部署将失败，除非**– Force: True**参数标记用于。  
+ 如果在事件源名称中检测到冲突，则发出描述冲突的警告。 对于冲突，部署将失败，除非 **– Force: True**参数标记用于。  
   
 > [!NOTE]
->  **– Force: True**参数可能会删除引用具有相同名称的事件源的侦听器配置。 应使用**get 侦听器**命令以在使用之前创建的现有侦听器配置备份**– Force: True**参数。  
+>  **– Force: True**参数可能会删除引用具有相同名称的事件源的侦听器配置。 应使用**get 侦听器**命令以在使用之前创建的现有侦听器配置备份 **– Force: True**参数。  
   
  **示例**  
   

@@ -1,14 +1,14 @@
 ---
-title: "规划对其进行跟踪 |Microsoft 文档"
-ms.custom: 
+title: 规划对其进行跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8ffc8573-1b4a-47c7-96ab-0471f43facf5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302077"
 ---
 # <a name="planning-for-tracking"></a>规划对其进行跟踪
 邮件跟踪是依据的部分消息实例，如消息正文、 消息属性和元数据将存储在数据库中，通常用于存档目的的过程。 随后可以通过从中的组中心数据库页运行查询来查看跟踪的消息实例部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 除了访问已存档的数据，还可以查看实时数据，这可能非常有用的工具进行标识和修复开发中的问题或过渡环境。  

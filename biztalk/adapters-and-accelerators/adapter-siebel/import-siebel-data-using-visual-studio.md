@@ -1,14 +1,14 @@
 ---
-title: "导入使用 Visual Studio 的 Siebel 数据 |Microsoft 文档"
-ms.custom: 
+title: 导入使用 Visual Studio 的 Siebel 数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 33701361-eca2-4795-a5e0-78162a98e9ba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450502"
 ---
 # <a name="import-siebel-data-using-visual-studio"></a>使用 Visual Studio 的 Siebel 数据导入
 本部分提供有关如何使用 Microsoft 的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]从 Siebel 系统到 SQL Server 数据库导入数据。 它还提供有关如何创建和执行 SSIS 包导入此数据的说明。  

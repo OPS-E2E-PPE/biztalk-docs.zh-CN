@@ -1,15 +1,15 @@
 ---
-title: "使用业务活动监视 |Microsoft 文档"
-description: "要开始使用业务活动监视 (BAM) BizTalk Server 中"
-ms.custom: 
+title: 使用业务活动监视 |Microsoft 文档
+description: 要开始使用业务活动监视 (BAM) BizTalk Server 中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8e01f54f-1d7f-4aed-ad14-2aeae716fd58
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286997"
 ---
 # <a name="using-business-activity-monitoring"></a>使用业务活动监视
 使用业务活动监视 (BAM)，您可以对独立于 IT 环境或跨异类 IT 实施的业务流程一目了然。 这将 BAM 与操作监视此类消息和实例监视区分开来。 BAM 的关键特征是能够尽可能实时地（指没有延迟）查看业务数据。  

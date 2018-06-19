@@ -1,11 +1,11 @@
 ---
-title: "规则 |Microsoft 文档"
-ms.custom: 
+title: 规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, actions
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - business rules, facts
 - business rules
 ms.assetid: b288dd07-33f1-42fe-bbfb-02674ef3b3ca
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268773"
 ---
 # <a name="rules"></a>规则
 业务规则是规定的业务流程开展的声明性语句。 规则由条件和操作组成。 对条件进行评估，如果其计算结果为**true**，规则引擎启动一个或多个操作。  

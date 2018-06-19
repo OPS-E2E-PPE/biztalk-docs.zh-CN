@@ -1,14 +1,14 @@
 ---
-title: "Windows PowerShell 脚本 |Microsoft 文档"
-ms.custom: 
+title: Windows PowerShell 脚本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9848e3ed-8686-4bb8-b8f5-7e3111a83177
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976339"
 ---
 # <a name="windows-powershell-scripts"></a>Windows PowerShell 脚本
 本主题包含可以在 BizTalk Server 环境，将在本指南中描述的注册表设置中的计算机运行的 Windows PowerShell 脚本。  

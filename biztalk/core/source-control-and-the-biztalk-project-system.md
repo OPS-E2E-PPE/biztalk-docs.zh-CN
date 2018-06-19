@@ -1,18 +1,18 @@
 ---
-title: "源控件和 BizTalk 项目系统 |Microsoft 文档"
-ms.custom: 
+title: 源控件和 BizTalk 项目系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft Source Code Control Interface (MSSCCI)
 - projects, security
 - security, projects
 ms.assetid: 0f5c2f4d-5e16-4277-b750-60813a3ff964
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008198"
 ---
 # <a name="source-control-and-the-biztalk-project-system"></a>源代码管理和 BizTalk 项目系统
 源代码管理是一种机制，其中有一个核心软件部分存储和跟踪文件版本，并控制哪些人员可访问这些文件。 使用源代码管理时，你可以执行以下操作：  

@@ -1,11 +1,11 @@
 ---
-title: "演练： 模块 2-集成 Office 与 Windows SharePoint Services 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 模块 2-集成 Office 与 Windows SharePoint Services 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services adapters, InfoPath forms
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Windows SharePoint Services adapter tutorials, integrating Microsoft Office
 - Windows SharePoint Services, document libraries
 ms.assetid: 2f81a712-bb20-4c32-bbac-fb438deded38
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291453"
 ---
 # <a name="walkthrough-module-2---integrating-office-with-the-windows-sharepoint-services-adapter"></a>演练： 模块 2-与 Windows SharePoint Services Adapter 集成 Office
 本演练是的延续[演练： 模块 1-发送和接收消息与 Windows SharePoint Services Adapter](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)并演示如何集成与 Microsoft Office[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]基于内容的创建路由 (CBR) 应用程序。 有关 Windows SharePoint Services 适配器的简介，请参阅[什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)。  

@@ -1,11 +1,11 @@
 ---
-title: "WCF 发送适配器 |Microsoft 文档"
-ms.custom: 
+title: WCF 发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Web services, headers
 - WCF adapters, send adapters
 ms.assetid: 226a020a-2e12-41fe-a4a2-6683d9e98219
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288757"
 ---
 # <a name="wcf-send-adapter"></a>WCF 发送适配器
 WCF 发送适配器允许您通过无类型的协定调用 WCF 服务。  
@@ -56,7 +57,7 @@ WCF 发送适配器允许您通过无类型的协定调用 WCF 服务。
 -   如果 BizTalk 消息包含任意 XML 数据，则会将 BizTalk 消息放置到 SOAP 正文元素中。  
   
 ## <a name="handling-web-services-headers"></a>处理 Web Services 标头  
- 在发送操作期间，BizTalk Server 无法控制 Web Services 标准标头。 这些标头会通过 WCF 进行设置和处理。 可以修改 BizTalk 服务器应用程序的唯一的标准标头是**： 操作**标头。 如果上下文属性**操作**适配器命名空间，则 WCF 发送适配器将使用属性的值设置指定**操作**对 SOAP 消息。  
+ 在发送操作期间，BizTalk Server 无法控制 Web Services 标准标头。 这些标头会通过 WCF 进行设置和处理。 可以修改 BizTalk 服务器应用程序的唯一的标准标头是 **： 操作**标头。 如果上下文属性**操作**适配器命名空间，则 WCF 发送适配器将使用属性的值设置指定**操作**对 SOAP 消息。  
   
 > [!NOTE]
 >  要进行动态发送端口，如果**操作**中指定**OutboundHeaders**，为设置的上下文属性**WCF。操作**将被忽略。  

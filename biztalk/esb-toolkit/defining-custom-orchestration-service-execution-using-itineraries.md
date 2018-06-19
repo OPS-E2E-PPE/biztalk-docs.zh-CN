@@ -1,14 +1,14 @@
 ---
-title: "定义自定义业务流程服务执行使用路线 |Microsoft 文档"
-ms.custom: 
+title: 定义自定义业务流程服务执行使用路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6089169d-2fa1-4f81-afe1-db9d90a10382
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007427"
 ---
 # <a name="defining-custom-orchestration-service-execution-using-itineraries"></a>定义自定义业务流程服务执行使用路线
 在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。 路线指定一个或多个自定义业务流程或消息将传递在处理周期内的进程。 自定义业务流程具有完全控制路线及其消息上下文中公开的其他自定义属性。 （可选） 路线可以包含确定转换要求和消息的终结点的动态解析信息。 图 1 说明的过程的示意图。  

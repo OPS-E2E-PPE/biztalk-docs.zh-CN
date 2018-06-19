@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d563aa7d-102d-4fe6-a892-66794feaf83b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010710"
 ---
 # <a name="using-the-performance-analysis-of-logs-pal-tool"></a>使用日志 (PAL) 工具的性能分析
 PAL （性能分析的日志） 工具读取性能监视器计数器日志 （任何已知格式） 中，并使用复杂，但已知阈值 （提供） 进行分析。 该工具生成基于 HTML 报告，以图形方式图表重要的性能计数器，并引发警报时超出阈值。 阈值最初根据阈值定义的 Microsoft 产品团队包括[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，和成员的 Microsoft 支持。 此工具不是传统的性能分析的替代，但它可自动执行的性能计数器日志足够来帮助您节省大量时间的分析。 PAL 工具中：  
@@ -80,7 +81,7 @@ PAL （性能分析的日志） 工具读取性能监视器计数器日志 （�
 |Microsoft BizTalk Server: BizTalk 高进程内存|限制阈值设置的 BizTalk 进程内存使用量是内存的相比工作集大小和进程的总可用虚拟内存的总和，如果输入从 1 到 100 之间的值所使用百分比。 在指定百分比值时，将按固定的时间间隔来重新计算进程内存阈值。 此分析检查 1 中的高进程内存计数器的值。 详细信息，请参阅本主题中的到 BizTalk 高进程内存分析。|  
 |Microsoft BizTalk Server: BizTalk 高系统内存|BizTalk 物理内存使用情况限制阈值设置为输入相比从 1 到 100 之间的可用物理内存的值如果总量的内存消耗的百分比。 如果输入大于 100 的值，此设置也可以在兆字节为单位的可用物理内存的总量。 输入值 0 可以禁用基于物理内存使用率的阻止功能。 默认值为 0。 详细信息，请参阅本主题中的到 BizTalk 高的系统内存分析。|  
 |Microsoft BizTalk Server: BizTalk 高线程计数|"每个 CPU 线程数"是宿主进程包括由适配器使用的线程中的线程总数。 如果超出此阈值，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将尝试减小 EPM 线程池和消息代理线程池的大小。 如果高负载可能导致创建大量线程，则在这种情况下，应启用基于线程的阻止功能。 此参数同时影响入站和出站阻止功能。 默认情况下，禁用基于线程限制。 详细信息，请参阅本主题中的 BizTalk 高线程计数分析。|  
-|Microsoft BizTalk Server: BizTalk 主机队列长度|BizTalk 主机队列长度跟踪特定主机队列中的邮件总数。 可以使用长度大小 （即，BizTalk:MessageBox:HostCounters:Host 队列 – 长度） 来提供更详细的视图的正在排队内部通过显示各个主机的队列深度的消息数。 此计数器可确定是否遇到瓶颈特定主机。 假定唯一主机使用的每个传输协议，这可以帮助确定潜在传输瓶颈。 此分析检查平均队列长度大于 1。 目标主机上的情况下，主机队列长度是通过聚合所有队列 (工作 Q，状态 Q 挂起 Q) 的记录计数的加权的队列长度。<br /><br /> 参考： BizTalk Server 2006： 管理在一个成功性能实验室[ http://go.microsoft.com/fwlink/?linkid=104152 ](http://go.microsoft.com/fwlink/?linkid=104152) **注意：**这份白皮书也是适用于 BizTalk Server。|  
+|Microsoft BizTalk Server: BizTalk 主机队列长度|BizTalk 主机队列长度跟踪特定主机队列中的邮件总数。 可以使用长度大小 （即，BizTalk:MessageBox:HostCounters:Host 队列 – 长度） 来提供更详细的视图的正在排队内部通过显示各个主机的队列深度的消息数。 此计数器可确定是否遇到瓶颈特定主机。 假定唯一主机使用的每个传输协议，这可以帮助确定潜在传输瓶颈。 此分析检查平均队列长度大于 1。 目标主机上的情况下，主机队列长度是通过聚合所有队列 (工作 Q，状态 Q 挂起 Q) 的记录计数的加权的队列长度。<br /><br /> 参考： BizTalk Server 2006： 管理在一个成功性能实验室[ http://go.microsoft.com/fwlink/?linkid=104152 ](http://go.microsoft.com/fwlink/?linkid=104152) **注意：** 这份白皮书也是适用于 BizTalk Server。|  
 |Microsoft BizTalk Server: BizTalk 主机挂起消息队列长度|此计数器跟踪特定主机的挂起的消息总数。 将挂起的消息是消息或业务流程的一个实例，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已停止处理因出错而系统或消息中。 通常，根据系统问题的解决办法，由系统错误导致的挂起实例是可恢复的。 通常情况下，由于消息问题而挂起的实例不是可恢复，并且必须修复和重新提交到消息本身[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。<br /><br /> 挂起的消息队列是一个包含工作项，为其错误或失败期间遇到处理的队列。 挂起队列将一直存储这些消息，直到它们被纠正、重新处理或被删除。 此分析检查挂起的任何的消息匹配项。 上升趋势可能表示严重处理错误。<br /><br /> 参考： BizTalk Server 2004： 监视和在故障排除 [http://go.microsoft.com/fwlink/?linkid=108771](http://go.microsoft.com/fwlink/?linkid=108771)|  
 |BizTalk Server: BizTalk 空闲业务流程|当前以主机实例为宿主的空闲业务流程实例的数量。 此计数器是指业务流程，不需要进度但不是可冻结。 业务流程被阻止时，发生这种情况，可以等待接收，侦听或原子事务的延迟时间。 如果大量的非可冻结业务流程会累积，BizTalk 可能用尽内存。<br /><br /> 冻结是将业务流程的状态序列化到 SQL Server 数据库中的过程。 Rehydration 是此过程的反向︰ 反序列化从数据库的业务流程的上次运行状态。 冻结用于通过减少必须在内存中同时实例化的业务流程数来最大程度地降低系统资源的使用。 引擎 dehydrates 实例的保存状态，并释放的实例所需的内存。 通过冻结休眠业务流程实例过程中，引擎使大量的长时间运行业务流程，以同时在同一台计算机上运行。 此分析检查每小时一个空闲的业务流程的上升趋势。<br /><br /> 参考： Orchestration 冻结和在 Rehydration  [http://go.microsoft.com/fwlink/?LinkId=155284](http://go.microsoft.com/fwlink/?LinkId=155284)|  
 |BizTalk Server： 入站 BizTalk 延迟|平均延迟消息引擎文档从接收适配器之前发布到 MessageBox 的时间 （毫秒）。 减少延迟是重要的 BizTalk，某些用户因此跟踪时间文档在入站适配器中的花费多少是很重要。 详细信息，请参阅本主题中的 BizTalk 入站延迟分析。|  

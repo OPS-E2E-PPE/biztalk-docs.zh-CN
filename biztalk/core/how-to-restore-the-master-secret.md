@@ -12,7 +12,7 @@ helpviewer_keywords:
 - Master Secret server, restoring
 - restoring, Master Secret server
 ms.assetid: 68e133c5-4591-4d76-9a3b-c9564ff1aa60
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970907"
 ---
 # <a name="how-to-restore-the-master-secret"></a>如何还原主密钥
 在数据恢复过程中，可能需要还原主密钥以重新使用现有的数据。 若要执行此任务，必须使用同时作为 Windows 管理员和 SSO 管理员的帐户登录主密钥服务器。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。  
+4.  类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

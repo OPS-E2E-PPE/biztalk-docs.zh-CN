@@ -1,11 +1,11 @@
 ---
-title: "如何修改 BizTalk 程序集的部署选项 |Microsoft 文档"
-ms.custom: 
+title: 如何修改 BizTalk 程序集的部署选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - modifying, deploying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [assemblies], deploying
 - assemblies, deploying
 ms.assetid: d25e2f71-08bd-4786-ab6c-35ae4e88b8cc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007750"
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a>如何修改 BizTalk 程序集的部署选项
 本主题介绍如何使用 BizTalk Server 管理控制台修改 BizTalk 程序集的部署选项。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
   
 -   **将添加到 MSI 文件安装 (gacutil) 上的全局程序集缓存。** 从 .msi 文件安装应用程序时将程序集安装到本地计算机的 GAC 中。  
   
--   **目标位置：**时安装的应用程序，则将复制到此程序集文件的路径。 如果不提供此路径，则在安装过程中，该程序集文件将不会被复制到本地文件系统。  
+-   **目标位置：** 时安装的应用程序，则将复制到此程序集文件的路径。 如果不提供此路径，则在安装过程中，该程序集文件将不会被复制到本地文件系统。  
   
 ## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。 此外，如果您选择立即将程序集添加到 GAC 中的选项，则您的帐户必须也是本地管理员组的成员。 有关更多详细权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  

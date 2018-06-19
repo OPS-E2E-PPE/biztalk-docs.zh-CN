@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222053"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>要开始使用用于 Siebel eBusiness Applications 的 BizTalk Adapter
 本部分提供的适配器、 先决条件和主题概述的用户的不熟悉 Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 它讨论的功能[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]和可以在使用该适配器的 Siebel 系统执行不同操作。  

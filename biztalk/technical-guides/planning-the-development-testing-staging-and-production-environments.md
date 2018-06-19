@@ -1,14 +1,14 @@
 ---
-title: "规划开发、 测试、 过渡和生产环境 |Microsoft 文档"
-ms.custom: 
+title: 规划开发、 测试、 过渡和生产环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6c83a42d-117f-4a24-a669-b3e4e1c9a056
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008966"
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>规划开发、 测试、 过渡和生产环境
 本主题讨论在发布管理过程中用于 BizTalk 解决方案的环境。 与任何企业软件解决方案，在开发和发布 BizTalk 解决方案时应遵循它成熟的软件版本管理准则。 此过程中应包括以下不同阶段：  

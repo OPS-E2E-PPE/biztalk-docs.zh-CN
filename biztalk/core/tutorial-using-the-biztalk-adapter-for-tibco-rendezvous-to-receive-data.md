@@ -1,15 +1,15 @@
 ---
-title: "教程： 使用 TIBCO 会合适配器接收 |Microsoft 文档"
-description: "分步指南，以便用 TIBCO 会合 BizTalk Server 中的 BizTalk Adapter 来从 TIBCO 系统接收数据"
-ms.custom: 
+title: 教程： 使用 TIBCO 会合适配器接收 |Microsoft 文档
+description: 分步指南，以便用 TIBCO 会合 BizTalk Server 中的 BizTalk Adapter 来从 TIBCO 系统接收数据
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 58e7a739-701d-4085-a840-54f81c55e943
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015436"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data"></a>教程：使用适用于 TIBCO Rendezvous 的 BizTalk 适配器来接收数据
 您可以使用用于 TIBCO Rendezvous 的 BizTalk 适配器接收来自 TIBCO 系统的数据。 本演练描述了对此进行说明的一个 SDK 示例。  
@@ -52,13 +53,13 @@ ms.lasthandoff: 11/07/2017
   
 4.  输入一个值**名称**字段，例如**TIBCO 会合**。  
   
-5.  选择**TIBCO(r) Rendezvous(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
+5.  选择**TIBCO(r) Rendezvous(r)** 从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
   
 ## <a name="step-2-create-a-receive-port"></a>步骤 2： 创建接收端口  
   
 1.  在**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，展开**BizTalk 应用程序 1**，然后单击**接收端口**。  
   
-2.  右键单击接收端口文件夹，然后单击**新建**，**单向接收端口...**以显示**接收端口属性**对话框。  
+2.  右键单击接收端口文件夹，然后单击**新建**，**单向接收端口...** 以显示**接收端口属性**对话框。  
   
 3.  输入一个值**名称**字段，例如**TIBCORvOneWayRP**，然后单击**确定**。  
   

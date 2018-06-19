@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 向解决方案添加 EAIOrchestration 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 向解决方案添加 EAIOrchestration 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9aa0d9-2075-4c7e-8baf-1ecd2721859a
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276861"
 ---
 # <a name="step-1-add-eaiorchestration-project-to-the-solution"></a>步骤 1：向解决方案中添加 EAIOrchestration 项目
 ![步骤 1 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，你可以将第二个项目添加到 EAI 解决方案。 然后再向该新项目添加业务流程。  
+ **目标：** 在此步骤中，你可以将第二个项目添加到 EAI 解决方案。 然后再向该新项目添加业务流程。  
   
- **用途：**创建业务流程单独的项目。 当多个人员使用一个解决方案时，这样做很有帮助。 您可以使用该新业务流程自动执行本课中的业务程序。  
+ **用途：** 创建业务流程单独的项目。 当多个人员使用一个解决方案时，这样做很有帮助。 您可以使用该新业务流程自动执行本课中的业务程序。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  

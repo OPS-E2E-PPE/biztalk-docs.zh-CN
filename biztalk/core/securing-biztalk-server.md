@@ -1,11 +1,11 @@
 ---
-title: "保护 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 保护 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, security
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - security, BizTalk Server
 - SSO, security
 ms.assetid: e4052e6a-dd91-40e9-a42a-7d1b1b2567d5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269229"
 ---
 # <a name="securing-biztalk-server"></a>确保 BizTalk Server 的安全
 本部分提供有关管理安全、 配置用户权限和在 Microsoft 中实现企业单一登录的信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

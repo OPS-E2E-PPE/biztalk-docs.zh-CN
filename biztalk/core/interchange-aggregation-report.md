@@ -1,14 +1,14 @@
 ---
-title: "交换聚合报表 |Microsoft 文档"
-ms.custom: 
+title: 交换聚合报表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4619e8d0-9e9e-4d19-a67a-ac1058a0579b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257877"
 ---
 # <a name="interchange-aggregation-report"></a>交换聚合报表
 此报告中提供的一项记录指明了共享同一 EDI 编码类型、发送方、接收方和方向的 EDI 交换的数量。 此报告不提供有关单个交换的详细信息。  

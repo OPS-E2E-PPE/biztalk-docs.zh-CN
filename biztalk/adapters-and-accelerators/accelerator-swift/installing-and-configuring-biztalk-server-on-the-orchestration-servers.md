@@ -1,17 +1,17 @@
 ---
-title: "上安装和配置 BizTalk Server 业务流程服务器 |Microsoft 文档"
-ms.custom: 
+title: 上安装和配置 BizTalk Server 业务流程服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Server, installing on orchestration server
 - orchestration server, installing BizTalk Server
 ms.assetid: 72376a80-1377-4058-9478-fee668b804d0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004206"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-orchestration-servers"></a>安装和配置 BizTalk Server 业务流程服务器上
 本部分介绍如何安装和配置 BizTalk Server 以用于与业务流程服务器运行消息修复/新建提交业务流程和 FIN 修复和对帐业务流程。  

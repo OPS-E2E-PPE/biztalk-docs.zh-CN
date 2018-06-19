@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66d9badd-00c6-43a3-807e-0ad313983adc
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22278325"
 ---
 # <a name="splitting-hipaa-subdocuments"></a>拆分 HIPAA 子文档
 正如 ST/SE 标头所限定的，用于 HIPAA 的 EDI 交换通常在单个事务集内具有多个子文档。 EDI 接收管道支持从这样的事务集创建单独的 HIPAA 子文档。 这不同于将单个事务集作为单个消息进行处理的非 HIPAA EDI 交换。  

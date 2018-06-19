@@ -1,14 +1,14 @@
 ---
-title: "演练 (X12)： 发送批处理的 EDI 交换 |Microsoft 文档"
-ms.custom: 
+title: 演练 (X12)： 发送批处理的 EDI 交换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b80ea79b-6112-49bd-90e8-9a0a0e604df8
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292029"
 ---
 # <a name="walkthrough-x12-sending-batched-edi-interchanges"></a>演练 (X12)：发送批处理 EDI 交换
 本演练提供了一组使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为在参与方间发送批处理 EDI 交换创建解决方案的分步操作过程。  
@@ -239,14 +240,14 @@ ms.lasthandoff: 09/20/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择**默认**。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择**默认**。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|选择你的测试消息的消息类型**850-采购订单**。|  
         |**版本/发行版**|输入的 EDI 版本中， **00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/BizTalk/Edi/X12/2006**。|  
         |**GS1**|验证是否已选中测试消息的消息类型， **PO-采购订单 (850)**。|  
         |**GS2**|例如，应用程序发件人，输入一个值**购买**。|  
         |**GS3**|例如，为应用程序收件人输入一个值**OrderControl**。|  
-        |**GS4**|选择所需的日期格式。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择所需的日期格式。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择所需的时间格式。|  
         |**GS7**|选择**X 的公认的标准委员会 X12**。|  
         |**GS8**|验证 EDI 版本具有输入**00401**。|  
@@ -278,7 +279,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**传输**部分中，选择**文件**为**类型**，然后单击**配置**。  
   
-5.  输入的文件夹**目标文件夹**，和一个**文件名**，如**%MessageID%.txt**。  
+5.  输入的文件夹**目标文件夹**，和一个**文件名**，如 **%MessageID%.txt**。  
   
 6.  单击 **“确定”**。  
   

@@ -1,11 +1,11 @@
 ---
-title: "如何更新 BAM 项目 |Microsoft 文档"
-ms.custom: 
+title: 如何更新 BAM 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Update-All command [BAM]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - updating, artifacts
 - artifacts, updating
 ms.assetid: bc28159e-df51-499b-bd51-7b682b849891
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971043"
 ---
 # <a name="how-to-update-bam-artifacts"></a>如何更新 BAM 项目
 管理员使用**更新所有**命令以更新在 BAM 主导入数据库中部署的项目。 提供的 BAM 定义是包含有关要更新项目的信息的 XML 文件或 Excel 工作簿。  

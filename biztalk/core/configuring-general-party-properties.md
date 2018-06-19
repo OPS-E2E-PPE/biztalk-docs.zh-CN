@@ -1,14 +1,14 @@
 ---
-title: "配置常规参与方属性 |Microsoft 文档"
-ms.custom: 
+title: 配置常规参与方属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbabf7e5-6388-4900-ad47-cf5d5af396b5
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005646"
 ---
 # <a name="configuring-general-party-properties"></a>配置常规参与方属性
 参与方或贸易合作伙伴表示业务关系中的一个参与组织。 参与方属性包含下列信息：  
@@ -41,8 +42,8 @@ ms.lasthandoff: 12/01/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|输入参与方名称。|  
-    |**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**|选中此复选框以指定该参与方代表托管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的同一个贸易合作伙伴。 **重要说明：**两方 Tpm 使用全新的管道的解决方案附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你必须选择至少一个方此复选框。 **注意：**如果清除此复选框，将创建此参与方的协议时禁用某些属性。|  
-    |**其他属性 – 名称/值**|输入一个名称/值对以存储有关参与方的任何信息。 可以根据需要添加任意数量的名称/值对。 **注意：**名称-值对不用于 BizTalk server 任何处理; 此数据是仅供信息。|  
+    |**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**|选中此复选框以指定该参与方代表托管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的同一个贸易合作伙伴。 **重要说明：** 两方 Tpm 使用全新的管道的解决方案附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你必须选择至少一个方此复选框。 **注意：** 如果清除此复选框，将创建此参与方的协议时禁用某些属性。|  
+    |**其他属性 – 名称/值**|输入一个名称/值对以存储有关参与方的任何信息。 可以根据需要添加任意数量的名称/值对。 **注意：** 名称-值对不用于 BizTalk server 任何处理; 此数据是仅供信息。|  
     |**删除**|单击此项可删除所选的名称/值对。|  
   
 3.  上**发送端口**页**参与方属性**对话框框中，执行以下操作。  

@@ -1,17 +1,17 @@
 ---
-title: "过程管理器逻辑 |Microsoft 文档"
-ms.custom: 
+title: 过程管理器逻辑 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, processing
 - processing, processing logic
 ms.assetid: 6b69fc71-0f01-4513-9361-d7787d0cde6d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264477"
 ---
 # <a name="process-manager-logic"></a>过程管理器逻辑
 本部分介绍如何进程管理器中， **OrderManager**业务流程、 进程订单。 此外，还介绍了各个订单消息中的关键字段，以及新订单和更新的订单通过该业务流程的过程。  

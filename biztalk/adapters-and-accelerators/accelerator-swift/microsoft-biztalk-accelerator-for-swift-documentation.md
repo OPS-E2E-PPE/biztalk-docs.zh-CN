@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Accelerator for SWIFT 文档 |Microsoft 文档"
-description: "快速链接来安装、 配置、 部署、 开始、 安全、 开发和故障排除在 BizTalk Server SWIFT 快捷键"
-ms.custom: 
+title: Microsoft BizTalk Accelerator for SWIFT 文档 |Microsoft 文档
+description: 快速链接来安装、 配置、 部署、 开始、 安全、 开发和故障排除在 BizTalk Server SWIFT 快捷键
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a742cd84-a159-461b-a410-6e75a45e7d8b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006478"
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a>Microsoft BizTalk Accelerator for SWIFT 文档
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]外接程序是[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 中，并可利用的打开的基于标准的工具和 BizTalk server 运行时功能，可以实现对互联网协会为全球 Interbank 财务电信 (SWIFT) 消息格式的支持.  

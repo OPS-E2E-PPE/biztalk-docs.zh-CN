@@ -1,14 +1,14 @@
 ---
-title: "程序集和项目转换服务示例安装 |Microsoft 文档"
-ms.custom: 
+title: 程序集和项目转换服务示例安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 890c089a-749e-421f-a6eb-2e038cd2122e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010270"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-transformation-service-sample"></a>程序集和项目安装转换服务示例
 下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]转换服务示例。  

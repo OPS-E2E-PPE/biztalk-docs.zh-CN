@@ -1,14 +1,14 @@
 ---
-title: "创建数据库群集 |Microsoft 文档"
-ms.custom: 
+title: 创建数据库群集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b68bc3f-c0c4-4050-8ca3-df6dd1927637
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009470"
 ---
 # <a name="clustering-the-biztalk-server-databases"></a>群集的 BizTalk Server 数据库
 如果 BizTalk Server 数据库变得不可用，BizTalk Server 环境将无法正常运行。 若要提供高可用性，可以创建 BizTalk Server 数据库中，Microsoft SQL Server 群集下, 图中所示。  

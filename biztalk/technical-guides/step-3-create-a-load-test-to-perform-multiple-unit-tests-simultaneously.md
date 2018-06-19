@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建负载测试，以同时执行多个单元测试 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建负载测试，以同时执行多个单元测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5dd7e31-7188-4edf-9513-ea2725950b47
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976547"
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>步骤 3： 创建负载测试，以同时执行多个单元测试
 负载测试运行多个实例的一个或多个单元测试，以便可以测量应用程序的性能和能够处理负载。 Visual Studio 2010 负载测试的主要组件包括：  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  单击 **“下一步”**。  
   
-5.  上**编辑负载测试方案设置**下页上**输入负载测试方案的名称：**类型**BTS_Messaging_Step**。 下**思考时间配置文件**选择**不使用思考时间**，然后单击**下一步**。  
+5.  上**编辑负载测试方案设置**下页上**输入负载测试方案的名称：** 类型**BTS_Messaging_Step**。 下**思考时间配置文件**选择**不使用思考时间**，然后单击**下一步**。  
   
 6.  上**编辑负载模式设置的负载测试方案**页上，选择**分级负载**，输入下面的值，然后单击**下一步**。  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |性能类别|性能计数器|  
     |--------------------------|-------------------------|  
     |处理器|%Processor Time 的 _Total 计数器实例。|  
-    |BizTalk:Message 框： 常规计数器|假脱机的大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>*计数器实例。 **注意：***\<BizTalk MessageBox 数据库名称\>*和 *\<SQL Server 实例名称\>*的只是占位符BizTalk MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。   这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。|  
+    |BizTalk:Message 框： 常规计数器|假脱机的大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>* 计数器实例。 **注意：***\<BizTalk MessageBox 数据库名称\>* 和 *\<SQL Server 实例名称\>* 的只是占位符BizTalk MessageBox 数据库和保存 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。   这些占位符应替换的 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称。|  
     |BizTalk:Messaging|文档接收每秒接收主机计数器实例。<br /><br /> 文档处理每秒传输主机计数器实例。|  
     |BizTalk：消息代理|文档的消息传送传入速率接收主机。|  
     |BizTalk：消息代理|为文档传输主机发布传出速率的消息。|  

@@ -1,17 +1,17 @@
 ---
-title: "步骤 3： 配置域控制器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 配置域控制器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, domain controller
 - domain controller
 ms.assetid: 1c513225-378b-4e57-ba29-7532b6cbcc9a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007262"
 ---
 # <a name="step-3-configuring-the-domain-controller"></a>步骤 3： 配置域控制器
 本部分介绍如何配置中的域控制器你[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]部署。 具体而言，本部分介绍如何安装和配置[!INCLUDE[btsAD](../../includes/btsad-md.md)]通过执行以下操作：  

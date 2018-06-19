@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "23450222"
 ---
 # <a name="operational-readiness-checklists"></a>操作的准备工作核对清单
 操作的准备情况清单包含应考虑的建议和在 BizTalk 解决方案部署到生产环境之前应执行的任务。 这些清单包括用于配置必备软件，提高可用性，信息监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，并用于测试的步骤。  

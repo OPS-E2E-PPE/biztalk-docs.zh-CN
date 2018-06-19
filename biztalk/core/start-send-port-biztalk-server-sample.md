@@ -1,18 +1,18 @@
 ---
-title: "开始发送端口 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 开始发送端口 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, examples
 - examples, send ports
 - send ports, starting
 ms.assetid: 84e54c9e-e9e8-4bb2-a191-20c29e127dae
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973875"
 ---
 # <a name="start-send-port-biztalk-server-sample"></a>开始发送端口 （BizTalk Server 示例）
 启动发送端口示例演示如何在使用 FILE 适配器时启动发送端口和选择设置主传输地址。  

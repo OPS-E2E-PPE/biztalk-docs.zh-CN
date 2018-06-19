@@ -1,14 +1,14 @@
 ---
-title: "从 Orchestration 表达式示例 BAM API |Microsoft 文档"
-ms.custom: 
+title: 从 Orchestration 表达式示例 BAM API |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 341bc333-9bfc-484c-b431-9a71f9188792
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710980"
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a>业务流程表达式中的 BAM API（BizTalk Server 示例）
 此示例演示如何：  
@@ -28,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 -   在使用跟踪配置文件跟踪的 BAM 数据和使用 BAM API 跟踪的 BAM 数据之间创建关系。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 你可以找到在此示例*\<示例路径\>*\BAM\BamFromExpression。  
+ 你可以找到在此示例*\<示例路径\>* \BAM\BamFromExpression。  
   
  下表列出了本示例中的文件及其用途说明。  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="create-the-tracking-profile"></a>创建跟踪配置文件  
   
-1.  打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BAMFromExpression\Setup.bat。 Setup.bat 可初始化此示例的 BAM 基础结构，并部署 BAM 活动。  
+1.  打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\BAMFromExpression\Setup.bat。 Setup.bat 可初始化此示例的 BAM 基础结构，并部署 BAM 活动。  
   
 2.  从你**程序** > **Microsoft BizTalk Server**，右键单击**跟踪配置文件编辑器**，和**以管理员身份运行**.
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 02/28/2018
   
 13. 拖动 **Send_1** 到右窗格中的形状 **发送** 的左窗格中。  
   
-14. 保存跟踪配置文件到*\<示例路径\>*\BAM\BamFromExpression\ BamFromExpression.btt。  
+14. 保存跟踪配置文件到*\<示例路径\>* \BAM\BamFromExpression\ BamFromExpression.btt。  
   
 15. 上 **工具** 菜单上，单击 **应用跟踪配置文件**。  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="run-this-sample"></a>运行此示例  
   
-将文件复制*\<示例路径\>*到 \BamFromExpression\InputMessage.xml *\<示例路径\>*\BamFromExpression\Input。  
+将文件复制*\<示例路径\>* 到 \BamFromExpression\InputMessage.xml *\<示例路径\>* \BamFromExpression\Input。  
   
-在大约 10 秒输出消息将出现在*\<示例路径\>*\BamFromExpression\Output。  
+在大约 10 秒输出消息将出现在*\<示例路径\>* \BamFromExpression\Output。  
   
 ## <a name="view-the-bam-data"></a>查看 BAM 数据  
   
@@ -116,9 +117,9 @@ ms.lasthandoff: 02/28/2018
   
 ## <a name="re-run-the-sample"></a>重新运行此示例  
   
-1.  打开命令提示符以管理员身份，并运行*\<示例路径\>*\BAM\BamFromExpression\Cleanup.bat 若要删除的跟踪配置文件和其他 BAM 基础结构。 
+1.  打开命令提示符以管理员身份，并运行*\<示例路径\>* \BAM\BamFromExpression\Cleanup.bat 若要删除的跟踪配置文件和其他 BAM 基础结构。 
   
-2.  运行*\<示例路径\>*\BAM\BamFromExpression\Setup.bat 编译该示例并将其部署。  
+2.  运行*\<示例路径\>* \BAM\BamFromExpression\Setup.bat 编译该示例并将其部署。  
   
 ## <a name="see-also"></a>另请参阅  
  [业务活动监视 （BizTalk Server 示例文件夹中）](../core/business-activity-monitoring-biztalk-server-samples-folder.md)   

@@ -1,14 +1,14 @@
 ---
-title: "挂起的消息都包含在数据库限制阈值中的消息计数 |Microsoft 文档"
-ms.custom: 
+title: 挂起的消息都包含在数据库限制阈值中的消息计数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9eb708bb-6d6d-4494-8b8d-67aa44800a20
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278125"
 ---
 # <a name="suspended-messages-are-included-in-the-message-count-in-database-throttling-threshold"></a>挂起消息包括在数据库中的消息数阻止阈值
 默认情况下，主机**消息在数据库中的计数**限制阈值设置为值为 50000，就会触发在下列情况下的限制条件：  

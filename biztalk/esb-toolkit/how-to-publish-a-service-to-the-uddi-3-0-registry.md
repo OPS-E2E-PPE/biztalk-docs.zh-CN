@@ -1,14 +1,14 @@
 ---
-title: "如何： 将服务发布到 UDDI 3.0 注册表 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将服务发布到 UDDI 3.0 注册表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c3bd0ed-e5f1-43eb-98d1-e3247a565ba2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009910"
 ---
 # <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>如何： 将服务发布到 UDDI 3.0 注册表
 ## <a name="goal"></a>目的  
@@ -67,7 +68,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  单击**实例信息**选项卡上，并依次**添加实例信息**。  
   
-2.  在**搜索 tModel 名称中包含**框中，键入**%esb%** ，然后单击**搜索**。  
+2.  在**搜索 tModel 名称中包含**框中，键入 **%esb%** ，然后单击**搜索**。  
   
 3.  找到并单击**tModel**为**transporttype**。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  上**类别**选项卡上，单击**添加自定义类别**。  
   
-3.  在**搜索**框中，键入**%esb%** ，然后单击**搜索**。  
+3.  在**搜索**框中，键入 **%esb%** ，然后单击**搜索**。  
   
 4.  找到并单击**microsoft-com:esb:runtimeresolution:biztalkapplication** tModel。  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 12/01/2017
   
 2.  单击**服务**选项卡。  
   
-3.  在**服务名称**框中，键入**%PO%**，然后单击**搜索**。  
+3.  在**服务名称**框中，键入 **%PO%**，然后单击**搜索**。  
   
 4.  在**搜索**窗格中，在**结果**选项卡上，单击**NewPOService**。  
   

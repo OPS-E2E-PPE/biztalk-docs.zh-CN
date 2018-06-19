@@ -1,14 +1,14 @@
 ---
-title: "上渐变和关闭渐变 |Microsoft 文档"
-ms.custom: 
+title: 上渐变和关闭渐变 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c0cce5d2-f16f-4bda-94ac-20c4f457cfc7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294557"
 ---
 # <a name="on-ramps-and-off-ramps"></a>上渐变和关闭渐变
 在环境中其中[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是部署，BizTalk 接收位置负责接收 ESB 要发送的消息被称为"入口。" 若要配置标准的 BizTalk 接收位置到 ESB 入口，将接收位置与作为该工具包的一部分提供的管道之一相关联，然后正确配置以确定或阅读有关路线该管道组件入站的消息，具体取决于你的方案。  

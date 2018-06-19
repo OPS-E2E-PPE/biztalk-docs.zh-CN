@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Query tab [Administration Console], searching
 - Query tab [Administration Console], messages
 ms.assetid: c751d23f-913a-4325-81da-a36d61c07e8b
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255277"
 ---
 # <a name="how-to-search-for-messages"></a>如何搜索消息
 你可以使用 **查询** 在 BizTalk Server 管理控制台中搜索特定类的消息的选项卡。  

@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, about BizTalk Web Services Publishing Wizard
 - orchestrations, publishing
 ms.assetid: d990f8e4-88ce-4718-8a94-63796b8d92dc
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25975339"
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a>如何使用发布向导的 BizTalk Web 服务发布作为 Web 服务业务流程
 可以使用 BizTalk Web Services 发布向导将业务流程发布为 Web Services。  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 字符集 |Microsoft 文档"
-ms.custom: 
+title: EDI 字符集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 57fae748-d66e-4ecf-be00-70147078ef93
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971387"
 ---
 # <a name="edi-character-sets"></a>EDI 字符集
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用字符集来验证整个 EDI 交换。 用于 X12 编码的消息与 EDIFACT 或 KEDIFACT 编码的消息的字符集采用不同的方式确定。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
  UNA 段和段名 UNB 仅限使用 ASCII 字符集中的值。  
   
 ## <a name="kedifact-character-set"></a>KEDIFACT 字符集  
- 与 EDIFACT 一样，用于 KEDIFACT 编码的交换的字符集也是在 UNB1 数据元素中建立的。 对于 EDIFACT 字符集才能应用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]当处理 KEDIFACT 交换数据元素中建立**UNB1**的**字符集和分隔符**中的双向页协议选项卡 （如果定义的协议） 或**字符集和分隔符**中的协议选项卡页**EDIFACT 回退设置**对话框中 （如果不定义的任何协议）。 值**标识符 (UNB1.1)**元素必须设置为 KECA。  
+ 与 EDIFACT 一样，用于 KEDIFACT 编码的交换的字符集也是在 UNB1 数据元素中建立的。 对于 EDIFACT 字符集才能应用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]当处理 KEDIFACT 交换数据元素中建立**UNB1**的**字符集和分隔符**中的双向页协议选项卡 （如果定义的协议） 或**字符集和分隔符**中的协议选项卡页**EDIFACT 回退设置**对话框中 （如果不定义的任何协议）。 值**标识符 (UNB1.1)** 元素必须设置为 KECA。  
   
 ## <a name="x12-character-set"></a>X12 字符集。  
  BizTalk 接收管道或发送管道对 X12 编码的消息执行 EDI 验证时，它将使用在管道的 CharacterSet 属性中选择的 X12 字符集。 若要设置此属性，请打开接收位置或发送端口的“属性”对话框，单击接收或发送管道旁边的省略号，然后设置拆装器或组装器的 CharacterSet 属性。  

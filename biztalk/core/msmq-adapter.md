@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263141"
 ---
 # <a name="msmq-adapter"></a>MSMQ 适配器
 MSMQ 适配器，你可以使用从 Message Queuing 4.0 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 使用与 BizTalk Server 集成在一起的消息队列技术，在不同时间运行的应用程序就能在可能暂时脱机的不同的网络和系统间进行通信。  

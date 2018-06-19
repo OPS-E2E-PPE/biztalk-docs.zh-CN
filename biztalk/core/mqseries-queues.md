@@ -1,18 +1,18 @@
 ---
-title: "MQSeries 队列 |Microsoft 文档"
-ms.custom: 
+title: MQSeries 队列 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, MQSeries adapters
 - MQSeries adapters, architecture
 - MQSeries adapters, queues
 ms.assetid: 7ce468a5-41d2-4e7b-915b-d22952c87b56
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262869"
 ---
 # <a name="mqseries-queues"></a>MQSeries 队列
 若要向 MQSeries 队列发送消息，可以在队列管理器中指定远程定义队列、别名队列、传输队列或本地队列。  

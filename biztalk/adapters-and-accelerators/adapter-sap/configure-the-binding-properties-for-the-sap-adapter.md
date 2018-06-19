@@ -1,17 +1,17 @@
 ---
-title: "配置 SAP 适配器的绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 配置 SAP 适配器的绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding properties, specifying at design time
 - binding properties, specifying at run time
 ms.assetid: 259a5895-c19d-409c-b2fc-bfdf59d5d74b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217437"
 ---
 # <a name="configure-the-binding-properties-for-the-sap-adapter"></a>配置 SAP 适配器的绑定属性
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]面，使您能够控制其行为特征一部分的多个绑定属性。 本部分提供有关从 Visual Studio （设计时） 和设置的绑定属性的信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台 （运行时间）。 在设计时，必须指定要生成架构的特定操作的绑定属性。 在运行时，必须发送的一部分指定的绑定属性，或接收端口来发送或接收来自 SAP 系统的消息。  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d67e5f7-5127-4c1d-be20-8d8dbb538286
-caps.latest.revision: ''
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26010590"
 ---
 # <a name="planning-for-sending-and-receiving"></a>规划用于发送和接收
 处理的几乎每个文档[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]由接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收适配器，并从发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送适配器。 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器因此突出图中任何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，务必要提前计划来确定哪些适配器或快捷键，你将使用以及如何正确配置这些适配器和/或快捷键。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]  
     >  如果你遇到与 MSDTC 的问题，阅读主题[问题疑难解答与 MSDTC](http://go.microsoft.com/fwlink/?LinkID=154693) (http://go.microsoft.com/fwlink/?LinkID=154693)。  
   
--   **双向通信支持 （请求/响应或请求/响应）**能够处理目标的响应消息并将文档发送或接收文档并将响应消息发送到源。  
+-   **双向通信支持 （请求/响应或请求/响应）** 能够处理目标的响应消息并将文档发送或接收文档并将响应消息发送到源。  
   
 -   **按顺序获得支持。** 能够将接收到的文档发布到 MessageBox 数据库文档已接收的确切顺序。  
   

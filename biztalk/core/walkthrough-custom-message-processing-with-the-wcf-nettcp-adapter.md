@@ -1,14 +1,14 @@
 ---
-title: "演练： 自定义消息处理与 WCF NetTcp 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 自定义消息处理与 WCF NetTcp 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b56b7492-2ea0-4c63-8f1b-430eb277517d
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26009766"
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>演练： 自定义消息处理与 WCF NetTcp 适配器
 在本演练中，[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 客户端将使用 WCF-NetTcp 适配器将包含嵌入的二进制 JPEG 图像数据的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息提交到 BizTalk 接收位置。 通过使用 XPath 语句 （带编码功能 Base64 节点） 获取提取二进制编码的 JPEG 图像 **入站消息正文** 适配器的配置中设置。 XPath 处理方法与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用于处理传入消息的默认方法不同。 在默认方法中，适配器获取的全部内容**正文**元素[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息，然后再将其提交到 BizTalk MessageBox 数据库。 XPath 消息处理提取传入 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息的特定部分以创建自定义 BizTalk 消息。 在此示例中 XPath 处理查找名为的 XML 元素**SendPicture**中传入[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息 （这是以 XML 格式）。 找到该元素之后，XPath 会提取该元素的值作为二进制 Base64 编码对象，并将该二进制值放在 BizTalk 消息中。 该消息会被发布到 MessageBox 数据库，然后借助发送端口筛选器订阅输出到 FILE 发送端口。 本示例中未使用任何业务流程，并且所有的处理都使用 XPath 通过 BizTalk 消息完成。  

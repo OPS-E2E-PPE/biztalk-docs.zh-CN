@@ -1,11 +1,11 @@
 ---
-title: "如何使用工具箱 |Microsoft 文档"
-ms.custom: 
+title: 如何使用工具箱 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, pipelines
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Pipeline Designer, toolbox
 - pipelines, creating
 ms.assetid: 7a60c590-1a38-46fe-addf-0aa2c8b63cf9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257269"
 ---
 # <a name="how-to-use-the-toolbox"></a>如何使用工具箱
 您可以通过将组件（形状）从工具箱拖至设计图面来创建管道。 使用管道设计器，可以通过对创建过程进行特定限制来组装有效的管道。 您只能选择适用于要创建的管道类型的工具箱组件。 例如，对于接收管道，解码器、拆装器和验证器将显示为有效的工具箱组件，而编码器和组装器将处于禁用状态（呈灰色）。  

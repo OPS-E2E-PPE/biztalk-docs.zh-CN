@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 规划环境 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 规划环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e9ef0b4-eccb-47e2-bbb5-e859ffa0468c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010574"
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>BizTalk Server 规划环境
 操作指南的规划节介绍了角色和职责与关联[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 它包括规划对于的应用程序和数据层的建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，并提供规划的建议的版本管理的 BizTalk 解决方案的各个阶段。  

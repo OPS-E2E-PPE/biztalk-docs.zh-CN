@@ -1,14 +1,14 @@
 ---
-title: "XML 架构 |Microsoft 文档"
-ms.custom: 
+title: XML 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ec364e7-866d-4164-be91-be75a40ce878
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008094"
 ---
 # <a name="xml-schemas"></a>XML 架构
 XML 架构描述了以 XML 表示的业务文档。 由于 Microsoft BizTalk Server 使用 XML 作为其规范表示形式的业务文档，入站和出站文档不需要进行任何变换。 可以只使用在所有架构中都可用的一组基本属性在 BizTalk 编辑器中创建 XML 架构，并且不需要启用任何架构编辑器扩展。  

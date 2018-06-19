@@ -1,14 +1,14 @@
 ---
-title: "端到端事务跟踪 |Microsoft 文档"
-ms.custom: 
+title: 端到端事务跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ebacd2e4-6b5c-4dc4-8361-b5b77042debc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294109"
 ---
 # <a name="end-to-end-transaction-tracking"></a>端到端事务跟踪
 对运算符和用户能够监视通过运行时环境的通信流相关业务可见性。 企业必须能够跟踪的进程和流经其系统在每个步骤，以确保它们播放导致收入生成其参与的事务。 AmberPoint SMS 简化了的度量和 Microsoft BizTalk Server 中的这些消息的跟踪。 系统允许用户定义新的管理单元，它们与端到端业务流程、 而不是所需以符合开发人员选择打包和部署单个服务组件的方式保持一致。 图 1 显示了用于定义管理单位的屏幕。  

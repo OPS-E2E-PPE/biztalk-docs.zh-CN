@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22eefde6-80f5-4d45-80cf-55f743ff9d45
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975852"
 ---
 # <a name="wcf-basichttprelay-adapter"></a>WCF-BasicHttpRelay 适配器
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用**WCF BasicHttpRelay**适配器接收和发送通过 WCF 服务请求[BasicHttpRelayBinding 类](https://msdn.microsoft.com/library/azure/microsoft.servicebus.basichttprelaybinding.aspx)。 **Wcf-basichttprelay** 配接器會使用服務匯流排轉送端點使用 **BasicHttpRelayBinding**。  

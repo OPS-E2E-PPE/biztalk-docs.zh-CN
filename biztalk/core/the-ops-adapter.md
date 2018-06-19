@@ -1,11 +1,11 @@
 ---
-title: "Ops 适配器 |Microsoft 文档"
-ms.custom: 
+title: Ops 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, Ops adapters
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - process management solution tutorial, Ops adapters
 - process management solution tutorial, errors
 ms.assetid: 7f747a5f-14af-4e4c-bc29-f083f8f00bd0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279373"
 ---
 # <a name="the-ops-adapter"></a>Ops 适配器
 该解决方案设计为将存在问题的消息和错误传递（如果可能的话）给操作系统，由操作系统决定是修复错误还是终止订单。 Ops 适配器与新的错误报告功能配合使用可以处理许多这样的情况。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014004"
 ---
 # <a name="jd-edwards-enterpriseone-transport-properties-dialog-box"></a>“JD Edwards EnterpriseOne 传输属性”对话框
 使用 JD Edwards EnterpriseOne 的“传输属性”对话框可设置适配器所需的属性。  

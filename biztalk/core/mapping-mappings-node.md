@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262517"
 ---
 # <a name="mapping-mappings-node"></a>Mapping（Mappings 节点）
 绑定文件的 Mapping 节点描述登记的参与方的参与方端口与角色端口类型操作之间的映射。  

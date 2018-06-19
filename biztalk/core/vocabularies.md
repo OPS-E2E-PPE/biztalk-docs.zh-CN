@@ -1,11 +1,11 @@
 ---
-title: "词汇 |Microsoft 文档"
-ms.custom: 
+title: 词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, vocabularies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - vocabularies
 - Business Rules Engine, vocabularies
 ms.assetid: 591673a0-2c4d-41ca-9997-b363c086dd66
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288005"
 ---
 # <a name="vocabularies"></a>词汇表
 通常使用特定于领域或行业的命名法来表示用于定义规则条件和操作的术语。 例如，电子邮件用户使用“接收自”消息和“收到时间晚于”消息等术语来编写规则，而保险业务分析员则使用“风险因素”和“保险金额”等术语来编写规则。  

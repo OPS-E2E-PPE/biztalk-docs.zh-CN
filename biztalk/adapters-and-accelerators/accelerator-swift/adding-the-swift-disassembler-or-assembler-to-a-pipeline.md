@@ -1,11 +1,11 @@
 ---
-title: "管道添加 SWIFT 反汇编程序或汇编程序 |Microsoft 文档"
-ms.custom: 
+title: 管道添加 SWIFT 反汇编程序或汇编程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, adding assembler
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipelines, adding disassembler
 - disassembler, adding to pipelines
 ms.assetid: f39eb340-fe58-4c8f-b3f2-f7686a245095
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005246"
 ---
 # <a name="adding-the-swift-disassembler-or-assembler-to-a-pipeline"></a>管道添加 SWIFT 反汇编程序或汇编程序
 可以使用与 BizTalk 管道设计[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建自定义 BizTalk 接收和发送管道。 SWIFT 反汇编程序可用于在自定义接收管道中的"反汇编"阶段。 同样，你可以在自定义发送管道中的"汇编"阶段使用 SWIFT 汇编程序。 若要调用的 SWIFT 反汇编程序或从管道设计器工具箱的汇编程序，您将拆装器或汇编程序拖到相应的管道阶段管道设计器画布上。 有关调用反汇编程序集的分步说明，请参阅[模块 3： 添加的管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 有关使用管道项目或有关管道设计器的详细信息，请参阅 BizTalk Server 帮助。  

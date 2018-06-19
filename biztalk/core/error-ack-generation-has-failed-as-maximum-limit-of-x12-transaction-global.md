@@ -1,14 +1,14 @@
 ---
-title: "错误 Ack 生成已失败，因为最大限制为 X12 事务全局 |Microsoft 文档"
-ms.custom: 
+title: 错误 Ack 生成已失败，因为最大限制为 X12 事务全局 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8bbcae14-6e5c-4f79-87c6-311b4b54c7ff
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006078"
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a>错误 Ack 生成具有失败的 X12 全局事务的最大限制
 ## <a name="details"></a>详细信息  

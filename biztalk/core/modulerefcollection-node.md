@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262677"
 ---
 # <a name="modulerefcollection-node"></a>ModuleRefCollection 节点
 绑定文件的 ModuleRefCollection 节是所有 ModuleRef 节点的父节点，ModuleRef 节点包含有关与此绑定文件一起导出的 .NET 程序集的特定信息。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970811"
 ---
 # <a name="how-to-label-and-comment-a-functoid"></a>如何标签和注释 Functoid
 标签和注释对于记录映射中 functoid 或链接的作用非常有用。 你可以使用**标签**属性，以提供 functoid 的名称。 **注释**属性使您能够提供有关 functoid，关于由它所执行的操作通常相关信息的其他信息。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  输入以下信息，，然后单击**确定**。  
   
-    -   **标签 –**输入新名称。  
+    -   **标签 –** 输入新名称。  
   
         > [!IMPORTANT]
         >  最大允许的字符数为 256。 如果指定超过 256 个字符的字符串，则接受前 256 个字符和其余部分将被丢弃。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在**属性**窗口中，输入以下信息，，然后单击**确定**。  
   
-    -   **标签 –**输入新名称。  
+    -   **标签 –** 输入新名称。  
   
         > [!IMPORTANT]
         >  最大允许的字符数为 256。 如果指定超过 256 个字符的字符串，则接受前 256 个字符和其余部分将被丢弃。  

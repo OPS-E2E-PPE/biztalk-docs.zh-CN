@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286917"
 ---
 # <a name="using-host-initiated-sso-functionality"></a>使用主机启动的 SSO 功能
 主机启动的单一登录使用 Windows Server 2008 的协议转换功能来执行非 Windows 用户的单一登录。 此功能需要 Wiiinnndows Server 2008，并且必须在域中具有其**域功能级别**设置为**Windows Server 2008**。  

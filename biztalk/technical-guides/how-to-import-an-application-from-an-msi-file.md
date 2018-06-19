@@ -1,14 +1,14 @@
 ---
-title: "如何从.msi 文件导入应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何从.msi 文件导入应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5472df9-9f1e-42d5-82e0-cc559caf56b3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009542"
 ---
 # <a name="how-to-import-an-application-from-an-msi-file"></a>如何从.msi 文件导入应用程序
 BizTalk Server 管理控制台或 BTSTask 中的导入 MSI 向导可用于将 BizTalk 应用程序从.msi 文件导入到目标环境中的 BizTalk 组和各个主机组中的实例上安装应用程序。 完全导入过程将执行以下操作：  

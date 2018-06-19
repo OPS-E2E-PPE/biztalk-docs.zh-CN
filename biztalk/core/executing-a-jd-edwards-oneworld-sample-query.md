@@ -1,14 +1,14 @@
 ---
-title: "执行博士 Edwards OneWorld 示例查询 |Microsoft 文档"
-ms.custom: 
+title: 执行博士 Edwards OneWorld 示例查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b060d383-a2df-472f-90cc-e79078b0bcfd
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975763"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>执行博士 Edwards OneWorld 示例查询
 可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。 此适配器是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
          `C:\JDEOWJars\BTSLIBInterop.jar; C:\JDEOWJars\Connector.jar; C:\JDEOWJars\Kernel.jar;C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\J.D. Edwards OneWorld®\Classes\JDEJAccess.jar`  
   
-    5.  **密码：**使用下拉列表，然后输入你博士 Edwards OneWorld 密码。  
+    5.  **密码：** 使用下拉列表，然后输入你博士 Edwards OneWorld 密码。  
   
     6.  **端口：**  `6009`  
   
@@ -287,7 +288,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:\LABS\JDE_OW_TEST\SAMPLE.XML`  
   
-3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>**并设置**根引用：**到`AddressBookMasterMBF`。 这将导致生成的 XML，仅包含**查询**xml。  
+3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>** 并设置**根引用：** 到`AddressBookMasterMBF`。 这将导致生成的 XML，仅包含**查询**xml。  
   
      ![](../core/media/jdeow-jde-ow-test-msvisualstudio-schemas.gif "JDEOW_JDE_OW_Test_MSVISUALSTUDIO_SCHEMAS")  
   
@@ -327,7 +328,7 @@ ms.lasthandoff: 11/28/2017
   
      ![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")  
   
-9. 单击**\<无\>**为**JDE_OW_Port**下拉列表中。  
+9. 单击**\<无\>** 为**JDE_OW_Port**下拉列表中。  
   
 10. 选择**新建发送端口**，然后选择或键入属性的以下值：  
   
@@ -351,7 +352,7 @@ ms.lasthandoff: 11/28/2017
   
      `C:JDEOWJarsBTSLIBInterop.jar; C:JDEOWJarsConnector.jar; C:JDEOWJarsKernel.jar;C:Program FilesMicrosoft BizTalk Adapters for Enterprise ApplicationsJ.D. Edwards OneWorld®ClassesJDEJAccess.jar`  
   
-     **密码：**使用下拉列表，然后输入你博士 Edwards OneWorld 密码。  
+     **密码：** 使用下拉列表，然后输入你博士 Edwards OneWorld 密码。  
   
      **端口：**  `6009`  
   
@@ -361,7 +362,7 @@ ms.lasthandoff: 11/28/2017
   
 12. 单击“确定”  两次以关闭对话框。  
   
-13. 在配置 Applicationwindow 中，单击**\<无\>**为**JDE_FileOut**下拉列表中。  
+13. 在配置 Applicationwindow 中，单击**\<无\>** 为**JDE_FileOut**下拉列表中。  
   
 14. 选择“新建发送端口”  ，然后键入或选择以下属性值：  
   

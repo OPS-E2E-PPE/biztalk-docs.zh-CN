@@ -1,14 +1,14 @@
 ---
-title: "SQL Server 数据库镜像，卷影复制服务和 AlwaysOn |Microsoft 文档"
-ms.custom: 
+title: SQL Server 数据库镜像，卷影复制服务和 AlwaysOn |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b965cafc-cd34-4657-975d-0dedffd27333
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277989"
 ---
 # <a name="sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson"></a>SQL Server 数据库镜像、卷影复制服务和 AlwaysOn
 Microsoft 提供了名为 SQL Server 的软件解决方案*数据库镜像*和 Windows 卷影复制服务 (VSS) 来增加对特定方案的高可用性。 SQL Server*数据库镜像*，卷影复制服务 (VSS) 提供了用于灾难恢复的备份和还原功能数据库时可用的可能性就越高。 使用 SQL Server*数据库镜像*或 Windows 卷影复制服务不支持用于确保 Microsoft 的高可用性解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  

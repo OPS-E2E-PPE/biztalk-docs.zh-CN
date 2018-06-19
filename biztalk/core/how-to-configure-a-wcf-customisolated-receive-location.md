@@ -1,14 +1,14 @@
 ---
-title: "如何配置 WCF CustomIsolated 接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 WCF CustomIsolated 接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f2515a9-3e94-458d-8d73-22faf86bb68d
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010790"
 ---
 # <a name="how-to-configure-a-wcf-customisolated-receive-location"></a>如何配置 WCF-CustomIsolated 接收位置
 可以通过编程方式或使用 BizTalk 管理控制台来配置 WCF-CustomIsolated 接收位置。  
@@ -32,10 +33,10 @@ ms.lasthandoff: 12/01/2017
 |属性名称|类型|Description|  
 |-------------------|----------|-----------------|  
 |**标识**|XML Blob<br /><br /> 例如：<br /><br /> &lt;标识&gt;<br /><br /> &lt;userPrincipalName 值 ="username@contoso.com"/&gt;<br /><br /> &lt;/identity&gt;|指定此接收位置提供的服务的标识。 可以为指定的值**标识**属性而异的安全配置。 通过这些设置，客户端可对此接收位置进行验证。 在客户端与服务进行握手的过程中，Windows Communication Foundation (WCF) 基础结构将确保预期服务的标识与此元素的值保持一致。<br /><br /> 默认值为空字符串。|  
-|**BindingType**|Enum<br /><br /> -   **basicHttpBinding**<br />-   **customBinding**<br />-   **mexHttpBinding**<br />-   **mexHttpsBinding**<br />-   **mexNamedPipeBinding**<br />-   **mexTcpBinding**<br />-   **netMsmqBinding**<br />-   **netNamedPipeBinding**<br />-   **netPeerTcpBinding**<br />-   **netTcpBinding**<br />-   **wsDualHttpBinding**<br />-   **wsFederationHttpBinding**<br />-   **wsHttpBinding**|指定此接收位置使用的终结点所采用的绑定类型。 **注意：**如果你使用的自定义绑定， **BindingType**属性可以配置使用自定义绑定。 有关如何使用自定义绑定的详细信息，请参阅[如何启用与 WCF 适配器 WCF 扩展点](../core/how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters.md)。 <br /><br /> 默认值为空字符串。|  
-|**BindingConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;绑定名称 ="wsHttpBinding"transactionFlow ="true"&gt;&lt;安全&gt;&lt;消息 clientCredentialType ="UserName"/&gt;&lt;/安全&gt;&lt;绑定&gt;|指定使用的 XML 字符串**\<绑定\>**元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。 **注意：** BizTalk Server 不支持你可以使用配置的绑定扩展元素的所有类型**BindingConfiguration**属性。 <br /><br /> 默认值为空字符串。|  
-|**ServiceBehaviorConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;行为名称 ="SampleServiceBehavior"&gt;&lt;serviceAuthorization principalPermissionMode ="UseAspNetRoles"/&gt;&lt;serviceCredentials&gt;&lt;serviceCertificatefindValue ="539d9ab3089bb6dc187fa7dbb382cf01f8d78f5f"storeLocation ="CurrentUser"x509FindType ="FindByThumbprint"/&gt;&lt;/serviceCredentials&gt;&lt;serviceMetadatahttpGetEnabled ="true"/&gt;&lt;/behavior&gt;|指定使用的 XML 字符串**\<行为\>**元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。<br /><br /> 默认值为空字符串。|  
-|**EndpointBehaviorConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;行为名称 ="sampleBehavior"&gt;&lt;callbackTimeouts /&gt;&lt;/behavior&gt;|指定使用的 XML 字符串**\<行为\>**元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。 **注意：** BizTalk Server 不支持你可以使用配置的行为扩展元素的所有类型**EndpointBehaviorConfiguration**属性。 <br /><br /> 默认值为空字符串。|  
+|**BindingType**|Enum<br /><br /> -   **basicHttpBinding**<br />-   **customBinding**<br />-   **mexHttpBinding**<br />-   **mexHttpsBinding**<br />-   **mexNamedPipeBinding**<br />-   **mexTcpBinding**<br />-   **netMsmqBinding**<br />-   **netNamedPipeBinding**<br />-   **netPeerTcpBinding**<br />-   **netTcpBinding**<br />-   **wsDualHttpBinding**<br />-   **wsFederationHttpBinding**<br />-   **wsHttpBinding**|指定此接收位置使用的终结点所采用的绑定类型。 **注意：** 如果你使用的自定义绑定， **BindingType**属性可以配置使用自定义绑定。 有关如何使用自定义绑定的详细信息，请参阅[如何启用与 WCF 适配器 WCF 扩展点](../core/how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters.md)。 <br /><br /> 默认值为空字符串。|  
+|**BindingConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;绑定名称 ="wsHttpBinding"transactionFlow ="true"&gt;&lt;安全&gt;&lt;消息 clientCredentialType ="UserName"/&gt;&lt;/安全&gt;&lt;绑定&gt;|指定使用的 XML 字符串**\<绑定\>** 元素来配置不同类型的预定义的绑定所提供的 Windows Communication Foundation (WCF)。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。 **注意：** BizTalk Server 不支持你可以使用配置的绑定扩展元素的所有类型**BindingConfiguration**属性。 <br /><br /> 默认值为空字符串。|  
+|**ServiceBehaviorConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;行为名称 ="SampleServiceBehavior"&gt;&lt;serviceAuthorization principalPermissionMode ="UseAspNetRoles"/&gt;&lt;serviceCredentials&gt;&lt;serviceCertificatefindValue ="539d9ab3089bb6dc187fa7dbb382cf01f8d78f5f"storeLocation ="CurrentUser"x509FindType ="FindByThumbprint"/&gt;&lt;/serviceCredentials&gt;&lt;serviceMetadatahttpGetEnabled ="true"/&gt;&lt;/behavior&gt;|指定使用的 XML 字符串**\<行为\>** 元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。<br /><br /> 默认值为空字符串。|  
+|**EndpointBehaviorConfiguration**|XML Blob<br /><br /> 例如：<br /><br /> &lt;行为名称 ="sampleBehavior"&gt;&lt;callbackTimeouts /&gt;&lt;/behavior&gt;|指定使用的 XML 字符串**\<行为\>** 元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。 **注意：** BizTalk Server 不支持你可以使用配置的行为扩展元素的所有类型**EndpointBehaviorConfiguration**属性。 <br /><br /> 默认值为空字符串。|  
 |**CredentialType**|Enum<br /><br /> -   **无**： 不要的使用任何凭据时此接收位置发送请求消息来轮询外部服务，或此接收位置不需要轮询任何外部服务。<br />-   **IssueTicket**： 使用企业单一登录 (SSO) 来检索要颁发的 SSO 票证的客户端凭据。 该选项要求所使用的安全模式允许接收位置模拟用户帐户来颁发 SSO 票证。<br />-   **UserAccount**： 使用中指定的凭据**用户名**和**密码**属性时此接收位置发送请求消息来轮询外部服务。<br />-   **执行的 getcredentials 操作**： 使用 SSO 关联应用程序中指定**AffiliateApplicationName**属性时此接收位置发送请求消息来轮询外部服务。|指定在轮询外部服务时此接收位置使用的凭据类型<br /><br /> 默认值：**无**|  
 |**UserName**|字符串|指定在轮询外部服务以检索响应消息时此接收位置使用的用户名。 当此属性是必需**CredentialType**属性设置为**UserAccount**。<br /><br /> 默认值为空字符串。|  
 |**密码**|字符串|指定在轮询外部服务以检索响应消息时此接收位置使用的密码。 当此属性是必需**CredentialType**属性设置为**UserAccount**。<br /><br /> 默认值为空字符串。|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 12/01/2017
 |**DisableLocationOnFailure**|Boolean|指定是否禁用由于接收管道故障或路由故障而导致入站处理失败的接收位置。<br /><br /> 默认值： **False**|  
 |**SuspendMessageOnFailure**|Boolean|指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。<br /><br /> 默认值： **True**|  
 |**IncludeExceptionDetailInFaults**|Boolean|指定是否将托管异常信息包括在返回给客户端以便进行调试的 SOAP 错误的详细信息中。<br /><br /> 默认值： **False**|  
-|**ReferencedBindings**|XML Blob<br /><br /> 例如：<br /><br /> \<**BindingConfiguration** vt ="8"\><br /><br /> &lt;wsFederationHttpBinding&gt;<br /><br /> &lt;绑定名称 ="sampleBinding"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 issuedKeyType ="AsymmetricKey"&gt;<br /><br /> &lt;颁发者地址 ="http://www.contoso.com/samplests"绑定 ="wsFederationHttpBinding"bindingConfiguration ="**contosoSTSBinding**"/&gt;<br /><br /> &lt;/message&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsFederationHttpBinding&gt;<br /><br /> \</**BindingConfiguration**\><br /><br /> \<**ReferencedBindings** vt ="8"\><br /><br /> &lt;绑定&gt;<br /><br /> &lt;wsFederationHttpBinding&gt;<br /><br /> &lt;绑定名称 ="**contosoSTSBinding**"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 negotiateServiceCredential ="false"&gt;<br /><br /> &lt;颁发者地址 ="http://northwind.com/samplests"bindingConfiguration ="**northwindBinding**"绑定 ="wsHttpBinding"&gt;<br /><br /> &lt;/issuer&gt;<br /><br /> &lt;/message&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsFederationHttpBinding&gt;<br /><br /> &lt;wsHttpBinding&gt;<br /><br /> &lt;绑定名称 ="**northwindBinding**"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 clientCredentialType ="证书"/&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsHttpBinding&gt;<br /><br /> &lt;/bindings&gt;<br /><br /> \</**ReferencedBindings** \> **注意：** **ReferencedBinding**属性不能包含中使用的绑定配置**BindingConfiguration**属性。|指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。 有关详细信息**\<颁发者\>**元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。<br /><br /> 绑定信息包括**\<颁发者\>**元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration** WCF 自定义和 WCF CustomIsolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 **注意：**无法在上配置此属性**绑定**传输的属性对话框中选项卡。 你可以导入和导出通过此属性**导入/导出**的 WCF 自定义和 WCF CustomIsolated 适配器的传输属性对话框中选项卡。 **注意：** **bindingConfiguration**属性**\<颁发者\>**元素必须引用此属性中的一个有效的绑定名称。 **注意：** **\<颁发者\>**引用的绑定配置中的元素也可以指 t 中的不同绑定配置其属性如果此引用链不会进行循环依赖关系。 <br /><br /> 默认值为空字符串。|  
+|**ReferencedBindings**|XML Blob<br /><br /> 例如：<br /><br /> \<**BindingConfiguration** vt ="8"\><br /><br /> &lt;wsFederationHttpBinding&gt;<br /><br /> &lt;绑定名称 ="sampleBinding"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 issuedKeyType ="AsymmetricKey"&gt;<br /><br /> &lt;颁发者地址 ="http://www.contoso.com/samplests"绑定 ="wsFederationHttpBinding"bindingConfiguration ="**contosoSTSBinding**"/&gt;<br /><br /> &lt;/message&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsFederationHttpBinding&gt;<br /><br /> \</**BindingConfiguration**\><br /><br /> \<**ReferencedBindings** vt ="8"\><br /><br /> &lt;绑定&gt;<br /><br /> &lt;wsFederationHttpBinding&gt;<br /><br /> &lt;绑定名称 ="**contosoSTSBinding**"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 negotiateServiceCredential ="false"&gt;<br /><br /> &lt;颁发者地址 ="http://northwind.com/samplests"bindingConfiguration ="**northwindBinding**"绑定 ="wsHttpBinding"&gt;<br /><br /> &lt;/issuer&gt;<br /><br /> &lt;/message&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsFederationHttpBinding&gt;<br /><br /> &lt;wsHttpBinding&gt;<br /><br /> &lt;绑定名称 ="**northwindBinding**"&gt;<br /><br /> &lt;安全模式 ="Message"&gt;<br /><br /> &lt;消息 clientCredentialType ="证书"/&gt;<br /><br /> &lt;/ 安全&gt;<br /><br /> &lt;/ 绑定&gt;<br /><br /> &lt;/wsHttpBinding&gt;<br /><br /> &lt;/bindings&gt;<br /><br /> \</**ReferencedBindings** \> **注意：** **ReferencedBinding**属性不能包含中使用的绑定配置**BindingConfiguration**属性。|指定引用的绑定配置**bindingConfiguration**属性**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**，表示安全令牌服务 (STS) 颁发安全令牌。 有关详细信息**\<颁发者\>** 元素，请参阅主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。<br /><br /> 绑定信息包括**\<颁发者\>** 元素**wsFederationHttpBinding**和**customBinding**可以是通过配置**BindingConfiguration** WCF 自定义和 WCF CustomIsolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于窗体的[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 **注意：** 无法在上配置此属性**绑定**传输的属性对话框中选项卡。 你可以导入和导出通过此属性**导入/导出**的 WCF 自定义和 WCF CustomIsolated 适配器的传输属性对话框中选项卡。 **注意：** **bindingConfiguration**属性**\<颁发者\>** 元素必须引用此属性中的一个有效的绑定名称。 **注意：** **\<颁发者\>** 引用的绑定配置中的元素也可以指 t 中的不同绑定配置其属性如果此引用链不会进行循环依赖关系。 <br /><br /> 默认值为空字符串。|  
   
  **如何配置 WCF CustomIsolated 接收位置使用 BizTalk 管理控制台**  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 12/01/2017
   
 10. 在**WCF CustomIsolated 传输属性**对话框中，在**消息**选项卡上，指定 SOAP 数据选择**正文**元素。 有关详细信息**消息**选项卡中**WCF CustomIsolated 传输属性**对话框中，请参阅**WCF 自定义传输属性对话框中，接收、 消息**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
   
-11. 在**WCF CustomIsolated 传输属性**对话框中，在**导入/导出**选项卡上，导入和导出**地址 (URI)**和**终结点标识**属性**常规**选项卡上，在上绑定信息**绑定**选项卡上，和终结点行为**行为**有关选项卡此接收位置。 有关详细信息**导入/导出**选项卡中**WCF CustomIsolated 传输属性**对话框中，请参阅**WCF 自定义传输属性对话框中，接收，导入导出**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+11. 在**WCF CustomIsolated 传输属性**对话框中，在**导入/导出**选项卡上，导入和导出**地址 (URI)** 和**终结点标识**属性**常规**选项卡上，在上绑定信息**绑定**选项卡上，和终结点行为**行为**有关选项卡此接收位置。 有关详细信息**导入/导出**选项卡中**WCF CustomIsolated 传输属性**对话框中，请参阅**WCF 自定义传输属性对话框中，接收，导入导出**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
   
 ## <a name="configure-a-wcf-customisolated-receive-location-programmatically"></a>配置 WCF CustomIsolated 以编程方式接收位置
   

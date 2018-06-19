@@ -1,14 +1,14 @@
 ---
-title: "演练： 发布 WCF 服务与 WCF NetMsmq 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 发布 WCF 服务与 WCF NetMsmq 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e623b6dc-32e5-467c-bb7d-68b7a75723c1
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010718"
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>演练： 使用 WCF NetMsmq 适配器的 WCF 服务发布
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  在解决方案资源管理器，展开**BizTalkApp**，然后打开**OrderProcess.odx**查看。 示例业务流程接收订单请求消息，但只返回订单响应消息。  
   
-4.  因为**BizTalkApp**程序集必须安装到 GAC 中，它将需要一个强名称密钥文件，以完成部署过程。 右键单击**BizTalkApp**项目，，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>**并输入`keyfile.snk`中**密钥文件名称**文本框。 取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
+4.  因为**BizTalkApp**程序集必须安装到 GAC 中，它将需要一个强名称密钥文件，以完成部署过程。 右键单击**BizTalkApp**项目，，然后单击**属性**。 上**属性**页上，单击**签名**，然后选择**对程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>** 并输入`keyfile.snk`中**密钥文件名称**文本框。 取消选中**保护我使用密码的密钥文件**，然后单击**确定**。  
   
 5.  单击**部署**选项卡上，然后更改**服务器**属性如果除了 BizTalk 管理数据库使用不同的数据库服务器**LOCALHOST**。  确保**BizTalk 应用程序**值设置为**WCFNetMsmqAdapterPublishing**。 确保**安装到全局程序集缓存**设置为**True**。  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 12/01/2017
   
     6.  在**接收位置属性**对话框中，在**传输**旁边部分**类型**，选择**WCF NetMsmq**从下拉列表，然后单击**配置**。  
   
-    7.  在**WCF NetMsmq 传输属性**对话框中，在**常规**选项卡上，在**地址 (URI)**文本框中，键入`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`。  
+    7.  在**WCF NetMsmq 传输属性**对话框中，在**常规**选项卡上，在**地址 (URI)** 文本框中，键入`net.msmq://localhost/private/WCFNetMsmqAdapterPublishing`。  
   
     8.  在**WCF NetMsmq 传输属性**对话框中，在**绑定**选项卡上，请确保**事务**复选框处于选中状态。  
   
@@ -150,11 +151,11 @@ ms.lasthandoff: 12/01/2017
   
 2.  上**BizTalk WCF 服务发布向导欢迎**页上，单击**下一步**。  
   
-3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)**复选框以将发布元数据以供 WCFNetMsmq 接收位置。 选择**WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq**从**发布元数据接收位置**下拉列表，然后单击**下一步**。  
+3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)** 复选框以将发布元数据以供 WCFNetMsmq 接收位置。 选择**WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder.NetMsmq**从**发布元数据接收位置**下拉列表，然后单击**下一步**。  
   
 4.  上**创建 WCF 服务**页上，选择**作为 WCF 服务发布 BizTalk 业务流程**，然后单击**下一步**。  
   
-5.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**文本框中，单击**浏览**以浏览到**C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**文件夹中，双击包含示例业务流程的程序集以发布，然后单击**下一步**。  
+5.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 文本框中，单击**浏览**以浏览到**C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**文件夹中，双击包含示例业务流程的程序集以发布，然后单击**下一步**。  
   
 6.  上**业务流程和端口**页上，请确保**端口： PurchaseOrderRequestPort**节点在页上，选择，再单击**下一步**。  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  在 Visual Studio 中，在解决方案资源管理器，右键单击**WCFClient**，指向**添加**，然后单击**现有项**。  
   
-4.  在**添加现有项**对话框中，浏览到**WCFClient**文件夹，选择**所有文件 (\*。\*)**中**类型的文件**下拉列表中，选择**BizTalkServiceInstance.cs**和**output.config**文件，并依次**添加**。  
+4.  在**添加现有项**对话框中，浏览到**WCFClient**文件夹，选择**所有文件 (\*。\*)** 中**类型的文件**下拉列表中，选择**BizTalkServiceInstance.cs**和**output.config**文件，并依次**添加**。  
   
 5.  展开**WCFClient**，右键单击**output.config**，单击**重命名**，然后键入`App.config`作为新的名称。  
   

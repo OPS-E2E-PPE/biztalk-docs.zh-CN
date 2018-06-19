@@ -1,14 +1,14 @@
 ---
-title: "如何使用自关联直接绑定端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用自关联直接绑定端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: feb651fa-3e35-4598-b229-335448f6919c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257133"
 ---
 # <a name="how-to-use-self-correlating-direct-bound-ports"></a>如何使用自关联 Direct 绑定端口
 自相关直接绑定端口是自引用的。 这表明自相关直接绑定端口提供了可用于将消息发送回其封闭业务流程的信息。 使用自相关直接绑定时，业务流程引擎对特定于业务流程实例的消息生成一个相关标记。 这提供了在不使用相关集的情况下将消息返回到特定业务流程实例的能力。  

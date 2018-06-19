@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005206"
 ---
 # <a name="getting-started-with-biztalk-accelerator-for-swift"></a>开始使用 BizTalk Accelerator for SWIFT
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供了一套架构、 规则和关联的工具可帮助你在 SWIFT 消息传递与内部应用程序的集成。 A4SWIFT 需要[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 中，并使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]组件和功能来实现架构，分析过程中，验证，规则处理，以及执行业务流程。 A4SWIFT 还实现 debatching 包含多个财务 (FIN) 消息、 消息修复和新的提交和 FIN 响应对帐的文件。  

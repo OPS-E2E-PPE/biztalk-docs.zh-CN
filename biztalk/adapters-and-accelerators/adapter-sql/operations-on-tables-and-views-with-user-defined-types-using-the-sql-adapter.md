@@ -1,14 +1,14 @@
 ---
-title: "对表和视图的用户定义的类型使用的 SQL 适配器操作 |Microsoft 文档"
-ms.custom: 
+title: 对表和视图的用户定义的类型使用的 SQL 适配器操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c4006bbe-91ca-4cd9-844d-5ed63142001f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006830"
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>对表和视图的用户定义的类型使用的 SQL 适配器操作
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在表或视图具有用户定义类型 (Udt) 的列上执行操作。 你可以使用标准的表操作 （插入、 更新、 删除和选择） 读取或写入数据列上 UDT 类型。 你还可以在此类表上执行存储的过程和函数。 但是，你需要执行某些任务，你可以使用该适配器上包含 UDT 列的表进行操作之前。 一旦你已执行这些任务，你可以使用为该适配器：  

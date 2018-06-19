@@ -1,11 +1,11 @@
 ---
-title: "如何使用多个部分消息类型 |Microsoft 文档"
-ms.custom: 
+title: 如何使用多个部分消息类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - multi-part message types, parts
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - creating, multi-part messages
 - messages, about messages
 ms.assetid: 009a39bd-cfc4-42d9-918c-88ac24bfc370
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972075"
 ---
 # <a name="how-to-use-multi-part-message-types"></a>如何使用多个部分消息类型
 每条消息都具有多部分消息类型，该消息类型描述由零个或多个消息部分构成的消息结构。 这些部分由 XML 架构定义 (XSD) 语言架构或 .NET 类定义。 您可以定义自己的多部分消息类型，或使用现有的 .NET 类和架构。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
     |属性|Description|  
     |--------------|-----------------|  
-    |**类型修饰符**|确定多部分消息类型的作用域：<br /><br /> -   **私有-**到这种多个部分的消息类型的访问仅限于包含模块。<br />-   **公共 —**访问此多个部分消息类型不受限制。<br />-   **内部 —**到这种多个部分的消息类型的访问仅限于同一项目中的模块。|  
+    |**类型修饰符**|确定多部分消息类型的作用域：<br /><br /> -   **私有-** 到这种多个部分的消息类型的访问仅限于包含模块。<br />-   **公共 —** 访问此多个部分消息类型不受限制。<br />-   **内部 —** 到这种多个部分的消息类型的访问仅限于同一项目中的模块。|  
   
 ## <a name="add-parts-to-an-existing-multi-part-message"></a>将部件添加到现有的多个部分消息  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 11/28/2017
   
 -   创建一个变量 (例如*xlangPart*) 类型的**Microsoft.XLANGs.BaseTypes.XLANGMessage**。  
   
--   调用*xlangPart***。AddPart(...)**使用表达式形状从相应的参数。  
+-   调用*xlangPart***。AddPart(...)** 使用表达式形状从相应的参数。  
   
     > [!NOTE]
-    >  添加的部件属于类型**XmlDocument**无法添加自定义格式的消息部分使用**AddPart()**方法。  
+    >  添加的部件属于类型**XmlDocument**无法添加自定义格式的消息部分使用**AddPart()** 方法。  
   
 > [!NOTE]
 >  如果收到包含大于的声明部分数多部分消息时，有多少个部分是在消息中，业务流程引擎读取然后构造中声明的消息的部件的数量匹配的部件的正确部件类型类型，然后构造**XmlDocument**部件的其余部分。  

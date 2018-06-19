@@ -1,14 +1,14 @@
 ---
-title: "安装 BizTalk Server 2013 和 2013 R2 |Microsoft 文档"
-ms.custom: 
+title: 安装 BizTalk Server 2013 和 2013 R2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b4665ea-6f2c-477f-98ec-1cebef05ad4a
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976363"
 ---
 # <a name="install-biztalk-server-2013-and-2013-r2"></a>安装 BizTalk Server 2013 和 2013 R2
 列出安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的步骤。  
@@ -78,13 +79,13 @@ ms.lasthandoff: 11/28/2017
     |-------------|-----------------|  
     |**文档**|核心文档、教程、用户界面参考（F1 帮助）、程序员参考，以及 SDK 示例和实用程序的使用说明。|  
     |**服务器运行时**|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的基本运行时服务。|  
-    |**BizTalk EDI/AS2 运行时**|运行时服务为电子数据交换 (EDI) 数据交换和 Applicability Statement 2 (AS2) 数据传输消息传送功能提供本机支持。 **注意：**只有选择了“服务器运行时”功能时，才能选择此功能。|  
-    |**Windows Communication Foundation (WCF) 适配器运行时**|允许 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与基于 WCF 的应用程序进行通信的适配器。 **注意：**只有选择了“服务器运行时”功能时，才能选择此功能。|  
+    |**BizTalk EDI/AS2 运行时**|运行时服务为电子数据交换 (EDI) 数据交换和 Applicability Statement 2 (AS2) 数据传输消息传送功能提供本机支持。 **注意：** 只有选择了“服务器运行时”功能时，才能选择此功能。|  
+    |**Windows Communication Foundation (WCF) 适配器运行时**|允许 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与基于 WCF 的应用程序进行通信的适配器。 **注意：** 只有选择了“服务器运行时”功能时，才能选择此功能。|  
     |**门户组件**|“门户”组件是一组功能，业务分析师使用业务数据通过这些功能进行通信、协作并达成决定。|  
-    |**业务活动监视**|也称为 BAM，这组功能可为业务用户提供其异构业务流程的实时视图，帮助其做出重要的业务决策。 **注意：**只有选择了“门户组件”功能时，才能选择此功能。|  
+    |**业务活动监视**|也称为 BAM，这组功能可为业务用户提供其异构业务流程的实时视图，帮助其做出重要的业务决策。 **注意：** 只有选择了“门户组件”功能时，才能选择此功能。|  
     |**管理工具和监视**|在本地计算机和远程服务器上管理和监视 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 所必需的组件。|  
-    |**Windows Communication Foundation (WCF) 管理工具**|选择此功能将安装用于 WCF 组件的管理服务。 **注意：**只有选择了“管理工具和监视”功能时，才能选择此功能。|  
-    |**开发人员工具和 SDK**|用于快速创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案的示例和实用程序。 其中包括：SDK 示例和支持文档、架构和映射设计器，以及 Visual Studio 项目模板。 **重要提示：**如果计划进行任何开发工作，则必须安装此组件。 若未安装**开发人员工具和 SDK** 组件，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用的 Visual Studio 扩展将无法正常工作。|  
+    |**Windows Communication Foundation (WCF) 管理工具**|选择此功能将安装用于 WCF 组件的管理服务。 **注意：** 只有选择了“管理工具和监视”功能时，才能选择此功能。|  
+    |**开发人员工具和 SDK**|用于快速创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案的示例和实用程序。 其中包括：SDK 示例和支持文档、架构和映射设计器，以及 Visual Studio 项目模板。 **重要提示：** 如果计划进行任何开发工作，则必须安装此组件。 若未安装**开发人员工具和 SDK** 组件，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用的 Visual Studio 扩展将无法正常工作。|  
     |***其他软件***||  
     |**企业单一登录 (SSO) 管理模块**|管理 SSO 关联应用程序及其映射的界面。|  
     |**企业单一登录主密钥服务器**|存储主密钥的 SSO 服务器。 系统中的所有其他 SSO 服务器均从此服务器获取该主密钥。 主密钥服务器在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中是必需的。|  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server Integration2 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server Integration2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 562a628d-52cb-4aae-8729-b5ba855bea5f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007078"
 ---
 # <a name="biztalk-server-integration"></a>BizTalk Server 的集成
 AmberPoint 包作为自定义的 BizTalk 管道组件其 Microsoft BizTalk Server 集成产品。 你可以向你现有的自定义管线，使用 Visual Studio 中，添加此组件，如图 1 中所示。  

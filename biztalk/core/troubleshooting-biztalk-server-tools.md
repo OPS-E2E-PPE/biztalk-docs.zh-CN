@@ -1,14 +1,14 @@
 ---
-title: "故障排除 BizTalk Server 工具 |Microsoft 文档"
-ms.custom: 
+title: 故障排除 BizTalk Server 工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 038a5f5c-d6eb-42db-88d6-70f3deba7a8a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279765"
 ---
 # <a name="troubleshooting-biztalk-server-tools"></a>BizTalk Server 工具问题疑难解答
 本主题集中提供了有关使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含的工具时遇到的常见问题的信息。  

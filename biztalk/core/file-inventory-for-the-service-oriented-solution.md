@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975451"
 ---
 # <a name="file-inventory-for-the-service-oriented-solution"></a>服务文件清单面向解决方案
 本部分列出了面向服务的解决方案的子目录和源文件。 面向服务的解决方案源文件的默认安装目录为 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO。 下表将具有此路径之前的说明\<安装 Directory\>。  

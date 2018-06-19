@@ -1,14 +1,14 @@
 ---
-title: "运行 BizTalk Server 的计算机的灾难恢复 |Microsoft 文档"
-ms.custom: 
+title: 运行 BizTalk Server 的计算机的灾难恢复 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10a2c26d-55d5-45d1-9fb1-e0664f005c21
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005222"
 ---
 # <a name="disaster-recovery-for-computers-running-biztalk-server"></a>运行 BizTalk Server 的计算机的灾难恢复
 如果您的组织中运行 BizTalk Server 的计算机出现了无法恢复的硬件故障，则应该用相同设置的计算机代替它。 其假定条件是，BizTalk Server 数据库保存完整，并且故障发生在运行 BizTalk Server 的任何计算机上。  

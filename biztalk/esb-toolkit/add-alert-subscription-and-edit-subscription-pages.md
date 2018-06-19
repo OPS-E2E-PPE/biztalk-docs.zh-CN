@@ -1,14 +1,14 @@
 ---
-title: "警报订阅中添加和编辑订阅页面 |Microsoft 文档"
-ms.custom: 
+title: 警报订阅中添加和编辑订阅页面 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad5e99f1-714e-458b-b5f0-85ac69be5335
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290037"
 ---
 # <a name="add-alert-subscription-and-edit-subscription-pages"></a>警报订阅中添加和编辑订阅页面
 添加警报订阅和编辑订阅页很相似。 它们不同，因为编辑订阅页显示订阅服务器 ID （Microsoft Windows 当前门户用户的帐户），并具有一组不同的按钮。 图 1 显示的添加警报订阅和编辑订阅页。  

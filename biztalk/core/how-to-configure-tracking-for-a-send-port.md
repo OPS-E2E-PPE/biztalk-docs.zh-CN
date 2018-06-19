@@ -1,15 +1,15 @@
 ---
-title: "启用发送端口上的跟踪 |Microsoft 文档"
-description: "打开跟踪的消息正文，并在 BizTalk Server 发送端口上跟踪消息属性"
-ms.custom: 
+title: 启用发送端口上的跟踪 |Microsoft 文档
+description: 打开跟踪的消息正文，并在 BizTalk Server 发送端口上跟踪消息属性
+ms.custom: ''
 ms.date: 12/13/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f32e97b0-244c-4acc-8f3f-b18cdb9ec0da
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/13/2017
+ms.locfileid: "26686628"
 ---
 # <a name="configure-send-port-tracking-in-biztalk-server"></a>在 BizTalk Server 中配置发送端口跟踪
 使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置跟踪发送端口，如选项，以查看消息正文和升级的属性。 这有助于您监视 BizTalk 实施的运行状况并确定存在的任何瓶颈问题。 所配置的跟踪设置将应用于发送端口的所有实例。  

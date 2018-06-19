@@ -1,11 +1,11 @@
 ---
-title: "如何安装服务的存根 （stub） 版本面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何安装服务的存根 （stub） 版本面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IIS, installing virtual directories [service solutions]
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - service solution tutorial, building solutions
 - service solution tutorial, installing
 ms.assetid: 45de7681-4df0-47a4-a02c-509140423a1e
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010406"
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a>如何安装面向服务的解决方案的存根版本
 以下步骤介绍了如何准备计算机以安装面向服务的解决方案的存根版本，以及如何在计算机上安装该解决方案：  
@@ -174,25 +175,25 @@ ms.lasthandoff: 12/01/2017
   
          访问权限 = 读取，运行脚本  
   
-9. 在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub，单击**属性**，，然后修改设置，如下所示：  
+9. 在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub，单击**属性**，，然后修改设置，如下所示：  
   
     1.  上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。  
   
     2.  单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，选择**仅集成 Windows 身份验证启用**，然后清除其他**身份验证访问**复选框。 单击**确定**退出。  
   
-10. 在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP，单击**属性**，，然后修改设置，如下所示：  
+10. 在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP，单击**属性**，，然后修改设置，如下所示：  
   
     1.  上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。  
   
     2.  单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**. 单击**确定**退出。  
   
-11. 在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，，然后修改设置，如下所示：  
+11. 在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions，单击**属性**，，然后修改设置，如下所示：  
   
     1.  上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。  
   
     2.  单击**目录安全性**选项卡上，单击**编辑**中**身份验证和访问控制**组框中，，然后选择**启用匿名访问**. 单击**确定**退出。  
   
-12. 在**Internet Information Services (IIS) Manager**，展开**网站，**展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker，单击**属性**，，然后修改设置，如下所示：  
+12. 在**Internet Information Services (IIS) Manager**，展开**网站，** 展开**Default Web Site**，右键单击Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker，单击**属性**，，然后修改设置，如下所示：  
   
     1.  上**虚拟目录**选项卡上，设置**应用程序池**到**SSOStubAppPool**你刚创建。  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 12/01/2017
 1.  启动**Visual Studio 命令提示**。  
   
     > [!NOTE]
-    >  在文件中**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**和**%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**，将替换为 a1054514fc67bded 17f20caea2afcc8c 的所有实例。  
+    >  在文件中 **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Inline\app_code\customerserviceport.asmx.cs**和 **%BTSInstallPath%\Scenarios\SO\BTSSoln\OrchProxy\Stub\app_code\customerserviceport.asmx.cs**，将替换为 a1054514fc67bded 17f20caea2afcc8c 的所有实例。  
   
 2.  在“Visual Studio 命令提示”下，将目录更改为 %BTSSolutionsPath%\SO\BTSSoln 文件夹，然后运行以下命令以生成面向服务的解决方案的存根版本。  
   

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 部署 Web 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 部署 Web 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb775a89-2e2d-43e5-94ae-f75c1756dbd7
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450286"
 ---
 # <a name="step-2-deploy-the-web-project"></a>步骤 2： 部署 Web 项目
 ![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/17/2017
   
 5.  在**解决方案资源管理器**，右键单击 EchoWeb 项目，然后选择**发布网站**。  
   
-6.  在**发布网站**对话框中，为**目标位置**，输入**http://machinename/EchoWeb**。 选择**允许可更新此预编译的网站**，**使用固定命名和单个页程序集**，和**启用强命名在预编译的程序集**。 在**密钥文件位置**字段中，单击省略号**（...）**按钮，选择以前，创建的 EchoWebKey.snk 文件，然后单击**确定**。  
+6.  在**发布网站**对话框中，为**目标位置**，输入**http://machinename/EchoWeb**。 选择**允许可更新此预编译的网站**，**使用固定命名和单个页程序集**，和**启用强命名在预编译的程序集**。 在**密钥文件位置**字段中，单击省略号 **（...）** 按钮，选择以前，创建的 EchoWebKey.snk 文件，然后单击**确定**。  
   
-7.  要验证是否已正确创建网站，请启动 Internet Explorer 中，输入**"http://localhost/EchoWeb/EchoOutboundContract.svc"**中地址栏中，然后按 enter 键。 应显示的 Web 页面，介绍 EchoOutboundContractClient。  
+7.  要验证是否已正确创建网站，请启动 Internet Explorer 中，输入 **"http://localhost/EchoWeb/EchoOutboundContract.svc"** 中地址栏中，然后按 enter 键。 应显示的 Web 页面，介绍 EchoOutboundContractClient。  
   
 ## <a name="what-did-i-just-do"></a>内容回顾  
  你只是你的 Web 项目发布到 IIS。  

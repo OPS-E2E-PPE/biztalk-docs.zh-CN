@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277093"
 ---
 # <a name="sso-tickets"></a>SSO 票证
 在企业环境中，用户需要与各种各样的系统和应用程序进行交互，很可能会出现环境不通过多个进程、产品和计算机维护用户上下文的情况。 此用户上下文对于提供单一登录功能至关重要，因为需要确认原始请求的发起人。 为了克服此问题，企业单一登录 (SSO) 提供了 SSO 票证（不是 Kerberos 票证），应用程序可以使用该票证获取与发出原始请求的用户相对应的凭据。 默认情况下，不启用 SSO 票证。 有关启用票证的详细信息，请参阅[如何配置 SSO 票证](../core/how-to-configure-the-sso-tickets.md)。  

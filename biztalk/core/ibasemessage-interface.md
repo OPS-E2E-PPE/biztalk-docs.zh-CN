@@ -1,14 +1,14 @@
 ---
-title: "IBaseMessage 接口 |Microsoft 文档"
-ms.custom: 
+title: IBaseMessage 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10bfb95c-aef5-46ba-ba0e-9961833f27a3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257085"
 ---
 # <a name="ibasemessage-interface"></a>IBaseMessage 接口
 当接收适配器接受传入的数据包通过其协议时，它会使用**IBaseMessage**接口可创建要传递给 the Messaging Engine 一条消息。 所有消息都是使用这个接口传递的。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
  升级属性与现有订阅匹配完毕并用于路由消息后，该属性将被降级，以防止发生循环订阅匹配。 降级属性仍作为元数据留在消息上下文中，但会失去升级状态。  
   
- **实现提示：**消息上下文属性都在运行时加载到内存。 非常大片的数据应不会写入消息上下文因为这可能会中断[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持大消息。 可能将对象序列化到消息上下文提供其实现**IPersistStream**接口。 同样，升级属性的长度也限制在 255 个字符之内。  
+ **实现提示：** 消息上下文属性都在运行时加载到内存。 非常大片的数据应不会写入消息上下文因为这可能会中断[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持大消息。 可能将对象序列化到消息上下文提供其实现**IPersistStream**接口。 同样，升级属性的长度也限制在 255 个字符之内。  
   
  应始终应当使用消息工厂来创建新消息。  下面的代码段演示了如何用适配器接收的数据流来创建新的 BizTalk 消息。  
   

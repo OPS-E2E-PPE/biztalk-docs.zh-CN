@@ -1,18 +1,18 @@
 ---
-title: "SSO 映射 |Microsoft 文档"
-ms.custom: 
+title: SSO 映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO]
 - maps [SSO], creating
 - SSO, maps
 ms.assetid: b44f7a0c-595c-49dc-9d75-2e76f29dca88
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277237"
 ---
 # <a name="sso-mappings"></a>SSO 映射
 在企业单一登录 (SSO) 管理员或 SSO 关联管理员定义关联应用程序时，该管理员可以将其定义为具有单项映射的应用程序或具有组映射的应用程序。  

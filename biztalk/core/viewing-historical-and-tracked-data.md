@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287685"
 ---
 # <a name="viewing-historical-and-tracked-data"></a>查看历史数据和跟踪数据
 本部分提供有关如何使用 BizTalk Server 管理控制台的“组中心”页查看历史和跟踪数据的任务特定信息。  

@@ -1,14 +1,14 @@
 ---
-title: "教程 4： 创建使用 BizTalk Server 2013 的混合应用程序 |Microsoft 文档"
-ms.custom: 
+title: 教程 4： 创建使用 BizTalk Server 2013 的混合应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a9de95f-7d2c-437d-be5b-0062592f32c6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287341"
 ---
 # <a name="tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013"></a>教程 4： 创建使用 BizTalk Server 2013 的混合应用程序
 本部分提供了有关如何创建包含[!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)]和 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的混合应用程序的分步概览。  

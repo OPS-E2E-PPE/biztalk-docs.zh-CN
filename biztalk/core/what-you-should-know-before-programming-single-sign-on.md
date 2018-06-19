@@ -1,14 +1,14 @@
 ---
-title: "在编程上单一登录之前应该知道哪些内容 |Microsoft 文档"
-ms.custom: 
+title: 在编程上单一登录之前应该知道哪些内容 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 547f87d1-359a-4548-b8cc-e8bad82a5118
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288981"
 ---
 # <a name="what-you-should-know-before-programming-single-sign-on"></a>在编程上单一登录之前应该知道哪些内容
 若要有效地使用本文档，你应熟悉以下：  

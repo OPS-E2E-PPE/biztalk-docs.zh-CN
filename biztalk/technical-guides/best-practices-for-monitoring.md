@@ -1,14 +1,14 @@
 ---
-title: "监视的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 监视的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5b180e2-bdd3-4081-9531-d96be7dabe1a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008526"
 ---
 # <a name="best-practices-for-monitoring"></a>用于监视的最佳做法
 本主题提供有关监视你的 Microsoft BizTalk Server 环境和应用程序的最佳实践。  

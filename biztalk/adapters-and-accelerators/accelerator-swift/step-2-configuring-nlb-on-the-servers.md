@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 在服务器上配置 NLB |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 在服务器上配置 NLB |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Network Load Balancing
 - configuring, NLB
 - NLB
 ms.assetid: 30b2f645-b495-49a5-852b-cf89d25fd2b7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006518"
 ---
 # <a name="step-2-configuring-nlb-on-the-servers"></a>步骤 2： 在服务器上配置 NLB
 安装的基础平台并使用正确的网络设置配置服务器后 (请参阅[步骤 1： 安装基础平台](../../adapters-and-accelerators/accelerator-swift/step-1-installing-the-base-platform.md))，你可能需要启用 BizTalk HTTP 前端服务器和 BizTalk 上的负载平衡消息服务器。 仅当你有一个或多个 BizTalk HTTP 前端服务器从一个或多个 BizTalk 消息传送服务器的单独计算机上安装，则需要此步骤。  

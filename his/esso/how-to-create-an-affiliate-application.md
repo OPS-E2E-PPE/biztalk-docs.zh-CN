@@ -8,15 +8,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3be483f8-2617-459e-9081-aab886c75d93
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: gplarsen
 ms.author: hisdocs; plarsen
 manager: anneta
 ms.openlocfilehash: 5145111b2c585edab92cc10c3e3614e8bb91a85d
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30250985"
 ---
 # <a name="how-to-create-an-affiliate-application"></a>如何创建关联应用程序
 你可以使用 Mmc 管理单元或**createapps**命令以创建一个或多个应用程序，为指定的 XML 文件。 下面是示例 XML 文件的 Windows-Initiated 单一登录 (SSO):  
@@ -79,7 +80,7 @@ ms.lasthandoff: 03/28/2018
   
      默认安装目录是*\<驱动器 >*: \program Files\Enterprise 单一登录。  
   
-3.  类型`ssomanage –createapps <application file name>`，其中*\<应用程序文件名称 >*是 XML 文件。  
+3.  类型`ssomanage –createapps <application file name>`，其中*\<应用程序文件名称 >* 是 XML 文件。  
   
 ## <a name="see-also"></a>另请参阅  
  [SSO 关联应用程序](../esso/sso-affiliate-applications.md)   

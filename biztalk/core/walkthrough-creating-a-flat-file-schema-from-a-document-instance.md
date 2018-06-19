@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22291589"
 ---
 # <a name="walkthrough-creating-a-flat-file-schema-from-a-document-instance"></a>演练：从文档实例创建平面文件架构
 此演练演示如何根据以下示例采购订单，使用“BizTalk 平面文件架构向导”从文档实例创建平面文件架构。 BizTalk 平面文件架构向导的介绍，请参阅[如何使用 BizTalk 平面文件架构向导](../core/how-to-use-biztalk-flat-file-schema-wizard.md)。  
@@ -70,7 +71,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
   
     -   **记录名称︰** 类型 **PO** 因为它将架构根名称。  
   
-    -   **目标命名空间：**类型**http://Flat_File_Project.PurchaseOrder**架构目标命名空间。  
+    -   **目标命名空间：** 类型**http://Flat_File_Project.PurchaseOrder**架构目标命名空间。  
   
     -   **代码页︰** 选择 **utf-8 (65001)** 的下拉列表选择列表中。  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256821"
 ---
 # <a name="initializing-orchestration-variables"></a>初始化业务流程变量
 可以通过在“属性”窗口中设置某一变量的值，初始化该值。 例如，你可以设置**初始值**为 32 初始化类型 System.Int32 的变量。 在向字符串类型的变量添加初始值时，必须在“属性”窗口中将初始值用引号括起来。 如果您希望该字符串包含一个引号，则使用反斜杠作为转义符；如果您希望字符串中包括的是反斜杠字符本身，则使用连续的反斜杠。 如果你未为变量指定一个值，你的变量将分配默认值就会立即创建你的业务流程的实例。  

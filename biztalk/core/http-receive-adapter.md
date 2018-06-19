@@ -1,14 +1,14 @@
 ---
-title: "HTTP 接收适配器 |Microsoft 文档"
-ms.custom: 
+title: HTTP 接收适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9008833c-5a02-4fb4-a43e-09ca28a21eff
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29710596"
 ---
 # <a name="http-receive-adapter"></a>HTTP 接收适配器
 HTTP 接收适配器的接收位置是一个通过 BizTalk Server 管理控制台配置的独特 URL。  

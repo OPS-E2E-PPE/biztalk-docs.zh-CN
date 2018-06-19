@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF adapters, message bodies
 - SOAP messages, WCF adapters
 ms.assetid: b20364b7-0365-4636-b4d6-bde9c69b8dcb
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25975531"
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>指定 WCF 适配器的消息正文
 你可以使用 **消息** BizTalk 消息正文的方式放置在传出 SOAP 消息并在 WCF 适配器以指定如何将 BizTalk 消息正文提取传入 SOAP 消息时，从选项卡上。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/23/2018
 > [!NOTE]
 >  有关 **正文路径表达式** 属性，仅支持适用于处理只进的 XML 的表达式的 XPath。 有关可用于此属性的 XPath 表达式的详细信息，请参阅"最佳的两个领域:: 组合 XPath 与 XmlReader"网址[ http://go.microsoft.com/fwlink/?LinkID=75701 ](http://go.microsoft.com/fwlink/?LinkID=75701)。  
   
- 如果 **路径--由正文路径定位的内容** 选项和 **节点编码** 属性设置为 **字符串**, ，WCF 适配器预期的匹配的节点具有 utf-8 编码字符数据。 如果传入消息包含转义的 XML 的特殊字符的字符数据，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** WCF 适配器创建**\<FirstName\>CONTOSO\</FirstName\>**在入站 BizTalk 消息正文。  
+ 如果 **路径--由正文路径定位的内容** 选项和 **节点编码** 属性设置为 **字符串**, ，WCF 适配器预期的匹配的节点具有 utf-8 编码字符数据。 如果传入消息包含转义的 XML 的特殊字符的字符数据，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** WCF 适配器创建**\<FirstName\>CONTOSO\</FirstName\>** 在入站 BizTalk 消息正文。  
   
  如果 **路径--由正文路径定位的内容** 选项和 **节点编码** 属性设置为 **十六进制** 或 **Base64**, ，匹配的节点可以具有一个有效 **BinHex** 或 **Base64** 序列。 如果匹配的节点具有无效的序列，WCF 客户端接收 **FaultException**, 、 在您的 BizTalk Server 计算机上的事件日志中记录一条错误消息和不挂起任何消息。  
   

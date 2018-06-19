@@ -1,11 +1,11 @@
 ---
-title: "演练： 创建 BizTalk 应用程序将使用 POP3 适配器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建 BizTalk 应用程序将使用 POP3 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorials, POP3 adapters
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - POP3 adapters, tutorials
 - configuring [POP3 adapters], Outlook Express
 ms.assetid: b44c3b1d-7b4f-425c-831a-1ce5f6379595
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975939"
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>演练： 创建使用 POP3 适配器 BizTalk 应用程序
 本部分将指导您创建一个使用 POP3 适配器的简单 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文件系统上创建一个文件夹。 它将成为发送端口的目标文件夹。  
   
-2.  右键单击**发送端口**，单击**新建，**然后单击**静态单向发送端口。**  
+2.  右键单击**发送端口**，单击**新建，** 然后单击**静态单向发送端口。**  
   
 3.  在**发送端口属性**对话框中，在**传输类型**框中，选择**文件**。  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  旁边**目标文件夹**框中，单击**浏览**，选择你在创建的文件夹[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，然后单击**确定**。  
   
-7.  在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。  
+7.  在**文件名**框中，键入 **%MessageID%.txt**，然后单击**确定**。  
   
 8.  在**发送管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。  
   
@@ -135,7 +136,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  在**Internet 电子邮件地址**对话框中，在**电子邮件地址**框中，键入**EmailTest @< 域名 >**，然后单击**下一步**.  
   
-     请确保输入的相应值*< 域名 >*。 此值应与在 Windows 服务器上 POP3 服务管理用户界面中创建此邮箱使用的域名匹配。  
+     请确保输入的相应值 *< 域名 >*。 此值应与在 Windows 服务器上 POP3 服务管理用户界面中创建此邮箱使用的域名匹配。  
   
 6.  在**电子邮件服务器名称**对话框中，在**传入邮件**和**传出邮件**框中，键入服务器名称或 Windows server 的 IP 地址，然后单击**下一步**。  
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 11/28/2017
   
 11. 在**Internet 帐户**对话框中，单击**关闭**。  
   
-12. 使用 Outlook Express 撰写一条测试消息，类型**测试**到**主题**字段和类型**EmailTest @< 域名 >**到**到**字段。  
+12. 使用 Outlook Express 撰写一条测试消息，类型**测试**到**主题**字段和类型**EmailTest @< 域名 >** 到**到**字段。  
   
 13. 单击**发送**发送测试消息。 若要确保，Outlook Express 立即发送测试消息，请单击**发送/接收**Outlook Express 工具栏中的按钮。  
   

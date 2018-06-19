@@ -1,14 +1,14 @@
 ---
-title: "使用单元测试功能包含架构和映射 |Microsoft 文档"
-ms.custom: 
+title: 使用单元测试功能包含架构和映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29bcb159-ffdb-44b9-a3ff-565973d41797
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288989"
 ---
 # <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>对架构和映射使用单元测试功能
 本主题介绍如何在 HelloWord 工作流程示例中使用单元测试功能添加架构和映射。  
@@ -45,13 +46,13 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**新的测试项目**对话框框中，保留项目同名**TestProject1**单击**创建**。  
   
-9. 在**创建单元测试**对话框中，展开类型并选择**POSchema()**构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POSchema**节点。 此外选择**POToInvoice()**构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**节点。 下图显示了应进行的选择。 完成后会显示下面的选项，请按**确定**。  
+9. 在**创建单元测试**对话框中，展开类型并选择**POSchema()** 构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POSchema**节点。 此外选择**POToInvoice()** 构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**节点。 下图显示了应进行的选择。 完成后会显示下面的选项，请按**确定**。  
   
      ![](../core/media/schemaandmapsunittestwizardselection.gif "SchemaAndMapsUnitTestWizardSelection")  
   
 ### <a name="adding-test-code-to-test-the-schemas-and-map"></a>添加测试代码以测试架构和映射  
   
-1.  添加以下引用到**TestProject1**项目从**.NET**添加引用对话框中的选项卡：  
+1.  添加以下引用到**TestProject1**项目从 **.NET**添加引用对话框中的选项卡：  
   
     -   Microsoft.BizTalk.TestTools  
   

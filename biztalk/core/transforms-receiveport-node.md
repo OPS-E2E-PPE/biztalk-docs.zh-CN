@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279237"
 ---
 # <a name="transforms-receiveport-node"></a>Transforms（ReceivePort 节点）
 绑定文件的 ReceivePort 节点的 Transforms 节点包含与绑定文件一起导出的单向接收端口的入站转换集合。  

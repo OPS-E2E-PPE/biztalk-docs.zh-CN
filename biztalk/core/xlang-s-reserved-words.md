@@ -1,18 +1,18 @@
 ---
-title: "XLANG-s 保留字 |Microsoft 文档"
-ms.custom: 
+title: XLANG-s 保留字 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, reserved words
 - XLANG/s, reserved words
 - orchestrations, XLANG/s
 ms.assetid: 06128c96-8a06-4998-822d-7b20f44291d1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22290357"
 ---
 # <a name="xlang-s-reserved-words"></a>XLANG-s 保留字
 XLANG/s 保留各种关键字、类型名称和标识符名称供自己使用。  

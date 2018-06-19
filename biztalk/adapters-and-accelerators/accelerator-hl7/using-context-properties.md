@@ -1,11 +1,11 @@
 ---
-title: "使用上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 使用上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, context properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - promoted properties, context properties
 - context properties, messages
 ms.assetid: 306127a9-df03-4aaf-8dd8-76df51eb193d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006750"
 ---
 # <a name="using-context-properties"></a>使用上下文属性
 HL7 BizTalk 快捷键 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) Messaging Engine 和其组件在内部使用上下文属性。 不建议更改由某些上下文属性的引擎设置的值，因为它可能会影响引擎的执行逻辑。 但是，你可以更改大量的属性不由引擎设置。 可用于创建发送端口上的筛选器表达式的上下文属性 (有关详细信息，请参阅[发送端口上设置筛选器表达式](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md))。 业务流程，还可以在筛选表达式中使用上下文属性。 只要一个项目具有对全局属性架构的引用的属性是可用于筛选器表达式 (其[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]时使用的常见模板之一创建)。  

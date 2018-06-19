@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279461"
 ---
 # <a name="tpe-activity-view-nodes"></a>键入活动视图节点
 此部分中的主题描述的树节点由跟踪配置文件编辑器用于特定视图映射的内部业务流程，以及相关联的数据，与业务流程的类型。  

@@ -1,14 +1,14 @@
 ---
-title: "对于 EDI 状态报表存储的数据 |Microsoft 文档"
-ms.custom: 
+title: 对于 EDI 状态报表存储的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec66e4d7-2694-499f-a60c-2f80fe643e12
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970619"
 ---
 # <a name="data-stored-for-edi-status-reports"></a>为 EDI 状态报告存储的数据
 在 EDI 状态报告提供了两个级别的报告： 首先如果**打开 ON Reporting**属性选择一个协议，并且第二个如果**存储事务集/负载 reporting**属性为协议选择。 这些属性位于**常规属性**页**常规**选项卡中**协议属性**对话框。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
 |TransactionSetStatus|“已接受”、“已接受但存在错误”或者“已拒绝”|  
 |方向|发送或接收|  
 |BtsProcessingTime|在接收端：管道中添加的时间戳 BTSReceiveTime（本地时间）<br /><br /> 在发送端：ASM 组件在信封上添加的时间戳 BTSSendTime（本地时间）|  
-|BTS.MessageId|在接收端：来自消息属性的 BTSMessageId<br /><br /> 在发送端：<br /><br /> 对于单个事务集：BTSMessageId<br /><br /> 对于出站批： 为每个批次 (不是批处理消息 BTSMessageId) 中的单个消息 TransactionSet BTSMessageId**注意：**存储仅 – 将不会显示在 UI 中。|  
+|BTS.MessageId|在接收端：来自消息属性的 BTSMessageId<br /><br /> 在发送端：<br /><br /> 对于单个事务集：BTSMessageId<br /><br /> 对于出站批： 为每个批次 (不是批处理消息 BTSMessageId) 中的单个消息 TransactionSet BTSMessageId**注意：** 存储仅 – 将不会显示在 UI 中。|  
   
 ## <a name="see-also"></a>另请参阅  
  [对于 EDI 和 AS2 状态报表存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md)   

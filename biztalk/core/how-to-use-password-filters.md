@@ -1,14 +1,14 @@
 ---
-title: "如何使用密码筛选器 |Microsoft 文档"
-ms.custom: 
+title: 如何使用密码筛选器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb429f8b-c301-45a3-8a4f-bbe6f2c566a3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255933"
 ---
 # <a name="how-to-use-password-filters"></a>如何使用密码筛选器
 ENTSSO 密码同步功能在 Microsoft Windows Active Directory 和非 Windows 系统之间同步密码。 但是，许多外部系统具有与 Active Directory 不同的密码策略要求。 （例如，IBM 系统可能要求密码为大写，并且仅限于 8 个字符。）这强制 ENTSSO 在两个系统之间使用“最小公分母”，从而限制了密码的安全性。  

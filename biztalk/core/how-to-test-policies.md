@@ -1,11 +1,11 @@
 ---
-title: "如何测试策略 |Microsoft 文档"
-ms.custom: 
+title: 如何测试策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, policies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - testing, Business Rule Composer
 - policies, testing
 ms.assetid: 122dee26-d1f1-49a6-a6d5-a9d3d861a66b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255805"
 ---
 # <a name="how-to-test-policies"></a>如何测试策略
 若要测试策略，您需要可对其执行规则的事实。 通过在将在策略测试器中指向的 XML 文档或数据库表中指定值，可以添加事实；也可以使用事实创建器向引擎提供 .NET 对象数组作为事实。 有关详细信息，请参阅[创建事实创建者](../core/how-to-create-a-fact-creator.md)。  
