@@ -1,14 +1,14 @@
 ---
-title: "交互存储和转发 （请求） 方案 |Microsoft 文档"
-ms.custom: 
+title: 交互存储和转发 （请求） 方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eabd46c8-8fd4-44d4-bd05-3bea8b22e74e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224117"
 ---
 # <a name="interact-store-and-forward-pull-scenario"></a><span data-ttu-id="3ecd1-102">交互存储和转发 （请求） 方案</span><span class="sxs-lookup"><span data-stu-id="3ecd1-102">InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="3ecd1-103">在开始此部分中的步骤之前，必须完成中的步骤[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)部分。</span><span class="sxs-lookup"><span data-stu-id="3ecd1-103">Before you begin the steps in this section, you must complete the steps in the [Preparing to Use the Tutorial](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md) section.</span></span>  

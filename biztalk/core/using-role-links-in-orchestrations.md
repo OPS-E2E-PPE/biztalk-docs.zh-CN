@@ -1,11 +1,11 @@
 ---
-title: "在业务流程中使用角色链接 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中使用角色链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - role links
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - role links, properties
 - role links, initializing
 ms.assetid: 0cf85544-12c9-4541-8925-61a6e946cce0
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288461"
 ---
 # <a name="using-role-links-in-orchestrations"></a><span data-ttu-id="3fd42-102">在业务流程中使用角色链接</span><span class="sxs-lookup"><span data-stu-id="3fd42-102">Using Role Links in Orchestrations</span></span>
 <span data-ttu-id="3fd42-103">角色链接将业务流程与贸易合作伙伴之间的交互活动以抽象的形式表现出来。</span><span class="sxs-lookup"><span data-stu-id="3fd42-103">Role links are a form of abstraction for the interactions between your orchestration and your trading partners.</span></span> <span data-ttu-id="3fd42-104">借助角色链接，您就可以在不改变整体业务流程的前提下，依据贸易合作伙伴解析、消息内容或数据库查询结果，动态地选择要交互的贸易合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="3fd42-104">Role links enable you to dynamically choose which trading partner to interact with based on trading partner resolution, message content, or the results of a database lookup while maintaining your overall business process intact.</span></span>  

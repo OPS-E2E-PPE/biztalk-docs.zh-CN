@@ -1,14 +1,14 @@
 ---
-title: "备份和还原 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 备份和还原 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe03a75a-1ea6-4ccc-9543-7989ec6b1cff
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230781"
 ---
 # <a name="backing-up-and-restoring-biztalk-server"></a><span data-ttu-id="8e831-102">备份和还原 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="8e831-102">Backing Up and Restoring BizTalk Server</span></span>
 <span data-ttu-id="8e831-103">在发生硬件故障时，对 BizTalk Server 数据库和组件有完善的备份至关重要。</span><span class="sxs-lookup"><span data-stu-id="8e831-103">In the event of hardware failure, having a good backup of your BizTalk Server databases and components is essential.</span></span> <span data-ttu-id="8e831-104">完善的备份使您能够进行恢复，而数据损失很少甚至毫无损失。</span><span class="sxs-lookup"><span data-stu-id="8e831-104">A good backup will enable you to recover with little or no data loss.</span></span> <span data-ttu-id="8e831-105">如何还原 BizTalk Server，取决于发生硬件故障的系统上安装了什么组件。</span><span class="sxs-lookup"><span data-stu-id="8e831-105">How you restore BizTalk Server depends on which components were installed on the system where hardware failure occurred.</span></span> <span data-ttu-id="8e831-106">本指南涉及以下硬件故障情形：</span><span class="sxs-lookup"><span data-stu-id="8e831-106">This guide covers the following hardware failure scenarios:</span></span>  

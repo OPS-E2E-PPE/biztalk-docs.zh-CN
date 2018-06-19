@@ -1,11 +1,11 @@
 ---
-title: "角色链接和服务链接角色 |Microsoft 文档"
-ms.custom: 
+title: 角色链接和服务链接角色 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, orchestrations
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - role links, about role links
 - orchestrations, deleting
 ms.assetid: 23b4ca34-a1a5-44d4-a50d-661277681c72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268677"
 ---
 # <a name="role-links-and-service-link-roles"></a><span data-ttu-id="82aa5-102">角色链接和服务器链接角色</span><span class="sxs-lookup"><span data-stu-id="82aa5-102">Role Links and Service Link Roles</span></span>
 <span data-ttu-id="82aa5-103">A*角色*是使用服务或实现服务的端口类型集合。</span><span class="sxs-lookup"><span data-stu-id="82aa5-103">A *role* is a collection of port types that either uses a service or implements a service.</span></span> <span data-ttu-id="82aa5-104">角色表示参与方可以具有的与一个或多个业务流程之间的交互类型。</span><span class="sxs-lookup"><span data-stu-id="82aa5-104">A role represents the type of interaction that a party can have with one or many orchestrations.</span></span> <span data-ttu-id="82aa5-105">随着参与方数量的增加，使用角色可更便捷地进行管理。</span><span class="sxs-lookup"><span data-stu-id="82aa5-105">Roles provide flexibility and ease of management as the number of parties increase.</span></span> <span data-ttu-id="82aa5-106">例如，业务流程可能使用发运方角色。</span><span class="sxs-lookup"><span data-stu-id="82aa5-106">For example, an orchestration might use the role of a Shipper.</span></span> <span data-ttu-id="82aa5-107">该发运方将有一两个关联的参与方。</span><span class="sxs-lookup"><span data-stu-id="82aa5-107">The Shipper would have one or two parties associated with it.</span></span> <span data-ttu-id="82aa5-108">当业务流程确定使用哪家发运公司来发运货物时，它会比较发运方角色中各个参与方的价格。</span><span class="sxs-lookup"><span data-stu-id="82aa5-108">When the orchestration decides which shipping company to use to ship an item, it compares the prices of the parties in the Shipper role.</span></span>  

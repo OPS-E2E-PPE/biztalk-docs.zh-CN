@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268421"
 ---
 # <a name="recommendations-when-testing-engine-performance"></a><span data-ttu-id="3b4a3-102">测试引擎性能时的建议</span><span class="sxs-lookup"><span data-stu-id="3b4a3-102">Recommendations When Testing Engine Performance</span></span>
 <span data-ttu-id="3b4a3-103">在测试 BizTalk 引擎性能时应当遵循以下准则：</span><span class="sxs-lookup"><span data-stu-id="3b4a3-103">The following guidelines should be followed when testing BizTalk engine performance:</span></span>  

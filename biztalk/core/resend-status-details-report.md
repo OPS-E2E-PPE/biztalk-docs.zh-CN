@@ -1,14 +1,14 @@
 ---
-title: "重新发送状态详细信息报表 |Microsoft 文档"
-ms.custom: 
+title: 重新发送状态详细信息报表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3cbc9d44-9a9a-4272-a138-ebd126a9f809
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268413"
 ---
 # <a name="resend-status-details-report"></a><span data-ttu-id="4733c-102">重新发送状态详细信息报告</span><span class="sxs-lookup"><span data-stu-id="4733c-102">Resend Status Details Report</span></span>
 <span data-ttu-id="4733c-103">将参与方的“作为 AS2 接收方的参与方”属性配置为在未收到 MDN 情况下重新发送 AS2 消息时，此状态报告显示有关所做的重试信息。</span><span class="sxs-lookup"><span data-stu-id="4733c-103">This status report displays information on retry attempts made when the Party as AS2 Receiver properties of a party are configured to resend the AS2 message if an MDN is not received.</span></span>  

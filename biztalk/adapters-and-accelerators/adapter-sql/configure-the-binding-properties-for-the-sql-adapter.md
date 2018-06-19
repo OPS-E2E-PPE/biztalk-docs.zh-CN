@@ -1,14 +1,14 @@
 ---
-title: "配置 SQL 适配器的绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 配置 SQL 适配器的绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2edbd90-039a-48b4-a6fc-d825b4957207
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224701"
 ---
 # <a name="configure-the-binding-properties-for-the-sql-adapter"></a><span data-ttu-id="74a90-102">配置 SQL 适配器的绑定属性</span><span class="sxs-lookup"><span data-stu-id="74a90-102">Configure the binding properties for the SQL adapter</span></span>
 <span data-ttu-id="74a90-103">[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]面，使您能够控制其行为特征一部分的多个绑定属性。</span><span class="sxs-lookup"><span data-stu-id="74a90-103">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] surfaces several binding properties that enable you to control some of its behavioral characteristics.</span></span> <span data-ttu-id="74a90-104">本部分提供有关设置中的绑定属性的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="74a90-104">This section provides information about setting the binding properties from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="74a90-105">从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，你必须指定绑定属性，以生成针对特定操作的架构。</span><span class="sxs-lookup"><span data-stu-id="74a90-105">From [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], you must specify the binding properties to generate schema for specific operations.</span></span> <span data-ttu-id="74a90-106">从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须指定的绑定属性作为一部分发送或接收来发送或接收消息从 SQL Server 的端口。</span><span class="sxs-lookup"><span data-stu-id="74a90-106">From [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must specify the binding properties as part of the send or receive port for sending or receiving messages from SQL Server.</span></span>  

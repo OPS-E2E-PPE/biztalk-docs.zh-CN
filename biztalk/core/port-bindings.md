@@ -1,11 +1,11 @@
 ---
-title: "端口绑定 |Microsoft 文档"
-ms.custom: 
+title: 端口绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, warnings
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - bindings, deployment
 - bindings, dynamic
 ms.assetid: b61c725a-0082-42d3-b88a-533583161734
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265197"
 ---
 # <a name="port-bindings"></a><span data-ttu-id="6660d-102">端口绑定</span><span class="sxs-lookup"><span data-stu-id="6660d-102">Port Bindings</span></span>
 <span data-ttu-id="6660d-103">端口绑定是用于确定发送或接收消息的位置及方式的配置信息。</span><span class="sxs-lookup"><span data-stu-id="6660d-103">A port binding is the configuration information that determines where and how a message will be sent or received.</span></span> <span data-ttu-id="6660d-104">根据绑定类型的不同，端口绑定可能是指物理位置、管道或其他业务流程。</span><span class="sxs-lookup"><span data-stu-id="6660d-104">Depending on its type, a port binding might refer to physical locations, pipelines, or other orchestrations.</span></span>  

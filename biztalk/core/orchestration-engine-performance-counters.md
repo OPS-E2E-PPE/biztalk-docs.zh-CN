@@ -1,14 +1,14 @@
 ---
-title: "业务流程引擎性能计数器 |Microsoft 文档"
-ms.custom: 
+title: 业务流程引擎性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dcaf7517-da4a-4ed0-a3bb-7e9b73931bff
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265605"
 ---
 # <a name="orchestration-engine-performance-counters"></a><span data-ttu-id="0e2b3-102">业务流程引擎性能计数器</span><span class="sxs-lookup"><span data-stu-id="0e2b3-102">Orchestration Engine Performance Counters</span></span>
 <span data-ttu-id="0e2b3-103">业务流程引擎维护着几个性能计数器，您可以使用性能监视器来查看这些性能计数器，以确定随着时间的推移，引擎所处理的业务流程实例和事务的数量。</span><span class="sxs-lookup"><span data-stu-id="0e2b3-103">The orchestration engine maintains several performance counters that you can examine with Performance Monitor to see how many orchestration instances and transactions are being processed by the engine over time.</span></span>  

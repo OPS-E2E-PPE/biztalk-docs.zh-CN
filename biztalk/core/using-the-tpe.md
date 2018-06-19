@@ -1,17 +1,17 @@
 ---
-title: "使用键入 |Microsoft 文档"
-ms.custom: 
+title: 使用键入 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, about Tracking Profile Editor
 - tracking profiles, prerequisites
 ms.assetid: ebe9a5da-66ec-482d-8aac-892a829ca996
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288069"
 ---
 # <a name="using-the-tpe"></a><span data-ttu-id="47288-102">使用键入</span><span class="sxs-lookup"><span data-stu-id="47288-102">Using the TPE</span></span>
 <span data-ttu-id="47288-103">使用跟踪配置文件编辑器 (TPE)，可以将业务流程和属性映射到 BAM 活动定义。</span><span class="sxs-lookup"><span data-stu-id="47288-103">You use the Tracking Profile Editor (TPE) to map orchestrations and properties to BAM activity definitions.</span></span>  

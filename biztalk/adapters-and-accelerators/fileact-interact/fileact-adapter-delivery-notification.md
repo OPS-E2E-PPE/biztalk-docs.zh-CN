@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器传递通知 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器传递通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fbd8207b-c50f-4a5d-ac2f-7dc8f5af54c7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223965"
 ---
 # <a name="fileact-adapter-delivery-notification"></a><span data-ttu-id="40c32-102">FileAct 适配器传递通知</span><span class="sxs-lookup"><span data-stu-id="40c32-102">FileAct Adapter Delivery Notification</span></span>
 <span data-ttu-id="40c32-103">验证后完成 （包括签名和摘要式验证） 的回执的消息请求中所述，FileAct 适配器传输到发件人相应传递通知。</span><span class="sxs-lookup"><span data-stu-id="40c32-103">After verifying the completion of receipt (including signature and digest verification) as indicated in the message request, the FileAct adapter transmits the appropriate delivery notification to the sender.</span></span>  

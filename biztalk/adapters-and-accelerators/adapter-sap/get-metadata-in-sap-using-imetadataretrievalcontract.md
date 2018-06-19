@@ -1,11 +1,11 @@
 ---
-title: "SAP 使用 IMetadataRetrievalContract 中获取元数据 |Microsoft 文档"
-ms.custom: 
+title: SAP 使用 IMetadataRetrievalContract 中获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, search metadata
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, browse metadata
 - browsing metadata
 ms.assetid: 0944fc39-9ee5-4702-8b52-e0bc87f202c6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218269"
 ---
 # <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a><span data-ttu-id="e5d2b-102">SAP 使用 IMetadataRetrievalContract 中获取元数据</span><span class="sxs-lookup"><span data-stu-id="e5d2b-102">Get Metadata in SAP using IMetadataRetrievalContract</span></span>
 <span data-ttu-id="e5d2b-103">[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开**IMetadataRetrievalContract**可用来浏览和搜索个 SAP 系统的项目，并以检索 Web 服务描述语言 (WSDL) 文档形式的元数据的终结点操作。</span><span class="sxs-lookup"><span data-stu-id="e5d2b-103">The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] exposes an **IMetadataRetrievalContract**endpoint that you can use to browse and search for SAP system artifacts and to retrieve metadata in the form of a Web Services Description Language (WSDL) document for operations.</span></span>  

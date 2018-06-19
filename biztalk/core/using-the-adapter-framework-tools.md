@@ -1,14 +1,14 @@
 ---
-title: "使用适配器 Framework 工具 |Microsoft 文档"
-ms.custom: 
+title: 使用适配器 Framework 工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65357570-1d34-400a-831e-0422f6960ad4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287661"
 ---
 # <a name="using-the-adapter-framework-tools"></a><span data-ttu-id="9fe28-102">使用适配器 Framework 工具</span><span class="sxs-lookup"><span data-stu-id="9fe28-102">Using the Adapter Framework Tools</span></span>
 <span data-ttu-id="9fe28-103">BizTalk 适配器框架会使用以下工具和视图管理和开发自定义适配器：</span><span class="sxs-lookup"><span data-stu-id="9fe28-103">The BizTalk Adapter Framework uses the following tools and views to manage and develop custom adapters:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何更新后的备份和还原的 BAM 管理实用程序配置 |Microsoft 文档"
-ms.custom: 
+title: 如何更新后的备份和还原的 BAM 管理实用程序配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b27062b-546f-4030-983b-15d793912690
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286669"
 ---
 # <a name="how-to-update-the-bam-management-utility-configuration-after-a-backup-and-restore"></a><span data-ttu-id="cb210-102">如何在备份和还原后更新 BAM 管理实用程序配置</span><span class="sxs-lookup"><span data-stu-id="cb210-102">How to Update the BAM Management Utility Configuration After a Backup and Restore</span></span>
 <span data-ttu-id="cb210-103">在“服务器\数据库”名称组合由于 BizTalk Server 环境中的变化（例如备份和还原序列）而发生更改时，您必须更新 BAM 管理实用程序配置文件 (bm.exe.config) 以反映这些名称更改。</span><span class="sxs-lookup"><span data-stu-id="cb210-103">When the server\database name combination changes as the result of a change in your BizTalk Server environment such as a backup and restore sequence, you must update the BAM management utility configuration file (bm.exe.config) to reflect these name changes.</span></span>  

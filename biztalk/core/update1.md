@@ -1,11 +1,11 @@
 ---
-title: "Update1 |Microsoft 文档"
-ms.custom: 
+title: Update1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Update function [Business Rules Engine]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - .NET objects
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: 939e45dc-6433-42f3-a336-8f3c247417ac
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288397"
 ---
 # <a name="update"></a><span data-ttu-id="e3505-102">Update</span><span class="sxs-lookup"><span data-stu-id="e3505-102">Update</span></span>
 <span data-ttu-id="e3505-103">当**更新**调用函数对象，该对象 reasserted 引擎重新评估，基于新数据和状态。</span><span class="sxs-lookup"><span data-stu-id="e3505-103">When **Update** function is invoked an object, the object is reasserted into the engine to be re-evaluated, based on the new data and state.</span></span> <span data-ttu-id="e3505-104">对象可以是类型**TypedXmlDocument**或.NET 类或**该组**或**TypedDataTable**。</span><span class="sxs-lookup"><span data-stu-id="e3505-104">The object can be of type **TypedXmlDocument** or .NET class or **DataConnection** or **TypedDataTable**.</span></span>  
@@ -50,7 +51,7 @@ IF ItemB.Id == 2
 THEN ItemB.Value = 100  
 ```  
   
- <span data-ttu-id="e3505-118">通过将对象重新添加到工作内存的功能，用户可以显式控制正向链接方案中的行为。</span><span class="sxs-lookup"><span data-stu-id="e3505-118">This ability to reassert objects into working memory allows the user explicit control over the behavior in forward-chaining scenarios.</span></span> <span data-ttu-id="e3505-119">而此示例中重新添加对象的副作用是还需要重新评估规则 1。</span><span class="sxs-lookup"><span data-stu-id="e3505-119">A side effect of the reassertion in this example, however, is that Rule 1 is also re-evaluated.</span></span> <span data-ttu-id="e3505-120">因为**ItemA.Id**未更改，规则 1 再次计算结果为**true**和**Assert(ItemB)**操作，将再次引发。</span><span class="sxs-lookup"><span data-stu-id="e3505-120">Because **ItemA.Id** was not changed, Rule 1 again evaluates to **true** and the **Assert(ItemB)** action fires again.</span></span> <span data-ttu-id="e3505-121">而这会导致规则产生无穷循环。</span><span class="sxs-lookup"><span data-stu-id="e3505-121">As a result, the rule creates an endless loop situation.</span></span>  
+ <span data-ttu-id="e3505-118">通过将对象重新添加到工作内存的功能，用户可以显式控制正向链接方案中的行为。</span><span class="sxs-lookup"><span data-stu-id="e3505-118">This ability to reassert objects into working memory allows the user explicit control over the behavior in forward-chaining scenarios.</span></span> <span data-ttu-id="e3505-119">而此示例中重新添加对象的副作用是还需要重新评估规则 1。</span><span class="sxs-lookup"><span data-stu-id="e3505-119">A side effect of the reassertion in this example, however, is that Rule 1 is also re-evaluated.</span></span> <span data-ttu-id="e3505-120">因为**ItemA.Id**未更改，规则 1 再次计算结果为**true**和**Assert(ItemB)** 操作，将再次引发。</span><span class="sxs-lookup"><span data-stu-id="e3505-120">Because **ItemA.Id** was not changed, Rule 1 again evaluates to **true** and the **Assert(ItemB)** action fires again.</span></span> <span data-ttu-id="e3505-121">而这会导致规则产生无穷循环。</span><span class="sxs-lookup"><span data-stu-id="e3505-121">As a result, the rule creates an endless loop situation.</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="e3505-122">重新计算规则的默认最大循环计数为 2 ^32。</span><span class="sxs-lookup"><span data-stu-id="e3505-122">The default maximum loop count of re-evaluation of rules is 2^32.</span></span> <span data-ttu-id="e3505-123">对于某些规则，策略执行无法持续很长时间。</span><span class="sxs-lookup"><span data-stu-id="e3505-123">For certain rules, the policy execution could last for a long time.</span></span> <span data-ttu-id="e3505-124">你可以通过调整减少计数**执行循环的最大深度**策略版本的属性。</span><span class="sxs-lookup"><span data-stu-id="e3505-124">You can reduce the count by adjusting the **Maximum Execution Loop Depth** property of the policy version.</span></span>  

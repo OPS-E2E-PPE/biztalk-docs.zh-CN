@@ -1,11 +1,11 @@
 ---
-title: "异步业务事件跟踪 |Microsoft 文档"
-ms.custom: 
+title: 异步业务事件跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, event tracking
 - BAM, performance
 ms.assetid: 6d51fadf-b329-4536-9618-d982d9c17882
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230469"
 ---
 # <a name="asynchronous-business-event-tracking"></a><span data-ttu-id="ec700-102">异步业务事件跟踪</span><span class="sxs-lookup"><span data-stu-id="ec700-102">Asynchronous Business Event Tracking</span></span>
 <span data-ttu-id="ec700-103">异步 (使用`BufferedEventStream`)-此模型提供了显著的性能改进。</span><span class="sxs-lookup"><span data-stu-id="ec700-103">Asynchronous (using `BufferedEventStream`) - This model offers significant performance improvements.</span></span> <span data-ttu-id="ec700-104">此模型使用的 API 与同步模型相似，只是使用不同的构造函数。</span><span class="sxs-lookup"><span data-stu-id="ec700-104">This uses a similar API to the synchronous model, using only a different constructor.</span></span> <span data-ttu-id="ec700-105">BufferedEventStream 不是将数据放入主导入数据库中，而是以二进制形式将事件数据累计在内存中，然后将其作为单个表记录插入到临时数据库 (MessageBox) 中。</span><span class="sxs-lookup"><span data-stu-id="ec700-105">Instead of pushing the data into the primary import database, BufferedEventStream accumulates the event data in memory in binary form, and then inserts it as a single table record into an interim database (MessageBox).</span></span> <span data-ttu-id="ec700-106">事件总线服务读取 MessageBox 数据库中由 BizTalk 排队的数据，将其导入到主导入数据库中。</span><span class="sxs-lookup"><span data-stu-id="ec700-106">The Event Bus service reads the data queued in the MessageBox database by BizTalk and imports it into the primary import database.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "配置 SAP 适配器的连接 URI |Microsoft 文档"
-ms.custom: 
+title: 配置 SAP 适配器的连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, specifying at run time
 - connection URI, specifying at design time
 ms.assetid: 8df8e4a7-13f7-48c0-8af2-451253ced7e7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218533"
 ---
 # <a name="configure-the-connection-uri-for-the-sap-adapter"></a><span data-ttu-id="f817f-102">配置 SAP 适配器的连接 URI</span><span class="sxs-lookup"><span data-stu-id="f817f-102">Configure the connection URI for the SAP adapter</span></span>
 <span data-ttu-id="f817f-103">连接 URI 是用于连接到 SAP 系统的连接字符串。</span><span class="sxs-lookup"><span data-stu-id="f817f-103">A connection URI is a connection string to connect to an SAP system.</span></span> <span data-ttu-id="f817f-104">它包含与某个 SAP 系统建立连接所需的各种参数。</span><span class="sxs-lookup"><span data-stu-id="f817f-104">It contains various parameters required to establish connection with an SAP system.</span></span> <span data-ttu-id="f817f-105">在设计时，必须指定要连接到 SAP 系统生成的元数据的 URI。</span><span class="sxs-lookup"><span data-stu-id="f817f-105">At design time, you must specify the URI to connect to the SAP system to generate the metadata.</span></span> <span data-ttu-id="f817f-106">在运行时，必须指定要连接到 SAP 系统以执行操作的 URI。</span><span class="sxs-lookup"><span data-stu-id="f817f-106">At run time, you must specify the URI to connect to the SAP system to perform operations.</span></span>  
@@ -99,7 +100,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="f817f-163">在**WCF 自定义传输属性**对话框中，单击**常规**选项卡。</span><span class="sxs-lookup"><span data-stu-id="f817f-163">In the **WCF-Custom Transport Properties** dialog box, click the **General** tab.</span></span>  
   
-5.  <span data-ttu-id="f817f-164">在**地址 (URI)**文本框中，指定连接 URI 以连接到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="f817f-164">In the **Address (URI)** text box, specify the connection URI to connect to the SAP system.</span></span> <span data-ttu-id="f817f-165">有关连接 URI 的详细信息为[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="f817f-165">For more information about the connection URI for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+5.  <span data-ttu-id="f817f-164">在**地址 (URI)** 文本框中，指定连接 URI 以连接到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="f817f-164">In the **Address (URI)** text box, specify the connection URI to connect to the SAP system.</span></span> <span data-ttu-id="f817f-165">有关连接 URI 的详细信息为[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="f817f-165">For more information about the connection URI for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
   
 6.  <span data-ttu-id="f817f-166">在**WCF 自定义传输属性**对话框中，单击**绑定**选项卡。从**绑定类型**下拉列表中，选择**sapBinding**。</span><span class="sxs-lookup"><span data-stu-id="f817f-166">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab. From the **Binding Type** drop-down list, select **sapBinding**.</span></span>  
   

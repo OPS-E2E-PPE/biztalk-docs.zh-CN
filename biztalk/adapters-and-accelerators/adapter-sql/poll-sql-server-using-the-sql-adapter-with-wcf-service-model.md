@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型的 SQL 适配器的轮询 SQL Server |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型的 SQL 适配器的轮询 SQL Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eef2e868-bd51-4393-b091-f67299b4759d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222909"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-wcf-service-model"></a><span data-ttu-id="a26bf-102">使用 WCF 服务模型的 SQL 适配器的轮询 SQL Server</span><span class="sxs-lookup"><span data-stu-id="a26bf-102">Poll SQL Server using the SQL Adapter with WCF Service Model</span></span>
 <span data-ttu-id="a26bf-103">你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 接收基于轮询的数据更改消息。</span><span class="sxs-lookup"><span data-stu-id="a26bf-103">You can configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive polling-based data-changed messages from SQL Server.</span></span> <span data-ttu-id="a26bf-104">你可以指定适配器执行轮询数据库轮询语句。</span><span class="sxs-lookup"><span data-stu-id="a26bf-104">You can specify a polling statement that the adapter executes to poll the database.</span></span> <span data-ttu-id="a26bf-105">轮询语句可以是 SELECT 语句或存储的过程返回的结果集。</span><span class="sxs-lookup"><span data-stu-id="a26bf-105">The polling statement can be a SELECT statement or a stored procedure that returns a result set.</span></span> <span data-ttu-id="a26bf-106">基于收到的轮询消息类型，该适配器将公开不同轮询操作：</span><span class="sxs-lookup"><span data-stu-id="a26bf-106">Based on the type of polling message received, the adapter exposes different polling operations:</span></span>  
