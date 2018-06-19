@@ -1,15 +1,15 @@
 ---
-title: "为 Siebel 适配器 BizTalk 适配器包中的元数据节点 Id |Microsoft 文档"
-description: "元数据，搜索、 检索节点类型和在 Siebel 适配器-BizTalk 适配器包 (BAP) 中公开的 Siebel 组件中使用的 Id"
-ms.custom: 
+title: 为 Siebel 适配器 BizTalk 适配器包中的元数据节点 Id |Microsoft 文档
+description: 元数据，搜索、 检索节点类型和在 Siebel 适配器-BizTalk 适配器包 (BAP) 中公开的 Siebel 组件中使用的 Id
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bdffc8d1-0a0a-48d7-b134-5d16acf2c523
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223381"
 ---
 # <a name="node-types-and-ids-for-the-siebel-adapter"></a>节点类型和为 Siebel 适配器的 Id
 

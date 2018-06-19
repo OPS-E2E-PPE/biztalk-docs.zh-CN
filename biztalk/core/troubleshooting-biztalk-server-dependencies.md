@@ -1,14 +1,14 @@
 ---
-title: "故障排除 BizTalk Server 依赖项 |Microsoft 文档"
-ms.custom: 
+title: 故障排除 BizTalk Server 依赖项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 677b7ef3-9a91-4f1e-bfc5-926bfab23a0f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279245"
 ---
 # <a name="troubleshooting-biztalk-server-dependencies"></a>故障排除的 BizTalk Server 依赖项
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]广泛使用的几个其他 Microsoft 产品的设计时和运行时操作。 本部分包含了解决可能出现在这些基础技术中的问题的疑难解答。  

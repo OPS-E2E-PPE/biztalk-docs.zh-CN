@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 接收适配器初始化 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 接收适配器初始化 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce53aff3-6189-4033-b318-d703037518e0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224197"
 ---
 # <a name="swift-receive-adapter-initialization"></a>SWIFT 接收适配器初始化
 初始化过程的 SWIFT 服务器应用程序是类似于 SWIFT 客户端应用程序。 初始化参数作为命令行参数传递到接收方可执行文件。 在设计期间，在接收位置中配置的应用程序名称作为命令行自变量被传递。 此应用程序名称用于构造接收位置 URI 检索配置的属性。  

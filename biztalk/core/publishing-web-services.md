@@ -1,17 +1,17 @@
 ---
-title: "发布 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 发布 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
 - BizTalk Server Web Services Publishing Wizard
 ms.assetid: eed0717c-b390-492a-a3b9-ae31024805a2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268541"
 ---
 # <a name="publishing-web-services"></a>发布 Web 服务
 通过发布 Web Services，您可以创建一个可将消息提交给 Microsoft BizTalk Server 以供业务流程和其他发送适配器使用的 Web Services。 创建使用 BizTalk Web 服务发布向导的已发布的 Web 服务。 有关配置 SOAP 发送处理程序的信息，请参阅[如何配置 SOAP 发送处理程序](../core/how-to-configure-a-soap-send-handler.md)。 有关配置 SOAP 发送端口的信息，请参阅[如何配置 SOAP 发送端口](../core/how-to-configure-a-soap-send-port.md)。  

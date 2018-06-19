@@ -1,14 +1,14 @@
 ---
-title: "为 Oracle E-business Suite 配置的绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 为 Oracle E-business Suite 配置的绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cfdca8c8-4434-4a9f-8e2a-970988c2f685
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217541"
 ---
 # <a name="configure-the-binding-properties-for-oracle-e-business-suite"></a>为 Oracle E-business Suite 配置的绑定属性
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]面，使您能够控制其行为特征一部分的多个绑定属性。 本部分提供有关设置中的绑定属性的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，生成针对特定操作的架构时，必须指定的绑定属性。 从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须指定的绑定属性作为一部分发送或接收端口来发送或接收来自 Oracle E-business Suite 的消息。  

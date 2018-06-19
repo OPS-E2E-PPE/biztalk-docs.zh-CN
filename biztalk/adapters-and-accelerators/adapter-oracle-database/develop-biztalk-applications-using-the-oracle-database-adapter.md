@@ -1,17 +1,17 @@
 ---
-title: "开发使用 Oracle 数据库适配器的 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 开发使用 Oracle 数据库适配器的 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Content-Based Routing (CBR)
 - BizTalk orchestrations, using orchestrations to perform operations
 ms.assetid: 65689c83-4a57-4aad-b0e9-f1bad901a7b9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214293"
 ---
 # <a name="develop-biztalk-applications-using-the-oracle-database-adapter"></a>开发使用 Oracle 数据库适配器的 BizTalk 应用程序
 开发 BizTalk 应用程序涉及到创建中的 BizTalk 项目[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]生成 XML 架构。 一旦你已生成架构，你可以使用基于内容的路由 (CBR)，或创建 BizTalk 业务流程，以发送和接收符合生成架构的消息。  

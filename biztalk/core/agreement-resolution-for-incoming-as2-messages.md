@@ -1,14 +1,14 @@
 ---
-title: "为传入 AS2 消息的协议解析 |Microsoft 文档"
-ms.custom: 
+title: 为传入 AS2 消息的协议解析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 746d01af-de6a-4d5d-9433-b0e1a2b41861
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230149"
 ---
 # <a name="agreement-resolution-for-incoming-as2-messages"></a>传入 AS2 消息的协议解析
 当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 通过 HTTP/HTTPS 传输接收 EDIINT/AS2 编码消息时，它会尝试确定发送该消息的贸易合作伙伴的业务配置文件。 它通过尝试执行以下操作（按照所示顺序）来实现此目的：  

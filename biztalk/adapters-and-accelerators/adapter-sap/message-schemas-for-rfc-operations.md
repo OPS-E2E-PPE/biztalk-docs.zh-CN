@@ -1,17 +1,17 @@
 ---
-title: "RFC 操作的消息架构 |Microsoft 文档"
-ms.custom: 
+title: RFC 操作的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RFC operations, message structure for
 - RFC operations, message actions for
 ms.assetid: 50cd9b28-2e66-4c76-9d19-f0da6e7b8e10
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217301"
 ---
 # <a name="message-schemas-for-rfc-operations"></a>RFC 操作的消息架构
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]作为操作呈现 SAP 远程函数调用 (RFC)。 本主题包含有关消息架构和用于 RFC 操作的消息操作的信息。 消息结构是相同的入站和出站 RFC 操作。 适配器支持的 RFC 操作的概述，请参阅[操作中 SAP Rfc](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 |消息|XML 消息结构|Description|  
 |-------------|---------------------------|-----------------|  
 |RFC<br /><br /> ([RFC_NAME])|`<[RFC_NAME] xmlns="[VERSION]/Rfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]>`|调用 RFC SAP 系统上。<br /><br /> -导入，更改，并支持表参数。<br /><br /> -导入和更改参数可以是 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。|  
-|RFC 响应 （[RFC_NAME] 响应）|`<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`|RFC 返回。<br /><br /> -导出、 更改，并支持表参数。<br /><br /> **注意：**默认情况下，表参数不显示在响应消息中。 如果你需要在响应消息中的表参数，你必须在请求消息中传递空表参数。<br /><br /> -导入和更改参数可以是 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。|  
+|RFC 响应 （[RFC_NAME] 响应）|`<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`|RFC 返回。<br /><br /> -导出、 更改，并支持表参数。<br /><br /> **注意：** 默认情况下，表参数不显示在响应消息中。 如果你需要在响应消息中的表参数，你必须在请求消息中传递空表参数。<br /><br /> -导入和更改参数可以是 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。|  
 |RfcGetAttributes<br /><br /> (RfcGetAttributes)|`<RfcGetAttributes> </RfcGetAttributes>`|RfcGetAttributes 是通过显示的 RFC SDK API 操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 RfcGetAttributes 操作允许客户端程序来检索语言、 系统 ID，以及与 RFC 连接关联的合作伙伴代码页。|  
 |RfcGetAttributes 响应<br /><br /> (RfcGetAttributesResponse)|`<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`|RfcGetAttributes 操作的响应返回语言、 系统 ID，以及与 RFC 连接关联的合作伙伴代码页。|  
   

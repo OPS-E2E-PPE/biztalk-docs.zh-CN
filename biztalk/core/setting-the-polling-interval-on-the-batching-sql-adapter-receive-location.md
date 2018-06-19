@@ -1,11 +1,11 @@
 ---
-title: "批处理的 SQL 适配器上设置轮询间隔接收位置 |Microsoft 文档"
-ms.custom: 
+title: 批处理的 SQL 适配器上设置轮询间隔接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - polling interval [receive adapters]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - SQL adapters, receive locations
 - receive locations, SQL adapters
 ms.assetid: 9053b20d-145a-4445-b414-c0482cf975a0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269685"
 ---
 # <a name="setting-the-polling-interval-on-the-batching-sql-adapter-receive-location"></a>批处理的 SQL 适配器上设置轮询间隔接收位置
 你可以设置轮询间隔在批处理 SQL 适配器接收位置 (**BatchControlMessageRecvLoc**) 在开发和生产计算机上以不同的方式。 在开发服务器上，Microsoft 建议您将轮询间隔保留为默认值 30 秒，以便为协议快速激活批处理业务流程。 但是，在生产服务器上，设置为 30 秒可能会影响性能。 激活批之后，可能需要将轮询间隔设置为更高的值，比如五分钟。  

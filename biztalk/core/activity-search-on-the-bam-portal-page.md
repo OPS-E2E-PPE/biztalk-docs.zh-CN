@@ -1,18 +1,18 @@
 ---
-title: "BAM 门户上的活动搜索页 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户上的活动搜索页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], searching
 - Activity Search page [BAM portal]
 - BAM portal, activity searches
 ms.assetid: 24a5111c-026f-4f77-8a17-65955aafd24c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225117"
 ---
 # <a name="activity-search-on-the-bam-portal-page"></a>BAM 门户页的活动搜索
 当业务最终用户、开发人员和业务分析员需要对 BAM 数据进行搜索以查找某个流程的具体案例时，他们可使用 BAM 门户页。 这些流程是作为 BAM 活动定义的。 BAM 活动代表业务中的工作单位，例如采购订单或贷款申请。  

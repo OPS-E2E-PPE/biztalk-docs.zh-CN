@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08035518-17ad-44d2-ab06-90d725c95ced
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22231885"
 ---
 # <a name="biztalk-esb-toolkit"></a>BizTalk ESB 工具包
 Microsoft BizTalk ESB 工具包使用 Microsoft BizTalk Server 来支持松散连接的消息传送体系结构。 BizTalk Server 包含一个用于消息传送应用程序的强大发布/订阅机制，该机制通过创建和填充订阅进行运作，从而为面向服务的体系结构 (SOA) 应用程序提供一个高效的可扩展平台。 BizTalk ESB 工具包扩展了 BizTalk Server 的功能，使其可以提供一系列新功能，这些新功能专注于构建强大而互连的面向服务的应用程序，这些应用程序融合了用于轻型服务组合的基于行程的服务调用、终结点和映射的动态解析、Web 服务和 WS-* 集成、故障管理和报告，以及与第三方 SOA 监管解决方案的集成。  

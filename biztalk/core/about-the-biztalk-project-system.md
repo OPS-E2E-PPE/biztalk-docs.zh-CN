@@ -1,11 +1,11 @@
 ---
-title: "有关 BizTalk 项目系统 |Microsoft 文档"
-ms.custom: 
+title: 有关 BizTalk 项目系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, about projects
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, business solutions
 - business solutions, creating
 ms.assetid: 69807e57-356e-451d-b803-4253b891b617
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226261"
 ---
 # <a name="about-the-biztalk-project-system"></a>有关 BizTalk 项目系统
 使用 BizTalk 项目系统可创建部分或全部 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序或业务解决方案。 这些解决方案的核心元素是 BizTalk 项目，它是可在部署程序集之前构建并生成到该程序集中的项（例如架构、业务流程、Web 消息类型、类、管道、映射和引用）的集合。  

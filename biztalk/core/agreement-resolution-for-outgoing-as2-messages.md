@@ -1,14 +1,14 @@
 ---
-title: "对于传出 AS2 消息的协议解析 |Microsoft 文档"
-ms.custom: 
+title: 对于传出 AS2 消息的协议解析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 578d7565-534c-4c13-b473-975f347f3a9b
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230317"
 ---
 # <a name="agreement-resolution-for-outgoing-as2-messages"></a>对于传出 AS2 消息的协议解析
 当 AS2 发送管道处理通过 HTTP/HTTPS 传输传出的 EDIINT/AS2 编码的消息时，它会确定此消息将解析到的协议。 然后，它将使用这些协议属性来处理此传出消息。 发送管道将使用以下条件来确定协议（按优先顺序）：  

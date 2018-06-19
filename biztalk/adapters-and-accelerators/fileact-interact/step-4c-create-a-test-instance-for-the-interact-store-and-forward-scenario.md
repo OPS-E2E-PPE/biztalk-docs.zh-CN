@@ -1,14 +1,14 @@
 ---
-title: "步骤 4c： 交互应用商店应用和向前情况下创建的测试实例 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4c： 交互应用商店应用和向前情况下创建的测试实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 64a69dcc-d307-47c0-87e8-b0cb2a4d655b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225157"
 ---
 # <a name="step-4c-create-a-test-instance-for-the-interact-store-and-forward-scenario"></a>步骤 4c： 交互应用商店应用和向前情况下创建的测试实例
 在开始此步骤之前，必须完成[步骤 4B： 启动的发送端口和接收端口交互应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-interact-store-and-forward.md)。  

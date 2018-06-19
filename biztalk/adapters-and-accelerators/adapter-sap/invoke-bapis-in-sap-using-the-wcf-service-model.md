@@ -1,17 +1,17 @@
 ---
-title: "调用中使用 WCF 服务模型的 SAP BAPIs |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 SAP BAPIs |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAPIs, invoking by using the WCF service model
 - WCF service model, invoking BAPIs
 ms.assetid: be3c48d6-2213-4ae5-97f4-634fbc423022
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218509"
 ---
 # <a name="invoke-bapis-in-sap-using-the-wcf-service-model"></a>调用 BAPIs SAP 使用 WCF 服务模型中
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现 BAPIs 作为：  

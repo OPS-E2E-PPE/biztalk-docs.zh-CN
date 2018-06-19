@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 权限的疑难解答 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 权限的疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e47bd1fc-2edf-4525-97dd-4bd9d3e2d6ff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280077"
 ---
 # <a name="troubleshooting-biztalk-server-permissions"></a>BizTalk Server 权限的疑难解答
 BizTalk Server 中存在的权限问题通常属于以下类别之一：  

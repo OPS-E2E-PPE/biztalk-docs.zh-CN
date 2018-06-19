@@ -1,14 +1,14 @@
 ---
-title: "根据指定的分隔符集，就无法找到任何有效的数字 |Microsoft 文档"
-ms.custom: 
+title: 根据指定的分隔符集，就无法找到任何有效的数字 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08887f7d-8256-4de3-8db9-b890451521ff
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230877"
 ---
 # <a name="based-on-the-specified-delimiter-set-no-valid-digit-could-be-found"></a>基于指定的分隔符集，找不到有效的数字
 ## <a name="details"></a>详细信息  

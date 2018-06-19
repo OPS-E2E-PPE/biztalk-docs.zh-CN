@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 创建服务总线 Namespace |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建服务总线 Namespace |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede1ac50-bbfb-4aeb-8217-1877ae218f89
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276757"
 ---
 # <a name="step-1-create-a-service-bus-namespace"></a>步骤 1： 创建服务总线 Namespace
 在此步骤中，你将创建[!INCLUDE[winazure](../includes/winazure-md.md)][!INCLUDE[sb](../includes/sb-md.md)]命名空间。 你将使用此命名空间托管用于从 Salesforce 接收机会通知的中继终结点。 在创建此解决方案的过程的后面部分，将使用此中继终结点将通知消息接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统中。  

@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 521d58e4-73b1-48a8-9a0a-9e733386c1b5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218573"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-service-model"></a>使用 WCF 服务模型使用 SELECT 语句的轮询 Oracle E-business Suite
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要通过使用 SELECT 语句持续轮询接口表接收定期的数据更改消息，接口视图、 表和 Oracle E-business Suite 中的视图。 你可以指定为适配器执行定期轮询 Oracle E-business Suite 的轮询语句的 SELECT 语句。 你还可以指定后轮询 PL/SQL 代码块适配器执行执行轮询语句后。  

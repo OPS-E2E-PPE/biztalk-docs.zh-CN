@@ -1,14 +1,14 @@
 ---
-title: "步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab0bc1a7-8bcd-4110-88e6-4eddf0b57068
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279317"
 ---
 # <a name="step-5-on-premises-generate-the-schema-for-inserting-a-message-inito-salesorder-table"></a>步骤 5 （在本地）： 生成插入消息 inito SalesOrder 表的架构
 必须根据业务方案中，插入的 X12 销售订单消息从 Contoso 发送到 Northwind 的**SalesOrder**表如果订购的数量大于 100。 若要插入到消息**SalesOrder**表，必须生成的架构**插入**表上的操作。 在本主题中，你将创建[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案，，然后使用[!INCLUDE[consumeadapterservshort](../includes/consumeadapterservshort-md.md)]生成用于执行架构**插入**操作**SalesOrder**表。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**无**|使用 Windows 身份验证连接至 SQL Server。|  
     |**Windows**|使用 Windows 身份验证连接至 SQL Server。|  
-    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
+    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
   
 6.  单击**URI 属性**选项卡上，然后指定连接参数的值。 有关连接 URI 的详细信息为[!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]，请参阅[SQL Server 连接 URI](http://msdn.microsoft.com/library/dd788089.aspx)。  
   

@@ -1,14 +1,14 @@
 ---
-title: "GetMessages 示例 |Microsoft 文档"
-ms.custom: 
+title: GetMessages 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 29e575fa-d68b-4975-84b8-da4f17bd2db3
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210733"
 ---
 # <a name="getmessages-sample"></a>GetMessages 示例
 本主题提供的示例代码可以用于从一个消息不可否认性表或一个业务线 (LOB) 表中检索可读格式的消息。 消息不可否认性表包括 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive 数据库中的 MessageStorageIn 和 MessageStorageOut；LOB 表包括 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA 数据库中的 MessageFromLOB 和 MessageToLOB。  

@@ -1,11 +1,11 @@
 ---
-title: "保护发件人 ASPX 页 |Microsoft 文档"
-ms.custom: 
+title: 保护发件人 ASPX 页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASPX pages, protocol rules
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - ASPX pages, security
 - protocol rules [ASPX pages]
 ms.assetid: 8214e3f5-a8e9-4d71-957d-ed0852035030
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207757"
 ---
 # <a name="securing-the-sender-aspx-page"></a>保护发件人 ASPX 页
 本主题介绍如何防止未经授权的使用 RNIFSend.aspx 页。 有两个过程，你可以使用：  

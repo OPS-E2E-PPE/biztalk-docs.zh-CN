@@ -1,18 +1,18 @@
 ---
-title: "在 HL7 2.X 汇编程序架构确定 |Microsoft 文档"
-ms.custom: 
+title: 在 HL7 2.X 汇编程序架构确定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, assembler
 - MSH5
 - assembler, schemas
 ms.assetid: 464c006e-4fae-4e2a-99ea-157301c0179e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206093"
 ---
 # <a name="schema-determination-in-the-hl7-2x-assembler"></a>架构确定在 HL7 2.X 汇编程序
 当一条消息都流向序列化程序，在序列化程序[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用 MSH5 （目标方） 以确定要在消息上执行的操作的消息。 此类操作包括：  

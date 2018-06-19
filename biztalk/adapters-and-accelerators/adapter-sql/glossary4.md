@@ -1,15 +1,15 @@
 ---
-title: "用于 SQL BizTalk 中的 BizTalk Adapter 术语表 |Microsoft 文档"
-description: "常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 SQL 适配器"
-ms.custom: 
+title: 用于 SQL BizTalk 中的 BizTalk Adapter 术语表 |Microsoft 文档
+description: 常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 SQL 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c364917e-b72b-49e4-9fc6-0fcfe43c8da7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226205"
 ---
 # <a name="terms-used-by-the-sql-adapter"></a>由 SQL 适配器使用的条款
 中使用以下术语和定义[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]帮助。  

@@ -1,11 +1,11 @@
 ---
-title: "BAM 配置架构 |Microsoft 文档"
-ms.custom: 
+title: BAM 配置架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], scaling
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, scaling
 - configuration schema [BAM]
 ms.assetid: 7eeeb07f-012e-44eb-a8b5-06e374946e2d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230221"
 ---
 # <a name="bam-configuration-schema"></a>BAM 配置架构
 BAM 配置架构定义一个 XML 文档，该文档中包含 BAM 管理器实用程序进行部署所用的基础结构的信息。 您可以将数据库部署至多台服务器，以获得可伸缩性。 为了支持此可伸缩性，请确保 BAM 配置 XML 文档中包含适用于以下数据库的不同服务器名称和配置设置：  

@@ -1,18 +1,18 @@
 ---
-title: "RosettaNet 和消息传送标准 CIDX |Microsoft 文档"
-ms.custom: 
+title: RosettaNet 和消息传送标准 CIDX |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messaging standards
 - CIDX, messaging standards
 - RosettaNet, messaging standards
 ms.assetid: 3e9c090b-9425-41ae-ae86-d39ca2abfb63
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210037"
 ---
 # <a name="rosettanet-and-cidx-messaging-standards"></a>RosettaNet 和 CIDX 标准消息传送
 主要目的[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]旨在处理符合 RosettaNet 或筛选行业数据交换 (CIDX) 消息传递标准的消息。 本部分提供有关使用两种主要 RosettaNet 标准的信息： RosettaNet 实现框架 (RNIF) 和合作伙伴接口进程 (Pip)。 此外，本节还提供有关 CIDX Chem eStandards 的信息。  

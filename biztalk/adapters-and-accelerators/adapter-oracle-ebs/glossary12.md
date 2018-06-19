@@ -1,15 +1,15 @@
 ---
-title: "BizTalk 中的 Oracle E-business Suite 适配器的术语表 |Microsoft 文档"
-description: "常见术语和定义为 Oracle EBS 适配器 BizTalk 适配器包 (BAP) 中"
-ms.custom: 
+title: BizTalk 中的 Oracle E-business Suite 适配器的术语表 |Microsoft 文档
+description: 常见术语和定义为 Oracle EBS 适配器 BizTalk 适配器包 (BAP) 中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 328b0ed2-58e2-45d5-8322-a72179ad5c8b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218637"
 ---
 # <a name="glossary"></a>词汇表
 中使用以下术语和定义[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。  
@@ -128,7 +129,7 @@ WCF 包含一个命令行实用工具。 它用于从适配器之类的 WCF 服�
 **SOAP 消息**  
 格式正确的 XML 文档。 此消息应使用 SOAP 信封和 SOAP 编码命名空间，并且应包含可选的 XML 声明，声明后跟 SOAP 信封（根元素）。此消息由可选的 SOAP 标头和 SOAP 消息正文组成。
 
-**SQL Server Integration Services (SSIS)**用于导入、 导出，并将来自不同数据源的数据转换组件。 以前称为数据转换服务 (DTS)。
+**SQL Server Integration Services (SSIS)** 用于导入、 导出，并将来自不同数据源的数据转换组件。 以前称为数据转换服务 (DTS)。
 
 **强类型化数据**  
 数据集或绑定到的基础对象类型的结果集。 强类型 XML 数据集中的每一行被组成类型化，名为基础的对象类型的字段对应的元素。
@@ -160,4 +161,4 @@ WCF 包含一个命令行实用工具。 它用于从适配器之类的 WCF 服�
   
 ## <a name="x"></a>X  
   
-**XML 架构定义语言 (XSD)**架构语言。 XML 架构定义元素、 属性和数据类型符合万维网联合会 (W3C) XML 架构第 1 部分： 结构建议的 XML 架构定义语言。 “W3C XML 架构第 2 部分：数据类型建议”是针对定义 XML 架构中使用的数据类型的建议。 使用 XML 架构定义语言可以定义 XML 消息的结构和数据类型。
+**XML 架构定义语言 (XSD)** 架构语言。 XML 架构定义元素、 属性和数据类型符合万维网联合会 (W3C) XML 架构第 1 部分： 结构建议的 XML 架构定义语言。 “W3C XML 架构第 2 部分：数据类型建议”是针对定义 XML 架构中使用的数据类型的建议。 使用 XML 架构定义语言可以定义 XML 消息的结构和数据类型。

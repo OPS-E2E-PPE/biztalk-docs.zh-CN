@@ -1,14 +1,14 @@
 ---
-title: "EPM 线程池大小设置 |Microsoft 文档"
-ms.custom: 
+title: EPM 线程池大小设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9e170e76-5151-4306-9473-5b68e815219a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271133"
 ---
 # <a name="setting-the-epm-threadpool-size"></a>设置 EPM 线程池大小
 本主题说明如何设置为终结点管理器 (EPM) 的线程池大小。  

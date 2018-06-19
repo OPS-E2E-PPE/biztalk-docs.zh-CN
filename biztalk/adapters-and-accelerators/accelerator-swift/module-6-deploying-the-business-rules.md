@@ -1,18 +1,18 @@
 ---
-title: "模块 6： 部署业务规则 |Microsoft 文档"
-ms.custom: 
+title: 模块 6： 部署业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tutorial, deploying business rules
 - deploying, business rules
 - business rules
 ms.assetid: e8fb8993-3450-4795-80fd-ff28bff8fe97
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207989"
 ---
 # <a name="module-6-deploying-the-business-rules"></a>模块 6： 部署业务规则
 在此模块中，你部署的业务规则，确认你的安装日志，并确认使用业务规则编辑器工具部署。  

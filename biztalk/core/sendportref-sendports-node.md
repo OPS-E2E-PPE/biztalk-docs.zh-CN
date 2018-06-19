@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269957"
 ---
 # <a name="sendportref-sendports-node"></a>SendPortRef（“发送端口”节点）
 绑定文件的 SendPorts 节点的 SendPortRef 节点可指定分发列表所引用的发送端口的名称。  

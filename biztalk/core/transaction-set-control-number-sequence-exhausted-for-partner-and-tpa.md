@@ -1,14 +1,14 @@
 ---
-title: "事务集控制编号顺序面向合作伙伴和 TPA 已耗尽 |Microsoft 文档"
-ms.custom: 
+title: 事务集控制编号顺序面向合作伙伴和 TPA 已耗尽 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67f194ca-3e0f-4ad4-8bc8-88aa7e5193a7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278333"
 ---
 # <a name="transaction-set-control-number-sequence-exhausted-for-partner-and-tpa"></a>事务集控制编号序列的合作伙伴和 TPA 已耗尽
 ## <a name="details"></a>详细信息  

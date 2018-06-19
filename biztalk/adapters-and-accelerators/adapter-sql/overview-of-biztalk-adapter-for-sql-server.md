@@ -1,14 +1,14 @@
 ---
-title: "用于 SQL Server 的 BizTalk Adapter 概述 |Microsoft 文档"
-ms.custom: 
+title: 用于 SQL Server 的 BizTalk Adapter 概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8e46690e-d5c4-4d6b-b7a0-9a5adf4431cd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222741"
 ---
 # <a name="overview-of-biztalk-adapter-for-sql-server"></a>用于 SQL Server 的 BizTalk Adapter 的概述
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开作为 WCF 服务的 SQL Server 数据库。 适配器客户端可以通过交换 SOAP 消息与适配器执行 SQL Server 数据库上的操作。 适配器使用 SOAP 消息，并且相应的 ADO.NET 调用来执行该操作。 适配器回客户端的 SOAP 消息的形式从 SQL Server 数据库返回响应。  

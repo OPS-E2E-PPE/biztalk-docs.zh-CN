@@ -1,11 +1,11 @@
 ---
-title: "发起方私有过程 |Microsoft 文档"
-ms.custom: 
+title: 发起方私有过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - line-of-business applications (LOBs)
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - private processes, message flow
 - private processes, errors
 ms.assetid: 8444a5c8-445a-4bbd-a793-a16816fcb397
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211021"
 ---
 # <a name="initiator-private-process"></a>发起方私有过程
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]发起方私有流程 (PrivateInitiator.odx) 用于处理服务发起程序计算机上的内容。 其中包括：  

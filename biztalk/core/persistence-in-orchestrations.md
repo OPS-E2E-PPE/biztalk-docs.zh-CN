@@ -1,18 +1,18 @@
 ---
-title: "在业务流程中的持久性 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中的持久性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, persistence
 - persistence
 - BizTalk Server Orchestration Engine
 ms.assetid: 2f79d294-f7df-4d84-ba76-50618506b6c6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264589"
 ---
 # <a name="persistence-in-orchestrations"></a>在业务流程中的持久性
 业务流程引擎将保存业务流程实例在不同持久化点时的整个状态，以便可以解除冻结业务流程实例。 该状态包括可在业务流程中使用的所有基于 .NET 的组件以及消息和变量。 该引擎存储处于以下持久化点时的状态：  

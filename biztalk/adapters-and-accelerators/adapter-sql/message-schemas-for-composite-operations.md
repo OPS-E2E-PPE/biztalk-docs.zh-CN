@@ -1,14 +1,14 @@
 ---
-title: "复合操作的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 复合操作的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d80c023b-1912-43d4-be29-eb9e1b323593
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222509"
 ---
 # <a name="message-schemas-for-composite-operations"></a>复合操作的消息架构
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]使您能够执行 SQL Server 数据库上的复合操作。 复合操作可以包含多个操作包括 Insert、 Update 和删除操作上的表和视图和存储过程的操作。 复合操作可以按任何顺序包含这些操作。  

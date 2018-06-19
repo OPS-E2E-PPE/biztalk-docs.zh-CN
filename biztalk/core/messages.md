@@ -1,11 +1,11 @@
 ---
-title: "消息 |Microsoft 文档"
-ms.custom: 
+title: 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, headers
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - message headers
 - EMS messages
 ms.assetid: 65bb3431-7186-4d4c-b004-932cdf070e73
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266685"
 ---
 # <a name="messages"></a>消息
 某个企业消息服务 (EMS) 消息，如 JMS 消息包含三个独立的部分： 标头、 属性和正文。 标头是 EMS 消息中唯一必需的部分。 本主题介绍如何在用于在 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器中处理消息。  

@@ -1,14 +1,14 @@
 ---
-title: "将连接到 Visual Studio 使用添加适配器元数据向导中的 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 将连接到 Visual Studio 使用添加适配器元数据向导中的 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fadc722-0098-457e-a2e2-3e9cc96eab5e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216205"
 ---
 # <a name="connect-to-oracle-e-business-suite-in-visual-studio-using-add-adapter-metadata-wizard"></a>将连接到 Visual Studio 使用添加适配器元数据向导中的 Oracle E-business Suite
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]名称还公开为 BizTalk 适配器，因此，你可以使用[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]若要为你想要对 Oracle E-business Suite 使用适配器执行的操作生成架构。  

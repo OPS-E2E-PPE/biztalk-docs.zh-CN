@@ -1,14 +1,14 @@
 ---
-title: "步骤 3E： 将文件发送端口 FileAct 应用商店应用和转发方案，以捕获软件 ExchangeSnFResponse 消息添加 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3E： 将文件发送端口 FileAct 应用商店应用和转发方案，以捕获软件 ExchangeSnFResponse 消息添加 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04bad2ab-1ea4-4602-9dee-5b9af9be3b93
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223989"
 ---
 # <a name="step-3e-add-a-file-send-port-for-the-fileact-store-and-forward-scenario-to-capture-sw-exchangesnfresponse-messages"></a>步骤 3E： 添加 FileAct 应用商店应用和转发方案，以捕获软件 ExchangeSnFResponse 消息文件发送端口
 在开始此步骤之前，必须完成[步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)。  

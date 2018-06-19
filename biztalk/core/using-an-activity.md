@@ -1,14 +1,14 @@
 ---
-title: "使用活动 |Microsoft 文档"
-ms.custom: 
+title: 使用活动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e218e2a-27f8-4df2-a1e0-27392112d369
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287181"
 ---
 # <a name="using-an-activity"></a>使用活动
 使用 BAM 的最简单的方式是使用 BAM API 发送显式里程碑或数据。 您可以将 BAM 活动看作 SQL 表中与实际工作单位保持同步的记录。  

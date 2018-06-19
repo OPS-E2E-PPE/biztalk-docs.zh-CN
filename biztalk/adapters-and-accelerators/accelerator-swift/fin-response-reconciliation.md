@@ -1,11 +1,11 @@
 ---
-title: "FIN 响应对帐 |Microsoft 文档"
-ms.custom: 
+title: FIN 响应对帐 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ACKs
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - FIN Response Reconciliation, about FIN Response Reconciliation
 - FIN Response Reconciliation, acknowledgements
 ms.assetid: 987b932b-e487-4ca8-acd0-410d71df8e6d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208253"
 ---
 # <a name="fin-response-reconciliation"></a>FIN 响应对帐
 FIN 响应对帐 (FRR) 功能[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]与相应的原始消息发送的协调 FIN 响应[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]。 这建立原始消息的状态，并使[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]执行基于该状态的步骤。 而无需对帐，这将不是可能发生的情形。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]会知道，它 （无论成功) 发送原始消息到 SAA，并且它必须从 SAA，指示的状态的传输，收到的响应，但它将不能使这两者之间的连接。 FRR 建立该连接。  

@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器文件和传输标识 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器文件和传输标识 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a9aaff1-8816-42cf-b100-fedf964caaf5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223149"
 ---
 # <a name="fileact-adapter-file-and-transfer-identification"></a>FileAct 适配器文件和传输标识
 A4SWIFT FileAct 适配器允许开发人员提供在运行时的文件和传输标识详细信息。 这些参数包括：  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22265797"
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>通过源代码管理系统管理 BizTalk Server 开发人员项目
 保护 BizTalk 项目不出现意外的系统失败是重中之重。 保护项目文件的一种方法是使用源代码管理系统，如 Team Foundation Server 源代码管理和 Microsoft Visual SourceSafe。 本主题讨论了用于组织项目使之最适合与任何源代码管理系统一起使用的基本策略，之后提供了使用 Visual SourceSafe 的具体建议。  

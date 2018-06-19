@@ -1,11 +1,11 @@
 ---
-title: "方案的业务解决方案 |Microsoft 文档"
-ms.custom: 
+title: 方案的业务解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business solutions, tutorials
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - tutorials, business solutions
 - solutions, tutorials
 ms.assetid: f6239905-a1bf-4223-bdca-6677f2d6049b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269117"
 ---
 # <a name="scenarios-for-business-solutions"></a>适用于业务解决方案的方案
 本部分介绍两个完整的模型 BizTalk 应用程序。 每个应用程序都代表一个特殊的业务模式，并演示其他成员集成模式。  

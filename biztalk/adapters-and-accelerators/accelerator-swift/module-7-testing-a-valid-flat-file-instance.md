@@ -1,18 +1,18 @@
 ---
-title: "模块 7： 测试的有效的平面文件实例 |Microsoft 文档"
-ms.custom: 
+title: 模块 7： 测试的有效的平面文件实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, flat file instance
 - tutorial, testing flat file instance
 - flat files, testing
 ms.assetid: ba8a5d81-41b0-4da7-8c2e-02cf29953af7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209813"
 ---
 # <a name="module-7-testing-a-valid-flat-file-instance"></a>模块 7： 测试的有效的平面文件实例
 在此模块中，你可以提交有效示例 MT103 平面文件的文件接收在以前的实验室中创建的端口。 此任务用于测试接收管道在以前的实验室中创建。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]将 XML 格式的输出写入到你在上一课中，所选发送端口中的输出文件夹[第 2 课： 添加 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)。  

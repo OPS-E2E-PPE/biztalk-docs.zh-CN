@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215933"
 ---
 # <a name="swift-disassembler-configuration-properties"></a>SWIFT 反汇编程序配置属性
 下表提供 SWIFT 反汇编程序 (DASM) 属性、 说明、 数据类型和值的范围。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 |**批处理标头架构**|指定用于分析的批处理信封标头的平面文件架构。 仅当**入站 Debatching**设置为**True**。|字符串|无或任何已部署的架构名称|  
 |**批处理尾部架构**|指定要用于分析的批处理信封尾部的平面文件架构。 仅当**入站 Debatching**设置为**True**。|字符串|无或任何已部署的架构名称|  
 |**BRE 验证**|启用/禁用的业务规则引擎 (BRE) 验证的调用。 如果设置为**True**，针对已部署策略 （例如，若要强制实施 SWIFT 网络规则） BRE 通过以下方法验证消息。 如果设置为**False**，BRE 验证不会被调用。|Boolean|True、False|  
-|**双类型消息列表**|指定必须检查另一个标头字段以确定在动态消息类型解析期间的消息的子类型的 SWIFT 消息类型。 默认值列表是**102 103 521 523 574**。 **注意：**如果任何或所有消息类型字符串都会从双类型消息列表中，则对于 MT574 以外的所有消息，原始架构其业务规则使用和处理消息。 例如，MT102 加上实例使用 MT102、 MT103PLUS 实例使用 MT103、 MT521_ISITC 实例使用 MT521，和 MT523_ISITC 实例使用 MT523。 对于所有 MT574 实例，返回以下错误： 查找由消息类型的文档规范"http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/ SWIFT/Category5/MT&#574;SWIFT_CATEGORY5_MT574_Interchange"失败。 验证已正确部署架构。"|字符串|3 位数字的空格分隔的列表|  
+|**双类型消息列表**|指定必须检查另一个标头字段以确定在动态消息类型解析期间的消息的子类型的 SWIFT 消息类型。 默认值列表是**102 103 521 523 574**。 **注意：** 如果任何或所有消息类型字符串都会从双类型消息列表中，则对于 MT574 以外的所有消息，原始架构其业务规则使用和处理消息。 例如，MT102 加上实例使用 MT102、 MT103PLUS 实例使用 MT103、 MT521_ISITC 实例使用 MT521，和 MT523_ISITC 实例使用 MT523。 对于所有 MT574 实例，返回以下错误： 查找由消息类型的文档规范"http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/ SWIFT/Category5/MT&#574;SWIFT_CATEGORY5_MT574_Interchange"失败。 验证已正确部署架构。"|字符串|3 位数字的空格分隔的列表|  
 |**碎片**|启用/禁用的入站批处理的碎片。 如果设置为**True**，入站批处理中的消息发布到 MessageBox 数据库作为单独的消息。 如果设置为**False**，整个的入站的批处理形式 （作为输入的一个精确副本） 的一条消息将发布到 MessageBox 数据库。 仅当入站 debatching 设置为使用**True**。|Boolean|True、False|  
 |**入站 Debatching**|启用/禁用处理的入站批处理。 如果设置为**True**，入站的批处理预期会有且在处理期间拆分。 如果设置为**False**，预期会有单个消息，且不需要 debatching。|Boolean|True、False|  
 |**消息标头架构**|指定要用于分析的消息信封标头 （批处理中消息） 的平面文件架构。 仅当**入站 Debatching**设置为**True**。|字符串|无或任何已部署的架构名称|  

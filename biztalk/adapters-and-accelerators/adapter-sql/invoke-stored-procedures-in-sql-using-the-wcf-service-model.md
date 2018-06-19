@@ -1,14 +1,14 @@
 ---
-title: "调用中使用 WCF 服务模型的 SQL 存储过程 |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 SQL 存储过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4edd2fac-0b54-4406-932e-e3044a66b2e6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222285"
 ---
 # <a name="invoke-stored-procedures-in-sql-using-the-wcf-service-model"></a>调用中使用 WCF 服务模型的 SQL 存储过程
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]发现的存储的过程作为适配器客户端可以调用 WCF 客户端来调用存储的过程上的操作。 根据如何存储的过程返回结果集，该适配器将分类为所有存储的过程：  

@@ -1,14 +1,14 @@
 ---
-title: "高级适配器配置组件 |Microsoft 文档"
-ms.custom: 
+title: 高级适配器配置组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb31b996-6959-4b5a-9a9f-f48fd91a6180
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230005"
 ---
 # <a name="advanced-configuration-components-for-adapters"></a>适配器的高级的配置组件
 BizTalk 适配器框架支持自定义下拉编辑器、自定义模式对话框编辑器和自定义类型转换器。 在将用户名和密码信息作为输入获取的时候，这些自定义设计组件特别有用。  

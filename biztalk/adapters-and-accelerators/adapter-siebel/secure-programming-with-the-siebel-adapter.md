@@ -1,11 +1,11 @@
 ---
-title: "Siebel 适配器使用的安全编程 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器使用的安全编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security considerations, when programming on the adapter
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - credentials, protecting when using the Add Adapter Service Reference Visual Studio Plug-in
 - security, best practices for setting credentials in code
 ms.assetid: 8c2b6b36-7bd9-4678-a9c2-450e818f607a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222501"
 ---
 # <a name="secure-programming-with-the-siebel-adapter"></a>Siebel 适配器使用的安全编程
 ## <a name="how-do-i-protect-credentials-when-i-use-the-add-adapter-service-reference-visual-studio-plug-in"></a>当我使用时如何保护凭据添加适配器服务引用 Visual Studio 插件？  

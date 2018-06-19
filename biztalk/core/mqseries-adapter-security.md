@@ -1,17 +1,17 @@
 ---
-title: "MQSeries 适配器安全 |Microsoft 文档"
-ms.custom: 
+title: MQSeries 适配器安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, MQSeries adapters
 - MQSeries adapters, security
 ms.assetid: 0bd82c21-6b77-4a66-a4e9-4a91ba4a56c4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263197"
 ---
 # <a name="security-with-the-mqseries-adapter"></a>安全与 MQSeries 适配器
 

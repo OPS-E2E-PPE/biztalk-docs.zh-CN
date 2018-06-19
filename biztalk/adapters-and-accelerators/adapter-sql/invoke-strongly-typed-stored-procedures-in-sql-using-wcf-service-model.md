@@ -1,14 +1,14 @@
 ---
-title: "调用 SQL 使用 WCF 服务模型中的强类型化存储过程 |Microsoft 文档"
-ms.custom: 
+title: 调用 SQL 使用 WCF 服务模型中的强类型化存储过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d56df5f6-b046-4fe4-a5b4-b29906093beb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223981"
 ---
 # <a name="invoke-strongly-typed-stored-procedures-in-sql-using-wcf-service-model"></a>调用 SQL 使用 WCF 服务模型中的强类型化存储过程
 当您调用下列出的过程**Strongly-Typed 过程**中的节点[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，输出为强类型化结果集的形式。 本主题将说明了如何创建 WCF 客户端来调用 SQL Server 中存储返回强类型化结果集的过程。  

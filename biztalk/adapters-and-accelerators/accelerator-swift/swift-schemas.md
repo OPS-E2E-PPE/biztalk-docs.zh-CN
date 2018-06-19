@@ -1,11 +1,11 @@
 ---
-title: "SWIFT 架构 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SWIFT, SWIFT messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - SWIFT messages, SWIFT schemas
 - SWIFT, schemas
 ms.assetid: 53017a56-a718-4577-a08c-9c92d9a54e7a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214917"
 ---
 # <a name="swift-schemas"></a>SWIFT 架构
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]通过发送和接收 SWIFT 财务 (FIN) 消息作为单个平面文件 SWIFT 网络。 每个单个消息包含一组标头块组成一组预定义的标记的字段和位置或有序子字段和尾部预告片块中的一组文本块。 文本块的内容因消息类型而异。  

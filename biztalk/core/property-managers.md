@@ -1,14 +1,14 @@
 ---
-title: "属性管理器 |Microsoft 文档"
-ms.custom: 
+title: 属性管理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 823352a0-e397-464a-a163-1dbf8feea8d7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269101"
 ---
 # <a name="property-managers"></a>属性管理器
 属性管理器允许扩展向架构的 XSD 表示形式中的元素和特性添加自定义属性（通常为 XSD 批注），以及扩展“属性”窗口以包括与扩展关联的自定义属性。  

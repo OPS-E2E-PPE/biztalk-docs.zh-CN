@@ -1,11 +1,11 @@
 ---
-title: "有关映射 |Microsoft 文档"
-ms.custom: 
+title: 有关映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - file types, maps
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BizTalk Mapper, about BizTalk Mapper
 - maps
 ms.assetid: 512ef2b7-3d01-4fcf-bb38-de68ec608b07
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225557"
 ---
 # <a name="about-maps"></a>有关映射
 通过 BizTalk 映射器，可以使用链接和 functoid 在输入架构和输出架构之间定义关系。 链接定义了记录或字段的直接数据复制。 链接可以直接连接到另一架构中的项，也可以构成指向 functoid 的连接。 functoid 可以执行更加复杂的数据操作，例如：  

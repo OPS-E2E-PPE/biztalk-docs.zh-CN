@@ -1,18 +1,18 @@
 ---
-title: "计划聚合 |Microsoft 文档"
-ms.custom: 
+title: 计划聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, aggregations
 - scheduling, aggregations [BAM]
 - aggregations [BAM], scheduling
 ms.assetid: 4e2da2eb-b1fc-4b27-98d6-564e6df719e1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269085"
 ---
 # <a name="scheduled-aggregations"></a>计划聚合
 BAM 的计划聚合基于动态生成的 OLAP 多维数据集和数据转换服务 (DTS) 包。 计划聚合中的数据是启动 DTS 包时对业务活动的快照。 若要实现此目的，分析 DTS 包的第一步是对存储过程的调用**bam_Metadata_BeginAnalysis** ，将检索快照组成：  

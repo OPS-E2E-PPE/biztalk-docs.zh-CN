@@ -1,14 +1,14 @@
 ---
-title: "开发 Oracle E-business Suite 应用程序使用 WCF 服务模型 |Microsoft 文档"
-ms.custom: 
+title: 开发 Oracle E-business Suite 应用程序使用 WCF 服务模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1cf3430d-12e9-437c-b398-d978faa4da2b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217317"
 ---
 # <a name="develop-oracle-e-business-suite-applications-using-the-wcf-service-model"></a>开发 Oracle E-business Suite 应用程序使用 WCF 服务模型
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]提供调用要连接到的 WCF 服务模型编程模型[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。 服务模型已添加到 WCF，若要解决，部分的某些 WCF 通道的编程模型的限制。  

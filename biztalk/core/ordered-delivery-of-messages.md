@@ -1,11 +1,11 @@
 ---
-title: "有序的消息传送 |Microsoft 文档"
-ms.custom: 
+title: 有序的消息传送 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, message order
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - adapters, messages
 - customizing, receive adapters
 ms.assetid: 39e0bba6-81f5-4ae0-af92-837b225bc801
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -33,6 +33,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266605"
 ---
 # <a name="ordered-delivery-of-messages"></a>有序的消息传送
 按序送达消息可以确保按给定顺序发布到 MessageBox 数据库的消息能够以发布到 MessageBox 的相同顺序送达每个匹配的订户。  

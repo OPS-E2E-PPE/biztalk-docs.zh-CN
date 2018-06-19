@@ -1,18 +1,18 @@
 ---
-title: "运行时体系结构 |Microsoft 文档"
-ms.custom: 
+title: 运行时体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - runtime, architecture
 - architecture, runtime
 - runtime
 ms.assetid: feff9a84-f19b-44c9-8d05-8e6015bb1ef9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268989"
 ---
 # <a name="runtime-architecture"></a>运行时体系结构
 然后再进行查看更多详细信息中的各种组件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，具有组件到产品的总体体系结构的适合程度的了解是很重要。 BizTalk Server 运行时是基于发布/订阅结构建立的，在该结构中消息发布到系统，然后由一个或多个活动订户接收。 此体系结构的不同方式存在，但在 BizTalk Server 中实现此模型通常称为*基于内容的发布/订阅*。  

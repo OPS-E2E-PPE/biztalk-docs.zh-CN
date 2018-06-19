@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试 SharePoint 应用程序与 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试 SharePoint 应用程序与 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec1392fa-fdc1-42be-b4dc-75a55d8fa400
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222181"
 ---
 # <a name="step-4-test-your-sharepoint-application-with-the-siebel-adapter"></a>步骤 4： 测试 SharePoint 应用程序与 Siebel 适配器
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **完成时间：** 5 分钟。  
   
- **目标：**后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 Siebel 系统中检索一些数据来测试应用程序。 本部分将说明了如何使用应用程序从 Siebel 系统检索数据。  
+ **目标：** 后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 Siebel 系统中检索一些数据来测试应用程序。 本部分将说明了如何使用应用程序从 Siebel 系统检索数据。  
   
 ## <a name="prerequisites"></a>先决条件  
  您应已创建包含相应的 Web 部件，以检索业务数据的 Web 部件页。 请参阅[步骤 3： 创建 SharePoint 应用程序从 Siebel 检索数据](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)。  

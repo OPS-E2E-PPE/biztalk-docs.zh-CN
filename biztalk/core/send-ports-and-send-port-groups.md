@@ -1,11 +1,11 @@
 ---
-title: "发送端口和发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 发送端口和发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, states
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - send port groups, about send port groups
 - states, send ports
 ms.assetid: 274bdd27-9098-46a2-8762-8b57bbfc95b8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271821"
 ---
 # <a name="send-ports-and-send-port-groups"></a>发送端口和发送端口组
 A*发送端口*是 Microsoft BizTalk Server 将消息发送到的位置或 BizTalk Server 从中接收消息。 它还提供 BizTalk Server 用于实现通信操作的技术。 端口名称唯一标识该位置。  

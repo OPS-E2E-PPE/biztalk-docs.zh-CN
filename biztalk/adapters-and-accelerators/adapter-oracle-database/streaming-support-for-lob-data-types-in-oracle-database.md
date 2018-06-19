@@ -1,11 +1,11 @@
 ---
-title: "流式处理 Oracle 数据库中的 LOB 数据类型支持 |Microsoft 文档"
-ms.custom: 
+title: 流式处理 Oracle 数据库中的 LOB 数据类型支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, node-value
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - LOB data
 - streaming, node
 ms.assetid: a4943cdf-8336-48ac-b592-52ec514e7300
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214645"
 ---
 # <a name="streaming-support-for-lob-data-types-in-oracle-database"></a>Oracle 数据库中的 LOB 数据类型的流式处理支持
 Oracle 数据库支持流式处理大型对象 (LOB) 数据类型。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持消息流式处理，这样就可以进行流式处理 LOB 数据端到端 Oracle 数据库和适配器客户端之间。 但是，流式处理不支持相同的方式跨所有的编程模型时使用适配器。  

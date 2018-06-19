@@ -1,17 +1,17 @@
 ---
-title: "调用中使用 WCF 服务模型的 SAP Rfc |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 SAP Rfc |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - invoking RFCs, using the WCF service model
 - WCF service model, invoking RFCs
 ms.assetid: 06a373e2-5d16-4480-81ec-611bd0b9749c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217517"
 ---
 # <a name="invoke-rfcs-in-sap-using-the-wcf-service-model"></a>调用中使用 WCF 服务模型的 SAP Rfc
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP 系统上的 Rfc 呈现为可由客户端程序调用的操作。 在 WCF 服务模型中，为生成的 WCF 客户端类的方法调用这些操作。 你可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类，包含用于你要在代码中调用每个 RFC 方法。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]还会生成.NET 类型封装由每次 RFC 的参数和数据类型。 然后，你可以创建此 WCF 客户端类的实例并调用其方法来调用目标 Rfc。  

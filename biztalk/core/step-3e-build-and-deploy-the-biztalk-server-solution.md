@@ -1,14 +1,14 @@
 ---
-title: "步骤 3e： 生成并部署 BizTalk Server 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3e： 生成并部署 BizTalk Server 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbfc382b-ed4a-4401-9343-be1bffd747c9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276621"
 ---
 # <a name="step-3e-build-and-deploy-the-biztalk-server-solution"></a>步骤 3e： 生成并部署 BizTalk 服务器解决方案
 在本主题中，我们会将两个部署[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目 (**BtsSalesforceIntegration**和**CustomPipeline**)，我们在之前的步骤中创建。  

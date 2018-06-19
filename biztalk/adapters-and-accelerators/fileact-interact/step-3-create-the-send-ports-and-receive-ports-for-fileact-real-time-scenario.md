@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建发送端口和接收端口 FileAct 实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建发送端口和接收端口 FileAct 实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d7d39c7-a08b-4fbb-85fe-b30a8d62524b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223773"
 ---
 # <a name="step-3-create-the-send-ports-and-receive-ports-for-the-fileact-real-time-scenario"></a>步骤 3： 创建发送端口和 FileAct 实时方案接收端口
 在开始此部分中的步骤之前，必须完成[步骤 2： 将 SWIFTNet 配置添加到 FileAct 实时方案 Paramfile](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-real-time-scenario.md)。  

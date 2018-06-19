@@ -1,14 +1,14 @@
 ---
-title: "交互适配器体系结构 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce7e4b7e-abe4-4db6-b4e0-6f71bd7e5e6f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222829"
 ---
 # <a name="interact-adapter-architecture"></a>交互适配器体系结构
 本部分介绍从功能的角度来看的交互的基元。 具体的结构、 语法和基元的使用情况是完备中 SWIFT 的引用，并不在此处重复。  

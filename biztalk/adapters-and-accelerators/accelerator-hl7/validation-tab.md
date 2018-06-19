@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206317"
 ---
 # <a name="validation-tab"></a>验证选项卡
 你使用**验证**选项卡以选择入站和生成消息的消息验证选项。  

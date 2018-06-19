@@ -1,14 +1,14 @@
 ---
-title: "第 3 课： 执行存储的过程以选择新添加的员工 |Microsoft 文档"
-ms.custom: 
+title: 第 3 课： 执行存储的过程以选择新添加的员工 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec7897e9-0c77-41b2-8cc2-61745bd3b028
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222621"
 ---
 # <a name="lesson-3-execute-a-stored-procedure-to-select-new-employees-added"></a>第 3 课： 执行存储的过程以选择新添加的员工
 在本课程中了解任务执行之前，你必须首先了解为什么所需的这些任务。 **员工**到记录插入要添加新员工的表定义的方式，**状态**列始终设置为"0"，每次添加新员工。 以便你可以使用此列的新添加的员工查询，还将获得通知，则是完成此操作。 在 SQL Server，你需要查询这通过运行以下 SQL 语句：  

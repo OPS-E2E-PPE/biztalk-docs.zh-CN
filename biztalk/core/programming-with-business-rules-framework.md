@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264805"
 ---
 # <a name="programming-with-business-rules-framework"></a>使用业务规则框架编程
 本部分包含与 BRE 程序员相关的任务，如以编程方式执行策略和创建事实检索器组件。  

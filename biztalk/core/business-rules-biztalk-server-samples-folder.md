@@ -1,18 +1,18 @@
 ---
-title: "业务规则 （BizTalk Server 示例文件夹中） |Microsoft 文档"
-ms.custom: 
+title: 业务规则 （BizTalk Server 示例文件夹中） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - SDK examples
 - business rules, examples
 ms.assetid: d5c19d43-6688-4138-88b1-6e933ccbd14b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231437"
 ---
 # <a name="business-rules-biztalk-server-samples-folder"></a>业务规则 （BizTalk Server 示例文件夹中）
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在其软件开发工具包 (SDK) 中包括了几个业务规则示例。 本部分详细介绍每个业务规则示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  

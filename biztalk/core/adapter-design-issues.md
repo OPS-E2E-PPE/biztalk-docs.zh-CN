@@ -1,14 +1,14 @@
 ---
-title: "适配器设计问题 |Microsoft 文档"
-ms.custom: 
+title: 适配器设计问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e5568be-a046-40ff-a94a-eda086457564
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226557"
 ---
 # <a name="adapter-design-issues"></a>适配器设计问题
 在用户在设计时对配置进行更改后，适配器配置存储于单一登录 (SSO) 数据库中。 在运行时，消息引擎检索适配器的配置并将配置传送到适配器。 四种类型的配置信息将传送到适配器：  
@@ -172,7 +173,7 @@ return int.Parse(s);
 }   
 ```  
   
- **实现提示：**适配器通常应使用**OutboundTransportLocation**消息上下文属性来确定要将消息发送到的地址。 这样做之后，适配器可以一致地处理对静态和动态发送的传输， 并且还可以简化对生产绑定文件中地址的修改。  
+ **实现提示：** 适配器通常应使用**OutboundTransportLocation**消息上下文属性来确定要将消息发送到的地址。 这样做之后，适配器可以一致地处理对静态和动态发送的传输， 并且还可以简化对生产绑定文件中地址的修改。  
   
 ## <a name="xsd"></a>XSD  
  SDK 文件适配器示例中包括的四个 XSD 文件主要句柄适配器配置： ReceiveHandler.xsd、 ReceiveLocation.xsd、 TransmitLocation.xsd 和 TransmitHandler.xsd。  

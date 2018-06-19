@@ -1,14 +1,14 @@
 ---
-title: "消息扩充示例 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 消息扩充示例 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a41ed707-dbdb-46b7-97a6-86fdbc8ad285
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265205"
 ---
 # <a name="message-enrichment-sample-biztalk-server-sample"></a>消息收集示例（BizTalk Server 示例）
 消息收集示例演示如何将 X12 文档和 EDIFACT 文档的交换标头附加到事务集消息中。  

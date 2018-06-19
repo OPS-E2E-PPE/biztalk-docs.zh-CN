@@ -1,14 +1,14 @@
 ---
-title: "生成 WSDL 与 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 生成 WSDL 与 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f701d78d-b3ad-4f75-b814-e5b1f1319fb9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224605"
 ---
 # <a name="generate-wsdl-with-the-wcf-lob-adapter-sdk"></a>生成 WSDL 与 WCF LOB 适配器 SDK
 在开发的适配器，或从 LOB 系统更改返回的元数据，通常是有用的若要查看从适配器以验证你的操作的元数据将生成返回 Web Services 描述语言 (WSDL) 期间正确。 有几种方法来生成的 WSDL。 本主题提供有关使用 svcutil.exe 和元数据搜索浏览控件的信息。  
@@ -46,7 +47,7 @@ SvcUtil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
   
 4.  打开**工具箱**，展开**公共控件**，右键单击**工具箱**，然后单击**选择项**。  
   
-5.  在**选择工具箱项**对话框中，查找**MetadataUserControl**上**.NET Framework 组件**选项卡上，选择此项目旁边的复选框，然后单击**确定**。  
+5.  在**选择工具箱项**对话框中，查找**MetadataUserControl**上 **.NET Framework 组件**选项卡上，选择此项目旁边的复选框，然后单击**确定**。  
   
 6.  从工具箱中，将 MetadataUserControl 拖到 form1。 你可能需要调整窗体以查看整个控件的大小。 你应能够现在运行项目，并验证该控件可正常运行，从而允许您选择适配器和操作。  
   

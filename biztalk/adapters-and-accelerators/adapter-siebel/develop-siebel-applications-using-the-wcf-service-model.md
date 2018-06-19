@@ -1,11 +1,11 @@
 ---
-title: "开发 Siebel 应用程序使用 WCF 服务模型 |Microsoft 文档"
-ms.custom: 
+title: 开发 Siebel 应用程序使用 WCF 服务模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF service model, developing applications by using
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - proxy programming, performing operations
 - WCF service model, advantages of using
 ms.assetid: df5627b9-c80d-4a75-a20a-a0be119735a2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222525"
 ---
 # <a name="develop-siebel-applications-using-the-wcf-service-model"></a>开发 Siebel 应用程序使用 WCF 服务模型
 [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供一个编程模型调用 WCF 服务模型，该部分可帮助解决的一些其他的编程模型的限制 — WCF 通道模型。  

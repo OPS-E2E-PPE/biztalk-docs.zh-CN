@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269549"
 ---
 # <a name="sample-architectures-for-small-amp-medium-sized-companies"></a>对于小型示例体系结构&amp;中等规模的公司
 本部分介绍了部署 Microsoft BizTalk Server 以帮助保护中小型公司内的资产的示例结构。 尽管这些结构鼓励实施深度防御和服务分隔来最大限度地降低攻击的影响，但其假定的硬件、软件和人力资源的数量通常也适用于大型公司。  

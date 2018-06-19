@@ -1,14 +1,14 @@
 ---
-title: "节点名称属性 |Microsoft 文档"
-ms.custom: 
+title: 节点名称属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95d9e5bf-7439-4ef4-ad14-e8d3e8eff911
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972795"
 ---
 # <a name="node-name-property"></a>“节点名称”属性
 在使用 BizTalk 编辑器向架构树中插入节点时，需要对某些节点进行重命名，而另外一些节点则不需要。 实质上，你可以和应该重命名**记录**节点， **Field 元素**节点，和**字段特性**节点。 您为这些节点指定的名称将成为架构所定义的消息中的 XML 元素和属性的名称。  

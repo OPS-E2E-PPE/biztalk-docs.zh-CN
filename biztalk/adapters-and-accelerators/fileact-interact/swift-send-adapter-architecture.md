@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 发送适配器体系结构 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 发送适配器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e52a5a21-0aa1-4cd9-a2a4-f9df425913a0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223869"
 ---
 # <a name="swift-send-adapter-architecture"></a>SWIFT 发送适配器体系结构
 一般情况下，在 BizTalk 服务过程中，Btsntsvc.exe 托管 BizTalk Server 发送适配器。 这意味着 BizTalk Server 管理适配器的生存期。  

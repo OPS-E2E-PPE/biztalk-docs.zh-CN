@@ -1,14 +1,14 @@
 ---
-title: "运行 ExecuteNonQuery、 ExecuteReader 和使用 SQL 适配器 ExecuteScalar 操作 |Microsoft 文档"
-ms.custom: 
+title: 运行 ExecuteNonQuery、 ExecuteReader 和使用 SQL 适配器 ExecuteScalar 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3fda0544-a028-4a95-aae6-1f6a90764c5d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222269"
 ---
 # <a name="run-executenonquery-executereader-and-executescalar-operations-using-the-sql-adapter"></a>运行 ExecuteNonQuery、 ExecuteReader 和使用 SQL 适配器 ExecuteScalar 操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开根级别上的执行以下操作：  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
     -   对于 UPDATE、 INSERT 和 DELETE 语句中，返回值是由 SQL 语句影响的行数。  
   
-    -   对于所有其他类型的语句，则返回值是**-1**。  
+    -   对于所有其他类型的语句，则返回值是 **-1**。  
   
 -   **ExecuteReader**： 使用此操作在 SQL Server 中执行任何任意的 SQL 语句，如果你想要的结果集返回，如果有，作为数据集的数组。 有关数据集的信息，请参阅"数据集类"在[http://go.microsoft.com/fwlink/?LinkID=196853](http://go.microsoft.com/fwlink/?LinkID=196853)。  
   

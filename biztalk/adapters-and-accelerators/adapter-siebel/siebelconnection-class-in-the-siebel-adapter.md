@@ -1,18 +1,18 @@
 ---
-title: "Siebel 适配器中的 SiebelConnection 类 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器中的 SiebelConnection 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, SiebelConnection
 - SiebelConnection, supported properties and methods
 - SiebelConnection
 ms.assetid: 661d9876-4c14-4748-b05f-cc4fd1c4ebcf
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222333"
 ---
 # <a name="siebelconnection-class-in-the-siebel-adapter"></a>Siebel 适配器中 SiebelConnection 类
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]访问基础[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] `Binding`、 `ConnectionFactory`，和`Channel`以连接到 Siebel 系统。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]实现`DbConnection`类，以支持上述功能。  

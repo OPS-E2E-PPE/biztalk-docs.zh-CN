@@ -11,7 +11,7 @@ helpviewer_keywords:
 - authorization properties
 - non-repudiation, properties
 ms.assetid: e752b95b-9dae-4403-8f3e-3a0a50acd519
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22208173"
 ---
 # <a name="authorization-and-non-repudiation-properties"></a>授权和不可否认性属性
 本主题介绍了合作伙伴界面进程 (PIP) 的 `Is Authorization Required` 属性、`Non-Repudiation of Origin and Content` 属性，以及 `Non-Repudiation Required (Acknowledgement of Receipt)` 属性的行为。 它还介绍了这些属性的组合， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]支持。  

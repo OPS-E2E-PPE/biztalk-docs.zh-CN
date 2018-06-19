@@ -1,14 +1,14 @@
 ---
-title: "在 WCF LOB 适配器 SDK 中查看受支持的消息交换模式 |Microsoft 文档"
-ms.custom: 
+title: 在 WCF LOB 适配器 SDK 中查看受支持的消息交换模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6662f17-b4f8-45fe-a22f-5d027dc9f2ff
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225517"
 ---
 # <a name="view-the-supported-message-exchange-patterns-in-the-wcf-lob-adapter-sdk"></a>在 WCF LOB 适配器 SDK 中查看受支持的消息交换模式
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]支持多个支持的基础的消息传递模式[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]包括请求-答复和单向通信。 不同传输协议支持不同的消息传递模式，并因而会影响它们所支持的交互的类型。  

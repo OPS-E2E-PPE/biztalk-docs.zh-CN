@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 添加常见架构 v2.3.1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 添加常见架构 v2.3.1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da98fe6c-4776-4cb8-8454-af3128dea4ab
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206509"
 ---
 # <a name="step-2-add-common-schemas-for-v231"></a>步骤 2： 添加常见 v2.3.1 架构
 在此步骤中，你可以创建基于 BTAHL7231Common 项目模板的新项目。 此模板包含三个常见的架构 （适用于数据类型、 线段和表值）， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 用于验证 v2.3.1 消息实例。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 v2.3.1 架构，包括将使用传入的批处理中的单个消息的架构与结合使用这些常见的架构 (ADT ^ A03)。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 10. 在选择强名称密钥文件下拉列表中，选择列表中。  
   
-11. 浏览到**: \Batching 教程**，选择**key.snk**，然后单击**打开**。  
+11. 浏览到 **: \Batching 教程**，选择**key.snk**，然后单击**打开**。  
   
 12. 右键单击**BTAHL7V231Common**，然后单击**部署**。 确保输出窗口中显示一条成功消息。  
   

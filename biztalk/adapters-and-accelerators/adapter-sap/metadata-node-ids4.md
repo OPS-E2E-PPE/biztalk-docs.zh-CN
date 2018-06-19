@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 46385060-f56a-4e06-9122-b75808776716
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218501"
 ---
 # <a name="node-types-and-ids-for-the-sap-adapter"></a>节点类型和 SAP 适配器 Id
 
@@ -112,7 +113,7 @@ ms.lasthandoff: 03/28/2018
 |RFC|-   RFC name.<br />RFC 导入、 导出、 更改和表参数。<br />RFC 参数数据类型。<br />映射到方面 maxLength 的 RFC 参数字段长度<br />RFC 必选参数映射到方面 minOccurs = 1<br />RFC 可选参数映射到方面 minOccurs = 0<br />RFC 参数为空的约束映射到方面 isNillable = true。 这意味着到 SAP 系统的适配器应通过此参数。<br />-RFC 本身是该操作。|  
 |TRFC|除 RFC 相同<br /><br /> RFC 导入参数将不显示中。 因为 tRFC 是异步的将不显示任何输出参数。|  
 |BAPI|-业务对象的名称<br />-业务对象方法名称<br />-与相同 RFC 特征|  
-|IDOC|IDOC 类型<br /><br /> CIMType<br /><br /> IDOC 发行版号<br /><br /> IDOC 版本<br /><br /> IDOC 控制记录字段映射到 EDI_DC 复杂类型<br /><br /> IDOC 数据记录段和段字段映射到 EDI_DD 复杂类型<br /><br /> 段父-子关系<br /><br /> IDOC 段必选参数映射到 minOccurs = 1<br /><br /> IDOC 段可选参数映射到 minOccurs = 0<br /><br /> IDOC 段标头字段名称<br /><br /> IDOC 段标头字段数据类型<br /><br /> IDOC 段字段名称<br /><br /> IDOC 段字段数据类型<br /><br /> IDOC 段字段值枚举<br /><br /> IDOC 段字段最小值、 最大值 （范围）**注意：**时 IDOC 段字段包含的最小值列表，呈现为枚举。 如果 IDOC 段字段包含最小值和最大值，则将它呈现为而无需任何枚举类型或范围构造的字符串。|  
+|IDOC|IDOC 类型<br /><br /> CIMType<br /><br /> IDOC 发行版号<br /><br /> IDOC 版本<br /><br /> IDOC 控制记录字段映射到 EDI_DC 复杂类型<br /><br /> IDOC 数据记录段和段字段映射到 EDI_DD 复杂类型<br /><br /> 段父-子关系<br /><br /> IDOC 段必选参数映射到 minOccurs = 1<br /><br /> IDOC 段可选参数映射到 minOccurs = 0<br /><br /> IDOC 段标头字段名称<br /><br /> IDOC 段标头字段数据类型<br /><br /> IDOC 段字段名称<br /><br /> IDOC 段字段数据类型<br /><br /> IDOC 段字段值枚举<br /><br /> IDOC 段字段最小值、 最大值 （范围）**注意：** 时 IDOC 段字段包含的最小值列表，呈现为枚举。 如果 IDOC 段字段包含最小值和最大值，则将它呈现为而无需任何枚举类型或范围构造的字符串。|  
   
  有关格式的元数据的详细信息，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开特定项目和操作在 SAP 系统上，请参阅[消息和消息架构用于 mySAP Business Suite 的 BizTalk Adapter](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)。  
   

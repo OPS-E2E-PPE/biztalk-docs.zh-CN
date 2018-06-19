@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231109"
 ---
 # <a name="btadinstallmode"></a>BTAD_InstallMode
 BTAD_InstallMode 描述 BizTalk 应用程序部署的安装模式。  

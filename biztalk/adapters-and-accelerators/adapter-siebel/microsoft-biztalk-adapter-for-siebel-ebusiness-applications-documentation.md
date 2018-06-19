@@ -1,15 +1,15 @@
 ---
-title: "为 Siebel eBusiness 应用程序文档的 Microsoft BizTalk 适配器 |Microsoft 文档"
-description: "获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 Siebel 适配器"
-ms.custom: 
+title: 为 Siebel eBusiness 应用程序文档的 Microsoft BizTalk 适配器 |Microsoft 文档
+description: 获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 Siebel 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 39cc8e02-d37f-4f8a-91f9-d87d312434a1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222157"
 ---
 # <a name="microsoft-biztalk-adapter-for-siebel-ebusiness-applications-documentation"></a>Microsoft BizTalk 适配器为 Siebel eBusiness 应用程序文档的
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]包括各种资源来帮助你了解该适配器的工作原理，如何创建使用适配器的应用程序，介绍不同的连接选项，等等。

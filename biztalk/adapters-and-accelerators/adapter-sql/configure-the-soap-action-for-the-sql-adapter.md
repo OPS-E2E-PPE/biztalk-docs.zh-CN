@@ -1,15 +1,15 @@
 ---
-title: "在 BizTalk 中配置 SQL 适配器的 SOAP 操作 |Microsoft 文档"
-description: "在 Visual Studio 中，输入 SOAP 操作或使用 BizTalk 适配器包 (BAP) 中的 WCF 自定义或 WCF SQL 适配器"
-ms.custom: 
+title: 在 BizTalk 中配置 SQL 适配器的 SOAP 操作 |Microsoft 文档
+description: 在 Visual Studio 中，输入 SOAP 操作或使用 BizTalk 适配器包 (BAP) 中的 WCF 自定义或 WCF SQL 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acd7f60b-c27f-4988-a67c-e56ef8d38f66
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223493"
 ---
 # <a name="configure-the-soap-action-for-the-sql-adapter"></a>配置 SQL 适配器的 SOAP 操作
 若要对使用基于 WCF 的 SQL Server 执行任何操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]，您必须指定 SOAP 操作。 SOAP 操作进行通信的适配器应执行什么操作。 可以从指定的 SOAP 操作[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]或从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 但是，如果你指定的 SOAP 操作从这两个位置，你指定操作从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]将重写。  

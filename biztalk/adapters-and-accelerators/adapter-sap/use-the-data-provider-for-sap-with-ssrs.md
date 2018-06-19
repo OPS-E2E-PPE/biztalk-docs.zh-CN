@@ -1,14 +1,14 @@
 ---
-title: "为 SAP 使用 SSRS 使用的数据提供程序 |Microsoft 文档"
-ms.custom: 
+title: 为 SAP 使用 SSRS 使用的数据提供程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e821da18-790b-4e5d-99f4-afa57e1ad528
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216709"
 ---
 # <a name="use-the-data-provider-for-sap-with-ssrs"></a>适用于 SAP 的 SSRS 使用的数据提供程序
 你可以使用[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]以及 SQL Server Reporting Services (SSRS) 来创建基于 SAP 数据的报表。 有关 SSRS 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=125922](http://go.microsoft.com/fwlink/?LinkId=125922)。  

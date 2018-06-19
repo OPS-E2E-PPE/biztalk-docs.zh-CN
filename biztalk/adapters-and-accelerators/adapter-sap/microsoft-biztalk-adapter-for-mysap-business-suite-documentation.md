@@ -1,15 +1,15 @@
 ---
-title: "为 mySAP Business Suite 文档的 Microsoft BizTalk 适配器 |Microsoft 文档"
-description: "获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 mySAP 适配器"
-ms.custom: 
+title: 为 mySAP Business Suite 文档的 Microsoft BizTalk 适配器 |Microsoft 文档
+description: 获取开始，体系结构，安全，开发应用程序、 消息架构，以及解决 BizTalk 适配器包中的 mySAP 适配器
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 26b728d7-f1e9-470a-aba5-10c9f53e2d2b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217365"
 ---
 # <a name="microsoft-biztalk-adapter-for-mysap-business-suite-documentation"></a>MySAP Business Suite 文档的的 Microsoft BizTalk 适配器
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]包括各种资源来帮助你理解适配器的工作原理，如何创建应用程序使用的适配器，描述了不同的连接选项，请了解如何创建应用程序，和的详细信息。

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 生成项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 生成项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d88b1407-ecdd-4dbf-90da-02dc4781568c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225661"
 ---
 # <a name="step-4-build-the-project"></a>步骤 4： 生成项目
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，您将编译 BizTalk 业务流程项目。  
+ **目标：** 在此步骤中，您将编译 BizTalk 业务流程项目。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成[步骤 3： 将请求消息发送到插入的记录和接收响应](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在解决方案资源管理器，右键单击 BizTalk 项目名称，，然后单击**属性**。  
   
-2.  在属性页对话框中，在树窗格中，展开**通用属性**，单击**程序集**，然后在属性列表中，单击**程序集密钥文件**省略号**[…]**.  
+2.  在属性页对话框中，在树窗格中，展开**通用属性**，单击**程序集**，然后在属性列表中，单击**程序集密钥文件**省略号 **[…]**.  
   
 3.  指定你创建中所述的程序集密钥文件的路径[系统必备组件来创建 SQL 应用程序使用的 SQL 适配器](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md)，然后单击**打开**。  
   

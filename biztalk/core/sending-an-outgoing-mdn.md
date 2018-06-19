@@ -1,14 +1,14 @@
 ---
-title: "发送传出 MDN |Microsoft 文档"
-ms.custom: 
+title: 发送传出 MDN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dce7620-d354-4b76-bcbc-f97dc93c3fc3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271421"
 ---
 # <a name="sending-an-outgoing-mdn"></a>发送传出 MDN
 传出的 MDN 由 AS2EDIReceive 或 AS2Receive 接收管道生成，由 AS2Send 管道发送。 本主题介绍如何发送 MDN。 有关如何生成 MDN 的详细信息，请参阅[生成传出 MDN](../core/generating-an-outgoing-mdn.md)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
  如果 MDN 是异步发送的，则 MDN 必须通过另外的发送端口发送，此发送端口从 MessageBox 提取 MDN。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为一个单独的 HTTP Post 提供唯一的 TCP/IP 连接不同于用于提供原始 AS2 消息发送 MDN。 即使此 MDN 设置为单独的 HTTP POST，此 POST 仍需要 HTTP 响应命令。  
   
- 异步 MDN 通常会发送到原始 AS2 消息的回执送达选项标头中的 URL。 但是，如果**使用验证和 MDN 的协议设置，而不是消息标头**上设置属性上**验证**页中的单向 AS2 协议选项卡**协议属性**对话框中，将 MDN 将发送到的 URL，**回执送达选项 (URL)**协议属性设置为。  
+ 异步 MDN 通常会发送到原始 AS2 消息的回执送达选项标头中的 URL。 但是，如果**使用验证和 MDN 的协议设置，而不是消息标头**上设置属性上**验证**页中的单向 AS2 协议选项卡**协议属性**对话框中，将 MDN 将发送到的 URL，**回执送达选项 (URL)** 协议属性设置为。  
   
 ## <a name="how-the-send-pipeline-processes-an-outgoing-mdn"></a>发送管道如何处理传出的 MDN  
  AS2Send 管道按如下方式处理传出的 MDN：  

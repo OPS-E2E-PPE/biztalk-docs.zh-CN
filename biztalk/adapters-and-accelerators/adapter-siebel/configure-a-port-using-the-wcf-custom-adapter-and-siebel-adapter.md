@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 BizTalk 中的 WCF 自定义适配器和 Siebel 适配器 |Microsoft 文档"
-description: "创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 Siebel eBusiness 应用程序适配器的端口"
-ms.custom: 
+title: 配置端口使用 BizTalk 中的 WCF 自定义适配器和 Siebel 适配器 |Microsoft 文档
+description: 创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 Siebel eBusiness 应用程序适配器的端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53c5ee07-36ae-474b-9241-8b53c9066ca1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222325"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-siebel-adapter"></a>配置使用 WCF 自定义适配器和 Siebel 适配器的端口
 本主题提供有关如何配置 WCF 自定义发送端口执行 Siebel 系统使用的出站操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡并在**地址 (URI)**字段指定连接 URI 以连接到 Siebel 系统。 有关连接 URI 的详细信息，请参阅[创建 Siebel 系统连接 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)。  
+    1.  单击**常规**选项卡并在**地址 (URI)** 字段指定连接 URI 以连接到 Siebel 系统。 有关连接 URI 的详细信息，请参阅[创建 Siebel 系统连接 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)。  
   
     2.  上**常规**选项卡上，在**操作**文本框中，键入操作的操作。 请参阅[消息和消息架构](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)有关每个操作的操作的列表。 例如，要调用帐户在业务组件上的插入操作的操作是：  
   

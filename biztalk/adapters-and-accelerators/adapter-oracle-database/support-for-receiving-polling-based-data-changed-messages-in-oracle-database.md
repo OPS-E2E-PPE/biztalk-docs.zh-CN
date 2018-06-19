@@ -1,11 +1,11 @@
 ---
-title: "支持 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: 支持 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - notifications, polling-based
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - polling interval
 - polling
 ms.assetid: 9ff29d3f-ebb1-4d82-9106-150f939cbd9e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218797"
 ---
 # <a name="support-for-receiving-polling-based-data-changed-messages-in-oracle-database"></a>支持 Oracle 数据库中接收基于轮询的数据更改消息
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]启用客户端程序来告知他们对 Oracle 数据库中存储的数据的更改的 Oracle 数据库从接收消息。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]接收其中适配器执行指定的 SELECT 查询、 存储的过程、 函数或过程或函数在一个包内的"轮询基于"消息的支持检索数据，然后将提供给常规的客户端的结果时间间隔。 若要启用此选项，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]公开 POLLINGSTMT 操作。 此外，所有存储的过程、 函数和过程和函数包内的作为进行轮询的入站操作公开。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/20/2017
 |轮询|通知|  
 |-------------|------------------|  
 |所有支持的 Oracle 数据库版本支持轮询[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。|通知是仅支持 Oracle 数据库版本 10.2 及更高版本。|  
-|你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。 **提示：**轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。 作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。|数据更改通知始终是即时的。|  
+|你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。 **提示：** 轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。 作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。|数据更改通知始终是即时的。|  
 |轮询启动的适配器。 适配器执行 SQL 语句以验证是否数据可用于轮询，并随后通过执行轮询语句，如果某些数据可用于轮询开始轮询。|Oracle 数据库发出通知。 只需适配器发出的通知语句指示要在该语句结果集中的更改的情况下启动通知的数据库。 通知是 Oracle 数据库的一项功能。|  
 |轮询语句可用于读取或更新的 Oracle 数据库中的数据。|可以使用通知语句仅具有读取 Oracle 数据库中的数据。|  
 |轮询通知你有关已更改的实际数据信息。|通知会告知仅如 Insert、 数据中的更改类型的更新和删除。|  

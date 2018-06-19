@@ -1,11 +1,11 @@
 ---
-title: "示例体系结构： BizTalk 消息队列 |Microsoft 文档"
-ms.custom: 
+title: 示例体系结构： BizTalk 消息队列 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, security
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - Windows Message Queuing
 - message queuing adapters
 ms.assetid: a660c798-1c45-4759-a6c8-f11550683a31
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269789"
 ---
 # <a name="sample-architecture-biztalk-message-queuing"></a>示例体系结构： BizTalk 消息队列
 本主题将介绍使用 BizTalk 消息队列适配器发送和接收消息时的示例结构。  

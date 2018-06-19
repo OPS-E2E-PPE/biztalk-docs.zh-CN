@@ -1,14 +1,14 @@
 ---
-title: "有关会话 Management2 |Microsoft 文档"
-ms.custom: 
+title: 有关会话 Management2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3ecdb4f-d384-42ac-9776-e7ad14d5f151
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225605"
 ---
 # <a name="about-session-management"></a>关于会话管理
 Microsoft BizTalk Adapter for 博士 Edwards EnterpriseOne 创建要发送到博士 Edwards EnterpriseOne 服务器调用的连接会话。 调用终止时，会话会放在池中以供后续调用重用。 适配器会创建多个连接会话以处理到博士 Edwards EnterpriseOne 服务器的并发调用。 池会定期进行清理，从而删除不再需要的会话。  

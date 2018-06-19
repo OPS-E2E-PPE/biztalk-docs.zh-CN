@@ -1,18 +1,18 @@
 ---
-title: "教程 4： 迁移 SAP 接收 IDOC BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 教程 4： 迁移 SAP 接收 IDOC BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, SAP Receive IDOC BizTalk project
 - migrating, SAP Receive IDOC BizTalk project
 - migration
 ms.assetid: 74b667d8-2d8c-4c15-9dd2-f13521404b85
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217885"
 ---
 # <a name="tutorial-4-migrating-an-sap-receive-idoc-biztalk-project"></a>教程 4： 迁移 SAP 接收 IDOC BizTalk 项目
 SAP 适配器随 Microsoft BizTalk Server 以前版本的基于 WCF 的不同[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在许多方面，包括：  

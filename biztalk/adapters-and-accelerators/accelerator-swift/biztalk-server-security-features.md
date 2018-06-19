@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 安全功能 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 安全功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - authentication
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, security features
 - BizTalk Server, security features
 ms.assetid: db356439-1898-4c09-86de-458a9bd21b18
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211045"
 ---
 # <a name="biztalk-server-security-features"></a>BizTalk Server 安全功能
 通过使用财务服务应用程序和集成解决方案开发[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]由本机保护的应用程序和是否[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安全功能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序通常由构成的消息传送功能 (消息处理转换，路由) 和工作流自动化 （业务流程自动化、 业务规则和逻辑求值）。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]提供常规消息传递和工作流自动化安全。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]提供了特定于保护最终用户消息项、 修复、 批准和提交的其他安全功能。 有关详细信息[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-特定的安全，请参阅[A4SWIFT 消息修复和新提交的安全功能](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)。  

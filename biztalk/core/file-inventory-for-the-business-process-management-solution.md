@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973867"
 ---
 # <a name="file-inventory-for-the-business-process-management-solution"></a>业务流程管理解决方案的文件清单
 本部分列出了业务流程管理解决方案的子目录和源文件。 业务流程管理解决方案源文件的默认安装目录为 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\BPM。 下表将具有此路径之前的说明\<安装 Directory\>。  

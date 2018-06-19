@@ -1,14 +1,14 @@
 ---
-title: "恢复运行 BizTalk Server 的计算机 |Microsoft 文档"
-ms.custom: 
+title: 恢复运行 BizTalk Server 的计算机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a55af6d6-f11a-46e4-9b8e-0a1ca35998c4
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268813"
 ---
 # <a name="recovering-a-computer-running-biztalk-server"></a>恢复运行 BizTalk Server 的计算机
 为了恢复运行 BizTalk Server 的计算机，您必须能够访问 BizTalk Server 数据库。 必要时还需还原 BizTalk Server 数据库。 另外，在恢复运行 BizTalk Server 的计算机之前，还必须重新安装 BizTalk Server 以及所有的必备软件。  

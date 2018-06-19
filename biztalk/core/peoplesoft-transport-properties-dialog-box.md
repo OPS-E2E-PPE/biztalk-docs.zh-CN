@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265141"
 ---
 # <a name="peoplesoft-transport-properties-dialog-box"></a>PeopleSoft 传输属性对话框
 使用 PeopleSoft 的“传输属性”对话框设置适配器所需的属性。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |刷新代理|选择**是**为**刷新代理**强制 runtimeagent.exe 以及要在需要时自动重新启动 browsingagent.exe 过程。<br /><br /> 例如，您希望进程在出现以下情况时自动重新启动：丢失了与服务器的连接；或者如果向服务器中添加了内容，但是由于它没有显示在适配器向导中而无法选择它。|  
 |**单一登录**||  
 |关联应用程序|仅当使用单一登录 (SSO) 时，才可以从列表中选择关联应用程序。|  
-|使用 SSO|选择**是**如果你使用 SSO; 密码不需要在这种情况下。 **注意：**如果你已输入了密码，并且你想要使用单一登录，右键单击密码字段，然后选择**废除密码**。|  
+|使用 SSO|选择**是**如果你使用 SSO; 密码不需要在这种情况下。 **注意：** 如果你已输入了密码，并且你想要使用单一登录，右键单击密码字段，然后选择**废除密码**。|  
   
 ## <a name="see-also"></a>另请参阅  
  [用于 PeopleSoft 企业的 BizTalk Adapter 的用户界面参考](../core/ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise.md)

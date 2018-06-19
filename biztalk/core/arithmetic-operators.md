@@ -1,14 +1,14 @@
 ---
-title: "算术运算符 |Microsoft 文档"
-ms.custom: 
+title: 算术运算符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d73e153c-aac1-4cea-92d8-af4a1bea6e6a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230517"
 ---
 # <a name="arithmetic-operators"></a>算术运算符
 业务规则框架支持在创建业务规则时使用加、减、乘、除和余数（模）运算符。 下表对这些算术运算符进行了说明。  

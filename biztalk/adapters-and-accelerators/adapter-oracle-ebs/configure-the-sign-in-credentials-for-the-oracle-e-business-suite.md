@@ -1,14 +1,14 @@
 ---
-title: "为 Oracle E-business Suite 配置登录凭据 |Microsoft 文档"
-ms.custom: 
+title: 为 Oracle E-business Suite 配置登录凭据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 743ced51-706b-4788-b5a8-e0ed8ffb3b48
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219069"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-e-business-suite"></a>为 Oracle E-business Suite 配置登录凭据
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]需要适配器客户端提供客户端凭据。 适配器使用这些凭据进行身份验证与 Oracle E-business Suite 用户并建立连接。  

@@ -1,14 +1,14 @@
 ---
-title: "适配器组件 |Microsoft 文档"
-ms.custom: 
+title: 适配器组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 383e8bcb-2b4d-40f9-9e98-f49e8d6f30f7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225325"
 ---
 # <a name="adapter-components"></a>适配器组件
 自定义适配器共享本地适配器所使用的标准配置、管理和设置机制。 为适配器框架标准化，自定义适配器通过使用进行管理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  

@@ -1,11 +1,11 @@
 ---
-title: "策略测试跟踪输出信息对于业务规则 |Microsoft 文档"
-ms.custom: 
+title: 策略测试跟踪输出信息对于业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing, business rules
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - business rules, testing
 - policies, testing
 ms.assetid: 26ff584e-97a1-4d76-a8a9-a55b4c99231f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265061"
 ---
 # <a name="policy-test-trace-output-information-for-business-rules"></a>业务规则的策略测试跟踪输出信息
 本部分介绍了在业务规则编辑器中测试策略时显示的跟踪信息。 使用“组中心”页上的消息事件和服务实例跟踪查询查看策略执行的跟踪结果时，会看到非常相似的信息。  

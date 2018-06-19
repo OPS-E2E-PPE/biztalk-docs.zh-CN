@@ -1,14 +1,14 @@
 ---
-title: "要创建 SQL 应用程序使用的 SQL 适配器系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 要创建 SQL 应用程序使用的 SQL 适配器系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb3a8963-88a8-4db0-a740-eb54b041931c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224509"
 ---
 # <a name="prerequisites-to-create-sql-applications-using-the-sql-adapter"></a>创建 SQL 应用程序使用的 SQL 适配器的先决条件
 在开发使用的 BizTalk 应用程序之前必须执行什么[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]。 此主题还列出一些用于开发 BizTalk 应用程序的 BizTalk Server 工具。  

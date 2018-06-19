@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217069"
 ---
 # <a name="invoke-functions-and-procedures-in-oracle-database-using-biztalk-server"></a>调用函数和 Oracle 数据库使用 BizTalk Server 中的过程
 适配器客户端可以通过调用函数和 Oracle 数据库中的过程[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]呈现过程、 函数和包作为操作。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]此外允许适配器客户端调用：  

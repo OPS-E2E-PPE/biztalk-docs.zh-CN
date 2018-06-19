@@ -1,18 +1,18 @@
 ---
-title: "私有过程教程 |Microsoft 文档"
-ms.custom: 
+title: 私有过程教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, tutorial
 - private process tutorial
 - tutorials, private process tutorial
 ms.assetid: 58affc48-af73-406e-895f-696bc284d945
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209917"
 ---
 # <a name="private-process-tutorial"></a>私有过程教程
 本教程包含使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 的完整端对端解决方案。 本教程详述了通过在两个虚构的公司：Contoso（供应商组织）和 Fabrikam（买方组织）之间创建贸易方案来实现 RosettaNet 兼容解决方案时，应该遵循的步骤。  

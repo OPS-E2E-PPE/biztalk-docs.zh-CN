@@ -1,11 +1,11 @@
 ---
-title: "脚本使用内联 C#、 JScript.NET 和 Visual Basic.NET |Microsoft 文档"
-ms.custom: 
+title: 脚本使用内联 C#、 JScript.NET 和 Visual Basic.NET |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Scripting functoids, JScript
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Scripting functoids, inline C#
 - Scripting functoids, .NET
 ms.assetid: dda60024-58bd-483f-a750-31b21059eded
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974539"
 ---
 # <a name="scripting-using-inline-c-jscript-net-and-visual-basic-net"></a>使用内联 C#、JScript .NET 和 Visual Basic .NET 编写脚本
 对于在应用程序中其他地方不太可能使用的自定义代码，使用内联脚本非常方便。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 在 BizTalk Server 管理控制台中使用的 SQL 适配器配置业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 在 BizTalk Server 管理控制台中使用的 SQL 适配器配置业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6152560-5ff0-4bdc-818c-e906b9642f52
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223789"
 ---
 # <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-using-the-sql-adapter"></a>步骤 2： 在 BizTalk Server 管理控制台中使用的 SQL 适配器配置业务流程
 ![步骤 2 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，你将要执行以下任务：  
+ **目标：** 在此步骤中，你将要执行以下任务：  
   
 -   创建 WCF 自定义发送接收要发送和接收来自 SQL Server 数据库使用的消息端口[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 配置此端口，以使用你在上一步中创建的映射。  
   

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 488b13fa-7a71-4430-bbf5-dbf47ba55562
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223029"
 ---
 # <a name="step-4-test-the-application"></a>步骤 4： 测试应用程序
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**的方法是插入中的记录在此步骤中，测试应用程序**员工**表**ADAPTER_SAMPLES**数据库。 如果应用程序都运行正常，业务流程会接收的更改的通知**员工**表。 然后，业务流程中提取收到的通知的类型。 如果通知为插入操作，业务流程执行**UPDATE_EMPLOYEE**存储过程并接收响应。 业务流程提取的值**Employee_ID**和**名称**响应并将其到插入**Purchase_Order**表。  
+ **目标：** 的方法是插入中的记录在此步骤中，测试应用程序**员工**表**ADAPTER_SAMPLES**数据库。 如果应用程序都运行正常，业务流程会接收的更改的通知**员工**表。 然后，业务流程中提取收到的通知的类型。 如果通知为插入操作，业务流程执行**UPDATE_EMPLOYEE**存储过程并接收响应。 业务流程提取的值**Employee_ID**和**名称**响应并将其到插入**Purchase_Order**表。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始之前与此步骤，你必须确保以下方面：  

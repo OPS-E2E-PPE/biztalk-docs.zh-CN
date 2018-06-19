@@ -1,17 +1,17 @@
 ---
-title: "步骤 3： 测试迁移的 Application5 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试迁移的 Application5 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, testing the migrated application (Receive IDOC)
 - migration
 ms.assetid: 3ad15069-1556-4c0a-8bfd-86704d40c586
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217245"
 ---
 # <a name="step-3-test-the-migrated-application"></a>步骤 3： 测试已迁移的应用程序
 ![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，你将测试已迁移的应用程序接收使用基于 WCF 的平面文件 IDOC [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
+ **目标：** 在此步骤中，你将测试已迁移的应用程序接收使用基于 WCF 的平面文件 IDOC [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
 ## <a name="prerequisites"></a>先决条件  
   

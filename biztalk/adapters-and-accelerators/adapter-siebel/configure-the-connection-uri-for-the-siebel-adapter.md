@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224325"
 ---
 # <a name="configure-the-connection-uri-for-the-siebel-adapter"></a>配置 Siebel 适配器的连接 URI
 连接 URI 是用于连接到 Siebel 系统的连接字符串。 连接 URI 包含与 Siebel 系统建立连接所需的各种参数。 必须指定此连接同时在设计时和运行的时的 URI。 在设计时，必须指定要连接到 Siebel 系统生成的元数据的 URI。 在运行时，必须指定要连接到 Siebel 系统以执行操作的 URI。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**WCF 自定义传输属性**对话框中，单击**常规**选项卡。  
   
-5.  在**地址 (URI)**文本框中，指定连接 URI 以连接到 Siebel 系统。 有关连接 URI 的详细信息为[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，请参阅[创建 Siebel 系统连接 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)。  
+5.  在**地址 (URI)** 文本框中，指定连接 URI 以连接到 Siebel 系统。 有关连接 URI 的详细信息为[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，请参阅[创建 Siebel 系统连接 URI](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)。  
   
 6.  在**WCF 自定义传输属性**对话框中，单击**绑定**选项卡。从**绑定类型**下拉列表中，选择**siebelBinding**。  
   

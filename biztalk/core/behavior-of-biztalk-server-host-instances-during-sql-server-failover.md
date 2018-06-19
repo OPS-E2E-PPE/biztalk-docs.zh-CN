@@ -1,14 +1,14 @@
 ---
-title: "在 SQL Server 故障转移期间的 BizTalk Server 主机实例行为 |Microsoft 文档"
-ms.custom: 
+title: 在 SQL Server 故障转移期间的 BizTalk Server 主机实例行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5642417-d27f-4539-a369-5fa11bec4a4f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231245"
 ---
 # <a name="behavior-of-biztalk-server-host-instances-during-sql-server-failover"></a>BizTalk Server 主机实例在 SQL Server 故障转移过程中的操作
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]位于 Microsoft 的群集实例上的数据库[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]暂时不可用如果的群集的实例[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]遇到故障转移。 本节介绍与关联的主机实例的行为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库不可用。  

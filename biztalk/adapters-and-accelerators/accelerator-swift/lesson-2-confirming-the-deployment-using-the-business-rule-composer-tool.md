@@ -1,11 +1,11 @@
 ---
-title: "第 2 课： 确认部署使用业务规则 Composer 工具 |Microsoft 文档"
-ms.custom: 
+title: 第 2 课： 确认部署使用业务规则 Composer 工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business rules, verifying
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - business rules, Business Rule Composer tool
 - Business Rule Composer tool
 ms.assetid: 337dc469-cf9e-406b-90ae-0f580b17d7c9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210237"
 ---
 # <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>第 2 课： 确认使用业务规则 Composer 工具部署
 在本课程中，你可以确认业务规则编辑器工具创建你的词汇和部署你的策略。 词汇是在规则组合中使用的词汇元素的集合。 策略是版本控制的业务规则集合。  

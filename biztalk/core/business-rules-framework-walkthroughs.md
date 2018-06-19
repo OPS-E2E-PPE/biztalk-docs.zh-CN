@@ -1,14 +1,14 @@
 ---
-title: "业务规则 Framework 演练 |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Framework 演练 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55dfb642-c2fc-40f7-a343-41712e812041
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231349"
 ---
 # <a name="business-rules-framework-walkthroughs"></a>业务规则 Framework 演练
 本部分包含有关使用业务规则框架下面的演练。  

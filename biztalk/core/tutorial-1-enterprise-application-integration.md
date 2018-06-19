@@ -1,18 +1,18 @@
 ---
-title: "教程 1： 企业应用程序集成 |Microsoft 文档"
-ms.custom: 
+title: 教程 1： 企业应用程序集成 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - enterprise application integration tutorial
 - getting started tutorials, integrating enterprise applications
 - enterprise application integration tutorial, about the tutorial
 ms.assetid: aca5fc97-0fd6-4964-9cf1-482aa4f444b8
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287509"
 ---
 # <a name="tutorial-1-enterprise-application-integration"></a>教程 1：企业应用程序集成
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为应用程序集成和业务流程管理 (BPM) 提供了开发和运行时环境。 本教程为使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 设置和部署企业应用程序集成 (EAI) 解决方案提供了一个端到端的练习。  

@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 中的 SWIFT 错误代码 |Microsoft 文档"
-description: "SWIFT 快捷键 BizTalk Server 中查看的类和验证类型"
-ms.custom: 
+title: BizTalk Server 中的 SWIFT 错误代码 |Microsoft 文档
+description: SWIFT 快捷键 BizTalk Server 中查看的类和验证类型
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03699986-965b-4a28-ab2e-09f110fb4db6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215021"
 ---
 # <a name="swift-error-codes"></a>SWIFT 错误代码
 SWIFT 定义许多网络施加验证针对的一组财务 (FIN) 消息。 每个验证与一种针对消息，内容检查，并且与三个字符错误代码相关联。 错误代码的第一个字符表示检测到，此问题的类和是一个字母。 剩余的两个字符表示的错误 （与类结合使用） 时的详细信息，并始终显示为两位数字代码。  

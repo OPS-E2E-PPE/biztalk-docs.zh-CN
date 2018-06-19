@@ -1,14 +1,14 @@
 ---
-title: "创建使用路线设计器的路线 |Microsoft 文档"
-ms.custom: 
+title: 创建使用路线设计器的路线 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 78f577b5-3014-45a9-8534-42d45ff78e6e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22293933"
 ---
 # <a name="creating-itineraries-using-itinerary-designer"></a>创建使用路线设计器的路线
 你可以使用[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线设计器创建 ESB 中介策略，名为路线，在运行时为路线基于路由的使用。 该工具提供了多个形状或与对应的不同设计的日程表时可能会执行的操作的模型元素。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d31fc6c1-e4b5-4529-ba3e-2a8cfb8ece1c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226981"
 ---
 # <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>步骤 4： 为 Echo 适配器实现元数据浏览的处理程序
 ![9 的第 4 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
@@ -55,7 +56,7 @@ public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable
   
 |**参数**|**定义**|  
 |-------------------|--------------------|  
-|nodeId|层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) 具有 nodeId。 每个节点 ID 必须唯一，并且可以是一个类别或运算。 类别具有子类别。 **注意：**如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。|  
+|nodeId|层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) 具有 nodeId。 每个节点 ID 必须唯一，并且可以是一个类别或运算。 类别具有子类别。 **注意：** 如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。|  
 |childStartIndex|若要返回的第一个子级的索引。<br /><br /> 不支持 Echo 适配器。|  
 |maxChildNodes|要返回的结果节点最大数量。 使用 Int32.Max 检索结果的所有节点。<br /><br /> 不支持 Echo 适配器。|  
 |timeout|允许此操作完成的最大时间。<br /><br /> 不支持 Echo 适配器。|  
@@ -113,13 +114,13 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
- 浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）**选项。 请参阅中的这些操作**可用类别和操作**列表框中，如下所示：  
+ 浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 选项。 请参阅中的这些操作**可用类别和操作**列表框中，如下所示：  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
   
  在上图中，注意`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`值出现在**名称**列**可用类别和操作**列表框。 参数传递到`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`构造函数将出现在**节点 ID**列**可用类别和操作**列表框中，与`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`值会显示为工具提示包含说明中，右键单击时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`。  
   
- 若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）**选项。 请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：  
+ 若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）** 选项。 请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
   

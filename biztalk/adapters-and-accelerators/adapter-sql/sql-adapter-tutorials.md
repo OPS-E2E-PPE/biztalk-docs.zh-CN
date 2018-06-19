@@ -1,14 +1,14 @@
 ---
-title: "SQL 适配器教程 |Microsoft 文档"
-ms.custom: 
+title: SQL 适配器教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ecebca37-b26a-49d5-ae19-2936c8010d50
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222477"
 ---
 # <a name="sql-adapter-tutorials"></a>SQL 适配器教程
 中的第一个[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]教程包含有关如何迁移使用创建以前版本的 SQL 适配器以使用基于 WCF 的 BizTalk 项目的详细的说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 其他[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]包含执行 SQL Server 使用的操作的基于方案的分步说明[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  

@@ -1,11 +1,11 @@
 ---
-title: "方案： 分发在多台计算机之间的项目 |Microsoft 文档"
-ms.custom: 
+title: 方案： 分发在多台计算机之间的项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [artifacts], multiple computers
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - deploying [artifacts], examples
 - examples, deploying
 ms.assetid: 7000cded-1fda-4276-b7f3-3f427f686f64
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269157"
 ---
 # <a name="scenario-distributing-artifacts-among-multiple-computers"></a>方案： 分发在多台计算机之间的项目
 本主题将说明应用程序中的项目有选择地安装在不同计算机上时采用的应用程序部署方案。 如果您希望应用程序中的某些程序集或其他类型的项目只安装在 BizTalk 组中特定的计算机上，就会需要这种部署方案。 为此，您可以根据要在某个物理计算机上一起安装哪些项目，将应用程序中包括的项目导出到多个 .msi 文件。  

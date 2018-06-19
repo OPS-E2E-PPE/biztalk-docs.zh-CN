@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222349"
 ---
 # <a name="what-operations-are-supported-by-the-siebel-adapter"></a>Siebel 适配器支持何种操作
 适配器客户端可以通过以下任一方法来执行 Siebel 系统上的操作：  

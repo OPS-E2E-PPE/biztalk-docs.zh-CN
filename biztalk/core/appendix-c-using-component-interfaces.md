@@ -1,18 +1,18 @@
 ---
-title: "附录 c： 使用组件接口 |Microsoft 文档"
-ms.custom: 
+title: 附录 c： 使用组件接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Enterprise Integration Points
 - EIP
 - component interfaces
 ms.assetid: 2e3bc5ef-24ea-4e09-8e95-31feefaf5536
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230261"
 ---
 # <a name="appendix-c-using-component-interfaces"></a>附录 c： 使用组件接口
 本部分中的主题介绍如何创建新的组件接口以及如何修改现有组件接口，以便与用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器一起使用。 这些主题还介绍了如何对这些组件接口应用安全设置以及如何测试它们。  

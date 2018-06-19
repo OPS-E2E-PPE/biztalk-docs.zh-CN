@@ -1,14 +1,14 @@
 ---
-title: "浏览、 搜索和获取 Oracle E-business Suite 元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和获取 Oracle E-business Suite 元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b516c6e9-dbb3-4977-bb27-aa039e021912
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218293"
 ---
 # <a name="browse-search-and-get-oracle-e-business-suite-metadata"></a>浏览、 搜索和获取 Oracle E-business Suite 元数据
 元数据，[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]从 Oracle E-business Suite 和基础的 Oracle 数据库的图面描述用于与 Oracle E-business Suite 使用适配器进行通信的消息结构。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]为检索元数据支持两个接口。  
@@ -81,8 +82,8 @@ SELECT TABLE_NAME FROM ALL_TABLES WHERE TABLE_NAME LIKE 'EMP%' AND OWNER = 'SCOT
 > [!IMPORTANT]
 >  -   区分大小写的搜索字符串。  
 > -   搜索不同的视图 （基于应用程序的视图，基于项目的视图和基于架构的视图） 下工作方式。 若要了解可以如何搜索项目和每个视图下的操作，查看"搜索下不同的视图"中[用于 Oracle E-business Suite 操作的搜索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)。  
-> -   若要搜索应用程序可以指定友好名称或应用程序的短名称。 例如，若要搜索**应收帐款**应用程序可以为指定的搜索字符串**接收 %**或**AR**。 AR 是应用程序短名称。  
-> -   若要搜索的并发程序可以指定友好名称或并发程序的实际名称。 例如，若要搜索**客户接口**可以为指定的搜索字符串的并发程序**%客户接口 %**或**%RACUST%**。 RACUST 是程序的并发的实际名称。 此外，搜索结果将始终包含标准的并发程序而不考虑其名称是否与指定的搜索字符串相匹配。  
+> -   若要搜索应用程序可以指定友好名称或应用程序的短名称。 例如，若要搜索**应收帐款**应用程序可以为指定的搜索字符串**接收 %** 或**AR**。 AR 是应用程序短名称。  
+> -   若要搜索的并发程序可以指定友好名称或并发程序的实际名称。 例如，若要搜索**客户接口**可以为指定的搜索字符串的并发程序 **%客户接口 %** 或 **%RACUST%**。 RACUST 是程序的并发的实际名称。 此外，搜索结果将始终包含标准的并发程序而不考虑其名称是否与指定的搜索字符串相匹配。  
   
 ## <a name="retrieving-metadata"></a>检索元数据  
  检索元数据时,[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]数据库的子集的对象使用相应的对象和操作参数或可以提取在架构包括所有的元数据。 XML 中用作元素名称还原时，该适配器显示从 Oracle E-business Suite 和基础的 Oracle 数据库的实体。 由于下划线是可以包含的仅允许特殊字符，元素名称中的所有其他特殊字符进行编码使用下划线。 例如，`emp$name`被编码为`emp_x0024_name`。 有关详细信息，请参阅[获取元数据使用的 SQL 适配器的 Visual Studio 中的 SQL Server 操作](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)。  

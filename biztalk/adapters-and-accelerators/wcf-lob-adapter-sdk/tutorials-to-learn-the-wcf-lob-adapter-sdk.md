@@ -1,14 +1,14 @@
 ---
-title: "教程以了解 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 教程以了解 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99002b01-da8a-483e-ada3-1ffbe9cd7357
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226117"
 ---
 # <a name="tutorials-to-learn-the-wcf-lob-adapter-sdk"></a>若要了解 WCF LOB 适配器 SDK 的教程
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]教程包含有关如何使用信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]开发功能丰富线业务适配器以便于您的企业中企业应用程序集成。 通过使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，可由任何应用程序可以使用 WCF 绑定使用的操作和你公开的数据包括[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  

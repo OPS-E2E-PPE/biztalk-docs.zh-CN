@@ -1,14 +1,14 @@
 ---
-title: "PrivateResponder 示例 |Microsoft 文档"
-ms.custom: 
+title: PrivateResponder 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3137fadd-9582-4cc6-acfb-c44aca636950
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206941"
 ---
 # <a name="privateresponder-sample"></a>PrivateResponder 示例
 PrivateInitiator.odx 示例包含 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 安装的响应方专用流程的代码。 此通用专用流程从基于默认 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。  

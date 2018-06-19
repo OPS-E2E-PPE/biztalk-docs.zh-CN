@@ -1,15 +1,15 @@
 ---
-title: "配置端口在 BizTalk 中使用 WCF OracleEBS 适配器 |Microsoft 文档"
-description: "使用 WCF OracleEBS 适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息"
-ms.custom: 
+title: 配置端口在 BizTalk 中使用 WCF OracleEBS 适配器 |Microsoft 文档
+description: 使用 WCF OracleEBS 适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b4c5c10-79a6-48d3-b4ee-dddf837f020b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218397"
 ---
 # <a name="configure-a-port-using-the-wcf-oracleebs-adapter"></a>配置使用 WCF OracleEBS 适配器的端口
 如何配置 WCF OracleEBS 发送和接收端口上 Oracle E-business Suite 使用执行出站和入站操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  

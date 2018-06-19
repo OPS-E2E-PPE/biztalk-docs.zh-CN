@@ -1,14 +1,14 @@
 ---
-title: "编程单一登录概述 |Microsoft 文档"
-ms.custom: 
+title: 编程单一登录概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2a0a3978-cdbf-4703-9d1d-23e0f4923c9c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264821"
 ---
 # <a name="programming-single-sign-on-overview"></a>编程单一登录概述
 依赖于多个不同应用程序的业务流程可能需要处理多个不同的安全域。 访问 Microsoft Windows 操作系统上的应用程序可能需要一组安全凭据，而访问 IBM 大型机上的应用程序可能需要不同的凭据。 处理如此多的凭据对于用户而言并非易事，而这也给流程自动化带来了更大的挑战。 若要解决此问题，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括企业单一登录 (SSO)。 通过 SSO，可将 Windows 用户 ID 映射到非 Windows 用户凭据。 此服务可以简化使用不同系统中的应用程序的业务流程。  

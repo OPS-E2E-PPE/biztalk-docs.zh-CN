@@ -1,14 +1,14 @@
 ---
-title: "适配器设计时配置 |Microsoft 文档"
-ms.custom: 
+title: 适配器设计时配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f5e7b63c-6e17-4c54-9bbf-6964668a2420
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226165"
 ---
 # <a name="adapter-design-time-configuration"></a>适配器设计时配置
 适配器包含一个运行时组件和一个设计时组件。 运行时组件对于用户是不可见的。 它以透明方式负责进行传输、 回执和处理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息。  

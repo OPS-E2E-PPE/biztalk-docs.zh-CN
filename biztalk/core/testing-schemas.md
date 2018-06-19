@@ -1,14 +1,14 @@
 ---
-title: "测试架构 |Microsoft 文档"
-ms.custom: 
+title: 测试架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2e28b7c-9d0c-4336-8bee-4599d41a57f4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279581"
 ---
 # <a name="testing-schemas"></a>测试架构
 在创建架构之后，您可能希望验证该架构的 XML 结构符合您的要求。 您可以对架构执行以下三种操作以进行验证：  

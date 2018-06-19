@@ -1,17 +1,17 @@
 ---
-title: "重用适配器绑定在 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 重用适配器绑定在 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding file, definition
 - adapter bindings, reusing
 ms.assetid: 1dc17b7a-5397-43f4-b19e-9c50fb0e97ff
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222749"
 ---
 # <a name="reuse-adapter-bindings-in-the-siebel-adapter"></a>重用适配器绑定在 Siebel 适配器中
 绑定可以在逻辑终结点（如业务流程端口或角色链接）与物理终结点（如发送/接收端口或参与方）之间创建映射。 这样即可在 BizTalk 业务解决方案的不同组件之间进行通信。 使用 BizTalk Server 管理控制台可以创建绑定。  

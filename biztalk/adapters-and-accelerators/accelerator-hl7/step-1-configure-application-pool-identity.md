@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 配置应用程序池标识 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 配置应用程序池标识 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, application pools
 - application pools
 ms.assetid: 66286327-8580-4378-89ee-ddd7204b03c6
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206573"
 ---
 # <a name="step-1-configure-application-pool-identity"></a>步骤 1： 配置应用程序池标识
 在本教程中，你使用中的应用程序池[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Internet 信息服务 (IIS) 来处理业务流程，则将发布为 Web 服务。 应用程序池是由工作进程提供服务的一个或多个 Url 的分组。  

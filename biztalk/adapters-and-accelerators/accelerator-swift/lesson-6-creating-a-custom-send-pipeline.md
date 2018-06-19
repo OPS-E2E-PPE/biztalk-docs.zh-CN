@@ -1,17 +1,17 @@
 ---
-title: "第 6 课： 创建自定义发送管道 |Microsoft 文档"
-ms.custom: 
+title: 第 6 课： 创建自定义发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - custom pipelines
 - send pipelines, custom pipelines
 ms.assetid: 73a3a546-1e43-4b93-87d3-9bfb32685a57
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210157"
 ---
 # <a name="lesson-6-creating-a-custom-send-pipeline"></a>第 6 课： 创建自定义发送管道
 在本课程中，你可以创建自定义发送管道使用 BizTalk 管道设计器。 发送管道是你在之前的消息运行的管道[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将消息发送到其目标。  

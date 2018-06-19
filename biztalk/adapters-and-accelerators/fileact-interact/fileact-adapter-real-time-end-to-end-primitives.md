@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器实时端到端基元 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器实时端到端基元 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8591120-7259-49cb-90ac-954d8be226ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224925"
 ---
 # <a name="fileact-adapter-real-time-end-to-end-primitives"></a>FileAct 适配器实时端到端基元
 SWIFTNet 基元是两个应用程序和 SWIFTNet 链接 (SNL) 之间交换的 XML 文档。 为每个端到端基元，这里是两个版本的基元 – 一个在客户端 （或发送） 一侧，在服务器上的另一个 （或接收） 端。 这包含四个消息总数： 将文件基元、 获取文件基元和每个发送传递通知。  

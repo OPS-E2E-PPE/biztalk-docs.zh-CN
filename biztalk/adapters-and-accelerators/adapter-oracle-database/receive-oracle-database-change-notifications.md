@@ -1,14 +1,14 @@
 ---
-title: "接收 Oracle 数据库更改通知 |Microsoft 文档"
-ms.custom: 
+title: 接收 Oracle 数据库更改通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3ffabf27-7223-4473-b33e-af6f2990cb96
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215653"
 ---
 # <a name="receive-oracle-database-change-notifications"></a>接收 Oracle 数据库更改通知
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持 ODP.NET 数据库更改通知功能。 使用此功能，适配器客户端可以将注册的 SELECT 语句为在数据库中，通知查询并数据库以对适配器客户端及其在结果集的 SELECT 语句更改时发送通知。 在使用 OracleDependency 类适配器中实现数据库更改通知。 有关 ODP.NET 和 OracleDependency 类中的数据库更改支持功能的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=124801](http://go.microsoft.com/fwlink/?LinkId=124801)。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
 |通知|轮询|  
 |------------------|-------------|  
 |通知是仅支持 Oracle 数据库版本 10.2 及更高版本。|所有支持的 Oracle 数据库版本支持轮询[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。|  
-|数据更改通知始终是即时的。|你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。 **提示：**轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。 作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。|  
+|数据更改通知始终是即时的。|你可以配置的轮询间隔来检查可用于按固定时间间隔轮询数据或即时的方式，以及何时有可用的数据。 **提示：** 轮询可以为你提供更佳的吞吐量在数据更改发生连续，并且不希望为每项更改的和发生时要通知的情况下。 作为替代，你指定要在其后的发生是因为最后一个更改通知的所有更改的通知轮询间隔。|  
 |Oracle 数据库发出通知。 只需适配器发出的通知语句指示要在该语句结果集中的更改的情况下启动通知的数据库。 通知是 Oracle 数据库的一项功能。|轮询启动的适配器。 适配器执行 SQL 语句以验证是否数据可用于轮询，并随后通过执行轮询语句，如果某些数据可用于轮询开始轮询。|  
 |可以使用通知语句仅具有读取 Oracle 数据库中的数据。|轮询语句可用于读取或更新的 Oracle 数据库中的数据。|  
 |通知会告知仅如 Insert、 数据中的更改类型的更新和删除。|轮询通知你有关已更改的实际数据信息。|  

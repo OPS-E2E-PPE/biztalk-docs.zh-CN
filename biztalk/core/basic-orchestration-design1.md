@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230693"
 ---
 # <a name="basic-orchestration-design"></a>基本业务流程设计
 创建基本业务流程时，将在您的业务流程的接收端口接收 XML。 将 XML 发送到后端系统以供处理。 在后端系统中，可能会出现停止业务流程并生成错误的异常。 生成的异常提供了业务流程未完成的相关信息。  

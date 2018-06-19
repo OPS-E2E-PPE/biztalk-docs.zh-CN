@@ -1,14 +1,14 @@
 ---
-title: "与 SQL 适配器的 WCF 服务模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 SQL 适配器的 WCF 服务模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7641bcc7-3845-4914-9b1b-cb86b998ea6d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222885"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sql-adapter"></a>与 SQL 适配器的 WCF 服务模型概述
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开作为 WCF 服务的 SQL Server 操作。 若要对 SQL Server 项目，例如来调用存储的过程中，执行操作你调用上的适配器，后者，反过来，执行 SQL Server 上的操作的操作。 你的代码因此充当客户端提供的适配器的 WCF 服务。  

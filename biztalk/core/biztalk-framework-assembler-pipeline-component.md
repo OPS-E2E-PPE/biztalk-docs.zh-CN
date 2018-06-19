@@ -1,17 +1,17 @@
 ---
-title: "BizTalk Framework 汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Framework 汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, BizTalk Framework Assembler
 - BizTalk Framework Assembler [pipeline component]
 ms.assetid: 116dff8d-b7f8-4564-a7fb-6440682683dc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231101"
 ---
 # <a name="biztalk-framework-assembler-pipeline-component"></a>BizTalk Framework 汇编程序管道组件
 BizTalk 框架是用于在使用网络传输协议(例如 HTTP 或 SMTP)时保证一次性传送即可送达的一种方法。 此框架自 1998 年起就已存在，并且可被视为基于 Web services（尤其是 WSReliable）的挂起标准计划的先驱。 通常，保证一次性传送即可送达数据的问题已属于诸如消息队列（也称为 MSMQ）之类的技术领域。 不过，此类技术通常需要在数据流的两个终结点具有通用软件，并且不适用于使用基于公共网络的开放传输协议，例如使用 Internet 在企业边界间传输的数据。  

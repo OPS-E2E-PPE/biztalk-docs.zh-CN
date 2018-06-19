@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 配置并启动应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 配置并启动应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4252470-805e-404f-80d5-df8d1ff3af63
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223501"
 ---
 # <a name="step-3-configure-and-start-the-application"></a>步骤 3： 配置并启动应用程序
 ![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，可以配置和启动 SampleApplication 应用程序。 当配置 SampleApplication 应用程序时，你将关联中创建的逻辑项目[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]与其物理对应项。  
+ **目标：** 在此步骤中，可以配置和启动 SampleApplication 应用程序。 当配置 SampleApplication 应用程序时，你将关联中创建的逻辑项目[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]与其物理对应项。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成[步骤 2： 配置的端口](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)。  

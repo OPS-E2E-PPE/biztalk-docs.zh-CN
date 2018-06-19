@@ -1,14 +1,14 @@
 ---
-title: "为 Insert、 Update、 Delete 消息架构，然后选择操作 |Microsoft 文档"
-ms.custom: 
+title: 为 Insert、 Update、 Delete 消息架构，然后选择操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b8de271-67db-4279-8f95-0b4dd92fa3c4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218229"
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations"></a>消息架构为插入、 更新、 删除和选择操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]呈现基本 Insert、 Update、 Delete 和用于 Oracle E-business Suite 中的每个接口表和基础数据库中的每个表选择操作。 适配器还显示 Oracle E-business Suite 中的每个接口视图和基础数据库中的每个视图的选择操作。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]这些操作中使用强类型的记录和记录集。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |---------------|-----------------|-----------------|---------------------------------|  
 |Insert|`<Insert xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <InsertRecord>       <[FIELD1_NAME] InlineValue="value">[value1]</[FIELD1_NAME]>       <[FIELD2_NAME] InlineValue="value">[value2]</[FIELD2_NAME]>       …     </InsertRecord>   </RECORDSET> </Insert>`|值**InlineValue**特性，如果指定，将重写元素的值。|`INSERT INTO TABLE_NAME (FIELD1_NAME, FIELD2_NAME, …) VALUES (value1, value2, …);`|  
 |将响应|`<InsertResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <InsertResult>[rows inserted]</InsertResult> </InsertResponse>`|在中返回插入的行数**InsertResult**元素。|--|  
-|选择|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT 查询执行使用 WHERE 子句筛选器元素中指定的目标表中。 结果集包含的列名称中指定逗号分隔的列表中的列**COLUMN_NAMES**元素。<br /><br /> **重要说明：**这是适用于接口视图和数据库视图的唯一操作。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
+|选择|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT 查询执行使用 WHERE 子句筛选器元素中指定的目标表中。 结果集包含的列名称中指定逗号分隔的列表中的列**COLUMN_NAMES**元素。<br /><br /> **重要说明：** 这是适用于接口视图和数据库视图的唯一操作。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
 |选择响应|`<SelectResponse  xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <SelectResult>     <SelectRecord>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </SelectRecord>   </SelectResult> </SelectResponse>`|由 SELECT 查询生成的结果集。|--|  
 |Update|`<Update xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <[FIELD1_NAME]>value1</[FIELD1_NAME]>     <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …   </RECORDSET>   <FILTER>WHERE_clause</FILTER> </Update>`|行匹配 where 子句中指定**筛选器**元素会更新中指定的值为**记录集**。 仅在指定的列**记录集**元素在每个匹配行中进行更新。|`UPDATE [TABLE_NAME] SET [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, … WHERE WHERE_clause;`|  
 |更新响应|`<UpdateResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <UpdateResult>[rows inserted]</UpdateResult> </UpdateResponse>`|在返回更新的行数**UpdateResult**元素。|--|  

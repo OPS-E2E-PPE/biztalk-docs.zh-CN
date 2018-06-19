@@ -1,15 +1,15 @@
 ---
-title: "Microsoft Windows Communication Foundation 行的业务适配器 SDK 文档 |Microsoft 文档"
-description: "快速链接来安装、 入门、 规划和设计、 开发，和故障排除 WCF LOB 适配器 SDK BizTalk Server 中"
-ms.custom: 
+title: Microsoft Windows Communication Foundation 行的业务适配器 SDK 文档 |Microsoft 文档
+description: 快速链接来安装、 入门、 规划和设计、 开发，和故障排除 WCF LOB 适配器 SDK BizTalk Server 中
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a2b098c-ef41-4cc0-8063-1fd043f1176f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225821"
 ---
 # <a name="microsoft-windows-communication-foundation-line-of-business-adapter-sdk-documentation"></a>Microsoft Windows Communication Foundation 行的业务适配器 SDK 文档
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档包括的资源来帮助你开发、 部署和使用与创建的适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  

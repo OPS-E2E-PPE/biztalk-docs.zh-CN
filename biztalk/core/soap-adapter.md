@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277861"
 ---
 # <a name="soap-adapter"></a>SOAP 适配器
 Microsoft BizTalk Server Web Services 在接收和发送 Web Services 请求时使用 SOAP 适配器。 使用 SOAP 适配器，您可以将业务流程发布为 Web Services 并使用外部 Web Services。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231309"
 ---
 # <a name="components-of-the-bam-portal"></a>BAM 门户的组件
 BAM 门户是一个 ASP.NET 网页，它分为三个功能区域，这些区域对应于该门户的三个页。 这些页面此部分所述： 活动搜索页、 聚合页上，和警报管理器页。 您可以使用这些页来创建活动、搜索和修改现有活动。  

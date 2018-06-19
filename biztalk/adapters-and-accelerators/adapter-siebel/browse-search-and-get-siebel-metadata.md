@@ -16,7 +16,7 @@ helpviewer_keywords:
 - metadata, searching
 - searching, metadata
 ms.assetid: 48fc3bb1-b949-4b8d-ab62-a41cd8c2f0a0
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22222565"
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>浏览、 搜索和获取 Siebel 元数据
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]曲面从 Siebel 系统，用于描述与使用适配器 Siebel 系统进行通信的消息结构的元数据。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]为检索元数据支持两个接口。  

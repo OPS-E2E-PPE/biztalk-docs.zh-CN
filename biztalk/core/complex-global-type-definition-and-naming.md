@@ -1,14 +1,14 @@
 ---
-title: "复杂全局类型定义和命名 |Microsoft 文档"
-ms.custom: 
+title: 复杂全局类型定义和命名 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5a12956-7b77-4be8-b323-38363d04fcbc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231621"
 ---
 # <a name="complex-global-type-definition-and-naming"></a>复杂全局类型定义和命名
 在 BizTalk 编辑器中，定义复杂全局类型的第一步是将第一个出现的复杂类型转换为全局类型后，在使用该全局类型的位置之一进行定义。 现在，以地址示例继续进行说明，在架构中定义发货地址时，定义复杂地址类型。  

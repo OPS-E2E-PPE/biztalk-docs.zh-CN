@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 接收管道 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive pipelines, creating
 - FRR, creating receive pipelines
 - creating, receive pipelines
 ms.assetid: 5884176b-8522-4dd3-8f93-8695858b59ac
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210373"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a>创建 FRR 接收管道
 若要执行 FIN 响应对帐，必须创建包含 SWIFT FRR 解码器和 SWIFT FRR CorrelationSet 冲突解决程序管道组件，除了 SWIFT 反汇编程序接收管道。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  从 BizTalk 管道组件工具箱窗格中，将拖动**SWIFT 反汇编程序**到**拖至此处**下面框**拆卸**暂存管道设计器中的形状。  
   
-6.  与**SWIFT 反汇编程序组件**在管道设计器中，选择在**属性**，验证**BRE 验证**和**XML 验证**属性设置为**True**，和**SWIFT 标头架构**属性设置为**（无）**。  
+6.  与**SWIFT 反汇编程序组件**在管道设计器中，选择在**属性**，验证**BRE 验证**和**XML 验证**属性设置为**True**，和**SWIFT 标头架构**属性设置为 **（无）**。  
   
 7.  在 BizTalk 管道组件工具箱中，拖动**SWIFT FRR MQSeries 解码器**到**拖至此处**下面框**解码器**暂存管道设计器中的形状。  
   

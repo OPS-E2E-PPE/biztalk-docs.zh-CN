@@ -1,14 +1,14 @@
 ---
-title: "保护 SQL 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 保护 SQL 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4b182593-fcca-4ebc-a2fd-7684b84cfb15
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224437"
 ---
 # <a name="secure-your-sql-applications"></a>保护 SQL 应用程序
 ## <a name="overview"></a>概述

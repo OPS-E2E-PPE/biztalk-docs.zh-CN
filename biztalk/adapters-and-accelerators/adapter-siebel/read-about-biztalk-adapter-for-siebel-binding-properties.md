@@ -1,18 +1,18 @@
 ---
-title: "阅读有关 BizTalk 适配器用于 Siebel 绑定属性 |Microsoft 文档"
-ms.custom: 
+title: 阅读有关 BizTalk 适配器用于 Siebel 绑定属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - binding properties, setting
 - binding properties, adapter
 - how to, set binding properties
 ms.assetid: 48c77a2d-091c-40e0-aaf3-dc2ec34c55f2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224037"
 ---
 # <a name="read-about-biztalk-adapter-for-siebel-binding-properties"></a>阅读有关 BizTalk 适配器用于 Siebel 绑定属性
 [!INCLUDE[adaptersiebel_md](../../includes/adaptersiebel-md.md)]面，使您可以控制某些其运行时和设计时行为的多个绑定属性。 本节描述了这些绑定属性，并提供一些链接，这些主题介绍如何设置它们。  

@@ -1,14 +1,14 @@
 ---
-title: "从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置 |Microsoft 文档"
-ms.custom: 
+title: 从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afbe98e-8901-417c-a807-8db97fd7a24b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223421"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a>从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置
 在同一数据库中假设你有多个接收位置不同的 BizTalk 应用程序配置为接收同一个表 （例如员工） 的查询通知的一部分创建的其中一个方案。 如果上百个记录插入到同一个表中，所有接收位置将都收到通知消息。 若要有效地接收通知跨多个接收位置、 可以从 BizTalk 应用程序如果逐个收到通知接收位置的此类的方式调用操作、 其他接收位置不会获取相同的通知。 这样，你可以有效地在多个位置上收到的负载平衡通知。  
@@ -50,7 +51,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
     |绑定属性|值|  
     |----------------------|-----------|  
     |**InboundOperationType**|将其设置为**通知**。|  
-    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：**对于通知语句，你必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。|  
+    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 对于通知语句，你必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。|  
     |**NotifyOnListenerStart**|将其设置为**True**。|  
   
 6.  启动 BizTalk 应用程序。  

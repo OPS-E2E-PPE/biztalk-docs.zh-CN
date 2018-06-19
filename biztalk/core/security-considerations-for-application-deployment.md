@@ -1,18 +1,18 @@
 ---
-title: "应用程序部署的安全注意事项 |Microsoft 文档"
-ms.custom: 
+title: 应用程序部署的安全注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], security
 - security, deploying [applications]
 - applications, security
 ms.assetid: 4193e24e-c4d2-4e7f-ae31-6e5f3d18f3cb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269269"
 ---
 # <a name="security-considerations-for-application-deployment"></a>应用程序部署的安全注意事项
 本部分提供 BizTalk 应用程序部署的安全信息。  

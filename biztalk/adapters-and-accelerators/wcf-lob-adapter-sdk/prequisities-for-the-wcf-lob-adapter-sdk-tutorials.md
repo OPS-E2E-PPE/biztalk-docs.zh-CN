@@ -1,14 +1,14 @@
 ---
-title: "有关 WCF LOB 适配器 SDK 教程 Prequisities |Microsoft 文档"
-ms.custom: 
+title: 有关 WCF LOB 适配器 SDK 教程 Prequisities |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7d47ac1-1605-4c6d-a331-8583771dca28
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224077"
 ---
 # <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>有关 WCF LOB 适配器 SDK 教程 Prequisities
 本部分提供有关你应该熟悉以充分利用教程，以及完成它们所需的软件的概念的详细信息。  

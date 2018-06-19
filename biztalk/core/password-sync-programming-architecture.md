@@ -1,14 +1,14 @@
 ---
-title: "密码同步编程体系结构 |Microsoft 文档"
-ms.custom: 
+title: 密码同步编程体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 679edbf1-fb08-4472-b366-3e1d361b20e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264669"
 ---
 # <a name="password-sync-programming-architecture"></a>密码同步编程体系结构
 密码同步适配器用于请求模型与企业单一登录系统的其余部分进行交互： 也就是说，该适配器主动接收密码更改从企业单一登录 (ENTSSO) 服务以及非 Windows 系统中。 同样，适配器会将从一个系统收到的密码更改推送至另一个系统。 与此模型中，你的适配器与三个体系结构组件进行交互： ENTSSO 体系结构、 密码同步 (PS) 帮助程序组件和指定的非 Windows 系统。  

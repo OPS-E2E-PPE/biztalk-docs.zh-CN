@@ -1,14 +1,14 @@
 ---
-title: "要创建的 SAP 应用程序系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 要创建的 SAP 应用程序系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51ae9569-4081-4142-9ee2-8ae0069e9d90
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216397"
 ---
 # <a name="prerequisites-to-create-sap-applications"></a>若要创建的 SAP 应用程序的先决条件
 本部分提供有关开发 BizTalk 应用程序使用之前必须执行的任务的信息[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 部分还列出了一些用于开发 BizTalk 应用程序的 BizTalk Server 工具。  

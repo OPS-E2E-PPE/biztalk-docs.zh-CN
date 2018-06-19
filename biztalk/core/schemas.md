@@ -1,11 +1,11 @@
 ---
-title: "架构 |Microsoft 文档"
-ms.custom: 
+title: 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, schema types
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - XML schemas
 - flat file schemas
 ms.assetid: aea772bd-e7ab-448e-ba82-e7c8f38087db
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270085"
 ---
 # <a name="schemas"></a>架构
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 XML 架构定义 (XSD) 语言定义的所有消息处理，并作为消息结构的这些定义是指结构*架构*。 除少数情况外，结构化消息是所有应用程序的核心。 这些结构化消息可以采用任何形式（大型或小型），并面向一系列众多的后端系统和数据存储。 创建和使用结构化消息的系统通常使用不同的格式。 结构化消息的两种最常用的格式为 XML 和平面文件。  

@@ -1,15 +1,15 @@
 ---
-title: "开发在 BizTalk Server 应用程序 Siebel |Microsoft 文档"
-description: "创建 Siebel 应用程序使用 WCF，或在 BizTalk Server 中使用 BizTalk 适配器包 (BAP)"
-ms.custom: 
+title: 开发在 BizTalk Server 应用程序 Siebel |Microsoft 文档
+description: 创建 Siebel 应用程序使用 WCF，或在 BizTalk Server 中使用 BizTalk 适配器包 (BAP)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bc04906-6d64-433c-b357-797ec5883279
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222597"
 ---
 # <a name="develop-your-siebel-applications"></a>开发 Siebel 应用程序
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 |任务|BizTalk Server|WCF 服务模型|WCF 通道模型|ADO.NET 接口|  
 |----------|--------------------|-----------------------|-----------------------|-----------------------|  
-|在业务组件的基本插入、 更新、 删除和查询操作|[在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作](run-operations-on-business-components-using-the-siebel-adapter-in-biztalk.md)|[使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作](run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)|[使用 Siebel 适配器使用 WCF 通道模型运行业务组件上的操作](run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)|[在带有 Siebel 业务组件上运行 SELECT 查询](run-a-select-query-on-business-components-with-siebel.md)**注意：**只能执行选择操作使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]。|  
+|在业务组件的基本插入、 更新、 删除和查询操作|[在业务组件使用 BizTalk Server 和 Siebel 适配器上运行操作](run-operations-on-business-components-using-the-siebel-adapter-in-biztalk.md)|[使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作](run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)|[使用 Siebel 适配器使用 WCF 通道模型运行业务组件上的操作](run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)|[在带有 Siebel 业务组件上运行 SELECT 查询](run-a-select-query-on-business-components-with-siebel.md)**注意：** 只能执行选择操作使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]。|  
 |对具有 MVG 字段的业务组件的操作|[使用 MVG 字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作](run-operations-on-business-components-with-mvg-fields-using-the-siebel-adapter.md)|[在上运行操作的业务组件与 MVG 字段与使用 WCF 服务模型和 Siebel 适配器](work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)|||  
 |对与选择列表字段的业务组件的操作|[使用选择列表字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作](run-tasks-on-business-components-with-picklist-fields-using-the-siebel-adapter.md)||||  
 |调用业务服务|[调用业务服务方法使用 BizTalk Server 和 Siebel 适配器](invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter.md)|||[使用 Siebel 运行业务服务上的执行操作](run-an-execute-operation-on-business-services-with-siebel.md)|  

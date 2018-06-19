@@ -1,11 +1,11 @@
 ---
-title: "可重复字段段 |Microsoft 文档"
-ms.custom: 
+title: 可重复字段段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - segments, repeatable fields
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Segments table
 - RDT
 ms.assetid: 4c31cb56-21e5-4918-aaf6-67e8ceddd74f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206325"
 ---
 # <a name="repeatable-field-segments"></a>可重复字段段
 段表 HL7 访问数据库中的包含的列段 （ADD、 RDT 和 QPD） 的最后一个字段， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 定义为可重复 (**Last_field_repeatable**  = **True**)。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]不支持添加。 但是，RDT 和 QPD 查询的表存在，并且使用表值进行响应。 下面的示例演示如何[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]处理这些列。  

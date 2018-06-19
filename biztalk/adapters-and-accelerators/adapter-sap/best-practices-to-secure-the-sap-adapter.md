@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - security, best practices
 ms.assetid: e60014b5-ce2f-4fd4-be2a-921d5cd81267
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22217877"
 ---
 # <a name="best-practices-to-secure-the-sap-adapter"></a>最佳做法来保护 SAP 适配器
 本部分提供了你应遵循的更完整地保护敏感数据，当你使用或开发的应用程序使用的最佳做法[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

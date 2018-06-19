@@ -1,14 +1,14 @@
 ---
-title: "多个视图的 MX InfoPath 窗体 |Microsoft 文档"
-ms.custom: 
+title: 多个视图的 MX InfoPath 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08b4cf10-ebad-4dde-a1d8-1a8d15ded51c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213981"
 ---
 # <a name="multiple-views-of-mx-infopath-forms"></a>多个视图的 MX InfoPath 窗体
 MX InfoPath 表单模板可能划分为单独的视图。 如果在架构中的字段的总数量很大，则将同一模板的不同视图否则将有仅模板的单一视图。虽然可以从视图菜单浏览执行消息修复消息修复和新建提交工作流中，消息的不同视图。  

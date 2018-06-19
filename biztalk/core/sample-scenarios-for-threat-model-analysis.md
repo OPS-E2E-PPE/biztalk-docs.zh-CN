@@ -1,11 +1,11 @@
 ---
-title: "示例方案的威胁模型分析 |Microsoft 文档"
-ms.custom: 
+title: 示例方案的威胁模型分析 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - TMA, security
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - TMA, examples
 - examples, TMA
 ms.assetid: e35d1d7f-a71a-42f5-b1f4-fe3234ba7686
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269109"
 ---
 # <a name="sample-scenarios-for-threat-model-analysis"></a>威胁模型分析的示例方案
 本部分提供的步骤和结果的威胁模型分析 (TMA) 示例体系结构中标识每种使用方案[适用于小型和 Medium-Sized 公司的示例体系结构](../core/sample-architectures-for-small-medium-sized-companies.md)。 本部分的用途是为您显示 TMA 的步骤。 这有助于您了解 TMA 的工作方式，并为您介绍对示例结构标识的潜在威胁分类以及建议您减少这些威胁的影响的方式。  

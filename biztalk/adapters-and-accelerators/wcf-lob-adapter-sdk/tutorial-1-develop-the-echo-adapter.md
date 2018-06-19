@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: ''
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22226653"
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a>教程 1： 开发 Echo 适配器
 在本教程中，你将开发功能的适配器使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 适配器模拟虚构的业务线系统，用于说明的许多 WCF LOB 适配器 SDK 包括关键功能的操作：  

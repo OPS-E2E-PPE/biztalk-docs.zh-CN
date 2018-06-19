@@ -1,11 +1,11 @@
 ---
-title: "用于管理角色的访问控制 |Microsoft 文档"
-ms.custom: 
+title: 用于管理角色的访问控制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - roles, administrative
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - administrative roles
 - access control, administrative roles
 ms.assetid: 328e049b-921d-4057-85f0-7d008ec308bb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225813"
 ---
 # <a name="access-control-for-administrative-roles"></a>用于管理角色的访问控制
 用户打开需要访问数据库或 Windows 资源的任何 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 工具时，使用该工具进行交互的用户必须具有相应的 SQL Server 和 Windows 用户权限，才能执行这些工具所支持的各种任务。  

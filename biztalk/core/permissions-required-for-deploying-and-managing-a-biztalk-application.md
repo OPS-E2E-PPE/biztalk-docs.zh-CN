@@ -1,11 +1,11 @@
 ---
-title: "用于部署和管理 BizTalk 应用程序所需权限 |Microsoft 文档"
-ms.custom: 
+title: 用于部署和管理 BizTalk 应用程序所需权限 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying [applications], security
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - assemblies, security
 - managing, security
 ms.assetid: 4a459ff1-661d-403a-99e0-d54b82e008d0
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -39,6 +39,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265541"
 ---
 # <a name="permissions-required-for-deploying-and-managing-a-biztalk-application"></a>用于部署和管理 BizTalk 应用程序所需权限
 应用程序部署包括部署 BizTalk 从 Visual Studio 的程序集，以及导入、 导出和安装 BizTalk 应用程序。 你需要执行这些任务的基本权限如下所示：  

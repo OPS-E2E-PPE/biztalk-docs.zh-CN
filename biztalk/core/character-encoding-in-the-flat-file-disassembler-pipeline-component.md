@@ -1,11 +1,11 @@
 ---
-title: "平面文件反汇编程序管道组件中的字符编码 |Microsoft 文档"
-ms.custom: 
+title: 平面文件反汇编程序管道组件中的字符编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IBaseMessagePart.Charset property
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipeline components, Flat File Disassembler
 - Flat File Disassembler [pipeline component], character encoding
 ms.assetid: 0dbe24fb-c431-4edf-8aa9-4c040d6a7b32
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231637"
 ---
 # <a name="character-encoding-in-the-flat-file-disassembler-pipeline-component"></a>平面文件反汇编程序管道组件中的字符编码
 平面文件拆装器组件使用以下算法来确定哪些编码要用于处理传入消息：  

@@ -1,15 +1,15 @@
 ---
-title: "为 mySAP 适配器 BizTalk 中的术语表 |Microsoft 文档"
-description: "常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器"
-ms.custom: 
+title: 为 mySAP 适配器 BizTalk 中的术语表 |Microsoft 文档
+description: 常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87db79be-e242-40fa-9897-8915e6fb5cae
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218829"
 ---
 # <a name="glossary"></a>词汇表
 中使用以下术语和定义[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

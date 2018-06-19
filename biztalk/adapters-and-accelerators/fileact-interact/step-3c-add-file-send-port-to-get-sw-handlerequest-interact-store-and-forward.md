@@ -1,14 +1,14 @@
 ---
-title: "步骤 3c： 添加文件发送端口，以获取 Sw:HandleRequest-交互存储和转发 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3c： 添加文件发送端口，以获取 Sw:HandleRequest-交互存储和转发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c872b4be-ef8b-4e42-b5ef-63dfd120793f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225573"
 ---
 # <a name="step-3c-add-file-send-port-to-get-swhandlerequest-interact-store-and-forward"></a>步骤 3c： 添加文件发送端口，以获取 Sw:HandleRequest-交互存储和转发
 在开始此步骤之前，必须完成[步骤 3B： 添加交互接收位置的交互，存储和转发方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)。  

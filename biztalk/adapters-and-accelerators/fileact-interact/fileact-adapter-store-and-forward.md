@@ -1,14 +1,14 @@
 ---
-title: "FileAct 适配器存储和转发 |Microsoft 文档"
-ms.custom: 
+title: FileAct 适配器存储和转发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 50110bf0-75c2-426c-9833-65c3117224b2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223565"
 ---
 # <a name="fileact-adapter-store-and-forward"></a>FileAct 适配器存储和转发
 存储区中和进 (SnF) 模式下，将文件发送至队列在发送时，并从由目标队列检索。 中间响应将返回由 SWIFTNet 到发件人，直到该文件安全地传递到目标。  

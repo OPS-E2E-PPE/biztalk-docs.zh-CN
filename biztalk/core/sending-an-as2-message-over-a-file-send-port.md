@@ -1,14 +1,14 @@
 ---
-title: "通过文件发送端口发送 AS2 消息 |Microsoft 文档"
-ms.custom: 
+title: 通过文件发送端口发送 AS2 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c5ce9ff-fd73-4d5f-9b16-387c1e520c3a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22270725"
 ---
 # <a name="sending-an-as2-message-over-a-file-send-port"></a>通过 FILE 发送端口发送 AS2 消息
 AS2 消息通常是通过 HTTP 适配器发送的。 然而，如果创建了自定义组件，则可以通过 FILE 适配器发送 AS2 消息。 本主题介绍了这种解决方案的工作原理并提供了该解决方案的示例代码。  

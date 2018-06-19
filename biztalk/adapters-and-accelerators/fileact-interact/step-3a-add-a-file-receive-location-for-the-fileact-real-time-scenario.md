@@ -1,14 +1,14 @@
 ---
-title: "步骤 3A： 添加一个文件接收位置 FileAct 实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3A： 添加一个文件接收位置 FileAct 实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73b044b4-6611-493f-969c-02b52cb56ba7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223925"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario"></a>步骤 3A： 添加一个文件接收位置 FileAct 实时方案
 在开始此步骤之前，必须完成[步骤 2： 将 SWIFTNet 配置添加到 FileAct 实时方案 Paramfile](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-real-time-scenario.md)。  

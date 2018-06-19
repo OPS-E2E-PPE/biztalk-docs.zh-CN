@@ -1,11 +1,11 @@
 ---
-title: "可恢复的交换处理 |Microsoft 文档"
-ms.custom: 
+title: 可恢复的交换处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - interchange processing [Messaging Engine], modes
@@ -26,7 +26,7 @@ helpviewer_keywords:
 - System.Xml.XmlReader
 - interchange modes [Messaging Engine]
 ms.assetid: d9e366fe-b2a0-4f1a-b6b9-1264717e4731
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -35,6 +35,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268261"
 ---
 # <a name="recoverable-interchange-processing"></a>可恢复的交换处理
 本部分讨论**可恢复的交换处理**功能，允许进行完全处理，即使在每个阶段的阶段以下一个或多个消息交换中的失败的交换：  

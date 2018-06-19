@@ -1,14 +1,14 @@
 ---
-title: "BizTalk FileAct 和交互适配器端到端教程 |Microsoft 文档"
-ms.custom: 
+title: BizTalk FileAct 和交互适配器端到端教程 |Microsoft 文档
+ms.custom: ''
 ms.date: 2015-12-10
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73fbfb10-73e8-4365-a943-bcb9055f4f74
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222957"
 ---
 # <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct 和交互适配器端到端教程
 The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供有关如何使用的特定信息[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]设置实时和存储和转发消息交换方案。  

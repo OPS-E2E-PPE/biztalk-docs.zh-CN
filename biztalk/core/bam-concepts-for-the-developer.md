@@ -1,14 +1,14 @@
 ---
-title: "开发人员的 BAM 概念 |Microsoft 文档"
-ms.custom: 
+title: 开发人员的 BAM 概念 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c26d0aed-821c-4e1f-9cc9-9375a2ba28de
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230805"
 ---
 # <a name="bam-concepts-for-the-developer"></a>适用于开发人员的 BAM 概念
 作为 BAM 开发人员，您需要熟悉重要的 BAM 概念，如活动、继续符和引用， 还应该了解跟踪和事务性处理之间的区别。  

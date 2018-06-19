@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231829"
 ---
 # <a name="components-of-the-tpe"></a>TPE 的组件
 本部分介绍了有关 TPE 用户界面以及它所执行的功能的信息。  

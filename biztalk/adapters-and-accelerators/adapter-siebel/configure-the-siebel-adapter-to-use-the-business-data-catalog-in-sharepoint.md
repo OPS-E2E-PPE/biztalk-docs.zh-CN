@@ -1,14 +1,14 @@
 ---
-title: "配置 Siebel 适配器，以将与业务数据集成 Siebel 系统目录和 SharePoint |Microsoft 文档"
-ms.custom: 
+title: 配置 Siebel 适配器，以将与业务数据集成 Siebel 系统目录和 SharePoint |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 49b575e8-5f33-4e6e-a914-95d357671ab5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221933"
 ---
 # <a name="configure-the-siebel-adapter-to-integrate-the-siebel-system-with-the-business-data-catalog-and-sharepoint"></a>配置 Siebel 适配器，以将与业务数据集成 Siebel 系统目录和 SharePoint
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]包括[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]，这将生成特定 LOB 项目的 WCF 服务。 此 WCF 服务承载在宿主环境如 Microsoft Internet 信息服务 (IIS) 中。 业务数据目录定义编辑器使用的 URL，其中承载该 WCF 服务来获取 Web 服务描述语言 (WSDL) 的 WCF 服务。 使用 WSDL，业务数据目录定义编辑器中提取的 WCF 服务可用的方法。 这些方法可以用于建立实体和实体之间的关联。  

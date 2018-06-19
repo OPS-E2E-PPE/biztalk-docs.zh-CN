@@ -1,17 +1,17 @@
 ---
-title: "为 Siebel 适配器客户端的功能 |Microsoft 文档"
-ms.custom: 
+title: 为 Siebel 适配器客户端的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter features
 - features, of the adapter
 ms.assetid: 11792629-a692-4378-b522-d33484ee8acb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222069"
 ---
 # <a name="features-for-siebel-adapter-clients"></a>Siebel 适配器客户端的的功能
 除了对在的主题中讨论的功能[概述的 BizTalk Adapter for Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]提供以下功能，可用于适配器客户端：  

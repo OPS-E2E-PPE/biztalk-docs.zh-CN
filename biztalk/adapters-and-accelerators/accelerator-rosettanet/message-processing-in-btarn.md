@@ -1,17 +1,17 @@
 ---
-title: "消息处理中 BTARN |Microsoft 文档"
-ms.custom: 
+title: 消息处理中 BTARN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, message processing
 - BTARN, message flow
 ms.assetid: 549c28c0-4cd6-4d98-8b0b-c57f3d8126c0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209621"
 ---
 # <a name="message-processing-in-btarn"></a>消息处理在 BTARN
 本部分介绍如何的主要组件[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]处理消息。 本节中的主题在合适处包含了对通过组件的消息流的说明。  

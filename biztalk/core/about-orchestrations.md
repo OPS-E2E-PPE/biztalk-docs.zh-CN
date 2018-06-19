@@ -1,11 +1,11 @@
 ---
-title: "有关业务流程 |Microsoft 文档"
-ms.custom: 
+title: 有关业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, about orchestrations
 - Orchestration Designer, about Orchestration Designer
 ms.assetid: c0d9a3fb-da87-42cc-9e9e-e2c37232e606
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225133"
 ---
 # <a name="about-orchestrations"></a>有关业务流程
 业务流程是用于基于 XLANG/s 语言表示可执行业务程序的灵活且功能强大的工具。 作为消息传递使用的某些表达式功能的 C# 语言，可以查看 XLANG/s。 您可以在直观的可视化绘图中设计流、解释和生成数据、调用自定义代码以及组织整个流程；并且在运行时，BizTalk 业务流程引擎执行 XLANG/s 文件（作为由 BizTalk 业务流程设计器生成的可执行业务流程）。  

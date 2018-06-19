@@ -1,17 +1,17 @@
 ---
-title: "步骤 2： 配置 WCF 自定义单向接收端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置 WCF 自定义单向接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way receive port, configuring
 - migration
 ms.assetid: e2a8f074-64d5-4e6c-84d0-318fb606c0ba
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218549"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>步骤 2： 配置 WCF 自定义单向接收端口
 ![步骤 2 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，配置要从某个 SAP 系统接收平面文件 IDOC 的 WCF 自定义端口。 配置端口之后, 你可以配置 BizTalk 应用程序以使用 WCF 自定义接收端口。  
+ **目标：** 在此步骤中，配置要从某个 SAP 系统接收平面文件 IDOC 的 WCF 自定义端口。 配置端口之后, 你可以配置 BizTalk 应用程序以使用 WCF 自定义接收端口。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已生成并部署 SAP 系统从接收到的 Idoc 你 vPrev BizTalk 项目。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定连接 URI 从 SAP 系统接收消息。 连接从 SAP 系统接收消息的 URI 必须采用以下格式：  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定连接 URI 从 SAP 系统接收消息。 连接从 SAP 系统接收消息的 URI 必须采用以下格式：  
   
         ```  
         sap://Client=800;lang=EN@A/YourSAPHOST/00?ListenerGwHost=YourSAPHOST&ListenerGwServ=SAPGW00&ListenerProgramId=MyProgramId  

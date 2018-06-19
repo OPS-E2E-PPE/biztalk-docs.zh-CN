@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22230181"
 ---
 # <a name="an-error-occurred-when-decrypting-an-as2-message"></a>解密 AS2 消息时出错
 ## <a name="details"></a>详细信息  

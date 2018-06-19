@@ -1,17 +1,17 @@
 ---
-title: "有关管道、 阶段和组件 |Microsoft 文档"
-ms.custom: 
+title: 有关管道、 阶段和组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Microsoft.BizTalk.Component.Interop namespace
 - pipelines, about pipelines
 ms.assetid: a98e1c93-f264-4577-bd12-4430a5859e3c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225461"
 ---
 # <a name="about-pipelines-stages-and-components"></a>关于管道、阶段和组件
 管道是软件基础结构的一部分，包含一组按预定义顺序处理消息的 .NET 组件或 COM 组件。 管道将处理过程划分为称作阶段的不同工作类别，并确定阶段的执行顺序。 每个阶段将定义逻辑工作组，确定该阶段中可包含的组件，并指定如何运行阶段中的管道组件。  

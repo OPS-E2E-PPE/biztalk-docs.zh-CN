@@ -1,14 +1,14 @@
 ---
-title: "配置到 SAP 服务器的最大连接限制 |Microsoft 文档"
-ms.custom: 
+title: 配置到 SAP 服务器的最大连接限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 858ed90e-b219-43cc-ad63-ae8e1eb2159a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215845"
 ---
 # <a name="configure-the-maximum-connection-limit-to-the-sap-server"></a>配置到 SAP 服务器的最大连接限制
 SAP 数据提供程序允许适配器客户端控制的最大可以在内部打开提供程序的连接数。 可以通过设置环境变量，CPIC_MAX_CONV 对此进行控制。  

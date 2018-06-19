@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269013"
 ---
 # <a name="sample-biztalk-server-architectures"></a>示例 BizTalk Server 体系结构
 为了最大限度地提高 Microsoft® BizTalk® Server 环境的安全性，建议您在使用的结构中根据 BizTalk Server 所包含数据和服务的重要性以及服务器受到攻击的可能性来分布这些服务器。  

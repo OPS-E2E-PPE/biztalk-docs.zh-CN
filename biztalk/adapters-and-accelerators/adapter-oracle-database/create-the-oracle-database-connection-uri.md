@@ -1,11 +1,11 @@
 ---
-title: "创建 Oracle 数据库连接 URI |Microsoft 文档"
-ms.custom: 
+title: 创建 Oracle 数据库连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI, basic format of
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - connection URI, connecting to the Oracle database
 - connection URI
 ms.assetid: 17d0a6d3-1b0c-43d6-a705-402c09a78ee0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217469"
 ---
 # <a name="create-the-oracle-database-connection-uri"></a>创建 Oracle 数据库连接 URI
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]连接 URI 包含适配器用于建立与 Oracle 数据库的连接的属性。 本主题提供有关如何指定要连接到 Oracle 数据库使用 tnsnames.ora 和不使用 tnsnames.ora URI 的连接信息。 它还提供有关使用连接 URI 来连接到 Oracle 数据库的信息。  

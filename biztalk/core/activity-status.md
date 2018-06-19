@@ -1,11 +1,11 @@
 ---
-title: "活动状态设置 |Microsoft 文档"
-ms.custom: 
+title: 活动状态设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], status
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - activities [BAM], viewing status
 - queries [BAM], viewing details
 ms.assetid: 986ea044-576d-4e68-8ade-077165eaf735
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224637"
 ---
 # <a name="activity-status"></a>活动状态
 使用结果详细信息的“活动状态”区域，可以在一页中查看结果项的所有详细信息。  

@@ -1,18 +1,18 @@
 ---
-title: "服务实例状态 |Microsoft 文档"
-ms.custom: 
+title: 服务实例状态 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, states
 - messages, processing
 - states, service instances
 ms.assetid: 38189538-72b3-49df-810b-e134362e35ef
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272565"
 ---
 # <a name="service-instance-states"></a>服务实例状态
 在处理消息时，将会执行以下操作：  
@@ -56,7 +57,7 @@ ms.lasthandoff: 09/20/2017
 |**在职**|正在运行的服务实例。|  
 |**冻结**|实例状态保持在 MessageBox 数据库中，并且没有 Windows 服务运行该实例。|  
 |**已完成，但已放弃的消息**|该服务实例已完成，但某些消息未被该实例使用。|  
-|**已挂起 （恢复）**|实例已挂起，但可恢复该实例。 **重要说明：**恢复消息实例将执行以下操作： <ul><li>恢复消息实例。</li><li>将消息发送到发送端口。</li><li>发送端口将消息传送到目标（即使发送端口未处于“已启动”状态）。</li></ul> <br /><br /> 请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。|  
+|**已挂起 （恢复）**|实例已挂起，但可恢复该实例。 **重要说明：** 恢复消息实例将执行以下操作： <ul><li>恢复消息实例。</li><li>将消息发送到发送端口。</li><li>发送端口将消息传送到目标（即使发送端口未处于“已启动”状态）。</li></ul> <br /><br /> 请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。|  
 |**已挂起 （不恢复）**|实例已挂起，且不可恢复该实例。 可以保存该实例所引用的消息，然后终止该实例。<br /><br /> 请注意，在你挂起某一计划实例然后恢复它时，该实例将进入冻结状态。|  
 |**挂起的挂起 / 挂起的终止**|一种状态，但不是独立的状态。 可以将其与其他状态相结合。<br /><br /> 要挂起或终止的控制消息已发送到服务实例，但该实例尚未提取该控制消息。 一次只允许一个待定操作。 当具有暂停操作的实例被冻结时，可以终止该实例。|  
   

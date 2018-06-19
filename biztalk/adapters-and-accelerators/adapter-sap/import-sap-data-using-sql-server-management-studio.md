@@ -1,17 +1,17 @@
 ---
-title: "导入 SAP 数据使用 SQL Server Management Studio |Microsoft 文档"
-ms.custom: 
+title: 导入 SAP 数据使用 SQL Server Management Studio |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing SAP data, how to
 - SQL Server Management Studio, importing data
 ms.assetid: c8151c6d-4b33-40fe-9b83-9bed27df9a99
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217829"
 ---
 # <a name="import-sap-data-using-sql-server-management-studio"></a>使用 SQL Server Management Studio 导入 SAP 数据
 此部分提供有关如何使用 SQL Server Management Studio 从某个 SAP 系统到 SQL Server 数据库导入数据的信息。 本部分提供有关如何创建 SSIS 包，您可以执行数据导入指令。 本部分还提供有关如何执行 SSIS 包的信息。  

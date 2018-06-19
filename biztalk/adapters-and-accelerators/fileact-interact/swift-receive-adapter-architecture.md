@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 接收适配器体系结构 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 接收适配器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16f32689-0b70-4389-8596-991fd776f185
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224981"
 ---
 # <a name="swift-receive-adapter-architecture"></a>SWIFT 接收适配器体系结构
 在 BizTalk Server 中，在其自己的内存空间中，这意味着创建一个单独的进程运行主机承载了接收适配器。 此主机被生成通过 SWIFTNet 链接 (SNL) 配置中定义的子系统。  

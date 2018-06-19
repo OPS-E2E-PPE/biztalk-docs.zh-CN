@@ -1,18 +1,18 @@
 ---
-title: "开发使用 WCF 服务模型的 Oracle 数据库应用程序 |Microsoft 文档"
-ms.custom: 
+title: 开发使用 WCF 服务模型的 Oracle 数据库应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performing operations, by using the WCF service model
 - developing applications, by using the WCF service model
 - WCF service model, using to develop applications
 ms.assetid: 3f2c60b2-4835-492d-8c3c-ed35d3e4c517
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215637"
 ---
 # <a name="develop-oracle-database-applications-using-the-wcf-service-model"></a>开发使用 WCF 服务模型的 Oracle 数据库应用程序
 在最低级别，[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]提供一个在其中客户端调用服务上的操作通过在客户端和服务终结点之间建立信道交换 SOAP 消息的编程模型。 此模型中，称为 WCF 通道模型，公开数据类型和方法，您可以直接对 WCF 通道体系结构进行操作。 WCF 通道模型为您提供通过你创建的 SOAP 消息的内容和方式这两个应用程序的直接控制和[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用它们; 但是，创建格式正确的 SOAP 消息在通道上发送和验证返回答复消息可以是详细、 更严格的任务。  

@@ -1,14 +1,14 @@
 ---
-title: "配置 SQL 适配器的凭据登录 |Microsoft 文档"
-ms.custom: 
+title: 配置 SQL 适配器的凭据登录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9c20e177-0e64-4df3-a3dd-dca3fcf314db
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226237"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sql-adapter"></a>配置 SQL 适配器的凭据登录
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]需要适配器客户端提供客户端凭据。 适配器使用这些凭据进行身份验证与 SQL Server 用户和建立连接。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**无**|使用 Windows 身份验证连接到 SQL Server。|  
     |**Windows**|使用 Windows 身份验证连接到 SQL Server。|  
-    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
+    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
   
 6.  单击 **“确定”**。  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 09/20/2017
     |----------------|----------------|  
     |**无**|使用 Windows 身份验证连接到 SQL Server。|  
     |**Windows**|使用 Windows 身份验证连接到 SQL Server。|  
-    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：**如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
+    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：** 如果你离开**用户名**和**密码**为空白字段，该适配器将连接到 SQL Server 使用 Windows 身份验证。|  
   
 8.  单击 **“确定”**。  
   

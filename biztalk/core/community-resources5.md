@@ -1,14 +1,14 @@
 ---
-title: "社区 Resources5 |Microsoft 文档"
-ms.custom: 
+title: 社区 Resources5 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-03-24
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 632c6dcf-c60a-4914-8df4-97ef76d22b16
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231717"
 ---
 # <a name="community-resources"></a>社区资源
 插入了 BizTalk Server 社区来连接与其他开发人员和管理员并获取问题的答案，从不同的 BizTalk 社区资源中读取最新观看第 9 频道视频，深入了解 Azure，和的详细信息。  

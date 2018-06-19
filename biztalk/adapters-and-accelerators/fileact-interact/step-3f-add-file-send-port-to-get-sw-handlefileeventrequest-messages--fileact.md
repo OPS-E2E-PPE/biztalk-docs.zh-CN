@@ -1,14 +1,14 @@
 ---
-title: "单步 3F: FileAct 实时方案，以捕获软件 HandleFileEventRequest 消息的文件发送端口添加 |Microsoft 文档"
-ms.custom: 
+title: '单步 3F: FileAct 实时方案，以捕获软件 HandleFileEventRequest 消息的文件发送端口添加 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b7594b0-0443-41b7-ae04-55b2cc8bf90e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225525"
 ---
 # <a name="step-3f-add-a-file-send-port-for-the-fileact-real-time-scenario-to-capture-sw-handlefileeventrequest-messages"></a>单步 3F： 添加 FileAct 实时方案，以捕获软件 HandleFileEventRequest 消息文件发送端口
 在开始此步骤之前，必须完成[步骤 3E: FileAct 实时方案将文件发送端口添加到捕获 Sw:ExchangeFileResponse 消息](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)  

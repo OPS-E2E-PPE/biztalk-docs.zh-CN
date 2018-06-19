@@ -1,11 +1,11 @@
 ---
-title: "SAP 中的 Rfc 上的操作 |Microsoft 文档"
-ms.custom: 
+title: SAP 中的 Rfc 上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, operations on RFCs
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - adapters, operations on tRFCs
 - RFC server
 ms.assetid: ca1b7b00-a9cf-41bc-b87c-2e7ce8cff65c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217061"
 ---
 # <a name="operations-on-rfcs-in-sap"></a>SAP 中的 Rfc 上的操作
 你可以使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]同时作为 RFC 客户端和 RFC 服务器。 在 RFC 客户端的情况下，你的应用程序时，将调用 Rfc SAP 系统上通过上调用 RFC 操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 在 RFC 服务器方案中 SAP 系统时，将调用 Rfc 上[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，这样，就反过来，作为对你的应用程序的操作可调用 RFC。  

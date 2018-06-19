@@ -1,14 +1,14 @@
 ---
-title: "配置 SAP 适配器，以将与业务数据集成 SAP 目录和 SharePoint |Microsoft 文档"
-ms.custom: 
+title: 配置 SAP 适配器，以将与业务数据集成 SAP 目录和 SharePoint |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ec105c9-0ced-4a45-bc0d-eb72c1ef5d9d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216533"
 ---
 # <a name="configure-the-sap-adapter-to-integrate-sap-with-the-business-data-catalog-and-sharepoint"></a>配置 SAP 适配器，以将与业务数据集成 SAP 目录和 SharePoint
 [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]包括[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]，这将生成特定 LOB 项目的 WCF 服务。 此 WCF 服务承载在宿主环境如 Microsoft Internet 信息服务 (IIS) 中。 业务数据目录定义编辑器使用的 URL，其中承载该 WCF 服务来获取 Web 服务描述语言 (WSDL) 的 WCF 服务。 使用 WSDL，业务数据目录定义编辑器中提取的 WCF 服务可用的方法。 这些方法可以用于建立实体和实体之间的关联。  

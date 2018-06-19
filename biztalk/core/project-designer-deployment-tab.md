@@ -1,11 +1,11 @@
 ---
-title: "项目设计器： 部署选项卡 |Microsoft 文档"
-ms.custom: 
+title: 项目设计器： 部署选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - properties, Configuration database [BizTalk Server]
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - configuration properties [deployment], Management database property
 - configuration properties [deployment], Administration Group property
 ms.assetid: 5b64f99c-4ec6-4ed3-8590-46420e2f75b8
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264941"
 ---
 # <a name="project-designer-deployment-tab"></a>项目设计器：“部署”选项卡
 **部署**项目设计器的属性选项卡允许你配置 BizTalk 项目的部署属性。 你必须配置这两**服务器**和**配置数据库**（也称为 BizTalk 管理数据库） 与用于部署成功的集的属性。  

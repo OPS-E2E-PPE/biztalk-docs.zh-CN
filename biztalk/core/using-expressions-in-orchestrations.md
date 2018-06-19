@@ -1,14 +1,14 @@
 ---
-title: "在业务流程中使用表达式 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中使用表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1947cd39-6ef2-4b2d-afeb-a0132b19db97
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287133"
 ---
 # <a name="using-expressions-in-orchestrations"></a>在业务流程中使用表达式
 BizTalk 表达式编辑器可用于输入 XLANG/s 表达式，以添加逻辑来操作和测试你的业务流程变量和消息的值。 但是，它不是作为最佳做法，使用它来执行高级业务流程逻辑，最好是将是在绘制自身的业务流程中可见。 对业务进程透明度便捷的重新配置，我们建议你使用简单和模块化表达式。  

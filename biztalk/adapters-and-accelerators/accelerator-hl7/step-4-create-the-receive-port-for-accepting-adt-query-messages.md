@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207901"
 ---
 # <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>步骤 4： 创建用于接受 ADT 查询消息接收端口
 创建接收端口指定发送的许可，放电，传入查询消息的位置和传输 (ADT) 系统。 使用以下过程来创建用于接受查询的接收端口 (QRY ^ Q01 消息) 从 ADT 系统使用的最小较低层协议 (MLLP) 适配器。  

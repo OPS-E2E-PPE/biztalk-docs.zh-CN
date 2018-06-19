@@ -1,14 +1,14 @@
 ---
-title: "交互适配器客户端应用程序 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器客户端应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cdab4624-0fc2-42a3-9867-8f77e144b40c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223093"
 ---
 # <a name="interact-adapter-client-application"></a>交互适配器客户端应用程序
 交互适配器客户端应用程序请求消息是从客户端应用程序到客户端 SWIFTNet 链接 (SNL) 传递的 XML 文档。 此类型的消息发生作为客户端上执行过的 SWIFTNet 请求/响应基元的第一部分。  

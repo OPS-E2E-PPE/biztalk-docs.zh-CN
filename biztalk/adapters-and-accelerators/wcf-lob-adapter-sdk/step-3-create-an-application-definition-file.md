@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建应用程序定义文件 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建应用程序定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 843fafdb-571e-4da4-ad04-7dc7f23e03ac
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22227005"
 ---
 # <a name="step-3-create-an-application-definition-file"></a>步骤 3： 创建应用程序定义文件
 ![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
@@ -64,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在元数据对象窗格中，展开**EchoGreetings**节点，然后展开**方法**节点。  
   
-2.  单击**EchoGreetings**节点，然后在属性窗格中，单击省略号**（...）**按钮**属性**字段。  
+2.  单击**EchoGreetings**节点，然后在属性窗格中，单击省略号 **（...）** 按钮**属性**字段。  
   
 3.  在 PropertyView 集合编辑器窗口中，单击**添加**，然后在**名称**字段的属性窗格中，类型**HttpHeaderUserName**。  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在元数据对象窗格中，展开**EchoWSLOB**节点，然后展开**实例**节点。  
   
-2.  单击**EchoWSLOB_Instance**，在属性窗格中，单击省略号**（...）**按钮**属性**字段。  
+2.  单击**EchoWSLOB_Instance**，在属性窗格中，单击省略号 **（...）** 按钮**属性**字段。  
   
 3.  在 PropertyView 集合编辑器窗口中，单击**添加**，然后在属性窗格中，键入**SecondarySsoApplicationId**中**名称**字段。  
   

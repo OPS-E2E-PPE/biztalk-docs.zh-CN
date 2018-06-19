@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为操作生成架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为操作生成架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 63218a5e-9af2-40af-9992-ac5e204d2832
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224957"
 ---
 # <a name="step-1-generate-schema-for-operations"></a>步骤 1： 为操作生成架构
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，生成你在使用 SQL Server 数据库执行的操作的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 对于本教程，你必须生成以下架构：  
+ **目标：** 在此步骤中，生成你在使用 SQL Server 数据库执行的操作的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 对于本教程，你必须生成以下架构：  
   
 -   **通知**（入站操作）。  
   

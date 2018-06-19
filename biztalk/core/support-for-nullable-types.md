@@ -1,14 +1,14 @@
 ---
-title: "可以为 Null 的类型的支持 |Microsoft 文档"
-ms.custom: 
+title: 可以为 Null 的类型的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a5ea191-09d5-47ab-a197-390fbbcf6306
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278717"
 ---
 # <a name="support-for-nullable-types"></a>可以为 Null 的类型的支持
 规则引擎支持业务规则中使用可以为 null 的类型。 你可以使用.NET 类绑定、 XML 绑定和数据库绑定中可以为 null 的类型。 目前，业务规则编辑器工具不支持业务规则中使用可以为 null 的类型。 以编程方式创建规则时，你可以使用可以为 null 的类型。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 添加筛选器插入通知 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 添加筛选器插入通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53a1e9ef-a179-42a7-b4ae-b1170181053b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223261"
 ---
 # <a name="step-3-add-a-filter-for-insert-notifications"></a>步骤 3： 添加筛选器插入通知
 ![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，你可以将确定形状添加到要用于插入操作的通知消息的筛选器业务流程。 仅当所接收的通知属于插入类型执行业务流程中的后续操作。  
+ **目标：** 在此步骤中，你可以将确定形状添加到要用于插入操作的通知消息的筛选器业务流程。 仅当所接收的通知属于插入类型执行业务流程中的后续操作。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成[步骤 2： 从通知消息中提取通知类型](../../adapters-and-accelerators/adapter-sql/step-2-extract-notification-type-from-notification-message.md)。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  添加**确定**形状变为业务流程之后,**表达式**形状。 从工具箱中，拖动**确定**形状拖到所连接的正下方线**表达式**形状。  
   
-     **确定**形状展开以显示有关分支**如果**语句**(Rule_1)**和有关分支**Else**语句。  
+     **确定**形状展开以显示有关分支**如果**语句 **(Rule_1)** 和有关分支**Else**语句。  
   
 2.  在设计图面上，右键单击**确定**形状，并依次**属性窗口**。  
   

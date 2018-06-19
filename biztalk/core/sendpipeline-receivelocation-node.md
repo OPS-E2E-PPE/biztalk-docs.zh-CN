@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269861"
 ---
 # <a name="sendpipeline-receivelocation-node"></a>SendPipeline（“接收位置”节点）
 绑定文件的 ReceiveLocation 节点的 SendPipeline 节点提供有关绑定到指定接收位置的发送管道的特定信息，该接收位置是与绑定文件一起导出的接收位置。  

@@ -1,17 +1,17 @@
 ---
-title: "与 Siebel 适配器的 WCF 服务模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 Siebel 适配器的 WCF 服务模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke operations on the Siebel system with a WCF client
 - WCF service model, overview of
 ms.assetid: 0e812473-0f50-4972-8b07-ec8edc2ef000
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222109"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-siebel-adapter"></a>与 Siebel 适配器的 WCF 服务模型概述
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开作为 WCF 服务的 Siebel 系统。 若要在 Siebel 系统项目，例如，若要调用的 Siebel 业务服务，方法上执行操作你调用上的适配器，这反过来会对执行 Siebel 系统操作的操作。 你的代码因此充当客户端提供的适配器的 WCF 服务。  

@@ -1,17 +1,17 @@
 ---
-title: "消息到 SWIFT FRR 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 消息到 SWIFT FRR 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, send ports
 - send ports, FRR
 ms.assetid: 905c69a3-dff3-4a60-803d-dd617ffb6896
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209357"
 ---
 # <a name="frr-send-port-for-messages-to-swift"></a>消息到 SWIFT FRR 发送端口
 若要启用 FIN 响应对帐 (FRR)，你必须设置为 MQSeries 向通过 BizTalk 适配器 SAA 发送一条消息 FRR 发送端口。 此发送端口路由任何消息通过自定义 FRR 发送必须创建具有以下管道组件的管道组件：  

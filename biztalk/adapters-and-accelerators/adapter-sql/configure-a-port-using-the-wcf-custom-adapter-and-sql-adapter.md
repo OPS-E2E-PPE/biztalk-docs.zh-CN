@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 BizTalk 中的 WCF 自定义适配器和 SQL 适配器 |Microsoft 文档"
-description: "创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 SQL Server 适配器的端口"
-ms.custom: 
+title: 配置端口使用 BizTalk 中的 WCF 自定义适配器和 SQL 适配器 |Microsoft 文档
+description: 创建 WCF 自定义发送和接收要在 BizTalk Server 中使用 SQL Server 适配器的端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d44d9932-0a5e-4072-a480-2f8dc544ca79
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226029"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a>配置使用 WCF 自定义适配器和 SQL 适配器的端口
 配置 WCF 自定义发送和接收端口到执行 SQL Server 使用的出站和入站操作步骤[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 SQL Server 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 SQL Server 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。  
   
     2.  上**常规**选项卡上，在**操作**文本框中，键入操作的操作。 请参阅[消息和消息架构](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)有关每个操作的操作的列表。 例如，要调用的 SQL Server 数据库中的表上的插入操作的操作是：  
   
@@ -103,7 +104,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 SQL Server 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 SQL Server 连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。  
   
     2.  单击**绑定**选项卡上，并从**绑定类型**下拉列表中，选择**sqlBinding**。 你可以指定不同的绑定属性公开的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 有关绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。  
   

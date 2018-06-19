@@ -1,14 +1,14 @@
 ---
-title: "运行 SQL 使用 WCF 通道模型中的表上的插入操作 |Microsoft 文档"
-ms.custom: 
+title: 运行 SQL 使用 WCF 通道模型中的表上的插入操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3df95d78-3a9c-48c0-81ab-1f3206c5e3f7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224405"
 ---
 # <a name="run-an-insert-operation-on-a-table-in-sql-using-the-wcf-channel-model"></a>运行 SQL 使用 WCF 通道模型中的表上的插入操作
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]发现一组的 SQL Server 数据库表和视图的基本 Insert、 Select、 Update 和 Delete 操作。 通过使用这些操作，你可以执行简单的 SQL Insert、 Select、 Update 和 Delete 语句由 Where 限定目标表或视图上的子句。 本主题提供有关如何执行对使用 WCF 通道模型的 SQL Server 数据库表的插入操作的说明。  

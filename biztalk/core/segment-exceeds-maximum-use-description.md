@@ -1,14 +1,14 @@
 ---
-title: "段超过最大使用说明 |Microsoft 文档"
-ms.custom: 
+title: 段超过最大使用说明 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4e1704a-5d49-4549-af50-d1a89a1e70f0
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269429"
 ---
 # <a name="segment-exceeds-maximum-use-description"></a>段超过最大使用说明
 ## <a name="details"></a>详细信息  

@@ -1,18 +1,18 @@
 ---
-title: "获取在 SAP 中使用 Ws-metadata Exchange 的元数据 |Microsoft 文档"
-ms.custom: 
+title: 获取在 SAP 中使用 Ws-metadata Exchange 的元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WS-Metadata Exchange
 - how to, retrieve metadata
 - retrieving metadata
 ms.assetid: 29f85963-ac7f-4e13-96b8-bc2c94a9fcae
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216877"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-sap"></a>获取在 SAP 中使用 Ws-metadata Exchange 的元数据
 作为[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定，[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开可用于检索元数据中的特定操作的 WS 元数据交换 (MEX) 终结点[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

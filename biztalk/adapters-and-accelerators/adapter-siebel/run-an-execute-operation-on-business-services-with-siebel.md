@@ -1,17 +1,17 @@
 ---
-title: "使用 Siebel 运行业务服务上的执行操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 Siebel 运行业务服务上的执行操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, execute business services using ADO.NET Provider
 - performing operations, executing business services using ADO.NET Provider
 ms.assetid: c8f7888f-72c6-4f20-b592-f233721fbddd
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221973"
 ---
 # <a name="run-an-execute-operation-on-business-services-with-siebel"></a>使用 Siebel 运行业务服务上的执行操作
 本部分演示如何执行对 Siebel 业务服务使用的操作[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。  

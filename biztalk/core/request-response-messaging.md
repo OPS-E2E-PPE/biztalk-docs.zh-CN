@@ -1,11 +1,11 @@
 ---
-title: "请求-响应消息传送 |Microsoft 文档"
-ms.custom: 
+title: 请求-响应消息传送 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - request/response messaging, about request/response messaging
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - request/response messaging, SOAP adapters
 - messages, patterns
 ms.assetid: 1a2f79b5-1f44-4191-8ce1-b3c9043be4f4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268517"
 ---
 # <a name="request-response-messaging"></a>请求-响应消息传送
 在请求/响应消息传送模式中，一方发送一个请求消息，接收方将返回一个响应消息。 请求/响应处理的两个典型示例是浏览器使用 HTTP 适配器与 Web 服务器进行交互，以及使用简单对象访问协议 (SOAP) 适配器进行 Web Services 处理。 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，典型发布/订阅的方式处理请求和响应消息。 若要将 BizTalk 应用程序调整到最佳性能，则了解这一点十分重要，因为具有高吞吐量要求的系统配置可能与要求各个消息都具有低延迟时间的系统配置不同。  

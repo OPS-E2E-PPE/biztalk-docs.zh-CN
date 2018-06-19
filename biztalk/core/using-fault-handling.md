@@ -1,14 +1,14 @@
 ---
-title: "使用错误处理 |Microsoft 文档"
-ms.custom: 
+title: 使用错误处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc793386-d2ec-4e02-9283-3237f65c9e01
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287461"
 ---
 # <a name="using-fault-handling"></a>使用错误处理
 期间[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]故障处理一条异常消息不返回到客户端，除非**FaultException** （或子类型） 引发或**FaultContract**实现。 因此你可以仅从错误消息本身在这些情况下跟踪数据。 在回调实现异常自动再次作为错误消息的同时**ServerFault**和**ClientFault**跟踪点。 但是，它将始终返回泛型错误，该错误显示一条常规消息。 有关 WCF 错误协定的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)。  

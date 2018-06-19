@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 适配器 TIBCO 企业消息服务的体系结构 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 适配器 TIBCO 企业消息服务的体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transmit adapter
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - one-way send operations
 - receive adapter
 ms.assetid: 304c7236-aacd-4761-8c33-e876b53e84ff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230277"
 ---
 # <a name="architecture-of-biztalk-adapter-for-tibco-enterprise-message-service"></a>用于 TIBCO Enterprise Message Service 的 BizTalk 适配器的体系结构
 用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器提供在 TIBCO EMS 系统和 BizTalk Server 之间交换实时业务数据的方式。 该适配器能够在 XML 应用程序和 TIBCO EMS 之间进行交互。  

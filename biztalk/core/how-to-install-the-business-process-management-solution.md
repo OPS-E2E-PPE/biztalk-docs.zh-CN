@@ -1,18 +1,18 @@
 ---
-title: "如何安装业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何安装业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, examples
 - process management solution tutorial, installing
 - process management solution tutorial, deployment prerequisites
 ms.assetid: 930f3bb1-05e6-4b02-852d-6139aaf341f0
-caps.latest.revision: "61"
+caps.latest.revision: 61
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974931"
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>如何安装业务流程管理解决方案
 以下步骤介绍如何为安装业务流程管理 (BPM) 解决方案准备计算机，以及如何在此计算机上安装该解决方案：  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
   
     3.  右键单击您创建，，然后选择的应用程序池**高级设置**。  
   
-    4.  展开**进程模型**的右侧列中单击**标识**设置，并依次**...**  
+    4.  展开**进程模型**的右侧列中单击**标识**设置，并依次 **...**  
   
     5.  选择的用户帐户 (任一**生成入帐户**或**自定义帐户**)，有权创建并在 Windows\Temp 目录中执行文件。 在配置 BizTalk 时，配置过程已为添加到 BizTalk Isolated Host Users 组中的用户设置了这些权限。 最好指定同一用户。  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 11/28/2017
 1.  在命令提示符下，将当前文件夹更改为 %btssolutionspath%\bpm，类型`SetupBPM.bat`，然后按 ENTER。  
   
     > [!NOTE]
-    >  在文件中运行 SetupBPM.bat 之前, **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**和**%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**，将替换为 XXXXXXXXXXXXXXXX 8f8bbebbb3fb375a 的所有实例。  
+    >  在文件中运行 SetupBPM.bat 之前, **%BTSInstallPath%/SDK/Scenarios/BPM/CSDWebApp/App_WebReferences/SouthridgeVideo_OrderBroker/OrderBrokerOrch_OrderPort.wsdl**和 **%BTSInstallPath%/SDK/Scenarios/BPM/OrderBroker_Proxy/App_Code/OrderBrokerOrch_OrderPort.asmx.cs**，将替换为 XXXXXXXXXXXXXXXX 8f8bbebbb3fb375a 的所有实例。  
   
      SetupBPM.bat 将执行以下任务：  
   

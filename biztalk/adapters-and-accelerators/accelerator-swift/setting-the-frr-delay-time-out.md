@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22213997"
 ---
 # <a name="setting-the-frr-delay-time-out"></a>设置 FRR 延迟超时
 您必须配置 FRR 业务流程超时后某些持续时间，以便它将不 FNN 响应无限期等待。 如果在超时持续时间到期，[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]将超时消息发布到自定义超时处理程序。  

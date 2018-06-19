@@ -1,14 +1,14 @@
 ---
-title: "第 5 课： 部署解决方案 |Microsoft 文档"
-ms.custom: 
+title: 第 5 课： 部署解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5af5c650-05de-4b85-b633-ad411f8b0e6b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222389"
 ---
 # <a name="lesson-5-deploy-the-solution"></a>第 5 课： 部署解决方案
 在本课程中，你部署 BizTalk 解决方案使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在 BizTalk 业务流程设计器中，你将创建逻辑端口。 你将现在创建的物理端口以及如何通过将逻辑端口映射到的物理端口来配置 BizTalk 应用程序。  

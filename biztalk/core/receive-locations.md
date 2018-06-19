@@ -1,11 +1,11 @@
 ---
-title: "接收位置 |Microsoft 文档"
-ms.custom: 
+title: 接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, properties
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - receive locations
 - receive locations, receive location types
 ms.assetid: be5f7e5d-b63f-42f6-985e-895ba3912d34
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268621"
 ---
 # <a name="receive-locations"></a>接收位置
 创建接收位置涉及指定入站消息到达的地址以及用于处理在该地址接收的消息的消息传送管道。 只有管理员才能创建和启用接收位置。  

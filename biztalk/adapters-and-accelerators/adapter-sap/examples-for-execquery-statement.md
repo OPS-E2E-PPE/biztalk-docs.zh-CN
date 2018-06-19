@@ -1,15 +1,15 @@
 ---
-title: "EXECQUERY 语句中 BizTalk mySAP 适配器中的示例 |Microsoft 文档"
-description: "EXECQUERY 示例和样本使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器"
-ms.custom: 
+title: EXECQUERY 语句中 BizTalk mySAP 适配器中的示例 |Microsoft 文档
+description: EXECQUERY 示例和样本使用 BizTalk 适配器包 (BAP) 中的 mySAP 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4139af16-7c38-4ea2-b3e5-5acf8fc1f3c4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216237"
 ---
 # <a name="examples-for-execquery-statement"></a>EXECQUERY 语句的示例
 本主题提供示例 EXECQUERY 语句。  

@@ -1,15 +1,15 @@
 ---
-title: "对于特定 SAP 适配器方案中使用 SAP GUI 执行任务 |Microsoft 文档"
-description: "创建或发送 RFC、 发送和查看 Idoc 和 SAP-BizTalk 适配器 (BAP) 中的列存储中的大小写"
-ms.custom: 
+title: 对于特定 SAP 适配器方案中使用 SAP GUI 执行任务 |Microsoft 文档
+description: 创建或发送 RFC、 发送和查看 Idoc 和 SAP-BizTalk 适配器 (BAP) 中的列存储中的大小写
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 738ed0d3-e68a-40a1-af0e-714bbecb38c6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217141"
 ---
 # <a name="sap-gui-tasks-for-the-sap-adapter-scenarios"></a>SAP 适配器方案的 SAP GUI 任务
 

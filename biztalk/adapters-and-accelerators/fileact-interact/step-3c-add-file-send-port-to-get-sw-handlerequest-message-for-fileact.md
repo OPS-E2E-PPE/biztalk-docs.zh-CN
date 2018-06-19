@@ -1,14 +1,14 @@
 ---
-title: "步骤 3c： 将文件发送端口 FileAct 实时方案捕获 Sw:HandleRequest 消息添加 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3c： 将文件发送端口 FileAct 实时方案捕获 Sw:HandleRequest 消息添加 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc0a9173-20df-4c73-80ee-755987d639d2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224869"
 ---
 # <a name="step-3c-add-a-file-send-port-to-capture-swhandlerequest-message-for-the-fileact-real-time-scenario"></a>步骤 3c： 添加文件发送端口 FileAct 实时方案捕获 Sw:HandleRequest 消息
 在开始此步骤之前，必须完成[步骤 3B: FileAct 实时方案添加 FILEACT 接收位置](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario.md)。  

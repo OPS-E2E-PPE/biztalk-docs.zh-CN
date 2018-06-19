@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265653"
 ---
 # <a name="orchestration-debugger-user-interface"></a>业务流程调试器用户界面
 在交互（调试）模式下，“业务流程调试器”视图包含三个区域：“服务”窗格、“跟踪的事件”窗格以及“业务流程”窗格。 此外，在交互模式下，在视图底部会依次显示“变量列表”和“变量属性”。  

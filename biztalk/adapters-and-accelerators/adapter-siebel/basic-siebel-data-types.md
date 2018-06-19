@@ -10,7 +10,7 @@ ms.topic: article
 helpviewer_keywords:
 - Siebel data types, supported
 ms.assetid: bf86f639-6c45-49db-9e58-79c3ad2c9978
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218749"
 ---
 # <a name="basic-siebel-data-types"></a>基本 Siebel 数据类型
 本部分介绍如何将 Siebel 数据类型支持上[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/28/2018
 |DTYPE_NUMBER|xsd:decimal|Decimal|-|  
 |DTYPE_PHONE|xsd:string|字符串|-|  
 |DTYPE_TEXT|xsd:string|字符串|-|  
-|DTYPE_TIME|xsd:dateTime*|DateTime|值必须不为 UTC。<br /><br /> -对于化，值应遵循此模式: (1753-01-01)T(\d\d:\d\d:\d\d) (。\*)"。<br />-为**DateTime**对象**，DateTime.Kind**必须**DateTimeKind.Unspecified**。<br /><br /> 对于出站消息，适配器执行运行时验证，以确保指定的值不是 UTC （z 或 UTC 偏移量）。 如果验证失败，该适配器将引发异常。<br /><br /> 当此类型是作为 xsd: string （根据如下所述的规则） 公开：<br /><br /> 的格式是由基础数据库决定的。<br />-未运行时验证的值。|  
+|DTYPE_TIME|xsd:dateTime*|DateTime|值必须不为 UTC。<br /><br /> -对于化，值应遵循此模式: (1753-01-01)T(\d\d:\d\d:\d\d) (。\*)"。<br />-为**DateTime**对象 **，DateTime.Kind**必须**DateTimeKind.Unspecified**。<br /><br /> 对于出站消息，适配器执行运行时验证，以确保指定的值不是 UTC （z 或 UTC 偏移量）。 如果验证失败，该适配器将引发异常。<br /><br /> 当此类型是作为 xsd: string （根据如下所述的规则） 公开：<br /><br /> 的格式是由基础数据库决定的。<br />-未运行时验证的值。|  
 |DTYPE_UTCDATETIME|xsd:dateTime*|DateTime|值可以包含日期和时间的组件，并且必须是 UTC。<br /><br /> -对于化，值必须表示 UTC （Z 表示法或 UTC 偏移量）。<br />-为**DateTime**对象**DateTime.Kind**必须**DateTimeKind.Utc**。<br /><br /> 对于出站消息，适配器执行运行时验证以确保满足这些条件;如果验证失败，该适配器将引发异常。<br /><br /> 当此类型是作为 xsd: string （基于规则如下所述） 公开：<br /><br /> 的格式是由基础数据库决定的。<br />-未运行时验证的值。|  
   
  业务服务方法自变量类型如下：  

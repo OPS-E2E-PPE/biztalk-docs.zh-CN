@@ -1,17 +1,17 @@
 ---
-title: "标准 SSO 安装选项 |Microsoft 文档"
-ms.custom: 
+title: 标准 SSO 安装选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, SSO
 - SSO, installing
 ms.assetid: 59aeb503-f369-4145-8a3c-ab60e9ed31a8
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279149"
 ---
 # <a name="standard-sso-installation-options"></a>标准 SSO 安装选项
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用用于安全地存储凭据的企业单一登录 (SSO) 功能，以启用单一登录方案。  
@@ -33,17 +34,17 @@ ms.lasthandoff: 09/20/2017
   
  **安装选项的列表**： 运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。 选择**自定义安装**，然后从以下列表中选择相应的选项：  
   
--   **企业单一登录管理 ―**用于映射并连接到企业单一登录服务的管理和客户端工具。  
+-   **企业单一登录管理 ―** 用于映射并连接到企业单一登录服务的管理和客户端工具。  
   
--   **企业单一登录在主密钥服务器 ―**充当 SSO 系统中的主密钥服务器。 这是 SSO 系统中需要部署的第一个服务器，使用该服务器可创建 SSO 数据库。  
+-   **企业单一登录在主密钥服务器 ―** 充当 SSO 系统中的主密钥服务器。 这是 SSO 系统中需要部署的第一个服务器，使用该服务器可创建 SSO 数据库。  
   
  完成安装后，您还可以使用“添加或删除程序”实用工具添加以下项：  
   
--   **服务器运行时 ―**核心服务，以启用单一登录，并以安全地存储/访问配置数据。  
+-   **服务器运行时 ―** 核心服务，以启用单一登录，并以安全地存储/访问配置数据。  
   
--   **企业单一登录管理 ―**用于映射并连接到企业单一登录服务的管理和客户端工具。  
+-   **企业单一登录管理 ―** 用于映射并连接到企业单一登录服务的管理和客户端工具。  
   
--   **企业单一登录服务与密码同步 ―**服务，以使企业 SSO 系统中的密码同步功能。 这些服务也与 Microsoft 密码更改通知服务相集成。 安装核心的企业单一登录服务之后，就可以通过 BizTalk Server 包安装企业 SSO 的密码同步功能了，方法是启动 \Platform\SSO\Setup.exe，然后选择密码同步功能。  
+-   **企业单一登录服务与密码同步 ―** 服务，以使企业 SSO 系统中的密码同步功能。 这些服务也与 Microsoft 密码更改通知服务相集成。 安装核心的企业单一登录服务之后，就可以通过 BizTalk Server 包安装企业 SSO 的密码同步功能了，方法是启动 \Platform\SSO\Setup.exe，然后选择密码同步功能。  
   
 -   **软件开发工具包**编程和参考信息。  
   

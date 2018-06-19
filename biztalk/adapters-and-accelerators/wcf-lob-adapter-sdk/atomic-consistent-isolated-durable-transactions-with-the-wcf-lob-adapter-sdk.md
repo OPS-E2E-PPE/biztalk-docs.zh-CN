@@ -1,14 +1,14 @@
 ---
-title: "将使用 WCF LOB 适配器 SDK 原子、 一致、 隔离和持久的事务进行配置 |Microsoft 文档"
-ms.custom: 
+title: 将使用 WCF LOB 适配器 SDK 原子、 一致、 隔离和持久的事务进行配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c20d2613-c77d-4b0d-b2e2-3ed28a8fb36c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224237"
 ---
 # <a name="configure-atomic-consistent-isolated-and-durable-transactions-using-the-wcf-lob-adapter-sdk"></a>将使用 WCF LOB 适配器 SDK 的原子、 一致、 隔离和持久事务配置
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过依赖公开的功能支持事务[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。 通过使用 API 公开的[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，你的适配器可以支持事务和的操作：  

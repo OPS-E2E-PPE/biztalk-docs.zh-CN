@@ -1,14 +1,14 @@
 ---
-title: "交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc73c84b-3361-41b0-b1b3-dc3c2ab31ccc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223109"
 ---
 # <a name="interact-real-time-scenario"></a>交互实时方案
 在此方案中，你将配置实时处理这些消息的交互适配器。 你可以使用 SWIFT 解决方案方案，如现金报告中。 有关详细信息，请参阅 SWIFT 网站， [http://go.microsoft.com/fwlink/?LinkId=100479](http://go.microsoft.com/fwlink/?LinkId=100479)。  

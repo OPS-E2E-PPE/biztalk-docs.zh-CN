@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207245"
 ---
 # <a name="step-5-create-the-receive-port-for-accepting-his-messages"></a>步骤 5： 创建用于接受其消息接收端口
 在此步骤中，你将创建接收端口指定为发送医院信息系统 (HIS) 的传入消息的位置。 使用以下过程来创建用于接受来自使用最小较低层协议 (MLLP) 适配器 ADT 系统的查询响应消息的接收端口。  

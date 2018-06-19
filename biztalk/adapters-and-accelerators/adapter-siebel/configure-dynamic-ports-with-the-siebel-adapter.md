@@ -1,17 +1,17 @@
 ---
-title: "配置动态端口与 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 配置动态端口与 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - dynamic ports, configuring
 - configuring, dynamic ports
 ms.assetid: a3516c2c-d40e-426b-bf3f-f9dc3de105ef
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221909"
 ---
 # <a name="configure-dynamic-ports-with-the-siebel-adapter"></a>与 Siebel 适配器配置动态端口
 在[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你可以配置为动态端口[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]。 因为[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]是一个基于 WCF 的适配器，你可以动态配置的端口[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]通过使用消息上下文属性。  

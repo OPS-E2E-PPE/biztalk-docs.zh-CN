@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型调用 SQL Server 中的表值函数 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型调用 SQL Server 中的表值函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48688bcc-36b4-4cc1-b078-17e7a5e1cf8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224693"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a>使用 WCF 服务模型调用 SQL Server 中的表值函数
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的表值函数。 适配器将表值函数公开为可以直接在 SQL Server 调用的方法。 有关如何适配器支持标量函数的详细信息，请参阅[Execute Table-Valued 函数中使用的 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。  

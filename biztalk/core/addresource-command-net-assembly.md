@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef6ec298-35fe-4845-9549-685993d2c659
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22231653"
 ---
 # <a name="addresource-command-net-assembly"></a>AddResource 命令：.NET 程序集
 若要将.NET 程序集 （其中包括托管的 COM 或 COM + 组件） 添加到 BizTalk 应用程序，请使用 **AddResource** 命令并指定 **System.BizTalk:Assembly** 为类型参数。 运行此命令可将程序集添加到 BizTalk 管理数据库中。 程序集还会显示在 BizTalk 管理控制台中，即它所添加到的应用程序的“资源”文件夹中。 此外，当使用时，该程序集列出[ListApp 命令](../core/listapp-command.md)。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 03/23/2018
  如果要添加的程序集的全名与应用程序中已经存在的程序集的全名相同，可以指定 Overwrite 参数。 全名包括名称、公钥标记、区域性和版本。 在这种情况下，现有程序集将被覆盖。 有关依赖关系的详细信息，请参阅[依赖关系和应用程序部署](../core/dependencies-and-application-deployment.md)。  
   
 ## <a name="usage"></a>用法  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]  
+ **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite **] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd ***&#124;*** GacOnInstall ***&#124;*** GacOnImport **&#124;** RegasmOnInstall **&#124;** RegsvcsOnInstall **] [**/Server:***value*] [**/Database:*** value*]  
   
 ## <a name="parameters"></a>Parameters  
   

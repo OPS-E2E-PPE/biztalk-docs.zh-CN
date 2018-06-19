@@ -1,14 +1,14 @@
 ---
-title: "UninstallApp 命令 |Microsoft 文档"
-ms.custom: 
+title: UninstallApp 命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f45c9530-8138-40f1-b279-1428c5a7fbbc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286781"
 ---
 # <a name="uninstallapp-command"></a>UninstallApp 命令
 该命令从本地计算机中卸载 BizTalk 应用程序，并且将从“控制面板”的“添加或删除程序”中的程序列表中删除该应用程序。 此命令与使用“添加或删除程序”删除应用程序的效果相同。 如果为要删除的应用程序安装了多个 .msi 文件，则所有这些 .msi 文件安装的全部项都将被卸载。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
 |参数|必需|Description|  
 |---------------|--------------|-----------------|  
-|**/ ApplicationName** (或**/A**，请参阅备注)|是|要卸载的 BizTalk 应用程序的名称。 如果名称包含空格，必须将它括在双引号 （"）。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|是|要卸载的 BizTalk 应用程序的名称。 如果名称包含空格，必须将它括在双引号 （"）。|  
   
 ## <a name="sample"></a>示例  
  **BTSTask UninstallApp /ApplicationName:MyApplication**  

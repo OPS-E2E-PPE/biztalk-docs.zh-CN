@@ -1,14 +1,14 @@
 ---
-title: "了解与 WCF LOB 适配器 SDK LOB 系统 |Microsoft 文档"
-ms.custom: 
+title: 了解与 WCF LOB 适配器 SDK LOB 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0f97846-5ef2-4530-853a-fba5469156f7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225797"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a>了解 LOB 系统与 WCF LOB 适配器 SDK
 之前你适配器使用开发[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，你必须具有目标业务线系统的全面了解。 如果你不了解业务线系统、 公开方式，以及提供有关安全、 事务和其他功能的支持的不同级别提供的功能，你的适配器可能无法提供所需的适配器的功能使用者。 本部分介绍你必须了解要有效地设计你的适配器的区域。  

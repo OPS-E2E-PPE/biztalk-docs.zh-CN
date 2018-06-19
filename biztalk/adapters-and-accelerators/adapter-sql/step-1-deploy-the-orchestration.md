@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 部署的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 部署的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8988fced-b2d5-4ee7-a851-20fc7c3dd087
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224309"
 ---
 # <a name="step-1-deploy-the-orchestration"></a>步骤 1： 部署的业务流程
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，将部署业务流程解决方案。  
+ **目标：** 在此步骤中，将部署业务流程解决方案。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成中的步骤[第 4 课： 执行采购订单表上的插入操作](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)。  

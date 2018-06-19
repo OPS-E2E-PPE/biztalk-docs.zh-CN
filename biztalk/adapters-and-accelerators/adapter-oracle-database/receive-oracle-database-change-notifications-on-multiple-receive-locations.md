@@ -1,14 +1,14 @@
 ---
-title: "接收到 Oracle 数据库更改通知上多个接收位置 |Microsoft 文档"
-ms.custom: 
+title: 接收到 Oracle 数据库更改通知上多个接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d273517-9527-4208-99be-97c8a92f176d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215749"
 ---
 # <a name="receive-oracle-database-change-notifications-on-multiple-receive-locations"></a>接收到 Oracle 数据库更改通知上多个接收位置
 在同一数据库中假设你有多个接收位置不同的 BizTalk 应用程序配置为接收同一个表 (例如 ACCOUNTACTIVITY) 的查询通知的一部分创建的其中一个方案。 如果上百个记录插入到同一个表中，所有接收位置将都收到通知消息。 若要有效地接收通知跨多个接收位置、 可以从 BizTalk 应用程序如果逐个收到通知接收位置的此类的方式调用操作、 其他接收位置不会获取相同的通知。 这样，你可以有效地在多个位置上收到的负载平衡通知。  
@@ -53,8 +54,8 @@ END NOTIFY_LOAD_BALANCE;
     |绑定属性|值|  
     |----------------------|-----------|  
     |**InboundOperationType**|将其设置为**通知**。|  
-    |**NotificationPort**|指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。 将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。 **重要说明：**如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。|  
-    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注意：**必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
+    |**NotificationPort**|指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。 将其设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)。 **重要说明：** 如果设置为默认值为-1，则你将需要完全禁用 Windows 防火墙，以接收通知消息。|  
+    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`**注意：** 必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
     |**NotifyOnListenerStart**|将其设置为**True**。|  
   
 6.  启动 BizTalk 应用程序。  

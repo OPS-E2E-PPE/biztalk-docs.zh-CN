@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279165"
 ---
 # <a name="transform-transforms-node"></a>Transform（Transforms 节点）
 绑定文件的“转换”节点下的“转换”节点包含有关随同该绑定文件一起导出的 BizTalk Server 映射的特定信息。  

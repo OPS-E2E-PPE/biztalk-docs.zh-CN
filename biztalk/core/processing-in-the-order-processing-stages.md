@@ -1,14 +1,14 @@
 ---
-title: "中的顺序处理阶段处理 |Microsoft 文档"
-ms.custom: 
+title: 中的顺序处理阶段处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698005da-1ba8-4972-83db-f5ae45fd6a83
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265093"
 ---
 # <a name="processing-in-the-order-processing-stages"></a>在订单处理阶段中处理
 业务流程管理解决方案包括两个阶段， **CableOrder1**和**CableOrder2**业务流程，执行处理操作的顺序。 有关如何订单过程已划分为阶段的详细信息，请参阅[处理阶段数](../core/number-of-processing-stages.md)。  

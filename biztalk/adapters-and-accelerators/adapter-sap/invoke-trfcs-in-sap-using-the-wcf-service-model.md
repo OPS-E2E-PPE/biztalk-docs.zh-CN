@@ -1,17 +1,17 @@
 ---
-title: "调用中使用 WCF 服务模型的 SAP tRFCs |Microsoft 文档"
-ms.custom: 
+title: 调用中使用 WCF 服务模型的 SAP tRFCs |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tRFCs, invoking by using the WCF service model
 - WCF service model, invoking tRFCs
 ms.assetid: 456fa869-2f1a-42e0-adbf-86bfe0876846
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216653"
 ---
 # <a name="invoke-trfcs-in-sap-using-the-wcf-service-model"></a>调用 tRFCs SAP 使用 WCF 服务模型中
 事务性远程函数调用 (tRFCs) 保证*一次性*RFC SAP 系统上执行。 你可以调用任何显示的 Rfc[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为 tRFC。 调用 WCF 服务模型中的 tRFC 是类似于调用 RFC 具有以下差异：  

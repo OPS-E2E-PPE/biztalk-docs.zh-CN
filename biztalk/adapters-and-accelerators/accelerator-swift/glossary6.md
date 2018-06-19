@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 中的 SWIFT 快捷键的术语表 |Microsoft 文档"
-description: "常见术语和定义知道并了解如何使用 BizTalk Accelerator for SWIFT"
-ms.custom: 
+title: BizTalk Server 中的 SWIFT 快捷键的术语表 |Microsoft 文档
+description: 常见术语和定义知道并了解如何使用 BizTalk Accelerator for SWIFT
+ms.custom: ''
 ms.date: 08/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7331beb-f6a7-4eea-8b31-28f5d15666d0
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210333"
 ---
 # <a name="glossary"></a>词汇表
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。  

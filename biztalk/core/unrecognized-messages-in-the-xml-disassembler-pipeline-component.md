@@ -1,11 +1,11 @@
 ---
-title: "无法识别的消息中 XML 反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: 无法识别的消息中 XML 反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Allow Unrecognized Messages property
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - pipeline components, XML Disassembler
 - XML Disassembler [pipeline component], unrecognized messages
 ms.assetid: 5a6be3a8-0bac-426a-bf0b-5091191091de
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286741"
 ---
 # <a name="unrecognized-messages-in-the-xml-disassembler-pipeline-component"></a>无法识别的消息中 XML 反汇编程序管道组件
 如果出现以下情况，则 XML 拆装器组件可将消息作为“无法识别”进行处理：  

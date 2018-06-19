@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型从 SQL Server 接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型从 SQL Server 接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8713dd38-65ff-4d89-b23b-a93c06c5ff22
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22226941"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-sql-server-using-the-wcf-service-model"></a>使用 WCF 服务模型从 SQL Server 接收基于轮询的数据更改消息
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]来接收 SQL Server 表或视图的定期的数据更改消息。 你可以指定适配器执行轮询数据库轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回的结果集。  

@@ -1,11 +1,11 @@
 ---
-title: "基本类型 1> |Microsoft 文档"
-ms.custom: 
+title: 基本类型 1> |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JD Edwards OneWorld adapters, data types
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - JD Edwards OneWorld adapters, .NET Framework
 - adapters [JD Edwards OneWorld adapters], business functions
 ms.assetid: d306ea1b-fb74-4fa3-9681-405252928df1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231853"
 ---
 # <a name="basic-types"></a>基本类型
 用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供仅到 JD Edwards OneWorld 业务函数的访问。 业务功能元数据使用业务功能接口读取，用于查找业务功能列表和相关联的数据结构。 对于所有业务功能方法，元数据都是强类型数据。  

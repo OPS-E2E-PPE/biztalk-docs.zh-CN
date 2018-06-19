@@ -1,11 +1,11 @@
 ---
-title: "运行 Orchestrations1 |Microsoft 文档"
-ms.custom: 
+title: 运行 Orchestrations1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - strong name keys, creating
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, compiling
 - orchestrations, deploying
 ms.assetid: b992bdba-630d-4f28-aca8-c568f3c27968
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972731"
 ---
 # <a name="running-orchestrations"></a>运行业务流程
 以下过程介绍如何生成、部署、绑定和启动业务流程。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  单击**启动**，指向**所有程序**，指向**Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]，然后选择**BizTalk Server 管理。**  
   
-2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，双击**Microsoft BizTalk Server （本地）**节点，然后展开**主机**。  
+2.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，双击**Microsoft BizTalk Server （本地）** 节点，然后展开**主机**。  
   
 3.  在左窗格中，选择**BizTalkServerApplication**。  
   

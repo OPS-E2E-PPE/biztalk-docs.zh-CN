@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 BizTalk 中的 WCF 自定义适配器和 SAP 适配器 |Microsoft 文档"
-description: "创建要发送或从 SAP 使用 mySAP 适配器 BizTalk 适配器包 (BAP) 中接收消息的 WCF 自定义端口"
-ms.custom: 
+title: 配置端口使用 BizTalk 中的 WCF 自定义适配器和 SAP 适配器 |Microsoft 文档
+description: 创建要发送或从 SAP 使用 mySAP 适配器 BizTalk 适配器包 (BAP) 中接收消息的 WCF 自定义端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e3962456-e9ac-4575-8266-b35e892dd428
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217733"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sap-adapter"></a>配置使用 WCF 自定义适配器和 SAP 适配器的端口
 本主题将说明了如何配置 WCF 自定义发送和接收端口执行 SAP 系统使用的出站和入站操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 SAP 系统连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 SAP 系统连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
   
     2.  上**常规**选项卡上，在**操作**文本框中，键入操作的操作。 请参阅[消息和消息架构](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)有关每个操作的操作的列表。 例如，若要调用 RFC_CUSTOMER_GET 则操作将是：  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 SAP 系统连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 SAP 系统连接 URI。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
   
     2.  单击**绑定**选项卡上，并从**绑定类型**下拉列表中，选择**sapBinding**。 有关绑定属性的详细信息，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   

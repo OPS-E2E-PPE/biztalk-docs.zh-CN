@@ -1,12 +1,12 @@
 ---
-title: "为 RosettaNet (BTARN) BizTalk 服务器上安装 BizTalk 快捷键 |Microsoft 文档"
-description: "请参阅的硬件和软件要求、 安装步骤中和 BTARN BizTalk Server 中的配置步骤"
+title: 为 RosettaNet (BTARN) BizTalk 服务器上安装 BizTalk 快捷键 |Microsoft 文档
+description: 请参阅的硬件和软件要求、 安装步骤中和 BTARN BizTalk Server 中的配置步骤
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -15,6 +15,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211037"
 ---
 # <a name="install-biztalk-accelerator-for-rosettanet"></a>安装适用于 RosettaNet BizTalk 快捷键
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 09/20/2017
     > [!IMPORTANT]
     >  如果执行自定义安装安装仅 BTARN HTTP 前端功能，BTARN 配置可能会失败，在安装完毕后，显示"无法创建功能的对象： WebApp"错误。 如果发生这种情况，将两个文件复制 (**Microsoft.VC80.ATL.manifest**和**atl80.dll**) 从与 BizTalk Server 的计算机上安装它，其中安装 BTARN HTTP 前端功能的计算机。  
     >   
-    >  如果在 BizTalk Server 所在的计算机上安装 Visual Studio，两个文件的源文件夹是*< 驱动器\>*: files\microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL。 如果在 BizTalk server 上未安装 Visual Studio，BizTalk 服务器上的两个文件的源文件夹是下的某个文件夹*< 驱动器\>*: \WINDOWS\WinSxS。 这两个文件的版本应该是 8.0.50727.42。 在装有 HTTP 前端功能的计算机上的目标文件夹是 BTARN 安装目录 (默认情况下， *< 驱动器\>*: files\microsoft BTARN)。  
+    >  如果在 BizTalk Server 所在的计算机上安装 Visual Studio，两个文件的源文件夹是 *< 驱动器\>*: files\microsoft Visual Studio 11.0\VC\redist\x86\Microsoft.VC100.ATL。 如果在 BizTalk server 上未安装 Visual Studio，BizTalk 服务器上的两个文件的源文件夹是下的某个文件夹 *< 驱动器\>*: \WINDOWS\WinSxS。 这两个文件的版本应该是 8.0.50727.42。 在装有 HTTP 前端功能的计算机上的目标文件夹是 BTARN 安装目录 (默认情况下， *< 驱动器\>*: files\microsoft BTARN)。  
     >   
     >  你已安装了 HTTP 前端功能这些文件复制到计算机后，重新运行**Configuration.exe**。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 09/20/2017
 1.  上**Microsoft BTARN 配置向导**页上，选择**基本配置**要使用默认设置，配置服务器或**自定义配置**到配置使用高级的配置选项的服务器。  
   
     > [!NOTE]
-    >  如果你想要配置使用本地管理员帐户的 BTARN，输入作为帐户*< 计算机名称\>\\< 管理员名称\>*中**用户 ID**字段**服务凭据**区域。  
+    >  如果你想要配置使用本地管理员帐户的 BTARN，输入作为帐户 *< 计算机名称\>\\< 管理员名称\>* 中**用户 ID**字段**服务凭据**区域。  
   
 2.  在**数据库服务器名称**文本中，确认显示的服务器名称正确无误。 在**服务凭据**区域中，输入下运行服务的帐户 （与域） 的用户名和密码。 单击**配置**。  
   

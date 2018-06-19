@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 业务流程选项卡上，工具箱 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 业务流程选项卡上，工具箱 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Clipboard Ring tab [Visual Studio]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Toolbox [Visual Studio]
 - Visual Studio Toolbox
 ms.assetid: 3af1141e-74e9-4e71-b879-354b03ff9ae7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230765"
 ---
 # <a name="biztalk-orchestrations-tab-toolbox"></a>BizTalk 业务流程选项卡工具箱
 当你打开使用业务流程设计器的项目 ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程)，工具箱还显示**BizTalk 业务流程**选项卡。此选项卡上的工具调用*形状*，是否可见且可供使用时**BizTalk 业务流程**展开选项卡。  

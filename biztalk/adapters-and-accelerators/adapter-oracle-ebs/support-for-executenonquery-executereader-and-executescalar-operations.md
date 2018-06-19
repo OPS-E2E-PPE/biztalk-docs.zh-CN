@@ -1,14 +1,14 @@
 ---
-title: "支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作 |Microsoft 文档"
-ms.custom: 
+title: 支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afdd1a5b-2a6b-48b8-a659-afd81f43f34b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215717"
 ---
 # <a name="support-for-executenonquery-executereader-and-executescalar-operations"></a>支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开在根级别以下的出站操作：  

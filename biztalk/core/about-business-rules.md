@@ -1,14 +1,14 @@
 ---
-title: "有关业务规则 |Microsoft 文档"
-ms.custom: 
+title: 有关业务规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d26e906-aef9-4074-8b73-400b6f6c0d2e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224533"
 ---
 # <a name="about-business-rules"></a>有关业务规则
 本部分介绍业务规则的定义，并解释规则引擎如何执行业务规则。  

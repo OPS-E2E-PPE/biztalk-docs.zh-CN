@@ -1,14 +1,14 @@
 ---
-title: "MX 消息示例 |Microsoft 文档"
-ms.custom: 
+title: MX 消息示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b592034f-2dd3-40e4-8f0b-eb6d65c38fff
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209141"
 ---
 # <a name="examples-of-mx-messages"></a>MX 消息的示例
 命令行以生成不同 MX 消息的解决方案 （InfoPath 表单模板）  

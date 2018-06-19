@@ -1,11 +1,11 @@
 ---
-title: "有关.NET Framework 数据提供程序为 mySAP Business Suite |Microsoft 文档"
-ms.custom: 
+title: 有关.NET Framework 数据提供程序为 mySAP Business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSIS
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - custom RFC
 - Visual Studio DDEX plug-in
 ms.assetid: 4832f789-c1d8-4c5d-a49d-b1da6b7d4bd4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217405"
 ---
 # <a name="about-the-net-framework-data-provider-for-mysap-business-suite"></a>有关.NET Framework 数据提供程序为 mySAP Business Suite
 本部分提供有关信息[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 及其功能。 有关如何使用说明[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，请参阅[.NET Framework 数据提供程序用于 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)。  

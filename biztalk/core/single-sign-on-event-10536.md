@@ -1,14 +1,14 @@
 ---
-title: "单一登录： 事件 10536 |Microsoft 文档"
-ms.custom: 
+title: 单一登录： 事件 10536 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d493a45b-c4ed-40fc-8803-b3ca12f9795b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271229"
 ---
 # <a name="single-sign-on-event-10536"></a>单一登录： 事件 10536
 ## <a name="details"></a>详细信息  
@@ -34,17 +35,17 @@ ms.lasthandoff: 09/20/2017
 ## <a name="explanation"></a>解释  
  此警告审核事件表示，满足用户定义的审核级别的事件已经发生。 此事件消息包括：  
   
- **函数：**正在执行的函数  
+ **函数：** 正在执行的函数  
   
- **跟踪 ID:**唯一 GUID 生成第一个 SSO API 时调用。  
+ **跟踪 ID:** 唯一 GUID 生成第一个 SSO API 时调用。  
   
- **客户端计算机：**函数生成的位置的客户端计算机。  
+ **客户端计算机：** 函数生成的位置的客户端计算机。  
   
- **客户端用户：**调用该函数的用户帐户的名称。  
+ **客户端用户：** 调用该函数的用户帐户的名称。  
   
- **应用程序名：**名称的 SSO affiliate 应用程序与此函数。  
+ **应用程序名：** 名称的 SSO affiliate 应用程序与此函数。  
   
- **错误代码：**唯一错误标识符。  
+ **错误代码：** 唯一错误标识符。  
   
  此类型事件用于诊断应用程序开发、疑难解答或运行过程中的问题。 提供的信息可用于确定正在调用的 SSO API。  
   

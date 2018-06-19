@@ -1,18 +1,18 @@
 ---
-title: "修复未分析的消息 |Microsoft 文档"
-ms.custom: 
+title: 修复未分析的消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - unparsed messages
 - repairing messages, unparsed messages
 - messages, unparsed messages
 ms.assetid: cc061243-3539-4407-a096-71a3feded1c5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214541"
 ---
 # <a name="repairing-unparsed-messages"></a>修复未分析的消息
 如果[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]反汇编程序无法分析一条消息，则可以修复该消息。 因此在执行[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]中的窗体[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]MRSR 站点。 但是，[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]处理该消息以不同的方式从修复后的消息 XML 或 BRE 验证失败。  

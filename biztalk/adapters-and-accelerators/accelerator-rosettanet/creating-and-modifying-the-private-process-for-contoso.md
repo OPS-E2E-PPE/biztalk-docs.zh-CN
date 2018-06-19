@@ -1,11 +1,11 @@
 ---
-title: "创建和修改私有 õ Contoso |Microsoft 文档"
-ms.custom: 
+title: 创建和修改私有 õ Contoso |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, creating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, private processes
 - private process tutorial, configuring private processes
 ms.assetid: 0690aaef-cd9e-46aa-8bd5-22744d5aec4c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210061"
 ---
 # <a name="creating-and-modifying-the-private-process-for-contoso"></a>创建和修改 Contoso 私有过程
 实现解决方案时，您还可以通过在 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 中自定义专用流程来用基于 RosettaNet 的消息执行其他任务。 本节演示如何通过用业务规则引擎 (BRE) 创建策略以及用 BizTalk 编辑器自定义专用业务流程，来自定义专用流程。  

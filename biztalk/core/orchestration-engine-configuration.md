@@ -1,11 +1,11 @@
 ---
-title: "业务流程引擎配置 |Microsoft 文档"
-ms.custom: 
+title: 业务流程引擎配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration engine, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestration engine, dehydration
 - orchestration engine, configuring
 ms.assetid: d4f253c3-317d-4b52-bf54-81d50f03eeb3
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972675"
 ---
 # <a name="orchestration-engine-configuration"></a>业务流程引擎配置
 业务流程引擎使用名为 BTSNTSvc.exe.config 的 XML 文件来确定特定行为。 例如，冻结属性及其默认值在 BTSNTSvc.exe.config 文件中配置为 XML，并会在所有包含业务流程的主机实例启动时进行读取。 有关详细信息，请参阅[Orchestration 冻结和 Rehydration](../core/orchestration-dehydration-and-rehydration.md)。  
@@ -228,7 +229,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
  BTSNTSvc.exe 配置文件包含若干个其他部分，.NET Framework 常规参考中记载了这些部分。 有关修改这些部分的详细信息请参阅**配置文件架构**的在.NET Framework 常规参考[http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)。  
   
- 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET  **\<appSettings\>** 标记下**\<配置\>**标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制 **\<appSettings\>**  BTSNTSvc.exe.config 文件中的标记通常将适用于从内部业务流程调用的自定义.NET 组件。 例如：  
+ 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET  **\<appSettings\>** 标记下**\<配置\>** 标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制 **\<appSettings\>**  BTSNTSvc.exe.config 文件中的标记通常将适用于从内部业务流程调用的自定义.NET 组件。 例如：  
   
 ```  
 <appSettings>  

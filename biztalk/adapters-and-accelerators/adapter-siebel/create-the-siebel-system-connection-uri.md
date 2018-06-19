@@ -1,11 +1,11 @@
 ---
-title: "创建 Siebel 系统连接 URI |Microsoft 文档"
-ms.custom: 
+title: 创建 Siebel 系统连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - connection URI
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, connect using connection URI
 - connecting using connection URI
 ms.assetid: 8cc78149-1c20-40db-aece-aab520ee04e7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224549"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a>创建 Siebel 系统连接 URI
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]连接 URI 包含适配器用于建立到 Siebel 系统的连接的属性。  
@@ -99,7 +100,7 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 |加密|之间使用的加密类型[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。 支持的值为 none、 mscrypto，或 rsa。 此参数可选。 如果未指定，则 Siebel 系统将提供默认值 （无）。|  
 |压缩|要使用之间的压缩算法[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。 支持的值为 none 或 zlib。 此参数可选。 如果未指定，则 Siebel 系统将提供默认值 (zlib)。|  
 |SiebelServer|Siebel 服务器中。 所需的所有 Siebel 7.5 服务器连接 (7.5.2、 7.5.3，等等。);否则，不设置此参数。|  
-|SiebelRepository|Siebel 存储库。 所需服务器; 上是否存在多个存储库否则为可选。 **注意：**如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。|  
+|SiebelRepository|Siebel 存储库。 所需服务器; 上是否存在多个存储库否则为可选。 **注意：** 如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。|  
   
  在查询信息中设置的 Siebel 参数的详细信息，请参阅 Siebel 文档。  
   

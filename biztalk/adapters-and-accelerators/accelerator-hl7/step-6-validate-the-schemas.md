@@ -1,18 +1,18 @@
 ---
-title: "步骤 6： 验证架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6： 验证架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, schemas
 - schemas, validating
 - validating, schemas
 ms.assetid: 58cd8680-d135-485a-9463-e7701202eaf7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206333"
 ---
 # <a name="step-6-validate-the-schemas"></a>步骤 6： 验证架构
 在此步骤中，你可以使用验证架构命令以确定是否任一架构包含任何内部不一致，或者具有其他问题，可能会阻止任一架构用于有效地处理实例消息。  

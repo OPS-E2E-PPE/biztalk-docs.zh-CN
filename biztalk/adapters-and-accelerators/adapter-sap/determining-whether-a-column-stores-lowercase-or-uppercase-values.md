@@ -1,14 +1,14 @@
 ---
-title: "确定列是否存储小写或大写值 |Microsoft 文档"
-ms.custom: 
+title: 确定列是否存储小写或大写值 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1edc8332-d8c7-4040-895b-f121fb03df44
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216981"
 ---
 # <a name="determining-whether-a-column-stores-lowercase-or-uppercase-values"></a>确定是否列存储小写或大写值
 本部分列出在 SAP 系统，以确定是否 SAP 表中的列存储小写或大写字符上执行的高级任务。 有关如何执行此任务的详细说明必须联系您的 SAP 管理员，或请参阅 SAP 文档。  

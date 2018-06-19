@@ -1,18 +1,18 @@
 ---
-title: "Siebel 适配器中的 SiebelCommand 类 |Microsoft 文档"
-ms.custom: 
+title: Siebel 适配器中的 SiebelCommand 类 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SiebelCommand
 - Data Provider for Siebel, SiebelCommand
 - SiebelCommand, supported methods and properties
 ms.assetid: 7cba0e47-634b-4878-b480-80fbcbbf5c90
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222357"
 ---
 # <a name="siebelcommand-class-in-the-siebel-adapter"></a>Siebel 适配器中 SiebelCommand 类
 在建立与 Siebel 系统的连接后[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]分析 Siebel 命令字符串和 ADO.NET 客户端提供的命令参数并将该命令映射到 WCF 请求消息。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]然后将请求发送到[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，并获取响应 XML 和正文内容的适配器。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]然后使用`XMLDataReader`从 XML 正文检索关系数据。  

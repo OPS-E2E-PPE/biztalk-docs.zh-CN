@@ -1,18 +1,18 @@
 ---
-title: "配置 A4SWIFT 用户 |Microsoft 文档"
-ms.custom: 
+title: 配置 A4SWIFT 用户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, user accounts
 - creating, user accounts
 - user accounts, creating
 ms.assetid: 45dcbece-ec8d-410a-8320-79bfbc4c779d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209373"
 ---
 # <a name="configuring-a4swift-users"></a>配置 A4SWIFT 用户
 在安装过程中[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]，A4SWIFT 配置程序创建默认贸易合作伙伴配置文件和协议，并将注册 BizTalk Server。 A4SWIFT 还会创建消息修复和新提交组件使用的文档库。  

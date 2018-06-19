@@ -1,14 +1,14 @@
 ---
-title: "Namespace 管理 |Microsoft 文档"
-ms.custom: 
+title: Namespace 管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4638c47c-3cdd-43af-aa00-da98e7293503
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263733"
 ---
 # <a name="namespace-management"></a>命名空间管理
 BizTalk 编辑器支持命名空间。 XML 命名空间是可以在 XML 消息中用作元素或属性名称的名称集合。 命名空间对元素和属性名称进行限定，以避免可能在相同架构中其他位置定义的相同元素和属性名称之间存在冲突。  

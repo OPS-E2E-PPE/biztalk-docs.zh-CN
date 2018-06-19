@@ -1,18 +1,18 @@
 ---
-title: "元数据和 WCF 服务与 Oracle 数据库的模型 |Microsoft 文档"
-ms.custom: 
+title: 元数据和 WCF 服务与 Oracle 数据库的模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service model, metadata
 - WCF client class
 - WCF service contract
 ms.assetid: b55cf4ed-c41a-4986-bbaf-88e80c32b01f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214973"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-oracle-database"></a>元数据和 WCF 服务模型与 Oracle 数据库
 在 WCF 服务模型中，你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel 元数据实用工具 (svcutile.exe) 生成代理类通过其代码可以：  

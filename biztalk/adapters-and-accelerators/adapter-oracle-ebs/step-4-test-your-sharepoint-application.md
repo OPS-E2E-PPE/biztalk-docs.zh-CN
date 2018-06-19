@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试 SharePoint 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试 SharePoint 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a859044e-a28e-477e-a20b-f9bb3c9f7405
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218237"
 ---
 # <a name="step-4-test-your-sharepoint-application"></a>步骤 4： 测试 SharePoint 应用程序
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 Oracle E-business Suite 检索某些数据测试应用程序。 本主题将说明了如何使用应用程序从 Oracle E-business Suite 检索数据。  
+ **目标：** 后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 Oracle E-business Suite 检索某些数据测试应用程序。 本主题将说明了如何使用应用程序从 Oracle E-business Suite 检索数据。  
   
 ## <a name="prerequisites"></a>先决条件  
  您应已创建包含相应的 Web 部件，以检索业务数据的 Web 部件页。 请参阅[步骤 3： 创建 SharePoint 应用程序从 Oracle E-business Suite 检索数据](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)。  

@@ -1,17 +1,17 @@
 ---
-title: "第 3 课： 添加自定义接收管道 |Microsoft 文档"
-ms.custom: 
+title: 第 3 课： 添加自定义接收管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating custom pipelines
 - custom pipelines
 ms.assetid: 1917b8e2-4f1c-4c20-abe4-ea18a406eeeb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210005"
 ---
 # <a name="lesson-3-adding-a-custom-receive-pipeline"></a>第 3 课： 添加自定义接收管道
 在本课中，你将创建使用 BizTalk 管道设计器的自定义接收管道。 自定义接收管道是一种适配器之前接收消息之后, 在消息运行的管道[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]将其发布到 MessageBox 数据库。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换 |Microsoft 文档"
-ms.custom: 
+title: 步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30a55f1e-32cc-409a-a814-084026f51b35
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22276589"
 ---
 # <a name="step-6-on-premises-create-a-transform-to-map-the-message-from-the-queue-to-the-insert-schema"></a>步骤 6 （在本地）： 创建一个可映射到 Insert 架构从队列消息的转换
 收到的消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从 Service Bus 队列将是**ECommerceSalesOrder.xsd**架构。 但是，若要插入到消息**SalesOrder**表，消息必须为**插入**中生成的架构[步骤 5 （在本地）： 生成用于插入消息 inito 架构SalesOrder 表](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)。 因此，在本主题中，我们创建一个映射，以便转换**ECommerceSalesOrder.xsd**到 Insert 操作架构的架构。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]你已创建，右键单击项目，指向**添加**，然后单击**新项**。 在**新项**对话框中，选择**映射**，输入映射名称为`SalesOrder_SQL.btm`，然后单击**添加**。  
   
-2.  在映射中，对于源架构中，选择**ECommerceSalesOrder.xsd**。 对于目标架构中，选择**TableOperations.SalesOrder.xsd (Insert)**架构。  
+2.  在映射中，对于源架构中，选择**ECommerceSalesOrder.xsd**。 对于目标架构中，选择**TableOperations.SalesOrder.xsd (Insert)** 架构。  
   
 3.  直接映射源架构和目标架构中的以下节点：  
   

@@ -1,14 +1,14 @@
 ---
-title: "从 Oracle E-business Suite 接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: 从 Oracle E-business Suite 接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbcb23d0-508d-4601-91b4-c674d76cd063
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218613"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-oracle-e-business-suite"></a>从 Oracle E-business Suite 接收基于轮询的数据更改消息
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]支持通过轮询接口表、 界面视图、 表和视图接收基于轮询的数据更改消息。 适配器将消息传送到您的应用程序：  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
 |绑定属性|值|默认|必需/可选|  
 |----------------------|-----------|-------------|------------------------|  
 |**InboundOperationType**|请确保值设置为**轮询**。|轮询|必需的。 如果未显式设置，默认值将应用。|  
-|**PolledDataAvailableStatement**|指定执行，以确定任何数据是否可用于轮询的特定表的 SELECT 语句。 指定的语句必须返回的结果集行和列组成。 结果集的第一个单元中的值指示适配器是否执行指定的值**PollingInput**绑定属性。 如果结果的第一个单元包含一个正值，适配器执行的轮询语句。 例如，将为此绑定属性有效的语句：<br /><br /> `Select * from <table_name>`<br /><br /> **注意：**您不能指定此绑定属性的存储的过程。 此外，此语句不能修改 Oracle E-business Suite 或基础的 Oracle 数据库中的数据。|null|必需的。|  
+|**PolledDataAvailableStatement**|指定执行，以确定任何数据是否可用于轮询的特定表的 SELECT 语句。 指定的语句必须返回的结果集行和列组成。 结果集的第一个单元中的值指示适配器是否执行指定的值**PollingInput**绑定属性。 如果结果的第一个单元包含一个正值，适配器执行的轮询语句。 例如，将为此绑定属性有效的语句：<br /><br /> `Select * from <table_name>`<br /><br /> **注意：** 您不能指定此绑定属性的存储的过程。 此外，此语句不能修改 Oracle E-business Suite 或基础的 Oracle 数据库中的数据。|null|必需的。|  
 |**PollingAction**|指定轮询操作的操作。 你可以确定从元数据生成操作使用特定操作的轮询操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。|null|对于上表和视图使用 SELECT 语句的轮询操作可选。|  
 |**PollingInput**|指定以下方法之一：<br /><br /> 应针对 Oracle E-business Suite 执行的 SQL SELECT 语句。 此语句应包含 FOR UPDATE 子句。 有关 FOR UPDATE 子句的信息，请参阅[的轮询语句中指定 FOR UPDATE 子句](#ForUpdate)本主题中更高版本。<br /><br /> -请求的存储的过程、 函数或过程或函数在你想要进行轮询一个包内的消息。|null|必需的。 设置**PollingInput**为非 null 值可启用轮询。|  
 |**PollingInterval**|设置为间隔，以秒为单位，要查询 Oracle E-business Suite 适配器。 此属性指定轮询间隔和轮询事务超时。值应大于 （如果已指定） 上 Oracle E-business Suite 执行查询和后轮询语句所花的时间量加上的客户端来处理查询数据并返回轮询响应消息所花费的时间量。|30|必需的。 如果未显式设置，默认值将应用。|  

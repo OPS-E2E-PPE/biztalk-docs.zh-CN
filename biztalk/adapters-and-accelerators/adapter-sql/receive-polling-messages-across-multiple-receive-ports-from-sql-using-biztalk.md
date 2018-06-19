@@ -1,14 +1,14 @@
 ---
-title: "从 SQL 使用 BizTalk Server 接收轮询消息跨多个接收端口 |Microsoft 文档"
-ms.custom: 
+title: 从 SQL 使用 BizTalk Server 接收轮询消息跨多个接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21cf4875-1c04-41cf-98f5-d1307987ca55
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223957"
 ---
 # <a name="receive-polling-messages-across-multiple-receive-ports-from-sql-using-biztalk-server"></a>从 SQL 使用 BizTalk Server 接收轮询消息跨多个接收端口
 请考虑你想要创建的 BizTalk 应用程序包括两个轮询操作的方案。 每个轮询操作轮询单独的表，员工和客户，从同一个数据库。 当部署中的此类的应用程序[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，你将需要创建两个接收端口。 每个连接 URI 接收端口将是：  

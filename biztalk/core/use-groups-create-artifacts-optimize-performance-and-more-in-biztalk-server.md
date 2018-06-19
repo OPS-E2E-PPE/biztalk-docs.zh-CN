@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286957"
 ---
 # <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a>使用组、 创建项目、 优化性能，和 BizTalk Server 中的详细信息
 管理 BizTalk Server 组、 应用程序、 性能设置和重新启动服务的信息。  

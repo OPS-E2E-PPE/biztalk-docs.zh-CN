@@ -1,17 +1,17 @@
 ---
-title: "管理员-ExplorerOM （BizTalk Server 示例文件夹中） |Microsoft 文档"
-ms.custom: 
+title: 管理员-ExplorerOM （BizTalk Server 示例文件夹中） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, administering
 - administering, examples
 ms.assetid: f6553138-9ab3-4368-84bf-9813e909e372
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230029"
 ---
 # <a name="admin-explorerom-biztalk-server-samples-folder"></a>管理员-ExplorerOM （BizTalk Server 示例文件夹中）
 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括在其软件开发工具包 (SDK) 的 Admin\ExplorerOM 文件夹中的示例。 本部分详细介绍了每个 BizTalk 浏览器对象模型管理示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  

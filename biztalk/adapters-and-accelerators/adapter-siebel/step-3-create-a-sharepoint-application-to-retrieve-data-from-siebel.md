@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建 SharePoint 应用程序从 Siebel 检索数据 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建 SharePoint 应用程序从 Siebel 检索数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86bde531-2daf-452b-b3e6-5481d66f72e7
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225965"
 ---
 # <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel"></a>步骤 3： 创建 SharePoint 应用程序从 Siebel 检索数据
 ![步骤 3 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **完成时间：** 15 分钟。  
   
- **目标：**现在必须采用通过业务数据目录的定义编辑器中，创建的应用程序定义文件，并将其导入 Office SharePoint Server。  
+ **目标：** 现在必须采用通过业务数据目录的定义编辑器中，创建的应用程序定义文件，并将其导入 Office SharePoint Server。  
   
 ## <a name="prerequisites"></a>先决条件  
   

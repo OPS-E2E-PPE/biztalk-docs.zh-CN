@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 测试您的 SharePoint 应用程序 1 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 测试您的 SharePoint 应用程序 1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f7ded5a5-88d5-40aa-814b-70bc0a7dcfa3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216629"
 ---
 # <a name="step-4-test-your-sharepoint-application"></a>步骤 4： 测试 SharePoint 应用程序
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 SAP 系统中检索一些数据来测试应用程序。 本主题将说明了如何使用应用程序从 SAP 系统检索数据。  
+ **目标：** 后您在 SharePoint 站点中添加 Web 部件，并且创建了应用程序，你必须通过从 SAP 系统中检索一些数据来测试应用程序。 本主题将说明了如何使用应用程序从 SAP 系统检索数据。  
   
 ## <a name="prerequisites"></a>先决条件  
   

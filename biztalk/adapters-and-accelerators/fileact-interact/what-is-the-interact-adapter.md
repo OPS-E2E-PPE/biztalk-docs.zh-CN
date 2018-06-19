@@ -1,14 +1,14 @@
 ---
-title: "什么是交互适配器？ | Microsoft Docs"
-ms.custom: 
+title: 什么是交互适配器？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a09063df-c6c4-41b9-96a1-e5059777fa72
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224749"
 ---
 # <a name="what-is-the-interact-adapter"></a>什么是交互适配器？
 SWIFTNet 交互适配器传输的消息提供 BizTalk Server 和 SWIFT 保护 IP 网络 (SIPN) 之间的连接。 SIPN 互连金融机构、 金融业基础结构和客户的安全专用网络上传输消息和文件。 交互适配器使用 SWIFTNet 链接 (SNL) 应用程序编程接口 (API) s 要连接到 SIPN。  

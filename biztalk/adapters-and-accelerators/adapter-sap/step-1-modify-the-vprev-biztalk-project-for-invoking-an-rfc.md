@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migration, modifying previous version of BizTalk project for invoking an RFC
 - migration
 ms.assetid: 2d4a6cd7-d216-4e0f-8f82-41e044cd325b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218101"
 ---
 # <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>步骤 1： 用于调用 RFC 修改 vPrev BizTalk 项目
 ![步骤 1，共 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **完成时间：** 10 分钟  
   
- **目标：**向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：  
+ **目标：** 向现有 vPrev BizTalk 项目在此步骤中，进行以下更改：  
   
 -   为使用基于 WCF 的 SD_RFC_CUSTOMER_GET RFC 生成元数据[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   

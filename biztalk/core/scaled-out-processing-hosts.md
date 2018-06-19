@@ -1,11 +1,11 @@
 ---
-title: "向外扩展处理主机 |Microsoft 文档"
-ms.custom: 
+title: 向外扩展处理主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - high availability
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - hosts, scaling
 - clustering
 ms.assetid: c72ce8fc-7593-4700-8398-23d1a20515c3
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269325"
 ---
 # <a name="scaled-out-processing-hosts"></a>扩展的处理主机
 向外扩展的处理主机会改进性能，并通过隔离两个或多个单独的主机计算机上安装的业务流程功能提供高可用性。 这种隔离，可以将多台计算机添加给处理主机以实现冗余。 在 Microsoft 中的处理主机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行一个或多个主机实例各种业务流程，并创建业务流程的编程对象的实例的相应的坐标。  

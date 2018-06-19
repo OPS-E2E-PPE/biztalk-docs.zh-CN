@@ -1,14 +1,14 @@
 ---
-title: "有关 BizTalk 消息上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 有关 BizTalk 消息上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc700e43-a44c-482b-b91c-9f1d997a486a
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225493"
 ---
 # <a name="about-biztalk-message-context-properties"></a>关于 BizTalk 消息上下文属性
 当 BizTalk Server 适配器接收到某文档时，适配器将为该文档创建 BizTalk 消息。 BizTalk 消息包含所接收的文档以及消息上下文。 消息上下文为 BizTalk Server 处理该文档时所使用的各种属性的容器。 消息上下文中的每个属性均由以下三个部分构成：名称、命名空间和值。 例如，以下消息上下文属性对文档的交换 ID 进行了说明：  

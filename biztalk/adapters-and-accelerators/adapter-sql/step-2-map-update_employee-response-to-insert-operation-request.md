@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d12014a-0147-4227-88fa-0b290eff4cce
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224821"
 ---
 # <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a>步骤 2： 映射要插入操作的请求消息的 UPDATE_EMPLOYEE 响应消息
 ![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储插入操作的请求消息的过程。 通过这样做，你要插入的响应消息中的值将传递**Purchase_Order**表。  
+ **目标：** 在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储插入操作的请求消息的过程。 通过这样做，你要插入的响应消息中的值将传递**Purchase_Order**表。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成[步骤 1： 为 Purchase_Order 表的插入操作创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 项目属性窗口 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 项目属性窗口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 719a985b-5d1b-415e-be70-d974b49f8388
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230669"
 ---
 # <a name="biztalk-project-properties-window"></a>BizTalk 项目属性窗口
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中 BizTalk 项目的项目属性窗口包含以下属性：  

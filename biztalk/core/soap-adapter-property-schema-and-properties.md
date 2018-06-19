@@ -1,11 +1,11 @@
 ---
-title: "SOAP 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: SOAP 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ProxyUsername property [SOAP adapters]
@@ -32,7 +32,7 @@ helpviewer_keywords:
 - MethodName property [SOAP adapters]
 - ProxyPort property [SOAP adapters]
 ms.assetid: b471cf4b-2d87-4aa2-ae4a-f48517fd4c94
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -41,6 +41,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277509"
 ---
 # <a name="soap-adapter-property-schema-and-properties"></a>SOAP 适配器属性架构和属性
 下表列出了 SOAP 适配器属性架构中的属性：  

@@ -1,14 +1,14 @@
 ---
-title: "演练 (AS2): 通过使用异步 MDN 的 AS2 接收 EDI |Microsoft 文档"
-ms.custom: 
+title: '演练 (AS2): 通过使用异步 MDN 的 AS2 接收 EDI |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac3962e4-0525-4194-8cf1-b90664f1a139
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22292397"
 ---
 # <a name="walkthrough-as2-receiving-edi-over-as2-with-an-asynchronous-mdn"></a>演练 (AS2)：使用异步 MDN 通过 AS2 接收 EDI
 本演练将介绍创建一个通过 AS2 传输方法接收 EDI 消息并返回异步 MDN 的解决方案的分步操作过程。  
@@ -133,7 +134,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。  
   
-4.  在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
+4.  在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。 选择 BtsHttpReceive.dll，然后单击**确定**。  
   
 5.  输入`BizTalk HTTP Receive`中`Name`字段，然后再单击**请求限制**。  
   
@@ -147,14 +148,14 @@ ms.lasthandoff: 09/20/2017
   
 1.  在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。  
   
-2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表。 单击 **“确定”**。  
+2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表。 单击 **“确定”**。  
   
     > [!NOTE]
     >  根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。  
   
 3.  选择**应用程序池**，在功能视图选择**BizTalkAppPool**，然后单击**高级设置**中**操作**窗格。  
   
-4.  在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）**按钮。  
+4.  在**高级设置**对话框中，选择**标识**，然后单击**省略号 （...）** 按钮。  
   
 5.  在**应用程序池标识**对话框中，选择**自定义帐户**，然后单击**设置**。  
   
@@ -166,7 +167,7 @@ ms.lasthandoff: 09/20/2017
   
 9. 在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。  
   
-10. 有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。  
+10. 有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HttpReceive。  
   
 11. 单击**测试设置**并验证没有显示在错误**测试连接**对话框。 单击 **“关闭”**，然后单击 **“确定”**。  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。  
   
-4.  有关**物理路径**，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam。  
+4.  有关**物理路径**，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Fabrikam。  
   
 5.  单击**测试设置**并验证没有显示在错误**测试连接**对话框。 单击 **“关闭”**，然后单击 **“确定”**。  
   
@@ -245,7 +246,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  在**发送端口属性**对话框中，你发送端口，例如，名称**Send_Payload**。 选择**文件**为**类型**，然后单击**配置**。  
   
-4.  在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。 保留**文件名**作为**%MessageID%.xml**。 单击 **“确定”**。  
+4.  在**文件传输属性**对话框中，为**目标文件夹**，浏览到并选择**EDI_to_Contoso**步骤 1 中创建的文件夹。 保留**文件名**作为 **%MessageID%.xml**。 单击 **“确定”**。  
   
 5.  接受默认的**PassThruTransmit**为**发送管道**。  
   
@@ -309,7 +310,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  上**验证**页上，选择**使用验证和 MDN 的协议设置，而不是消息标头**复选框  
   
-    3.  在**确认 (Mdn)**页上，执行以下操作：  
+    3.  在**确认 (Mdn)** 页上，执行以下操作：  
   
         1.  选择**请求 MDN**复选框。  
   
@@ -317,7 +318,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  选择**请求异步 MDN**复选框。  
   
-        4.  在**回执送达选项 (URL)**文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。  
+        4.  在**回执送达选项 (URL)** 文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。  
   
 8.  在上执行以下任务**Contoso-> Fabrikam**选项卡。  
   
@@ -375,14 +376,14 @@ ms.lasthandoff: 09/20/2017
   
         |使用此选项|执行的操作|  
         |--------------|----------------|  
-        |**Default**|选择**默认**。 **注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
+        |**Default**|选择**默认**。 **注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。|  
         |**事务类型**|例如，选择你的测试消息的消息类型**864 – 短信**。|  
         |**版本/发行版**|输入**00401**。|  
         |**目标命名空间**|选择**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**。|  
         |**GS1**|验证是否选择测试消息的消息类型，例如， **TX-短信 (864)**。|  
         |**GS2**|输入**01**。|  
         |**GS3**|输入**7654321**。|  
-        |**GS4**|选择所需的日期格式。 选择**CCYYMMDD**。 **注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
+        |**GS4**|选择所需的日期格式。 选择**CCYYMMDD**。 **注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。|  
         |**GS5**|选择所需的时间格式。 选择**HHMMSSdd**。|  
         |**GS7**|选择**T-运输数据协调委员会 (TDCC)**。|  
         |**GS8**|验证已作为中输入的 EDI 版本**00401**。|  

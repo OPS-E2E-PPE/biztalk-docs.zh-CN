@@ -1,14 +1,14 @@
 ---
-title: "开发或创建使用 WCF LOB 适配器 SDK 适配器 |Microsoft 文档"
-ms.custom: 
+title: 开发或创建使用 WCF LOB 适配器 SDK 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ca8c03a-1e4a-4077-b4cb-4e184b520bbb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224717"
 ---
 # <a name="develop-or-create-your-adapter-using-the-wcf-lob-adapter-sdk"></a>开发或创建使用 WCF LOB 适配器 SDK 适配器
 本部分包含的开发人员正在创建使用适配器的信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 一旦已开发了适配器，它通常由任一.NET 或[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]作为一种方式访问操作和数据所需的目标业务线系统中的开发人员。  

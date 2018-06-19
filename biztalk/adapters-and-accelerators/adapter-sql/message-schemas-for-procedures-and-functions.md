@@ -1,14 +1,14 @@
 ---
-title: "有关过程和函数消息架构 |Microsoft 文档"
-ms.custom: 
+title: 有关过程和函数消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4acfb29e-8774-4eb7-ba10-2dcb93d2b41a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223349"
 ---
 # <a name="message-schemas-for-procedures-and-functions"></a>有关过程和函数的消息架构
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]曲面 SQL Server 数据库存储的过程和标量和表值的函数作为操作。 本部分介绍的消息结构和操作用于调用过程和函数。  

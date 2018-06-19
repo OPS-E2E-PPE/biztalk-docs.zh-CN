@@ -1,18 +1,18 @@
 ---
-title: "持久性和业务流程引擎 |Microsoft 文档"
-ms.custom: 
+title: 持久性和业务流程引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestration engine, persistence
 - persistence
 - orchestration engine, serialization
 ms.assetid: 088230ef-13b3-440b-9875-6449f29dd5c6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264925"
 ---
 # <a name="persistence-and-the-orchestration-engine"></a>持久化和业务流程引擎
 状态持久性、 管理和还原形成了大量基本功能的业务流程引擎的基础。 具体而言，持久性至关重要的正确运行：  

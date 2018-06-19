@@ -1,14 +1,14 @@
 ---
-title: "配置 Oracle E-business Suite 连接 URI |Microsoft 文档"
-ms.custom: 
+title: 配置 Oracle E-business Suite 连接 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2bb02b4-4ad6-4b07-b48a-8f9a47967ffc
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22219237"
 ---
 # <a name="configure-the-connection-uri-for-oracle-e-business-suite"></a>配置 Oracle E-business Suite 连接 URI
 连接 URI 是包含参数才能连接到 Oracle E-business Suite 的连接字符串。 在使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，必须指定要连接到 Oracle E-business Suite 生成的元数据的 URI。 配置业务流程使用时[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，你必须指定要连接到 Oracle E-business Suite 执行操作的 URI。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  在**WCF 自定义传输属性**对话框中，单击**常规**选项卡。  
   
-5.  在**地址 (URI)**文本框中，指定连接 URI 以连接到 Oracle E-business Suite。 有关连接 URI 的详细信息为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[配置 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)。  
+5.  在**地址 (URI)** 文本框中，指定连接 URI 以连接到 Oracle E-business Suite。 有关连接 URI 的详细信息为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[配置 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-connection-uri-for-oracle-e-business-suite.md)。  
   
 6.  在**WCF 自定义传输属性**对话框中，单击**绑定**选项卡。从**绑定类型**下拉列表中，选择**oracleEBSBinding**。  
   

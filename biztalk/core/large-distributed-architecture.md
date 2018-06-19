@@ -1,11 +1,11 @@
 ---
-title: "大型分布式体系结构 |Microsoft 文档"
-ms.custom: 
+title: 大型分布式体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - demilitarized zone
 - architecture, large distributions
 ms.assetid: 3cfc07c4-0b1d-489b-9a29-55187fde0539
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -32,6 +32,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264789"
 ---
 # <a name="large-distributed-architecture"></a>大型分布式结构
 有关系统体系结构的完整信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]部署，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。  

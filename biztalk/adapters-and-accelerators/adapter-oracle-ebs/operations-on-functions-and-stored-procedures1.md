@@ -1,14 +1,14 @@
 ---
-title: "对函数和存储的 Procedures1 操作 |Microsoft 文档"
-ms.custom: 
+title: 对函数和存储的 Procedures1 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e6bdaa7-ed3c-43bc-bed5-70fe43f9c2d1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216349"
 ---
 # <a name="operations-on-functions-and-stored-procedures"></a>对函数和存储的过程的操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]支持 Oracle 函数和过程。

@@ -1,14 +1,14 @@
 ---
-title: "准备使用 Tutorial1 |Microsoft 文档"
-ms.custom: 
+title: 准备使用 Tutorial1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4a792b2-8351-4ae8-9d7c-75420c00af03
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225205"
 ---
 # <a name="preparing-to-use-the-tutorial"></a>准备使用本教程
 你必须执行以下操作之前使用 A4SWIFT 适配器端到端教程。  

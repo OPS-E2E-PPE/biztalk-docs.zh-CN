@@ -1,11 +1,11 @@
 ---
-title: "安全与 Siebel 适配器和 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 安全与 Siebel 适配器和 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - credentials, security considerations
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - user name password credentials
 - security, protecting credentials when using the Consume Adapter Service BizTalk Project Add-in
 ms.assetid: 0b3ab81f-0fe3-4dd3-9257-174d9803b4a3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22223901"
 ---
 # <a name="security-with-siebel-adapter-and-biztalk-server"></a>Siebel 适配器和 BizTalk Server 使用的安全
 当通过使用 BizTalk Server 管理控制台中，配置发送端口或接收端口 （位置），或当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要检索 BizTalk 解决方案的消息架构，你必须提供凭据 Siebel 系统。 请务必在一个安全的方法，可帮助防止它们被暴露给潜在的恶意 actors 中提供这些凭据。 本主题讨论如何最安全地提供的凭据[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]BizTalk Server 解决方案。  

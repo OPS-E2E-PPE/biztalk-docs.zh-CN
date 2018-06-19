@@ -1,11 +1,11 @@
 ---
-title: "同步业务事件跟踪 |Microsoft 文档"
-ms.custom: 
+title: 同步业务事件跟踪 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, event tracking
 - BAM, performance
 ms.assetid: 302c7918-bc62-46f1-a949-fbf94a7073e3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22277933"
 ---
 # <a name="synchronous-business-event-tracking"></a>同步业务事件跟踪
 向 BAM 发送事件数据的最简单方法是使用 DirectEventStream 类的实例。 此类在应用程序的当前事务（如果有）的上下文中将事件数据直接保存到 BAM 主导入数据库中。  

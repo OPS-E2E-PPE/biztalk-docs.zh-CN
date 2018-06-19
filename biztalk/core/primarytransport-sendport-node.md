@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264933"
 ---
 # <a name="primarytransport-sendport-node"></a>PrimaryTransport（“发送端口”节点）
 绑定文件的“发送端口”节点的“PrimaryTransport”节点提供了有关主传输（它绑定到与绑定文件一起导出的发送端口）的特定信息。  

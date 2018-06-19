@@ -1,11 +1,11 @@
 ---
-title: "为 BizTalk 主机提供高可用性 |Microsoft 文档"
-ms.custom: 
+title: 为 BizTalk 主机提供高可用性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, MessageBox database
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - hosts, planning
 - MessageBox database
 ms.assetid: 9583b85c-7cad-4016-8065-5ca7de3f4359
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271893"
 ---
 # <a name="providing-high-availability-for-biztalk-hosts"></a>为 BizTalk 主机提供高可用性
 由于您可以策略性地将逻辑主机专门用于运行特定方面的功能，如接收消息、发送消息或处理业务流程，所以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可灵活处理高可用性方面的问题。  

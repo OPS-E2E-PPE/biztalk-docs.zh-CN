@@ -1,14 +1,14 @@
 ---
-title: "步骤 3A： 添加一个文件接收位置交互应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3A： 添加一个文件接收位置交互应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f4bae51-6869-4334-a3a1-ef7e662197ca
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224173"
 ---
 # <a name="step-3a-add-a-file-receive-location-for-the-interact-store-and-forward-scenario"></a>步骤 3A： 添加一个文件接收交互应用商店应用和向前情况下的位置
 完成[步骤 2： 将 SWIFTNet 配置添加到交互应用商店应用和转发方案 Paramfile](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)在开始此步骤之前。

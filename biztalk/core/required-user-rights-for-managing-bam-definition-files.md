@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb4fb73f-b783-4a04-9bd6-a135b3dd2655
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22268749"
 ---
 # <a name="required-user-rights-for-managing-bam-definition-files"></a>管理 BAM 定义文件所需的用户权限
 任何角色的用户均可以创建、管理和查看 BAM 定义文件。 管理 BAM 定义文件包括部署和删除这些文件，以及管理与定义文件相关联的活动、视图、警报和项目。  

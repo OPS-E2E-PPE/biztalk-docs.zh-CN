@@ -1,11 +1,11 @@
 ---
-title: "FIN 响应类型 |Microsoft 文档"
-ms.custom: 
+title: FIN 响应类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, response types
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - messages, message types
 - response types [FIN Response Reconciliation]
 ms.assetid: a6ef2f20-08ab-40d3-a0a5-cc4048ce0987
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208061"
 ---
 # <a name="fin-response-types"></a>FIN 响应类型
 FIN 响应对帐 (FRR) 来协调对任何类别 0 到 9 SWIFT FIN 消息的响应。 SWIFT FIN 应用程序始终将至少一个，并且可能不只一个，确认 (ACK) 发送响应这些 FIN 消息之一，或否定确认 （否认）。 下表显示的消息类型的出站和入站 （响应） FRR 所处理的消息。  
