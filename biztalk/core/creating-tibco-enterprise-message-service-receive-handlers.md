@@ -1,15 +1,15 @@
 ---
-title: "创建 TIBCO EMS 接收项目 |Microsoft 文档"
-description: "创建接收端口，并设置要在 BizTalk Server 中使用 TIBCO 企业消息服务适配器传输属性"
-ms.custom: 
+title: 创建 TIBCO EMS 接收项目 |Microsoft 文档
+description: 创建接收端口，并设置要在 BizTalk Server 中使用 TIBCO 企业消息服务适配器传输属性
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1307e3c-0237-4f19-a642-58e694fe95d0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015372"
 ---
 # <a name="create-tibco-ems-receive-artifacts"></a><span data-ttu-id="d0376-103">创建 TIBCO EMS 接收项目</span><span class="sxs-lookup"><span data-stu-id="d0376-103">Create TIBCO EMS receive artifacts</span></span>
 

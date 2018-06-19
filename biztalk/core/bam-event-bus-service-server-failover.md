@@ -1,14 +1,14 @@
 ---
-title: "BAM 事件总线服务服务器故障转移 |Microsoft 文档"
-ms.custom: 
+title: BAM 事件总线服务服务器故障转移 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f12378c8-09bb-45c1-ade1-d9b20131461f
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230637"
 ---
 # <a name="bam-event-bus-service-server-failover"></a><span data-ttu-id="eda6a-102">BAM 事件总线服务服务器故障转移</span><span class="sxs-lookup"><span data-stu-id="eda6a-102">BAM Event Bus Service Server Failover</span></span>
 <span data-ttu-id="eda6a-103">BAM 事件 Bus 服务包括故障容错逻辑，使它能够恢复并重新启动从意外的故障，而不会丢失任何数据。</span><span class="sxs-lookup"><span data-stu-id="eda6a-103">The BAM Event Bus service includes fault tolerance logic that enables it to recover and restart from an unexpected failure without losing any data.</span></span>  

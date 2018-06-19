@@ -1,14 +1,14 @@
 ---
-title: "移动 BAM 数据库 |Microsoft 文档"
-ms.custom: 
+title: 移动 BAM 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6babac0-304e-4485-b4c5-6221814b4468
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299133"
 ---
 # <a name="moving-bam-databases"></a><span data-ttu-id="586e8-102">移动 BAM 数据库</span><span class="sxs-lookup"><span data-stu-id="586e8-102">Moving BAM Databases</span></span>
 <span data-ttu-id="586e8-103">本部分介绍如何将移动 BAM 相关[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库从一个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机添加到另一个。</span><span class="sxs-lookup"><span data-stu-id="586e8-103">This section describes how to move the BAM-related [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases from one [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer to another.</span></span>  

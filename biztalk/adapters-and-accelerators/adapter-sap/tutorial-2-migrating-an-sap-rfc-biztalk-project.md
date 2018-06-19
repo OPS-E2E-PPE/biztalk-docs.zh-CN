@@ -1,18 +1,18 @@
 ---
-title: "教程 2： 迁移 SAP RFC BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 教程 2： 迁移 SAP RFC BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, BizTalk project from previous version of the SAP adapter
 - migration
 - migrating, SAP RFC BizTalk project
 ms.assetid: b4943613-23d2-4869-b033-ec07daabfac5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218093"
 ---
 # <a name="tutorial-2-migrating-an-sap-rfc-biztalk-project"></a><span data-ttu-id="bfcbb-102">教程 2： 迁移 SAP RFC BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="bfcbb-102">Tutorial 2: Migrating an SAP RFC BizTalk Project</span></span>
 <span data-ttu-id="bfcbb-103">SAP 适配器随 Microsoft BizTalk Server 以前版本的基于 WCF 的不同[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在许多方面，包括：</span><span class="sxs-lookup"><span data-stu-id="bfcbb-103">The previous version of the SAP adapter that shipped with Microsoft BizTalk Server differs from the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] in many aspects, including:</span></span>  

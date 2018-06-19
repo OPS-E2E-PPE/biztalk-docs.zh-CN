@@ -1,14 +1,14 @@
 ---
-title: "网络优化 |Microsoft 文档"
-ms.custom: 
+title: 网络优化 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ff0392f-37ae-4ca6-8cc6-d53065de64c5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298757"
 ---
 # <a name="network-optimizations"></a><span data-ttu-id="a29f5-102">网络优化</span><span class="sxs-lookup"><span data-stu-id="a29f5-102">Network Optimizations</span></span>
 <span data-ttu-id="a29f5-103">在 BizTalk Server 环境中的 BizTalk Server 计算机都独立于 SQL Server 计算机，BizTalk 服务器处理的每个消息无需通过网络通信。</span><span class="sxs-lookup"><span data-stu-id="a29f5-103">In a BizTalk Server environment where the BizTalk Server computer(s) are separate from the SQL Server computer(s), each and every message processed by BizTalk Server requires communication over the network.</span></span> <span data-ttu-id="a29f5-104">这种通信包括相当大的 BizTalk Server 计算机和 BizTalk 消息框数据库、 BizTalk 管理数据库、 BAM 数据库和其他数据库之间的流量。</span><span class="sxs-lookup"><span data-stu-id="a29f5-104">This communication includes considerable traffic between the BizTalk Server computers and the BizTalk Message Box database(s), the BizTalk Management database(s), the BAM databases, and other databases.</span></span> <span data-ttu-id="a29f5-105">在高负载情况下，此通信可能会导致大量网络流量，尤其是在网络设置未经过优化，没有足够的网络接口卡已安装，或足够的网络带宽可能成为瓶颈，可用。</span><span class="sxs-lookup"><span data-stu-id="a29f5-105">In high-load scenarios, this communication can result in considerable network traffic and can become a bottleneck, especially when network settings have not been optimized, not enough network interface cards are installed, or insufficient network bandwidth is available.</span></span>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="a29f5-127">之后关闭虚拟机，右键单击虚拟机，然后依次**设置**若要更改虚拟机的设置。</span><span class="sxs-lookup"><span data-stu-id="a29f5-127">After shutting down the virtual machines, right-click a virtual machine, and then click **Settings** to change the settings for a virtual machine.</span></span>  
   
-6.  <span data-ttu-id="a29f5-128">在**< machine_name > 设置**对话框中，在**添加硬件**，单击以选择**网络适配器**，然后单击**添加**.</span><span class="sxs-lookup"><span data-stu-id="a29f5-128">In the **Settings for <machine_name>** dialog box, under **Add Hardware**, click to select **Network Adapter**, and then click **Add**.</span></span>  
+6.  <span data-ttu-id="a29f5-128">在 **< machine_name > 设置**对话框中，在**添加硬件**，单击以选择**网络适配器**，然后单击**添加**.</span><span class="sxs-lookup"><span data-stu-id="a29f5-128">In the **Settings for <machine_name>** dialog box, under **Add Hardware**, click to select **Network Adapter**, and then click **Add**.</span></span>  
   
 7.  <span data-ttu-id="a29f5-129">上**网络适配器**配置页上，在**网络：**，选择你以前创建的专用虚拟网络，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="a29f5-129">On the **Network Adapter** configuration page, under **Network:**, select the private virtual network that you created earlier, and then click **OK**.</span></span> <span data-ttu-id="a29f5-130">你现在已专用虚拟网络提供到 HYPER-V 虚拟机将可访问下次启动虚拟机。</span><span class="sxs-lookup"><span data-stu-id="a29f5-130">You have now made the private virtual network available to the Hyper-V virtual machine which will be accessible the next time that the virtual machine is started.</span></span>  
   

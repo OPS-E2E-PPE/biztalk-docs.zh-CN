@@ -1,14 +1,14 @@
 ---
-title: "ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作中使用 WCF 服务模型的 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作中使用 WCF 服务模型的 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 54c42db1-9a4d-4003-af69-f75ff48b575a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217381"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-oracle-e-business-suite-using-the-wcf-service-model"></a><span data-ttu-id="19594-102">在使用 WCF 服务模型的 Oracle E-business Suite ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作</span><span class="sxs-lookup"><span data-stu-id="19594-102">ExecuteReader, ExecuteScalar, or ExecuteNonQuery operations in Oracle E-Business Suite using the WCF service model</span></span>
 <span data-ttu-id="19594-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]如公开泛型操作**ExecuteNonQuery**， **ExecuteReader**，和**ExecuteScalar**。</span><span class="sxs-lookup"><span data-stu-id="19594-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes generic operations such as **ExecuteNonQuery**, **ExecuteReader**, and **ExecuteScalar**.</span></span> <span data-ttu-id="19594-104">这些操作可用于在 Oracle E-business Suite 上执行任何语句。</span><span class="sxs-lookup"><span data-stu-id="19594-104">You can use these operations to execute any statement on Oracle E-Business Suite.</span></span> <span data-ttu-id="19594-105">这些操作因响应为语句所获取的类型而异。</span><span class="sxs-lookup"><span data-stu-id="19594-105">These operations differ based on the kind of response you get for the statement.</span></span> <span data-ttu-id="19594-106">有关如何适配器支持这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="19594-106">For more information about how the adapter supports these operations, see [Support for ExecuteNonQuery, ExecuteReader, and ExecuteScalar Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md).</span></span>  

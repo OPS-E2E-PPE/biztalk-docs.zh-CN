@@ -1,14 +1,14 @@
 ---
-title: "监视限制使用性能阈值规则 |Microsoft 文档"
-ms.custom: 
+title: 监视限制使用性能阈值规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc2c3024-a54b-4485-8110-c2ec9ec52721
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299077"
 ---
 # <a name="monitoring-throttling-using-performance-threshold-rules"></a><span data-ttu-id="4de0e-102">监视限制使用性能阈值规则</span><span class="sxs-lookup"><span data-stu-id="4de0e-102">Monitoring Throttling Using Performance Threshold Rules</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="4de0e-103">将初始化限制，以防止系统达到不可恢复的状态。</span><span class="sxs-lookup"><span data-stu-id="4de0e-103"> will initialize throttling to protect the system from reaching an unrecoverable state.</span></span> <span data-ttu-id="4de0e-104">限制可以表示存在问题，帮助您识别其源。</span><span class="sxs-lookup"><span data-stu-id="4de0e-104">Throttling can indicate a problem and assist you in identifying its source.</span></span> <span data-ttu-id="4de0e-105">确定基于限制的状态的瓶颈的原因后，分析其他性能计数器，以缩小问题的根源。</span><span class="sxs-lookup"><span data-stu-id="4de0e-105">After you have identified the cause of the bottleneck based on the throttling state, analyze the other performance counters to narrow down the source of the problem.</span></span>  

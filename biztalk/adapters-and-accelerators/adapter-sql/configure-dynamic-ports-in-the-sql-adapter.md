@@ -1,14 +1,14 @@
 ---
-title: "在 SQL 适配器中配置动态端口 |Microsoft 文档"
-ms.custom: 
+title: 在 SQL 适配器中配置动态端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c98b66ed-0bf7-4b24-9d16-9792d033b818
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222189"
 ---
 # <a name="configure-dynamic-ports-in-the-sql-adapter"></a><span data-ttu-id="6d36e-102">在 SQL 适配器中配置动态端口</span><span class="sxs-lookup"><span data-stu-id="6d36e-102">Configure dynamic ports in the SQL adapter</span></span>
 <span data-ttu-id="6d36e-103">在[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你可以配置为动态端口[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="6d36e-103">In [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you can configure dynamic ports for a [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)].</span></span> <span data-ttu-id="6d36e-104">因为[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]是一个基于 WCF 的适配器，你可以动态配置的端口[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]通过使用消息上下文属性。</span><span class="sxs-lookup"><span data-stu-id="6d36e-104">Because the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is a WCF-based adapter, you can dynamically configure a port for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] by using message context properties.</span></span>  

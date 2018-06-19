@@ -1,14 +1,14 @@
 ---
-title: "创建映射 |Microsoft 文档"
-ms.custom: 
+title: 创建映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc9f8ad1-4aad-4866-8aa4-4877fdc5e5f9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969107"
 ---
 # <a name="creating-maps"></a><span data-ttu-id="6f032-102">创建映射</span><span class="sxs-lookup"><span data-stu-id="6f032-102">Creating Maps</span></span>
 <span data-ttu-id="6f032-103">在选项卡上显示 BizTalk 映射程序的主要用户界面[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编辑窗口。</span><span class="sxs-lookup"><span data-stu-id="6f032-103">The primary user interface for BizTalk Mapper is displayed on a tab within the [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] editing window.</span></span> <span data-ttu-id="6f032-104">此显示分成三个窗格。</span><span class="sxs-lookup"><span data-stu-id="6f032-104">This display is divided into three panes.</span></span> <span data-ttu-id="6f032-105">左窗格以树视图的形式显示源架构。</span><span class="sxs-lookup"><span data-stu-id="6f032-105">The left pane displays the source schema as a tree.</span></span> <span data-ttu-id="6f032-106">右窗格以树视图的形式显示目标架构。</span><span class="sxs-lookup"><span data-stu-id="6f032-106">The right pane displays the destination schema as a tree.</span></span> <span data-ttu-id="6f032-107">中间窗格以多个页面的形式显示网格。</span><span class="sxs-lookup"><span data-stu-id="6f032-107">The middle pane displays the grid as multiple pages.</span></span> <span data-ttu-id="6f032-108">为了指示要如何将数据从源架构映射到目标架构，需在要映射的记录和字段之间绘制线条。</span><span class="sxs-lookup"><span data-stu-id="6f032-108">To indicate how you want to map data from the source schema to the destination schema, you draw lines between the records and fields you want to map.</span></span> <span data-ttu-id="6f032-109">这些行被称为*链接*，并且它们是指定的数据的映射的最基本方法。</span><span class="sxs-lookup"><span data-stu-id="6f032-109">These lines are called *links*, and they are the most basic way to specify the mapping of data.</span></span> <span data-ttu-id="6f032-110">有关链接记录和字段的详细信息，请参阅[Maps 中的链接](../core/links-in-maps.md)。</span><span class="sxs-lookup"><span data-stu-id="6f032-110">For more information about linking records and fields, see [Links in Maps](../core/links-in-maps.md).</span></span>  

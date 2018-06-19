@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22300133"
 ---
 # <a name="appendix-d-create-the-smtp-server"></a><span data-ttu-id="490d5-102">附录 D：创建 SMTP 服务器</span><span class="sxs-lookup"><span data-stu-id="490d5-102">Appendix D: Create the SMTP Server</span></span>
 <span data-ttu-id="490d5-103">创建供 SQL Server Database Mail 使用的 SMTP 服务器。</span><span class="sxs-lookup"><span data-stu-id="490d5-103">Create the SMTP Server used by SQL Server Database Mail.</span></span>  

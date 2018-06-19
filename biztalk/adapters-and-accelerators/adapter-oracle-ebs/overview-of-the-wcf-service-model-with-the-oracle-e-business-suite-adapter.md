@@ -1,14 +1,14 @@
 ---
-title: "与 Oracle E-business Suite 适配器的 WCF 服务模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 Oracle E-business Suite 适配器的 WCF 服务模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aeeac8a4-a4bc-4963-951c-0c806e232f1e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216445"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="36144-102">与 Oracle E-business Suite 适配器的 WCF 服务模型概述</span><span class="sxs-lookup"><span data-stu-id="36144-102">Overview of the WCF service model with the Oracle E-Business Suite adapter</span></span>
 <span data-ttu-id="36144-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开作为 WCF 服务的 Oracle E-business Suite 系统。</span><span class="sxs-lookup"><span data-stu-id="36144-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] exposes an Oracle E-Business Suite system as a WCF service.</span></span> <span data-ttu-id="36144-104">若要对 Oracle E-business Suite 项目，例如来调用存储的过程中，执行操作你调用上的适配器，这反过来会对执行 Oracle E-business Suite 操作的操作。</span><span class="sxs-lookup"><span data-stu-id="36144-104">To perform operations on Oracle E-Business Suite artifacts, for example to invoke a stored procedure, you invoke an operation on the adapter, which, in turn, performs the operation on the Oracle E-Business Suite.</span></span> <span data-ttu-id="36144-105">你的代码充当客户端提供的适配器的 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="36144-105">Your code acts as a client to the WCF service presented by the adapter.</span></span>  

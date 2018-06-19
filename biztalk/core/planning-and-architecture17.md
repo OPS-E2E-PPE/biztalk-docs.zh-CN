@@ -1,15 +1,15 @@
 ---
-title: "博士 Edwards OneWorld 适配器的体系结构 |Microsoft 文档"
-description: "体系结构、 池、 限制和与博士 Edwards OneWorld BizTalk Server 中的 BizTalk 适配器的多订单项"
-ms.custom: 
+title: 博士 Edwards OneWorld 适配器的体系结构 |Microsoft 文档
+description: 体系结构、 池、 限制和与博士 Edwards OneWorld BizTalk Server 中的 BizTalk 适配器的多订单项
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05560ec1-f09d-4cf3-bce0-386d7aa63c0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014836"
 ---
 # <a name="jd-edwards-oneworld-adapter-architecture"></a><span data-ttu-id="90547-103">博士 Edwards OneWorld 适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="90547-103">JD Edwards OneWorld adapter architecture</span></span>
 

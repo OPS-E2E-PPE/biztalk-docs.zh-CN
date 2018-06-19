@@ -1,14 +1,14 @@
 ---
-title: "元数据和 WCF 服务模型与 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 元数据和 WCF 服务模型与 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95d3fcba-c72f-4ae9-82bd-abbfc2a0c2c4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215205"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-oracle-e-business-suite"></a><span data-ttu-id="11e5e-102">元数据和 Oracle E-business Suite WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="11e5e-102">Metadata and the WCF Service Model with Oracle E-Business Suite</span></span>
 <span data-ttu-id="11e5e-103">在 WCF 服务模型中，你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel 元数据实用工具 (svcutile.exe) 来执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="11e5e-103">In the WCF service model, you use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the ServiceModel Metadata Utility Tool (svcutile.exe) to do the following:</span></span>  

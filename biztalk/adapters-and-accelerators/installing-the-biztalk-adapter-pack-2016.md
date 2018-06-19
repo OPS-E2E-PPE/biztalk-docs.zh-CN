@@ -1,15 +1,15 @@
 ---
-title: "安装 BizTalk 适配器包 2016年 |Microsoft 文档"
-description: "在无提示模式下安装的 BAP 2016，32 位与 64 位的典型或自定义安装"
-ms.custom: 
+title: 安装 BizTalk 适配器包 2016年 |Microsoft 文档
+description: 在无提示模式下安装的 BAP 2016，32 位与 64 位的典型或自定义安装
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f3e1717-8063-4460-bfdc-a933cd58a5c1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967787"
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a><span data-ttu-id="fb90b-103">安装 BizTalk 适配器包 2016</span><span class="sxs-lookup"><span data-stu-id="fb90b-103">Install the BizTalk Adapter Pack 2016</span></span>
 <span data-ttu-id="fb90b-104">安装[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]以下两种方式：</span><span class="sxs-lookup"><span data-stu-id="fb90b-104">Install the [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] in the following two ways:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "TIBCO 集合中的数据类型的发送处理程序映射 |Microsoft 文档"
-ms.custom: 
+title: TIBCO 集合中的数据类型的发送处理程序映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015236"
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a><span data-ttu-id="38dba-102">TIBCO Rendezvous 中用于发送处理程序的数据类型映射</span><span class="sxs-lookup"><span data-stu-id="38dba-102">Data Type Mapping for Send Handlers in TIBCO Rendezvous</span></span>
 <span data-ttu-id="38dba-103">仅当 TIBCO 集合提供类型信息 (xsi:type=) 时，从 XML 架构类型到 TIBCO 集合类型的映射才有可能。</span><span class="sxs-lookup"><span data-stu-id="38dba-103">The mapping from XML schema types to TIBCO Rendezvous types is only possible if TIBCO Rendezvous provides type information (xsi:type=).</span></span> <span data-ttu-id="38dba-104">如果可能，会将任何不受支持的类型映射到字符串。</span><span class="sxs-lookup"><span data-stu-id="38dba-104">Any unsupported types are mapped to strings if it is possible.</span></span> <span data-ttu-id="38dba-105">如果映射不可能，或者该选项已在端口配置中被禁用，则会生成错误。</span><span class="sxs-lookup"><span data-stu-id="38dba-105">If mapping is not possible, or if the option is disabled in the port configuration, an error is generated.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "SQL Server 设置不能更改 |Microsoft 文档"
-description: "最大并行度，自动创建统计信息自动更新统计信息和重新生成 BizTalk Server 中的索引"
-ms.custom: 
+title: SQL Server 设置不能更改 |Microsoft 文档
+description: 最大并行度，自动创建统计信息自动更新统计信息和重新生成 BizTalk Server 中的索引
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4b383bfb-c3d9-47d4-b294-f6be94302734
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015364"
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a><span data-ttu-id="f822e-103">不应更改的 SQL Server 设置</span><span class="sxs-lookup"><span data-stu-id="f822e-103">SQL Server Settings That Should Not Be Changed</span></span>
 <span data-ttu-id="f822e-104">设置时[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]期间的操作的准备情况过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你不应更改为下列设置。</span><span class="sxs-lookup"><span data-stu-id="f822e-104">When setting up [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] during the operational readiness procedures for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should not make changes to the following settings.</span></span>  

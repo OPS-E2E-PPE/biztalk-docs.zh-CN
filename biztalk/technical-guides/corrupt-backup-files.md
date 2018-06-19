@@ -1,14 +1,14 @@
 ---
-title: "损坏的备份文件 |Microsoft 文档"
-ms.custom: 
+title: 损坏的备份文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc48197c-944a-4f0a-ba01-8e1d91c88ad3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299629"
 ---
 # <a name="corrupt-backup-files"></a><span data-ttu-id="6a305-102">损坏的备份文件</span><span class="sxs-lookup"><span data-stu-id="6a305-102">Corrupt Backup Files</span></span>
 <span data-ttu-id="6a305-103">备份文件可能已损坏、 损坏或缺失。</span><span class="sxs-lookup"><span data-stu-id="6a305-103">A backup file may become corrupt, damaged, or missing.</span></span> <span data-ttu-id="6a305-104">如果发生这种情况，则无法还原至少一个文件。</span><span class="sxs-lookup"><span data-stu-id="6a305-104">If this occurs, at least one file cannot be restored.</span></span> <span data-ttu-id="6a305-105">遇到的失败的系统上的还原作业搜索下一个有效的完整备份集。</span><span class="sxs-lookup"><span data-stu-id="6a305-105">The restore job on the system that suffered the failure searches for the next valid full backup set.</span></span> <span data-ttu-id="6a305-106">在大多数情况下它将需要强制源系统上进行完整备份。</span><span class="sxs-lookup"><span data-stu-id="6a305-106">In most cases it will be necessary to force a full backup on the source system.</span></span> <span data-ttu-id="6a305-107">如果没有此类集存在，恢复作业将失败并有效的完整备份集到达之前，每次后续运行也会失败。</span><span class="sxs-lookup"><span data-stu-id="6a305-107">If no such set exists, the restore job fails and each subsequent run also fails until a valid full backup set arrives.</span></span> <span data-ttu-id="6a305-108">如果存在一组，它用于修复环境。</span><span class="sxs-lookup"><span data-stu-id="6a305-108">If a set does exist, it is used to repair the environment.</span></span>  

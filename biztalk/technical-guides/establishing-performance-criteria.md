@@ -1,14 +1,14 @@
 ---
-title: "建立性能条件 |Microsoft 文档"
-ms.custom: 
+title: 建立性能条件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 181011d1-aa74-43fe-b05a-30b043956d70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299981"
 ---
 # <a name="establishing-performance-criteria"></a><span data-ttu-id="c6a6c-102">建立性能条件</span><span class="sxs-lookup"><span data-stu-id="c6a6c-102">Establishing Performance Criteria</span></span>
 <span data-ttu-id="c6a6c-103">BizTalk Server 解决方案的性能目标通常分为两个类别、 吞吐量或延迟之一。</span><span class="sxs-lookup"><span data-stu-id="c6a6c-103">The performance goals of a BizTalk Server solution typically fall into one of two categories, throughput or latency.</span></span> <span data-ttu-id="c6a6c-104">本主题介绍评估吞吐量或延迟的 BizTalk Server 解决方案时应考虑的因素。</span><span class="sxs-lookup"><span data-stu-id="c6a6c-104">This topic describes the factors that should be considered when evaluating the throughput or latency of a BizTalk Server solution.</span></span>  

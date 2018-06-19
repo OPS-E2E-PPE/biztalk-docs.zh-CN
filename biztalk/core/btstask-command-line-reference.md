@@ -1,14 +1,14 @@
 ---
-title: "BTSTask 命令行参考 |Microsoft 文档"
-ms.custom: 
+title: BTSTask 命令行参考 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c350695-13e9-441a-9f1e-03cdc3e41328
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22231917"
 ---
 # <a name="btstask-command-line-reference"></a><span data-ttu-id="67f82-102">BTSTask 命令行参考</span><span class="sxs-lookup"><span data-stu-id="67f82-102">BTSTask Command-Line Reference</span></span>
 <span data-ttu-id="67f82-103">本部分中的主题提供有关包含的 BTSTask 命令行工具参考信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="67f82-103">The topics in this section provide reference information for the BTSTask command-line tool included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="67f82-104">在命令行中使用 BTSTask 可执行许多应用程序部署任务，具体如下：</span><span class="sxs-lookup"><span data-stu-id="67f82-104">You can use BTSTask to perform many application deployment tasks from the command line, as follows:</span></span>  

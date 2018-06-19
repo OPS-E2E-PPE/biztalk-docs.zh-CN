@@ -1,14 +1,14 @@
 ---
-title: "Functoid 输入参数 |Microsoft 文档"
-ms.custom: 
+title: Functoid 输入参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cca24f93-74a8-460c-b9ab-9aa2c767fe2f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968507"
 ---
 # <a name="functoid-input-parameters"></a><span data-ttu-id="b1313-102">Functoid 输入参数</span><span class="sxs-lookup"><span data-stu-id="b1313-102">Functoid Input Parameters</span></span>
 <span data-ttu-id="b1313-103">在映射中使用 functoid 的关键是正确配置 functoid 的输入参数。</span><span class="sxs-lookup"><span data-stu-id="b1313-103">A critical aspect of using functoids in your maps is properly configuring the input parameters to the functoid.</span></span> <span data-ttu-id="b1313-104">输入参数的顺序并不重要的所有 functoid 时 (如**添加**functoid，后者将显示相同将从添加预期的属性相关联)，许多 functoid 必须具有其输入的参数按正确顺序指定。</span><span class="sxs-lookup"><span data-stu-id="b1313-104">While the order of input parameters is not critical for all functoids (such as the **Addition** functoid, which displays the same associate properties that one expects from addition), many functoids must have their input parameters specified in the correct order.</span></span>  

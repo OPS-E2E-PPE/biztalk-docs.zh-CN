@@ -1,17 +1,17 @@
 ---
-title: "Siebel 连接字符串的数据提供程序属性 |Microsoft 文档"
-ms.custom: 
+title: Siebel 连接字符串的数据提供程序属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - conncting, to the Siebel system
 - Data Provider for Siebel, connection string
 ms.assetid: 8ab0c29e-e06b-4e74-be4e-9aa862a05539
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222213"
 ---
 # <a name="data-provider-properties-for-the-siebel-connection-string"></a><span data-ttu-id="3d841-102">Siebel 连接字符串的数据提供程序属性</span><span class="sxs-lookup"><span data-stu-id="3d841-102">Data provider properties for the Siebel connection string</span></span>
 <span data-ttu-id="3d841-103">[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) 使用[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]访问 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="3d841-103">The [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) uses the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to access the Siebel system.</span></span> <span data-ttu-id="3d841-104">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]反过来使用 Siebel COM 数据控件库来访问 Siebel 系统。</span><span class="sxs-lookup"><span data-stu-id="3d841-104">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in turn uses the Siebel COM Data Control library to access the Siebel system.</span></span> <span data-ttu-id="3d841-105">Siebel COM 数据控件与 Siebel Web 客户端捆绑。</span><span class="sxs-lookup"><span data-stu-id="3d841-105">The Siebel COM Data Control comes bundled with the Siebel Web client.</span></span>  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="3d841-131">SiebelEnterpriseServer</span><span class="sxs-lookup"><span data-stu-id="3d841-131">SiebelEnterpriseServer</span></span>|<span data-ttu-id="3d841-132">Siebel 企业服务器的名称。</span><span class="sxs-lookup"><span data-stu-id="3d841-132">The name of the Siebel Enterprise Server.</span></span> <span data-ttu-id="3d841-133">此参数是必需的。</span><span class="sxs-lookup"><span data-stu-id="3d841-133">This parameter is required.</span></span>|  
 |<span data-ttu-id="3d841-134">SiebelGateway</span><span class="sxs-lookup"><span data-stu-id="3d841-134">SiebelGateway</span></span>|<span data-ttu-id="3d841-135">Siebel 服务器 IP 和端口组成。</span><span class="sxs-lookup"><span data-stu-id="3d841-135">Consists of the Siebel server IP and port.</span></span> <span data-ttu-id="3d841-136">例如，Siebel_Server:1234。</span><span class="sxs-lookup"><span data-stu-id="3d841-136">For example, Siebel_Server:1234.</span></span>|  
 |<span data-ttu-id="3d841-137">SiebelObjectManager</span><span class="sxs-lookup"><span data-stu-id="3d841-137">SiebelObjectManager</span></span>|<span data-ttu-id="3d841-138">企业服务器上的 Siebel 对象管理器的名称。</span><span class="sxs-lookup"><span data-stu-id="3d841-138">The name of the Siebel object manager on the enterprise server.</span></span> <span data-ttu-id="3d841-139">此参数是必需的。</span><span class="sxs-lookup"><span data-stu-id="3d841-139">This parameter is required.</span></span>|  
-|<span data-ttu-id="3d841-140">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="3d841-140">SiebelRepository</span></span>|<span data-ttu-id="3d841-141">Siebel 存储库。</span><span class="sxs-lookup"><span data-stu-id="3d841-141">The Siebel repository.</span></span> <span data-ttu-id="3d841-142">所需服务器; 上是否存在多个存储库否则为可选。</span><span class="sxs-lookup"><span data-stu-id="3d841-142">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="3d841-143">**注意：**如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。</span><span class="sxs-lookup"><span data-stu-id="3d841-143">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
+|<span data-ttu-id="3d841-140">SiebelRepository</span><span class="sxs-lookup"><span data-stu-id="3d841-140">SiebelRepository</span></span>|<span data-ttu-id="3d841-141">Siebel 存储库。</span><span class="sxs-lookup"><span data-stu-id="3d841-141">The Siebel repository.</span></span> <span data-ttu-id="3d841-142">所需服务器; 上是否存在多个存储库否则为可选。</span><span class="sxs-lookup"><span data-stu-id="3d841-142">Required if more than one repository exists on the server; otherwise, optional.</span></span> <span data-ttu-id="3d841-143">**注意：** 如果多个存储库服务器上是否存在，则必须 SiebelRepository 参数中指定目标存储库。</span><span class="sxs-lookup"><span data-stu-id="3d841-143">**Note:**  If more than one repository exists on the server, you must specify a target repository in the SiebelRepository parameter.</span></span>|  
 |<span data-ttu-id="3d841-144">SiebelServer</span><span class="sxs-lookup"><span data-stu-id="3d841-144">SiebelServer</span></span>|<span data-ttu-id="3d841-145">Siebel 服务器中。</span><span class="sxs-lookup"><span data-stu-id="3d841-145">The Siebel server.</span></span> <span data-ttu-id="3d841-146">所需的所有 Siebel 7.5 服务器连接;否则，不设置此参数。</span><span class="sxs-lookup"><span data-stu-id="3d841-146">Required for all Siebel 7.5 server connections; otherwise, do not set this parameter.</span></span>|  
 |<span data-ttu-id="3d841-147">Transport</span><span class="sxs-lookup"><span data-stu-id="3d841-147">Transport</span></span>|<span data-ttu-id="3d841-148">传输;仅**tcpip**支持。</span><span class="sxs-lookup"><span data-stu-id="3d841-148">The transport; only **tcpip** is supported.</span></span> <span data-ttu-id="3d841-149">此参数可选。</span><span class="sxs-lookup"><span data-stu-id="3d841-149">This parameter is optional.</span></span> <span data-ttu-id="3d841-150">如果未指定，则 Siebel 系统将提供默认值 (**tcpip**)。</span><span class="sxs-lookup"><span data-stu-id="3d841-150">If it is not specified, the Siebel system supplies a default value (**tcpip**).</span></span>|  
   

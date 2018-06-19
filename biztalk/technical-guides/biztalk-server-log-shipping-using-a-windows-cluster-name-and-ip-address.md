@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 日志传送使用 Windows 群集名称和 IP 地址 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 日志传送使用 Windows 群集名称和 IP 地址 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 82ef6908-6009-4d06-8315-0bc85a0aad18
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300061"
 ---
 # <a name="biztalk-server-log-shipping-using-a-windows-cluster-name-and-ip-address"></a><span data-ttu-id="18f85-102">BizTalk Server 日志传送使用 Windows 群集名称和 IP 地址</span><span class="sxs-lookup"><span data-stu-id="18f85-102">BizTalk Server Log Shipping Using a Windows Cluster Name and IP Address</span></span>
 <span data-ttu-id="18f85-103">可以简化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用两个实例的日志传送[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]群集中的源和目标服务器作为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]日志传送方案。</span><span class="sxs-lookup"><span data-stu-id="18f85-103">It is possible to simplify [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping by using two instances of a [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] cluster as the source and destination servers in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping scenario.</span></span> <span data-ttu-id="18f85-104">然后，在发生灾难恢复事件，数据库恢复简化通过仅切换的名称和与群集关联的 IP 地址资源[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例如下所述。</span><span class="sxs-lookup"><span data-stu-id="18f85-104">Then, in the event of a disaster recovery event, database recovery is simplified by merely switching the name and IP address resources associated with the clustered [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] instances as described below.</span></span> <span data-ttu-id="18f85-105">使用此方法时无需运行 UpdateDatabase.vbs 脚本，如主题所述[如何还原数据库备份 BizTalk Server 作业](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md)因为数据库名称保持不变。</span><span class="sxs-lookup"><span data-stu-id="18f85-105">When using this approach there is no need to run the UpdateDatabase.vbs script as described in the topic [How to Restore Databases in the Backup BizTalk Server Job](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md) because the database name is unchanged.</span></span>  

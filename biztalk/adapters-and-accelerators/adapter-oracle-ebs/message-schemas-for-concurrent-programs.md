@@ -1,14 +1,14 @@
 ---
-title: "并发程序的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 并发程序的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3c5709d5-e2b3-485b-9cdd-004985972ba1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217229"
 ---
 # <a name="message-schemas-for-concurrent-programs"></a><span data-ttu-id="6b9c0-102">并发程序的消息架构</span><span class="sxs-lookup"><span data-stu-id="6b9c0-102">Message Schemas for Concurrent Programs</span></span>
 <span data-ttu-id="6b9c0-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]呈现作为操作的并发程序。</span><span class="sxs-lookup"><span data-stu-id="6b9c0-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces concurrent programs as operations.</span></span> <span data-ttu-id="6b9c0-104">作为操作，公开的并发程序以及[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]还显示以下三个标准操作： Get_Status、 Wait_For_Request 和 Submit_Request。</span><span class="sxs-lookup"><span data-stu-id="6b9c0-104">Along with the concurrent programs exposed as operations, the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] also surfaces the following three standard operations: Get_Status, Wait_For_Request, and Submit_Request.</span></span> <span data-ttu-id="6b9c0-105">有关这些操作与并发程序相关的信息，请参阅[并发程序上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。</span><span class="sxs-lookup"><span data-stu-id="6b9c0-105">For information about these operations related to concurrent programs, see [Operations on Concurrent Programs](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md).</span></span>  

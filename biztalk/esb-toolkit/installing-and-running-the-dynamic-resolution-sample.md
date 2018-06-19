@@ -1,14 +1,14 @@
 ---
-title: "安装和运行动态解析示例 |Microsoft 文档"
-ms.custom: 
+title: 安装和运行动态解析示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4359987-b18c-44f5-a2cf-e30e17ac5e9f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015300"
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a><span data-ttu-id="86820-102">安装和运行动态解析示例</span><span class="sxs-lookup"><span data-stu-id="86820-102">Installing and Running the Dynamic Resolution Sample</span></span>
 <span data-ttu-id="86820-103">此动态解析示例演示 ESB 调度程序和 ESB 调度程序反汇编程序管道组件的典型使用方案。</span><span class="sxs-lookup"><span data-stu-id="86820-103">The Dynamic Resolution sample demonstrates typical usage scenarios for the ESB Dispatcher and ESB Dispatcher Disassembler pipeline components.</span></span> <span data-ttu-id="86820-104">它演示如何使用组件来动态解析终结点的位置、 设置路由的属性，并解决，并执行在消息级别的 Microsoft BizTalk 映射，而无需使用业务流程。</span><span class="sxs-lookup"><span data-stu-id="86820-104">It demonstrates how you can use the components to dynamically resolve endpoint location, set routing properties, and resolve and execute Microsoft BizTalk maps at the messaging level without using an orchestration.</span></span> <span data-ttu-id="86820-105">它还演示了单向和双向消息模式。</span><span class="sxs-lookup"><span data-stu-id="86820-105">It also demonstrates both one-way and two-way messaging patterns.</span></span>  

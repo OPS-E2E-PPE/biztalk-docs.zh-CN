@@ -1,17 +1,17 @@
 ---
-title: "FRR 从后端应用程序接收的消息的位置 |Microsoft 文档"
-ms.custom: 
+title: FRR 从后端应用程序接收的消息的位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, receive locations
 - receive locations, FRR
 ms.assetid: da0ad616-800f-493f-822f-eca1224722ab
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207533"
 ---
 # <a name="frr-receive-location-for-messages-from-the-back-end-application"></a><span data-ttu-id="17754-102">FRR 从后端应用程序接收的消息的位置</span><span class="sxs-lookup"><span data-stu-id="17754-102">FRR Receive Location for Messages from the Back-End Application</span></span>
 <span data-ttu-id="17754-103">若要启用 FIN 响应对帐 (FRR)，必须设置 FRR 接收从后端应用程序接收消息并将它们路由至消耗 BizTalk MessageBox 通过 FRR 业务流程的位置。</span><span class="sxs-lookup"><span data-stu-id="17754-103">To enable FIN response reconciliation (FRR), you must set up an FRR receive location that receives messages from the back-end application and routes them to the BizTalk MessageBox for consumption by the FRR orchestration.</span></span> <span data-ttu-id="17754-104">接收位置将通过自定义 FRR 接收管道，必须使用以下的管道组件创建的消息：</span><span class="sxs-lookup"><span data-stu-id="17754-104">The receive location routes a message through a custom FRR receive pipeline that you must create with the following pipeline components:</span></span>  

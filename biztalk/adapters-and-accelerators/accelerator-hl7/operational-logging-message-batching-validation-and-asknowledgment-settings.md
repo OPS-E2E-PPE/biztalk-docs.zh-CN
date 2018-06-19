@@ -1,11 +1,11 @@
 ---
-title: "操作日志记录、 消息批处理、 验证和 asknowledgment 设置 |Microsoft 文档"
-ms.custom: 
+title: 操作日志记录、 消息批处理、 验证和 asknowledgment 设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, administering
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BTAHL7, managing
 - administering
 ms.assetid: c7376de4-4e1d-47e2-acf7-0a32e7a4b073
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205997"
 ---
 # <a name="operational-logging-message-batching-validation-and-asknowledgment-settings"></a><span data-ttu-id="954a4-102">操作日志记录、 消息批处理、 验证和 asknowledgment 设置</span><span class="sxs-lookup"><span data-stu-id="954a4-102">Operational logging, message batching, validation and asknowledgment settings</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="954a4-103">[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]包含服务器和系列的工具，为企业应用程序集成 (EAI)，自动执行业务流程和促进与业务合作伙伴之间的交互。</span><span class="sxs-lookup"><span data-stu-id="954a4-103"> [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] encompasses a server and series of tools for enterprise application integration (EAI), automating business processes, and facilitating interactions with business partners.</span></span> <span data-ttu-id="954a4-104">基于[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]平台，BTAHL7 提升使用 HL7 标准任何设施的医疗应用程序集成。</span><span class="sxs-lookup"><span data-stu-id="954a4-104">Built on the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] platform, BTAHL7 promotes medical application integration for any facility using the HL7 standard.</span></span> <span data-ttu-id="954a4-105">HL7 包含标准交换、 集成和检索电子中临床实践及其管理的信息。</span><span class="sxs-lookup"><span data-stu-id="954a4-105">HL7 contains standards for exchanging, integrating, and retrieving electronic information in clinical practice and management.</span></span>  

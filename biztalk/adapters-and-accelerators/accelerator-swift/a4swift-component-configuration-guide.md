@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209117"
 ---
 # <a name="a4swift-component-configuration-guide"></a><span data-ttu-id="8ae26-102">A4SWIFT 组件配置指南</span><span class="sxs-lookup"><span data-stu-id="8ae26-102">A4SWIFT Component Configuration Guide</span></span>
 <span data-ttu-id="8ae26-103">本指南提供有关配置信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8ae26-103">This guide provides information about configuring [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="8ae26-104">在安装 A4SWIFT 和完成 A4SWIFT 配置向导 （如安装指南中所述） 后，请执行此配置指南中的步骤。</span><span class="sxs-lookup"><span data-stu-id="8ae26-104">Perform the steps in this configuration guide after you have installed A4SWIFT and completed the A4SWIFT Configuration Wizard (as described in the Installation Guide).</span></span> <span data-ttu-id="8ae26-105">此配置指南包括以下说明：</span><span class="sxs-lookup"><span data-stu-id="8ae26-105">This configuration guide includes the following instructions:</span></span>  

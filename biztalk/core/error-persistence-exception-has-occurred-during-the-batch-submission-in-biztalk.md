@@ -1,14 +1,14 @@
 ---
-title: "在批次提交数据封闭在批处理的业务流程期间出现持久性异常 |Microsoft 文档"
-ms.custom: 
+title: 在批次提交数据封闭在批处理的业务流程期间出现持久性异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cf6e832f-9d01-46e7-aaf5-2b402d509fac
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969051"
 ---
 # <a name="a-persistence-exception-has-occurred-during-the-batch-submission-in-the-batching-orchestration"></a><span data-ttu-id="4cf8a-102">批处理业务流程的批提交过程中发生了一个持久性异常</span><span class="sxs-lookup"><span data-stu-id="4cf8a-102">A persistence exception has occurred during the batch submission in the batching Orchestration</span></span>
 ## <a name="details"></a><span data-ttu-id="4cf8a-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="4cf8a-103">Details</span></span>  

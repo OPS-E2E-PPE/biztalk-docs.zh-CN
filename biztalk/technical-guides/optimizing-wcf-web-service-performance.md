@@ -1,14 +1,14 @@
 ---
-title: "优化 WCF Web 服务性能 |Microsoft 文档"
-ms.custom: 
+title: 优化 WCF Web 服务性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93947cef-469c-4126-85a5-06456fa37443
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,12 +17,13 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299413"
 ---
 # <a name="optimizing-wcf-web-service-performance"></a><span data-ttu-id="edd92-102">优化 WCF Web 服务性能</span><span class="sxs-lookup"><span data-stu-id="edd92-102">Optimizing WCF Web Service Performance</span></span>
 <span data-ttu-id="edd92-103">WCF 服务公开多个会影响性能的配置参数。</span><span class="sxs-lookup"><span data-stu-id="edd92-103">WCF services expose numerous configuration parameters that affect performance.</span></span> <span data-ttu-id="edd92-104">本主题提供有关这些配置参数，以提高性能的 WCF 服务的设置最佳值的常规指南。</span><span class="sxs-lookup"><span data-stu-id="edd92-104">This topic provides general guidance for setting optimal values for these configuration parameters to improve performance of WCF services.</span></span>  
   
 ## <a name="implement-servicethrottling-behavior-for-backend-wcf-services"></a><span data-ttu-id="edd92-105">实现后端 WCF 服务的 serviceThrottling 行为</span><span class="sxs-lookup"><span data-stu-id="edd92-105">Implement serviceThrottling behavior for backend WCF services</span></span>  
- <span data-ttu-id="edd92-106">实现后端 WCF 服务的 serviceThrottling 行为。</span><span class="sxs-lookup"><span data-stu-id="edd92-106">Implement serviceThrottling behavior for backend WCF services.</span></span> <span data-ttu-id="edd92-107">服务限制，可以在后端 WCF 服务器上的负载平衡和强制执行资源分配。</span><span class="sxs-lookup"><span data-stu-id="edd92-107">Service throttling allows you to even out the load on your backend WCF servers and to enforce resource allocation.</span></span> <span data-ttu-id="edd92-108">通过修改的值配置的后端 WCF 服务的 serviceThrottling 行为**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances** WCF 服务的配置文件中的参数。</span><span class="sxs-lookup"><span data-stu-id="edd92-108">serviceThrottling behavior for backend WCF services is configured by modifying the values for the **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** parameters in the config file for the WCF service.</span></span> <span data-ttu-id="edd92-109">设置**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances**为值大于 16 * 数 Cpu 或 CPU 内核。</span><span class="sxs-lookup"><span data-stu-id="edd92-109">Set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 16 * the number of CPUs or CPU cores.</span></span> <span data-ttu-id="edd92-110">例如，具有 8 个 CPU 内核的计算机上, 设置**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances**到大于 128 (16 * 8 = 128) 的值如下所示：</span><span class="sxs-lookup"><span data-stu-id="edd92-110">For example, on a computer with 8 CPU cores, set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 128 (16 * 8 = 128) as follows:</span></span>  
+ <span data-ttu-id="edd92-106">实现后端 WCF 服务的 serviceThrottling 行为。</span><span class="sxs-lookup"><span data-stu-id="edd92-106">Implement serviceThrottling behavior for backend WCF services.</span></span> <span data-ttu-id="edd92-107">服务限制，可以在后端 WCF 服务器上的负载平衡和强制执行资源分配。</span><span class="sxs-lookup"><span data-stu-id="edd92-107">Service throttling allows you to even out the load on your backend WCF servers and to enforce resource allocation.</span></span> <span data-ttu-id="edd92-108">通过修改的值配置的后端 WCF 服务的 serviceThrottling 行为**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances** WCF 服务的配置文件中的参数。</span><span class="sxs-lookup"><span data-stu-id="edd92-108">serviceThrottling behavior for backend WCF services is configured by modifying the values for the **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** parameters in the config file for the WCF service.</span></span> <span data-ttu-id="edd92-109">设置**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances**为值大于 16 \* 数 Cpu 或 CPU 内核。</span><span class="sxs-lookup"><span data-stu-id="edd92-109">Set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 16 \* the number of CPUs or CPU cores.</span></span> <span data-ttu-id="edd92-110">例如，具有 8 个 CPU 内核的计算机上, 设置**maxConcurrentCalls**， **maxConcurrentSessions**，和**maxConcurrentInstances**到大于 128 (16 \* 8 = 128) 的值如下所示：</span><span class="sxs-lookup"><span data-stu-id="edd92-110">For example, on a computer with 8 CPU cores, set **maxConcurrentCalls**, **maxConcurrentSessions**, and **maxConcurrentInstances** to a value greater than 128 (16 \* 8 = 128) as follows:</span></span>  
   
 ```  
 <serviceThrottling  

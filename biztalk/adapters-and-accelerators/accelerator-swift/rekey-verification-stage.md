@@ -1,17 +1,17 @@
 ---
-title: "重新生成密钥验证阶段 |Microsoft 文档"
-ms.custom: 
+title: 重新生成密钥验证阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - rekey verification
 - stages, rekey verification
 ms.assetid: 8a2880b6-bb25-4af5-9f51-d0b090ca38c8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214197"
 ---
 # <a name="rekey-verification-stage"></a><span data-ttu-id="533b9-102">重新生成密钥验证阶段</span><span class="sxs-lookup"><span data-stu-id="533b9-102">Rekey Verification Stage</span></span>
 <span data-ttu-id="533b9-103">重新生成密钥验证阶段发生在消息修复工作流，由消息修复和新的提交和消息的一个精确副本维护原始消息的副本发送到的验证收件箱时重新生成验证密钥。</span><span class="sxs-lookup"><span data-stu-id="533b9-103">When a Rekey Verification stage occurs in the message repair workflow, a copy of the original message is maintained by Message Repair and New Submission and an exact copy of the message is sent to the verifier's inbox for rekey verification.</span></span> <span data-ttu-id="533b9-104">在重新生成密钥验证[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]消息修复和新提交清除手动重新输入的指定的字段。</span><span class="sxs-lookup"><span data-stu-id="533b9-104">In rekey verification, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] Message Repair and New Submission clears specified fields for manual re-entry.</span></span>  

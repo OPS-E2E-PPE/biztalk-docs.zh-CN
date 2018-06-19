@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205181"
 ---
 # <a name="get-started-with-the-biztalk-accelerator-for-hl7"></a><span data-ttu-id="8d8c1-102">入门 HL7 BizTalk 快捷键</span><span class="sxs-lookup"><span data-stu-id="8d8c1-102">Get started with the BizTalk Accelerator for HL7</span></span>
 <span data-ttu-id="8d8c1-103">使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]，你可以开发卫生保健的计算机系统之间的业务流程。</span><span class="sxs-lookup"><span data-stu-id="8d8c1-103">Using the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)], you can develop business processes between your health care computer systems.</span></span> <span data-ttu-id="8d8c1-104">通过使用[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]，开发人员、 IT 专业人员和接口分析师可以在常见环境以开发跨卫生保健的应用程序的端到端集成的 BTAHL7 基于解决方案中工作。</span><span class="sxs-lookup"><span data-stu-id="8d8c1-104">By using [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)], developers, IT professionals, and interface analysts can work in a common environment to develop end-to-end integrated BTAHL7-based solutions across health care applications.</span></span>  

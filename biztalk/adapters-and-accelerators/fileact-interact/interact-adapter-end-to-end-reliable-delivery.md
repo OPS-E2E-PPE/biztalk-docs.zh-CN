@@ -1,14 +1,14 @@
 ---
-title: "交互适配器端到端可靠传递 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器端到端可靠传递 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac7c22f2-ee4a-4e9b-af40-da7eb58daf51
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222989"
 ---
 # <a name="interact-adapter-end-to-end-reliable-delivery"></a><span data-ttu-id="0f4e1-102">交互适配器端到端可靠传递</span><span class="sxs-lookup"><span data-stu-id="0f4e1-102">InterAct Adapter End-to-End Reliable Delivery</span></span>
 <span data-ttu-id="0f4e1-103">时发送给收件人电子邮件或文件，我们建议你确保传递的消息或文件，和的业务事务包含在这些执行不详细的时间比预期。</span><span class="sxs-lookup"><span data-stu-id="0f4e1-103">When sending messages or files to a recipient, we recommend that you ensure that the message or file is delivered, and that the business transaction(s) contained in these are executed no more times than anticipated.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24016064"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a><span data-ttu-id="4d8da-102">有关博士企业 OneWorld 单一登录和 BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="4d8da-102">Single Sign-On and BizTalk Adapter for JD Enterprise OneWorld</span></span>
 <span data-ttu-id="4d8da-103">单一登录 (SSO) 凭据是从数据库中获取 SSO 凭据;因此，不需要输入中的服务器系统的登录凭据**传输属性**窗口。</span><span class="sxs-lookup"><span data-stu-id="4d8da-103">Single Sign-On (SSO) credentials are obtained from the SSO credentials database; therefore, you do not need to enter the server system's logon credentials in the **Transport Properties** window.</span></span>  

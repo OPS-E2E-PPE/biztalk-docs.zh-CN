@@ -1,18 +1,18 @@
 ---
-title: "有关 HL7 标准 |Microsoft 文档"
-ms.custom: 
+title: 有关 HL7 标准 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - standards [HL7]
 - HL7, standards
 - Health Level Seven (HL7)
 ms.assetid: 15f26ae3-d1ad-40a4-aafe-7148ef30cadb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204837"
 ---
 # <a name="about-the-hl7-standard"></a><span data-ttu-id="20f70-102">有关 HL7 标准</span><span class="sxs-lookup"><span data-stu-id="20f70-102">About the HL7 Standard</span></span>
 <span data-ttu-id="20f70-103">运行状况级别七个 (HL7) 标准的目的是便于卫生保健的环境中的通信。</span><span class="sxs-lookup"><span data-stu-id="20f70-103">The purpose of the Health Level Seven (HL7) standard is to facilitate communication in health care environments.</span></span> <span data-ttu-id="20f70-104">主要目的是提供标准间卫生保健的计算机应用程序消除或大幅减少，否则是所必需的自定义接口编程和程序维护的数据交换。</span><span class="sxs-lookup"><span data-stu-id="20f70-104">The primary goal is to provide standards for the exchange of data among health care computer applications that eliminate or substantially reduce the custom interface programming and program maintenance that may otherwise be required.</span></span> <span data-ttu-id="20f70-105">你可以为目标的一组描述此主目标：</span><span class="sxs-lookup"><span data-stu-id="20f70-105">You can delineate this primary goal as a set of goals:</span></span>  

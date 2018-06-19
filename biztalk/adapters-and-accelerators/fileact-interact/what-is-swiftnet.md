@@ -1,14 +1,14 @@
 ---
-title: "什么是 SWIFTNet？ | Microsoft Docs"
-ms.custom: 
+title: 什么是 SWIFTNet？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2b074385-352c-40f4-b73e-1891c627aa4e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225309"
 ---
 # <a name="what-is-swiftnet"></a><span data-ttu-id="c53d9-103">什么是 SWIFTNet？</span><span class="sxs-lookup"><span data-stu-id="c53d9-103">What Is SWIFTNet?</span></span>
 <span data-ttu-id="c53d9-104">作为一般用途，金融业的行业标准解决方案 SWIFTNet 提供全局财务社区参与的所有机构中的所有连接的应用程序的应用程序无关的、 单一窗口接口。</span><span class="sxs-lookup"><span data-stu-id="c53d9-104">As a general purpose, industry-standard solution for the financial industry, SWIFTNet provides an application-independent, single window interface to all the connected applications of all the institutions participating in the global financial community.</span></span> <span data-ttu-id="c53d9-105">实际的访问控制由业务策略决策的每个服务管理员，而不是基础结构的技术限制。</span><span class="sxs-lookup"><span data-stu-id="c53d9-105">Actual access is controlled by the business policy decisions of each Service Administrator, not by the technical limitations of the infrastructure.</span></span>  

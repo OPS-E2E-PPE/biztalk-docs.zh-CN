@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 发送管道 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 发送管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - FRR, creating send pipelines
 - creating, send pipelines
 - send pipelines, creating
 ms.assetid: c6cd2047-ea53-425f-80cc-b02a1deb5292
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209453"
 ---
 # <a name="creating-the-frr-send-pipeline"></a><span data-ttu-id="78271-102">创建 FRR 发送管道</span><span class="sxs-lookup"><span data-stu-id="78271-102">Creating the FRR Send Pipeline</span></span>
 <span data-ttu-id="78271-103">若要执行 FIN 响应对帐，你需要创建包含 SWIFTAsmFrrMQSeriesHelper 管道组件，除了 SWIFT 汇编程序发送管道。</span><span class="sxs-lookup"><span data-stu-id="78271-103">To perform FIN Response Reconciliation, you need to create a send pipeline that contains the SWIFTAsmFrrMQSeriesHelper pipeline component, in addition to the SWIFT assembler.</span></span>  

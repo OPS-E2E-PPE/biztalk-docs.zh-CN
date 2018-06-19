@@ -1,17 +1,17 @@
 ---
-title: "与批处理相关提升属性 |Microsoft 文档"
-ms.custom: 
+title: 与批处理相关提升属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - promoted properties, batch related properties
 - batching, promoted properties
 ms.assetid: 00df1d8f-2f3f-4e3f-9983-37dcf3514fd8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210541"
 ---
 # <a name="batch-related-promoted-properties"></a><span data-ttu-id="e67b7-102">与批处理相关提升的属性</span><span class="sxs-lookup"><span data-stu-id="e67b7-102">Batch-Related Promoted Properties</span></span>
 <span data-ttu-id="e67b7-103">当 SWIFT 反汇编程序发布到 MessageBox 数据库从入站批处理发出的消息时，拆装器会将标记的消息的特殊[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]升级的特定于消息进行批处理的属性。</span><span class="sxs-lookup"><span data-stu-id="e67b7-103">When the SWIFT disassembler publishes a message that originated from an inbound batch to the MessageBox database, the disassembler marks the message with special [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] promoted properties that are specific to batch messages.</span></span> <span data-ttu-id="e67b7-104">这些属性提供上下文信息，如从哪些序号位置发出的消息的批它已在中的批处理，保留已部分 A4SWIFT，依此类推。</span><span class="sxs-lookup"><span data-stu-id="e67b7-104">These properties provide context information, such as which batch a message originated from, what ordinal position it was in within the batch, which parts A4SWIFT has preserved, and so forth.</span></span>  
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="e67b7-110">**A4SWIFT_PosInBatch**</span><span class="sxs-lookup"><span data-stu-id="e67b7-110">**A4SWIFT_PosInBatch**</span></span>  
   
- <span data-ttu-id="e67b7-111">有关这些及其他提升的属性的信息，请参阅[A4SWIFT_ * 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="e67b7-111">For information about these and other promoted properties, see [A4SWIFT_* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
+ <span data-ttu-id="e67b7-111">有关这些及其他提升的属性的信息，请参阅[A4SWIFT_ \* 提升属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="e67b7-111">For information about these and other promoted properties, see [A4SWIFT_\* Promoted Properties](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).</span></span>  
   
 ## <a name="failures-during-batch-processing"></a><span data-ttu-id="e67b7-112">批处理操作期间出现的故障</span><span class="sxs-lookup"><span data-stu-id="e67b7-112">Failures During Batch Processing</span></span>  
  <span data-ttu-id="e67b7-113">当 SWIFT 反汇编程序 （分析或验证） 的消息失败在过程中遇到批处理 (**入站 Debatching**设置为**True**)，其行为取决于批处理的配置中，为如下所示：</span><span class="sxs-lookup"><span data-stu-id="e67b7-113">When the SWIFT disassembler encounters message failures (parsing or validation) during batch processing (**Inbound Debatching** set to **True**), its behavior depends upon the batching configuration, as follows:</span></span>  

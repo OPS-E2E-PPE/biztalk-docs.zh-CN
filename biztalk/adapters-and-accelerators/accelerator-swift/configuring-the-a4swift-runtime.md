@@ -1,18 +1,18 @@
 ---
-title: "配置 A4SWIFT 运行时 |Microsoft 文档"
-ms.custom: 
+title: 配置 A4SWIFT 运行时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - A4SWIFT, configuring runtime
 - runtime, A4SWIFT
 - configuring, A4SWIFT runtime
 ms.assetid: c8804b72-ec18-436a-843e-7be7c934ba30
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209077"
 ---
 # <a name="configuring-the-a4swift-runtime"></a><span data-ttu-id="2a9a1-102">配置 A4SWIFT 运行时</span><span class="sxs-lookup"><span data-stu-id="2a9a1-102">Configuring the A4SWIFT Runtime</span></span>
 <span data-ttu-id="2a9a1-103">完成后[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]配置，你必须执行中的步骤后面的部分，请确保 A4SWIFT 已准备好交换消息。</span><span class="sxs-lookup"><span data-stu-id="2a9a1-103">After you have completed [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] configuration, you must perform the steps in the following sections to make sure that A4SWIFT is ready to exchange messages.</span></span> <span data-ttu-id="2a9a1-104">本部分不包括特定的消息修复和新提交或 FIN 响应对帐功能，提供更高版本的配置步骤。</span><span class="sxs-lookup"><span data-stu-id="2a9a1-104">This section does not include the configuration steps specific to the Message Repair and New Submission or FIN Response Reconciliation features, which are provided later.</span></span>  

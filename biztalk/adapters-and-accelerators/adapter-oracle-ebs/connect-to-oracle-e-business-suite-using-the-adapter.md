@@ -1,14 +1,14 @@
 ---
-title: "将连接到 Oracle E-business Suite 使用适配器 |Microsoft 文档"
-ms.custom: 
+title: 将连接到 Oracle E-business Suite 使用适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80ff31d4-be4c-42d7-a321-8f01b40dd71e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217861"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-the-adapter"></a><span data-ttu-id="d7ce7-102">将连接到 Oracle E-business Suite 使用适配器</span><span class="sxs-lookup"><span data-stu-id="d7ce7-102">Connect to Oracle E-Business Suite using the adapter</span></span>
 <span data-ttu-id="d7ce7-103">[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] ODP.NET 11.1.0.7 用于连接到 Oracle E-business Suite。</span><span class="sxs-lookup"><span data-stu-id="d7ce7-103">The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] uses ODP.NET 11.1.0.7 to connect to Oracle E-Business Suite.</span></span> <span data-ttu-id="d7ce7-104">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要求适配器客户端提供连接字符串，调用统一资源标识符 (URI)，以连接到 Oracle E-business Suite 的连接。</span><span class="sxs-lookup"><span data-stu-id="d7ce7-104">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to the Oracle E-Business Suite.</span></span> <span data-ttu-id="d7ce7-105">在内部，[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]连接到通过 URI 基础的 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="d7ce7-105">Internally, the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] connects to the underlying Oracle database through the URI.</span></span> <span data-ttu-id="d7ce7-106">通过连接 URI 适配器客户端可以指定要连接到外部系统的连接参数。</span><span class="sxs-lookup"><span data-stu-id="d7ce7-106">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span>  

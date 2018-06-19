@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204485"
 ---
 # <a name="batch-schedule-tab"></a><span data-ttu-id="470ec-102">批处理计划选项卡</span><span class="sxs-lookup"><span data-stu-id="470ec-102">Batch Schedule Tab</span></span>
 <span data-ttu-id="470ec-103">你使用**批处理计划**选项卡以激活、 请求或终止出站批处理。</span><span class="sxs-lookup"><span data-stu-id="470ec-103">You use the **Batch Schedule** tab to activate, request, or terminate an outbound batch.</span></span> <span data-ttu-id="470ec-104">激活的出站批处理包括两个步骤： 配置基于时间的或消息计数条件，然后启动出站批处理业务流程。</span><span class="sxs-lookup"><span data-stu-id="470ec-104">Activating an outbound batch consists of two steps: configuring time-based or message count criteria and then starting the outbound batching orchestration.</span></span>  

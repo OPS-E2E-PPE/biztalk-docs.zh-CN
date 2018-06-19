@@ -1,14 +1,14 @@
 ---
-title: "调试自定义管道 |Microsoft 文档"
-ms.custom: 
+title: 调试自定义管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 27e5445a-6415-4c52-a450-b74a71fc4aa2
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970347"
 ---
 # <a name="debugging-custom-pipelines"></a><span data-ttu-id="ca4b6-102">调试自定义管道</span><span class="sxs-lookup"><span data-stu-id="ca4b6-102">Debugging Custom Pipelines</span></span>
 <span data-ttu-id="ca4b6-103">当消息处理在您的自定义管道中失败时，可以使用源级别的调试来确定和解决问题。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-103">When message processing fails in your custom pipeline, you can use source level debugging to identify and correct problems.</span></span> <span data-ttu-id="ca4b6-104">源级别调试都完成使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]调试器将附加到 BTSNTSVC.exe （如果部署自定义管道） 或 Pipeline.exe （如果使用独立的管道工具）。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-104">Source level debugging is done using the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] debugger by attaching to BTSNTSVC.exe (if the custom pipeline is deployed) or Pipeline.exe (if using the stand-alone pipeline tool).</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="ca4b6-112">加载自定义管道项目解决方案到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-112">Load the custom pipeline project solution into [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="ca4b6-113">更改您的解决方案的输出路径*\<安装文件夹\>*\Pipeline 组件。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-113">Change the output path for your solution to *\<Installation Folder\>*\Pipeline Components.</span></span> <span data-ttu-id="ca4b6-114">在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>*\Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-114">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>*\Pipeline Components directory.</span></span>  
+2.  <span data-ttu-id="ca4b6-113">更改您的解决方案的输出路径*\<安装文件夹\>* \Pipeline 组件。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-113">Change the output path for your solution to *\<Installation Folder\>* \Pipeline Components.</span></span> <span data-ttu-id="ca4b6-114">在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>* \Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-114">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>* \Pipeline Components directory.</span></span>  
   
 3.  <span data-ttu-id="ca4b6-115">在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，通过单击部署解决方案**生成**&#124;**部署**。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-115">From within [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], deploy the solution by clicking **Build** &#124; **Deploy**.</span></span>  
   
@@ -56,9 +57,9 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="ca4b6-133">加载自定义管道项目解决方案到[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-133">Load the custom pipeline project solution into [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
   
-2.  <span data-ttu-id="ca4b6-134">更改您的解决方案的输出路径*\<安装文件夹\>*\Pipeline 组件。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-134">Change the output path for your solution to *\<Installation Folder\>*\Pipeline Components.</span></span> <span data-ttu-id="ca4b6-135">在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>*\Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-135">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>*\Pipeline Components directory.</span></span>  
+2.  <span data-ttu-id="ca4b6-134">更改您的解决方案的输出路径*\<安装文件夹\>* \Pipeline 组件。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-134">Change the output path for your solution to *\<Installation Folder\>* \Pipeline Components.</span></span> <span data-ttu-id="ca4b6-135">在解决方案资源管理器，右键单击你的项目，单击生成选项卡，然后通过单击更改输出路径**浏览**按钮，然后选择*\<安装文件夹\>* \Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-135">In Solution Explorer, right-click your project, click the Build tab, and then change the Output Path by clicking the **Browse** button and selecting the *\<Installation Folder\>* \Pipeline Components directory.</span></span>  
   
-3.  <span data-ttu-id="ca4b6-136">更改解决方案的启动操作。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-136">Change the start action for your solution.</span></span> <span data-ttu-id="ca4b6-137">在解决方案资源管理器，右键单击你的项目，单击调试选项卡，单击启动外部程序，然后单击**...**</span><span class="sxs-lookup"><span data-stu-id="ca4b6-137">In Solution Explorer, right-click your project, click the Debug tab, click Start external program, then click **…**</span></span> <span data-ttu-id="ca4b6-138">并导航到*\<安装文件夹\>*\SDK\Utilities\PipelineTools 选择 Pipeline.exe。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-138">and navigate to *\<Installation Folder\>*\SDK\Utilities\PipelineTools and choose Pipeline.exe.</span></span> <span data-ttu-id="ca4b6-139">在启动选项，输入适合你的组件的命令行自变量。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-139">Under Start Options, enter the command line arguments appropriate for your component.</span></span> <span data-ttu-id="ca4b6-140">Pipeline.exe 的详细信息，请参阅[管道工具](../core/pipeline-tools.md)。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-140">For more information on Pipeline.exe, see [Pipeline Tools](../core/pipeline-tools.md).</span></span> <span data-ttu-id="ca4b6-141">典型配置指定管道和示例文件：</span><span class="sxs-lookup"><span data-stu-id="ca4b6-141">A typical configuration specifies the pipeline and a sample file:</span></span>  
+3.  <span data-ttu-id="ca4b6-136">更改解决方案的启动操作。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-136">Change the start action for your solution.</span></span> <span data-ttu-id="ca4b6-137">在解决方案资源管理器，右键单击你的项目，单击调试选项卡，单击启动外部程序，然后单击 **...**</span><span class="sxs-lookup"><span data-stu-id="ca4b6-137">In Solution Explorer, right-click your project, click the Debug tab, click Start external program, then click **…**</span></span> <span data-ttu-id="ca4b6-138">并导航到*\<安装文件夹\>* \SDK\Utilities\PipelineTools 选择 Pipeline.exe。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-138">and navigate to *\<Installation Folder\>* \SDK\Utilities\PipelineTools and choose Pipeline.exe.</span></span> <span data-ttu-id="ca4b6-139">在启动选项，输入适合你的组件的命令行自变量。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-139">Under Start Options, enter the command line arguments appropriate for your component.</span></span> <span data-ttu-id="ca4b6-140">Pipeline.exe 的详细信息，请参阅[管道工具](../core/pipeline-tools.md)。</span><span class="sxs-lookup"><span data-stu-id="ca4b6-140">For more information on Pipeline.exe, see [Pipeline Tools](../core/pipeline-tools.md).</span></span> <span data-ttu-id="ca4b6-141">典型配置指定管道和示例文件：</span><span class="sxs-lookup"><span data-stu-id="ca4b6-141">A typical configuration specifies the pipeline and a sample file:</span></span>  
   
     ```  
     <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

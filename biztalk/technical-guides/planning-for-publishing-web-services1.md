@@ -1,14 +1,14 @@
 ---
-title: "发布 web 服务规划 |Microsoft 文档"
-ms.custom: 
+title: 发布 web 服务规划 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b571c3aa-874b-43f7-af2e-5a71113a93dd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015420"
 ---
 # <a name="planning-for-publishing-web-services"></a><span data-ttu-id="d34ae-102">规划发布 Web 服务</span><span class="sxs-lookup"><span data-stu-id="d34ae-102">Planning for Publishing Web Services</span></span>
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="d34ae-103">为 Web 服务提供内置支持。</span><span class="sxs-lookup"><span data-stu-id="d34ae-103"> provides built-in support for Web services.</span></span> <span data-ttu-id="d34ae-104">它使你重复使用并聚合中你的业务流程将现有的 Web 服务。</span><span class="sxs-lookup"><span data-stu-id="d34ae-104">It enables you to reuse and aggregate your existing Web services within your orchestrations.</span></span>  

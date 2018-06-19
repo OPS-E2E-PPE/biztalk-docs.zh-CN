@@ -21,6 +21,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015894"
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a><span data-ttu-id="8fdf0-102">“JD Edwards OneWorld 传输属性”对话框</span><span class="sxs-lookup"><span data-stu-id="8fdf0-102">JD Edwards OneWorld Transport Properties Dialog Box</span></span>
 <span data-ttu-id="8fdf0-103">使用 JD Edwards OneWorld 的“传输属性”对话框设置适配器所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8fdf0-103">Use the JD Edwards OneWorld Transport Properties dialog box to set the adapter-required properties.</span></span>  

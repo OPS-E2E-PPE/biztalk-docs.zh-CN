@@ -1,15 +1,15 @@
 ---
-title: "添加异常处理来 TIBCO EMS |Microsoft 文档"
-description: "处理在 BizTalk Server 中使用 TIBCO EMS 适配器你业务流程的异常的概述"
-ms.custom: 
+title: 添加异常处理来 TIBCO EMS |Microsoft 文档
+description: 处理在 BizTalk Server 中使用 TIBCO EMS 适配器你业务流程的异常的概述
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4471f7b7-4a50-4d99-ad01-94712ce162fe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013092"
 ---
 # <a name="use-biztalk-server-exception-handling"></a><span data-ttu-id="19337-103">使用 BizTalk Server 异常处理</span><span class="sxs-lookup"><span data-stu-id="19337-103">Use BizTalk Server Exception Handling</span></span>
 

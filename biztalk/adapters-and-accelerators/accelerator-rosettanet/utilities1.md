@@ -1,17 +1,17 @@
 ---
-title: "Utilities1 |Microsoft 文档"
-ms.custom: 
+title: Utilities1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - utilities
 - developing, utilities
 ms.assetid: 6391c652-dd89-4d45-80f4-24adea0281ce
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208861"
 ---
 # <a name="utilities"></a><span data-ttu-id="55a34-102">实用程序</span><span class="sxs-lookup"><span data-stu-id="55a34-102">Utilities</span></span>
 <span data-ttu-id="55a34-103">本节介绍如何使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 软件开发工具包 (SDK) 中包含的一些实用工具。</span><span class="sxs-lookup"><span data-stu-id="55a34-103">This section provides instructions for using several utilities included in the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK).</span></span>  

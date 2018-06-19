@@ -1,14 +1,14 @@
 ---
-title: "优化管道性能 |Microsoft 文档"
-ms.custom: 
+title: 优化管道性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5137747-0dcf-4c96-90a7-01afb92f56a6
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299549"
 ---
 # <a name="optimizing-pipeline-performance"></a><span data-ttu-id="3db5e-102">优化管道性能</span><span class="sxs-lookup"><span data-stu-id="3db5e-102">Optimizing Pipeline Performance</span></span>
 <span data-ttu-id="3db5e-103">本主题介绍有关优化性能的管道中的准则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。</span><span class="sxs-lookup"><span data-stu-id="3db5e-103">This topic describes guidelines for optimizing performance of pipelines in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.</span></span>  

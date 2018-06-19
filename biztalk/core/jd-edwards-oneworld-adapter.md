@@ -1,15 +1,15 @@
 ---
-title: "博士 Edwards OneWorld 适配器 |Microsoft 文档"
-description: "安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 J.D.使用 BizTalk 适配器时添加异常处理 BizTalk Server 中的 Edwards OneWorld"
-ms.custom: 
+title: 博士 Edwards OneWorld 适配器 |Microsoft 文档
+description: 安装、 逐步调试教程，了解体系结构、 使用 SSO 安全、 创建你的应用程序、 导入绑定文件中，并为 J.D.使用 BizTalk 适配器时添加异常处理 BizTalk Server 中的 Edwards OneWorld
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5df8cd89-d9df-41ca-9a2c-b9d7fbcd06f2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015926"
 ---
 # <a name="jd-edwards-oneworld-adapter"></a><span data-ttu-id="703c7-104">JD Edwards OneWorld 适配器</span><span class="sxs-lookup"><span data-stu-id="703c7-104">JD Edwards OneWorld Adapter</span></span>
 <span data-ttu-id="703c7-105">通过用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器，可以在 BizTalk Server 中使用 JD Edwards OneWorld 业务功能。</span><span class="sxs-lookup"><span data-stu-id="703c7-105">Microsoft BizTalk Adapter for JD Edwards OneWorld enables you to use JD Edwards OneWorld business functions within BizTalk Server.</span></span> <span data-ttu-id="703c7-106">以下部分讨论设置用于 JD Edwards OneWorld 的 BizTalk 适配器，以访问特定于 JD Edwards OneWorld 的信息。</span><span class="sxs-lookup"><span data-stu-id="703c7-106">The following sections discuss setting up BizTalk Adapter for JD Edwards OneWorld to access JD Edwards OneWorld-specific information.</span></span>  

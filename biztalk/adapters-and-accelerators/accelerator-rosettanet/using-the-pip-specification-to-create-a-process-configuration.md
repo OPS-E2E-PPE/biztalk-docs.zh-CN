@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process configuration, PIPs
 - PIPs, process configuration
 ms.assetid: 64f0f5fb-f880-4ef1-95d7-2575b8d0bcff
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22207821"
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a><span data-ttu-id="5b2f7-102">使用 PIP 规范创建过程配置</span><span class="sxs-lookup"><span data-stu-id="5b2f7-102">Using the PIP Specification to Create a Process Configuration</span></span>
 <span data-ttu-id="5b2f7-103">从 RosettaNet 组织 （从 RosettaNet.org) 下载伙伴接口过程 (PIP) 后，下载包包括 PIP 规范文档。</span><span class="sxs-lookup"><span data-stu-id="5b2f7-103">After you download a Partner Interface Process (PIP) from the RosettaNet organization (from RosettaNet.org), the download package includes a PIP specification document.</span></span> <span data-ttu-id="5b2f7-104">本文档包含要在创建中的过程配置时使用哪些设置的指导[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="5b2f7-104">This document contains guidance on what settings to use when you create a process configuration in the [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console.</span></span>  

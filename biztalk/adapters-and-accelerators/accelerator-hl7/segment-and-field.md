@@ -1,18 +1,18 @@
 ---
-title: "段和字段 |Microsoft 文档"
-ms.custom: 
+title: 段和字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, segments
 - messages, fields
 - segments, messages
 ms.assetid: e68864e6-590c-47f3-8c9e-81831aec2642
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206477"
 ---
 # <a name="segment-and-field"></a><span data-ttu-id="71c7d-102">段和字段</span><span class="sxs-lookup"><span data-stu-id="71c7d-102">Segment and Field</span></span>
 <span data-ttu-id="71c7d-103">段表定义一个 HL7 段。</span><span class="sxs-lookup"><span data-stu-id="71c7d-103">A segment table defines an HL7 segment.</span></span> <span data-ttu-id="71c7d-104">每个段定义遵循下面所示的模式。</span><span class="sxs-lookup"><span data-stu-id="71c7d-104">Each segment definition follows the pattern shown below.</span></span>  

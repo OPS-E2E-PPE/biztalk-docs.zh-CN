@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT CONTRL 确认 |Microsoft 文档"
-ms.custom: 
+title: EDIFACT CONTRL 确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95e1c244-d700-48d3-9416-032ead6d4d6d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968707"
 ---
 # <a name="edifact-contrl-acknowledgment"></a><span data-ttu-id="b6ab9-102">EDIFACT CONTRL 确认</span><span class="sxs-lookup"><span data-stu-id="b6ab9-102">EDIFACT CONTRL Acknowledgment</span></span>
 <span data-ttu-id="b6ab9-103">CONTRL 确认 (ACK) 用作 EDIFACT 编码消息的技术确认和功能确认。</span><span class="sxs-lookup"><span data-stu-id="b6ab9-103">The CONTRL acknowledgment (ACK) serves as both technical and functional acknowledgment for EDIFACT-encoded messages.</span></span> <span data-ttu-id="b6ab9-104">作为技术确认，CONTRL 消息用于指示交换的接收。</span><span class="sxs-lookup"><span data-stu-id="b6ab9-104">As a technical acknowledgment, the CONTRL message indicates receipt of an interchange.</span></span> <span data-ttu-id="b6ab9-105">作为功能确认，CONTRL 消息用错误或不支持功能的列表指示接收到的交换、组或消息是已接受还是拒绝。</span><span class="sxs-lookup"><span data-stu-id="b6ab9-105">As a functional acknowledgment, the CONTRL message indicates acceptance or rejection of the received interchange, group, or message, with a list of errors or unsupported functionality.</span></span>  

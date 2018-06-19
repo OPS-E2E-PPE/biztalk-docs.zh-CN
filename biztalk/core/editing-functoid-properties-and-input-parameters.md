@@ -1,14 +1,14 @@
 ---
-title: "编辑 Functoid 属性和输入的参数 |Microsoft 文档"
-ms.custom: 
+title: 编辑 Functoid 属性和输入的参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 257f92d7-8196-4c7c-98de-819996270e43
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968611"
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a><span data-ttu-id="aaa03-102">编辑 Functoid 属性和输入参数</span><span class="sxs-lookup"><span data-stu-id="aaa03-102">Editing Functoid Properties and Input Parameters</span></span>
 <span data-ttu-id="aaa03-103">Functoid 属性可按如下所述分类：</span><span class="sxs-lookup"><span data-stu-id="aaa03-103">Functoid properties can be categorized as follows:</span></span>  

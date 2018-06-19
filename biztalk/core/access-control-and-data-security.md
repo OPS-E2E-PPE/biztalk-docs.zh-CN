@@ -1,11 +1,11 @@
 ---
-title: "访问控制和数据安全 |Microsoft 文档"
-ms.custom: 
+title: 访问控制和数据安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - access control, BizTalk Server Operator role
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - user accounts, access control
 - BizTalk Server Operator role
 ms.assetid: f04fd4a3-0f8c-4170-934a-9cc77edd7f34
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225637"
 ---
 # <a name="access-control-and-data-security"></a><span data-ttu-id="001c6-102">访问控制和数据安全</span><span class="sxs-lookup"><span data-stu-id="001c6-102">Access Control and Data Security</span></span>
 <span data-ttu-id="001c6-103">BizTalk Server 通过使用最低用户权限来限制对其进程和数据库的访问；您可以使用 Microsoft Windows Server 中的功能来确保系统中重要数据的安全。</span><span class="sxs-lookup"><span data-stu-id="001c6-103">BizTalk Server limits access to its processes and databases by using minimum user rights; you can help secure important data in the system by using features from Microsoft Windows Server.</span></span> <span data-ttu-id="001c6-104">为安全起见，BizTalk Server 管理员和 BizTalk 主机所具有的用户权限不应高于执行其作业所需的权限。</span><span class="sxs-lookup"><span data-stu-id="001c6-104">For security reasons, BizTalk Server Administrators and BizTalk Hosts should not have more user rights than necessary to perform their jobs.</span></span>  

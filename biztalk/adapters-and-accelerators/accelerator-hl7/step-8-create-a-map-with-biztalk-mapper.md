@@ -1,11 +1,11 @@
 ---
-title: "步骤 8： 使用 BizTalk 映射程序创建一个映射 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 使用 BizTalk 映射程序创建一个映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message enrichment tutorial, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, creating
 - BizTalk Mapper
 ms.assetid: 785426c7-5651-48be-b3f4-7f9d8051ba23
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207069"
 ---
 # <a name="step-8-create-a-map-with-biztalk-mapper"></a><span data-ttu-id="e9188-102">步骤 8： 创建 BizTalk 映射程序的映射</span><span class="sxs-lookup"><span data-stu-id="e9188-102">Step 8: Create a Map with BizTalk Mapper</span></span>
 <span data-ttu-id="e9188-103">在此步骤中，使用 BizTalk 映射程序来创建映射。</span><span class="sxs-lookup"><span data-stu-id="e9188-103">In this step, you use the BizTalk Mapper to create a map.</span></span> <span data-ttu-id="e9188-104">你在此地图创建将数据 （字段） 相关联的链接的文档中使用补货请求请求被拒绝文档中的数据。</span><span class="sxs-lookup"><span data-stu-id="e9188-104">You use this map to create links that associate the data (fields) in a replenishment request document to the data in a request denied document.</span></span>  

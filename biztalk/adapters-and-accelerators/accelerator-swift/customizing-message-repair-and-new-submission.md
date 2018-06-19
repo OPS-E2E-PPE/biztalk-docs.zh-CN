@@ -1,17 +1,17 @@
 ---
-title: "自定义消息修复和新提交 |Microsoft 文档"
-ms.custom: 
+title: 自定义消息修复和新提交 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - customizing Message Repair and New Submission
 - Message Repair and New Submission, customizing
 ms.assetid: aadcef97-f759-4794-bfa5-9d00edb21a21
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208821"
 ---
 # <a name="customizing-message-repair-and-new-submission"></a><span data-ttu-id="20247-102">自定义消息修复和新的提交</span><span class="sxs-lookup"><span data-stu-id="20247-102">Customizing Message Repair and New Submission</span></span>
 <span data-ttu-id="20247-103">本部分介绍来自定义消息修复和新提交功能的方式。</span><span class="sxs-lookup"><span data-stu-id="20247-103">This section describes ways in which you can customize the Message Repair and New Submission feature.</span></span>  

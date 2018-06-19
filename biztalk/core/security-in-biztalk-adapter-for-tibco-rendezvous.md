@@ -1,15 +1,15 @@
 ---
-title: "TIBCO 会合适配器中的安全 |Microsoft 文档"
-description: "使用 enterprise 上单一登录 (SSO) 来保护在 BizTalk 使用 TIBCO 会合适配器的应用程序"
-ms.custom: 
+title: TIBCO 会合适配器中的安全 |Microsoft 文档
+description: 使用 enterprise 上单一登录 (SSO) 来保护在 BizTalk 使用 TIBCO 会合适配器的应用程序
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec9011a8-43c3-4a6e-8c89-851c04ef4a1e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015828"
 ---
 # <a name="sso-security-in-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="1d121-103">SSO TIBCO 会合的 BizTalk 适配器中的安全</span><span class="sxs-lookup"><span data-stu-id="1d121-103">SSO Security in BizTalk Adapter for TIBCO Rendezvous</span></span>
 

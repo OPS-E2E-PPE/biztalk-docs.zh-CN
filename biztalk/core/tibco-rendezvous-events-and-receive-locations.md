@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: b93e747cdc665fb5a8407ca2a3d052b880236378
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013036"
 ---
 # <a name="tibco-rendezvous-events-and-receive-locations"></a><span data-ttu-id="b9843-101">TIBCO 集合事件和接收位置</span><span class="sxs-lookup"><span data-stu-id="b9843-101">TIBCO Rendezvous Events and Receive Locations</span></span>
 <span data-ttu-id="b9843-102">任何 TIBCO Rendezvous 系统都可以将消息发送到其选择的使用者名称。</span><span class="sxs-lookup"><span data-stu-id="b9843-102">Any TIBCO Rendezvous system can send messages to their subject name of choice.</span></span> <span data-ttu-id="b9843-103">这一概念*事件*是代的其他 TIBCO 会合程序的消息。</span><span class="sxs-lookup"><span data-stu-id="b9843-103">The concept of *event* is the generation of messages by other TIBCO Rendezvous programs.</span></span>  

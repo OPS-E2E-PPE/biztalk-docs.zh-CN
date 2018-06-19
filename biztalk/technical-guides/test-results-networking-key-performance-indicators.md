@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bdbc2df-9d19-4ae8-b540-ec1b9a7cdbe9
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,9 +17,10 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22302581"
 ---
 # <a name="test-results-networking-key-performance-indicators"></a><span data-ttu-id="f3ba2-102">测试结果： 网络关键绩效指标</span><span class="sxs-lookup"><span data-stu-id="f3ba2-102">Test Results: Networking Key Performance Indicators</span></span>
-<span data-ttu-id="f3ba2-103">本主题总结了网络关键绩效指标 (KPI) 的测试方案期间观察到。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-103">This topic summarizes Network Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="f3ba2-104">这些测试评估网络性能测量**\Network 接口 (\*) \Bytes Total/sec**性能监视器计数器和通过度量**SQL Network Interface\Bytes Total/sec (Avg)**返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-104">These tests evaluated Network Performance as measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter and by measuring the **SQL Network Interface\Bytes Total/sec (Avg )** returned by the VSTS 2008 Load Test Controller.</span></span>  
+<span data-ttu-id="f3ba2-103">本主题总结了网络关键绩效指标 (KPI) 的测试方案期间观察到。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-103">This topic summarizes Network Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="f3ba2-104">这些测试评估网络性能测量**\Network 接口 (\*) \Bytes Total/sec**性能监视器计数器和通过度量**SQL Network Interface\Bytes Total/sec (Avg)** 返回 VSTS 2008 负载测试控制器。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-104">These tests evaluated Network Performance as measured by the **\Network Interface(\*)\Bytes Total/sec** performance monitor counter and by measuring the **SQL Network Interface\Bytes Total/sec (Avg )** returned by the VSTS 2008 Load Test Controller.</span></span>  
   
 ## <a name="summary-of-network-key-performance-indicators"></a><span data-ttu-id="f3ba2-105">网络关键绩效指标的摘要</span><span class="sxs-lookup"><span data-stu-id="f3ba2-105">Summary of Network Key Performance Indicators</span></span>  
  <span data-ttu-id="f3ba2-106">**网络密钥性能指标 – 比较**BizTalk Server HYPER-V 虚拟机上运行的网络吞吐量观察到到范围从大约 70%到 96%的实现在物理 BizTalk 服务器上的网络吞吐量具体取决于特定的测试环境。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-106">**Comparison of Networking Key Performance Indicators –** Network throughput for BizTalk Server running on Hyper-V virtual machines was observed to range from approximately 70% to 96% of the network throughput achieved on the physical BizTalk Servers, depending on the particular test environment.</span></span> <span data-ttu-id="f3ba2-107">HYPER-V 虚拟机上运行的 SQL Server 的网络吞吐量观察到到范围从大约 68%到 81%的实现在物理 SQL 服务器上，再次根据特定的测试环境的网络吞吐量。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-107">Network throughput for SQL Server running on a Hyper-V virtual machine was observed to range from approximately 68% to 81% of the network throughput achieved on the physical SQL Server, again depending on the particular test environment.</span></span> <span data-ttu-id="f3ba2-108">观测到的网络吞吐量的增量可以被归因于 HYPER-V 虚拟机监控程序的资源要求。</span><span class="sxs-lookup"><span data-stu-id="f3ba2-108">The delta in the observed network throughput can be attributed to the resource requirements of the Hyper-V Hypervisor.</span></span>  

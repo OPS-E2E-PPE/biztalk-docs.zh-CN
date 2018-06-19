@@ -1,15 +1,15 @@
 ---
-title: "与 BizTalk Server 中的 ESB 工具包的 SOA 监管集成 |Microsoft 文档"
-description: "与 BizTalk Server 中的 ESB 工具包 SOA 基于系统和第三方的集成的挑战的列表"
-caps.latest.revision: "3"
+title: 与 BizTalk Server 中的 ESB 工具包的 SOA 监管集成 |Microsoft 文档
+description: 与 BizTalk Server 中的 ESB 工具包 SOA 基于系统和第三方的集成的挑战的列表
+caps.latest.revision: 3
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb5ac2d-cd90-414d-a6c7-045a8fe9450b
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295013"
 ---
 # <a name="soa-governance-integration"></a><span data-ttu-id="aeece-103">SOA 监管集成</span><span class="sxs-lookup"><span data-stu-id="aeece-103">SOA Governance Integration</span></span>
 <span data-ttu-id="aeece-104">企业级应用程序必须支持功能强大和可靠的管理功能，能够符合业务要求、 政府法律要求、 服务级别协议 (Sla) 和客户和贸易合作伙伴的要求。</span><span class="sxs-lookup"><span data-stu-id="aeece-104">Enterprise-level applications must support robust and reliable management features to be able to comply with business requirements, government legislation, service level agreements (SLAs), and customer and trading partner expectations.</span></span> <span data-ttu-id="aeece-105">运行时管理重点介绍专门要求和挑战，成功运行面向服务的体系结构 (SOA) – 基于满足这些要求的系统。</span><span class="sxs-lookup"><span data-stu-id="aeece-105">Run-time governance focuses specifically on the challenges of, and requirements for, successfully running service-oriented architecture (SOA)–based systems that meet these requirements.</span></span> <span data-ttu-id="aeece-106">由业务系统提供质量影响的是服务的定义是服务的成功还是失败的主导因素。</span><span class="sxs-lookup"><span data-stu-id="aeece-106">The quality of service delivered by a business system is the predominant factor that defines its success or failure.</span></span>  

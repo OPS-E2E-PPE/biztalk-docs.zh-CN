@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 9985e1e65975045f212130995c7f3b00ea0c79f0
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013116"
 ---
 # <a name="how-to-set-receive-pipelines-for-tibco-rendezvous"></a><span data-ttu-id="114fa-101">如何设置 TIBCO Rendezvous 的接收管道</span><span class="sxs-lookup"><span data-stu-id="114fa-101">How to Set Receive Pipelines for TIBCO Rendezvous</span></span>
 <span data-ttu-id="114fa-102">用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器要求设置接收处理程序和接收管道。</span><span class="sxs-lookup"><span data-stu-id="114fa-102">Microsoft BizTalk Adapter for TIBCO Rendezvous requires that you set the receive handler and receive pipeline.</span></span>  

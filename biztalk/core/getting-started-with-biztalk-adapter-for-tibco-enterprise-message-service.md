@@ -1,15 +1,15 @@
 ---
-title: "开始使用 BizTalk 适配器 TIBCO 企业消息服务 |Microsoft 文档"
-description: "适配器功能、 字符编码、 messaginges、 安装步骤，以及有关 TIBCO BizTalk Server 中的企业消息服务 BizTalk 适配器教程"
-ms.custom: 
+title: 开始使用 BizTalk 适配器 TIBCO 企业消息服务 |Microsoft 文档
+description: 适配器功能、 字符编码、 messaginges、 安装步骤，以及有关 TIBCO BizTalk Server 中的企业消息服务 BizTalk 适配器教程
+ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24eca41d-01c9-4d4f-94ff-d6a8d4ea286d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23450278"
 ---
 # <a name="get-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a><span data-ttu-id="8ea63-103">开始使用 BizTalk 适配器 TIBCO 企业消息服务</span><span class="sxs-lookup"><span data-stu-id="8ea63-103">Get started with BizTalk Adapter for TIBCO Enterprise Message Service</span></span>
 

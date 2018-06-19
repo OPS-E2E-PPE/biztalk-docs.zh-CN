@@ -1,15 +1,15 @@
 ---
-title: "配置端口使用 BizTalk 中的 WCF 自定义适配器和 Oracle E-business Suite |Microsoft 文档"
-description: "使用 WCF 自定义适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息"
-ms.custom: 
+title: 配置端口使用 BizTalk 中的 WCF 自定义适配器和 Oracle E-business Suite |Microsoft 文档
+description: 使用 WCF 自定义适配器来接收或从 BizTalk Server 中的 Oracle EBS 发送消息
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 83d0bb00-934c-40cf-8833-354e7ce7e927
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218365"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-e-business-suite"></a><span data-ttu-id="73e34-103">配置端口使用 WCF 自定义适配器和 Oracle E-business Suite</span><span class="sxs-lookup"><span data-stu-id="73e34-103">Configure a port using the WCF-custom adapter and Oracle E-Business Suite</span></span>
 <span data-ttu-id="73e34-104">如何配置 WCF 自定义发送和接收端口执行 Oracle E-business Suite 使用的出站和入站操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="73e34-104">How to configure WCF-Custom send and receive ports to perform outbound and inbound operations on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="73e34-116">在**WCF 自定义传输属性**对话框框中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="73e34-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="73e34-117">单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle E-business Suite 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="73e34-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="73e34-118">有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="73e34-118">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="73e34-117">单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle E-business Suite 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="73e34-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="73e34-118">有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="73e34-118">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="73e34-119">上**常规**选项卡上，在**操作**文本框中，键入操作的操作。</span><span class="sxs-lookup"><span data-stu-id="73e34-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="73e34-120">请参阅[消息和 Oracle EBS 适配器的消息架构](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) 有关的操作的每个操作的列表。</span><span class="sxs-lookup"><span data-stu-id="73e34-120">See [Messages and Message Schemas for Oracle EBS adapter](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) for a list of actions for each operation.</span></span> <span data-ttu-id="73e34-121">例如，要调用该资产应用程序下接口表 (FA_BOOKS) 上的插入操作的操作是：</span><span class="sxs-lookup"><span data-stu-id="73e34-121">For example, the action to invoke the Insert operation on an interface table (FA_BOOKS) under the Asset application is:</span></span>  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="73e34-160">在**WCF 自定义传输属性**对话框框中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="73e34-160">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  <span data-ttu-id="73e34-161">单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定 Oracle E-business Suite 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="73e34-161">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="73e34-162">有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="73e34-162">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
+    1.  <span data-ttu-id="73e34-161">单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定 Oracle E-business Suite 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="73e34-161">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for Oracle E-Business Suite.</span></span> <span data-ttu-id="73e34-162">有关连接 URI 的详细信息，请参阅[创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="73e34-162">For more information about the connection URI, see [Create the Oracle E-Business Suite Connection URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md).</span></span>  
   
     2.  <span data-ttu-id="73e34-163">单击**绑定**选项卡上，并从**绑定类型**下拉列表中，选择**oracleEBSBinding**。</span><span class="sxs-lookup"><span data-stu-id="73e34-163">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **oracleEBSBinding**.</span></span> <span data-ttu-id="73e34-164">你可以指定不同的绑定属性公开的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="73e34-164">You can specify the different binding properties exposed by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span> <span data-ttu-id="73e34-165">有关绑定属性的详细信息，请参阅[了解针对 Oracle E-business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。</span><span class="sxs-lookup"><span data-stu-id="73e34-165">For more information about binding properties, see [Read about the BizTalk Adapter for Oracle E-Business Suite Binding Properties](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).</span></span>  
   

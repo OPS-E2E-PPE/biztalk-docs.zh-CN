@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户上的聚合页 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户上的聚合页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Aggregations page [BAM portal]
 - BAM portal, aggregations
 ms.assetid: 6bc1a6f2-9e9a-4db6-aaa1-188ed2f2641f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22230061"
 ---
 # <a name="aggregations-on-the-bam-portal-page"></a><span data-ttu-id="1540c-102">BAM 门户上的聚合页</span><span class="sxs-lookup"><span data-stu-id="1540c-102">Aggregations on the BAM Portal Page</span></span>
 <span data-ttu-id="1540c-103">当业务最终用户、开发人员和业务分析员需要显示聚合数据时可使用 BAM 门户页。聚合数据是某个数据集的预计算汇总，可以传达该数据集的典型特征。</span><span class="sxs-lookup"><span data-stu-id="1540c-103">Business end users, developers, and business analysts use the BAM portal page when they need to present aggregated data, which are precalculated summaries of a data set that convey representative characteristics of that data set.</span></span> <span data-ttu-id="1540c-104">使用 BAM 门户的“聚合”页，可以用图表形式以及随附的数据透视表显示聚合数据。</span><span class="sxs-lookup"><span data-stu-id="1540c-104">The Aggregations page of the BAM portal allows you to display aggregated data in the form of a graphical chart and accompanying PivotTable report.</span></span>  

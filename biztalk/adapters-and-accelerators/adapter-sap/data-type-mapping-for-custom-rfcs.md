@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217413"
 ---
 # <a name="data-type-mapping-for-custom-rfcs"></a><span data-ttu-id="0c844-102">自定义的 Rfc 的数据类型映射</span><span class="sxs-lookup"><span data-stu-id="0c844-102">Data Type Mapping for Custom RFCs</span></span>
 <span data-ttu-id="0c844-103">下表提供了有关 SAP 数据类型和它们如何映射到.NET 数据类型为 Z_EXTRACT_DATA_OO RFC 的信息。</span><span class="sxs-lookup"><span data-stu-id="0c844-103">The following table provides information about SAP data types and how they are mapped to .NET data types for the Z_EXTRACT_DATA_OO RFC.</span></span> <span data-ttu-id="0c844-104">使用此自定义的 RFC [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="0c844-104">This custom RFC is used by the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)].</span></span>  

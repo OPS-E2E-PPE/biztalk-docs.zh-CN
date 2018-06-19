@@ -1,17 +1,17 @@
 ---
-title: "词汇 |Microsoft 文档"
-ms.custom: 
+title: 词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, vocabulary
 - vocabularies
 ms.assetid: c5df05dd-4af8-4e48-8509-e692b04adf3c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206653"
 ---
 # <a name="vocabulary"></a><span data-ttu-id="350bd-102">词汇</span><span class="sxs-lookup"><span data-stu-id="350bd-102">Vocabulary</span></span>
 <span data-ttu-id="350bd-103">HL7 版本 2 的词汇对于编码的元素，提供了一些支持，但大多数情况下，提供了传输绘制从本地编码系统的代码的结构。</span><span class="sxs-lookup"><span data-stu-id="350bd-103">HL7 Version 2 provides some support for vocabularies for coded elements, but for the most part, provides a structure that transmits codes drawn from local coding systems.</span></span>  

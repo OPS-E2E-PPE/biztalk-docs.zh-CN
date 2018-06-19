@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206453"
 ---
 # <a name="step-15-configure-the-send-and-receive-ports"></a><span data-ttu-id="af0e8-102">步骤 15： 配置发送和接收端口</span><span class="sxs-lookup"><span data-stu-id="af0e8-102">Step 15: Configure the Send and Receive Ports</span></span>
 <span data-ttu-id="af0e8-103">在上一步骤中，你创建了逻辑发送和接收端口使用 Orchestration 设计器和设置端口绑定到"指定更高版本"。</span><span class="sxs-lookup"><span data-stu-id="af0e8-103">In previous steps, you created a logical send and receive port using Orchestration Designer and set the port binding to "Specify Later".</span></span> <span data-ttu-id="af0e8-104">在此步骤中，你可以使用 BizTalk 资源管理器以完成通过定义的物理源和目标位置，并绑定到你在业务流程中创建的逻辑端口的物理端口的端口配置。</span><span class="sxs-lookup"><span data-stu-id="af0e8-104">In this step, you use BizTalk Explorer to finalize the port configuration by defining the physical source and destination locations and binding the physical ports to the logical ports that you created in the orchestration.</span></span>  

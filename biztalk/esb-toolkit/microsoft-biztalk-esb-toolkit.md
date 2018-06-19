@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk ESB 工具包 |Microsoft 文档"
-description: "简介、 常见方案和 BizTalk Server 中的 ESB 工具包的组件"
-caps.latest.revision: "14"
+title: Microsoft BizTalk ESB 工具包 |Microsoft 文档
+description: 简介、 常见方案和 BizTalk Server 中的 ESB 工具包的组件
+caps.latest.revision: 14
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 17ffaebc-7e33-4de8-8e94-109cd5d16ca0
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297029"
 ---
 # <a name="microsoft-biztalk-esb-toolkit"></a><span data-ttu-id="2072a-103">Microsoft BizTalk ESB 工具包</span><span class="sxs-lookup"><span data-stu-id="2072a-103">Microsoft BizTalk ESB Toolkit</span></span>
 <span data-ttu-id="2072a-104">![BizTalk ESB 工具包徽标](../esb-toolkit/media/biztalkesbtoolkitlogo.gif "BizTalkESBToolkitLogo")</span><span class="sxs-lookup"><span data-stu-id="2072a-104">![BizTalk ESB Toolkit Logo](../esb-toolkit/media/biztalkesbtoolkitlogo.gif "BizTalkESBToolkitLogo")</span></span>  
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="summary"></a><span data-ttu-id="2072a-105">摘要</span><span class="sxs-lookup"><span data-stu-id="2072a-105">Summary</span></span>  
  <span data-ttu-id="2072a-106">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]以支持松散耦合的消息传递体系结构。</span><span class="sxs-lookup"><span data-stu-id="2072a-106">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] uses [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] to support a loosely coupled messaging architecture.</span></span> <span data-ttu-id="2072a-107">BizTalk Server 包含一个用于消息传送应用程序的强大发布/订阅机制，该机制通过创建和填充订阅进行运作，从而为面向服务的体系结构 (SOA) 应用程序提供一个高效的可扩展平台。</span><span class="sxs-lookup"><span data-stu-id="2072a-107">BizTalk Server includes a powerful publish/subscribe mechanism for messaging applications that works by creating and filling subscriptions, which provides a highly efficient and scalable platform for service-oriented architecture (SOA) applications.</span></span>  
   
- <span data-ttu-id="2072a-108">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]扩展 BizTalk Server 提供一系列上构建强大、 连接、 面向服务的应用程序包含为轻型服务基于路线的服务调用的已设定焦点的新功能的功能组合、 动态解析终结点以及图、 Web 服务和 WS-* 集成、 错误管理和报告和与第三方 SOA 管理解决方案的集成。</span><span class="sxs-lookup"><span data-stu-id="2072a-108">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications that incorporate itinerary-based service invocation for lightweight service composition, dynamic resolution of endpoints and maps, Web service and WS-* integration, fault management and reporting, and integration with third-party SOA governance solutions.</span></span>  
+ <span data-ttu-id="2072a-108">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]扩展 BizTalk Server 提供一系列上构建强大、 连接、 面向服务的应用程序包含为轻型服务基于路线的服务调用的已设定焦点的新功能的功能组合、 动态解析终结点以及图、 Web 服务和 WS-\* 集成、 错误管理和报告和与第三方 SOA 管理解决方案的集成。</span><span class="sxs-lookup"><span data-stu-id="2072a-108">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications that incorporate itinerary-based service invocation for lightweight service composition, dynamic resolution of endpoints and maps, Web service and WS-\* integration, fault management and reporting, and integration with third-party SOA governance solutions.</span></span>  
   
 ## <a name="overview"></a><span data-ttu-id="2072a-109">概述</span><span class="sxs-lookup"><span data-stu-id="2072a-109">Overview</span></span>  
  <span data-ttu-id="2072a-110">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供体系结构指南、 模式和 BizTalk Server 和.NET Framework 组件，以便简化的开发在 Microsoft 平台上企业服务总线 (ESB) 的并可让 Microsoft 客户扩展的集合他们自己的消息传送和集成解决方案。</span><span class="sxs-lookup"><span data-stu-id="2072a-110">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides architectural guidance, patterns, and a collection of BizTalk Server and .NET Framework components to simplify the development of an Enterprise Service Bus (ESB) on the Microsoft platform and to allow Microsoft customers to extend their own messaging and integration solutions.</span></span>  

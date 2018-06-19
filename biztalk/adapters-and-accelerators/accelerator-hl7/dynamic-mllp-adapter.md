@@ -1,14 +1,14 @@
 ---
-title: "动态 MLLP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 动态 MLLP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e22fabb-0edf-4931-b8b2-74a5daccee4a
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204725"
 ---
 # <a name="dynamic-mllp-adapter"></a><span data-ttu-id="5ea21-102">动态 MLLP 适配器</span><span class="sxs-lookup"><span data-stu-id="5ea21-102">Dynamic MLLP Adapter</span></span>
 <span data-ttu-id="5ea21-103">从开始[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]，可以在运行时使用单向或双向 （请求-响应） 发送端口配置 MLLP 适配器属性。</span><span class="sxs-lookup"><span data-stu-id="5ea21-103">Starting with [!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)], the MLLP adapter properties can be configured at Runtime using a One-Way or Two-Way (Request-Response) send port.</span></span>  

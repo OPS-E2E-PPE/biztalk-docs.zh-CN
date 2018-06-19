@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c1ee402b-ffda-42c1-8d85-d7cbe073a307
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22224005"
 ---
 # <a name="understand-wcf-security-on-the-adapter-created-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="3a348-102">了解在使用 WCF LOB 适配器 SDK 创建的适配器上的 WCF 安全</span><span class="sxs-lookup"><span data-stu-id="3a348-102">Understand WCF security on the adapter created with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="3a348-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]扩展[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道体系结构，并依赖于消息传送基础结构和它所提供的 API。</span><span class="sxs-lookup"><span data-stu-id="3a348-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] extends the [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] channel architecture and relies on the messaging infrastructure and the API that it provides.</span></span>  <span data-ttu-id="3a348-104">WCF LOB 适配器需要建立与目标系统的连接，因此需使用身份验证和使目标系统连接所需的其他安全信息配置适配器。</span><span class="sxs-lookup"><span data-stu-id="3a348-104">A WCF LOB adapter needs to establish a connection to target systems, and hence it is necessary to configure the adapter with authentication and other security information required to make the target system connections.</span></span>  

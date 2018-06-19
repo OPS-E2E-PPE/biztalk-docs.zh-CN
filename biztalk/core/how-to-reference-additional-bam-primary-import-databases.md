@@ -1,14 +1,14 @@
 ---
-title: "如何引用其他 BAM 主导入数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何引用其他 BAM 主导入数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea80b32c-f2cb-4aca-89f4-d5b72e1ba021
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969971"
 ---
 # <a name="how-to-reference-additional-bam-primary-import-databases"></a><span data-ttu-id="7b62b-102">如何引用其他 BAM 主导入数据库</span><span class="sxs-lookup"><span data-stu-id="7b62b-102">How to Reference Additional BAM Primary Import Databases</span></span>
 <span data-ttu-id="7b62b-103">管理员使用**启用引用**命令以引用其他 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="7b62b-103">Administrators use the **enable-reference** command to reference additional BAM Primary Import databases.</span></span> <span data-ttu-id="7b62b-104">引用多个 BAM 主导入数据库可更有效地查看分布式 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="7b62b-104">You reference multiple BAM Primary Import databases to facilitate viewing distributed BAM activities.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "将架构导入到 BizTalk Server Projects1 |Microsoft 文档"
-ms.custom: 
+title: 将架构导入到 BizTalk Server Projects1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, importing into BizTalk Server
 - orchestration types, port types
 ms.assetid: fa640195-a735-4201-a893-48f3405ddcb5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015444"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a><span data-ttu-id="ba542-102">将架构导入到 BizTalk Server 项目</span><span class="sxs-lookup"><span data-stu-id="ba542-102">Importing Schemas into BizTalk Server Projects</span></span>
 <span data-ttu-id="ba542-103">以下信息介绍如何将架构导入到 BizTalk Server 项目中。</span><span class="sxs-lookup"><span data-stu-id="ba542-103">The following information describes how to import schemas into a BizTalk Server project.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  <span data-ttu-id="ba542-107">单击**添加适配器**，然后选择**打开**。</span><span class="sxs-lookup"><span data-stu-id="ba542-107">Click **Add adapter**, and then select **Open**.</span></span>  
   
-3.  <span data-ttu-id="ba542-108">选择的适配器**，参考Edwards OneWorld XE**。</span><span class="sxs-lookup"><span data-stu-id="ba542-108">Select the adapter**, J.D. Edwards OneWorld XE**.</span></span>  
+3.  <span data-ttu-id="ba542-108">选择的适配器 **，参考Edwards OneWorld XE**。</span><span class="sxs-lookup"><span data-stu-id="ba542-108">Select the adapter **, J.D. Edwards OneWorld XE**.</span></span>  
   
 4.  <span data-ttu-id="ba542-109">在下拉列表中，选择的端口**SSOSendToJD Edwards OneWorld XE**，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="ba542-109">In the drop-down list, select the port **SSOSendToJD Edwards OneWorld XE**, and then click **Next**.</span></span>  
   

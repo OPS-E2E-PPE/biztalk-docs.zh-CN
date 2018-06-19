@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968675"
 ---
 # <a name="error---functoid-variable-input-mismatch"></a><span data-ttu-id="375c3-102">错误-Functoid 变量输入不匹配</span><span class="sxs-lookup"><span data-stu-id="375c3-102">Error - Functoid Variable Input Mismatch</span></span>
 <span data-ttu-id="375c3-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="375c3-103">**Error Code**</span></span>  

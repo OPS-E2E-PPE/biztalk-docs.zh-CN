@@ -1,14 +1,14 @@
 ---
-title: "创建 Oracle E-business Suite 应用程序的构建基块 |Microsoft 文档"
-ms.custom: 
+title: 创建 Oracle E-business Suite 应用程序的构建基块 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 483a52d4-1aaf-46b1-bb42-9f91bf678346
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216101"
 ---
 # <a name="building-blocks-to-create-oracle-e-business-suite-applications"></a><span data-ttu-id="d8a49-102">创建 Oracle E-business Suite 应用程序的构建基块</span><span class="sxs-lookup"><span data-stu-id="d8a49-102">Building blocks to create Oracle E-Business Suite applications</span></span>
 <span data-ttu-id="d8a49-103">若要通过执行对 Oracle E-business Suite 操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须执行一组使用的设计时和运行时任务[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]分别管理控制台。</span><span class="sxs-lookup"><span data-stu-id="d8a49-103">To perform operations on Oracle E-Business Suite by using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must perform a set of design-time and run-time tasks using [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console respectively.</span></span> <span data-ttu-id="d8a49-104">本部分概述了这些任务。</span><span class="sxs-lookup"><span data-stu-id="d8a49-104">This section provides an overview of these tasks.</span></span> <span data-ttu-id="d8a49-105">本部分中，用于演示如何执行对 Oracle E-business Suite 使用的特定操作的所有主题[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，这些高级任务进行建模。</span><span class="sxs-lookup"><span data-stu-id="d8a49-105">All the topics in this section, which demonstrate how to perform specific operations on Oracle E-Business Suite using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], are modeled on these high-level tasks.</span></span>  

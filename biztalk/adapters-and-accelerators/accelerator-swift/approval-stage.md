@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22208877"
 ---
 # <a name="approval-stage"></a><span data-ttu-id="ddd48-102">审核阶段</span><span class="sxs-lookup"><span data-stu-id="ddd48-102">Approval Stage</span></span>
 <span data-ttu-id="ddd48-103">第一次签名并提交以供审批条消息后，批准链中的每个审批者评审和副署消息，他或她的数字签名添加到堆栈。</span><span class="sxs-lookup"><span data-stu-id="ddd48-103">After the message is first signed and submitted for approval, each approver in the approval chain reviews and countersigns the message, adding his or her digital signature to the stack.</span></span> <span data-ttu-id="ddd48-104">审批者只能查看和副署消息。</span><span class="sxs-lookup"><span data-stu-id="ddd48-104">Approvers can only review and countersign the message.</span></span> <span data-ttu-id="ddd48-105">他们无法更改它而不会破坏数字签名堆栈。</span><span class="sxs-lookup"><span data-stu-id="ddd48-105">They cannot change it without breaking the digital signature stack.</span></span>

@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8056ced6-1f04-4be2-878a-48a427a93dad
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302637"
 ---
 # <a name="step-5-perform-step-load-pattern-tests-to-determine-maximum-sustainable-throughput"></a><span data-ttu-id="905a9-102">步骤 5： 执行步骤负载模式测试以确定最大可持续吞吐量</span><span class="sxs-lookup"><span data-stu-id="905a9-102">Step 5: Perform Step Load Pattern Tests to Determine Maximum Sustainable Throughput</span></span>
 <span data-ttu-id="905a9-103">确定 BizTalk Server 解决方案与 Visual Studio 负载测试的最大可持续吞吐量 (MST) 的最简单方法是执行分级负载模式并比较每秒到每秒处理的总文档接收的总文档.</span><span class="sxs-lookup"><span data-stu-id="905a9-103">The simplest method for determining the Maximum Sustainable Throughput (MST) of a BizTalk Server solution with Visual Studio load testing is to perform a step load pattern and compare the total Documents received per second to the total Document processed per second.</span></span> <span data-ttu-id="905a9-104">只要每秒处理的平均总文档是大于或等于每秒的测试的持续时间接收的平均总文档，然后考虑负载可持续。</span><span class="sxs-lookup"><span data-stu-id="905a9-104">As long as the average total documents processed per second is greater than or equal to the average total documents received per second for the duration of the test, then the load is considered sustainable.</span></span> <span data-ttu-id="905a9-105">如果每个接收的总文档的平均值第二个是大于每秒的测试持续时间内处理的平均总文档则负载不会被视为可持续的并且这将出现的值中的相应增长BizTalk:Message Box: General Counters\Spool 大小计数器。</span><span class="sxs-lookup"><span data-stu-id="905a9-105">If the average total documents received per second is greater than the average total documents processed per second for the duration of the test, then the load is not considered sustainable, and this will be evidenced by a corresponding growth in the value of the BizTalk:Message Box:General Counters\Spool Size counter.</span></span> <span data-ttu-id="905a9-106">随着时间推移，当 BizTalk 服务器应用程序收到多个文档不是它可以处理，未处理的文档将累积在 MessageBox 数据库中，将最终引入限制条件，并大幅降低性能BizTalk Server 应用程序。</span><span class="sxs-lookup"><span data-stu-id="905a9-106">Over time, when a BizTalk Server application receives more documents than it can process, the unprocessed documents will accumulate in the MessageBox database, which will eventually induce a throttling condition and significantly degrade the performance of the BizTalk Server application.</span></span>  

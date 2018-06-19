@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0cd93bcd2d1855f137600214b6a07d52b6f52e4f
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013316"
 ---
 # <a name="how-to-create-receive-ports"></a><span data-ttu-id="e788d-101">如何创建接收端口</span><span class="sxs-lookup"><span data-stu-id="e788d-101">How to Create Receive Ports</span></span>
 <span data-ttu-id="e788d-102">请按照下列步骤使用 Visual Studio 创建一个接收端口。</span><span class="sxs-lookup"><span data-stu-id="e788d-102">Follow these steps to create a receive port using Visual Studio.</span></span>  

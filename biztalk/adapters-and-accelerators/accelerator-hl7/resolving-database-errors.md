@@ -1,17 +1,17 @@
 ---
-title: "解决数据库错误 |Microsoft 文档"
-ms.custom: 
+title: 解决数据库错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - databases
 - errors, databases
 ms.assetid: d7b1cc9f-3f3e-464a-8249-1fd03b2b4d76
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206005"
 ---
 # <a name="resolving-database-errors"></a><span data-ttu-id="e0adb-102">解决数据库错误</span><span class="sxs-lookup"><span data-stu-id="e0adb-102">Resolving Database Errors</span></span>
 <span data-ttu-id="e0adb-103">在 HL7 组织发布的 HL7 访问数据库，DataItems 和 TableValues 是由针对 table_id 所和 hl7_version 链接起来的两个表。</span><span class="sxs-lookup"><span data-stu-id="e0adb-103">In the HL7 Access database that the HL7 organization publishes, DataItems and TableValues are two tables linked by table_id and hl7_version.</span></span> <span data-ttu-id="e0adb-104">以下数据库跨-查询显示一些数据项，请参阅针对 table_id 所，它不具有任何表中列出的值：</span><span class="sxs-lookup"><span data-stu-id="e0adb-104">The following database cross-query shows that some data items refer to a table_id, which has no values listed in the table:</span></span>  

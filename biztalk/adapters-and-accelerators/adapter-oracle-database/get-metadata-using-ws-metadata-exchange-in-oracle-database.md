@@ -1,17 +1,17 @@
 ---
-title: "获取使用 Ws-metadata Exchange Oracle 数据库中的元数据 |Microsoft 文档"
-ms.custom: 
+title: 获取使用 Ws-metadata Exchange Oracle 数据库中的元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WS-Metadata Exchange, retrieving metadata
 - metadata, retrieving using WS-Metadata Exchange
 ms.assetid: 6ff34438-7260-489d-a5f0-6e53f8fe43be
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214853"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-oracle-database"></a><span data-ttu-id="7fd54-102">获取使用 Ws-metadata Exchange Oracle 数据库中的元数据</span><span class="sxs-lookup"><span data-stu-id="7fd54-102">Get Metadata Using WS-Metadata Exchange in Oracle Database</span></span>
 <span data-ttu-id="7fd54-103">作为[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定，[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开可用于检索元数据中的特定操作的 WS 元数据交换 (MEX) 终结点[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="7fd54-103">As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].</span></span>  

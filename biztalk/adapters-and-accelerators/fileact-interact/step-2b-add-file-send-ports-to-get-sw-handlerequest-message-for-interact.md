@@ -1,14 +1,14 @@
 ---
-title: "步骤 2B： 添加文件发送端口交互应用商店应用和进 （请求） 方案中捕获 Sw:HandleRequest 消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2B： 添加文件发送端口交互应用商店应用和进 （请求） 方案中捕获 Sw:HandleRequest 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa22d6e7-f1bd-43ad-9a0e-0b287057d20f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22225237"
 ---
 # <a name="step-2b-add-file-send-ports-to-capture-the-swhandlerequest-message-for-the-interact-store-and-forward-pull-scenario"></a><span data-ttu-id="44d37-102">步骤 2B： 添加要捕获 Sw:HandleRequest 消息交互，应用商店应用和进 （请求） 方案的文件发送端口</span><span class="sxs-lookup"><span data-stu-id="44d37-102">Step 2B: Add FILE Send Ports to Capture the Sw:HandleRequest Message for the InterAct Store and Forward (Pull) Scenario</span></span>
 <span data-ttu-id="44d37-103">在开始此步骤之前，必须完成[步骤 2A： 添加接收的文件位置的交互，存储和转发 （请求） 方案](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)。</span><span class="sxs-lookup"><span data-stu-id="44d37-103">Before you begin this step, you must complete [Step 2A: Add FILE Receive Locations for the InterAct Store and Forward (Pull) Scenario](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md).</span></span>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 09/20/2017
   
 10. <span data-ttu-id="44d37-120">右键单击**发送端口**，指向**新建**，然后单击**动态请求-响应发送端口**。</span><span class="sxs-lookup"><span data-stu-id="44d37-120">Right-click **Send Ports**, point to **New**, and then click **Dynamic Solicit-Response Send Port**.</span></span>  
   
-11. <span data-ttu-id="44d37-121">在**发送端口属性**窗口中，名称发送端口**，Tutorial_IA_DynamicSendPort**。</span><span class="sxs-lookup"><span data-stu-id="44d37-121">In the **Send Port Properties** window, name the send port**, Tutorial_IA_DynamicSendPort**.</span></span>  
+11. <span data-ttu-id="44d37-121">在**发送端口属性**窗口中，名称发送端口 **，Tutorial_IA_DynamicSendPort**。</span><span class="sxs-lookup"><span data-stu-id="44d37-121">In the **Send Port Properties** window, name the send port **, Tutorial_IA_DynamicSendPort**.</span></span>  
   
 12. <span data-ttu-id="44d37-122">在**发送端口属性**窗口中，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="44d37-122">In the **Send Port Properties** window, do the following:</span></span>  
   

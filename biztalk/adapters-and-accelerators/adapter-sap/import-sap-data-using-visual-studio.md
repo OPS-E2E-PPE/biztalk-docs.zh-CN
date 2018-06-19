@@ -1,18 +1,18 @@
 ---
-title: "导入使用 Visual Studio 的 SAP 数据 |Microsoft 文档"
-ms.custom: 
+title: 导入使用 Visual Studio 的 SAP 数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing SAP data, how to
 - importing SAP data, using Visual Studio
 - Visual Studio, importing SAP data
 ms.assetid: 70cce089-232d-4ab9-81bd-6b0d6f0097d7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217749"
 ---
 # <a name="import-sap-data-using-visual-studio"></a><span data-ttu-id="a3063-102">使用 Visual Studio 的导入 SAP 数据</span><span class="sxs-lookup"><span data-stu-id="a3063-102">Import SAP Data Using Visual Studio</span></span>
 <span data-ttu-id="a3063-103">本部分提供有关如何使用 Microsoft 的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]从某个 SAP 系统到 SQL Server 数据库导入数据。</span><span class="sxs-lookup"><span data-stu-id="a3063-103">This section provides information on how to use Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to import data from an SAP system into a SQL Server database.</span></span> <span data-ttu-id="a3063-104">本部分提供有关如何创建 SSIS 包，您可以执行数据导入指令。</span><span class="sxs-lookup"><span data-stu-id="a3063-104">This section provides instruction on how to create an SSIS package that you can execute to import data.</span></span> <span data-ttu-id="a3063-105">本部分还提供有关如何执行 SSIS 包的信息。</span><span class="sxs-lookup"><span data-stu-id="a3063-105">This section also provides information on how to execute the SSIS package.</span></span>  

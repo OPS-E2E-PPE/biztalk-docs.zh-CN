@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server MessageBox 数据库文件组的 SQL 脚本 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server MessageBox 数据库文件组的 SQL 脚本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af4fe437-41ca-46c1-90eb-a28ed73312b6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300541"
 ---
 # <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="ec969-102">BizTalk Server MessageBox 数据库文件组的 SQL 脚本</span><span class="sxs-lookup"><span data-stu-id="ec969-102">BizTalk Server MessageBox Database Filegroups SQL Script</span></span>
 <span data-ttu-id="ec969-103">本主题提供了可以在 BizTalk Server 环境以创建多个文件和文件组 BizTalk MessageBox 数据库的 SQL Server 实例运行的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="ec969-103">This topic provides a SQL script that can be run on the SQL Server instances in a BizTalk Server environment to create multiple files and filegroups for the BizTalk MessageBox databases.</span></span>  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 >   
 >      -   <span data-ttu-id="ec969-108">如果在安装 BizTalk Server 修补程序或服务包运行**msgboxlogic.sql**，你将需要再次运行 MessageBox 数据库文件组的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="ec969-108">If you install a BizTalk Server hotfix or service pack that runs **msgboxlogic.sql**, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="ec969-109">这是必需的因为 msgboxlogic.sql 恢复 MessageBox 文件组和文件为默认设置，即使用主文件组。</span><span class="sxs-lookup"><span data-stu-id="ec969-109">This is necessary because msgboxlogic.sql reverts the MessageBox filegroups and files to default settings, which is to use the PRIMARY filegroup.</span></span> <span data-ttu-id="ec969-110">若要确定是否修补程序或服务包运行 msgboxlogic.sql，检查**文件信息**修补程序 KB 文章的部分。</span><span class="sxs-lookup"><span data-stu-id="ec969-110">To determine if a hotfix or service pack runs msgboxlogic.sql, check the **File Information** section of the hotfix KB article.</span></span> <span data-ttu-id="ec969-111">或检查 setup.xml 文件都包含在服务包文件。</span><span class="sxs-lookup"><span data-stu-id="ec969-111">Or check the setup.xml file that is included with the service pack files.</span></span>  
 >     -   <span data-ttu-id="ec969-112">如果你添加到 BizTalk Server 组的新主机，你将需要再次运行 MessageBox 数据库文件组的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="ec969-112">If you add a new host to the BizTalk Server group, you will need to run the MessageBox database filegroups SQL script again.</span></span> <span data-ttu-id="ec969-113">这是必需的因为创建新主机的存储的过程配置要默认情况下使用的主文件组的主机的表。</span><span class="sxs-lookup"><span data-stu-id="ec969-113">This is necessary because the stored procedure that creates new hosts configures the tables for the hosts to use the PRIMARY file group by default.</span></span>  
-> 2.  <span data-ttu-id="ec969-114">**应用 MessageBox 多 MessageBox 环境中的数据库文件组 SQL 脚本：**但不是一种要求，可针对在多 Messagebox 环境中的每个消息框执行 MessageBox 数据库文件组的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="ec969-114">**Applying the MessageBox database filegroups SQL script in a multi-MessageBox environment:** Though not a requirement, the MessageBox database filegroups SQL script can be executed against each MessageBox in a multi-Messagebox environment.</span></span>  
+> 2.  <span data-ttu-id="ec969-114">**应用 MessageBox 多 MessageBox 环境中的数据库文件组 SQL 脚本：** 但不是一种要求，可针对在多 Messagebox 环境中的每个消息框执行 MessageBox 数据库文件组的 SQL 脚本。</span><span class="sxs-lookup"><span data-stu-id="ec969-114">**Applying the MessageBox database filegroups SQL script in a multi-MessageBox environment:** Though not a requirement, the MessageBox database filegroups SQL script can be executed against each MessageBox in a multi-Messagebox environment.</span></span>  
   
 ## <a name="biztalk-messagebox-database-filegroups-sql-script"></a><span data-ttu-id="ec969-115">BizTalk MessageBox 数据库文件组的 SQL 脚本</span><span class="sxs-lookup"><span data-stu-id="ec969-115">BizTalk MessageBox database filegroups SQL script</span></span>  
  <span data-ttu-id="ec969-116">可以使用以下 SQL 脚本来创建多个文件和文件组主题中所述[Databases2 优化文件组](../technical-guides/optimizing-filegroups-for-the-databases2.md)。</span><span class="sxs-lookup"><span data-stu-id="ec969-116">The following SQL script can be used to create multiple files and filegroups as described in the topic [Optimizing Filegroups for the Databases2](../technical-guides/optimizing-filegroups-for-the-databases2.md).</span></span>  

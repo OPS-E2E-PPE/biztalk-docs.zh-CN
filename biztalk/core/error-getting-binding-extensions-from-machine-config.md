@@ -1,14 +1,14 @@
 ---
-title: "从 machine.config 中获取绑定扩展时出错 |Microsoft 文档"
-ms.custom: 
+title: 从 machine.config 中获取绑定扩展时出错 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65ab48cf-575b-4db6-984a-880f7e286959
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968795"
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a><span data-ttu-id="e394c-102">从 machine.config 获取绑定扩展时出错。</span><span class="sxs-lookup"><span data-stu-id="e394c-102">Error getting binding extensions from machine.config</span></span>
 ## <a name="details"></a><span data-ttu-id="e394c-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e394c-103">Details</span></span>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="e394c-122">GAC 程序集</span><span class="sxs-lookup"><span data-stu-id="e394c-122">GAC the assembly</span></span>  
   
-2.  <span data-ttu-id="e394c-123">修改 machine.config 文件 (位于**%FrameworkDir%\v4.0.30319\CONFIG**)。</span><span class="sxs-lookup"><span data-stu-id="e394c-123">Modify your machine.config file (found in **%FrameworkDir%\v4.0.30319\CONFIG**).</span></span>  
+2.  <span data-ttu-id="e394c-123">修改 machine.config 文件 (位于 **%FrameworkDir%\v4.0.30319\CONFIG**)。</span><span class="sxs-lookup"><span data-stu-id="e394c-123">Modify your machine.config file (found in **%FrameworkDir%\v4.0.30319\CONFIG**).</span></span>  
   
     1.  <span data-ttu-id="e394c-124">加载你的行为 DLL 在服务配置编辑器 (**svcConfigEditor.exe**)。</span><span class="sxs-lookup"><span data-stu-id="e394c-124">Load your behavior DLL inside the Service Configuration Editor (**svcConfigEditor.exe**).</span></span>  
   

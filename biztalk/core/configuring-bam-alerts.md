@@ -1,11 +1,11 @@
 ---
-title: "配置 BAM 警报 |Microsoft 文档"
-ms.custom: 
+title: 配置 BAM 警报 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, alerts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - alerts, configuring
 - managing [BAM definitions], configuring alerts
 ms.assetid: 29327466-c8e9-41e8-bc12-f3ac6b5d3096
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968883"
 ---
 # <a name="configuring-bam-alerts"></a><span data-ttu-id="5be27-102">配置 BAM 警报</span><span class="sxs-lookup"><span data-stu-id="5be27-102">Configuring BAM Alerts</span></span>
 <span data-ttu-id="5be27-103">管理员可以修改 BAM 警报框架的某些元素。</span><span class="sxs-lookup"><span data-stu-id="5be27-103">Administrators can modify certain elements of the BAM alert framework.</span></span> <span data-ttu-id="5be27-104">本主题介绍管理员可用的配置选项。</span><span class="sxs-lookup"><span data-stu-id="5be27-104">This topic describes the configuration options available to administrators.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="5be27-115">如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="5be27-115">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="5be27-116">导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking"**或**cd"C:\Program Files (x86) \Microsoft BizTalk服务器\<版本\>\Tracking"** 64 位计算机上。</span><span class="sxs-lookup"><span data-stu-id="5be27-116">Navigate to the tracking folder by typing at the command prompt **cd “C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking”** or **cd “C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\Tracking”** on a 64 bit computer.</span></span> <span data-ttu-id="5be27-117">按 **Enter**。</span><span class="sxs-lookup"><span data-stu-id="5be27-117">Press **ENTER**.</span></span>  
+2.  <span data-ttu-id="5be27-116">导航到的跟踪文件夹中，在命令提示符处键入**cd"C:\Program Files\Microsoft BizTalk Server\<版本\>\Tracking"** 或**cd"C:\Program Files (x86) \Microsoft BizTalk服务器\<版本\>\Tracking"** 64 位计算机上。</span><span class="sxs-lookup"><span data-stu-id="5be27-116">Navigate to the tracking folder by typing at the command prompt **cd “C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking”** or **cd “C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\Tracking”** on a 64 bit computer.</span></span> <span data-ttu-id="5be27-117">按 **Enter**。</span><span class="sxs-lookup"><span data-stu-id="5be27-117">Press **ENTER**.</span></span>  
   
 3.  <span data-ttu-id="5be27-118">检索 ADF 文件。</span><span class="sxs-lookup"><span data-stu-id="5be27-118">Retrieve the ADF file.</span></span> <span data-ttu-id="5be27-119">类型**cscript ProcessBamNSFiles.vbs-获取\<ConfigFilePath\> \<ADFFilePath\> \< PID 服务器\> \< PID 数据库\>** .</span><span class="sxs-lookup"><span data-stu-id="5be27-119">Type **cscript ProcessBamNSFiles.vbs -Get \<ConfigFilePath\> \<ADFFilePath\> \< PID Server\> \< PID database \>**.</span></span> <span data-ttu-id="5be27-120">请将其中的“配置文件路径”、“ADF 文件路径”、“PID 服务器”和“PID 数据库”替换为适合你的安装的值。</span><span class="sxs-lookup"><span data-stu-id="5be27-120">Replacing the ConfigFilePath, ADFFilePath, PID Server, and PID database with the appropriate values for your installation.</span></span>  
   

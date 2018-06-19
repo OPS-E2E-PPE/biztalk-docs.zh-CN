@@ -11,7 +11,7 @@ helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25966755"
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a><span data-ttu-id="9fea0-102">任意 XPath 属性处理程序 （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="9fea0-102">Arbitrary XPath Property Handler (BizTalk Server Sample)</span></span>
 <span data-ttu-id="9fea0-103">任意 XPath 属性处理程序（[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 示例）演示了如何编写自定义管道组件以升级提交到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 XML 文档中的特定属性。</span><span class="sxs-lookup"><span data-stu-id="9fea0-103">The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) demonstrates how to write a custom pipeline component to promote specific properties on an XML document that is submitted to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="9fea0-104">您可以使用示例中包含的功能创建自定义常规组装器和拆装器组件以评估 XPath 表达式。</span><span class="sxs-lookup"><span data-stu-id="9fea0-104">You can use functionality contained in the sample to create custom regular, assembler, and disassembler components to evaluate XPath expressions.</span></span>  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
 7.  <span data-ttu-id="9fea0-115">新 PO 文档将写入 \Output 目录中的文件。</span><span class="sxs-lookup"><span data-stu-id="9fea0-115">The new PO document is written to a file in the \Output directory.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="9fea0-116">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="9fea0-116">Where to Find This Sample</span></span>  
- <span data-ttu-id="9fea0-117">*\<示例路径\>*\Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9fea0-117">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span></span>  
+ <span data-ttu-id="9fea0-117">*\<示例路径\>* \Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9fea0-117">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span></span>  
   
  <span data-ttu-id="9fea0-118">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="9fea0-118">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -84,13 +85,13 @@ ms.lasthandoff: 03/28/2018
   
 1.  <span data-ttu-id="9fea0-159">在命令窗口中，将目录更改 (**cd**) 的以下文件夹︰</span><span class="sxs-lookup"><span data-stu-id="9fea0-159">In a command window, change directories (**cd**) to the following folder:</span></span>  
   
-     <span data-ttu-id="9fea0-160">*\<示例路径\>*\Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9fea0-160">*\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler</span></span>  
+     <span data-ttu-id="9fea0-160">*\<示例路径\>* \Pipelines\ArbitraryXPathPropertyHandler</span><span class="sxs-lookup"><span data-stu-id="9fea0-160">*\<Samples Path\>* \Pipelines\ArbitraryXPathPropertyHandler</span></span>  
   
 2.  <span data-ttu-id="9fea0-161">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="9fea0-161">Run the file Setup.bat, which performs the following actions:</span></span>  
   
     -   <span data-ttu-id="9fea0-162">生成任意 XPath 属性处理程序管道组件。</span><span class="sxs-lookup"><span data-stu-id="9fea0-162">Builds the Arbitrary XPath Property Handler pipeline component.</span></span>  
   
-    -   <span data-ttu-id="9fea0-163">要为其生成的副本管道组件*\<安装路径\>*\Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="9fea0-163">Copies built pipeline component to the *\<Installation Path\>*\Pipeline Components directory.</span></span>  
+    -   <span data-ttu-id="9fea0-163">要为其生成的副本管道组件*\<安装路径\>* \Pipeline 组件的目录。</span><span class="sxs-lookup"><span data-stu-id="9fea0-163">Copies built pipeline component to the *\<Installation Path\>* \Pipeline Components directory.</span></span>  
   
     -   <span data-ttu-id="9fea0-164">创建发送端口和接收端口。</span><span class="sxs-lookup"><span data-stu-id="9fea0-164">Creates the send and receive ports.</span></span>  
   

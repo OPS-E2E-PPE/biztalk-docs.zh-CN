@@ -1,11 +1,11 @@
 ---
-title: "FRR 业务流程 |Microsoft 文档"
-ms.custom: 
+title: FRR 业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, promoted properties
@@ -28,7 +28,7 @@ helpviewer_keywords:
 - messages, outbound
 - MessageBox database
 ms.assetid: ea8d31c2-ac3b-44ac-8064-d008da4f7f72
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -37,6 +37,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967870"
 ---
 # <a name="frr-orchestration"></a><span data-ttu-id="7206d-102">FRR 业务流程</span><span class="sxs-lookup"><span data-stu-id="7206d-102">FRR Orchestration</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="7206d-103">实现 FRR 通过 FRR 业务流程。</span><span class="sxs-lookup"><span data-stu-id="7206d-103"> implements FRR through the FRR orchestration.</span></span> <span data-ttu-id="7206d-104">业务流程确定的 FIN 响应的令牌相关的匹配原始消息的消息 ID。</span><span class="sxs-lookup"><span data-stu-id="7206d-104">The orchestration determines whether the Correlation Token of the FIN response matches the message ID of the original message.</span></span> <span data-ttu-id="7206d-105">与执行向 SAA，发送消息的发送端口的发送功能和执行从 SAA 接收消息的接收位置接收函数，它将处理并行中的消息。</span><span class="sxs-lookup"><span data-stu-id="7206d-105">It processes the message in parallel with the send functions performed by the send port that sends the message to SAA, and with the receive functions performed by the receive location that receives the message from SAA.</span></span>  

@@ -1,15 +1,15 @@
 ---
-title: "接收架构和处理事件的 TIBCO 会合适配器 |Microsoft 文档"
-description: "适用于 TIBCO 会合架构上接收端，并使用适用于在 BizTalk TIBCO 会合 BizTalk 适配器的事件处理"
-ms.custom: 
+title: 接收架构和处理事件的 TIBCO 会合适配器 |Microsoft 文档
+description: 适用于 TIBCO 会合架构上接收端，并使用适用于在 BizTalk TIBCO 会合 BizTalk 适配器的事件处理
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 26cb20f9-4d26-48f6-a5e9-a51348a56538
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014092"
 ---
 # <a name="using-tibco-rendezvous-receive-ports-from-biztalk-server"></a><span data-ttu-id="e1d7a-103">使用 TIBCO Rendezvous 从 BizTalk Server 接收端口</span><span class="sxs-lookup"><span data-stu-id="e1d7a-103">Using TIBCO Rendezvous Receive Ports from BizTalk Server</span></span>
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 >  <span data-ttu-id="e1d7a-109">适配器支持业务流程和消息传送方案。</span><span class="sxs-lookup"><span data-stu-id="e1d7a-109">The adapter supports both orchestration and messaging scenarios.</span></span>  
   
 ## <a name="define-schemas"></a><span data-ttu-id="e1d7a-110">定义的架构</span><span class="sxs-lookup"><span data-stu-id="e1d7a-110">Define schemas</span></span>  
- <span data-ttu-id="e1d7a-111">例如，如果端口被配置为侦听为使用者名称中，**库存。市场。索引。 >** (**>**意味着其他右侧的通配符)，它将有效地定义使用者名称的操作，如**库存。市场。索引。纽约证券交易所。SP500**，**库存。市场。索引。TSX.TSX60**，依次类推。</span><span class="sxs-lookup"><span data-stu-id="e1d7a-111">For example, if the port is configured to listen to the subject name, **STOCK.MARKET.INDICES.>** ('**>**' is a wildcard character that means anything else to the right), it would be valid to define operations for subject names such as **STOCK.MARKET.INDICES.NYSE.SP500**, **STOCK.MARKET.INDICES.TSX.TSX60**, and so on.</span></span> <span data-ttu-id="e1d7a-112">适配器生成使用的策略中所述的消息[Data Type Mapping for 接收 TIBCO 集合中的处理程序](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)，并生成的根元素名称和命名空间上侦听基于使用者名称和收到的消息使用者名称分别。</span><span class="sxs-lookup"><span data-stu-id="e1d7a-112">The adapter generates messages using the strategy described in [Data Type Mapping for Receive Handlers in TIBCO Rendezvous](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md), and generates the root element name and namespaces based on the listen subject name and received message subject names respectively.</span></span>  
+ <span data-ttu-id="e1d7a-111">例如，如果端口被配置为侦听为使用者名称中，**库存。市场。索引。 >** (**>** 意味着其他右侧的通配符)，它将有效地定义使用者名称的操作，如**库存。市场。索引。纽约证券交易所。SP500**，**库存。市场。索引。TSX.TSX60**，依次类推。</span><span class="sxs-lookup"><span data-stu-id="e1d7a-111">For example, if the port is configured to listen to the subject name, **STOCK.MARKET.INDICES.>** ('**>**' is a wildcard character that means anything else to the right), it would be valid to define operations for subject names such as **STOCK.MARKET.INDICES.NYSE.SP500**, **STOCK.MARKET.INDICES.TSX.TSX60**, and so on.</span></span> <span data-ttu-id="e1d7a-112">适配器生成使用的策略中所述的消息[Data Type Mapping for 接收 TIBCO 集合中的处理程序](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)，并生成的根元素名称和命名空间上侦听基于使用者名称和收到的消息使用者名称分别。</span><span class="sxs-lookup"><span data-stu-id="e1d7a-112">The adapter generates messages using the strategy described in [Data Type Mapping for Receive Handlers in TIBCO Rendezvous](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md), and generates the root element name and namespaces based on the listen subject name and received message subject names respectively.</span></span>  
   
  <span data-ttu-id="e1d7a-113">在前面的示例中，适配器生成一条消息，如下所示为 SP500 事件：</span><span class="sxs-lookup"><span data-stu-id="e1d7a-113">In the previous example, the adapter generates a message that looks like the following for the SP500 event:</span></span>  
   

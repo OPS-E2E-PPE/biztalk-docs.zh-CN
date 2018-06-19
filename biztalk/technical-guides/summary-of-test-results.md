@@ -1,14 +1,14 @@
 ---
-title: "测试结果摘要 |Microsoft 文档"
-ms.custom: 
+title: 测试结果摘要 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d95fbaa6-0e07-4086-bea2-0577d39ae7cd
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302989"
 ---
 # <a name="summary-of-test-results"></a><span data-ttu-id="08c91-102">测试结果的摘要</span><span class="sxs-lookup"><span data-stu-id="08c91-102">Summary of Test Results</span></span>
 <span data-ttu-id="08c91-103">本主题汇总了将测试方案中的结果。</span><span class="sxs-lookup"><span data-stu-id="08c91-103">This topic summarizes the results from the test scenarios.</span></span>  

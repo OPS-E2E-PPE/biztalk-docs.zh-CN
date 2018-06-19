@@ -1,11 +1,11 @@
 ---
-title: "创建或编辑过程配置 |Microsoft 文档"
-ms.custom: 
+title: 创建或编辑过程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: 39cc2c93-0986-48d3-8c6f-4280ec9af4e0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207117"
 ---
 # <a name="creating-or-editing-a-process-configuration"></a><span data-ttu-id="34a9b-102">创建或编辑过程配置</span><span class="sxs-lookup"><span data-stu-id="34a9b-102">Creating or Editing a Process Configuration</span></span>
 <span data-ttu-id="34a9b-103">本部分介绍如何创建或编辑过程配置以实现在合作伙伴接口过程 (PIP) [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="34a9b-103">This section describes how to create or edit a process configuration to implement a Partner Interface Process (PIP) in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="34a9b-104">RosettaNet PIP 定义了两个贸易合作伙伴间的业务流程对话。</span><span class="sxs-lookup"><span data-stu-id="34a9b-104">A RosettaNet PIP defines a business-process dialog between two trading partners.</span></span> <span data-ttu-id="34a9b-105">在[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，若要创建 PIP 与合作伙伴，你必须首先创建过程配置。</span><span class="sxs-lookup"><span data-stu-id="34a9b-105">In [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], to create a PIP with a partner, you must first create a process configuration.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="34a9b-106">使用此配置文件来存储所有配置特征的 PIP。</span><span class="sxs-lookup"><span data-stu-id="34a9b-106"> uses this profile to store all configuration characteristics of the PIP.</span></span> <span data-ttu-id="34a9b-107">然后，您可以使用此配置创建与合作伙伴的协议。</span><span class="sxs-lookup"><span data-stu-id="34a9b-107">You can then use this configuration to create an agreement with the partner.</span></span>  

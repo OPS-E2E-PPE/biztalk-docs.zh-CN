@@ -1,18 +1,18 @@
 ---
-title: "如何确定 Web 消息部件类型 |Microsoft 文档"
-ms.custom: 
+title: 如何确定 Web 消息部件类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web messages, message types
 - Web services, Web messages
 - Web messages, parts
 ms.assetid: bdd1f604-ec35-41e3-b5a8-1e0ad0193eff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25970539"
 ---
 # <a name="how-to-determine-a-web-message-part-type"></a><span data-ttu-id="4f80e-102">如何确定 Web 消息部分类型</span><span class="sxs-lookup"><span data-stu-id="4f80e-102">How to Determine a Web Message Part Type</span></span>
 <span data-ttu-id="4f80e-103">你可以使用给定 Web 消息类型的“属性”窗口确定 Web 消息部分类型是基元 .NET 类型还是架构类型。</span><span class="sxs-lookup"><span data-stu-id="4f80e-103">You can determine if a Web message part type is a primitive .NET type or a schema type by using the Properties window for a given Web message type.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何将发送端口添加到发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何将发送端口添加到发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [send port groups], adding send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - send ports, send port groups
 - adding, send ports
 ms.assetid: a61b3b32-c05e-40b9-abf1-09b7065fb6a2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969571"
 ---
 # <a name="how-to-add-a-send-port-to-a-send-port-group"></a><span data-ttu-id="bdac7-102">如何向发送端口组添加发送端口</span><span class="sxs-lookup"><span data-stu-id="bdac7-102">How to Add a Send Port to a Send Port Group</span></span>
 <span data-ttu-id="bdac7-103">本主题将介绍如何使用 BizTalk Server 管理控制台将一个或多个发送端口添加到发送端口组。</span><span class="sxs-lookup"><span data-stu-id="bdac7-103">This topic describes how to use the BizTalk Server Administration console to add one or more send ports to a send port group.</span></span> <span data-ttu-id="bdac7-104">你仅可以将单向静态发送端口添加到发送端口组。</span><span class="sxs-lookup"><span data-stu-id="bdac7-104">You can only add one-way static send ports to a send port group.</span></span>  

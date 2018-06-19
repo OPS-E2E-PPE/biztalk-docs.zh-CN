@@ -1,17 +1,17 @@
 ---
-title: "导入证书 |Microsoft 文档"
-ms.custom: 
+title: 导入证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - importing certificates
 - certificates, importing
 ms.assetid: c2576f89-b5de-4250-9c54-74c8a218bb39
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209973"
 ---
 # <a name="importing-certificates"></a><span data-ttu-id="1f3f3-102">导入证书</span><span class="sxs-lookup"><span data-stu-id="1f3f3-102">Importing Certificates</span></span>
 <span data-ttu-id="1f3f3-103">本节介绍如何导入证书，包括从何处导入证书、将证书存储在何处以及使用何工具来导入证书。</span><span class="sxs-lookup"><span data-stu-id="1f3f3-103">This section describes how to import certificates, including where to import them from, where to store them, and what tools to use to import them.</span></span>  

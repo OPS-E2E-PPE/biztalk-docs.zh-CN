@@ -1,14 +1,14 @@
 ---
-title: "已知问题 WCF LOB 适配器 SDK |Microsoft 文档"
-ms.custom: 
+title: 已知问题 WCF LOB 适配器 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cda4248-2efa-4e3d-a5ce-9a57728c51e1
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968003"
 ---
 # <a name="known-issues-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="40dc8-102">WCF LOB 适配器 SDK 的已知的问题</span><span class="sxs-lookup"><span data-stu-id="40dc8-102">Known issues with the WCF LOB Adapter SDK</span></span>
 <span data-ttu-id="40dc8-103">本主题介绍与关联的已知的问题[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="40dc8-103">This topic describes known issues associated with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].</span></span> <span data-ttu-id="40dc8-104">它还提供某些这些问题的解决方法。</span><span class="sxs-lookup"><span data-stu-id="40dc8-104">It also provides resolutions for some of these issues.</span></span>  

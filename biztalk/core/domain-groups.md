@@ -1,14 +1,14 @@
 ---
-title: "域组 |Microsoft 文档"
-ms.custom: 
+title: 域组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9adc090e-e18c-46b6-b985-49b200d42966
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968283"
 ---
 # <a name="domain-groups-in-biztalk"></a><span data-ttu-id="80f6a-102">在 BIzTalk 域组</span><span class="sxs-lookup"><span data-stu-id="80f6a-102">Domain Groups in BIzTalk</span></span>
 <span data-ttu-id="80f6a-103">BizTalk Server 在单计算机配置和多计算机配置中都支持域组和域用户帐户。</span><span class="sxs-lookup"><span data-stu-id="80f6a-103">BizTalk Server supports domain group and user accounts in both single and multiple computer configurations.</span></span> <span data-ttu-id="80f6a-104">对于多计算机配置，必须满足本部分以及安装指南的“多服务器环境注意事项”中提出的要求。</span><span class="sxs-lookup"><span data-stu-id="80f6a-104">For multiple computer configurations, you must observe the requirements provided in this section and in the Considerations for Multiserver Environments in the Installation Guide.</span></span> <span data-ttu-id="80f6a-105">有关详细信息，请参阅[安装概述](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。</span><span class="sxs-lookup"><span data-stu-id="80f6a-105">For more information, see the [installation overview](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).</span></span>  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="80f6a-109">在创建域组和/或用户帐户后, 将用户帐户添加到适当的组中组隶属关系根据[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="80f6a-109">After creating domain groups and/or user accounts, add user accounts to the proper groups according to the group affiliations in [Windows Groups and User Accounts in BizTalk Server](../core/windows-groups-and-user-accounts-in-biztalk-server.md).</span></span>  
   
--   <span data-ttu-id="80f6a-110">使用 **\<DomainName\>\\< 用户名\>**时指定 Configuration Manager 中的域帐户信息。</span><span class="sxs-lookup"><span data-stu-id="80f6a-110">Use **\<DomainName\>\\<UserName\>** when specifying domain account information in the Configuration Manager.</span></span>  
+-   <span data-ttu-id="80f6a-110">使用 **\<DomainName\>\\< 用户名\>** 时指定 Configuration Manager 中的域帐户信息。</span><span class="sxs-lookup"><span data-stu-id="80f6a-110">Use **\<DomainName\>\\<UserName\>** when specifying domain account information in the Configuration Manager.</span></span>  
   
 -   <span data-ttu-id="80f6a-111">对于所有群集方案，BizTalk Server 要求使用域帐户。</span><span class="sxs-lookup"><span data-stu-id="80f6a-111">BizTalk Server requires domain accounts for all clustering scenarios.</span></span> <span data-ttu-id="80f6a-112">不能将本地帐户用于群集 SQL Server 或群集 SSO 服务器（主密钥服务器）。</span><span class="sxs-lookup"><span data-stu-id="80f6a-112">You cannot use local accounts with clustered SQL Server or clustered SSO Server (master secret server).</span></span>  
   

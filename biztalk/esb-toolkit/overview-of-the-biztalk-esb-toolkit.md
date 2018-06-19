@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 中的 ESB 工具包概述 |Microsoft 文档"
-description: "ESB 工具包中，以及它能做什么 BizTalk Server 中的说明"
-caps.latest.revision: "6"
+title: BizTalk Server 中的 ESB 工具包概述 |Microsoft 文档
+description: ESB 工具包中，以及它能做什么 BizTalk Server 中的说明
+caps.latest.revision: 6
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e190b34-40bc-4f27-9b4f-56e98591e1d4
 ms.author: mandia
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296725"
 ---
 # <a name="what-is-the-biztalk-esb-toolkit"></a><span data-ttu-id="398a6-103">BizTalk ESB 工具包是什么</span><span class="sxs-lookup"><span data-stu-id="398a6-103">What is the BizTalk ESB Toolkit</span></span>
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="398a6-121">业务活动监视</span><span class="sxs-lookup"><span data-stu-id="398a6-121">Business activity monitoring</span></span>  
   
--   <span data-ttu-id="398a6-122">Web 服务和 WS-* 集成 （WCF 适配器）</span><span class="sxs-lookup"><span data-stu-id="398a6-122">Web service and WS-* integration (WCF adapter)</span></span>  
+-   <span data-ttu-id="398a6-122">Web 服务和 WS-\* 集成 （WCF 适配器）</span><span class="sxs-lookup"><span data-stu-id="398a6-122">Web service and WS-\* integration (WCF adapter)</span></span>  
 
 ## <a name="core-capabilities"></a><span data-ttu-id="398a6-123">核心功能</span><span class="sxs-lookup"><span data-stu-id="398a6-123">Core capabilities</span></span>  
  <span data-ttu-id="398a6-124">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]扩展 BizTalk Server 提供一系列上构建强大、 连接、 面向服务的应用程序的已设定焦点的新功能的功能。</span><span class="sxs-lookup"><span data-stu-id="398a6-124">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extends the functionality of BizTalk Server to provide a range of new capabilities focused on building robust, connected, service-oriented applications.</span></span> <span data-ttu-id="398a6-125">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] BizTalk 服务器组件将其视为单独的可连接的工作单元根据需要，以形成松散耦合解决方案。</span><span class="sxs-lookup"><span data-stu-id="398a6-125">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] treats BizTalk Server components as individual units of work that can be connected, as desired, to form loosely coupled solutions.</span></span> <span data-ttu-id="398a6-126">以下是一些核心功能，[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供增强的 BizTalk Server 功能：</span><span class="sxs-lookup"><span data-stu-id="398a6-126">The following are some of the core capabilities that the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides to enhance the capabilities of BizTalk Server:</span></span>  

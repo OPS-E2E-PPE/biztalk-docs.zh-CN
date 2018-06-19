@@ -1,14 +1,14 @@
 ---
-title: "如何为侦听配置 Windows Communication Foundation 应用 |Microsoft 文档"
-ms.custom: 
+title: 如何为侦听配置 Windows Communication Foundation 应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 37f2ccde-aa79-470a-ac31-57e4168dc54a
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969651"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-application-for-interception"></a><span data-ttu-id="cee6f-102">如何为侦听配置 Windows Communication Foundation 应用</span><span class="sxs-lookup"><span data-stu-id="cee6f-102">How to Configure a Windows Communication Foundation Application for Interception</span></span>
 <span data-ttu-id="cee6f-103">必须安装 BAM 侦听器软件并将应用程序配置为使用 BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 侦听器服务后才能开始收集 BAM 活动数据。</span><span class="sxs-lookup"><span data-stu-id="cee6f-103">You must install the BAM interceptor software and configure your application to use the BAM [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] interceptor service before you can begin collecting BAM activity data.</span></span> <span data-ttu-id="cee6f-104">我们假定您已成功安装了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 及其依存关系，并至少创建了一个 BizTalk 组。</span><span class="sxs-lookup"><span data-stu-id="cee6f-104">It is assumed that you have successfully installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and its dependencies and have created at least one BizTalk group.</span></span>  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
      <span data-ttu-id="cee6f-138">请确保你替换\< *icfile.xml* \>替换为你想要部署的侦听器配置文件的名称。</span><span class="sxs-lookup"><span data-stu-id="cee6f-138">Make sure you replace \<*icfile.xml*\> with the name of the interceptor configuration file you want to deploy.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="cee6f-139">你可以使用**-Force: True**标志来重写你侦听器的配置文件中的这些相同的名称的现有事件源。</span><span class="sxs-lookup"><span data-stu-id="cee6f-139">You can use the **-Force:True** flag to override existing event sources with the same name(s) as those in your interceptor configuration file.</span></span> <span data-ttu-id="cee6f-140">如果这样做，请确保使用备份的现有配置**get 侦听器**命令。</span><span class="sxs-lookup"><span data-stu-id="cee6f-140">If you do so, make sure you back up the existing configuration by using the **get-interceptor** command.</span></span> <span data-ttu-id="cee6f-141">使用 -Force:True 标志可能会删除所有引用被覆盖的事件源的侦听器配置。</span><span class="sxs-lookup"><span data-stu-id="cee6f-141">Using the -Force:True flag could delete any interceptor configurations that reference the event sources being overwritten.</span></span>  
+    >  <span data-ttu-id="cee6f-139">你可以使用 **-Force: True**标志来重写你侦听器的配置文件中的这些相同的名称的现有事件源。</span><span class="sxs-lookup"><span data-stu-id="cee6f-139">You can use the **-Force:True** flag to override existing event sources with the same name(s) as those in your interceptor configuration file.</span></span> <span data-ttu-id="cee6f-140">如果这样做，请确保使用备份的现有配置**get 侦听器**命令。</span><span class="sxs-lookup"><span data-stu-id="cee6f-140">If you do so, make sure you back up the existing configuration by using the **get-interceptor** command.</span></span> <span data-ttu-id="cee6f-141">使用 -Force:True 标志可能会删除所有引用被覆盖的事件源的侦听器配置。</span><span class="sxs-lookup"><span data-stu-id="cee6f-141">Using the -Force:True flag could delete any interceptor configurations that reference the event sources being overwritten.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="cee6f-142">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="cee6f-142">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

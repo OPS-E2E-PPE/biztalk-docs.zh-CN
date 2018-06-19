@@ -1,14 +1,14 @@
 ---
-title: "运行保留自定义异常处理程序的示例消息 |Microsoft 文档"
-ms.custom: 
+title: 运行保留自定义异常处理程序的示例消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a0a4c819-f6bd-4dea-8be9-e3006337665f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295325"
 ---
 # <a name="running-the-message-persisting-custom-exception-handler-sample"></a><span data-ttu-id="3b4f5-102">运行保留自定义异常处理程序的示例消息</span><span class="sxs-lookup"><span data-stu-id="3b4f5-102">Running the Message Persisting Custom Exception Handler Sample</span></span>
 <span data-ttu-id="3b4f5-103">消息保留自定义异常处理程序示例演示如何实现松耦合、 泛型的处理程序收到错误消息时，它们包含，并将其作为磁盘文件写入到文件系统的 Microsoft BizTalk 消息中提取。</span><span class="sxs-lookup"><span data-stu-id="3b4f5-103">The Message Persisting Custom Exception Handler sample demonstrates a loosely coupled, generic handler that receives fault messages, extracts the Microsoft BizTalk messages they contain, and writes them as disk files to the file system.</span></span>  

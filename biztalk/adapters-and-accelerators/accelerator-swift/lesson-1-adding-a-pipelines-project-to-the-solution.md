@@ -1,17 +1,17 @@
 ---
-title: "第 1 课： 将管道项目添加到解决方案 |Microsoft 文档"
-ms.custom: 
+title: 第 1 课： 将管道项目添加到解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, adding pipelines
 - pipelines, adding to projects
 ms.assetid: ae058b52-e2ea-406c-9f9f-6cb1b72413d2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965699"
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a><span data-ttu-id="3adf7-102">第 1 课： 将管道项目添加到解决方案</span><span class="sxs-lookup"><span data-stu-id="3adf7-102">Lesson 1: Adding a Pipelines Project to the Solution</span></span>
 <span data-ttu-id="3adf7-103">在本课程中，你添加新的 BizTalk 项目 for SWIFT 管道到解决方案，以便您可以自定义你发送和接收管道。</span><span class="sxs-lookup"><span data-stu-id="3adf7-103">In this lesson, you add a new BizTalk project for SWIFT pipelines to the solution so you can customize your send and receive pipelines.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "触发事件和消息 |Microsoft 文档"
-ms.custom: 
+title: 触发事件和消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - health care organizations, HL7 messages
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, trigger events
 - messages, about messages
 ms.assetid: e93b397c-8cbe-4589-aa88-e474d7722174
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206533"
 ---
 # <a name="trigger-events-and-messages"></a><span data-ttu-id="9ed8f-102">触发事件和消息</span><span class="sxs-lookup"><span data-stu-id="9ed8f-102">Trigger Events and Messages</span></span>
 <span data-ttu-id="9ed8f-103">在数字卫生保健系统中，应用程序由于实际事件，如放置实验室顺序或药品顺序创建 HL7 消息。</span><span class="sxs-lookup"><span data-stu-id="9ed8f-103">In a digital health care system, applications create HL7 messages because of a real-world event, such as the placing of a laboratory order or drug order.</span></span> <span data-ttu-id="9ed8f-104">HL7 组织已写 HL7 标准基于卫生保健将现实生活中的事件创建对数据应用程序，之间流动，即使这些应用程序跨异类系统的需求的假设。</span><span class="sxs-lookup"><span data-stu-id="9ed8f-104">The HL7 organization has written the HL7 standard based on the assumption that an event in the real world of health care creates the need for data to flow among applications, even when these applications span heterogeneous systems.</span></span> <span data-ttu-id="9ed8f-105">HL7 标准调用此实际事件*触发器事件*。</span><span class="sxs-lookup"><span data-stu-id="9ed8f-105">The HL7 standard calls this real-world event a *trigger event*.</span></span> <span data-ttu-id="9ed8f-106">自动的系统必须系统地识别触发器事件。</span><span class="sxs-lookup"><span data-stu-id="9ed8f-106">An automated system must systematically recognize the trigger event.</span></span>  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25969499"
 ---
 # <a name="how-to-audit-sso"></a><span data-ttu-id="e48d8-102">如何审核 SSO</span><span class="sxs-lookup"><span data-stu-id="e48d8-102">How to Audit SSO</span></span>
 <span data-ttu-id="e48d8-103">可以使用 MMC 管理单元中或命令行设置这两种正值和负值审核级别。</span><span class="sxs-lookup"><span data-stu-id="e48d8-103">You can use the MMC Snap-In or the command line to set both the positive and negative auditing levels.</span></span> <span data-ttu-id="e48d8-104">审核的结果存储在事件日志和审核日志中的数据库。</span><span class="sxs-lookup"><span data-stu-id="e48d8-104">Results of the auditing are stored in both the event logs and the audit logs of the database.</span></span>  
@@ -69,18 +70,18 @@ ms.lasthandoff: 04/20/2018
   
 2.  <span data-ttu-id="e48d8-123">在命令行提示符下，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="e48d8-123">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="e48d8-124">默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="e48d8-124">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="e48d8-125">类型**ssoconfig-auditlevel\<正\>\<负\>**，其中**\<正\>**是的级别审核操作成功，和**\<负\>**是审核操作失败时的级别。</span><span class="sxs-lookup"><span data-stu-id="e48d8-125">Type **ssoconfig –auditlevel \<positive\>\<negative\>**, where **\<positive\>** is the level of auditing when actions succeed, and **\<negative\>** is the level of auditing when actions fail.</span></span>  
+3.  <span data-ttu-id="e48d8-125">类型**ssoconfig-auditlevel\<正\>\<负\>**，其中**\<正\>** 是的级别审核操作成功，和**\<负\>** 是审核操作失败时的级别。</span><span class="sxs-lookup"><span data-stu-id="e48d8-125">Type **ssoconfig –auditlevel \<positive\>\<negative\>**, where **\<positive\>** is the level of auditing when actions succeed, and **\<negative\>** is the level of auditing when actions fail.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="e48d8-126">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="e48d8-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
 ### <a name="to-audit-the-sso-database"></a><span data-ttu-id="e48d8-127">若要审核的 SSO 数据库</span><span class="sxs-lookup"><span data-stu-id="e48d8-127">To audit the SSO database</span></span>  
   
-1.  <span data-ttu-id="e48d8-128">依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。</span><span class="sxs-lookup"><span data-stu-id="e48d8-128">Click **Start**, click **Run**, and then type **cmd**.</span></span>  
+1.  <span data-ttu-id="e48d8-128">依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。</span><span class="sxs-lookup"><span data-stu-id="e48d8-128">Click **Start**, click **Run**, and then type **cmd**.</span></span>  
   
 2.  <span data-ttu-id="e48d8-129">在命令行提示符下，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="e48d8-129">At the command line prompt, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="e48d8-130">默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。</span><span class="sxs-lookup"><span data-stu-id="e48d8-130">The default installation directory is **\<drive\>**:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="e48d8-131">类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>**是路径和文件的名称。</span><span class="sxs-lookup"><span data-stu-id="e48d8-131">Type **ssomanage –updatedb \<update file\>**, where **\<update file\>**is the path and name of the file.</span></span>  
+3.  <span data-ttu-id="e48d8-131">类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>** 是路径和文件的名称。</span><span class="sxs-lookup"><span data-stu-id="e48d8-131">Type **ssomanage –updatedb \<update file\>**, where **\<update file\>** is the path and name of the file.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="e48d8-132">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="e48d8-132">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

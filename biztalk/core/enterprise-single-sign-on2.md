@@ -1,15 +1,15 @@
 ---
-title: "企业单一登录概述 |Microsoft 文档"
-description: "了解在 BizTalk Server 中使用 SSO 票证与处理消息和 adminster SSO 的 affilicate 应用程序"
-ms.custom: 
+title: 企业单一登录概述 |Microsoft 文档
+description: 了解在 BizTalk Server 中使用 SSO 票证与处理消息和 adminster SSO 的 affilicate 应用程序
+ms.custom: ''
 ms.date: 10/11/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2aaab59-8cf7-4848-b71a-e7c8682dd3bd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5e6ef63416e8885a5ee91bd65618a842b3a0cc54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/12/2017
+ms.locfileid: "23129694"
 ---
 # <a name="enterprise-single-sign-on-overview"></a><span data-ttu-id="34eba-103">企业单一登录概述</span><span class="sxs-lookup"><span data-stu-id="34eba-103">Enterprise Single Sign-On Overview</span></span>
 <span data-ttu-id="34eba-104">依赖于多个不同应用程序的业务流程可能要涉及多个不同的安全域。</span><span class="sxs-lookup"><span data-stu-id="34eba-104">A business process that relies on several different applications may have to cross several different security domains.</span></span> <span data-ttu-id="34eba-105">访问 Microsoft Windows 系统中的应用程序可能需要一组安全凭据，而访问 IBM 大型机中的应用程序则可能需要不同的凭据，例如 RACF 用户名和密码。</span><span class="sxs-lookup"><span data-stu-id="34eba-105">Accessing an application on a Microsoft Windows system may require one set of security credentials, while accessing an application on an IBM mainframe may require different credentials, such as an RACF username and password.</span></span> <span data-ttu-id="34eba-106">处理如此多的凭据对于用户而言并非易事，而对于自动化流程来说，这会更加困难。</span><span class="sxs-lookup"><span data-stu-id="34eba-106">Dealing with this profusion of credentials is difficult for users, and it can be even harder for automated processes.</span></span> <span data-ttu-id="34eba-107">为解决此问题，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包括了企业单一登录。</span><span class="sxs-lookup"><span data-stu-id="34eba-107">To address this problem, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes Enterprise Single Sign-On.</span></span>  

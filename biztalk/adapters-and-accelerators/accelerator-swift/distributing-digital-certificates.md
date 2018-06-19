@@ -1,17 +1,17 @@
 ---
-title: "分发数字证书 |Microsoft 文档"
-ms.custom: 
+title: 分发数字证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - digital signatures
 - security, digital signatures
 ms.assetid: 3e93a405-3c9b-43f5-bbdf-bec25d43eb45
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209413"
 ---
 # <a name="distributing-digital-certificates"></a><span data-ttu-id="5c3d3-102">分发数字证书</span><span class="sxs-lookup"><span data-stu-id="5c3d3-102">Distributing Digital Certificates</span></span>
 <span data-ttu-id="5c3d3-103">用于数字签名的数字证书通常发出并分发给用户工作站的证书颁发机构 (Ca) — 任一外部的商业实体，例如 VeriSign 或在组织中承载的内部 Ca。</span><span class="sxs-lookup"><span data-stu-id="5c3d3-103">Digital certificates used for digital signing are typically issued and distributed to user workstations by certification authorities (CAs)—either external commercial entities such as VeriSign, or internal CAs hosted in an organization.</span></span> <span data-ttu-id="5c3d3-104">使用的数字证书的类型 （加密算法和密码强度） 可能与组织的不同。</span><span class="sxs-lookup"><span data-stu-id="5c3d3-104">The types (encryption algorithms and cipher strengths) of digital certificates used may differ from organization to organization.</span></span> [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]<span data-ttu-id="5c3d3-105">可以进行数字签名使用私钥组成和具有数字签名和/或密钥用法属性的加密值的任何证书格式窗体。</span><span class="sxs-lookup"><span data-stu-id="5c3d3-105"> can digitally sign a form using any certificate format that is made up of a private key and has a Digital Signature and/or an Encryption value for the Key Usage attribute.</span></span> <span data-ttu-id="5c3d3-106">此外，证书的用途应设置为客户端身份验证。</span><span class="sxs-lookup"><span data-stu-id="5c3d3-106">Additionally, the purpose of the certificate should be set as Client Authentication.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "不还原数据库备份的 BizTalk Server 作业中包含 |Microsoft 文档"
-ms.custom: 
+title: 不还原数据库备份的 BizTalk Server 作业中包含 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7141980-d4a6-4409-be9b-c94a7f733376
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302117"
 ---
 # <a name="restoring-databases-not-included-in-the-backup-biztalk-server-job"></a><span data-ttu-id="f8aa1-102">还原数据库备份的 BizTalk Server 作业中不包括</span><span class="sxs-lookup"><span data-stu-id="f8aa1-102">Restoring Databases Not Included in the Backup BizTalk Server Job</span></span>
 <span data-ttu-id="f8aa1-103">本部分介绍如何还原总体 BizTalk 解决方案的一部分，但不是会备份 BizTalk Server 作业身份备份的数据库。</span><span class="sxs-lookup"><span data-stu-id="f8aa1-103">This section describes how to restore databases that are part of the overall BizTalk solution but are not backed up by the Backup BizTalk Server job.</span></span> <span data-ttu-id="f8aa1-104">使用以下除外备份 BizTalk Server 作业，将备份作为 BizTalk 解决方案的一部分的所有数据库：</span><span class="sxs-lookup"><span data-stu-id="f8aa1-104">All databases that are part of a BizTalk solution will be backed up by using the Backup BizTalk Server job except for the following:</span></span>  

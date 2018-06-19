@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 44da7839f0bee96db332dada214bdbc503067f56
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013156"
 ---
 # <a name="how-to-create-send-ports-for-tibco-rendezvous"></a><span data-ttu-id="d8556-101">如何创建 TIBCO Rendezvous 的发送端口</span><span class="sxs-lookup"><span data-stu-id="d8556-101">How to Create Send Ports for TIBCO Rendezvous</span></span>
 <span data-ttu-id="d8556-102">请按照以下步骤，使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建一个发送端口。</span><span class="sxs-lookup"><span data-stu-id="d8556-102">Follow these steps to create a send port using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  

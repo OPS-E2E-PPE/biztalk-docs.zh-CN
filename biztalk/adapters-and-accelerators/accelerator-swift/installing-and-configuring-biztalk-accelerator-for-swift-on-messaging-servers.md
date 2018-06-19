@@ -1,18 +1,18 @@
 ---
-title: "上安装和配置 BizTalk Accelerator for SWIFT 消息服务器，|Microsoft 文档"
-ms.custom: 
+title: 上安装和配置 BizTalk Accelerator for SWIFT 消息服务器，|Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, configuring
 - BizTalk Accelerator for SWIFT, installing on Messaging servers
 - BizTalk Messaging servers, installing BizTalk Accelerator for SWIFT
 ms.assetid: 7a8f60aa-5ff2-4584-9d4a-dc4a0ba61aca
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209389"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers"></a><span data-ttu-id="0f597-102">上安装和配置 BizTalk Accelerator for SWIFT 消息传送服务器</span><span class="sxs-lookup"><span data-stu-id="0f597-102">Installing and Configuring BizTalk Accelerator for SWIFT on Messaging Servers</span></span>
 <span data-ttu-id="0f597-103">本部分介绍如何安装和配置[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]消息传送的服务器上。</span><span class="sxs-lookup"><span data-stu-id="0f597-103">This section describes how to install and configure [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] on the messaging servers.</span></span> <span data-ttu-id="0f597-104">这些服务器主要用于与 SWIFT 网络进行通信。</span><span class="sxs-lookup"><span data-stu-id="0f597-104">These servers are mainly used to communicate with the SWIFT Network.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 将请求消息发送到 SQL Server，并接收响应 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 将请求消息发送到 SQL Server，并接收响应 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 864d2174-d54b-4383-92bf-f6808a2a904b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224797"
 ---
 # <a name="step-2-send-the-request-message-to-sql-server-and-receive-response"></a><span data-ttu-id="8bae2-102">步骤 2： 将请求消息发送到 SQL Server，并接收响应</span><span class="sxs-lookup"><span data-stu-id="8bae2-102">Step 2: Send the Request Message to SQL Server and Receive Response</span></span>
 <span data-ttu-id="8bae2-103">![步骤 2 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span><span class="sxs-lookup"><span data-stu-id="8bae2-103">![Step 2 of 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")</span></span>  
   
  <span data-ttu-id="8bae2-104">**完成时间：** 10 分钟</span><span class="sxs-lookup"><span data-stu-id="8bae2-104">**Time to complete:** 10 minutes</span></span>  
   
- <span data-ttu-id="8bae2-105">**目标：**在此步骤中，你将发送要执行的请求消息**UPDATE_EMPLOYEE**存储过程和接收响应。</span><span class="sxs-lookup"><span data-stu-id="8bae2-105">**Objective:** In this step, you send the request message to execute the **UPDATE_EMPLOYEE** stored procedure and receive the response.</span></span>  
+ <span data-ttu-id="8bae2-105">**目标：** 在此步骤中，你将发送要执行的请求消息**UPDATE_EMPLOYEE**存储过程和接收响应。</span><span class="sxs-lookup"><span data-stu-id="8bae2-105">**Objective:** In this step, you send the request message to execute the **UPDATE_EMPLOYEE** stored procedure and receive the response.</span></span>  
   
 ## <a name="prerequisites"></a><span data-ttu-id="8bae2-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="8bae2-106">Prerequisites</span></span>  
  <span data-ttu-id="8bae2-107">你必须已完成[步骤 1： 为 UPDATE_EMPLOYEE 存储过程创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md)。</span><span class="sxs-lookup"><span data-stu-id="8bae2-107">You must have completed [Step 1: Create the Request Message for UPDATE_EMPLOYEE Stored Procedure](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-update-employee-stored-procedure.md).</span></span>  

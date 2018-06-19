@@ -1,18 +1,18 @@
 ---
-title: "服务器运行时安全性 |Microsoft 文档"
-ms.custom: 
+title: 服务器运行时安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, server runtime
 - servers, security
 - servers, runtime
 ms.assetid: 40f5ca3e-d9d3-4543-bd38-82283c343b76
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214125"
 ---
 # <a name="server-runtime-security"></a><span data-ttu-id="75442-102">服务器运行时安全性</span><span class="sxs-lookup"><span data-stu-id="75442-102">Server Runtime Security</span></span>
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="75442-103">消息修复和新提交控制的业务用户、 后端系统和 SWIFT 网络终结点之间的 SWIFT 消息流的安全和确定性的方式。</span><span class="sxs-lookup"><span data-stu-id="75442-103"> Message Repair and New Submission governs the flow of SWIFT messages between business users, back-end systems, and SWIFT network endpoints in a secure and deterministic manner.</span></span> <span data-ttu-id="75442-104">它由业务用户提交的消息进行身份验证、 验证数据和业务规则正确性的消息和将消息路由到后端系统或从而最终提交到 SWIFT 网络。</span><span class="sxs-lookup"><span data-stu-id="75442-104">It authenticates messages submitted by business users, validates messages for data and business-rule correctness, and routes messages to back-end systems or for final delivery to the SWIFT network.</span></span> <span data-ttu-id="75442-105">有关数字证书的详细信息，请参阅"加密和签名证书"MSDN 库网站上在[http://go.microsoft.com/fwlink/?linkid=50285](http://go.microsoft.com/fwlink/?linkid=50285)。</span><span class="sxs-lookup"><span data-stu-id="75442-105">For more information about digital certificates, see "Encryption and Signing Certificates" on the MSDN Library Web site at [http://go.microsoft.com/fwlink/?linkid=50285](http://go.microsoft.com/fwlink/?linkid=50285).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "单一登录要求 |Microsoft 文档"
-ms.custom: 
+title: 单一登录要求 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 318b9977-ce24-48d6-971b-49a059a1bdbc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013020"
 ---
 # <a name="requirements-for-single-sign-on"></a><span data-ttu-id="8266f-102">单一登录的要求</span><span class="sxs-lookup"><span data-stu-id="8266f-102">Requirements for Single Sign-On</span></span>
 <span data-ttu-id="8266f-103">若要使用单一登录 (SSO)，需具备以下各项：</span><span class="sxs-lookup"><span data-stu-id="8266f-103">To use Single Sign-On (SSO), you must have:</span></span>  

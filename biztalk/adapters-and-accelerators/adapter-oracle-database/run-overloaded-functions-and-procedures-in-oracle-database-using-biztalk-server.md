@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967155"
 ---
 # <a name="invoke-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server"></a><span data-ttu-id="2e5b7-102">调用重载函数和 Oracle 数据库使用 BizTalk Server 中的过程</span><span class="sxs-lookup"><span data-stu-id="2e5b7-102">Invoke Overloaded Functions and Procedures in Oracle Database using BizTalk Server</span></span>
 <span data-ttu-id="2e5b7-103">存储的过程和函数可以进行重载 Oracle 数据库中。</span><span class="sxs-lookup"><span data-stu-id="2e5b7-103">Stored procedures and functions can be overloaded in an Oracle database.</span></span> <span data-ttu-id="2e5b7-104">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持重载函数和过程的更改操作的目标命名空间。</span><span class="sxs-lookup"><span data-stu-id="2e5b7-104">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded functions and procedures by changing the target namespace of the operation.</span></span> <span data-ttu-id="2e5b7-105">例如，两个重载过程的消息结构如下所示：</span><span class="sxs-lookup"><span data-stu-id="2e5b7-105">For example, the message structure for two overloaded procedures looks like:</span></span>  

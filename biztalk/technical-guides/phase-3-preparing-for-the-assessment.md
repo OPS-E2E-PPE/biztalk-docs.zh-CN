@@ -1,14 +1,14 @@
 ---
-title: "阶段 3： 准备评估 |Microsoft 文档"
-ms.custom: 
+title: 阶段 3： 准备评估 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d153ed62-f2cc-4080-8912-c98ecdd329f5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301837"
 ---
 # <a name="phase-3-preparing-for-the-assessment"></a><span data-ttu-id="42eca-102">阶段 3： 准备评估</span><span class="sxs-lookup"><span data-stu-id="42eca-102">Phase 3: Preparing for the Assessment</span></span>
 <span data-ttu-id="42eca-103">性能评估阶段可以被想象成审视阶段的"如何""怎么"和计划阶段的准备工作的"何时。"</span><span class="sxs-lookup"><span data-stu-id="42eca-103">The Prepare phase of a performance assessment can be thought of as the “how” to the Scope phase’s “what” and the Plan phase’s “when.”</span></span> <span data-ttu-id="42eca-104">此时在性能评估中，所有利益干系人应具有达成一致后用户参与策略和计划的范围进行试验室。</span><span class="sxs-lookup"><span data-stu-id="42eca-104">At this point in the performance assessment, all stakeholders should have agreed upon the scope of the engagement and the plans for conducting the lab.</span></span> <span data-ttu-id="42eca-105">它是在其中执行计划和执行任何步骤以获取已准备好的性能实验室的执行性能评估的准备阶段。</span><span class="sxs-lookup"><span data-stu-id="42eca-105">It is in the Prepare phase of the performance assessment where the plans are executed and steps are taken to get ready for execution of the performance lab.</span></span>  

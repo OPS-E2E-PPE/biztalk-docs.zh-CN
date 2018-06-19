@@ -1,11 +1,11 @@
 ---
-title: "步骤 2： 创建公共和私有证书 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建公共和私有证书 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, creating certificates
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - creating, certificates
 - private certificates
 ms.assetid: 0a925d89-03d9-41fe-907b-85a6ae42362a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967595"
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a><span data-ttu-id="c409a-102">步骤 2： 创建公共和私有证书</span><span class="sxs-lookup"><span data-stu-id="c409a-102">Step 2: Creating Public and Private Certificates</span></span>
 <span data-ttu-id="c409a-103">在此步骤中，你使用证书颁发机构中创建[步骤 1： 创建证书颁发机构 （&） #91;RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)生成 Contoso 和 Fabrikam 公司使用的公钥和私钥证书。</span><span class="sxs-lookup"><span data-stu-id="c409a-103">In this step, you use the Certification Authority created in [Step 1: Creating a Certification Authority &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) to generate the public and private certificates that the Contoso and Fabrikam organizations use.</span></span>  

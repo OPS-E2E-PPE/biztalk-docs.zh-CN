@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: d727d3969603e8ac6e180f524802ff4183faab5a
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014516"
 ---
 # <a name="how-to-set-receive-pipelines-for-tibco-enterprise-message-service"></a><span data-ttu-id="93970-101">如何设置 TIBCO Enterprise Message Service 的接收管道</span><span class="sxs-lookup"><span data-stu-id="93970-101">How to Set Receive Pipelines for TIBCO Enterprise Message Service</span></span>
 <span data-ttu-id="93970-102">适用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器要求设置接收处理程序和接收管道。</span><span class="sxs-lookup"><span data-stu-id="93970-102">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service requires that you set the receive handler and receive pipeline.</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "从 SAP 使用 BizTalk Server 接收到的 Idoc |Microsoft 文档"
-ms.custom: 
+title: 从 SAP 使用 BizTalk Server 接收到的 Idoc |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOCs, sample (receiving)
 - IDOCs, business scenarios for receiving
 - IDOCs, receiving from SAP using BizTalk Server
 ms.assetid: b904bf07-1108-4ed3-8564-d83eaafff247
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968059"
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a><span data-ttu-id="85d30-102">从 SAP 使用 BizTalk Server 接收到的 Idoc</span><span class="sxs-lookup"><span data-stu-id="85d30-102">Receive IDOCs from SAP using BizTalk Server</span></span>
 <span data-ttu-id="85d30-103">接收 IDOC 涉及[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]充当了 RFC 服务器以接收来自 SAP 的特殊 RFC 呼叫。</span><span class="sxs-lookup"><span data-stu-id="85d30-103">Receiving an IDOC involves the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to act as an RFC server to receive a special RFC call from SAP.</span></span> <span data-ttu-id="85d30-104">SAP 适配器可以接收到的 Idoc 充当 RFC 服务器或 tRFC 服务器。</span><span class="sxs-lookup"><span data-stu-id="85d30-104">The SAP adapter can receive IDOCs acting as an RFC server or a tRFC server.</span></span> <span data-ttu-id="85d30-105">有关与 tRFC 服务器正常运行的适配器接收 IDOC 的详细信息，请参阅[接收从通过使用 BizTalk Server 事务上下文中的 SAP 的 Idoc](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)。</span><span class="sxs-lookup"><span data-stu-id="85d30-105">For more information about receiving an IDOC with the adapter behaving as a tRFC server, see [Receive IDOCs from SAP in a Transactional Context by Using BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md).</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
 -   <span data-ttu-id="85d30-182">*FlatFileSegmentIndicator* – 指示如果 IDOC 架构\<appinfo\>标记应包含段定义名称或段类型名称。</span><span class="sxs-lookup"><span data-stu-id="85d30-182">*FlatFileSegmentIndicator* – Indicates if the IDOC schema \<appinfo\> tags should contain segment definition names or segment type names.</span></span> <span data-ttu-id="85d30-183">这是使用希望发送/接收平面文件 IDOC 向/从 SAP 时适用。</span><span class="sxs-lookup"><span data-stu-id="85d30-183">This is applicable when a used wishes to send/receive a flat-file IDOC to/from SAP.</span></span> <span data-ttu-id="85d30-184">如果*GenerateFlatFileCompatibleIDoc*设置为 false，则*FlatFileSegmentIndicator*绑定属性将被忽略。</span><span class="sxs-lookup"><span data-stu-id="85d30-184">If the *GenerateFlatFileCompatibleIDoc* is set to false, then *FlatFileSegmentIndicator* binding property is ignored.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="85d30-185">因为您正在生成的入站 IDOC 调用的架构，请确保选择**服务 （入站操作）**从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="85d30-185">Because you are generating the schema for an inbound IDOC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
+>  <span data-ttu-id="85d30-185">因为您正在生成的入站 IDOC 调用的架构，请确保选择**服务 （入站操作）** 从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="85d30-185">Because you are generating the schema for an inbound IDOC call, make sure you select **Service (Inbound operation)** from the **Select contract type** drop-down list in the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span>  
   
 ## <a name="defining-messages-and-message-types"></a><span data-ttu-id="85d30-186">定义消息和消息类型</span><span class="sxs-lookup"><span data-stu-id="85d30-186">Defining Messages and Message Types</span></span>  
  <span data-ttu-id="85d30-187">你先前生成的架构描述业务流程中的消息所需的"类型"。</span><span class="sxs-lookup"><span data-stu-id="85d30-187">The schema that you generated earlier describes the "types" required for the messages in the orchestration.</span></span> <span data-ttu-id="85d30-188">一条消息通常是一个变量，为其类型由相应的架构定义。</span><span class="sxs-lookup"><span data-stu-id="85d30-188">A message is typically a variable, the type for which is defined by the corresponding schema.</span></span> <span data-ttu-id="85d30-189">你必须链接您从生成的架构中的第一步的邮件 BizTalk 项目的业务流程视图。</span><span class="sxs-lookup"><span data-stu-id="85d30-189">You must link the schema you generated in the first step to the messages from the Orchestration view of the BizTalk project.</span></span>  

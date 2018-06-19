@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BAPI
 - IDOC
 ms.assetid: 5f0d7c1f-d6e1-4c56-8d8e-1f5d537aa3ce
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22218437"
 ---
 # <a name="browse-search-and-get-sap-metadata"></a><span data-ttu-id="b2ecc-102">浏览、 搜索和获取 SAP 元数据</span><span class="sxs-lookup"><span data-stu-id="b2ecc-102">Browse, search, and get SAP metadata</span></span>
 <span data-ttu-id="b2ecc-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]曲面从 SAP 系统的元数据。</span><span class="sxs-lookup"><span data-stu-id="b2ecc-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces metadata from the SAP system.</span></span> <span data-ttu-id="b2ecc-104">此元数据描述与使用适配器的 SAP 系统通信的消息结构。</span><span class="sxs-lookup"><span data-stu-id="b2ecc-104">This metadata describes the message structure for communicating with an SAP system using the adapter.</span></span> <span data-ttu-id="b2ecc-105">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]为检索元数据支持两个接口。</span><span class="sxs-lookup"><span data-stu-id="b2ecc-105">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports two interfaces for retrieving metadata.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "SWIFT 接收适配器存储和转发 |Microsoft 文档"
-ms.custom: 
+title: SWIFT 接收适配器存储和转发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11eeb335-366b-4b29-9078-de9396b258ca
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224469"
 ---
 # <a name="swift-receive-adapter-store-and-forward"></a><span data-ttu-id="9fea6-102">SWIFT 接收适配器存储和转发</span><span class="sxs-lookup"><span data-stu-id="9fea6-102">SWIFT Receive Adapter Store and Forward</span></span>
 <span data-ttu-id="9fea6-103">接收适配器从 SWIFT 存储和转发 (SnF) 队列接收消息。</span><span class="sxs-lookup"><span data-stu-id="9fea6-103">The receive adapter receives messages from the SWIFT store and forward (SnF) queue.</span></span> <span data-ttu-id="9fea6-104">若要从队列接收消息，适配器必须使用 SnF 队列打开会话。</span><span class="sxs-lookup"><span data-stu-id="9fea6-104">To receive messages from the queue, the adapter must open a session with the SnF queue.</span></span> <span data-ttu-id="9fea6-105">若要打开队列，则必须建立与队列的会话的专用客户端进程。</span><span class="sxs-lookup"><span data-stu-id="9fea6-105">To open the queue, it must have a dedicated client process that establishes the session with the queue.</span></span> <span data-ttu-id="9fea6-106">在设计中，作为 COM plus 进程外的组件来实现此过程。</span><span class="sxs-lookup"><span data-stu-id="9fea6-106">In the design, this process is implemented as a COM plus out-of-proc component.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "使用在 Oracle E-business Suite 中具有较大的数据类型的表 |Microsoft 文档"
-ms.custom: 
+title: 使用在 Oracle E-business Suite 中具有较大的数据类型的表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 501aa302-0f82-4221-b99f-423bc8621a6a
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968107"
 ---
 # <a name="working-with-tables-that-have-large-data-types-in-oracle-e-business-suite"></a><span data-ttu-id="2ef44-102">使用在 Oracle E-business Suite 中具有较大的数据类型的表</span><span class="sxs-lookup"><span data-stu-id="2ef44-102">Working with tables that have large data types in Oracle E-Business Suite</span></span>
 <span data-ttu-id="2ef44-103">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端可以执行对接口表和视图的较大的数据类型，如 BLOB、 CLOB、 NCLOB、 和 BFILE 操作。</span><span class="sxs-lookup"><span data-stu-id="2ef44-103">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] enables adapter clients to perform operations on interface tables and views with large data types such as BLOB, CLOB, NCLOB, and BFILE.</span></span>  

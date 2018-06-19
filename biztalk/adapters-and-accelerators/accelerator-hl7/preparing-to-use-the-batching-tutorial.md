@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206037"
 ---
 # <a name="preparing-to-use-the-batching-tutorial"></a><span data-ttu-id="7bee9-102">准备使用批处理教程</span><span class="sxs-lookup"><span data-stu-id="7bee9-102">Preparing to Use the Batching Tutorial</span></span>
 <span data-ttu-id="7bee9-103">你可以使用批处理教程之前，必须执行本节中的任务。</span><span class="sxs-lookup"><span data-stu-id="7bee9-103">Before you can use the Batching tutorial, you must perform the tasks in this section.</span></span>  

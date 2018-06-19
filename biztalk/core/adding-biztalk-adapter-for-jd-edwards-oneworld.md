@@ -1,15 +1,15 @@
 ---
-title: "为博士 Edwards OneWorld 添加 BizTalk 适配器 |Microsoft 文档"
-description: "将博士 Edwards OneWorld 添加到 BizTalk 管理、 创建发送端口、 配置传输属性中，和在 BizTalk Server 中使用博士 Edwards OneWorld 适配器时使用 XMLReceive 和 XMLTransmit 管道"
-ms.custom: 
+title: 为博士 Edwards OneWorld 添加 BizTalk 适配器 |Microsoft 文档
+description: 将博士 Edwards OneWorld 添加到 BizTalk 管理、 创建发送端口、 配置传输属性中，和在 BizTalk Server 中使用博士 Edwards OneWorld 适配器时使用 XMLReceive 和 XMLTransmit 管道
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03126f4e-9156-4c0c-ab5c-0627f0c05263
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014252"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a><span data-ttu-id="2f45d-103">在 BizTalk 管理中配置博士 Edwards EnterpriseOne 项目</span><span class="sxs-lookup"><span data-stu-id="2f45d-103">Configure JD Edwards EnterpriseOne artifacts in BizTalk Administration</span></span>
 <span data-ttu-id="2f45d-104">适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器包含“接收处理程序”文件夹和“发送处理程序”文件夹。</span><span class="sxs-lookup"><span data-stu-id="2f45d-104">Microsoft BizTalk Adapter for JD Edwards OneWorld contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="2f45d-105">“发送处理程序”文件夹包含 BizTalkServerApplication。</span><span class="sxs-lookup"><span data-stu-id="2f45d-105">The Send Handler folder contains BizTalkServerApplication.</span></span> <span data-ttu-id="2f45d-106">适用于 JD Edwards OneWorld 的 BizTalk 适配器是可以创建的，它在与 BizTalk 服务器相关的进程中运行，而不在隔离的主机进程中运行。</span><span class="sxs-lookup"><span data-stu-id="2f45d-106">BizTalk Adapter for JD Edwards OneWorld is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  <span data-ttu-id="2f45d-119">设置 SQL 连接参数。</span><span class="sxs-lookup"><span data-stu-id="2f45d-119">Set the SQL Connection parameters.</span></span>  
   
-    -   <span data-ttu-id="2f45d-120">**定义 SQL 数据库参数-**的 SQL Server 名称和数据库是那些在安装设置。</span><span class="sxs-lookup"><span data-stu-id="2f45d-120">**Define SQL Database Parameters -** The SQL Server Name and Database are those you set at installation.</span></span> <span data-ttu-id="2f45d-121">在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。</span><span class="sxs-lookup"><span data-stu-id="2f45d-121">This is the text area that you can redefine the server and database for this adapter.</span></span>  
+    -   <span data-ttu-id="2f45d-120">**定义 SQL 数据库参数-** 的 SQL Server 名称和数据库是那些在安装设置。</span><span class="sxs-lookup"><span data-stu-id="2f45d-120">**Define SQL Database Parameters -** The SQL Server Name and Database are those you set at installation.</span></span> <span data-ttu-id="2f45d-121">在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。</span><span class="sxs-lookup"><span data-stu-id="2f45d-121">This is the text area that you can redefine the server and database for this adapter.</span></span>  
   
 5.  <span data-ttu-id="2f45d-122">选择**关闭**退出**逻辑系统**窗口。</span><span class="sxs-lookup"><span data-stu-id="2f45d-122">Select **Close** to exit the **Logical System** window.</span></span>  
   

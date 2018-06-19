@@ -1,15 +1,15 @@
 ---
-title: "Microsoft BizTalk Accelerator for HL7 文档 |Microsoft 文档"
-description: "快速链接若要安装，开始使用，请了解，编程和工具，批处理，和故障排除 BizTalk Server 中的 HL7 快捷键"
-ms.custom: 
+title: Microsoft BizTalk Accelerator for HL7 文档 |Microsoft 文档
+description: 快速链接若要安装，开始使用，请了解，编程和工具，批处理，和故障排除 BizTalk Server 中的 HL7 快捷键
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa333ee8-ba93-4a61-9c0a-94e64627b8cf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206069"
 ---
 # <a name="microsoft-biztalk-accelerator-for-hl7-documentation"></a><span data-ttu-id="97554-103">Microsoft BizTalk HL7 文档快捷键</span><span class="sxs-lookup"><span data-stu-id="97554-103">Microsoft BizTalk Accelerator for HL7 documentation</span></span>
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="97554-104">[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]文档描述了最新信息具有不同[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]版本中，演示如何安装[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]，包括的分步教程，提供一些信息以了解有关 HL7、 开发任务和操作任务。</span><span class="sxs-lookup"><span data-stu-id="97554-104"> [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] documentation describes what's new with the different [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] versions, shows you how to install [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)], includes step-by-step tutorials, and provides information to learn about HL7, development tasks, and operational tasks.</span></span>   

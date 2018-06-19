@@ -1,14 +1,14 @@
 ---
-title: "工具和实用程序可用于故障排除 |Microsoft 文档"
-ms.custom: 
+title: 工具和实用程序可用于故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56b0946a-56de-47cd-95d9-365722cdbaed
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302381"
 ---
 # <a name="tools-and-utilities-for-troubleshooting"></a><span data-ttu-id="dcc51-102">工具和实用程序可用于故障排除</span><span class="sxs-lookup"><span data-stu-id="dcc51-102">Tools and Utilities for Troubleshooting</span></span>
 <span data-ttu-id="dcc51-103">本主题介绍几个工具和实用程序可用于诊断 Microsoft 中的问题的根本原因[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组件或依赖项。</span><span class="sxs-lookup"><span data-stu-id="dcc51-103">This topic describes several tools and utilities that can be useful for diagnosing the root cause of a problem in a Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] component or dependency.</span></span>  

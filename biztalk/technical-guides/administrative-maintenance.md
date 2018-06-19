@@ -1,14 +1,14 @@
 ---
-title: "管理维护 |Microsoft 文档"
-ms.custom: 
+title: 管理维护 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67cdf9d7-5448-40c5-8c5f-eae0e281d22c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299733"
 ---
 # <a name="administrative-maintenance"></a><span data-ttu-id="65552-102">管理维护</span><span class="sxs-lookup"><span data-stu-id="65552-102">Administrative Maintenance</span></span>
 <span data-ttu-id="65552-103">本部分提供有关如何可以解析管理问题的信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="65552-103">This section provides information about how you can resolve administration issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="65552-104">这些问题可能由在中执行的日常维护检查[例程维护清单](../technical-guides/routine-maintenance-checklists.md)部分。</span><span class="sxs-lookup"><span data-stu-id="65552-104">These issues may be discovered by the routine maintenance checks that are performed in the [Routine Maintenance Checklists](../technical-guides/routine-maintenance-checklists.md) section.</span></span>  

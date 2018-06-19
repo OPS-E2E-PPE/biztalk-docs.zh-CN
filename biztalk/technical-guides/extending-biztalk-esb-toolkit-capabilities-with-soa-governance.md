@@ -1,14 +1,14 @@
 ---
-title: "扩展 SOA 治理 BizTalk ESB 工具包功能 |Microsoft 文档"
-ms.custom: 
+title: 扩展 SOA 治理 BizTalk ESB 工具包功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b66a121b-d86f-4f97-a05f-5141ffe719e8
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299789"
 ---
 # <a name="extending-biztalk-esb-toolkit-capabilities-with-soa-governance"></a><span data-ttu-id="21979-102">扩展 SOA 治理 BizTalk ESB 工具包功能</span><span class="sxs-lookup"><span data-stu-id="21979-102">Extending BizTalk ESB Toolkit Capabilities with SOA Governance</span></span>
 <span data-ttu-id="21979-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]随[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是一套工具和扩展的库和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持松散耦合和动态的消息传递体系结构的功能。</span><span class="sxs-lookup"><span data-stu-id="21979-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and is a collection of tools and libraries that extend [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] capabilities of supporting a loosely coupled and dynamic messaging architecture.</span></span> <span data-ttu-id="21979-104">它充当提供工具来快速中介服务与其使用者之间的中间件。</span><span class="sxs-lookup"><span data-stu-id="21979-104">It functions as middleware that provides tools for rapid mediation between services and their consumers.</span></span> <span data-ttu-id="21979-105">在运行时，启用最大的灵活性[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]简化了的服务终结点的松散耦合的组合和管理服务之间的交互。</span><span class="sxs-lookup"><span data-stu-id="21979-105">Enabling maximum flexibility at run time, the [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] simplifies loosely coupled composition of service endpoints and management of service interactions.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何更改主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何更改主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, promoting
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - modifying, Master Secret server
 - Master Secret server, changing
 ms.assetid: 44a786ca-4645-44a8-b33e-d0019f0aeca9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969355"
 ---
 # <a name="how-to-change-the-master-secret-server"></a><span data-ttu-id="49314-102">如何更改主密钥服务器</span><span class="sxs-lookup"><span data-stu-id="49314-102">How to Change the Master Secret Server</span></span>
 <span data-ttu-id="49314-103">在设置主密钥服务器并配置 SSO 数据库后，如果原始的主密钥服务器发生故障并且无法恢复，则可以更改主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="49314-103">After you set up the master secret server and configure the SSO database, you can change the master secret server if the original master secret server fails and cannot be recovered.</span></span> <span data-ttu-id="49314-104">若要更改主密钥服务器，则需要将 SSO 服务器升级为主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="49314-104">To change the master secret server, you need to promote an SSO server to become the master secret server.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  <span data-ttu-id="49314-116">重新启动新的主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="49314-116">Restart the new Master Secret Server.</span></span>  
   
-8.  <span data-ttu-id="49314-117">类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="49314-117">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
+8.  <span data-ttu-id="49314-117">类型**ssoconfig-restoreSecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="49314-117">Type **ssoconfig –restoreSecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
   
      <span data-ttu-id="49314-118">主密钥存储在注册表中，位置为：</span><span class="sxs-lookup"><span data-stu-id="49314-118">The master secret is stored in the registry at the following location:</span></span>  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  <span data-ttu-id="49314-131">重新启动主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="49314-131">Restart the Master Secret Server.</span></span>  
   
-6.  <span data-ttu-id="49314-132">类型**ssoconfig-restoresecret\<还原文件\>**，其中**\<还原文件\>**是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="49314-132">Type **ssoconfig –restoresecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
+6.  <span data-ttu-id="49314-132">类型**ssoconfig-restoresecret\<还原文件\>**，其中**\<还原文件\>** 是路径和主密钥的文件的名称存储中。</span><span class="sxs-lookup"><span data-stu-id="49314-132">Type **ssoconfig –restoresecret \<restore file\>**, where **\<restore file\>** is the path and name of the file where the master secret is stored.</span></span>  
   
      <span data-ttu-id="49314-133">主密钥存储在注册表中，位置为：</span><span class="sxs-lookup"><span data-stu-id="49314-133">The master secret is stored in the registry at the following location:</span></span>  
   

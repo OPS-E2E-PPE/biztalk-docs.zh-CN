@@ -1,18 +1,18 @@
 ---
-title: "步骤 7： 创建发送端口，以提供 ADT ^ 到他使用 MLLP 适配器 A03 消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 创建发送端口，以提供 ADT ^ 到他使用 MLLP 适配器 A03 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, send ports
 - creating, send ports
 - send ports, creating
 ms.assetid: d9e7f281-3d25-4675-a13e-0e2057f5e69a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206749"
 ---
 # <a name="step-7-create-a-send-port-to-deliver-the-adta03-message-to-his-using-the-mllp-adapter"></a><span data-ttu-id="7a791-102">步骤 7： 创建发送端口，以提供 ADT ^ 到他使用 MLLP 适配器 A03 消息</span><span class="sxs-lookup"><span data-stu-id="7a791-102">Step 7: Create a Send Port to Deliver the ADT^A03 Message to HIS Using the MLLP Adapter</span></span>
 <span data-ttu-id="7a791-103">在此步骤中，你可以创建发送端口将消息发送到医院信息系统 (HIS) 使用 MLLP 适配器。</span><span class="sxs-lookup"><span data-stu-id="7a791-103">In this step, you create the send port to send the message to the Hospital Information System (HIS) using the MLLP adapter.</span></span>  

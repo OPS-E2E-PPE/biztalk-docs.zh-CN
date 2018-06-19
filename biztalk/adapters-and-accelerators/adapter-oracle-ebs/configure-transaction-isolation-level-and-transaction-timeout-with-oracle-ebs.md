@@ -1,14 +1,14 @@
 ---
-title: "使用 Oracle E-business Suite 配置事务隔离级别和事务超时 |Microsoft 文档"
-ms.custom: 
+title: 使用 Oracle E-business Suite 配置事务隔离级别和事务超时 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db3d64ad-037d-486a-bdde-45c8199613f1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22215837"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-oracle-e-business-suite"></a><span data-ttu-id="2f9e0-102">使用 Oracle E-business Suite 配置事务隔离级别和事务超时</span><span class="sxs-lookup"><span data-stu-id="2f9e0-102">Configure transaction isolation level and transaction timeout with Oracle E-Business Suite</span></span>
 <span data-ttu-id="2f9e0-103">执行 （轮询和通知） 的入站的操作时使用[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，你应适当地配置事务的隔离级别和事务超时值。</span><span class="sxs-lookup"><span data-stu-id="2f9e0-103">While performing inbound operations (Polling and Notification) using the [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you should appropriately configure the transaction isolation level and the transaction timeout values.</span></span> <span data-ttu-id="2f9e0-104">为此，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2f9e0-104">To do this:</span></span>  

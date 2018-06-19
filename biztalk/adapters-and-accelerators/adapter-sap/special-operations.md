@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22216605"
 ---
 # <a name="special-operations"></a><span data-ttu-id="45a0a-102">特殊的操作</span><span class="sxs-lookup"><span data-stu-id="45a0a-102">Special Operations</span></span>
 <span data-ttu-id="45a0a-103">[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现几个特殊操作。</span><span class="sxs-lookup"><span data-stu-id="45a0a-103">The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces several special operations.</span></span> <span data-ttu-id="45a0a-104">这些操作不基于 SAP 系统项目的影响。</span><span class="sxs-lookup"><span data-stu-id="45a0a-104">These operations are not based on SAP system artifacts.</span></span> <span data-ttu-id="45a0a-105">它们将显示为适配器客户端应用程序提供功能。</span><span class="sxs-lookup"><span data-stu-id="45a0a-105">They are surfaced to provide functionality for adapter client applications.</span></span> <span data-ttu-id="45a0a-106">进行的特殊操作：</span><span class="sxs-lookup"><span data-stu-id="45a0a-106">The special operations are:</span></span>  

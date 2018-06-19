@@ -1,14 +1,14 @@
 ---
-title: "清单： 部署应用程序 |Microsoft 文档"
-ms.custom: 
+title: 清单： 部署应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e699ac3-7998-48d6-96b7-2f8f1a3d52e5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299853"
 ---
 # <a name="checklist-deploying-an-application"></a><span data-ttu-id="f8407-102">清单： 部署应用程序</span><span class="sxs-lookup"><span data-stu-id="f8407-102">Checklist: Deploying an Application</span></span>
 <span data-ttu-id="f8407-103">本主题介绍中部署 BizTalk 应用程序和其在生产环境中的项目所涉及的步骤。</span><span class="sxs-lookup"><span data-stu-id="f8407-103">This topic describes the steps involved in deploying a BizTalk application and its artifacts in a production environment.</span></span> <span data-ttu-id="f8407-104">它演示了如何部署应用程序在开发环境中的，将其导出到.msi 文件中，然后将其导入生产环境中的.msi 文件。</span><span class="sxs-lookup"><span data-stu-id="f8407-104">It demonstrates how to deploy an application in the development environment, export it into an .msi file, and then import it into the production environment from the .msi file.</span></span>  

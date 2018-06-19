@@ -1,14 +1,14 @@
 ---
-title: "低特权环境 |Microsoft 文档"
-ms.custom: 
+title: 低特权环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: abdc45d0-b63a-4b6c-80c4-1f8e87644cd9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298293"
 ---
 # <a name="low-privilege-environments"></a><span data-ttu-id="65f94-102">低特权环境</span><span class="sxs-lookup"><span data-stu-id="65f94-102">Low-Privilege Environments</span></span>
 <span data-ttu-id="65f94-103">附带的多个工作流[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包需要提升的权限才能执行某些操作。</span><span class="sxs-lookup"><span data-stu-id="65f94-103">Several workflows that are included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack require elevated permissions to perform certain actions.</span></span> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="65f94-104">管理包，可在低特权环境中执行基本的监视功能。</span><span class="sxs-lookup"><span data-stu-id="65f94-104"> Management Pack enables you to perform basic monitoring functionalities in a low privilege environment.</span></span> <span data-ttu-id="65f94-105">有两个管理角色： BizTalk 服务器管理员和 BizTalk Server 运算符。</span><span class="sxs-lookup"><span data-stu-id="65f94-105">There are two Administrative Roles: the BizTalk Server Administrator, and the BizTalk Server Operator.</span></span> <span data-ttu-id="65f94-106">BizTalk Server 管理员是高权限角色，有权访问配置数据和跟踪数据。</span><span class="sxs-lookup"><span data-stu-id="65f94-106">The BizTalk Server Administrator is a high privilege role with access to configuration and tracking data.</span></span> <span data-ttu-id="65f94-107">BizTalk 服务器管理员可以执行所有关键管理任务，此类登记和启动项目。</span><span class="sxs-lookup"><span data-stu-id="65f94-107">The BizTalk Server Administrator can perform all key administrative tasks such enlisting and starting artifacts.</span></span> <span data-ttu-id="65f94-108">BizTalk Server 操作员是低权限角色，仅有权执行监视操作和排除故障操作。</span><span class="sxs-lookup"><span data-stu-id="65f94-108">The BizTalk Server Operator is a low privilege role with access only to monitoring and troubleshooting actions.</span></span> <span data-ttu-id="65f94-109">有关详细信息，请参阅[最低安全用户权限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)。</span><span class="sxs-lookup"><span data-stu-id="65f94-109">For more information, see [Minimum Security User Rights](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx).</span></span>  

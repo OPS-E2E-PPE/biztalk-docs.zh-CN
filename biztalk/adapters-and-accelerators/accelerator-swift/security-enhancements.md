@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22214053"
 ---
 # <a name="security-enhancements"></a><span data-ttu-id="40820-102">安全性改进</span><span class="sxs-lookup"><span data-stu-id="40820-102">Security Enhancements</span></span>
 <span data-ttu-id="40820-103">本部署指南的每个步骤旨在作为的安全部署你[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="40820-103">Each step of this deployment guide has been designed as a secure deployment for your [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] installation.</span></span>  

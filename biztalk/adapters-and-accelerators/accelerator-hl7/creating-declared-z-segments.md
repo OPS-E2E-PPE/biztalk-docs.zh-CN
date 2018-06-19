@@ -1,11 +1,11 @@
 ---
-title: "创建声明的 Z 段 |Microsoft 文档"
-ms.custom: 
+title: 创建声明的 Z 段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Z objects, creating segments
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Z segments, creating
 - creating, Z segments [Z objects]
 ms.assetid: afd1b7b7-089e-4c6a-a063-e708431bb888
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22204741"
 ---
 # <a name="creating-declared-z-segments"></a><span data-ttu-id="8a620-102">创建声明的 Z 段</span><span class="sxs-lookup"><span data-stu-id="8a620-102">Creating Declared Z Segments</span></span>
 <span data-ttu-id="8a620-103">你可以在任何级别 （而不像未声明 Z 段，必须多方的消息，后面的正文部分的最后一部分） 架构创建声明的 Z 段。</span><span class="sxs-lookup"><span data-stu-id="8a620-103">You can create declared Z segments at any level of a schema (unlike undeclared Z segments, which must be the last part of a multi-party message, following the body part).</span></span>  

@@ -1,15 +1,16 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 847e66c189cb8fc14014691f95d78b6eec4b45dc
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013356"
 ---
 # <a name="deployment-limitations"></a><span data-ttu-id="f66ac-101">部署限制</span><span class="sxs-lookup"><span data-stu-id="f66ac-101">Deployment Limitations</span></span>
-<span data-ttu-id="f66ac-102">传输适配器密码为星号 （*） 存储在由导出绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将它传递给相同的格式中的管理组件。</span><span class="sxs-lookup"><span data-stu-id="f66ac-102">The Transport Adapter password is stored as stars (******) in the binding file that is exported by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and it passes to the management component in the same format.</span></span> <span data-ttu-id="f66ac-103">在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。</span><span class="sxs-lookup"><span data-stu-id="f66ac-103">Edit the binding file before importing by replacing the stars with some junk value (that is, not the correct password).</span></span>  
+<span data-ttu-id="f66ac-102">传输适配器密码为星号 （\*） 存储在由导出绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将它传递给相同的格式中的管理组件。</span><span class="sxs-lookup"><span data-stu-id="f66ac-102">The Transport Adapter password is stored as stars (******) in the binding file that is exported by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and it passes to the management component in the same format.</span></span> <span data-ttu-id="f66ac-103">在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。</span><span class="sxs-lookup"><span data-stu-id="f66ac-103">Edit the binding file before importing by replacing the stars with some junk value (that is, not the correct password).</span></span>  
   
  <span data-ttu-id="f66ac-104">在导出绑定信息时，得到的绑定文件不包含传输适配器曾经在接收位置/发送端口中使用过的任何密码。</span><span class="sxs-lookup"><span data-stu-id="f66ac-104">When you export binding information, the resultant binding file does not contain any of the passwords that were used by transport adapters in receive locations/send ports.</span></span> <span data-ttu-id="f66ac-105">这样可防止以明文形式显示密码信息。</span><span class="sxs-lookup"><span data-stu-id="f66ac-105">This prevents password information from appearing in clear text.</span></span> <span data-ttu-id="f66ac-106">下次使用文件导入绑定信息，你必须通过使用传输属性页用户界面中输入的密码。</span><span class="sxs-lookup"><span data-stu-id="f66ac-106">The next time you use the file to import the binding information, you must enter the passwords by using transport property pages user interface.</span></span>  
   

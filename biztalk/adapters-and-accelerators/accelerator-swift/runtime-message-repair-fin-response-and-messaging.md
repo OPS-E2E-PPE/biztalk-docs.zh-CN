@@ -12,7 +12,7 @@ helpviewer_keywords:
 - architecture
 - BizTalk Accelerator for SWIFT, architecture
 ms.assetid: c7f34517-6663-44a6-b6ea-6d55fdb08caf
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22214101"
 ---
 # <a name="runtime-message-repair-fin-response-and-messaging"></a><span data-ttu-id="fe1a8-102">运行时、 消息修复、 FIN 响应和消息传送</span><span class="sxs-lookup"><span data-stu-id="fe1a8-102">Runtime, message repair, FIN response, and messaging</span></span>
 

@@ -1,14 +1,14 @@
 ---
-title: "获取 Started8 |Microsoft 文档"
-ms.custom: 
+title: 获取 Started8 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 667fc3c4-df8f-4d81-90b2-25a4435d8f70
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297925"
 ---
 # <a name="getting-started"></a><span data-ttu-id="006cd-102">入门</span><span class="sxs-lookup"><span data-stu-id="006cd-102">Getting Started</span></span>
 <span data-ttu-id="006cd-103">本部分介绍你导入管理包之前应执行的操作、 在导入的管理包和有关自定义信息之后应采取的任何步骤。</span><span class="sxs-lookup"><span data-stu-id="006cd-103">This section describes the actions you should take before you import the management pack, any steps you should take after you import the management pack, and information about customizations.</span></span>  

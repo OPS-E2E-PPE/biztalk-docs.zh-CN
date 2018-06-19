@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 创建单元测试，以便提交给 BizTalk Server 文档 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建单元测试，以便提交给 BizTalk Server 文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 688b14e4-bb16-4d12-86b8-37b8b6808472
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302693"
 ---
 # <a name="step-1-create-a-unit-test-to-submit-documents-to-biztalk-server"></a><span data-ttu-id="8895a-102">步骤 1： 创建单元测试，以便提交给 BizTalk Server 文档</span><span class="sxs-lookup"><span data-stu-id="8895a-102">Step 1: Create a Unit Test to Submit Documents to BizTalk Server</span></span>
 <span data-ttu-id="8895a-103">计算机应用程序服务器，例如 BizTalk Server 用于执行特定任务代表的用户。</span><span class="sxs-lookup"><span data-stu-id="8895a-103">Computer application servers such as BizTalk Server are designed to perform particular tasks on behalf of users.</span></span> <span data-ttu-id="8895a-104">这些任务都是作为一种标准，了解应用程序服务器，通过应用程序服务器理解协议符合消息发送到应用程序服务器的客户端请求启动。</span><span class="sxs-lookup"><span data-stu-id="8895a-104">These tasks are initiated as client requests sent to the application server as messages that conform to a standard that the application server understands, via a protocol that the application server understands.</span></span> <span data-ttu-id="8895a-105">例如，客户端可能通过发送 internet 电子邮件通过 SMTP 协议的电子邮件服务器启动的电子邮件的处理。</span><span class="sxs-lookup"><span data-stu-id="8895a-105">For example, clients may initiate processing of email by sending internet e-mail messages to an email server via the SMTP protocol.</span></span> <span data-ttu-id="8895a-106">同样，web 服务器处理客户端 HTML 或 ASP 请求，数据库服务器处理客户端 SQL 请求并且 BizTalk Server 可以处理客户端消息符合使用大量的行业标准协议的多个行业消息标准格式。</span><span class="sxs-lookup"><span data-stu-id="8895a-106">Likewise, web servers process client HTML or ASP requests, database servers process client SQL requests and BizTalk Server can process client messages formatted in compliance with multiple industry message standards using numerous industry standard protocols.</span></span> <span data-ttu-id="8895a-107">通常可按应用程序服务器可以在给定的时间内处理的消息数衡量应用程序服务器的工作负载容量。</span><span class="sxs-lookup"><span data-stu-id="8895a-107">The workload capacity of an application server is typically measured by the number of messages that the application server can process in a given time period.</span></span> <span data-ttu-id="8895a-108">BizTalk Server 的工作负载容量同样以"每秒接收的文档"、"每秒处理的文档"和/或"每秒完成的业务流程"的平均数的时间，如忙 workday 甚至延长时期的工作周。</span><span class="sxs-lookup"><span data-stu-id="8895a-108">The workload capacity of BizTalk Server is likewise measured as the average number of “documents received per second”, “documents processed per second” and/or “orchestrations completed per second” over an extended period of time, such as a busy workday or even a work week.</span></span> <span data-ttu-id="8895a-109">Visual Studio 2010 负载测试功能可以模拟数百个用户同时访问服务器应用程序的负载配置文件。</span><span class="sxs-lookup"><span data-stu-id="8895a-109">Visual Studio 2010 load test functionality can simulate a load profile of up to hundreds of users simultaneously accessing a server application.</span></span> <span data-ttu-id="8895a-110">此负载测试功能提供了所选的关键性能指标，以及供将来分析数据库中存储这些指标的能力的实时度量值。</span><span class="sxs-lookup"><span data-stu-id="8895a-110">This load testing functionality provides real time metrics for selected key performance indicators as well as the ability to store these metrics in a database for future analysis.</span></span> <span data-ttu-id="8895a-111">此文档介绍使用 Visual Studio 测试项目，用于负载测试 BizTalk Server 应用程序，包括如何创建单元测试，如何创建负载测试和所需如何配置负载测试以捕获性能计数器数据确定 BizTalk Server 应用程序的最大可持续吞吐量 (MST)。</span><span class="sxs-lookup"><span data-stu-id="8895a-111">This document desribes the use of Visual Studio Test projects for the purpose of load testing a BizTalk Server application, including how to create unit tests, how to create load tests and how to configure load tests to capture performance counter data required to determine the Maximum Sustainable Throughput (MST) of a BizTalk Server application.</span></span>  
@@ -38,9 +39,9 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="8895a-126">单击以展开**测试工具**，然后单击**测试项目**以显示新的测试项目中创建的选项。</span><span class="sxs-lookup"><span data-stu-id="8895a-126">Click to expand **Test Tools** and then click **Test Project** to display options for creation of new test projects.</span></span>  
   
-4.  <span data-ttu-id="8895a-127">设置**默认测试项目语言：**到**Visual C# 测试项目**。</span><span class="sxs-lookup"><span data-stu-id="8895a-127">Set the **Default test project language:** to **Visual C# test project**.</span></span>  
+4.  <span data-ttu-id="8895a-127">设置**默认测试项目语言：** 到**Visual C# 测试项目**。</span><span class="sxs-lookup"><span data-stu-id="8895a-127">Set the **Default test project language:** to **Visual C# test project**.</span></span>  
   
-5.  <span data-ttu-id="8895a-128">在选项下**选择将按默认添加到每个新的测试项目的文件：**选择**Visual C# 测试项目**，并取消选中的所有测试类型适用于 Visual C# 中的测试除外项目**单元测试**。</span><span class="sxs-lookup"><span data-stu-id="8895a-128">Under the option to **Select the files that will be added to each new test project, by default:** select **Visual C# test project**, and uncheck all of the test types for Visual C# test projects except for **Unit Test**.</span></span>  
+5.  <span data-ttu-id="8895a-128">在选项下**选择将按默认添加到每个新的测试项目的文件：** 选择**Visual C# 测试项目**，并取消选中的所有测试类型适用于 Visual C# 中的测试除外项目**单元测试**。</span><span class="sxs-lookup"><span data-stu-id="8895a-128">Under the option to **Select the files that will be added to each new test project, by default:** select **Visual C# test project**, and uncheck all of the test types for Visual C# test projects except for **Unit Test**.</span></span>  
   
 6.  <span data-ttu-id="8895a-129">单击 **“确定”** 关闭 **“选项”** 对话框。</span><span class="sxs-lookup"><span data-stu-id="8895a-129">Click **OK** to close the **Options** dialog box.</span></span>  
   
@@ -389,7 +390,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  <span data-ttu-id="8895a-163">在解决方案资源管理器，右键单击**引用**BTSLoad 项目，然后单击文件夹**添加引用**。</span><span class="sxs-lookup"><span data-stu-id="8895a-163">In Solution Explorer, right-click the **References** folder for the BTSLoad project and then click **Add Reference**.</span></span>  
   
-2.  <span data-ttu-id="8895a-164">在添加引用对话框中，单击**.NET**选项卡，并使用 CTRL + 单击键盘/鼠标组合，可同时选择以下.NET 命名空间：</span><span class="sxs-lookup"><span data-stu-id="8895a-164">In the Add Reference dialog box, click the **.NET** tab and use the CTRL+Click keyboard/mouse combination to simultaneously select the following .NET namespaces:</span></span>  
+2.  <span data-ttu-id="8895a-164">在添加引用对话框中，单击 **.NET**选项卡，并使用 CTRL + 单击键盘/鼠标组合，可同时选择以下.NET 命名空间：</span><span class="sxs-lookup"><span data-stu-id="8895a-164">In the Add Reference dialog box, click the **.NET** tab and use the CTRL+Click keyboard/mouse combination to simultaneously select the following .NET namespaces:</span></span>  
   
     -   <span data-ttu-id="8895a-165">System.Configuration</span><span class="sxs-lookup"><span data-stu-id="8895a-165">System.Configuration</span></span>  
   

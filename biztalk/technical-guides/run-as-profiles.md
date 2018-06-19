@@ -1,14 +1,14 @@
 ---
-title: "运行方式配置文件 |Microsoft 文档"
-ms.custom: 
+title: 运行方式配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98ac0a0c-91d8-4d12-aa40-2ad2e29ec784
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22301973"
 ---
 # <a name="run-as-profiles"></a><span data-ttu-id="e7e38-102">运行方式配置文件</span><span class="sxs-lookup"><span data-stu-id="e7e38-102">Run As Profiles</span></span>
 <span data-ttu-id="e7e38-103">首次导入 BizTalk Server 核心库管理包，将创建两个新运行方式配置文件：</span><span class="sxs-lookup"><span data-stu-id="e7e38-103">When the BizTalk Server Core Library Management Pack is first imported, it creates two new Run As Profiles:</span></span>  

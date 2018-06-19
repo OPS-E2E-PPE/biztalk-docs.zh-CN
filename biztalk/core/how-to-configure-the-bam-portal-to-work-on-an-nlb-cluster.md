@@ -1,14 +1,14 @@
 ---
-title: "如何在 NLB 群集上配置到工作 BAM 门户 |Microsoft 文档"
-ms.custom: 
+title: 如何在 NLB 群集上配置到工作 BAM 门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96c04fde-dc12-42fb-9193-aa74819fe880
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969683"
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a><span data-ttu-id="606e1-102">如何配置要在 NLB 群集上使用的 BAM 门户</span><span class="sxs-lookup"><span data-stu-id="606e1-102">How to Configure the BAM Portal to Work on an NLB Cluster</span></span>
 <span data-ttu-id="606e1-103">可以将 BAM 门户配置为在网络负载平衡 (NLB) 群集中使用。</span><span class="sxs-lookup"><span data-stu-id="606e1-103">The BAM portal can be configured to work in a network load balancing (NLB) cluster.</span></span>  
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
 1.  <span data-ttu-id="606e1-137">将 web.config 文件复制到群集中每个其他计算机的 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal 文件夹中。</span><span class="sxs-lookup"><span data-stu-id="606e1-137">Copy the web.config file to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal folder on each additional computer in the cluster.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="606e1-138">在下面的示例步骤对所有引用**Program Files**文件夹将为**Program Files (x86)**的 64 位计算机。</span><span class="sxs-lookup"><span data-stu-id="606e1-138">In the following steps all references to the **Program Files** folder will be **Program Files (x86)** for 64 bit computers.</span></span>  
+    >  <span data-ttu-id="606e1-138">在下面的示例步骤对所有引用**Program Files**文件夹将为**Program Files (x86)** 的 64 位计算机。</span><span class="sxs-lookup"><span data-stu-id="606e1-138">In the following steps all references to the **Program Files** folder will be **Program Files (x86)** for 64 bit computers.</span></span>  
   
     > [!IMPORTANT]
     >  <span data-ttu-id="606e1-139">在以下步骤中，创建虚拟目录时，请进行查看以确保它们与 BizTalk Server 配置在第一台计算机上所创建的三个 BAM 虚拟目录的设置相同。</span><span class="sxs-lookup"><span data-stu-id="606e1-139">In the following steps, when you are creating the virtual directories, check to make sure they have the exact settings as the three BAM virtual directories created by the BizTalk Server Configuration on first computer.</span></span> <span data-ttu-id="606e1-140">确认文件路径、ASP.NET 版本、目录权限和应用程序池。</span><span class="sxs-lookup"><span data-stu-id="606e1-140">Confirm your file paths, the ASP.NET version, your directory permissions, and application pool.</span></span>  <span data-ttu-id="606e1-141">使用与你设置第一台计算机时使用的相同的域服务帐户在要设置的计算机上运行 BAMAppPool。</span><span class="sxs-lookup"><span data-stu-id="606e1-141">Use the same domain service account to run the BAMAppPool on the computer you are setting up as you used when setting up the first computer.</span></span> <span data-ttu-id="606e1-142">确保 BAMAppPool 在所有计算机上运行。</span><span class="sxs-lookup"><span data-stu-id="606e1-142">Make sure the BAMAppPool is running on all of the computers.</span></span> <span data-ttu-id="606e1-143">你必须复制两个 web.config 文件。</span><span class="sxs-lookup"><span data-stu-id="606e1-143">There are two web.config files you must copy.</span></span>  

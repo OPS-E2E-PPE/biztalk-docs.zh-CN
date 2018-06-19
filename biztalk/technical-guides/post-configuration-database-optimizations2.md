@@ -1,14 +1,14 @@
 ---
-title: "后配置数据库 Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 后配置数据库 Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 609eda22-8399-4b7c-b860-21b495d2f68d
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302661"
 ---
 # <a name="post-configuration-database-optimizations"></a><span data-ttu-id="a5438-102">后配置数据库优化</span><span class="sxs-lookup"><span data-stu-id="a5438-102">Post-Configuration Database Optimizations</span></span>
 <span data-ttu-id="a5438-103">除了按照中的建议之外[预配置数据库 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)，应遵循的几个步骤来优化 SQL Server 上的 BizTalk Server 数据库性能*后*BizTalk Server 已安装且已被配置 BizTalk Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="a5438-103">In addition to following the recommendations in [Pre-Configuration Database Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md), several steps should be followed to optimize BizTalk Server database performance on SQL Server *after* BizTalk Server has been installed and the BizTalk Server databases have been configured.</span></span> <span data-ttu-id="a5438-104">本主题提供这些优化的列表。</span><span class="sxs-lookup"><span data-stu-id="a5438-104">This topic provides a list of these optimizations.</span></span>  
@@ -53,11 +54,11 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="a5438-137">以下列表描述了在我们的检验测试中使用的 BizTalk Server 数据库配置：</span><span class="sxs-lookup"><span data-stu-id="a5438-137">The following list describes the BizTalk Server database configurations used in our lab tests:</span></span>  
   
--   <span data-ttu-id="a5438-138">**BizTalk DTADB （BizTalk 跟踪数据库文件）：**具有的文件大小为 100 MB 增长的 2048 MB 和 1024 MB 的日志文件，100 MB 增长数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-138">**BizTalk DTADB (BizTalk Tracking database files):** Data file having a file size of 2048 MB with 100 MB growth and a log file of 1024 MB with 100 MB growth.</span></span>  
+-   <span data-ttu-id="a5438-138">**BizTalk DTADB （BizTalk 跟踪数据库文件）：** 具有的文件大小为 100 MB 增长的 2048 MB 和 1024 MB 的日志文件，100 MB 增长数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-138">**BizTalk DTADB (BizTalk Tracking database files):** Data file having a file size of 2048 MB with 100 MB growth and a log file of 1024 MB with 100 MB growth.</span></span>  
   
--   <span data-ttu-id="a5438-139">**BizTalkMgmtdb （BizTalk 管理数据库文件）：**具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-139">**BizTalkMgmtdb (BizTalk Management database files):** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
+-   <span data-ttu-id="a5438-139">**BizTalkMgmtdb （BizTalk 管理数据库文件）：** 具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-139">**BizTalkMgmtdb (BizTalk Management database files):** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
   
--   <span data-ttu-id="a5438-140">**SSODB:**具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-140">**SSODB:** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
+-   <span data-ttu-id="a5438-140">**SSODB:** 具有 100 MB 增长 512 MB 的文件大小和 100 MB 增长 512 MB 的日志文件的数据文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-140">**SSODB:** Data file having a file size of 512 MB with 100 MB growth and a log file of 512 MB with 100 MB growth.</span></span>  
   
 -   <span data-ttu-id="a5438-141">**BizTalkMsgBoxDb （BizTalk MessageBox 数据库）：** 8 个数据文件，每个都有 100 MB 增长的 2 GB 的文件大小和 100 MB 增长 20 GB 的日志文件。</span><span class="sxs-lookup"><span data-stu-id="a5438-141">**BizTalkMsgBoxDb (BizTalk MessageBox databases):** 8 data files, each having a file size of 2 GB with 100 MB growth and a log file of 20 GB with 100 MB growth.</span></span> <span data-ttu-id="a5438-142">由于 BizTalk MessageBox 数据库都是最活跃的我们建议你将放置数据文件和事务日志文件上专用的驱动器，以减少磁盘 I/O 争用问题的可能性。</span><span class="sxs-lookup"><span data-stu-id="a5438-142">Because the BizTalk MessageBox databases are the most active, we recommend you place the data files and transaction log files on dedicated drives to reduce the likelihood of problems with disk I/O contention.</span></span> <span data-ttu-id="a5438-143">在我们实验室环境中，我们使用一个驱动器的以下各项：</span><span class="sxs-lookup"><span data-stu-id="a5438-143">In our lab environment, we used one drive for each of the following:</span></span>  
   

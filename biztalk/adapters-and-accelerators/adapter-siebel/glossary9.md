@@ -1,15 +1,15 @@
 ---
-title: "在 BizTalk Siebel 电子商务应用程序的 BizTalk Adapter 术语表 |Microsoft 文档"
-description: "常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 Siebel 适配器"
-ms.custom: 
+title: 在 BizTalk Siebel 电子商务应用程序的 BizTalk Adapter 术语表 |Microsoft 文档
+description: 常见术语和定义使用 BizTalk 适配器包 (BAP) 中的 Siebel 适配器
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75c74760-53b6-45c3-bacc-bb7ab4fb5b4b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22224677"
 ---
 # <a name="terms-and-definitions-for-the-siebel-adapter"></a><span data-ttu-id="8204d-103">术语和定义为 Siebel 适配器</span><span class="sxs-lookup"><span data-stu-id="8204d-103">Terms and definitions for the Siebel adapter</span></span>
 <span data-ttu-id="8204d-104">中使用以下术语和定义[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8204d-104">The following terms and definitions are used in [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span></span>  

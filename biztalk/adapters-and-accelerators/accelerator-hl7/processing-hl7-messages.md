@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206061"
 ---
 # <a name="processing-hl7-messages"></a><span data-ttu-id="c2755-102">处理 HL7 消息</span><span class="sxs-lookup"><span data-stu-id="c2755-102">Processing HL7 Messages</span></span>
 <span data-ttu-id="c2755-103">本部分提供有关 HL7 消息，包括消息模式、 方案、 消息类型和消息格式的设置的具体信息。</span><span class="sxs-lookup"><span data-stu-id="c2755-103">This section provides specifics about HL7 messages, including message modes, scenarios, message types, and message formatting.</span></span>  

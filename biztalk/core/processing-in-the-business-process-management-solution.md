@@ -1,17 +1,17 @@
 ---
-title: "在业务流程管理解决方案中处理 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程管理解决方案中处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, processing
 - processing, process management solutions
 ms.assetid: 0b26447e-d8f1-4084-aa34-6e7f8ffccea5
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264597"
 ---
 # <a name="processing-in-the-business-process-management-solution"></a><span data-ttu-id="fcda0-102">在业务流程管理解决方案中进行处理</span><span class="sxs-lookup"><span data-stu-id="fcda0-102">Processing in the Business Process Management Solution</span></span>
 <span data-ttu-id="fcda0-103">本部分介绍业务流程管理解决方案的工作原理： 如何处理订单，它将使用中断，以及它如何处理异常因此该操作可以重试。</span><span class="sxs-lookup"><span data-stu-id="fcda0-103">This section describes how the Business Process Management Solution works: how it processes orders, how it makes use of interrupts, and how it handles exceptions so that actions can be retried.</span></span>  
