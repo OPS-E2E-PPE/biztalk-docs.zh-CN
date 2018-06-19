@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 0491ac0f26b19a96d11cf633263010026961c58b
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013476"
 ---
 # <a name="adding-the-adapter-to-biztalk-server"></a>将适配器添加到 BizTalk Server
 适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器包含“接收处理程序”文件夹和“发送处理程序”文件夹。 “发送处理程序”文件夹包含 BizTalkServerApplication。 适用于 JD Edwards OneWorld 的 BizTalk 适配器是可以创建的，它在与 BizTalk 服务器相关的进程中运行，而不在隔离的主机进程中运行。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/07/2017
   
 4.  设置 SQL 连接参数。  
   
-    -   **定义 SQL 数据库参数-**的 SQL Server 名称和数据库是那些在安装设置。 在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。  
+    -   **定义 SQL 数据库参数-** 的 SQL Server 名称和数据库是那些在安装设置。 在这个文本区域，您可以重新定义适用于该适配器的服务器和数据库。  
   
 5.  单击**关闭**退出**逻辑系统**窗口。  
   

@@ -1,11 +1,11 @@
 ---
-title: "模板 （应用程序部署示例） |Microsoft 文档"
-ms.custom: 
+title: 模板 （应用程序部署示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - deploying, scripts
 - examples, deploying
 ms.assetid: 7e77ff8e-b2bc-4d38-b5fd-329d6d54221f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975011"
 ---
 # <a name="template-application-deployment-sample"></a>模板（应用程序部署示例）
 本主题介绍如何使用“模板”示例来进行应用程序部署。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹，，如下所示：  
   
- *\<示例路径\>*\Application Deployment\Template  
+ *\<示例路径\>* \Application Deployment\Template  
   
  如前所述，本示例包括下列两个文件：  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
      例如：  
   
-     设置日志文件 ="*\<示例路径\>*\ApplicationDeployment\Templates\SampleLogOut.txt"  
+     设置日志文件 ="*\<示例路径\>* \ApplicationDeployment\Templates\SampleLogOut.txt"  
   
 ### <a name="to-create-a-new-application"></a>新建应用程序  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 BizTalk Server 管理控制台中，右键单击**应用程序**，指向**导入**，然后单击**MSI 文件**。  
   
-2.  在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。 如果有必要，则可以浏览的 MSI 文件通过单击**（…）**按钮。  
+2.  在导入向导页上，欢迎在**MSI 文件以导入**，键入您之前已导出，，然后单击的.msi 文件的路径**下一步**。 如果有必要，则可以浏览的 MSI 文件通过单击 **（…）** 按钮。  
   
 3.  在应用程序设置页上，在**应用程序名称**下拉列表中，选择应用程序名称。  
   

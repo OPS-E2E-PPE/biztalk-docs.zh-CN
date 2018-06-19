@@ -1,15 +1,15 @@
 ---
-title: "创建 MSMQ 代码从接收位置和发送端口 |Microsoft 文档"
-description: "以编程方式创建 MSMQ 接收位置和在 BizTalk Server 发送端口"
-ms.custom: 
+title: 创建 MSMQ 代码从接收位置和发送端口 |Microsoft 文档
+description: 以编程方式创建 MSMQ 接收位置和在 BizTalk Server 发送端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6ebb4119-deeb-4287-aa65-7597ff0cc435
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971667"
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>以编程方式创建 MSMQ 接收位置和发送端口
 本主题说明了如何使用 WMI 为 MSMQ 适配器创建端口或位置。  

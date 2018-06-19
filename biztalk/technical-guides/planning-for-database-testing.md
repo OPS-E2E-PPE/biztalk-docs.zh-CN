@@ -1,14 +1,14 @@
 ---
-title: "规划数据库测试 |Microsoft 文档"
-ms.custom: 
+title: 规划数据库测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a4cf5e1f-a960-4702-a050-a2cdacddcbca
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010134"
 ---
 # <a name="planning-for-database-testing"></a>计划测试数据库
 全面的压力负载测试的 BizTalk 解决方案中的图表突出解决方案 ultimate 成功与否。 由于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能所依赖的性能因此[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库、 测试和优化 BizTalk 解决方案经常侧重于测试和运行的计算机的优化[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  

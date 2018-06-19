@@ -1,17 +1,17 @@
 ---
-title: "如何管理用户映射为主机启动的 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何管理用户映射为主机启动的 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps, host initiated SSO
 - host initiated SSO, user maps
 ms.assetid: 6b05249e-da35-475b-9c23-5eb556013d57
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972379"
 ---
 # <a name="how-to-manage-user-mappings-for-host-initiated-sso"></a>如何管理用户映射为主机启动的 SSO
 通过以下步骤可以创建映射、设置凭据以及启用或禁用映射。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
   
-4.  类型**ssomanage-createmappings\<映射文件\>**，其中**映射文件 >**是 xml 文件的名称。  
+4.  类型**ssomanage-createmappings\<映射文件\>**，其中**映射文件 >** 是 xml 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

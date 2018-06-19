@@ -1,11 +1,11 @@
 ---
-title: "如何更新对 BAM 通知引用 Services 数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何更新对 BAM 通知引用 Services 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Notification Services Application database [BAM], restoring
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - restoring [BAM], Notification Services Application database
 - restoring [BAM], NS$instance_name service
 ms.assetid: b007fdc2-2e74-4eef-b4c3-43689e9f2180
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972995"
 ---
 # <a name="how-to-update-references-to-the-bam-notification-services-databases"></a>如何更新对 BAM Notification Services 数据库的引用
 执行完将业务活动监视 (BAM) Notification Services 数据库还原到目标系统所需的步骤后，必须在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组中运行 Notification Services (NSservice.exe) 的所有计算机上重新注册 Notification Services。 这样可使 Notification Services 连接到新位置上的数据库。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
          这样可使 Notification Services 登录到正确的数据库（此信息由 nscontrol 在服务所在计算机的注册表中维护）。  
   
         > [!IMPORTANT]
-        >  请记住使用中的新 Notification Services 数据库服务器**-服务器**选项时重新注册该服务。 此外，新的 Notification Services 服务使用的用户名应与旧名称相同。  
+        >  请记住使用中的新 Notification Services 数据库服务器 **-服务器**选项时重新注册该服务。 此外，新的 Notification Services 服务使用的用户名应与旧名称相同。  
   
 7.  在计算机上承载 BAM 门户，单击**启动**，单击**程序**，单击**Microsoft SQL Server 2008 R2**，单击**配置工具**，然后单击**通知服务命令提示符**。  
   

@@ -1,17 +1,17 @@
 ---
-title: "查询实例数据 |Microsoft 文档"
-ms.custom: 
+title: 查询实例数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, instance data
 - queries [BAM], instance data
 ms.assetid: ae4a8854-d5c2-4b36-a0ef-3f74e138306e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971827"
 ---
 # <a name="querying-instance-data"></a>查询实例数据
 关于各个活动实例的数据可在 BAM 主导入数据库中动态创建的 SQL 视图内进行查询。  

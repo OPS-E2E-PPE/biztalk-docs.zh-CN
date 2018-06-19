@@ -1,14 +1,14 @@
 ---
-title: "执行单元测试 |Microsoft 文档"
-ms.custom: 
+title: 执行单元测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 40275d0b-b2ee-400c-9ef5-b9386ab0ae53
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009854"
 ---
 # <a name="performing-unit-testing"></a>执行单元测试
 单元测试的重点放在组件级别和基本上是通过/失败测试来验证按预期方式是否执行 BizTalk 解决方案的各个组件。 必须针对单元测试你的 BizTalk 解决方案的几个选项。  

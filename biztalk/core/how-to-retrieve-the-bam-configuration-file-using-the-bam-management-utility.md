@@ -1,14 +1,14 @@
 ---
-title: "如何检索使用 BAM 管理实用工具对 BAM 配置文件 |Microsoft 文档"
-ms.custom: 
+title: 如何检索使用 BAM 管理实用工具对 BAM 配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67ce5e0c-467a-486c-8eec-217a2a26d7b4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972275"
 ---
 # <a name="how-to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>如何检索 BAM 配置文件使用 BAM 管理实用工具
 管理员和开发人员可以使用 BAM 管理实用程序来检索 BAM 基础结构的当前配置。 检索的配置可以用来将 BAM 安装迁移到新的服务器，也可以对该配置进行修改并用于更新现有的 BAM 安装。  

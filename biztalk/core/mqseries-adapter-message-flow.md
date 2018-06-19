@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263541"
 ---
 # <a name="mqseries-adapter-message-flow"></a>MQSeries 适配器消息流
 消息从发起[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机会首先传递给 MQSeries 服务器在 Windows 上运行。 运行在 Windows 上的 MQSeries 服务器可以位于运行 BizTalk Server 的同一计算机上。 消息通过 MQSeries Server for Windows 计算机路由至操作系统上（如 UNIX）的 MQSeries 服务器主机。 随后，应用程序将从 MQSeries 队列中检索消息。  

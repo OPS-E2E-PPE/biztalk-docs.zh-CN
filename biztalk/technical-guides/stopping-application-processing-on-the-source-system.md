@@ -1,14 +1,14 @@
 ---
-title: "停止处理源系统上的应用程序 |Microsoft 文档"
-ms.custom: 
+title: 停止处理源系统上的应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cde5fc62-4bc2-4ef0-81bc-c7d39ff36cb6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302349"
 ---
 # <a name="stopping-application-processing-on-the-source-system"></a>停止处理源系统上的应用程序
 应用程序处理应停止时源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时服务器是仍能够参与使用现有的数据库服务器的文档处理。 在此方案中，处理活动必须先停止，以便可以在完成一致还原操作。  

@@ -1,15 +1,15 @@
 ---
-title: "教程： 将与 Salesforce 集成 BizTalk Server 2013 |Microsoft 文档"
-description: "使用服务总线和 BIzTalk Server 与 Salesforce 集成"
-ms.custom: 
+title: 教程： 将与 Salesforce 集成 BizTalk Server 2013 |Microsoft 文档
+description: 使用服务总线和 BIzTalk Server 与 Salesforce 集成
+ms.custom: ''
 ms.date: 12/07/2015
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06c9ae51-3f48-4086-883b-ab4d5b6e62e3
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287173"
 ---
 # <a name="tutorial-integrating-biztalk-server-2013-with-salesforce"></a>教程： 将与 Salesforce 集成 BizTalk Server 2013
 审阅者： [Nick Hauenstein](http://social.msdn.microsoft.com/profile/nick.hauenstein/)， [Steef-jan Wiggers](http://social.msdn.microsoft.com/profile/steef-jan%20wiggers)  

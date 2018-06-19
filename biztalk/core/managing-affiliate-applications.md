@@ -1,18 +1,18 @@
 ---
-title: "管理 Affiliate 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 管理 Affiliate 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications]
 - applications [SSO], managing
 - SSO, applications
 ms.assetid: 9bc6b120-6849-476a-b3af-c18bf2fa0197
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262205"
 ---
 # <a name="managing-affiliate-applications"></a>管理关联应用程序
 本部分提供了有关如何创建和配置关联应用程序的信息。  

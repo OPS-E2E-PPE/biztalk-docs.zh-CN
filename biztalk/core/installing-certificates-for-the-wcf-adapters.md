@@ -1,11 +1,11 @@
 ---
-title: "将证书安装适用于这些 WCF 适配器 |Microsoft 文档"
-ms.custom: 
+title: 将证书安装适用于这些 WCF 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tools, Certificates Management Console
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - WCF adapters, receive locations
 - WCF adapters, certificates
 ms.assetid: 04dc065f-a6e8-4359-8696-2a3de24d531d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258101"
 ---
 # <a name="installing-certificates-for-the-wcf-adapters"></a>安装 WCF 适配器的证书
 WCF 适配器可以利用公钥基础结构 (PKI) 数字证书来进行消息加密和解密、消息签名和验证（不可否认性）以及客户端验证。 本主题介绍将数字证书用于 WCF 适配器的不同证书使用方案和配置选项准则。  
@@ -36,7 +37,7 @@ WCF 适配器可以利用公钥基础结构 (PKI) 数字证书来进行消息加
   
 |证书使用|用户上下文|证书存储位置|证书类型|安装证书的时间|  
 |-----------------------|------------------|--------------------------------|----------------------|--------------------------------------|  
-|解密和签名取决于接收位置的安全设置。|与接收处理程序关联的主机实例使用的帐户|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载接收位置，如每个主机实例的服务帐户，并导入到的服务证书**当前用户 \ 个人 （我）**存储。|私人证书|指定的值**服务证书的指纹**下列配置中的属性：<br /><br /> -**安全模式**WCF BasicHttp 属性接收位置设置为**消息**。<br />-**传输客户端凭据类型**WCF BasicHttp 属性接收位置设置为**证书**为**TransportCredentialOnly**安全模式。<br />-**消息客户端凭据类型**WCF WSHttp 属性接收位置设置为**无**，**证书**，或**用户名**有关**消息**安全模式。<br />-**传输客户端凭据类型**WCF NetTcp 属性接收位置设置为**无**或**证书**为**传输**安全模式。<br />-**消息客户端凭据类型**WCF NetTcp 属性接收位置设置为**无**，**用户名**，或**证书**有关**消息**安全模式。<br />-**消息客户端凭据类型**WCF NetTcp 属性接收位置设置为**Windows**，**用户名**，或**证书**为**TransportWithMessageCredential**安全模式。<br />-**安全模式**WCF NetMsmq 属性设置为**消息**或**同时**。|  
+|解密和签名取决于接收位置的安全设置。|与接收处理程序关联的主机实例使用的帐户|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载接收位置，如每个主机实例的服务帐户，并导入到的服务证书**当前用户 \ 个人 （我）** 存储。|私人证书|指定的值**服务证书的指纹**下列配置中的属性：<br /><br /> -**安全模式**WCF BasicHttp 属性接收位置设置为**消息**。<br />-**传输客户端凭据类型**WCF BasicHttp 属性接收位置设置为**证书**为**TransportCredentialOnly**安全模式。<br />-**消息客户端凭据类型**WCF WSHttp 属性接收位置设置为**无**，**证书**，或**用户名**有关**消息**安全模式。<br />-**传输客户端凭据类型**WCF NetTcp 属性接收位置设置为**无**或**证书**为**传输**安全模式。<br />-**消息客户端凭据类型**WCF NetTcp 属性接收位置设置为**无**，**用户名**，或**证书**有关**消息**安全模式。<br />-**消息客户端凭据类型**WCF NetTcp 属性接收位置设置为**Windows**，**用户名**，或**证书**为**TransportWithMessageCredential**安全模式。<br />-**安全模式**WCF NetMsmq 属性设置为**消息**或**同时**。|  
 |客户端身份验证|N/A|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载接收位置为管理员，并导入 CA 证书链，客户端 X.509 证书到计算机的受信任根证书颁发机构证书存储区因此可以向此身份验证客户端接收位置。|客户端 X.509 证书的 CA 证书链|将客户端 X.509 证书的 CA 证书链安装到下列配置中的“受信任的根证书颁发机构”证书存储中。<br /><br /> -**消息客户端凭据类型**或**传输客户端凭据类型**WCF BasicHttp 属性接收位置设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF WSHttp 属性接收位置设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF NetTcp 属性接收位置设置为**证书**。<br />-**消息客户端凭据类型**或**MSMQ 身份验证模式**WCF NetMsmq 属性接收位置设置为**证书**。|  
   
 > [!NOTE]
@@ -59,7 +60,7 @@ WCF 适配器可以利用公钥基础结构 (PKI) 数字证书来进行消息加
   
 |证书使用|用户上下文|证书存储位置|证书类型|安装证书的时间|  
 |-----------------------|------------------|--------------------------------|----------------------|--------------------------------------|  
-|客户端身份验证|与发送端口相关联的主机实例使用的帐户|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载发送端口，如每个主机实例的服务帐户，并导入到的客户端证书**当前用户 \ 个人 （我）**存储。|私人证书|指定的值**客户端证书的指纹**下列配置中的属性：<br /><br /> -**消息客户端凭据类型**或**传输客户端凭据类型**WCF BasicHttp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF WSHttp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF NetTcp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**MSMQ 身份验证模式**WCF NetMsmq 发送端口属性设置为**证书**。|  
+|客户端身份验证|与发送端口相关联的主机实例使用的帐户|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载发送端口，如每个主机实例的服务帐户，并导入到的客户端证书**当前用户 \ 个人 （我）** 存储。|私人证书|指定的值**客户端证书的指纹**下列配置中的属性：<br /><br /> -**消息客户端凭据类型**或**传输客户端凭据类型**WCF BasicHttp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF WSHttp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**传输客户端凭据类型**WCF NetTcp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**或**MSMQ 身份验证模式**WCF NetMsmq 发送端口属性设置为**证书**。|  
 |服务验证、签名验证和加密取决于发送端口的安全设置|N/A|登录到运行每个计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，它会承载作为管理员，发送端口并导入到的服务证书**本地计算机 \ （通讯簿） 的其他人员**存储。 您还必须将服务证书的 CA 证书链安装到该计算机的“受信任的根证书颁发机构”证书存储中。|服务的公共证书<br />的服务证书 CA 证书链|指定的值**服务证书的指纹**下列配置中的属性：<br /><br /> -**消息客户端凭据类型**或**传输客户端凭据类型**WCF BasicHttp 发送端口属性设置为**证书**。<br />-**消息客户端凭据类型**WCF WSHttp 发送端口属性设置为**无**，**用户名**，或**证书**时**协商服务凭据**选项处于未选中状态。<br />-**安全模式**WCF NetMsmq 发送端口设置为**消息**或**同时**。|  
 |服务验证、签名验证和加密取决于发送端口的安全设置|N/A|以管理员身份登录到将作为发送端口宿主的运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的每台计算机，将客户端 X.509 证书的 CA 证书链导入到该计算机的“受信任的根证书颁发机构”证书存储中，以便向此发送端口验证服务。|服务证书的 CA 证书链|如果你未显式指定的服务证书**服务证书的指纹**属性，安装 CA 证书链中的服务 X.509 证书向受信任的根证书颁发机构证书证书存储中的以下配置：<br /><br /> -**安全模式**WCF BasicHttp 发送端口设置为**传输**或**TransportWithMessageCredential**。<br />-**安全模式**WCF WSHttp 发送端口设置为**传输**或**TransportWithMessageCredential**。<br />-**安全模式**WCF NetTcp 发送端口设置为**TransportWithMessageCredential**。<br />-**传输客户端凭据类型**WCF NetTcp 发送端口属性设置为**无**或**证书**。<br />-**消息客户端凭据类型**WCF NetTcp 发送端口属性设置为**无**，**用户名**，或**证书**。|  
   

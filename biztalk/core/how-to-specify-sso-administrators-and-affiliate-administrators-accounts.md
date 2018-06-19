@@ -18,7 +18,7 @@ helpviewer_keywords:
 - managing [SSO], disabling
 - SSO, administrator accounts
 ms.assetid: 6c300e09-b781-45de-b2da-b1083164a1c0
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25972715"
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>如何指定 SSO Administrators 和 Affiliate Administrators 帐户
 企业单一登录 (SSO) 管理员和关联管理员帐户可以为主机组也可以为个人帐户。 必须首先创建这些帐户，然后才能配置 SSO 系统。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-3.  类型 * * ssomanage-updatedb *\<更新文件\>* * *，其中*\<更新文件\>*是路径和 XML 文件的名称。  
+3.  类型 * * ssomanage-updatedb *\<更新文件\>* * *，其中*\<更新文件\>* 是路径和 XML 文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

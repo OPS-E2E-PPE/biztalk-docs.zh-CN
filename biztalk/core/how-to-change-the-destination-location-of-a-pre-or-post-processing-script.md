@@ -1,11 +1,11 @@
 ---
-title: "如何更改预或后续处理脚本的目标位置 |Microsoft 文档"
-ms.custom: 
+title: 如何更改预或后续处理脚本的目标位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scripts, file locations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [scripts], modifying
 - managing [scripts], file locations
 ms.assetid: 4a4fdaef-099f-4c29-9815-12404c7a2212
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249285"
 ---
 # <a name="how-to-change-the-destination-location-of-a-pre--or-post-processing-script"></a>如何更改预或后续处理脚本的目标位置
 本主题介绍如何使用 BizTalk Server 管理控制台来更改预或后续处理脚本的目标位置。 这是该脚本复制到其中安装应用程序时的位置。 你可能想要部署到不同环境的应用程序时更改的目标位置。  

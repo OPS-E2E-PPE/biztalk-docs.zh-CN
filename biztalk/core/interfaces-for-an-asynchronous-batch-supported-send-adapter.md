@@ -1,14 +1,14 @@
 ---
-title: "发送适配器的接口为异步批处理支持 |Microsoft 文档"
-ms.custom: 
+title: 发送适配器的接口为异步批处理支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d38b8b87-508a-499b-86b2-846938050b44
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257325"
 ---
 # <a name="interfaces-for-an-asynchronous-batch-supported-send-adapter"></a>异步的支持批的发送适配器的接口
 可识别批的适配器可以同步或异步发送消息，并且可以执行事务性发送。 若要发送消息批，发送适配器必须实现以下接口：  

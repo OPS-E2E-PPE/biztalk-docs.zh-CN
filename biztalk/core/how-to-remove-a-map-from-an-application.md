@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序删除映射 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序删除映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [maps], deleting
 - managing [maps], applications
 ms.assetid: 27d9bb08-36f0-46ff-ae9a-2247be6e3f96
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254629"
 ---
 # <a name="how-to-remove-a-map-from-an-application"></a>如何从应用程序中删除映射
 本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序中删除映射。 您可能要在部署某一映射的新版本后删除该映射。 有关详细信息和更新应用程序项目的重要注意事项，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。  

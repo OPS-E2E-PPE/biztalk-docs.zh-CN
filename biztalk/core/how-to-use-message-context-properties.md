@@ -1,17 +1,17 @@
 ---
-title: "如何使用消息上下文属性 |Microsoft 文档"
-ms.custom: 
+title: 如何使用消息上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, building
 - building, insufficient configuration
 ms.assetid: 6ca95017-74e0-42d7-befa-93e0c1e1ecd1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975315"
 ---
 # <a name="how-to-use-message-context-properties"></a>如何使用消息上下文属性
 系统属性主要由 BizTalk 消息引擎及其组件在内部使用。 通常，不建议更改引擎为那些属性设置的值，因为这样可能会影响引擎的执行逻辑。 然而，还有很多可以修改的属性。  
@@ -54,9 +55,9 @@ MySubject= MyMessage(POP3.Subject);
 |BTS.InboundTransportType|从接收适配器和之前将其发布到 MessageBox 数据库收到一条消息后提升由消息传送引擎。|xs:string|指定接收此消息并提交到该服务器适配器的类型： 文件、 HTTP，等等。|  
 |BTS.InterchangeSequenceNumber|从接收适配器接收消息之后并且在将其发布到 MessageBox 数据库之前，由消息引擎升级。|xs:int|指示文档在交换中的顺序号。 如果该文档不是交换的已分解到单个文档的一部分，此值将是交换的 1。 属性可以按业务流程，发送管道读取，并发送适配器。|  
 |BTS.IsDynamicSend|可以对消息上下文设置此属性。 此属性将不升级，并且只应用于发送操作。|xs:boolean|在发送操作在动态发送端口上进行时，如果该值为 true 值，则消息引擎会将其写入消息上下文。 如果您想要为发送管道中的静态发送端口动态设置属性，则需要将此值设置为 true。|  
-|BTS.MessageDestination|当拆装器管道组件从 GetNext() 返回消息时，此属性可由该组件在接收管道中设置。|xs:string|此属性主要用于支持拆装器中的可恢复交换处理，控制消息是发布到 MessageBox 还是在挂起队列中挂起。 如果管道在交换中遇到错误消息，需要挂起该消息然后继续处理，则可通过设置 MessageDestination = SuspendQueue 来实现，并在引擎对拆装器调用 GetNext() 时返回该消息。<br /><br /> 有效值：<br /><br /> 的默认值。 如果属性不存在，则假定消息正常，并发布到 MessageBox。<br />-SuspendQueue。 指示消息引擎挂起消息。 **注意：**挂起的消息将 pipeline 后/映射消息和未提交的适配器 （即网络消息） 的消息。|  
+|BTS.MessageDestination|当拆装器管道组件从 GetNext() 返回消息时，此属性可由该组件在接收管道中设置。|xs:string|此属性主要用于支持拆装器中的可恢复交换处理，控制消息是发布到 MessageBox 还是在挂起队列中挂起。 如果管道在交换中遇到错误消息，需要挂起该消息然后继续处理，则可通过设置 MessageDestination = SuspendQueue 来实现，并在引擎对拆装器调用 GetNext() 时返回该消息。<br /><br /> 有效值：<br /><br /> 的默认值。 如果属性不存在，则假定消息正常，并发布到 MessageBox。<br />-SuspendQueue。 指示消息引擎挂起消息。 **注意：** 挂起的消息将 pipeline 后/映射消息和未提交的适配器 （即网络消息） 的消息。|  
 |BTS.MessageType|由拆装器管道组件在消息解析期间升级。|xs:string|指定消息类型。 消息类型指文档架构命名空间和文档根节点的串联： http://&lt*MyNamespace*>#<*MyRoot*>。|  
-|BTS.OutboundTransportLocation|如果对消息上下文设置了此属性，消息引擎将对其升级。 当业务流程向发送端口发送消息时，对消息上下文隐式设置此属性。 也可在业务流程或管道中显式设置此属性。|xs:string|指定发送消息的目标位置 URI。 URI 可能包含适配器前缀，如**http://**。 适配器前缀由消息引擎使用，以确定发送消息时使用的适配器类型。 如果这两个适配器前缀和**BTS。OutboundTransportType**设置属性，从适配器类型**BTS。OutboundTransportType**始终优先于从前缀确定的适配器类型。<br /><br /> 有效值：<br /><br /> BizTalk 消息队列：**直接 =**，**私有 =**，和**公共 =**<br /><br /> 文件： **file://**<br /><br /> FTP: **FTP: / /**<br /><br /> HTTP: **http://**和**https://**<br /><br /> SMTP: **mailto:**<br /><br /> SOAP: **SOAP: / /**<br /><br /> SQL: **SQL: / /**|  
+|BTS.OutboundTransportLocation|如果对消息上下文设置了此属性，消息引擎将对其升级。 当业务流程向发送端口发送消息时，对消息上下文隐式设置此属性。 也可在业务流程或管道中显式设置此属性。|xs:string|指定发送消息的目标位置 URI。 URI 可能包含适配器前缀，如**http://**。 适配器前缀由消息引擎使用，以确定发送消息时使用的适配器类型。 如果这两个适配器前缀和**BTS。OutboundTransportType**设置属性，从适配器类型**BTS。OutboundTransportType**始终优先于从前缀确定的适配器类型。<br /><br /> 有效值：<br /><br /> BizTalk 消息队列：**直接 =**，**私有 =**，和**公共 =**<br /><br /> 文件： **file://**<br /><br /> FTP: **FTP: / /**<br /><br /> HTTP: **http://** 和**https://**<br /><br /> SMTP: **mailto:**<br /><br /> SOAP: **SOAP: / /**<br /><br /> SQL: **SQL: / /**|  
 |BTS.OutboundTransportType|如果对消息上下文设置了此属性，消息引擎将对其升级。 当业务流程向发送端口发送消息时，对上下文隐式设置此属性。 此属性在业务流程中或在管道中还可以显式设置。|xs:string|指定用于发送消息的适配器类型。 可用的适配器类型**文件**， **FTP**， **HTTP**， **SMTP**， **SOAP**，和**SQL**。<br /><br /> 对此属性设置的值以及地址中指定的适配器前缀不区分大小写。|  
 |BTS.PropertiesToUpdate|当适配器需要保留某些正在重新提交或挂起的失败消息的属性值时，将设置此属性。<br /><br /> 这意味着，当消息重新提交或恢复后，将具有对上下文设置的指定属性。|xs:string|包含具有表示属性名称、命名空间和值的元素的 XML 字符串。|  
 |BTS.ReceivePortID|从接收适配器和之前将其发布到 MessageBox 数据库收到一条消息后提升由消息传送引擎。|xs:int|标识接收消息的接收端口。|  
@@ -68,7 +69,7 @@ MySubject= MyMessage(POP3.Subject);
 |BTS.SPTransportBackupID|后一条消息发送到发送端口业务流程从按消息引擎提升。|xs:string|指定发送端口中备份适配器的 ID。|  
 |BTS.SPTransportID|后一条消息发送到发送端口业务流程从按消息引擎提升。|xs:string|指定发送端口中主适配器的 ID。|  
 |BTS.SuspendAsNonResumable|在调用 SubmitMessage() 之前或在业务流程中向发送端口发送消息之前，可由适配器设置此属性。 **注意：** SubmitRequestMessage() 将忽略此属性; 双向消息都将被挂起始终为非可恢复。|xs:boolean|控制消息引擎是否应该在发生消息故障时将消息作为不可恢复的消息挂起。 通常消息作为可恢复的消息挂起，但在有些情况下，这样做不合适。例如，为有序的发送或接收端口恢复消息会打乱消息顺序。<br /><br /> 有效值：<br /><br /> -如果为 false。 消息作为可恢复消息挂起（这是默认设置）。<br />-为 true。 消息作为不可恢复消息挂起。|  
-|BTS.SuspendMessageOnRoutingFailure|从接收适配器和之前将其发布到 MessageBox 数据库收到一条消息后提升由消息传送引擎。|xs:boolean|指定传入消息出现路由故障时的行为。<br /><br /> 有效值：<br /><br /> 的默认 / False。 如果该属性不存在或设置为 False，则引擎将在出现路由故障时向适配器通知错误。<br />-为 true。 出现路由故障时，路由引擎将自动挂起消息。 **注意：**挂起的消息将 pipeline 后/映射消息和未提交的适配器 （即网络消息） 的消息。|  
+|BTS.SuspendMessageOnRoutingFailure|从接收适配器和之前将其发布到 MessageBox 数据库收到一条消息后提升由消息传送引擎。|xs:boolean|指定传入消息出现路由故障时的行为。<br /><br /> 有效值：<br /><br /> 的默认 / False。 如果该属性不存在或设置为 False，则引擎将在出现路由故障时向适配器通知错误。<br />-为 true。 出现路由故障时，路由引擎将自动挂起消息。 **注意：** 挂起的消息将 pipeline 后/映射消息和未提交的适配器 （即网络消息） 的消息。|  
   
  此命名空间中有许多其他属性，它们包含了对某些 BizTalk 应用程序可能很有用的信息。  
   

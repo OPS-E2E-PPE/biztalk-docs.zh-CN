@@ -1,14 +1,14 @@
 ---
-title: "教程： 使用 BizTalk Adapter for TIBCO 企业消息服务接收数据 |Microsoft 文档"
-ms.custom: 
+title: 教程： 使用 BizTalk Adapter for TIBCO 企业消息服务接收数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc5a63ec-1897-4c9b-b37f-cdcec151b1c9
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008574"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-tibco-enterprise-message-service-to-receive-data"></a>教程：使用 TIBCO Enterprise Message Service 的 BizTalk 适配器以接收数据
 您可以使用适用于 TIBCO Enterprise Message Service (EMS) 的 BizTalk 适配器从 TIBCO 系统接收数据。 本演练描述了对此进行说明的一个 SDK 示例。  

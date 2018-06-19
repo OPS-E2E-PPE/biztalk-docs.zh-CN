@@ -1,14 +1,14 @@
 ---
-title: "JMS MQRFH2 示例依赖关系和强密钥名称定义 |Microsoft 文档"
-ms.custom: 
+title: JMS MQRFH2 示例依赖关系和强密钥名称定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3a5cdce-dcdf-48df-91a5-8cf2afce9255
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976491"
 ---
 # <a name="jms-mqrfh2-sample-dependencies-and-strong-key-name-definition"></a>JMS MQRFH2 示例依赖关系和强密钥名称定义
 Visual Studio 项目 ESB 中。JMS。PipelineComponents 取决于以下文件夹：  

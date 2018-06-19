@@ -1,14 +1,14 @@
 ---
-title: "密码同步适配器 |Microsoft 文档"
-ms.custom: 
+title: 密码同步适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 56f97cfa-59d4-4f0a-bd08-b4857ab42122
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264125"
 ---
 # <a name="password-sync-adapters"></a>密码同步适配器
 A*密码同步适配器*是传播密码更改与其他非 Windows 系统的组件。 尽管密码同步适配器是类似于传统上单一登录应用程序，但它们有几处差异：  

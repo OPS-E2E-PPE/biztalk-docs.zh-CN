@@ -1,11 +1,11 @@
 ---
-title: "如何启动发送端口或发送端口组 |Microsoft 文档"
-ms.custom: 
+title: 如何启动发送端口或发送端口组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - starting, send port groups
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - send port groups, starting
 - send ports, starting
 ms.assetid: f17c0b7c-cad7-4c5e-a08c-3ebf838faa54
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255597"
 ---
 # <a name="how-to-start-a-send-port-or-send-port-group"></a>如何启动发送端口或发送端口组
 本主题将介绍如何使用 BizTalk Server 管理控制台启动发送端口或发送端口组。 必须先启动发送端口或发送端口组，才能处理消息。 如果启动已取消登记的发送端口或发送端口组，则 BizTalk 将先登记该发送端口或发送端口组，然后再启动它。 发送端口组中必须至少包含一个处于登记状态的发送端口，才能启动。 启动和停止发送端口组不影响它所包含的任何发送端口的状态。  

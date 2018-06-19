@@ -1,14 +1,14 @@
 ---
-title: "使用 XML 工具扩展 |Microsoft 文档"
-ms.custom: 
+title: 使用 XML 工具扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5613bf15-6c0a-4a82-b200-24d0801d7ece
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006310"
 ---
 # <a name="using-the-xml-tool-extensions"></a>使用 XML 工具扩展
 使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 XML 工具扩展，您可以对架构、映射和消息实例执行任务。 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 环境中，您可以在设计时使用这些扩展。 您可以执行的任务有：  

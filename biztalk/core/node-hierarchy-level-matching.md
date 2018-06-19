@@ -1,11 +1,11 @@
 ---
-title: "节点层次结构级别匹配 |Microsoft 文档"
-ms.custom: 
+title: 节点层次结构级别匹配 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Field nodes
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - compiler directives, flattening source hierarchies
 - maps, processing
 ms.assetid: 5ba1ac77-0e70-4c58-9b8c-1b379dbbb3bd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264757"
 ---
 # <a name="node-hierarchy-level-matching"></a>节点层次结构级别匹配
 BizTalk 映射程序使您能够配置链接属性可控制编译器如何匹配源和目标架构之间的节点层次结构。 在从源架构中的字段创建链接到目标架构中的字段上时，BizTalk 映射程序会自动添加编译器链接。 这些编译器链接取决于你选择的匹配。  

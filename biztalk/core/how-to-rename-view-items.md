@@ -1,17 +1,17 @@
 ---
-title: "如何重命名视图项 |Microsoft 文档"
-ms.custom: 
+title: 如何重命名视图项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM views, renaming items
 - Excel add-in [BAM], renaming items
 ms.assetid: 0fc68e0d-1d6b-4ad1-b059-7b5318050530
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255557"
 ---
 # <a name="how-to-rename-view-items"></a>如何重命名视图项
 您为业务活动收集的数据通常会包含一些敏感信息，例如，信用卡号或社会保障号。 这意味着，某些类型的业务用户应该只能看到筛选出的部分数据。  

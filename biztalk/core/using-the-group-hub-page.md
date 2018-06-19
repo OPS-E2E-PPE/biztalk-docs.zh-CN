@@ -1,14 +1,14 @@
 ---
-title: "使用组中心页 |Microsoft 文档"
-ms.custom: 
+title: 使用组中心页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 50693ccc-a3b2-4ad0-9a05-d60dab404a07
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288085"
 ---
 # <a name="using-the-group-hub-page"></a>使用“组中心”页
 选择**BizTalk 组**节点在 BizTalk Server 管理控制台中，显示 BizTalk Server 组中心数据库页的详细信息窗格中。 BizTalk Server 组中心页分为三个部分，提供 BizTalk Server 系统运行状况的总体概况。  

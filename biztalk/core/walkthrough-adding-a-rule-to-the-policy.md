@@ -1,14 +1,14 @@
 ---
-title: "演练： 将规则添加到策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将规则添加到策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2a682c0-a5d7-4550-924d-be9fa29b84d2
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975699"
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a>演练： 将规则添加到策略
 本演练提供了分步过程添加一个名为规则**DeniedRule**到**ProcessPurchaseOrder**策略。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  右键单击**ProcessPurchaseOrder**，然后单击**粘贴的策略版本**。  
   
-4.  右键单击**（不保存） 1.2 版**，单击**添加新规则**，然后将更改到规则的名称**DeniedRule**。  
+4.  右键单击 **（不保存） 1.2 版**，单击**添加新规则**，然后将更改到规则的名称**DeniedRule**。  
   
 5.  如果你忘记更改到规则的名称**DeniedRule**在步骤 4 中，单击**规则 1**，和名称更改为**DeniedRule**属性窗口中。  
   
@@ -58,9 +59,9 @@ ms.lasthandoff: 11/28/2017
   
 10. 拖动**请求状态**到然后窗格。  
   
-11. 单击**\<空字符串\>**然后键入**拒绝**。  
+11. 单击**\<空字符串\>** 然后键入**拒绝**。  
   
-12. 右键单击**（不保存） 1.2 版**，然后单击**保存**。  
+12. 右键单击 **（不保存） 1.2 版**，然后单击**保存**。  
   
 13. 右键单击**版本 1.2**，然后单击**发布**。  
   

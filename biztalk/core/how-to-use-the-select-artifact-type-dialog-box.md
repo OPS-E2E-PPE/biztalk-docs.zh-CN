@@ -1,18 +1,18 @@
 ---
-title: "如何使用选择项目类型对话框中 |Microsoft 文档"
-ms.custom: 
+title: 如何使用选择项目类型对话框中 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Select Artifact Type dialog box
 - artifacts, Select Artifact Type dialog box
 - Orchestration Designer, items
 ms.assetid: f0f767f1-4130-4ff0-a898-a089343ee71f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971627"
 ---
 # <a name="how-to-use-the-select-artifact-type-dialog-box"></a>如何使用选择项目类型对话框
 *项*用于在业务流程设计器中配置的业务流程的元素。 项的例子包括架构、映射、管道、端口类型和多部分消息类型。 开发业务流程及其构成部分（例如，端口形状、转换形状和消息）时，您可能需要引用某些项，这些项不位于当前业务流程，而是位于当前项目或者已编译到 BizTalk Server 程序集的其他项目中。 你使用**选择项目类型**对话框中，以查找并配置业务流程中的某个元素时，然后指定项。  

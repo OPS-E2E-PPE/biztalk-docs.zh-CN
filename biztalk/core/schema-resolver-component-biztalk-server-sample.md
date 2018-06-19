@@ -1,11 +1,11 @@
 ---
-title: "架构冲突解决程序组件 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 架构冲突解决程序组件 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, examples
 - examples, Flat File Disassembler [pipeline component]
 ms.assetid: 9ef68988-c4ee-42d5-83b5-a5c978b2007d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974915"
 ---
 # <a name="schema-resolver-component-biztalk-server-sample"></a>架构冲突解决程序组件 （BizTalk Server 示例）
 架构冲突解决程序组件示例演示如何扩展的功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]平面文件反汇编程序组件。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/28/2017
  架构解析器组件演示为平面文件拆装器选择架构的备用方法。 在本示例中，定义了四个架构，每个架构的消息的前两个字符是唯一的。 在唯一的前两个字符与对应的架构之间定义了一个映射。 当将输入消息发送到架构解析器组件时，架构解析器读取前两个字符，确定要用于对应文档的架构，将架构信息保存在消息上下文中，然后调用标准平面文件拆装器组件。 标准平面文件拆装器组件从消息上下文读取架构信息，然后使用该架构分析文档。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Pipelines\SchemaResolverComponent\  
+ *\<示例路径\>* \Pipelines\SchemaResolverComponent\  
   
  下表显示了本示例中使用的文件及其用途说明：  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令窗口中，将目录更改 (cd) 为以下文件夹：  
   
-     *\<示例路径\>*\Pipelines\SchemaResolverComponent  
+     *\<示例路径\>* \Pipelines\SchemaResolverComponent  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   

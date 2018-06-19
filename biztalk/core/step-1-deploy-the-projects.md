@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 部署项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 部署项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0467c140-1f4c-4cfa-b46f-dc1d0f8755d4
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974117"
 ---
 # <a name="step-1-deploy-the-projects"></a>步骤 1：部署项目
 ![步骤 1，共 3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，你将部署在 EAISchemas 和 EAIOrchestration 项目。  
+ **目标：** 在此步骤中，你将部署在 EAISchemas 和 EAIOrchestration 项目。  
   
- **用途：**在部署项目或 Visual Studio 中的解决方案时，程序集是自动生成并部署到指定的应用程序。 在此过程中，程序集连同它所包含的业务流程、架构和映射（称为“项目”）将导入本地 BizTalk 管理数据库，并在该数据库中与指定的应用程序建立关联。  
+ **用途：** 在部署项目或 Visual Studio 中的解决方案时，程序集是自动生成并部署到指定的应用程序。 在此过程中，程序集连同它所包含的业务流程、架构和映射（称为“项目”）将导入本地 BizTalk 管理数据库，并在该数据库中与指定的应用程序建立关联。  
   
 ## <a name="prerequisites"></a>先决条件  
   

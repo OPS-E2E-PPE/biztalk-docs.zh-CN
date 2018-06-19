@@ -24,6 +24,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25974267"
 ---
 # <a name="httpsso-biztalk-server-sample"></a>HTTPSSO （BizTalk Server 示例）
 HTTPSSO 示例演示如何使用 Microsoft 的企业单一登录 (SSO) 功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HTTP 适配器。  

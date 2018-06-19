@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263453"
 ---
 # <a name="ports-service-node"></a>端口 （服务节点）
 绑定文件的“Ports”节点是所有端口节点的父节点，端口节点包含与各个端口（这些端口绑定到与绑定文件一起导出的服务）有关的特定信息。  

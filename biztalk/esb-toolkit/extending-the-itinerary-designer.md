@@ -1,14 +1,14 @@
 ---
-title: "扩展路线设计器 |Microsoft 文档"
-ms.custom: 
+title: 扩展路线设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f26b825b-ebab-4dac-b7ed-0608c79e146a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974475"
 ---
 # <a name="extending-the-itinerary-designer"></a>扩展路线设计器
 路线设计器将 visual 的域特定语言 (DSL) 为 Microsoft Visual Studio，允许以用于路线图形建模[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 设计器显示为其开发人员可以编写自定义扩展以启用新功能和/或新的配置选项的各个扩展点。  

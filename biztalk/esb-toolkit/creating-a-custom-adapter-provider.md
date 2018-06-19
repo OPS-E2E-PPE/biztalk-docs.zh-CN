@@ -1,14 +1,14 @@
 ---
-title: "创建自定义适配器提供程序 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义适配器提供程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bb93acf8-fd9d-4315-8690-f0c152a954b5
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974275"
 ---
 # <a name="creating-a-custom-adapter-provider"></a>创建自定义适配器提供程序
 解析程序执行，如前面几节中所述后，动态解析服务将检查结果是否为终结点 （未转换）。 如果它是一个终结点，服务实例适配器管理器，它是实例化的**AdapterMgr**类。  

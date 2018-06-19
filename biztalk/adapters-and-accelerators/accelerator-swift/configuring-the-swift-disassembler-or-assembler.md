@@ -1,11 +1,11 @@
 ---
-title: "配置 SWIFT 反汇编程序或汇编程序 |Microsoft 文档"
-ms.custom: 
+title: 配置 SWIFT 反汇编程序或汇编程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assembler, configuring
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - disassembler, configuring
 - configuring, assembler
 ms.assetid: 56e421f2-0292-40af-b878-0cba1b034e19
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005062"
 ---
 # <a name="configuring-the-swift-disassembler-or-assembler"></a>配置 SWIFT 反汇编程序或汇编程序
 SWIFT 反汇编程序或 SWIFT 汇编程序添加自定义管道后，你必须将其配置为提供 （如启用/禁用动态消息类型发现、 入站 debatching、 XML 验证，在特定方案所需的功能业务规则引擎 (BRE) 验证和等等）。 必须在开发期间编译和部署自定义调用它们的管道之前配置的 SWIFT 反汇编程序和汇编程序。 若要配置 SWIFT 反汇编程序汇编程序，在管道设计器中选择的组件和编辑属性窗口中的配置属性。  

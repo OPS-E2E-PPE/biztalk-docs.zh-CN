@@ -1,15 +1,15 @@
 ---
-title: "管理发送端口和发送端口组 |Microsoft 文档"
-description: "链接来创建、 配置、 登记、 取消登记，以及开始和停止在 BizTalk Server 发送端口"
-ms.custom: 
+title: 管理发送端口和发送端口组 |Microsoft 文档
+description: 链接来创建、 配置、 登记、 取消登记，以及开始和停止在 BizTalk Server 发送端口
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db45f9f9-b32a-4b9c-a3bf-8c271d0f0cf9
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262701"
 ---
 # <a name="manage-send-ports-and-send-port-groups"></a>管理发送端口和发送端口组
 

@@ -1,17 +1,17 @@
 ---
-title: "监视业务流程管理解决方案与 BAM |Microsoft 文档"
-ms.custom: 
+title: 监视业务流程管理解决方案与 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, monitoring
 - monitoring, process management solutions
 ms.assetid: 7c5fde9d-6eef-41c9-979c-ac7e5a172812
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264365"
 ---
 # <a name="monitoring-the-business-process-management-solution-with-bam"></a>使用 BAM 监视业务流程管理解决方案
 该解决方案使用业务活动监视 (BAM) API 来监视订单处理步骤。 业务流程在设计上将活动拆分为多个阶段。 但是，可以将这些活动重新组合起来以形成连续的流程。 BAM 还提供聚合数据，以便您能够了解不同后端系统所花费的时间、已完成的订单数以及其他类似信息。  

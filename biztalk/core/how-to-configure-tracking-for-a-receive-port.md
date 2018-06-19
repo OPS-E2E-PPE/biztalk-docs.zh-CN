@@ -1,11 +1,11 @@
 ---
-title: "如何配置跟踪接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置跟踪接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - configuring, receive ports
 - managing [receive ports], tracking
 ms.assetid: dd569e84-cb1c-4191-912a-0c2eb2781a85
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249101"
 ---
 # <a name="how-to-configure-tracking-for-a-receive-port"></a>如何配置跟踪接收端口
 本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台为接收端口配置跟踪，如查看消息正文和升级属性的选项。 这可帮助你监视的运行状况你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]实现，并确定任何瓶颈。 所配置的跟踪设置将应用于接收端口的所有实例。  

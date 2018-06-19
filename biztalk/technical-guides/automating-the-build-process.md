@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26010262"
 ---
 # <a name="automating-the-build-process"></a>自动执行生成过程
 自动的生成过程编译，部署并按常规、 预先确定的时间间隔对项目的最新源代码然后运行生成验证测试 (Bvt)。 然后"生成报告，"详细信息是成功还是失败的生成过程，这是向项目利益干系人传送至。 生成报告分析以确定项目的方面需要注意和如果项目应将其回滚到以前的版本/生成。  

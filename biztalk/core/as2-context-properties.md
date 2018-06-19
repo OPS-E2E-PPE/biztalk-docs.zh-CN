@@ -1,14 +1,14 @@
 ---
-title: "AS2 上下文属性 |Microsoft 文档"
-ms.custom: 
+title: AS2 上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4d63104-f31e-4ed2-b294-ba3ea8a39ae6
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007550"
 ---
 # <a name="as2-context-properties"></a>AS2 上下文属性
 五种类型的上下文属性适用于 BizTalk Server 中的 AS2 消息：  

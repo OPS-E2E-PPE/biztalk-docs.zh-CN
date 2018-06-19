@@ -11,7 +11,7 @@ helpviewer_keywords:
 - maps [SSO], creating
 - managing [SSO maps], creating user maps
 ms.assetid: c2e9f0db-920b-4d89-8e1e-5dc92805fd23
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25970939"
 ---
 # <a name="how-to-create-user-mappings"></a>如何创建用户映射
 使用此命令创建一个或多个用户映射，按照指定的 XML 文件中。 下面是示例 XML 文件。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型 * * ssomanage-createmappings *\<映射文件名\>* * *，其中*\<映射文件名\>*是包含你想要创建用户映射的文件的名称。  
+3.  类型 * * ssomanage-createmappings *\<映射文件名\>* * *，其中*\<映射文件名\>* 是包含你想要创建用户映射的文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型 * * ssoclient – setcredentials *\<应用程序名称\>* * *，其中*\<应用程序名称\>*是用户想要创建的映射的关联应用程序的名称。  
+3.  类型 * * ssoclient – setcredentials *\<应用程序名称\>* * *，其中*\<应用程序名称\>* 是用户想要创建的映射的关联应用程序的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

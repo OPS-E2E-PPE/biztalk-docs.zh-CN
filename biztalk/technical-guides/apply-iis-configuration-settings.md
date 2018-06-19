@@ -1,14 +1,14 @@
 ---
-title: "将 IIS 配置设置应用 |Microsoft 文档"
-ms.custom: 
+title: 将 IIS 配置设置应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d638f83-e1c8-4e35-b345-361d5a3093fa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976659"
 ---
 # <a name="apply-iis-configuration-settings"></a>将 IIS 配置设置应用
 默认情况下 SOAP、 HTTP，并基于 HTTP 的 WCF 适配器 （和.NET 通常） 打开只有两个并发的 HTTP 连接从每个 BizTalk 主机实例到任何特定的目标服务器。 例如，如果你有 SOAP 发送端口发送消息到**http://www.contoso.com/SomeWebService.asmx**，然后通过默认每上运行每个主机实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将打开到中只有两个并发的HTTP连接**www.contoso.com**，无论多少条消息需要发送。  

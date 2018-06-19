@@ -1,17 +1,17 @@
 ---
-title: "BizTalk 消息队列大型消息扩展 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 消息队列大型消息扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Message Queuing Large Message Extension
 - utilities, BizTalk Message Queuing Large Message Extension
 ms.assetid: 5d6892d3-fda8-41a3-8111-d28c11bd71fb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006398"
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a>BizTalk 消息队列大型消息扩展
 本机消息队列无法处理的消息其正文大于 4megabytes (MB)。 但是，Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含的本地消息队列的加载项可处理大于 4 MB 的消息。 此外接程序传递为 Mqrtlarge.dll 文件中，并公开**MQSendLargeMessage**和**MQReceiveLargeMessage**应用程序的编程接口 (Api) 和类似的 COM 模型。 这些函数的实现是作为标准的消息队列 Api， **MQSendMessage**和**MQReceiveMessage**分别。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/01/2017
   
 |文件|Description|  
 |---------------|-----------------|  
-|Mqrtlarge.dll|公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。<br /><br /> 标头文件位于*\<安装路径\>*\SDK\Include 目录。 **注意：**必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。|  
+|Mqrtlarge.dll|公开的 Win32 动态链接库**MQSendLargeMessage**和**MQReceiveLargeMessage**。<br /><br /> 标头文件位于*\<安装路径\>* \SDK\Include 目录。 **注意：** 必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到才能访问 Mqrtlarge.dll 的 64 位版本的 Windows 的 64 位版本。|  
   
  **使用此实用工具**  
   

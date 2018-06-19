@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 64f202316e59040a77cb04da99857e8539a184ac
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015012"
 ---
 # <a name="deployment-limitations"></a>部署限制
 传输适配器密码存储为星号 (\*\*\*\*\*\*)，由 BizTalk 部署向导，导出方法并传递到所管理绑定文件中在相同的格式中的组件。 在导入之前编辑绑定文件，将星号替换为随机的字母数字值（即，不替换为正确密码）。 然后输入正确的密码使用**传输属性**后导入绑定文件页。  

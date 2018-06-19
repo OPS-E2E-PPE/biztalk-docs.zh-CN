@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268389"
 ---
 # <a name="receiveportcollection-node"></a>ReceivePortCollection 节点
 绑定文件的 ReceivePortCollection 节点是所有 ReceivePort 节点的父节点，ReceivePort 节点包含有关与此绑定文件一起导出的接收端口的特定信息。  

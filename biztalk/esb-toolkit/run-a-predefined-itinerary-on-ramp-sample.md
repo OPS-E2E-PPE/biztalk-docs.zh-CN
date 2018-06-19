@@ -1,14 +1,14 @@
 ---
-title: "运行预定义的路线上负载增加示例 |Microsoft 文档"
-ms.custom: 
+title: 运行预定义的路线上负载增加示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b4400193-20ac-479a-8bf9-b1c99eb35231
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976675"
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>运行预定义的路线上负载增加示例
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括预定义的 20 路线用例可以执行。 有关这些列表用例，请参阅[示例路线方案](../esb-toolkit/the-sample-itinerary-scenarios.md)。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
     position="0" serviceInstanceId="" />  
 ```  
   
- 在此业务流程服务**\<服务\>**元素指定直接绑定业务流程具有图 2 所示的筛选器属性。 请注意业务流程订阅仅对具有值的消息**Microsoft.Practices.ESB.Services.Transform**为**ServiceName**上下文属性、 值**挂起**为**ServiceState**上下文属性和值业务流程的**ServiceType**上下文属性。  
+ 在此业务流程服务**\<服务\>** 元素指定直接绑定业务流程具有图 2 所示的筛选器属性。 请注意业务流程订阅仅对具有值的消息**Microsoft.Practices.ESB.Services.Transform**为**ServiceName**上下文属性、 值**挂起**为**ServiceState**上下文属性和值业务流程的**ServiceType**上下文属性。  
   
  ![筛选器表达式](../esb-toolkit/media/ch6-filterexpression.gif "Ch6 FilterExpression")  
   

@@ -1,15 +1,15 @@
 ---
-title: "使用 BizTalk Server 中的异常处理博士 Edwards OneWorld |Microsoft 文档"
-description: "处理异常和正在更新你在 BizTalk Server 中使用博士 Edwards OneWorld 适配器的业务流程的 jdearglist.txt 文件概述"
-ms.custom: 
+title: 使用 BizTalk Server 中的异常处理博士 Edwards OneWorld |Microsoft 文档
+description: 处理异常和正在更新你在 BizTalk Server 中使用博士 Edwards OneWorld 适配器的业务流程的 jdearglist.txt 文件概述
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d16ad8c2-f85a-4068-91ba-67623692df26
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013180"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 

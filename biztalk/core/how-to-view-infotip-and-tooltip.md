@@ -1,14 +1,14 @@
 ---
-title: "如何查看信息提示和工具提示 |Microsoft 文档"
-ms.custom: 
+title: 如何查看信息提示和工具提示 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5621bd0a-7028-43fc-b6e8-74a528129285
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257277"
 ---
 # <a name="how-to-view-infotip-and-tooltip"></a>如何查看提示和工具提示
 当您将光标移动到映射项上而不单击该项时，将出现一个屏幕提示，提供有关该项的有用信息。  

@@ -1,14 +1,14 @@
 ---
-title: "清单： 配置 SQL Server |Microsoft 文档"
-ms.custom: 
+title: 清单： 配置 SQL Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: edd20f24-8a72-40b7-abee-81fbd3ceefda
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010286"
 ---
 # <a name="checklist-configuring-sql-server"></a>清单： 配置 SQL Server
 在 BizTalk Server 生产环境中使用在准备 SQL Server 时应遵循的步骤。    
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/01/2017
 |使用默认配置设置：<br /><br /> -最大值 Degree of Parallelism (MDOP)。<br />的在 BizTalk Server MessageBox 数据库上 SQL Server 统计信息。<br />SQL Server 数据库索引重新生成和碎片整理。|[不可更改的 SQL Server 设置](sql-server-settings-that-should-not-be-changed.md)|  
 |启用跟踪标志 1118 (TF1118) 作为启动参数的 SQL Server 的所有实例。|实现 TF1118 有助于减少争用跨 SQL Server 实例删除几乎所有的单页分配。 有关详细信息，请参阅 Microsoft 知识库文章[并发增强功能的 tempdb 数据库](https://support.microsoft.com/en-us/help/328551/concurrency-enhancements-for-the-tempdb-database)。 <br/><br/>**注意：** TF1118，请参阅有关详细信息[围绕 TF1118 误解](https://www.sqlskills.com/blogs/paul/misconceptions-around-tf-1118/)。 请注意，在以下链接的内容不由 Microsoft 拥有，Microsoft 不保证内容的准确性。|  
 |将 tempdb 数据库拆分为多个大小相等的 BizTalk Server 使用的每个 SQL Server 实例上的数据文件。|确保用于 tempdb 数据文件的大小相等。 这是关键的因为 SQL Server 使用的按比例填充算法根据数据文件的大小。 如果数据文件创建不相等的大小，按比例填充算法将使用全局分配映射 (GAM) 分配，而无需分配所有的文件，从而与将创建多个的目的之间分配更多的最大文件数据文件。 作为一般原则是，为每个 CPU 的服务器上创建一个数据文件，然后调整根据需要向上或向下文件数。 请注意，双核心 CPU 将被视为两个 CPU。 在任何情况下，数据文件数必须大于 8 无关多少个内核，以便在计算机上可用。 有关 tempdb 文件的详细信息，请参阅[优化 tempdb 性能](https://docs.microsoft.com/sql/relational-databases/databases/tempdb-database)。|  
-|设置最小值和 SQL Server 上的相同值的最大服务器内存 instance(s) 该主机的 BizTalk Server 数据库。|运行该主机的 SQL Server 的计算机的 BizTalk Server 数据库应将专用于运行 SQL Server。 运行该主机的 SQL Server 的计算机 BizTalk Server 数据库时**是**专用于运行 SQL Server，我们建议的 min server memory 和最大服务器内存选项卡上的每个 SQL Server 实例设置为指定固定分配给 SQL Server 的内存量。 在这种情况下，应将设置为 min server memory 和最大服务器内存为相同的值 （等于最大的 SQL Server 将使用的物理内存量）。 这将减少开销，否则将使用 SQL server 动态地管理这些值。 在运行 SQL Server 以指定要分配给 SQL Server 的内存固定的量每台计算机上执行以下 T-SQL 命令：<br /><br /> sp_configure ' 最大服务器内存 (MB)，（以 mb 为单位的最大大小） sp_configure 最小服务器内存 (MB)，（以 mb 为单位的最小大小）<br /><br /> 为 SQL Server 设置的内存量之前，请通过减去所需的总物理内存从 Windows Server 的内存确定适当的内存设置。 这是内存的最大可以为 SQL Server 分配量。 **注意：**如果运行 BizTalk Server 数据库也该主机的 SQL Server 的计算机承载企业单一登录主密钥，如主题所述[群集主密钥服务器](clustering-the-master-secret-server.md)然后，你可能需要若要调整此值，以确保有足够的内存可用于运行企业单一登录服务。|  
+|设置最小值和 SQL Server 上的相同值的最大服务器内存 instance(s) 该主机的 BizTalk Server 数据库。|运行该主机的 SQL Server 的计算机的 BizTalk Server 数据库应将专用于运行 SQL Server。 运行该主机的 SQL Server 的计算机 BizTalk Server 数据库时**是**专用于运行 SQL Server，我们建议的 min server memory 和最大服务器内存选项卡上的每个 SQL Server 实例设置为指定固定分配给 SQL Server 的内存量。 在这种情况下，应将设置为 min server memory 和最大服务器内存为相同的值 （等于最大的 SQL Server 将使用的物理内存量）。 这将减少开销，否则将使用 SQL server 动态地管理这些值。 在运行 SQL Server 以指定要分配给 SQL Server 的内存固定的量每台计算机上执行以下 T-SQL 命令：<br /><br /> sp_configure ' 最大服务器内存 (MB)，（以 mb 为单位的最大大小） sp_configure 最小服务器内存 (MB)，（以 mb 为单位的最小大小）<br /><br /> 为 SQL Server 设置的内存量之前，请通过减去所需的总物理内存从 Windows Server 的内存确定适当的内存设置。 这是内存的最大可以为 SQL Server 分配量。 **注意：** 如果运行 BizTalk Server 数据库也该主机的 SQL Server 的计算机承载企业单一登录主密钥，如主题所述[群集主密钥服务器](clustering-the-master-secret-server.md)然后，你可能需要若要调整此值，以确保有足够的内存可用于运行企业单一登录服务。|  
 |BizTalk 跟踪数据库的大小|-当确定 BizTalk 跟踪 (DTA) 数据库中的消息的大小，将添加消息上下文的平均大小到的消息大小如果一点很重要，相比的消息大小。<br />-若要限制 BizTalk 跟踪数据库中的消息的大小，则将提升的属性数目的限制。<br />-如果启用业务流程调试器选项，考虑到每个形状中业务流程的状态保存到 BizTalk 跟踪数据库中。|  
   
 <a name="BKMK_Maintain"></a>   

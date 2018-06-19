@@ -1,11 +1,11 @@
 ---
-title: "如何登记或取消登记角色方 |Microsoft 文档"
-ms.custom: 
+title: 如何登记或取消登记角色方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [role links], enlisting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - role links, enlisting
 - managing [role links], unenlisting
 ms.assetid: 06fc2a64-3add-400c-9f9d-fab22fdf5366
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253781"
 ---
 # <a name="how-to-enlist-or-unenlist-a-party-for-a-role"></a>如何登记或取消登记角色参与方
 本主题将介绍如何使用 BizTalk Server 管理控制台来登记或取消登记角色参与方。 登记角色参与方将为参与方指定角色，而取消登记角色参与方将从角色中删除该参与方。  

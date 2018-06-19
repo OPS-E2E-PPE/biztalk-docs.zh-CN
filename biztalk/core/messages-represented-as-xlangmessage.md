@@ -1,14 +1,14 @@
 ---
-title: "消息表示为 XLANGMessage |Microsoft 文档"
-ms.custom: 
+title: 消息表示为 XLANGMessage |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aadca870-2f93-4be3-8733-a0cd3815add7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972267"
 ---
 # <a name="messages-represented-as-xlangmessage"></a>表示为 XLANGMessage 的消息
 **XLANGMessage**对象表示的声明与 XLANG 服务的消息实例。 通过在方法调用中将对某一消息的引用作为参数传递，获取此对象。 **XLANGPart**对象表示 XLANG 服务内的消息实例中包含的消息部分。 此对象获取通过其中接收的参数类型在方法调用中传递一部分引用**XLANGPart**或通过枚举在传递的引用上**XLANGMessage**。  

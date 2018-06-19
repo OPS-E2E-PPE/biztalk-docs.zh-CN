@@ -1,14 +1,14 @@
 ---
-title: "找不到文件反映 BizTalk 程序集时出现异常 |Microsoft 文档"
-ms.custom: 
+title: 找不到文件反映 BizTalk 程序集时出现异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 223147eb-785f-4dfc-b2a6-7d50dfaf8092
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004766"
 ---
 # <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>反射 BizTalk 程序集时发生异常，未找到某个文件
 ## <a name="details"></a>详细信息  

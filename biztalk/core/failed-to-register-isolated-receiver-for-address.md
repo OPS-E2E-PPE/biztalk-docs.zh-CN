@@ -1,14 +1,14 @@
 ---
-title: "未能注册地址的独立接收方 |Microsoft 文档"
-ms.custom: 
+title: 未能注册地址的独立接收方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 313b436a-d7c5-4b46-bfe3-bbad0d8efe42
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246021"
 ---
 # <a name="failed-to-register-isolated-receiver-for-address"></a>无法为地址注册独立的接收器
 ## <a name="details"></a>详细信息  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "26009422"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>HYPER-V 上的系统资源成本
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>与 HYPER-V 上运行来宾操作系统的系统资源成本  
@@ -142,7 +143,7 @@ ms.lasthandoff: 03/28/2018
 |每秒写入 I/o|89.00|82.87|93.11%|  
 |总 Mb / 秒|0.53|0.49|92.45%|  
 |平均读取响应时间 （毫秒）|5.4066|5.7797|93.54%|  
-|平均写入响应时间 （毫秒）|0.2544|0.3716|68.42%**注意：**虽然的传递磁盘平均写入响应时间的相对性能已 68.42%的物理磁盘的性能，传递磁盘的平均写入响应时间为仍很好地内建立可接受的限制的 10 毫秒。|  
+|平均写入响应时间 （毫秒）|0.2544|0.3716|68.42%**注意：** 虽然的传递磁盘平均写入响应时间的相对性能已 68.42%的物理磁盘的性能，传递磁盘的平均写入响应时间为仍很好地内建立可接受的限制的 10 毫秒。|  
 |平均 I/O 响应时间 （毫秒）|3.7066|3.9904|93.89%|  
   
 > [!NOTE]  

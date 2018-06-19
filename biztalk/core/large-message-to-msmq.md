@@ -1,14 +1,14 @@
 ---
-title: "于 MSMQ 的大消息 |Microsoft 文档"
-ms.custom: 
+title: 于 MSMQ 的大消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fb87b46-5656-42c0-be99-8ab66e51bb4d
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976107"
 ---
 # <a name="large-message-to-msmq"></a>于 MSMQ 的大型消息
 大型消息到 MSMQ 示例演示如何.xml 文档大于 4 兆字节 (MB) 将从发送消息队列 (也称为 MSMQ) 到 BizTalk MSMQ 适配器使用**MQSendLargeMessage** API 实现通过MQRTLarge.dll。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  单击**配置**按钮以打开**文件传输属性**窗体。 输入**C:\Demo**中**目标文件夹**。 确保主机实例标识具有对 C:\Demo 文件夹的访问权限。  
   
-8.  确保**文件名**设置为**%MessageID%.xml**。 单击 **“确定”**。  
+8.  确保**文件名**设置为 **%MessageID%.xml**。 单击 **“确定”**。  
   
 9. 单击 **“筛选器”**。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
     5.  在**接收位置属性**对话框中，设置**传输类型**到**MSMQ**。  
   
-    6.  在**地址 (URI)**部分中，单击**配置**以打开**MSMQ 传输属性**窗体。 设置**队列**到**localhost\private$ \test**。  
+    6.  在**地址 (URI)** 部分中，单击**配置**以打开**MSMQ 传输属性**窗体。 设置**队列**到**localhost\private$ \test**。  
   
     7.  设置**事务**到`True`，然后单击**确定**。  
   

@@ -1,17 +1,17 @@
 ---
-title: "如何修改聚合 |Microsoft 文档"
-ms.custom: 
+title: 如何修改聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], modifying
 - BAM portal, aggregations
 ms.assetid: dd5ce211-32d3-4e1d-8ee0-1225ec2c45fb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254677"
 ---
 # <a name="how-to-modify-an-aggregation"></a>如何修改聚合
 在 Office Web 组件中使用数据透视表的方法与在 Excel 中使用数据透视表的方法相同。 可以添加和移除行、列及筛选器，以便生成可在聚合数据上创建警报的视图。  

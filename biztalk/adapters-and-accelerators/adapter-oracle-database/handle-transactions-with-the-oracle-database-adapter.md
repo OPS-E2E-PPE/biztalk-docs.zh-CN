@@ -1,14 +1,14 @@
 ---
-title: "使用 Oracle 数据库适配器处理事务 |Microsoft 文档"
-ms.custom: 
+title: 使用 Oracle 数据库适配器处理事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 971c2fba-640c-4ae5-9ab3-2d8227c1627d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005702"
 ---
 # <a name="handle-transactions-with-the-oracle-database-adapter"></a>与 Oracle 数据库适配器的句柄事务
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]并不会启动一个事务执行对 Oracle 数据库操作时。 相反，适配器执行的操作使用提供的适配器客户端的事务上下文。 若要执行操作在事务中使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，你必须：  

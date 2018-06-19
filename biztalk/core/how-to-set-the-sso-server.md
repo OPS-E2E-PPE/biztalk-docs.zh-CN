@@ -1,11 +1,11 @@
 ---
-title: "如何设置 SSO 服务器 |Microsoft 文档"
-ms.custom: 
+title: 如何设置 SSO 服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - servers, selecting [SSO]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [SSO], selecting servers
 - SSOManage [SSO]
 ms.assetid: a0b0176d-b426-4ab1-8a7e-1f96f4214683
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972163"
 ---
 # <a name="how-to-set-the-sso-server"></a>如何设置 SSO 服务器
 每次使用 ssomanage 时，必须先将用户指向您要连接的单一登录服务器。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-服务器\<SSO 服务器名\>**，其中 **\<SSO 服务器名\>**是用户的单一登录服务器的计算机名称想要连接到。  
+3.  类型**ssomanage-服务器\<SSO 服务器名\>**，其中 **\<SSO 服务器名\>** 是用户的单一登录服务器的计算机名称想要连接到。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-serverall \<SSO 服务器名\>**，其中 **\<SSO 服务器名\>**为单一登录服务器的所有计算机名称将指向单一登录在用户帐户的成员。  
+3.  类型**ssomanage-serverall \<SSO 服务器名\>**，其中 **\<SSO 服务器名\>** 为单一登录服务器的所有计算机名称将指向单一登录在用户帐户的成员。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

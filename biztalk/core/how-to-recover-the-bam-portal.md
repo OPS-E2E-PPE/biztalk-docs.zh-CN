@@ -1,14 +1,14 @@
 ---
-title: "如何恢复 BAM 门户 |Microsoft 文档"
-ms.custom: 
+title: 如何恢复 BAM 门户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2a5df99-6d03-4f1f-8540-1700d3a0b9db
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254597"
 ---
 # <a name="how-to-recover-the-bam-portal"></a>如何恢复 BAM 门户
 如果在使用业务活动监视 (BAM)，则必须在恢复 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时恢复 BAM 门户。 如果没有使用 BAM，则此过程为可选。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  类型`appcmd restore backup “` *backupname*`”`，然后按**Enter**。  
   
-     *Backupname*是先前使用创建的备份名称**Appcmd.exe**。 此备份必须存在于**%windir%\system32\inetsrv\backup**目录。 备份不能用于还原的其他计算机上创建的密码。 如果 BAMAppPool 配置为在不同于默认标识下运行**NetworkService**帐户，您必须单独下, 一步中所述配置的帐户和密码。  
+     *Backupname*是先前使用创建的备份名称**Appcmd.exe**。 此备份必须存在于 **%windir%\system32\inetsrv\backup**目录。 备份不能用于还原的其他计算机上创建的密码。 如果 BAMAppPool 配置为在不同于默认标识下运行**NetworkService**帐户，您必须单独下, 一步中所述配置的帐户和密码。  
   
 5.  使用**Internet Information Services (IIS) Manager**，选择**应用程序池**中**连接**窗格。  
   

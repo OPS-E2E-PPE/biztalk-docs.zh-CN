@@ -1,14 +1,14 @@
 ---
-title: "如何配置 WCF WSHttp 接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 WCF WSHttp 接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b38cce4a-9c81-4716-b847-1acada4afc15
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250749"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-receive-location"></a>如何配置 WCF-WSHttp 接收位置
 可以编程方式或使用 BizTalk 管理控制台配置 WCF-WSHttp 接收位置。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 09/20/2017
 |**AlgorithmSuite**|Enum<br /><br /> 有关成员名称的详细信息**AlgorithmSuite**属性，请参阅**算法套件**中的属性**WCF WSHttp 传输属性对话框中，接收，安全**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|指定消息加密和密钥包装算法。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。<br /><br /> 默认值： **Basic256**|  
 |**NegotiateServiceCredential**|Boolean|指定是在带外客户端提供服务凭据，还是通过协商过程从服务将服务凭据提供给客户端。 这种协商是正常消息交换开始前的准备过程。<br /><br /> 如果**MessageClientCredentialType**属性等于**无**，**用户名**，或**证书**，此属性设置为**False**意味着服务证书位于带外客户端和客户端需要指定服务证书。 此模式可与实现 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 如果**MessageClientCredentialType**属性设置为**Windows**，此属性设置为**False**指定基于 Kerberos 的身份验证。 这意味着客户端和服务必须属于同一个 Kerberos 域。 此模式可与实现 Kerberos 标记配置文件（在 OASIS WSS TC 中定义）以及 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 当此属性是**True**，会引起通过 SOAP 消息隧道 SPNego 交换的.NET SOAP 协商。<br /><br /> 默认值： **True**|  
 |**EstablishSecurityContext**|Boolean|指定安全通道是否建立安全会话。 安全会话在交换应用程序消息之前建立安全上下文标记 (SCT)。<br /><br /> 默认值： **True**|  
-|**ServiceCertificate**|字符串|为此接收位置指定 X.509 证书的指纹，客户端利用该指纹验证服务。 此属性使用的证书必须安装到**我**将存储在**当前用户**位置。 **注意：**必须安装到的服务证书**当前用户**承载此接收位置接收处理程序的用户帐户的位置。 <br /><br /> 默认值为空字符串。|  
+|**ServiceCertificate**|字符串|为此接收位置指定 X.509 证书的指纹，客户端利用该指纹验证服务。 此属性使用的证书必须安装到**我**将存储在**当前用户**位置。 **注意：** 必须安装到的服务证书**当前用户**承载此接收位置接收处理程序的用户帐户的位置。 <br /><br /> 默认值为空字符串。|  
 |**UseSSO**|Boolean|指定是否使用企业单一登录 (SSO) 检索客户端凭据以颁发 SSO 票证。 有关安全配置的详细信息支持 SSO，请参阅"企业单一登录可支持性的 WCF WSHttp 接收适配器"一节中**WCF WSHttp 传输属性对话框中，接收、 安全**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|  
 |**InboundBodyLocation**|Enum<br /><br /> -   **UseBodyElement** -使用 SOAP 的内容**正文**传入消息创建 BizTalk 消息正文部分的元素。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br />-   **UseEnvelope** -从整个 SOAP 创建 BizTalk 消息正文部分**信封**传入消息。<br />-   **UseBodyPath** -使用中的正文路径表达式**InboundBodyPathExpression**属性创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 此属性仅对要求-响应端口有效。<br /><br /> 有关如何使用**InboundBodyLocation**属性，请参阅[为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)。|指定 SOAP 数据选择**正文**传入 WCF 消息的元素。<br /><br /> 默认值： **UseBodyElement**|  
 |**InboundBodyPathExpression**|字符串<br /><br /> 有关如何使用**InboundBodyPathExpression**属性，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。|指定正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 此正文路径表达式针对 SOAP 的即时子元素进行评估**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。<br /><br /> 默认值为空字符串。|  

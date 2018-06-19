@@ -1,11 +1,11 @@
 ---
-title: "在业务流程设计器中工作 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程设计器中工作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, saving
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - orchestrations, deleting
 ms.assetid: 13e72b41-d9b6-4508-9a44-b3c7c1804f36
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975475"
 ---
 # <a name="working-in-orchestration-designer"></a>使用业务流程设计器
 在您开始了某一 BizTalk 项目后，可以创建新的业务流程和向该项目添加现有业务流程。 请参阅下面的过程来创建和保存业务流程、将现有业务流程添加到某一项目或从项目中删除现有业务流程、更改业务流程的名称以及设置业务流程属性。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
     |事务标识符|用于事务性业务流程的唯一标识符。|  
     |事务类型|确定业务流程是原子事务、长期事务还是业务流程未进行事务处理。|  
     |类型修饰符|确定业务流程级别变量的作用域：<br /><br /> 私有-与此业务流程的访问仅限于包含模块。<br /><br /> 公共-与此业务流程的访问不受限制。<br /><br /> 内部 — 与此业务流程的访问仅限于同一项目中的模块。|  
-    |类型名称|确定此业务流程在包含模块内的名称。 **注意：**如果你使用与根级命名空间中，相同的类型名称定义消息并基于 e，尝试执行变量将在其上的操作时，可能会从 Orchestration 设计器收到错误。 例如，如果您指定某一系统类型名称，然后定义 System.String 之类的消息和变量，则可能会收到错误消息。|  
+    |类型名称|确定此业务流程在包含模块内的名称。 **注意：** 如果你使用与根级命名空间中，相同的类型名称定义消息并基于 e，尝试执行变量将在其上的操作时，可能会从 Orchestration 设计器收到错误。 例如，如果您指定某一系统类型名称，然后定义 System.String 之类的消息和变量，则可能会收到错误消息。|  
   
 ## <a name="see-also"></a>另请参阅  
  [业务流程形状](../core/orchestration-shapes.md)   

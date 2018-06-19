@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263845"
 ---
 # <a name="plan-and-architect-your-biztalk-server-solution"></a>规划和设计你的 BizTalk Server 解决方案
 本部分提供了 BizTalk Server 的有关信息，以帮助规划您的环境。  

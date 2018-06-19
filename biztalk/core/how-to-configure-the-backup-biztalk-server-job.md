@@ -1,15 +1,15 @@
 ---
-title: "配置备份 BizTalk Server 作业 |Microsoft 文档"
-description: 
-ms.custom: 
+title: 配置备份 BizTalk Server 作业 |Microsoft 文档
+description: ''
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 026622c9-fcb4-4db0-af48-1379feb30372
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972843"
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>配置备份 BizTalk Server 作业
 安装和配置 BizTalk Server 后，将备份配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业以备份你的数据。 
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/28/2017
 
 
 ## <a name="overview"></a>概述
-**备份 BizTalk Server (BizTalkMgmtDb)**作业包括以下步骤：
+**备份 BizTalk Server (BizTalkMgmtDb)** 作业包括以下步骤：
 
 -   步骤 1 – **Set 压缩选项**： 启用或禁用压缩功能在备份期间
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
     2. **名称**：默认值为 **BTS**。 该名称用作备份文件名的一部分。  
   
-    3. **备份文件的位置**： 替换*\<目标路径\>*替换为计算机和要备份文件夹的完整路径（的路径必须包括两个单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。  
+    3. **备份文件的位置**： 替换*\<目标路径\>* 替换为计算机和要备份文件夹的完整路径（的路径必须包括两个单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 Azure blob 存储帐户的 blob 服务终结点 URL。  
 
         > [!IMPORTANT]
         > - 如果输入的本地路径，则你必须手动将所有文件都复制到目标系统上的相同文件夹每当备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业创建新的文件。  
@@ -134,12 +135,12 @@ ms.lasthandoff: 11/28/2017
   
     1.  **@MarkName**： 这是备份文件的命名约定的一部分：\<服务器名称\>\_\<数据库名称\>**\_日志\_** \<日志标记名\> \_\<时间戳\>  
     
-    2.  **@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。 *\<目标路径\>*也可以是本地或另一台服务器的 UNC 路径。  
+    2.  **@BackupPath**： 完整的目标路径 （包括单引号） 的计算机和文件夹来存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。 *\<目标路径\>* 也可以是本地或另一台服务器的 UNC 路径。  
   
      MarkAndBackupLog 步骤将日志标记为备份，然后对其进行备份。  
   
     > [!IMPORTANT]
-    >  若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径\>*应设置为另一台计算机或硬盘，不同于用来存储原始的数据库日志。  
+    >  若要避免**潜在的数据丢失**和**性能改善**、 *\<目标路径\>* 应设置为另一台计算机或硬盘，不同于用来存储原始的数据库日志。  
   
      选择“确定”。  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="execute-backupsetupallprocssql-and-logshippingdestinationlogicsql"></a>执行 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql
 
-**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2 (FP2)**使用中的 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql 脚本`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`。 
+**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]功能包 2 (FP2)** 使用中的 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql 脚本`\Program Files (x86)\Microsoft BizTalk Server *your version*\Schema`。 
 
 如果已配置你的 BizTalk Server 中备份作业，并且你想要切换到使用 Azure blob （而不是磁盘），则还执行以下： 
 

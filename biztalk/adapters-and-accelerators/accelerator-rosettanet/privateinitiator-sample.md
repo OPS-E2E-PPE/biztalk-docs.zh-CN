@@ -1,14 +1,14 @@
 ---
-title: "PrivateInitiator 示例 |Microsoft 文档"
-ms.custom: 
+title: PrivateInitiator 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4f176566-2a71-487d-84c1-5e7767701e8b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004374"
 ---
 # <a name="privateinitiator-sample"></a>PrivateInitiator 示例
 PrivateInitiator.odx 示例包含通过安装发起程序专用进程的代码[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server。 此通用专用流程从基于默认的 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。  

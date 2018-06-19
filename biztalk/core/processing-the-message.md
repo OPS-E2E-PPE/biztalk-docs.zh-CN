@@ -1,11 +1,11 @@
 ---
-title: "处理消息 |Microsoft 文档"
-ms.custom: 
+title: 处理消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - messages, message types
 - messages, adapters
 ms.assetid: e6d1f969-20c9-41f6-85cb-46cf92656348
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266485"
 ---
 # <a name="processing-the-message"></a>处理消息
 当消息在 BizTalk Server 中传输时，到目前为止我们所介绍的所有组件在消息的处理过程中均发挥了一定的作用。 本部分将提供有关这些组件如何在功能上交互的更详细信息（从接收消息开始）。 下图显示了接收端口的组成部分以及消息流将如何通过接收进程。  

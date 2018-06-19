@@ -1,14 +1,14 @@
 ---
-title: "如何重新部署从 Visual Studio BizTalk 程序集 |Microsoft 文档"
-ms.custom: 
+title: 如何重新部署从 Visual Studio BizTalk 程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5c4bb627-48de-4874-bb25-af2c513dbc51
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009494"
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a>如何从 Visual Studio 重新部署 BizTalk 程序集
 在开发程序集的过程中，你通常需要重复地部署、测试、修改以及重新部署该程序集。 在以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，如果你希望在不更改版本号的情况下重新部署程序集，则首先需要手动停止、取消登记和取消绑定包含在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 程序集中的项目，然后从 BizTalk 管理（配置）数据库中删除该程序集。 此外，在重新部署程序集后，还需要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中绑定、登记和启动程序集的项目。  

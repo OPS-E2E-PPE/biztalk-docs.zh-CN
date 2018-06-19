@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263085"
 ---
 # <a name="mqseries-adapter-custom-headers"></a>MQSeries 适配器自定义标头
 由于在 MQSeries 消息中使用了标头结构，因此必须对要使用的所有自定义标头进行管理。 为了避免影响对 MQSeries 标头的处理，自定义标头必须包含在消息正文中。 应避免对任何自动升级的属性进行降级。 有关自动提升的属性的详细信息，请参阅[MQSeries 适配器属性](../core/mqseries-adapter-properties.md)。  

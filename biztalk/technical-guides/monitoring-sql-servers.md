@@ -1,15 +1,15 @@
 ---
-title: "监视 SQL Server |Microsoft 文档"
-description: "使用 SQL Server 管理包来检查性能、 可用空间，数据库配置、 阻塞的进程、 连接、 失败 SQL 代理作业、 复制和 BizTalk Server 中的详细信息"
-ms.custom: 
+title: 监视 SQL Server |Microsoft 文档
+description: 使用 SQL Server 管理包来检查性能、 可用空间，数据库配置、 阻塞的进程、 连接、 失败 SQL 代理作业、 复制和 BizTalk Server 中的详细信息
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31871432-e13d-4ef3-b886-16c833371f6d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006958"
 ---
 # <a name="monitoring-sql-servers"></a>监视 SQL Server
 

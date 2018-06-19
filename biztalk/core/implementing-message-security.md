@@ -1,14 +1,14 @@
 ---
-title: "实现消息安全性 |Microsoft 文档"
-ms.custom: 
+title: 实现消息安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 971977a0-b74e-4408-8a07-ad327658f2bc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256493"
 ---
 # <a name="implementing-message-security"></a>实现消息安全性
 可以配置 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境以使用证书来发送和接收签名消息和加密消息。 通过使用证书来进行加密和数字签名，BizTalk Server 可以：  

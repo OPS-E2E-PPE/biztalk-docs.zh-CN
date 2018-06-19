@@ -1,15 +1,15 @@
 ---
-title: "启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档"
-description: "安装程序集、 配置 machine.config，将扩展添加到 BizTalk 管理员、 创建接收位置来启用 BizTalk Server 中的 WCF 适配器的 WCF 扩展性点"
-ms.custom: 
+title: 启用与 WCF 适配器 WCF 扩展点 |Microsoft 文档
+description: 安装程序集、 配置 machine.config，将扩展添加到 BizTalk 管理员、 创建接收位置来启用 BizTalk Server 中的 WCF 适配器的 WCF 扩展性点
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975411"
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>如何启用 WCF 适配器的 WCF 扩展点
 启用三个 WCF 扩展性点-行为扩展、 绑定元素扩展和绑定扩展-与的 WCF 自定义和 WCF CustomIsolated 适配器。 若要执行此操作，首先应将用于实现 WCF 扩展点的程序集安装到全局程序集缓存 (GAC) 中，然后修改计算机上的 machine.config 文件，最后再使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置 WCF-Custom 或 WCF-CustomIsolated 适配器。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingExtensions\>** 内的 WCF 绑定扩展元素 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置\>** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<bindingExtensions\>** 内的 WCF 绑定扩展元素 **\<system.serverModel\>\\< 扩展\>** 元素。 例如，若要启用的自定义绑定扩展，netHttpBinding，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  
@@ -103,7 +104,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions\>**  WCF 绑定元素的元素内部扩展 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置\>** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<bindingElementExtensions\>**  WCF 绑定元素的元素内部扩展 **\<system.serverModel\>\\< 扩展\>** 元素。 例如，若要启用自定义绑定元素扩展，droppingInterceptor，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  
@@ -166,7 +167,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令提示符处，转到 %frameworkdir%\v4。X.XXXXX\CONFIG 文件夹，然后打开**machine.config**通过使用记事本的文件。  
   
-2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>**元素，将这些元素内的添加 **\<配置\>**元素的 machine.config 文件，，然后添加 **\<behaviorExtensions\>** 的 WCF 行为扩展元素内部 **\<system.serverModel\>\\< 扩展\>**元素。 例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置\>** machine.config 文件的元素：  
+2.  在记事本中，如果 machine.config 文件不具有 **\<system.serverModel\>\\< 扩展\>** 元素，将这些元素内的添加 **\<配置\>** 元素的 machine.config 文件，，然后添加 **\<behaviorExtensions\>** 的 WCF 行为扩展元素内部 **\<system.serverModel\>\\< 扩展\>** 元素。 例如，若要启用的自定义行为扩展，schemaValidator，添加以下代码**\<配置\>** machine.config 文件的元素：  
   
     ```  
     <system.serviceModel>  

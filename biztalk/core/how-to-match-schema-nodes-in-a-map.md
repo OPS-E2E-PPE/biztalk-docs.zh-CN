@@ -1,14 +1,14 @@
 ---
-title: "如何匹配映射中的架构节点 |Microsoft 文档"
-ms.custom: 
+title: 如何匹配映射中的架构节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 584f85d2-6198-4ef3-90d9-a322f1457d9a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253933"
 ---
 # <a name="how-to-match-schema-nodes-in-a-map"></a>如何在映射中匹配架构节点
 如果源或目标架构很复杂，映射元素将非常困难。 BizTalk 映射程序引入了**指示匹配**功能，使得您可以将复杂架构元素映射的建议最可能的匹配。 本主题提供有关如何执行此操作的信息。  

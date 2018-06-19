@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 定义的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 定义的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b37bd9f1-5ee2-434d-950a-cf12967b6fc2
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,15 +17,16 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974699"
 ---
 # <a name="step-2-define-the-business-process"></a>步骤 2：定义业务流程
 ![步骤 2 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **完成时间：** 8 分钟  
   
- **目标：**在此步骤中，你使用业务流程设计器来定义您的业务流程。  
+ **目标：** 在此步骤中，你使用业务流程设计器来定义您的业务流程。  
   
- **用途：**的工作流的业务流程表示和自动执行用于批准库存补货请求你公司的业务流程。  
+ **用途：** 的工作流的业务流程表示和自动执行用于批准库存补货请求你公司的业务流程。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/28/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**TransformRequestToRequestDeclineMessage**。|  
-    |**映射名称**|单击**...**. 从“转换配置”中，执行以下操作：<br /><br /> 输入配置信息：<br /><br /> -单击**现有映射**。<br /><br /> 完全限定的映射名称：<br /><br /> -选择**\<从引用的程序集选择\>**。  从左窗格中，选择**EAISchemas**。  从右侧窗格中选择“EAISchemas.MapToReqDecline”。  单击 **“确定”**。<br /><br /> 数据源<br /><br /> -RequestMessage<br /><br /> 目标<br /><br /> -RequestDeclineMessage|  
+    |**映射名称**|单击 **...**. 从“转换配置”中，执行以下操作：<br /><br /> 输入配置信息：<br /><br /> -单击**现有映射**。<br /><br /> 完全限定的映射名称：<br /><br /> -选择**\<从引用的程序集选择\>**。  从左窗格中，选择**EAISchemas**。  从右侧窗格中选择“EAISchemas.MapToReqDecline”。  单击 **“确定”**。<br /><br /> 数据源<br /><br /> -RequestMessage<br /><br /> 目标<br /><br /> -RequestDeclineMessage|  
   
 11. 在设计图面上，单击**Send_1**形状。  
   

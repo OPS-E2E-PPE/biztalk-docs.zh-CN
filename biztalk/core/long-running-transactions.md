@@ -1,11 +1,11 @@
 ---
-title: "长时间运行事务 |Microsoft 文档"
-ms.custom: 
+title: 长时间运行事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - long-running transactions, about long-running transactions
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - transactions, nesting
 - examples, scopes
 ms.assetid: 4bf4d0c8-903a-411f-963b-bd4cfdfc2958
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -40,6 +40,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262773"
 ---
 # <a name="long-running-transactions"></a>长时间运行的事务
 长期事务是 BizTalk 业务流程中常用的重要构造。 它们提供的功能可帮助您实现自定义的基于作用域的补偿、自定义的基于作用域的异常处理以及嵌套事务，因此，您可以很灵活地设计可靠的事务结构。  

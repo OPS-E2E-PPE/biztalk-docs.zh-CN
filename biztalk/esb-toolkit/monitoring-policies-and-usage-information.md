@@ -1,14 +1,14 @@
 ---
-title: "监视策略和使用情况信息 |Microsoft 文档"
-ms.custom: 
+title: 监视策略和使用情况信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0d2fd0-e65f-4c96-a5f5-81c9afc9c04e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008710"
 ---
 # <a name="monitoring-policies-and-usage-information"></a>监视策略和使用情况信息
 SOA 服务管理器提供一种机制，允许你创建和编辑监视策略。 例如，图 1 显示应用的策略模板并激活应用程序监视的屏幕。  

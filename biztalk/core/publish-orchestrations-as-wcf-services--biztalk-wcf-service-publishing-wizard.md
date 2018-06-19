@@ -1,11 +1,11 @@
 ---
-title: "如何使用发布向导的 BizTalk WCF 服务发布作为 WCF 服务的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何使用发布向导的 BizTalk WCF 服务发布作为 WCF 服务的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tools, WCF Service Publishing Wizard
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - orchestrations, WCF services
 - WCF Service Publishing Wizard
 ms.assetid: db352132-2fe8-4d53-b239-45e5c3525b6c
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973419"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-orchestrations-as-wcf-services"></a>如何使用 BizTalk WCF 服务发布向导将业务流程发布为 WCF 服务
 可使用 BizTalk WCF 服务发布向导将业务流程发布为 WCF 服务。  
@@ -44,12 +45,12 @@ ms.lasthandoff: 11/28/2017
   
      ![WCF 服务类型页](../core/media/959900fd-44c9-4f3a-8836-9786a2f5e707.gif "959900fd-44c9-4f3a-8836-9786a2f5e707")  
   
-4.  上**WCF 服务类型**页上，选择**启用元数据终结点**复选框以指示是否隔离的 WCF 接收由 Internet 信息服务 (IIS) 承载的位置发布服务元数据有关使用 HTTP/GET 请求检索。 通过启用此复选框，则向导将生成 Web.config 其中**httpGetEnabled**属性 **\<serviceMetadata\>** 元素设置为**true**. 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址为终结点地址加上**？ wsdl**查询字符串。  
+4.  上**WCF 服务类型**页上，选择**启用元数据终结点**复选框以指示是否隔离的 WCF 接收由 Internet 信息服务 (IIS) 承载的位置发布服务元数据有关使用 HTTP/GET 请求检索。 通过启用此复选框，则向导将生成 Web.config 其中**httpGetEnabled**属性 **\<serviceMetadata\>** 元素设置为**true**. 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 从该处发布元数据的地址为终结点地址加上 **？ wsdl**查询字符串。  
   
     > [!NOTE]
     >  为了避免无意中泄漏可能的敏感服务元数据，建议在生产环境中禁用此行为。 这可通过将 httpgetenabled 设置为 false 完成，或删除 MEX 虚拟目录。  
   
-5.  上**WCF 服务类型**页上，在**适配器名称 （传输类型）**下拉列表中，选择 WCF 服务发布使用独立的 WCF 适配器。 可以选择以下任意适配器：  
+5.  上**WCF 服务类型**页上，在**适配器名称 （传输类型）** 下拉列表中，选择 WCF 服务发布使用独立的 WCF 适配器。 可以选择以下任意适配器：  
   
     -   **WCF BasicHttp。** WCF-BasicHttp 适配器可与符合 WS-I Basic Profile 1.1 的 Web Services（如基于 ASMX 的服务）进行通信。  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
      ![创建 WCF 服务页](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")  
   
-8.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布，然后单击**下一步**。  
+8.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布，然后单击**下一步**。  
   
     > [!NOTE]
     >  在选择 BizTalk 程序集文件前, 先将所有依赖程序集复制到同一文件夹中，与 BizTalk 程序集或安装到全局程序集缓存 (GAC 中) 的依赖程序集。  

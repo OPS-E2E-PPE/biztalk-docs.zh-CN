@@ -1,11 +1,11 @@
 ---
-title: "消息队列的队列 |Microsoft 文档"
-ms.custom: 
+title: 消息队列的队列 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [MSMQ adapters], queue paths
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - naming conventions, queue paths [MSMQ adapters]
 - configuring [MSMQ adapters], message queues
 ms.assetid: b802348e-8543-4b06-a6e4-149b86139fb1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971459"
 ---
 # <a name="message-queuing-queues"></a>消息队列的队列
 本部分将介绍如何在使用 MSMQ 适配器时指定 Microsoft 消息队列（也称为 MSMQ）。 本部分对指定路径的约定进行了说明，并介绍了格式名称在将路径翻译成队列指定格式的过程中所起的作用。  
@@ -40,9 +41,9 @@ ms.lasthandoff: 11/28/2017
 |公用队列|*Computername*\QueueName|  
 |专用队列|*Computername*\Private$\QueueName|  
 |日志队列|*Computername*\QueueName\Journal$|  
-|计算机日记队列**注意：**用于仅接收队列。|*Computername*\Journal$|  
-|计算机死信队列**注意：**用于仅接收队列。|*Computername*\Deadletter$|  
-|计算机事务性死信队列**注意：**用于仅接收队列。|*Computername*\XactDeadletter$|  
+|计算机日记队列**注意：** 用于仅接收队列。|*Computername*\Journal$|  
+|计算机死信队列**注意：** 用于仅接收队列。|*Computername*\Deadletter$|  
+|计算机事务性死信队列**注意：** 用于仅接收队列。|*Computername*\XactDeadletter$|  
   
 > [!NOTE]
 >  该队列路径必须唯一。  

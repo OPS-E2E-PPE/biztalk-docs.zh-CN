@@ -1,14 +1,14 @@
 ---
-title: "部署和测试应用程序 |Microsoft 文档"
-ms.custom: 
+title: 部署和测试应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e2c86d5f-1849-4b7d-8061-23f156245f5b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006998"
 ---
 # <a name="deploy-and-test-the-application"></a>部署并测试应用程序
 > [!NOTE]
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
   
     4.  提供接收位置将从中选取传入 JSON 采购订单的文件夹位置。 指定`*.json`作为文件掩码，然后单击**确定**。  
   
-    5.  从**接收管道**下拉列表中，选择**JSONToXml**。 此时，你已在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序中创建此自定义接收管道。 右键单击省略号**（...）**按钮旁边向管道，然后在下**阶段 1 – Deocde 组件**，提供以下值：  
+    5.  从**接收管道**下拉列表中，选择**JSONToXml**。 此时，你已在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序中创建此自定义接收管道。 右键单击省略号 **（...）** 按钮旁边向管道，然后在下**阶段 1 – Deocde 组件**，提供以下值：  
   
         -   RootNode-`ROOT`  
   

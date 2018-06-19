@@ -1,15 +1,15 @@
 ---
-title: "SDK 示例 |Microsoft 文档"
-description: "适配器、 应用程序部署、 BAM、 业务规则、 业务流程、 管道，再 BizTalk Server 中提供的更多 SDK 示例"
-ms.custom: 
+title: SDK 示例 |Microsoft 文档
+description: 适配器、 应用程序部署、 BAM、 业务规则、 业务流程、 管道，再 BizTalk Server 中提供的更多 SDK 示例
+ms.custom: ''
 ms.date: 10/17/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53bca653-e604-4452-8805-72632d3397c2
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972827"
 ---
 # <a name="samples-in-the-sdk"></a>SDK 中的示例
 

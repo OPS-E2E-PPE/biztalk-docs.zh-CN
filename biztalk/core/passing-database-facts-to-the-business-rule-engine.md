@@ -1,14 +1,14 @@
 ---
-title: "将数据库事实传递到业务规则引擎 |Microsoft 文档"
-ms.custom: 
+title: 将数据库事实传递到业务规则引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 62285bbe-ee64-4c26-b48e-55f666dc1304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264133"
 ---
 # <a name="passing-database-facts-to-the-business-rule-engine"></a>将数据库事实传递到业务规则引擎
 当你使用业务规则编辑器工具测试策略需要将该组/TypedDataTable 对象作为一个事实时，该组/TypedDataTable 对象是自动为你创建和断言到业务规则引擎的工作内存。 此外，还将自动提交通过该策略进行的任何数据库更新。  

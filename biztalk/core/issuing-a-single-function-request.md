@@ -1,18 +1,18 @@
 ---
-title: "发出单函数请求 |Microsoft 文档"
-ms.custom: 
+title: 发出单函数请求 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - single-function requests
 - business functions, executing with single-function call
 - examples, single-function requests
 ms.assetid: 7448c1a7-be88-4ea7-a357-03cd7024729a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262029"
 ---
 # <a name="issuing-a-single-function-request"></a>发出单函数请求
 下面的 GetEffectiveAddress 示例是一个对 JD Edwards EnterpriseOne 的单函数调用，该请求的结果是一个标准的响应文档。 在单函数请求中，XML 对象中仅指定了一个 callMethod。  

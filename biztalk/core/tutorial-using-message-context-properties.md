@@ -1,15 +1,15 @@
 ---
-title: "教程： 使用 TIBCO EMS 消息上下文属性 |Microsoft 文档"
-description: "分步指南，以用于 BizTalk Server 业务流程中的 TIBCO 企业消息服务消息描述符字段"
-ms.custom: 
+title: 教程： 使用 TIBCO EMS 消息上下文属性 |Microsoft 文档
+description: 分步指南，以用于 BizTalk Server 业务流程中的 TIBCO 企业消息服务消息描述符字段
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973995"
 ---
 # <a name="tutorial-use-tibco-ems-message-descriptors"></a>教程： 使用 TIBCO EMS 消息描述符
 

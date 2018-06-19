@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262005"
 ---
 # <a name="lesson-1-define-schemas-and-a-map"></a>第 1 课：定义架构和映射
 在本课中，您将在企业应用程序集成 (EAI) 解决方案中创建并生成第一个项目。 此项目包含两个消息架构和一个映射。  

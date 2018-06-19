@@ -1,18 +1,18 @@
 ---
-title: "管理 BizTalk 主机和主机实例 |Microsoft 文档"
-ms.custom: 
+title: 管理 BizTalk 主机和主机实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [hosts]
 - hosts, managing
 - managing [hosts], about managing hosts
 ms.assetid: 7f329804-ca44-4799-8a5d-38b3146d8e5e
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262581"
 ---
 # <a name="managing-biztalk-hosts-and-host-instances"></a>管理 BizTalk 主机和主机实例
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 主机是一个由零个或多个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时进程组成的逻辑集合，您可以在其中部署诸如适配器处理程序、接收位置（包括管道）和业务流程等项。 有关主机的详细信息，请参阅[主机](../core/hosts.md)。  

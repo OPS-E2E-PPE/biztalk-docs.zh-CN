@@ -1,18 +1,18 @@
 ---
-title: "作为 Web 服务如何支持业务流程引发 SOAP 异常发布 |Microsoft 文档"
-ms.custom: 
+title: 作为 Web 服务如何支持业务流程引发 SOAP 异常发布 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, SOAP exceptions
 - orchestrations, SOAP errors
 - Web services, orchestrations
 ms.assetid: e1c7cd74-d1c8-4b9d-a418-4601b1f040d7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255573"
 ---
 # <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a>如何从作为 Web 服务发布的业务流程引发 SOAP 异常
 你可以从业务流程中已发布作为 Web 服务返回 SOAP 异常。 将错误消息添加到 SOAP 端口和发送错误消息，而不是响应。  

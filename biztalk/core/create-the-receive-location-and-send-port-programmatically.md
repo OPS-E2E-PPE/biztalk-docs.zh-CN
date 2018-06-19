@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 47850e66-ce33-4c6a-8190-168071792c0b
-caps.latest.revision: ''
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25976003"
 ---
 # <a name="create-the-receive-location-and-send-port-programmatically"></a>创建接收位置和以编程方式发送端口
 配置 WCF BasicHttp 接收位置和以编程方式发送端口。 若要使用 BizTalk 管理控制台，请参阅[WCF BasicHttp 适配器](../core/wcf-basichttp-adapter.md)。 

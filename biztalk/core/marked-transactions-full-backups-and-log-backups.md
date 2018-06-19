@@ -1,11 +1,11 @@
 ---
-title: "标记的事务，完整备份，备份和日志备份 |Microsoft 文档"
-ms.custom: 
+title: 标记的事务，完整备份，备份和日志备份 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, transaction logs
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - transaction logs
 - backing up, backup jobs
 ms.assetid: a383a16d-1e40-4b0b-a515-f1cb90bfb4d2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973587"
 ---
 # <a name="marked-transactions-full-backups-and-log-backups"></a>标记的事务、完整备份和日志备份
 备份 BizTalk Server 作业创建的所有类型的名为的事务与结合使用完整数据库备份和事务日志备份，BizTalk Server 数据库的同步的备份*标记的事务*。 标记的事务是在事务中放到事务日志中的所有数据库参与的标记的事务。 标记的事务会阻止新的分布式的事务，无法启动，等待当前正在运行要完成，则分布式事务，则会执行放置标记。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="transaction-log-backups"></a>事务日志备份  
  备份 BizTalk Server 作业将执行的第二个过程*MarkAndBackupLog*。 此过程中所有 BizTalk Server 数据库和每次作业执行时执行事务日志备份都放置标记。  
   
- 标记是通过使用创建的字符串 *\<ServerName\>*_*\<DatabaseName\>*（_l)\_  *\<LogMarkName\>*\_*\<时间戳\>*.bak，其中*\<记录标记名称\>*配置中的 SQL Server 代理作业。 还原到每个数据库的最新的日志时，必须使用此标记。  
+ 标记是通过使用创建的字符串 *\<ServerName\>*_*\<DatabaseName\>*（_l)\_  *\<LogMarkName\>*\_*\<时间戳\>*.bak，其中*\<记录标记名称\>* 配置中的 SQL Server 代理作业。 还原到每个数据库的最新的日志时，必须使用此标记。  
   
  有关详细信息，请参阅 SQL Server 联机丛书中的“事务日志备份”和“相关数据库的备份和恢复”。  
   

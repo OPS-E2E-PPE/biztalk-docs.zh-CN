@@ -1,14 +1,14 @@
 ---
-title: "计划 SQL Server Integration Services 包 |Microsoft 文档"
-ms.custom: 
+title: 计划 SQL Server Integration Services 包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 037ae2cf-c352-4823-95df-9a723f2b5a81
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975947"
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a>计划 SQL Server Integration Services 包
 用户可以创建基于存储在联机分析处理 (OLAP) 多维数据集中的数据的 BAM 视图。 多维数据集更新集成服务包将刷新多维数据集中的数据，以便 OLAP 视图可以反映正确的数据。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  在控制台树中，展开**Integration Services**，展开**存储的包**，然后单击**MSDB**。  
   
-8.  右键单击**BAM_AN_\<视图名称\>**包，并依次**运行包**。  
+8.  右键单击**BAM_AN_\<视图名称\>** 包，并依次**运行包**。  
   
 ### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a>运行维护 BAM 数据集成服务包  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  在控制台树中，展开**Integration Services**，展开**存储的包**，然后单击**MSDB**。  
   
-8.  右键单击**BAM_DM_\<活动名称\>**包，并依次**运行包**。  
+8.  右键单击**BAM_DM_\<活动名称\>** 包，并依次**运行包**。  
   
 ### <a name="to-schedule-the-packages-to-run-regularly"></a>安排包进行定期运行  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
   
 14. 在**服务器**下拉列表中，选择在其运行作业的服务器。  
   
-15. 单击的文件选择器按钮**包**文本框中，选择要计划的包 (任一**BAM_DM_\<活动名称\>**或**BAM_AN_\<视图名称\>**包)，然后单击**确定**。  
+15. 单击的文件选择器按钮**包**文本框中，选择要计划的包 (任一**BAM_DM_\<活动名称\>** 或**BAM_AN_\<视图名称\>** 包)，然后单击**确定**。  
   
 16. 在**选择页**窗口中，单击**计划**，然后单击**新建**。 这将打开**新建作业计划**对话框。  
   

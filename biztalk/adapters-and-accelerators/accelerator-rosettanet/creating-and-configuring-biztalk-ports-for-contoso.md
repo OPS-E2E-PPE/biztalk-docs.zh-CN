@@ -1,11 +1,11 @@
 ---
-title: "创建和为 Contoso 配置 BizTalk 端口 |Microsoft 文档"
-ms.custom: 
+title: 创建和为 Contoso 配置 BizTalk 端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ports, creating
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - private process tutorial, configuring ports
 - ports, configuring
 ms.assetid: 179af692-e14c-40da-9c43-1a7d0b6beb1f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004454"
 ---
 # <a name="creating-and-configuring-biztalk-ports-for-contoso"></a>创建和为 Contoso 配置 BizTalk 端口
 在此部分中，你将集成到当前解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server。 执行此操作之前，请将自己的程序集安装到全局程序集缓存 (GAC) 中，然后在配置数据库中配置它。 然后使用 SQL 适配器和 HTTP 适配器创建和配置发送端口。  

@@ -1,14 +1,14 @@
 ---
-title: "如何登录到非 Windows 应用程序的本地用户 |Microsoft 文档"
-ms.custom: 
+title: 如何登录到非 Windows 应用程序的本地用户 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b55957f4-22c4-48b5-827a-ab41d8f846ac
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253869"
 ---
 # <a name="how-to-log-a-local-user-on-to-a-non-windows-application"></a>如何登录到非 Windows 应用程序的本地用户
 使用关联应用程序设置了用户后，就可以使用单一登录 (SSO) 来访问当前用户的外部用户名和凭据。 然后，可以使用这些凭据将您的用户登录到运行在主机服务器上的关联应用程序。  

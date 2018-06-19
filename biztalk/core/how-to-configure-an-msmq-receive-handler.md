@@ -1,18 +1,18 @@
 ---
-title: "如何配置 MSMQ 接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 MSMQ 接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive handlers, MSMQ adapters
 - configuring [MSMQ adapters], receive handlers
 - MSMQ adapters, receive handlers
 ms.assetid: d6d82098-3a73-44e2-80d5-143f77e919cc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247869"
 ---
 # <a name="how-to-configure-an-msmq-receive-handler"></a>如何配置 MSMQ 接收处理程序
 使用以下步骤可更改与 MSMQ 接收处理程序关联的主机。  

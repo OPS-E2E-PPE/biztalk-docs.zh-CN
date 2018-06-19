@@ -1,14 +1,14 @@
 ---
-title: "BTSNTSvc.exe.config 文件 |Microsoft 文档"
-ms.custom: 
+title: BTSNTSvc.exe.config 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2bb89a7-4fff-4ccf-a0a7-20ca610f2ddf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004814"
 ---
 # <a name="btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config 文件
 冻结属性及其默认值在[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]中配置，或作为 XML 在 BizTalk 配置文件（BTSNTSvc.exe.config 或 BTSNTSvc64.exe.config）中配置。 将首先应用 BizTalk 配置文件中的值， 然后应用[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]设置。 所有包含业务流程的主机实例启动后，将读取冻结属性。  

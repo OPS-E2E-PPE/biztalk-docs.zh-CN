@@ -1,11 +1,11 @@
 ---
-title: "规划高 Availability3 |Microsoft 文档"
-ms.custom: 
+title: 规划高 Availability3 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, high availability
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - planning, high availability
 - high availability, architecture
 ms.assetid: 16feada0-b0b1-4e58-9477-fbd1aae2f51e
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264341"
 ---
 # <a name="planning-for-high-availability"></a>规划高可用性
 许多公司都使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 来处理其业务所依赖的数据。 对于这些公司，由硬件停用所导致的延长故障时间将意味着工作效率和盈利率的降低。 本节提供有关提高 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境的可用性以最大程度地延长 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 解决方案运行时间的指南。  

@@ -1,14 +1,14 @@
 ---
-title: "演练： 创建和使用该策略中的词汇 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建和使用该策略中的词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2c306a6e-3384-4f43-9c75-c5407cd9aed2
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975915"
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a>演练： 创建和使用该策略中的词汇
 本演练提供了分步过程来创建词汇和使用中的词汇**ProcessPurchaseOrder**策略。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  如果在步骤 3 中，不未将词汇表的名称更改为 POVocabulary，更改到词汇名称**POVocabulary**属性窗口中。  
   
-5.  右键单击**（不保存） 1.0 版**中**POVocabulary**，然后单击**添加新定义**。  
+5.  右键单击 **（不保存） 1.0 版**中**POVocabulary**，然后单击**添加新定义**。  
   
 6.  在词汇定义向导中，选择**XML 文档元素或属性**，然后单击**下一步**。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/28/2017
   
 12. 单击 **“完成”**。  
   
-13. 右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。  
+13. 右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。  
   
 14. 选择**XML 文档元素或属性**，然后单击**下一步**。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 20. 单击 **“完成”**。  
   
-21. 右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。  
+21. 右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。  
   
 22. 请确保**常量值、 值的范围或设置的值**已选择，然后单击**下一步**。  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 11/28/2017
   
 25. 类型**500**作为值，然后单击**完成**。  
   
-26. 右键单击**（不保存） 1.0 版**，然后单击**保存**。  
+26. 右键单击 **（不保存） 1.0 版**，然后单击**保存**。  
   
-27. 右键单击**（不保存） 1.0 版**，然后单击**发布**。  
+27. 右键单击 **（不保存） 1.0 版**，然后单击**发布**。  
   
 ### <a name="to-use-the-povocabulary-in-the-processpurchaseorder-policy"></a>在 ProcessPurchaseOrder 策略中使用 POVocabulary  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  右键单击**ProcessPurchaseOrder** ，然后单击**粘贴的策略版本**。  
   
-3.  单击**ApprovalRule**中**（不保存） 1.1 版**。  
+3.  单击**ApprovalRule**中 **（不保存） 1.1 版**。  
   
 4.  在事实浏览器窗口中，展开**词汇**，展开**POVocabulary**，展开**版本 1.0**，然后拖动**请求数量**到如果窗格替换 LessThanOrEqual 谓词的左侧显示端 (LHS) 自变量。  
   
@@ -119,11 +120,11 @@ ms.lasthandoff: 11/28/2017
   
 7.  拖动**请求状态**到**然后**窗格。  
   
-8.  单击**\<空字符串\>**然后键入**已批准**。  
+8.  单击**\<空字符串\>** 然后键入**已批准**。  
   
-9. 右键单击**（不保存） 1.1 版**在策略浏览器窗口中，然后单击**保存**。  
+9. 右键单击 **（不保存） 1.1 版**在策略浏览器窗口中，然后单击**保存**。  
   
-10. 右键单击**（不保存） 1.1 版**在策略浏览器窗口中，然后单击**发布**。  
+10. 右键单击 **（不保存） 1.1 版**在策略浏览器窗口中，然后单击**发布**。  
   
 ### <a name="to-test-the-solution"></a>若要测试解决方案  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 11/28/2017
   
 -   在本演练中，你只使用了 XML 文档作为该策略的事实。 在创建策略时，你还可以使用 .NET 事实和数据库事实。  
   
--   当选择**执行"设置"操作**词汇定义向导的第二页，可以指定**显示格式字符串**遵循的页面上。 例如，您无法更改中的显示格式字符串**请求状态 {0}**到**请求状态是： {0}**之前单击**完成**中的步骤 20"创建词汇"过程。  
+-   当选择**执行"设置"操作**词汇定义向导的第二页，可以指定**显示格式字符串**遵循的页面上。 例如，您无法更改中的显示格式字符串**请求状态 {0}** 到**请求状态是： {0}** 之前单击**完成**中的步骤 20"创建词汇"过程。  
   
 ## <a name="next-steps"></a>后续步骤  
  现在，你已完成本演练中，执行[演练： 将规则添加到策略](../core/walkthrough-adding-a-rule-to-the-policy.md)演练中，这为你提供将添加到新的规则的分步说明**ProcessPurchaseOrder**策略。  

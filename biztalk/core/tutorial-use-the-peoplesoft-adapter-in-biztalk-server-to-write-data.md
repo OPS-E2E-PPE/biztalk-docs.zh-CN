@@ -1,14 +1,14 @@
 ---
-title: "教程： 使用 PeopleSoft 企业的 BizTalk 适配器将数据写入 PeopleSoft 企业 |Microsoft 文档"
-ms.custom: 
+title: 教程： 使用 PeopleSoft 企业的 BizTalk 适配器将数据写入 PeopleSoft 企业 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 837dd4db-576d-41c1-9fe8-e1e46861270b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976075"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>教程：使用 BizTalk 适配器，以便让 PeopleSoft Enterprise 将数据写入 PeopleSoft Enterprise
 PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系统中，与从贸易合作伙伴或内部应用程序接收到的信息。 本演练介绍了可演示此功能的 SDK 示例。  
@@ -45,7 +46,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
 |**运行时项目文件名**|**运行时项目文件说明**|  
 |----------------------------------|------------------------------------------|  
 |OneWaySend.btproj,<br /><br /> OneWaySend.sln|应用程序的项目和解决方案文件。|  
-|LOCATIONService.xsd，<br /><br /> LOCATIONService_1.xsd，<br /><br /> LOCATIONService_2.xsd|应用程序的架构文件。 **注意：**项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。|  
+|LOCATIONService.xsd，<br /><br /> LOCATIONService_1.xsd，<br /><br /> LOCATIONService_2.xsd|应用程序的架构文件。 **注意：** 项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。|  
 |PeopleSoftOneWaySend.odx|应用程序使用的业务流程。|  
 |PeopleSoftOneWaySend.snk|强命名密钥文件。|  
   
@@ -61,7 +62,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
 4.  输入一个值**名称**字段，例如**PeopleSoft**。  
   
-5.  选择**PeopleSoft Enterprise(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
+5.  选择**PeopleSoft Enterprise(r)** 从列表中可用的适配器**适配器**下拉列表中单击**确定**。  
   
 #### <a name="create-a-biztalk-send-port"></a>创建 BizTalk 发送端口  
   
@@ -80,7 +81,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
     |**属性**|**值**|  
     |------------------|---------------|  
-    |应用程序服务器路径|PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。 **注意：**如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。|  
+    |应用程序服务器路径|PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。 **注意：** 如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。|  
     |JAVA_HOME|与 Java 2 平台 SDK 文件相关联的主目录路径，例如 C:\j2sdk1.4.2_08|  
     |密码|连接到 PeopleSoft 系统时使用的密码。|  
     |PeopleSoft 8.x JAR 文件|文件的位置 PeopleSoft Java 对象适配器 JAR， **psjoa.jar**，例如 C:\JARS\psjoa.jar。|  
@@ -143,7 +144,7 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
 1.  双击**LOCATIONService_1.xsd**在解决方案资源管理器，以在架构编辑器中打开该文件。  
   
-2.  右键单击**\<架构\>**节点在架构编辑器中，单击**属性**以显示节点的属性。  
+2.  右键单击**\<架构\>** 节点在架构编辑器中，单击**属性**以显示节点的属性。  
   
 3.  选择**CreateEx**从列表中的可用节点**根引用**下拉框。 这应这样做为了在你生成的示例文档实例时它将从生成**CreateEx**节点的架构。  
   
@@ -160,9 +161,9 @@ PeopleSoft 企业 BizTalk 适配器可以用于将数据写入到 PeopleSoft 系
   
 8.  右击 LOCATIONService_1.xsd 在解决方案资源管理器中的，单击**生成实例**在指定的位置生成文档实例。  
   
-9. 右键单击**\<架构\>**节点在架构编辑器中，单击**属性**以显示节点的属性。  
+9. 右键单击**\<架构\>** 节点在架构编辑器中，单击**属性**以显示节点的属性。  
   
-10. 选择 (**默认)**从列表中的可用节点**根引用**下拉框。  
+10. 选择 (**默认)** 从列表中的可用节点**根引用**下拉框。  
   
 #### <a name="modify-the-generated-document-instance"></a>修改生成的文档实例  
   

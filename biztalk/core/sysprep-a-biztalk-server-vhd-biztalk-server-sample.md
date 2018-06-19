@@ -1,14 +1,14 @@
 ---
-title: "Sysprep BizTalk Server VHD （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: Sysprep BizTalk Server VHD （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35f0146d-60ed-4265-983a-0e3665ef2ae4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007766"
 ---
 # <a name="sysprep-a-biztalk-server-vhd-biztalk-server-sample"></a>Sysprep BizTalk Server VHD (BizTalk Server 示例）
 Sysprep 为安装了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的虚拟机创建快照，以便在其他虚拟机上进行快速部署。  

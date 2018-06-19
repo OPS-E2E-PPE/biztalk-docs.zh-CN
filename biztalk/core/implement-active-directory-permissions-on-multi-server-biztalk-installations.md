@@ -1,14 +1,14 @@
 ---
-title: "准则用于实现在多服务器 BizTalk 安装上的 Active Directory 权限 |Microsoft 文档"
-ms.custom: 
+title: 准则用于实现在多服务器 BizTalk 安装上的 Active Directory 权限 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 315e25c4-b21d-4b5f-a1d2-1e2777b57f9e
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975971"
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>准则用于实现在多服务器 BizTalk 安装上的 Active Directory 权限
 本主题介绍用于创建 Active Directory 组织单位的准则，Active Directory 组织单位由在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装中使用的用户帐户和组构成。  
@@ -231,7 +232,7 @@ ms.lasthandoff: 11/28/2017
 |**组名称**|**组类型**|**成员**|  
 |--------------------|--------------------|-----------------|  
 |BizTalk Application Users|全局或通用|-BTServiceHost<br />-BTUserHostInstance|  
-|BizTalk 开发用户|全局或通用|（本地域帐户的开发用户）**注意：**作为最佳做法是，不要启用向上行环境中的 BizTalk 开发用户组。|  
+|BizTalk 开发用户|全局或通用|（本地域帐户的开发用户）**注意：** 作为最佳做法是，不要启用向上行环境中的 BizTalk 开发用户组。|  
 |BizTalk 部署用户|全局或通用|（部署用户的本地域帐户）|  
 |BizTalk 主机用户|全局或通用|BTUserHostInstance|  
 |BizTalk Isolated Host Users|全局或通用|-BTServiceHostIso<br />-BTUserHostInstance|  
@@ -247,7 +248,7 @@ ms.lasthandoff: 11/28/2017
   
 -   域组可以为全局组或通用组。  
   
--   使用 *\<DomainName\>\\< 用户名\>*在配置向导中指定的域帐户信息时。  
+-   使用 *\<DomainName\>\\< 用户名\>* 在配置向导中指定的域帐户信息时。  
   
 -   组和用户/服务帐户必须属于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机所属于的域（配置向导将对此进行检查并且将不会显示包含来自其他域的帐户的帐户或组）。  
   

@@ -1,14 +1,14 @@
 ---
-title: "如何使用磁盘，IP 地址，创建群集组，并命名 Resource1 |Microsoft 文档"
-ms.custom: 
+title: 如何使用磁盘，IP 地址，创建群集组，并命名 Resource1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b361f721-60db-485e-9ce3-48a6871ebd79
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249301"
 ---
 # <a name="how-to-create-a-cluster-group-with-a-disk-ip-address-and-name-resource"></a>如何创建具有磁盘、IP 地址和名称资源的群集组
 为群集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组件和依赖项以通过 NetBIOS，群集通过网络来访问它**网络名称**必须在相同的群集组中创建资源。 对于群集的网络名称资源，可通过 TCP/IP 协议， **IP 地址**必须在相同的群集组中创建资源。 某些[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]依赖关系还需要使用聚集**物理磁盘**资源才能正常工作。 若要创建的群集组**物理磁盘**， **IP 地址**和**网络名称**资源，请按照下列步骤：  

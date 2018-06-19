@@ -1,11 +1,11 @@
 ---
-title: "管道阶段 |Microsoft 文档"
-ms.custom: 
+title: 管道阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, properties
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - CATID_PartyResolver component category
 - Execution Mode property
 ms.assetid: ac50c48c-6ed5-4322-95cc-af55df6bcd1c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265501"
 ---
 # <a name="pipeline-stages"></a>管道阶段
 本主题讨论**执行模式**属性和阶段相关性。  

@@ -1,17 +1,17 @@
 ---
-title: "如何更新关联应用程序的属性 |Microsoft 文档"
-ms.custom: 
+title: 如何更新关联应用程序的属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [SSO applications], updating properties
 - applications [SSO], properties
 ms.assetid: b06eefdd-a5ca-4a32-93d7-72246e31a2e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972643"
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a>如何更新关联应用程序的属性
 您可以使用 MMC 管理单元或此命令根据 XML 文件指定的内容更新一个或多个应用程序属性。 只有关联管理员才能执行此任务。 下面是一个示例 XML 文件，其中列出了可更新的字段：  

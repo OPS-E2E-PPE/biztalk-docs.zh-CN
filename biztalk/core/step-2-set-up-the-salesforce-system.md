@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 设置 Salesforce 系统 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 设置 Salesforce 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a4b09fb-70a7-4eec-b1e3-f05de0e84df1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279925"
 ---
 # <a name="step-2-set-up-the-salesforce-system"></a>步骤 2： 设置 Salesforce 系统
 在此步骤中，你要将 Salesforce 配置为在机会成功关闭时发送通知。 你需要先执行以下步骤，然后才能发送通知：  
@@ -113,7 +114,7 @@ ms.lasthandoff: 09/20/2017
   
     4.  指定**终结点 URL**作为`https://btssalesforce.servicebus.windows.net/notifications/opportunity`。  
   
-         在这里， **btssalesforce**是你[!INCLUDE[sb](../includes/sb-md.md)]在之前的步骤中创建的命名空间。 **/notifications/机会/**表示我们将在本教程的后续步骤中创建的中继。  
+         在这里， **btssalesforce**是你[!INCLUDE[sb](../includes/sb-md.md)]在之前的步骤中创建的命名空间。 **/notifications/机会/** 表示我们将在本教程的后续步骤中创建的中继。  
   
         > [!NOTE]
         >  你必须指定你在前面创建的 [!INCLUDE[sb](../includes/sb-md.md)] 命名空间。  

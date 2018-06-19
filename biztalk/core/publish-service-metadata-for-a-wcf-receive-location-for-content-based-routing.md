@@ -1,17 +1,17 @@
 ---
-title: "如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置用于基于内容的路由发布服务元数据 |Microsoft 文档"
-ms.custom: 
+title: 如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置用于基于内容的路由发布服务元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
 - WCF services, metadata
 ms.assetid: e900b0a0-db17-4db9-a639-54891e02d6d7
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975603"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a>如何使用 BizTalk WCF 服务发布向导为基于内容的路由的 WCF 接收位置发布服务元数据
 你可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为基于内容的路由的现有 WCF 接收位置发布服务元数据。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  上**BizTalk WCF 服务发布向导欢迎**页上，单击**下一步**。  
   
-3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)**选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。  
+3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)** 选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。  
   
      ![WCF 服务类型页](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")  
   

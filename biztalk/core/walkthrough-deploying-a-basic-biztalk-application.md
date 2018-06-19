@@ -1,11 +1,11 @@
 ---
-title: "演练： 部署基本 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 演练： 部署基本 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, tutorials
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tutorials, applications
 - applications, tutorials
 ms.assetid: 21b67153-0f8c-406a-a224-fc792b16192f
-caps.latest.revision: "69"
+caps.latest.revision: 69
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010990"
 ---
 # <a name="walkthrough-deploying-a-basic-biztalk-application"></a>演练： 部署基本 BizTalk 应用程序
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含用于简化 BizTalk 企业解决方案的管理和部署的功能。 它现在为企业解决方案中的各项（例如业务流程、架构、映射、管道和 .NET 程序集等）提供一个 BizTalk 应用程序容器。 你可以管理、 修改、 部署和安装的所有项作为一个整体应用程序中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]此外包括向导来帮助实现自动化应用程序部署任务。 有关背景信息，请参阅[应用程序部署和管理功能](../core/application-deployment-and-management-features.md)和[应用程序部署和管理工具](../core/application-deployment-and-management-tools.md)。  
@@ -134,10 +135,10 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
     |--------------|-----------|-----------------|  
     |应用程序名称|\<名称\>|用于将此项目中的程序集部署到的 BizTalk 应用程序的名称。 如果该应用程序已存在，则在你部署该项目时这些程序集将添加到该应用程序中。 如果该应用程序不存在，则将创建该应用程序。 如果此字段为空，则这些程序集将部署到当前组中的默认 BizTalk 应用程序（默认情况下为“BizTalk Application 1”）中。 包含空格的名称必须括在双引号 (") 中。|  
     |配置数据库|\<BizTalk 管理数据库名称\>|用于组的 BizTalk 管理数据库的名称，默认情况下为 BizTalkMgmtDb。|  
-    |Server|\<服务器名称\>|作为本地计算机上 BizTalk 管理数据库宿主的 SQL Server 实例的名称。 在单台计算机安装中，该名称通常是本地计算机的名称。 **注意：**此 BizTalk 项目移动到另一台计算机时，如果你将需要修改服务器属性，以反映新的计算机名称，然后你将能够部署程序集。|  
+    |Server|\<服务器名称\>|作为本地计算机上 BizTalk 管理数据库宿主的 SQL Server 实例的名称。 在单台计算机安装中，该名称通常是本地计算机的名称。 **注意：** 此 BizTalk 项目移动到另一台计算机时，如果你将需要修改服务器属性，以反映新的计算机名称，然后你将能够部署程序集。|  
     |重新部署|True 或 False|如果将此项设置为 True（默认设置），你将能够在不更改版本号的情况下重新部署 BizTalk 程序集。|  
     |安装到全局程序集缓存|True 或 False|如果将此项设置为 True（默认设置），则可以在部署程序集时将程序集安装到本地计算机上的全局程序集缓存 (GAC) 中。|  
-    |重新启动主机实例|True 或 False|如果将此项设置为 True，则可以在重新部署程序集时自动重新启动在本地计算机上运行的所有主机实例。 如果将此项设置为 False（默认设置），则必须在你重新部署某一程序集时手动重新启动这些主机实例。 **注意：**如果要重新部署解决方案级别中的程序集，主机实例将重新启动一次每个项目具有此选项设置为 True。 这样可能导致多次重新启动。 如果计划在解决方案级重新部署，你可能希望针对解决方案中的一个项目将此属性设置 True，以避免多次主机实例重新启动。 此设置应针对将在解决方案中重新部署的最后一个项目进行。 此外，如果在你执行重新部署时，主机实例停止，它将不会被启动。|  
+    |重新启动主机实例|True 或 False|如果将此项设置为 True，则可以在重新部署程序集时自动重新启动在本地计算机上运行的所有主机实例。 如果将此项设置为 False（默认设置），则必须在你重新部署某一程序集时手动重新启动这些主机实例。 **注意：** 如果要重新部署解决方案级别中的程序集，主机实例将重新启动一次每个项目具有此选项设置为 True。 这样可能导致多次重新启动。 如果计划在解决方案级重新部署，你可能希望针对解决方案中的一个项目将此属性设置 True，以避免多次主机实例重新启动。 此设置应针对将在解决方案中重新部署的最后一个项目进行。 此外，如果在你执行重新部署时，主机实例停止，它将不会被启动。|  
     |启用单元测试|True 或 False|指定是否启用项目的单元测试。|  
   
 4.  对于解决方案中的每个项目，重复执行步骤 1、2 和 3。  
@@ -324,7 +325,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      ![将引用添加到应用程序](../core/media/appreferences.gif "AppReferences")  
   
-6.  上**应用程序目标环境设置**页上，确认**\<默认\>**已选择，单击**下一步**。  
+6.  上**应用程序目标环境设置**页上，确认**\<默认\>** 已选择，单击**下一步**。  
   
 7.  上**导入摘要**页上，确认的摘要信息是否正确，，然后单击**导入**。  
   

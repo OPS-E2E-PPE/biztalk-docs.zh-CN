@@ -1,14 +1,14 @@
 ---
-title: "将系统连接 |Microsoft 文档"
-ms.custom: 
+title: 将系统连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c4895e5-7272-415f-a0de-905256fa0a43
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008646"
 ---
 # <a name="connecting-systems"></a>连接系统
 若要进行集成，必须在不同计算机上的不同软件之间进行有效的消息交换。 给定存在的通信样式的多样性，BizTalk 服务器必须支持各种协议和消息格式。 如后文所述，该引擎的一个重要部分专用于实现此通信。 但请注意，该引擎内部只使用 XML 文档。 不管消息以何种格式到达，在收到消息后都必须将其转换为 XML 文档。 同样，如果文档的收件人无法以 XML 格式接收文档，则引擎会将其转换为目标所需的格式。  

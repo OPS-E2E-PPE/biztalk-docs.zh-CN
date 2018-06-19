@@ -1,11 +1,11 @@
 ---
-title: "作为 WCF 服务如何支持业务流程引发错误异常发布 |Microsoft 文档"
-ms.custom: 
+title: 作为 WCF 服务如何支持业务流程引发错误异常发布 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, WCF services
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, errors
 - orchestrations, WCF services
 ms.assetid: 89f57841-d40e-4a5a-90a8-5556a2766c03
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255733"
 ---
 # <a name="how-to-throw-fault-exceptions-from-orchestrations-published-as-wcf-services"></a>如何从发布为 WCF Services 的业务流程中引发错误异常
 可以从业务流程发送两种类型的 SOAP 错误的： 类型化和非类型化的 SOAP 错误。 类型化的 SOAP 错误是指某个操作具有**System.ServiceModel.FaultContractAttribute** ，它指定自定义的 SOAP 错误类型。 非类型化 SOAP 错误则是那些没有在操作的约定中指定的错误。  

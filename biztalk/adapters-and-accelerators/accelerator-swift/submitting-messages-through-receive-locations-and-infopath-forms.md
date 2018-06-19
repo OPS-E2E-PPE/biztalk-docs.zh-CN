@@ -1,11 +1,11 @@
 ---
-title: "提交通过消息接收位置和 InfoPath 窗体 |Microsoft 文档"
-ms.custom: 
+title: 提交通过消息接收位置和 InfoPath 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, receive locations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, InfoPath forms
 - InfoPath forms, messages
 ms.assetid: e8676830-3fbc-423f-82f6-03e6a532075f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005118"
 ---
 # <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>通过提交消息接收位置和 InfoPath 窗体
 接收位置接收消息提交至[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]应用程序。 你可以定义接收位置作为物理终结点配置为接收使用指定的传输协议的消息。 例如，接收位置可能配置为拖放到特定的文件系统文件夹使用文件传输的接收文件。  

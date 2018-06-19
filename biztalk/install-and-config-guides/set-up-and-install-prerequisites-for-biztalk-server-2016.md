@@ -18,6 +18,7 @@ ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31816961"
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>设置和安装 BizTalk Server 2016 的必备组件
 设置服务器，然后安装和配置软件必备组件。

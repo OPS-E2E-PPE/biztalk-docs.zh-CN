@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269717"
 ---
 # <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>方案 1： 调整跟踪数据库的简单 BizTalk 消息
 在下图中，一个简单的 BizTalk Server 消息传递而无需进行任何消息转换入和移出 BizTalk Server。  

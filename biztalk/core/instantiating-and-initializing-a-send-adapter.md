@@ -1,14 +1,14 @@
 ---
-title: "实例化和初始化发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 实例化和初始化发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f10e6507-3351-4173-95f5-48546ca5f5c4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257661"
 ---
 # <a name="instantiating-and-initializing-a-send-adapter"></a>实例化和初始化发送适配器
 默认情况下，在第一个消息传送到发送适配器之前，不会实例化发送适配器，这一过程称为“懒创建”。 默认的“懒创建”方法有助于节省系统资源。 创建发送适配器之后，在停止 BizTalk Server 服务之前该发送适配器将一直被缓存并且处于活动状态。  

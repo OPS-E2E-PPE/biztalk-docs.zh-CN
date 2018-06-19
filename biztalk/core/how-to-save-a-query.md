@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255373"
 ---
 # <a name="how-to-save-a-query"></a>如何将查询保存
 您可保存查询以备将来重用。 默认情况下，保存的查询存储在**我的文档**创建并保存它们的用户的文件夹。  

@@ -12,7 +12,7 @@ helpviewer_keywords:
 - host throttling, inbound
 - host throttling, about host throttling
 ms.assetid: 36d1818b-c8a2-4f23-bfb3-c034ee242f69
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22291181"
 ---
 # <a name="what-is-host-throttling"></a>主机阻止概述
 在 BizTalk Server 上执行的大部分处理都在称为 BizTalk Server 主机实例的逻辑实体内进行，该逻辑实体是在 BizTalk Server 上以 Windows 服务或独立的主机进程运行的进程。 为了管理主机实例进程使用的资源，BizTalk Server 使用可调整的阻止机制控制消息在主机实例中的传输和处理。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246557"
 ---
 # <a name="host-service-node"></a>主机 （服务节点）
 绑定文件的服务节点的主机节点描述与使用绑定文件导出的服务关联的主机。  

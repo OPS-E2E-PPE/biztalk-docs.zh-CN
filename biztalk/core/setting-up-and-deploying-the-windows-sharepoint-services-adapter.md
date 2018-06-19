@@ -1,17 +1,17 @@
 ---
-title: "设置和部署 Windows SharePoint Services 适配器 |Microsoft 文档"
-ms.custom: 
+title: 设置和部署 Windows SharePoint Services 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows SharePoint Services adapters, deploying
 - deploying, Windows SharePoint Services adapters
 ms.assetid: 94388780-c335-46e7-b84a-d94c2097f181
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271117"
 ---
 # <a name="setting-up-and-deploying-the-windows-sharepoint-services-adapter"></a>安装和部署 Windows SharePoint Services 适配器
 本部分中的主题将介绍如何在单服务器部署和多服务器部署过程中安装和部署 Windows SharePoint Services (WSS) 适配器。  

@@ -1,14 +1,14 @@
 ---
-title: "在插入检测点解决方案： 分步 API 使用情况 |Microsoft 文档"
-ms.custom: 
+title: 在插入检测点解决方案： 分步 API 使用情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9e027ab-1927-4905-8970-8061ac55d591
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258229"
 ---
 # <a name="instrumenting-a-solution-step-by-step-api-usage"></a>在插入检测点解决方案： 分步 API 使用情况
 本主题说明如何用关键的 BAM API 类检测应用程序。 在以下代码段中，我们使用常量和检测应用程序所必需的最少代码对示例代码进行了简化。  

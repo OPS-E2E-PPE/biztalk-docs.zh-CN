@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255533"
 ---
 # <a name="how-to-search-for-map-items"></a>如何搜索映射项
 使用 BizTalk 映射器，可以搜索源架构、目标架构和网格图面中的项目。 本主题提供有关如何执行此操作的信息。  

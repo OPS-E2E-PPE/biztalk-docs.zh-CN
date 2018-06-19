@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 94ded6b3-13ca-47e6-a038-254514f500e7
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976715"
 ---
 # <a name="appendix-a-silent-installation"></a>附录 A：无提示安装
 本主题列出了创建 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无提示安装的步骤。  
@@ -30,9 +31,9 @@ ms.lasthandoff: 03/28/2018
 |命令名称|选项|Description|  
 |------------------|------------|-----------------|  
 |/HELP、/? 或 /H||提供帮助和快速参考。|  
-|/QUIET||在安装期间隐藏 UI — 所有对话框、错误或要求用户进行输入的提示。 所有消息都记录到安装程序日志文件中。 **注意：**对于升级安装，不能指定“安静”标志，因为升级需要用户对所选的选项进行确认。|  
+|/QUIET||在安装期间隐藏 UI — 所有对话框、错误或要求用户进行输入的提示。 所有消息都记录到安装程序日志文件中。 **注意：** 对于升级安装，不能指定“安静”标志，因为升级需要用户对所选的选项进行确认。|  
 |/CABPATH|\<*CAB 文件位置*\>|指示可再发行的 CAB 文件的位置。|  
-|/S|\<*配置 XML 文件*\>|无提示安装在指定配置文件中找到的功能。 **注意：**若要安装所有功能，请将配置 XML 文件的 `InstalledFeature` 参数指定为 ALL。|  
+|/S|\<*配置 XML 文件*\>|无提示安装在指定配置文件中找到的功能。 **注意：** 若要安装所有功能，请将配置 XML 文件的 `InstalledFeature` 参数指定为 ALL。|  
 |/PASSIVE||执行被动安装。 安装程序只显示进度栏。|  
 |/NORESTART||不显示重新启动提示，在安装结束时自动重新启动。|  
 |/FORCERESTART||安装完成后，始终强制重新启动。|  

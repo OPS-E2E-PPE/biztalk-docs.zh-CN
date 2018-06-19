@@ -1,14 +1,14 @@
 ---
-title: "使用 Microsoft BizTalk LoadGen 2007 工具 |Microsoft 文档"
-ms.custom: 
+title: 使用 Microsoft BizTalk LoadGen 2007 工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1973a26-1c98-4261-bd9a-6357cdb19ccf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007198"
 ---
 # <a name="using-the-microsoft-biztalk-loadgen-2007-tool"></a>使用 Microsoft BizTalk LoadGen 2007 工具
 Microsoft BizTalk LoadGen 2007 工具可供开发人员和 IT 专家模拟 BizTalk Server 上的负载。 使用此工具，可以模拟负载，以便根据 BizTalk 部署检测性能和压力。 此外，开发人员还可以扩展此工具，以便模拟自定义传输的负载。  

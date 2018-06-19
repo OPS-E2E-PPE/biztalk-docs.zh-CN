@@ -1,14 +1,14 @@
 ---
-title: "如何诊断问题 HTTP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何诊断问题 HTTP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 91f818dd-11fa-4ea4-b904-e8e00b3e49b4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249837"
 ---
 # <a name="how-to-diagnose-problems-with-the-http-adapter"></a>如何使用 HTTP 适配器诊断问题
 本部分包含用 HTTP 适配器帮助诊断问题所要遵循的步骤。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      *%Windir%\\*system32\LogFiles\W3SVC1\  
   
     > [!NOTE]
-    >  *%Windir%*是 IIS 服务器上的 Windows 目录的位置的占位符。  
+    >  *%Windir%* 是 IIS 服务器上的 Windows 目录的位置的占位符。  
   
      默认情况下，在基于 [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] 的计算机上，HTTPERR 日志文件位于下面的目录中：  
   

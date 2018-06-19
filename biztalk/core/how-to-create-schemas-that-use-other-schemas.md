@@ -1,14 +1,14 @@
 ---
-title: "如何创建使用其他架构的架构 |Microsoft 文档"
-ms.custom: 
+title: 如何创建使用其他架构的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff0bcd9a-6c66-4c3b-bd41-64047a7c8392
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249413"
 ---
 # <a name="how-to-create-schemas-that-use-other-schemas"></a>如何创建使用其他架构的架构
 XML 架构定义 (XSD) 语言提供了三种不同但相关的机制，用于在一个架构中使用其他架构。 这些机制是导入架构、包括架构和重新定义架构。 这些机制和它们之间的差异的简短摘要，请参阅[架构，使用其他架构](../core/schemas-that-use-other-schemas.md)。 有关详细信息，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)有关 XSD 入门和规范的链接。  

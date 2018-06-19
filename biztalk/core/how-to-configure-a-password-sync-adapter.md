@@ -1,14 +1,14 @@
 ---
-title: "如何配置密码同步适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何配置密码同步适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0effdc9b-4aee-4674-90c5-03dfd7cc4cd6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247349"
 ---
 # <a name="how-to-configure-a-password-sync-adapter"></a>如何配置密码同步适配器
 创建完密码同步适配器之后，必须将该适配器加载到系统中。 此外，还必须通知企业单一登录 (ENTSSO) 和配置存储，您的应用程序是一个密码同步适配器。 必须将注册配置存储区出于安全目的： 你的适配器将请求更新密码和其他凭据。 因此，ENTSSO 必须知道允许给定的适配器请求此类权限。  

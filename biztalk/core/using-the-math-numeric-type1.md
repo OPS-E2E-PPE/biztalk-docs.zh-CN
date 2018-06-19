@@ -1,11 +1,11 @@
 ---
-title: "使用 MATH_NUMERIC Type1 |Microsoft 文档"
-ms.custom: 
+title: 使用 MATH_NUMERIC Type1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters [JD Edwards EnterpriseOne adapters], currency
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - JD Edwards EnterpriseOne adapters, currency
 - exponents, values [JD Edwards EnterpriseOne adapters]
 ms.assetid: 2a302216-f0a6-4afb-8f7d-bb1475ea1c57
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22288509"
 ---
 # <a name="using-the-mathnumeric-type"></a>使用 MATH_NUMERIC 类型
 本主题介绍了 MATH_NUMERIC 类型并详细说明了指数的处理方式、数字的最大位数以及小数的最大位数。 本主题还讨论下列内容：  

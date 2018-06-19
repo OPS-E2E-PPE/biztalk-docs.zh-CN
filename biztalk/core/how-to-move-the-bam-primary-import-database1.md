@@ -1,17 +1,17 @@
 ---
-title: "如何移动 BAM 主导入 Database1 |Microsoft 文档"
-ms.custom: 
+title: 如何移动 BAM 主导入 Database1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - migrating, Primary Import database [BAM]
 - Primary Import database [BAM], migrating
 ms.assetid: fab13fea-5c35-4a9f-977d-cc45545c54b2
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972659"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>如何移动 BAM 主导入数据库
 您可以使用此过程将 BAM 主导入数据库移至其他服务器。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  右键单击**SampleUpdateInfo.xml**，然后单击**编辑**。  
   
-9. 在文件的主导入数据库部分中，替换**"SourceServer"**同名的源系统，然后将**"DestinationServer"**与目标系统的名称。  
+9. 在文件的主导入数据库部分中，替换 **"SourceServer"** 同名的源系统，然后将 **"DestinationServer"** 与目标系统的名称。  
   
     > [!IMPORTANT]
     >  用引号将源系统和目标系统的名称括起来。  

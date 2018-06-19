@@ -1,14 +1,14 @@
 ---
-title: "WCF 适配器常见问题： 开发库 |Microsoft 文档"
-ms.custom: 
+title: WCF 适配器常见问题： 开发库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d05b635a-d46d-4f7d-896b-8ed7a799e80f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009174"
 ---
 # <a name="wcf-adapter-faq-development-libraries"></a>WCF 适配器常见问题解答：开发库
 ## <a name="when-does-it-make-more-sense-to-use-the-wcf-adapters-vs-a-wcf-custom-binding-to-communicate-with-an-external-application-or-system"></a>使用 WCF 适配器和 WCF 自定义绑定与外部应用程序或系统进行通信何时更有意义？  

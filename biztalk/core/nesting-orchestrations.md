@@ -1,18 +1,18 @@
 ---
-title: "嵌套业务流程 |Microsoft 文档"
-ms.custom: 
+title: 嵌套业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Start Orchestration shape [Orchestration Designer], nesting
 - Call Orchestration shape [Orchestration Designer], nesting
 - orchestrations, nesting
 ms.assetid: a5f75cfd-e11c-4751-85e2-d685626b9ccb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263445"
 ---
 # <a name="nesting-orchestrations"></a>嵌套业务流程
 你可以使用**调用 Orchestration**形状和**启动 Orchestration**形状来调用从另一个业务流程。 而且，可以对业务流程进行任意深度的嵌套：例如，被调用的业务流程可以调用第三个业务流程，而第三个业务流程还可以调用第四个业务流程，以此类推。  

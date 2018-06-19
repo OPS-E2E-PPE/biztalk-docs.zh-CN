@@ -1,17 +1,17 @@
 ---
-title: ".NET 类表示消息 |Microsoft 文档"
-ms.custom: 
+title: .NET 类表示消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, expressions
 - orchestrations, filters
 ms.assetid: cdbea200-552e-4734-a370-2f93da07ea81
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263389"
 ---
 # <a name="messages-represented-as-net-classes"></a>表示为 .NET 类的消息
 此方法首先需要创建一个定义消息类型的 .NET 类。 该类必须具有默认构造函数，否则，使用它的业务流程将无法编译。 下面是这个类的简单示例。  

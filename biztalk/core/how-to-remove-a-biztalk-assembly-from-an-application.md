@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序删除 BizTalk 程序集 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序删除 BizTalk 程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [applications], assemblies
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - applications, assemblies
 - managing [assemblies], deleting
 ms.assetid: 0691c3b6-476d-4e01-b50b-47d7c0b299bf
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008454"
 ---
 # <a name="how-to-remove-a-biztalk-assembly-from-an-application"></a>如何从应用程序中删除 BizTalk 程序集
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序删除 BizTalk 程序集。 执行此操作时，程序集和其中包含的项目（如业务流程、架构和管道）都将从应用程序和 BizTalk 管理数据库中删除。  

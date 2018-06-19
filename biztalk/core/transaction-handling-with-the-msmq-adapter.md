@@ -1,17 +1,17 @@
 ---
-title: "使用 MSMQ 适配器处理的事务 |Microsoft 文档"
-ms.custom: 
+title: 使用 MSMQ 适配器处理的事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, transaction handling
 - transactions, MSMQ adapters
 ms.assetid: 2e5dd0da-3852-48bf-9372-b019ecab23be
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008742"
 ---
 # <a name="transaction-handling-with-the-msmq-adapter"></a>使用 MSMQ 适配器处理的事务
 本部分将介绍事务在接收和发送时的工作方式。  

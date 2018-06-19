@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262221"
 ---
 # <a name="mappings-enlisted-party-node"></a>Mappings（“已登记参与方”节点）
 绑定文件的“映射”节点是所有“映射”节点的父节点，这些“映射”节点描述了参与方端口和角色端口类型操作之间的映射。  

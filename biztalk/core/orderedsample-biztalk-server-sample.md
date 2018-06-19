@@ -1,11 +1,11 @@
 ---
-title: "OrderedSample （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: OrderedSample （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, MQSeries adapters
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, orchestrations
 - MQSeries adapters, examples
 ms.assetid: 7e59ff43-d425-40cd-9725-af13084f83d9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974747"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample（BizTalk Server 示例）
 OrderedSample 示例演示如何使用业务流程以往返过程方式接收和发送一系列有序消息。  
@@ -36,7 +37,7 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
  业务流程可接收消息批和单个消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\AdaptersUsage\MQSeriesAdapter\OrderedSample  
+ *\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -73,11 +74,11 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 3.  右键单击**队列**，指向**新建**，然后单击**本地队列**。  
   
-4.  在**创建本地队列**对话框中，在**队列名称**，类型**"queue1"**，然后单击**确定**。  
+4.  在**创建本地队列**对话框中，在**队列名称**，类型 **"queue1"**，然后单击**确定**。  
   
 5.  右键单击**队列**，单击**新建**，然后单击**本地队列**。  
   
-6.  在**创建本地队列**对话框中，在**队列名称**，类型**"queue2"**，然后单击**确定**。  
+6.  在**创建本地队列**对话框中，在**队列名称**，类型 **"queue2"**，然后单击**确定**。  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a>创建接收位置和 MQSeries 队列  
  此过程将创建发送端口和接收位置，以便向 MQSeries 发送消息以及接收来自 MQSeries 的相关消息。 创建接收位置时，还将创建 MQSeries 队列（如果尚未创建）。  
@@ -104,9 +105,9 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 10. 单击**配置**。  
   
-11. 在**MQSeries 传输属性**对话框中，在**轮询间隔**框中，键入**"10"**。  
+11. 在**MQSeries 传输属性**对话框中，在**轮询间隔**框中，键入 **"10"**。  
   
-12. 在**队列定义**框中，单击**省略号 （...）**按钮。  
+12. 在**队列定义**框中，单击**省略号 （...）** 按钮。  
   
 13. 在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。  
   
@@ -130,7 +131,7 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 5.  单击**配置**。  
   
-6.  在**MQSeries 传输属性**对话框中，在**队列定义**框中，单击**省略号 （...）**按钮。  
+6.  在**MQSeries 传输属性**对话框中，在**队列定义**框中，单击**省略号 （...）** 按钮。  
   
 7.  在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。  
   

@@ -1,11 +1,11 @@
 ---
-title: "修改现有 PIP 在 RNPIPs |Microsoft 文档"
-ms.custom: 
+title: 修改现有 PIP 在 RNPIPs |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RNPIPs
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - PIPs, modifying
 - assemblies, RNPIPs
 ms.assetid: f2ed25c4-1979-4691-9315-e7568e7cca8b
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006286"
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>修改在 RNPIPs 现有 PIP
 本主题介绍如何更改和重新部署安装的合作伙伴接口过程 (PIP) 架构之一[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序。 该架构部署为 RNPIP 程序集的组成部分。  

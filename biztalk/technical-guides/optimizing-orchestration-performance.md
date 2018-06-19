@@ -1,14 +1,14 @@
 ---
-title: "优化业务流程性能 |Microsoft 文档"
-ms.custom: 
+title: 优化业务流程性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 437c7325-f037-451a-8dbd-f8d8c8889e20
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010390"
 ---
 # <a name="optimizing-orchestration-performance"></a>优化业务流程性能
 本主题介绍在 BizTalk Server 解决方案中使用业务流程的最佳实践。 这包括有关建议：  
@@ -328,9 +329,9 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
 ## <a name="make-appropriate-use-of-net-classes-in-orchestrations-to-maximize-performance"></a>在业务流程来最大化性能中请适当地使用.NET 类  
  一般情况下，使用内部业务流程的.NET 类可以划分为两个不同类别：  
   
--   **帮助程序和服务-**这些类提供对业务流程，例如跟踪、 错误处理、 缓存和序列化/反序列化的公共服务。 大多数这些类可以作为与任何内部状态和多个公共静态方法的静态类实现。 此方法可避免在不同的业务流程运行在同一时间，这有助于减少主机进程的工作空间和保存内存中创建多个对象的同一个类。 无状态的类可帮助减少必须序列化和业务流程是已冻结时保留到 BizTalk MessageBox 的内部状态的总体大小。  
+-   **帮助程序和服务-** 这些类提供对业务流程，例如跟踪、 错误处理、 缓存和序列化/反序列化的公共服务。 大多数这些类可以作为与任何内部状态和多个公共静态方法的静态类实现。 此方法可避免在不同的业务流程运行在同一时间，这有助于减少主机进程的工作空间和保存内存中创建多个对象的同一个类。 无状态的类可帮助减少必须序列化和业务流程是已冻结时保留到 BizTalk MessageBox 的内部状态的总体大小。  
   
--   **实体和业务对象-**可以使用这些类以管理实体，例如订单、 订单项和客户。 单个业务流程内部可以创建和管理多个相同类型的实例。 这些类是通常有状态的并公开公共字段和/或方法，以便修改对象的内部状态以及属性。 这些类的实例可以通过反 XLANGMessage 部分序列化为.NET 对象，通过使用动态创建**XmlSerializer**或**DataContractSerializer**类或通过使用**XLANGPart.RetrieveAs**方法。 您构建业务流程使用有状态的类的实例的创建尽可能后期和不再需要后立即释放方式中的非事务性作用域。 此方法减少主机进程的工作空间，并最大程度减少已冻结业务流程时持久化到 MessageBox 数据库的序列化的内部状态的总体大小。 有关使用 BizTalk Server 中的业务流程的详细信息，请参阅文章[适用的 BizTalk Server 业务流程的常见问题](http://go.microsoft.com/fwlink/?LinkID=116886)(http://go.microsoft.com/fwlink/?LinkID=116886)。  
+-   **实体和业务对象-** 可以使用这些类以管理实体，例如订单、 订单项和客户。 单个业务流程内部可以创建和管理多个相同类型的实例。 这些类是通常有状态的并公开公共字段和/或方法，以便修改对象的内部状态以及属性。 这些类的实例可以通过反 XLANGMessage 部分序列化为.NET 对象，通过使用动态创建**XmlSerializer**或**DataContractSerializer**类或通过使用**XLANGPart.RetrieveAs**方法。 您构建业务流程使用有状态的类的实例的创建尽可能后期和不再需要后立即释放方式中的非事务性作用域。 此方法减少主机进程的工作空间，并最大程度减少已冻结业务流程时持久化到 MessageBox 数据库的序列化的内部状态的总体大小。 有关使用 BizTalk Server 中的业务流程的详细信息，请参阅文章[适用的 BizTalk Server 业务流程的常见问题](http://go.microsoft.com/fwlink/?LinkID=116886)(http://go.microsoft.com/fwlink/?LinkID=116886)。  
   
     > [!NOTE]  
     >  虽然此文章 BizTalk Server 2004 和 BizTalk Server 2006 编写的介绍的概念将还适用于 BizTalk Server 2010 业务流程中。  

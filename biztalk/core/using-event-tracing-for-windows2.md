@@ -11,7 +11,7 @@ helpviewer_keywords:
 - ETW
 - Event Tracing for Windows
 ms.assetid: 88b91b74-2b2e-40e0-a3e9-1ebd6367abe8
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25974411"
 ---
 # <a name="using-event-tracing-for-windows"></a>使用适用于 Windows 跟踪的事件
 适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件︰ 例如，tracerpt.exe 或 tracedmp.exe。  
@@ -46,15 +47,15 @@ ms.lasthandoff: 03/28/2018
   
  用于 JD Edwards OneWorld 的 BizTalk 适配器包含五种提供程序，允许您记录不同种类的消息：  
   
--   **接收方日志记录提供程序。** \<跟踪元素\>交换机**-接收方**。  
+-   **接收方日志记录提供程序。** \<跟踪元素\>交换机 **-接收方**。  
   
--   **接收方 CastDetails 提供程序。** \<跟踪元素\>交换机**-castDetailsReceive**。  
+-   **接收方 CastDetails 提供程序。** \<跟踪元素\>交换机 **-castDetailsReceive**。  
   
--   **发送器日志记录提供程序。** \<跟踪元素\>交换机**-发送器**。  
+-   **发送器日志记录提供程序。** \<跟踪元素\>交换机 **-发送器**。  
   
--   **发送器 CastDetails 提供程序。** \<跟踪元素\>交换机**-castDetailsTransmit**。  
+-   **发送器 CastDetails 提供程序。** \<跟踪元素\>交换机 **-castDetailsTransmit**。  
   
--   **管理日志记录提供程序。** \<跟踪元素\>交换机**-管理**。  
+-   **管理日志记录提供程序。** \<跟踪元素\>交换机 **-管理**。  
   
  BTAJDEOneWorldTrace 命令  
   

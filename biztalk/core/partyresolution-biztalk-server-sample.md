@@ -1,11 +1,11 @@
 ---
-title: "PartyResolution （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: PartyResolution （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, parties
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - routing, messages
 - messages, routing
 ms.assetid: 220e6bc5-6f04-4f37-b0d0-f11c2cc14422
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975419"
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution （BizTalk Server 示例）
 PartyResolution 示例演示了如何配合使用 BizTalk 业务流程与参与方解析以将消息路由到两个可能的收件人中的某一个。  
@@ -125,7 +126,7 @@ PartyResolution 示例演示了如何配合使用 BizTalk 业务流程与参与�
 -   生成 Shipper1Process.odx 和 Shipper2Process.odx 以从 SupplierProcess.odx 接收发货订单和发货通知，并将响应发送回 SupplierProcess.odx。 在这两个发运方业务流程中都将使用相关，且相关类型基于已升级的属性 PONo。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Orchestrations\PartyResolution\  
+ *\<示例路径\>* \Orchestrations\PartyResolution\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -242,7 +243,7 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
     12. 导入私钥，并在向导中提供密码。  
   
-    13. 展开**证书 （本地计算机）**节点，然后展开**其他人**。 右键单击**证书**，单击**所有任务**，然后单击**导入**。  
+    13. 展开**证书 （本地计算机）** 节点，然后展开**其他人**。 右键单击**证书**，单击**所有任务**，然后单击**导入**。  
   
     14. 导入公钥。  
   
@@ -276,13 +277,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
   
 1.  从以下文件夹中运行 FilePolling.exe：  
   
-     *\<示例路径 >*\Orchestrations\PartyResolution\FilePolling\bin\Debug  
+     *\<示例路径 >* \Orchestrations\PartyResolution\FilePolling\bin\Debug  
   
 2.  单击**开始轮询**。  
   
 3.  将所提供的采购订单实例文件 PurchaseOrder.xml 的副本复制到以下文件夹中：  
   
-     *\<示例路径 >*\Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
+     *\<示例路径 >* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
   
 4.  观察以消息框形式提供的通知你本示例进度的消息序列：  
   

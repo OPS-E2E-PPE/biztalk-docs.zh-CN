@@ -1,14 +1,14 @@
 ---
-title: "EDIFACT CONTRL 确认错误代码 |Microsoft 文档"
-ms.custom: 
+title: EDIFACT CONTRL 确认错误代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0c5ab75-d83d-4c3e-a054-8fe079219b61
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009214"
 ---
 # <a name="edifact-contrl-acknowledgment-error-codes"></a>EDIFACT CONTRL 确认错误代码
 本主题列出了在 EDIFACT CONTRL 确认的段中使用的错误代码。 有关这些段的详细信息，请参阅[EDIFACT CONTRL 确认](../core/edifact-contrl-acknowledgment.md)。  

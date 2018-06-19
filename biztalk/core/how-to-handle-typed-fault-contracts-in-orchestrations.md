@@ -13,7 +13,7 @@ helpviewer_keywords:
 - orchestrations, typed fault contracts
 - orchestrations, WCF services
 ms.assetid: 5a1a7d22-b0ff-4d09-bebf-4995229784b0
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25970763"
 ---
 # <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>如何在业务流程中处理类型化错误协定
 本主题介绍从业务流程内部使用 WCF 服务时应如何处理类型化错误协定。 若要处理在业务流程中的类型化的错误异常，你使用的 WCF 服务必须具有**FaultContractAttribute**应用于服务操作; 因此，可以通过使用引发错误**FaultException**\<T\>其中 T 可以是任何有效的数据协定或通过 WCF 服务的可序列化类型。  

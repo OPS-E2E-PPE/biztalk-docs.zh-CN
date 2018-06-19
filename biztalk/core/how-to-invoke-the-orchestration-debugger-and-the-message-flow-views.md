@@ -1,17 +1,17 @@
 ---
-title: "如何调用业务流程调试器和邮件流视图 |Microsoft 文档"
-ms.custom: 
+title: 如何调用业务流程调试器和邮件流视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - results list [Orchestration Debugger], Debugger view
 - results list [Orchestration Debugger], Message Flow view
 ms.assetid: ffce3fb5-7eb5-4170-abdb-04b9d7f9ff3a
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253925"
 ---
 # <a name="how-to-invoke-the-orchestration-debugger-and-the-message-flow-views"></a>如何调用业务流程调试器和消息流视图
 在 BizTalk Server 管理控制台的“组中心”页中，“查询结果”窗格显示查询的输出。 从上下文菜单中，可以显示业务流程调试器或消息流视图。  

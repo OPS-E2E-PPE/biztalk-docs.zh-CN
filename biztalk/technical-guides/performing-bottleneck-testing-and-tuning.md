@@ -1,14 +1,14 @@
 ---
-title: "执行测试和优化的瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 执行测试和优化的瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95d41d95-3a76-4eb0-b07d-14c6b6dccdaa
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008910"
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>执行测试和优化的瓶颈
 应完成性能测试来确定在系统中的瓶颈和相应地调整系统。  

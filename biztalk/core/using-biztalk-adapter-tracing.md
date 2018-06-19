@@ -23,6 +23,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "26009206"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>使用 BizTalk 适配器跟踪
 本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。  

@@ -1,17 +1,17 @@
 ---
-title: "管理 BAM |Microsoft 文档"
-ms.custom: 
+title: 管理 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [BAM], about managing BAM
 - managing [BAM]
 ms.assetid: 2981a90d-aaa4-4991-beee-5ac1f12b5c9e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262445"
 ---
 # <a name="managing-bam"></a>管理 BAM
 使用业务活动监视 (BAM)，业务用户可以实时查看关键业务绩效指标，这使他们可以更有效地工作。 业务用户可以使用此信息提高业务操作的速度和效率。 BAM 以一种各种交易一致的实时方式收集业务活动信息，而不论各种不同类型的环境的复杂性如何。  

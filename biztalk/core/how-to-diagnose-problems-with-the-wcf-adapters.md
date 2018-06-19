@@ -1,14 +1,14 @@
 ---
-title: "如何诊断问题的 WCF 适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何诊断问题的 WCF 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 997a4ecd-6077-45d6-82d3-3f658ca62fd4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250525"
 ---
 # <a name="how-to-diagnose-problems-with-the-wcf-adapters"></a>如何诊断 WCF 适配器问题
 本部分提供诊断 WCF 适配器问题所需遵循的步骤。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
      *%Windir%\\*system32\LogFiles\W3SVC1\  
   
     > [!NOTE]
-    >  *%Windir%*是一个占位符的位置[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]IIS 服务器上的目录。  
+    >  *%Windir%* 是一个占位符的位置[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]IIS 服务器上的目录。  
   
      默认情况下，在基于 [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] 和 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 的计算机上，HTTPERR 日志文件位于下面的目录中：  
   

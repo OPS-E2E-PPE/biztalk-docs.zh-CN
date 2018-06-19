@@ -1,11 +1,11 @@
 ---
-title: "设计用于模式： 业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 设计用于模式： 业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - patterns [process management solutions], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - examples, programming patterns
 - designing, programming patterns
 ms.assetid: 0583f4a4-01db-4d5b-a1f5-1694c1ddbd30
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239661"
 ---
 # <a name="designing-with-patterns-the-business-process-management-solution"></a>设计用于模式： 业务流程管理解决方案
 业务流程管理解决方案为您展示了一种在 BizTalk 应用程序中构造流程管理器的方法。 该解决方案使用组件来选择和控制订单处理中的阶段序列。 该解决方案首先获取订单（该订单可能是申请新的服务、申请变化或申请取消服务），然后记录该订单，并在传递订单以进行处理之前对该订单进行确认。 处理过程由一个或多个订单处理阶段组成。 最后，该解决方案向原始订单请求返回最终响应。  

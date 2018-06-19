@@ -18,7 +18,7 @@ helpviewer_keywords:
 - user accounts, access control
 - security, permissions
 ms.assetid: 44b6e7da-8e6c-40c0-a250-52ab422c0adf
-caps.latest.revision: ''
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265581"
 ---
 # <a name="minimum-security-user-rights"></a>最低安全用户权限
 BizTalk Server 使用的组和帐户具有执行大多数任务所需的最低用户权限。 因此，对于某些任务，你需要具有的用户权限可能高于 BizTalk Server 自动授予你所在的组的权限。 本主题内容：  

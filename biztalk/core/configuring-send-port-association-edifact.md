@@ -1,14 +1,14 @@
 ---
-title: "配置发送端口关联 (EDIFACT) |Microsoft 文档"
-ms.custom: 
+title: 配置发送端口关联 (EDIFACT) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7faabc7-072c-408c-bbd5-f0a039be81f8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005974"
 ---
 # <a name="configuring-send-port-association-edifact"></a>配置发送端口关联（EDIFACT）
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用发送端口关联来解析传出 EDI 交换的协议。 通过匹配订阅该消息的发送端口与协议关联的发送端口，将 EDI 交换解析为协议。 本主题提供有关如何将发送端口与协议相关联的说明。  

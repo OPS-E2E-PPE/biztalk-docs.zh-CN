@@ -1,14 +1,14 @@
 ---
-title: "如何： 将文本文档转换为 XML 和路由到文件位置使用路线的路由滑动 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将文本文档转换为 XML 和路由到文件位置使用路线的路由滑动 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01597a5f-5ca3-440e-ad97-70332233f319
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010190"
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>如何： 将文本文档转换为 XML 和路由到使用路线的路由滑动的文件位置
 ## <a name="goal"></a>目的  
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/01/2017
   
 1.  在 Visual Studio 中，右键单击**DataFormatTransformation.Schemas**，然后单击**属性**。 单击**应用程序**，然后键入**GlobalBank.ESB.DataFormatTransformation.Schemas**中**程序集名称**框。  
   
-2.  右键单击**DataFormatTransformation.Schemas**，然后单击**属性**。 单击**签名**，然后确认**对程序集签名**复选框处于选中状态，该程序集位置指向**。\\...\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**。  
+2.  右键单击**DataFormatTransformation.Schemas**，然后单击**属性**。 单击**签名**，然后确认**对程序集签名**复选框处于选中状态，该程序集位置指向 **。\\...\\..\\..\\..\\..\keys\Microsoft.Practices.ESB.snk**。  
   
 3.  右键单击**DataFormatTransformation.Pipelines**，然后单击**删除**。  
   

@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序中删除架构 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序中删除架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deleting, schemas
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - managing [schemas], applications
 - schemas, applications
 ms.assetid: 17dd5869-b56c-4166-9f02-03e04e691eda
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254645"
 ---
 # <a name="how-to-remove-a-schema-from-an-application"></a>如何从应用程序中删除架构
 本主题介绍如何使用 BizTalk Server 管理控制台从应用程序中删除架构。 此过程也可以从 BizTalk 管理数据库中删除针对组的架构。 您可能要在部署某一架构的新版本后删除该架构。 有关详细信息和更新应用程序项目的重要注意事项，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。  

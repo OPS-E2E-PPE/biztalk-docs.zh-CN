@@ -1,11 +1,11 @@
 ---
-title: "如何使用该调用规则形状 |Microsoft 文档"
-ms.custom: 
+title: 如何使用该调用规则形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], how to
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Call Rules shape [Orchestration Designer], policies
 - policies, Call Rules shape [Orchestration Designer]
 ms.assetid: e4bc8a2c-de7e-4e3a-81b8-12bcebb17d27
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006438"
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>如何使用调用规则形状
 在业务流程设计器中，你可以使用**调用规则**形状以调用业务策略。  

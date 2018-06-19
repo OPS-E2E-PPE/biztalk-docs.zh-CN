@@ -1,14 +1,14 @@
 ---
-title: "如何显示和隐藏编译器链接 |Microsoft 文档"
-ms.custom: 
+title: 如何显示和隐藏编译器链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66bfd9de-c4d2-46ee-854f-cf7c7cd07368
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255541"
 ---
 # <a name="how-to-show-and-hide-compiler-links"></a>如何显示和隐藏编译器链接
 编译地图时，BizTalk 映射程序将创建名为编译器链接来应对需要在映射中的所有链接的其他链接。 你创建的链接仅隐含的一些这些链接。 当你编译，或测试，地图中，在 Visual Studio 输出窗口中的最后一行，可显示或隐藏这些主窗口中的其他编译器链接。 默认情况下，编译器链接显示为红色虚线。  

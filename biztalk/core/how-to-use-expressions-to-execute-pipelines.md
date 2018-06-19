@@ -1,11 +1,11 @@
 ---
-title: "如何使用表达式来执行管道 |Microsoft 文档"
-ms.custom: 
+title: 如何使用表达式来执行管道 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ExecuteReceivePipeline() method
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - pipelines, orchestrations
 - Message Assignment shape [Orchestration Designer], pipelines
 ms.assetid: f947fa73-526c-4747-8de7-df557a93056c
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974651"
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a>如何使用表达式来执行管道
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 能够从业务流程中同步调用管道。 这使业务流程能够对数据正文利用封装在管道（发送或接收）内的消息处理，而不必通过消息传递基础结构来发送这些数据。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
  业务流程使用中的方法**XLANGPipelineManager**类 (在**Microsoft.XLANGs.Pipeline**命名空间) 调用发送或接收管道。  接收管道使用单条消息或一个交换并生成零条或多条消息，就像在 BizTalk 消息传送过程中管道在接收消息的上下文中执行时一样。 发送管道使用一条或多条消息并生成单条消息或交换，也是像在 BizTalk 消息传送过程中管道在发送消息的上下文中执行时一样。  
   
 ## <a name="calling-a-receive-pipeline"></a>调用接收管道  
- 若要调用从业务流程，在应用程序调用中的接收管道**ExecuteReceivePipeline()**方法**XLANGPipelineManager**类。  此方法使用单个交换，并返回零个或多个消息的集合 (实例中包含**ReceivePipelineOutputMessages**类)。 此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。  
+ 若要调用从业务流程，在应用程序调用中的接收管道**ExecuteReceivePipeline()** 方法**XLANGPipelineManager**类。  此方法使用单个交换，并返回零个或多个消息的集合 (实例中包含**ReceivePipelineOutputMessages**类)。 此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。  
   
  从业务流程内部执行接收管道的 API 是：  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/28/2017
 >  在调用时**PassThruReceive**管道或从业务流程中的自定义管道组件，因为 System.Xml.XmlDocument 尽管传入的消息类型的或不是 XML，必须声明传入消息的变量类型. 因此，如果在传入消息为非 XML 消息（例如，为平面文件格式的消息）时尝试对其执行操作，则会遇到异常。 这是因为业务流程引擎在上述情况中为任何传入消息类型都会使用 System.Xml.XmlDocument。  
   
 ## <a name="calling-a-send-pipeline"></a>调用发送管道  
- 若要调用从业务流程，在应用程序调用中的发送管道**ExecuteSendPipeline()**方法**XLANGPipelineManager**类。 此方法使用一个或多个消息的集合 (实例中包含**SendPipelineInputMessages**类) 并返回单个交换。 此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。  因为的发送管道的执行会产生新的交换，调用**ExecuteSendPipeline()**方法必须将消息分配形状中，这种情况下：  
+ 若要调用从业务流程，在应用程序调用中的发送管道**ExecuteSendPipeline()** 方法**XLANGPipelineManager**类。 此方法使用一个或多个消息的集合 (实例中包含**SendPipelineInputMessages**类) 并返回单个交换。 此方法的语法详细介绍了有关.NET 类库参考**XLANGPipelineManager**类。  因为的发送管道的执行会产生新的交换，调用**ExecuteSendPipeline()** 方法必须将消息分配形状中，这种情况下：  
   
  从业务流程内部执行发送管道的 API 是：  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 11/28/2017
  在部署重复架构的情况下，用于选择适当架构的算法逻辑与在消息传递基础结构上下文中执行时使用的算法逻辑相同。  
   
 ### <a name="transactional-pipelines"></a>事务管道  
- 如果管道的阶段调用了事务性组件，则管道将没有可用的事务性上下文。  任何调用到**IPipelineContext.GetTransaction()**将引发**NotSupportedException**。  这不会阻止从业务流程中执行此类管道，但确实意味着管道必须检测并处理这种情况。  
+ 如果管道的阶段调用了事务性组件，则管道将没有可用的事务性上下文。  任何调用到**IPipelineContext.GetTransaction()** 将引发**NotSupportedException**。  这不会阻止从业务流程中执行此类管道，但确实意味着管道必须检测并处理这种情况。  
   
 ### <a name="message-destination"></a>消息目标  
  在此上下文中不支持按照管道组件控制消息目标。  设置上下文属性**MessageDestination**或**SuspendOnRoutingFailure**将导致**XLANGPipelineManagerException**引发。  

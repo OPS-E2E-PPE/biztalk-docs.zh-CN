@@ -1,11 +1,11 @@
 ---
-title: "如何查看 BizTalk 程序集的依赖关系 |Microsoft 文档"
-ms.custom: 
+title: 如何查看 BizTalk 程序集的依赖关系 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - viewing, dependencies
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - viewing, assemblies
 - managing [assemblies], viewing
 ms.assetid: 872abc99-8248-4397-9fcb-24a0ba6f4757
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256429"
 ---
 # <a name="how-to-view-the-dependencies-for-a-biztalk-assembly"></a>如何查看 BizTalk 程序集的依赖关系
 本主题介绍如何使用 BizTalk Server 管理控制台来查看与 BizTalk 程序集有依存关系的项目的列表。 有关依赖关系以及它们如何影响应用程序部署的背景信息，请参阅[依赖关系和应用程序部署](../core/dependencies-and-application-deployment.md)。  

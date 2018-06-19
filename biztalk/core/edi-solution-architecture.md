@@ -1,14 +1,14 @@
 ---
-title: "EDI 解决方案体系结构 |Microsoft 文档"
-ms.custom: 
+title: EDI 解决方案体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 55709a89-7706-4c64-ada3-16951951c943
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239877"
 ---
 # <a name="edi-solution-architecture"></a>EDI 解决方案体系结构
 电子数据交换 (EDI) 是业务实体以电子方式交换数据的最常见方式之一。 使用 EDI 必须了解消息语法和标准（包括 ANSI X12 和 UN/EDIFACT）、消息传送协议以及传输。 以下是 EDI 消息传送的一些特性：  

@@ -1,14 +1,14 @@
 ---
-title: "缩放 BizTalk Server 数据库的扩展 |Microsoft 文档"
-ms.custom: 
+title: 缩放 BizTalk Server 数据库的扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 18853ceb-7975-4c30-878f-6b162005f795
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009614"
 ---
 # <a name="scaling-out-the-biztalk-server-databases"></a>向外扩展 BizTalk Server Database
 若要为 BizTalk Server 数据库提供高可用性，配置 Windows 群集中运行 SQL Server 的两台计算机。 这些计算机可以运行在主动/主动、 主动/被动或 （需要三台计算机） 的主动/主动/被动冗余配置并可以将数据存储在共享的驱动器 (如 RAID 1 + 0 SCSI 磁盘阵列) 或存储区域网络 (SAN)。  

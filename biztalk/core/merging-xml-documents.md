@@ -1,17 +1,17 @@
 ---
-title: "合并 XML 文档 |Microsoft 文档"
-ms.custom: 
+title: 合并 XML 文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XML, documents
 - process management solution tutorial, merging XML documents
 ms.assetid: 444c983a-397a-4342-85e1-80bb152986d9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262637"
 ---
 # <a name="merging-xml-documents"></a>合并 XML 文档
 其中一条消息， **OrderBroker**业务流程都创建一个来更新 SQL Server 历史记录数据库。 此消息包含订单消息中的字段以及原始订单消息。 在此消息中，原始订单显示为字符串。 这与数据库中订单历史记录的数据类型相匹配。  

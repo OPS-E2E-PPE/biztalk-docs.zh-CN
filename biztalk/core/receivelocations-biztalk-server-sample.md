@@ -1,14 +1,14 @@
 ---
-title: "接收位置 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 接收位置 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 87d75941-3973-4166-91b0-f1192b25a804
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972619"
 ---
 # <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations（BizTalk Server 示例）
 示例演示如何创建接收位置接收中的位置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境使用**ExplorerOM**管理对象。 有关详细信息通常接收位置，请参阅[接收位置](../core/receive-locations.md)。  

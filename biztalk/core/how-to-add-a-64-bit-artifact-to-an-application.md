@@ -1,11 +1,11 @@
 ---
-title: "如何将一个 64 位项目添加到应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何将一个 64 位项目添加到应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - artifacts, 64-bit support
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - BizTalk Server, 64-bit support
 - applications, 64-bit support
 ms.assetid: 46aca7d4-c5be-421e-b16d-7f3095c8cc67
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246621"
 ---
 # <a name="how-to-add-a-64-bit-artifact-to-an-application"></a>如何将一个 64 位项目添加到应用程序
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括对 64 位应用程序支持。 这意味着，您可以采用与 32 位项目相同的方式将 64 位项目添加到 BizTalk 应用程序中；但是，在 32 位计算机上安装以下 64 位项目时，您可能会遇到以下问题：  

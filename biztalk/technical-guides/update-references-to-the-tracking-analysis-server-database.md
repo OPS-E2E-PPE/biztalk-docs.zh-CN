@@ -1,14 +1,14 @@
 ---
-title: "更新对跟踪 Analysis Server 数据库的引用 |Microsoft 文档"
-ms.custom: 
+title: 更新对跟踪 Analysis Server 数据库的引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a403325-1394-4668-946f-01b610cb686e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976315"
 ---
 # <a name="update-references-to-the-tracking-analysis-server-database"></a>更新对跟踪 Analysis Server 数据库的引用
 跟踪 Analysis Server 数据库是可选的并包含联机分析处理 (OLAP) 多维数据集。 这些 OLAP 多维数据集是 BizTalk 跟踪数据库中包含的数据的聚合。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
 5.  修改对应于原始数据库的列，以引用新数据库的相应值。  
   
     > [!NOTE]  
-    >  *\<DBType\>*  DBServerName 和 *\<DBType\>*  DBName 指示的位置的数据库，其中 *\<DBType\>*对应的数据库，例如，TrackingAnalysis 的类型。  
+    >  *\<DBType\>*  DBServerName 和 *\<DBType\>*  DBName 指示的位置的数据库，其中 *\<DBType\>* 对应的数据库，例如，TrackingAnalysis 的类型。  
   
 6.  关闭该表以保存新值。  
   

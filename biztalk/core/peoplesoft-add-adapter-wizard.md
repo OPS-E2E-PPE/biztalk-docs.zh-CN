@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263437"
 ---
 # <a name="peoplesoft-add-adapter-wizard"></a>PeopleSoft 添加适配器向导
 使用“添加适配器向导”来访问来自 PeopleSoft 系统的元数据信息。  

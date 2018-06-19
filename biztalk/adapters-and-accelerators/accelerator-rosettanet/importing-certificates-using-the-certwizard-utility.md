@@ -1,11 +1,11 @@
 ---
-title: "导入证书使用 CertWizard 实用工具 |Microsoft 文档"
-ms.custom: 
+title: 导入证书使用 CertWizard 实用工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, root keys
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - certificates, importing
 - root keys
 ms.assetid: 0c54d7ab-69cf-4f4a-b976-6f740a41280b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26006838"
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>导入证书使用 CertWizard 实用工具
 本主题介绍如何使用 CertWizard 实用程序，分步的命令行实用程序中提供导入证书[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 本主题说明如何导入私钥、公钥和根钥， 还说明了用于配置证书的开关。  
@@ -44,13 +45,13 @@ ms.lasthandoff: 01/17/2018
     > [!NOTE]
     >  使用 CertWizard 实用程序的帮助，请键入**CertWizard /？** 在命令提示符。  
   
-3.  在命令提示符处，键入**CertWizard /Privatekey \<filename\>.pfx**，其中\< *filename*\>.pfx 包含的私有证书。 若要为文件提供密码，请将追加**/Filepassword \<filepassword\>** 到该命令。  
+3.  在命令提示符处，键入**CertWizard /Privatekey \<filename\>.pfx**，其中\< *filename*\>.pfx 包含的私有证书。 若要为文件提供密码，请将追加 **/Filepassword \<filepassword\>** 到该命令。  
   
-4.  如果你想要将证书导入 BizTalk 主机所使用的特定帐户中，追加**/Useridentity\<用户身份\>/Password\<密码\>**到该命令。  
+4.  如果你想要将证书导入 BizTalk 主机所使用的特定帐户中，追加 **/Useridentity\<用户身份\>/Password\<密码\>** 到该命令。  
   
-5.  如果你想要指定特定的指纹，以防.pfx 文件包含多个证书，并追加**/Thumbprint\<指纹\>**到该命令。  
+5.  如果你想要指定特定的指纹，以防.pfx 文件包含多个证书，并追加 **/Thumbprint\<指纹\>** 到该命令。  
   
-6.  如果你想要配置的证书的使用情况，追加**/Usage**到命令，然后追加以下值之一：  
+6.  如果你想要配置的证书的使用情况，追加 **/Usage**到命令，然后追加以下值之一：  
   
     -   追加**登录**要为 BizTalk 组添加为签名证书的证书的指纹。 在 BizTalk 管理控制台中的 Microsoft BizTalk server （本地） 对话框中设置。  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 01/17/2018
   
     -   追加**无**不要设置的配置 BizTalk 组或 BizTalk 主机。  
   
-7.  如果你想要配置为可导出的证书，则追加**/可导出 true**。 若要设置为非可导出的证书，请将追加**/可导出 false**，这是默认行为。  
+7.  如果你想要配置为可导出的证书，则追加 **/可导出 true**。 若要设置为非可导出的证书，请将追加 **/可导出 false**，这是默认行为。  
   
 8.  按 **Enter**。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 01/17/2018
   
 10. 如果该文件包含多个证书，但是你在命令中没有键入指纹，则该工具将显示出可用的指纹并提示你选择其中一个。 键入的数目，然后按指纹**Enter**。  
   
-     该工具将证书导入中指定的用户的 \Personal\Certificates 存储**/useridentity**切换。 如果未指定用户，默认的用户将是 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机的用户标识。  
+     该工具将证书导入中指定的用户的 \Personal\Certificates 存储 **/useridentity**切换。 如果未指定用户，默认的用户将是 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机的用户标识。  
   
 ### <a name="to-import-a-public-key"></a>导入公钥  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 01/17/2018
   
 3.  在命令提示符处，键入**CertWizard /Publickey \<filename\>.cer**，其中\< *filename*\>.cer 包含的公用证书。  
   
-4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹\>**到该命令。  
+4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加 **/Thumbprint\<指纹\>** 到该命令。  
   
      该工具将证书导入“证书（本地计算机）”\“其他人”\“证书”存储区，然后设置其配置。  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 01/17/2018
   
 3.  在命令提示符处，键入**CertWizard /Rootkey \<filename\>.cer**，其中\< *filename*\>.cer 包含的根证书。  
   
-4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加**/Thumbprint\<指纹\>**到该命令。  
+4.  如果你想要指定.cer 或.der 文件中的证书指纹，追加 **/Thumbprint\<指纹\>** 到该命令。  
   
      该工具将证书导入“证书（本地计算机）”\“受信任根证书授权机构”\“证书”存储区，然后设置其配置。  
   

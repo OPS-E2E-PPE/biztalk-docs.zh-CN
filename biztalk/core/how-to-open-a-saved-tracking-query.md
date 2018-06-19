@@ -1,17 +1,17 @@
 ---
-title: "如何打开已保存的跟踪查询 |Microsoft 文档"
-ms.custom: 
+title: 如何打开已保存的跟踪查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - queries [HAT], opening
 - queries [HAT]
 ms.assetid: 7e63c45c-b74e-40e1-9035-b7191d0803ff
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254389"
 ---
 # <a name="how-to-open-a-saved-tracking-query"></a>如何打开已保存的跟踪查询
 您可以打开一条针对实时跟踪数据的消息实例查询或服务实例查询（目前运行服务实例和消息）。 这可通过使用 BizTalk Server 管理控制台中“组中心”页上的“查询”选项卡来完成。  

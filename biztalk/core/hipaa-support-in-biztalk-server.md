@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 中的 HIPAA 支持 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 中的 HIPAA 支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d1ad8c64-6375-4364-80ce-440db943c222
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247405"
 ---
 # <a name="hipaa-support-in-biztalk-server"></a>BizTalk Server 中的 HIPAA 支持
 本主题提供了 HIPAA 和 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] 如何支持 HIPAA 的简要概述。  

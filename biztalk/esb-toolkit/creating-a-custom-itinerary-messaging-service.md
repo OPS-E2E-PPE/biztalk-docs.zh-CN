@@ -1,14 +1,14 @@
 ---
-title: "创建自定义路线消息传递服务 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义路线消息传递服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2de44c21-68ca-4cf1-a117-bcb35af1b4a9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973731"
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>创建自定义路线消息服务
 是的一部分的路线 framework[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持使用类实现的路线步骤执行**IMessagingService**执行路线的消息传递服务的接口。 当你想要进行负责执行以下的服务时，你可以实现自定义的消息传递服务：  
@@ -76,7 +77,7 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
  **若要实现自定义路线服务的消息传送**  
   
-1.  与派生自的类创建一个程序集**IMessagingService;**中**执行**方法，包括所需能够修改消息或消息上下文 （如果有） 的所有逻辑。  
+1.  与派生自的类创建一个程序集**IMessagingService;** 中**执行**方法，包括所需能够修改消息或消息上下文 （如果有） 的所有逻辑。  
   
 2.  添加将项记入**itineraryServices**添加你的服务 Esb.config 文件节 **\<itineraryService\>**  GUID，则为具有元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。  
   

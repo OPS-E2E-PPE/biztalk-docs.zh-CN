@@ -1,11 +1,11 @@
 ---
-title: "并行保护 |Microsoft 文档"
-ms.custom: 
+title: 并行保护 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Parallel Task shape [Orchestration Designer], concurrent receive tasks
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - orchestrations, messages
 - messages, correlating to orchestrations
 ms.assetid: 036aa8c0-f49c-47f0-ac1e-6c667bca3811
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264837"
 ---
 # <a name="parallel-convoys"></a>并行的保护
 一个并行的队列允许多个单个消息联接在一起以获得所需的结果。 一组相关消息可以按任何顺序到达，但 BizTalk Server 必须在启动进程之前收到所有这些。  

@@ -1,17 +1,17 @@
 ---
-title: "管理用户映射 |Microsoft 文档"
-ms.custom: 
+title: 管理用户映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO], managing
 - managing [SSO maps]
 ms.assetid: bde65a51-fcba-4dee-b673-34b731766480
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262453"
 ---
 # <a name="managing-user-mappings"></a>管理用户映射
 此部分提供有关如何创建和配置企业单一登录映射的信息。  

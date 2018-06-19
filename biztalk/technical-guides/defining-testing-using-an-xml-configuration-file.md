@@ -1,14 +1,14 @@
 ---
-title: "定义测试使用 XML 配置文件 |Microsoft 文档"
-ms.custom: 
+title: 定义测试使用 XML 配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8339bcf-26d7-4a43-b68e-c4220a7a851d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976331"
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>定义测试使用 XML 配置文件
 BizUnit 提供两种方法来定义测试： 通过 XML 配置文件和通过 Excel 工作表。 本主题重点介绍使用 XML 配置文件来定义测试;但是，你还应注意 BizUnit SDK，因为它提供了如何定义使用 Excel BizUnit 测试用例的一个有趣示例。 此外，你可能希望调查 BizUnit 设计器工具，它提供一个 GUI，允许快速创建 BizUnit 测试用例。 本主题概述了如何定义使用 XML 配置使用非常简化的方案的测试用例。  

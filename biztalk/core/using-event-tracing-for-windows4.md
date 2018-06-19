@@ -12,7 +12,7 @@ helpviewer_keywords:
 - BTAJDEEnterpriseOneTrace command
 - Event Tracing for Windows
 ms.assetid: 5f07d317-5ae2-4d1e-a343-941f3079dc4b
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973675"
 ---
 # <a name="using-event-tracing-for-windows"></a>使用适用于 Windows 跟踪的事件
 适用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以通过使用 Windows 事件跟踪 (ETW) 工具来查看其他跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件; 例如，tracerpt.exe 或 tracedmp.ex。 Tracept.exe 应用程序将转换 \*到两个文本文件的.etl: summary.txt 和 dumpfile.csv。  
@@ -43,11 +44,11 @@ ms.lasthandoff: 03/28/2018
   
  用于 JD Edwards EnterpriseOne 的 BizTalk 适配器包含三种提供程序，允许您记录不同种类的消息：  
   
--   **接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。 使用 **-接收方** 以获取日志收到的已适配器在运行时中的任何消息。  
+-   **接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。 使用 **-接收方** 以获取日志收到的已适配器在运行时中的任何消息。  
   
--   **发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。 使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。  
+-   **发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。 使用 **-发送器** 以获取已传输的适配器在运行时日志中的任何消息。  
   
--   **管理日志记录提供程序**:\<跟踪元素\>交换机**-管理**使用**-管理**若要获取生成日志中的任何消息期间浏览的服务器系统。  
+-   **管理日志记录提供程序**:\<跟踪元素\>交换机 **-管理**使用 **-管理**若要获取生成日志中的任何消息期间浏览的服务器系统。  
   
 ### <a name="btajdeenterpriseonetrace-command"></a>BTAJDEEnterpriseOneTrace 命令  
  若要使用 ETW，请运行博士 Edwards EnterpriseOne 命令 BizTalk 适配器 **BTAJDEEnterpriseOneTrace.cmd**。 如下所示使用此命令：  

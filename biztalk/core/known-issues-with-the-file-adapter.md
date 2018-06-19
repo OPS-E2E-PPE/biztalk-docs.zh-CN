@@ -1,14 +1,14 @@
 ---
-title: "文件适配器的已知问题 |Microsoft 文档"
-ms.custom: 
+title: 文件适配器的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6aaf448c-0035-4648-910b-ae2f15106342
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262885"
 ---
 # <a name="known-issues-with-the-file-adapter"></a>文件适配器的已知的问题
 本部分包含可帮助你避免出现错误的信息。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 -   请确保指定的路径或共享已存在。  
   
--   请确保帐户用作**登录：**帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。  
+-   请确保帐户用作**登录：** 帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。  
   
 -   请确保写入由文件接收适配器监视的文件夹的文件的文件名长度不超出 256 个字符。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 09/20/2017
   
 -   请确保位于指定接收位置的文件不具有系统属性。  
   
--   请确保帐户用作**登录：**帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。  
+-   请确保帐户用作**登录：** 帐户为 File 接收处理程序主机实例具有读取和写入权限指定接收位置。  
   
 -   请确保写入由文件接收适配器监视的文件夹的文件的文件名长度不超出 256 个字符。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 09/20/2017
   
 -   请确保指定的路径或共享已存在。  
   
--   请确保帐户用作**登录：**文件发送处理程序主机实例的帐户具有读取和写入到指定的目录或文件共享的权限。  
+-   请确保帐户用作**登录：** 文件发送处理程序主机实例的帐户具有读取和写入到指定的目录或文件共享的权限。  
   
 -   请确保位于指定目录或文件共享的现有文件不具有系统属性。  
   

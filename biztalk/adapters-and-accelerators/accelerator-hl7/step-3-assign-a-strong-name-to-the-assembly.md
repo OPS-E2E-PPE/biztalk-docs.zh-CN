@@ -1,18 +1,18 @@
 ---
-title: "步骤 3： 向程序集分配强名称 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 向程序集分配强名称 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies
 - message enrichment tutorial, strong name assemblies
 - strong name assemblies
 ms.assetid: 8709e4e1-b428-42af-ba3c-08225c17a9eb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "26004950"
 ---
 # <a name="step-3-assign-a-strong-name-to-the-assembly"></a>步骤 3： 向程序集分配强名称
 在此步骤中，创建并分配强名称的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]程序集。 具有强名称程序集提供多个安全优势，并要将部署到全局程序集缓存 (GAC) 中的项目需要。 强名称保证通过将数字签名和唯一的密钥对分配的程序集的唯一性。 这还可通过确保没有人可以生成程序集的后续版本的程序集的沿袭。 最后，强名称提供可靠的完整性检查，若要确保以来生成，未更改的程序集的内容。  

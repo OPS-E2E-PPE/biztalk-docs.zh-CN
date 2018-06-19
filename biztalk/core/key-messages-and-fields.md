@@ -1,17 +1,17 @@
 ---
-title: "关键消息和字段 |Microsoft 文档"
-ms.custom: 
+title: 关键消息和字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process management solution tutorial, processing
 - processing, processing logic
 ms.assetid: 77db0706-dfdc-48b0-8ca4-bae7ab2d7641
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263925"
 ---
 # <a name="key-messages-and-fields"></a>关键信息和字段
 本部分简要介绍重要信息和字段由**OrderBroker**和**OrderManager**业务流程。 应用程序中的消息的完整列表，请参阅[业务流程管理解决方案的消息引用](../core/message-reference-for-the-business-process-management-solution.md)。  

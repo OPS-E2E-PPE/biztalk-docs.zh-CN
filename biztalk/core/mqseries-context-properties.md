@@ -1,11 +1,11 @@
 ---
-title: "MQSeries 上下文属性 |Microsoft 文档"
-ms.custom: 
+title: MQSeries 上下文属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MQXQH_RemoteQName property [MQSeries adapters]
@@ -80,7 +80,7 @@ helpviewer_keywords:
 - MQCIH_ADSDescriptor property [MQSeries adapters]
 - MQMD_MsgId property [MQSeries adapters]
 ms.assetid: 1b22b7d7-432b-4ec5-938c-c43077ce3e0f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -89,6 +89,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22266621"
 ---
 # <a name="mqseries-context-properties"></a>MQSeries 上下文属性
 MQSeries 适配器提供了一组特定于 MQSeries 的上下文属性以供您在应用程序中使用。 您可以在筛选表达式和业务流程中使用这些属性。  
@@ -113,7 +114,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |----------|----------|------------|-----------|  
 |**MQMD_AccountingToken**|string|64|十六进制字符串|  
 |**MQMD_ApplIdentityData**|string|32|十六进制字符串|  
-|**MQMD_ApplOriginData**|string|4|字符串<br /><br /> **默认值：**空间|  
+|**MQMD_ApplOriginData**|string|4|字符串<br /><br /> **默认值：** 空间|  
 |**MQMD_BackoutCount**|unsigned int|4|Number<br /><br /> 只读<br /><br /> **默认值：** 0|  
 |**MQMD_CodedCharSetId**|unsigned int|4|Number<br /><br /> **默认值：** 0|  
 |**MQMD_CorrelId**|string|48|十六进制字符串|  
@@ -130,12 +131,12 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQMD_OriginalLength**|unsigned int|4||  
 |**MQMD_Persistence**|unsigned int|4|Number<br /><br /> 使用头文件值。|  
 |**MQMD_Priority**|unsigned int|4|Number|  
-|**MQMD_PutApplName**|string|28|字符串<br /><br /> **默认值：**空间|  
+|**MQMD_PutApplName**|string|28|字符串<br /><br /> **默认值：** 空间|  
 |**MQMD_PutApplType**|unsigned int|4|Number<br /><br /> 使用头文件值。 **默认值：** 0|  
 |**MQMD_PutDate**|string|8|日期|  
 |**MQMD_PutTime**|string|8|Time|  
-|**MQMD_ReplyToQ**|string|48|字符串<br /><br /> **默认值：**空间|  
-|**MQMD_ReplyToQMgr**|string|48|字符串<br /><br /> **默认值：**空间|  
+|**MQMD_ReplyToQ**|string|48|字符串<br /><br /> **默认值：** 空间|  
+|**MQMD_ReplyToQMgr**|string|48|字符串<br /><br /> **默认值：** 空间|  
 |**MQMD_Report**|unsigned int|4|Number<br /><br /> 使用头文件值。|  
 |**MQMD_UserIdentifier**|string|12|字符串<br /><br /> 当你使用包含用户标识符**SSOAffiliateApplication**属性。|  
   
@@ -199,7 +200,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_AbendCode**|string|4||  
 |**MQCIH_ADSDescriptor**|unsigned int|4||  
 |**MQCIH_AttentionId**|string|4||  
-|**MQCIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：**将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
+|**MQCIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：** 将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
 |**MQCIH_CancelCode**|string|4||  
 |**MQCIH_CompCode**|unsigned int|4||  
 |**MQCIH_ConversationalTask**|unsigned int|4||  
@@ -222,7 +223,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_TaskEndStatus**|unsigned int|4||  
 |**MQCIH_TransactionId**|string|4||  
 |**MQCIH_UOWControl**|unsigned int|4||  
-|**MQIIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：**将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
+|**MQIIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：** 将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
 |**MQIIH_CommitMode**|string|||  
 |**MQIIH_Flags**|unsigned int|4||  
 |**MQIIH_Format**|string|||  

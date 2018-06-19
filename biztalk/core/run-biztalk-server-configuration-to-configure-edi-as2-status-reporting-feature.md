@@ -1,14 +1,14 @@
 ---
-title: "若要启用状态报告、 运行和 #39;BizTalk Server 配置 &#39;和配置 EDI AS2 状态报告功能 |Microsoft 文档"
-ms.custom: 
+title: '若要启用状态报告、 运行和 #39;BizTalk Server 配置 &#39;和配置 EDI AS2 状态报告功能 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf125919-80ab-4cb8-b1f5-0f2616cc6f5c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268909"
 ---
 # <a name="to-enable-status-reporting-run-39biztalk-server-configuration39-and-configure-edi-as2-status-reporting-feature"></a>若要启用状态报告、 运行和 #39;BizTalk Server 配置 &#39;和配置 EDI AS2 状态报告功能
 ## <a name="details"></a>详细信息  

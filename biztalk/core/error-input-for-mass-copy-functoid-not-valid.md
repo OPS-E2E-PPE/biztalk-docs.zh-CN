@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240525"
 ---
 # <a name="error---input-for-mass-copy-functoid-not-valid"></a>错误-输入不是有效的大容量复制 Functoid
 **错误代码**  

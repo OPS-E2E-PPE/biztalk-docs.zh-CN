@@ -1,11 +1,11 @@
 ---
-title: "什么是邮件跟踪？ | Microsoft Docs"
-ms.custom: 
+title: 什么是邮件跟踪？ | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HAT, metadata
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - configuring [HAT tracking], messages
 - data, security
 ms.assetid: 51cec59d-b411-4d8f-b771-7b2cf0f38945
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974635"
 ---
 # <a name="what-is-message-tracking"></a>什么是邮件跟踪？
 消息是一种电子形式的数据实例，通常在两个运行的业务流程或应用程序之间进行交换。 消息实例由消息正文、消息属性和元数据构成。  

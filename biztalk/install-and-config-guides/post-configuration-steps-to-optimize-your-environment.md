@@ -1,15 +1,15 @@
 ---
-title: "后配置步骤来优化您的环境 |Microsoft 文档"
-description: "任务完成后安装和配置 BizTalk Server 中，包括配置 SQL 代理作业、 安装的 EDI 架构、 创建主机和主机实例以及 BizTalk Server 中的详细信息"
-ms.custom: 
+title: 后配置步骤来优化您的环境 |Microsoft 文档
+description: 任务完成后安装和配置 BizTalk Server 中，包括配置 SQL 代理作业、 安装的 EDI 架构、 创建主机和主机实例以及 BizTalk Server 中的详细信息
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 09/27/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d0fef6ea-e7cc-4ea9-936d-5d638bc43feb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976835"
 ---
 # <a name="post-configuration-steps-to-optimize-your-environment"></a>用于优化环境的配置后步骤
 配置后步骤可帮助提高性能、维护 BizTalk 环境和安装 EDI 架构。

@@ -1,14 +1,14 @@
 ---
-title: "无法获取绑定类型绑定扩展 |Microsoft 文档"
-ms.custom: 
+title: 无法获取绑定类型绑定扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a7cfc81-7439-48f9-8cac-42b2419ecd9d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973763"
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a>无法获取绑定扩展的绑定类型
 ## <a name="details"></a>详细信息  
@@ -37,9 +38,9 @@ ms.lasthandoff: 11/28/2017
 ## <a name="user-action"></a>用户操作  
  要解决此错误，请执行以下一项或多项操作：  
   
--   确保**machine.config 文件**中**%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions** \>正确配置的元素。  
+-   确保**machine.config 文件**中 **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config**具有\< **bindingExtensions** \>正确配置的元素。  
   
--   在 Windows 资源管理器，转到**%WinDir%\Assembly**，并确保正确安装的程序集实现的自定义绑定扩展。  
+-   在 Windows 资源管理器，转到 **%WinDir%\Assembly**，并确保正确安装的程序集实现的自定义绑定扩展。  
   
 -   对于 WCF-Custom 适配器，在 BizTalk 管理控制台中，重新启动运行 WCF 传输的主机实例。  
   

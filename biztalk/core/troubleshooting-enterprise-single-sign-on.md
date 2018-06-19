@@ -1,14 +1,14 @@
 ---
-title: "企业单一登录故障排除 |Microsoft 文档"
-ms.custom: 
+title: 企业单一登录故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb54af9f-a6ef-46c1-b987-2019cff3f837
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975307"
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a>企业单一登录故障排除
 本主题提供有关使用企业单一登录 (SSO) 时所遇到的常见问题的信息。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/28/2017
   
 |问题|注释|  
 |--------------|--------------|  
-|应用程序事件日志中是否有来自 SSO 系统的任何内容？|事件日志中的 SSO 消息可帮助您缩小 SSO 系统中问题的范围。 SSO 系统中消息的源为 ENTSSO。 **重要说明：**的许多 SSO 错误和事件显示为警告在事件日志中，不为错误。 当问题影响 SSO 服务的单个客户端时，SSO 系统生成警告，而问题影响整个 SSO 系统（所有客户端）时，则生成错误。|  
+|应用程序事件日志中是否有来自 SSO 系统的任何内容？|事件日志中的 SSO 消息可帮助您缩小 SSO 系统中问题的范围。 SSO 系统中消息的源为 ENTSSO。 **重要说明：** 的许多 SSO 错误和事件显示为警告在事件日志中，不为错误。 当问题影响 SSO 服务的单个客户端时，SSO 系统生成警告，而问题影响整个 SSO 系统（所有客户端）时，则生成错误。|  
 |是否正确安装了SSO 服务？<br /><br /> SSO 服务是否按预期启动？<br /><br /> SSO 服务在哪个服务帐户下运行？|确保 SSO 服务正确安装，并且服务帐户是 SSO 管理员组的成员。|  
 |SSO 数据库位于何处？|使用命令行 **ssoconfig -showdb**。 有关此命令的详细信息，请参阅[如何显示 SSO 数据库信息](../core/how-to-display-the-sso-database-information.md)。|  
 |正在使用哪个 SSO 服务器？|使用命令行 **ssomanage -showserver**。 有关此命令的详细信息，请参阅[如何设置 SSO 服务器](../core/how-to-set-the-sso-server.md)。|  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/28/2017
 |从外观上看，特定关联应用程序是否正确？<br /><br /> 哪些帐户在使用此关联应用程序？|使用命令行**ssomanage-displayapp***\<应用程序名称\>*。 有关此命令的详细信息，请参阅[如何列出 Affiliate 应用程序属性](../core/how-to-list-the-properties-of-an-affiliate-application.md)。|  
 |此关联应用程序是否有任何映射？|使用命令行**ssomanage-listmappings***\<应用程序名称\>*。 有关此命令的详细信息，请参阅[如何列表用户映射](../core/how-to-list-user-mappings.md)。|  
 |哪些帐户是 SSO 组的成员？|验证所有 SSO 组和帐户的组成员关系。|  
-|SSO 服务器的 COM+ 应用程序是否按预期运行？|验证 SSO 服务器的 COM+ 应用程序。 **注意：**还可以检查事件日志的详细信息，如事件和警告消息。|  
+|SSO 服务器的 COM+ 应用程序是否按预期运行？|验证 SSO 服务器的 COM+ 应用程序。 **注意：** 还可以检查事件日志的详细信息，如事件和警告消息。|  
   
 ## <a name="known-issues"></a>已知问题  
   

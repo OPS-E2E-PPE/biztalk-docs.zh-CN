@@ -1,14 +1,14 @@
 ---
-title: "调用来自另一个策略的策略 |Microsoft 文档"
-ms.custom: 
+title: 调用来自另一个策略的策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5bf658a-02a1-426a-abe5-8c9de673cf0d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973555"
 ---
 # <a name="invoking-a-policy-from-another-policy"></a>从其他策略调用策略
 您可以通过使用以下方式之一从其他策略（父策略）调用策略（子策略）：  
@@ -35,15 +36,15 @@ ms.lasthandoff: 11/28/2017
   
 ##### <a name="to-add-the-policyexecute-method-as-an-action-to-a-policy"></a>将 Policy.Execute 方法作为操作添加到某一策略  
   
-1.  在事实浏览器窗口中，单击**.NET 类**选项卡。  
+1.  在事实浏览器窗口中，单击 **.NET 类**选项卡。  
   
-2.  右键单击**.NET 程序集**，然后单击**浏览**。  
+2.  右键单击 **.NET 程序集**，然后单击**浏览**。  
   
-3.  选择**Microsoft.RuleEngine**从**.NET 程序集**列表，，然后单击**确定**。  
+3.  选择**Microsoft.RuleEngine**从 **.NET 程序集**列表，，然后单击**确定**。  
   
 4.  展开**策略**。  
   
-5.  拖动**Execute （对象事实）**或**Execute （对象事实，IRuleSetTrackingInterceptor trackingInterceptor）**到然后窗格。  
+5.  拖动**Execute （对象事实）** 或**Execute （对象事实，IRuleSetTrackingInterceptor trackingInterceptor）** 到然后窗格。  
   
 6.  单击**XML 架构**节点。  
   
@@ -54,11 +55,11 @@ ms.lasthandoff: 11/28/2017
   
 8.  选择你想要将一个事实中，作为传递，然后单击的 XML 文档的架构**打开**。  
   
-9. 拖动*\<架构名称\>*到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。  
+9. 拖动*\<架构名称\>* 到的第一个参数的.xsd **Policy.Execute**方法可以传递到子策略事实作为传递到父策略的 XML 文档。  
   
 10. 如果你使用**执行**方法不采用**IRuleSetTrackingInterceptor**作为第二个自变量，跳过以下步骤。  
   
-11. 单击**.NET 类**选项卡。  
+11. 单击 **.NET 类**选项卡。  
   
 12. 拖动**DebugTrackingInterceptor**中**Microsoft.RuleEngine**到的第二个参数**Policy.Execute**方法。  
   

@@ -1,14 +1,14 @@
 ---
-title: "DynamicReceive 示例 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: DynamicReceive 示例 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa7c934-7ec3-45ad-b226-c8c53934ecb1
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972739"
 ---
 # <a name="dynamicreceive-sample-biztalk-server-sample"></a>DynamicReceive 示例（BizTalk Server 示例）
 DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MQSeries 从消息队列时动态指定 MQSeries 队列的 URI。  

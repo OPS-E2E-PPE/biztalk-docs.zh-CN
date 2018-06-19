@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973611"
 ---
 # <a name="using-event-tracing-for-windows"></a>使用适用于 Windows 跟踪的事件
 用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器。 使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，你必须提供要解释的使用者应用程序 \*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。 例如，tracerpt.exe 应用程序将为 \*到两个文本文件的.etl 文件︰ summary.txt 和 dumpfile.csv。  
@@ -52,11 +53,11 @@ ms.lasthandoff: 03/28/2018
   
  用于 TIBCO Enterprise Message Service 的 BizTalk 适配器具有允许您记录不同类型消息的提供程序：  
   
--   **接收方日志记录提供程序**:\<跟踪元素\>交换机**-接收方**。  
+-   **接收方日志记录提供程序**:\<跟踪元素\>交换机 **-接收方**。  
   
      使用 **-接收方** 以获得在运行时收到了适配器的日志的任何消息。  
   
--   **发送器日志记录提供程序**:\<跟踪元素\>交换机**-发送器**。  
+-   **发送器日志记录提供程序**:\<跟踪元素\>交换机 **-发送器**。  
   
      使用 **-发送器**以获得在运行时该适配器已传输的日志的任何消息。  
   

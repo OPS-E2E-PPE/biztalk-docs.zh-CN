@@ -1,11 +1,11 @@
 ---
-title: "使用跟踪活动定义文件 |Microsoft 文档"
-ms.custom: 
+title: 使用跟踪活动定义文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking, activity definition file
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - tracking, managing views
 - activity definition file, activity fields
 ms.assetid: 0592a844-aad7-4054-b1e7-344f1086f0b1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26009374"
 ---
 # <a name="working-with-the-tracking-activity-definition-file"></a>使用跟踪活动定义文件
 活动定义文件包含有关跟踪的信息中的过程和消息活动[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用此文件来管理跟踪中 BizTalk 业务活动监视 (BAM) 的数据。 定义文件是一个 XML 文件 (Tracking.xml)，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装在\<*驱动器*\>: files\microsoft BizTalk 2013 Accelerator RosettaNet \BAMTracking 文件夹。 Tracking.xml 中定义的活动可能足以满足你的需要。  

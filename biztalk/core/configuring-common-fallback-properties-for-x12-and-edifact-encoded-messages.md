@@ -1,14 +1,14 @@
 ---
-title: "配置常见回退属性的 X12 和 EDIFACT 编码消息 |Microsoft 文档"
-ms.custom: 
+title: 配置常见回退属性的 X12 和 EDIFACT 编码消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7393d6ac-b901-43ef-a8d6-c5b0b3033257
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006030"
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a>为 X12 和 EDIFACT 编码的消息配置通用后备属性
 后备属性同时适用于 X12（包括 HIPAA）和 EDIFACT 编码的交换。 和所有后备协议属性一样，仅当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 尚未确定解析传入或传出消息所用的协议时，这些属性才适用。  

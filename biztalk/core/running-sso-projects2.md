@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25972611"
 ---
 # <a name="running-sso-projects"></a>运行 SSO 项目
 您可以从 Internet Explorer 运行示例单一登录 (SSO) 项目。  

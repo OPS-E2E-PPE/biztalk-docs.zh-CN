@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22257997"
 ---
 # <a name="importbindings-command"></a>ImportBindings 命令
 用于将绑定从基于 XML 的绑定文件导入到 BizTalk 应用程序或组中。 绑定可能已导出从程序集，应用程序或组中, 所述[导出绑定](../core/exporting-bindings6.md)。 根据绑定的导出位置，ApplicationName 和 GroupLevel 参数具有不同的作用。 有关详细信息，请参阅本主题后面的“备注”。  

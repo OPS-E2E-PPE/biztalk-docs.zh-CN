@@ -1,11 +1,11 @@
 ---
-title: "操作任务 |Microsoft 文档"
-ms.custom: 
+title: 操作任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Accelerator for SWIFT, managing
 - administering
 ms.assetid: 555335a0-5a85-4498-b34f-97bb508ea5b1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26004286"
 ---
 # <a name="operational-tasks"></a>操作任务
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包含一个或多个服务器和一系列的企业应用程序集成 (EAI)，自动化财务业务流程，以及为使用 SWIFT FIN 标准的消息交换的工具。  

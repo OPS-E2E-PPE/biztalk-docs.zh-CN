@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715af9cc-d718-483d-b593-64462aa5a58b
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976051"
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>演练：使用头部和尾部拆装平面文件
 
@@ -128,7 +129,7 @@ ms.lasthandoff: 03/28/2018
   
      当满足要求，单击 **完成** 以完成向导。  
   
-10. 单击**\<架构\>**在标头的架构窗格中的节点。 在属性窗格中，更改 **元素 FormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
+10. 单击**\<架构\>** 在标头的架构窗格中的节点。 在属性窗格中，更改 **元素 FormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a>使用平面文件架构向导创建尾部架构  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/28/2018
   
      当满足要求，单击 **完成** 以完成向导。  
   
-10. 单击**\<架构\>**预告片架构窗格中的节点。 在属性窗格中，更改 **elementFormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
+10. 单击**\<架构\>** 预告片架构窗格中的节点。 在属性窗格中，更改 **elementFormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a>使用平面文件架构向导创建正文架构  
   
@@ -216,9 +217,9 @@ ms.lasthandoff: 03/28/2018
   
      如果所做的任何错误，请单击 **回** 并进行必要的更正。 当满足要求，单击 **完成** 以完成向导。  
   
-15. 单击**\<架构\>**正文架构窗格中的节点。 在属性窗格中，更改 **元素 FormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
+15. 单击**\<架构\>** 正文架构窗格中的节点。 在属性窗格中，更改 **元素 FormDefault** 到 **合格**。 这指明本地声明的元素必须受到实例文档中的目标命名空间的限定。  
   
-16. 单击**\<错误\>**正文架构窗格上的节点。 在属性窗格中，更改 **Max Occurs** 到 **1**。 这将使平面文件拆装器把每个错误拆分到各自的消息中。  
+16. 单击**\<错误\>** 正文架构窗格上的节点。 在属性窗格中，更改 **Max Occurs** 到 **1**。 这将使平面文件拆装器把每个错误拆分到各自的消息中。  
   
 ##### <a name="test-the-schemas-using-ffdasm"></a>测试使用 FFDasm 的架构  
   

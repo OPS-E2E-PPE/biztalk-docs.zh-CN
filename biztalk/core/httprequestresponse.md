@@ -1,17 +1,17 @@
 ---
-title: "HTTPRequestResponse |Microsoft 文档"
-ms.custom: 
+title: HTTPRequestResponse |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: 81c66f61-d86c-49cf-8d24-21c67c68bc5a
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973747"
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Internet 服务器应用程序编程接口 (ISAPI) 筛选器允许 ASP.NET 应用程序与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程通信。  
@@ -36,7 +37,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
  ASP.NET 应用程序接收此 XML PO 回执响应，并使用从此响应中提取的状态信息刷新 Web 窗体。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\AdaptersUsage\HTTPRequestResponse\  
+ *\<示例路径\>* \AdaptersUsage\HTTPRequestResponse\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -64,7 +65,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
     -   编译并配置用于驱动本示例的 ASP.NET 应用程序。  
   
         > [!NOTE]
-        >  在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本**.Net Framework v4.0**。  
+        >  在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本 **.Net Framework v4.0**。  
   
     -   编译并部署本示例中使用的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。  
   

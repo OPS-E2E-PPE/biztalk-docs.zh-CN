@@ -1,14 +1,14 @@
 ---
-title: "如何使用 BizTalk 平面文件架构向导 |Microsoft 文档"
-ms.custom: 
+title: 如何使用 BizTalk 平面文件架构向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7cb8b18-266d-422e-bdb8-1efefb6b4c8e
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22258293"
 ---
 # <a name="how-to-use-biztalk-flat-file-schema-wizard"></a>如何使用“BizTalk 平面文件架构向导”
 在以前的 BizTalk Server 版本中，您必须在 BizTalk 架构编辑器中手动向 XML 架构定义 (XSD) 语言架构添加批注，才能使平面文件管道组件（例如，平面文件拆装器和平面文件组装器）理解这些架构。 你仍然可以这样做使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]架构编辑器。 为了减少创建解决方案的手动步骤和所需时间，您可以使用“BizTalk 平面文件架构向导”，该向导提供以下功能：  
@@ -210,7 +211,7 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  你将看到前端中的叹号**子节点**如下例所示：  
   
--   **字段特性**后定义**Field 元素**，**记录，**或**重复记录**。  
+-   **字段特性**后定义**Field 元素**，**记录，** 或**重复记录**。  
   
 -   子元素没有名称。  
   

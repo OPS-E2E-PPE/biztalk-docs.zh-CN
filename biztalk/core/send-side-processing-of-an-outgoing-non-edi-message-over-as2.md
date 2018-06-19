@@ -1,14 +1,14 @@
 ---
-title: "发送方的传出非 EDI 消息处理通过 AS2 |Microsoft 文档"
-ms.custom: 
+title: 发送方的传出非 EDI 消息处理通过 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3f19b7df-fe6d-4105-8a44-3d6db0bba451
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271845"
 ---
 # <a name="send-side-processing-of-an-outgoing-non-edi-message-over-as2"></a>传出通过 AS2 非 EDI 消息的发送端处理
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 随附的 AS2 管道可用于处理通过 AS2 传输发送的 EDI 消息或非 EDI 消息。 不同的管道可用于两种不同类型的负载。 可以使用 AS2EdiSend 管道处理通过 AS2 传出的 EDI 消息，并使用 AS2Receive 管道接收关联的 MDN（如果已启用）。 可以使用 AS2Send 管道处理通过 AS2 传出的非 EDI 消息，并使用 AS2Receive 管道接收关联的 MDN（如果已启用）。 非 EDI 消息可以是任何二进制负载。  

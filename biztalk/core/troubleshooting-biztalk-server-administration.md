@@ -1,14 +1,14 @@
 ---
-title: "故障排除 BizTalk Server 管理 |Microsoft 文档"
-ms.custom: 
+title: 故障排除 BizTalk Server 管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dfb56b0-352f-4012-b030-087bbcfe09d4
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975075"
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>故障排除的 BizTalk Server 管理
 本部分提供有关使用 BizTalk Server 管理控制台时遇到的常见问题的信息的一个集中的位置。  

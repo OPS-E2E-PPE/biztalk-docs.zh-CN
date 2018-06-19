@@ -1,18 +1,18 @@
 ---
-title: "如何列出用户帐户具有访问权限添加到视图 |Microsoft 文档"
-ms.custom: 
+title: 如何列出用户帐户具有访问权限添加到视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - user accounts, BAM
 - managing [BAM], user accounts
 - Get-Accounts utility [BAM]
 ms.assetid: 690fb45a-6de0-489e-9ddd-e88e29413c16
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972507"
 ---
 # <a name="how-to-list-user-accounts-with-access-to-a-view"></a>如何列出具有视图访问权限的用户帐户
 管理员使用**get 帐户**BAM 管理实用程序命令，以便获取列表视图角色，这意味着所有的用户帐户有权访问指定的视图的所有用户帐户。  

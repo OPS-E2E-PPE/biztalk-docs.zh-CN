@@ -1,17 +1,17 @@
 ---
-title: "进度维度 |Microsoft 文档"
-ms.custom: 
+title: 进度维度 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], progress dimensions
 - Progress dimension [BAM]
 ms.assetid: 472fcbf6-502f-4c81-bf48-f7eec98e391b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25973491"
 ---
 # <a name="progress-dimension"></a>进度维度
 可以使用进度维度来按照 BAM 活动所到达的里程碑对这些活动进行分组。 此功能通过示例得到了最好的说明。  

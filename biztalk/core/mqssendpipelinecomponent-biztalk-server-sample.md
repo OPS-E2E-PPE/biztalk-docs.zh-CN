@@ -13,7 +13,7 @@ helpviewer_keywords:
 - MQSeries adapters, examples
 - examples, pipelines
 ms.assetid: ac709e45-524b-45ab-9673-060790ecbed2
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25976115"
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent（BizTalk Server 示例）
 本示例演示如何写入从 XML 文件读取一组 MQSeries 属性值并将其应用到消息的管道组件。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 03/28/2018
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
   
--   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   *\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
   
--   *\<SamplesPath\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   *\<SamplesPath\>* \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
   
  下表显示了本示例中的文件及其用途说明：  
   

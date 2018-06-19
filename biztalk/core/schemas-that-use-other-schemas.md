@@ -1,14 +1,14 @@
 ---
-title: "使用其他架构的架构 |Microsoft 文档"
-ms.custom: 
+title: 使用其他架构的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02954d46-48ce-4cdf-a012-74c212ce8b6d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271597"
 ---
 # <a name="schemas-that-use-other-schemas"></a>使用其他架构的架构
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/20/2017
 |---------------------------|--------------------|  
 |导入|的访问，并使用在导入的架构中定义的类型。<br />-必须在导入的架构，使用类型或它们; 从其派生新类型不允许的类型修改。<br />-提供有关使用其他命名空间中定义的类型的机制。 事实上，导入的架构必须具有不同于导入架构的目标命名空间。<br />-使用**导入**元素并将其**命名空间**和**schemaLocation**属性来引用的其他架构。|  
 |包括|-访问和使用包含的架构中定义的类型。<br />-必须在包含的架构，使用类型或它们; 从其派生新类型不允许的类型修改。<br />-包含的架构必须包括的架构中，相同的目标命名空间中或包含架构的目标命名空间必须为空。<br />-使用**包括**元素并将其**schemaLocation**属性来引用的其他架构。|  
-|重新定义|的访问，并使用重新定义架构中定义的类型。<br />-可以重新定义架构中的使用类型按原样，新类型派生，或指定对其进行修改。<br />-重新定义的架构必须重新定义的架构相同的目标命名空间中，或重新定义架构的目标命名空间必须为空。<br />-使用**重新定义**元素并将其**schemaLocation**属性来引用的其他架构。 使用指定了任何类型重新定义**重新定义**元素。 **注意：**使用重新定义机制是一个高级的 XSD 概念，并且仅用于后必须足够了解如何以及何时应使用。|  
+|重新定义|的访问，并使用重新定义架构中定义的类型。<br />-可以重新定义架构中的使用类型按原样，新类型派生，或指定对其进行修改。<br />-重新定义的架构必须重新定义的架构相同的目标命名空间中，或重新定义架构的目标命名空间必须为空。<br />-使用**重新定义**元素并将其**schemaLocation**属性来引用的其他架构。 使用指定了任何类型重新定义**重新定义**元素。 **注意：** 使用重新定义机制是一个高级的 XSD 概念，并且仅用于后必须足够了解如何以及何时应使用。|  
   
 > [!NOTE]
 >  有关的差异和相似性之间导入的完整信息，包括，和重新定义机制，请参阅中列出的引用[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。  

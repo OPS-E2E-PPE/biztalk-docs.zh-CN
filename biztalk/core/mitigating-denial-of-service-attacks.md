@@ -1,11 +1,11 @@
 ---
-title: "减少拒绝服务攻击 |Microsoft 文档"
-ms.custom: 
+title: 减少拒绝服务攻击 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IPSec, message protection
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Internet Information Services (IIS) Lockdown Tool
 - Denial of Service attacks
 ms.assetid: f39c0d0a-b890-4c48-874d-5cafbc71473c
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971739"
 ---
 # <a name="mitigating-denial-of-service-attacks"></a>减少拒绝服务攻击
 建议使用以下缓解措施来保护您的 BizTalk Server 和服务免受拒绝服务攻击。 您必须确定其中哪些缓解措施适用于您的环境。  

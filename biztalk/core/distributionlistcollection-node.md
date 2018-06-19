@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239733"
 ---
 # <a name="distributionlistcollection-node"></a>DistributionListCollection 节点
 绑定文件的 DistributionListCollection 节点是所有 DistributionList 节点的父节点，DistributionList 节点包含与绑定文件一起导出的分发列表有关的特定信息。  

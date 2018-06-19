@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9aa88ca7-a731-4295-8692-6dd36fdf0872
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25973163"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>如何打开、 保存、 关闭，以及重命名映射
 在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，映射在文件系统中以扩展名为 .btm 的文件形式存在。 不过，它是得更加常见，若要使用映射作为 BizTalk 项目，你在其中执行操作，如打开、 保存和关闭地图中的项。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  在解决方案资源管理器，选择你想要将保存到新位置的映射。  
   
-2.  上**文件**菜单上，单击**保存*\<名称的映射\>*作为**。  
+2.  上**文件**菜单上，单击**保存*\<名称的映射\>* 作为**。  
   
 3.  在 **文件另存为** 对话框中，浏览到你想要保存代码图的文件夹位置。  
   

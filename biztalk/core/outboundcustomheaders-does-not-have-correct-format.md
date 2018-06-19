@@ -1,14 +1,14 @@
 ---
-title: "OutboundCustomHeaders 没有正确的格式 |Microsoft 文档"
-ms.custom: 
+title: OutboundCustomHeaders 没有正确的格式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6097762b-01c9-48b8-8cee-ccd6b11d28d4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971259"
 ---
 # <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders 没有正确的格式
 ## <a name="details"></a>详细信息  

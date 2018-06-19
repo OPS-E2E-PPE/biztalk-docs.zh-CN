@@ -1,11 +1,11 @@
 ---
-title: "如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置发布服务元数据绑定到业务流程端口 |Microsoft 文档"
-ms.custom: 
+title: 如何使用发布向导的 BizTalk WCF 服务的 WCF 接收位置发布服务元数据绑定到业务流程端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF Service Publishing Wizard, publishing metadata
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - WCF services, metadata
 - orchestrations, WCF services
 ms.assetid: 04ccce9f-8d18-433a-8299-d06fa155db06
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975043"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a>如何使用 BizTalk WCF 服务发布向导为已绑定到业务流程端口的 WCF 接收位置发布服务元数据
 您可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为已绑定到业务流程端口的现有 WCF 接收位置发布服务元数据。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  上**BizTalk WCF 服务发布向导欢迎**页上，单击**下一步**。  
   
-3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)**选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。  
+3.  上**WCF 服务类型**页上，选择**元数据仅终结点 (MEX)** 选项可将发布为提供 WCF 服务元数据的 WCF 服务接收将在下一步中选择的位置。  
   
      ![WCF 服务类型页](../core/media/794a85b5-6454-4cce-8c15-382b5583b0f2.gif "794a85b5-6454-4cce-8c15-382b5583b0f2")  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/28/2017
   
      ![创建 WCF 服务页](../core/media/86cb66b5-6842-4330-8942-20afa68ec5fa.gif "86cb66b5-6842-4330-8942-20afa68ec5fa")  
   
-6.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布服务元数据，然后单击**下一步**。  
+6.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 文本框中，键入 BizTalk 程序集文件的名称，或单击**浏览**以浏览到包含业务流程的程序集以发布服务元数据，然后单击**下一步**。  
   
     > [!NOTE]
     >  在选择 BizTalk 程序集文件之前, 将所有依赖程序集复制到同一文件夹中，与 BizTalk 程序集或安装到全局程序集缓存 (GAC 中) 的依赖程序集。  

@@ -1,14 +1,14 @@
 ---
-title: "测试 BizTalk Server 虚拟化性能 |Microsoft 文档"
-ms.custom: 
+title: 测试 BizTalk Server 虚拟化性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d09121b1-cdd6-4c01-9d69-0f1923464f0e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008566"
 ---
 # <a name="testing-biztalk-server-virtualization-performance"></a>测试 BizTalk Server 虚拟化性能
 在本指南中所述的性能测试方案的每个已部署在 Microsoft 测试实验室中，物理计算机上以及然后在每个不同的系统体系结构上执行相同的负载测试了。 每台物理计算机上的主机操作系统已完全安装的[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 64 位版本，安装了 HYPER-V 服务器角色。 用于测试 BizTalk Server 中的虚拟机使用已设置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 作为来宾操作系统的 64 位版本。 用于测试 SQL Server 的虚拟机使用已设置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 作为来宾操作系统的 64 位版本。 测试方案、 测试方法、 性能测试结果和后续分析用于制定一系列的最佳实践和指南设计，实现时，以及优化虚拟化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

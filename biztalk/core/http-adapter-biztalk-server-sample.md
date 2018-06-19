@@ -1,17 +1,17 @@
 ---
-title: "HTTP 适配器 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, examples
 - examples, HTTP adapters
 ms.assetid: f3bd8172-15c4-42fa-aa17-e4bed9d4aba4
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,12 +20,13 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974483"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP 适配器 （BizTalk Server 示例）
 HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应通信范例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\AdaptersDevelopment\HttpAdapter\  
+ *\<示例路径\>* \AdaptersDevelopment\HttpAdapter\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -137,7 +138,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和请求/响应�
  现在，HTTP.NET 适配器已经准备就绪，可供您的应用程序使用了。 配置的适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。  
   
 ## <a name="comments"></a>注释  
- 中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径\>*\AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类可以加快适配器的开发速度。 请参考 BaseAdapter 代码注释了解所提供的类的详细信息。  
+ 中提供的 BaseAdapter 类使用 HTTP.NET 适配器使*\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类可以加快适配器的开发速度。 请参考 BaseAdapter 代码注释了解所提供的类的详细信息。  
   
 ## <a name="see-also"></a>另请参阅  
  [注册的适配器](../core/registering-an-adapter.md)   

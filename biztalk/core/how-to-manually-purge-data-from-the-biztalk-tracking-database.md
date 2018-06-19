@@ -1,18 +1,18 @@
 ---
-title: "如何从 BizTalk 跟踪数据库手动清除数据 |Microsoft 文档"
-ms.custom: 
+title: 如何从 BizTalk 跟踪数据库手动清除数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking database, purging
 - purging, manually
 - purging, warnings
 ms.assetid: f350d850-5034-4166-940c-8d10b7b445fb
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25971699"
 ---
 # <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>如何从 BizTalk 跟踪数据库手动清除数据
 由于 DTA 存档和清除 SQL Server 代理作业不断清除 BizTalk 跟踪 (BizTalkDTADb) 数据库并对存储的跟踪数据进行压缩，因此可减少从该数据库中手动清除数据的需要。 但是，如果 BizTalk 跟踪 (BizTalkDTADb) 数据库迅速增长，从而导致性能持续下降以及 DTA 存档和清除作业无法跟上数据库的增长速度，则可能需要手动清除数据。  

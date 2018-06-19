@@ -11,7 +11,7 @@ helpviewer_keywords:
 - validating, archives [Tracking database]
 - archiving [Tracking database], validating archive
 ms.assetid: 406ca54a-6b1f-4bdb-9bad-bea5ea0f6e66
-caps.latest.revision: ''
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25971795"
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>如何启用自动存档验证
 使用存档验证可以在创建存档时对其进行验证。 启用自动存档验证之前，必须先设置一个辅助数据库服务器，也称为验证服务器。 由于存档进程是一个简单备份，因此存储在磁盘上的实际图像可能由于硬件问题而受损。  

@@ -1,11 +1,11 @@
 ---
-title: "实现企业单一登录 |Microsoft 文档"
-ms.custom: 
+title: 实现企业单一登录 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, about SSO
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - SSO
 - SSO, service accounts
 ms.assetid: 155a62fc-5dc5-4aee-9602-b970067c1bf2
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256461"
 ---
 # <a name="implementing-enterprise-single-sign-on"></a>实现企业单一登录
 企业单一登录 (SSO) 提供的相关服务可使企业应用程序集成 (EAI) 解决方案的最终用户能够使用单一登录。 SSO 系统将 Microsoft Windows 帐户映射到后端凭据。 对于用户和管理员来说，SSO 简化了对用户 ID 和密码的管理。 使用 SSO，用户只需登录 Windows 网络一次，即可访问后端系统和应用程序。  

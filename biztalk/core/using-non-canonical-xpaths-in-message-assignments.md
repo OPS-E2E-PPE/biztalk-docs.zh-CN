@@ -1,14 +1,14 @@
 ---
-title: "在消息分配中使用非规范 Xpath |Microsoft 文档"
-ms.custom: 
+title: 在消息分配中使用非规范 Xpath |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 052d1d72-43ce-4654-bf29-86f82ad65e91
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287621"
 ---
 # <a name="using-non-canonical-xpaths-in-message-assignments"></a>在消息赋值中使用非规范化 XPath
 如果使用 .Net 消息部分，则可以用 XML 序列化属性批注代码，不过，当代码中还附带可分辨字段和/或属性批注时，会使 XPath 表达式变得极其复杂。 这些复杂的 XPath 表达式可能是非规范化的。 非规范化 XPath 只能用于直接绑定的业务流程，如果用于逻辑绑定或物理绑定的业务流程，可能会失败。 直接绑定的业务流程不依赖管道来处理 XML 文档，因此在处理之前，整个 XML 文档已加载到内存中。  

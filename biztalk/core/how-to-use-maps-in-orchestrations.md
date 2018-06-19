@@ -1,14 +1,14 @@
 ---
-title: "如何在业务流程中使用地图 |Microsoft 文档"
-ms.custom: 
+title: 如何在业务流程中使用地图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfd628d8-c163-431d-8ad7-d7d77007c549
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255325"
 ---
 # <a name="how-to-use-maps-in-orchestrations"></a>如何在业务流程中使用地图
 BizTalk 映射程序是一个工具，在 Microsoft 内运行[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。 BizTalk 映射器可用来创建和编辑映射，在映射中可使用链接和 functoid 定义输入和输出架构之间的关系。 链接定义了记录或字段的直接数据复制。 链接可以直接连接到另一架构中的项，也可以构成指向 functoid 的连接。 functoid 可以执行更加复杂的数据操作。  

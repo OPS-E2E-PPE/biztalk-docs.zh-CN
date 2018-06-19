@@ -1,11 +1,11 @@
 ---
-title: "在 SMTP 标头中使用宏的限制 |Microsoft 文档"
-ms.custom: 
+title: 在 SMTP 标头中使用宏的限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring [SMTP adapters], restrictions
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - configuring [SMTP adapters], macros
 - SMTP headers
 ms.assetid: ceab0917-cb3c-423b-a15f-63747ab1d8da
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268637"
 ---
 # <a name="restrictions-on-using-macros-in-smtp-headers"></a>在 SMTP 标头中使用宏的限制
 您可以使用预定义的宏集合动态地在 SMTP 消息标头上构成“主题” 、“收件人” 、“发件人” 和“抄送”  属性。 在发送消息前，SMTP 发送处理程序使用宏的值替代标头中的所有宏。 当形成一个标头时，您可以使用多个不同的宏。  

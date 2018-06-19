@@ -1,14 +1,14 @@
 ---
-title: "测试方案，用于测量引擎 MST |Microsoft 文档"
-ms.custom: 
+title: 测试方案，用于测量引擎 MST |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008014"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>测量引擎的 MST 的测试方案
 本部分介绍的测试方案用于度量在三个不同负载级别上驱动 BizTalk 系统的效果：  
@@ -80,15 +81,15 @@ ms.lasthandoff: 12/01/2017
   
  以下参数是可在度量 MST 时计算的辅助指标。 这些参数可能会影响后台处理深度的主要指标，以及每秒收到的文档数。  
   
--   物理磁盘空闲时间 MessageBox 数据和事务文件磁盘测量**%空闲时间**计数器适用于**逻辑磁盘使用情况**性能对象。  
+-   物理磁盘空闲时间 MessageBox 数据和事务文件磁盘测量 **%空闲时间**计数器适用于**逻辑磁盘使用情况**性能对象。  
   
 -   MessageBox 服务器测量的 CPU 使用率 （%） **%Processor Time**计数器适用于**处理器**性能对象。  
   
 -   每秒锁超时消息框上的数据库测量**Lock Timeouts/sec**计数器适用于**sqlserver: Locks**性能对象。  
   
--   最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除的消息关联的 MessageBox 表。 这通过测量**MsgBox 消息 Cleanup(Purge Jobs)**计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。  
+-   最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除的消息关联的 MessageBox 表。 这通过测量**MsgBox 消息 Cleanup(Purge Jobs)** 计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。  
   
--   最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除消息的各部分关联的 MessageBox 表。 这通过测量**MsgBox 部件 Cleanup(Purge Jobs)**计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。  
+-   最近运行 SQL 代理作业的时间（秒），该作业用于清除与删除消息的各部分关联的 MessageBox 表。 这通过测量**MsgBox 部件 Cleanup(Purge Jobs)** 计数器适用于**BizTalk:MessageBox:General 计数器**性能对象。  
   
  在测试以确定最大可承受吞吐量时，输入负载将增大到后台处理表开始无限增长的点上。  
   

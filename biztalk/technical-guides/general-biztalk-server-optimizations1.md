@@ -1,14 +1,14 @@
 ---
-title: "常规 BizTalk Server Optimizations1 |Microsoft 文档"
-ms.custom: 
+title: 常规 BizTalk Server Optimizations1 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8032553-bae3-440d-9197-b926160b0bdf
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25976787"
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 可以使用以下建议以提高 BizTalk Server 性能。 安装并配置 BizTalk Server 之后，将应用本主题中列出的优化。  
@@ -156,7 +157,7 @@ ms.lasthandoff: 01/17/2018
 > [!NOTE]  
 >  此设置是全局设置，无法为单个应用程序池或应用程序的更改。  
   
-1.  依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+1.  依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
   
 2.  导航到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 01/17/2018
 > [!NOTE]  
 >  此设置是全局设置，无法为单个应用程序池或应用程序的更改。  
   
-1.  依次单击 **启动”**和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+1.  依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
   
 2.  导航到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0**。  
   
@@ -244,7 +245,7 @@ ms.lasthandoff: 01/17/2018
 |线程处理设置|默认值|推荐值|  
 |------------------------|-------------------|-----------------------|  
 |最大 IO 线程|250|250|  
-|最大工作线程|25|100**重要说明：**增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 我们建议不增加 100 的值超出此参数。|  
+|最大工作线程|25|100**重要说明：** 增加 100 超出此值可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 我们建议不增加 100 的值超出此参数。|  
 |最小的 IO 线程|25|25|  
 |最小工作线程|5|25|  
   

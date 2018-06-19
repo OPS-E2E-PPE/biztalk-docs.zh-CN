@@ -1,11 +1,11 @@
 ---
-title: "演练： 使用 XML 信封 (Basic) |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用 XML 信封 (Basic) |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - content-based routing, promoting properties
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - routing, messages
 - routing, promoting properties
 ms.assetid: 02d0c596-0cfe-4bae-9f1b-d7dbc17e18a9
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975748"
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a>演练： 使用 XML 信封 (Basic)
 本示例通过实现部分虚构的错误跟踪系统来演示基本的 XML 信封拆装。 该示例要满足以下条件：  
@@ -105,7 +106,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  将根节点的名称从“Root”改为“Envelope”。  
   
-4.  现在，将该架构标记为信封架构。 单击**\<架构\>**节点。 在属性窗格中，将架构引用属性设置**信封**到`OK`。  
+4.  现在，将该架构标记为信封架构。 单击**\<架构\>** 节点。 在属性窗格中，将架构引用属性设置**信封**到`OK`。  
   
 5.  设置**正文 XPath**属性。 若要执行此操作，请单击**信封**节点。 在属性窗口中，单击省略号 (**...**) 按钮**正文 XPath**属性中，选择**信封**，然后单击**确定**。  
   

@@ -1,18 +1,18 @@
 ---
-title: "在与业务流程的 WCF 消息中使用 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 在与业务流程的 WCF 消息中使用 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, SOAP headers [WCF services]
 - WCF services, orchestrations
 - WCF services, SOAP headers
 ms.assetid: 31c01e35-a2a6-4ea9-bdf4-6d4311268dbe
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25972907"
 ---
 # <a name="using-soap-headers-in-wcf-messages-with-orchestrations"></a>在与业务流程的 WCF 消息中使用 SOAP 标头
 若要在业务流程中发送传出的 WCF 消息的自定义 SOAP 标头，你可以使用上下文属性**WCF。OutboundCustomHeaders**。 WCF 适配器将自定义 SOAP 标头与 WCF 基础结构用于 Web 服务标准（如 WS-Addressing、WS-Security 和 WS-AtomicTransaction）的标准 SOAP 标头合并在一起进行发送。 当你使用**OutboundCustomHeaders**属性，该属性必须具有\<**标头**\>作为根元素的元素。 所有自定义 SOAP 标头必须放置在\<**标头**\>元素。 如果自定义 SOAP 标头的值为空字符串，则必须分配\<**标头**\>\</**标头**\>或\<**标头**/ \>到**OutboundCustomHeaders**属性。  

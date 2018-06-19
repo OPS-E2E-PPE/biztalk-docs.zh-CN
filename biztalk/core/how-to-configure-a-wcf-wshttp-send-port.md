@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 035d9a62-b8a3-4705-a7bc-b62676437206
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25974659"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-port"></a>如何配置 WCF-WSHttp 发送端口
 可以通过编程方式或使用 BizTalk Server 管理控制台来配置 WCF-WSHttp 发送端口。  

@@ -1,11 +1,11 @@
 ---
-title: "如何维护策略版本 |Microsoft 文档"
-ms.custom: 
+title: 如何维护策略版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - policies, versioning
 - policies, updating
 ms.assetid: 6e35b2bd-1ecd-45ea-aff3-4ad2437568a4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254493"
 ---
 # <a name="how-to-maintain-policy-versions"></a>如何维护策略版本
 向策略版本添加规则后，您可以将该版本保存到规则存储中以供进一步开发使用，或者也可发布该版本以创建定义明确并且不可改变的规则集（可以部署此规则集以便在基于规则的应用程序中使用）。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-update-a-policy-to-use-an-updated-assembly"></a>更新策略以使用更新的程序集  
   
-1.  单击**启动**，指向**管理工具**，指向**.NET Framework 配置**，然后单击**配置程序集**.  
+1.  单击**启动**，指向**管理工具**，指向 **.NET Framework 配置**，然后单击**配置程序集**.  
   
 2.  转到属性目标的程序集和单击**绑定策略**选项卡。  
   

@@ -1,14 +1,14 @@
 ---
-title: "实例化隔离的适配器 |Microsoft 文档"
-ms.custom: 
+title: 实例化隔离的适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9b8359a3-b098-4bb6-87b4-d3432d2671b1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257485"
 ---
 # <a name="instantiating-isolated-adapters"></a>实例化隔离的适配器
 如前面所述，由 BizTalk Server 未实例化隔离的适配器。 而是在另一个进程中实例化并以此进程为宿主。 负责创建其传输代理的适配器**QueryInterface**，为**IBTTransportProxy**，然后调用**IBTTransportProxy**。**RegisterIsolatedReceiver**注册消息引擎。  
@@ -56,7 +57,7 @@ private IBTTransportProxy transportProxy;
 }  
 ```  
   
- **实现提示：**建议适配器保留工作正在进行的计数。 适配器应阻止**终止**直到消息计数已达到零。 在接收端此工作包括尚未发布到 BizTalk Server 任何未完成的请求。 响应消息还未发送到接收适配器后**终止**已调用。  
+ **实现提示：** 建议适配器保留工作正在进行的计数。 适配器应阻止**终止**直到消息计数已达到零。 在接收端此工作包括尚未发布到 BizTalk Server 任何未完成的请求。 响应消息还未发送到接收适配器后**终止**已调用。  
   
  对于发送适配器，应适当地处理正在进行的消息。 这意味着应从要阻止不止一次发送消息的适配器的私有应用程序消息队列中删除已成功传递的任何消息。  
   

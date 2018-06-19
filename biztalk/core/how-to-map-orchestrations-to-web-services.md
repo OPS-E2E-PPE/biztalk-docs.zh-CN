@@ -1,11 +1,11 @@
 ---
-title: "如何映射到 Web 服务的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何映射到 Web 服务的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, Web services
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, naming conventions
 - Web services, naming conventions
 ms.assetid: e6a58978-c81c-49f3-9428-9bff60f1ded7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,11 +23,12 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255725"
 ---
 # <a name="how-to-map-orchestrations-to-web-services"></a>如何映射到 Web 服务的业务流程
 业务流程可以有多个接收端口。 使用 BizTalk Web 服务发布向导，你选择接收端口作为 Web 服务进行发布。 该向导将为每个接收端口创建一个 Web Services（.asmx 文件）。 如果它们具有相同的接收端口类型，该向导还可以创建一个 Web 服务接收端口的所有 (单向或请求/响应)。 操作变得函数调用。 接收端口中的每个操作将成为一个 Web 方法。 请求操作变得输入的参数。 响应操作变得返回类型。  
   
- 如果请求和响应操作相同的 Web 消息类型，输入的参数将成为**ref**和返回类型是**void**。 ASP.NET Web 客户端可以通过合并相同类型的 in 参数和 out 参数更改 Web 方法签名。 例如，ASP.NET Web 客户端可能会更改从某一 BizTalk Web 方法**字符串 myService （字符串一部分）**到**void myService （ref 字符串一部分）**。  
+ 如果请求和响应操作相同的 Web 消息类型，输入的参数将成为**ref**和返回类型是**void**。 ASP.NET Web 客户端可以通过合并相同类型的 in 参数和 out 参数更改 Web 方法签名。 例如，ASP.NET Web 客户端可能会更改从某一 BizTalk Web 方法**字符串 myService （字符串一部分）** 到**void myService （ref 字符串一部分）**。  
   
  这些操作消息类型定义 Web 方法的签名。 每个消息类型部分是 Web 方法中的一个参数。  
   

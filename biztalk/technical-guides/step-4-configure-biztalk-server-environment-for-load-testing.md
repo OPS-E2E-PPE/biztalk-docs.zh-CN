@@ -1,14 +1,14 @@
 ---
-title: "步骤 4： 配置用于负载测试的 BizTalk Server 环境 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 配置用于负载测试的 BizTalk Server 环境 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f336c5f-5a18-493d-8fc0-a8a475ab47b3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976803"
 ---
 # <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>步骤 4： 配置用于负载测试的 BizTalk Server 环境
 本主题提供有关创建 BizTalk Server 接收位置，接收端口的信息和运行主题所述的示例代码所需的发送端口[步骤 1： 创建单元测试以提交给 BizTalk Server 的文档进行](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)和[步骤 3： 创建负载测试，以同时执行多个单元测试](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
 |受信任验证|确保未选中此框。|  
 |仅限 32 位|确保未选中此框。|  
 |将其用作组中的默认主机|确保未选中此框。|  
-|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>*和*\<域名\>*占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
+|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>* \BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>* \BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>* 和*\<域名\>* 占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
   
  重复执行您遵循创建用来创建"接收"宿主"发送"主机时的步骤。 使用以下属性值配置"接收"主机：  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
 |受信任验证|确保未选中此框。|  
 |仅限 32 位|确保未选中此框。|  
 |将其用作组中的默认主机|确保未选中此框。|  
-|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>*\BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>*\BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>*和*\<域名\>*占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
+|Windows 组|用于控制对此主机与关联的主机实例的访问的 Windows 组。 为默认进程内主机为创建的窗口组*\<计算机名称\>* \BizTalk 应用程序用户 （适用于单个服务器 BizTalk Server 安装） 或 *\<域名\>* \BizTalk 应用程序用户 （适用于多个服务器需要域组使用的 BizTalk Server 安装）。 **注意：***\<计算机名称\>* 和*\<域名\>* 占位符的实际计算机名或域名创建组时使用。   <br /><br /> 如果为该主机中创建新组，则它必须具有本主题所述的特权[主机组](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server 文档中。|  
   
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>创建 BizTalk Server 发送的实例，并接收主机  
  请按照 BizTalk Server 文档主题中的步骤[如何添加一个主机实例](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596) 创建并启动 BizTalk Server"发送"主机的实例。 配置要在 BizTalk Server 组中每个 BizTalk 服务器上运行并将每个主机实例配置为带有以下属性值的"发送"主机的实例：  
@@ -114,8 +115,8 @@ ms.lasthandoff: 11/28/2017
 |Binding\NetTcpBindingElement\listenBacklog|400|  
 |Binding\NetTcpBindingElement\maxConnections|400|  
 |Binding\Security\NetTcpSecurityElement\mode|无|  
-|Behavior\ServiceBehavior\serviceThrottling\ServiceThrottlingElement**注意：**将 serviceThrottling 行为添加到的行为，右键单击 ServiceBehavior 列表单击**添加扩展**，选择**serviceThrottling**从列表中的行为扩展，然后单击**确定**。|设置**ServiceThrottlingElement**为以下值的属性：<br /><br /> -   **maxConcurrentCalls** 400<br />-   **maxConcurrentInstances** 400<br />-   **maxConcurrentSessions** 400|  
-|Behavior\ServiceBehavior\serviceDebug\ServiceDebugElement**注意：**将 serviceDebug 行为添加到的行为，右键单击 ServiceBehavior 列表单击**添加扩展**，选择**serviceDebug**从列表中的行为扩展，然后单击**确定**。|保留的列表**ServiceDebugElement**其默认值 （空） 除外的以下属性，其中应更改为 True 的值的属性：<br /><br /> -   **httpHelpPageEnabled** True<br />-   **httpsHelpPageEnabled** True<br />-   **includeExceptionDetailInFaults** True|  
+|Behavior\ServiceBehavior\serviceThrottling\ServiceThrottlingElement**注意：** 将 serviceThrottling 行为添加到的行为，右键单击 ServiceBehavior 列表单击**添加扩展**，选择**serviceThrottling**从列表中的行为扩展，然后单击**确定**。|设置**ServiceThrottlingElement**为以下值的属性：<br /><br /> -   **maxConcurrentCalls** 400<br />-   **maxConcurrentInstances** 400<br />-   **maxConcurrentSessions** 400|  
+|Behavior\ServiceBehavior\serviceDebug\ServiceDebugElement**注意：** 将 serviceDebug 行为添加到的行为，右键单击 ServiceBehavior 列表单击**添加扩展**，选择**serviceDebug**从列表中的行为扩展，然后单击**确定**。|保留的列表**ServiceDebugElement**其默认值 （空） 除外的以下属性，其中应更改为 True 的值的属性：<br /><br /> -   **httpHelpPageEnabled** True<br />-   **httpsHelpPageEnabled** True<br />-   **includeExceptionDetailInFaults** True|  
   
  单击**确定**若要关闭 WCF 自定义传输属性对话框中，然后单击**确定**以关闭接收位置属性对话框。  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 11/28/2017
 |Filters\Name|BTS.ReceivePortName|  
 |Filters\Operator|==|  
 |Filters\Value|BTSLoadTest.Messaging.OneWay.ReceivePort|  
-|通过 Filters\Group|和**注意：**这些属性配置为包含正确的值，如果筛选器应显示为`BTS.ReceivePortName == BTSLoadTest.Messaging.OneWay.ReceivePort`b 中的发送端口属性对话框的筛选器页的底部所示ox。 由于应用此筛选器，此发送端口订阅接收 BizTalk Server 通过名为 BTSLoadTest.Messaging.OneWay.ReceivePort 的接收端口的任何消息。|  
+|通过 Filters\Group|和**注意：** 这些属性配置为包含正确的值，如果筛选器应显示为`BTS.ReceivePortName == BTSLoadTest.Messaging.OneWay.ReceivePort`b 中的发送端口属性对话框的筛选器页的底部所示ox。 由于应用此筛选器，此发送端口订阅接收 BizTalk Server 通过名为 BTSLoadTest.Messaging.OneWay.ReceivePort 的接收端口的任何消息。|  
 |跟踪|请确保所有框未选中。|  
 |General\Type|选择**WCF 自定义**从下拉列表，然后单击**配置**按钮，这将显示**WCF 自定义传输属性**对话框中，它应该是配置中下一节所述**配置 WCF 自定义发送传输**。|  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 11/28/2017
   
 |属性|值|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://*\<计算机名称\>*: 2001年/TCP1**重要说明：***\<计算机名称\>*是一个占位符对于用于承载 IndigoService.exe 的实际计算机名称，该方法旨在使用通过 WCF 发送的消息。   由于 IndigoService.exe 需要很少的资源，它通常是完全可以接受用于 BizTalk Server 组数据库的 SQL Server 计算机上运行 IndigoService.exe。 IndigoService.exe 属于 BizTalk 基准向导中，位于[BizTalk 基准向导](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
+|General\Address (URI)|net.tcp://*\<计算机名称\>*: 2001年/TCP1**重要说明：***\<计算机名称\>* 是一个占位符对于用于承载 IndigoService.exe 的实际计算机名称，该方法旨在使用通过 WCF 发送的消息。   由于 IndigoService.exe 需要很少的资源，它通常是完全可以接受用于 BizTalk Server 组数据库的 SQL Server 计算机上运行 IndigoService.exe。 IndigoService.exe 属于 BizTalk 基准向导中，位于[BizTalk 基准向导](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)。|  
 |Binding\Binding 类型|**customBinding**|  
   
  与大多数 WCF 自定义绑定类型**customBinding**绑定类型公开多个属性，应设置为以下值：  
@@ -219,9 +220,9 @@ ms.lasthandoff: 11/28/2017
   
 8.  单击以选择**主机实例**BizTalk 设置仪表板的左侧窗格中。  
   
-9. 单击下拉列表中下一步**主机实例：**若要选择将用于性能测试的主机实例之一。  
+9. 单击下拉列表中下一步**主机实例：** 若要选择将用于性能测试的主机实例之一。  
   
-10. 将属性值保留为其默认设置，除了更改**.NET CLR 最大工作线程**为值**100**和更改**.NET CLR 最小工作线程**到值**25**。  
+10. 将属性值保留为其默认设置，除了更改 **.NET CLR 最大工作线程**为值**100**和更改 **.NET CLR 最小工作线程**到值**25**。  
   
 11. 重复此过程的性能测试过程中将使用每个主机实例的步骤 10 中所述的过程。  
   
