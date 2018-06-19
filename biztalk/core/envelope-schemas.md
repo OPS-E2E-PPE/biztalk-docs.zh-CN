@@ -1,14 +1,14 @@
 ---
-title: "信封架构 |Microsoft 文档"
-ms.custom: 
+title: 信封架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af296c30-95dc-4fef-9aa3-bea2f2cd8caf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970603"
 ---
 # <a name="envelope-schemas"></a>信封架构
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
 -   如果信封架构具有多个根和**根引用**属性时，必须设置**正文 XPath**属性的相应根**记录**节点。 你可以选择性地设置**正文 XPath**剩余的根的属性。  
   
--   无论是否信封架构具有单个根或多个根，设置**[根引用**属性不是必需。  
+-   无论是否信封架构具有单个根或多个根，设置 **[根引用**属性不是必需。  
 
 这些属性的更多详细信息[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   

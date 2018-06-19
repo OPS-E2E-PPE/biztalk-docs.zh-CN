@@ -1,18 +1,18 @@
 ---
-title: "更改要将重新生成字段 |Microsoft 文档"
-ms.custom: 
+title: 更改要将重新生成字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - rekeyed fields
 - Message Repair and New Submission, modifying fields
 - Message Repair and New Submission, rekeyed fields
 ms.assetid: aaf353f7-0e43-403e-b72a-88e5dd07f4ac
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964491"
 ---
 # <a name="changing-fields-to-be-rekeyed"></a>更改字段以将重新生成
 消息修复工作流，在验证步骤[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]从多个字段中删除数据，以便验证程序必须重新输入，或重新生成密钥，该数据。 你可以自定义 RekeyVerify 中的哪些字段[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体需要将重新生成。 这样做在 MrsrXpathConfig.xml 文件中，它位于\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\MRSR 文件夹。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968435"
 ---
 # <a name="error---index-functoid-has-no-index"></a>错误-索引 Functoid 不具有索引
 **错误代码**  

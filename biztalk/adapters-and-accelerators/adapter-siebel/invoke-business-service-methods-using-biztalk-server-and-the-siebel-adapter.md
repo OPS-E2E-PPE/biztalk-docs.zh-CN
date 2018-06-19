@@ -1,17 +1,17 @@
 ---
-title: "调用业务服务方法使用 BizTalk Server 和 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 调用业务服务方法使用 BizTalk Server 和 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, invoke business service methods
 - business service methods, invoking
 ms.assetid: cf437c4f-fa65-4f89-a197-c83869930b2c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966155"
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>调用业务服务方法使用 BizTalk Server 和 Siebel 适配器
 Siebel 业务服务是可以在 Siebel 中直接调用的业务方法的集合。 有关详细信息，如何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持业务服务调用在 Siebel 系统中，请参阅[对业务服务中 Siebel 操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)。 对于执行业务服务操作的消息的 SOAP 结构的详细信息，请参阅[业务服务操作的消息架构](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)。  

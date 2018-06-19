@@ -1,14 +1,14 @@
 ---
-title: "使用动态解析和路由 |Microsoft 文档"
-ms.custom: 
+title: 使用动态解析和路由 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90ae4a5c-e388-4409-b7ac-633e4acc61aa
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295005"
 ---
 # <a name="using-dynamic-resolution-and-routing"></a>使用动态解析和路由
 除了基于路线的路由，[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持动态解析为基于配置的路由，以避免硬编码中组件和服务的路由信息的要求。 本节包含下列主题：  

@@ -1,11 +1,11 @@
 ---
-title: "创建或编辑合作伙伴 |Microsoft 文档"
-ms.custom: 
+title: 创建或编辑合作伙伴 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, trading partners
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - trading partners, modifying
 - trading partners, about trading partners
 ms.assetid: 63809035-65a5-472d-b2e5-359c8e9d9d8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966659"
 ---
 # <a name="creating-or-editing-a-partner"></a>创建或编辑合作伙伴
 本主题介绍如何创建或编辑合作伙伴。 合作伙伴配置描述和分类合作伙伴、 设置不可否认性，源期间的、 对于合作伙伴，配置证书和提供了联系人信息。  

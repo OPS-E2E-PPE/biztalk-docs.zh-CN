@@ -1,17 +1,17 @@
 ---
-title: "HL7 2.X 版 |Microsoft 文档"
-ms.custom: 
+title: HL7 2.X 版 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTAHL7, supported 2.X versions
 - HL7, 2.X versions
 ms.assetid: 289e4e1c-5215-412f-8a2a-346316e61e4b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960371"
 ---
 # <a name="hl7-2x-versions"></a>HL7 2.X 版
 下表列出的运行状况级别七 (HL7) 标准的 2.X 版本、 批准 HL7 组织中的日期，并列出哪些版本[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) 支持。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为 WCF 服务发布 Siebel 业务组件操作 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 WCF 服务发布 Siebel 业务组件操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: acfa0c36-50f1-45c1-9fc2-e5e5cedaa6a0
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966339"
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>步骤 1： 发布 Siebel 业务组件操作作为 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**可以使用 WCF 适配器服务开发向导在如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中生成可承载的 WCF 服务。 本主题演示如何使用向导来生成 WCF 服务文件。  
+ **目标：** 可以使用 WCF 适配器服务开发向导在如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中生成可承载的 WCF 服务。 本主题演示如何使用向导来生成 WCF 服务文件。  
   
 ## <a name="prerequisites"></a>先决条件  
  运行向导之前，安装以下项：  
@@ -92,10 +93,10 @@ ms.lasthandoff: 11/28/2017
         |IncludeExceptionDetailsinFault|将其设置为**True**返回到客户端以便进行调试的 SOAP 错误的详细信息中包含托管的异常信息。 默认值是**False**。|  
         |Name|服务行为配置名称。|  
         |UseServiceCertificate|指定是否想要使用的 WCF 消息级别安全模式。 默认值是**True**。<br /><br /> 对于本教程，你必须将其设置**False**。|  
-        |FindValue|一个字符串，指定要在 X.509 证书存储区中搜索的值。<br /><br /> **注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |StoreLocation|一个值，指定服务可用于验证客户端的证书的证书存储区的位置。<br /><br /> **注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |StoreName|若要打开的 X.509 证书存储区的名称。<br /><br /> **注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-        |X509FindType|要执行的 X.509 搜索的类型。<br /><br /> **注意：**为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |FindValue|一个字符串，指定要在 X.509 证书存储区中搜索的值。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |StoreLocation|一个值，指定服务可用于验证客户端的证书的证书存储区的位置。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |StoreName|若要打开的 X.509 证书存储区的名称。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+        |X509FindType|要执行的 X.509 搜索的类型。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
   
         > [!NOTE]
         >  有关证书和关联的属性的详细信息，请参阅[X509ClientCertificateCredentialsElement 属性](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)。
@@ -106,8 +107,8 @@ ms.lasthandoff: 11/28/2017
         |----------------------|-----------------------|  
         |身份验证类型|-将此设置为**ClientCredentialUserNamePassword**以允许客户端在使用 WCF 服务时指定的用户名和密码。<br /><br /> -将此设置为**HTTPUserNamePassword**以使客户端的 HTTP 标头的一部分指定用户名和密码。<br /><br /> -将此设置为**自动**首先允许客户端指定凭据通过**ClientCredential**接口。 如果此操作失败，客户端可以将凭据传递的 HTTP 标头的一部分。<br /><br /> 默认值是**自动**。对于 Microsoft Office SharePoint Server，可以使用的 WCF 服务，你应将其设置为**HTTPUserNamePassword**。|  
         |Name|指定终结点行为配置的名称。|  
-        |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：**如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
-        |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：**如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
+        |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
+        |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
   
      下图显示使用指定的值的配置服务和终结点行为页。  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 11/28/2017
   
     |属性|指定的值|  
     |----------------------|-----------------------|  
-    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮**（...）**来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅[BasicHttpBindingElement 类](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)。|  
+    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮 **（...）** 来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅[BasicHttpBindingElement 类](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx)。|  
     |端点名称|指定协定的终结点名称。|  
   
      根据你在前面的页面中指定的值自动填充此页上的其他字段。  

@@ -1,14 +1,14 @@
 ---
-title: "执行可用性测试 |Microsoft 文档"
-ms.custom: 
+title: 执行可用性测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10b543dd-ba85-40da-8c6f-485eddb59158
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298301"
 ---
 # <a name="performing-availability-testing"></a>执行可用性测试
 你应测试系统，以验证其能够从不同级别的失败，范围从小规模故障 （如网络卡故障） 到生产服务器的丢失将恢复的灾难恢复。 灾难恢复测试应包括以下步骤：  

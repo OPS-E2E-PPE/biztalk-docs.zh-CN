@@ -1,11 +1,11 @@
 ---
-title: "声明自定义项 |Microsoft 文档"
-ms.custom: 
+title: 声明自定义项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - declared customizations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - customizing, Z objects
 - customizing, declared customizations
 ms.assetid: 484655e9-8bfa-4643-bbe6-4ef69cbd83ad
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204781"
 ---
 # <a name="declared-customizations"></a>声明的自定义项
 借助声明自定义，你可以修改或添加到 HL7 消息灵活。 你甚至可以定义新类型的消息。 你可以在任何通过以下方式来执行此操作：  

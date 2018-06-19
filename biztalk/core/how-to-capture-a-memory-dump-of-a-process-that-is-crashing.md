@@ -1,14 +1,14 @@
 ---
-title: "如何捕获所 Crashing 进程内存转储 |Microsoft 文档"
-ms.custom: 
+title: 如何捕获所 Crashing 进程内存转储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f436b72-2b6a-4519-acc3-e7ba978651fe
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969563"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-crashing"></a>如何捕获所 Crashing 进程内存转储
 BTSNTSvc.exe 定义为 BizTalk 进程**崩溃**进程由 Windows 的意外终止时。 崩溃通常是由进程中未处理的异常（如访问冲突或堆栈溢出）引起的。 在这些情况下，Windows 默认调试器，灾难恢复。Watson (drwtsn32.exe) 捕获异常并终止进程。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试迁移使用的应用程序的 SQL 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试迁移使用的应用程序的 SQL 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 929ce2f3-94ed-4e12-b629-e229769f825a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964019"
 ---
 # <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>步骤 3： 测试迁移使用的应用程序的 SQL 适配器
 ![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，将测试已迁移应用程序，通过执行对 Customer 表的插入操作。 若要执行此操作，你可以删除符合架构使用 vPrev 生成的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
+ **目标：** 在此步骤中，将测试已迁移应用程序，通过执行对 Customer 表的插入操作。 若要执行此操作，你可以删除符合架构使用 vPrev 生成的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
 ## <a name="prerequisites"></a>先决条件  
   

@@ -1,14 +1,14 @@
 ---
-title: "调用在 Oracle E-business Suite 中的请求集 |Microsoft 文档"
-ms.custom: 
+title: 调用在 Oracle E-business Suite 中的请求集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a79bff63-325d-4745-ab0e-839e00476ab1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967771"
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite"></a>调用在 Oracle E-business Suite 中的请求集
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]使您能够在 Oracle E-business Suite 中执行请求集。 请求集划分为一个或多个阶段和每个阶段包含一组报表和并发程序。 有关如何的适配器支持请求集的详细信息，请参阅[对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。 对于调用请求设置消息的 SOAP 结构的信息，请参阅[为请求设置的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-request-sets.md)。  

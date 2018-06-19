@@ -11,7 +11,7 @@ helpviewer_keywords:
 - naming conventions [schemas]
 - schemas, naming conventions
 ms.assetid: 3c1f2519-2575-4178-89c1-e97333c1e6bd
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25960819"
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT 架构的命名约定
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 包括用于互联网协会用于使用 BizTalk 编辑器创建的全球 Interbank 财务电信 (SWIFT) FIN 消息架构。 这些架构符合在整个以下约定：  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/28/2018
   
 -   在每个消息架构，根的名称是**SWIFT_CATEGORY*z*_MT*zxx*_Interchange**，其中*z*是消息类别 （消息类型的第一个数字） 和*zxx*是消息类型。  
   
--   每个消息架构的目标命名空间是 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx * * *，其中*z*消息类别 （第一个数字的消息类型） 和*zxx*是消息类型。  
+-   每个消息架构的目标命名空间是 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z */MT*zxx * * *，其中*z*消息类别 （第一个数字的消息类型） 和*zxx*是消息类型。  
   
 -   文档类型是 **MT*zxx * * *，其中*zxx*是消息类型。  
   

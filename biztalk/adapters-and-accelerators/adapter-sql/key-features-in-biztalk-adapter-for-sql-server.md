@@ -1,14 +1,14 @@
 ---
-title: "SQL Server 的密钥中的 BizTalk Adapter 功能 |Microsoft 文档"
-ms.custom: 
+title: SQL Server 的密钥中的 BizTalk Adapter 功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6beab8d-c2c4-4add-860c-054b9aed8d70
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967819"
 ---
 # <a name="key-features-in-biztalk-adapter-for-sql-server"></a>用于 SQL Server 的 BizTalk Adapter 中的主要功能
 本部分列出中的功能[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/28/2017
 |对用户定义类型 (Udt) 的支持|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]支持对表和包含 Udt 的视图执行操作。 有关 Udt 支持的信息，请参阅[对表和视图使用了 SQL 适配器的用户定义类型的操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)。|  
 |支持用于执行 TRANSACT-SQL 和 CLR 存储过程和函数|TRANSACT-SQL 和 CLR，可以执行适配器客户端：<br /><br /> 的 SQL Server 数据库中存储过程。<br />标量和 SQL Server 数据库中的表值函数。<br /><br /> 有关此的详细信息，请参阅[操作可以是执行使用适配器？](https://msdn.microsoft.com/library/cc185435(v=bts.10).aspx)。|  
 |执行存储的过程带有或不带 FOR XML 子句的支持|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使您能够执行具有或不带 FOR XML 子句的 SELECT 语句的存储的过程。 以前版本的适配器支持仅在 SELECT 语句中已有的 FOR XML 子句这些存储的过程。 有关执行存储的过程的信息，请参阅[中使用的 SQL 适配器的 SQL Server 执行存储过程](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md)。|  
-|对大型对象的流式处理支持|适配器客户端可以流式传输大型字符和使用一组 SQL Server 数据库中的二进制字段\<列名\>操作，其中 < column_name > 是的类型 varchar （max）、 nvarchar (max) 或 varbinary （max） 列的名称. 集\<列名\>操作还可以插入或更新 SQL Server 2008 数据库中的 FILESTREAM 数据。 有关此的详细信息，请参阅[操作对表和视图，包含大型数据类型使用的 SQL 适配器](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)。 **注意：**读取字符和 SQL Server 表和视图中的二进制字段，适配器客户端使用选择的操作。|  
+|对大型对象的流式处理支持|适配器客户端可以流式传输大型字符和使用一组 SQL Server 数据库中的二进制字段\<列名\>操作，其中 < column_name > 是的类型 varchar （max）、 nvarchar (max) 或 varbinary （max） 列的名称. 集\<列名\>操作还可以插入或更新 SQL Server 2008 数据库中的 FILESTREAM 数据。 有关此的详细信息，请参阅[操作对表和视图，包含大型数据类型使用的 SQL 适配器](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)。 **注意：** 读取字符和 SQL Server 表和视图中的二进制字段，适配器客户端使用选择的操作。|  
 |对查询通知的支持|适配器客户端可以接收来自 SQL Server 中根据触发的 SELECT 语句或存储的过程的查询通知。 向作为适配器客户端和在结果集的 SELECT 语句或存储的过程更改时，将由 SQL Server 发送通知。 有关查询通知的详细信息，请参阅[接收查询通知使用 BizTalk Server](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)。|  
 |用于执行任意 SQL 语句的支持|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端可以执行使用 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的任意 SQL 语句。 有关这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。|  
 |对复合操作的支持|[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]允许适配器客户端执行 SQL Server 数据库上的复合操作。 复合操作可以包含任意数量的以下操作，并按任何顺序：<br /><br /> 的对表和视图 Insert、 Update 和 Delete 操作。<br />的作为适配器中的操作中加以表示存储过程。<br /><br /> 有关复合操作的详细信息，请参阅[复合操作的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-composite-operations.md)。|  

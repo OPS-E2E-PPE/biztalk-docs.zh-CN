@@ -1,15 +1,15 @@
 ---
-title: "安装和配置管理 REST Api |Microsoft 文档"
-description: "查询中使用 BizTalk Server 中的功能包的管理数据 REST Api 你 BizTalk 环境的项目"
+title: 安装和配置管理 REST Api |Microsoft 文档
+description: 查询中使用 BizTalk Server 中的功能包的管理数据 REST Api 你 BizTalk 环境的项目
 ms.custom: fp1
 ms.date: 11/06/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 39442756-5886-4ddd-b700-3800a237de4a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/21/2017
+ms.locfileid: "25497894"
 ---
 # <a name="install-and-configure-the-management-rest-apis-in-biztalk-server"></a>安装和配置 BizTalk Server 中的管理 REST Api
 

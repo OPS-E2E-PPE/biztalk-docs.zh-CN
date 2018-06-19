@@ -1,14 +1,14 @@
 ---
-title: "ApplicationManager （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: ApplicationManager （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 51ebe7a8-a0ca-4d2a-bf40-ec6421ba5a95
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965579"
 ---
 # <a name="applicationmanager-biztalk-server-sample"></a>ApplicationManager（BizTalk Server 示例）
 ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk 应用程序。  
@@ -64,7 +65,7 @@ ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk �
   
 2.  运行文件 ApplicationManager.exe 提供以下两个有序命令行参数：  
   
-    -   **\<开始 &#124; 停止\>**第一个参数是要部署的应用程序执行的操作。  
+    -   **\<开始 &#124; 停止\>** 第一个参数是要部署的应用程序执行的操作。  
   
     -   **\<ApplicationName\>** 第二个参数是部署的应用程序的名称。  
   

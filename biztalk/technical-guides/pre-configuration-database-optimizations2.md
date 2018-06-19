@@ -1,14 +1,14 @@
 ---
-title: "预配置数据库 Optimizations2 |Microsoft 文档"
-ms.custom: 
+title: 预配置数据库 Optimizations2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c525c3a-249c-4694-b287-a8c35a6aa524
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015428"
 ---
 # <a name="pre-configuration-database-optimizations"></a>预配置数据库优化
 由于 SQL Server 在任何 BizTalk Server 环境中所扮演的重要角色，它是一项极其重要 SQL Server 能为了获得最佳性能配置/优化问题。 如果 SQL Server 不优化很好地运行，然后使用 BizTalk Server 的数据库将成为瓶颈和 BizTalk Server 环境的整体性能将会降低。 本主题介绍在安装 BizTalk Server 并配置 BizTalk Server 数据库之前，应遵循的几个 SQL Server 性能优化。  

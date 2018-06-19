@@ -1,14 +1,14 @@
 ---
-title: "任何元素节点 |Microsoft 文档"
-ms.custom: 
+title: 任何元素节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7e30fcf-31bc-4d48-9bc7-0be90e927127
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963691"
 ---
 # <a name="any-element-nodes"></a>“任何元素”节点
 在 BizTalk 编辑器中，你可以使用**Any 元素**节点以指示实例消息中的未知的元素可能出现的位置。 这适用于以下情况：您知道某个元素可能会出现在实例消息内的特定位置，但不知道该元素的名称或其可能的复杂程度。 如果你将放置**Any 元素**在架构中，BizTalk 适当的位置的节点可以处理此类未知的部分消息。 唯一的要求是相应的 XML 应具有正确的格式。  

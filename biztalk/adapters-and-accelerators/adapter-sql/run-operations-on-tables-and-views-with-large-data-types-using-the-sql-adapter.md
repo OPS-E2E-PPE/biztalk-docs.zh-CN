@@ -1,14 +1,14 @@
 ---
-title: "使用较大的数据类型使用的 SQL 适配器运行对表和视图的操作 |Microsoft 文档"
-ms.custom: 
+title: 使用较大的数据类型使用的 SQL 适配器运行对表和视图的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cec15b01-7a57-4917-8c21-44a1cfaadc59
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967187"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-using-the-sql-adapter"></a>在上运行操作表和视图与使用 SQL 适配器的较大的数据类型
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar 或 varbinary （max）。 若要从这类列读取数据，适配器客户端可以使用选择的操作。 若要插入或更新到此类列的数据，该适配器公开 < column_name > 集运算中，其中 < column_name > 是的类型 varchar （max）、 nvarchar 或 varbinary （max） 列的名称。  
@@ -201,7 +202,7 @@ ms.lasthandoff: 11/28/2017
 <SetDocumentResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Records" />  
 ```  
   
- 适配器发送一个空响应**设置 < column_name >**操作。  
+ 适配器发送一个空响应**设置 < column_name >** 操作。  
   
 ## <a name="best-practices"></a>最佳实践  
  已部署并配置 BizTalk 项目之后，你可以将配置设置导出到 XML 文件称为绑定文件。 后生成绑定文件，你可以导入的配置设置文件，以便不需要创建诸如发送端口和接收相同的业务流程的端口。 有关绑定文件的详细信息，请参阅[重用适配器绑定](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)。

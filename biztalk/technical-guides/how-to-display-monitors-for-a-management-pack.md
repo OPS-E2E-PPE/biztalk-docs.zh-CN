@@ -1,14 +1,14 @@
 ---
-title: "如何显示管理包的监视器 |Microsoft 文档"
-ms.custom: 
+title: 如何显示管理包的监视器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7c4d2b3-9c01-40f5-b983-bf29a3a5cacc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298005"
 ---
 # <a name="how-to-display-monitors-for-a-management-pack"></a>如何显示管理包的监视器
 若要管理包的监视器和替代使用命令行界面中显示的输出列表，请使用以下过程。  

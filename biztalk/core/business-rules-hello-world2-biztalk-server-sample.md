@@ -1,17 +1,17 @@
 ---
-title: "业务规则 Hello World2 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 业务规则 Hello World2 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, business rules
 - business rules, examples
 ms.assetid: 2a88a2a0-8cb6-4373-8441-0ab04345a477
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967299"
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>业务规则 Hello World2 （BizTalk Server 示例）
 业务规则 Hello World2 示例扩展业务规则 Hello World1 示例，演示如何为版本，发布和部署 XML 规则设置为共享的 SQL 规则存储，以及如何运行策略使用**策略**对象框架提供的业务规则。 该示例还演示了操作中的动态策略更新。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/28/2017
 >  有关在此 SDK 中的所有示例的重要信息，请参阅[示例](../core/samples-in-the-sdk.md)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Business Rules\Business 规则 Hello World2\  
+ *\<示例路径\>* \Business Rules\Business 规则 Hello World2\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径\>*\Business Rules\Business 规则 Hello World2\  
+     *\<示例路径\>* \Business Rules\Business 规则 Hello World2\  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径\>*\Business Rules\Business 规则 Hello World2\bin\Debug\  
+     *\<示例路径\>* \Business Rules\Business 规则 Hello World2\bin\Debug\  
   
 2.  在命令窗口中，键入此示例的文件的名称 (**BusinessRulesHelloWorld2.exe**)，然后按 ENTER。  
   
@@ -133,9 +134,9 @@ Press the ENTER to continue after updating the policy...
   
 4.  右键单击**SampleRuleSet**，然后单击**粘贴 （策略版本）**。  
   
-5.  可以更改规则条件和操作以满足需求。 有关此过程中，单击**规则 1**中**（不保存） 1.1 版**。 在右窗格中，右键单击**条件**，然后单击**添加不逻辑**。 添加**不逻辑**操作**不等于**以谓词相当于使用**相等**谓词。  
+5.  可以更改规则条件和操作以满足需求。 有关此过程中，单击**规则 1**中 **（不保存） 1.1 版**。 在右窗格中，右键单击**条件**，然后单击**添加不逻辑**。 添加**不逻辑**操作**不等于**以谓词相当于使用**相等**谓词。  
   
-6.  右键单击该节点**（不保存） 1.1 版**，然后单击**保存**。 再次右键单击，并依次**发布**。 右键单击第三次，然后单击**部署**。  
+6.  右键单击该节点 **（不保存） 1.1 版**，然后单击**保存**。 再次右键单击，并依次**发布**。 右键单击第三次，然后单击**部署**。  
   
 7.  更新策略之后，在暂停的命令窗口中将让您按任意键继续，请按任意键。  
   

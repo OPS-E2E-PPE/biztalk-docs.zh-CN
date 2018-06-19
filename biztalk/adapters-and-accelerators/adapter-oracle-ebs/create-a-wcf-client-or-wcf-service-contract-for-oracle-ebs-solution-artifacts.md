@@ -1,14 +1,14 @@
 ---
-title: "生成 WCF 客户端或 Oracle E-business Suite 解决方案项目关联的 WCF 服务协定 |Microsoft 文档"
-ms.custom: 
+title: 生成 WCF 客户端或 Oracle E-business Suite 解决方案项目关联的 WCF 服务协定 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c7ffd857-a177-423a-ae83-685d11b7aec6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217461"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-e-business-suite-solution-artifacts"></a>生成 WCF 客户端或 Oracle E-business Suite 解决方案项目关联的 WCF 服务协定
 你可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或 Oracle E-business Suite 项目上的所选操作所针对的 WCF 服务协定 （接口）。 你还可以使用 ServiceModel 元数据实用工具 (svcutil.exe) 生成 WCF 客户端类或 WCF 服务协定;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开通过标准的 Microsoft Windows 界面 ServiceModel 元数据实用工具的功能。 它还提供了使用 svcutil.exe 工具中，未提供的浏览和搜索功能并生成一个基于连接到 Oracle E-business Suite 时选择的绑定属性的配置文件。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]解决方案资源管理器，右键单击你的项目，并依次**添加适配器服务引用**。  
   
-2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle E-business Suite 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)以连接到 Oracle E-business Suite 和浏览和搜索操作。 若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）**从选择**选择协定类型**（这是默认值） 的下拉列表。  
+2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle E-business Suite 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)以连接到 Oracle E-business Suite 和浏览和搜索操作。 若要创建的操作，你选择一个 WCF 客户端类，请确保**客户端 （出站操作）** 从选择**选择协定类型**（这是默认值） 的下拉列表。  
   
 3.  选择所有你想要为目标，请单击操作后**确定**生成 WCF 客户端类。  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  后**添加适配器服务引用**对话框随即打开，请按照中的步骤[检索用于 Oracle E-business Suite 操作 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)以连接到 Oracle E-business Suite。 有几个绑定属性和一个 URI 属性，你可能想要设置连接到 Oracle E-business Suite 时。  
   
-3.  你已连接到 Oracle E-business Suite 后，选择**服务 （入站操作）**从**选择协定类型**下拉列表。  
+3.  你已连接到 Oracle E-business Suite 后，选择**服务 （入站操作）** 从**选择协定类型**下拉列表。  
   
 4.  在**选择类别**框中，浏览到你想要生成服务协定的入站操作。 例如，对于**通知**操作，单击根节点 (**/**)，选择**通知**从**可用类别和操作**框中，并依次**添加**。 有关如何浏览入站操作的说明，请参阅[浏览、 搜索和检索用于 Oracle E-business Suite 操作的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)。  
   

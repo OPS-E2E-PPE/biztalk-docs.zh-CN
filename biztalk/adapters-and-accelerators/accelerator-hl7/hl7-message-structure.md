@@ -1,11 +1,11 @@
 ---
-title: "HL7 消息结构 |Microsoft 文档"
-ms.custom: 
+title: HL7 消息结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, segments
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - segments, messages
 - messages, message structure
 ms.assetid: 4dbef56d-97ae-466d-bc8a-dc96c40896f6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22205085"
 ---
 # <a name="hl7-message-structure"></a>HL7 消息结构
 HL7 消息是与触发器事件关联的层次结构。 标准 HL7 定义为"卫生保健 （，） 创建对数据在系统之间流动的需求将现实生活中的事件"的触发器事件。 每个触发器事件是与定义的消息需要支持的触发器事件的数据类型的抽象消息相关联。 抽象的消息是一个集合段，并包含重复和这些段的包含的规则。 下表显示与触发器事件 A04 – 注册患者关联抽象消息示例。  

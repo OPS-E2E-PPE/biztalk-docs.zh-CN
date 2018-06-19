@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210493"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a>设置向上 CIDX eStandards 消息交换
 本主题介绍如何设置筛选数据交换 (CIDX) eStandards 消息交换。 CIDX 需要设置以下三个属性：  

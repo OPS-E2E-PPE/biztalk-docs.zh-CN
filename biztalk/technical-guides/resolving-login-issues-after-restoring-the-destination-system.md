@@ -1,15 +1,15 @@
 ---
-title: "在还原目标系统后解决登录问题 |Microsoft 文档"
-description: "将 SQL Server 登录脚本来解决在 BizTalk Server 中的孤立的用户日志传送"
-ms.custom: 
+title: 在还原目标系统后解决登录问题 |Microsoft 文档
+description: 将 SQL Server 登录脚本来解决在 BizTalk Server 中的孤立的用户日志传送
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9232ca3-dadb-4b3c-8ec4-4e307c32d2e5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013796"
 ---
 # <a name="resolving-login-issues-after-restoring-the-destination-system"></a>在还原目标系统后解决登录问题
 

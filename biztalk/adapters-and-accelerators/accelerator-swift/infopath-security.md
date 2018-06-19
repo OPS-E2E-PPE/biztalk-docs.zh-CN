@@ -1,17 +1,17 @@
 ---
-title: "InfoPath 安全 |Microsoft 文档"
-ms.custom: 
+title: InfoPath 安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, InfoPath forms
 - InfoPath forms, security
 ms.assetid: 6ed7b5cc-9801-45a5-8fdb-e5d56dd36435
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209653"
 ---
 # <a name="infopath-security"></a>InfoPath 安全
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年使用 XML 签名，以便你可以使用数字证书对表单进行数字签名。 XML 签名定义一个标准的基于 XML 的数字签名用于帮助保护在 XML 文档中包含的数据。 XML 签名是由万维网联合会 (W3C) 控制的标准。  

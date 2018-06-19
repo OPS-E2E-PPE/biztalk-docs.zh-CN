@@ -1,17 +1,17 @@
 ---
-title: "步骤 11： 创建业务流程变量 |Microsoft 文档"
-ms.custom: 
+title: 步骤 11： 创建业务流程变量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, variables
 - message enrichment tutorial, orchestrations
 ms.assetid: 3d1f792d-fe74-4373-86fa-3debda55e732
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962243"
 ---
 # <a name="step-11-create-orchestration-variables"></a>步骤 11： 创建业务流程变量
 在此步骤中，你可以创建消息实例发送和接收的业务流程的业务流程变量。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  一次你已创建，并且名为消息部分中，不要重命名它们。 如有必要，删除旧的正文部分，并使用新名称创建新的正文部分。  
   
-9. 在**类型**窗口下**多部分消息类型**，展开**DoorbellFinalMessageType**，然后单击**MessagePart_1**。 在**属性**窗格中，输入**MSHSegment**为**标识符**，然后按**Enter**。 中的下拉列表**类型**，展开**.NET 类**，然后单击\<**从引用的程序集选择\>**。  
+9. 在**类型**窗口下**多部分消息类型**，展开**DoorbellFinalMessageType**，然后单击**MessagePart_1**。 在**属性**窗格中，输入**MSHSegment**为**标识符**，然后按**Enter**。 中的下拉列表**类型**，展开 **.NET 类**，然后单击\<**从引用的程序集选择\>**。  
   
 10. 在**选择项目类型**对话框中，在左窗格中，单击**System.Xml**。 在右窗格中，单击**XmlDocument**，然后单击**确定**。  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 11/28/2017
   
 14. 在**业务流程视图**窗口中，右键单击**DoorbellFinalMessageType**，然后单击**新消息部分**。  
   
-15. 在**属性**窗格中，输入**ZSegments**为**标识符**，然后按**Enter**。 单击**类型**，展开**.NET 类**，然后单击**System.String**从下拉列表。  
+15. 在**属性**窗格中，输入**ZSegments**为**标识符**，然后按**Enter**。 单击**类型**，展开 **.NET 类**，然后单击**System.String**从下拉列表。  
   
     > [!NOTE]
     >  你使用**System.String**为 Z 段消息部分，因为 Z 段中包含不需要符合架构的字符串数据。  

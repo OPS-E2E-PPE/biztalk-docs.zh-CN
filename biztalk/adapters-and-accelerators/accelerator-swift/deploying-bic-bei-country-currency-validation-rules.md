@@ -1,14 +1,14 @@
 ---
-title: "部署 BIC 北路国家/地区货币验证规则 |Microsoft 文档"
-ms.custom: 
+title: 部署 BIC 北路国家/地区货币验证规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2e96d416-d5eb-4597-a691-c7dbee33c7d6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964579"
 ---
 # <a name="deploying-bicbeicountrycurrency-validation-rules"></a>部署 BIC/北路/国家/地区/货币验证规则
 **部署 BIC/北路/国家/地区/货币验证规则：**  

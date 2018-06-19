@@ -1,14 +1,14 @@
 ---
-title: "EDI 类型 （数据元素） 验证 |Microsoft 文档"
-ms.custom: 
+title: EDI 类型 （数据元素） 验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd53685f-a49c-41c8-813e-29700fc0b62b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969555"
 ---
 # <a name="edi-type-data-element-validation"></a>EDI 类型（数据元素）验证
 EDI 接收管道和 EDI 发送管道对事务集数据元素执行 EDI 验证。 在上将此验证配置的所有消息从或对特定方，通过该参与方的协议属性**验证**页 (下**事务设置设置**任一 X12 的部分或 EDIFACT 协议）。 如果**EDI 类型验证**中未选定属性**验证**页上，将不会执行本主题中所述的验证的数据。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22302829"
 ---
 # <a name="updating-the-bindings-in-an-application"></a>更新应用程序中的绑定
 在更新应用程序中的一个程序集时，通常会覆盖该程序集的绑定，也有可能该程序集根本未绑定，所以您不得不手动重新配置绑定。 要避免此问题，可以使用绑定文件若要更新的程序集的相同版本或更新的程序集的较新版本。  

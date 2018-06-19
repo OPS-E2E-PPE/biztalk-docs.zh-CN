@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963531"
 ---
 # <a name="step-2-creating-the-contoso-partner-organization"></a>步骤 2： 创建 Contoso 合作伙伴组织
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建新的贸易合作伙伴。 本教程中的贸易合作伙伴为 Contoso 组织。  
@@ -31,15 +32,15 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.  
   
-2.  在新的合作伙伴属性对话框中，在**常规**选项卡上，执行以下**:**  
+2.  在新的合作伙伴属性对话框中，在**常规**选项卡上，执行以下 **:**  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**CONTOSO**。|  
     |**GBI**|类型**123456789**。|  
     |**合作伙伴分类**|选择**制造商**从下拉列表。|  
-    |**签名证书**|选择**Contoso 签名 [指纹]**从下拉列表。|  
-    |**加密证书**|选择**Contoso 加密 [指纹]**从下拉列表。|  
+    |**签名证书**|选择**Contoso 签名 [指纹]** 从下拉列表。|  
+    |**加密证书**|选择**Contoso 加密 [指纹]** 从下拉列表。|  
   
 3.  单击**联系人属性**选项卡，然后执行以下操作：  
   

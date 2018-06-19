@@ -1,11 +1,11 @@
 ---
-title: "设置发送端口用于接收确认 |Microsoft 文档"
-ms.custom: 
+title: 设置发送端口用于接收确认 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, acknowledgements
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - acknowledgements, send ports
 - send ports, creating
 ms.assetid: bb683e72-36e2-4a8f-acc2-8b37ed23746f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961603"
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>设置发送端口用于接收确认
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 可以在单向发送端口上接收确认 (ACK)。 如果你设置了新的单向发送端口用于同一连接上接收确认，你必须将关联该发送端口使用单向接收端口。  

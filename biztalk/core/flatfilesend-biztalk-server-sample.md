@@ -1,14 +1,14 @@
 ---
-title: "FlatFileSend （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: FlatFileSend （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52dd0018-e272-40db-a26a-509d444d7106
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969691"
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a>FlatFileSend（BizTalk Server 示例）
 FlatFileSend 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将 XML 文件处理成等效的平面文件。  
@@ -45,7 +46,7 @@ FlatFileSend 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../in
  通过结合这些元素，产生了一个可从接收位置接受 XML 格式的采购订单消息并将平面文件格式的采购订单写出到发送位置的解决方案。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+ *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -66,13 +67,13 @@ FlatFileSend 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../in
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+     *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在下面的文件夹中，为本示例创建输入 (FFInput) 和输出 (FFOutput) 文件夹：  
   
-         *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
+         *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileSend  
   
     -   编译[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]此示例项目。  
   

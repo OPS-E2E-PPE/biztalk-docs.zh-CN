@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965259"
 ---
 # <a name="step-5-creating-the-fabrikam-3a2-trading-partner-agreement"></a>步骤 5： 创建 Fabrikam 3A2 贸易合作伙伴协议
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Contoso 和 Fabrikam 之间的贸易合作伙伴协议， 并为 3A2 合作伙伴接口流程 (PIP) 创建新的贸易合作伙伴协议。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/28/2017
     |**我的组织**|选择**Fabrikam**从下拉列表。|  
     |**伙伴组织**|选择**Contoso**从下拉列表。|  
     |**RNIF 版本**|选择**V02.00.01**从下拉列表。|  
-    |**主角色**|选择**客户 （发起程序）**从下拉列表。|  
+    |**主角色**|选择**客户 （发起程序）** 从下拉列表。|  
     |**用法**|选择**测试**从下拉列表。|  
   
 3.  单击**端口**选项卡，然后执行以下操作：  

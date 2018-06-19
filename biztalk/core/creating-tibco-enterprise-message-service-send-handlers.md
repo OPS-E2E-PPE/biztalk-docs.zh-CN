@@ -1,15 +1,15 @@
 ---
-title: "创建 TIBCO EMS 发送项目 |Microsoft 文档"
-description: "创建发送端口，并配置要在 BizTalk Server 中使用 TIBCO 企业消息服务适配器传输属性"
-ms.custom: 
+title: 创建 TIBCO EMS 发送项目 |Microsoft 文档
+description: 创建发送端口，并配置要在 BizTalk Server 中使用 TIBCO 企业消息服务适配器传输属性
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f82609c-1847-4796-a24c-28cb350ec739
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014180"
 ---
 # <a name="creating--tibco-enterprise-message-service-send-handlers"></a>创建 TIBCO Enterprise Message Service 发送处理程序
 本部分解释如何设置发送端口以连接到 TIBCO Enterprise Message Service (EMS) 以及如何将 XML 包括到业务流程中以在运行时与 TIBCO EMS 交互。  
@@ -80,7 +81,7 @@ TIBCO Enterprise Message Service 传输属性在设计时配置，在运行时�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |`Destination`|强制设置。 定义目标名称和类型。 例如： staticqueue [Q1]。<br /><br /> 定义的队列或主题具有以下格式: {静态} {动态] 队列 [queuename] 或 {静态} {动态] 主题 [topicname]。 **注意：**可以将消息发送到的目标，不存在。 在这种情况下，TIBCO 企业消息服务创建目标;这称为*动态目标*。 这是在使用消息时由生成者创建的目标，当生成者断开连接时，此目标会被删除。 A*静态目标*是目标仅可以创建由 TIBCO 企业消息服务管理员。 在您打开与目标的连接时无法连接到动态端口，因为用于 TIBCO Enterprise Message Service 的 BizTalk 适配器在服务器上使用名称查找机制。 当您使用名称查找时，只有静态端口是可见的。 在连接到动态端口时，可以使用静态目标；但是，如果不存在具有该名称的目标，则会创建一个目标。 目标可让您在定义端口时显式指定要使用的目标类型。 目标的语法不区分大小写： staticqueue [queue_name]、 statictopic [topic_name]、 dynamicqueue [queue_name];dynamictopic [topic_name]。|  
+    |`Destination`|强制设置。 定义目标名称和类型。 例如： staticqueue [Q1]。<br /><br /> 定义的队列或主题具有以下格式: {静态} {动态] 队列 [queuename] 或 {静态} {动态] 主题 [topicname]。 **注意：** 可以将消息发送到的目标，不存在。 在这种情况下，TIBCO 企业消息服务创建目标;这称为*动态目标*。 这是在使用消息时由生成者创建的目标，当生成者断开连接时，此目标会被删除。 A*静态目标*是目标仅可以创建由 TIBCO 企业消息服务管理员。 在您打开与目标的连接时无法连接到动态端口，因为用于 TIBCO Enterprise Message Service 的 BizTalk 适配器在服务器上使用名称查找机制。 当您使用名称查找时，只有静态端口是可见的。 在连接到动态端口时，可以使用静态目标；但是，如果不存在具有该名称的目标，则会创建一个目标。 目标可让您在定义端口时显式指定要使用的目标类型。 目标的语法不区分大小写： staticqueue [queue_name]、 statictopic [topic_name]、 dynamicqueue [queue_name];dynamictopic [topic_name]。|  
     |`Port Number`|TIBCO EMS 服务器侦听的端口。|  
     |`Server Name`|强制设置。 托管 TIBCO EMS 服务器的系统的名称。|  
   

@@ -1,14 +1,14 @@
 ---
-title: "消息存储的过程、 函数和 PL SQL Api 的架构 |Microsoft 文档"
-ms.custom: 
+title: 消息存储的过程、 函数和 PL SQL Api 的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d707f10-470d-4390-bb5b-0301c326f375
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963147"
 ---
 # <a name="message-schemas-for-stored-procedures-functions-and-plsql-apis"></a>存储的过程、 函数和 PL/SQL Api 的消息架构
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]曲面基础 Oracle 数据库存储的过程、 函数和 PL/SQL Api （存储的过程和函数在一个包内的） 作为操作。 本部分介绍的消息结构和用于调用存储的过程、 函数和 PL/SQL Api 的操作。  

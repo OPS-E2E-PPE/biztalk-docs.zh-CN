@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fde018d8-9d9a-42ea-8ee9-e3632450b9d7
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966003"
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>步骤 1： 为 Purchase_Order 表上插入操作创建的请求消息
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，你可以将 C# 类库项目添加到你的解决方案。 此库上创建插入操作的一个内存中请求消息**Purchase_Order**表。 在后续步骤中，业务流程将此邮件发送到 SQL Server 以在表中插入记录。  
+ **目标：** 在此步骤中，你可以将 C# 类库项目添加到你的解决方案。 此库上创建插入操作的一个内存中请求消息**Purchase_Order**表。 在后续步骤中，业务流程将此邮件发送到 SQL Server 以在表中插入记录。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成中的步骤[第 3 课： 执行存储过程向选择新添加的员工](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)。  

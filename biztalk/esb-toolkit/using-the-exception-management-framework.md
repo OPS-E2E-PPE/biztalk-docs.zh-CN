@@ -1,14 +1,14 @@
 ---
-title: "使用异常管理框架 |Microsoft 文档"
-ms.custom: 
+title: 使用异常管理框架 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b69c9c01-e7e4-4788-8fe2-43d32075155d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295181"
 ---
 # <a name="using-the-exception-management-framework"></a>使用异常管理框架
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用异常的动态转换和路由进行通信失败 （例如，非部署映射或未返回映射名称的规则）。 当转换或路由过程失败时，ESB 创建一条异常消息，并将其提交通过直接绑定到消息框数据库端口。 ESB 还实现名为所有发送端口。订阅和检索异常消息，并将其发布到 ESB 管理门户的异常。  

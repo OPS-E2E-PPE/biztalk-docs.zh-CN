@@ -1,14 +1,14 @@
 ---
-title: "步骤 3E： 添加的交互发送端口交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3E： 添加的交互发送端口交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9522386-e980-4ab1-b65a-939ca7936ad9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965979"
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a>步骤 3E： 添加的交互发送端口交互实时方案
 完成[步骤 3D： 将文件发送端口交互实时方案捕获 Sw:HandleResponse 消息添加](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)在开始此步骤之前。

@@ -1,14 +1,14 @@
 ---
-title: "在代码中使用的冲突解决程序组件 |Microsoft 文档"
-ms.custom: 
+title: 在代码中使用的冲突解决程序组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d197cb28-78a9-4c8a-872b-f61ef15e6622
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295573"
 ---
 # <a name="using-the-resolver-components-in-your-code"></a>在代码中使用的冲突解决程序组件
 从动态转换代理中的以下代码片段演示默认在实时 (JIT) 解析功能。 你可以轻松地实现解析自己的应用程序中，这需要使用类似的代码来实现。  

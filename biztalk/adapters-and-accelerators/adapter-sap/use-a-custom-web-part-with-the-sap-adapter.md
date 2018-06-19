@@ -1,14 +1,14 @@
 ---
-title: "自定义 Web 部件使用的 SAP 适配器 |Microsoft 文档"
-ms.custom: 
+title: 自定义 Web 部件使用的 SAP 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b7fecd2-a385-4b2d-a01b-3bfd65ecff3a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964299"
 ---
 # <a name="use-a-custom-web-part-with-the-sap-adapter"></a>使用 SAP 适配器使用自定义 Web 部件
 本部分提供有关使用 Microsoft Office SharePoint Server 的自定义 Web 部件的信息。 若要使用自定义 Web 部件，您必须执行以下操作：  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  指定的名称和解决方案的位置。 对于本主题中，指定`CustomWebPart`中**名称**和**解决方案名称**框。 指定一个位置，，然后单击**确定**。  
   
-4.  将对 System.Web 组件的引用添加到项目。 右键单击中的项目名称**解决方案资源管理器**，然后单击**添加引用**。 在**添加引用**对话框中，选择**System.Web**中**.NET**选项卡上，并依次**确定**。 System.Web 组件包含 System.Web.UI.WebControls.WebParts 的所需命名空间。  
+4.  将对 System.Web 组件的引用添加到项目。 右键单击中的项目名称**解决方案资源管理器**，然后单击**添加引用**。 在**添加引用**对话框中，选择**System.Web**中 **.NET**选项卡上，并依次**确定**。 System.Web 组件包含 System.Web.UI.WebControls.WebParts 的所需命名空间。  
   
 5.  添加所需的代码，根据你在项目中的问题。 与某些问题相关的代码示例，请参阅"问题涉及自定义 Web 部件"中[注意事项与 SharePoint 使用 SAP 适配器时](../../adapters-and-accelerators/adapter-sap/considerations-when-using-the-sap-adapter-with-sharepoint.md)。  
   

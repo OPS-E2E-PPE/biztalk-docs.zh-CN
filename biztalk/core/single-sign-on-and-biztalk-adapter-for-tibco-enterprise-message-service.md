@@ -1,14 +1,14 @@
 ---
-title: "在消息 SSO 和 TIBCO 企业的 BizTalk 适配器服务 |Microsoft 文档"
-ms.custom: 
+title: 在消息 SSO 和 TIBCO 企业的 BizTalk 适配器服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68e85ceb-bf4c-489a-a2c2-1558e718ceed
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013412"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-tibco-enterprise-message-service"></a>TIBCO Enterprise Message Service 的单一登录和 BizTalk 适配器
 

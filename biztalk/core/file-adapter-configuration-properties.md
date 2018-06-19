@@ -1,11 +1,11 @@
 ---
-title: "文件适配器配置属性 |Microsoft 文档"
-ms.custom: 
+title: 文件适配器配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - File adapters, code sample
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - File adapters, properties
 - send ports, adapters
 ms.assetid: 53f4fd17-95b9-4861-b433-772b619e90c7
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969867"
 ---
 # <a name="file-adapter-configuration-properties"></a>文件适配器配置属性
 下表列出可以为文件适配器设置的配置属性接收位置：  

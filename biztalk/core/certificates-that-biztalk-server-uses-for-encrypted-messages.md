@@ -1,18 +1,18 @@
 ---
-title: "BizTalk Server 使用的证书加密消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 使用的证书加密消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, message flow [encrypted messages]
 - encrypted messages
 - messages, encryption
 ms.assetid: 44b06488-4ecd-436d-af3d-b95e285ecb3e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966363"
 ---
 # <a name="certificates-that-biztalk-server-uses-for-encrypted-messages"></a>BizTalk Server 用于加密消息的证书
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持的基于安全多用途 Internet 邮件扩展 (S/MIME) 的入站邮件的出站消息的公共密钥加密和解密。 BizTalk Server 使用 S/MIME 版本 3 对出站消息进行加密，使用 S/MIME 版本 2 和 3 对入站消息进行解密。  

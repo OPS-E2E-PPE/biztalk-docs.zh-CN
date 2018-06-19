@@ -1,14 +1,14 @@
 ---
-title: "TIBCO 企业消息服务适配器功能 |Microsoft 文档"
-ms.custom: 
+title: TIBCO 企业消息服务适配器功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede748ce-3f28-4942-b2bd-e38e5f1b0f54
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015132"
 ---
 # <a name="tibco-ems-adapter-features"></a>TIBCO EMS 适配器功能
 用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器使您能够通过使用 BizTalk Server 和 TIBCO SDK 来发布和订阅由 TIBCO EMS 管理的队列和主题。 适配器将以快速、简便和可靠的方式集成 TIBCO EMS 消息。 它将在 TIBCO EMS 服务器和 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 之间交换 XML 数据格式，以提供一个高度整合并且可靠的应用程序基础结构。 它提供了传输和接收适配器集成操作，可使用 XML 架构提供端到端业务流程管理。  

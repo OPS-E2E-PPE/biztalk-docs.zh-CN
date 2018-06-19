@@ -1,17 +1,17 @@
 ---
-title: "步骤 7： 创建和配置端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 创建和配置端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating ports
 - private process tutorial, configuring ports
 ms.assetid: c00344c6-506a-4560-a948-e5fed2b9fd58
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965235"
 ---
 # <a name="step-7-creating-and-configuring-ports"></a>步骤 7： 创建和配置端口
 在此步骤中，您将创建和配置用于与业务流程进行通信的端口。 每个端口都具有类型、方向和绑定属性。 这些属性确定通信的方向和模式、发送或接收消息的位置以及通信方式。  

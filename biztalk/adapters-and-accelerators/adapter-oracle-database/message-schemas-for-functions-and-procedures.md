@@ -11,7 +11,7 @@ helpviewer_keywords:
 - functions and procedures, message structure of
 - functions and procedures, message actions of
 ms.assetid: 90b77b15-a4c6-487d-a09e-a078ceddfd1e
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25964563"
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a>函数和过程的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]曲面 Oracle 数据库函数和存储的过程作为操作。 本部分介绍的消息结构和用于调用函数和过程的操作。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970259"
 ---
 # <a name="error---second-input-for-table-looping-functoid-not-valid"></a>错误-为第二个输入表不是有效循环 Functoid
 **错误代码**  

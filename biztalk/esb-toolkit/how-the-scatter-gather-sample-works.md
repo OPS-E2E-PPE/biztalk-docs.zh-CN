@@ -1,14 +1,14 @@
 ---
-title: "散播-聚集示例的工作原理 |Microsoft 文档"
-ms.custom: 
+title: 散播-聚集示例的工作原理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5ccfacb7-4fd2-4a1a-bece-27eedd86bbe9
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294917"
 ---
 # <a name="how-the-scatter-gather-sample-works"></a>散播-聚集示例的工作原理
 示例应用程序生成一组包含从散播-聚集路线文件加载路线的 SOAP 标头、 从磁盘加载指定的消息文件、 将路线标头追加到消息，并将其提交到通过入口为 ESB处理。 如果路线生成响应，应用程序收集此，在应用程序窗口中显示。  

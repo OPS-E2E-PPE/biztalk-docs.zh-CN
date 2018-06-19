@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 配置的端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置的端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e804da96-26ae-482d-b6e1-67af24d639d9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967283"
 ---
 # <a name="step-2-configure-the-ports"></a>步骤 2： 配置的端口
 ![步骤 2 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **完成时间：** 15 分钟  
   
- **目标：**在此步骤中，你将创建中的物理端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 创建用于在业务流程中创建的每个逻辑端口的物理端口。 您将创建以下端口：  
+ **目标：** 在此步骤中，你将创建中的物理端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 创建用于在业务流程中创建的每个逻辑端口的物理端口。 您将创建以下端口：  
   
 -   单向的 WCF 自定义接收端口来接收到的更改的通知消息**员工**SQL Server 数据库中的表。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     |绑定属性|值|  
     |----------------------|-----------|  
     |**InboundOperationType**|将其设置为**通知**。|  
-    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：**你必须专门的列名称在语句中指定此 Select 语句中所示。 此外，你必须始终指定表名称以及架构名称，例如， `dbo.Employee`。|  
+    |**NotificationStatement**|将其设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 你必须专门的列名称在语句中指定此 Select 语句中所示。 此外，你必须始终指定表名称以及架构名称，例如， `dbo.Employee`。|  
     |**NotifyOnListenerStart**|将其设置为**True**。|  
   
      有关不同的绑定属性的详细信息，请参阅[了解针对 SQL Server 适配器绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。  

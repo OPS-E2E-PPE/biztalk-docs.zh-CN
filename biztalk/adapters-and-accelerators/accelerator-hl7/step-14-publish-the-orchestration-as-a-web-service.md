@@ -1,11 +1,11 @@
 ---
-title: "步骤 14： 发布作为 Web 服务业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 14： 发布作为 Web 服务业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - publishing, Web services
 - message enrichment tutorial, Web services
 ms.assetid: 8f29a7be-a679-4ca6-a648-35338d9e9e98
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962187"
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>步骤 14： 发布作为 Web 服务业务流程
 在此步骤中，你可以使用 BizTalk Web 服务发布向导发布您的业务流程作为 Web 服务。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 01/17/2018
   
 3.  上 **创建 Web 服务** 页上，选择 **作为 web 服务的发布 BizTalk 业务流程**, ，然后单击 **下一步**。  
   
-4.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)**字段中，浏览到或键入 **\<*驱动器*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**，单击**BTAHL7 Project.dll**，单击**打开**，然后单击**下一步**.  
+4.  上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 字段中，浏览到或键入 **\<*驱动器*\>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**，单击**BTAHL7 Project.dll**，单击**打开**，然后单击**下一步**.  
   
 5.  上**业务流程和端口**页上，确保所有节点已选中，然后单击**下一步**。  
   

@@ -1,14 +1,14 @@
 ---
-title: "特殊 LOB Operations1 的消息架构 |Microsoft 文档"
-ms.custom: 
+title: 特殊 LOB Operations1 的消息架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2e418a6-8bc7-42d9-9672-a9c149f32778
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962579"
 ---
 # <a name="message-schemas-for-special-lob-operations"></a>特殊 LOB 操作的消息架构
 Read_\<LOBColName\>和 Update_\<LOBColName\>操作中加以表示的表和视图包含 LOB 列，其中\<LOBColName\>是表中的 LOB 列或视图。 这些操作，可以读取或写入 LOB 数据作为 base64Binary 编码数据的流。 它们对单个列的单个行中的 LOB 数据的操作。  

@@ -1,11 +1,11 @@
 ---
-title: "消息批处理 |Microsoft 文档"
-ms.custom: 
+title: 消息批处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, batching
 - batching, messages
 ms.assetid: d852cf00-3882-4f0f-a4c3-2a39483710ee
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204645"
 ---
 # <a name="message-batching"></a>消息批处理
 协议标准、 计划问题或消息大小限制可能会促使对消息进行批处理的需求。 运行状况级别七 (HL7) 批处理包含包围在 HL7 批处理标头和批处理尾的消息。 消息分隔符分隔批处理中的单个消息。  

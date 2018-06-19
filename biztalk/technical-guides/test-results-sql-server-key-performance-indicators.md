@@ -1,14 +1,14 @@
 ---
-title: "测试结果： SQL Server 关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 测试结果： SQL Server 关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2459ee6d-7a75-4338-ba5c-f42ab673ab87
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302461"
 ---
 # <a name="test-results-sql-server-key-performance-indicators"></a>测试结果： SQL Server 关键绩效指标
 本主题总结了 SQL Server 关键绩效指标 (KPI) 测试方案期间观察到。 这些测试评估以下 SQL Server KPI:  
@@ -34,9 +35,9 @@ ms.lasthandoff: 09/20/2017
   
  请按照下列步骤以提高性能测量的 HYPER-V 虚拟机上运行的 SQL Server **\SQL Server:SQL Statistics\Batch 每秒请求数**性能监视器计数器：  
   
-1.  **分配其他固定的 VHD 磁盘与专用虚拟控制器和通道 –**分配其他固定 VHD 磁盘使用的专用虚拟控制器，通道将增加而不是使用单个 VHD 磁盘的磁盘吞吐量。  
+1.  **分配其他固定的 VHD 磁盘与专用虚拟控制器和通道 –** 分配其他固定 VHD 磁盘使用的专用虚拟控制器，通道将增加而不是使用单个 VHD 磁盘的磁盘吞吐量。  
   
-2.  **优化网络性能 –**按照的"优化网络性能"部分中所述步骤[清单： HYPER-V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。 在同一台 HYPER-V 主机上运行多个 HYPER-V 虚拟机时是非常重要，遵循"在相同的 HYPER-V 运行的配置 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。  
+2.  **优化网络性能 –** 按照的"优化网络性能"部分中所述步骤[清单： HYPER-V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。 在同一台 HYPER-V 主机上运行多个 HYPER-V 虚拟机时是非常重要，遵循"在相同的 HYPER-V 运行的配置 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。  
   
  无状态性质，因此[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 其他[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]虚拟机可轻松添加到环境需要提供向外的扩展，并提高系统的整体性能。  
   

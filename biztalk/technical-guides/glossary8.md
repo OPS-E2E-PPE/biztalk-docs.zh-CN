@@ -1,14 +1,14 @@
 ---
-title: "Glossary8 |Microsoft 文档"
-ms.custom: 
+title: Glossary8 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d271fe0-1b54-4a83-87e6-20aa1c37df97
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299461"
 ---
 # <a name="glossary"></a>词汇表
 本主题定义本指南中使用的关键术语。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 09/20/2017
 |----------|----------------|  
 |**高级的可编程中断控制器 (APIC)**|控制器从各种源接收中断并将其发送到处理器核心，以便处理。 在多处理器系统中，这可以是 VM 或物理计算机，APIC 发送和接收 interprocessor 中断消息与其他系统总线上的逻辑处理器。 有关高级的可编程中断控制器的详细信息，请参阅的一章 8 [Intel® 64 和 ia-32 体系结构软件开发人员手动卷 3A： 系统编程指南，第 1 部分](http://go.microsoft.com/fwlink/?LinkId=148923)(http://go.microsoft.com/fwlink /？LinkId = 148923)。|  
 |**子分区**|由父 （或根） 的分区创建的任何分区。|  
-|**核心**|请参阅**逻辑处理器**。 **注意：**在本指南中，核心有时互换使用与虚拟处理器，特别是在图形。 在本指南的将来版本中，将更正这种用法。|  
+|**核心**|请参阅**逻辑处理器**。 **注意：** 在本指南中，核心有时互换使用与虚拟处理器，特别是在图形。 在本指南的将来版本中，将更正这种用法。|  
 |**设备虚拟化**|一种软件技术，可让硬件资源进行抽象和在多个使用者之间共享。|  
 |**模拟的设备**|虚拟化的设备，以模拟的实际物理硬件设备，以便来宾可以使用该硬件设备的典型驱动程序。 模拟的设备效率很低比综合设备，但模拟的设备没有安装集成组件的"unenlightened"操作系统提供支持。|  
 |**enlightenment**|一种优化到来宾操作系统，使其了解 VM 环境并优化 Vm 其行为方式。 启蒙有助于降低某些操作系统功能，如内存管理的成本。 启蒙访问通过 hypercall 界面中。 启用的 I/O 可以利用 VMBus 直接，绕过任何设备仿真层。 利用所有可能启蒙操作系统被称为"完全启用。"|  

@@ -1,14 +1,14 @@
 ---
-title: "在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型 |Microsoft 文档"
-ms.custom: 
+title: 在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7d33e17c-e09e-4a57-9acc-43095e67ed8c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967123"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>在上运行操作表和视图使用 SQL 使用 WCF 服务模型中的大型数据类型
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar 或 varbinary （max）。 若要从这类列读取数据，适配器客户端可以使用选择的操作。 若要插入或更新到此类列的数据，该适配器都公开一组\<*column_name* \>操作，其中\< *column_name* \>是的名称类型 varchar （max）、 nvarchar 或 varbinary （max） 列。  
@@ -148,7 +149,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 7.  调用**SetDocument**操作**记录**表。  
   
     > [!CAUTION]
-    >  集*< column_name >*必须始终在事务中执行操作。 若要确保此操作，请集*< column_name >*必须在事务范围内调用操作和**UseAmbientTransaction**绑定属性必须设置为**true**app.config 中。  
+    >  集 *< column_name >* 必须始终在事务中执行操作。 若要确保此操作，请集 *< column_name >* 必须在事务范围内调用操作和**UseAmbientTransaction**绑定属性必须设置为**true**app.config 中。  
   
     ```  
     using (TransactionScope tx = new TransactionScope())  

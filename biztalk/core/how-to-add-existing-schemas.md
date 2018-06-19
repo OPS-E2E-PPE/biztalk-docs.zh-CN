@@ -1,14 +1,14 @@
 ---
-title: "如何添加现有架构 |Microsoft 文档"
-ms.custom: 
+title: 如何添加现有架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9dcff4be-9d8e-47f4-b642-45f82694c414
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25968771"
 ---
 # <a name="how-to-add-existing-schemas"></a>如何添加现有架构
 有时想要将现有架构添加到现有 BizTalk 项目。 本主题描述所需的步骤。  

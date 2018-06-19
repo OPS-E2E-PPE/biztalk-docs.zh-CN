@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 创建 Fabrikam 合作伙伴组织 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Fabrikam 合作伙伴组织 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, trading partners
 - double action tutorial, creating partner organizations
 - trading partners, partner organization
 ms.assetid: 4d2ddc4c-2275-4faf-9a36-8a912cc06527
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964963"
 ---
 # <a name="step-2-creating-the-fabrikam-partner-organization"></a>步骤 2： 创建 Fabrikam 伙伴组织
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建新的贸易合作伙伴。 此教程中的贸易合作伙伴为 Fabrikam 组织。  
@@ -33,15 +34,15 @@ ms.lasthandoff: 11/28/2017
   
 1.  在 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.  
   
-2.  在新的合作伙伴属性对话框中，在**常规**选项卡上，执行以下**:**  
+2.  在新的合作伙伴属性对话框中，在**常规**选项卡上，执行以下 **:**  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**FABRIKAM**。|  
-    |**GBI**|类型**987654321**。 **注意：**如果你已在同一台计算机上运行环回教程，你将需要输入 GBI 将不同于"987654321"的值。|  
+    |**GBI**|类型**987654321**。 **注意：** 如果你已在同一台计算机上运行环回教程，你将需要输入 GBI 将不同于"987654321"的值。|  
     |**合作伙伴分类**|选择**购物者**从下拉列表。|  
-    |**签名证书**|选择**Fabrikam 签名 [指纹]**从下拉列表。|  
-    |**加密证书**|选择**Fabrikam 加密 [指纹]**从下拉列表。|  
+    |**签名证书**|选择**Fabrikam 签名 [指纹]** 从下拉列表。|  
+    |**加密证书**|选择**Fabrikam 加密 [指纹]** 从下拉列表。|  
   
 3.  单击**联系人属性**选项卡，然后执行以下操作：  
   

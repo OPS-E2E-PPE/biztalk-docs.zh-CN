@@ -1,14 +1,14 @@
 ---
-title: "步骤 3D： 交互应用商店应用和向前情况下添加交互发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3D： 交互应用商店应用和向前情况下添加交互发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cd126d9a-f4e4-429e-bab0-8b4c9c555e36
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966843"
 ---
 # <a name="step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario"></a>步骤 3D： 交互应用商店应用和向前情况下添加交互发送端口
 完成[步骤 3c： 将文件发送端口捕获 Sw:HandleRequest 消息交互，应用商店应用和转发方案添加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)在开始此步骤之前。

@@ -1,14 +1,14 @@
 ---
-title: "如何将适配器元数据添加到 BizTalk 项目 |Microsoft 文档"
-ms.custom: 
+title: 如何将适配器元数据添加到 BizTalk 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e439e5bf-94b3-4582-bacc-b058e6eb8e17
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969059"
 ---
 # <a name="how-to-add-adapter-metadata-to-a-biztalk-project"></a>如何将适配器元数据添加到 BizTalk 项目
 使用“添加适配器元数据”向导可向 BizTalk 项目添加适配器元数据。 此数据包括与业务流程中的适配器通信所需的架构、消息类型和端口类型。 对应用程序适配器（例如 FTP）使用“添加适配器元数据”向导，将对应于这些应用程序适配器的架构拖入系统。 请注意，传输适配器（如 HTTP）通常不使用架构。  

@@ -1,11 +1,11 @@
 ---
-title: "如何启用 Analysis Services 和 BAM 主导入数据库之间的加密 |Microsoft 文档"
-ms.custom: 
+title: 如何启用 Analysis Services 和 BAM 主导入数据库之间的加密 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SQL Server Analysis Services, enabling encryption
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Primary Import database [BAM], enabling encryption
 - SQL Server Analysis Services, Primary Import database [BAM]
 ms.assetid: 8107c557-e57c-4569-9ff7-abcb7a8e5243
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968899"
 ---
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a>如何启用 Analysis Services 和 BAM 主导入数据库之间的加密
 在安装或升级 BAM 的过程中，默认情况下不启用加密。 若要启用加密，必须将 BAM 配置 XML 文件中的 UseEncryption 标志的值设置为 1。  

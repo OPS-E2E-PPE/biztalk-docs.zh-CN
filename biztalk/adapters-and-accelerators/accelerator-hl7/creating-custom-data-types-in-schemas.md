@@ -1,18 +1,18 @@
 ---
-title: "在架构中创建自定义数据类型 |Microsoft 文档"
-ms.custom: 
+title: 在架构中创建自定义数据类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, creating Z data types [Z objects]
 - data types, creating [Z objects]
 - Z objects, creating Z data types
 ms.assetid: e545c849-d414-4d5d-bb56-d3f9d5238c70
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25960675"
 ---
 # <a name="creating-custom-data-types-in-schemas"></a>在架构中创建自定义数据类型
 你可以在 datatypes_ 中创建自定义数据类型\<*版本*\>.xsd 公用架构。 你可以基于自定义数据类型，现有的数据类型，一个基本数据类型，或基于表中定义的枚举。  

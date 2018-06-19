@@ -1,11 +1,11 @@
 ---
-title: "自定义 Functoid （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: 自定义 Functoid （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functoids, customizing
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - XML tools
 - examples, XML tools
 ms.assetid: 9f1eb260-ff62-46f5-a517-57f4e9172b35
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970515"
 ---
 # <a name="custom-functoid-biztalk-server-sample"></a>自定义 Functoid （BizTalk Server 示例）
 自定义 functoid 示例演示如何为 BizTalk 映射器编写自定义 functoid。 你可以向 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 工具箱添加此 functoid。 当 BizTalk 映射器获得焦点时，该 functoid 将显示在工具箱中。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/28/2017
 >  如果你重用自定义 functoid 示例代码以实现自己的 functoid，则必须确保将 GUID 属性更改为唯一值。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\XmlTools\CustomFunctoid  
+ *\<示例路径\>* \XmlTools\CustomFunctoid  
   
  下表显示了本示例中的文件及其用途说明：  
   

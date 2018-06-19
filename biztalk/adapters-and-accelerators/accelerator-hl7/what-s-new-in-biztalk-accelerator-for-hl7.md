@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Accelerator for HL7 中的新增功能 |Microsoft 文档"
-description: "更改和更新与不同版本的 BizTalk Server 中的 HL7 快捷键"
-ms.custom: 
+title: BizTalk Accelerator for HL7 中的新增功能 |Microsoft 文档
+description: 更改和更新与不同版本的 BizTalk Server 中的 HL7 快捷键
+ms.custom: ''
 ms.date: 11/22/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e98595a1-2d1e-488e-8a97-7cd561948b3b
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962339"
 ---
 # <a name="whats-new-in-biztalk-accelerator-for-hl7"></a>什么是 BizTalk Accelerator for HL7 中的新增功能
 更改和更新与[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。 
@@ -32,14 +33,14 @@ ms.lasthandoff: 11/28/2017
   
 |功能|Description|  
 |-------------|-----------------|  
-|**64 位支持**|MLLP 适配器和 HL7 管道可以在两个 32 位和 64 位主机实例中运行。<br /><br /> [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]安装包括 32 位安装包和 64 位安装包。 在 32 位计算机上，仅安装 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 <br/><br/>**重要说明：**若要使用 64 位支持，仅安装 64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下都能运行。|  
+|**64 位支持**|MLLP 适配器和 HL7 管道可以在两个 32 位和 64 位主机实例中运行。<br /><br /> [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]安装包括 32 位安装包和 64 位安装包。 在 32 位计算机上，仅安装 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 <br/><br/>**重要说明：** 若要使用 64 位支持，仅安装 64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下都能运行。|  
 |**v2.6 以上架构支持**|支持包括：<br /><br /> -   **BTAHL7V26Common**项目： 包括 v2.6 以上架构。<br />-   **BTAHL7Common**项目： 包含 v2.6 以上架构和 ACK_26_GLO_DEF 确认架构; 用于生成针对 v2.6 以上消息的确认。<br />-   **MSH_25_GLO_DEF**架构： 句柄新消息包含 v2.6 以上架构并继续支持所有 v2 的标头字段。*x*架构。|  
 |**动态 MLLP 适配器支持**|属性可以在运行时使用的单向或双向 （请求-响应） 配置了适配器发送端口。 请参阅[动态 MLLP 适配器](../../adapters-and-accelerators/accelerator-hl7/dynamic-mllp-adapter.md)。|  
 |**"FreeText"支持**|如果字段或线段定义为"FreeText"，未能将分析字段/段中的字符数据。 请参阅[编码字符使用普通](../../adapters-and-accelerators/accelerator-hl7/encoding-characters-using-free-text.md)。|  
-|**ACK 或 NACK 发送具有无效的 MSH 消息**|使用**ReturnErrorForInvalidMSH3**注册表项，将否定确认 (NACK) 发送到方如果将发生以下情况：<br /><br /> -无效 MSH3 （方不定义在 HL7 配置资源管理器） <br />    **AND**<br />-消息中的 MSH15 和 MSH16 值为 null 或为空<br /><br /> 若要发送 NACK，将以下注册表项设置为 1，然后重新启动主机实例：<br /><br /> 32 位主机：`HKLM\SOFTWARE\Microsoft\BizTalk Accelerator for HL7`<br /><br /> 64 位主机：`HKLM\ SOFTWARE\Wow6432Node\Microsoft\BizTalk Accelerator for HL7` <br/><br/>**提示：**端口可以订阅失败消息： <ul><li>使用**BTAHL7Schemas.ParseError = True**筛选条件。</li><li>使用**传递**管道。</li></ul>|  
+|**ACK 或 NACK 发送具有无效的 MSH 消息**|使用**ReturnErrorForInvalidMSH3**注册表项，将否定确认 (NACK) 发送到方如果将发生以下情况：<br /><br /> -无效 MSH3 （方不定义在 HL7 配置资源管理器） <br />    **AND**<br />-消息中的 MSH15 和 MSH16 值为 null 或为空<br /><br /> 若要发送 NACK，将以下注册表项设置为 1，然后重新启动主机实例：<br /><br /> 32 位主机：`HKLM\SOFTWARE\Microsoft\BizTalk Accelerator for HL7`<br /><br /> 64 位主机：`HKLM\ SOFTWARE\Wow6432Node\Microsoft\BizTalk Accelerator for HL7` <br/><br/>**提示：** 端口可以订阅失败消息： <ul><li>使用**BTAHL7Schemas.ParseError = True**筛选条件。</li><li>使用**传递**管道。</li></ul>|  
 |**ACK 消息实例保持活动**|如果有上游系统连接失败，确认 (ACK) 发送到上游系统仍然处于活动状态。<br /><br /> 新行为： 如果有上游系统连接失败，则挂起 ACK 消息。|  
-|**不会发送\<SB\>**|此属性添加到接收适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果以开始数据适配器发送消息\<SB\>。 例如，发送以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，该适配器将消息发送的数据是否丢失\<SB\>开始。 例如，发送以下消息：<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式发送端口是否**不发送\<SB\>** 设置为 True，则它不会发送 SB 并显示消息到下游的系统。 同时，它可与下游系统中缺少 SB 接收确认。|  
-|**接受缺少\<SB\>**|此属性添加到发送适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果数据丢失了适配器返回错误\<SB\>开始。 例如，以下消息将返回错误：<br /> `DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，适配器可以接收消息，如果数据丢失了\<SB\>开始。 例如，收到以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：**了两个方式接收端口是否**接受缺少\<SB\>** 设置为 True，则它将接受来自上游系统的消息中缺少 SB。 在同一时间它不会发送 SB 到上游系统。|  
+|**不会发送\<SB\>**|此属性添加到接收适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果以开始数据适配器发送消息\<SB\>。 例如，发送以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，该适配器将消息发送的数据是否丢失\<SB\>开始。 例如，发送以下消息：<br /> `DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：** 了两个方式发送端口是否**不发送\<SB\>** 设置为 True，则它不会发送 SB 并显示消息到下游的系统。 同时，它可与下游系统中缺少 SB 接收确认。|  
+|**接受缺少\<SB\>**|此属性添加到发送适配器端口配置属性。 若要启用此属性，设置**UseMLLPTransACK**值：<br /><br /> -当设置为**False** （默认值），如果数据丢失了适配器返回错误\<SB\>开始。 例如，以下消息将返回错误：<br /> `DataData<CR\>DataData<CR\>…`<br/><br />-当设置为**True**，适配器可以接收消息，如果数据丢失了\<SB\>开始。 例如，收到以下消息：<br /> `<SB\>DataData<CR\>DataData<CR\>…` <br />`DataData<CR\>DataData<CR\>…` <br/><br/>**重要说明：** 了两个方式接收端口是否**接受缺少\<SB\>** 设置为 True，则它将接受来自上游系统的消息中缺少 SB。 在同一时间它不会发送 SB 到上游系统。|  
   
 ## <a name="biztalk-server-2013"></a>BizTalk Server 2013  
   

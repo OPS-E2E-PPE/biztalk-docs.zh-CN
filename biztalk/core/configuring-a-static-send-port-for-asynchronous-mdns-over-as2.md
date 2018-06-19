@@ -1,14 +1,14 @@
 ---
-title: "配置静态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档"
-ms.custom: 
+title: 配置静态发送端口异步 Mdn 的通过 AS2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc43e767-d9d7-4b02-b3fc-0cfdfd6e61c4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968371"
 ---
 # <a name="configuring-a-static-send-port-for-asynchronous-mdns-over-as2"></a>配置用于通过 AS2 发送异步 MDN 的静态发送端口
 本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过静态发送端口发送异步 EDIINT/AS2 编码的 MDN 消息。 此配置包括创建静态发送端口，以及设置发送端口使用的加密证书（如需要）。  
@@ -29,12 +30,12 @@ ms.lasthandoff: 11/28/2017
 |位置|属性|设置|  
 |--------------|--------------|-------------|  
 |**发送端口属性： 常规**|端口类型|静态单向发送端口|  
-|**发送端口属性： 常规**|传输类型|HTTP**注意：**仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。 此传输不能用于除 HTTP 适配器之外的其他适配器。|  
+|**发送端口属性： 常规**|传输类型|HTTP**注意：** 仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。 此传输不能用于除 HTTP 适配器之外的其他适配器。|  
 |**发送端口属性： 常规**|发送处理程序|BizTalkServerApplication|  
 |**发送端口属性： 常规**|发送管道|AS2Send|  
 |**HTTP 传输属性**|目标 URL|\<目标 URL 字符串\>|  
 |**HTTP 传输属性**|启用 Chunked 编码|已清除|  
-|**发送端口属性： 筛选器**|属性|EdiIntAS.IsAS2AsynchronousMdn**注意：**还应指定附加的筛选器表达式，以确保仅 MDN 消息要发送到在此指定的地址发送端口将拾取此订阅筛选器。|  
+|**发送端口属性： 筛选器**|属性|EdiIntAS.IsAS2AsynchronousMdn**注意：** 还应指定附加的筛选器表达式，以确保仅 MDN 消息要发送到在此指定的地址发送端口将拾取此订阅筛选器。|  
 |**发送端口属性： 筛选器**|运算符|==|  
 |**发送端口属性： 筛选器**|值|True|  
 |**发送端口属性： 证书**|公用名和指纹|如果对出站 MDN 消息使用加密证书，请输入证书名称和指纹。|  

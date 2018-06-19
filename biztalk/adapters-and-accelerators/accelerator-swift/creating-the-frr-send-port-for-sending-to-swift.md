@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 发送端口将发送到 SWIFT |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 发送端口将发送到 SWIFT |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 - FRR, creating send ports
 ms.assetid: 1ad766db-d1da-437a-a520-a3b04f0695c4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22210405"
 ---
 # <a name="creating-the-frr-send-port-for-sending-to-swift"></a>创建用于将发送到 SWIFT FRR 发送端口
 若要执行 FIN 响应对帐，你需要创建发送一条消息从发送端口[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到 SWIFT 网络。  

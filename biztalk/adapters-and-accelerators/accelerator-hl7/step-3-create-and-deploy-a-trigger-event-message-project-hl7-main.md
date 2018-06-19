@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961459"
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a>步骤 3： 创建和部署触发器事件 （消息） Project_hl7_main
 在此步骤中，你创建的触发器事件消息所使用的架构。 例如，许可放电并传输系统 (ADT)，将发送一条消息到医院信息系统 (HIS)。 此架构用于定义你的消息的格式。  

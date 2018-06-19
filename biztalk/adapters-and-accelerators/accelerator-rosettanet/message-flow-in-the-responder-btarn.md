@@ -1,11 +1,11 @@
 ---
-title: "消息流中对响应方 BTARN |Microsoft 文档"
-ms.custom: 
+title: 消息流中对响应方 BTARN |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BizTalk Accelerator for RosettaNet, message flow
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - messages, message flow
 - responder BTARN
 ms.assetid: 66de8694-a248-47e8-9483-9eedf2324b33
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207381"
 ---
 # <a name="message-flow-in-the-responder-btarn"></a>响应方 BTARN 中的消息流
 通过 Internet 从发起程序计算机中接收消息开头响应方计算机上的消息流。 它包括将该消息转换从 RosettaNet 实现框架 (RNIF)-符合到为后端的应用程序，然后将消息路由到业务线应用程序专有格式的消息的消息。  

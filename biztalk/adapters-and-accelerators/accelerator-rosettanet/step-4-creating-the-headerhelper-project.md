@@ -1,17 +1,17 @@
 ---
-title: "步骤 4： 创建 HeaderHelper 项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 4： 创建 HeaderHelper 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, helper projects
 - private process tutorial, creating helper projects
 ms.assetid: 82413537-032a-4368-8d77-d024a7c83b0b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965523"
 ---
 # <a name="step-4-creating-the-headerhelper-project"></a>步骤 4： 创建 HeaderHelper 项目
 在此步骤中，将创建 [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 类库。 当专用业务流程收到传入消息时，HeaderHelper 库确定是否需要进行文档转换，如果需要，则执行该转换。 这使你的业务流程能够使用不同版本的 RosettaNet 实现框架 (RNIF) 文档。 此外，当发出 3A2 响应消息时，HeaderHelper 库在传送该消息之前执行另一种文档转换。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在右窗格中，单击**对程序集签名**。  
   
-4.  单击**选择强名称密钥文件**文本框中，然后选择**\<浏览\>**从下拉列表。  
+4.  单击**选择强名称密钥文件**文本框中，然后选择**\<浏览\>** 从下拉列表。  
   
 5.  在选择文件对话框中，移动到的位置您 Contoso 的程序集，并双击**FabConPriceAvail.snk**。  
   

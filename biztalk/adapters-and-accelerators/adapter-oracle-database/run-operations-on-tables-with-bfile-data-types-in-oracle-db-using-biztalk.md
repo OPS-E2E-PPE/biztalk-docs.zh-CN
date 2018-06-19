@@ -1,17 +1,17 @@
 ---
-title: "使用 BFILE 数据类型，使用 BizTalk Server 的 Oracle 数据库中运行对表的操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 BFILE 数据类型，使用 BizTalk Server 的 Oracle 数据库中运行对表的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations on tables with BFILE data types, performing by using BizTalk Server
 - BFILE data types
 ms.assetid: 2e4af5a9-acde-419b-a99c-3eaa0c72daa8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962547"
 ---
 # <a name="run-operations-on-tables-with-bfile-data-types-in-oracle-database-using-biztalk-server"></a>使用 BFILE 数据类型，使用 BizTalk Server 的 Oracle 数据库中运行对表的操作
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表和存储的过程中支持 BFILE 数据类型。 此部分提供有关如何执行对具有 BFILE 数据类型的列的表的操作的信息。 有关详细信息，如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持 BFILE，请参阅[对表使用 BFILE 数据类型操作 Oracle 数据库中的](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md)。  

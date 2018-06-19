@@ -1,14 +1,14 @@
 ---
-title: "TIBCO 会合适配器中的消息 |Microsoft 文档"
-ms.custom: 
+title: TIBCO 会合适配器中的消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12699550-22e7-4a11-a024-2302570970af
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24015180"
 ---
 # <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>TIBCO Rendezvous 的 BizTalk 适配器中的消息
 用于 TIBCO Rendezvous 的 BizTalk 适配器提供了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 TIBCO Rendezvous 之间的双向连接。 此适配器同时使用 TIBCO Rendezvous API 和 BizTalk 适配器框架 API 来提供紧密集成。  

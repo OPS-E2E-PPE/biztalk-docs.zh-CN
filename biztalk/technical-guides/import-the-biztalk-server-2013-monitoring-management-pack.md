@@ -1,14 +1,14 @@
 ---
-title: "导入监视管理包 BizTalk Server 2013 |Microsoft 文档"
-ms.custom: 
+title: 导入监视管理包 BizTalk Server 2013 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee2bfe9-4eb0-46d4-8eee-75182202080c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298629"
 ---
 # <a name="import-the-biztalk-server-2013-monitoring-management-pack"></a>导入监视管理包 BizTalk Server 2013
 有关说明有关如何导入管理包，请参阅如何导入管理包中[Operations Manager 2007 R2/2012年](http://go.microsoft.com/fwlink/?LinkId=142351)(http://go.microsoft.com/fwlink/?LinkId=142351)。 后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]导入管理包，请按照这些过程操作以完成初始配置：  

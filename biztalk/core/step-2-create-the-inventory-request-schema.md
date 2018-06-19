@@ -1,14 +1,14 @@
 ---
-title: "步骤 2： 创建清单请求架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建清单请求架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa9ad9f-b815-4baf-8299-556869b8dde7
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014284"
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a>步骤 2：创建库存请求架构
 ![步骤 2 5](../core/media/step-2of5.gif "Step_2of5")  
   
  **完成时间：** 7 分钟  
   
- **目标：**在此步骤中，定义库存补货消息的架构。  仓库系统发送此消息以请求库存补货。  此架构是必须为该项目创建的两个架构之一。  
+ **目标：** 在此步骤中，定义库存补货消息的架构。  仓库系统发送此消息以请求库存补货。  此架构是必须为该项目创建的两个架构之一。  
   
  **用途：** XML 不仅结构和标识信息与标准化的标记代码，但也有使用架构的能力。 架构是一类工作方式与字典类似的 XML 文档，可供其他 XML 文档用作参考。 架构代码定义 XML 元素的拼写以及用这些元素括起来的数据类型。 通过使用架构，程序可轻松处理 XML 文档，并确保信息的结构和类型正确。  
   

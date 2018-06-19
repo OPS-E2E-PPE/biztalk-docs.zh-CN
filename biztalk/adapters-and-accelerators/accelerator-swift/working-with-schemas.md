@@ -1,17 +1,17 @@
 ---
-title: "使用架构 |Microsoft 文档"
-ms.custom: 
+title: 使用架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, schemas
 - schemas, developing
 ms.assetid: 123c4b43-34e4-41c7-980d-5d518b1479c1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963091"
 ---
 # <a name="working-with-schemas"></a>使用架构
 中提供的架构[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]XSD 表示形式的全球 Interbank 财务电信 (SWIFT) FIN 消息互联网协会。 每个消息类型都有其自己的架构，包括 SWIFT 标头和 SWIFT 预告片 （交换格式）。 此架构并有效地发送或接收 SWIFT 消息。 这些架构是分隔和位置的记录，提供详细的 XML 表示形式的平面文件 FIN 结构的唯一组合。  

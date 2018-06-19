@@ -1,14 +1,14 @@
 ---
-title: "如何将与 SQL Server Reporting Services 集成 BAM |Microsoft 文档"
-ms.custom: 
+title: 如何将与 SQL Server Reporting Services 集成 BAM |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e2d66b7-c8eb-4871-8a47-544955ccd51e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970251"
 ---
 # <a name="how-to-integrate-bam-with-sql-server-reporting-services"></a>如何集成 BAM 与 SQL Server Reporting Services
 基于 BAM 基础结构中的数据创建报表时，使用与为任何其他 SQL Server 数据源创建报表相关联的典型任务。 有关使用报表设计器创建报表的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=82437](http://go.microsoft.com/fwlink/?LinkId=82437)。  

@@ -1,14 +1,14 @@
 ---
-title: "通过 AS2 消息配置静态发送端口 |Microsoft 文档"
-ms.custom: 
+title: 通过 AS2 消息配置静态发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2708d6a9-b105-42d3-abe3-7085b39da55a
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969275"
 ---
 # <a name="configuring-a-static-send-port-for-messages-over-as2"></a>通过 AS2 消息配置静态发送端口
 本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过静态发送端口发送 AS2 消息。 该配置包括创建静态发送端口和配置协议。 如果需要，还将设置要由发送端口使用的加密证书。  
@@ -28,12 +29,12 @@ ms.lasthandoff: 11/28/2017
   
 |位置|属性|设置|  
 |--------------|--------------|-------------|  
-|**发送端口属性： 常规**|端口类型|-静态要求响应 (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)<br /><br /> -静态单向发送端口 (如果在请求 MDN**确认 (Mdn)**清除的单向协议选项卡中的页)|  
+|**发送端口属性： 常规**|端口类型|-静态要求响应 (如果在请求 MDN**确认 (Mdn)** 的单向协议选项卡中的页处于选定状态)<br /><br /> -静态单向发送端口 (如果在请求 MDN**确认 (Mdn)** 清除的单向协议选项卡中的页)|  
 |**发送端口属性： 常规**|传输类型|HTTP<br /><br /> 注意：<br /><br /> 只有 HTTP 适配器可用于传输 EDIINT/AS2 编码消息。 此传输不能用于除 HTTP 适配器之外的其他适配器。|  
 |**发送端口属性： 常规**|发送处理程序|BizTalkServerApplication|  
 |**发送端口属性： 常规**|发送管道|-AS2EdiSend （对于 EDI 编码消息）<br /><br /> -AS2Send （对于非 EDI 消息）|  
-|**发送端口属性： 常规**|接收处理程序<br /><br /> (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)|BizTalkServerApplication|  
-|**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)**的单向协议选项卡中的页处于选定状态)|AS2Receive|  
+|**发送端口属性： 常规**|接收处理程序<br /><br /> (如果在请求 MDN**确认 (Mdn)** 的单向协议选项卡中的页处于选定状态)|BizTalkServerApplication|  
+|**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)** 的单向协议选项卡中的页处于选定状态)|AS2Receive|  
 |**HTTP 传输属性**|目标 URL|\<目标 URL 字符串\>|  
 |**HTTP 传输属性**|启用 Chunked 编码|已清除|  
 |**发送端口属性： 筛选器**|属性|BTS.MessageType<br /><br /> 注意：<br /><br /> 可以使用各种筛选器表达式，包括使用 BTS.ReceivePortName。<br /><br /> 注意：<br /><br /> 对于非 EDI 消息，必须对不同属性进行筛选。|  

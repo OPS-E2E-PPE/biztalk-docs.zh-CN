@@ -1,11 +1,11 @@
 ---
-title: "有关 SAP 中的 SAPDiscoveredObjects.xml 文件 |Microsoft 文档"
-ms.custom: 
+title: 有关 SAP 中的 SAPDiscoveredObjects.xml 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SAPDiscoveredObjects.xml
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Data Provider for SAP
 - Visual Studio DDEX plug-in
 ms.assetid: 46ef600d-57ae-4c42-94ce-3099e42482f1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960715"
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>有关 SAP 中 SAPDiscoveredObjects.xml 文件
 如果你选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) 连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将 SAPDiscoveredObjects.xml 文件通常情况下的复制\<安装驱动器\>: \program 文件\Microsoft Shared\Adapters\SAP。 后的全新安装文件的内容[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，如下所示。  

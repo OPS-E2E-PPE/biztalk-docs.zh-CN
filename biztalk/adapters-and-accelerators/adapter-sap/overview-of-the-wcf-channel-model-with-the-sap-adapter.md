@@ -1,17 +1,17 @@
 ---
-title: "与 SAP 适配器的 WCF 通道模型概述 |Microsoft 文档"
-ms.custom: 
+title: 与 SAP 适配器的 WCF 通道模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF channel model, overview
 - WCF channel model, creating messages for the SAP adapter
 ms.assetid: 6192d637-efac-4580-8880-b5bae9d16f31
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967243"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a>与 SAP 适配器的 WCF 通道模型概述
 若要在 SAP 系统中，调用 Rfc、 tRFCs 或 BAPIs 或将 IDOC 发送到 SAP 系统，你的代码将充当 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。  

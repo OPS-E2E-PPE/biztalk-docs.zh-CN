@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966035"
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>SAP 使用 WCF 通道模型中的流平面文件 Idoc
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。 这些操作用于发送和接收平面文件 （字符串） Idoc 与其他适配器。 在这两种操作，整个 IDOC 的数据包含在单个节点下的字符串 (\<idocData\>)。 对于大型 Idoc，流式处理的 IDOC 数据适配器和代码之间可能会节省大量的内存资源。  

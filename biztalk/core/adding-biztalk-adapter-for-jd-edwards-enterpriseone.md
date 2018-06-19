@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baecebcd-c324-40aa-bacf-876f45b6c37f
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "24014452"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>在 BizTalk 管理中配置博士 Edwards EnterpriseOne 项目
 用于 J.D.Edwards EnterpriseOne 的 Microsoft BizTalk 适配器包含接收处理程序和发送处理程序文件夹。 这两个文件夹包含 BizTalkServerApplication。 用于 J.D.Edwards EnterpriseOne 的 BizTalk 适配器是可创建的；它在 BizTalk Server 进程内运行，而不是在独立的主机进程中运行。  
@@ -69,7 +70,7 @@ JD Edwards EnterpriseOne 传输属性用于设计和运行时。 在**传输属�
   
 4.  下 **常规**, 中 **传输类型** 框中，选择 **JDE EnterpriseOne** 下拉列表中。  
   
-5.  在**地址 (URI)**属性，选择省略号 (**...**). **JDE EnterpriseOne 传输属性**打开： 
+5.  在**地址 (URI)** 属性，选择省略号 (**...**). **JDE EnterpriseOne 传输属性**打开： 
   
      ![](../core/media/jdeenterprise-trans.gif "JDEEnterprise_Trans")  
   

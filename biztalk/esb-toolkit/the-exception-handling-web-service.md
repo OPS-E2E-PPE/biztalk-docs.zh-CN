@@ -1,14 +1,14 @@
 ---
-title: "异常处理 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 异常处理 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dfe6ebdf-9b92-40c7-93fb-afd6c5f68aaa
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294949"
 ---
 # <a name="the-exception-handling-web-service"></a>异常处理 Web 服务
 异常处理 Web 服务接受的错误消息，并将其发布到 ESB 异常门户。 客户端应用程序可以创建异常消息，并将其提交至 ESB，其中该异常类型或一般的处理程序，而配置的任何处理程序可以处理的异常。 此服务的主要好处是能让 ESB 应用程序，以参与 ESB 异常处理机制外部实体。  

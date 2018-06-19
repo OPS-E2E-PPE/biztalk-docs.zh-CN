@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963027"
 ---
 # <a name="overview-of-the-sap-adapter"></a>SAP 适配器的概述
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开 SAP 系统作为 WCF 服务。 适配器客户端可以通过交换 SOAP 消息与适配器执行 SAP 系统上的操作。 适配器使用 WCF 消息，并且到 SAP 系统的适当调用来执行该操作。 适配器回客户端的 SOAP 消息的形式，并将响应返回从 SAP 系统。  

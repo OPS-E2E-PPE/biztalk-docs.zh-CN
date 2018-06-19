@@ -1,14 +1,14 @@
 ---
-title: "警报管理命令 |Microsoft 文档"
-ms.custom: 
+title: 警报管理命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a96d8de7-a918-4737-aa35-4e1abf6bb08f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967683"
 ---
 # <a name="alert-management-commands"></a>警报管理命令
 您可借助 BAM 管理实用程序的警报管理命令来处理已部署的警报。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/28/2017
 -   禁用警报： 禁用对视图的警报。  
   
 > [!NOTE]
->  你可以通过包括启用任何 BM 实用工具命令的跟踪**-跟踪： 在 &#124; 关闭**参数交换机。 使用 Trace 开关将重写配置文件中的跟踪设置。 该开关可与所有标准 BM 命令一起使用。  
+>  你可以通过包括启用任何 BM 实用工具命令的跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。 使用 Trace 开关将重写配置文件中的跟踪设置。 该开关可与所有标准 BM 命令一起使用。  
   
 > [!NOTE]
 >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

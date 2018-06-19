@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 为 Contoso 程序集分配强名称 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 Contoso 程序集分配强名称 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, assigning strong-names
 - strong-named assemblies
 ms.assetid: c8ec4593-5a4d-47ab-8799-7b2cd3d15ffc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963859"
 ---
 # <a name="step-1-assigning-a-strong-name-to-the-contoso-assembly"></a>步骤 1： 为 Contoso 程序集分配强名称
 在此步骤中，你将为 BizTalk 程序集创建并分配一个强名称。 强名称通过分配一个数字签名和一个唯一的密钥对可确保程序集的唯一性。 此外，强名称还提供了完整性检查以确保自上次构建以来程序集的内容没有发生变化。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/28/2017
 2.  在命令提示符处，转到 Contoso 解决方案的位置。  
   
     > [!NOTE]
-    >  默认情况下，Contoso 解决方案的位置是*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\MyDocuments\Visual Studio\<版本\>\Projects。  
+    >  默认情况下，Contoso 解决方案的位置是*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \MyDocuments\Visual Studio\<版本\>\Projects。  
   
 3.  在命令提示符处，键入**sn-k FabConPriceAvail.snk**，然后按**Enter**。  
   

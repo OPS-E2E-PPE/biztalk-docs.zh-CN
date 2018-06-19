@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio 中使用连接到 SAP 添加适配器服务引用插件 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中使用连接到 SAP 添加适配器服务引用插件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05116c2f-08a4-495b-a031-d377e7ca33e0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964163"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>Visual Studio 中使用连接到 SAP 添加插件的适配器服务引用
 若要连接到 SAP 系统使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在.NET 编程解决方案中，你必须使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 本主题将说明了如何使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965571"
 ---
 # <a name="step-4-submitting-a-3a4-request"></a>步骤 4： 提交 3A4 请求
 在此步骤中，你将使用“3A4 - 请求采购订单”的合作伙伴接口流程 (PIP) 准备并提交请求。 此 PIP 可使买方组织向供应商提交采购订单请求。 一般情况下，在运行使用“3A2 - 请求价格和可用性”PIP 的产品可用性查询之后请求“3A4 - 请求采购订单”。 3A4 PIP 是一个发送确认回执的异步 PIP。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/28/2017
     |**伙伴组织**|类型**Contoso**。|  
     |**Pip 代码**|类型**3A4**。|  
     |**Pip 版本**|类型**V02.02.00**。|  
-    |**Pip 实例 ID**|类型**3A4_Test**。 **重要说明：**若要避免重复的消息 ID 错误，你必须确保**Pip 实例 ID**对于你提交每条消息是唯一的。 如果以后运行 3A4 测试，则必须更改本字段。|  
+    |**Pip 实例 ID**|类型**3A4_Test**。 **重要说明：** 若要避免重复的消息 ID 错误，你必须确保**Pip 实例 ID**对于你提交每条消息是唯一的。 如果以后运行 3A4 测试，则必须更改本字段。|  
     |**消息类别**|类型**操作**。|  
   
 3.  使用记事本或其他文本编辑器中打开该 3A4_Request.xml 文件\<*驱动器*\>: files\microsoft BizTalk\<版本\>RosettaNet\SDK\ 快捷键LOBApplication\SampleInstances 文件夹，然后复制并粘贴到的内容**服务内容**LOBWebApplication 字段。  

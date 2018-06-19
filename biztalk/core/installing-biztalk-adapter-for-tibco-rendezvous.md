@@ -1,15 +1,15 @@
 ---
-title: "安装、 架构和限制 TIBCO 会合适配器 |Microsoft 文档"
-description: "安装架构生成的、 和限制的 BizTalk Adapter TIBCO 会合 BizTalk Server 中"
-ms.custom: 
+title: 安装、 架构和限制 TIBCO 会合适配器 |Microsoft 文档
+description: 安装架构生成的、 和限制的 BizTalk Adapter TIBCO 会合 BizTalk Server 中
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c6404e7e-f671-4c57-a222-0bbe7cbc334f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013596"
 ---
 # <a name="install-schemas-and-limitations-of-the-tibco-rendezvous-adapter"></a>安装、 架构和 TIBCO 会合适配器的限制
 

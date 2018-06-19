@@ -1,15 +1,15 @@
 ---
-title: "更新或卸载 BizTalk 适配器包 2016年 |Microsoft 文档"
-description: "使用安装向导或 msiexec 来更改或卸载 BAP 2016 附带 BizTalk Server;包括删除绑定，删除了自定义的 Rfc"
-ms.custom: 
+title: 更新或卸载 BizTalk 适配器包 2016年 |Microsoft 文档
+description: 使用安装向导或 msiexec 来更改或卸载 BAP 2016 附带 BizTalk Server;包括删除绑定，删除了自定义的 Rfc
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d3d6c001-1005-4d7b-a143-eaa37b48f898
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967995"
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>更新或卸载 BizTalk 适配器包 2016
 如何更改或卸载[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。

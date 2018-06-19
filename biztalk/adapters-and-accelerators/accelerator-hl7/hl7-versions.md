@@ -1,17 +1,17 @@
 ---
-title: "HL7 版本 |Microsoft 文档"
-ms.custom: 
+title: HL7 版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HL7, standards
 - HL7, versions
 ms.assetid: 47299c6f-55c3-4434-8170-5ad73fe9a84c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204821"
 ---
 # <a name="hl7-versions"></a>HL7 版本
 HL7 版本 2 是一系列的密切相关的标准，而不是单个标准。 HL7 组织已设计为向上兼容的 HL7 版本间的兼容性规则的应用程序通过这些标准。 这些规则保证，范围内的版本 2 的接口定义的 HL7 版本的规则下仍可正常工作的定义后续版本中。 以便接收系统将能够接受来自更高版本的消息而不会破坏其实现和发送系统将能够继续将消息发送给支持更高版本的接收者。  

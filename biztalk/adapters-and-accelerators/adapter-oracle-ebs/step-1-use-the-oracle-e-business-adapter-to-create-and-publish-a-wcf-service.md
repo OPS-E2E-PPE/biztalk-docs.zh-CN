@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 使用 Oracle E-business 适配器来创建和发布 WCF 服务 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 使用 Oracle E-business 适配器来创建和发布 WCF 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cd76f6f-600f-4eb5-8eee-8f3604d0fef4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967795"
 ---
 # <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>步骤 1： 使用 Oracle E-business 适配器来创建和发布 WCF 服务
 ![步骤 1 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **完成时间：** 15 分钟  
   
- **目标：**可以使用[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]从可以如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中托管的 Oracle E-business Suite 项目生成的 WCF 服务。 本主题演示如何使用向导来生成 WCF 服务文件。  
+ **目标：** 可以使用[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]从可以如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中托管的 Oracle E-business Suite 项目生成的 WCF 服务。 本主题演示如何使用向导来生成 WCF 服务文件。  
   
 ## <a name="prerequisites"></a>先决条件  
  运行向导之前，安装以下项：  
@@ -112,8 +113,8 @@ ms.lasthandoff: 11/28/2017
         |----------------------|-----------------------|  
         |身份验证类型|对于 Microsoft Office SharePoint Server，可以使用的 WCF 服务，你应将其设置为**HTTPUserNamePassword**。 这允许客户端的 HTTP 标头的一部分指定用户名和密码。|  
         |Name|指定终结点行为配置的名称。 对于本教程中，键入**customEndpointBehavior**。|  
-        |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：**如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
-        |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：**如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
+        |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
+        |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"在[http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此属性是可选的。|  
   
      下图显示使用指定的值的配置服务和终结点行为页。  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/28/2017
   
     |属性|指定的值|  
     |----------------------|-----------------------|  
-    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮**（...）**来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅"BasicHttpBindingElement 成员"网址[http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)。|  
+    |绑定配置|该向导仅支持基本 HTTP 绑定。 因此，此绑定配置字段进行自动填充到*System.ServiceModel.Configuration.BasicHttpBindingElement*。<br /><br /> 单击省略号按钮 **（...）** 来更改 HTTP 绑定的属性。 若要使用的安全通信通道，必须始终设置**模式**属性**传输**。 向导会将设置的默认值为**模式**属性作为**传输**。<br /><br /> 有关其他公开的绑定的详细信息，请参阅"BasicHttpBindingElement 成员"网址[http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773)。|  
     |端点名称|指定协定的终结点名称。|  
   
      根据你在前面的页面中指定的值自动填充此页上的其他字段。  
@@ -186,7 +187,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
     ```  
   
     > [!NOTE]
-    >  必须将 WCF 服务发布到已启用 SSL 的位置。 换而言之中的值**目标位置**框必须以"https://"开头。 由于 HTTP 标头中传递的用户凭据，该向导将自动配置适配器的绑定行为，以作为安全模式，这意味着 SSL 加密中使用"传输"。 你可以当然返回，并编辑 web.config 文件以更改的值**\<安全模式\>**参数，但使用 SSL 时始终是更好的选择具有以明文传输敏感信息HTTP 标头中的文本。  
+    >  必须将 WCF 服务发布到已启用 SSL 的位置。 换而言之中的值**目标位置**框必须以"https://"开头。 由于 HTTP 标头中传递的用户凭据，该向导将自动配置适配器的绑定行为，以作为安全模式，这意味着 SSL 加密中使用"传输"。 你可以当然返回，并编辑 web.config 文件以更改的值**\<安全模式\>** 参数，但使用 SSL 时始终是更好的选择具有以明文传输敏感信息HTTP 标头中的文本。  
   
 3.  从**复制**框中，单击**所有项目文件**。  
   

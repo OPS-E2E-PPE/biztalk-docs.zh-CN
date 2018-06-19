@@ -1,11 +1,11 @@
 ---
-title: "配置证书导入使用 MMC |Microsoft 文档"
-ms.custom: 
+title: 配置证书导入使用 MMC |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - decryption certificates
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - signing certificates
 - certificates, importing
 ms.assetid: 64dbfbcf-6026-4c68-a93a-f483ec52deac
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961667"
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>配置使用 MMC 导入的证书
 使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 管理控制台 (MMC) 的证书管理单元导入证书后，必须对证书的使用进行配置。 这要求配置 BizTalk 组、 BizTalk 主机和独立的主机服务帐户、 合作伙伴接口进程 (Pip)、 贸易合作伙伴协议和合作伙伴。 你必须执行以下步骤：  

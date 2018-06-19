@@ -1,17 +1,17 @@
 ---
-title: "消息修复和新提交故障排除 |Microsoft 文档"
-ms.custom: 
+title: 消息修复和新提交故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, Message Repair and New Submission
 - Message Repair and New Submission, troubleshooting
 ms.assetid: bb07a286-6f02-4639-b5fa-a3647e356ac8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25965411"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>消息修复和新提交疑难解答
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>无法提交修复后的消息，如果未部署信封架构  
@@ -76,7 +77,7 @@ ms.lasthandoff: 01/17/2018
   
 1.  单击 **启动**, ，指向 **所有程序**, ，指向 **管理工具**, ，然后单击 **Internet Information Services (IIS) Manager**。  
   
-2.  在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）**节点，**应用程序池**节点和**Web站点**节点。 在网站节点下展开**Default Web Site**节点。  
+2.  在 IIS 管理器中，展开 ***\<服务器名称\>* （本地计算机）** 节点，**应用程序池**节点和**Web站点**节点。 在网站节点下展开**Default Web Site**节点。  
   
 3.  在 Default Web Site 节点中，右键单击**A4SWIFT_MRSR**，然后单击**属性**。  
   

@@ -1,11 +1,11 @@
 ---
-title: "第 8 课： 构建和部署程序集 |Microsoft 文档"
-ms.custom: 
+title: 第 8 课： 构建和部署程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building assemblies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assemblies, building
 - assemblies, deploying
 ms.assetid: 74c9dfbd-8365-4600-8885-a9d9c3490dd5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960915"
 ---
 # <a name="lesson-8-building-and-deploying-the-assembly"></a>第 8 课： 构建和部署程序集
 在本课程中，你可以生成和部署管道项目生成包含你在前面的步骤中创建管道的程序集。 本课程可确保到目前为止创建的工作中没有任何编译错误。  

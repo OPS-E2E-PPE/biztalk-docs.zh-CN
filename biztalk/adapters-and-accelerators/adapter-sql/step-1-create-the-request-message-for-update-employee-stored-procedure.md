@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为 UPDATE_EMPLOYEE 创建请求消息存储过程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 UPDATE_EMPLOYEE 创建请求消息存储过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dd975d9-4b38-46e0-a926-4b325b0d7b5e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965987"
 ---
 # <a name="step-1-create-the-request-message-for-updateemployee-stored-procedure"></a>步骤 1： 为 UPDATE_EMPLOYEE 创建请求消息存储过程
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，你可以将 C# 类库项目添加到你的解决方案。 此库创建的内存中请求消息**UPDATE_EMPLOYEE**存储过程。 在后续步骤中，业务流程将此消息发送到 SQL Server 来执行存储的过程。  
+ **目标：** 在此步骤中，你可以将 C# 类库项目添加到你的解决方案。 此库创建的内存中请求消息**UPDATE_EMPLOYEE**存储过程。 在后续步骤中，业务流程将此消息发送到 SQL Server 来执行存储的过程。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已完成中的步骤[第 2 课： 接收和筛选器通知](../../adapters-and-accelerators/adapter-sql/lesson-2-receive-and-filter-notifications.md)。  

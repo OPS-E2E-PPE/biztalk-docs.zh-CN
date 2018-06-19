@@ -1,18 +1,18 @@
 ---
-title: "第 1 部分： 零碎的入站的批处理方案 |Microsoft 文档"
-ms.custom: 
+title: 第 1 部分： 零碎的入站的批处理方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching, fragmenting messages
 - batching tutorial, fragmenting messages
 - fragmenting messages
 ms.assetid: 8adf2c17-5f66-408d-b30b-51b22d8e71fa
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206213"
 ---
 # <a name="part-1-fragmented-inbound-batch-scenario"></a>第 1 部分： 零碎的入站的批处理方案
 在本教程的此部分中，你将接收 HL7 编码批、 片段转换为单个消息，和各条消息发送到目标。 下图显示在此过程中的流。  

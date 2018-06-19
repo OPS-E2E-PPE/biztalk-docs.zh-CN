@@ -1,14 +1,14 @@
 ---
-title: "如何启用在组中的其他计算机上的通知服务 |Microsoft 文档"
-ms.custom: 
+title: 如何启用在组中的其他计算机上的通知服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 571d6b45-b0cc-47f2-bed3-7c6f3e70decc
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969251"
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a>如何启用在组中的其他计算机上的通知服务
 在多计算机环境中运行 BAM 时，必须在将运行 BAM 管理实用程序以便部署某一活动的每台计算机上都启用 Notification Services。  

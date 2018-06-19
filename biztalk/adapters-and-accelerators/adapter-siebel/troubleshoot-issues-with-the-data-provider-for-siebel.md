@@ -1,17 +1,17 @@
 ---
-title: "解决问题的数据提供程序 Siebel |Microsoft 文档"
-ms.custom: 
+title: 解决问题的数据提供程序 Siebel |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, troubleshooting
 - troubleshooting, Data Provider for Siebel
 ms.assetid: 2bfe69a2-d6de-466d-9f36-f11c386c771c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22221997"
 ---
 # <a name="troubleshoot-issues-with-the-data-provider-for-siebel"></a>解决与用于 Siebel 的数据提供程序的问题
 本部分讨论如何使用故障排除方法来解决在使用时可能遇到的错误[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。  

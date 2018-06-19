@@ -1,17 +1,17 @@
 ---
-title: "批准消息 |Microsoft 文档"
-ms.custom: 
+title: 批准消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, approving
 - approving messages
 ms.assetid: e6abfef3-aab2-470e-a7a7-a6d091ffba53
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962515"
 ---
 # <a name="approving-a-message"></a>批准一条消息
 本部分描述如何批准已修复且已验证的消息。  

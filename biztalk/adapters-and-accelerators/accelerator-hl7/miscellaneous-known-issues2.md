@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207061"
 ---
 # <a name="miscellaneous-known-issues"></a>其他已知的问题
 本部分包含有关其他错误的有用信息。  

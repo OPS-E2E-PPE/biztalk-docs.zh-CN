@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 最新内容、 安装、 配置和升级 |Microsoft 文档"
-description: "什么是新的和安装和配置 BizTalk Server 2016 和 BizTalk Server 2013 R2 和 2013年简介"
-ms.custom: 
+title: BizTalk Server 最新内容、 安装、 配置和升级 |Microsoft 文档
+description: 什么是新的和安装和配置 BizTalk Server 2016 和 BizTalk Server 2013 R2 和 2013年简介
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67ea76f3-017b-4fb5-b944-f86905e15c87
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014108"
 ---
 # <a name="biztalk-server-whats-new-install-configuration-and-upgrade"></a>BizTalk Server 新增功能、 安装、 配置和升级
 了解最新功能，以及如何安装和配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 

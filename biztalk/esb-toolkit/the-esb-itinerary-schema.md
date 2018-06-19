@@ -1,14 +1,14 @@
 ---
-title: "ESB 路线架构 |Microsoft 文档"
-ms.custom: 
+title: ESB 路线架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 168e7b98-6282-494e-bde8-3171e0be7d59
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295221"
 ---
 # <a name="the-esb-itinerary-schema"></a>ESB 路线架构
 名为 Itinerary.xsd ESB 路线架构作为处理指令，通常称为路线服务的一组定义日程表。 路线服务可能包含一个或多个路线的服务和相应的冲突解决程序连接字符串，如下面的架构定义中所示。  

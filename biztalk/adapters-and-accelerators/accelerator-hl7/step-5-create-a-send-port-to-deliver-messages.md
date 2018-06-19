@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 创建发送端口将消息传递 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 创建发送端口将消息传递 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f56ad7a7-5c77-4191-a001-691e5e0652a1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22207597"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-messages"></a>步骤 5： 创建发送端口将消息传递
 在此步骤中，你可以创建和配置用于发送单个消息中收到批处理包含端口。 更高版本在教程中，将在启用发起方 (Tutorial_BatchSource) 的碎片[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。 因此，BizTalk 集成引擎将转换为单个消息，片段批处理和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将通过在此步骤中创建的发送端口发送这些消息。  
@@ -56,15 +57,15 @@ ms.lasthandoff: 09/20/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**属性**（首行）|单击下的字段**属性**，然后选择**BTS。MessageType**从下拉列表。|  
-    |**运算符**|选择**！ =**从下拉列表。|  
+    |**运算符**|选择 **！ =** 从下拉列表。|  
     |**值**|类型**http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF**。|  
     |**分组依据**|选择**AND**从下拉列表。|  
     |**属性**（第二个行）|单击下的字段**属性**，然后选择**BTS。MessageType**从下拉列表。|  
-    |**运算符**|选择**！ =**从下拉列表。|  
+    |**运算符**|选择 **！ =** 从下拉列表。|  
     |**值**|类型**http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF。**|  
     |**分组依据**|选择**和**从下拉列表。|  
     |**属性**（第三个行）|单击下的第二个行上的字段**属性**，然后选择**BTS。MessageType**从下拉列表。|  
-    |**运算符**|选择**！ =**从下拉列表。|  
+    |**运算符**|选择 **！ =** 从下拉列表。|  
     |**值**|类型**StaticAck**。|  
   
 7.  单击 **“输入”**。 在对话框中底部窗格中，验证是否正确，输入筛选器表达式，然后单击**确定**。  

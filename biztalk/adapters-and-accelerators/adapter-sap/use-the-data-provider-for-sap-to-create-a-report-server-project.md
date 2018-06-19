@@ -1,14 +1,14 @@
 ---
-title: "使用适用于 SAP 的数据提供程序来创建报表服务器项目 |Microsoft 文档"
-ms.custom: 
+title: 使用适用于 SAP 的数据提供程序来创建报表服务器项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe985b5-ba67-4179-a31c-4f41106c32be
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962755"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>使用适用于 SAP 的数据提供程序来创建报表服务器项目
 你必须创建报表服务器项目，使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，若要为 SAP 系统中可用的数据生成报表。 本主题将说明了如何创建报表服务器项目。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/28/2017
         |使用此选项|执行的操作|  
         |--------------|----------------|  
         |**使用特定用户名和密码**|指定用户名和密码以连接到 SAP 系统。|  
-        |**提示输入凭据**|生成报表时，应输入 SAP 系统的凭据。 **注意：**凭据指定为此选项将替代凭据，如果指定，作为连接字符串的一部分。|  
+        |**提示输入凭据**|生成报表时，应输入 SAP 系统的凭据。 **注意：** 凭据指定为此选项将替代凭据，如果指定，作为连接字符串的一部分。|  
         |**无凭据**|如果你要作为连接字符串的一部分提供的用户名和密码，请选择此选项。|  
   
         > [!NOTE]
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/28/2017
   
          单击 **“下一步”**。  
   
-    6.  在后续的对话框中，你可以设计所需的报表显示在其中的格式。 如果你想要使用的默认格式，请单击**完成 >> &#124;**以直接转到**完成**对话框。  
+    6.  在后续的对话框中，你可以设计所需的报表显示在其中的格式。 如果你想要使用的默认格式，请单击**完成 >> &#124;** 以直接转到**完成**对话框。  
   
     7.  在**完成向导**对话框中，指定报表的名称，查看摘要，，然后单击**完成**。 对于本主题中，指定为报表的名称`SAPReport`。  
   

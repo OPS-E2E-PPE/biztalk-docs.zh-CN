@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964987"
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a>步骤 3： 为价格和可用性项目使用 BizTalk 映射程序创建 Contoso LOB 应用程序映射
 在此步骤中，将创建两个映射，它们可以用于定义在两个贸易合作伙伴之间成功交换消息所需的转换。 在此方案中，Contoso ERP 系统已对价格与可用性请求的消息格式进行标准化。 这两个映射分别将来自贸易合作伙伴 Fabrikam 的请求和响应消息映射为内部定义的 Contoso 消息，或将内部定义的 Contoso 消息映射为发往贸易合作伙伴 Fabrikam 的请求和响应消息。  
@@ -59,9 +60,9 @@ ms.lasthandoff: 11/28/2017
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>在 PIP3A2RequestToContosoPriceRequest 映射中链接架构字段  
   
-1.  在目标架构窗格中，右键单击**\<架构\>**节点，，然后单击**展开树节点**。  
+1.  在目标架构窗格中，右键单击**\<架构\>** 节点，，然后单击**展开树节点**。  
   
-2.  在源架构窗格中，右键单击**\<架构\>**节点，，然后单击**展开树节点**。  
+2.  在源架构窗格中，右键单击**\<架构\>** 节点，，然后单击**展开树节点**。  
   
 3.  拖动**GlobalProductIdentifier**字段**ProductID**字段在目标架构窗格中。  
   

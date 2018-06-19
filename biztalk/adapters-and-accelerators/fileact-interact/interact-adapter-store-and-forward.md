@@ -1,14 +1,14 @@
 ---
-title: "交互适配器存储和转发 |Microsoft 文档"
-ms.custom: 
+title: 交互适配器存储和转发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d596780a-085d-48db-be44-a3ae58f591d0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963203"
 ---
 # <a name="interact-adapter-store-and-forward"></a>交互适配器存储和转发
 存储区中和进 (SnF) 模式下，消息在发送时，传递到队列并从由目标队列检索。 当使用 SnF，响应来自 SWIFTNet SnF 本身，并且不包含从响应方的任何反馈。  

@@ -1,14 +1,14 @@
 ---
-title: "使用.NET 项目中的 WCF LOB 适配器 SDK 适配器 |Microsoft 文档"
-ms.custom: 
+title: 使用.NET 项目中的 WCF LOB 适配器 SDK 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6934b96d-5704-4f3c-b53f-4e36e352a338
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966827"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>使用.NET 项目中的 WCF LOB 适配器 SDK 适配器
 若要使用使用构建适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，你必须添加到项目的服务引用。 可以执行此操作：  
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  在**解决方案资源管理器**，右键单击项目，指向**添加**，然后单击**新项**。 在**添加现有项**对话框中，选择前面创建的.cs 和 app.config 文件。  单击 **“添加”**。  
   
-    2.  在**解决方案资源管理器**，右键单击**引用**，然后单击**添加引用**。 上**.NET**选项卡上，选择**System.ServiceModel**，然后单击**确定**。 你现在可以在你的应用程序中使用代理。  
+    2.  在**解决方案资源管理器**，右键单击**引用**，然后单击**添加引用**。 上 **.NET**选项卡上，选择**System.ServiceModel**，然后单击**确定**。 你现在可以在你的应用程序中使用代理。  
   
 ## <a name="see-also"></a>另请参阅  
  [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   

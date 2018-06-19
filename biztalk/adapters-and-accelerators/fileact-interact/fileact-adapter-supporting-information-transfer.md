@@ -1,14 +1,14 @@
 ---
-title: "支持信息传输的 FileAct 适配器 |Microsoft 文档"
-ms.custom: 
+title: 支持信息传输的 FileAct 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fc27561-9abb-4496-9db7-f221a6c90738
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22222813"
 ---
 # <a name="fileact-adapter-supporting-information-transfer"></a>FileAct 适配器支持信息传输
 FileAct 适配器允许可选传输的文件的支持信息。 应用程序自行传输此信息。 适配器不会执行操作 （验证它正在正确的格式除外） 的起始端上的此信息进行任何特殊处理。 元素用于构成支持信息包括：  

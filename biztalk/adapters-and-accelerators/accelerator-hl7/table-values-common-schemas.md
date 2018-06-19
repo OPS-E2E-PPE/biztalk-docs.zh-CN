@@ -1,18 +1,18 @@
 ---
-title: "表值通用架构 |Microsoft 文档"
-ms.custom: 
+title: 表值通用架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - 2.X schemas, common schemas
 - 2.X schemas, table values
 - common schemas
 ms.assetid: 2421e150-1bae-43bd-aba3-6322c679b22b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25962035"
 ---
 # <a name="table-values-common-schemas"></a>表值通用架构
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 生成**tablevalues_*\<版本\>*.xsd**文件，以每个 HL7 版本，然后查找根目录下的 HL7 文件特定于版本的文件夹。 数据类型的公共架构文件引用的表值常见架构文件。  

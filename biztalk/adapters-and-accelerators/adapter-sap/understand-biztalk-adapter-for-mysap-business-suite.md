@@ -1,11 +1,11 @@
 ---
-title: "了解为 mySAP Business Suite 的 BizTalk Adapter |Microsoft 文档"
-ms.custom: 
+title: 了解为 mySAP Business Suite 的 BizTalk Adapter |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapter features
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - features of SAP adapter
 - adapters, about SAP ADO Provider
 ms.assetid: 136ca828-2724-454b-9d4d-a491d45e1eda
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962195"
 ---
 # <a name="understand-biztalk-adapter-for-mysap-business-suite"></a>为 mySAP Business Suite 了解 BizTalk 适配器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  

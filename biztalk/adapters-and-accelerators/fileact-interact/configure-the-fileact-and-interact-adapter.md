@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "25966459"
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>配置 FileAct 和交互适配器
 配置不同的项目使用[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]运行时。 

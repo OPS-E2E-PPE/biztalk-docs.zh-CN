@@ -1,14 +1,14 @@
 ---
-title: "如何更新使用的并行版本控制的映射 |Microsoft 文档"
-ms.custom: 
+title: 如何更新使用的并行版本控制的映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7b0e377f-92ab-483e-9f3c-222c7b5ac0b1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22298269"
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a>如何更新使用的并行版本控制的映射
 某些 BizTalk 项目，比如地图，选择通过完全限定的强名称 (FQSN)，在这种情况下的绑定包括使用的版本。 这允许两个或多个图并排放置在共存[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 因此，可以发送端口属性中选择其中一个接收位置属性中的入站的映射或出站映射映射。  

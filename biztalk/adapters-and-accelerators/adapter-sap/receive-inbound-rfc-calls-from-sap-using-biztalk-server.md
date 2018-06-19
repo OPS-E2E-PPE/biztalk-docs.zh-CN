@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967747"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a>接收来自 SAP 使用 BizTalk Server 的入站 RFC 调用
 在 RFC 服务器方案中，有三个实体：  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
  请参阅[浏览、 搜索和 get 元数据在 SAP 中的 RFC 操作](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)有关如何为特定 RFC 生成架构的说明。  
   
 > [!IMPORTANT]
->  因为您正在生成的入站 RFC 调用的架构，请确保选择**服务 （入站操作）**从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。  
+>  因为您正在生成的入站 RFC 调用的架构，请确保选择**服务 （入站操作）** 从**选择协定类型**下拉列表中的[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
  你先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，为其类型由相应的架构定义。 你必须链接您从生成的架构中的第一步的邮件 BizTalk 项目的业务流程视图。  

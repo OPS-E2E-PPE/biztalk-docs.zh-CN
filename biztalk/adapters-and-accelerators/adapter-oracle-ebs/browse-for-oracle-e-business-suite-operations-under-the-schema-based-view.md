@@ -1,14 +1,14 @@
 ---
-title: "用于 Oracle E-business Suite 操作基于架构的视图下浏览 |Microsoft 文档"
-ms.custom: 
+title: 用于 Oracle E-business Suite 操作基于架构的视图下浏览 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d004a99f-0db1-4cdb-80cd-ea71de4e1098
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963499"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-schema-based-view"></a>用于 Oracle E-business Suite 操作基于架构的视图下浏览
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要浏览的出站和入站操作，可以对 Oracle E-business Suite 执行使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 本主题提供有关如何浏览基于架构的视图下的出站和入站操作的信息。  

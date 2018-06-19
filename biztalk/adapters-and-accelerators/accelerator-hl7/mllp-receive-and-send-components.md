@@ -1,11 +1,11 @@
 ---
-title: "MLLP 接收和发送组件 |Microsoft 文档"
-ms.custom: 
+title: MLLP 接收和发送组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send components
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - wrappers [MLLP adapters]
 - receive components
 ms.assetid: 2f1c4099-8f52-437a-bdc1-efe707fbf347
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961073"
 ---
 # <a name="mllp-receive-and-send-components"></a>MLLP 接收和发送组件
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持所有[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]本机适配器类型，包括文件、 HTTP、 SQL 和 FTP。 对于 HL7 编码接收和发送的消息，但是，你通常使用 MLLP 适配器。 此适配器是使用最小的较低层协议 (MLLP) 的 TCP/IP 套接字适配器。 此协议提供的双向消息支持和端到端卫生保健的应用程序集成。  

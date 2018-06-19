@@ -1,14 +1,14 @@
 ---
-title: "BizUnit 测试用例的阶段 |Microsoft 文档"
-ms.custom: 
+title: BizUnit 测试用例的阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ed0e725f-2c52-43f7-ae30-343413a703c2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302373"
 ---
 # <a name="stages-of-a-bizunit-test-case"></a>BizUnit 测试用例的阶段
 每个 BizUnit 测试用例包括三个阶段： **TestSetup**， **TestExecution**，和**TestCleanup**。 每个阶段包含负责执行的工作; 单个离散单元的一个或多个测试步骤例如， **FileCreateStep**负责在给定文件名指定的位置中创建一个文件。  BizUnit 包括超过 70 测试步骤，并提供扩展功能，使新的测试步骤，以可轻松添加到框架。 能够将新的步骤添加到框架允许 BizUnit 方案的广泛使用。 本主题介绍 BizUnit 测试阶段中详细说明。  

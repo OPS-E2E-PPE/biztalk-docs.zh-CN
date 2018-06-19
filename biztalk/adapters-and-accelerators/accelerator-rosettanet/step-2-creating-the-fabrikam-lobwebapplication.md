@@ -1,17 +1,17 @@
 ---
-title: "步骤 2： 创建 Fabrikam LOBWebApplication |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 创建 Fabrikam LOBWebApplication |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private process tutorial, creating LOBWebApplication
 - LOBWebApplication
 ms.assetid: 2ff8bd20-7fbc-4e16-b177-bb4afac7f7c3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964323"
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>步骤 2： 创建 Fabrikam LOBWebApplication
 在此步骤中，你将创建 Fabrikam 用于向 Contoso 提交 3A2 PIP 请求的 LOB 应用程序。 LOBWebApplication 项目安装在 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中。 若要运行 Web 应用程序，必须创建 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet 信息服务 (IIS) 虚拟目录，然后构建 LOBWebApplication 项目。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  如果已完成双操作教程，则应已在该教程中创建了 LOBWebApplication 虚拟目录。 如果是这样，你无需执行这些步骤。 但是，将需要更改从的虚拟目录的权限**运行脚本**到**读取**。  
   
-2.  在 Internet 信息服务管理器中，展开**< 计算机名 > （本地计算机）**，然后展开**网站**。  
+2.  在 Internet 信息服务管理器中，展开 **< 计算机名 > （本地计算机）**，然后展开**网站**。  
   
 3.  右键单击**Default Web Site**，指向**新建**，然后单击**虚拟目录**。  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  在添加引用对话框中，单击**浏览**并转向**\<驱动器\>: files\microsoft BizTalk\<版本\>RosettaNet\bin 快捷键**.  
   
-6.  **选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集**，然后单击确定。**  
+6.  **选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集 **，然后单击确定。**  
   
 7.  上**生成**菜单上，单击**生成网站**。  
   

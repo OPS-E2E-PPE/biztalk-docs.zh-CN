@@ -1,17 +1,17 @@
 ---
-title: "将证书安装 |Microsoft 文档"
-ms.custom: 
+title: 将证书安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, installing
 - installing, certificates
 ms.assetid: 7525f771-623c-420f-99ca-c834e819829d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22209461"
 ---
 # <a name="installing-certificates"></a>安装证书
 若要发送、 修复或提交消息，必须安装的正确证书。 本主题介绍如何添加证书。 在生产环境中，请参阅你的 IT 部门的证书。  

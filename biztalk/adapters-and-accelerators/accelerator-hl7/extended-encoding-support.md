@@ -1,14 +1,14 @@
 ---
-title: "扩展编码支持 |Microsoft 文档"
-ms.custom: 
+title: 扩展编码支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 93a40fa6-d0da-416e-97fb-675ddde3f005
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204829"
 ---
 # <a name="extended-encoding-support"></a>扩展编码的支持
 默认情况下，HL7 接收管道，BTAHL72X，仅支持 ASCII 编码。 这意味着，具有等效值大于 127 都将替换输入消息中的任何字符"？"。 这是因为在 ASCII 字符集中未表示具有等效值大于 127 个字符。  

@@ -1,14 +1,14 @@
 ---
-title: "如何配置强名称程序集密钥文件 |Microsoft 文档"
-ms.custom: 
+title: 如何配置强名称程序集密钥文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5778a8ec-f5f7-4ae1-a57e-99f6503f044c
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968803"
 ---
 # <a name="how-to-configure-a-strong-name-assembly-key-file"></a>如何配置强名称程序集密钥文件
 过程中部署 BizTalk 解决方案，[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]首先生成这些程序集。 部署过程要求每个程序集都是强签名的。 强可以通过将项目与强名称程序集密钥文件相关联来签名你的程序集。 如果你尚未这样做，则在从 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 部署某一解决方案之前，使用以下过程生成一个强名称程序集密钥文件并将它分配给解决方案中的每个项目。  

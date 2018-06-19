@@ -1,14 +1,14 @@
 ---
-title: "注意事项接收数据库更改通知使用 Oracle E-business Suite 适配器 |Microsoft 文档"
-ms.custom: 
+title: 注意事项接收数据库更改通知使用 Oracle E-business Suite 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 95bbb19e-8d31-4b27-8cfe-6760e4bb0808
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963171"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-e-business-suite-adapter"></a>注意事项接收数据库更改通知使用 Oracle E-business Suite 适配器
 本主题提供一些注意事项和最佳做法，你必须使用时应牢记[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]以接收从 Oracle 数据库的数据库通知。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 -   该操作所影响的记录数不影响操作的通知消息。 例如，而不考虑在 Oracle 数据库表中插入的记录数，适配器客户端收到一个通知消息。  
   
--   我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。 适配器客户端应用程序可以做到这一点提取中的信息**\<信息\>**收到的通知消息元素。 下面是收到有关插入操作的通知消息的示例。  
+-   我们建议适配器客户端应用程序包含的逻辑来解释从 Oracle 数据库接收的通知的类型。 适配器客户端应用程序可以做到这一点提取中的信息**\<信息\>** 收到的通知消息元素。 下面是收到有关插入操作的通知消息的示例。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/28/2017
     </Notification>  
     ```  
   
-     请注意内的值**\<信息\>**元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息\>**元素，然后根据值，执行后续的任务。 主题[Oracle E-business Suite 中完成特定任务的进程通知消息](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何提取的值在**\<信息\>**元素.  
+     请注意内的值**\<信息\>** 元素。 此值提供有关为其接收到通知消息的操作的信息。 你的应用程序应具有用于提取内的值的功能**\<信息\>** 元素，然后根据值，执行后续的任务。 主题[Oracle E-business Suite 中完成特定任务的进程通知消息](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何提取的值在**\<信息\>** 元素.  
   
 -   理想情况下，客户端应用程序接收的通知后，它应更新为其已收到通知，以便后续通知不是针对同一条记录的记录。 例如，考虑**ACCOUNTACTIVITY**表具有**处理**列。 为所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。 例如，在插入操作中的记录之后**ACCOUNTACTIVITY**表将如下所示：  
   

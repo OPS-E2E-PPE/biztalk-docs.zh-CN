@@ -1,14 +1,14 @@
 ---
-title: "连接到 Oracle 数据库使用 Windows 身份验证 |Microsoft 文档"
-ms.custom: 
+title: 连接到 Oracle 数据库使用 Windows 身份验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 73b42a1b-1105-4278-bf8a-62cf0cffb08f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961939"
 ---
 # <a name="connect-to-the-oracle-database-using-windows-authentication"></a>连接到 Oracle 数据库使用 Windows 身份验证
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]使适配器客户端以使用 Windows 身份验证来建立与 Oracle 数据库的连接。 若要使用 Windows 身份验证，适配器客户端必须指定"/"用户名和将密码留空。 有关连接到 Oracle 数据库使用 Windows 身份验证的详细信息，请参阅[连接到 Visual Studio 使用使用适配器服务中的 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md)。  

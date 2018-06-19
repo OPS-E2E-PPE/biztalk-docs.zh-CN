@@ -1,14 +1,14 @@
 ---
-title: "在 Oracle E-business Suite ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作 |Microsoft 文档"
-ms.custom: 
+title: 在 Oracle E-business Suite ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e2d377d-60a2-45fe-8458-433e6f4f6619
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965475"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-oracle-e-business-suite"></a>在 Oracle E-business Suite ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]如公开泛型操作**ExecuteNonQuery**， **ExecuteReader**，和**ExecuteScalar**。 这些操作可用于 Oracle 数据库执行任何 SQL 语句。 这些操作因响应为 SQL 语句所获取的类型而异。 有关如何适配器支持这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  

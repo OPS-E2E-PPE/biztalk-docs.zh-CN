@@ -1,15 +1,15 @@
 ---
-title: "导入绑定 TIBCO 会合 |Microsoft 文档"
-description: "部署你的 BizTalk Adapter TIBCO 会合应用程序在 BizTalk Server 中使用导入绑定功能"
-ms.custom: 
+title: 导入绑定 TIBCO 会合 |Microsoft 文档
+description: 部署你的 BizTalk Adapter TIBCO 会合应用程序在 BizTalk Server 中使用导入绑定功能
+ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec5751a9-0a08-4cf8-a3ef-e51e488a4180
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968483"
 ---
 # <a name="deploy-tibco-rendezvous-ports-and-assemblies"></a>部署 TIBCO 会合端口和程序集
   

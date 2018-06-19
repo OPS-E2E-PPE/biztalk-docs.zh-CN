@@ -1,17 +1,17 @@
 ---
-title: "解决与 Oracle 数据库适配器的安装问题 |Microsoft 文档"
-ms.custom: 
+title: 解决与 Oracle 数据库适配器的安装问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation issues, troubleshooting
 - troubleshooting, installation issues
 ms.assetid: 2054b725-d657-4039-b83b-119571935f62
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962315"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>解决与 Oracle 数据库适配器的安装问题
 安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论如何使用故障排除方法来解决安装问题，并还列出了一些已知的问题。  

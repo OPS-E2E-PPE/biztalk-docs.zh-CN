@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970571"
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a>以解决 IIS 权限问题的指导原则
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将 Microsoft Internet 信息服务 (IIS) 广泛应用于 Web Services 支持，并与 HTTP、SOAP 和 Windows SharePoint Services 适配器一起使用。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  单击**启动**，然后**所有程序**，然后单击**Internet Information Services (IIS) 7 Manager**。  
   
-2.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>***（用户帐户）**单击**应用程序池**。  
+2.  在 Internet 信息服务 (IIS) 管理器中，展开*\<计算机名称\>***（用户帐户）** 单击**应用程序池**。  
   
 3.  右键单击应用程序池，单击**查看应用程序**若要查看与应用程序池关联的应用程序。  
   
@@ -54,17 +55,17 @@ ms.lasthandoff: 11/28/2017
   
  IIS 7.0 支持以下用户验证方法：  
   
--   **匿名访问：**允许用户建立匿名连接。 IIS 服务器以指定的 Guest 帐户登录用户。  
+-   **匿名访问：** 允许用户建立匿名连接。 IIS 服务器以指定的 Guest 帐户登录用户。  
   
 -   **ASP.NET 模拟**允许应用程序在两个不同的上下文之一中运行： 作为通过 IIS 身份验证的用户或作为你设置的任意帐户。  
   
--   **基本身份验证：**纯文本，以未加密形式在网络上传输密码。  
+-   **基本身份验证：** 纯文本，以未加密形式在网络上传输密码。  
   
--   **摘要式身份验证：**仅适用于 Active Directory 帐户，通过网络，而不是纯文本密码发送一个哈希值。 摘要验证可通过代理服务器和其他防火墙工作，可以在 Web 分布式创作和版本管理 (WebDAV) 目录中使用。 要使用摘要式身份验证，首先必须禁用匿名身份验证。  
+-   **摘要式身份验证：** 仅适用于 Active Directory 帐户，通过网络，而不是纯文本密码发送一个哈希值。 摘要验证可通过代理服务器和其他防火墙工作，可以在 Web 分布式创作和版本管理 (WebDAV) 目录中使用。 要使用摘要式身份验证，首先必须禁用匿名身份验证。  
   
 -   **窗体身份验证**Accommodates 的高流量站点或公共服务器上的应用程序的身份验证。 表单身份验证可管理客户端注册和应用程序级别的身份验证，而非依赖操作系统提供的身份验证机制。  
   
--   **Windows 身份验证：**在您的 Windows 域进行身份验证的客户端连接的使用身份验证。  
+-   **Windows 身份验证：** 在您的 Windows 域进行身份验证的客户端连接的使用身份验证。  
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a>设置 IIS 7.0 中虚拟目录的用户访问权限  
   

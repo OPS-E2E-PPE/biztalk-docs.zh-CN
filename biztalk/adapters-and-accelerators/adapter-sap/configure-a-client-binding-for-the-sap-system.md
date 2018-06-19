@@ -1,18 +1,18 @@
 ---
-title: "配置客户端绑定 SAP 系统 |Microsoft 文档"
-ms.custom: 
+title: 配置客户端绑定 SAP 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - proxy programming, creating a proxy
 - creating a proxy
 - how to, create a proxy
 ms.assetid: bceef132-29ff-4207-a37d-bf94fab484dd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963851"
 ---
 # <a name="configure-a-client-binding-for-the-sap-system"></a>配置客户端绑定 SAP 系统
 在你生成 WCF 客户端类后，可以创建一个 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开，请参阅[生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  

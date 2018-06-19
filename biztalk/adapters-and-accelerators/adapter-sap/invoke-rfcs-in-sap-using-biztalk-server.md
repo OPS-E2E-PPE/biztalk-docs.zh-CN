@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965435"
 ---
 # <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>调用中使用 BizTalk Server SAP Rfc
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现作为适配器客户端可以调用的操作公开 SAP 系统的 Rfc。 本部分说明了通过使用调用中某个 SAP 系统的 RFC[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，如何[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持 RFC 调用在 SAP 系统中，请参阅[操作中 SAP Rfc](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)。 有关用于调用 RFC 的 SOAP 消息的结构的详细信息，请参阅[RFC 操作的消息架构](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)。  

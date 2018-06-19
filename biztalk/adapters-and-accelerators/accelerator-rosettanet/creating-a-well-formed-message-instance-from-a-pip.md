@@ -1,17 +1,17 @@
 ---
-title: "从 PIP 创建格式正确的消息实例 |Microsoft 文档"
-ms.custom: 
+title: 从 PIP 创建格式正确的消息实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - message templates
 - PIPs, message templates
 ms.assetid: fed3698c-25d9-40ca-878a-60171f425bec
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960683"
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>从 PIP 创建格式正确的消息实例
 本主题介绍如何生成格式正确的消息实例。 你可以根据合作伙伴接口流程 (PIP) 为消息实例生成模板。 执行此操作后，必须先修改该模板，以确保该模板的格式正确，然后才能添加数据。  

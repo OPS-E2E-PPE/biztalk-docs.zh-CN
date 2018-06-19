@@ -1,14 +1,14 @@
 ---
-title: "部署应用程序 |Microsoft 文档"
-ms.custom: 
+title: 部署应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 04bb4496-b1e9-400b-a849-a355381849ff
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300413"
 ---
 # <a name="deploying-an-application"></a>部署应用程序
 部署是逻辑分布的应用程序项目，以确保所有必需的组件可供需要它们的系统。 这些项目包括 BizTalk Server 程序集、.NET 程序集、 架构、 地图、 绑定、 业务规则和证书。 可以利用 BizTalk 应用程序，以帮助推出到其他计算机 （时传输到另一个环境的应用程序） 添加到组或用于过渡的项目。  

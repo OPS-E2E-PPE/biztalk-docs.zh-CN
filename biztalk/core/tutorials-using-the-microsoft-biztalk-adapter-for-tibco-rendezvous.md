@@ -1,15 +1,15 @@
 ---
-title: "教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合 |Microsoft 文档"
-description: "从 TIBCO Rendevous 接收数据，并将数据发送到 BizTalk Server 中使用该适配器 TIBCO Rendevous 的分步指南"
-ms.custom: 
+title: 教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合 |Microsoft 文档
+description: 从 TIBCO Rendevous 接收数据，并将数据发送到 BizTalk Server 中使用该适配器 TIBCO Rendevous 的分步指南
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0be332bc-1148-4f2c-9509-6f09a67da057
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013100"
 ---
 # <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous"></a>教程： 使用 Microsoft BizTalk Adapter for TIBCO 会合
 

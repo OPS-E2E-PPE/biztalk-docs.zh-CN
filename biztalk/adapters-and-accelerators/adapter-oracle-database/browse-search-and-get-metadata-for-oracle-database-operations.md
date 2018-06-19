@@ -1,11 +1,11 @@
 ---
-title: "浏览、 搜索和为 Oracle 数据库操作获取元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和为 Oracle 数据库操作获取元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating a
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - WCF service contract, generating a
 - metadata, browsing, searching, and retrieving
 ms.assetid: 65bd59e0-771d-40fe-966c-8cc8a629ce47
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967691"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-database-operations"></a>浏览、 搜索和为 Oracle 数据库操作获取元数据
 本部分提供有关如何使用信息[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 通过使用这些[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]组件，你可以：  
@@ -146,13 +147,13 @@ ms.lasthandoff: 11/28/2017
   
 3.  在**选择类别**框中，单击包含表、 过程、 函数、 包和您想要搜索的视图的架构。 如果不确定单击的架构，请单击根节点。  
   
-4.  在**类别中的搜索**文本框中，输入要搜索特定的架构的搜索表达式。 例如，若要搜索其名称中包含"SC"的架构，请键入**%SC%**在文本框中。  
+4.  在**类别中的搜索**文本框中，输入要搜索特定的架构的搜索表达式。 例如，若要搜索其名称中包含"SC"的架构，请键入 **%SC%** 在文本框中。  
   
 5.  单击与右箭头图标以开始搜索按钮。 完成搜索后**可用类别和操作**框中列出的满足搜索条件的架构。  
   
 6.  在**选择类别**框中，到架构中，展开相对应的节点，然后再单击数据库项目，您想要在中搜索。 在**类别中的搜索**文本框中，输入要搜索的特定数据库项的搜索表达式。  
   
-     例如，若要搜索其名称中有"EMP"的表，选择**表**，类型**%EMP%**中**类别中的搜索**文本中，，然后单击与按钮右箭头图标。  
+     例如，若要搜索其名称中有"EMP"的表，选择**表**，类型 **%EMP%** 中**类别中的搜索**文本中，，然后单击与按钮右箭头图标。  
   
      下图显示[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，其中列出了搜索结果。  
   

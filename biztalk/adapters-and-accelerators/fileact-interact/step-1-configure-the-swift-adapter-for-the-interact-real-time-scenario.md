@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 配置的 SWIFT 适配器交互实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 配置的 SWIFT 适配器交互实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f4d3e08-611a-4af1-a3e3-957ace3b74e6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965763"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario"></a>步骤 1： 配置的 SWIFT 适配器交互实时方案
 下列步骤说明如何配置交互适配器发送处理程序。 在开始该过程之前，必须完成中列出的要求[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)。  
@@ -33,9 +34,9 @@ ms.lasthandoff: 11/28/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数： **SagMessagePartner**\<交互的客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是 MessagePartner 你在压降中配置。|  
+    |**参数**|键入以下参数： **SagMessagePartner**\<交互的客户端消息合作伙伴创建在压降\>**注意：** 自变量中的客户端是 MessagePartner 你在压降中配置。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
-    |**LogMessageBody**|从下拉列表中选择`FALSE`。 **注意：**如果设置为`TRUE`，它将保留跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
+    |**LogMessageBody**|从下拉列表中选择`FALSE`。 **注意：** 如果设置为`TRUE`，它将保留跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择`TRUE`。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**启用**|False|  
     |**密码**|键入用于连接到压降的密码。 有关详细信息，请参阅压降帮助。|  

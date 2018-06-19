@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 601aa9f9-e42f-47aa-b020-7a1eed4f0780
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25967411"
 ---
 # <a name="message-schemas-for-idoc-operations"></a>IDOC 操作的消息架构
 中间文档 (IDOC) 是用于以异步方式与 SAP 和非 SAP 系统进行通信的 SAP 支持的标准化的 EDI 类似文档。 IDOC 用于发送和接收到或从贸易合作伙伴的 SAP 系统或外部程序的销售订单类似的商业文档。  

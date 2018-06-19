@@ -1,14 +1,14 @@
 ---
-title: "部署程序集 |Microsoft 文档"
-ms.custom: 
+title: 部署程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65f8ee21-0e52-4a74-b114-864a3069659c
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297861"
 ---
 # <a name="deploying-an-assembly"></a>部署程序集
 部署程序集生成程序集，并将其，以及业务流程、 管道、 架构和映射 （项目），它将包含的本地 BizTalk 管理数据库导入。 最初，这可在开发环境中。  

@@ -12,7 +12,7 @@ helpviewer_keywords:
 - managing [SSO applications], disabling
 - applications [SSO], disabling
 ms.assetid: febf1687-f0d0-4f87-b462-23535bbddf6d
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969483"
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>如何禁用关联应用程序
 可以使用 MMC 管理单元或命令行来禁用指定的关联应用程序。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 03/28/2018
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
   
-3.  类型 **ssomanage-disableapp *\<应用程序名称\>* * *，其中\<*应用程序名称*\>是关联应用程序的名称你要禁用。  
+3.  类型 **ssomanage-disableapp *\<应用程序名称\>* * *，其中\<* 应用程序名称*\>是关联应用程序的名称你要禁用。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

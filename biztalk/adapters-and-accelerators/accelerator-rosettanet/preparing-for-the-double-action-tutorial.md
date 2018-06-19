@@ -1,15 +1,15 @@
 ---
-title: "BizTalk Server 中的 RosettaNet Double 操作教程的先决条件 |Microsoft 文档"
-description: "单步执行双操作教程 RosettaNet 快捷键 (BTARN) BizTalk Server 中的先决条件"
-ms.custom: 
+title: BizTalk Server 中的 RosettaNet Double 操作教程的先决条件 |Microsoft 文档
+description: 单步执行双操作教程 RosettaNet 快捷键 (BTARN) BizTalk Server 中的先决条件
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1ce8a122-cd16-450a-84bd-bb6beee7af40
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963515"
 ---
 # <a name="prepare-for-the-double-action-tutorial"></a>对于双操作教程准备
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  请确保你完全配置 RosettaNet 快捷键，包括起始 BTARN 业务流程。 请参阅[安装和配置](install-configure-biztalk-accelerator-for-rosettanet.md)。
   
--   本教程使用两台计算机而不是一台具有环回协议的计算机来模拟现实方案。 本教程用占位符作为计算机名。 该占位符替换为你选择的实际计算机名称。 例如，如果计算机运行 Contoso 解决方案命名为**Contoso**，任何匹配项替换的教程中\\ \\< contoso**_** *计算机*\>具有该计算机名称。  
+-   本教程使用两台计算机而不是一台具有环回协议的计算机来模拟现实方案。 本教程用占位符作为计算机名。 该占位符替换为你选择的实际计算机名称。 例如，如果计算机运行 Contoso 解决方案命名为**Contoso**，任何匹配项替换的教程中\\ \\< contoso **_** *计算机*\>具有该计算机名称。  
   
 -   本教程使用证书改进 Contoso 和 Fabrikam 之间的安全通信。 你必须生成任何证书要求，以及在其各自的计算机上安装它们。  
   

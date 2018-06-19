@@ -1,14 +1,14 @@
 ---
-title: "运行 SQL Server 使用 BizTalk Server 上的复合操作 |Microsoft 文档"
-ms.custom: 
+title: 运行 SQL Server 使用 BizTalk Server 上的复合操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 86fd2aa1-20c7-4b58-9f35-83ba0c959cf1
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968019"
 ---
 # <a name="run-composite-operations-on-sql-server-using-biztalk-server"></a>运行 SQL Server 使用 BizTalk Server 上的复合操作
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]允许适配器客户端执行 SQL Server 数据库上的复合操作。 复合操作可以包括：  
@@ -84,7 +85,7 @@ ms.lasthandoff: 11/28/2017
   
     1.  右键单击根**\<架构\>** CompositeSchema.xsd，然后单击的节点**属性**。  
   
-    2.  在**属性**框中，单击省略号按钮**（...）**针对**导入**属性。  
+    2.  在**属性**框中，单击省略号按钮 **（...）** 针对**导入**属性。  
   
          ![导入架构定义](../../adapters-and-accelerators/adapter-oracle-database/media/d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca.gif "d084d0f0-60b5-4ae8-9e80-7ed2c9e3ecca")  
   
@@ -101,9 +102,9 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  默认情况下，**根**还将节点添加到新的架构文件。 你可以重命名**根**节点**请求**。 若要重命名节点，右键单击节点名称，然后单击**重命名**。  
   
-     若要添加一个节点下的**\<架构\>**节点：  
+     若要添加一个节点下的**\<架构\>** 节点：  
   
-    1.  右键单击**\<架构\>**节点，指向**插入架构节点**，然后单击**子记录**。  
+    1.  右键单击**\<架构\>** 节点，指向**插入架构节点**，然后单击**子记录**。  
   
     2.  重命名为新节点**请求响应**。  
   

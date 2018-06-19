@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964259"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a>与 Oracle 数据库适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]，你的代码充当 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码时，将调用在适配器上的操作通过在通道上发送请求消息。  

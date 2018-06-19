@@ -1,14 +1,14 @@
 ---
-title: "RNIFSend |Microsoft 文档"
-ms.custom: 
+title: RNIFSend |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 780f7446-56c5-40bf-95e2-25d0cff12f12
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963395"
 ---
 # <a name="rnifsend"></a>RNIFSend
 此示例提供可实际应用的 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx 文件，该文件准备供 RNIF 处理的消息，并将该消息发送到响应方的 RNIFReceive.aspx 页。 你可以通过自定义 ASPX 页来执行以下操作：  

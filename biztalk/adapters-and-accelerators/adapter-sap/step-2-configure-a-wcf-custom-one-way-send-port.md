@@ -1,17 +1,17 @@
 ---
-title: "步骤 2： 配置 WCF 自定义单向发送端口 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 配置 WCF 自定义单向发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-Custom one-way send port, configuring
 - migration
 ms.assetid: ae13222e-42e7-45a7-9b2a-0a6779b21736
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962787"
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>步骤 2： 配置 WCF 自定义单向发送端口
 ![步骤 2 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **完成时间：** 10 分钟  
   
- **目标：**在此步骤中，配置将平面文件 IDOC 发送到 SAP 系统的 WCF 自定义端口。 配置端口之后, 你将配置 BizTalk 应用程序使用 WCF 自定义发送端口。  
+ **目标：** 在此步骤中，配置将平面文件 IDOC 发送到 SAP 系统的 WCF 自定义端口。 配置端口之后, 你将配置 BizTalk 应用程序使用 WCF 自定义发送端口。  
   
 ## <a name="prerequisites"></a>先决条件  
  你必须已生成并部署你的 vPrev BizTalk 项目，以将 Idoc 发送到 SAP 系统。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
   
 7.  在**WCF 自定义传输属性**对话框框中，执行以下操作：  
   
-    1.  单击**常规**选项卡上，然后在**地址 (URI)**字段中，指定连接 URI，将消息发送到 SAP 系统。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
+    1.  单击**常规**选项卡上，然后在**地址 (URI)** 字段中，指定连接 URI，将消息发送到 SAP 系统。 有关连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
   
          ![连接在发送端口中指定的 URI](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")  
   

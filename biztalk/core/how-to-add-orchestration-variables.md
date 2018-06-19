@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968827"
 ---
 # <a name="how-to-add-orchestration-variables"></a>如何添加业务流程变量
 业务流程视图窗口可以管理业务流程的属性 (也称为**服务**属性)，参数、 端口、 消息以及其他变量。 除了端口和消息，您还可以创建整数变量、布尔型变量、字符串变量或 .NET 类的变量。  

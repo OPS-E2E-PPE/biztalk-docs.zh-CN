@@ -1,11 +1,11 @@
 ---
-title: "访问在与管道组件的 WCF 消息的 SOAP 标头 |Microsoft 文档"
-ms.custom: 
+title: 访问在与管道组件的 WCF 消息的 SOAP 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, WCF services
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - WCF services, SOAP headers
 - SOAP headers, WCF messages
 ms.assetid: 5e24afa3-b2e6-472e-8890-a47b59573304
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965099"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-pipeline-components"></a>使用管道组件访问 WCF 消息中的 SOAP 标头
 若要访问管道组件中的 WCF 适配器的 SOAP 标头，你使用的上下文的属性名称组合**InboundHeaders**，和的目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/适配器/WCF properties**。 WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到入站消息中**InboundHeaders**属性。 使用 WCF 适配器，您还可以以编程方式选择要以编程方式升级或写入至上下文属性的属性。 请参阅[发布 WCF 服务使用的 SOAP 标头](../core/soap-headers-with-published-wcf-services.md)有关详细信息。  

@@ -1,14 +1,14 @@
 ---
-title: "步骤 2: FileAct 实时方案将 SWIFTNet 配置添加到 Paramfile |Microsoft 文档"
-ms.custom: 
+title: '步骤 2: FileAct 实时方案将 SWIFTNet 配置添加到 Paramfile |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d4feec3f-4755-477e-b3d6-1dd6d075255e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963763"
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>步骤 2： 添加 SWIFTNet 配置到 Paramfile FileAct 实时方案
 在压降中创建的服务器消息合作伙伴必须指定在 SWIFTNet paramfile 以便接收方可以使用这些值进行初始化。  

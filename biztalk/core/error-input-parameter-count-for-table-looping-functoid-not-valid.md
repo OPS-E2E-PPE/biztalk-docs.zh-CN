@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968459"
 ---
 # <a name="error---input-parameter-count-for-table-looping-functoid-not-valid"></a>错误-循环 Functoid 不是有效的表的输入参数计数
 **错误代码**  

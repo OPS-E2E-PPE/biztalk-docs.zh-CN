@@ -1,14 +1,14 @@
 ---
-title: "将连接到使用 Windows 身份验证的 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 将连接到使用 Windows 身份验证的 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0937dfd9-4a94-4d65-a42c-3c5019eefde2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961579"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>将连接到 Oracle E-business Suite 使用 Windows 身份验证
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端以使用 Windows 身份验证来建立与 Oracle E-business Suite 的连接。 若要使用 Windows 身份验证适配器客户端必须指定"/"用户名称并将密码保留为空。 有关将连接到 Oracle E-business Suite 使用 Windows 身份验证的详细信息，请参阅[连接到 Visual Studio 中 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)。  

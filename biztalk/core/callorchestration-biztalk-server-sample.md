@@ -1,18 +1,18 @@
 ---
-title: "CallOrchestration （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: CallOrchestration （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - orchestrations, calling
 - examples, orchestrations
 ms.assetid: 0c4194f0-c1e2-419a-8a1a-a3c96e8d2667
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966763"
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration （BizTalk Server 示例）
 CallOrchestration 示例演示如何从一个 BizTalk 业务流程调用另一个业务流程。  

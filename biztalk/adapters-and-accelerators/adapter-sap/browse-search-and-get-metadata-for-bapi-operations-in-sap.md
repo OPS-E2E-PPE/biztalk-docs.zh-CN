@@ -16,7 +16,7 @@ helpviewer_keywords:
 - BAPIs, searching
 - BAPI operations, generating schema
 ms.assetid: 2884215a-ddba-40c7-bf9f-bfc7831f90bb
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25962387"
 ---
 # <a name="browse-search-and-get-metadata-for-bapi-operations-in-sap"></a>浏览、 搜索和 SAP 中的 BAPI 操作获取元数据
 此部分提供有关如何浏览、 搜索和检索元数据从 SAP BAPI 操作使用说明[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 说明大部分都是相同的所有三个用户界面。 任何位置都提供相关的用户界面的适用，单独的过程。  

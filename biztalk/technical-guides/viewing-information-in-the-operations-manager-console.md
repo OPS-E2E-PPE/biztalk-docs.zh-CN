@@ -1,14 +1,14 @@
 ---
-title: "在 Operations Manager 控制台中查看信息 |Microsoft 文档"
-ms.custom: 
+title: 在 Operations Manager 控制台中查看信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6acdf425-4c36-4d89-9493-81b33481fe6d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302557"
 ---
 # <a name="viewing-information-in-the-operations-manager-console"></a>在 Operations Manager 控制台中查看信息
 使用提供的视图[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包，以了解当前的可用性、 配置、 运行状况，以及 BizTalk Server 环境的性能。 视图可能会包含很长的对象列表。 若要查找特定对象或对象组，您可以使用 Operations Manager 工具栏上的“作用域”、“搜索”和“查找”按钮。 有关详细信息，请参阅如何管理监视数据使用作用域、 搜索，并在 Operations Manager 2007 R2\2012 帮助中查找主题。  

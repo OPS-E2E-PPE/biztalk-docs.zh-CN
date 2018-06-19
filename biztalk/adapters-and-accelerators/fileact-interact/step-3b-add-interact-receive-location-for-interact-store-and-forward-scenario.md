@@ -1,14 +1,14 @@
 ---
-title: "步骤 3B： 添加交互接收位置交互应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3B： 添加交互接收位置交互应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: da077518-b2ee-4b5f-88d0-fe73af2baa7a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966667"
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-store-and-forward-scenario"></a>步骤 3B： 添加交互接收交互应用商店应用和向前情况下的位置
 完成[步骤 3A： 添加文件接收位置交互应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-interact-store-and-forward-scenario.md)在开始此步骤之前。
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/28/2017
     |**用户名**|键入用于连接到压降的用户名称。|  
     |**应用程序名称**|键入的服务器\<应用程序接口名称\>压降框中路由组。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
-    |**LogMessageBody**|从下拉列表中选择**FALSE**。 **注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
+    |**LogMessageBody**|从下拉列表中选择**FALSE**。 **注意：** 如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**消息格式**|从下拉列表中选择**InterActMessage**。|  
     |**MemberRef**|从下拉列表中选择**ResponseHeader**。|  

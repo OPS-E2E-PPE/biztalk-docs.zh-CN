@@ -1,11 +1,11 @@
 ---
-title: "如何将绑定导入到 BizTalk 组 |Microsoft 文档"
-ms.custom: 
+title: 如何将绑定导入到 BizTalk 组 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - groups, importing
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - groups, bindings
 - bindings, groups
 ms.assetid: 38da14fb-3522-4274-a633-2ff24e4bd574
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970131"
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-group"></a>如何将绑定导入到 BizTalk 组
 本主题介绍如何使用 BizTalk Server 管理控制台或命令行通过 .xml 文件向 BizTalk 组导入绑定。 有关将绑定从 BizTalk 组导出到.xml 文件，你可以导入的说明，请参阅[如何导出绑定 BizTalk 组](../core/how-to-export-bindings-for-a-biztalk-group.md)。  

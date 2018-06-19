@@ -1,14 +1,14 @@
 ---
-title: "ValidationAdapter |Microsoft 文档"
-ms.custom: 
+title: ValidationAdapter |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5fe99350-14c0-4ddb-b257-af9a0c4258f6
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966435"
 ---
 # <a name="validationadapter"></a>ValidationAdapter
 该 ValidationAdapter 示例演示了如何对响应方公用流程中的消息运行特殊验证规则。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 本身在发送或接收管道以及业务流程中执行验证。 如果要执行其他验证，可以创建验证适配器。 其他验证可以包括无法使用 XSD 实现的跨字段验证规则或业务特定的验证规则。  

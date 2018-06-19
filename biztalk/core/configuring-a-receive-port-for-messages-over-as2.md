@@ -1,14 +1,14 @@
 ---
-title: "配置通过 AS2 消息接收端口 |Microsoft 文档"
-ms.custom: 
+title: 配置通过 AS2 消息接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01d4d897-d12b-4de4-a86b-e6d2718470c2
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968987"
 ---
 # <a name="configuring-a-receive-port-for-messages-over-as2"></a>配置 AS2 消息的接收端口
 若要接收带有 EDI 或非 EDI 负载的 AS2 消息，请创建一个 HTTP 接收端口以接收消息并向参与方返回响应。  
@@ -33,9 +34,9 @@ ms.lasthandoff: 11/28/2017
 |位置|属性|设置|  
 |--------------|--------------|-------------|  
 |**接收端口属性： 常规**|端口类型|请求-响应|  
-|**接收位置属性： 常规**|传输类型|HTTP**注意：**仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。 此传输不能用于除 HTTP 适配器之外的其他适配器。|  
+|**接收位置属性： 常规**|传输类型|HTTP**注意：** 仅 HTTP 适配器可以用于编码 EDIINT/AS2 消息传输。 此传输不能用于除 HTTP 适配器之外的其他适配器。|  
 |**接收位置属性： 常规**|接收处理程序|BizTalkServerIsolatedHost|  
-|**接收位置属性： 常规**|接收管道|-AS2EdiReceive (如果负载是 EDI 编码)<br />-AS2Receive （如果负载不是 EDI 编码）**注意：**使用 AS2EdiReceive 管道时，你必须添加到 BizTalk 应用程序用户组运行 BizTalk 隔离主机实例进程的用户帐户。 AS2EdiReceive 管道在 BizTalk 独立主机实例进程中执行。 AS2EdiReceive 管道会访问 SSO 存储区，这要求用户属于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users 组。|  
+|**接收位置属性： 常规**|接收管道|-AS2EdiReceive (如果负载是 EDI 编码)<br />-AS2Receive （如果负载不是 EDI 编码）**注意：** 使用 AS2EdiReceive 管道时，你必须添加到 BizTalk 应用程序用户组运行 BizTalk 隔离主机实例进程的用户帐户。 AS2EdiReceive 管道在 BizTalk 独立主机实例进程中执行。 AS2EdiReceive 管道会访问 SSO 存储区，这要求用户属于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users 组。|  
 |**接收位置属性： 常规**|发送管道|AS2Send|  
 |**HTTP 传输属性**|虚拟目录和 ISAPI 扩展|/\<虚拟目录名称\>/BTSHTTPReceive.dll|  
 |**HTTP 传输属性**|请求-响应返回内容类型|text/xml|  

@@ -1,17 +1,17 @@
 ---
-title: "部署 BRE 规则 |Microsoft 文档"
-ms.custom: 
+title: 部署 BRE 规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, BRE policies
 - BRE policies, deploying
 ms.assetid: 3a66aa57-e7f9-400f-963c-eda12fb1e659
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967882"
 ---
 # <a name="deploying-bre-rules"></a>部署 BRE 规则
 必须将部署使用的 BRE 规则[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]业务流程来处理 SWIFT 消息。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  打开[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器。 浏览到\<*驱动器*\>: \Documents and Settings\All Users\Application 数据，并确认的日志文件 BREDeploymentLog.txt 是否显示在该驱动器。  
   
-7.  重新启动的规则引擎更新服务。 通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。 在**服务 （本地）**窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。  
+7.  重新启动的规则引擎更新服务。 通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。 在**服务 （本地）** 窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。  
   
 ### <a name="deploying-bre-rules-one-at-a-time"></a>一次部署 BRE 规则一个  
  规则引擎部署向导可用于发布的词汇和一次部署一个策略。 有关词汇，此过程涉及到导入和从一个步骤中的文件发布到数据库的词汇。 对于策略，该过程包括导入和在一个步骤中，发布策略并将在另一个步骤中对其进行部署。  
@@ -130,4 +131,4 @@ ms.lasthandoff: 11/28/2017
   
 18. 单击 **“完成”**。  
   
-19. 重新启动**规则引擎更新服务**。 通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。 在**服务 （本地）**窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。
+19. 重新启动**规则引擎更新服务**。 通过单击来做到**启动**、 单击**运行**、 输入**services.msc**，并单击**确定**。 在**服务 （本地）** 窗口中，右键单击**规则引擎更新服务**，然后单击**重新启动**。

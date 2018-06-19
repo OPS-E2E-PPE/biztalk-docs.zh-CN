@@ -1,14 +1,14 @@
 ---
-title: "关键绩效指标 |Microsoft 文档"
-ms.custom: 
+title: 关键绩效指标 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 298d639a-7adf-4f04-b097-a17f4c77ee50
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298285"
 ---
 # <a name="key-performance-indicators"></a>关键绩效指标
 本主题提供时使用以下的横向扩展方法，观察到 BizTalk Server 产品组的测试结果：  

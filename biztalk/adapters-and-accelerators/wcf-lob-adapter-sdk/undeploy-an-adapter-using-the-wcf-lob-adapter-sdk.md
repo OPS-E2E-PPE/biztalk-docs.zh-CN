@@ -1,14 +1,14 @@
 ---
-title: "取消部署使用 WCF LOB 适配器 SDK 适配器 |Microsoft 文档"
-ms.custom: 
+title: 取消部署使用 WCF LOB 适配器 SDK 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 98f9a124-9e63-4451-af0e-ffee752fbeac
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963563"
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>取消部署使用 WCF LOB 适配器 SDK 的适配器
 若要取消部署从计算机的适配器，用户需要执行以下两个任务：  

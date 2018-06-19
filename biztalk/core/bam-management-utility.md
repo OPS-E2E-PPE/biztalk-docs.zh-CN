@@ -1,14 +1,14 @@
 ---
-title: "BAM 管理实用程序 |Microsoft 文档"
-ms.custom: 
+title: BAM 管理实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c55aabe2-f38b-4917-863c-b408a4eef98e
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965459"
 ---
 # <a name="bam-management-utility"></a>BAM 管理实用程序
 负责业务活动监视 (BAM) 定义的管理员使用 BAM 管理实用程序来管理和维护 BAM 基础结构的各个方面。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
 -   [侦听器管理命令](../core/interceptor-management-commands.md)  
   
 ## <a name="displaying-the-bam-management-utility-help"></a>显示 BAM 管理实用程序帮助  
- 你使用**/？** 或**帮助 BAM 管理实用工具**命令以显示 BAM 管理实用程序的帮助文件。  
+ 你使用 **/？** 或**帮助 BAM 管理实用工具**命令以显示 BAM 管理实用程序的帮助文件。  
   
 #### <a name="to-display-the-help-file-for-the-bam-management-utility"></a>显示 BAM 管理实用程序的帮助文件  
   

@@ -1,14 +1,14 @@
 ---
-title: "处理通知消息，以完成特定任务在 Oracle E-business Suite |Microsoft 文档"
-ms.custom: 
+title: 处理通知消息，以完成特定任务在 Oracle E-business Suite |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4bddeb5a-3819-40cc-aae0-c49963f0beb1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968083"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a>处理通知邮件完成 Oracle E-business Suite 中的特定任务
 你可以使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接收对 Oracle 数据库表的更改的通知。 但是，该适配器仅向你发送通知某些记录已插入、 更新或删除某些数据库表中。 这些记录的任何后续处理必须由客户端应用程序本身进行处理。 本主题提供有关如何处理表根据从 Oracle 数据库接收的通知的类型中记录的基于方案的说明。  

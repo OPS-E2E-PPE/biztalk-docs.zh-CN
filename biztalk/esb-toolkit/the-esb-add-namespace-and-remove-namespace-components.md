@@ -1,14 +1,14 @@
 ---
-title: "ESB 添加 Namespace 和删除 Namespace 组件 |Microsoft 文档"
-ms.custom: 
+title: ESB 添加 Namespace 和删除 Namespace 组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21df1b21-b73c-4e31-a234-49a1a6b53cc7
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296245"
 ---
 # <a name="the-esb-add-namespace-and-remove-namespace-components"></a>ESB 添加 Namespace 和删除 Namespace 组件
 许多公司已在时间仍已新兴标准，文档共享已不常见的 XML 技术的早期采用者。 因此，它们未不严格强制包括唯一的根命名空间，这通常这种情况今天的要求。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="component-properties"></a>组件属性  
  添加 Namespace 组件公开五个公共属性：  
   
--   **NamespacePrefix**。 此为前缀的命名空间，之间插入**xmlns:**部分，并在以下等号 （=）。 若要避免与标准 BizTalk 架构命名空间前缀的冲突，应避免使用值**ns0**通过**ns9**。  
+-   **NamespacePrefix**。 此为前缀的命名空间，之间插入**xmlns:** 部分，并在以下等号 （=）。 若要避免与标准 BizTalk 架构命名空间前缀的冲突，应避免使用值**ns0**通过**ns9**。  
   
 -   **NamespaceBase**。 这是将前缀中的值生成的结果的命名空间的静态部分**分隔符**和**Xpath**属性。  
   
@@ -82,6 +83,6 @@ ms.lasthandoff: 09/20/2017
   
 -   **编码**。 这是输出消息，下列值之一的编码： **ascii、 unicode/utf16**或**utf8**。  
   
--   **RemoveByteOrderMark**。 这是布尔值属性，该值指示组件是否应删除的字节顺序标记 (通常**0xEFBB、 0xBFFFFE，**或**0xFEFF**) 从 XML 文档流的开始位置。  
+-   **RemoveByteOrderMark**。 这是布尔值属性，该值指示组件是否应删除的字节顺序标记 (通常**0xEFBB、 0xBFFFFE，** 或**0xFEFF**) 从 XML 文档流的开始位置。  
   
  有关如何使用这些组件的示例，请参阅[安装和运行 Namespace 组件示例](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)。

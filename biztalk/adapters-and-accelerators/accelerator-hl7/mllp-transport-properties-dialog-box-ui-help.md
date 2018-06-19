@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962091"
 ---
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a>MLLP 传输属性对话框的 UI 帮助
 你使用**MLLP 传输属性**对话框中配置的参数以发送和接收最小较低层协议 (MLLP) 适配器。 你可以设置的网络连接参数 MLLP 传输属性中为发送端口或接收位置使用 MLLP 传输类型。  

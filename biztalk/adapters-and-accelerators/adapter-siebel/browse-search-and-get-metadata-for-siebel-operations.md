@@ -18,7 +18,7 @@ helpviewer_keywords:
 - how to, seach metadata
 - searching, metadata
 ms.assetid: 7e474d8e-b030-47ea-b1b6-8048cddbba8a
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25967491"
 ---
 # <a name="browse-search-and-get-metadata-for-siebel-operations"></a>浏览、 搜索和用于 Siebel 操作获取元数据
 本部分提供有关如何使用信息[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 通过使用这些[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]组件，你可以：  
@@ -106,19 +107,19 @@ ms.lasthandoff: 03/28/2018
   
 1.  连接到 Siebel 系统使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 请参阅[连接到 Visual Studio 中的 Siebel 系统](../../adapters-and-accelerators/adapter-siebel/connect-to-the-siebel-system-in-visual-studio.md)有关的说明。  
   
-2.  从**选择协定类型**下拉列表中，选择**客户端 （出站操作）**协定。  
+2.  从**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 协定。  
   
 3.  在**选择类别**框中，单击**业务对象**节点。  
   
-4.  若要搜索特定的业务对象，请单击**业务对象**中的节点**类别中的搜索**文本框中，并输入搜索表达式。 例如，若要搜索的业务对象的名称以"帐户"开头，键入**帐户\***在文本框中。  
+4.  若要搜索特定的业务对象，请单击**业务对象**中的节点**类别中的搜索**文本框中，并输入搜索表达式。 例如，若要搜索的业务对象的名称以"帐户"开头，键入**帐户\*** 在文本框中。  
   
 5.  单击与右箭头图标以开始搜索按钮。 完成搜索后**可用类别和操作**框列出了满足搜索条件的业务对象。  
   
-6.  若要搜索的特定业务组件下业务对象，请单击业务对象和在**类别中的搜索**文本框中输入搜索表达式。 例如，若要搜索的名称以"帐户"开头的业务组件，请键入**帐户\***在文本框中。  
+6.  若要搜索的特定业务组件下业务对象，请单击业务对象和在**类别中的搜索**文本框中输入搜索表达式。 例如，若要搜索的名称以"帐户"开头的业务组件，请键入**帐户\*** 在文本框中。  
   
 7.  单击与右箭头图标以开始搜索按钮。 完成搜索后**可用类别和操作**框中列出的业务组件满足搜索条件。  
   
-8.  若要搜索特定操作的业务组件，单击在业务组件并在**类别中的搜索**文本框中输入搜索表达式。 例如，若要搜索操作具有使用"查询"开头的名称，键入**查询\***在文本框中。  
+8.  若要搜索特定操作的业务组件，单击在业务组件并在**类别中的搜索**文本框中输入搜索表达式。 例如，若要搜索操作具有使用"查询"开头的名称，键入**查询\*** 在文本框中。  
   
 9. 单击与右箭头图标以开始搜索按钮。 完成搜索后**可用类别和操作**框中列出的业务组件满足搜索条件。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 03/28/2018
   
 1.  连接到 Siebel 系统使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]。 请参阅[连接到 Visual Studio 中的 Siebel 系统](../../adapters-and-accelerators/adapter-siebel/connect-to-the-siebel-system-in-visual-studio.md)有关的说明。  
   
-2.  从**选择协定类型**下拉列表中，选择**客户端 （出站操作）**协定。  
+2.  从**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 协定。  
   
 3.  在**选择类别**框中，展开的业务对象或业务服务节点。  
   

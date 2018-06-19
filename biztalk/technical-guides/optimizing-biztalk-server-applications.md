@@ -1,14 +1,14 @@
 ---
-title: "优化 BizTalk Server 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 优化 BizTalk Server 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 289f8eab-9e32-4bc0-93b9-c6528fbd0240
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299317"
 ---
 # <a name="optimizing-biztalk-server-applications"></a>优化 BizTalk Server 应用程序
 本部分介绍有关优化性能的 BizTalk Server 应用程序的方法。  

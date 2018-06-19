@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "25965251"
 ---
 # <a name="aggregator-biztalk-server-sample"></a>聚合器（BizTalk Server 示例）
 本示例的目的在于使用业务流程和管道建立消息聚合功能。 具体而言，我们将生成一个执行以下操作的业务流程：  
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/23/2018
 3.  每分钟生成一个 XML 交换消息，或者在有足够的消息可供聚合时生成一个 XML 交换消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Pipelines\Aggregator  
+ *\<示例路径\>* \Pipelines\Aggregator  
   
  下表列出了本示例的文件。  
   

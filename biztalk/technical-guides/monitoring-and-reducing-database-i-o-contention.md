@@ -1,14 +1,14 @@
 ---
-title: "监视和减少数据库 I/O 争用 |Microsoft 文档"
-ms.custom: 
+title: 监视和减少数据库 I/O 争用 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd6d3343-3fa3-469a-9772-e94f22fdf558
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22298773"
 ---
 # <a name="monitoring-and-reducing-database-io-contention"></a>监视和减少数据库 I/O 争用
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能通常预测时[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]性能方面，这反过来通常预测时磁盘 I/O 性能。 因此，你应监视和性能调整运行的计算机上的磁盘 I/O[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]该 house[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  

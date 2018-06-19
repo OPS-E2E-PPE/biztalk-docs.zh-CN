@@ -1,14 +1,14 @@
 ---
-title: "浏览基于项目的视图下的 Oracle E-business Suite 操作 |Microsoft 文档"
-ms.custom: 
+title: 浏览基于项目的视图下的 Oracle E-business Suite 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 962ac1cc-826c-46d6-848a-4cd371804596
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966803"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-artifact-based-view"></a>浏览基于项目的视图下的 Oracle E-business Suite 操作
 你可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要浏览的出站和入站操作，可以对 Oracle E-business Suite 执行使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 本主题提供有关如何浏览基于项目的视图下的出站和入站操作的信息。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
     > [!IMPORTANT]
     >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] (或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]) 显示的请求集的友好名称。 但是，请求集的元数据已请求集的实际名称。 例如，应用程序 DBA 应用程序包含一"DownloadPatches"请求组。 但是，元数据已请求集名称作为 FNDRSSUB1623，这是请求集的实际名称。  
   
-9. 展开**PL SQL Api**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点查看为该架构定义的所有包。 单击以查看的函数和过程中的包中的包名称**可用类别和操作**框。  
+9. 展开**PL SQL Api**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点查看为该架构定义的所有包。 单击以查看的函数和过程中的包中的包名称**可用类别和操作**框。  
   
      ![浏览 Oracle 数据库中的包](../../adapters-and-accelerators/adapter-oracle-ebs/media/7a9dc061-db0b-4a8e-bfc6-3a003ad687d8.gif "7a9dc061-db0b-4a8e-bfc6-3a003ad687d8")  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览所有架构的 Oracle 数据库中的包](../../adapters-and-accelerators/adapter-oracle-ebs/media/09a4841b-b88f-490d-a49a-94e392b5493c.gif "09a4841b-b88f-490d-a49a-94e392b5493c")  
   
-10. 展开**过程**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)**节点以查看为该架构中定义的所有过程**可用类别和操作**框。  
+10. 展开**过程**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)** 节点以查看为该架构中定义的所有过程**可用类别和操作**框。  
   
      ![浏览架构的 Oracle 数据库中的过程](../../adapters-and-accelerators/adapter-oracle-ebs/media/6d78563a-53f7-45cc-8652-f40d4703bdf4.gif "6d78563a-53f7-45cc-8652-f40d4703bdf4")  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览架构的 Oracle 数据库中的过程](../../adapters-and-accelerators/adapter-oracle-ebs/media/a514d199-d6c1-44a0-bf6b-28ddf702081a.gif "a514d199-d6c1-44a0-bf6b-28ddf702081a")  
   
-11. 展开**函数**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)**节点以查看为该架构中定义的所有函数**可用类别和操作**框。  
+11. 展开**函数**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)** 节点以查看为该架构中定义的所有函数**可用类别和操作**框。  
   
      ![浏览架构的 Oracle 数据库中的函数](../../adapters-and-accelerators/adapter-oracle-ebs/media/22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd.gif "22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd")  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览所有架构的 Oracle 数据库中的函数](../../adapters-and-accelerators/adapter-oracle-ebs/media/b4d29036-3d37-4a50-82c2-3532adbe2875.gif "b4d29036-3d37-4a50-82c2-3532adbe2875")  
   
-12. 展开**表**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点以查看为该架构定义的所有表。 单击某个表名称以查看在该表上支持的操作**可用类别和操作**框。  
+12. 展开**表**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点以查看为该架构定义的所有表。 单击某个表名称以查看在该表上支持的操作**可用类别和操作**框。  
   
      ![浏览架构的 Oracle 数据库中的表](../../adapters-and-accelerators/adapter-oracle-ebs/media/6ba7420f-9893-4b3e-91cb-10f29d725ad3.gif "6ba7420f-9893-4b3e-91cb-10f29d725ad3")  
   
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  同样，如果表包含 BLOB 类型的列，CLOB、 或 NCLOB 适配器还公开特定操作来更新到此类列的数据。 此类操作的名称是否 Update_\<LOBColName\>。 例如，如果表中包含列，照片，类型 BLOB，则适配器将公开**Update_PHOTO**操作。 如果表具有多个列类型 BLOB，CLOB、 和 NCLOB 适配器将公开任意多个数 Update_\<LOBColName\>操作。 请注意，对类型 BFILE 的列不支持更新操作。  
   
-13. 展开**视图**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点以查看所有对该定义的视图。 单击以查看在该视图上支持的操作的视图名称**可用类别和操作**框。  
+13. 展开**视图**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点以查看所有对该定义的视图。 单击以查看在该视图上支持的操作的视图名称**可用类别和操作**框。  
   
      ![浏览当前架构的 Oracle 数据库中的视图](../../adapters-and-accelerators/adapter-oracle-ebs/media/2a38cfed-007d-431a-af60-c9c8be5369ab.gif "2a38cfed-007d-431a-af60-c9c8be5369ab")  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 11/28/2017
   
      ![入站界面视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/media/937f46f2-d142-413f-8744-2180c7116fd4.gif "937f46f2-d142-413f-8744-2180c7116fd4")  
   
-6.  展开**PL SQL Api**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点查看为该架构定义的所有包。 单击以查看的函数和过程中的包中的包名称**可用类别和操作**框。 可以使用每个列出的函数和过程来轮询 Oracle 数据库。  
+6.  展开**PL SQL Api**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点查看为该架构定义的所有包。 单击以查看的函数和过程中的包中的包名称**可用类别和操作**框。 可以使用每个列出的函数和过程来轮询 Oracle 数据库。  
   
      ![浏览 PL &#45;SQL Api 在 Oracle 数据库进行轮询](../../adapters-and-accelerators/adapter-oracle-ebs/media/4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a.gif "4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a")  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览 PL &#45;SQL Api，可用于进行轮询的所有架构](../../adapters-and-accelerators/adapter-oracle-ebs/media/e28a803e-fcfb-4021-9225-924d54a484c0.gif "e28a803e-fcfb-4021-9225-924d54a484c0")  
   
-7.  展开**过程**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)**节点以查看为该架构中定义的所有过程**可用类别和操作**框。 每个列出的过程可用于轮询 Oracle 数据库。  
+7.  展开**过程**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)** 节点以查看为该架构中定义的所有过程**可用类别和操作**框。 每个列出的过程可用于轮询 Oracle 数据库。  
   
      ![浏览进行轮询的所有架构的过程](../../adapters-and-accelerators/adapter-oracle-ebs/media/5e78da80-d99a-44d3-8eac-f636828f8ceb.gif "5e78da80-d99a-44d3-8eac-f636828f8ceb")  
   
@@ -167,7 +168,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览进行轮询的 Oracle 数据库中的过程](../../adapters-and-accelerators/adapter-oracle-ebs/media/22d8e866-ed19-49f4-a6eb-683343b16cf5.gif "22d8e866-ed19-49f4-a6eb-683343b16cf5")  
   
-8.  展开**函数**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)**节点以查看为该架构中定义的所有函数**可用类别和操作**框。 每个列出的函数可用来轮询 Oracle 数据库。  
+8.  展开**函数**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 单击**当前架构 (\<架构名称\>)** 节点以查看为该架构中定义的所有函数**可用类别和操作**框。 每个列出的函数可用来轮询 Oracle 数据库。  
   
      ![浏览进行轮询的 Oracle 数据库中的函数](../../adapters-and-accelerators/adapter-oracle-ebs/media/64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf.gif "64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf")  
   
@@ -175,7 +176,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览进行轮询的 Oracle 数据库中的函数](../../adapters-and-accelerators/adapter-oracle-ebs/media/1d22c3c8-8c24-4905-8144-bdb4840244f1.gif "1d22c3c8-8c24-4905-8144-bdb4840244f1")  
   
-9. 展开**表**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点以查看为该架构定义的所有表。 单击表名以查看**轮询**入站在该表上支持操作**可用类别和操作**框。  
+9. 展开**表**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点以查看为该架构定义的所有表。 单击表名以查看**轮询**入站在该表上支持操作**可用类别和操作**框。  
   
      ![浏览进行轮询的 Oracle 数据库中表](../../adapters-and-accelerators/adapter-oracle-ebs/media/7c60dfbf-3836-4e72-abe8-5f32a0936807.gif "7c60dfbf-3836-4e72-abe8-5f32a0936807")  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 11/28/2017
   
      ![浏览进行轮询的 Oracle 数据库中表](../../adapters-and-accelerators/adapter-oracle-ebs/media/c5fbaf59-2e79-4141-8a85-1e1b8eedcea7.gif "c5fbaf59-2e79-4141-8a85-1e1b8eedcea7")  
   
-10. 展开**视图**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)**节点以查看所有对该定义的视图。 单击某个视图名称以查看**轮询**入站操作中该视图支持**可用类别和操作**框。  
+10. 展开**视图**节点以查看 （登录与其） 的当前用户架构和所有其他架构的基础的 Oracle 数据库中定义的类别节点。 展开**当前架构 (\<架构名称\>)** 节点以查看所有对该定义的视图。 单击某个视图名称以查看**轮询**入站操作中该视图支持**可用类别和操作**框。  
   
      ![浏览进行轮询的 Oracle 数据库中的视图](../../adapters-and-accelerators/adapter-oracle-ebs/media/2299de79-9f50-433d-9e71-164f6d02bd78.gif "2299de79-9f50-433d-9e71-164f6d02bd78")  
   

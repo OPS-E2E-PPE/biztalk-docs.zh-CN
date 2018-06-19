@@ -1,11 +1,11 @@
 ---
-title: "集成的 BizTalk 适配器的配置属性 |Microsoft 文档"
-ms.custom: 
+title: 集成的 BizTalk 适配器的配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, security
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - adapters, properties
 - binding files, security
 ms.assetid: 4780a558-4322-428a-aa4a-0c32913faded
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969955"
 ---
 # <a name="configuration-properties-for-integrated-biztalk-adapters"></a>集成的 BizTalk 适配器的配置属性
 BizTalk 资源管理器对象模型公开了**IReceiveLocation.CustomData**和**ISendPort.CustomData**包含一个名称/值形式的适配器配置属性包的属性对 XML 字符串。 此名称/值对 XML 字符串存储在\<CustomProps\>中的元素\<TransportTypeData\>绑定文件中的元素。 中的信息的大多数\<CustomProps\>元素对应于可以在 BizTalk Server 用户界面 （如 BizTalk 管理控制台或 BizTalk 资源管理器中） 中为适配器设置的信息。 如果在某一绑定文件中提供这些值，则这些值将在导入该绑定文件时应用于指定的接收位置和发送端口的适配器配置。 所有适配器的配置信息都存储于单一登录数据库中。  

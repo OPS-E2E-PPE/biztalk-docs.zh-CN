@@ -1,14 +1,14 @@
 ---
-title: "查看历史记录信息 |Microsoft 文档"
-ms.custom: 
+title: 查看历史记录信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7f2cd70e-8830-4956-8291-585d76f9e24b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22294973"
 ---
 # <a name="viewing-history-information"></a>查看历史记录信息
 ESB 管理门户维护对通用、 描述、 发现和集成 (UDDI) 注册的所有请求的历史记录。 管理员可以查看在门户内的此列表。  

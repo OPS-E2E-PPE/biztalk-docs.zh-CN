@@ -1,14 +1,14 @@
 ---
-title: "步骤 3B： 添加 FILEACT 接收位置 FileAct 应用商店应用和向前方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3B： 添加 FILEACT 接收位置 FileAct 应用商店应用和向前方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0f30bb7d-1efb-4350-8809-be35f5634ea0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965227"
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-store-and-forward-scenario"></a>步骤 3B： 添加 FILEACT 接收位置 FileAct 应用商店应用和转发方案
 在开始此步骤之前，必须完成[步骤 3A： 添加文件接收位置 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)。  

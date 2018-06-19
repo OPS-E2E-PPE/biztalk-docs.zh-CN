@@ -1,15 +1,15 @@
 ---
-title: "在业务流程中实现的设计模式 |Microsoft 文档"
-description: "聚合器，基于内容的路由、 动态路由器、 错误处理、 消息代理和 BizTalk Server 中的多个设计模式"
-ms.custom: 
+title: 在业务流程中实现的设计模式 |Microsoft 文档
+description: 聚合器，基于内容的路由、 动态路由器、 错误处理、 消息代理和 BizTalk Server 中的多个设计模式
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f62ba955-018a-40e7-b303-497acc906019
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24014244"
 ---
 # <a name="implement-design-patterns-in-orchestrations"></a>在业务流程中的实现设计模式
 本部分讨论 BizTalk Server 编程的通用模式以及企业集成模式。 您可以利用单一模式或组合多个模式来设计您的业务流程，然后使用 BizTalk 业务流程设计器中的形状实现该设计。  

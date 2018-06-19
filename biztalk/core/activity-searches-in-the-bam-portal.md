@@ -1,11 +1,11 @@
 ---
-title: "BAM 门户中的活动搜索 |Microsoft 文档"
-ms.custom: 
+title: BAM 门户中的活动搜索 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities [BAM], searching
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - BAM portal, Query Builder
 - BAM portal, activity searches
 ms.assetid: 60ab8deb-ebe2-4959-97fd-261ff64d500c
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966595"
 ---
 # <a name="activity-searches-in-the-bam-portal"></a>BAM 门户中的活动搜索
 您可以使用活动搜索对 BAM 数据进行搜索。搜索将基于 BAM 视图中可用的跟踪值和项，查找与指定的标准匹配的活动并显示活动，以便您可以编辑这些活动或基于它们创建警报。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 11/28/2017
   
 |运算符|Description|  
 |--------------|-----------------|  
-|**在**|指定完全匹配项。 等效于布尔运算中的等于 (=) 运算。 **注意：**如果你选择**在**运算符和使用此门户使用的默认值为午夜没有时间部分指定一个日期。 如果这不是你的意图，使用**或之前**或**时或之后**运算符来获取所需的结果。|  
+|**在**|指定完全匹配项。 等效于布尔运算中的等于 (=) 运算。 **注意：** 如果你选择**在**运算符和使用此门户使用的默认值为午夜没有时间部分指定一个日期。 如果这不是你的意图，使用**或之前**或**时或之后**运算符来获取所需的结果。|  
 |**指定日期或之前**|指定只匹配等于或早于指定日期的事务。 等效于一个布尔值小于或等于 （≤） 操作。|  
 |**或之后**|指定只匹配等于或晚于指定日期的事务。 等效于布尔值大于或等于 （≥） 操作。|  
 |**早于**|指定只匹配早于指定日期的事务。 等效于一个布尔值小于 (<) 操作。|  

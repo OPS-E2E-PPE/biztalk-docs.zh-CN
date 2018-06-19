@@ -1,14 +1,14 @@
 ---
-title: "在 SQL Server 使用 BizTalk Server 中执行存储的过程 |Microsoft 文档"
-ms.custom: 
+title: 在 SQL Server 使用 BizTalk Server 中执行存储的过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4329a5c1-4df9-4bf7-8a9f-e3c19cb368fb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966691"
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-biztalk-server"></a>在 SQL Server 使用 BizTalk Server 中执行存储的过程
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现中 SQL Server 数据库作为操作的过程。 适配器客户端可以通过调用过程[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关如何适配器支持这些操作的详细信息，请参阅[中使用的 SQL 适配器的 SQL Server 执行存储过程](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[过程和函数的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)。  

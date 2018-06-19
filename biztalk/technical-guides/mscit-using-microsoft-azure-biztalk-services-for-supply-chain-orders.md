@@ -1,14 +1,14 @@
 ---
-title: "MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单 |Microsoft 文档"
-ms.custom: 
+title: MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22091261-cd17-45b2-8746-dc174b52dcff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22299213"
 ---
 # <a name="mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders"></a>MSCIT： 使用 Microsoft Azure BizTalk 服务用于供应链订单
 **Microsoft 设备 （&) Studio： 使用 Microsoft Azure BizTalk 服务用于供应链订单**  
@@ -31,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
  **适用于：** Microsoft Azure BizTalk 服务 (MABS) 和 BizTalk Server 2013  
   
- **摘要：**制造、 供应链和信息服务 (MSCIS) 组是在 Microsoft Global Supply Chain Management 组。 每年，Microsoft 将启动新产品。 MSCIS 负责将这些新产品推向市场。 若要支持这些产品，新的合作伙伴添加到供应链，其中包括供应商、 制造商、 分发服务器、 零售商、 服务中心、 运营商和等等。  
+ **摘要：** 制造、 供应链和信息服务 (MSCIS) 组是在 Microsoft Global Supply Chain Management 组。 每年，Microsoft 将启动新产品。 MSCIS 负责将这些新产品推向市场。 若要支持这些产品，新的合作伙伴添加到供应链，其中包括供应商、 制造商、 分发服务器、 零售商、 服务中心、 运营商和等等。  
   
  合作伙伴事务数会增加每年。 在高负载，过程有吞吐量与相关的问题。 虽然提供链 BizTalk 中心处理更多的事务 （增加的卷），结束系统或合作伙伴系统不能够保持同步。  
   

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99bd7fbb-64f2-4327-a8ae-ccb574e56150
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25963987"
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>SAP 中 EXECQUERY 语句语法
 SAP GUI 可用于通过以图形方式中选择你想要查询，列和排序的顺序要包括在结果集等中的表创建查询。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使用户能够通过提供用户可用于执行查询在 SAP 系统中定义的 EXECQUERY 操作从 ADO.NET 应用程序执行此类查询。  
@@ -93,7 +94,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = '*&*'  
     ```  
   
-     在此示例中，你可能会收到一个错误，指出未找到任何数据。 这是因为查询搜索**\*&\***作为字符串，而不考虑星号 （*） 作为通配符。  
+     在此示例中，你可能会收到一个错误，指出未找到任何数据。 这是因为查询搜索**\*&\*** 作为字符串，而不考虑星号 （*） 作为通配符。  
   
 -   你始终必须采用 YYYYMMDD 格式指定日期值。  
   

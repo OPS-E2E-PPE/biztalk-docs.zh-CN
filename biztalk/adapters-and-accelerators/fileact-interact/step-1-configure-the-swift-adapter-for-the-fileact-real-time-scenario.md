@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 为 FileAct 实时方案配置 SWIFT 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 为 FileAct 实时方案配置 SWIFT 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afc52c63-9f83-4e90-9269-e90834b792bf
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966075"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario"></a>步骤 1： 为 FileAct 实时方案配置 SWIFT 适配器
 在开始此步骤之前，必须完成[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：** 自变量中的客户端是在压降中配置 MessagePartner。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**FACryptoMode**|从下拉列表中选择**高级**。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  

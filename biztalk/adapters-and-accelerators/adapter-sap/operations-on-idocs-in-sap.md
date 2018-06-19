@@ -1,11 +1,11 @@
 ---
-title: "SAP 中的 Idoc 上的操作 |Microsoft 文档"
-ms.custom: 
+title: SAP 中的 Idoc 上的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - IDOC, operations to receive an
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - IDOC, operations to send an
 - RFC server
 ms.assetid: 6abcc646-c7a3-48cf-a09e-01f516dcef97
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964547"
 ---
 # <a name="operations-on-idocs-in-sap"></a>SAP 中的 Idoc 上的操作
 Idoc 是 SAP 支持用于以异步方式与 SAP 和非 SAP 系统进行通信的标准化的 EDI 类似文档。 Idoc 用于发送和接收到或从贸易合作伙伴的 SAP 系统或外部程序的销售订单，例如，如"business"文档。  

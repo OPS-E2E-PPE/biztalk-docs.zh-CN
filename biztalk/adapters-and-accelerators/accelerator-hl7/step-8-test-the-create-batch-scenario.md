@@ -1,14 +1,14 @@
 ---
-title: "步骤 8： 测试创建批处理方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 8： 测试创建批处理方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc7fac40-fd3e-413b-82cc-7ad08226094c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961131"
 ---
 # <a name="step-8-test-the-create-batch-scenario"></a>步骤 8： 测试创建批处理方案
 在此步骤中，你都将删除你想要到源 Tutorial_BTAHL7Pickup 文件夹批处理的消息的测试实例测试创建批次方案。 你将设置为发送端口选取来自源文件夹的消息，并将其; 发送接收端口接收它;和接收管道处理它，并将它放置到目标 Tutorial_BTAHL7Drop 文件夹。  

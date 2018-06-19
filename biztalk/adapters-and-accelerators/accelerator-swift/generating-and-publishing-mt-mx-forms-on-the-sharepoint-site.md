@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "25965347"
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成和发布 SharePoint 站点上的 MT/MX 窗体
 **若要生成和发布 SharePoint 站点上的 MT/MX 窗体：**  
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  打开**FormGenerator.sln**从文件夹上面的下载和编译解决方案。  
   
-3.  在命令提示符下，访问已编译可执行文件 (FormGenerator.exe) 的文件夹。 例如，如果已生成实用工具在调试模式下，访问**...\bin\debug**文件夹。  
+3.  在命令提示符下，访问已编译可执行文件 (FormGenerator.exe) 的文件夹。 例如，如果已生成实用工具在调试模式下，访问 **...\bin\debug**文件夹。  
   
 4.  键入 FormGenerator.exe [-b] [-\<否。 模板文件夹路径\>]  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/18/2018
   
 12. 在发布向导窗口中，选择**到网络位置**单击**下一步**。  
   
-13. 在窗体模板路径和文件名称文本框中，键入 **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**和类型**\<MessageType\>**窗体中模板名称文本框中，然后单击**下一步**。  
+13. 在窗体模板路径和文件名称文本框中，键入 **http://localhost/sites/BASSite/Templates/ \<MessageType\>.xsn**和类型**\<MessageType\>** 窗体中模板名称文本框中，然后单击**下一步**。  
   
 14. 单击“下一步” 。  
   

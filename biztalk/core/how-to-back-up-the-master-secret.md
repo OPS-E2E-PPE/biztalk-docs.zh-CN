@@ -12,7 +12,7 @@ helpviewer_keywords:
 - backing up, Master Secret server
 - Master Secret server, backing up
 ms.assetid: 22c23f66-b7df-4379-8a9f-065406ba8aa8
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "25969579"
 ---
 # <a name="how-to-back-up-the-master-secret"></a>如何备份主密钥
 您可以将主密钥服务器中的主密钥备份到 NTFS 文件系统或可移动媒体（如软盘）上。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 03/28/2018
   
 3.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
   
-4.  类型 * * ssoconfig-backupSecret *\<备份文件\>* * *，其中*\<备份文件\>*是路径和文件进行备份主密钥的名称。 例如，A:\ssobackup.bak。  
+4.  类型 * * ssoconfig-backupSecret *\<备份文件\>* * *，其中*\<备份文件\>* 是路径和文件进行备份主密钥的名称。 例如，A:\ssobackup.bak。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

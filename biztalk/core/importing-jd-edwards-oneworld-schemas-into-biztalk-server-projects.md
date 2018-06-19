@@ -1,11 +1,11 @@
 ---
-title: "将博士 Edwards OneWorld 架构导入到 BizTalk Server 项目 |Microsoft 文档"
-ms.custom: 
+title: 将博士 Edwards OneWorld 架构导入到 BizTalk Server 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - generating schemas
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - schemas, generating
 - schemas, importing into BizTalk Server projects
 ms.assetid: 5bcaa276-8c76-4212-b373-de86e3008a69
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013820"
 ---
 # <a name="importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects"></a>将 JD Edwards OneWorld 架构导入到 BizTalk Server 项目中
 本主题讨论如何浏览 JD Edwards OneWorld 服务器，并将架构导入到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中。  

@@ -1,18 +1,18 @@
 ---
-title: "配置 Siebel 系统的 WCF 客户端 |Microsoft 文档"
-ms.custom: 
+title: 配置 Siebel 系统的 WCF 客户端 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - how to, create a WCF client by specifying binding and endpoint address in a configuration file
 - how to, create a WCF client by specifying binding and endpoint address in code
 - WCF service model, configuring a WCF client for a Siebel system
 ms.assetid: 6b4c5b06-d5ff-4dbf-8dc2-89c547a59864
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963603"
 ---
 # <a name="configure-a-wcf-client-for-a-siebel-system"></a>配置 Siebel 系统的 WCF 客户端
 在你生成 WCF 客户端类后，可以创建一个 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码，[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开，请参阅[生成 WCF 客户端或 WCF 服务协定 Siebel 解决方案项目](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)。  

@@ -1,17 +1,17 @@
 ---
-title: "第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集 |Microsoft 文档"
-ms.custom: 
+title: 第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, creating strong-names
 - strong-named assemblies
 ms.assetid: 2aacbf38-8b1d-46ea-89ae-5207327bedc1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961003"
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集
 在本课程中，你可以创建强名称对其编译并部署 BizTalk 程序集。 具有强名称程序集提供多种安全优势：  

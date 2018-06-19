@@ -1,18 +1,18 @@
 ---
-title: "步骤 1： 创建主组织 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建主组织 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, home organizations
 - loopback tutorial, creating home organizations
 - home organizations, creating
 ms.assetid: 5277d50f-d499-4efa-99e5-d97dad7d65fc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25963595"
 ---
 # <a name="step-1-create-the-home-organization"></a>步骤 1： 创建主组织
 在此步骤中，你将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建本组织。  

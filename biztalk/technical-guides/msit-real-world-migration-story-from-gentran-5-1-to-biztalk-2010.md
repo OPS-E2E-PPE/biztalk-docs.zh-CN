@@ -17,6 +17,7 @@ ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "22298909"
 ---
 # <a name="msit-real-world-migration-story-from-gentran-51-to-biztalk-2010"></a>MSIT： 实际迁移情景从 Gentran 5.1 到 BizTalk 2010
 BizTalk 技术文章  

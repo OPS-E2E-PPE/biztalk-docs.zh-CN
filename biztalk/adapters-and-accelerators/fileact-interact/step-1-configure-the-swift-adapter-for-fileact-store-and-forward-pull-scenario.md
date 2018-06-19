@@ -1,14 +1,14 @@
 ---
-title: "步骤 1： 配置 FileAct 应用商店应用和转发的请求方案 SWIFT 适配器 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 配置 FileAct 应用商店应用和转发的请求方案 SWIFT 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc271544-6bc8-4d62-aba0-3fe3295f2a2a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965195"
 ---
 # <a name="step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario"></a>步骤 1： 配置 SWIFT 适配器 FileAct 应用商店应用和转发的请求方案
 完成[准备使用本教程](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)在开始此步骤之前。
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/28/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：** 自变量中的客户端是在压降中配置 MessagePartner。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
     |**FACryptoMode**|从下拉列表中选择**高级**。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
@@ -58,9 +59,9 @@ ms.lasthandoff: 11/28/2017
   
     |**使用此方法**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：**自变量中的客户端是在压降中配置 MessagePartner。|  
+    |**参数**|键入以下参数:-SagMessagePartner \<Fileact 客户端消息合作伙伴创建在压降\>**注意：** 自变量中的客户端是在压降中配置 MessagePartner。|  
     |**加密模式**|从下拉列表中选择**高级**。|  
-    |**LogMessageBody**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。 **注意：**如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
+    |**LogMessageBody**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。 **注意：** 如果设置为 TRUE 时，它会保留 BizTalk 跟踪数据库的消息正文。 但是，出于安全原因，消息正文可以永远不会查看 BAM 门户。|  
     |**日志消息**|从下拉列表中选择**TRUE**。 这样将捕获和 BAM 门户中跟踪消息事件。|  
     |**启用**|**True**|  
     |**事件终结点**|键入相应压降终结点。|  

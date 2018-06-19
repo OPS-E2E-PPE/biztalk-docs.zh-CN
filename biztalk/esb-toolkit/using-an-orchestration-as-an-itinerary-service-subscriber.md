@@ -1,14 +1,14 @@
 ---
-title: "为路线服务的订阅服务器使用一个业务流程 |Microsoft 文档"
-ms.custom: 
+title: 为路线服务的订阅服务器使用一个业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 278564f1-de9f-4fbf-8c7f-09b3e607c28b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22295317"
 ---
 # <a name="using-an-orchestration-as-an-itinerary-service-subscriber"></a>为路线服务的订阅服务器使用一个业务流程
 业务流程还可以充当路线的服务。 若要参与路线，必须首先设计为直接绑定; 业务流程若要执行此操作，使用类似于在上一主题中，发送端口的筛选器订阅[为路线服务的订阅服务器使用发送端口](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)。 图 1 显示合适的业务流程，以拾取满足下列条件的任何消息筛选器表达式的示例：  

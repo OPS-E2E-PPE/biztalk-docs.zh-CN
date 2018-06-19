@@ -1,14 +1,14 @@
 ---
-title: "规划使用 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: 规划使用 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24863069-929b-4b0b-9643-073965fb5532
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302269"
 ---
 # <a name="planning-for-consuming-web-services"></a>规划使用 Web 服务
 规划 Web 服务可以划分为两个类别，规划用于发布 Web 服务和规划使用 Web 服务。 本主题介绍有关使用 Web 服务的注意事项。 有关发布 Web 服务的信息，请参阅[规划发布 Web Services1](../technical-guides/planning-for-publishing-web-services1.md)。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
      可以在消息上下文中以编程方式设置配置属性。 发送端口是静态还是动态，你可以在业务流程或自定义管道组件中设置这些属性。  
   
     > [!NOTE]  
-    >  若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到**[指定更高版本]**中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。  
+    >  若要配置**MethodName**静态 SOAP 属性以编程方式发送端口，你需要设置**方法名称**到 **[指定更高版本]** 中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。  
   
      有关详细信息**MethodName**属性，请参阅[如何动态设置使用的 Web 服务的 URI](http://go.microsoft.com/fwlink/?LinkID=155768) (http://go.microsoft.com/fwlink/?LinkID=155768)。  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
     -   Web 方法应具有**SoapDocumentMethodAttribute**而不是**SoapRpcMethodAttribute**。  
   
-    -   Web 服务和方法必须使用**文本**绑定而不**编码**如**[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。  
+    -   Web 服务和方法必须使用**文本**绑定而不**编码**如 **[SoapDocumentMethod(Use=SoapBindingUse.Literal)]**。  
   
     -   Web 方法参数和返回类型必须具有**XmlRootAttribute**使用一个有效**Namespace**属性除非它们是本机的 XSD 类型和 XmlNode 类型。  
   

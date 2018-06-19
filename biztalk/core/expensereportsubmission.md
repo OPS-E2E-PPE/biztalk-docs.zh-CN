@@ -1,17 +1,17 @@
 ---
-title: "ExpenseReportSubmission |Microsoft 文档"
-ms.custom: 
+title: ExpenseReportSubmission |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
 - examples, orchestrations
 ms.assetid: d0bacab3-7092-44b8-a1c6-6f574a2db8bd
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969763"
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Excel）向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程提交文档。  
@@ -114,7 +115,7 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
   
     6.  单击**标识**选项卡的属性对话框框中，并将更改此应用程序池运行是的成员的用户的标识**BizTalk 独立主机用户**用户组。  此用户还应属于本地**IIS_WPG**用户组。  
   
-    7.  将本 SDK 示例的虚拟目录配置为在新应用程序池下运行。 **应用程序池：**设置位于**虚拟目录**虚拟目录属性对话框中的选项卡。 为此示例是创建的虚拟目录**ExpenseReportSubmission**。  
+    7.  将本 SDK 示例的虚拟目录配置为在新应用程序池下运行。 **应用程序池：** 设置位于**虚拟目录**虚拟目录属性对话框中的选项卡。 为此示例是创建的虚拟目录**ExpenseReportSubmission**。  
   
 4.  在 IIS 中为 HTTPReceive.dll 添加一个 Web 服务扩展  
   
@@ -126,7 +127,7 @@ ExpenseReportSubmission 示例演示了如何从胖客户端（如 Microsoft Exc
   
     4.  单击**添加**以显示**Add file**对话框。  
   
-    5.  单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹\>*\HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。  
+    5.  单击**浏览**以显示**打开**对话框框中，并导航到 *\<BizTalk Server 安装文件夹\>* \HttpReceive\BTSHTTPReceive.dll 和单击**打开**，然后单击**确定**。  
   
     6.  启用到选项**设置扩展状态为允许**单击**确定**。  
   

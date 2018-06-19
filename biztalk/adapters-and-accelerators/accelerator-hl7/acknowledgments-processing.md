@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22204557"
 ---
 # <a name="acknowledgments-processing"></a>处理的确认
 HL7 规范支持消息的交换的两种格式：  

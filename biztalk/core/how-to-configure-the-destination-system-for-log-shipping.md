@@ -1,11 +1,11 @@
 ---
-title: "如何为日志传送配置的目标系统 |Microsoft 文档"
-ms.custom: 
+title: 如何为日志传送配置的目标系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 2015-12-03
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, log shipping
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - system failures, backing up
 - backing up, system failures
 ms.assetid: 7b4425f5-b105-4fb2-a503-94ca1e75ad55
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969491"
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a>如何配置日志传送的目标系统
 日志传送具有备用服务器功能，用以缩短出现系统故障时的停机时间。 使用日志传送可以自动从源系统向目标系统发送事务日志。 在目标系统中，事务日志还原到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库; 让他们可以与源数据库紧密同步。  
@@ -125,9 +126,9 @@ ms.lasthandoff: 11/28/2017
   
 11. 右键单击**SampleUpdateInfo.xml**，然后选择**编辑**。 请执行以下操作：  
   
-    -   所有实例都替换**"SourceServer"**与源系统的名称。  
+    -   所有实例都替换 **"SourceServer"** 与源系统的名称。  
   
-    -   所有实例都替换**"DestinationServer"**与目标系统的名称。  
+    -   所有实例都替换 **"DestinationServer"** 与目标系统的名称。  
   
     > [!IMPORTANT]
     >  用引号将源系统和目标系统的名称括起来。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/28/2017
     >   
     >  如果更改了这两个数据库的默认名称，请使用实际的数据库名称。  
   
-12. 如果你有多个 MessageBox 数据库你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统，将另一个 MessageBoxDB 行添加到列表中，并将**IsMaster ="0"**非 master 数据库。  
+12. 如果你有多个 MessageBox 数据库你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统，将另一个 MessageBoxDB 行添加到列表中，并将**IsMaster ="0"** 非 master 数据库。  
   
 13. 如果使用 BAM 或规则引擎，请相应地取消这些行的注释。  
   

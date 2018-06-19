@@ -1,18 +1,18 @@
 ---
-title: "如何禁用 SSO |Microsoft 文档"
-ms.custom: 
+title: 如何禁用 SSO |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - disabling, SSO
 - SSO, disabling
 - managing [SSO], disabling
 ms.assetid: 0fe4f87a-d7c2-4af6-afee-1065bc4a5285
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968851"
 ---
 # <a name="how-to-disable-sso"></a>如何禁用 SSO
 通过使用 MMC 管理单元或命令行，可以禁用整个单一登录系统。  

@@ -1,14 +1,14 @@
 ---
-title: "如何显示监视器阈值 |Microsoft 文档"
-ms.custom: 
+title: 如何显示监视器阈值 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88d88b15-0691-49d9-b116-1a2ae95bead9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22297701"
 ---
 # <a name="how-to-display-monitor-thresholds"></a>如何显示监视器阈值
 若要显示监视器阈值，请使用本部分中介绍的脚本。 此脚本适用于多数监视器。 它创建一个.csv 文件，包括下表中所述列，并可以使用 Office Excel 查看。  

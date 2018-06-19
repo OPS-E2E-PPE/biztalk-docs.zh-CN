@@ -1,18 +1,18 @@
 ---
-title: "步骤 2： 定义和 contoso 发布词汇 |Microsoft 文档"
-ms.custom: 
+title: 步骤 2： 定义和 contoso 发布词汇 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - vocabularies, creating
 - vocabularies, publishing
 - private process tutorial, creating vocabularies
 ms.assetid: e23880c0-772c-48c6-a6b5-32eb951527c8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22211085"
 ---
 # <a name="step-2-defining-and-publishing-the-vocabulary-for-contoso"></a>步骤 2： 定义和 contoso 发布词汇
 在此方案中，Contoso 将实现一个业务策略，该策略确保在出现紧急情况时始终有可用库存。 您将使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 中的业务规则编辑器来创建业务策略。 在此步骤中，您将创建定义业务策略时所使用的词汇。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-a-constant-vocabulary-value"></a>定义词汇常数值  
   
-1.  在业务规则编辑器，单击**3A2PriceAvailabilityVocabulary**，右键单击**（不保存） 1.0 版**，然后单击**添加新定义**。  
+1.  在业务规则编辑器，单击**3A2PriceAvailabilityVocabulary**，右键单击 **（不保存） 1.0 版**，然后单击**添加新定义**。  
   
 2.  上**词汇定义向导**页上，选择**常量值、 值的范围或设置的值**，然后单击**下一步**。  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-an-xml-document-get-element"></a>定义 XML 文档的“Get”元素  
   
-1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.  
+1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.  
   
 2.  上**VocabularyDefinition 向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-define-an-xml-document-set-element"></a>定义 XML 文档的“Set”元素  
   
-1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.  
+1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**添加新定义**.  
   
 2.  上**VocabularyDefinition 向导**页上，选择**XML 文档元素或属性**，然后单击**下一步**。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-save-and-publish-the-vocabulary"></a>保存和发布词汇  
   
-1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击**（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**保存**。  
+1.  在业务规则编辑器，在事实数据资源管理器窗格中，右键单击 **（不保存） 1.0 版**下**3A2PriceAvailabilityVocabulary**，然后单击**保存**。  
   
 2.  右键单击该相同**版本 1.0**节点，然后单击**发布**。  
   

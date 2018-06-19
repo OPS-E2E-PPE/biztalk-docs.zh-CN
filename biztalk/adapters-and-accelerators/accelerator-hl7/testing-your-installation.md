@@ -1,17 +1,17 @@
 ---
-title: "测试安装 |Microsoft 文档"
-ms.custom: 
+title: 测试安装 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - testing installation
 - installing, testing installation
 ms.assetid: db27a75c-db7f-46ff-b8ef-2624ff18dcc8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961059"
 ---
 # <a name="testing-your-installation"></a>测试安装
 你可以将设置你[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]测试通过手动运行完成端到端教程或执行端到端教程程序的安装。 若要执行程序，可单击**启动教程**按钮在安装过程中或在 C:\Program Files\Microsoft BizTalk 中执行 EndToEndTutorial.exe\<版本\>HL7\SDK\ 快捷键端到端教程 （后运行安装和配置） 的文件夹。 这两种自动操作将执行相同的安装步骤通过运行完成教程将会手动执行。 端到端教程程序执行以下任务：  

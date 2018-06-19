@@ -1,11 +1,11 @@
 ---
-title: "如何创建或编辑过程配置 |Microsoft 文档"
-ms.custom: 
+title: 如何创建或编辑过程配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - process configuration, modifying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - creating, process configuration
 - modifying, process configuration
 ms.assetid: ef6160f1-f2f0-42ff-a516-7818c9d79d26
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962603"
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a>如何创建或编辑过程配置
 本主题讲述如何创建或编辑流程配置。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  右键单击你想要编辑，然后单击的过程配置**属性**。  
   
-5.  在*\<过程配置\>*属性对话框中，在**常规**和**联系人属性**选项卡上，根据更改设置必填。 有关这些设置的信息，请参阅上表。  
+5.  在*\<过程配置\>* 属性对话框中，在**常规**和**联系人属性**选项卡上，根据更改设置必填。 有关这些设置的信息，请参阅上表。  
   
 6.  单击 **“确定”**。  
   

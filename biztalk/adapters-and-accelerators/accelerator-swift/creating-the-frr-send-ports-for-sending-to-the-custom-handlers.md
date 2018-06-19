@@ -1,18 +1,18 @@
 ---
-title: "创建 FRR 发送端口将发送到自定义处理程序 |Microsoft 文档"
-ms.custom: 
+title: 创建 FRR 发送端口将发送到自定义处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating, send ports
 - send ports, creating
 - FRR, creating send ports
 ms.assetid: 036f1f97-17a2-4e02-a85a-a52739a48528
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966539"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>创建 FRR 发送端口将发送到自定义处理程序
 若要执行 FIN 响应对帐，你需要创建一系列发送端口，其中每个发送一条消息 （原始消息或响应） 从[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到处理相关的消息的自定义处理程序。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
     > [!NOTE]
     >  如果此文件夹不存在，则可以创建使用**新建文件夹**命令。  
   
-7.  在**文件名**框中，键入**%MessageID%.txt**，然后单击**确定**。  
+7.  在**文件名**框中，键入 **%MessageID%.txt**，然后单击**确定**。  
   
     > [!NOTE]
     >  你可以创建用于每种类型的消息的不同文件夹。  

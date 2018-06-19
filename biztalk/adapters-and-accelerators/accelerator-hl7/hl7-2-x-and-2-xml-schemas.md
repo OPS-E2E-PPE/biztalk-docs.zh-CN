@@ -1,11 +1,11 @@
 ---
-title: "HL7 2.X 和 2.XML 架构 |Microsoft 文档"
-ms.custom: 
+title: HL7 2.X 和 2.XML 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, schema types
@@ -29,7 +29,7 @@ helpviewer_keywords:
 - common schemas
 - schemas, 2.X schemas
 ms.assetid: 02532d72-1948-48d8-a8ef-6b5a814eb573
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -38,6 +38,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961899"
 ---
 # <a name="hl7-2x-and-2xml-schemas"></a>HL7 2.X 和 2.XML 架构
 HL7 组织发布的架构的两个集： HL7 2.X 架构，用于 HL7 编码消息和 HL7 2.XML 架构，用于 XML 编码的消息。  

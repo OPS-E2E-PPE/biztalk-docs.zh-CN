@@ -1,14 +1,14 @@
 ---
-title: "适配器 Framework 配置架构修饰标记 |Microsoft 文档"
-ms.custom: 
+title: 适配器 Framework 配置架构修饰标记 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d5d7f6b-2273-45a6-ba9d-43201760cf22
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965371"
 ---
 # <a name="adapter-framework-configuration-schema-decoration-tags"></a>适配器 Framework 配置架构修饰标记
 您可以在配置架构文件中使用本主题所述的标记来显示和组织适配器属性页上的数据。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/28/2017
 ## <a name="readonly"></a>\<readonly\>  
  \<Readonly 固定 =""\>修饰控制是否可编辑字段。 如果“fixed”属性值为 `true`（默认值），则字段为只读。  
   
- 当实现外部编辑器，实现外部**TypeConverter**类并重写**GetStandardValuesExclusive(ITypeDescriptorContext)**方法相反。 返回`true`使字段成为只读的但会保留到自定义编辑器的访问。  
+ 当实现外部编辑器，实现外部**TypeConverter**类并重写**GetStandardValuesExclusive(ITypeDescriptorContext)** 方法相反。 返回`true`使字段成为只读的但会保留到自定义编辑器的访问。  
   
 ## <a name="browsable"></a>\<可浏览\>  
  \<可浏览显示 =""\>修饰控制字段是否显示在属性网格。 如果“show”属性值为 `True`（默认值），则字段将出现在网格中。  

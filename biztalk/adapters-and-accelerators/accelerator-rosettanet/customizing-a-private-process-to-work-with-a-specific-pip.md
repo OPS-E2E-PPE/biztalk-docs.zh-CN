@@ -1,11 +1,11 @@
 ---
-title: "自定义以使用特定 PIP 私有过程 |Microsoft 文档"
-ms.custom: 
+title: 自定义以使用特定 PIP 私有过程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, PIPs
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - PIPs, private processes
 - customizing private processes
 ms.assetid: 88494e87-25a0-4c94-9396-61a0e07964aa
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966747"
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>自定义以使用特定 PIP 私有过程
 你可以创建特定的筛选器表达式，使响应方专用业务流程处理或不处理特定合作伙伴接口流程 (PIP) 的实例。 这样你就可以灵活地创建自定义专用流程来接收和处理某些 PIP 实例，而使用默认的专用流程来处理所有其他 PIP 实例。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 11/28/2017
   
 9. 右键单击**ReceiveFromPublicProcessResponder**接收形状，并依次**编辑筛选器表达式**。  
   
-10. 在**筛选器表达式**对话框中，在第一个打开行中，属性列中的选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。 在运算符列中，选择**！ =**从下拉列表。 在值列中，键入三位数 PIP 代码，例如，键入"**3A4"**。  
+10. 在**筛选器表达式**对话框中，在第一个打开行中，属性列中的选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。 在运算符列中，选择 **！ =** 从下拉列表。 在值列中，键入三位数 PIP 代码，例如，键入"**3A4"**。  
   
 11. 单击 **“确定”**。  
   

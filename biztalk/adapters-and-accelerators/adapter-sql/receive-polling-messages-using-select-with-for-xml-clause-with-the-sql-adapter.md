@@ -1,14 +1,14 @@
 ---
-title: "接收使用 FOR XML 子句中使用 BizTalk Server 的 SQL SELECT 语句的轮询消息 |Microsoft 文档"
-ms.custom: 
+title: 接收使用 FOR XML 子句中使用 BizTalk Server 的 SQL SELECT 语句的轮询消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65c629c1-9ef7-4aa1-8ec1-f94a3cb41cb0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967699"
 ---
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a>接收使用 FOR XML 子句中使用 BizTalk Server 的 SQL SELECT 语句的轮询消息
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]来接收使用 SELECT 语句或存储的过程包含 FOR XML 子句的 SQL Server 表或视图的定期的数据更改消息。 你可以指定这些语句作为适配器执行轮询数据库的轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回的结果集。  
@@ -86,7 +87,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
          因为你已添加到你的 BizTalk 项目 sqltypes.xsd 架构执行此操作。  
   
-    4.  提供架构目标命名空间。 单击**\<架构\>**节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlPolling/namespace`。  
+    4.  提供架构目标命名空间。 单击**\<架构\>** 节点，然后在属性窗格中，指定的命名空间中**目标 Namespace**属性。 本主题中，为提供的命名空间作为`http://ForXmlPolling/namespace`。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
  你先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，为其类型由相应的架构定义。 后生成架构，你必须将其从 BizTalk 项目的业务流程视图链接到消息中。  
@@ -176,7 +177,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
         |----------------------|-----------|  
         |**InboundOperationType**|请确保将此设置为**XmlPolling**。|  
         |**PolledDataAvailableStatement**|请确保指定的 SQL 语句。 对于本主题中，指定：<br /><br /> `SELECT COUNT(*) FROM Employee`|  
-        |**PollingStatement**|请确保你提供的相同语句，而不`xmlschema`子句中所述生成架构时指定[接收使用 FOR XML 子句中使用 BizTalk Server的SQLSELECT语句的轮询消息](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-using-select-with-for-xml-clause-with-the-sql-adapter.md).<br /><br /> `SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto`<br /><br /> **注意：**请注意，SELECT 语句不包含`xmlschema`子句。|  
+        |**PollingStatement**|请确保你提供的相同语句，而不`xmlschema`子句中所述生成架构时指定[接收使用 FOR XML 子句中使用 BizTalk Server的SQLSELECT语句的轮询消息](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-using-select-with-for-xml-clause-with-the-sql-adapter.md).<br /><br /> `SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto`<br /><br /> **注意：** 请注意，SELECT 语句不包含`xmlschema`子句。|  
         |**XmlStoredProcedureRootNodeName**|指定在所述添加到 SELECT 语句中，为生成的响应架构的根节点名称[生成 SELECT 语句的响应消息的架构](#BKMK_RespSchema)。 对于本主题中，请将此设置为**根**。|  
         |**XmlStoredProcedureRootNodeNamespace**|指定用于 SELECT 语句中，生成的响应架构的目标命名空间下所述[生成 SELECT 语句的响应消息的架构](#BKMK_RespSchema)。 对于本主题中，请将此设置为`http://ForXmlPolling/namespace`。|  
   

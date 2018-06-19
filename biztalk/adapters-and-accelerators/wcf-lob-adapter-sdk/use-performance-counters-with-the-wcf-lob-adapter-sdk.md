@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF LOB 适配器 SDK 的性能计数器 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF LOB 适配器 SDK 的性能计数器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6b928eaf-2ab6-40a6-a1dd-804d4e89541e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966267"
 ---
 # <a name="use-performance-counters-with-the-wcf-lob-adapter-sdk"></a>使用具有 WCF LOB 适配器 SDK 的性能计数器
 你可以使用性能工具自动从正在运行的本地或远程计算机中收集性能数据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 你可以定义开始和停止自动日志生成时间、 从单个控制台窗口中，管理多个日志记录会话和上启用要发送的消息的计算机或要满足你的条件时启动的日志设置警报。 本主题讨论的性能计数器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  

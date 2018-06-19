@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 测试与 Siebel 适配器迁移应用程序 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 测试与 Siebel 适配器迁移应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 651ee1b2-52da-497a-84a5-67f1436cc3e6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,13 +17,14 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963099"
 ---
 # <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a>步骤 3： 测试与 Siebel 适配器迁移应用程序
 ![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **完成时间：** 5 分钟  
   
- **目标：**在此步骤中，将通过执行插入操作帐户在业务组件上的测试已迁移的应用程序。 若要执行此操作，你可以删除与生成使用 vPrev Siebel 适配器的架构一致的请求消息。  
+ **目标：** 在此步骤中，将通过执行插入操作帐户在业务组件上的测试已迁移的应用程序。 若要执行此操作，你可以删除与生成使用 vPrev Siebel 适配器的架构一致的请求消息。  
   
 ## <a name="prerequisites"></a>先决条件  
   

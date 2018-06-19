@@ -1,14 +1,14 @@
 ---
-title: "调用在 Oracle E-business Suite 的并发程序 |Microsoft 文档"
-ms.custom: 
+title: 调用在 Oracle E-business Suite 的并发程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85c55a35-bee4-4b50-8b00-e4198ad4c2af
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964611"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>调用在 Oracle E-business Suite 的并发程序
 Oracle E-business Suite 公开可以执行以执行对 Oracle 应用程序的特定操作的并发程序。 每个 Oracle 应用程序具有一套标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。 有关如何的适配器支持并发程序的详细信息，请参阅[并发程序上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。 对于调用并发程序消息的 SOAP 结构的信息，请参阅[并发程序的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)。  

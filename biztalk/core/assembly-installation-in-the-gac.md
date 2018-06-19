@@ -1,14 +1,14 @@
 ---
-title: "程序集安装在 gac 中 |Microsoft 文档"
-ms.custom: 
+title: 程序集安装在 gac 中 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b12d00c-8750-4c6d-8244-e613f955a478
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966403"
 ---
 # <a name="assembly-installation-in-the-gac"></a>程序集安装在 gac 中
 每台计算机都包含全局程序集缓存 (GAC)，其中包含该计算机上的一个或多个应用程序所使用的程序集。 为使 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 能够在运行时处理消息，BizTalk 应用程序中包括的程序集必须位于运行该应用程序的计算机的 GAC 中。  

@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 将现有 BizTalk 项目添加到现有的 Contoso 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 将现有 BizTalk 项目添加到现有的 Contoso 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - projects, adding to solutions
 - private process tutorial, adding projects to solutions
 ms.assetid: 9e84d282-01aa-4611-8462-c1acef234042
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963947"
 ---
 # <a name="step-1-adding-an-existing-biztalk-project-to-the-existing-contoso-solution"></a>步骤 1： 将现有 BizTalk 项目添加到现有的 Contoso 解决方案
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 包含专用业务流程，在自定义你自己的专用流程时它是一个很好的起点。 在此步骤中，将该业务流程添加到解决方案，然后更改程序集的名称，以避免此名称与 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装过程中安装的 PrivateResponder 业务流程相冲突。 在开始之前，打开你在中创建 Contoso 解决方案[步骤 1： 为 Contoso 价格和可用性请求创建一个新的 BizTalk 解决方案](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-new-biztalk-solution-for-contoso-price-and-availability-request.md)。  

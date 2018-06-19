@@ -1,11 +1,11 @@
 ---
-title: "升级到 BizTalk Server 2013 和 2013 R2 |Microsoft 文档"
-ms.custom: 
+title: 升级到 BizTalk Server 2013 和 2013 R2 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - upgrading, BizTalk Server
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BizTalk Server, upgrading
 - upgrading
 ms.assetid: acb0a96e-091b-45c3-8d41-affe9ffcf134
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22300029"
 ---
 # <a name="upgrade-to-biztalk-server-2013-and-2013-r2"></a>升级到 BizTalk Server 2013 和 2013 R2
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 经过设计，可以便捷地从以前版本进行升级。 [与 BizTalk Server 2013 相关的安装指南](http://www.microsoft.com/download/details.aspx?id=35552)页面上提供了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 和 2013 R2 升级指南。  

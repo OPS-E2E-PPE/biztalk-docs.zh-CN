@@ -1,14 +1,14 @@
 ---
-title: "插入、 更新、 删除或选择 BizTalk Server 使用的 SQL 适配器的操作 |Microsoft 文档"
-ms.custom: 
+title: 插入、 更新、 删除或选择 BizTalk Server 使用的 SQL 适配器的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d411b1a-a36d-4e3e-a56a-91804a5d69b9
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968115"
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>插入、 更新、 删除或选择 BizTalk Server 使用的 SQL 适配器的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]呈现一组的 SQL Server 数据库表和视图上的标准操作。 这些行为称为数据操作语言 (DML) 操作。 通过使用 DML 操作，可以执行简单的 Insert、 Update、 选择和删除表和视图上的操作。 有关如何适配器支持这些操作的详细信息，请参阅[插入、 更新、 删除和选择操作对表和视图与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[插入、 更新、 删除和选择表和视图上的操作的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。  

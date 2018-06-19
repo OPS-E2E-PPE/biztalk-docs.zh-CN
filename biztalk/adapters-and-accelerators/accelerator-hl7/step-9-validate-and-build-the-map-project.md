@@ -1,11 +1,11 @@
 ---
-title: "步骤 9： 验证并生成映射项目 |Microsoft 文档"
-ms.custom: 
+title: 步骤 9： 验证并生成映射项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, maps
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - maps, building
 - maps, validating
 ms.assetid: 10716b0b-702c-48bb-85a9-d58d8f33b68b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206469"
 ---
 # <a name="step-9-validate-and-build-the-map-project"></a>步骤 9： 验证并生成映射项目
 在此步骤中，你使用**验证映射**以确定映射是否包含任何内部不一致，或者具有其他问题，防止将其用于有效地映射架构的命令。 你也会生成此项目以生成该程序集包含你创建的资源 （架构和映射）。 这还可以确保到目前为止完成的工作中没有编译错误。  

@@ -1,14 +1,14 @@
 ---
-title: "BizTalk 操作 Web 服务 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 操作 Web 服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: af38815f-f643-4598-9148-6499071d12e4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22296909"
 ---
 # <a name="the-biztalk-operations-web-service"></a>BizTalk 操作 Web 服务
 Microsoft BizTalk 操作 Web 服务公开的对象和 BizTalk Server 中的消息有关的信息。 服务名称是**ESB.BizTalkOperationsService**，并且服务将公开各种返回如列表项的主机、 业务流程、 应用程序和 BizTalk 应用程序状态的方法。  

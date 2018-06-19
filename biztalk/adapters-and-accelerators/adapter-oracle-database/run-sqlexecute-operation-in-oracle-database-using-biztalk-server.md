@@ -1,17 +1,17 @@
 ---
-title: "使用 BizTalk Server 的 Oracle 数据库中运行 SQLEXECUTE 操作 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk Server 的 Oracle 数据库中运行 SQLEXECUTE 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SQLEXECUTE operation, performing by using BizTalk Server
 - SQLEXECUTE operation
 ms.assetid: 7fdd1ead-0bf0-46cf-86fc-db513f76f6b3
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962259"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-biztalk-server"></a>使用 BizTalk Server 的 Oracle 数据库中运行 SQLEXECUTE 操作
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使客户端能够在 Oracle 数据库上运行参数化的 SQL 语句。 若要支持此类操作，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]呈现 SQLEXECUTE 操作。 SQLEXECUTE 操作支持组成使你可以执行一次为每个集的相同 SQL 语句的参数集的输入的参数块。 SQLEXECUTE 操作返回泛型记录集内的 SQL 语句的结果。 有关操作的详细信息，请参阅[Oracle 数据库中的 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)。 有关 SQLEXECUTE 操作的 SOAP 消息结构的信息，请参阅[SQLEXECUTE 操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)。  

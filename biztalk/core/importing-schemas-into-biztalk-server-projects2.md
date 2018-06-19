@@ -1,14 +1,14 @@
 ---
-title: "导入 Visual Studio 博士 Edwards EnterpriseOne 架构 |Microsoft 文档"
-ms.custom: 
+title: 导入 Visual Studio 博士 Edwards EnterpriseOne 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 640d5884-953a-46b6-b9dc-b931392a3059
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013972"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>将架构导入到 BizTalk Server 项目
 本部分讨论浏览 JD Edwards EnterpriseOne 服务器和将架构导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中。  

@@ -1,11 +1,11 @@
 ---
-title: "设置量验证偏移量 |Microsoft 文档"
-ms.custom: 
+title: 设置量验证偏移量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - amounts, validating
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - amounts, offsets
 - offsets
 ms.assetid: 39d5510c-52e6-4fd9-9632-582b508f04d7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961251"
 ---
 # <a name="setting-offsets-for-amount-validation"></a>设置量验证偏移量
 通过其各自的验证策略中的规则进行验证的消息类型 MT102，MT103 和 MT103PLUS 量字段使用规则。 量字段可以完全匹配，或可以验证为金额的范围之内。  

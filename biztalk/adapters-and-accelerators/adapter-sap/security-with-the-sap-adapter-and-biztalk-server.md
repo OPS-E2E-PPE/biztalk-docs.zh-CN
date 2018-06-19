@@ -1,11 +1,11 @@
 ---
-title: "SAP 适配器与 BizTalk Server 的安全 |Microsoft 文档"
-ms.custom: 
+title: SAP 适配器与 BizTalk Server 的安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - credentials, protecting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - security, protecting credentials
 - SSO
 ms.assetid: 702cd0f9-d8e1-4dad-8774-b552481d5390
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22217773"
 ---
 # <a name="security-with-the-sap-adapter-and-biztalk-server"></a>SAP 适配器与 BizTalk Server 的安全
 配置发送端口或接收端口 （位置） 时使用 BizTalk Server 管理控制台或使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要检索 BizTalk 解决方案的消息架构，必须提供凭据的 SAP 系统。 请务必在一个安全的方法，可帮助防止它们被暴露给潜在的恶意 actors 中提供这些凭据。 本主题讨论如何最安全地提供的凭据[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]BizTalk Server 解决方案。  

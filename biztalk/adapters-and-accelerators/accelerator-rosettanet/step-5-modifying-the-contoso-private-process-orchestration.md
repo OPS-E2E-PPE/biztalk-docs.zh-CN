@@ -1,17 +1,17 @@
 ---
-title: "步骤 5： 修改 Contoso 私有进程业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 修改 Contoso 私有进程业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - private processes, orchestrations
 - private process tutorial, modifying private process orchestration
 ms.assetid: a5430db8-e5f0-48a6-abb9-e268d8ec2ec4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967755"
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>步骤 5： 修改 Contoso 私有进程业务流程
 在此步骤中，将修改专用业务流程以将其集成到 Contoso 的企业资源计划 (ERP) 系统中。 Contoso 的 ERP 系统将内部定义的架构用于产品价格与可用性。 通过自定义 3A2 - 价格与可用性合作伙伴接口流程 (PIP) 的专用流程，你将能够使用架构映射信息与 ERP 系统集成。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  通过在解决方案资源管理器中显示 Contoso 解决方案，右键单击**PrivateResponder**项目，，然后单击**添加引用**。  
   
-2.  在添加引用对话框中，单击**浏览**。 将移动到*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键**:**  
+2.  在添加引用对话框中，单击**浏览**。 将移动到*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\Bin 文件夹，然后选择以下程序集的快捷键 **:**  
   
     -   Microsoft.Solutions.BTARN.CommonTypes.dll  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/28/2017
   
 5.  在**消息类型**框中，单击下拉箭头，展开**架构**，然后选择**\<从引用的程序集选择\>**。  
   
-6.  在选择项目 Typedialog 框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择**_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，和然后单击**确定**。  
+6.  在选择项目 Typedialog 框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择 **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，和然后单击**确定**。  
   
 7.  使用以下信息重复步骤 3 至 6，为解决方案创建所有消息类型：  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在属性窗口中，在**标识符**框中，键入**contosoResponseXML**。  
   
-3.  在**类型**框中，选择 **\<.NET 类\>**从下拉列表。  
+3.  在**类型**框中，选择 **\<.NET 类\>** 从下拉列表。  
   
 4.  在选择项目中键入对话框中，在左窗格中下,**当前项目**和**引用**节点，选择**System.Xml**，选择**XmlDocument**从在右窗格中，然后单击列表**确定**。  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  在属性窗口中，在**标识符**框中，键入**submitMessage**。  
   
-7.  在**类型**框中，选择 **\<.NET 类\>**从下拉列表。  
+7.  在**类型**框中，选择 **\<.NET 类\>** 从下拉列表。  
   
 8.  在左窗格中，选择项目类型对话框中展开**当前项目**和**引用**节点，选择**Microsoft.Solutions.BTARN.Shared**，选择**SubmitRNIF**从在右窗格中，然后单击列表**确定**。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  在筛选表达式对话框中，单击**单击此处以添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。  
   
-5.  在同一行中，单击**值**，然后键入**"3A2"**。  
+5.  在同一行中，单击**值**，然后键入 **"3A2"**。  
   
 6.  在同一行中，单击**AND**中**Group By**框中，，然后选择**或**从下拉列表。  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/28/2017
   
 8.  单击**单击此处以添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。  
   
-9. 在同一行中，单击**值**，然后键入**"3A2"**。  
+9. 在同一行中，单击**值**，然后键入 **"3A2"**。  
   
 10. 单击“确定”。  
   

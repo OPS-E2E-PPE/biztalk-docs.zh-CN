@@ -1,17 +1,17 @@
 ---
-title: "步骤 1： 创建和部署标头和确认架构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建和部署标头和确认架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, header schemas
 - header schemas
 ms.assetid: 3ff013a4-6c67-4bac-be97-81b2dc5b6119
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960739"
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>步骤 1： 创建和部署标头和确认架构
 使用标头架构来验证消息实例的标头 （MSH 段）。 确认架构用于生成消息实例确认。 此过程能够在之间通用的所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  

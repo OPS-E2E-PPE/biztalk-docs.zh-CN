@@ -1,14 +1,14 @@
 ---
-title: "安装并配置已知问题，请阅读 |Microsoft 文档"
-ms.custom: 
+title: 安装并配置已知问题，请阅读 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c58d9dcb-7835-4181-a6cb-203c5d138e6a
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,11 +17,12 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962003"
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a>读取的安装和配置的已知问题
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>通过终端服务器安装的其他文件夹中创建日志文件  
- A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\Local 设置文件夹。 通常情况下，安装程序将创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>*\LocalSettings\temp 文件夹。 你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。  
+ A4SWIFT 安装程序安装时 A4SWIFT 通过终端服务器连接，创建中的设置和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \Local 设置文件夹。 通常情况下，安装程序将创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \LocalSettings\temp 文件夹。 你可以查看这些日志文件，以确保你的计算机进行设置和配置正确。  
   
 ## <a name="silent-installation-is-not-recommended"></a>不建议无提示安装  
  无提示安装 A4SWIFT 安装程序支持，但不是建议由于所需的其他配置步骤的复杂性。  

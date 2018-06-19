@@ -1,14 +1,14 @@
 ---
-title: "使用 BizTalk Server 从 SQL Server 接收基于轮询的数据更改消息 |Microsoft 文档"
-ms.custom: 
+title: 使用 BizTalk Server 从 SQL Server 接收基于轮询的数据更改消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9ecaf6f7-974b-4487-8c65-d1ab628cbfeb
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967869"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a>使用 BizTalk Server 从 SQL Server 接收基于轮询的数据更改消息
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]来接收 SQL Server 表或视图的定期的数据更改消息。 你可以指定适配器执行轮询数据库轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回的结果集。  

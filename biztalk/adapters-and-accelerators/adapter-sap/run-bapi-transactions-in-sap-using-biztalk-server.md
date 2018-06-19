@@ -1,14 +1,14 @@
 ---
-title: "SAP 使用 BizTalk Server 中运行 BAPI 事务 |Microsoft 文档"
-ms.custom: 
+title: SAP 使用 BizTalk Server 中运行 BAPI 事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 75ff5cf7-5e98-4d74-a13f-4de65c215d41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967947"
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>SAP 使用 BizTalk Server 中运行 BAPI 事务
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使适配器客户端可以使用某个 SAP 系统执行事务[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 在创建之前事务业务流程，你必须首先了解将在其中执行事务的基本方案。 在典型事务方案中，与多个操作 （例如调用 BAPI） 请求消息发送到 SAP 系统。 这将称为"操作消息"。 业务流程必须从请求消息中提取每个操作消息并将各个操作消息发送到 SAP 系统。 业务流程将它们发送一次是在另一个使用相同的连接。 业务流程使用通过 BizTalk 映射的 XML 转换中提取的"操作消息"从各条消息。  

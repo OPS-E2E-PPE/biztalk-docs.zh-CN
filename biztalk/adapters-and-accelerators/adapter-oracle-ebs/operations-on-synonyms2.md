@@ -1,14 +1,14 @@
 ---
-title: "对 Synonyms2 操作 |Microsoft 文档"
-ms.custom: 
+title: 对 Synonyms2 操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bc9b2c4-ac22-491b-bc64-95e08a39b74d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964011"
 ---
 # <a name="operations-on-synonyms"></a>对同义词的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]允许你执行对同义词的操作。 同义词是一个别名或数据库对象 （如表、 视图、 存储的过程、 函数和包） 的友好名称。 有关 Oracle 中的同义词的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058)。  

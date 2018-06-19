@@ -1,14 +1,14 @@
 ---
-title: "调试业务流程运行时错误 |Microsoft 文档"
-ms.custom: 
+title: 调试业务流程运行时错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7be9ee5a-b9fa-428b-8b92-0fa0f801c724
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969899"
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>调试业务流程运行时错误
 本部分包含可帮助您解决业务流程运行时问题的一系列问题与解答。  
@@ -96,7 +97,7 @@ MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLoc
 ```  
   
 ### <a name="cause"></a>原因  
- 出现此问题的原因在运行时业务流程引擎中删除的文本"**file://"**从指定的 URL。 因此，使用上面的示例时，“file:///c:/test/out”的计算结果为 \c:\test\out，“file://mymachine/test/out”的计算结果为“mymachine\test\out”。  
+ 出现此问题的原因在运行时业务流程引擎中删除的文本"**file://"** 从指定的 URL。 因此，使用上面的示例时，“file:///c:/test/out”的计算结果为 \c:\test\out，“file://mymachine/test/out”的计算结果为“mymachine\test\out”。  
   
 ### <a name="resolution"></a>解决方法  
  当指定的 URL **BTS。OutBoundTransportLocation**属性在表达式中，添加或删除"/"字符根据需要。 使用上面的示例**BTS。OutBoundTransportLocation**属性应定义为"file://c:/test/out"，将计算结果为 c:\test\out 或"file:///mymachine/test/out"，将计算为\\\mymachine\test\out。

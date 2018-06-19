@@ -1,14 +1,14 @@
 ---
-title: "使用 WCF 服务模型调用 SQL Server 中的标量函数 |Microsoft 文档"
-ms.custom: 
+title: 使用 WCF 服务模型调用 SQL Server 中的标量函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a331e275-3c81-41a8-9ba1-3a801ebc259a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964243"
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a>使用 WCF 服务模型调用 SQL Server 中的标量函数
 你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的标量函数。 适配器将标量函数公开为可以直接在 SQL Server 调用的方法。 有关如何适配器支持标量函数的详细信息，请参阅[执行 SQL Server 使用的 SQL 适配器中的标量函数](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/28/2017
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|标量函数名称|公共*< return_type >**< scalar_function_name >*(param1，param2，...)|  
+|标量函数名称|公共 *< return_type >**< scalar_function_name >*(param1，param2，...)|  
   
  \<*retrun_type* \> = 在函数定义中定义的返回类型  
   

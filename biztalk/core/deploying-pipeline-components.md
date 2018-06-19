@@ -1,17 +1,17 @@
 ---
-title: "部署管道组件 |Microsoft 文档"
-ms.custom: 
+title: 部署管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, pipeline components [custom]
 - pipeline components [custom], deploying
 ms.assetid: 98b47fbf-62c0-4012-a406-58c4d56b305a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969027"
 ---
 # <a name="deploying-pipeline-components"></a>部署管道组件
 所有.NET 管道组件程序集 （本机和自定义） 必须都位于\<*安装目录*\>\Pipeline 组件要由服务器执行的文件夹。 如果将在多台服务器部署管道与自定义组件，组件的二进制文件必须存在的每个服务器上的指定文件夹中。  

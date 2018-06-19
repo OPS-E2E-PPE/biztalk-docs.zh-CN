@@ -1,17 +1,17 @@
 ---
-title: "运行与 Oracle 数据库中的大型对象数据类型对表的操作 |Microsoft 文档"
-ms.custom: 
+title: 运行与 Oracle 数据库中的大型对象数据类型对表的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - operations, performing on tables
 - operations, performing on LOB data
 ms.assetid: 74276b85-daf1-4d0f-92f9-46d5c27a95a6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967843"
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>运行与 Oracle 数据库中的大型对象数据类型对表的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]提供对 Oracle 大型对象 (LOB) 数据类型的支持：  
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |Identifier|类型**请求**。|  
-    |消息类型|从下拉列表中，展开**架构**，然后选择*Operate_LOB。OracleDBBindingSchema.ReadLOB**，*其中*Operate_LOB*是 BizTalk 项目的名称。 *OracleDBBindingSchema*是为 CUSTOMER 表中的 ReadLOB 和 UpdateLOB 操作生成的架构。|  
+    |消息类型|从下拉列表中，展开**架构**，然后选择*Operate_LOB。OracleDBBindingSchema.ReadLOB**，* 其中*Operate_LOB*是 BizTalk 项目的名称。 *OracleDBBindingSchema*是为 CUSTOMER 表中的 ReadLOB 和 UpdateLOB 操作生成的架构。|  
   
 5.  重复上述步骤以创建三个详细消息。 在**属性**窗格中是否有新消息，执行以下操作：  
   

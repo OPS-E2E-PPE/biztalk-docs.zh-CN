@@ -1,11 +1,11 @@
 ---
-title: "对 tRFCs SAP 中的操作 |Microsoft 文档"
-ms.custom: 
+title: 对 tRFCs SAP 中的操作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RFCs, invoking transactional RFCs in an SAP System
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - adapters, operations on tRFCs
 - RFC, invoking an RFC
 ms.assetid: d6a5c515-d6aa-4b70-9c23-32d1dd94d473
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -31,6 +31,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968067"
 ---
 # <a name="operations-on-trfcs-in-sap"></a>对 tRFCs SAP 中的操作
 事务 Rfc (tRFCs) 是工作的调用 (LUW) 逻辑单元的一部分的 Rfc。 在 SAP 系统上，LUW 包含所有完成的业务或编程任务所需的步骤。 TRFC 表示一种调用 RFC;它不是一个唯一的 SAP 项目。  

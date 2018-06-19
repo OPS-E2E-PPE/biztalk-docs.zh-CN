@@ -1,17 +1,17 @@
 ---
-title: "解决安装问题与 Siebel 适配器 |Microsoft 文档"
-ms.custom: 
+title: 解决安装问题与 Siebel 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - troubleshooting, installation
 - installation, troubleshooting
 ms.assetid: f9f066d9-37b6-4a18-9f60-d0931ea91a18
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964867"
 ---
 # <a name="troubleshoot-installation-issues-with-the-siebel-adapter"></a>与 Siebel 适配器解决安装问题
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装将复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论故障排除方法来解决安装错误。  

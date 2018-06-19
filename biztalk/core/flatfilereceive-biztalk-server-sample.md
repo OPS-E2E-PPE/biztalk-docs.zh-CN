@@ -1,14 +1,14 @@
 ---
-title: "FlatFileReceive （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: FlatFileReceive （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 90bd9e8d-6ed9-49c4-8437-c0c8b2a9a78d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970163"
 ---
 # <a name="flatfilereceive-biztalk-server-sample"></a>FlatFileReceive （BizTalk Server 示例）
 FlatFileReceive 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将平面文件处理成等效的 .xml 文件。  
@@ -51,7 +52,7 @@ FlatFileReceive 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](..
 -   XmlTransmit 用作发送管道。 当发送管道中不需要属性降级或其他消息处理时，请使用 PassThruTransmit 管道。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive\  
+ *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive\  
   
  下表显示了本示例中的文件及其用途说明：  
   
@@ -72,13 +73,13 @@ FlatFileReceive 示例演示如何使用 [!INCLUDE[btsBizTalkServerNoVersion](..
   
 1.  在命令窗口中，导航到下面的文件夹：  
   
-     *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+     *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive  
   
 2.  运行 Setup.bat 文件，该文件将执行以下操作：  
   
     -   在下面的文件夹中，为本示例创建输入 (FFInput) 和输出 (FFOutput) 文件夹：  
   
-         *\<示例路径\>*\Pipelines\AssemblerDisassembler\FlatFileReceive  
+         *\<示例路径\>* \Pipelines\AssemblerDisassembler\FlatFileReceive  
   
     -   为本示例编译并部署 Visual Studio 项目。  
   

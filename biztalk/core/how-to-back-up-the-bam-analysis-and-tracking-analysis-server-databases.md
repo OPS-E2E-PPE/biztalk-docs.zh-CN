@@ -1,11 +1,11 @@
 ---
-title: "如何备份 BAM 分析和跟踪 Analysis Server 数据库 |Microsoft 文档"
-ms.custom: 
+title: 如何备份 BAM 分析和跟踪 Analysis Server 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - backing up, DTS packages
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - Tracking Analysis Server database [BAM], backing up
 - Star Schema database [BAM], backing up
 ms.assetid: d39e3491-ab54-44f2-990a-7b8ee86f0501
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -34,6 +34,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970267"
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a>如何备份 BAM 分析数据库和跟踪分析服务器数据库
 业务活动监视 (BAM) 分析数据库和跟踪分析服务器数据库存储 SQL Server Analysis Services 多维数据集中的内容。 备份 BizTalk Server 作业不备份这些数据库。 若要备份这些数据库，必须使用 SQL Server 分析管理器。  

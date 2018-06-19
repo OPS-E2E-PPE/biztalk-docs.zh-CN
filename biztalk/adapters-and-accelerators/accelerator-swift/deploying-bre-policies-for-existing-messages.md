@@ -1,14 +1,14 @@
 ---
-title: "部署的现有消息 BRE 策略 |Microsoft 文档"
-ms.custom: 
+title: 部署的现有消息 BRE 策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 585c903d-ee44-4e92-8798-febb176367e3
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965003"
 ---
 # <a name="deploying-bre-policies-for-existing-messages"></a>将 BRE 策略部署的现有消息
 **部署相关的业务规则：**  

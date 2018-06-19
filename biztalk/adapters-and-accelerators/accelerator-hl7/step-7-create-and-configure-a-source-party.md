@@ -1,14 +1,14 @@
 ---
-title: "步骤 7： 创建并配置源方 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7： 创建并配置源方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8788a9c-ae6f-461b-82e5-f4276d1d5e0c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960747"
 ---
 # <a name="step-7-create-and-configure-a-source-party"></a>步骤 7： 创建并配置源方
 在此步骤中，你将创建并配置源方，并分配发送端口以便允许传出消息的消息标头转换。  

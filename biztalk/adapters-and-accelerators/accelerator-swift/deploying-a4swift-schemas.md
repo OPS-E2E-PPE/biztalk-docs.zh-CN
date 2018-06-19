@@ -1,11 +1,11 @@
 ---
-title: "部署 A4SWIFT 架构 |Microsoft 文档"
-ms.custom: 
+title: 部署 A4SWIFT 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, A4SWIFT
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - A4SWIFT, deploying schemas
 - schemas, deploying
 ms.assetid: a6aed2cd-3578-442e-ab1e-8284cc5f7b72
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25966419"
 ---
 # <a name="deploying-a4swift-schemas"></a>部署 A4SWIFT 架构
 你必须部署你想要交换的 SWIFT 消息的架构。  

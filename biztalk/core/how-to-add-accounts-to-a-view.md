@@ -1,18 +1,18 @@
 ---
-title: "如何将帐户添加到视图 |Microsoft 文档"
-ms.custom: 
+title: 如何将帐户添加到视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Excel add-in [BAM], security
 - Add-Account command [BAM]
 - managing [BAM], adding accounts to views
 ms.assetid: 0875796c-82a4-4165-9bed-88e8ba466548
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968667"
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>如何将帐户添加到视图
 管理员使用**添加帐户**命令以将用户与 BAM 视图关联，以防止未经授权的访问的 BAM Excel 电子表格视图。 当用户保存 BAM 视图时，视图将引用隐藏工作簿中的 SQL 连接字符串。 工作簿受到保护，但你必须确保已保护文档。  

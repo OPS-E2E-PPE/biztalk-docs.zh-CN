@@ -1,14 +1,14 @@
 ---
-title: "从使用 WCF 服务模型的 SQL 接收查询通知 |Microsoft 文档"
-ms.custom: 
+title: 从使用 WCF 服务模型的 SQL 接收查询通知 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1c9def31-3c5a-4326-b798-31bde0ff2568
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25964083"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>从使用 WCF 服务模型的 SQL 接收查询通知
 本主题演示如何配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知消息。 为了演示通知，考虑一个表，员工，与"状态"列。 一条新记录插入到此表时，状态列的值设置为 0。 你可以配置适配器后，以通过使用 SQL 语句检索为"0"。 具有状态列的所有记录的通知注册接收通知 你可以通过指定的 SQL 语句来实现**NotificationStatement**绑定属性。 适配器客户端收到通知后，它可以包含执行 SQL Server 数据库上的任何后续任务的逻辑。 在此示例中，为简单起见，适配器客户端列出的所有记录表中将状态列设为"0"。  

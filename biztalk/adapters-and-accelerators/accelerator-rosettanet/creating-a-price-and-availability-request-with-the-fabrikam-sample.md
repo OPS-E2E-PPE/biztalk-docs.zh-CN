@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965915"
 ---
 # <a name="creating-a-price-and-availability-request-with-the-fabrikam-sample"></a>创建具有 Fabrikam 示例的价格和可用性请求
 在此步骤中，将使用 LOBWebApplication 工具创建 3A2 价格与可用性请求。  

@@ -1,18 +1,18 @@
 ---
-title: "管理 A4SWIFT 数据库中的 Bicplus 表 |Microsoft 文档"
-ms.custom: 
+title: 管理 A4SWIFT 数据库中的 Bicplus 表 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Bank Identifier Code (BIC), Bicplus table
 - A4SWIFT database, Bicplus table
 - Bicplus table
 ms.assetid: a255cdea-5ed4-4481-97f1-8425877a76d6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962099"
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>管理 A4SWIFT 数据库中的 Bicplus 表
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]使用 BIC 条目的表来执行 BIC 验证。 此表可以是中的 Bicplus 表[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库或自定义数据库表。  

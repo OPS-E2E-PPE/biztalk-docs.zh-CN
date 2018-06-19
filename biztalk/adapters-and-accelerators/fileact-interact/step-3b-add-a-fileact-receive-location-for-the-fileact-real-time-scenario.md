@@ -1,14 +1,14 @@
 ---
-title: "步骤 3B： 添加 FILEACT 接收位置 FileAct 实时方案 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3B： 添加 FILEACT 接收位置 FileAct 实时方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7e086c86-1525-4cef-b7e5-a66e14bd8d4f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965819"
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario"></a>步骤 3B： 添加 FILEACT 接收位置 FileAct 实时方案
 在开始此步骤之前，必须完成[步骤 3A: FileAct 实时方案中添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)。  

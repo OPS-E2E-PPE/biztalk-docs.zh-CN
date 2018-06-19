@@ -1,17 +1,17 @@
 ---
-title: "从 SAP 使用 BizTalk Server 的事务上下文中接收到的 Idoc |Microsoft 文档"
-ms.custom: 
+title: 从 SAP 使用 BizTalk Server 的事务上下文中接收到的 Idoc |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - transactional context
 - IDOCs, receiving in a transactional context using BizTalk Server
 ms.assetid: 6a01bb82-7292-4b70-8ad7-996d389a9365
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25962739"
 ---
 # <a name="receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server"></a>从 SAP 使用 BizTalk Server 的事务上下文中接收到的 Idoc
 在事务上下文中接收 IDOC 是类似于在事务上下文中接收 tRFCs。 在这种情况下，SAP 系统从收到的 IDOC 所包含的作为的一部分的 TID  *\<TransactionalRfcOperationIdentifier\>* 元素。 适配器的情况下，此 TID 保留在 SQL 数据库。 如果将 IDOC 发送的 SAP 系统的 ABAP 代码具有"提交的工作"语句，TID 从数据库中删除 SQL 后响应发送回 SAP 系统。  

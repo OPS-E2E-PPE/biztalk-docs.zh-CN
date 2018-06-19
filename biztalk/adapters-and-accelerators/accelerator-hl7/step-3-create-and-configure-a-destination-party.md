@@ -1,14 +1,14 @@
 ---
-title: "步骤 3： 创建并配置目标方 |Microsoft 文档"
-ms.custom: 
+title: 步骤 3： 创建并配置目标方 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8746f115-9f69-4593-9943-9ccda45cd900
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961339"
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a>步骤 3： 创建并配置目标方
 在此步骤中，你可以创建和配置创建批次方案的目标方。 你还选择的消息，[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]批处理和批处理计划，该方的定义。 计划批发送时间为 1 小时后将文件复制到的文件夹。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]为频率为一小时之后接收任何消息进行批处理。  

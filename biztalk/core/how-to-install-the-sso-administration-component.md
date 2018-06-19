@@ -1,15 +1,15 @@
 ---
-title: "安装 SSO 管理组件 |Microsoft 文档"
-description: "若要获取 SSO 管理的自定义安装并且使用 ssomanage 或 SSO 管理 BizTalk Server 中输入服务器名称"
-ms.custom: 
+title: 安装 SSO 管理组件 |Microsoft 文档
+description: 若要获取 SSO 管理的自定义安装并且使用 ssomanage 或 SSO 管理 BizTalk Server 中输入服务器名称
+ms.custom: ''
 ms.date: 09/27/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 096839e2-7129-498d-92ee-5afeea8dbe0d
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/28/2017
+ms.locfileid: "22317982"
 ---
 # <a name="how-to-install-the-sso-administration-component"></a>如何安装 SSO 管理组件
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/28/2017
   
 ## <a name="enter-the-server-using-the-command-line-tool"></a>输入使用命令行工具的服务器  
   
-1.  依次单击 **“开始”**和 **“运行”**，然后键入 **cmd**。  
+1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
   
 2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是`\Program Files\Common Files\Enterprise Single Sign-On`。  
   

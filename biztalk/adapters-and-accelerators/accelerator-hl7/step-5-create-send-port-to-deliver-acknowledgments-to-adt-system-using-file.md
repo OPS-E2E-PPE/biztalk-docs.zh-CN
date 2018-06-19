@@ -1,11 +1,11 @@
 ---
-title: "步骤 5： 创建发送端口将确认传递到使用文件适配器的 ADT 系统 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 创建发送端口将确认传递到使用文件适配器的 ADT 系统 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - end-to-end tutorial, send ports
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - acknowledgements, send ports
 - send ports, creating
 ms.assetid: 565a2adf-fd86-46e3-8035-7e4748aefffc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961835"
 ---
 # <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>步骤 5： 创建发送端口将确认传递到使用文件适配器的 ADT 系统
 在此步骤中，你可以创建发送端口以生成使用了文件适配器的确认。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/28/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**目标文件夹**|浏览到 **\<** *驱动器***:\>files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端的快捷键Tutorial\Tutorial_sendAck_ADT**。|  
-    |**文件名**|类型**%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
+    |**文件名**|类型 **%MessageID%.txt** （替换为.xml 扩展名.txt 扩展名）。|  
   
 5.  在发送端口属性对话框中，为**发送管道**，选择**BTAHL72XPipelines.BTAHL72XSendPipeline**。  
   

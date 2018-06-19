@@ -1,14 +1,14 @@
 ---
-title: "如何捕获泄露内存的进程内存转储 |Microsoft 文档"
-ms.custom: 
+title: 如何捕获泄露内存的进程内存转储 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67404919-33a6-40ac-b1c4-09841db12fcf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969123"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>如何捕获泄露内存的进程内存转储
 如果 BizTalk 进程 BTSNTSvc.exe 无法释放不再需要的内存，因此会随着时间减少可用内存量，则定义为内存泄漏。 可以查看下的值来确定进程的内存使用率**内存使用**列**进程**选项卡中可找到**任务管理器**。 如果进程继续随时间消耗内存而不释放内存，系统的整体性能将受到不良影响。  

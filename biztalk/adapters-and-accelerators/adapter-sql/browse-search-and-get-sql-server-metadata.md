@@ -1,14 +1,14 @@
 ---
-title: "浏览、 搜索和获取 SQL Server 元数据 |Microsoft 文档"
-ms.custom: 
+title: 浏览、 搜索和获取 SQL Server 元数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 368dd5ca-456c-4cae-9e85-bcf504c4e7ed
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963939"
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a>浏览、 搜索和获取 SQL Server 元数据
 元数据，[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]从 SQL Server 数据库的图面描述用于与 SQL Server 数据库使用适配器进行通信的消息结构。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]为检索元数据支持两个接口。  

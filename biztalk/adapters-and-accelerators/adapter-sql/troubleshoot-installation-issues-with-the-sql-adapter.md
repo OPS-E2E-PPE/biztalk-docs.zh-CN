@@ -1,14 +1,14 @@
 ---
-title: "使用 SQl 适配器进行安装问题故障排除 |Microsoft 文档"
-ms.custom: 
+title: 使用 SQl 适配器进行安装问题故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48778158-6064-4731-be72-1af855ebe373
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963707"
 ---
 # <a name="troubleshoot-installation-issues-with-the-sql-adapter"></a>解决 SQl 适配器的安装问题
 > [!IMPORTANT]

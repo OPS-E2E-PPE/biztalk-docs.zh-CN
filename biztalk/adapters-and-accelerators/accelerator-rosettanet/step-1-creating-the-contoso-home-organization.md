@@ -1,18 +1,18 @@
 ---
-title: "步骤 1： 创建 Contoso 主页组织 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建 Contoso 主页组织 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - double action tutorial, creating home organizations
 - creating, home organizations
 - home organizations, creating
 ms.assetid: 0e7a53b9-ae59-4cd1-88bd-0ada7e65acba
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25961443"
 ---
 # <a name="step-1-creating-the-contoso-home-organization"></a>步骤 1： 创建 Contoso 主页组织
 在此步骤中，将使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 管理控制台创建 Contoso 本组织。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/28/2017
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**CONTOSO**。|  
-    |**GBI**|类型**123456789**。 **注意：**如果你已在同一台计算机上运行环回教程，你将需要输入 GBI 将不同于"123456789"的值。|  
+    |**GBI**|类型**123456789**。 **注意：** 如果你已在同一台计算机上运行环回教程，你将需要输入 GBI 将不同于"123456789"的值。|  
     |**本组织分类**|选择**制造商**从下拉列表。|  
   
 3.  单击**联系人属性**选项卡，然后执行以下操作：  

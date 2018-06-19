@@ -1,14 +1,14 @@
 ---
-title: "步骤 5： 配置贸易合作伙伴网页 |Microsoft 文档"
-ms.custom: 
+title: 步骤 5： 配置贸易合作伙伴网页 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 38c3054d-932a-42b6-a821-8b30604d8426
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9aaed443492b74729171fef79c634bff561af929
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23980765"
 ---
 # <a name="step-5-configure-the-trading-partner-web-pages"></a>步骤 5： 配置贸易合作伙伴网页
 ![步骤 5 11](../core/media/tut-step5-of-11.gif "Tut_Step5_of_11")  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/03/2017
   
 3.  在**添加脚本映射**对话框框中，输入`BtsHttpReceive.dll`中**请求路径**字段。  
   
-4.  在**可执行文件**字段中，单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive。 选择**BtsHttpReceive.dll**，然后单击**确定**。  
+4.  在**可执行文件**字段中，单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive。 选择**BtsHttpReceive.dll**，然后单击**确定**。  
   
 5.  输入`BizTalk HTTP Receive`中`Name`字段，然后再单击**请求限制**。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/03/2017
   
 1.  在 IIS 管理器中，右键单击**应用程序池**和选择**添加应用程序池**。  
   
-2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择**.NET Framework V4.0.30210**中**.NET framework 版本**下拉列表。 单击 **“确定”**。  
+2.  在**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表。 单击 **“确定”**。  
   
     > [!NOTE]
     >  根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  仅当希望让 IIS 在 64 位计算机上以 32 位模式运行时，才需要执行此步骤。  
   
-5.  选择**标识**，然后单击**省略号 （...）**按钮。  
+5.  选择**标识**，然后单击**省略号 （...）** 按钮。  
   
 6.  在**应用程序池标识**对话框中，选择**自定义帐户**，然后单击**设置**。  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/03/2017
   
 10. 在**选择应用程序池**对话框中，选择**BizTalkAppPool**单击**确定**。  
   
-11. 单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]为 SDK\AS2 Tutorial\Fabrikam**物理路径**。  
+11. 单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]为 SDK\AS2 Tutorial\Fabrikam**物理路径**。  
   
 12. 单击**测试设置**并验证没有显示在错误**测试连接**对话框。 单击 **“关闭”**，然后单击 **“确定”**。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/03/2017
     > [!NOTE]
     >  BizTalkAppPool 是以前在配置 Fabrikam 网页时创建的，并且应设置成管理员组成员的用户标识。  
   
-4.  单击**省略号 （...）**按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]为 HttpReceive**物理路径**。  
+4.  单击**省略号 （...）** 按钮，然后浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]为 HttpReceive**物理路径**。  
   
 5.  单击**测试设置**并验证没有显示在错误**测试连接**对话框。 单击 **“关闭”**，然后单击 **“确定”**。  
   

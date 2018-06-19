@@ -1,11 +1,11 @@
 ---
-title: "在发送端口上设置筛选器表达式 |Microsoft 文档"
-ms.custom: 
+title: 在发送端口上设置筛选器表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - send ports, context properties
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - context properties, filtering
 - filtering, context properties
 ms.assetid: 48c7c83b-9464-4ed9-bd8d-cf5b75e16702
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22206077"
 ---
 # <a name="setting-filter-expressions-on-send-ports"></a>发送端口上设置筛选器表达式
 您设置上下文属性筛选器表达式中发送端口来控制端口所发送的内容。 提供了灵活地如何筛选属性的运算符的数量，可以设置筛选器表达式 (存在的相等运算符或不等、，大于、 大于或等于、 小于且小于或等于)。  

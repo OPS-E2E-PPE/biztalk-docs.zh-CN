@@ -1,18 +1,18 @@
 ---
-title: "步骤 1： 创建证书颁发机构 |Microsoft 文档"
-ms.custom: 
+title: 步骤 1： 创建证书颁发机构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, creating
 - double action tutorial, creating certificates
 - creating, certificates
 ms.assetid: b6ecd534-6b03-4336-8337-33ec18a0802a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25966227"
 ---
 # <a name="step-1-creating-a-certification-authority"></a>步骤 1： 创建证书颁发机构
 在本主题中，你将安装证书服务 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] 组件。 并使用该组件生成在 Contoso 组织与 Fabrikam 组织之间进行安全通信所需的证书。 每个贸易合作伙伴都将拥有一个专用的通信加密证书和一个用于标识身份的专用签名证书。 此外，合作伙伴将彼此共享公钥证书，以便在实现 3A2 合作伙伴流程接口 (PIP) 时实现安全通信。  
@@ -91,7 +92,7 @@ ms.lasthandoff: 11/28/2017
   
 2.  在 Default.asp 页上，单击**下载 CA 证书、 证书链或 CRL**。  
   
-3.  请确保**当前 [Contoso FabrikamCA]**中选择**CA 证书**列表，，然后单击**下载 CA 证书**。  
+3.  请确保**当前 [Contoso FabrikamCA]** 中选择**CA 证书**列表，，然后单击**下载 CA 证书**。  
   
 4.  将该证书保存为 Contoso 和 Fabrikam 计算机上的 C:\Certs\Contoso-FabrikamCA.cer。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  在 Contoso FabrikamCA 属性对话框中，在**策略模块**选项卡上，单击**属性**。  
   
-4.  在属性对话框中，选择**，按照中的证书模板设置**，然后单击**确定**。  
+4.  在属性对话框中，选择 **，按照中的证书模板设置**，然后单击**确定**。  
   
 5.  单击**确定**以关闭 Contoso FabrikamCA 对话框。  
   

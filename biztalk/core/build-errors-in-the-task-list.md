@@ -1,17 +1,17 @@
 ---
-title: "生成任务列表中的错误 |Microsoft 文档"
-ms.custom: 
+title: 生成任务列表中的错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building, errors
 - errors, building
 ms.assetid: 05b36511-3031-4e13-ac2f-bfdbec0f48cb
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25967219"
 ---
 # <a name="build-errors-in-the-task-list"></a>生成任务列表中的错误
 在生成项目或解决方案时，其结果将显示在“输出”窗口中，而各个错误和警告将显示在任务列表中。  

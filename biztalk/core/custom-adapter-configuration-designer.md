@@ -1,14 +1,14 @@
 ---
-title: "自定义适配器配置设计器 |Microsoft 文档"
-ms.custom: 
+title: 自定义适配器配置设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9b231c3-3948-4db8-b4f0-d9c21c31b168
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970371"
 ---
 # <a name="custom-adapter-configuration-designer"></a>自定义适配器配置设计器
 您需要在 .NET 类库中生成自定义设计器。 您既可将它们合并到适配器的 DLL，也可生成单独的 DLL。 生成设计器程序集后，您必须通过修饰来引用该程序集，如同引用说明或类别一样。 该引用包括一个程序集规范和一个要使用的完全限定类名。  

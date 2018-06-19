@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25965595"
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT 清理工具
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]清理工具使你可以准备服务器具有[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]上安装的新安装[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]。 该工具中删除协议、 部门和业务规则引擎 (BRE) 策略，如 A4SWIFT 项目，并取消部署程序集。 运行此工具使你可以避免手动删除许多 A4SWIFT 项目，并用于解决正在取消部署可能会从其他程序集引用的程序集的问题。  

@@ -1,14 +1,14 @@
 ---
-title: "规划高可用性和灾难恢复 |Microsoft 文档"
-ms.custom: 
+title: 规划高可用性和灾难恢复 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a7efba36-6d9c-4ae0-a4f5-893eb5d62a05
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22302021"
 ---
 # <a name="planning-for-high-availability-and-disaster-recovery"></a>规划高可用性和灾难恢复
 使用开发的解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常是执行关键任务的企业级应用程序需要最高的可用性。 这些解决方案都放到生产环境后，可以用每秒千美元估算停机时间与关联的成本。 为此，你应采用的特定策略，以便最大化的高可用性和灾难恢复功能附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]依赖软件和支持所需的硬件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。  

@@ -1,14 +1,14 @@
 ---
-title: "插入、 更新、 删除或选择上的接口表以及与 Oracle E-business Suite 的界面视图 |Microsoft 文档"
-ms.custom: 
+title: 插入、 更新、 删除或选择上的接口表以及与 Oracle E-business Suite 的界面视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 85f42431-80fb-49be-86d1-bb21eee5e4f5
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968011"
 ---
 # <a name="insert-update-delete-or-select-on-interface-tables-and-interface-views-with-oracle-e-business-suite"></a>插入、 更新、 删除或选择上的接口表以及与 Oracle E-business Suite 的界面视图
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]一组标准如 Insert 操作的图面，接口上的更新、 删除、 选择表和视图。 本主题将说明了如何使用适配器执行这些操作。 有关如何适配器支持这些操作的详细信息，请参阅[接口表和接口视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[插入、 更新、 删除和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  

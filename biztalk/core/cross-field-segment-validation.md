@@ -1,14 +1,14 @@
 ---
-title: "交叉字段段验证 |Microsoft 文档"
-ms.custom: 
+title: 交叉字段段验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e757b4f-71fe-44d5-9580-c8b1c8eb2366
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25969395"
 ---
 # <a name="cross-field-segment-validation"></a>交叉字段段验证
 EDI 接收管道和 EDI 发送管道可对 X12 编码消息中的事务集数据元素执行跨字段/段验证。 在 X12 中这种验证称为关系条件。 跨字段验证通过批注表示，因此它与 EDI 验证有关。  

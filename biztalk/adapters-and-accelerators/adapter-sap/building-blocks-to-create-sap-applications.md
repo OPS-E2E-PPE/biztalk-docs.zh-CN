@@ -1,18 +1,18 @@
 ---
-title: "若要创建的 SAP 应用程序的构建基块 |Microsoft 文档"
-ms.custom: 
+title: 若要创建的 SAP 应用程序的构建基块 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - design-time tasks
 - run-time tasks
 - developing, fundamentals of (BizTalk applications)
 ms.assetid: 591a5597-5e7d-44b0-8bee-e1c987c5e6c3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22218165"
 ---
 # <a name="building-blocks-to-create-sap-applications"></a>若要创建的 SAP 应用程序的构建基块
 对 SAP 系统使用执行操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]涉及两个组的活动： 设计时活动和运行时活动。 若要通过使用执行 SAP 系统上的操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须执行一组使用的设计时和运行时任务[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]分别管理控制台。 本部分概述了这些任务。 本部分中，用于演示如何执行对 SAP 系统使用的特定操作的所有主题[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，这些高级任务进行建模。  

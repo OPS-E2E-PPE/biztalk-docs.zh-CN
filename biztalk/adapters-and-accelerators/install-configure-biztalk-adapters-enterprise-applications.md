@@ -16,6 +16,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "23450526"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a>安装和配置 Microsoft BizTalk 适配器为企业应用程序 
   
@@ -344,7 +345,7 @@ ms.lasthandoff: 03/28/2018
 -   D5500900K - 测试日期 2  
   
 #### <a name="customize-the-jdeinteropini-file"></a>自定义 jdeinterop.ini 文件  
- 博士 Edwards OneWorld XE 连接器中的类 Connector.jar 和 Kernel.jar 要求您使用 jdeinterop.ini 配置文件。 此文件由 JD Edwards OneWorld 软件定义，并使用其术语。 博士 Edwards 互操作性指南版本 OneWorld 可能提供有关的用途和术语的此文件的详细信息。 没有中的示例 jdeinterop.ini 文件*< Adapter_Installation > \config\jde*。  
+ 博士 Edwards OneWorld XE 连接器中的类 Connector.jar 和 Kernel.jar 要求您使用 jdeinterop.ini 配置文件。 此文件由 JD Edwards OneWorld 软件定义，并使用其术语。 博士 Edwards 互操作性指南版本 OneWorld 可能提供有关的用途和术语的此文件的详细信息。 没有中的示例 jdeinterop.ini 文件 *< Adapter_Installation > \config\jde*。  
   
 更新以匹配你在中定义的参数值的 jdeinterop.ini**传输属性**屏幕。 如果它们的参数兼容，则多个 JD Edwards OneWorld 逻辑系统可以共享同一个 jdeinterop.ini 文件。 通常情况下，如果两个逻辑系统指向两个不同的博士 Edwards OneWorld 计算机，则他们需要 jdeinterop.ini 的两个不同的副本。  
   
@@ -402,7 +403,7 @@ ms.lasthandoff: 03/28/2018
 ### <a name="understand-jdeinteropini"></a>了解 jdeinterop.ini  
  Connector.jar 和 Kernel.jar 中的 JD Edwards EnterpriseOne 连接器类需要你使用名为 jdeinterop.ini 的配置文件。 此文件由博士 Edwards EnterpriseOne 软件定义，并使用其术语。 有关的用途和术语的此文件的详细信息，请参阅博士 Edwards 互操作性指南。 还有一个示例 jdeinterop.ini 文件中： 程序 Files\ Microsoft 企业 Applications\ J.D.BizTalk 适配器 Edwards EnterpriseOne(r)\config.  
   
- 建议不要因为它与交互手动编辑此文件**传输属性**发送端口-例如标记为这些字段的对话框中**< 由 BizTalk 配置\>**.  
+ 建议不要因为它与交互手动编辑此文件**传输属性**发送端口-例如标记为这些字段的对话框中 **< 由 BizTalk 配置\>**.  
   
 ## <a name="peoplesoft-enterprise"></a>PeopleSoft Enterprise  
 本部分包含有关与 BizTalk Server PeopleSoft 企业使用 Microsoft BizTalk 适配器的密钥信息。
@@ -846,20 +847,20 @@ C:\TIBCO\TIBRV\BIN > gacutil /i TIBCO.Rendezvous.dll
   
  Windows 事件跟踪包括以下三个组件：  
   
-* **控制器应用程序：**激活和停用提供程序。 例如，tracelog.exe 或 logman.exe。  
+* **控制器应用程序：** 激活和停用提供程序。 例如，tracelog.exe 或 logman.exe。  
   
     设置 PATH 环境变量以指向 tracelog.exe 的位置。 这将确保该 BTA < 适配器名称\>跟踪调用可以在系统中找到 tracelog.exe。 默认情况下，BTA < 适配器名称\>跟踪，则搜索当前路径。  
   
     > [!NOTE]
     >  tracelog.exe 则可从 Microsoft SDK，并且适用于企业应用程序提供 Microsoft BizTalk 适配器的命令。 若要使用 logman.exe，请参阅 logman 文档。  
   
-* **使用者应用程序：**读取记录的事件。  
+* **使用者应用程序：** 读取记录的事件。  
   
     为了让使用者应用程序能够读取 .etl 文件中的事件，Windows 事件跟踪必须将其转储到该文件中。 通常，当控制器停用跟踪时执行此操作。  
   
     若要使用使用者应用程序而无需停用跟踪，控制器必须激活跟踪与实时选项， **< 实时\> =-rt**。  
   
-* **提供程序：**用于提供事件。  
+* **提供程序：** 用于提供事件。  
   
     每个适配器包括五个不同的提供程序。 它们在 Windows Management Instrumentation (WMI) 中进行注册。 若要在根 \WMI\EventTrace 路径中找到已注册的提供程序，您可以使用诸如 WMI CIM Studio 之类的工具。  
   
@@ -894,15 +895,15 @@ BTA<Adapter Name>Trace <Trace element> -stop
   
  **-管理**  
   
- **-启动、-停止：**激活或停用该提供程序。  
+ **-启动、-停止：** 激活或停用该提供程序。  
   
- **-cir < MB\>:**大小和类型的文件。 **-cir** 是圆形文件。 **< MB\>:**大小以兆字节为单位。  
+ **-cir < MB\>:** 大小和类型的文件。 **-cir** 是圆形文件。 **< MB\>:** 大小以兆字节为单位。  
   
- **-seq < MB\>:**大小和类型的文件。 **-seq** 是连续的文件。 **< MB\>:**大小以兆字节为单位。  
+ **-seq < MB\>:** 大小和类型的文件。 **-seq** 是连续的文件。 **< MB\>:** 大小以兆字节为单位。  
   
- **-rt:**上设置的实时模式。  
+ **-rt:** 上设置的实时模式。  
   
- **日志文件：**日志文件的名称 （c:\rtlog.etl 是默认值）。  
+ **日志文件：** 日志文件的名称 （c:\rtlog.etl 是默认值）。  
   
  例如：  
   

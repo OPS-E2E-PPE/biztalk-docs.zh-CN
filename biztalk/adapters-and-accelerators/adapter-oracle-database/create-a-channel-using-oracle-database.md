@@ -1,11 +1,11 @@
 ---
-title: "创建一个通道，使用 Oracle 数据库 |Microsoft 文档"
-ms.custom: 
+title: 创建一个通道，使用 Oracle 数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - creating a channel
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - how to, create a channel
 - channel programming, creating a channel
 ms.assetid: a30156a0-5a5a-4418-be17-2e23c3716fc1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25963675"
 ---
 # <a name="create-a-channel-using-oracle-database"></a>创建一个通道，使用 Oracle 数据库
 在 WCF 通道模型中，调用对 Oracle 数据库的操作并通过交换使用 SOAP 消息接收轮询查询的结果[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]通过 WCF 通道。  

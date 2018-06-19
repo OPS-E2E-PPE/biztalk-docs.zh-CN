@@ -1,14 +1,14 @@
 ---
-title: "如何创建属性架构 |Microsoft 文档"
-ms.custom: 
+title: 如何创建属性架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24086dea-62b8-4ef6-8af8-eb4ab7c3c018
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25970475"
 ---
 # <a name="how-to-create-property-schemas"></a>如何创建属性架构
 如果选择将字段升级为属性字段，则需要首先定义属性架构。 此属性架构指定了一个非结构化的字段集合，您可以将与属性架构相关联的架构所定义的实例消息中的字段升级到该字段集合中。  

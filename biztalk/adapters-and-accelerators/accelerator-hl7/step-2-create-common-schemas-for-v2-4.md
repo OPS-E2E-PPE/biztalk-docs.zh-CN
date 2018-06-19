@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960707"
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a>步骤 2： 为 V2.4 创建通用架构
 V2.4 架构是经常引用的架构，用于验证查询和响应消息实例。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25960395"
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>步骤 1： 创建和部署常见标头和确认架构
 使用标头架构来验证消息实例的标头 （MSH 段）。 确认架构用于生成消息实例确认。 跨所有 HL7 架构版本，此过程是公共的。  

@@ -1,12 +1,13 @@
 ---
 redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
-redirect_document_id: True
+redirect_document_id: true
 ROBOTS: NOINDEX
 ms.openlocfilehash: 72cdd3553289df39442b71730a61e3271db381e7
 ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013140"
 ---
 # <a name="how-to-set-send-pipelines-for-tibco-rendezvous"></a>如何设置 TIBCO Rendezvous 的发送管道
 Microsoft BizTalk Adapter for TIBCO Rendezvous 要求您分别选择用于发送和接收管道的 XMLTransmit 和 XMLReceive。  

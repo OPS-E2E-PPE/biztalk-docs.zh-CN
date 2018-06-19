@@ -1,14 +1,14 @@
 ---
-title: "有关 TIBCO 会合单一登录和 BizTalk 适配器 |Microsoft 文档"
-ms.custom: 
+title: 有关 TIBCO 会合单一登录和 BizTalk 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52e698bb-38ba-4a12-b15a-d1581061d62f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24013436"
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-tibco-rendezvous"></a>TIBCO Rendezvous 的单一登录和 BizTalk 适配器
 

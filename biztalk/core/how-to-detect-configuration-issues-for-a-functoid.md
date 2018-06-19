@@ -1,14 +1,14 @@
 ---
-title: "如何为 Functoid 检测配置问题 |Microsoft 文档"
-ms.custom: 
+title: 如何为 Functoid 检测配置问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 32afc333-934c-4ffb-b1b5-61af07157200
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25968963"
 ---
 # <a name="how-to-detect-configuration-issues-for-a-functoid"></a>如何检测 Functoid 的配置问题
 使用映射时，您可能会遇到 functoid 和/或链接的配置问题。 BizTalk 映射器使用可视化效果机制来帮助快速识别与 functoid 配置相关的问题。 此视觉指示将呈现为 functoid 图标的警告批注 (有关例如![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense")) 的关系视图中。 本主题提供有关如何检测 functoid 配置问题的信息。  

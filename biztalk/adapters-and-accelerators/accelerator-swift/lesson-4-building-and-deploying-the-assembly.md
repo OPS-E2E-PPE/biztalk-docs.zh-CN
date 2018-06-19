@@ -1,11 +1,11 @@
 ---
-title: "第 4 课： 构建和部署程序集 |Microsoft 文档"
-ms.custom: 
+title: 第 4 课： 构建和部署程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - building assemblies
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assemblies, building
 - assemblies, deploying
 ms.assetid: 58397c35-6048-4ac9-a8b8-a528dd1cb82a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "25961923"
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>第 4 课： 构建和部署程序集
 在本课程中，你可以生成和部署此项目以生成该程序集包含你在前面的课程中创建的架构。 此任务可确保到目前为止创建的工作中没有任何编译错误。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 01/17/2018
   
 1.  单击**视图**，然后单击**BizTalk 资源管理器**。  
   
-2.  展开**程序集**节点，并确认**SWIFTSchemas (1.0.0.0)**出现在列表中。  
+2.  展开**程序集**节点，并确认**SWIFTSchemas (1.0.0.0)** 出现在列表中。  
   
      如果 SWIFTSchemas 出现在列表中，程序集成功部署并可以引用和使用从其他[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]项目。  
   
