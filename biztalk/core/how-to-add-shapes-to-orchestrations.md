@@ -1,11 +1,11 @@
 ---
-title: "如何将形状添加到业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何将形状添加到业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shapes, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Message Assignment shape [Orchestration Designer]
 - Scope shape [Orchestration Designer]
 ms.assetid: d39eb12c-cdc6-4918-93d9-536db1dfb889
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246949"
 ---
 # <a name="how-to-add-shapes-to-orchestrations"></a><span data-ttu-id="e57fc-102">如何将形状添加到业务流程</span><span class="sxs-lookup"><span data-stu-id="e57fc-102">How to Add Shapes to Orchestrations</span></span>
 <span data-ttu-id="e57fc-103">本部分介绍在业务流程中添加和删除形状的过程。</span><span class="sxs-lookup"><span data-stu-id="e57fc-103">This section describes the procedures for adding and removing shapes in your orchestration.</span></span> <span data-ttu-id="e57fc-104">有关可用的形状的详细信息，请参阅[Orchestration 形状](../core/orchestration-shapes.md)。</span><span class="sxs-lookup"><span data-stu-id="e57fc-104">For more information about the available shapes, see [Orchestration Shapes](../core/orchestration-shapes.md).</span></span>  

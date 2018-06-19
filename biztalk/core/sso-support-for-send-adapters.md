@@ -1,14 +1,14 @@
 ---
-title: "发送适配器的 SSO 支持 |Microsoft 文档"
-ms.custom: 
+title: 发送适配器的 SSO 支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45dc2597-0036-4444-8b35-d18621b003d8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278429"
 ---
 # <a name="sso-support-for-send-adapters"></a><span data-ttu-id="36eef-102">SSO 支持个发送适配器</span><span class="sxs-lookup"><span data-stu-id="36eef-102">SSO Support for Send Adapters</span></span>
 <span data-ttu-id="36eef-103">使用企业单一登录 (SSO) 提供的服务，可以跨本地、网络和域边界来存储和传输加密的用户凭据。</span><span class="sxs-lookup"><span data-stu-id="36eef-103">Enterprise Single Sign-On (SSO) provides services to store and transmit encrypted user credentials across local, network, and domain boundaries.</span></span> <span data-ttu-id="36eef-104">在您创建某一传输适配器时，可以充分利用 SSO API 来处理该传输适配器用于访问后端应用程序的用户凭据。</span><span class="sxs-lookup"><span data-stu-id="36eef-104">When you create a transport adapter, you can leverage SSO APIs to handle the user credentials that a transport adapter uses to access back-end applications.</span></span>  

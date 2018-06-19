@@ -1,14 +1,14 @@
 ---
-title: "如何添加值映射到图 （拼合） Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何添加值映射到图 （拼合） Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 00a447c3-58d0-42ab-a5c4-417ee7800a6b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247581"
 ---
 # <a name="how-to-add-value-mapping-flattening-functoids-to-a-map"></a><span data-ttu-id="c7392-102">如何向映射添加“值映射（平展）”Functoid</span><span class="sxs-lookup"><span data-stu-id="c7392-102">How to Add Value Mapping (Flattening) Functoids to a Map</span></span>
 <span data-ttu-id="c7392-103">**值映射 （平展）** functoid，可通过将多个记录转换为单个记录平展输入的实例消息的一部分。</span><span class="sxs-lookup"><span data-stu-id="c7392-103">The **Value Mapping (Flattening)** functoid enables you to flatten a portion of an input instance message by converting multiple records into a single record.</span></span> <span data-ttu-id="c7392-104">在转换 Microsoft Commerce Server 目录时通常执行此操作。</span><span class="sxs-lookup"><span data-stu-id="c7392-104">This is a common operation in converting Microsoft Commerce Server catalogs.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  <span data-ttu-id="c7392-118">第二个输入参数**值映射 （平展）** functoid 也可以从另一个 functoid 输出其左侧。</span><span class="sxs-lookup"><span data-stu-id="c7392-118">The second input parameter to the **Value Mapping (Flattening)** functoid can also be from the output of another functoid to its left.</span></span> <span data-ttu-id="c7392-119">创建链接表示通过将一个相关 functoid 拖到其他相关 functoid 输入此类源。</span><span class="sxs-lookup"><span data-stu-id="c7392-119">Create the links the represent such sources of input by dragging one of the relevant functoids to the other relevant functoid.</span></span>  
   
-5.  <span data-ttu-id="c7392-120">若要使用输出参数从**值映射 （平展）** functoid，通过拖动创建一条输出链接**值映射 （平展）**记录或字段在目标架构中，或通过 functoid拖动到目标架构中的记录字段**值映射 （平展）** functoid。</span><span class="sxs-lookup"><span data-stu-id="c7392-120">To use the output parameter from the **Value Mapping (Flattening)** functoid, create an output link by dragging the **Value Mapping (Flattening)** functoid to a record or field in the destination schema, or by dragging a record field in the destination schema to the **Value Mapping (Flattening)** functoid.</span></span>  
+5.  <span data-ttu-id="c7392-120">若要使用输出参数从**值映射 （平展）** functoid，通过拖动创建一条输出链接**值映射 （平展）** 记录或字段在目标架构中，或通过 functoid拖动到目标架构中的记录字段**值映射 （平展）** functoid。</span><span class="sxs-lookup"><span data-stu-id="c7392-120">To use the output parameter from the **Value Mapping (Flattening)** functoid, create an output link by dragging the **Value Mapping (Flattening)** functoid to a record or field in the destination schema, or by dragging a record field in the destination schema to the **Value Mapping (Flattening)** functoid.</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="c7392-121">其他 functoid 的输出与**值映射 （平展）** functoid 可以用作输入另一个 functoid。</span><span class="sxs-lookup"><span data-stu-id="c7392-121">As with other functoids, the output of the **Value Mapping (Flattening)** functoid can be used as input to another functoid.</span></span>  

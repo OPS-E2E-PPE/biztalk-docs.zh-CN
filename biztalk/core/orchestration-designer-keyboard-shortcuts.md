@@ -1,17 +1,17 @@
 ---
-title: "业务流程设计器键盘快捷键 |Microsoft 文档"
-ms.custom: 
+title: 业务流程设计器键盘快捷键 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - keyboard shortcuts, Orchestration Designer
 - Orchestration Designer, keyboard shortcuts
 ms.assetid: 8faccbb0-8796-4caf-b6b7-45be42c1e829
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263293"
 ---
 # <a name="orchestration-designer-keyboard-shortcuts"></a><span data-ttu-id="bc904-102">业务流程设计器键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="bc904-102">Orchestration Designer Keyboard Shortcuts</span></span>
 <span data-ttu-id="bc904-103">业务流程设计器设计图面提供了使用键盘的完整辅助功能。</span><span class="sxs-lookup"><span data-stu-id="bc904-103">The Orchestration Designer design surface provides full accessibility using the keyboard.</span></span> <span data-ttu-id="bc904-104">此可访问性开始时打开设计图面上，则你可以在 Visual Studio 中通过选择菜单选项开头**新建**选项**文件**菜单。</span><span class="sxs-lookup"><span data-stu-id="bc904-104">This accessibility begins when you open the design surface, which you can do in Visual Studio by selecting menu options beginning with the **New** option on the **File**menu.</span></span>  

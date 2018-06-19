@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240637"
 ---
 # <a name="error---map-without-any-links-or-constants"></a><span data-ttu-id="95deb-102">错误-映射不含任何链接或常量</span><span class="sxs-lookup"><span data-stu-id="95deb-102">Error - Map Without Any Links or Constants</span></span>
 <span data-ttu-id="95deb-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="95deb-103">**Error Code**</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置传输用于发送端口的高级选项 |Microsoft 文档"
-ms.custom: 
+title: 如何配置传输用于发送端口的高级选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, transport options [send ports]
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - managing [send ports], configuring
 - managing [send ports], transport options
 ms.assetid: b0033e09-3c18-4e53-a470-e12978e61ba1
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250677"
 ---
 # <a name="how-to-configure-transport-advanced-options-for-a-send-port"></a><span data-ttu-id="294b9-102">如何为发送端口配置传输高级选项</span><span class="sxs-lookup"><span data-stu-id="294b9-102">How to Configure Transport Advanced Options for a Send Port</span></span>
 <span data-ttu-id="294b9-103">使用 BizTalk Server 管理控制台来配置用于发送端口的高级选项的传输。</span><span class="sxs-lookup"><span data-stu-id="294b9-103">Use the BizTalk Server Administration console to configure transport advanced options for a send port.</span></span> <span data-ttu-id="294b9-104">这些选项决定发送端口处理消息的方式，如发送消息失败时的重试次数以及该端口的服务时段计划。</span><span class="sxs-lookup"><span data-stu-id="294b9-104">These options determine how messages are handled by the send port, such as the number of times to retry sending messages on message failure and the service window schedule for the port.</span></span>  

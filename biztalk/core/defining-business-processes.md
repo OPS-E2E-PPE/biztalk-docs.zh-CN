@@ -1,14 +1,14 @@
 ---
-title: "定义业务流程 |Microsoft 文档"
-ms.custom: 
+title: 定义业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e5e0fdfe-e298-4f32-a7c5-d081b926a206
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22243269"
 ---
 # <a name="defining-business-processes"></a><span data-ttu-id="c1f9f-102">定义业务流程</span><span class="sxs-lookup"><span data-stu-id="c1f9f-102">Defining Business Processes</span></span>
 <span data-ttu-id="c1f9f-103">解决 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 所涉及的问题时需要在不同系统间交换消息。</span><span class="sxs-lookup"><span data-stu-id="c1f9f-103">The exchange of messages between different systems is a necessary part of solving the problems that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] addresses.</span></span> <span data-ttu-id="c1f9f-104">不过，交换消息的实际目的是根据应用程序定义和执行业务流程。</span><span class="sxs-lookup"><span data-stu-id="c1f9f-104">The real goal, however, is to define and execute business processes based on the applications.</span></span> <span data-ttu-id="c1f9f-105">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 引擎使用业务流程来定义这些业务程序的逻辑。</span><span class="sxs-lookup"><span data-stu-id="c1f9f-105">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine uses orchestrations to define the logic of these business processes.</span></span> <span data-ttu-id="c1f9f-106">另外，它还使用业务规则引擎来创建和评估业务规则组。</span><span class="sxs-lookup"><span data-stu-id="c1f9f-106">To create and evaluate groups of business rules, it uses the Business Rule Engine.</span></span> <span data-ttu-id="c1f9f-107">本部分介绍业务流程和业务规则引擎。</span><span class="sxs-lookup"><span data-stu-id="c1f9f-107">This section describes both orchestrations and the Business Rule Engine.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何使用角色链接向导 |Microsoft 文档"
-ms.custom: 
+title: 如何使用角色链接向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - links [roles]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - role links, Role Link Wizard [Orchestration Designer]
 - links [roles], about links
 ms.assetid: ddc33d87-c08d-4193-9483-4644ef302853
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255853"
 ---
 # <a name="how-to-use-the-role-link-wizard"></a><span data-ttu-id="89400-102">如何使用角色链接向导</span><span class="sxs-lookup"><span data-stu-id="89400-102">How to Use the Role Link Wizard</span></span>
 <span data-ttu-id="89400-103">使用角色链接向导，您可以创建新的角色链接或修改现有的角色链接。</span><span class="sxs-lookup"><span data-stu-id="89400-103">The Role Link Wizard enables you to create a new role link or modify an existing one.</span></span> <span data-ttu-id="89400-104">您可以使用该向导设置或查看角色链接的名称、类型和访问限制，以及组成该角色链接类型的实现角色和使用角色。</span><span class="sxs-lookup"><span data-stu-id="89400-104">You can use it to set or view the name, type, and access restriction of the role link, as well as the implements role and the uses role that compose the role link type.</span></span> <span data-ttu-id="89400-105">若要了解如何角色链接工作，请参阅[在业务流程中使用角色链接](../core/using-role-links-in-orchestrations.md)。</span><span class="sxs-lookup"><span data-stu-id="89400-105">To understand how role links work, see [Using Role Links in Orchestrations](../core/using-role-links-in-orchestrations.md).</span></span>  

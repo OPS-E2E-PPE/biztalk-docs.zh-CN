@@ -1,17 +1,17 @@
 ---
-title: "如何添加 Catch 异常 Block4 |Microsoft 文档"
-ms.custom: 
+title: 如何添加 Catch 异常 Block4 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Catch Exception blocks, adding
 - exception handling, Catch Exception blocks
 ms.assetid: 632fa089-a1af-4126-b32b-68d4d8942387
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246821"
 ---
 # <a name="how-to-add-a-catch-exception-block"></a><span data-ttu-id="618fe-102">如何添加 Catch 异常块</span><span class="sxs-lookup"><span data-stu-id="618fe-102">How to Add a Catch Exception Block</span></span>
 <span data-ttu-id="618fe-103">**捕获异常**块代表一个异常处理程序。</span><span class="sxs-lookup"><span data-stu-id="618fe-103">The **Catch Exception** block represents an exception handler.</span></span> <span data-ttu-id="618fe-104">**捕获异常**块附加到的末尾**作用域**中业务流程设计器形状。</span><span class="sxs-lookup"><span data-stu-id="618fe-104">**Catch Exception** blocks are attached to the end of a **Scope** shape in Orchestration Designer.</span></span> <span data-ttu-id="618fe-105">你可以将作为许多附加**捕获异常**阻止根据你的需要。</span><span class="sxs-lookup"><span data-stu-id="618fe-105">You can attach as many **Catch Exception** blocks as you need.</span></span>  

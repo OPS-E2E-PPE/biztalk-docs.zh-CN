@@ -1,11 +1,11 @@
 ---
-title: "优化服务面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 优化服务面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tuning
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - performance, service solutions
 - service solution tutorial, tuning
 ms.assetid: 55ca4e9f-9f8b-4ef9-9757-0d0edf252504
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286477"
 ---
 # <a name="tuning-the-service-oriented-solution"></a><span data-ttu-id="5c86e-102">优化服务面向解决方案</span><span class="sxs-lookup"><span data-stu-id="5c86e-102">Tuning the Service Oriented Solution</span></span>
 <span data-ttu-id="5c86e-103">业务流程通过业务活动监视 (BAM) API 来收集有关多个应用程序部分的性能信息。</span><span class="sxs-lookup"><span data-stu-id="5c86e-103">The orchestrations collect performance information about many parts of the application through the Business Activity Monitoring (BAM) API.</span></span> <span data-ttu-id="5c86e-104">这些数据对于优化该应用程序可能十分有用。</span><span class="sxs-lookup"><span data-stu-id="5c86e-104">You may find the data helpful in tuning the application.</span></span> <span data-ttu-id="5c86e-105">当然，您也可以使用内置性能计数器。</span><span class="sxs-lookup"><span data-stu-id="5c86e-105">You can also, of course, use the built-in performance counters.</span></span>  

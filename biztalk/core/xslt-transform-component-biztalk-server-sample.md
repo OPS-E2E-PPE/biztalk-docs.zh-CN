@@ -1,11 +1,11 @@
 ---
-title: "XSLT 转换组件 （BizTalk Server 示例） |Microsoft 文档"
-ms.custom: 
+title: XSLT 转换组件 （BizTalk Server 示例） |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - XSLT, examples
 - examples, XSLT
 ms.assetid: 9152e897-4db9-4924-b37e-fd9e908dbef1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25974923"
 ---
 # <a name="xslt-transform-component-biztalk-server-sample"></a><span data-ttu-id="24d87-102">XSLT 转换组件（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="24d87-102">XSLT Transform Component (BizTalk Server Sample)</span></span>
 <span data-ttu-id="24d87-103">XSLT 转换组件示例演示如何编写自定义管道组件以使用 XSLT 转换 XML 消息。</span><span class="sxs-lookup"><span data-stu-id="24d87-103">The XSLT Transform Component sample demonstrates how to write a custom pipeline component to transform an XML message using XSLT.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/28/2017
 2.  <span data-ttu-id="24d87-107">该管道使用 Transform.xsl 将 XML 文档转换为电子邮件消息的 HTML 正文。</span><span class="sxs-lookup"><span data-stu-id="24d87-107">The pipeline transforms the XML document into the HTML body of an e-mail message using Transform.xsl.</span></span>  
   
 ## <a name="where-to-find-this-sample"></a><span data-ttu-id="24d87-108">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="24d87-108">Where to Find This Sample</span></span>  
- <span data-ttu-id="24d87-109">*\<示例路径\>*\Pipelines\XslTransformComponent\\</span><span class="sxs-lookup"><span data-stu-id="24d87-109">*\<Samples Path\>*\Pipelines\XslTransformComponent\\</span></span>  
+ <span data-ttu-id="24d87-109">*\<示例路径\>* \Pipelines\XslTransformComponent\\</span><span class="sxs-lookup"><span data-stu-id="24d87-109">*\<Samples Path\>* \Pipelines\XslTransformComponent\\</span></span>  
   
  <span data-ttu-id="24d87-110">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="24d87-110">The following table shows the files in this sample and describes their purpose.</span></span>  
   
@@ -58,9 +59,9 @@ ms.lasthandoff: 11/28/2017
   
 #### <a name="to-build-and-initialize-this-sample"></a><span data-ttu-id="24d87-139">构建和初始化此示例</span><span class="sxs-lookup"><span data-stu-id="24d87-139">To build and initialize this sample</span></span>  
   
-1.  <span data-ttu-id="24d87-140">在命令窗口中，将目录更改 (**cd)**的以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="24d87-140">In a command window, change directory (**cd)** to the following folder:</span></span>  
+1.  <span data-ttu-id="24d87-140">在命令窗口中，将目录更改 (**cd)** 的以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="24d87-140">In a command window, change directory (**cd)** to the following folder:</span></span>  
   
-     <span data-ttu-id="24d87-141">*\<示例路径\>*\Pipelines\XslTransformComponent</span><span class="sxs-lookup"><span data-stu-id="24d87-141">*\<Samples Path\>*\Pipelines\XslTransformComponent</span></span>  
+     <span data-ttu-id="24d87-141">*\<示例路径\>* \Pipelines\XslTransformComponent</span><span class="sxs-lookup"><span data-stu-id="24d87-141">*\<Samples Path\>* \Pipelines\XslTransformComponent</span></span>  
   
 2.  <span data-ttu-id="24d87-142">运行 Setup.bat 文件，该文件将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="24d87-142">Run the file Setup.bat, which performs the following actions:</span></span>  
   

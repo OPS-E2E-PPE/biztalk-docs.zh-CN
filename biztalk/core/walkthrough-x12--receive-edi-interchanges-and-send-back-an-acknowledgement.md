@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 25d2b5f3-6bd1-413c-aace-e4dd71f80403
-caps.latest.revision: ''
+caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22292541"
 ---
 # <a name="walkthrough-x12-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a><span data-ttu-id="3e969-102">演练 (X12)：接收 EDI 交换并发送回确认信息</span><span class="sxs-lookup"><span data-stu-id="3e969-102">Walkthrough (X12): Receiving EDI Interchanges and Sending Back an Acknowledgement</span></span>
 <span data-ttu-id="3e969-103">本演练将介绍使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为接收 EDI 交换创建解决方案的分步操作过程。</span><span class="sxs-lookup"><span data-stu-id="3e969-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDI interchanges using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="3e969-104">在此解决方案中，EDI 从贸易合作伙伴 (Fabrikam) 发送到另一贸易合作伙伴 (Contoso)。</span><span class="sxs-lookup"><span data-stu-id="3e969-104">In this solution, an EDI interchange is sent from a trading partner, Fabrikam, to another trading partner, Contoso.</span></span>  

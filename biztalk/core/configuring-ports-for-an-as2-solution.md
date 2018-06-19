@@ -1,14 +1,14 @@
 ---
-title: "配置端口以便为 AS2 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 配置端口以便为 AS2 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715358b1-4226-476b-b0de-2b91434aa24c
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22233581"
 ---
 # <a name="configuring-ports-for-an-as2-solution"></a><span data-ttu-id="60236-102">为 AS2 解决方案配置端口</span><span class="sxs-lookup"><span data-stu-id="60236-102">Configuring Ports for an AS2 Solution</span></span>
 <span data-ttu-id="60236-103">可以使用以下接收和发送端口传送 AS2 上的 EDI 和非 EDI 消息：</span><span class="sxs-lookup"><span data-stu-id="60236-103">You can use the following receive and send ports to transmit EDI and non-EDI messages over AS2:</span></span>  

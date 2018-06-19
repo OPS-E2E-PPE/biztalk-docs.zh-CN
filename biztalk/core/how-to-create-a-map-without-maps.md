@@ -1,14 +1,14 @@
 ---
-title: "如何创建没有地图图 |Microsoft 文档"
-ms.custom: 
+title: 如何创建没有地图图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 520ec44f-5aca-4271-8835-b8e784214061
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248789"
 ---
 # <a name="how-to-create-a-map-without-maps"></a><span data-ttu-id="e7bfe-102">如何创建没有映射图</span><span class="sxs-lookup"><span data-stu-id="e7bfe-102">How to Create a Map without Maps</span></span>
 <span data-ttu-id="e7bfe-103">如果具有已用于转换实例消息的 XSLT 代码，则可以直接使用该代码，而不用创建映射。</span><span class="sxs-lookup"><span data-stu-id="e7bfe-103">If you have XSLT code you have been using to convert instance messages, you can use that code directly instead of creating a map.</span></span>  

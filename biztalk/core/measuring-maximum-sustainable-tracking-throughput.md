@@ -1,14 +1,14 @@
 ---
-title: "衡量最大可持续跟踪吞吐量 |Microsoft 文档"
-ms.custom: 
+title: 衡量最大可持续跟踪吞吐量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35605427-0217-4bdd-8b4a-3e68b3f5f452
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263941"
 ---
 # <a name="measuring-maximum-sustainable-tracking-throughput"></a><span data-ttu-id="d74c4-102">度量最大可承受跟踪吞吐量</span><span class="sxs-lookup"><span data-stu-id="d74c4-102">Measuring Maximum Sustainable Tracking Throughput</span></span>
 <span data-ttu-id="d74c4-103">将行业解决方案部署到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 平台上之后，应跟踪并监视该系统，以了解以下信息：</span><span class="sxs-lookup"><span data-stu-id="d74c4-103">After you deploy a line of business solution onto the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] platform, you should track and monitor the system to understand the following:</span></span>  

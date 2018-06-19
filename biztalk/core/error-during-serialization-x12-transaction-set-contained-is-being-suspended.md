@@ -1,14 +1,14 @@
 ---
-title: "在序列化期间遇到错误。 出现以下错误正在挂起事务集功能组中包含 X12 |Microsoft 文档"
-ms.custom: 
+title: 在序列化期间遇到错误。 出现以下错误正在挂起事务集功能组中包含 X12 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 49b13038-2637-4435-91e9-d6fe2b80ca7a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241421"
 ---
 # <a name="error-encountered-during-serialization-the-x12-transaction-set-contained-in-functional-group-is-being-suspended-with-following-errors"></a><span data-ttu-id="705c3-103">在序列化期间遇到错误。</span><span class="sxs-lookup"><span data-stu-id="705c3-103">Error encountered during serialization.</span></span> <span data-ttu-id="705c3-104">功能组中包含的 X12 事务集由于以下错误被挂起</span><span class="sxs-lookup"><span data-stu-id="705c3-104">The X12 transaction set contained in functional group is being suspended with following errors</span></span>
 ## <a name="details"></a><span data-ttu-id="705c3-105">详细信息</span><span class="sxs-lookup"><span data-stu-id="705c3-105">Details</span></span>  

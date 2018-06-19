@@ -1,11 +1,11 @@
 ---
-title: "向外扩展接收主机 |Microsoft 文档"
-ms.custom: 
+title: 向外扩展接收主机 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-03-17
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - adapters, receive adapters
@@ -34,7 +34,7 @@ helpviewer_keywords:
 - File adapters, scaling
 - clustering
 ms.assetid: 94f35426-37fa-4ad2-8e35-d82fdca02262
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -43,6 +43,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22272549"
 ---
 # <a name="scaled-out-receiving-hosts"></a><span data-ttu-id="24893-102">向外扩展接收主机</span><span class="sxs-lookup"><span data-stu-id="24893-102">Scaled-Out Receiving Hosts</span></span>
 <span data-ttu-id="24893-103">当主机包含接收项（例如接收位置或管道）时，该主机将充当安全边界，而且消息的解码和解密都将发生在主机内的管道中。</span><span class="sxs-lookup"><span data-stu-id="24893-103">When a host contains a receiving item, such as a receive location or pipeline, it acts as a security boundary, and the message decoding and decrypting occurs in a pipeline within the host.</span></span> <span data-ttu-id="24893-104">为确保接收主机高度可用，必须有两台或更多 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机运行所有接收主机的实例。</span><span class="sxs-lookup"><span data-stu-id="24893-104">To make the receiving hosts highly available, you must have two or more [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers that are running instances of each receiving host.</span></span> <span data-ttu-id="24893-105">可以通过扩展接收主机来保证可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息传递需要进行大量的部署。</span><span class="sxs-lookup"><span data-stu-id="24893-105">By scaling out the receiving hosts you can guarantee availability for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployments that are messaging intensive.</span></span> <span data-ttu-id="24893-106">尽管这些部署可能很少处理业务流程，但仍可快速和可靠地路由许多不同类型的消息。</span><span class="sxs-lookup"><span data-stu-id="24893-106">While these deployments might perform minimal processing for orchestrations, they can route many messages of varying types with great speed and reliability.</span></span>  

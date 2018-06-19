@@ -1,14 +1,14 @@
 ---
-title: "如何确定 MessageBox Database2 中的瓶颈 |Microsoft 文档"
-ms.custom: 
+title: 如何确定 MessageBox Database2 中的瓶颈 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 10b2eb1e-541c-457d-9735-ac6fb069b209
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254197"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a><span data-ttu-id="7e76a-102">如何找出 MessageBox 数据库的瓶颈</span><span class="sxs-lookup"><span data-stu-id="7e76a-102">How to Identify Bottlenecks in the MessageBox Database</span></span>
 <span data-ttu-id="7e76a-103">若要找出 MessageBox 数据库的瓶颈，首先要确保 SQL Server 代理服务已启动。</span><span class="sxs-lookup"><span data-stu-id="7e76a-103">To identify bottlenecks in the MessageBox database, first ensure that the SQL-Server-Agent Service is started.</span></span> <span data-ttu-id="7e76a-104">将服务的启动状态从“手动”改为“自动”，这样即使服务器重新启动了，服务也会自动重新启动。</span><span class="sxs-lookup"><span data-stu-id="7e76a-104">Change the Service startup state from Manual to Auto so that even if the server is restarted, the service will automatically restart.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何删除 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何删除 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e52f43f-33ca-452b-a69f-94bd4bb5debd
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248973"
 ---
 # <a name="how-to-delete-functoids"></a><span data-ttu-id="1e6f8-102">如何删除 Functoid</span><span class="sxs-lookup"><span data-stu-id="1e6f8-102">How to Delete Functoids</span></span>
 <span data-ttu-id="1e6f8-103">建立映射时，有时会需要删除现有的 functoid。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-103">When developing maps, you will sometimes need to delete an existing functoid.</span></span> <span data-ttu-id="1e6f8-104">删除 functoid 也会删除关联的输入链接和输出链接，以及其他任何输入参数、脚本规范和表网格配置。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-104">Deleting a functoid also deletes the associated input and output links, as well as any additional input parameters, script specification, and table grid configuration.</span></span>  

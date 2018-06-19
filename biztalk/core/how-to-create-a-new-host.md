@@ -1,15 +1,15 @@
 ---
-title: "创建新的主机 |Microsoft 文档"
+title: 创建新的主机 |Microsoft 文档
 descriptions: Use BizTalk Administration to create a new host in BizTalk Server
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 811e6e57-5c37-471a-aff4-5b2b68c367b1
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250197"
 ---
 # <a name="create-a-new-host"></a><span data-ttu-id="9b7bd-102">创建新的主机</span><span class="sxs-lookup"><span data-stu-id="9b7bd-102">Create a New Host</span></span>
 <span data-ttu-id="9b7bd-103">BizTalk 主机是诸如适配器处理程序、接收位置（包括管道）和业务流程等项的逻辑容器。</span><span class="sxs-lookup"><span data-stu-id="9b7bd-103">A BizTalk Host is a logical container for items such as adapter handlers, receive locations (including pipelines), and orchestrations.</span></span> <span data-ttu-id="9b7bd-104">建议使用单独的主机来处理、接收和发送消息，并且对可信任项和非可信任项使用不同的主机，以便实施安全措施并改进主机的可管理性。</span><span class="sxs-lookup"><span data-stu-id="9b7bd-104">We recommend that you use separate hosts for processing, receiving, and sending messages, and that you use separate hosts for trusted and non-trusted items to facilitate implementing security measures and to improve manageability of the hosts.</span></span> <span data-ttu-id="9b7bd-105">对于每个 BizTalk Server，只能安装一个主机实例。</span><span class="sxs-lookup"><span data-stu-id="9b7bd-105">You can install only one instance of a host per BizTalk server.</span></span> <span data-ttu-id="9b7bd-106">有关主机的详细信息，请参阅[主机](../core/hosts.md)。</span><span class="sxs-lookup"><span data-stu-id="9b7bd-106">For more information about hosts, see [Hosts](../core/hosts.md).</span></span>  

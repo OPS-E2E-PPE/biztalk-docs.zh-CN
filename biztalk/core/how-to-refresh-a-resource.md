@@ -1,18 +1,18 @@
 ---
-title: "如何刷新资源 |Microsoft 文档"
-ms.custom: 
+title: 如何刷新资源 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [resources], refreshing
 - refreshing resources
 - resources, refreshing
 ms.assetid: d6ff7c9d-8aaf-42a4-b1a3-00c05f6ac869
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254541"
 ---
 # <a name="how-to-refresh-a-resource"></a><span data-ttu-id="71ba9-102">如何刷新资源</span><span class="sxs-lookup"><span data-stu-id="71ba9-102">How to Refresh a Resource</span></span>
 <span data-ttu-id="71ba9-103">本主题介绍如何使用 BizTalk Server 管理控制台来刷新资源项目。</span><span class="sxs-lookup"><span data-stu-id="71ba9-103">This topic describes how to use the BizTalk Server Administration console to refresh a resource artifact.</span></span> <span data-ttu-id="71ba9-104">一种方法是更新 BizTalk 管理数据库中的项目信息。</span><span class="sxs-lookup"><span data-stu-id="71ba9-104">This updates the artifact information in the BizTalk Management database.</span></span> <span data-ttu-id="71ba9-105">另一种方法执行此操作是通过将项目添加到应用程序使用 BTSTask [AddResource 命令](../core/addresource-command.md)使用覆盖选项。</span><span class="sxs-lookup"><span data-stu-id="71ba9-105">Another way to do this is by adding the artifact to the application using the BTSTask [AddResource Command](../core/addresource-command.md) with the overwrite option.</span></span>  

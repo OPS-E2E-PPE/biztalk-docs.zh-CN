@@ -1,11 +1,11 @@
 ---
-title: "如何创建事实创建者 |Microsoft 文档"
-ms.custom: 
+title: 如何创建事实创建者 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - GetFactTypes method
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - Business Rules Framework, fact creator
 - Business Rules Framework, programming
 ms.assetid: 0589be8e-34d6-4e55-b678-c1f8436d1f61
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248661"
 ---
 # <a name="how-to-create-a-fact-creator"></a><span data-ttu-id="74927-102">如何创建事实创建器</span><span class="sxs-lookup"><span data-stu-id="74927-102">How to Create a Fact Creator</span></span>
 <span data-ttu-id="74927-103">可以编写事实创建器来创建自己的事实实例。</span><span class="sxs-lookup"><span data-stu-id="74927-103">You can write a fact creator to create instances of your facts.</span></span> <span data-ttu-id="74927-104">事实创建者必须实现**IFactCreator**及其**CreateFacts**方法和**GetFactTypes**方法。</span><span class="sxs-lookup"><span data-stu-id="74927-104">Your fact creator must implement **IFactCreator** and its **CreateFacts** method and **GetFactTypes** method.</span></span> <span data-ttu-id="74927-105">在创建事实创建器 DLL 之后，可以在策略测试器中找到该 DLL。</span><span class="sxs-lookup"><span data-stu-id="74927-105">After you have created your fact creator dll, you can browse to it from within the policy tester.</span></span> <span data-ttu-id="74927-106">以下是事实创建器的实施示例：</span><span class="sxs-lookup"><span data-stu-id="74927-106">The following is an example of a fact creator implementation.</span></span>  

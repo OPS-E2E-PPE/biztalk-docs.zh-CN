@@ -1,11 +1,11 @@
 ---
-title: "事实 |Microsoft 文档"
-ms.custom: 
+title: 事实 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Business Rules Engine, facts
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - business rules, facts
 - facts
 ms.assetid: 8f8086e4-fa16-49e8-8191-3d397330937f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245789"
 ---
 # <a name="facts"></a><span data-ttu-id="59b2a-102">事实</span><span class="sxs-lookup"><span data-stu-id="59b2a-102">Facts</span></span>
 <span data-ttu-id="59b2a-103">事实是有关现实世界的离散的信息片段。</span><span class="sxs-lookup"><span data-stu-id="59b2a-103">Facts are discrete pieces of information about the world.</span></span> <span data-ttu-id="59b2a-104">事实数据可能来自多个源 （事件系统，业务应用程序、 数据库表等中的对象），并必须送入中的业务规则引擎[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用以下元素之一：</span><span class="sxs-lookup"><span data-stu-id="59b2a-104">Facts can originate from many sources (event systems, objects in business applications, database tables, and so on), and must be fed into the Business Rule engine in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using one of the following elements:</span></span>  

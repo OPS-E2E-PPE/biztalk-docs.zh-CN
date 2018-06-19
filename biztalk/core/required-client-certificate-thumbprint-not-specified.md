@@ -1,14 +1,14 @@
 ---
-title: "所需未指定的客户端证书指纹 |Microsoft 文档"
-ms.custom: 
+title: 所需未指定的客户端证书指纹 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19307bdb-29d7-4a79-9472-dda24dd8b263
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269365"
 ---
 # <a name="required-client-certificate-thumbprint-not-specified"></a><span data-ttu-id="d9b4f-102">未指定必需的客户端证书指纹</span><span class="sxs-lookup"><span data-stu-id="d9b4f-102">Required client certificate thumbprint not specified</span></span>
 ## <a name="details"></a><span data-ttu-id="d9b4f-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d9b4f-103">Details</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置调用业务流程形状 |Microsoft 文档"
-ms.custom: 
+title: 如何配置调用业务流程形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Call Orchestration shape [Orchestration Designer], parameters
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - Call Orchestration shape [Orchestration Designer], referencing orchestrations
 - orchestrations, parameters
 ms.assetid: 718ce2a0-ac08-4662-8b4e-1be279dbc749
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249701"
 ---
 # <a name="how-to-configure-the-call-orchestration-shape"></a><span data-ttu-id="148cb-102">如何配置调用业务流程形状</span><span class="sxs-lookup"><span data-stu-id="148cb-102">How to Configure the Call Orchestration Shape</span></span>
 <span data-ttu-id="148cb-103">**调用 Orchestration**形状可以用于以同步方式调用另一个项目中引用的业务流程。</span><span class="sxs-lookup"><span data-stu-id="148cb-103">The **Call Orchestration** shape can be used to synchronously call an orchestration that is referenced in another project.</span></span> <span data-ttu-id="148cb-104">这允许在多个 BizTalk 项目中重复使用公用的业务流程工作流模式。</span><span class="sxs-lookup"><span data-stu-id="148cb-104">This allows for reuse of common orchestration workflow patterns across BizTalk projects.</span></span> <span data-ttu-id="148cb-105">当调用另一个嵌套的业务流程的情况下同步**调用 Orchestration**封闭业务流程等待嵌套的业务流程，在继续之前完成的形状。</span><span class="sxs-lookup"><span data-stu-id="148cb-105">When you invoke another nested orchestration synchronously with the **Call Orchestration** shape the enclosing orchestration waits for the nested orchestration to finish before continuing.</span></span>  

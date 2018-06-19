@@ -1,18 +1,18 @@
 ---
-title: "如何将 Web 安装程序包分发 |Microsoft 文档"
-ms.custom: 
+title: 如何将 Web 安装程序包分发 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, Web services
 - Web services, distributing
 - Web services, deploying
 ms.assetid: 0db71fdf-80d9-4ad5-b0d4-730d0bb549d4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254117"
 ---
 # <a name="how-to-distribute-the-web-setup-package"></a><span data-ttu-id="4ffb5-102">如何将 Web 安装程序包分发</span><span class="sxs-lookup"><span data-stu-id="4ffb5-102">How to Distribute the Web Setup Package</span></span>
 <span data-ttu-id="4ffb5-103">创建安装包后，还需要创建一个分发文件夹以将 MSI 文件和 BindingInfo.xml 文件复制到其中来安装 Web Services。</span><span class="sxs-lookup"><span data-stu-id="4ffb5-103">After you create the installation package, you need to create a distribution folder where a MSI file and a BindingInfo.xml file are copied to set up the Web service.</span></span>  

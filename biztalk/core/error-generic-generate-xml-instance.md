@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241229"
 ---
 # <a name="error---generic-generate-xml-instance"></a><span data-ttu-id="e7784-102">错误-泛型生成 XML 实例</span><span class="sxs-lookup"><span data-stu-id="e7784-102">Error - Generic Generate XML Instance</span></span>
 <span data-ttu-id="e7784-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="e7784-103">**Error Code**</span></span>  

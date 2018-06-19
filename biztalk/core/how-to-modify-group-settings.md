@@ -1,15 +1,15 @@
 ---
-title: "更新组设置 |Microsoft 文档"
-description: "更改使用 BizTalk Server 管理的组的性能设置"
-ms.custom: 
+title: 更新组设置 |Microsoft 文档
+description: 更改使用 BizTalk Server 管理的组的性能设置
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fe0cbeb8-23d6-45cf-8535-c989914f5124
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254805"
 ---
 # <a name="how-to-update-the-biztalk-group-settings"></a><span data-ttu-id="fc7fd-103">如何更新 BizTalk 组设置</span><span class="sxs-lookup"><span data-stu-id="fc7fd-103">How to update the BizTalk group settings</span></span>
 <span data-ttu-id="fc7fd-104">使用“设置仪表板”，你可以修改给定的 BizTalk 组中所有计算机上使用的配置信息。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-104">Using the Settings Dashboard, you can modify the configuration information used across all machines in a given BizTalk group.</span></span> <span data-ttu-id="fc7fd-105">本主题提供了修改 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中组级别性能设置的分步过程。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-105">This topic provides the step-by-step procedure to modify the group-level performance settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="fc7fd-106">这些设置适用于给定组中的所有计算机。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-106">These settings are applicable for all the machines in a given group.</span></span>  
@@ -43,7 +44,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="fc7fd-130">**大消息大小**</span><span class="sxs-lookup"><span data-stu-id="fc7fd-130">**Large message size**</span></span>|<span data-ttu-id="fc7fd-131">设置在批中和/或在转换期间触发流的单个消息的阈值大小。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-131">Set the threshold size of an individual message that triggers streaming in a batch and/or during transformations.</span></span>|<span data-ttu-id="fc7fd-132">1 - 10000000</span><span class="sxs-lookup"><span data-stu-id="fc7fd-132">1 - 10000000</span></span>|<span data-ttu-id="fc7fd-133">1000000</span><span class="sxs-lookup"><span data-stu-id="fc7fd-133">1000000</span></span>|<span data-ttu-id="fc7fd-134">最大数量的现有**大消息大小**和**LargeMessageFragmentSize**值。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-134">Maximum of the existing **Large message size** and **LargeMessageFragmentSize** values.</span></span>|  
     |<span data-ttu-id="fc7fd-135">**跟踪和报告**</span><span class="sxs-lookup"><span data-stu-id="fc7fd-135">**Tracking and Reporting**</span></span>||-|-|-|  
     |<span data-ttu-id="fc7fd-136">**消息框性能计数器采样间隔**</span><span class="sxs-lookup"><span data-stu-id="fc7fd-136">**Message box performance counter sampling interval**</span></span>|<span data-ttu-id="fc7fd-137">设置刷新性能计数器的时间间隔。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-137">Set the interval at which performance counters are refreshed.</span></span><br /><br /> <span data-ttu-id="fc7fd-138">该时间间隔会在数据库的负载与最新的计数器之间进行权衡。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-138">The interval trades off load on database versus up-to-dateness of counters.</span></span> <span data-ttu-id="fc7fd-139">该值越大，就意味着更新数据的频率越低，因而数据库的负载也就越小。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-139">The higher value means less frequently updated data, and thus lesser load on the database.</span></span>|<span data-ttu-id="fc7fd-140">1 – Integer 类型的最大值</span><span class="sxs-lookup"><span data-stu-id="fc7fd-140">1 – Maximum value of type Integer</span></span>|-|<span data-ttu-id="fc7fd-141">BizTalk 组（如果存在）中任何计算机上的最大值。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-141">Largest value on any machine in the BizTalk group if present.</span></span> <span data-ttu-id="fc7fd-142">如果不存在，则为默认值。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-142">If not, default.</span></span>|  
-    |<span data-ttu-id="fc7fd-143">**启用组级别跟踪**</span><span class="sxs-lookup"><span data-stu-id="fc7fd-143">**Enable group level tracking**</span></span>|<span data-ttu-id="fc7fd-144">选择此选项可打开 BizTalk Server 的组级别跟踪。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-144">Select this option to turn the group level tracking for BizTalk Server on.</span></span><br /><br /> <span data-ttu-id="fc7fd-145">关闭全局跟踪会禁用整个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组的跟踪侦听器。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-145">Turning off global tracking disables the tracking interceptors for the entire [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group.</span></span> <span data-ttu-id="fc7fd-146">这意味着 BizTalk Server 将不跟踪其跟踪表中的事件。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-146">This means, BizTalk Server will not track events in its tracking tables.</span></span> <span data-ttu-id="fc7fd-147">**注意：**此设置不会影响 BAM 跟踪。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-147">**Note:**  This setting does not impact BAM Tracking.</span></span>|<span data-ttu-id="fc7fd-148">打开、 关闭</span><span class="sxs-lookup"><span data-stu-id="fc7fd-148">On, Off</span></span>|<span data-ttu-id="fc7fd-149">On</span><span class="sxs-lookup"><span data-stu-id="fc7fd-149">On</span></span>|-|  
+    |<span data-ttu-id="fc7fd-143">**启用组级别跟踪**</span><span class="sxs-lookup"><span data-stu-id="fc7fd-143">**Enable group level tracking**</span></span>|<span data-ttu-id="fc7fd-144">选择此选项可打开 BizTalk Server 的组级别跟踪。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-144">Select this option to turn the group level tracking for BizTalk Server on.</span></span><br /><br /> <span data-ttu-id="fc7fd-145">关闭全局跟踪会禁用整个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 组的跟踪侦听器。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-145">Turning off global tracking disables the tracking interceptors for the entire [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group.</span></span> <span data-ttu-id="fc7fd-146">这意味着 BizTalk Server 将不跟踪其跟踪表中的事件。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-146">This means, BizTalk Server will not track events in its tracking tables.</span></span> <span data-ttu-id="fc7fd-147">**注意：** 此设置不会影响 BAM 跟踪。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-147">**Note:**  This setting does not impact BAM Tracking.</span></span>|<span data-ttu-id="fc7fd-148">打开、 关闭</span><span class="sxs-lookup"><span data-stu-id="fc7fd-148">On, Off</span></span>|<span data-ttu-id="fc7fd-149">On</span><span class="sxs-lookup"><span data-stu-id="fc7fd-149">On</span></span>|-|  
   
 3.  <span data-ttu-id="fc7fd-150">单击**应用**应用修改再转到另一个选项卡。或单击**确定**应用进行修改并退出设置仪表板。</span><span class="sxs-lookup"><span data-stu-id="fc7fd-150">Click **Apply** to apply the modifications and proceed to another tab. Or click **OK** to apply the modifications and exit the Settings Dashboard.</span></span>  
   

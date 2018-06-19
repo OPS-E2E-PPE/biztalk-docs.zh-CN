@@ -1,18 +1,18 @@
 ---
-title: "如何配置集成网关和 HTTP 输出连接器 |Microsoft 文档"
-ms.custom: 
+title: 如何配置集成网关和 HTTP 输出连接器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Integration Gateway
 - gateway nodes, creating
 - HTTP Output Connector
 ms.assetid: a02ee533-07a8-42fa-a72a-7e5359b18f40
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247917"
 ---
 # <a name="how-to-configure-the-integration-gateway-and-http-output-connector"></a><span data-ttu-id="62dd8-102">如何配置集成网关和 HTTP 输出连接器</span><span class="sxs-lookup"><span data-stu-id="62dd8-102">How to Configure the Integration Gateway and HTTP Output Connector</span></span>
 <span data-ttu-id="62dd8-103">请按照下列步骤来配置集成网关和 HTTP 输出连接器。</span><span class="sxs-lookup"><span data-stu-id="62dd8-103">Follow these steps to configure the Integration Gateway and HTTP Output Connector.</span></span>  

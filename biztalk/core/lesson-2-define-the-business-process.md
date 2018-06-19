@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262045"
 ---
 # <a name="lesson-2-define-the-business-process"></a><span data-ttu-id="ec345-102">第 2 课：定义业务流程</span><span class="sxs-lookup"><span data-stu-id="ec345-102">Lesson 2: Define the Business Process</span></span>
 <span data-ttu-id="ec345-103">在本课程中，你可以创建企业应用程序 Integration(EAI) 解决方案中的第二个项目。</span><span class="sxs-lookup"><span data-stu-id="ec345-103">In this lesson, you create the second project in the Enterprise Application Integration(EAI) solution.</span></span> <span data-ttu-id="ec345-104">此项目包含一个业务流程。</span><span class="sxs-lookup"><span data-stu-id="ec345-104">This project contains an orchestration.</span></span>  

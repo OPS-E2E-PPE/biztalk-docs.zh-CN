@@ -1,14 +1,14 @@
 ---
-title: "如何导出绑定到绑定文件 |Microsoft 文档"
-ms.custom: 
+title: 如何导出绑定到绑定文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3734ae6d-b790-40f2-8403-d7c7fdbe381b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010742"
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a><span data-ttu-id="9c70e-102">如何导出绑定到绑定文件</span><span class="sxs-lookup"><span data-stu-id="9c70e-102">How to Export Bindings to a Binding File</span></span>
 <span data-ttu-id="9c70e-103">你可以导出到使用绑定文件的另一个现有 BizTalk 应用程序的 BizTalk 应用程序的绑定。</span><span class="sxs-lookup"><span data-stu-id="9c70e-103">You can export the bindings of a BizTalk application into another existing BizTalk application using a binding file.</span></span> <span data-ttu-id="9c70e-104">你还可以导出组中的所有绑定或程序集的绑定。</span><span class="sxs-lookup"><span data-stu-id="9c70e-104">You can also export all the bindings in a group or the binding for an assembly.</span></span> <span data-ttu-id="9c70e-105">随后，你可以导入的应用程序或组的这些绑定。</span><span class="sxs-lookup"><span data-stu-id="9c70e-105">Subsequently, you can import those bindings into either an application or group.</span></span>  

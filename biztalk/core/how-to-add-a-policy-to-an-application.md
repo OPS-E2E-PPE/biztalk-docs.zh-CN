@@ -1,11 +1,11 @@
 ---
-title: "如何向应用程序添加策略 |Microsoft 文档"
-ms.custom: 
+title: 如何向应用程序添加策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [policies], adding to applications
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - applications, policies
 - policies, adding to applications
 ms.assetid: 93b3ce5e-8c63-4c64-9bdc-1747541ba9a8
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248101"
 ---
 # <a name="how-to-add-a-policy-to-an-application"></a><span data-ttu-id="90823-102">如何将策略添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="90823-102">How to Add a Policy to an Application</span></span>
 <span data-ttu-id="90823-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行向 BizTalk 应用程序添加策略。</span><span class="sxs-lookup"><span data-stu-id="90823-103">This topic describes how to use the BizTalk Server Administration console or the command line to add a policy to a BizTalk application.</span></span> <span data-ttu-id="90823-104">使用管理控制台时，可以一次添加多个策略。</span><span class="sxs-lookup"><span data-stu-id="90823-104">When using the administration console, you can add more than one policy at a time.</span></span> <span data-ttu-id="90823-105">将策略添加到应用程序后，该策略可供该应用程序以及引用它的任何其他应用程序使用。</span><span class="sxs-lookup"><span data-stu-id="90823-105">Adding a policy to an application makes it available for use by that application as well as any other applications that reference it.</span></span>  

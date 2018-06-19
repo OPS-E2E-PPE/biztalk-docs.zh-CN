@@ -1,14 +1,14 @@
 ---
-title: "整数属性值不是有效 |Microsoft 文档"
-ms.custom: 
+title: 整数属性值不是有效 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31d4e9a7-4336-40f1-997a-9f79d86b26d2
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278901"
 ---
 # <a name="the-integer-property-value-is-not-valid"></a><span data-ttu-id="e6f3c-102">integer 属性值无效</span><span class="sxs-lookup"><span data-stu-id="e6f3c-102">The integer property value is not valid</span></span>
 ## <a name="details"></a><span data-ttu-id="e6f3c-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e6f3c-103">Details</span></span>  

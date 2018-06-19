@@ -1,17 +1,17 @@
 ---
-title: "管理 BAM 动态基础结构 |Microsoft 文档"
-ms.custom: 
+title: 管理 BAM 动态基础结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - infrastructure, managing [BAM]
 - managing [BAM], infrastructure
 ms.assetid: af8a76b5-407a-484d-aff4-0d911f88313e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26007510"
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a><span data-ttu-id="93997-102">管理 BAM 动态基础结构</span><span class="sxs-lookup"><span data-stu-id="93997-102">Managing the BAM Dynamic Infrastructure</span></span>
 <span data-ttu-id="93997-103">业务活动监视 (BAM) 功能使用动态生成的 SQL 和联机分析处理 (OLAP) 基础结构。</span><span class="sxs-lookup"><span data-stu-id="93997-103">Business Activity Monitoring (BAM) features use a dynamically generated SQL and online analytical processing (OLAP) infrastructure.</span></span> <span data-ttu-id="93997-104">管理员使用 BAM 管理实用程序部署的 BAM 定义工作簿或业务分析人员开发的 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="93997-104">Administrators use the BAM Management utility to deploy the BAM definition workbook or XML file, which the business analyst develops.</span></span>  

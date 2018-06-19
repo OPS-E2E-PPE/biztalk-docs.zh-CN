@@ -1,11 +1,11 @@
 ---
-title: "性能和容量规划 |Microsoft 文档"
-ms.custom: 
+title: 性能和容量规划 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - capacity planning
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - planning, performance
 - architecture, capacity planning
 ms.assetid: 9a7c3e7e-df6d-4ec2-9879-cb234386cd71
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264229"
 ---
 # <a name="performance-and-capacity-planning"></a><span data-ttu-id="f110c-102">性能和容量规划</span><span class="sxs-lookup"><span data-stu-id="f110c-102">Performance and Capacity Planning</span></span>
 <span data-ttu-id="f110c-103">本部分介绍的特性和功能的 BizTalk Server 64 位支持。</span><span class="sxs-lookup"><span data-stu-id="f110c-103">This section describes the features and functionality of BizTalk Server 64-bit support.</span></span> <span data-ttu-id="f110c-104">它还描述如何计划、 测试和扩展您的 BizTalk Server 系统，因此你可以获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="f110c-104">It also describes how to plan, test, and scale your BizTalk Server system so you have optimal performance.</span></span>  

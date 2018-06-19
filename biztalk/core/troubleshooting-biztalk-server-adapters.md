@@ -1,14 +1,14 @@
 ---
-title: "故障排除 BizTalk Server 适配器 |Microsoft 文档"
-ms.custom: 
+title: 故障排除 BizTalk Server 适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 428b127f-df1e-4c41-9cc8-486519f15fa1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22278949"
 ---
 # <a name="troubleshooting-biztalk-server-adapters"></a><span data-ttu-id="ceb91-102">故障排除的 BizTalk Server 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-102">Troubleshooting BizTalk Server Adapters</span></span>
 <span data-ttu-id="ceb91-103">本主题介绍常见疑难解答可用于确定和解决可能的集成 BizTalk 适配器中发生的问题的步骤。</span><span class="sxs-lookup"><span data-stu-id="ceb91-103">This topic describes common trouble shooting steps that can be used to identify and resolve problems that may be occurring in the BizTalk Integrated adapters.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "主密钥服务器 |Microsoft 文档"
-ms.custom: 
+title: 主密钥服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Master Secret server, about Master Secret server
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Master Secret server, encryption key
 - SSO, Master Secret server
 ms.assetid: 93685a19-6c27-45db-bfc1-957574362687
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262509"
 ---
 # <a name="master-secret-server"></a><span data-ttu-id="d7877-102">主密钥服务器</span><span class="sxs-lookup"><span data-stu-id="d7877-102">Master Secret Server</span></span>
 <span data-ttu-id="d7877-103">主密钥服务器是存储主密钥（加密密钥）的企业单一登录 (SSO) 服务器。</span><span class="sxs-lookup"><span data-stu-id="d7877-103">The master secret server is the Enterprise Single Sign-On (SSO) server that stores the master secret (encryption key).</span></span> <span data-ttu-id="d7877-104">主密钥服务器可在 SSO 管理员请求主密钥时生成主密钥。</span><span class="sxs-lookup"><span data-stu-id="d7877-104">The master secret server generates the master secret when an SSO administrator requests it.</span></span> <span data-ttu-id="d7877-105">主密钥服务器将加密主密钥存储在注册表中。</span><span class="sxs-lookup"><span data-stu-id="d7877-105">The master secret server stores the encrypted master secret in the registry.</span></span> <span data-ttu-id="d7877-106">只有单一登录管理员才可以访问主密钥。</span><span class="sxs-lookup"><span data-stu-id="d7877-106">Only Single Sign-On administrators can access the master secret.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "启用错误报告 |Microsoft 文档"
-ms.custom: 
+title: 启用错误报告 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1131bbd5-7ab3-4422-b6df-747c722f0b2c
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241245"
 ---
 # <a name="enabling-error-reporting"></a><span data-ttu-id="6de10-102">启用错误报告</span><span class="sxs-lookup"><span data-stu-id="6de10-102">Enabling Error Reporting</span></span>
 <span data-ttu-id="6de10-103">使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您可选择是否要在 Windows 事件查看器中显示增强的错误和警告。</span><span class="sxs-lookup"><span data-stu-id="6de10-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to select whether you want to display enhanced errors and warnings in the Windows Event Viewer.</span></span>  

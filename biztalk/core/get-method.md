@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246517"
 ---
 # <a name="get-method"></a><span data-ttu-id="3c464-102">Get 方法</span><span class="sxs-lookup"><span data-stu-id="3c464-102">Get Method</span></span>
 <span data-ttu-id="3c464-103">用于检索属性基于输入的密钥参数 (key1、 key2，...</span><span class="sxs-lookup"><span data-stu-id="3c464-103">Used to retrieve properties based on the input key parameters (key1, key2, …</span></span> <span data-ttu-id="3c464-104">keyn)。</span><span class="sxs-lookup"><span data-stu-id="3c464-104">keyn).</span></span> <span data-ttu-id="3c464-105">输出参数是一个结构，该结构包含与关键字参数匹配的记录的属性。</span><span class="sxs-lookup"><span data-stu-id="3c464-105">The output parameter is a structure containing the properties of the record that matches the key parameters.</span></span> <span data-ttu-id="3c464-106">如果组件接口具有只有一个实例 （即，没有任何键） 的 Get 函数中不包含任何关键参数。</span><span class="sxs-lookup"><span data-stu-id="3c464-106">If the component interface has only one instance (that is, there is no key), the Get function does not contain any key parameter.</span></span> <span data-ttu-id="3c464-107">另请参阅[Find 方法](../core/find-method.md)。</span><span class="sxs-lookup"><span data-stu-id="3c464-107">Also see [Find Method](../core/find-method.md).</span></span>  

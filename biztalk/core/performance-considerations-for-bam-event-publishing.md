@@ -1,11 +1,11 @@
 ---
-title: "有关 BAM 事件发布的性能注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关 BAM 事件发布的性能注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - performance, BAM
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - BAM, event tracking
 - BAM, performance
 ms.assetid: 5a99e61a-a3d9-47fd-a933-2297f79817a5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264421"
 ---
 # <a name="performance-considerations-for-bam-event-publishing"></a><span data-ttu-id="ef635-102">有关 BAM 事件发布的性能注意事项</span><span class="sxs-lookup"><span data-stu-id="ef635-102">Performance Considerations for BAM Event Publishing</span></span>
 <span data-ttu-id="ef635-103">BAM 支持两种形式的业务事件发布：</span><span class="sxs-lookup"><span data-stu-id="ef635-103">BAM supports two forms of business event publishing:</span></span>  

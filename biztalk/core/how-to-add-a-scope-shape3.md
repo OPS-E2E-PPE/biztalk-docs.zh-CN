@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248061"
 ---
 # <a name="how-to-add-a-scope-shape"></a><span data-ttu-id="60105-102">如何添加作用域形状</span><span class="sxs-lookup"><span data-stu-id="60105-102">How to Add a Scope Shape</span></span>
 <span data-ttu-id="60105-103">使用以下过程添加作用域形状。</span><span class="sxs-lookup"><span data-stu-id="60105-103">Use the following procedure to add a Scope shape.</span></span>  

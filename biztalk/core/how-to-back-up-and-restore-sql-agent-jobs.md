@@ -1,14 +1,14 @@
 ---
-title: "如何备份和还原 SQL 代理作业 |Microsoft 文档"
-ms.custom: 
+title: 如何备份和还原 SQL 代理作业 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f82fc5a5-5ea5-476c-bed1-c5d41a50e673
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247197"
 ---
 # <a name="how-to-back-up-and-restore-sql-agent-jobs"></a><span data-ttu-id="55a0a-102">如何备份和还原 SQL 代理作业</span><span class="sxs-lookup"><span data-stu-id="55a0a-102">How to Back Up and Restore SQL Agent Jobs</span></span>
 <span data-ttu-id="55a0a-103">本主题介绍如何备份和恢复 SQL Server 代理作业。</span><span class="sxs-lookup"><span data-stu-id="55a0a-103">This topic describes how to back up and restore SQL Server Agent Jobs.</span></span> <span data-ttu-id="55a0a-104">配置 SQL 作业之后应对其进行备份。</span><span class="sxs-lookup"><span data-stu-id="55a0a-104">You should back up your SQL jobs after you configure them.</span></span>  
@@ -62,11 +63,11 @@ ms.lasthandoff: 09/20/2017
   
 3.  <span data-ttu-id="55a0a-128">右键单击你想要创建的备份脚本，然后选择的作业**作为脚本作业**。</span><span class="sxs-lookup"><span data-stu-id="55a0a-128">Right-click the job you want to create a backup script for, and then select **Script Job as**.</span></span>  
   
-4.  <span data-ttu-id="55a0a-129">选择**创建到**或**拖放到**，然后选择**新查询编辑器窗口**，**文件**，或**剪贴板**若要选择脚本目标。</span><span class="sxs-lookup"><span data-stu-id="55a0a-129">Select **CREATE To** or **DROP To**, then select **New Query Editor Window**, **File**, or **Clipboard** to select a destination for the script.</span></span> <span data-ttu-id="55a0a-130">通常情况下，目标是为此文件**.sql**扩展。</span><span class="sxs-lookup"><span data-stu-id="55a0a-130">Typically, the destination is a file with a **.sql** extension.</span></span>  
+4.  <span data-ttu-id="55a0a-129">选择**创建到**或**拖放到**，然后选择**新查询编辑器窗口**，**文件**，或**剪贴板**若要选择脚本目标。</span><span class="sxs-lookup"><span data-stu-id="55a0a-129">Select **CREATE To** or **DROP To**, then select **New Query Editor Window**, **File**, or **Clipboard** to select a destination for the script.</span></span> <span data-ttu-id="55a0a-130">通常情况下，目标是为此文件 **.sql**扩展。</span><span class="sxs-lookup"><span data-stu-id="55a0a-130">Typically, the destination is a file with a **.sql** extension.</span></span>  
   
 5.  <span data-ttu-id="55a0a-131">为你要编写脚本的每个作业重复步骤 3 以后的过程。</span><span class="sxs-lookup"><span data-stu-id="55a0a-131">Repeat this procedure from Step 3 for each job you want to script.</span></span> <span data-ttu-id="55a0a-132">请参考与 BizTalk Server 相关的作业列表，以确定你需要为哪些作业编写脚本。</span><span class="sxs-lookup"><span data-stu-id="55a0a-132">Refer to the list of BizTalk Server related jobs to determine which jobs you need to script.</span></span>  
   
-     <span data-ttu-id="55a0a-133">至少，你应备份**备份 BizTalk Server (BizTalkMgmtDb)**作业后配置。</span><span class="sxs-lookup"><span data-stu-id="55a0a-133">At a minimum, you should back up the **Backup BizTalk Server (BizTalkMgmtDb)** job after it is configured.</span></span>  
+     <span data-ttu-id="55a0a-133">至少，你应备份**备份 BizTalk Server (BizTalkMgmtDb)** 作业后配置。</span><span class="sxs-lookup"><span data-stu-id="55a0a-133">At a minimum, you should back up the **Backup BizTalk Server (BizTalkMgmtDb)** job after it is configured.</span></span>  
   
 ## <a name="restore-a-job-from-a-script"></a><span data-ttu-id="55a0a-134">从脚本中还原作业</span><span class="sxs-lookup"><span data-stu-id="55a0a-134">Restore a job from a script</span></span>  
   

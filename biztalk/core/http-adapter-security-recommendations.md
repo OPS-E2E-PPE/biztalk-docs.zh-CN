@@ -1,18 +1,18 @@
 ---
-title: "HTTP 适配器安全建议 |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, HTTP adapters
 - configuring [HTTP adapters], security
 - HTTP adapters, security
 ms.assetid: ef6043c2-c62a-40e5-b2e1-53e60f87a761
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256757"
 ---
 # <a name="http-adapter-security-recommendations"></a><span data-ttu-id="ae979-102">HTTP 适配器安全建议</span><span class="sxs-lookup"><span data-stu-id="ae979-102">HTTP Adapter Security Recommendations</span></span>
 <span data-ttu-id="ae979-103">使用 HTTP 适配器可以通过超文本传输协议 (HTTP) 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与应用程序之间交换信息。</span><span class="sxs-lookup"><span data-stu-id="ae979-103">You use the HTTP adapter to exchange information between [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and an application by means of the Hypertext Transfer Protocol (HTTP).</span></span> <span data-ttu-id="ae979-104">通过向指定的 HTTP URL 发送 HTTP POST 或 HTTP GET 请求，应用程序可以向服务器发送消息。</span><span class="sxs-lookup"><span data-stu-id="ae979-104">Applications can send messages to a server by sending HTTP POST or HTTP GET requests to a specified HTTP URL.</span></span> <span data-ttu-id="ae979-105">有关 HTTP 适配器的详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="ae979-105">For more information about the HTTP adapter, see [HTTP Adapter](../core/http-adapter.md).</span></span> <span data-ttu-id="ae979-106">建议你使用以下准则以确保你的环境中的 HTTP 适配器的安全并对其进行部署：</span><span class="sxs-lookup"><span data-stu-id="ae979-106">It is recommended that you use the following guidelines for securing and deploying the HTTP adapter in your environment:</span></span>  

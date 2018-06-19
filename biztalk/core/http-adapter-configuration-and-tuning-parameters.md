@@ -1,11 +1,11 @@
 ---
-title: "HTTP 适配器配置和优化参数 |Microsoft 文档"
-ms.custom: 
+title: HTTP 适配器配置和优化参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP adapters, parameters
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - DisableChunkEncoding key [HTTP adapters]
 - HttpOutCompleteSize key [HTTP adapters]
 ms.assetid: c8989a88-722a-40b5-94cf-4b6840add02e
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257781"
 ---
 # <a name="http-adapter-configuration-and-tuning-parameters"></a><span data-ttu-id="52911-102">HTTP 适配器配置和优化参数</span><span class="sxs-lookup"><span data-stu-id="52911-102">HTTP Adapter Configuration and Tuning Parameters</span></span>
 <span data-ttu-id="52911-103">通过注册表项和修改 BizTalk Server 安装根目录中的 BTSNTSvc.exe.config 文件，可以访问 HTTP 适配器的一些配置和优化参数。</span><span class="sxs-lookup"><span data-stu-id="52911-103">Several configuration and tuning parameters are accessible for the HTTP adapter through registry key entries and through the modification of the BTSNTSvc.exe.config file that is located in the root BizTalk Server installation directory.</span></span>  
@@ -38,11 +39,11 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="52911-108">**DisableChunkEncoding**， **RequestQueueSize**，和**HttpReceiveThreadsPerCpu**中必须定义**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**。</span><span class="sxs-lookup"><span data-stu-id="52911-108">**DisableChunkEncoding**, **RequestQueueSize**, and **HttpReceiveThreadsPerCpu** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\HttpReceive**.</span></span>  
   
--   <span data-ttu-id="52911-109">**HttpOutTimeoutInterval**， **HttpOutInflightSize**，和**HttpOutCompleteSize**中必须定义**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}**其中**GUID**是 HTTP 发送处理程序的主机的 ID。</span><span class="sxs-lookup"><span data-stu-id="52911-109">**HttpOutTimeoutInterval**, **HttpOutInflightSize**, and **HttpOutCompleteSize** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{GUID}** where **GUID** is the ID of the host for the HTTP send handler.</span></span>  
+-   <span data-ttu-id="52911-109">**HttpOutTimeoutInterval**， **HttpOutInflightSize**，和**HttpOutCompleteSize**中必须定义**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc {GUID}** 其中**GUID**是 HTTP 发送处理程序的主机的 ID。</span><span class="sxs-lookup"><span data-stu-id="52911-109">**HttpOutTimeoutInterval**, **HttpOutInflightSize**, and **HttpOutCompleteSize** must be defined in **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{GUID}** where **GUID** is the ID of the host for the HTTP send handler.</span></span>  
   
 |<span data-ttu-id="52911-110">项名</span><span class="sxs-lookup"><span data-stu-id="52911-110">Key name</span></span>|<span data-ttu-id="52911-111">类型</span><span class="sxs-lookup"><span data-stu-id="52911-111">Type</span></span>|<span data-ttu-id="52911-112">默认</span><span class="sxs-lookup"><span data-stu-id="52911-112">Default</span></span>|<span data-ttu-id="52911-113">解释</span><span class="sxs-lookup"><span data-stu-id="52911-113">Explanation</span></span>|  
 |--------------|----------|-------------|-----------------|  
-|<span data-ttu-id="52911-114">**DisableChunkEncoding**</span><span class="sxs-lookup"><span data-stu-id="52911-114">**DisableChunkEncoding**</span></span>|<span data-ttu-id="52911-115">DWORD</span><span class="sxs-lookup"><span data-stu-id="52911-115">DWORD</span></span>|<span data-ttu-id="52911-116">0</span><span class="sxs-lookup"><span data-stu-id="52911-116">0</span></span>|<span data-ttu-id="52911-117">规定 HTTP 接收适配器在将响应发送回客户端时是否使用 Chunked 编码。</span><span class="sxs-lookup"><span data-stu-id="52911-117">Regulates whether or not the HTTP receive adapter uses chunked encoding when sending responses back to the client.</span></span><br /><br /> <span data-ttu-id="52911-118">设置为非零值可为 HTTP 接收适配器响应关闭 Chunked 编码。</span><span class="sxs-lookup"><span data-stu-id="52911-118">Set to a nonzero value to turn off chunked encoding for HTTP receive adapter responses.</span></span><br /><br /> <span data-ttu-id="52911-119">**最小值：** 0</span><span class="sxs-lookup"><span data-stu-id="52911-119">**Minimum value:** 0</span></span><br /><br /> <span data-ttu-id="52911-120">**最大值：**任何非零值</span><span class="sxs-lookup"><span data-stu-id="52911-120">**Maximum value:** Any nonzero value</span></span>|  
+|<span data-ttu-id="52911-114">**DisableChunkEncoding**</span><span class="sxs-lookup"><span data-stu-id="52911-114">**DisableChunkEncoding**</span></span>|<span data-ttu-id="52911-115">DWORD</span><span class="sxs-lookup"><span data-stu-id="52911-115">DWORD</span></span>|<span data-ttu-id="52911-116">0</span><span class="sxs-lookup"><span data-stu-id="52911-116">0</span></span>|<span data-ttu-id="52911-117">规定 HTTP 接收适配器在将响应发送回客户端时是否使用 Chunked 编码。</span><span class="sxs-lookup"><span data-stu-id="52911-117">Regulates whether or not the HTTP receive adapter uses chunked encoding when sending responses back to the client.</span></span><br /><br /> <span data-ttu-id="52911-118">设置为非零值可为 HTTP 接收适配器响应关闭 Chunked 编码。</span><span class="sxs-lookup"><span data-stu-id="52911-118">Set to a nonzero value to turn off chunked encoding for HTTP receive adapter responses.</span></span><br /><br /> <span data-ttu-id="52911-119">**最小值：** 0</span><span class="sxs-lookup"><span data-stu-id="52911-119">**Minimum value:** 0</span></span><br /><br /> <span data-ttu-id="52911-120">**最大值：** 任何非零值</span><span class="sxs-lookup"><span data-stu-id="52911-120">**Maximum value:** Any nonzero value</span></span>|  
 |<span data-ttu-id="52911-121">**RequestQueueSize**</span><span class="sxs-lookup"><span data-stu-id="52911-121">**RequestQueueSize**</span></span>|<span data-ttu-id="52911-122">DWORD</span><span class="sxs-lookup"><span data-stu-id="52911-122">DWORD</span></span>|<span data-ttu-id="52911-123">256</span><span class="sxs-lookup"><span data-stu-id="52911-123">256</span></span>|<span data-ttu-id="52911-124">指定 HTTP 接收适配器一次可处理的并行请求数。</span><span class="sxs-lookup"><span data-stu-id="52911-124">Defines the number of concurrent requests that the HTTP receive adapter processes at one time.</span></span><br /><br /> <span data-ttu-id="52911-125">**最小值：** 10</span><span class="sxs-lookup"><span data-stu-id="52911-125">**Minimum value:**  10</span></span><br /><br /> <span data-ttu-id="52911-126">**最大值：** 2048年</span><span class="sxs-lookup"><span data-stu-id="52911-126">**Maximum value:** 2048</span></span>|  
 |<span data-ttu-id="52911-127">**HttpReceiveThreadsPerCpu**</span><span class="sxs-lookup"><span data-stu-id="52911-127">**HttpReceiveThreadsPerCpu**</span></span>|<span data-ttu-id="52911-128">DWORD</span><span class="sxs-lookup"><span data-stu-id="52911-128">DWORD</span></span>|<span data-ttu-id="52911-129">2</span><span class="sxs-lookup"><span data-stu-id="52911-129">2</span></span>|<span data-ttu-id="52911-130">定义每个 CPU 为 HTTP 接收适配器分配的线程数。</span><span class="sxs-lookup"><span data-stu-id="52911-130">Defines the number of threads per CPU that are allocated to the HTTP receive adapter.</span></span><br /><br /> <span data-ttu-id="52911-131">**最小值：** 1</span><span class="sxs-lookup"><span data-stu-id="52911-131">**Minimum value:** 1</span></span><br /><br /> <span data-ttu-id="52911-132">**最大值：** 10</span><span class="sxs-lookup"><span data-stu-id="52911-132">**Maximum value:** 10</span></span>|  
 |<span data-ttu-id="52911-133">**HttpOutTimeoutInterval**</span><span class="sxs-lookup"><span data-stu-id="52911-133">**HttpOutTimeoutInterval**</span></span>|<span data-ttu-id="52911-134">DWORD</span><span class="sxs-lookup"><span data-stu-id="52911-134">DWORD</span></span>|<span data-ttu-id="52911-135">2000</span><span class="sxs-lookup"><span data-stu-id="52911-135">2000</span></span>|<span data-ttu-id="52911-136">定义 HTTP 发送适配器在超时之前等待的时间间隔（秒）。</span><span class="sxs-lookup"><span data-stu-id="52911-136">Defines the interval in seconds that the HTTP send adapter will wait before timing out.</span></span><br /><br /> <span data-ttu-id="52911-137">**最小值：** 500</span><span class="sxs-lookup"><span data-stu-id="52911-137">**Minimum value:** 500</span></span><br /><br /> <span data-ttu-id="52911-138">**最大值：** 10000000</span><span class="sxs-lookup"><span data-stu-id="52911-138">**Maximum value:** 10000000</span></span>|  

@@ -1,11 +1,11 @@
 ---
-title: "业务流程计划视图 |Microsoft 文档"
-ms.custom: 
+title: 业务流程计划视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Orchestration view [Tracking Profile Editor]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - Tracking Profile Editor, Orchestration view
 - Tracking Profile Editor, orchestrations
 ms.assetid: b3e0014b-000e-4f58-9f70-d331d78e487e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263533"
 ---
 # <a name="orchestration-schedule-view"></a><span data-ttu-id="2f9a9-102">业务流程调度视图</span><span class="sxs-lookup"><span data-stu-id="2f9a9-102">Orchestration Schedule View</span></span>
 <span data-ttu-id="2f9a9-103">业务流程视图显示 BAM 处理所选业务流程内包含的业务流程的步骤。</span><span class="sxs-lookup"><span data-stu-id="2f9a9-103">The Orchestration View displays the steps by which BAM transacts the business process contained within the selected orchestration.</span></span> <span data-ttu-id="2f9a9-104">该视图位于跟踪配置文件编辑器 (TPE) 用户界面的右窗格中。</span><span class="sxs-lookup"><span data-stu-id="2f9a9-104">The view is located on the right pane of the Tracking Profile Editor (TPE) user interface.</span></span>  

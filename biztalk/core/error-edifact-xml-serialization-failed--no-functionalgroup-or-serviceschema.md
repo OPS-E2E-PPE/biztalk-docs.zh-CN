@@ -1,14 +1,14 @@
 ---
-title: "Edifact 交换 Xml 序列化失败，因为结构无效，没有 FunctionalGroup 或 ServiceSchema |Microsoft 文档"
-ms.custom: 
+title: Edifact 交换 Xml 序列化失败，因为结构无效，没有 FunctionalGroup 或 ServiceSchema |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 530faadd-e301-4743-b4b3-b04ba7578f1d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241437"
 ---
 # <a name="edifact-interchange-xml-serialization-failed-due-to-invalid-structure-no-functionalgroup-or-serviceschema"></a><span data-ttu-id="3b4c3-102">由于结构无效，没有 FunctionalGroup 或 ServiceSchema Edifact 交换 Xml 序列化失败</span><span class="sxs-lookup"><span data-stu-id="3b4c3-102">Edifact interchange Xml serialization failed due to invalid structure, no FunctionalGroup or ServiceSchema</span></span>
 ## <a name="details"></a><span data-ttu-id="3b4c3-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="3b4c3-103">Details</span></span>  

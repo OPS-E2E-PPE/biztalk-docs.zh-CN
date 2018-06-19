@@ -1,14 +1,14 @@
 ---
-title: "Visual Studio 中的架构验证 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中的架构验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 630be4a1-ca86-49c5-8015-0419babb447d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269301"
 ---
 # <a name="schema-validation-in-visual-studio"></a><span data-ttu-id="bb32b-102">Visual Studio 中的架构验证</span><span class="sxs-lookup"><span data-stu-id="bb32b-102">Schema Validation in Visual Studio</span></span>
 <span data-ttu-id="bb32b-103">在完成创建架构后，或在创建架构的各个阶段，您可以验证该架构以确定它是否存在内部不一致，或是否存在可能阻碍它高效地处理实例消息的其他问题。</span><span class="sxs-lookup"><span data-stu-id="bb32b-103">After you have finished creating a schema, or at different times during its creation, you can validate it to determine whether it contains any internal inconsistencies, or has other issues that might prevent it from being used effectively for process instance messages.</span></span>  

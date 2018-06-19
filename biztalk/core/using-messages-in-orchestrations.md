@@ -1,18 +1,18 @@
 ---
-title: "在业务流程中使用消息 |Microsoft 文档"
-ms.custom: 
+title: 在业务流程中使用消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, messages
 - messages, variables
 - messages, about messages
 ms.assetid: 6902b168-3567-44b7-b0ed-d983da54530f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22287013"
 ---
 # <a name="using-messages-in-orchestrations"></a><span data-ttu-id="7e92f-102">在业务流程中使用消息</span><span class="sxs-lookup"><span data-stu-id="7e92f-102">Using Messages in Orchestrations</span></span>
 <span data-ttu-id="7e92f-103">一条消息是通信的一个业务流程中的基本单位。</span><span class="sxs-lookup"><span data-stu-id="7e92f-103">A message is the basic unit of communication in an orchestration.</span></span> <span data-ttu-id="7e92f-104">它包含一个或多个部件以及描述消息和其内容的属性的上下文数据。</span><span class="sxs-lookup"><span data-stu-id="7e92f-104">It contains one or more parts along with context data that describes properties of the message and its contents.</span></span>  

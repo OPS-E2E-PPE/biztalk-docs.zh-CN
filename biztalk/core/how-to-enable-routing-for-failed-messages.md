@@ -1,14 +1,14 @@
 ---
-title: "如何允许路由失败消息 |Microsoft 文档"
-ms.custom: 
+title: 如何允许路由失败消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d33beed4-1ae2-4282-95ac-5d68aab7fb5d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254109"
 ---
 # <a name="how-to-enable-routing-for-failed-messages"></a><span data-ttu-id="4936a-102">如何为失败消息启用路由功能</span><span class="sxs-lookup"><span data-stu-id="4936a-102">How to Enable Routing for Failed Messages</span></span>
 <span data-ttu-id="4936a-103">失败消息路由是发送端口和接收端口的属性，可通过在端口的属性页上指示“为失败消息启用路由功能”来启用。</span><span class="sxs-lookup"><span data-stu-id="4936a-103">Failed message routing is a property of send and receive ports, and is enabled by indicating "Enable routing for failed messages" on the port's property page.</span></span>  

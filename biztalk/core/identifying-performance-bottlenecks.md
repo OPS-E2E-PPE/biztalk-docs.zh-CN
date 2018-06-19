@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256637"
 ---
 # <a name="identifying-performance-bottlenecks"></a><span data-ttu-id="bf7ba-102">确定性能瓶颈</span><span class="sxs-lookup"><span data-stu-id="bf7ba-102">Identifying Performance Bottlenecks</span></span>
 <span data-ttu-id="bf7ba-103">理想情况下，系统以满载状态运行（充分利用可用资源），则可达到可承受吞吐量，并可降低所属权总成本 (TCO)。</span><span class="sxs-lookup"><span data-stu-id="bf7ba-103">Ideally, when a system is running at almost full capacity (optimal utilization of available resources), sustainable throughput can be achieved, lowering total cost of ownership (TCO).</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "开发自定义 Functoid |Microsoft 文档"
-ms.custom: 
+title: 开发自定义 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 77419e1f-9f01-44ac-bf5b-a393f1d17f61
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242045"
 ---
 # <a name="developing-custom-functoids"></a><span data-ttu-id="7b6e3-102">开发自定义 Functoid</span><span class="sxs-lookup"><span data-stu-id="7b6e3-102">Developing Custom Functoids</span></span>
 <span data-ttu-id="7b6e3-103">尽管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供许多 functoid 以支持一系列不同的操作，您可能仍会遇到需要其他方法的情况。</span><span class="sxs-lookup"><span data-stu-id="7b6e3-103">Although [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides many functoids to support a range of diverse operations, you will likely encounter a situation that requires a different approach.</span></span> <span data-ttu-id="7b6e3-104">自定义 functoid 提供的方法可扩展 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 映射环境中可用操作的范围。</span><span class="sxs-lookup"><span data-stu-id="7b6e3-104">Custom functoids provide a way for you to extend the range of operations available within the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] mapping environment.</span></span> <span data-ttu-id="7b6e3-105">每个自定义 functoid 部署因为.NET 程序集使用类派生自**Microsoft.BizTalk.BaseFunctoids**。</span><span class="sxs-lookup"><span data-stu-id="7b6e3-105">Each custom functoid is deployed as a .NET assembly using classes derived from **Microsoft.BizTalk.BaseFunctoids**.</span></span> <span data-ttu-id="7b6e3-106">一个程序集可包含多个自定义 functoid。</span><span class="sxs-lookup"><span data-stu-id="7b6e3-106">An assembly can contain more than one custom functoid.</span></span>  

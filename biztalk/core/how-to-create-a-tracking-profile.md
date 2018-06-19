@@ -1,17 +1,17 @@
 ---
-title: "如何创建跟踪配置文件 |Microsoft 文档"
-ms.custom: 
+title: 如何创建跟踪配置文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tracking profiles, creating
 - creating, tracking profiles
 ms.assetid: 676ae7e8-f3eb-45f1-ad2e-807b434c0bf9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248933"
 ---
 # <a name="how-to-create-a-tracking-profile"></a><span data-ttu-id="e12c8-102">如何创建跟踪配置文件</span><span class="sxs-lookup"><span data-stu-id="e12c8-102">How to Create a Tracking Profile</span></span>
 <span data-ttu-id="e12c8-103">创建跟踪配置文件可将 BAM 活动定义链接到部署的程序集和 BizTalk Server 消息传送属性。</span><span class="sxs-lookup"><span data-stu-id="e12c8-103">You create tracking profiles to link BAM activity definitions to deployed assemblies and BizTalk Server messaging properties.</span></span> <span data-ttu-id="e12c8-104">跟踪配置文件编辑器打开时，你可以通过单击导入活动链接或导入菜单项来创建新的跟踪配置文件。</span><span class="sxs-lookup"><span data-stu-id="e12c8-104">When you open the Tracking Profile Editor, you can create a new tracking profile by either clicking the import activity link or the import menu item.</span></span>  

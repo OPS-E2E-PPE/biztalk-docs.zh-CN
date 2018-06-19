@@ -1,14 +1,14 @@
 ---
-title: "处理事务 |Microsoft 文档"
-ms.custom: 
+title: 处理事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1d360742-e969-4651-b364-9edc6a93b8d4
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248149"
 ---
 # <a name="handling-transactions"></a><span data-ttu-id="139b1-102">处理事务</span><span class="sxs-lookup"><span data-stu-id="139b1-102">Handling Transactions</span></span>
 ## <a name="transacted-receivers"></a><span data-ttu-id="139b1-103">事务性接收器</span><span class="sxs-lookup"><span data-stu-id="139b1-103">Transacted Receivers</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="transacted-transmitters"></a><span data-ttu-id="139b1-120">事务性发送器</span><span class="sxs-lookup"><span data-stu-id="139b1-120">Transacted Transmitters</span></span>  
  <span data-ttu-id="139b1-121">事务性适配器在很大程度上与非事务性适配器十分相似。</span><span class="sxs-lookup"><span data-stu-id="139b1-121">Transacted adapters are for the most part very similar to nontransacted adapters.</span></span> <span data-ttu-id="139b1-122">主要差别在于，事务性适配器将消息中的数据发送到已在 MSDTC 事务中登记的资源。</span><span class="sxs-lookup"><span data-stu-id="139b1-122">The main difference is that the transacted adapter sends the data in the message to a resource that it has enlisted in an MSDTC transaction.</span></span>  
   
- <span data-ttu-id="139b1-123">**实现提示：**对于事务处理发送适配器应使用相同的 MSDTC 事务将数据写入到目标和删除它通过**IBTTransportBatch.DeleteMessage**方法调用。</span><span class="sxs-lookup"><span data-stu-id="139b1-123">**Implementation Tip:** For transacted sends, the adapter should use the same MSDTC transaction for writing the data to the destination and for deleting it through the **IBTTransportBatch.DeleteMessage** method call.</span></span> <span data-ttu-id="139b1-124">只有这两个操作需要进行事务处理。</span><span class="sxs-lookup"><span data-stu-id="139b1-124">Only these two operations need to be transacted.</span></span> <span data-ttu-id="139b1-125">任何其他操作，如**IBTTransportBatch.Resubmit**， **IBTTransportBatch.MoveToNextTransport**，和**IBTTransportBatch.MoveToSuspendQ**不需要为事务处理。</span><span class="sxs-lookup"><span data-stu-id="139b1-125">Any other operations, such as **IBTTransportBatch.Resubmit**, **IBTTransportBatch.MoveToNextTransport**, and **IBTTransportBatch.MoveToSuspendQ** do not need to be transacted.</span></span> <span data-ttu-id="139b1-126">原因在于：引擎隐式使用事务，并且就目标而言，这些类型的操作无需是原子的。</span><span class="sxs-lookup"><span data-stu-id="139b1-126">This is because the engine implicitly uses a transaction and these types of operations do not need to be atomic with respect to the destination.</span></span>  
+ <span data-ttu-id="139b1-123">**实现提示：** 对于事务处理发送适配器应使用相同的 MSDTC 事务将数据写入到目标和删除它通过**IBTTransportBatch.DeleteMessage**方法调用。</span><span class="sxs-lookup"><span data-stu-id="139b1-123">**Implementation Tip:** For transacted sends, the adapter should use the same MSDTC transaction for writing the data to the destination and for deleting it through the **IBTTransportBatch.DeleteMessage** method call.</span></span> <span data-ttu-id="139b1-124">只有这两个操作需要进行事务处理。</span><span class="sxs-lookup"><span data-stu-id="139b1-124">Only these two operations need to be transacted.</span></span> <span data-ttu-id="139b1-125">任何其他操作，如**IBTTransportBatch.Resubmit**， **IBTTransportBatch.MoveToNextTransport**，和**IBTTransportBatch.MoveToSuspendQ**不需要为事务处理。</span><span class="sxs-lookup"><span data-stu-id="139b1-125">Any other operations, such as **IBTTransportBatch.Resubmit**, **IBTTransportBatch.MoveToNextTransport**, and **IBTTransportBatch.MoveToSuspendQ** do not need to be transacted.</span></span> <span data-ttu-id="139b1-126">原因在于：引擎隐式使用事务，并且就目标而言，这些类型的操作无需是原子的。</span><span class="sxs-lookup"><span data-stu-id="139b1-126">This is because the engine implicitly uses a transaction and these types of operations do not need to be atomic with respect to the destination.</span></span>  
   
  <span data-ttu-id="139b1-127">下面的对象交互图说明了适配器和引擎之间的交互。</span><span class="sxs-lookup"><span data-stu-id="139b1-127">The following object interaction diagram illustrates the interactions between the adapter and the engine.</span></span> <span data-ttu-id="139b1-128">这些事件的顺序如下：</span><span class="sxs-lookup"><span data-stu-id="139b1-128">The sequence of events is as follows:</span></span>  
   

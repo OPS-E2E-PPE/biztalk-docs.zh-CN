@@ -1,11 +1,11 @@
 ---
-title: "如何验证消息的活动状态 |Microsoft 文档"
-ms.custom: 
+title: 如何验证消息的活动状态 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - activities, verifying status
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - verifying message status in PeopleSoft
 - messages, verifying status
 ms.assetid: b8cee6f9-0f65-4228-a87a-3f3aca6182bf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256541"
 ---
 # <a name="how-to-verify-activity-status-of-a-message"></a><span data-ttu-id="c0eae-102">如何验证消息的活动状态</span><span class="sxs-lookup"><span data-stu-id="c0eae-102">How to Verify Activity Status of a Message</span></span>
 <span data-ttu-id="c0eae-103">PeopleSoft 集成 Broker 用于创建 PeopleSoft HTTP 主机和端口 PeopleSoft 发送事件的位置。</span><span class="sxs-lookup"><span data-stu-id="c0eae-103">You use the PeopleSoft Integration Broker to create a PeopleSoft HTTP Host and Port where PeopleSoft sends events.</span></span> <span data-ttu-id="c0eae-104">通过执行以下步骤确保消息处于活动状态并且已被路由。</span><span class="sxs-lookup"><span data-stu-id="c0eae-104">You make sure that the message is active and routed by following these steps.</span></span>  
@@ -78,7 +79,7 @@ ms.lasthandoff: 09/20/2017
   
     -   <span data-ttu-id="c0eae-123">**ig.isc.password:** ps 的密码</span><span class="sxs-lookup"><span data-stu-id="c0eae-123">**ig.isc.password:** Password for PS</span></span>  
   
-    -   <span data-ttu-id="c0eae-124">**ig.isc.toolsrel:**特定版本</span><span class="sxs-lookup"><span data-stu-id="c0eae-124">**ig.isc.toolsrel:** Specific Release</span></span>  
+    -   <span data-ttu-id="c0eae-124">**ig.isc.toolsrel:** 特定版本</span><span class="sxs-lookup"><span data-stu-id="c0eae-124">**ig.isc.toolsrel:** Specific Release</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="c0eae-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c0eae-125">See Also</span></span>  
  [<span data-ttu-id="c0eae-126">创建 PeopleSoft HTTP 主机和端口</span><span class="sxs-lookup"><span data-stu-id="c0eae-126">Creating a PeopleSoft HTTP Host and Port</span></span>](../core/creating-a-peoplesoft-http-host-and-port.md)

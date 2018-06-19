@@ -1,11 +1,11 @@
 ---
-title: "示例体系结构： 基 BizTalk Server |Microsoft 文档"
-ms.custom: 
+title: 示例体系结构： 基 BizTalk Server |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, examples
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - BizTalk Server, architecture
 - architecture, security
 ms.assetid: 7ccc1ef3-670f-423f-b6ca-3d56b9bbeabf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271189"
 ---
 # <a name="sample-architecture-base-biztalk-server"></a><span data-ttu-id="b0268-102">示例结构：基本 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="b0268-102">Sample Architecture: Base BizTalk Server</span></span>
 <span data-ttu-id="b0268-103">本主题将介绍基本示例结构。</span><span class="sxs-lookup"><span data-stu-id="b0268-103">This topic discusses the base sample architecture.</span></span> <span data-ttu-id="b0268-104">其中介绍了 BizTalk Server 部署中与适配器无关的组件。</span><span class="sxs-lookup"><span data-stu-id="b0268-104">It describes the components in a BizTalk Server deployment that are adapter-independent.</span></span> <span data-ttu-id="b0268-105">建议所有 BizTalk Server 部署都至少包含这些组件。</span><span class="sxs-lookup"><span data-stu-id="b0268-105">We recommend that any BizTalk Server deployment have at least these components.</span></span>  

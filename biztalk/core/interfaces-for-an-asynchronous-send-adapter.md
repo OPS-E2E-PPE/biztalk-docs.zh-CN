@@ -1,14 +1,14 @@
 ---
-title: "异步接口发送适配器 |Microsoft 文档"
-ms.custom: 
+title: 异步接口发送适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6a214716-8f39-400d-a111-ba1b92a284b4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257757"
 ---
 # <a name="interfaces-for-an-asynchronous-send-adapter"></a><span data-ttu-id="a5337-102">异步接口发送适配器</span><span class="sxs-lookup"><span data-stu-id="a5337-102">Interfaces for an Asynchronous Send Adapter</span></span>
 <span data-ttu-id="a5337-103">一次发送一条消息的适配器可以同步或异步发送消息。</span><span class="sxs-lookup"><span data-stu-id="a5337-103">Adapters sending messages one at a time may send messages either synchronously or asynchronously.</span></span> <span data-ttu-id="a5337-104">如果适配器在执行发送操作时不阻止传输代理线程而是使用单独的线程，则异步发送消息。</span><span class="sxs-lookup"><span data-stu-id="a5337-104">An adapter sends messages asynchronously when it does not block the transport proxy thread but rather uses a separate thread while performing the send operations.</span></span> <span data-ttu-id="a5337-105">为了能够异步发送消息，适配器需要实现以下接口：</span><span class="sxs-lookup"><span data-stu-id="a5337-105">To be able to send messages asynchronously, an adapter needs to implement the following interfaces:</span></span>  

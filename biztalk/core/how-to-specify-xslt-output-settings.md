@@ -1,14 +1,14 @@
 ---
-title: "如何指定 XSLT 输出设置 |Microsoft 文档"
-ms.custom: 
+title: 如何指定 XSLT 输出设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c541432-fd4e-41cc-8bcc-f570ce5df439
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255333"
 ---
 # <a name="set-map-compilation-and-output-settings"></a><span data-ttu-id="5cce1-102">设置地图编译和输出设置</span><span class="sxs-lookup"><span data-stu-id="5cce1-102">Set map compilation and output settings</span></span>
 <span data-ttu-id="5cce1-103">在 BizTalk 映射程序中设置的映射属性。</span><span class="sxs-lookup"><span data-stu-id="5cce1-103">Set the map properties in the BizTalk mapper.</span></span> 

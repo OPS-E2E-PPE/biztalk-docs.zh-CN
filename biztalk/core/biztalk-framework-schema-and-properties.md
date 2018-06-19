@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8986e4a7-0c0a-415f-8a74-4fca71d3f1b5
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22232717"
 ---
 # <a name="biztalk-framework-schema-and-properties"></a><span data-ttu-id="ea5d3-102">BizTalk 框架架构和属性</span><span class="sxs-lookup"><span data-stu-id="ea5d3-102">BizTalk Framework Schema and Properties</span></span>
 <span data-ttu-id="ea5d3-103">**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**命名空间包含可用于设置 BizTalk Framework 反汇编程序管道组件的消息和一部分上下文属性的属性。</span><span class="sxs-lookup"><span data-stu-id="ea5d3-103">The **http://schemas.microsoft.com/BizTalk/2003/btf2-properties** namespace contains properties you can use to set message and part context properties for the BizTalk Framework Disassembler pipeline component.</span></span> <span data-ttu-id="ea5d3-104">BizTalk 框架拆装器管道组件使用这些属性在所创建消息中生成适当的标头。</span><span class="sxs-lookup"><span data-stu-id="ea5d3-104">The BizTalk Framework Disassembler pipeline component uses these properties to generate the appropriate headers in the message that is created.</span></span> <span data-ttu-id="ea5d3-105">下表对这些 BizTalk 框架属性进行了说明：</span><span class="sxs-lookup"><span data-stu-id="ea5d3-105">The following table describes the BizTalk Framework properties.</span></span>  

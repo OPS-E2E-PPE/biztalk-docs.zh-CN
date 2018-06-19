@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240173"
 ---
 # <a name="error---required-field-has-no-input"></a><span data-ttu-id="07fe4-102">错误-必填的字段具有没有输入</span><span class="sxs-lookup"><span data-stu-id="07fe4-102">Error - Required Field Has No Input</span></span>
 <span data-ttu-id="07fe4-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="07fe4-103">**Error Code**</span></span>  

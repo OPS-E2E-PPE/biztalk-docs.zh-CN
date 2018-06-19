@@ -15,7 +15,7 @@ helpviewer_keywords:
 - service instances, searching
 - service instances, running
 ms.assetid: fc65bf33-c013-4e6a-b9fd-b4536811e7b4
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22255197"
 ---
 # <a name="how-to-search-for-running-service-instances"></a><span data-ttu-id="de7c2-102">如何运行服务实例的搜索</span><span class="sxs-lookup"><span data-stu-id="de7c2-102">How to Search for Running Service Instances</span></span>
 <span data-ttu-id="de7c2-103">你可以使用 **查询** 在 BizTalk Server 管理控制台中搜索特定的选项卡冻结中, 处于活动状态，断点，计划，并在重试服务实例。</span><span class="sxs-lookup"><span data-stu-id="de7c2-103">You can use the **Query** tab in the BizTalk Server Administration Console to search for a specific dehydrated, active, in breakpoint, scheduled, and retrying service instance.</span></span>  

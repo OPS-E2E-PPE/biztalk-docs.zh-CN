@@ -1,11 +1,11 @@
 ---
-title: "如何配置出站映射接收端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置出站映射接收端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive ports], configuring
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - configuring, receive ports
 - receive ports, outbound maps
 ms.assetid: 01a864a1-9e8c-4b82-9d03-91be09d556da
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248509"
 ---
 # <a name="how-to-configure-outbound-maps-for-a-receive-port"></a><span data-ttu-id="ee8d0-102">如何为接收端口配置出站映射</span><span class="sxs-lookup"><span data-stu-id="ee8d0-102">How to Configure Outbound Maps for a Receive Port</span></span>
 <span data-ttu-id="ee8d0-103">本主题将介绍如何使用 BizTalk Server 管理控制台为接收端口配置出站映射。</span><span class="sxs-lookup"><span data-stu-id="ee8d0-103">This topic describes how to use the BizTalk Server Administration console to configure outbound maps for a receive port.</span></span> <span data-ttu-id="ee8d0-104">可以将出站映射与请求-响应接收端口一起使用，以将出站消息从一个架构转换到另一个架构；例如，将公司使用的消息转换到合作伙伴使用的架构中。</span><span class="sxs-lookup"><span data-stu-id="ee8d0-104">You can use outbound maps with request-response receive ports to transform outbound messages from one schema to another; for example to transform messages that your company uses into a schema that a partner uses.</span></span>  

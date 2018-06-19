@@ -1,11 +1,11 @@
 ---
-title: "如何安装 SSO 客户端实用工具 |Microsoft 文档"
-ms.custom: 
+title: 如何安装 SSO 客户端实用工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, SSO
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - client utility [SSO]
 - SSO, installing
 ms.assetid: e14d257e-2fde-46af-b90c-5dbc0884536b
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254245"
 ---
 # <a name="how-to-install-the-sso-client-utility"></a><span data-ttu-id="ee3ec-102">如何安装 SSO 客户端实用工具</span><span class="sxs-lookup"><span data-stu-id="ee3ec-102">How to Install the SSO Client Utility</span></span>
 <span data-ttu-id="ee3ec-103">独立的 SSO 客户端实用工具 （命令行实用程序和用户的基于接口） 允许最终用户在 SSO 数据库中配置其客户端映射。</span><span class="sxs-lookup"><span data-stu-id="ee3ec-103">The stand-alone SSO client utility (command-line utility and user interface-based) allows end users to configure their client mappings in the SSO database.</span></span> <span data-ttu-id="ee3ec-104">你可以从使用 SSO 管理功能安装的自解压文件 (SSOClientInstall.exe) 安装客户端实用工具。</span><span class="sxs-lookup"><span data-stu-id="ee3ec-104">You can install the client utility from a self-extracting file (SSOClientInstall.exe) which is installed with the SSO administration feature.</span></span> <span data-ttu-id="ee3ec-105">管理员还可以安装程序包可向客户端用户通过将安装包的副本放在网络共享上。</span><span class="sxs-lookup"><span data-stu-id="ee3ec-105">Administrators can also make the installer package available to client users by placing a copy of the installer package on a network share.</span></span>  

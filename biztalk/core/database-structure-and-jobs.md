@@ -1,11 +1,11 @@
 ---
-title: "数据库结构和作业 |Microsoft 文档"
-ms.custom: 
+title: 数据库结构和作业 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PurgeSubscriptionsJob_BizTalkMsgBoxDb job
@@ -32,7 +32,7 @@ helpviewer_keywords:
 - jobs [SQL Server Agent], Tracking database
 - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb job
 ms.assetid: f5f6b17d-0f5e-4821-a7eb-c345234ffc65
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -41,6 +41,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240557"
 ---
 # <a name="database-structure-and-jobs"></a><span data-ttu-id="bf009-102">数据库结构和作业</span><span class="sxs-lookup"><span data-stu-id="bf009-102">Database Structure and Jobs</span></span>
 <span data-ttu-id="bf009-103">本主题讨论数据库结构和数据库作业[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="bf009-103">This topic discusses the database structure and database jobs for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
@@ -67,8 +68,8 @@ ms.lasthandoff: 09/20/2017
 |<span data-ttu-id="bf009-119">CleanupBTFExpiredEntriesJob_BizTalkMgmtDb</span><span class="sxs-lookup"><span data-stu-id="bf009-119">CleanupBTFExpiredEntriesJob_BizTalkMgmtDb</span></span>|<span data-ttu-id="bf009-120">此作业清除 BizTalk 管理 (BizTalkMgmtDb) 数据库中过期的 BizTalk Framework (BTF) 条目。</span><span class="sxs-lookup"><span data-stu-id="bf009-120">This job cleans up expired BizTalk Framework (BTF) entries in the BizTalk Management (BizTalkMgmtDb) database.</span></span>|  
 |<span data-ttu-id="bf009-121">DTA 清除和存档 (BizTalkDTADb)</span><span class="sxs-lookup"><span data-stu-id="bf009-121">DTA Purge and Archive (BizTalkDTADb)</span></span>|<span data-ttu-id="bf009-122">此作业自动存档 BizTalk 跟踪 (BizTalkDTADb) 数据库中的数据并清除过时的数据。</span><span class="sxs-lookup"><span data-stu-id="bf009-122">This job automatically archives data in the BizTalk Tracking (BizTalkDTADb) database and purges obsolete data.</span></span> <span data-ttu-id="bf009-123">有关配置和运行此作业的详细信息，请参阅[存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)。</span><span class="sxs-lookup"><span data-stu-id="bf009-123">For more information about configuring and running this job, see [Archiving and Purging the BizTalk Tracking Database](../core/archiving-and-purging-the-biztalk-tracking-database.md).</span></span>|  
 |<span data-ttu-id="bf009-124">MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-124">MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-125">此作业检测 BizTalk Server 主机实例（NT 服务）停止的时间，并释放该主机实例已完成的所有工作，以便可以由其他主机实例进行处理。</span><span class="sxs-lookup"><span data-stu-id="bf009-125">This job detects when a BizTalk Server host instance (NT service) has stopped and releases all work that was being done by that host instance so that it can be worked on by another host instance.</span></span>|  
-|<span data-ttu-id="bf009-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-127">此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何订户引用的所有消息。</span><span class="sxs-lookup"><span data-stu-id="bf009-127">This job removes all messages that are no longer being referenced by any subscribers in the BizTalk MessageBox (BizTalkMsgBoxDb) database tables.</span></span> <span data-ttu-id="bf009-128">**注意：**这是通过 MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb 作业来启动这些计划的作业。</span><span class="sxs-lookup"><span data-stu-id="bf009-128">**Caution:**  This is an unscheduled job which is started by the MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb job.</span></span> <span data-ttu-id="bf009-129">不要手动启动此作业。</span><span class="sxs-lookup"><span data-stu-id="bf009-129">Do not manually start this job.</span></span>|  
-|<span data-ttu-id="bf009-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-131">此作业管理消息的引用计数日志，并确定消息何时不再被任何订户引用。</span><span class="sxs-lookup"><span data-stu-id="bf009-131">This job manages the reference count logs for messages and determines when a message is no longer referenced by any subscriber.</span></span> <span data-ttu-id="bf009-132">**注意：**即使此 SQL Server 代理作业计划运行一次，每分钟，此作业由调用的存储的过程包含逻辑，以确保持续运行此存储的过程。</span><span class="sxs-lookup"><span data-stu-id="bf009-132">**Note:**  Even thought this SQL Server Agent job is scheduled to run once per minute, the stored procedure that is called by this job contains logic to ensure that the stored procedure runs continually.</span></span> <span data-ttu-id="bf009-133">这是由设计行为实现的，不应修改。</span><span class="sxs-lookup"><span data-stu-id="bf009-133">This is by design behavior and should not be modified.</span></span>|  
+|<span data-ttu-id="bf009-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-126">MessageBox_Message_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-127">此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何订户引用的所有消息。</span><span class="sxs-lookup"><span data-stu-id="bf009-127">This job removes all messages that are no longer being referenced by any subscribers in the BizTalk MessageBox (BizTalkMsgBoxDb) database tables.</span></span> <span data-ttu-id="bf009-128">**注意：** 这是通过 MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb 作业来启动这些计划的作业。</span><span class="sxs-lookup"><span data-stu-id="bf009-128">**Caution:**  This is an unscheduled job which is started by the MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb job.</span></span> <span data-ttu-id="bf009-129">不要手动启动此作业。</span><span class="sxs-lookup"><span data-stu-id="bf009-129">Do not manually start this job.</span></span>|  
+|<span data-ttu-id="bf009-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-130">MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-131">此作业管理消息的引用计数日志，并确定消息何时不再被任何订户引用。</span><span class="sxs-lookup"><span data-stu-id="bf009-131">This job manages the reference count logs for messages and determines when a message is no longer referenced by any subscriber.</span></span> <span data-ttu-id="bf009-132">**注意：** 即使此 SQL Server 代理作业计划运行一次，每分钟，此作业由调用的存储的过程包含逻辑，以确保持续运行此存储的过程。</span><span class="sxs-lookup"><span data-stu-id="bf009-132">**Note:**  Even thought this SQL Server Agent job is scheduled to run once per minute, the stored procedure that is called by this job contains logic to ensure that the stored procedure runs continually.</span></span> <span data-ttu-id="bf009-133">这是由设计行为实现的，不应修改。</span><span class="sxs-lookup"><span data-stu-id="bf009-133">This is by design behavior and should not be modified.</span></span>|  
 |<span data-ttu-id="bf009-134">MessageBox_Parts_Cleanup_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-134">MessageBox_Parts_Cleanup_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-135">此作业删除 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库表中不再被任何消息引用的所有消息部分。</span><span class="sxs-lookup"><span data-stu-id="bf009-135">This job removes all message parts that are no longer being referenced by any messages in the BizTalk MessageBox (BizTalkMsgBoxDb) database tables.</span></span> <span data-ttu-id="bf009-136">所有消息都由一个或多个消息部分组成，这些消息部分包含实际的消息数据。</span><span class="sxs-lookup"><span data-stu-id="bf009-136">All messages are made up of one or more message parts, which contain the actual message data.</span></span>|  
 |<span data-ttu-id="bf009-137">MessageBox_UpdateStats_BizTalkMsgBoxDb</span><span class="sxs-lookup"><span data-stu-id="bf009-137">MessageBox_UpdateStats_BizTalkMsgBoxDb</span></span>|<span data-ttu-id="bf009-138">此作业手动更新 BizTalk MessageBox (BizTalkMsgBoxDb) 数据库的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bf009-138">This job manually updates the statistics for the BizTalk MessageBox (BizTalkMsgBoxDb) database.</span></span>|  
 |<span data-ttu-id="bf009-139">监视 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="bf009-139">Monitor BizTalk Server</span></span>|<span data-ttu-id="bf009-140">此作业在 BizTalkMgmtDb、BizTalkMsgBoxDb 和 BizTalkDTADb 数据库中扫描任何已知的问题，包括孤立实例。</span><span class="sxs-lookup"><span data-stu-id="bf009-140">This job scans the BizTalkMgmtDb, BizTalkMsgBoxDb and BizTalkDTADb database for any known issues, including orphaned instances.</span></span>|  

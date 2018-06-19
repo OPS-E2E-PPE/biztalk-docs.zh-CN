@@ -1,14 +1,14 @@
 ---
-title: "步骤 7 （在本地）： 创建业务流程 |Microsoft 文档"
-ms.custom: 
+title: 步骤 7 （在本地）： 创建业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c0b6d0e-cf00-4eee-9b89-28210bad46f4
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22280221"
 ---
 # <a name="step-7-on-premises-create-an-orchestration"></a><span data-ttu-id="2e47c-102">步骤 7 （在本地）： 创建业务流程</span><span class="sxs-lookup"><span data-stu-id="2e47c-102">Step 7 (On Premises): Create an Orchestration</span></span>
 <span data-ttu-id="2e47c-103">根据业务方案之后,[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收的销售订单消息从 Service Bus 队列，它需要检查消息中订购数量是否大于 100。</span><span class="sxs-lookup"><span data-stu-id="2e47c-103">According to the business scenario, after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives the sales order message from the Service Bus Queue, it needs to check whether the quantity ordered in the message is greater than 100.</span></span> <span data-ttu-id="2e47c-104">如果数量大于 100，将消息插入**SalesOrder**表。</span><span class="sxs-lookup"><span data-stu-id="2e47c-104">If the quantity is greater than 100, the message is inserted into the **SalesOrder** table.</span></span> <span data-ttu-id="2e47c-105">否则会将消息发送到共享文件位置。</span><span class="sxs-lookup"><span data-stu-id="2e47c-105">Otherwise, the message is sent to a shared file location.</span></span> <span data-ttu-id="2e47c-106">Northwind 通过创建一个业务流程来实现此业务逻辑。</span><span class="sxs-lookup"><span data-stu-id="2e47c-106">Northwind achieves this business logic by creating an orchestration.</span></span> <span data-ttu-id="2e47c-107">本主题提供如何创建该业务流程的分步指南。</span><span class="sxs-lookup"><span data-stu-id="2e47c-107">This topic provides step-by-step guidance on how to create the orchestration.</span></span>  
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/20/2017
 |------------------|---------------------------|  
 |<span data-ttu-id="2e47c-118">Message1_SO_Inbound</span><span class="sxs-lookup"><span data-stu-id="2e47c-118">Message1_SO_Inbound</span></span>|<span data-ttu-id="2e47c-119">此消息是的一个实例**ECommerceSalesOrder.xsd**架构。</span><span class="sxs-lookup"><span data-stu-id="2e47c-119">This message is an instance of the **ECommerceSalesOrder.xsd** schema.</span></span>|  
 |<span data-ttu-id="2e47c-120">Message2_SO_Inbound</span><span class="sxs-lookup"><span data-stu-id="2e47c-120">Message2_SO_Inbound</span></span>|<span data-ttu-id="2e47c-121">此消息是一份**Message1_SO_Inbound**。</span><span class="sxs-lookup"><span data-stu-id="2e47c-121">This message is a copy of the **Message1_SO_Inbound**.</span></span> <span data-ttu-id="2e47c-122">作为最佳实践，你必须创建该消息的副本，然后修改新的消息，使原始消息保持不变。</span><span class="sxs-lookup"><span data-stu-id="2e47c-122">As a best practice, you must create a copy of the message and then modify the new message, leaving the original message intact.</span></span> <span data-ttu-id="2e47c-123">有关详细信息，请参阅[BizTalk Server 消息](http://msdn.microsoft.com/library/aa560436)。</span><span class="sxs-lookup"><span data-stu-id="2e47c-123">For more information, see [The BizTalk Server Message](http://msdn.microsoft.com/library/aa560436).</span></span>|  
-|<span data-ttu-id="2e47c-124">Message1_SO_Outbound</span><span class="sxs-lookup"><span data-stu-id="2e47c-124">Message1_SO_Outbound</span></span>|<span data-ttu-id="2e47c-125">此消息是的一个实例**TableOperations.dbo.SalesOrder (Insert)**架构。</span><span class="sxs-lookup"><span data-stu-id="2e47c-125">This message is an instance of the **TableOperations.dbo.SalesOrder (Insert)** schema.</span></span>|  
+|<span data-ttu-id="2e47c-124">Message1_SO_Outbound</span><span class="sxs-lookup"><span data-stu-id="2e47c-124">Message1_SO_Outbound</span></span>|<span data-ttu-id="2e47c-125">此消息是的一个实例**TableOperations.dbo.SalesOrder (Insert)** 架构。</span><span class="sxs-lookup"><span data-stu-id="2e47c-125">This message is an instance of the **TableOperations.dbo.SalesOrder (Insert)** schema.</span></span>|  
   
 #### <a name="to-create-the-messages"></a><span data-ttu-id="2e47c-126">创建消息的步骤</span><span class="sxs-lookup"><span data-stu-id="2e47c-126">To create the messages</span></span>  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 09/20/2017
   
         |<span data-ttu-id="2e47c-185">属性名称</span><span class="sxs-lookup"><span data-stu-id="2e47c-185">Property name</span></span>|<span data-ttu-id="2e47c-186">值</span><span class="sxs-lookup"><span data-stu-id="2e47c-186">Value</span></span>|  
         |-------------------|-----------|  
-        |<span data-ttu-id="2e47c-187">Identifier</span><span class="sxs-lookup"><span data-stu-id="2e47c-187">Identifier</span></span>|<span data-ttu-id="2e47c-188">输入`Yes`。</span><span class="sxs-lookup"><span data-stu-id="2e47c-188">Enter `Yes`.</span></span> <span data-ttu-id="2e47c-189">**注意：**其他路由是默认情况下名为**Else**。</span><span class="sxs-lookup"><span data-stu-id="2e47c-189">**Note:**  The other route is by default named **Else**.</span></span>|  
+        |<span data-ttu-id="2e47c-187">Identifier</span><span class="sxs-lookup"><span data-stu-id="2e47c-187">Identifier</span></span>|<span data-ttu-id="2e47c-188">输入`Yes`。</span><span class="sxs-lookup"><span data-stu-id="2e47c-188">Enter `Yes`.</span></span> <span data-ttu-id="2e47c-189">**注意：** 其他路由是默认情况下名为**Else**。</span><span class="sxs-lookup"><span data-stu-id="2e47c-189">**Note:**  The other route is by default named **Else**.</span></span>|  
         |<span data-ttu-id="2e47c-190">表达式</span><span class="sxs-lookup"><span data-stu-id="2e47c-190">Expression</span></span>|<span data-ttu-id="2e47c-191">输入`quantityOrdered > 100`。</span><span class="sxs-lookup"><span data-stu-id="2e47c-191">Enter `quantityOrdered > 100`.</span></span>|  
   
          <span data-ttu-id="2e47c-192">现在你有两条路线可用。</span><span class="sxs-lookup"><span data-stu-id="2e47c-192">You now have two routes available.</span></span> <span data-ttu-id="2e47c-193">如果中的值**quantityOrdered**变量大于 100，消息将**是**路由。</span><span class="sxs-lookup"><span data-stu-id="2e47c-193">If the value in the **quantityOrdered** variable is greater than 100, the message takes the **Yes** route.</span></span> <span data-ttu-id="2e47c-194">否则，它采用**Else**路由。</span><span class="sxs-lookup"><span data-stu-id="2e47c-194">Otherwise, it takes the **Else** route.</span></span> <span data-ttu-id="2e47c-195">现在你必须定义要在每个路线中执行的操作。</span><span class="sxs-lookup"><span data-stu-id="2e47c-195">You must now define the actions to be performed within each route.</span></span>  

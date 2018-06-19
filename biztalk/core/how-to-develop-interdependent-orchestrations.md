@@ -1,14 +1,14 @@
 ---
-title: "如何开发相互依赖的业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何开发相互依赖的业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5464096e-66d8-48de-bc02-c754c5cfbada
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249477"
 ---
 # <a name="how-to-develop-interdependent-orchestrations"></a><span data-ttu-id="a149c-102">如何开发相互依赖的业务流程</span><span class="sxs-lookup"><span data-stu-id="a149c-102">How to Develop Interdependent Orchestrations</span></span>
 <span data-ttu-id="a149c-103">你可以使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]开发一套提供相互依赖 Web 服务的业务流程。</span><span class="sxs-lookup"><span data-stu-id="a149c-103">You can use [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] to develop a set of orchestrations that have interdependent Web services.</span></span> <span data-ttu-id="a149c-104">当必须引用数据类型和/或业务流程从中调用它们中的端口的业务流程时，会发生此情况。</span><span class="sxs-lookup"><span data-stu-id="a149c-104">This scenario arises when you have orchestrations that reference data types and/or ports in the orchestration from which they were called.</span></span> <span data-ttu-id="a149c-105">这种方案的示例的特征如下：</span><span class="sxs-lookup"><span data-stu-id="a149c-105">An example of this type of scenario is characterized by the following:</span></span>  

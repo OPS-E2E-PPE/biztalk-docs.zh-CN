@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256573"
 ---
 # <a name="information---display-xslt-file"></a><span data-ttu-id="0da9a-102">信息-显示 XSLT 文件</span><span class="sxs-lookup"><span data-stu-id="0da9a-102">Information - Display XSLT File</span></span>
 <span data-ttu-id="0da9a-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="0da9a-103">**Error Code**</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241397"
 ---
 # <a name="error---required-target-with-optional-source"></a><span data-ttu-id="e5f08-102">错误-需要目标节点具有可选的源</span><span class="sxs-lookup"><span data-stu-id="e5f08-102">Error - Required Target with Optional Source</span></span>
 <span data-ttu-id="e5f08-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="e5f08-103">**Error Code**</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249381"
 ---
 # <a name="how-to-create-a-new-gateway-node"></a><span data-ttu-id="2bc60-102">如何创建新的网关节点</span><span class="sxs-lookup"><span data-stu-id="2bc60-102">How to Create a New Gateway Node</span></span>
 <span data-ttu-id="2bc60-103">请按照以下步骤在 PeopleSoft Enterprise 中创建和配置新的网关节点。</span><span class="sxs-lookup"><span data-stu-id="2bc60-103">Follow these steps to create and configure a new Gateway node in PeopleSoft Enterprise.</span></span>  
@@ -33,19 +34,19 @@ ms.lasthandoff: 09/20/2017
   
 4.  <span data-ttu-id="2bc60-108">单击**节点**选项卡，然后输入以下信息：</span><span class="sxs-lookup"><span data-stu-id="2bc60-108">Click the **Node** tab, and enter the following information:</span></span>  
   
-    1.  <span data-ttu-id="2bc60-109">**描述：**输入节点的说明。</span><span class="sxs-lookup"><span data-stu-id="2bc60-109">**Description:** Enter a description for the node.</span></span>  
+    1.  <span data-ttu-id="2bc60-109">**描述：** 输入节点的说明。</span><span class="sxs-lookup"><span data-stu-id="2bc60-109">**Description:** Enter a description for the node.</span></span>  
   
-    2.  <span data-ttu-id="2bc60-110">**节点类型：**选择**外部**。</span><span class="sxs-lookup"><span data-stu-id="2bc60-110">**Node Type:** Select **External**.</span></span>  
+    2.  <span data-ttu-id="2bc60-110">**节点类型：** 选择**外部**。</span><span class="sxs-lookup"><span data-stu-id="2bc60-110">**Node Type:** Select **External**.</span></span>  
   
-    3.  <span data-ttu-id="2bc60-111">**路由类型：**选择**隐式**。</span><span class="sxs-lookup"><span data-stu-id="2bc60-111">**Routing Type:** Select **Implicit**.</span></span>  
+    3.  <span data-ttu-id="2bc60-111">**路由类型：** 选择**隐式**。</span><span class="sxs-lookup"><span data-stu-id="2bc60-111">**Routing Type:** Select **Implicit**.</span></span>  
   
      ![](../core/media/psadapter-34-task-gatewaynodeconnector.gif "PSAdapter_34_Task_GatewayNodeConnector")  
   
 5.  <span data-ttu-id="2bc60-112">单击**连接器**选项卡，然后输入以下信息：</span><span class="sxs-lookup"><span data-stu-id="2bc60-112">Click the **Connectors** tab, and enter the following information:</span></span>  
   
-    1.  <span data-ttu-id="2bc60-113">**网关 ID:**输入`LOCAL`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-113">**Gateway ID:** Enter `LOCAL`.</span></span>  
+    1.  <span data-ttu-id="2bc60-113">**网关 ID:** 输入`LOCAL`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-113">**Gateway ID:** Enter `LOCAL`.</span></span>  
   
-    2.  <span data-ttu-id="2bc60-114">**连接器 ID:**输入`HTTPTARGET`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-114">**Connector ID:** Enter `HTTPTARGET`.</span></span>  
+    2.  <span data-ttu-id="2bc60-114">**连接器 ID:** 输入`HTTPTARGET`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-114">**Connector ID:** Enter `HTTPTARGET`.</span></span>  
   
      ![](../core/media/psadapter-35-task-gatewayhttptarget.gif "PSAdapter_35_Task_GatewayHTTPTarget")  
   
@@ -57,11 +58,11 @@ ms.lasthandoff: 09/20/2017
   
 8.  <span data-ttu-id="2bc60-117">上**属性**选项卡上，输入以下信息：</span><span class="sxs-lookup"><span data-stu-id="2bc60-117">On the **Properties** tab, enter the following information:</span></span>  
   
-    1.  <span data-ttu-id="2bc60-118">**标头：**输入`Y`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-118">**Header:** Enter `Y`.</span></span>  
+    1.  <span data-ttu-id="2bc60-118">**标头：** 输入`Y`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-118">**Header:** Enter `Y`.</span></span>  
   
-    2.  <span data-ttu-id="2bc60-119">**HTTPPROPERTY:**输入`POST`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-119">**HTTPPROPERTY:** Enter `POST`.</span></span>  
+    2.  <span data-ttu-id="2bc60-119">**HTTPPROPERTY:** 输入`POST`。</span><span class="sxs-lookup"><span data-stu-id="2bc60-119">**HTTPPROPERTY:** Enter `POST`.</span></span>  
   
-    3.  <span data-ttu-id="2bc60-120">**PrimaryURL:**输入的 IP 地址和端口的目标计算机 （的开发计算机）。</span><span class="sxs-lookup"><span data-stu-id="2bc60-120">**PrimaryURL:** Enter the IP address and port of the target computer (the development computer).</span></span>  
+    3.  <span data-ttu-id="2bc60-120">**PrimaryURL:** 输入的 IP 地址和端口的目标计算机 （的开发计算机）。</span><span class="sxs-lookup"><span data-stu-id="2bc60-120">**PrimaryURL:** Enter the IP address and port of the target computer (the development computer).</span></span>  
   
     > [!NOTE]
     >  <span data-ttu-id="2bc60-121">**接收端口**之前已设置。</span><span class="sxs-lookup"><span data-stu-id="2bc60-121">The **Receive Port** was previously set.</span></span>  

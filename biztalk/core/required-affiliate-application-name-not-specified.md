@@ -1,14 +1,14 @@
 ---
-title: "未指定所需的关联应用程序名称 |Microsoft 文档"
-ms.custom: 
+title: 未指定所需的关联应用程序名称 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b3e82a39-b052-4702-bfe2-700756a0ee6a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268461"
 ---
 # <a name="required-affiliate-application-name-not-specified"></a><span data-ttu-id="d6c67-102">未指定所需的关联应用程序名称</span><span class="sxs-lookup"><span data-stu-id="d6c67-102">Required affiliate application name not specified</span></span>
 ## <a name="details"></a><span data-ttu-id="d6c67-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d6c67-103">Details</span></span>  

@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ad7119b-4e39-43df-9dba-a04382eb6db2
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22246709"
 ---
 # <a name="flat-file-messages-with-delimited-records"></a><span data-ttu-id="99897-102">带有分隔记录的平面文件消息</span><span class="sxs-lookup"><span data-stu-id="99897-102">Flat File Messages with Delimited Records</span></span>
 <span data-ttu-id="99897-103">平面文件实例消息中的分隔记录包含嵌套记录和/或使用预定义的字符或一组字符分隔的各个字段（数据项）。</span><span class="sxs-lookup"><span data-stu-id="99897-103">Delimited records within a flat file instance message contain nested records and/or individual fields (items of data) that are separated by a predefined character or set of characters.</span></span> <span data-ttu-id="99897-104">根据这些分隔符对字段进行解析。</span><span class="sxs-lookup"><span data-stu-id="99897-104">The fields are parsed according to these separating delimiters.</span></span> <span data-ttu-id="99897-105">例如，下面是某个平面文件实例消息中的分隔记录，其中包含假设的采购订单中的两个行项目：</span><span class="sxs-lookup"><span data-stu-id="99897-105">For example, consider the following delimited records from a flat file instance message, which contain two line items from a hypothetical purchase order:</span></span>  

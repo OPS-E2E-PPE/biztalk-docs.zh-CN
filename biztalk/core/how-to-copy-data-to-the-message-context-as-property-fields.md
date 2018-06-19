@@ -1,14 +1,14 @@
 ---
-title: "如何将数据复制到作为属性字段的消息上下文 |Microsoft 文档"
-ms.custom: 
+title: 如何将数据复制到作为属性字段的消息上下文 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4fdfe475-d9b4-4cf9-898f-dbd7e719c27c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249981"
 ---
 # <a name="how-to-copy-data-to-the-message-context-as-property-fields"></a><span data-ttu-id="f0f09-102">如何将数据复制到作为属性字段的消息上下文</span><span class="sxs-lookup"><span data-stu-id="f0f09-102">How to Copy Data to the Message Context as Property Fields</span></span>
 <span data-ttu-id="f0f09-103">你可以将提升属性作为**属性字段**方式与将提升属性作为得多相同**可分辨字段**，，也可以使用**快速升级**到功能优化过程。</span><span class="sxs-lookup"><span data-stu-id="f0f09-103">You can promote a property as a **Property Field** in much the same way as promoting a property as a **Distinguished Field**, and you can also use the **Quick Promotion** feature to streamline the process.</span></span>  
@@ -62,7 +63,7 @@ ms.lasthandoff: 09/20/2017
   
 9. <span data-ttu-id="f0f09-125">双击**属性**刚刚添加到的行的列单元格**属性字段列表**，然后在下拉列表中，选择**属性架构**和对应**Field 元素**到想要提升所选的节点的节点。</span><span class="sxs-lookup"><span data-stu-id="f0f09-125">Double-click **Property** column cell for the row you just added to the **Property Fields List**, and then in the drop-down list, select the **Property Schema** and corresponding **Field Element** node into which you want to promote the selected node.</span></span> <span data-ttu-id="f0f09-126">下拉列表值具有窗体 X:Y，其中 X 是中的属性架构的命名空间前缀**属性架构列表**，Y 是节点名称和**Field 元素**该属性架构中的节点。</span><span class="sxs-lookup"><span data-stu-id="f0f09-126">Drop-down list values have the form X:Y, where X is the namespace prefix of a property schema in the **Property Schemas List**, and Y is the node name of a **Field Element** node in that property schema.</span></span>  
   
-     <span data-ttu-id="f0f09-127">下拉列表中的默认值是第一个属性架构**（Field 元素）**尚未升级，节点按字母顺序在所有相关属性架构。</span><span class="sxs-lookup"><span data-stu-id="f0f09-127">The default value in the drop-down list is the first property schema **(Field Element)** node that has not yet been promoted, sorted alphabetically across all relevant property schemas.</span></span> <span data-ttu-id="f0f09-128">此节点一般不会是要将给定架构节点升级到的属性架构节点。</span><span class="sxs-lookup"><span data-stu-id="f0f09-128">This will rarely be the property schema node into which you intend to promote a given schema node.</span></span>  
+     <span data-ttu-id="f0f09-127">下拉列表中的默认值是第一个属性架构 **（Field 元素）** 尚未升级，节点按字母顺序在所有相关属性架构。</span><span class="sxs-lookup"><span data-stu-id="f0f09-127">The default value in the drop-down list is the first property schema **(Field Element)** node that has not yet been promoted, sorted alphabetically across all relevant property schemas.</span></span> <span data-ttu-id="f0f09-128">此节点一般不会是要将给定架构节点升级到的属性架构节点。</span><span class="sxs-lookup"><span data-stu-id="f0f09-128">This will rarely be the property schema node into which you intend to promote a given schema node.</span></span>  
   
 10. <span data-ttu-id="f0f09-129">你可以在对话框中，单击左侧架构树中选择更多节点升级**添加**和每个所选内容后再执行步骤 9。</span><span class="sxs-lookup"><span data-stu-id="f0f09-129">You can select additional nodes for promotion in the schema tree on the left side of the dialog box, clicking **Add** and then performing step 9 after each selection.</span></span>  
   

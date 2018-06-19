@@ -1,14 +1,14 @@
 ---
-title: "如何确定当前单一登录访问 |Microsoft 文档"
-ms.custom: 
+title: 如何确定当前单一登录访问 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cab68dfc-27cd-4f7c-a0df-20c670306358
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249253"
 ---
 # <a name="how-to-determine-current-single-sign-on-access"></a><span data-ttu-id="6b44d-102">如何确定当前单一登录访问</span><span class="sxs-lookup"><span data-stu-id="6b44d-102">How to Determine Current Single Sign-On Access</span></span>
 <span data-ttu-id="6b44d-103">可能需要对用户执行的首要任务之一是确定已为当前用户安装了哪些关联应用程序。</span><span class="sxs-lookup"><span data-stu-id="6b44d-103">One of the first tasks you might need to perform for a user is to determine what affiliated applications have already been set up for the current user.</span></span> <span data-ttu-id="6b44d-104">通过调用 ISSOMapper.GetApplications 可以执行此查询。</span><span class="sxs-lookup"><span data-stu-id="6b44d-104">You can perform this query with a call to ISSOMapper.GetApplications.</span></span>  

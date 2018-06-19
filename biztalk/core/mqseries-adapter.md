@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263173"
 ---
 # <a name="mqseries-adapter"></a><span data-ttu-id="7b34e-102">MQSeries 适配器</span><span class="sxs-lookup"><span data-stu-id="7b34e-102">MQSeries Adapter</span></span>
 <span data-ttu-id="7b34e-103">MQSeries 适配器在 Microsoft BizTalk Server 和 IBM MQSeries 服务器之间起到桥梁作用，从而您可以在创建业务流程时使用全部选项。</span><span class="sxs-lookup"><span data-stu-id="7b34e-103">The MQSeries adapter serves as a bridge between Microsoft BizTalk Server and IBM MQSeries servers, enabling you to use a full range of options in creating your business processes.</span></span>  

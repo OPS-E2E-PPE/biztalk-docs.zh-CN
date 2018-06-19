@@ -1,14 +1,14 @@
 ---
-title: "步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议 |Microsoft 文档"
-ms.custom: 
+title: 步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8fcdb3af-727a-4d20-9dcf-cf162e7d3398
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279197"
 ---
 # <a name="step-10-configure-the-x12-and-as2-trading-partner-agreement"></a><span data-ttu-id="6ac0b-102">步骤 10： 配置 X12 和 AS2 贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="6ac0b-102">Step 10: Configure the X12 and AS2 Trading Partner Agreement</span></span>
 <span data-ttu-id="6ac0b-103">![步骤 10 11](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")</span><span class="sxs-lookup"><span data-stu-id="6ac0b-103">![Step 10 of 11](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")</span></span>  
@@ -53,7 +54,7 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="6ac0b-122">设置本属性可以确保在生成 MDN 时会使用的参与方属性，而非接收的 AS2 消息的 AS2 标头。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-122">Setting this property ensures that the party properties will be used when generating the MDN, rather than the AS2 headers of the received AS2 message.</span></span>  
   
-    3.  <span data-ttu-id="6ac0b-123">在**确认 (Mdn)**页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="6ac0b-123">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
+    3.  <span data-ttu-id="6ac0b-123">在**确认 (Mdn)** 页上，执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="6ac0b-123">In the **Acknowledgements (MDNs)** page, do the following:</span></span>  
   
         1.  <span data-ttu-id="6ac0b-124">选择**请求 MDN**复选框。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-124">Select the **Request MDN** check box.</span></span>  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
         3.  <span data-ttu-id="6ac0b-126">选择**请求异步 MDN**复选框。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-126">Select the **Request asynchronous MDN** check box.</span></span>  
   
-        4.  <span data-ttu-id="6ac0b-127">在**回执送达选项 (URL)**文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-127">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
+        4.  <span data-ttu-id="6ac0b-127">在**回执送达选项 (URL)** 文本框中，输入`http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-127">In the **Receipt-Delivery-Option (URL)** text box, enter `http://localhost/Fabrikam/Default.aspx?Destination=_MDNToFabrikam`.</span></span>  
   
 9. <span data-ttu-id="6ac0b-128">在上执行以下任务**Contoso-> Fabrikam**选项卡。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-128">Perform the following tasks on the **Contoso->Fabrikam** tab.</span></span>  
   
@@ -121,14 +122,14 @@ ms.lasthandoff: 09/20/2017
   
         |<span data-ttu-id="6ac0b-166">使用此选项</span><span class="sxs-lookup"><span data-stu-id="6ac0b-166">Use this</span></span>|<span data-ttu-id="6ac0b-167">执行的操作</span><span class="sxs-lookup"><span data-stu-id="6ac0b-167">To do this</span></span>|  
         |--------------|----------------|  
-        |<span data-ttu-id="6ac0b-168">**Default**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-168">**Default**</span></span>|<span data-ttu-id="6ac0b-169">选择**默认**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-169">Select **Default**.</span></span> <span data-ttu-id="6ac0b-170">**注意：**当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-170">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
+        |<span data-ttu-id="6ac0b-168">**Default**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-168">**Default**</span></span>|<span data-ttu-id="6ac0b-169">选择**默认**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-169">Select **Default**.</span></span> <span data-ttu-id="6ac0b-170">**注意：** 当作为默认值的值选择此行**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，和**目标命名空间**不的匹配项消息。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-170">**Note:**  When you select this row as the default, the values for **GS1**, **GS2**, **GS3**, **GS7**, and **GS8** are used even if the values for **Transaction Type**, **Version/Release**, and **Target namespace** are not a match for the message.</span></span>|  
         |<span data-ttu-id="6ac0b-171">**事务类型**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-171">**Transaction Type**</span></span>|<span data-ttu-id="6ac0b-172">例如，选择你的测试消息的消息类型**864 – 短信**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-172">Select the message type of your test message, for example, **864 – Text Message**.</span></span>|  
         |<span data-ttu-id="6ac0b-173">**版本/发行版**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-173">**Version/Release**</span></span>|<span data-ttu-id="6ac0b-174">输入**00401**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-174">Enter **00401**.</span></span>|  
         |<span data-ttu-id="6ac0b-175">**目标命名空间**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-175">**Target namespace**</span></span>|<span data-ttu-id="6ac0b-176">选择**http://schemas.microsoft.com/BizTalk/EDI/X12/2006**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-176">Select **http://schemas.microsoft.com/BizTalk/EDI/X12/2006**.</span></span>|  
         |<span data-ttu-id="6ac0b-177">**GS1**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-177">**GS1**</span></span>|<span data-ttu-id="6ac0b-178">验证是否选择测试消息的消息类型，例如， **TX-短信 (864)**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-178">Verify that the message type of the test message is selected, for example, **TX - Text Message (864)**.</span></span>|  
         |<span data-ttu-id="6ac0b-179">**GS2**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-179">**GS2**</span></span>|<span data-ttu-id="6ac0b-180">输入**01**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-180">Enter **01**.</span></span>|  
         |<span data-ttu-id="6ac0b-181">**GS3**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-181">**GS3**</span></span>|<span data-ttu-id="6ac0b-182">输入**7654321**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-182">Enter **7654321**.</span></span>|  
-        |<span data-ttu-id="6ac0b-183">**GS4**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-183">**GS4**</span></span>|<span data-ttu-id="6ac0b-184">选择所需的日期格式。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-184">Select the date format that you want.</span></span> <span data-ttu-id="6ac0b-185">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-185">Select **CCYYMMDD**.</span></span> <span data-ttu-id="6ac0b-186">**注意：**你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-186">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="6ac0b-187">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-187">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
+        |<span data-ttu-id="6ac0b-183">**GS4**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-183">**GS4**</span></span>|<span data-ttu-id="6ac0b-184">选择所需的日期格式。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-184">Select the date format that you want.</span></span> <span data-ttu-id="6ac0b-185">选择**CCYYMMDD**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-185">Select **CCYYMMDD**.</span></span> <span data-ttu-id="6ac0b-186">**注意：** 你需要在下拉列表中选择值，而不仅仅是在要显示默认值的字段中单击。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-186">**Note:**  You have to select the value in the drop-down list, not just click in the field to display the default.</span></span> <span data-ttu-id="6ac0b-187">如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-187">If you click in the field without selecting the value from the drop-down list, the value will not actually be selected.</span></span>|  
         |<span data-ttu-id="6ac0b-188">**GS5**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-188">**GS5**</span></span>|<span data-ttu-id="6ac0b-189">选择所需的时间格式。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-189">Select the time format that you want.</span></span> <span data-ttu-id="6ac0b-190">选择**HHMMSSdd**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-190">Select **HHMMSSdd**.</span></span>|  
         |<span data-ttu-id="6ac0b-191">**GS7**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-191">**GS7**</span></span>|<span data-ttu-id="6ac0b-192">选择**T-运输数据协调委员会 (TDCC)**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-192">Select **T - Transportation Data Coordinating Committee (TDCC)**.</span></span>|  
         |<span data-ttu-id="6ac0b-193">**GS8**</span><span class="sxs-lookup"><span data-stu-id="6ac0b-193">**GS8**</span></span>|<span data-ttu-id="6ac0b-194">验证已作为中输入的 EDI 版本**00401**。</span><span class="sxs-lookup"><span data-stu-id="6ac0b-194">Verify that the EDI version has been entered as **00401**.</span></span>|  

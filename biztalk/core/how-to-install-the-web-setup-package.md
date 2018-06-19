@@ -1,18 +1,18 @@
 ---
-title: "如何安装的 Web 安装程序包 |Microsoft 文档"
-ms.custom: 
+title: 如何安装的 Web 安装程序包 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, Web services
 - Web services, deploying
 - Web services, installing
 ms.assetid: c6b38a2f-ad07-4ccd-b267-9e3510df88c3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254125"
 ---
 # <a name="how-to-install-the-web-setup-package"></a><span data-ttu-id="403bc-102">如何安装 Web 安装程序包</span><span class="sxs-lookup"><span data-stu-id="403bc-102">How to Install the Web Setup Package</span></span>
 <span data-ttu-id="403bc-103">使用分发文件夹的内容在目标计算机上安装 Web Services。</span><span class="sxs-lookup"><span data-stu-id="403bc-103">Use the contents of the distribution folder to setup the Web service on a destination computer.</span></span>  

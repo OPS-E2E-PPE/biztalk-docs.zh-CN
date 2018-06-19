@@ -1,18 +1,18 @@
 ---
-title: "键入菜单选项 |Microsoft 文档"
-ms.custom: 
+title: 键入菜单选项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tracking Profile Editor, menu options
 - activities [BAM], importing
 - activities [BAM], definitions
 ms.assetid: 5179fcb5-6dab-481d-ad89-3868c8b07383
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26010622"
 ---
 # <a name="tpe-menu-options"></a><span data-ttu-id="c8e96-102">键入菜单选项</span><span class="sxs-lookup"><span data-stu-id="c8e96-102">TPE Menu Options</span></span>
 <span data-ttu-id="c8e96-103">本主题介绍跟踪配置文件编辑器 (TPE) 的菜单选项。</span><span class="sxs-lookup"><span data-stu-id="c8e96-103">This topic describes the menu options of the Tracking Profile Editor (TPE).</span></span> <span data-ttu-id="c8e96-104">主菜单包括“文件”、“工具”和“帮助”。</span><span class="sxs-lookup"><span data-stu-id="c8e96-104">The main menus include File, Tools, and Help.</span></span>  

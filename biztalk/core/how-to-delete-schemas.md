@@ -1,14 +1,14 @@
 ---
-title: "如何删除架构 |Microsoft 文档"
-ms.custom: 
+title: 如何删除架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b438d030-c4da-403b-ae10-abb005423651
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248645"
 ---
 # <a name="how-to-delete-schemas"></a><span data-ttu-id="c451f-102">如何删除架构</span><span class="sxs-lookup"><span data-stu-id="c451f-102">How to Delete Schemas</span></span>
 <span data-ttu-id="c451f-103">有时，您可能希望将架构从其 BizTalk 项目中排除，同时还要将该架构从硬盘中完全删除。</span><span class="sxs-lookup"><span data-stu-id="c451f-103">Sometimes you might want to not only exclude a schema from its BizTalk project, but also completely remove the schema from your hard disk.</span></span> <span data-ttu-id="c451f-104">此操作称为删除架构，而不是排除架构。</span><span class="sxs-lookup"><span data-stu-id="c451f-104">This is known as deleting, as opposed to excluding, a schema.</span></span> <span data-ttu-id="c451f-105">本主题将介绍删除架构所需的步骤。</span><span class="sxs-lookup"><span data-stu-id="c451f-105">This topic describes the steps required to delete a schema.</span></span>  

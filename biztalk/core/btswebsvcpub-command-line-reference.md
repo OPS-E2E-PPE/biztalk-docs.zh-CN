@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e19dd4d-9f2c-4a17-9437-8701e1c274fb
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "22232853"
 ---
 # <a name="btswebsvcpub-command-line-reference"></a><span data-ttu-id="0a07e-102">BTSWebSvcPub 命令行参考</span><span class="sxs-lookup"><span data-stu-id="0a07e-102">BTSWebSvcPub Command-Line Reference</span></span>
 <span data-ttu-id="0a07e-103">本主题提供 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含的 BTSWebSvcPub 命令行工具的参考信息。</span><span class="sxs-lookup"><span data-stu-id="0a07e-103">This topic provides reference information for the BTSWebSvcPub command-line tool included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="0a07e-104">您可以使用 BTSWebSvcPub 创建 Web Services (.asmx)，以通过 Web Services 发布业务流程，BTSWebSvcPub 的具体用法如下：</span><span class="sxs-lookup"><span data-stu-id="0a07e-104">You can use BTSWebSvcPub to create Web services (.asmx) for publishing orchestrations through Web services as follows:</span></span>  

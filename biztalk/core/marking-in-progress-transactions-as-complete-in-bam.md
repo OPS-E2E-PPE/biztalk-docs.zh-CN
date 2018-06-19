@@ -1,11 +1,11 @@
 ---
-title: "标记为已完成 BAM 中正在进行事务 |Microsoft 文档"
-ms.custom: 
+title: 标记为已完成 BAM 中正在进行事务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BAM, data recovery
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - BAM, data loss
 - data loss, BAM
 ms.assetid: 8f734953-483a-481a-9ded-b48923859199
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262365"
 ---
 # <a name="marking-in-progress-transactions-as-complete-in-bam"></a><span data-ttu-id="d2ed2-102">在 BAM 中将正在进行的事务标记为“已完成”</span><span class="sxs-lookup"><span data-stu-id="d2ed2-102">Marking In-Progress Transactions as Complete in BAM</span></span>
 <span data-ttu-id="d2ed2-103">业务活动监视 (BAM) 将未完成的跟踪实例的数据保存在特殊的活动实例表中。</span><span class="sxs-lookup"><span data-stu-id="d2ed2-103">Business Activity Monitoring (BAM) keeps data for incomplete trace instances in a special active instance table.</span></span> <span data-ttu-id="d2ed2-104">如果某些实例记录是在最近一次备份之前启动的，但在完成备份之后才完成这些实例记录，则这些记录将保留在活动实例表中。</span><span class="sxs-lookup"><span data-stu-id="d2ed2-104">If some instance records were started before the last backup but completed after the backup, those records will remain in the active instance table.</span></span> <span data-ttu-id="d2ed2-105">尽管这不会妨碍系统正常运转，但您可以手动将这些记录标记为“已完成”，以便可以将它们移出活动实例表。</span><span class="sxs-lookup"><span data-stu-id="d2ed2-105">Although this does not prevent the system from functioning, you can manually mark these records as completed so that they can be moved out of the active instance table.</span></span>  

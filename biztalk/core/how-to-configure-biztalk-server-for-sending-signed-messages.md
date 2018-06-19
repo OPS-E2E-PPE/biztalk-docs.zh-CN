@@ -1,14 +1,14 @@
 ---
-title: "如何将 BizTalk Server 配置为发送注册消息 |Microsoft 文档"
-ms.custom: 
+title: 如何将 BizTalk Server 配置为发送注册消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: be86fbb3-de80-4d9f-bcf0-c61347704229
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249021"
 ---
 # <a name="how-to-configure-biztalk-server-for-sending-signed-messages"></a><span data-ttu-id="c09a2-102">如何配置 BizTalk Server 以便发送签名消息</span><span class="sxs-lookup"><span data-stu-id="c09a2-102">How to Configure BizTalk Server for Sending Signed Messages</span></span>
 <span data-ttu-id="c09a2-103">以下过程列出了配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以便发送签名消息需遵守的步骤。</span><span class="sxs-lookup"><span data-stu-id="c09a2-103">The following procedure lists the steps that you have to follow to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send signed messages.</span></span>  

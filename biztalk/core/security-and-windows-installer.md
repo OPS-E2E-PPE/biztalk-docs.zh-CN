@@ -1,17 +1,17 @@
 ---
-title: "安全和 Windows Installer |Microsoft 文档"
-ms.custom: 
+title: 安全和 Windows Installer |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, Windows installer
 - Windows installer
 ms.assetid: efa68c3e-2006-4665-bd41-07defaf4e2e2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22269781"
 ---
 # <a name="security-and-windows-installer"></a><span data-ttu-id="dbdce-102">安全和 Windows Installer</span><span class="sxs-lookup"><span data-stu-id="dbdce-102">Security and Windows Installer</span></span>
 <span data-ttu-id="dbdce-103">Windows Installer 是一种用于安装和更新 BizTalk 应用程序的强大工具。</span><span class="sxs-lookup"><span data-stu-id="dbdce-103">Windows Installer is a powerful tool for installing and updating BizTalk applications.</span></span> <span data-ttu-id="dbdce-104">使用 Windows Installer 时，应注意可能由恶意 Windows Installer (.msi) 文件创建者造成的安全问题，并应采取措施防止此类问题发生。</span><span class="sxs-lookup"><span data-stu-id="dbdce-104">When using Windows Installer, you should be aware of the security issues that can be created by malicious Windows Installer (.msi) file creators and take steps to prevent them.</span></span>  

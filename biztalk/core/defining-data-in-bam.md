@@ -1,11 +1,11 @@
 ---
-title: "在 BAM 中定义数据 |Microsoft 文档"
-ms.custom: 
+title: 在 BAM 中定义数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], dimensions
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - monitoring business activities [BAM], milestone groups
 - aggregations [BAM], real-time data
 ms.assetid: 501a1c08-3979-4a99-94d9-0d1b5ec4266b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -28,6 +28,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242933"
 ---
 # <a name="defining-data-in-bam"></a><span data-ttu-id="eb4e2-102">定义 BAM 中的数据库</span><span class="sxs-lookup"><span data-stu-id="eb4e2-102">Defining Data in BAM</span></span>
 <span data-ttu-id="eb4e2-103">您可以使用 BAM Excel 外接程序来定义需要 BAM 收集的数据，以及数据共享的方式。</span><span class="sxs-lookup"><span data-stu-id="eb4e2-103">You use the BAM Excel Add-in to define the data you want BAM to collect, and define the way in which the data will be shared.</span></span> <span data-ttu-id="eb4e2-104">您可以使用 BAM 活动来定义数据，还可以使用 BAM 视图来定义其他用户可看到的数据。</span><span class="sxs-lookup"><span data-stu-id="eb4e2-104">You use BAM activities to define the data, and you use BAM views to define the data that other users can see.</span></span>  

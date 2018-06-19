@@ -1,14 +1,14 @@
 ---
-title: "对 3A4 响应映射示例 3A4 请求 |Microsoft 文档"
-ms.custom: 
+title: 对 3A4 响应映射示例 3A4 请求 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7fd9c901-0ead-43e8-ac58-2825f5c39ca9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26005286"
 ---
 # <a name="3a4-request-to-3a4-response-map-sample"></a><span data-ttu-id="eb3ef-102">3A4 请求到 3A4 响应映射示例</span><span class="sxs-lookup"><span data-stu-id="eb3ef-102">3A4 Request to 3A4 Response Map Sample</span></span>
 <span data-ttu-id="eb3ef-103">_3A4RequestMessageTo3A4ResponseMessage.btm 示例演示如何将 3A4 请求消息映射到 3A4 响应消息。</span><span class="sxs-lookup"><span data-stu-id="eb3ef-103">The _3A4RequestMessageTo3A4ResponseMessage.btm sample demonstrates how you can map a 3A4 request message to a 3A4 response message.</span></span>  

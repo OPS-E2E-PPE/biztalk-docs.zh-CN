@@ -1,14 +1,14 @@
 ---
-title: "演练 (EDIFACT): 接收 EDI 交换和发回确认 |Microsoft 文档"
-ms.custom: 
+title: '演练 (EDIFACT): 接收 EDI 交换和发回确认 |Microsoft 文档'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02751f0c-8e7e-4879-93e4-8bc475640756
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22291933"
 ---
 # <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a><span data-ttu-id="c5b63-102">演练 (EDIFACT)：接收 EDI 交换并发送回确认信息</span><span class="sxs-lookup"><span data-stu-id="c5b63-102">Walkthrough (EDIFACT): Receiving EDI Interchanges and Sending Back an Acknowledgement</span></span>
 <span data-ttu-id="c5b63-103">本演练将介绍使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为接收 EDIFACT 交换创建解决方案的分步操作过程。</span><span class="sxs-lookup"><span data-stu-id="c5b63-103">This walkthrough provides a set of step-by-step procedures that creates a solution for receiving EDIFACT interchanges using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="c5b63-104">此解决方案中的 EDIFACT 交换从贸易合作伙伴，Fabrikam，发送到另一个贸易合作伙伴，Contoso。</span><span class="sxs-lookup"><span data-stu-id="c5b63-104">In this solution, an EDIFACT interchange is sent from a trading partner, Fabrikam, to another trading partner, Contoso.</span></span>  
@@ -268,14 +269,14 @@ ms.lasthandoff: 09/20/2017
         > [!NOTE]
         >  <span data-ttu-id="c5b63-245">如果你使用的测试消息作为本主题中前面提供的示例消息，设置**UNB2.1**到**7654321**， **UNB2.2**到**ZZZ-双方约定**， **UNB3.1**到**1234567**，和**UNB3.2**到**ZZZ-双方约定**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-245">If you are using the sample message provided earlier in this topic as your test message, set **UNB2.1** to **7654321**, **UNB2.2** to **ZZZ – Mutually Defined**, **UNB3.1** to **1234567**, and **UNB3.2** to **ZZZ – Mutually Defined**.</span></span>  
   
-    2.  <span data-ttu-id="c5b63-246">上**确认**下页上**交换设置**部分，选中**收到预期消息 (CONTRL)**和**确认 (CONTRL) 预期**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-246">On the **Acknowledgements** page under the **Interchange Settings** section, check **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected**.</span></span>  
+    2.  <span data-ttu-id="c5b63-246">上**确认**下页上**交换设置**部分，选中**收到预期消息 (CONTRL)** 和**确认 (CONTRL) 预期**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-246">On the **Acknowledgements** page under the **Interchange Settings** section, check **Receipt of message (CONTRL) expected** and **Acknowledgement (CONTRL) expected**.</span></span>  
   
-    3.  <span data-ttu-id="c5b63-247">上**包络线**下页上**交换设置**部分，选中**应用 UNA 段 （字符串服务建议）**和**应用 UNG 段 （功能组标头）**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-247">On the **Envelopes** page under the **Interchange Settings** section, check **Apply UNA segment (String service advice)** and **Apply UNG segments (Functional group header)**.</span></span>  
+    3.  <span data-ttu-id="c5b63-247">上**包络线**下页上**交换设置**部分，选中**应用 UNA 段 （字符串服务建议）** 和**应用 UNG 段 （功能组标头）**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-247">On the **Envelopes** page under the **Interchange Settings** section, check **Apply UNA segment (String service advice)** and **Apply UNG segments (Functional group header)**.</span></span>  
   
-    4.  <span data-ttu-id="c5b63-248">上**验证**下页上**交换设置**部分中，请确保**交换控制编号 (UNB5)**选项处于未选中状态。</span><span class="sxs-lookup"><span data-stu-id="c5b63-248">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (UNB5)** option is unchecked.</span></span>  
+    4.  <span data-ttu-id="c5b63-248">上**验证**下页上**交换设置**部分中，请确保**交换控制编号 (UNB5)** 选项处于未选中状态。</span><span class="sxs-lookup"><span data-stu-id="c5b63-248">On the **Validation** page under the **Interchange Settings** section, make sure **Interchange Control Number (UNB5)** option is unchecked.</span></span>  
   
         > [!NOTE]
-        >  <span data-ttu-id="c5b63-249">清除**交换控制编号 (UNB5)**属性使您能够接收同一消息的多个实例。</span><span class="sxs-lookup"><span data-stu-id="c5b63-249">Clearing the **Interchange Control Number (UNB5)** property enables you to receive multiple instances of the same message.</span></span>  
+        >  <span data-ttu-id="c5b63-249">清除**交换控制编号 (UNB5)** 属性使您能够接收同一消息的多个实例。</span><span class="sxs-lookup"><span data-stu-id="c5b63-249">Clearing the **Interchange Control Number (UNB5)** property enables you to receive multiple instances of the same message.</span></span>  
   
     5.  <span data-ttu-id="c5b63-250">上**字符集和分隔符**下页上**交换设置**部分中，选择**CR LF**选项**UNA6 后缀**。</span><span class="sxs-lookup"><span data-stu-id="c5b63-250">On the **Charset and Separators** page under the **Interchange Settings** section, select the **CR LF** option for **UNA6 Suffix**.</span></span>  
   

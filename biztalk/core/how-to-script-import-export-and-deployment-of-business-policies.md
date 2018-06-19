@@ -1,11 +1,11 @@
 ---
-title: "如何编写脚本导入导出和部署业务策略 |Microsoft 文档"
-ms.custom: 
+title: 如何编写脚本导入导出和部署业务策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deploying, policies
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - deploying, business rules
 - Business Rules Framework, programming
 ms.assetid: 333d37dc-e0ee-460c-922d-70eedf7b7ccb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -29,6 +29,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254965"
 ---
 # <a name="how-to-script-import-export-and-deployment-of-business-policies"></a><span data-ttu-id="aa8ee-102">如何编写导入导出和业务策略的部署脚本</span><span class="sxs-lookup"><span data-stu-id="aa8ee-102">How to Script Import-Export and Deployment of Business Policies</span></span>
 <span data-ttu-id="aa8ee-103">本部分介绍如何以编程方式导入/导出和部署策略使用**RuleSetDeploymentDriver**。</span><span class="sxs-lookup"><span data-stu-id="aa8ee-103">This section describes how to programmatically import/export and deploy policies using **RuleSetDeploymentDriver**.</span></span>  

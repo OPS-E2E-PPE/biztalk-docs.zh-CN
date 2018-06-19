@@ -1,14 +1,14 @@
 ---
-title: "如何计算冻结 |Microsoft 文档"
-ms.custom: 
+title: 如何计算冻结 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88f2d09c-60db-4daf-b850-23f2c8915502
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248309"
 ---
 # <a name="how-to-calculate-dehydration"></a><span data-ttu-id="21c94-102">如何计算冻结</span><span class="sxs-lookup"><span data-stu-id="21c94-102">How to Calculate Dehydration</span></span>
 <span data-ttu-id="21c94-103">若要计算冻结，则需要使用已配置的属性和某些运行时值。</span><span class="sxs-lookup"><span data-stu-id="21c94-103">To calculate dehydration, you use the configured properties and certain run-time values.</span></span> <span data-ttu-id="21c94-104">下面的示例演示如何计算假设的冻结方案。</span><span class="sxs-lookup"><span data-stu-id="21c94-104">The following example demonstrates how to calculate a hypothetical dehydration scenario.</span></span>  
@@ -61,7 +62,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="21c94-122">是否冻结取决于下面布尔值条件的结果（true = 冻结）：</span><span class="sxs-lookup"><span data-stu-id="21c94-122">The decision whether to dehydrate is the result of the following Boolean condition (true = dehydrate):</span></span>  
   
--   <span data-ttu-id="21c94-123">冻结 = (EstimatedTime > TestThreshold OR TimeBlocked > (2* TestThreshold))</span><span class="sxs-lookup"><span data-stu-id="21c94-123">Dehydrate = (EstimatedTime > TestThreshold OR TimeBlocked > (2* TestThreshold))</span></span>  
+-   <span data-ttu-id="21c94-123">冻结 = (EstimatedTime > TestThreshold OR TimeBlocked > (2\* TestThreshold))</span><span class="sxs-lookup"><span data-stu-id="21c94-123">Dehydrate = (EstimatedTime > TestThreshold OR TimeBlocked > (2\* TestThreshold))</span></span>  
   
 > [!NOTE]
 >  <span data-ttu-id="21c94-124">估计时间是至延迟结束的剩余时间（如果延迟 5 分钟，过去了 2 分钟，则 TimeBlocked=120 秒，EstimatedTime=180 秒）。</span><span class="sxs-lookup"><span data-stu-id="21c94-124">Estimated time is the time remaining until the delay is ended (if delayed for 5 minutes and 2 minutes has passed, TimeBlocked=120 seconds, EstimatedTime=180 seconds).</span></span>  

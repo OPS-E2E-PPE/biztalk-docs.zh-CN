@@ -1,14 +1,14 @@
 ---
-title: "演练： 创建简单的业务策略 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建简单的业务策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 02d35735-dce2-4ee2-965e-dae307a125b0
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975806"
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a><span data-ttu-id="9531e-102">演练： 创建简单的业务策略</span><span class="sxs-lookup"><span data-stu-id="9531e-102">Walkthrough: Creating a Simple Business Policy</span></span>
 <span data-ttu-id="9531e-103">本演练提供了使用业务规则编辑器创建名为的简单的业务策略的分步过程**ProcessPurchaseOrder**包含一个名为规则**ApprovedRule**。</span><span class="sxs-lookup"><span data-stu-id="9531e-103">This walkthrough provides step-by-step procedures for using the Business Rule Composer to create a simple business policy named **ProcessPurchaseOrder** containing a rule named **ApprovedRule**.</span></span> <span data-ttu-id="9531e-104">**ApprovedRule**规则需要用户提交 XML 文档作为一个事实中，并设置的值**状态**字段到文档中**已批准**如果的值**数量**字段是否小于或等于**500**。</span><span class="sxs-lookup"><span data-stu-id="9531e-104">The **ApprovedRule** rule expects the user to submit an XML document as a fact, and sets the value of the **Status** field in the document to **Approved** if the value of the **Quantity** field is less than or equal to **500**.</span></span>  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="9531e-120">上**文件**菜单上，单击**TextFile1.txt 另存为**。</span><span class="sxs-lookup"><span data-stu-id="9531e-120">On the **File** menu, click **Save TextFile1.txt As**.</span></span>  
   
-5.  <span data-ttu-id="9531e-121">值更改**另存为类型**从**文本文档 (\*.txt)**到**所有文件**。</span><span class="sxs-lookup"><span data-stu-id="9531e-121">Change the value for **Save As type** from **Text Documents(\*.txt)** to **All Files**.</span></span>  
+5.  <span data-ttu-id="9531e-121">值更改**另存为类型**从**文本文档 (\*.txt)** 到**所有文件**。</span><span class="sxs-lookup"><span data-stu-id="9531e-121">Change the value for **Save As type** from **Text Documents(\*.txt)** to **All Files**.</span></span>  
   
 6.  <span data-ttu-id="9531e-122">类型**PO.xsd**中**文件名**文本框中，将目录更改为**C:\BRE-Walkthroughs**，更改的值**编码**到**Unicode** ，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="9531e-122">Type **PO.xsd** in the **File name** text box, change the directory to **C:\BRE-Walkthroughs**, change the value of **Encoding** to **Unicode** and then click **Save**.</span></span>  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="9531e-134">右键单击**版本 1.0**，然后单击**AddNewRule**。</span><span class="sxs-lookup"><span data-stu-id="9531e-134">Right-click **Version 1.0**, and then click **AddNewRule**.</span></span>  
   
-5.  <span data-ttu-id="9531e-135">编辑规则的名称**规则 1**到**ApprovalRule** ，然后按 enter 键**。**</span><span class="sxs-lookup"><span data-stu-id="9531e-135">Edit the name of the rule from **Rule1** to **ApprovalRule** and press ENTER**.**</span></span> <span data-ttu-id="9531e-136">你还可以更改中的规则的名称**属性**窗口。</span><span class="sxs-lookup"><span data-stu-id="9531e-136">You can also change the name of the rule in the **Properties** window.</span></span>  
+5.  <span data-ttu-id="9531e-135">编辑规则的名称**规则 1**到**ApprovalRule** ，然后按 enter 键 **。**</span><span class="sxs-lookup"><span data-stu-id="9531e-135">Edit the name of the rule from **Rule1** to **ApprovalRule** and press ENTER **.**</span></span> <span data-ttu-id="9531e-136">你还可以更改中的规则的名称**属性**窗口。</span><span class="sxs-lookup"><span data-stu-id="9531e-136">You can also change the name of the rule in the **Properties** window.</span></span>  
   
 6.  <span data-ttu-id="9531e-137">在事实浏览器窗口中，单击**XML 架构**选项卡。</span><span class="sxs-lookup"><span data-stu-id="9531e-137">In the Facts Explorer window, click the **XML Schemas** tab.</span></span>  
   
@@ -128,9 +129,9 @@ ms.lasthandoff: 11/28/2017
   
      <span data-ttu-id="9531e-152">![业务规则编辑器 &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")</span><span class="sxs-lookup"><span data-stu-id="9531e-152">![Business Rule Composer&#45;DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")</span></span>  
   
-14. <span data-ttu-id="9531e-153">在 THEN 窗格中，单击**\<输入值\>**然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="9531e-153">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
+14. <span data-ttu-id="9531e-153">在 THEN 窗格中，单击**\<输入值\>** 然后键入**已批准**。</span><span class="sxs-lookup"><span data-stu-id="9531e-153">In the THEN pane, click **\<Enter a value\>** and then type **Approved**.</span></span>  
   
-15. <span data-ttu-id="9531e-154">在策略资源管理器窗口中，右键单击**（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="9531e-154">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
+15. <span data-ttu-id="9531e-154">在策略资源管理器窗口中，右键单击 **（不保存） 1.0 版**，然后单击**保存**。</span><span class="sxs-lookup"><span data-stu-id="9531e-154">In the Policy Explorer window, right-click **Version 1.0 (not saved)**, and then click **Save**.</span></span>  
   
 ## <a name="comments"></a><span data-ttu-id="9531e-155">注释</span><span class="sxs-lookup"><span data-stu-id="9531e-155">Comments</span></span>  
   

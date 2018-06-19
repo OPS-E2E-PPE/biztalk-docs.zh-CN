@@ -1,11 +1,11 @@
 ---
-title: "如何配置发送端口的筛选器 |Microsoft 文档"
-ms.custom: 
+title: 如何配置发送端口的筛选器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - filters, configuring
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - send ports, filters
 - managing [send ports], filters
 ms.assetid: ad13ca8e-bb1d-4449-8163-49dd9d5d92f8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249461"
 ---
 # <a name="how-to-configure-filters-for-a-send-port"></a><span data-ttu-id="c123e-102">如何为发送端口配置筛选器</span><span class="sxs-lookup"><span data-stu-id="c123e-102">How to Configure Filters for a Send Port</span></span>
 <span data-ttu-id="c123e-103">本主题将介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台为发送端口配置筛选器。</span><span class="sxs-lookup"><span data-stu-id="c123e-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to configure filters for a send port.</span></span> <span data-ttu-id="c123e-104">您可以使用筛选器来创建简单消息传送或基于内容的路由 (CBR) 应用程序。</span><span class="sxs-lookup"><span data-stu-id="c123e-104">You can use filters to create simple messaging or content-based routing (CBR) applications.</span></span> <span data-ttu-id="c123e-105">筛选器可以设置消息属性或字段的条件，这些条件决定哪些消息将被路由到发送端口。</span><span class="sxs-lookup"><span data-stu-id="c123e-105">A filter sets conditions for message properties or fields that determine which messages are routed to the send port.</span></span> <span data-ttu-id="c123e-106">筛选器不筛选由业务流程路由到发送端口的消息。</span><span class="sxs-lookup"><span data-stu-id="c123e-106">A filter does not filter the messages that an orchestration routes to the send port.</span></span>  

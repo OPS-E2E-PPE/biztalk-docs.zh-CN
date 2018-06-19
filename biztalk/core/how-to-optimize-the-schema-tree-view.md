@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab4ad6b5-5bbd-443b-9041-6cddf9d64735
-caps.latest.revision: ''
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22255341"
 ---
 # <a name="how-to-optimize-the-schema-tree-view"></a><span data-ttu-id="58686-102">如何优化架构树视图</span><span class="sxs-lookup"><span data-stu-id="58686-102">How to Optimize the Schema Tree View</span></span>
 <span data-ttu-id="58686-103">你可以使用 **相关性视图** BizTalk 映射程序来优化的源和/或目标架构树中。</span><span class="sxs-lookup"><span data-stu-id="58686-103">You can use the **Relevance View** in BizTalk Mapper to optimize the source and/or target schema trees.</span></span> <span data-ttu-id="58686-104">本主题提供了有关如何执行该操作的说明。</span><span class="sxs-lookup"><span data-stu-id="58686-104">This topic provides instructions about how to perform the operation.</span></span>  

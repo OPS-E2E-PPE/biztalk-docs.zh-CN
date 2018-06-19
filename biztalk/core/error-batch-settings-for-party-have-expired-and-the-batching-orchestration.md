@@ -1,14 +1,14 @@
 ---
-title: "方的批处理设置已过期，正在终止批处理业务流程 |Microsoft 文档"
-ms.custom: 
+title: 方的批处理设置已过期，正在终止批处理业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2f272b6-4da2-4736-8d61-ce48359f36dd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241301"
 ---
 # <a name="the-batch-settings-for-party-have-expired-and-the-batching-orchestration-is-being-terminated"></a><span data-ttu-id="44167-102">参与方的批设置已过期，批处理业务流程被终止</span><span class="sxs-lookup"><span data-stu-id="44167-102">The batch settings for party have expired and the batching orchestration is being terminated</span></span>
 ## <a name="details"></a><span data-ttu-id="44167-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="44167-103">Details</span></span>  

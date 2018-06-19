@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242173"
 ---
 # <a name="error---test-map-inputs-not-valid"></a><span data-ttu-id="85025-102">错误-测试映射输入无效</span><span class="sxs-lookup"><span data-stu-id="85025-102">Error - Test Map Inputs Not Valid</span></span>
 <span data-ttu-id="85025-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="85025-103">**Error Code**</span></span>  

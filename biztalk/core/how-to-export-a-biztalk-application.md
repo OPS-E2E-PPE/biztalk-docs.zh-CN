@@ -1,11 +1,11 @@
 ---
-title: "如何导出 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何导出 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, exporting
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - applications, warnings
 - exporting, security
 ms.assetid: a1d6ffca-3d29-44c7-a811-6cf8b42e23f6
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -25,6 +25,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255949"
 ---
 # <a name="how-to-export-a-biztalk-application"></a><span data-ttu-id="caf6f-102">如何导出 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="caf6f-102">How to Export a BizTalk Application</span></span>
 <span data-ttu-id="caf6f-103">本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或命令行来导出应用程序。</span><span class="sxs-lookup"><span data-stu-id="caf6f-103">This topic describes how to use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or the command line to export an application.</span></span> <span data-ttu-id="caf6f-104">导出 BizTalk 应用程序会生成一个 Windows Installer (.msi) 文件，该文件包含已选择要导出的应用程序及其任何项目。</span><span class="sxs-lookup"><span data-stu-id="caf6f-104">Exporting a BizTalk application generates a Windows Installer (.msi) file that contains the application and any of its artifacts that you select to export.</span></span> <span data-ttu-id="caf6f-105">默认选项将选择应用程序的所有项目，但您可以选择其中的一个子集。</span><span class="sxs-lookup"><span data-stu-id="caf6f-105">The default option is to select all of the application's artifacts, but you can select a subset of them.</span></span> <span data-ttu-id="caf6f-106">然后，将 .msi 文件导入到其他 BizTalk 组中，以便将这些项目添加到新组中的现有应用程序、更新现有应用程序中的项目或在包含这些要导入的项目的组中创建新的应用程序。</span><span class="sxs-lookup"><span data-stu-id="caf6f-106">You can then import the .msi file into another BizTalk group to add the artifacts to an existing application in the new group, update the artifacts in an existing application, or create a new application in the group that contains the artifacts being imported.</span></span> <span data-ttu-id="caf6f-107">有关详细信息，请参阅[如何导入 BizTalk 应用程序](../core/how-to-import-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="caf6f-107">For more information, see [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span> <span data-ttu-id="caf6f-108">你也使用.msi 文件将运行它时，在计算机上安装应用程序中所述[如何安装 BizTalk 应用程序](../core/how-to-install-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="caf6f-108">You also use the .msi file to install the application on the computers that will run it, as described in [How to Install a BizTalk Application](../core/how-to-install-a-biztalk-application.md).</span></span> <span data-ttu-id="caf6f-109">如果应用程序包括基于文件的项目，还必须安装这些项目才能让其开始工作。</span><span class="sxs-lookup"><span data-stu-id="caf6f-109">If the application includes file-based artifacts, you must also install it before it can begin functioning.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "开发自定义引用 Functoid |Microsoft 文档"
-ms.custom: 
+title: 开发自定义引用 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1e26d726-240c-4dfc-baa2-77451b8dc6c5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239221"
 ---
 # <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="d1629-102">开发自定义引用的 Functoid</span><span class="sxs-lookup"><span data-stu-id="d1629-102">Developing a Custom Referenced Functoid</span></span>
 <span data-ttu-id="d1629-103">自定义引用的 Functoid 不会将内联的实现代码复制到映射中。</span><span class="sxs-lookup"><span data-stu-id="d1629-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="d1629-104">实际上，它将对程序集、类和方法的引用放置在与生成的样式表相关联的扩展对象文件中，并在运行时对其进行调用。</span><span class="sxs-lookup"><span data-stu-id="d1629-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  

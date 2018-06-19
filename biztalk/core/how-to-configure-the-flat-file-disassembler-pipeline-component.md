@@ -1,18 +1,18 @@
 ---
-title: "如何配置平面文件反汇编程序管道组件 |Microsoft 文档"
-ms.custom: 
+title: 如何配置平面文件反汇编程序管道组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Flat File Disassembler [pipeline component], configuring
 - pipeline components, Flat File Disassembler
 - messages, flat files
 ms.assetid: c09996f6-6035-42a3-a75f-4def4ac39a95
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249045"
 ---
 # <a name="how-to-configure-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="29194-102">如何配置平面文件反汇编程序管道组件</span><span class="sxs-lookup"><span data-stu-id="29194-102">How to Configure the Flat File Disassembler Pipeline Component</span></span>
 <span data-ttu-id="29194-103">平面文件拆装器管道组件用于拆装平面文件格式的文档，并将其转换为 XML 格式。</span><span class="sxs-lookup"><span data-stu-id="29194-103">The Flat File Disassembler pipeline component is used for disassembling documents in flat file format and converting them into XML format.</span></span>  
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/20/2017
   
     |<span data-ttu-id="29194-107">使用此选项</span><span class="sxs-lookup"><span data-stu-id="29194-107">Use this</span></span>|<span data-ttu-id="29194-108">执行的操作</span><span class="sxs-lookup"><span data-stu-id="29194-108">To do this</span></span>|  
     |--------------|----------------|  
-    |<span data-ttu-id="29194-109">**文档架构**</span><span class="sxs-lookup"><span data-stu-id="29194-109">**Document schema**</span></span>|<span data-ttu-id="29194-110">选择用于将消息从平面文件解析为 XML 格式的平面文件文档架构。</span><span class="sxs-lookup"><span data-stu-id="29194-110">Select a flat file document schema to use for parsing the message from flat file to XML format.</span></span> <span data-ttu-id="29194-111">可以使用 BizTalk 编辑器创建用于解析的平面文件文档架构。</span><span class="sxs-lookup"><span data-stu-id="29194-111">The flat file document schema for parsing can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="29194-112">默认值： 无**注意：**必须指定用于此属性的架构，否则会发生编译时错误。</span><span class="sxs-lookup"><span data-stu-id="29194-112">Default value: None **Note:**  You must specify a schema for this property, or a compile-time error will occur.</span></span>|  
+    |<span data-ttu-id="29194-109">**文档架构**</span><span class="sxs-lookup"><span data-stu-id="29194-109">**Document schema**</span></span>|<span data-ttu-id="29194-110">选择用于将消息从平面文件解析为 XML 格式的平面文件文档架构。</span><span class="sxs-lookup"><span data-stu-id="29194-110">Select a flat file document schema to use for parsing the message from flat file to XML format.</span></span> <span data-ttu-id="29194-111">可以使用 BizTalk 编辑器创建用于解析的平面文件文档架构。</span><span class="sxs-lookup"><span data-stu-id="29194-111">The flat file document schema for parsing can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="29194-112">默认值： 无**注意：** 必须指定用于此属性的架构，否则会发生编译时错误。</span><span class="sxs-lookup"><span data-stu-id="29194-112">Default value: None **Note:**  You must specify a schema for this property, or a compile-time error will occur.</span></span>|  
     |<span data-ttu-id="29194-113">**标头架构**</span><span class="sxs-lookup"><span data-stu-id="29194-113">**Header schema**</span></span>|<span data-ttu-id="29194-114">为平面文件消息的头部部分选择架构。</span><span class="sxs-lookup"><span data-stu-id="29194-114">Select a schema for the header part of the flat file message.</span></span> <span data-ttu-id="29194-115">可以使用 BizTalk 编辑器创建用于平面文件消息头部部分的架构。</span><span class="sxs-lookup"><span data-stu-id="29194-115">The schema for the header part of the flat file message can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="29194-116">默认值： 无</span><span class="sxs-lookup"><span data-stu-id="29194-116">Default value: None</span></span>|  
     |<span data-ttu-id="29194-117">**保留标头**</span><span class="sxs-lookup"><span data-stu-id="29194-117">**Preserve header**</span></span>|<span data-ttu-id="29194-118">将此属性设置为**True**如果你需要在消息上下文上存储的平面文件消息标头。</span><span class="sxs-lookup"><span data-stu-id="29194-118">Set this property to **True** if you need to store the flat file message header on the message context.</span></span> <span data-ttu-id="29194-119">通过保留平面文件消息的头部，可以将头部的结构和内容随消息一起通过 BizTalk Server 发送。</span><span class="sxs-lookup"><span data-stu-id="29194-119">Preserving the header of the flat file message enables the header structure and content to flow with the message through BizTalk Server.</span></span> <span data-ttu-id="29194-120">然后，在使用平面文件组装器管道组件将该消息重新序列化为平面文件格式时可以使用该头部。</span><span class="sxs-lookup"><span data-stu-id="29194-120">The header can then be used when serializing the message back to flat file format in the Flat File Assembler pipeline component.</span></span><br /><br /> <span data-ttu-id="29194-121">在使用平面文件组装器序列化保留的头部时，头部文档设计时属性可以缺少头部架构的名称，因为在运行时可以动态获取此信息。</span><span class="sxs-lookup"><span data-stu-id="29194-121">When the preserved header is being serialized by the Flat File Assembler, the header document design-time property can lack the name of the header schema, because this information can be obtained dynamically at run time.</span></span> <span data-ttu-id="29194-122">这可以通过使用保留的头部的消息类型来完成。</span><span class="sxs-lookup"><span data-stu-id="29194-122">This is accomplished by using the message type of the preserved header.</span></span><br /><br /> <span data-ttu-id="29194-123">默认值： **False**</span><span class="sxs-lookup"><span data-stu-id="29194-123">Default value: **False**</span></span>|  
     |<span data-ttu-id="29194-124">**尾部架构**</span><span class="sxs-lookup"><span data-stu-id="29194-124">**Trailer schema**</span></span>|<span data-ttu-id="29194-125">为平面文件消息的尾部部分选择架构。</span><span class="sxs-lookup"><span data-stu-id="29194-125">Select a schema for the trailer part of the flat file message.</span></span> <span data-ttu-id="29194-126">可以使用 BizTalk 编辑器创建用于平面文件消息尾部部分的架构。</span><span class="sxs-lookup"><span data-stu-id="29194-126">The schema for the trailer part of the flat file message can be created in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="29194-127">默认值： 无</span><span class="sxs-lookup"><span data-stu-id="29194-127">Default value: None</span></span>|  

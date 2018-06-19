@@ -1,14 +1,14 @@
 ---
-title: "缺少或无效的事务集标识符 |Microsoft 文档"
-ms.custom: 
+title: 缺少或无效的事务集标识符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 282c8128-7d23-44e2-bf44-e90e52cb5fb1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263005"
 ---
 # <a name="missing-or-invalid-transaction-set-identifier"></a><span data-ttu-id="d9e89-102">缺少或无效的事务集标识符</span><span class="sxs-lookup"><span data-stu-id="d9e89-102">Missing or invalid Transaction set identifier</span></span>
 ## <a name="details"></a><span data-ttu-id="d9e89-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d9e89-103">Details</span></span>  

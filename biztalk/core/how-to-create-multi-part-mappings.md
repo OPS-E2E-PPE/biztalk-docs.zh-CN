@@ -1,14 +1,14 @@
 ---
-title: "如何创建多个部分映射 |Microsoft 文档"
-ms.custom: 
+title: 如何创建多个部分映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1f1d4385-3d95-442c-b2b9-bfe09ce3d5fd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248557"
 ---
 # <a name="how-to-create-multi-part-mappings"></a><span data-ttu-id="d6f94-102">如何创建多个部分组成的映射</span><span class="sxs-lookup"><span data-stu-id="d6f94-102">How to Create Multi-Part Mappings</span></span>
 <span data-ttu-id="d6f94-103">若要一起使用多个映射，则需在业务流程中合并这些映射以一起进行测试。</span><span class="sxs-lookup"><span data-stu-id="d6f94-103">If you have multiple maps that are used together, you will need to combine them in an orchestration to test them together.</span></span> <span data-ttu-id="d6f94-104">**测试映射**命令一次只有一个图上也有效。</span><span class="sxs-lookup"><span data-stu-id="d6f94-104">The **Test Map** command works on only one map at a time.</span></span>  

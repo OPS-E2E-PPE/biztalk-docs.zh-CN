@@ -1,18 +1,18 @@
 ---
-title: "如何将多个程序集映射 |Microsoft 文档"
-ms.custom: 
+title: 如何将多个程序集映射 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - assemblies, tracking profiles
 - tracking profiles, mapping assemblies
 - assemblies, maps
 ms.assetid: 136f1943-9643-4551-8b5b-150c4b4bfebe
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254349"
 ---
 # <a name="how-to-map-multiple-assemblies"></a><span data-ttu-id="09a32-102">如何映射多个程序集</span><span class="sxs-lookup"><span data-stu-id="09a32-102">How to Map Multiple Assemblies</span></span>
 <span data-ttu-id="09a32-103">BizTalk 应用程序可包含多个含有 BAM 活动所引用的数据项的程序集。</span><span class="sxs-lookup"><span data-stu-id="09a32-103">BizTalk applications can consist of multiple assemblies in which the data items that a BAM activity references reside.</span></span> <span data-ttu-id="09a32-104">以下过程说明如何将多个程序集映射到一个跟踪配置文件。</span><span class="sxs-lookup"><span data-stu-id="09a32-104">The following procedure shows you how to map multiple assemblies to a tracking profile.</span></span>  

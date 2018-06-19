@@ -1,18 +1,18 @@
 ---
-title: "如何禁用接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何禁用接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [receive locations], disabling
 - receive locations, disabling
 - disabling, receive locations
 ms.assetid: 079a5c2c-3aec-49b3-afac-f3202404bca1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249813"
 ---
 # <a name="how-to-disable-a-receive-location"></a><span data-ttu-id="3b25a-102">如何禁用接收位置</span><span class="sxs-lookup"><span data-stu-id="3b25a-102">How to Disable a Receive Location</span></span>
 <span data-ttu-id="3b25a-103">本主题介绍如何使用 BizTalk Server 管理控制台来禁用接收位置。</span><span class="sxs-lookup"><span data-stu-id="3b25a-103">This topic describes how to use the BizTalk Server Administration console to disable a receive location.</span></span> <span data-ttu-id="3b25a-104">当禁用接收位置时，它会停止接收消息。</span><span class="sxs-lookup"><span data-stu-id="3b25a-104">When you disable a receive location, it stops receiving messages.</span></span> <span data-ttu-id="3b25a-105">如果你想禁用接收位置之后, 你可以启用它再次，因此，它将再次收到消息。</span><span class="sxs-lookup"><span data-stu-id="3b25a-105">If you want, after disabling a receive location, you can enable it again, so that it will again receive messages.</span></span>  

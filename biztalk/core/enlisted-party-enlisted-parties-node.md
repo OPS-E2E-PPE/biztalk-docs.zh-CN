@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239949"
 ---
 # <a name="enlisted-party-enlisted-parties-node"></a><span data-ttu-id="64f21-102">已登记参与方（“已登记参与方”节点）</span><span class="sxs-lookup"><span data-stu-id="64f21-102">Enlisted Party (Enlisted Parties Node)</span></span>
 <span data-ttu-id="64f21-103">绑定文件的“已登记参与方”节点包含有关已登记参与方的特定信息，该已登记参与方与随同该绑定文件一起导出的角色相关联。</span><span class="sxs-lookup"><span data-stu-id="64f21-103">The Enlisted Party node of a binding file contains specific information about an enlisted party associated with a role that is exported with the binding file.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "MSMQ 适配器体系结构 |Microsoft 文档"
-ms.custom: 
+title: MSMQ 适配器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, MSMQ adapters
 - MSMQ adapters, architecture
 ms.assetid: acecc2a4-0670-487e-be39-28a24c8c3f16
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22263045"
 ---
 # <a name="msmq-adapter-architecture"></a><span data-ttu-id="6311d-102">MSMQ 适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="6311d-102">MSMQ Adapter Architecture</span></span>
 <span data-ttu-id="6311d-103">通过 MSMQ 适配器，您可以利用其他情况下在 BizTalk Server 中无法使用的 Microsoft 消息队列（也称为 MSMQ）功能。</span><span class="sxs-lookup"><span data-stu-id="6311d-103">The MSMQ adapter lets you take advantage of Microsoft Message Queuing (also known as MSMQ) features that are otherwise unavailable in BizTalk Server.</span></span>  

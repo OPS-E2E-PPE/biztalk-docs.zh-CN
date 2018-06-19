@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序删除业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序删除业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications, orchestrations
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - orchestrations, applications
 - orchestrations, deleting
 ms.assetid: e6d635ea-3513-42de-a667-b56c536e5328
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255189"
 ---
 # <a name="how-to-remove-an-orchestration-from-an-application"></a><span data-ttu-id="9e440-102">如何从应用程序删除业务流程</span><span class="sxs-lookup"><span data-stu-id="9e440-102">How to Remove an Orchestration from an Application</span></span>
 <span data-ttu-id="9e440-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序中删除业务流程。</span><span class="sxs-lookup"><span data-stu-id="9e440-103">This topic describes how to use the BizTalk Server Administration console or the command line to remove an orchestration from a BizTalk application.</span></span> <span data-ttu-id="9e440-104">从应用程序中删除业务流程，也会将该业务流程从 BizTalk 组的 BizTalk 管理数据库中删除。</span><span class="sxs-lookup"><span data-stu-id="9e440-104">Removing an orchestration from an application also deletes it from the BizTalk Management database for the BizTalk group.</span></span>  

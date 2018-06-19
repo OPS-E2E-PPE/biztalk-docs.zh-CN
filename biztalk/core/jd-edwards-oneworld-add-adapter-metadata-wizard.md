@@ -26,6 +26,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22261773"
 ---
 # <a name="jd-edwards-oneworld-add-adapter-metadata-wizard"></a><span data-ttu-id="e8589-102">博士 Edwards OneWorld 添加适配器元数据向导</span><span class="sxs-lookup"><span data-stu-id="e8589-102">JD Edwards OneWorld Add Adapter Metadata Wizard</span></span>
 <span data-ttu-id="e8589-103">使用添加适配器元数据向导可从 JD Edwards OneWorld 系统访问元数据信息。</span><span class="sxs-lookup"><span data-stu-id="e8589-103">Use the Add Adapter Metadata Wizard to access metadata information from the JD Edwards OneWorld system.</span></span>  

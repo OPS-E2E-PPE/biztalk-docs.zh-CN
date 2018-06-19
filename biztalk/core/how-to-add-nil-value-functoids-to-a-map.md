@@ -1,14 +1,14 @@
 ---
-title: "如何在向地图添加 Nil 值 Functoid |Microsoft 文档"
-ms.custom: 
+title: 如何在向地图添加 Nil 值 Functoid |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b2e193ed-fe5c-4b12-aab8-ff2d81fd45e1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248205"
 ---
 # <a name="how-to-add-nil-value-functoids-to-a-map"></a><span data-ttu-id="51404-102">如何向映射中添加“Nil 值”Functoid</span><span class="sxs-lookup"><span data-stu-id="51404-102">How to Add Nil Value Functoids to a Map</span></span>
 <span data-ttu-id="51404-103">**Nil 值**functoid 设置到的目标节点的值**Nil**。</span><span class="sxs-lookup"><span data-stu-id="51404-103">The **Nil Value** functoid sets the value of the destination node to **Nil**.</span></span>  

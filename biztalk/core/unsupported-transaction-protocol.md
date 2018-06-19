@@ -1,14 +1,14 @@
 ---
-title: "不受支持的事务处理协议 |Microsoft 文档"
-ms.custom: 
+title: 不受支持的事务处理协议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 11fb2497-9971-4e85-b21a-161734f071e0
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22286885"
 ---
 # <a name="unsupported-transaction-protocol"></a><span data-ttu-id="764f2-102">不支持的事务协议</span><span class="sxs-lookup"><span data-stu-id="764f2-102">Unsupported transaction protocol</span></span>
 ## <a name="details"></a><span data-ttu-id="764f2-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="764f2-103">Details</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246909"
 ---
 # <a name="how-to-add-a-reference-to-another-application"></a><span data-ttu-id="ab56e-102">如何添加对另一个应用程序的引用</span><span class="sxs-lookup"><span data-stu-id="ab56e-102">How to Add a Reference to Another Application</span></span>
 <span data-ttu-id="ab56e-103">本主题介绍如何使用 BizTalk Server 管理控制台从一个应用程序添加对另一应用程序的引用。</span><span class="sxs-lookup"><span data-stu-id="ab56e-103">This topic describes how to use the BizTalk Server Administration console to add a reference from one application to another application.</span></span> <span data-ttu-id="ab56e-104">你还可以添加对其他应用程序的引用，当使用导入你的应用程序导入向导中中, 所述[如何导入 BizTalk 应用程序](../core/how-to-import-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="ab56e-104">You can also add a reference to the other application when you import your application by using the Import Wizard, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  

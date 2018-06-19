@@ -1,14 +1,14 @@
 ---
-title: "如何编辑链接属性 |Microsoft 文档"
-ms.custom: 
+title: 如何编辑链接属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: efd13dee-1f53-4f4e-8612-302f827bc6d8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253773"
 ---
 # <a name="how-to-edit-link-properties"></a><span data-ttu-id="1ab2d-102">如何编辑链接属性</span><span class="sxs-lookup"><span data-stu-id="1ab2d-102">How to Edit Link Properties</span></span>
 <span data-ttu-id="1ab2d-103">链接具有多个属性中显示[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**属性**窗口中的，如下所示：</span><span class="sxs-lookup"><span data-stu-id="1ab2d-103">Links have several properties that appear in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**Properties** window, such as the following:</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "解压缩处理过程中遇到无效或缺少 ASN.1 ZLib OID |Microsoft 文档"
-ms.custom: 
+title: 解压缩处理过程中遇到无效或缺少 ASN.1 ZLib OID |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb41e0fe-2fdd-4dfc-830f-c28dfe6efac8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257533"
 ---
 # <a name="invalid-or-missing-asn1-zlib-oid-encountered-during-decompression-processing"></a><span data-ttu-id="d8d2f-102">解压缩处理期间 ASN.1 ZLib OID 无效或缺失</span><span class="sxs-lookup"><span data-stu-id="d8d2f-102">Invalid or missing ASN.1 ZLib OID encountered during decompression processing</span></span>
 ## <a name="details"></a><span data-ttu-id="d8d2f-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d8d2f-103">Details</span></span>  

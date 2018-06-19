@@ -1,11 +1,11 @@
 ---
-title: "如何将证书分配给发送端口 |Microsoft 文档"
-ms.custom: 
+title: 如何将证书分配给发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, assigning
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - assigning certificates
 - certificates, send ports
 ms.assetid: ba9e9c8b-f5b6-4fee-9e89-31b0f1df6ed4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247477"
 ---
 # <a name="how-to-assign-a-certificate-to-a-send-port"></a><span data-ttu-id="3d5f2-102">如何为发送端口分配证书</span><span class="sxs-lookup"><span data-stu-id="3d5f2-102">How to Assign a Certificate to a Send Port</span></span>
 <span data-ttu-id="3d5f2-103">本主题将介绍如何使用 BizTalk Server 管理控制台为发送端口分配安全证书。</span><span class="sxs-lookup"><span data-stu-id="3d5f2-103">This topic describes how to use the BizTalk Server Administration console to assign a security certificate to a send port.</span></span> <span data-ttu-id="3d5f2-104">在运行 BizTalk Server 的计算机上的“其他人”证书存储中必须有证书，否则不会处理与此发送端口关联的消息并记录错误。</span><span class="sxs-lookup"><span data-stu-id="3d5f2-104">The certificate must exist in the Other People certificate store on the computer running BizTalk Server, or messages associated with this send port will not be processed, and errors will be logged.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "如何诊断问题文件适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何诊断问题文件适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f06089a5-4747-4879-a796-157088868dba
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249037"
 ---
 # <a name="how-to-diagnose-problems-with-the-file-adapter"></a><span data-ttu-id="b8d83-102">如何诊断文件适配器的问题</span><span class="sxs-lookup"><span data-stu-id="b8d83-102">How to Diagnose Problems with the File Adapter</span></span>
 <span data-ttu-id="b8d83-103">本部分提供的步骤可帮助您诊断文件适配器问题。</span><span class="sxs-lookup"><span data-stu-id="b8d83-103">This section contains steps that can be followed to help diagnose problems with the File adapter.</span></span>  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245853"
 ---
 # <a name="error---xsl-transformation-failure"></a><span data-ttu-id="fe068-102">错误-XSL 转换失败</span><span class="sxs-lookup"><span data-stu-id="fe068-102">Error - XSL Transformation Failure</span></span>
 <span data-ttu-id="fe068-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="fe068-103">**Error Code**</span></span>  

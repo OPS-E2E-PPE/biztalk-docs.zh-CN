@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241709"
 ---
 # <a name="error---root-node-duplicate-class-name"></a><span data-ttu-id="b9bbb-102">错误-根节点重复类名称</span><span class="sxs-lookup"><span data-stu-id="b9bbb-102">Error - Root Node Duplicate Class Name</span></span>
 <span data-ttu-id="b9bbb-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="b9bbb-103">**Error Code**</span></span>  

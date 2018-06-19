@@ -1,11 +1,11 @@
 ---
-title: "异常的处理方式 |Microsoft 文档"
-ms.custom: 
+title: 异常的处理方式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors, handlers
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - errors, scopes
 - handlers [adapters], errors
 ms.assetid: 30b88d8a-8737-4700-b856-1b49fdf6b6d0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246661"
 ---
 # <a name="how-exceptions-are-handled"></a><span data-ttu-id="20277-102">如何处理异常</span><span class="sxs-lookup"><span data-stu-id="20277-102">How Exceptions Are Handled</span></span>
 <span data-ttu-id="20277-103">在某一作用域内发生异常时，该作用域内执行的每个逻辑线程都将停止。</span><span class="sxs-lookup"><span data-stu-id="20277-103">When an exception occurs within a scope, each logical thread of execution in the scope is stopped.</span></span> <span data-ttu-id="20277-104">运行时引擎将尝试为相应的异常找到异常处理程序。</span><span class="sxs-lookup"><span data-stu-id="20277-104">The runtime engine tries to find an exception handler for the appropriate exception.</span></span>  

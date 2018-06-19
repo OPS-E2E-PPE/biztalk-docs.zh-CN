@@ -1,18 +1,18 @@
 ---
-title: "如何配置 MSMQ 发送端口 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 MSMQ 发送端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSMQ adapters, send ports
 - send ports, MSMQ adapters
 - configuring [MSMQ adapters], send ports
 ms.assetid: 37313d45-8148-4aaf-a3f2-ea05b3b8b448
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249773"
 ---
 # <a name="how-to-configure-an-msmq-send-port"></a><span data-ttu-id="43852-102">如何配置 MSMQ 发送端口</span><span class="sxs-lookup"><span data-stu-id="43852-102">How to Configure an MSMQ Send Port</span></span>
 <span data-ttu-id="43852-103">可以在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中设置 MSMQ 发送端口适配器变量。</span><span class="sxs-lookup"><span data-stu-id="43852-103">You can set MSMQ send port adapter variables in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="43852-104">如果未设置发送端口的属性，则使用在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中设置的默认发送处理程序值。</span><span class="sxs-lookup"><span data-stu-id="43852-104">If properties are not set for the send port, the default send handler values set in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console are used.</span></span>  
@@ -47,7 +48,7 @@ ms.lasthandoff: 09/20/2017
     |<span data-ttu-id="43852-137">**管理队列**</span><span class="sxs-lookup"><span data-stu-id="43852-137">**Administration Queue**</span></span>|<span data-ttu-id="43852-138">指定收到确认消息的队列名称。</span><span class="sxs-lookup"><span data-stu-id="43852-138">Specify the queue name that receives the acknowledgement message.</span></span>|<span data-ttu-id="43852-139">字符串</span><span class="sxs-lookup"><span data-stu-id="43852-139">String</span></span>|<span data-ttu-id="43852-140">空白</span><span class="sxs-lookup"><span data-stu-id="43852-140">Blank</span></span>|  
     |<span data-ttu-id="43852-141">**正文类型**</span><span class="sxs-lookup"><span data-stu-id="43852-141">**Body Type**</span></span>|<span data-ttu-id="43852-142">指定 MSMQ 中的消息正文类型。</span><span class="sxs-lookup"><span data-stu-id="43852-142">Specify the message body type in MSMQ.</span></span> <span data-ttu-id="43852-143">有效值为.NET 成员**VarEnum**枚举。</span><span class="sxs-lookup"><span data-stu-id="43852-143">Valid values are members of the .NET **VarEnum** enumeration.</span></span>|<span data-ttu-id="43852-144">int</span><span class="sxs-lookup"><span data-stu-id="43852-144">Int</span></span>|<span data-ttu-id="43852-145">8209</span><span class="sxs-lookup"><span data-stu-id="43852-145">8209</span></span>|  
     |<span data-ttu-id="43852-146">**证书指纹**</span><span class="sxs-lookup"><span data-stu-id="43852-146">**Certificate Thumbprint**</span></span>|<span data-ttu-id="43852-147">指定用于消息验证的证书的指纹。</span><span class="sxs-lookup"><span data-stu-id="43852-147">Specify the thumbprint of the certificate to use for message authentication.</span></span> <span data-ttu-id="43852-148">将此属性与结合**使用身份验证**属性以验证消息。</span><span class="sxs-lookup"><span data-stu-id="43852-148">Use this property in combination with the **Use Authentication** property to verify the message.</span></span> <span data-ttu-id="43852-149">使用**用户名**和**密码**属性来访问队列。</span><span class="sxs-lookup"><span data-stu-id="43852-149">Use the **User Name** and **Password** properties to gain access to queues.</span></span>|<span data-ttu-id="43852-150">字符串</span><span class="sxs-lookup"><span data-stu-id="43852-150">String</span></span>|<span data-ttu-id="43852-151">空白</span><span class="sxs-lookup"><span data-stu-id="43852-151">Blank</span></span>|  
-    |<span data-ttu-id="43852-152">**目标队列**</span><span class="sxs-lookup"><span data-stu-id="43852-152">**Destination Queue**</span></span>|<span data-ttu-id="43852-153">指定目标队列。</span><span class="sxs-lookup"><span data-stu-id="43852-153">Specify the destination queue.</span></span> <span data-ttu-id="43852-154">有关队列的详细信息，请参阅[消息队列的队列](../core/message-queuing-queues.md)。</span><span class="sxs-lookup"><span data-stu-id="43852-154">For more information about queues, see [Message Queuing Queues](../core/message-queuing-queues.md).</span></span> <span data-ttu-id="43852-155">**注意：**对要发送的 URI 端口或接收位置不能超过 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="43852-155">**Note:**  The URI for a send port or receive location cannot exceed 256 characters.</span></span>|<span data-ttu-id="43852-156">字符串</span><span class="sxs-lookup"><span data-stu-id="43852-156">String</span></span>|<span data-ttu-id="43852-157">空白</span><span class="sxs-lookup"><span data-stu-id="43852-157">Blank</span></span>|  
+    |<span data-ttu-id="43852-152">**目标队列**</span><span class="sxs-lookup"><span data-stu-id="43852-152">**Destination Queue**</span></span>|<span data-ttu-id="43852-153">指定目标队列。</span><span class="sxs-lookup"><span data-stu-id="43852-153">Specify the destination queue.</span></span> <span data-ttu-id="43852-154">有关队列的详细信息，请参阅[消息队列的队列](../core/message-queuing-queues.md)。</span><span class="sxs-lookup"><span data-stu-id="43852-154">For more information about queues, see [Message Queuing Queues](../core/message-queuing-queues.md).</span></span> <span data-ttu-id="43852-155">**注意：** 对要发送的 URI 端口或接收位置不能超过 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="43852-155">**Note:**  The URI for a send port or receive location cannot exceed 256 characters.</span></span>|<span data-ttu-id="43852-156">字符串</span><span class="sxs-lookup"><span data-stu-id="43852-156">String</span></span>|<span data-ttu-id="43852-157">空白</span><span class="sxs-lookup"><span data-stu-id="43852-157">Blank</span></span>|  
     |<span data-ttu-id="43852-158">**加密算法**</span><span class="sxs-lookup"><span data-stu-id="43852-158">**Encryption Algorithm**</span></span>|<span data-ttu-id="43852-159">选择**RC2**， **RC4**，或**无**加密算法。</span><span class="sxs-lookup"><span data-stu-id="43852-159">Select **RC2**, **RC4**, or **None** for the encryption algorithm.</span></span>|<span data-ttu-id="43852-160">Enum</span><span class="sxs-lookup"><span data-stu-id="43852-160">Enum</span></span>|<span data-ttu-id="43852-161">无</span><span class="sxs-lookup"><span data-stu-id="43852-161">None</span></span>|  
     |<span data-ttu-id="43852-162">**最大消息大小 （以千字节为单位）**</span><span class="sxs-lookup"><span data-stu-id="43852-162">**Maximum Message Size (in kilobytes)**</span></span>|<span data-ttu-id="43852-163">指定发送到指定的队列消息的最大消息大小。</span><span class="sxs-lookup"><span data-stu-id="43852-163">Specify the maximum message size for messages that you send to the specified queue.</span></span>|<span data-ttu-id="43852-164">UnsignedInt</span><span class="sxs-lookup"><span data-stu-id="43852-164">UnsignedInt</span></span>|<span data-ttu-id="43852-165">1024</span><span class="sxs-lookup"><span data-stu-id="43852-165">1024</span></span>|  
     |<span data-ttu-id="43852-166">**消息优先级**</span><span class="sxs-lookup"><span data-stu-id="43852-166">**Message Priority**</span></span>|<span data-ttu-id="43852-167">设置消息优先级。</span><span class="sxs-lookup"><span data-stu-id="43852-167">Set the message priority.</span></span>|<span data-ttu-id="43852-168">Enum</span><span class="sxs-lookup"><span data-stu-id="43852-168">Enum</span></span>|<span data-ttu-id="43852-169">Normal</span><span class="sxs-lookup"><span data-stu-id="43852-169">Normal</span></span>|  

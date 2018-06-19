@@ -1,11 +1,11 @@
 ---
-title: "如何取消登记业务流程 |Microsoft 文档"
-ms.custom: 
+title: 如何取消登记业务流程 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, unenlisting
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - managing [orchestrations], unenlisting
 - unenlisting, orchestrations
 ms.assetid: 038ed7bb-615c-4e4e-a5bb-79de2626de77
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255877"
 ---
 # <a name="how-to-unenlist-an-orchestration"></a><span data-ttu-id="41bfa-102">如何取消登记业务流程</span><span class="sxs-lookup"><span data-stu-id="41bfa-102">How to Unenlist an Orchestration</span></span>
 <span data-ttu-id="41bfa-103">本主题介绍如何使用 BizTalk Server 管理控制台来取消登记业务流程。</span><span class="sxs-lookup"><span data-stu-id="41bfa-103">This topic describes how to unenlist an orchestration by using the BizTalk Server Administration console.</span></span> <span data-ttu-id="41bfa-104">取消登记业务流程从主机中删除它。</span><span class="sxs-lookup"><span data-stu-id="41bfa-104">Unenlisting an orchestration removes it from the host.</span></span> <span data-ttu-id="41bfa-105">这将删除订阅，因此该业务流程将不再处理消息。</span><span class="sxs-lookup"><span data-stu-id="41bfa-105">This removes the subscription so that the orchestration no longer processes messages.</span></span> <span data-ttu-id="41bfa-106">在编辑业务流程的绑定前，必须先对该业务流程进行取消登记。</span><span class="sxs-lookup"><span data-stu-id="41bfa-106">You must unenlist an orchestration before you can edit its bindings.</span></span>  

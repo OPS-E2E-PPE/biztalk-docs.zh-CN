@@ -1,14 +1,14 @@
 ---
-title: "配置 SharePoint 服务接收位置 |Microsoft 文档"
-ms.custom: 
+title: 配置 SharePoint 服务接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9afed0e4-0f72-4df4-a2cb-d999c6fbbc86
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/17/2018
+ms.locfileid: "22234717"
 ---
 # <a name="configure-sharepoint-services-receive-location"></a><span data-ttu-id="4b495-102">配置 SharePoint Services 接收位置</span><span class="sxs-lookup"><span data-stu-id="4b495-102">Configure SharePoint Services Receive Location</span></span>
 <span data-ttu-id="4b495-103">本主题列出了创建 [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 接收位置的步骤。</span><span class="sxs-lookup"><span data-stu-id="4b495-103">This topic lists the steps to create a [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] receive location.</span></span>  

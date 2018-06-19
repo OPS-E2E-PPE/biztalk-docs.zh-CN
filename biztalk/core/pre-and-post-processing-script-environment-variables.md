@@ -1,18 +1,18 @@
 ---
-title: "前期和后期处理脚本环境变量 |Microsoft 文档"
-ms.custom: 
+title: 前期和后期处理脚本环境变量 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - scripts, post-processing
 - scripts, pre-processing
 - scripts, variables
 ms.assetid: 4185fb68-b00d-4875-82fd-a040905f84e7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264501"
 ---
 # <a name="pre--and-post-processing-script-environment-variables"></a><span data-ttu-id="b4ef1-102">前期和后期处理脚本环境变量</span><span class="sxs-lookup"><span data-stu-id="b4ef1-102">Pre- and Post-processing Script Environment Variables</span></span>
 <span data-ttu-id="b4ef1-103">此部分中的主题描述了前期和后期处理的脚本可以访问的环境变量。</span><span class="sxs-lookup"><span data-stu-id="b4ef1-103">The topics in this section describe the environment variables that pre- and post-processing scripts can access.</span></span>  

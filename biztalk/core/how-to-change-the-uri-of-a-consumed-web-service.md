@@ -1,11 +1,11 @@
 ---
-title: "如何更改使用的 Web 服务的 URI |Microsoft 文档"
-ms.custom: 
+title: 如何更改使用的 Web 服务的 URI |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, modifying
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - consuming [Web services]
 - modifying, Web services
 ms.assetid: 907de565-8c99-4d34-939f-fd3dba37dd11
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247397"
 ---
 # <a name="how-to-change-the-uri-of-a-consumed-web-service"></a><span data-ttu-id="9619e-102">如何更改已使用的 Web Service 的 URI</span><span class="sxs-lookup"><span data-stu-id="9619e-102">How to Change the URI of a Consumed Web Service</span></span>
 <span data-ttu-id="9619e-103">部署业务流程之后，BizTalk Server 将为该业务流程引用的每个 Web Services 都配置一个发送端口。</span><span class="sxs-lookup"><span data-stu-id="9619e-103">After you deploy your orchestration, BizTalk Server configures a send port for each Web service that the orchestration references.</span></span> <span data-ttu-id="9619e-104">默认情况下，BizTalk 在运行时使用的 Web Services 的 URL 与已导入 Web Services 的 URL 相同。</span><span class="sxs-lookup"><span data-stu-id="9619e-104">By default, BizTalk uses the URL of the Web service at run time for the same URL for the imported Web service.</span></span> <span data-ttu-id="9619e-105">你可以使用 BizTalk Server 管理控制台更改此 URL。</span><span class="sxs-lookup"><span data-stu-id="9619e-105">You can change this URL using BizTalk Server Administration console.</span></span>  

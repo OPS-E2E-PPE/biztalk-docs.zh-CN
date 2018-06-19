@@ -1,14 +1,14 @@
 ---
-title: "BizTalk Server 如何接收 EDI 消息 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 如何接收 EDI 消息 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6f3bb88c-9226-4791-b100-ba68dea45278
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246437"
 ---
 # <a name="how-biztalk-server-receives-edi-messages"></a><span data-ttu-id="46bef-102">BizTalk Server 如何接收 EDI 消息</span><span class="sxs-lookup"><span data-stu-id="46bef-102">How BizTalk Server Receives EDI Messages</span></span>
 <span data-ttu-id="46bef-103">在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收 EDI 消息时，它将执行贸易合作伙伴协议查找和架构发现，验证消息，发送确认（如果适用）并解析 EDI 批处理。</span><span class="sxs-lookup"><span data-stu-id="46bef-103">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an EDI message, it performs trading partner agreement lookup and schema discovery, validates the message, sends an acknowledgment (if appropriate), and parses the EDI batch.</span></span> <span data-ttu-id="46bef-104">此处理将由 EDI 接收管道中的 EDI 拆装器执行。</span><span class="sxs-lookup"><span data-stu-id="46bef-104">This processing is performed by the EDI disassembler in the EDI Receive Pipeline.</span></span>  

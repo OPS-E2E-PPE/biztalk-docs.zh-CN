@@ -1,17 +1,17 @@
 ---
-title: "顺序保护 |Microsoft 文档"
-ms.custom: 
+title: 顺序保护 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - convoy sets
 - correlation sets, sequential receive tasks
 ms.assetid: f05ff42c-2236-42a3-8166-19700e0c3d97
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271581"
 ---
 # <a name="sequential-convoys"></a><span data-ttu-id="b347e-102">顺序保护</span><span class="sxs-lookup"><span data-stu-id="b347e-102">Sequential Convoys</span></span>
 <span data-ttu-id="b347e-103">顺序保护可以使多个单独的消息结合在一起，以取得所需的效果。</span><span class="sxs-lookup"><span data-stu-id="b347e-103">A sequential convoy enables multiple single messages to join together to achieve a required result.</span></span> <span data-ttu-id="b347e-104">顺序保护是一组具有预定义顺序的相关消息。</span><span class="sxs-lookup"><span data-stu-id="b347e-104">A sequential convoy is a set of related messages that have a predefined order.</span></span> <span data-ttu-id="b347e-105">虽然这些消息不必完全相同，但 BizTalk Server 必须按顺序接收它们。</span><span class="sxs-lookup"><span data-stu-id="b347e-105">Although the messages do not have to be exactly the same, BizTalk Server must receive them in a sequential order.</span></span>  

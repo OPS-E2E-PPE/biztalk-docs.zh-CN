@@ -1,14 +1,14 @@
 ---
-title: "教程： 使用 PeopleSoft 企业的 BizTalk 适配器从 PeopleSoft Enterprise 检索数据 |Microsoft 文档"
-ms.custom: 
+title: 教程： 使用 PeopleSoft 企业的 BizTalk 适配器从 PeopleSoft Enterprise 检索数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c173fa4c-911e-4fa3-813f-e8f36b0049a5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975523"
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a><span data-ttu-id="4aa75-102">教程：使用 PeopleSoft Enterprise 的 BizTalk 适配器以从 PeopleSoft Enterprise 中检索数据</span><span class="sxs-lookup"><span data-stu-id="4aa75-102">Tutorial: Using the BizTalk Adapter for PeopleSoft Enterprise to Retrieve Data from PeopleSoft Enterprise</span></span>
 <span data-ttu-id="4aa75-103">PeopleSoft Enterprise 的 BizTalk 适配器可以用于执行针对 PeopleSoft 系统的查询，并返回查询的结果。</span><span class="sxs-lookup"><span data-stu-id="4aa75-103">The BizTalk Adapter for PeopleSoft Enterprise can be used to execute a query against a PeopleSoft system and return the results of the query.</span></span> <span data-ttu-id="4aa75-104">本演练介绍了可演示此功能的 SDK 示例。</span><span class="sxs-lookup"><span data-stu-id="4aa75-104">This walkthrough describes an SDK sample that illustrates this functionality.</span></span>  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="4aa75-118">**运行时项目文件名**</span><span class="sxs-lookup"><span data-stu-id="4aa75-118">**Runtime Project Filename**</span></span>|<span data-ttu-id="4aa75-119">**运行时项目文件说明**</span><span class="sxs-lookup"><span data-stu-id="4aa75-119">**Runtime Project File Description**</span></span>|  
 |----------------------------------|------------------------------------------|  
 |<span data-ttu-id="4aa75-120">TwoWaySend.btproj,</span><span class="sxs-lookup"><span data-stu-id="4aa75-120">TwoWaySend.btproj,</span></span><br /><br /> <span data-ttu-id="4aa75-121">TwoWaySend.sln</span><span class="sxs-lookup"><span data-stu-id="4aa75-121">TwoWaySend.sln</span></span>|<span data-ttu-id="4aa75-122">应用程序的项目和解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="4aa75-122">Project and solution files for the application.</span></span>|  
-|<span data-ttu-id="4aa75-123">LOCATIONService.xsd，</span><span class="sxs-lookup"><span data-stu-id="4aa75-123">LOCATIONService.xsd,</span></span><br /><br /> <span data-ttu-id="4aa75-124">LOCATIONService_1.xsd，</span><span class="sxs-lookup"><span data-stu-id="4aa75-124">LOCATIONService_1.xsd,</span></span><br /><br /> <span data-ttu-id="4aa75-125">LOCATIONService_2.xsd</span><span class="sxs-lookup"><span data-stu-id="4aa75-125">LOCATIONService_2.xsd</span></span>|<span data-ttu-id="4aa75-126">应用程序的架构文件。</span><span class="sxs-lookup"><span data-stu-id="4aa75-126">Schema files for the application.</span></span> <span data-ttu-id="4aa75-127">**注意：**项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。</span><span class="sxs-lookup"><span data-stu-id="4aa75-127">**Note:**  The adapter schema files in the project were originally created using the **Add Adapter Metadata Wizard**.</span></span> <span data-ttu-id="4aa75-128">有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。</span><span class="sxs-lookup"><span data-stu-id="4aa75-128">For more information on the Add Adapter Metadata Wizard see the topic "How to Add Adapter Metadata to a BizTalk Project" in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation.</span></span>|  
+|<span data-ttu-id="4aa75-123">LOCATIONService.xsd，</span><span class="sxs-lookup"><span data-stu-id="4aa75-123">LOCATIONService.xsd,</span></span><br /><br /> <span data-ttu-id="4aa75-124">LOCATIONService_1.xsd，</span><span class="sxs-lookup"><span data-stu-id="4aa75-124">LOCATIONService_1.xsd,</span></span><br /><br /> <span data-ttu-id="4aa75-125">LOCATIONService_2.xsd</span><span class="sxs-lookup"><span data-stu-id="4aa75-125">LOCATIONService_2.xsd</span></span>|<span data-ttu-id="4aa75-126">应用程序的架构文件。</span><span class="sxs-lookup"><span data-stu-id="4aa75-126">Schema files for the application.</span></span> <span data-ttu-id="4aa75-127">**注意：** 项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。</span><span class="sxs-lookup"><span data-stu-id="4aa75-127">**Note:**  The adapter schema files in the project were originally created using the **Add Adapter Metadata Wizard**.</span></span> <span data-ttu-id="4aa75-128">有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。</span><span class="sxs-lookup"><span data-stu-id="4aa75-128">For more information on the Add Adapter Metadata Wizard see the topic "How to Add Adapter Metadata to a BizTalk Project" in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation.</span></span>|  
 |<span data-ttu-id="4aa75-129">PeopleSoftTwoWaySend.odx</span><span class="sxs-lookup"><span data-stu-id="4aa75-129">PeopleSoftTwoWaySend.odx</span></span>|<span data-ttu-id="4aa75-130">应用程序使用的业务流程。</span><span class="sxs-lookup"><span data-stu-id="4aa75-130">The orchestration used by the application.</span></span>|  
 |<span data-ttu-id="4aa75-131">PeopleSoftTwoWaySend.snk</span><span class="sxs-lookup"><span data-stu-id="4aa75-131">PeopleSoftTwoWaySend.snk</span></span>|<span data-ttu-id="4aa75-132">强命名密钥文件。</span><span class="sxs-lookup"><span data-stu-id="4aa75-132">The strong naming key file.</span></span>|  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/28/2017
   
 4.  <span data-ttu-id="4aa75-139">输入一个值**名称**字段，例如**PeopleSoft**。</span><span class="sxs-lookup"><span data-stu-id="4aa75-139">Enter a value for the **Name** field, for example **PeopleSoft**.</span></span>  
   
-5.  <span data-ttu-id="4aa75-140">选择**PeopleSoft Enterprise(r)**从列表中可用的适配器**适配器**下拉列表中单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="4aa75-140">Select **PeopleSoft Enterprise(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
+5.  <span data-ttu-id="4aa75-140">选择**PeopleSoft Enterprise(r)** 从列表中可用的适配器**适配器**下拉列表中单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="4aa75-140">Select **PeopleSoft Enterprise(r)** from the list of adapters available in the **Adapter** dropdown and click **OK**.</span></span>  
   
 #### <a name="create-a-solicit-response-biztalk-send-port"></a><span data-ttu-id="4aa75-141">创建要求响应 BizTalk 发送端口</span><span class="sxs-lookup"><span data-stu-id="4aa75-141">Create a Solicit-Response BizTalk Send Port</span></span>  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/28/2017
   
     |<span data-ttu-id="4aa75-148">**属性**</span><span class="sxs-lookup"><span data-stu-id="4aa75-148">**Property**</span></span>|<span data-ttu-id="4aa75-149">**值**</span><span class="sxs-lookup"><span data-stu-id="4aa75-149">**Value**</span></span>|  
     |------------------|---------------|  
-    |<span data-ttu-id="4aa75-150">应用程序服务器路径</span><span class="sxs-lookup"><span data-stu-id="4aa75-150">Application server path</span></span>|<span data-ttu-id="4aa75-151">PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。</span><span class="sxs-lookup"><span data-stu-id="4aa75-151">PeopleSoft Server's machine and port location, for example //PSServer:8888.</span></span> <span data-ttu-id="4aa75-152">**注意：**如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。</span><span class="sxs-lookup"><span data-stu-id="4aa75-152">**Note:**  If you do not specify a port number, the default port of 9000 is used so in the example above you could enter a value of //PSServer if the PeopleSoft Server uses the default port value of 9000.</span></span>|  
+    |<span data-ttu-id="4aa75-150">应用程序服务器路径</span><span class="sxs-lookup"><span data-stu-id="4aa75-150">Application server path</span></span>|<span data-ttu-id="4aa75-151">PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。</span><span class="sxs-lookup"><span data-stu-id="4aa75-151">PeopleSoft Server's machine and port location, for example //PSServer:8888.</span></span> <span data-ttu-id="4aa75-152">**注意：** 如果未指定端口号，使用 9000 的默认端口，因此在上面的示例可能输入值 //PSServer 如果 PeopleSoft 服务器使用 9000 的默认端口值。</span><span class="sxs-lookup"><span data-stu-id="4aa75-152">**Note:**  If you do not specify a port number, the default port of 9000 is used so in the example above you could enter a value of //PSServer if the PeopleSoft Server uses the default port value of 9000.</span></span>|  
     |<span data-ttu-id="4aa75-153">JAVA_HOME</span><span class="sxs-lookup"><span data-stu-id="4aa75-153">JAVA_HOME</span></span>|<span data-ttu-id="4aa75-154">与 Java 2 平台 SDK 文件相关联的主目录路径，例如 C:\j2sdk1.4.2_08</span><span class="sxs-lookup"><span data-stu-id="4aa75-154">Path to the home directory associated with the Java 2 Platform SDK files, for example C:\j2sdk1.4.2_08</span></span>|  
     |<span data-ttu-id="4aa75-155">密码</span><span class="sxs-lookup"><span data-stu-id="4aa75-155">Password</span></span>|<span data-ttu-id="4aa75-156">连接到 PeopleSoft 系统时使用的密码。</span><span class="sxs-lookup"><span data-stu-id="4aa75-156">Password used when connecting to the PeopleSoft system.</span></span>|  
     |<span data-ttu-id="4aa75-157">PeopleSoft 8.x JAR 文件</span><span class="sxs-lookup"><span data-stu-id="4aa75-157">PeopleSoft 8.x JAR files</span></span>|<span data-ttu-id="4aa75-158">文件的位置 PeopleSoft Java 对象适配器 JAR， **psjoa.jar**，例如 C:\JARS\psjoa.jar。</span><span class="sxs-lookup"><span data-stu-id="4aa75-158">Location of the PeopleSoft Java Object Adapter JAR file, **psjoa.jar**, for example C:\JARS\psjoa.jar.</span></span>|  
@@ -163,7 +164,7 @@ ms.lasthandoff: 11/28/2017
   
 1.  <span data-ttu-id="4aa75-197">双击**LOCATIONService_1.xsd**在解决方案资源管理器，以在架构编辑器中打开该文件。</span><span class="sxs-lookup"><span data-stu-id="4aa75-197">Double-click **LOCATIONService_1.xsd** in Solution Explorer to open the file in Schema Editor.</span></span>  
   
-2.  <span data-ttu-id="4aa75-198">右键单击**\<架构\>**节点在架构编辑器中和单击**属性**以显示节点的属性。</span><span class="sxs-lookup"><span data-stu-id="4aa75-198">Right-click the **\<Schema\>** node in Schema Editor and click **Properties** to display properties for the node.</span></span>  
+2.  <span data-ttu-id="4aa75-198">右键单击**\<架构\>** 节点在架构编辑器中和单击**属性**以显示节点的属性。</span><span class="sxs-lookup"><span data-stu-id="4aa75-198">Right-click the **\<Schema\>** node in Schema Editor and click **Properties** to display properties for the node.</span></span>  
   
 3.  <span data-ttu-id="4aa75-199">选择**获取**从列表中的可用节点**根引用**下拉框。</span><span class="sxs-lookup"><span data-stu-id="4aa75-199">Select **Get** from the list of available nodes in the **Root Reference** dropdown box.</span></span> <span data-ttu-id="4aa75-200">这应这样做为了在你生成的示例文档实例时它将从生成**获取**节点的架构。</span><span class="sxs-lookup"><span data-stu-id="4aa75-200">This should be done so that when you generate a sample document instance it will be generated from the **Get** node of the schema.</span></span>  
   
@@ -180,9 +181,9 @@ ms.lasthandoff: 11/28/2017
   
 8.  <span data-ttu-id="4aa75-206">右击 LOCATIONService_1.xsd 在解决方案资源管理器中的，单击**生成实例**在指定的位置生成文档实例。</span><span class="sxs-lookup"><span data-stu-id="4aa75-206">Right-click LOCATIONService_1.xsd in Solution Explorer and click **Generate Instance** to generate a document instance in the specified location.</span></span>  
   
-9. <span data-ttu-id="4aa75-207">右键单击**\<架构\>**节点在架构编辑器中和单击**属性**以显示节点的属性。</span><span class="sxs-lookup"><span data-stu-id="4aa75-207">Right-click the **\<Schema\>** node in Schema Editor and click **Properties** to display the properties for the node.</span></span>  
+9. <span data-ttu-id="4aa75-207">右键单击**\<架构\>** 节点在架构编辑器中和单击**属性**以显示节点的属性。</span><span class="sxs-lookup"><span data-stu-id="4aa75-207">Right-click the **\<Schema\>** node in Schema Editor and click **Properties** to display the properties for the node.</span></span>  
   
-10. <span data-ttu-id="4aa75-208">选择 (**默认)**从列表中的可用节点**根引用**下拉框。</span><span class="sxs-lookup"><span data-stu-id="4aa75-208">Select (**Default)** from the list of available nodes in the **Root Reference** dropdown box.</span></span>  
+10. <span data-ttu-id="4aa75-208">选择 (**默认)** 从列表中的可用节点**根引用**下拉框。</span><span class="sxs-lookup"><span data-stu-id="4aa75-208">Select (**Default)** from the list of available nodes in the **Root Reference** dropdown box.</span></span>  
   
 #### <a name="modify-the-generated-document-instance"></a><span data-ttu-id="4aa75-209">修改生成的文档实例</span><span class="sxs-lookup"><span data-stu-id="4aa75-209">Modify the generated document instance</span></span>  
   

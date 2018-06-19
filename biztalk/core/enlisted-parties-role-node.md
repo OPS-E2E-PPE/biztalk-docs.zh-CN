@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239685"
 ---
 # <a name="enlisted-parties-role-node"></a><span data-ttu-id="c71fd-102">已登记参与方（角色节点）</span><span class="sxs-lookup"><span data-stu-id="c71fd-102">Enlisted Parties (Role Node)</span></span>
 <span data-ttu-id="c71fd-103">对于任何“已登记参与方”节点，只要它包含与通过某个绑定文件导出的角色关联的已登记参与方相关的特定信息，则该绑定文件的“已登记参与方”节点就是此节点的父节点。</span><span class="sxs-lookup"><span data-stu-id="c71fd-103">The Enlisted Parties node of a binding file is the parent node for all of the Enlisted Party nodes which contain specific information about the enlisted parties associated with a role that is exported with the binding file.</span></span>  

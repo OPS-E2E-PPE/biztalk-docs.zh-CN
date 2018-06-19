@@ -1,14 +1,14 @@
 ---
-title: "重写 EDI 标头 |Microsoft 文档"
-ms.custom: 
+title: 重写 EDI 标头 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 16c19d3d-eab2-4d44-8752-25aeadb537a4
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22265437"
 ---
 # <a name="overriding-edi-headers"></a><span data-ttu-id="9aaca-102">替代 EDI 标头</span><span class="sxs-lookup"><span data-stu-id="9aaca-102">Overriding EDI Headers</span></span>
 <span data-ttu-id="9aaca-103">发送 EDI 编码的交换时，应用到消息的 EDI 信封通常基于接收协议的 EDI 属性，或基于后备协议属性。</span><span class="sxs-lookup"><span data-stu-id="9aaca-103">When sending an EDI-encoded interchange, the EDI envelope applied to the message is normally based upon the EDI properties of the receiving agreement, or the fallback agreement properties.</span></span> <span data-ttu-id="9aaca-104">但是，基于运行时所生成的值来设置 EDI 信封属性通常很有用。</span><span class="sxs-lookup"><span data-stu-id="9aaca-104">However it is often useful to set the EDI envelope properties based on runtime generated values.</span></span>  

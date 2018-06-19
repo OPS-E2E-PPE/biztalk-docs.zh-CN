@@ -1,14 +1,14 @@
 ---
-title: "转义字符 |Microsoft 文档"
-ms.custom: 
+title: 转义字符 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3af800b9-d31b-487a-9a06-6eda47d1574e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22246125"
 ---
 # <a name="escape-characters"></a><span data-ttu-id="25268-102">转义字符</span><span class="sxs-lookup"><span data-stu-id="25268-102">Escape Characters</span></span>
 
@@ -59,7 +60,7 @@ RECORD1,testfield1\,testfield1,testfield2
   
  <span data-ttu-id="25268-117">当平面文件组装器执行反向操作（将记录的 XML 版本转换为其等效平面文件记录）时，转义符将插入到 Field1 中间逗号的前面，以表示它应被解释为数据而不是字段分隔符。</span><span class="sxs-lookup"><span data-stu-id="25268-117">When the flat file assembler performs the reverse operation, converting the XML version of the record to its equivalent flat file record, the escape character will be inserted before the comma in the middle of Field1, thereby indicating that it should be interpreted as data rather than as a field delimiter.</span></span>  
   
- <span data-ttu-id="25268-118">在创建使用 BizTalk 编辑器的平面文件架构，你可以定义整个架构使用的默认转义字符**默认转义字符**和**默认转义字符类型**属性**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="25268-118">When creating a flat file schema using BizTalk Editor, you can define a default escape character for the entire schema using the **Default Escape Character** and **Default Escape Character Type** properties of the **Schema** node.</span></span> <span data-ttu-id="25268-119">然后，你可以配置为使用此默认转义字符或自定义的、 特定记录的转义字符使用架构中的每个单独的记录**转义符]**和**转义字符类型**属性**记录**节点。</span><span class="sxs-lookup"><span data-stu-id="25268-119">Then, you can configure each individual record in the schema to either use this default escape character or a custom, record-specific escape character using the **Escape Character]** and **Escape Character Type** properties of the **Record** node.</span></span>  
+ <span data-ttu-id="25268-118">在创建使用 BizTalk 编辑器的平面文件架构，你可以定义整个架构使用的默认转义字符**默认转义字符**和**默认转义字符类型**属性**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="25268-118">When creating a flat file schema using BizTalk Editor, you can define a default escape character for the entire schema using the **Default Escape Character** and **Default Escape Character Type** properties of the **Schema** node.</span></span> <span data-ttu-id="25268-119">然后，你可以配置为使用此默认转义字符或自定义的、 特定记录的转义字符使用架构中的每个单独的记录**转义符]** 和**转义字符类型**属性**记录**节点。</span><span class="sxs-lookup"><span data-stu-id="25268-119">Then, you can configure each individual record in the schema to either use this default escape character or a custom, record-specific escape character using the **Escape Character]** and **Escape Character Type** properties of the **Record** node.</span></span>  
   
 ## <a name="see-also"></a><span data-ttu-id="25268-120">另请参阅</span><span class="sxs-lookup"><span data-stu-id="25268-120">See Also</span></span>  
 - [<span data-ttu-id="25268-121">如何解释的特殊字符作为字段值的一部分</span><span class="sxs-lookup"><span data-stu-id="25268-121">Ways to Interpret Special Characters as Part of a Field Value</span></span>](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)  

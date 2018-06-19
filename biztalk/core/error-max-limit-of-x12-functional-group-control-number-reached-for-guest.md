@@ -1,14 +1,14 @@
 ---
-title: "可接受的 X12 功能组控制编号已达到来宾设置的最大限制 |Microsoft 文档"
-ms.custom: 
+title: 可接受的 X12 功能组控制编号已达到来宾设置的最大限制 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 05cba774-fa35-4694-aa34-d7151f8cd75c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241629"
 ---
 # <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-guest-settings"></a><span data-ttu-id="e3123-102">已达到“来宾”设置的可接受 X12 功能组控制编号最大限制</span><span class="sxs-lookup"><span data-stu-id="e3123-102">Max limit of acceptable X12 functional group control number has reached for Guest settings</span></span>
 ## <a name="details"></a><span data-ttu-id="e3123-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="e3123-103">Details</span></span>  

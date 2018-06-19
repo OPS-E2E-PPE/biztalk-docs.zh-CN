@@ -1,14 +1,14 @@
 ---
-title: "如何创建链接 |Microsoft 文档"
-ms.custom: 
+title: 如何创建链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 670b831f-be03-4612-93d5-a894f7bb3c11
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22250189"
 ---
 # <a name="how-to-create-links"></a><span data-ttu-id="725f8-102">如何创建链接</span><span class="sxs-lookup"><span data-stu-id="725f8-102">How to Create Links</span></span>
 <span data-ttu-id="725f8-103">创建从链接**记录**或**字段**到源架构中的节点**记录**或**字段**目标架构中的节点是最基本在创建地图的活动。</span><span class="sxs-lookup"><span data-stu-id="725f8-103">Creating a link from a **Record** or **Field** node in a source schema to a **Record** or **Field** node in a destination schema is the most basic activity in creating maps.</span></span> <span data-ttu-id="725f8-104">本主题为此活动的不同用法（包括创建指向和来自 functoid 的链接）提供了分步说明。</span><span class="sxs-lookup"><span data-stu-id="725f8-104">This topic provides step-by-step instructions for several variations of this activity, including creating links to and from functoids.</span></span> <span data-ttu-id="725f8-105">有关使用 functoid 的其他信息，请参阅[创建更复杂的映射到使用 Functoid](../core/using-functoids-to-create-more-complex-mappings.md)。</span><span class="sxs-lookup"><span data-stu-id="725f8-105">For additional information about working with functoids, see [Using Functoids to Create More Complex Mappings](../core/using-functoids-to-create-more-complex-mappings.md).</span></span>  

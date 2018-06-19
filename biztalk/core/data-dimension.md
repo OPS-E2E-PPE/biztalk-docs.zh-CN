@@ -1,17 +1,17 @@
 ---
-title: "数据维度 |Microsoft 文档"
-ms.custom: 
+title: 数据维度 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data dimension [BAM]
 - aggregations [BAM], data dimensions
 ms.assetid: 07b5e56a-4fd5-4c88-a98a-758e514d0621
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238349"
 ---
 # <a name="data-dimension"></a><span data-ttu-id="bb8e9-102">数据维度</span><span class="sxs-lookup"><span data-stu-id="bb8e9-102">Data Dimension</span></span>
 <span data-ttu-id="bb8e9-103">定义数据维度后，就可以将 BAM 活动中某些文本项的值用于行或列。</span><span class="sxs-lookup"><span data-stu-id="bb8e9-103">Defining a data dimension allows the value of some text items in the BAM activity to be used on rows or columns.</span></span> <span data-ttu-id="bb8e9-104">例如，使用名为“产品”的数据维度可以创建下表：</span><span class="sxs-lookup"><span data-stu-id="bb8e9-104">For example a data dimension named Product can be used to create the following table:</span></span>  

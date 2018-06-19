@@ -1,14 +1,14 @@
 ---
-title: "创建 BAM 事件总线服务的实例 |Microsoft 文档"
-ms.custom: 
+title: 创建 BAM 事件总线服务的实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 454bdde7-45a6-41ab-9196-f662273f0f2b
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22238413"
 ---
 # <a name="creating-instances-of-the-bam-event-bus-service"></a><span data-ttu-id="80481-102">创建 BAM 事件总线服务的实例</span><span class="sxs-lookup"><span data-stu-id="80481-102">Creating Instances of the BAM Event Bus Service</span></span>
 <span data-ttu-id="80481-103">BAM 事件总线服务运行于 BizTalk 应用程序主机内。</span><span class="sxs-lookup"><span data-stu-id="80481-103">The BAM Event Bus Service runs inside a BizTalk application host.</span></span> <span data-ttu-id="80481-104">您可以使用默认主机作为 BAM 事件总线服务的宿主，也可以创建一个新主机。</span><span class="sxs-lookup"><span data-stu-id="80481-104">You can use the default host to host the BAM Event Bus Service, or you can create a new host.</span></span> <span data-ttu-id="80481-105">如果某个主机作为 BAM 事件总线服务的宿主，则为该主机创建的任何新实例也将作为此服务的宿主。</span><span class="sxs-lookup"><span data-stu-id="80481-105">If a host hosts the BAM Event Bus service, any new instances you create for that host also hosts the service.</span></span>  

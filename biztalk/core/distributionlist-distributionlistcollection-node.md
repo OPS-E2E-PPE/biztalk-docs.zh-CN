@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22239333"
 ---
 # <a name="distributionlist-distributionlistcollection-node"></a><span data-ttu-id="a7426-102">DistributionList （DistributionListCollection 节点）</span><span class="sxs-lookup"><span data-stu-id="a7426-102">DistributionList (DistributionListCollection Node)</span></span>
 <span data-ttu-id="a7426-103">绑定文件的 DistributionList 节点包含有关与绑定文件一起导出的分发列表的特定信息。</span><span class="sxs-lookup"><span data-stu-id="a7426-103">The DistributionList node of a binding file contains specific information about a distribution list that is exported with the binding file.</span></span> <span data-ttu-id="a7426-104">分发列表指 BizTalk Server Administrator 组中的发送端口组。</span><span class="sxs-lookup"><span data-stu-id="a7426-104">A distribution list is referred to as a send port group in the BizTalk Server Administrator.</span></span>  

@@ -1,11 +1,11 @@
 ---
-title: "如何配置 WCF NetTcp 接收处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何配置 WCF NetTcp 接收处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF-NetTcp adapters, global variables
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - configuring [WCF-NetTcp adapters], global variables
 - configuring [WCF-NetTcp adapters], receive handlers
 ms.assetid: a4a283d1-21de-4d6b-9cb5-f2f9f823903b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22247517"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-receive-handler"></a><span data-ttu-id="fffa5-102">如何配置 WCF-NetTcp 接收处理程序</span><span class="sxs-lookup"><span data-stu-id="fffa5-102">How to Configure a WCF-NetTcp Receive Handler</span></span>
 <span data-ttu-id="fffa5-103">可使用以下过程配置 WCF-NetTcp 接收处理程序。</span><span class="sxs-lookup"><span data-stu-id="fffa5-103">Use the following procedure to configure a WCF-NetTcp receive handler.</span></span>  

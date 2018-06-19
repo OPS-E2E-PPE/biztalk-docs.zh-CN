@@ -1,18 +1,18 @@
 ---
-title: "管理服务器 |Microsoft 文档"
-ms.custom: 
+title: 管理服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [servers], about managing servers
 - managing [servers]
 - servers, managing
 ms.assetid: eb77e852-64b9-4c25-ae36-5845b438f6ed
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262285"
 ---
 # <a name="managing-servers"></a><span data-ttu-id="7711e-102">管理服务器</span><span class="sxs-lookup"><span data-stu-id="7711e-102">Managing Servers</span></span>
 <span data-ttu-id="7711e-103">BizTalk Server 管理控制台中的“服务器”节点列出了 BizTalk Server 组所属的所有服务器。</span><span class="sxs-lookup"><span data-stu-id="7711e-103">The Servers node in the BizTalk Server Administration Console lists all servers that belong to the BizTalk Server group.</span></span> <span data-ttu-id="7711e-104">使用本部分中的过程，您可以向组中添加服务器或从中删除服务器，或者将服务器从一个组移动到另一个组。</span><span class="sxs-lookup"><span data-stu-id="7711e-104">Using the procedures in this section, you can add or remove servers from the group, or move servers from one group to another.</span></span>  

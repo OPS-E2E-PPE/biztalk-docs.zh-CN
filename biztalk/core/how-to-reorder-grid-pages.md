@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254797"
 ---
 # <a name="how-to-reorder-grid-pages"></a><span data-ttu-id="b33e3-102">如何重排网格页</span><span class="sxs-lookup"><span data-stu-id="b33e3-102">How to Reorder Grid Pages</span></span>
 <span data-ttu-id="b33e3-103">如果映射复杂，则可以包含多个网格页，然后将其重命名和重新排序。</span><span class="sxs-lookup"><span data-stu-id="b33e3-103">If your map is complex, you can include multiple grid pages, and then rename and reorder them.</span></span> <span data-ttu-id="b33e3-104">本主题为这些操作提供了分步说明。</span><span class="sxs-lookup"><span data-stu-id="b33e3-104">This topic includes step-by-step instructions to perform these operations.</span></span>  

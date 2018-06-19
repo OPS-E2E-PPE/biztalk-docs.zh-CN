@@ -1,15 +1,15 @@
 ---
-title: "管理接收端口 |Microsoft 文档"
-description: "快速链接，可以使用在 BizTalk Server 中，包括创建，接收端口添加接收位置，配置映射，并启用跟踪"
-ms.custom: 
+title: 管理接收端口 |Microsoft 文档
+description: 快速链接，可以使用在 BizTalk Server 中，包括创建，接收端口添加接收位置，配置映射，并启用跟踪
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 561649b1-66f5-4895-b7a0-92d0a01bfbfb
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262277"
 ---
 # <a name="manage-receive-ports"></a><span data-ttu-id="99dcf-103">管理接收端口</span><span class="sxs-lookup"><span data-stu-id="99dcf-103">Manage Receive Ports</span></span>
 

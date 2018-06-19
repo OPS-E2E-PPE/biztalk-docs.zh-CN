@@ -1,11 +1,11 @@
 ---
-title: "如何从应用程序删除预或后续处理脚本 |Microsoft 文档"
-ms.custom: 
+title: 如何从应用程序删除预或后续处理脚本 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [scripts], deleting
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - scripts, deleting
 - applications, scripts
 ms.assetid: 7911f098-97f2-4a5d-87fe-20b55231113e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22254757"
 ---
 # <a name="how-to-remove-a-pre--or-post-processing-script-from-an-application"></a><span data-ttu-id="eac17-102">如何从应用程序中删除预处理脚本和后处理脚本</span><span class="sxs-lookup"><span data-stu-id="eac17-102">How to Remove a Pre- or Post-processing Script from an Application</span></span>
 <span data-ttu-id="eac17-103">本主题描述如何使用 BizTalk Server 管理控制台或命令行从应用程序删除预处理脚本或后处理脚本。</span><span class="sxs-lookup"><span data-stu-id="eac17-103">This topic describes how to use the BizTalk Server Administration console or the command line to remove a pre- or post-processing script from an application.</span></span> <span data-ttu-id="eac17-104">这将从 BizTalk 管理数据库删除脚本，以便它将不会导出到应用程序的 .msi 文件中。</span><span class="sxs-lookup"><span data-stu-id="eac17-104">This removes the script from the BizTalk Management database, so that it will not be exported in the application .msi file.</span></span> <span data-ttu-id="eac17-105">如果本地文件系统中存在脚本，该方法并不会从那里删除该脚本。</span><span class="sxs-lookup"><span data-stu-id="eac17-105">This does not remove the script from the local file system, if it exists there.</span></span>  

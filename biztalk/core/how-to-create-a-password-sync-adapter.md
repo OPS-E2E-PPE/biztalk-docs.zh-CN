@@ -1,14 +1,14 @@
 ---
-title: "如何创建密码同步适配器 |Microsoft 文档"
-ms.custom: 
+title: 如何创建密码同步适配器 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: caa5bd13-efd9-4544-b5df-17d01c6ac5d8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249365"
 ---
 # <a name="how-to-create-a-password-sync-adapter"></a><span data-ttu-id="1146d-102">如何创建密码同步适配器</span><span class="sxs-lookup"><span data-stu-id="1146d-102">How to Create a Password Sync Adapter</span></span>
 <span data-ttu-id="1146d-103">密码同步 (PS) 适配器是使用密码同步助手组件向企业单一登录 (SSO) 传递通知或从企业单一登录传递通知的应用程序。</span><span class="sxs-lookup"><span data-stu-id="1146d-103">A password sync (PS) adapter is an application that uses the Password Sync Helper component to pass notifications to and from Enterprise Single Sign-On (SSO).</span></span> <span data-ttu-id="1146d-104">请注意，虽然密码同步助手组件公开的是 COM 和 .NET Framework 接口，但适配器并不一定必须为 COM 组件。</span><span class="sxs-lookup"><span data-stu-id="1146d-104">Note that although the PS Helper component exposes a COM and a .NET Framework interface, your adapter does not necessarily have to be a COM component.</span></span> <span data-ttu-id="1146d-105">可以将适配器设计为独立进程、COM+ 应用程序或 Windows 服务。</span><span class="sxs-lookup"><span data-stu-id="1146d-105">You can design your adapter as a stand-alone process, a COM+ application, or a Windows service.</span></span>  

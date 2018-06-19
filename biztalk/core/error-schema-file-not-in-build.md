@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241597"
 ---
 # <a name="error---schema-file-not-in-build"></a><span data-ttu-id="5078c-102">错误-不在生成的架构文件</span><span class="sxs-lookup"><span data-stu-id="5078c-102">Error - Schema File Not In Build</span></span>
 <span data-ttu-id="5078c-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="5078c-103">**Explanation**</span></span>  

@@ -1,18 +1,18 @@
 ---
-title: "在服务中有效地使用 SSO 面向解决方案 |Microsoft 文档"
-ms.custom: 
+title: 在服务中有效地使用 SSO 面向解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, service solutions
 - service solution tutorial, SSO
 - SSO, using from code
 ms.assetid: 809e0ad3-cc7f-4095-87d1-63031675a47f
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22289261"
 ---
 # <a name="using-sso-efficiently-in-the-service-oriented-solution"></a><span data-ttu-id="ddc6f-102">在服务中有效地使用 SSO 面向解决方案</span><span class="sxs-lookup"><span data-stu-id="ddc6f-102">Using SSO Efficiently in the Service Oriented Solution</span></span>
 <span data-ttu-id="ddc6f-103">面向服务的解决方案使用企业单一登录 (SSO) 来存储配置值和处理后端系统的凭据。</span><span class="sxs-lookup"><span data-stu-id="ddc6f-103">The service oriented solution uses Enterprise Single Sign-On (SSO) both to store configuration values and to handle credentials for the back-end systems.</span></span> <span data-ttu-id="ddc6f-104">为缩短延迟时间，该解决方案使用本地缓存来存储配置值。</span><span class="sxs-lookup"><span data-stu-id="ddc6f-104">To reduce latency, the solution uses a local cache for the configuration values.</span></span> <span data-ttu-id="ddc6f-105">该解决方案每隔五分钟刷新一次缓存。</span><span class="sxs-lookup"><span data-stu-id="ddc6f-105">The solution refreshes the cache every five minutes.</span></span>  

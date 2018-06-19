@@ -1,14 +1,14 @@
 ---
-title: "找不到的协议的回退设置 |Microsoft 文档"
-ms.custom: 
+title: 找不到的协议的回退设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d93e5db1-16a3-4796-8fa2-fef934508034
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245901"
 ---
 # <a name="fallback-settings-for-the-protocol-not-found"></a><span data-ttu-id="0d8be-102">找不到协议的后备设置</span><span class="sxs-lookup"><span data-stu-id="0d8be-102">Fallback Settings for the Protocol not found</span></span>
 ## <a name="details"></a><span data-ttu-id="0d8be-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="0d8be-103">Details</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "EDI 验证、 架构和消息的已知问题 |Microsoft 文档"
-ms.custom: 
+title: EDI 验证、 架构和消息的已知问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 417c3e18-9a97-4d59-bc2b-e96a8c33d388
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264557"
 ---
 # <a name="known-issues-with-edi-validation-schemas-and-messages"></a><span data-ttu-id="d41e8-102">EDI 验证、架构和消息的已知问题</span><span class="sxs-lookup"><span data-stu-id="d41e8-102">Known Issues with EDI Validation, Schemas, and Messages</span></span>
 <span data-ttu-id="d41e8-103">本主题介绍已知的验证问题。</span><span class="sxs-lookup"><span data-stu-id="d41e8-103">This topic describes known validation issues.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "对 Oracle Oracle 数据库中的用户定义类型的支持 |Microsoft 文档"
-ms.custom: 
+title: 对 Oracle Oracle 数据库中的用户定义类型的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68edf0f2-a798-4096-86ca-85d2cfa9088a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26006918"
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a><span data-ttu-id="376dd-102">对 Oracle Oracle 数据库中的用户定义类型的支持</span><span class="sxs-lookup"><span data-stu-id="376dd-102">Support for Oracle User-Defined Types in Oracle Database</span></span>
 <span data-ttu-id="376dd-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]包含 Oracle User-Defined 类型 (Udt) 的支持 Oracle 数据库中执行对项目的操作。</span><span class="sxs-lookup"><span data-stu-id="376dd-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports performing operations on artifacts in the Oracle database that contain Oracle User-Defined Types (UDTs).</span></span> <span data-ttu-id="376dd-104">Udt 可出现在以下项目：</span><span class="sxs-lookup"><span data-stu-id="376dd-104">The UDTs can be present in the following artifacts:</span></span>  

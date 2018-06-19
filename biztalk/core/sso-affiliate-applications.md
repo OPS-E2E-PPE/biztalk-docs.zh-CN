@@ -1,11 +1,11 @@
 ---
-title: "SSO Affiliate 应用程序 |Microsoft 文档"
-ms.custom: 
+title: SSO Affiliate 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - SSO, designing applications
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - SSO, applications
 - applications [SSO], designing
 ms.assetid: 002ecf7e-4d52-425a-9498-0e7bd6545047
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25975721"
 ---
 # <a name="sso-affiliate-applications"></a><span data-ttu-id="ecb66-102">SSO 关联应用程序</span><span class="sxs-lookup"><span data-stu-id="ecb66-102">SSO Affiliate Applications</span></span>
 <span data-ttu-id="ecb66-103">企业单一登录 (SSO) 关联应用程序是用于表示使用 SSO 连接到的诸如主机、后端系统或业务应用程序之类的系统或子系统的逻辑实体。</span><span class="sxs-lookup"><span data-stu-id="ecb66-103">The Enterprise Single Sign-On (SSO) Affiliate applications are logical entities that represent a system or sub-system such as a host, back-end system, or line of business application to which you are connecting using SSO.</span></span> <span data-ttu-id="ecb66-104">关联应用程序可以表示诸如大型机或 UNIX 计算机之类的后端系统。</span><span class="sxs-lookup"><span data-stu-id="ecb66-104">An affiliate application can represent a back-end system such as a mainframe or UNIX computer.</span></span> <span data-ttu-id="ecb66-105">它还可以表示应用程序（如 SAP）或系统分支（如“福利待遇”子系统或“付款存根”子系统）。</span><span class="sxs-lookup"><span data-stu-id="ecb66-105">It can also represent an application such as SAP, or a subdivision of the system, such as the "Benefits" or "Pay stub" sub-systems.</span></span>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/28/2017
 |<span data-ttu-id="ecb66-161">Description</span><span class="sxs-lookup"><span data-stu-id="ecb66-161">Description</span></span>|<span data-ttu-id="ecb66-162">关联应用程序的简要描述</span><span class="sxs-lookup"><span data-stu-id="ecb66-162">Brief description of the affiliate application</span></span>|  
 |<span data-ttu-id="ecb66-163">联系人</span><span class="sxs-lookup"><span data-stu-id="ecb66-163">Contact</span></span>|<span data-ttu-id="ecb66-164">用户可以联系的此关联应用程序的主要联系人。</span><span class="sxs-lookup"><span data-stu-id="ecb66-164">The main contact for this affiliate application that users can use.</span></span> <span data-ttu-id="ecb66-165">（可以是电子邮件地址。）</span><span class="sxs-lookup"><span data-stu-id="ecb66-165">(Can be an e-mail address.)</span></span>|  
 |<span data-ttu-id="ecb66-166">appUserAccount</span><span class="sxs-lookup"><span data-stu-id="ecb66-166">appUserAccount</span></span>|<span data-ttu-id="ecb66-167">Windows 组，包含将使用此关联应用程序的最终用户的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ecb66-167">The Windows group that contains the user accounts of end-users that will be using this affiliate application</span></span>|  
-|<span data-ttu-id="ecb66-168">appAdminAccount</span><span class="sxs-lookup"><span data-stu-id="ecb66-168">appAdminAccount</span></span>|<span data-ttu-id="ecb66-169">Windows 组，包含将管理此关联应用程序的管理员帐户。</span><span class="sxs-lookup"><span data-stu-id="ecb66-169">The Windows group that contains the administrator accounts that will manage this affiliate application.</span></span> <span data-ttu-id="ecb66-170">**注意：**不需要定义此属性，如果将 adminAccountSame 设置为是。</span><span class="sxs-lookup"><span data-stu-id="ecb66-170">**Note:**  You do not need to define this property if you set the adminAccountSame to Yes.</span></span>|  
+|<span data-ttu-id="ecb66-168">appAdminAccount</span><span class="sxs-lookup"><span data-stu-id="ecb66-168">appAdminAccount</span></span>|<span data-ttu-id="ecb66-169">Windows 组，包含将管理此关联应用程序的管理员帐户。</span><span class="sxs-lookup"><span data-stu-id="ecb66-169">The Windows group that contains the administrator accounts that will manage this affiliate application.</span></span> <span data-ttu-id="ecb66-170">**注意：** 不需要定义此属性，如果将 adminAccountSame 设置为是。</span><span class="sxs-lookup"><span data-stu-id="ecb66-170">**Note:**  You do not need to define this property if you set the adminAccountSame to Yes.</span></span>|  
   
 |<span data-ttu-id="ecb66-171">应用程序标志</span><span class="sxs-lookup"><span data-stu-id="ecb66-171">Application Flag</span></span>|<span data-ttu-id="ecb66-172">Description</span><span class="sxs-lookup"><span data-stu-id="ecb66-172">Description</span></span>|  
 |----------------------|-----------------|  

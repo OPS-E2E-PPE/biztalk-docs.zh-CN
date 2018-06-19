@@ -1,14 +1,14 @@
 ---
-title: "有关使用 BAM Api 注意事项 |Microsoft 文档"
-ms.custom: 
+title: 有关使用 BAM Api 注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dd8ccf63-6989-4ad6-a193-cf3043e9a466
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22237837"
 ---
 # <a name="considerations-for-working-with-bam-apis"></a><span data-ttu-id="5ea97-102">使用 BAM Api 的注意事项</span><span class="sxs-lookup"><span data-stu-id="5ea97-102">Considerations for Working with BAM APIs</span></span>
 <span data-ttu-id="5ea97-103">在使用“Microsoft.BizTalk.Bam.EventObservation.EventStream”对象（如 DirectEventStream、BufferedEventStream、MessagingEventStream 或 OrchestrationEventStream）时，BAM 将会捕获里程碑，使这些里程碑自动以世界时 (UTC) 格式（也称为格林威治标准时间）进行记录。</span><span class="sxs-lookup"><span data-stu-id="5ea97-103">When using an  "Microsoft.BizTalk.Bam.EventObservation.EventStream" object, such as DirectEventStream, BufferedEventStream, MessagingEventStream, or OrchestrationEventStream, BAM captures milestones such that they are automatically recorded in Coordinated Universal Time (UTC) format (this is also referred to as Greenwich Mean Time).</span></span> <span data-ttu-id="5ea97-104">当使用这些 API 向 BAM 发送日期/时间时，这些日期和时间将以发送格式接收，而不会转换为 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="5ea97-104">When you send date/times to BAM using the APIs they are received in the format sent with no conversion to UTC format.</span></span> <span data-ttu-id="5ea97-105">在开发 BAM 解决方案时，应考虑以下情况：</span><span class="sxs-lookup"><span data-stu-id="5ea97-105">You should take the following considerations into account when you are developing your BAM solutions:</span></span>  

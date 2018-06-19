@@ -1,18 +1,18 @@
 ---
-title: "消息表示为 XSD 架构 |Microsoft 文档"
-ms.custom: 
+title: 消息表示为 XSD 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Message Assignment shape [Orchestration Designer], maps
 - maps, transforms
 - Expression Editor, assigning maps
 ms.assetid: 646e84d4-1dcc-4f92-9205-84cb6c7df297
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22262965"
 ---
 # <a name="messages-represented-as-xsd-schemas"></a><span data-ttu-id="dfdd1-102">表示为 XSD 架构的消息</span><span class="sxs-lookup"><span data-stu-id="dfdd1-102">Messages Represented as XSD Schemas</span></span>
 <span data-ttu-id="dfdd1-103">XSD 消息类型的模板 XML 实例是在设计时定义，然后存储在磁盘上。</span><span class="sxs-lookup"><span data-stu-id="dfdd1-103">A template XML instance of the XSD message type is defined at design time and then stored on disk.</span></span> <span data-ttu-id="dfdd1-104">在运行时，.NET 组件拾取从磁盘的 XML，并将其作为 XmlDocument 返回。</span><span class="sxs-lookup"><span data-stu-id="dfdd1-104">At run time, a .NET component picks up the XML from disk and returns it as an XmlDocument.</span></span> <span data-ttu-id="dfdd1-105">业务流程代码可以将此 XmlDocument 结果分配给在业务流程中声明的消息实例。</span><span class="sxs-lookup"><span data-stu-id="dfdd1-105">The orchestration code can assign this XmlDocument result to the message instance declared in the orchestration.</span></span>  

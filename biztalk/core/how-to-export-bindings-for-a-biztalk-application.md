@@ -1,18 +1,18 @@
 ---
-title: "如何导出绑定 BizTalk 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何导出绑定 BizTalk 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - bindings, exportings
 - applications, exporting
 - applications, bindings
 ms.assetid: 700d2781-480b-42ed-a313-1a67a7406369
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -21,6 +21,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255077"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-application"></a><span data-ttu-id="679df-102">如何导出 BizTalk 应用程序的绑定</span><span class="sxs-lookup"><span data-stu-id="679df-102">How to Export Bindings for a BizTalk Application</span></span>
 <span data-ttu-id="679df-103">本主题介绍如何使用 BizTalk Server 管理控制台或命令行将 BizTalk 应用程序的绑定导出至 .xml 文件。</span><span class="sxs-lookup"><span data-stu-id="679df-103">This topic describes how to use the BizTalk Server Administration console or the command line export the bindings for a BizTalk application to an .xml file.</span></span> <span data-ttu-id="679df-104">然后可以将绑定文件导入到另一个应用程序中，与应用程序中的当前绑定同名的导入绑定将覆盖当前绑定。</span><span class="sxs-lookup"><span data-stu-id="679df-104">You can then import the binding file into another application, which overwrites the current bindings in the application with the imported bindings of the same name.</span></span> <span data-ttu-id="679df-105">有关详细信息，请参阅[如何导入绑定到 BizTalk 应用程序](../core/how-to-import-bindings-into-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="679df-105">For more information, see [How to Import Bindings into a BizTalk Application](../core/how-to-import-bindings-into-a-biztalk-application.md).</span></span> <span data-ttu-id="679df-106">有关使用绑定文件的详细信息，请参阅[绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="679df-106">For more information about using binding files, see [Binding Files and Application Deployment](../core/binding-files-and-application-deployment.md).</span></span>  

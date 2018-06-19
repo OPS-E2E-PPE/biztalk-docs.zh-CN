@@ -1,14 +1,14 @@
 ---
-title: "消息不包含 UNA 和分隔符的管道属性是不正确的格式 |Microsoft 文档"
-ms.custom: 
+title: 消息不包含 UNA 和分隔符的管道属性是不正确的格式 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b761d820-e09d-4949-bb41-da9e66054c60
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22241837"
 ---
 # <a name="message-did-not-contain-una-and-pipeline-property-for-delimiters-was-incorrect-format"></a><span data-ttu-id="ca61b-102">消息不包含 UNA 和管道属性，因为分隔符使用了不正确的格式</span><span class="sxs-lookup"><span data-stu-id="ca61b-102">Message did not contain UNA and pipeline property for delimiters was incorrect format</span></span>
 ## <a name="details"></a><span data-ttu-id="ca61b-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="ca61b-103">Details</span></span>  

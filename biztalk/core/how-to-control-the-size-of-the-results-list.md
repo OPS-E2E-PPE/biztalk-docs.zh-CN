@@ -1,11 +1,11 @@
 ---
-title: "如何控制结果列表的大小 |Microsoft 文档"
-ms.custom: 
+title: 如何控制结果列表的大小 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - results list [Orchestration Debugger], deleting columns
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - results list [Orchestration Designer]
 - results list [Orchestration Debugger], adding columns
 ms.assetid: 4d41003f-5ea9-4599-8ec0-737c342ffdbd
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22249733"
 ---
 # <a name="how-to-control-the-size-of-the-results-list"></a><span data-ttu-id="e57d0-102">如何控制“结果”列表的大小</span><span class="sxs-lookup"><span data-stu-id="e57d0-102">How to Control the Size of the Results List</span></span>
 <span data-ttu-id="e57d0-103">上**组中心数据库**页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，查询结果窗格中包含太多列的需要进行滚动才能查看它们的信息。</span><span class="sxs-lookup"><span data-stu-id="e57d0-103">On the **Group Hub** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, the Query results pane contains so many columns of information that you need to scroll to view them.</span></span> <span data-ttu-id="e57d0-104">您可以添加或删除窗格中的列，以便只显示所需的信息。</span><span class="sxs-lookup"><span data-stu-id="e57d0-104">You can add or remove columns in the pane to display only the information that you need.</span></span> <span data-ttu-id="e57d0-105">要添加或删除列，请右键单击该查询结果窗格中，然后单击的任何部分**添加/删除列**上下文菜单上。</span><span class="sxs-lookup"><span data-stu-id="e57d0-105">To add or remove columns, right-click any part of the Query results pane and click **Add/Remove Columns** on the context menu.</span></span>  

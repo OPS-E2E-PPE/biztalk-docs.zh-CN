@@ -1,11 +1,11 @@
 ---
-title: "BizTalk 应用程序部署的开发任务 |Microsoft 文档"
-ms.custom: 
+title: BizTalk 应用程序部署的开发任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - developing, deploying
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - applications, developing
 - developing, tasks
 ms.assetid: b441d4f4-122e-4caf-8381-723c6142b0b6
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -24,6 +24,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22242549"
 ---
 # <a name="development-tasks-for-biztalk-application-deployment"></a><span data-ttu-id="aab8a-102">BizTalk 应用程序部署的开发任务</span><span class="sxs-lookup"><span data-stu-id="aab8a-102">Development Tasks for BizTalk Application Deployment</span></span>
 <span data-ttu-id="aab8a-103">下面的内容介绍将 BizTalk 程序集从 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 部署到 BizTalk 应用程序、完成该应用程序以及准备将其部署到测试环境时所涉及的步骤。</span><span class="sxs-lookup"><span data-stu-id="aab8a-103">The following are the steps involved in deploying BizTalk assemblies from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] into a BizTalk application, completing the application, and preparing it for deployment to the test environment.</span></span> <span data-ttu-id="aab8a-104">这一部署情况在开发环境中很常见，程序员要在这一环境中开发和调试特定的 BizTalk 业务解决方案。</span><span class="sxs-lookup"><span data-stu-id="aab8a-104">This deployment scenario is common in a development environment, where a programmer is developing and debugging a particular BizTalk business solution.</span></span>  

@@ -1,14 +1,14 @@
 ---
-title: "字段注意事项 |Microsoft 文档"
-ms.custom: 
+title: 字段注意事项 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d7f1853-60ed-49c2-a592-61bde5445d36
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22245781"
 ---
 # <a name="field-considerations"></a><span data-ttu-id="c3bdb-102">字段注意事项</span><span class="sxs-lookup"><span data-stu-id="c3bdb-102">Field Considerations</span></span>
 <span data-ttu-id="c3bdb-103">有大量的使用时应牢记的注意事项**Field 元素**和**字段特性**在你的架构内的节点。</span><span class="sxs-lookup"><span data-stu-id="c3bdb-103">There are a number of considerations that you should keep in mind when working with **Field Element** and **Field Attribute** nodes within your schemas.</span></span> <span data-ttu-id="c3bdb-104">这包括有关何时使用各个节点类型的基本差别，以及与字段长度、字段对齐和字段填充规范有关的更具体的注意事项。</span><span class="sxs-lookup"><span data-stu-id="c3bdb-104">This includes the basic distinctions regarding when to use each of these nodes types, as well as more specific considerations related to the specification of field lengths, field justification, and field padding.</span></span> <span data-ttu-id="c3bdb-105">本部分提供了有关上述注意事项的信息。</span><span class="sxs-lookup"><span data-stu-id="c3bdb-105">This section provides information about these considerations.</span></span>  

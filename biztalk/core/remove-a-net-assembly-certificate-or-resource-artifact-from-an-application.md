@@ -1,11 +1,11 @@
 ---
-title: "如何删除从应用程序的.NET 程序集、 证书或其他资源项目 |Microsoft 文档"
-ms.custom: 
+title: 如何删除从应用程序的.NET 程序集、 证书或其他资源项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - virtual directories, deleting
@@ -27,7 +27,7 @@ helpviewer_keywords:
 - deleting, artifacts
 - deleting, certificates
 ms.assetid: b84eebac-261d-495f-80cd-ddda5bb08bef
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2017
+ms.locfileid: "26008310"
 ---
 # <a name="how-to-remove-a-net-assembly-certificate-or-other-resource-artifact-from-an-application"></a><span data-ttu-id="41bb3-102">如何从应用程序中删除 .NET 程序集、证书或其他资源项目</span><span class="sxs-lookup"><span data-stu-id="41bb3-102">How to Remove a .NET Assembly, Certificate, or Other Resource Artifact from an Application</span></span>
 <span data-ttu-id="41bb3-103">本主题描述如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序删除以下资源项目。</span><span class="sxs-lookup"><span data-stu-id="41bb3-103">This topic describes how to use the BizTalk Server Administration console or the command line to remove the following resource artifacts from a BizTalk application.</span></span> <span data-ttu-id="41bb3-104">使用本主题中的过程可以从 BizTalk 管理数据库中删除项目。</span><span class="sxs-lookup"><span data-stu-id="41bb3-104">Using the procedures in this topic removes the artifact from the BizTalk Management database.</span></span> <span data-ttu-id="41bb3-105">这一删除不会从文件系统、证书存储、Internet 信息服务 (IIS) 或 Windows 注册表中删除项目（如果项目存在于这些位置中）。</span><span class="sxs-lookup"><span data-stu-id="41bb3-105">It does not remove the artifact from the file system, certificate store, Internet Information Services (IIS), or the Windows registry, if it exists in any of these locations.</span></span> <span data-ttu-id="41bb3-106">此外，如果您删除某一绑定文件，则绑定保持不变，仅删除该绑定文件。</span><span class="sxs-lookup"><span data-stu-id="41bb3-106">In addition, if you remove a binding file, the bindings remain unchanged – only the binding file is removed.</span></span>  

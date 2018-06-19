@@ -1,11 +1,11 @@
 ---
-title: "请求协助 |Microsoft 文档"
-ms.custom: 
+title: 请求协助 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Query Builder [BAM portal], technical assistance
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Query Builder [BAM portal], viewing details
 - queries [BAM], viewing details
 ms.assetid: d41de170-f497-47dc-896d-e79c04f0649b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22268589"
 ---
 # <a name="request-assistance"></a><span data-ttu-id="79f1d-102">请求协助</span><span class="sxs-lookup"><span data-stu-id="79f1d-102">Request Assistance</span></span>
 <span data-ttu-id="79f1d-103">如果需要从您的系统管理员联系或与其他技术支持人员的协助你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]实现，你可以使用**协助**底部的按钮**结果**详细信息将协助请求的页。</span><span class="sxs-lookup"><span data-stu-id="79f1d-103">When you require assistance from your systems administrator or other support person with your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implementation, you can use the **Assistance** button at the bottom of the **Results** detail page to place an assistance request.</span></span>  

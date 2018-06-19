@@ -1,17 +1,17 @@
 ---
-title: "如何测试 HTTP 节点 |Microsoft 文档"
-ms.custom: 
+title: 如何测试 HTTP 节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - HTTP node, testing
 - testing HTTP node
 ms.assetid: f6881e8f-9f92-4312-bb5e-06bbfb9fe0bb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22255525"
 ---
 # <a name="how-to-test-the-http-node"></a><span data-ttu-id="dcf16-102">如何测试 HTTP 节点</span><span class="sxs-lookup"><span data-stu-id="dcf16-102">How to Test the HTTP Node</span></span>
 <span data-ttu-id="dcf16-103">请按照以下步骤来测试 HTTP 节点。</span><span class="sxs-lookup"><span data-stu-id="dcf16-103">Follow these steps to test the HTTP node.</span></span>  

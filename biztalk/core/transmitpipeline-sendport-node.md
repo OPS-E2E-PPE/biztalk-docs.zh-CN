@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279269"
 ---
 # <a name="transmitpipeline-sendport-node"></a><span data-ttu-id="f43a0-102">TransmitPipeline（“发送端口”节点）</span><span class="sxs-lookup"><span data-stu-id="f43a0-102">TransmitPipeline (SendPort Node)</span></span>
 <span data-ttu-id="f43a0-103">绑定文件的“发送端口”节点的 TransmitPipeline 节点提供有关与随绑定文件导出的发送端口绑定的发送管道的特定信息。</span><span class="sxs-lookup"><span data-stu-id="f43a0-103">The TransmitPipeline node of the SendPort node of a binding file provides specific information about the send pipeline bound to a send port exported with a binding file.</span></span>  

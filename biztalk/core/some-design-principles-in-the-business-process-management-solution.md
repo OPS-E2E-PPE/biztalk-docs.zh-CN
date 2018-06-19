@@ -1,11 +1,11 @@
 ---
-title: "一些设计中业务流程管理解决方案的原则 |Microsoft 文档"
-ms.custom: 
+title: 一些设计中业务流程管理解决方案的原则 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - business processes, design principals
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - process management solution tutorial, dividing business processes
 - patterns [process management solutions], design principals
 ms.assetid: 688b970f-8e64-4a47-bcc5-bdb9c5195902
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22279357"
 ---
 # <a name="some-design-principles-in-the-business-process-management-solution"></a><span data-ttu-id="2494a-102">业务流程管理解决方案中的一些设计原则</span><span class="sxs-lookup"><span data-stu-id="2494a-102">Some Design Principles in the Business Process Management Solution</span></span>
 <span data-ttu-id="2494a-103">本主题将首先介绍有关将业务流程划分为若干阶段的一般准则。</span><span class="sxs-lookup"><span data-stu-id="2494a-103">This topic begins with general guidelines about dividing business processes into stages.</span></span> <span data-ttu-id="2494a-104">然后将对与这些准则和业务需求有关的该解决方案的某些业务流程、程序集和应用程序的结构进行说明。</span><span class="sxs-lookup"><span data-stu-id="2494a-104">It then goes on to consider the structure of some of the solution's orchestrations, assemblies, and applications in connection with these guidelines and the business requirements.</span></span> <span data-ttu-id="2494a-105">有关业务要求的详细信息，请参阅"业务要求"中[了解业务流程管理解决方案](../core/understanding-the-business-process-management-solution.md)。</span><span class="sxs-lookup"><span data-stu-id="2494a-105">For more information about the business requirements, see "Business Requirements" in [Understanding the Business Process Management Solution](../core/understanding-the-business-process-management-solution.md).</span></span>  

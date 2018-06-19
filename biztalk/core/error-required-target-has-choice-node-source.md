@@ -19,6 +19,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22240621"
 ---
 # <a name="error---required-target-has-choice-node-source"></a><span data-ttu-id="d56b3-102">错误-必需的目标具有选择源节点</span><span class="sxs-lookup"><span data-stu-id="d56b3-102">Error - Required Target Has Choice Node Source</span></span>
 <span data-ttu-id="d56b3-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="d56b3-103">**Error Code**</span></span>  

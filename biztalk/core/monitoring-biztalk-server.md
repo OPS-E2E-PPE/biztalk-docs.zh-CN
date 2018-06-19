@@ -9,7 +9,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2018
+ms.locfileid: "22265357"
 ---
 # <a name="monitoring-biztalk-server"></a><span data-ttu-id="ebbdd-103">监视 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="ebbdd-103">Monitoring BizTalk Server</span></span>
 <span data-ttu-id="ebbdd-104">定期监视 BizTalk Server 应用程序和基础结构并解决发现的任何问题，有助于使用户保持对 BizTalk Server 应用程序的访问。</span><span class="sxs-lookup"><span data-stu-id="ebbdd-104">Monitoring your BizTalk Server applications and infrastructure on a regular basis and resolving any issues that you find helps to keep your BizTalk Server applications accessible to your users.</span></span> <span data-ttu-id="ebbdd-105">监视的目的在于最大限度地减少未检测到（并因此导致未解决）的异常存在的时间。</span><span class="sxs-lookup"><span data-stu-id="ebbdd-105">The goal of monitoring is to minimize the amount of time that an exception goes undetected and, therefore, unresolved.</span></span> <span data-ttu-id="ebbdd-106">此外，还可以使用监视来帮助检测可能导致异常的情形。</span><span class="sxs-lookup"><span data-stu-id="ebbdd-106">Additionally, you can use monitoring to help detect situations that might cause an exception.</span></span>  

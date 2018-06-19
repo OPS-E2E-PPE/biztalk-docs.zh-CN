@@ -1,11 +1,11 @@
 ---
-title: "示例 BizTalk Server 高可用性方案 |Microsoft 文档"
-ms.custom: 
+title: 示例 BizTalk Server 高可用性方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture, small distributions
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - scaling
 - architecture, large distributions
 ms.assetid: ad9e3f57-1a23-41c2-82c9-dc8e1b29ed4d
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -27,6 +27,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22271661"
 ---
 # <a name="sample-biztalk-server-high-availability-scenarios"></a><span data-ttu-id="14e27-102">BizTalk Server 高可用性示例方案</span><span class="sxs-lookup"><span data-stu-id="14e27-102">Sample BizTalk Server High Availability Scenarios</span></span>
 <span data-ttu-id="14e27-103">本主题介绍了 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中通过对主机的各层进行扩展提供高可用性的方案。</span><span class="sxs-lookup"><span data-stu-id="14e27-103">This topic describes the scenarios in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] that provide high availability through scaled-out tiers of hosts.</span></span> <span data-ttu-id="14e27-104">分隔各个区域的功能分为不同的主机和中的层[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，管理员可以为每个主机提供冗余和缩放它们独立于其他主机。</span><span class="sxs-lookup"><span data-stu-id="14e27-104">By separating areas of functionality into different hosts and tiers in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], administrators can provide redundancy for each host and scale them independently of other hosts.</span></span> <span data-ttu-id="14e27-105">若要为每个功能区域提供高可用性，应创建单独的主机，为每个主函数-接收、 处理、 发送和跟踪-和群集[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和企业单一登录的主密钥服务器。</span><span class="sxs-lookup"><span data-stu-id="14e27-105">To provide high availability for each functional area, you create separate hosts for each primary function—receiving, processing, sending, and tracking—and cluster the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases and the Enterprise Single Sign-On master secret server.</span></span>  

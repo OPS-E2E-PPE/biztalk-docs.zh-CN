@@ -1,11 +1,11 @@
 ---
-title: "POP3 适配器属性架构和属性 |Microsoft 文档"
-ms.custom: 
+title: POP3 适配器属性架构和属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - schemas, POP3 adapters
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - ReplyTo properties [POP3 adapters]
 - DispositionNotificationTo properties [POP3 adapters]
 ms.assetid: 7a10ae1f-dbcf-4c05-9a50-2503895960f9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -30,6 +30,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22264165"
 ---
 # <a name="pop3-adapter-property-schema-and-properties"></a><span data-ttu-id="0315c-102">POP3 适配器属性架构和属性</span><span class="sxs-lookup"><span data-stu-id="0315c-102">POP3 Adapter Property Schema and Properties</span></span>
 <span data-ttu-id="0315c-103">下表列出了 POP3 适配器属性架构中的属性：</span><span class="sxs-lookup"><span data-stu-id="0315c-103">The following table lists the properties in the POP3 adapter property schema.</span></span>  

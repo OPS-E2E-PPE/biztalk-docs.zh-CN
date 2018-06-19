@@ -1,17 +1,17 @@
 ---
-title: "如何查看 BAM 聚合 |Microsoft 文档"
-ms.custom: 
+title: 如何查看 BAM 聚合 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - aggregations [BAM], viewing aggregations
 - viewing, aggregations [BAM]
 ms.assetid: aa697f16-ac47-46f9-98a5-a951961d0413
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,13 +20,14 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22256661"
 ---
 # <a name="how-to-view-bam-aggregations"></a><span data-ttu-id="b4cef-102">如何查看 BAM 聚合</span><span class="sxs-lookup"><span data-stu-id="b4cef-102">How to View BAM Aggregations</span></span>
 <span data-ttu-id="b4cef-103">BAM 聚合是由业务分析员在 Excel 中使用 Excel 外接程序定义的。</span><span class="sxs-lookup"><span data-stu-id="b4cef-103">BAM aggregations are defined by the business analyst in Excel using the Excel add-in.</span></span>  
   
 ### <a name="to-view-your-bam-aggregations"></a><span data-ttu-id="b4cef-104">查看您的 BAM 聚合</span><span class="sxs-lookup"><span data-stu-id="b4cef-104">To view your BAM aggregations</span></span>  
   
-1.  <span data-ttu-id="b4cef-105">在运行的计算机上[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]; 单击**启动**，指向**所有程序**，右键单击**Internet Explorer**，然后单击**以运行管理员**。</span><span class="sxs-lookup"><span data-stu-id="b4cef-105">On Computers running [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]; click **Start**, point to **All Programs**, right-click **Internet Explorer**, and then click **Run as administrator**.</span></span> <span data-ttu-id="b4cef-106">在**用户帐户控制**对话框中，单击**继续**。</span><span class="sxs-lookup"><span data-stu-id="b4cef-106">In the **User Account Control** dialog box, click **Continue**.</span></span> <span data-ttu-id="b4cef-107">在 Internet Explorer 地址栏中，键入`http://<server>/BAM/`，其中*\<服务器 >*是运行 BAM 门户的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="b4cef-107">In the Internet Explorer address bar, type `http://<server>/BAM/`, where *\<server>* is the name of the computer that is running the BAM portal.</span></span>  
+1.  <span data-ttu-id="b4cef-105">在运行的计算机上[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]; 单击**启动**，指向**所有程序**，右键单击**Internet Explorer**，然后单击**以运行管理员**。</span><span class="sxs-lookup"><span data-stu-id="b4cef-105">On Computers running [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]; click **Start**, point to **All Programs**, right-click **Internet Explorer**, and then click **Run as administrator**.</span></span> <span data-ttu-id="b4cef-106">在**用户帐户控制**对话框中，单击**继续**。</span><span class="sxs-lookup"><span data-stu-id="b4cef-106">In the **User Account Control** dialog box, click **Continue**.</span></span> <span data-ttu-id="b4cef-107">在 Internet Explorer 地址栏中，键入`http://<server>/BAM/`，其中*\<服务器 >* 是运行 BAM 门户的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="b4cef-107">In the Internet Explorer address bar, type `http://<server>/BAM/`, where *\<server>* is the name of the computer that is running the BAM portal.</span></span>  
   
      <span data-ttu-id="b4cef-108">--或者--</span><span class="sxs-lookup"><span data-stu-id="b4cef-108">-- or --</span></span>  
   

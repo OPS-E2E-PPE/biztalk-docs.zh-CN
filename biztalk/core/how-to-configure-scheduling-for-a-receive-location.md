@@ -1,11 +1,11 @@
 ---
-title: "如何配置并安排接收位置 |Microsoft 文档"
-ms.custom: 
+title: 如何配置并安排接收位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuring, receive locations
@@ -13,7 +13,7 @@ helpviewer_keywords:
 - scheduling, receive locations
 - managing [receive locations], configuring
 ms.assetid: 2653e1c3-ddbd-4d3f-be64-2a5fcd7cf267
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -22,6 +22,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22248701"
 ---
 # <a name="how-to-configure-scheduling-for-a-receive-location"></a><span data-ttu-id="62179-102">如何为接收位置配置计划</span><span class="sxs-lookup"><span data-stu-id="62179-102">How to Configure Scheduling for a Receive Location</span></span>
 <span data-ttu-id="62179-103">本主题将介绍如何使用 BizTalk Server 管理控制台为接收位置配置计划属性。</span><span class="sxs-lookup"><span data-stu-id="62179-103">This topic describes how to use the BizTalk Server Administration console to configure scheduling properties for a receive location.</span></span> <span data-ttu-id="62179-104">您可以指定希望接收位置开始和停止处理消息的日期。</span><span class="sxs-lookup"><span data-stu-id="62179-104">You can specify the dates when you want the receive location to start and stop processing messages.</span></span> <span data-ttu-id="62179-105">还可以指定希望接收位置在一天中的哪几个时间来处理消息。</span><span class="sxs-lookup"><span data-stu-id="62179-105">You can also specify certain times of the day during which you want the receive location to process messages.</span></span>  

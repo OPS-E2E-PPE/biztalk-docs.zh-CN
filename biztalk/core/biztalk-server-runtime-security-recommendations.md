@@ -1,11 +1,11 @@
 ---
-title: "BizTalk Server 运行时安全建议 |Microsoft 文档"
-ms.custom: 
+title: BizTalk Server 运行时安全建议 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, runtime
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - DACLs
 - .NET Framework Code Access Security Mechanism
 ms.assetid: 1933789d-b79a-47ad-8f70-6f1e99bc2be0
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -23,6 +23,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22232229"
 ---
 # <a name="biztalk-server-runtime-security-recommendations"></a><span data-ttu-id="34317-102">BizTalk Server 运行时安全建议</span><span class="sxs-lookup"><span data-stu-id="34317-102">BizTalk Server Runtime Security Recommendations</span></span>
 <span data-ttu-id="34317-103">必须在用来接收、发送、处理和跟踪消息的所有计算机上安装 BizTalk Server 运行时或引擎。</span><span class="sxs-lookup"><span data-stu-id="34317-103">You must install the BizTalk Server runtime, or engine, on all the computers from which you want to receive, send, process, and track messages.</span></span> <span data-ttu-id="34317-104">换句话说，必须在创建 BizTalk 主机实例（处理服务器）的所有计算机上安装运行时组件。</span><span class="sxs-lookup"><span data-stu-id="34317-104">In other words, you must install the run time components on any computer where you create a BizTalk Host instance (processing servers).</span></span> <span data-ttu-id="34317-105">建议您遵循以下准则以确保您的环境中的 BizTalk Server 运行时的安全并对其进行部署：</span><span class="sxs-lookup"><span data-stu-id="34317-105">It is recommended you follow these guidelines for securing and deploying the BizTalk Server runtime in your environment.</span></span>  

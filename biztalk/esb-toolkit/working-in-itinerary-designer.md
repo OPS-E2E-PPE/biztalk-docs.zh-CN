@@ -1,14 +1,14 @@
 ---
-title: "在路线设计器中工作 |Microsoft 文档"
-ms.custom: 
+title: 在路线设计器中工作 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06742cb8-f6d6-46e2-adc0-6be9a3d6a447
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
+ms.locfileid: "25976779"
 ---
 # <a name="working-in-itinerary-designer"></a><span data-ttu-id="ac5af-102">在路线设计器中工作</span><span class="sxs-lookup"><span data-stu-id="ac5af-102">Working in Itinerary Designer</span></span>
 <span data-ttu-id="ac5af-103">创建一个 Microsoft Visual C# 项目后，可以创建新的路线模型，并将现有路线添加到项目。</span><span class="sxs-lookup"><span data-stu-id="ac5af-103">After you create a Microsoft Visual C# project, you can create new itinerary models and add existing itineraries to the project.</span></span> <span data-ttu-id="ac5af-104">以下步骤介绍如何创建新路线、 添加现有路线模型，或更改一条路线的名称。</span><span class="sxs-lookup"><span data-stu-id="ac5af-104">The following steps describe how to create a new itinerary, add an existing itinerary model, or change the name of an itinerary.</span></span>  

@@ -1,17 +1,17 @@
 ---
-title: "中断处理中业务流程管理解决方案 |Microsoft 文档"
-ms.custom: 
+title: 中断处理中业务流程管理解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - processing, pausing
 - process management solution tutorial, pausing processing
 ms.assetid: 23ce7617-f705-4b7d-8447-221dec9fb196
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -20,6 +20,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22257773"
 ---
 # <a name="interrupt-handling-in-the-business-process-management-solution"></a><span data-ttu-id="6ba42-102">中断业务流程管理解决方案中的处理</span><span class="sxs-lookup"><span data-stu-id="6ba42-102">Interrupt Handling in the Business Process Management Solution</span></span>
 <span data-ttu-id="6ba42-103">本部分将介绍业务流程管理解决方案中使用的中断处理机制。</span><span class="sxs-lookup"><span data-stu-id="6ba42-103">This section describes the interrupt handling mechanism used in the Business Process Management Solution.</span></span> <span data-ttu-id="6ba42-104">使用中断机制，可暂停顺序处理当更新或取消订单时。</span><span class="sxs-lookup"><span data-stu-id="6ba42-104">Using the interrupt mechanism enables you to halt order processing when an order is updated or canceled.</span></span>  

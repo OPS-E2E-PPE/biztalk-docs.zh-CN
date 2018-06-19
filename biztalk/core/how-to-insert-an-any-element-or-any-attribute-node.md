@@ -1,14 +1,14 @@
 ---
-title: "如何插入的任何元素或属性的任何节点 |Microsoft 文档"
-ms.custom: 
+title: 如何插入的任何元素或属性的任何节点 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4cbfdc04-6c83-4639-82de-169b6f009a2e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -17,6 +17,7 @@ ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/20/2017
+ms.locfileid: "22253957"
 ---
 # <a name="how-to-insert-an-any-element-or-any-attribute-node"></a><span data-ttu-id="6a863-102">如何插入任何元素或任何属性节点</span><span class="sxs-lookup"><span data-stu-id="6a863-102">How to Insert an Any Element or Any Attribute Node</span></span>
 <span data-ttu-id="6a863-103">BizTalk 编辑器支持两种类型的任何节点： **Any 元素**和**任何属性**。</span><span class="sxs-lookup"><span data-stu-id="6a863-103">BizTalk Editor supports two types of any nodes: **Any Element** and **Any Attribute**.</span></span> <span data-ttu-id="6a863-104">使用这些节点，您可以在架构中创建与相应实例消息中的位置对应的位置，您不知道哪些元素或属性会出现在这些位置。</span><span class="sxs-lookup"><span data-stu-id="6a863-104">These nodes allow you to create locations within your schema that correspond to locations within the corresponding instance messages where you do not know what elements or attributes will appear.</span></span> <span data-ttu-id="6a863-105">有关如何在处理实例消息时解释这些节点的详细信息，请直接参阅 Web 上有关 XML 架构定义 (XSD) 语言的信息。</span><span class="sxs-lookup"><span data-stu-id="6a863-105">For detailed information about how these nodes are interpreted when processing instance messages, refer directly to information about the XML Schema definition (XSD) language on the Web.</span></span> <span data-ttu-id="6a863-106">此信息的链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。</span><span class="sxs-lookup"><span data-stu-id="6a863-106">For links to this information, see [XSD Resources on the Web](../core/xsd-resources-on-the-web.md).</span></span>  
