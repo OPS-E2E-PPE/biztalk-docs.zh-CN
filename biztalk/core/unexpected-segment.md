@@ -1,5 +1,5 @@
 ---
-title: 意外的段 |Microsoft 文档
+title: 出现意外的段 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47ff173b88c51ecf28a4979cef3a0c61475c62c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1d493647a184a250120ee25e614deb82c2f062d2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286469"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998838"
 ---
 # <a name="unexpected-segment"></a>意外段
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12UnexpectedSegmentDescription|  
-|消息正文|意外段|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                            X12UnexpectedSegmentDescription                             |
+|  消息正文   |                                   意外段                                   |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的交换，因为该交换包含一个未由文档架构或服务架构定义的段。  

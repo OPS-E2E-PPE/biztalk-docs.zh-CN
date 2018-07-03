@@ -1,5 +1,5 @@
 ---
-title: 管理 BTARN 配置 |Microsoft 文档
+title: 管理 BTARN 配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48df2985716fe4ab1d94ba695dba5f4e108dc42b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d947db632e612a9973b2f247be2fff865f8a5d5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206765"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011262"
 ---
 # <a name="administering-the-btarn-configuration"></a>管理 BTARN 配置
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台允许你管理的所有方面[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]从一个用户界面的配置。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]配置包括进程配置、 家庭组织、 合作伙伴和贸易合作伙伴协议。 从[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台中，你还可以管理证书，管理的实例[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™、 查看事件，并查看性能日志和警报。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台允许你管理的所有方面[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]配置从一个用户界面。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]配置包括流程配置、 本组织、 合作伙伴和贸易合作伙伴协议。 从[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台中，你还可以管理证书，管理实例的 Microsoft [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™、 查看事件，并查看性能日志和警报。  
   
- 有关可在中执行的所有操作的概述[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台中，请参阅[使用 BTARN 管理控制台](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)。  
+ 有关可以从执行的所有操作的概述[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台中，请参阅[使用 BTARN 管理控制台](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -35,9 +35,9 @@ ms.locfileid: "22206765"
   
 -   [启用 BAM 跟踪](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)  
   
--   [创建或编辑过程配置](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-process-configuration.md)  
+-   [创建或编辑流程配置](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-process-configuration.md)  
   
--   [创建或编辑主组织](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)  
+-   [创建或编辑本组织](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)  
   
 -   [创建或编辑合作伙伴](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)  
   

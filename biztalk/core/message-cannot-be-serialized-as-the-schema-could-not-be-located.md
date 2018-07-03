@@ -1,5 +1,5 @@
 ---
-title: 不作为架构找不到序列化消息 |Microsoft 文档
+title: 无法序列化消息，因为找不到架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b887d4a07d7a461278d3858289882a9ce441e9e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f366fc619ac070d618345ce6bde9996710b1242
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262669"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988182"
 ---
 # <a name="message-cannot-be-serialized-as-the-schema-could-not-be-located"></a>消息无法序列化，因为无法定位架构
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|MessageSerializationFailureDueToMissingSchema|  
-|消息正文|无法序列化消息，因为找不到架构 {0}。 架构未部署或者部署了多个副本。|  
+|                 |                                                                                                                                          |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                            |
+| 产品版本 |                                        [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                        |
+|    事件 ID     |                                                                    -                                                                     |
+|  事件源   |                          [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                          |
+|    组件    |                                                                EDI 引擎                                                                |
+|  符号名称  |                                              MessageSerializationFailureDueToMissingSchema                                               |
+|  消息正文   | 消息可以不被序列化为架构{0}找不到。 架构未部署或者部署了多个副本。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法序列化传出的交换，因为该管道无法确定用于序列化交换所需的架构。 未部署架构或者部署了架构的多个副本。  

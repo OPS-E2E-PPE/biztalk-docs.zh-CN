@@ -1,5 +1,5 @@
 ---
-title: 运行多个 Web 服务示例 |Microsoft 文档
+title: 运行多个 Web 服务示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ec54fabb7ed140fd88b5a2d5a07d788805c741e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 765d9785bde94f363ea56178f3cc0f500381d4e9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294797"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997518"
 ---
 # <a name="running-the-multiple-web-services-sample"></a>运行多个 Web 服务示例
-多个 Web 服务示例使用 Windows 窗体测试客户端应用程序的入口路线示例。  
+多个 Web 服务示例使用 Windows 窗体测试客户端应用程序的路线接入点示例。  
   
  **若要运行多个 Web 服务示例**  
   
-1.  如果 GlobalBank.ESB 应用程序尚未运行，使用 Microsoft BizTalk 管理控制台来启动它。  
+1. 如果尚未运行 GlobalBank.ESB 应用程序，使用 Microsoft BizTalk 管理控制台来启动它。  
   
-2.  在 Windows 资源管理器，打开文件夹 \Source\Samples\Itinerary\Source\ESB。你的安装位置的 Itinerary.Test[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后启动指定 Esb.Itinerary.Test.exe 的应用程序。  
+2. 在 Windows 资源管理器中打开文件夹 \Source\Samples\Itinerary\Source\ESB。安装位置的 Itinerary.Test[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，并启动名为 Esb.Itinerary.Test.exe 应用程序。  
   
-3.  清除**使用 WCF 服务**复选框，以便可以利用客户端路线。  
+3. 清除**使用 WCF 服务**复选框，以便可以利用客户端的路线。  
   
-4.  单击**负载路线**按钮，，然后选择一个位于 \Source\Samples\MultipleWebServices\Itineraries 文件夹示例路线。  
+4. 单击**负载路线**按钮，并选择其中一个示例路线 \Source\Samples\MultipleWebServices\Itineraries 文件夹中。  
   
-5.  选择**两个方式服务**复选框，这样应用程序将执行双向路线服务操作。  
+5. 选择**两种方式服务**复选框，以便应用程序将执行双向路线服务操作。  
   
-6.  单击**LoadMessage**按钮，然后从 \Source\Samples\Itinerary\Test\Data 文件夹然后选择 NAOrderDoc.xml 示例消息。  
+6. 单击**LoadMessage**按钮，并从 \Source\Samples\Itinerary\Test\Data 文件夹选择 NAOrderDoc.xml 示例消息。  
   
-7.  单击**SubmitRequest**按钮以将请求发送到路线提升服务。 等待响应消息显示在**结果**框。  
+7. 单击**SubmitRequest**按钮以将请求发送到路线接入点服务。 等待响应消息中出现**结果**框。  
   
- 有关如何在多个 Web 服务示例使用 ESB 路线服务的信息，请参阅[多个 Web 服务示例的工作原理](../esb-toolkit/how-the-multiple-web-services-sample-works.md)。
+   有关多个 Web 服务示例如何使用 ESB 路线服务的信息，请参阅[多个 Web 服务示例工作原理](../esb-toolkit/how-the-multiple-web-services-sample-works.md)。

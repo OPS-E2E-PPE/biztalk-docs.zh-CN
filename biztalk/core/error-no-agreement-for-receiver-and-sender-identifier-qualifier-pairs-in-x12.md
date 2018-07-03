@@ -1,5 +1,5 @@
 ---
-title: 出现故障。 处理 X12 发送端口上的消息： 接收方和发件人标识符限定符对没有协议 |Microsoft 文档
+title: 故障发生在处理 X12 消息在发送端口： 不存在用于收件人和发件人标识符限定符对协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 637cd174b2c9723f4391417392700e3a4f079b79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fa38616bfc4117614ab81d4a369f64d3b85e13f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240853"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988798"
 ---
-# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>出现故障。 处理 X12 发送端口上的消息： 接收方和发件人标识符限定符对没有协议
+# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs"></a>故障发生在处理 X12 消息在发送端口： 不存在用于收件人和发件人标识符限定符对的协议
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|在发送端口 {0} 上处理 X12 消息时发生故障。 没有协议的接收方和发件人标识符/限定符对 {1}、 {2}、 {3}、 \ {4 \ 存在。|  
+|                 |                                                                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                       |
+| 产品版本 |                                                  [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                   |
+|    事件 ID     |                                                                               -                                                                               |
+|  事件源   |                                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                     |
+|    组件    |                                                                          EDI 引擎                                                                           |
+|  符号名称  |                                                                               -                                                                               |
+|  消息正文   | 故障发生在处理 X12 消息发送端口上的{0}。 不存在 {1}、{2}、{3}、{4} 的接收方和发送方标识符/限定符对的协议。 |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表示 BizTalk Server 无法解决当事方 EDIFACT 交换因为 BizTalk Server 无法匹配提升发件人限定符和标识符属性，并且提升收件人限定符和标识符属性，使用方的相应值。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法解析该参与方的 EDIFACT 交换，因为 BizTalk Server 无法匹配提升发件人限定符和标识符属性，并提升接收方限定符和为参与方的相应值的标识符属性。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请确保参与方的“EDI 属性”对话框的“ISA 段定义”页中定义的发送方限定符和标识符（ISA5 和 ISA6）以及接收方限定符和标识符（ISA7 和 ISA8）与交换的上下文中相对应的升级后的属性匹配。

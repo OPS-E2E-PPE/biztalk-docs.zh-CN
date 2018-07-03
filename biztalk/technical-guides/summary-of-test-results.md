@@ -1,5 +1,5 @@
 ---
-title: 测试结果摘要 |Microsoft 文档
+title: 测试结果的摘要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,44 +12,44 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2eebcdef457716cab9ad61415bf3fe46db301b55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad5550a073101e2a30555f90ad6bd879edff3a79
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302989"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997958"
 ---
 # <a name="summary-of-test-results"></a>测试结果的摘要
-本主题汇总了将测试方案中的结果。  
+本主题概述了测试方案的结果。  
   
 ## <a name="summary-of-test-results"></a>测试结果的摘要  
- [测试 BizTalk 服务器虚拟化性能](../technical-guides/testing-biztalk-server-virtualization-performance.md)节本指南将介绍使用的测试应用程序和各种配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对其运行测试应用程序的环境。 测试的目的是为了比较的性能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  /  [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境在物理硬件上运行 HYPER-V 虚拟机上运行的环境的性能。 关键绩效指标 (Kpi) 度量在测试期间包括以下操作;  
+ [测试 BizTalk Server 虚拟化性能](../technical-guides/testing-biztalk-server-virtualization-performance.md)本指南的本节描述使用的测试应用程序和各种配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对其运行测试应用程序的环境。 执行测试来比较的性能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  /  [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境在物理硬件上运行的 HYPER-V 虚拟机上运行的环境的性能。 关键绩效指标 (Kpi) 度量在测试期间包括以下操作：  
   
-1.  消息吞吐量测量上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
+1. 消息吞吐量测量上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
   
-2.  请求-响应延迟测量提交同步请求到 Visual Studio 测试客户端上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+2. 请求-响应延迟测量提交同步请求到 Visual Studio 测试客户端上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-3.  处理器利用率和每秒的批处理请求在上观察到[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  
+3. 处理器利用率和每秒批处理请求上观察到[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  
   
-4.  在上观察到的网络吞吐量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+4. 在观察到的网络吞吐量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
   
-5.  可用内存[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+5. 可用内存[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
   
 ### <a name="throughput-comparison-sample-results"></a>吞吐量比较示例结果  
- 与所有其他因素视为相同，吞吐量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案测量"BizTalk： 消息传送/文档处理数/秒"性能监视器计数器时范围从 67%到 94.3%可达成的吞吐量的同时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装在物理硬件上。  
+ 与所有其他因素，吞吐量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案由度量"BizTalk： 消息传送/文档处理数/秒"性能监视器计数器时范围从 67%94.3%的吞吐量可以利用它来同时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装在物理硬件上。  
   
- 当[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装在 HYPER-V 虚拟机上，以显著降低可以观察到的解决方案的吞吐量，吞吐量这种数量缩减可以被归因于 hyper-v 所需的 CPU 开销。  
+ 当[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装的 HYPER-V 虚拟机上，观察到解决方案的吞吐量来显著降低，这种减少吞吐量可归因于 hyper-v 所需的 CPU 开销。  
   
 ### <a name="latency-comparison-sample-results"></a>延迟比较示例结果  
- 使用正在相等，当在 HYPER-V 虚拟机，BizTalk Server 解决方案测量的延迟上运行 BizTalk Server 环境中使用的 BizTalk Server 计算机的所有其他因素"BizTalk： 消息延迟/请求-响应延迟 （秒)"性能监视器计数器范围是从 66.9%到 94.3%可达成延迟的 BizTalk Server 环境中使用的 BizTalk Server 计算机安装在物理硬件上时。  
+ 所有其他因素，当在 BizTalk Server 环境中使用的 BizTalk Server 计算机上的 HYPER-V 虚拟机，延迟的测量得出的 BizTalk Server 解决方案运行时使用"BizTalk： 消息延迟/请求-响应延迟 （秒)"性能监视器计数器范围是从 66.9%94.3%的可以利用它来延迟时在物理硬件上安装 BizTalk Server 环境中使用的 BizTalk Server 计算机。  
   
- 当[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装在 HYPER-V 虚拟机上，以显著降低可以观察到的解决方案的吞吐量，吞吐量这种数量缩减可以被归因于上hyper-v所需的CPU开销[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]虚拟机。  
+ 当[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]环境中的计算机已安装的 HYPER-V 虚拟机上，观察到解决方案的吞吐量来显著降低，这种减少吞吐量可归因于 hyper-v上所需的CPU开销[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]虚拟机。  
   
-### <a name="sql-server-processor-utilization-and-batch-requests-per-second-sample-results"></a>SQL Server 处理器使用率和每个第二个示例结果的批处理请求  
- SQL Server 处理器使用率测量 \SQL\Processor(_Total)\\%Processor Time 计数器大约已在所有测试环境中，为高 90.1%从 88%低范围相同。 没有但 \SQL Server:SQL Statistics\Batch 之间存在显著差异合并环境 (4520) 的每秒请求数测量和 \SQL Server:SQL Statistics\Batch 每秒请求数测量物理环境 (6350)。 \SQL Server:SQL Statistics\Batch 每秒请求数性能监视器计数器提供了多少工作由 SQL Server 正在执行的良好指标。 减少批处理每秒请求数在 HYPER-V 环境中运行 SQL Server 时可以被归因于 hyper-v 所需的 CPU 开销。  
+### <a name="sql-server-processor-utilization-and-batch-requests-per-second-sample-results"></a>SQL 服务器的处理器利用率和每个第二个示例结果的批处理请求  
+ SQL Server 处理器使用率由 \SQL\Processor(_Total) 度量\\%Processor Time 计数器大约是在所有测试环境中，到 90.1%的高 88%较低的范围相同。 但是 \SQL Server:SQL Statistics\Batch 显著区别统一的环境 (4520) 的请求数/秒计量和 \SQL Server:SQL Statistics\Batch 物理环境 (6350) 的请求数/秒计量。 \SQL Server:SQL Statistics\Batch Requests/sec 性能监视器计数器提供了多少工作由 SQL Server 正在执行的良好指标。 在 Batch Requests/sec 在 HYPER-V 环境中运行 SQL Server 时减少可归因于 hyper-v 所需的 CPU 开销。  
   
 ### <a name="biztalk-server-and-sql-server-network-throughput-sample-results"></a>BizTalk Server 和 SQL Server 网络吞吐量示例结果  
- BizTalk Server HYPER-V 虚拟机上运行的网络吞吐量观察到到范围从大约 70%到 96%的实现在 BizTalk 物理服务器上，具体取决于特定的测试环境的网络吞吐量。 HYPER-V 虚拟机上运行的 SQL Server 的网络吞吐量观察到到范围从大约 68%到 81%的实现在物理 SQL 服务器上，再次根据特定的测试环境的网络吞吐量。 观测到的网络吞吐量的增量可以被归因于 HYPER-V 虚拟机监控程序的资源要求。  
+ BizTalk Server 的 HYPER-V 虚拟机上运行的网络吞吐量已观察到范围从大约 70%到 96%的物理 BizTalk 服务器，具体取决于特定的测试环境上实现的网络吞吐量。 HYPER-V 虚拟机上运行的 SQL Server 的网络吞吐量已观察到范围从大约 68%到 81%的实现在物理 SQL 服务器上，再次根据特定的测试环境的网络吞吐量。 可以将观测到的网络吞吐量增量归为 HYPER-V 虚拟机监控程序的资源要求。  
   
 ### <a name="biztalk-server-and-sql-server-available-memory-sample-results"></a>BizTalk Server 和 SQL Server 的可用内存示例结果  
- SQL Server 和 BizTalk Server \Memory\Available Mbytes 性能监视器计数器测量的可用总内存是相当一致的所有测试方案。
+ 可用于 SQL Server 和 BizTalk Server 根据 \Memory\Available Mbytes 性能监视器计数器进行度量总内存是相当一致的所有测试方案。

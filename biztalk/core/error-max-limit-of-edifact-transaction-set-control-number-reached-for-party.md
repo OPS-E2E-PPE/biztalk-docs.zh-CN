@@ -1,5 +1,5 @@
 ---
-title: 最大限制为可接受方已达到事务集控制编号的 Edifact |Microsoft 文档
+title: 可接受 Edifact 事务集控制编号已达到参与方的最大限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcbd2ce29ddeb99ba8c06e5dac9ff01be8c300b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85fd53beb1484d1e9ffbddf1bbc4f4ac69ae1e67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241253"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004534"
 ---
 # <a name="max-limit-of-acceptable-edifact-transaction-set-control-number-has-reached-for-party"></a>已达到参与方的可接受 EDIFACT 事务集控制编号最大限制
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|GlobalEdifactUnhNumberError|  
-|消息正文|已达到参与方 {0} 的可接受 Edifact 事务集控制编号最大限制。 导航到接收方角色屏幕中的“参与方”、合作伙伴协议管理器中的字段 UNH 1 可重置计数器|  
+|                 |                                                                                                                                                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                        |
+| 产品版本 |                                                                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                    |
+|    事件 ID     |                                                                                                -                                                                                                 |
+|  事件源   |                                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                      |
+|    组件    |                                                                                            EDI 引擎                                                                                            |
+|  符号名称  |                                                                                   GlobalEdifactUnhNumberError                                                                                    |
+|  消息正文   | 可接受 Edifact 事务集控制编号已达到参与方的最大限制{0}。 导航到接收方角色屏幕中的“参与方”、合作伙伴协议管理器中的字段 UNH 1 可重置计数器 |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明发送管道无法处理传出的交换，因为在参与方设置中指定的 UNH1 字段中的事务集控制编号（具体来说就是字段 UNH1.2 中的参考编号）大于所允许的最大值。 所允许的事务集控制编号的最大值取决于 UNH1 中三个字段的值。 最大字符数为 14 中字段 UNH1.2，13 for UNH1.1 中的前缀和 13 中 UNH1.3，该后缀和 14 的组合的所有三个字段的引用编号。  
+ 此错误/警告/信息事件表明发送管道无法处理传出的交换，因为在参与方设置中指定的 UNH1 字段中的事务集控制编号（具体来说就是字段 UNH1.2 中的参考编号）大于所允许的最大值。 所允许的事务集控制编号的最大值取决于 UNH1 中三个字段的值。 最大字符数是 14 个字段 UNH1.2，13 个 UNH1.1 中的前缀和 UNH1.3 中的后缀的 13 和 14 个所有三个字段的组合中的参考编号。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请按照如下方式重置事务集控制编号的参考编号字段 (UNH1.2)：  

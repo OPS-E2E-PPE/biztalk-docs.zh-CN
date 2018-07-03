@@ -1,5 +1,5 @@
 ---
-title: 停止和启动业务流程，发送端口，并以编程方式接收位置 |Microsoft 文档
+title: 停止和启动业务流程、 发送端口和接收位置以编程方式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,18 +22,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96b914129d9afb6dfd542f00a302e739e34dafbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2736f76e3292c6e21a05c995afdd2808a9f60590
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210877"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995470"
 ---
-# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止和启动业务流程，发送端口，并以编程方式接收位置
-本主题提供了以编程方式停止和启动业务流程、发送端口和接收位置的示例代码。 您可以对所有业务流程、发送端口和接收位置以组或个人身份执行这些操作。 可使程序包含这些代码，以便动态地执行这些操作。 执行这些操作是在图形用户界面中在设计时[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台。  
+# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止和启动业务流程、 发送端口和接收位置以编程方式
+本主题提供了以编程方式停止和启动业务流程、发送端口和接收位置的示例代码。 您可以对所有业务流程、发送端口和接收位置以组或个人身份执行这些操作。 可使程序包含这些代码，以便动态地执行这些操作。 这些操作是在图形用户界面中在设计时在 Microsoft 中执行[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台中。  
   
 > [!NOTE]
->  对于启动或停止业务流程的代码，您无需指定业务流程、发送端口或接收位置。 示例代码对所有业务流程执行操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]向上安装组。 对于作用于单一业务流程、发送端口或接收位置的代码，请添加一个参数，指明代码要针对哪个业务流程、发送端口或接收位置来运行。  
+>  对于启动或停止业务流程的代码，您无需指定业务流程、发送端口或接收位置。 示例代码对所有业务流程执行的操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]安装时所安装设置。 对于作用于单一业务流程、发送端口或接收位置的代码，请添加一个参数，指明代码要针对哪个业务流程、发送端口或接收位置来运行。  
   
 ## <a name="demonstrates"></a>演示  
  本主题中的示例代码包括执行以下功能的各个代码段：  
@@ -316,5 +316,5 @@ return false;
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [示例](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)

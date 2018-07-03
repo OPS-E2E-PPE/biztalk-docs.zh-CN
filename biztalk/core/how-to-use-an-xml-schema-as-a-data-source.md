@@ -1,5 +1,5 @@
 ---
-title: 如何使用 XML 架构作为数据源 |Microsoft 文档
+title: 如何使用 XML 架构作为数据源 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f7106b9b340d56a799c7be4b0863ce9f976d7d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7abfcd997b72cccf4cd5357a6d2c846d08069632
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255845"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011670"
 ---
 # <a name="how-to-use-an-xml-schema-as-a-data-source"></a>如何使用 XML 架构作为数据源
 ### <a name="to-specify-an-xml-schema-as-a-data-source"></a>指定 XML 架构作为数据源  
   
-1.  在事实数据资源管理器，单击**XML 架构**选项卡。  
+1. 在事实浏览器中，单击**XML 架构**选项卡。  
   
-2.  右键单击**架构**文件夹，，然后单击**浏览**。  
+2. 右键单击**架构**文件夹，，然后单击**浏览**。  
   
-3.  在**架构文件**对话框中，选择一个 XSD 文件，并依次**打开**。  
+3. 在中**架构文件**对话框中，选择 XSD 文件，然后单击**打开**。  
   
- ![事实烧录机对话框的屏幕截图。] (../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
-浏览 XML 架构
+   ![事实浏览器对话框的屏幕截图。] (../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
+   浏览 XML 架构

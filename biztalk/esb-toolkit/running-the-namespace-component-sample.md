@@ -1,5 +1,5 @@
 ---
-title: 运行 Namespace 组件示例 |Microsoft 文档
+title: 运行 Namespace 组件示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fc142ca70971f023e491dbdeee693a8d41c42fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83a24d2720fd9c46bd1d5ccb70d92a068f8a2ec4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295293"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021730"
 ---
 # <a name="running-the-namespace-component-sample"></a>运行 Namespace 组件示例
-Namespace 组件示例应用程序包含四个接收位置/发送端口对。 每个对表示一个测试。 以下是四种测试：  
-  
--   **将添加到传递**。 此测试将命名空间添加到 XML 消息文档，并将消息直接写入文件，以便你可以看到新的命名空间。 此测试的输入的文件是 TEST_Add_to_PassThrough.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline**包含**AddNamespace**组件。  
-  
--   **将添加到删除**。 此测试将命名空间添加为 XML 文档消息，并将其删除。 它然后将消息直接写入文件。 此测试的输入的文件是 TEST_ Add_to_Remove.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline**包含**AddNamespace**组件和**NamespaceSampleSendPipeline**包含**RemoveNamespace**组件。  
-  
--   **传递到删除**。 此测试从 XML 文档消息中移除所有命名空间，并将消息直接写入文件，以便你可以对此进行确认。 此测试的输入的文件是 TEST_PassThrough_to_Remove.0000.ns.xml。 此测试使用**NamespaceSampleSendPipeline**包含**RemoveNamespace**组件。  
-  
--   **通过传递到提取添加**。 此测试中提取**OrderDetails**元素的 XML 文档的消息和写入新消息包含此元素直接到文件。 此测试的输入的文件是 TEST_AddViaExtraction_to_PassThrough.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline**包含**AddNamespace**组件**ExtractionNodeXPath**属性设置为 **/CanonicalOrder/OrderDetails** （任何有效的 XPath，它返回元素。 此属性就足够了）。  
-  
- 在示例应用程序的基础接收位置具有文件掩码适用于每个测试类型中，并相关，则将发送端口筛选器上的接收端口名称。 因此，若要执行测试，你只需放在适当命名的消息的输入的文件夹。 示例应用程序执行测试并将更新的消息放置到输出文件夹中使用适用于当前的测试，名称且包括消息 id。  
-  
- 本节包含下列主题：  
-  
--   [运行 Namespace 组件测试](../esb-toolkit/running-the-namespace-component-tests.md)  
-  
--   [如何添加 Namespace 示例的工作机制](../esb-toolkit/how-the-add-namespace-sample-works.md)  
-  
--   [删除 Namespace 示例的工作原理](../esb-toolkit/how-the-remove-namespace-sample-works.md)
+Namespace 组件示例应用程序包含四个接收位置 / 发送端口对。 每一对表示一个测试。 以下是四种测试：  
+
+- **将添加到直通**。 此测试将命名空间添加到 XML 消息文档和消息将直接写入到一个文件，以便您可以看到新的命名空间。 此测试的输入的文件是 TEST_Add_to_PassThrough.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline** ，其中包含**AddNamespace**组件。  
+
+- **将添加到删除**。 此测试将命名空间添加到的 XML 文档的消息，并将其删除。 它然后将消息直接写入一个文件。 此测试的输入的文件是 TEST_ Add_to_Remove.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline** ，其中包含**AddNamespace**组件并**NamespaceSampleSendPipeline** ，其中包含**RemoveNamespace**组件。  
+
+- **传递到删除**。 此测试从 XML 文档消息中删除所有命名空间和消息将直接写入到一个文件，以便你可以确认这一点。 此测试的输入的文件是 TEST_PassThrough_to_Remove.0000.ns.xml。 此测试使用**NamespaceSampleSendPipeline** ，其中包含**RemoveNamespace**组件。  
+
+- **添加通过提取到直通**。 此测试中提取**OrderDetails**元素的 XML 文档的消息并将事件写入包含文件直接将此元素的新消息。 此测试的输入的文件是 TEST_AddViaExtraction_to_PassThrough.0000.ns.xml。 此测试使用**NamespaceSampleReceivePipeline** ，其中包含**AddNamespace**组件与**ExtractionNodeXPath**属性设置为 **/CanonicalOrder/OrderDetails** （任何有效的 XPath，返回对应的元素为此属性就足够了）。  
+
+  在示例应用程序的基础的接收位置具有适用于每个测试类型的文件掩码和相关的接收端口名称在发送端口筛选器。 因此，若要执行测试，您只需相应地命名的消息放入输入文件夹。 示例应用程序执行测试，并将更新后的消息放入输出文件夹使用适用于当前测试的名称，并包括消息 id。  
+
+  本节包含下列主题：  
+
+- [运行命名空间组件测试](../esb-toolkit/running-the-namespace-component-tests.md)  
+
+- [添加命名空间示例工作原理](../esb-toolkit/how-the-add-namespace-sample-works.md)  
+
+- [删除命名空间示例工作原理](../esb-toolkit/how-the-remove-namespace-sample-works.md)

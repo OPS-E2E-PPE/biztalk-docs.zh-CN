@@ -1,5 +1,5 @@
 ---
-title: 为 mySAP Business Suite.NET Framework 数据提供程序的限制 |Microsoft 文档
+title: 用于 mySAP Business Suite 的.NET Framework 数据提供程序的限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fd4ad3a57e2b762a53582ceb77eb65f23a535fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9efcf7fb18471c92c504e08df43482fbc64064d2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216469"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999814"
 ---
-# <a name="limitations-of-the-net-framework-data-provider-for-mysap-business-suite"></a>为 mySAP Business Suite.NET Framework 数据提供程序的限制
+# <a name="limitations-of-the-net-framework-data-provider-for-mysap-business-suite"></a>.NET Framework Data Provider for mySAP Business Suite 的限制
 以下已知的限制[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]):  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持连接到 SAP 系统使用安全网络连接 (SNC)。 有关 SNC 的详细信息，请参阅[SAP 系统和适配器之间的安全性](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)。
+- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持连接到 SAP 系统使用安全网络连接 (SNC)。 SNC 有关详细信息，请参阅[SAP 系统和适配器之间的安全](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)。
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持`DbType`或`Size`属性`SAPParameter`。 相反，当用户指定的值时，才`SAPParameter`，则这内部强制转换为按照.NET 和 SAP 数据类型之间建立映射的.NET 数据类型。  
+- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持`DbType`或`Size`的属性`SAPParameter`。 相反，当用户指定的值`SAPParameter`，值在内部强制转换为根据.NET 和 SAP 数据类型之间已建立的映射的.NET 数据类型。  
   
--   SAP 数据类型的字段值允许的最大长度`CURR`， `DEC`，和`QUAN`是 29 位。 虽然 SAP 以本机方式提供这些数据类型值的 31 的位置，但转换到的目标的.NET decimal 数据类型有一定的 29 位数字限制。  
+- 为 SAP 数据类型的字段值允许的最大长度`CURR`， `DEC`，和`QUAN`是 29 位数字。 虽然 SAP 以本机方式提供这些数据类型值的 31 位置，但.NET decimal 数据类型转换为实施 29 位数字限制。  
   
--   .NET 数据类型之间的映射限制`Double`和 SAP`FLTP`从 SAP 系统的数据读入的.NET 类型时，数据类型可能会导致溢出错误。 尽管.NET 类型可以表示一个双精度 64 位数字与范围内的值从负 1.79769313486232 e 308 到正 1.79769313486232 e 308，SAP`FLTP`的分析类型[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不能超过 1.8446744073709552E + 19;有效限制`FLTP`类型是负 1.8446744073709552E + 19 写入到正 1.8446744073709552E + 19 的范围。  
+- .NET 数据类型之间的映射限制`Double`和 SAP `FLTP` SAP 系统中的数据读入的.NET 类型时，数据类型可能会导致溢出错误。 尽管.NET 类型可以表示双精度 64 位数字，其值范围从-1.79769313486232e308 到正 1.79769313486232 e 308，SAP`FLTP`类型分析[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不能超过 1.8446744073709552E + 19;有效的限制`FLTP`类型是负 1.8446744073709552E + 正 1.8446744073709552E + 19 到 19 的范围。  
   
--   由于出现超时处理基础的客户端库，问题[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持命令和连接超时。  
+- 由于基础客户端库，超时处理问题[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持命令，并连接超时。  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持异步命令的行为。  
+- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]不支持异步命令的行为。  
   
--   使用 SQL Server Integration Services (SSIS) 项目，使用时[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]无法检索包含与多个 8000 个字符的值的列的数据。 这是由于依据的 SSIS 限制：  
+- 当使用 SQL Server Integration Services (SSIS) 项目，使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]无法检索包含超过 8000 个字符的值的列的数据。 这是因为依据的 SSIS 限制：  
   
-    -   不支持大于 4000 个字符在 SSIS 变量的值。  
+  -   不支持大于 4000 个字符中的 SSIS 变量的值。  
   
-    -   不支持大于 4000 宽字符的值。  
+  -   不支持大于 4000 个宽字符的值。  
   
-    -   不支持大于 8000 单字节字符的值。  
+  -   不支持大于 8000 的单字节字符的值。  
   
-## <a name="see-also"></a>另请参阅  
- [有关.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+## <a name="see-also"></a>请参阅  
+ [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

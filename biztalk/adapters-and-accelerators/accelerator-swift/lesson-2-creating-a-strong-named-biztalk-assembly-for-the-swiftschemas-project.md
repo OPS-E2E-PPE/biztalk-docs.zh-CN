@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集 |Microsoft 文档
+title: 第 2 课： 创建 swift 架构项目的强名称的 BizTalk 程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,47 +15,47 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: d8e5b9ccc56b6b75ea574f956faac462e5b35dca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25961003"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995518"
 ---
-# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课： 创建 SWIFTSchemas 项目的具有强名称 BizTalk 程序集
-在本课程中，你可以创建强名称对其编译并部署 BizTalk 程序集。 具有强名称程序集提供多种安全优势：  
+# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课： 创建 swift 架构项目的强名称的 BizTalk 程序集
+在本课程中，您创建强名称对其编译并部署 BizTalk 程序集。 强名称的程序集提供了多个安全优势：  
   
--   强名称保证通过将数字签名和唯一的密钥对分配的程序集的唯一性。  
+- 强名称通过分配的数字签名和唯一的密钥对保证唯一性的程序集。  
   
--   强名称可避免通过确保没有其他任何人可以生成程序集的后续版本的程序集的沿袭。  
+- 强名称保护通过确保任何其他人可以生成的程序集的后续版本的程序集的沿袭。  
   
--   强名称提供可靠的完整性检查以确保自上次生成以来尚未更改的程序集的内容。  
+- 强名称提供可靠的完整性检查，以保证，最后一次生成之后未更改过的程序集的内容。  
   
- 你可以使用附带的强名称工具 (sn.exe) 生成的密钥文件[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]或[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]。  
+  可以使用附带的强名称工具 (sn.exe) 来生成密钥文件[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]或[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]。  
   
-### <a name="to-create-a-strong-named-biztalk-assembly"></a>若要创建具有强名称的 BizTalk 程序集  
+### <a name="to-create-a-strong-named-biztalk-assembly"></a>若要创建的强名称的 BizTalk 程序集  
   
-1.  启动 Visual Studio 命令提示符。  
+1. 启动 Visual Studio 命令提示符。  
   
-2.  在 Visual Studio 命令提示符处，浏览到\<*驱动器*\>: \labs 文件夹。  
+2. 在 Visual Studio 命令提示符下，浏览到\<*驱动器*\>: \labs 文件夹。  
   
-3.  在命令提示符处，键入**sn-k swift.snk**，然后按 ENTER。 确保在输出窗口中显示一条成功消息。  
+3. 在命令提示符处，键入**sn – k swift.snk**，然后按 ENTER。 确保在输出窗口中显示一条成功消息。  
   
-    > [!NOTE]
-    >  如果未显示正确的消息，请使用 Visual Studio 进行故障排除程序集。  
+   > [!NOTE]
+   >  如果未显示正确的消息，使用 Visual Studio 来解决您的程序集。  
   
-4.  在解决方案资源管理器，右键单击**SWIFTSchemas**项目，，然后单击**属性**。  
+4. 在解决方案资源管理器中右键单击**swift 架构**项目，并单击**属性**。  
   
-5.  在 SWIFTSchemas 属性页对话框中，确保**通用属性**是展开，然后选择**程序集**。  
+5. 在 swift 架构属性页对话框中，确保**常见属性**扩展，并选择**程序集**。  
   
-6.  向下右窗格中，在和中的程序集属性滚动**强名称**部分中，单击右侧的框中**程序集密钥文件**。 单击省略号按钮。  
+6. 向下的程序集属性在右窗格中，在滚动**强名称**部分中，单击右侧的框中**程序集密钥文件**。 单击省略号按钮。  
   
-7.  在程序集密钥文件对话框中，浏览到 **\<*驱动器*:\>\labs**。  
+7. 在程序集密钥文件对话框中，浏览到 **\<*驱动器*:\>\labs**。  
   
-8.  选择**swift.snk**文件作为的密钥文件，然后单击**打开**。  
+8. 选择**swift.snk**文件作为密钥文件，然后单击**打开**。  
   
-9. 在 SWIFTSchemas 属性页对话框中，单击**确定**。  
+9. 在 swift 架构属性页对话框中，单击**确定**。  
   
-10. 上**文件**菜单上，单击**保存所有**以保存所做的更改。  
+10. 上**文件**菜单上，单击**全部保存**以保存所做的更改。  
   
- 继续执行[第 3 课： 向项目中添加 SWIFT 架构](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)。
+    请继续执行[第 3 课： 将 SWIFT 架构添加到项目](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)。

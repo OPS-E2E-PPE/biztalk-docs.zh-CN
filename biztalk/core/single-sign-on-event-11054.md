@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11054 |Microsoft 文档
+title: 单一登录： 事件 11054 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c4d71bc77f36231ddec939faf5e904e45017614
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0225123b40abd32280a240daf1d3c072dc4d969a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277637"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999430"
 ---
 # <a name="single-sign-on-event-11054"></a>单一登录： 事件 11054
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11054|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_WARN_APP_USERS_NOT_GROUP|  
-|消息正文|应用程序用户帐户包含一个或多个个人（不是组）帐户。 如果已经从 Active Directory 或本地计算机删除这些个人帐户，则必须立即从 SSO 系统中删除这些帐户，否则它们会成为安全隐患。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> Application Users: %2 %r<br /><br /> 个人帐户： %3|  
+|                 |                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                                                                           企业单一登录                                                                                                                                                                           |
+| 产品版本 |                                                                                                                                                          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                           |
+|    事件 ID     |                                                                                                                                                                                     11054                                                                                                                                                                                     |
+|  事件源   |                                                                                                                                                                                    ENTSSO                                                                                                                                                                                     |
+|    组件    |                                                                                                                                                                                      N/A                                                                                                                                                                                      |
+|  符号名称  |                                                                                                                                                                         SSO_WARN_APP_USERS_NOT_GROUP                                                                                                                                                                          |
+|  消息正文   | 应用程序用户帐户包含一个或多个个人（不是组）帐户。 如果已经从 Active Directory 或本地计算机删除这些个人帐户，则必须立即从 SSO 系统中删除这些帐户，否则它们会成为安全隐患。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 应用程序用户: %2 %r<br /><br /> 个人帐户： %3 |
   
 ## <a name="explanation"></a>解释  
  从 Active Directory 或本地计算机上删除个人帐户并不会自动从 SSO 系统删除该帐户。 这意味着如果从本地计算机删除帐户 USER1，然后另一个不同用户（例如新的员工）使用相同的名称加入到系统，则 SSO 系统会将原来 USER1 所具有的安全权限都授予新的 USER1。 这会形成安全隐患。  

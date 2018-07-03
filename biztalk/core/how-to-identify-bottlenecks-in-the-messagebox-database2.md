@@ -1,5 +1,5 @@
 ---
-title: 如何确定 MessageBox Database2 中的瓶颈 |Microsoft 文档
+title: 如何找出 MessageBox 数据库 2 的瓶颈 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e69966f0f3ecff5a27788c9a92d4e3f1ac0eae68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffc04f31544a48f0ab25338c95beefaf14d5097c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254197"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010622"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a>如何找出 MessageBox 数据库的瓶颈
 若要找出 MessageBox 数据库的瓶颈，首先要确保 SQL Server 代理服务已启动。 将服务的启动状态从“手动”改为“自动”，这样即使服务器重新启动了，服务也会自动重新启动。  
   
  默认情况下，如果 Spool、TrackingData 或 ApplicationQ 表增大了，则 BizTalk 服务将会限流。 SQL 代理作业会对这些表进行削减，如果不这样，将会引起 Spool 的增长，从而导致服务限流，以保护数据库免受更大压力。 检查下列性能计数器的状态：  
   
--   BizTalk:Message Agent (Host Name) Message Delivery Throttling State  
+- BizTalk:Message Agent (Host Name) Message Delivery Throttling State  
   
--   BizTalk:Message Agent (Host Name) Message Publishing Throttling State  
+- BizTalk:Message Agent (Host Name) Message Publishing Throttling State  
   
- 值“0”表示没有发生限流。 值“6”表示系统由于数据库增长而限流。 有关如何解释这些计数器的其他值的信息，请参考有关文档。  
+  值“0”表示没有发生限流。 值“6”表示系统由于数据库增长而限流。 有关如何解释这些计数器的其他值的信息，请参考有关文档。  
   
 ## <a name="spool-table-growth"></a>Spool 表的增长  
  导致 Spool 增长的原因有多种。 其中一个就是应用程序队列的增长。 其增长可能有多种原因，比如下游瓶颈和/或资源争夺。  
   
  如果应用程序队列很小，但 Spool 却很大，请检查清除作业的速度是否够快。 请确保 SQL 代理服务正在运行，然后验证下列作业是否成功完成：  
   
--   MessageBox_Message_Cleanup_BizTalkMessageBoxDb  
+- MessageBox_Message_Cleanup_BizTalkMessageBoxDb  
   
--   MessageBox_Parts_Cleanup_BizTalkMessageBoxDb  
+- MessageBox_Parts_Cleanup_BizTalkMessageBoxDb  
   
- 如果 MessageZeroSum 表很大，说明消息已经处理完毕（DeQueue 已经成功完成，并已从应用程序队列表中删除了数据），也标记了要删除的行。 但清除作业不能及时删除数据。 导致这种情况的一个原因是，SQL Server 计算机的 CPU 资源争夺很激烈，CPU 资源的紧张影响了清除作业的能力，使其无法及时完成任务。  
+  如果 MessageZeroSum 表很大，说明消息已经处理完毕（DeQueue 已经成功完成，并已从应用程序队列表中删除了数据），也标记了要删除的行。 但清除作业不能及时删除数据。 导致这种情况的一个原因是，SQL Server 计算机的 CPU 资源争夺很激烈，CPU 资源的紧张影响了清除作业的能力，使其无法及时完成任务。  
   
 ## <a name="application-queue-table-growth"></a>应用程序队列表的增长  
  应用程序队列中等待处理的转换数据在处理后立即由 DeQueue 清除。  

@@ -1,5 +1,5 @@
 ---
-title: 有关 BAM 事件发布的性能注意事项 |Microsoft 文档
+title: 有关 BAM 事件发布的性能注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,26 +19,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebab873c94c0ae17abf9938883662ca8777cef36
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c031f9a3325eda9cbcf865eaf72d1d9e100616c7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264421"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997534"
 ---
 # <a name="performance-considerations-for-bam-event-publishing"></a>有关 BAM 事件发布的性能注意事项
 BAM 支持两种形式的业务事件发布：  
   
--   同步  
+- 同步  
   
--   异步  
+- 异步  
   
- 下图说明了两个模型。  
+  下图演示了两个模型。  
   
- ![](../core/media/bam-topologies.gif "bam_topologies")  
-BAM 拓扑  
+  ![](../core/media/bam-topologies.gif "bam_topologies")  
+  BAM 拓扑  
   
- 同步的方法是用于管理和使用从代码中，异步方法可以更好的性能时要简单得多。  
+  同步方法是要简单得多的管理和使用在代码中，而异步方法可提高性能。  
   
 ## <a name="in-this-section"></a>本节内容  
   

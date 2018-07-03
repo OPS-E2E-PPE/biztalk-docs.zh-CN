@@ -1,5 +1,5 @@
 ---
-title: 加载程序集时出错 |Microsoft 文档
+title: 加载程序集时出错 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13be3acf6974565c86cc87b14ed58929553d5220
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df561b964faa0fae80f41f1423d3034466bbb8ce
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241733"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994950"
 ---
 # <a name="error-loading-assembly"></a>加载程序集时出错
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|此错误指示该位置不可以是完全受信任是否在网络共享上。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [程序集： BizTalkAssembly] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码|  
+|                 |                                                                                                                                                                                                                                                                                                                                                                      |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                                          [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                                                                                                          |
+| 产品版本 |                                                                                                                                                      [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]                                                                                                                                                      |
+|    事件 ID     |                                                                                                                                                                                  0                                                                                                                                                                                   |
+|  事件源   |                                                                                                                                                                                  0                                                                                                                                                                                   |
+|    组件    |                                                                                                                                                                                  0                                                                                                                                                                                   |
+|  符号名称  |                                                                                                                                                                                  0                                                                                                                                                                                   |
+|  消息正文   | 此错误表示位置的网络共享上是否可能不完全受信任。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [程序集： BizTalkAssembly] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码 |
   
 ## <a name="explanation"></a>解释  
- 此错误指示该位置不可以是完全受信任是否在网络共享上。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [*程序集： BizTalkAssembly*] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码。  
+ 此错误表示位置的网络共享上是否可能不完全受信任。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [*程序集： BizTalkAssembly*] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码。  
   
 ## <a name="user-action"></a>用户操作  
  如果位置的来源可靠，则为其授予完全信任级别。  确保 dll 是有效的 BizTalk .net 程序集。

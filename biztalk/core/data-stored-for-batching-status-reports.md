@@ -1,5 +1,5 @@
 ---
-title: 为批处理状态报表存储的数据 |Microsoft 文档
+title: 为批处理状态报告存储的数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db9831aafce56845fe7b75e91f5369a8860d8996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f42d503177e3b00ce418913e66948eb813575ab1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238589"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006854"
 ---
 # <a name="data-stored-for-batching-status-reports"></a>为批处理状态报告存储的数据
-当**打开 ON Reporting**为一个协议，选中属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将存储每个批处理的实例的状态。 此属性是在位于**常规属性**页**常规**选项卡中**协议属性**对话框。 状态可以为以下任意状态：  
+当**打开报告**协议，选择属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将存储每个批处理实例的状态。 此属性中提供**常规属性**页**常规**选项卡中**协议属性**对话框。 状态可以为以下任意状态：  
   
--   **定义**： 批处理实例配置。 批的激活起始日期时间晚于当前日期时间。 所有批参数均已定义，但批没有运行（没有接受文档）。  
+- **定义**： 配置了批实例。 批的激活起始日期时间晚于当前日期时间。 所有批参数均已定义，但批没有运行（没有接受文档）。  
   
--   **Active**： 批处理实例已激活和聚合事务集。 可以查看已接受/已拒绝事务集的数量。  
+- **Active**： 批实例已激活并且正在聚合事务集。 可以查看已接受/已拒绝事务集的数量。  
   
--   **发布**： 批处理满足释放条件和发布到 MessageBox，但尚未释放通过发送管道中，或在处理任何消息之前停止批处理。  
+- **发布**： 批满足发布条件和发布到 MessageBox 中，但尚未由发送管道发布或处理任何消息前停止了批处理。  
   
--   **完成**: EdiSend 管道发送批处理。  
+- **完成**: 批发送出去 EdiSend 管道。  
   
- 如果 EdiSend 管道已经发送了批，可以将 UI 中的批记录与所发送 Edi 交换的记录关联在一起，并查看事务集详细信息。  
+  如果 EdiSend 管道已经发送了批，可以将 UI 中的批记录与所发送 Edi 交换的记录关联在一起，并查看事务集详细信息。  
   
 > [!NOTE]
 >  批配置可以有多个状态为“已完成”的批实例。  
   
- **关联的批处理的交换**  
+ **将一批交换相关联**  
   
- 通过 BusinessMessageJournal BAM 活动，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可以将收到的包含事务集的 EDI 交换与包含相同事务集的传出批交换相关联。 有关如何实现和使用此相关信息的信息，请参阅[关联传出批的传入事务集](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)。  
+ 通过 BusinessMessageJournal BAM 活动，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可以将收到的包含事务集的 EDI 交换与包含相同事务集的传出批交换相关联。 有关如何实现和使用此相关信息的信息，请参阅[关联与传出批的传入事务集](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [对于 EDI 和 AS2 状态报表存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md)   
- [对于 EDI 状态报表存储的数据](../core/data-stored-for-edi-status-reports.md)   
- [AS2 状态报告为存储的数据](../core/data-stored-for-as2-status-reports.md)
+## <a name="see-also"></a>请参阅  
+ [为 EDI 和 AS2 状态报告存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md)   
+ [为 EDI 状态报告存储的数据](../core/data-stored-for-edi-status-reports.md)   
+ [为 AS2 状态报告存储的数据](../core/data-stored-for-as2-status-reports.md)

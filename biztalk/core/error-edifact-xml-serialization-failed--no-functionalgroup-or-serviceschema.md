@@ -1,5 +1,5 @@
 ---
-title: Edifact 交换 Xml 序列化失败，因为结构无效，没有 FunctionalGroup 或 ServiceSchema |Microsoft 文档
+title: 由于结构无效，无 FunctionalGroup 或 ServiceSchema，Edifact 交换 Xml 序列化失败 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79d64a9ec19e62f13220be056335bf2d249519a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 370b9844faaa46955f6e45bfcea78f6eba0f8cf9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241437"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003150"
 ---
-# <a name="edifact-interchange-xml-serialization-failed-due-to-invalid-structure-no-functionalgroup-or-serviceschema"></a>由于结构无效，没有 FunctionalGroup 或 ServiceSchema Edifact 交换 Xml 序列化失败
+# <a name="edifact-interchange-xml-serialization-failed-due-to-invalid-structure-no-functionalgroup-or-serviceschema"></a>由于结构无效，无 FunctionalGroup 或 ServiceSchema，Edifact 交换 Xml 序列化失败
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|由于结构无效，Edifact 交换 Xml 序列化失败。 查找 UNZ 的 FunctionalGroup 或 ServiceSchema，但没有找到。|  
+|                 |                                                                                                                                              |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                              |
+| 产品版本 |                                          [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                          |
+|    事件 ID     |                                                                      -                                                                       |
+|  事件源   |                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                            |
+|    组件    |                                                                  EDI 引擎                                                                  |
+|  符号名称  |                                                                      -                                                                       |
+|  消息正文   | 由于结构无效，Edifact 交换 Xml 序列化失败。 查找 UNZ 的 FunctionalGroup 或 ServiceSchema，但没有找到。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理保留的 EDIFACT 批处理交换，因为该交换的 XML 文件中不包含 TransactionSetGroup 或 FunctionalGroup 标记。  

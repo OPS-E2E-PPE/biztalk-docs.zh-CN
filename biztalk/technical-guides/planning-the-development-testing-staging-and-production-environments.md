@@ -1,5 +1,5 @@
 ---
-title: 规划开发、 测试、 过渡和生产环境 |Microsoft 文档
+title: 规划开发、 测试、 过渡和生产环境 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,96 +12,96 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c52fc2ae61d4e261a729de702a2fbffbde3fd1bd
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f4d72440595adb34b822b70e934985f88f79c66d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008966"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996046"
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>规划开发、 测试、 过渡和生产环境
-本主题讨论在发布管理过程中用于 BizTalk 解决方案的环境。 与任何企业软件解决方案，在开发和发布 BizTalk 解决方案时应遵循它成熟的软件版本管理准则。 此过程中应包括以下不同阶段：  
+本主题讨论在发布管理过程中使用的 BizTalk 解决方案的环境。 与任何企业软件解决方案一样，在开发和发布 BizTalk 解决方案时应遵循成熟的软件版本管理准则。 此过程中应包括以下不同的阶段：  
   
--   开发  
+- 开发  
   
--   测试  
+- 测试  
   
--   过渡  
+- 过渡环境  
   
--   Production  
+- Production  
   
- 理想情况下，应完成独立于其他环境的离散环境中的版本管理过程中每个阶段。 实际上，你可能需要合并一个或多个由于硬件、 时间或其他资源约束的环境。 裸机至少应该将来自其他环境的生产环境。  
+  理想情况下，应完成发布管理过程在独立环境中，独立于其他环境中的每个阶段。 实际上，您可能需要合并一个或多个环境中由于硬件、 时间或其他资源约束。 至少应分开来自其他环境的生产环境。  
   
-> [!NOTE]  
->  BizTalk Server 的最新安装和升级说明列在[BizTalk Server 什么的新建、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 
->  
-##  <a name="BKMK_VirtualServ"></a>在版本管理过程中使用虚拟服务器  
- 请考虑完成开发，单元测试，和过渡中"虚拟"的环境。 执行的开发工作，单元测试和在虚拟环境中的暂存提供极大的灵活性，并使用显著较少的硬件资源比否则要求。 如果使用虚拟环境，则为每个主机计算机和其他的 512 MB 的内存用于主机操作系统运行的虚拟机分配至少 512 MB 的内存。  
+> [!NOTE]
+>  BizTalk Server 的最新的安装和升级说明将列在[BizTalk Server 的新增功能新建、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 
+> 
+> ##  <a name="BKMK_VirtualServ"></a> 在发布管理过程期间使用虚拟服务器  
+>  请考虑完成开发，单元测试和过渡中的"虚拟"的环境。 执行的开发工作，单元测试和过渡环境中的虚拟环境可提供极大的灵活性并且使用硬件的资源比否则所需的资源要少得多。 如果使用虚拟环境，则为每个主机计算机和额外的 512 MB 的内存的主机操作系统运行的虚拟机分配至少 512 MB 的内存。  
   
- 例如，对于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 5 个虚拟机的环境 (两台计算机运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 两个 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]群集节点，并且一个域控制器)，要有 3 GB 的主计算机上安装的内存。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境需要超过 2 GB 的内存，请考虑在主机计算机，以确保已安装的内存最大数量是可访问的主机操作系统上安装 Windows 的 64 位版本。  
+ 例如，对于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用五个虚拟机的环境 (两台计算机运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 两个 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]群集节点，并且有一个域控制器)，你要计划 3 GB 的内存主机计算机上安装。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境要求超过 2 GB 的内存，请考虑以确保已安装内存的最长的主机操作系统可访问的主机计算机上安装 Windows 的 64 位版本。  
   
-> [!NOTE]  
->  有关使用建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在虚拟环境中，请参阅[BizTalk Server 2009 HYPER-V 指南](http://go.microsoft.com/fwlink/?LinkId=151834)(http://go.microsoft.com/fwlink/?LinkId=151834)。  
-  
-> [!NOTE]  
->  BizTalk Server 完全支持上受支持的操作系统的任何 Microsoft 知识库文章 842301 中列出的虚拟化软件上运行[的虚拟机上的MicrosoftBizTalkServer可支持性](https://support.microsoft.com/kb/842301). 但是，BizTalk Server 可能不会按预期如果安装在受支持的操作系统中除了知识库文章中所述的虚拟化软件的运行方式执行。  
+> [!NOTE]
+>  有关使用建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在虚拟环境中，请参阅[BizTalk Server 2009 HYPER-V 指南](http://go.microsoft.com/fwlink/?LinkId=151834)(<http://go.microsoft.com/fwlink/?LinkId=151834>)。  
+> 
+> [!NOTE]
+>  在任何 Microsoft 知识库文章 842301 中列出的虚拟化软件运行受支持操作系统上完全支持 BizTalk Server [的虚拟机上的MicrosoftBizTalkServer可支持性](https://support.microsoft.com/kb/842301). 但是，BizTalk Server 可能无法执行按预期方式如果不是在知识库文章中提到过虚拟化软件中运行受支持操作系统上安装。  
   
 ## <a name="development-environment"></a>开发环境  
- 在开发环境中创建用于 BizTalk 解决方案 BizTalk 项目。 应在使用中的计算机上安装以下软件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发环境：  
+ 在开发环境中创建用于 BizTalk 解决方案的 BizTalk 项目。 应在使用中的计算机上安装以下软件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发环境：  
   
--   Internet 信息服务 (IIS)  
+- Internet 信息服务 (IIS)  
   
--   Visual Studio  
+- Visual Studio  
   
--   SQL Server 客户端工具  
+- SQL Server 客户端工具  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]（包括以下组件）  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] （包括以下组件）  
   
-    -   文档  
+  -   文档  
   
-    -   管理工具  
+  -   管理工具  
   
-    -   开发人员工具和 SDK  
+  -   开发人员工具和 SDK  
   
-    -   其他软件  
+  -   其他软件  
   
--   [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库要在开发过程中本地托管。  
+- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库是以本地托管在开发过程。  
   
--   通常开发人员应具有其自己的开发计算机 （物理或虚拟） 所必需的软件安装。  
+- 通常开发人员应具有其自己的开发计算机 （物理或虚拟） 并安装所需的软件。  
   
 > [!NOTE]  
->  我们建议您购买，并且针对非生产环境中使用 Visual Studio 订阅。 Visual Studio 订阅从相同的软件的零售许可证的成本提供高折扣。 请参阅[Visual Studio 订阅](https://visualstudio.com/subscriptions)。  
+>  我们建议您购买和非生产环境中使用 Visual Studio 订阅。 Visual Studio 订阅均从相同的软件的零售许可证的成本提供可观的折扣。 请参阅[Visual Studio 订阅](https://visualstudio.com/subscriptions)。  
   
 ## <a name="testing-environment"></a>测试环境  
- 单元测试可在虚拟环境中完成。 但是，它后，应该执行您在硬件和软件等同于生产环境的物理环境中测试的性能。  
+ 单元测试可以在虚拟环境中完成。 但是，应该执行性能测试硬件和软件的等同于生产环境的物理环境中。  
   
- 测试环境用于测量性能特征，如最大可持续吞吐量 (MST) 和 BizTalk 解决方案的最大可持续跟踪吞吐量。 因此，它应尽可能真实地匹配物理生产环境了。 BizTalk 解决方案的特征有关测量性能的详细信息请参阅[引擎性能特征](../core/engine-performance-characteristics.md)，或[BizTalk Server 性能优化指南](../technical-guides/biztalk-server-2010-performance-optimization-guide.md)。
+ 测试环境用于度量性能特征，例如最大可承受吞吐量 (MST) 和 BizTalk 解决方案的最大可承受跟踪吞吐量。 因此，它应尽可能接近地匹配物理生产环境。 有关测量性能的详细信息请参阅 BizTalk 解决方案的特征[引擎性能特征](../core/engine-performance-characteristics.md)，或[BizTalk Server 性能优化指南](../technical-guides/biztalk-server-2010-performance-optimization-guide.md)。
   
 ## <a name="staging-environment"></a>过渡环境  
- 通常使用过渡环境进行"单元测试"实际部署 BizTalk 解决方案。 过渡环境中安装的软件应接近生产环境中安装软件。 但是，所以可能，是可以接受的过渡环境中使用虚拟计算机，因为此环境是不能以衡量性能。 有关部署到过渡环境 BizTalk 应用程序的详细信息请参阅[BizTalk 应用程序部署的暂存任务](../core/staging-tasks-for-biztalk-application-deployment.md)。
+ 通常使用过渡环境进行"单元测试"实际部署的 BizTalk 解决方案。 在过渡环境中安装的软件应密切匹配在生产环境中安装的软件。 但是，是可以接受在过渡环境中使用的虚拟计算机，因为此环境并不是用于衡量性能。 有关部署到过渡环境的 BizTalk 应用程序的详细信息请参阅[BizTalk 应用程序部署的暂存任务](../core/staging-tasks-for-biztalk-application-deployment.md)。
   
 ## <a name="production-environment"></a>生产环境  
- 生产环境是将承载运行 BizTalk 解决方案的"实时"环境。 生产环境中发布管理过程的最后一个终结点，应仅主机 BizTalk 应用程序以前已进行开发，单元测试、 负载测试和在其他环境中的过渡。 全面的单元测试、 负载测试，和过渡事先将帮助确保最大的性能和在生产环境中 BizTalk 应用程序的运行时间。  
+ 在生产环境是将承载正在运行的 BizTalk 解决方案的"实时"环境。 生产环境中发布管理过程的最后一个终结点，应仅主机 BizTalk 应用程序之前经过了开发、 单元测试、 负载测试，以及在其他环境中的过渡。 全面的单元测试、 负载测试和过渡事先将帮助确保最大性能和 BizTalk 应用程序在生产环境中正常运行时间。  
   
 ## <a name="guidelines-for-allocating-servers"></a>准则分配服务器  
- 以下指南提供一条经验法则，BizTalk 服务器和 SQL server 应分配给每个阶段中发布管理过程假设有特定数量的物理计算机的数量应在生产中使用的： 它们是粗略如有更改，具体取决于你的体系结构的估计。  
+ BizTalk server 和 SQL server 应分配给发布管理过程提供了特定数量的物理计算机的每个阶段的数量预计要在生产中使用以下指导原则提供经验法则： 它们是粗略这可能会有所更改，具体取决于您的体系结构的估计值。  
   
 > [!NOTE]  
->  虚拟服务器可用于在开发和过渡环境中，并且还用于单元测试。 应在与生产环境中的物理硬件匹配的物理硬件上执行所有性能测试。  
+>  虚拟服务器可能用于在开发过程，在过渡环境中，还可用于单元测试。 应与生产环境中的物理硬件相匹配的物理硬件上执行所有的性能测试。  
   
-|在生产 （建议的物理硬件） 中运行 BizTalk Server 使用的计算机|开发服务器 （虚拟或物理硬件）|测试服务器 （建议的物理硬件）|暂存服务器 （虚拟或物理硬件）|总否。 运行 BizTalk Server 的计算机|  
+|在生产环境 （物理硬件建议） 中使用运行 BizTalk Server 计算机|开发服务器 （虚拟或物理硬件）|测试服务器 （建议的物理硬件）|暂存服务器 （虚拟或物理硬件）|总否。 运行 BizTalk Server 的计算机|  
 |---|---|---|---|---|  
-|1|2|1|1|5|  
-|2|2|2|1|7|  
-|3|2|3|1|9|  
-|4|2|4|1|11|  
+|@shouldalert|2|@shouldalert|@shouldalert|5|  
+|2|2|2|@shouldalert|7|  
+|3|2|3|@shouldalert|9|  
+|4|2|4|@shouldalert|11|  
   
-|估计否。 运行在生产 （建议的物理硬件） 中使用的 SQL Server 的计算机|开发服务器 （虚拟或物理硬件）|测试服务器 （建议的物理硬件）|暂存服务器 （虚拟或物理硬件）|总否。 运行 SQL Server 的计算机|  
+|估计否。 运行生产 （建议的物理硬件） 中使用的 SQL Server 的计算机|开发服务器 （虚拟或物理硬件）|测试服务器 （建议的物理硬件）|暂存服务器 （虚拟或物理硬件）|总否。 运行 SQL Server 的计算机|  
 |---|---|---|---|---|  
-|1|1|1|1|4|  
-|2|1|2|1|6|  
-|3|2|3|1|9|  
-|4|2|4|1|11|  
+|@shouldalert|@shouldalert|@shouldalert|@shouldalert|4|  
+|2|@shouldalert|2|@shouldalert|6|  
+|3|2|3|@shouldalert|9|  
+|4|2|4|@shouldalert|11|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 BizTalk Server 规划环境](../technical-guides/planning-the-environment-for-biztalk-server.md)

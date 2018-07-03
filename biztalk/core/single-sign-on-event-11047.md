@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11047 |Microsoft 文档
+title: 单一登录： 事件 11047 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e16c2fa899642f20c67e171d0bd8f9536b6add2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f1ee4f5eaea1dac2cb2033d4585e2f89807588e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278965"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991862"
 ---
 # <a name="single-sign-on-event-11047"></a>单一登录： 事件 11047
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11047|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_ERROR_SSOSQL_FAILED|  
-|消息正文|无法创建 SSOSQL。 若要解决此问题，请重新安装 SSO，或尝试在 Visual Studio 命令提示符下输入“regasm SSOSQL.dll”。%r<br /><br /> 错误代码： %1|  
+|                 |                                                                                                                                                         |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                企业单一登录                                                                |
+| 产品版本 |                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                |
+|    事件 ID     |                                                                          11047                                                                          |
+|  事件源   |                                                                         ENTSSO                                                                          |
+|    组件    |                                                                           N/A                                                                           |
+|  符号名称  |                                                                 SSO_ERROR_SSOSQL_FAILED                                                                 |
+|  消息正文   | 无法创建 SSOSQL。 若要解决此问题，请重新安装 SSO，或尝试在 Visual Studio 命令提示符下输入“regasm SSOSQL.dll”。%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
  这可能是由于安装错误所致。  

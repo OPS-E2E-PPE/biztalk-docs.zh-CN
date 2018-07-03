@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10675 |Microsoft 文档
+title: 单一登录： 事件 10675 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74efcbdb1f5668ac676128372aecb5f5874c69ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 919ffcaac53af2f1dbbc5c0f21a769fc547d2782
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270533"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983702"
 ---
 # <a name="single-sign-on-event-10675"></a>单一登录： 事件 10675
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10675|  
-|事件源|ENTSSO|  
-|组件|N\A|  
-|符号名称|SSO_INFO_WINDOWS_PASSWORD_SET|  
-|消息正文|在 SSO 数据库中成功更新了 Windows 密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4|  
-  
+
+|                 |                                                                                                                                                                                                          |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                        企业单一登录                                                                                         |
+| 产品版本 |                                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                        |
+|    事件 ID     |                                                                                                  10675                                                                                                   |
+|  事件源   |                                                                                                  ENTSSO                                                                                                  |
+|    组件    |                                                                                                   N\A                                                                                                    |
+|  符号名称  |                                                                                      SSO_INFO_WINDOWS_PASSWORD_SET                                                                                       |
+|  消息正文   | 在 SSO 数据库中成功更新了 Windows 密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
+
 ## <a name="explanation"></a>解释  
  此信息事件表示在 SSO 数据库中成功更新了 Windows 密码。  
-  
+
 ## <a name="user-action"></a>用户操作  
-  
--   不需要用户进行任何操作。  
-  
- 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
-  
--   [密码同步](../core/password-synchronization2.md)
+
+- 不需要用户进行任何操作。  
+
+  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+
+- [密码同步](../core/password-synchronization2.md)

@@ -1,5 +1,5 @@
 ---
-title: EDI 替代上下文属性 |Microsoft 文档
+title: EDI 替代上下文属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 182ddc6a243a578a890a47dc70faa427b4f6df88
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b66b9a2d6c2a601f40f276692ba53b732c95ec6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22243237"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986566"
 ---
 # <a name="edi-override-context-properties"></a>EDI 替代上下文属性
 EdiOverride 全局属性架构中的消息上下文属性可以用来覆盖运行时的 EDI 信封值。 这些消息上下文属性是在 Microsoft.BizTalk.Edi.BaseArtifacts 程序集的 edi-properties.xsd 中定义的。 这些属性的命名空间是 `http://schemas.microsoft.com/BizTalk/2006/edi-properties`。  
   
  只要将对 Microsoft.BizTalk.Edi.BaseArtifacts 程序集的引用添加到业务流程项目中，就还可以在业务流程中使用 EdiOverride 上下文属性。  
   
-|Name|类型|Description|  
+|“属性”|类型|Description|  
 |----------|----------|-----------------|  
 |OverrideEDIHeader|boolean|如果为 true，则 EDI 发送管道将尝试使用 EdiOverride 属性集合中的值构造 EDI 信封。|  
 |ISA01|string|授权信息限定符 (X12)|  
@@ -52,7 +52,7 @@ EdiOverride 全局属性架构中的消息上下文属性可以用来覆盖运�
 |GS07|string|负责机构代码 (X12)|  
 |GS08|string|版本/发行版/行业标识符代码 (X12)|  
 |ST02|string|事务集控制编号 (X12)<br /><br /> 如果覆盖了事务集控制编号，则会将事务集尾部段 (SE) 中的相应字段设置为与该值匹配。|  
-|GenerateUNA|boolean|确定 EDI 发送管道是否将为出站 EDIFACT 文档设置 UNA 段。<br /><br /> 如果 OverrideEdiHeader 为 True 且 GenerateUNA 也为 True，则将生成 UNA 段。 如果 OverrideEdiHeader 为 True，但“生成 UNA”为 False，将不会生成 UNA 段。<br /><br /> 按以下顺序确定 UNA 段的值：<br /><br /> -EdiOverride 上下文属性，如果所有 UNA 属性都都存在。<br />-如果不是所有上下文属性都都存在，并生成 UNA 段签入参与方属性，上下文属性和参与方属性的组合。<br />-如果不是所有上下文属性都都存在，并生成 UNA 段未参与方属性中的上下文属性和标准 UNA 值的组合**注意：** 如果 OverrideEdiHeader 为 false，此字段项不起作用。|  
+|GenerateUNA|boolean|确定 EDI 发送管道是否将为出站 EDIFACT 文档设置 UNA 段。<br /><br /> 如果 OverrideEdiHeader 为 True 且 GenerateUNA 也为 True，则将生成 UNA 段。 如果 OverrideEdiHeader 为 True，但“生成 UNA”为 False，将不会生成 UNA 段。<br /><br /> 按以下顺序确定 UNA 段的值：<br /><br /> -EdiOverride 上下文属性，如果全部 UNA 属性都存在。<br />-如果不是所有上下文属性都都存在，并且在参与方属性中，上下文属性和参与方属性的组合选中了生成 UNA 段。<br />-如果不是所有上下文属性都都存在，并选中在参与方属性、 上下文属性和标准 UNA 值的组合生成 UNA 段，则**注意：** 如果 OverrideEdiHeader 为 false，此字段会起任何作用。|  
 |UNA1|string|组件数据元素分隔符 (EDIFACT)|  
 |UNA2|string|数据元素分隔符 (EDIFACT)|  
 |UNA3|string|小数点符号 (EDIFACT)|  
@@ -77,7 +77,7 @@ EdiOverride 全局属性架构中的消息上下文属性可以用来覆盖运�
 |UNB7|string|应用程序参考 (EDIFACT)|  
 |UNB8|string|处理优先级代码 (EDIFACT)|  
 |UNB9|string|确认请求 (EDIFACT)|  
-|GenerateUNG|boolean|确定 EDI 发送管道是否将为出站 EDIFACT 文档设置 UNG 段。<br /><br /> 如果 OverrideEdiHeader 为 True 且 GenerateUNG 也为 True，则将生成 UNG 段。 如果 OverrideEdiHeader 为 True，但“生成 UNG”为 False，则将不会生成 UNG 段。<br /><br /> 按以下顺序确定 UNG 段的值：<br /><br /> -EdiOverride 上下文属性，如果所有 UNG 属性都都存在。<br />-如果不是所有上下文属性都都存在，并生成 UNG 段签入参与方属性，上下文属性和参与方属性的组合。<br />-如果不是所有上下文属性都都存在，并生成 UNG 段未参与方属性中的上下文属性和标准 UNA 值的组合**注意：** 如果 OverrideEdiHeader 为 false，此字段项不起作用。|  
+|GenerateUNG|boolean|确定 EDI 发送管道是否将为出站 EDIFACT 文档设置 UNG 段。<br /><br /> 如果 OverrideEdiHeader 为 True 且 GenerateUNG 也为 True，则将生成 UNG 段。 如果 OverrideEdiHeader 为 True，但“生成 UNG”为 False，则将不会生成 UNG 段。<br /><br /> 按以下顺序确定 UNG 段的值：<br /><br /> -EdiOverride 上下文属性，如果全部 UNG 属性都存在。<br />-如果不是所有上下文属性都都存在，并且在参与方属性中，上下文属性和参与方属性的组合选中了生成 UNG 段。<br />-如果不是所有上下文属性都都存在，并选中在参与方属性、 上下文属性和标准 UNA 值的组合生成 UNG 段，则**注意：** 如果 OverrideEdiHeader 为 false，此字段会起任何作用。|  
 |UNG1|string|消息组标识 (EDIFACT)|  
 |UNG2_1|string|应用程序发送方标识 (EDIFACT)|  
 |UNG2_2|string|标识代码限定符 (EDIFACT)|  
@@ -94,24 +94,24 @@ EdiOverride 全局属性架构中的消息上下文属性可以用来覆盖运�
 |UNH1|string|消息参考编号 (EDIFACT)<br /><br /> 如果覆盖了消息参考编号，则会将消息尾部段 (UNT) 中的相应字段设置为与此值匹配。|  
   
 ## <a name="edioverride-context-property-usage"></a>EDIOverride 上下文属性用法  
- 如果**OverrideEdiHeader**上下文属性为 true 时，在 EDIOverride 上下文属性中指定的值将用于创建出站消息的 EDI 信封。 如果没有为 EDIOverride 上下文属性指定值，则将使用相应的“参与方”或“全局”属性。  
+ 如果**OverrideEdiHeader**上下文属性为 true，则为 EDIOverride 上下文属性中指定的值将用于创建出站消息的 EDI 信封。 如果没有为 EDIOverride 上下文属性指定值，则将使用相应的“参与方”或“全局”属性。  
   
  根据 X12 或 EDIFACT 标准和任何服务架构扩展，为 EDIOverride 上下文属性指定的值必须有效。  
   
--   字段应包含对于该字段类型有效的值，包括服务架构扩展。  
+- 字段应包含对于该字段类型有效的值，包括服务架构扩展。  
   
--   控制编号必须是有效的类型，但不必是现有参与方设置中按顺序排列的下一个类型。  
+- 控制编号必须是有效的类型，但不必是现有参与方设置中按顺序排列的下一个类型。  
   
--   日期和时间字段应包含日期和时间值，并且应根据相关的 EDI 标准来说是有效的，即使这些值的格式与在“参与方”设置中定义的格式不匹配也是如此。  
+- 日期和时间字段应包含日期和时间值，并且应根据相关的 EDI 标准来说是有效的，即使这些值的格式与在“参与方”设置中定义的格式不匹配也是如此。  
   
- 仅当由 EDI 发送管道发送的消息为单个事务或事务批时，才支持某些 EDIOverride 上下文属性。 下表列出了每种消息类型支持的上下文属性：  
+  仅当由 EDI 发送管道发送的消息为单个事务或事务批时，才支持某些 EDIOverride 上下文属性。 下表列出了每种消息类型支持的上下文属性：  
   
 |发送的 EDI 事务|支持的 EDIOverride 上下文属性|  
 |--------------------------------|----------------------------------------------|  
-|单一事务集|-所有 Isa<br />-所有 GSs<br />-ST02<br />-GenerateUNA<br />-所有 UNAs<br />-所有 UNBs<br />-GenerateUNG<br />-所有 UNGs<br />-UNH1|  
-|批处理业务流程发布的批处理事务集或 EDI 接收管道发布的“批次性作业”事务集|-所有 Isa<br />-GS04<br />-GS05<br />-GenerateUNA<br />-所有 UNAs<br />-所有 UNBs<br />-GenerateUNG<br />-UNG4.1<br />-UNG4.2|  
+|单一事务集|-全部 Isa<br />-全部 Gs<br />-ST02<br />-GenerateUNA<br />-全部 Una<br />-全部 Unb<br />-GenerateUNG<br />-全部 Ung<br />-UNH1|  
+|批处理业务流程发布的批处理事务集或 EDI 接收管道发布的“批次性作业”事务集|-全部 Isa<br />-GS04<br />-GS05<br />-GenerateUNA<br />-全部 Una<br />-全部 Unb<br />-GenerateUNG<br />-UNG4.1<br />-UNG4.2|  
   
  EDIOverride 上下文属性还可用于将进行批处理的消息，但是批处理业务流程只支持 ST01 和 UNH1 EDIOverride 上下文属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

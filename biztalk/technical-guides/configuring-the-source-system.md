@@ -1,5 +1,5 @@
 ---
-title: 配置源系统 |Microsoft 文档
+title: 配置源系统 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73f5d785c20d1390ae811d737e9169951e0270e7
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 87cf66470ff2d05f4446fbcb81eb2a533064d3f6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009302"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024363"
 ---
 # <a name="configuring-the-source-system"></a>配置源系统
-对于 BizTalk Server 日志传送，它并不重要如果源系统位于单个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例或如果它在 Windows Server 群集中承载的多个实例之间分布。 没有成功运行 BizTalk Server 中备份作业所需的之外的其他注意事项。 若要配置此作业，请参阅[如何配置备份 BizTalk Server 作业](http://go.microsoft.com/fwlink/?LinkID=154072)(http://go.microsoft.com/fwlink/?LinkID=154072) BizTalk Server 帮助中。 你已配置备份 BizTalk Server 作业后，请转到主题[如何配置目标系统](../technical-guides/how-to-configure-the-destination-system.md)。  
+用于 BizTalk Server 日志传送，并不重要如果源系统位于单个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例或如果它分布在多个实例托管在 Windows Server 群集中。 没有成功运行备份 BizTalk Server 作业所需的以外的其他注意事项。 若要配置此作业，请参阅[如何配置备份 BizTalk Server 作业](http://go.microsoft.com/fwlink/?LinkID=154072)(<http://go.microsoft.com/fwlink/?LinkID=154072>) 在 BizTalk Server 帮助。 配置备份 BizTalk Server 作业后，继续执行本主题[如何配置目标系统](../technical-guides/how-to-configure-the-destination-system.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置 BizTalk Server 日志传送](../technical-guides/configuring-biztalk-server-log-shipping.md)

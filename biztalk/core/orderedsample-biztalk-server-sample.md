@@ -1,5 +1,5 @@
 ---
-title: OrderedSample （BizTalk Server 示例） |Microsoft 文档
+title: OrderedSample （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b9e93c7bb9cb59088e465dc53dd992ffd5f1c11
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 96a8cd43f80e9bf6ef7b5a2628f276aa7ef6829c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974747"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013094"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample（BizTalk Server 示例）
 OrderedSample 示例演示如何使用业务流程以往返过程方式接收和发送一系列有序消息。  
@@ -32,7 +32,7 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
  在业务流程，接收端口**mqreceive**，具有其**按序送达**属性设置为**True**。  
   
- 对于发送端，业务流程将发送一个消息并等待传送通知，然后再发送下一个消息。 发送端口**mqsend**具有其**传递通知**属性设置为**传输**。 为了使此示例尽量简单，业务流程使用无限循环。  
+ 对于发送端，业务流程将发送一个消息并等待传送通知，然后再发送下一个消息。 发送端口**mqsend**具有其**送达通知**属性设置为**传输**。 为了使此示例尽量简单，业务流程使用无限循环。  
   
  业务流程可接收消息批和单个消息。  
   
@@ -48,112 +48,112 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
 |OrderedSample.snk|强命名密钥文件。|  
 |**Setup.bat**|生成并初始化本示例。|  
   
-## <a name="building-and-running-the-sample"></a>生成和运行示例  
+## <a name="building-and-running-the-sample"></a>构建和运行示例  
   
 #### <a name="to-build-and-deploy-the-sample"></a>生成和部署示例  
   
-1.  在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到下面的文件夹：  
   
-     `<Samples Path>\AdaptersUsage\MQSeriesAdapter\OrderedSample`  
+    `<Samples Path>\AdaptersUsage\MQSeriesAdapter\OrderedSample`  
   
-2.  运行 Setup.bat 文件，该文件将执行以下操作：  
+2. 运行 Setup.bat 文件，该文件将执行以下操作：  
   
-    1.  为项目创建强名称密钥。  
+   1.  为项目创建强名称密钥。  
   
-    2.  编译并部署业务流程项目。  
+   2.  编译并部署业务流程项目。  
   
- 如果您具有安装 MQSeries Server for Windows 的必需权限，则可以通过适配器对话框创建 MQSeries 队列，并可以跳过下一过程。 如果您没有这样的访问权限，可以使用 IBM WebSphere MQ Explorer 来创建队列。 若要通过 WebSphere MQ Explorer 创建队列，请完成下列步骤。  
+   如果您具有安装 MQSeries Server for Windows 的必需权限，则可以通过适配器对话框创建 MQSeries 队列，并可以跳过下一过程。 如果您没有这样的访问权限，可以使用 IBM WebSphere MQ Explorer 来创建队列。 若要通过 WebSphere MQ Explorer 创建队列，请完成下列步骤。  
   
-## <a name="creating-the-mqseries-queues-through-the-websphere-mq-explorer"></a>创建通过 WebSphere MQ 资源管理器的 MQSeries 队列  
+## <a name="creating-the-mqseries-queues-through-the-websphere-mq-explorer"></a>创建通过 WebSphere MQ Explorer MQSeries 队列  
   
-#### <a name="to-create-the-mqseries-queues-through-the-websphere-mq-explorer"></a>若要创建 MQSeries 队列通过 WebSphere MQ 资源管理器  
+#### <a name="to-create-the-mqseries-queues-through-the-websphere-mq-explorer"></a>通过 WebSphere MQ Explorer 创建 MQSeries 队列  
   
-1.  单击**启动**，指向**所有程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ 资源管理器**。  
+1.  单击**启动**，依次指向**所有程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ Explorer**。  
   
-2.  双击**队列管理器**，然后双击**默认队列管理器**。 默认的队列管理器通常命名为的 QM_ < machine_name > machine_name 所在计算机的名称。  
+2.  双击**队列管理器**，然后双击**默认队列管理器**。 默认的队列管理器通常命名为的 QM_ < m a c h > 其中是您的计算机的名称。  
   
-3.  右键单击**队列**，指向**新建**，然后单击**本地队列**。  
+3.  右键单击**队列**，依次指向**新建**，然后单击**本地队列**。  
   
-4.  在**创建本地队列**对话框中，在**队列名称**，类型 **"queue1"**，然后单击**确定**。  
+4.  在中**创建本地队列**对话框中**队列名称**，类型 **"queue1"**，然后单击**确定**。  
   
 5.  右键单击**队列**，单击**新建**，然后单击**本地队列**。  
   
-6.  在**创建本地队列**对话框中，在**队列名称**，类型 **"queue2"**，然后单击**确定**。  
+6.  在中**创建本地队列**对话框中**队列名称**，类型 **"queue2"**，然后单击**确定**。  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a>创建接收位置和 MQSeries 队列  
  此过程将创建发送端口和接收位置，以便向 MQSeries 发送消息以及接收来自 MQSeries 的相关消息。 创建接收位置时，还将创建 MQSeries 队列（如果尚未创建）。  
   
-#### <a name="to-create-the-receive-location-and-the-mqseries-queue"></a>若要创建接收位置和 MQSeries 队列  
+#### <a name="to-create-the-receive-location-and-the-mqseries-queue"></a>创建接收位置和 MQSeries 队列  
   
 1.  打开 BizTalk Server 管理控制台。  
   
 2.  展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，然后展开所需的应用程序。  
   
-3.  右键单击**接收端口**，指向**新建**，然后单击**单向接收端口**。  
+3.  右键单击**接收端口**，依次指向**新建**，然后单击**单向接收端口**。  
   
-4.  在**单向接收端口属性**对话框框中，键入，在**名称**框中，键入**OrderedSampleReceive**单击**确定**。  
+4.  在中**单向接收端口属性**对话框框中，键入，在**名称**框中，键入**OrderedSampleReceive**然后单击**确定**。  
   
-5.  在左窗格中，单击**接收位置**选项卡上，并依次**新建**。  
+5.  在左窗格中，单击**接收位置**选项卡，然后依次**新建**。  
   
-6.  在**接收位置属性**对话框中，在**名称**框中，键入"**OrderedSampleReceiveLocation**"。  
+6.  在中**接收位置属性**对话框中**名称**框中，键入"**OrderedSampleReceiveLocation**"。  
   
-7.  在**传输类型**框中，选择**MQSeries**。  
+7.  在中**传输类型**框中，选择**MQSeries**。  
   
-8.  在**接收处理程序**框中，选择**BizTalkServerApplication**。  
+8.  在中**接收处理程序**框中，选择**BizTalkServerApplication**。  
   
-9. 在**接收管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**。  
+9. 在中**接收管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**。  
   
 10. 单击**配置**。  
   
-11. 在**MQSeries 传输属性**对话框中，在**轮询间隔**框中，键入 **"10"**。  
+11. 在中**MQSeries 传输属性**对话框中**轮询间隔**框中，键入 **"10"**。  
   
-12. 在**队列定义**框中，单击**省略号 （...）** 按钮。  
+12. 在中**队列定义**框中，单击**省略号 （...）** 按钮。  
   
-13. 在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。  
+13. 在中**队列定义**对话框中**服务器名称**框中，键入您的计算机名称。  
   
-14. 在**队列管理器**框中，选择**默认队列管理器**。  
+14. 在中**队列管理器**框中，选择**默认队列管理器**。  
   
-15. 在**队列**框中，键入" **queue1**"，然后单击**导出**。  
+15. 在中**队列**框中，键入" **queue1**"，然后单击**导出**。  
   
-16. 在**导出**对话框中，单击**创建队列**，然后单击**确定**或**完成**之前已退出所有对话框。  
+16. 在中**导出**对话框中，单击**Create Queue**，然后单击**确定**或**完成**直到您退出所有对话框为止。  
   
 ## <a name="creating-the-send-port-and-mqseries-queue"></a>创建发送端口和 MQSeries 队列  
   
 #### <a name="to-create-the-send-port-and-mqseries-queue"></a>若要创建的发送端口和 MQSeries 队列  
   
-1.  右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
+1.  右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
   
-2.  在**静态端口属性**对话框框中，键入，在**名称**框中，键入"**OrderedSampleSend**"。  
+2.  在中**静态端口属性**对话框框中，键入，在**名称**框中，键入"**OrderedSampleSend**"。  
   
-3.  在**传输类型**框中，选择**MQSeries**。  
+3.  在中**传输类型**框中，选择**MQSeries**。  
   
-4.  在**发送管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。  
+4.  在中**发送管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。  
   
 5.  单击**配置**。  
   
-6.  在**MQSeries 传输属性**对话框中，在**队列定义**框中，单击**省略号 （...）** 按钮。  
+6.  在中**MQSeries 传输属性**对话框中**队列定义**框中，单击**省略号 （...）** 按钮。  
   
-7.  在**队列定义**对话框中，在**服务器名称**框中，键入你的计算机名。  
+7.  在中**队列定义**对话框中**服务器名称**框中，键入您的计算机名称。  
   
-8.  在**队列管理器**框中，选择**默认队列管理器**。  
+8.  在中**队列管理器**框中，选择**默认队列管理器**。  
   
-9. 在**队列**框中，键入" **queue2**"，然后单击**导出**。  
+9. 在中**队列**框中，键入" **queue2**"，然后单击**导出**。  
   
-10. 在**导出**对话框中，单击**创建队列**，然后单击**确定**或**完成**之前已退出所有对话框。  
+10. 在中**导出**对话框中，单击**Create Queue**，然后单击**确定**或**完成**直到您退出所有对话框为止。  
   
-#### <a name="to-enable-the-receive-location-and-start-the-send-port"></a>若要启用接收位置和启动发送端口  
+#### <a name="to-enable-the-receive-location-and-start-the-send-port"></a>若要启用接收位置并启动发送端口  
   
 1.  在 BizTalk Server 管理控制台中，单击**接收端口**。  
   
 2.  在细节窗格中，右键单击**MQIn**接收位置，然后单击**启用**。  
   
-3.  在细节窗格中，右键单击**MQOut**发送端口和单击**启动。**  
+3.  在细节窗格中，右键单击**MQOut**发送端口并单击**开始。**  
   
-#### <a name="to-bind-and-start-the-orchestration"></a>若要将绑定和启动业务流程  
+#### <a name="to-bind-and-start-the-orchestration"></a>绑定和启动业务流程  
   
 1.  在 BizTalk Server 管理控制台中，展开**业务流程**文件夹。  
   
-2.  双击**OrderedSampleOrchestration**业务流程，，然后单击**绑定**。  
+2.  双击**OrderedSampleOrchestration**业务流程，并单击**绑定**。  
   
 3.  将业务流程端口绑定到下列发送端口和接收位置：  
   
@@ -164,9 +164,9 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 4.  单击**主机**。  
   
-5.  在**主机**框中，选择**BizTalkServerApplication**，然后单击**确定**。  
+5.  在中**主机**框中，选择**BizTalkServerApplication**，然后单击**确定**。  
   
-6.  右键单击**Orchestration**单击**启动**。  
+6.  右键单击**业务流程**然后单击**启动**。  
   
 #### <a name="to-run-the-sample"></a>运行示例  
   
@@ -176,5 +176,5 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 3.  在 WebSphere MQ Explorer 中查看发送队列中的消息，已将发送端口配置为向此队列发送消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MQSeries 适配器示例](../core/mqseries-adapter-samples.md)

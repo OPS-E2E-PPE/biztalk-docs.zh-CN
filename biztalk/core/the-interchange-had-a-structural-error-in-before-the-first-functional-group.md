@@ -1,5 +1,5 @@
 ---
-title: 交换中有一种结构错误的第一个功能组之前 |Microsoft 文档
+title: 交换发生了结构错误的第一个功能组之前 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d5ab490de214f53e85ea32c1b243456f837c72e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04150fc8db853719517c26e7ae91a904e7096fb5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278653"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996654"
 ---
-# <a name="the-interchange-had-a-structural-error-in-before-the-first-functional-group"></a>交换中有一种结构错误的第一个功能组之前
+# <a name="the-interchange-had-a-structural-error-in-before-the-first-functional-group"></a>交换发生了结构错误的第一个功能组之前
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12InterchangeStructuralErrorBefore1stGroup|  
-|消息正文|Id 为"{0}"，发件人 id {1} 交换，接收方 id {2} 在中之前第一个功能组的结构化错误|  
+|                 |                                                                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                        |
+| 产品版本 |                                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                    |
+|    事件 ID     |                                                                -                                                                 |
+|  事件源   |                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                      |
+|    组件    |                                                            EDI 引擎                                                            |
+|  符号名称  |                                           X12InterchangeStructuralErrorBefore1stGroup                                            |
+|  消息正文   | 交换 id 为 '{0}，发送方 id{1}，接收方 id{2}第一个功能组中/之前有结构错误 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明由于以下原因之一，导致接收管道无法处理传入的交换：  

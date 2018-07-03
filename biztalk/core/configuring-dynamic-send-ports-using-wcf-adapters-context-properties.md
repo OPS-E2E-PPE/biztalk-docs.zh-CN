@@ -1,5 +1,5 @@
 ---
-title: 配置动态发送端口使用 WCF 适配器上下文属性 |Microsoft 文档
+title: 配置动态发送端口使用 WCF 适配器上下文属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bca34afa85c8764215f47d1272c115354889fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca781dc1d101e3eef0976229b3d1b986c2f4498d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233349"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995270"
 ---
 # <a name="configuring-dynamic-send-ports-using-wcf-adapters-context-properties"></a>配置动态发送端口使用 WCF 适配器上下文属性
-可以为 WCF 适配器配置动态发送端口。 URI、 操作和绑定可能会确定传入消息时，属性，然后中指定**表达式**形状，如以下 WCF NetTcp 适配器中所示：  
+可以为 WCF 适配器配置动态发送端口。 URI、 操作和绑定可能会确定传入消息上的属性，然后中指定**表达式**形状，如以下 Wcf-nettcp 适配器中所示：  
   
 ```  
 MessageOut=MessageIn;  
@@ -49,36 +49,36 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
  指定 WCF 上下文属性的注意事项如下：  
   
--   有些地址可以映射到多个适配器。 例如，以 http:// 或 https:// 开头的地址可以由 HTTP 适配器处理，也可以由 WCF-BasicHttp、WCF-WsHttp 或 WCF-Custom 适配器处理。 再例如，在上述两个示例代码中，它们都使用了以 net.tcp:// 开头的地址，不过由于第二个示例代码使用了自定义绑定，因而应使用 WCF-Custom 适配器处理该地址。 因此，若要标识正确的适配器，你必须配置可选**Microsoft.XLANGs.BaseTypes.TransportType**字段**表达式**与你想要使用的适配器的形状。  
+- 有些地址可以映射到多个适配器。 例如，以 http:// 或 https:// 开头的地址可以由 HTTP 适配器处理，也可以由 WCF-BasicHttp、WCF-WsHttp 或 WCF-Custom 适配器处理。 再例如，在上述两个示例代码中，它们都使用了以 net.tcp:// 开头的地址，不过由于第二个示例代码使用了自定义绑定，因而应使用 WCF-Custom 适配器处理该地址。 因此，若要标识正确的适配器，您必须配置可选**Microsoft.XLANGs.BaseTypes.TransportType**字段中**表达式**形状与你想要使用的适配器。  
   
-    > [!NOTE]
-    >  如果地址以 http:// 或 https:// 开头，并且未指定**Microsoft.XLANGs.BaseTypes.TransportType**字段中，默认情况下，BizTalk 引擎将使用 HTTP 适配器。  
+  > [!NOTE]
+  >  如果地址以 http:// 或 https:// 开头，并且如果未指定**Microsoft.XLANGs.BaseTypes.TransportType**字段中，默认情况下，BizTalk 引擎将使用 HTTP 适配器。  
   
--   **WCF。BindingType**按名称标识的绑定。 该参数可以是下列值之一：  
+- **WCF。BindingType**按名称标识的绑定。 该参数可以是下列值之一：  
   
-    -   basicHttpBinding  
+  - basicHttpBinding  
   
-    -   customBinding  
+  - customBinding  
   
-    -   netMsmqBinding  
+  - netMsmqBinding  
   
-    -   netNamedPipeBinding  
+  - netNamedPipeBinding  
   
-    -   netTcpBinding  
+  - netTcpBinding  
   
-    -   wsFederationHttpBinding  
+  - wsFederationHttpBinding  
   
-    -   wsHttpBinding  
+  - wsHttpBinding  
   
-     上述列表可以扩展。 例如，您可以向其中自行添加绑定，如 FtpBinding。  
+    上述列表可以扩展。 例如，您可以向其中自行添加绑定，如 FtpBinding。  
   
--   **WCF。BindingConfiguration**指定的绑定配置的绑定类型。 它会获取在计算机配置文件中注册的所有绑定。 它还会以 WCF 配置文件的绑定配置中所用的相同格式获取 XML 配置。  
+- **WCF。BindingConfiguration**指定绑定类型的绑定配置。 它会获取在计算机配置文件中注册的所有绑定。 它还会以 WCF 配置文件的绑定配置中所用的相同格式获取 XML 配置。  
   
--   您可能需要指定其他 WCF 属性。 你可以键入**WCF**在表达式编辑器中和 IntelliSense 功能应列出所有可用的上下文属性。 有关 WCF 上下文属性的详细信息，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。  
+- 您可能需要指定其他 WCF 属性。 您可以键入**WCF**在表达式编辑器和 IntelliSense 功能将列出所有可用的上下文属性。 有关 WCF 上下文属性的详细信息，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。  
   
- 前面的示例显示如何配置**WCF。操作**通过一个操作。 对于具有多个操作映射的情况，WCF 适配器不支持将多个操作映射与动态发送端口一起使用。 你仅可以在设置的实际操作**WCF。操作**作为在上面显示的上下文属性。  
+  前面的示例演示如何配置**WCF。操作**通过一个操作。 对于具有多个操作映射的情况，WCF 适配器不支持将多个操作映射与动态发送端口一起使用。 您可以在中设置实际操作**WCF。操作**为在上面显示的上下文属性。  
   
-## <a name="see-also"></a>另请参阅  
- [指定的 SOAP 操作，wcf 发送适配器](../core/specifying-soap-actions-for-wcf-send-adapters.md)   
- [如何使用表达式将值分配到动态端口](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)   
+## <a name="see-also"></a>请参阅  
+ [指定 SOAP 操作，为 WCF 发送适配器](../core/specifying-soap-actions-for-wcf-send-adapters.md)   
+ [如何使用表达式向动态端口赋值](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)   
  [端口绑定](../core/port-bindings.md)

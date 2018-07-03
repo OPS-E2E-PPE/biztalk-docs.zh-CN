@@ -1,5 +1,5 @@
 ---
-title: BizTalk Accelerator for RosettaNet 的工作原理 |Microsoft 文档
+title: BizTalk Accelerator for RosettaNet 的工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba18d702d0324443313c6a8fc756693085815637
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a4932b276250bb9b43b45b7957fb2a8dfc597e92
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209397"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981998"
 ---
 # <a name="how-biztalk-accelerator-for-rosettanet-works"></a>BizTalk Accelerator for RosettaNet 的工作原理
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供通过基于构建高科技生产解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它通过提供为 RosettaNet 实现框架 (RNIF) 和合作伙伴接口进程 (Pip) 的支持和添加自定义的消息处理到高科技生产应用程序的组件来执行此操作。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]基于 Microsoft 提供了高科技制造业解决方案[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它会通过提供支持 RosettaNet 实现框架 (RNIF) 和合作伙伴接口流程 (Pip)，并添加自定义的消息处理对高科技制造业应用程序的组件。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [BTARN 中的消息流](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)  
   
--   [消息处理在 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+-   [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

@@ -1,5 +1,5 @@
 ---
-title: 了解 BizTalk 适配器的 Siebel eBusiness Applications |Microsoft 文档
+title: 了解用于 Siebel eBusiness 应用程序的 BizTalk 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,35 +17,35 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c3576df5f62a0350f85d79b603c9f1cbda8a60
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 788db9ba048141256cfaa3cc5017fa48bd6ec7de
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962611"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999230"
 ---
-# <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a>为 Siebel eBusiness 应用程序了解的 BizTalk Adapter
-[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  
+# <a name="understand-biztalk-adapter-for-siebel-ebusiness-applications"></a>了解用于 Siebel eBusiness 应用程序的 BizTalk 适配器
+[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统进行交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  
   
--   **一致的设计时体验**。 适配器提供用于浏览、 搜索和检索元数据的 LOB 项目的常见和用户友好的设计时体验。  
+- **一致的设计时体验**。 适配器提供用于浏览、 搜索和检索元数据的 LOB 项目的常见和用户友好的设计时体验。  
   
--   **各种编程选项**。 适配器均提供一种编程模型，包括 Windows Communication Foundation (WCF) 通道模型，WCF 服务模型中，ADO.NET 中，Web 服务，或 BizTalk 支持模型。  
+- **不同的编程选项**。 适配器提供了一种编程模型包括 Windows Communication Foundation (WCF) 通道模型，WCF 服务模型中，ADO.NET 中，Web 服务或 BizTalk 支持的模型。  
   
--   **跨 Lob 的统一体验**。 适配器上使用的是 WCF 标准化和[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]，并因此提供获得对任何 LOB 系统的访问的统一体验。  
+- **跨 Lob 的统一体验**。 使用 WCF 适配器标准化和[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]并因此提供获取访问权的任何 LOB 系统的统一的体验。  
   
- 如前文所述，适配器均构建在之上[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]为生成各种如 BizTalk Server 和 Microsoft Office 的客户端应用程序可以使用的集成适配器提供了常见的基础。 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]通过公开集成适配器作为 Windows Communication Foundation (WCF) 通道结合适配器策略与 Microsoft 服务策略。 有关详细信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，请参阅[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]文档。 文档安装连同[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，通常在\<安装驱动器\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents。  
+  如前文所述，基于 WCF LOB 适配器 SDK 构建适配器。 WCF LOB 适配器 SDK 提供用于生成各种 BizTalk Server 和 Microsoft Office 等客户端应用程序可以使用的集成适配器公共基础。 WCF LOB 适配器 SDK 通过公开集成适配器作为 Windows Communication Foundation (WCF) 通道对齐适配器策略与 Microsoft 服务策略。 有关 WCF LOB 适配器 SDK 的详细信息，请参阅[WCF LOB 适配器 SDK 文档](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)。
   
- 若要执行 Siebel 系统的操作，适配器客户端必须有权公开的 Siebel 系统的业务服务。 Siebel 应用程序将数据公开为业务组件和业务对象。 Siebel*在业务组件*是将一个或多个表中的列到单个结构相关联的逻辑实体。 Siebel*业务对象*通过将在一起的一组相关的业务组件中实现的业务模型。 与[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]，适配器客户端可以外围 Siebel 业务对象和业务组件。  
+  若要执行 Siebel 系统的操作，适配器客户端必须具有对业务服务公开的 Siebel 系统的访问。 Siebel 应用程序公开数据作为业务组件和业务对象。 Siebel*业务组件*是将一个或多个表中的列的单个结构相关联的逻辑实体。 Siebel*业务对象*通过将在一起的一组相互关联的业务组件中实现的业务模型。 使用[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]，Siebel 业务对象和业务组件，可能会出现适配器客户端。  
   
- [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]还包括[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] Siebel 系统为 ADO 接口提供通过扩展 ADO.NET 接口。  
+  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]还包括[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]通过扩展 ADO.NET 接口提供到 Siebel 系统的 ADO 接口。  
   
- 本部分讨论的功能[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]。  
+  本部分讨论的功能[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [用于 Siebel eBusiness 应用程序的 BizTalk 适配器概述](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
   
--   [Siebel 适配器中的主要功能](../../adapters-and-accelerators/adapter-siebel/key-features-in-the-siebel-adapter.md) 
+-   [Siebel 适配器的主要功能](../../adapters-and-accelerators/adapter-siebel/key-features-in-the-siebel-adapter.md) 
   
 -   [用于 Siebel eBusiness 应用程序的 BizTalk 适配器的限制](../../adapters-and-accelerators/adapter-siebel/limitations-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
   

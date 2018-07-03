@@ -1,5 +1,5 @@
 ---
-title: 管理 BizTalk Server2 |Microsoft 文档
+title: 管理 BizTalk Server2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 154b7d62af79f557f01064235744b2b56ba0fe3a
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 08f74b441ca42b1a0854cd5aff098c221281e579
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008598"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988510"
 ---
 # <a name="managing-biztalk-server"></a>管理 BizTalk Server
-本部分提供用于管理在生产环境中的 BizTalk Server 系统的指南。 通常遵循的步骤假定你正在使用 BizTalk 应用程序部署后。 这些过程描述了最佳实践和进行例行操作包括以下概念：  
+本部分提供用于管理 BizTalk Server 系统在生产环境中的指导。 通常遵循的步骤假定你正在使用的 BizTalk 应用程序部署后。 这些过程介绍最佳实践和概念进行例行操作包括以下：  
   
--   清单和部署到生产环境的 BizTalk 应用程序的过程。  
+- 清单和部署到生产环境的 BizTalk 应用程序的过程。  
   
--   清单和部署后的 BizTalk 应用程序更新到生产环境的过程。  
+- 检查表和更新 BizTalk 应用程序后部署到生产环境中的过程。  
   
--   若要安装的过程配置和管理数字加密证书。  
+- 若要安装，过程配置和管理数字加密证书。  
   
--   将移动过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到另一个数据库的 SQL Server 实例。  
+- 将移动过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从一个 SQL Server 实例到另一个数据库。  
   
 ## <a name="in-this-section"></a>本节内容  
   

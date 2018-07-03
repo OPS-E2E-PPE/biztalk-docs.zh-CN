@@ -1,5 +1,5 @@
 ---
-title: 方案 3： 调整跟踪数据库大小的消息发送到通讯组列表扩展 |Microsoft 文档
+title: 方案 3： 调整跟踪数据库的大小的消息发送到通讯组列表扩展 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,41 +14,41 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dca1722e24e0c76c85699ea00fcf6ffc120b2e14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb9a5992865ffbf09a493a480ecbcb61e9c0f034
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271101"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996214"
 ---
 # <a name="scenario-3-sizing-the-tracking-database--for-messages-sent-out-to-distribution-lists"></a>方案 3：对发送到分发列表的消息调整跟踪数据库的大小
 下图中的消息将通过业务流程、在业务流程内被更改，然后通过分发列表向外发送给多个不同的发送端口：  
   
- ![通过多个端口的业务流程的消息](../core/media/biztalk-server-message-orch-multiple-ports.gif "BizTalk_Server_message_orch_multiple_ports")  
+ ![通过业务流程到多个端口的消息](../core/media/biztalk-server-message-orch-multiple-ports.gif "BizTalk_Server_message_orch_multiple_ports")  
   
- **通过业务流程将继续且 BizTalk Server 消息发送到多个不同的端口**  
+ **通过业务流程和发送到多个不同端口的 BizTalk Server 消息**  
   
  以下为有关此方案的一些实际信息：  
   
--   消息大小为 10k。  
+- 消息大小为 10k。  
   
--   当前不升级任何属性。  
+- 当前不升级任何属性。  
   
--   一年中接收的消息数是 350 万个。  
+- 一年中接收的消息数为 350 万条。  
   
--   已打开对所有事件的跟踪。 此方案包含以下五个事件：  
+- 已打开对所有事件的跟踪。 此方案包含以下五个事件：  
   
-    -   收到消息 M0  
+  -   接收消息 M0  
   
-    -   接收端口从消息 M1 的输出  
+  -   输出消息 M1 从接收端口  
   
-    -   通过发送端口输出消息 M3  
+  -   通过发送端口输出消息 M3  
   
-    -   通过发送端口输出消息 M4  
+  -   通过发送端口输出消息 M4  
   
-    -   通过发送端口输出消息 M5  
+  -   通过发送端口输出消息 M5  
   
- 将这些信息应用到公式中之后结果如下：  
+  将这些信息应用到公式中之后结果如下：  
   
 ```  
 [(5*252 bytes) + (10*182 bytes) + (0*5(40 bytes + 0) * 3,500,000]/1024/1024  
@@ -78,9 +78,9 @@ ms.locfileid: "22271101"
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用消息变量来调整跟踪数据库的大小](../core/using-message-variables-to-size-the-tracking-database.md)   
- [大小调整跟踪数据库来跟踪消息正文](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
- [方案 1： 调整跟踪数据库的简单 BizTalk 消息](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
- [方案 2： 调整跟踪数据库的业务流程中的消息](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [方案 4： 调整跟踪数据库的所有消息](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)
+## <a name="see-also"></a>请参阅  
+ [使用消息变量调整跟踪数据库的大小](../core/using-message-variables-to-size-the-tracking-database.md)   
+ [调整跟踪数据库来跟踪消息正文大小](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
+ [方案 1： 调整简单 BizTalk 消息的大小跟踪数据库](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
+ [方案 2： 业务流程中消息调整跟踪数据库](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
+ [方案 4：为所有消息调整跟踪数据库的大小](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)

@@ -1,5 +1,5 @@
 ---
-title: 无效的控制编号值 |Microsoft 文档
+title: 控制编号值无效 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ce9df9724d85a3b4a2d6ebf28f94e4b9c05db05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09b274170505bf1b010d61fbefe9d43a51528aac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257221"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37019835"
 ---
 # <a name="invalid-control-number-value"></a>控制编号值无效
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12Ta1InvalidControlNumberValueDescription|  
-|消息正文|控制编号值无效|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                       X12Ta1InvalidControlNumberValueDescription                       |
+|  消息正文   |                              控制编号值无效                              |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的交换，因为交换中控制编号的值（交换、组或事务集）不符合架构指定的数据类型或者没有架构指定的正确位数。 在 BaseArtifacts.dll 中，架构为 X12ServiceSchema 或 EdifactServiceSchema。  

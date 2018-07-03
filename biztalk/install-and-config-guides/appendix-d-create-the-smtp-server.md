@@ -1,5 +1,5 @@
 ---
-title: 附录 d： 创建 SMTP 服务器 |Microsoft 文档
+title: 附录 d： 创建 SMTP 服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f4d4acc35f5cb38be5f783ee7c4017c8ada83e2
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: b6c773935a52e58a4bc04b3f963d83d988bf78d8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22300133"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007078"
 ---
 # <a name="appendix-d-create-the-smtp-server"></a>附录 D：创建 SMTP 服务器
 创建供 SQL Server Database Mail 使用的 SMTP 服务器。  
@@ -28,7 +28,7 @@ ms.locfileid: "22300133"
 * [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)]
 * [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] 
   
- SQL Server 数据库邮件使用 SMTP 服务器发送 BAM 警报。 SMTP 服务器随 Internet 信息服务 (IIS) 一起提供。 SMTP 可以本地安装在 BizTalk Server 上，也可以安装在其他已安装 IIS 的服务器上。  
+  SQL Server 数据库邮件使用 SMTP 服务器发送 BAM 警报。 SMTP 服务器随 Internet 信息服务 (IIS) 一起提供。 SMTP 可以本地安装在 BizTalk Server 上，也可以安装在其他已安装 IIS 的服务器上。  
   
 > [!IMPORTANT]
 >  通常情况下，类似 Windows 10、Windows 7 等的客户端操作系统不包括 SMTP 服务器功能。 可使用 IIS 中的 *SMTP 电子邮件*功能，连接到 Windows Server 上的现有 SMTP 服务器。 *SMTP 电子邮件*功能不是 SMTP 服务器，但 SQL Server 数据库邮件需要 SMTP 服务器。 因此，本主题不包括在客户端操作系统上安装和配置 SMTP 服务器的步骤。  
@@ -152,47 +152,47 @@ ms.locfileid: "22300133"
   
   
 ## <a name="test-the-smtp-server"></a>测试 SMTP 服务器  
- 可以使用 Telnet 测试 SMTP 服务器的配置。 以下步骤使用配置的 SMTP 服务器将消息发送到电子邮件地址。 [http://support.microsoft.com/kb/153119](http://support.microsoft.com/kb/153119) 提供的 telnet 命令的说明。  
+ 可以使用 Telnet 测试 SMTP 服务器的配置。 以下步骤使用配置的 SMTP 服务器将消息发送到电子邮件地址。 [http://support.microsoft.com/kb/153119](http://support.microsoft.com/kb/153119) 提供了 telnet 命令的说明。  
   
-1.  以管理员身份打开命令窗口。
+1. 以管理员身份打开命令窗口。
   
-2.  在命令提示符下，输入：  
+2. 在命令提示符下，输入：  
   
-     `telnet localhost 25`  
+    `telnet localhost 25`  
   
-     如果没有安装 telnet，则输入以下内容进行安装：  
+    如果没有安装 telnet，则输入以下内容进行安装：  
   
-     `pkgmgr /iu:"TelnetClient"`  
+    `pkgmgr /iu:"TelnetClient"`  
   
-3.  输入以下内容启动通信：  
+3. 输入以下内容启动通信：  
   
-     `EHLO server`  
+    `EHLO server`  
   
-4.  输入“发件人”地址：  
+4. 输入“发件人”地址：  
   
-     `MAIL FROM: *YourEmailAddress*@*YourProvider*.com`  
+    `MAIL FROM: *YourEmailAddress*@*YourProvider*.com`  
   
-     例如，输入：  
+    例如，输入：  
   
-     `MAIL FROM: EmailAddress@outlook.com`  
+    `MAIL FROM: EmailAddress@outlook.com`  
   
-5.  输入“收件人”地址：  
+5. 输入“收件人”地址：  
   
-     `RCPT TO: *YourEmailAddress*@*YourProvider*.com`  
+    `RCPT TO: *YourEmailAddress*@*YourProvider*.com`  
   
-     例如，输入：  
+    例如，输入：  
   
-     `RCPT TO: EmailAddress@outlook.com`  
+    `RCPT TO: EmailAddress@outlook.com`  
   
-6.  输入以下内容，以告知 SMTP 服务器您已准备好发送数据：  
+6. 输入以下内容，以告知 SMTP 服务器您已准备好发送数据：  
   
-     `DATA`  
+    `DATA`  
   
-7.  输入以下内容，以输入“主题”：  
+7. 输入以下内容，以输入“主题”：  
   
-     `Subject: Test Message`  
+    `Subject: Test Message`  
   
-8.  按 Enter 两次。  
+8. 按 Enter 两次。  
   
 9. 输入以下内容，以输入邮件正文：  
   
@@ -200,5 +200,5 @@ ms.locfileid: "22300133"
   
 10. 按 Enter，输入句点 (.)，再按 Enter。  
   
- 检查电子邮件的 RCPT TO 地址。 如果电子邮件未送达（检查“收件箱”和“垃圾邮件”文件夹），则表示邮件发送失败，可能仍驻留在 SMTP 队列文件夹中 (C:\inetpub\mailroot\Queue)。  
+    检查电子邮件的 RCPT TO 地址。 如果电子邮件未送达（检查“收件箱”和“垃圾邮件”文件夹），则表示邮件发送失败，可能仍驻留在 SMTP 队列文件夹中 (C:\inetpub\mailroot\Queue)。  
   

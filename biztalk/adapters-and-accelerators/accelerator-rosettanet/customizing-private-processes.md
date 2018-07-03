@@ -1,5 +1,5 @@
 ---
-title: 自定义私有进程 |Microsoft 文档
+title: 自定义专用流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 767c04a262c32305ae8b26162661c7869b58e970
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa1437d1dbe154f553323077b1c29127c58abdf4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009526"
 ---
-# <a name="customizing-private-processes"></a>自定义私有进程
-本部分介绍如何自定义处理服务的内容的私有进程业务流程。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]实现都是作为私有进程组织内部的业务流程。 这些流程是处理服务内容消息部分的业务流程。 有关详细信息，请参阅[私有进程](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)。  
+# <a name="customizing-private-processes"></a>自定义专用流程
+本部分介绍如何自定义处理服务内容的专用流程业务流程。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]业务流程作为专用流程将组织内部的实现。 这些流程是处理服务内容消息部分的业务流程。 有关详细信息，请参阅[专用流程](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [自定义以使用特定 PIP 私有过程](../../adapters-and-accelerators/accelerator-rosettanet/customizing-a-private-process-to-work-with-a-specific-pip.md)  
+-   [自定义处理特定 PIP 的专用流程](../../adapters-and-accelerators/accelerator-rosettanet/customizing-a-private-process-to-work-with-a-specific-pip.md)  
   
--   [将请求映射到专用过程中响应](../../adapters-and-accelerators/accelerator-rosettanet/mapping-a-request-to-a-response-in-a-private-process.md)  
+-   [在专用流程中将请求映射为响应](../../adapters-and-accelerators/accelerator-rosettanet/mapping-a-request-to-a-response-in-a-private-process.md)  
   
--   [为私有进程业务流程中定义的业务规则](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)
+-   [定义专用业务流程的业务规则](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)

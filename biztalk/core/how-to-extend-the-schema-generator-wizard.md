@@ -1,5 +1,5 @@
 ---
-title: 如何扩展架构生成器向导 |Microsoft 文档
+title: 如何扩展架构生成器向导 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,54 +15,54 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 11db44e07191b0996043dd6b819ef2ba9162a0e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6fb901186dddf69a94fca4467b543f047c27719
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254013"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013806"
 ---
 # <a name="how-to-extend-the-schema-generator-wizard"></a>如何扩展架构生成器向导
-如何扩展现有的架构生成器向导以及如何为架构生成创建新的向导。  
+如何扩展现有架构生成器向导以及如何为架构生成创建一个新的向导。  
   
-## <a name="extend-the-existing-schema-wizard"></a>扩展现有的架构向导  
+## <a name="extend-the-existing-schema-wizard"></a>扩展现有架构向导  
   
-1.  实现 ISchemaGenerator 接口，以创建可以集成到现有架构生成器向导中的新架构生成器模块。  
+1. 实现 ISchemaGenerator 接口，以创建可以集成到现有架构生成器向导中的新架构生成器模块。  
   
-    ```  
-    public interface ISchemaGenerator  
-    {  
-    //Method to extract a schema from a document.  
-    void GenerateSchema(string inputDocument,string outputDocumentPath);  
+   ```  
+   public interface ISchemaGenerator  
+   {  
+   //Method to extract a schema from a document.  
+   void GenerateSchema(string inputDocument,string outputDocumentPath);  
   
-    //Method to extract the errors.  
-    [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] Errors();  
+   //Method to extract the errors.  
+   [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] Errors();  
   
-    //Method to extract the warnings.  
-    [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] Warnings();  
+   //Method to extract the warnings.  
+   [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] Warnings();  
   
-    //Method to extract the referenced schemas.  
-    [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] ReferencedSchemas();  
-    }  
-    ```  
+   //Method to extract the referenced schemas.  
+   [return : MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_VARIANT )]object [] ReferencedSchemas();  
+   }  
+   ```  
   
-2.  将生成的程序集放入以下 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装文件夹中：  
+2. 将生成的程序集放入以下 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装文件夹中：  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展  
   
-     下次运行架构生成器向导时，此向导将自动加载新的架构生成器模块。  
+    下次运行架构生成器向导时，此向导将自动加载新的架构生成器模块。  
   
- 可使用以下过程创建新架构向导。  
+   可使用以下过程创建新架构向导。  
   
- **SDK 中的位置**  
+   **在 SDK 中的位置**  
   
- [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema 生成器  
+   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema generator  
   
-### <a name="create-a-new-schema-wizard"></a>创建新的架构向导  
+### <a name="create-a-new-schema-wizard"></a>创建新架构向导  
   
-1.  运行 InstallDTD.vbs 安装到 Microsoft.BizTalk.DTDToXSDGenerator.dll [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展。 DTDToXSDGenerator.dll 公开了可用于将 DTD 文件转换为 XSD 的类。  
+1. 运行 InstallDTD.vbs 以将 Microsoft.BizTalk.DTDToXSDGenerator.dll 安装到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展。 DTDToXSDGenerator.dll 公开了可用于将 DTD 文件转换为 XSD 的类。  
   
-2.  运行 InstallWFX.vbs 安装到 Microsoft.BizTalk.WFXToXSDGenerator.dll [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展。 WFXToXSDGenerator.dll 公开了可用于将 WFX 文件转换为 XSD 的类。  
+2. 运行 InstallWFX.vbs 以将 Microsoft.BizTalk.WFXToXSDGenerator.dll 安装到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展。 WFXToXSDGenerator.dll 公开了可用于将 WFX 文件转换为 XSD 的类。  
   
-## <a name="see-also"></a>另请参阅  
- [SDK 中的实用程序](../core/utilities-in-the-sdk.md)
+## <a name="see-also"></a>请参阅  
+ [SDK 中的实用工具](../core/utilities-in-the-sdk.md)

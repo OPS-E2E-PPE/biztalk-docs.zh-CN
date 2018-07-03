@@ -1,5 +1,5 @@
 ---
-title: 如何显示的 SSO 数据库信息 |Microsoft 文档
+title: 如何显示 SSO 数据库信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e834874cb87da598db0bc92e516b58dfe2da9069
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 8371ccae36fe66051178da5baa55360e9fcf8406
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969323"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010014"
 ---
-# <a name="how-to-display-the-sso-database-information"></a>如何显示的 SSO 数据库信息
+# <a name="how-to-display-the-sso-database-information"></a>如何显示 SSO 数据库信息
 可以使用 MMC 管理单元或命令行 (ssomanage) 实用工具来查看 SSO 数据库信息。  
   
 ### <a name="to-display-the-sso-database-information-using-the-mmc-snap-in"></a>使用 MMC 管理单元显示 SSO 数据库信息  
@@ -34,33 +34,33 @@ ms.locfileid: "25969323"
   
 3.  右键单击“系统” ，然后单击“属性” 。  
   
-4.  单击选项卡**系统属性**对话框中，若要查看 SSO 数据库信息。  
+4.  单击选项卡**系统属性**对话框可以查看 SSO 数据库信息。  
   
 ### <a name="to-display-the-sso-database-information-using-the-command-line"></a>使用命令行显示 SSO 数据库信息  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录**\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssomanage-displaydb**。  
+3.  类型**ssomanage – displaydb**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-display-the-sso-database-the-sso-server-is-connected-to-using-the-command-line"></a>使用命令行显示 SSO 服务器连接到的 SSO 数据库  
   
-1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
+1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
+2. 在命令行提示符下，转至企业单一登录安装目录。 默认安装目录**\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssomanage-showdb**。  
+3. 类型**ssomanage – showdb**。  
   
-    > [!NOTE]
-    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
+   > [!NOTE]
+   >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
- 下表对这些过程中显示的值进行了说明：  
+   下表对这些过程中显示的值进行了说明：  
   
-|属性|值|  
+|“属性”|ReplTest1|  
 |--------------|-----------|  
 |SQL Server|**\<SQL Server 名称\>**|  
 |单一登录数据库|**\<SQL Server 数据库名称\>**|  
@@ -76,6 +76,6 @@ ms.locfileid: "25969323"
 |允许使用票证|是/否（默认）|  
 |验证票证|是（默认）/否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何配置 SSO 票证](../core/how-to-configure-the-sso-tickets.md)   
  [使用 SSO](../core/using-sso.md)

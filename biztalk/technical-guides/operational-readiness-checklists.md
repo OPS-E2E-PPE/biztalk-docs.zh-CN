@@ -1,5 +1,5 @@
 ---
-title: 操作的准备工作核对清单 |Microsoft 文档
+title: 操作准备就绪清单 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,50 +12,50 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9e9297e5539fd95f316ebbf6239a5d017ec4ecf
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 76cab24c2ba0d47baa22dbe694a1d929e98c8f9d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "23450222"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002750"
 ---
-# <a name="operational-readiness-checklists"></a>操作的准备工作核对清单
-操作的准备情况清单包含应考虑的建议和在 BizTalk 解决方案部署到生产环境之前应执行的任务。 这些清单包括用于配置必备软件，提高可用性，信息监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，并用于测试的步骤。  
+# <a name="operational-readiness-checklists"></a>操作准备就绪清单
+操作准备就绪清单包含应考虑的建议和部署 BizTalk 解决方案到生产环境之前应执行的任务。 这些清单提供信息，以便配置必备软件，从而提高可用性，监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中和用于测试的过程。  
   
- 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上维护依赖关系，因此许多其他 Microsoft 技术，您应该完成的任务的每个相关的技术，以帮助确保你的生产[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]平稳运行环境。  
+ 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上维护依赖关系，因此许多其他 Microsoft 技术，您应该完成每项依赖的技术来帮助确保您的生产任务[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境能够顺利运行。  
   
 ## <a name="typical-prerequisite-software"></a>典型的必备软件  
- 有关必备软件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序平台通常包括以下产品：  
+ 必备软件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序平台通常包括以下产品：  
   
--   Windows 操作系统  
+- Windows 操作系统  
   
--   SQL Server 
+- SQL Server 
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
--   Visual Studio （出于开发目的，不在运行时）  
+- Visual Studio （适用于开发目的，不是在运行时）  
   
 ## <a name="additional-components"></a>其他组件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序平台可能还需要多个以下的软件组件：  
   
--   Internet 信息服务 (IIS)  
+- Internet 信息服务 (IIS)  
   
--   SharePoint
+- SharePoint
   
--   Microsoft Office Excel 
+- Microsoft Office Excel 
   
-    > [!NOTE]  
-    >  BizTalk Server 支持 Microsoft Office 的 32 位版本。  
+  > [!NOTE]  
+  >  BizTalk Server 支持 Microsoft Office 的 32 位版本。  
   
--   SQL Server
+- SQL Server
   
--   SQLXML 
+- SQLXML 
   
--   .NET Framework 
+- .NET Framework 
   
--   非 Microsoft 组件，以便为某些功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器。  
+- 非 Microsoft 组件，以便为某些功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器。  
   
- 有关依赖软件所需的各种 Windows 操作系统版本的 BizTalk 应用程序平台的特定功能的详细信息，请参阅[什么是新建、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
+  有关各种 Windows 操作系统版本的 BizTalk 应用程序平台的特定功能所需的依赖关系软件的详细信息，请参阅[新增功能、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
 - 
   
 ## <a name="next-steps"></a>后续步骤

@@ -1,5 +1,5 @@
 ---
-title: OutboundCustomHeaders 没有正确的格式 |Microsoft 文档
+title: OutboundCustomHeaders 不具有正确的格式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df751526661ddef455be45c4258c331c940fdd47
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6d9cb9311015bfa7d88169944a206a8882b11cfe
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971259"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008918"
 ---
-# <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders 没有正确的格式
+# <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders 不具有正确的格式
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|OutboundCustomHeaders 的格式不正确|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  产品名称   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 产品版本 |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    事件 ID     |                                         0                                          |
+|  事件源   |                                         0                                          |
+|    组件    |                                         0                                          |
+|  符号名称  |                                         0                                          |
+|  消息正文   |                OutboundCustomHeaders 的格式不正确                |
   
 ## <a name="explanation"></a>解释  
- WCF 的值。InboundHeaders 或 WCF。OutboundCustomHeaders 不是以下格式：\<标头\>...\</headers\>。  
+ WCF 的值。InboundHeaders 或 WCF。OutboundCustomHeaders 不是采用以下格式：\<标头\>...\</headers\>。  
   
 ## <a name="user-action"></a>用户操作  
- 包装属性值，值\<标头\>元素。  
+ 包装属性值替换\<标头\>元素。  
   
  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   

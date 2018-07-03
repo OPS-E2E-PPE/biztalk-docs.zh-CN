@@ -1,5 +1,5 @@
 ---
-title: 教程 2： 迁移 BizTalk 项目中 Siebel |Microsoft 文档
+title: 教程 2： 迁移 BizTalk 项目中 Siebel |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,82 +12,82 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b8d138d348e750102d82a4aba2e39bc7d119c8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ada19454c3d2aef1c725987d8d37f7b98a2d1c2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223005"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996430"
 ---
 # <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>教程 2： 迁移中 Siebel 的 BizTalk 项目
-Microsoft BizTalk 服务器随附的 Siebel 适配器以前版本的基于 WCF 的不同[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在许多方面，包括：  
+Siebel 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在许多方面，包括：  
   
--   创建 BizTalk 项目的设计时体验。  
+- 创建 BizTalk 项目的设计时体验。  
   
--   元数据检索体验。  
+- 元数据检索体验。  
   
--   架构文件名称和命名空间。  
+- 架构文件的名称和命名空间。  
   
--   数据类型映射。  
+- 数据类型映射。  
   
--   可以使用该适配器执行的操作。  
+- 可以使用适配器执行的操作。  
   
--   在 BizTalk Server 管理控制台中的物理端口配置  
+- 在 BizTalk Server 管理控制台中的物理端口配置  
   
- 在中的主题解释了这些差异[迁移 BizTalk 项目创建使用 Siebel 适配器的上一步版本](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)。  
+  在中的主题解释了这些差异[迁移 BizTalk 项目创建使用 Siebel 适配器的上一步版本](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)。  
   
- 但是，你可以使用以前版本的适配器创建 BizTalk 项目进行更改，并使其适用于基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
+  但是，可以创建使用以前版本的适配器的 BizTalk 项目进行更改并使其适用于基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
- 本教程将说明了你应创建使用以前的版本的适配器的现有 BizTalk 项目的更改。  
+  本教程说明了您应该对使用以前版本的适配器创建的现有 BizTalk 项目的更改。  
   
 > [!NOTE]
->  在本教程中，由于篇幅所限，以前版本的 Siebel 适配器称为 vPrev Siebel 适配器。 同样，使用 vPrev Siebel 适配器的 BizTalk 项目将被称为 vPrev BizTalk 项目。  
+>  本教程中，为了简洁起见，在以前版本的 Siebel 适配器称为 vPrev Siebel 适配器。 同样，使用 vPrev Siebel 适配器的 BizTalk 项目将引用为 vPrev BizTalk 项目。  
   
-## <a name="sample-used-for-the-tutorial"></a>使用本教程的示例  
- 本教程基于演示如何将执行插入操作帐户 Siebel 业务组件上的 vPrev BizTalk 项目迁移的示例 (Siebel_BussComp_Migration)。 与 Microsoft 提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
+## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
+ 基于本教程演示如何迁移执行插入操作帐户 Siebel 业务组件上的 vPrev BizTalk 项目的示例 (Siebel_BussComp_Migration)。 与 Microsoft 提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
   
--   你必须有 vPrev BizTalk 项目。 本教程涉及执行插入操作帐户在业务组件上的 BizTalk 项目。  
+-   必须有一个 vPrev BizTalk 项目。 本教程涉及到执行插入操作帐户业务组件上的 BizTalk 项目。  
   
--   你必须具有要执行插入操作帐户在业务组件使用 vPrev Siebel 适配器上的请求消息。 请求消息必须符合使用 vPrev Siebel 适配器所生成的 Insert 操作的架构。  
+-   您必须具有要执行插入操作帐户业务组件使用 vPrev Siebel 适配器上的请求消息。 请求消息必须符合使用 vPrev Siebel 适配器生成的插入操作的架构。  
   
--   你必须已完成中的步骤[创建 Siebel 应用程序的先决条件](../../adapters-and-accelerators/adapter-siebel/prerequisites-to-create-siebel-applications.md)。  
+-   你必须完成中的步骤[创建 Siebel 应用程序的先决条件](../../adapters-and-accelerators/adapter-siebel/prerequisites-to-create-siebel-applications.md)。  
   
-## <a name="understanding-a-biztalk-project-created-using-the-previous-version-of-the-adapter"></a>了解 BizTalk 项目创建使用以前的版本的适配器  
- VPrev BizTalk 项目创建的关键组成部分是：  
+## <a name="understanding-a-biztalk-project-created-using-the-previous-version-of-the-adapter"></a>了解 BizTalk 项目创建使用以前版本的适配器  
+ 创建的 vPrev BizTalk 项目的关键组成部分包括：  
   
--   **BizTalk 业务流程**。 这是简单的业务流程选取端口的文件位置，发送到 Siebel 系统使用 Siebel 请求消息发送接收的请求消息、 接收响应，并将其保存到另一个文件位置。  
+- **BizTalk 业务流程**。 这是一个简单的业务流程提取请求消息从一个文件位置，将发送到使用 Siebel 的 Siebel 系统的请求消息发送接收端口、 接收响应，并将其保存到另一个文件位置。  
   
--   **你想要在 Siebel 在业务组件上执行的操作的架构**。 本教程涉及执行插入操作帐户在业务组件上的 BizTalk 项目。 为帐户在业务组件生成的架构是 AccountService_Account_x5d.xsd。 使用 vPrev Siebel 适配器生成此架构。  
+- **你想要在 Siebel 业务组件上执行的操作架构**。 本教程涉及到执行插入操作帐户业务组件上的 BizTalk 项目。 为帐户业务组件生成的架构是 AccountService_Account_x5d.xsd。 此架构是使用 vPrev Siebel 适配器生成的。  
   
-    > [!NOTE]
-    >  与不同的是基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，vPrev Siebel 适配器不支持在业务组件上的特定操作生成的元数据。 默认情况下，适配器生成的业务组件支持的所有操作的架构。 多此类之间的差异 vPrev Siebel 适配器和基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，请参阅[迁移 BizTalk 项目创建使用 Siebel 适配器的上一步版本](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)。  
+  > [!NOTE]
+  >  与基于 WCF 的不同[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，vPrev Siebel 适配器不支持在业务组件上的特定操作生成的元数据。 默认情况下，适配器生成的在业务组件上受支持的所有操作的架构。 有关 vPrev Siebel 适配器和基于 WCF 的更多此类差异[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，请参阅[迁移 BizTalk 项目创建使用 Siebel 适配器的上一步版本](http://msdn.microsoft.com/library/ae61d3df-c5ca-4891-86b1-9f0dd6d3a59e)。  
   
--   **请求消息**。 要执行插入操作帐户在业务组件上的请求消息。 请求消息的架构符合插入操作的架构，如显示 vPrev Siebel 适配器。  
+- **请求消息**。 要执行插入操作帐户业务组件上的请求消息。 请求消息的架构符合插入操作的架构，如 vPrev Siebel 适配器提供的。  
   
-## <a name="how-to-migrate-a-biztalk-project-created-using-the-previous-version-of-the-adapter"></a>如何迁移 BizTalk 项目创建使用以前的版本的适配器  
- 本教程中迁移的目标是使您能够发送请求消息符合架构生成的使用只能处理符合基于 WCF 的消息的 WCF 自定义端口和 vPrev Siebel 适配器[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 因此，简单地说，迁移练习涉及配置基于 WCF 的不符合的处理消息的 WCF 自定义端口[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]的架构。  
+## <a name="how-to-migrate-a-biztalk-project-created-using-the-previous-version-of-the-adapter"></a>使用以前版本的适配器如何迁移 BizTalk 项目创建  
+ 此迁移教程的目的是使您能够将请求消息，符合架构生成 vPrev Siebel 适配器，使用可以只处理符合基于 WCF 的消息的 WCF 自定义端口的发送[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 因此，简单地说，迁移活动包括： 配置 WCF 自定义端口来处理消息的不符合基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]的架构。  
   
- 但是，若要能够相应地配置 WCF 自定义端口，必须执行以下任务：  
+ 但是，若要能够适当地配置 WCF 自定义端口，必须执行以下任务：  
   
--   生成使用基于 WCF 的帐户在业务组件上的插入操作的元数据[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
+- 为使用基于 WCF 的帐户业务组件上的插入操作生成元数据[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
--   用于执行插入操作执行使用基于 WCF 的插入操作使用请求消息的 vPrev Siebel 适配器将请求消息映射[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
+- 执行插入操作执行 Insert 操作使用基于 WCF 的使用 vPrev Siebel 适配器添加到请求消息的请求消息映射[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
--   将使用基于 WCF 的接收响应消息映射[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]到 vPrev Siebel 适配器的响应消息。  
+- 使用基于 WCF 的接收响应消息映射[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]到 vPrev Siebel 适配器的响应消息。  
   
--   创建 WCF 自定义 Siebel 发送接收 BizTalk Server 管理控制台中的端口。  
+- 创建自定义 WCF 的 Siebel 发送接收端口在 BizTalk Server 管理控制台。  
   
--   配置要使用的请求和响应的映射的 WCF 自定义端口。  
+- 配置要使用的请求和响应的映射的 WCF 自定义端口。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [步骤 1： 修改 vPrev Oracle 数据库中的 BizTalk 项目](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
+-   [步骤 1： 修改 vPrev BizTalk 项目中 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
   
--   [步骤 2： 在 BizTalk Server 管理控制台，以使用 ORacle 数据库适配器中配置业务流程](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
+-   [步骤 2： 配置业务流程在 BizTalk Server 管理控制台中使用 ORacle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
   
--   [步骤 3： 测试与 Siebel 适配器迁移应用程序](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
+-   [步骤 3： 测试具有 Siebel 适配器的迁移应用程序](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Siebel 适配器教程](../../adapters-and-accelerators/adapter-siebel/siebel-adapter-tutorials.md)

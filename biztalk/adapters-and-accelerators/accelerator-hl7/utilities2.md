@@ -1,5 +1,5 @@
 ---
-title: Utilities2 |Microsoft 文档
+title: Utilities2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 861f399a4a1033bf87db0b7b775a4b42bd92e0e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25d820b2807c6dd7584af2399b20287d1476e7c6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206357"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982542"
 ---
 # <a name="utilities"></a>实用程序
-本部分提供有关使用几个有用的实用程序中包含的说明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]软件开发工具包 (SDK)。  
+本部分提供 Microsoft [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] 软件开发工具包 (SDK) 中包含的多个有用实用程序的使用说明。  
   
 ## <a name="in-this-section"></a>本节内容  
   

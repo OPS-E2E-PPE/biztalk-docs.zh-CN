@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: acc8560096423eb69b7cad8d9e6264707ae9a636
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 9d12874ef6042580183f407afc811a9d7f6e0fc9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013268"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009862"
 ---
 # <a name="deployment-limitations"></a>部署限制
 
@@ -20,23 +20,23 @@ ms.locfileid: "24013268"
 ## <a name="password-limitation-workaround"></a>密码限制的解决方法  
  若要解决此密码限制问题，可使用以下方法之一：  
   
--   在导入之前编辑绑定文件，将星号替换为明文密码。  
+- 在导入之前编辑绑定文件，将星号替换为明文密码。  
   
-    > [!CAUTION]
-    >  出于安全考虑，不建议使用此方法。  
+  > [!CAUTION]
+  >  出于安全考虑，不建议使用此方法。  
   
--   在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。 输入正确的密码使用**传输属性**在 BizTalk Server 管理控制台中导入的绑定文件后的页。  
+- 在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。 输入正确的密码使用**传输属性**导入绑定文件后在 BizTalk Server 管理控制台中的页。  
   
-    > [!NOTE]
-    >  只有当目标计算机上安装了 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 或者您开发了一个自定义工具时，才能使用这种解决方法。  
+  > [!NOTE]
+  >  只有当目标计算机上安装了 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 或者您开发了一个自定义工具时，才能使用这种解决方法。  
   
- - 或 -  
+  -或-  
   
--   使用企业单一登录 (SSO) 而不是使用密码。  
+- 使用企业单一登录 (SSO) 而不是使用密码。  
   
-     使用 SSO 选项时需要导入绑定文件。  
+   使用 SSO 选项时需要导入绑定文件。  
   
- 验证逻辑系统以及传输和接收服务。  
+  验证逻辑系统以及传输和接收服务。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [导入绑定和限制](../core/deploying-biztalk-adapter-for-peoplesoft-enterprise.md)

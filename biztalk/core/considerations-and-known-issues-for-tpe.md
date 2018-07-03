@@ -1,5 +1,5 @@
 ---
-title: 注意事项和键入的已知的问题 |Microsoft 文档
+title: 注意事项和已知的问题的 TPE |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d630b2cfa5cca1d7a441796ef8c555d02bb04910
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41f728126f14193ad8fc584a94574dab61f7140f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22234573"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996870"
 ---
-# <a name="considerations-and-known-issues-for-tpe"></a>注意事项和键入的已知的问题
+# <a name="considerations-and-known-issues-for-tpe"></a>注意事项和 TPE 的已知的问题
 使用跟踪配置文件和 TPE 时，应注意以下问题。  
   
 ## <a name="naming-folders-in-the-tpe"></a>在 TPE 中命名文件夹  
@@ -36,38 +36,38 @@ ms.locfileid: "22234573"
 ## <a name="developing-orchestrations-for-the-tpe"></a>开发 TPE 的业务流程  
  如果某个业务流程的开始和结束形状无效，则您无法将该业务流程映射到业务活动。 业务流程引擎不允许跟踪某些形状。 它们分别是：  
   
--   消息赋值  
+- 消息赋值  
   
--   转换  
+- 转换  
   
--   组（任务）  
+- 组（任务）  
   
--   挂起  
+- 挂起  
   
--   循环 (While)  
+- 循环 (While)  
   
--   Branch  
+- Branch  
   
--   Terminate  
+- Terminate  
   
--   引发  
+- 引发  
   
--   捕获  
+- 捕获  
   
--   循环形状  
+- 循环形状  
   
- 当映射到业务活动时，请按照以下准则执行操作，以便跟踪配置文件编辑器和其他 BAM 工具可以使用它们：  
+  当映射到业务活动时，请按照以下准则执行操作，以便跟踪配置文件编辑器和其他 BAM 工具可以使用它们：  
   
--   对于组形状，请使用非事务性作用域形状。  
+- 对于组形状，请使用非事务性作用域形状。  
   
--   对于循环形状，请将它包装到非事务性作用域形状中。  
+- 对于循环形状，请将它包装到非事务性作用域形状中。  
   
--   对于终止形状，没有任何解决办法，因为在正常情况下，此形状的结束事件从不发生。  
+- 对于终止形状，没有任何解决办法，因为在正常情况下，此形状的结束事件从不发生。  
   
--   在计划的开始或结束时，不要使用不允许执行拖放操作的任何形状。  
+- 在计划的开始或结束时，不要使用不允许执行拖放操作的任何形状。  
   
 ## <a name="applying-tracking-profiles-that-monitor-running-processes"></a>应用监视运行的进程的跟踪配置文件  
- 如果活动中包含 BAM 继续符，则更新跟踪配置文件可能会影响正在进行的活动实例。 具体而言，如果在更新跟踪配置文件时指定在下游对已记录的某个活动项进行数据侦听，则原始值可能会被覆盖。 从本质而言，任何单个事件流将不会受跟踪配置文件更新的应用程序的影响，因为每个流对象是与活动/流开始时处于就绪状态的特定版本的配置文件相联系。 但是，使用继续符就意味着将多个事件流相关联，在更新配置文件时还尚未开始的流将提取更新中所做的更改，从而导致上述可能出现的覆盖数据的情况。 有关延续的详细信息，请参阅[活动延续](../core/activity-continuation.md)和[如何创建一个延续](../core/how-to-create-a-continuation.md)。  
+ 如果活动中包含 BAM 继续符，则更新跟踪配置文件可能会影响正在进行的活动实例。 具体而言，如果在更新跟踪配置文件时指定在下游对已记录的某个活动项进行数据侦听，则原始值可能会被覆盖。 从本质而言，任何单个事件流将不会受跟踪配置文件更新的应用程序的影响，因为每个流对象是与活动/流开始时处于就绪状态的特定版本的配置文件相联系。 但是，使用继续符就意味着将多个事件流相关联，在更新配置文件时还尚未开始的流将提取更新中所做的更改，从而导致上述可能出现的覆盖数据的情况。 有关继续符的详细信息，请参阅[活动继续符](../core/activity-continuation.md)并[如何创建一个继续符](../core/how-to-create-a-continuation.md)。  
   
 ## <a name="tracking-profiles-without-a-send-or-receive-shape-from-which-to-draw-message-properties"></a>不具有从中提取消息属性的发送形状或接收形状的跟踪配置文件  
  继续符通过在多个活动中具有相同值的上下文属性或负载数据来跟踪活动。 有些属性在各个活动中的值是不同的，例如消息 ID、服务 ID 和实例 ID。  
@@ -80,7 +80,7 @@ ms.locfileid: "22234573"
   
 -   只要业务流程中使用的是从管道接收的消息（也就是说，业务流程端口绑定到一个管道，且从该位置跟踪接收形状和消息 ID），则您也可以使用消息 ID。 如果您从其他形状跟踪消息 ID，则将无法在继续符中使用消息 ID。  
   
--   如果业务流程调用另一个业务流程和不传递任何消息，或业务流程调用另一个业务流程但被调用方不具有任何构造，接收，或发送形状可以在其中检索负载数据值，则用户可以使用实例 id。 调用业务流程的实例 ID 不会更改。  
+-   如果业务流程调用另一个业务流程和未传递任何消息，或业务流程调用另一个业务流程，但被调用方不具有任何构造、 接收或发送形状，可以检索负载数据值，则用户可以使用实例 id。 调用的业务流程的实例 ID 不会更改。  
   
 -   如果业务流程通过执行调用来加载另一个业务流程，而没有直接调用它，则无法使用任何静态消息属性来跟踪活动。 用户无法启用继续符。 在这种情况下，只有当消息通过包含对其执行跟踪的唯一负载数据的管道来传递时，才能执行跟踪。  
   
@@ -103,14 +103,14 @@ ms.locfileid: "22234573"
 ## <a name="availability-of-message-properties-at-design-time"></a>消息属性在设计时的可用性  
  创建跟踪配置文件时，并非所有消息属性都是可用的。 当从其映射消息属性的形状位于业务流程顶部时，最有可能遇到这个问题。 在这些情况下，消息属性的值为空。  
   
- 例如，当侦听形状是业务流程中的第一个形状。 当消息属性映射此形状，仅以下属性具有值： InstanceID、 ServiceID 和 ServiceClassID。 （此时，消息 ID 不在作用域中，它具有空值。）  
+ 例如，当侦听形状是业务流程中的第一个形状。 当消息属性被映射中的此形状，仅以下属性具有值： InstanceID、 ServiceID 和 ServiceClassID。 （此时，消息 ID 不在作用域中，它具有空值。）  
   
 ## <a name="you-cannot-map-shapes-inside-a-loop-shape-to-report-a-milestone"></a>您无法映射循环形状内部的形状来报告里程碑  
  TPE 将阻止从循环形状中包含的源映射到循环外的项的活动。  
   
  循环活动是指在业务流程内循环（即重复）的操作。 可以从在业务流程内循环的操作中捕获事件。 为此，需要创建另一个活动，并映射该循环内的所有新活动里程碑和数据。 这样做是有必要的，因为在循环中数据处理在每次计划的执行中将发生多次。  
   
- 例如，如果你有多个在循环中处理的行项的采购订单，此类问题:"的采购订单有 100 美元的项价格？" 不明确。 下面的问题则含义明确：  
+ 例如，如果您有包含在循环中处理的多个行项的采购订单，问题，如"哪些采购订单的货物价格为 $100？" 是不明确。 下面的问题则含义明确：  
   
  哪些采购订单包含价格为 $100 的货物行？  
   
@@ -123,7 +123,7 @@ ms.locfileid: "22234573"
  您需要将一个负载项用作根活动的活动 ID，并使此负载项在循环内的某些消息中可用。 还需要将该活动映射到子活动下的关系节点，并将它命名为根活动。  
   
 ## <a name="tracking-profiles-spanning-multiple-applications"></a>跨多个应用程序的跟踪配置文件  
- 如果跟踪配置文件横跨多个应用程序，则必须在解决方案中的所有应用程序均部署完毕后再部署该跟踪配置文件。 如果跟踪配置文件不是部署的最后一项，你将收到以下消息，"**找不到映射源。**"，当部署向导调用 BTTDeploy.exe。  
+ 如果跟踪配置文件横跨多个应用程序，则必须在解决方案中的所有应用程序均部署完毕后再部署该跟踪配置文件。 如果跟踪配置文件不是部署的最后一项，将收到以下消息"**找不到映射源。**"，在部署向导调用 BTTDeploy.exe 时。  
   
 ## <a name="mapping-multiple-biztalk-server-artifacts-to-a-document-reference-url-or-messageid-nodes"></a>将多个 BizTalk Server 项目映射到一个文档引用 URL 或消息 ID 节点  
  您可以使用 TPE 将多个 BizTalk Server 项目拖放到同一文档引用 URL 或消息 ID 节点。  
@@ -131,7 +131,7 @@ ms.locfileid: "22234573"
  在多个源映射到 BAM 活动中的同一个项时，在 BAM 处理过程中遇到的最后一个项目为跟踪数据中保留的项目，并可以在 BAM 门户中进行查看。  
   
 ## <a name="updating-btt-versions-to-match-biztalk-solution-versions"></a>更新 BTT 版本以与 BizTalk 解决方案版本相匹配  
- 通过将 BTT 文件的更新自动化，BAM 开发人员和管理员可以保持跟踪配置文件与 BizTalk 解决方案之间的版本同步。 若要执行此操作，修改**版本**属性中**DataLevel** BTT 文件元素。 在下面的元素示例中，您将修改 TargetAssemblyName 和 SchemaName 属性中的版本信息。  
+ 通过将 BTT 文件的更新自动化，BAM 开发人员和管理员可以保持跟踪配置文件与 BizTalk 解决方案之间的版本同步。 若要执行此操作，修改**版本**属性中**DataLevel** BTT 文件的元素。 在下面的元素示例中，您将修改 TargetAssemblyName 和 SchemaName 属性中的版本信息。  
   
 ```  
 <DataLevel Name="City" SourceTypeSelected="Messaging Payload" TargetAssemblyName="TheImplementationOfOrderMgmt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c5b33e44ffa4658b" SchemaName="TheImplementationOfOrderMgmt.PurchaseOrder,TheImplementationOfOrderMgmt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c5b33e44ffa4658b" SomXPath="/*[local-name()='<Schema>' and namespace-uri()='http://TheImplementationOfOrderMgmt.PurchaseOrder']/*[local-name()='PurchaseOrder' and namespace-uri()='http://TheImplementationOfOrderMgmt.PurchaseOrder']/*[local-name()='Header' and namespace-uri()='']/*[local-name()='ShipTo' and namespace-uri()='']/@*[local-name()='City' and namespace-uri()='']" XPath="/*[local-name()='PurchaseOrder' and namespace-uri()='http://TheImplementationOfOrderMgmt.PurchaseOrder']/*[local-name()='Header' and namespace-uri()='']/*[local-name()='ShipTo' and namespace-uri()='']/@*[local-name()='City' and namespace-uri()='']" IsBeginActivity="true" IsEndActivity="false">  
@@ -165,30 +165,30 @@ ms.locfileid: "22234573"
   
  在配置期间，可以用多种格式输入服务器名称。 例如：  
   
--   mgmtsvr1316267,15001\inst  
+- mgmtsvr1316267,15001\inst  
   
--   MGMTSVR1316267\inst,15001  
+- MGMTSVR1316267\inst,15001  
   
- TPE 在使用注册表项时会执行简单的字符串比较。 若要检索的已部署的跟踪配置文件有必要检查存储的服务器和数据库名称，并输入它们在键入**设置管理数据库**对话框。  
+  TPE 在使用注册表项时会执行简单的字符串比较。 若要检索已部署的跟踪配置文件是检查存储的服务器和数据库名称和输入在 TPE 中所需**设置管理数据库**对话框。  
   
 #### <a name="to-determine-the-syntax-for-server-and-database-names-and-enter-it-in-the-biztalk-management-database"></a>确定服务器和数据库名称的语法，并将其输入到 BizTalk 管理数据库中。  
   
-1.  打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**自定义 Configuration Manager**。 有关使用信息**自定义 Configuration Manager**，请参阅[配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)。  
+1. 打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**自定义配置管理器**。 有关使用信息**自定义配置管理器**，请参阅[配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)。  
   
-2.  在导航窗格中，选择**组**以打开组配置页。  
+2. 在导航窗格中，选择**组**打开组配置页。  
   
-3.  在**数据存储区**网格中，观察的格式**服务器名称**和**数据库名称**。  
+3. 在中**数据存储**网格中，观察到的格式**服务器名称**并**数据库名称**。  
   
-4.  打开键入，然后选择**工具**菜单项。  
+4. 打开 TPE，然后选择**工具**菜单项。  
   
-5.  选择**设置管理数据库**菜单项以打开**设置管理数据库**对话框。  
+5. 选择**设置管理数据库**菜单项以打开**设置管理数据库**对话框。  
   
-6.  在**SQL Server**文本框中，输入服务器名称在中使用**服务器名称**字段**数据存储区**gridon**自定义 Configuration Manager**组页面。  
+6. 中**SQL Server**文字框中，输入中使用的服务器名称**服务器名称**字段**数据存储**gridon**自定义配置管理器**组页。  
   
-7.  在**数据库名称**文本框中，输入数据库名称在中使用**数据库名称**字段**数据存储区**gridon**自定义配置Manager**组页面。  
+7. 中**数据库名称**文字框中，输入数据库名称中使用过**数据库名称**字段**数据存储**gridon**自定义配置管理器**组页。  
   
-8.  单击**确定**按钮以保存这些条目。  
+8. 单击**确定**按钮以保存这些条目。  
   
-## <a name="see-also"></a>另请参阅  
- [使用键入](../core/using-the-tpe.md)   
+## <a name="see-also"></a>请参阅  
+ [使用 TPE](../core/using-the-tpe.md)   
  [跟踪配置文件编辑器](../core/tracking-profile-editor.md)

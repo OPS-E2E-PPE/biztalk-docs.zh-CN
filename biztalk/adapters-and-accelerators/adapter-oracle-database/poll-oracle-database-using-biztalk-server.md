@@ -1,5 +1,5 @@
 ---
-title: 使用 BizTalk Server 轮询 Oracle 数据库 |Microsoft 文档
+title: 使用 BizTalk Server 轮询 Oracle 数据库 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2578d00518a9f1632e690e84db04426575619109
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d819abc957eb46dc430befb01cbcae0b8b55ca48
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214173"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996094"
 ---
 # <a name="poll-oracle-database-using-biztalk-server"></a>使用 BizTalk Server 轮询 Oracle 数据库
 你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]从 Oracle 数据库接收基于轮询的消息。 适配器提供轮询 Oracle 数据库的两种的方法：  
   
--   **使用 SELECT 语句**。 你可以指定要轮询的表和视图的 Oracle 数据库中的简单 SELECT 语句。 适配器执行 SELECT 语句指定时间间隔，并将结果返回给适配器客户端。  
+- **使用 SELECT 语句**。 可以指定一个简单的 SELECT 语句来轮询的表和 Oracle 数据库中的视图。 适配器执行 SELECT 语句指定的时间间隔，并将结果返回到适配器客户端。  
   
--   **使用存储的过程、 函数或过程或函数在一个包内的**。 你可以指定存储的过程、 函数或过程或函数在包轮询 Oracle 数据库中。 适配器在指定的时间间隔执行的请求消息，并将结果返回给适配器客户端。  
+- **使用存储的过程、 函数或过程或函数的包中**。 您可以指定存储的过程、 函数或过程或函数来轮询 Oracle 数据库的包中。 适配器在指定的时间间隔执行的请求消息并将结果返回到适配器客户端。  
   
- 在两个方法中的关键区别是方式适配器客户端指定适配器使用来轮询 Oracle 数据库的轮询语句。 第一种方法的轮询语句时简单的 SELECT 语句，另一种方法的轮询语句将是执行存储的过程、 函数或过程或函数在一个包内的请求消息。 适配器客户端在指定的轮询语句，这两种方法， **PollingStatement**绑定属性。 有关绑定属性的详细信息，请参阅[阅读有关 Oracle 数据库适配器绑定属性](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)。  
+  中的两种方法的主要区别是方式适配器客户端指定用于轮询 Oracle 数据库适配器的轮询语句。 简单的 SELECT 语句的轮询语句的第一种方法时，另一种方法的轮询语句是执行存储的过程、 函数或过程或函数的包中的请求消息。 适配器客户端在指定的轮询语句，这两种方法， **PollingStatement**属性绑定。 有关绑定属性的详细信息，请参阅[阅读有关 Oracle 数据库适配器绑定属性](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)。  
   
- 此部分中的主题提供有关如何轮询使用 SELECT 语句和存储的过程、 函数或过程的说明或函数在一个包内。  
+  在本部分中的主题说明了如何轮询使用 SELECT 语句和存储的过程、 函数或过程或函数的包中。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [使用 SELECT 语句的轮询 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-database-using-the-select-statement.md)  
+-   [使用 SELECT 语句轮询 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-database-using-the-select-statement.md)  
   
--   [使用存储的过程、 函数或打包的过程和函数的轮询 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-db-using-stored-procedures-functions-or-packaged-procedures.md)  
+-   [使用存储的过程、 函数或封装的过程和函数的轮询 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/poll-oracle-db-using-stored-procedures-functions-or-packaged-procedures.md)  
   
-## <a name="see-also"></a>另请参阅  
-[开发使用 Oracle 数据库适配器的 BizTalk 应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-biztalk-applications-using-the-oracle-database-adapter.md)
+## <a name="see-also"></a>请参阅  
+[开发 BizTalk 应用程序使用 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/develop-biztalk-applications-using-the-oracle-database-adapter.md)

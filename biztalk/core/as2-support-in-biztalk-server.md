@@ -1,5 +1,5 @@
 ---
-title: AS2 BizTalk Server 中支持 |Microsoft 文档
+title: AS2 在 BizTalk Server 中支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cccb7103a954e292db6ef4579cf950a8ec13e63
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0b593161e7a4e53ec378f0a2095ff57a45ad48ab
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008222"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975438"
 ---
 # <a name="as2-support-in-biztalk-server"></a>BizTalk Server 中的 AS2 支持
-本主题提供 AS2 处理和 BizTalk Server 如何实现它常规简要概述。  
+本主题提供了 AS2 处理和 BizTalk Server 如何实现它的一般概述。  
   
 ## <a name="introduction-to-as2"></a>AS2 介绍  
  增值网络 (VAN) 是 EDI 的一种常见传输方式。 增值网络是提供增值服务（例如，精确且合法的绑定审计跟踪）的专有网络。 但是，各个公司正在转为通过 Internet 交换 EDI 文档。 这样不仅可以降低成本、提高灵活性和效率，而且在冗余性和伸缩性方面具有明显优势。  
@@ -32,49 +32,49 @@ ms.locfileid: "26008222"
  有关 EDI 消息传送的详细信息，请参阅[AS2 消息传送](../core/as2-messaging.md)。  
   
 ## <a name="how-as2-is-implemented-in-biztalk-server"></a>BizTalk Server 中 AS2 的实现方式  
- BizTalk Server 包括为 AS2 提供支持的本机功能。 它不是产品的外接程序，例如适配器或加速器。 它内置于产品之中，可提供以下功能：  
+ BizTalk Server 包括提供 AS2 支持的固有功能。 它不是产品的外接程序，例如适配器或加速器。 它内置于产品之中，可提供以下功能：  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 AS2 定义方法来发送、 接收和验证消息。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]有助于确保通过加密、 签名和压缩的数据传输的安全性。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用加密密钥、数字签名和证书来实现这一目的。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用 AS2 定义的方法发送、 接收和验证消息。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可帮助确保通过加密、 签名和压缩的数据传输的安全性。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用加密密钥、数字签名和证书来实现这一目的。  
   
--   通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你可以将传入和传出的 AS2 消息保存在不可否认的存储位置。 包括在保存编码或解码的 AS2 消息和保存 MDN 时，都需这么做。  
+- 通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，你可以将传入和传出的 AS2 消息保存在不可否认的存储位置。 包括在保存编码或解码的 AS2 消息和保存 MDN 时，都需这么做。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了将附件文件名保留为 AS2 消息的一部分的能力。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了将附件文件名保留为 AS2 消息的一部分的能力。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使你能够检查重复的传入消息。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使你能够检查重复的传入消息。  
   
--   既可以通过与确认消息时使用连接相同的连接同步返回 MDN，也可以通过不同的连接异步返回 MDN。  
+- 既可以通过与确认消息时使用连接相同的连接同步返回 MDN，也可以通过不同的连接异步返回 MDN。  
   
--   如果在指定时间段内未接收到 MDN，你可以重新发送 AS2 消息。  
+- 如果在指定时间段内未接收到 MDN，你可以重新发送 AS2 消息。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可提供特定于 AS2 的状态报告。 这些报告提供了 AS2 传输的全面状态，其中也包括与交换有关的确认状态。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可提供特定于 AS2 的状态报告。 这些报告提供了 AS2 传输的全面状态，其中也包括与交换有关的确认状态。  
   
--   AS2 要求在接收端和发送端均使用 HTTP 适配器。  
+- AS2 要求在接收端和发送端均使用 HTTP 适配器。  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使你能够通过定义每个协议的证书来覆盖 AS2 消息的默认签名证书。 有关如何为方指定不同的证书的说明，请参阅[配置 AS2 属性](../core/configuring-as2-properties.md)。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使你能够通过定义每个协议的证书来覆盖 AS2 消息的默认签名证书。 有关如何为参与方指定不同的证书的说明，请参阅[配置 AS2 属性](../core/configuring-as2-properties.md)。  
   
 ## <a name="as2-components-in-biztalk-server"></a>BizTalk Server 中的 AS2 组件  
- AS2 传输使用的 BizTalk Server 组件包括：  
+ 用于 AS2 传输的 BizTalk Server 组件包括：  
   
--   BizTalk EDI 应用程序，包含处理 AS2 文档所需的项目（包括管道和架构）。  
+- BizTalk EDI 应用程序，包含处理 AS2 文档所需的项目（包括管道和架构）。  
   
-    > [!NOTE]
-    >  BizTalk Server 中配置 AS2 功能时，配置程序将创建此应用程序。 无论何时，只要你创建了一个处理 AS2 消息的应用程序，就必须从你的应用程序中添加对 BizTalk EDI 应用程序的引用。 有关详细信息，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
+  > [!NOTE]
+  >  在 BizTalk Server 中配置的 AS2 功能时，配置程序会创建此应用程序。 无论何时，只要你创建了一个处理 AS2 消息的应用程序，就必须从你的应用程序中添加对 BizTalk EDI 应用程序的引用。 有关详细信息，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
   
--   AS2EdiReceive 管道，对通过 AS2 接收的 EDI 消息执行 AS2 处理和随后的 EDI 处理。 有关详细信息，请参阅[AS2 接收组件](../core/as2-receive-components.md)。  
+- AS2EdiReceive 管道，对通过 AS2 接收的 EDI 消息执行 AS2 处理和随后的 EDI 处理。 有关详细信息，请参阅[AS2 接收组件](../core/as2-receive-components.md)。  
   
--   AS2Receive 管道，对通过 AS2 接收的非 EDI 消息执行 AS2 处理。 有关详细信息，请参阅[AS2 接收组件](../core/as2-receive-components.md)。  
+- AS2Receive 管道，对通过 AS2 接收的非 EDI 消息执行 AS2 处理。 有关详细信息，请参阅[AS2 接收组件](../core/as2-receive-components.md)。  
   
--   AS2EdiSend 管道，对通过 AS2 发送的 EDI 消息执行 EDI 处理和随后的 AS2 处理。 有关详细信息，请参阅[AS2 发送组件](../core/as2-send-components.md)。  
+- AS2EdiSend 管道，对通过 AS2 发送的 EDI 消息执行 EDI 处理和随后的 AS2 处理。 有关详细信息，请参阅[AS2 发送组件](../core/as2-send-components.md)。  
   
--   AS2Send 管道，对通过 AS2 发送的非 EDI 消息执行 AS2 处理。 有关详细信息，请参阅[AS2 发送组件](../core/as2-send-components.md)。  
+- AS2Send 管道，对通过 AS2 发送的非 EDI 消息执行 AS2 处理。 有关详细信息，请参阅[AS2 发送组件](../core/as2-send-components.md)。  
   
--   贸易合作伙伴管理 (TPM) 用户界面，可用来设置参与 AS2 文档传输的贸易合作伙伴的处理属性。 有关详细信息，请参阅[AS2 处理的协议角色](../core/the-role-of-agreements-in-as2-processing.md)和**EDI 和 AS2 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+- 贸易合作伙伴管理 (TPM) 用户界面，可用来设置参与 AS2 文档传输的贸易合作伙伴的处理属性。 有关详细信息，请参阅[协议的角色中的 AS2 处理](../core/the-role-of-agreements-in-as2-processing.md)并**EDI 和 AS2 用户界面** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
--   状态报告用户界面，提供了 AS2 交换和相关确认的全面状态信息。 有关详细信息，请参阅[EDI 和 AS2 状态报告](../core/edi-and-as2-status-reporting.md)。  
+- 状态报告用户界面，提供了 AS2 交换和相关确认的全面状态信息。 有关详细信息，请参阅[EDI 和 AS2 状态报告](../core/edi-and-as2-status-reporting.md)。  
   
--   迁移工具 （方迁移工具） 允许你将迁移方数据包含给 BizTalk Server 从 BizTalk Server 2006 R2 或 BizTalk Server 2009 AS2 属性。 有关详细信息，请参阅[迁移 BizTalk Server 以前版本中的 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
+- 迁移工具 （参与方迁移工具），可将包含 AS2 属性从 BizTalk Server 2006 R2 或 BizTalk Server 2009 到 BizTalk Server 参与方数据迁移。 有关详细信息，请参阅[从以前版本的 BizTalk Server 迁移 EDI 项目](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [AS2 解决方案体系结构](../core/as2-solution-architecture.md)   
  [EDI 和 AS2 状态报告](../core/edi-and-as2-status-reporting.md)   
  [开发和配置 BizTalk Server AS2 解决方案](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

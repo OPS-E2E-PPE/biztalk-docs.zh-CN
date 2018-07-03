@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server 中的 RosettaNet Double 操作教程的先决条件 |Microsoft 文档
-description: 单步执行双操作教程 RosettaNet 快捷键 (BTARN) BizTalk Server 中的先决条件
+title: 在 BizTalk Server 中 RosettaNet 双操作教程的先决条件 |Microsoft Docs
+description: 单步执行 BizTalk Server 中的 RosettaNet 加速器 (BTARN) 双操作教程的先决条件
 ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
@@ -13,26 +13,26 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfc247aa1ab9ec7cb6f056cd45df54bc324990ad
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 48584cf7dfee0ca4812b41e56b4e8f7c0984e4fc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963515"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979006"
 ---
-# <a name="prepare-for-the-double-action-tutorial"></a>对于双操作教程准备
+# <a name="prepare-for-the-double-action-tutorial"></a>准备双操作教程
 
-## <a name="prerequisites"></a>先决条件
-在开始本教程： 之前
+## <a name="prerequisites"></a>必要條件
+教程： 开始前
   
--   执行完全安装的 BizTalk Server 和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]两台计算机上。 有关详细信息，请参阅[安装和配置](install-configure-biztalk-accelerator-for-rosettanet.md)。  
+- 执行完全安装的 BizTalk Server 和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]两台计算机上。 有关详细信息，请参阅[安装和配置](install-configure-biztalk-accelerator-for-rosettanet.md)。  
   
-    > [!IMPORTANT]
-    >  请确保你完全配置 RosettaNet 快捷键，包括起始 BTARN 业务流程。 请参阅[安装和配置](install-configure-biztalk-accelerator-for-rosettanet.md)。
+  > [!IMPORTANT]
+  >  请确保您完全配置 RosettaNet 加速器，包括启动 BTARN 业务流程。 请参阅[安装和配置](install-configure-biztalk-accelerator-for-rosettanet.md)。
   
--   本教程使用两台计算机而不是一台具有环回协议的计算机来模拟现实方案。 本教程用占位符作为计算机名。 该占位符替换为你选择的实际计算机名称。 例如，如果计算机运行 Contoso 解决方案命名为**Contoso**，任何匹配项替换的教程中\\ \\< contoso **_** *计算机*\>具有该计算机名称。  
+- 本教程使用两台计算机而不是一台具有环回协议的计算机来模拟现实方案。 本教程用占位符作为计算机名。 该占位符替换为你选择的实际计算机名称。 例如，如果计算机运行你的 Contoso 解决方案命名为**Contoso**，在本教程的中替换任何出现\\ \\< contoso<strong>_</strong> *计算机*\>具有该计算机名称。  
   
--   本教程使用证书改进 Contoso 和 Fabrikam 之间的安全通信。 你必须生成任何证书要求，以及在其各自的计算机上安装它们。  
+- 本教程使用证书改进 Contoso 和 Fabrikam 之间的安全通信。 必须生成所有证书要求，并在其各自计算机上安装它们。  
   
 ## <a name="next-steps"></a>后续步骤 
   

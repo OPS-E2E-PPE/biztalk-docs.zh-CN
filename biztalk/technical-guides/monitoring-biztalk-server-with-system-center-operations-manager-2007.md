@@ -1,5 +1,5 @@
 ---
-title: 监视与 System Center Operations Manager 2007 的 BizTalk Server |Microsoft 文档
+title: 监视 BizTalk Server 使用 System Center Operations Manager 2007 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdaa0f0639bc640e87ff59e3cee0c229319de4ff
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 380af93ccba2671e3ffa3e6377c049eaf23dcd67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009638"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995814"
 ---
-# <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>监视与 System Center Operations Manager 2007 的 BizTalk Server
-监视你的 BizTalk 应用程序和基础结构与 Microsoft System Center Operations Manager (Operations Manager) 是首选的监视方法。 Operations Manager 的 Microsoft BizTalk Server 管理包提供主动式和反应式监视运行的计算机的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些管理包提供多个内置的自定义规则，以允许进行全面且自动监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+# <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>监视 BizTalk Server 使用 System Center Operations Manager 2007
+监视 BizTalk 应用程序和基础结构与 Microsoft System Center Operations Manager (Operations Manager) 是首选的监视方法。 Operations Manager 的 Microsoft BizTalk Server 管理包提供运行的计算机的主动式和反应式监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些管理包提供了几十个内置的可自定义规则以允许进行全面和自动监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
  以下 BizTalk Server 管理包是可与 Operations Manager 一起使用：  
   
--   [监视管理包的 BizTalk Server 2010](ttp://go.microsoft.com/fwlink/?LinkId=210666) (ttp://go.microsoft.com/fwlink/?LinkId=210666)。  
+- [监视管理包的 BizTalk Server 2010](ttp://go.microsoft.com/fwlink/?LinkId=210666) (ttp://go.microsoft.com/fwlink/?LinkId=210666)。  
   
- 操作指南的本部分包括背景信息、 最佳实践、 清单，以及可用来帮助实现基于 Operations Manager 监视策略的过程。  
+  操作指南此部分包含的背景信息、 最佳实践、 检查表和可用于帮助实现基于 Operations Manager 的监视策略的过程。  
   
 ## <a name="in-this-section"></a>本节内容  
   

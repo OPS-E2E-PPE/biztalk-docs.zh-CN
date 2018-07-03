@@ -1,5 +1,5 @@
 ---
-title: 消息扩充示例 （BizTalk Server 示例） |Microsoft 文档
+title: 消息充实示例 （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3413345c4e2d0a2ce4cd7ee1cb5ebda50b1dea7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01fa66b344548654a4d2e2e2f2b8700b604ec0e7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22265205"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998502"
 ---
 # <a name="message-enrichment-sample-biztalk-server-sample"></a>消息收集示例（BizTalk Server 示例）
 消息收集示例演示如何将 X12 文档和 EDIFACT 文档的交换标头附加到事务集消息中。  
@@ -71,52 +71,52 @@ ms.locfileid: "22265205"
 ## <a name="how-to-use-this-sample"></a>如何使用本示例  
  可将本示例作为演示将交换标头附加到 EDI 事务集消息所需操作的可运行示例。  
   
-## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
+## <a name="building-and-initializing-this-sample"></a>生成并初始化本示例  
  若要生成并初始化消息收集示例，您需要为本示例生成并部署 BizTalk 项目、配置接收端口和位置，并配置两个不同的发送端口。  
   
 #### <a name="to-build-and-deploy-the-biztalk-project-for-this-sample"></a>为本示例生成并部署 BizTalk 项目  
   
-1.  使用 Notepad.Exe 打开[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\MessageEnrichment\  
-    MessageEnrichment\properties\AssemblyInfo.cs 并在文件底部添加以下行：  
+1. 使用 Notepad.Exe，打开[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\MessageEnrichment\  
+   MessageEnrichment\properties\AssemblyInfo.cs 并在文件底部添加以下行：  
   
-    ```  
-    [assembly: Microsoft.XLANGs.BaseTypes.BizTalkAssembly(typeof(Microsoft.BizTalk.XLANGs.BTXEngine.BTXService))]  
-    ```  
+   ```  
+   [assembly: Microsoft.XLANGs.BaseTypes.BizTalkAssembly(typeof(Microsoft.BizTalk.XLANGs.BTXEngine.BTXService))]  
+   ```  
   
-2.  保存修改后的 AssemblyInfo.cs 文件，然后退出记事本。  
+2. 保存修改的 AssemblyInfo.cs 文件，然后退出记事本。  
   
-3.  在命令窗口中，转至以下文件夹：  
+3. 在命令窗口中，转至以下文件夹：  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\Message Enrichment  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\EDI\Message Enrichment  
   
-4.  运行**Setup.bat**，这将执行以下操作：  
+4. 运行**Setup.bat**，该文件将执行以下操作：  
   
-    -   创建接收 (**中**) 和发送 (**出**) \MessageEnrichment 文件夹中的此示例的文件夹。  
+   -   创建接收 (**中**) 和发送 (**出**) \MessageEnrichment 文件夹中的以下示例的文件夹。  
   
-    -   将密钥对写入 MessageEnrichmentLibrary\testkey.snk。  
+   -   将密钥对写入 MessageEnrichmentLibrary\testkey.snk。  
   
-    -   生成并部署 MessageEnrichmentLibrary.btproj 项目。  
+   -   生成并部署 MessageEnrichmentLibrary.btproj 项目。  
   
-    -   生成并部署 MessageEnrichment.btproj 项目。  
+   -   生成并部署 MessageEnrichment.btproj 项目。  
   
-    -   读取 MessageEnrichmentBindings.xml 中的绑定信息。  
+   -   读取 MessageEnrichmentBindings.xml 中的绑定信息。  
   
-        > [!NOTE]
-        >  此项目的绑定需要将 BizTalk 主机标记为受信任的身份验证。  为了将此绑定与不受信任的主机一起使用，请修改 MessageEnrichmentBindings.xml 并将 HostTrusted=”true” 条目更改为 HostTrusted=”false”。  
+       > [!NOTE]
+       >  此项目的绑定需要将 BizTalk 主机标记为受信任的身份验证。  为了将此绑定与不受信任的主机一起使用，请修改 MessageEnrichmentBindings.xml 并将 HostTrusted=”true” 条目更改为 HostTrusted=”false”。  
   
-    -   更新业务流程绑定。  
+   -   更新业务流程绑定。  
   
-    -   更新发送端口、发送端口组和接收端口。  
+   -   更新发送端口、发送端口组和接收端口。  
   
-    -   更新参与方和登记。  
+   -   更新参与方和登记。  
   
-    -   启动发送端口。  
+   -   启动发送端口。  
   
-    -   允许接收位置。  
+   -   启用接收位置。  
   
-    -   登记并启动业务流程。  
+   -   登记并启动业务流程。  
   
- BizTalk Server 现在便可使用本示例。  
+   BizTalk Server 现在便可使用本示例。  
   
 ## <a name="running-this-sample"></a>运行本示例  
  使用以下过程运行消息收集示例。  
@@ -134,7 +134,7 @@ ms.locfileid: "22265205"
 5.  打开 \MessageEnrichment\Out 文件夹中的新文件。 验证该文件是否为 \MessageEnrichment\Instances 文件夹中的 X12_examples.edi 文件的 XML 表示形式，并且包含与 X12_examples.edi 文件相同的内容。不过与之不同的是，该输出文件包含 X12 ISA 标头。  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>本示例中使用的类或方法  
- 无  
+ InclusionThresholdSetting  
   
-## <a name="see-also"></a>另请参阅  
- [EDI 和 AS2 （BizTalk Server 的示例文件夹）](../core/edi-and-as2-biztalk-server-samples-folder.md)
+## <a name="see-also"></a>请参阅  
+ [EDI 和 AS2（BizTalk Server 示例文件夹）](../core/edi-and-as2-biztalk-server-samples-folder.md)

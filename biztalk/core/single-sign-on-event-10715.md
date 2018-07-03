@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10715 |Microsoft 文档
+title: 单一登录： 事件 10715 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24bf65f00d9ef915d585c91aa06900b96d4b44d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9bc461aa812c2c61844c11d54743335ac89321a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270845"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994854"
 ---
 # <a name="single-sign-on-event-10715"></a>单一登录： 事件 10715
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10715|  
-|事件源|ENTSSO|  
-|组件|N\A|  
-|符号名称|SSO_WARN_NO_CREATE_ADAPTER|  
-|消息正文|客户端用户必须是 SSO 管理员帐户的成员才能创建适配器。%r<br /><br /> 客户端用户: %1 %r<br /><br /> SSO Administrators: %2 %r<br /><br /> 适配器: %3 %r<br /><br /> 错误代码： %4|  
-  
+
+|                 |                                                                                                                                                                                                                  |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                            企业单一登录                                                                                             |
+| 产品版本 |                                                                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                            |
+|    事件 ID     |                                                                                                      10715                                                                                                       |
+|  事件源   |                                                                                                      ENTSSO                                                                                                      |
+|    组件    |                                                                                                       N\A                                                                                                        |
+|  符号名称  |                                                                                            SSO_WARN_NO_CREATE_ADAPTER                                                                                            |
+|  消息正文   | 客户端用户必须是 SSO 管理员帐户的成员才能创建适配器。%r<br /><br /> 客户端用户: %1 %r<br /><br /> SSO Administrators: %2 %r<br /><br /> 适配器: %3 %r<br /><br /> 错误代码： %4 |
+
 ## <a name="explanation"></a>解释  
- 此警告事件表示客户端用户必须是 SSO Administrators 帐户的成员才能创建适配器。  
-  
+ 此警告事件表示客户端用户必须是 SSO 管理员帐户的成员才能创建适配器。  
+
 ## <a name="user-action"></a>用户操作  
  若要解决此警告问题，请执行以下操作：  
-  
--   使用属于的 SSO 管理员组的帐户登录。  
-  
- 有关详细信息，请参阅下列资源：  
-  
--   [SSO 用户组](../core/sso-user-groups.md)
+
+- 登录所用帐户所属的 SSO 管理员组。  
+
+  有关详细信息，请参阅下列资源：  
+
+- [SSO 用户组](../core/sso-user-groups.md)

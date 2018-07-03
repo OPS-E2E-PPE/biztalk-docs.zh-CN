@@ -1,5 +1,5 @@
 ---
-title: 如何为 miis 进行密码同步配置 ENTSSO |Microsoft 文档
+title: 如何配置 ENTSSO 以实现 MIIS 密码同步 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,57 +12,57 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a1587c2e3c0d2164a7ffd3842b3d74df5b04685
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9aed37b5b3883242005f46dcc6a0253a4971d680
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248941"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005222"
 ---
 # <a name="how-to-configure-entsso-for-miis-password-sync"></a>如何配置 ENTSSO 以实现 MIIS 密码同步
 配置完 XML 文件和 Microsoft Identity Integration Server (MIIS) 后，其余配置步骤可在企业单一登录 (ENTSSO) 系统中进行。  
   
 ### <a name="to-allow-password-sync-from-miis"></a>从 MIIS 实现密码同步  
   
-1.  在 Enterprise 上单一登录，单击**服务器**节点。  
+1.  在企业单一登录，单击**服务器**节点。  
   
-2.  右键单击适当的服务器，然后单击**属性**。  
+2.  右键单击相应的服务器，然后单击**属性**。  
   
 3.  单击**密码同步**选项卡。  
   
-4.  选择**允许从 miis 进行密码同步**。  
+4.  选择**允许从 MIIS 密码同步**。  
   
-5.  单击 **“确定”**。  
+5.  单击“确定” 。  
   
 ### <a name="to-enable-password-sync-on-the-system-level"></a>启用系统级别的密码同步  
   
-1.  在 Enterprise 上单一登录，右键单击**系统**节点。  
+1. 在企业单一登录，右键单击**系统**节点。  
   
-2.  单击 **“属性”**。  
+2. 单击 **“属性”**。  
   
-     **属性**对话框随即出现。  
+    **属性**对话框随即出现。  
   
-3.  单击**选项**选项卡。  
+3. 单击**选项**选项卡。  
   
-4.  在**启用密码同步**字段中，选择**从 Windows 到适配器**。  
+4. 在中**启用密码同步**字段中，选择**从 Windows 到适配器**。  
   
-     **其他配置**  
+    **其他配置**  
   
-     最后，您必须配置以下内容之一：  
+    最后，您必须配置以下内容之一：  
   
-    -   接受 Windows 密码同步的密码同步适配器。  
+   - 接受 Windows 密码同步的密码同步适配器。  
   
-    -   至少对一个应用程序启用直接密码同步。  
+   - 至少对一个应用程序启用直接密码同步。  
   
      有关如何进行此操作的信息，请参阅“密码同步”文档。  
   
 ### <a name="to-configure-the-entsso-ma-for-miis-password-sync"></a>配置 EntSSO MA 以实现 MIIS 密码同步  
   
-1.  ENTSSO 管理代理上**属性**页上，单击**配置扩展**。  
+1.  在 ENTSSO 管理代理上**属性**页上，单击**配置扩展**。  
   
-2.  在**密码扩展的连接信息**字段中，单击**设置**。  
+2.  在中**密码扩展的连接信息**字段中，单击**设置**。  
   
-3.  在**连接到**字段中，输入将接收密码更改的计算机的名称。  
+3.  在中**连接到**字段中，输入将接收密码更改的计算机的名称。  
   
      该计算机名必须采用为该域上的 ENTSSO 服务创建服务主体名称 (SPN) 时所使用的同一格式。  
   
@@ -74,25 +74,25 @@ ms.locfileid: "22248941"
   
 ### <a name="additional-configuration-steps"></a>其他配置步骤  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft Identity Integration Server**，然后单击**Identity Manager**。  
+1.  单击**启动**，依次指向**所有程序**，指向**Microsoft Identity Integration Server**，然后单击**Identity Manager**。  
   
 2.  在“工具”  菜单上，单击“选项” 。  
   
 3.  选择**启用密码同步**。  
   
-4.  在**管理代理查看**，选择**ADMA**。  
+4.  在中**查看管理代理**，选择**ADMA**。  
   
-5.  在**操作**窗格中，选择**属性**。  
+5.  在中**操作**窗格中，选择**属性**。  
   
-6.  上**属性**页上，选择**配置目录分区**，然后选择**启用密码同步源作为此分区**。  
+6.  上**属性**页上，选择**配置目录分区**，然后选择**使该分区作为密码同步源**。  
   
-7.  单击**目标**，然后选择 ENTSSOMA2 以使其能够接收从 miis 进行密码更改。 取消选择 ENTSSOMA。 单击**确定**，然后单击**确定**试。  
+7.  单击**目标**，然后选择 ENTSSOMA2 使其能够从 MIIS 接收密码更改。 取消选择 ENTSSOMA。 单击**确定**，然后单击**确定**试。  
   
-8.  在**管理代理**视图中，选择**ENTSSOMA2**。 在右侧窗格中，选择**属性**。 上**属性**页上，单击**配置扩展**。  
+8.  在中**管理代理**视图中，选择**ENTSSOMA2**。 在右侧窗格中，选择**属性**。 上**属性**页上，单击**配置扩展**。  
   
-9. 确认**启用密码管理**已选择，然后单击**设置**。  
+9. 确认**启用密码管理**已选中，然后单击**设置**。  
   
-10. 在**连接设置**对话框中，指定下列各项：  
+10. 在中**连接设置**对话框中，指定以下内容：  
   
     -   连接到： INTSVR1.fabrikam.com  
   
@@ -105,7 +105,7 @@ ms.locfileid: "22248941"
   
 11. 单击**确定**，然后单击**确定**试。  
   
-12. 您也可以禁用 MIIS 的密码同步。 为此，请在**Identity Manager**，单击**工具**菜单上，单击**选项**，然后取消选中**启用密码同步**。  
+12. 您也可以禁用 MIIS 的密码同步。 若要执行此操作，在**标识管理器**，单击**工具**菜单中，单击**选项**，然后取消选中**启用密码同步**。  
   
      将应用下列限制：  
   
@@ -115,5 +115,5 @@ ms.locfileid: "22248941"
   
 13. 在 ENTSSO 管理代理的 MIIS 连接配置中配置“密码扩展”时，指定帐户必须与将从 MIIS 接收密码的 ENTSSO 服务器的服务帐户相匹配。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何使用 ENTSSO 管理代理](../core/how-to-use-the-entsso-management-agent.md)

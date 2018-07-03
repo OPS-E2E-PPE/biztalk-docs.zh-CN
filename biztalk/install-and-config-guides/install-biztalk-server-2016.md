@@ -1,5 +1,5 @@
 ---
-title: 安装 BizTalk Server 2016 |Microsoft 文档
+title: 安装 BizTalk Server 2016 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f89aa7599040a2cc6c50f11b70c2751fcf2df1ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f6c6868302554aa14d80c296955e657c9f171d6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299973"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003734"
 ---
 # <a name="install-biztalk-server-2016"></a>安装 BizTalk Server 2016
 在单台计算机上安装 BizTalk Server。
@@ -43,7 +43,7 @@ ms.locfileid: "22299973"
 ## <a name="install-biztalk-server"></a>安装 BizTalk Server
 1. 关闭所有打开的程序。 以管理员身份运行 BizTalk Server 安装程序。
 2. 选择“安装 Microsoft BizTalk Server 2016”。
-3. 输入“用户名”、“组织”和产品密钥。 选择“下一步”。
+3. 输入“用户名”、“组织”和产品密钥。 选择“下一步” 。
 4. 接受许可协议，然后选择“下一步”。
 5. 选择参与客户体验改善计划，然后选择“下一步”。
 6. 选择想要安装的组件：
@@ -54,23 +54,23 @@ ms.locfileid: "22299973"
   
     ![bts2016install_additional](../install-and-config-guides/media/bts2016install-additional.gif)
 
-    选择“下一步”。   
+    选择“下一步” 。   
   
- 7. 具体取决于选择的组件，可能有一些其他系统必备组件，如 ADOMD.NET。 安装程序可自动安装所有可再发行的必备组件。 您的选择包括: 
-* **手动安装可再发行必备组件**：此选项会关闭安装向导，以便可以手动安装缺少的必备组件。
-* **自动从 Web 安装可再发行的必备组件**：默认选项。 需要 Internet 访问权限。
-* **下载可再发行的必备组件 CAB 文件**：下载 CAB 文件，以便稍后进行安装。
-* **自动从 CAB 文件安装可再发行的必备组件**：如果之前已下载 CAB 文件，则选择此选项可使用这些 CAB 文件。 
+   7. 具体取决于选择的组件，可能有一些其他系统必备组件，如 ADOMD.NET。 安装程序可自动安装所有可再发行的必备组件。 您的选择包括: 
+7. **手动安装可再发行必备组件**：此选项会关闭安装向导，以便可以手动安装缺少的必备组件。
+8. **自动从 Web 安装可再发行的必备组件**：默认选项。 需要 Internet 访问权限。
+9. **下载可再发行的必备组件 CAB 文件**：下载 CAB 文件，以便稍后进行安装。
+10. **自动从 CAB 文件安装可再发行的必备组件**：如果之前已下载 CAB 文件，则选择此选项可使用这些 CAB 文件。 
 
-  选择“下一步”。
+    选择“下一步” 。
   
-8. 查看摘要页。 若要进行任何更改，请选择“返回”以选中或取消选中任何组件。 
+11. 查看摘要页。 若要进行任何更改，请选择“返回”以选中或取消选中任何组件。 
 
-     若要使系统在重新启动后自动登录，请选择“设置”，然后输入登录帐户。 仅在 BizTalk 安装程序中启用此设置。 安装完成后，会禁用此设置。 
+      若要使系统在重新启动后自动登录，请选择“设置”，然后输入登录帐户。 仅在 BizTalk 安装程序中启用此设置。 安装完成后，会禁用此设置。 
 
-    选择“安装”。
+     选择“安装”。
   
-9. 若要立即配置 BizTalk，请选中“启动 BizTalk Server 配置”。 如果不想立即配置 BizTalk，则取消选中此选项，然后选择“完成”关闭安装向导。 
+12. 若要立即配置 BizTalk，请选中“启动 BizTalk Server 配置”。 如果不想立即配置 BizTalk，则取消选中此选项，然后选择“完成”关闭安装向导。 
 
 安装日志文件生成于临时文件夹，如下所示：`C:\Users\*username*\AppData\Local\Setup(011217 xxxxxx).htm`
   

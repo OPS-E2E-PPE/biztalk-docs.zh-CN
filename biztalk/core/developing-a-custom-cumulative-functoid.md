@@ -1,5 +1,5 @@
 ---
-title: 开发自定义的累积 Functoid |Microsoft 文档
+title: 开发自定义累计 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f69ae870269948358f117b07f37d481faced160
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8763f557c5bacb13b3fbc1542216d9eb9be8d319
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22242325"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008526"
 ---
-# <a name="developing-a-custom-cumulative-functoid"></a>开发自定义的累积 Functoid
+# <a name="developing-a-custom-cumulative-functoid"></a>开发自定义的累计 Functoid
 使用自定义累计 functoid 可以对在一个实例消息中多次出现的值执行累计操作。  
   
  在开发累计 functoid 时，必须实现三个函数。 这三个函数对应于映射执行累计所需的初始化、累计和获取操作。 在讨论这些函数之前，有必要讨论一下线程安全。  
@@ -27,15 +27,15 @@ ms.locfileid: "22242325"
 ## <a name="writing-a-thread-safe-functoid"></a>编写线程安全 Functoid  
  functoid 代码必须为线程安全代码，因为在任务繁忙时，可以同时运行多个映射实例。 应记住以下几点：  
   
--   静态状态必须是线程安全的。  
+- 静态状态必须是线程安全的。  
   
--   实例状态并非始终需要是线程安全的。  
+- 实例状态并非始终需要是线程安全的。  
   
--   在设计时应考虑在任务繁忙时的运行情况。 应尽可能避免进行锁定。  
+- 在设计时应考虑在任务繁忙时的运行情况。 应尽可能避免进行锁定。  
   
--   应尽可能避免进行同步。  
+- 应尽可能避免进行同步。  
   
- BizTalk Server 提供了一种简单机制，可降低编写线程安全累计 functoid 的复杂度。 所有这三个函数的第一个参数都相同，均为整数索引值。 BizTalk Server 在调用您的初始化函数时会为索引值分配一个唯一的编号。 您可以使用此值作为存放累计值的数组的索引，如以下代码所示：  
+  BizTalk Server 提供了一种简单机制，可降低编写线程安全累计 functoid 的复杂度。 所有这三个函数的第一个参数都相同，均为整数索引值。 BizTalk Server 在调用您的初始化函数时会为索引值分配一个唯一的编号。 您可以使用此值作为存放累计值的数组的索引，如以下代码所示：  
   
 ```  
 private HashTable cumulativeArray = new HashTable();  
@@ -59,7 +59,7 @@ public string InitCumulativeMultiply(int index)
 |函数用途|参数|设置引用|设置内联脚本|  
 |----------------------|---------------|------------------------|--------------------------|  
 |初始化|**int 索引**|**SetExternalFunctionName**|**SetScriptBuffer**与`functionNumber`= 0|  
-|累计|**int index、 string val、 string scope**|**SetExternalFunctionName2**|**SetScriptBuffer**与`functionNumber`= 1|  
+|累计|**int index、 string val、 string scope**|**使用 SetExternalFunctionName2**|**SetScriptBuffer**与`functionNumber`= 1|  
 |获取|**int 索引**|**SetExternalFunctionName3**|**SetScriptBuffer**与`functionNumber`= 2|  
   
 ### <a name="initialization"></a>初始化  
@@ -68,16 +68,16 @@ public string InitCumulativeMultiply(int index)
 ### <a name="cumulation"></a>累计  
  这是执行与您的 functoid 相应的累计操作的地方。 BizTalk Server 将传入以下三个参数：  
   
--   **索引。** 代表映射实例的整数值。 可以有多个映射实例在同时运行。  
+- **索引。** 代表映射实例的整数值。 可以有多个映射实例在同时运行。  
   
--   **Val。** 包含应累计的值的字符串。 除非是在编写字符串累计 functoid，否则该参数为数字值。  
+- **Val。** 包含应累计的值的字符串。 除非是在编写字符串累计 functoid，否则该参数为数字值。  
   
--   **作用域。** 包含有数值的字符串，指示应对哪个元素或属性值进行累计。 实际值通过实现来确定。  
+- **作用域。** 包含有数值的字符串，指示应对哪个元素或属性值进行累计。 实际值通过实现来确定。  
   
- 由您决定要累计哪些值以及要忽略哪些值。 例如，您可以忽略不小于 0 的值，并在值不是数字时引发异常。 **BaseFunctoid**提供两个函数-**IsDate**和**IsNumeric**-有助于验证。  
+  由您决定要累计哪些值以及要忽略哪些值。 例如，您可以忽略不小于 0 的值，并在值不是数字时引发异常。 **BaseFunctoid**提供了两个函数 —**IsDate**并**IsNumeric**— 以协助您进行验证。  
   
 > [!NOTE]
->  如果你使用**IsDate**或**IsNumeric**在内联脚本中，请务必设置**RequiredGlobalHelperFunctions**以便函数都提供给你的脚本。  
+>  如果您使用**IsDate**或**IsNumeric**中的内联脚本，请务必设置**RequiredGlobalHelperFunctions**以便函数都提供给您的脚本。  
   
  不使用字符串返回值。  
   
@@ -185,7 +185,7 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
     }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 BaseFunctoid](../core/using-basefunctoid.md)   
- [开发自定义的内联 Functoid](../core/developing-a-custom-inline-functoid.md)   
- [自定义 Functoid （BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)
+ [开发自定义内联 Functoid](../core/developing-a-custom-inline-functoid.md)   
+ [自定义 Functoid（BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)

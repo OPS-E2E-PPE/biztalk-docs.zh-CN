@@ -1,5 +1,5 @@
 ---
-title: 处理字符串 Values2 |Microsoft 文档
+title: 处理字符串 Values2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 024663faa56d92361d861a61a0d64a4608839aa6
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 2c6b7fc4a1c8c7dfc4d3b43dedce7a5655097b60
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22246365"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993094"
 ---
 # <a name="handling-string-values"></a>处理字符串值
 本主题介绍如何将某些字符串参数配置为右对齐（并向左填充）。  
@@ -34,15 +34,15 @@ ms.locfileid: "22246365"
 ## <a name="types-of-string-values"></a>字符串值的类型  
  JD Edwards EnterpriseOne 通过其互操作层公开两种字符串值：  
   
--   char︰ 单个字符  
+- 单个字符的字符：  
   
--   最大长度字符串  
+- 最大长度字符串  
   
- JD Edwards EnterpriseOne 使用匈牙利语表示法来命名业务功能中这些类型的参数。 例如，这些类型的参数以下列字符开头：  
+  JD Edwards EnterpriseOne 使用匈牙利语表示法来命名业务功能中这些类型的参数。 例如，这些类型的参数以下列字符开头：  
   
--   c  
+- c  
   
--   sz  
+- sz  
   
 ### <a name="left-justified-values"></a>左对齐值  
  对于大多数 sz 类型的参数、最大长度字符串或字符数组，JD Edwards EnterpriseOne 期望左对齐值。 例如，对于最大长度为 40 的街道地址行，JD Edwards EnterpriseOne 期望（例如）：  
@@ -52,11 +52,11 @@ ms.locfileid: "22246365"
  使用空白填充到长度 40。 您不需要输入填充值，因为 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器为您提供此值。 只需要在您的客户端代码中输入“4567 Main St”。  
   
 ### <a name="right-justified-values"></a>右对齐值  
- 对于此类型的值的一些子集，JD Edwards EnterpriseOne 期望使用左边填充的右对齐值。 例如，对于业务 B4200310 源模块中的函数，参数 szBusinessUnit 是长度为 12。 此自变量表示工厂，例如生产设施。 对于工厂号 30，JD Edwards EnterpriseOne 期望以下列形式表示该值：  
+ 对于此类型的值的一些子集，JD Edwards EnterpriseOne 期望使用左边填充的右对齐值。 例如，对于 B4200310 源模块中的业务函数，参数 szBusinessUnit 是长度为 12。 此参数表示工厂，例如生产设施。 对于工厂号 30，JD Edwards EnterpriseOne 期望以下列形式表示该值：  
   
  "           30"  
   
- 若要输入一个值，将为右对齐，必须在名为 jdearglist.txt 输入参数。 生成架构时读取 jdearglist.txt。 此文本文件中的任何值将自动转换为右对齐值并使用空白填充左边。  
+ 若要输入一个值，将为右对齐，必须在称为 jdearglist.txt 文件中输入参数。 生成架构时将读取 jdearglist.txt。 此文本文件中的任何值将自动转换为右对齐值并使用空白填充左边。  
   
  必须使用文本编辑器创建 jdearglist.txt（使用描述这些参数的条目），并将其保存在以下文件夹中：  
   
@@ -90,5 +90,5 @@ B4200310.*.szBusinessUnit
 > [!NOTE]
 >  在将 JD Edwards EnterpriseOne 业务流程导入另一台计算机时，必须手动复制 jdearglist.txt。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [附录 B：数据类型](../core/appendix-b-data-types.md)

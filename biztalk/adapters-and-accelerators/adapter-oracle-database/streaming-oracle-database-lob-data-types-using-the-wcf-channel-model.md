@@ -1,5 +1,5 @@
 ---
-title: 流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型 |Microsoft 文档
+title: 流式处理使用 WCF 通道模型的 Oracle 数据库 LOB 数据类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0ee2f8d1c90f69a206a3006398d52e67f819e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa8a493c94761ce74d76885ee59fae1425c15523
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215789"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013838"
 ---
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端流式处理的某些操作的 LOB 数据。 本主题中的各节描述了如何实现流式处理 LOB 数据时使用 WCF 通道模型。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端的流式处理的 LOB 数据的某些操作。 本主题中的部分介绍如何实现流式处理 LOB 数据时使用的 WCF 通道模型。  
   
- 有关如何的适配器支持流式处理 LOB 数据类型的背景信息，请参阅[流式处理 Oracle 数据库适配器中的大型对象数据类型](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。 您应该阅读然后再继续本主题。  
+ 有关如何在适配器支持流式处理 LOB 数据类型的背景信息，请参阅[流式处理大型对象数据类型在 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。 您应阅读本主题继续操作之前。  
   
- 演示 LOB 数据进行流式处理的示例位于附带的 SDK 示例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 有关详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
+ LOB 数据进行流式处理演示的示例现已推出附带的 SDK 示例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 有关详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
   
-## <a name="streaming-outbound-messages-to-the-adapter"></a>到适配器出站消息的流处理  
- 适配器支持 UpdateLOB 操作的请求消息流式处理的端到端 LOB 数据。  
+## <a name="streaming-outbound-messages-to-the-adapter"></a>流式处理到适配器的出站消息  
+ 该适配器支持 UpdateLOB 操作的请求消息流式处理的端到端 LOB 数据。  
   
- 若要支持端到端流式处理 UpdateLOB 操作以 WCF 通道模型，你必须：  
+ 若要支持端到端流式处理中的 WCF 通道模型 UpdateLOB 操作，必须：  
   
 1.  设置**UseAmbientTransaction**绑定属性为 true。  
   
-2.  实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。  
+2.  实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 LOB 数据 （执行流式处理 LOB 数据的节点的值）。  
   
-3.  执行 UpdateLOB 操作在事务范围内。  
+3.  执行 UpdateLOB 事务范围内的操作。  
   
-4.  创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用适当的重载**Message.Create**方法。  
+4.  创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用的适当重载**Message.Create**方法。  
   
 ### <a name="setting-the-useambienttransaction-binding-property"></a>设置绑定属性 UseAmbientTransaction  
- 下面的示例演示如何创建的绑定[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并设置**UseAmbientTransaction**绑定属性。  
+ 下面的示例演示如何为创建绑定[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并设置**UseAmbientTransaction**属性绑定。  
   
 ```  
 // Create binding  
@@ -55,7 +55,7 @@ binding.UseAmbientTransaction = true;
 ```  
   
 ### <a name="implementing-a-bodywriter"></a>实现 BodyWriter  
- 下面的示例演示如何实现**BodyWriter**执行节点值流式处理。  
+ 下面的示例演示的实现**BodyWriter**执行节点值流式处理。  
   
 ```  
 /// <summary>  
@@ -125,8 +125,8 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 }  
 ```  
   
-### <a name="perform-the-operations-within-a-transaction-scope"></a>执行在事务范围内的操作  
- 下面的示例演示如何执行事务范围内的操作。  
+### <a name="perform-the-operations-within-a-transaction-scope"></a>执行事务范围内的操作  
+ 下面的示例演示如何在事务作用域中执行操作。  
   
 ```  
 // Create a transaction scope  
@@ -165,31 +165,31 @@ using(TransactionScope tx = new TransactionScope())
   
 ```  
   
-## <a name="streaming-inbound-messages-from-the-adapter"></a>从适配器入站的消息的流处理  
- 适配器支持以下入站消息流式处理的端到端 LOB 数据：  
+## <a name="streaming-inbound-messages-from-the-adapter"></a>流式处理来自适配器的入站的消息  
+ 适配器支持以下入站消息的流式处理的端到端 LOB 数据：  
   
--   针对具有扩展的函数的响应消息或包含 LOB 数据的 IN OUT 参数。 请注意，记录类型参数可以包含 LOB 数据列。  
+- 具有扩展的函数的响应消息或包含 LOB 数据在 OUT 参数。 请注意记录类型参数可包含 LOB 数据列。  
   
--   针对包含 LOB 数据具有出 REF CURSOR 参数 （或返回值） 的函数的响应消息。 这包括 IN 出 REF CURSOR 参数的输出端。  
+- 包含 LOB 数据带出 REF CURSOR 参数 （或返回值） 的函数的响应消息。 这包括在 OUT REF CURSOR 参数在输出端。  
   
--   在使用过程的响应消息或包含 LOB 数据的 IN OUT 参数。 请注意，记录类型参数可以包含 LOB 数据列。  
+- 用于过程以及在响应消息或包含 LOB 数据在 OUT 参数。 请注意记录类型参数可包含 LOB 数据列。  
   
--   带出 REF CURSOR 参数包含 LOB 数据的过程的响应消息。 这包括输出一端 IN 出 REF CURSOR 参数  
+- 带有 OUT REF CURSOR 参数包含 LOB 数据的过程的响应消息。 这包括在 OUT REF CURSOR 参数在输出端  
   
--   返回包含 LOB 数据的结果集的 SQLEXECUTE 操作的响应消息。  
+- 返回包含 LOB 数据的结果集的 SQLEXECUTE 操作的响应消息。  
   
--   对于结果中返回 LOB 数据的表或视图选择操作的响应消息设置。  
+- 设置表或视图返回结果中的 LOB 数据的 Select 操作的响应消息。  
   
--   （入站） 的 POLLINGSTMT 操作的请求消息  
+- （入站） POLLINGSTMT 操作的请求消息  
   
- 若要支持端到端流式处理入站消息中的 WCF 通道模型，你必须：  
+  若要支持端到端流式处理入站消息中的 WCF 通道模型上，您必须：  
   
-1.  实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。  
+1.  实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 LOB 数据 （执行流式处理 LOB 数据的节点的值）。  
   
-2.  使用**消息**通过调用**WriteBodyContents**方法与此**XmlDictionaryWriter**。  
+2.  占用**消息**通过调用**WriteBodyContents**方法与此**XmlDictionaryWriter**。  
   
 ### <a name="implementing-an-xmldictionarywriter"></a>实现 XmlDictionaryWriter  
- 下面的示例演示如何实现**XmlDictionaryWriter**执行节点值流式处理。  
+ 下面的示例演示的实现**XmlDictionaryWriter**执行节点值流式处理。  
   
 ```  
 using System;  
@@ -334,7 +334,7 @@ class FileXmlWriter : XmlDictionaryWriter
 ```  
   
 ### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a>通过使用 XmlDictionaryWriter 来使用一条消息  
- 下面的示例演示如何使用表选择响应消息使用**FileXmlWriter**实现在前面的示例。 ( **FileWriter**类由子类分类**XmlDictionaryWriter**。)该示例使用**IRequestChannel**通道以调用选择操作。 省略了创建频道的详细信息。 从文件读取选择的请求消息和选择响应消息写入到文件。  
+ 下面的示例演示如何使用表选择响应消息使用**FileXmlWriter**在前面的示例中实现。 ( **FileWriter**类创建子类**XmlDictionaryWriter**。)该示例使用**IRequestChannel**通道来调用选择操作。 省略了创建通道的详细信息。 从文件读取选择请求消息，并选择响应消息写入到文件。  
   
 ```  
 // Read Select message body from a file  
@@ -354,7 +354,7 @@ fileXmlWriter.Close();
 OutputMsg.Close();  
 ```  
   
- 下面的 XML 演示选择操作的请求消息 （select.xml 文件的内容）。 CUSTOMER 表包含一个名为照片的 BLOB 列。  
+ 以下 XML 显示在选择操作的请求消息 （select.xml 文件的内容）。 CUSTOMER 表包含名为 PHOTO 的 BLOB 列。  
   
 ```  
 <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
@@ -363,5 +363,5 @@ OutputMsg.Close();
 </Select>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Oracle 数据库应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)

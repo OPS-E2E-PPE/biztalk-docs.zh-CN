@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 启用批处理业务流程 |Microsoft 文档
+title: 步骤 2： 启用批处理业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f8b18e41aacf61ac4e55e1c8047e9685179656a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b44dd71c44f2510b6ccd80a731dd21739ed7055
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206253"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996166"
 ---
 # <a name="step-2-enable-the-batch-orchestration"></a>步骤 2： 启用批处理业务流程
-批处理业务流程控制创建批处理。 它维护有关要包括在批处理中的所有消息的引用、 控制出站批处理事务、 生成批处理消息，将路由传出的批处理，并处理传入确认批。 你需要登记创建批处理进程工作批次业务流程。  
+批处理业务流程控制创建批处理过程。 它维护要包含在批处理中的所有消息的引用、 控制出站批事务、 生成批消息，将路由传出批，和处理传入确认批。 您需要创建批处理过程，以便批处理业务流程登记。  
   
 ### <a name="to-enable-the-batch-orchestration"></a>若要启用批处理业务流程  
   
-1.  在 BizTalk 管理控制台中，单击**业务流程**，右键单击**BatchOrchestration.Orchestration_1**，然后单击**属性**。  
+1. 在 BizTalk 管理控制台中，单击**业务流程**，右键单击**BatchOrchestration.Orchestration_1**，然后单击**属性**。  
   
-2.  在控制台树中，业务流程属性对话框中单击**绑定**。  
+2. 在业务流程属性对话框中，在控制台树中，单击**绑定**。  
   
-3.  在**绑定**窗格中，为**主机**，选择**BizTalkServerApplication**。 单击 **“确定”**。  
+3. 在中**绑定**窗格中，对于**主机**，选择**BizTalkServerApplication**。 单击“确定” 。  
   
-4.  在 BizTalk 管理控制台中，右键单击**BatchOrchestration.Orchestration_1**，然后单击**Enlist**。  
+4. 在 BizTalk 管理控制台中，右键单击**BatchOrchestration.Orchestration_1**，然后单击**登记**。  
   
- 继续执行[步骤 3： 创建和配置目标方](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)。
+   请继续执行[步骤 3： 创建和配置目标参与方](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)。

@@ -1,5 +1,5 @@
 ---
-title: 可恢复的交换处理 |Microsoft 文档
+title: 可恢复交换处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -30,28 +30,28 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b341b3673cd7118d459197fecea1eca25efe4e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdcd48efee84c1bd36df161180a5fe393f570a60
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268261"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37000878"
 ---
-# <a name="recoverable-interchange-processing"></a>可恢复的交换处理
-本部分讨论**可恢复的交换处理**功能，允许进行完全处理，即使在每个阶段的阶段以下一个或多个消息交换中的失败的交换：  
+# <a name="recoverable-interchange-processing"></a>可恢复交换处理
+本部分讨论**可恢复交换处理**功能，它允许的交换进行完全处理，即使交换中的一个或多个消息失败，在以下阶段：  
   
--   接收管道的拆装阶段  
+- 接收管道的拆装阶段  
   
--   接收管道的 XML 验证阶段  
+- 接收管道的 XML 验证阶段  
   
--   接收端口的映射执行阶段  
+- 接收端口的映射执行阶段  
   
- 需要支持包含多个可标识消息的单个交换的处理时激发可恢复交换处理，以便有效消息通过消息传送路径传播，而无效消息被挂起。 使用标准交换处理，给定交换中存在的任何无效消息都会导致整个交换被挂起，即使交换中包含一个或多个有效消息。  
+  需要支持包含多个可标识消息的单个交换的处理时激发可恢复交换处理，以便有效消息通过消息传送路径传播，而无效消息被挂起。 使用标准交换处理，给定交换中存在的任何无效消息都会导致整个交换被挂起，即使交换中包含一个或多个有效消息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [反汇编阶段 （可恢复的交换处理）](../core/disassembly-stage-recoverable-interchange-processing.md)  
+-   [反汇编阶段（可恢复交换处理）](../core/disassembly-stage-recoverable-interchange-processing.md)  
   
--   [XML 验证阶段 （可恢复的交换处理）](../core/xml-validation-stage-recoverable-interchange-processing.md)  
+-   [XML 验证阶段（可恢复交换处理）](../core/xml-validation-stage-recoverable-interchange-processing.md)  
   
--   [映射阶段 （可恢复的交换处理）](../core/mapping-phase-recoverable-interchange-processing.md)
+-   [映射阶段（可恢复的交换处理）](../core/mapping-phase-recoverable-interchange-processing.md)

@@ -1,5 +1,5 @@
 ---
-title: AS2 发送组件 |Microsoft 文档
+title: AS2 发送组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1dbee64dc2e3484e85e6d8e41ce31a77713ffec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3378dbb623c2d47a56946805908f9d104500a8ac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231965"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994558"
 ---
 # <a name="as2-send-components"></a>AS2 发送组件
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用若干个组件来发送 AS2 消息。  
@@ -30,32 +30,32 @@ ms.locfileid: "22231965"
   
  **AS2EDISend 管道**  
   
- 此管道生成 EDI 消息并通过 AS2 发送这些消息。 管道包含以下管道组件：  
+ 此管道生成 EDI 消息并通过 AS2 发送这些消息。 管道由以下管道组件组成：  
   
--   EDI 组装器  
+- EDI 组装器  
   
--   AS2 编码器  
+- AS2 编码器  
   
- 此管道不用于生成和通过 AS2 发送 MDN，因为 MDN 不需要由 EDI 组装器处理。 使用 AS2SendPipeline 发送 MDN。  
+  此管道不用于生成和通过 AS2 发送 MDN，因为 MDN 不需要由 EDI 组装器处理。 使用 AS2SendPipeline 发送 MDN。  
   
 > [!NOTE]
 >  不支持从业务流程中运行 AS2EDISend 管道。  
   
  **AS2Send 管道**  
   
- 如果消息未以 EDI 编码，则此管道通过 AS2 发送消息。 此管道还通过 AS2 发送 MDN。 管道包含以下管道组件：  
+ 如果消息未以 EDI 编码，则此管道通过 AS2 发送消息。 此管道还通过 AS2 发送 MDN。 管道由以下管道组件组成：  
   
--   AS2 编码器。  
+- AS2 编码器。  
   
- 如果要通过 AS2 发送的消息既不是 EDI 消息，也不是 XML 消息，则可以创建一个自定义 AS2Send 管道来处理这些消息。 此管道必须具有自定义组装器，以便将 BizTalk Server 中的中间 XML 转换为其他格式后再以 EDIINT/AS2 对消息进行编码。  
+  如果要通过 AS2 发送的消息既不是 EDI 消息，也不是 XML 消息，则可以创建一个自定义 AS2Send 管道来处理这些消息。 此管道必须具有自定义组装器，以便将 BizTalk Server 中的中间 XML 转换为其他格式后再以 EDIINT/AS2 对消息进行编码。  
   
 > [!NOTE]
 >  不支持从业务流程运行 AS2Send 管道。  
   
 ## <a name="as2-send-pipeline-components"></a>AS2 发送管道组件  
- AS2 发送管道使用以下管道组件。 这些组件安装在`Microsoft.BizTalk.EdiInt.PipelineComponents.dll`中 files\microsoft BizTalk Server 20xx\Pipeline 组件\\。  
+ AS2 发送管道使用以下管道组件。 这些组件安装在`Microsoft.BizTalk.EdiInt.PipelineComponents.dll`\Program Files\Microsoft BizTalk Server 20xx\Pipeline Components 中\\。  
   
- **EDI 汇编器**  
+ **EDI 组装器**  
   
  在 EDIINT 发送管道中，EDI 组装器将对 EDI 交换进行序列化。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "22231965"
   
 -   压缩消息（如果已启用）（适用于 EDI/AS2，不适用于 MDN）  
   
--   将负载存储在连网格式，如果**为出站的已解码 AS2 消息启用 NRR**属性选择，并将该消息存储在连网格式，如果**为出站的已编码 AS2 消息启用 NRR**选择属性  
+-   如果以传输格式存储负载**已为解码后的出站 AS2 消息启用 NRR**属性选择，并且将该消息以传输格式存储，如果**已为出站编码 AS2 消息启用 NRR**选择属性  
   
 -   计算 MIC 值并将其存储在数据存储区中  
   
@@ -89,22 +89,22 @@ ms.locfileid: "22231965"
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用不可否认数据库（BizTalkDTADb 数据库的 EdiMessageContent 表）执行以下操作：  
   
 > [!NOTE]
->  仅当不可否认性存储协议属性之一进行检查，EdiMessageContent 表 BizTalkDTADb 数据库中存在。  
+>  BizTalkDTADb 数据库中 EdiMessageContent 表存在，才选中一个不可否认存储协议属性。  
   
--   为签名的 MDN 提供不可否认性跟踪  
+-   为经过签名的 MDN 提供不可否认记录  
   
--   将出站消息具有其传入 MDN 相互关联  
+-   将出站消息与其传入 mdn 关联起来  
   
 -   存储通过各种状态更改的消息  
   
 -   将错误代码与 HTTP 响应和 MDN 关联起来  
   
--   显示根据筛选器条件的记录  
+-   显示根据筛选条件的记录  
   
 -   将标记的记录存档  
   
 > [!IMPORTANT]
->  为确保不可否认数据库中存储的消息的验证和完整性，应对将存储在此数据库中的所有消息使用数字签名，原始 AS2 消息和 MDN 都包含在内。 有关详细信息，请参阅的部分 9.1 [RFC 1430，"MIME 基于安全对等的业务数据交换使用 HTTP，适用性语句 2 (AS2)"](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
+>  为确保不可否认数据库中存储的消息的验证和完整性，应对将存储在此数据库中的所有消息使用数字签名，原始 AS2 消息和 MDN 都包含在内。 有关详细信息，请参阅的 9.1 节[RFC 1430、"基于 MIME 的安全对等业务数据交换使用 HTTP，Applicability Statement 2 (AS2)"](http://go.microsoft.com/fwlink/?LinkID=184212) ([http://go.microsoft.com/fwlink/?LinkID=184212](http://go.microsoft.com/fwlink/?LinkID=184212))。  
   
-## <a name="see-also"></a>另请参阅  
- [BizTalk Server 将 AS2 消息的发送](../core/how-biztalk-server-sends-as2-messages.md)
+## <a name="see-also"></a>请参阅  
+ [BizTalk Server 如何发送 AS2 消息](../core/how-biztalk-server-sends-as2-messages.md)

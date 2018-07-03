@@ -1,5 +1,5 @@
 ---
-title: 可接受的 X12 功能组控制编号已达到来宾设置的最大限制 |Microsoft 文档
+title: 可接受 X12 功能组控制编号已达到来宾设置的最大限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3210fb773b7093c2e28f98e0cf1aa223e1a63936
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70855ad87ad18c29c51a4d87878339b014bb47d8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241629"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010406"
 ---
 # <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-guest-settings"></a>已达到“来宾”设置的可接受 X12 功能组控制编号最大限制
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|GlobalEdifactUnhNumberError|  
-|消息正文|已达到“来宾”设置的可接受 X12 功能组控制编号最大限制。 导航到合作伙伴协议管理器的全局配置接收方角色屏幕中的字段 GS 6 可重置计数器|  
+|                 |                                                                                                                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                               |
+| 产品版本 |                                                                          [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                           |
+|    事件 ID     |                                                                                                       -                                                                                                       |
+|  事件源   |                                                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                             |
+|    组件    |                                                                                                  EDI 引擎                                                                                                   |
+|  符号名称  |                                                                                          GlobalEdifactUnhNumberError                                                                                          |
+|  消息正文   | 已达到“来宾”设置的可接受 X12 功能组控制编号最大限制。 导航到合作伙伴协议管理器的全局配置接收方角色屏幕中的字段 GS 6 可重置计数器 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理传出的 X12 交换，因为在全局设置中指定的 GS06 字段中的组控制编号大于所允许的最大值。 组控制编号的最大字符数为 9。  

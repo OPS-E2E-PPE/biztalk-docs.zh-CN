@@ -1,5 +1,5 @@
 ---
-title: SSO 安全建议 |Microsoft 文档
+title: SSO 安全建议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -35,15 +35,15 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a86e669e603eaabf142ce446b8d7204a6cc0091
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4877bdb4ea7f19a1ff8ec93dcee2e6910ef8891f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279837"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007118"
 ---
 # <a name="sso-security-recommendations"></a>SSO 安全建议
-利用企业单一登录 (SSO) 系统，用户只需使用一组凭据即可连接到不同的系统。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用的敏感信息的存储区作为 SSO 系统。 虽然只要安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 便会自动安装企业单一登录，但您也可以独立于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境将企业单一登录作为独立的组件进行安装。 有关企业单一登录的详细信息，请参阅[使用 SSO](../core/using-sso.md)。 建议遵循以下准则，以保护环境中企业单一登录 (SSO) 服务和资源的安全并对其进行部署。  
+利用企业单一登录 (SSO) 系统，用户只需使用一组凭据即可连接到不同的系统。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 利用 SSO 系统来存储敏感信息。 虽然只要安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 便会自动安装企业单一登录，但您也可以独立于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境将企业单一登录作为独立的组件进行安装。 有关企业单一登录的详细信息，请参阅[使用 SSO](../core/using-sso.md)。 建议遵循以下准则，以保护环境中企业单一登录 (SSO) 服务和资源的安全并对其进行部署。  
   
 ## <a name="general-deployment-recommendations-for-sso"></a>SSO 的一般性部署建议  
   
@@ -51,7 +51,7 @@ ms.locfileid: "22279837"
   
 -   您的环境中必须有一个时间服务器，以确保所有 SSO 服务器保持同步。 如果 SSO 服务器上的时钟不同步，可能会危及环境的安全。  
   
--   假设您的整个环境中只有一个主密钥服务器，建议为该主密钥服务器使用主动-被动群集配置。 有关群集的主密钥服务器的详细信息，请参阅[如何安装群集主密钥服务器](../core/how-to-cluster-the-master-secret-server1.md)。  
+-   假设您的整个环境中只有一个主密钥服务器，建议为该主密钥服务器使用主动-被动群集配置。 有关群集主密钥服务器的详细信息，请参阅[如何群集主密钥服务器](../core/how-to-cluster-the-master-secret-server1.md)。  
   
 -   主密钥服务器存放 SSO 系统用于对 SSO 数据库中的信息进行加密的加密密钥。 建议不要在此计算机上安装或配置任何其他产品或服务。  
   
@@ -83,13 +83,13 @@ ms.locfileid: "22279837"
   
 ## <a name="security-recommendations-for-an-sso-deployment"></a>SSO 部署的安全建议  
   
--   如果您的网络支持 Kerberos 验证，则应注册所有 SSO 服务器。 如果在主密钥服务器与 SSO 数据库之间使用 Kerberos 验证，则必须在该 SSO 数据库所在的 SQL Server 上配置服务主体名称 (SPN)。 有关配置服务主体名称的详细信息，请参阅 Microsoft 下载网站，网址[http://go.microsoft.com/fwlink/?LinkId=195797](http://go.microsoft.com/fwlink/?LinkId=195797)。  
+- 如果您的网络支持 Kerberos 验证，则应注册所有 SSO 服务器。 如果在主密钥服务器与 SSO 数据库之间使用 Kerberos 验证，则必须在该 SSO 数据库所在的 SQL Server 上配置服务主体名称 (SPN)。 有关配置服务主体名称的详细信息，请参阅 Microsoft 下载网站，网址[ http://go.microsoft.com/fwlink/?LinkId=195797 ](http://go.microsoft.com/fwlink/?LinkId=195797)。  
   
--   在运行 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 时，如果主密钥服务器位于与其他 SSO 服务器和 SSO 数据库不同的域中，则必须对主密钥服务器、SSO 服务器（处理域中的处理计算机）和 SSO 数据库禁用 RPC 安全性（用于计算机之间的数据事务处理协调器 (DTC) 验证）。 RPC 安全性是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 和 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 中的一项 DTC 功能。 当禁用 RPC 安全性后，RPC 调用的 DTC 身份验证安全级别将恢复为 Microsoft Windows Server 2003 中可用的级别。  
+- 在运行 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 时，如果主密钥服务器位于与其他 SSO 服务器和 SSO 数据库不同的域中，则必须对主密钥服务器、SSO 服务器（处理域中的处理计算机）和 SSO 数据库禁用 RPC 安全性（用于计算机之间的数据事务处理协调器 (DTC) 验证）。 RPC 安全性是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 和 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 中的一项 DTC 功能。 当禁用 RPC 安全性后，RPC 调用的 DTC 身份验证安全级别将恢复为 Microsoft Windows Server 2003 中可用的级别。  
   
--   SSO 管理员应定期监视主密钥服务器和 SSO 服务器中的事件日志，以查看 SSO 审核事件。  
+- SSO 管理员应定期监视主密钥服务器和 SSO 服务器中的事件日志，以查看 SSO 审核事件。  
   
--   除防火墙之外，建议在所有 SSO 服务器和 SSO 数据库之间使用 Internet 协议安全性 (IPSec) 或安全套接字层 (SSL)。 有关 SSL 的详细信息，请参阅在 Microsoft 帮助和支持网站[http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)。 有关所有 SSO 服务器与 SSO 数据库之间使用 SSL 的详细信息，请参阅[如何为 SSO 启用 SSL](../core/how-to-enable-ssl-for-sso.md)。  
+- 除防火墙之外，建议在所有 SSO 服务器和 SSO 数据库之间使用 Internet 协议安全性 (IPSec) 或安全套接字层 (SSL)。 有关 SSL 的详细信息，请参阅 Microsoft 帮助和支持网站上的[ http://go.microsoft.com/fwlink/?LinkId=195798 ](http://go.microsoft.com/fwlink/?LinkId=195798)。 有关所有 SSO 服务器和 SSO 数据库之间使用 SSL 的详细信息，请参阅[如何为 SSO 启用 SSL](../core/how-to-enable-ssl-for-sso.md)。  
   
 ## <a name="perimeter-network"></a>外围网络  
  在运行 Internet 信息服务 (IIS) 和企业单一登录时，请遵循以下建议：  
@@ -99,9 +99,9 @@ ms.locfileid: "22279837"
 -   不要打开 IIS 上的远程过程调用 (RPC) 端口。  
   
 ## <a name="sql-server-access"></a>SQL Server 访问  
- 所有 SSO 服务器都需要访问 SQL Server SSO 数据库。 有关如何为安全的 SQL Server 数据库的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=33175](http://go.microsoft.com/fwlink/?LinkId=33175)。  
+ 所有 SSO 服务器都需要访问 SQL Server SSO 数据库。 有关如何对保护 SQL Server 数据库的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=33175 ](http://go.microsoft.com/fwlink/?LinkId=33175)。  
   
- 建议使用安全套接字层 (SSL) 和/或 Internet 协议安全性 (IPSec) 来保护 SSO 服务器和 SSO 数据库之间的数据传输的安全。 有关使用 SSL 的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)。  
+ 建议使用安全套接字层 (SSL) 和/或 Internet 协议安全性 (IPSec) 来保护 SSO 服务器和 SSO 数据库之间的数据传输的安全。 有关使用 SSL 的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=195798 ](http://go.microsoft.com/fwlink/?LinkId=195798)。  
   
  若要仅为 SSO 服务器和 SSO 数据库之间的连接启用 SSL，可以使用 ssoconfig 实用工具在每个 SSO 服务器上设置 SSL 支持。 此选项允许 SSO 在访问 SSO 数据库时始终使用 SSL。 有关详细信息，请参阅[如何为 SSO 启用 SSL](../core/how-to-enable-ssl-for-sso.md)。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "22279837"
 ## <a name="kerberos"></a>Kerberos  
  SSO 支持 Kerberos，建议为 SSO 设置 Kerberos。 若要为 SSO 设置 Kerberos，必须为 SSO 服务注册安全主体名称 (SPN)。 默认情况下，在设置 Kerberos 时，SSO 使用该 SPN 来验证使用 SSO 服务的组件。 建议在 SSO 管理辅助服务和 SSO 服务器之间设置 Kerberos 验证。 也可以在 SSO 服务器之间以及 SSO 服务器和 SSO 数据库所在的 SQL Server 之间使用 Kerberos 验证。  
   
- 若要设置和验证 Kerberos，请使用 setspn 和 kerbtray 实用工具。 有关这些实用工具的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=33178](http://go.microsoft.com/fwlink/?LinkId=33178)。  
+ 若要设置和验证 Kerberos，请使用 setspn 和 kerbtray 实用工具。 有关这些实用工具的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=33178 ](http://go.microsoft.com/fwlink/?LinkId=33178)。  
   
 ## <a name="delegation"></a>委派  
  在使用 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 时，可以使用约束委托，但建议不要使用委托来执行单一登录管理员的任务。 同样，建议不要将其他任务或用户权限委托给单一登录管理员。  
@@ -125,23 +125,23 @@ ms.locfileid: "22279837"
 ## <a name="auditing"></a>审核  
  审核是跟踪环境中的信息的关键机制。 企业单一登录 (SSO) 将对 SSO 数据库中执行的所有操作进行审核。 SSO 使用数据库自身的事件日志和审核日志。 SSO 为单一登录服务器提供了两种审核级别：  
   
--   成功审核级别审核成功的操作  
+- 成功审核级别审核成功的操作  
   
--   失败审核级别审核失败的操作  
+- 失败审核级别审核失败的操作  
   
- SSO 管理员可以设置适合其公司策略的成功和失败审核级别。  
+  SSO 管理员可以设置适合其公司策略的成功和失败审核级别。  
   
- 您可以将成功和失败审核设置为以下级别之一：  
+  您可以将成功和失败审核设置为以下级别之一：  
   
- 0 = 无。 此级别不发出任何审核消息  
+  0 = 无。 此级别不发出任何审核消息  
   
- 1 = 低  
+  1 = 低  
   
- 2 = 中等  
+  2 = 中等  
   
- 3 = 高。 此级别发出尽可能多的审核消息  
+  3 = 高。 此级别发出尽可能多的审核消息  
   
- 正审核的默认值为 0 （无）、 和负审核的默认值为 1 （低）。 根据 SSO 系统所需的审核级别，您可能需要更改这些值。  
+  正审核的默认值为 0 （无）、 和失败审核的默认值为 1 （低）。 根据 SSO 系统所需的审核级别，您可能需要更改这些值。  
   
 > [!IMPORTANT]
 >  企业单一登录审核发出由单一登录服务生成的消息。 这不是安全审核，SSO 系统不会将该信息保存在事件日志的安全日志中。 SSO 系统将 SSO 审核消息直接保存到应用程序事件日志中。  
@@ -155,20 +155,20 @@ ms.locfileid: "22279837"
 ### <a name="domain-windows-groups-and-accounts"></a>域 Windows 组和帐户  
  在使用域 Windows 组时，请考虑以下建议：  
   
--   使用域组和域帐户。  
+- 使用域组和域帐户。  
   
--   使用 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 时，可将 ENTSSO 服务帐户配置为以 Network Service 帐户运行。 不过，出于安全方面的原因建议不使用该配置，因为将来需要授予 Network Service 帐户 SSO 管理员权限。 建议您为 ENTSSO 服务帐户使用唯一的域服务帐户。  
+- 使用 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 时，可将 ENTSSO 服务帐户配置为以 Network Service 帐户运行。 不过，出于安全方面的原因建议不使用该配置，因为将来需要授予 Network Service 帐户 SSO 管理员权限。 建议您为 ENTSSO 服务帐户使用唯一的域服务帐户。  
   
--   为 SSO 管理员使用域组。 不应将个人域帐户指定为 SSO 管理员，因为无法将此帐户从一个个人帐户更改为另一个个人帐户。  
+- 为 SSO 管理员使用域组。 不应将个人域帐户指定为 SSO 管理员，因为无法将此帐户从一个个人帐户更改为另一个个人帐户。  
   
--   虽然可以将个人域帐户指定为 SSO 关联管理员，但还是应使用域组。  
+- 虽然可以将个人域帐户指定为 SSO 关联管理员，但还是应使用域组。  
   
--   虽然可以将个人域帐户指定为应用程序管理员，但还是应使用域组。  
+- 虽然可以将个人域帐户指定为应用程序管理员，但还是应使用域组。  
   
--   必须为应用程序用户帐户使用域组。 SSO 应用程序用户帐户不支持个人帐户。  
+- 必须为应用程序用户帐户使用域组。 SSO 应用程序用户帐户不支持个人帐户。  
   
--   可以为这些 SSO 访问帐户中的每一个访问帐户指定多个帐户。  
+- 可以为这些 SSO 访问帐户中的每一个访问帐户指定多个帐户。  
   
-## <a name="see-also"></a>另请参阅  
- [企业单一登录服务器的端口](../core/ports-for-the-enterprise-single-sign-on-servers.md)   
+## <a name="see-also"></a>请参阅  
+ [用于企业单一登录服务器的端口](../core/ports-for-the-enterprise-single-sign-on-servers.md)   
  [最低安全用户权限](../core/minimum-security-user-rights.md)
