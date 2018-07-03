@@ -1,5 +1,5 @@
 ---
-title: BizTalk Accelerator for HL7 的工作原理 |Microsoft 文档
+title: BizTalk Accelerator for HL7 工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a1a8563e33aa6ad50ee552ec9824586ebd084cc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c923f81420910d5e41c846e1adfeee7f90fdd96
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205061"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996566"
 ---
-# <a name="how-biztalk-accelerator-for-hl7-works"></a>BizTalk Accelerator for HL7 的工作原理
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 基础上进行构建提供卫生保健解决方案[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它通过提供支持对于卫生保健的消息，并添加定制的消息处理对卫生保健的应用程序的特定卫生保健的组件来执行此操作。  
+# <a name="how-biztalk-accelerator-for-hl7-works"></a>BizTalk Accelerator for HL7 工作原理
+Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 通过基于 Microsoft 提供卫生保健解决方案[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它会通过提供支持对于卫生保健的消息，并添加定制的消息处理对卫生保健应用程序的特定于美国卫生保健的组件。  
   
- 有关详细信息，请参阅[什么 BizTalk Accelerator for HL7 将添加到 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)。  
+ 有关详细信息，请参阅[什么 BizTalk Accelerator for HL7 向 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

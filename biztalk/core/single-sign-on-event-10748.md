@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10748 |Microsoft 文档
+title: 单一登录： 事件 10748 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d83f0bfec0137e0788b55ca6aa5857f3dcfcc50
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f36c031e7ee84179c82a70cc8bbaaeca95df773
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276501"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013886"
 ---
 # <a name="single-sign-on-event-10748"></a>单一登录： 事件 10748
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10748|  
-|事件源|ENTSSO|  
-|组件|N\A|  
-|符号名称|SSO_WARN_PS_ADAPTER_NOT_RUNNING|  
-|消息正文|无法联系目标适配器。<br /><br /> 目标适配器可能无法运行或初始化。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> SSO 服务器名: %3 %r<br /><br /> 错误代码： %4|  
-  
+
+|                 |                                                                                                                                                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                              企业单一登录                                                                                              |
+| 产品版本 |                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                              |
+|    事件 ID     |                                                                                                        10748                                                                                                        |
+|  事件源   |                                                                                                       ENTSSO                                                                                                        |
+|    组件    |                                                                                                         N\A                                                                                                         |
+|  符号名称  |                                                                                           SSO_WARN_PS_ADAPTER_NOT_RUNNING                                                                                           |
+|  消息正文   | 无法联系目标适配器。<br /><br /> 目标适配器可能无法运行或初始化。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> SSO 服务器名称: %3 %r<br /><br /> 错误代码： %4 |
+
 ## <a name="explanation"></a>解释  
  此警告事件表明密码同步无法联系指定的密码同步适配器。  
-  
+
 ## <a name="user-action"></a>用户操作  
  若要解决此警告问题，请执行以下一项或多项操作：  
-  
--   检查外部适配器。  
-  
--   使用 MMC 管理单元或命令行工具启用适配器。  
-  
--   检查相关错误的系统和应用程序事件日志。  
-  
- 有关详细信息，请参阅下列资源：  
-  
--   [如何管理密码同步](../core/how-to-administer-password-synchronization.md)
+
+- 检查外部适配器。  
+
+- 使用 MMC 管理单元或命令行工具启用适配器。  
+
+- 检查相关错误的系统和应用程序事件日志。  
+
+  有关详细信息，请参阅下列资源：  
+
+- [如何管理密码同步](../core/how-to-administer-password-synchronization.md)

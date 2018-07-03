@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10651 |Microsoft 文档
+title: 单一登录： 事件 10651 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52573f68ed2dcadfcc3304c7d71b3ad1be9d2992
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fff78608420b9fc3856c29df214b33aa24ba3873
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007494"
 ---
 # <a name="single-sign-on-event-10651"></a>单一登录： 事件 10651
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10651|  
-|事件源|ENTSSO|  
-|组件|N\A|  
-|符号名称|SSO_INFO_PASSWORD_SYNC_STARTED|  
-|消息正文|已正确初始化密码同步服务。%r|  
-  
+
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  产品名称   |                 企业单一登录                  |
+| 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    事件 ID     |                           10651                            |
+|  事件源   |                           ENTSSO                           |
+|    组件    |                            N\A                             |
+|  符号名称  |               SSO_INFO_PASSWORD_SYNC_STARTED               |
+|  消息正文   |       已正确初始化密码同步服务。%r        |
+
 ## <a name="explanation"></a>解释  
  此信息事件表示已初始化密码同步服务。  
-  
+
 ## <a name="user-action"></a>用户操作  
-  
--   不需要用户进行任何操作。  
-  
- 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
-  
--   [密码同步](../core/password-synchronization2.md)  
-  
--   [如何管理密码同步](../core/how-to-administer-password-synchronization.md)
+
+- 不需要用户进行任何操作。  
+
+  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+
+- [密码同步](../core/password-synchronization2.md)  
+
+- [如何管理密码同步](../core/how-to-administer-password-synchronization.md)

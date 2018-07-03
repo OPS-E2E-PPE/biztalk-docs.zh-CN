@@ -1,5 +1,5 @@
 ---
-title: 段具有在组件或子组件级别的尾随 delimiter(s) |Microsoft 文档
+title: 段具有在组件或子组件级别上的尾部分隔符 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3eede2923da1ed206a897b879b7b6be589800e4c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 94b95e45cc4c6676bdbd2e787661a73547f45148
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269661"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024235"
 ---
 # <a name="segment-has-trailing-delimiters-at-component-or-sub-component-level"></a>段在组件或子组件级别上具有尾部分隔符
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12SeSegmentHasTrailingDelimiterDescription|  
-|消息正文|段在组件或子组件级别上具有尾部分隔符|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                      X12SeSegmentHasTrailingDelimiterDescription                       |
+|  消息正文   |         段在组件或子组件级别上具有尾部分隔符          |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的交换，因为该交换包含尾部分隔符，但没有为“作为交换发送方的参与方”启用尾部分隔符。  

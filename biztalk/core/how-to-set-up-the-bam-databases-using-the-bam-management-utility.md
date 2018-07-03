@@ -1,5 +1,5 @@
 ---
-title: 如何使用 BAM 管理实用工具的 BAM 数据库设置 |Microsoft 文档
+title: 如何使用 BAM 管理实用程序的 BAM 数据库设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8cee3564b90b730334d2d891edd2e9abc221a367
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6878e6aa3874384bd17f340c62421c432182f637
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971307"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001310"
 ---
-# <a name="how-to-set-up-the-bam-databases-using-the-bam-management-utility"></a>如何使用 BAM 管理实用工具 BAM 数据库设置
+# <a name="how-to-set-up-the-bam-databases-using-the-bam-management-utility"></a>如何设置 BAM 数据库使用 BAM 管理实用程序
 通常，管理员使用 BizTalk Server 配置实用程序来设置 BAM 数据库。 您可以使用 BAM 管理实用程序 (bm.exe) 作为设置数据库的备选方法。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  以下为执行本主题中的过程的前提条件：  
   
 -   必须对 BAMPrimaryImport、BAMStarSchema 和 BAMArchive 数据库的宿主 SQL Server 具有管理员权限。  
@@ -33,11 +33,11 @@ ms.locfileid: "25971307"
   
 ### <a name="to-set-up-the-bam-databases-using-the-bam-management-utility"></a>使用 BAM 管理实用程序设置 BAM 数据库  
   
-1.  如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
   
-3.  在命令行提示符下键入以下内容： **bm 安装程序数据库 ConfigFile:\<配置文件\>**，其中\<*配置文件*\>替换为你 BAM 配置文件的名称。 按 **Enter**。  
+3. 在命令行提示符下键入以下内容： **bm 设置数据库-ConfigFile:\<配置文件\>**，其中\<*配置文件*\>替换为您的 BAM 配置文件的名称。 按 **Enter**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

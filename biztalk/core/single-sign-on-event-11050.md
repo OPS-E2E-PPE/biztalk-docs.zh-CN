@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11050 |Microsoft 文档
+title: 单一登录： 事件 11050 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8314b58cf968a78b22e66783d0da8c36fac2873e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2406a29150710286a6560a2239315feaa10c42b6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276821"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021923"
 ---
 # <a name="single-sign-on-event-11050"></a>单一登录： 事件 11050
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11050|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_INFO_LINE|  
-|消息正文|SSO: %1 %r|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  产品名称   |                 企业单一登录                  |
+| 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    事件 ID     |                           11050                            |
+|  事件源   |                           ENTSSO                           |
+|    组件    |                            N/A                             |
+|  符号名称  |                       SSO_INFO_LINE                        |
+|  消息正文   |                         SSO: %1 %r                          |
   
 ## <a name="explanation"></a>解释  
  这是内部错误。  
   
 ## <a name="user-action"></a>用户操作  
- 如果你遇到此错误，请与 Microsoft 产品支持服务联系。
+ 如果遇到此错误，请联系 Microsoft 产品支持服务。

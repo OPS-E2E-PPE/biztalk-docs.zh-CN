@@ -1,5 +1,5 @@
 ---
-title: 发布的面向 Internet 的 Web 服务和 WCF 服务 |Microsoft 文档
+title: 面向 Internet 的 Web 服务和 WCF 服务发布 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e466c4fc2a5f83f5a8445601235b53f44404a912
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 32a0478e43f87dfbf29f736fde062c67fb4a94cc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009068"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009198"
 ---
-# <a name="publishing-internet-facing-web-services-and-wcf-services"></a>发布的面向 Internet 的 Web 服务和 WCF 服务
-可将多个方法用于发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务添加到 Internet:  
+# <a name="publishing-internet-facing-web-services-and-wcf-services"></a>发布面向 Internet 的 Web 服务和 WCF 服务
+可以使用多种方法进行发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务添加到 Internet:  
   
--   在外围网络 （也称为 DMZ、 外围安全区域和外围子网） 中使用反向代理规则。  
+- 外围网络 （也称为 DMZ、 外围安全区域和外围子网） 中使用反向代理规则。  
   
--   将运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，发布到外围网络域的 Web 服务或 WCF 服务。  
+- 将运行计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，将 Web 服务或 WCF 服务发布到外围网络域。  
   
--   使用 BizTalk Server 云启用程序功能来为 Azure AppFabric Service Bus 中继终结点发布的 Web 服务或 WCF 服务。  
+- 使用 BizTalk Server 云推动器功能将 Web 服务或 WCF 服务发布为 Azure AppFabric 服务总线中继终结点。  
   
 ## <a name="using-a-reverse-proxy"></a>使用反向代理  
- 这已发布的传统方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务。 外围网络中使用反向代理规则了需要具有位于外围网络中的 BizTalk server。 反向代理规则只需 HTTP 和 SOAP 请求转发从外围网络到运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]intranet 域中。  
+ 这一直是进行发布的传统方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务。 在外围网络中使用反向代理规则便无需使用 BizTalk server 将位于外围网络中。 反向代理规则只需将转发 HTTP 和 SOAP 请求从外围网络到运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]intranet 域中。  
   
  有关使用反向代理的详细信息，请参阅 BizTalk Server 帮助中的以下主题：  
   
@@ -39,15 +39,15 @@ ms.locfileid: "26009068"
   
 -   ["大型分布式体系结构"](http://go.microsoft.com/fwlink/?LinkId=153341) (http://go.microsoft.com/fwlink/?LinkId=153341)。  
   
-## <a name="using-computers-running-biztalk-server-in-the-perimeter-network"></a>使用在外围网络中运行 BizTalk Server 的计算机  
- 这不是首选的方法，用于发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务或 WCF 服务添加到 Internet，因为它需要运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]位于外围网络。 但是，不在外围网络中可用的反向代理时，你可以使用此方法。  
+## <a name="using-computers-running-biztalk-server-in-the-perimeter-network"></a>使用外围网络中运行 BizTalk Server 的计算机  
+ 这不是首选的方法进行发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务或 WCF 服务添加到 Internet，因为它需要运行的计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]位于外围网络中。 但是，不在外围网络中可用的反向代理时，您可以使用此方法。  
   
- 此方法需要单向信任关系的 intranet 域中进行登记的外围网络域 （但 intranet 域不信任外围网络域）。 IIS 应用程序池必须在"BizTalk 隔离主机用户"域组中的 intranet 域帐户下运行的 Web 服务或外围网络域中的 WCF 服务承载。 这使应用程序池所需的权限，以发布到消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MessageBox 数据库。  
+ 此方法要求要在与 intranet 域之间的单向信任中登记的外围网络域 （但 intranet 域不信任的外围网络域）。 IIS 应用程序池的 Web 服务或外围网络域中的 WCF 服务必须在"BizTalk Isolated Host Users"域组中的 intranet 域帐户下运行该主机。 这使应用程序池所需的权限，才能发布消息到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MessageBox 数据库。  
   
- 您必须在防火墙，以适应这打开特定端口。 有关所需的端口的详细信息，请参阅["端口接收和发送服务器的"](http://go.microsoft.com/fwlink/?LinkId=153342) (http://go.microsoft.com/fwlink/?LinkId=153342) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档。  
+ 必须为解决此问题在防火墙中打开特定端口。 有关所需的端口的详细信息，请参阅["端口用于接收和发送服务器"](http://go.microsoft.com/fwlink/?LinkId=153342) (<http://go.microsoft.com/fwlink/?LinkId=153342>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档。  
   
 ## <a name="exposing-biztalk-applications-on-the-cloud-using-appfabric-connect-for-services"></a>公开为服务使用 AppFabric 连接在云上的 BizTalk 应用程序  
- 请参阅文章[上使用适用于服务的 AppFabric 连接云中公开 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=204700)(http://go.microsoft.com/fwlink/?LinkID=204700) 有关的详细信息公开 BizTalk 应用程序作为云上的 WCF 服务。  
+ 请参阅文章[BizTalk 应用程序公开为服务使用 AppFabric 连接在云中](http://go.microsoft.com/fwlink/?LinkID=204700)(http://go.microsoft.com/fwlink/?LinkID=204700)有关详细信息将 BizTalk 应用程序公开为 WCF 服务在云上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [规划发布 Web Services1](../technical-guides/planning-for-publishing-web-services1.md)

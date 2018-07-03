@@ -1,5 +1,5 @@
 ---
-title: 消息分隔符 |Microsoft 文档
+title: 消息分隔符 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,32 +21,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e25e4fad2eb9e32c87f8a395bd924fc4a1f2eb5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 3339ded8edf46f7c5b96317cdf7a3ec822ec808b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960659"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001494"
 ---
 # <a name="message-delimiters"></a>消息分隔符
-由 HL7 标准定义的消息事件采用以下形式：  
+HL7 标准中定义的消息事件采用以下格式：  
   
--   **平面文件**。 由 HL7 版本 2.4 及更早版本定义的消息事件采用平面文件的格式。  
+- **平面文件**。 HL7 版本 2.4 及更早版本中定义的消息事件采用平面文件的形式。  
   
--   **XML**。 由 HL7 版本 2.XML 和版本 3 的消息事件采用 XML 文件的格式。  
+- **XML**。 定义的 HL7 版本 2.XML 和版本 3 的消息事件采用 XML 文件的形式。  
   
- 由于标准 HL7 未遵循位置格式，它使用分隔符来定义段、 字段、 组件和子组件级别的平面文件。 下表列出由 HL7 平面文件的默认分隔符。  
+  标准 HL7 不遵循位置格式，因为它使用分隔符来定义段、 字段、 组件和子组件级别的平面文件。 下表列出了 HL7 平面文件所使用的默认分隔符。  
   
-|分隔符|值|用法|  
+|分隔符|ReplTest1|用法|  
 |---------------|-----------|-----------|  
-|段终止符|\<cr\>|返回一个回车符终止段记录。 无法更改此值。|  
-|字段分隔符|&#124;|管道字符用于分隔段内的两个相邻的数据字段。 此字符，还会分隔分段 ID 从每个段中的第一个数据字段。|  
-|复合元素分隔符|^|Hat 字符分隔相邻组成部分数据字段在允许的 HL7 标准。|  
-|子组件分隔符|&|& 号字符分隔的数据的相邻子组件字段在允许的 HL7 标准。 如果有不需要子组件，则可以省略此字符。|  
-|重复分隔符|~|波形符字符分隔的组件或字段中的子组件的多个匹配项在允许的 HL7 标准。|  
-|转义字符|\|使用符合 ST、 德克萨斯州或 FT 数据类型，任何域或 ED 数据类型的数据 （第四个） 组件，你可以使用转义符。 如果在消息中不存在任何转义字符，则可以省略此字符。 但是，如果消息中使用子组件必须将其包含。|  
+|段终止符|\<cr\>|返回一个回车符将终止段记录。 不能更改此值。|  
+|字段分隔符|&#124;|管道字符用于分隔段中的两个相邻的数据字段。 此字符还用于分隔每个段中的第一个数据字段中的段 ID。|  
+|复合元素分隔符|^|Hat 字符分隔相邻组件的数据字段在允许的 HL7 标准。|  
+|子组件分隔符|&|一个 & 字符分隔相邻子组件的数据字段在允许的 HL7 标准。 如果不有任何子组件，则可以省略此字符。|  
+|重复分隔符|~|波形符字符分隔组件或字段中的子组件的多个匹配项在允许的 HL7 标准。|  
+|转义符|\|与符合到 ST、 德克萨斯州或 FT 数据类型，任何字段或 ED 数据类型的数据 （第四个） 组件，请使用转义符。 如果在消息中不存在任何转义字符，则可以省略此字符。 但是，如果消息中使用子组件必须将其包含。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [处理 HL7 消息](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md)   
  [消息处理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   
  [使用 HL7 2.X 架构](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10564 |Microsoft 文档
+title: 单一登录： 事件 10564 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7268b877a59fcd4e993a2c9009d48d73e5db9ac8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8be4ea87757a1fa0cb5d8ebd2e344ce521dbf740
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270293"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997142"
 ---
 # <a name="single-sign-on-event-10564"></a>单一登录： 事件 10564
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10564|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_ERROR_BACKUP_FILE_INCORRECT_FORMAT|  
-|消息正文|备份文件格式不正确。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  产品名称   |                 企业单一登录                  |
+| 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    事件 ID     |                           10564                            |
+|  事件源   |                           ENTSSO                           |
+|    组件    |                            N/A                             |
+|  符号名称  |           SSO_ERROR_BACKUP_FILE_INCORRECT_FORMAT           |
+|  消息正文   |     备份文件格式不正确。      |
   
 ## <a name="explanation"></a>解释  
  备份文件格式不正确。  

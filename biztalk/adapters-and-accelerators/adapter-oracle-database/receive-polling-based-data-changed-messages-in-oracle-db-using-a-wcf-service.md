@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 服务模型的 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft 文档
+title: 使用 WCF 服务模型的 Oracle 数据库中接收基于轮询的数据更改消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,62 +16,62 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd36081bd92c3bfae13916ed7d984fcd5de9763f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: cda98a1600df28fab476114e697cd47e24316251
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "22217221"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012598"
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>使用 WCF 服务模型的 Oracle 数据库中接收基于轮询的数据更改消息
-你可以配置[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]接收基于轮询的数据更改消息所依据的 Oracle 表或视图。 若要接收数据更改的消息，该适配器定期执行针对一个 Oracle 表或视图后, 跟一个可选的 PL/SQL 代码块的 SQL 查询。 然后返回 SQL 查询的结果[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]到应用程序作为强类型的结果集在入站 POLLINGSTMT 操作中。 有关用于配置和对 Oracle 执行轮询机制的详细信息数据库使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[Oracle 数据库适配器中接收基于轮询的数据更改消息](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)。 我们强烈建议你阅读然后再继续本主题。  
+你可以配置[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]接收基于轮询的数据更改消息对 Oracle 表或视图。 若要接收数据更改消息，适配器定期执行对 Oracle 表或视图后, 跟一个可选的 PL/SQL 代码块的 SQL 查询。 然后返回 SQL 查询的结果[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]到应用程序作为强类型化的结果集的入站 POLLINGSTMT 操作。 有关用于配置和执行在 Oracle 上的轮询机制的详细信息的数据库使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[Oracle 数据库适配器中接收基于轮询的数据更改消息](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)。 我们强烈建议您阅读本主题继续操作之前。  
   
- 若要接收 POLLINGSTMT 操作，当使用 WCF 服务模型时，你必须：  
+ 若要接收 POLLINGSTMT 操作使用 WCF 服务模型时，您必须：  
   
--   POLLINGSTMT 操作从适配器公开的元数据生成 WCF 服务协定 （接口）。 若要执行此操作，请使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel 元数据实用工具 (svcutil.exe)。  
+- POLLINGSTMT 操作从由适配器公开的元数据生成 WCF 服务协定 （接口）。 若要执行此操作，应使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutil.exe)。  
   
--   实现此接口从 WCF 服务。  
+- 实现此接口中的 WCF 服务。  
   
--   托管此 WCF 服务使用服务主机 (**System.ServiceModel.ServiceHost**)。  
+- 托管此 WCF 服务使用服务主机 (**System.ServiceModel.ServiceHost**)。  
   
- 本部分中的主题提供信息和过程来帮助你对 Oracle 数据库表和视图的 WCF 服务模型中执行轮询。  
+  在本部分中的主题提供信息和过程来帮助你执行对 Oracle 数据库表和视图的 WCF 服务模型中的轮询。  
   
-## <a name="about-the-examples-used-in-this-topic"></a>有关在本主题中使用的示例  
- 本主题中的示例使用 /SCOTT/ACCOUNTACTIVITY 表和 /SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 函数。 一个脚本来生成这些项目附带[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]示例。 有关这些示例的详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
+## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
+ 本主题中的示例使用 /SCOTT/ACCOUNTACTIVITY 表和 /SCOTT/Package/ACCOUNT_PKG/PROCESS_ACTIVITY 函数。 一个脚本来生成这些项目附带[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]示例。 有关示例的详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
 ## <a name="configuring-polling-in-the-wcf-service-model"></a>在 WCF 服务模型中配置轮询  
- 你配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]设置绑定属性和一个可选的连接属性 （参数） 对 Oracle 数据库表和视图执行轮询。 其中一些属性是必需的并且某些，产生任何影响，同时在设计时和运行时就必须设置。  
+ 配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]设置绑定属性和一个可选的连接属性 （参数），对 Oracle 数据库表和视图进行轮询。 其中一些属性是必需的并在设计时和运行时必须设置某些，产生任何影响。  
   
--   在设计时连接参数和绑定属性时设置连接到 Oracle 数据库生成的 WCF 服务协定。  
+- 在设计时设置连接参数和绑定属性时连接到 Oracle 数据库生成的 WCF 服务协定。  
   
--   在运行时用于创建服务主机的 OracleDBBinding 对象上设置绑定属性。 向服务主机添加服务侦听器时设置的连接参数。  
+- 在运行时用于创建服务主机 OracleDBBinding 对象上设置绑定属性。 在将服务侦听器添加到服务主机设置了连接参数。  
   
- 以下列表提供的绑定属性和连接参数用于配置轮询的简要概述：  
+  以下列表提供的绑定属性和连接参数用于配置轮询的简要概述：  
   
--   **PollingStatement**绑定属性。 在设计时和在运行时，必须设置此绑定属性。  
+- **PollingStatement**属性绑定。 在设计时和在运行时，必须设置此绑定属性。  
   
--   可选的绑定的属性。 这些只需在运行时设置。  
+- 可选绑定属性。 这些只需在运行时设置。  
   
--   **AcceptCredentialsInUri**绑定属性。 必须将此绑定属性设置为**true**在运行期间如果你想要启用连接 URI 中的凭据。 将服务终结点添加到服务主机时，用户名和密码必须处在连接 URI。  
+- **AcceptCredentialsInUri**属性绑定。 必须将此绑定属性设置为 **，则返回 true**在运行期间如果你想要启用的连接 URI 中的凭据。 必须存在连接 URI 中的用户名和密码，在将服务终结点添加到服务主机。  
   
--   **PollingId**查询中连接 URI 的字符串参数。 如果你想要更改 POLLINGSTMT 操作的命名空间，则必须设置此连接属性同时在设计时和运行时。  
+- **PollingId**查询字符串参数中的连接 URI。 如果你想要更改 POLLINGSTMT 操作的命名空间，则必须设置此连接属性在设计时和运行时。  
   
- 绑定属性以及用于配置轮询的连接参数的完整说明，请参阅[Oracle 数据库适配器中接收基于轮询的数据更改消息](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)。  
+  绑定属性和连接参数用于配置轮询的完整说明，请参阅[Oracle 数据库适配器中接收基于轮询的数据更改消息](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)。  
   
-## <a name="the-wcf-service-contract-and-class"></a>WCF 服务协定和类  
- 您使用两个[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel 元数据实用工具 (svcutil.exe) 来创建 WCF 服务协定 （接口），并支持 POLLINGSTMT 操作的类。  
+## <a name="the-wcf-service-contract-and-class"></a>WCF 服务约定和类  
+ 您使用两个[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutil.exe) 来创建 WCF 服务协定 （接口），并支持 POLLINGSTMT 操作的类。  
   
- 当您连接到 Oracle 数据库使用这些工具来生成服务协定 POLLINGSTMT 操作之一：  
+ 当您连接到 Oracle 数据库使用这些工具来生成服务协定 POLLINGSTMT 操作：  
   
--   必须指定**PollingStatement**绑定属性。 适配器使用 SELECT 语句中此绑定属性生成 POLLINGSTMT 操作返回的强类型化结果集的正确元数据。  
+- 必须指定**PollingStatement**属性绑定。 适配器使用 SELECT 语句在此绑定属性中生成强类型化结果集 POLLINGSTMT 操作返回正确的元数据。  
   
--   在连接 URI 中，可以选择指定 PollingId 参数。 适配器使用此参数来生成 POLLINGSTMT 操作的命名空间。  
+- 在连接 URI，可以选择指定 PollingId 参数。 适配器使用此参数来生成 POLLINGSTMT 操作的命名空间。  
   
- 在下面的示例：  
+  在下面的示例：  
   
--   **PollingStatement**设置为"选择 * 从 ACCOUNTACTIVITY FOR UPDATE"。  
+- **PollingStatement**设置为"SELECT * 从 ACCOUNTACTIVITY FOR UPDATE"。  
   
--   **PollingId**设置为"AcctActivity"。  
+- **PollingId**设置为"AcctActivity"。  
   
 ### <a name="the-wcf-service-contract-interface"></a>WCF 服务协定 （接口）  
  下面的代码演示为 POLLINGSTMT 操作生成的 WCF 服务协定 （接口）。  
@@ -89,7 +89,7 @@ public interface POLLINGSTMT_OperationGroup {
 ```  
   
 ### <a name="the-message-contracts"></a>消息协定  
- 由连接 URI 中的 PollingId 参数修改消息协定命名空间。 请求消息返回一组强类型的记录。  
+ 消息协定命名空间中的连接 URI 的 PollingId 参数修改。 请求消息将返回一组强类型的记录。  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -110,9 +110,9 @@ public partial class POLLINGSTMT {
 ```  
   
 ### <a name="the-data-contract-namespace"></a>数据协定 Namespace  
- 数据协定是一项服务以抽象方式描述要交换的数据的客户端之间达成的正式协议。 也就是说，以便进行通信，客户端和服务不必共享相同的类型，只是相同的数据协定。  
+ 数据协定是服务和以抽象方式描述要交换的数据的客户端之间达成的正式协议。 也就是说，以便进行通信，客户端和服务无需共享相同的类型，只是相同的数据协定。  
   
- 发生数据更改消息，数据协定命名空间，你还要修改由 PollingId 参数 （如果指定） 中连接 URI。 数据协定组成一个类，表示查询结果集中的强类型的记录。 在此示例中省略类定义的详细信息。 此类包含表示在结果集中的列的属性。  
+ 发生数据更改消息，数据协定命名空间还通过修改 PollingId 参数 （如果指定） 中的连接 URI。 数据协定组成一个类，表示查询结果集中的强类型化记录。 在此示例中省略的类定义的详细信息。 类包含表示在结果集中的列的属性。  
   
  在以下示例中，使用 PollingId"AcctActivity"。  
   
@@ -129,7 +129,7 @@ namespace microsoft.lobservices.oracledb._2007._03.POLLINGSTMTAcctActivity {
 ```  
   
 ### <a name="wcf-service-class"></a>WCF 服务类  
- [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]还会生成一个具有为 WCF 服务类实现服务协定 （接口） 从存根 （stub） 文件。 文件的名称是 OracleDBBindingService.cs。 你可以将插入的逻辑来处理此类直接 POLLINGSTMT 操作。 如果使用 svcutil.exe 来生成服务协定接口，则必须自行实现此类。 下面的代码演示生成的 WCF 服务类[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
+ [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]还会生成一个具有实现服务协定 （接口） 中的 WCF 服务类的存根文件。 文件的名称是 OracleDBBindingService.cs。 您可以插入的逻辑来处理此类直接 POLLINGSTMT 操作。 如果使用 svcutil.exe 来生成服务协定接口，则必须自行实现此类。 下面的代码演示生成的 WCF 服务类[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
 ```  
 namespace OracleDBBindingNamespace {  
@@ -147,111 +147,111 @@ namespace OracleDBBindingNamespace {
   
 ## <a name="receiving-the-pollingstmt-operation"></a>接收 POLLINGSTMT 操作  
   
-#### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a>从 Oracle 数据库适配器接收轮询数据  
+#### <a name="to-receive-polling-data-from-the-oracle-database-adapter"></a>若要从 Oracle 数据库适配器接收轮询数据  
   
-1.  使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]或 svcutil.exe 生成 WCF 服务协定 （接口），并用于 POLLINGSTMT 操作帮助器类。 有关详细信息，请参阅[生成 WCF 客户端或 Oracle 数据库解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。 至少，你必须将设置**PollingStatement**绑定时连接到该适配器的属性。 在连接 URI 中，可以选择指定 PollingId 参数。 如果你使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，你应设置你的配置所必需的所有绑定参数。 这可确保它们正确设置生成的配置文件中。  
+1. 使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]或 svcutil.exe 来生成 WCF 服务协定 （接口），并为 POLLINGSTMT 操作的帮助程序类。 有关详细信息，请参阅[生成 WCF 客户端或 WCF 服务协定用于 Oracle 数据库解决方案项目](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。 至少，您必须设置**PollingStatement**绑定属性时连接到适配器。 在连接 URI，可以选择指定 PollingId 参数。 如果使用的[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，应将所有绑定参数设置所需配置。 这可确保它们正确设置生成的配置文件中。  
   
-2.  实现 WCF 服务从步骤 1 中生成的接口和帮助程序类。 此类的 POLLINGSTMT 方法可能会引发异常中止轮询事务，如果遇到错误则处理从 POLLINGSTMT 操作; 接收的数据否则该方法不返回任何内容。 必须属性 WCF 服务类，如下所示：  
+2. 实现在步骤 1 中生成的接口和帮助程序类中的 WCF 服务。 此类的 POLLINGSTMT 方法可以引发一个异常来中止轮询事务，如果遇到错误，处理从 POLLINGSTMT 操作; 接收的数据否则该方法不返回任何内容。 必须按如下所示属性的 WCF 服务类：  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
-    ```  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
   
-    1.  如果你使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要生成界面，可以实现你的逻辑直接在**POLLINGSTMT**中生成方法**OracleDBBindingService**类。 OracleDBBindingService.cs 中找不到此类。 此示例中的此代码子类**OracleDBBindingService**类。  
+   1. 如果您使用了[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要生成的界面，可以实现直接在应用逻辑**POLLINGSTMT**中生成方法**OracleDBBindingService**类。 可以 OracleDBBindingService.cs 中找到此类。 此代码在此示例中的嵌套类**OracleDBBindingService**类。  
   
-        ```  
-        [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+      ```  
+      [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
   
-        public class PollingStmtService : OracleDBBindingService  
-        {  
-            public override void POLLINGSTMT(POLLINGSTMT request)  
-            {  
-                Console.WriteLine("\nNew Polling Records Received");  
-                Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
-                for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
-                {  
-                    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
-                                        request.POLLINGSTMTRECORD[i].ACCOUNT,  
-                                        request.POLLINGSTMTRECORD[i].AMOUNT,  
-                                        request.POLLINGSTMTRECORD[i].TRANSDATE,  
-                                        request.POLLINGSTMTRECORD[i].DESCRIPTION);  
-                }  
-            }  
-        }  
-        ```  
+      public class PollingStmtService : OracleDBBindingService  
+      {  
+          public override void POLLINGSTMT(POLLINGSTMT request)  
+          {  
+              Console.WriteLine("\nNew Polling Records Received");  
+              Console.WriteLine("Tx Id\tAccount\tAmount\tDate\t\t\tDescription");  
+              for (int i = 0; i < request.POLLINGSTMTRECORD.Length; i++)  
+              {  
+                  Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", request.POLLINGSTMTRECORD[i].TID,  
+                                      request.POLLINGSTMTRECORD[i].ACCOUNT,  
+                                      request.POLLINGSTMTRECORD[i].AMOUNT,  
+                                      request.POLLINGSTMTRECORD[i].TRANSDATE,  
+                                      request.POLLINGSTMTRECORD[i].DESCRIPTION);  
+              }  
+          }  
+      }  
+      ```  
   
-    2.  如果使用 svcutil.exe 来生成界面，你必须创建 WCF 服务实现的接口和实现你的逻辑中**POLLINGSTMT**此类的方法。  
+   2. 如果使用 svcutil.exe 生成的界面，必须创建的 WCF 服务的实现接口并实现中的逻辑**POLLINGSTMT**此类的方法。  
   
-3.  创建在步骤 2 中创建的 WCF 服务的实例。  
+3. 创建在步骤 2 中创建的 WCF 服务的实例。  
   
-    ```  
-    // create service instance  
-    PollingStmtService pollingInstance = new PollingStmtService();  
-    ```  
+   ```  
+   // create service instance  
+   PollingStmtService pollingInstance = new PollingStmtService();  
+   ```  
   
-4.  创建的实例**System.ServiceModel.ServiceHost**使用 WCF 服务和数据库连接 URI。 Userinfoparams 或 query_string，不能包含基连接 URI。  
+4. 创建的实例**System.ServiceModel.ServiceHost**使用 WCF 服务和基本连接 URI。 基本连接 URI 不能包含 userinfoparams 或 query_string。  
   
-    ```  
-    // Enable service host  
-    Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
-    ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
-    ```  
+   ```  
+   // Enable service host  
+   Uri[] baseUri = new Uri[] { new Uri("oracledb://Adapter") };  
+   ServiceHost srvHost = new ServiceHost(pollingInstance, baseUri);  
+   ```  
   
-5.  创建**OracleDBBinding**和通过设置其绑定属性中配置的轮询操作。 可以在代码中显式或配置中以声明方式执行此操作。 至少，你必须指定轮询语句和轮询间隔。 在此示例中，你指定的凭据作为 URI 的一部分以便还必须设置**AcceptCredentialsInUri**到**true**。  
+5. 创建**OracleDBBinding**并设置其绑定属性来配置轮询操作。 可以在代码中显式或配置中以声明方式执行此操作。 至少，您必须指定轮询语句和轮询间隔。 在此示例中，你指定的凭据作为 URI 的一部分以便还必须设置**AcceptCredentialsInUri**到**true**。  
   
-    ```  
-    // Create and configure a binding for the service endpoint. NOTE: binding  
-    // parameters are set here for clarity, but these are already set in the  
-    // the generated configuration file  
-    OracleDBBinding binding = new OracleDBBinding();  
+   ```  
+   // Create and configure a binding for the service endpoint. NOTE: binding  
+   // parameters are set here for clarity, but these are already set in the  
+   // the generated configuration file  
+   OracleDBBinding binding = new OracleDBBinding();  
   
-    // The credentials are included in the connection URI, so set this property to true  
-    binding.AcceptCredentialsInUri = true;  
+   // The credentials are included in the connection URI, so set this property to true  
+   binding.AcceptCredentialsInUri = true;  
   
-    // Same as statement specified in Configure Adapter dialog box  
-    binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
-    binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
+   // Same as statement specified in Configure Adapter dialog box  
+   binding.PollingStatement = "SELECT * FROM ACCOUNTACTIVITY FOR UPDATE";  
+   binding.PostPollStatement = "BEGIN ACCOUNT_PKG.PROCESS_ACTIVITY(); END;";  
   
-    // Be sure to set the interval long enough to complete processing before  
-    // the next poll  
-    binding.PollingInterval = 15;  
-    // Polling is transactional; be sure to set an adequate isolation level   
-    // for your environment  
-    binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
-    ```  
+   // Be sure to set the interval long enough to complete processing before  
+   // the next poll  
+   binding.PollingInterval = 15;  
+   // Polling is transactional; be sure to set an adequate isolation level   
+   // for your environment  
+   binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
+   ```  
   
-6.  将服务终结点添加到服务主机。 为此，请执行以下操作：  
+6. 将服务终结点添加到服务主机。 为此，请执行以下操作：  
   
-    -   使用在步骤 5 中创建的绑定。  
+   -   使用在步骤 5 中创建的绑定。  
   
-    -   指定连接 URI，其中包含凭据并根据需要 PollingId。  
+   -   指定连接 URI，其中包含的凭据并根据需要 PollingId。  
   
-    -   作为"POLLINGSTMT_OperationGroup"指定的协定。  
+   -   作为"POLLINGSTMT_OperationGroup"指定的协定。  
   
-    ```  
-    // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
-    Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
-    srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
-    ```  
+   ```  
+   // Add service endpoint: be sure to specify POLLINGSTMT_OperationGroup as the contract  
+   Uri serviceUri = new Uri("oracledb://User=SCOTT;Password=TIGER@Adapter?PollingId=AcctActivity");  
+   srvHost.AddServiceEndpoint("POLLINGSTMT_OperationGroup", binding, serviceUri);  
+   ```  
   
-7.  若要接收轮询数据，请打开服务主机。 每当查询返回一个结果集，该适配器将返回数据。  
+7. 若要接收轮询数据，请打开服务主机。 只要查询返回结果集，则适配器将返回数据。  
   
-    ```  
-    // Open the service host to begin polling  
-    srvHost.Open();  
-    ```  
+   ```  
+   // Open the service host to begin polling  
+   srvHost.Open();  
+   ```  
   
-8.  若要终止轮询，关闭服务主机。  
+8. 若要终止轮询，关闭服务主机。  
   
-    > [!IMPORTANT]
-    >  适配器将继续轮询，直到关闭服务主机。  
+   > [!IMPORTANT]
+   >  该适配器将继续轮询，直到关闭服务主机。  
   
-    ```  
-    srvHost.Close();  
-    ```  
+   ```  
+   srvHost.Close();  
+   ```  
   
 ### <a name="example"></a>示例  
- 下面的示例演示针对/SCOTT/ACCOUNTACTIVITY 表执行的轮询查询。 后轮询语句调用将处理的记录移到另一个表 /SCOTT/ACCOUNTHISTORY Oracle 函数。 要修改 POLLINGSTMT 操作的命名空间，请在连接 URI 中设置"AccountActivity"的 PollingId 参数。 在此示例中，通过子类分类生成创建 POLLINGSTMT 操作的 WCF 服务**OracleDBBindingService**类; 但是，你可以直接在生成的类中实现你的逻辑。  
+ 下面的示例显示了针对/SCOTT/ACCOUNTACTIVITY 表执行的轮询查询。 轮询后语句调用将已处理的记录移动到另一个表 /SCOTT/ACCOUNTHISTORY Oracle 函数。 中的连接 URI 设置为"AccountActivity"PollingId 参数可修改 POLLINGSTMT 操作的命名空间。 在此示例中，POLLINGSTMT 操作的 WCF 服务由子类生成**OracleDBBindingService**类; 但是，可以直接在生成的类实现你的逻辑。  
   
 ```  
 using System;  
@@ -383,5 +383,5 @@ namespace OraclePollingSM
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [开发使用 WCF 服务模型的 Oracle 数据库应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a>请参阅  
+ [开发 Oracle 数据库应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)

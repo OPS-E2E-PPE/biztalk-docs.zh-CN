@@ -1,5 +1,5 @@
 ---
-title: 调用函数和 Oracle 数据库使用 WCF 服务模型中的过程 |Microsoft 文档
+title: 调用函数和使用 WCF 服务模型的 Oracle 数据库中的过程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,51 +15,51 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f1fac59fc77b0cf52abe789db8feb2305043708
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2f1423d5945fe1c82ccc64027a28efa3c1777ca5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966355"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013150"
 ---
-# <a name="invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model"></a>调用函数和 Oracle 数据库使用 WCF 服务模型中的过程
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现过程、 函数和包作为操作。 在 WCF 服务模型会将这些操作表示为 WCF 客户端上的方法。 WCF 服务模型和[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
+# <a name="invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model"></a>调用函数和使用 WCF 服务模型的 Oracle 数据库中的过程
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]过程、 函数和包作为操作的图面。 在 WCF 服务模型中这些操作表示为 WCF 客户端上的方法。 WCF 服务模型和[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
   
--   **支持函数**。 Oracle 函数的返回值呈现为 WCF 客户端方法的返回值。 Oracle 参数作为 （与相应的方向定义下面） 的参数提供给 WCF 客户端方法。  
+-   **支持函数**。 Oracle 函数的返回值显示为 WCF 客户端方法的返回值。 Oracle 参数作为参数 （使用适当的方向的定义如下） 提供给 WCF 客户端方法。  
   
--   **支持过程**。 OUT 参数 Oracle 过程的第一个呈现为 WCF 客户端方法的返回值。 所有其他 Oracle 参数作为 （与相应的方向定义下面） 的参数提供给 WCF 客户端方法。  
+-   **支持过程**。 OUT 参数 Oracle 过程的第一个显示为 WCF 客户端方法的返回值。 所有其他 Oracle 参数作为参数 （使用适当的方向的定义如下） 提供给 WCF 客户端方法。  
   
--   **支持 Oracle 包**。 该操作的名称和其参数类型的命名空间是由包名称限定的。  
+-   **支持 Oracle 包**。 操作的名称和其参数类型的命名空间进行限定按包名称。  
   
 -   **支持重载函数和过程**。  
   
--   **支持 IN、 OUT 和 IN 出的过程和函数的基本 Oracle 数据类型的参数**。 OUT 参数中加以表示为**出**作为 WCF 客户端方法的参数和 IN OUT 参数进行展示**ref**参数。  
+-   **支持 IN，OUT 和 OUT 参数的过程和函数的基本 Oracle 数据类型为 IN**。 OUT 参数显示为**出**WCF 客户端方法的参数和在 OUT 参数显示为**ref**参数。  
   
--   **支持 IN、 扩展和 IN 出过程和函数，以及函数返回值的 REF CURSOR 参数**。 有关详细信息，请参阅[执行操作使用 REF CURSOR 在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)。  
+-   **支持 IN、 扩展，并在输出的过程和函数，以及函数返回值的 REF CURSOR 参数**。 有关详细信息，请参阅[执行的操作使用 REF CURSOR 在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)。  
   
--   **中支持，扩展和 IN 出记录类型参数的过程和函数，以及函数返回值**。 有关详细信息，请参阅[执行操作使用记录类型使用 WCF 服务模型的 Oracle 数据库中](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)。  
+-   **中支持，扩展，IN 出记录类型的过程和函数的参数，以及函数返回值**。 有关详细信息，请参阅[执行的操作使用记录的类型在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)。  
   
-## <a name="about-the-examples-used-in-this-topic"></a>有关在本主题中使用的示例  
- 中的示例此主题使用 /SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT 重载过程。 此过程从基于帐户 ID 或帐户名称 SCOTT/帐户表中读取一条记录。 一个脚本来生成此过程和下表提供的 SDK 示例。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
+## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
+ 中的示例本主题使用 /SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT 重载过程。 此过程从基于帐户 ID 或帐户名称 SCOTT/帐户表中读取一条记录。 使用 SDK 示例提供了一个脚本来生成此过程和表。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
   
 ## <a name="the-wcf-client-class"></a>WCF 客户端类  
- 下表显示 WCF 客户端和有关过程，生成的方法的名称的函数和包[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面。 除非函数或过程重载函数，单个 WCF 客户端用于调用的所有在架构中，所有在架构中，过程或函数的所有函数和包中的过程。  
+ 下表显示的名称以及 WCF 客户端的过程，生成的方法的函数和包，[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面。 除非重载函数或过程，单个 WCF 客户端用于调用的所有在架构中，所有架构中的过程或函数的所有函数和在包中的过程。  
   
 |Oracle 项目|WCF 客户端操作名称|示例|  
 |---------------------|-------------------------------|-------------|  
 |过程|[架构]ProcedureClient。[PROC_NAME]|SCOTTProcedureClient.MYPROC|  
 |函数|[架构]FunctionClient。[FUNC_NAME]|SCOTTProcedureClient.MYFUNC|  
-|包 （过程或函数）|[架构]包 [包名称] 客户端。[PROC_NAME 或 FUNC_NAME]|SCOTTPackageMYPACKAGEClient.MYPROC|  
+|包 （过程或函数）|[架构]包 [PACKAGE_NAME] 客户端。[PROC_NAME 或 FUNC_NAME]|SCOTTPackageMYPACKAGEClient.MYPROC|  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
  [PROC_NAME] = Oracle 过程; 的名称例如，MYPROC。  
   
- [FUNC_NAME] = Oracle 函数中; 的名称例如，MYFUNC。  
+ [FUNC_NAME] = Oracle 函数; 的名称例如，MYFUNC。  
   
  [PACKAGE_NAME] = Oracle 包的名称。  
   
- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表示 Oracle 记录类型参数和返回值，以及返回 REF CURSOR 参数作为包含 Oracle 记录的行数据 （或字段） 的复杂 XML 类型的结果集。 在 WCF 服务模型中，上述每种 XML 类型表示为一个.NET 类;类的属性表示记录类型或 REF CURSOR 结果集的字段。 Oracle 记录类型始终表示为强类型化.NET 类。 REF CURSOR 结果集，但是，可以表示为强类型化或弱类型基于 REF CURSOR 本身是否声明为强类型化或弱类型的记录。 表示 REF CURSOR 或记录类型参数 （或返回值） 中一个基于过程、 函数或包的唯一命名空间中的生成的类。 下表显示这些命名空间。  
+ [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表示 Oracle 记录类型参数和返回值，以及作为复杂包含 Oracle 记录的行数据 （或字段） 的 XML 类型返回的 REF CURSOR 参数的结果集。 在 WCF 服务模型中，每个 XML 类型表示为一个.NET 类;类的属性表示的字段的记录类型或 REF 游标结果集。 Oracle 记录类型始终表示为强类型化.NET 类。 REF CURSOR 结果集，但是，可以表示为强类型化或弱类型基于 REF CURSOR 本身是否声明为强类型化或弱类型的记录。 表示 REF CURSOR 或记录类型参数 （或返回值） 中基于过程、 函数或包的唯一命名空间中的生成的类。 下表显示了这些命名空间。  
   
 |Oracle 项目|命名空间|示例|  
 |---------------------|---------------|-------------|  
@@ -67,37 +67,37 @@ ms.locfileid: "25966355"
 |函数|[BASE_NS]。 [架构]。函数。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Function.MYFUNC|  
 |包 （过程）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYPROC|  
 |包 （函数）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYFUNC|  
-|泛型记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
+|通用记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
- [BASE_NS] = 基适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
+ [BASE_NS] = 基本适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
  [PROC_NAME] = Oracle 过程; 的名称例如，MYPROC。  
   
- [FUNC_NAME] = Oracle 函数中; 的名称例如 MYFUNC。  
+ [FUNC_NAME] = Oracle 函数; 的名称例如 MYFUNC。  
   
  [PACKAGE_NAME] = Oracle 包的名称。  
   
- 有关如何将这些命名空间用于记录参数的信息，请参阅[执行操作使用记录类型使用 WCF 服务模型的 Oracle 数据库中](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)。 有关如何将这些命名空间用于 REF CURSOR 参数的信息，请参阅[执行操作使用 REF CURSOR 在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)。  
+ 有关如何使用这些命名空间的记录参数的信息，请参阅[执行的操作使用记录的类型在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)。 有关如何使用这些命名空间的 REF CURSOR 参数的信息，请参阅[执行的操作使用 REF CURSOR 在 Oracle 数据库中使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)。  
   
- 一般情况下，Oracle 参数和返回值映射，如下所示的 WCF 客户端方法中：  
+ 一般情况下，Oracle 参数和返回值被映射，如下所示中的 WCF 客户端方法：  
   
--   Oracle IN 参数映射到.NET （输入） 参数。  
+- Oracle IN 参数将映射到.NET （输入） 参数。  
   
--   Oracle OUT 参数映射到.NET**出**参数。  
+- Oracle OUT 参数映射到.NET**出**参数。  
   
--   Oracle IN OUT 参数映射到.NET **ref**参数。  
+- Oracle 在 OUT 参数映射到.NET **ref**参数。  
   
--   函数返回值将映射到方法的返回值。  
+- 函数返回值映射到方法的返回值。  
   
- 但是，存在两个重要的例外：  
+  但是，存在两个重要的例外情况：  
   
--   Oracle IN 出 REF CURSOR 参数将被拆分为输入的字符串和输出 (**出**) 记录集。 这是因为[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表示 IN REF CUSROR 参数作为字符串，并为复杂类型 （记录集） 的出 REF CURSOR 参数，不能这些组合到单个参数。  
+- Oracle IN 出 REF CURSOR 参数拆分输入的字符串和一个输出 (**出**) 记录集。 这是因为[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表示 IN REF CUSROR 参数作为字符串，并为复杂类型 （记录集） 的出 REF CURSOR 参数，这些不能组合到单个参数。  
   
--   先出 Oracle 过程中的参数映射到的 WCF 客户端方法的返回值。 这是标准的 WCF 行为。  
+- OUT 参数在 Oracle 过程中的第一个映射到 WCF 客户端方法的返回值。 这是标准的 WCF 行为。  
   
- 下面的示例演示一个简单的 Oracle 过程 （SCOTT 架构中加载） 过程的一部分和生成来调用它的 WCF 客户端方法的签名。 Oracle 过程具有三个 IN 参数、 三个 IN OUT 参数，和三个 OUT 参数;但是，WCF 客户端方法未映射的第一个输出参数的参数。 而被映射到方法的返回值。  
+  下面的示例演示 （SCOTT 架构中加载） 的简单 Oracle 过程的一部分而生成，以调用它的 WCF 客户端方法的签名。 Oracle 过程具有三个 IN 参数、 三个在 OUT 参数，和三个输出参数但是，WCF 客户端方法没有映射输出参数的第一个的参数。 相反，它将映射到方法的返回值。  
   
 ```  
 CREATE or REPLACE PROCEDURE Sample_Procedure   
@@ -138,9 +138,9 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
 ```  
   
 ### <a name="support-for-overloaded-procedures-functions-and-packages"></a>对重载的过程、 函数和包的支持  
- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持通过将是唯一的字符串追加到的节点 ID 和命名空间，它会显示为每个重载的项目重载过程、 函数和包。 此字符串为"overload1"的第一个重载，"overload2"下一步重载中，依次类推。  
+ [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持通过将唯一字符串追加到的节点 ID 和命名空间，它会显示出的每个重载的项目重载过程、 函数和包。 此字符串是"overload1"用于第一个重载，"overload2"下一步的重载，等等。  
   
- WCF 服务模型中由唯一的 WCF 客户端表示每个重载的过程或函数。 这是不同于在架构中，所有在架构中，过程的函数的所有的非重载情况或所有的过程和函数在包中的都同一个 WCF 客户端通过调用。 下表显示 WCF 客户端名称和为重载的过程、 函数和包生成的方法。  
+ 在 WCF 服务模型中由唯一的 WCF 客户端表示每个重载的过程或函数。 这不同于在架构中，在架构中，过程的所有函数的所有非过载情况或者的过程和函数在包中的所有调用的同一个 WCF 客户端。 下表显示 WCF 客户端名称和为重载的过程、 函数和包生成的方法。  
   
 |Oracle 项目|WCF 客户端名称|示例|  
 |---------------------|---------------------|-------------|  
@@ -151,33 +151,33 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
   
  [PROC_NAME] = Oracle 过程; 的名称例如，MYPROC。  
   
- [FUNC_NAME] = Oracle 函数中; 的名称例如 MYFUNC。  
+ [FUNC_NAME] = Oracle 函数; 的名称例如 MYFUNC。  
   
  [PACKAGE_NAME] = Oracle 包的名称。  
   
- [OVERLOAD_ID] = 标识重载的项目中; 的唯一字符串"overload1"、"overload2"，依次类推。  
+ [OVERLOAD_ID] = 标识重载的项目; 的唯一字符串"overload1"、"overload2"等。  
   
- 下表显示为重载的过程、 函数和包生成的命名空间。  
+ 下表显示了为重载的过程、 函数和包生成的命名空间。  
   
 |Oracle 项目|命名空间|示例|  
 |---------------------|---------------|-------------|  
 |包 （过程）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[PROC_NAME][OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYPROC.overload1|  
 |包 （函数）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[FUNC_NAME]。[OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYFUNC.overload1|  
-|泛型记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
+|通用记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
- [BASE_NS] = 基适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
+ [BASE_NS] = 基本适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
  [PROC_NAME] = Oracle 过程; 的名称例如，MYPROC。  
   
- [FUNC_NAME] = Oracle 函数中; 的名称例如 MYFUNC。  
+ [FUNC_NAME] = Oracle 函数; 的名称例如 MYFUNC。  
   
  [PACKAGE_NAME] = Oracle 包的名称。  
   
- [OVERLOAD_ID] = 标识重载的项目中; 的唯一字符串"overload1"、"overload2"，依次类推。 在字符串中的数字值是由 Oracle 数据库维护的项目重载 ID。  
+ [OVERLOAD_ID] = 标识重载的项目; 的唯一字符串"overload1"、"overload2"等。 在字符串中的数字值是由 Oracle 数据库维护的项目重载 ID。  
   
- 下面的示例演示 WCF 客户端和 ACCOUNT_PKG 包中的重载 GET_ACCOUNT 过程生成的方法签名。 （Oracle 声明是包含。）此示例演示如何为每个重载生成唯一的 WCF 客户端和如何为每个客户端生成的方法返回的记录集的唯一命名空间中。  
+ 下面的示例演示在 WCF 客户端和 ACCOUNT_PKG 包中的重载 GET_ACCOUNT 过程生成的方法签名。 （Oracle 声明包含。）此示例演示如何为每个重载生成唯一的 WCF 客户端和如何为每个客户端生成的方法返回的记录集的唯一命名空间中。  
   
 ```  
 /* Procedure that takes account ID and returns record for existing account in the ACCOUNT table */  
@@ -202,23 +202,23 @@ public partial class SCOTTPackageACCOUNT_PKGGET_ACCOUNToverload2Client : System.
 ```  
   
 ## <a name="invoking-functions-and-procedures"></a>调用函数和过程  
- 若要使用 WCF 客户端调用一个函数或过程，请执行以下步骤。  
+ 若要通过使用 WCF 客户端调用一个函数或过程，请执行以下步骤。  
   
-1.  生成用于目标函数、 过程或包的 WCF 客户端类。 此类应包含的操作，将在目标项目上调用的方法。  
+1. 生成用于目标函数、 过程或包的 WCF 客户端类。 此类应包含将在目标项目调用操作方法。  
   
-    > [!NOTE]
-    >  在[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]，重载函数和过程出现在**可用类别和操作**框以 [名称].1、 [名称].2，[NAME].3，依次类推，其中 [名称] 是重载的项目和的数字值的名称是对 Oracle 数据库的重载 ID。  
+   > [!NOTE]
+   >  在[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]，重载函数和过程出现在**可用类别和操作**框为 [NAME].1、 [名称].2，[NAME].3，依次类推，其中 [名称] 是重载的项目和数字值的名称是对 Oracle 数据库的重载 ID。  
   
-2.  创建 WCF 客户端类的实例并调用其方法来调用的函数或过程。  
+2. 创建 WCF 客户端类的实例并调用其方法调用的函数或过程。  
   
- 有关详细信息，有关如何创建一个 WCF 客户端类，在调用操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[与 Oracle 数据库适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md)。  
+   有关更多详细信息，有关如何创建 WCF 客户端类，并在调用操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[具有 Oracle 数据库适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md)。  
   
- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]对 Oracle 数据库执行事务内的每个操作。  
+   [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle 数据库上执行一个事务内的每个操作。  
   
 > [!IMPORTANT]
->  表示 REF CURSOR 和记录类型参数或返回值函数或过程 （和包） 中的类为每个函数或过程声明中的唯一命名空间。 例如，这意味着，每个 WCF 客户端方法中，用作两个不同函数中的返回值的包 REF CURSOR 类型将唯一的命名空间中声明。 您必须声明单独的变量以保存这些不同的返回值或相应地转换该变量，在调用 WCF 客户端方法之一时。  
+>  表示 REF CURSOR 和记录类型参数或返回值的函数或过程 （和包） 中的类为每个函数或过程声明中的唯一命名空间。 例如，这意味着，将为每个 WCF 客户端方法声明中唯一的命名空间用作中两个不同的函数的返回值的包 REF CURSOR 类型。 您必须声明不同的变量来保存这些不同的返回值或相应地转换该变量时调用的 WCF 客户端方法之一。  
   
- 下面的示例演示如何调用的重载的 /SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT 过程从 /SCOTT/ACCOUNT 表中获取的客户记录。 首先通过调用 /SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT 过程中创建新的记录。 请阅读新记录后两次通过调用 GET_ACCOUNT 的不同重载。 此示例使用三个 WCF 客户端，一个用于 CREATE_ACCOUNT 过程，两个分别用于 GET_ACCOUNT 重载。 使用别名来区分命名空间用于 GET_ACCOUNT 的返回值。 完整示例位于 SDK 示例。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
+ 下面的示例演示如何调用重载的 /SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT 过程从 /SCOTT/ACCOUNT 表获取帐户记录。 首先通过调用 /SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT 过程创建一个新的记录。 然后，读取新记录后两次通过调用 GET_ACCOUNT 的不同重载。 此示例使用三个 WCF 客户端，一个用于 CREATE_ACCOUNT 过程，分别用于 GET_ACCOUNT 重载。 使用别名来区分 GET_ACCOUNT 的返回值使用的命名空间。 可在 SDK 示例的完整示例。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
   
 ```  
 using System;  
@@ -354,5 +354,5 @@ namespace OracleOverloadsSM
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [通过使用 WCF 服务模型开发 Oracle 数据库应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a>请参阅  
+ [使用 WCF 服务模型开发 Oracle 数据库应用程序](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)

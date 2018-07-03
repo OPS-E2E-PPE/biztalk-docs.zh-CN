@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10830 |Microsoft 文档
+title: 单一登录： 事件 10830 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d5944fe4e0af6c5e0484fd344d08ef839901e38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28bd8c50fecf5fec1f9e1ed6c6414ed4d852f877
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276421"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37019091"
 ---
 # <a name="single-sign-on-event-10830"></a>单一登录： 事件 10830
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10830|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|ENTSSO_E_PSADMIN_ADAPTER_SAME_COMPUTER|  
-|消息正文|指定的适配器必须位于组适配器所在的计算机上。|  
+|                 |                                                                          |
+|-----------------|--------------------------------------------------------------------------|
+|  产品名称   |                        企业单一登录                         |
+| 产品版本 |        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]        |
+|    事件 ID     |                                  10830                                   |
+|  事件源   |                                  ENTSSO                                  |
+|    组件    |                                   N/A                                    |
+|  符号名称  |                  ENTSSO_E_PSADMIN_ADAPTER_SAME_COMPUTER                  |
+|  消息正文   | 指定的适配器必须位于组适配器所在的计算机上。 |
   
 ## <a name="explanation"></a>解释  
- 必须使用位于组适配器所在的相同计算机名称配置组适配器中的每个适配器。  
+ 组适配器中的每个适配器必须使用与计算机同名组适配器配置。  
   
 ## <a name="user-action"></a>用户操作  
  有关详细信息，请参阅[密码同步](../core/password-synchronization2.md)  

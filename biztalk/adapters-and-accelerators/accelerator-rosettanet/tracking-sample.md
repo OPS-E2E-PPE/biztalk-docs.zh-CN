@@ -1,5 +1,5 @@
 ---
-title: 跟踪示例 |Microsoft 文档
+title: 跟踪示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 882bd25b9053e1b0d9b9060553f62f5760645dbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1b4d85f8c8f389728bbf50eeeb68c9228012b46
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208869"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986382"
 ---
 # <a name="tracking-sample"></a>跟踪示例
-跟踪用户界面示例演示如何创建[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]-基于 Web 应用程序以显示消息和中的进程的当前状态[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 该应用程序向用户提供一个包含多个搜索标准的表单。 当用户执行搜索时，跟踪示例将生成一个显示 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 中符合这些标准的消息和流程的详细列表。  
+跟踪用户界面示例演示如何创建[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]-基于 Web 应用程序以在 Microsoft 中显示的消息和流程的当前状态[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 该应用程序向用户提供一个包含多个搜索标准的表单。 当用户执行搜索时，跟踪示例将生成一个显示 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 中符合这些标准的消息和流程的详细列表。  
   
- 此示例是可从下载[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]网站，网址[http://go.microsoft.com/fwlink/?LinkId=37467](http://go.microsoft.com/fwlink/?LinkId=37467)。  
+ 此示例是可从 Microsoft 下载[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]网站，网址[ http://go.microsoft.com/fwlink/?LinkId=37467 ](http://go.microsoft.com/fwlink/?LinkId=37467)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [消息传送示例](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

@@ -1,5 +1,5 @@
 ---
-title: 配置错误。 上一种方法的 HTTP 请求的同步 MDN 发送端口 |Microsoft 文档
+title: 配置错误。 在单向 HTTP 上请求了同步 MDN 发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a0a240593aa21b102c401a2a6886ea24baa42c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0118789db8e45b096f3852aef3487416d388961d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231893"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014142"
 ---
 # <a name="configuration-error-synchronous-mdn-requested-on-one-way-http-send-port"></a>配置错误。 在单向 HTTP 发送端口上请求了同步 MDN
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|配置错误。 在单向 HTTP 发送端口上请求了同步 MDN。|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                                           -                                            |
+|  消息正文   |       配置错误。 在单向 HTTP 发送端口上请求了同步 MDN。        |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明在发送 AS2 消息后 BizTalk Server 无法接收同步 MDN，因为发送 AS2 消息的 HTTP 发送端口是单向端口。 处理为了响应端口发送的 AS2 消息而返回的同步 MDN，需要双向要求-响应发送端口。 这种情况下，必须同步返回 MDN，因为在 AS2 消息接收方的参与方的配置中，选中了“请求 MDN”属性，但清除了“请求异步 MDN”属性。  

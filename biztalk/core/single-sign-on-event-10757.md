@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10757 |Microsoft 文档
+title: 单一登录： 事件 10757 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5887694e8fd307c0738fc7596c52354925bfbc7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08a75a95a3804ee429baaf24c6b89bbb68a0ce6a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277501"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008142"
 ---
 # <a name="single-sign-on-event-10757"></a>单一登录： 事件 10757
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10757|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|ENTSSO_E_NO_MAPPING|  
-|消息正文|映射不存在。 对于配置存储应用程序，尚未设置配置信息。|  
+|                 |                                                                                              |
+|-----------------|----------------------------------------------------------------------------------------------|
+|  产品名称   |                                  企业单一登录                                   |
+| 产品版本 |                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                  |
+|    事件 ID     |                                            10757                                             |
+|  事件源   |                                            ENTSSO                                            |
+|    组件    |                                             N/A                                              |
+|  符号名称  |                                     ENTSSO_E_NO_MAPPING                                      |
+|  消息正文   | 映射不存在。 对于配置存储应用程序，尚未设置配置信息。 |
   
 ## <a name="explanation"></a>解释  
  如果这是个人或组类型的应用程序，则不存在映射。  

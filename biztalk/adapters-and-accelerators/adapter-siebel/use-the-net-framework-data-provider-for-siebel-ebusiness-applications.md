@@ -1,5 +1,5 @@
 ---
-title: .NET Framework 数据提供程序用于 Siebel eBusiness Applications |Microsoft 文档
+title: 用于 Siebel eBusiness 应用程序使用.NET Framework 数据提供程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,36 +15,36 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5acb8f96add3dcde48456751d82dc2a8e00ffe43
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f593c1eb9f7158aa69d4fcd0278078caeca2dca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222237"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993150"
 ---
-# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a>.NET Framework 数据提供程序用于 Siebel eBusiness Applications
-此部分提供有关使用说明[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 本部分提供有关的信息：  
+# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a>用于 Siebel eBusiness 应用程序使用.NET Framework 数据提供程序
+此部分提供有关使用说明[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 本部分提供以下信息：  
   
--   要连接到 Siebel 系统使用的 ADO.NET 客户端的连接字符串。  
+- 要连接到 Siebel 系统使用的 ADO.NET 客户端的连接字符串。  
   
--   SELECT 和 EXEC 语句的语法。  
+- SELECT 和 EXEC 语句的语法。  
   
--   使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]使用 SSIS。  
+- 使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]使用 SSIS。  
   
--   ADO.NET 接口[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]扩展。  
+- ADO.NET 接口[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]扩展。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [扩展 Siebel 适配器 ADO.NET 接口](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
+-   [使用 Siebel 适配器扩展 ADO.NET 接口](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
   
 -   [Siebel 连接字符串的数据提供程序属性](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)  
   
--   [Siebel 中的 SELECT 语句的语法](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)  
+-   [在 Siebel 中的 SELECT 语句的语法](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)  
   
--   [Siebel 中 EXEC 语句的的语法](../../adapters-and-accelerators/adapter-siebel/syntax-for-an-exec-statement-in-siebel.md)  
+-   [在 Siebel EXEC 语句的语法](../../adapters-and-accelerators/adapter-siebel/syntax-for-an-exec-statement-in-siebel.md)  
   
--   [在带有 Siebel 业务组件上运行 SELECT 查询](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)  
+-   [使用 Siebel 业务组件上运行 SELECT 查询](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)  
   
--   [使用 Siebel 运行业务服务上的执行操作](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
+-   [运行与 Siebel 业务服务上的执行操作](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
   
--   [使用用于 Siebel 使用 SSIS 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)
+-   [使用 Siebel 的数据提供程序和 SSIS](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)

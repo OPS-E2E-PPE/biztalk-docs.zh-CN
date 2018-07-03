@@ -1,5 +1,5 @@
 ---
-title: 第 4 课： 向工具箱添加 SWIFT 汇编程序和反汇编程序 |Microsoft 文档
+title: 第 4 课： 将 SWIFT 汇编程序和反汇编程序添加到工具箱 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,24 +17,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa2df81e11827fec161df23790ff1860bd92c0e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d301de048b9fc059138de6aa4602d9ce62292ad9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207669"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008190"
 ---
-# <a name="lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox"></a>第 4 课： 向工具箱添加 SWIFT 汇编程序和反汇编程序
-在本课程中，你将添加对 SWIFT 汇编程序 (ASM) 和反汇编程序 (DASM) 的引用，以便使用 BizTalk 管道设计器时，这些组件是工具箱中的可用。  
+# <a name="lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox"></a>第 4 课： 将 SWIFT 汇编程序和反汇编程序添加到工具箱
+在本课中，添加对 (ASM) SWIFT 汇编程序和反汇编程序 (DASM) 的引用，以便使用 BizTalk 管道设计器时，这些组件都可用工具箱中。  
   
-### <a name="to-add-the-swift-asm-and-dasm-components-to-the-toolbox"></a>若要向工具箱添加 SWIFT ASM 和 DASM 组件  
+### <a name="to-add-the-swift-asm-and-dasm-components-to-the-toolbox"></a>若要添加到工具箱的 SWIFT ASM 和 DASM 组件  
   
-1.  在 Visual Studio 中，在**工具**菜单上，单击**选择工具箱项**。  
+1. 在 Visual Studio 中，在**工具**菜单上，单击**选择工具箱项**。  
   
-2.  在选择工具箱项对话框中，在**BizTalk 管道组件**选项卡上，选择**SWIFT 汇编程序**和**SWIFT 反汇编程序**。  
+2. 在选择工具箱项对话框中，在**BizTalk 管道组件**选项卡上，选择**SWIFT 汇编程序**并**SWIFT 反汇编程序**。  
   
-3.  单击 **“确定”**。  
+3. 单击“确定” 。  
   
- 除非你已有接收或发送管道打开，在这种情况下的 ASM 或 DASM 将不可用，汇编程序和反汇编程序组件现可从工具箱。  
+   组装器和拆装器组件从工具箱中，现，除非您已经有一个接收或发送管道打开，请在这种情况下的 ASM 或 DASM 可能不可用。  
   
- 继续执行[第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline.md)。
+   请继续执行[第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline.md)。

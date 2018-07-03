@@ -1,5 +1,5 @@
 ---
-title: 无法确定方案 |Microsoft 文档
+title: 无法确定方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82731b0712ac880936e074005c01eab7945b4add
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6086562f593b7ca04db63b7fb41f5cf128afe9d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231469"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37007166"
 ---
 # <a name="cannot-determine-scheme"></a>无法确定方案
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|无法确定方案；请指定有效的绑定。|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  产品名称   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 产品版本 |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    事件 ID     |                                         0                                          |
+|  事件源   |                                         0                                          |
+|    组件    |                                         0                                          |
+|  符号名称  |                                         0                                          |
+|  消息正文   |                 无法确定方案；请指定有效的绑定。                  |
   
 ## <a name="explanation"></a>解释  
  已经指定的传输绑定元素没有方案。  
@@ -40,4 +40,4 @@ ms.locfileid: "22231469"
   
  有关其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
--   [配置 WCF 自定义适配器](../core/configuring-the-wcf-custom-adapter.md)
+-   [配置 WCF-Custom 适配器](../core/configuring-the-wcf-custom-adapter.md)

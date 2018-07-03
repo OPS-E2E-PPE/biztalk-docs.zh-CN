@@ -1,5 +1,5 @@
 ---
-title: 作为 Web 服务如何支持业务流程引发 SOAP 异常发布 |Microsoft 文档
+title: 如何从业务流程引发 SOAP 异常发布为 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,29 +16,29 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4ef3d975632b6230cf1e3df299d0d9455f39da0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 328f468485f729df03c28bca48a8b5ed4eaf59e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255573"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015198"
 ---
-# <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a>如何从作为 Web 服务发布的业务流程引发 SOAP 异常
-你可以从业务流程中已发布作为 Web 服务返回 SOAP 异常。 将错误消息添加到 SOAP 端口和发送错误消息，而不是响应。  
+# <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a>如何从发布为 Web 服务的业务流程引发 SOAP 异常
+你可以从业务流程发布为 Web 服务返回 SOAP 异常。 将错误消息添加到 SOAP 端口和发送错误消息而不是响应。  
   
-### <a name="to-throw-a-soap-exception-from-an-orchestration-published-as-a-web-service"></a>若要引发 SOAP 异常从业务流程发布作为 Web 服务  
+### <a name="to-throw-a-soap-exception-from-an-orchestration-published-as-a-web-service"></a>若要引发 SOAP 异常从业务流程发布为 Web 服务  
   
-1.  将错误消息添加到 SOAP 端口类型。 错误消息的消息类型可以是任何符合 XML 架构 (XSD) 架构或简单类型。  
+1. 将错误消息添加到 SOAP 端口类型。 错误消息的消息类型可以是任何符合的 XML 架构 (XSD) 架构或简单类型。  
   
-    > [!NOTE]
-    >  返回一个字符串作为**SoapException**错误信息，你可以使用简单类型字符串，作为错误消息类型。  
+   > [!NOTE]
+   >  返回一个字符串作为**SoapException**错误信息，可以使用简单类型字符串，作为错误消息类型。  
   
-2.  在您的业务流程，将创建的错误消息。  
+2. 在业务流程中创建的错误消息。  
   
-3.  使用**发送**形状链接到与 SOAP 端口对应的错误消息中的错误操作。 SOAP 异常会包装返回的错误消息。  
+3. 使用**发送**形状链接到对应于错误消息的 SOAP 端口中的错误操作。 SOAP 异常包装返回的错误消息。  
   
- 如果您的业务流程不返回错误，使用不同**发送**形状将使用正常响应操作标准的 SOAP 响应消息发送。  
+   如果您的业务流程不返回错误，使用不同**发送**用于将使用正常响应操作的标准 SOAP 响应消息的发送形状。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [错误消息](../core/fault-messages.md)   
- [发布作为 Web 服务业务流程](../core/publishing-an-orchestration-as-a-web-service.md)
+ [将业务流程发布为 Web 服务](../core/publishing-an-orchestration-as-a-web-service.md)

@@ -1,5 +1,5 @@
 ---
-title: 已知问题的 FTP 适配器 |Microsoft 文档
+title: 使用 FTP 适配器的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e13ce12e8514eaa2b5843ba81eff4f505e65d9e1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: fcab9b35759d491c0732cfb2613a2fd4fe992a3e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010086"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022483"
 ---
-# <a name="known-issues-with-the-ftp-adapter"></a>与 FTP 适配器的已知的问题
+# <a name="known-issues-with-the-ftp-adapter"></a>FTP 适配器的已知的问题
 本部分包含可帮助你避免出现错误的信息。  
   
 ## <a name="known-issues"></a>已知问题  
   
-#### <a name="data-may-be-duplicated-or-lost-when-you-receive-data-in-biztalk-server-by-using-the-ftp-adapter"></a>数据可能重复或丢失时通过使用 FTP 适配器中的 BizTalk Server 中接收数据  
+#### <a name="data-may-be-duplicated-or-lost-when-you-receive-data-in-biztalk-server-by-using-the-ftp-adapter"></a>数据可能会重复或丢失时通过使用 FTP 适配器，BizTalk Server 中接收数据  
   
 ##### <a name="problem"></a>问题  
  在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用 FTP 适配器接收数据时，数据会重复或丢失。  
@@ -39,25 +39,25 @@ ms.locfileid: "26010086"
 ##### <a name="resolution"></a>解决方法  
  若要解决此问题，请使用以下方法之一：  
   
--   将主机应用程序配置成向公共 FTP 文件夹所在硬盘上的一个临时文件夹中进行写入，然后定期将临时文件夹的内容移动到 FTP 文件夹中。 临时文件夹应与公共 FTP 文件夹位于同一硬盘上，以确保移动操作为原子操作。 原子操作是功能上无法分割的操作。 如果您通过使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP 适配器将数据写入公共 FTP 文件夹，则配置发送端口时，可以通过在“FTP 传输属性”对话框中指定“临时文件夹”属性来实现。 如果指定“临时文件夹”属性，请确保此文件夹与公共 FTP 文件夹位于同一物理磁盘上。  
+- 将主机应用程序配置成向公共 FTP 文件夹所在硬盘上的一个临时文件夹中进行写入，然后定期将临时文件夹的内容移动到 FTP 文件夹中。 临时文件夹应与公共 FTP 文件夹位于同一硬盘上，以确保移动操作为原子操作。 原子操作是功能上无法分割的操作。 如果您通过使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP 适配器将数据写入公共 FTP 文件夹，则配置发送端口时，可以通过在“FTP 传输属性”对话框中指定“临时文件夹”属性来实现。 如果指定“临时文件夹”属性，请确保此文件夹与公共 FTP 文件夹位于同一物理磁盘上。  
   
--   将 FTP 接收位置配置为在主机应用程序不向 FTP 服务器写入数据的服务时段执行操作。 可以在配置接收位置属性时指定该服务时段。  
+- 将 FTP 接收位置配置为在主机应用程序不向 FTP 服务器写入数据的服务时段执行操作。 可以在配置接收位置属性时指定该服务时段。  
   
 #### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP 适配器不支持对服务器证书执行吊销检查。  
   
 ##### <a name="problem"></a>问题  
- BizTalk Server 中的 FTP 适配器可以增强，以支持安全文件传输到和从 FTPS 服务器使用 SSL/TLS。 证书吊销列表 (CRL) 包含已吊销的及不再有效的证书列表。 FTP 适配器不能查阅 CRL 来对服务器证书进行身份验证。  
+ FTP 适配器在 BizTalk Server 中的得到了增强，可支持安全文件传输到和从 FTPS 服务器使用 SSL/TLS。 证书吊销列表 (CRL) 包含已吊销的及不再有效的证书列表。 FTP 适配器不能查阅 CRL 来对服务器证书进行身份验证。  
   
 ##### <a name="cause"></a>原因  
- 按照设计，FTP 适配器不参考 CRL 再接受服务器证书。  
+ 根据设计，FTP 适配器不能查阅 CRL 再接受服务器证书。  
   
 ##### <a name="resolution"></a>解决方法  
- 不不需要; 任何操作此行为是设计使然。  
+ 必需的; 不不执行任何操作此行为是默认设置。  
   
 #### <a name="ftp-adapter-downloads-files-larger-than-max-file-size"></a>FTP 适配器下载大于最大文件大小的文件  
   
 ##### <a name="problem"></a>问题  
- FTP 接收其大小大于指定的最大文件大小属性，从以下的 FTP 服务器的适配器下载文件：  
+ FTP 接收适配器的下载文件的大小大于指定的最大文件大小属性，从以下的 FTP 服务器：  
   
 -   AIX  
   
@@ -68,11 +68,11 @@ ms.locfileid: "26010086"
 -   GXS  
   
 ##### <a name="cause"></a>原因  
- 按照设计，FTP 适配器不遵从最大文件大小，如果从这些 FTP 服务器下载文件。  
+ 按照设计，FTP 适配器不会接受的最大文件大小，如果从这些 FTP 服务器下载文件。  
   
 ##### <a name="resolution"></a>解决方法  
- 不不需要; 任何操作此行为是设计使然。  
+ 必需的; 不不执行任何操作此行为是默认设置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何配置 FTP 接收位置](http://msdn.microsoft.com/library/1d8fde35-f787-4a5e-a8bd-8c418d0f75c3)   
- [故障排除 FTP 适配器](../core/troubleshooting-the-ftp-adapter.md)
+ [FTP 适配器故障排除](../core/troubleshooting-the-ftp-adapter.md)

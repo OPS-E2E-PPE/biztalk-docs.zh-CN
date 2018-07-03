@@ -1,5 +1,5 @@
 ---
-title: Utilities1 |Microsoft 文档
+title: Utilities1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac9da41b0e3188cda1634f8370f5b0514ca632ca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5911a971eebf76502ec3b3f1c6a271c3323d8efc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208861"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010814"
 ---
 # <a name="utilities"></a>实用程序
-本节介绍如何使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 软件开发工具包 (SDK) 中包含的一些实用工具。  
+本部分提供有关使用多个实用程序包含在 microsoft Microsoft® 说明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -37,7 +37,7 @@ ms.locfileid: "22208861"
   
 -   [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)  
   
--   [环回](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
+-   [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
   
 -   [消息编辑器管道组件](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-component.md)  
   

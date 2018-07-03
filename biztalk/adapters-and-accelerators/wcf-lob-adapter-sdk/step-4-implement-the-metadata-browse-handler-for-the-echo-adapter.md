@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 为 Echo 适配器实现元数据浏览的处理程序 |Microsoft 文档
+title: 步骤 4： 实现 Echo 适配器的元数据浏览处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f93b4efeb65092c4ca61ab1fc2ef58a0ac53ae4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c50110fff32b81bdaa429a479cefe8041d919356
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226981"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003414"
 ---
-# <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>步骤 4： 为 Echo 适配器实现元数据浏览的处理程序
-![9 的第 4 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
+# <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>步骤 4： 实现 Echo 适配器的元数据浏览处理程序
+![步骤 4 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
   
  **完成时间：** 45 分钟  
   
- 在此步骤中，你可以实现 Echo 适配器的浏览功能。 此功能允许您执行基于连接的浏览，获取元数据从目标系统的适配器。 无论你适配器的功能，你的适配器必须支持浏览功能。  
+ 在此步骤中，将实现 Echo 适配器的浏览功能。 此功能允许您的适配器来执行基于连接的浏览，从目标系统中获取元数据。 无论您的适配器的功能，您的适配器必须支持的浏览功能。  
   
- 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，若要支持浏览功能，则必须实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 为 Echo 适配器[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成调用 EchoAdapterMetadataBrowseHandler 派生的类。  
+ 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，若要支持浏览功能，必须实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 Echo 适配器[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成名为 EchoAdapterMetadataBrowseHandler 派生的类。  
   
- 在以下步骤中，更新此类，以更好地理解如何实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法，如何设置的各种属性`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，并在的操作和适配器支持的类别节点的显示方式[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具。  
+ 在以下步骤中，更新此类，以更好地理解如何实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法中，如何设置各种属性的`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象和操作和适配器支持的类别节点中的显示方式[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  在开始此步骤之前，你必须已成功完成[步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)。 您还必须了解以下类：  
   
 -   `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`  
@@ -49,22 +49,22 @@ public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable
 }  
 ```  
   
- `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象基于方法的参数。 参数定义`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法以下表所述。  
+ `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象根据方法的参数。 参数定义`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法以下表所述。  
   
 > [!NOTE]
->  Echo 适配器实现使用仅的节点 ID，并忽略其他三个参数，因为 Echo 适配器支持仅在几个节点。  
+>  Echo 适配器实现使用仅限节点 ID，并忽略其他三个参数，因为 Echo 适配器支持仅在几个节点。  
   
-|**参数**|**定义**|  
-|-------------------|--------------------|  
-|nodeId|层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) 具有 nodeId。 每个节点 ID 必须唯一，并且可以是一个类别或运算。 类别具有子类别。 **注意：** 如果 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。|  
-|childStartIndex|若要返回的第一个子级的索引。<br /><br /> 不支持 Echo 适配器。|  
-|maxChildNodes|要返回的结果节点最大数量。 使用 Int32.Max 检索结果的所有节点。<br /><br /> 不支持 Echo 适配器。|  
-|timeout|允许此操作完成的最大时间。<br /><br /> 不支持 Echo 适配器。|  
+|  **参数**  |                                                                                                                                                                                                                               **定义**                                                                                                                                                                                                                                |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     nodeId      | 在层次结构中的元数据资源管理器的每个项 ([!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) 具有 nodeId。 每个节点 ID 必须是唯一的并且可以是一个类别或操作。 类别具有子类别。 **注意：** 如果为 null 或空字符串 ("")，从根节点 （"/"） 默认情况下检索操作。 |
+| childStartIndex |                                                                                                                                                                                           要返回的第一个子级的索引。<br /><br /> 不支持 Echo 适配器。                                                                                                                                                                                            |
+|  maxChildNodes  |                                                                                                                                                                  最大可返回的结果节点数。 使用 Int32.Max 检索所有结果节点。<br /><br /> 不支持 Echo 适配器。                                                                                                                                                                   |
+|     timeout     |                                                                                                                                                                                   若要完成该操作允许的最大时间。<br /><br /> 不支持 Echo 适配器。                                                                                                                                                                                    |
   
- 在实现时`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法，必须将每个类别和操作的节点添加到的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 若要指定的节点作为类别，设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`false`。 若要指定作为操作的节点，将设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`true`。  
+ 在实现时`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法，必须将类别和操作的每个节点添加到的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 若要指定一个节点作为类别，设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`false`。 若要指定一个节点作为操作，请设置`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A`到`true`。  
   
-## <a name="echo-adapter-metadata-browse"></a>Echo 适配器元数据浏览  
- 根据目标系统的类别和操作中，有许多方法来生成的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 操作和你选择的类别应表示你想要公开的操作。 但对于 Echo 适配器，它只需创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象具有节点 ID 的以下节点的每个列出：  
+## <a name="echo-adapter-metadata-browse"></a>Echo 适配器的元数据浏览  
+ 根据目标系统的类别和操作，有许多种方法来生成一个数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 操作和你选择的类别应表示你想要公开的操作。 但对于 Echo 适配器，它只不过是创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`列出对象为每个节点 id 的以下节点：  
   
 ```  
 EchoMainCategory  (node under the root node)  
@@ -74,7 +74,7 @@ EchoMainCategory  (node under the root node)
         Echo/OnReceiveEcho (inbound operation)  
 ```  
   
- EchoMainCategory 是根节点 （"/"） 下的类别节点。 此节点还作为类别用于入站和出站操作。 因此，在创建时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象该类别中，你可以执行以下操作：  
+ EchoMainCategory 是根节点 （"/"） 下的类别节点。 此节点还作为类别用于入站和出站操作。 因此，在创建时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象为该类别中，您可以执行以下操作：  
   
 ```  
 MetadataRetrievalNode node = new MetadataRetrievalNode("EchoMainCategory");  
@@ -82,7 +82,7 @@ node.IsOperation = false; //category
 node.Direction = MetadataRetrievalNodeDirections.Inbound | MetadataRetrievalNodeDirections.Outbound  //for both inbound and outbound  
 ```  
   
- 对于如属于 EchoMainCategory/Echo EchoString 出站操作，可以执行以下操作：  
+ 对于出站操作如属于 EchoMainCategory/Echo EchoString，可以执行以下操作：  
   
 ```  
 if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory  
@@ -95,7 +95,7 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
           outOpNode1.IsOperation = true;  
 ```  
   
- 对于入站回显/OnReceiveEcho 属于 EchoMainCategory 如操作，可以执行以下操作：  
+ 对于入站操作如属于 EchoMainCategory/Echo OnReceiveEcho，可以执行以下操作：  
   
 ```  
   if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory  
@@ -108,32 +108,32 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
             inOpNode1.IsOperation = true;  
 ```  
   
- 当[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]工具浏览 Echo 适配器元数据，默认情况下，它将启动从根节点 （"/"）。  
+ 当[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]工具探索 Echo 适配器的元数据，默认情况下，它从根节点 （"/"） 开始。  
   
- 下图显示 EchoMainCategory 节点显示在根节点 （"/"）：  
+ 下图显示了 EchoMainCategory 节点显示在根节点 （"/"）：  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
- 浏览中的三个出站操作，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 选项。 请参阅中的这些操作**可用类别和操作**列表框中，如下所示：  
+ 若要浏览的三个出站操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**客户端 （出站操作）** 选项。 请参阅中的这些操作**可用类别和操作**列表框中，如下所示：  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
   
- 在上图中，注意`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`值出现在**名称**列**可用类别和操作**列表框。 参数传递到`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`构造函数将出现在**节点 ID**列**可用类别和操作**列表框中，与`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`值会显示为工具提示包含说明中，右键单击时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`。  
+ 在上图中，注意`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`值将出现在**名称**的列**可用类别和操作**列表框。 将参数传递到`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`构造函数中将出现**节点 ID**的列**可用类别和操作**列表框中，和`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A`值显示为工具提示包含说明中，右键单击时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`。  
   
  若要查看的入站的操作，在[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具，在**选择协定类型**下拉列表中，选择**服务 （入站操作）** 选项。 请参阅中的入站的 OnReceiveEcho 操作**可用类别和操作**列表框中下, 图中所示：  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
   
 ## <a name="implementing-the-imetadatabrowsehandler"></a>实现 IMetadataBrowseHandler  
- 在此步骤中，更新 EchoAdapterMetadataBrowseHandler 类，它是实现 Echo 适配器的元数据浏览，以实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`每个类别和操作对象，设置适当的值为该对象，然后返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`类别和操作的对象。 请记住，当你创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，你需要传入的节点 ID，而不是显示名称。  
+ 在此步骤中，你将更新 EchoAdapterMetadataBrowseHandler 类，它是实现 Echo 适配器的元数据浏览，以实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法的`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象为每个类别和操作，设置适当的值，该对象，并返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`类别和操作的对象。 请记住，在创建时`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，你需要传入的节点 ID，而不是显示名称。  
   
 #### <a name="to-update-the-echoadaptermetadatabrowsehandler-class"></a>若要更新 EchoAdapterMetadataBrowseHandler 类  
   
-1.  在解决方案资源管理器中，双击**EchoAdapterMetadataBrowseHandler.cs**文件。  
+1.  在解决方案资源管理器中双击**EchoAdapterMetadataBrowseHandler.cs**文件。  
   
-2.  在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。  
+2.  在 Visual Studio 编辑器中，右键单击任意位置在编辑器内，在上下文菜单中，指向**大纲**，然后单击**停止大纲显示**。  
   
-3.  在 Visual Studio 编辑器中，内部**浏览**方法，将替换为以下创建的现有逻辑`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`EchoMainCategory 的对象。  
+3.  在 Visual Studio 编辑器中，内部**浏览**方法，用来创建以下内容替换现有逻辑`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`EchoMainCategory 的对象。  
   
     ```csharp  
     if (MetadataRetrievalNode.Root.NodeId.Equals(nodeId))  
@@ -181,7 +181,7 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
     outOpNode2.IsOperation = true;  
     ```  
   
-7.  继续添加以下代码以创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`回显的对象 / EchoGreetingFromFile。  
+7.  继续添加以下代码以创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`回送的对象 / EchoGreetingFromFile。  
   
     ```csharp  
     MetadataRetrievalNode outOpNode3 = new MetadataRetrievalNode("Echo/EchoCustomGreetingFromFile");  
@@ -191,7 +191,7 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
     outOpNode3.IsOperation = true;  
     ```  
   
-8.  继续添加下面的代码返回的数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象或 null 如果不匹配。  
+8.  继续添加以下代码以返回一个数组`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象或如果不匹配，则为 null。  
   
     ```  
         return new MetadataRetrievalNode[] { inOpNode1, outOpNode1, outOpNode2, outOpNode3 };  
@@ -199,20 +199,20 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
     return null;  
     ```  
   
-9. 在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。  
+9. 在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
-10. 在“生成”  菜单上，单击“生成解决方案” 。 你应已成功生成项目。 如果没有，请确保您已按照上述每个步骤。  
+10. 在“生成”  菜单上，单击“生成解决方案” 。 您应已成功生成项目。 如果没有，请确保您已按照上述每个步骤。  
   
 > [!NOTE]
->  保存所做的工作。 你可以安全地在此时关闭 Visual Studio 或转到下一步，[步骤 5： 为 Echo 适配器实现的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。  
+>  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步[步骤 5： 实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。  
   
-## <a name="what-did-i-just-do"></a>未我只需做什么？  
- 只需实现通过实现浏览 Echo 适配器，适配器的功能的元数据`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`针对类别中，对象，然后将它返回数组的形式`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 您为每个操作，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，以及然后在一个数组中返回所有这些对象`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 只需实现通过实现浏览 Echo 适配器的功能的元数据`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法的`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象的类别，并为一个数组，则返回它`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 您为每个操作，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，并则返回所有这些对象的数组中`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你可实现元数据搜索和解析功能和出站消息交换。 最后，生成并部署 Echo 适配器。  
+ 您实现元数据搜索和解析功能以及出站消息交换。 最后，您生成并部署 Echo 适配器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
  [步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)   
- [步骤 5： 为 Echo 适配器实现的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)
+ [步骤 5：实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11032 |Microsoft 文档
+title: 单一登录： 事件 11032 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60a6257b9088bc26a6598e432fd098d2de432017
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4dc69ecf447f0917f843a0f80a0a25b1ed0b6e0a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278309"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022043"
 ---
 # <a name="single-sign-on-event-11032"></a>单一登录： 事件 11032
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11032|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_INFO_PS_WIN_CHANGE_MAPPING_DISABLED|  
-|消息正文|Windows 密码更改。 已检测到此 Windows 帐户的映射，但被忽略，因为它已被禁用。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序: %3 %r<br /><br /> 外部帐户: %4 %r<br /><br /> 客户端用户： %5|  
+|                 |                                                                                                                                                                                                                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                            企业单一登录                                                                                                                             |
+| 产品版本 |                                                                                                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                            |
+|    事件 ID     |                                                                                                                                      11032                                                                                                                                       |
+|  事件源   |                                                                                                                                      ENTSSO                                                                                                                                      |
+|    组件    |                                                                                                                                       N/A                                                                                                                                        |
+|  符号名称  |                                                                                                                     SSO_INFO_PS_WIN_CHANGE_MAPPING_DISABLED                                                                                                                      |
+|  消息正文   | Windows 密码更改。 已检测到此 Windows 帐户的映射，但被忽略，因为它已被禁用。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序: %3 %r<br /><br /> 外部帐户: %4 %r<br /><br /> 客户端用户： %5 |
   
 ## <a name="explanation"></a>解释  
  已检测到此 Windows 帐户的映射，但被忽略，因为它已被禁用。  
   
 ## <a name="user-action"></a>用户操作  
   
--   若要启用映射，请参阅[如何启用用户映射](../core/how-to-enable-a-user-mapping.md)。
+-   若要启用此映射，请参阅[如何启用用户映射](../core/how-to-enable-a-user-mapping.md)。

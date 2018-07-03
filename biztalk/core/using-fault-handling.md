@@ -1,5 +1,5 @@
 ---
-title: 使用错误处理 |Microsoft 文档
+title: 使用错误处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00547917da65253123cb2067715a09633547eb4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90cb589894b9bb2166cf701866575092da53540e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287461"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015118"
 ---
 # <a name="using-fault-handling"></a>使用错误处理
-期间[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]故障处理一条异常消息不返回到客户端，除非**FaultException** （或子类型） 引发或**FaultContract**实现。 因此你可以仅从错误消息本身在这些情况下跟踪数据。 在回调实现异常自动再次作为错误消息的同时**ServerFault**和**ClientFault**跟踪点。 但是，它将始终返回泛型错误，该错误显示一条常规消息。 有关 WCF 错误协定的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=83132](http://go.microsoft.com/fwlink/?LinkId=83132)。  
+期间[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]的错误处理的异常消息不返回到客户端，除非**FaultException** （或子类型） 会引发或**FaultContract**实现。 因此你可以仅从错误消息本身在这些情况下跟踪数据。 回调实现中出现的异常自动回来作为错误消息的同时**ServerFault**并**ClientFault**跟踪点。 但是，它将始终返回泛型错误，该错误显示一条常规消息。 有关 WCF 错误协定的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=83132 ](http://go.microsoft.com/fwlink/?LinkId=83132)。  
   
- 你还可以跟踪常量和通过的错误跟踪点的上下文属性。  
+ 此外可以跟踪常量和通过错误跟踪点的上下文属性。  
   
- 如果使用的错误中返回异常详细信息**IncludeExceptionDetailInFaults**属性，提取实际的异常消息都通过 XPath。  
+ 如果使用的错误中返回的异常详细信息**IncludeExceptionDetailInFaults**属性，提取通过 XPath 实际的异常消息。  
   
- 错误处理由中定义的错误跟踪点[GetServiceContractCallPoint](../core/getservicecontractcallpoint.md):  
+ 在中定义的错误跟踪点提供错误处理[GetServiceContractCallPoint](../core/getservicecontractcallpoint.md):  
   
--   ServiceFault  
+- ServiceFault  
   
--   ClientFault  
+- ClientFault  
   
--   CallbackFault  
+- CallbackFault  
   
- 在使用这些错误跟踪点时，将始终保留错误数据，即使在基于事务的方案中运行。 在所有非错误跟踪的数据保持事务完整性和非错误跟踪的数据作为回滚对错误的响应。  
+  在使用这些错误跟踪点时，将始终保留错误数据，即使基于事务的场景中。 在所有非错误跟踪的数据上维护的事务完整性和非错误跟踪的数据作为回滚对该错误的响应。  
   
 > [!NOTE]
->  这些跟踪点应用于的答复路径和仅适用于的 ServiceReply、 ClientReply 和 CallbackReply 服务协定调用点由[GetServiceContractCallPoint](../core/getservicecontractcallpoint.md)。  
+>  这些跟踪点应用于答复路径和仅适用于 ServiceReply、 ClientReply 和 CallbackReply 服务约定调用点提供的[GetServiceContractCallPoint](../core/getservicecontractcallpoint.md)。  
   
 ## <a name="fault-configuration-sample"></a>错误配置示例  
- 下面的示例演示如何在跟踪异常消息**ServiceFault**当服务引发**FaultException**中**AuthorizationServiceFault**事件;否则，它跟踪中的操作返回的布尔表达式**AuthorizationServiceReply**事件。 任一**AuthorizationServiceReply** OnEvent 或**AuthorizationServiceFault** OnEvent 保持不变。  
+ 下面的示例演示如何在跟踪的异常消息**ServiceFault**服务时引发**FaultException**中**AuthorizationServiceFault**事件;否则，它跟踪中的操作返回的布尔表达式**AuthorizationServiceReply**事件。 任一**AuthorizationServiceReply** OnEvent 或**AuthorizationServiceFault** OnEvent 保持不变。  
   
 > [!NOTE]
->  此示例的实现演示 ServiceReply 和 ServiceFault trackpoints 相互独占性。  
+>  此示例的实现所示 ServiceReply 和 ServiceFault trackpoints 有互斥的性。  
   
 ```  
 <ic:OnEvent IsBegin ="true" IsEnd="false" Name="AuthorizationServiceReply" Source="ESCreditCardService">  
@@ -147,5 +147,5 @@ ms.locfileid: "22287461"
 </ic:OnEvent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [配置 WCF 适配器以截获 BAM 数据](../core/configuring-the-wcf-adapter-to-intercept-bam-data.md)
+## <a name="see-also"></a>请参阅  
+ [配置 WCF 适配器以侦听 BAM 数据](../core/configuring-the-wcf-adapter-to-intercept-bam-data.md)

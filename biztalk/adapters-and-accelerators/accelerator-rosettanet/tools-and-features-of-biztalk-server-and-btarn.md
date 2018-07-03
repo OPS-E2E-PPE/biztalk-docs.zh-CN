@@ -1,5 +1,5 @@
 ---
-title: 工具和功能的 BizTalk Server 和 BTARN |Microsoft 文档
+title: BizTalk Server 和 BTARN 的工具和功能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3c7573da08443fa7e2c0c33be1ab3df6b4e8488
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 114c7765038df6689a38892da3643f8417e8ffcd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207317"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008758"
 ---
-# <a name="tools-and-features-of-biztalk-server-and-btarn"></a>工具和功能的 BizTalk Server 和 BTARN
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 的用户可以访问 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Server 中基于角色的功能和工具，以及针对高科技制造业定制的特定于 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的工具和功能。 本节将对这些功能和工具进行描述。  
+# <a name="tools-and-features-of-biztalk-server-and-btarn"></a>BizTalk Server 和 BTARN 的工具和功能
+Users of Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]有权访问的 Microsoft BizTalk Server 的基于角色的功能和工具，以及[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]的特定工具和自定义的高科技制造业的功能。 本节将对这些功能和工具进行描述。  
   
 ## <a name="in-this-section"></a>本节内容  
   

@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 确认部署使用业务规则 Composer 工具 |Microsoft 文档
+title: 第 2 课： 确认部署使用业务规则编辑器工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,15 +18,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3115dc425fedca9019f0e5e5171f7234e6fbdbb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e9de00e6996daf5ce7759d395f6dfcf97989aa4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210237"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997798"
 ---
-# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>第 2 课： 确认使用业务规则 Composer 工具部署
-在本课程中，你可以确认业务规则编辑器工具创建你的词汇和部署你的策略。 词汇是在规则组合中使用的词汇元素的集合。 策略是版本控制的业务规则集合。  
+# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>第 2 课： 确认部署使用业务规则编辑器工具
+在本课程中，确认业务规则编辑器工具创建你的词汇和部署你的策略。 词汇是您在编写规则中使用的词汇元素的集合。 策略是业务规则的版本控制集合。  
   
 ### <a name="to-confirm-the-deployment-using-the-business-rule-composer-tool"></a>若要确认使用业务规则编辑器工具部署  
   
@@ -34,11 +34,11 @@ ms.locfileid: "22210237"
   
 2.  在打开规则存储对话框中，单击**确定**。  
   
-3.  安装完成后，在业务规则编辑器工具的事实数据资源管理器窗格中下, 图中所示确认在事实数据资源管理器，显示所需的词汇。  
+3.  在业务规则编辑器工具的事实浏览器窗格中，确认所需的词汇出现在事实浏览器中，，如下图中所示。  
   
      ![](../../adapters-and-accelerators/accelerator-swift/media/tut2-scrn2.gif "Tut2_scrn2")  
   
-4.  在策略资源管理器，确认业务规则编辑器工具部署以下策略：  
+4.  在策略浏览器中，确认业务规则编辑器工具部署以下策略：  
   
      MT103_Master_Policy  
   
@@ -96,10 +96,10 @@ ms.locfileid: "22210237"
   
 ### <a name="to-view-a-policy"></a>若要查看策略  
   
-1.  在业务规则编辑器的策略资源管理器窗格中，确保**SWIFT_NetworkRule149_Policy**展开，，然后展开**版本 1.0 – 部署**节点。  
+1. 在业务规则编辑器的策略浏览器窗格中，确保**SWIFT_NetworkRule149_Policy**已展开，然后展开**版本 1.0 – 已部署**节点。  
   
-2.  双击**Validate_MT103**节点将其打开。  
+2. 双击**Validate_MT103**节点以打开它。  
   
-     策略将在屏幕右侧的编辑器窗格中打开。  
+    在屏幕右侧的编辑器窗格中打开该策略。  
   
- 继续执行[模块 7： 测试的有效的平面文件实例](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)。
+   请继续执行[模块 7： 测试有效的平面文件实例](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)。

@@ -1,5 +1,5 @@
 ---
-title: 运行的异常处理服务示例 |Microsoft 文档
+title: 运行异常处理服务示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8dd7c87e84cf7e6e107fc110c611369d0407e003
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: dabab8678d8ee8b65854e494ce0a2ec53eba78fb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007782"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999390"
 ---
-# <a name="running-the-exception-handling-service-sample"></a>运行的异常处理服务示例
-异常处理服务示例演示如何使用异常处理 Web 服务以便提交到 ESB 异常处理框架从外部应用程序的错误。 运行此示例的以下过程需要[安装异常管理示例](../esb-toolkit/installing-the-exception-management-samples.md)。  
+# <a name="running-the-exception-handling-service-sample"></a>运行异常处理服务示例
+异常处理服务示例演示如何使用异常处理 Web 服务才能提交到 ESB 异常处理框架从外部应用程序的错误。 有关运行此示例的以下过程要求[安装异常管理示例](../esb-toolkit/installing-the-exception-management-samples.md)。  
   
  **若要运行异常处理服务示例**  
   
-1.  在 Windows 资源管理器中打开文件夹 \Source\Samples\ExceptionHandlingService，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为 ExceptionHandlingService.sln 的 Visual Studio 解决方案文件。  
+1. 在 Windows 资源管理器中打开文件夹 \Source\Samples\ExceptionHandlingService，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，并打开名为 ExceptionHandlingService.sln Visual Studio 解决方案文件。  
   
-2.  在 Visual Studio 中，单击**启动调试**工具栏上。  
+2. 在 Visual Studio 中，单击**启动调试**工具栏上。  
   
-3.  在加载表单中，单击**生成异常**按钮。  
+3. 在加载表单中，单击**生成异常**按钮。  
   
-4.  在 Windows 资源管理器，依次打开文件夹 \Samples\Exception Handling\Test\Filedrop\All_Exceptions，和最新的 Exceptions_ {GUID}.xml 文件。  
+4. 在 Windows 资源管理器，打开文件夹 \Samples\Exception Handling\Test\Filedrop\All_Exceptions，并打开的最新的 Exceptions_ {GUID}.xml 文件。  
   
-5.  检查生成的异常的内容。  
+5. 检查生成的异常的内容。  
   
- 有关如何在异常处理服务示例使用异常管理服务的详细信息，请参阅[异常处理服务示例的工作原理](../esb-toolkit/how-the-exception-handling-service-sample-works.md)。
+   有关异常处理服务示例如何使用异常管理服务的详细信息，请参阅[异常处理服务示例的工作原理](../esb-toolkit/how-the-exception-handling-service-sample-works.md)。

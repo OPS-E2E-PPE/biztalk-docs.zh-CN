@@ -1,5 +1,5 @@
 ---
-title: BAM 侦听器是什么？ | Microsoft Docs
+title: 什么是 BAM 侦听器？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,28 +17,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9400e80a2f8e8acfdeb12e3d6e61a046151d1e7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc78c5ae3f653e76652373767e60ec1dcaefba8c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289797"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013438"
 ---
-# <a name="what-is-the-bam-interceptor"></a>BAM 侦听器是什么？
+# <a name="what-is-the-bam-interceptor"></a>什么是 BAM 侦听器？
 ## <a name="overview"></a>概述 
 
 BAM 侦听器是一种对象，使用它可以装备应用程序来捕获目标数据。 以下关系图显示 BAM 侦听器的角色以及它与其他 BAM 组件的交互过程：  
   
  ![](../core/media/bam-config-api.gif "bam_config_api")  
-BAM 拦截器  
+BAM 侦听器  
   
  在可能具有目标数据应用程序的每一步中，调用侦听器 OnStep，为每一步提供标识符，并提供应用程序中正使用的某个数据对象或任意对象。  
   
- 然后必须实现一个回调函数，当回调发生时，回调过程获取当前的步骤 ID 和数据对象。 实际上，BAM 侦听器只是将数据对象传播到回调中。 而提取数据的实际逻辑驻留在应用程序中。 例如，如果数据采用 XML 消息形式，则回调将使用 XPath。 有关 Xpath 的详细信息，请参阅[消息分配中使用 Xpath](../core/using-xpaths-in-message-assignments.md)。  
+ 然后必须实现一个回调函数，当回调发生时，回调过程获取当前的步骤 ID 和数据对象。 实际上，BAM 侦听器只是将数据对象传播到回调中。 而提取数据的实际逻辑驻留在应用程序中。 例如，如果数据采用 XML 消息形式，则回调将使用 XPath。 有关 Xpath 的详细信息，请参阅[在消息赋值中使用 Xpath](../core/using-xpaths-in-message-assignments.md)。  
   
  BAM 侦听器基于可编程创建的配置在每一步中判断是否有需要的数据。 然后，BAM 侦听器使用获得的数据来调用需要使用的、每次作为参数传递给 OnStep 的 DirectEventStream 或 BufferedEventStream。  
   
- 为每一步调用侦听器不会占用大量资源。 如果为此步骤调用侦听器但没有注册任何内容，则侦听器立即返回。 这意味着没有磁盘操作，没有事务，甚至没有内存分配；因此，对性能几乎没有影响。 同时，还有机会在必要时为 BAM 提取数据。 对数据提取和数据的可用性所涉及的步骤的性能影响将取决于你的实现`IBAMDataExtractor Interface`。  
+ 为每一步调用侦听器不会占用大量资源。 如果为此步骤调用侦听器但没有注册任何内容，则侦听器立即返回。 这意味着没有磁盘操作，没有事务，甚至没有内存分配；因此，对性能几乎没有影响。 同时，还有机会在必要时为 BAM 提取数据。 涉及数据提取和数据的可用性的步骤对性能的影响取决于您的实现的`IBAMDataExtractor Interface`。  
   
  以下代码示例演示在配置和运行时期间如何使用侦听器。  
   
@@ -77,21 +77,21 @@ Interceptor.OnStep(approvePO, data2, es, callback)
   
  其中：  
   
--   *recvPO*和*approvePO*是用于标识你的应用程序中的步骤的任意对象。  
+- *recvPO*并*approvePO*是用于标识你的应用程序中的步骤的任意对象。  
   
--   *data1*和*data2*是你已在该点，并可能包含有趣的数据 – 例如采购订单的 XML 文档的任意对象。  
+- *data1*并*data2*是任意对象已存在的可能包含感兴趣的数据 – 例如采购订单的 XML 文档。  
   
--   *es*是 DirectEventStream 或 BufferedEvent 流，具体取决于您的性能要求。  
+- *es*是 DirectEventStream 或 BufferedEvent 流，具体取决于你的性能要求。  
   
--   *回调*是你实现`IBAMDataExtractor Interface`。  
+- *回调*是的实现`IBAMDataExtractor Interface`。  
   
- SDK 示例中， [BAM API （BizTalk Server 示例）](../core/bam-api-biztalk-server-sample.md)，演示如何使用侦听器，其中包含两个配置工具和示例运行时应用程序。  
+  SDK 示例中， [BAM API （BizTalk Server 示例）](../core/bam-api-biztalk-server-sample.md)，演示了如何使用侦听器，其中包含这两种配置工具和示例运行时应用程序。  
   
- BizTalk 业务流程引擎允许进行侦听，这样就能够在运行时使用跟踪配置文件编辑器更改为 BAM 收集的数据。  
+  BizTalk 业务流程引擎允许进行侦听，这样就能够在运行时使用跟踪配置文件编辑器更改为 BAM 收集的数据。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何确定并设置为活动的事件写入者角色](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)  
+-   [如何确定和设置活动的事件写入者角色](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)  
   
-## <a name="see-also"></a>另请参阅  
- [BAM API （BizTalk Server 示例）](../core/bam-api-biztalk-server-sample.md)
+## <a name="see-also"></a>请参阅  
+ [BAM API（BizTalk Server 示例）](../core/bam-api-biztalk-server-sample.md)

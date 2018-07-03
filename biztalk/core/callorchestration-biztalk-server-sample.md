@@ -1,5 +1,5 @@
 ---
-title: CallOrchestration （BizTalk Server 示例） |Microsoft 文档
+title: CallOrchestration （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9cf37bd2b4ceacfe38736cadd8343b4259db126e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 614cbb4531d0d7052263e5e4c7d73ec209e9b685
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966763"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021875"
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration （BizTalk Server 示例）
 CallOrchestration 示例演示如何从一个 BizTalk 业务流程调用另一个业务流程。  
@@ -39,10 +39,10 @@ CallOrchestration 示例演示如何从一个 BizTalk 业务流程调用另一�
   
 5.  主业务流程将更新后的采购订单消息放入一个文件夹备查。  
   
-## <a name="how-this-sample-is-designed-and-why"></a>本示例旨在如何以及为何  
+## <a name="how-this-sample-is-designed-and-why"></a>此示例设计方式和原因  
  本示例的主要目的是演示如何从一个业务流程调用另一个业务流程。 通过调用业务流程，可以将业务程序分成可重用的组件。 您可以将通用流程分解为独立的业务流程，以便其他人重用。  
   
- 在此示例中，**调用 Orchestration**中 receivePO.odx 形状时，将调用 findShippingPrice.odx 并等待嵌套业务流程，findShippingPrice.odx，若要计算并发送购买之前返回传送价格顺序。 业务流程 findShippingPrice.odx 使用以下逻辑来计算发货价格：  
+ 在此示例中，**调用业务流程**receivePO.odx 中的形状调用 findShippingPrice.odx，并等待嵌套的业务流程 findShippingPrice.odx 来计算并返回发货价格发送在购买前顺序。 业务流程 findShippingPrice.odx 使用以下逻辑来计算发货价格：  
   
 ```  
 If ( weight * shippingRate ) < minShippingPrice Then  
@@ -58,7 +58,7 @@ End If
 >  不能从原子业务流程调用长期事务。  
   
 > [!NOTE]
->  使用之间的差异**调用 Orchestration**形状和**启动 Orchestration**形状是，当调用业务流程，调用方会等到嵌套的业务流程，以返回之前继续操作。 而从一个业务流程启动另一个业务流程时，调用方启动该操作之后，即继续执行处理流程的下一步操作。 调用方所调用的业务流程将独立运行，直到它完成处理流程。 有关详细信息，请参阅[如何配置调用业务流程形状](../core/how-to-configure-the-call-orchestration-shape.md)。 另请参阅[如何配置启动 Orchestration 形状](../core/how-to-configure-the-start-orchestration-shape.md)。  
+>  使用不同之处**调用业务流程**形状和**启动业务流程**形状是，在调用业务流程时，调用方等到嵌套的业务流程返回之前继续操作。 而从一个业务流程启动另一个业务流程时，调用方启动该操作之后，即继续执行处理流程的下一步操作。 调用方所调用的业务流程将独立运行，直到它完成处理流程。 有关详细信息，请参阅[如何配置调用业务流程形状](../core/how-to-configure-the-call-orchestration-shape.md)。 另请参阅[如何配置启动业务流程形状](../core/how-to-configure-the-start-orchestration-shape.md)。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  \<*示例路径*\>\Orchestrations\CallOrchestration\  
@@ -77,23 +77,23 @@ End If
 |receivePO.odx|在本示例中充当主业务流程的 BizTalk 业务流程。 它首先从接收文件夹中检索采购订单消息，然后调用另一个业务流程 findShippingPrice.odx 来计算和更新发货价格。|  
 |Setup.bat|用于生成和初始化本示例。|  
   
-## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
+## <a name="building-and-initializing-this-sample"></a>生成并初始化本示例  
   
 #### <a name="to-build-and-initialize-the-callorchestration-sample"></a>生成并初始化 CallOrchestration 示例  
   
-1.  在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*\>\Orchestrations\CallOrchestration\  
+    \<*示例路径*\>\Orchestrations\CallOrchestration\  
   
-2.  运行 Setup.bat 文件，该文件将执行以下操作：  
+2. 运行 Setup.bat 文件，该文件将执行以下操作：  
   
-    -   在 CallOrchestration 文件夹中，为本示例创建输入 (In) 和输出 (Out) 文件夹。  
+   - 在 CallOrchestration 文件夹中，为本示例创建输入 (In) 和输出 (Out) 文件夹。  
   
-    -   为本示例编译并部署 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目（包括这两个业务流程）。  
+   - 为本示例编译并部署 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目（包括这两个业务流程）。  
   
-    -   创建并绑定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置、发送和接收端口。  
+   - 创建并绑定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置、发送和接收端口。  
   
-    -   启用接收位置并启动发送端口。  
+   - 启用接收位置并启动发送端口。  
   
 > [!NOTE]
 >  在尝试运行本示例之前，应确认在生成和初始化过程中 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 未报告任何错误。  
@@ -104,17 +104,17 @@ End If
   
 1.  将 InputPO.xml 文件的副本放到 In 文件夹中。  
   
-2.  查看在 Out 文件夹中创建的已更新 XML 采购订单文件。 此文件包含原始采购订单消息，现在已修改为包含按前述方法计算出的发货费用。 此文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>*  GUID 生成以唯一标识消息.  
+2.  查看在 Out 文件夹中创建的已更新 XML 采购订单文件。 此文件包含原始采购订单消息，现在已修改为包含按前述方法计算出的发货费用。 此文件的名称的格式\< *MessageID*\>.xml，其中*\<MessageID\>* 生成的 GUID 来唯一标识消息.  
   
 ## <a name="uninstalling-this-sample"></a>卸载本示例  
   
 #### <a name="to-uninstall-the-callorchestration-sample"></a>卸载 CallOrchestration 示例  
   
-1.  在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令窗口中，导航到以下文件夹：  
+1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令窗口中，导航到以下文件夹：  
   
-     \<*示例路径*\>\Orchestrations\CallOrchestration\  
+    \<*示例路径*\>\Orchestrations\CallOrchestration\  
   
-2.  运行 Cleanup.bat。  
+2. 运行 Cleanup.bat。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

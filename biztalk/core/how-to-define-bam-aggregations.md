@@ -1,5 +1,5 @@
 ---
-title: 如何定义 BAM 聚合 |Microsoft 文档
+title: 如何定义 BAM 聚合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,35 +18,35 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef1b5b377611eb8e28088cb2d0c2f2ed6f829de8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57df4978f2b133794efd8fbdc99819bcedf144cb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249509"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015902"
 ---
 # <a name="how-to-define-bam-aggregations"></a>如何定义 BAM 聚合
 BAM 支持以下两种类型的数据聚合：  
   
--   联机分析处理 (OLAP) 聚合  
+- 联机分析处理 (OLAP) 聚合  
   
--   实时聚合 (RTA)  
+- 实时聚合 (RTA)  
   
- BAM 使用 Microsoft SQL Server Analysis Services 实现 OLAP 聚合。  
+  BAM 使用 Microsoft SQL Server Analysis Services 实现 OLAP 聚合。  
   
- 必须在定义 RTA 的 BAM 主导入数据库上配置触发器。  
+  必须在定义 RTA 的 BAM 主导入数据库上配置触发器。  
   
 ### <a name="to-define-olap-aggregations"></a>定义 OLAP 聚合  
   
 1.  在 BAM Excel 工作簿中，创建一个视图，向数据透视表中至少添加一个维度和一个度量值，清除 RTA 工具栏按钮，然后保存该工作簿。  
   
-    -   有关打开 BAM 工作簿，创建视图，以及添加维度和度量值，请参阅[定义 BAM 视图](../core/defining-a-bam-view.md)。  
+    -   有关打开 BAM 工作簿的信息，创建视图、 添加维度和度量值，请参阅[定义 BAM 视图](../core/defining-a-bam-view.md)。  
   
 2.  部署工作簿。  
   
-    -   若要部署工作簿，按照中的说明[如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
+    -   若要部署该工作簿，请按照中的说明[如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
   
-3.  解决方案开发人员使用**DirectEventStream**类来导入 BAM 主导入数据库的事件。  
+3.  解决方案开发人员可以使用**DirectEventStream**类将事件导入 BAM 主导入数据库。  
   
     -   璝惠**DirectEventStream**类，请参阅[DirectEventStream 类](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx)。  
   
@@ -66,13 +66,13 @@ BAM 支持以下两种类型的数据聚合：
     > [!WARNING]
     >  不要定义使用同一个 BAM 活动的多个 RTA。 否则，当您存档 BAM 数据时，RTA 数据将不正确。  
   
-    -   有关打开 BAM 工作簿，创建视图，以及添加维度和度量值，请参阅"定义业务活动视图"和"定义聚合"中*信息工作者用户指南*。  
+    -   有关打开 BAM 工作簿的信息，创建视图、 添加维度和度量值，请参阅"定义业务活动视图"和"定义聚合"中*信息工作者用户指南*。  
   
 2.  部署工作簿。  
   
-    -   若要部署工作簿，按照中的说明[如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
+    -   若要部署该工作簿，请按照中的说明[如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
   
-3.  解决方案开发人员使用**DirectEventStream**类来导入 BAM 主导入数据库的事件。  
+3.  解决方案开发人员可以使用**DirectEventStream**类将事件导入 BAM 主导入数据库。  
 
   
 4.  打开工作簿的最新实时数据副本以查看 RTA。  
@@ -80,7 +80,7 @@ BAM 支持以下两种类型的数据聚合：
     > [!IMPORTANT]
     >  出于安全原因，BAM 不删除工作簿的现有实时数据副本。 BAM 而是递增实时数据副本的文件名中的数字。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM DTS 包](../core/bam-dts-packages.md)   
  [如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)   
  [更新 OLAP 和 RTA 连接字符串属性](../core/updating-olap-and-rta-connection-string-properties.md)   

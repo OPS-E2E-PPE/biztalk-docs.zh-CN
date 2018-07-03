@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11017 |Microsoft 文档
+title: 单一登录： 事件 11017 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25ef3f3be84e775fe522b508f7726f3e4e88870b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e0883abfd3bc86f6e41fd11e0feafa79b080b13
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276773"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024187"
 ---
 # <a name="single-sign-on-event-11017"></a>单一登录： 事件 11017
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11017|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_PS_WARN_NOT_IN_GROUP_DELETE_OK|  
-|消息正文|由于 Windows 帐户不属于应用程序的应用程序用户帐户而导致映射无效。 已删除该映射。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> Application Users: %4|  
+|                 |                                                                                                                                                                                                                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                               企业单一登录                                                                                                                                |
+| 产品版本 |                                                                                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                               |
+|    事件 ID     |                                                                                                                                         11017                                                                                                                                          |
+|  事件源   |                                                                                                                                         ENTSSO                                                                                                                                         |
+|    组件    |                                                                                                                                          N/A                                                                                                                                           |
+|  符号名称  |                                                                                                                           SSO_PS_WARN_NOT_IN_GROUP_DELETE_OK                                                                                                                           |
+|  消息正文   | 由于 Windows 帐户不属于应用程序的应用程序用户帐户而导致映射无效。 已删除该映射。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 应用程序用户： %4 |
   
 ## <a name="explanation"></a>解释  
  指定的 Windows 帐户不是此应用程序的应用程序用户帐户的一部分，或者曾经是应用程序用户帐户的一部分，但已更改或删除。 已删除该映射。  

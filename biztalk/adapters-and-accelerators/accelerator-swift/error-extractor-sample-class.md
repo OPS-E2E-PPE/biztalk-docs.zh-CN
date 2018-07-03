@@ -1,5 +1,5 @@
 ---
-title: 错误提取程序示例类 |Microsoft 文档
+title: 错误提取程序示例类 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,45 +15,45 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53ceb305dcd30164e385022f66140fcaa626b133
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 1085af05221b252bb6942e2c32bbe1f91c8d7688
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965123"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010766"
 ---
 # <a name="error-extractor-sample-class"></a>错误提取程序示例类
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]反汇编程序序列化将错误记录到 XML 对象，并将 XML 对象附加到多部分消息的错误部分。 反汇编程序随后会在失败的消息发布到 MessageBox 数据库就像将有效的消息。 因此，到 MessageBox 数据库失败消息包含错误详细信息。 可以使用错误提取程序示例类从失败的消息，提取错误详细信息，并生成一个文件具有错误详细信息，并具有原始消息的另一个文件。  
+Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]拆装器序列化将错误记录到 XML 对象，并将 XML 对象附加到多部分消息的错误部分。 拆装器就像一样是有效的消息，然后将失败的消息发布到 MessageBox 数据库。 因此，失败消息携带错误详细信息到 MessageBox 数据库。 可以使用错误提取程序示例类从失败的消息，提取错误详细信息，并生成一个文件包含错误详细信息，并具有原始消息的另一个文件。  
   
 > [!IMPORTANT]
->  错误提取程序示例类是 SDK 中的示例代码。 它不用于在生产中使用。  
+>  错误提取程序示例类是在 SDK 中的示例代码。 它不适合在生产中使用。  
   
- 若要使用错误提取程序示例类，必须创建业务流程来处理失败的消息。 此业务流程包括步骤以提取失败消息的正文，提取的错误部分的失败的消息，然后编写正文和错误部分以单独的 XML 文件。 业务流程将表示每个步骤中调用错误提取程序示例类中的一个或多个以下方法的表达式阶段：  
+ 若要使用错误提取程序示例类，必须创建业务流程来处理失败的消息。 此业务流程包括失败消息的正文提取、 提取失败消息的错误部分，然后编写的正文和错误部分以单独的 XML 文件的步骤。 该业务流程表示每个步骤中的表达式阶段错误提取程序示例类中调用一个或多个以下方法：  
   
 ## <a name="getbodypartasstring-method"></a>GetBodyPartAsString 方法  
- 此方法返回一个字符串，包含的 XML 在 XLANG 消息 xm 的正文部分中找到。 方法需要包含正文部分的 XLANG 消息 xm 调用"BodySegment。" 因此，您必须声明 xm 中具有同名正文一部分调用的业务流程。 如果"BodySegment"不存在 xm 的一部分**GetBodyPartAsString**引发异常。  
+ 此方法返回一个字符串，包含的 XML 在 XLANG 消息 xm 的正文部分中找到。 该方法需要包含一个正文部分 XLANG 消息 xm 调用"BodySegment。" 因此，您必须声明 xm 在调用业务流程中使用此正文部分名称。 如果"BodySegment"不存在 xm 的一部分**GetBodyPartAsString**将引发异常。  
   
 ```  
 SWIFTErrorExtractor.ErrorExtractor.GetBodyPartAsString(XLANGMessage xm);  
 ```  
   
 ## <a name="geterrorpartasstring-method"></a>GetErrorPartAsString 方法  
- 此方法返回一个字符串，包含的 XML 在 XLANG 消息 xm 的错误部分中找到。 方法需要包含一个错误部分的 XLANG 消息 xm 调用"ErrorSegment。" 因此，您必须声明 xm 中具有同名错误一部分调用的业务流程。 如果"ErrorSegment"不存在 xm 的一部分**GetErrorPartAsString**引发异常。  
+ 此方法返回 XLANG 消息 xm 的错误部分中找到包含的 XML 字符串。 该方法需要包含一个错误部分 XLANG 消息 xm 调用"ErrorSegment。" 因此，您必须声明 xm 在调用业务流程中使用此错误部分名称。 如果"ErrorSegment"不存在 xm 的一部分**GetErrorPartAsString**将引发异常。  
   
 ```  
 SWIFTErrorExtractor.ErrorExtractor.GetErrorPartAsString(XLANGMessage xm);  
 ```  
   
 ## <a name="writetofile-method"></a>WriteToFile 方法  
- 此方法将写入从字符串*消息*参数指定的文件*filePath*参数。  
+ 此方法将从字符串写入*消息*参数指定的文件*filePath*参数。  
   
 ```  
 SWIFTErrorExtractor.ErrorExtractor.WriteToFile(string filePath, string message);  
 ```  
   
- A4SWIFT 安装程序安装错误提取程序示例类 (SWIFTErrorExtractor.dll) 作为中 A4SWIFT SDK 的一部分\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor。 此文件夹还包括示例类 (ErrorExtractor.cs) 的源代码。  
+ A4SWIFT 安装程序安装错误提取程序示例类 (SWIFTErrorExtractor.dll) 在 A4SWIFT SDK 的一部分\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tutorial\SWIFTErrorExtractor。 此文件夹还包括示例类 (ErrorExtractor.cs) 的源代码。  
   
  若要从业务流程调用 SWIFTErrorExtractor.dll，必须将.dll 文件发布到全局程序集缓存中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [工具](../../adapters-and-accelerators/accelerator-swift/tools.md)

@@ -1,5 +1,5 @@
 ---
-title: 指定的 SOAP 操作，wcf 发送适配器 |Microsoft 文档
+title: 指定 SOAP 操作，为 WCF 发送适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 385e92f7801dc2512fbd038bd0b005d95c503e57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47781b2b8add675207136248b38b0dadfe6b5610
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276637"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37023491"
 ---
 # <a name="specifying-soap-actions-for-wcf-send-adapters"></a>为 WCF 发送适配器指定 SOAP 操作
-你可以设置**WCF。操作**WCF 发送适配器传输属性对话框中或业务流程中的上下文属性**表达式**形状。 如果你设置**WCF。操作**业务流程中的上下文属性，您需要离开**操作**字段保留为空白中静态发送端口的 WCF 适配器传输属性对话框。 如果你还在静态发送端口中，指定操作**WCF。操作**将替代在业务流程中设置的上下文属性。  
+可以设置**WCF。操作**上下文属性在 WCF 发送适配器传输属性对话框中或在业务流程**表达式**形状。 如果您设置**WCF。操作**业务流程中的上下文属性，您需要将**操作**字段留空，在 WCF 适配器传输属性对话框中的静态发送端口。 如果还在静态发送端口中指定的操作**WCF。操作**业务流程中设置的上下文属性将被重写。  
   
- 此外，有两种方法来指定此属性： 单个操作格式和操作映射格式。 如果采用单一操作格式设置此属性（例如 http://MyService/IMyContract/MyAction1），则传出消息的“WCF 发送适配器传输属性”对话框中的 SOAP 操作将始终设置为在此属性中指定的值。 或者，可以在业务流程中设置的单个操作格式**表达式**形状。 例如：  
+ 此外，有两种方法来指定此属性： 单一操作格式和操作映射格式。 如果将此属性设置在单一操作格式 — 例如， http://MyService/IMyContract/MyAction1— WCF 中的 SOAP 操作发送适配器传输属性对话框中，为传出消息始终设置为此属性中指定的值。 或者，可以在业务流程中设置单一操作格式**表达式**形状。 例如，  
   
 ```  
 OutboundMessage(WCF.Action)="http://MyService/IMyContract/MyAction1";  
 ```  
   
- 如果在操作映射格式设置此属性，传出的 SOAP 操作由**BTS。操作**上下文属性。 例如，如果此属性设置为 WCF 中的以下 XML 格式发送适配器传输属性对话框中和**BTS。操作**属性设置为**Operation_1**在发送端口业务流程中，WCF 发送适配器使用 http://MyService/IMyContract/MyAction1 传出的 SOAP 操作的。  
+ 如果采用操作映射格式设置此属性，传出的 SOAP 操作将由**BTS。操作**上下文属性。 例如，如果此属性设置为下面的 XML 格式，在 WCF 发送适配器传输属性对话框和**BTS。操作**属性设置为**Operation_1**业务流程中的发送端口，在 WCF 发送适配器将使用http://MyService/IMyContract/MyAction1为传出的 SOAP 操作。  
   
 ```  
 BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -43,17 +43,17 @@ BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd
 </BtsActionMapping>  
 ```  
   
- 指定操作映射**WCF。操作**中**表达式**形状不支持。 您需要在 WCF 传输属性对话框中指定操作映射。 然后 WCF 适配器将通过查找的 SOAP 操作**BTS。操作**上下文属性，业务流程将设置为发送消息所在的端口上操作的名称。  
+ 为指定操作映射**WCF。操作**中**表达式**形状不受支持。 您需要在 WCF 传输属性对话框中指定操作映射。 然后 WCF 适配器将查找 SOAP 操作使用**BTS。操作**上下文属性，该业务流程将设置为发送消息的端口上操作的名称。  
   
- 如果使用基于内容的路由 (CBR) 其中路由传出消息**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**属性未设置，WCF 发送适配器将设置整个操作映射连接到传出的 WCF 消息的操作字符串。 若要解决此问题，你可以执行下列其中一项：  
+ 如果使用基于内容的路由 (CBR)，来路由传出消息**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**属性未设置，则 WCF 发送适配器会将整个操作映射字符串设置为传出 WCF 消息的操作。 若要解决此问题，可以执行下列任一操作：  
   
--   将发送端口上的操作字段设置为 http://MyService/IMyContract/MyAction1。  
+- 将操作字段设置为发送端口上http://MyService/IMyContract/MyAction1。  
   
--   设置**BTS。操作**在管道中的上下文属性。 例如，设置的值**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**到 Operation1。  
+- 设置**BTS。操作**管道中的上下文属性。 例如，设置的值**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**为 Operation1。  
   
--   将操作字段保留为空，改用传入消息中的操作。  
+- 将操作字段保留为空，改用传入消息中的操作。  
   
- 您也可以通过 BizTalk WCF 服务使用向导来使用包含单一操作或操作映射的 WCF 服务。 有关更多详细信息，请参阅[如何使用 BizTalk WCF 服务使用向导来使用 WCF 服务](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)。  
+  您也可以通过 BizTalk WCF 服务使用向导来使用包含单一操作或操作映射的 WCF 服务。 有关更多详细信息，请参阅[如何使用 BizTalk WCF 服务使用向导来使用 WCF 服务](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [配置动态发送端口使用 WCF 适配器上下文属性](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)
+## <a name="see-also"></a>请参阅  
+ [使用 WCF 适配器上下文属性配置动态发送端口](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

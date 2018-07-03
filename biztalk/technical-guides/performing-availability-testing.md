@@ -1,5 +1,5 @@
 ---
-title: 执行可用性测试 |Microsoft 文档
+title: 执行可用性测试 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6f0d9b1cb7b38ab8a1173ee227a8202812048f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a4ec699f3daf65b245dce2f2f70cd3d4daecb00
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298301"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014710"
 ---
 # <a name="performing-availability-testing"></a>执行可用性测试
-你应测试系统，以验证其能够从不同级别的失败，范围从小规模故障 （如网络卡故障） 到生产服务器的丢失将恢复的灾难恢复。 灾难恢复测试应包括以下步骤：  
+您应测试系统，以验证它能够从各种级别的故障，范围为从小规模故障 （例如网络卡故障） 到生产服务器的丢失恢复的灾难恢复。 灾难恢复测试应包括以下步骤：  
   
--   **测试单个硬件组件失败。**  
+- **测试单个硬件组件故障。**  
   
-     你应测试系统能够从单个硬件组件故障，例如网络或磁盘中恢复。  
+   应测试系统能够从单个硬件组件故障，例如网络或磁盘中恢复。  
   
--   **测试单个 BizTalk server 失败。**  
+- **测试单一 BizTalk server 失败。**  
   
-     在大多数[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]生产环境中，主机处理并分散在多个计算机中运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]单个的 BizTalk 组中。 什么是 BizTalk 组能够继续在事件处理的主机组中的服务器之一失败？  
+   在大多数[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]生产环境中，主机进程并分散在多台计算机运行之间[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]单一的 BizTalk 组中。 什么是 BizTalk 组能够继续在事件处理的主机组中的服务器之一失败？  
   
--   **测试群集节点故障转移。**  
+- **测试群集节点故障转移。**  
   
-     如果 Windows 群集用于提供的高可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 BizTalk 主机，应验证群集节点故障转移功能。 有关使用 Windows 群集提供的高可用性的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅[清单： 具有容错能力或负载平衡提供高可用性](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)。  
+   如果 Windows 聚类分析用于提供高可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 BizTalk 主机，应验证群集节点故障转移功能。 有关使用 Windows 群集提供高可用性的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅[核对清单： 提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)。  
   
--   **测试使用日志传送的 BizTalk Server 数据库的恢复。**  
+- **测试恢复使用日志传送的 BizTalk Server 数据库。**  
   
-     你应验证的恢复[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。 有关使用日志传送备份和还原的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库，请参阅[什么是 BizTalk Server 日志传送？](../technical-guides/what-is-biztalk-server-log-shipping.md)本指南中或[日志传送](http://go.microsoft.com/fwlink/?LinkID=153450)(http://go.microsoft.com/fwlink/?LinkID=153450)。  
+   您应该验证的恢复[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。 有关使用日志传送备份和还原的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库，请参阅[什么是 BizTalk Server 日志传送？](../technical-guides/what-is-biztalk-server-log-shipping.md)本指南中或[日志传送](http://go.microsoft.com/fwlink/?LinkID=153450)(<http://go.microsoft.com/fwlink/?LinkID=153450>)。  
   
-     你应遵循的增加的可用性的步骤的清单[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境使用灾难恢复，请参阅[清单： 增加可用性与灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)。  
+   应遵循以提高可用性的步骤的清单[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中使用灾难恢复，请参阅[核对清单： 灾难恢复与提高可用性](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [BizTalk Server 用于提高可用性](../technical-guides/increasing-availability-for-biztalk-server.md)
+## <a name="see-also"></a>请参阅  
+ [提供高可用性 BizTalk Server](../technical-guides/increasing-availability-for-biztalk-server.md)

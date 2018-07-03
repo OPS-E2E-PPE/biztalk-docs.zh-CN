@@ -1,5 +1,5 @@
 ---
-title: 消息流中发起程序 BTARN |Microsoft 文档
+title: 消息发起方 BTARN 中的流 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85fed6404627fd8abfa9d50e7d56d98ff7306f09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 160f40d4dfd0d11a7bd5a5c7c127d62b3e42a2cb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210589"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004022"
 ---
 # <a name="message-flow-in-the-initiator-btarn"></a>发起方 BTARN 中的消息流
 发起方计算机的消息流开始于以其专用格式接收来自后端业务线应用程序的消息。 该消息流包括将收到的消息转换为与 RosettaNet 实现框架 (RNIF) 兼容的消息，然后通过 Internet 将经过转换的消息发送到响应方计算机。  
@@ -34,48 +34,48 @@ ms.locfileid: "22210589"
 ## <a name="btarn-components-on-the-initiator-computer"></a>发起方计算机上的 BTARN 组件  
  当消息流通过发起方计算机上的 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 时，下列组件将对消息进行处理：  
   
--   SQL 适配器  
+- SQL 适配器  
   
--   XML 接收管道  
+- XML 接收管道  
   
--   发起方专用流程  
+- 发起方专用流程  
   
--   发起方公用流程  
+- 发起方公用流程  
   
--   XML 发送管道  
+- XML 发送管道  
   
--   HTTP 适配器  
+- HTTP 适配器  
   
--   RNIFSend.aspx 页  
+- RNIFSend.aspx 页  
   
- 有关这些组件，以及它们如何处理消息的详细信息，请参阅[消息处理中 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)。  
+  有关这些组件，以及它们如何处理消息的详细信息，请参阅[BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)。  
   
 ## <a name="flow-of-an-initiated-message"></a>初始消息的消息流  
  下列步骤说明通过发起方 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 计算机的初始消息的消息流。 下图显示了这一过程：  
   
  ![](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-initiator-send-message-flow.gif "RN3_Initiator_Send_Message_Flow")  
   
-1.  业务线应用程序发送到消息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]。  
+1. 业务线应用程序将消息发送给 Microsoft [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]。  
   
-2.  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将该消息从 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] 数据库发送到 SQL 适配器。  
+2. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将该消息从 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] 数据库发送到 SQL 适配器。  
   
-3.  XML 接收管道对该消息执行简单 XML 验证。  
+3. XML 接收管道对该消息执行简单 XML 验证。  
   
-4.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 将消息路由至 MessageBox 数据库。  
+4. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 将消息路由至 MessageBox 数据库。  
   
-5.  专用流程处理消息的服务内容。  
+5. 专用流程处理消息的服务内容。  
   
-6.  公用流程处理消息的 RNIF 头。  
+6. 公用流程处理消息的 RNIF 头。  
   
-7.  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将该消息路由回 MessageBox 数据库。  
+7. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将该消息路由回 MessageBox 数据库。  
   
-8.  接收管道对消息进行组装并签名/加密/编码。  
+8. 接收管道对消息进行组装并签名/加密/编码。  
   
 9. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将该消息路由到 HTTP 适配器。  
   
-10. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将消息路由至 RNIFSend.aspx 页，该页将其通过 Internet 发送到其目标。  
+10. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将消息路由到 RNIFSend.aspx 页，将其通过 Internet 发送到其目标。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BTARN 中的消息流](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)   
  [响应方 BTARN 中的消息流](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-the-responder-btarn.md)   
- [消息处理在 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+ [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

@@ -1,5 +1,5 @@
 ---
-title: 部署 A4SWIFT 信封架构 |Microsoft 文档
+title: 部署 A4SWIFT 信封架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,54 +17,54 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: ae07b6b957f608e89c3ae65802d6627440201a65
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25967043"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004142"
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>部署 A4SWIFT 信封架构
-每当你设置消息修复和新提交时，架构项目中必须包含信封架构。 信封架构，如 EnvelopeMT103.xsd，需要将写入到 MRSR 站点。  
+设置消息修复和新提交时，必须在架构项目中包括信封架构。 信封架构，如 EnvelopeMT103.xsd，需要写入 MRSR 站点。  
   
  **摘要**  
   
- 向你的项目，添加信封架构，如下所示：  
+ 将信封架构添加到你的项目，按如下所示：  
   
--   在 Visual Studio 中，包含你的消息架构的项目将添加到每个消息架构信封架构。  
+- 在 Visual Studio 中，为该项目包含消息架构，添加每个消息架构的信封架构。  
   
--   将对 RuntimeSchemas.dll 的引用添加到任何包含一个或多个信封架构的项目。  
+- 将对 RuntimeSchemas.dll 的引用添加到任何项目都包含一个或多个信封架构。  
   
-    > [!NOTE]
-    >  添加对 RuntimeSchemas.dll 的引用所需[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]项目仅在有消息修复和新提交到该项目添加信封架构时。  
+  > [!NOTE]
+  >  添加对 RuntimeSchemas.dll 的引用所需的[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]项目仅当为消息修复和新提交到项目中添加了一个信封架构时。  
   
--   将未分析消息信封架构 (EnvelopeUnparsedMessage.xsd) 添加到项目。  
+- 将未分析消息信封架构 (EnvelopeUnparsedMessage.xsd) 添加到项目。  
   
 ### <a name="to-add-a-swift-envelope-schema"></a>若要添加 SWIFT 信封架构  
   
-1.  在解决方案资源管理器的 Visual Studio 中，打开架构项目。  
+1.  在解决方案资源管理器的 Visual Studio 中，打开您的架构项目。  
   
 2.  右键单击**引用**，然后单击**添加引用**。  
   
 3.  在添加引用对话框中，单击**浏览**标记。  
   
-4.  在选择组件对话框中，打开**查找**下拉列表。 将移动到 ***\<驱动器\>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\Assemblies**。 选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**从列表中的程序集，然后单击**添加**。  
+4.  在选择组件对话框中，打开**查找**下拉列表。 将移动到 ***\<驱动器\>*:\Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\Assemblies**。 选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**从列表中的程序集，并单击**添加**。  
   
-5.  在**添加引用**对话框中，单击**确定**。  
+5.  在中**添加引用**对话框中，单击**确定**。  
   
-6.  右键单击你的项目，指向**添加**，然后单击**添加现有项**。  
+6.  右键单击你的项目，指向**外**，然后单击**添加现有项**。  
   
-7.  在添加现有项对话框中，在**查找**下拉列表框中，移动到**\<驱动器\>: files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Categoryn\MTxxx**。 例如，选择信封架构， **EnvelopeMT103.xsd**，然后单击**添加**。  
+7.  在添加现有项对话框的中**查找**下拉列表框中，转到**\<驱动器\>: files\ Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Categoryn\MTxxx**。 例如，选择信封架构中， **EnvelopeMT103.xsd**，然后单击**添加**。  
   
-     在添加现有项对话框中，在**查找**下拉列表框中，移动到。 选择信封架构，例如，EnvelopeMT103.xsd，，然后单击添加。  
+     在添加现有项对话框的中**查找**下拉列表框中，转到。 选择的信封架构，例如，EnvelopeMT103.xsd，，然后单击添加。  
   
     > [!NOTE]
-    >  A4SWIFT 将添加你的项目，信封架构，如解决方案资源管理器中所示。  
+    >  A4SWIFT 添加你的项目，在信封架构，如解决方案资源管理器中所示。  
   
-8.  在解决方案资源管理器，右键单击你的项目，指向**添加**，然后单击**添加现有项**。  
+8.  在解决方案资源管理器中右键单击你的项目，指向**外**，然后单击**添加现有项**。  
   
-9. 如果在使用添加现有项对话框中中的消息修复和新提交功能**查找**下拉列表框中，移动到 **\<*驱动器*\>: \Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Unparsed 消息**。 选择**EnvelopeUnparsedMessage.xsd**，然后单击**添加**。  
+9. 如果使用消息修复和新提交的功能，请在添加现有项对话框中，在**查找**下拉列表框中，转到 **\<*驱动器*\>: \Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Unparsed 消息**。 选择**EnvelopeUnparsedMessage.xsd**，然后单击**添加**。  
   
-10. 在解决方案资源管理器，右键单击项目名称，然后单击 **生成**。  
+10. 在解决方案资源管理器，右键单击项目名称，然后单击**生成**。  
   
-11. 在解决方案资源管理器，右键单击项目名称，然后单击 **部署**。
+11. 在解决方案资源管理器，右键单击项目名称，然后单击**部署**。

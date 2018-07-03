@@ -1,5 +1,5 @@
 ---
-title: 如何确定当前单一登录访问 |Microsoft 文档
+title: 如何确定当前的单一登录访问 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b16fc1d1677fa1a8859c75b43be36de9209dbac0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c57cfae2c2b7545854fa7891f099a19ff7bb0098
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249253"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014766"
 ---
-# <a name="how-to-determine-current-single-sign-on-access"></a>如何确定当前单一登录访问
+# <a name="how-to-determine-current-single-sign-on-access"></a>如何确定当前的单一登录访问
 可能需要对用户执行的首要任务之一是确定已为当前用户安装了哪些关联应用程序。 通过调用 ISSOMapper.GetApplications 可以执行此查询。  
   
 ### <a name="to-query-the-single-sign-on-database-for-the-applications-available-to-the-current-user"></a>在单一登录数据库中查询对当前用户可用的应用程序  
   
-1.  创建 `ISSOMapper` 的一个新实例。  
+1. 创建 `ISSOMapper` 的一个新实例。  
   
-     一般情况下，`ISSOMapper`是接口用于检索从单一登录 (SSO) 的信息。 最有可能将使用`ISSOMapper`中许多类似的查询。  
+    一般情况下，`ISSOMapper`是从单一登录 (SSO) 检索信息而设计的接口。 最有可能会使用`ISSOMapper`中许多类似的查询。  
   
-2.  通过调用 GetApplications 来检索与当前用户相关联的所有应用程序。  
+2. 通过调用 GetApplications 来检索与当前用户相关联的所有应用程序。  
   
-     GetApplications 将自动仅返回当前用户的关联应用程序。  
+    GetApplications 将自动仅返回当前用户的关联应用程序。  
   
- 以下代码示例说明了如何查询单一登录数据库：  
+   以下代码示例说明了如何查询单一登录数据库：  
   
 ```  
 private static string[] Applications=null;  
@@ -50,5 +50,5 @@ public static string[] GetCurrentUserApplications()
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用企业单一登录进行编程](../core/programming-with-enterprise-single-sign-on.md)
+## <a name="see-also"></a>请参阅  
+ [使用企业单一登录编程](../core/programming-with-enterprise-single-sign-on.md)

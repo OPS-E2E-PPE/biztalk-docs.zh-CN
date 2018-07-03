@@ -1,6 +1,6 @@
 ---
-title: 创建 MSMQ 代码从接收位置和发送端口 |Microsoft 文档
-description: 以编程方式创建 MSMQ 接收位置和在 BizTalk Server 发送端口
+title: 创建 MSMQ 接收位置和发送端口从代码 |Microsoft Docs
+description: 以编程方式创建 MSMQ 接收位置和 BizTalk Server 中的发送端口
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,28 +13,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5f00a0bfe14eeb7d4205973b3fef96e23026616
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f367680408f208d5d7a93ef45e925ddfc1893ba5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971667"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989758"
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>以编程方式创建 MSMQ 接收位置和发送端口
 本主题说明了如何使用 WMI 为 MSMQ 适配器创建端口或位置。  
   
- 有关详细信息，请参阅**使用 Datetime 计划配置使用 WMI 创建接收位置** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+ 有关详细信息，请参阅**使用一个日期时间计划配置使用 WMI 创建接收位置** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
 ## <a name="setting-property-values"></a>设置属性值  
  创建端口或位置的过程始终相同：  
   
-1.  创建正确类型的对象。  
+1. 创建正确类型的对象。  
   
-2.  对该对象设置属性值。  
+2. 对该对象设置属性值。  
   
-3.  将对象值提交给数据库。  
+3. 将对象值提交给数据库。  
   
- 所有适配器都具有某些属性，如**主机名**、 共同点。 可通过直接将这些通用属性分配给对象来设置这些属性。 下面的 C# 代码显示的是一种典型的情况：  
+   所有适配器都具有某些属性，如**主机名**、 共同点。 可通过直接将这些通用属性分配给对象来设置这些属性。 下面的 C# 代码显示的是一种典型的情况：  
   
 ```  
 objReceiveLocation["HostName"] = "BizTalkServerApplication";  
@@ -54,7 +54,7 @@ objReceiveLocation["CustomCfg"] =
   
  CustomProps 元素中的标记的名称是该适配器用于这些属性的内部名称。  
   
- MSMQ 适配器在 CustomProps 标记的内部具有单个标记 AdapterConfig。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记字符串。 但是，编码标记:"&lt;"替换"\<"和"&gt;"替换"\>"。 例如， MSMQ 属性的适配器子集 XML 可能会如下所示：  
+ MSMQ 适配器在 CustomProps 标记的内部具有单个标记 AdapterConfig。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记字符串。 但是，编码的标记:"&lt;"替换"\<"和"&gt;"替换"\>"。 例如， MSMQ 属性的适配器子集 XML 可能会如下所示：  
   
 ```  
 <Config>  
@@ -62,7 +62,7 @@ objReceiveLocation["CustomCfg"] =
 </Config>  
 ```  
   
- 请注意， **vt**不使用属性。 分配给字符串**CustomCfg**属性编码后出现，如下所示：  
+ 请注意， **vt**未使用属性。 将字符串分配给**CustomCfg**属性编码后显示，如下所示：  
   
 ```  
 <CustomProps><AdapterConfig vt="8"><Config><batchSize>40</batchSize></Config></AdapterConfig></CustomProps>  
@@ -78,7 +78,7 @@ objReceiveLocation["CustomCfg"] =
 |证书 (certificate)|证书指纹|  
 |encryptionAlgorithm|加密算法|  
 |maximumMessageSize|最大消息大小（以 KB 为单位）|  
-|password|密码|  
+|password|Password|  
 |priority|消息优先级|  
 |queue|目标队列|  
 |recoverable|Recoverable|  
@@ -86,11 +86,11 @@ objReceiveLocation["CustomCfg"] =
 |sendBatchSize|批大小|  
 |sendQueueName|目标队列|  
 |timeOut|超时|  
-|timeOutUnits|超时单元|  
+|timeOutUnits|超时单位|  
 |transactional|事务性|  
 |useAuthentication|使用身份验证|  
 |useDeadLetterQueue|使用死信队列|  
-|useJournalQueue|使用日记队列|  
+|useJournalQueue|使用日志队列|  
 |userName|用户名|  
   
  下表描述了 MSMQ 适配器的内部名称**接收**自定义属性。  
@@ -98,7 +98,7 @@ objReceiveLocation["CustomCfg"] =
 |**接收自定义属性名称**|**显示名称**|  
 |--------------------------------------|----------------------|  
 |batchSize|批大小|  
-|密码|密码|  
+|Password|Password|  
 |队列|队列|  
 |serialProcessing|串行处理|  
 |事务性|事务性|  

@@ -1,5 +1,5 @@
 ---
-title: 关联一个传入事务使用传出的批处理设置 |Microsoft 文档
+title: 关联的传入事务集与传出批 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ddd5a1ec83db1177050711d82bfb465c2bcb7637
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b44f89133cbfb7f5925f975a723b84c715180c7a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239405"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013798"
 ---
-# <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a>将使用的传出的批次的传入事务集相关联
+# <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a>将传入事务集与传出批相关联
 借助 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您可将提交到批处理业务流程的 EDI 事务集与传出批相关联。 通过将提交到批处理业务流程的事务集的状态报告条目 (BTSInterchangeID) 关联到业务流程的状态报告条目 (ActivityID)，您可以实现这一点。 此关联是通过使用 BusinessMessageJournal BAM 活动中的条目执行的。 这些条目是在接收批元素时由批处理业务流程创建的。  
   
 > [!IMPORTANT]
@@ -27,15 +27,15 @@ ms.locfileid: "22239405"
   
  以下各节介绍的内容如下：  
   
--   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何保存跟踪数据  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何保存跟踪数据  
   
--   如何创建用于启用关联的自定义管道组件。  
+- 如何创建用于启用关联的自定义管道组件。  
   
--   如何将传入事务集与传出批相关联。  
+- 如何将传入事务集与传出批相关联。  
   
--   在知道批中所包含事务集的 BTSInterchangeID 的情况下，如何查询 BusinessMessageJournal 活动以确定批的 BTSInterchangeID。  
+- 在知道批中所包含事务集的 BTSInterchangeID 的情况下，如何查询 BusinessMessageJournal 活动以确定批的 BTSInterchangeID。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
   
 ## <a name="changes-to-the-activities"></a>对活动所做的更改  
@@ -44,7 +44,7 @@ ms.locfileid: "22239405"
 1.  当 EDI 拆装器处理传入 EDI 交换时，它会在 InterchangeStatusActivity 和 TransactionSetActivity 表中创建条目。  
   
     > [!NOTE]
-    >  BAM 活动有关的详细信息，请参阅[BAM 活动跟踪 EDI AS2 消息的创建](../core/bam-activities-created-to-track-edi-as2-messages.md)。  
+    >  有关 BAM 活动的详细信息，请参阅[BAM 跟踪 EDI-AS2 消息的活动创建](../core/bam-activities-created-to-track-edi-as2-messages.md)。  
   
 2.  当对批处理业务流程进行实例化时，业务流程会在 BatchingActivity 中创建条目。 BAM 子系统会创建 ActivityID 的值。  
   
@@ -90,6 +90,6 @@ From BusinessMessageJournal
 Where MessageTrackingID = <MessageTrackingID from the previous query> and BTSInterchangeID = <given InterchangeID>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [BAM 活动跟踪 EDI AS2 消息的创建](../core/bam-activities-created-to-track-edi-as2-messages.md)   
- [启用 EDI 和 AS2 状态报表](../core/enabling-edi-and-as2-status-reports.md)
+## <a name="see-also"></a>请参阅  
+ [为跟踪 edi/as2 消息创建的 BAM 活动](../core/bam-activities-created-to-track-edi-as2-messages.md)   
+ [启用 EDI 和 AS2 状态报告](../core/enabling-edi-and-as2-status-reports.md)

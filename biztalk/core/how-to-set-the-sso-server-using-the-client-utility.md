@@ -1,5 +1,5 @@
 ---
-title: 如何设置 SSO 服务器使用客户端实用工具 |Microsoft 文档
+title: 如何设置 SSO 服务器使用客户端实用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,27 +16,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49b2145320bd8e22b01d312d62246fa282fb534e
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8f212bb5e6601274a473c6f9854d5e23af9715cd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25971147"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008862"
 ---
 # <a name="how-to-set-the-sso-server-using-the-client-utility"></a>如何设置 SSO 服务器使用客户端实用工具
-每次使用 ssoclient，你必须首先指向用户正确上单一登录服务器包含它们的配置信息。  
+每次使用 ssoclient，您必须首先将用户指引到正确实现单一登录的服务器包含它们的配置信息。  
   
-### <a name="to-set-the-sso-server-for-a-user-using-the-client-utility"></a>若要使用客户端实用工具的用户设置 SSO 服务器  
+### <a name="to-set-the-sso-server-for-a-user-using-the-client-utility"></a>若要为用户使用客户端实用工具设置 SSO 服务器  
   
-1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
+1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型 **ssoclient – 服务器*\<单一登录服务器\>* * *，其中\<* 单一登录服务器\>* 是单一登录服务器的名称用户想要连接到。  
+3. 类型<strong>ssoclient – 服务器*\<单一登录服务器\></strong><em>，其中\<</em>单一登录服务器\>* 是要连接到单一登录服务器用户的名称。  
   
-    > [!NOTE]
-    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
+   > [!NOTE]
+   >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SSO 关联应用程序](../core/sso-affiliate-applications.md)   
  [管理关联应用程序](../core/managing-affiliate-applications.md)

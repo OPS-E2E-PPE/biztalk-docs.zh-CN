@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10764 |Microsoft 文档
+title: 单一登录： 事件 10764 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a51e5bd0687cce2934868a7fb201fc7342cd6d82
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6a4a48704c15d301176e32b079164f8a6328c90
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276477"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005534"
 ---
 # <a name="single-sign-on-event-10764"></a>单一登录： 事件 10764
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10764|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|ENTSSO_E_MAPPING_DISABLED|  
-|消息正文|已禁用映射。|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  产品名称   |                 企业单一登录                  |
+| 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    事件 ID     |                           10764                            |
+|  事件源   |                           ENTSSO                           |
+|    组件    |                            N/A                             |
+|  符号名称  |                 ENTSSO_E_MAPPING_DISABLED                  |
+|  消息正文   |                  已禁用映射。                  |
   
 ## <a name="explanation"></a>解释  
  已禁用映射。  

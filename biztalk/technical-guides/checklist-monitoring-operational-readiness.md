@@ -1,5 +1,5 @@
 ---
-title: 清单： 监视操作的准备情况 |Microsoft 文档
+title: 清单： 监视操作准备就绪 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 913ed00da2bda4126ba298bbb9bce2980efa4366
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfd8b5ead6ceea7154e7f035d16f3c0fba7be1d4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300013"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021939"
 ---
-# <a name="checklist-monitoring-operational-readiness"></a>清单： 监视操作的准备情况
-本主题列出了监视生产时应遵循的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  
-  
-|步骤|参考|  
-|-----------|---------------|  
-|选择并实施你的 BizTalk 应用程序和基础结构的监视策略。|[监视 BizTalk Server 环境](../technical-guides/monitoring-the-biztalk-server-environment.md)|  
-|监视磁盘空间使用情况。|[监视磁盘空间使用情况](../technical-guides/monitoring-disk-space-usage.md)|  
-|监视 SQL 服务器：<br /><br /> -验证运行 SQL Server 住房该计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在被监视的数据库。<br />-验证[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在监视作业。|-   [监视 SQL Server](../technical-guides/monitoring-sql-servers.md)<br />-   [监视 BizTalk Server 数据库](../technical-guides/monitoring-biztalk-server-databases.md)|  
-|监视 BizTalk 应用程序：<br /><br /> -修改现有规则和/或复制到自定义管理包以监视自定义的 BizTalk 应用程序的规则。<br />-创建每个定义的规则的操作。<br />-创建迭代进程来自动执行手动任务。<br />-使用阈值规则来自动执行手动任务。|-   [监视应用程序和主机实例](../technical-guides/monitoring-applications-and-host-instances.md)<br />-   [监视 BizTalk Server2](../technical-guides/monitoring-biztalk-server2.md)|  
-  
+# <a name="checklist-monitoring-operational-readiness"></a>清单： 监视操作准备情况
+本主题列出了监视生产环境时应遵循的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  
+
+
+|                                                                                                                                                                      步骤                                                                                                                                                                       |                                                                                                  参考                                                                                                   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                           选择和实现你的 BizTalk 应用程序和基础结构的监视策略。                                                                                                                           |                                                [监视 BizTalk Server 环境](../technical-guides/monitoring-the-biztalk-server-environment.md)                                                 |
+|                                                                                                                                                            监视磁盘空间使用情况。                                                                                                                                                             |                                                              [监视磁盘空间使用情况](../technical-guides/monitoring-disk-space-usage.md)                                                               |
+| 监视 SQL Server:<br /><br /> -验证计算机的运行 SQL Server 底座[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正受到监视的数据库。<br />-验证[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正受到监视作业。 |            -   [监视 SQL Server](../technical-guides/monitoring-sql-servers.md)<br />-   [监视 BizTalk Server 数据库](../technical-guides/monitoring-biztalk-server-databases.md)            |
+|          监视 BizTalk 应用程序：<br /><br /> -修改现有规则和/或复制到一个自定义管理包，用于监视自定义的 BizTalk 应用程序的规则。<br />-创建针对每个定义的规则的操作。<br />-创建迭代的过程来自动执行手动任务。<br />-使用阈值规则来自动执行手动任务。          | -   [监视应用程序和主机实例](../technical-guides/monitoring-applications-and-host-instances.md)<br />-   [监视 BizTalk Server2](../technical-guides/monitoring-biztalk-server2.md) |
+
 ## <a name="in-this-section"></a>本节内容  
-  
+
 -   [监视磁盘空间使用情况](../technical-guides/monitoring-disk-space-usage.md)

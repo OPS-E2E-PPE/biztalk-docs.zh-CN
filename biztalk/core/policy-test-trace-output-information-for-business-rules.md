@@ -1,5 +1,5 @@
 ---
-title: 策略测试跟踪输出信息对于业务规则 |Microsoft 文档
+title: 业务规则的策略测试跟踪输出信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,27 +17,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c223e8bddae1ff68e77cdf881ea22e6be4cdab9a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e8795e926d496f586d032bb85fe4a1fddb473ec5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22265061"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005134"
 ---
 # <a name="policy-test-trace-output-information-for-business-rules"></a>业务规则的策略测试跟踪输出信息
 本部分介绍了在业务规则编辑器中测试策略时显示的跟踪信息。 使用“组中心”页上的消息事件和服务实例跟踪查询查看策略执行的跟踪结果时，会看到非常相似的信息。  
   
  跟踪输出中显示有四种语句类型：  
   
--   事实活动  
+- 事实活动  
   
--   条件评估  
+- 条件评估  
   
--   议程更新  
+- 议程更新  
   
--   触发的规则  
+- 触发的规则  
   
- 下面介绍了每种语句类型。  
+  下面介绍了每种语句类型。  
   
 ## <a name="fact-activity"></a>事实活动  
  此语句指示对引擎工作内存中存在的事实的更改。 下面列出了一个事实活动条目示例：  
@@ -73,7 +73,7 @@ Object Instance Identifier: 872
  事实将从工作内存中删除。  
   
 > [!NOTE]
->  如果一个事实被声明其类型与任何使用策略中的类型都不匹配，则断言操作将显示"断言 – 事实无法识别"。  
+>  如果所添加事实，其类型不匹配任何策略中使用的类型，则添加操作将显示"添加-事实无法识别"。  
   
 ### <a name="object-type"></a>对象类型  
  特定活动的事实类型：  

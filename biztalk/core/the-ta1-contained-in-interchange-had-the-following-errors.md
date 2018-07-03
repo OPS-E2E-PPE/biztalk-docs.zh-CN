@@ -1,5 +1,5 @@
 ---
-title: 包含在交换 TA1 出现以下错误 |Microsoft 文档
+title: 交换中包含的 TA1 发生了以下错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03bd7486d25e2c94fc809e6dc50c43359c152b70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23bc06cd5f7a7b1e46b34daf5cac2106dcbd543a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278629"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002134"
 ---
 # <a name="the-ta1-contained-in-interchange-had-the-following-errors"></a>交换中包含的 TA1 发生了以下错误
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12TA1Error|  
-|消息正文|{0} TA1 包含 id 为 {1} 发件人 id {2} 交换中，接收方 id {3} 出现以下错误：|  
+|                 |                                                                                                                  |
+|-----------------|------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                |
+| 产品版本 |                            [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                            |
+|    事件 ID     |                                                        -                                                         |
+|  事件源   |              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI              |
+|    组件    |                                                    EDI 引擎                                                    |
+|  符号名称  |                                                   X12TA1Error                                                    |
+|  消息正文   | {0} TA1 交换 id 中包含{1}，发件人 id{2}，接收方 id{3}发生以下错误： |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明由于指出的错误条件，接收管道无法处理传入的  TA1  确认。 此错误可能表明确认不符合 TA1Schema。  

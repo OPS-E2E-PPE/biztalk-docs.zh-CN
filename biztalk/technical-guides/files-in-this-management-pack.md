@@ -1,5 +1,5 @@
 ---
-title: 此管理包中的文件 |Microsoft 文档
+title: 此管理包中的文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa100bca5473fdaf637b62d9e1cc848da4aaae84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebd3617007abbc39c422d91e20cb31003eafb64f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297557"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022667"
 ---
 # <a name="files-in-this-management-pack"></a>此管理包中的文件
-若要监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您必须首先下载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来自管理包[System Center 管理包目录](http://www.microsoft.com/download/details.aspx?id=39617)(http://www.microsoft.com/download/details.aspx?id=39617)。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包包括以下文件：  
+若要监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，必须先下载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从管理包[System Center 管理包目录](http://www.microsoft.com/download/details.aspx?id=39617)(<http://www.microsoft.com/download/details.aspx?id=39617>)。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包包括以下文件：  
   
-|文件名|显示名称|Description|  
+|File name|显示名称|Description|  
 |---------------|------------------|-----------------|  
-|Microsoft.BizTalkServer2013.Library.mp|BizTalk Server 库|包含泛型类、 关系和其他管理包用于为所有的 BizTalk 应用程序提供监视其他管理包构建基块。|  
-|Microsoft.BizTalk.Server.2013.Monitoring.mp|BizTalk 服务器监视|包含监视器、 规则和提供可扩展的方式来控制所有 BizTalk 应用程序的视图。|  
-|Microsoft.BizTalk.Server.2013.Discovery.mp|BizTalk 服务器发现|包含用于查找 BizTalk 应用程序的各个组件的发现。|
+|Microsoft.BizTalkServer2013.Library.mp|BizTalk Server 库|包含泛型类、 关系和其他管理包用于为所有 BizTalk 应用程序提供监视其他管理包构建基块。|  
+|Microsoft.BizTalk.Server.2013.Monitoring.mp|BizTalk 服务器监视|包含监视器、 规则和提供一种可扩展的方式来控制所有 BizTalk 应用程序的视图。|  
+|Microsoft.BizTalk.Server.2013.Discovery.mp|BizTalk 服务器发现|包含用于查找 BizTalk 应用程序的各种组件的发现。|

@@ -1,5 +1,5 @@
 ---
-title: 使用 Unity 容器中创建自定义解析程序 |Microsoft 文档
+title: 使用 Unity 容器创建自定义冲突解决程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef4a96542bcf2a7deae4911c6ee81fa846d0766f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b5280108bddeeacd78b9e8f6df0fa908329af8dd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975611"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012670"
 ---
-# <a name="creating-a-custom-resolver-with-a-unity-container"></a>使用 Unity 容器中创建自定义冲突解决程序
-你可以创建使用自定义解析程序[Unity 应用程序块](http://go.microsoft.com/fwlink/?LinkId=188286)(Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) 的解析逻辑和元数据源的运行时依赖关系注入。
+# <a name="creating-a-custom-resolver-with-a-unity-container"></a>使用 Unity 容器创建自定义冲突解决程序
+您可以创建自定义冲突解决程序使用[Unity Application Block](http://go.microsoft.com/fwlink/?LinkId=188286) (Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) 进行的解析逻辑和元数据源的运行时依赖关系注入。
   
- **事实提供程序**  
+ **这一事实提供程序**  
   
- 事实提供程序是实现的类的实例**IFactProvider**接口。 此接口公开一个名为方法的三个不同的重载**RegisterFact**。 此方法采用在消息中，解析程序配置，以及在某些情况下，管道上下文中，并返回一个对象。 此对象可能从以某种方式输入中提取信息，它可能是某种形式的一项计算或者它可能查找从某些外部源。 事实提供程序返回的每个对象可以与的事实数据引用和更高版本使用事实转换器解析容器通常添加到列表。  
+ 这一事实提供程序是实现的类的实例**IFactProvider**接口。 此接口公开一个名为方法的三个不同的重载**RegisterFact**。 此方法采用在消息中，冲突解决程序配置，以及在某些情况下，管道上下文中，并返回一个对象。 此对象可能以某种方式输入中提取的信息，可能是某种形式的计算，它或者它可能会看到从某些外部源。 这一事实提供程序返回的每个对象可以作为事实引用和更高版本的事实转换器用于解析容器通常添加到列表。  
   
- Unity 冲突解决程序可能有零个或多个事实提供程序可以添加或删除随时与单个配置更改。  
+ Unity 冲突解决程序可能有零个或多个事实提供程序，可以添加或删除任何时间通过单一配置更改。  
   
- 下面的代码演示了包含事实提供程序中的逻辑。 此代码还可以在 ESB ItineraryStaticFactProvider.cs 文件中找到。Resolver.Itinerary.Facts 项目。 它是在从解析程序连接字符串中收集的名称和版本的一条路线路线静态冲突解决程序组件。  
+ 下面的代码示范了这一事实提供程序中所包含的逻辑。 此外可以在 ESB ItineraryStaticFactProvider.cs 文件中找到此代码。Resolver.Itinerary.Facts 项目。 它是路线的在收集从解析程序的连接字符串的名称和版本的旅行计划静态冲突解决程序组件。  
   
 ```csharp  
 public object RegisterFact(IBaseMessage message, IPipelineContext pipelineContext, Dictionary\<string, string\> resolverContents)  
@@ -53,13 +53,13 @@ private static object GetItineraryFactFromResolver(Dictionary\<string, string\> 
 }  
 ```  
   
- **事实转换器**  
+ **这一事实转换器**  
   
- 事实转换器是实现的类的实例**IFactTranslator**接口。 此接口公开一个名为的单个方法**TranslateFact**。 此方法采用一个对象数组，包含事实和更高版本将返回由解析程序使用事实转换器的冲突解决程序字典的列表中。 事实转换器负责处理事实提供程序中有意义的方式提供的事实数据，然后填充冲突解决程序字典。  
+ 这一事实转换器是实现的类的实例**IFactTranslator**接口。 此接口公开一个名为的单个方法**TranslateFact**。 此方法采用一个对象数组，其中包含一系列事实和更高版本将返回的冲突解决程序，使用这一事实转换器的冲突解决程序字典中。 这一事实转换器负责处理事实提供程序中有意义的方式提供的事实数据，然后填充冲突解决程序字典。  
   
- Unity 冲突解决程序可能有零个或多个事实转换器可以添加或删除随时与单个配置更改。  
+ Unity 冲突解决程序可能有零个或多个事实翻译人员，可以添加或删除任何时间通过单一配置更改。  
   
- 下面的代码演示了一个事实转换器中包含的逻辑。 此代码还可以在 ESB ItineraryStaticFactTranslator.cs 文件中找到。Resolver.Itinerary.Facts 项目。 它是在执行数据库查询，就可以按名称和 （可选） 版本收集的一条路线路线 XML 路线静态冲突解决程序组件。  
+ 下面的代码示范了这一事实转换器所包含的逻辑。 此外可以在 ESB ItineraryStaticFactTranslator.cs 文件中找到此代码。Resolver.Itinerary.Facts 项目。 它是在执行数据库查询，以按名称和 （可选） 版本收集路线的旅行计划 XML 路线静态冲突解决程序组件。  
   
 ```csharp  
 public void TranslateFact(object[] facts, Dictionary\<string, string\> factDictionary)  
@@ -117,9 +117,9 @@ public void TranslateFact(object[] facts, Dictionary\<string, string\> factDicti
   
  **解决容器**  
   
- 解析容器是一个类以实现**IResolveContainer**接口。 通常情况下，它还实现**IResolveProvider**接口。 **IResolveContainer**接口公开一个名为的单个方法**初始化**采用**IUnityContainer**。 传递给此方法的容器将包含所有依赖项 (即，这些类的实例**IFactProvider**和**IFactTranslator**，和所需的任何其他类型) 的必要条件若要完成其处理的解析程序。  
+ 解析容器是一个类，实现**IResolveContainer**接口。 通常情况下，它还实现**IResolveProvider**接口。 **IResolveContainer**接口公开一个名为的单个方法**初始化**以**IUnityContainer**。 容器传递给此方法将包含所有依赖项 (即，类的实例**IFactProvider**和**IFactTranslator**，以及所需的任何其他类型) 的必要条件若要完成其处理的解析程序。  
   
- 下面的代码是实现的一个示例**IResolveContainer**接口。 此代码还可以在 ESB StaticItineraryResolveContainer.cs 文件中找到。Resolver.Itinerary 项目。  
+ 下面的代码是实现的示例**IResolveContainer**接口。 此外可以在 ESB StaticItineraryResolveContainer.cs 文件中找到此代码。Resolver.Itinerary 项目。  
   
 ```csharp  
 #region IResolveContainer Members  
@@ -147,9 +147,9 @@ public void Initialize(IUnityContainer container)
 #endregion  
 ```  
   
- 中的实现中的解决容器**解决**方法从**IResolveProvider**接口，它是需循环访问所有事实供应商和 Unity 中的事实翻译要允许其中执行它们的处理每个容器。  
+ 中的实现中的解析容器**解决**方法从**IResolveProvider**接口后，它是需循环访问所有事实供应商和 Unity 中的事实翻译若要允许每个约束来执行其处理的容器。  
   
- 下面的代码演示了解决容器中包含的逻辑。 此代码还可以在 ESB StaticItineraryResolveContainer.cs 文件中找到。Resolver.Itinerary 项目。  
+ 以下代码是逻辑的解析容器中包含的示例。 此外可以在 ESB StaticItineraryResolveContainer.cs 文件中找到此代码。Resolver.Itinerary 项目。  
   
 ```csharp  
 public Dictionary\<string, string\> Resolve(ResolverInfo resolverInfo,  
@@ -208,15 +208,15 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
   
  **配置自定义 Unity 冲突解决程序**  
   
- 若要配置自定义 Unity 解析程序，相同的配置步骤将应用于时创建自定义解析程序;但是，没有其他一些必须包含在内，以正确注册构成冲突解决程序组件的配置。  
+ 若要配置自定义 Unity 冲突解决程序，相同的配置步骤将作为应用创建自定义冲突解决程序; 时但是，没有必须包含正确注册组件组成冲突解决程序的一些其他配置。  
   
- 首先，在 Esb.config 文件中，冲突解决程序声明下**resolverConfig**节点必须添加具有以下两个属性：  
+ 首先，在 Esb.config 文件，冲突解决程序声明下**resolverConfig**节点必须添加具有以下两个属性：  
   
--   **unitySectionName**。 此属性包含配置文件包含配置的 Unity 应用程序块; 中的配置节的名称默认情况下，此属性的值是**esb.resolver**。  
+- **unitySectionName**。 此属性包含配置文件包含配置的 Unity 应用程序块; 中的配置节的名称默认情况下，此属性的值是**esb.resolver**。  
   
--   **unityContainerName**。 此属性包含在 Unity 配置特定于你的自定义冲突解决程序中定义的 Unity 容器的名称。  
+- **unityContainerName**。 此属性包含特定于您的自定义解析程序在 Unity 配置中定义的 Unity 容器的名称。  
   
- 以下 XML 是必要的配置示例**冲突解决程序**节点。  
+  以下 XML 是需要在配置的一个示例**冲突解决程序**节点。  
   
 ```xml  
 <resolver name="ITINERARY-STATIC" type="Microsoft.Practices.ESB.Resolver.Unity.ResolveProvider, Microsoft.Practices.ESB.Resolver.Unity, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c62dd63c784d6e22">  
@@ -227,7 +227,7 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
 </resolver>  
 ```  
   
- 以下 XML 是有必要在下配置的一个示例**esb.resolver**节点。  
+ 以下 XML 是下，需要配置的一个示例**esb.resolver**节点。  
   
 ```xml  
 <typeAliases>  
@@ -294,24 +294,24 @@ private Dictionary\<string, string\> ResolveStatic(string config, string resolve
 </containers>  
 ```  
   
- 有关在中是必需的配置详细信息**esb.resolvers**节点，请参阅[Unity 应用程序块的源架构](http://go.microsoft.com/fwlink/?LinkId=188288)([http://go.microsoft.com/fwlink/?LinkId = 188288](http://go.microsoft.com/fwlink/?LinkId=188288)) MSDN 上。  
+ 有关在中是必需的配置详细信息**esb.resolvers**节点，请参阅[Unity 应用程序块的源架构](http://go.microsoft.com/fwlink/?LinkId=188288)([ http://go.microsoft.com/fwlink/?LinkId=188288 ](http://go.microsoft.com/fwlink/?LinkId=188288)) 在 MSDN 上。  
   
  **创建自定义 Unity 解析程序**  
   
- **若要创建自定义 Unity 解析程序**  
+ **若要创建自定义 Unity 冲突解决程序**  
   
-1.  （可选）使用实现的类创建程序集或程序集**IFactProvider**接口并包含**RegisterFact**方法，提供所需的可发生的解决方法信息。  
+1.  （可选）使用实现的类创建程序集或程序集**IFactProvider**接口并包含**RegisterFact**提供所需的解决方法发生信息的方法。  
   
-2.  （可选）使用实现的类创建程序集或程序集**IFactTranslator**接口并包含**TranslateFact**转换以键/值对中的提供事实数据的方法冲突解决程序字典。  
+2.  （可选）使用实现的类创建程序集或程序集**IFactTranslator**接口并包含**TranslateFact**转换提供事实数据的键/值对中的方法冲突解决程序字典。  
   
-3.  与实现的类创建一个程序集**IResolveContainer**和**IResolveProvider**接口并包含**解决**验证的方法解析程序配置，从事实提供程序收集的所有事实数据、 执行任何特殊的处理，会将它们使用的事实转换器，转换和实例的形式返回的已翻译的事实数据**字典**类。  
+3.  创建实现的类的程序集**IResolveContainer**并**IResolveProvider**接口并包含**解决**验证的方法解析程序配置从事实提供程序收集的事实数据、 执行任何特殊的处理，会将它们使用的事实转换器，转换和实例的形式返回已翻译的事实**字典**类。  
   
-4.  通过将它添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>** 包含根名字对象作为元素**名称**属性和完全限定的程序集名称作为**类型**属性。  
+4.  通过将其添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>** 元素，其中包含作为根名字对象**名称**属性和完全限定的程序集同名**类型**属性。  
   
-5.  此解析程序将添加到 Esb.config 文件特定于 Unity 的配置。  
+5.  对于此冲突解决程序将添加到 Esb.config 文件特定于 Unity 的配置。  
   
-6.  （可选）创建架构，用于定义根名字对象和查询参数，然后将其保存在 ESB。Schemas.Resolvers 文件夹。 该名称应遵循现有 ESB 命名约定;这意味着它应使用的名称后追加"_Resolution.xsd"的根名字对象。  
+6.  （可选）创建架构定义的根名字对象和查询参数，并将其保存在 ESB。Schemas.Resolvers 文件夹。 该名称应采用现有 ESB 命名约定;这意味着它应使用的名称后追加"_Resolution.xsd"的根名字对象。  
   
-7.  （可选）从新的架构生成的类并将它保存在自定义解析程序程序集。 这将公开自定义冲突解决程序中的类型化的参数。  
+7.  （可选）从新的架构生成类，并将其保存在自定义冲突解决程序程序集。 这将公开自定义冲突解决程序中的类型化的参数。  
   
-8.  在全局程序集缓存中注册所有程序集。
+8.  在全局程序集缓存中注册的所有程序集。

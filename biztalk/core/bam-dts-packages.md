@@ -1,5 +1,5 @@
 ---
-title: BAM DTS 包 |Microsoft 文档
+title: BAM DTS 包 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a71431ee800c80c6972747f09b0e2420f961e33e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 1e49741a0fce6fd69e4e2ba5d8bb8dbd1956a0e8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965059"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015846"
 ---
 # <a name="bam-dts-packages"></a>BAM DTS 包
 管理员可以更新以下 BAM DTS 包的参数：  
   
--   **CubeUpdate**数据转换服务 (DTS) 包始终位于星型架构数据库所在的同一服务器上。  
+- **CubeUpdate** Data Transformation Services (DTS) 包始终位于星型架构数据库所在的同一服务器上。  
   
--   **DataMaintenance** DTS 包始终位于与主导入数据库相同的服务器上。  
+- **DataMaintenance** DTS 包始终位于主导入数据库所在的同一服务器上。  
   
- DTS 包使用 BAMConfiguration.xml 文件中的以下参数。  
+  DTS 包使用 BAMConfiguration.xml 文件中的以下参数。  
   
 |参数|Description|  
 |---------------|-----------------|  
@@ -40,17 +40,17 @@ ms.locfileid: "25965059"
   
  在 BAMConfiguration.xml 文件中，DTS 包使用以下命名约定：  
   
--   **CubeUpdate** DTS 包  
+- **CubeUpdate** DTS 包  
   
-     **bam_AN_\<**  ***多维数据集名称* \>** ，其中多维数据集名称是该多维数据集的名称。 BAM 工作簿从视图名称生成该多维数据集名称。 如果在 BAM 配置 XML 文档中修改该多维数据集名称，则将在 DTS 包名称中使用新的多维数据集名称。  
+   **bam_AN_\<**  ***多维数据集名称* \>** ，其中 CubeName 是多维数据集的名称。 BAM 工作簿从视图名称生成该多维数据集名称。 如果在 BAM 配置 XML 文档中修改该多维数据集名称，则将在 DTS 包名称中使用新的多维数据集名称。  
   
--   **DataMaintenance** DTS 包  
+- **DataMaintenance** DTS 包  
   
-     **bam_DM_\<**   ***ActivityName* \>** ，其中 ActivityName 是活动的名称。  
+   **bam_DM_\<**  ***ActivityName* \>**，其中 ActivityName 是活动的名称。  
   
- 您可以运行 CubeUpdate DTS 包来聚合计划的聚合。 在下一部分中，您可以为实时数据聚合指定时段。  
+  您可以运行 CubeUpdate DTS 包来聚合计划的聚合。 在下一部分中，您可以为实时数据聚合指定时段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 配置架构](../core/bam-configuration-schema.md)   
  [BAM 安全建议](../core/bam-security-recommendations.md)   
  [管理 BAM](../core/managing-bam.md)

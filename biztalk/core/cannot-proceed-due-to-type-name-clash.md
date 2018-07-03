@@ -1,5 +1,5 @@
 ---
-title: 由于类型名称冲突，无法进行 |Microsoft 文档
+title: 由于类型名冲突无法继续 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2de1d4962db915a462990962e933c1413a408eee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 742d537f2329c53cd974abbaac9a6b9f7f8f5126
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231205"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37008478"
 ---
 # <a name="cannot-proceed-due-to-type-name-clash"></a>由于类型名冲突无法继续
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|由于类型名称冲突而无法继续。 命名空间中已存在名称“{0}”|  
+|                 |                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------|
+|  产品名称   |  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |              [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]               |
+|    事件 ID     |                                           0                                           |
+|  事件源   |                                           0                                           |
+|    组件    |                                           0                                           |
+|  符号名称  |                                           0                                           |
+|  消息正文   | 由于类型名称冲突而无法继续。 名称"{0}"命名空间中已存在 |
   
 ## <a name="explanation"></a>解释  
  此错误表明定义的同一命名空间中的多个项目具有同一名称。  

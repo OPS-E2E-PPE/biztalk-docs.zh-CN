@@ -1,5 +1,5 @@
 ---
-title: 什么 &#39; s New1 |Microsoft 文档
+title: 什么&#39;s New1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b04342a3ebdd23dad0c11644ce2d7c4f9cfa0d1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 000d787e4a8b00d8d4539a043a36a8c4013fcc67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302853"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37020308"
 ---
-# <a name="what39s-new"></a>什么 &#39; s 新
-以下功能是在此版本的新增功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包：  
-  
--   更新的发现，以处理大量的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目  
-  
--   增加的抑制规则，以显示重要的消息  
-  
--   修复已安装的发现的问题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]版本
+# <a name="what39s-new"></a>什么&#39;新增
+以下功能是在此版本中的新功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包：  
+
+- 更新的发现来处理大量的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目  
+
+- 增加的抑制规则，以显示重要的消息  
+
+- 修复所发现的已安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]版本

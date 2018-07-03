@@ -1,5 +1,5 @@
 ---
-title: Doctype 无效 |Microsoft 文档
+title: Doctype 无效 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fec7dc4f2dfed0c8e8b8fcde13593d4e29997f7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0676653df3124de72740a18c1d29b58f9282f684
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239141"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37001846"
 ---
 # <a name="doctype-is-invalid"></a>Doctype 无效
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|DocTypeInvalidFormat|  
-|消息正文|Doctype {0} 无效。 无法确定一个或多个命名空间、版本或事务集 ID|  
+|                 |                                                                                                                 |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|
+|  产品名称   |               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                |
+| 产品版本 |                           [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                            |
+|    事件 ID     |                                                        -                                                        |
+|  事件源   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI              |
+|    组件    |                                                   EDI 引擎                                                    |
+|  符号名称  |                                              DocTypeInvalidFormat                                               |
+|  消息正文   | Doctype{0}无效。 无法确定一个或多个命名空间、版本或事务集 ID |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 EDI 接收管道无法处理传入的交换，因为未正确发现架构。  

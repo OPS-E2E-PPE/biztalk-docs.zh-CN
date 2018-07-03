@@ -1,5 +1,5 @@
 ---
-title: 常见错误 |Microsoft 文档
+title: 常见错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b882c44e69489114a2dd8084df71d6414df0cb5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 01c5dfe58f7b31bb5ef461249765d527f78d9264
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971531"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009054"
 ---
 # <a name="common-errors"></a>常见错误
 本主题列出来在使用 BizTalk 映射器创建映射时可能遇到的常见错误消息。  
   
-## <a name="you-receive-error-event-id-324-when-parsing-dates"></a>在分析日期时接收错误事件 ID 324  
+## <a name="you-receive-error-event-id-324-when-parsing-dates"></a>分析日期时收到错误事件 ID 324  
   
 ### <a name="problem"></a>问题  
- 当你使用数据库**值提取程序**functoid 映射中提取日期字段，你的文档中可能会失败对出站文档定义的验证。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将在事件日志中记录类似于以下的验证错误：  
+ 当使用数据库**值提取程序**functoid 映射提取日期字段，在文档中的对出站文档定义的验证可能会失败。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可能会在事件日志中记录类似于以下的验证错误：  
   
- 事件来源： BizTalk Server  
+ 事件源： BizTalk Server  
   
  事件类别： 文档处理  
   
@@ -35,45 +35,45 @@ ms.locfileid: "25971531"
   
  说明:  
   
- BizTalk Server 中出错。  
+ 在 BizTalk Server 中出错。  
   
  详细信息：  
   
  -----------------------------\-  
   
- XML 文档未通过验证，原因如下： 错误分析"10/12/1995年为日期数据类型。  
+ XML 文档验证失败的原因如下： 错误分析"10/12/1995年作为日期数据类型。  
   
  挂起的队列 ID:"{A1127909-CA36-4359-B672-7CBA8B60BDAF}"  
   
 ### <a name="cause"></a>原因  
- 日期格式 （如从数据源返回） 不是 ISO 8601 格式，这是所需的 XML 格式。  
+ 日期格式 （如从数据源返回） 不是采用 ISO 8601 格式，这是所需的 XML 的格式。  
   
 ### <a name="resolution"></a>解决方法  
  若要解决此问题，请执行以下操作：  
   
--   编辑出站文档定义要使用的字符串数据类型而不是日期数据类型。  
+- 编辑出站文档定义使用而不是日期数据类型的字符串数据类型。  
   
--   创建自定义[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVBNoVersion](../includes/btsvbnoversion-md.md)]**脚本**会将转换的输出数据库的 functoid**值提取程序**functoid 为 ISO 8601 格式。  
+- 创建自定义[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVBNoVersion](../includes/btsvbnoversion-md.md)]**脚本**functoid 会将转换数据库的输出**值提取程序**为 ISO 8601 格式的 functoid。  
   
- 有关详细信息，请参阅知识库文章[278737](http://support.microsoft.com/kb/278737/en-us)。  
+  有关详细信息，请参阅知识库文章[278737](http://support.microsoft.com/kb/278737/en-us)。  
   
-## <a name="you-receive-internal-compiler-error-0xc0000005-at-address-53624fd6-when-compiling-the-maps"></a>当接收内部编译器错误 (在地址 53624FD6 0xc0000005) 编译地图  
+## <a name="you-receive-internal-compiler-error-0xc0000005-at-address-53624fd6-when-compiling-the-maps"></a>当收到内部编译器错误 (在地址 53624FD6 0xc0000005) 编译映射  
   
 ### <a name="problem"></a>问题  
- 编译单个 BizTalk 项目组成的大型架构、 地图或业务流程时，编译器也会生成类似于以下错误：  
+ 当编译包含大型架构、 映射或业务流程的单个 BizTalk 项目时，编译器可能会生成如下错误：  
   
- 内部编译器错误 (在地址 53624FD6 0xc0000005): 可能的原因是代码。  
+ 内部编译器错误 (在地址 53624FD6 0xc0000005): 可能的原因是代码生成。  
   
 ### <a name="cause"></a>原因  
- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编译器具有 16 兆字节限制单个项目中的所有字符串的总大小。 虽然编译 BizTalk 项目，编译器将序列化架构、 映射和业务流程创建程序集，并且这会增加可能超出限制的所有字符串的总大小。  
+ [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编译器中的单个项目的所有字符串的总大小具有 16 兆字节的限制。 而编译 BizTalk 项目，编译器将序列化架构、 映射和业务流程创建程序集，而这会增大可能会超出此限制的所有字符串的总大小。  
   
 ### <a name="resolution"></a>解决方法  
  若要解决此问题，可以分隔架构或映射到不同的 BizTalk 项目。  
   
-## <a name="you-receive-errors-about-the-type-name-of-a-biztalk-artifact"></a>你会收到有关 BizTalk 项目类型名称的错误  
+## <a name="you-receive-errors-about-the-type-name-of-a-biztalk-artifact"></a>接收有关类型名称的 BizTalk 项目的错误  
   
 ### <a name="problem"></a>问题  
- 在 BizTalk 项目中，使用文件名创建地图**System.btm**或**Microsoft.btm**。 生成项目时，BizTalk 映射程序将生成类似于以下任何类型的错误：  
+ 在 BizTalk 项目中，使用文件名创建地图**System.btm**或**Microsoft.btm**。 生成项目时，BizTalk 映射器将生成类似于以下任一错误：  
   
 -   “类型名称‘SerializableAttribute’不存在…”  
   
@@ -84,14 +84,14 @@ ms.locfileid: "25971531"
 -   “类型名称‘XLANs’不存在…”  
   
 ### <a name="cause"></a>原因  
- **类型名称**中**属性**网格不应有任何保留的.NET 命名空间，如**系统**， **Microsoft**等。  
+ **类型名称**中**属性**网格不应具有任何保留的.NET 命名空间，如**系统**， **Microsoft**，等等。  
   
 ### <a name="resolution"></a>解决方法  
- 若要解决此问题，可以执行任何这些解决方法：  
+ 若要解决此问题，可以执行任何以下解决方法：  
   
--   将映射名称修改为非 .NET 保留字的任何字符串。 默认情况下，BizTalk 项目系统将创建**类型名称**从各自的项目的名称。  
+-   将映射名称修改为非 .NET 保留字的任何字符串。 默认情况下，创建 BizTalk 项目系统**类型名称**从各自的项目的名称。  
   
-     有关例如： 具有名称创建一个新图**Map1.btm**设置**类型名称**属性值设置为**Map1**。 但是，重命名现有 BizTalk 项目不会更改**类型名称**。  
+     对于如： 具有名称创建新地图**Map1.btm**设置**类型名称**属性值设置为**Map1**。 但是，重命名现有 BizTalk 项目不会更改**类型名称**。  
   
 -   确保 BizTalk 项目中的所有项目的文件名不是 .NET 保留命名空间。  
   
@@ -100,19 +100,19 @@ ms.locfileid: "25971531"
 ### <a name="problem"></a>问题  
  生成 BizTalk 项目时，BizTalk 映射器会生成一条类似以下任一内容的错误：  
   
--   "文件\<filename\>有重复的命名空间和类型名属性的值。"  
+-   "文件\<文件名\>具有重复的命名空间和类型名属性的值。"  
   
--   "命名空间\<名称\>已经包含 _ 的定义。"  
+-   "命名空间\<名称\>已经包含 '_' 的定义。"  
   
 ### <a name="cause"></a>原因  
  在 BizTalk 项目中，检查是否存在以下情况：  
   
--   多个项目具有相同的文件名。 对于如**Map1.xsd**和**Map1.btm**。  
+-   多个项目具有相同的文件名。 对于如**Map1.xsd**并**Map1.btm**。  
   
--   文件名包含的仅特殊字符 (**~**， **！**，  **@** 等。)。  
+-   文件名包括只由特殊字符 (**~**， **！**， **@**，等等。)。  
   
 ### <a name="resolution"></a>解决方法  
- 若要解决此问题，可以执行任何这些解决方法：  
+ 若要解决此问题，可以执行任何以下解决方法：  
   
 -   重命名文件。 确保 BizTalk 项目中所有项目的文件名都是唯一的。  
   
@@ -123,7 +123,7 @@ ms.locfileid: "25971531"
 ### <a name="problem"></a>问题  
  构建任何具有 BizTalk 映射器活动的 C# 工作流项目始终会显示以下有关 EnvDTE.dll 的版本冲突的警告。  
   
- 没有办法解决“EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”和“EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”之间的冲突。 任意选择“EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”。  请考虑 app.config 重新映射程序集"EnvDTE，Culture = neutral，PublicKeyToken = b03f5f7f11d50a3a"版本"7.0.3300.0"[] 到版本"8.0.0.0"[C:\Program Files (x86) \Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\EnvDTE.dll]若要解决冲突并消除警告。 C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1360,9)： 警告 MSB3247： 同一从属程序集的不同版本之间出现冲突。  
+ 没有办法解决“EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”和“EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”之间的冲突。 任意选择“EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”。  请考虑 app.config 重新映射的程序集"EnvDTE，Culture = neutral，PublicKeyToken = b03f5f7f11d50a3a"版本"7.0.3300.0"[] 到版本"8.0.0.0"[C:\Program Files (x86) \Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\EnvDTE.dll]若要解决冲突并消除警告。 C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1360,9)： 警告 MSB3247： 同一依赖程序集的不同版本之间出现冲突。  
   
  WorkflowConsoleApplication3 -> C:\Users\btslabs\Desktop\WorkflowConsoleApplication3\bin\Debug\WorkflowConsoleApplication3.exe  
   
@@ -133,5 +133,5 @@ ms.locfileid: "25971531"
 ### <a name="resolution"></a>解决方法  
  忽略此警告。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [排除地图故障](../core/troubleshooting-maps.md)

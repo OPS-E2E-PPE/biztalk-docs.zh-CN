@@ -1,5 +1,5 @@
 ---
-title: 监视 BizTalk Server 数据库 |Microsoft 文档
+title: 监视 BizTalk Server 数据库 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,44 +12,44 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fed740f0c2689c8c531a2f92ad4be356d82205db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3cb759bf377cfe77f1e346a94fca739b8532a44
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298165"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002126"
 ---
 # <a name="monitoring-biztalk-server-databases"></a>监视 BizTalk Server 数据库
-你可以运行的监视器 BizTalk Server SQL 代理作业来标识管理、 消息框中或 DTA 数据库中的所有已知的问题。 在 BizTalk Server 管理控制台中配置 BizTalk 组或从以前的版本升级 BizTalk 时创建该作业。  
+可以运行监视 BizTalk Server SQL 代理作业，以标识管理、 消息框中或 DTA 数据库中的任何已知的问题。 在 BizTalk Server 管理控制台中配置 BizTalk 组或从早期版本升级 BizTalk 时创建作业。  
   
-## <a name="the-monitor-biztalk-server-job"></a>监视器 BizTalk Server 作业  
- 监视 BizTalk 服务器作业扫描管理、 消息框中，和 DTA 数据库中的以下问题：  
+## <a name="the-monitor-biztalk-server-job"></a>监视 BizTalk Server 作业  
+ 监视 BizTalk Server 作业扫描管理、 消息框和 DTA 数据库中的以下问题：  
   
 > [!NOTE]  
->  监视 BizTalk 服务器作业仅扫描的问题。 它不能解决找到的问题。  
+>  监视 BizTalk Server 作业仅扫描问题。 它不能解决发现的问题。  
   
--   没有任何引用的消息  
+- 没有任何引用的消息  
   
--   而无需引用计数的消息  
+- 没有引用计数的消息  
   
--   引用计数小于 0 的消息  
+- 引用计数小于 0 的消息  
   
--   无后台行的消息引用  
+- 无后台行的消息引用  
   
--   无实例的消息引用  
+- 无实例的消息引用  
   
--   不包含实例的实例状态  
+- 没有实例的实例状态  
   
--   实例不包含相应的实例的订阅  
+- 没有相应的实例的实例订阅  
   
--   孤立的 DTA 服务实例  
+- 孤立的 DTA 服务实例  
   
--   孤立的 DTA 服务实例异常  
+- 孤立的 DTA 服务实例异常  
   
--   启用全局跟踪选项不在任何主机实例上运行 TDDS  
+- TDDS 未运行任何主机实例上启用全局跟踪选项  
   
- “监视 BizTalk Server”作业已配置为每周自动运行一次。 由于该作业是计算密集型，我们建议你计划的停机时间或低流量期间运行。  
-作业失败时，如果遇到任何问题;返回的错误字符串包含发现的问题数。 否则，它将成功运行。 您可以在作业历史中查看详细信息。 如果您使用管理员特权运行该作业，将作业历史记录和 SQL Server 应用程序日志记录的错误字符串。  
+  “监视 BizTalk Server”作业已配置为每周自动运行一次。 由于是计算密集型作业，我们建议您计划的停机时间或低流量期间运行。  
+  作业失败时如果遇到任何问题;返回的错误字符串包含找到的问题数。 否则，它将成功运行。 您可以在作业历史中查看详细信息。 如果使用管理员特权运行该作业，将向作业历史记录和 SQL Server 应用程序日志记录的错误字符串。  
   
 > [!IMPORTANT]  
->  此作业的失败不一定构成的严重问题，但而是应调查和解决 BizTalk Server 数据库的定期维护的一部分的问题。 此作业失败设计使然，它发现上面列出的问题之一的事件中。
+>  此作业的失败不一定是构成是关键问题，但而不是问题，应调查并解决的定期维护 BizTalk Server 数据库的一部分。 此作业失败按照设计，它会发现其中一个上面列出的问题的事件中。

@@ -1,5 +1,5 @@
 ---
-title: 异常管理框架 |Microsoft 文档
+title: 异常管理框架 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4d4d19caebb667e822b15b937d9045a26493a57
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1fc334dd93c0ad53737b1fe36d50355cecae565a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008237"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37017839"
 ---
 # <a name="exception-management-framework"></a>异常管理框架
-ESB 异常管理框架提供了用于管理在 BizTalk Server 环境中可能发生的所有异常的统一面向消息的错误生成机制。 ESB 异常管理框架可以接收发布通过异常发布服务，除了从 BizTalk Server 失败消息路由机制的消息的异常消息。  
+ESB 异常管理框架提供用于管理 BizTalk Server 环境中可能发生的所有异常的统一面向消息的错误生成机制。 ESB 异常管理框架可以接收通过异常发布服务，除了消息从 BizTalk Server 失败消息路由机制发布的异常消息。  
   
- 框架将为错误消息创建、 发布和管理从业务流程，复制与 BizTalk Server 2006 年首次引入的 BizTalk Server 失败的消息路由功能提供一个 API。 此外，框架提供了用于规范化所有异常，丰富关于，将应用业务活动监视 (BAM) 跟踪和发布到异常管理数据库，用于显示的最终输出和报告中 ESB 工具管理门户。  
+ 该框架提供了一个 API 的错误消息创建、 发布和管理从业务流程进程，复制首次随 BizTalk Server 2006 的 BizTalk Server 失败的消息路由功能。 此外，该框架提供用于规范化丰富，将业务活动监视 (BAM) 跟踪和发布最终输出到显示异常管理数据库和 reporting ESB 中应用的所有异常工具管理门户。  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下支持 ESB 异常管理框架的管道组件：  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下管道组件支持 ESB 异常管理框架：  
   
--   **异常错误处理器管道组件。** 此组件是使用关闭提升 ESB 异常相关联的管道的一部分包括。 此关闭提升订阅所有 ESB 生成错误消息，除了由路由机制在 BizTalk Server 失败消息生成的异常。 组件路由错误消息到 ESB 异常管理 ESB 管理门户数据库，或可以将它配置为路由到另一个位置。 管道组件还使其更加丰富的所有错误消息和元数据异常，并对它们进行规范化到一种通用格式。  
+- <strong>异常故障处理器管道组件。</strong>此组件是作为带关闭斜坡 ESB 异常相关联的管道的一部分。 此关闭 ramp 订阅所有 ESB 生成错误消息，以及由 BizTalk Server 失败消息路由机制生成的异常。 组件路由错误消息到 ESB 异常管理 ESB 管理门户中数据库，或可以将它配置为路由到另一个位置。 管道组件还使其更加丰富的所有错误消息和异常的元数据，并将其规范化为通用格式。  
   
--   **BAM 跟踪管道组件。** 此组件会截获，并记录异常信息内的 BizTalk Server BAM 子系统和以独占方式使用异常管理框架内的异常错误处理器管道。 提供与[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是一个示例，演示如何使用 BAM 作为可选跟踪设施有关异常信息。  
+- <strong>BAM 跟踪管道组件。</strong>此组件会截获，并记录 BizTalk Server BAM 子系统中的异常信息，并以独占方式由异常管理框架中的异常故障处理器管道。 提供与[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是一个示例，演示如何使用 BAM 作为可选跟踪设施异常信息。  
   
- 有关异常管理框架的详细信息，请参阅[使用 ESB 异常管理](../esb-toolkit/using-esb-exception-management.md)。
+  异常管理框架有关的详细信息，请参阅[使用 ESB 异常管理](../esb-toolkit/using-esb-exception-management.md)。

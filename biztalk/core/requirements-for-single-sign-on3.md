@@ -1,5 +1,5 @@
 ---
-title: SSO 要求 TIBCO Rendevous 适配器 |Microsoft 文档
+title: TIBCO Rendevous 适配器的 SSO 要求 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40cf27a3b96534239fa871bd04b90febee9beafe
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 7e61b456def74ee76d887fa42149ee95b9ca3cbf
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013734"
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必要條件
 若要使用单一登录 (SSO)，必须安装以下软件：  
   
 -   Microsoft BizTalk Server
@@ -30,20 +30,20 @@ ms.locfileid: "24015992"
   
 -   企业单一登录  
   
--   支持 SSO 某个服务器系统  
+-   支持 SSO 的服务器系统  
   
 -   独立主机应配置为受信任验证。  
   
 ## <a name="enable-sso"></a>启用 SSO  
   
-1.  在**传输属性**窗口中，选择**是**为**使用 SSO**。  
+1. 在中**传输属性**窗口中，选择**是**有关**使用 SSO**。  
   
-2.  在指定传输属性时选择相应的关联应用程序。  
+2. 在指定传输属性时选择相应的关联应用程序。  
   
- 有关详细信息，请参阅[创建关联应用程序](../core/creating-affiliate-applications1.md)。  
+   有关详细信息，请参阅[创建关联应用程序](../core/creating-affiliate-applications1.md)。  
   
 > [!NOTE]
->  后执行的操作使用 SSO，请记得重置到任何 Web 共享文件夹**不共享**。 使用该文件夹的应用程序将不更新，或如果共享文件夹，因为它被视为可在使用正常卸载。  
+>  执行相应操作后使用 SSO，请重置到任何 Web 共享文件夹**不共享**。 使用该文件夹的应用程序将不更新，或如果共享的文件夹，因为它被视为在使用中正确卸载。  
   
-## <a name="see-also"></a>另请参阅  
-[安全性](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)
+## <a name="see-also"></a>请参阅  
+[Security](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

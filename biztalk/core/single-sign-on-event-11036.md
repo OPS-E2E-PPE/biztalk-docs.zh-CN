@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11036 |Microsoft 文档
+title: 单一登录： 事件 11036 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63b11005248471c222f63c88439a0e60571b341e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f19a3ff1d35d3c2de04ec9c3846de94d7a2657a7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277149"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013910"
 ---
 # <a name="single-sign-on-event-11036"></a>单一登录： 事件 11036
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11036|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_INFO_PS_WIN_CHANGE_ADAPTER_NO_SYNC|  
-|消息正文|Windows 密码更改。 已检测到此 Windows 帐户的映射，但是被忽略，原因是为此应用程序配置的适配器不支持将密码同步到外部系统。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序: %3 %r<br /><br /> 适配器: %4 %r<br /><br /> 客户端用户： %5|  
+|                 |                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                                                                企业单一登录                                                                                                                                                                |
+| 产品版本 |                                                                                                                                               [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                |
+|    事件 ID     |                                                                                                                                                                          11036                                                                                                                                                                          |
+|  事件源   |                                                                                                                                                                         ENTSSO                                                                                                                                                                          |
+|    组件    |                                                                                                                                                                           N/A                                                                                                                                                                           |
+|  符号名称  |                                                                                                                                                         SSO_INFO_PS_WIN_CHANGE_ADAPTER_NO_SYNC                                                                                                                                                          |
+|  消息正文   | Windows 密码更改。 已检测到此 Windows 帐户的映射，但是被忽略，原因是为此应用程序配置的适配器不支持将密码同步到外部系统。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序: %3 %r<br /><br /> 适配器: %4 %r<br /><br /> 客户端用户： %5 |
   
 ## <a name="explanation"></a>解释  
  已检测到此 Windows 帐户的映射，但是被忽略，原因是为此应用程序配置的适配器不支持将密码同步到外部系统。  

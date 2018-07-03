@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10838 |Microsoft 文档
+title: 单一登录： 事件 10838 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 082938a1163c30d108681690e5f1cfd3284139f6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f286f5a2560180b70e9595e1a028975c284baa5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278301"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006262"
 ---
 # <a name="single-sign-on-event-10838"></a>单一登录： 事件 10838
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10838|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|ENTSSO_E_MAX_SSO_DATABASE_CREATE|  
-|消息正文|SSO 可以创建的最大 SQL 数据库名称长度为 123 个字符，以便允许默认日志文件名称。|  
+|                 |                                                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                              企业单一登录                                              |
+| 产品版本 |                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                              |
+|    事件 ID     |                                                        10838                                                        |
+|  事件源   |                                                       ENTSSO                                                        |
+|    组件    |                                                         N/A                                                         |
+|  符号名称  |                                          ENTSSO_E_MAX_SSO_DATABASE_CREATE                                           |
+|  消息正文   | SSO 可以创建的最大 SQL 数据库名称长度为 123 个字符，以便允许默认日志文件名称。 |
   
 ## <a name="explanation"></a>解释  
  SSO 可以创建的最大 SQL 数据库名称长度为 123 个字符，以便允许默认日志文件名称。  

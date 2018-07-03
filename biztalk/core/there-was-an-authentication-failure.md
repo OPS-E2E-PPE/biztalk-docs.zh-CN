@@ -1,5 +1,5 @@
 ---
-title: 没有身份验证失败 |Microsoft 文档
+title: 出现身份验证错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 180645d30c5cccc64eacd57730539bbca220f32f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5548d448d2c0d45addc72639ad229cf4ee1bf37f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278685"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022347"
 ---
 # <a name="there-was-an-authentication-failure"></a>出现验证错误
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|DescPartyNotFound|  
-|消息正文|出现验证错误。 确保正在处理的消息存在匹配的参与方。 并且消息中的安全/密码信息与“参与方”配置匹配|  
+|                 |                                                                                                                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                        [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                         |
+| 产品版本 |                                                                    [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                     |
+|    事件 ID     |                                                                                                 -                                                                                                 |
+|  事件源   |                                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                       |
+|    组件    |                                                                                            EDI 引擎                                                                                             |
+|  符号名称  |                                                                                         DescPartyNotFound                                                                                         |
+|  消息正文   | 出现验证错误。 确保正在处理的消息存在匹配的参与方。 并且消息中的安全/密码信息与“参与方”配置匹配 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的交换，因为 BizTalk Server 无法验证消息的发送方。  

@@ -1,5 +1,5 @@
 ---
-title: （适用于 Azure) 中的步骤 1： 创建 EDI 项目 |Microsoft 文档
+title: （适用于 Azure) 中的步骤 1： 创建 EDI 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51264a79480031bd334dfb7d699a3a701f2c0254
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ec854bc6edecb59e9cb721c71dafa09c3e0bc2dc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009998"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018127"
 ---
 # <a name="step-1-for-azure-create-the-edi-project"></a>（适用于 Azure) 中的步骤 1： 创建 EDI 项目
 在本部分中，Contoso 将使用 [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] 2012 年 4 月版本创建一个 EDI 项目。 在此项目中，Contoso 将添加以下内容：  
   
--   内部的销售订单架构 (**ECommerceSalesOrder.xsd**) 到 X12 840 EDI 销售订单架构会进行转换。 在消息被接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中之后，Contoso 将使用内部架构处理消息  
+- 内部销售订单架构 (**ECommerceSalesOrder.xsd**) 到 X12 840 EDI 销售订单架构将被转换。 在消息被接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中之后，Contoso 将使用内部架构处理消息  
   
--   转换 (**EDI840TOSALESORDER。TRFM**) 将 X12 840 销售订单架构**ECommerceSalesOrder**架构。  
+- 转换 (**EDI840TOSALESORDER。TRFM**) 将 X12 840 销售订单架构**ECommerceSalesOrder**架构。  
   
- 在 [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] 的 Azure BizTalk 门户中创建协议时，Contoso 会使用这些项目。  
+  在 [!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] 的 Azure BizTalk 门户中创建协议时，Contoso 会使用这些项目。  
   
 ### <a name="to-create-edi-project"></a>创建 EDI 项目  
   
 1.  打开 Visual Studio 中，从**文件**菜单中的指向**新建**，然后单击**项目**。  
   
-2.  在**新项目**对话框中，从**已安装的模板**，选择**Service Bus**。 指定项目名称以及该项目的位置，然后单击**确定**。  
+2.  在中**新的项目**对话框中，从**已安装的模板**，选择**Service Bus**。 指定项目名称和项目的位置，然后单击**确定**。  
   
-##  <a name="BKMK_CreateSchema"></a>若要创建在 EDI 项目架构  
+##  <a name="BKMK_CreateSchema"></a> 若要创建 EDI 项目中架构  
   
-1.  从解决方案资源管理器，右键单击你刚刚创建的项目名称，指向**添加**，然后单击**新项**。  
+1.  从解决方案资源管理器，右键单击刚创建的项目名称，指向**外**，然后单击**新项**。  
   
-2.  在**添加新项**对话框中，从**已安装的模板**，选择**架构**，指定的名称作为架构**ECommerceSalesOrder.xsd**，然后单击**添加**。  
+2.  在中**添加新项**对话框中，从**已安装的模板**，选择**架构**，指定作为架构名称**ECommerceSalesOrder.xsd**，然后单击**添加**。  
   
 3.  编辑并生成类似如下的架构：  
   
@@ -85,13 +85,13 @@ ms.locfileid: "26009998"
   
 4.  保存该架构。  
   
-##  <a name="BKMK_CreateTrfm"></a>若要创建 EDI 项目中转换  
+##  <a name="BKMK_CreateTrfm"></a> 若要创建 EDI 项目中的转换  
   
-1.  从解决方案资源管理器，右键单击你刚刚创建的项目名称，指向**添加**，然后单击**新项**。  
+1.  从解决方案资源管理器，右键单击刚创建的项目名称，指向**外**，然后单击**新项**。  
   
-2.  在**添加新项**对话框中，从**已安装的模板**，选择**映射**，指定的名称作为架构**Edi840ToSalesOrder.trfm**，然后单击**添加**。  
+2.  在中**添加新项**对话框中，从**已安装的模板**，选择**映射**，指定作为架构名称**Edi840ToSalesOrder.trfm**，然后单击**添加**。  
   
-3.  在映射中，对于源架构选择**X12_00401_840.xsd**。 这是用于 EDI 销售订单的标准 X12 架构。 必须已将此架构添加到创建的 EDI 项目中。 你可以下载此示例和其他 X12 架构从[http://go.microsoft.com/fwlink/p/?LinkId=235057](http://go.microsoft.com/fwlink/p/?LinkId=235057)。 X12 架构属于**MicrosoftEdiXSDTemplates.zip**从下载位置可用的包。  
+3.  在映射中，对于源架构选择**X12_00401_840.xsd**。 这是用于 EDI 销售订单的标准 X12 架构。 必须已将此架构添加到创建的 EDI 项目中。 您可以下载和其他 X12 中的架构[ http://go.microsoft.com/fwlink/p/?LinkId=235057 ](http://go.microsoft.com/fwlink/p/?LinkId=235057)。 X12 架构属于**MicrosoftEdiXSDTemplates.zip**从下载位置提供的包。  
   
 4.  对于目标架构中，选择**ECommerceSalesOrder.xsd**。 你在本主题前面的内容中已创建此架构。  
   
@@ -99,5 +99,5 @@ ms.locfileid: "26009998"
   
 6.  保存映射。  
   
-## <a name="see-also"></a>另请参阅  
- [教程 4： 创建使用 BizTalk Server 2013 的混合应用程序](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)
+## <a name="see-also"></a>请参阅  
+ [教程 4： 创建混合应用程序使用 BizTalk Server 2013](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)

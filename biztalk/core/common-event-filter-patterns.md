@@ -1,5 +1,5 @@
 ---
-title: 常见的事件筛选器模式 |Microsoft 文档
+title: 常用事件筛选模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef90a4533b8b12929488d3a323dae47976eace0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d5e5b7ad34a8b87bebe88e21630b178fb7ee35c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22234517"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012974"
 ---
 # <a name="common-event-filter-patterns"></a>常用事件筛选模式
 使用用于 Windows Workflow Foundation (WF) 的 BAM 侦听器时，您可能会注意到，在侦听器配置文件中存在一组频繁使用的常用筛选模式。 虽然其中的某些筛选模式对于应用程序和环境而言是唯一的，但许多模式可跨环境和在不同的应用程序中使用。  
   
  本主题收集了许多针对 WF 应用程序编写的侦听器配置文件所使用的常用筛选模式。 这些模式将按如下 Windows Workflow Foundation 跟踪事件进行分组：  
   
--   活动状态事件  
+- 活动状态事件  
   
--   工作流状态事件  
+- 工作流状态事件  
   
--   用户事件  
+- 用户事件  
   
- 可以将每种模式复制到侦听器配置文件中并进行修改使其适合您的应用程序。  
+  可以将每种模式复制到侦听器配置文件中并进行修改使其适合您的应用程序。  
   
 ## <a name="activity-status-event-filter-patterns"></a>活动状态事件筛选模式  
  活动是工作流的基本构造块。 工作流是树结构中按层次结构组织的一组活动。 一个活动代表工作流中的一个操作。 它可以是一个简单操作（如延迟），也可以是一个包含多个子活动的复合活动。  
@@ -70,7 +70,7 @@ ms.locfileid: "22234517"
 ```  
   
 ### <a name="filter-by-activity-type-closed-activity-event"></a>按活动类型筛选（关闭的活动事件）  
- 有时，您可能希望按类型而不是按名称筛选活动。 例如，您可能希望将所有活动的活动名和日期/时间戳都保存在工作流中。 若要实现此目的，你可以使用`GetActivityType`操作。 `GetActivityType`比较提供的类型，针对要确定匹配的基类型和所有派生的类型。 将与进行比较`System.Workflow.ComponentModel.Activity`由于所有工作流活动必须派生自它将与匹配。  
+ 有时，您可能希望按类型而不是按名称筛选活动。 例如，您可能希望将所有活动的活动名和日期/时间戳都保存在工作流中。 若要完成此操作，请使用`GetActivityType`操作。 `GetActivityType` 比较提供的类型与基类型和所有派生的类型来确定匹配。 比较`System.Workflow.ComponentModel.Activity`将匹配，因为必须从其派生所有工作流活动。  
   
 ```  
 <ic:Filter>  
@@ -142,7 +142,7 @@ ms.locfileid: "22234517"
 ```  
   
 ### <a name="filter-by-activity-type-and-event"></a>按活动类型和事件筛选  
- 当在单个活动事件期间捕获有关从特定类型派生的所有活动的信息时，此筛选器将非常有用。 例如，当采购订单通过工作流时，您可能希望跟踪采购订单中的采购订单 ID 和日期/时间戳。 若要实现此目的，你可以使用`GetActivityEvent`和`GetActivityType`操作。 `GetActivityType`比较提供的类型，针对要确定匹配的基类型和所有派生的类型。 将与进行比较`System.Workflow.ComponentModel.Activity`由于所有工作流活动必须派生自它将与匹配。  
+ 当在单个活动事件期间捕获有关从特定类型派生的所有活动的信息时，此筛选器将非常有用。 例如，当采购订单通过工作流时，您可能希望跟踪采购订单中的采购订单 ID 和日期/时间戳。 若要完成此操作，请使用`GetActivityEvent`和`GetActivityType`操作。 `GetActivityType` 比较提供的类型与基类型和所有派生的类型来确定匹配。 比较`System.Workflow.ComponentModel.Activity`将匹配，因为必须从其派生所有工作流活动。  
   
 ```  
 <ic:Filter>  
@@ -214,25 +214,25 @@ ms.locfileid: "22234517"
 ## <a name="user-event-filter-patterns"></a>用户事件筛选模式  
  如果您的应用程序使用 TrackData 方法跟踪自定义信息，则您可以使用以下一个或多个针对 WF 的 BAM 侦听器的自定义用户数据操作基于数据特性对信息进行筛选：  
   
--   GetUserDataType  
+- GetUserDataType  
   
--   GetUserKey  
+- GetUserKey  
   
--   GetUserData  
+- GetUserData  
   
- 该筛选器可以将上述操作与下列操作组合起来，以创建更为复杂的表达式：  
+  该筛选器可以将上述操作与下列操作组合起来，以创建更为复杂的表达式：  
   
--   GetActivityName  
+- GetActivityName  
   
--   GetActivityType  
+- GetActivityType  
   
--   GetActivityProperty  
+- GetActivityProperty  
   
--   GetWorkflowProperty  
+- GetWorkflowProperty  
   
--   GetContextProperty  
+- GetContextProperty  
   
- 如果筛选器不包括任何用户数据操作，则该筛选器不是用户事件筛选器，并且封闭的 OnEvent 将导致错误（如果用户操作出现在相应的更新表达式中）或将被标识为活动跟踪点而非用户跟踪点。  
+  如果筛选器不包括任何用户数据操作，则该筛选器不是用户事件筛选器，并且封闭的 OnEvent 将导致错误（如果用户操作出现在相应的更新表达式中）或将被标识为活动跟踪点而非用户跟踪点。  
   
 ### <a name="filter-by-activity-name-and-user-data-type"></a>按活动名和用户数据类型筛选  
  通常，您可以按活动名和用户数据类型标识事件。 下面的表达式将筛选名为“MyActivity”的活动和一个从 `System.Object` 派生的用户数据类型。  
@@ -256,7 +256,7 @@ ms.locfileid: "22234517"
 ```  
   
 ### <a name="filter-by-activity-type-and-user-data-type"></a>按活动类型和用户数据类型筛选  
- 可以基于活动类型和用户数据类型进行筛选。 这将授予你筛选事件的纬度基于类型从派生因为同时`GetActivityType`和`GetUserDataType`针对的指定类型和所有派生的类型的比较。  
+ 可以基于活动类型和用户数据类型进行筛选。 这将授予你筛选事件纬度根据类型从其派生因为两者`GetActivityType`和`GetUserDataType`与指定的类型及所有派生的类型的比较。  
   
 ```  
 <ic:Filter>  
@@ -304,7 +304,7 @@ ms.locfileid: "22234517"
 ```  
   
 ### <a name="filter-by-activity-name-and-user-key"></a>按活动名和用户密钥筛选  
- 如果你的应用程序具有调用的活动`TrackData`在运行时确定的密钥，你可能想要按活动名称和用户密钥进行筛选。 这将使你能够触发`OnEvent`基于特定的密钥值。 例如，您的应用程序可能定义了多个密钥，并在活动内动态选择一个密钥。  
+ 如果你的应用程序具有调用的活动`TrackData`与在运行时确定的密钥，你可能希望按活动名和用户密钥筛选。 这样，便可触发`OnEvent`基于特定密钥值。 例如，您的应用程序可能定义了多个密钥，并在活动内动态选择一个密钥。  
   
  下面的表达式将筛选包含名为“ItemKey”用户密钥的“MyActivity”。  
   
@@ -327,7 +327,7 @@ ms.locfileid: "22234517"
 ```  
   
 ### <a name="filter-by-activity-type-and-user-key"></a>按活动类型和用户密钥筛选  
- 如果您的应用程序包含多个使用运行时确定的密钥调用 `TrackData` 的活动，您可能希望按活动名和用户密钥进行筛选。 这将使你能够触发`OnEvent`基于特定的密钥值。 例如，您的应用程序可能定义了多个密钥，并在活动内动态选择一个密钥。  
+ 如果您的应用程序包含多个使用运行时确定的密钥调用 `TrackData` 的活动，您可能希望按活动名和用户密钥进行筛选。 这样，便可触发`OnEvent`基于特定密钥值。 例如，您的应用程序可能定义了多个密钥，并在活动内动态选择一个密钥。  
   
  下面的表达式将筛选从包含名为“ItemKey”用户密钥的 `System.Workflow.ComponentModel.Activity` 派生的任意活动。  
   

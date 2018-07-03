@@ -1,5 +1,5 @@
 ---
-title: 在编程上单一登录之前应该知道哪些内容 |Microsoft 文档
+title: 单一登录编程之前应了解哪些内容 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 879fff608e6333c2124788b8ac5f21dedafb61fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 69e172053151caa137f522491c37d241c6bee2e6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288981"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015407"
 ---
-# <a name="what-you-should-know-before-programming-single-sign-on"></a>在编程上单一登录之前应该知道哪些内容
-若要有效地使用本文档，你应熟悉以下：  
+# <a name="what-you-should-know-before-programming-single-sign-on"></a>单一登录编程之前应了解哪些内容
+若要有效地使用本文档，应熟悉以下：  
   
--   Microsoft [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)] 操作系统。 你应该熟悉尤其是 Windows 安全功能。  
+- Microsoft [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)] 操作系统。 您应该熟悉尤其是 Windows 安全功能。  
   
--   管理功能的企业单一登录，尤其是如何执行管理操作使用用户界面。  
+- 管理功能的企业单一登录，尤其是如何执行管理操作使用的用户界面。  
   
- 根据 API 和正在使用的部署中，你还应该熟悉以下接口：  
+  根据 API 和正在使用的开发，您还应熟悉以下接口：  
   
--   COM  
+- COM  
   
--   .NET Framework 和公共语言运行时  
+- .NET Framework 和公共语言运行时  
   
--   Windows 网络，和具体来说如何发送和接收票证  
+- Windows 网络和特别是如何发送和接收票证  
   
-## <a name="see-also"></a>另请参阅  
- [编程单一登录概述](../core/programming-single-sign-on-overview.md)
+## <a name="see-also"></a>请参阅  
+ [对单一登录进行编程概述](../core/programming-single-sign-on-overview.md)

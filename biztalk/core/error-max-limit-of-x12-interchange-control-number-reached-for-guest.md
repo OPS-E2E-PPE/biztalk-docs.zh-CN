@@ -1,5 +1,5 @@
 ---
-title: 可接受的 X12 交换控制编号已达到来宾设置的最大限制 |Microsoft 文档
+title: 可接受 X12 交换控制编号已达到来宾设置的最大限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c72fc565367477d9dbd09f3c0d4c4f9d6ab686a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1145573dc5aec674e79cef960c4737ddfe6d5e9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241669"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005950"
 ---
-# <a name="max-limit-of-acceptable-x12-interchange-control-number-has-reached-for-guest-settings"></a>可接受的 X12 交换控制编号已达到来宾设置的最大限制
+# <a name="max-limit-of-acceptable-x12-interchange-control-number-has-reached-for-guest-settings"></a>可接受 X12 交换控制编号已达到来宾设置的最大限制
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|GlobalX12IsaNumberError|  
-|消息正文|已达到“来宾”设置的可接受 X12 交换控制编号最大限制。 导航到“全局”配置接收方角色屏幕、合作伙伴协议管理器中的字段 ISA 13 可重置计数器|  
+|                 |                                                                                                                                                                                                            |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                             |
+| 产品版本 |                                                                         [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                         |
+|    事件 ID     |                                                                                                     -                                                                                                      |
+|  事件源   |                                                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                           |
+|    组件    |                                                                                                 EDI 引擎                                                                                                 |
+|  符号名称  |                                                                                          GlobalX12IsaNumberError                                                                                           |
+|  消息正文   | 已达到“来宾”设置的可接受 X12 交换控制编号最大限制。 导航到“全局”配置接收方角色屏幕、合作伙伴协议管理器中的字段 ISA 13 可重置计数器 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理传出的 X12 交换，因为在全局设置中指定的 ISA13 字段中的交换控制编号大于所允许的最大值。 交换控制编号的最大字符数为 9。  

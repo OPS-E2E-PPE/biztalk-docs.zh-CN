@@ -1,6 +1,6 @@
 ---
-title: 自定义发送和接收组件在 BizTalk Server 中使用 RosettaNet 快捷键 |Microsoft 文档
-description: 创建、 自定义，或设置的 RosettaNet acclerator (BTARN) 上的发送和接收 BizTalk Server 中的端口的属性
+title: 自定义发送和接收组件在 BizTalk Server 中使用 RosettaNet 加速器 |Microsoft Docs
+description: 创建、 自定义，或设置属性的 RosettaNet acclerator (BTARN) 上的发送和接收端口的 BizTalk Server
 ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
@@ -18,22 +18,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19dbd20fe8e032a31c3665670b6add61eec3c1f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2215a5464c2798c7b7ffe6f128deccf48d8500e3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209533"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37009150"
 ---
 # <a name="customizing-send-and-receive-components"></a>自定义发送和接收组件
-本部分中的主题介绍如何创建、自定义或设置 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 发送和接收组件的属性。 这些组件包括的 ASPX 页、 发送和接收端口和适配器。  
+在本部分中的主题介绍如何创建、 自定义，或设置属性的 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]发送和接收组件。 这些组件包括 ASPX 页、 发送和接收端口和适配器。  
   
- 有关详细信息[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，然后[阅读有关 RosettaNet 快捷键](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)。  
+ 有关详细信息[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，然后[阅读有关 RosettaNet 加速器](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [ASPX 页设置连接超时](../../adapters-and-accelerators/accelerator-rosettanet/setting-the-connection-time-out-for-an-aspx-page.md)  
+-   [设置 ASPX 页的连接超时](../../adapters-and-accelerators/accelerator-rosettanet/setting-the-connection-time-out-for-an-aspx-page.md)  
   
--   [创建要处理孤立或重复消息的发送端口](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-send-port-to-handle-orphan-or-duplicate-messages.md)  
+-   [创建处理孤立或重复消息的发送端口](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-send-port-to-handle-orphan-or-duplicate-messages.md)  
   
--   [为公共进程业务流程和 HTTP 适配器设置超时值](../../adapters-and-accelerators/accelerator-rosettanet/setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter.md)
+-   [设置公用业务流程和 HTTP 适配器的超时值](../../adapters-and-accelerators/accelerator-rosettanet/setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter.md)

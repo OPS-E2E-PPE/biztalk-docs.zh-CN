@@ -1,5 +1,5 @@
 ---
-title: 使用 BizTalk 适配器跟踪 |Microsoft 文档
+title: 使用 BizTalk 适配器跟踪 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: a1074e2c526efb07597c0bb31dba891d2d6ce951
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "26009206"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012342"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>使用 BizTalk 适配器跟踪
 本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。  
@@ -32,76 +32,76 @@ ms.locfileid: "26009206"
   
 #### <a name="to-install-the-trace-log-tool-tracelogexe"></a>安装 Trace Log 工具 (tracelog.exe)  
   
-1.  从 [适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新](http://go.microsoft.com/fwlink/?LinkId=128279) 网站下载跟踪日志工具。  
+1. 从 [适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新](http://go.microsoft.com/fwlink/?LinkId=128279) 网站下载跟踪日志工具。  
   
-    > [!NOTE]
-    >  即使您运行的是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，也要安装 6.0 版本的 SDK。 如果你安装 **Windows Server 2008 的 Windows SDK 和.NET Framework 3.5** 版本 (v。 6.1)，它将不安装跟踪日志工具。  
+   > [!NOTE]
+   >  即使您运行的是 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，也要安装 6.0 版本的 SDK。 如果您在安装**Windows SDK for Windows Server 2008 和.NET Framework 3.5**版本 (v。 6.1)，则不会安装跟踪日志工具。  
   
-2.  通过在网页底部单击 **PSDK-x86.exe** 文件的链接，启动 **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** Web 安装程序。  
+2. 通过在网页底部单击 **PSDK-x86.exe** 文件的链接，启动 **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** Web 安装程序。  
   
-    > [!NOTE]
-    >  如果您使用的是 64 位版本的 Windows，请为您的系统选择正确的下载文件。  
+   > [!NOTE]
+   >  如果您使用的是 64 位版本的 Windows，请为您的系统选择正确的下载文件。  
   
-3.  在“选择安装类型”  对话框中，选择“自定义”  安装选项，然后单击“下一步” 。  
+3. 在“选择安装类型”  对话框中，选择“自定义”  安装选项，然后单击“下一步” 。  
   
-4.  接受默认安装位置，然后单击“下一步” 。  
+4. 接受默认安装位置，然后单击“下一步” 。  
   
-5.  在“自定义安装”  对话框中，单击以清除所有可用的功能。  
+5. 在“自定义安装”  对话框中，单击以清除所有可用的功能。  
   
-6.  展开“Microsoft Windows Core SDK”  功能，然后展开“工具”  功能。  
+6. 展开“Microsoft Windows Core SDK”  功能，然后展开“工具”  功能。  
   
-7.  选择“工具 (Intel 64 位)”  功能，然后单击“将安装到本地硬盘” 。  
+7. 选择“工具 (Intel 64 位)”  功能，然后单击“将安装到本地硬盘” 。  
   
-8.  先后单击“下一步” 两次  以启动安装。  
+8. 先后单击“下一步” 两次  以启动安装。  
   
-    > [!NOTE]
-    >  安装 **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** 后，系统可能会提示您重新启动计算机，具体取决于您选择随跟踪日志工具一起安装的其他功能。 这是因为， **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** 的某些组件只有在完成重新启动后才能正常工作。 不需要重新启动即可使用 Trace Log 工具。  
+   > [!NOTE]
+   >  安装 **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** 后，系统可能会提示您重新启动计算机，具体取决于您选择随跟踪日志工具一起安装的其他功能。 这是因为， **适用于 Windows Vista 的 Microsoft® Windows® 软件开发包更新** 的某些组件只有在完成重新启动后才能正常工作。 不需要重新启动即可使用 Trace Log 工具。  
   
 ## <a name="enable-biztalk-adapter-tracing-with-tracecmd"></a>使用 trace.cmd 启用 BizTalk 适配器跟踪  
   
 #### <a name="to-enable-biztalk-adapter-tracing"></a>启用 BizTalk 适配器跟踪  
   
-1.  在命令提示符下，将更改为安装 BizTalk Server 的目录的当前目录。 默认情况下，BizTalk Server 安装在[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]目录。  如果使用的 Windows 和 BizTalk Server 的 64 位版本，安装路径是[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]。  
+1. 在命令提示符下，将当前目录更改到安装了 BizTalk Server 的目录。 默认情况下，BizTalk Server 安装在[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]目录。  如果使用 64 位版本的 Windows 和 BizTalk Server，安装路径是[!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]。  
   
-2.  键入以下命令，然后按 Enter：  
+2. 键入以下命令，然后按 Enter：  
   
-     **跟踪-工具"的跟踪日志工具的路径"**  
+    **trace-tools"Trace Log 工具的路径"**  
   
-     默认情况下，跟踪日志工具 (tracelog.exe) 位于 **C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin** 目录下。 如果使用的是 64 位版本的 Windows，则跟踪日志工具位于 **C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0\Bin**下。  必须将 Trace Log 工具的路径用引号引起来。  
+    默认情况下，跟踪日志工具 (tracelog.exe) 位于 **C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin** 目录下。 如果使用的是 64 位版本的 Windows，则跟踪日志工具位于 **C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0\Bin**下。  必须将 Trace Log 工具的路径用引号引起来。  
   
-     例如，请键入以下命令，然后按 Enter：  
+    例如，请键入以下命令，然后按 Enter：  
   
-     **跟踪-工具"C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"**  
+    **trace-tools"C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"**  
   
-    > [!NOTE]
-    >  **-tools** 开关向 Trace.cmd 文件指明 Tracelog.exe 文件的位置。  
-    >   
-    >  如果成功运行该命令，输出结果将类似于以下内容：  
-    >   
-    >  **跟踪 2.0-管理 BizTalk 2006 版本 Bits 跟踪。**  
-    >   
-    >  **设置到"C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"TRACE_TOOL_SEARCH_PATH**  
+   > [!NOTE]
+   >  **-tools** 开关向 Trace.cmd 文件指明 Tracelog.exe 文件的位置。  
+   >   
+   >  如果成功运行该命令，输出结果将类似于以下内容：  
+   >   
+   >  **跟踪 2.0-管理 BizTalk 2006 版本位跟踪。**  
+   >   
+   >  **设置为"C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"TRACE_TOOL_SEARCH_PATH**  
   
 ## <a name="capture-trace-output-with-tracecmd"></a>使用 trace.cmd 捕获跟踪输出  
   
 #### <a name="to-capture-trace-output"></a>捕获跟踪输出  
   
-1.  在命令提示符下，将更改为安装 BizTalk Server 的目录的当前目录。  
+1. 在命令提示符下，将当前目录更改到安装了 BizTalk Server 的目录。  
   
-2.  在命令提示符下，键入以下命令，然后按 Enter：  
+2. 在命令提示符下，键入以下命令，然后按 Enter：  
   
-     **跟踪-启动**  
+    **跟踪-启动**  
   
-3.  重现要捕获其跟踪输出的方案。  
+3. 重现要捕获其跟踪输出的方案。  
   
-4.  在命令提示符下，键入以下命令，然后按 Enter：  
+4. 在命令提示符下，键入以下命令，然后按 Enter：  
   
-     **跟踪-停止**  
+    **跟踪-停止**  
   
-5.  停止跟踪，名为的二进制文件后**Btstrace.bin**文件夹中生成其中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。  
+5. 停止跟踪，名为的二进制文件之后**Btstrace.bin**的文件夹中生成其中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。  
   
-6.  将 **Btstrace.bin** 文件发送到 Microsoft 产品支持服务部门进行分析。  
+6. 将 **Btstrace.bin** 文件发送到 Microsoft 产品支持服务部门进行分析。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用适配器](../core/using-adapters.md)   
- [故障排除 Windows SharePoint Services Adapter](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)
+ [Windows SharePoint Services 适配器故障排除](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)

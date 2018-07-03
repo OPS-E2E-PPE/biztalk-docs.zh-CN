@@ -1,5 +1,5 @@
 ---
-title: 创建自定义管道处理 JSON 消息 |Microsoft 文档
+title: 创建自定义管道来处理 JSON 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c329bce3ee8f9e2e4faf11a60e5e38a82ff467
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: e28f825b1f26f3c080a02fd9a2e2bf8960a816fd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005006"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37005990"
 ---
 # <a name="create-custom-pipelines-to-process-json-messages"></a>创建处理 JSON 消息的自定义管道
 > [!NOTE]
@@ -27,19 +27,19 @@ ms.locfileid: "26005006"
   
 ## <a name="create-a-custom-receive-pipeline"></a>创建自定义接收管道  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序，从解决方案资源管理器，右键单击项目，然后指向**添加** > **新项** > **接收管道**. 提供将管道名称作为`JSONToXmlReceivePipeline.btp`，然后单击**添加**。  
+1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序，从解决方案资源管理器，右键单击项目，然后指向**添加** > **新项** > **接收管道**. 管道命名为`JSONToXmlReceivePipeline.btp`，然后单击**添加**。  
   
-2.  在**解码**阶段添加新**JSON 解码器**。 在屏幕快照中所示的其他阶段以及其他管道组件中，保存更改。  
+2. 内**解码**阶段将添加新**JSON 解码器**。 在屏幕快照中所示的其他阶段以及其他管道组件中，保存更改。  
   
-     ![自定义接收管道](../core/media/btsjson-receivepipeline.png "BTSJSON_ReceivePipeline")  
+    ![自定义接收管道](../core/media/btsjson-receivepipeline.png "BTSJSON_ReceivePipeline")  
   
 ## <a name="create-a-custom-send-pipeline"></a>创建自定义发送管道  
   
-1.  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序，从解决方案资源管理器，右键单击项目，然后指向**添加** > **新项** > **发送管道**. 提供将管道名称作为`XmlToJSONSendPipeline.btp`，然后单击**添加**。  
+1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序，从解决方案资源管理器，右键单击项目，然后指向**添加** > **新项** > **发送管道**. 管道命名为`XmlToJSONSendPipeline.btp`，然后单击**添加**。  
   
-2.  在**编码**阶段添加新**JSON 编码器**。 在屏幕快照中所示的其他阶段以及其他管道组件中，保存更改。  
+2. 内**编码**阶段将添加新**JSON 编码器**。 在屏幕快照中所示的其他阶段以及其他管道组件中，保存更改。  
   
-     ![自定义发送管道](../core/media/btsjson-sendpipeline.png "BTSJSON_SendPipeline")  
+    ![自定义发送管道](../core/media/btsjson-sendpipeline.png "BTSJSON_SendPipeline")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 BizTalk Server 处理 JSON 消息](../core/processing-json-messages-using-biztalk-server.md)

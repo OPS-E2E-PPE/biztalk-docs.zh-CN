@@ -1,6 +1,6 @@
 ---
-title: 设置和安装 BizTalk Server 2016 系统必备组件 |Microsoft 文档
-description: 安装和配置的所需的软件和设置 BizTalk Server 2016 的分步说明
+title: 设置和安装 BizTalk Server 2016 的必备组件 |Microsoft Docs
+description: 安装和配置所需的软件和设置 BizTalk Server 2016 的分步说明
 author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: 11
 ms.author: mandia
-ms.openlocfilehash: 666cddaab4d23fa69b0ae488f665e2eda5182c05
-ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
+ms.openlocfilehash: aab7bb1fa22a249eb287f01b2050d10d9f0042ac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31816961"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018050"
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>设置和安装 BizTalk Server 2016 的必备组件
 设置服务器，然后安装和配置软件必备组件。
@@ -35,7 +35,7 @@ ms.locfileid: "31816961"
 3.  右键单击“管理员”组，然后选择“添加到组”。 **添加**帐户，然后选择“确定”以保存更改。 
 
 ## <a name="change-the-computer-name-optional"></a>更改计算机名称 （可选）
-如果您的计算机名称的长度超过 15 个字符，BizTalk Server 配置将失败。 若要将计算机名称更改为少于 15 个字符：
+如果您的计算机名称的长度超过 15 个字符，则 BizTalk Server 配置失败。 将计算机名称更改为少于 15 个字符：
 
 1.  在“服务器管理器” > “仪表板”中，选择“本地服务器”。 
 2.  在“属性”中，选择“计算机名称”属性以对其进行更改。
@@ -58,7 +58,7 @@ ms.locfileid: "31816961"
     * 允许入站
     * 允许出站
     * 不要求进行身份验证
-5. 选择“确定”。 如果系统提示您重新启动 MS DTC，则选择**是**。 
+5. 选择“确定”。 如果系统提示重新启动 MS DTC，请选择**是**。 
 
 有关可能需要的其他设置，请参阅 [MSDTC 疑难解答](../core/troubleshooting-problems-with-msdtc.md)。
 
@@ -80,7 +80,7 @@ BizTalk Server 安装程序会将事件记录保留在应用程序事件日志�
 
 4. 选择“确定”。
 
-## <a name="edge-cant-be-opened-optional"></a>无法打开边缘 （可选）
+## <a name="edge-cant-be-opened-optional"></a>无法打开 edge （可选）
 
 使用 Edge 时，会显示以下消息：  
 `Microsoft Edge can't be opened using the Built-in Administrator account. Sign in with a different account and try again.`
@@ -115,26 +115,26 @@ IIS 是作为“角色”或“功能”随附于操作系统，具体取决于 
 2. 选择“Internet Information Services”或“Web 服务器 (IIS)”。 除了已默认选中的选项之外，还应选择以下选项： 
 
     **Windows 10**
-    - 在“Web 管理工具”中，还需检查：  
-        - IIS 6 管理兼容性
-        - IIS 6 管理控制台
-        - IIS 6 脚本工具（安装 adsutil.vbs）
-        - IIS 元数据库和 IIS 6 配置兼容性
-        - IIS 管理控制台
-    - 在“万维网服务”中，展开“安全性”，同时检查：
-        - 基本身份验证
-        - Windows 身份验证    
+   - 在“Web 管理工具”中，还需检查：  
+       - IIS 6 管理兼容性
+       - IIS 6 管理控制台
+       - IIS 6 脚本工具（安装 adsutil.vbs）
+       - IIS 元数据库和 IIS 6 配置兼容性
+       - IIS 管理控制台
+   - 在“万维网服务”中，展开“安全性”，同时检查：
+       - 基本身份验证
+       - Windows 身份验证    
 
-    **Windows 服务器**
-    - 在“安全性”中，还需检查： 
-        - 基本身份验证
-        - Windows 身份验证    
-    - 在“管理工具”中，还需检查：  
-        - IIS 管理控制台
-        - IIS 6 管理兼容性
-        - IIS 6 元数据库兼容性
-        - IIS 6 管理控制台
-        - IIS 6 脚本工具（安装 adsutil.vbs）
+     **Windows 服务器**
+   - 在“安全性”中，还需检查： 
+       - 基本身份验证
+       - Windows 身份验证    
+   - 在“管理工具”中，还需检查：  
+       - IIS 管理控制台
+       - IIS 6 管理兼容性
+       - IIS 6 元数据库兼容性
+       - IIS 6 管理控制台
+       - IIS 6 脚本工具（安装 adsutil.vbs）
 
 3. 继续进行安装，并且在系统提示时重启计算机。 
 
@@ -160,7 +160,7 @@ IIS 是作为“角色”或“功能”随附于操作系统，具体取决于 
 5.  选择“确定”。
 
 ## <a name="install-windows-identity-foundation-wif-optional"></a>安装 Windows Identity Foundation (WIF)（可选）
-如果你使用 SharePoint Services 适配器，BizTalk Server 要求 WIF。 如果不使用 SharePoint Services 适配器，则可跳过本部分。
+如果使用 SharePoint Services 适配器，BizTalk Server 需要 WIF。 如果不使用 SharePoint Services 适配器，则可跳过本部分。
 
 Windows Identity Foundation 作为一项**功能**包括在操作系统中。
 
@@ -168,8 +168,8 @@ Windows Identity Foundation 作为一项**功能**包括在操作系统中。
 2. 选择“Windows Identity Foundation 3.5”，然后继续进行安装。 
 3. 如果系统提示，则重启计算机。
 
-## <a name="install--configure-smtp-server-optional"></a>安装并配置 SMTP 服务器 （可选）
-如果你使用 BAM 警报，BizTalk 服务器要求 SMTP 服务器。 如果不使用 BAM 警报，则可跳过本部分。
+## <a name="install--configure-smtp-server-optional"></a>安装和配置 SMTP 服务器 （可选）
+如果使用 BAM 警报时，BizTalk Server 需要 SMTP 服务器。 如果不使用 BAM 警报，则可跳过本部分。
 
 SQL Server 数据库邮件使用 SMTP 服务器发送 BAM 警报。 SMTP 服务器可以本地安装在 BizTalk Server 上，也可以安装在其他已安装 IIS 的服务器上。 SMTP 服务器在客户端操作系统上不可用，例如 Windows 8.1 或 Windows 10。 
 
@@ -180,7 +180,7 @@ SMTP 服务器作为一项**功能**包括在服务器操作系统中。
 3. 如果系统提示，则重启计算机。
 
 ## <a name="install-excel-2016-or-2013-optional"></a>安装 Excel 2016 或 2013 （可选）
-如果你使用业务活动监视 (BAM)，BizTalk Server 要求 Excel。 如果不使用 BAM，则可跳过本部分。
+如果使用业务活动监视 (BAM)，BizTalk Server 需要 Excel。 如果不使用 BAM，则可跳过本部分。
 
 可以使用 BAM Office Excel 工作簿来定义要监视的业务流程。 还可以使用 BAM Excel 工作簿定义业务用户查看 BAM 所收集的数据的方式。
 
@@ -285,18 +285,18 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 
 1. 开始 SQL Server 安装。 
 2. “功能”设置期间，选择以下内容：
-    - 数据库引擎服务
-        - SQL Server 复制
-        - R Services （数据库） (**可选**; 在信息[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
-        - 用于搜索的全文和语义提取
-    - Analysis Services
-    - Reporting Services - 本机
-    - 共享功能
-        - 客户端工具连接
-        - Integration Services
+   - 数据库引擎服务
+       - SQL Server 复制
+       - R Services （数据库内） (**可选**; 信息，请参阅[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
+       - 用于搜索的全文和语义提取
+   - Analysis Services
+   - Reporting Services - 本机
+   - 共享功能
+       - 客户端工具连接
+       - Integration Services
 
-    > [!NOTE]
-    > **SQL Server Data Tools** 未包含在 SQL Server 的默认安装中。 它不是必需的但可以从以下网址下载[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)。 下载可与所有 SQL Server 的支持版本兼容的 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)，其中包括 Azure SQL 数据库。 但是，若要连接到远程 SSIS 使用 BAM 时，你需要为目标 SSIS 服务器安装相同版本的 SSMS。 例如，[安装 SSMS 16。*x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases)安装要连接到 SQL 2016 SSIS 的相关驱动程序。 SSMS 17。*x*无法连接到 SQL 2016 SSIS。 你可以具有多个版本的 SSMS 安装。 
+     > [!NOTE]
+     > **SQL Server Data Tools** 未包含在 SQL Server 的默认安装中。 它不是必需的但可以从以下网址下载[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)。 下载可与所有 SQL Server 的支持版本兼容的 [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)，其中包括 Azure SQL 数据库。 但是，若要连接到远程 SSIS 使用 BAM 时，需要与目标 SSIS 服务器安装相同版本的 SSMS。 例如，[安装 SSMS 16。*x* ](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#previous-ssms-releases)安装相关驱动程序连接到 SQL 2016 SSIS。 SSMS 17。*x*无法连接到 SQL 2016 SSIS。 您可以安装 SSMS 的多个版本。 
 
 3. 继续进行安装，并且在系统提示时重启计算机。
 
@@ -308,7 +308,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 4. 选择**SQL Server Services**，右键单击 SQL **Server (MSSQLSERVER)**，然后选择**停止**。 服务已停止后，右键单击**SQL Server (MSSQLSERVER)**，然后选择**启动**。
 5. 关闭“SQL Server 配置管理器”。
 
-通常情况下，Shared Memory 协议只会影响在 SQL Server 所在的计算机上安装客户端 (BizTalk Server)。 在任务繁忙时（例如，客户端从同一计算机访问 SQL Server 时），SQL Server Shared Memory 协议可能会降低 BizTalk Server 性能。 禁用 Shared Memory 网络协议解决此问题。
+通常情况下，Shared Memory 协议只会影响与 SQL Server 在同一台计算机上安装的客户端 (BizTalk Server)。 在任务繁忙时（例如，客户端从同一计算机访问 SQL Server 时），SQL Server Shared Memory 协议可能会降低 BizTalk Server 性能。 禁用 Shared Memory 网络协议解决此问题。
 
 > [!TIP]
 > 如果 SQL Server 代理无法启动后禁用共享内存，然后确认[ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)安装。
@@ -318,8 +318,8 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 
 下载并安装[SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403)。
 
-## <a name="configure-sql-database-mail-optional"></a>配置 SQL 数据库邮件 （可选）
-如果你使用 BAM 警报，BizTalk 服务器需要 SQL Server 数据库邮件。 如果未使用 BAM 警报，则跳过此部分。 
+## <a name="configure-sql-database-mail-optional"></a>配置 SQL Database Mail （可选）
+如果使用 BAM 警报时，BizTalk Server 需要 SQL Server Database Mail。 如果未使用 BAM 警报，则跳过此部分。 
 
 **另请参阅**：[Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail) 的详细信息。
 
@@ -327,7 +327,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 > - 需要知道 SMTP 服务器的服务器名称和 TCP 端口号。 如果在此同一台计算机上安装 IIS 和 SMTP 服务器，则使用本地 SMTP 服务器。 如果 SMTP 服务器需要身份验证，则准备好 SMTP 服务器名称和密码。
 > - BAM 门户和 BAM 警报是不同的功能。 如果使用 BAM 警报，则需要 SQL Server Database Mail。 如果不使用 BAM 警报，则不需要 SQL Server Database Mail。
 
-**有关特定的配置步骤，请参阅**： 配置[SQL Server 2016 数据库邮件](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)或[SQL Server 2014 数据库邮件](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)。
+**有关特定的配置步骤，请参阅**： 配置[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)或[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)。
 
    
 若要发送测试电子邮件： 
@@ -337,7 +337,7 @@ BizTalk Server 需要 SQL Server。 SQL Server 可以和 BizTalk 安装在同一
 如果“收件人:”收到该电子邮件，则已配置 Database Mail。 
 
 ## <a name="install-winscp-optional"></a>安装 WinSCP （可选）
-FTP 适配器所需。 如果不使用 FTP 适配器，然后跳过此部分。 
+所需的 FTP 适配器。 如果不使用 FTP 适配器，则跳过此部分。 
 
 下载并安装[WinSCP](http://winscp.net)。 
 

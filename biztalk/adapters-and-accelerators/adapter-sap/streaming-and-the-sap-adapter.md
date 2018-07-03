@@ -1,5 +1,5 @@
 ---
-title: 流式处理和 SAP 适配器 |Microsoft 文档
+title: 流式处理和 SAP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,108 +19,108 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48b97b0349822dcca1ae6486e4a0b515778b4d4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f012073f507026a03060a4ddf6c0574fe34186ef
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218245"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37004350"
 ---
 # <a name="streaming-and-the-sap-adapter"></a>流式处理和 SAP 适配器
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持消息本身和客户端应用程序之间流式处理。 与[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成 XML 节点。  
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持流式处理本身和客户端应用程序之间的消息。 使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成的 XML 节点。  
   
- 有适配器支持的两种类型的消息流处理：  
+ 有两种类型的消息流处理的适配器支持：  
   
--   **节点流**。 在节点流中，一条消息可以进行流式处理节点客户端和适配器之间的一次。 这意味着，一个节点的整个值读入缓冲区以及然后发送到接收方。  
+-   **节点流**。 在节点流中，一条消息可以进行流式处理节点在客户端和适配器之间的时间。 这意味着，整个节点的值是读取到缓冲区，然后发送给接收方。  
   
--   **节点值流式处理**。 在节点值流式处理节点的实际值可以进行流式处理客户端和适配器之间的小区块中。 节点值流式处理可用于发送或接收使用 SendIdoc 或 ReceiveIdoc 操作的大 Idoc。 这是因为整个 IDOC 包含在单个节点。 （而不是强类型发送或接收的 IDOC 数据分为多个节点的操作）。  
+-   **节点值流式处理**。 在节点值流式处理节点的实际值可以进行流式处理客户端和适配器之间的块区中。 节点值流式处理可用于发送或接收大型 Idoc 使用 SendIdoc 或 ReceiveIdoc 操作。 这是因为单个节点中包含整个 IDOC。 （而不是强类型发送或接收 IDOC 数据分成多个节点的操作）。  
   
 > [!IMPORTANT]
->  之间的适配器和客户端应用程序仅支持节点值流式处理。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]不支持使用 SAP 系统流式处理的端到端节点的值。 这是因为 SAP 客户端库不支持此功能。  
+>  在适配器和客户端应用程序之间仅支持节点值流处理。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]不支持流式处理与 SAP 系统的端到端节点的值。 这是因为 SAP 客户端库不支持此功能。  
   
- 这两种流式处理模式依赖于支持流式处理的节点和节点值在 WCF 中的消息流式处理。 为此，流式处理与密切如何创建和使用的适配器和客户端应用程序消息。 一个操作的结果是，对消息流式处理的支持并不相同跨所有的编程模型。  
+ 这两种流式处理模式依赖于支持流式处理的节点和节点值在 WCF 中消息流处理。 出于此原因，流式处理被密切关系到如何创建和使用适配器和客户端应用程序消息。 结果之一就是，消息流式处理不支持相同跨所有编程模型。  
   
  本主题中的部分提供：  
   
--   有关如何消息流式处理在 WCF 中支持和如何通过适配器实现的基本的背景信息。  
+-   有关如何流式处理的消息在 WCF 中支持和如何实现适配器的基本背景信息。  
   
--   有关如何消息流式处理时，支持你在每个编程模型中使用该适配器的信息。  
+-   有关如何流式处理消息时，才支持每个编程模型中使用适配器的信息。  
   
 ## <a name="streaming-fundamentals"></a>流式处理的基础知识  
- 用于流式处理通过实现支持[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]是的组合：  
+ 流式处理由实现支持[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]组成：  
   
--   在 WCF 中的消息流式处理支持。  
+-   在 WCF 消息流式处理支持。  
   
 -   SAP 客户端库中的流式处理支持。  
   
--   创建和使用内部适配器的双向消息。  
+-   双向消息创建，并在内部使用的适配器。  
   
-### <a name="message-streaming-support-in-wcf"></a>在 WCF 中的消息流式处理支持  
- WCF 支持上一条消息流式处理的方式取决于消息的创建方式以及如何处理消息。  
+### <a name="message-streaming-support-in-wcf"></a>WCF 中的消息流支持  
+ WCF 如何支持流式处理的消息取决于如何创建的消息和消息的使用方式。  
   
--   WCF 消息创建使用静态**创建**方法**System.ServiceModel.Channels.Message**。 此方法具有好几个重载，支持将传递消息正文的不同方式。 可以通过传递消息的正文使用创建 WCF 消息：  
+- WCF 消息创建使用静态**创建**方法**System.ServiceModel.Channels.Message**。 此方法有若干重载，支持不同的方法来传递消息正文。 可以通过传递消息的正文使用创建 WCF 消息：  
   
-    -   A **System.Xml.XmlReader**，或  
+  -   一个**System.Xml.XmlReader**，或  
   
-    -   A **System.ServiceModel.Channels.BodyWriter**。  
+  -   一个**System.ServiceModel.Channels.BodyWriter**。  
   
--   可以使用使用 WCF 消息  
+- 可以使用已使用 WCF 消息  
   
-    -   **XmlReader**通过调用**Message.GetReaderAtBodyContents()**，或  
+  -   **XmlReader**通过调用**Message.GetReaderAtBodyContents()**，或  
   
-    -   **XmlDictionaryWriter**通过调用**Message.WriteBodyContents(XmlDictionaryWriter)**。  
+  -   **XmlDictionaryWriter**通过调用**Message.WriteBodyContents(XmlDictionaryWriter)**。  
   
- 下表显示 WCF 的创建和使用的消息的不同组合的行为方式。  
+  下表显示了 WCF 创建和使用消息的不同组合的行为方式。  
   
-|使用创建的消息|与使用的消息|WCF 行为|  
+|使用创建的消息|使用的消息|WCF 行为|  
 |--------------------------|---------------------------|------------------|  
-|**XmlBodyWriter**|**XmlDictionaryWriter**|**节点值流式处理**支持。 WCF 通过管道传递两个编写器在一起，若要启用流。 这两个**XmlBodyWriter**和**XmlDictionaryWriter**必须支持节点值来进行这流式处理。|  
-|**XmlBodyWriter**|**XmlReader**|**节点流**支持。 WCF 内部缓冲**XmlReader**。|  
-|**XmlReader**|**XmlDictionaryWriter**|**节点流**支持。 WCF 内部缓冲**XmlReader**和回调到**XmlDictionaryWriter**。|  
-|**XmlReader**|**XmlReader**|**节点流**支持。 WCF 内部缓冲**XmlReader**。|  
+|**XmlBodyWriter**|**XmlDictionaryWriter**|**节点值流式处理**支持。 WCF 通过管道传递两个编写器组合起来以实现流式处理。 这两个**XmlBodyWriter**并**XmlDictionaryWriter**必须支持节点值为其发生流式处理。|  
+|**XmlBodyWriter**|**XmlReader**|**节点流**支持。 WCF 在内部缓冲**XmlReader**。|  
+|**XmlReader**|**XmlDictionaryWriter**|**节点流**支持。 WCF 在内部缓冲**XmlReader** ，并返回到调用**XmlDictionaryWriter**。|  
+|**XmlReader**|**XmlReader**|**节点流**支持。 WCF 在内部缓冲**XmlReader**。|  
   
 ### <a name="streaming-support-in-the-sap-client-library"></a>SAP 客户端库中的流式处理支持  
- SAP 客户端库不支持流式处理。 因此流式处理端到端节点的值不支持通过[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
+ SAP 客户端库不支持流式处理。 因此流式处理端到端节点的值不受[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
 ### <a name="internal-message-handling-by-the-adapter"></a>内部消息处理由适配器  
- 适配器支持按以下方式流式处理：  
+ 适配器支持流式处理按以下方式：  
   
--   适配器使用接收从客户端使用的自定义实现的 SendIdDoc 请求消息**XmlDictionaryWriter**。 它会使用从客户端收到的所有其他消息**XmlReader**。  
+-   该适配器将使用 SendIdDoc 请求消息使用的自定义实现从客户端接收**XmlDictionaryWriter**。 它会使用从客户端接收的所有其他消息**XmlReader**。  
   
--   适配器创建 ReceiveIdoc 请求消息发送到客户端使用的自定义实现**XmlBodyWriter**。 它将创建它发送到客户端使用的所有其他消息**XmlReader**。  
+-   适配器创建 ReceiveIdoc 请求消息发送到客户端使用的自定义实现**XmlBodyWriter**。 它将创建它发送到客户端使用的其他所有消息**XmlReader**。  
   
 ## <a name="streaming-support-in-the-wcf-channel-model"></a>WCF 通道模型中的流式处理支持  
- 下表提供了有关如何流式处理支持 WCF 通道模型的详细的信息。  
+ 下表提供了有关如何流式处理中的 WCF 通道模型支持的详细的信息。  
   
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |（从适配器到客户端） 的出站 RFC 和 BAPI 操作|不支持|不支持||  
-|（从适配器到客户端） 的出站 tRFC 操作|不支持|不支持||  
-|IDOC 发送操作 （强类型）|不支持|不支持||  
-|IDOC 接收操作 （强类型）|是否支持|不支持||  
-|SendIdoc 操作 （字符串）|是否支持|是否支持|适配器使用**XmlDictionaryWriter**使用请求消息。 如果客户端创建的消息的**BodyWriter**，会出现节点值从客户端流式传输到适配器。|  
-|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|适配器使用**BodyWriter**创建请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，会出现节点值从适配器流式传输到客户端。|  
-|入站的 RFC 操作|不支持|不支持||  
-|入站的 tRFC 操作|不支持|不支持||  
+|出站 tRFC 操作 （从适配器到客户端）|不支持|不支持||  
+|发送 IDOC 的操作 （强类型）|不支持|不支持||  
+|接收 IDOC 的操作 （强类型）|是否支持|不支持||  
+|SendIdoc 操作 （字符串）|是否支持|是否支持|该适配器将使用**XmlDictionaryWriter**来使用请求消息。 如果客户端创建的消息**BodyWriter**，会出现节点值从客户端流式传输到适配器。|  
+|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|该适配器将使用**BodyWriter**创建请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，会出现节点值从适配器流式传输到客户端。|  
+|RFC 的入站的操作|不支持|不支持||  
+|入站 tRFC 操作|不支持|不支持||  
   
- 有关如何实现节点值的代码来发送和接收平面文件 （字符串） Idoc 使用 SendIdoc 和 ReceiveIdoc 操作流式处理的信息，请参阅[SAP 使用 WCF 通道模型中的流平面文件 Idoc](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)。  
+ 有关如何实现节点值流式处理来发送和接收平面文件 （字符串） Idoc 使用 SendIdoc 和 ReceiveIdoc 操作在代码中的信息，请参阅[Stream SAP 使用 WCF 通道模型中的平面文件 Idoc](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)。  
   
 ## <a name="streaming-support-in-the-wcf-service-model"></a>WCF 服务模型中的流式处理支持  
- 序列化和反序列化的 XML 表示形式一条消息的该消息的托管的代码对象的表示形式之间需要写入和读取到内存的整个消息。 因此，节点流式处理和流式处理的节点的值都不支持从 WCF 服务模型。  
+ 序列化和反序列化消息的 XML 表示形式和该消息的托管的代码对象表示形式之间需要写入和读取到内存中的整个消息。 出于此原因，流式处理的节点和节点值流式传输都不支持从 WCF 服务模型。  
   
 ## <a name="streaming-support-in-biztalk-server"></a>BizTalk Server 中的流式处理支持  
- 下表提供了有关如何流式处理在 BizTalk Server 中支持的详细的信息。  
+ 下表提供了有关如何流式处理 BizTalk Server 中支持的详细的信息。  
   
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |（从适配器到客户端） 的 RFC 和 BAPI 操作|不支持|不支持||  
 |tRFC 操作 （从适配器到客户端）|不支持|不支持||  
-|IDOC 发送操作 （强类型）|不支持|不支持||  
-|IDOC 接收操作 （强类型）|是否支持|不支持||  
-|SendIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器使用**BodyWriter**创建请求消息中，因此节点值流式处理支持。|  
-|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器使用**XmlDictionaryWriter**使用请求消息中，因此节点值流式处理支持。|  
-|入站的 RFC 操作|不支持|不支持||  
-|入站的 tRFC 操作|不支持|不支持||  
+|发送 IDOC 的操作 （强类型）|不支持|不支持||  
+|接收 IDOC 的操作 （强类型）|是否支持|不支持||  
+|SendIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器将使用**BodyWriter**创建请求消息，因此节点值流式处理支持。|  
+|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器将使用**XmlDictionaryWriter**来使用请求消息，因此节点值流式处理支持。|  
+|RFC 的入站的操作|不支持|不支持||  
+|入站 tRFC 操作|不支持|不支持||  
   
-## <a name="see-also"></a>另请参阅  
-[开发您的 SAP 应用程序](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)
+## <a name="see-also"></a>请参阅  
+[开发 SAP 应用程序](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)

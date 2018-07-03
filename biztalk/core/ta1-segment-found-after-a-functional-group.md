@@ -1,5 +1,5 @@
 ---
-title: TA1 段后功能组找到 |Microsoft 文档
+title: 在功能组后发现 TA1 段 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86e9ac6e1e0c3a3b76dbc144739f3a16fddd0d67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87613f9482c5c54e99544b96ddd0d1cfc94d3c85
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278517"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018135"
 ---
 # <a name="ta1-segment-found-after-a-functional-group"></a>在功能组后发现 TA1 段
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|TA1FoundAfterFunctionalGroup|  
-|消息正文|在功能组后发现 TA1 段。 因此，消息被拒绝|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                              TA1FoundAfterFunctionalGroup                              |
+|  消息正文   |     在功能组后发现 TA1 段。 因此，消息被拒绝      |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的确认，因为确认包含一个功能组并且在该功能组之后是一个 TA1 段。  

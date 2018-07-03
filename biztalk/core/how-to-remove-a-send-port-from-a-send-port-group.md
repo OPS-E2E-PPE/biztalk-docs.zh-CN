@@ -1,5 +1,5 @@
 ---
-title: 如何从发送端口组中删除发送端口 |Microsoft 文档
+title: 如何从发送端口组中删除发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d109064a1286bcd622479a4075ef2d23dc8d320c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ce54faf09b45a46d2ac5150e1c2bbbe88c8ccac
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254517"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37018920"
 ---
 # <a name="how-to-remove-a-send-port-from-a-send-port-group"></a>如何从发送端口组中删除发送端口
 本主题将介绍如何使用 BizTalk Server 管理控制台从发送端口组中删除发送端口。 执行此操作时，不会从应用程序或 BizTalk 管理数据库中删除发送端口。  
@@ -33,19 +33,19 @@ ms.locfileid: "22254517"
 > [!NOTE]
 >  若要将消息路由，发送端口组必须包含至少一个发送端口。  
   
-## <a name="prerequisites"></a>先决条件  
- 若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。 有关更多详细权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>必要條件  
+ 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-remove-a-send-port-from-a-send-port-group"></a>若要从发送端口组中删除发送端口  
   
-1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要从发送端口组中删除发送端口。  
+2. 在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要从发送端口组中删除发送端口。  
   
-3.  单击**发送端口组**，右键单击发送端口组，，然后单击**属性**。  
+3. 单击**发送端口组**，右键单击发送端口组，并单击**属性**。  
   
-4.  下**名称**，单击发送端口以删除，然后单击**删除**。  
+4. 下**名称**，单击发送端口以删除，然后单击**删除**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建和配置发送端口组](../core/creating-and-configuring-send-port-groups.md)   
  [创建和配置发送端口](../core/creating-and-configuring-send-ports.md)

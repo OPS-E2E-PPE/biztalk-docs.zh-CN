@@ -1,5 +1,5 @@
 ---
-title: 配置 A4SWIFT 运行时 |Microsoft 文档
+title: 配置 A4SWIFT 运行时 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e3aff1f737e37210a428b41686e3e7e95b6bcf5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7fb2c4583b6b8dd4422fc31afa58e84e9bd26257
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209077"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015014"
 ---
 # <a name="configuring-the-a4swift-runtime"></a>配置 A4SWIFT 运行时
-完成后[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]配置，你必须执行中的步骤后面的部分，请确保 A4SWIFT 已准备好交换消息。 本部分不包括特定的消息修复和新提交或 FIN 响应对帐功能，提供更高版本的配置步骤。  
+完成 Microsoft 后[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]配置中，您必须执行中的步骤后面的部分，请确保 A4SWIFT 已准备好交换消息。 本部分不包括为消息修复和新提交或 FIN 响应对帐功能，提供了更高版本的特定配置步骤。  
   
  本部分包含：  
   
 -   [部署 A4SWIFT 架构](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)  
   
--   [将 SWIFT 管道组件添加到工具箱](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md)  
+-   [将 SWIFT 管道组件添加至工具箱](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md)  
   
 -   [创建和部署 A4SWIFT 管道](../../adapters-and-accelerators/accelerator-swift/creating-and-deploying-a4swift-pipelines.md)  
   

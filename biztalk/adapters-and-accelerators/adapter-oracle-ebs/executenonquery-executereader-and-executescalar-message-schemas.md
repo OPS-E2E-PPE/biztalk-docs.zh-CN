@@ -1,5 +1,5 @@
 ---
-title: ExecuteNonQuery、 ExecuteReader，和 ExecuteScalar Operations1 消息架构 |Microsoft 文档
+title: 消息架构的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar Operations1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b42ed9075ad16708f835786fd1fd09b414d06ebb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7078fed7a007eca4dfb3eb5608eb6e688bb74a45
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216149"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011966"
 ---
-# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader，和 ExecuteScalar 操作的消息架构
-[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]在根级别，以在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块将 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 出站操作公开。  
+# <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息架构
+[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开在根级别，以在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 出站操作。  
   
  有关详细信息：  
   
--   这些操作，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  
+- 这些操作，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  
   
--   执行这些操作使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[ExecuteReader、 ExecuteScalar 或在 SQL 中使用 BizTalk Server ExecuteNonQuery 操作](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)。  
+- 执行这些操作使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)。  
   
-## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader，和 ExecuteScalar 操作的消息结构  
- 这些操作中的消息遵循请求-响应消息交换模式时，和下表显示这些请求和响应消息的结构。  
+## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息结构  
+ 这些操作中的消息遵循请求-响应消息交换模式，并下表显示了这些请求和响应消息的结构。  
   
 > [!NOTE]
->  在表后，请参阅实体说明。  
+>  实体说明表后进行查看。  
   
 |运算|XML 消息|  
 |---------------|-----------------|  
@@ -45,12 +45,12 @@ ms.locfileid: "22216149"
   
  实体说明：  
   
- [PL/SQL 块] = 整个的 PL/SQL 块，要执行。  
+ [PL/SQL 块] = 整个 PL/SQL 块执行。  
   
- [stringvalue1] = 字符串的数组中的值。  
+ [stringvalue1] = 字符串数组中的值。  
   
-## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader，和 ExecuteScalar 操作的消息操作  
- 下表显示由 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作使用的消息操作。  
+## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作  
+ 下表显示了使用的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作。  
   
 |运算|操作|  
 |---------------|------------|  

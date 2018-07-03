@@ -1,5 +1,5 @@
 ---
-title: 如何打开 BizTalk Server 管理控制台 |Microsoft 文档
+title: 如何打开 BizTalk Server 管理控制台 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81efcc6e2d972bde7b30c57860da4ced711b1294
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46c5185307aeda0289fd8d4c53363ec45510a492
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254477"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37016119"
 ---
 # <a name="how-to-open-the-biztalk-server-administration-console"></a>如何打开 BizTalk Server 管理控制台
 使用以下过程可打开 BizTalk Server 管理控制台，并对显示在详细信息窗格中的数据进行排序或刷新。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  若要执行此步骤，则必须以 BizTalk Server Operators 组成员或 BizTalk Server Administrators 组成员的身份登录。  
   
 ### <a name="to-open-the-biztalk-server-administration-console"></a>打开 BizTalk Server 管理控制台  
   
--   单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+- 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-     或  
+   或  
   
--   单击**启动**，单击**运行**，类型**BTSmmcLauncher.exe**，然后单击**确定**。  
+- 单击**启动**，单击**运行**，类型**BTSmmcLauncher.exe**，然后单击**确定**。  
   
 ### <a name="to-refresh-the-biztalk-server-administration-console"></a>刷新 BizTalk Server 管理控制台  
   
@@ -55,6 +55,6 @@ ms.locfileid: "22254477"
   
 -   在详细信息窗格中，单击并拖动列，将该列移至新的位置以更改详细信息窗格中列的显示顺序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 BizTalk Server 管理控制台](../core/using-the-biztalk-server-administration-console.md)   
  [如何连接到现有组](../core/how-to-connect-to-an-existing-group.md)
